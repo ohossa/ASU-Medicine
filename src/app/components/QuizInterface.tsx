@@ -17,6 +17,8 @@ import {
 import type { ChapterData, SubjectData, Question, SubjectColor } from '../types';
 import { subjectStyles, formatTime } from '../types';
 import { ThemeToggle } from './ThemeToggle';
+import { LanguageToggle } from './LanguageToggle';
+import { useLanguage } from '../context/LanguageContext';
 
 interface Props {
   chapter: ChapterData;
@@ -28,6 +30,7 @@ interface Props {
 
 export function QuizInterface({ chapter, subject, questions, onBack, onFinish }: Props) {
   const [currentIdx, setCurrentIdx] = useState(0);
+  const { t, language } = useLanguage();
   const [answers, setAnswers] = useState<Record<number, any>>({});
   const [essayDraft, setEssayDraft] = useState('');
   const [showEssayAnswer, setShowEssayAnswer] = useState(false);
@@ -407,6 +410,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish }:
               >
                 <Keyboard size={16} />
               </button>
+              <LanguageToggle />
               <ThemeToggle />
             </div>
           </div>
@@ -440,11 +444,11 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish }:
                     ? 'bg-pink-100 dark:bg-pink-950/40 text-pink-600 dark:text-pink-400'
                     : `${s.bgOp10} ${s.textDark}`
                 }`}>
-                  Question {currentIdx + 1} of {questions.length}
+                  {t('question')} {currentIdx + 1} {t('of')} {questions.length}
                 </span>
                 <span className="text-xs text-gray-300 dark:text-gray-600 font-bold uppercase tracking-wider">•</span>
                 <span className="text-xs text-gray-400 dark:text-gray-500 font-bold uppercase tracking-wider">
-                  {current.type === 'case' ? 'Clinical Case' : current.type === 'fillblank' ? 'Fill in the Blank' : current.type === 'mcq' ? 'Multiple Choice' : current.type === 'truefalse' ? 'True / False' : current.type === 'matching' ? 'Matching' : 'Essay'}
+                  {current.type === 'case' ? t('clinicalCase') : current.type === 'fillblank' ? t('fillBlank') : current.type === 'mcq' ? t('multipleChoice') : current.type === 'truefalse' ? t('trueFalse') : current.type === 'matching' ? t('matching') : t('essay')}
                 </span>
               </div>
               
@@ -479,8 +483,8 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish }:
                       disabled={answered}
                       value={essayDraft}
                       onChange={(e) => setEssayDraft(e.target.value)}
-                      placeholder="Type your answer here (optional). If solving in your head, just click 'Reveal Model Answer' below to grade yourself..."
-                      className="w-full rounded-[24px] border-2 border-gray-100 dark:border-gray-800 p-5 text-sm font-semibold bg-white dark:bg-gray-900 focus:border-physiology focus:outline-none disabled:bg-gray-50 dark:disabled:bg-gray-950 disabled:opacity-85 text-gray-700 dark:text-gray-300 text-left"
+                      placeholder={t('essayPlaceholder')}
+                      className="w-full rounded-[24px] border-2 border-gray-100 dark:border-gray-800 p-5 text-sm font-semibold bg-white dark:bg-gray-900 focus:border-physiology focus:outline-none disabled:bg-gray-50 dark:disabled:bg-gray-950 disabled:opacity-85 text-gray-700 dark:text-gray-300 text-start"
                     />
                   </div>
 
@@ -490,16 +494,16 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish }:
                         onClick={() => setShowEssayAnswer(true)}
                         className="px-6 py-3 bg-gray-900 dark:bg-white text-white dark:text-gray-900 rounded-full text-xs font-bold tracking-wide hover:scale-[0.98] transition-transform"
                       >
-                        Reveal Model Answer
+                        {t('revealModelAnswer')}
                       </button>
                     </div>
                   )}
 
                   {(showEssayAnswer || answered) && (
-                    <div className="feedback-animate bg-success/[0.03] border border-success/15 rounded-3xl p-6 text-left">
+                    <div className="feedback-animate bg-success/[0.03] border border-success/15 rounded-3xl p-6 text-start">
                       <div className="flex items-center gap-2 mb-3">
                         <Lightbulb size={16} className="text-success" />
-                        <span className="text-xs font-bold text-success uppercase tracking-wider">Model Answer Reference</span>
+                        <span className="text-xs font-bold text-success uppercase tracking-wider">{t('modelAnswerReference')}</span>
                       </div>
                       {renderFormattedText(current.modelAnswer)}
 
@@ -517,8 +521,11 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish }:
                       {!answered && (
                         <div className="pt-4 border-t border-success/10">
                           <h4 className="font-archivo text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-3">
-                            Self-grading
+                            {t('selfGrading')}
                           </h4>
+                          <p className="text-xs text-gray-500 dark:text-gray-400 mb-4 leading-relaxed">
+                            {t('selfGradingDesc')}
+                          </p>
                           <div className="flex items-center gap-3">
                             <button
                               onClick={() => {
@@ -530,7 +537,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish }:
                               }}
                               className="px-5 py-2.5 bg-success text-white hover:bg-success-dark rounded-full text-xs font-bold tracking-wide transition-all"
                             >
-                              I got it right
+                              {t('correct')}
                             </button>
                             <button
                               onClick={() => {
@@ -542,7 +549,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish }:
                               }}
                               className="px-5 py-2.5 bg-white dark:bg-gray-900 border border-danger/25 text-danger-dark hover:bg-danger/5 rounded-full text-xs font-bold tracking-wide transition-all"
                             >
-                              I need more review
+                              {t('incorrect')}
                             </button>
                           </div>
                         </div>
@@ -845,7 +852,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish }:
                                         }}
                                         className="px-3 py-1.5 bg-success text-white hover:bg-success-dark rounded-full text-[9px] font-bold tracking-wide transition-all"
                                       >
-                                        Correct
+                                        {t('correct')}
                                       </button>
                                       <button
                                         onClick={() => {
@@ -1011,7 +1018,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish }:
                   className="nav-btn inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full bg-gray-900 dark:bg-white hover:bg-gray-800 dark:hover:bg-gray-105 text-white dark:text-gray-900 text-sm font-bold"
                   style={{ boxShadow: '0 4px 16px rgba(0,0,0,0.15)' }}
                 >
-                  Next Question
+                  {t('nextQuestion')}
                   <ArrowRight size={16} />
                 </button>
               ) : (
@@ -1020,7 +1027,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish }:
                   className="nav-btn inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full bg-physiology hover:bg-physiology-dark text-white text-sm font-bold"
                   style={{ boxShadow: '0 4px 16px rgba(16,185,129,0.3)' }}
                 >
-                  Finish
+                  {t('finish')}
                   <Check size={16} />
                 </button>
               )}
@@ -1035,7 +1042,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish }:
               <div className="sidebar-card bg-white dark:bg-gray-900 rounded-3xl p-6 border border-gray-100 dark:border-gray-800" style={{ boxShadow: '0 2px 12px rgba(0,0,0,0.04)' }}>
                 <div className="flex items-center gap-2 mb-4">
                   <Target size={16} className="text-gray-400 dark:text-gray-500" />
-                  <span className="text-xs font-bold text-gray-400 dark:text-gray-500 uppercase tracking-wider">Session Progress</span>
+                  <span className="text-xs font-bold text-gray-400 dark:text-gray-500 uppercase tracking-wider">{t('sessionProgress')}</span>
                 </div>
 
                 <div className="flex items-center gap-4 mb-5">
@@ -1059,15 +1066,15 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish }:
                     <div className="text-2xl font-archivo font-black text-gray-900 dark:text-white">
                       {correctCount}<span className="text-gray-350 dark:text-gray-600">/</span>{answeredCount}
                     </div>
-                    <div className="text-[10px] text-gray-400 dark:text-gray-500 font-bold uppercase tracking-wider">Correct Points</div>
+                    <div className="text-[10px] text-gray-400 dark:text-gray-500 font-bold uppercase tracking-wider">{t('correctPoints')}</div>
                   </div>
                 </div>
 
                 <div className="space-y-2">
                   {[
-                    { label: 'Correct', value: correctCount, color: 'bg-success', textColor: 'text-success' },
-                    { label: 'Incorrect', value: answeredCount - correctCount, color: 'bg-danger', textColor: 'text-danger' },
-                    { label: 'Remaining', value: questions.length - answeredCount, color: 'bg-gray-300 dark:bg-gray-600', textColor: 'text-gray-400 dark:text-gray-500' },
+                    { label: t('correct'), value: correctCount, color: 'bg-success', textColor: 'text-success' },
+                    { label: t('incorrect'), value: answeredCount - correctCount, color: 'bg-danger', textColor: 'text-danger' },
+                    { label: t('remaining'), value: questions.length - answeredCount, color: 'bg-gray-300 dark:bg-gray-600', textColor: 'text-gray-400 dark:text-gray-500' },
                   ].map((row) => (
                     <div key={row.label} className="flex items-center justify-between text-xs">
                       <div className="flex items-center gap-1.5">
@@ -1084,7 +1091,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish }:
               <div className="sidebar-card bg-white dark:bg-gray-900 rounded-3xl p-6 border border-gray-100 dark:border-gray-800" style={{ boxShadow: '0 2px 12px rgba(0,0,0,0.04)' }}>
                 <div className="flex items-center gap-2 mb-4">
                   <Grid3X3 size={16} className="text-gray-400 dark:text-gray-500" />
-                  <span className="text-xs font-bold text-gray-400 dark:text-gray-500 uppercase tracking-wider">Question Map</span>
+                  <span className="text-xs font-bold text-gray-400 dark:text-gray-500 uppercase tracking-wider">{t('questionMap')}</span>
                 </div>
 
                 <div className="grid grid-cols-4 gap-2">

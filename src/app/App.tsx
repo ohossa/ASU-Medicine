@@ -26,6 +26,8 @@ import { QuizInterface } from './components/QuizInterface';
 import { ResultsDashboard } from './components/ResultsDashboard';
 import { ThemeProvider, useTheme } from './context/ThemeContext';
 import { ThemeToggle } from './components/ThemeToggle';
+import { LanguageProvider, useLanguage } from './context/LanguageContext';
+import { LanguageToggle } from './components/LanguageToggle';
 import { saveQuizResult, getQuizHistory } from './utils/storage';
 import type { QuizResult } from './utils/storage';
 import {
@@ -73,6 +75,21 @@ function PortalFooter() {
 
 function MainApp() {
   const { isDark } = useTheme();
+  const { t, language } = useLanguage();
+
+  const hasActiveModulesForYear = (year: number): boolean => {
+    const semesters = SYLLABUS_MODULES[year];
+    if (!semesters) return false;
+    return Object.values(semesters).some((modules) =>
+      modules.some((mod) => isModuleActive(mod.code))
+    );
+  };
+
+  const hasActiveModulesForSemester = (year: number, sem: number): boolean => {
+    const modules = SYLLABUS_MODULES[year]?.[sem];
+    if (!modules) return false;
+    return modules.some((mod) => isModuleActive(mod.code));
+  };
   
   // Navigation states
   const [screen, setScreen] = useState<Screen>('yearSelect');
@@ -386,28 +403,61 @@ function MainApp() {
     <div className="min-h-screen text-gray-900 dark:text-gray-100 bg-gray-50/50 dark:bg-gray-950 font-manrope selection:bg-physiology/20 selection:text-physiology-dark">
       {/* Dynamic Floating Background Blobs */}
       <div className="fixed inset-0 -z-10 overflow-hidden bg-background pointer-events-none">
-        <div className="absolute top-[12%] left-[4%] h-[35vw] w-[35vw] rounded-full bg-physiology/4 dark:bg-physiology/2 blur-[130px] animate-pulse" />
-        <div className="absolute bottom-[8%] right-[4%] h-[40vw] w-[40vw] rounded-full bg-anatomy/4 dark:bg-anatomy/2 blur-[160px] animate-pulse" style={{ animationDelay: '2s' }} />
+        <div className="absolute top-[10%] left-[5%] h-[35vw] w-[35vw] rounded-full bg-physiology/6 dark:bg-physiology/4 blur-[130px] blob-float-1" />
+        <div className="absolute bottom-[10%] right-[5%] h-[40vw] w-[40vw] rounded-full bg-anatomy/6 dark:bg-anatomy/4 blur-[160px] blob-float-2" />
       </div>
 
       <style>{`
         @keyframes popUp {
-          from { opacity: 0; transform: scale(0.96) translateY(10px); }
+          from { opacity: 0; transform: scale(0.96) translateY(12px); }
           to { opacity: 1; transform: scale(1) translateY(0); }
         }
-        .animate-pop-up { animation: popUp 350ms cubic-bezier(0.34, 1.56, 0.64, 1) both; }
-        .grid-delay:nth-child(1) { animation-delay: 40ms; }
-        .grid-delay:nth-child(2) { animation-delay: 80ms; }
-        .grid-delay:nth-child(3) { animation-delay: 120ms; }
-        .grid-delay:nth-child(4) { animation-delay: 160ms; }
-        .grid-delay:nth-child(5) { animation-delay: 200ms; }
-        .grid-delay:nth-child(6) { animation-delay: 240ms; }
+        @keyframes floatBlob1 {
+          0%, 100% { transform: translate(0, 0) scale(1); }
+          50% { transform: translate(5%, 8%) scale(1.08); }
+        }
+        @keyframes floatBlob2 {
+          0%, 100% { transform: translate(0, 0) scale(1); }
+          50% { transform: translate(-6%, -5%) scale(0.92); }
+        }
+        .blob-float-1 { animation: floatBlob1 25s ease-in-out infinite; }
+        .blob-float-2 { animation: floatBlob2 30s ease-in-out infinite alternate; }
+
+        .animate-pop-up { animation: popUp 400ms cubic-bezier(0.34, 1.56, 0.64, 1) both; }
+        .grid-delay:nth-child(1) { animation-delay: 50ms; }
+        .grid-delay:nth-child(2) { animation-delay: 100ms; }
+        .grid-delay:nth-child(3) { animation-delay: 150ms; }
+        .grid-delay:nth-child(4) { animation-delay: 200ms; }
+        .grid-delay:nth-child(5) { animation-delay: 250ms; }
+        .grid-delay:nth-child(6) { animation-delay: 300ms; }
         
         .portal-card {
-          transition: all 300ms cubic-bezier(0.34, 1.56, 0.64, 1);
+          transition: all 400ms cubic-bezier(0.34, 1.56, 0.64, 1);
+          background: rgba(255, 255, 255, 0.85);
+          backdrop-filter: blur(16px);
+          border: 1px solid rgba(255, 255, 255, 0.5);
+          box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.015);
+        }
+        .dark .portal-card {
+          background: rgba(15, 17, 28, 0.7);
+          backdrop-filter: blur(16px);
+          border: 1px solid rgba(255, 255, 255, 0.05);
+          box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.2);
         }
         .portal-card:hover {
-          transform: translateY(-5px) scale(1.01);
+          transform: translateY(-8px) scale(1.015);
+          border-color: rgba(16, 185, 129, 0.4);
+          box-shadow: 0 24px 48px -12px rgba(16, 185, 129, 0.08);
+        }
+        .dark .portal-card:hover {
+          border-color: rgba(16, 185, 129, 0.3);
+          box-shadow: 0 24px 48px -12px rgba(0, 0, 0, 0.4), 0 0 20px 2px rgba(16, 185, 129, 0.05);
+        }
+        .animate-flip-rtl {
+          transition: transform 300ms ease;
+        }
+        html[dir="rtl"] .animate-flip-rtl {
+          transform: rotate(180deg);
         }
       `}</style>
 
@@ -421,10 +471,10 @@ function MainApp() {
               </div>
               <div>
                 <h1 className="font-archivo font-extrabold text-base tracking-tight leading-none">
-                  ASU Medical Portal
+                  {t('portalTitle')}
                 </h1>
                 <p className="text-[10px] text-gray-400 dark:text-gray-500 font-bold uppercase tracking-wider mt-0.5">
-                  Ain Shams University
+                  {t('asu')}
                 </p>
               </div>
 
@@ -437,7 +487,7 @@ function MainApp() {
                     className="inline-flex items-center gap-1 text-[11px] font-bold text-physiology hover:text-physiology-dark dark:hover:text-physiology transition-colors"
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-physiology animate-pulse" />
-                    <span>EMP Portal</span>
+                    <span>{t('empPortal')}</span>
                   </a>
                   <a
                     href="https://asu2learn.asu.edu.eg/medicine/my/"
@@ -446,7 +496,7 @@ function MainApp() {
                     className="inline-flex items-center gap-1 text-[11px] font-bold text-gray-400 hover:text-gray-700 dark:text-gray-500 dark:hover:text-gray-300 transition-colors"
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-gray-400 dark:bg-gray-600" />
-                    <span>Mainstream</span>
+                    <span>{t('mainstreamPortal')}</span>
                   </a>
                 </div>
               )}
@@ -460,10 +510,11 @@ function MainApp() {
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-clinical/10 hover:bg-clinical/20 text-clinical-dark border border-clinical/20 rounded-xl text-xs font-bold transition-all hover:-translate-y-0.5"
                 >
-                  <span>UMS Portal</span>
+                  <span>{t('umsPortal')}</span>
                   <ExternalLink size={12} className="text-clinical" />
                 </a>
               )}
+              <LanguageToggle />
               <ThemeToggle />
             </div>
           </div>
@@ -476,22 +527,22 @@ function MainApp() {
         {/* Breadcrumbs for easy navigation jumpbacks */}
         {['semesterSelect', 'moduleSelect', 'studyModeSelect'].includes(screen) && (
           <div className="flex flex-wrap items-center gap-1.5 text-xs text-gray-400 dark:text-gray-500 font-bold uppercase tracking-wider mb-6 bg-white dark:bg-gray-900 px-4 py-2.5 rounded-full border border-gray-100 dark:border-gray-800 shadow-sm w-fit">
-            <button onClick={() => navigateTo('yearSelect')} className="hover:text-physiology transition-colors">Portal</button>
+            <button onClick={() => navigateTo('yearSelect')} className="hover:text-physiology transition-colors">{t('portal')}</button>
             {selectedYear && (
               <>
-                <ChevronRight size={12} className="text-gray-300 dark:text-gray-700" />
-                <button onClick={() => navigateTo('semesterSelect')} className="hover:text-physiology transition-colors">Year {selectedYear}</button>
+                <ChevronRight size={12} className="text-gray-300 dark:text-gray-700 animate-flip-rtl" />
+                <button onClick={() => navigateTo('semesterSelect')} className="hover:text-physiology transition-colors">{t('year' + selectedYear)}</button>
               </>
             )}
             {selectedSemester && (
               <>
-                <ChevronRight size={12} className="text-gray-300 dark:text-gray-700" />
-                <button onClick={() => navigateTo('moduleSelect')} className="hover:text-physiology transition-colors">Semester {selectedSemester}</button>
+                <ChevronRight size={12} className="text-gray-300 dark:text-gray-700 animate-flip-rtl" />
+                <button onClick={() => navigateTo('moduleSelect')} className="hover:text-physiology transition-colors">{t('semester' + selectedSemester)}</button>
               </>
             )}
             {selectedModule && (
               <>
-                <ChevronRight size={12} className="text-gray-300 dark:text-gray-700" />
+                <ChevronRight size={12} className="text-gray-300 dark:text-gray-700 animate-flip-rtl" />
                 <span className="text-gray-900 dark:text-gray-300 truncate max-w-[150px]">{selectedModule.code}</span>
               </>
             )}
@@ -506,38 +557,60 @@ function MainApp() {
                 Academic Portal <Sparkles size={12} className="text-physiology" />
               </div>
               <h2 className="font-archivo text-4xl lg:text-5xl font-black tracking-tight leading-none">
-                Select Academic Year
+                {t('selectYear')}
               </h2>
               <p className="text-gray-500 dark:text-gray-400 font-medium">
-                Choose your current year of study to access the tailored credit point syllabus, module questions, and hybrid exams.
+                {t('selectYearDesc')}
               </p>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
               {[1, 2, 3, 4, 5, 6].map((year) => {
                 const isClerkship = year >= 4;
+                const active = hasActiveModulesForYear(year);
                 return (
                   <button
                     key={year}
-                    onClick={() => handleSelectYear(year)}
-                    className="portal-card text-left bg-white dark:bg-gray-900 rounded-[30px] p-6 border-2 border-gray-100 dark:border-gray-800/80 hover:border-physiology/40 shadow-sm flex flex-col justify-between h-44 animate-pop-up grid-delay relative overflow-hidden group"
+                    onClick={() => active && handleSelectYear(year)}
+                    disabled={!active}
+                    className={`portal-card text-start bg-white dark:bg-gray-900 rounded-[30px] p-6 border-2 shadow-sm flex flex-col justify-between h-44 animate-pop-up grid-delay relative overflow-hidden group ${
+                      active
+                        ? 'border-gray-100 dark:border-gray-800/80 hover:border-physiology/40 cursor-pointer'
+                        : 'border-dashed border-gray-200 dark:border-gray-800 opacity-60 saturate-50 cursor-not-allowed pointer-events-none bg-gray-50/30 dark:bg-gray-950/20 shadow-none'
+                    }`}
                   >
                     <div className="absolute -right-8 -top-8 w-24 h-24 rounded-full bg-physiology/5 group-hover:bg-physiology/10 transition-colors duration-300" />
+                    
+                    {!active && (
+                      <span className="absolute top-4 right-4 px-2.5 py-0.5 bg-gray-150 dark:bg-gray-850 text-gray-500 dark:text-gray-400 rounded-lg text-[9px] font-bold uppercase tracking-wider flex items-center gap-1">
+                        <Lock size={10} />
+                        {t('comingSoon').replace('...', '')}
+                      </span>
+                    )}
+
                     <div>
-                      <div className="w-10 h-10 rounded-xl bg-physiology/10 text-physiology-dark flex items-center justify-center font-archivo font-black text-lg">
+                      <div className={`w-10 h-10 rounded-xl flex items-center justify-center font-archivo font-black text-lg ${
+                        active ? 'bg-physiology/10 text-physiology-dark' : 'bg-gray-100 dark:bg-gray-800 text-gray-400 dark:text-gray-550'
+                      }`}>
                         {year}
                       </div>
                       <h3 className="font-archivo text-xl font-bold text-gray-900 dark:text-white mt-4 tracking-tight">
-                        Year {year}
+                        {t('year' + year)}
                       </h3>
                       <p className="text-xs text-gray-400 dark:text-gray-500 font-semibold uppercase tracking-wider mt-1">
-                        {isClerkship ? 'Clinical Clerkship Phase' : 'Pre-Clerkship Phase'}
+                        {isClerkship ? t('clerkship') : t('preClerkship')}
                       </p>
                     </div>
                     <div className="flex items-center justify-end w-full">
-                      <span className="inline-flex items-center gap-1 text-xs font-bold text-physiology group-hover:translate-x-1.5 transition-transform duration-200">
-                        Enter <ArrowRight size={14} />
-                      </span>
+                      {active ? (
+                        <span className="inline-flex items-center gap-1 text-xs font-bold text-physiology group-hover:translate-x-1.5 transition-transform duration-200">
+                          {t('enter')} <ArrowRight size={14} className="rtl:rotate-180" />
+                        </span>
+                      ) : (
+                        <span className="inline-flex items-center gap-1 text-xs font-bold text-gray-400 dark:text-gray-500">
+                          {t('comingSoon')}
+                        </span>
+                      )}
                     </div>
                   </button>
                 );
@@ -549,7 +622,7 @@ function MainApp() {
               <div className="max-w-4xl mx-auto pt-6 border-t border-gray-100 dark:border-gray-800">
                 <div className="flex items-center gap-2.5 mb-5">
                   <span className="w-1.5 h-5 rounded-full bg-physiology" />
-                  <h3 className="font-archivo text-lg font-bold">Resume From History</h3>
+                  <h3 className="font-archivo text-lg font-bold">{t('resumeHistory')}</h3>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                   {getQuizHistory().slice(0, 3).map((r) => (
@@ -563,10 +636,10 @@ function MainApp() {
                       </div>
                       <div className="flex-1 min-w-0">
                         <div className="font-archivo text-xs font-bold text-gray-900 dark:text-white truncate">
-                          Ch.{r.chapterId} — {r.subjectName}
+                          {t('chapter')}.{r.chapterId} — {r.subjectName}
                         </div>
                         <div className="text-[10px] text-gray-400 mt-0.5">
-                          {r.correct}/{r.total} correct
+                          {r.correct}/{r.total} {t('correct')}
                         </div>
                       </div>
                     </button>
@@ -584,36 +657,62 @@ function MainApp() {
           <div className="space-y-10 py-6 max-w-3xl mx-auto">
             <div className="text-center space-y-4 max-w-xl mx-auto">
               <h2 className="font-archivo text-4xl font-black tracking-tight leading-none">
-                Select Semester
+                {t('selectSemester')}
               </h2>
               <p className="text-gray-500 dark:text-gray-400 font-medium">
-                Syllabus contents and examinations are split by semesters. Select the active semester for Year {selectedYear}.
+                {language === 'en'
+                  ? `Syllabus contents and examinations are split by semesters. Select the active semester for ${t('year' + selectedYear)}.`
+                  : `يتم تقسيم محتويات المنهج والامتحانات حسب الفصول الدراسية. اختر الفصل الدراسي النشط لـ ${t('year' + selectedYear)}.`}
               </p>
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              {[1, 2].map((sem) => (
-                <button
-                  key={sem}
-                  onClick={() => handleSelectSemester(sem)}
-                  className="portal-card text-left bg-white dark:bg-gray-900 rounded-[30px] p-8 border-2 border-gray-100 dark:border-gray-800/80 hover:border-physiology/40 shadow-sm flex flex-col justify-between h-48 animate-pop-up group relative overflow-hidden"
-                >
-                  <div className="absolute -right-8 -top-8 w-28 h-28 rounded-full bg-physiology/5 group-hover:bg-physiology/10 transition-colors duration-300" />
-                  <div>
-                    <div className="w-12 h-12 rounded-2xl bg-physiology/10 text-physiology-dark flex items-center justify-center">
-                      <Calendar size={20} />
+              {[1, 2].map((sem) => {
+                const active = selectedYear ? hasActiveModulesForSemester(selectedYear, sem) : false;
+                return (
+                  <button
+                    key={sem}
+                    onClick={() => active && handleSelectSemester(sem)}
+                    disabled={!active}
+                    className={`portal-card text-start bg-white dark:bg-gray-900 rounded-[30px] p-8 border-2 shadow-sm flex flex-col justify-between h-48 animate-pop-up group relative overflow-hidden ${
+                      active
+                        ? 'border-gray-100 dark:border-gray-800/80 hover:border-physiology/40 cursor-pointer'
+                        : 'border-dashed border-gray-200 dark:border-gray-800 opacity-60 saturate-50 cursor-not-allowed pointer-events-none bg-gray-50/30 dark:bg-gray-950/20 shadow-none'
+                    }`}
+                  >
+                    <div className="absolute -right-8 -top-8 w-28 h-28 rounded-full bg-physiology/5 group-hover:bg-physiology/10 transition-colors duration-300" />
+                    
+                    {!active && (
+                      <span className="absolute top-4 right-4 px-2.5 py-0.5 bg-gray-150 dark:bg-gray-850 text-gray-500 dark:text-gray-400 rounded-lg text-[9px] font-bold uppercase tracking-wider flex items-center gap-1">
+                        <Lock size={10} />
+                        {t('comingSoon').replace('...', '')}
+                      </span>
+                    )}
+
+                    <div>
+                      <div className={`w-12 h-12 rounded-2xl flex items-center justify-center ${
+                        active ? 'bg-physiology/10 text-physiology-dark' : 'bg-gray-100 dark:bg-gray-800 text-gray-400 dark:text-gray-555'
+                      }`}>
+                        <Calendar size={20} />
+                      </div>
+                      <h3 className="font-archivo text-2xl font-bold text-gray-900 dark:text-white mt-5 tracking-tight">
+                        {t('semester' + sem)}
+                      </h3>
                     </div>
-                    <h3 className="font-archivo text-2xl font-bold text-gray-900 dark:text-white mt-5 tracking-tight">
-                      Semester {sem}
-                    </h3>
-                  </div>
-                  <div className="flex items-center justify-end w-full">
-                    <span className="inline-flex items-center gap-1.5 text-xs font-bold text-physiology group-hover:translate-x-1.5 transition-transform duration-200">
-                      Open Syllabus <ArrowRight size={14} />
-                    </span>
-                  </div>
-                </button>
-              ))}
+                    <div className="flex items-center justify-end w-full">
+                      {active ? (
+                        <span className="inline-flex items-center gap-1.5 text-xs font-bold text-physiology group-hover:translate-x-1.5 transition-transform duration-200">
+                          {t('enter')} <ArrowRight size={14} className="rtl:rotate-180" />
+                        </span>
+                      ) : (
+                        <span className="inline-flex items-center gap-1.5 text-xs font-bold text-gray-400 dark:text-gray-500">
+                          {t('comingSoon')}
+                        </span>
+                      )}
+                    </div>
+                  </button>
+                );
+              })}
             </div>
 
             <div className="flex items-center justify-center">
@@ -621,8 +720,8 @@ function MainApp() {
                 onClick={() => navigateTo('yearSelect')}
                 className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gray-100 dark:bg-gray-850 hover:bg-gray-200 dark:hover:bg-gray-800 text-sm font-semibold transition-colors duration-200"
               >
-                <ArrowLeft size={16} />
-                Back to Years
+                <ArrowLeft size={16} className="rtl:rotate-180" />
+                {t('back')}
               </button>
             </div>
 
@@ -635,10 +734,12 @@ function MainApp() {
           <div className="space-y-10 py-6">
             <div className="text-center space-y-4 max-w-xl mx-auto">
               <h2 className="font-archivo text-4xl font-black tracking-tight leading-none">
-                Syllabus Modules
+                {t('selectModule')}
               </h2>
               <p className="text-gray-500 dark:text-gray-400 font-medium">
-                Year {selectedYear}, Semester {selectedSemester} credit system syllabus. Click a module card to begin studying.
+                {language === 'en'
+                  ? `Year ${selectedYear}, Semester ${selectedSemester} credit system syllabus. Click a module card to begin studying.`
+                  : `منهج الساعات المعتمدة للسنة ${selectedYear}، الفصل الدراسي ${selectedSemester}. اضغط على بطاقة الوحدة لبدء المذاكرة.`}
               </p>
             </div>
 
@@ -650,15 +751,21 @@ function MainApp() {
                   return (
                     <button
                       key={mod.code}
-                      onClick={() => handleSelectModule(mod)}
-                      className={`portal-card text-left bg-white dark:bg-gray-900 rounded-[30px] p-6 border-2 shadow-sm flex flex-col justify-between h-52 animate-pop-up grid-delay relative overflow-hidden group ${
+                      onClick={() => active && handleSelectModule(mod)}
+                      disabled={!active}
+                      className={`portal-card text-start bg-white dark:bg-gray-900 rounded-[30px] p-6 border-2 shadow-sm flex flex-col justify-between h-52 animate-pop-up grid-delay relative overflow-hidden group ${
                         active
-                          ? 'border-physiology/20 hover:border-physiology/60'
-                          : 'border-gray-100 dark:border-gray-800/80 hover:border-gray-200'
+                          ? 'border-physiology/20 hover:border-physiology/60 cursor-pointer'
+                          : 'border-dashed border-gray-200 dark:border-gray-800 opacity-60 saturate-50 cursor-not-allowed pointer-events-none bg-gray-50/30 dark:bg-gray-950/20 shadow-none'
                       }`}
                     >
-                      {active && (
+                      {active ? (
                         <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-physiology/10 to-transparent rounded-bl-[60px]" />
+                      ) : (
+                        <span className="absolute top-4 right-4 px-2.5 py-0.5 bg-gray-150 dark:bg-gray-850 text-gray-500 dark:text-gray-400 rounded-lg text-[9px] font-bold uppercase tracking-wider flex items-center gap-1">
+                          <Lock size={10} />
+                          {t('comingSoon').replace('...', '')}
+                        </span>
                       )}
                       
                       <div className="space-y-3">
@@ -666,15 +773,10 @@ function MainApp() {
                           <span className="text-xs font-bold text-gray-400 dark:text-gray-500 font-archivo tracking-wider">
                             {mod.code}
                           </span>
-                          {active ? (
+                          {active && (
                             <span className="px-2.5 py-0.5 bg-physiology/10 text-physiology-dark rounded-full text-[10px] font-bold uppercase tracking-wider flex items-center gap-1">
                               <span className="w-1.5 h-1.5 rounded-full bg-physiology" />
-                              Live ({counts.totalCount} Qs)
-                            </span>
-                          ) : (
-                            <span className="px-2.5 py-0.5 bg-gray-100 dark:bg-gray-800 text-gray-400 dark:text-gray-500 rounded-full text-[10px] font-bold uppercase tracking-wider flex items-center gap-1">
-                              <Lock size={10} />
-                              Locked
+                              {language === 'en' ? 'Live' : 'نشط'} ({counts.totalCount} {t('questions')})
                             </span>
                           )}
                         </div>
@@ -685,22 +787,22 @@ function MainApp() {
                       </div>
 
                       <div>
-                        <div className="flex items-center gap-4 text-xs font-bold text-gray-400 dark:text-gray-500">
-                          <div>CP: <span className="text-gray-700 dark:text-gray-300 font-archivo">{mod.cp}</span></div>
+                        <div className="flex items-center gap-4 text-xs font-bold text-gray-400 dark:text-gray-550">
+                          <div>{t('cp')}: <span className="text-gray-700 dark:text-gray-300 font-archivo">{mod.cp}</span></div>
                           <div className="w-px h-3 bg-gray-200 dark:bg-gray-800" />
-                          <div>Marks: <span className="text-gray-700 dark:text-gray-300 font-archivo">{mod.marks}</span></div>
+                          <div>{t('marks')}: <span className="text-gray-700 dark:text-gray-300 font-archivo">{mod.marks}</span></div>
                         </div>
 
-                        <div className="h-px bg-gray-100 dark:bg-gray-800/80 my-3" />
+                        <div className="h-px bg-gray-100 dark:bg-gray-850 my-3" />
 
                         <div className="flex items-center justify-between text-xs">
                           {active ? (
                             <span className="font-bold text-physiology inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform duration-200">
-                              Start Study <ArrowRight size={14} />
+                              {t('start')} <ArrowRight size={14} className="rtl:rotate-180" />
                             </span>
                           ) : (
                             <span className="font-semibold text-gray-400 dark:text-gray-500 inline-flex items-center gap-1">
-                              Database Pending
+                              {t('comingSoon')}
                             </span>
                           )}
                         </div>
@@ -711,8 +813,7 @@ function MainApp() {
               ) : (
                 <div className="col-span-full py-12 text-center text-gray-400 bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 rounded-3xl">
                   <GraduationCap className="mx-auto text-gray-300 dark:text-gray-700 mb-3" size={32} />
-                  <p className="font-bold">Modules database coming soon for Year {selectedYear}.</p>
-                  <p className="text-xs text-gray-400 mt-1">Check Year 2, Semester 2 for the live Endocrine module.</p>
+                  <p className="font-bold">{t('comingSoon')}</p>
                 </div>
               )}
             </div>
@@ -722,8 +823,8 @@ function MainApp() {
                 onClick={() => navigateTo('semesterSelect')}
                 className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gray-100 dark:bg-gray-850 hover:bg-gray-200 dark:hover:bg-gray-800 text-sm font-semibold transition-colors duration-200"
               >
-                <ArrowLeft size={16} />
-                Back to Semesters
+                <ArrowLeft size={16} className="rtl:rotate-180" />
+                {t('back')}
               </button>
             </div>
 

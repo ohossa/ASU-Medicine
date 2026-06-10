@@ -18,6 +18,8 @@ import type { ChapterData, SubjectData, SubjectColor } from '../types';
 import { subjectStyles } from '../types';
 import { shuffleArray } from '../data';
 import { ThemeToggle } from './ThemeToggle';
+import { LanguageToggle } from './LanguageToggle';
+import { useLanguage } from '../context/LanguageContext';
 
 interface Props {
   chapter: ChapterData;
@@ -42,9 +44,16 @@ const totalQs = (subjects: SubjectData[]) =>
 export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart }: Props) {
   const allQuestions = useMemo(() => chapter.subjects.flatMap((s) => s.questions), [chapter]);
   const totalQuestions = useMemo(() => totalQs(chapter.subjects), [chapter.subjects]);
+  const { t, language } = useLanguage();
 
   return (
-    <div className="min-h-screen bg-gray-50/80 dark:bg-gray-950 font-manrope">
+    <div className="min-h-screen bg-gray-50/50 dark:bg-gray-950 font-manrope relative overflow-hidden">
+      {/* Dynamic Floating Background Blobs */}
+      <div className="fixed inset-0 -z-10 overflow-hidden bg-background pointer-events-none">
+        <div className="absolute top-[10%] left-[5%] h-[35vw] w-[35vw] rounded-full bg-physiology/6 dark:bg-physiology/4 blur-[130px] blob-float-1" />
+        <div className="absolute bottom-[10%] right-[5%] h-[40vw] w-[40vw] rounded-full bg-anatomy/6 dark:bg-anatomy/4 blur-[160px] blob-float-2" />
+      </div>
+
       <style>{`
         @keyframes fadeInUp {
           from { opacity: 0; transform: translateY(28px); }
@@ -58,6 +67,17 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart }
           0%, 100% { transform: translateY(0px); }
           50% { transform: translateY(-8px); }
         }
+        @keyframes floatBlob1 {
+          0%, 100% { transform: translate(0, 0) scale(1); }
+          50% { transform: translate(5%, 8%) scale(1.08); }
+        }
+        @keyframes floatBlob2 {
+          0%, 100% { transform: translate(0, 0) scale(1); }
+          50% { transform: translate(-6%, -5%) scale(0.92); }
+        }
+        .blob-float-1 { animation: floatBlob1 25s ease-in-out infinite; }
+        .blob-float-2 { animation: floatBlob2 30s ease-in-out infinite alternate; }
+
         @keyframes pulseRing {
           0% { transform: scale(0.9); opacity: 0.6; }
           50% { transform: scale(1.1); opacity: 0.2; }
@@ -75,8 +95,21 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart }
         .card-stagger:nth-child(5) { animation-delay: 340ms; }
         .card-stagger:nth-child(6) { animation-delay: 400ms; }
         .card-stagger:nth-child(7) { animation-delay: 460ms; }
-        .subject-card { transition: all 350ms cubic-bezier(0.34,1.56,0.64,1); }
-        .subject-card:hover { transform: translateY(-6px) scale(1.02); }
+        
+        .subject-card {
+          transition: all 400ms cubic-bezier(0.34, 1.56, 0.64, 1);
+          background: rgba(255, 255, 255, 0.8);
+          backdrop-filter: blur(18px);
+          border: 1px solid rgba(255, 255, 255, 0.45);
+        }
+        .dark .subject-card {
+          background: rgba(15, 17, 28, 0.65);
+          backdrop-filter: blur(18px);
+          border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        .subject-card:hover {
+          transform: translateY(-8px) scale(1.02);
+        }
         .subject-card:active { transform: translateY(-2px) scale(0.98); }
         .icon-float { transition: transform 350ms cubic-bezier(0.34,1.56,0.64,1); }
         .subject-card:hover .icon-float { transform: scale(1.15) rotate(-5deg); }
@@ -114,21 +147,22 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart }
                 className="btn-back inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white text-sm font-semibold border border-gray-100 dark:border-gray-700"
               >
                 <ArrowLeft size={16} />
-                <span className="hidden sm:inline">Chapters</span>
+                <span className="hidden sm:inline">{t('chaptersCount')}</span>
               </button>
               <div className="header-anim hidden md:flex items-center gap-2 text-sm">
-                <span className="text-gray-400 dark:text-gray-500 font-medium">Endocrine Module</span>
+                <span className="text-gray-400 dark:text-gray-500 font-medium">{t('portal')}</span>
                 <ChevronRight size={12} className="text-gray-300 dark:text-gray-600" />
-                <span className="text-gray-900 dark:text-white font-bold">Chapter {chapter.id}</span>
+                <span className="text-gray-900 dark:text-white font-bold">{t('chapter')} {chapter.id}</span>
               </div>
             </div>
             <div className="flex items-center gap-3">
               <div className="stats-anim flex items-center gap-2 px-4 py-2 bg-physiology/5 border border-physiology/15 rounded-full">
                 <span className="w-2 h-2 rounded-full bg-physiology" />
                 <span className="text-xs font-bold text-physiology-dark">
-                  {chapter.subjects.length} Subjects Available
+                  {chapter.subjects.length} {t('availableSubjects')}
                 </span>
               </div>
+              <LanguageToggle />
               <ThemeToggle />
             </div>
           </div>
@@ -149,25 +183,25 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart }
             <div>
               <div className="header-anim inline-flex items-center gap-2.5 px-4 py-2 bg-gray-900 dark:bg-white text-white dark:text-gray-900 rounded-full text-xs font-bold tracking-wide uppercase mb-5">
                 <span className="text-lg">{chapter.emoji}</span>
-                Chapter {chapter.id}
+                {t('chapter')} {chapter.id}
               </div>
               <h1 className="header-anim font-archivo text-4xl lg:text-5xl font-black text-gray-900 dark:text-white tracking-tight leading-tight mb-3">
                 {chapter.title}
               </h1>
               <p className="header-anim-delay text-gray-400 dark:text-gray-500 text-base lg:text-lg font-medium max-w-md leading-relaxed">
-                {chapter.subtitle} — Select a subject to begin your assessment.
+                {chapter.subtitle} — {language === 'en' ? 'Select a subject to begin your assessment.' : 'اختر مادة لبدء التقييم.'}
               </p>
             </div>
 
             <div className="stats-anim flex items-center gap-5 lg:gap-8 bg-gray-50/80 dark:bg-gray-800/80 px-6 py-4 rounded-2xl border border-gray-100 dark:border-gray-700">
               <div className="text-center">
                 <div className="font-archivo text-2xl font-black text-gray-900 dark:text-white">{chapter.subjects.length}</div>
-                <div className="text-[10px] text-gray-400 dark:text-gray-500 font-bold uppercase tracking-wider mt-0.5">Subjects</div>
+                <div className="text-[10px] text-gray-400 dark:text-gray-500 font-bold uppercase tracking-wider mt-0.5">{t('subjectsTab')}</div>
               </div>
               <div className="w-px h-8 bg-gray-200 dark:bg-gray-700" />
               <div className="text-center">
                 <div className="font-archivo text-2xl font-black text-physiology">{totalQuestions}</div>
-                <div className="text-[10px] text-gray-400 dark:text-gray-500 font-bold uppercase tracking-wider mt-0.5">Questions</div>
+                <div className="text-[10px] text-gray-400 dark:text-gray-500 font-bold uppercase tracking-wider mt-0.5">{t('questions')}</div>
               </div>
             </div>
           </div>
@@ -178,11 +212,11 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart }
       <div className="max-w-6xl mx-auto px-6 lg:px-8 py-10 lg:py-14">
         <div className="flex items-center gap-3 mb-8">
           <div className="w-1.5 h-6 rounded-full bg-gradient-to-b from-physiology to-anatomy" />
-          <h2 className="font-archivo text-lg font-bold text-gray-900 dark:text-white tracking-tight">Choose Your Subject</h2>
+          <h2 className="font-archivo text-lg font-bold text-gray-900 dark:text-white tracking-tight">{t('chooseSubject')}</h2>
           <div className="flex-1 h-px bg-gray-100 dark:bg-gray-800 ml-2" />
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 text-start">
           {chapter.subjects.map((subject) => {
             const color = subject.id as SubjectColor;
             const s = subjectStyles[color];
@@ -213,7 +247,7 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart }
                   <div className={`flex items-center gap-2 px-3 py-2 ${s.bgOp5} rounded-xl mb-5 ${s.borderOp10} border`}>
                     <HelpCircle size={14} className={s.text} />
                     <span className={`text-xs font-bold ${s.textDark}`}>
-                      {hasQuestions ? `${subject.questions.length} Questions` : 'Coming Soon'}
+                      {hasQuestions ? `${subject.questions.length} ${t('questions')}` : t('comingSoon')}
                     </span>
                   </div>
 
@@ -222,7 +256,7 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart }
                   <div className="flex items-center justify-end">
                     {hasQuestions && (
                       <div className={`arrow-bounce flex items-center gap-1 text-xs font-bold ${s.text} opacity-0 group-hover:opacity-100 transition-opacity duration-300`}>
-                        Begin
+                        {t('begin')}
                         <ArrowRight size={14} />
                       </div>
                     )}
@@ -235,7 +269,7 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart }
 
         {/* QUICK START BANNER */}
         <div
-          className="mt-10 bg-white dark:bg-gray-900 rounded-3xl border border-gray-100 dark:border-gray-800 p-6 flex flex-col sm:flex-row items-center justify-between gap-4"
+          className="mt-10 bg-white dark:bg-gray-900 rounded-3xl border border-gray-100 dark:border-gray-800 p-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-start"
           style={{ boxShadow: '0 2px 12px rgba(0,0,0,0.04)' }}
         >
           <div className="flex items-center gap-4">
@@ -243,9 +277,9 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart }
               <Zap size={20} className="text-white dark:text-gray-900" />
             </div>
             <div>
-              <h3 className="font-archivo text-base font-bold text-gray-900 dark:text-white tracking-tight">Quick Start — All Subjects</h3>
+              <h3 className="font-archivo text-base font-bold text-gray-900 dark:text-white tracking-tight">{t('quickStartAllSubjectsBanner')}</h3>
               <p className="text-xs text-gray-400 dark:text-gray-500 font-medium mt-0.5">
-                Randomized mix of all {totalQuestions} questions from every subject
+                {t('quickStartAllSubjectsDescBanner')}
               </p>
             </div>
           </div>
@@ -255,19 +289,19 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart }
             className="inline-flex items-center gap-2 px-6 py-3 bg-gray-900 dark:bg-white hover:bg-gray-800 dark:hover:bg-gray-100 disabled:opacity-40 text-white dark:text-gray-900 rounded-full text-sm font-bold tracking-wide transition-all duration-300 hover:scale-[0.97] active:scale-95"
             style={{ boxShadow: '0 4px 16px rgba(0,0,0,0.12)' }}
           >
-            Start All
+            {t('startAll')}
             <ArrowRight size={16} />
           </button>
         </div>
 
-        <div className="mt-10 pb-8 text-center space-y-1.5">
-          <p className="text-xs text-gray-400 dark:text-gray-500 font-medium">
-            Endocrine Module Quiz • Chapter {chapter.id}: {chapter.title} • 2nd Year Medical Students
+        <div className="mt-10 pb-8 text-center space-y-1.5 border-t border-gray-100 dark:border-gray-800/80 pt-6">
+          <p className="text-xs text-gray-450 dark:text-gray-500 font-semibold tracking-wider uppercase">
+            {t('asu')} • {t('portalTitle')}
           </p>
-          <p className="text-[11px] text-gray-400 dark:text-gray-500 font-medium">
-            For inquiries or to report errors, please contact:{' '}
-            <a href="mailto:omarhmaged@gmail.com" className="hover:text-gray-900 dark:hover:text-white transition-colors underline font-semibold">
-              omarhmaged@gmail.com
+          <p className="text-[11px] text-gray-400 dark:text-gray-500 font-medium max-w-xl mx-auto px-6 leading-relaxed">
+            {t('developedForStudents')}{' '}
+            <a href="mailto:support-med@asu.edu.eg" className="hover:text-physiology dark:hover:text-white transition-colors underline font-semibold">
+              support-med@asu.edu.eg
             </a>
           </p>
         </div>

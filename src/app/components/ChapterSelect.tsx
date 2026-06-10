@@ -1,15 +1,19 @@
 import { useState, useEffect } from 'react';
-import { GraduationCap, Layers, ArrowRight, Palette, Clock, Award, Trash2, ArrowLeft } from 'lucide-react';
+import { GraduationCap, Layers, ArrowRight, Palette, Clock, Award, Trash2, ArrowLeft, Calendar } from 'lucide-react';
 import type { ChapterData, SubjectColor } from '../types';
 import { formatTime } from '../types';
 import type { QuizResult } from '../utils/storage';
 import { getQuizHistory, clearQuizHistory } from '../utils/storage';
 import { ThemeToggle } from './ThemeToggle';
+import { LanguageToggle } from './LanguageToggle';
+import { SyllabusTracker } from './SyllabusTracker';
+import { useLanguage } from '../context/LanguageContext';
 
 interface Props {
   chapters: ChapterData[];
   studyModeName: string;
   moduleName: string;
+  moduleCode: string;
   onSelectChapter: (chapter: ChapterData) => void;
   onSelectHistory?: (result: QuizResult) => void;
   onBackToModeSelect: () => void;
@@ -70,11 +74,14 @@ export function ChapterSelect({
   chapters,
   studyModeName,
   moduleName,
+  moduleCode,
   onSelectChapter,
   onSelectHistory,
   onBackToModeSelect,
 }: Props) {
   const [history, setHistory] = useState<QuizResult[]>([]);
+  const [showTracker, setShowTracker] = useState(false);
+  const { t, language } = useLanguage();
 
   const totalSubjectsCount = new Set(chapters.flatMap(c => c.subjects.map(s => s.id))).size || 7;
 
@@ -88,7 +95,13 @@ export function ChapterSelect({
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-950 font-manrope">
+    <div className="min-h-screen bg-gray-50/50 dark:bg-gray-950 font-manrope relative overflow-hidden">
+      {/* Dynamic Floating Background Blobs */}
+      <div className="fixed inset-0 -z-10 overflow-hidden bg-background pointer-events-none">
+        <div className="absolute top-[10%] left-[5%] h-[35vw] w-[35vw] rounded-full bg-physiology/6 dark:bg-physiology/4 blur-[130px] blob-float-1" />
+        <div className="absolute bottom-[10%] right-[5%] h-[40vw] w-[40vw] rounded-full bg-anatomy/6 dark:bg-anatomy/4 blur-[160px] blob-float-2" />
+      </div>
+
       <style>{`
         @keyframes fadeInUp {
           from { opacity: 0; transform: translateY(24px); }
@@ -98,6 +111,17 @@ export function ChapterSelect({
           0%, 100% { transform: translateY(0px); }
           50% { transform: translateY(-6px); }
         }
+        @keyframes floatBlob1 {
+          0%, 100% { transform: translate(0, 0) scale(1); }
+          50% { transform: translate(5%, 8%) scale(1.08); }
+        }
+        @keyframes floatBlob2 {
+          0%, 100% { transform: translate(0, 0) scale(1); }
+          50% { transform: translate(-6%, -5%) scale(0.92); }
+        }
+        .blob-float-1 { animation: floatBlob1 25s ease-in-out infinite; }
+        .blob-float-2 { animation: floatBlob2 30s ease-in-out infinite alternate; }
+
         @keyframes gradientShift {
           0% { background-position: 0% 50%; }
           50% { background-position: 100% 50%; }
@@ -125,14 +149,14 @@ export function ChapterSelect({
           background-image: radial-gradient(circle, rgba(255,255,255,0.04) 1px, transparent 1px);
         }
         .glass-panel {
-          background: rgba(255, 255, 255, 0.65);
-          backdrop-filter: blur(18px) saturate(130%);
-          border: 1px solid rgba(255, 255, 255, 0.4);
+          background: rgba(255, 255, 255, 0.75);
+          backdrop-filter: blur(20px) saturate(140%);
+          border: 1px solid rgba(255, 255, 255, 0.45);
         }
         .dark .glass-panel {
-          background: rgba(15, 15, 25, 0.65);
-          backdrop-filter: blur(18px) saturate(130%);
-          border: 1px solid rgba(255, 255, 255, 0.08);
+          background: rgba(15, 17, 28, 0.65);
+          backdrop-filter: blur(20px) saturate(140%);
+          border: 1px solid rgba(255, 255, 255, 0.05);
         }
         .gradient-title {
           background: linear-gradient(120deg, #10B981, #06B6D4, #3B82F6, #8B5CF6);
@@ -142,14 +166,14 @@ export function ChapterSelect({
           animation: gradientShift 8s ease infinite;
         }
         .chapter-card {
-          transition: all 350ms cubic-bezier(0.34,1.56,0.64,1);
-          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.01), 0 10px 20px -5px rgba(0, 0, 0, 0.02);
+          transition: all 400ms cubic-bezier(0.34,1.56,0.64,1);
+          box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.01);
         }
         .chapter-card:hover {
-          transform: translateY(-6px) scale(1.01);
-          box-shadow: 0 20px 40px -12px rgba(0, 0, 0, 0.08), 0 8px 24px -8px rgba(0, 0, 0, 0.04);
+          transform: translateY(-8px) scale(1.015);
+          box-shadow: 0 24px 48px -12px rgba(16, 185, 129, 0.08);
         }
-        .chapter-card:active { transform: translateY(-2px) scale(0.995); }
+        .chapter-card:active { transform: translateY(-3px) scale(0.995); }
         .btn-start { transition: all 300ms cubic-bezier(0.34,1.56,0.64,1); }
         .btn-start:hover { transform: scale(0.97); box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
         .btn-start:active { transform: scale(0.94); }
@@ -163,6 +187,10 @@ export function ChapterSelect({
           animation: drawLine 6s linear infinite;
           transform: translate3d(0, 0, 0);
           will-change: transform;
+          filter: drop-shadow(0 0 2px rgba(16, 185, 129, 0.2));
+        }
+        .dark .ecg-line {
+          filter: drop-shadow(0 0 4px rgba(16, 185, 129, 0.5));
         }
       `}</style>
 
@@ -188,21 +216,32 @@ export function ChapterSelect({
         <div className="relative max-w-6xl mx-auto px-6 py-12 lg:py-16">
           <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
             <div>
-              <button
-                onClick={onBackToModeSelect}
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-600 dark:text-gray-300 text-xs font-semibold border border-gray-100 dark:border-gray-700 mb-5 transition-all duration-200 hover:-translate-x-1"
-              >
-                <ArrowLeft size={14} />
-                Back to Study Modes
-              </button>
-              <div className="header-anim inline-flex items-center gap-2 px-4 py-1.5 bg-physiology/10 text-physiology-dark rounded-full text-xs font-semibold tracking-wide uppercase mb-4">
-                Ain Shams University Portal <GraduationCap size={14} />
+              <div className="flex flex-wrap items-center gap-3 mb-5">
+                <button
+                  onClick={onBackToModeSelect}
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-600 dark:text-gray-300 text-xs font-semibold border border-gray-100 dark:border-gray-700 transition-all duration-200 hover:-translate-x-1"
+                >
+                  <ArrowLeft size={14} />
+                  {t('backToStudyModes')}
+                </button>
+                
+                <button
+                  onClick={() => setShowTracker(true)}
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-physiology/10 hover:bg-physiology/15 border border-physiology/20 text-physiology-dark text-xs font-bold transition-all duration-200 hover:scale-[1.02]"
+                >
+                  <Calendar size={14} className="text-physiology" />
+                  {t('syllabusTracker')}
+                </button>
+              </div>
+              
+              <div className="header-anim inline-flex items-center gap-2 px-4 py-1.5 bg-physiology/10 text-physiology-dark rounded-full text-xs font-semibold tracking-wide uppercase mb-4 animate-pulse">
+                {t('asu')} • {t('portal')} <GraduationCap size={14} />
               </div>
               <h1 className="header-anim font-archivo text-4xl lg:text-5xl font-black tracking-tight leading-none mb-3">
                 <span className="gradient-title">{moduleName}</span>
               </h1>
               <p className="header-sub text-gray-500 dark:text-gray-400 text-sm font-medium max-w-lg leading-relaxed">
-                Active Study Mode: <span className="font-extrabold text-physiology">{studyModeName}</span>
+                {language === 'en' ? 'Active Study Mode' : 'وضع الدراسة النشط'}: <span className="font-extrabold text-physiology">{studyModeName}</span>
               </p>
             </div>
 
@@ -210,14 +249,15 @@ export function ChapterSelect({
               <div className="header-stats flex items-center gap-6 lg:gap-8">
                 <div className="text-center">
                   <div className="font-archivo text-3xl font-black text-gray-900 dark:text-white">{chapters.length}</div>
-                  <div className="text-xs text-gray-400 dark:text-gray-500 font-semibold uppercase tracking-wide">Chapters</div>
+                  <div className="text-xs text-gray-400 dark:text-gray-500 font-semibold uppercase tracking-wide">{t('chaptersCount')}</div>
                 </div>
                 <div className="w-px h-10 bg-gray-200 dark:bg-gray-700" />
                 <div className="text-center">
                   <div className="font-archivo text-3xl font-black text-gray-900 dark:text-white">{totalSubjectsCount}</div>
-                  <div className="text-xs text-gray-400 dark:text-gray-500 font-semibold uppercase tracking-wide">Subjects</div>
+                  <div className="text-xs text-gray-400 dark:text-gray-500 font-semibold uppercase tracking-wide">{t('subjectsTab')}</div>
                 </div>
               </div>
+              <LanguageToggle />
               <ThemeToggle />
             </div>
           </div>
@@ -247,7 +287,7 @@ export function ChapterSelect({
                   </div>
                   <div>
                     <div className="text-[11px] font-bold text-gray-400 dark:text-gray-500 uppercase tracking-wider">
-                      Chapter {chapter.id}
+                      {t('chapter')} {chapter.id}
                     </div>
                   </div>
                 </div>
@@ -270,16 +310,16 @@ export function ChapterSelect({
 
                 <div className="h-px bg-gray-100 dark:bg-gray-800 mb-4" />
 
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-1.5 text-xs text-gray-400 dark:text-gray-500 font-medium">
+                <div className="flex items-center justify-between text-xs">
+                  <div className="flex items-center gap-1.5 text-gray-400 dark:text-gray-500 font-medium">
                     <Layers size={14} />
-                    {chapter.subjects.length} subjects
+                    {chapter.subjects.length} {t('subjectsCount')}
                   </div>
                   <button
-                    className="btn-start inline-flex items-center gap-2 px-5 py-2.5 bg-gray-900 dark:bg-white hover:bg-gray-800 dark:hover:bg-gray-100 text-white dark:text-gray-900 rounded-full text-xs font-bold tracking-wide"
+                    className="btn-start inline-flex items-center gap-2 px-5 py-2.5 bg-gray-900 dark:bg-white hover:bg-gray-800 dark:hover:bg-gray-100 text-white dark:text-gray-900 rounded-full font-bold tracking-wide"
                     onClick={(e) => { e.stopPropagation(); onSelectChapter(chapter); }}
                   >
-                    Start
+                    {t('start')}
                     <ArrowRight size={14} />
                   </button>
                 </div>
@@ -290,19 +330,19 @@ export function ChapterSelect({
 
         {/* RECENT RESULTS */}
         {history.length > 0 && (
-          <div className="mt-12">
+          <div className="mt-12 text-start">
             <div className="flex items-center justify-between mb-5">
               <div className="flex items-center gap-3">
                 <div className="w-1.5 h-6 rounded-full bg-gradient-to-b from-biochem to-physiology" />
-                <h2 className="font-archivo text-xl font-bold text-gray-900 dark:text-white tracking-tight">Recent Results</h2>
-                <span className="text-xs text-gray-400 dark:text-gray-500 font-semibold">{history.length} sessions</span>
+                <h2 className="font-archivo text-xl font-bold text-gray-900 dark:text-white tracking-tight">{t('recentResults')}</h2>
+                <span className="text-xs text-gray-400 dark:text-gray-500 font-semibold">{history.length} {t('sessions')}</span>
               </div>
               <button
                 onClick={handleClearHistory}
                 className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold text-gray-400 dark:text-gray-500 hover:text-pathology hover:bg-pathology/5 border border-transparent hover:border-pathology/15 transition-all duration-200"
               >
                 <Trash2 size={12} />
-                Clear
+                {t('clear')}
               </button>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -310,7 +350,7 @@ export function ChapterSelect({
                 <button
                   key={r.id}
                   onClick={() => onSelectHistory && onSelectHistory(r)}
-                  className="history-card text-left w-full cursor-pointer bg-white dark:bg-gray-900 rounded-3xl px-5 py-4 border border-gray-100 dark:border-gray-800 flex items-center gap-4 hover:border-gray-300 dark:hover:border-gray-700 hover:scale-[1.01] hover:shadow-md active:scale-[0.99] transition-all duration-300"
+                  className="history-card text-start w-full cursor-pointer bg-white dark:bg-gray-900 rounded-3xl px-5 py-4 border border-gray-100 dark:border-gray-800 flex items-center gap-4 hover:border-gray-300 dark:hover:border-gray-700 hover:scale-[1.01] hover:shadow-md active:scale-[0.99] transition-all duration-300"
                   style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.04)' }}
                 >
                   <div className="flex-shrink-0 w-12 h-12 rounded-2xl bg-gray-50 dark:bg-gray-800 flex items-center justify-center">
@@ -318,11 +358,11 @@ export function ChapterSelect({
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="font-archivo text-sm font-bold text-gray-900 dark:text-white truncate">
-                      Ch.{r.chapterId} — {r.subjectName}
+                      {t('chapter')}.{r.chapterId} — {r.subjectName}
                     </div>
                     <div className="flex items-center gap-2 mt-0.5">
                       <span className="text-[11px] text-gray-400 dark:text-gray-500 font-medium">
-                        {r.correct}/{r.total} correct
+                        {r.correct}/{r.total} {t('correct')}
                       </span>
                       <span className="text-gray-200 dark:text-gray-700">•</span>
                       <span className="inline-flex items-center gap-1 text-[11px] text-gray-400 dark:text-gray-500 font-medium">
@@ -342,10 +382,10 @@ export function ChapterSelect({
         )}
 
         {/* SUBJECT LEGEND */}
-        <div className="mt-12 p-6 glass-panel rounded-[24px] shadow-sm">
+        <div className="mt-12 p-6 glass-panel rounded-[24px] shadow-sm text-start">
           <div className="flex items-center gap-2 mb-4">
             <Palette size={16} className="text-gray-400 dark:text-gray-500" />
-            <span className="text-xs font-bold text-gray-400 dark:text-gray-500 uppercase tracking-wider">Subject Color Guide</span>
+            <span className="text-xs font-bold text-gray-400 dark:text-gray-500 uppercase tracking-wider">{t('subjectColorGuide')}</span>
           </div>
           <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
             {(
@@ -367,18 +407,27 @@ export function ChapterSelect({
           </div>
         </div>
 
-        <div className="mt-10 pb-8 text-center space-y-1">
-          <p className="text-xs text-gray-300 dark:text-gray-600 font-medium">
-            2nd Year Medical Students • Endocrine System Module
+        <div className="mt-10 pb-8 text-center space-y-1.5 border-t border-gray-100 dark:border-gray-800/80 pt-6">
+          <p className="text-xs text-gray-450 dark:text-gray-500 font-semibold tracking-wider uppercase">
+            {t('asu')} • {t('portalTitle')}
           </p>
-          <p className="text-[11px] text-gray-300 dark:text-gray-600 font-medium">
-            For inquiries or to report errors, please contact:{' '}
-            <a href="mailto:omarhmaged@gmail.com" className="hover:text-gray-900 dark:hover:text-white transition-colors underline font-semibold">
-              omarhmaged@gmail.com
+          <p className="text-[11px] text-gray-400 dark:text-gray-500 font-medium max-w-xl mx-auto px-6 leading-relaxed">
+            {t('developedForStudents')}{' '}
+            <a href="mailto:support-med@asu.edu.eg" className="hover:text-physiology dark:hover:text-white transition-colors underline font-semibold">
+              support-med@asu.edu.eg
             </a>
           </p>
         </div>
       </div>
+
+      {showTracker && (
+        <SyllabusTracker
+          moduleCode={moduleCode}
+          moduleName={moduleName}
+          chapters={chapters}
+          onClose={() => setShowTracker(false)}
+        />
+      )}
     </div>
   );
 }

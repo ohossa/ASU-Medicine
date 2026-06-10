@@ -20,6 +20,8 @@ import {
 import type { ChapterData, SubjectData, Question, SubjectColor } from '../types';
 import { subjectStyles, formatTime } from '../types';
 import { ThemeToggle } from './ThemeToggle';
+import { LanguageToggle } from './LanguageToggle';
+import { useLanguage } from '../context/LanguageContext';
 
 interface Props {
   chapter: ChapterData;
@@ -54,6 +56,7 @@ export function ResultsDashboard({
   onRetake, onTryAnotherSubject, onBackToChapters, onBackToSubjects,
 }: Props) {
   const [filter, setFilter] = useState<'all' | 'wrong' | 'flagged'>('all');
+  const { t, language } = useLanguage();
 
   const checkAnswerCorrect = (q: Question, ans: any) => {
     if (ans === undefined) return false;
@@ -284,24 +287,20 @@ export function ResultsDashboard({
                 className="nav-back inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white text-sm font-semibold border border-gray-100 dark:border-gray-700"
               >
                 <ArrowLeft size={16} />
-                <span className="hidden sm:inline">Back</span>
+                <span className="hidden sm:inline">{t('back')}</span>
               </button>
               <div className="hidden md:flex items-center gap-2 text-sm">
-                <span className="text-gray-400 dark:text-gray-500 font-medium">Chapter {chapter.id}</span>
+                <span className="text-gray-400 dark:text-gray-500 font-medium">{t('chapter')} {chapter.id}</span>
                 <ChevronRight size={12} className="text-gray-300 dark:text-gray-600" />
-                <span className="text-gray-400 dark:text-gray-500 font-medium">{chapter.title}</span>
-                <ChevronRight size={12} className="text-gray-300 dark:text-gray-600" />
-                <span className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full ${s.bgOp10} ${s.textDark} text-xs font-bold`}>
-                  <span className={`w-1.5 h-1.5 rounded-full ${s.bg}`} />
-                  {subject ? subject.name : 'All Subjects'}
-                </span>
+                <span className="text-gray-900 dark:text-white font-bold">{chapter.title}</span>
               </div>
             </div>
             <div className="flex items-center gap-3">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-success/5 border border-success/15 rounded-full">
                 <CheckCircle2 size={14} className="text-success" />
-                <span className="text-xs font-bold text-success-dark">Session Complete</span>
+                <span className="text-xs font-bold text-success-dark">{language === 'en' ? 'Session Complete' : 'اكتملت الجلسة'}</span>
               </div>
+              <LanguageToggle />
               <ThemeToggle />
             </div>
           </div>
@@ -362,11 +361,14 @@ export function ResultsDashboard({
             <div className="flex-1 text-center lg:text-left">
               <div className="header-animate">
                 <h1 className="font-archivo text-4xl lg:text-5xl font-black text-gray-900 dark:text-white tracking-tight leading-tight mb-3">
-                  {getPerformanceLabel(pct)}
+                  {language === 'en' ? getPerformanceLabel(pct) : (pct >= 75 ? 'عمل رائع!' : 'تحتاج للمزيد من الدراسة!')}
                 </h1>
                 <p className="text-gray-400 dark:text-gray-500 text-lg font-medium max-w-lg leading-relaxed mb-6">
-                  You graded <strong className="text-gray-700 dark:text-gray-300">{correct} out of {total}</strong> questions correctly
-                  {subject ? ` in the ${subject.name} section` : ''}.
+                  {language === 'en' ? (
+                    <>You graded <strong className="text-gray-700 dark:text-gray-300">{correct} out of {total}</strong> questions correctly{subject ? ` in the ${subject.name} section` : ''}.</>
+                  ) : (
+                    <>لقد أجبت بشكل صحيح على <strong className="text-gray-700 dark:text-gray-300">{correct} من أصل {total}</strong> أسئلة{subject ? ` في قسم ${subject.name}` : ''}.</>
+                  )}
                 </p>
               </div>
 
@@ -379,10 +381,10 @@ export function ResultsDashboard({
 
               <div className="stats-animate flex flex-wrap items-center justify-center lg:justify-start gap-3">
                 {[
-                  { icon: <Check size={14} />, value: correct, label: 'Correct', bg: 'bg-success/5', border: 'border-success/15', iconBg: 'bg-success/15', iconColor: 'text-success', textColor: 'text-success-dark' },
-                  { icon: <X size={14} />, value: incorrect, label: 'Incorrect', bg: 'bg-danger/5', border: 'border-danger/15', iconBg: 'bg-danger/15', iconColor: 'text-danger', textColor: 'text-danger-dark' },
-                  { icon: <Clock size={14} />, value: formatTime(elapsedSeconds), label: 'Time', bg: 'bg-gray-50 dark:bg-gray-800', border: 'border-gray-100 dark:border-gray-700', iconBg: 'bg-gray-100 dark:bg-gray-700', iconColor: 'text-gray-500 dark:text-gray-400', textColor: 'text-gray-700 dark:text-gray-300' },
-                  { icon: <Activity size={14} />, value: total, label: 'Total Qs', bg: s.bgOp5, border: s.borderOp15, iconBg: s.bgOp15, iconColor: s.text, textColor: s.textDark },
+                  { icon: <Check size={14} />, value: correct, label: t('correct'), bg: 'bg-success/5', border: 'border-success/15', iconBg: 'bg-success/15', iconColor: 'text-success', textColor: 'text-success-dark' },
+                  { icon: <X size={14} />, value: incorrect, label: t('incorrect'), bg: 'bg-danger/5', border: 'border-danger/15', iconBg: 'bg-danger/15', iconColor: 'text-danger', textColor: 'text-danger-dark' },
+                  { icon: <Clock size={14} />, value: formatTime(elapsedSeconds), label: t('timeSpent'), bg: 'bg-gray-50 dark:bg-gray-800', border: 'border-gray-100 dark:border-gray-700', iconBg: 'bg-gray-100 dark:bg-gray-700', iconColor: 'text-gray-500 dark:text-gray-400', textColor: 'text-gray-700 dark:text-gray-300' },
+                  { icon: <Activity size={14} />, value: total, label: t('totalQuestions'), bg: s.bgOp5, border: s.borderOp15, iconBg: s.bgOp15, iconColor: s.text, textColor: s.textDark },
                 ].map((stat) => (
                   <div key={stat.label} className={`flex items-center gap-2.5 px-5 py-3 ${stat.bg} ${stat.border} border rounded-2xl`}>
                     <div className={`w-8 h-8 rounded-xl ${stat.iconBg} flex items-center justify-center`}>
@@ -414,7 +416,7 @@ export function ResultsDashboard({
               className={`toggle-btn px-5 py-2.5 rounded-xl text-xs font-bold ${filter === 'all' ? 'bg-white dark:bg-gray-700 text-gray-900 dark:text-white shadow-sm' : 'text-gray-400 dark:text-gray-500'}`}
               onClick={() => setFilter('all')}
             >
-              All Questions
+              {t('allQuestions')}
             </button>
             <button
               className={`toggle-btn px-5 py-2.5 rounded-xl text-xs font-bold ${filter === 'wrong' ? 'bg-white dark:bg-gray-700 text-gray-900 dark:text-white shadow-sm' : 'text-gray-400 dark:text-gray-500'}`}
@@ -422,7 +424,7 @@ export function ResultsDashboard({
             >
               <span className="flex items-center gap-1.5">
                 <XCircle size={14} />
-                Wrong / Review Only
+                {t('incorrectOnly')}
                 <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-danger/10 text-danger text-[10px] font-black">
                   {incorrect}
                 </span>
@@ -435,7 +437,7 @@ export function ResultsDashboard({
               >
                 <span className="flex items-center gap-1.5">
                   <Flag size={14} />
-                  Flagged
+                  {t('flaggedOnly')}
                   <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-amber-100 dark:bg-amber-900/40 text-amber-600 dark:text-amber-400 text-[10px] font-black">
                     {flaggedCount}
                   </span>
@@ -808,7 +810,7 @@ export function ResultsDashboard({
             style={{ boxShadow: '0 4px 20px rgba(0,0,0,0.15)' }}
           >
             <RotateCcw size={18} />
-            Retake Quiz
+            {t('retakeQuiz')}
           </button>
           <button
             onClick={onTryAnotherSubject}
@@ -816,7 +818,7 @@ export function ResultsDashboard({
             style={{ boxShadow: '0 2px 12px rgba(0,0,0,0.04)' }}
           >
             <ArrowRight size={18} />
-            Try Another Subject
+            {t('tryAnotherSubject')}
           </button>
           <button
             onClick={onBackToChapters}
@@ -824,18 +826,18 @@ export function ResultsDashboard({
             style={{ boxShadow: '0 2px 12px rgba(0,0,0,0.04)' }}
           >
             <LayoutGrid size={18} />
-            Back to Chapters
+            {t('backToChapters')}
           </button>
         </div>
 
-        <div className="mt-12 pb-8 text-center space-y-1">
-          <p className="text-[11px] text-gray-300 dark:text-gray-600 font-medium">
-            Endocrine Essay Questions • Chapter {chapter.id}: {chapter.title} • {subject ? subject.name : 'All Subjects'} • 2nd Year Medical Students
+        <div className="mt-12 pb-8 text-center space-y-1.5 border-t border-gray-100 dark:border-gray-800/80 pt-6">
+          <p className="text-xs text-gray-455 dark:text-gray-500 font-semibold tracking-wider uppercase">
+            {t('asu')} • {t('portalTitle')}
           </p>
-          <p className="text-[11px] text-gray-300 dark:text-gray-600 font-medium">
-            For inquiries or to report errors, please contact:{' '}
-            <a href="mailto:omarhmaged@gmail.com" className="hover:text-gray-900 dark:hover:text-white transition-colors underline font-semibold">
-              omarhmaged@gmail.com
+          <p className="text-[11px] text-gray-400 dark:text-gray-500 font-medium max-w-xl mx-auto px-6 leading-relaxed">
+            {t('developedForStudents')}{' '}
+            <a href="mailto:support-med@asu.edu.eg" className="hover:text-physiology dark:hover:text-white transition-colors underline font-semibold">
+              support-med@asu.edu.eg
             </a>
           </p>
         </div>
