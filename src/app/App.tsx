@@ -43,6 +43,7 @@ import {
   SYLLABUS_MODULES
 } from './data';
 import type { ModuleInfo } from './data';
+import { SpeedInsights } from '@vercel/speed-insights/react';
 
 interface QuizPayload {
   chapter: ChapterData;
@@ -1239,6 +1240,7 @@ export default function App() {
       <SignedOut>
         <LoginScreen />
       </SignedOut>
+      <SpeedInsights />
     </ThemeProvider>
   );
 }
