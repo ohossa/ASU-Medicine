@@ -75,7 +75,7 @@ export function HistoryScreen({ onBack, onSelectHistory }: HistoryScreenProps) {
                       {r.subjectName}
                     </span>
                     <span className="flex items-center gap-1 whitespace-nowrap">
-                      <Clock size={12} /> {new Date(r.timestamp).toLocaleDateString(language === 'en' ? 'en-US' : 'ar-EG', { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' })}
+                      <Clock size={12} /> {new Date(r.date || Date.now()).toLocaleDateString(language === 'en' ? 'en-US' : 'ar-EG', { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' })}
                     </span>
                     {r.flaggedQuestionIds && r.flaggedQuestionIds.length > 0 && (
                       <span className="flex items-center gap-1 text-clinical whitespace-nowrap">
