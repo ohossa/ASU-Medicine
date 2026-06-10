@@ -114,7 +114,11 @@ export function StackedCarousel({ items, onSelect, activeIndex, setActiveIndex }
               onDragEnd={handleDragEnd}
               onClick={() => {
                 if (!item.disabled) {
-                  onSelect(item.id);
+                  if (isActive) {
+                    onSelect(item.id);
+                  } else {
+                    setActiveIndex(index);
+                  }
                 }
               }}
             >
