@@ -19,7 +19,6 @@
   letter-spacing: 0.18px;
   color-scheme: light dark;
   color: var(--text);
-  background: var(--bg);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -48,6 +47,11 @@
   #social .button-icon {
     filter: invert(1) brightness(2);
   }
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
 }
 
 #root {
@@ -94,11 +98,11 @@ h2 {
 }
 
 .dot-pattern {
-  background-image: radial-gradient(circle, rgba(0,0,0,0.03) 1.5px, transparent 1.5px);
+  background-image: radial-gradient(circle, rgba(0,0,0,0.06) 1.5px, transparent 1.5px);
   background-size: 24px 24px;
 }
 .dark .dot-pattern {
-  background-image: radial-gradient(circle, rgba(255,255,255,0.03) 1.5px, transparent 1.5px);
+  background-image: radial-gradient(circle, rgba(255,255,255,0.08) 1.5px, transparent 1.5px);
 }
 p {
   margin: 0;
