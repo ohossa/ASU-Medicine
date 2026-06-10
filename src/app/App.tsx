@@ -26,9 +26,8 @@ const QuizInterface = lazy(() => import('./components/QuizInterface').then(m => 
 const ResultsDashboard = lazy(() => import('./components/ResultsDashboard').then(m => ({ default: m.ResultsDashboard })));
 const HistoryScreen = lazy(() => import('./components/HistoryScreen').then(m => ({ default: m.HistoryScreen })));
 import { SyllabusTracker } from './components/SyllabusTracker';
-import { ThemeProvider, useTheme } from './context/ThemeContext';
 import { ThemeToggle } from './components/ThemeToggle';
-import { LanguageProvider, useLanguage } from './context/LanguageContext';
+import { useLanguage } from './context/LanguageContext';
 import { LanguageToggle } from './components/LanguageToggle';
 import { InteractiveBackground } from './components/ui/InteractiveBackground';
 import { StackedCarousel } from './components/ui/StackedCarousel';
@@ -941,7 +940,7 @@ function MainApp() {
 
 export default function App() {
   return (
-    <ThemeProvider>
+    <>
       <SignedIn>
         <MainApp />
       </SignedIn>
@@ -950,6 +949,6 @@ export default function App() {
           <LoginScreen />
         </Suspense>
       </SignedOut>
-    </ThemeProvider>
+    </>
   );
 }
