@@ -13,6 +13,9 @@ export interface QuizResult {
   questionIds?: number[];
   answers?: Record<number, any>;
   flaggedQuestionIds?: number[];
+  moduleCode?: string;
+  year?: number;
+  semester?: number;
 }
 
 const HISTORY_KEY = 'endocrine_essay_quiz_history';

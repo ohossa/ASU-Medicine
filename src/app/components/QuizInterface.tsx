@@ -499,8 +499,62 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish }:
             )}
 
             {/* ANSWER AREA */}
-            <div className="mt-8">
+            <div className="mt-4 sm:mt-8">
               
+              {/* MCQ & True/False Type Question */}
+              {(current.type === 'mcq' || current.type === 'truefalse') && current.options && (
+                <div className="space-y-3 lg:space-y-4">
+                  {current.options.map((option, optIdx) => {
+                    const isSelected = answers[currentIdx] === optIdx;
+                    const isCorrectOpt = optIdx === current.correctIndex;
+
+                    let optClass = 'w-full text-left rounded-3xl px-5 sm:px-6 py-4 sm:py-5 border-2 transition-all flex items-center gap-4 sm:gap-5 cursor-pointer relative overflow-hidden option-btn ';
+                    if (!answered) {
+                      optClass += 'bg-white dark:bg-gray-900 border-gray-100 dark:border-gray-800 hover:border-gray-200 dark:hover:border-gray-700 shadow-sm';
+                    } else if (isCorrectOpt) {
+                      optClass += 'border-success bg-success/[0.04] correct-glow shadow-[0_4px_20px_rgba(16,185,129,0.15)]';
+                    } else if (isSelected && !isCorrectOpt) {
+                      optClass += 'border-danger bg-danger/[0.03] wrong-shake shadow-[0_4px_20px_rgba(239,68,68,0.1)]';
+                    } else {
+                      optClass += 'bg-gray-50/50 dark:bg-gray-900/50 border-gray-100 dark:border-gray-800 opacity-60 cursor-not-allowed';
+                    }
+
+                    return (
+                      <button
+                        key={optIdx}
+                        disabled={answered}
+                        onClick={() => setAnswers((prev) => ({ ...prev, [currentIdx]: optIdx }))}
+                        className={optClass}
+                      >
+                        {answered && isCorrectOpt ? (
+                          <div className="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-[12px] sm:rounded-[14px] bg-success/10 border border-success/30 flex items-center justify-center">
+                            <Check size={18} className="text-success" />
+                          </div>
+                        ) : answered && isSelected && !isCorrectOpt ? (
+                          <div className="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-[12px] sm:rounded-[14px] bg-danger/10 border border-danger/25 flex items-center justify-center">
+                            <X size={18} className="text-danger" />
+                          </div>
+                        ) : (
+                          <div className="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-[12px] sm:rounded-[14px] bg-gray-50 dark:bg-gray-800 border border-gray-100 dark:border-gray-700 flex items-center justify-center font-archivo font-bold text-gray-400 dark:text-gray-500 shadow-sm text-sm sm:text-base">
+                            {String.fromCharCode(65 + optIdx)}
+                          </div>
+                        )}
+
+                        <span className={`text-sm sm:text-base font-bold leading-relaxed flex-1 ${
+                          answered && isCorrectOpt
+                            ? 'text-success-dark'
+                            : answered && isSelected && !isCorrectOpt
+                            ? 'text-danger-dark line-through decoration-danger/30'
+                            : 'text-gray-700 dark:text-gray-200'
+                        }`}>
+                          {option}
+                        </span>
+                      </button>
+                    );
+                  })}
+                </div>
+              )}
+
               {/* Essay Type Question */}
               {current.type === 'essay' && (
                 <div className="space-y-4">

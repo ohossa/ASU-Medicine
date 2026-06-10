@@ -108,15 +108,13 @@ export function StackedCarousel({ items, onSelect, activeIndex, setActiveIndex }
                 damping: 30,
                 mass: 1
               }}
-              drag="x"
+              drag={isActive ? "x" : false}
               dragConstraints={{ left: 0, right: 0 }}
               dragElastic={0.1}
               onDragEnd={handleDragEnd}
               onClick={() => {
-                if (isActive && !item.disabled) {
+                if (!item.disabled) {
                   onSelect(item.id);
-                } else if (!isActive) {
-                  setActiveIndex(index);
                 }
               }}
             >

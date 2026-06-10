@@ -413,8 +413,8 @@ export function ChapterSelect({
           </p>
           <p className="text-[11px] text-gray-400 dark:text-gray-500 font-medium max-w-xl mx-auto px-6 leading-relaxed">
             {t('developedForStudents')}{' '}
-            <a href="mailto:support-med@asu.edu.eg" className="hover:text-physiology dark:hover:text-white transition-colors underline font-semibold">
-              support-med@asu.edu.eg
+            <a href="mailto:omarhmaged@gmail.com" className="hover:text-physiology dark:hover:text-white transition-colors underline font-semibold">
+              omarhmaged@gmail.com
             </a>
           </p>
         </div>

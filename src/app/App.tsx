@@ -316,6 +316,9 @@ function MainApp() {
     });
 
     saveQuizResult({
+      moduleCode: selectedModule?.code,
+      year: selectedYear,
+      semester: selectedSemester,
       chapterId: quizPayload!.chapter.id,
       chapterTitle: quizPayload!.chapter.title,
       subjectName: quizPayload!.subject?.name ?? 'All Subjects',
@@ -342,9 +345,12 @@ function MainApp() {
   };
 
   const handleSelectHistory = (result: QuizResult) => {
-    // Look up within endocrine mixed chapters to find historical questions
-    const endocrineMixed = getChaptersForModuleAndMode('MEM-2', 'mixed');
-    const chapter = endocrineMixed.find((c) => c.id === result.chapterId);
+    const modCode = result.moduleCode || 'MEM-2';
+    const yr = result.year || 2;
+    const sem = result.semester || 2;
+
+    const moduleChapters = getChaptersForModuleAndMode(modCode, 'mixed');
+    const chapter = moduleChapters.find((c) => c.id === result.chapterId);
     if (!chapter) return;
 
     const subject = chapter.subjects.find((s) => s.name === result.subjectName) || null;
@@ -371,16 +377,24 @@ function MainApp() {
     const answersRecord = result.answers || {};
     const flaggedSet = new Set<number>(result.flaggedQuestionIds || []);
 
-    transitionTo(() => {
-      setSelectedYear(2);
-      setSelectedSemester(2);
-      setSelectedModule({
+    // Try to locate the module definition
+    let targetModule = SYLLABUS_MODULES[yr]?.[sem]?.find((m: any) => m.code === modCode) || null;
+    if (!targetModule && modCode === 'MEM-2') {
+      targetModule = {
         code: 'MEM-2',
         name: 'Endocrine System & Metabolism Module',
         cp: 5.5,
         marks: 110,
         keywords: ['endocrine', 'metabolism', 'mem']
-      });
+      };
+    }
+
+    transitionTo(() => {
+      setSelectedYear(yr);
+      setSelectedSemester(sem);
+      if (targetModule) {
+        setSelectedModule(targetModule);
+      }
       setStudyMode('mixed');
       setSelectedChapter(chapter);
       setQuizPayload({ chapter, subject, questions: questionsList });
