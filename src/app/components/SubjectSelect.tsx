@@ -12,6 +12,8 @@ import {
   Zap,
   HelpCircle,
   ArrowRight,
+  CheckCircle,
+  Clock,
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 import type { ChapterData, SubjectData, SubjectColor } from '../types';
@@ -20,6 +22,7 @@ import { shuffleArray } from '../data';
 import { ThemeToggle } from './ThemeToggle';
 import { LanguageToggle } from './LanguageToggle';
 import { useLanguage } from '../context/LanguageContext';
+import { getQuizHistory } from '../utils/storage';
 
 interface Props {
   chapter: ChapterData;
@@ -46,6 +49,7 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart, 
   const allQuestions = useMemo(() => chapter.subjects.flatMap((s) => s.questions), [chapter]);
   const totalQuestions = useMemo(() => totalQs(chapter.subjects), [chapter.subjects]);
   const { t, language } = useLanguage();
+  const history = useMemo(() => getQuizHistory(), []);
 
   return (
     <div className="min-h-screen bg-gray-50/50 dark:bg-gray-950 font-manrope relative overflow-hidden">
@@ -232,23 +236,34 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart, 
             const s = subjectStyles[color];
             const Icon = iconMap[subject.iconName] ?? Activity;
             const hasQuestions = subject.questions.length > 0;
+            
+            const latestResult = history.find(r => r.chapterId === chapter.id && r.subjectName === subject.name);
+            const isCompleted = !!latestResult;
 
             return (
               <div
                 key={subject.id}
-                className={`card-stagger scroll-reveal subject-card glass-panel glow-border rounded-[30px] p-6 cursor-pointer group relative overflow-hidden ${!hasQuestions ? 'opacity-60' : ''}`}
+                className={`card-stagger scroll-reveal subject-card glass-panel glow-border rounded-[30px] p-6 cursor-pointer group relative overflow-hidden transition-all duration-300 ${
+                  !hasQuestions ? 'opacity-60' : ''
+                } ${isCompleted ? 'bg-physiology/5 border-physiology/30 hover:border-physiology/50 hover:bg-physiology/10' : ''}`}
                 style={{ viewTransitionName: `subject-${subject.id}` }}
                 onClick={() => hasQuestions && onSelectSubject(subject, subject.questions)}
               >
                 <div className={`absolute -top-8 -right-8 w-24 h-24 rounded-full ${s.bgOp5} group-hover:${s.bgOp10} transition-colors duration-500 pointer-events-none`} />
                 <div className={`absolute -top-4 -right-4 w-12 h-12 rounded-full ${s.bgOp8} glow-ring`} />
+                
+                {isCompleted && (
+                  <div className="absolute top-5 right-5 text-physiology bg-physiology/10 rounded-full p-1 border border-physiology/20 shadow-sm z-10 animate-fade-in">
+                    <CheckCircle size={20} className="drop-shadow-sm" />
+                  </div>
+                )}
 
                 <div className="relative">
                   <div className={`icon-float w-14 h-14 rounded-2xl bg-gradient-to-br ${s.gradientFrom} ${s.gradientTo} flex items-center justify-center mb-4 ${s.borderOp10} border`}>
                     <Icon size={24} className={s.text} />
                   </div>
 
-                  <h3 className={`font-archivo text-lg font-bold text-gray-900 dark:text-white group-hover:${s.text} transition-colors duration-300 tracking-tight mb-1`}>
+                  <h3 className={`font-archivo text-lg font-bold ${isCompleted ? 'text-physiology' : 'text-gray-900 dark:text-white'} group-hover:${s.text} transition-colors duration-300 tracking-tight mb-1 pr-8`}>
                     {subject.name}
                   </h3>
 
@@ -261,14 +276,44 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart, 
 
                   <div className="h-px bg-gray-100 dark:bg-gray-800 mb-4" />
 
-                  <div className="flex items-center justify-end">
-                    {hasQuestions && (
-                      <div className={`arrow-bounce flex items-center gap-1 text-xs font-bold ${s.text} opacity-0 group-hover:opacity-100 transition-opacity duration-300`}>
+                  <div className="flex items-center justify-end relative h-5">
+                    {/* Default Begin Text */}
+                    {hasQuestions && !isCompleted && (
+                      <div className={`absolute right-0 arrow-bounce flex items-center gap-1 text-xs font-bold ${s.text} opacity-0 group-hover:opacity-100 transition-opacity duration-300`}>
                         {t('begin')}
                         <ArrowRight size={14} />
                       </div>
                     )}
+                    
+                    {/* Retake Text (if completed) */}
+                    {hasQuestions && isCompleted && (
+                      <div className={`absolute right-0 arrow-bounce flex items-center gap-1 text-xs font-bold text-physiology opacity-0 group-hover:opacity-100 transition-opacity duration-300`}>
+                        Retake Subject
+                        <ArrowRight size={14} />
+                      </div>
+                    )}
                   </div>
+                  
+                  {/* Floating Pop-up for Previous Results on Hover */}
+                  {isCompleted && latestResult && (
+                    <div className="absolute top-full left-0 right-0 mt-4 opacity-0 group-hover:opacity-100 group-hover:-translate-y-20 transition-all duration-300 pointer-events-none z-20">
+                      <div className="bg-white dark:bg-gray-800 rounded-xl p-3 shadow-xl border border-gray-100 dark:border-gray-700 mx-auto w-[90%]">
+                        <div className="text-[10px] uppercase font-bold text-gray-400 mb-1">Latest Exam Result</div>
+                        <div className="flex items-center justify-between">
+                          <div className={`font-black ${latestResult.pct >= 75 ? 'text-physiology' : latestResult.pct >= 50 ? 'text-biochem' : 'text-pathology'}`}>
+                            {latestResult.pct}%
+                          </div>
+                          <div className="text-xs font-bold text-gray-600 dark:text-gray-300">
+                            {latestResult.correct}/{latestResult.total}
+                          </div>
+                          <div className="flex items-center gap-1 text-[10px] text-gray-500">
+                            <Clock size={10} />
+                            {Math.floor(latestResult.elapsedSeconds / 60)}m
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  )}
                 </div>
               </div>
             );
