@@ -353,12 +353,12 @@ export function ChapterSelect({
                   onClick={() => onSelectHistory && onSelectHistory(r)}
                   className="history-card scroll-reveal text-start w-full cursor-pointer glass-panel rounded-3xl px-5 py-4 flex items-center gap-4 hover:border-gray-300 dark:hover:border-gray-700 hover:scale-[1.01] hover:shadow-md active:scale-[0.99] transition-all duration-300 glow-border"
                 >
-                  <div className="flex-shrink-0 w-12 h-12 rounded-2xl bg-gray-50 dark:bg-gray-800 flex items-center justify-center">
-                    <span className={`font-archivo text-lg font-black ${pctColor(r.pct)}`}>{r.pct}%</span>
+                  <div className="flex-shrink-0 min-w-[60px] h-[52px] rounded-2xl bg-gray-50 dark:bg-gray-800 flex items-center justify-center px-2 shadow-inner">
+                    <span className={`font-archivo text-base font-black tracking-tight ${pctColor(r.pct)}`}>{r.pct}%</span>
                   </div>
                   <div className="flex-1 min-w-0">
                     <div className="font-archivo text-sm font-bold text-gray-900 dark:text-white truncate">
-                      {t('chapter')}.{r.chapterId} — {r.subjectName}
+                      {r.chapterTitle} — {r.subjectName}
                     </div>
                     <div className="flex items-center gap-2 mt-0.5">
                       <span className="text-[11px] text-gray-400 dark:text-gray-500 font-medium">

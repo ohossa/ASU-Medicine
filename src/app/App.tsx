@@ -710,7 +710,7 @@ function MainApp() {
                       <div className="absolute -right-10 -top-10 w-32 h-32 rounded-full bg-physiology/5 group-hover:bg-physiology/10 transition-colors duration-300" />
                       
                       <div className="flex justify-between items-start">
-                        <div className="w-fit px-3 h-10 rounded-xl bg-gradient-to-br from-physiology/10 to-clinical/10 text-physiology-dark flex items-center justify-center font-archivo font-black text-lg shadow-sm border border-physiology/10">
+                        <div className="min-w-[56px] px-2 h-[42px] rounded-xl bg-gradient-to-br from-physiology/10 to-clinical/10 text-physiology-dark flex items-center justify-center font-archivo font-black text-base shadow-sm border border-physiology/10">
                           {r.pct}%
                         </div>
                         <div className="px-3 py-1 rounded-lg bg-gray-50 dark:bg-gray-800 text-gray-500 text-xs font-bold border border-gray-100 dark:border-gray-700">
@@ -720,7 +720,7 @@ function MainApp() {
                       
                       <div className="mt-4">
                         <div className="font-archivo text-base font-bold text-gray-900 dark:text-white truncate tracking-tight">
-                          {t('chapter')} {r.chapterId}
+                          {r.chapterTitle}
                         </div>
                         <div className="text-xs text-gray-500 dark:text-gray-400 font-semibold mt-1 truncate">
                           {r.subjectName}
