@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { Check, Edit3, X, Save, AlertCircle, Calendar } from 'lucide-react';
 import type { ChapterData } from '../types';
 import { useLanguage } from '../context/LanguageContext';
+import { triggerCloudSync } from '../hooks/useCloudSync';
 
 interface Props {
   moduleCode: string;
@@ -46,6 +47,23 @@ export function SyllabusTracker({ moduleCode, moduleName, chapters, onClose }: P
 
   const [saveToast, setSaveToast] = useState(false);
 
+  // Listen for cloud sync pulling new data into localStorage
+  useEffect(() => {
+    const handleStorageChange = () => {
+      try {
+        const saved = localStorage.getItem(storageKey);
+        if (saved) {
+          setTrackerData(JSON.parse(saved));
+        }
+      } catch (e) {
+        console.error(e);
+      }
+    };
+    
+    window.addEventListener('storage', handleStorageChange);
+    return () => window.removeEventListener('storage', handleStorageChange);
+  }, [storageKey]);
+
   const handleCheckboxChange = (chapterId: number, field: keyof Omit<ChapterState, 'notes'>) => {
     setTrackerData((prev) => {
       const updatedChapter = {
@@ -57,6 +75,7 @@ export function SyllabusTracker({ moduleCode, moduleName, chapters, onClose }: P
         [chapterId]: updatedChapter,
       };
       localStorage.setItem(storageKey, JSON.stringify(newState));
+      triggerCloudSync();
       return newState;
     });
     showSaveIndicator();
@@ -73,6 +92,7 @@ export function SyllabusTracker({ moduleCode, moduleName, chapters, onClose }: P
         [chapterId]: updatedChapter,
       };
       localStorage.setItem(storageKey, JSON.stringify(newState));
+      triggerCloudSync();
       return newState;
     });
   };

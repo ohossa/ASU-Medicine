@@ -33,8 +33,9 @@ import { InteractiveBackground } from './components/ui/InteractiveBackground';
 import { StackedCarousel } from './components/ui/StackedCarousel';
 import { saveQuizResult, getQuizHistory } from './utils/storage';
 import type { QuizResult } from './utils/storage';
-import { SignedIn, SignedOut, UserButton } from '@clerk/clerk-react';
+import { SignedIn, SignedOut, UserButton, useUser } from '@clerk/clerk-react';
 import { LoginScreen } from './components/LoginScreen';
+import { useCloudSync } from './hooks/useCloudSync';
 import {
   getChaptersForModuleAndMode,
   getModuleQuestionCounts,
@@ -80,6 +81,10 @@ function PortalFooter() {
 
 function MainApp() {
   const { t, language } = useLanguage();
+  const { user } = useUser();
+  
+  // Initialize automatic cloud synchronization
+  useCloudSync();
 
   const hasActiveModulesForYear = (year: number): boolean => {
     const semesters = SYLLABUS_MODULES[year];
@@ -498,11 +503,11 @@ function MainApp() {
                 <Activity size={24} strokeWidth={2.5} />
               </div>
               <div>
-                <h1 className="font-archivo font-extrabold text-base tracking-tight leading-none">
-                  {t('portalTitle')}
+                <h1 className="font-archivo font-extrabold text-lg tracking-tight leading-none text-gray-900 dark:text-white">
+                  {user?.firstName} {user?.lastName}
                 </h1>
                 <p className="text-[10px] text-gray-400 dark:text-gray-500 font-bold uppercase tracking-wider mt-0.5">
-                  {t('asu')}
+                  Medical Student
                 </p>
               </div>
             </div>

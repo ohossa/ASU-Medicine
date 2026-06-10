@@ -1,3 +1,5 @@
+import { triggerCloudSync } from '../hooks/useCloudSync';
+
 export interface QuizResult {
   id: string;
   date: string;
@@ -24,6 +26,7 @@ export function saveQuizResult(result: Omit<QuizResult, 'id' | 'date'>): void {
     date: new Date().toISOString(),
   };
   localStorage.setItem(HISTORY_KEY, JSON.stringify([entry, ...history].slice(0, MAX_RESULTS)));
+  triggerCloudSync();
 }
 
 export function getQuizHistory(): QuizResult[] {
@@ -37,4 +40,5 @@ export function getQuizHistory(): QuizResult[] {
 
 export function clearQuizHistory(): void {
   localStorage.removeItem(HISTORY_KEY);
+  triggerCloudSync();
 }
