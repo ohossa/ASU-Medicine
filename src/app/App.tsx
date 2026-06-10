@@ -407,9 +407,10 @@ function MainApp() {
   };
 
   return (
-    <div className="min-h-screen text-gray-900 dark:text-gray-100 bg-gray-50/50 dark:bg-gray-950 font-manrope selection:bg-physiology/20 selection:text-physiology-dark">
-      {/* Dynamic Floating Background Blobs */}
-      <div className="fixed inset-0 -z-10 overflow-hidden bg-background pointer-events-none">
+    <div className="min-h-screen text-gray-900 dark:text-gray-100 font-manrope selection:bg-physiology/20 selection:text-physiology-dark">
+      {/* Dynamic Floating Background Blobs & Interactive Dots */}
+      <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
+        <InteractiveBackground />
         <div className="absolute top-[10%] left-[5%] h-[35vw] w-[35vw] rounded-full bg-physiology/6 dark:bg-physiology/4 blur-[130px] blob-float-1" />
         <div className="absolute bottom-[10%] right-[5%] h-[40vw] w-[40vw] rounded-full bg-anatomy/6 dark:bg-anatomy/4 blur-[160px] blob-float-2" />
       </div>
@@ -545,7 +546,6 @@ function MainApp() {
       )}
 
       {/* PORTAL CONTAINER */}
-      <InteractiveBackground />
       <main className="max-w-[1600px] mx-auto px-6 py-12 relative z-10">
         <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden transform-gpu">
           <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] bg-physiology/10 dark:bg-physiology/5 blur-[120px] rounded-full mix-blend-multiply dark:mix-blend-screen animate-pulse duration-10000 will-change-transform transform-gpu"></div>
