@@ -168,6 +168,22 @@ export function StackedCarousel({ items, onSelect, activeIndex, setActiveIndex }
           <ChevronRight size={24} />
         </motion.button>
       </div>
+
+      {/* Pagination Dots */}
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex items-center gap-2.5 z-50">
+        {items.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setActiveIndex(index)}
+            className={`transition-all duration-300 rounded-full ${
+              index === activeIndex 
+                ? 'w-6 h-2 bg-gray-800 dark:bg-white shadow-sm' 
+                : 'w-2 h-2 bg-gray-300 dark:bg-gray-600 hover:bg-gray-400 dark:hover:bg-gray-500'
+            }`}
+            aria-label={`Go to slide ${index + 1}`}
+          />
+        ))}
+      </div>
     </div>
   );
 }

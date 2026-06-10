@@ -453,19 +453,19 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish }:
       </header>
 
       {/* QUIZ CONTENT */}
-      <div className="max-w-[1600px] mx-auto px-6 lg:px-10 py-8">
-        <div className="flex flex-col xl:flex-row gap-8 items-start">
+      <div className="max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-10 py-4 sm:py-8">
+        <div className="flex flex-col xl:flex-row gap-4 sm:gap-8 items-start">
           
           {/* Main Card */}
-          <div style={{ viewTransitionName: 'quiz-content' }} className={`flex-1 w-full glass-panel rounded-[32px] border p-6 lg:p-8 transition-all duration-500 glow-border ${
+          <div style={{ viewTransitionName: 'quiz-content' }} className={`flex-1 w-full glass-panel rounded-[24px] sm:rounded-[32px] border p-5 sm:p-6 lg:p-8 transition-all duration-500 glow-border ${
             isSpecialQuestion
               ? 'border-pink-300 dark:border-purple-800 shadow-[0_4px_30px_rgba(236,72,153,0.15)]'
               : 'border-gray-100 dark:border-gray-800'
           }`}>
             
             {/* Question Header */}
-            <div className="flex items-center justify-between mb-6">
-              <div className="flex items-center gap-3">
+            <div className="flex items-center justify-between mb-4 sm:mb-6">
+              <div className="flex items-center gap-2 sm:gap-3">
                 <span className={`inline-flex items-center justify-center px-3 py-1 rounded-full text-xs font-bold transition-all ${
                   isSpecialQuestion
                     ? 'bg-pink-100 dark:bg-pink-950/40 text-pink-600 dark:text-pink-400'

@@ -214,7 +214,7 @@ export function ChapterSelect({
           </svg>
         </div>
 
-        <div className="relative max-w-[1600px] mx-auto px-6 py-12 lg:py-16">
+        <div className="relative max-w-[1600px] mx-auto px-4 sm:px-6 py-6 lg:py-16">
           <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
             <div>
               <div className="flex flex-wrap items-center gap-3 mb-5">
@@ -246,8 +246,8 @@ export function ChapterSelect({
               </p>
             </div>
 
-            <div className="flex items-end gap-4">
-              <div className="header-stats flex items-center gap-6 lg:gap-8">
+            <div className="flex items-center lg:items-end gap-3 sm:gap-4 mt-2 lg:mt-0 flex-wrap">
+              <div className="header-stats flex items-center gap-4 lg:gap-8 mr-2 lg:mr-0">
                 <div className="text-center">
                   <div className="font-archivo text-3xl font-black text-gray-900 dark:text-white">{chapters.length}</div>
                   <div className="text-xs text-gray-400 dark:text-gray-500 font-semibold uppercase tracking-wide">{t('chaptersCount')}</div>
