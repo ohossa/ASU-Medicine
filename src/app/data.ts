@@ -641,3 +641,26 @@ export const chapters = getChaptersForModuleAndMode('MEM-2', 'mixed');
 export function shuffleArray<T>(array: T[]): T[] {
   return [...array];
 }
+
+export function findQuestionById(id: number): { question: Question; chapter: ChapterData; moduleCode: string; subjectName: string } | null {
+  for (const year of Object.keys(SYLLABUS_MODULES)) {
+    const semesters = SYLLABUS_MODULES[Number(year)];
+    if (!semesters) continue;
+    for (const modules of Object.values(semesters)) {
+      for (const mod of modules) {
+        if (isModuleActive(mod.code)) {
+          const chs = getChaptersForModuleAndMode(mod.code, 'mixed');
+          for (const chapter of chs) {
+            for (const subject of chapter.subjects) {
+              const q = subject.questions.find((quest) => quest.id === id);
+              if (q) {
+                return { question: q, chapter, moduleCode: mod.code, subjectName: subject.name };
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  return null;
+}

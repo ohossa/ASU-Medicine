@@ -17,7 +17,8 @@ import {
   Moon,
   Clock,
   Award,
-  ExternalLink
+  ExternalLink,
+  HelpCircle
 } from 'lucide-react';
 import type { ChapterData, SubjectData, Question, Screen, SubjectColor } from './types';
 const ChapterSelect = lazy(() => import('./components/ChapterSelect').then(m => ({ default: m.ChapterSelect })));
@@ -25,6 +26,7 @@ import { SubjectSelect } from './components/SubjectSelect';
 const QuizInterface = lazy(() => import('./components/QuizInterface').then(m => ({ default: m.QuizInterface })));
 const ResultsDashboard = lazy(() => import('./components/ResultsDashboard').then(m => ({ default: m.ResultsDashboard })));
 const HistoryScreen = lazy(() => import('./components/HistoryScreen').then(m => ({ default: m.HistoryScreen })));
+const FlaggedQuestionsScreen = lazy(() => import('./components/FlaggedQuestionsScreen').then(m => ({ default: m.FlaggedQuestionsScreen })));
 import { SyllabusTracker } from './components/SyllabusTracker';
 import { ThemeProvider, useTheme } from './context/ThemeContext';
 import { ThemeToggle } from './components/ThemeToggle';
@@ -210,6 +212,7 @@ function MainApp() {
     }
   }, [screen, selectedYear, selectedSemester, selectedModule, studyMode]);
   const [showTracker, setShowTracker] = useState(false);
+  const [showSupportModal, setShowSupportModal] = useState(false);
   
   // Quiz states
   const [selectedChapter, setSelectedChapter] = useState<ChapterData | null>(null);
@@ -629,38 +632,6 @@ function MainApp() {
               </div>
             </div>
 
-            {screen === 'yearSelect' && (
-              <div className="flex w-full md:w-auto items-center justify-center gap-2 order-last md:order-none">
-                  <a
-                    href="https://asu2learn.asu.edu.eg/medicine-emp/my/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-physiology/10 hover:bg-physiology/20 text-physiology-dark dark:text-physiology border border-physiology/20 rounded-xl text-xs font-bold transition-all hover:-translate-y-0.5"
-                  >
-                    <span>{t('empPortal')}</span>
-                    <ExternalLink size={12} className="text-physiology" />
-                  </a>
-                  <a
-                    href="https://asu2learn.asu.edu.eg/medicine/my/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700 rounded-xl text-xs font-bold transition-all hover:-translate-y-0.5"
-                  >
-                    <span>{t('mainstreamPortal')}</span>
-                    <ExternalLink size={12} className="text-gray-500" />
-                  </a>
-                  <a
-                    href="https://ums.asu.edu.eg/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-clinical/10 hover:bg-clinical/20 text-clinical-dark dark:text-clinical border border-clinical/20 rounded-xl text-xs font-bold transition-all hover:-translate-y-0.5"
-                  >
-                    <span>{t('umsPortal')}</span>
-                    <ExternalLink size={12} className="text-clinical" />
-                  </a>
-                </div>
-            )}
-
             <div className="flex items-center gap-3 sm:gap-4 justify-end">
               <LanguageToggle />
               <ThemeToggle />
@@ -677,6 +648,14 @@ function MainApp() {
                     labelIcon={<Award size={16} className="text-physiology" />}
                     onClick={() => {
                       transitionTo(() => setScreen('history'));
+                    }}
+                  />
+
+                  <UserButton.Action
+                    label="Flagged Questions"
+                    labelIcon={<HelpCircle size={16} className="text-clinical" />}
+                    onClick={() => {
+                      transitionTo(() => setScreen('flaggedQuestions'));
                     }}
                   />
 
@@ -698,10 +677,34 @@ function MainApp() {
                   />
 
                   <UserButton.Action
+                    label="EMP Portal"
+                    labelIcon={<ExternalLink size={16} className="text-gray-500" />}
+                    onClick={() => {
+                      window.open('https://asu2learn.asu.edu.eg/medicine-emp/my/', '_blank');
+                    }}
+                  />
+
+                  <UserButton.Action
+                    label="Mainstream Portal"
+                    labelIcon={<ExternalLink size={16} className="text-gray-500" />}
+                    onClick={() => {
+                      window.open('https://asu2learn.asu.edu.eg/medicine/my/', '_blank');
+                    }}
+                  />
+
+                  <UserButton.Action
+                    label="UMS Portal"
+                    labelIcon={<ExternalLink size={16} className="text-gray-500" />}
+                    onClick={() => {
+                      window.open('https://ums.asu.edu.eg/', '_blank');
+                    }}
+                  />
+
+                  <UserButton.Action
                     label="Report Bug / Support"
                     labelIcon={<Mail size={16} className="text-gray-500" />}
                     onClick={() => {
-                      window.open('mailto:omarhmaged@gmail.com?subject=ASU%20Medical%20Portal%20Feedback%20%26%20Bug%20Report', '_self');
+                      setShowSupportModal(true);
                     }}
                   />
                 </UserButton.MenuItems>
@@ -1360,6 +1363,26 @@ function MainApp() {
             />
           </Suspense>
         )}
+
+        {/* SCREEN 10: FLAGGED QUESTIONS */}
+        {screen === 'flaggedQuestions' && (
+          <Suspense fallback={<div>Loading...</div>}>
+            <FlaggedQuestionsScreen
+              onBack={() => navigateTo('yearSelect')}
+              onPracticeQuiz={(chapter, subjectName, questions) => {
+                transitionTo(() => {
+                  setSelectedChapter(chapter);
+                  setQuizPayload({
+                    chapter,
+                    subject: chapter.subjects.find(s => s.name === subjectName) || null,
+                    questions
+                  });
+                  setScreen('quiz');
+                });
+              }}
+            />
+          </Suspense>
+        )}
       </main>
 
       {showTracker && selectedModule && (
@@ -1414,6 +1437,73 @@ function MainApp() {
       {!studentYear && (
         <YearSelectionModal onSelect={setStudentYear} />
       )}
+
+      {/* SUPPORT & BUG REPORT MODAL */}
+      {showSupportModal && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-6 bg-gray-950/40 backdrop-blur-md transition-all duration-300">
+          <div className="w-full max-w-md bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 rounded-[30px] p-7 shadow-2xl animate-pop-up relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl from-clinical/10 to-transparent rounded-bl-[50px]" />
+            
+            <div className="flex items-center gap-3 mb-5 text-clinical">
+              <div className="w-10 h-10 rounded-xl bg-clinical/10 flex items-center justify-center">
+                <Mail size={20} />
+              </div>
+              <h3 className="font-archivo text-xl font-bold tracking-tight">
+                Support & Feedback
+              </h3>
+            </div>
+
+            <p className="text-sm text-gray-500 dark:text-gray-400 font-medium leading-relaxed mb-6">
+              Have a question, feedback, or found a bug? Reach out to the developer directly via email or WhatsApp:
+            </p>
+
+            <div className="space-y-3">
+              {/* Email Button */}
+              <a
+                href="mailto:omarhmaged@gmail.com?subject=ASU%20Medical%20Portal%20Feedback%20%26%20Bug%20Report"
+                className="w-full p-4 rounded-2xl bg-gray-50 dark:bg-gray-800/40 hover:bg-clinical/10 dark:hover:bg-clinical/10 border border-gray-100 dark:border-gray-800 flex items-center gap-4 transition-all text-left group"
+              >
+                <div className="w-10 h-10 rounded-xl bg-clinical/10 flex items-center justify-center text-clinical group-hover:scale-105 transition-transform">
+                  <Mail size={18} />
+                </div>
+                <div className="flex-1">
+                  <div className="text-[10px] font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest">Email Support</div>
+                  <div className="text-sm font-bold text-gray-800 dark:text-gray-200 group-hover:text-clinical transition-colors">
+                    omarhmaged@gmail.com
+                  </div>
+                </div>
+              </a>
+
+              {/* WhatsApp Button */}
+              <a
+                href="https://wa.me/201040479155"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full p-4 rounded-2xl bg-gray-50 dark:bg-gray-800/40 hover:bg-physiology/10 dark:hover:bg-physiology/10 border border-gray-100 dark:border-gray-800 flex items-center gap-4 transition-all text-left group"
+              >
+                <div className="w-10 h-10 rounded-xl bg-physiology/10 flex items-center justify-center text-physiology group-hover:scale-105 transition-transform">
+                  <svg className="w-5.5 h-5.5 text-physiology fill-current" viewBox="0 0 24 24">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.455 5.703 1.458h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                    </svg>
+                  </div>
+                  <div className="flex-1">
+                    <div className="text-[10px] font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest">WhatsApp Support</div>
+                    <div className="text-sm font-bold text-gray-800 dark:text-gray-200 group-hover:text-physiology transition-colors">
+                      (+20) 1040479155
+                    </div>
+                  </div>
+                </a>
+              </div>
+  
+              <button
+                onClick={() => setShowSupportModal(false)}
+                className="w-full py-3 mt-6 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-xs font-bold tracking-wide transition-all duration-200"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        )}
     </div>
   );
 }

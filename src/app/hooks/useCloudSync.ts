@@ -9,7 +9,8 @@ const STORAGE_KEYS = [
   'asu_portal_year',
   'asu_portal_semester',
   'asu_portal_module',
-  'asu_portal_studyMode'
+  'asu_portal_studyMode',
+  'asu_flagged_questions'
 ];
 
 export function useCloudSync() {

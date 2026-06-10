@@ -16,7 +16,8 @@ export type Screen =
   | 'subjects'
   | 'quiz'
   | 'results'
-  | 'history';
+  | 'history'
+  | 'flaggedQuestions';
 
 export interface SubQuestion {
   id: string;

@@ -19,6 +19,7 @@ import { subjectStyles, formatTime } from '../types';
 import { ThemeToggle } from './ThemeToggle';
 import { LanguageToggle } from './LanguageToggle';
 import { useLanguage } from '../context/LanguageContext';
+import { toggleFlaggedQuestion } from '../utils/storage';
 
 interface Props {
   chapter: ChapterData;
@@ -332,6 +333,10 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish }:
   }, [currentIdx, answers, questions, essayDraft, subEssayDrafts, showEssayAnswer, revealedSubEssays, answered]);
 
   const toggleFlag = (idx: number) => {
+    const q = questions[idx];
+    if (q) {
+      toggleFlaggedQuestion(q.id);
+    }
     setFlagged((prev) => {
       const next = new Set(prev);
       if (next.has(idx)) next.delete(idx);
