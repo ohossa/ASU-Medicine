@@ -19,6 +19,7 @@ import {
   Award,
   ExternalLink
 } from 'lucide-react';
+import { Analytics } from '@vercel/analytics/react';
 import type { ChapterData, SubjectData, Question, Screen, SubjectColor } from './types';
 import { ChapterSelect } from './components/ChapterSelect';
 import { SubjectSelect } from './components/SubjectSelect';
@@ -1239,6 +1240,7 @@ export default function App() {
       <SignedOut>
         <LoginScreen />
       </SignedOut>
+      <Analytics />
     </ThemeProvider>
   );
 }
