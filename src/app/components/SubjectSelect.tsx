@@ -24,12 +24,17 @@ import { LanguageToggle } from './LanguageToggle';
 import { useLanguage } from '../context/LanguageContext';
 import { getQuizHistory } from '../utils/storage';
 
+export interface BreadcrumbItem {
+  label: string;
+  onClick?: () => void;
+}
+
 interface Props {
   chapter: ChapterData;
   onBack: () => void;
   onSelectSubject: (subject: SubjectData, questions: ReturnType<typeof shuffleArray>) => void;
   onQuickStart: (questions: ReturnType<typeof shuffleArray>) => void;
-  breadcrumbPath?: string[];
+  breadcrumbPath?: BreadcrumbItem[];
 }
 
 const iconMap: Record<string, LucideIcon> = {
@@ -143,14 +148,26 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart, 
               {/* Desktop Breadcrumbs (Full Path) */}
               <div className="header-anim hidden lg:flex items-center gap-2 text-sm">
                 {breadcrumbPath ? (
-                  breadcrumbPath.map((segment, idx) => (
-                    <React.Fragment key={idx}>
-                      <span className={idx === breadcrumbPath.length - 1 ? "text-gray-900 dark:text-white font-bold" : "text-gray-400 dark:text-gray-500 font-medium"}>
-                        {segment}
-                      </span>
-                      {idx < breadcrumbPath.length - 1 && <ChevronRight size={12} className="text-gray-300 dark:text-gray-600" />}
-                    </React.Fragment>
-                  ))
+                  breadcrumbPath.map((segment, idx) => {
+                    const isLast = idx === breadcrumbPath.length - 1;
+                    return (
+                      <React.Fragment key={idx}>
+                        {segment.onClick && !isLast ? (
+                          <button
+                            onClick={segment.onClick}
+                            className="text-gray-400 dark:text-gray-500 font-medium hover:text-physiology transition-colors duration-200"
+                          >
+                            {segment.label}
+                          </button>
+                        ) : (
+                          <span className={isLast ? "text-gray-900 dark:text-white font-bold" : "text-gray-400 dark:text-gray-500 font-medium"}>
+                            {segment.label}
+                          </span>
+                        )}
+                        {!isLast && <ChevronRight size={12} className="text-gray-300 dark:text-gray-600" />}
+                      </React.Fragment>
+                    );
+                  })
                 ) : (
                   <>
                     <span className="text-gray-400 dark:text-gray-500 font-medium">{t('portal')}</span>

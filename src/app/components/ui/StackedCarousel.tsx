@@ -65,12 +65,12 @@ export function StackedCarousel({ items, onSelect, activeIndex, setActiveIndex }
 
   return (
     <div 
-      className="relative w-full h-[450px] flex items-center justify-center overflow-hidden touch-pan-y"
+      className="relative w-full h-[360px] flex items-center justify-center overflow-hidden touch-pan-y"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       onWheel={handleWheel}
     >
-      <div className="relative w-full max-w-[320px] h-[340px] flex items-center justify-center" style={{ perspective: '1200px' }}>
+      <div className="relative w-full max-w-[320px] h-[260px] flex items-center justify-center" style={{ perspective: '1200px' }}>
         {items.map((item, index) => {
           const offset = index - activeIndex;
           const absOffset = Math.abs(offset);

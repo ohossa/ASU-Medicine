@@ -1227,12 +1227,12 @@ function MainApp() {
           <SubjectSelect
             chapter={selectedChapter}
             breadcrumbPath={[
-              t('portal') || 'Portal',
-              t(`year${selectedYear}`) || `Year ${selectedYear}`,
-              t(`semester${selectedSemester}`) || `Semester ${selectedSemester}`,
-              selectedModule?.name || '',
-              `${t('chapter')} ${selectedChapter.id}`
-            ].filter(Boolean)}
+              { label: t('portal') || 'Portal', onClick: () => navigateTo('yearSelect') },
+              { label: t(`year${selectedYear}`) || `Year ${selectedYear}`, onClick: () => navigateTo('semesterSelect') },
+              { label: t(`semester${selectedSemester}`) || `Semester ${selectedSemester}`, onClick: () => navigateTo('moduleSelect') },
+              { label: selectedModule?.name || '', onClick: () => navigateTo('studyModeSelect') },
+              { label: `${t('chapter')} ${selectedChapter.id}` }
+            ]}
             onBack={() => setScreen('chapters')}
             onSelectSubject={handleSelectSubject}
             onQuickStart={handleQuickStart}
