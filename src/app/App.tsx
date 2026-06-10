@@ -64,10 +64,10 @@ function PortalFooter() {
       <p className="text-[11px] text-gray-400 dark:text-gray-500 font-medium max-w-xl mx-auto px-6 leading-relaxed">
         Developed for medical students. For inquiries, database updates, or error reports, please contact:{' '}
         <a
-          href="mailto:support-med@asu.edu.eg"
+          href="mailto:omarhmaged@gmail.com"
           className="hover:text-physiology dark:hover:text-white transition-colors underline font-semibold"
         >
-          support-med@asu.edu.eg
+          omarhmaged@gmail.com
         </a>
       </p>
     </footer>
@@ -581,11 +581,11 @@ function MainApp() {
         {/* SCREEN 1: YEAR SELECT */}
         {screen === 'yearSelect' && (
           <div className="space-y-10 py-6">
-            <div className="text-center space-y-4 max-w-xl mx-auto">
+            <div className="text-center space-y-6 max-w-2xl mx-auto">
               <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-physiology/10 text-physiology-dark rounded-full text-xs font-semibold tracking-wide uppercase">
                 Academic Portal <Sparkles size={12} className="text-physiology" />
               </div>
-              <h2 className="font-archivo text-4xl lg:text-5xl font-black tracking-tight leading-none">
+              <h2 className="font-archivo text-4xl lg:text-6xl font-black tracking-tighter leading-tight bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300">
                 {t('selectYear')}
               </h2>
               <p className="text-gray-500 dark:text-gray-400 font-medium">
@@ -611,7 +611,7 @@ function MainApp() {
                     <div className="absolute -right-8 -top-8 w-24 h-24 rounded-full bg-physiology/5 group-hover:bg-physiology/10 transition-colors duration-300" />
                     
                     {!active && (
-                      <span className="absolute top-4 right-4 px-2.5 py-0.5 bg-gray-200 dark:bg-gray-900 text-gray-500 dark:text-gray-400 rounded-lg text-[9px] font-bold uppercase tracking-wider flex items-center gap-1">
+                      <span className="absolute top-4 right-4 px-3 py-1 bg-white/40 dark:bg-black/40 backdrop-blur-md border border-white/40 dark:border-white/10 text-gray-600 dark:text-gray-300 rounded-xl text-[10px] font-extrabold uppercase tracking-widest flex items-center gap-1.5 shadow-sm">
                         <Lock size={10} />
                         {t('comingSoon').replace('...', '')}
                       </span>
@@ -623,10 +623,10 @@ function MainApp() {
                       }`}>
                         {year}
                       </div>
-                      <h3 className="font-archivo text-xl font-bold text-gray-900 dark:text-white mt-4 tracking-tight">
+                      <h3 className="font-archivo text-2xl font-black text-gray-900 dark:text-white mt-5 tracking-tight">
                         {t('year' + year)}
                       </h3>
-                      <p className="text-xs text-gray-400 dark:text-gray-500 font-semibold uppercase tracking-wider mt-1">
+                      <p className="text-xs text-gray-500 dark:text-gray-400 font-bold uppercase tracking-widest mt-2">
                         {isClerkship ? t('clerkship') : t('preClerkship')}
                       </p>
                     </div>
@@ -648,27 +648,37 @@ function MainApp() {
             
             {/* Show recent attempts from history if any */}
             {getQuizHistory().length > 0 && (
-              <div className="max-w-[1400px] mx-auto pt-6 border-t border-gray-100 dark:border-gray-800">
-                <div className="flex items-center gap-2.5 mb-5">
-                  <span className="w-1.5 h-5 rounded-full bg-physiology" />
-                  <h3 className="font-archivo text-lg font-bold">{t('resumeHistory')}</h3>
+              <div className="max-w-[1400px] mx-auto pt-10 border-t border-gray-100 dark:border-gray-800">
+                <div className="flex items-center justify-between mb-8">
+                  <div className="flex items-center gap-3">
+                    <div className="w-2 h-8 rounded-full bg-gradient-to-b from-physiology to-clinical" />
+                    <h3 className="font-archivo text-2xl font-black tracking-tight">{t('resumeHistory')}</h3>
+                  </div>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {getQuizHistory().slice(0, 3).map((r) => (
                     <button
                       key={r.id}
                       onClick={() => handleSelectHistory(r)}
-                      className="text-left bg-white dark:bg-gray-900 rounded-2xl px-5 py-4 border border-gray-100 dark:border-gray-800/80 flex items-center gap-4 hover:border-physiology/30 transition-all duration-200 hover:scale-[1.01] hover:shadow-sm"
+                      className="portal-card text-left glass-panel glow-border rounded-3xl p-6 flex flex-col justify-between h-40 animate-pop-up relative overflow-hidden group"
                     >
-                      <div className="w-10 h-10 rounded-xl bg-physiology/10 text-physiology-dark flex items-center justify-center font-archivo font-black text-sm">
-                        {r.pct}%
-                      </div>
-                      <div className="flex-1 min-w-0">
-                        <div className="font-archivo text-xs font-bold text-gray-900 dark:text-white truncate">
-                          {t('chapter')}.{r.chapterId} — {r.subjectName}
+                      <div className="absolute -right-10 -top-10 w-32 h-32 rounded-full bg-physiology/5 group-hover:bg-physiology/10 transition-colors duration-300" />
+                      
+                      <div className="flex justify-between items-start">
+                        <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-physiology/10 to-clinical/10 text-physiology-dark flex items-center justify-center font-archivo font-black text-lg shadow-sm border border-physiology/10">
+                          {r.pct}%
                         </div>
-                        <div className="text-[10px] text-gray-400 mt-0.5">
+                        <div className="px-3 py-1 rounded-lg bg-gray-50 dark:bg-gray-800 text-gray-500 text-xs font-bold border border-gray-100 dark:border-gray-700">
                           {r.correct}/{r.total} {t('correct')}
+                        </div>
+                      </div>
+                      
+                      <div className="mt-4">
+                        <div className="font-archivo text-base font-bold text-gray-900 dark:text-white truncate tracking-tight">
+                          {t('chapter')} {r.chapterId}
+                        </div>
+                        <div className="text-xs text-gray-500 dark:text-gray-400 font-semibold mt-1 truncate">
+                          {r.subjectName}
                         </div>
                       </div>
                     </button>
@@ -712,7 +722,7 @@ function MainApp() {
                     <div className="absolute -right-8 -top-8 w-28 h-28 rounded-full bg-physiology/5 group-hover:bg-physiology/10 transition-colors duration-300" />
                     
                     {!active && (
-                      <span className="absolute top-4 right-4 px-2.5 py-0.5 bg-gray-200 dark:bg-gray-900 text-gray-500 dark:text-gray-400 rounded-lg text-[9px] font-bold uppercase tracking-wider flex items-center gap-1">
+                      <span className="absolute top-4 right-4 px-3 py-1 bg-white/40 dark:bg-black/40 backdrop-blur-md border border-white/40 dark:border-white/10 text-gray-600 dark:text-gray-300 rounded-xl text-[10px] font-extrabold uppercase tracking-widest flex items-center gap-1.5 shadow-sm">
                         <Lock size={10} />
                         {t('comingSoon').replace('...', '')}
                       </span>
@@ -792,7 +802,7 @@ function MainApp() {
                       {active ? (
                         <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-physiology/10 to-transparent rounded-bl-[60px]" />
                       ) : (
-                        <span className="absolute top-4 right-4 px-2.5 py-0.5 bg-gray-200 dark:bg-gray-900 text-gray-500 dark:text-gray-400 rounded-lg text-[9px] font-bold uppercase tracking-wider flex items-center gap-1">
+                        <span className="absolute top-4 right-4 px-3 py-1 bg-white/40 dark:bg-black/40 backdrop-blur-md border border-white/40 dark:border-white/10 text-gray-600 dark:text-gray-300 rounded-xl text-[10px] font-extrabold uppercase tracking-widest flex items-center gap-1.5 shadow-sm">
                           <Lock size={10} />
                           {t('comingSoon').replace('...', '')}
                         </span>
