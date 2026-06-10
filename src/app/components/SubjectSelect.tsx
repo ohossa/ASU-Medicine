@@ -51,8 +51,8 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart, 
     <div className="min-h-screen bg-gray-50/50 dark:bg-gray-950 font-manrope relative overflow-hidden">
       {/* Dynamic Floating Background Blobs */}
       <div className="fixed inset-0 -z-10 overflow-hidden bg-background pointer-events-none">
-        <div className="absolute top-[10%] left-[5%] h-[35vw] w-[35vw] rounded-full bg-physiology/6 dark:bg-physiology/4 blur-[130px] blob-float-1" />
-        <div className="absolute bottom-[10%] right-[5%] h-[40vw] w-[40vw] rounded-full bg-anatomy/6 dark:bg-anatomy/4 blur-[160px] blob-float-2" />
+        <div className="absolute top-[10%] left-[5%] h-[35vw] w-[35vw] rounded-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-physiology/6 to-transparent dark:from-physiology/4blob-float-1" />
+        <div className="absolute bottom-[10%] right-[5%] h-[40vw] w-[40vw] rounded-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-anatomy/6 to-transparent dark:from-anatomy/4blob-float-2" />
       </div>
 
       <style>{`

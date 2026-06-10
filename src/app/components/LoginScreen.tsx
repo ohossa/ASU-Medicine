@@ -8,9 +8,9 @@ export function LoginScreen() {
     <div className="min-h-screen relative flex items-center justify-center p-4 bg-gray-50/50 dark:bg-black font-manrope selection:bg-physiology/20 selection:text-physiology-dark">
       <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
         <InteractiveBackground />
-        <div className="absolute top-[10%] left-[5%] h-[35vw] w-[35vw] rounded-full bg-physiology/30 dark:bg-physiology/20 blur-[130px] mix-blend-multiply dark:mix-blend-screen blob-float-1" />
-        <div className="absolute bottom-[10%] right-[5%] h-[40vw] w-[40vw] rounded-full bg-anatomy/30 dark:bg-anatomy/20 blur-[160px] mix-blend-multiply dark:mix-blend-screen blob-float-2" />
-        <div className="absolute top-[40%] left-[40%] h-[30vw] w-[30vw] rounded-full bg-biochem/30 dark:bg-biochem/20 blur-[140px] mix-blend-multiply dark:mix-blend-screen blob-float-3" />
+        <div className="absolute top-[10%] left-[5%] h-[35vw] w-[35vw] rounded-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-physiology/30 to-transparent dark:from-physiology/20 blob-float-1" />
+        <div className="absolute bottom-[10%] right-[5%] h-[40vw] w-[40vw] rounded-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-anatomy/30 to-transparent dark:from-anatomy/20 blob-float-2" />
+        <div className="absolute top-[40%] left-[40%] h-[30vw] w-[30vw] rounded-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-biochem/30 to-transparent dark:from-biochem/20 blob-float-3" />
       </div>
 
       <div className="w-full max-w-[1200px] grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">

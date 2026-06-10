@@ -459,8 +459,8 @@ function MainApp() {
       {/* Dynamic Floating Background Blobs & Interactive Dots */}
       <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
         <InteractiveBackground />
-        <div className="absolute top-[10%] left-[5%] h-[35vw] w-[35vw] rounded-full bg-physiology/30 dark:bg-physiology/20 blur-[130px] mix-blend-multiply dark:mix-blend-screen blob-float-1" />
-        <div className="absolute bottom-[10%] right-[5%] h-[40vw] w-[40vw] rounded-full bg-anatomy/30 dark:bg-anatomy/20 blur-[160px] mix-blend-multiply dark:mix-blend-screen blob-float-2" />
+        <div className="absolute top-[10%] left-[5%] h-[35vw] w-[35vw] rounded-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-physiology/30 to-transparent dark:from-physiology/20 blob-float-1" />
+        <div className="absolute bottom-[10%] right-[5%] h-[40vw] w-[40vw] rounded-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-anatomy/30 to-transparent dark:from-anatomy/20 blob-float-2" />
       </div>
 
       <style>{`
@@ -603,8 +603,8 @@ function MainApp() {
       {/* PORTAL CONTAINER */}
       <main className="max-w-[1600px] mx-auto px-6 py-12 relative z-10">
         <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden transform-gpu">
-          <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] bg-physiology/10 dark:bg-physiology/5 blur-[120px] rounded-full mix-blend-multiply dark:mix-blend-screen animate-pulse duration-10000 will-change-transform transform-gpu"></div>
-          <div className="absolute bottom-[-20%] right-[-10%] w-[50%] h-[50%] bg-clinical/10 dark:bg-clinical/5 blur-[120px] rounded-full mix-blend-multiply dark:mix-blend-screen animate-pulse duration-10000 will-change-transform transform-gpu" style={{ animationDelay: '2s' }}></div>
+          <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-physiology/10 to-transparent dark:from-physiology/5rounded-full mix-blend-multiply dark:mix-blend-screen animate-pulse duration-10000 will-change-transform transform-gpu"></div>
+          <div className="absolute bottom-[-20%] right-[-10%] w-[50%] h-[50%] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-clinical/10 to-transparent dark:from-clinical/5rounded-full mix-blend-multiply dark:mix-blend-screen animate-pulse duration-10000 will-change-transform transform-gpu" style={{ animationDelay: '2s' }}></div>
         </div>
         
         {/* Breadcrumbs for easy navigation jumpbacks */}
