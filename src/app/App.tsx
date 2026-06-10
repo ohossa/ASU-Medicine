@@ -542,7 +542,11 @@ function MainApp() {
       )}
 
       {/* PORTAL CONTAINER */}
-      <main className="max-w-[1600px] mx-auto px-6 py-8">
+      <main className="max-w-[1600px] mx-auto px-6 py-12 relative z-10">
+        <div className="fixed inset-0 pointer-events-none -z-10 overflow-hidden">
+          <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] bg-physiology/10 dark:bg-physiology/5 blur-[120px] rounded-full mix-blend-multiply dark:mix-blend-screen animate-pulse duration-10000"></div>
+          <div className="absolute bottom-[-20%] right-[-10%] w-[50%] h-[50%] bg-clinical/10 dark:bg-clinical/5 blur-[120px] rounded-full mix-blend-multiply dark:mix-blend-screen animate-pulse duration-10000" style={{ animationDelay: '2s' }}></div>
+        </div>
         
         {/* Breadcrumbs for easy navigation jumpbacks */}
         {['semesterSelect', 'moduleSelect', 'studyModeSelect'].includes(screen) && (
@@ -602,7 +606,7 @@ function MainApp() {
                     key={year}
                     onClick={() => active && handleSelectYear(year)}
                     disabled={!active}
-                    className={`portal-card text-start glass-panel p-6 flex flex-col justify-between h-44 animate-pop-up grid-delay relative overflow-hidden group ${
+                    className={`portal-card text-start glass-panel p-6 flex flex-col justify-between h-52 animate-pop-up grid-delay relative overflow-hidden group ${
                       active
                         ? 'hover:border-physiology/40 cursor-pointer glow-border'
                         : 'opacity-60 saturate-50 cursor-not-allowed pointer-events-none shadow-none'
@@ -618,15 +622,12 @@ function MainApp() {
                     )}
 
                     <div>
-                      <div className={`w-10 h-10 rounded-xl flex items-center justify-center font-archivo font-black text-lg ${
-                        active ? 'bg-physiology/10 text-physiology-dark' : 'bg-gray-100 dark:bg-gray-800 text-gray-400 dark:text-gray-550'
+                      <div className={`w-fit px-5 h-12 rounded-2xl flex items-center justify-center font-archivo font-black text-xl tracking-tight shadow-sm border ${
+                        active ? 'bg-gradient-to-br from-physiology/10 to-physiology/5 text-physiology-dark border-physiology/20' : 'bg-gray-100 dark:bg-gray-800 text-gray-400 dark:text-gray-500 border-transparent'
                       }`}>
-                        {year}
-                      </div>
-                      <h3 className="font-archivo text-2xl font-black text-gray-900 dark:text-white mt-5 tracking-tight">
                         {t('year' + year)}
-                      </h3>
-                      <p className="text-xs text-gray-500 dark:text-gray-400 font-bold uppercase tracking-widest mt-2">
+                      </div>
+                      <p className="text-[11px] text-gray-400 dark:text-gray-500 font-extrabold uppercase tracking-widest mt-5">
                         {isClerkship ? t('clerkship') : t('preClerkship')}
                       </p>
                     </div>
@@ -713,7 +714,7 @@ function MainApp() {
                     key={sem}
                     onClick={() => active && handleSelectSemester(sem)}
                     disabled={!active}
-                    className={`portal-card text-start glass-panel p-8 flex flex-col justify-between h-48 animate-pop-up group relative overflow-hidden ${
+                    className={`portal-card text-start glass-panel p-8 flex flex-col justify-between h-52 animate-pop-up group relative overflow-hidden ${
                       active
                         ? 'hover:border-physiology/40 cursor-pointer glow-border'
                         : 'opacity-60 saturate-50 cursor-not-allowed pointer-events-none shadow-none'
@@ -729,14 +730,12 @@ function MainApp() {
                     )}
 
                     <div>
-                      <div className={`w-12 h-12 rounded-2xl flex items-center justify-center ${
-                        active ? 'bg-physiology/10 text-physiology-dark' : 'bg-gray-100 dark:bg-gray-800 text-gray-400 dark:text-gray-555'
+                      <div className={`w-fit px-5 h-12 rounded-2xl flex items-center justify-center font-archivo font-black text-xl tracking-tight shadow-sm border gap-2 ${
+                        active ? 'bg-gradient-to-br from-clinical/10 to-clinical/5 text-clinical-dark border-clinical/20' : 'bg-gray-100 dark:bg-gray-800 text-gray-400 dark:text-gray-500 border-transparent'
                       }`}>
-                        <Calendar size={20} />
-                      </div>
-                      <h3 className="font-archivo text-2xl font-bold text-gray-900 dark:text-white mt-5 tracking-tight">
+                        <Calendar size={18} className={active ? 'text-clinical' : ''} />
                         {t('semester' + sem)}
-                      </h3>
+                      </div>
                     </div>
                     <div className="flex items-center justify-end w-full">
                       {active ? (
