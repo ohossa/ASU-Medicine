@@ -130,18 +130,6 @@ export function StackedCarousel({ items, onSelect, activeIndex, setActiveIndex }
               >
                 {item.content}
               </div>
-              
-              {/* Active Selection Indicator */}
-              {isActive && !item.disabled && (
-                 <motion.div 
-                   className="absolute -bottom-8 left-1/2 -translate-x-1/2"
-                   initial={{ opacity: 0, y: -10 }}
-                   animate={{ opacity: 1, y: 0 }}
-                   transition={{ delay: 0.2 }}
-                 >
-                   <div className="w-1.5 h-1.5 rounded-full bg-physiology dark:bg-physiology-light shadow-[0_0_8px_rgba(255,255,255,0.8)] shadow-physiology" />
-                 </motion.div>
-              )}
             </motion.div>
           );
         })}
