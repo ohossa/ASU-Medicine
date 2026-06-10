@@ -98,11 +98,11 @@ h2 {
 }
 
 .dot-pattern {
-  background-image: radial-gradient(circle, rgba(0,0,0,0.06) 1.5px, transparent 1.5px);
+  background-image: radial-gradient(circle, rgba(0,0,0,0.15) 1.5px, transparent 1.5px);
   background-size: 24px 24px;
 }
 .dark .dot-pattern {
-  background-image: radial-gradient(circle, rgba(255,255,255,0.08) 1.5px, transparent 1.5px);
+  background-image: radial-gradient(circle, rgba(255,255,255,0.15) 1.5px, transparent 1.5px);
 }
 p {
   margin: 0;

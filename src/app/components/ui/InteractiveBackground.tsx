@@ -18,7 +18,7 @@ export function InteractiveBackground() {
   return (
     <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
       {/* Base faint dots */}
-      <div className="absolute inset-0 dot-pattern opacity-40 dark:opacity-20" />
+      <div className="absolute inset-0 dot-pattern opacity-60 dark:opacity-40" />
       
       {/* Interactive cursor spotlight */}
       <div 
