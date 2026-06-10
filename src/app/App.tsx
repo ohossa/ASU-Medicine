@@ -666,7 +666,7 @@ function MainApp() {
                       <div className="absolute -right-10 -top-10 w-32 h-32 rounded-full bg-physiology/5 group-hover:bg-physiology/10 transition-colors duration-300" />
                       
                       <div className="flex justify-between items-start">
-                        <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-physiology/10 to-clinical/10 text-physiology-dark flex items-center justify-center font-archivo font-black text-lg shadow-sm border border-physiology/10">
+                        <div className="w-fit px-3 h-10 rounded-xl bg-gradient-to-br from-physiology/10 to-clinical/10 text-physiology-dark flex items-center justify-center font-archivo font-black text-lg shadow-sm border border-physiology/10">
                           {r.pct}%
                         </div>
                         <div className="px-3 py-1 rounded-lg bg-gray-50 dark:bg-gray-800 text-gray-500 text-xs font-bold border border-gray-100 dark:border-gray-700">
