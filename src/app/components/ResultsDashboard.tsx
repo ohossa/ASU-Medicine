@@ -295,7 +295,7 @@ export function ResultsDashboard({
 
       {/* HEADER */}
       <header className="bg-white dark:bg-gray-900 border-b border-gray-100 dark:border-gray-800 sticky top-0 z-50">
-        <div className="max-w-6xl mx-auto px-6 lg:px-10">
+        <div className="max-w-[1600px] mx-auto px-6 lg:px-10">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center gap-4">
               <button
@@ -340,7 +340,7 @@ export function ResultsDashboard({
           </>
         )}
 
-        <div className="relative max-w-6xl mx-auto px-6 lg:px-10 py-12 lg:py-16">
+        <div className="relative max-w-[1600px] mx-auto px-6 lg:px-10 py-12 lg:py-16">
           <div className="flex flex-col lg:flex-row items-center lg:items-start gap-10 lg:gap-16">
 
             {/* Score Circle */}
@@ -419,7 +419,7 @@ export function ResultsDashboard({
       </div>
 
       {/* REVIEW SECTION */}
-      <div className="max-w-6xl mx-auto px-6 lg:px-10 py-10 lg:py-14">
+      <div className="max-w-[1600px] mx-auto px-6 lg:px-10 py-10 lg:py-14">
         <div className="section-animate flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-8">
           <div className="flex items-center gap-3">
             <div className="w-1.5 h-6 rounded-full bg-gradient-to-b from-success to-physiology" />

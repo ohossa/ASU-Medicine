@@ -484,7 +484,7 @@ function MainApp() {
       {/* TOP NAVIGATION HEADER WITH BREADCRUMBS */}
       {['yearSelect', 'semesterSelect', 'moduleSelect', 'studyModeSelect'].includes(screen) && (
         <header className="shrinking-header bg-white/70 dark:bg-gray-900/70 backdrop-blur-xl border-b border-gray-100 dark:border-gray-800/50 sticky top-0 z-40 transition-colors duration-300">
-          <div className="max-w-6xl mx-auto px-6 py-5 transition-all duration-300 flex items-center justify-between">
+          <div className="max-w-[1600px] mx-auto px-6 py-5 transition-all duration-300 flex items-center justify-between">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-physiology to-clinical flex items-center justify-center text-white font-archivo font-black text-xl shadow-md shadow-physiology/20">
                 A
@@ -542,7 +542,7 @@ function MainApp() {
       )}
 
       {/* PORTAL CONTAINER */}
-      <main className="max-w-6xl mx-auto px-6 py-8">
+      <main className="max-w-[1600px] mx-auto px-6 py-8">
         
         {/* Breadcrumbs for easy navigation jumpbacks */}
         {['semesterSelect', 'moduleSelect', 'studyModeSelect'].includes(screen) && (
@@ -593,7 +593,7 @@ function MainApp() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[1400px] mx-auto">
               {[1, 2, 3, 4, 5, 6].map((year) => {
                 const isClerkship = year >= 4;
                 const active = hasActiveModulesForYear(year);
@@ -648,7 +648,7 @@ function MainApp() {
             
             {/* Show recent attempts from history if any */}
             {getQuizHistory().length > 0 && (
-              <div className="max-w-4xl mx-auto pt-6 border-t border-gray-100 dark:border-gray-800">
+              <div className="max-w-[1400px] mx-auto pt-6 border-t border-gray-100 dark:border-gray-800">
                 <div className="flex items-center gap-2.5 mb-5">
                   <span className="w-1.5 h-5 rounded-full bg-physiology" />
                   <h3 className="font-archivo text-lg font-bold">{t('resumeHistory')}</h3>
@@ -772,7 +772,7 @@ function MainApp() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[1400px] mx-auto">
               {(selectedYear && selectedSemester && SYLLABUS_MODULES[selectedYear]?.[selectedSemester]) ? (
                 SYLLABUS_MODULES[selectedYear][selectedSemester].map((mod) => {
                   const active = isModuleActive(mod.code);
@@ -877,7 +877,7 @@ function MainApp() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-[1400px] mx-auto">
               {/* MCQ Practice Mode */}
               <button
                 onClick={() => handleSelectMode('mcq')}
@@ -980,7 +980,7 @@ function MainApp() {
               </button>
             </div>
 
-            <div className="max-w-4xl mx-auto">
+            <div className="max-w-[1400px] mx-auto">
               <button
                 onClick={() => setShowTracker(true)}
                 className="w-full glass-panel glow-border rounded-2xl p-5 flex items-center justify-between group hover:shadow-md transition-all animate-pop-up"

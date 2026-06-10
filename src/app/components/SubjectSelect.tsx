@@ -131,7 +131,7 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart }
 
       {/* STICKY HEADER */}
       <header className="shrinking-header bg-white/70 dark:bg-gray-900/70 backdrop-blur-xl border-b border-gray-100 dark:border-gray-800/50 sticky top-0 z-50">
-        <div className="max-w-6xl mx-auto px-6 lg:px-8">
+        <div className="max-w-[1600px] mx-auto px-6 lg:px-8">
           <div className="flex items-center justify-between py-4">
             <div className="flex items-center gap-4">
               <button
@@ -170,7 +170,7 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart }
         <div className="blob-1 absolute -top-16 right-20 w-56 h-56 rounded-full bg-gradient-to-br from-physiology/8 to-clinical/6 blur-3xl" />
         <div className="blob-2 absolute -bottom-20 left-10 w-48 h-48 rounded-full bg-gradient-to-br from-anatomy/8 to-histology/6 blur-3xl" />
 
-        <div className="relative max-w-6xl mx-auto px-6 lg:px-8 py-10 lg:py-14">
+        <div className="relative max-w-[1600px] mx-auto px-6 lg:px-8 py-10 lg:py-14">
           <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
             <div>
               <div className="header-anim inline-flex items-center gap-2.5 px-4 py-2 bg-gray-900 dark:bg-white text-white dark:text-gray-900 rounded-full text-xs font-bold tracking-wide uppercase mb-5">
@@ -201,7 +201,7 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart }
       </div>
 
       {/* SUBJECT CARDS */}
-      <div className="max-w-6xl mx-auto px-6 lg:px-8 py-10 lg:py-14">
+      <div className="max-w-[1600px] mx-auto px-6 lg:px-8 py-10 lg:py-14">
         <div className="flex items-center gap-3 mb-8">
           <div className="w-1.5 h-6 rounded-full bg-gradient-to-b from-physiology to-anatomy" />
           <h2 className="font-archivo text-lg font-bold text-gray-900 dark:text-white tracking-tight">{t('chooseSubject')}</h2>

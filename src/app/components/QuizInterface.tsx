@@ -409,7 +409,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish }:
 
       {/* HEADER */}
       <header className="bg-white dark:bg-gray-900 border-b border-gray-100 dark:border-gray-800 sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-6 lg:px-10">
+        <div className="max-w-[1600px] mx-auto px-6 lg:px-10">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center gap-4">
               <button
@@ -453,7 +453,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish }:
       </header>
 
       {/* QUIZ CONTENT */}
-      <div className="max-w-7xl mx-auto px-6 lg:px-10 py-8">
+      <div className="max-w-[1600px] mx-auto px-6 lg:px-10 py-8">
         <div className="flex flex-col xl:flex-row gap-8 items-start">
           
           {/* Main Card */}
@@ -1185,7 +1185,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish }:
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 lg:px-10 pb-8 text-center space-y-1">
+      <div className="max-w-[1600px] mx-auto px-6 lg:px-10 pb-8 text-center space-y-1">
         <p className="text-[11px] text-gray-300 dark:text-gray-600 font-medium">
           Endocrine Essay Questions • Chapter {chapter.id}: {chapter.title} • {subject ? subject.name : 'All Subjects'}
         </p>

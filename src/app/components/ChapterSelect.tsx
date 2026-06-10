@@ -214,7 +214,7 @@ export function ChapterSelect({
           </svg>
         </div>
 
-        <div className="relative max-w-6xl mx-auto px-6 py-12 lg:py-16">
+        <div className="relative max-w-[1600px] mx-auto px-6 py-12 lg:py-16">
           <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
             <div>
               <div className="flex flex-wrap items-center gap-3 mb-5">
@@ -266,7 +266,7 @@ export function ChapterSelect({
       </div>
 
       {/* CHAPTER GRID */}
-      <div className="max-w-6xl mx-auto px-6 py-10 lg:py-14">
+      <div className="max-w-[1600px] mx-auto px-6 py-10 lg:py-14">
         <div className="flex items-center gap-3 mb-8">
           <div className="w-1.5 h-6 rounded-full bg-gradient-to-b from-physiology to-clinical" />
           <h2 className="font-archivo text-xl font-bold text-gray-900 dark:text-white tracking-tight">Select a Chapter</h2>
