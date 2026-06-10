@@ -956,14 +956,14 @@ function MainApp() {
         {/* SCREEN 4: STUDY MODE SELECT */}
         {screen === 'studyModeSelect' && selectedModule && (
           <div className="space-y-10 py-6">
-            <div className="text-center space-y-4 max-w-xl mx-auto">
-              <span className="px-4 py-1.5 bg-physiology/10 text-physiology-dark rounded-full text-xs font-semibold uppercase tracking-wide">
+            <div className="text-center max-w-xl mx-auto mb-12">
+              <div className="inline-flex items-center justify-center px-4 py-2 bg-physiology/10 text-physiology-dark rounded-full text-xs font-bold uppercase tracking-wider mb-6">
                 Module Loaded: {selectedModule.code}
-              </span>
-              <h2 className="font-archivo text-4xl font-black tracking-tight leading-none">
+              </div>
+              <h2 className="font-archivo text-4xl lg:text-5xl font-black tracking-tight leading-none mb-5">
                 Select Study Mode
               </h2>
-              <p className="text-gray-500 dark:text-gray-400 font-medium">
+              <p className="text-gray-500 dark:text-gray-400 text-lg font-medium leading-relaxed">
                 Choose the question formats you wish to practice. You can focus on MCQs, essays, or a mixed exam.
               </p>
             </div>
