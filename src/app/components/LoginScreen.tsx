@@ -34,17 +34,6 @@ export function LoginScreen() {
           <p className="text-gray-500 dark:text-gray-400 font-medium text-lg sm:text-xl max-w-xl mx-auto lg:mx-0 leading-relaxed mt-2">
             Securely save your progress, seamlessly sync across all your devices, and access premium interactive medical quizzes anytime, anywhere.
           </p>
-
-          <div className="flex items-center gap-6 justify-center lg:justify-start mt-4">
-            <div className="flex -space-x-4">
-              {[1, 2, 3, 4].map((i) => (
-                <div key={i} className={`w-10 h-10 rounded-full border-2 border-white dark:border-black shadow-sm ${i === 1 ? 'bg-physiology/20' : i === 2 ? 'bg-anatomy/20' : i === 3 ? 'bg-biochem/20' : 'bg-histology/20'}`} />
-              ))}
-            </div>
-            <div className="text-sm font-bold text-gray-600 dark:text-gray-300">
-              Join <span className="text-physiology">5,000+</span> Medical Students
-            </div>
-          </div>
         </div>
 
         {/* Right Side: Clerk SignIn UI */}
