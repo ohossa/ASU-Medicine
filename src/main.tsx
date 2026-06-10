@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { ClerkProvider } from '@clerk/clerk-react';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/react';
+import { Toaster } from 'sonner';
 import './styles/index.css';
 import App from './app/App.tsx';
 import { LanguageProvider } from './app/context/LanguageContext';
@@ -22,6 +23,7 @@ createRoot(document.getElementById('root')!).render(
         <ThemeProvider>
           <LanguageProvider>
             <App />
+            <Toaster richColors position="top-right" />
             <Analytics />
             <SpeedInsights />
           </LanguageProvider>

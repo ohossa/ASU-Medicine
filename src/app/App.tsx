@@ -36,8 +36,8 @@ import { saveQuizResult, getQuizHistory } from './utils/storage';
 import type { QuizResult } from './utils/storage';
 import { SignedIn, SignedOut, UserButton, useUser } from '@clerk/clerk-react';
 const LoginScreen = lazy(() => import('./components/LoginScreen').then(m => ({ default: m.LoginScreen })));
-import { useCloudSync } from './hooks/useCloudSync';
 import { YearSelectionModal } from './components/YearSelectionModal';
+import { useNavigationState } from './hooks/useNavigationState';
 import {
   getChaptersForModuleAndMode,
   getModuleQuestionCounts,
@@ -81,6 +81,20 @@ function PortalFooter() {
   );
 }
 
+const hasActiveModulesForYear = (year: number): boolean => {
+  const semesters = SYLLABUS_MODULES[year];
+  if (!semesters) return false;
+  return Object.values(semesters).some((modules) =>
+    modules.some((mod) => isModuleActive(mod.code))
+  );
+};
+
+const hasActiveModulesForSemester = (year: number, sem: number): boolean => {
+  const modules = SYLLABUS_MODULES[year]?.[sem];
+  if (!modules) return false;
+  return modules.some((mod) => isModuleActive(mod.code));
+};
+
 function MainApp() {
   const { t, language } = useLanguage();
   const { user } = useUser();
@@ -88,396 +102,47 @@ function MainApp() {
   // Initialize automatic cloud synchronization
   useCloudSync();
 
-  // Student Year tracking
-  const [studentYear, setStudentYear] = useState<number | null>(() => {
-    try {
-      const saved = localStorage.getItem('asu_medical_student_year');
-      return saved ? parseInt(saved, 10) : null;
-    } catch {
-      return null;
-    }
-  });
-
-  // Listen for storage changes from cloud sync
-  useEffect(() => {
-    const handleStorage = () => {
-      try {
-        const saved = localStorage.getItem('asu_medical_student_year');
-        if (saved) {
-          setStudentYear(parseInt(saved, 10));
-        }
-      } catch (e) {
-        console.error(e);
-      }
-    };
-    window.addEventListener('storage', handleStorage);
-    return () => window.removeEventListener('storage', handleStorage);
-  }, []);
-
-  const hasActiveModulesForYear = (year: number): boolean => {
-    const semesters = SYLLABUS_MODULES[year];
-    if (!semesters) return false;
-    return Object.values(semesters).some((modules) =>
-      modules.some((mod) => isModuleActive(mod.code))
-    );
-  };
-
-  const hasActiveModulesForSemester = (year: number, sem: number): boolean => {
-    const modules = SYLLABUS_MODULES[year]?.[sem];
-    if (!modules) return false;
-    return modules.some((mod) => isModuleActive(mod.code));
-  };
-  
-  // Navigation states
-  const [screen, setScreen] = useState<Screen>(() => {
-    try {
-      const saved = localStorage.getItem('asu_portal_screen');
-      if (saved) {
-        if (saved === 'quiz' || saved === 'results') return 'chapters';
-        return saved as Screen;
-      }
-      return 'yearSelect';
-    } catch { return 'yearSelect'; }
-  });
-  const [selectedYear, setSelectedYear] = useState<number | null>(() => {
-    try { const saved = localStorage.getItem('asu_portal_year'); return saved ? Number(saved) : null; } catch { return null; }
-  });
-  const [selectedSemester, setSelectedSemester] = useState<number | null>(() => {
-    try { const saved = localStorage.getItem('asu_portal_semester'); return saved ? Number(saved) : null; } catch { return null; }
-  });
-  const [selectedModule, setSelectedModule] = useState<ModuleInfo | null>(() => {
-    try { const saved = localStorage.getItem('asu_portal_module'); return saved ? JSON.parse(saved) : null; } catch { return null; }
-  });
-  const [studyMode, setStudyMode] = useState<'mcq' | 'essay' | 'mixed' | null>(() => {
-    try { const saved = localStorage.getItem('asu_portal_studyMode'); return saved as any || null; } catch { return null; }
-  });
-
-  // Sync state to localStorage
-  useEffect(() => {
-    localStorage.setItem('asu_portal_screen', screen);
-    if (selectedYear) localStorage.setItem('asu_portal_year', selectedYear.toString());
-    else localStorage.removeItem('asu_portal_year');
-    if (selectedSemester) localStorage.setItem('asu_portal_semester', selectedSemester.toString());
-    else localStorage.removeItem('asu_portal_semester');
-    if (selectedModule) localStorage.setItem('asu_portal_module', JSON.stringify(selectedModule));
-    else localStorage.removeItem('asu_portal_module');
-    if (studyMode) localStorage.setItem('asu_portal_studyMode', studyMode);
-    else localStorage.removeItem('asu_portal_studyMode');
-    
-    // Trigger cloud sync to push these states
-    if (typeof window !== 'undefined') {
-      window.dispatchEvent(new Event('trigger-cloud-sync'));
-    }
-  }, [screen, selectedYear, selectedSemester, selectedModule, studyMode]);
-  const [showTracker, setShowTracker] = useState(false);
-  
-  // Quiz states
-  const [selectedChapter, setSelectedChapter] = useState<ChapterData | null>(null);
-  const [quizPayload, setQuizPayload] = useState<QuizPayload | null>(null);
-  const [resultPayload, setResultPayload] = useState<ResultPayload | null>(null);
-  
-  // UI States
-  const [modalModule, setModalModule] = useState<ModuleInfo | null>(null);
-
-  // Carousel states
-  const [activeYearCarouselIndex, setActiveYearCarouselIndex] = useState(1); // Default to Year 2
-  const [activeSemesterCarouselIndex, setActiveSemesterCarouselIndex] = useState(0);
-
-  const transitionTo = (fn: () => void) => {
-    // @ts-ignore
-    if (document.startViewTransition) {
-      // @ts-ignore
-      document.startViewTransition(fn);
-    } else {
-      fn();
-    }
-  };
-
-  // Navigate back helper for breadcrumbs
-  const navigateTo = (targetScreen: Screen) => {
-    transitionTo(() => {
-      setScreen(targetScreen);
-      if (targetScreen === 'yearSelect') {
-        setSelectedYear(null);
-        setSelectedSemester(null);
-        setSelectedModule(null);
-        setStudyMode(null);
-        setSelectedChapter(null);
-      } else if (targetScreen === 'semesterSelect') {
-        setSelectedSemester(null);
-        setSelectedModule(null);
-        setStudyMode(null);
-        setSelectedChapter(null);
-      } else if (targetScreen === 'moduleSelect') {
-        setSelectedModule(null);
-        setStudyMode(null);
-        setSelectedChapter(null);
-      } else if (targetScreen === 'studyModeSelect') {
-        setStudyMode(null);
-        setSelectedChapter(null);
-      } else if (targetScreen === 'chapters') {
-        setSelectedChapter(null);
-      }
-    });
-  };
-
-  const handleSelectYear = (year: number) => {
-    transitionTo(() => {
-      setSelectedYear(year);
-      setScreen('semesterSelect');
-    });
-  };
-
-  const handleSelectSemester = (sem: number) => {
-    transitionTo(() => {
-      setSelectedSemester(sem);
-      setScreen('moduleSelect');
-    });
-  };
-
-  const handleSelectModule = (mod: ModuleInfo) => {
-    if (isModuleActive(mod.code)) {
-      transitionTo(() => {
-        setSelectedModule(mod);
-        setScreen('studyModeSelect');
-      });
-    } else {
-      // Show "Coming Soon" dialog
-      setModalModule(mod);
-    }
-  };
-
-  const handleSelectMode = (mode: 'mcq' | 'essay' | 'mixed') => {
-    transitionTo(() => {
-      setStudyMode(mode);
-      setScreen('chapters');
-    });
-  };
-
-  const handleSelectChapter = (chapter: ChapterData) => {
-    transitionTo(() => {
-      setSelectedChapter(chapter);
-      setScreen('subjects');
-    });
-  };
-
-  const handleSelectSubject = (subject: SubjectData, questions: Question[]) => {
-    transitionTo(() => {
-      setQuizPayload({ chapter: selectedChapter!, subject, questions });
-      setScreen('quiz');
-    });
-  };
-
-  const handleQuickStart = (questions: Question[]) => {
-    transitionTo(() => {
-      setQuizPayload({ chapter: selectedChapter!, subject: null, questions });
-      setScreen('quiz');
-    });
-  };
-
-  const checkAnswerCorrect = (q: Question, ans: any) => {
-    if (ans === undefined) return false;
-    if (q.type === 'mcq' || q.type === 'truefalse') {
-      return ans === q.correctIndex;
-    }
-    if (q.type === 'matching') {
-      const scrambled = ans.scrambled;
-      const matches = ans.matches || ans;
-      if (!scrambled || !matches || !q.pairs) return false;
-      return q.pairs.every((pair, pIdx) => {
-        const correctTargetIdx = scrambled.indexOf(pair.target);
-        return matches[pIdx] === correctTargetIdx;
-      });
-    }
-    if (q.type === 'essay') {
-      return ans?.selfGrade === 'correct';
-    }
-    if (q.type === 'case' && q.subQuestions) {
-      return q.subQuestions.every((subQ) => {
-        const subAns = ans[subQ.id];
-        if (subAns === undefined) return false;
-        if (subQ.type === 'mcq') {
-          return subAns === subQ.correctIndex;
-        }
-        if (subQ.type === 'essay') {
-          return subAns?.selfGrade === 'correct';
-        }
-        return false;
-      });
-    }
-    if (q.type === 'fillblank') {
-      const userAnswers = ans.userAnswers || [];
-      const blanks = q.blanks || [];
-      if (userAnswers.length !== blanks.length) return false;
-      return blanks.every((correctWord, bIdx) => {
-        const userWord = (userAnswers[bIdx] || '').trim().toLowerCase();
-        const correctWordLower = correctWord.toLowerCase();
-        const matchesPrimary = userWord === correctWordLower;
-        const matchesAccepted = q.acceptedAnswers?.[bIdx]?.some(
-          (alt) => alt.trim().toLowerCase() === userWord
-        );
-        return matchesPrimary || matchesAccepted;
-      });
-    }
-    return false;
-  };
-
-  const handleFinishQuiz = (answers: Record<number, any>, elapsedSeconds: number, flaggedQuestions: Set<number>) => {
-    const questions = quizPayload!.questions;
-    
-    let total = 0;
-    let correct = 0;
-
-    questions.forEach((q, i) => {
-      const ans = answers[i];
-      if (q.type === 'case' && q.subQuestions) {
-        total += q.subQuestions.length;
-        if (ans) {
-          q.subQuestions.forEach((subQ) => {
-            const subAns = ans[subQ.id];
-            if (subAns !== undefined) {
-              const isSubCorrect = subQ.type === 'mcq'
-                ? subAns === subQ.correctIndex
-                : subAns?.selfGrade === 'correct';
-              if (isSubCorrect) correct++;
-            }
-          });
-        }
-      } else {
-        total += 1;
-        if (ans !== undefined && checkAnswerCorrect(q, ans)) {
-          correct++;
-        }
-      }
-    });
-
-    saveQuizResult({
-      moduleCode: selectedModule?.code,
-      year: selectedYear,
-      semester: selectedSemester,
-      chapterId: quizPayload!.chapter.id,
-      chapterTitle: quizPayload!.chapter.title,
-      subjectName: quizPayload!.subject?.name ?? 'All Subjects',
-      correct,
-      total,
-      pct: total > 0 ? Math.round((correct / total) * 100) : 0,
-      elapsedSeconds,
-      questionIds: questions.map(q => q.id),
-      answers,
-      flaggedQuestionIds: Array.from(flaggedQuestions)
-    });
-
-    transitionTo(() => {
-      setResultPayload({
-        chapter: quizPayload!.chapter,
-        subject: quizPayload!.subject,
-        questions,
-        answers,
-        elapsedSeconds,
-        flaggedQuestions
-      });
-      setScreen('results');
-    });
-  };
-
-  const handleSelectHistory = (result: QuizResult) => {
-    const modCode = result.moduleCode || 'MEM-2';
-    const yr = result.year || 2;
-    const sem = result.semester || 2;
-
-    const moduleChapters = getChaptersForModuleAndMode(modCode, 'mixed');
-    const chapter = moduleChapters.find((c) => String(c.id) === String(result.chapterId));
-    if (!chapter) return;
-
-    const subject = chapter.subjects.find((s) => s.name === result.subjectName) || null;
-
-    let questionsList: Question[] = [];
-    if (result.questionIds && Array.isArray(result.questionIds)) {
-      const allChapterQuestions = chapter.subjects.flatMap((s) => s.questions);
-      result.questionIds.forEach((id: number) => {
-        const found = allChapterQuestions.find((q) => q.id === id);
-        if (found) {
-          questionsList.push(found);
-        }
-      });
-    }
-
-    if (questionsList.length === 0) {
-      if (subject) {
-        questionsList = subject.questions;
-      } else {
-        questionsList = chapter.subjects.flatMap((s) => s.questions);
-      }
-    }
-
-    const answersRecord = result.answers || {};
-    const flaggedSet = new Set<number>(result.flaggedQuestionIds || []);
-
-    // Try to locate the module definition
-    let targetModule = SYLLABUS_MODULES[yr]?.[sem]?.find((m: any) => m.code === modCode) || null;
-    if (!targetModule && modCode === 'MEM-2') {
-      targetModule = {
-        code: 'MEM-2',
-        name: 'Endocrine System & Metabolism Module',
-        cp: 5.5,
-        marks: 110,
-        keywords: ['endocrine', 'metabolism', 'mem']
-      };
-    }
-
-    transitionTo(() => {
-      setSelectedYear(yr);
-      setSelectedSemester(sem);
-      if (targetModule) {
-        setSelectedModule(targetModule);
-      }
-      setStudyMode('mixed');
-      setSelectedChapter(chapter);
-      setQuizPayload({ chapter, subject, questions: questionsList });
-      setResultPayload({
-        chapter,
-        subject,
-        questions: questionsList,
-        answers: answersRecord,
-        elapsedSeconds: result.elapsedSeconds,
-        flaggedQuestions: flaggedSet,
-      });
-      setScreen('results');
-    });
-  };
-
-  const handleRetake = () => {
-    if (!quizPayload) return;
-    transitionTo(() => {
-      setQuizPayload({ ...quizPayload, questions: quizPayload.questions });
-      setScreen('quiz');
-    });
-  };
-
-  const handleBackToChapters = () => {
-    transitionTo(() => {
-      setSelectedChapter(null);
-      setQuizPayload(null);
-      setResultPayload(null);
-      setScreen('chapters');
-    });
-  };
-
-  const redirectToEndocrine = () => {
-    transitionTo(() => {
-      setModalModule(null);
-      setSelectedYear(2);
-      setSelectedSemester(2);
-      setSelectedModule({
-        code: 'MEM-2',
-        name: 'Endocrine System & Metabolism Module',
-        cp: 5.5,
-        marks: 110,
-        keywords: ['endocrine', 'metabolism', 'mem']
-      });
-      setScreen('studyModeSelect');
-    });
-  };
+  const {
+    studentYear,
+    setStudentYear,
+    screen,
+    setScreen,
+    selectedYear,
+    setSelectedYear,
+    selectedSemester,
+    setSelectedSemester,
+    selectedModule,
+    setSelectedModule,
+    studyMode,
+    setStudyMode,
+    showTracker,
+    setShowTracker,
+    selectedChapter,
+    setSelectedChapter,
+    quizPayload,
+    setQuizPayload,
+    resultPayload,
+    setResultPayload,
+    modalModule,
+    setModalModule,
+    activeYearCarouselIndex,
+    setActiveYearCarouselIndex,
+    activeSemesterCarouselIndex,
+    setActiveSemesterCarouselIndex,
+    navigateTo,
+    handleSelectYear,
+    handleSelectSemester,
+    handleSelectModule,
+    handleSelectMode,
+    handleSelectChapter,
+    handleSelectSubject,
+    handleQuickStart,
+    handleFinishQuiz,
+    handleSelectHistory,
+    handleRetake,
+    handleBackToChapters,
+    redirectToEndocrine
+  } = useNavigationState(t, language);
 
   // Retrieve dynamically loaded chapters
   const activeChapters = selectedModule && studyMode
@@ -499,77 +164,7 @@ function MainApp() {
         <div className="absolute bottom-[10%] right-[5%] h-[40vw] w-[40vw] rounded-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-anatomy/30 to-transparent dark:from-anatomy/20 blob-float-2" />
       </div>
 
-      <style>{`
-        @keyframes shrinkHeader {
-          to {
-            padding-top: 0.5rem;
-            padding-bottom: 0.5rem;
-            background: var(--color-glass-bg);
-            backdrop-filter: blur(24px);
-            border-bottom-color: var(--color-glass-border);
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
-          }
-        }
-        @keyframes shrinkHeaderDark {
-          to {
-            padding-top: 0.5rem;
-            padding-bottom: 0.5rem;
-            background: var(--color-glass-dark-bg);
-            backdrop-filter: blur(24px);
-            border-bottom-color: var(--color-glass-dark-border);
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
-          }
-        }
-        @supports (animation-timeline: scroll()) and (animation-range: 0% 100%) {
-          .shrinking-header {
-            animation: shrinkHeader auto linear both;
-            animation-timeline: scroll(block root);
-            animation-range: 0px 100px;
-          }
-          .dark .shrinking-header {
-            animation: shrinkHeaderDark auto linear both;
-            animation-timeline: scroll(block root);
-            animation-range: 0px 100px;
-          }
-        }
 
-        @keyframes popUp {
-          from { opacity: 0; transform: scale(0.92) translateY(16px); }
-          to { opacity: 1; transform: scale(1) translateY(0); }
-        }
-        @keyframes floatBlob1 {
-          0%, 100% { transform: translate(0, 0) scale(1) rotate(0deg); }
-          50% { transform: translate(6%, 10%) scale(1.1) rotate(10deg); }
-        }
-        @keyframes floatBlob2 {
-          0%, 100% { transform: translate(0, 0) scale(1) rotate(0deg); }
-          50% { transform: translate(-8%, -6%) scale(0.85) rotate(-5deg); }
-        }
-        .blob-float-1 { animation: floatBlob1 25s cubic-bezier(0.4, 0, 0.2, 1) infinite; }
-        .blob-float-2 { animation: floatBlob2 30s cubic-bezier(0.4, 0, 0.2, 1) infinite alternate; }
-
-        .animate-pop-up { animation: popUp 600ms cubic-bezier(0.16, 1, 0.3, 1) both; }
-        .grid-delay:nth-child(1) { animation-delay: 40ms; }
-        .grid-delay:nth-child(2) { animation-delay: 80ms; }
-        .grid-delay:nth-child(3) { animation-delay: 120ms; }
-        .grid-delay:nth-child(4) { animation-delay: 160ms; }
-        .grid-delay:nth-child(5) { animation-delay: 200ms; }
-        .grid-delay:nth-child(6) { animation-delay: 240ms; }
-        
-        .portal-card {
-          transition: all 500ms cubic-bezier(0.16, 1, 0.3, 1);
-        }
-        .portal-card:hover {
-          transform: translateY(-8px) scale(1.02);
-          z-index: 10;
-        }
-        .animate-flip-rtl {
-          transition: transform 300ms ease;
-        }
-        html[dir="rtl"] .animate-flip-rtl {
-          transform: rotate(180deg);
-        }
-      `}</style>
 
       {/* TOP NAVIGATION HEADER WITH BREADCRUMBS */}
       {['yearSelect', 'semesterSelect', 'moduleSelect', 'studyModeSelect'].includes(screen) && (

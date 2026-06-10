@@ -1,5 +1,6 @@
 import { useEffect, useCallback, useRef } from 'react';
 import { useAuth } from '@clerk/clerk-react';
+import { toast } from 'sonner';
 
 const STORAGE_KEYS = [
   'endocrine_essay_quiz_history',
@@ -45,6 +46,7 @@ export function useCloudSync() {
       });
     } catch (err) {
       console.error("Cloud push failed:", err);
+      toast.error("Failed to backup progress to the cloud.");
     } finally {
       isSyncing.current = false;
     }
@@ -82,10 +84,12 @@ export function useCloudSync() {
           if (hasChanges) {
             // Dispatch a generic storage event to update React components
             window.dispatchEvent(new Event('storage'));
+            toast.success("Synced progress from your other devices!");
           }
         }
       } catch (err) {
         console.error("Cloud pull failed:", err);
+        toast.error("Failed to sync progress from the cloud.");
       }
     };
 
