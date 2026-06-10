@@ -589,7 +589,7 @@ function MainApp() {
               <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-physiology/10 text-physiology-dark rounded-full text-xs font-semibold tracking-wide uppercase">
                 Academic Portal <Sparkles size={12} className="text-physiology" />
               </div>
-              <h2 className="font-archivo text-4xl lg:text-6xl font-black tracking-tighter leading-tight bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300">
+              <h2 className="font-archivo text-4xl lg:text-6xl font-black tracking-tight leading-tight bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300">
                 {t('selectYear')}
               </h2>
               <p className="text-gray-500 dark:text-gray-400 font-medium">
@@ -606,7 +606,7 @@ function MainApp() {
                     key={year}
                     onClick={() => active && handleSelectYear(year)}
                     disabled={!active}
-                    className={`portal-card text-start glass-panel p-6 flex flex-col justify-between h-52 animate-pop-up grid-delay relative overflow-hidden group ${
+                    className={`portal-card text-start glass-panel p-5 flex flex-col justify-between h-36 animate-pop-up grid-delay relative overflow-hidden group ${
                       active
                         ? 'hover:border-physiology/40 cursor-pointer glow-border'
                         : 'opacity-60 saturate-50 cursor-not-allowed pointer-events-none shadow-none'
@@ -627,7 +627,7 @@ function MainApp() {
                       }`}>
                         {t('year' + year)}
                       </div>
-                      <p className="text-[11px] text-gray-400 dark:text-gray-500 font-extrabold uppercase tracking-widest mt-5">
+                      <p className="text-[11px] text-gray-400 dark:text-gray-500 font-extrabold uppercase tracking-widest mt-2">
                         {isClerkship ? t('clerkship') : t('preClerkship')}
                       </p>
                     </div>
@@ -714,7 +714,7 @@ function MainApp() {
                     key={sem}
                     onClick={() => active && handleSelectSemester(sem)}
                     disabled={!active}
-                    className={`portal-card text-start glass-panel p-8 flex flex-col justify-between h-52 animate-pop-up group relative overflow-hidden ${
+                    className={`portal-card text-start glass-panel p-6 flex flex-col justify-between h-36 animate-pop-up group relative overflow-hidden ${
                       active
                         ? 'hover:border-physiology/40 cursor-pointer glow-border'
                         : 'opacity-60 saturate-50 cursor-not-allowed pointer-events-none shadow-none'
