@@ -390,7 +390,7 @@ function MainApp() {
                 
                 {/* History Button */}
                 <button
-                  onClick={() => transitionTo(() => setScreen('history'))}
+                  onClick={() => navigateTo('history')}
                   className="portal-card text-left bg-white dark:bg-gray-900 rounded-3xl p-6 flex items-center gap-5 border border-gray-100 dark:border-gray-800 hover:border-physiology/30 hover:shadow-md transition-all group"
                 >
                   <div className="w-12 h-12 rounded-xl bg-physiology/10 flex items-center justify-center text-physiology group-hover:scale-110 transition-transform">
