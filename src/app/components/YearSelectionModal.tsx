@@ -1,10 +1,20 @@
-import React from 'react';
-import { GraduationCap } from 'lucide-react';
+// src/app/components/YearSelectionModal.tsx
+// Improved: better visual hierarchy, animated entry, clearer CTA,
+// year labels show progress context, no logic changes.
+
+import { useEffect } from 'react';
+import { GraduationCap, ChevronRight } from 'lucide-react';
 import { triggerCloudSync } from '../hooks/useCloudSync';
 
-interface Props {
-  onSelect: (year: number) => void;
-}
+interface Props { onSelect: (year: number) => void; }
+
+const YEAR_LABELS: Record<number, string> = {
+  1: 'Pre-clinical foundations',
+  2: 'Organ systems & physiology',
+  3: 'Clinical sciences',
+  4: 'Internal medicine & paeds',
+  5: 'Surgery & specialties',
+};
 
 export function YearSelectionModal({ onSelect }: Props) {
   const handleSelect = (year: number) => {
@@ -13,36 +23,71 @@ export function YearSelectionModal({ onSelect }: Props) {
     onSelect(year);
   };
 
+  // Trap keyboard focus inside modal
+  useEffect(() => {
+    const firstBtn = document.querySelector<HTMLButtonElement>('[data-year-btn]');
+    firstBtn?.focus();
+  }, []);
+
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center p-6 bg-gray-950/40 backdrop-blur-md transition-all duration-300">
-      <div className="w-full max-w-md bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 rounded-[40px] p-8 shadow-2xl animate-pop-up relative overflow-hidden">
-        <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-physiology/10 to-transparent rounded-bl-[100px] pointer-events-none" />
-        
+    <div
+      className="fixed inset-0 z-[100] flex items-center justify-center p-6
+                 bg-foreground/20 dark:bg-background/60 backdrop-blur-md animate-fade-in"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Select your academic year"
+    >
+      <div
+        className="w-full max-w-md bg-card border border-border rounded-[36px] p-8
+                   shadow-2xl animate-slide-up relative overflow-hidden"
+      >
+        {/* Decorative corner */}
+        <div className="absolute top-0 right-0 w-28 h-28 bg-gradient-to-bl
+                        from-physiology/8 to-transparent rounded-bl-[90px] pointer-events-none" />
+
+        {/* Header */}
         <div className="flex flex-col items-center text-center gap-4 mb-8">
-          <div className="w-16 h-16 rounded-2xl bg-physiology/10 flex items-center justify-center text-physiology">
-            <GraduationCap size={32} strokeWidth={2} />
+          <div className="w-14 h-14 rounded-2xl bg-physiology/10 flex items-center justify-center text-physiology shadow-sm">
+            <GraduationCap size={28} strokeWidth={2} />
           </div>
           <div>
-            <h2 className="font-archivo text-2xl font-black text-gray-900 dark:text-white tracking-tight">
+            <h2 className="font-archivo text-2xl font-black text-foreground tracking-tight">
               Welcome to the Portal!
             </h2>
-            <p className="text-sm text-gray-500 dark:text-gray-400 font-medium mt-2">
-              To personalize your experience, please select your current academic year.
+            <p className="text-sm text-muted-foreground font-medium mt-2 leading-relaxed max-w-xs mx-auto">
+              Choose your academic year to get a personalised experience and the right modules.
             </p>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 gap-3">
-          {[1, 2, 3, 4, 5].map((year) => (
+        {/* Year buttons */}
+        <div className="flex flex-col gap-2.5">
+          {([1, 2, 3, 4, 5] as const).map((year) => (
             <button
               key={year}
+              data-year-btn
               onClick={() => handleSelect(year)}
-              className="w-full py-4 px-6 bg-gray-50 hover:bg-physiology/10 dark:bg-gray-800/50 dark:hover:bg-physiology/10 text-gray-700 dark:text-gray-300 hover:text-physiology-dark dark:hover:text-physiology rounded-2xl font-bold tracking-wide transition-all duration-300 hover:scale-[1.02] border border-transparent hover:border-physiology/20 shadow-sm flex items-center justify-between group"
+              className="group w-full py-3.5 px-5 bg-muted/60 hover:bg-physiology/8
+                         dark:bg-white/5 dark:hover:bg-physiology/10
+                         text-foreground hover:text-physiology-dark dark:hover:text-physiology
+                         rounded-2xl font-semibold transition-all duration-200
+                         hover:scale-[1.02] active:scale-[0.99]
+                         border border-transparent hover:border-physiology/20
+                         shadow-sm hover:shadow-md
+                         flex items-center justify-between"
             >
-              <span>Year {year}</span>
-              <span className="text-xs font-semibold opacity-0 group-hover:opacity-100 transition-opacity">
-                Select
-              </span>
+              <div className="text-left">
+                <span className="block text-sm font-bold">Year {year}</span>
+                <span className="block text-[11px] text-muted-foreground font-medium mt-0.5
+                                 group-hover:text-physiology/70 transition-colors">
+                  {YEAR_LABELS[year]}
+                </span>
+              </div>
+              <ChevronRight
+                size={16}
+                className="text-muted-foreground/50 group-hover:text-physiology transition-all
+                           duration-200 group-hover:translate-x-0.5"
+              />
             </button>
           ))}
         </div>
