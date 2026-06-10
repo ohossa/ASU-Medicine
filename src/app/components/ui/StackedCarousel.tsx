@@ -120,11 +120,14 @@ export function StackedCarousel({ items, onSelect, activeIndex, setActiveIndex }
                 }
               }}
             >
-              <div className={`w-full h-full rounded-[32px] overflow-hidden transition-shadow duration-300 ${
-                isActive 
-                  ? (item.disabled ? 'shadow-lg border border-gray-200 dark:border-gray-800' : 'shadow-2xl shadow-physiology/20 border border-physiology/30 dark:border-physiology/20') 
-                  : 'shadow-md border border-transparent'
-              }`}>
+              <div 
+                className={`w-full h-full rounded-[32px] overflow-hidden transition-shadow duration-300 ${
+                  isActive 
+                    ? (item.disabled ? 'shadow-lg border border-gray-200 dark:border-gray-800' : 'shadow-2xl shadow-physiology/20 border border-physiology/30 dark:border-physiology/20') 
+                    : 'shadow-md border border-transparent'
+                }`}
+                style={{ WebkitMaskImage: '-webkit-radial-gradient(white, black)' }}
+              >
                 {item.content}
               </div>
               

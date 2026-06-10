@@ -411,8 +411,8 @@ function MainApp() {
       {/* Dynamic Floating Background Blobs & Interactive Dots */}
       <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
         <InteractiveBackground />
-        <div className="absolute top-[10%] left-[5%] h-[35vw] w-[35vw] rounded-full bg-physiology/6 dark:bg-physiology/4 blur-[130px] blob-float-1" />
-        <div className="absolute bottom-[10%] right-[5%] h-[40vw] w-[40vw] rounded-full bg-anatomy/6 dark:bg-anatomy/4 blur-[160px] blob-float-2" />
+        <div className="absolute top-[10%] left-[5%] h-[35vw] w-[35vw] rounded-full bg-physiology/30 dark:bg-physiology/20 blur-[130px] mix-blend-multiply dark:mix-blend-screen blob-float-1" />
+        <div className="absolute bottom-[10%] right-[5%] h-[40vw] w-[40vw] rounded-full bg-anatomy/30 dark:bg-anatomy/20 blur-[160px] mix-blend-multiply dark:mix-blend-screen blob-float-2" />
       </div>
 
       <style>{`
@@ -627,7 +627,7 @@ function MainApp() {
                     id: year,
                     disabled: false, // Always allow clicking into the year
                     content: (
-                      <div className="w-full h-full glass-panel rounded-[32px] flex flex-col justify-between relative overflow-hidden group bg-white/80 dark:bg-black/80 backdrop-blur-3xl p-8">
+                      <div className="w-full h-full rounded-[32px] flex flex-col justify-between relative overflow-hidden group bg-white/95 dark:bg-gray-900/95 shadow-2xl p-8">
                         <div className="absolute -right-20 -top-20 w-64 h-64 rounded-full bg-physiology/5 group-hover:bg-physiology/10 transition-colors duration-700 blur-2xl pointer-events-none" />
 
                         <div className="flex justify-between items-start w-full relative z-10 gap-2">
@@ -771,7 +771,7 @@ function MainApp() {
                     id: sem,
                     disabled: false, // Always allow clicking into the semester
                     content: (
-                      <div className="w-full h-full glass-panel rounded-[32px] flex flex-col justify-between relative overflow-hidden group bg-white/80 dark:bg-black/80 backdrop-blur-3xl p-6 sm:p-8">
+                      <div className="w-full h-full rounded-[32px] flex flex-col justify-between relative overflow-hidden group bg-white/95 dark:bg-gray-900/95 shadow-2xl p-6 sm:p-8">
                         <div className="absolute -right-12 -top-12 w-40 h-40 rounded-full bg-physiology/5 group-hover:bg-physiology/10 transition-colors duration-300 blur-2xl pointer-events-none" />
 
                         <div className="relative z-10">
