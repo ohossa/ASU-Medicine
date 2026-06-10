@@ -15,7 +15,8 @@ export type Screen =
   | 'chapters'
   | 'subjects'
   | 'quiz'
-  | 'results';
+  | 'results'
+  | 'history';
 
 export interface SubQuestion {
   id: string;

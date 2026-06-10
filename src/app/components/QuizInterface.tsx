@@ -44,7 +44,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish }:
   const [essayDraft, setEssayDraft] = useState('');
   const [showEssayAnswer, setShowEssayAnswer] = useState(false);
   const [flagged, setFlagged] = useState<Set<number>>(new Set());
-  const [elapsed, setElapsed] = useState(0);
+  const elapsedRef = useRef(0);
   const [showKeyboardHelper, setShowKeyboardHelper] = useState(false);
 
   // Spacial state for case studies sub-questions
@@ -341,7 +341,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish }:
   };
 
   const handleFinish = () => {
-    onFinish(answers, elapsed, flagged);
+    onFinish(answers, elapsedRef.current, flagged);
   };
 
   // Live Stats calculations
@@ -372,7 +372,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish }:
   const progressPercent = Math.round(((currentIdx + 1) / questions.length) * 100);
 
   const handleTick = useCallback((seconds: number) => {
-    setElapsed(seconds);
+    elapsedRef.current = seconds;
   }, []);
 
   return (
@@ -1304,11 +1304,13 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish }:
   );
 }
 
+import React from 'react';
+
 interface TimerProps {
   onTick: (seconds: number) => void;
 }
 
-function QuizTimer({ onTick }: TimerProps) {
+const QuizTimer = React.memo(function QuizTimer({ onTick }: TimerProps) {
   const [seconds, setSeconds] = useState(0);
 
   useEffect(() => {
@@ -1328,4 +1330,4 @@ function QuizTimer({ onTick }: TimerProps) {
       <span className="text-sm font-semibold text-gray-600 dark:text-gray-400 tabular-nums">{formatTime(seconds)}</span>
     </div>
   );
-}
+});

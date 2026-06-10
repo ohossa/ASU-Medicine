@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense, lazy } from 'react';
 import {
   GraduationCap,
   BookOpen,
@@ -20,10 +20,11 @@ import {
   ExternalLink
 } from 'lucide-react';
 import type { ChapterData, SubjectData, Question, Screen, SubjectColor } from './types';
-import { ChapterSelect } from './components/ChapterSelect';
+const ChapterSelect = lazy(() => import('./components/ChapterSelect').then(m => ({ default: m.ChapterSelect })));
 import { SubjectSelect } from './components/SubjectSelect';
-import { QuizInterface } from './components/QuizInterface';
-import { ResultsDashboard } from './components/ResultsDashboard';
+const QuizInterface = lazy(() => import('./components/QuizInterface').then(m => ({ default: m.QuizInterface })));
+const ResultsDashboard = lazy(() => import('./components/ResultsDashboard').then(m => ({ default: m.ResultsDashboard })));
+const HistoryScreen = lazy(() => import('./components/HistoryScreen').then(m => ({ default: m.HistoryScreen })));
 import { SyllabusTracker } from './components/SyllabusTracker';
 import { ThemeProvider, useTheme } from './context/ThemeContext';
 import { ThemeToggle } from './components/ThemeToggle';
@@ -34,7 +35,7 @@ import { StackedCarousel } from './components/ui/StackedCarousel';
 import { saveQuizResult, getQuizHistory } from './utils/storage';
 import type { QuizResult } from './utils/storage';
 import { SignedIn, SignedOut, UserButton, useUser } from '@clerk/clerk-react';
-import { LoginScreen } from './components/LoginScreen';
+const LoginScreen = lazy(() => import('./components/LoginScreen').then(m => ({ default: m.LoginScreen })));
 import { useCloudSync } from './hooks/useCloudSync';
 import { YearSelectionModal } from './components/YearSelectionModal';
 import {
@@ -128,11 +129,41 @@ function MainApp() {
   };
   
   // Navigation states
-  const [screen, setScreen] = useState<Screen>('yearSelect');
-  const [selectedYear, setSelectedYear] = useState<number | null>(null);
-  const [selectedSemester, setSelectedSemester] = useState<number | null>(null);
-  const [selectedModule, setSelectedModule] = useState<ModuleInfo | null>(null);
-  const [studyMode, setStudyMode] = useState<'mcq' | 'essay' | 'mixed' | null>(null);
+  const [screen, setScreen] = useState<Screen>(() => {
+    try {
+      const saved = sessionStorage.getItem('asu_portal_screen');
+      if (saved) {
+        if (saved === 'quiz' || saved === 'results') return 'chapters';
+        return saved as Screen;
+      }
+      return 'yearSelect';
+    } catch { return 'yearSelect'; }
+  });
+  const [selectedYear, setSelectedYear] = useState<number | null>(() => {
+    try { const saved = sessionStorage.getItem('asu_portal_year'); return saved ? Number(saved) : null; } catch { return null; }
+  });
+  const [selectedSemester, setSelectedSemester] = useState<number | null>(() => {
+    try { const saved = sessionStorage.getItem('asu_portal_semester'); return saved ? Number(saved) : null; } catch { return null; }
+  });
+  const [selectedModule, setSelectedModule] = useState<ModuleInfo | null>(() => {
+    try { const saved = sessionStorage.getItem('asu_portal_module'); return saved ? JSON.parse(saved) : null; } catch { return null; }
+  });
+  const [studyMode, setStudyMode] = useState<'mcq' | 'essay' | 'mixed' | null>(() => {
+    try { const saved = sessionStorage.getItem('asu_portal_studyMode'); return saved as any || null; } catch { return null; }
+  });
+
+  // Sync state to sessionStorage
+  useEffect(() => {
+    sessionStorage.setItem('asu_portal_screen', screen);
+    if (selectedYear) sessionStorage.setItem('asu_portal_year', selectedYear.toString());
+    else sessionStorage.removeItem('asu_portal_year');
+    if (selectedSemester) sessionStorage.setItem('asu_portal_semester', selectedSemester.toString());
+    else sessionStorage.removeItem('asu_portal_semester');
+    if (selectedModule) sessionStorage.setItem('asu_portal_module', JSON.stringify(selectedModule));
+    else sessionStorage.removeItem('asu_portal_module');
+    if (studyMode) sessionStorage.setItem('asu_portal_studyMode', studyMode);
+    else sessionStorage.removeItem('asu_portal_studyMode');
+  }, [screen, selectedYear, selectedSemester, selectedModule, studyMode]);
   const [showTracker, setShowTracker] = useState(false);
   
   // Quiz states
@@ -746,46 +777,60 @@ function MainApp() {
             
             <div className="h-10"></div>
             
-            {/* Show recent attempts from history if any */}
-            {getQuizHistory().length > 0 && (
-              <div className="max-w-[1400px] mx-auto pt-10 border-t border-gray-100 dark:border-gray-800">
-                <div className="flex items-center justify-between mb-8">
-                  <div className="flex items-center gap-3">
-                    <div className="w-2 h-8 rounded-full bg-gradient-to-b from-physiology to-clinical" />
-                    <h3 className="font-archivo text-2xl font-black tracking-tight">{t('resumeHistory')}</h3>
-                  </div>
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {getQuizHistory().slice(0, 3).map((r) => (
-                    <button
-                      key={r.id}
-                      onClick={() => handleSelectHistory(r)}
-                      className="portal-card text-left glass-panel glow-border rounded-3xl p-6 flex flex-col justify-between h-40 animate-pop-up relative overflow-hidden group"
-                    >
-                      <div className="absolute -right-10 -top-10 w-32 h-32 rounded-full bg-physiology/5 group-hover:bg-physiology/10 transition-colors duration-300" />
-                      
-                      <div className="flex justify-between items-start">
-                        <div className="min-w-[56px] px-2 h-[42px] rounded-xl bg-gradient-to-br from-physiology/10 to-clinical/10 text-physiology-dark flex items-center justify-center font-archivo font-black text-base shadow-sm border border-physiology/10">
-                          {r.pct}%
-                        </div>
-                        <div className="px-3 py-1 rounded-lg bg-gray-50 dark:bg-gray-800 text-gray-500 text-xs font-bold border border-gray-100 dark:border-gray-700">
-                          {r.correct}/{r.total} {t('correct')}
-                        </div>
-                      </div>
-                      
-                      <div className="mt-4">
-                        <div className="font-archivo text-base font-bold text-gray-900 dark:text-white truncate tracking-tight">
-                          {r.chapterTitle}
-                        </div>
-                        <div className="text-xs text-gray-500 dark:text-gray-400 font-semibold mt-1 truncate">
-                          {r.subjectName}
-                        </div>
-                      </div>
-                    </button>
-                  ))}
+            {/* TOOLS SECTION */}
+            <div className="max-w-[1400px] mx-auto pt-10 border-t border-gray-100 dark:border-gray-800">
+              <div className="flex items-center justify-between mb-8">
+                <div className="flex items-center gap-3">
+                  <div className="w-2 h-8 rounded-full bg-gradient-to-b from-clinical to-biochem" />
+                  <h3 className="font-archivo text-2xl font-black tracking-tight">Tools</h3>
                 </div>
               </div>
-            )}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                {/* History Button */}
+                <button
+                  onClick={() => transitionTo(() => setScreen('history'))}
+                  className="portal-card text-left bg-white dark:bg-gray-900 rounded-3xl p-6 flex items-center gap-5 border border-gray-100 dark:border-gray-800 hover:border-physiology/30 hover:shadow-md transition-all group"
+                >
+                  <div className="w-12 h-12 rounded-xl bg-physiology/10 flex items-center justify-center text-physiology group-hover:scale-110 transition-transform">
+                    <Activity size={24} />
+                  </div>
+                  <div>
+                    <h4 className="font-archivo font-bold text-gray-900 dark:text-white">Full History</h4>
+                    <p className="text-xs text-gray-500 font-medium mt-1">View all your past quiz sessions and results</p>
+                  </div>
+                </button>
+
+                {/* Marks Calculator */}
+                <div className="portal-card text-left bg-gray-50/50 dark:bg-gray-900/50 rounded-3xl p-6 flex items-center gap-5 border border-gray-100 dark:border-gray-800 opacity-80 relative overflow-hidden cursor-not-allowed">
+                  <div className="w-12 h-12 rounded-xl bg-clinical/10 flex items-center justify-center text-clinical">
+                    <Award size={24} />
+                  </div>
+                  <div>
+                    <h4 className="font-archivo font-bold text-gray-900 dark:text-white flex items-center gap-2">
+                      Marks Calculator
+                      <span className="text-[9px] px-2 py-0.5 rounded-full bg-clinical/10 text-clinical uppercase tracking-wider font-bold">Coming Soon</span>
+                    </h4>
+                    <p className="text-xs text-gray-500 font-medium mt-1">Calculate requirements and target scores</p>
+                  </div>
+                </div>
+
+                {/* Anki Integration */}
+                <div className="portal-card text-left bg-gray-50/50 dark:bg-gray-900/50 rounded-3xl p-6 flex items-center gap-5 border border-gray-100 dark:border-gray-800 opacity-80 relative overflow-hidden cursor-not-allowed">
+                  <div className="w-12 h-12 rounded-xl bg-anatomy/10 flex items-center justify-center text-anatomy">
+                    <Layers size={24} />
+                  </div>
+                  <div>
+                    <h4 className="font-archivo font-bold text-gray-900 dark:text-white flex items-center gap-2">
+                      Anki Integration
+                      <span className="text-[9px] px-2 py-0.5 rounded-full bg-anatomy/10 text-anatomy uppercase tracking-wider font-bold">Coming Soon</span>
+                    </h4>
+                    <p className="text-xs text-gray-500 font-medium mt-1">Guides and .apkg downloads for modules</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
             
             <PortalFooter />
           </div>
@@ -1165,14 +1210,16 @@ function MainApp() {
 
         {/* SCREEN 5: CHAPTER SELECT */}
         {screen === 'chapters' && selectedModule && studyMode && (
-          <ChapterSelect
-            chapters={activeChapters}
-            studyModeName={studyModeNameMap[studyMode]}
-            moduleName={selectedModule.name}
-            onSelectChapter={handleSelectChapter}
-            onSelectHistory={handleSelectHistory}
-            onBackToModeSelect={() => navigateTo('studyModeSelect')}
-          />
+          <Suspense fallback={<div>Loading...</div>}>
+            <ChapterSelect
+              chapters={activeChapters}
+              studyModeName={studyModeNameMap[studyMode]}
+              moduleName={selectedModule.name}
+              onSelectChapter={handleSelectChapter}
+              onSelectHistory={handleSelectHistory}
+              onBackToModeSelect={() => navigateTo('studyModeSelect')}
+            />
+          </Suspense>
         )}
 
         {/* SCREEN 6: SUBJECT SELECT */}
@@ -1194,29 +1241,33 @@ function MainApp() {
 
         {/* SCREEN 7: QUIZ INTERFACE */}
         {screen === 'quiz' && quizPayload && (
-          <QuizInterface
-            chapter={quizPayload.chapter}
-            subject={quizPayload.subject}
-            questions={quizPayload.questions}
-            onBack={() => setScreen('subjects')}
-            onFinish={handleFinishQuiz}
-          />
+          <Suspense fallback={<div>Loading...</div>}>
+            <QuizInterface
+              chapter={quizPayload.chapter}
+              subject={quizPayload.subject}
+              questions={quizPayload.questions}
+              onBack={() => setScreen('subjects')}
+              onFinish={handleFinishQuiz}
+            />
+          </Suspense>
         )}
 
         {/* SCREEN 8: RESULTS DASHBOARD */}
         {screen === 'results' && resultPayload && (
-          <ResultsDashboard
-            chapter={resultPayload.chapter}
-            subject={resultPayload.subject}
-            questions={resultPayload.questions}
-            answers={resultPayload.answers}
-            elapsedSeconds={resultPayload.elapsedSeconds}
-            flaggedQuestions={resultPayload.flaggedQuestions}
-            onRetake={handleRetake}
-            onTryAnotherSubject={() => setScreen('subjects')}
-            onBackToChapters={handleBackToChapters}
-            onBackToSubjects={() => setScreen('subjects')}
-          />
+          <Suspense fallback={<div>Loading...</div>}>
+            <ResultsDashboard
+              chapter={resultPayload.chapter}
+              subject={resultPayload.subject}
+              questions={resultPayload.questions}
+              answers={resultPayload.answers}
+              elapsedSeconds={resultPayload.elapsedSeconds}
+              flaggedQuestions={resultPayload.flaggedQuestions}
+              onRetake={handleRetake}
+              onTryAnotherSubject={() => setScreen('subjects')}
+              onBackToChapters={handleBackToChapters}
+              onBackToSubjects={() => setScreen('subjects')}
+            />
+          </Suspense>
         )}
       </main>
 
@@ -1283,7 +1334,9 @@ export default function App() {
         <MainApp />
       </SignedIn>
       <SignedOut>
-        <LoginScreen />
+        <Suspense fallback={<div>Loading...</div>}>
+          <LoginScreen />
+        </Suspense>
       </SignedOut>
     </ThemeProvider>
   );
