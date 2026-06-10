@@ -18,7 +18,7 @@ import {
   Clock,
   Award,
   ExternalLink,
-  HelpCircle
+  Flag
 } from 'lucide-react';
 import type { ChapterData, SubjectData, Question, Screen, SubjectColor } from './types';
 const ChapterSelect = lazy(() => import('./components/ChapterSelect').then(m => ({ default: m.ChapterSelect })));
@@ -653,7 +653,7 @@ function MainApp() {
 
                   <UserButton.Action
                     label="Flagged Questions"
-                    labelIcon={<HelpCircle size={16} className="text-clinical" />}
+                    labelIcon={<Flag size={16} className="text-clinical" />}
                     onClick={() => {
                       transitionTo(() => setScreen('flaggedQuestions'));
                     }}
@@ -715,7 +715,7 @@ function MainApp() {
       )}
 
       {/* PORTAL CONTAINER */}
-      <main className="max-w-[1600px] mx-auto px-6 py-12 relative z-10">
+      <main className={['yearSelect', 'semesterSelect', 'moduleSelect', 'studyModeSelect'].includes(screen) ? "max-w-[1600px] mx-auto px-6 py-12 relative z-10" : "w-full relative z-10"}>
         <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden transform-gpu">
           <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-physiology/10 to-transparent dark:from-physiology/5rounded-full mix-blend-multiply dark:mix-blend-screen animate-pulse duration-10000 will-change-transform transform-gpu"></div>
           <div className="absolute bottom-[-20%] right-[-10%] w-[50%] h-[50%] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-clinical/10 to-transparent dark:from-clinical/5rounded-full mix-blend-multiply dark:mix-blend-screen animate-pulse duration-10000 will-change-transform transform-gpu" style={{ animationDelay: '2s' }}></div>
@@ -1440,16 +1440,23 @@ function MainApp() {
 
       {/* SUPPORT & BUG REPORT MODAL */}
       {showSupportModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-6 bg-gray-950/40 backdrop-blur-md transition-all duration-300">
-          <div className="w-full max-w-md bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 rounded-[30px] p-7 shadow-2xl animate-pop-up relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-bl from-clinical/10 to-transparent rounded-bl-[50px]" />
+        <div 
+          className="fixed inset-0 z-50 flex items-center justify-center p-6 bg-gray-950/40 backdrop-blur-md transition-all duration-300"
+          onClick={(e) => {
+            if (e.target === e.currentTarget) {
+              setShowSupportModal(false);
+            }
+          }}
+        >
+          <div className="w-full max-w-md bg-white dark:bg-gray-900 border border-gray-100/80 dark:border-gray-800/80 rounded-[30px] p-8 shadow-2xl animate-pop-up relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-clinical/10 to-transparent rounded-bl-[60px]" />
             
-            <div className="flex items-center gap-3 mb-5 text-clinical">
-              <div className="w-10 h-10 rounded-xl bg-clinical/10 flex items-center justify-center">
+            <div className="flex items-center gap-3 mb-4 text-clinical">
+              <div className="w-10 h-10 rounded-xl bg-clinical/10 flex items-center justify-center shrink-0">
                 <Mail size={20} />
               </div>
               <h3 className="font-archivo text-xl font-bold tracking-tight">
-                Support & Feedback
+                Report Bug / Support
               </h3>
             </div>
 
@@ -1461,17 +1468,14 @@ function MainApp() {
               {/* Email Button */}
               <a
                 href="mailto:omarhmaged@gmail.com?subject=ASU%20Medical%20Portal%20Feedback%20%26%20Bug%20Report"
-                className="w-full p-4 rounded-2xl bg-gray-50 dark:bg-gray-800/40 hover:bg-clinical/10 dark:hover:bg-clinical/10 border border-gray-100 dark:border-gray-800 flex items-center gap-4 transition-all text-left group"
+                className="w-full px-5 py-4 rounded-2xl bg-gray-50/60 dark:bg-gray-800/30 hover:bg-clinical/10 dark:hover:bg-clinical/15 border border-gray-100 dark:border-gray-800 flex items-center gap-4 transition-all group duration-200"
               >
-                <div className="w-10 h-10 rounded-xl bg-clinical/10 flex items-center justify-center text-clinical group-hover:scale-105 transition-transform">
+                <div className="w-10 h-10 rounded-full bg-clinical/10 dark:bg-clinical/20 flex items-center justify-center text-clinical group-hover:scale-105 transition-transform duration-200 shrink-0">
                   <Mail size={18} />
                 </div>
-                <div className="flex-1">
-                  <div className="text-[10px] font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest">Email Support</div>
-                  <div className="text-sm font-bold text-gray-800 dark:text-gray-200 group-hover:text-clinical transition-colors">
-                    omarhmaged@gmail.com
-                  </div>
-                </div>
+                <span className="text-sm font-semibold text-gray-700 dark:text-gray-200 group-hover:text-clinical transition-colors duration-200 tracking-wide font-manrope">
+                  omarhmaged@gmail.com
+                </span>
               </a>
 
               {/* WhatsApp Button */}
@@ -1479,31 +1483,28 @@ function MainApp() {
                 href="https://wa.me/201040479155"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full p-4 rounded-2xl bg-gray-50 dark:bg-gray-800/40 hover:bg-physiology/10 dark:hover:bg-physiology/10 border border-gray-100 dark:border-gray-800 flex items-center gap-4 transition-all text-left group"
+                className="w-full px-5 py-4 rounded-2xl bg-gray-50/60 dark:bg-gray-800/30 hover:bg-physiology/10 dark:hover:bg-physiology/15 border border-gray-100 dark:border-gray-800 flex items-center gap-4 transition-all group duration-200"
               >
-                <div className="w-10 h-10 rounded-xl bg-physiology/10 flex items-center justify-center text-physiology group-hover:scale-105 transition-transform">
+                <div className="w-10 h-10 rounded-full bg-physiology/10 dark:bg-physiology/20 flex items-center justify-center text-physiology group-hover:scale-105 transition-transform duration-200 shrink-0">
                   <svg className="w-5.5 h-5.5 text-physiology fill-current" viewBox="0 0 24 24">
                     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.455 5.703 1.458h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
-                    </svg>
-                  </div>
-                  <div className="flex-1">
-                    <div className="text-[10px] font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest">WhatsApp Support</div>
-                    <div className="text-sm font-bold text-gray-800 dark:text-gray-200 group-hover:text-physiology transition-colors">
-                      (+20) 1040479155
-                    </div>
-                  </div>
-                </a>
-              </div>
-  
-              <button
-                onClick={() => setShowSupportModal(false)}
-                className="w-full py-3 mt-6 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-xs font-bold tracking-wide transition-all duration-200"
-              >
-                Close
-              </button>
+                  </svg>
+                </div>
+                <span className="text-sm font-semibold text-gray-700 dark:text-gray-200 group-hover:text-physiology transition-colors duration-200 tracking-wide font-manrope">
+                  (+20) 1040479155
+                </span>
+              </a>
             </div>
+
+            <button
+              onClick={() => setShowSupportModal(false)}
+              className="w-full py-3.5 mt-6 bg-gray-100 dark:bg-gray-800 hover:bg-gray-250 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-xs font-bold tracking-wide transition-all duration-200"
+            >
+              Close
+            </button>
           </div>
-        )}
+        </div>
+      )}
     </div>
   );
 }

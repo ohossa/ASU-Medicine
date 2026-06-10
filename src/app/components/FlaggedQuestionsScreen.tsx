@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowLeft, ChevronRight, Trash2, HelpCircle, Check, X, Eye, EyeOff, AlertCircle } from 'lucide-react';
+import { ArrowLeft, ChevronRight, Trash2, Flag, Check, X, Eye, EyeOff, AlertCircle } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { getFlaggedQuestions, removeFlaggedQuestion } from '../utils/storage';
 import { findQuestionById } from '../data';
@@ -115,7 +115,7 @@ export function FlaggedQuestionsScreen({ onBack, onPracticeQuiz }: FlaggedQuesti
       <div className="max-w-[1000px] mx-auto py-10 px-6 animate-fade-in">
         <div className="mb-10 text-center max-w-2xl mx-auto">
           <div className="inline-flex items-center justify-center w-16 h-16 rounded-2xl bg-clinical/10 text-clinical mb-5 border border-clinical/20 shadow-sm">
-            <HelpCircle size={32} />
+            <Flag size={32} />
           </div>
           <h2 className="font-archivo text-4xl lg:text-5xl font-black tracking-tight text-gray-900 dark:text-white mb-4">
             {language === 'en' ? 'Flagged Questions' : 'الأسئلة المميزة'}
