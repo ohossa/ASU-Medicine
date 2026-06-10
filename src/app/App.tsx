@@ -1274,6 +1274,16 @@ function MainApp() {
             />
           </Suspense>
         )}
+
+        {/* SCREEN 9: HISTORY */}
+        {screen === 'history' && (
+          <Suspense fallback={<div>Loading...</div>}>
+            <HistoryScreen
+              onBack={() => navigateTo('yearSelect')}
+              onSelectHistory={handleSelectHistory}
+            />
+          </Suspense>
+        )}
       </main>
 
       {showTracker && selectedModule && (
