@@ -627,7 +627,7 @@ function MainApp() {
                     id: year,
                     disabled: false, // Always allow clicking into the year
                     content: (
-                      <div className="w-full h-full glass-panel flex flex-col justify-between relative overflow-hidden group bg-white/80 dark:bg-black/80 backdrop-blur-3xl p-8">
+                      <div className="w-full h-full glass-panel rounded-[32px] flex flex-col justify-between relative overflow-hidden group bg-white/80 dark:bg-black/80 backdrop-blur-3xl p-8">
                         <div className="absolute -right-20 -top-20 w-64 h-64 rounded-full bg-physiology/5 group-hover:bg-physiology/10 transition-colors duration-700 blur-2xl pointer-events-none" />
 
                         <div className="flex justify-between items-start w-full relative z-10 gap-2">
@@ -771,7 +771,7 @@ function MainApp() {
                     id: sem,
                     disabled: false, // Always allow clicking into the semester
                     content: (
-                      <div className="w-full h-full glass-panel flex flex-col justify-between relative overflow-hidden group bg-white/80 dark:bg-black/80 backdrop-blur-3xl p-6 sm:p-8">
+                      <div className="w-full h-full glass-panel rounded-[32px] flex flex-col justify-between relative overflow-hidden group bg-white/80 dark:bg-black/80 backdrop-blur-3xl p-6 sm:p-8">
                         <div className="absolute -right-12 -top-12 w-40 h-40 rounded-full bg-physiology/5 group-hover:bg-physiology/10 transition-colors duration-300 blur-2xl pointer-events-none" />
 
                         <div className="relative z-10">

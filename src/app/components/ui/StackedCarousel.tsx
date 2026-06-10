@@ -85,15 +85,14 @@ export function StackedCarousel({ items, onSelect, activeIndex, setActiveIndex }
           const rotateY = sign * -20; // Tilt towards center
           const scale = 1 - (absOffset * 0.1);
           const opacity = 1 - (absOffset * 0.3);
-          const blur = absOffset > 0 ? `blur(${absOffset * 2}px)` : 'blur(0px)';
 
           return (
             <motion.div
               key={item.id}
-              className={`absolute inset-0 cursor-pointer will-change-transform ${
+              className={`absolute inset-0 cursor-pointer will-change-transform transform-gpu ${
                 item.disabled && isActive ? 'cursor-not-allowed' : ''
               }`}
-              style={{ touchAction: 'pan-y' }}
+              style={{ touchAction: 'pan-y', WebkitBackfaceVisibility: 'hidden' }}
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{
                 x,
@@ -101,7 +100,6 @@ export function StackedCarousel({ items, onSelect, activeIndex, setActiveIndex }
                 rotateY,
                 scale,
                 opacity,
-                filter: blur,
                 zIndex: items.length - absOffset,
               }}
               transition={{
