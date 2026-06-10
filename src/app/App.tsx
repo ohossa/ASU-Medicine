@@ -33,6 +33,8 @@ import { InteractiveBackground } from './components/ui/InteractiveBackground';
 import { StackedCarousel } from './components/ui/StackedCarousel';
 import { saveQuizResult, getQuizHistory } from './utils/storage';
 import type { QuizResult } from './utils/storage';
+import { SignedIn, SignedOut, UserButton } from '@clerk/clerk-react';
+import { LoginScreen } from './components/LoginScreen';
 import {
   getChaptersForModuleAndMode,
   getModuleQuestionCounts,
@@ -540,6 +542,13 @@ function MainApp() {
             <div className="flex items-center gap-3 sm:gap-4 justify-end">
               <LanguageToggle />
               <ThemeToggle />
+              <UserButton 
+                appearance={{
+                  elements: {
+                    userButtonAvatarBox: "w-9 h-9 border-2 border-physiology shadow-sm",
+                  }
+                }}
+              />
             </div>
           </div>
         </header>
@@ -1219,7 +1228,12 @@ function MainApp() {
 export default function App() {
   return (
     <ThemeProvider>
-      <MainApp />
+      <SignedIn>
+        <MainApp />
+      </SignedIn>
+      <SignedOut>
+        <LoginScreen />
+      </SignedOut>
     </ThemeProvider>
   );
 }
