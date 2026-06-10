@@ -30,6 +30,15 @@ interface Props {
 
 export function QuizInterface({ chapter, subject, questions, onBack, onFinish }: Props) {
   const [currentIdx, setCurrentIdx] = useState(0);
+
+  const handleNavigate = useCallback((action: React.SetStateAction<number>) => {
+    if (document.startViewTransition) {
+      document.startViewTransition(() => setCurrentIdx(action));
+    } else {
+      setCurrentIdx(action);
+    }
+  }, []);
+
   const { t, language } = useLanguage();
   const [answers, setAnswers] = useState<Record<number, any>>({});
   const [essayDraft, setEssayDraft] = useState('');
@@ -217,14 +226,14 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish }:
               }));
               setShowEssayAnswer(false);
               if (currentIdx < questions.length - 1) {
-                setCurrentIdx((i) => i + 1);
+                handleNavigate((i) => i + 1);
               } else {
                 handleFinish();
               }
             }
           } else {
             if (currentIdx < questions.length - 1) {
-              setCurrentIdx((i) => i + 1);
+              handleNavigate((i) => i + 1);
             } else {
               handleFinish();
             }
@@ -260,7 +269,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish }:
                 
                 if (remainingUnanswered.length === 0) {
                   if (currentIdx < questions.length - 1) {
-                    setCurrentIdx((i) => i + 1);
+                    handleNavigate((i) => i + 1);
                   } else {
                     handleFinish();
                   }
@@ -269,14 +278,14 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish }:
             }
           } else {
             if (currentIdx < questions.length - 1) {
-              setCurrentIdx((i) => i + 1);
+              handleNavigate((i) => i + 1);
             } else {
               handleFinish();
             }
           }
         } else {
           if (currentIdx < questions.length - 1) {
-            setCurrentIdx((i) => i + 1);
+            handleNavigate((i) => i + 1);
           } else {
             handleFinish();
           }
@@ -289,13 +298,30 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish }:
       }
 
       const k = e.key.toUpperCase();
+      const current = questions[currentIdx];
+      const isAnswered = answers[currentIdx] !== undefined;
+
+      if (!isAnswered && (current.type === 'mcq' || current.type === 'truefalse') && current.options) {
+        const optionKeys = ['A', 'B', 'C', 'D', 'E'];
+        const numKeys = ['1', '2', '3', '4', '5'];
+        
+        let optIdx = -1;
+        if (optionKeys.includes(k)) optIdx = optionKeys.indexOf(k);
+        else if (numKeys.includes(k)) optIdx = numKeys.indexOf(k);
+
+        if (optIdx !== -1 && optIdx < current.options.length) {
+          setAnswers((prev) => ({ ...prev, [currentIdx]: optIdx }));
+          return;
+        }
+      }
+
       if (k === 'F') {
         toggleFlag(currentIdx);
       } else if (e.key === 'ArrowLeft') {
-        setCurrentIdx((i) => Math.max(0, i - 1));
+        handleNavigate((i) => Math.max(0, i - 1));
       } else if (e.key === 'ArrowRight') {
         if (currentIdx < questions.length - 1) {
-          setCurrentIdx((i) => i + 1);
+          handleNavigate((i) => i + 1);
         }
       } else if (e.key === 'Escape') {
         setShowKeyboardHelper(false);
@@ -405,10 +431,11 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish }:
               <QuizTimer onTick={handleTick} />
               <button
                 onClick={() => setShowKeyboardHelper(true)}
-                className="hidden md:flex items-center justify-center w-9 h-9 rounded-2xl border border-gray-100 dark:border-gray-800 text-gray-400 hover:text-gray-900 dark:hover:text-white transition-colors"
+                className="hidden md:flex items-center gap-2 px-4 py-2 rounded-2xl border border-physiology/20 bg-physiology/5 text-physiology-dark hover:bg-physiology/10 transition-colors shadow-sm"
                 title="Keyboard Shortcuts"
               >
                 <Keyboard size={16} />
+                <span className="text-xs font-bold uppercase tracking-wider">Shortcuts</span>
               </button>
               <LanguageToggle />
               <ThemeToggle />
@@ -430,11 +457,11 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish }:
         <div className="flex flex-col xl:flex-row gap-8 items-start">
           
           {/* Main Card */}
-          <div className={`flex-1 w-full bg-white dark:bg-gray-900 rounded-[32px] border p-6 lg:p-8 transition-all duration-500 ${
+          <div style={{ viewTransitionName: 'quiz-content' }} className={`flex-1 w-full glass-panel rounded-[32px] border p-6 lg:p-8 transition-all duration-500 glow-border ${
             isSpecialQuestion
               ? 'border-pink-300 dark:border-purple-800 shadow-[0_4px_30px_rgba(236,72,153,0.15)]'
               : 'border-gray-100 dark:border-gray-800'
-          }`} style={{ boxShadow: !isSpecialQuestion ? '0 4px 24px rgba(0,0,0,0.03)' : undefined }}>
+          }`}>
             
             {/* Question Header */}
             <div className="flex items-center justify-between mb-6">
@@ -961,7 +988,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish }:
             {/* NAVIGATION DOTS AND BUTTONS */}
             <div className="mt-8 flex items-center justify-between gap-4">
               <button
-                onClick={() => setCurrentIdx((i) => Math.max(0, i - 1))}
+                onClick={() => handleNavigate((i) => Math.max(0, i - 1))}
                 disabled={currentIdx === 0}
                 className="nav-btn inline-flex items-center gap-2.5 px-6 py-3.5 rounded-full bg-white dark:bg-gray-900 border-2 border-gray-100 dark:border-gray-800 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:border-gray-300 dark:hover:border-gray-600 text-sm font-bold disabled:opacity-40 disabled:cursor-not-allowed"
                 style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.04)' }}
@@ -994,7 +1021,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish }:
                       return (
                         <button
                           key={idx}
-                          onClick={() => setCurrentIdx(idx)}
+                          onClick={() => handleNavigate(idx)}
                           className={`rounded-full transition-all duration-250 ${
                             isCurrent
                               ? 'w-3.5 h-3.5 bg-gray-900 dark:bg-white ring-4 ring-gray-900/10 dark:ring-white/10'
@@ -1014,7 +1041,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish }:
 
               {currentIdx < questions.length - 1 ? (
                 <button
-                  onClick={() => setCurrentIdx((i) => i + 1)}
+                  onClick={() => handleNavigate((i) => i + 1)}
                   className="nav-btn inline-flex items-center gap-2.5 px-7 py-3.5 rounded-full bg-gray-900 dark:bg-white hover:bg-gray-800 dark:hover:bg-gray-105 text-white dark:text-gray-900 text-sm font-bold"
                   style={{ boxShadow: '0 4px 16px rgba(0,0,0,0.15)' }}
                 >
@@ -1039,7 +1066,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish }:
             <div className="xl:sticky xl:top-24 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-1 gap-5 text-left">
               
               {/* Score tracker */}
-              <div className="sidebar-card bg-white dark:bg-gray-900 rounded-3xl p-6 border border-gray-100 dark:border-gray-800" style={{ boxShadow: '0 2px 12px rgba(0,0,0,0.04)' }}>
+              <div className="sidebar-card glass-panel rounded-3xl p-6 glow-border">
                 <div className="flex items-center gap-2 mb-4">
                   <Target size={16} className="text-gray-400 dark:text-gray-500" />
                   <span className="text-xs font-bold text-gray-400 dark:text-gray-500 uppercase tracking-wider">{t('sessionProgress')}</span>
@@ -1088,7 +1115,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish }:
               </div>
 
               {/* Question Map */}
-              <div className="sidebar-card bg-white dark:bg-gray-900 rounded-3xl p-6 border border-gray-100 dark:border-gray-800" style={{ boxShadow: '0 2px 12px rgba(0,0,0,0.04)' }}>
+              <div className="sidebar-card glass-panel rounded-3xl p-6 glow-border">
                 <div className="flex items-center gap-2 mb-4">
                   <Grid3X3 size={16} className="text-gray-400 dark:text-gray-500" />
                   <span className="text-xs font-bold text-gray-400 dark:text-gray-500 uppercase tracking-wider">{t('questionMap')}</span>
@@ -1110,7 +1137,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish }:
                     else cls += 'bg-gray-50 dark:bg-gray-800 border-gray-100 dark:border-gray-700 text-gray-400 dark:text-gray-500';
 
                     return (
-                      <button key={idx} className={cls} onClick={() => setCurrentIdx(idx)}>
+                      <button key={idx} className={cls} onClick={() => handleNavigate(idx)}>
                         {idx + 1}
                       </button>
                     );
@@ -1133,10 +1160,10 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish }:
               </div>
 
               {/* Subject Info */}
-              <div className={`sidebar-card bg-gradient-to-br rounded-3xl p-5 border md:col-span-2 xl:col-span-1 transition-all ${
+              <div className={`sidebar-card glass-panel bg-gradient-to-br rounded-3xl p-5 md:col-span-2 xl:col-span-1 transition-all glow-border ${
                 isSpecialQuestion
-                  ? 'from-pink-50/40 to-purple-50/40 dark:from-pink-950/10 dark:to-purple-950/10 border-pink-200 dark:border-purple-800'
-                  : `${s.bgOp5} to-clinical/5 ${s.borderOp10}`
+                  ? 'from-pink-50/40 to-purple-50/40 dark:from-pink-950/10 dark:to-purple-950/10 border border-pink-200 dark:border-purple-800'
+                  : `${s.bgOp5} to-clinical/5 border ${s.borderOp10}`
               }`}>
                 <div className="flex items-center gap-3 mb-3">
                   <div className={`w-10 h-10 rounded-xl ${s.bgOp15} flex items-center justify-center`}>
@@ -1190,6 +1217,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish }:
 
             <div className="space-y-4 text-left">
               {[
+                { keys: ['A', '-', 'E', 'or', '1', '-', '5'], desc: 'Select Option (MCQ / True/False)' },
                 { keys: ['F'], desc: 'Flag / Unflag Question' },
                 { keys: ['←', '→'], desc: 'Navigate to Previous / Next Question' },
                 { keys: ['Enter'], desc: 'Reveal answer / Grade as Correct & Advance' },

@@ -98,14 +98,6 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart }
         
         .subject-card {
           transition: all 400ms cubic-bezier(0.34, 1.56, 0.64, 1);
-          background: rgba(255, 255, 255, 0.8);
-          backdrop-filter: blur(18px);
-          border: 1px solid rgba(255, 255, 255, 0.45);
-        }
-        .dark .subject-card {
-          background: rgba(15, 17, 28, 0.65);
-          backdrop-filter: blur(18px);
-          border: 1px solid rgba(255, 255, 255, 0.05);
         }
         .subject-card:hover {
           transform: translateY(-8px) scale(1.02);
@@ -138,7 +130,7 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart }
       `}</style>
 
       {/* STICKY HEADER */}
-      <header className="bg-white dark:bg-gray-900 border-b border-gray-100 dark:border-gray-800 sticky top-0 z-50">
+      <header className="shrinking-header bg-white/70 dark:bg-gray-900/70 backdrop-blur-xl border-b border-gray-100 dark:border-gray-800/50 sticky top-0 z-50">
         <div className="max-w-6xl mx-auto px-6 lg:px-8">
           <div className="flex items-center justify-between py-4">
             <div className="flex items-center gap-4">
@@ -226,13 +218,11 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart }
             return (
               <div
                 key={subject.id}
-                className={`card-stagger subject-card bg-white dark:bg-gray-900 rounded-[30px] p-6 border-2 border-gray-100 dark:border-gray-800 ${s.hoverBorder} cursor-pointer group relative overflow-hidden ${!hasQuestions ? 'opacity-60' : ''}`}
-                style={{ boxShadow: '0 2px 12px rgba(0,0,0,0.04)' }}
-                onMouseEnter={(e) => hasQuestions && ((e.currentTarget as HTMLElement).style.boxShadow = `0 16px 40px -8px ${s.hoverShadowRgba}`)}
-                onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.boxShadow = '0 2px 12px rgba(0,0,0,0.04)')}
+                className={`card-stagger scroll-reveal subject-card glass-panel glow-border rounded-[30px] p-6 cursor-pointer group relative overflow-hidden ${!hasQuestions ? 'opacity-60' : ''}`}
+                style={{ viewTransitionName: `subject-${subject.id}` }}
                 onClick={() => hasQuestions && onSelectSubject(subject, subject.questions)}
               >
-                <div className={`absolute -top-8 -right-8 w-24 h-24 rounded-full ${s.bgOp5} group-hover:${s.bgOp10} transition-colors duration-500`} />
+                <div className={`absolute -top-8 -right-8 w-24 h-24 rounded-full ${s.bgOp5} group-hover:${s.bgOp10} transition-colors duration-500 pointer-events-none`} />
                 <div className={`absolute -top-4 -right-4 w-12 h-12 rounded-full ${s.bgOp8} glow-ring`} />
 
                 <div className="relative">
@@ -269,8 +259,7 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart }
 
         {/* QUICK START BANNER */}
         <div
-          className="mt-10 bg-white dark:bg-gray-900 rounded-3xl border border-gray-100 dark:border-gray-800 p-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-start"
-          style={{ boxShadow: '0 2px 12px rgba(0,0,0,0.04)' }}
+          className="mt-10 glass-panel scroll-reveal rounded-3xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-start glow-border"
         >
           <div className="flex items-center gap-4">
             <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-gray-900 to-gray-700 dark:from-gray-100 dark:to-gray-300 flex items-center justify-center">

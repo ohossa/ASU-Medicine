@@ -182,13 +182,29 @@ export function ResultsDashboard({
   const pct = total > 0 ? Math.round((correct / total) * 100) : 0;
   const flaggedCount = flaggedQuestions.size;
 
+  const [displayPct, setDisplayPct] = useState(0);
+
   useEffect(() => {
+    let startTime: number;
+    const duration = 1200;
+    const animate = (timestamp: number) => {
+      if (!startTime) startTime = timestamp;
+      const progress = timestamp - startTime;
+      const percent = Math.min(progress / duration, 1);
+      const ease = 1 - Math.pow(1 - percent, 4);
+      setDisplayPct(Math.round(pct * ease));
+      if (progress < duration) requestAnimationFrame(animate);
+    };
+    requestAnimationFrame(animate);
+
     if (pct >= 80) {
-      confetti({
-        particleCount: 150,
-        spread: 80,
-        origin: { y: 0.6 }
-      });
+      setTimeout(() => {
+        confetti({
+          particleCount: 150,
+          spread: 80,
+          origin: { y: 0.6 }
+        });
+      }, 1000);
     }
   }, [pct]);
 
@@ -350,7 +366,7 @@ export function ResultsDashboard({
                 </svg>
                 <div className="absolute inset-0 flex flex-col items-center justify-center">
                   <span className="score-text-animate font-archivo text-6xl lg:text-7xl font-black text-gray-900 dark:text-white tracking-tight leading-none">
-                    {pct}
+                    {displayPct}
                   </span>
                   <span className="score-text-animate text-lg text-gray-400 dark:text-gray-500 font-bold -mt-1">%</span>
                 </div>
@@ -456,7 +472,7 @@ export function ResultsDashboard({
             return (
               <div
                 key={i}
-                className={`card-stagger review-card bg-white dark:bg-gray-900 rounded-[30px] border overflow-hidden transition-all duration-300 ${
+                className={`card-stagger review-card glass-panel glow-border rounded-[30px] border overflow-hidden transition-all duration-300 ${
                   q.id === 2
                     ? 'border-pink-300 dark:border-purple-800'
                     : isCorrect
@@ -464,11 +480,6 @@ export function ResultsDashboard({
                     : 'border-danger/15'
                 }`}
                 style={{
-                  boxShadow: q.id === 2
-                    ? '0 4px 20px rgba(236,72,153,0.1)'
-                    : isCorrect
-                    ? '0 2px 12px rgba(0,0,0,0.04)'
-                    : '0 2px 12px rgba(239,68,68,0.06)',
                   animationDelay: `${500 + staggerIdx * 100}ms`,
                 }}
               >
@@ -806,7 +817,7 @@ export function ResultsDashboard({
         <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-4">
           <button
             onClick={onRetake}
-            className="action-btn flex items-center justify-center gap-3 px-6 py-5 bg-gray-900 dark:bg-white hover:bg-gray-800 dark:hover:bg-gray-100 text-white dark:text-gray-900 rounded-3xl font-bold text-sm"
+            className="action-btn flex items-center justify-center gap-3 px-6 py-5 bg-gray-900 dark:bg-white hover:bg-gray-800 dark:hover:bg-gray-100 text-white dark:text-gray-900 rounded-3xl font-bold text-sm glow-border"
             style={{ boxShadow: '0 4px 20px rgba(0,0,0,0.15)' }}
           >
             <RotateCcw size={18} />
@@ -814,16 +825,14 @@ export function ResultsDashboard({
           </button>
           <button
             onClick={onTryAnotherSubject}
-            className="action-btn flex items-center justify-center gap-3 px-6 py-5 bg-white dark:bg-gray-900 hover:bg-gray-50 dark:hover:bg-gray-800 text-gray-900 dark:text-white rounded-3xl font-bold text-sm border-2 border-gray-100 dark:border-gray-800"
-            style={{ boxShadow: '0 2px 12px rgba(0,0,0,0.04)' }}
+            className="action-btn flex items-center justify-center gap-3 px-6 py-5 glass-panel text-gray-900 dark:text-white rounded-3xl font-bold text-sm glow-border"
           >
             <ArrowRight size={18} />
             {t('tryAnotherSubject')}
           </button>
           <button
             onClick={onBackToChapters}
-            className="action-btn flex items-center justify-center gap-3 px-6 py-5 bg-white dark:bg-gray-900 hover:bg-gray-50 dark:hover:bg-gray-800 text-gray-900 dark:text-white rounded-3xl font-bold text-sm border-2 border-gray-100 dark:border-gray-800"
-            style={{ boxShadow: '0 2px 12px rgba(0,0,0,0.04)' }}
+            className="action-btn flex items-center justify-center gap-3 px-6 py-5 glass-panel text-gray-900 dark:text-white rounded-3xl font-bold text-sm glow-border"
           >
             <LayoutGrid size={18} />
             {t('backToChapters')}

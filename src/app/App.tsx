@@ -24,6 +24,7 @@ import { ChapterSelect } from './components/ChapterSelect';
 import { SubjectSelect } from './components/SubjectSelect';
 import { QuizInterface } from './components/QuizInterface';
 import { ResultsDashboard } from './components/ResultsDashboard';
+import { SyllabusTracker } from './components/SyllabusTracker';
 import { ThemeProvider, useTheme } from './context/ThemeContext';
 import { ThemeToggle } from './components/ThemeToggle';
 import { LanguageProvider, useLanguage } from './context/LanguageContext';
@@ -97,6 +98,7 @@ function MainApp() {
   const [selectedSemester, setSelectedSemester] = useState<number | null>(null);
   const [selectedModule, setSelectedModule] = useState<ModuleInfo | null>(null);
   const [studyMode, setStudyMode] = useState<'mcq' | 'essay' | 'mixed' | null>(null);
+  const [showTracker, setShowTracker] = useState(false);
   
   // Quiz states
   const [selectedChapter, setSelectedChapter] = useState<ChapterData | null>(null);
@@ -408,50 +410,68 @@ function MainApp() {
       </div>
 
       <style>{`
+        @keyframes shrinkHeader {
+          to {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            background: var(--color-glass-bg);
+            backdrop-filter: blur(24px);
+            border-bottom-color: var(--color-glass-border);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+          }
+        }
+        @keyframes shrinkHeaderDark {
+          to {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            background: var(--color-glass-dark-bg);
+            backdrop-filter: blur(24px);
+            border-bottom-color: var(--color-glass-dark-border);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+          }
+        }
+        @supports (animation-timeline: scroll()) and (animation-range: 0% 100%) {
+          .shrinking-header {
+            animation: shrinkHeader auto linear both;
+            animation-timeline: scroll(block root);
+            animation-range: 0px 100px;
+          }
+          .dark .shrinking-header {
+            animation: shrinkHeaderDark auto linear both;
+            animation-timeline: scroll(block root);
+            animation-range: 0px 100px;
+          }
+        }
+
         @keyframes popUp {
-          from { opacity: 0; transform: scale(0.96) translateY(12px); }
+          from { opacity: 0; transform: scale(0.92) translateY(16px); }
           to { opacity: 1; transform: scale(1) translateY(0); }
         }
         @keyframes floatBlob1 {
-          0%, 100% { transform: translate(0, 0) scale(1); }
-          50% { transform: translate(5%, 8%) scale(1.08); }
+          0%, 100% { transform: translate(0, 0) scale(1) rotate(0deg); }
+          50% { transform: translate(6%, 10%) scale(1.1) rotate(10deg); }
         }
         @keyframes floatBlob2 {
-          0%, 100% { transform: translate(0, 0) scale(1); }
-          50% { transform: translate(-6%, -5%) scale(0.92); }
+          0%, 100% { transform: translate(0, 0) scale(1) rotate(0deg); }
+          50% { transform: translate(-8%, -6%) scale(0.85) rotate(-5deg); }
         }
-        .blob-float-1 { animation: floatBlob1 25s ease-in-out infinite; }
-        .blob-float-2 { animation: floatBlob2 30s ease-in-out infinite alternate; }
+        .blob-float-1 { animation: floatBlob1 25s cubic-bezier(0.4, 0, 0.2, 1) infinite; }
+        .blob-float-2 { animation: floatBlob2 30s cubic-bezier(0.4, 0, 0.2, 1) infinite alternate; }
 
-        .animate-pop-up { animation: popUp 400ms cubic-bezier(0.34, 1.56, 0.64, 1) both; }
-        .grid-delay:nth-child(1) { animation-delay: 50ms; }
-        .grid-delay:nth-child(2) { animation-delay: 100ms; }
-        .grid-delay:nth-child(3) { animation-delay: 150ms; }
-        .grid-delay:nth-child(4) { animation-delay: 200ms; }
-        .grid-delay:nth-child(5) { animation-delay: 250ms; }
-        .grid-delay:nth-child(6) { animation-delay: 300ms; }
+        .animate-pop-up { animation: popUp 600ms cubic-bezier(0.16, 1, 0.3, 1) both; }
+        .grid-delay:nth-child(1) { animation-delay: 40ms; }
+        .grid-delay:nth-child(2) { animation-delay: 80ms; }
+        .grid-delay:nth-child(3) { animation-delay: 120ms; }
+        .grid-delay:nth-child(4) { animation-delay: 160ms; }
+        .grid-delay:nth-child(5) { animation-delay: 200ms; }
+        .grid-delay:nth-child(6) { animation-delay: 240ms; }
         
         .portal-card {
-          transition: all 400ms cubic-bezier(0.34, 1.56, 0.64, 1);
-          background: rgba(255, 255, 255, 0.85);
-          backdrop-filter: blur(16px);
-          border: 1px solid rgba(255, 255, 255, 0.5);
-          box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.015);
-        }
-        .dark .portal-card {
-          background: rgba(15, 17, 28, 0.7);
-          backdrop-filter: blur(16px);
-          border: 1px solid rgba(255, 255, 255, 0.05);
-          box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.2);
+          transition: all 500ms cubic-bezier(0.16, 1, 0.3, 1);
         }
         .portal-card:hover {
-          transform: translateY(-8px) scale(1.015);
-          border-color: rgba(16, 185, 129, 0.4);
-          box-shadow: 0 24px 48px -12px rgba(16, 185, 129, 0.08);
-        }
-        .dark .portal-card:hover {
-          border-color: rgba(16, 185, 129, 0.3);
-          box-shadow: 0 24px 48px -12px rgba(0, 0, 0, 0.4), 0 0 20px 2px rgba(16, 185, 129, 0.05);
+          transform: translateY(-8px) scale(1.02);
+          z-index: 10;
         }
         .animate-flip-rtl {
           transition: transform 300ms ease;
@@ -463,8 +483,8 @@ function MainApp() {
 
       {/* TOP NAVIGATION HEADER WITH BREADCRUMBS */}
       {['yearSelect', 'semesterSelect', 'moduleSelect', 'studyModeSelect'].includes(screen) && (
-        <header className="bg-white/80 dark:bg-gray-900/80 backdrop-blur-md border-b border-gray-100 dark:border-gray-800 sticky top-0 z-40 transition-colors duration-300">
-          <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+        <header className="shrinking-header bg-white/70 dark:bg-gray-900/70 backdrop-blur-xl border-b border-gray-100 dark:border-gray-800/50 sticky top-0 z-40 transition-colors duration-300">
+          <div className="max-w-6xl mx-auto px-6 py-5 transition-all duration-300 flex items-center justify-between">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-physiology to-clinical flex items-center justify-center text-white font-archivo font-black text-xl shadow-md shadow-physiology/20">
                 A
@@ -526,7 +546,7 @@ function MainApp() {
         
         {/* Breadcrumbs for easy navigation jumpbacks */}
         {['semesterSelect', 'moduleSelect', 'studyModeSelect'].includes(screen) && (
-          <div className="flex flex-wrap items-center gap-1.5 text-xs text-gray-400 dark:text-gray-500 font-bold uppercase tracking-wider mb-6 bg-white dark:bg-gray-900 px-4 py-2.5 rounded-full border border-gray-100 dark:border-gray-800 shadow-sm w-fit">
+          <div className="flex flex-wrap items-center gap-1.5 text-xs text-gray-400 dark:text-gray-500 font-bold uppercase tracking-wider mb-8 glass-panel px-5 py-3 w-fit transition-all duration-300">
             <button onClick={() => navigateTo('yearSelect')} className="hover:text-physiology transition-colors">{t('portal')}</button>
             {selectedYear && (
               <>
@@ -548,6 +568,15 @@ function MainApp() {
             )}
           </div>
         )}
+
+      {showTracker && selectedModule && (
+        <SyllabusTracker
+          moduleCode={selectedModule.code}
+          moduleName={selectedModule.name}
+          chapters={getChaptersForModuleAndMode(selectedModule.code, 'mixed')}
+          onClose={() => setShowTracker(false)}
+        />
+      )}
 
         {/* SCREEN 1: YEAR SELECT */}
         {screen === 'yearSelect' && (
@@ -573,10 +602,10 @@ function MainApp() {
                     key={year}
                     onClick={() => active && handleSelectYear(year)}
                     disabled={!active}
-                    className={`portal-card text-start bg-white dark:bg-gray-900 rounded-[30px] p-6 border-2 shadow-sm flex flex-col justify-between h-44 animate-pop-up grid-delay relative overflow-hidden group ${
+                    className={`portal-card text-start glass-panel p-6 flex flex-col justify-between h-44 animate-pop-up grid-delay relative overflow-hidden group ${
                       active
-                        ? 'border-gray-100 dark:border-gray-800/80 hover:border-physiology/40 cursor-pointer'
-                        : 'border-dashed border-gray-200 dark:border-gray-800 opacity-60 saturate-50 cursor-not-allowed pointer-events-none bg-gray-50/30 dark:bg-gray-950/20 shadow-none'
+                        ? 'hover:border-physiology/40 cursor-pointer glow-border'
+                        : 'opacity-60 saturate-50 cursor-not-allowed pointer-events-none shadow-none'
                     }`}
                   >
                     <div className="absolute -right-8 -top-8 w-24 h-24 rounded-full bg-physiology/5 group-hover:bg-physiology/10 transition-colors duration-300" />
@@ -674,10 +703,10 @@ function MainApp() {
                     key={sem}
                     onClick={() => active && handleSelectSemester(sem)}
                     disabled={!active}
-                    className={`portal-card text-start bg-white dark:bg-gray-900 rounded-[30px] p-8 border-2 shadow-sm flex flex-col justify-between h-48 animate-pop-up group relative overflow-hidden ${
+                    className={`portal-card text-start glass-panel p-8 flex flex-col justify-between h-48 animate-pop-up group relative overflow-hidden ${
                       active
-                        ? 'border-gray-100 dark:border-gray-800/80 hover:border-physiology/40 cursor-pointer'
-                        : 'border-dashed border-gray-200 dark:border-gray-800 opacity-60 saturate-50 cursor-not-allowed pointer-events-none bg-gray-50/30 dark:bg-gray-950/20 shadow-none'
+                        ? 'hover:border-physiology/40 cursor-pointer glow-border'
+                        : 'opacity-60 saturate-50 cursor-not-allowed pointer-events-none shadow-none'
                     }`}
                   >
                     <div className="absolute -right-8 -top-8 w-28 h-28 rounded-full bg-physiology/5 group-hover:bg-physiology/10 transition-colors duration-300" />
@@ -753,10 +782,11 @@ function MainApp() {
                       key={mod.code}
                       onClick={() => active && handleSelectModule(mod)}
                       disabled={!active}
-                      className={`portal-card text-start bg-white dark:bg-gray-900 rounded-[30px] p-6 border-2 shadow-sm flex flex-col justify-between h-52 animate-pop-up grid-delay relative overflow-hidden group ${
+                      style={{ viewTransitionName: `module-${mod.code}` }}
+                      className={`portal-card text-start glass-panel p-6 flex flex-col justify-between h-52 animate-pop-up grid-delay relative overflow-hidden group ${
                         active
-                          ? 'border-physiology/20 hover:border-physiology/60 cursor-pointer'
-                          : 'border-dashed border-gray-200 dark:border-gray-800 opacity-60 saturate-50 cursor-not-allowed pointer-events-none bg-gray-50/30 dark:bg-gray-950/20 shadow-none'
+                          ? 'hover:border-physiology/60 cursor-pointer glow-border'
+                          : 'opacity-60 saturate-50 cursor-not-allowed pointer-events-none shadow-none'
                       }`}
                     >
                       {active ? (
@@ -946,6 +976,27 @@ function MainApp() {
                       Generate Exam <ArrowRight size={14} />
                     </span>
                   </div>
+                </div>
+              </button>
+            </div>
+
+            <div className="max-w-4xl mx-auto">
+              <button
+                onClick={() => setShowTracker(true)}
+                className="w-full glass-panel glow-border rounded-2xl p-5 flex items-center justify-between group hover:shadow-md transition-all animate-pop-up"
+                style={{ animationDelay: '180ms' }}
+              >
+                <div className="flex items-center gap-4">
+                  <div className="w-12 h-12 rounded-xl bg-gray-50 dark:bg-gray-800 flex items-center justify-center text-gray-500">
+                    <Calendar size={20} className="text-gray-600 dark:text-gray-400" />
+                  </div>
+                  <div className="text-left">
+                    <h4 className="font-archivo font-bold text-lg text-gray-900 dark:text-white tracking-tight">Syllabus & Study Tracker</h4>
+                    <p className="text-xs text-gray-500 dark:text-gray-400 font-medium">Keep track of your chapter progress and personal notes</p>
+                  </div>
+                </div>
+                <div className="w-10 h-10 rounded-full border border-gray-100 dark:border-gray-800 flex items-center justify-center group-hover:bg-gray-100 dark:group-hover:bg-gray-700 transition-colors">
+                  <ChevronRight size={16} className="text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white animate-flip-rtl" />
                 </div>
               </button>
             </div>

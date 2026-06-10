@@ -103,7 +103,7 @@ export function SyllabusTracker({ moduleCode, moduleName, chapters, onClose }: P
         }
       `}</style>
 
-      <div className="w-full max-w-4xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 rounded-[30px] shadow-2xl overflow-hidden flex flex-col max-h-[90vh] animate-slide-up relative">
+      <div className="w-full max-w-4xl glass-panel glow-border rounded-[30px] shadow-2xl overflow-hidden flex flex-col max-h-[90vh] animate-slide-up relative">
         
         {/* Header */}
         <div className="p-6 sm:p-8 border-b border-gray-100 dark:border-gray-800/80 bg-gray-50/50 dark:bg-gray-950/30 flex items-center justify-between">
@@ -137,13 +137,13 @@ export function SyllabusTracker({ moduleCode, moduleName, chapters, onClose }: P
             return (
               <div 
                 key={ch.id} 
-                className="bg-white dark:bg-gray-950 rounded-2xl border border-gray-100 dark:border-gray-800 p-5 sm:p-6 transition-all shadow-sm hover:shadow-md"
+                className="glass-panel glow-border rounded-2xl p-5 sm:p-6 transition-all shadow-sm hover:shadow-md"
               >
                 <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
                   
                   {/* Chapter title and badge */}
                   <div className="flex items-start gap-4 flex-1">
-                    <span className="text-2xl flex-shrink-0 bg-gray-50 dark:bg-gray-900 w-12 h-12 rounded-xl flex items-center justify-center border border-gray-100 dark:border-gray-850">
+                    <span className="text-2xl flex-shrink-0 glass-panel w-12 h-12 rounded-xl flex items-center justify-center glow-border">
                       {ch.emoji}
                     </span>
                     <div>
@@ -159,10 +159,10 @@ export function SyllabusTracker({ moduleCode, moduleName, chapters, onClose }: P
                   {/* 4 Checklist boxes */}
                   <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
                     {[
-                      { field: 'studied', label: t('studied'), color: 'bg-physiology border-physiology text-white', inactive: 'bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-800 text-gray-400 dark:text-gray-500 hover:border-physiology/40' },
-                      { field: 'revised', label: t('revised'), color: 'bg-biochem border-biochem text-white', inactive: 'bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-800 text-gray-400 dark:text-gray-500 hover:border-biochem/40' },
-                      { field: 'mcq', label: t('mcqDone') || 'MCQ', color: 'bg-anatomy border-anatomy text-white', inactive: 'bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-800 text-gray-400 dark:text-gray-500 hover:border-anatomy/40' },
-                      { field: 'essay', label: t('essayDone') || 'Essay', color: 'bg-histology border-histology text-white', inactive: 'bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-800 text-gray-400 dark:text-gray-500 hover:border-histology/40' },
+                      { field: 'studied', label: t('studied'), color: 'bg-physiology border-physiology text-white', inactive: 'glass-panel text-gray-400 dark:text-gray-500 hover:border-physiology/40' },
+                      { field: 'revised', label: t('revised'), color: 'bg-biochem border-biochem text-white', inactive: 'glass-panel text-gray-400 dark:text-gray-500 hover:border-biochem/40' },
+                      { field: 'mcq', label: t('mcqDone') || 'MCQ', color: 'bg-anatomy border-anatomy text-white', inactive: 'glass-panel text-gray-400 dark:text-gray-500 hover:border-anatomy/40' },
+                      { field: 'essay', label: t('essayDone') || 'Essay', color: 'bg-histology border-histology text-white', inactive: 'glass-panel text-gray-400 dark:text-gray-500 hover:border-histology/40' },
                     ].map((box) => {
                       const isActive = state[box.field as keyof Omit<ChapterState, 'notes'>];
                       return (
@@ -210,7 +210,7 @@ export function SyllabusTracker({ moduleCode, moduleName, chapters, onClose }: P
         <div className="p-6 border-t border-gray-100 dark:border-gray-800/80 bg-gray-50/50 dark:bg-gray-950/30 flex justify-end">
           <button
             onClick={onClose}
-            className="px-6 py-3 bg-gray-900 dark:bg-white hover:bg-gray-800 dark:hover:bg-gray-100 text-white dark:text-gray-900 rounded-full text-xs font-bold tracking-wide transition-all active:scale-[0.98]"
+            className="px-6 py-3 bg-gray-900 dark:bg-white hover:bg-gray-800 dark:hover:bg-gray-100 text-white dark:text-gray-900 rounded-full text-xs font-bold tracking-wide transition-all active:scale-[0.98] glow-border"
           >
             {t('close')}
           </button>

@@ -148,15 +148,16 @@ export function ChapterSelect({
         .dark .dot-grid {
           background-image: radial-gradient(circle, rgba(255,255,255,0.04) 1px, transparent 1px);
         }
-        .glass-panel {
-          background: rgba(255, 255, 255, 0.75);
-          backdrop-filter: blur(20px) saturate(140%);
-          border: 1px solid rgba(255, 255, 255, 0.45);
+        @keyframes scrollReveal {
+          from { opacity: 0; transform: translateY(40px) scale(0.95); }
+          to { opacity: 1; transform: translateY(0) scale(1); }
         }
-        .dark .glass-panel {
-          background: rgba(15, 17, 28, 0.65);
-          backdrop-filter: blur(20px) saturate(140%);
-          border: 1px solid rgba(255, 255, 255, 0.05);
+        @supports (animation-timeline: view()) {
+          .scroll-reveal {
+            animation: scrollReveal both;
+            animation-timeline: view();
+            animation-range: entry 5% cover 25%;
+          }
         }
         .gradient-title {
           background: linear-gradient(120deg, #10B981, #06B6D4, #3B82F6, #8B5CF6);
@@ -275,10 +276,10 @@ export function ChapterSelect({
           {chapters.map((chapter) => (
             <div
               key={chapter.id}
-              className="card-animate chapter-card glass-panel rounded-[30px] p-7 cursor-pointer group relative overflow-hidden"
+              className="card-animate scroll-reveal chapter-card glass-panel glow-border rounded-[30px] p-7 cursor-pointer group relative overflow-hidden"
               onClick={() => onSelectChapter(chapter)}
             >
-              <div className={`absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl ${cornerGradient[chapter.accentColor]} to-transparent rounded-bl-[60px]`} />
+              <div className={`absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl ${cornerGradient[chapter.accentColor]} to-transparent rounded-bl-[60px] pointer-events-none`} />
 
               <div className="relative">
                 <div className="flex items-center gap-3 mb-4">
@@ -350,8 +351,7 @@ export function ChapterSelect({
                 <button
                   key={r.id}
                   onClick={() => onSelectHistory && onSelectHistory(r)}
-                  className="history-card text-start w-full cursor-pointer bg-white dark:bg-gray-900 rounded-3xl px-5 py-4 border border-gray-100 dark:border-gray-800 flex items-center gap-4 hover:border-gray-300 dark:hover:border-gray-700 hover:scale-[1.01] hover:shadow-md active:scale-[0.99] transition-all duration-300"
-                  style={{ boxShadow: '0 2px 8px rgba(0,0,0,0.04)' }}
+                  className="history-card scroll-reveal text-start w-full cursor-pointer glass-panel rounded-3xl px-5 py-4 flex items-center gap-4 hover:border-gray-300 dark:hover:border-gray-700 hover:scale-[1.01] hover:shadow-md active:scale-[0.99] transition-all duration-300 glow-border"
                 >
                   <div className="flex-shrink-0 w-12 h-12 rounded-2xl bg-gray-50 dark:bg-gray-800 flex items-center justify-center">
                     <span className={`font-archivo text-lg font-black ${pctColor(r.pct)}`}>{r.pct}%</span>
@@ -382,7 +382,7 @@ export function ChapterSelect({
         )}
 
         {/* SUBJECT LEGEND */}
-        <div className="mt-12 p-6 glass-panel rounded-[24px] shadow-sm text-start">
+        <div className="mt-12 p-6 glass-panel scroll-reveal rounded-[24px] shadow-sm text-start">
           <div className="flex items-center gap-2 mb-4">
             <Palette size={16} className="text-gray-400 dark:text-gray-500" />
             <span className="text-xs font-bold text-gray-400 dark:text-gray-500 uppercase tracking-wider">{t('subjectColorGuide')}</span>
