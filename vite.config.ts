@@ -28,27 +28,4 @@ export default defineConfig({
     },
   },
   assetsInclude: ['**/*.svg', '**/*.csv'],
-  build: {
-    rollupOptions: {
-      output: {
-        manualChunks(id) {
-          if (id.includes('node_modules')) {
-            if (id.includes('@clerk')) {
-              return 'clerk';
-            }
-            if (id.includes('lucide-react')) {
-              return 'lucide';
-            }
-            if (id.includes('motion') || id.includes('framer-motion')) {
-              return 'motion';
-            }
-            if (id.includes('@mui') || id.includes('@emotion')) {
-              return 'mui';
-            }
-            return 'vendor';
-          }
-        }
-      }
-    }
-  }
 })
