@@ -39,8 +39,11 @@ export function StackedCarousel({ items, onSelect, activeIndex, setActiveIndex }
   }, [next, prev]);
 
   const handleKeyDown = useCallback((e: KeyboardEvent) => {
-    if (e.key === 'ArrowRight') { e.preventDefault(); next(); }
-    else if (e.key === 'ArrowLeft') { e.preventDefault(); prev(); }
+    const isRtl = document.documentElement.dir === 'rtl';
+    const goNext = isRtl ? prev : next;
+    const goPrev = isRtl ? next : prev;
+    if (e.key === 'ArrowRight') { e.preventDefault(); goNext(); }
+    else if (e.key === 'ArrowLeft') { e.preventDefault(); goPrev(); }
     else if (e.key === 'Enter') {
       if (!items[activeIndex]?.disabled) onSelect(items[activeIndex].id);
     }

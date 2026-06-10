@@ -1,32 +1,54 @@
 // src/app/components/YearSelectionModal.tsx
-// Improved: better visual hierarchy, animated entry, clearer CTA,
-// year labels show progress context, no logic changes.
+// Improved: focus trapping, bilingual localization, text-start alignments, and RTL support.
 
 import { useEffect } from 'react';
 import { GraduationCap, ChevronRight } from 'lucide-react';
 import { triggerCloudSync } from '../hooks/useCloudSync';
+import { useLanguage } from '../context/LanguageContext';
 
 interface Props { onSelect: (year: number) => void; }
 
-const YEAR_LABELS: Record<number, string> = {
-  1: 'Pre-clinical foundations',
-  2: 'Organ systems & physiology',
-  3: 'Clinical sciences',
-  4: 'Internal medicine & paeds',
-  5: 'Surgery & specialties',
-};
-
 export function YearSelectionModal({ onSelect }: Props) {
+  const { t, language } = useLanguage();
+  const isRtl = language === 'ar';
+
   const handleSelect = (year: number) => {
     localStorage.setItem('asu_medical_student_year', year.toString());
     triggerCloudSync();
     onSelect(year);
   };
 
-  // Trap keyboard focus inside modal
+  // Trap keyboard focus inside modal and focus first element on mount
   useEffect(() => {
-    const firstBtn = document.querySelector<HTMLButtonElement>('[data-year-btn]');
-    firstBtn?.focus();
+    const buttons = document.querySelectorAll<HTMLButtonElement>('[data-year-btn]');
+    if (buttons.length > 0) {
+      buttons[0].focus();
+    }
+
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key !== 'Tab') return;
+      
+      const focusable = document.querySelectorAll<HTMLButtonElement>('[data-year-btn]');
+      if (focusable.length === 0) return;
+      
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      
+      if (e.shiftKey) {
+        if (document.activeElement === first) {
+          last.focus();
+          e.preventDefault();
+        }
+      } else {
+        if (document.activeElement === last) {
+          first.focus();
+          e.preventDefault();
+        }
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
   }, []);
 
   return (
@@ -35,15 +57,15 @@ export function YearSelectionModal({ onSelect }: Props) {
                  bg-foreground/20 dark:bg-background/60 backdrop-blur-md animate-fade-in"
       role="dialog"
       aria-modal="true"
-      aria-label="Select your academic year"
+      aria-label={t('selectYear')}
     >
       <div
         className="w-full max-w-md bg-card border border-border rounded-[36px] p-8
                    shadow-2xl animate-slide-up relative overflow-hidden"
       >
         {/* Decorative corner */}
-        <div className="absolute top-0 right-0 w-28 h-28 bg-gradient-to-bl
-                        from-physiology/8 to-transparent rounded-bl-[90px] pointer-events-none" />
+        <div className={`absolute top-0 ${isRtl ? 'left-0' : 'right-0'} w-28 h-28 bg-gradient-to-bl
+                        from-physiology/8 to-transparent ${isRtl ? 'rotate-90' : ''} rounded-bl-[90px] pointer-events-none`} />
 
         {/* Header */}
         <div className="flex flex-col items-center text-center gap-4 mb-8">
@@ -52,10 +74,10 @@ export function YearSelectionModal({ onSelect }: Props) {
           </div>
           <div>
             <h2 className="font-archivo text-2xl font-black text-foreground tracking-tight">
-              Welcome to the Portal!
+              {t('welcomePortal')}
             </h2>
             <p className="text-sm text-muted-foreground font-medium mt-2 leading-relaxed max-w-xs mx-auto">
-              Choose your academic year to get a personalised experience and the right modules.
+              {t('chooseYearDesc')}
             </p>
           </div>
         </div>
@@ -76,17 +98,17 @@ export function YearSelectionModal({ onSelect }: Props) {
                          shadow-sm hover:shadow-md
                          flex items-center justify-between"
             >
-              <div className="text-left">
-                <span className="block text-sm font-bold">Year {year}</span>
+              <div className="text-start">
+                <span className="block text-sm font-bold">{t('year' + year)}</span>
                 <span className="block text-[11px] text-muted-foreground font-medium mt-0.5
                                  group-hover:text-physiology/70 transition-colors">
-                  {YEAR_LABELS[year]}
+                  {t('yearDesc' + year)}
                 </span>
               </div>
               <ChevronRight
                 size={16}
-                className="text-muted-foreground/50 group-hover:text-physiology transition-all
-                           duration-200 group-hover:translate-x-0.5"
+                className={`text-muted-foreground/50 group-hover:text-physiology transition-all
+                           duration-200 ${isRtl ? 'rotate-180 group-hover:-translate-x-0.5' : 'group-hover:translate-x-0.5'}`}
               />
             </button>
           ))}

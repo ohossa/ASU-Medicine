@@ -110,6 +110,14 @@ const translations: Record<Language, Record<string, string>> = {
     close: 'Close',
     portal: 'Portal',
     changeYear: 'Change Academic Year',
+    welcomePortal: 'Welcome to the Portal!',
+    chooseYearDesc: 'Choose your academic year to get a personalised experience and the right modules.',
+    overallProgress: 'Overall Progress',
+    yearDesc1: 'Pre-clinical foundations',
+    yearDesc2: 'Organ systems & physiology',
+    yearDesc3: 'Clinical sciences',
+    yearDesc4: 'Internal medicine & paeds',
+    yearDesc5: 'Surgery & specialties',
     
     // Additional keys
     backToStudyModes: 'Back to Study Modes',
@@ -253,6 +261,14 @@ const translations: Record<Language, Record<string, string>> = {
     close: 'إغلاق',
     portal: 'البوابة',
     changeYear: 'تغيير السنة الدراسية',
+    welcomePortal: 'مرحباً بك في البوابة!',
+    chooseYearDesc: 'اختر سنتك الدراسية للحصول على تجربة مخصصة والوحدات التعليمية المناسبة.',
+    overallProgress: 'التقدم الإجمالي',
+    yearDesc1: 'الأسس قبل السريرية',
+    yearDesc2: 'أجهزة أعضاء الجسم وعلم وظائف الأعضاء',
+    yearDesc3: 'العلوم السريرية',
+    yearDesc4: 'الطب الباطني والأطفال',
+    yearDesc5: 'الجراحة والتخصصات',
     
     // Additional keys
     backToStudyModes: 'الرجوع لأوضاع الدراسة',

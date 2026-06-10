@@ -156,7 +156,7 @@ export function SyllabusTracker({ moduleCode, moduleName, chapters, onClose }: P
         {/* ── Progress bar ───────────────────────────────────────────── */}
         <div className="px-6 sm:px-8 py-3 border-b border-border bg-card/20">
           <div className="flex items-center justify-between mb-1.5">
-            <span className="text-[11px] font-bold text-muted-foreground uppercase tracking-wider">Overall Progress</span>
+            <span className="text-[11px] font-bold text-muted-foreground uppercase tracking-wider">{t('overallProgress')}</span>
             <span className="text-[11px] font-black text-foreground">{progress}%</span>
           </div>
           <div className="h-1.5 rounded-full bg-muted overflow-hidden">
@@ -243,7 +243,7 @@ export function SyllabusTracker({ moduleCode, moduleName, chapters, onClose }: P
                           value={state.notes}
                           onChange={e => updateNotes(ch.id, e.target.value)}
                           placeholder={t('notesPlaceholder') || 'Type your notes here…'}
-                          className="w-full resize-none bg-muted/50 border border-border focus:border-physiology
+                          className="w-full resize-y bg-muted/50 border border-border focus:border-physiology
                                      rounded-xl text-xs font-medium text-foreground placeholder:text-muted-foreground/60
                                      py-2.5 px-3.5 focus:outline-none focus:ring-2 focus:ring-physiology/20
                                      transition-all leading-relaxed"

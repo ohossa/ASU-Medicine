@@ -826,7 +826,14 @@ function MainApp() {
       )}
 
       {/* ── First-time onboarding modal ────────────────────────────────── */}
-      {!studentYear && <YearSelectionModal onSelect={setStudentYear} />}
+      {!studentYear && (
+        <YearSelectionModal 
+          onSelect={(year) => {
+            setStudentYear(year);
+            handleSelectYear(year);
+          }} 
+        />
+      )}
     </div>
   );
 }
