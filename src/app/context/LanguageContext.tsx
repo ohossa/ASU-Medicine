@@ -109,6 +109,7 @@ const translations: Record<Language, Record<string, string>> = {
     tryEndocrine: 'Try Endocrine Module',
     close: 'Close',
     portal: 'Portal',
+    changeYear: 'Change Academic Year',
     
     // Additional keys
     backToStudyModes: 'Back to Study Modes',
@@ -251,6 +252,7 @@ const translations: Record<Language, Record<string, string>> = {
     tryEndocrine: 'جرب وحدة الغدد الصماء',
     close: 'إغلاق',
     portal: 'البوابة',
+    changeYear: 'تغيير السنة الدراسية',
     
     // Additional keys
     backToStudyModes: 'الرجوع لأوضاع الدراسة',

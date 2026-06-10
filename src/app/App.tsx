@@ -225,7 +225,19 @@ function MainApp() {
                     userButtonAvatarBox: "w-9 h-9 border-2 border-physiology shadow-sm",
                   }
                 }}
-              />
+              >
+                <UserButton.MenuItems>
+                  <UserButton.Action 
+                    label={t('changeYear')} 
+                    labelIcon={<GraduationCap size={16} className="text-physiology" />} 
+                    onClick={() => {
+                      localStorage.removeItem('asu_medical_student_year');
+                      setStudentYear(null);
+                      navigateTo('yearSelect');
+                    }}
+                  />
+                </UserButton.MenuItems>
+              </UserButton>
             </div>
           </div>
         </header>
