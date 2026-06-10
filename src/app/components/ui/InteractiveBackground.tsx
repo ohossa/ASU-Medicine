@@ -18,14 +18,14 @@ export function InteractiveBackground() {
   return (
     <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden">
       {/* Base faint dots */}
-      <div className="absolute inset-0 dot-pattern opacity-60 dark:opacity-40" />
+      <div className="absolute inset-0 dot-pattern opacity-80 dark:opacity-60" />
       
       {/* Interactive cursor spotlight */}
       <div 
         className="absolute inset-0 dot-pattern opacity-100"
         style={{
-          WebkitMaskImage: `radial-gradient(600px circle at ${mousePosition.x}px ${mousePosition.y}px, black 0%, transparent 80%)`,
-          maskImage: `radial-gradient(600px circle at ${mousePosition.x}px ${mousePosition.y}px, black 0%, transparent 80%)`,
+          WebkitMaskImage: `radial-gradient(600px circle at ${mousePosition.x}px ${mousePosition.y}px, black 0%, rgba(0,0,0,0) 80%)`,
+          maskImage: `radial-gradient(600px circle at ${mousePosition.x}px ${mousePosition.y}px, black 0%, rgba(0,0,0,0) 80%)`,
         }}
       />
     </div>
