@@ -4,7 +4,12 @@ import { useAuth } from '@clerk/clerk-react';
 const STORAGE_KEYS = [
   'endocrine_essay_quiz_history',
   'asu_study_tracker_MEM-2',
-  'asu_medical_student_year'
+  'asu_medical_student_year',
+  'asu_portal_screen',
+  'asu_portal_year',
+  'asu_portal_semester',
+  'asu_portal_module',
+  'asu_portal_studyMode'
 ];
 
 export function useCloudSync() {

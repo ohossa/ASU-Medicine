@@ -3,6 +3,7 @@ import { ArrowLeft, ArrowRight, Clock, Activity, AlertCircle } from 'lucide-reac
 import { useLanguage } from '../context/LanguageContext';
 import { getQuizHistory } from '../utils/storage';
 import type { QuizResult } from '../utils/storage';
+import { useState, useEffect } from 'react';
 
 interface HistoryScreenProps {
   onBack: () => void;
@@ -11,9 +12,15 @@ interface HistoryScreenProps {
 
 export function HistoryScreen({ onBack, onSelectHistory }: HistoryScreenProps) {
   const { language } = useLanguage();
-  const history = getQuizHistory()
-    .filter(r => r && typeof r === 'object') // Remove any null/corrupt entries
-    .reverse(); // Show newest first
+  const [history, setHistory] = useState(() => getQuizHistory().filter(r => r && typeof r === 'object').reverse());
+
+  useEffect(() => {
+    const handleStorage = () => {
+      setHistory(getQuizHistory().filter(r => r && typeof r === 'object').reverse());
+    };
+    window.addEventListener('storage', handleStorage);
+    return () => window.removeEventListener('storage', handleStorage);
+  }, []);
 
   return (
     <div className="max-w-4xl mx-auto py-8 px-4 animate-fade-in">

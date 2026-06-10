@@ -131,7 +131,7 @@ function MainApp() {
   // Navigation states
   const [screen, setScreen] = useState<Screen>(() => {
     try {
-      const saved = sessionStorage.getItem('asu_portal_screen');
+      const saved = localStorage.getItem('asu_portal_screen');
       if (saved) {
         if (saved === 'quiz' || saved === 'results') return 'chapters';
         return saved as Screen;
@@ -140,29 +140,34 @@ function MainApp() {
     } catch { return 'yearSelect'; }
   });
   const [selectedYear, setSelectedYear] = useState<number | null>(() => {
-    try { const saved = sessionStorage.getItem('asu_portal_year'); return saved ? Number(saved) : null; } catch { return null; }
+    try { const saved = localStorage.getItem('asu_portal_year'); return saved ? Number(saved) : null; } catch { return null; }
   });
   const [selectedSemester, setSelectedSemester] = useState<number | null>(() => {
-    try { const saved = sessionStorage.getItem('asu_portal_semester'); return saved ? Number(saved) : null; } catch { return null; }
+    try { const saved = localStorage.getItem('asu_portal_semester'); return saved ? Number(saved) : null; } catch { return null; }
   });
   const [selectedModule, setSelectedModule] = useState<ModuleInfo | null>(() => {
-    try { const saved = sessionStorage.getItem('asu_portal_module'); return saved ? JSON.parse(saved) : null; } catch { return null; }
+    try { const saved = localStorage.getItem('asu_portal_module'); return saved ? JSON.parse(saved) : null; } catch { return null; }
   });
   const [studyMode, setStudyMode] = useState<'mcq' | 'essay' | 'mixed' | null>(() => {
-    try { const saved = sessionStorage.getItem('asu_portal_studyMode'); return saved as any || null; } catch { return null; }
+    try { const saved = localStorage.getItem('asu_portal_studyMode'); return saved as any || null; } catch { return null; }
   });
 
-  // Sync state to sessionStorage
+  // Sync state to localStorage
   useEffect(() => {
-    sessionStorage.setItem('asu_portal_screen', screen);
-    if (selectedYear) sessionStorage.setItem('asu_portal_year', selectedYear.toString());
-    else sessionStorage.removeItem('asu_portal_year');
-    if (selectedSemester) sessionStorage.setItem('asu_portal_semester', selectedSemester.toString());
-    else sessionStorage.removeItem('asu_portal_semester');
-    if (selectedModule) sessionStorage.setItem('asu_portal_module', JSON.stringify(selectedModule));
-    else sessionStorage.removeItem('asu_portal_module');
-    if (studyMode) sessionStorage.setItem('asu_portal_studyMode', studyMode);
-    else sessionStorage.removeItem('asu_portal_studyMode');
+    localStorage.setItem('asu_portal_screen', screen);
+    if (selectedYear) localStorage.setItem('asu_portal_year', selectedYear.toString());
+    else localStorage.removeItem('asu_portal_year');
+    if (selectedSemester) localStorage.setItem('asu_portal_semester', selectedSemester.toString());
+    else localStorage.removeItem('asu_portal_semester');
+    if (selectedModule) localStorage.setItem('asu_portal_module', JSON.stringify(selectedModule));
+    else localStorage.removeItem('asu_portal_module');
+    if (studyMode) localStorage.setItem('asu_portal_studyMode', studyMode);
+    else localStorage.removeItem('asu_portal_studyMode');
+    
+    // Trigger cloud sync to push these states
+    if (typeof window !== 'undefined') {
+      window.dispatchEvent(new Event('trigger-cloud-sync'));
+    }
   }, [screen, selectedYear, selectedSemester, selectedModule, studyMode]);
   const [showTracker, setShowTracker] = useState(false);
   

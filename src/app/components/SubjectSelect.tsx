@@ -23,6 +23,7 @@ import { ThemeToggle } from './ThemeToggle';
 import { LanguageToggle } from './LanguageToggle';
 import { useLanguage } from '../context/LanguageContext';
 import { getQuizHistory } from '../utils/storage';
+import { useState, useEffect } from 'react';
 
 export interface BreadcrumbItem {
   label: string;
@@ -54,7 +55,14 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart, 
   const allQuestions = useMemo(() => chapter.subjects.flatMap((s) => s.questions), [chapter]);
   const totalQuestions = useMemo(() => totalQs(chapter.subjects), [chapter.subjects]);
   const { t, language } = useLanguage();
-  const history = useMemo(() => getQuizHistory(), []);
+  
+  const [history, setHistory] = useState(() => getQuizHistory());
+
+  useEffect(() => {
+    const handleStorage = () => setHistory(getQuizHistory());
+    window.addEventListener('storage', handleStorage);
+    return () => window.removeEventListener('storage', handleStorage);
+  }, []);
 
   return (
     <div className="min-h-screen bg-gray-50/50 dark:bg-gray-950 font-manrope relative overflow-hidden">
