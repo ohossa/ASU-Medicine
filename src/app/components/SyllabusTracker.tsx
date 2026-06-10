@@ -183,7 +183,7 @@ export function SyllabusTracker({ moduleCode, moduleName, chapters, onClose }: P
                 </div>
 
                 {/* Personal Notes Box */}
-                <div className="mt-5 pt-4 border-t border-gray-50 dark:border-gray-850 flex items-start gap-3">
+                <div className="mt-5 pt-4 border-t border-gray-50 dark:border-gray-800 flex items-start gap-3">
                   <div className="mt-2 text-gray-400 dark:text-gray-500">
                     <Edit3 size={14} />
                   </div>

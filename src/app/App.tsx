@@ -611,7 +611,7 @@ function MainApp() {
                     <div className="absolute -right-8 -top-8 w-24 h-24 rounded-full bg-physiology/5 group-hover:bg-physiology/10 transition-colors duration-300" />
                     
                     {!active && (
-                      <span className="absolute top-4 right-4 px-2.5 py-0.5 bg-gray-150 dark:bg-gray-850 text-gray-500 dark:text-gray-400 rounded-lg text-[9px] font-bold uppercase tracking-wider flex items-center gap-1">
+                      <span className="absolute top-4 right-4 px-2.5 py-0.5 bg-gray-200 dark:bg-gray-900 text-gray-500 dark:text-gray-400 rounded-lg text-[9px] font-bold uppercase tracking-wider flex items-center gap-1">
                         <Lock size={10} />
                         {t('comingSoon').replace('...', '')}
                       </span>
@@ -712,7 +712,7 @@ function MainApp() {
                     <div className="absolute -right-8 -top-8 w-28 h-28 rounded-full bg-physiology/5 group-hover:bg-physiology/10 transition-colors duration-300" />
                     
                     {!active && (
-                      <span className="absolute top-4 right-4 px-2.5 py-0.5 bg-gray-150 dark:bg-gray-850 text-gray-500 dark:text-gray-400 rounded-lg text-[9px] font-bold uppercase tracking-wider flex items-center gap-1">
+                      <span className="absolute top-4 right-4 px-2.5 py-0.5 bg-gray-200 dark:bg-gray-900 text-gray-500 dark:text-gray-400 rounded-lg text-[9px] font-bold uppercase tracking-wider flex items-center gap-1">
                         <Lock size={10} />
                         {t('comingSoon').replace('...', '')}
                       </span>
@@ -747,7 +747,7 @@ function MainApp() {
             <div className="flex items-center justify-center">
               <button
                 onClick={() => navigateTo('yearSelect')}
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gray-100 dark:bg-gray-850 hover:bg-gray-200 dark:hover:bg-gray-800 text-sm font-semibold transition-colors duration-200"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gray-100 dark:bg-gray-900 hover:bg-gray-200 dark:hover:bg-gray-800 text-sm font-semibold transition-colors duration-200"
               >
                 <ArrowLeft size={16} className="rtl:rotate-180" />
                 {t('back')}
@@ -792,7 +792,7 @@ function MainApp() {
                       {active ? (
                         <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-physiology/10 to-transparent rounded-bl-[60px]" />
                       ) : (
-                        <span className="absolute top-4 right-4 px-2.5 py-0.5 bg-gray-150 dark:bg-gray-850 text-gray-500 dark:text-gray-400 rounded-lg text-[9px] font-bold uppercase tracking-wider flex items-center gap-1">
+                        <span className="absolute top-4 right-4 px-2.5 py-0.5 bg-gray-200 dark:bg-gray-900 text-gray-500 dark:text-gray-400 rounded-lg text-[9px] font-bold uppercase tracking-wider flex items-center gap-1">
                           <Lock size={10} />
                           {t('comingSoon').replace('...', '')}
                         </span>
@@ -823,7 +823,7 @@ function MainApp() {
                           <div>{t('marks')}: <span className="text-gray-700 dark:text-gray-300 font-archivo">{mod.marks}</span></div>
                         </div>
 
-                        <div className="h-px bg-gray-100 dark:bg-gray-850 my-3" />
+                        <div className="h-px bg-gray-100 dark:bg-gray-900 my-3" />
 
                         <div className="flex items-center justify-between text-xs">
                           {active ? (
@@ -851,7 +851,7 @@ function MainApp() {
             <div className="flex items-center justify-center">
               <button
                 onClick={() => navigateTo('semesterSelect')}
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gray-100 dark:bg-gray-850 hover:bg-gray-200 dark:hover:bg-gray-800 text-sm font-semibold transition-colors duration-200"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gray-100 dark:bg-gray-900 hover:bg-gray-200 dark:hover:bg-gray-800 text-sm font-semibold transition-colors duration-200"
               >
                 <ArrowLeft size={16} className="rtl:rotate-180" />
                 {t('back')}
@@ -1004,7 +1004,7 @@ function MainApp() {
             <div className="flex items-center justify-center">
               <button
                 onClick={() => navigateTo('moduleSelect')}
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gray-100 dark:bg-gray-850 hover:bg-gray-200 dark:hover:bg-gray-800 text-sm font-semibold transition-colors duration-200"
+                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gray-100 dark:bg-gray-900 hover:bg-gray-200 dark:hover:bg-gray-800 text-sm font-semibold transition-colors duration-200"
               >
                 <ArrowLeft size={16} />
                 Back to Modules
