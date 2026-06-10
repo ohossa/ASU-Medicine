@@ -65,12 +65,12 @@ export function StackedCarousel({ items, onSelect, activeIndex, setActiveIndex }
 
   return (
     <div 
-      className="relative w-full h-[360px] flex items-center justify-center overflow-hidden touch-pan-y"
+      className="relative w-full h-[400px] flex items-center justify-center overflow-hidden touch-pan-y"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       onWheel={handleWheel}
     >
-      <div className="relative w-full max-w-[320px] h-[260px] flex items-center justify-center" style={{ perspective: '1200px' }}>
+      <div className="relative w-full max-w-[350px] h-[300px] flex items-center justify-center" style={{ perspective: '1200px' }}>
         {items.map((item, index) => {
           const offset = index - activeIndex;
           const absOffset = Math.abs(offset);
@@ -80,7 +80,7 @@ export function StackedCarousel({ items, onSelect, activeIndex, setActiveIndex }
 
           // Apple Music Style Cover Flow Math
           const sign = Math.sign(offset);
-          const x = offset * 140; // Distance between cards
+          const x = offset * 160; // Distance between cards
           const z = absOffset * -100; // Push back
           const rotateY = sign * -20; // Tilt towards center
           const scale = 1 - (absOffset * 0.1);

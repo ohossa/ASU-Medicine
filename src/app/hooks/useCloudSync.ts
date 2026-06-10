@@ -1,4 +1,4 @@
-import { useEffect, useCallback } from 'react';
+import { useEffect, useCallback, useRef } from 'react';
 import { useAuth } from '@clerk/clerk-react';
 
 const STORAGE_KEYS = [
@@ -14,9 +14,11 @@ const STORAGE_KEYS = [
 
 export function useCloudSync() {
   const { getToken, isSignedIn } = useAuth();
+  const isSyncing = useRef(false);
 
   const pushData = useCallback(async () => {
-    if (!isSignedIn) return;
+    if (!isSignedIn || isSyncing.current) return;
+    isSyncing.current = true;
     try {
       const payload: Record<string, any> = {};
       STORAGE_KEYS.forEach(key => {
@@ -43,6 +45,8 @@ export function useCloudSync() {
       });
     } catch (err) {
       console.error("Cloud push failed:", err);
+    } finally {
+      isSyncing.current = false;
     }
   }, [isSignedIn, getToken]);
 
@@ -106,11 +110,16 @@ export function useCloudSync() {
 }
 
 // Global helper to trigger push after local storage mutations
+let syncTimeoutId: ReturnType<typeof setTimeout> | null = null;
+
 export const triggerCloudSync = () => {
   if (typeof window !== 'undefined') {
-    // Small debounce to let synchronous state finish
-    setTimeout(() => {
+    if (syncTimeoutId) {
+      clearTimeout(syncTimeoutId);
+    }
+    syncTimeoutId = setTimeout(() => {
       window.dispatchEvent(new Event('trigger-cloud-sync'));
+      syncTimeoutId = null;
     }, 500);
   }
 };

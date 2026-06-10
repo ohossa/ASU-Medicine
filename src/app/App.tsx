@@ -718,7 +718,7 @@ function MainApp() {
                     id: year,
                     disabled: false, // Always allow clicking into the year
                     content: (
-                      <div className="w-full h-full rounded-[32px] flex flex-col justify-between relative overflow-hidden group bg-white/95 dark:bg-gray-900/95 shadow-2xl p-8">
+                      <div className="w-full h-full rounded-[32px] flex flex-col justify-between relative overflow-hidden group bg-white dark:bg-gray-900 shadow-2xl p-8">
                         <div className="absolute -right-20 -top-20 w-64 h-64 rounded-full bg-physiology/5 group-hover:bg-physiology/10 transition-colors duration-700 blur-2xl pointer-events-none" />
 
                         <div className="flex justify-between items-start w-full relative z-10 gap-2">
@@ -739,7 +739,7 @@ function MainApp() {
                         </div>
                         
                         <div className="mt-auto w-full relative z-10">
-                          <h3 className="font-archivo text-2xl lg:text-3xl font-black text-gray-900 dark:text-white tracking-tight mb-1">
+                          <h3 className="font-archivo text-2xl lg:text-3xl font-black text-gray-900 dark:text-white tracking-normal mb-1">
                             {getPhaseTitle(year)}
                           </h3>
                           <p className="text-xs text-gray-500 dark:text-gray-400 font-bold uppercase tracking-widest">
@@ -747,7 +747,7 @@ function MainApp() {
                           </p>
                           
                           {totalCp > 0 && (
-                            <div className="flex gap-4 mt-3">
+                            <div className="flex gap-8 mt-3">
                               <div className="flex flex-col">
                                 <span className="text-[9px] font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest">Credit Points</span>
                                 <span className="text-sm font-black text-gray-700 dark:text-gray-300">{totalCp} CP</span>
@@ -876,7 +876,7 @@ function MainApp() {
                     id: sem,
                     disabled: false, // Always allow clicking into the semester
                     content: (
-                      <div className="w-full h-full rounded-[32px] flex flex-col justify-between relative overflow-hidden group bg-white/95 dark:bg-gray-900/95 shadow-2xl p-6 sm:p-8">
+                      <div className="w-full h-full rounded-[32px] flex flex-col justify-between relative overflow-hidden group bg-white dark:bg-gray-900 shadow-2xl p-6 sm:p-8">
                         <div className="absolute -right-12 -top-12 w-40 h-40 rounded-full bg-physiology/5 group-hover:bg-physiology/10 transition-colors duration-300 blur-2xl pointer-events-none" />
 
                         <div className="relative z-10">
@@ -906,7 +906,7 @@ function MainApp() {
 
                         <div className="flex flex-col w-full relative z-10 mt-auto space-y-4">
                           {totalCp > 0 && (
-                            <div className="flex gap-4">
+                            <div className="flex gap-8">
                               <div className="flex flex-col">
                                 <span className="text-[9px] font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest">Credit Points</span>
                                 <span className="text-sm font-black text-gray-700 dark:text-gray-300">{totalCp} CP</span>
