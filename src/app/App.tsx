@@ -489,7 +489,7 @@ function MainApp() {
       {/* TOP NAVIGATION HEADER WITH BREADCRUMBS */}
       {['yearSelect', 'semesterSelect', 'moduleSelect', 'studyModeSelect'].includes(screen) && (
         <header className="shrinking-header bg-white/70 dark:bg-gray-900/70 backdrop-blur-xl border-b border-gray-100 dark:border-gray-800/50 sticky top-0 z-40 transition-colors duration-300">
-          <div className="max-w-[1600px] mx-auto px-6 py-5 transition-all duration-300 flex items-center justify-between">
+          <div className="max-w-[1600px] mx-auto px-6 py-5 transition-all duration-300 flex flex-wrap items-center justify-between gap-y-4">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-full bg-physiology/10 flex items-center justify-center text-physiology-dark dark:text-physiology drop-shadow-sm transition-transform hover:scale-105 will-change-transform transform-gpu">
                 <Activity size={24} strokeWidth={2.5} />
@@ -504,9 +504,8 @@ function MainApp() {
               </div>
             </div>
 
-            <div className="flex items-center gap-3 sm:gap-4 flex-wrap justify-end">
-              {screen === 'yearSelect' && (
-                <div className="hidden md:flex items-center gap-2 mr-2">
+            {screen === 'yearSelect' && (
+              <div className="flex w-full md:w-auto items-center justify-center gap-2 order-last md:order-none">
                   <a
                     href="https://asu2learn.asu.edu.eg/medicine-emp/my/"
                     target="_blank"
@@ -535,7 +534,9 @@ function MainApp() {
                     <ExternalLink size={12} className="text-clinical" />
                   </a>
                 </div>
-              )}
+            )}
+
+            <div className="flex items-center gap-3 sm:gap-4 justify-end">
               <LanguageToggle />
               <ThemeToggle />
             </div>

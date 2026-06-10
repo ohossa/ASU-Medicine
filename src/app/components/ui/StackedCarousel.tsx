@@ -93,6 +93,7 @@ export function StackedCarousel({ items, onSelect, activeIndex, setActiveIndex }
               className={`absolute inset-0 cursor-pointer will-change-transform ${
                 item.disabled && isActive ? 'cursor-not-allowed' : ''
               }`}
+              style={{ touchAction: 'pan-y' }}
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{
                 x,
@@ -105,9 +106,9 @@ export function StackedCarousel({ items, onSelect, activeIndex, setActiveIndex }
               }}
               transition={{
                 type: 'spring',
-                stiffness: 400,
-                damping: 35,
-                mass: 0.8
+                stiffness: 300,
+                damping: 30,
+                mass: 1
               }}
               drag="x"
               dragConstraints={{ left: 0, right: 0 }}
@@ -123,7 +124,7 @@ export function StackedCarousel({ items, onSelect, activeIndex, setActiveIndex }
             >
               <div className={`w-full h-full rounded-[32px] overflow-hidden transition-shadow duration-300 ${
                 isActive 
-                  ? (item.disabled ? 'shadow-lg border border-gray-200 dark:border-gray-800' : 'shadow-2xl shadow-physiology/20 border border-physiology/30 dark:border-physiology/20 glow-border') 
+                  ? (item.disabled ? 'shadow-lg border border-gray-200 dark:border-gray-800' : 'shadow-2xl shadow-physiology/20 border border-physiology/30 dark:border-physiology/20') 
                   : 'shadow-md border border-transparent'
               }`}>
                 {item.content}
