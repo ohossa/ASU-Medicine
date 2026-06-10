@@ -386,7 +386,7 @@ function MainApp() {
     const sem = result.semester || 2;
 
     const moduleChapters = getChaptersForModuleAndMode(modCode, 'mixed');
-    const chapter = moduleChapters.find((c) => c.id === result.chapterId);
+    const chapter = moduleChapters.find((c) => String(c.id) === String(result.chapterId));
     if (!chapter) return;
 
     const subject = chapter.subjects.find((s) => s.name === result.subjectName) || null;

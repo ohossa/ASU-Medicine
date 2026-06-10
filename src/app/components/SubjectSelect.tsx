@@ -278,8 +278,8 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart, 
                 <div className={`absolute -top-4 -right-4 w-12 h-12 rounded-full ${s.bgOp8} glow-ring`} />
                 
                 {isCompleted && (
-                  <div className="absolute top-5 right-5 text-physiology bg-physiology/10 rounded-full p-1 border border-physiology/20 shadow-sm z-10 animate-fade-in">
-                    <CheckCircle size={20} className="drop-shadow-sm" />
+                  <div className="absolute top-5 right-5 text-physiology bg-physiology/10 rounded-full p-1.5 border border-physiology/20 shadow-sm z-10 animate-fade-in">
+                    <CheckCircle size={28} strokeWidth={2.5} className="drop-shadow-sm" />
                   </div>
                 )}
 
