@@ -545,6 +545,7 @@ function MainApp() {
       {/* PORTAL CONTAINER */}
       <main className="max-w-[1600px] mx-auto px-6 py-12 relative z-10">
         <div className="fixed inset-0 pointer-events-none -z-10 overflow-hidden transform-gpu">
+          <div className="absolute inset-0 dot-pattern"></div>
           <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] bg-physiology/10 dark:bg-physiology/5 blur-[120px] rounded-full mix-blend-multiply dark:mix-blend-screen animate-pulse duration-10000 will-change-transform transform-gpu"></div>
           <div className="absolute bottom-[-20%] right-[-10%] w-[50%] h-[50%] bg-clinical/10 dark:bg-clinical/5 blur-[120px] rounded-full mix-blend-multiply dark:mix-blend-screen animate-pulse duration-10000 will-change-transform transform-gpu" style={{ animationDelay: '2s' }}></div>
         </div>
@@ -1121,6 +1122,13 @@ function MainApp() {
         {screen === 'subjects' && selectedChapter && (
           <SubjectSelect
             chapter={selectedChapter}
+            breadcrumbPath={[
+              t('portal') || 'Portal',
+              t(`year${selectedYear}`) || `Year ${selectedYear}`,
+              t(`semester${selectedSemester}`) || `Semester ${selectedSemester}`,
+              selectedModule?.name || '',
+              `${t('chapter')} ${selectedChapter.id}`
+            ].filter(Boolean)}
             onBack={() => setScreen('chapters')}
             onSelectSubject={handleSelectSubject}
             onQuickStart={handleQuickStart}

@@ -283,13 +283,7 @@ export function ResultsDashboard({
         .confetti-3 { animation: confettiFall 1.8s ease-in 1.6s both; }
         .confetti-4 { animation: confettiFall 2.5s ease-in 1.3s both; }
         .confetti-5 { animation: confettiFall 2.1s ease-in 1.5s both; }
-        .dot-pattern {
-          background-image: radial-gradient(circle, rgba(0,0,0,0.025) 1.5px, transparent 1.5px);
-          background-size: 24px 24px;
-        }
-        .dark .dot-pattern {
-          background-image: radial-gradient(circle, rgba(255,255,255,0.025) 1.5px, transparent 1.5px);
-        }
+
         .nav-back { transition: all 250ms cubic-bezier(0.34,1.56,0.64,1); }
         .nav-back:hover { transform: translateX(-3px); }
         .toggle-btn { transition: all 250ms cubic-bezier(0.34,1.56,0.64,1); }
@@ -327,7 +321,7 @@ export function ResultsDashboard({
 
       {/* HERO SCORE */}
       <div className="relative overflow-hidden bg-white dark:bg-gray-900 border-b border-gray-100 dark:border-gray-800">
-        <div className="absolute inset-0 dot-pattern" />
+
         <div className="blob-1 absolute -top-20 right-32 w-64 h-64 rounded-full bg-gradient-to-br from-success/8 to-physiology/6 blur-3xl" />
         <div className="blob-2 absolute -bottom-16 left-16 w-48 h-48 rounded-full bg-gradient-to-br from-clinical/8 to-anatomy/6 blur-3xl" />
         <div className="blob-3 absolute top-10 left-1/3 w-32 h-32 rounded-full bg-gradient-to-br from-biochem/6 to-pharma/4 blur-3xl" />

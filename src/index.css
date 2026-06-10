@@ -82,6 +82,7 @@ h1 {
     margin: 20px 0;
   }
 }
+
 h2 {
   font-size: 24px;
   line-height: 118%;
@@ -90,6 +91,14 @@ h2 {
   @media (max-width: 1024px) {
     font-size: 20px;
   }
+}
+
+.dot-pattern {
+  background-image: radial-gradient(circle, rgba(0,0,0,0.03) 1.5px, transparent 1.5px);
+  background-size: 24px 24px;
+}
+.dark .dot-pattern {
+  background-image: radial-gradient(circle, rgba(255,255,255,0.03) 1.5px, transparent 1.5px);
 }
 p {
   margin: 0;

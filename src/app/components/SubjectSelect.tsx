@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import React, { useMemo } from 'react';
 import {
   ArrowLeft,
   ChevronRight,
@@ -26,6 +26,7 @@ interface Props {
   onBack: () => void;
   onSelectSubject: (subject: SubjectData, questions: ReturnType<typeof shuffleArray>) => void;
   onQuickStart: (questions: ReturnType<typeof shuffleArray>) => void;
+  breadcrumbPath?: string[];
 }
 
 const iconMap: Record<string, LucideIcon> = {
@@ -41,7 +42,7 @@ const iconMap: Record<string, LucideIcon> = {
 const totalQs = (subjects: SubjectData[]) =>
   subjects.reduce((a, s) => a + s.questions.length, 0);
 
-export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart }: Props) {
+export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart, breadcrumbPath }: Props) {
   const allQuestions = useMemo(() => chapter.subjects.flatMap((s) => s.questions), [chapter]);
   const totalQuestions = useMemo(() => totalQs(chapter.subjects), [chapter.subjects]);
   const { t, language } = useLanguage();
@@ -117,13 +118,7 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart }
           background-size: 200% 100%;
           animation: shimmer 3s ease-in-out infinite;
         }
-        .dot-pattern {
-          background-image: radial-gradient(circle, rgba(0,0,0,0.03) 1.5px, transparent 1.5px);
-          background-size: 24px 24px;
-        }
-        .dark .dot-pattern {
-          background-image: radial-gradient(circle, rgba(255,255,255,0.03) 1.5px, transparent 1.5px);
-        }
+
         .header-anim { animation: slideInLeft 500ms ease-out both; }
         .header-anim-delay { animation: slideInLeft 500ms ease-out 100ms both; }
         .stats-anim { animation: fadeInUp 600ms ease-out 300ms both; }
@@ -141,8 +136,31 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart }
                 <ArrowLeft size={16} />
                 <span className="hidden sm:inline">{t('chaptersCount')}</span>
               </button>
-              <div className="header-anim hidden md:flex items-center gap-2 text-sm">
+              {/* Desktop Breadcrumbs (Full Path) */}
+              <div className="header-anim hidden lg:flex items-center gap-2 text-sm">
+                {breadcrumbPath ? (
+                  breadcrumbPath.map((segment, idx) => (
+                    <React.Fragment key={idx}>
+                      <span className={idx === breadcrumbPath.length - 1 ? "text-gray-900 dark:text-white font-bold" : "text-gray-400 dark:text-gray-500 font-medium"}>
+                        {segment}
+                      </span>
+                      {idx < breadcrumbPath.length - 1 && <ChevronRight size={12} className="text-gray-300 dark:text-gray-600" />}
+                    </React.Fragment>
+                  ))
+                ) : (
+                  <>
+                    <span className="text-gray-400 dark:text-gray-500 font-medium">{t('portal')}</span>
+                    <ChevronRight size={12} className="text-gray-300 dark:text-gray-600" />
+                    <span className="text-gray-900 dark:text-white font-bold">{t('chapter')} {chapter.id}</span>
+                  </>
+                )}
+              </div>
+
+              {/* Tablet Breadcrumbs (Truncated) */}
+              <div className="header-anim hidden md:flex lg:hidden items-center gap-2 text-sm">
                 <span className="text-gray-400 dark:text-gray-500 font-medium">{t('portal')}</span>
+                <ChevronRight size={12} className="text-gray-300 dark:text-gray-600" />
+                <span className="text-gray-400 dark:text-gray-500 font-medium tracking-widest">...</span>
                 <ChevronRight size={12} className="text-gray-300 dark:text-gray-600" />
                 <span className="text-gray-900 dark:text-white font-bold">{t('chapter')} {chapter.id}</span>
               </div>
@@ -166,7 +184,7 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart }
 
       {/* HERO */}
       <div className="relative overflow-hidden bg-white dark:bg-gray-900 border-b border-gray-100 dark:border-gray-800">
-        <div className="absolute inset-0 dot-pattern" />
+
         <div className="blob-1 absolute -top-16 right-20 w-56 h-56 rounded-full bg-gradient-to-br from-physiology/8 to-clinical/6 blur-3xl" />
         <div className="blob-2 absolute -bottom-20 left-10 w-48 h-48 rounded-full bg-gradient-to-br from-anatomy/8 to-histology/6 blur-3xl" />
 

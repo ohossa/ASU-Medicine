@@ -150,6 +150,12 @@ const translations: Record<Language, Record<string, string>> = {
     selfGrading: 'Self-grading',
     selfGradingDesc: 'Select how close your notes were to the model answer:',
     personalNotes: 'Personal Notes',
+    studied: 'Studied',
+    revised: 'Revised',
+    mcqDone: 'MCQ Done',
+    essayDone: 'Essay Done',
+    notesPlaceholder: 'Type your notes here...',
+    saveSuccess: 'Progress Saved',
   },
   ar: {
     portalTitle: 'البوابة الطبية لجامعة عين شمس',
@@ -286,6 +292,12 @@ const translations: Record<Language, Record<string, string>> = {
     selfGrading: 'التقييم الذاتي',
     selfGradingDesc: 'حدد مدى قرب ملاحظاتك من الإجابة النموذجية:',
     personalNotes: 'ملاحظات شخصية',
+    studied: 'تمت المذاكرة',
+    revised: 'تمت المراجعة',
+    mcqDone: 'تم حل أسئلة الاختيارات',
+    essayDone: 'تم حل المقالي',
+    notesPlaceholder: 'اكتب ملاحظاتك هنا...',
+    saveSuccess: 'تم الحفظ',
   },
 };
 
