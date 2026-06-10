@@ -1,9 +1,7 @@
 import { verifyToken } from '@clerk/backend';
 import { Redis } from '@upstash/redis';
 
-export const config = {
-  runtime: 'edge',
-};
+
 
 // Initialize Upstash Redis with Vercel KV environment variables
 const redis = new Redis({
