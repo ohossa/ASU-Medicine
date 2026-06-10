@@ -38,6 +38,7 @@ import { SignedIn, SignedOut, UserButton, useUser } from '@clerk/clerk-react';
 const LoginScreen = lazy(() => import('./components/LoginScreen').then(m => ({ default: m.LoginScreen })));
 import { YearSelectionModal } from './components/YearSelectionModal';
 import { useNavigationState } from './hooks/useNavigationState';
+import { useCloudSync } from './hooks/useCloudSync';
 import {
   getChaptersForModuleAndMode,
   getModuleQuestionCounts,
