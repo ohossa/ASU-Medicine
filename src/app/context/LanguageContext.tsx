@@ -19,7 +19,7 @@ const translations: Record<Language, Record<string, string>> = {
     portalTitle: 'ASU Medical Portal',
     asu: 'Ain Shams University',
     selectYear: 'Select Academic Year',
-    selectYearDesc: 'Choose your current year of study to access the tailored credit point syllabus, module questions, and hybrid exams.',
+    selectYearDesc: '"And whoever saves one - it is as if he had saved mankind entirely." — Quran [5:32]',
     year1: 'Year 1',
     year2: 'Year 2',
     year3: 'Year 3',
@@ -149,12 +149,13 @@ const translations: Record<Language, Record<string, string>> = {
     modelAnswerReference: 'Model Answer Reference',
     selfGrading: 'Self-grading',
     selfGradingDesc: 'Select how close your notes were to the model answer:',
+    personalNotes: 'Personal Notes',
   },
   ar: {
     portalTitle: 'البوابة الطبية لجامعة عين شمس',
     asu: 'جامعة عين شمس',
     selectYear: 'اختر السنة الدراسية',
-    selectYearDesc: 'اختر سنتك الدراسية الحالية للوصول إلى المنهج الدراسي المخصص، وأسئلة الوحدات، والامتحانات المختلطة.',
+    selectYearDesc: '﴿وَمَنْ أَحْيَاهَا فَكَأَنَّمَا أَحْيَا النَّاسَ جَمِيعًا﴾ — سورة المائدة [٥:٣٢]',
     year1: 'السنة الأولى',
     year2: 'السنة الثانية',
     year3: 'السنة الثالثة',
@@ -284,6 +285,7 @@ const translations: Record<Language, Record<string, string>> = {
     modelAnswerReference: 'مرجع الإجابة النموذجية',
     selfGrading: 'التقييم الذاتي',
     selfGradingDesc: 'حدد مدى قرب ملاحظاتك من الإجابة النموذجية:',
+    personalNotes: 'ملاحظات شخصية',
   },
 };
 

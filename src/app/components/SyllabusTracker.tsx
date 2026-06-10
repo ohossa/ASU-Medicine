@@ -137,13 +137,13 @@ export function SyllabusTracker({ moduleCode, moduleName, chapters, onClose }: P
             return (
               <div 
                 key={ch.id} 
-                className="glass-panel glow-border rounded-2xl p-5 sm:p-6 transition-all shadow-sm hover:shadow-md"
+                className="bg-white dark:bg-gray-900/40 border border-gray-100 dark:border-gray-800 rounded-[20px] p-5 sm:p-6 transition-all shadow-sm hover:shadow-md"
               >
                 <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
                   
                   {/* Chapter title and badge */}
                   <div className="flex items-start gap-4 flex-1">
-                    <span className="text-2xl flex-shrink-0 glass-panel w-12 h-12 rounded-xl flex items-center justify-center glow-border">
+                    <span className="text-2xl flex-shrink-0 bg-gray-50 dark:bg-black/50 border border-gray-100 dark:border-gray-800 w-12 h-12 rounded-xl flex items-center justify-center shadow-sm">
                       {ch.emoji}
                     </span>
                     <div>
@@ -159,17 +159,17 @@ export function SyllabusTracker({ moduleCode, moduleName, chapters, onClose }: P
                   {/* 4 Checklist boxes */}
                   <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
                     {[
-                      { field: 'studied', label: t('studied'), color: 'bg-physiology border-physiology text-white', inactive: 'glass-panel text-gray-400 dark:text-gray-500 hover:border-physiology/40' },
-                      { field: 'revised', label: t('revised'), color: 'bg-biochem border-biochem text-white', inactive: 'glass-panel text-gray-400 dark:text-gray-500 hover:border-biochem/40' },
-                      { field: 'mcq', label: t('mcqDone') || 'MCQ', color: 'bg-anatomy border-anatomy text-white', inactive: 'glass-panel text-gray-400 dark:text-gray-500 hover:border-anatomy/40' },
-                      { field: 'essay', label: t('essayDone') || 'Essay', color: 'bg-histology border-histology text-white', inactive: 'glass-panel text-gray-400 dark:text-gray-500 hover:border-histology/40' },
+                      { field: 'studied', label: t('studied'), color: 'bg-physiology border-physiology text-white', inactive: 'bg-gray-100 dark:bg-gray-800 border-transparent text-gray-500 hover:bg-gray-200 dark:hover:bg-gray-700' },
+                      { field: 'revised', label: t('revised'), color: 'bg-biochem border-biochem text-white', inactive: 'bg-gray-100 dark:bg-gray-800 border-transparent text-gray-500 hover:bg-gray-200 dark:hover:bg-gray-700' },
+                      { field: 'mcq', label: t('mcqDone') || 'MCQ', color: 'bg-anatomy border-anatomy text-white', inactive: 'bg-gray-100 dark:bg-gray-800 border-transparent text-gray-500 hover:bg-gray-200 dark:hover:bg-gray-700' },
+                      { field: 'essay', label: t('essayDone') || 'Essay', color: 'bg-histology border-histology text-white', inactive: 'bg-gray-100 dark:bg-gray-800 border-transparent text-gray-500 hover:bg-gray-200 dark:hover:bg-gray-700' },
                     ].map((box) => {
                       const isActive = state[box.field as keyof Omit<ChapterState, 'notes'>];
                       return (
                         <button
                           key={box.field}
                           onClick={() => handleCheckboxChange(ch.id, box.field as keyof Omit<ChapterState, 'notes'>)}
-                          className={`tracker-checkbox px-3.5 py-2.5 rounded-xl border text-[11px] font-bold flex items-center justify-center gap-1.5 transition-all shadow-sm ${
+                          className={`tracker-checkbox px-3.5 py-2.5 rounded-full border text-[11px] font-bold flex items-center justify-center gap-1.5 transition-all shadow-sm ${
                             isActive ? box.color : box.inactive
                           }`}
                         >
@@ -183,20 +183,20 @@ export function SyllabusTracker({ moduleCode, moduleName, chapters, onClose }: P
                 </div>
 
                 {/* Personal Notes Box */}
-                <div className="mt-5 pt-4 border-t border-gray-50 dark:border-gray-800 flex items-start gap-3">
-                  <div className="mt-2 text-gray-400 dark:text-gray-500">
-                    <Edit3 size={14} />
+                <div className="mt-5 pt-5 border-t border-gray-100 dark:border-gray-800/60 flex items-start gap-3">
+                  <div className="mt-2 text-gray-400 dark:text-gray-500 shrink-0">
+                    <Edit3 size={16} />
                   </div>
                   <div className="flex-1">
-                    <span className="text-[10px] font-bold text-gray-400 dark:text-gray-500 uppercase tracking-wider block mb-1">
+                    <span className="text-[10px] font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest block mb-2">
                       {t('personalNotes')}
                     </span>
                     <input
                       type="text"
                       value={state.notes}
                       onChange={(e) => handleNotesChange(ch.id, e.target.value)}
-                      placeholder={t('notesPlaceholder')}
-                      className="w-full bg-transparent border-0 border-b border-transparent focus:border-physiology text-xs font-semibold text-gray-700 dark:text-gray-300 placeholder-gray-300 dark:placeholder-gray-700 py-1 px-0 focus:outline-none focus:ring-0 transition-colors"
+                      placeholder={t('notesPlaceholder') || 'Type your notes here...'}
+                      className="w-full bg-gray-50 dark:bg-black/50 border border-gray-200 dark:border-gray-800 focus:border-physiology rounded-xl text-xs font-semibold text-gray-800 dark:text-gray-200 placeholder-gray-400 dark:placeholder-gray-600 py-2.5 px-4 focus:outline-none focus:ring-2 focus:ring-physiology/20 transition-all shadow-inner"
                     />
                   </div>
                 </div>

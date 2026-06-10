@@ -264,6 +264,7 @@ export const SYLLABUS_MODULES: Record<number, Record<number, ModuleInfo[]>> = {
       { code: 'IHC-1', name: 'Introduction to Histology & Cell Biology', cp: 3, marks: 60, keywords: ['histology', 'ihc', 'cell biology', 'cell', 'histo', 'intro histology'] },
       { code: 'MIM-1', name: 'Immunology Module', cp: 3, marks: 60, keywords: ['immunology', 'immuno', 'mim', 'immune'] },
       { code: 'MBMG-1', name: 'Molecular Biology and Medical Genetics Module', cp: 3, marks: 60, keywords: ['molecular', 'genetics', 'mbmg', 'genetics module', 'molecular biology'] },
+      { code: 'P1-1', name: 'Introduction to Information & Communication Technology (ICT) and Medical Terminology', cp: 1.5, marks: 30, keywords: ['ict', 'terminology', 'medical terminology'] },
     ],
     2: [
       { code: 'IPAT-1', name: 'Introduction to Pathology', cp: 5, marks: 100, keywords: ['pathology', 'ipat', 'patho', 'intro pathology'] },
@@ -271,6 +272,7 @@ export const SYLLABUS_MODULES: Record<number, Record<number, ModuleInfo[]>> = {
       { code: 'MINF-1', name: 'Infection Module', cp: 4.5, marks: 90, keywords: ['infection', 'infect', 'minf', 'microbiology', 'parasitology', 'micro', 'parasite'] },
       { code: 'MLS-1', name: 'Locomotor Module', cp: 12, marks: 240, keywords: ['locomotor', 'mls', 'loco', 'musculoskeletal', 'ortho', 'orthopedics'] },
       { code: 'BLS-HE-1', name: 'Basic life support + History taking & clinical examination', cp: 1.5, marks: 30, keywords: ['bls', 'history', 'examination', 'clinical examination', 'life support', 'bls-he'] },
+      { code: 'P2-1', name: 'Presentation skills - Learning skills - Time management', cp: 1.5, marks: 30, keywords: ['presentation', 'skills', 'time management'] },
     ],
   },
   2: {
@@ -283,20 +285,49 @@ export const SYLLABUS_MODULES: Record<number, Record<number, ModuleInfo[]>> = {
       { code: 'MCNS-2', name: 'Central Nervous System Module', cp: 13, marks: 260, keywords: ['cns', 'central nervous', 'mcns', 'neuro', 'neurology', 'brain'] },
       { code: 'MSS-2', name: 'Special Senses Module', cp: 4, marks: 80, keywords: ['special senses', 'senses', 'mss', 'eye', 'ear', 'ophthalmology'] },
       { code: 'MEM-2', name: 'Endocrine System & Metabolism Module', cp: 5.5, marks: 110, keywords: ['endocrine', 'metabolism', 'mem', 'hormone', 'hormones'] },
+      { code: 'P3-2', name: 'Behavioral science', cp: 1.5, marks: 30, keywords: ['behavioral', 'science', 'psychology'] },
+      { code: 'R-2', name: 'Fundamentals of Research', cp: 3, marks: 60, keywords: ['research', 'fundamentals'] },
     ],
   },
   3: {
     1: [
       { code: 'MGL-3', name: 'GIT & Liver Module', cp: 13, marks: 260, keywords: ['git', 'liver', 'mgl', 'gastrointestinal', 'gastro', 'stomach'] },
       { code: 'MUG-3', name: 'Urogenital System Module', cp: 10, marks: 200, keywords: ['urogenital', 'renal', 'mug', 'urinary', 'kidney', 'kidneys'] },
+      { code: 'P4-3', name: 'Medical Ethics', cp: 1.5, marks: 30, keywords: ['ethics', 'medical ethics'] },
+      { code: 'P5-3', name: 'Doctor-Patient Communication', cp: 1.5, marks: 30, keywords: ['communication', 'doctor', 'patient'] },
     ],
     2: [
       { code: 'CEO-3', name: 'Community, Environmental and Occupational Medicine', cp: 6, marks: 120, keywords: ['community', 'environmental', 'occupational', 'ceo', 'public health', 'preventive'] },
       { code: 'FT-3', name: 'Forensic Medicine and Clinical Toxicology', cp: 7.5, marks: 150, keywords: ['forensic', 'toxicology', 'ft', 'toxic', 'tox'] },
       { code: 'ORL-3', name: 'Otorhinolaryngology', cp: 7, marks: 140, keywords: ['ent', 'orl', 'otorhinolaryngology', 'ear nose throat'] },
-      { code: 'MED1', name: 'Foundation of Internal Medicine 3', cp: 3, marks: 60, keywords: ['internal medicine', 'med1', 'medicine', 'foundation medicine'] },
+      { code: 'MED1-3', name: 'Foundation of Internal Medicine', cp: 3, marks: 60, keywords: ['internal medicine', 'med1', 'medicine', 'foundation medicine'] },
+      { code: 'P6-3', name: 'Leadership skills & Management skills', cp: 1.5, marks: 30, keywords: ['leadership', 'management'] },
+      { code: 'R-3', name: 'Scientific Research', cp: 1.5, marks: 30, keywords: ['research', 'scientific'] },
     ],
   },
+  4: {
+    1: [
+      { code: 'MED2-4', name: 'General and Special Internal Medicine 1', cp: 19.5, marks: 390, keywords: ['internal medicine', 'med2', 'medicine'] },
+      { code: 'FAM-4', name: 'Family Medicine', cp: 3, marks: 60, keywords: ['family medicine', 'fam'] },
+      { code: 'P7-4', name: 'Communication within a Medical Team', cp: 1.5, marks: 30, keywords: ['communication', 'team'] },
+    ],
+    2: [
+      { code: 'MED3-4', name: 'General and Special Internal Medicine 2', cp: 19.5, marks: 390, keywords: ['internal medicine', 'med3', 'medicine'] },
+      { code: 'PED-4', name: 'Pediatrics', cp: 21, marks: 420, keywords: ['pediatrics', 'peds', 'ped'] },
+    ]
+  },
+  5: {
+    1: [
+      { code: 'OO-5', name: 'Ophthalmology', cp: 7, marks: 140, keywords: ['ophthalmology', 'eye', 'oo'] },
+      { code: 'SUR1-5', name: 'General and Special Surgery 1', cp: 18, marks: 360, keywords: ['surgery', 'sur1', 'general surgery'] },
+      { code: 'EM1-5', name: 'Emergency Medicine and Trauma 1', cp: 3, marks: 60, keywords: ['emergency', 'em1', 'trauma'] },
+    ],
+    2: [
+      { code: 'SUR2-5', name: 'General and Special Surgery 2', cp: 18, marks: 360, keywords: ['surgery', 'sur2', 'general surgery'] },
+      { code: 'EM2-5', name: 'Emergency Medicine and Trauma 2', cp: 3, marks: 60, keywords: ['emergency', 'em2', 'trauma'] },
+      { code: 'OG-5', name: 'Obstetrics and Gynecology', cp: 21, marks: 420, keywords: ['obstetrics', 'gynecology', 'obgyn', 'og'] },
+    ]
+  }
 };
 
 // ── Dynamic Loader ─────────────────────────────────────────────────────────────

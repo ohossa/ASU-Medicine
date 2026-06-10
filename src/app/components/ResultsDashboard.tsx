@@ -37,18 +37,20 @@ interface Props {
 }
 
 function getPerformanceLabel(pct: number): string {
-  if (pct >= 90) return 'Outstanding!';
-  if (pct >= 75) return 'Great Performance!';
-  if (pct >= 60) return 'Good Effort!';
-  if (pct >= 40) return 'Keep Practicing!';
-  return 'Need More Review';
+  if (pct >= 85) return 'A - Excellent';
+  if (pct >= 75) return 'B - Very Good';
+  if (pct >= 65) return 'C - Good';
+  if (pct >= 60) return 'D - Satisfactory';
+  if (pct >= 30) return 'F - Insufficient';
+  return 'F - Highly Insufficient';
 }
 
 function getPerformanceBadge(pct: number): string {
-  if (pct >= 90) return 'Exceptional Work';
-  if (pct >= 75) return 'Excellent Work';
-  if (pct >= 60) return 'Good Work';
-  return 'Keep Going';
+  if (pct >= 85) return 'Grade A';
+  if (pct >= 75) return 'Grade B';
+  if (pct >= 65) return 'Grade C';
+  if (pct >= 60) return 'Grade D';
+  return 'Grade F';
 }
 
 export function ResultsDashboard({

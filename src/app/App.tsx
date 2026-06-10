@@ -29,6 +29,7 @@ import { ThemeProvider, useTheme } from './context/ThemeContext';
 import { ThemeToggle } from './components/ThemeToggle';
 import { LanguageProvider, useLanguage } from './context/LanguageContext';
 import { LanguageToggle } from './components/LanguageToggle';
+import { StackedCarousel } from './components/ui/StackedCarousel';
 import { saveQuizResult, getQuizHistory } from './utils/storage';
 import type { QuizResult } from './utils/storage';
 import {
@@ -75,7 +76,6 @@ function PortalFooter() {
 }
 
 function MainApp() {
-  const { isDark } = useTheme();
   const { t, language } = useLanguage();
 
   const hasActiveModulesForYear = (year: number): boolean => {
@@ -107,6 +107,10 @@ function MainApp() {
   
   // UI States
   const [modalModule, setModalModule] = useState<ModuleInfo | null>(null);
+
+  // Carousel states
+  const [activeYearCarouselIndex, setActiveYearCarouselIndex] = useState(1); // Default to Year 2
+  const [activeSemesterCarouselIndex, setActiveSemesterCarouselIndex] = useState(0);
 
   const transitionTo = (fn: () => void) => {
     // @ts-ignore
@@ -486,8 +490,8 @@ function MainApp() {
         <header className="shrinking-header bg-white/70 dark:bg-gray-900/70 backdrop-blur-xl border-b border-gray-100 dark:border-gray-800/50 sticky top-0 z-40 transition-colors duration-300">
           <div className="max-w-[1600px] mx-auto px-6 py-5 transition-all duration-300 flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-2xl bg-gradient-to-br from-physiology to-clinical flex items-center justify-center text-white font-archivo font-black text-xl shadow-md shadow-physiology/20">
-                A
+              <div className="w-10 h-10 rounded-full bg-physiology/10 flex items-center justify-center text-physiology-dark dark:text-physiology drop-shadow-sm transition-transform hover:scale-105 will-change-transform transform-gpu">
+                <Activity size={24} strokeWidth={2.5} />
               </div>
               <div>
                 <h1 className="font-archivo font-extrabold text-base tracking-tight leading-none">
@@ -497,42 +501,39 @@ function MainApp() {
                   {t('asu')}
                 </p>
               </div>
+            </div>
 
+            <div className="flex items-center gap-3 sm:gap-4 flex-wrap justify-end">
               {screen === 'yearSelect' && (
-                <div className="flex flex-col ml-4 sm:ml-6 border-l border-gray-150 dark:border-gray-800 pl-4 space-y-0.5">
+                <div className="hidden md:flex items-center gap-2 mr-2">
                   <a
                     href="https://asu2learn.asu.edu.eg/medicine-emp/my/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 text-[11px] font-bold text-physiology hover:text-physiology-dark dark:hover:text-physiology transition-colors"
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-physiology/10 hover:bg-physiology/20 text-physiology-dark dark:text-physiology border border-physiology/20 rounded-xl text-xs font-bold transition-all hover:-translate-y-0.5"
                   >
-                    <span className="w-1.5 h-1.5 rounded-full bg-physiology animate-pulse" />
                     <span>{t('empPortal')}</span>
+                    <ExternalLink size={12} className="text-physiology" />
                   </a>
                   <a
                     href="https://asu2learn.asu.edu.eg/medicine/my/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 text-[11px] font-bold text-gray-400 hover:text-gray-700 dark:text-gray-500 dark:hover:text-gray-300 transition-colors"
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700 rounded-xl text-xs font-bold transition-all hover:-translate-y-0.5"
                   >
-                    <span className="w-1.5 h-1.5 rounded-full bg-gray-400 dark:bg-gray-600" />
                     <span>{t('mainstreamPortal')}</span>
+                    <ExternalLink size={12} className="text-gray-500" />
+                  </a>
+                  <a
+                    href="https://ums.asu.edu.eg/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-clinical/10 hover:bg-clinical/20 text-clinical-dark dark:text-clinical border border-clinical/20 rounded-xl text-xs font-bold transition-all hover:-translate-y-0.5"
+                  >
+                    <span>{t('umsPortal')}</span>
+                    <ExternalLink size={12} className="text-clinical" />
                   </a>
                 </div>
-              )}
-            </div>
-
-            <div className="flex items-center gap-3 sm:gap-4">
-              {screen === 'yearSelect' && (
-                <a
-                  href="https://ums.asu.edu.eg/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-clinical/10 hover:bg-clinical/20 text-clinical-dark border border-clinical/20 rounded-xl text-xs font-bold transition-all hover:-translate-y-0.5"
-                >
-                  <span>{t('umsPortal')}</span>
-                  <ExternalLink size={12} className="text-clinical" />
-                </a>
               )}
               <LanguageToggle />
               <ThemeToggle />
@@ -543,9 +544,9 @@ function MainApp() {
 
       {/* PORTAL CONTAINER */}
       <main className="max-w-[1600px] mx-auto px-6 py-12 relative z-10">
-        <div className="fixed inset-0 pointer-events-none -z-10 overflow-hidden">
-          <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] bg-physiology/10 dark:bg-physiology/5 blur-[120px] rounded-full mix-blend-multiply dark:mix-blend-screen animate-pulse duration-10000"></div>
-          <div className="absolute bottom-[-20%] right-[-10%] w-[50%] h-[50%] bg-clinical/10 dark:bg-clinical/5 blur-[120px] rounded-full mix-blend-multiply dark:mix-blend-screen animate-pulse duration-10000" style={{ animationDelay: '2s' }}></div>
+        <div className="fixed inset-0 pointer-events-none -z-10 overflow-hidden transform-gpu">
+          <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] bg-physiology/10 dark:bg-physiology/5 blur-[120px] rounded-full mix-blend-multiply dark:mix-blend-screen animate-pulse duration-10000 will-change-transform transform-gpu"></div>
+          <div className="absolute bottom-[-20%] right-[-10%] w-[50%] h-[50%] bg-clinical/10 dark:bg-clinical/5 blur-[120px] rounded-full mix-blend-multiply dark:mix-blend-screen animate-pulse duration-10000 will-change-transform transform-gpu" style={{ animationDelay: '2s' }}></div>
         </div>
         
         {/* Breadcrumbs for easy navigation jumpbacks */}
@@ -573,98 +574,116 @@ function MainApp() {
           </div>
         )}
 
-      {showTracker && selectedModule && (
-        <SyllabusTracker
-          moduleCode={selectedModule.code}
-          moduleName={selectedModule.name}
-          chapters={getChaptersForModuleAndMode(selectedModule.code, 'mixed')}
-          onClose={() => setShowTracker(false)}
-        />
-      )}
-
         {/* SCREEN 1: YEAR SELECT */}
         {screen === 'yearSelect' && (
           <div className="w-full pb-10">
-            {/* Massive Hero Section */}
-            <div className="relative w-full rounded-[40px] bg-gradient-to-br from-gray-900 to-black dark:from-gray-950 dark:to-black overflow-hidden mb-10 border border-gray-800 shadow-2xl">
-              <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-20 mix-blend-overlay"></div>
-              <div className="absolute top-[-50%] right-[-10%] w-[80%] h-[150%] bg-physiology/20 blur-[140px] rounded-full mix-blend-screen animate-pulse duration-10000 pointer-events-none"></div>
-              <div className="absolute bottom-[-50%] left-[-10%] w-[60%] h-[120%] bg-clinical/20 blur-[120px] rounded-full mix-blend-screen animate-pulse duration-10000 pointer-events-none delay-1000"></div>
-              
-              <div className="relative z-10 px-10 py-16 lg:py-24 max-w-5xl">
-                <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-white/10 backdrop-blur-md text-white rounded-full text-xs font-semibold tracking-widest uppercase mb-6 border border-white/20 shadow-lg">
-                  {t('asu')} Academic Portal <Sparkles size={12} className="text-physiology-light" />
-                </div>
-                <h1 className="font-archivo text-5xl lg:text-7xl font-black tracking-tight leading-[1.1] text-white mb-6">
-                  {t('selectYear').replace('Select Academic ', 'Select\nAcademic ')}
-                </h1>
-                <p className="text-gray-400 text-lg lg:text-xl font-medium max-w-2xl leading-relaxed">
-                  {t('selectYearDesc')}
-                </p>
-              </div>
+            {/* Clean Apple Music Style Header */}
+            <div className="max-w-[1600px] mx-auto px-4 lg:px-12 mb-8 mt-4 text-center">
+              <h1 className="font-archivo text-4xl lg:text-6xl font-black tracking-tight text-gray-900 dark:text-white mb-3">
+                {t('selectYear')}
+              </h1>
+              <p dir="rtl" className="text-physiology dark:text-physiology-light font-medium text-xl lg:text-3xl max-w-2xl mx-auto" style={{ fontFamily: "'Amiri', serif", lineHeight: "1.8" }}>
+                ﴿وَمَنْ أَحْيَاهَا فَكَأَنَّمَا أَحْيَا النَّاسَ جَمِيعًا﴾
+              </p>
             </div>
 
-            {/* Symmetric Grid Layout (No Sidebar) */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-[1600px] mx-auto">
-              {[1, 2, 3, 4, 5, 6].map((year) => {
-                const isClerkship = year >= 4;
-                const active = hasActiveModulesForYear(year);
-                
-                return (
-                  <button
-                    key={year}
-                    onClick={() => active && handleSelectYear(year)}
-                    disabled={!active}
-                    className={`text-start glass-panel rounded-[32px] p-6 flex flex-col justify-between relative overflow-hidden group transition-all duration-500 h-56 ${
-                      active
-                        ? 'hover:border-physiology/40 hover:shadow-2xl hover:shadow-physiology/10 cursor-pointer glow-border hover:-translate-y-1.5'
-                        : 'opacity-60 saturate-50 cursor-not-allowed pointer-events-none'
-                    }`}
-                  >
-                    <div className="absolute -right-20 -top-20 w-64 h-64 rounded-full bg-physiology/5 group-hover:bg-physiology/10 transition-colors duration-700 blur-2xl pointer-events-none" />
-                    
-                    {!active && (
-                      <span className="absolute top-6 right-6 px-4 py-1.5 bg-white/40 dark:bg-black/40 backdrop-blur-md border border-white/40 dark:border-white/10 text-gray-600 dark:text-gray-300 rounded-xl text-[10px] font-extrabold uppercase tracking-widest flex items-center gap-2 shadow-sm pointer-events-none">
-                        <Lock size={12} />
-                        {t('comingSoon').replace('...', '')}
-                      </span>
-                    )}
+            {/* Stacked 3D Carousel Layout for Year Select */}
+            <div className="max-w-[1600px] mx-auto pb-4">
+              <StackedCarousel 
+                activeIndex={activeYearCarouselIndex}
+                setActiveIndex={setActiveYearCarouselIndex}
+                onSelect={(id) => handleSelectYear(id as number)}
+                items={[1, 2, 3, 4, 5].map(year => {
+                  const active = hasActiveModulesForYear(year);
 
-                    <div className="flex justify-between items-start w-full">
-                      <div className={`w-fit px-5 h-12 rounded-2xl flex items-center justify-center font-archivo font-black text-2xl tracking-tight shadow-sm border ${
-                        active 
-                          ? 'bg-gradient-to-br from-physiology/10 to-physiology/5 text-physiology-dark border-physiology/20 dark:text-physiology-light' 
-                          : 'bg-gray-100 dark:bg-gray-800 text-gray-400 dark:text-gray-500 border-transparent'
-                      }`}>
-                        {t('year' + year)}
-                      </div>
-                    </div>
-                    
-                    <div className="mt-auto w-full">
-                      <h3 className="font-archivo text-2xl lg:text-3xl font-black text-gray-900 dark:text-white tracking-tight mb-1">
-                        {isClerkship ? 'Clinical Phase' : 'Foundations'}
-                      </h3>
-                      <p className="text-xs text-gray-500 dark:text-gray-400 font-bold uppercase tracking-widest">
-                        {isClerkship ? t('clerkship') : t('preClerkship')}
-                      </p>
-                      
-                      {active && (
-                        <div className="mt-5 pt-4 border-t border-gray-100 dark:border-gray-800/60 flex items-center justify-between">
-                          <div className="flex items-center gap-2">
-                            <span className="w-2.5 h-2.5 rounded-full bg-physiology animate-pulse" />
-                            <span className="text-[10px] font-extrabold uppercase tracking-widest text-physiology-dark dark:text-physiology">
-                              {t('activeModules')}
-                            </span>
+                  let totalCp = 0;
+                  let totalMarks = 0;
+                  const sems = SYLLABUS_MODULES[year];
+                  if (sems) {
+                    Object.values(sems).forEach(modules => {
+                      modules.forEach(mod => {
+                        totalCp += mod.cp;
+                        totalMarks += mod.marks;
+                      });
+                    });
+                  }
+
+                  const getPhaseTitle = (y: number) => {
+                    if (y === 1 || y === 2) return 'Foundations';
+                    if (y === 3) return 'Transitional Phase';
+                    return 'Clinical Phase';
+                  };
+
+                  const getPhaseSubtitle = (y: number) => {
+                    if (y === 1 || y === 2) return t('preClerkship');
+                    if (y === 3) return 'Pre-clerkship / Clerkship';
+                    return t('clerkship');
+                  };
+
+                  return {
+                    id: year,
+                    disabled: false, // Always allow clicking into the year
+                    content: (
+                      <div className="w-full h-full glass-panel flex flex-col justify-between relative overflow-hidden group bg-white/80 dark:bg-black/80 backdrop-blur-3xl p-8">
+                        <div className="absolute -right-20 -top-20 w-64 h-64 rounded-full bg-physiology/5 group-hover:bg-physiology/10 transition-colors duration-700 blur-2xl pointer-events-none" />
+
+                        <div className="flex justify-between items-start w-full relative z-10 gap-2">
+                          <div className={`w-fit px-5 h-12 rounded-2xl flex items-center justify-center shrink-0 font-archivo font-black text-2xl tracking-normal shadow-sm border ${
+                            active 
+                              ? 'bg-gradient-to-br from-physiology/10 to-physiology/5 text-physiology-dark border-physiology/20 dark:text-physiology-light' 
+                              : 'bg-gray-100 dark:bg-gray-800 text-gray-400 dark:text-gray-500 border-transparent'
+                          }`}>
+                            {t('year' + year)}
                           </div>
-                          <span className="inline-flex items-center gap-1.5 text-xs font-bold text-physiology group-hover:translate-x-1.5 transition-transform duration-300">
-                            {t('enter')} <ArrowRight size={14} className="rtl:rotate-180" />
-                          </span>
+                          
+                          {!active && (
+                            <span className="px-3 py-1.5 mt-2 bg-white/40 dark:bg-black/40 backdrop-blur-md border border-white/40 dark:border-white/10 text-gray-600 dark:text-gray-300 rounded-xl text-[10px] font-extrabold uppercase tracking-widest flex items-center gap-1.5 shadow-sm pointer-events-none whitespace-nowrap">
+                              <Lock size={10} className="shrink-0" />
+                              <span>{language === 'en' ? 'LOCKED' : 'مغلق'}</span>
+                            </span>
+                          )}
                         </div>
-                      )}
-                    </div>
-                  </button>
-                );
-              })}
+                        
+                        <div className="mt-auto w-full relative z-10">
+                          <h3 className="font-archivo text-2xl lg:text-3xl font-black text-gray-900 dark:text-white tracking-tight mb-1">
+                            {getPhaseTitle(year)}
+                          </h3>
+                          <p className="text-xs text-gray-500 dark:text-gray-400 font-bold uppercase tracking-widest">
+                            {getPhaseSubtitle(year)}
+                          </p>
+                          
+                          {totalCp > 0 && (
+                            <div className="flex gap-4 mt-3">
+                              <div className="flex flex-col">
+                                <span className="text-[9px] font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest">Credit Points</span>
+                                <span className="text-sm font-black text-gray-700 dark:text-gray-300">{totalCp} CP</span>
+                              </div>
+                              <div className="flex flex-col">
+                                <span className="text-[9px] font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest">Total Marks</span>
+                                <span className="text-sm font-black text-gray-700 dark:text-gray-300">{totalMarks}</span>
+                              </div>
+                            </div>
+                          )}
+
+                          {active && (
+                            <div className="mt-5 pt-4 border-t border-gray-100 dark:border-gray-800/60 flex items-center justify-between">
+                              <div className="flex items-center gap-2">
+                                <span className="w-2.5 h-2.5 rounded-full bg-physiology animate-pulse" />
+                                <span className="text-[10px] font-extrabold uppercase tracking-widest text-physiology-dark dark:text-physiology">
+                                  {t('activeModules')}
+                                </span>
+                              </div>
+                              <span className="inline-flex items-center gap-1.5 text-xs font-bold text-physiology group-hover:translate-x-1.5 transition-transform duration-300">
+                                {t('enter')} <ArrowRight size={14} className="rtl:rotate-180" />
+                              </span>
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    )
+                  };
+                })}
+              />
             </div>
             
             <div className="h-10"></div>
@@ -728,51 +747,86 @@ function MainApp() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              {[1, 2].map((sem) => {
-                const active = selectedYear ? hasActiveModulesForSemester(selectedYear, sem) : false;
-                return (
-                  <button
-                    key={sem}
-                    onClick={() => active && handleSelectSemester(sem)}
-                    disabled={!active}
-                    className={`portal-card text-start glass-panel p-6 flex flex-col justify-between h-36 animate-pop-up group relative overflow-hidden ${
-                      active
-                        ? 'hover:border-physiology/40 cursor-pointer glow-border'
-                        : 'opacity-60 saturate-50 cursor-not-allowed pointer-events-none shadow-none'
-                    }`}
-                  >
-                    <div className="absolute -right-8 -top-8 w-28 h-28 rounded-full bg-physiology/5 group-hover:bg-physiology/10 transition-colors duration-300" />
-                    
-                    {!active && (
-                      <span className="absolute top-4 right-4 px-3 py-1 bg-white/40 dark:bg-black/40 backdrop-blur-md border border-white/40 dark:border-white/10 text-gray-600 dark:text-gray-300 rounded-xl text-[10px] font-extrabold uppercase tracking-widest flex items-center gap-1.5 shadow-sm">
-                        <Lock size={10} />
-                        {t('comingSoon').replace('...', '')}
-                      </span>
-                    )}
+            <div className="max-w-2xl mx-auto pb-4">
+              <StackedCarousel 
+                activeIndex={activeSemesterCarouselIndex}
+                setActiveIndex={setActiveSemesterCarouselIndex}
+                onSelect={(id) => handleSelectSemester(id as number)}
+                items={[1, 2].map(sem => {
+                  const active = selectedYear ? hasActiveModulesForSemester(selectedYear, sem) : false;
+                  
+                  let totalCp = 0;
+                  let totalMarks = 0;
+                  if (selectedYear && SYLLABUS_MODULES[selectedYear]?.[sem]) {
+                    SYLLABUS_MODULES[selectedYear][sem].forEach(mod => {
+                      totalCp += mod.cp;
+                      totalMarks += mod.marks;
+                    });
+                  }
 
-                    <div>
-                      <div className={`w-fit px-5 h-12 rounded-2xl flex items-center justify-center font-archivo font-black text-xl tracking-tight shadow-sm border gap-2 ${
-                        active ? 'bg-gradient-to-br from-clinical/10 to-clinical/5 text-clinical-dark border-clinical/20' : 'bg-gray-100 dark:bg-gray-800 text-gray-400 dark:text-gray-500 border-transparent'
-                      }`}>
-                        <Calendar size={18} className={active ? 'text-clinical' : ''} />
-                        {t('semester' + sem)}
+                  return {
+                    id: sem,
+                    disabled: false, // Always allow clicking into the semester
+                    content: (
+                      <div className="w-full h-full glass-panel flex flex-col justify-between relative overflow-hidden group bg-white/80 dark:bg-black/80 backdrop-blur-3xl p-6 sm:p-8">
+                        <div className="absolute -right-12 -top-12 w-40 h-40 rounded-full bg-physiology/5 group-hover:bg-physiology/10 transition-colors duration-300 blur-2xl pointer-events-none" />
+
+                        <div className="relative z-10">
+                          <div className="flex justify-between items-start w-full gap-1.5 sm:gap-2">
+                            <div className={`w-fit px-3 sm:px-4 h-10 sm:h-12 rounded-xl sm:rounded-2xl flex items-center justify-center shrink-0 font-archivo font-black text-base sm:text-lg tracking-normal shadow-sm border gap-1.5 sm:gap-2 ${
+                              active ? 'bg-gradient-to-br from-clinical/10 to-clinical/5 text-clinical-dark dark:text-clinical border-clinical/20' : 'bg-gray-100 dark:bg-gray-800 text-gray-400 dark:text-gray-500 border-transparent'
+                            }`}>
+                              <Calendar size={16} className={active ? 'text-clinical' : ''} />
+                              {t('semester' + sem)}
+                            </div>
+                            
+                            {!active && (
+                              <span className="px-2 sm:px-3 py-1 mt-1 sm:mt-1.5 bg-white/40 dark:bg-black/40 backdrop-blur-md border border-white/40 dark:border-white/10 text-gray-600 dark:text-gray-300 rounded-lg sm:rounded-xl text-[9px] sm:text-[10px] font-extrabold uppercase tracking-widest flex items-center gap-1 shadow-sm pointer-events-none whitespace-nowrap">
+                                <Lock size={10} className="shrink-0" />
+                                <span>{language === 'en' ? 'LOCKED' : 'مغلق'}</span>
+                              </span>
+                            )}
+                          </div>
+                          
+                          {/* Phase logic for semester */}
+                          {selectedYear && (
+                            <div className="mt-3 text-[10px] font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400">
+                              {selectedYear < 3 || (selectedYear === 3 && sem === 1) ? t('preClerkship') : t('clerkship')}
+                            </div>
+                          )}
+                        </div>
+
+                        <div className="flex flex-col w-full relative z-10 mt-auto space-y-4">
+                          {totalCp > 0 && (
+                            <div className="flex gap-4">
+                              <div className="flex flex-col">
+                                <span className="text-[9px] font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest">Credit Points</span>
+                                <span className="text-sm font-black text-gray-700 dark:text-gray-300">{totalCp} CP</span>
+                              </div>
+                              <div className="flex flex-col">
+                                <span className="text-[9px] font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest">Total Marks</span>
+                                <span className="text-sm font-black text-gray-700 dark:text-gray-300">{totalMarks}</span>
+                              </div>
+                            </div>
+                          )}
+
+                          <div className="flex items-center justify-end w-full">
+                            {active ? (
+                              <span className="inline-flex items-center gap-1.5 text-sm font-bold text-physiology group-hover:translate-x-1.5 transition-transform duration-200">
+                                {t('enter')} <ArrowRight size={16} className="rtl:rotate-180" />
+                              </span>
+                            ) : (
+                              <span className="inline-flex items-center gap-1.5 text-sm font-bold text-gray-400 dark:text-gray-500">
+                                {t('comingSoon')}
+                              </span>
+                            )}
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                    <div className="flex items-center justify-end w-full">
-                      {active ? (
-                        <span className="inline-flex items-center gap-1.5 text-xs font-bold text-physiology group-hover:translate-x-1.5 transition-transform duration-200">
-                          {t('enter')} <ArrowRight size={14} className="rtl:rotate-180" />
-                        </span>
-                      ) : (
-                        <span className="inline-flex items-center gap-1.5 text-xs font-bold text-gray-400 dark:text-gray-500">
-                          {t('comingSoon')}
-                        </span>
-                      )}
-                    </div>
-                  </button>
-                );
-              })}
+                    )
+                  };
+                })}
+              />
             </div>
 
             <div className="flex items-center justify-center">
@@ -796,11 +850,16 @@ function MainApp() {
               <h2 className="font-archivo text-4xl font-black tracking-tight leading-none">
                 {t('selectModule')}
               </h2>
-              <p className="text-gray-500 dark:text-gray-400 font-medium">
-                {language === 'en'
-                  ? `Year ${selectedYear}, Semester ${selectedSemester} credit system syllabus. Click a module card to begin studying.`
-                  : `منهج الساعات المعتمدة للسنة ${selectedYear}، الفصل الدراسي ${selectedSemester}. اضغط على بطاقة الوحدة لبدء المذاكرة.`}
-              </p>
+              <div className="flex flex-col items-center gap-3 mt-2">
+                <span className="px-5 py-2 rounded-2xl bg-white/60 dark:bg-gray-900/60 backdrop-blur-md text-gray-700 dark:text-gray-300 text-sm font-black tracking-widest uppercase border border-gray-200/60 dark:border-gray-800 shadow-sm">
+                  {language === 'en' ? `Year ${selectedYear} • Semester ${selectedSemester}` : `السنة ${selectedYear} • الفصل الدراسي ${selectedSemester}`}
+                </span>
+                <p className="text-gray-500 dark:text-gray-400 font-medium">
+                  {language === 'en'
+                    ? 'Click a module card to begin studying.'
+                    : 'اضغط على بطاقة الوحدة لبدء المذاكرة.'}
+                </p>
+              </div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[1400px] mx-auto">
@@ -1095,6 +1154,15 @@ function MainApp() {
           />
         )}
       </main>
+
+      {showTracker && selectedModule && (
+        <SyllabusTracker
+          moduleCode={selectedModule.code}
+          moduleName={selectedModule.name}
+          chapters={getChaptersForModuleAndMode(selectedModule.code, 'mixed')}
+          onClose={() => setShowTracker(false)}
+        />
+      )}
 
       {/* PREMIUM COMING SOON ALERT DIALOG / MODAL */}
       {modalModule && (

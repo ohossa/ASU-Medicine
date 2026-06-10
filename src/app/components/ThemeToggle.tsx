@@ -2,49 +2,14 @@ import React from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Moon, Sun } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
+import { useLanguage } from '../context/LanguageContext';
 
 export function ThemeToggle() {
   const { isDark, toggleTheme } = useTheme();
-
-  // Sound effect using Web Audio API for a crisp, low-latency click
-  const playClickSound = () => {
-    try {
-      const AudioContext = window.AudioContext || (window as any).webkitAudioContext;
-      if (!AudioContext) return;
-      
-      const ctx = new AudioContext();
-      const osc = ctx.createOscillator();
-      const gain = ctx.createGain();
-
-      osc.connect(gain);
-      gain.connect(ctx.destination);
-
-      // Create a short, premium "thock" or "tick" sound
-      // Varies slightly based on direction for realism
-      if (isDark) {
-        // Switching to Light (higher pitch)
-        osc.type = 'sine';
-        osc.frequency.setValueAtTime(400, ctx.currentTime);
-        osc.frequency.exponentialRampToValueAtTime(600, ctx.currentTime + 0.1);
-      } else {
-        // Switching to Dark (lower pitch)
-        osc.type = 'sine';
-        osc.frequency.setValueAtTime(600, ctx.currentTime);
-        osc.frequency.exponentialRampToValueAtTime(300, ctx.currentTime + 0.1);
-      }
-
-      gain.gain.setValueAtTime(0.1, ctx.currentTime);
-      gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.15);
-
-      osc.start(ctx.currentTime);
-      osc.stop(ctx.currentTime + 0.15);
-    } catch (e) {
-      console.error('Audio play failed', e);
-    }
-  };
+  const { language } = useLanguage();
+  const isRTL = language === 'ar';
 
   const handleToggle = () => {
-    playClickSound();
     toggleTheme();
   };
 
@@ -59,7 +24,7 @@ export function ThemeToggle() {
           ? 'inset 0px 2px 4px rgba(0,0,0,0.5)' 
           : 'inset 0px 2px 4px rgba(0,0,0,0.1)',
       }}
-      transition={{ duration: 0.4, ease: 'easeInOut' }}
+      transition={{ duration: 0.15, ease: 'easeInOut' }}
       role="switch"
       aria-checked={!isDark}
       aria-label="Toggle Dark Mode"
@@ -67,9 +32,9 @@ export function ThemeToggle() {
       {/* Sliding Thumb */}
       <motion.div
         className="relative flex h-7 w-7 items-center justify-center rounded-full shadow-lg"
-        // Thumb Position: Left for Dark (0px), Right for Light (32px)
+        // Thumb Position: In LTR, right is 32. In RTL, right is starting pos (0), so we move left (-32).
         animate={{
-          x: isDark ? 0 : 32,
+          x: isDark ? 0 : (isRTL ? -32 : 32),
           backgroundColor: isDark ? '#2c2c2c' : '#ffffff',
           boxShadow: isDark 
             ? '0px 2px 6px rgba(0,0,0,0.6), 0 0 4px rgba(100, 100, 255, 0.1)' // Cool glow in dark
@@ -77,8 +42,8 @@ export function ThemeToggle() {
         }}
         transition={{
           type: 'spring',
-          stiffness: 400,
-          damping: 25,
+          stiffness: 500,
+          damping: 30,
         }}
       >
         {/* Icon Container with Rotation/Scale Animation */}
@@ -91,7 +56,7 @@ export function ThemeToggle() {
                 initial={{ scale: 0, rotate: -90, opacity: 0 }}
                 animate={{ scale: 1, rotate: 0, opacity: 1 }}
                 exit={{ scale: 0, rotate: 90, opacity: 0 }}
-                transition={{ duration: 0.2 }}
+                transition={{ duration: 0.15 }}
               >
                 <Sun className="h-full w-full fill-current" strokeWidth={2.5} />
               </motion.div>
@@ -102,7 +67,7 @@ export function ThemeToggle() {
                 initial={{ scale: 0, rotate: 90, opacity: 0 }}
                 animate={{ scale: 1, rotate: 0, opacity: 1 }}
                 exit={{ scale: 0, rotate: -90, opacity: 0 }}
-                transition={{ duration: 0.2 }}
+                transition={{ duration: 0.15 }}
               >
                 <Moon className="h-full w-full fill-current" strokeWidth={2.5} />
               </motion.div>
