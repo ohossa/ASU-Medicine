@@ -86,7 +86,7 @@ export function ChapterSelect({
   const totalSubjectsCount = new Set(chapters.flatMap(c => c.subjects.map(s => s.id))).size || 7;
 
   useEffect(() => {
-    setHistory(getQuizHistory().slice(0, 6));
+    setHistory(getQuizHistory().filter(r => r && typeof r === 'object').slice(0, 6));
   }, []);
 
   const handleClearHistory = () => {

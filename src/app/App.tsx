@@ -1220,6 +1220,7 @@ function MainApp() {
               chapters={activeChapters}
               studyModeName={studyModeNameMap[studyMode]}
               moduleName={selectedModule.name}
+              moduleCode={selectedModule.code}
               onSelectChapter={handleSelectChapter}
               onSelectHistory={handleSelectHistory}
               onBackToModeSelect={() => navigateTo('studyModeSelect')}

@@ -7,6 +7,7 @@ import './styles/index.css';
 import App from './app/App.tsx';
 import { LanguageProvider } from './app/context/LanguageContext';
 import { ThemeProvider } from './app/context/ThemeContext';
+import { ErrorBoundary } from './app/components/ErrorBoundary';
 
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 
@@ -16,14 +17,17 @@ if (!PUBLISHABLE_KEY) {
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <ClerkProvider publishableKey={PUBLISHABLE_KEY || "pk_test_placeholder"}>
-      <ThemeProvider>
-        <LanguageProvider>
-          <App />
-          <Analytics />
-          <SpeedInsights />
-        </LanguageProvider>
-      </ThemeProvider>
-    </ClerkProvider>
+    <ErrorBoundary>
+      <ClerkProvider publishableKey={PUBLISHABLE_KEY || "pk_test_placeholder"}>
+        <ThemeProvider>
+          <LanguageProvider>
+            <App />
+            <Analytics />
+            <SpeedInsights />
+          </LanguageProvider>
+        </ThemeProvider>
+      </ClerkProvider>
+    </ErrorBoundary>
   </StrictMode>,
 );
+

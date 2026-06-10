@@ -56,10 +56,10 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart, 
   const totalQuestions = useMemo(() => totalQs(chapter.subjects), [chapter.subjects]);
   const { t, language } = useLanguage();
   
-  const [history, setHistory] = useState(() => getQuizHistory());
+  const [history, setHistory] = useState(() => getQuizHistory().filter(r => r && typeof r === 'object'));
 
   useEffect(() => {
-    const handleStorage = () => setHistory(getQuizHistory());
+    const handleStorage = () => setHistory(getQuizHistory().filter(r => r && typeof r === 'object'));
     window.addEventListener('storage', handleStorage);
     return () => window.removeEventListener('storage', handleStorage);
   }, []);
