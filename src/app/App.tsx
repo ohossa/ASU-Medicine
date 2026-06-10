@@ -36,6 +36,7 @@ import type { QuizResult } from './utils/storage';
 import { SignedIn, SignedOut, UserButton, useUser } from '@clerk/clerk-react';
 import { LoginScreen } from './components/LoginScreen';
 import { useCloudSync } from './hooks/useCloudSync';
+import { YearSelectionModal } from './components/YearSelectionModal';
 import {
   getChaptersForModuleAndMode,
   getModuleQuestionCounts,
@@ -85,6 +86,32 @@ function MainApp() {
   
   // Initialize automatic cloud synchronization
   useCloudSync();
+
+  // Student Year tracking
+  const [studentYear, setStudentYear] = useState<number | null>(() => {
+    try {
+      const saved = localStorage.getItem('asu_medical_student_year');
+      return saved ? parseInt(saved, 10) : null;
+    } catch {
+      return null;
+    }
+  });
+
+  // Listen for storage changes from cloud sync
+  useEffect(() => {
+    const handleStorage = () => {
+      try {
+        const saved = localStorage.getItem('asu_medical_student_year');
+        if (saved) {
+          setStudentYear(parseInt(saved, 10));
+        }
+      } catch (e) {
+        console.error(e);
+      }
+    };
+    window.addEventListener('storage', handleStorage);
+    return () => window.removeEventListener('storage', handleStorage);
+  }, []);
 
   const hasActiveModulesForYear = (year: number): boolean => {
     const semesters = SYLLABUS_MODULES[year];
@@ -498,16 +525,16 @@ function MainApp() {
       {['yearSelect', 'semesterSelect', 'moduleSelect', 'studyModeSelect'].includes(screen) && (
         <header className="shrinking-header bg-white/70 dark:bg-gray-900/70 backdrop-blur-xl border-b border-gray-100 dark:border-gray-800/50 sticky top-0 z-40 transition-colors duration-300">
           <div className="max-w-[1600px] mx-auto px-6 py-5 transition-all duration-300 flex flex-wrap items-center justify-between gap-y-4">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-full bg-physiology/10 flex items-center justify-center text-physiology-dark dark:text-physiology drop-shadow-sm transition-transform hover:scale-105 will-change-transform transform-gpu">
-                <Activity size={24} strokeWidth={2.5} />
+            <div className="flex items-center gap-4">
+              <div className="w-12 h-12 rounded-2xl bg-physiology/10 flex items-center justify-center text-physiology-dark dark:text-physiology drop-shadow-sm transition-transform hover:scale-105 will-change-transform transform-gpu">
+                <Activity size={28} strokeWidth={2.5} />
               </div>
-              <div>
-                <h1 className="font-archivo font-extrabold text-lg tracking-tight leading-none text-gray-900 dark:text-white">
+              <div className="flex flex-col justify-center">
+                <h1 className="font-archivo font-black text-2xl tracking-tight leading-none text-gray-900 dark:text-white mb-1">
                   {user?.firstName} {user?.lastName}
                 </h1>
-                <p className="text-[10px] text-gray-400 dark:text-gray-500 font-bold uppercase tracking-wider mt-0.5">
-                  Medical Student
+                <p className="text-xs text-gray-500 dark:text-gray-400 font-bold uppercase tracking-widest">
+                  {studentYear ? `Year ${studentYear} Medical Student` : 'Medical Student'}
                 </p>
               </div>
             </div>
@@ -1225,6 +1252,11 @@ function MainApp() {
             </div>
           </div>
         </div>
+      )}
+
+      {/* YEAR SELECTION ONBOARDING MODAL */}
+      {!studentYear && (
+        <YearSelectionModal onSelect={setStudentYear} />
       )}
     </div>
   );

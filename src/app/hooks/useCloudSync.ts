@@ -3,7 +3,8 @@ import { useAuth } from '@clerk/clerk-react';
 
 const STORAGE_KEYS = [
   'endocrine_essay_quiz_history',
-  'asu_study_tracker_MEM-2'
+  'asu_study_tracker_MEM-2',
+  'asu_medical_student_year'
 ];
 
 export function useCloudSync() {
