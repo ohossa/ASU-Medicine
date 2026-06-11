@@ -1,4 +1,4 @@
-import { useState, useEffect, Suspense, lazy } from 'react';
+import { useState, useEffect, useRef, Suspense, lazy } from 'react';
 import { createPortal } from 'react-dom';
 import {
   GraduationCap,
@@ -41,6 +41,7 @@ import { StackedCarousel } from './components/ui/StackedCarousel';
 import { saveQuizResult, getQuizHistory } from './utils/storage';
 import type { QuizResult } from './utils/storage';
 import { SignedIn, SignedOut, UserButton, useUser } from '@clerk/clerk-react';
+import { dark } from '@clerk/themes';
 const LoginScreen = lazy(() => import('./components/LoginScreen').then(m => ({ default: m.LoginScreen })));
 import { useCloudSync } from './hooks/useCloudSync';
 import { YearSelectionModal } from './components/YearSelectionModal';
@@ -92,7 +93,17 @@ function ClerkThemeTogglePortal() {
 
   useEffect(() => {
     const findContainer = () => {
-      const preview = document.querySelector('.cl-userPreview');
+      const previews = document.querySelectorAll('.cl-userPreview');
+      let preview: Element | null = null;
+      for (let i = 0; i < previews.length; i++) {
+        const p = previews[i];
+        if (p.closest('.cl-userProfile-root')) {
+          continue;
+        }
+        preview = p;
+        break;
+      }
+
       if (preview) {
         let existing = preview.querySelector('#clerk-custom-toggle-container');
         if (!existing) {
@@ -122,9 +133,176 @@ function ClerkThemeTogglePortal() {
   return createPortal(<ThemeToggle />, container);
 }
 
+function LanguageProfilePage() {
+  const { language, toggleLanguage } = useLanguage();
+
+  return (
+    <div className="p-6 text-gray-900 dark:text-gray-100 font-manrope">
+      <div className="flex items-center gap-3 mb-6">
+        <div className="w-10 h-10 rounded-xl bg-physiology/10 flex items-center justify-center text-physiology shrink-0">
+          <Globe size={22} />
+        </div>
+        <div className="text-left rtl:text-right">
+          <h3 className="font-archivo text-lg font-bold tracking-tight text-gray-900 dark:text-white">
+            {language === 'en' ? "Language Settings" : "إعدادات اللغة"}
+          </h3>
+          <p className="text-xs text-gray-500 dark:text-gray-400 font-medium mt-0.5">
+            {language === 'en' ? "Select your preferred language for the layout and content." : "اختر لغتك المفضلة للواجهة والمحتوى."}
+          </p>
+        </div>
+      </div>
+
+      <div className="space-y-4">
+        <div className="flex flex-col gap-2">
+          <label className="text-xs font-bold uppercase tracking-wider text-gray-450 dark:text-gray-500">
+            {language === 'en' ? "Language" : "اللغة"}
+          </label>
+          <div className="relative">
+            <select
+              value={language}
+              onChange={(e) => {
+                if (e.target.value !== language) {
+                  toggleLanguage();
+                }
+              }}
+              className="w-full p-4 pr-10 rounded-xl bg-gray-50 dark:bg-gray-800/40 border border-gray-100 dark:border-gray-800 hover:border-physiology/20 dark:hover:border-physiology/30 text-sm font-semibold text-gray-700 dark:text-gray-255 focus:outline-none focus:ring-2 focus:ring-physiology/50 transition-all duration-200 cursor-pointer appearance-none text-left rtl:text-right"
+            >
+              <option value="en">English (US)</option>
+              <option value="ar">العربية (Arabic)</option>
+            </select>
+            <div className="absolute inset-y-0 right-0 flex items-center pr-4 pointer-events-none text-gray-450 dark:text-gray-500">
+              <Globe size={18} />
+            </div>
+          </div>
+        </div>
+        
+        <p className="text-[11px] text-gray-400 dark:text-gray-500 font-medium mt-2 leading-relaxed">
+          {language === 'en' 
+            ? "Note: Changing language will translate the interface layout and module topic names."
+            : "ملاحظة: تغيير اللغة سيقوم بترجمة واجهة المستخدم وأسماء مواضيع الموديلات الدراسي."}
+        </p>
+      </div>
+    </div>
+  );
+}
+
+function AcademicYearProfilePage({
+  studentYear,
+  setStudentYear,
+  setScreen,
+  setSelectedYear,
+  setSelectedSemester,
+  setSelectedModule,
+  setStudyMode,
+  setSelectedChapter
+}: {
+  studentYear: number | null;
+  setStudentYear: (y: number | null) => void;
+  setScreen: any;
+  setSelectedYear: any;
+  setSelectedSemester: any;
+  setSelectedModule: any;
+  setStudyMode: any;
+  setSelectedChapter: any;
+}) {
+  const { language } = useLanguage();
+
+  const handleSelectYear = (year: number) => {
+    localStorage.setItem('asu_medical_student_year', year.toString());
+    localStorage.removeItem('asu_portal_year');
+    localStorage.removeItem('asu_portal_semester');
+    localStorage.removeItem('asu_portal_module');
+    localStorage.removeItem('asu_portal_studyMode');
+    localStorage.removeItem('asu_portal_screen');
+    
+    // Update local state
+    setStudentYear(year);
+    setSelectedYear(null);
+    setSelectedSemester(null);
+    setSelectedModule(null);
+    setStudyMode(null);
+    setSelectedChapter(null);
+    setScreen('yearSelect');
+    
+    // Trigger cloud sync
+    if (typeof window !== 'undefined') {
+      window.dispatchEvent(new Event('trigger-cloud-sync'));
+    }
+  };
+
+  const getYearName = (yr: number) => {
+    if (language === 'en') {
+      if (yr === 1) return "First Year";
+      if (yr === 2) return "Second Year";
+      if (yr === 3) return "Third Year";
+      if (yr === 4) return "Fourth Year";
+      if (yr === 5) return "Fifth Year";
+    } else {
+      if (yr === 1) return "السنة الأولى";
+      if (yr === 2) return "السنة الثانية";
+      if (yr === 3) return "السنة الثالثة";
+      if (yr === 4) return "السنة الرابعة";
+      if (yr === 5) return "السنة الخامسة";
+    }
+    return `Year ${yr}`;
+  };
+
+  return (
+    <div className="p-6 text-gray-900 dark:text-gray-100 font-manrope">
+      <div className="flex items-center gap-3 mb-6">
+        <div className="w-10 h-10 rounded-xl bg-physiology/10 flex items-center justify-center text-physiology shrink-0">
+          <GraduationCap size={22} />
+        </div>
+        <div className="text-left rtl:text-right">
+          <h3 className="font-archivo text-lg font-bold tracking-tight text-gray-900 dark:text-white">
+            {language === 'en' ? "Change Academic Year" : "تغيير السنة الدراسية"}
+          </h3>
+          <p className="text-xs text-gray-500 dark:text-gray-400 font-medium mt-0.5">
+            {language === 'en' ? `Current: ${getYearName(studentYear || 1)}` : `الحالي: ${getYearName(studentYear || 1)}`}
+          </p>
+        </div>
+      </div>
+
+      <div className="space-y-2">
+        {([1, 2, 3, 4, 5] as const).map((yr) => {
+          const isCurrent = studentYear === yr;
+          return (
+            <button
+              key={yr}
+              onClick={() => handleSelectYear(yr)}
+              className={`w-full p-4 rounded-xl flex items-center justify-between border transition-all duration-200 text-left rtl:text-right ${
+                isCurrent 
+                  ? "bg-physiology/10 border-physiology/30 text-physiology-dark dark:text-physiology"
+                  : "bg-gray-50 dark:bg-gray-800/40 border-gray-100 dark:border-gray-800 hover:bg-physiology/5 dark:hover:bg-physiology/5 text-gray-700 dark:text-gray-300"
+              }`}
+            >
+              <div className="text-left rtl:text-right">
+                <span className="block text-sm font-bold">
+                  {language === 'en' ? `Year ${yr}` : `السنة ${yr}`}
+                </span>
+                <span className="block text-[11px] text-gray-400 dark:text-gray-500 mt-0.5">
+                  {language === 'en' 
+                    ? `Switch to Year ${yr} syllabus and courses`
+                    : `الانتقال إلى منهج ومقررات السنة ${yr}`}
+                </span>
+              </div>
+              {isCurrent && (
+                <div className="w-5.5 h-5.5 rounded-full bg-physiology flex items-center justify-center text-white shrink-0">
+                  <Check size={12} strokeWidth={3} />
+                </div>
+              )}
+            </button>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
 function MainApp() {
   const { t, language, toggleLanguage } = useLanguage();
   const { user } = useUser();
+  const { isDark } = useTheme();
   
   // Initialize automatic cloud synchronization
   useCloudSync();
@@ -168,6 +346,7 @@ function MainApp() {
   const [showTracker, setShowTracker] = useState(false);
   const [showSupportModal, setShowSupportModal] = useState(false);
   const [showLanguageModal, setShowLanguageModal] = useState(false);
+  const [showPortalsModal, setShowPortalsModal] = useState(false);
   
   // Quiz states
   const [selectedChapter, setSelectedChapter] = useState<ChapterData | null>(null);
@@ -180,6 +359,9 @@ function MainApp() {
   // Carousel states
   const [activeYearCarouselIndex, setActiveYearCarouselIndex] = useState(1); // Default to Year 2
   const [activeSemesterCarouselIndex, setActiveSemesterCarouselIndex] = useState(0);
+
+  // Navigation history tracker
+  const isRestoringHistoryRef = useRef(false);
 
   // ── 2. Helpers and Data Functions ─────────────────────────────────────────────
 
@@ -255,6 +437,32 @@ function MainApp() {
     return () => window.removeEventListener('storage', handleStorage);
   }, []);
 
+  // Listen for history popstate events (back/forward browser buttons)
+  useEffect(() => {
+    const handlePopState = (event: PopStateEvent) => {
+      const state = event.state;
+      if (state && state.asuPortal) {
+        isRestoringHistoryRef.current = true;
+        transitionTo(() => {
+          setScreen(state.screen);
+          setSelectedYear(state.selectedYear);
+          setSelectedSemester(state.selectedSemester);
+          setSelectedModule(state.selectedModule);
+          setStudyMode(state.studyMode);
+          setSelectedChapter(state.selectedChapter);
+          setQuizPayload(state.quizPayload);
+          setResultPayload(state.resultPayload ? {
+            ...state.resultPayload,
+            flaggedQuestions: new Set(state.resultPayload.flaggedQuestions)
+          } : null);
+        });
+      }
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
+
   // Sync state to localStorage
   useEffect(() => {
     localStorage.setItem('asu_portal_screen', screen);
@@ -272,6 +480,47 @@ function MainApp() {
       window.dispatchEvent(new Event('trigger-cloud-sync'));
     }
   }, [screen, selectedYear, selectedSemester, selectedModule, studyMode]);
+
+  // Synchronize history state with React state
+  useEffect(() => {
+    const stateRepresentation = {
+      screen,
+      selectedYear,
+      selectedSemester,
+      selectedModule,
+      studyMode,
+      selectedChapter,
+      quizPayload,
+      resultPayload: resultPayload ? {
+        ...resultPayload,
+        flaggedQuestions: Array.from(resultPayload.flaggedQuestions || [])
+      } : null
+    };
+
+    if (isRestoringHistoryRef.current) {
+      isRestoringHistoryRef.current = false;
+      return;
+    }
+
+    const currentHistoryState = window.history.state;
+    if (!currentHistoryState || !currentHistoryState.asuPortal) {
+      window.history.replaceState({ asuPortal: true, ...stateRepresentation }, '');
+    } else {
+      const keys = [
+        'screen', 'selectedYear', 'selectedSemester', 'selectedModule', 'studyMode', 'selectedChapter', 'quizPayload', 'resultPayload'
+      ];
+      const isChanged = keys.some(k => {
+        if (k === 'resultPayload' || k === 'quizPayload' || k === 'selectedModule' || k === 'selectedChapter') {
+          return JSON.stringify(currentHistoryState[k]) !== JSON.stringify((stateRepresentation as any)[k]);
+        }
+        return currentHistoryState[k] !== (stateRepresentation as any)[k];
+      });
+
+      if (isChanged) {
+        window.history.pushState({ asuPortal: true, ...stateRepresentation }, '');
+      }
+    }
+  }, [screen, selectedYear, selectedSemester, selectedModule, studyMode, selectedChapter, quizPayload, resultPayload]);
 
   // Auto-routing safety net to prevent black screen (empty layouts) due to inconsistent/missing states on refresh
   useEffect(() => {
@@ -602,11 +851,37 @@ function MainApp() {
   const customUserButton = (
     <UserButton 
       appearance={{
+        baseTheme: isDark ? dark : undefined,
         elements: {
           userButtonAvatarBox: "w-9 h-9 border-2 border-physiology shadow-sm",
         }
       }}
     >
+      <UserButton.UserProfilePage
+        label={language === 'en' ? "Change Academic Year" : "تغيير السنة الدراسية"}
+        labelIcon={<GraduationCap size={16} />}
+        url="academic-year"
+      >
+        <AcademicYearProfilePage
+          studentYear={studentYear}
+          setStudentYear={setStudentYear}
+          setScreen={setScreen}
+          setSelectedYear={setSelectedYear}
+          setSelectedSemester={setSelectedSemester}
+          setSelectedModule={setSelectedModule}
+          setStudyMode={setStudyMode}
+          setSelectedChapter={setSelectedChapter}
+        />
+      </UserButton.UserProfilePage>
+
+      <UserButton.UserProfilePage
+        label={language === 'en' ? "Language" : "اللغة"}
+        labelIcon={<Globe size={16} />}
+        url="language"
+      >
+        <LanguageProfilePage />
+      </UserButton.UserProfilePage>
+
       <UserButton.MenuItems>
         {/* Go to Dashboard button */}
         <UserButton.Action
@@ -618,15 +893,6 @@ function MainApp() {
               setQuizPayload(null);
               setResultPayload(null);
             });
-          }}
-        />
-
-        {/* Language button */}
-        <UserButton.Action
-          label={language === 'en' ? "Language" : "اللغة"}
-          labelIcon={<Globe size={16} className="text-gray-500" />}
-          onClick={() => {
-            setShowLanguageModal(true);
           }}
         />
 
@@ -647,43 +913,10 @@ function MainApp() {
         />
 
         <UserButton.Action
-          label="Change Academic Year"
-          labelIcon={<GraduationCap size={16} className="text-gray-500" />}
+          label={language === 'en' ? "ASU Portals" : "بوابات عين شمس"}
+          labelIcon={<ExternalLink size={16} className="text-physiology" />}
           onClick={() => {
-            transitionTo(() => {
-              setStudentYear(null);
-              setScreen('yearSelect');
-              localStorage.removeItem('asu_medical_student_year');
-              localStorage.removeItem('asu_portal_year');
-              localStorage.removeItem('asu_portal_semester');
-              localStorage.removeItem('asu_portal_module');
-              localStorage.removeItem('asu_portal_studyMode');
-              localStorage.removeItem('asu_portal_screen');
-            });
-          }}
-        />
-
-        <UserButton.Action
-          label="EMP Portal"
-          labelIcon={<ExternalLink size={16} className="text-gray-500" />}
-          onClick={() => {
-            window.open('https://asu2learn.asu.edu.eg/medicine-emp/my/', '_blank');
-          }}
-        />
-
-        <UserButton.Action
-          label="Mainstream Portal"
-          labelIcon={<ExternalLink size={16} className="text-gray-500" />}
-          onClick={() => {
-            window.open('https://asu2learn.asu.edu.eg/medicine/my/', '_blank');
-          }}
-        />
-
-        <UserButton.Action
-          label="UMS Portal"
-          labelIcon={<ExternalLink size={16} className="text-gray-500" />}
-          onClick={() => {
-            window.open('https://ums.asu.edu.eg/', '_blank');
+            setShowPortalsModal(true);
           }}
         />
 
@@ -1695,6 +1928,106 @@ function MainApp() {
               className="w-full py-3.5 mt-6 bg-gray-100 dark:bg-gray-800 hover:bg-gray-250 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-2xl text-xs font-bold tracking-wide transition-all duration-200"
             >
               {language === 'en' ? 'Cancel' : 'إلغاء'}
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* PORTALS MODAL */}
+      {showPortalsModal && (
+        <div 
+          className="fixed inset-0 z-50 flex items-center justify-center p-6 bg-gray-950/40 backdrop-blur-md transition-all duration-300"
+          onClick={(e) => {
+            if (e.target === e.currentTarget) {
+              setShowPortalsModal(false);
+            }
+          }}
+        >
+          <div className="w-full max-w-md bg-white/85 dark:bg-gray-900/85 backdrop-blur-xl border border-gray-100/85 dark:border-gray-800/85 rounded-[30px] p-8 shadow-2xl animate-pop-up relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-physiology/10 to-transparent rounded-bl-[60px]" />
+            
+            <div className="flex items-center gap-3 mb-4 text-physiology">
+              <div className="w-10 h-10 rounded-xl bg-physiology/10 flex items-center justify-center shrink-0">
+                <GraduationCap size={22} />
+              </div>
+              <h3 className="font-archivo text-xl font-bold tracking-tight">
+                {language === 'en' ? "ASU Academic Portals" : "بوابات جامعة عين شمس"}
+              </h3>
+            </div>
+
+            <p className="text-sm text-gray-500 dark:text-gray-400 font-medium leading-relaxed mb-6">
+              {language === 'en' 
+                ? "Select an official university portal to open in a new tab." 
+                : "اختر البوابة الجامعية الرسمية لفتحها في تبويب جديد."}
+            </p>
+
+            <div className="space-y-3">
+              {/* EMP Portal */}
+              <a
+                href="https://asu2learn.asu.edu.eg/medicine-emp/my/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full px-5 py-4 rounded-2xl bg-gray-50/60 dark:bg-gray-800/30 hover:bg-physiology/10 dark:hover:bg-physiology/15 border border-gray-100 dark:border-gray-800 flex items-center gap-4 transition-all group duration-200"
+              >
+                <div className="w-10 h-10 rounded-full bg-physiology/10 dark:bg-physiology/20 flex items-center justify-center text-physiology group-hover:scale-105 transition-transform duration-200 shrink-0">
+                  <BookOpen size={18} />
+                </div>
+                <div className="flex flex-col text-left rtl:text-right">
+                  <span className="text-sm font-semibold text-gray-700 dark:text-gray-250 group-hover:text-physiology transition-colors duration-200 tracking-wide font-manrope">
+                    {language === 'en' ? "EMP Portal" : "بوابة EMP"}
+                  </span>
+                  <span className="text-[11px] text-gray-400 dark:text-gray-500 font-medium">
+                    {language === 'en' ? "E-Learning Management System" : "نظام إدارة التعلم الإلكتروني للبرنامج المتميز"}
+                  </span>
+                </div>
+              </a>
+
+              {/* Mainstream Portal */}
+              <a
+                href="https://asu2learn.asu.edu.eg/medicine/my/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full px-5 py-4 rounded-2xl bg-gray-50/60 dark:bg-gray-800/30 hover:bg-anatomy/10 dark:hover:bg-anatomy/15 border border-gray-100 dark:border-gray-800 flex items-center gap-4 transition-all group duration-200"
+              >
+                <div className="w-10 h-10 rounded-full bg-anatomy/10 dark:bg-anatomy/20 flex items-center justify-center text-anatomy group-hover:scale-105 transition-transform duration-200 shrink-0">
+                  <Layers size={18} />
+                </div>
+                <div className="flex flex-col text-left rtl:text-right">
+                  <span className="text-sm font-semibold text-gray-700 dark:text-gray-250 group-hover:text-anatomy transition-colors duration-200 tracking-wide font-manrope">
+                    {language === 'en' ? "Mainstream Portal" : "البوابة الرئيسية"}
+                  </span>
+                  <span className="text-[11px] text-gray-400 dark:text-gray-500 font-medium">
+                    {language === 'en' ? "Mainstream E-Learning System" : "نظام التعلم الإلكتروني الرئيسي للكلية"}
+                  </span>
+                </div>
+              </a>
+
+              {/* UMS Portal */}
+              <a
+                href="https://ums.asu.edu.eg/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full px-5 py-4 rounded-2xl bg-gray-50/60 dark:bg-gray-800/30 hover:bg-clinical/10 dark:hover:bg-clinical/15 border border-gray-100 dark:border-gray-800 flex items-center gap-4 transition-all group duration-200"
+              >
+                <div className="w-10 h-10 rounded-full bg-clinical/10 dark:bg-clinical/20 flex items-center justify-center text-clinical group-hover:scale-105 transition-transform duration-200 shrink-0">
+                  <GraduationCap size={18} />
+                </div>
+                <div className="flex flex-col text-left rtl:text-right">
+                  <span className="text-sm font-semibold text-gray-700 dark:text-gray-250 group-hover:text-clinical transition-colors duration-200 tracking-wide font-manrope">
+                    {language === 'en' ? "UMS Portal" : "بوابة UMS"}
+                  </span>
+                  <span className="text-[11px] text-gray-400 dark:text-gray-500 font-medium">
+                    {language === 'en' ? "University Management System" : "نظام إدارة الجامعة والخدمات الطلابية"}
+                  </span>
+                </div>
+              </a>
+            </div>
+
+            <button
+              onClick={() => setShowPortalsModal(false)}
+              className="w-full mt-6 py-3 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-750 text-gray-700 dark:text-gray-300 rounded-full text-xs font-bold tracking-wide transition-all duration-200"
+            >
+              {language === 'en' ? "Close" : "إغلاق"}
             </button>
           </div>
         </div>

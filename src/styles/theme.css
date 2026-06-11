@@ -439,3 +439,55 @@
   to   { opacity: 1; transform: translateX(-50%) translateY(0); }
 }
 .toast-in { animation: toastIn 300ms cubic-bezier(0.16, 1, 0.3, 1) both; }
+
+/* ── Clerk dynamic light/dark mode overrides ──────────────── */
+.cl-rootBox,
+.cl-userButtonPopoverCard,
+.cl-userProfile-root,
+.cl-dialog {
+  --cl-colorBackground: var(--card) !important;
+  --cl-colorText: var(--foreground) !important;
+  --cl-colorBorder: var(--border) !important;
+  --cl-colorPrimary: var(--primary) !important;
+  --cl-colorSuccess: var(--color-success) !important;
+  --cl-colorDanger: var(--color-danger) !important;
+}
+
+.dark .cl-userButtonPopoverCard,
+.dark .cl-userProfile-root,
+.dark .cl-card,
+.dark .cl-navbar,
+.dark .cl-scrollBox,
+.dark .cl-pageScrollBox,
+.dark .cl-userProfile-box,
+.dark .cl-userButtonPopoverMain,
+.dark .cl-userButtonPopoverFooter {
+  background-color: var(--card) !important;
+  color: var(--foreground) !important;
+  border-color: var(--border) !important;
+}
+
+.dark .cl-userButtonPopoverActionButton,
+.dark .cl-navbarButton,
+.dark .cl-accordionTriggerButton,
+.dark .cl-profileSectionTitleText,
+.dark .cl-formFieldLabel,
+.dark .cl-headerTitle,
+.dark .cl-headerSubtitle,
+.dark .cl-breadcrumbsItem,
+.dark .cl-userPreviewTitle,
+.dark .cl-userPreviewSubtitle {
+  color: var(--foreground) !important;
+}
+
+.dark .cl-userButtonPopoverActionButtonIcon,
+.dark .cl-navbarButton svg {
+  color: var(--muted-foreground) !important;
+}
+
+.dark .cl-userButtonPopoverActionButton:hover,
+.dark .cl-navbarButton:hover,
+.dark .cl-accordionTriggerButton:hover {
+  background-color: var(--muted) !important;
+}
+
