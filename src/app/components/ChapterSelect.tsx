@@ -1,13 +1,16 @@
-import { useState, useEffect } from 'react';
-import { GraduationCap, Layers, ArrowRight, Palette, Clock, Award, Trash2, ArrowLeft, Calendar } from 'lucide-react';
+import React, { useState, useEffect } from 'react';
+import { GraduationCap, Layers, ArrowRight, Palette, Clock, Award, Trash2, ArrowLeft, Calendar, ChevronRight } from 'lucide-react';
 import type { ChapterData, SubjectColor } from '../types';
 import { formatTime } from '../types';
 import type { QuizResult } from '../utils/storage';
 import { getQuizHistory, clearQuizHistory } from '../utils/storage';
-import { ThemeToggle } from './ThemeToggle';
-import { LanguageToggle } from './LanguageToggle';
 import { SyllabusTracker } from './SyllabusTracker';
 import { useLanguage } from '../context/LanguageContext';
+
+export interface BreadcrumbItem {
+  label: string;
+  onClick?: () => void;
+}
 
 interface Props {
   chapters: ChapterData[];
@@ -17,6 +20,8 @@ interface Props {
   onSelectChapter: (chapter: ChapterData) => void;
   onSelectHistory?: (result: QuizResult) => void;
   onBackToModeSelect: () => void;
+  userButton?: React.ReactNode;
+  breadcrumbPath?: BreadcrumbItem[];
 }
 
 const badgeColors: Record<SubjectColor, string> = {
@@ -78,6 +83,8 @@ export function ChapterSelect({
   onSelectChapter,
   onSelectHistory,
   onBackToModeSelect,
+  userButton,
+  breadcrumbPath,
 }: Props) {
   const [history, setHistory] = useState<QuizResult[]>([]);
   const [showTracker, setShowTracker] = useState(false);
@@ -193,7 +200,83 @@ export function ChapterSelect({
         .dark .ecg-line {
           filter: drop-shadow(0 0 4px rgba(16, 185, 129, 0.5));
         }
+        .btn-back { transition: all 250ms cubic-bezier(0.34,1.56,0.64,1); }
+        .btn-back:hover { transform: translateX(-3px); }
+        .progress-line {
+          background: linear-gradient(90deg, #10B981 0%, #06B6D4 50%, #3B82F6 100%);
+          background-size: 200% 100%;
+          animation: shimmer 3s ease-in-out infinite;
+        }
+        @keyframes shimmer {
+          0% { background-position: 200% 0; }
+          100% { background-position: -200% 0; }
+        }
       `}</style>
+
+      {/* STICKY HEADER */}
+      <header className="shrinking-header bg-white/70 dark:bg-gray-900/70 backdrop-blur-xl border-b border-gray-100 dark:border-gray-800/50 sticky top-0 z-50 animate-fade-in">
+        <div className="max-w-[1600px] mx-auto px-6 lg:px-8">
+          <div className="flex items-center justify-between py-4">
+            <div className="flex items-center gap-4">
+              <button
+                onClick={onBackToModeSelect}
+                className="btn-back inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white text-sm font-semibold border border-gray-100 dark:border-gray-700"
+              >
+                <ArrowLeft size={16} />
+                <span className="hidden sm:inline">{t('backToStudyModes') || 'Back'}</span>
+              </button>
+              
+              {/* Desktop Breadcrumbs (Full Path) */}
+              <div className="header-anim hidden lg:flex items-center gap-2 text-sm">
+                {breadcrumbPath ? (
+                  breadcrumbPath.map((segment, idx) => {
+                    const isLast = idx === breadcrumbPath.length - 1;
+                    return (
+                      <React.Fragment key={idx}>
+                        {segment.onClick && !isLast ? (
+                          <button
+                            onClick={segment.onClick}
+                            className="text-gray-400 dark:text-gray-500 font-medium hover:text-physiology transition-colors duration-200"
+                          >
+                            {segment.label}
+                          </button>
+                        ) : (
+                          <span className={isLast ? "text-gray-900 dark:text-white font-bold" : "text-gray-400 dark:text-gray-500 font-medium"}>
+                            {segment.label}
+                          </span>
+                        )}
+                        {!isLast && <ChevronRight size={12} className="text-gray-300 dark:text-gray-600" />}
+                      </React.Fragment>
+                    );
+                  })
+                ) : (
+                  <>
+                    <span className="text-gray-400 dark:text-gray-500 font-medium">{t('portal')}</span>
+                    <ChevronRight size={12} className="text-gray-300 dark:text-gray-600" />
+                    <span className="text-gray-900 dark:text-white font-bold">{moduleName}</span>
+                  </>
+                )}
+              </div>
+
+              {/* Tablet Breadcrumbs (Truncated) */}
+              <div className="header-anim hidden md:flex lg:hidden items-center gap-2 text-sm">
+                <span className="text-gray-400 dark:text-gray-500 font-medium">{t('portal')}</span>
+                <ChevronRight size={12} className="text-gray-300 dark:text-gray-600" />
+                <span className="text-gray-400 dark:text-gray-500 font-medium tracking-widest">...</span>
+                <ChevronRight size={12} className="text-gray-300 dark:text-gray-600" />
+                <span className="text-gray-900 dark:text-white font-bold">{moduleName}</span>
+              </div>
+            </div>
+            
+            <div className="flex items-center gap-3">
+              {userButton}
+            </div>
+          </div>
+          <div className="h-0.5 -mx-6 lg:-mx-8">
+            <div className="progress-line h-full w-full opacity-40 rounded-full" />
+          </div>
+        </div>
+      </header>
 
       {/* HERO HEADER */}
       <div className="relative overflow-hidden bg-white dark:bg-gray-900 border-b border-gray-100 dark:border-gray-800">
@@ -214,27 +297,9 @@ export function ChapterSelect({
           </svg>
         </div>
 
-        <div className="relative max-w-[1600px] mx-auto px-4 sm:px-6 py-6 lg:py-16">
+        <div className="relative max-w-[1600px] mx-auto px-6 py-8 lg:py-12">
           <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
             <div>
-              <div className="flex flex-wrap items-center gap-3 mb-5">
-                <button
-                  onClick={onBackToModeSelect}
-                  className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-600 dark:text-gray-300 text-xs font-semibold border border-gray-100 dark:border-gray-700 transition-all duration-200 hover:-translate-x-1"
-                >
-                  <ArrowLeft size={14} />
-                  {t('backToStudyModes')}
-                </button>
-                
-                <button
-                  onClick={() => setShowTracker(true)}
-                  className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-physiology/10 hover:bg-physiology/15 border border-physiology/20 text-physiology-dark text-xs font-bold transition-all duration-200 hover:scale-[1.02]"
-                >
-                  <Calendar size={14} className="text-physiology" />
-                  {t('syllabusTracker')}
-                </button>
-              </div>
-              
               <div className="header-anim inline-flex items-center gap-2 px-4 py-1.5 bg-physiology/10 text-physiology-dark rounded-full text-xs font-semibold tracking-wide uppercase mb-4 animate-pulse">
                 {t('asu')} • {t('portal')} <GraduationCap size={14} />
               </div>
@@ -247,6 +312,14 @@ export function ChapterSelect({
             </div>
 
             <div className="flex items-center lg:items-end gap-3 sm:gap-4 mt-2 lg:mt-0 flex-wrap">
+              <button
+                onClick={() => setShowTracker(true)}
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-physiology/10 hover:bg-physiology/15 border border-physiology/20 text-physiology-dark text-xs font-bold transition-all duration-200 hover:scale-[1.02] mr-2"
+              >
+                <Calendar size={14} className="text-physiology" />
+                {t('syllabusTracker')}
+              </button>
+
               <div className="header-stats flex items-center gap-4 lg:gap-8 mr-2 lg:mr-0">
                 <div className="text-center">
                   <div className="font-archivo text-3xl font-black text-gray-900 dark:text-white">{chapters.length}</div>
@@ -258,8 +331,6 @@ export function ChapterSelect({
                   <div className="text-xs text-gray-400 dark:text-gray-500 font-semibold uppercase tracking-wide">{t('subjectsTab')}</div>
                 </div>
               </div>
-              <LanguageToggle />
-              <ThemeToggle />
             </div>
           </div>
         </div>

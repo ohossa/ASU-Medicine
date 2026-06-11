@@ -2,12 +2,9 @@ import React from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Moon, Sun } from 'lucide-react';
 import { useTheme } from '../context/ThemeContext';
-import { useLanguage } from '../context/LanguageContext';
 
 export function ThemeToggle() {
   const { isDark, toggleTheme } = useTheme();
-  const { language } = useLanguage();
-  const isRTL = language === 'ar';
 
   const handleToggle = () => {
     toggleTheme();
@@ -32,9 +29,9 @@ export function ThemeToggle() {
       {/* Sliding Thumb */}
       <motion.div
         className="relative flex h-7 w-7 items-center justify-center rounded-full shadow-lg"
-        // Thumb Position: In LTR, right is 32. In RTL, right is starting pos (0), so we move left (-32).
+        // Thumb Position: In LTR, right is 32.
         animate={{
-          x: isDark ? 0 : (isRTL ? -32 : 32),
+          x: isDark ? 0 : 32,
           backgroundColor: isDark ? '#2c2c2c' : '#ffffff',
           boxShadow: isDark 
             ? '0px 2px 6px rgba(0,0,0,0.6), 0 0 4px rgba(100, 100, 255, 0.1)' // Cool glow in dark

@@ -7,6 +7,7 @@ import type { QuizResult } from '../utils/storage';
 interface HistoryScreenProps {
   onBack: () => void;
   onSelectHistory: (result: QuizResult) => void;
+  userButton?: React.ReactNode;
 }
 
 const isSameDay = (d1: Date, d2: Date) => 
@@ -25,7 +26,7 @@ const getRelativeDayName = (date: Date, lang: string) => {
   return date.toLocaleDateString(lang === 'en' ? 'en-US' : 'ar-EG', { weekday: 'long', month: 'short', day: 'numeric' });
 };
 
-export function HistoryScreen({ onBack, onSelectHistory }: HistoryScreenProps) {
+export function HistoryScreen({ onBack, onSelectHistory, userButton }: HistoryScreenProps) {
   const { language, t } = useLanguage();
   const [history, setHistory] = useState<QuizResult[]>([]);
 
@@ -70,6 +71,7 @@ export function HistoryScreen({ onBack, onSelectHistory }: HistoryScreenProps) {
                 <span className="text-gray-900 dark:text-white font-bold">History</span>
               </div>
             </div>
+            {userButton}
           </div>
         </div>
       </header>

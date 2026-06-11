@@ -19,8 +19,6 @@ import type { LucideIcon } from 'lucide-react';
 import type { ChapterData, SubjectData, SubjectColor } from '../types';
 import { subjectStyles } from '../types';
 import { shuffleArray } from '../data';
-import { ThemeToggle } from './ThemeToggle';
-import { LanguageToggle } from './LanguageToggle';
 import { useLanguage } from '../context/LanguageContext';
 import { getQuizHistory } from '../utils/storage';
 import { useState, useEffect } from 'react';
@@ -36,6 +34,7 @@ interface Props {
   onSelectSubject: (subject: SubjectData, questions: ReturnType<typeof shuffleArray>) => void;
   onQuickStart: (questions: ReturnType<typeof shuffleArray>) => void;
   breadcrumbPath?: BreadcrumbItem[];
+  userButton?: React.ReactNode;
 }
 
 const iconMap: Record<string, LucideIcon> = {
@@ -51,7 +50,7 @@ const iconMap: Record<string, LucideIcon> = {
 const totalQs = (subjects: SubjectData[]) =>
   subjects.reduce((a, s) => a + s.questions.length, 0);
 
-export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart, breadcrumbPath }: Props) {
+export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart, breadcrumbPath, userButton }: Props) {
   const allQuestions = useMemo(() => chapter.subjects.flatMap((s) => s.questions), [chapter]);
   const totalQuestions = useMemo(() => totalQs(chapter.subjects), [chapter.subjects]);
   const { t, language } = useLanguage();
@@ -201,8 +200,7 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart, 
                   {chapter.subjects.length} {t('availableSubjects')}
                 </span>
               </div>
-              <LanguageToggle />
-              <ThemeToggle />
+              {userButton}
             </div>
           </div>
           <div className="h-0.5 -mx-6 lg:-mx-8">
@@ -271,7 +269,6 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart, 
                 className={`card-stagger scroll-reveal subject-card glass-panel glow-border rounded-[30px] p-6 cursor-pointer group relative overflow-hidden transition-all duration-300 ${
                   !hasQuestions ? 'opacity-60' : ''
                 } ${isCompleted ? 'bg-physiology/5 border-physiology/30 hover:border-physiology/50 hover:bg-physiology/10' : ''}`}
-                style={{ viewTransitionName: `subject-${subject.id}` }}
                 onClick={() => hasQuestions && onSelectSubject(subject, subject.questions)}
               >
                 <div className={`absolute -top-8 -right-8 w-24 h-24 rounded-full ${s.bgOp5} group-hover:${s.bgOp10} transition-colors duration-500 pointer-events-none`} />

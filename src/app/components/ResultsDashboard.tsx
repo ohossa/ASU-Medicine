@@ -19,8 +19,6 @@ import {
 } from 'lucide-react';
 import type { ChapterData, SubjectData, Question, SubjectColor } from '../types';
 import { subjectStyles, formatTime } from '../types';
-import { ThemeToggle } from './ThemeToggle';
-import { LanguageToggle } from './LanguageToggle';
 import { useLanguage } from '../context/LanguageContext';
 
 interface Props {
@@ -34,6 +32,7 @@ interface Props {
   onTryAnotherSubject: () => void;
   onBackToChapters: () => void;
   onBackToSubjects: () => void;
+  userButton?: React.ReactNode;
 }
 
 function getPerformanceLabel(pct: number): string {
@@ -55,7 +54,7 @@ function getPerformanceBadge(pct: number): string {
 
 export function ResultsDashboard({
   chapter, subject, questions, answers, elapsedSeconds, flaggedQuestions,
-  onRetake, onTryAnotherSubject, onBackToChapters, onBackToSubjects,
+  onRetake, onTryAnotherSubject, onBackToChapters, onBackToSubjects, userButton,
 }: Props) {
   const [filter, setFilter] = useState<'all' | 'wrong' | 'flagged'>('all');
   const { t, language } = useLanguage();
@@ -312,8 +311,7 @@ export function ResultsDashboard({
                 <CheckCircle2 size={14} className="text-success" />
                 <span className="text-xs font-bold text-success-dark">{language === 'en' ? 'Session Complete' : 'اكتملت الجلسة'}</span>
               </div>
-              <LanguageToggle />
-              <ThemeToggle />
+              {userButton}
             </div>
           </div>
         </div>

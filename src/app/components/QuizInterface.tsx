@@ -16,8 +16,6 @@ import {
 } from 'lucide-react';
 import type { ChapterData, SubjectData, Question, SubjectColor } from '../types';
 import { subjectStyles, formatTime } from '../types';
-import { ThemeToggle } from './ThemeToggle';
-import { LanguageToggle } from './LanguageToggle';
 import { useLanguage } from '../context/LanguageContext';
 import { toggleFlaggedQuestion } from '../utils/storage';
 
@@ -27,9 +25,10 @@ interface Props {
   questions: Question[];
   onBack: () => void;
   onFinish: (answers: Record<number, any>, elapsedSeconds: number, flaggedQuestions: Set<number>) => void;
+  userButton?: React.ReactNode;
 }
 
-export function QuizInterface({ chapter, subject, questions, onBack, onFinish }: Props) {
+export function QuizInterface({ chapter, subject, questions, onBack, onFinish, userButton }: Props) {
   const [currentIdx, setCurrentIdx] = useState(0);
 
   const handleNavigate = useCallback((action: React.SetStateAction<number>) => {
@@ -442,8 +441,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish }:
                 <Keyboard size={16} />
                 <span className="text-xs font-bold uppercase tracking-wider">Shortcuts</span>
               </button>
-              <LanguageToggle />
-              <ThemeToggle />
+              {userButton}
             </div>
           </div>
         </div>

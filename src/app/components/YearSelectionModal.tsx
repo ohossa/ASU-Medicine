@@ -9,8 +9,7 @@ import { useLanguage } from '../context/LanguageContext';
 interface Props { onSelect: (year: number) => void; }
 
 export function YearSelectionModal({ onSelect }: Props) {
-  const { t, language } = useLanguage();
-  const isRtl = language === 'ar';
+  const { t } = useLanguage();
 
   const handleSelect = (year: number) => {
     localStorage.setItem('asu_medical_student_year', year.toString());
@@ -64,8 +63,8 @@ export function YearSelectionModal({ onSelect }: Props) {
                    shadow-2xl animate-slide-up relative overflow-hidden"
       >
         {/* Decorative corner */}
-        <div className={`absolute top-0 ${isRtl ? 'left-0' : 'right-0'} w-28 h-28 bg-gradient-to-bl
-                        from-physiology/8 to-transparent ${isRtl ? 'rotate-90' : ''} rounded-bl-[90px] pointer-events-none`} />
+        <div className="absolute top-0 right-0 w-28 h-28 bg-gradient-to-bl
+                        from-physiology/8 to-transparent rounded-bl-[90px] pointer-events-none" />
 
         {/* Header */}
         <div className="flex flex-col items-center text-center gap-4 mb-8">
@@ -107,8 +106,8 @@ export function YearSelectionModal({ onSelect }: Props) {
               </div>
               <ChevronRight
                 size={16}
-                className={`text-muted-foreground/50 group-hover:text-physiology transition-all
-                           duration-200 ${isRtl ? 'rotate-180 group-hover:-translate-x-0.5' : 'group-hover:translate-x-0.5'}`}
+                className="text-muted-foreground/50 group-hover:text-physiology transition-all
+                           duration-200 group-hover:translate-x-0.5"
               />
             </button>
           ))}

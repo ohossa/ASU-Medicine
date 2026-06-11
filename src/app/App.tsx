@@ -1,4 +1,5 @@
 import { useState, useEffect, Suspense, lazy } from 'react';
+import { createPortal } from 'react-dom';
 import {
   GraduationCap,
   BookOpen,
@@ -18,7 +19,10 @@ import {
   Clock,
   Award,
   ExternalLink,
-  Flag
+  Flag,
+  Globe,
+  Check,
+  Home
 } from 'lucide-react';
 import type { ChapterData, SubjectData, Question, Screen, SubjectColor } from './types';
 const ChapterSelect = lazy(() => import('./components/ChapterSelect').then(m => ({ default: m.ChapterSelect })));
@@ -83,8 +87,43 @@ function PortalFooter() {
   );
 }
 
+function ClerkThemeTogglePortal() {
+  const [container, setContainer] = useState<Element | null>(null);
+
+  useEffect(() => {
+    const findContainer = () => {
+      const preview = document.querySelector('.cl-userPreview');
+      if (preview) {
+        let existing = preview.querySelector('#clerk-custom-toggle-container');
+        if (!existing) {
+          existing = document.createElement('div');
+          existing.id = 'clerk-custom-toggle-container';
+          existing.className = 'ms-auto flex items-center justify-end pl-2 shrink-0 scale-85 origin-right';
+          preview.appendChild(existing);
+        }
+        setContainer(existing);
+      } else {
+        setContainer(null);
+      }
+    };
+
+    findContainer();
+
+    const observer = new MutationObserver(() => {
+      findContainer();
+    });
+
+    observer.observe(document.body, { childList: true, subtree: true });
+    return () => observer.disconnect();
+  }, []);
+
+  if (!container) return null;
+
+  return createPortal(<ThemeToggle />, container);
+}
+
 function MainApp() {
-  const { t, language } = useLanguage();
+  const { t, language, toggleLanguage } = useLanguage();
   const { user } = useUser();
   
   // Initialize automatic cloud synchronization
@@ -211,8 +250,28 @@ function MainApp() {
       window.dispatchEvent(new Event('trigger-cloud-sync'));
     }
   }, [screen, selectedYear, selectedSemester, selectedModule, studyMode]);
+
+  // Auto-routing safety net to prevent black screen (empty layouts) due to inconsistent/missing states on refresh
+  useEffect(() => {
+    if (screen === 'chapters' && (!selectedModule || !studyMode)) {
+      setScreen('yearSelect');
+    } else if (screen === 'subjects' && !selectedChapter) {
+      setScreen('chapters');
+    } else if (screen === 'quiz' && !quizPayload) {
+      setScreen('chapters');
+    } else if (screen === 'results' && !resultPayload) {
+      setScreen('chapters');
+    } else if (screen === 'semesterSelect' && !selectedYear) {
+      setScreen('yearSelect');
+    } else if (screen === 'moduleSelect' && (!selectedYear || !selectedSemester)) {
+      setScreen('yearSelect');
+    } else if (screen === 'studyModeSelect' && !selectedModule) {
+      setScreen('yearSelect');
+    }
+  }, [screen, selectedYear, selectedSemester, selectedModule, studyMode, selectedChapter, quizPayload, resultPayload]);
   const [showTracker, setShowTracker] = useState(false);
   const [showSupportModal, setShowSupportModal] = useState(false);
+  const [showLanguageModal, setShowLanguageModal] = useState(false);
   
   // Quiz states
   const [selectedChapter, setSelectedChapter] = useState<ChapterData | null>(null);
@@ -533,6 +592,105 @@ function MainApp() {
     mixed: 'Mixed Exam Mode'
   };
 
+  const customUserButton = (
+    <UserButton 
+      appearance={{
+        elements: {
+          userButtonAvatarBox: "w-9 h-9 border-2 border-physiology shadow-sm",
+        }
+      }}
+    >
+      <UserButton.MenuItems>
+        {/* Go to Dashboard button */}
+        <UserButton.Action
+          label={language === 'en' ? "Dashboard" : "اللوحة الرئيسية"}
+          labelIcon={<Home size={16} className="text-physiology" />}
+          onClick={() => {
+            transitionTo(() => {
+              setScreen('yearSelect');
+              setQuizPayload(null);
+              setResultPayload(null);
+            });
+          }}
+        />
+
+        {/* Language button */}
+        <UserButton.Action
+          label={language === 'en' ? "Language" : "اللغة"}
+          labelIcon={<Globe size={16} className="text-gray-500" />}
+          onClick={() => {
+            setShowLanguageModal(true);
+          }}
+        />
+
+        <UserButton.Action
+          label={`Year ${studentYear} Progress: ${getYearProgress().pct}% (${getYearProgress().completed}/${getYearProgress().total} topics)`}
+          labelIcon={<Award size={16} className="text-physiology" />}
+          onClick={() => {
+            transitionTo(() => setScreen('history'));
+          }}
+        />
+
+        <UserButton.Action
+          label="Flagged Questions"
+          labelIcon={<Flag size={16} className="text-clinical" />}
+          onClick={() => {
+            transitionTo(() => setScreen('flaggedQuestions'));
+          }}
+        />
+
+        <UserButton.Action
+          label="Change Academic Year"
+          labelIcon={<GraduationCap size={16} className="text-gray-500" />}
+          onClick={() => {
+            transitionTo(() => {
+              setStudentYear(null);
+              setScreen('yearSelect');
+              localStorage.removeItem('asu_medical_student_year');
+              localStorage.removeItem('asu_portal_year');
+              localStorage.removeItem('asu_portal_semester');
+              localStorage.removeItem('asu_portal_module');
+              localStorage.removeItem('asu_portal_studyMode');
+              localStorage.removeItem('asu_portal_screen');
+            });
+          }}
+        />
+
+        <UserButton.Action
+          label="EMP Portal"
+          labelIcon={<ExternalLink size={16} className="text-gray-500" />}
+          onClick={() => {
+            window.open('https://asu2learn.asu.edu.eg/medicine-emp/my/', '_blank');
+          }}
+        />
+
+        <UserButton.Action
+          label="Mainstream Portal"
+          labelIcon={<ExternalLink size={16} className="text-gray-500" />}
+          onClick={() => {
+            window.open('https://asu2learn.asu.edu.eg/medicine/my/', '_blank');
+          }}
+        />
+
+        <UserButton.Action
+          label="UMS Portal"
+          labelIcon={<ExternalLink size={16} className="text-gray-500" />}
+          onClick={() => {
+            window.open('https://ums.asu.edu.eg/', '_blank');
+          }}
+        />
+
+        <UserButton.Action
+          label="Report Bug / Support"
+          labelIcon={<Mail size={16} className="text-gray-500" />}
+          onClick={() => {
+            setShowSupportModal(true);
+          }}
+        />
+      </UserButton.MenuItems>
+    </UserButton>
+  );
+
   return (
     <div className="min-h-screen text-gray-900 dark:text-gray-100 font-manrope selection:bg-physiology/20 selection:text-physiology-dark">
       {/* Dynamic Floating Background Blobs & Interactive Dots */}
@@ -633,82 +791,7 @@ function MainApp() {
             </div>
 
             <div className="flex items-center gap-3 sm:gap-4 justify-end">
-              <LanguageToggle />
-              <ThemeToggle />
-              <UserButton 
-                appearance={{
-                  elements: {
-                    userButtonAvatarBox: "w-9 h-9 border-2 border-physiology shadow-sm",
-                  }
-                }}
-              >
-                <UserButton.MenuItems>
-                  <UserButton.Action
-                    label={`Year ${studentYear} Progress: ${getYearProgress().pct}% (${getYearProgress().completed}/${getYearProgress().total} topics)`}
-                    labelIcon={<Award size={16} className="text-physiology" />}
-                    onClick={() => {
-                      transitionTo(() => setScreen('history'));
-                    }}
-                  />
-
-                  <UserButton.Action
-                    label="Flagged Questions"
-                    labelIcon={<Flag size={16} className="text-clinical" />}
-                    onClick={() => {
-                      transitionTo(() => setScreen('flaggedQuestions'));
-                    }}
-                  />
-
-                  <UserButton.Action
-                    label="Change Academic Year"
-                    labelIcon={<GraduationCap size={16} className="text-gray-500" />}
-                    onClick={() => {
-                      transitionTo(() => {
-                        setStudentYear(null);
-                        setScreen('yearSelect');
-                        localStorage.removeItem('asu_medical_student_year');
-                        localStorage.removeItem('asu_portal_year');
-                        localStorage.removeItem('asu_portal_semester');
-                        localStorage.removeItem('asu_portal_module');
-                        localStorage.removeItem('asu_portal_studyMode');
-                        localStorage.removeItem('asu_portal_screen');
-                      });
-                    }}
-                  />
-
-                  <UserButton.Action
-                    label="EMP Portal"
-                    labelIcon={<ExternalLink size={16} className="text-gray-500" />}
-                    onClick={() => {
-                      window.open('https://asu2learn.asu.edu.eg/medicine-emp/my/', '_blank');
-                    }}
-                  />
-
-                  <UserButton.Action
-                    label="Mainstream Portal"
-                    labelIcon={<ExternalLink size={16} className="text-gray-500" />}
-                    onClick={() => {
-                      window.open('https://asu2learn.asu.edu.eg/medicine/my/', '_blank');
-                    }}
-                  />
-
-                  <UserButton.Action
-                    label="UMS Portal"
-                    labelIcon={<ExternalLink size={16} className="text-gray-500" />}
-                    onClick={() => {
-                      window.open('https://ums.asu.edu.eg/', '_blank');
-                    }}
-                  />
-
-                  <UserButton.Action
-                    label="Report Bug / Support"
-                    labelIcon={<Mail size={16} className="text-gray-500" />}
-                    onClick={() => {
-                      setShowSupportModal(true);
-                    }}
-                  />
-                </UserButton.MenuItems>
-              </UserButton>
+              {customUserButton}
             </div>
           </div>
         </header>
@@ -1058,7 +1141,6 @@ function MainApp() {
                       key={mod.code}
                       onClick={() => active && handleSelectModule(mod)}
                       disabled={!active}
-                      style={{ viewTransitionName: `module-${mod.code}` }}
                       className={`portal-card text-start glass-panel p-6 flex flex-col justify-between h-52 animate-pop-up grid-delay relative overflow-hidden group ${
                         active
                           ? 'hover:border-physiology/60 cursor-pointer glow-border'
@@ -1302,6 +1384,13 @@ function MainApp() {
               onSelectChapter={handleSelectChapter}
               onSelectHistory={handleSelectHistory}
               onBackToModeSelect={() => navigateTo('studyModeSelect')}
+              userButton={customUserButton}
+              breadcrumbPath={[
+                { label: t('portal') || 'Portal', onClick: () => navigateTo('yearSelect') },
+                { label: t(`year${selectedYear}`) || `Year ${selectedYear}`, onClick: () => navigateTo('semesterSelect') },
+                { label: t(`semester${selectedSemester}`) || `Semester ${selectedSemester}`, onClick: () => navigateTo('moduleSelect') },
+                { label: selectedModule?.name || '' }
+              ]}
             />
           </Suspense>
         )}
@@ -1320,6 +1409,7 @@ function MainApp() {
             onBack={() => setScreen('chapters')}
             onSelectSubject={handleSelectSubject}
             onQuickStart={handleQuickStart}
+            userButton={customUserButton}
           />
         )}
 
@@ -1332,6 +1422,7 @@ function MainApp() {
               questions={quizPayload.questions}
               onBack={() => setScreen('subjects')}
               onFinish={handleFinishQuiz}
+              userButton={customUserButton}
             />
           </Suspense>
         )}
@@ -1350,6 +1441,7 @@ function MainApp() {
               onTryAnotherSubject={() => setScreen('subjects')}
               onBackToChapters={handleBackToChapters}
               onBackToSubjects={() => setScreen('subjects')}
+              userButton={customUserButton}
             />
           </Suspense>
         )}
@@ -1360,6 +1452,7 @@ function MainApp() {
             <HistoryScreen
               onBack={() => navigateTo('yearSelect')}
               onSelectHistory={handleSelectHistory}
+              userButton={customUserButton}
             />
           </Suspense>
         )}
@@ -1380,6 +1473,7 @@ function MainApp() {
                   setScreen('quiz');
                 });
               }}
+              userButton={customUserButton}
             />
           </Suspense>
         )}
@@ -1505,6 +1599,101 @@ function MainApp() {
           </div>
         </div>
       )}
+      {/* LANGUAGE SELECTION MODAL */}
+      {showLanguageModal && (
+        <div 
+          className="fixed inset-0 z-[100] flex items-center justify-center p-6 bg-gray-950/40 backdrop-blur-md transition-all duration-300"
+          onClick={(e) => {
+            if (e.target === e.currentTarget) {
+              setShowLanguageModal(false);
+            }
+          }}
+        >
+          <div className="w-full max-w-sm bg-white dark:bg-gray-900 border border-gray-100/80 dark:border-gray-800/80 rounded-[30px] p-7 shadow-2xl animate-pop-up relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-physiology/10 to-transparent rounded-bl-[60px]" />
+            
+            <div className="flex items-center gap-3 mb-5 text-physiology">
+              <div className="w-10 h-10 rounded-xl bg-physiology/10 flex items-center justify-center shrink-0">
+                <Globe size={20} className="text-physiology" />
+              </div>
+              <h3 className="font-archivo text-xl font-bold tracking-tight">
+                {language === 'en' ? 'Select Language' : 'اختر اللغة'}
+              </h3>
+            </div>
+
+            <p className="text-sm text-gray-500 dark:text-gray-400 font-medium leading-relaxed mb-6">
+              {language === 'en' 
+                ? 'Choose your preferred language for the portal layout and syllabus topics:' 
+                : 'اختر لغتك المفضلة لواجهة البوابة ومواضيع المنهج الدراسي:'}
+            </p>
+
+            <div className="space-y-3">
+              {/* English Option */}
+              <button
+                onClick={() => {
+                  if (language !== 'en') toggleLanguage();
+                  setShowLanguageModal(false);
+                }}
+                className={`w-full px-5 py-4 rounded-2xl flex items-center justify-between border transition-all duration-200 group ${
+                  language === 'en'
+                    ? 'bg-physiology/10 border-physiology/30 text-physiology-dark dark:text-physiology'
+                    : 'bg-gray-50/60 dark:bg-gray-800/30 border-gray-100 dark:border-gray-800 hover:bg-gray-100/50 dark:hover:bg-gray-800/50 text-gray-700 dark:text-gray-300'
+                }`}
+              >
+                <div className="flex items-center gap-3.5">
+                  <div className="w-8 h-8 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-sm font-bold shadow-sm shrink-0">
+                    🇺🇸
+                  </div>
+                  <span className="text-sm font-bold font-manrope tracking-wide">
+                    English (US)
+                  </span>
+                </div>
+                {language === 'en' && (
+                  <div className="w-5.5 h-5.5 rounded-full bg-physiology flex items-center justify-center text-white shrink-0">
+                    <Check size={14} strokeWidth={3} />
+                  </div>
+                )}
+              </button>
+
+              {/* Arabic Option */}
+              <button
+                onClick={() => {
+                  if (language !== 'ar') toggleLanguage();
+                  setShowLanguageModal(false);
+                }}
+                className={`w-full px-5 py-4 rounded-2xl flex items-center justify-between border transition-all duration-200 group ${
+                  language === 'ar'
+                    ? 'bg-physiology/10 border-physiology/30 text-physiology-dark dark:text-physiology'
+                    : 'bg-gray-50/60 dark:bg-gray-800/30 border-gray-100 dark:border-gray-800 hover:bg-gray-100/50 dark:hover:bg-gray-800/50 text-gray-700 dark:text-gray-300'
+                }`}
+              >
+                <div className="flex items-center gap-3.5">
+                  <div className="w-8 h-8 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-sm font-bold shadow-sm shrink-0">
+                    🇪🇬
+                  </div>
+                  <span className="text-sm font-bold font-manrope tracking-wide font-amiri">
+                    العربية (Arabic)
+                  </span>
+                </div>
+                {language === 'ar' && (
+                  <div className="w-5.5 h-5.5 rounded-full bg-physiology flex items-center justify-center text-white shrink-0">
+                    <Check size={14} strokeWidth={3} />
+                  </div>
+                )}
+              </button>
+            </div>
+
+            <button
+              onClick={() => setShowLanguageModal(false)}
+              className="w-full py-3.5 mt-6 bg-gray-100 dark:bg-gray-800 hover:bg-gray-250 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-2xl text-xs font-bold tracking-wide transition-all duration-200"
+            >
+              {language === 'en' ? 'Cancel' : 'إلغاء'}
+            </button>
+          </div>
+        </div>
+      )}
+
+      <ClerkThemeTogglePortal />
     </div>
   );
 }

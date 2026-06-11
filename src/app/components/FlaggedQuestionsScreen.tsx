@@ -4,13 +4,11 @@ import { useLanguage } from '../context/LanguageContext';
 import { getFlaggedQuestions, removeFlaggedQuestion } from '../utils/storage';
 import { findQuestionById } from '../data';
 import type { Question, ChapterData } from '../types';
-import { ThemeToggle } from './ThemeToggle';
-import { LanguageToggle } from './LanguageToggle';
-import { UserButton } from '@clerk/clerk-react';
 
 interface FlaggedQuestionsScreenProps {
   onBack: () => void;
   onPracticeQuiz: (chapter: ChapterData, subjectName: string, questions: Question[]) => void;
+  userButton?: React.ReactNode;
 }
 
 interface FlaggedItem {
@@ -21,7 +19,7 @@ interface FlaggedItem {
   subjectName: string;
 }
 
-export function FlaggedQuestionsScreen({ onBack, onPracticeQuiz }: FlaggedQuestionsScreenProps) {
+export function FlaggedQuestionsScreen({ onBack, onPracticeQuiz, userButton }: FlaggedQuestionsScreenProps) {
   const { language, t } = useLanguage();
   const [flaggedItems, setFlaggedItems] = useState<FlaggedItem[]>([]);
   const [revealedAnswers, setRevealedAnswers] = useState<Record<number, boolean>>({});
@@ -98,15 +96,7 @@ export function FlaggedQuestionsScreen({ onBack, onPracticeQuiz }: FlaggedQuesti
           </div>
 
           <div className="flex items-center gap-4">
-            <LanguageToggle />
-            <ThemeToggle />
-            <UserButton 
-              appearance={{
-                elements: {
-                  userButtonAvatarBox: "w-9 h-9 border-2 border-physiology shadow-sm",
-                }
-              }}
-            />
+            {userButton}
           </div>
         </div>
       </header>
