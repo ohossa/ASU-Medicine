@@ -129,6 +129,60 @@ function MainApp() {
   // Initialize automatic cloud synchronization
   useCloudSync();
 
+  // ── 1. State Initializations ──────────────────────────────────────────────────
+
+  // Student Year tracking
+  const [studentYear, setStudentYear] = useState<number | null>(() => {
+    try {
+      const saved = localStorage.getItem('asu_medical_student_year');
+      return saved ? parseInt(saved, 10) : null;
+    } catch {
+      return null;
+    }
+  });
+
+  // Navigation states
+  const [screen, setScreen] = useState<Screen>(() => {
+    try {
+      const saved = localStorage.getItem('asu_portal_screen');
+      if (saved) {
+        if (saved === 'quiz' || saved === 'results') return 'chapters';
+        return saved as Screen;
+      }
+      return 'yearSelect';
+    } catch { return 'yearSelect'; }
+  });
+  const [selectedYear, setSelectedYear] = useState<number | null>(() => {
+    try { const saved = localStorage.getItem('asu_portal_year'); return saved ? Number(saved) : null; } catch { return null; }
+  });
+  const [selectedSemester, setSelectedSemester] = useState<number | null>(() => {
+    try { const saved = localStorage.getItem('asu_portal_semester'); return saved ? Number(saved) : null; } catch { return null; }
+  });
+  const [selectedModule, setSelectedModule] = useState<ModuleInfo | null>(() => {
+    try { const saved = localStorage.getItem('asu_portal_module'); return saved ? JSON.parse(saved) : null; } catch { return null; }
+  });
+  const [studyMode, setStudyMode] = useState<'mcq' | 'essay' | 'mixed' | null>(() => {
+    try { const saved = localStorage.getItem('asu_portal_studyMode'); return saved as any || null; } catch { return null; }
+  });
+
+  const [showTracker, setShowTracker] = useState(false);
+  const [showSupportModal, setShowSupportModal] = useState(false);
+  const [showLanguageModal, setShowLanguageModal] = useState(false);
+  
+  // Quiz states
+  const [selectedChapter, setSelectedChapter] = useState<ChapterData | null>(null);
+  const [quizPayload, setQuizPayload] = useState<QuizPayload | null>(null);
+  const [resultPayload, setResultPayload] = useState<ResultPayload | null>(null);
+  
+  // UI States
+  const [modalModule, setModalModule] = useState<ModuleInfo | null>(null);
+
+  // Carousel states
+  const [activeYearCarouselIndex, setActiveYearCarouselIndex] = useState(1); // Default to Year 2
+  const [activeSemesterCarouselIndex, setActiveSemesterCarouselIndex] = useState(0);
+
+  // ── 2. Helpers and Data Functions ─────────────────────────────────────────────
+
   const getYearProgress = () => {
     try {
       if (!studentYear) return { completed: 0, total: 0, pct: 0 };
@@ -169,15 +223,21 @@ function MainApp() {
     }
   };
 
-  // Student Year tracking
-  const [studentYear, setStudentYear] = useState<number | null>(() => {
-    try {
-      const saved = localStorage.getItem('asu_medical_student_year');
-      return saved ? parseInt(saved, 10) : null;
-    } catch {
-      return null;
-    }
-  });
+  const hasActiveModulesForYear = (year: number): boolean => {
+    const semesters = SYLLABUS_MODULES[year];
+    if (!semesters) return false;
+    return Object.values(semesters).some((modules) =>
+      modules.some((mod) => isModuleActive(mod.code))
+    );
+  };
+
+  const hasActiveModulesForSemester = (year: number, sem: number): boolean => {
+    const modules = SYLLABUS_MODULES[year]?.[sem];
+    if (!modules) return false;
+    return modules.some((mod) => isModuleActive(mod.code));
+  };
+
+  // ── 3. Life-Cycle Effects ─────────────────────────────────────────────────────
 
   // Listen for storage changes from cloud sync
   useEffect(() => {
@@ -194,44 +254,6 @@ function MainApp() {
     window.addEventListener('storage', handleStorage);
     return () => window.removeEventListener('storage', handleStorage);
   }, []);
-
-  const hasActiveModulesForYear = (year: number): boolean => {
-    const semesters = SYLLABUS_MODULES[year];
-    if (!semesters) return false;
-    return Object.values(semesters).some((modules) =>
-      modules.some((mod) => isModuleActive(mod.code))
-    );
-  };
-
-  const hasActiveModulesForSemester = (year: number, sem: number): boolean => {
-    const modules = SYLLABUS_MODULES[year]?.[sem];
-    if (!modules) return false;
-    return modules.some((mod) => isModuleActive(mod.code));
-  };
-  
-  // Navigation states
-  const [screen, setScreen] = useState<Screen>(() => {
-    try {
-      const saved = localStorage.getItem('asu_portal_screen');
-      if (saved) {
-        if (saved === 'quiz' || saved === 'results') return 'chapters';
-        return saved as Screen;
-      }
-      return 'yearSelect';
-    } catch { return 'yearSelect'; }
-  });
-  const [selectedYear, setSelectedYear] = useState<number | null>(() => {
-    try { const saved = localStorage.getItem('asu_portal_year'); return saved ? Number(saved) : null; } catch { return null; }
-  });
-  const [selectedSemester, setSelectedSemester] = useState<number | null>(() => {
-    try { const saved = localStorage.getItem('asu_portal_semester'); return saved ? Number(saved) : null; } catch { return null; }
-  });
-  const [selectedModule, setSelectedModule] = useState<ModuleInfo | null>(() => {
-    try { const saved = localStorage.getItem('asu_portal_module'); return saved ? JSON.parse(saved) : null; } catch { return null; }
-  });
-  const [studyMode, setStudyMode] = useState<'mcq' | 'essay' | 'mixed' | null>(() => {
-    try { const saved = localStorage.getItem('asu_portal_studyMode'); return saved as any || null; } catch { return null; }
-  });
 
   // Sync state to localStorage
   useEffect(() => {
@@ -269,21 +291,6 @@ function MainApp() {
       setScreen('yearSelect');
     }
   }, [screen, selectedYear, selectedSemester, selectedModule, studyMode, selectedChapter, quizPayload, resultPayload]);
-  const [showTracker, setShowTracker] = useState(false);
-  const [showSupportModal, setShowSupportModal] = useState(false);
-  const [showLanguageModal, setShowLanguageModal] = useState(false);
-  
-  // Quiz states
-  const [selectedChapter, setSelectedChapter] = useState<ChapterData | null>(null);
-  const [quizPayload, setQuizPayload] = useState<QuizPayload | null>(null);
-  const [resultPayload, setResultPayload] = useState<ResultPayload | null>(null);
-  
-  // UI States
-  const [modalModule, setModalModule] = useState<ModuleInfo | null>(null);
-
-  // Carousel states
-  const [activeYearCarouselIndex, setActiveYearCarouselIndex] = useState(1); // Default to Year 2
-  const [activeSemesterCarouselIndex, setActiveSemesterCarouselIndex] = useState(0);
 
   const transitionTo = (fn: () => void) => {
     // @ts-ignore
