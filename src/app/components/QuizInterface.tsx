@@ -115,6 +115,10 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
     [current, total]
   );
 
+  const setAnswer = useCallback((value: any) => {
+    setAnswers(prev => ({ ...prev, [current]: value }));
+  }, [current]);
+
   const toggleFlag = useCallback(() => {
     setFlagged(prev => {
       const next = new Set(prev);

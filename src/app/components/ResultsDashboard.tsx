@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import confetti from 'canvas-confetti';
 import {
   ArrowLeft,
@@ -35,6 +35,8 @@ interface Props {
   userButton?: React.ReactNode;
 }
 
+/* ------------------------------ Helper logic ------------------------------ */
+
 function getPerformanceLabel(pct: number): string {
   if (pct >= 85) return 'A - Excellent';
   if (pct >= 75) return 'B - Very Good';
@@ -52,85 +54,137 @@ function getPerformanceBadge(pct: number): string {
   return 'Grade F';
 }
 
-export function ResultsDashboard({
-  chapter, subject, questions, answers, elapsedSeconds, flaggedQuestions,
-  onRetake, onTryAnotherSubject, onBackToChapters, onBackToSubjects, userButton,
-}: Props) {
-  const [filter, setFilter] = useState<'all' | 'wrong' | 'flagged'>('all');
-  const { t, language } = useLanguage();
+const norm = (s: any) => String(s ?? '').trim().toLowerCase();
 
-  const checkAnswerCorrect = (q: Question, ans: any) => {
-    if (ans === undefined) return false;
-    if (q.type === 'mcq' || q.type === 'truefalse') {
+function checkAnswerCorrect(q: Question, ans: any): boolean {
+  if (ans === undefined || ans === null) return false;
+
+  switch (q.type) {
+    case 'mcq':
+    case 'truefalse':
       return ans === q.correctIndex;
-    }
-    if (q.type === 'matching') {
-      const scrambled = ans.scrambled;
-      const matches = ans.matches || ans;
-      if (!scrambled || !matches || !q.pairs) return false;
-      return q.pairs.every((pair, pIdx) => {
-        const correctTargetIdx = scrambled.indexOf(pair.target);
-        return matches[pIdx] === correctTargetIdx;
+
+    case 'matching': {
+      const pairs = q.pairs ?? [];
+      const scrambled: string[] = ans?.scrambled ?? [];
+      const matches: Record<number, number> = ans?.matches ?? {};
+      if (!pairs.length || !scrambled.length) return false;
+      return pairs.every((p: any, i: number) => {
+        const correctScrambledIndex = scrambled.indexOf(p.target ?? p.right);
+        return matches[i] === correctScrambledIndex && correctScrambledIndex !== -1;
       });
     }
-    if (q.type === 'essay') {
+
+    case 'essay':
       return ans?.selfGrade === 'correct';
+
+    case 'fillblank': {
+      const inputs: string[] = ans?.inputs ?? [];
+      const blanks: string[] = q.blanks ?? [];
+      const accepted: string[][] = q.acceptedAnswers ?? [];
+      if (!blanks.length) return false;
+      return blanks.every((primary, i) => {
+        const user = norm(inputs[i]);
+        if (!user) return false;
+        const alternatives = (accepted[i] ?? []).map(norm);
+        return user === norm(primary) || alternatives.includes(user);
+      });
     }
-    if (q.type === 'case' && q.subQuestions) {
-      return q.subQuestions.every((subQ) => {
-        const subAns = ans[subQ.id];
-        if (subAns === undefined) return false;
-        if (subQ.type === 'mcq') {
-          return subAns === subQ.correctIndex;
-        }
-        if (subQ.type === 'essay') {
+
+    case 'case':
+    case 'casestudy': {
+      const subs = q.subQuestions ?? [];
+      if (!subs.length) return false;
+      return subs.every((sq: any) => {
+        const subAns = ans?.[sq.id];
+        if (sq.type === 'mcq') {
+          return subAns === sq.correctIndex;
+        } else {
           return subAns?.selfGrade === 'correct';
         }
-        return false;
       });
     }
-    return false;
+
+    default:
+      return false;
+  }
+}
+
+/* Checks a single fill-blank slot */
+function isBlankCorrect(q: Question, inputs: string[], i: number): boolean {
+  const user = norm(inputs[i]);
+  if (!user) return false;
+  const alternatives = ((q.acceptedAnswers ?? [])[i] ?? []).map(norm);
+  return user === norm((q.blanks ?? [])[i]) || alternatives.includes(user);
+}
+
+/* ------------------------- Markdown table renderer ------------------------- */
+
+function QuestionText({ text }: { text: string }) {
+  if (!text) return null;
+  const lines = text.split('\n');
+  const blocks: Array<{ kind: 'p' | 'table'; lines: string[] }> = [];
+  let buffer: string[] = [];
+  let tableBuffer: string[] = [];
+
+  const flushP = () => {
+    if (buffer.length) blocks.push({ kind: 'p', lines: [...buffer] });
+    buffer = [];
+  };
+  const flushTable = () => {
+    if (tableBuffer.length) blocks.push({ kind: 'table', lines: [...tableBuffer] });
+    tableBuffer = [];
   };
 
-  const renderFormattedText = (
-    text: string | undefined,
-    fallbackClassName: string = "text-sm font-semibold text-success-dark dark:text-green-300 leading-relaxed whitespace-pre-wrap"
-  ) => {
-    if (!text) return null;
-    if (text.includes('|')) {
-      const lines = text.split('\n').map((l) => l.trim()).filter(Boolean);
-      const rows = lines
-        .filter((line) => !line.includes('---') && line.includes('|'))
-        .map((line) => {
-          const parts = line.split('|');
-          if (parts[0] === '') parts.shift();
-          if (parts[parts.length - 1] === '') parts.pop();
-          return parts.map((cell) => cell.trim());
-        });
+  for (const line of lines) {
+    if (line.trim().startsWith('|') && line.includes('|')) {
+      flushP();
+      tableBuffer.push(line);
+    } else {
+      flushTable();
+      buffer.push(line);
+    }
+  }
+  flushP();
+  flushTable();
 
-      if (rows.length > 0) {
-        const headers = rows[0];
-        const bodyRows = rows.slice(1);
+  return (
+    <div className="space-y-4">
+      {blocks.map((block, bi) => {
+        if (block.kind === 'p') {
+          const para = block.lines.join('\n').trim();
+          if (!para) return null;
+          return (
+            <p key={bi} className="whitespace-pre-line text-[15px] leading-relaxed text-white/85">
+              {para}
+            </p>
+          );
+        }
+        // Markdown table: header | --- separator | rows
+        const rows = block.lines
+          .map(l => l.trim().replace(/^\|/, '').replace(/\|$/, '').split('|').map(c => c.trim()))
+          .filter(cells => cells.length > 0);
+        const sepIndex = rows.findIndex(cells => cells.every(c => /^:?-{2,}:?$/.test(c)));
+        const header = sepIndex > 0 ? rows[0] : null;
+        const body = sepIndex > 0 ? rows.slice(sepIndex + 1) : rows;
 
         return (
-          <div className="overflow-x-auto my-4 rounded-2xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-950 text-left">
-            <table className="w-full text-left border-collapse text-xs sm:text-sm">
-              <thead>
-                <tr className="bg-gray-50 dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800">
-                  {headers.map((h, idx) => (
-                    <th key={idx} className="p-4 text-[10px] sm:text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wider">
-                      {h}
-                    </th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-gray-100 dark:divide-gray-800">
-                {bodyRows.map((row, rIdx) => (
-                  <tr key={rIdx} className="hover:bg-gray-50/50 dark:hover:bg-gray-950/30 transition-colors">
-                    {row.map((cell, cIdx) => (
-                      <td key={cIdx} className="p-4 text-xs sm:text-sm font-medium text-gray-700 dark:text-gray-300">
-                        {cell}
-                      </td>
+          <div key={bi} className="overflow-x-auto rounded-xl border border-white/[0.08]">
+            <table className="w-full text-sm">
+              {header && (
+                <thead>
+                  <tr className="border-b border-white/[0.08] bg-white/[0.04]">
+                    {header.map((h, i) => (
+                      <th key={i} className="px-4 py-2.5 text-start font-semibold text-white/80">{h}</th>
+                    ))}
+                  </tr>
+                </thead>
+              )}
+              <tbody>
+                {body.map((cells, ri) => (
+                  <tr key={ri} className="border-b border-white/[0.05] last:border-0">
+                    {cells.map((c, ci) => (
+                      <td key={ci} className="px-4 py-2.5 text-white/65">{c}</td>
                     ))}
                   </tr>
                 ))}
@@ -138,713 +192,576 @@ export function ResultsDashboard({
             </table>
           </div>
         );
-      }
-    }
-    return (
-      <div className={fallbackClassName}>
-        {text}
-      </div>
-    );
-  };
+      })}
+    </div>
+  );
+}
 
-  // Points-based calculations for case sub-questions
-  const getPointsStats = () => {
-    let totalPoints = 0;
-    let correctPoints = 0;
+/* ------------------------------ Progress ring ------------------------------ */
 
-    questions.forEach((q, i) => {
-      const ans = answers[i];
-      if (q.type === 'case' && q.subQuestions) {
-        totalPoints += q.subQuestions.length;
-        if (ans) {
-          q.subQuestions.forEach((subQ) => {
-            const subAns = ans[subQ.id];
-            if (subAns !== undefined) {
-              const isSubCorrect = subQ.type === 'mcq'
-                ? subAns === subQ.correctIndex
-                : subAns?.selfGrade === 'correct';
-              if (isSubCorrect) correctPoints++;
-            }
-          });
-        }
-      } else {
-        totalPoints += 1;
-        if (ans !== undefined && checkAnswerCorrect(q, ans)) {
-          correctPoints++;
-        }
-      }
-    });
-
-    return { totalPoints, correctPoints };
-  };
-
-  const { totalPoints: total, correctPoints: correct } = getPointsStats();
-  const incorrect = total - correct;
-  const pct = total > 0 ? Math.round((correct / total) * 100) : 0;
-  const flaggedCount = flaggedQuestions.size;
-
-  const [displayPct, setDisplayPct] = useState(0);
+function ScoreRing({ percentage }: { percentage: number }) {
+  const r = 78;
+  const circumference = 2 * Math.PI * r; // ≈ 490
+  const [offset, setOffset] = useState(circumference);
 
   useEffect(() => {
-    let startTime: number;
-    const duration = 1200;
-    const animate = (timestamp: number) => {
-      if (!startTime) startTime = timestamp;
-      const progress = timestamp - startTime;
-      const percent = Math.min(progress / duration, 1);
-      const ease = 1 - Math.pow(1 - percent, 4);
-      setDisplayPct(Math.round(pct * ease));
-      if (progress < duration) requestAnimationFrame(animate);
-    };
-    requestAnimationFrame(animate);
+    const id = window.setTimeout(() => {
+      setOffset(circumference - (Math.min(Math.max(percentage, 0), 100) / 100) * circumference);
+    }, 150);
+    return () => window.clearTimeout(id);
+  }, [percentage, circumference]);
 
-    if (pct >= 80) {
-      setTimeout(() => {
-        confetti({
-          particleCount: 150,
-          spread: 80,
-          origin: { y: 0.6 }
-        });
-      }, 1000);
-    }
-  }, [pct]);
-
-  const radius = 54;
-  const circumference = 2 * Math.PI * radius;
-  const strokeOffset = circumference - (pct / 100) * circumference;
-
-  const subjectColor: SubjectColor = (subject?.id as SubjectColor) ?? 'physiology';
-  const s = subjectStyles[subjectColor];
-
-  const visibleQuestions =
-    filter === 'wrong'
-      ? questions.map((q, i) => ({ q, i })).filter(({ q, i }) => !checkAnswerCorrect(q, answers[i]))
-      : filter === 'flagged'
-      ? questions.map((q, i) => ({ q, i })).filter(({ i }) => flaggedQuestions.has(i))
-      : questions.map((q, i) => ({ q, i }));
+  const ringColor = percentage >= 75 ? '#34d399' : percentage >= 60 ? '#fbbf24' : '#fb7185';
 
   return (
-    <div className="min-h-screen bg-gray-50/70 dark:bg-gray-950 font-manrope">
-      <style>{`
-        @keyframes scaleIn {
-          0% { opacity: 0; transform: scale(0.6); }
-          60% { transform: scale(1.08); }
-          100% { opacity: 1; transform: scale(1); }
-        }
-        @keyframes drawCircle {
-          from { stroke-dashoffset: ${circumference}; }
-          to { stroke-dashoffset: ${strokeOffset}; }
-        }
-        @keyframes fadeInUp {
-          from { opacity: 0; transform: translateY(28px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes slideInLeft {
-          from { opacity: 0; transform: translateX(-20px); }
-          to { opacity: 1; transform: translateX(0); }
-        }
-        @keyframes badgePop {
-          0% { opacity: 0; transform: scale(0) rotate(-10deg); }
-          60% { transform: scale(1.15) rotate(3deg); }
-          100% { opacity: 1; transform: scale(1) rotate(0deg); }
-        }
-        @keyframes confettiFall {
-          0% { transform: translateY(-20px) rotate(0deg); opacity: 1; }
-          100% { transform: translateY(60px) rotate(720deg); opacity: 0; }
-        }
-        @keyframes float {
-          0%, 100% { transform: translateY(0px); }
-          50% { transform: translateY(-8px); }
-        }
-        .score-animate { animation: scaleIn 700ms cubic-bezier(0.34,1.56,0.64,1) 200ms both; }
-        .score-circle-draw { animation: drawCircle 1200ms cubic-bezier(0.4,0,0.2,1) 400ms both; }
-        .score-text-animate { animation: fadeInUp 500ms ease-out 800ms both; }
-        .badge-animate { animation: badgePop 500ms cubic-bezier(0.34,1.56,0.64,1) 1000ms both; }
-        .stats-animate { animation: fadeInUp 500ms ease-out 600ms both; }
-        .header-animate { animation: slideInLeft 500ms ease-out both; }
-        .section-animate { animation: fadeInUp 500ms ease-out 400ms both; }
-        .card-stagger { animation: fadeInUp 500ms cubic-bezier(0.34,1.56,0.64,1) both; }
-        .card-stagger:nth-child(1) { animation-delay: 500ms; }
-        .card-stagger:nth-child(2) { animation-delay: 600ms; }
-        .card-stagger:nth-child(3) { animation-delay: 700ms; }
-        .card-stagger:nth-child(4) { animation-delay: 800ms; }
-        .card-stagger:nth-child(5) { animation-delay: 900ms; }
-        .review-card { transition: all 350ms cubic-bezier(0.34,1.56,0.64,1); }
-        .review-card:hover { transform: translateY(-2px); }
-        .action-btn { transition: all 300ms cubic-bezier(0.34,1.56,0.64,1); }
-        .action-btn:hover { transform: translateY(-2px) scale(1.01); }
-        .action-btn:active { transform: scale(0.97); }
-        .blob-1 { animation: float 7s ease-in-out infinite; }
-        .blob-2 { animation: float 9s ease-in-out infinite reverse; }
-        .blob-3 { animation: float 11s ease-in-out infinite 2s; }
-        .confetti-1 { animation: confettiFall 2s ease-in 1.2s both; }
-        .confetti-2 { animation: confettiFall 2.3s ease-in 1.4s both; }
-        .confetti-3 { animation: confettiFall 1.8s ease-in 1.6s both; }
-        .confetti-4 { animation: confettiFall 2.5s ease-in 1.3s both; }
-        .confetti-5 { animation: confettiFall 2.1s ease-in 1.5s both; }
-
-        .nav-back { transition: all 250ms cubic-bezier(0.34,1.56,0.64,1); }
-        .nav-back:hover { transform: translateX(-3px); }
-        .toggle-btn { transition: all 250ms cubic-bezier(0.34,1.56,0.64,1); }
-      `}</style>
-
-      {/* HEADER */}
-      <header className="bg-white dark:bg-gray-900 border-b border-gray-100 dark:border-gray-800 sticky top-0 z-50">
-        <div className="max-w-[1600px] mx-auto px-6 lg:px-10">
-          <div className="flex items-center justify-between h-16">
-            <div className="flex items-center gap-4">
-              <button
-                onClick={onBackToSubjects}
-                className="nav-back inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white text-sm font-semibold border border-gray-100 dark:border-gray-700"
-              >
-                <ArrowLeft size={16} />
-                <span className="hidden sm:inline">{t('back')}</span>
-              </button>
-              <div className="hidden md:flex items-center gap-2 text-sm">
-                <span className="text-gray-400 dark:text-gray-500 font-medium">{t('chapter')} {chapter.id}</span>
-                <ChevronRight size={12} className="text-gray-300 dark:text-gray-600" />
-                <span className="text-gray-900 dark:text-white font-bold">{chapter.title}</span>
-              </div>
-            </div>
-            <div className="flex items-center gap-3">
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-success/5 border border-success/15 rounded-full">
-                <CheckCircle2 size={14} className="text-success" />
-                <span className="text-xs font-bold text-success-dark">{language === 'en' ? 'Session Complete' : 'اكتملت الجلسة'}</span>
-              </div>
-              {userButton}
-            </div>
-          </div>
-        </div>
-      </header>
-
-      {/* HERO SCORE */}
-      <div className="relative overflow-hidden bg-white dark:bg-gray-900 border-b border-gray-100 dark:border-gray-800">
-
-        <div className="blob-1 absolute -top-20 right-32 w-64 h-64 rounded-full bg-gradient-to-br from-success/8 to-physiology/6 blur-3xl" />
-        <div className="blob-2 absolute -bottom-16 left-16 w-48 h-48 rounded-full bg-gradient-to-br from-clinical/8 to-anatomy/6 blur-3xl" />
-        <div className="blob-3 absolute top-10 left-1/3 w-32 h-32 rounded-full bg-gradient-to-br from-biochem/6 to-pharma/4 blur-3xl" />
-
-        {pct >= 75 && (
-          <>
-            <div className="confetti-1 absolute top-8 left-[20%] w-2 h-2 rounded-full bg-success/60" />
-            <div className="confetti-2 absolute top-4 left-[40%] w-1.5 h-1.5 rounded-sm bg-physiology/50 rotate-45" />
-            <div className="confetti-3 absolute top-6 left-[60%] w-2 h-2 rounded-full bg-biochem/50" />
-            <div className="confetti-4 absolute top-10 left-[75%] w-1.5 h-1.5 rounded-sm bg-anatomy/50 rotate-12" />
-            <div className="confetti-5 absolute top-3 left-[85%] w-2 h-2 rounded-full bg-clinical/40" />
-          </>
-        )}
-
-        <div className="relative max-w-[1600px] mx-auto px-6 lg:px-10 py-12 lg:py-16">
-          <div className="flex flex-col lg:flex-row items-center lg:items-start gap-10 lg:gap-16">
-
-            {/* Score Circle */}
-            <div className="score-animate flex-shrink-0">
-              <div className="relative w-48 h-48 lg:w-56 lg:h-56">
-                <svg className="w-full h-full -rotate-90" viewBox="0 0 120 120">
-                  <circle cx="60" cy="60" r={radius} fill="none" stroke="#F3F4F6" strokeWidth="6" className="dark:stroke-gray-800" />
-                  <circle
-                    className="score-circle-draw"
-                    cx="60" cy="60" r={radius} fill="none"
-                    stroke="url(#scoreGrad)" strokeWidth="6"
-                    strokeLinecap="round"
-                    strokeDasharray={circumference}
-                    strokeDashoffset={strokeOffset}
-                  />
-                  <defs>
-                    <linearGradient id="scoreGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" style={{ stopColor: '#10B981' }} />
-                      <stop offset="50%" style={{ stopColor: '#06B6D4' }} />
-                      <stop offset="100%" style={{ stopColor: '#3B82F6' }} />
-                    </linearGradient>
-                  </defs>
-                </svg>
-                <div className="absolute inset-0 flex flex-col items-center justify-center">
-                  <span className="score-text-animate font-archivo text-6xl lg:text-7xl font-black text-gray-900 dark:text-white tracking-tight leading-none">
-                    {displayPct}
-                  </span>
-                  <span className="score-text-animate text-lg text-gray-400 dark:text-gray-500 font-bold -mt-1">%</span>
-                </div>
-              </div>
-            </div>
-
-            {/* Score Details */}
-            <div className="flex-1 text-center lg:text-left">
-              <div className="header-animate">
-                <h1 className="font-archivo text-4xl lg:text-5xl font-black text-gray-900 dark:text-white tracking-tight leading-tight mb-3">
-                  {language === 'en' ? getPerformanceLabel(pct) : (pct >= 75 ? 'عمل رائع!' : 'تحتاج للمزيد من الدراسة!')}
-                </h1>
-                <p className="text-gray-400 dark:text-gray-500 text-lg font-medium max-w-lg leading-relaxed mb-6">
-                  {language === 'en' ? (
-                    <>You graded <strong className="text-gray-700 dark:text-gray-300">{correct} out of {total}</strong> questions correctly{subject ? ` in the ${subject.name} section` : ''}.</>
-                  ) : (
-                    <>لقد أجبت بشكل صحيح على <strong className="text-gray-700 dark:text-gray-300">{correct} من أصل {total}</strong> أسئلة{subject ? ` في قسم ${subject.name}` : ''}.</>
-                  )}
-                </p>
-              </div>
-
-              <div className="badge-animate inline-flex items-center gap-2.5 px-5 py-2.5 bg-gradient-to-r from-success/10 to-physiology/10 border border-success/20 rounded-full mb-8">
-                <Award size={18} className="text-success" />
-                <span className="font-archivo text-sm font-bold text-success-dark uppercase tracking-wide">
-                  {getPerformanceBadge(pct)}
-                </span>
-              </div>
-
-              <div className="stats-animate flex flex-wrap items-center justify-center lg:justify-start gap-3">
-                {[
-                  { icon: <Check size={14} />, value: correct, label: t('correct'), bg: 'bg-success/5', border: 'border-success/15', iconBg: 'bg-success/15', iconColor: 'text-success', textColor: 'text-success-dark' },
-                  { icon: <X size={14} />, value: incorrect, label: t('incorrect'), bg: 'bg-danger/5', border: 'border-danger/15', iconBg: 'bg-danger/15', iconColor: 'text-danger', textColor: 'text-danger-dark' },
-                  { icon: <Clock size={14} />, value: formatTime(elapsedSeconds), label: t('timeSpent'), bg: 'bg-gray-50 dark:bg-gray-800', border: 'border-gray-100 dark:border-gray-700', iconBg: 'bg-gray-100 dark:bg-gray-700', iconColor: 'text-gray-500 dark:text-gray-400', textColor: 'text-gray-700 dark:text-gray-300' },
-                  { icon: <Activity size={14} />, value: total, label: t('totalQuestions'), bg: s.bgOp5, border: s.borderOp15, iconBg: s.bgOp15, iconColor: s.text, textColor: s.textDark },
-                ].map((stat) => (
-                  <div key={stat.label} className={`flex items-center gap-2.5 px-5 py-3 ${stat.bg} ${stat.border} border rounded-2xl`}>
-                    <div className={`w-8 h-8 rounded-xl ${stat.iconBg} flex items-center justify-center`}>
-                      <span className={stat.iconColor}>{stat.icon}</span>
-                    </div>
-                    <div>
-                      <div className={`font-archivo text-xl font-black ${stat.textColor}`}>{stat.value}</div>
-                      <div className="text-[10px] text-gray-400 dark:text-gray-500 font-bold uppercase tracking-wider">{stat.label}</div>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* REVIEW SECTION */}
-      <div className="max-w-[1600px] mx-auto px-6 lg:px-10 py-10 lg:py-14">
-        <div className="section-animate flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-8">
-          <div className="flex items-center gap-3">
-            <div className="w-1.5 h-6 rounded-full bg-gradient-to-b from-success to-physiology" />
-            <h2 className="font-archivo text-xl font-bold text-gray-900 dark:text-white tracking-tight">Review Answers & Key Concepts</h2>
-            <span className="text-xs text-gray-400 dark:text-gray-500 font-semibold">{total} points total</span>
-          </div>
-
-          <div className="flex items-center p-1 bg-gray-100 dark:bg-gray-800 rounded-2xl">
-            <button
-              className={`toggle-btn px-5 py-2.5 rounded-xl text-xs font-bold ${filter === 'all' ? 'bg-white dark:bg-gray-700 text-gray-900 dark:text-white shadow-sm' : 'text-gray-400 dark:text-gray-500'}`}
-              onClick={() => setFilter('all')}
-            >
-              {t('allQuestions')}
-            </button>
-            <button
-              className={`toggle-btn px-5 py-2.5 rounded-xl text-xs font-bold ${filter === 'wrong' ? 'bg-white dark:bg-gray-700 text-gray-900 dark:text-white shadow-sm' : 'text-gray-400 dark:text-gray-500'}`}
-              onClick={() => setFilter('wrong')}
-            >
-              <span className="flex items-center gap-1.5">
-                <XCircle size={14} />
-                {t('incorrectOnly')}
-                <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-danger/10 text-danger text-[10px] font-black">
-                  {incorrect}
-                </span>
-              </span>
-            </button>
-            {flaggedCount > 0 && (
-              <button
-                className={`toggle-btn px-5 py-2.5 rounded-xl text-xs font-bold ${filter === 'flagged' ? 'bg-white dark:bg-gray-700 text-gray-900 dark:text-white shadow-sm' : 'text-gray-400 dark:text-gray-500'}`}
-                onClick={() => setFilter('flagged')}
-              >
-                <span className="flex items-center gap-1.5">
-                  <Flag size={14} />
-                  {t('flaggedOnly')}
-                  <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-amber-100 dark:bg-amber-900/40 text-amber-600 dark:text-amber-400 text-[10px] font-black">
-                    {flaggedCount}
-                  </span>
-                </span>
-              </button>
-            )}
-          </div>
-        </div>
-
-        <div className="space-y-6">
-          {visibleQuestions.map(({ q, i }, staggerIdx) => {
-            const userAns = answers[i];
-            const isCorrect = checkAnswerCorrect(q, userAns);
-            const qColor = q.subjectColor as SubjectColor;
-
-            return (
-              <div
-                key={i}
-                className={`card-stagger review-card glass-panel glow-border rounded-[30px] border overflow-hidden transition-all duration-300 ${
-                  q.id === 2
-                    ? 'border-pink-300 dark:border-purple-800'
-                    : isCorrect
-                    ? 'border-gray-100 dark:border-gray-800'
-                    : 'border-danger/15'
-                }`}
-                style={{
-                  animationDelay: `${500 + staggerIdx * 100}ms`,
-                }}
-              >
-                <div className="flex items-stretch">
-                  <div className={`w-1.5 flex-shrink-0 ${isCorrect ? 'bg-success' : 'bg-danger'}`} />
-                  <div className="flex-1 p-6 lg:p-7 text-left">
-                    {/* Card header */}
-                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-4">
-                      <div className="flex flex-wrap items-center gap-2">
-                        <span
-                          className={`inline-flex items-center justify-center w-8 h-8 rounded-xl font-archivo font-bold text-xs ${
-                            isCorrect ? 'bg-gray-900 dark:bg-white text-white dark:text-gray-900' : 'bg-danger text-white'
-                          }`}
-                        >
-                          {i + 1}
-                        </span>
-                        <span className="text-xs text-gray-400 dark:text-gray-500 font-semibold uppercase tracking-wider">
-                          {q.type === 'truefalse'
-                            ? 'True / False'
-                            : q.type === 'matching'
-                            ? 'Matching'
-                            : q.type === 'essay'
-                            ? 'Essay'
-                            : q.type === 'case'
-                            ? 'Clinical Case Study'
-                            : 'Multiple Choice'}
-                        </span>
-                        <span className={`inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full text-[10px] font-bold ${subjectStyles[qColor].bgOp10} ${subjectStyles[qColor].textDark}`}>
-                          {chapter.subjects.find((s) => s.id === q.subjectColor)?.name ?? q.subjectColor}
-                        </span>
-                        {flaggedQuestions.has(i) && (
-                          <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-bold bg-amber-50 dark:bg-amber-900/30 border border-amber-200 dark:border-amber-700 text-amber-600 dark:text-amber-400">
-                            <Flag size={10} className="fill-amber-500 text-amber-500" />
-                            Flagged
-                          </span>
-                        )}
-                      </div>
-                      <div
-                        className={`flex items-center self-start sm:self-auto gap-1.5 px-3 py-1.5 rounded-full ${
-                          isCorrect ? 'bg-success/8 border border-success/15' : 'bg-danger/8 border border-danger/15'
-                        }`}
-                      >
-                        {isCorrect ? (
-                          <CheckCircle2 size={14} className="text-success" />
-                        ) : (
-                          <XCircle size={14} className="text-danger" />
-                        )}
-                        <span className={`text-[11px] font-bold ${isCorrect ? 'text-success-dark' : 'text-danger-dark'}`}>
-                          {isCorrect ? 'Correct' : 'Needs Review'}
-                        </span>
-                      </div>
-                    </div>
-
-                    {/* Question text / Scenario */}
-                    {renderFormattedText(
-                      q.text,
-                      "font-archivo text-base font-bold text-gray-900 dark:text-white tracking-tight leading-relaxed mb-5 whitespace-pre-line text-left"
-                    )}
-
-                    {/* MCQ / TrueFalse Answers review */}
-                    {(q.type === 'mcq' || q.type === 'truefalse') && q.options && (
-                      <div className="space-y-3 mb-4">
-                        <div
-                          className={`flex items-center gap-3 px-4 py-3 rounded-2xl ${
-                            isCorrect ? 'bg-success/5 border border-success/15' : 'bg-danger/5 border border-danger/15'
-                          } border`}
-                        >
-                          <div
-                            className={`w-8 h-8 rounded-xl flex items-center justify-center flex-shrink-0 ${
-                              isCorrect ? 'bg-success/15' : 'bg-danger/15'
-                            }`}
-                          >
-                            {isCorrect ? <Check size={14} className="text-success" /> : <X size={14} className="text-danger" />}
-                          </div>
-                          <div>
-                            <div className={`text-[10px] font-bold uppercase tracking-wider mb-0.5 ${isCorrect ? 'text-success' : 'text-danger'}`}>
-                              Your Answer
-                            </div>
-                            <span
-                              className={`text-sm font-semibold ${
-                                isCorrect ? 'text-success-dark' : 'text-danger-dark line-through decoration-danger/30'
-                              }`}
-                            >
-                              {userAns !== undefined ? q.options[userAns] : 'Not answered'}
-                            </span>
-                          </div>
-                        </div>
-
-                        {!isCorrect && (
-                          <div className="flex items-center gap-3 px-4 py-3 bg-success/5 border border-success/15 rounded-2xl border">
-                            <div className="w-8 h-8 rounded-xl bg-success/15 flex items-center justify-center flex-shrink-0">
-                              <Check size={14} className="text-success" />
-                            </div>
-                            <div>
-                              <div className="text-[10px] text-success font-bold uppercase tracking-wider mb-0.5">Correct Answer</div>
-                              <span className="text-sm font-semibold text-success-dark">{q.options[q.correctIndex ?? 0]}</span>
-                            </div>
-                          </div>
-                        )}
-                      </div>
-                    )}
-
-                    {/* Matching Review Layout */}
-                    {q.type === 'matching' && (() => {
-                      const scrambled = userAns?.scrambled || [];
-                      const matches = userAns?.matches || userAns || {};
-                      return (
-                        <div className="space-y-3 mb-4">
-                          <div className="text-[10px] text-gray-400 dark:text-gray-500 font-bold uppercase tracking-wider mb-1">Pairing Results</div>
-                          <div className="grid grid-cols-1 gap-2.5">
-                            {q.pairs?.map((pair, pIdx) => {
-                              const studentTargetIdx = matches[pIdx];
-                              const studentTarget = studentTargetIdx !== undefined ? scrambled[studentTargetIdx] : 'None';
-                              const isPairCorrect = studentTargetIdx === scrambled.indexOf(pair.target);
-
-                              return (
-                                <div
-                                  key={pIdx}
-                                  className={`p-4 border rounded-2xl flex flex-col sm:flex-row sm:items-center justify-between gap-3 ${
-                                    isPairCorrect ? 'bg-success/[0.02] border-success/15' : 'bg-danger/[0.02] border-danger/15'
-                                  }`}
-                                >
-                                  <div className="min-w-0 flex-1">
-                                    <span className="text-sm font-bold text-gray-900 dark:text-white">{pair.premise}</span>
-                                    <span className="text-xs text-gray-400 dark:text-gray-500 mx-2">→</span>
-                                    <span className={`text-sm font-semibold ${isPairCorrect ? 'text-success-dark' : 'text-danger-dark line-through decoration-danger/30'}`}>
-                                      {studentTarget}
-                                    </span>
-                                  </div>
-                                  {!isPairCorrect && (
-                                    <div className="text-xs font-semibold text-success-dark bg-success/5 border border-success/10 px-3 py-1.5 rounded-xl self-start sm:self-auto">
-                                      Correct: <strong className="underline">{pair.target}</strong>
-                                    </div>
-                                  )}
-                                </div>
-                              );
-                            })}
-                          </div>
-                        </div>
-                      );
-                    })()}
-
-                    {/* Essay Review Layout */}
-                    {q.type === 'essay' && (
-                      <div className="space-y-4 mb-4">
-                        <div className="bg-gray-50 dark:bg-gray-800/40 rounded-2xl p-5 border border-gray-100 dark:border-gray-800">
-                          <div className="text-[10px] text-gray-400 dark:text-gray-500 font-bold uppercase tracking-wider mb-2">Your Draft Notes</div>
-                          <p className="text-sm font-medium text-gray-700 dark:text-gray-300 leading-relaxed italic whitespace-pre-wrap">
-                            {userAns?.text || 'No draft notes recorded.'}
-                          </p>
-                        </div>
-                        <div className="bg-success/[0.02] rounded-2xl p-5 border border-success/10">
-                          <div className="text-[10px] text-success font-bold uppercase tracking-wider mb-2">Reference Model Answer</div>
-                          {renderFormattedText(q.modelAnswer, "text-sm font-semibold text-success-dark dark:text-green-300 leading-relaxed whitespace-pre-wrap text-left")}
-                        </div>
-                      </div>
-                    )}
-
-                    {/* Case Study Review */}
-                    {q.type === 'case' && q.subQuestions && (
-                      <div className="space-y-6 mb-4">
-                        <div className="text-[10px] text-gray-400 dark:text-gray-500 font-bold uppercase tracking-wider mb-2">
-                          Case Study Questions
-                        </div>
-                        <div className="space-y-4">
-                          {q.subQuestions.map((subQ, sIdx) => {
-                            const subAns = userAns?.[subQ.id];
-                            const isSubCorrect = subQ.type === 'mcq'
-                              ? subAns === subQ.correctIndex
-                              : subAns?.selfGrade === 'correct';
-
-                            return (
-                              <div
-                                key={subQ.id}
-                                className={`p-5 rounded-2xl border ${
-                                  isSubCorrect
-                                    ? 'bg-success/[0.01] border-success/15'
-                                    : 'bg-danger/[0.01] border-danger/15'
-                                }`}
-                              >
-                                <div className="flex items-center justify-between gap-3 mb-3">
-                                  <div className="flex items-center gap-2">
-                                    <span className={`inline-flex items-center justify-center px-2.5 py-0.5 rounded-md text-[9px] font-bold ${
-                                      isSubCorrect ? 'bg-success/10 text-success' : 'bg-danger/10 text-danger'
-                                    }`}>
-                                      Part {String.fromCharCode(65 + sIdx)}
-                                    </span>
-                                    <span className="text-[10px] text-gray-400 dark:text-gray-500 font-semibold uppercase tracking-wider">
-                                      {subQ.type === 'mcq' ? 'Multiple Choice' : 'Essay'}
-                                    </span>
-                                  </div>
-                                  <div className="flex items-center gap-1">
-                                    {isSubCorrect ? (
-                                      <CheckCircle2 size={12} className="text-success" />
-                                    ) : (
-                                      <XCircle size={12} className="text-danger" />
-                                    )}
-                                    <span className={`text-[10px] font-bold ${isSubCorrect ? 'text-success-dark' : 'text-danger-dark'}`}>
-                                      {isSubCorrect ? 'Correct' : 'Needs Review'}
-                                    </span>
-                                  </div>
-                                </div>
-
-                                {renderFormattedText(
-                                  subQ.text,
-                                  "text-sm font-bold text-gray-900 dark:text-white leading-relaxed mb-3 text-left whitespace-pre-line"
-                                )}
-
-                                {subQ.type === 'mcq' && subQ.options && (
-                                  <div className="space-y-2">
-                                    <div className={`flex items-center gap-2.5 px-3 py-2 rounded-xl text-xs ${
-                                      isSubCorrect ? 'bg-success/5 border border-success/10' : 'bg-danger/5 border border-danger/10'
-                                    } border`}>
-                                      <span className="font-bold text-[10px] uppercase">Your Pick:</span>
-                                      <span className="font-medium">
-                                        {subAns !== undefined ? subQ.options[subAns] : 'Not answered'}
-                                      </span>
-                                    </div>
-                                    {!isSubCorrect && (
-                                      <div className="flex items-center gap-2.5 px-3 py-2 bg-success/5 border border-success/10 rounded-xl text-xs border">
-                                        <span className="font-bold text-[10px] uppercase text-success">Correct:</span>
-                                        <span className="font-medium text-success-dark">
-                                          {subQ.options[subQ.correctIndex ?? 0]}
-                                        </span>
-                                      </div>
-                                    )}
-                                  </div>
-                                )}
-
-                                {subQ.type === 'essay' && (
-                                  <div className="space-y-3">
-                                    <div className="bg-gray-50 dark:bg-gray-800/40 rounded-xl p-3.5 border border-gray-100 dark:border-gray-800 text-xs">
-                                      <span className="font-bold text-[10px] uppercase text-gray-400 block mb-1">Your Notes:</span>
-                                      <p className="font-medium text-gray-700 dark:text-gray-300 italic whitespace-pre-wrap text-left">
-                                        {subAns?.text || 'No draft notes recorded.'}
-                                      </p>
-                                    </div>
-                                    <div className="bg-success/[0.02] rounded-xl p-3.5 border border-success/10 text-xs">
-                                      <span className="font-bold text-[10px] uppercase text-success block mb-1">Reference Answer:</span>
-                                      {renderFormattedText(subQ.modelAnswer, "text-xs font-semibold text-success-dark dark:text-green-300 leading-relaxed text-left whitespace-pre-wrap")}
-                                    </div>
-                                  </div>
-                                )}
-
-                                {/* Sub-question explanation / concept review */}
-                                {subQ.explanation && (
-                                  <div className="mt-3 bg-biochem/[0.02] rounded-xl p-3.5 border border-biochem/10 text-xs">
-                                    <div className="flex gap-2">
-                                      <Lightbulb size={13} className="text-biochem mt-0.5 flex-shrink-0" />
-                                      <div className="text-left">
-                                        <span className="font-bold text-[10px] uppercase text-biochem-dark block mb-1">Explanation</span>
-                                        <p className="text-gray-600 dark:text-gray-400 leading-relaxed">{subQ.explanation}</p>
-                                      </div>
-                                    </div>
-                                  </div>
-                                )}
-
-                                {subQ.keyConcept && (
-                                  <div className="mt-2 bg-physiology/[0.02] rounded-xl p-3.5 border border-physiology/10 text-xs">
-                                    <div className="flex gap-2">
-                                      <Bookmark size={13} className="text-physiology mt-0.5 flex-shrink-0" />
-                                      <div className="text-left">
-                                        <span className="font-bold text-[10px] uppercase text-physiology-dark block mb-1">Key Concept</span>
-                                        <p className="text-gray-600 dark:text-gray-400 leading-relaxed">{subQ.keyConcept}</p>
-                                      </div>
-                                    </div>
-                                  </div>
-                                )}
-                              </div>
-                            );
-                          })}
-                        </div>
-                      </div>
-                    )}
-
-                    {/* Explanation */}
-                    {q.explanation && (
-                      <div className="bg-biochem/[0.04] rounded-2xl p-5 border border-biochem/15 mb-3">
-                        <div className="flex items-start gap-3">
-                          <div className="w-8 h-8 rounded-xl bg-biochem/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                            <Lightbulb size={14} className="text-biochem" />
-                          </div>
-                          <div>
-                            <h4 className="text-xs font-bold text-biochem-dark uppercase tracking-wider mb-2">Explanation</h4>
-                            <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">{q.explanation}</p>
-                          </div>
-                        </div>
-                      </div>
-                    )}
-
-                    {/* Key concept */}
-                    {q.keyConcept && (
-                      <div className="bg-physiology/[0.04] rounded-2xl p-5 border border-physiology/15">
-                        <div className="flex items-start gap-3">
-                          <div className="w-8 h-8 rounded-xl bg-physiology/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                            <Bookmark size={14} className="text-physiology" />
-                          </div>
-                          <div>
-                            <h4 className="text-xs font-bold text-physiology-dark uppercase tracking-wider mb-2">Key Concept</h4>
-                            <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">{q.keyConcept}</p>
-                          </div>
-                        </div>
-                      </div>
-                    )}
-                  </div>
-                </div>
-              </div>
-            );
-          })}
-
-          {visibleQuestions.length === 0 && filter === 'all' && (
-            <div className="text-center py-16">
-              <CheckCircle2 size={48} className="text-success mx-auto mb-4" />
-              <h3 className="font-archivo text-xl font-bold text-gray-900 dark:text-white mb-2">Perfect Score!</h3>
-              <p className="text-gray-400 dark:text-gray-500 font-medium">You graded all answers as correct.</p>
-            </div>
-          )}
-          {visibleQuestions.length === 0 && filter === 'wrong' && (
-            <div className="text-center py-16">
-              <CheckCircle2 size={48} className="text-success mx-auto mb-4" />
-              <h3 className="font-archivo text-xl font-bold text-gray-900 dark:text-white mb-2">No Wrong Answers!</h3>
-              <p className="text-gray-400 dark:text-gray-500 font-medium">You self-graded every question as correct.</p>
-            </div>
-          )}
-          {visibleQuestions.length === 0 && filter === 'flagged' && (
-            <div className="text-center py-16">
-              <Flag size={48} className="text-gray-300 dark:text-gray-600 mx-auto mb-4" />
-              <h3 className="font-archivo text-xl font-bold text-gray-900 dark:text-white mb-2">No Flagged Questions</h3>
-              <p className="text-gray-400 dark:text-gray-500 font-medium">You didn't flag any questions during this session.</p>
-            </div>
-          )}
-        </div>
-
-        {/* ACTION BUTTONS */}
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <button
-            onClick={onRetake}
-            className="action-btn flex items-center justify-center gap-3 px-6 py-5 bg-gray-900 dark:bg-white hover:bg-gray-800 dark:hover:bg-gray-100 text-white dark:text-gray-900 rounded-3xl font-bold text-sm glow-border"
-            style={{ boxShadow: '0 4px 20px rgba(0,0,0,0.15)' }}
-          >
-            <RotateCcw size={18} />
-            {t('retakeQuiz')}
-          </button>
-          <button
-            onClick={onTryAnotherSubject}
-            className="action-btn flex items-center justify-center gap-3 px-6 py-5 glass-panel text-gray-900 dark:text-white rounded-3xl font-bold text-sm glow-border"
-          >
-            <ArrowRight size={18} />
-            {t('tryAnotherSubject')}
-          </button>
-          <button
-            onClick={onBackToChapters}
-            className="action-btn flex items-center justify-center gap-3 px-6 py-5 glass-panel text-gray-900 dark:text-white rounded-3xl font-bold text-sm glow-border"
-          >
-            <LayoutGrid size={18} />
-            {t('backToChapters')}
-          </button>
-        </div>
-
-        <div className="mt-12 pb-8 text-center space-y-1.5 border-t border-gray-100 dark:border-gray-800/80 pt-6">
-          <p className="text-xs text-gray-455 dark:text-gray-500 font-semibold tracking-wider uppercase">
-            {t('asu')} • {t('portalTitle')}
-          </p>
-          <p className="text-[11px] text-gray-400 dark:text-gray-500 font-medium max-w-xl mx-auto px-6 leading-relaxed">
-            {t('developedForStudents')}{' '}
-            <a href="mailto:omarhmaged@gmail.com" className="hover:text-physiology dark:hover:text-white transition-colors underline font-semibold">
-              omarhmaged@gmail.com
-            </a>
-          </p>
-        </div>
+    <div className="relative" style={{ width: 168, height: 168 }}>
+      <svg width={168} height={168} className="-rotate-90">
+        <circle cx={84} cy={84} r={r} fill="none" stroke="rgba(255,255,255,0.07)" strokeWidth={12} />
+        <circle
+          cx={84}
+          cy={84}
+          r={r}
+          fill="none"
+          stroke={ringColor}
+          strokeWidth={12}
+          strokeLinecap="round"
+          strokeDasharray={circumference}
+          strokeDashoffset={offset}
+          style={{ transition: 'stroke-dashoffset 1.2s cubic-bezier(0.22, 1, 0.36, 1)' }}
+        />
+      </svg>
+      <div className="absolute inset-0 flex flex-col items-center justify-center">
+        <span className="text-4xl font-bold tabular-nums tracking-tight text-white">{percentage}%</span>
+        <span className="mt-1 rounded-full border border-white/[0.1] bg-white/[0.05] px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-white/50">
+          Score
+        </span>
       </div>
     </div>
   );
 }
+
+/* ------------------------------ Main component ----------------------------- */
+
+export function ResultsDashboard({
+  chapter,
+  subject,
+  questions,
+  answers,
+  elapsedSeconds,
+  flaggedQuestions,
+  onRetake,
+  onTryAnotherSubject,
+  onBackToChapters,
+  onBackToSubjects,
+  userButton,
+}: Props) {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const { t, language } = useLanguage();
+  const isRTL = language === 'ar';
+
+  const [filter, setFilter] = useState<'all' | 'wrong' | 'flagged'>('all');
+  const [openExplanations, setOpenExplanations] = useState<Set<number>>(new Set());
+  const [openConcepts, setOpenConcepts] = useState<Set<number>>(new Set());
+
+  const style = subjectStyles[(subject?.color ?? 'blue') as SubjectColor];
+
+  /* Score math */
+  const correctness = questions.map((q, i) => checkAnswerCorrect(q, answers[i]));
+  const correctCount = correctness.filter(Boolean).length;
+  const totalCount = questions.length;
+  const percentage = totalCount > 0 ? Math.round((correctCount / totalCount) * 100) : 0;
+  const wrongCount = totalCount - correctCount;
+  const flaggedCount = flaggedQuestions.size;
+  const avgSeconds = totalCount > 0 ? Math.round(elapsedSeconds / totalCount) : 0;
+
+  const badge = getPerformanceBadge(percentage);
+  const gradeLetter = badge.replace('Grade ', '');
+  const gradeColor =
+    percentage >= 75 ? 'text-emerald-400' : percentage >= 65 ? 'text-sky-400' : percentage >= 60 ? 'text-amber-400' : 'text-rose-400';
+
+  /* Confetti celebration */
+  useEffect(() => {
+    if (percentage >= 75) {
+      confetti({ particleCount: 140, spread: 75, origin: { y: 0.6 }, colors: ['#34d399', '#38bdf8', '#fbbf24', '#ffffff'] });
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const toggleSet = (setter: React.Dispatch<React.SetStateAction<Set<number>>>, i: number) =>
+    setter(prev => {
+      const next = new Set(prev);
+      next.has(i) ? next.delete(i) : next.add(i);
+      return next;
+    });
+
+  /* Filtered question list (keeps original indices) */
+  const visible = questions
+    .map((q, i) => ({ q, i }))
+    .filter(({ i }) => {
+      if (filter === 'wrong') return !correctness[i];
+      if (filter === 'flagged') return flaggedQuestions.has(i);
+      return true;
+    });
+
+  /* ------------------------- Per-type review renderers ------------------------- */
+
+  const renderOptions = (q: Question, ans: any) => (
+    <div className="mt-4 space-y-2">
+      {(q.options ?? (q.type === 'truefalse' ? ['True', 'False'] : [])).map((opt: string, oi: number) => {
+        const isCorrect = oi === q.correctIndex;
+        const isUserWrong = ans === oi && !isCorrect;
+        return (
+          <div
+            key={oi}
+            className={`flex items-center gap-3 rounded-xl border px-4 py-3 text-sm transition-colors ${
+              isCorrect
+                ? 'border-emerald-500 bg-emerald-500/10 text-emerald-400'
+                : isUserWrong
+                  ? 'border-rose-500 bg-rose-500/10 text-rose-400'
+                  : 'border-white/[0.07] bg-white/[0.02] text-white/50'
+            }`}
+          >
+            <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-current/40 text-[11px] font-semibold">
+              {isCorrect ? <Check size={13} /> : isUserWrong ? <X size={13} /> : String.fromCharCode(65 + oi)}
+            </span>
+            <span className="leading-relaxed">{opt}</span>
+            {ans === oi && (
+              <span className="ms-auto shrink-0 rounded-full border border-current/30 px-2 py-0.5 text-[10px] font-medium uppercase tracking-wide">
+                Your answer
+              </span>
+            )}
+          </div>
+        );
+      })}
+    </div>
+  );
+
+  const renderEssay = (q: Question, ans: any) => {
+    const selfGrade = ans?.selfGrade;
+    return (
+      <div className="mt-4 space-y-4">
+        <div>
+          <p className="mb-1.5 text-xs font-semibold uppercase tracking-widest text-white/40">Your Answer</p>
+          <textarea
+            readOnly
+            value={ans?.text ?? ans?.draft ?? ''}
+            rows={5}
+            className="w-full resize-none rounded-xl border border-white/[0.08] bg-black/30 p-4 text-sm leading-relaxed text-white/80 outline-none"
+          />
+        </div>
+        {q.modelAnswer && (
+          <div className="rounded-xl border border-emerald-500/25 bg-emerald-500/[0.06] p-4 text-start">
+            <p className="mb-2 flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-emerald-400">
+              <CheckCircle2 size={14} /> Reference Model Answer
+            </p>
+            <p className="text-sm leading-relaxed text-white/75">{q.modelAnswer}</p>
+          </div>
+        )}
+        <span
+          className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-xs font-medium ${
+            selfGrade === 'correct'
+              ? 'border-emerald-500/40 bg-emerald-500/10 text-emerald-400'
+              : 'border-rose-500/40 bg-rose-500/10 text-rose-400'
+          }`}
+        >
+          {selfGrade === 'correct' ? <Check size={13} /> : <X size={13} />}
+          Self-Graded: {selfGrade === 'correct' ? 'Correct' : 'Incorrect'}
+        </span>
+      </div>
+    );
+  };
+
+  const renderFillBlank = (q: Question, ans: any) => {
+    const inputs: string[] = ans?.inputs ?? [];
+    const blanks: string[] = q.blanks ?? [];
+    const parts = (q.text ?? '').split('___');
+
+    return (
+      <div className="mt-4 space-y-4">
+        <p className="text-[15px] leading-loose text-white/80 text-start">
+          {parts.map((part, pi) => (
+            <React.Fragment key={pi}>
+              {part}
+              {pi < parts.length - 1 && (
+                <span
+                  className={`mx-1 inline-block rounded-lg border px-3 py-0.5 text-sm font-medium ${
+                    isBlankCorrect(q, inputs, pi)
+                      ? 'border-emerald-500/50 bg-emerald-500/10 text-emerald-400'
+                      : 'border-rose-500/50 bg-rose-500/10 text-rose-400 line-through'
+                  }`}
+                >
+                  {inputs[pi]?.trim() || '—'}
+                </span>
+              )}
+            </React.Fragment>
+          ))}
+        </p>
+        <div className="rounded-xl border border-white/[0.07] bg-white/[0.02] p-4 text-start">
+          <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-white/40">Answer Key</p>
+          <ul className="space-y-1.5">
+            {blanks.map((b, bi) => (
+              <li key={bi} className="flex flex-wrap items-center gap-2 text-sm">
+                <span className="text-white/35 tabular-nums">#{bi + 1}</span>
+                <span className="font-medium text-emerald-400">{b}</span>
+                {(q.acceptedAnswers?.[bi]?.length ?? 0) > 0 && (
+                  <span className="text-xs text-white/35">(also: {q.acceptedAnswers![bi].join(', ')})</span>
+                )}
+                <span className="text-white/30">·</span>
+                <span className={isBlankCorrect(q, inputs, bi) ? 'text-emerald-400/80' : 'text-rose-400/80 line-through'}>
+                  you: {inputs[bi]?.trim() || 'blank'}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    );
+  };
+
+  const renderMatching = (q: Question, ans: any) => {
+    const pairs = q.pairs ?? [];
+    const scrambled: string[] = ans?.scrambled ?? [];
+    const matches: Record<number, number> = ans?.matches ?? {};
+    return (
+      <div className="mt-4 space-y-2">
+        {pairs.map((p: any, pi: number) => {
+          const target = p.target ?? p.right;
+          const userChoice = matches[pi] !== undefined ? scrambled[matches[pi]] : undefined;
+          const rowCorrect = matches[pi] === scrambled.indexOf(target) && scrambled.indexOf(target) !== -1;
+          return (
+            <div
+              key={pi}
+              className={`grid grid-cols-1 gap-2 rounded-xl border p-3.5 sm:grid-cols-[1fr_auto_1fr] sm:items-center ${
+                rowCorrect ? 'border-emerald-500/40 bg-emerald-500/[0.05]' : 'border-rose-500/40 bg-rose-500/[0.05]'
+              }`}
+            >
+              <span className="text-sm text-white/80">{p.premise ?? p.left}</span>
+              <ChevronRight size={15} className={`hidden text-white/30 sm:block ${isRTL ? 'rotate-180' : ''}`} />
+              <div className="flex flex-wrap items-center gap-2 text-sm sm:justify-end">
+                <span className={rowCorrect ? 'font-medium text-emerald-400' : 'text-rose-400 line-through'}>
+                  {userChoice ?? 'No match'}
+                </span>
+                {rowCorrect ? (
+                  <Check size={14} className="text-emerald-400" />
+                ) : (
+                  <>
+                    <X size={14} className="text-rose-400" />
+                    <span className="rounded-md border border-emerald-500/30 bg-emerald-500/10 px-2 py-0.5 text-xs text-emerald-400">
+                      {target}
+                    </span>
+                  </>
+                )}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    );
+  };
+
+  const renderCase = (q: Question, ans: any) => (
+    <div className="mt-4 space-y-4">
+      {(q.caseText ?? q.description ?? q.text) && (
+        <div className="rounded-xl border border-sky-500/20 bg-sky-500/[0.05] p-4 text-start">
+          <p className="mb-2 flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-sky-300">
+            <Activity size={14} /> Clinical Case
+          </p>
+          <p className="text-sm leading-relaxed text-white/75">{q.caseText ?? q.description ?? q.text}</p>
+        </div>
+      )}
+      {(q.subQuestions ?? []).map((sq: any, si: number) => {
+        const userAns = ans?.[sq.id];
+        const isSubMcq = sq.type === 'mcq';
+        const subCorrect = isSubMcq ? userAns === sq.correctIndex : userAns?.selfGrade === 'correct';
+        return (
+          <div key={si} className="rounded-xl border border-white/[0.07] bg-white/[0.02] p-4 text-start">
+            <div className="mb-3 flex items-start justify-between gap-3">
+              <p className="text-sm font-medium text-white/85">
+                <span className="text-white/40">{si + 1}.</span> {sq.text}
+              </p>
+              {userAns !== undefined ? (
+                subCorrect ? (
+                  <CheckCircle2 size={17} className="shrink-0 text-emerald-400" />
+                ) : (
+                  <XCircle size={17} className="shrink-0 text-rose-400" />
+                )
+              ) : (
+                <span className="text-xs text-white/30 shrink-0 font-medium">Unanswered</span>
+              )}
+            </div>
+            {isSubMcq && sq.options ? (
+              <div className="space-y-1.5">
+                {sq.options.map((opt: string, oi: number) => {
+                  const isCorrect = oi === sq.correctIndex;
+                  const isUserWrong = userAns === oi && !isCorrect;
+                  return (
+                    <div
+                      key={oi}
+                      className={`flex items-center gap-2.5 rounded-lg border px-3 py-2 text-sm ${
+                        isCorrect
+                          ? 'border-emerald-500/50 bg-emerald-500/10 text-emerald-400'
+                          : isUserWrong
+                            ? 'border-rose-500/50 bg-rose-500/10 text-rose-400'
+                            : 'border-white/[0.06] bg-transparent text-white/45'
+                      }`}
+                    >
+                      {isCorrect ? <Check size={13} /> : isUserWrong ? <X size={13} /> : <span className="w-[13px]" />}
+                      {opt}
+                    </div>
+                  );
+                })}
+              </div>
+            ) : (
+              <div className="space-y-3">
+                <div>
+                  <p className="mb-1 text-[10px] font-bold uppercase tracking-wider text-white/40">Your Answer</p>
+                  <p className="text-sm bg-black/20 rounded-lg p-3 border border-white/[0.05] text-white/85 leading-relaxed whitespace-pre-wrap">
+                    {userAns?.text || 'No answer submitted'}
+                  </p>
+                </div>
+                {sq.modelAnswer && (
+                  <div className="rounded-lg border border-emerald-500/15 bg-emerald-500/[0.02] p-3 text-xs leading-relaxed text-white/70">
+                    <span className="font-semibold text-emerald-400 block mb-1">Reference Answer:</span>
+                    {sq.modelAnswer}
+                  </div>
+                )}
+              </div>
+            )}
+          </div>
+        );
+      })}
+    </div>
+  );
+
+  const renderAnswerReview = (q: Question, ans: any) => {
+    switch (q.type) {
+      case 'mcq':
+      case 'truefalse': return renderOptions(q, ans);
+      case 'essay': return renderEssay(q, ans);
+      case 'fillblank': return renderFillBlank(q, ans);
+      case 'matching': return renderMatching(q, ans);
+      case 'case':
+      case 'casestudy': return renderCase(q, ans);
+      default: return null;
+    }
+  };
+
+  /* ---------------------------------- Render --------------------------------- */
+
+  return (
+    <div dir={isRTL ? 'rtl' : 'ltr'} className="min-h-screen bg-[#0b0b0c] text-white antialiased" style={{ fontFamily: "'Outfit', 'Manrope', 'Archivo', system-ui, sans-serif" }}>
+      {/* Ambient glow */}
+      <div className="pointer-events-none fixed inset-0 overflow-hidden">
+        <div className="absolute -top-40 start-1/4 h-96 w-96 rounded-full bg-emerald-500/[0.07] blur-[130px]" />
+        <div className="absolute bottom-0 end-1/4 h-96 w-96 rounded-full bg-sky-500/[0.07] blur-[130px]" />
+      </div>
+
+      {/* ── Section A: Header Banner ───────────────────────────────────────── */}
+      <header className="sticky top-0 z-30 border-b border-white/[0.06] bg-[#0b0b0c]/85 backdrop-blur-xl">
+        <div className="mx-auto flex max-w-5xl items-center justify-between gap-3 px-4 py-3.5 sm:px-6">
+          <div className="flex min-w-0 items-center gap-3">
+            <button
+              onClick={onBackToChapters}
+              aria-label="Back to chapters"
+              className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-white/[0.08] bg-white/[0.04] transition-colors hover:bg-white/[0.08]"
+            >
+              <ArrowLeft size={16} className={`text-white/70 ${isRTL ? 'rotate-180' : ''}`} />
+            </button>
+            <div className="min-w-0">
+              <p className="truncate text-sm font-semibold tracking-tight">{chapter.title}</p>
+              <p className="truncate text-xs text-white/40">
+                <button onClick={onBackToSubjects} className={`transition-colors hover:underline ${style.text}`}>
+                  {subject?.name ?? 'Subjects'}
+                </button>
+                {chapter.subtitle ? ` · ${chapter.subtitle}` : ''}
+              </p>
+            </div>
+          </div>
+          {userButton}
+        </div>
+      </header>
+
+      <main className="relative mx-auto max-w-5xl px-4 py-10 sm:px-6">
+        {/* ── Section B: Analytics Summary Grid ────────────────────────────── */}
+        <div className="mb-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          {/* Circular score */}
+          <div className="flex flex-col items-center justify-center rounded-3xl border border-white/[0.06] bg-white/[0.02] p-6 backdrop-blur-xl">
+            <ScoreRing percentage={percentage} />
+          </div>
+
+          {/* Accuracy */}
+          <div className="flex flex-col justify-center rounded-3xl border border-white/[0.06] bg-white/[0.02] p-6 backdrop-blur-xl">
+            <Award size={20} className="mb-3 text-emerald-400/80" />
+            <p className="text-3xl font-bold tabular-nums tracking-tight">
+              {correctCount} <span className="text-lg font-normal text-white/35">/ {totalCount}</span>
+            </p>
+            <p className="mt-1 text-sm font-medium text-white/70">Accuracy Rating</p>
+            <p className="mt-1 text-xs text-white/40">
+              {percentage >= 85 ? 'Excellent performance!' : percentage >= 65 ? 'Solid work — keep refining.' : percentage >= 60 ? 'Passed — review the misses.' : 'Needs revision. You have this.'}
+            </p>
+          </div>
+
+          {/* Time */}
+          <div className="flex flex-col justify-center rounded-3xl border border-white/[0.06] bg-white/[0.02] p-6 backdrop-blur-xl">
+            <Clock size={20} className="mb-3 text-sky-400/80" />
+            <p className="text-3xl font-bold tabular-nums tracking-tight">{formatTime(elapsedSeconds)}</p>
+            <p className="mt-1 text-sm font-medium text-white/70">Elapsed Time</p>
+            <span className="mt-2 w-fit rounded-full border border-white/[0.08] bg-white/[0.04] px-2.5 py-1 text-[11px] tabular-nums text-white/45">
+              ~{avgSeconds}s per question
+            </span>
+          </div>
+
+          {/* Grade */}
+          <div className="flex flex-col justify-center rounded-3xl border border-white/[0.06] bg-white/[0.02] p-6 backdrop-blur-xl">
+            <Activity size={20} className="mb-3 text-amber-400/80" />
+            <p className={`text-4xl font-bold tracking-tight ${gradeColor}`}>{gradeLetter}</p>
+            <p className="mt-1 text-sm font-medium text-white/70">Course Grade</p>
+            <span className="mt-2 w-fit rounded-full border border-white/[0.08] bg-white/[0.04] px-2.5 py-1 text-[11px] text-white/45">
+              {getPerformanceLabel(percentage)}
+            </span>
+          </div>
+        </div>
+
+        {/* ── Section C: Control Action Links ──────────────────────────────── */}
+        <div className="mb-12 flex flex-wrap items-center justify-center gap-3">
+          <button
+            onClick={onRetake}
+            className="flex items-center gap-2 rounded-full bg-physiology px-6 py-3 text-sm font-semibold text-white shadow-lg transition-all hover:bg-physiology-dark hover:scale-[1.03] active:scale-[0.98]"
+          >
+            <RotateCcw size={15} /> Retake Session
+          </button>
+          <button
+            onClick={onTryAnotherSubject}
+            className="flex items-center gap-2 rounded-full border border-white/[0.1] bg-white/[0.03] px-6 py-3 text-sm font-medium text-white/75 transition-colors hover:bg-white/[0.08]"
+          >
+            <LayoutGrid size={15} /> Practice Another Topic
+          </button>
+          <button
+            onClick={onBackToChapters}
+            className="flex items-center gap-2 rounded-full border border-white/[0.1] bg-white/[0.03] px-6 py-3 text-sm font-medium text-white/75 transition-colors hover:bg-white/[0.08]"
+          >
+            Back to Chapters <ArrowRight size={15} className={isRTL ? 'rotate-180' : ''} />
+          </button>
+        </div>
+
+        {/* ── Section D: Questions Filter Toggle Bar ───────────────────────── */}
+        <div className="mb-6 flex flex-wrap gap-2">
+          {(
+            [
+              { key: 'all', label: 'All Questions', count: totalCount, badge: 'bg-white/10 text-white/70' },
+              { key: 'wrong', label: 'Incorrect', count: wrongCount, badge: 'bg-rose-500/15 text-rose-400' },
+              { key: 'flagged', label: 'Flagged', count: flaggedCount, badge: 'bg-amber-500/15 text-amber-400' },
+            ] as const
+          ).map(({ key, label, count, badge: badgeCls }) => (
+            <button
+              key={key}
+              onClick={() => setFilter(key)}
+              className={`flex items-center gap-2 rounded-full border px-4 py-2 text-sm transition-all ${
+                filter === key
+                  ? 'border-white/30 bg-white text-black font-semibold'
+                  : 'border-white/[0.08] bg-white/[0.03] text-white/60 hover:bg-white/[0.07]'
+              }`}
+            >
+              {label}
+              <span className={`rounded-full px-2 py-0.5 text-[11px] font-semibold tabular-nums ${filter === key ? 'bg-black/10 text-black/70' : badgeCls}`}>
+                {count}
+              </span>
+            </button>
+          ))}
+        </div>
+
+        {/* ── Section E: Detailed Question Review Feed ─────────────────────── */}
+        {visible.length === 0 ? (
+          <div className="rounded-3xl border border-white/[0.06] bg-white/[0.02] p-12 text-center text-sm text-white/40">
+            No questions match this filter.
+          </div>
+        ) : (
+          visible.map(({ q, i }) => {
+            const ans = answers[i];
+            const correct = correctness[i];
+            const isFlagged = flaggedQuestions.has(i);
+            return (
+              <div key={i} className="mb-6 rounded-3xl border border-white/[0.06] bg-white/[0.02] p-6 text-start backdrop-blur-xl">
+                {/* Card header */}
+                <div className="mb-4 flex flex-wrap items-center gap-2.5">
+                  <span className="text-sm font-semibold text-white/85">Question {i + 1}</span>
+                  <span className={`rounded-full border px-2.5 py-0.5 text-[11px] font-medium ${style.border} ${style.bg} ${style.text}`}>
+                    {subject?.name ?? 'General'}
+                  </span>
+                  {isFlagged && (
+                    <span className="flex items-center gap-1 rounded-full border border-amber-500/40 bg-amber-500/10 px-2.5 py-0.5 text-[11px] font-medium text-amber-400">
+                      <Flag size={11} className="fill-amber-400" /> Flagged
+                    </span>
+                  )}
+                  <span
+                    className={`ms-auto flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-semibold ${
+                      correct ? 'bg-emerald-500/15 text-emerald-400' : 'bg-rose-500/15 text-rose-400'
+                    }`}
+                  >
+                    {correct ? <CheckCircle2 size={13} /> : <XCircle size={13} />}
+                    {correct ? 'Correct' : 'Incorrect'}
+                  </span>
+                </div>
+
+                {/* Question statement (with markdown table support) */}
+                {q.type !== 'fillblank' && <QuestionText text={q.text ?? q.question ?? ''} />}
+
+                {/* Answer review */}
+                {renderAnswerReview(q, ans)}
+
+                {/* Toggle collapsers */}
+                {(q.explanation || q.keyConcept) && (
+                  <div className="mt-5 flex flex-wrap gap-2 border-t border-white/[0.05] pt-4">
+                    {q.explanation && (
+                      <button
+                        onClick={() => toggleSet(setOpenExplanations, i)}
+                        className={`flex items-center gap-1.5 rounded-full border px-3.5 py-1.5 text-xs font-medium transition-colors ${
+                          openExplanations.has(i)
+                            ? 'border-amber-500/40 bg-amber-500/10 text-amber-300'
+                            : 'border-white/[0.08] bg-white/[0.03] text-white/50 hover:bg-white/[0.07]'
+                        }`}
+                      >
+                        <Lightbulb size={13} /> Explanation
+                      </button>
+                    )}
+                    {q.keyConcept && (
+                      <button
+                        onClick={() => toggleSet(setOpenConcepts, i)}
+                        className={`flex items-center gap-1.5 rounded-full border px-3.5 py-1.5 text-xs font-medium transition-colors ${
+                          openConcepts.has(i)
+                            ? 'border-sky-500/40 bg-sky-500/10 text-sky-300'
+                            : 'border-white/[0.08] bg-white/[0.03] text-white/50 hover:bg-white/[0.07]'
+                        }`}
+                      >
+                        <Bookmark size={13} /> Key Concept
+                      </button>
+                    )}
+                  </div>
+                )}
+
+                {q.explanation && openExplanations.has(i) && (
+                  <div className="mt-3 rounded-xl border border-amber-500/20 bg-amber-500/[0.05] p-4 transition-all">
+                    <p className="mb-1.5 flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-amber-400">
+                      <Lightbulb size={13} /> Explanation
+                    </p>
+                    <p className="text-sm leading-relaxed text-white/75">{q.explanation}</p>
+                  </div>
+                )}
+                {q.keyConcept && openConcepts.has(i) && (
+                  <div className="mt-3 rounded-xl border border-sky-500/20 bg-sky-500/[0.05] p-4 transition-all">
+                    <p className="mb-1.5 flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-sky-400">
+                      <Bookmark size={13} /> Key Concept
+                    </p>
+                    <p className="text-sm leading-relaxed text-white/75">{q.keyConcept}</p>
+                  </div>
+                )}
+              </div>
+            );
+          })
+        )}
+      </main>
+    </div>
+  );
+}
+
+export default ResultsDashboard;
