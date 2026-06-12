@@ -134,13 +134,15 @@ const THEMES = {
    Layers — 0: background (tiny/dense), 1: midground (sharp/glow),
             2: foreground (large/blurred, chromatic aberration)
    ============================================================ */
-const MAX_NODES = 45;
-const LAYER_DEF = [
-  { count: 22, rMin: 3,  rMax: 7,  speed: 0.35, blur: 0,  alpha: 0.45, parallax: 0.3 },
-  { count: 15, rMin: 14, rMax: 26, speed: 0.6,  blur: 0,  alpha: 1.0,  parallax: 0.6 },
-  { count: 8,  rMin: 34, rMax: 58, speed: 0.9,  blur: 6,  alpha: 0.5,  parallax: 1.0 }
+// Global layout configurations adjusted dynamically inside InteractiveBackground
+let isMobile = false;
+let currentMaxNodes = 38;
+let currentBlobPoints = 8;
+let currentLayerDef = [
+  { count: 20, rMin: 3,  rMax: 7,  speed: 0.12, blur: 0,  alpha: 0.45, parallax: 0.3 },
+  { count: 12, rMin: 14, rMax: 26, speed: 0.20, blur: 0,  alpha: 1.0,  parallax: 0.6 },
+  { count: 6,  rMin: 34, rMax: 58, speed: 0.30, blur: 5,  alpha: 0.5,  parallax: 1.0 }
 ];
-const BLOB_POINTS = 8; // bezier control anchors per membrane
 const DENDRITE_RANGE = 200;
 
 interface MouseState {
@@ -166,7 +168,7 @@ class Cell {
 
   constructor(layer: number, x?: number, y?: number) {
     this.layer = layer;
-    const def = LAYER_DEF[layer];
+    const def = currentLayerDef[layer];
     this.x = x ?? Math.random() * window.innerWidth;
     this.y = y ?? Math.random() * window.innerHeight;
     this.px = this.x;
@@ -179,12 +181,12 @@ class Cell {
   }
 
   step(time: number, dt: number, W: number, H: number, mouse: MouseState, motionScale: number) {
-    const def = LAYER_DEF[this.layer];
+    const def = currentLayerDef[this.layer];
     const ms = motionScale;
 
     // --- Flow field: curl-like steering from 3D simplex noise ---
     const ns = 0.0011;
-    const a = Simplex.noise3D(this.x * ns, this.y * ns, time * 0.00008 + this.noiseSeed)
+    const a = Simplex.noise3D(this.x * ns, this.y * ns, time * 0.00002 + this.noiseSeed)
               * Math.PI * 2.2;
     let fx = Math.cos(a) * def.speed * def.parallax;
     let fy = Math.sin(a) * def.speed * def.parallax;
@@ -217,7 +219,7 @@ class Cell {
     if (this.y < -m) this.y = this.py = H + m;
     else if (this.y > H + m) this.y = this.py = -m;
 
-    this.morphPhase += 0.004 * dt * 0.06 * (0.5 + 0.5 * ms); // slow even when settling
+    this.morphPhase += 0.001 * dt * 0.06 * (0.5 + 0.5 * ms); // slow even when settling
     if (this.mitosis > 0) this.mitosis = Math.max(0, this.mitosis - dt * 0.0012);
     if (this.scale < 1) this.scale = Math.min(1, this.scale + dt * 0.0015);
   }
@@ -226,12 +228,13 @@ class Cell {
   trace(path: Path2D, time: number) {
     const pts: [number, number][] = [];
     const squash = this.mitosis > 0 ? 1 + Math.sin(this.mitosis * Math.PI) * 0.45 : 1;
-    for (let i = 0; i < BLOB_POINTS; i++) {
-      const ang = (i / BLOB_POINTS) * Math.PI * 2;
+    const ptsCount = currentBlobPoints;
+    for (let i = 0; i < ptsCount; i++) {
+      const ang = (i / ptsCount) * Math.PI * 2;
       const wob = Simplex.noise3D(
         Math.cos(ang) * 0.8 + this.noiseSeed,
         Math.sin(ang) * 0.8,
-        time * 0.00025 + this.morphPhase
+        time * 0.00008 + this.morphPhase
       );
       const rr = this.r * this.scale * (1 + wob * 0.28)
                * (1 + (squash - 1) * Math.abs(Math.cos(ang)));
@@ -239,9 +242,9 @@ class Cell {
     }
 
     path.moveTo((pts[0][0] + pts[1][0]) / 2, (pts[0][1] + pts[1][1]) / 2);
-    for (let i = 1; i <= BLOB_POINTS; i++) {
-      const p0 = pts[i % BLOB_POINTS];
-      const p1 = pts[(i + 1) % BLOB_POINTS];
+    for (let i = 1; i <= ptsCount; i++) {
+      const p0 = pts[i % ptsCount];
+      const p1 = pts[(i + 1) % ptsCount];
       path.quadraticCurveTo(p0[0], p0[1], (p0[0] + p1[0]) / 2, (p0[1] + p1[1]) / 2);
     }
   }
@@ -260,13 +263,29 @@ export function InteractiveBackground() {
     const canvas = canvasRef.current;
     if (!canvas) return;
 
+    // Detect mobile screen state at mount
+    isMobile = window.innerWidth < 768;
+    currentBlobPoints = isMobile ? 6 : 8;
+    currentLayerDef = isMobile
+      ? [
+          { count: 10, rMin: 3,  rMax: 6,  speed: 0.08, blur: 0,  alpha: 0.35, parallax: 0.3 },
+          { count: 6,  rMin: 10, rMax: 18, speed: 0.14, blur: 0,  alpha: 0.70, parallax: 0.6 },
+          { count: 2,  rMin: 24, rMax: 36, speed: 0.20, blur: 0,  alpha: 0.35, parallax: 1.0 }
+        ]
+      : [
+          { count: 20, rMin: 3,  rMax: 7,  speed: 0.10, blur: 0,  alpha: 0.45, parallax: 0.3 },
+          { count: 12, rMin: 14, rMax: 26, speed: 0.16, blur: 0,  alpha: 1.0,  parallax: 0.6 },
+          { count: 6,  rMin: 34, rMax: 58, speed: 0.24, blur: 5,  alpha: 0.5,  parallax: 1.0 }
+        ];
+    currentMaxNodes = isMobile ? 20 : 38;
+
     const ctx = canvas.getContext('2d', { alpha: false });
     if (!ctx) return;
 
     let W = 0, H = 0, DPR = 1;
     const resize = () => {
-      // Cap DPR at 1.5 to hold 60fps at 4K
-      DPR = Math.min(window.devicePixelRatio || 1, 1.5);
+      // Cap DPR at 1.0 on mobile to avoid high fill-rate bottlenecks, 1.4 on desktop
+      DPR = isMobile ? 1.0 : Math.min(window.devicePixelRatio || 1, 1.4);
       W = window.innerWidth;
       H = window.innerHeight;
       canvas.width = W * DPR;
@@ -277,7 +296,7 @@ export function InteractiveBackground() {
     resize();
 
     const cells: Cell[] = [];
-    LAYER_DEF.forEach((def, li) => {
+    currentLayerDef.forEach((def, li) => {
       for (let i = 0; i < def.count; i++) {
         cells.push(new Cell(li, Math.random() * W, Math.random() * H));
       }
@@ -355,7 +374,7 @@ export function InteractiveBackground() {
       // Verlet impulse
       best.px = best.x + Math.cos(ang) * push * 0.3;
       best.py = best.y + Math.sin(ang) * push * 0.3;
-      if (cells.length < MAX_NODES) {
+      if (cells.length < currentMaxNodes) {
         const twin = new Cell(1, best.x, best.y);
         twin.r = best.r;
         twin.scale = 0.4;
@@ -381,7 +400,7 @@ export function InteractiveBackground() {
       const mx = (cx + cell.x) / 2, my = (cy + cell.y) / 2;
       const dx = cell.x - cx, dy = cell.y - cy;
       const d = Math.hypot(dx, dy) || 1;
-      const bow = Simplex.noise3D(cell.noiseSeed, d * 0.01, performance.now() * 0.0002) * d * 0.35;
+      const bow = Simplex.noise3D(cell.noiseSeed, d * 0.01, performance.now() * 0.00004) * d * 0.35;
       return [mx + (-dy / d) * bow, my + (dx / d) * bow];
     }
     
@@ -424,7 +443,7 @@ export function InteractiveBackground() {
         nextPulseAt = now + 1000 / (2 + Math.random() * 3);
       }
       for (let i = pulses.length - 1; i >= 0; i--) {
-        pulses[i].t += dt * 0.0022 * Math.max(motionScale, 0.0001);
+        pulses[i].t += dt * 0.0008 * Math.max(motionScale, 0.0001);
         if (pulses[i].t >= 1 || motionScale < 0.02) pulses.splice(i, 1);
       }
 
@@ -435,11 +454,11 @@ export function InteractiveBackground() {
       ctx.fillStyle = currentTheme.base;
       ctx.fillRect(0, 0, W, H);
 
-      // Ambient violet back-glow spots (dark mode only)
-      if (currentTheme.ambientOn) {
-        for (let i = 0; i < 3; i++) {
-          const gx = W * (0.2 + 0.3 * i) + Math.sin(now * 0.00005 + i * 2) * 80 * motionScale;
-          const gy = H * (0.3 + 0.2 * ((i * 7) % 3)) + Math.cos(now * 0.00004 + i) * 60 * motionScale;
+      // Ambient violet back-glow spots (dark mode and desktop only to optimize mobile GPU fill-rate)
+      if (currentTheme.ambientOn && !isMobile) {
+        for (let i = 0; i < 2; i++) {
+          const gx = W * (0.2 + 0.5 * i) + Math.sin(now * 0.00001 + i * 2) * 80 * motionScale;
+          const gy = H * (0.3 + 0.4 * (i % 2)) + Math.cos(now * 0.000008 + i) * 60 * motionScale;
           const g = ctx.createRadialGradient(gx, gy, 0, gx, gy, 420);
           g.addColorStop(0, currentTheme.ambient);
           g.addColorStop(1, 'rgba(168,85,247,0)');
@@ -490,16 +509,18 @@ export function InteractiveBackground() {
 
       // Membranes
       for (let li = 0; li < 3; li++) {
-        const def = LAYER_DEF[li];
+        const def = currentLayerDef[li];
         const layerPath = new Path2D();
         for (const c of cells) if (c.layer === li) c.trace(layerPath, now);
 
         ctx.save();
         ctx.globalAlpha = def.alpha;
-        if (def.blur) ctx.filter = `blur(${def.blur}px)`;
+        
+        // Skip canvas filter blur on mobile for massive performance gains
+        if (def.blur && !isMobile) ctx.filter = `blur(${def.blur}px)`;
 
-        if (li === 2) {
-          // Chromatic aberration
+        if (li === 2 && !isMobile) {
+          // Chromatic aberration (desktop only to optimize fill-rate)
           ctx.globalAlpha = def.alpha * 0.35;
           ctx.translate(-1.5, 0);
           ctx.fillStyle = 'rgba(255, 60, 60, 0.10)';
