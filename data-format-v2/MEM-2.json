@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "meta": {
+    "moduleCode": "MEM-2",
+    "moduleName": "Endocrine System & Metabolism",
+    "year": 2,
+    "semester": 2,
+    "creditPoints": 5.5,
+    "totalMarks": 110,
+    "keywords": ["endocrine", "metabolism", "hormones", "pituitary", "thyroid", "adrenal", "pancreas", "diabetes"]
+  },
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Pituitary Gland",
+      "subtitle": "Anatomy & Physiology",
+      "emoji": "🧠",
+      "page": 1,
+      "lectureRange": "Lectures 1-3",
+      "subjects": [
+        {
+          "id": "anatomy",
+          "name": "Anatomy",
+          "iconName": "Bone",
+          "lectures": "Lecture 1",
+          "lectureCount": 1,
+          "questions": [
+            {
+              "id": "MEM2-CH1-ANAT-0001",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following is a part of adenohypophysis?",
+              "options": [
+                "Pars nervosa.",
+                "Median eminence.",
+                "Pars intermedia.",
+                "Infundibular stem."
+              ],
+              "correctIndex": 2,
+              "explanation": "The adenohypophysis consists of pars distalis, pars tuberalis, and pars intermedia.",
+              "modelAnswer": null,
+              "keyConcept": "Anterior vs posterior pituitary embryology"
+            },
+            {
+              "id": "MEM2-CH1-ANAT-0002",
+              "type": "fillblank",
+              "lecture": 1,
+              "text": "The pituitary gland lies in the ___ of the sphenoid bone and is connected to the hypothalamus by the ___.",
+              "blanks": ["sella turcica", "infundibulum"],
+              "acceptedAnswers": [
+                ["hypophyseal fossa", "pituitary fossa"],
+                ["pituitary stalk", "infundibular stalk"]
+              ],
+              "explanation": "The hypophysis occupies the sella turcica and communicates with the hypothalamus through the infundibulum.",
+              "keyConcept": "Pituitary location and hypothalamic connection"
+            }
+          ]
+        },
+        {
+          "id": "physiology",
+          "name": "Physiology",
+          "iconName": "Activity",
+          "lectures": "Lectures 2-3",
+          "lectureCount": 2,
+          "questions": [
+            {
+              "id": "MEM2-CH1-PHYS-0001",
+              "type": "essay",
+              "lecture": 2,
+              "text": "Describe the regulation of growth hormone secretion.",
+              "modelAnswer": "Growth hormone secretion is stimulated mainly by growth hormone-releasing hormone and ghrelin, and inhibited by somatostatin. Secretion is pulsatile, increases during deep sleep, exercise, fasting, hypoglycemia, stress, and puberty, and decreases with hyperglycemia, elevated free fatty acids, aging, and negative feedback from insulin-like growth factor 1.",
+              "explanation": "Growth hormone is controlled by hypothalamic releasing and inhibiting hormones, metabolic cues, sleep, stress, and IGF-1 negative feedback.",
+              "keyConcept": "Pulsatile GH secretion and hypothalamic control"
+            },
+            {
+              "id": "MEM2-CH1-PHYS-0002",
+              "type": "truefalse",
+              "lecture": 3,
+              "text": "Prolactin secretion is predominantly inhibited by hypothalamic dopamine.",
+              "options": ["True", "False"],
+              "correctIndex": 0,
+              "explanation": "Dopamine exerts tonic inhibition on lactotrophs, so interruption of hypothalamic dopamine delivery increases prolactin secretion.",
+              "keyConcept": "Dopamine tonically inhibits prolactin"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Thyroid and Parathyroid Glands",
+      "subtitle": "Hormone synthesis, calcium homeostasis, and clinical disorders",
+      "emoji": "🦋",
+      "page": 70,
+      "lectureRange": "Lectures 4-7",
+      "subjects": [
+        {
+          "id": "biochem",
+          "name": "Biochemistry",
+          "iconName": "FlaskConical",
+          "lectures": "Lectures 4-5",
+          "lectureCount": 2,
+          "questions": [
+            {
+              "id": "MEM2-CH2-BIOC-0001",
+              "type": "matching",
+              "lecture": 4,
+              "text": "Match each thyroid hormone synthesis step with its description.",
+              "pairs": [
+                {
+                  "premise": "Iodide trapping",
+                  "target": "Active transport of iodide into follicular cells through the sodium-iodide symporter"
+                },
+                {
+                  "premise": "Organification",
+                  "target": "Oxidation and attachment of iodine to tyrosyl residues on thyroglobulin"
+                },
+                {
+                  "premise": "Coupling",
+                  "target": "Combination of iodotyrosines to form T3 and T4"
+                }
+              ],
+              "explanation": "Thyroid hormone synthesis proceeds through iodide uptake, oxidation and organification, coupling, storage, and proteolytic release.",
+              "keyConcept": "Sequential biochemical steps of thyroid hormone synthesis"
+            }
+          ]
+        },
+        {
+          "id": "clinical",
+          "name": "Clinical",
+          "iconName": "Stethoscope",
+          "lectures": "Lectures 6-7",
+          "lectureCount": 2,
+          "questions": [
+            {
+              "id": "MEM2-CH2-CLIN-0001",
+              "type": "case",
+              "lecture": 6,
+              "text": "A 28-year-old woman presents with weight loss, heat intolerance, tremor, palpitations, and diffuse thyroid enlargement. Laboratory tests show suppressed TSH and elevated free T4.",
+              "explanation": "The presentation is most consistent with Graves disease causing primary hyperthyroidism.",
+              "keyConcept": "Clinical and biochemical diagnosis of hyperthyroidism",
+              "subQuestions": [
+                {
+                  "id": "MEM2-CH2-CLIN-0001-SQ1",
+                  "type": "mcq",
+                  "text": "Which diagnosis is most likely?",
+                  "options": [
+                    "Hashimoto thyroiditis",
+                    "Graves disease",
+                    "Subacute thyroiditis",
+                    "Iodine deficiency goiter"
+                  ],
+                  "correctIndex": 1,
+                  "explanation": "Diffuse goiter with thyrotoxic symptoms and suppressed TSH with elevated free T4 is typical of Graves disease.",
+                  "keyConcept": "Graves disease is a common cause of primary hyperthyroidism"
+                },
+                {
+                  "id": "MEM2-CH2-CLIN-0001-SQ2",
+                  "type": "essay",
+                  "text": "Explain the expected thyroid function test pattern in primary hyperthyroidism.",
+                  "modelAnswer": "Primary hyperthyroidism causes excessive thyroid hormone production by the thyroid gland. Free T4 and/or T3 are elevated, and pituitary TSH is suppressed by negative feedback.",
+                  "explanation": "High circulating thyroid hormone suppresses TSH secretion through negative feedback at the pituitary and hypothalamus.",
+                  "keyConcept": "Low TSH with high free T4 indicates primary hyperthyroidism"
+                }
+              ]
+            },
+            {
+              "id": "MEM2-CH2-CLIN-0002",
+              "type": "mcq",
+              "lecture": 7,
+              "text": "Which laboratory pattern is most consistent with primary hypoparathyroidism?",
+              "options": [
+                "High calcium, high phosphate, high parathyroid hormone",
+                "Low calcium, high phosphate, low parathyroid hormone",
+                "Low calcium, low phosphate, high parathyroid hormone",
+                "High calcium, low phosphate, low parathyroid hormone"
+              ],
+              "correctIndex": 1,
+              "explanation": "Primary hypoparathyroidism causes deficient parathyroid hormone secretion, producing hypocalcemia and hyperphosphatemia.",
+              "modelAnswer": null,
+              "keyConcept": "PTH raises serum calcium and lowers serum phosphate"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

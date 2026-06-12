@@ -22,7 +22,8 @@ import {
   Flag,
   Globe,
   Check,
-  Home
+  Home,
+  Heart
 } from 'lucide-react';
 import type { ChapterData, SubjectData, Question, Screen, SubjectColor } from './types';
 const ChapterSelect = lazy(() => import('./components/ChapterSelect').then(m => ({ default: m.ChapterSelect })));
@@ -31,6 +32,9 @@ const QuizInterface = lazy(() => import('./components/QuizInterface').then(m => 
 const ResultsDashboard = lazy(() => import('./components/ResultsDashboard').then(m => ({ default: m.ResultsDashboard })));
 const HistoryScreen = lazy(() => import('./components/HistoryScreen').then(m => ({ default: m.HistoryScreen })));
 const FlaggedQuestionsScreen = lazy(() => import('./components/FlaggedQuestionsScreen').then(m => ({ default: m.FlaggedQuestionsScreen })));
+const AnalyticsDashboard = lazy(() => import('./components/AnalyticsDashboard').then(m => ({ default: m.AnalyticsDashboard })));
+const ClinicalCaseSolver = lazy(() => import('./components/ClinicalCaseSolver').then(m => ({ default: m.ClinicalCaseSolver })));
+const QuestionSearch = lazy(() => import('./components/QuestionSearch').then(m => ({ default: m.QuestionSearch })));
 import { SyllabusTracker } from './components/SyllabusTracker';
 import { ThemeProvider, useTheme } from './context/ThemeContext';
 import { ThemeToggle } from './components/ThemeToggle';
@@ -43,6 +47,7 @@ import type { QuizResult } from './utils/storage';
 import { SignedIn, SignedOut, UserButton, useUser } from '@clerk/clerk-react';
 import { dark } from '@clerk/themes';
 const LoginScreen = lazy(() => import('./components/LoginScreen').then(m => ({ default: m.LoginScreen })));
+import LoadingScreen from './components/LoadingScreen';
 import { useCloudSync } from './hooks/useCloudSync';
 import { YearSelectionModal } from './components/YearSelectionModal';
 import {
@@ -137,16 +142,16 @@ function LanguageProfilePage() {
   const { language, toggleLanguage } = useLanguage();
 
   return (
-    <div className="p-6 text-gray-900 dark:text-gray-100 font-manrope">
+    <div className="p-6 text-gray-900 font-manrope">
       <div className="flex items-center gap-3 mb-6">
         <div className="w-10 h-10 rounded-xl bg-physiology/10 flex items-center justify-center text-physiology shrink-0">
           <Globe size={22} />
         </div>
         <div className="text-left rtl:text-right">
-          <h3 className="font-archivo text-lg font-bold tracking-tight text-gray-900 dark:text-white">
+          <h3 className="font-archivo text-lg font-bold tracking-tight text-gray-900">
             {language === 'en' ? "Language Settings" : "إعدادات اللغة"}
           </h3>
-          <p className="text-xs text-gray-500 dark:text-gray-400 font-medium mt-0.5">
+          <p className="text-xs text-gray-500 font-medium mt-0.5">
             {language === 'en' ? "Select your preferred language for the layout and content." : "اختر لغتك المفضلة للواجهة والمحتوى."}
           </p>
         </div>
@@ -154,7 +159,7 @@ function LanguageProfilePage() {
 
       <div className="space-y-4">
         <div className="flex flex-col gap-2">
-          <label className="text-xs font-bold uppercase tracking-wider text-gray-450 dark:text-gray-500">
+          <label className="text-xs font-bold uppercase tracking-wider text-gray-450">
             {language === 'en' ? "Language" : "اللغة"}
           </label>
           <div className="relative">
@@ -165,18 +170,18 @@ function LanguageProfilePage() {
                   toggleLanguage();
                 }
               }}
-              className="w-full p-4 pr-10 rounded-xl bg-gray-50 dark:bg-gray-800/40 border border-gray-100 dark:border-gray-800 hover:border-physiology/20 dark:hover:border-physiology/30 text-sm font-semibold text-gray-700 dark:text-gray-255 focus:outline-none focus:ring-2 focus:ring-physiology/50 transition-all duration-200 cursor-pointer appearance-none text-left rtl:text-right"
+              className="w-full p-4 pr-10 rounded-xl bg-gray-50 border border-gray-100 hover:border-physiology/20 text-sm font-semibold text-gray-700 focus:outline-none focus:ring-2 focus:ring-physiology/50 transition-all duration-200 cursor-pointer appearance-none text-left rtl:text-right"
             >
               <option value="en">English (US)</option>
               <option value="ar">العربية (Arabic)</option>
             </select>
-            <div className="absolute inset-y-0 right-0 flex items-center pr-4 pointer-events-none text-gray-450 dark:text-gray-500">
+            <div className="absolute inset-y-0 right-0 flex items-center pr-4 pointer-events-none text-gray-450">
               <Globe size={18} />
             </div>
           </div>
         </div>
         
-        <p className="text-[11px] text-gray-400 dark:text-gray-500 font-medium mt-2 leading-relaxed">
+        <p className="text-[11px] text-gray-400 font-medium mt-2 leading-relaxed">
           {language === 'en' 
             ? "Note: Changing language will translate the interface layout and module topic names."
             : "ملاحظة: تغيير اللغة سيقوم بترجمة واجهة المستخدم وأسماء مواضيع الموديلات الدراسي."}
@@ -248,16 +253,16 @@ function AcademicYearProfilePage({
   };
 
   return (
-    <div className="p-6 text-gray-900 dark:text-gray-100 font-manrope">
+    <div className="p-6 text-gray-900 font-manrope">
       <div className="flex items-center gap-3 mb-6">
         <div className="w-10 h-10 rounded-xl bg-physiology/10 flex items-center justify-center text-physiology shrink-0">
           <GraduationCap size={22} />
         </div>
         <div className="text-left rtl:text-right">
-          <h3 className="font-archivo text-lg font-bold tracking-tight text-gray-900 dark:text-white">
+          <h3 className="font-archivo text-lg font-bold tracking-tight text-gray-900">
             {language === 'en' ? "Change Academic Year" : "تغيير السنة الدراسية"}
           </h3>
-          <p className="text-xs text-gray-500 dark:text-gray-400 font-medium mt-0.5">
+          <p className="text-xs text-gray-505 font-medium mt-0.5">
             {language === 'en' ? `Current: ${getYearName(studentYear || 1)}` : `الحالي: ${getYearName(studentYear || 1)}`}
           </p>
         </div>
@@ -272,15 +277,15 @@ function AcademicYearProfilePage({
               onClick={() => handleSelectYear(yr)}
               className={`w-full p-4 rounded-xl flex items-center justify-between border transition-all duration-200 text-left rtl:text-right ${
                 isCurrent 
-                  ? "bg-physiology/10 border-physiology/30 text-physiology-dark dark:text-physiology"
-                  : "bg-gray-50 dark:bg-gray-800/40 border-gray-100 dark:border-gray-800 hover:bg-physiology/5 dark:hover:bg-physiology/5 text-gray-700 dark:text-gray-300"
+                  ? "bg-physiology/10 border-physiology/30 text-physiology-dark"
+                  : "bg-gray-50 border-gray-100 hover:bg-physiology/5 text-gray-700"
               }`}
             >
               <div className="text-left rtl:text-right">
                 <span className="block text-sm font-bold">
                   {language === 'en' ? `Year ${yr}` : `السنة ${yr}`}
                 </span>
-                <span className="block text-[11px] text-gray-400 dark:text-gray-500 mt-0.5">
+                <span className="block text-[11px] text-gray-400 mt-0.5">
                   {language === 'en' 
                     ? `Switch to Year ${yr} syllabus and courses`
                     : `الانتقال إلى منهج ومقررات السنة ${yr}`}
@@ -330,6 +335,8 @@ function MainApp() {
       return 'yearSelect';
     } catch { return 'yearSelect'; }
   });
+  const [isFromHistory, setIsFromHistory] = useState(false);
+  const [historySource, setHistorySource] = useState<'chapters' | 'history' | null>(null);
   const [selectedYear, setSelectedYear] = useState<number | null>(() => {
     try { const saved = localStorage.getItem('asu_portal_year'); return saved ? Number(saved) : null; } catch { return null; }
   });
@@ -709,6 +716,7 @@ function MainApp() {
       }
     });
 
+    setIsFromHistory(false);
     saveQuizResult({
       moduleCode: selectedModule?.code,
       year: selectedYear,
@@ -738,7 +746,7 @@ function MainApp() {
     });
   };
 
-  const handleSelectHistory = (result: QuizResult) => {
+  const handleSelectHistory = (result: QuizResult, source: 'chapters' | 'history' = 'history') => {
     const modCode = result.moduleCode || 'MEM-2';
     const yr = result.year || 2;
     const sem = result.semester || 2;
@@ -752,8 +760,8 @@ function MainApp() {
     let questionsList: Question[] = [];
     if (result.questionIds && Array.isArray(result.questionIds)) {
       const allChapterQuestions = chapter.subjects.flatMap((s) => s.questions);
-      result.questionIds.forEach((id: number) => {
-        const found = allChapterQuestions.find((q) => q.id === id);
+      result.questionIds.forEach((id: string | number) => {
+        const found = allChapterQuestions.find((q) => String(q.id) === String(id));
         if (found) {
           questionsList.push(found);
         }
@@ -800,6 +808,8 @@ function MainApp() {
         elapsedSeconds: result.elapsedSeconds,
         flaggedQuestions: flaggedSet,
       });
+      setIsFromHistory(true);
+      setHistorySource(source);
       setScreen('results');
     });
   };
@@ -814,10 +824,21 @@ function MainApp() {
 
   const handleBackToChapters = () => {
     transitionTo(() => {
-      setSelectedChapter(null);
-      setQuizPayload(null);
-      setResultPayload(null);
-      setScreen('chapters');
+      if (isFromHistory) {
+        setIsFromHistory(false);
+        setQuizPayload(null);
+        setResultPayload(null);
+        if (historySource === 'chapters') {
+          setScreen('chapters');
+        } else {
+          setScreen('history');
+        }
+      } else {
+        setSelectedChapter(null);
+        setQuizPayload(null);
+        setResultPayload(null);
+        setScreen('chapters');
+      }
     });
   };
 
@@ -851,9 +872,12 @@ function MainApp() {
   const customUserButton = (
     <UserButton 
       appearance={{
-        baseTheme: isDark ? dark : undefined,
+        baseTheme: undefined,
         elements: {
-          userButtonAvatarBox: "w-9 h-9 border-2 border-physiology shadow-sm",
+          userButtonBox: "w-11 h-11 md:w-12 md:h-12",
+          userButtonTrigger: "w-11 h-11 md:w-12 md:h-12",
+          userButtonAvatarBox: "w-11 h-11 md:w-12 md:h-12 border border-physiology shadow-md",
+          userButtonAvatarImage: "w-full h-full object-cover",
         }
       }}
     >
@@ -897,10 +921,10 @@ function MainApp() {
         />
 
         <UserButton.Action
-          label={`Year ${studentYear} Progress: ${getYearProgress().pct}% (${getYearProgress().completed}/${getYearProgress().total} topics)`}
-          labelIcon={<Award size={16} className="text-physiology" />}
+          label={language === 'en' ? "Performance Dashboard" : "لوحة تحليلات الأداء"}
+          labelIcon={<Activity size={16} className="text-[#2dd4bf]" />}
           onClick={() => {
-            transitionTo(() => setScreen('history'));
+            transitionTo(() => setScreen('analytics'));
           }}
         />
 
@@ -1015,23 +1039,17 @@ function MainApp() {
       {/* TOP NAVIGATION HEADER WITH BREADCRUMBS */}
       {['yearSelect', 'semesterSelect', 'moduleSelect', 'studyModeSelect'].includes(screen) && (
         <header className="shrinking-header bg-white/70 dark:bg-gray-900/70 backdrop-blur-xl border-b border-gray-100 dark:border-gray-800/50 sticky top-0 z-40 transition-colors duration-300">
-          <div className="max-w-[1600px] mx-auto px-6 py-5 transition-all duration-300 flex flex-wrap items-center justify-between gap-y-4">
-            <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-2xl bg-physiology/10 flex items-center justify-center text-physiology-dark dark:text-physiology drop-shadow-sm transition-transform hover:scale-105 will-change-transform transform-gpu">
-                <Activity size={28} strokeWidth={2.5} />
-              </div>
+          <div className="max-w-[1600px] mx-auto px-6 py-3 transition-all duration-300 flex flex-wrap items-center justify-between gap-y-4">
+            <div className="flex items-center gap-3 bg-gray-50/50 dark:bg-gray-800/30 backdrop-blur-md border border-gray-200/40 dark:border-gray-800/40 rounded-2xl pl-2 pr-5 py-2 shadow-sm hover:shadow transition-all duration-300">
+              {customUserButton}
               <div className="flex flex-col justify-center">
-                <h1 className="font-archivo font-black text-2xl tracking-tight leading-none text-gray-900 dark:text-white mb-1">
+                <h1 className="font-archivo font-semibold text-sm tracking-tight leading-tight text-gray-900 dark:text-white mb-0.5">
                   {user?.firstName} {user?.lastName}
                 </h1>
-                <p className="text-xs text-gray-500 dark:text-gray-400 font-bold uppercase tracking-widest">
+                <p className="text-[9px] text-gray-500 dark:text-gray-400 font-bold uppercase tracking-wider">
                   {studentYear ? `Year ${studentYear} Medical Student` : 'Medical Student'}
                 </p>
               </div>
-            </div>
-
-            <div className="flex items-center gap-3 sm:gap-4 justify-end">
-              {customUserButton}
             </div>
           </div>
         </header>
@@ -1191,12 +1209,12 @@ function MainApp() {
                   <h3 className="font-archivo text-2xl font-black tracking-tight">Tools</h3>
                 </div>
               </div>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 
                 {/* History Button */}
                 <button
                   onClick={() => transitionTo(() => setScreen('history'))}
-                  className="portal-card text-left bg-white dark:bg-gray-900 rounded-3xl p-6 flex items-center gap-5 border border-gray-100 dark:border-gray-800 hover:border-physiology/30 hover:shadow-md transition-all group"
+                  className="portal-card text-left bg-white dark:bg-gray-900 rounded-3xl p-6 flex items-center gap-5 border border-gray-100 dark:border-gray-800 hover:border-physiology/30 hover:shadow-md transition-all group w-full"
                 >
                   <div className="w-12 h-12 rounded-xl bg-physiology/10 flex items-center justify-center text-physiology group-hover:scale-110 transition-transform">
                     <Activity size={24} />
@@ -1204,6 +1222,40 @@ function MainApp() {
                   <div>
                     <h4 className="font-archivo font-bold text-gray-900 dark:text-white">Full History</h4>
                     <p className="text-xs text-gray-500 font-medium mt-1">View all your past quiz sessions and results</p>
+                  </div>
+                </button>
+
+                {/* Clinical Case Solver */}
+                <button
+                  onClick={() => transitionTo(() => setScreen('caseSolver'))}
+                  className="portal-card text-left bg-white dark:bg-gray-900 rounded-3xl p-6 flex items-center gap-5 border border-gray-100 dark:border-gray-800 hover:border-purple-500/30 hover:shadow-md transition-all group w-full"
+                >
+                  <div className="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-500 group-hover:scale-110 transition-transform">
+                    <Heart size={24} />
+                  </div>
+                  <div>
+                    <h4 className="font-archivo font-bold text-gray-900 dark:text-white flex items-center gap-2">
+                      Case Solver
+                      <span className="text-[9px] px-2 py-0.5 rounded-full bg-purple-500/15 text-purple-400 uppercase tracking-wider font-bold">New Game</span>
+                    </h4>
+                    <p className="text-xs text-gray-500 font-medium mt-1">Solve randomized clinical cases for fun</p>
+                  </div>
+                </button>
+
+                {/* Question Search */}
+                <button
+                  onClick={() => transitionTo(() => setScreen('search'))}
+                  className="portal-card text-left bg-white dark:bg-gray-900 rounded-3xl p-6 flex items-center gap-5 border border-gray-100 dark:border-gray-800 hover:border-teal-500/30 hover:shadow-md transition-all group w-full"
+                >
+                  <div className="w-12 h-12 rounded-xl bg-teal-500/10 flex items-center justify-center text-teal-500 group-hover:scale-110 transition-transform">
+                    <Search size={24} />
+                  </div>
+                  <div>
+                    <h4 className="font-archivo font-bold text-gray-900 dark:text-white flex items-center gap-2">
+                      Question Search
+                      <span className="text-[9px] px-2 py-0.5 rounded-full bg-teal-500/15 text-teal-400 uppercase tracking-wider font-bold">New Tool</span>
+                    </h4>
+                    <p className="text-xs text-gray-500 font-medium mt-1">Search the entire question bank by keyword</p>
                   </div>
                 </button>
 
@@ -1622,7 +1674,7 @@ function MainApp() {
               moduleName={selectedModule.name}
               moduleCode={selectedModule.code}
               onSelectChapter={handleSelectChapter}
-              onSelectHistory={handleSelectHistory}
+              onSelectHistory={(res) => handleSelectHistory(res, 'chapters')}
               onBackToModeSelect={() => navigateTo('studyModeSelect')}
               userButton={customUserButton}
               breadcrumbPath={[
@@ -1644,7 +1696,7 @@ function MainApp() {
               { label: t(`year${selectedYear}`) || `Year ${selectedYear}`, onClick: () => navigateTo('semesterSelect') },
               { label: t(`semester${selectedSemester}`) || `Semester ${selectedSemester}`, onClick: () => navigateTo('moduleSelect') },
               { label: selectedModule?.name || '', onClick: () => navigateTo('studyModeSelect') },
-              { label: `${t('chapter')} ${selectedChapter.id}` }
+              { label: selectedChapter.title }
             ]}
             onBack={() => setScreen('chapters')}
             onSelectSubject={handleSelectSubject}
@@ -1678,9 +1730,35 @@ function MainApp() {
               elapsedSeconds={resultPayload.elapsedSeconds}
               flaggedQuestions={resultPayload.flaggedQuestions}
               onRetake={handleRetake}
-              onTryAnotherSubject={() => setScreen('subjects')}
+              onTryAnotherSubject={() => {
+                if (isFromHistory) {
+                  setIsFromHistory(false);
+                  setQuizPayload(null);
+                  setResultPayload(null);
+                  if (historySource === 'chapters') {
+                    setScreen('chapters');
+                  } else {
+                    setScreen('history');
+                  }
+                } else {
+                  setScreen('subjects');
+                }
+              }}
               onBackToChapters={handleBackToChapters}
-              onBackToSubjects={() => setScreen('subjects')}
+              onBackToSubjects={() => {
+                if (isFromHistory) {
+                  setIsFromHistory(false);
+                  setQuizPayload(null);
+                  setResultPayload(null);
+                  if (historySource === 'chapters') {
+                    setScreen('chapters');
+                  } else {
+                    setScreen('history');
+                  }
+                } else {
+                  setScreen('subjects');
+                }
+              }}
               userButton={customUserButton}
             />
           </Suspense>
@@ -1691,7 +1769,7 @@ function MainApp() {
           <Suspense fallback={<div>Loading...</div>}>
             <HistoryScreen
               onBack={() => navigateTo('yearSelect')}
-              onSelectHistory={handleSelectHistory}
+              onSelectHistory={(res) => handleSelectHistory(res, 'history')}
               userButton={customUserButton}
             />
           </Suspense>
@@ -1714,6 +1792,38 @@ function MainApp() {
                 });
               }}
               userButton={customUserButton}
+            />
+          </Suspense>
+        )}
+
+        {/* SCREEN 11: ANALYTICS DASHBOARD */}
+        {screen === 'analytics' && (
+          <Suspense fallback={<div>Loading...</div>}>
+            <AnalyticsDashboard
+              onBack={() => navigateTo('yearSelect')}
+              userButton={customUserButton}
+              history={getQuizHistory()}
+              studentName={user ? (user.fullName || `${user.firstName} ${user.lastName}`.trim() || 'Student') : 'Student'}
+              studentYear={studentYear}
+              progress={getYearProgress()}
+            />
+          </Suspense>
+        )}
+
+        {/* SCREEN 12: CLINICAL CASE SOLVER */}
+        {screen === 'caseSolver' && (
+          <Suspense fallback={<div>Loading...</div>}>
+            <ClinicalCaseSolver
+              onBack={() => navigateTo('yearSelect')}
+            />
+          </Suspense>
+        )}
+
+        {/* SCREEN 13: QUESTION DATABASE SEARCH */}
+        {screen === 'search' && (
+          <Suspense fallback={<div>Loading...</div>}>
+            <QuestionSearch
+              onBack={() => navigateTo('yearSelect')}
             />
           </Suspense>
         )}
@@ -2039,13 +2149,19 @@ function MainApp() {
 }
 
 export default function App() {
+  const [ready, setReady] = useState(false);
+
+  if (!ready) {
+    return <LoadingScreen onComplete={() => setReady(true)} />;
+  }
+
   return (
     <ThemeProvider>
       <SignedIn>
         <MainApp />
       </SignedIn>
       <SignedOut>
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<LoadingScreen />}>
           <LoginScreen />
         </Suspense>
       </SignedOut>

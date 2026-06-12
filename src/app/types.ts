@@ -1,6 +1,7 @@
 export type SubjectColor =
   | 'physiology'
   | 'biochem'
+  | 'microbiology'
   | 'anatomy'
   | 'histology'
   | 'pathology'
@@ -17,7 +18,10 @@ export type Screen =
   | 'quiz'
   | 'results'
   | 'history'
-  | 'flaggedQuestions';
+  | 'flaggedQuestions'
+  | 'analytics'
+  | 'caseSolver'
+  | 'search';
 
 export interface SubQuestion {
   id: string;
@@ -31,7 +35,7 @@ export interface SubQuestion {
 }
 
 export interface Question {
-  id: number;
+  id: string | number;
   type: 'mcq' | 'truefalse' | 'matching' | 'essay' | 'case' | 'fillblank';
   text: string;
   lecture: number;
@@ -127,6 +131,23 @@ export const subjectStyles: Record<SubjectColor, SubjectStyle> = {
     gradientFrom: 'from-biochem/15',
     gradientTo: 'to-biochem/5',
     hoverShadowRgba: 'rgba(245,158,11,0.15)',
+  },
+  microbiology: {
+    bg: 'bg-microbiology',
+    bgOp5: 'bg-microbiology/5',
+    bgOp8: 'bg-microbiology/8',
+    bgOp10: 'bg-microbiology/10',
+    bgOp15: 'bg-microbiology/15',
+    text: 'text-microbiology',
+    textDark: 'text-microbiology-dark',
+    border: 'border-microbiology',
+    borderOp10: 'border-microbiology/10',
+    borderOp15: 'border-microbiology/15',
+    borderOp40: 'border-microbiology/40',
+    hoverBorder: 'hover:border-microbiology/40',
+    gradientFrom: 'from-microbiology/15',
+    gradientTo: 'to-microbiology/5',
+    hoverShadowRgba: 'rgba(236,72,153,0.15)',
   },
   anatomy: {
     bg: 'bg-anatomy',

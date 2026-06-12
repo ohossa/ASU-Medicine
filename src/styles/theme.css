@@ -29,6 +29,10 @@
   --color-biochem-light:     #FFFBEB;
   --color-biochem-dark:      #D97706;
 
+  --color-microbiology:      #EC4899;
+  --color-microbiology-light:#FDF2F8;
+  --color-microbiology-dark: #BE185D;
+
   --color-pathology:         #EF4444;
   --color-pathology-light:   #FEF2F2;
   --color-pathology-dark:    #DC2626;
@@ -440,33 +444,67 @@
 }
 .toast-in { animation: toastIn 300ms cubic-bezier(0.16, 1, 0.3, 1) both; }
 
-/* ── Clerk dynamic light/dark mode overrides ──────────────── */
-.cl-rootBox,
-.cl-userButtonPopoverCard,
-.cl-userProfile-root,
-.cl-dialog {
-  --cl-colorBackground: var(--card) !important;
-  --cl-colorText: var(--foreground) !important;
-  --cl-colorBorder: var(--border) !important;
-  --cl-colorPrimary: var(--primary) !important;
-  --cl-colorSuccess: var(--color-success) !important;
-  --cl-colorDanger: var(--color-danger) !important;
+/* ── Clerk forced light mode overrides ──────────────── */
+
+/* Define Clerk light mode variables globally for all Clerk classes */
+[class^="cl-"],
+[class*=" cl-"],
+.dark [class^="cl-"],
+.dark [class*=" cl-"] {
+  --cl-colorBackground: #ffffff !important;
+  --cl-colorText: #0d0f1a !important;
+  --cl-colorTextSecondary: #6b7280 !important;
+  --cl-colorTextOnPrimaryBackground: #ffffff !important;
+  --cl-colorPrimary: #10B981 !important;
+  --cl-colorSuccess: #22C55E !important;
+  --cl-colorDanger: #EF4444 !important;
+  --cl-colorInputBackground: #ffffff !important;
+  --cl-colorInputText: #0d0f1a !important;
+  --cl-colorBorder: rgba(0, 0, 0, 0.08) !important;
+  --cl-colorWarning: #F59E0B !important;
 }
 
+/* Force light mode backgrounds globally on Clerk cards, popovers, and main modals */
+.cl-userButtonPopoverCard,
+.cl-userProfile-root,
+.cl-card,
+.cl-dialog,
+.cl-navbar,
+.cl-scrollBox,
+.cl-pageScrollBox,
+.cl-userProfile-box,
+.cl-userButtonPopoverMain,
+.cl-userButtonPopoverFooter,
 .dark .cl-userButtonPopoverCard,
 .dark .cl-userProfile-root,
 .dark .cl-card,
+.dark .cl-dialog,
 .dark .cl-navbar,
 .dark .cl-scrollBox,
 .dark .cl-pageScrollBox,
 .dark .cl-userProfile-box,
 .dark .cl-userButtonPopoverMain,
 .dark .cl-userButtonPopoverFooter {
-  background-color: var(--card) !important;
-  color: var(--foreground) !important;
-  border-color: var(--border) !important;
+  background-color: #ffffff !important;
+  color: #0d0f1a !important;
+  border-color: rgba(0, 0, 0, 0.08) !important;
 }
 
+/* Force dark text color for all inner elements to match the white background */
+.cl-userButtonPopoverActionButton,
+.cl-navbarButton,
+.cl-accordionTriggerButton,
+.cl-profileSectionTitleText,
+.cl-formFieldLabel,
+.cl-headerTitle,
+.cl-headerSubtitle,
+.cl-breadcrumbsItem,
+.cl-userPreviewTitle,
+.cl-userPreviewSubtitle,
+.cl-userButtonPopoverActionButtonText,
+.cl-mainMenuItemButtonText,
+.cl-userButtonPopoverActionButtonLabel,
+.cl-formFieldHintText,
 .dark .cl-userButtonPopoverActionButton,
 .dark .cl-navbarButton,
 .dark .cl-accordionTriggerButton,
@@ -476,18 +514,169 @@
 .dark .cl-headerSubtitle,
 .dark .cl-breadcrumbsItem,
 .dark .cl-userPreviewTitle,
-.dark .cl-userPreviewSubtitle {
-  color: var(--foreground) !important;
+.dark .cl-userPreviewSubtitle,
+.dark .cl-userButtonPopoverActionButtonText,
+.dark .cl-mainMenuItemButtonText,
+.dark .cl-userButtonPopoverActionButtonLabel,
+.dark .cl-formFieldHintText {
+  color: #0d0f1a !important;
 }
 
+/* Gray subtexts and muted elements */
+.cl-userPreviewSubtitle,
+.cl-profileSectionSubtitleText,
+.cl-breadcrumbsItem,
+.dark .cl-userPreviewSubtitle,
+.dark .cl-profileSectionSubtitleText,
+.dark .cl-breadcrumbsItem {
+  color: #6b7280 !important;
+}
+
+/* Action button icons */
+.cl-userButtonPopoverActionButtonIcon,
+.cl-navbarButton svg,
+.cl-accordionTriggerButton svg,
 .dark .cl-userButtonPopoverActionButtonIcon,
-.dark .cl-navbarButton svg {
-  color: var(--muted-foreground) !important;
+.dark .cl-navbarButton svg,
+.dark .cl-accordionTriggerButton svg {
+  color: #6b7280 !important;
 }
 
+/* Hover effects */
+.cl-userButtonPopoverActionButton:hover,
+.cl-navbarButton:hover,
+.cl-accordionTriggerButton:hover,
 .dark .cl-userButtonPopoverActionButton:hover,
 .dark .cl-navbarButton:hover,
 .dark .cl-accordionTriggerButton:hover {
-  background-color: var(--muted) !important;
+  background-color: #f3f4f8 !important;
+}
+
+/* Force Clerk avatar image and all its wrapper elements to scale to 100% of parent box size */
+.cl-userButtonAvatarBox *,
+.cl-userButtonAvatarImage,
+.cl-avatarBox,
+.cl-avatarImage {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+/* ── Clerk Dark Theme overrides for Login Page ──────── */
+.clerk-dark-theme-container [class^="cl-"],
+.clerk-dark-theme-container [class*=" cl-"] {
+  --cl-colorBackground: transparent !important;
+  --cl-colorText: #ffffff !important;
+  --cl-colorTextSecondary: #8e8e93 !important;
+  --cl-colorInputBackground: rgba(255, 255, 255, 0.04) !important;
+  --cl-colorInputText: #ffffff !important;
+  --cl-colorBorder: rgba(255, 255, 255, 0.08) !important;
+  --cl-colorPrimary: #2dd4bf !important;
+  --cl-colorTextOnPrimaryBackground: #000000 !important;
+}
+
+.clerk-dark-theme-container .cl-card,
+.clerk-dark-theme-container .cl-rootBox,
+.clerk-dark-theme-container .cl-main,
+.clerk-dark-theme-container .cl-signIn {
+  background-color: transparent !important;
+  color: #ffffff !important;
+  border: none !important;
+  box-shadow: none !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 auto !important;
+  box-sizing: border-box !important;
+}
+
+/* Strip borders, shadows, backgrounds from all structural Clerk elements inside the dark wrapper */
+.clerk-dark-theme-container [class^="cl-"]:not(.cl-formFieldInput):not(.cl-socialButtonsBlockButton):not(.cl-formButtonPrimary):not(.cl-dividerLine),
+.clerk-dark-theme-container [class*=" cl-"]:not(.cl-formFieldInput):not(.cl-socialButtonsBlockButton):not(.cl-formButtonPrimary):not(.cl-dividerLine) {
+  border: none !important;
+  box-shadow: none !important;
+  background-color: transparent !important;
+  background-image: none !important;
+}
+
+/* Invert the Apple logo inside Clerk social buttons to make it white */
+.clerk-dark-theme-container img[alt*="Apple"],
+.clerk-dark-theme-container [data-provider="apple"] img,
+.clerk-dark-theme-container [data-provider="apple"] svg {
+  filter: brightness(0) invert(1) !important;
+}
+
+.clerk-dark-theme-container .cl-headerTitle {
+  color: #ffffff !important;
+}
+
+.clerk-dark-theme-container .cl-headerSubtitle {
+  color: #8e8e93 !important;
+}
+
+.clerk-dark-theme-container .cl-formFieldLabel {
+  color: #cbd5e1 !important;
+}
+
+.clerk-dark-theme-container .cl-formFieldInput {
+  background-color: rgba(255, 255, 255, 0.04) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  color: #ffffff !important;
+}
+
+.clerk-dark-theme-container .cl-formFieldInput:focus {
+  border-color: rgba(45, 212, 191, 0.5) !important;
+}
+
+.clerk-dark-theme-container .cl-formButtonPrimary {
+  background-color: #ffffff !important;
+  color: #0b0b0c !important;
+  font-weight: 600 !important;
+}
+
+.clerk-dark-theme-container .cl-formButtonPrimary:hover {
+  opacity: 0.9 !important;
+}
+
+.clerk-dark-theme-container .cl-socialButtonsBlockButton {
+  background-color: rgba(255, 255, 255, 0.04) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  color: #e2e8f0 !important;
+}
+
+.clerk-dark-theme-container .cl-socialButtonsBlockButton:hover {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.clerk-dark-theme-container .cl-dividerLine {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+.clerk-dark-theme-container .cl-dividerText {
+  color: #8e8e93 !important;
+}
+
+.clerk-dark-theme-container .cl-footerActionText {
+  color: #8e8e93 !important;
+}
+
+.clerk-dark-theme-container .cl-footerActionLink {
+  color: #2dd4bf !important;
+}
+
+.clerk-dark-theme-container .cl-footerActionLink:hover {
+  color: rgba(45, 212, 191, 0.8) !important;
+}
+
+.clerk-dark-theme-container .cl-internal-b3fm6y {
+  color: #8e8e93 !important;
+}
+
+.clerk-dark-theme-container .cl-identityPreview {
+  background-color: rgba(255, 255, 255, 0.04) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+}
+
+.clerk-dark-theme-container .cl-identityPreviewText {
+  color: #ffffff !important;
 }
 

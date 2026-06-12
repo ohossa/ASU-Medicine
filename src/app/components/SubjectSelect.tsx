@@ -9,6 +9,7 @@ import {
   ShieldAlert,
   Pill,
   Stethoscope,
+  Biohazard,
   Zap,
   HelpCircle,
   ArrowRight,
@@ -45,6 +46,7 @@ const iconMap: Record<string, LucideIcon> = {
   ShieldAlert,
   Pill,
   Stethoscope,
+  Biohazard,
 };
 
 const totalQs = (subjects: SubjectData[]) =>

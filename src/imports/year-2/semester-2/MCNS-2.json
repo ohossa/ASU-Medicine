@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "meta": {
+    "moduleCode": "MCNS-2",
+    "moduleName": "Central Nervous System Module",
+    "year": 2,
+    "semester": 2,
+    "creditPoints": 13,
+    "totalMarks": 260,
+    "keywords": [
+      "cns",
+      "central nervous",
+      "mcns",
+      "neuro"
+    ]
+  },
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Neuroanatomy",
+      "subtitle": "Neuroanatomy",
+      "emoji": "🧠",
+      "page": 1,
+      "lectureRange": "Lectures 1",
+      "subjects": [
+        {
+          "id": "anatomy",
+          "name": "Anatomy",
+          "iconName": "Bone",
+          "lectures": "Lecture 1",
+          "lectureCount": 1,
+          "questions": [
+            {
+              "id": "MCNS2-CH1-ANAT-0001",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which structure connects the left and right cerebral hemispheres?",
+              "explanation": "The corpus callosum is the largest commissural tract.",
+              "keyConcept": "Interhemispheric communication.",
+              "options": [
+                "Corpus callosum",
+                "Internal capsule",
+                "Thalamus",
+                "Pons"
+              ],
+              "correctIndex": 0,
+              "modelAnswer": null
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

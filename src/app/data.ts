@@ -55,6 +55,7 @@ function topicToColor(topic: string): SubjectColor {
   if (t.includes('histology')) return 'histology';
   if (t.includes('physiology')) return 'physiology';
   if (t.includes('biochem')) return 'biochem';
+  if (t.includes('micro') || t.includes('bacter') || t.includes('virus') || t.includes('parasit') || t.includes('fung')) return 'microbiology';
   if (t.includes('pathology')) return 'pathology';
   if (t.includes('pharmacology') || t.includes('pharma')) return 'pharma';
   if (t.includes('clinical') || t.includes('case')) return 'clinical';
@@ -66,6 +67,7 @@ const colorToName: Record<SubjectColor, string> = {
   histology: 'Histology',
   physiology: 'Physiology',
   biochem: 'Biochemistry',
+  microbiology: 'Microbiology',
   pathology: 'Pathology',
   pharma: 'Pharmacology',
   clinical: 'Clinical',
@@ -76,6 +78,7 @@ const colorToIcon: Record<SubjectColor, string> = {
   histology: 'Microscope',
   physiology: 'Activity',
   biochem: 'FlaskConical',
+  microbiology: 'Biohazard',
   pathology: 'ShieldAlert',
   pharma: 'Pill',
   clinical: 'Stethoscope',
@@ -86,6 +89,7 @@ const SUBJECT_ORDER: SubjectColor[] = [
   'histology',
   'physiology',
   'biochem',
+  'microbiology',
   'pathology',
   'pharma',
   'clinical',
@@ -335,9 +339,55 @@ export const SYLLABUS_MODULES: Record<number, Record<number, ModuleInfo[]>> = {
 interface LoadedDatabases {
   mcqRaw: any | null;
   essayRaw: any | null;
+  v2Raw?: any | null;
 }
 
 export const moduleDatabases: Record<string, LoadedDatabases> = {};
+
+function assertUniqueQuestionIds(rawData: any, filename: string): void {
+  const ids = new Set<string>();
+  if (!rawData.chapters) return;
+  for (const chapter of rawData.chapters) {
+    if (!chapter.subjects) continue;
+    for (const subject of chapter.subjects) {
+      if (!subject.questions) continue;
+      for (const question of subject.questions) {
+        if (ids.has(question.id)) {
+          throw new Error(`Duplicate question id: ${question.id} in ${filename}`);
+        }
+        ids.add(question.id);
+      }
+    }
+  }
+}
+
+function transformV2Question(q: any, subjectColor: SubjectColor): Question {
+  return {
+    id: q.id,
+    type: q.type,
+    text: q.text,
+    lecture: q.lecture,
+    subjectColor,
+    options: q.options,
+    correctIndex: q.correctIndex,
+    pairs: q.pairs,
+    modelAnswer: q.modelAnswer || undefined,
+    explanation: q.explanation || '',
+    keyConcept: q.keyConcept,
+    subQuestions: q.subQuestions ? q.subQuestions.map((sq: any) => ({
+      id: sq.id,
+      type: sq.type,
+      text: sq.text,
+      options: sq.options,
+      correctIndex: sq.correctIndex,
+      modelAnswer: sq.modelAnswer,
+      explanation: sq.explanation || '',
+      keyConcept: sq.keyConcept
+    })) : undefined,
+    blanks: q.blanks,
+    acceptedAnswers: q.acceptedAnswers
+  };
+}
 
 // Helper to inspect JSON content structure and auto-detect database type
 function detectDbTypeOfJson(rawData: any): 'mcq' | 'essay' {
@@ -381,38 +431,37 @@ for (const path in globbedFiles) {
   const fileModule = globbedFiles[path];
   const rawData = (fileModule as any).default || fileModule;
 
-  const pathParts = path.split('/');
-  const filename = pathParts[pathParts.length - 1].toLowerCase();
-
-  let matchedModule: ModuleInfo | null = null;
-
-  // 1. Try exact module code match (case-insensitive, stripping hyphens/underscores)
-  const filenameClean = filename.replace(/[-_]/g, '');
-  for (const year of Object.keys(SYLLABUS_MODULES)) {
-    const yNum = parseInt(year);
-    for (const sem of Object.keys(SYLLABUS_MODULES[yNum])) {
-      const sNum = parseInt(sem);
-      for (const mod of SYLLABUS_MODULES[yNum][sNum]) {
-        const codeLower = mod.code.toLowerCase();
-        const codeClean = codeLower.replace(/[-_]/g, '');
-        if (filename.includes(codeLower) || filenameClean.includes(codeClean)) {
-          matchedModule = mod;
-          break;
-        }
-      }
-      if (matchedModule) break;
+  if (rawData && typeof rawData === 'object' && 'schemaVersion' in rawData) {
+    const sv = rawData.schemaVersion;
+    if (sv !== 1) {
+      console.warn(`Unexpected schema version ${sv} in ${path}`);
     }
-    if (matchedModule) break;
-  }
+    if (rawData.meta && rawData.meta.moduleCode) {
+      const code = rawData.meta.moduleCode;
+      if (!moduleDatabases[code]) {
+        moduleDatabases[code] = { mcqRaw: null, essayRaw: null };
+      }
+      assertUniqueQuestionIds(rawData, path);
+      moduleDatabases[code].v2Raw = rawData;
+    } else {
+      console.warn(`Missing meta or moduleCode in v2 JSON: ${path}`);
+    }
+  } else {
+    const pathParts = path.split('/');
+    const filename = pathParts[pathParts.length - 1].toLowerCase();
 
-  // 2. If no code match, search by keywords
-  if (!matchedModule) {
+    let matchedModule: ModuleInfo | null = null;
+
+    // 1. Try exact module code match (case-insensitive, stripping hyphens/underscores)
+    const filenameClean = filename.replace(/[-_]/g, '');
     for (const year of Object.keys(SYLLABUS_MODULES)) {
       const yNum = parseInt(year);
       for (const sem of Object.keys(SYLLABUS_MODULES[yNum])) {
         const sNum = parseInt(sem);
         for (const mod of SYLLABUS_MODULES[yNum][sNum]) {
-          if (mod.keywords.some((kw) => filename.includes(kw.toLowerCase()))) {
+          const codeLower = mod.code.toLowerCase();
+          const codeClean = codeLower.replace(/[-_]/g, '');
+          if (filename.includes(codeLower) || filenameClean.includes(codeClean)) {
             matchedModule = mod;
             break;
           }
@@ -421,38 +470,56 @@ for (const path in globbedFiles) {
       }
       if (matchedModule) break;
     }
-  }
 
-  if (!matchedModule) {
-    continue;
-  }
+    // 2. If no code match, search by keywords
+    if (!matchedModule) {
+      for (const year of Object.keys(SYLLABUS_MODULES)) {
+        const yNum = parseInt(year);
+        for (const sem of Object.keys(SYLLABUS_MODULES[yNum])) {
+          const sNum = parseInt(sem);
+          for (const mod of SYLLABUS_MODULES[yNum][sNum]) {
+            if (mod.keywords.some((kw) => filename.includes(kw.toLowerCase()))) {
+              matchedModule = mod;
+              break;
+            }
+          }
+          if (matchedModule) break;
+        }
+        if (matchedModule) break;
+      }
+    }
 
-  const code = matchedModule.code;
-  if (!moduleDatabases[code]) {
-    moduleDatabases[code] = { mcqRaw: null, essayRaw: null };
-  }
+    if (!matchedModule) {
+      continue;
+    }
 
-  // Determine whether it's MCQ or Essay
-  let isEssay =
-    filename.includes('essay') ||
-    filename.includes('written') ||
-    filename.includes('short') ||
-    filename.includes('paper');
-  let isMcq =
-    filename.includes('mcq') ||
-    filename.includes('practice') ||
-    filename.includes('exam');
+    const code = matchedModule.code;
+    if (!moduleDatabases[code]) {
+      moduleDatabases[code] = { mcqRaw: null, essayRaw: null };
+    }
 
-  if (!isEssay && !isMcq) {
-    const detectedType = detectDbTypeOfJson(rawData);
-    isEssay = detectedType === 'essay';
-    isMcq = detectedType === 'mcq';
-  }
+    // Determine whether it's MCQ or Essay
+    let isEssay =
+      filename.includes('essay') ||
+      filename.includes('written') ||
+      filename.includes('short') ||
+      filename.includes('paper');
+    let isMcq =
+      filename.includes('mcq') ||
+      filename.includes('practice') ||
+      filename.includes('exam');
 
-  if (isEssay) {
-    moduleDatabases[code].essayRaw = rawData;
-  } else {
-    moduleDatabases[code].mcqRaw = rawData;
+    if (!isEssay && !isMcq) {
+      const detectedType = detectDbTypeOfJson(rawData);
+      isEssay = detectedType === 'essay';
+      isMcq = detectedType === 'mcq';
+    }
+
+    if (isEssay) {
+      moduleDatabases[code].essayRaw = rawData;
+    } else {
+      moduleDatabases[code].mcqRaw = rawData;
+    }
   }
 }
 
@@ -546,13 +613,28 @@ function mergeChapters(
 
 export function isModuleActive(moduleCode: string): boolean {
   const db = moduleDatabases[moduleCode];
-  return !!(db && (db.mcqRaw || db.essayRaw));
+  return !!(db && (db.v2Raw || db.mcqRaw || db.essayRaw));
 }
 
 export function getModuleQuestionCounts(moduleCode: string) {
   const db = moduleDatabases[moduleCode];
   let mcqCount = 0;
   let essayCount = 0;
+
+  if (db?.v2Raw) {
+    db.v2Raw.chapters.forEach((ch: any) => {
+      ch.subjects?.forEach((subj: any) => {
+        subj.questions?.forEach((q: any) => {
+          if (q.type === 'essay') {
+            essayCount++;
+          } else {
+            mcqCount++;
+          }
+        });
+      });
+    });
+    return { mcqCount, essayCount, totalCount: mcqCount + essayCount };
+  }
 
   if (db?.mcqRaw) {
     mcqCount = db.mcqRaw.totalQuestions || 0;
@@ -585,6 +667,45 @@ export function getChaptersForModuleAndMode(
 ): ChapterData[] {
   const db = moduleDatabases[moduleCode];
   if (!db) return [];
+
+  if (db.v2Raw) {
+    const chaptersList = db.v2Raw.chapters || [];
+    return chaptersList.map((ch: any) => {
+      const subjects: SubjectData[] = (ch.subjects || [])
+        .map((subj: any) => {
+          const questions = (subj.questions || [])
+            .filter((q: any) => {
+              if (mode === 'mcq') return q.type !== 'essay';
+              if (mode === 'essay') return q.type === 'essay';
+              return true;
+            })
+            .map((q: any) => transformV2Question(q, subj.id));
+
+          return {
+            id: subj.id,
+            name: subj.name,
+            iconName: subj.iconName,
+            lectures: subj.lectures || '',
+            lectureCount: subj.lectureCount || 1,
+            questions,
+          };
+        })
+        .filter((subj: SubjectData) => subj.questions.length > 0);
+
+      const accentColor: SubjectColor = subjects[0]?.id || 'physiology';
+
+      return {
+        id: ch.id,
+        title: ch.title,
+        subtitle: ch.subtitle || ch.title,
+        emoji: ch.emoji || '🧠',
+        page: ch.page || 1,
+        lectureRange: ch.lectureRange || '',
+        accentColor,
+        subjects,
+      };
+    });
+  }
 
   const mcqRaw = db.mcqRaw;
   const essayRaw = db.essayRaw;
@@ -642,7 +763,7 @@ export function shuffleArray<T>(array: T[]): T[] {
   return [...array];
 }
 
-export function findQuestionById(id: number): { question: Question; chapter: ChapterData; moduleCode: string; subjectName: string } | null {
+export function findQuestionById(id: string | number): { question: Question; chapter: ChapterData; moduleCode: string; subjectName: string } | null {
   for (const year of Object.keys(SYLLABUS_MODULES)) {
     const semesters = SYLLABUS_MODULES[Number(year)];
     if (!semesters) continue;
@@ -652,7 +773,7 @@ export function findQuestionById(id: number): { question: Question; chapter: Cha
           const chs = getChaptersForModuleAndMode(mod.code, 'mixed');
           for (const chapter of chs) {
             for (const subject of chapter.subjects) {
-              const q = subject.questions.find((quest) => quest.id === id);
+              const q = subject.questions.find((quest) => String(quest.id) === String(id));
               if (q) {
                 return { question: q, chapter, moduleCode: mod.code, subjectName: subject.name };
               }

@@ -11,11 +11,12 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [isDark, setIsDark] = useState(() => {
     try {
       const pref = localStorage.getItem('theme');
-      const dark = pref === 'dark';
+      // Default to dark mode unless pref is explicitly 'light'
+      const dark = pref !== 'light';
       if (dark) document.documentElement.classList.add('dark');
       return dark;
     } catch {
-      return false;
+      return true;
     }
   });
 

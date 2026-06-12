@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import {
   ArrowLeft,
   ArrowRight,
@@ -59,7 +60,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
   const subjectColor: SubjectColor = current.subjectColor;
   const s = subjectStyles[subjectColor];
 
-  const isSpecialQuestion = current.id === 2;
+  const isSpecialQuestion = String(current.id) === '2';
 
   const renderFormattedText = (
     text: string | undefined,
@@ -383,17 +384,12 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
     <div className={`min-h-screen font-manrope transition-all duration-500 ${
       isSpecialQuestion
         ? 'bg-gradient-to-br from-pink-100/30 via-purple-100/30 to-pink-50/20 dark:from-pink-950/20 dark:via-purple-950/20 dark:to-pink-950/10'
-        : 'bg-gray-50/70 dark:bg-gray-950'
+        : 'quiz-main-bg'
     }`}>
       <style>{`
         @keyframes fadeInUp {
           from { opacity: 0; transform: translateY(16px); }
           to { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes correctGlow {
-          0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.4); }
-          70% { box-shadow: 0 0 0 10px rgba(16, 185, 129, 0); }
-          100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
         }
         @keyframes wrongShake {
           0%, 100% { transform: translateX(0); }
@@ -401,32 +397,91 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
           40%, 80% { transform: translateX(4px); }
         }
         .feedback-animate { animation: fadeInUp 350ms cubic-bezier(0.34, 1.56, 0.64, 1) both; }
-        .correct-glow { animation: correctGlow 1.2s infinite; }
         .wrong-shake { animation: wrongShake 400ms ease; }
         .nav-btn { transition: all 250ms cubic-bezier(0.34, 1.56, 0.64, 1); }
         .nav-btn:hover:not(:disabled) { transform: translateY(-1px); }
         .nav-btn:active:not(:disabled) { transform: scale(0.97); }
         .sidebar-card { transition: all 300ms ease; }
         .option-btn { transition: all 200ms ease; }
-        .option-btn:hover:not(:disabled) { transform: translateY(-1px); }
+
+        /* Fable 5.0 Apple-style design classes */
+        .quiz-main-bg {
+          background-color: #0b0b0c !important;
+          color: rgba(255,255,255,0.92) !important;
+        }
+        .quiz-glass-card {
+          background: rgba(18, 18, 20, 0.55) !important;
+          backdrop-filter: blur(20px) !important;
+          -webkit-backdrop-filter: blur(20px) !important;
+          border: 1px solid rgba(255,255,255,0.08) !important;
+          box-shadow: 0 24px 64px rgba(0,0,0,0.45) !important;
+        }
+        .quiz-option-btn {
+          width: 100%;
+          text-align: left;
+          padding: 16px 20px !important;
+          border-radius: 14px;
+          border: 1px solid rgba(255, 255, 255, 0.10) !important;
+          background-color: rgba(255, 255, 255, 0.025) !important;
+          color: rgba(255,255,255,0.92) !important;
+          transition: all 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+          cursor: pointer;
+        }
+        .quiz-option-btn:hover:not(:disabled) {
+          border-color: rgba(255, 255, 255, 0.8) !important;
+          transform: translateY(-1px) scale(1.008);
+        }
+        .quiz-option-btn:active:not(:disabled) {
+          transform: scale(0.985);
+        }
+        .quiz-option-btn-correct {
+          border: 1px solid #2dd4bf !important;
+          background-color: rgba(45, 212, 191, 0.07) !important;
+          box-shadow: 0 0 0 1px rgba(45, 212, 191, 0.25), 0 0 24px rgba(45, 212, 191, 0.10) !important;
+        }
+        .quiz-option-btn-incorrect {
+          border: 1px solid #f87171 !important;
+          background-color: rgba(248, 113, 113, 0.06) !important;
+          box-shadow: 0 0 0 1px rgba(248, 113, 113, 0.20) !important;
+        }
+        .quiz-option-btn-revealed {
+          border: 1px solid rgba(45, 212, 191, 0.45) !important;
+        }
+        .quiz-option-btn-disabled {
+          opacity: 0.6;
+          cursor: not-allowed;
+        }
+        .quiz-letter-badge {
+          flex-shrink: 0;
+          width: 28px;
+          height: 28px;
+          display: grid;
+          place-items: center;
+          border-radius: 8px;
+          font-size: 12.5px;
+          font-weight: 600;
+          color: rgba(255, 255, 255, 0.55);
+          background: rgba(255, 255, 255, 0.04);
+          border: 1px solid rgba(255, 255, 255, 0.07);
+        }
       `}</style>
 
       {/* HEADER */}
-      <header className="bg-white dark:bg-gray-900 border-b border-gray-100 dark:border-gray-800 sticky top-0 z-50">
+      <header className="bg-[#0b0b0c]/80 backdrop-blur-xl border-b border-white/[0.06] sticky top-0 z-50 transition-colors duration-300">
         <div className="max-w-[1600px] mx-auto px-6 lg:px-10">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center gap-4">
               <button
                 onClick={onBack}
-                className="nav-btn inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white text-sm font-semibold border border-gray-100 dark:border-gray-700"
+                className="nav-btn inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-white/[0.03] hover:bg-white/[0.07] text-slate-400 hover:text-white text-sm font-semibold border border-white/[0.08]"
               >
                 <ArrowLeft size={16} />
                 <span className="hidden sm:inline">Back</span>
               </button>
               <div className="hidden md:flex items-center gap-2 text-sm">
-                <span className="text-gray-400 dark:text-gray-500 font-medium">Chapter {chapter.id}</span>
-                <span className="text-gray-300 dark:text-gray-700">/</span>
-                <span className="text-gray-900 dark:text-white font-bold max-w-[200px] truncate">{chapter.title}</span>
+                <span className="text-[#8e8e93] font-medium">Chapter {chapter.id}</span>
+                <span className="text-white/20">/</span>
+                <span className="text-white font-bold max-w-[200px] truncate">{chapter.title}</span>
               </div>
             </div>
 
@@ -435,7 +490,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
               <QuizTimer onTick={handleTick} />
               <button
                 onClick={() => setShowKeyboardHelper(true)}
-                className="hidden md:flex items-center gap-2 px-4 py-2 rounded-2xl border border-physiology/20 bg-physiology/5 text-physiology-dark hover:bg-physiology/10 transition-colors shadow-sm"
+                className="hidden md:flex items-center gap-2 px-4 py-2 rounded-2xl border border-white/[0.08] bg-white/[0.02] text-slate-300 hover:bg-white/[0.06] transition-colors"
                 title="Keyboard Shortcuts"
               >
                 <Keyboard size={16} />
@@ -446,11 +501,22 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
           </div>
         </div>
 
-        {/* Progress bar */}
-        <div className="h-1 bg-gray-100 dark:bg-gray-800 w-full relative">
-          <div
-            className={`h-full ${isSpecialQuestion ? 'bg-gradient-to-r from-pink-500 to-purple-600' : s.bg} transition-all duration-300 ease-out`}
-            style={{ width: `${progressPercent}%` }}
+        {/* Hairline progress bar (0.5px) */}
+        <div
+          style={{
+            position: "absolute",
+            bottom: 0,
+            left: 0,
+            right: 0,
+            height: "0.5px",
+            background: "rgba(255,255,255,0.10)",
+            zIndex: 50,
+          }}
+        >
+          <motion.div
+            animate={{ width: `${progressPercent}%` }}
+            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+            style={{ height: "100%", background: "#2dd4bf" }}
           />
         </div>
       </header>
@@ -460,10 +526,10 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
         <div className="flex flex-col xl:flex-row gap-4 sm:gap-8 items-start">
           
           {/* Main Card */}
-          <div style={{ viewTransitionName: 'quiz-content' }} className={`flex-1 w-full glass-panel rounded-[24px] sm:rounded-[32px] border p-5 sm:p-6 lg:p-8 transition-all duration-500 glow-border ${
+          <div style={{ viewTransitionName: 'quiz-content' }} className={`flex-1 w-full rounded-[24px] sm:rounded-[32px] p-5 sm:p-6 lg:p-8 transition-all duration-500 ${
             isSpecialQuestion
-              ? 'border-pink-300 dark:border-purple-800 shadow-[0_4px_30px_rgba(236,72,153,0.15)]'
-              : 'border-gray-100 dark:border-gray-800'
+              ? 'border border-pink-300 dark:border-purple-800 shadow-[0_4px_30px_rgba(236,72,153,0.15)] bg-gradient-to-br from-pink-100/30 via-purple-100/30 to-pink-50/20 dark:from-pink-950/20 dark:via-purple-950/20 dark:to-pink-950/10'
+              : 'quiz-glass-card'
           }`}>
             
             {/* Question Header */}
@@ -511,15 +577,19 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                     const isSelected = answers[currentIdx] === optIdx;
                     const isCorrectOpt = optIdx === current.correctIndex;
 
-                    let optClass = 'w-full text-left rounded-3xl px-5 sm:px-6 py-4 sm:py-5 border-2 transition-all flex items-center gap-4 sm:gap-5 cursor-pointer relative overflow-hidden option-btn ';
+                    let optClass = 'quiz-option-btn flex items-center gap-4 sm:gap-5 ';
                     if (!answered) {
-                      optClass += 'bg-white dark:bg-gray-900 border-gray-100 dark:border-gray-800 hover:border-gray-200 dark:hover:border-gray-700 shadow-sm';
+                      // Default state
                     } else if (isCorrectOpt) {
-                      optClass += 'border-success bg-success/[0.04] correct-glow shadow-[0_4px_20px_rgba(16,185,129,0.15)]';
+                      if (isSelected) {
+                        optClass += 'quiz-option-btn-correct';
+                      } else {
+                        optClass += 'quiz-option-btn-revealed quiz-option-btn-disabled';
+                      }
                     } else if (isSelected && !isCorrectOpt) {
-                      optClass += 'border-danger bg-danger/[0.03] wrong-shake shadow-[0_4px_20px_rgba(239,68,68,0.1)]';
+                      optClass += 'quiz-option-btn-incorrect wrong-shake';
                     } else {
-                      optClass += 'bg-gray-50/50 dark:bg-gray-900/50 border-gray-100 dark:border-gray-800 opacity-60 cursor-not-allowed';
+                      optClass += 'quiz-option-btn-disabled';
                     }
 
                     return (
@@ -530,25 +600,25 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                         className={optClass}
                       >
                         {answered && isCorrectOpt ? (
-                          <div className="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-[12px] sm:rounded-[14px] bg-success/10 border border-success/30 flex items-center justify-center">
-                            <Check size={18} className="text-success" />
+                          <div className="quiz-letter-badge border-[#2dd4bf] text-[#2dd4bf] bg-[#2dd4bf]/10">
+                            <Check size={14} className="text-[#2dd4bf]" />
                           </div>
                         ) : answered && isSelected && !isCorrectOpt ? (
-                          <div className="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-[12px] sm:rounded-[14px] bg-danger/10 border border-danger/25 flex items-center justify-center">
-                            <X size={18} className="text-danger" />
+                          <div className="quiz-letter-badge border-[#f87171] text-[#f87171] bg-[#f87171]/10">
+                            <X size={14} className="text-[#f87171]" />
                           </div>
                         ) : (
-                          <div className="flex-shrink-0 w-8 h-8 sm:w-10 sm:h-10 rounded-[12px] sm:rounded-[14px] bg-gray-50 dark:bg-gray-800 border border-gray-100 dark:border-gray-700 flex items-center justify-center font-archivo font-bold text-gray-400 dark:text-gray-500 shadow-sm text-sm sm:text-base">
+                          <div className="quiz-letter-badge">
                             {String.fromCharCode(65 + optIdx)}
                           </div>
                         )}
 
-                        <span className={`text-sm sm:text-base font-bold leading-relaxed flex-1 ${
+                        <span className={`text-sm sm:text-base font-semibold leading-relaxed flex-1 text-left ${
                           answered && isCorrectOpt
-                            ? 'text-success-dark'
+                            ? 'text-[#2dd4bf]'
                             : answered && isSelected && !isCorrectOpt
-                            ? 'text-danger-dark line-through decoration-danger/30'
-                            : 'text-gray-700 dark:text-gray-200'
+                            ? 'text-[#f87171] line-through decoration-[#f87171]/30'
+                            : 'text-gray-300'
                         }`}>
                           {option}
                         </span>

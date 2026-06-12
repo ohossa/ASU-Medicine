@@ -17,9 +17,9 @@ export interface QuizResult {
   total:               number;
   pct:                 number;
   elapsedSeconds:      number;
-  questionIds?:        number[];
-  answers?:            Record<number, unknown>;
-  flaggedQuestionIds?: number[];
+  questionIds?:        (string | number)[];
+  answers?:            Record<string | number, unknown>;
+  flaggedQuestionIds?: (string | number)[];
   moduleCode?:         string;
   year?:               number;
   semester?:           number;
@@ -67,19 +67,19 @@ export function clearQuizHistory(): void {
 
 const FLAGGED_KEY = 'asu_flagged_questions';
 
-export function getFlaggedQuestions(): number[] {
+export function getFlaggedQuestions(): (string | number)[] {
   try {
     const raw = localStorage.getItem(FLAGGED_KEY);
-    return raw ? (JSON.parse(raw) as number[]) : [];
+    return raw ? (JSON.parse(raw) as (string | number)[]) : [];
   } catch {
     return [];
   }
 }
 
-export function saveFlaggedQuestion(id: number): void {
+export function saveFlaggedQuestion(id: string | number): void {
   try {
     const current = getFlaggedQuestions();
-    if (!current.includes(id)) {
+    if (!current.some(x => String(x) === String(id))) {
       localStorage.setItem(FLAGGED_KEY, JSON.stringify([...current, id]));
       triggerCloudSync();
     }
@@ -88,10 +88,10 @@ export function saveFlaggedQuestion(id: number): void {
   }
 }
 
-export function removeFlaggedQuestion(id: number): void {
+export function removeFlaggedQuestion(id: string | number): void {
   try {
     const current = getFlaggedQuestions();
-    const updated = current.filter(x => x !== id);
+    const updated = current.filter(x => String(x) !== String(id));
     localStorage.setItem(FLAGGED_KEY, JSON.stringify(updated));
     triggerCloudSync();
   } catch (e) {
@@ -99,13 +99,13 @@ export function removeFlaggedQuestion(id: number): void {
   }
 }
 
-export function toggleFlaggedQuestion(id: number): boolean {
+export function toggleFlaggedQuestion(id: string | number): boolean {
   try {
     const current = getFlaggedQuestions();
-    let updated: number[];
+    let updated: (string | number)[];
     let isFlaggedNow = false;
-    if (current.includes(id)) {
-      updated = current.filter(x => x !== id);
+    if (current.some(x => String(x) === String(id))) {
+      updated = current.filter(x => String(x) !== String(id));
     } else {
       updated = [...current, id];
       isFlaggedNow = true;

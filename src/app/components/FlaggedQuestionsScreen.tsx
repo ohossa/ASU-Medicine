@@ -12,7 +12,7 @@ interface FlaggedQuestionsScreenProps {
 }
 
 interface FlaggedItem {
-  id: number;
+  id: string | number;
   question: Question;
   chapter: ChapterData;
   moduleCode: string;
@@ -22,8 +22,8 @@ interface FlaggedItem {
 export function FlaggedQuestionsScreen({ onBack, onPracticeQuiz, userButton }: FlaggedQuestionsScreenProps) {
   const { language, t } = useLanguage();
   const [flaggedItems, setFlaggedItems] = useState<FlaggedItem[]>([]);
-  const [revealedAnswers, setRevealedAnswers] = useState<Record<number, boolean>>({});
-  const [selectedMcqAnswers, setSelectedMcqAnswers] = useState<Record<number, number>>({});
+  const [revealedAnswers, setRevealedAnswers] = useState<Record<string | number, boolean>>({});
+  const [selectedMcqAnswers, setSelectedMcqAnswers] = useState<Record<string | number, number>>({});
 
   const loadFlaggedQuestions = () => {
     const ids = getFlaggedQuestions();
@@ -49,16 +49,16 @@ export function FlaggedQuestionsScreen({ onBack, onPracticeQuiz, userButton }: F
     return () => window.removeEventListener('storage', loadFlaggedQuestions);
   }, []);
 
-  const handleUnflag = (id: number) => {
+  const handleUnflag = (id: string | number) => {
     removeFlaggedQuestion(id);
-    setFlaggedItems((prev) => prev.filter((item) => item.id !== id));
+    setFlaggedItems((prev) => prev.filter((item) => String(item.id) !== String(id)));
   };
 
-  const toggleRevealAnswer = (id: number) => {
+  const toggleRevealAnswer = (id: string | number) => {
     setRevealedAnswers((prev) => ({ ...prev, [id]: !prev[id] }));
   };
 
-  const handleSelectMcq = (questionId: number, optionIdx: number) => {
+  const handleSelectMcq = (questionId: string | number, optionIdx: number) => {
     setSelectedMcqAnswers((prev) => ({ ...prev, [questionId]: optionIdx }));
   };
 
