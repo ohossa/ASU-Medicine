@@ -23,7 +23,9 @@ import {
   Globe,
   Check,
   Home,
-  Heart
+  Heart,
+  Search,
+  Calculator
 } from 'lucide-react';
 import type { ChapterData, SubjectData, Question, Screen, SubjectColor } from './types';
 const ChapterSelect = lazy(() => import('./components/ChapterSelect').then(m => ({ default: m.ChapterSelect })));
@@ -35,6 +37,7 @@ const FlaggedQuestionsScreen = lazy(() => import('./components/FlaggedQuestionsS
 const AnalyticsDashboard = lazy(() => import('./components/AnalyticsDashboard').then(m => ({ default: m.AnalyticsDashboard })));
 const ClinicalCaseSolver = lazy(() => import('./components/ClinicalCaseSolver').then(m => ({ default: m.ClinicalCaseSolver })));
 const QuestionSearch = lazy(() => import('./components/QuestionSearch').then(m => ({ default: m.QuestionSearch })));
+const MarksCalculator = lazy(() => import('./components/MarksCalculator').then(m => ({ default: m.MarksCalculator })));
 import { SyllabusTracker } from './components/SyllabusTracker';
 import { ThemeProvider, useTheme } from './context/ThemeContext';
 import { ThemeToggle } from './components/ThemeToggle';
@@ -1209,7 +1212,7 @@ function MainApp() {
                   <h3 className="font-archivo text-2xl font-black tracking-tight">Tools</h3>
                 </div>
               </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
                 
                 {/* History Button */}
                 <button
@@ -1242,50 +1245,39 @@ function MainApp() {
                   </div>
                 </button>
 
+                {/* Marks Calculator */}
+                <button
+                  onClick={() => transitionTo(() => setScreen('marksCalculator'))}
+                  className="portal-card text-left bg-white dark:bg-gray-900 rounded-3xl p-6 flex items-center gap-5 border border-gray-100 dark:border-gray-800 hover:border-clinical/30 hover:shadow-md transition-all group w-full"
+                >
+                  <div className="w-12 h-12 rounded-xl bg-clinical/10 flex items-center justify-center text-clinical group-hover:scale-110 transition-transform">
+                    <Calculator size={24} />
+                  </div>
+                  <div>
+                    <h4 className="font-archivo font-bold text-gray-900 dark:text-white flex items-center gap-2">
+                      Marks Calculator
+                      <span className="text-[9px] px-2 py-0.5 rounded-full bg-clinical/15 text-clinical uppercase tracking-wider font-bold">Predictor</span>
+                    </h4>
+                    <p className="text-xs text-gray-500 font-medium mt-1">Calculate requirements and target scores</p>
+                  </div>
+                </button>
+
                 {/* Question Search */}
                 <button
-                  onClick={() => transitionTo(() => setScreen('search'))}
-                  className="portal-card text-left bg-white dark:bg-gray-900 rounded-3xl p-6 flex items-center gap-5 border border-gray-100 dark:border-gray-800 hover:border-teal-500/30 hover:shadow-md transition-all group w-full"
+                  onClick={() => transitionTo(() => setScreen('questionSearch'))}
+                  className="portal-card text-left bg-white dark:bg-gray-900 rounded-3xl p-6 flex items-center gap-5 border border-gray-100 dark:border-gray-800 hover:border-[#2dd4bf]/30 hover:shadow-md transition-all group w-full"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-teal-500/10 flex items-center justify-center text-teal-500 group-hover:scale-110 transition-transform">
+                  <div className="w-12 h-12 rounded-xl bg-[#2dd4bf]/10 flex items-center justify-center text-[#2dd4bf] group-hover:scale-110 transition-transform">
                     <Search size={24} />
                   </div>
                   <div>
                     <h4 className="font-archivo font-bold text-gray-900 dark:text-white flex items-center gap-2">
                       Question Search
-                      <span className="text-[9px] px-2 py-0.5 rounded-full bg-teal-500/15 text-teal-400 uppercase tracking-wider font-bold">New Tool</span>
+                      <span className="text-[9px] px-2 py-0.5 rounded-full bg-[#2dd4bf]/15 text-[#2dd4bf] uppercase tracking-wider font-bold">Search</span>
                     </h4>
-                    <p className="text-xs text-gray-500 font-medium mt-1">Search the entire question bank by keyword</p>
+                    <p className="text-xs text-gray-500 font-medium mt-1">Search text in all database questions and answers</p>
                   </div>
                 </button>
-
-                {/* Marks Calculator */}
-                <div className="portal-card text-left bg-gray-50/50 dark:bg-gray-900/50 rounded-3xl p-6 flex items-center gap-5 border border-gray-100 dark:border-gray-800 opacity-80 relative overflow-hidden cursor-not-allowed">
-                  <div className="w-12 h-12 rounded-xl bg-clinical/10 flex items-center justify-center text-clinical">
-                    <Award size={24} />
-                  </div>
-                  <div>
-                    <h4 className="font-archivo font-bold text-gray-900 dark:text-white flex items-center gap-2">
-                      Marks Calculator
-                      <span className="text-[9px] px-2 py-0.5 rounded-full bg-clinical/10 text-clinical uppercase tracking-wider font-bold">Coming Soon</span>
-                    </h4>
-                    <p className="text-xs text-gray-500 font-medium mt-1">Calculate requirements and target scores</p>
-                  </div>
-                </div>
-
-                {/* Anki Integration */}
-                <div className="portal-card text-left bg-gray-50/50 dark:bg-gray-900/50 rounded-3xl p-6 flex items-center gap-5 border border-gray-100 dark:border-gray-800 opacity-80 relative overflow-hidden cursor-not-allowed">
-                  <div className="w-12 h-12 rounded-xl bg-anatomy/10 flex items-center justify-center text-anatomy">
-                    <Layers size={24} />
-                  </div>
-                  <div>
-                    <h4 className="font-archivo font-bold text-gray-900 dark:text-white flex items-center gap-2">
-                      Anki Integration
-                      <span className="text-[9px] px-2 py-0.5 rounded-full bg-anatomy/10 text-anatomy uppercase tracking-wider font-bold">Coming Soon</span>
-                    </h4>
-                    <p className="text-xs text-gray-500 font-medium mt-1">Guides and .apkg downloads for modules</p>
-                  </div>
-                </div>
 
               </div>
             </div>
@@ -1819,10 +1811,19 @@ function MainApp() {
           </Suspense>
         )}
 
-        {/* SCREEN 13: QUESTION DATABASE SEARCH */}
-        {screen === 'search' && (
+        {/* SCREEN 13: QUESTION SEARCH */}
+        {screen === 'questionSearch' && (
           <Suspense fallback={<div>Loading...</div>}>
             <QuestionSearch
+              onBack={() => navigateTo('yearSelect')}
+            />
+          </Suspense>
+        )}
+
+        {/* SCREEN 14: MARKS CALCULATOR */}
+        {screen === 'marksCalculator' && (
+          <Suspense fallback={<div>Loading...</div>}>
+            <MarksCalculator
               onBack={() => navigateTo('yearSelect')}
             />
           </Suspense>

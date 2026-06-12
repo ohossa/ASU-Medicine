@@ -21,7 +21,8 @@ export type Screen =
   | 'flaggedQuestions'
   | 'analytics'
   | 'caseSolver'
-  | 'search';
+  | 'questionSearch'
+  | 'marksCalculator';
 
 export interface SubQuestion {
   id: string;

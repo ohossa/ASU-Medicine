@@ -1,12 +1,12 @@
 // src/app/components/QuestionSearch.tsx
 // ASU Medical Portal — Ain Shams University
-// Interactive question database search engine (Apple Dark Mode).
+// Search engine across all database questions and answers.
 
 import React, { useState, useMemo, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Search, ArrowLeft, BookOpen, Flag, FileText, Check, X, ShieldAlert,
-  SlidersHorizontal, LayoutGrid, HelpCircle, CornerDownRight
+  CornerDownRight, LayoutGrid, HelpCircle
 } from "lucide-react";
 import { SYLLABUS_MODULES, getChaptersForModuleAndMode, isModuleActive } from "../data";
 import { toggleFlaggedQuestion, getFlaggedQuestions } from "../utils/storage";
@@ -113,7 +113,7 @@ const hairline = "1px solid rgba(255,255,255,0.08)";
 /* Component                                                           */
 /* ------------------------------------------------------------------ */
 
-export const QuestionSearch: React.FC<QuestionSearchProps> = ({ onBack }) => {
+export function QuestionSearch({ onBack }: QuestionSearchProps) {
   const [query, setQuery] = useState("");
   const [moduleFilter, setModuleFilter] = useState<string>("all");
   const [flaggedOnly, setFlaggedOnly] = useState(false);
@@ -121,7 +121,7 @@ export const QuestionSearch: React.FC<QuestionSearchProps> = ({ onBack }) => {
   const [expandedId, setExpandedId] = useState<string | number | null>(null);
   const [revealed, setRevealed] = useState<Set<string | number>>(new Set());
   const [flagged, setFlagged] = useState<Set<string>>(
-    () => new Set(getFlaggedQuestions())
+    () => new Set(getFlaggedQuestions().map(String))
   );
 
   const allEntries = useMemo(getSearchableQuestions, []);
@@ -224,7 +224,7 @@ export const QuestionSearch: React.FC<QuestionSearchProps> = ({ onBack }) => {
               background: showFilters ? "rgba(255,255,255,0.1)" : "transparent",
             }}
           >
-            <SlidersHorizontal size={15} />
+            <Search size={15} />
             {activeFilterCount > 0 && (
               <span className="absolute -right-0.5 -top-0.5 flex h-4 w-4 items-center justify-center rounded-full bg-blue-500 text-[10px] font-semibold text-white">
                 {activeFilterCount}
@@ -437,7 +437,7 @@ export const QuestionSearch: React.FC<QuestionSearchProps> = ({ onBack }) => {
       </main>
     </div>
   );
-};
+}
 
 /* ------------------------------------------------------------------ */
 /* Sub-components                                                      */
