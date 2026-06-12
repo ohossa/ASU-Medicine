@@ -10,7 +10,11 @@ import {
   Trash2,
   CheckCircle2,
   AlertTriangle,
+  ChevronRight,
+  Sparkles,
+  Settings,
 } from "lucide-react";
+import { SYLLABUS_MODULES } from "../data";
 
 /* ---------------------------------- Types --------------------------------- */
 
@@ -41,11 +45,11 @@ type GradeStatus =
   | { kind: "out-of-reach" }
   | { kind: "possible"; marksNeeded: number; pctNeeded: number };
 
-/* --------------------------------- Presets -------------------------------- */
+/* ----------------------------- Year 2 Presets ----------------------------- */
 
-const PRESETS: ModulePreset[] = [
-  {
-    id: "cns",
+const OFFICIAL_PRESETS: Record<string, ModulePreset> = {
+  "MCNS-2": {
+    id: "MCNS-2",
     name: "CNS Module",
     sections: [
       { id: "cns-ca", name: "Continuous Assessment", max: 66 },
@@ -55,8 +59,8 @@ const PRESETS: ModulePreset[] = [
     ],
     boundaries: { A: 221, B: 195, C: 169, D: 156 },
   },
-  {
-    id: "senses",
+  "MSS-2": {
+    id: "MSS-2",
     name: "Special Senses",
     sections: [
       { id: "ss-ca", name: "Continuous Assessment & Activities", max: 24 },
@@ -65,8 +69,8 @@ const PRESETS: ModulePreset[] = [
     ],
     boundaries: { A: 68, B: 60, C: 52, D: 48 },
   },
-  {
-    id: "endocrine",
+  "MEM-2": {
+    id: "MEM-2",
     name: "Endocrine & Metabolism",
     sections: [
       { id: "em-ca", name: "Continuous Assessment & Activities", max: 33 },
@@ -75,8 +79,8 @@ const PRESETS: ModulePreset[] = [
     ],
     boundaries: { A: 94, B: 83, C: 72, D: 66 },
   },
-  {
-    id: "research",
+  "R-2": {
+    id: "R-2",
     name: "Fundamentals of Research",
     sections: [
       { id: "fr-mcq", name: "MCQ Quiz", max: 10 },
@@ -86,8 +90,8 @@ const PRESETS: ModulePreset[] = [
     ],
     boundaries: { A: 51, B: 45, C: 39, D: 36 },
   },
-  {
-    id: "behavioral",
+  "P3-2": {
+    id: "P3-2",
     name: "Behavioral Sciences",
     sections: [
       { id: "bs-ca", name: "Continuous Assessment", max: 10 },
@@ -95,7 +99,7 @@ const PRESETS: ModulePreset[] = [
     ],
     boundaries: { A: 26, B: 23, C: 20, D: 18 },
   },
-];
+};
 
 const CUSTOM_ID = "custom";
 const GRADES: GradeKey[] = ["A", "B", "C", "D"];
@@ -123,6 +127,38 @@ function parseScore(raw: string): number | null {
   if (raw.trim() === "") return null;
   const n = Number(raw);
   return Number.isFinite(n) ? n : null;
+}
+
+function getModulePreset(code: string, name: string, total: number): ModulePreset {
+  // If we have an official Year 2 Semester 2 preset:
+  if (OFFICIAL_PRESETS[code]) {
+    return OFFICIAL_PRESETS[code];
+  }
+
+  // Otherwise, dynamically generate standard sections:
+  const sections: Section[] = [];
+  const ca = Math.round(total * 0.3);
+  sections.push({ id: `${code}-ca`, name: "Continuous Assessment", max: ca });
+
+  if (total > 30) {
+    const prac = Math.round(total * 0.3);
+    sections.push({ id: `${code}-prac`, name: "Practical / Midterm Exam", max: prac });
+    sections.push({ id: `${code}-final`, name: "Final Exam", max: total - ca - prac });
+  } else {
+    sections.push({ id: `${code}-final`, name: "Final Exam", max: total - ca });
+  }
+
+  return {
+    id: code,
+    name: name,
+    sections,
+    boundaries: {
+      A: Math.ceil(total * CUSTOM_PCTS.A),
+      B: Math.ceil(total * CUSTOM_PCTS.B),
+      C: Math.ceil(total * CUSTOM_PCTS.C),
+      D: Math.ceil(total * CUSTOM_PCTS.D),
+    },
+  };
 }
 
 /* ----------------------------- Sub-components ----------------------------- */
@@ -194,21 +230,37 @@ function ProgressRing({ pct, label }: { pct: number; label: string }) {
 /* ------------------------------ Main component ----------------------------- */
 
 export function MarksCalculator({ onBack }: { onBack: () => void }) {
-  const [activeModuleId, setActiveModuleId] = useState<string>(PRESETS[0].id);
+  // Navigation & Selection state
+  const [selectedPreset, setSelectedPreset] = useState<ModulePreset | null>(null);
+  const [selectedYearTab, setSelectedYearTab] = useState<number>(2); // Default to Year 2
+  const [selectedSemesterTab, setSelectedSemesterTab] = useState<number>(2); // Default to Sem 2
+
+  // Scores inputs mapping
   const [scores, setScores] = useState<Record<string, string>>({});
 
-  // Custom module state
+  // Custom module builder state
   const [customName, setCustomName] = useState("My Custom Module");
   const [customSections, setCustomSections] = useState<CustomSection[]>([
     { id: nextId(), name: "Continuous Assessment", max: "40" },
     { id: nextId(), name: "Final Exam", max: "60" },
   ]);
 
-  const isCustom = activeModuleId === CUSTOM_ID;
+  const isCustom = selectedPreset?.id === CUSTOM_ID;
 
-  /* Resolve the active module (preset or custom-built) */
+  /* Resolve the active module details */
   const activeModule: ModulePreset = useMemo(() => {
-    if (!isCustom) return PRESETS.find((p) => p.id === activeModuleId)!;
+    if (!selectedPreset) {
+      return {
+        id: "",
+        name: "",
+        sections: [],
+        boundaries: { A: 0, B: 0, C: 0, D: 0 },
+      };
+    }
+
+    if (selectedPreset.id !== CUSTOM_ID) {
+      return selectedPreset;
+    }
 
     const sections: Section[] = customSections
       .map((s) => ({ id: s.id, name: s.name.trim() || "Untitled Section", max: Number(s.max) }))
@@ -226,14 +278,14 @@ export function MarksCalculator({ onBack }: { onBack: () => void }) {
         D: Math.ceil(total * CUSTOM_PCTS.D),
       },
     };
-  }, [isCustom, activeModuleId, customSections, customName]);
+  }, [selectedPreset, customSections, customName]);
 
   const total = useMemo(
     () => activeModule.sections.reduce((sum, s) => sum + s.max, 0),
     [activeModule],
   );
 
-  /* Core calculation */
+  /* Core calculator predictions logic */
   const calc = useMemo(() => {
     let entered = 0;
     let remainingMax = 0;
@@ -279,9 +331,9 @@ export function MarksCalculator({ onBack }: { onBack: () => void }) {
   }, [activeModule, scores]);
 
   /* Handlers */
-  const selectModule = (id: string) => {
-    setActiveModuleId(id);
+  const selectModulePreset = (preset: ModulePreset) => {
     setScores({});
+    setSelectedPreset(preset);
   };
 
   const resetScores = () => setScores({});
@@ -301,276 +353,434 @@ export function MarksCalculator({ onBack }: { onBack: () => void }) {
   const updateCustomSection = (id: string, patch: Partial<CustomSection>) =>
     setCustomSections((prev) => prev.map((s) => (s.id === id ? { ...s, ...patch } : s)));
 
+  const handleCustomize = () => {
+    if (!selectedPreset) return;
+    setCustomName(selectedPreset.name);
+    setCustomSections(
+      selectedPreset.sections.map((s) => ({
+        id: s.id,
+        name: s.name,
+        max: String(s.max),
+      }))
+    );
+    // Switch to custom preset mode
+    setSelectedPreset({
+      id: CUSTOM_ID,
+      name: selectedPreset.name,
+      sections: selectedPreset.sections,
+      boundaries: selectedPreset.boundaries,
+    });
+  };
+
   const pctAchieved = total > 0 ? (calc.entered / total) * 100 : 0;
 
   /* ---------------------------------- Render --------------------------------- */
 
   return (
     <div className="min-h-screen bg-[#0b0b0c] text-white antialiased selection:bg-sky-500/30">
-      {/* Ambient glow */}
+      {/* Ambient glow background */}
       <div className="pointer-events-none fixed inset-0 overflow-hidden">
         <div className="absolute -top-40 left-1/4 h-96 w-96 rounded-full bg-sky-500/10 blur-[120px]" />
         <div className="absolute bottom-0 right-1/4 h-96 w-96 rounded-full bg-emerald-500/10 blur-[120px]" />
       </div>
 
       <div className="relative mx-auto max-w-6xl px-4 py-8 sm:px-6 lg:px-8">
-        {/* Header */}
-        <header className="mb-8 flex items-center justify-between gap-4">
-          <div className="flex items-center gap-4">
-            <button
-              onClick={onBack}
-              aria-label="Go back"
-              className="flex h-10 w-10 items-center justify-center rounded-full border border-white/[0.08] bg-white/[0.04] backdrop-blur-xl transition-colors hover:bg-white/[0.08]"
-            >
-              <ArrowLeft size={18} className="text-white/70" />
-            </button>
-            <div>
-              <h1 className="flex items-center gap-2 text-xl font-semibold tracking-tight sm:text-2xl">
-                <Calculator size={22} className="text-sky-400" />
-                Marks Calculator
-              </h1>
-              <p className="text-sm text-white/40">ASU · Year 2 · Semester 2</p>
-            </div>
-          </div>
-          <button
-            onClick={resetScores}
-            className="flex items-center gap-2 rounded-full border border-white/[0.08] bg-white/[0.04] px-4 py-2 text-sm text-white/70 backdrop-blur-xl transition-colors hover:bg-white/[0.08]"
-          >
-            <RefreshCw size={14} />
-            Reset
-          </button>
-        </header>
-
-        <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
-          {/* ------------------------------ LEFT: Inputs ------------------------------ */}
-          <GlassCard className="p-5 sm:p-6">
-            {/* Module tabs */}
-            <div className="mb-6 flex flex-wrap gap-2">
-              {[...PRESETS, { id: CUSTOM_ID, name: "Custom" } as ModulePreset].map((m) => (
-                <button
-                  key={m.id}
-                  onClick={() => selectModule(m.id)}
-                  className={`rounded-full px-3.5 py-1.5 text-xs font-medium transition-all duration-200 ${
-                    activeModuleId === m.id
-                      ? "bg-white text-black shadow-lg"
-                      : "border border-white/[0.08] bg-white/[0.03] text-white/60 hover:bg-white/[0.08]"
-                  }`}
-                >
-                  {m.name}
-                </button>
-              ))}
-            </div>
-
-            {/* Custom builder */}
-            <AnimatePresence initial={false}>
-              {isCustom && (
-                <motion.div
-                  initial={{ opacity: 0, height: 0 }}
-                  animate={{ opacity: 1, height: "auto" }}
-                  exit={{ opacity: 0, height: 0 }}
-                  className="overflow-hidden"
-                >
-                  <div className="mb-5 space-y-3 rounded-xl border border-white/[0.06] bg-white/[0.02] p-4">
-                    <input
-                      value={customName}
-                      onChange={(e) => setCustomName(e.target.value)}
-                      placeholder="Module name"
-                      className="w-full rounded-lg border border-white/[0.08] bg-black/30 px-3 py-2 text-sm placeholder-white/25 outline-none transition-colors focus:border-sky-400/50"
-                    />
-                    {customSections.map((s) => (
-                      <div key={s.id} className="flex items-center gap-2">
-                        <input
-                          value={s.name}
-                          onChange={(e) => updateCustomSection(s.id, { name: e.target.value })}
-                          placeholder="Section name"
-                          className="min-w-0 flex-1 rounded-lg border border-white/[0.08] bg-black/30 px-3 py-2 text-sm placeholder-white/25 outline-none focus:border-sky-400/50"
-                        />
-                        <input
-                          value={s.max}
-                          onChange={(e) => updateCustomSection(s.id, { max: e.target.value })}
-                          placeholder="Max"
-                          inputMode="decimal"
-                          className="w-20 rounded-lg border border-white/[0.08] bg-black/30 px-3 py-2 text-sm placeholder-white/25 outline-none focus:border-sky-400/50"
-                        />
-                        <button
-                          onClick={() => removeCustomSection(s.id)}
-                          aria-label="Remove section"
-                          className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-white/[0.06] text-white/40 transition-colors hover:bg-rose-500/10 hover:text-rose-400"
-                        >
-                          <Trash2 size={15} />
-                        </button>
-                      </div>
-                    ))}
-                    <button
-                      onClick={addCustomSection}
-                      className="flex items-center gap-1.5 text-sm text-sky-400 transition-colors hover:text-sky-300"
-                    >
-                      <Plus size={15} /> Add section
-                    </button>
-                    <p className="text-xs text-white/35">
-                      Module total: <span className="font-medium text-white/70 tabular-nums">{total}</span> marks ·
-                      Boundaries auto-set at A ≥85%, B ≥75%, C ≥65%, D ≥60%
-                    </p>
-                  </div>
-                </motion.div>
-              )}
-            </AnimatePresence>
-
-            {/* Section score inputs */}
-            <div className="space-y-3">
-              <div className="flex items-center justify-between">
-                <h2 className="text-sm font-medium text-white/80">{activeModule.name}</h2>
-                <span className="text-xs text-white/35 tabular-nums">Total: {total} marks</span>
+        
+        {/* VIEW 1: Selection Dashboard */}
+        {!selectedPreset ? (
+          <div>
+            {/* Header */}
+            <header className="mb-10 flex items-center gap-4">
+              <button
+                onClick={onBack}
+                aria-label="Go back to dashboard"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-white/[0.08] bg-white/[0.04] backdrop-blur-xl transition-colors hover:bg-white/[0.08]"
+              >
+                <ArrowLeft size={18} className="text-white/70" />
+              </button>
+              <div>
+                <h1 className="text-xl font-bold tracking-tight">ASU Tools</h1>
+                <p className="text-xs text-white/40">Home · Marks Calculator</p>
               </div>
+            </header>
 
-              {activeModule.sections.length === 0 && (
-                <p className="flex items-center gap-2 text-sm text-white/40">
-                  <HelpCircle size={15} /> Add at least one section with a max score.
-                </p>
-              )}
+            {/* Selection Title */}
+            <div className="text-center max-w-2xl mx-auto mb-12 space-y-3">
+              <div className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-sky-500/10 text-sky-400">
+                <Calculator size={28} />
+              </div>
+              <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl bg-gradient-to-r from-white via-white to-white/60 bg-clip-text text-transparent">
+                Marks Calculator & Predictor
+              </h2>
+              <p className="text-sm text-white/50 leading-relaxed">
+                Choose a module from the official curriculum below to estimate target exam marks required for your desired grade, or construct a custom module.
+              </p>
+            </div>
 
-              {activeModule.sections.map((s) => {
-                const error = calc.errors[s.id];
-                return (
-                  <motion.div
-                    key={s.id}
-                    layout
-                    initial={{ opacity: 0, y: 6 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    className="rounded-xl border border-white/[0.06] bg-white/[0.02] p-3.5"
+            {/* Year Selector Tabs */}
+            <div className="flex justify-center border-b border-white/[0.06] mb-8">
+              <div className="flex gap-2 p-1 overflow-x-auto pb-2">
+                {[1, 2, 3, 4, 5].map((y) => (
+                  <button
+                    key={y}
+                    onClick={() => setSelectedYearTab(y)}
+                    className={`px-5 py-2.5 rounded-xl text-sm font-medium transition-all ${
+                      selectedYearTab === y
+                        ? "bg-white text-black shadow-lg"
+                        : "text-white/60 hover:bg-white/[0.04] hover:text-white"
+                    }`}
                   >
-                    <div className="flex items-center justify-between gap-3">
-                      <label htmlFor={`score-${s.id}`} className="min-w-0 flex-1 truncate text-sm text-white/70">
-                        {s.name}
-                      </label>
-                      <div className="flex items-center gap-1.5">
-                        <input
-                          id={`score-${s.id}`}
-                          value={scores[s.id] ?? ""}
-                          onChange={(e) => setScores((p) => ({ ...p, [s.id]: e.target.value }))}
-                          placeholder="—"
-                          inputMode="decimal"
-                          className={`w-20 rounded-lg border bg-black/30 px-3 py-2 text-right text-sm tabular-nums placeholder-white/25 outline-none transition-colors ${
-                            error
-                              ? "border-rose-500/50 focus:border-rose-400"
-                              : "border-white/[0.08] focus:border-sky-400/50"
-                          }`}
-                        />
-                        <span className="w-12 text-xs text-white/35 tabular-nums">/ {s.max}</span>
+                    Year {y}
+                  </button>
+                ))}
+                <button
+                  onClick={() => {
+                    setCustomName("My Custom Module");
+                    setCustomSections([
+                      { id: nextId(), name: "Continuous Assessment", max: "40" },
+                      { id: nextId(), name: "Final Exam", max: "60" },
+                    ]);
+                    setSelectedPreset({
+                      id: CUSTOM_ID,
+                      name: "My Custom Module",
+                      sections: [
+                        { id: "ca", name: "Continuous Assessment", max: 40 },
+                        { id: "final", name: "Final Exam", max: 60 },
+                      ],
+                      boundaries: { A: 85, B: 75, C: 65, D: 60 },
+                    });
+                  }}
+                  className="px-5 py-2.5 rounded-xl text-sm font-medium text-sky-400 border border-sky-500/20 bg-sky-500/5 hover:bg-sky-500/10 transition-all flex items-center gap-1.5"
+                >
+                  <Plus size={15} /> Custom Module
+                </button>
+              </div>
+            </div>
+
+            {/* Semester Selector Toggle */}
+            <div className="flex justify-center mb-8">
+              <div className="inline-flex rounded-full bg-white/[0.03] border border-white/[0.06] p-1">
+                {[1, 2].map((s) => (
+                  <button
+                    key={s}
+                    onClick={() => setSelectedSemesterTab(s)}
+                    className={`rounded-full px-6 py-1.5 text-xs font-semibold uppercase tracking-wider transition-all ${
+                      selectedSemesterTab === s
+                        ? "bg-white/15 text-white shadow-md border border-white/10"
+                        : "text-white/40 hover:text-white/70"
+                    }`}
+                  >
+                    Semester {s}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* Modules Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
+              {(SYLLABUS_MODULES[selectedYearTab]?.[selectedSemesterTab] || []).map((m) => {
+                const isOfficialPreset = !!OFFICIAL_PRESETS[m.code];
+                return (
+                  <button
+                    key={m.code}
+                    onClick={() => selectModulePreset(getModulePreset(m.code, m.name, m.marks))}
+                    className="portal-card text-left bg-white/[0.02] hover:bg-white/[0.05] rounded-2xl p-5 border border-white/[0.06] hover:border-white/[0.12] transition-all flex justify-between items-center group"
+                  >
+                    <div className="space-y-1.5">
+                      <div className="flex items-center gap-2 flex-wrap">
+                        <span className="text-[11px] font-semibold tracking-wider uppercase text-sky-400 bg-sky-400/10 px-2 py-0.5 rounded">
+                          {m.code}
+                        </span>
+                        {isOfficialPreset ? (
+                          <span className="text-[10px] font-bold text-emerald-400 bg-emerald-500/[0.08] px-2 py-0.5 rounded flex items-center gap-1">
+                            <Sparkles size={10} /> Detailed Preset
+                          </span>
+                        ) : (
+                          <span className="text-[10px] font-medium text-white/40 bg-white/[0.05] px-2 py-0.5 rounded">
+                            Standard Predictor
+                          </span>
+                        )}
                       </div>
+                      <h3 className="font-archivo text-base font-bold text-white group-hover:text-sky-300 transition-colors line-clamp-1">
+                        {m.name}
+                      </h3>
+                      <p className="text-xs text-white/40 font-medium">
+                        {m.cp} CP · {m.marks} Marks total
+                      </p>
                     </div>
-                    <AnimatePresence>
-                      {error && (
-                        <motion.p
-                          initial={{ opacity: 0, height: 0 }}
-                          animate={{ opacity: 1, height: "auto" }}
-                          exit={{ opacity: 0, height: 0 }}
-                          className="mt-1.5 flex items-center gap-1 text-xs text-rose-400"
-                        >
-                          <AlertTriangle size={12} /> {error}
-                        </motion.p>
-                      )}
-                    </AnimatePresence>
-                  </motion.div>
+                    <ChevronRight
+                      size={18}
+                      className="text-white/30 group-hover:text-white/60 group-hover:translate-x-1 transition-all shrink-0"
+                    />
+                  </button>
                 );
               })}
+              {(SYLLABUS_MODULES[selectedYearTab]?.[selectedSemesterTab] || []).length === 0 && (
+                <div className="col-span-full py-16 text-center text-white/30 text-sm">
+                  No modules configured for this semester yet.
+                </div>
+              )}
             </div>
-          </GlassCard>
-
-          {/* ------------------------------ RIGHT: Results ----------------------------- */}
-          <div className="space-y-6">
-            {/* Progress ring */}
-            <GlassCard className="flex flex-col items-center gap-4 p-6 sm:flex-row sm:justify-around">
-              <ProgressRing pct={pctAchieved} label="Achieved" />
-              <div className="space-y-2 text-center sm:text-left">
-                <p className="text-sm text-white/40">Marks entered</p>
-                <p className="text-2xl font-semibold tabular-nums">
-                  {calc.entered}
-                  <span className="text-base font-normal text-white/35"> / {total}</span>
-                </p>
-                <p className="text-xs text-white/40 tabular-nums">
-                  {calc.remainingMax} marks still on the table
-                </p>
+          </div>
+        ) : (
+          
+          /* VIEW 2: Calculator Screen */
+          <div>
+            {/* Header */}
+            <header className="mb-8 flex items-center justify-between gap-4">
+              <div className="flex items-center gap-4">
+                <button
+                  onClick={() => setSelectedPreset(null)}
+                  aria-label="Go back to selection screen"
+                  className="flex h-10 w-10 items-center justify-center rounded-full border border-white/[0.08] bg-white/[0.04] backdrop-blur-xl transition-colors hover:bg-white/[0.08]"
+                >
+                  <ArrowLeft size={18} className="text-white/70" />
+                </button>
+                <div>
+                  <h1 className="flex items-center gap-2 text-xl font-semibold tracking-tight sm:text-2xl">
+                    <Calculator size={22} className="text-sky-400" />
+                    Marks Calculator
+                  </h1>
+                  <p className="text-sm text-white/40">
+                    {isCustom ? "Custom Builder" : `ASU · Year ${selectedYearTab} · Semester ${selectedSemesterTab}`}
+                  </p>
+                </div>
               </div>
-            </GlassCard>
+              <button
+                onClick={resetScores}
+                className="flex items-center gap-2 rounded-full border border-white/[0.08] bg-white/[0.04] px-4 py-2 text-sm text-white/70 backdrop-blur-xl transition-colors hover:bg-white/[0.08]"
+              >
+                <RefreshCw size={14} />
+                Reset
+              </button>
+            </header>
 
-            {/* Worst / Best case */}
-            <div className="grid grid-cols-2 gap-4">
-              {(
-                [
-                  { label: "Guaranteed Minimum", grade: calc.guaranteed, hint: "If you score 0 on remaining" },
-                  { label: "Maximum Potential", grade: calc.potential, hint: "If you ace everything left" },
-                ] as const
-              ).map(({ label, grade, hint }) => (
-                <GlassCard key={label} className="p-4 text-center">
-                  <p className="text-[11px] uppercase tracking-widest text-white/40">{label}</p>
-                  <motion.p
-                    key={`${label}-${grade}`}
-                    initial={{ scale: 0.8, opacity: 0 }}
-                    animate={{ scale: 1, opacity: 1 }}
-                    className={`my-2 text-4xl font-bold ${GRADE_COLORS[grade]}`}
-                  >
-                    {grade}
-                  </motion.p>
-                  <p className="text-[11px] text-white/35">{hint}</p>
-                </GlassCard>
-              ))}
-            </div>
-
-            {/* Target grade cards */}
-            <GlassCard className="p-5">
-              <h2 className="mb-4 flex items-center gap-2 text-sm font-medium text-white/80">
-                <Award size={16} className="text-amber-400" /> Target Grades
-              </h2>
-              <div className="space-y-3">
-                {GRADES.map((g) => {
-                  const status = calc.gradeStatuses[g];
-                  const min = activeModule.boundaries[g];
-                  return (
+            <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
+              {/* ------------------------------ LEFT: Inputs ------------------------------ */}
+              <GlassCard className="p-5 sm:p-6">
+                
+                {/* Custom builder UI */}
+                <AnimatePresence initial={false}>
+                  {isCustom && (
                     <motion.div
-                      key={g}
-                      layout
-                      className={`flex items-center justify-between gap-3 rounded-xl border p-3.5 ${
-                        status.kind === "achieved"
-                          ? "border-emerald-500/25 bg-emerald-500/[0.06]"
-                          : status.kind === "out-of-reach"
-                            ? "border-rose-500/20 bg-rose-500/[0.04] opacity-60"
-                            : "border-amber-500/20 bg-amber-500/[0.04]"
-                      }`}
+                      initial={{ opacity: 0, height: 0 }}
+                      animate={{ opacity: 1, height: "auto" }}
+                      exit={{ opacity: 0, height: 0 }}
+                      className="overflow-hidden"
                     >
-                      <div className="flex items-center gap-3">
-                        <span className={`text-xl font-bold ${GRADE_COLORS[g]}`}>{g}</span>
-                        <span className="text-xs text-white/40 tabular-nums">≥ {min} marks</span>
-                      </div>
-                      <div className="text-right">
-                        {status.kind === "achieved" && (
-                          <span className="flex items-center gap-1.5 text-sm font-medium text-emerald-400">
-                            <CheckCircle2 size={15} /> Achieved
-                          </span>
-                        )}
-                        {status.kind === "out-of-reach" && (
-                          <span className="flex items-center gap-1.5 text-sm font-medium text-rose-400">
-                            <AlertTriangle size={15} /> Out of Reach
-                          </span>
-                        )}
-                        {status.kind === "possible" && (
-                          <div className="text-sm">
-                            <span className="font-medium text-amber-400 tabular-nums">
-                              +{status.marksNeeded} marks needed
-                            </span>
-                            <p className="text-xs text-white/40 tabular-nums">
-                              Need {status.pctNeeded.toFixed(0)}% on remaining
-                            </p>
+                      <div className="mb-5 space-y-3 rounded-xl border border-white/[0.06] bg-white/[0.02] p-4">
+                        <input
+                          value={customName}
+                          onChange={(e) => setCustomName(e.target.value)}
+                          placeholder="Module name"
+                          className="w-full rounded-lg border border-white/[0.08] bg-black/30 px-3 py-2 text-sm placeholder-white/25 outline-none transition-colors focus:border-sky-400/50"
+                        />
+                        {customSections.map((s) => (
+                          <div key={s.id} className="flex items-center gap-2">
+                            <input
+                              value={s.name}
+                              onChange={(e) => updateCustomSection(s.id, { name: e.target.value })}
+                              placeholder="Section name"
+                              className="min-w-0 flex-1 rounded-lg border border-white/[0.08] bg-black/30 px-3 py-2 text-sm placeholder-white/25 outline-none focus:border-sky-400/50"
+                            />
+                            <input
+                              value={s.max}
+                              onChange={(e) => updateCustomSection(s.id, { max: e.target.value })}
+                              placeholder="Max"
+                              inputMode="decimal"
+                              className="w-20 rounded-lg border border-white/[0.08] bg-black/30 px-3 py-2 text-sm placeholder-white/25 outline-none focus:border-sky-400/50"
+                            />
+                            <button
+                              onClick={() => removeCustomSection(s.id)}
+                              aria-label="Remove section"
+                              className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-white/[0.06] text-white/40 transition-colors hover:bg-rose-500/10 hover:text-rose-400"
+                            >
+                              <Trash2 size={15} />
+                            </button>
                           </div>
-                        )}
+                        ))}
+                        <button
+                          onClick={addCustomSection}
+                          className="flex items-center gap-1.5 text-sm text-sky-400 transition-colors hover:text-sky-300"
+                        >
+                          <Plus size={15} /> Add section
+                        </button>
+                        <p className="text-xs text-white/35">
+                          Module total: <span className="font-medium text-white/70 tabular-nums">{total}</span> marks ·
+                          Boundaries auto-set at A ≥85%, B ≥75%, C ≥65%, D ≥60%
+                        </p>
                       </div>
                     </motion.div>
-                  );
-                })}
+                  )}
+                </AnimatePresence>
+
+                {/* Section score inputs */}
+                <div className="space-y-3">
+                  <div className="flex items-center justify-between">
+                    <h2 className="text-sm font-semibold text-white/80">{activeModule.name}</h2>
+                    <span className="text-xs text-white/35 tabular-nums">Total: {total} marks</span>
+                  </div>
+
+                  {activeModule.sections.length === 0 && (
+                    <p className="flex items-center gap-2 text-sm text-white/40">
+                      <HelpCircle size={15} /> Add at least one section with a max score.
+                    </p>
+                  )}
+
+                  {activeModule.sections.map((s) => {
+                    const error = calc.errors[s.id];
+                    return (
+                      <motion.div
+                        key={s.id}
+                        layout
+                        initial={{ opacity: 0, y: 6 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        className="rounded-xl border border-white/[0.06] bg-white/[0.02] p-3.5"
+                      >
+                        <div className="flex items-center justify-between gap-3">
+                          <label htmlFor={`score-${s.id}`} className="min-w-0 flex-1 truncate text-sm text-white/70">
+                            {s.name}
+                          </label>
+                          <div className="flex items-center gap-1.5">
+                            <input
+                              id={`score-${s.id}`}
+                              value={scores[s.id] ?? ""}
+                              onChange={(e) => setScores((p) => ({ ...p, [s.id]: e.target.value }))}
+                              placeholder="—"
+                              inputMode="decimal"
+                              className={`w-20 rounded-lg border bg-black/30 px-3 py-2 text-right text-sm tabular-nums placeholder-white/25 outline-none transition-colors ${
+                                error
+                                  ? "border-rose-500/50 focus:border-rose-400"
+                                  : "border-white/[0.08] focus:border-sky-400/50"
+                              }`}
+                            />
+                            <span className="w-12 text-xs text-white/35 tabular-nums">/ {s.max}</span>
+                          </div>
+                        </div>
+                        <AnimatePresence>
+                          {error && (
+                            <motion.p
+                              initial={{ opacity: 0, height: 0 }}
+                              animate={{ opacity: 1, height: "auto" }}
+                              exit={{ opacity: 0, height: 0 }}
+                              className="mt-1.5 flex items-center gap-1 text-xs text-rose-400"
+                            >
+                              <AlertTriangle size={12} /> {error}
+                            </motion.p>
+                          )}
+                        </AnimatePresence>
+                      </motion.div>
+                    );
+                  })}
+                </div>
+
+                {/* Customize layout button for preset/standard modules */}
+                {!isCustom && (
+                  <button
+                    onClick={handleCustomize}
+                    className="mt-6 w-full flex items-center justify-center gap-1.5 text-xs text-white/50 hover:text-sky-400 hover:border-sky-500/30 transition-all py-3 rounded-xl border border-white/[0.06] bg-white/[0.02] hover:bg-sky-500/5"
+                  >
+                    <Settings size={13} /> Customize Section Layout
+                  </button>
+                )}
+              </GlassCard>
+
+              {/* ------------------------------ RIGHT: Results ----------------------------- */}
+              <div className="space-y-6">
+                {/* Progress ring */}
+                <GlassCard className="flex flex-col items-center gap-4 p-6 sm:flex-row sm:justify-around">
+                  <ProgressRing pct={pctAchieved} label="Achieved" />
+                  <div className="space-y-2 text-center sm:text-left">
+                    <p className="text-sm text-white/40">Marks entered</p>
+                    <p className="text-2xl font-semibold tabular-nums">
+                      {calc.entered}
+                      <span className="text-base font-normal text-white/35"> / {total}</span>
+                    </p>
+                    <p className="text-xs text-white/40 tabular-nums">
+                      {calc.remainingMax} marks still on the table
+                    </p>
+                  </div>
+                </GlassCard>
+
+                {/* Worst / Best case */}
+                <div className="grid grid-cols-2 gap-4">
+                  {(
+                    [
+                      { label: "Guaranteed Minimum", grade: calc.guaranteed, hint: "If you score 0 on remaining" },
+                      { label: "Maximum Potential", grade: calc.potential, hint: "If you ace everything left" },
+                    ] as const
+                  ).map(({ label, grade, hint }) => (
+                    <GlassCard key={label} className="p-4 text-center">
+                      <p className="text-[11px] uppercase tracking-widest text-white/40">{label}</p>
+                      <motion.p
+                        key={`${label}-${grade}`}
+                        initial={{ scale: 0.8, opacity: 0 }}
+                        animate={{ scale: 1, opacity: 1 }}
+                        className={`my-2 text-4xl font-bold ${GRADE_COLORS[grade]}`}
+                      >
+                        {grade}
+                      </motion.p>
+                      <p className="text-[11px] text-white/35">{hint}</p>
+                    </GlassCard>
+                  ))}
+                </div>
+
+                {/* Target grade cards */}
+                <GlassCard className="p-5">
+                  <h2 className="mb-4 flex items-center gap-2 text-sm font-medium text-white/80">
+                    <Award size={16} className="text-amber-400" /> Target Grades
+                  </h2>
+                  <div className="space-y-3">
+                    {GRADES.map((g) => {
+                      const status = calc.gradeStatuses[g];
+                      const min = activeModule.boundaries[g];
+                      return (
+                        <motion.div
+                          key={g}
+                          layout
+                          className={`flex items-center justify-between gap-3 rounded-xl border p-3.5 ${
+                            status.kind === "achieved"
+                              ? "border-emerald-500/25 bg-emerald-500/[0.06]"
+                              : status.kind === "out-of-reach"
+                                ? "border-rose-500/20 bg-rose-500/[0.04] opacity-60"
+                                : "border-amber-500/20 bg-amber-500/[0.04]"
+                          }`}
+                        >
+                          <div className="flex items-center gap-3">
+                            <span className={`text-xl font-bold ${GRADE_COLORS[g]}`}>{g}</span>
+                            <span className="text-xs text-white/40 tabular-nums">≥ {min} marks</span>
+                          </div>
+                          <div className="text-right">
+                            {status.kind === "achieved" && (
+                              <span className="flex items-center gap-1.5 text-sm font-medium text-emerald-400">
+                                <CheckCircle2 size={15} /> Achieved
+                              </span>
+                            )}
+                            {status.kind === "out-of-reach" && (
+                              <span className="flex items-center gap-1.5 text-sm font-medium text-rose-400">
+                                <AlertTriangle size={15} /> Out of Reach
+                              </span>
+                            )}
+                            {status.kind === "possible" && (
+                              <div className="text-sm">
+                                <span className="font-medium text-amber-400 tabular-nums">
+                                  +{status.marksNeeded} marks needed
+                                </span>
+                                <p className="text-xs text-white/40 tabular-nums">
+                                  Need {status.pctNeeded.toFixed(0)}% on remaining
+                                </p>
+                              </div>
+                            )}
+                          </div>
+                        </motion.div>
+                      );
+                    })}
+                  </div>
+                </GlassCard>
               </div>
-            </GlassCard>
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </div>
   );
