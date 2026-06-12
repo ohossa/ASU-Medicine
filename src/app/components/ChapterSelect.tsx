@@ -41,6 +41,10 @@ const badgeColors: Record<SubjectColor, string> = {
   pathology: 'bg-pathology/10 text-pathology',
   pharma: 'bg-pharma/10 text-pharma',
   clinical: 'bg-clinical/10 text-clinical',
+  parasitology: 'bg-parasitology/10 text-parasitology',
+  psychiatry: 'bg-psychiatry/10 text-psychiatry',
+  ophthalmology: 'bg-ophthalmology/10 text-ophthalmology',
+  ent: 'bg-ent/10 text-ent',
 };
 
 const dotColors: Record<SubjectColor, string> = {
@@ -52,6 +56,10 @@ const dotColors: Record<SubjectColor, string> = {
   pathology: 'bg-pathology',
   pharma: 'bg-pharma',
   clinical: 'bg-clinical',
+  parasitology: 'bg-parasitology',
+  psychiatry: 'bg-psychiatry',
+  ophthalmology: 'bg-ophthalmology',
+  ent: 'bg-ent',
 };
 
 const cornerGradient: Record<SubjectColor, string> = {
@@ -63,6 +71,10 @@ const cornerGradient: Record<SubjectColor, string> = {
   pharma: 'from-pharma/5',
   histology: 'from-histology/5',
   clinical: 'from-clinical/5',
+  parasitology: 'from-parasitology/5',
+  psychiatry: 'from-psychiatry/5',
+  ophthalmology: 'from-ophthalmology/5',
+  ent: 'from-ent/5',
 };
 
 const hoverText: Record<SubjectColor, string> = {
@@ -74,6 +86,10 @@ const hoverText: Record<SubjectColor, string> = {
   pharma: 'group-hover:text-pharma',
   histology: 'group-hover:text-histology',
   clinical: 'group-hover:text-clinical',
+  parasitology: 'group-hover:text-parasitology',
+  psychiatry: 'group-hover:text-psychiatry',
+  ophthalmology: 'group-hover:text-ophthalmology',
+  ent: 'group-hover:text-ent',
 };
 
 const startButtonBg: Record<SubjectColor, string> = {
@@ -85,6 +101,10 @@ const startButtonBg: Record<SubjectColor, string> = {
   pathology: 'bg-pathology',
   pharma: 'bg-pharma',
   clinical: 'bg-clinical',
+  parasitology: 'bg-parasitology',
+  psychiatry: 'bg-psychiatry',
+  ophthalmology: 'bg-ophthalmology',
+  ent: 'bg-ent',
 };
 
 const LEGEND: { id: SubjectColor; en: string; ar: string }[] = [
@@ -93,8 +113,12 @@ const LEGEND: { id: SubjectColor; en: string; ar: string }[] = [
   { id: 'physiology', en: 'Physiology', ar: 'الفسيولوجيا' },
   { id: 'biochem', en: 'Biochemistry', ar: 'الكيمياء الحيوية' },
   { id: 'microbiology', en: 'Microbiology', ar: 'الأحياء الدقيقة' },
+  { id: 'parasitology', en: 'Parasitology', ar: 'الطفيليات' },
   { id: 'pathology', en: 'Pathology', ar: 'الباثولوجيا' },
   { id: 'pharma', en: 'Pharmacology', ar: 'الأدوية' },
+  { id: 'psychiatry', en: 'Psychiatry', ar: 'الطب النفسي' },
+  { id: 'ophthalmology', en: 'Ophthalmology', ar: 'الرمد' },
+  { id: 'ent', en: 'E.N.T.', ar: 'الأنف والأذن والحنجرة' },
   { id: 'clinical', en: 'Clinical', ar: 'الإكلينيكي' },
 ];
 
@@ -242,13 +266,69 @@ export function ChapterSelect({
     { label: studyModeName },
   ];
 
+  const renderChapterCard = (chapter: ChapterData, index: number) => {
+    const accent = chapter.accentColor;
+    return (
+      <article
+        key={chapter.id}
+        className="cs-enter group relative overflow-hidden bg-card border border-border dark:border-white/[0.06] backdrop-blur-xl rounded-[28px] p-6 transition-all duration-300 hover:scale-[1.015] hover:-translate-y-2 hover:border-gray-300 dark:hover:border-white/[0.14]"
+        style={{ animationDelay: `${120 + index * 70}ms` }}
+      >
+        {/* Corner gradient accent */}
+        <div
+          aria-hidden
+          className={`pointer-events-none absolute -top-12 ${isRTL ? '-left-12' : '-right-12'} h-40 w-40 rounded-full bg-gradient-to-br ${cornerGradient[accent]} to-transparent blur-2xl`}
+        />
+
+        <div className="relative">
+          <div className="mb-3 flex items-start justify-between gap-3">
+            <span className="text-2xl">{chapter.emoji}</span>
+            <span className="rounded-full border border-border dark:border-white/[0.08] bg-secondary/80 dark:bg-white/[0.04] px-2 py-0.5 text-[10px] font-semibold tabular-nums text-muted-foreground dark:text-white/50">
+              #{chapter.id}
+            </span>
+          </div>
+
+          <h3 className={`text-base font-semibold text-foreground dark:text-white transition-colors ${hoverText[accent]}`}>
+            {chapter.title}
+          </h3>
+          <p className="mt-0.5 line-clamp-2 text-xs text-muted-foreground dark:text-white/45">{chapter.subtitle}</p>
+
+          {/* Subject badges */}
+          {chapter.subjects.length > 0 && (
+            <div className="mt-3 flex flex-wrap gap-1.5">
+              {chapter.subjects.map((s) => (
+                <span key={s.id} className={`rounded-full px-2 py-0.5 text-[10px] font-medium ${badgeColors[s.id]}`}>
+                  {s.name}
+                </span>
+              ))}
+            </div>
+          )}
+
+          <div className="mt-5 flex items-center justify-between">
+            <span className="text-[11px] text-muted-foreground dark:text-white/40">
+              {label('page')} {chapter.page} · {chapter.lectureRange}
+            </span>
+            <button
+              type="button"
+              onClick={() => onSelectChapter(chapter)}
+              aria-label={`${label('start')}: ${chapter.title}`}
+              className={`flex h-10 w-10 items-center justify-center rounded-full text-white dark:text-black shadow-lg transition-all hover:scale-110 active:scale-95 ${startButtonBg[accent]}`}
+            >
+              <StartArrow size={17} strokeWidth={2.5} />
+            </button>
+          </div>
+        </div>
+      </article>
+    );
+  };
+
+  const views = history.map(toHistoryView);
+
   const BackArrow = isRTL ? ArrowRight : ArrowLeft;
   const StartArrow = isRTL ? ArrowLeft : ArrowRight;
 
   const formatDay = (d: Date | null): string =>
     d ? d.toLocaleDateString(isRTL ? 'ar' : 'en', { month: 'short', day: 'numeric' }) : '—';
-
-  const views = history.map(toHistoryView);
 
   return (
     <div dir={isRTL ? 'rtl' : 'ltr'} className="relative min-h-screen overflow-hidden bg-background text-foreground">
@@ -365,63 +445,31 @@ export function ChapterSelect({
               <div className="cs-enter rounded-[28px] border border-dashed border-border dark:border-white/[0.1] py-16 text-center text-sm text-muted-foreground dark:text-white/40">
                 {label('noChapters')}
               </div>
+            ) : moduleCode === 'MCNS-2' ? (
+              <div className="space-y-8">
+                {/* CNS 1 Section */}
+                <div>
+                  <h3 className="mb-4 text-sm font-bold tracking-wider uppercase text-muted-foreground border-l-4 border-physiology pl-3">
+                    {isRTL ? 'الجهاز العصبي المركزي 1: المقدمة، الأنظمة الحسية والحركية' : 'CNS 1: Introduction, Sensory & Motor Systems'}
+                  </h3>
+                  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                    {chapters.filter(c => c.id <= 5).map((chapter, i) => renderChapterCard(chapter, i))}
+                  </div>
+                </div>
+
+                {/* CNS 2 Section */}
+                <div className="pt-4">
+                  <h3 className="mb-4 text-sm font-bold tracking-wider uppercase text-muted-foreground border-l-4 border-anatomy pl-3">
+                    {isRTL ? 'الجهاز العصبي المركزي 2: المخ، الدماغ البيني، الالتهابات والضمور' : 'CNS 2: Cerebrum, Diencephalon, Infections & Degeneration'}
+                  </h3>
+                  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                    {chapters.filter(c => c.id > 5).map((chapter, i) => renderChapterCard(chapter, i + 5))}
+                  </div>
+                </div>
+              </div>
             ) : (
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                {chapters.map((chapter, i) => {
-                  const accent = chapter.accentColor;
-                  return (
-                    <article
-                      key={chapter.id}
-                      className="cs-enter group relative overflow-hidden bg-card border border-border dark:border-white/[0.06] backdrop-blur-xl rounded-[28px] p-6 transition-all duration-300 hover:scale-[1.015] hover:-translate-y-2 hover:border-gray-300 dark:hover:border-white/[0.14]"
-                      style={{ animationDelay: `${120 + i * 70}ms` }}
-                    >
-                      {/* Corner gradient accent */}
-                      <div
-                        aria-hidden
-                        className={`pointer-events-none absolute -top-12 ${isRTL ? '-left-12' : '-right-12'} h-40 w-40 rounded-full bg-gradient-to-br ${cornerGradient[accent]} to-transparent blur-2xl`}
-                      />
-
-                      <div className="relative">
-                        <div className="mb-3 flex items-start justify-between gap-3">
-                          <span className="text-2xl">{chapter.emoji}</span>
-                          <span className="rounded-full border border-border dark:border-white/[0.08] bg-secondary/80 dark:bg-white/[0.04] px-2 py-0.5 text-[10px] font-semibold tabular-nums text-muted-foreground dark:text-white/50">
-                            #{chapter.id}
-                          </span>
-                        </div>
-
-                        <h3 className={`text-base font-semibold text-foreground dark:text-white transition-colors ${hoverText[accent]}`}>
-                          {chapter.title}
-                        </h3>
-                        <p className="mt-0.5 line-clamp-2 text-xs text-muted-foreground dark:text-white/45">{chapter.subtitle}</p>
-
-                        {/* Subject badges */}
-                        {chapter.subjects.length > 0 && (
-                          <div className="mt-3 flex flex-wrap gap-1.5">
-                            {chapter.subjects.map((s) => (
-                              <span key={s.id} className={`rounded-full px-2 py-0.5 text-[10px] font-medium ${badgeColors[s.id]}`}>
-                                {s.name}
-                              </span>
-                            ))}
-                          </div>
-                        )}
-
-                        <div className="mt-5 flex items-center justify-between">
-                          <span className="text-[11px] text-muted-foreground dark:text-white/40">
-                            {label('page')} {chapter.page} · {chapter.lectureRange}
-                          </span>
-                          <button
-                            type="button"
-                            onClick={() => onSelectChapter(chapter)}
-                            aria-label={`${label('start')}: ${chapter.title}`}
-                            className={`flex h-10 w-10 items-center justify-center rounded-full text-white dark:text-black shadow-lg transition-all hover:scale-110 active:scale-95 ${startButtonBg[accent]}`}
-                          >
-                            <StartArrow size={17} strokeWidth={2.5} />
-                          </button>
-                        </div>
-                      </div>
-                    </article>
-                  );
-                })}
+                {chapters.map((chapter, i) => renderChapterCard(chapter, i))}
               </div>
             )}
 

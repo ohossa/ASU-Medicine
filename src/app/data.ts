@@ -302,8 +302,7 @@ export const SYLLABUS_MODULES: Record<number, Record<number, ModuleInfo[]>> = {
       { code: 'MCVS-2', name: 'Cardiovascular System Module', cp: 11, marks: 220, keywords: ['cardio', 'cvs', 'mcvs', 'cardiovascular', 'heart', 'cardiac', 'blood vessels', 'artery', 'vein', 'circulation'] },
     ],
     2: [
-      { code: 'MCNS1-2', name: 'Central Nervous System 1 Module', cp: 6.5, marks: 130, keywords: ['cns1', 'cns 1', 'mcns1', 'neuro1', 'cns-1', 'brainstem', 'neck', 'sensory system', 'motor system'] },
-      { code: 'MCNS2-2', name: 'Central Nervous System 2 Module', cp: 6.5, marks: 130, keywords: ['cns2', 'cns 2', 'mcns2', 'neuro2', 'cns-2', 'diencephalon', 'cerebrum', 'sleep', 'epilepsy', 'infections'] },
+      { code: 'MCNS-2', name: 'Central Nervous System Module', cp: 13, marks: 260, keywords: ['cns', 'central nervous', 'mcns', 'neuro', 'neurology', 'brain', 'spinal cord', 'cerebrum', 'cerebellum', 'sensory', 'motor', 'nerves'] },
       { code: 'MSS-2', name: 'Special Senses Module', cp: 4, marks: 80, keywords: ['special senses', 'senses', 'mss', 'eye', 'ear', 'ophthalmology', 'vision', 'hearing', 'olfaction', 'taste'] },
       { code: 'MEM-2', name: 'Endocrine System & Metabolism Module', cp: 5.5, marks: 110, keywords: ['endocrine', 'metabolism', 'mem', 'hormone', 'hormones', 'pituitary', 'thyroid', 'adrenal', 'pancreas', 'diabetes'] },
       { code: 'P3-2', name: 'Behavioral science', cp: 1.5, marks: 30, keywords: ['behavioral', 'science', 'psychology', 'psychiatry', 'behavioral science'] },

@@ -7,44 +7,830 @@
     "semester": 2,
     "creditPoints": 13,
     "totalMarks": 260,
-    "keywords": [
-      "cns",
-      "central nervous",
-      "mcns",
-      "neuro"
-    ]
+    "keywords": ["cns", "central nervous", "mcns", "neuro", "brain", "spinal cord"]
   },
   "chapters": [
     {
       "id": 1,
-      "title": "Neuroanatomy",
-      "subtitle": "Neuroanatomy",
+      "title": "Introduction to CNS",
+      "subtitle": "Anatomy, Histology, Biochemistry, and Signal Processing",
       "emoji": "🧠",
       "page": 1,
-      "lectureRange": "Lectures 1",
+      "lectureRange": "Lectures 1-4",
       "subjects": [
         {
           "id": "anatomy",
           "name": "Anatomy",
           "iconName": "Bone",
-          "lectures": "Lecture 1",
-          "lectureCount": 1,
+          "lectures": "External Spinal Cord Features & Sensory Cortex",
+          "lectureCount": 2,
           "questions": [
             {
               "id": "MCNS2-CH1-ANAT-0001",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Describe the external features of the spinal cord, including its enlargements and nerve attachments.",
+              "explanation": "The spinal cord displays cervical and lumbar enlargements corresponding to limb innervation.",
+              "keyConcept": "Spinal cord anatomy reflects peripheral nerve distribution.",
+              "modelAnswer": "External features:\n- Length: ~45cm in males, ~42cm in females.\n- Extends from upper border of atlas vertebra (foramen magnum) to lower border of L1 vertebra.\n- Enlargements:\n  1. Cervical enlargement (C4-T1): Innervates upper limbs via brachial plexus.\n  2. Lumbar enlargement (T11-L1): Innervates lower limbs via lumbosacral plexus.\n- Conus medullaris: Tapering lower end.\n- Filum terminale: Thread-like extension of pia mater anchoring cord to coccyx."
+            }
+          ]
+        },
+        {
+          "id": "histology",
+          "name": "Histology",
+          "iconName": "Microscope",
+          "lectures": "Histological Structure & Neuroglia",
+          "lectureCount": 1,
+          "questions": [
+            {
+              "id": "MCNS2-CH1-HIST-0001",
               "type": "mcq",
               "lecture": 1,
-              "text": "Which structure connects the left and right cerebral hemispheres?",
-              "explanation": "The corpus callosum is the largest commissural tract.",
-              "keyConcept": "Interhemispheric communication.",
+              "text": "Which type of neuroglial cell is responsible for forming myelin sheaths in the central nervous system?",
+              "explanation": "Oligodendrocytes myelinate axons inside the CNS, while Schwann cells myelinate axons in the PNS.",
+              "keyConcept": "CNS myelin is formed by oligodendrocytes.",
               "options": [
-                "Corpus callosum",
-                "Internal capsule",
-                "Thalamus",
-                "Pons"
+                "Oligodendrocytes",
+                "Schwann cells",
+                "Astrocytes",
+                "Microglia"
               ],
-              "correctIndex": 0,
-              "modelAnswer": null
+              "correctIndex": 0
+            }
+          ]
+        },
+        {
+          "id": "biochem",
+          "name": "Biochemistry",
+          "iconName": "FlaskConical",
+          "lectures": "Energy Sources & Ammonia Metabolism",
+          "lectureCount": 2,
+          "questions": [
+            {
+              "id": "MCNS2-CH1-BIOCH-0001",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "What is the primary metabolic fuel source utilized by the brain during normal, fed states?",
+              "explanation": "Glucose is the primary fuel source for the brain. Ketone bodies are used only during prolonged starvation.",
+              "keyConcept": "Glucose is the mandatory energy substrate for the brain under normal conditions.",
+              "options": [
+                "Glucose",
+                "Ketone bodies",
+                "Fatty acids",
+                "Amino acids"
+              ],
+              "correctIndex": 0
+            }
+          ]
+        },
+        {
+          "id": "physiology",
+          "name": "Physiology",
+          "iconName": "Activity",
+          "lectures": "Processing of Signals in CNS",
+          "lectureCount": 1,
+          "questions": [
+            {
+              "id": "MCNS2-CH1-PHYS-0001",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which process describes the addition of post-synaptic potentials from multiple different synapses occurring at the same time?",
+              "explanation": "Spatial summation occurs when multiple presynaptic inputs release neurotransmitters simultaneously at different locations on the post-synaptic membrane.",
+              "keyConcept": "Spatial summation combines signals from separate synapses.",
+              "options": [
+                "Spatial summation",
+                "Temporal summation",
+                "Facilitation",
+                "Post-tetanic potentiation"
+              ],
+              "correctIndex": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "The Sensory System",
+      "subtitle": "Receptors, Coding, Spinal Cord Internal structure and Pain Pathways",
+      "emoji": "⚡",
+      "page": 50,
+      "lectureRange": "Lectures 5-8",
+      "subjects": [
+        {
+          "id": "histology",
+          "name": "Histology",
+          "iconName": "Microscope",
+          "lectures": "Structure of Receptors & Spinal Cord Gray Matter",
+          "lectureCount": 2,
+          "questions": [
+            {
+              "id": "MCNS2-CH2-HIST-0001",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which encapsulated sensory receptor is primarily responsible for detecting low-frequency vibration and light touch?",
+              "explanation": "Meissner corpuscles detect light touch and low-frequency vibration. Pacinian corpuscles detect high-frequency vibration and pressure.",
+              "keyConcept": "Meissner corpuscles serve tactile sensation.",
+              "options": [
+                "Meissner corpuscle",
+                "Pacinian corpuscle",
+                "Ruffini ending",
+                "Merkel disc"
+              ],
+              "correctIndex": 0
+            }
+          ]
+        },
+        {
+          "id": "physiology",
+          "name": "Physiology",
+          "iconName": "Activity",
+          "lectures": "Sensory Coding, Spinothalamic & Dorsal Columns",
+          "lectureCount": 3,
+          "questions": [
+            {
+              "id": "MCNS2-CH2-PHYS-0001",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which sensory pathway is responsible for carrying fine touch, proprioception, and vibration sensation?",
+              "explanation": "The dorsal column-medial lemniscal pathway carries fine touch, vibration, and conscious proprioception. The spinothalamic pathway carries pain and temperature.",
+              "keyConcept": "Dorsal columns transmit epicritic sensations.",
+              "options": [
+                "Dorsal column-medial lemniscal pathway",
+                "Anterolateral spinothalamic tract",
+                "Spinocerebellar tract",
+                "Corticospinal tract"
+              ],
+              "correctIndex": 0
+            }
+          ]
+        },
+        {
+          "id": "anatomy",
+          "name": "Anatomy",
+          "iconName": "Bone",
+          "lectures": "Anterolateral System and Ascending Tracts",
+          "lectureCount": 1,
+          "questions": [
+            {
+              "id": "MCNS2-CH2-ANAT-0001",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Enumerate the three neurons involved in the spinothalamic pathway carrying pain and temperature from the limbs.",
+              "explanation": "The spinothalamic pathway is a three-neuron chain that crosses in the spinal cord.",
+              "keyConcept": "First, second, and third-order neurons in pain pathways.",
+              "modelAnswer": "Neurons of spinothalamic tract:\n1. First-order neuron: Pseudounipolar neurons in the dorsal root ganglion; their central axons enter the spinal cord and synapse in the substantia gelatinosa.\n2. Second-order neuron: Neurons in the substantia gelatinosa; their axons cross the midline in the anterior white commissure and ascend in the lateral spinothalamic tract to the thalamus.\n3. Third-order neuron: Neurons in the ventral posterolateral (VPL) nucleus of the thalamus; their axons project to the primary somatosensory cortex."
+            }
+          ]
+        },
+        {
+          "id": "pharma",
+          "name": "Pharmacology",
+          "iconName": "Pill",
+          "lectures": "Opioid Analgesics",
+          "lectureCount": 1,
+          "questions": [
+            {
+              "id": "MCNS2-CH2-PHARM-0001",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which opioid receptor subtype is primarily responsible for the analgesic effects as well as respiratory depression and addiction?",
+              "explanation": "Mu (μ) receptors mediate the majority of analgesic, respiratory-depressive, and euphoric/addictive properties of opioids.",
+              "keyConcept": "Mu receptor activation leads to analgesia and respiratory depression.",
+              "options": [
+                "Mu (μ)",
+                "Kappa (κ)",
+                "Delta (δ)",
+                "Sigma (σ)"
+              ],
+              "correctIndex": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "The Motor System, Spinal Cord Internal Structure and Lesions",
+      "subtitle": "Motor Cortex, Descending Tracts, Reflexes, Basal Ganglia, Cerebellum, and Lesions",
+      "emoji": "🚦",
+      "page": 90,
+      "lectureRange": "Lectures 9-14",
+      "subjects": [
+        {
+          "id": "anatomy",
+          "name": "Anatomy",
+          "iconName": "Bone",
+          "lectures": "Motor Cortex, Descending Tracts, Cerebellum, and Basal Ganglia",
+          "lectureCount": 4,
+          "questions": [
+            {
+              "id": "MCNS2-CH3-ANAT-0001",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Where do the majority of the fibers of the lateral corticospinal tract decussate?",
+              "explanation": "Approximately 85% of corticospinal fibers cross the midline in the decussation of pyramids located in the lower medulla.",
+              "keyConcept": "Corticospinal decussation occurs in the caudal medulla.",
+              "options": [
+                "Decussation of pyramids in the medulla",
+                "Internal capsule",
+                "Midbrain tegmentum",
+                "Spinal cord segment of entry"
+              ],
+              "correctIndex": 0
+            }
+          ]
+        },
+        {
+          "id": "histology",
+          "name": "Histology",
+          "iconName": "Microscope",
+          "lectures": "White Matter & Stretch Receptors Structure",
+          "lectureCount": 2,
+          "questions": [
+            {
+              "id": "MCNS2-CH3-HIST-0001",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which specialized muscle fibers inside a muscle spindle are innervated by gamma motor neurons?",
+              "explanation": "Intrafusal muscle fibers are located inside the muscle spindle and receive motor innervation from gamma motor neurons. Extrafusal fibers are innervated by alpha motor neurons.",
+              "keyConcept": "Intrafusal fibers regulate stretch receptor sensitivity.",
+              "options": [
+                "Intrafusal fibers",
+                "Extrafusal fibers",
+                "Myofibrillar fibers",
+                "Tendinous fibers"
+              ],
+              "correctIndex": 0
+            }
+          ]
+        },
+        {
+          "id": "physiology",
+          "name": "Physiology",
+          "iconName": "Activity",
+          "lectures": "Stretch Reflexes, Descending Tracts, Cerebellar & Basal Ganglia Function",
+          "lectureCount": 4,
+          "questions": [
+            {
+              "id": "MCNS2-CH3-PHYS-0001",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which part of the cerebellum is mainly responsible for planning, initiating, and timing of voluntary movements?",
+              "explanation": "The cerebrocerebellum (neocerebellum) is involved in planning, programming, and timing of motor sequences.",
+              "keyConcept": "Cerebrocerebellum regulates motor planning.",
+              "options": [
+                "Cerebrocerebellum",
+                "Spinocerebellum",
+                "Vestibulocerebellum",
+                "Flocculonodular lobe"
+              ],
+              "correctIndex": 0
+            }
+          ]
+        },
+        {
+          "id": "pathology",
+          "name": "Pathology",
+          "iconName": "ShieldAlert",
+          "lectures": "Neurodegenerative Diseases of Basal Ganglia & Cerebellar Tumors",
+          "lectureCount": 2,
+          "questions": [
+            {
+              "id": "MCNS2-CH3-PATHO-0001",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Describe the macroscopic and microscopic pathological findings in the brain of a patient with Parkinson's disease.",
+              "explanation": "Parkinson's is marked by loss of pigmentation in the substantia nigra and Lewy body inclusions.",
+              "keyConcept": "Loss of dopaminergic pigmented neurons in substantia nigra is pathognomonic.",
+              "modelAnswer": "Pathology of Parkinson's:\n- Macroscopic: Pallor/loss of pigmentation in the substantia nigra (midbrain) and locus coeruleus.\n- Microscopic:\n  1. Severe loss of pigmented, dopaminergic neurons in the pars compacta of the substantia nigra.\n  2. Lewy bodies: Eosinophilic, intracytoplasmic inclusions containing alpha-synuclein in surviving neurons."
+            }
+          ]
+        },
+        {
+          "id": "pharma",
+          "name": "Pharmacology",
+          "iconName": "Pill",
+          "lectures": "Treatment of Parkinsonism",
+          "lectureCount": 1,
+          "questions": [
+            {
+              "id": "MCNS2-CH3-PHARM-0001",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Why is Carbidopa administered in combination with Levodopa in Parkinsonian therapy?",
+              "explanation": "Carbidopa is a peripheral dopa decarboxylase inhibitor. It prevents peripheral conversion of levodopa to dopamine, reducing side effects and increasing Levodopa entry to the brain.",
+              "keyConcept": "Carbidopa optimizes Levodopa delivery to the CNS.",
+              "options": [
+                "To inhibit peripheral dopa decarboxylase",
+                "To block central dopamine receptors",
+                "To stimulate central dopamine release",
+                "To prevent blood-brain barrier degradation"
+              ],
+              "correctIndex": 0
+            }
+          ]
+        },
+        {
+          "id": "clinical",
+          "name": "Clinical",
+          "iconName": "Stethoscope",
+          "lectures": "Neurology: Spinal Cord & Motor/Sensory Lesions",
+          "lectureCount": 1,
+          "questions": [
+            {
+              "id": "MCNS2-CH3-CLIN-0001",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Describe the clinical presentation of Brown-Séquard syndrome (spinal cord hemisection).",
+              "explanation": "Brown-Séquard syndrome features ipsilateral motor and dorsal column loss, with contralateral pain/temp loss.",
+              "keyConcept": "Asymmetric cord lesions present with dissociated sensory loss.",
+              "modelAnswer": "Brown-Séquard presentation:\n- Ipsilateral (same side) changes:\n  1. Spastic paralysis below the level of lesion (corticospinal tract).\n  2. Loss of fine touch, vibration, and proprioception below the lesion (dorsal columns).\n- Contralateral (opposite side) changes:\n  1. Loss of pain and temperature sensation starting 1-2 segments below the lesion (crossed spinothalamic tract)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Brain Stem, Cranial Cavity, Temporal Region, and Pterygopalatine Fossa",
+      "subtitle": "Brainstem Anatomy & Histology, Cranial Cavity, Scalp, Face, and Trigeminal Nerve",
+      "emoji": "💀",
+      "page": 140,
+      "lectureRange": "Lectures 15-18",
+      "subjects": [
+        {
+          "id": "anatomy",
+          "name": "Anatomy",
+          "iconName": "Bone",
+          "lectures": "Brain Stem Features, Cranial Cavity, Face, Scalp, Trigeminal & Fossa",
+          "lectureCount": 5,
+          "questions": [
+            {
+              "id": "MCNS2-CH4-ANAT-0001",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which cranial nerve emerges from the posterior (dorsal) aspect of the brain stem?",
+              "explanation": "The trochlear nerve (CN IV) is the only cranial nerve that emerges from the dorsal aspect of the brain stem.",
+              "keyConcept": "CN IV dorsal brainstem emergence.",
+              "options": [
+                "Trochlear nerve (CN IV)",
+                "Oculomotor nerve (CN III)",
+                "Trigeminal nerve (CN V)",
+                "Abducens nerve (CN VI)"
+              ],
+              "correctIndex": 0
+            }
+          ]
+        },
+        {
+          "id": "histology",
+          "name": "Histology",
+          "iconName": "Microscope",
+          "lectures": "Histology of Medulla, Pons, and Midbrain",
+          "lectureCount": 3,
+          "questions": [
+            {
+              "id": "MCNS2-CH4-HIST-0001",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which histological structure in the midbrain contains melanin granules and is severely affected in Parkinson's disease?",
+              "explanation": "The substantia nigra contains dopaminergic neurons rich in neuromelanin pigment granules.",
+              "keyConcept": "Pigmented midbrain substantia nigra.",
+              "options": [
+                "Substantia nigra",
+                "Red nucleus",
+                "Superior colliculus",
+                "Periaqueductal gray"
+              ],
+              "correctIndex": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Anatomy of the Neck",
+      "subtitle": "Neck Fascia, Triangles, Cervical Plexus, and last Cranial Nerves",
+      "emoji": "👔",
+      "page": 190,
+      "lectureRange": "Lectures 19-20",
+      "subjects": [
+        {
+          "id": "anatomy",
+          "name": "Anatomy",
+          "iconName": "Bone",
+          "lectures": "Fascia, Triangles, Sympathetic Chain, Last Cranial Nerves",
+          "lectureCount": 4,
+          "questions": [
+            {
+              "id": "MCNS2-CH5-ANAT-0001",
+              "type": "essay",
+              "lecture": 1,
+              "text": "List the boundaries and main contents of the carotid triangle of the neck.",
+              "explanation": "The carotid triangle contains key neurovascular elements including the common carotid artery.",
+              "keyConcept": "Carotid triangle boundaries and carotid sheath contents.",
+              "modelAnswer": "Boundaries:\n- Anterosuperiorly: Posterior belly of digastric muscle.\n- Anteroinferiorly: Superior belly of omohyoid muscle.\n- Posteriorly: Anterior border of sternocleidomastoid muscle.\nContents:\n- Carotid sheath containing:\n  1. Common carotid artery (bifurcating into internal and external carotids).\n  2. Internal jugular vein.\n  3. Vagus nerve (CN X).\n- Ansa cervicalis (embedded on the sheath).\n- Hypoglossal nerve (CN XII) crossing superiorly."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Diencephalon, Reticular Formation, Sleep and Epilepsy",
+      "subtitle": "Thalamus, Hypothalamus, EEG, Sleep mechanisms, Anesthetics and Epilepsy Drugs",
+      "emoji": "💤",
+      "page": 220,
+      "lectureRange": "Lectures 21-23",
+      "subjects": [
+        {
+          "id": "anatomy",
+          "name": "Anatomy",
+          "iconName": "Bone",
+          "lectures": "Thalamus, Hypothalamus, and Third Ventricle",
+          "lectureCount": 2,
+          "questions": [
+            {
+              "id": "MCNS2-CH6-ANAT-0001",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which thalamic nucleus acts as the primary relay station for visual sensory information?",
+              "explanation": "The lateral geniculate nucleus (LGN) relays visual information. The medial geniculate nucleus (MGN) relays auditory info.",
+              "keyConcept": "LGN = Light/Vision; MGN = Music/Hearing.",
+              "options": [
+                "Lateral geniculate nucleus (LGN)",
+                "Medial geniculate nucleus (MGN)",
+                "Ventral posterolateral nucleus (VPL)",
+                "Ventral posteromedial nucleus (VPM)"
+              ],
+              "correctIndex": 0
+            }
+          ]
+        },
+        {
+          "id": "physiology",
+          "name": "Physiology",
+          "iconName": "Activity",
+          "lectures": "Reticular Formation, Sleep & EEG Brain Activity",
+          "lectureCount": 2,
+          "questions": [
+            {
+              "id": "MCNS2-CH6-PHYS-0001",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which EEG wave pattern is typically recorded in a normal, awake adult with eyes closed and in a relaxed state?",
+              "explanation": "Alpha waves (8-13 Hz) are characteristic of relaxed wakefulness with eyes closed. Beta waves occur during active mental concentration with eyes open.",
+              "keyConcept": "Alpha rhythm denotes relaxed wakefulness.",
+              "options": [
+                "Alpha waves",
+                "Beta waves",
+                "Theta waves",
+                "Delta waves"
+              ],
+              "correctIndex": 0
+            }
+          ]
+        },
+        {
+          "id": "pharma",
+          "name": "Pharmacology",
+          "iconName": "Pill",
+          "lectures": "Sedatives, Anesthetics, Epilepsy and Migraine Drugs",
+          "lectureCount": 3,
+          "questions": [
+            {
+              "id": "MCNS2-CH6-PHARM-0001",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which molecular mechanism explains how Benzodiazepines exert their sedative/hypnotic effects?",
+              "explanation": "Benzodiazepines bind to GABAA receptors, increasing the frequency of chloride channel opening, which hyperpolarizes and inhibits the post-synaptic neuron.",
+              "keyConcept": "Benzodiazepines facilitate GABA action by increasing channel opening frequency.",
+              "options": [
+                "Increase frequency of GABAA channel opening",
+                "Increase duration of GABAA channel opening",
+                "Directly open chloride channels",
+                "Block GABA degradation pathways"
+              ],
+              "correctIndex": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Cerebrum, Meninges and Higher Brain Function",
+      "subtitle": "Hemisphere dominance, Speech/Aphasia, Memory, Limbic System, and Blood supply",
+      "emoji": "🧠",
+      "page": 260,
+      "lectureRange": "Lectures 24-26",
+      "subjects": [
+        {
+          "id": "physiology",
+          "name": "Physiology",
+          "iconName": "Activity",
+          "lectures": "Speech/Aphasia, Limbic Functions, Memory and Learning",
+          "lectureCount": 3,
+          "questions": [
+            {
+              "id": "MCNS2-CH7-PHYS-0001",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Compare between Broca's aphasia and Wernicke's aphasia in terms of lesion location and speech features.",
+              "explanation": "Broca's is non-fluent motor aphasia; Wernicke's is fluent sensory aphasia.",
+              "keyConcept": "Expressive vs. receptive speech deficits.",
+              "modelAnswer": "| Feature | Broca's Aphasia | Wernicke's Aphasia |\n|---|---|---|\n| Lesion site | Inferior frontal gyrus (Area 44/45) | Superior temporal gyrus (Area 22) |\n| Type | Motor / Expressive / Non-fluent | Sensory / Receptive / Fluent |\n| Speech production | Slow, effortful, halting, telegram-like | Rapid, fluent, but meaningless ('word salad') |\n| Comprehension | Intact | Impaired |"
+            }
+          ]
+        },
+        {
+          "id": "anatomy",
+          "name": "Anatomy",
+          "iconName": "Bone",
+          "lectures": "Limbic Anatomy, Ventricles, CSF, Meninges, and Blood Supply",
+          "lectureCount": 4,
+          "questions": [
+            {
+              "id": "MCNS2-CH7-ANAT-0001",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which blood vessel is most commonly ruptured in epidural hematomas following head trauma?",
+              "explanation": "Epidural hematomas are typically caused by trauma to the temple, leading to rupture of the middle meningeal artery.",
+              "keyConcept": "Middle meningeal artery rupture causes epidural bleed.",
+              "options": [
+                "Middle meningeal artery",
+                "Bridging cerebral veins",
+                "Anterior communicating artery",
+                "Internal carotid artery"
+              ],
+              "correctIndex": 0
+            }
+          ]
+        },
+        {
+          "id": "pharma",
+          "name": "Pharmacology",
+          "iconName": "Pill",
+          "lectures": "Antidepressants",
+          "lectureCount": 1,
+          "questions": [
+            {
+              "id": "MCNS2-CH7-PHARM-0001",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which class of antidepressants works by selectively inhibiting the reuptake of serotonin without affecting norepinephrine?",
+              "explanation": "SSRIs (Selective Serotonin Reuptake Inhibitors) specifically block serotonin reuptake. SNRIs block both serotonin and norepinephrine.",
+              "keyConcept": "SSRIs increase synaptic serotonin availability.",
+              "options": [
+                "SSRIs",
+                "TCAs",
+                "MAOIs",
+                "SNRIs"
+              ],
+              "correctIndex": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Infections Affecting Muscle Tone and Nervous System",
+      "subtitle": "Meningitis, Poliomyelitis, Rabies, Parasitic Infections, and pathology",
+      "emoji": "🦠",
+      "page": 300,
+      "lectureRange": "Lectures 27-29",
+      "subjects": [
+        {
+          "id": "microbiology",
+          "name": "Microbiology",
+          "iconName": "Biohazard",
+          "lectures": "Bacterial, Fungal, and Viral Meningitis, Encephalitis, and Rabies",
+          "lectureCount": 5,
+          "questions": [
+            {
+              "id": "MCNS2-CH8-MICRO-0001",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which laboratory parameter is classic in CSF analysis of bacterial meningitis?",
+              "explanation": "Bacterial meningitis shows high polymorphonuclear neutrophils (PMNs), very low glucose (bacteria consume it), and high protein.",
+              "keyConcept": "Low glucose and high neutrophils in CSF indicate bacterial origin.",
+              "options": [
+                "Low glucose, high protein, neutrophil predominance",
+                "Normal glucose, high protein, lymphocyte predominance",
+                "Low glucose, normal protein, eosinophil predominance",
+                "High glucose, low protein, no cells"
+              ],
+              "correctIndex": 0
+            }
+          ]
+        },
+        {
+          "id": "pharma",
+          "name": "Pharmacology",
+          "iconName": "Pill",
+          "lectures": "Treatment of Meningitis",
+          "lectureCount": 1,
+          "questions": [
+            {
+              "id": "MCNS2-CH8-PHARM-0001",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which antibiotic is empirically used first-line for suspected bacterial meningitis because of its excellent CSF penetration?",
+              "explanation": "Third-generation cephalosporins (like Ceftriaxone or Cefotaxime) provide excellent coverage and CSF penetration for empiric meningitis therapy.",
+              "keyConcept": "Empiric meningitis coverage requires blood-brain barrier penetration.",
+              "options": [
+                "Ceftriaxone",
+                "Gentamicin",
+                "Erythromycin",
+                "Clindamycin"
+              ],
+              "correctIndex": 0
+            }
+          ]
+        },
+        {
+          "id": "parasitology",
+          "name": "Parasitology",
+          "iconName": "Bug",
+          "lectures": "Amoebic Encephalitis & Larvae affecting Brain",
+          "lectureCount": 2,
+          "questions": [
+            {
+              "id": "MCNS2-CH8-PARA-0001",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which free-living amoeba is the causative agent of rapidly fatal Primary Amebic Meningoencephalitis (PAM) acquired from warm fresh water?",
+              "explanation": "Naegleria fowleri causes Primary Amebic Meningoencephalitis (PAM), entering via the olfactory neuroepithelium.",
+              "keyConcept": "Naegleria fowleri is the 'brain-eating' amoeba.",
+              "options": [
+                "Naegleria fowleri",
+                "Acanthamoeba castellanii",
+                "Balamuthia mandrillaris",
+                "Entamoeba histolytica"
+              ],
+              "correctIndex": 0
+            }
+          ]
+        },
+        {
+          "id": "pathology",
+          "name": "Pathology",
+          "iconName": "ShieldAlert",
+          "lectures": "Pathology of CNS Infections",
+          "lectureCount": 1,
+          "questions": [
+            {
+              "id": "MCNS2-CH8-PATHO-0001",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The presence of Negri bodies in histological sections of cerebellar Purkinje cells is diagnostic for which infection?",
+              "explanation": "Negri bodies are eosinophilic intracytoplasmic inclusions found in neurons infected with the Rabies virus.",
+              "keyConcept": "Negri bodies = Rabies virus.",
+              "options": [
+                "Rabies",
+                "Poliomyelitis",
+                "Herpes Simplex Virus 1",
+                "Cytomegalovirus"
+              ],
+              "correctIndex": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Neurodegenerative, Myelin Diseases, Trauma, Vascular, Tumors, and Dementia",
+      "subtitle": "Pathology of Myelin/Degeneration, Vascular strokes, Brain Tumors, and clinical Dementia",
+      "emoji": "👵",
+      "page": 330,
+      "lectureRange": "Lectures 30-32",
+      "subjects": [
+        {
+          "id": "pathology",
+          "name": "Pathology",
+          "iconName": "ShieldAlert",
+          "lectures": "Neurodegenerative, Myelin, Trauma, Vascular, and CNS Tumors",
+          "lectureCount": 5,
+          "questions": [
+            {
+              "id": "MCNS2-CH9-PATHO-0001",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which demyelinating disease of the CNS is characterized histologically by multiple plaques of demyelination showing oligodendrocyte loss and astrocytic proliferation?",
+              "explanation": "Multiple Sclerosis (MS) is an autoimmune demyelinating disease presenting with plaques of myelin loss throughout the CNS.",
+              "keyConcept": "MS plaques exhibit demyelination and axonal preservation.",
+              "options": [
+                "Multiple Sclerosis",
+                "Guillain-Barré Syndrome",
+                "Charcot-Marie-Tooth",
+                "Metachromatic leukodystrophy"
+              ],
+              "correctIndex": 0
+            }
+          ]
+        },
+        {
+          "id": "pharma",
+          "name": "Pharmacology",
+          "iconName": "Pill",
+          "lectures": "Treatment of Degenerative and Myelin Diseases",
+          "lectureCount": 1,
+          "questions": [
+            {
+              "id": "MCNS2-CH9-PHARM-0001",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which drug class is used to treat acute exacerbations of Multiple Sclerosis to reduce inflammation?",
+              "explanation": "High-dose intravenous corticosteroids (such as Methylprednisolone) are the standard first-line treatment for acute MS relapses.",
+              "keyConcept": "Glucocorticoids accelerate recovery in acute MS flare-ups.",
+              "options": [
+                "High-dose corticosteroids",
+                "Interferon beta-1a",
+                "Glatiramer acetate",
+                "Monoclonal antibodies"
+              ],
+              "correctIndex": 0
+            }
+          ]
+        },
+        {
+          "id": "psychiatry",
+          "name": "Psychiatry",
+          "iconName": "Brain",
+          "lectures": "Dementia Types & Clinical Considerations",
+          "lectureCount": 1,
+          "questions": [
+            {
+              "id": "MCNS2-CH9-PSYCH-0001",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Compare between Alzheimer's dementia and Vascular dementia in terms of onset and clinical progression.",
+              "explanation": "Alzheimer's is gradual and progressive, whereas Vascular dementia has a stepwise decline.",
+              "keyConcept": "Dementia progression shapes help define underlying etiology.",
+              "modelAnswer": "Comparison:\n- Alzheimer's Disease:\n  - Onset: Insidious and gradual.\n  - Progression: Slow, continuous, and steady decline.\n  - Pathophysiology: Neurofibrillary tangles (tau protein) and senile amyloid plaques.\n- Vascular Dementia:\n  - Onset: Abrupt (often post-stroke) or gradual.\n  - Progression: Stepwise decline with periods of stability followed by sudden drops in function.\n  - Pathophysiology: Multiple cerebral infarctions or chronic microvascular ischemic injury."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Miscellaneous and Embryology",
+      "subtitle": "Antipsychotics, Drug Abuse, Head/Neck Embryology, and Nervous System Development",
+      "emoji": "👶",
+      "page": 360,
+      "lectureRange": "Lectures 33-35",
+      "subjects": [
+        {
+          "id": "pharma",
+          "name": "Pharmacology",
+          "iconName": "Pill",
+          "lectures": "Antipsychotics & Drug Abuse",
+          "lectureCount": 2,
+          "questions": [
+            {
+              "id": "MCNS2-CH10-PHARM-0001",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which side effect of typical antipsychotics is characterized by involuntary, repetitive movements (like tongue protrusion and lip smacking) after long-term use?",
+              "explanation": "Tardive dyskinesia is a late-occurring extrapyramidal side effect caused by upregulation of dopamine receptors after chronic blockade.",
+              "keyConcept": "Tardive dyskinesia is associated with long-term dopamine antagonist therapy.",
+              "options": [
+                "Tardive dyskinesia",
+                "Acute dystonia",
+                "Akathisia",
+                "Neuroleptic malignant syndrome"
+              ],
+              "correctIndex": 0
+            }
+          ]
+        },
+        {
+          "id": "anatomy",
+          "name": "Anatomy",
+          "iconName": "Bone",
+          "lectures": "Development of Face, Nervous System, and Pharyngeal Arches",
+          "lectureCount": 3,
+          "questions": [
+            {
+              "id": "MCNS2-CH10-ANAT-0001",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Failure of which embryological process leads to the formation of a cleft lip?",
+              "explanation": "Cleft lip results from failure of fusion between the maxillary prominence and the medial nasal prominence on one or both sides.",
+              "keyConcept": "Cleft lip is a failure of maxillary and medial nasal prominence fusion.",
+              "options": [
+                "Failure of maxillary and medial nasal prominence fusion",
+                "Failure of lateral nasal and maxillary prominence fusion",
+                "Failure of palatal shelves fusion",
+                "Failure of mandibular prominences fusion"
+              ],
+              "correctIndex": 0
             }
           ]
         }

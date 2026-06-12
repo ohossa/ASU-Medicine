@@ -1,0 +1,302 @@
+{
+  "schemaVersion": 1,
+  "meta": {
+    "moduleCode": "MSS-2",
+    "moduleName": "Special Senses Module",
+    "year": 2,
+    "semester": 2,
+    "creditPoints": 4,
+    "totalMarks": 80,
+    "keywords": ["special senses", "senses", "mss", "eye", "ear", "ophthalmology", "ent"]
+  },
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Anatomy",
+      "subtitle": "Anatomy of Eye, Orbit, Ear and Visual/Auditory Pathways",
+      "emoji": "🦴",
+      "page": 1,
+      "lectureRange": "Lectures 1-10",
+      "subjects": [
+        {
+          "id": "anatomy",
+          "name": "Anatomy",
+          "iconName": "Bone",
+          "lectures": "Orbital Anatomy, Visual Pathway, Ear Anatomy, & Pathways",
+          "lectureCount": 8,
+          "questions": [
+            {
+              "id": "MSS2-CH1-ANAT-0001",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Injury to which cranial nerve leads to loss of the efferent limb of the pupillary light reflex?",
+              "explanation": "The optic nerve (CN II) is the afferent limb. The oculomotor nerve (CN III) carries parasympathetic fibers that constrict the pupil, serving as the efferent limb.",
+              "keyConcept": "CN II is afferent; CN III is efferent in pupillary light reflex.",
+              "options": [
+                "Oculomotor nerve (CN III)",
+                "Optic nerve (CN II)",
+                "Abducens nerve (CN VI)",
+                "Trigeminal nerve (CN V)"
+              ],
+              "correctIndex": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Histology",
+      "subtitle": "Microscopic Structure of the Eye and Ear",
+      "emoji": "🔬",
+      "page": 40,
+      "lectureRange": "Lectures 11-12",
+      "subjects": [
+        {
+          "id": "histology",
+          "name": "Histology",
+          "iconName": "Microscope",
+          "lectures": "Histology of Eye & Ear Structures",
+          "lectureCount": 2,
+          "questions": [
+            {
+              "id": "MSS2-CH2-HIST-0001",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which layer of the retina contains the cell bodies of the photoreceptor cells (rods and cones)?",
+              "explanation": "The outer nuclear layer of the retina contains the nuclei/cell bodies of photoreceptors (rods and cones).",
+              "keyConcept": "Outer nuclear layer contains rod and cone nuclei.",
+              "options": [
+                "Outer nuclear layer",
+                "Inner nuclear layer",
+                "Ganglion cell layer",
+                "Outer plexiform layer"
+              ],
+              "correctIndex": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Biochemistry",
+      "subtitle": "Visual Cycle and Vitamin A metabolism",
+      "emoji": "🧪",
+      "page": 60,
+      "lectureRange": "Lecture 13",
+      "subjects": [
+        {
+          "id": "biochem",
+          "name": "Biochemistry",
+          "iconName": "FlaskConical",
+          "lectures": "Visual Cycle & Vitamin A Deficiency",
+          "lectureCount": 1,
+          "questions": [
+            {
+              "id": "MSS2-CH3-BIOCH-0001",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which derivative of Vitamin A binds with opsin to form rhodopsin in rod cells?",
+              "explanation": "11-cis-retinal is the light-sensitive chromophore that binds to opsin to synthesize rhodopsin.",
+              "keyConcept": "11-cis-retinal is the active Vitamin A derivative in vision transduction.",
+              "options": [
+                "11-cis-retinal",
+                "All-trans-retinal",
+                "Retinoic acid",
+                "Beta-carotene"
+              ],
+              "correctIndex": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Physiology",
+      "subtitle": "Vision Optics, Retinal Neurotransduction, Auditory mechanics, Smell and Taste",
+      "emoji": "⚡",
+      "page": 75,
+      "lectureRange": "Lectures 14-20",
+      "subjects": [
+        {
+          "id": "physiology",
+          "name": "Physiology",
+          "iconName": "Activity",
+          "lectures": "Vision optics, Adaptation, Hearing physiology, Chemical senses, & Posture",
+          "lectureCount": 8,
+          "questions": [
+            {
+              "id": "MSS2-CH4-PHYS-0001",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Describe the physiological process of accommodation when looking at a near object.",
+              "explanation": "Accommodation involves ciliary muscle contraction, zonular fibers relaxation, and lens rounding.",
+              "keyConcept": "Parasympathetic stimulation increases refractive power of the lens.",
+              "modelAnswer": "Accommodation process for near vision:\n1. Ciliary muscle contraction: Triggered by parasympathetic fibers from Edinger-Westphal nucleus (CN III).\n2. Zonular fibers (suspensory ligaments) relax.\n3. The elastic lens capsules rounds/bulges, increasing its anterior curvature and refractive power.\n4. Pupil constriction (iris closes to increase depth of focus).\n5. Convergence of both eyes (medial recti contract)."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Microbiology",
+      "subtitle": "Infections of the Eye and Ear",
+      "emoji": "🦠",
+      "page": 115,
+      "lectureRange": "Lecture 21",
+      "subjects": [
+        {
+          "id": "microbiology",
+          "name": "Microbiology",
+          "iconName": "Biohazard",
+          "lectures": "Ophthalmic & Otic Infections",
+          "lectureCount": 1,
+          "questions": [
+            {
+              "id": "MSS2-CH5-MICRO-0001",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which serovars of Chlamydia trachomatis are the primary cause of Trachoma, the leading infectious cause of blindness worldwide?",
+              "explanation": "Serovars A, B, Ba, and C cause Trachoma. Serovars D-K cause neonatal conjunctivitis and genitourinary infections. Serovars L1-L3 cause LGV.",
+              "keyConcept": "Chlamydia trachomatis A-C cause Trachoma.",
+              "options": [
+                "Serovars A, B, Ba, and C",
+                "Serovars D through K",
+                "Serovars L1, L2, and L3",
+                "Serovars E and F"
+              ],
+              "correctIndex": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Pathology",
+      "subtitle": "Pathology of Eye and Ear diseases",
+      "emoji": "🚨",
+      "page": 130,
+      "lectureRange": "Lectures 22-23",
+      "subjects": [
+        {
+          "id": "pathology",
+          "name": "Pathology",
+          "iconName": "ShieldAlert",
+          "lectures": "Ocular & Otological Pathological states",
+          "lectureCount": 2,
+          "questions": [
+            {
+              "id": "MSS2-CH6-PATHO-0001",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which ocular condition is characterized histologically by progressive degeneration and loss of retinal ganglion cell axons, accompanied by cup-to-disc ratio expansion?",
+              "explanation": "Glaucoma is characterized by retinal ganglion cell death and optic nerve head cupping, often associated with elevated intraocular pressure.",
+              "keyConcept": "Glaucoma results in optic neuropathy with characteristic cupping.",
+              "options": [
+                "Glaucoma",
+                "Cataract",
+                "Age-related macular degeneration",
+                "Retinitis pigmentosa"
+              ],
+              "correctIndex": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Pharmacology",
+      "subtitle": "Drug therapy of glaucoma and eye conditions",
+      "emoji": "💊",
+      "page": 150,
+      "lectureRange": "Lecture 24",
+      "subjects": [
+        {
+          "id": "pharma",
+          "name": "Pharmacology",
+          "iconName": "Pill",
+          "lectures": "Anti-Glaucoma drug classes",
+          "lectureCount": 1,
+          "questions": [
+            {
+              "id": "MSS2-CH7-PHARM-0001",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which class of topical glaucoma medications lowers intraocular pressure primarily by increasing uveoscleral outflow of aqueous humor?",
+              "explanation": "Prostaglandin analogs (e.g. Latanoprost) act by increasing uveoscleral outflow. Beta-blockers and carbonic anhydrase inhibitors decrease aqueous humor production.",
+              "keyConcept": "Prostaglandin analogs promote uveoscleral outflow.",
+              "options": [
+                "Prostaglandin analogs",
+                "Beta-adrenergic blockers",
+                "Carbonic anhydrase inhibitors",
+                "Alpha-2 adrenergic agonists"
+              ],
+              "correctIndex": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Ophthalmology",
+      "subtitle": "Clinical Ocular examination and neuroophthalmic pathology",
+      "emoji": "👁️‍🗨️",
+      "page": 160,
+      "lectureRange": "Lecture 25",
+      "subjects": [
+        {
+          "id": "ophthalmology",
+          "name": "Ophthalmology",
+          "iconName": "Eye",
+          "lectures": "Neuroophthalmic examination basics",
+          "lectureCount": 1,
+          "questions": [
+            {
+              "id": "MSS2-CH8-OPHTH-0001",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Explain the significance of finding an Afferent Pupillary Defect (Marcus Gunn Pupil) during an examination.",
+              "explanation": "A Marcus Gunn pupil signifies unilateral optic nerve pathology or severe retinal disease.",
+              "keyConcept": "Afferent defects show paradoxically dilated pupils on direct illumination during swinging flashlight test.",
+              "modelAnswer": "Significance of Marcus Gunn Pupil (APD):\n- Indicated by: Paradoxical dilation of the affected pupil when light is swung from the normal eye to the affected eye during the swinging flashlight test.\n- Clinical cause: Suggests significant damage to the afferent visual pathway (most commonly optic neuritis, optic nerve compression, or severe ischemic retinal damage) anterior to the optic chiasm."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "E.N.T.",
+      "subtitle": "Otology, Rhinology, Hearing loss and sensory nerve disorders",
+      "emoji": "👂",
+      "page": 170,
+      "lectureRange": "Lectures 26-27",
+      "subjects": [
+        {
+          "id": "ent",
+          "name": "E.N.T.",
+          "iconName": "Ear",
+          "lectures": "Hearing loss & smell/taste sensory disturbances",
+          "lectureCount": 2,
+          "questions": [
+            {
+              "id": "MSS2-CH9-ENT-0001",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Compare between Conductive hearing loss and Sensorineural hearing loss in terms of Rinne and Weber test results.",
+              "explanation": "Rinne test is negative in conductive loss. Weber lateralizes to the diseased side in conductive and normal side in sensorineural.",
+              "keyConcept": "Tuning fork tests distinguish conductive from sensorineural deficits.",
+              "modelAnswer": "| Test | Conductive Hearing Loss (Left Ear) | Sensorineural Hearing Loss (Left Ear) |\n|---|---|---|\n| Rinne Test (Left Ear) | Negative (Bone Conduction > Air Conduction) | Positive (Air Conduction > Bone Conduction) |\n| Weber Test | Lateralizes to the Left (affected) ear | Lateralizes to the Right (normal/better) ear |\n| Common causes | Otitis media, wax accumulation, otosclerosis | Presbycusis, noise exposure, acoustic neuroma |"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
