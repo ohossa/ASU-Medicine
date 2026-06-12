@@ -1,0 +1,33 @@
+/* Organic blob breathing — slow scale + drift, accent depth */
+@keyframes mesh-pulse {
+  0%, 100% { transform: scale(1) translate(0, 0); opacity: 1; }
+  50%      { transform: scale(1.12) translate(-2%, 3%); opacity: 0.85; }
+}
+.animate-mesh-pulse {
+  animation: mesh-pulse 9s ease-in-out infinite;
+  will-change: transform, opacity;
+}
+
+/* EKG waveform draws itself, then sweeps continuously */
+@keyframes ekg {
+  0%   { stroke-dashoffset: 600; }
+  60%  { stroke-dashoffset: 0; }
+  100% { stroke-dashoffset: -600; }
+}
+.animate-ekg {
+  stroke-dasharray: 600;
+  animation: ekg 4.5s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-mesh-pulse, .animate-ekg { animation: none; }
+  .animate-ekg { stroke-dasharray: none; }
+}
+
+.group:hover .study-mode-cta {
+  background-color: var(--cta-accent);
+  color: white !important;
+  border-color: var(--cta-accent) !important;
+  box-shadow: 0 0 0 3px var(--cta-accent-light), 0 0 20px -4px var(--cta-accent);
+}
+

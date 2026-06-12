@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { GraduationCap, ChevronRight, ChevronLeft, X, Lock, CheckCircle, Info, ArrowRight } from 'lucide-react';
+import { GraduationCap, ChevronRight, ChevronLeft, X, Lock, CheckCircle, Info, ArrowRight, BookOpen, Layers, Award, Calendar } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useLanguage } from '../context/LanguageContext';
 import { SYLLABUS_MODULES, isModuleActive } from '../data';
@@ -35,7 +35,13 @@ const LOCAL_TRANSLATIONS = {
     year5: 'Year 5',
     creditPoints: 'Credit Points',
     marks: 'Marks',
-    chooseAnotherModule: 'Choose Another Module'
+    chooseAnotherModule: 'Choose Another Module',
+    preClerkship: 'Pre-Clerkship',
+    clerkship: 'Clerkship',
+    firstHalf: 'First Half',
+    secondHalf: 'Second Half',
+    semestersCount: '2 Semesters',
+    activeLabel: 'Active System'
   },
   ar: {
     selectModuleTracker: 'متابع التقدم الدراسي',
@@ -59,8 +65,22 @@ const LOCAL_TRANSLATIONS = {
     year5: 'السنة الخامسة',
     creditPoints: 'الساعات المعتمدة',
     marks: 'الدرجات',
-    chooseAnotherModule: 'اختر وحدة أخرى'
+    chooseAnotherModule: 'اختر وحدة أخرى',
+    preClerkship: 'الأساسي',
+    clerkship: 'الإكلينيكي',
+    firstHalf: 'الفترة الأولى',
+    secondHalf: 'الفترة الثانية',
+    semestersCount: 'فصلان دراسيان',
+    activeLabel: 'النظام النشط'
   }
+};
+
+const YEAR_METADATA: Record<number, { cp: number; active: boolean }> = {
+  1: { cp: 27, active: false },
+  2: { cp: 27, active: true },
+  3: { cp: 30, active: false },
+  4: { cp: 32, active: false },
+  5: { cp: 32, active: false }
 };
 
 export function StudyTrackerSelectorModal({ onClose, onSelectModule }: Props) {
@@ -121,21 +141,37 @@ export function StudyTrackerSelectorModal({ onClose, onSelectModule }: Props) {
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-gray-950/40 dark:bg-black/60 backdrop-blur-md animate-fade-in"
+      className="fixed inset-0 z-50 flex items-center justify-center p-4"
       role="dialog"
       aria-modal="true"
       dir={isRTL ? 'rtl' : 'ltr'}
     >
-      <div className="w-full max-w-lg bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 rounded-[32px] p-6 sm:p-8 shadow-2xl relative overflow-hidden flex flex-col max-h-[90vh]">
-        {/* Decorative corner */}
-        <div className={`absolute top-0 ${isRTL ? 'left-0 bg-gradient-to-br' : 'right-0 bg-gradient-to-bl'} w-24 h-24 from-physiology/8 to-transparent rounded-bl-[80px] pointer-events-none`} />
+      {/* Animated Backdrop */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        onClick={onClose}
+        className="absolute inset-0 bg-gray-950/40 dark:bg-black/60 backdrop-blur-md"
+      />
+
+      {/* Animated Card Container */}
+      <motion.div
+        initial={{ opacity: 0, scale: 0.95, y: 16 }}
+        animate={{ opacity: 1, scale: 1, y: 0 }}
+        exit={{ opacity: 0, scale: 0.95, y: 16 }}
+        transition={{ type: 'spring', stiffness: 350, damping: 28 }}
+        className="w-full max-w-xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 rounded-[32px] p-6 sm:p-8 shadow-2xl relative overflow-hidden flex flex-col max-h-[90vh] z-10"
+      >
+        {/* Decorative background radial glow */}
+        <div className={`absolute top-0 ${isRTL ? 'left-0 bg-gradient-to-br' : 'right-0 bg-gradient-to-bl'} w-32 h-32 from-physiology/8 to-transparent rounded-bl-[80px] pointer-events-none`} />
 
         {/* Top Header Buttons */}
         <div className="flex items-center justify-between mb-6 relative z-10">
           {comingSoonModule || step !== 'year' ? (
             <button
               onClick={handleBack}
-              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl border border-gray-100 dark:border-gray-800 bg-gray-50 dark:bg-gray-800/40 text-xs font-bold text-gray-650 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 transition-all active:scale-95 cursor-pointer"
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl border border-gray-100 dark:border-gray-800 bg-gray-50 dark:bg-gray-800/40 text-xs font-bold text-gray-650 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-850 hover:border-gray-200 dark:hover:border-gray-700 transition-all active:scale-95 cursor-pointer"
             >
               <ChevronLeft size={14} className={isRTL ? 'rotate-180' : ''} />
               <span>{tLocal('back')}</span>
@@ -148,7 +184,7 @@ export function StudyTrackerSelectorModal({ onClose, onSelectModule }: Props) {
 
           <button
             onClick={onClose}
-            className="w-8 h-8 rounded-xl bg-gray-100 dark:bg-gray-800/60 flex items-center justify-center text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 hover:scale-105 active:scale-95 transition-all cursor-pointer"
+            className="w-8 h-8 rounded-xl bg-gray-100 dark:bg-gray-850 flex items-center justify-center text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 hover:scale-105 active:scale-95 transition-all cursor-pointer"
             aria-label={tLocal('close')}
           >
             <X size={16} />
@@ -179,7 +215,7 @@ export function StudyTrackerSelectorModal({ onClose, onSelectModule }: Props) {
                 </p>
                 <button
                   onClick={handleBack}
-                  className="w-full py-3 px-6 bg-physiology text-white hover:bg-physiology-dark dark:hover:bg-physiology/90 rounded-2xl font-bold transition-all hover:scale-[1.02] active:scale-98 shadow-md hover:shadow-lg cursor-pointer"
+                  className="w-full py-3 px-6 bg-physiology text-white hover:bg-physiology/90 dark:hover:bg-physiology/90 rounded-2xl font-bold transition-all hover:scale-[1.02] active:scale-98 shadow-md hover:shadow-lg cursor-pointer"
                 >
                   {tLocal('chooseAnotherModule')}
                 </button>
@@ -201,17 +237,43 @@ export function StudyTrackerSelectorModal({ onClose, onSelectModule }: Props) {
                   </p>
                 </div>
 
-                <div className="flex flex-col gap-2.5">
-                  {([1, 2, 3, 4, 5] as const).map((year) => (
-                    <button
-                      key={year}
-                      onClick={() => handleSelectYear(year)}
-                      className="group w-full py-4 px-5 bg-gray-50 hover:bg-physiology/8 dark:bg-white/5 dark:hover:bg-physiology/10 text-gray-900 dark:text-white rounded-2xl font-semibold transition-all duration-200 hover:scale-[1.01] border border-transparent hover:border-physiology/20 flex items-center justify-between cursor-pointer"
-                    >
-                      <span className="text-sm font-bold">{getYearLabel(year)}</span>
-                      <ChevronRight size={16} className={`text-gray-400 group-hover:text-physiology transition-all duration-250 group-hover:translate-x-0.5 ${isRTL ? 'rotate-180 group-hover:-translate-x-0.5' : ''}`} />
-                    </button>
-                  ))}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {([1, 2, 3, 4, 5] as const).map((year) => {
+                    const isClinical = year >= 4;
+                    const phaseLabel = isClinical ? tLocal('clerkship') : tLocal('preClerkship');
+                    const metadata = YEAR_METADATA[year];
+                    const activeText = metadata.active ? ` · ${tLocal('activeLabel')}` : '';
+                    const descText = `${tLocal('semestersCount')} · ${metadata.cp} CP${activeText}`;
+                    return (
+                      <button
+                        key={year}
+                        onClick={() => handleSelectYear(year)}
+                        className="group relative w-full overflow-hidden py-7 px-8 bg-white dark:bg-gradient-to-br dark:from-slate-900/60 dark:to-slate-950/80 border border-gray-150 dark:border-slate-800/80 hover:border-physiology/30 dark:hover:border-physiology/30 text-gray-900 dark:text-white rounded-[28px] shadow-[0_4px_20px_rgba(0,0,0,0.01)] hover:shadow-lg hover:shadow-physiology/4 dark:hover:shadow-physiology/8 transition-all duration-300 hover:scale-[1.02] hover:-translate-y-0.5 text-left rtl:text-right cursor-pointer flex items-center justify-between"
+                      >
+                        <div className="min-w-0 z-10 flex flex-col items-start pr-2 rtl:pr-0 rtl:pl-2">
+                          <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-[9px] font-extrabold uppercase tracking-widest leading-none mb-3 border ${
+                            isClinical 
+                              ? 'bg-blue-500/10 border-blue-500/20 text-blue-500' 
+                              : 'bg-physiology/10 border-physiology/20 text-physiology'
+                          }`}>
+                            {phaseLabel}
+                          </span>
+                          <span className="block font-archivo text-xl font-extrabold tracking-tight">
+                            {getYearLabel(year)}
+                          </span>
+                          <span className="block text-[11px] font-semibold text-gray-400 dark:text-gray-500 mt-2 tracking-wide">
+                            {descText}
+                          </span>
+                        </div>
+                        <span className="font-archivo font-black text-6xl opacity-[0.03] dark:opacity-[0.05] group-hover:opacity-[0.10] text-gray-400 group-hover:text-physiology transition-all duration-300 select-none absolute right-16 top-1/2 -translate-y-1/2 pointer-events-none">
+                          {year}
+                        </span>
+                        <div className="w-8 h-8 rounded-full bg-gray-50 dark:bg-white/[0.04] border border-gray-150 dark:border-white/[0.06] group-hover:border-physiology/20 group-hover:bg-physiology/10 flex items-center justify-center text-gray-400 group-hover:text-physiology transition-all duration-300 transform group-hover:translate-x-1 rtl:group-hover:-translate-x-1 shrink-0 relative z-10">
+                          <ChevronRight size={16} className={isRTL ? 'rotate-180' : ''} />
+                        </div>
+                      </button>
+                    );
+                  })}
                 </div>
               </motion.div>
             ) : step === 'semester' ? (
@@ -231,17 +293,29 @@ export function StudyTrackerSelectorModal({ onClose, onSelectModule }: Props) {
                   </p>
                 </div>
 
-                <div className="flex flex-col gap-3">
-                  {([1, 2] as const).map((sem) => (
-                    <button
-                      key={sem}
-                      onClick={() => handleSelectSemester(sem)}
-                      className="group w-full py-5 px-6 bg-gray-50 hover:bg-physiology/8 dark:bg-white/5 dark:hover:bg-physiology/10 text-gray-900 dark:text-white rounded-2xl font-semibold transition-all duration-200 hover:scale-[1.01] border border-transparent hover:border-physiology/20 flex items-center justify-between cursor-pointer"
-                    >
-                      <span className="text-base font-bold">{tLocal(`semester${sem}` as any)}</span>
-                      <ChevronRight size={16} className={`text-gray-400 group-hover:text-physiology transition-all duration-250 group-hover:translate-x-0.5 ${isRTL ? 'rotate-180 group-hover:-translate-x-0.5' : ''}`} />
-                    </button>
-                  ))}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {([1, 2] as const).map((sem) => {
+                    const labelSem = sem === 1 ? tLocal('firstHalf') : tLocal('secondHalf');
+                    return (
+                      <button
+                        key={sem}
+                        onClick={() => handleSelectSemester(sem)}
+                        className="group relative overflow-hidden p-6 bg-white dark:bg-gradient-to-br dark:from-slate-900/60 dark:to-slate-950/80 hover:bg-physiology/5 dark:hover:bg-physiology/8 border border-gray-150 dark:border-slate-800/80 hover:border-physiology/30 dark:hover:border-physiology/30 text-gray-900 dark:text-white rounded-[24px] shadow-[0_4px_20px_rgba(0,0,0,0.01)] hover:shadow-lg transition-all duration-300 hover:scale-[1.02] hover:-translate-y-0.5 text-center flex flex-col items-center justify-center gap-4 cursor-pointer min-h-[160px]"
+                      >
+                        <div className="w-14 h-14 rounded-2xl bg-physiology/10 border border-physiology/20 flex items-center justify-center text-physiology group-hover:scale-110 group-hover:bg-physiology/15 transition-all duration-300 shrink-0">
+                          {sem === 1 ? <BookOpen size={24} /> : <GraduationCap size={24} />}
+                        </div>
+                        <div>
+                          <span className="block font-archivo text-lg font-extrabold tracking-tight">
+                            {tLocal(`semester${sem}` as any)}
+                          </span>
+                          <span className="block text-[11px] font-semibold text-gray-400 dark:text-gray-500 uppercase tracking-widest mt-1.5 opacity-90">
+                            {labelSem}
+                          </span>
+                        </div>
+                      </button>
+                    );
+                  })}
                 </div>
               </motion.div>
             ) : (
@@ -261,57 +335,57 @@ export function StudyTrackerSelectorModal({ onClose, onSelectModule }: Props) {
                   </p>
                 </div>
 
-                <div className="flex flex-col gap-3">
+                <div className="flex flex-col gap-3.5">
                   {(SYLLABUS_MODULES[selectedYear!]?.[selectedSemester!] || []).map((mod) => {
                     const active = isModuleActive(mod.code);
                     return (
                       <button
                         key={mod.code}
                         onClick={() => handleSelectModule(mod)}
-                        className={`group w-full py-4 px-5 rounded-2xl border transition-all duration-250 hover:scale-[1.01] text-start flex flex-col justify-between gap-3 cursor-pointer ${
+                        className={`group relative overflow-hidden w-full p-6 rounded-[24px] border transition-all duration-300 hover:scale-[1.01] hover:-translate-y-0.5 text-start flex flex-col gap-4 cursor-pointer ${
                           active
-                            ? 'bg-white hover:bg-physiology/5 border-gray-150 dark:bg-gray-900 dark:border-gray-800 dark:hover:bg-physiology/10 hover:border-physiology/30'
-                            : 'bg-gray-50/70 dark:bg-gray-800/20 border-gray-100 dark:border-gray-800/40 hover:bg-gray-100/50 dark:hover:bg-gray-800/40'
+                            ? 'bg-white dark:bg-gradient-to-br dark:from-slate-900/60 dark:to-slate-950/80 border-gray-150 dark:border-slate-800/85 hover:border-physiology/40 dark:hover:border-physiology/40 shadow-sm hover:shadow-md'
+                            : 'bg-gray-50/60 dark:bg-white/[0.01] border-gray-100 dark:border-gray-800/40 opacity-70 dark:opacity-60'
                         }`}
                       >
-                        <div className="w-full flex items-start justify-between gap-2">
-                          <div className="flex-1">
-                            <span className="block text-[11px] font-bold text-physiology uppercase tracking-widest">
+                        <div className="flex items-start justify-between gap-4 w-full">
+                          <div className="flex-1 min-w-0">
+                            <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-md bg-physiology/10 border border-physiology/20 text-[10px] font-extrabold text-physiology uppercase tracking-widest leading-none">
                               {mod.code}
                             </span>
-                            <h4 className="font-archivo font-bold text-sm text-gray-900 dark:text-white mt-1 leading-snug">
+                            <h4 className="font-archivo font-extrabold text-lg text-gray-900 dark:text-white mt-2.5 leading-snug truncate">
                               {mod.name}
                             </h4>
                           </div>
 
                           <div className="shrink-0 mt-0.5">
                             {active ? (
-                              <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-green-500/10 border border-green-500/20 text-[10px] font-bold text-green-600 dark:text-green-400 uppercase tracking-wider">
-                                <CheckCircle size={10} />
+                              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-green-500/10 border border-green-500/20 text-[10px] font-bold text-green-600 dark:text-green-400 uppercase tracking-wider">
+                                <CheckCircle size={11} />
                                 {tLocal('readyToTrack')}
                               </span>
                             ) : (
-                              <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-gray-200/55 dark:bg-white/5 border border-transparent text-[10px] font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wider">
-                                <Lock size={10} />
+                              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-gray-200/50 dark:bg-white/5 border border-transparent text-[10px] font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wider">
+                                <Lock size={11} />
                                 {tLocal('comingSoon')}
                               </span>
                             )}
                           </div>
                         </div>
 
-                        <div className="w-full flex items-center justify-between pt-2 border-t border-gray-100 dark:border-gray-800/60 text-[10px] font-medium text-gray-400 dark:text-gray-500">
-                          <div className="flex gap-4">
-                            <span>
-                              {tLocal('creditPoints')}: <strong className="text-gray-700 dark:text-gray-300">{mod.cp}</strong>
+                        <div className="flex items-center justify-between pt-3.5 border-t border-gray-100 dark:border-gray-800/60 text-[11px] font-medium text-gray-400 dark:text-gray-500 w-full">
+                          <div className="flex items-center gap-3.5">
+                            <span className="inline-flex items-center gap-1 bg-gray-50 dark:bg-white/5 px-2.5 py-1 rounded-md border border-gray-150/40 dark:border-white/[0.04]">
+                              {tLocal('creditPoints')}: <strong className="text-gray-700 dark:text-gray-300 font-bold ms-0.5">{mod.cp}</strong>
                             </span>
-                            <span>
-                              {tLocal('marks')}: <strong className="text-gray-700 dark:text-gray-300">{mod.marks}</strong>
+                            <span className="inline-flex items-center gap-1 bg-gray-50 dark:bg-white/5 px-2.5 py-1 rounded-md border border-gray-150/40 dark:border-white/[0.04]">
+                              {tLocal('marks')}: <strong className="text-gray-700 dark:text-gray-300 font-bold ms-0.5">{mod.marks}</strong>
                             </span>
                           </div>
 
                           {active && (
-                            <span className="inline-flex items-center gap-0.5 text-xs text-physiology font-semibold group-hover:translate-x-1 transition-transform duration-200">
-                              <ArrowRight size={14} className={isRTL ? 'rotate-180 group-hover:-translate-x-1' : ''} />
+                            <span className="inline-flex items-center text-physiology group-hover:translate-x-1 transition-transform duration-300">
+                              <ArrowRight size={16} className={isRTL ? 'rotate-180 group-hover:-translate-x-1' : ''} />
                             </span>
                           )}
                         </div>
@@ -323,7 +397,7 @@ export function StudyTrackerSelectorModal({ onClose, onSelectModule }: Props) {
             )}
           </AnimatePresence>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import { pulse } from '../../lib/pulseEngine';
 
 /* ============================================================
    3D SIMPLEX NOISE (compact, public-domain style implementation)
@@ -127,6 +128,13 @@ const THEMES = {
     ambientOn:   false,
     glowAlpha:   0.06
   }
+};
+
+const MOOD_TINT: Record<string, string> = {
+  correct:   'rgba(34, 197, 94, OPACITY)',  // brand green bloom
+  wrong:     'rgba(244, 63, 94, OPACITY)',  // coral (matches Year 5 / Essay accent)
+  streak:    'rgba(168, 85, 247, OPACITY)', // violet (Year 3)
+  celebrate: 'rgba(59, 130, 246, OPACITY)', // blue (Year 2 / Mixed)
 };
 
 /* ============================================================
@@ -432,8 +440,12 @@ export function InteractiveBackground() {
       updateMotion(now);
       mouse.energy *= 0.94;
 
+      // Pulse-driven ambient energy: density, speed, glow all scale with this.
+      const E = pulse.energy;           // 0..1
+      const urgency = pulse.timerUrgency;
+
       // Simulation
-      for (const c of cells) c.step(now, dt, W, H, mouse, motionScale);
+      for (const c of cells) c.step(now, dt, W, H, mouse, motionScale * (0.7 + E * 0.6));
       targets = mouse.active ? nearestCells(3) : [];
 
       // Spawn pulses at random 2–5 Hz intervals
@@ -453,6 +465,11 @@ export function InteractiveBackground() {
 
       ctx.fillStyle = currentTheme.base;
       ctx.fillRect(0, 0, W, H);
+
+      if (pulse.mood !== 'idle' && pulse.mood !== 'focus' && MOOD_TINT[pulse.mood]) {
+        ctx.fillStyle = MOOD_TINT[pulse.mood].replace('OPACITY', '0.04');
+        ctx.fillRect(0, 0, W, H);
+      }
 
       // Ambient violet back-glow spots (dark mode and desktop only to optimize mobile GPU fill-rate)
       if (currentTheme.ambientOn && !isMobile) {
@@ -507,6 +524,33 @@ export function InteractiveBackground() {
         ctx.fillRect(px - 7, py - 7, 14, 14);
       }
 
+      // Answer bursts
+      for (let i = pulse.bursts.length - 1; i >= 0; i--) {
+        const b = pulse.bursts[i];
+        b.t += dt * 0.0016;
+        if (b.t >= 1) { pulse.bursts.splice(i, 1); continue; }
+        const radius = 12 + b.t * 220;
+        const fade = 1 - b.t;
+        const tint = b.kind === 'wrong'
+          ? `rgba(244,63,94,${(0.5 * fade).toFixed(3)})`
+          : b.kind === 'levelup'
+            ? `rgba(168,85,247,${(0.6 * fade).toFixed(3)})`
+            : `rgba(34,197,94,${(0.5 * fade).toFixed(3)})`;
+        ctx.beginPath();
+        ctx.arc(b.x, b.y, radius, 0, Math.PI * 2);
+        ctx.strokeStyle = tint;
+        ctx.lineWidth = 2 + fade * 2;
+        ctx.stroke();
+      }
+
+      // Read current subject-glow if set
+      let customGlow = '';
+      try {
+        customGlow = getComputedStyle(document.documentElement).getPropertyValue('--subject-glow').trim();
+      } catch (e) {}
+      const membraneGlowColor = customGlow || currentTheme.membraneGlow;
+      const glowAlphaValue = currentTheme.glowAlpha + E * 0.12;
+
       // Membranes
       for (let li = 0; li < 3; li++) {
         const def = currentLayerDef[li];
@@ -536,12 +580,22 @@ export function InteractiveBackground() {
 
         if (li === 1) {
           ctx.filter = 'none';
-          ctx.globalAlpha = currentTheme.glowAlpha;
-          ctx.strokeStyle = currentTheme.membraneGlow;
+          ctx.globalAlpha = glowAlphaValue;
+          ctx.strokeStyle = membraneGlowColor;
           ctx.lineWidth = 6;
           ctx.stroke(layerPath);
         }
         ctx.restore();
+      }
+
+      // Urgency red wash
+      if (urgency > 0.5) {
+        const a = (urgency - 0.5) * 0.5;
+        const g = ctx.createRadialGradient(W/2, H/2, H*0.3, W/2, H/2, H*0.8);
+        g.addColorStop(0, 'rgba(244,63,94,0)');
+        g.addColorStop(1, `rgba(244,63,94,${a.toFixed(3)})`);
+        ctx.fillStyle = g;
+        ctx.fillRect(0, 0, W, H);
       }
     };
 

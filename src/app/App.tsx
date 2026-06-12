@@ -1,5 +1,12 @@
 import { useState, useEffect, useRef, Suspense, lazy } from 'react';
+import { BrowserRouter, Routes, Route, Navigate, useParams, useNavigate, useLocation } from 'react-router';
+import { ProgressProvider } from './store/progress';
+import { LevelUpOverlay } from './components/LevelUpOverlay';
+import Dashboard from '../pages/Dashboard';
+import YearModules from '../pages/YearModules';
+import StudyMode from '../pages/StudyMode';
 import { createPortal } from 'react-dom';
+import { AnimatePresence } from 'framer-motion';
 import {
   GraduationCap,
   BookOpen,
@@ -38,6 +45,7 @@ const AnalyticsDashboard = lazy(() => import('./components/AnalyticsDashboard').
 const ClinicalCaseSolver = lazy(() => import('./components/ClinicalCaseSolver').then(m => ({ default: m.ClinicalCaseSolver })));
 const QuestionSearch = lazy(() => import('./components/QuestionSearch').then(m => ({ default: m.QuestionSearch })));
 const MarksCalculator = lazy(() => import('./components/MarksCalculator').then(m => ({ default: m.MarksCalculator })));
+const SyllabusTrackerPage = lazy(() => import('../pages/SyllabusTrackerPage').then(m => ({ default: m.SyllabusTrackerPage })));
 import { SyllabusTracker } from './components/SyllabusTracker';
 import { StudyTrackerSelectorModal } from './components/StudyTrackerSelectorModal';
 import { ThemeProvider, useTheme } from './context/ThemeContext';
@@ -308,10 +316,189 @@ function AcademicYearProfilePage({
   );
 }
 
+const lookupModule = (mCode: string): ModuleInfo | null => {
+  for (const year of Object.values(SYLLABUS_MODULES)) {
+    for (const sem of Object.values(year)) {
+      const found = sem.find(m => m.code.toLowerCase() === mCode.toLowerCase());
+      if (found) return found;
+    }
+  }
+  return null;
+};
+
+function QuizFlowWrapper({
+  code,
+  mode,
+  selectedModule,
+  setSelectedModule,
+  studyMode,
+  setStudyMode,
+  screen,
+  setScreen,
+  activeChapters,
+  studyModeNameMap,
+  selectedChapter,
+  setSelectedChapter,
+  handleSelectChapter,
+  handleSelectHistory,
+  customUserButton,
+  selectedYear,
+  selectedSemester,
+  handleSelectSubject,
+  handleQuickStart,
+  quizPayload,
+  handleFinishQuiz,
+  resultPayload,
+  handleRetake,
+  handleBackToChapters,
+  isFromHistory,
+  setIsFromHistory,
+  historySource,
+  t
+}: {
+  code?: string;
+  mode?: string;
+  selectedModule: ModuleInfo | null;
+  setSelectedModule: (m: ModuleInfo | null) => void;
+  studyMode: 'mcq' | 'essay' | 'mixed' | null;
+  setStudyMode: (m: 'mcq' | 'essay' | 'mixed' | null) => void;
+  screen: Screen;
+  setScreen: (s: Screen) => void;
+  activeChapters: any[];
+  studyModeNameMap: Record<string, string>;
+  selectedChapter: ChapterData | null;
+  setSelectedChapter: (c: ChapterData | null) => void;
+  handleSelectChapter: (c: ChapterData) => void;
+  handleSelectHistory: (res: any, source: any) => void;
+  customUserButton: React.ReactNode;
+  selectedYear: number | null;
+  selectedSemester: number | null;
+  handleSelectSubject: (s: SubjectData, q: Question[]) => void;
+  handleQuickStart: (q: Question[]) => void;
+  quizPayload: QuizPayload | null;
+  handleFinishQuiz: (answers: Record<number, any>, elapsedSeconds: number, flaggedQuestions: Set<number>) => void;
+  resultPayload: ResultPayload | null;
+  handleRetake: () => void;
+  handleBackToChapters: () => void;
+  isFromHistory: boolean;
+  setIsFromHistory: (b: boolean) => void;
+  historySource: 'chapters' | 'history' | null;
+  t: (key: string) => string;
+}) {
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (code) {
+      const targetModule = lookupModule(code);
+      if (targetModule) {
+        setSelectedModule(targetModule);
+      }
+    }
+    if (mode) {
+      setStudyMode(mode as any);
+    }
+    if (screen !== 'chapters' && screen !== 'subjects' && screen !== 'quiz' && screen !== 'results') {
+      setScreen('chapters');
+    }
+  }, [code, mode, setSelectedModule, setStudyMode, setScreen, screen]);
+
+  if (!selectedModule || !studyMode) {
+    return <div>Loading module...</div>;
+  }
+
+  return (
+    <>
+      {screen === 'chapters' && (
+        <Suspense fallback={<div>Loading...</div>}>
+          <ChapterSelect
+            chapters={activeChapters}
+            studyModeName={studyModeNameMap[studyMode]}
+            moduleName={selectedModule.name}
+            moduleCode={selectedModule.code}
+            onSelectChapter={handleSelectChapter}
+            onSelectHistory={(res) => handleSelectHistory(res, 'chapters')}
+            onBackToModeSelect={() => navigate(`/year-2/${selectedModule.code.toLowerCase()}`)}
+            userButton={customUserButton}
+            breadcrumbPath={[
+              { label: t('portal') || 'Portal', onClick: () => navigate('/') },
+              { label: t(`year${selectedYear || 2}`) || `Year ${selectedYear || 2}`, onClick: () => navigate('/year-2') },
+              { label: selectedModule?.name || '' }
+            ]}
+          />
+        </Suspense>
+      )}
+
+      {screen === 'subjects' && selectedChapter && (
+        <SubjectSelect
+          chapter={selectedChapter}
+          breadcrumbPath={[
+            { label: t('portal') || 'Portal', onClick: () => navigate('/') },
+            { label: t(`year${selectedYear || 2}`) || `Year ${selectedYear || 2}`, onClick: () => navigate('/year-2') },
+            { label: selectedModule?.name || '', onClick: () => navigate(`/year-2/${selectedModule.code.toLowerCase()}`) },
+            { label: selectedChapter.title }
+          ]}
+          onBack={() => setScreen('chapters')}
+          onSelectSubject={handleSelectSubject}
+          onQuickStart={handleQuickStart}
+          userButton={customUserButton}
+        />
+      )}
+
+      {screen === 'quiz' && quizPayload && (
+        <Suspense fallback={<div>Loading...</div>}>
+          <QuizInterface
+            chapter={quizPayload.chapter}
+            subject={quizPayload.subject}
+            questions={quizPayload.questions}
+            onBack={() => setScreen('subjects')}
+            onFinish={handleFinishQuiz}
+            userButton={customUserButton}
+          />
+        </Suspense>
+      )}
+
+      {screen === 'results' && resultPayload && (
+        <Suspense fallback={<div>Loading...</div>}>
+          <ResultsDashboard
+            chapter={resultPayload.chapter}
+            subject={resultPayload.subject}
+            questions={resultPayload.questions}
+            answers={resultPayload.answers}
+            elapsedSeconds={resultPayload.elapsedSeconds}
+            flaggedQuestions={resultPayload.flaggedQuestions}
+            onRetake={handleRetake}
+            onTryAnotherSubject={() => {
+              if (isFromHistory) {
+                setIsFromHistory(false);
+                setScreen(historySource === 'chapters' ? 'chapters' : 'history');
+              } else {
+                setScreen('subjects');
+              }
+            }}
+            onBackToChapters={handleBackToChapters}
+            onBackToSubjects={() => {
+              if (isFromHistory) {
+                setIsFromHistory(false);
+                setScreen(historySource === 'chapters' ? 'chapters' : 'history');
+              } else {
+                setScreen('subjects');
+              }
+            }}
+            userButton={customUserButton}
+          />
+        </Suspense>
+      )}
+    </>
+  );
+}
+
 function MainApp() {
   const { t, language, toggleLanguage } = useLanguage();
   const { user } = useUser();
   const { isDark } = useTheme();
+  const navigate = useNavigate();
+  const params = useParams();
+  const location = useLocation();
   
   // Initialize automatic cloud synchronization
   useCloudSync();
@@ -913,15 +1100,14 @@ function MainApp() {
       </UserButton.UserProfilePage>
 
       <UserButton.MenuItems>
-        {/* Go to Dashboard button */}
         <UserButton.Action
           label={language === 'en' ? "Dashboard" : "اللوحة الرئيسية"}
           labelIcon={<Home size={16} className="text-physiology" />}
           onClick={() => {
             transitionTo(() => {
-              setScreen('yearSelect');
               setQuizPayload(null);
               setResultPayload(null);
+              navigate('/');
             });
           }}
         />
@@ -930,7 +1116,7 @@ function MainApp() {
           label={language === 'en' ? "Performance Dashboard" : "لوحة تحليلات الأداء"}
           labelIcon={<Activity size={16} className="text-[#2dd4bf]" />}
           onClick={() => {
-            transitionTo(() => setScreen('analytics'));
+            transitionTo(() => navigate('/analytics'));
           }}
         />
 
@@ -938,7 +1124,7 @@ function MainApp() {
           label="Flagged Questions"
           labelIcon={<Flag size={16} className="text-clinical" />}
           onClick={() => {
-            transitionTo(() => setScreen('flaggedQuestions'));
+            transitionTo(() => navigate('/flagged-questions'));
           }}
         />
 
@@ -962,7 +1148,7 @@ function MainApp() {
   );
 
   return (
-    <div className="min-h-screen text-gray-900 dark:text-gray-100 font-manrope selection:bg-physiology/20 selection:text-physiology-dark">
+    <div className="min-h-screen text-gray-900 dark:text-gray-100 font-manrope selection:bg-physiology/20 selection:text-physiology-dark overflow-x-hidden">
 
       <style>{`
         @keyframes shrinkHeader {
@@ -1016,871 +1202,176 @@ function MainApp() {
         .animate-pop-up { animation: popUp 600ms cubic-bezier(0.16, 1, 0.3, 1) both; }
         .grid-delay:nth-child(1) { animation-delay: 40ms; }
         .grid-delay:nth-child(2) { animation-delay: 80ms; }
-        .grid-delay:nth-child(3) { animation-delay: 120ms; }
-        .grid-delay:nth-child(4) { animation-delay: 160ms; }
-        .grid-delay:nth-child(5) { animation-delay: 200ms; }
-        .grid-delay:nth-child(6) { animation-delay: 240ms; }
-        
-        .portal-card {
-          transition: all 500ms cubic-bezier(0.16, 1, 0.3, 1);
-        }
-        .portal-card:hover {
-          transform: translateY(-8px) scale(1.02);
-          z-index: 10;
-        }
-        .animate-flip-rtl {
-          transition: transform 300ms ease;
-        }
-        html[dir="rtl"] .animate-flip-rtl {
-          transform: rotate(180deg);
-        }
       `}</style>
 
-      {/* TOP NAVIGATION HEADER WITH BREADCRUMBS */}
-      {['yearSelect', 'semesterSelect', 'moduleSelect', 'studyModeSelect'].includes(screen) && (
-        <header className="shrinking-header bg-white/70 dark:bg-gray-900/70 backdrop-blur-xl border-b border-gray-100 dark:border-gray-800/50 sticky top-0 z-40 transition-colors duration-300">
-          <div className="max-w-[1600px] mx-auto px-6 py-3 transition-all duration-300 flex flex-wrap items-center justify-between gap-y-4">
-            <div className="flex items-center gap-3 bg-gray-50/50 dark:bg-gray-800/30 backdrop-blur-md border border-gray-200/40 dark:border-gray-800/40 rounded-2xl pl-2 pr-5 py-2 shadow-sm hover:shadow transition-all duration-300">
-              {customUserButton}
-              <div className="flex flex-col justify-center">
-                <h1 className="font-archivo font-semibold text-sm tracking-tight leading-tight text-gray-900 dark:text-white mb-0.5">
-                  {user?.firstName} {user?.lastName}
-                </h1>
-                <p className="text-[9px] text-gray-500 dark:text-gray-400 font-bold uppercase tracking-wider">
-                  {studentYear ? `Year ${studentYear} Medical Student` : 'Medical Student'}
-                </p>
-              </div>
-            </div>
-          </div>
-        </header>
-      )}
-
-      {/* PORTAL CONTAINER */}
-      <main className={['yearSelect', 'semesterSelect', 'moduleSelect', 'studyModeSelect'].includes(screen) ? "max-w-[1600px] mx-auto px-6 py-12 relative z-10" : "w-full relative z-10"}>
+      <main className="w-full relative z-10">
         <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden transform-gpu">
-          <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-physiology/10 to-transparent dark:from-physiology/5rounded-full mix-blend-multiply dark:mix-blend-screen animate-pulse duration-10000 will-change-transform transform-gpu"></div>
-          <div className="absolute bottom-[-20%] right-[-10%] w-[50%] h-[50%] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-clinical/10 to-transparent dark:from-clinical/5rounded-full mix-blend-multiply dark:mix-blend-screen animate-pulse duration-10000 will-change-transform transform-gpu" style={{ animationDelay: '2s' }}></div>
+          <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-physiology/10 to-transparent dark:from-physiology/5 rounded-full mix-blend-multiply dark:mix-blend-screen animate-pulse duration-10000 will-change-transform transform-gpu"></div>
+          <div className="absolute bottom-[-20%] right-[-10%] w-[50%] h-[50%] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-clinical/10 to-transparent dark:from-clinical/5 rounded-full mix-blend-multiply dark:mix-blend-screen animate-pulse duration-10000 will-change-transform transform-gpu" style={{ animationDelay: '2s' }}></div>
         </div>
-        
-        {/* Breadcrumbs for easy navigation jumpbacks */}
-        {['semesterSelect', 'moduleSelect', 'studyModeSelect'].includes(screen) && (
-          <div className="flex flex-wrap items-center gap-1.5 text-xs text-gray-400 dark:text-gray-500 font-bold uppercase tracking-wider mb-8 glass-panel px-5 py-3 w-fit transition-all duration-300">
-            <button onClick={() => navigateTo('yearSelect')} className="hover:text-physiology transition-colors">{t('portal')}</button>
-            {selectedYear && (
-              <>
-                <ChevronRight size={12} className="text-gray-300 dark:text-gray-700 animate-flip-rtl" />
-                <button onClick={() => navigateTo('semesterSelect')} className="hover:text-physiology transition-colors">{t('year' + selectedYear)}</button>
-              </>
-            )}
-            {selectedSemester && (
-              <>
-                <ChevronRight size={12} className="text-gray-300 dark:text-gray-700 animate-flip-rtl" />
-                <button onClick={() => navigateTo('moduleSelect')} className="hover:text-physiology transition-colors">{t('semester' + selectedSemester)}</button>
-              </>
-            )}
-            {selectedModule && (
-              <>
-                <ChevronRight size={12} className="text-gray-300 dark:text-gray-700 animate-flip-rtl" />
-                <span className="text-gray-900 dark:text-gray-300 truncate max-w-[150px]">{selectedModule.code}</span>
-              </>
-            )}
-          </div>
-        )}
 
-        {/* SCREEN 1: YEAR SELECT */}
-        {screen === 'yearSelect' && (
-          <div className="w-full pb-10">
-            {/* Clean Apple Music Style Header */}
-            <div className="max-w-[1600px] mx-auto px-4 lg:px-12 mb-8 mt-4 text-center">
-              <h1 className="font-archivo text-4xl lg:text-6xl font-black tracking-tight text-gray-900 dark:text-white mb-3">
-                {t('selectYear')}
-              </h1>
-              <p dir="rtl" className="text-physiology dark:text-physiology-light font-medium text-xl lg:text-3xl max-w-2xl mx-auto" style={{ fontFamily: "'Amiri', serif", lineHeight: "1.8" }}>
-                ﴿وَمَنْ أَحْيَاهَا فَكَأَنَّمَا أَحْيَا النَّاسَ جَمِيعًا﴾
-              </p>
-            </div>
-
-            {/* Stacked 3D Carousel Layout for Year Select */}
-            <div className="max-w-[1600px] mx-auto pb-4">
-              <StackedCarousel 
-                activeIndex={activeYearCarouselIndex}
-                setActiveIndex={setActiveYearCarouselIndex}
-                onSelect={(id) => handleSelectYear(id as number)}
-                items={[1, 2, 3, 4, 5].map(year => {
-                  const active = hasActiveModulesForYear(year);
-
-                  let totalCp = 0;
-                  let totalMarks = 0;
-                  const sems = SYLLABUS_MODULES[year];
-                  if (sems) {
-                    Object.values(sems).forEach(modules => {
-                      modules.forEach(mod => {
-                        totalCp += mod.cp;
-                        totalMarks += mod.marks;
-                      });
-                    });
-                  }
-
-                  const getPhaseTitle = (y: number) => {
-                    if (y === 1 || y === 2) return 'Foundations';
-                    if (y === 3) return 'Transitional Phase';
-                    return 'Clinical Phase';
-                  };
-
-                  const getPhaseSubtitle = (y: number) => {
-                    if (y === 1 || y === 2) return t('preClerkship');
-                    if (y === 3) return 'Pre-clerkship / Clerkship';
-                    return t('clerkship');
-                  };
-
-                  return {
-                    id: year,
-                    disabled: false, // Always allow clicking into the year
-                    content: (
-                      <div className="w-full h-full rounded-[32px] flex flex-col justify-between relative overflow-hidden group bg-white dark:bg-gray-900 shadow-2xl p-8">
-                        <div className="absolute -right-20 -top-20 w-64 h-64 rounded-full bg-physiology/5 group-hover:bg-physiology/10 transition-colors duration-700 blur-2xl pointer-events-none" />
-
-                        <div className="flex justify-between items-start w-full relative z-10 gap-2">
-                          <div className={`w-fit px-5 h-12 rounded-2xl flex items-center justify-center shrink-0 font-archivo font-black text-2xl tracking-normal shadow-sm border ${
-                            active 
-                              ? 'bg-gradient-to-br from-physiology/10 to-physiology/5 text-physiology-dark border-physiology/20 dark:text-physiology-light' 
-                              : 'bg-gray-100 dark:bg-gray-800 text-gray-400 dark:text-gray-500 border-transparent'
-                          }`}>
-                            {t('year' + year)}
-                          </div>
-                          
-                          {!active && (
-                            <span className="px-3 py-1.5 mt-2 bg-white/40 dark:bg-black/40 backdrop-blur-md border border-white/40 dark:border-white/10 text-gray-600 dark:text-gray-300 rounded-xl text-[10px] font-extrabold uppercase tracking-widest flex items-center gap-1.5 shadow-sm pointer-events-none whitespace-nowrap">
-                              <Lock size={10} className="shrink-0" />
-                              <span>{language === 'en' ? 'LOCKED' : 'مغلق'}</span>
-                            </span>
-                          )}
-                        </div>
-                        
-                        <div className="mt-auto w-full relative z-10">
-                          <h3 className="font-archivo text-2xl lg:text-3xl font-black text-gray-900 dark:text-white tracking-normal mb-1">
-                            {getPhaseTitle(year)}
-                          </h3>
-                          <p className="text-xs text-gray-500 dark:text-gray-400 font-bold uppercase tracking-widest">
-                            {getPhaseSubtitle(year)}
-                          </p>
-                          
-                          {totalCp > 0 && (
-                            <div className="flex gap-8 mt-3">
-                              <div className="flex flex-col">
-                                <span className="text-[9px] font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest">Credit Points</span>
-                                <span className="text-sm font-black text-gray-700 dark:text-gray-300">{totalCp} CP</span>
-                              </div>
-                              <div className="flex flex-col">
-                                <span className="text-[9px] font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest">Total Marks</span>
-                                <span className="text-sm font-black text-gray-700 dark:text-gray-300">{totalMarks}</span>
-                              </div>
-                            </div>
-                          )}
-
-                          {active && (
-                            <div className="mt-5 pt-4 border-t border-gray-100 dark:border-gray-800/60 flex items-center justify-between">
-                              <div className="flex items-center gap-2">
-                                <span className="w-2.5 h-2.5 rounded-full bg-physiology animate-pulse" />
-                                <span className="text-[10px] font-extrabold uppercase tracking-widest text-physiology-dark dark:text-physiology">
-                                  {t('activeModules')}
-                                </span>
-                              </div>
-                              <span className="inline-flex items-center gap-1.5 text-xs font-bold text-physiology group-hover:translate-x-1.5 transition-transform duration-300">
-                                {t('enter')} <ArrowRight size={14} className="rtl:rotate-180" />
-                              </span>
-                            </div>
-                          )}
-                        </div>
-                      </div>
-                    )
-                  };
-                })}
-              />
-            </div>
-            
-            <div className="h-10"></div>
-            
-            {/* TOOLS SECTION */}
-            <div className="max-w-[1400px] mx-auto pt-10 border-t border-gray-100 dark:border-gray-800">
-              <div className="flex items-center justify-between mb-8">
-                <div className="flex items-center gap-3">
-                  <div className="w-2 h-8 rounded-full bg-gradient-to-b from-clinical to-biochem" />
-                  <h3 className="font-archivo text-2xl font-black tracking-tight">Tools</h3>
-                </div>
-              </div>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                
-                {/* History Button */}
-                <button
-                  onClick={() => transitionTo(() => setScreen('history'))}
-                  className="portal-card text-left bg-white dark:bg-gray-900 rounded-3xl p-6 flex items-center gap-5 border border-gray-100 dark:border-gray-800 hover:border-physiology/30 hover:shadow-md transition-all group w-full"
-                >
-                  <div className="w-12 h-12 rounded-xl bg-physiology/10 flex items-center justify-center text-physiology group-hover:scale-110 transition-transform">
-                    <Activity size={24} />
-                  </div>
-                  <div>
-                    <h4 className="font-archivo font-bold text-gray-900 dark:text-white">Full History</h4>
-                    <p className="text-xs text-gray-500 font-medium mt-1">View all your past quiz sessions and results</p>
-                  </div>
-                </button>
-
-                {/* Clinical Case Solver */}
-                <button
-                  onClick={() => transitionTo(() => setScreen('caseSolver'))}
-                  className="portal-card text-left bg-white dark:bg-gray-900 rounded-3xl p-6 flex items-center gap-5 border border-gray-100 dark:border-gray-800 hover:border-purple-500/30 hover:shadow-md transition-all group w-full"
-                >
-                  <div className="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-500 group-hover:scale-110 transition-transform">
-                    <Heart size={24} />
-                  </div>
-                  <div>
-                    <h4 className="font-archivo font-bold text-gray-900 dark:text-white flex items-center gap-2">
-                      Case Solver
-                      <span className="text-[9px] px-2 py-0.5 rounded-full bg-purple-500/15 text-purple-400 uppercase tracking-wider font-bold">New Game</span>
-                    </h4>
-                    <p className="text-xs text-gray-500 font-medium mt-1">Solve randomized clinical cases for fun</p>
-                  </div>
-                </button>
-
-                {/* Marks Calculator */}
-                <button
-                  onClick={() => transitionTo(() => setScreen('marksCalculator'))}
-                  className="portal-card text-left bg-white dark:bg-gray-900 rounded-3xl p-6 flex items-center gap-5 border border-gray-100 dark:border-gray-800 hover:border-clinical/30 hover:shadow-md transition-all group w-full"
-                >
-                  <div className="w-12 h-12 rounded-xl bg-clinical/10 flex items-center justify-center text-clinical group-hover:scale-110 transition-transform">
-                    <Calculator size={24} />
-                  </div>
-                  <div>
-                    <h4 className="font-archivo font-bold text-gray-900 dark:text-white flex items-center gap-2">
-                      Marks Calculator
-                      <span className="text-[9px] px-2 py-0.5 rounded-full bg-clinical/15 text-clinical uppercase tracking-wider font-bold">Predictor</span>
-                    </h4>
-                    <p className="text-xs text-gray-500 font-medium mt-1">Calculate requirements and target scores</p>
-                  </div>
-                </button>
-
-                {/* Question Search */}
-                <button
-                  onClick={() => transitionTo(() => setScreen('questionSearch'))}
-                  className="portal-card text-left bg-white dark:bg-gray-900 rounded-3xl p-6 flex items-center gap-5 border border-gray-100 dark:border-gray-800 hover:border-[#2dd4bf]/30 hover:shadow-md transition-all group w-full"
-                >
-                  <div className="w-12 h-12 rounded-xl bg-[#2dd4bf]/10 flex items-center justify-center text-[#2dd4bf] group-hover:scale-110 transition-transform">
-                    <Search size={24} />
-                  </div>
-                  <div>
-                    <h4 className="font-archivo font-bold text-gray-900 dark:text-white flex items-center gap-2">
-                      Question Search
-                      <span className="text-[9px] px-2 py-0.5 rounded-full bg-[#2dd4bf]/15 text-[#2dd4bf] uppercase tracking-wider font-bold">Search</span>
-                    </h4>
-                    <p className="text-xs text-gray-500 font-medium mt-1">Search text in all database questions and answers</p>
-                  </div>
-                </button>
-
-                {/* Study Tracker */}
-                <button
-                  onClick={() => setShowTrackerSelector(true)}
-                  className="portal-card text-left bg-white dark:bg-gray-900 rounded-3xl p-6 flex items-center gap-5 border border-gray-100 dark:border-gray-800 hover:border-physiology/30 hover:shadow-md transition-all group w-full"
-                >
-                  <div className="w-12 h-12 rounded-xl bg-physiology/10 flex items-center justify-center text-physiology group-hover:scale-110 transition-transform">
-                    <GraduationCap size={24} />
-                  </div>
-                  <div>
-                    <h4 className="font-archivo font-bold text-gray-900 dark:text-white flex items-center gap-2">
-                      {language === 'en' ? 'Study Tracker' : 'متابع المذاكرة'}
-                      <span className="text-[9px] px-2 py-0.5 rounded-full bg-physiology/15 text-physiology uppercase tracking-wider font-bold">
-                        {language === 'en' ? 'Syllabus' : 'المنهج'}
-                      </span>
-                    </h4>
-                    <p className="text-xs text-gray-500 font-medium mt-1">
-                      {language === 'en' ? 'Track syllabus and lecture study progress' : 'تابع تقدم مذاكرة محاضرات وفصول المنهج'}
-                    </p>
-                  </div>
-                </button>
-
-              </div>
-            </div>
-            
-            <PortalFooter />
-          </div>
-        )}
-
-        {/* SCREEN 2: SEMESTER SELECT */}
-        {screen === 'semesterSelect' && (
-          <div className="space-y-10 py-6 max-w-3xl mx-auto">
-            <div className="text-center space-y-4 max-w-xl mx-auto">
-              <h2 className="font-archivo text-4xl font-black tracking-tight leading-none">
-                {t('selectSemester')}
-              </h2>
-              <p className="text-gray-500 dark:text-gray-400 font-medium">
-                {language === 'en'
-                  ? `Syllabus contents and examinations are split by semesters. Select the active semester for ${t('year' + selectedYear)}.`
-                  : `يتم تقسيم محتويات المنهج والامتحانات حسب الفصول الدراسية. اختر الفصل الدراسي النشط لـ ${t('year' + selectedYear)}.`}
-              </p>
-            </div>
-
-            <div className="max-w-2xl mx-auto pb-4">
-              <StackedCarousel 
-                activeIndex={activeSemesterCarouselIndex}
-                setActiveIndex={setActiveSemesterCarouselIndex}
-                onSelect={(id) => handleSelectSemester(id as number)}
-                items={[1, 2].map(sem => {
-                  const active = selectedYear ? hasActiveModulesForSemester(selectedYear, sem) : false;
-                  
-                  let totalCp = 0;
-                  let totalMarks = 0;
-                  if (selectedYear && SYLLABUS_MODULES[selectedYear]?.[sem]) {
-                    SYLLABUS_MODULES[selectedYear][sem].forEach(mod => {
-                      totalCp += mod.cp;
-                      totalMarks += mod.marks;
-                    });
-                  }
-
-                  return {
-                    id: sem,
-                    disabled: false, // Always allow clicking into the semester
-                    content: (
-                      <div className="w-full h-full rounded-[32px] flex flex-col justify-between relative overflow-hidden group bg-white dark:bg-gray-900 shadow-2xl p-6 sm:p-8">
-                        <div className="absolute -right-12 -top-12 w-40 h-40 rounded-full bg-physiology/5 group-hover:bg-physiology/10 transition-colors duration-300 blur-2xl pointer-events-none" />
-
-                        <div className="relative z-10">
-                          <div className="flex justify-between items-start w-full gap-1.5 sm:gap-2">
-                            <div className={`w-fit px-3 sm:px-4 h-10 sm:h-12 rounded-xl sm:rounded-2xl flex items-center justify-center shrink-0 font-archivo font-black text-base sm:text-lg tracking-normal shadow-sm border gap-1.5 sm:gap-2 ${
-                              active ? 'bg-gradient-to-br from-clinical/10 to-clinical/5 text-clinical-dark dark:text-clinical border-clinical/20' : 'bg-gray-100 dark:bg-gray-800 text-gray-400 dark:text-gray-500 border-transparent'
-                            }`}>
-                              <Calendar size={16} className={active ? 'text-clinical' : ''} />
-                              {t('semester' + sem)}
-                            </div>
-                            
-                            {!active && (
-                              <span className="px-2 sm:px-3 py-1 mt-1 sm:mt-1.5 bg-white/40 dark:bg-black/40 backdrop-blur-md border border-white/40 dark:border-white/10 text-gray-600 dark:text-gray-300 rounded-lg sm:rounded-xl text-[9px] sm:text-[10px] font-extrabold uppercase tracking-widest flex items-center gap-1 shadow-sm pointer-events-none whitespace-nowrap">
-                                <Lock size={10} className="shrink-0" />
-                                <span>{language === 'en' ? 'LOCKED' : 'مغلق'}</span>
-                              </span>
-                            )}
-                          </div>
-                          
-                          {/* Phase logic for semester */}
-                          {selectedYear && (
-                            <div className="mt-3 text-[10px] font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400">
-                              {selectedYear < 3 || (selectedYear === 3 && sem === 1) ? t('preClerkship') : t('clerkship')}
-                            </div>
-                          )}
-                        </div>
-
-                        <div className="flex flex-col w-full relative z-10 mt-auto space-y-4">
-                          {totalCp > 0 && (
-                            <div className="flex gap-8">
-                              <div className="flex flex-col">
-                                <span className="text-[9px] font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest">Credit Points</span>
-                                <span className="text-sm font-black text-gray-700 dark:text-gray-300">{totalCp} CP</span>
-                              </div>
-                              <div className="flex flex-col">
-                                <span className="text-[9px] font-bold text-gray-400 dark:text-gray-500 uppercase tracking-widest">Total Marks</span>
-                                <span className="text-sm font-black text-gray-700 dark:text-gray-300">{totalMarks}</span>
-                              </div>
-                            </div>
-                          )}
-
-                          <div className="flex items-center justify-end w-full">
-                            {active ? (
-                              <span className="inline-flex items-center gap-1.5 text-sm font-bold text-physiology group-hover:translate-x-1.5 transition-transform duration-200">
-                                {t('enter')} <ArrowRight size={16} className="rtl:rotate-180" />
-                              </span>
-                            ) : (
-                              <span className="inline-flex items-center gap-1.5 text-sm font-bold text-gray-400 dark:text-gray-500">
-                                {t('comingSoon')}
-                              </span>
-                            )}
-                          </div>
-                        </div>
-                      </div>
-                    )
-                  };
-                })}
-              />
-            </div>
-
-            <div className="flex items-center justify-center">
-              <button
-                onClick={() => navigateTo('yearSelect')}
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gray-100 dark:bg-gray-900 hover:bg-gray-200 dark:hover:bg-gray-800 text-sm font-semibold transition-colors duration-200"
-              >
-                <ArrowLeft size={16} className="rtl:rotate-180" />
-                {t('back')}
-              </button>
-            </div>
-
-            <PortalFooter />
-          </div>
-        )}
-
-        {/* SCREEN 3: MODULE SELECT */}
-        {screen === 'moduleSelect' && (
-          <div className="space-y-10 py-6">
-            <div className="text-center space-y-4 max-w-xl mx-auto">
-              <h2 className="font-archivo text-4xl font-black tracking-tight leading-none">
-                {t('selectModule')}
-              </h2>
-              <div className="flex flex-col items-center gap-3 mt-2">
-                <span className="px-5 py-2 rounded-2xl bg-white/60 dark:bg-gray-900/60 backdrop-blur-md text-gray-700 dark:text-gray-300 text-sm font-black tracking-widest uppercase border border-gray-200/60 dark:border-gray-800 shadow-sm">
-                  {language === 'en' ? `Year ${selectedYear} • Semester ${selectedSemester}` : `السنة ${selectedYear} • الفصل الدراسي ${selectedSemester}`}
-                </span>
-                <p className="text-gray-500 dark:text-gray-400 font-medium">
-                  {language === 'en'
-                    ? 'Click a module card to begin studying.'
-                    : 'اضغط على بطاقة الوحدة لبدء المذاكرة.'}
-                </p>
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[1400px] mx-auto">
-              {(selectedYear && selectedSemester && SYLLABUS_MODULES[selectedYear]?.[selectedSemester]) ? (
-                SYLLABUS_MODULES[selectedYear][selectedSemester].map((mod) => {
-                  const active = isModuleActive(mod.code);
-                  const counts = getModuleQuestionCounts(mod.code);
-                  return (
-                    <button
-                      key={mod.code}
-                      onClick={() => active && handleSelectModule(mod)}
-                      disabled={!active}
-                      className={`portal-card text-start glass-panel p-6 flex flex-col justify-between h-52 animate-pop-up grid-delay relative overflow-hidden group ${
-                        active
-                          ? 'hover:border-physiology/60 cursor-pointer glow-border'
-                          : 'opacity-60 saturate-50 cursor-not-allowed pointer-events-none shadow-none'
-                      }`}
-                    >
-                      {active ? (
-                        <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl from-physiology/10 to-transparent rounded-bl-[60px]" />
-                      ) : (
-                        <span className="absolute top-4 right-4 px-3 py-1 bg-white/40 dark:bg-black/40 backdrop-blur-md border border-white/40 dark:border-white/10 text-gray-600 dark:text-gray-300 rounded-xl text-[10px] font-extrabold uppercase tracking-widest flex items-center gap-1.5 shadow-sm">
-                          <Lock size={10} />
-                          {t('comingSoon').replace('...', '')}
-                        </span>
-                      )}
-                      
-                      <div className="space-y-3">
-                        <div className="flex items-center justify-between">
-                          <span className="text-xs font-bold text-gray-400 dark:text-gray-500 font-archivo tracking-wider">
-                            {mod.code}
-                          </span>
-                          {active && (
-                            <span className="px-2.5 py-0.5 bg-physiology/10 text-physiology-dark rounded-full text-[10px] font-bold uppercase tracking-wider flex items-center gap-1">
-                              <span className="w-1.5 h-1.5 rounded-full bg-physiology" />
-                              {language === 'en' ? 'Live' : 'نشط'} ({counts.totalCount} {t('questions')})
-                            </span>
-                          )}
-                        </div>
-
-                        <h3 className="font-archivo text-base font-bold text-gray-900 dark:text-white leading-snug tracking-tight group-hover:text-physiology transition-colors duration-200">
-                          {mod.name}
-                        </h3>
-                      </div>
-
-                      <div>
-                        <div className="flex items-center gap-4 text-xs font-bold text-gray-400 dark:text-gray-550">
-                          <div>{t('cp')}: <span className="text-gray-700 dark:text-gray-300 font-archivo">{mod.cp}</span></div>
-                          <div className="w-px h-3 bg-gray-200 dark:bg-gray-800" />
-                          <div>{t('marks')}: <span className="text-gray-700 dark:text-gray-300 font-archivo">{mod.marks}</span></div>
-                        </div>
-
-                        <div className="h-px bg-gray-100 dark:bg-gray-900 my-3" />
-
-                        <div className="flex items-center justify-between text-xs">
-                          {active ? (
-                            <span className="font-bold text-physiology inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform duration-200">
-                              {t('start')} <ArrowRight size={14} className="rtl:rotate-180" />
-                            </span>
-                          ) : (
-                            <span className="font-semibold text-gray-400 dark:text-gray-500 inline-flex items-center gap-1">
-                              {t('comingSoon')}
-                            </span>
-                          )}
-                        </div>
-                      </div>
-                    </button>
-                  );
-                })
-              ) : (
-                <div className="col-span-full py-12 text-center text-gray-400 bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 rounded-3xl">
-                  <GraduationCap className="mx-auto text-gray-300 dark:text-gray-700 mb-3" size={32} />
-                  <p className="font-bold">{t('comingSoon')}</p>
-                </div>
-              )}
-            </div>
-
-            <div className="flex items-center justify-center">
-              <button
-                onClick={() => navigateTo('semesterSelect')}
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gray-100 dark:bg-gray-900 hover:bg-gray-200 dark:hover:bg-gray-800 text-sm font-semibold transition-colors duration-200"
-              >
-                <ArrowLeft size={16} className="rtl:rotate-180" />
-                {t('back')}
-              </button>
-            </div>
-
-            <PortalFooter />
-          </div>
-        )}
-
-        {/* SCREEN 4: STUDY MODE SELECT */}
-        {screen === 'studyModeSelect' && selectedModule && (
-          <div className="space-y-10 py-6">
-            <div className="text-center max-w-xl mx-auto mb-12">
-              <div className="inline-flex items-center justify-center px-4 py-2 bg-physiology/10 text-physiology-dark rounded-full text-xs font-bold uppercase tracking-wider mb-6">
-                Module Loaded: {selectedModule.code}
-              </div>
-              <h2 className="font-archivo text-4xl lg:text-5xl font-black tracking-tight leading-none mb-5">
-                Select Study Mode
-              </h2>
-              <p className="text-gray-500 dark:text-gray-400 text-lg font-medium leading-relaxed">
-                Choose the question formats you wish to practice. You can focus on MCQs, essays, or a mixed exam.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-[1400px] mx-auto">
-              {/* MCQ Practice Mode */}
-              <button
-                onClick={() => handleSelectMode('mcq')}
-                className="portal-card text-left bg-white dark:bg-gray-900 rounded-[30px] p-6 border-2 border-gray-100 dark:border-gray-800/80 hover:border-physiology/40 shadow-sm flex flex-col justify-between h-72 animate-pop-up group relative overflow-hidden"
-              >
-                <div className="absolute -right-8 -top-8 w-24 h-24 rounded-full bg-physiology/5 group-hover:bg-physiology/10 transition-colors duration-300" />
-                
-                <div className="space-y-4">
-                  <div className="w-12 h-12 rounded-2xl bg-physiology/10 text-physiology flex items-center justify-center">
-                    <Activity size={24} />
-                  </div>
-                  <div>
-                    <h3 className="font-archivo text-xl font-bold text-gray-900 dark:text-white tracking-tight">
-                      MCQ Practice Mode
-                    </h3>
-                    <p className="text-xs text-gray-400 dark:text-gray-500 font-medium mt-1 leading-relaxed">
-                      Loads only multiple-choice, true/false, and fill-in-the-blank questions for rapid recall.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="space-y-3">
-                  <div className="text-xs font-bold text-physiology px-3 py-1 bg-physiology/5 rounded-lg w-fit">
-                    {getModuleQuestionCounts(selectedModule.code).mcqCount} Questions available
-                  </div>
-                  <div className="flex items-center justify-end w-full">
-                    <span className="inline-flex items-center gap-1 text-xs font-bold text-physiology group-hover:translate-x-1.5 transition-transform duration-200">
-                      Start Practice <ArrowRight size={14} />
-                    </span>
-                  </div>
-                </div>
-              </button>
-
-              {/* Essay Study Mode */}
-              <button
-                onClick={() => handleSelectMode('essay')}
-                className="portal-card text-left bg-white dark:bg-gray-900 rounded-[30px] p-6 border-2 border-gray-100 dark:border-gray-800/80 hover:border-clinical/40 shadow-sm flex flex-col justify-between h-72 animate-pop-up group relative overflow-hidden"
-                style={{ animationDelay: '60ms' }}
-              >
-                <div className="absolute -right-8 -top-8 w-24 h-24 rounded-full bg-clinical/5 group-hover:bg-clinical/10 transition-colors duration-300" />
-                
-                <div className="space-y-4">
-                  <div className="w-12 h-12 rounded-2xl bg-clinical/10 text-clinical flex items-center justify-center">
-                    <BookOpen size={24} />
-                  </div>
-                  <div>
-                    <h3 className="font-archivo text-xl font-bold text-gray-900 dark:text-white tracking-tight">
-                      Essay Study Mode
-                    </h3>
-                    <p className="text-xs text-gray-400 dark:text-gray-500 font-medium mt-1 leading-relaxed">
-                      Loads written/short answer and case-based essay questions with detailed model answers.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="space-y-3">
-                  <div className="text-xs font-bold text-clinical px-3 py-1 bg-clinical/5 rounded-lg w-fit">
-                    {getModuleQuestionCounts(selectedModule.code).essayCount} Questions available
-                  </div>
-                  <div className="flex items-center justify-end w-full">
-                    <span className="inline-flex items-center gap-1 text-xs font-bold text-clinical group-hover:translate-x-1.5 transition-transform duration-200">
-                      Start Study <ArrowRight size={14} />
-                    </span>
-                  </div>
-                </div>
-              </button>
-
-              {/* Mixed Exam Mode */}
-              <button
-                onClick={() => handleSelectMode('mixed')}
-                className="portal-card text-left bg-white dark:bg-gray-900 rounded-[30px] p-6 border-2 border-gray-100 dark:border-gray-800/80 hover:border-biochem/40 shadow-sm flex flex-col justify-between h-72 animate-pop-up group relative overflow-hidden"
-                style={{ animationDelay: '120ms' }}
-              >
-                <div className="absolute -right-8 -top-8 w-24 h-24 rounded-full bg-biochem/5 group-hover:bg-biochem/10 transition-colors duration-300" />
-                
-                <div className="space-y-4">
-                  <div className="w-12 h-12 rounded-2xl bg-biochem/10 text-biochem flex items-center justify-center">
-                    <Layers size={24} />
-                  </div>
-                  <div>
-                    <h3 className="font-archivo text-xl font-bold text-gray-900 dark:text-white tracking-tight">
-                      Mixed Exam Mode
-                    </h3>
-                    <p className="text-xs text-gray-400 dark:text-gray-500 font-medium mt-1 leading-relaxed">
-                      Combines MCQ and Essay databases to generate a comprehensive, hybrid practice exam.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="space-y-3">
-                  <div className="text-xs font-bold text-biochem px-3 py-1 bg-biochem/5 rounded-lg w-fit">
-                    {getModuleQuestionCounts(selectedModule.code).totalCount} Questions available
-                  </div>
-                  <div className="flex items-center justify-end w-full">
-                    <span className="inline-flex items-center gap-1 text-xs font-bold text-biochem group-hover:translate-x-1.5 transition-transform duration-200">
-                      Generate Exam <ArrowRight size={14} />
-                    </span>
-                  </div>
-                </div>
-              </button>
-            </div>
-
-            <div className="max-w-[1400px] mx-auto">
-              <button
-                onClick={() => setShowTracker(true)}
-                className="w-full glass-panel glow-border rounded-2xl p-5 flex items-center justify-between group hover:shadow-md transition-all animate-pop-up"
-                style={{ animationDelay: '180ms' }}
-              >
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-gray-50 dark:bg-gray-800 flex items-center justify-center text-gray-500">
-                    <Calendar size={20} className="text-gray-600 dark:text-gray-400" />
-                  </div>
-                  <div className="text-left">
-                    <h4 className="font-archivo font-bold text-lg text-gray-900 dark:text-white tracking-tight">Syllabus & Study Tracker</h4>
-                    <p className="text-xs text-gray-500 dark:text-gray-400 font-medium">Keep track of your chapter progress and personal notes</p>
-                  </div>
-                </div>
-                <div className="w-10 h-10 rounded-full border border-gray-100 dark:border-gray-800 flex items-center justify-center group-hover:bg-gray-100 dark:group-hover:bg-gray-700 transition-colors">
-                  <ChevronRight size={16} className="text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white animate-flip-rtl" />
-                </div>
-              </button>
-            </div>
-
-            <div className="flex items-center justify-center">
-              <button
-                onClick={() => navigateTo('moduleSelect')}
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gray-100 dark:bg-gray-900 hover:bg-gray-200 dark:hover:bg-gray-800 text-sm font-semibold transition-colors duration-200"
-              >
-                <ArrowLeft size={16} />
-                Back to Modules
-              </button>
-            </div>
-
-            <PortalFooter />
-          </div>
-        )}
-
-        {/* SCREEN 5: CHAPTER SELECT */}
-        {screen === 'chapters' && selectedModule && studyMode && (
-          <Suspense fallback={<div>Loading...</div>}>
-            <ChapterSelect
-              chapters={activeChapters}
-              studyModeName={studyModeNameMap[studyMode]}
-              moduleName={selectedModule.name}
-              moduleCode={selectedModule.code}
-              onSelectChapter={handleSelectChapter}
-              onSelectHistory={(res) => handleSelectHistory(res, 'chapters')}
-              onBackToModeSelect={() => navigateTo('studyModeSelect')}
-              userButton={customUserButton}
-              breadcrumbPath={[
-                { label: t('portal') || 'Portal', onClick: () => navigateTo('yearSelect') },
-                { label: t(`year${selectedYear}`) || `Year ${selectedYear}`, onClick: () => navigateTo('semesterSelect') },
-                { label: t(`semester${selectedSemester}`) || `Semester ${selectedSemester}`, onClick: () => navigateTo('moduleSelect') },
-                { label: selectedModule?.name || '' }
-              ]}
+        <AnimatePresence mode="wait">
+          <Routes location={location} key={location.pathname}>
+            {/* Main Dashboard page */}
+          <Route path="/" element={
+            <Dashboard 
+              userButton={customUserButton} 
+              onOpenTrackerSelector={() => setShowTrackerSelector(true)} 
             />
-          </Suspense>
-        )}
+          } />
 
-        {/* SCREEN 6: SUBJECT SELECT */}
-        {screen === 'subjects' && selectedChapter && (
-          <SubjectSelect
-            chapter={selectedChapter}
-            breadcrumbPath={[
-              { label: t('portal') || 'Portal', onClick: () => navigateTo('yearSelect') },
-              { label: t(`year${selectedYear}`) || `Year ${selectedYear}`, onClick: () => navigateTo('semesterSelect') },
-              { label: t(`semester${selectedSemester}`) || `Semester ${selectedSemester}`, onClick: () => navigateTo('moduleSelect') },
-              { label: selectedModule?.name || '', onClick: () => navigateTo('studyModeSelect') },
-              { label: selectedChapter.title }
-            ]}
-            onBack={() => setScreen('chapters')}
-            onSelectSubject={handleSelectSubject}
-            onQuickStart={handleQuickStart}
-            userButton={customUserButton}
-          />
-        )}
-
-        {/* SCREEN 7: QUIZ INTERFACE */}
-        {screen === 'quiz' && quizPayload && (
-          <Suspense fallback={<div>Loading...</div>}>
-            <QuizInterface
-              chapter={quizPayload.chapter}
-              subject={quizPayload.subject}
-              questions={quizPayload.questions}
-              onBack={() => setScreen('subjects')}
-              onFinish={handleFinishQuiz}
-              userButton={customUserButton}
+          {/* Year Modules page */}
+          <Route path="/year-2" element={
+            <YearModules 
+              userButton={customUserButton} 
             />
-          </Suspense>
-        )}
+          } />
 
-        {/* SCREEN 8: RESULTS DASHBOARD */}
-        {screen === 'results' && resultPayload && (
-          <Suspense fallback={<div>Loading...</div>}>
-            <ResultsDashboard
-              chapter={resultPayload.chapter}
-              subject={resultPayload.subject}
-              questions={resultPayload.questions}
-              answers={resultPayload.answers}
-              elapsedSeconds={resultPayload.elapsedSeconds}
-              flaggedQuestions={resultPayload.flaggedQuestions}
-              onRetake={handleRetake}
-              onTryAnotherSubject={() => {
-                if (isFromHistory) {
-                  setIsFromHistory(false);
-                  setQuizPayload(null);
-                  setResultPayload(null);
-                  if (historySource === 'chapters') {
-                    setScreen('chapters');
-                  } else {
-                    setScreen('history');
-                  }
-                } else {
-                  setScreen('subjects');
+          {/* Study Mode Selector page */}
+          <Route path="/year-2/:code" element={
+            <StudyMode 
+              userButton={customUserButton} 
+              onStartStudyMode={(mode, mCode) => {
+                const targetModule = lookupModule(mCode);
+                if (targetModule) {
+                  setSelectedModule(targetModule);
+                  setStudyMode(mode);
+                  setScreen('chapters');
+                  navigate(`/year-2/${mCode.toLowerCase()}/${mode}`);
                 }
               }}
-              onBackToChapters={handleBackToChapters}
-              onBackToSubjects={() => {
-                if (isFromHistory) {
-                  setIsFromHistory(false);
-                  setQuizPayload(null);
-                  setResultPayload(null);
-                  if (historySource === 'chapters') {
-                    setScreen('chapters');
-                  } else {
-                    setScreen('history');
-                  }
-                } else {
-                  setScreen('subjects');
-                }
+              onOpenSyllabus={(mCode) => {
+                navigate(`/year-2/${mCode.toLowerCase()}/tracker`);
               }}
-              userButton={customUserButton}
             />
-          </Suspense>
-        )}
+          } />
 
-        {/* SCREEN 9: HISTORY */}
-        {screen === 'history' && (
-          <Suspense fallback={<div>Loading...</div>}>
-            <HistoryScreen
-              onBack={() => navigateTo('yearSelect')}
-              onSelectHistory={(res) => handleSelectHistory(res, 'history')}
-              userButton={customUserButton}
+          {/* Chapters / Quiz sub-flow wrapper */}
+          <Route path="/year-2/:code/:mode" element={
+            <QuizFlowWrapper 
+              code={params.code} 
+              mode={params.mode}
+              selectedModule={selectedModule}
+              setSelectedModule={setSelectedModule}
+              studyMode={studyMode}
+              setStudyMode={setStudyMode}
+              screen={screen}
+              setScreen={setScreen}
+              activeChapters={activeChapters}
+              studyModeNameMap={studyModeNameMap}
+              selectedChapter={selectedChapter}
+              setSelectedChapter={setSelectedChapter}
+              handleSelectChapter={handleSelectChapter}
+              handleSelectHistory={handleSelectHistory}
+              customUserButton={customUserButton}
+              selectedYear={selectedYear}
+              selectedSemester={selectedSemester}
+              handleSelectSubject={handleSelectSubject}
+              handleQuickStart={handleQuickStart}
+              quizPayload={quizPayload}
+              handleFinishQuiz={handleFinishQuiz}
+              resultPayload={resultPayload}
+              handleRetake={handleRetake}
+              handleBackToChapters={handleBackToChapters}
+              isFromHistory={isFromHistory}
+              setIsFromHistory={setIsFromHistory}
+              historySource={historySource}
+              t={t}
             />
-          </Suspense>
-        )}
+          } />
 
-        {/* SCREEN 10: FLAGGED QUESTIONS */}
-        {screen === 'flaggedQuestions' && (
-          <Suspense fallback={<div>Loading...</div>}>
-            <FlaggedQuestionsScreen
-              onBack={() => navigateTo('yearSelect')}
-              onPracticeQuiz={(chapter, subjectName, questions) => {
-                transitionTo(() => {
-                  setSelectedChapter(chapter);
+          {/* Tools pages */}
+          <Route path="/history" element={
+            <Suspense fallback={<div>Loading...</div>}>
+              <HistoryScreen
+                onBack={() => navigate('/')}
+                onSelectHistory={(res) => handleSelectHistory(res, 'history')}
+                userButton={customUserButton}
+              />
+            </Suspense>
+          } />
+
+          <Route path="/case-solver" element={
+            <Suspense fallback={<div>Loading...</div>}>
+              <ClinicalCaseSolver
+                onBack={() => navigate('/')}
+                userButton={customUserButton}
+              />
+            </Suspense>
+          } />
+
+          <Route path="/marks-calculator" element={
+            <Suspense fallback={<div>Loading...</div>}>
+              <MarksCalculator
+                onBack={() => navigate('/')}
+                userButton={customUserButton}
+              />
+            </Suspense>
+          } />
+
+          <Route path="/question-search" element={
+            <Suspense fallback={<div>Loading...</div>}>
+              <QuestionSearch
+                onBack={() => navigate('/')}
+                userButton={customUserButton}
+              />
+            </Suspense>
+          } />
+
+          <Route path="/analytics" element={
+            <Suspense fallback={<div>Loading...</div>}>
+              <AnalyticsDashboard
+                onBack={() => navigate('/')}
+                userButton={customUserButton}
+                history={getQuizHistory()}
+                studentName={user ? (user.fullName || `${user.firstName} ${user.lastName}`.trim() || 'Student') : 'Student'}
+                studentYear={studentYear}
+                progress={getYearProgress()}
+              />
+            </Suspense>
+          } />
+
+          <Route path="/flagged-questions" element={
+            <Suspense fallback={<div>Loading...</div>}>
+              <FlaggedQuestionsScreen
+                onBack={() => navigate('/')}
+                onPracticeQuiz={(ch, subName, qs) => {
+                  setSelectedChapter(ch);
                   setQuizPayload({
-                    chapter,
-                    subject: chapter.subjects.find(s => s.name === subjectName) || null,
-                    questions
+                    chapter: ch,
+                    subject: ch.subjects.find(s => s.name === subName) || null,
+                    questions: qs
                   });
                   setScreen('quiz');
-                });
-              }}
-              userButton={customUserButton}
-            />
-          </Suspense>
+                  navigate(`/year-2/${(code || 'mem-2').toLowerCase()}/mixed`);
+                }}
+                userButton={customUserButton}
+              />
+            </Suspense>
+          } />
+          
+          <Route path="/year-2/:code/tracker" element={
+            <Suspense fallback={<div>Loading...</div>}>
+              <SyllabusTrackerPage userButton={customUserButton} />
+            </Suspense>
+          } />
+
+          <Route path="*" element={<Navigate to="/" replace />} />
+        </Routes>
+      </AnimatePresence>
+    </main>
+
+      <AnimatePresence>
+        {showTrackerSelector && (
+          <StudyTrackerSelectorModal
+            onClose={() => setShowTrackerSelector(false)}
+            onSelectModule={(mod) => {
+              setShowTrackerSelector(false);
+              navigate(`/year-2/${mod.code.toLowerCase()}/tracker`);
+            }}
+          />
         )}
-
-        {/* SCREEN 11: ANALYTICS DASHBOARD */}
-        {screen === 'analytics' && (
-          <Suspense fallback={<div>Loading...</div>}>
-            <AnalyticsDashboard
-              onBack={() => navigateTo('yearSelect')}
-              userButton={customUserButton}
-              history={getQuizHistory()}
-              studentName={user ? (user.fullName || `${user.firstName} ${user.lastName}`.trim() || 'Student') : 'Student'}
-              studentYear={studentYear}
-              progress={getYearProgress()}
-            />
-          </Suspense>
-        )}
-
-        {/* SCREEN 12: CLINICAL CASE SOLVER */}
-        {screen === 'caseSolver' && (
-          <Suspense fallback={<div>Loading...</div>}>
-            <ClinicalCaseSolver
-              onBack={() => navigateTo('yearSelect')}
-            />
-          </Suspense>
-        )}
-
-        {/* SCREEN 13: QUESTION SEARCH */}
-        {screen === 'questionSearch' && (
-          <Suspense fallback={<div>Loading...</div>}>
-            <QuestionSearch
-              onBack={() => navigateTo('yearSelect')}
-              userButton={customUserButton}
-            />
-          </Suspense>
-        )}
-
-        {/* SCREEN 14: MARKS CALCULATOR */}
-        {screen === 'marksCalculator' && (
-          <Suspense fallback={<div>Loading...</div>}>
-            <MarksCalculator
-              onBack={() => navigateTo('yearSelect')}
-              userButton={customUserButton}
-            />
-          </Suspense>
-        )}
-      </main>
-
-      {showTracker && selectedModule && (
-        <SyllabusTracker
-          moduleCode={selectedModule.code}
-          moduleName={selectedModule.name}
-          chapters={getChaptersForModuleAndMode(selectedModule.code, 'mixed')}
-          onClose={() => setShowTracker(false)}
-        />
-      )}
-
-      {showTracker && trackerModule && (
-        <SyllabusTracker
-          moduleCode={trackerModule.code}
-          moduleName={trackerModule.name}
-          chapters={getChaptersForModuleAndMode(trackerModule.code, 'mixed')}
-          onClose={() => {
-            setShowTracker(false);
-            setTrackerModule(null);
-          }}
-        />
-      )}
-
-      {showTrackerSelector && (
-        <StudyTrackerSelectorModal
-          onClose={() => setShowTrackerSelector(false)}
-          onSelectModule={(mod) => {
-            setShowTrackerSelector(false);
-            setTrackerModule(mod);
-            setShowTracker(true);
-          }}
-        />
-      )}
+      </AnimatePresence>
 
       {/* PREMIUM COMING SOON ALERT DIALOG / MODAL */}
       {modalModule && (
@@ -2209,7 +1700,12 @@ export default function App() {
       </div>
 
       <SignedIn>
-        <MainApp />
+        <BrowserRouter>
+          <ProgressProvider>
+            <MainApp />
+            <LevelUpOverlay />
+          </ProgressProvider>
+        </BrowserRouter>
       </SignedIn>
       <SignedOut>
         <Suspense fallback={<LoadingScreen />}>

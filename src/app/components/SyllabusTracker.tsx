@@ -5,6 +5,7 @@ import type { ChapterData, SubjectData, SubjectColor } from '../types';
 import { subjectStyles } from '../types';
 import { useLanguage } from '../context/LanguageContext';
 import { triggerCloudSync } from '../hooks/useCloudSync';
+import { useProgress } from '../store/progress';
 
 /* ------------------------------------------------------------------ */
 /* Types                                                               */
@@ -106,6 +107,7 @@ export function SyllabusTracker({ moduleCode, moduleName, chapters, onClose }: P
   const { t, language } = useLanguage();
   const isRTL = language === 'ar';
   const storageKey = `asu_study_tracker_${moduleCode}`;
+  const progressStore = useProgress();
 
   /** Translation with graceful local fallback if a key is missing. */
   const label = useCallback(
@@ -229,6 +231,10 @@ export function SyllabusTracker({ moduleCode, moduleName, chapters, onClose }: P
         }
       }
 
+      if (nextVal) {
+        progressStore.addXp(15);
+      }
+
       persist({
         ...data,
         [chapterId]: {
@@ -238,7 +244,7 @@ export function SyllabusTracker({ moduleCode, moduleName, chapters, onClose }: P
         },
       });
     },
-    [data, chapters, persist],
+    [data, chapters, persist, progressStore],
   );
 
   const toggleLecture = useCallback(
@@ -246,15 +252,21 @@ export function SyllabusTracker({ moduleCode, moduleName, chapters, onClose }: P
       const current = data[chapterId] ?? emptyChapterState();
       const key = `${subjectId}_L${lectureNumber}`;
       const lecture = current.lectures?.[key] ?? { studied: false, revised: false };
+      const nextVal = !lecture[field];
+      
+      if (nextVal) {
+        progressStore.addXp(5);
+      }
+
       persist({
         ...data,
         [chapterId]: {
           ...current,
-          lectures: { ...(current.lectures ?? {}), [key]: { ...lecture, [field]: !lecture[field] } },
+          lectures: { ...(current.lectures ?? {}), [key]: { ...lecture, [field]: nextVal } },
         },
       });
     },
-    [data, persist],
+    [data, persist, progressStore],
   );
 
   const markAllLectures = useCallback(
@@ -264,13 +276,19 @@ export function SyllabusTracker({ moduleCode, moduleName, chapters, onClose }: P
       const current = data[chapterId] ?? emptyChapterState();
       const lectures = { ...(current.lectures ?? {}) };
       const allOn = keys.every((k) => lectures[k]?.[field]);
+      const nextVal = !allOn;
+
+      if (nextVal) {
+        progressStore.addXp(10);
+      }
+
       for (const k of keys) {
         const existing = lectures[k] ?? { studied: false, revised: false };
-        lectures[k] = { ...existing, [field]: !allOn };
+        lectures[k] = { ...existing, [field]: nextVal };
       }
       persist({ ...data, [chapterId]: { ...current, lectures } });
     },
-    [data, persist],
+    [data, persist, progressStore],
   );
 
   const setNotes = useCallback(

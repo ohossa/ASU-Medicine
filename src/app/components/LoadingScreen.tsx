@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Activity } from "lucide-react";
+import { ECGMonitor } from "./ECGMonitor";
 
 interface LoadingScreenProps {
   isLoading?: boolean;
@@ -58,29 +59,20 @@ export default function LoadingScreen({
           transition={{ duration: 0.5, ease: "easeInOut" }}
           className="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-background text-foreground"
         >
-          {/* Breathing logo mark */}
-          <motion.div
-            animate={{ scale: [1, 1.02, 1] }}
-            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-            className="mb-8"
-          >
-            <Activity
-              size={44}
-              strokeWidth={1}
-              className="text-physiology"
-              aria-hidden="true"
-            />
-          </motion.div>
+          {/* Breathing logo mark / ECG Monitor */}
+          <div className="w-56 mb-8">
+            <ECGMonitor height={64} />
+          </div>
 
           {/* Wordmark */}
           <motion.h1
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 0.15 }}
-            className="text-sm font-extralight uppercase text-foreground"
+            className="text-sm font-extralight uppercase text-foreground text-center"
             style={{ letterSpacing: "0.45em", textIndent: "0.45em" }}
           >
-            ASU Medical Portal
+            Loading vitals…
           </motion.h1>
 
           <motion.p

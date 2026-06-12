@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import confetti from 'canvas-confetti';
 import {
   ArrowLeft,
   ChevronRight,
@@ -21,6 +20,9 @@ import type { ChapterData, SubjectData, Question, SubjectColor } from '../types'
 import { subjectStyles, formatTime } from '../types';
 import { useLanguage } from '../context/LanguageContext';
 import { useTheme } from '../context/ThemeContext';
+import { celebrate } from '../lib/celebrate';
+import { pulse } from '../lib/pulseEngine';
+import { useProgress } from '../store/progress';
 
 interface Props {
   chapter: ChapterData;
@@ -282,6 +284,7 @@ export function ResultsDashboard({
   const { isDark } = useTheme();
   const isRTL = language === 'ar';
 
+  const progressStore = useProgress();
   const [filter, setFilter] = useState<'all' | 'wrong' | 'flagged'>('all');
   const [openExplanations, setOpenExplanations] = useState<Set<number>>(new Set());
   const [openConcepts, setOpenConcepts] = useState<Set<number>>(new Set());
@@ -310,11 +313,14 @@ export function ResultsDashboard({
 
   /* Confetti celebration */
   useEffect(() => {
-    if (percentage >= 75) {
-      confetti({ particleCount: 140, spread: 75, origin: { y: 0.6 }, colors: ['#34d399', '#38bdf8', '#fbbf24', '#ffffff'] });
+    celebrate({ perfect: correctCount === totalCount });
+    pulse.setMood('celebrate', 3000);
+    if (correctCount === totalCount) {
+      progressStore.unlock('perfect_score');
+    } else if (percentage >= 75) {
+      progressStore.unlock('high_score');
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [correctCount, totalCount, percentage, progressStore]);
 
   const toggleSet = (setter: React.Dispatch<React.SetStateAction<Set<number>>>, i: number) =>
     setter(prev => {

@@ -29,6 +29,7 @@ import { subjectStyles } from '../types';
 import { useLanguage } from '../context/LanguageContext';
 import { getQuizHistory } from '../utils/storage';
 import type { QuizResult } from '../utils/storage';
+import { applySubjectTheme } from '../theme/subjectThemes';
 
 /* ------------------------------------------------------------------ */
 /* Types                                                               */
@@ -415,7 +416,12 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart, 
                   whileHover={isActive ? { scale: 1.03, y: -4, transition: { type: 'spring', stiffness: 400, damping: 18 } } : undefined}
                   whileTap={isActive ? { scale: 0.98 } : undefined}
                   disabled={!isActive}
-                  onClick={() => isActive && onSelectSubject(subject, subject.questions)}
+                  onClick={() => {
+                    if (isActive) {
+                      applySubjectTheme(subject.id);
+                      onSelectSubject(subject, subject.questions);
+                    }
+                  }}
                   className={`group relative flex flex-col text-start bg-card dark:bg-white/[0.02] border border-border dark:border-white/[0.06] backdrop-blur-xl rounded-[28px] p-6 transition-colors ${
                     isActive ? 'hover:border-gray-300 dark:hover:border-white/20 cursor-pointer' : 'cursor-not-allowed opacity-50 saturate-50'
                   }`}

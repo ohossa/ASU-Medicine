@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useMemo } from 'react';
+import { useNavigate } from 'react-router';
 import { GraduationCap, Layers, ArrowRight, Palette, Clock, Award, Trash2, ArrowLeft, Calendar, ChevronRight } from 'lucide-react';
 import type { ChapterData, SubjectColor } from '../types';
 import { formatTime } from '../types';
 import type { QuizResult } from '../utils/storage';
 import { getQuizHistory, clearQuizHistory } from '../utils/storage';
-import { SyllabusTracker } from './SyllabusTracker';
 import { useLanguage } from '../context/LanguageContext';
 
 /* ------------------------------------------------------------------ */
@@ -222,6 +222,7 @@ export function ChapterSelect({
 }: Props) {
   const { t, language } = useLanguage();
   const isRTL = language === 'ar';
+  const navigate = useNavigate();
 
   const label = (key: string): string => {
     const translated = typeof t === 'function' ? t(key) : undefined;
@@ -231,7 +232,6 @@ export function ChapterSelect({
   };
 
   const [history, setHistory] = useState<QuizResult[]>([]);
-  const [showTracker, setShowTracker] = useState(false);
 
   /* History retrieval on mount */
   useEffect(() => {
@@ -504,7 +504,7 @@ export function ChapterSelect({
               </div>
               <button
                 type="button"
-                onClick={() => setShowTracker(true)}
+                onClick={() => navigate(`/year-2/${moduleCode.toLowerCase()}/tracker`)}
                 className="inline-flex items-center gap-2 rounded-2xl border border-border bg-secondary px-4 py-2.5 text-sm font-semibold text-gray-850 dark:text-white transition-all hover:bg-muted active:scale-95 cursor-pointer"
               >
                 <Calendar size={16} className="text-physiology" />
@@ -644,15 +644,6 @@ export function ChapterSelect({
         </div>
       </div>
 
-      {/* ---------------- Syllabus tracker modal ---------------- */}
-      {showTracker && (
-        <SyllabusTracker
-          moduleCode={moduleCode}
-          moduleName={moduleName}
-          chapters={chapters}
-          onClose={() => setShowTracker(false)}
-        />
-      )}
     </div>
   );
 }

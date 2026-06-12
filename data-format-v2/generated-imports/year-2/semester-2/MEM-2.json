@@ -7769,27 +7769,85 @@
             },
             {
               "id": "MEM2-CH2-PATH-0099",
-              "type": "essay",
+              "type": "matching",
               "lecture": 2,
-              "text": "Match:",
-              "explanation": "Classic associations.",
-              "modelAnswer": "Papillary → Psammoma bodies; Follicular → Capsular invasion; Medullary → Amyloid; Anaplastic → no specific; Neuroblastoma → Homer-Wright rosettes"
+              "text": "Match each tumor with its classic histological or diagnostic association:",
+              "pairs": [
+                {
+                  "premise": "Papillary thyroid carcinoma",
+                  "target": "Psammoma bodies"
+                },
+                {
+                  "premise": "Follicular thyroid carcinoma",
+                  "target": "Capsular invasion"
+                },
+                {
+                  "premise": "Medullary thyroid carcinoma",
+                  "target": "Amyloid stroma"
+                },
+                {
+                  "premise": "Anaplastic thyroid carcinoma",
+                  "target": "No specific features (pleomorphic giant cells)"
+                },
+                {
+                  "premise": "Neuroblastoma",
+                  "target": "Homer-Wright rosettes"
+                }
+              ],
+              "explanation": "Classic histological and diagnostic associations for endocrine and neurogenic tumors.",
+              "keyConcept": "Histological hallmarks of thyroid and neural crest tumors."
             },
             {
               "id": "MEM2-CH2-PATH-0100",
-              "type": "essay",
+              "type": "matching",
               "lecture": 2,
-              "text": "Match:",
-              "explanation": "Tumor behavior.",
-              "modelAnswer": "Ganglioneuroma benign; Neuroblastoma malignant; Pheochromocytoma variable; Pituitary adenoma may be invasive."
+              "text": "Match each tumor with its biological behavior:",
+              "pairs": [
+                {
+                  "premise": "Ganglioneuroma",
+                  "target": "Benign"
+                },
+                {
+                  "premise": "Neuroblastoma",
+                  "target": "Malignant"
+                },
+                {
+                  "premise": "Pheochromocytoma",
+                  "target": "Variable behavior"
+                },
+                {
+                  "premise": "Pituitary adenoma",
+                  "target": "May be locally invasive"
+                }
+              ],
+              "explanation": "Differentiation and behavior of neurogenic and endocrine tumors.",
+              "keyConcept": "Tumor biological behavior."
             },
             {
               "id": "MEM2-CH2-PATH-0101",
-              "type": "essay",
+              "type": "matching",
               "lecture": 2,
-              "text": "Match:",
-              "explanation": "Origins of tumors.",
-              "modelAnswer": "Neuroblastoma from sympathetic ganglia; Pheochromocytoma from adrenal medulla (not carotid body); Anaplastic from thyroid; Thymoma from thymus."
+              "text": "Match each tumor with its tissue or site of origin:",
+              "pairs": [
+                {
+                  "premise": "Neuroblastoma",
+                  "target": "Sympathetic ganglia"
+                },
+                {
+                  "premise": "Pheochromocytoma",
+                  "target": "Adrenal medulla"
+                },
+                {
+                  "premise": "Anaplastic carcinoma",
+                  "target": "Thyroid gland"
+                },
+                {
+                  "premise": "Thymoma",
+                  "target": "Thymus"
+                }
+              ],
+              "explanation": "Distinct cell lineages and sites of origin for neurogenic, thyroid, and thymic tumors.",
+              "keyConcept": "Tissue origins of endocrine and mediastinal tumors."
             }
           ]
         },

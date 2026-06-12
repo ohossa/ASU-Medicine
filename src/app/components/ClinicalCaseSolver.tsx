@@ -1,39 +1,35 @@
 // src/app/components/ClinicalCaseSolver.tsx
-// ASU Medical Portal — Interactive clinical case simulator (Apple Dark Mode).
+// ASU Medical Portal — Interactive clinical case simulator.
 
 import React, { useMemo, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
-  Activity, Clock, AlertTriangle, Heart, Check, X,
+  Activity, Clock, Heart, Check, X,
   ArrowRight, ArrowLeft, Award, FileText,
 } from "lucide-react";
+import { useTheme } from "../context/ThemeContext";
+import { PortalShell } from "./PortalShell";
 
-/* ================================ Theme ================================== */
+/* ================================ Theme Resolvers ========================== */
 
-const T = {
-  bg: "transparent",
-  glass: "rgba(18,18,20,0.55)",
-  glassBorder: "1px solid rgba(255,255,255,0.08)",
-  hairline: "1px solid rgba(255,255,255,0.06)",
-  glassShadow: "0 24px 64px rgba(0,0,0,0.45)",
-  text: "rgba(255,255,255,0.92)",
-  sub: "rgba(255,255,255,0.55)",
-  faint: "rgba(255,255,255,0.32)",
-  teal: "#2dd4bf",
-  purple: "#a855f7",
-  amber: "#fbbf24",
-  red: "#f87171",
-  font: `-apple-system, "SF Pro Display", "SF Pro Text", Inter, sans-serif`,
-  mono: `"SF Mono", ui-monospace, Menlo, monospace`,
-} as const;
-
-const glassCard: React.CSSProperties = {
-  background: T.glass,
-  backdropFilter: "blur(20px)",
-  WebkitBackdropFilter: "blur(20px)",
-  border: T.glassBorder,
-  borderRadius: 22,
-  boxShadow: T.glassShadow,
+const getT = (themeMode: "light" | "dark") => {
+  const isDark = themeMode === "dark";
+  return {
+    bg: "transparent",
+    glass: isDark ? "rgba(18,18,20,0.55)" : "rgba(255,255,255,0.75)",
+    glassBorder: isDark ? "1px solid rgba(255,255,255,0.08)" : "1px solid rgba(24,24,27,0.08)",
+    hairline: isDark ? "1px solid rgba(255,255,255,0.06)" : "1px solid rgba(24,24,27,0.06)",
+    glassShadow: isDark ? "0 24px 64px rgba(0,0,0,0.45)" : "0 24px 64px rgba(0,0,0,0.08)",
+    text: isDark ? "rgba(255,255,255,0.92)" : "rgba(24,24,27,0.92)",
+    sub: isDark ? "rgba(255,255,255,0.55)" : "rgba(24,24,27,0.65)",
+    faint: isDark ? "rgba(255,255,255,0.32)" : "rgba(24,24,27,0.42)",
+    teal: isDark ? "#2dd4bf" : "#0d9488",
+    purple: isDark ? "#a855f7" : "#7c3aed",
+    amber: isDark ? "#fbbf24" : "#d97706",
+    red: isDark ? "#f87171" : "#dc2626",
+    font: `-apple-system, "SF Pro Display", "SF Pro Text", Inter, sans-serif`,
+    mono: `"SF Mono", ui-monospace, Menlo, monospace`,
+  } as const;
 };
 
 /* ============================== Case Data Definitions ======================= */
@@ -213,13 +209,15 @@ const item = {
   animate: { y: 0, opacity: 1, transition: { duration: 0.4, ease: [0.22, 1, 0.36, 1] } },
 };
 
-const sevColor = (s: Severity) => (s === "critical" ? T.red : s === "warn" ? T.amber : T.teal);
+const sevColor = (s: Severity, T: any) => (s === "critical" ? T.red : s === "warn" ? T.amber : T.teal);
 
 /* ============================== Primitives ================================ */
 
 function SectionTitle({ icon: Icon, color, children }: {
   icon: React.ElementType; color: string; children: React.ReactNode;
 }) {
+  const { theme } = useTheme();
+  const T = getT(theme);
   return (
     <div style={{ display: "flex", alignItems: "center", gap: 9, marginBottom: 18 }}>
       <Icon size={15} color={color} strokeWidth={2.2} />
@@ -233,7 +231,10 @@ function SectionTitle({ icon: Icon, color, children }: {
 function PillButton({ children, onClick, disabled, variant = "ghost" }: {
   children: React.ReactNode; onClick?: () => void; disabled?: boolean; variant?: "ghost" | "solid";
 }) {
+  const { theme } = useTheme();
+  const T = getT(theme);
   const solid = variant === "solid";
+  const isDark = theme === "dark";
   return (
     <motion.button
       type="button"
@@ -245,9 +246,9 @@ function PillButton({ children, onClick, disabled, variant = "ghost" }: {
       style={{
         display: "inline-flex", alignItems: "center", gap: 8,
         padding: solid ? "13px 26px" : "12px 20px", borderRadius: 999,
-        border: solid ? "none" : "1px solid rgba(255,255,255,0.14)",
-        background: solid ? "#fff" : "transparent",
-        color: solid ? "#0b0b0c" : T.sub,
+        border: solid ? "none" : `1px solid ${isDark ? "rgba(255,255,255,0.14)" : "rgba(24,24,27,0.14)"}`,
+        background: solid ? (isDark ? "#fff" : "#18181b") : "transparent",
+        color: solid ? (isDark ? "#0b0b0c" : "#fff") : T.sub,
         fontFamily: T.font, fontSize: 14, fontWeight: 600,
         cursor: disabled ? "not-allowed" : "pointer",
       }}
@@ -260,6 +261,8 @@ function PillButton({ children, onClick, disabled, variant = "ghost" }: {
 /* ============================ Vitals monitor ============================== */
 
 function EcgWaveform() {
+  const { theme } = useTheme();
+  const T = getT(theme);
   const beat = "h14 l4 -5 l4 5 h8 l5 -26 l6 40 l5 -14 h10 q6 0 9 -6 q3 6 9 6 h14";
   const d = `M0 40 ${beat} ${beat} ${beat}`;
   return (
@@ -270,13 +273,24 @@ function EcgWaveform() {
         transition={{ duration: 2.4, repeat: Infinity, ease: "linear" }}
       >
         <path d={d} stroke={T.teal} strokeWidth={1.8} strokeLinejoin="round"
-          style={{ filter: "drop-shadow(0 0 6px rgba(45,212,191,0.45))" }} />
+          style={{ filter: `drop-shadow(0 0 6px ${T.teal}77)` }} />
       </motion.svg>
     </div>
   );
 }
 
 function VitalsMonitor({ currentCase }: { currentCase: CaseData }) {
+  const { theme } = useTheme();
+  const T = getT(theme);
+  const isDark = theme === "dark";
+  const glassCard = {
+    background: T.glass,
+    backdropFilter: "blur(20px)",
+    WebkitBackdropFilter: "blur(20px)",
+    border: T.glassBorder,
+    borderRadius: 22,
+    boxShadow: T.glassShadow,
+  };
   return (
     <div style={{ ...glassCard, padding: 24 }}>
       <SectionTitle icon={Activity} color={T.teal}>Vitals Monitor</SectionTitle>
@@ -284,12 +298,12 @@ function VitalsMonitor({ currentCase }: { currentCase: CaseData }) {
       <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(120px,1fr))", gap: 12, marginTop: 18 }}>
         {currentCase.vitals.map((v) => (
           <motion.div key={v.label} variants={item}
-            style={{ padding: "12px 14px", borderRadius: 14, background: "rgba(255,255,255,0.025)", border: T.hairline }}>
+            style={{ padding: "12px 14px", borderRadius: 14, background: isDark ? "rgba(255,255,255,0.025)" : "rgba(24,24,27,0.035)", border: T.hairline }}>
             <p style={{ margin: 0, fontSize: 10.5, letterSpacing: 0.6, textTransform: "uppercase", color: T.faint }}>{v.label}</p>
             <motion.p
               animate={v.severity !== "normal" ? { opacity: [1, 0.55, 1] } : undefined}
               transition={{ duration: 1.6, repeat: Infinity, ease: "easeInOut" }}
-              style={{ margin: "6px 0 0", fontFamily: T.mono, fontSize: 19, fontWeight: 600, color: sevColor(v.severity), fontVariantNumeric: "tabular-nums" }}
+              style={{ margin: "6px 0 0", fontFamily: T.mono, fontSize: 19, fontWeight: 600, color: sevColor(v.severity, T), fontVariantNumeric: "tabular-nums" }}
             >
               {v.value}<span style={{ fontSize: 11, color: T.faint, marginLeft: 4 }}>{v.unit}</span>
             </motion.p>
@@ -303,6 +317,16 @@ function VitalsMonitor({ currentCase }: { currentCase: CaseData }) {
 /* ================================ Stages ================================== */
 
 function StagePresentation({ currentCase }: { currentCase: CaseData }) {
+  const { theme } = useTheme();
+  const T = getT(theme);
+  const glassCard = {
+    background: T.glass,
+    backdropFilter: "blur(20px)",
+    WebkitBackdropFilter: "blur(20px)",
+    border: T.glassBorder,
+    borderRadius: 22,
+    boxShadow: T.glassShadow,
+  };
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
       <div style={{ display: "grid", gap: 18 }}>
@@ -353,6 +377,17 @@ function StagePresentation({ currentCase }: { currentCase: CaseData }) {
 function StageDifferentials({ currentCase, ranked, setRanked }: {
   currentCase: CaseData; ranked: string[]; setRanked: (r: string[]) => void;
 }) {
+  const { theme } = useTheme();
+  const T = getT(theme);
+  const isDark = theme === "dark";
+  const glassCard = {
+    background: T.glass,
+    backdropFilter: "blur(20px)",
+    WebkitBackdropFilter: "blur(20px)",
+    border: T.glassBorder,
+    borderRadius: 22,
+    boxShadow: T.glassShadow,
+  };
   const toggle = (id: string) =>
     setRanked(ranked.includes(id) ? ranked.filter((r) => r !== id)
       : ranked.length < 3 ? [...ranked, id] : ranked);
@@ -375,8 +410,8 @@ function StageDifferentials({ currentCase, ranked, setRanked }: {
               style={{
                 position: "relative", textAlign: "left", padding: "18px 18px",
                 borderRadius: 16, fontFamily: T.font, cursor: "pointer",
-                background: selected ? "rgba(45,212,191,0.06)" : "rgba(255,255,255,0.025)",
-                border: `1px solid ${selected ? T.teal : "rgba(255,255,255,0.10)"}`,
+                background: selected ? (isDark ? "rgba(45,212,191,0.06)" : "rgba(13,148,136,0.06)") : (isDark ? "rgba(255,255,255,0.025)" : "rgba(24,24,27,0.03)"),
+                border: `1px solid ${selected ? T.teal : (isDark ? "rgba(255,255,255,0.10)" : "rgba(24,24,27,0.12)")}`,
                 color: T.text,
               }}
             >
@@ -387,7 +422,7 @@ function StageDifferentials({ currentCase, ranked, setRanked }: {
                   style={{
                     position: "absolute", top: -9, right: -9, width: 30, height: 30,
                     display: "grid", placeItems: "center", borderRadius: "50%",
-                    background: T.teal, color: "#0b0b0c", fontSize: 11, fontWeight: 700,
+                    background: T.teal, color: isDark ? "#0b0b0c" : "#fff", fontSize: 11, fontWeight: 700,
                   }}
                 >
                   {ordinal[rank]}
@@ -407,6 +442,8 @@ function StageDifferentials({ currentCase, ranked, setRanked }: {
 }
 
 function TrendArrow({ trend, color }: { trend: LabTest["trend"]; color: string }) {
+  const { theme } = useTheme();
+  const T = getT(theme);
   if (trend === "flat") return <span style={{ color: T.faint, fontSize: 11 }}>—</span>;
   return (
     <span style={{ color, fontSize: 11, fontWeight: 700 }}>
@@ -419,6 +456,17 @@ function StageInvestigations({ currentCase, ordered, setOrdered, ran, setRan }: 
   currentCase: CaseData; ordered: string[]; setOrdered: (o: string[]) => void;
   ran: boolean; setRan: (r: boolean) => void;
 }) {
+  const { theme } = useTheme();
+  const T = getT(theme);
+  const isDark = theme === "dark";
+  const glassCard = {
+    background: T.glass,
+    backdropFilter: "blur(20px)",
+    WebkitBackdropFilter: "blur(20px)",
+    border: T.glassBorder,
+    borderRadius: 22,
+    boxShadow: T.glassShadow,
+  };
   const toggle = (id: string) =>
     !ran && setOrdered(ordered.includes(id) ? ordered.filter((o) => o !== id) : [...ordered, id]);
 
@@ -444,18 +492,18 @@ function StageInvestigations({ currentCase, ordered, setOrdered, ran, setRan }: 
                 style={{
                   display: "flex", alignItems: "center", justifyContent: "space-between", gap: 12,
                   padding: "13px 16px", borderRadius: 13, fontFamily: T.font,
-                  background: on ? "rgba(168,85,247,0.08)" : "rgba(255,255,255,0.025)",
-                  border: `1px solid ${on ? "rgba(168,85,247,0.5)" : "rgba(255,255,255,0.10)"}`,
+                  background: on ? (isDark ? "rgba(168,85,247,0.08)" : "rgba(124,58,237,0.08)") : (isDark ? "rgba(255,255,255,0.025)" : "rgba(24,24,27,0.03)"),
+                  border: `1px solid ${on ? (isDark ? "rgba(168,85,247,0.5)" : "rgba(124,58,237,0.5)") : (isDark ? "rgba(255,255,255,0.10)" : "rgba(24,24,27,0.12)")}`,
                   color: T.text, cursor: ran ? "default" : "pointer", textAlign: "left",
                 }}
               >
                 <span style={{ display: "flex", alignItems: "center", gap: 10 }}>
                   <span style={{
                     width: 18, height: 18, borderRadius: 6, display: "grid", placeItems: "center",
-                    border: `1px solid ${on ? T.purple : "rgba(255,255,255,0.2)"}`,
+                    border: `1px solid ${on ? T.purple : (isDark ? "rgba(255,255,255,0.2)" : "rgba(24,24,27,0.2)")}`,
                     background: on ? T.purple : "transparent",
                   }}>
-                    {on && <Check size={12} color="#0b0b0c" strokeWidth={3} />}
+                    {on && <Check size={12} color={isDark ? "#0b0b0c" : "#fff"} strokeWidth={3} />}
                   </span>
                   <span style={{ fontSize: 13.5, fontWeight: 600 }}>{t.name}</span>
                 </span>
@@ -509,14 +557,14 @@ function StageInvestigations({ currentCase, ordered, setOrdered, ran, setRan }: 
                     style={{
                       display: "grid", gridTemplateColumns: "1.3fr 1fr 1fr auto", gap: 10,
                       alignItems: "center", padding: "12px", borderRadius: 11,
-                      background: t.flag !== "normal" ? `${sevColor(t.flag)}0d` : "rgba(255,255,255,0.02)",
-                      border: `1px solid ${t.flag !== "normal" ? `${sevColor(t.flag)}33` : "rgba(255,255,255,0.05)"}`,
+                      background: t.flag !== "normal" ? `${sevColor(t.flag, T)}0d` : (isDark ? "rgba(255,255,255,0.02)" : "rgba(24,24,27,0.02)"),
+                      border: `1px solid ${t.flag !== "normal" ? `${sevColor(t.flag, T)}33` : (isDark ? "rgba(255,255,255,0.05)" : "rgba(24,24,27,0.05)")}`,
                     }}
                   >
                     <span style={{ fontSize: 13, fontWeight: 600 }}>{t.name}</span>
-                    <span style={{ fontFamily: T.mono, fontSize: 12.5, color: sevColor(t.flag), fontWeight: 600 }}>{t.result}</span>
+                    <span style={{ fontFamily: T.mono, fontSize: 12.5, color: sevColor(t.flag, T), fontWeight: 600 }}>{t.result}</span>
                     <span style={{ fontFamily: T.mono, fontSize: 11.5, color: T.faint }}>{t.range}</span>
-                    <TrendArrow trend={t.trend} color={sevColor(t.flag)} />
+                    <TrendArrow trend={t.trend} color={sevColor(t.flag, T)} />
                   </motion.div>
                 ))}
               </div>
@@ -534,13 +582,16 @@ function Ring({ percent, color, label, display, size = 120, stroke = 9, delay = 
   percent: number; color: string; label: string; display: string;
   size?: number; stroke?: number; delay?: number;
 }) {
+  const { theme } = useTheme();
+  const T = getT(theme);
+  const isDark = theme === "dark";
   const r = (size - stroke) / 2;
   const c = 2 * Math.PI * r;
   return (
     <motion.div variants={item} style={{ display: "grid", justifyItems: "center", gap: 10 }}>
       <div style={{ position: "relative", width: size, height: size }}>
         <svg width={size} height={size} style={{ transform: "rotate(-90deg)" }}>
-          <circle cx={size / 2} cy={size / 2} r={r} fill="none" stroke="rgba(255,255,255,0.07)" strokeWidth={stroke} />
+          <circle cx={size / 2} cy={size / 2} r={r} fill="none" stroke={isDark ? "rgba(255,255,255,0.07)" : "rgba(24,24,27,0.07)"} strokeWidth={stroke} />
           <motion.circle
             cx={size / 2} cy={size / 2} r={r} fill="none"
             stroke={color} strokeWidth={stroke} strokeLinecap="round" strokeDasharray={c}
@@ -550,7 +601,7 @@ function Ring({ percent, color, label, display, size = 120, stroke = 9, delay = 
             style={{ filter: `drop-shadow(0 0 8px ${color}55)` }}
           />
         </svg>
-        <span style={{ position: "absolute", inset: 0, display: "grid", placeItems: "center", fontSize: 22, fontWeight: 700, letterSpacing: -0.5 }}>
+        <span style={{ position: "absolute", inset: 0, display: "grid", placeItems: "center", fontSize: 22, fontWeight: 700, letterSpacing: -0.5, color: T.text }}>
           {display}
         </span>
       </div>
@@ -565,6 +616,18 @@ function StageOutcome({ currentCase, ranked, ordered, prescribed, setPrescribed,
   submitted: boolean; setSubmitted: (s: boolean) => void;
   onBack?: () => void; onRestart: () => void;
 }) {
+  const { theme } = useTheme();
+  const T = getT(theme);
+  const isDark = theme === "dark";
+  const glassCard = {
+    background: T.glass,
+    backdropFilter: "blur(20px)",
+    WebkitBackdropFilter: "blur(20px)",
+    border: T.glassBorder,
+    borderRadius: 22,
+    boxShadow: T.glassShadow,
+  };
+
   /* ---- Scoring ---- */
   const scores = useMemo(() => {
     const rank = ranked.indexOf(currentCase.correctDx);
@@ -594,7 +657,7 @@ function StageOutcome({ currentCase, ranked, ordered, prescribed, setPrescribed,
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px,1fr))", gap: 12 }}>
           {currentCase.treatments.map((tx) => {
             const on = prescribed.includes(tx.id);
-            const verdict = submitted ? (tx.correct ? T.teal : on ? T.red : "rgba(255,255,255,0.10)") : on ? T.teal : "rgba(255,255,255,0.10)";
+            const verdict = submitted ? (tx.correct ? T.teal : on ? T.red : (isDark ? "rgba(255,255,255,0.10)" : "rgba(24,24,27,0.12)")) : on ? T.teal : (isDark ? "rgba(255,255,255,0.10)" : "rgba(24,24,27,0.12)");
             return (
               <motion.button
                 key={tx.id} type="button"
@@ -603,7 +666,7 @@ function StageOutcome({ currentCase, ranked, ordered, prescribed, setPrescribed,
                 whileTap={submitted ? undefined : { scale: 0.97 }}
                 style={{
                   textAlign: "left", padding: "16px 18px", borderRadius: 15, fontFamily: T.font,
-                  background: on ? "rgba(45,212,191,0.05)" : "rgba(255,255,255,0.025)",
+                  background: on ? (isDark ? "rgba(45,212,191,0.05)" : "rgba(13,148,136,0.05)") : (isDark ? "rgba(255,255,255,0.025)" : "rgba(24,24,27,0.03)"),
                   border: `1px solid ${verdict}`, color: T.text,
                   cursor: submitted ? "default" : "pointer",
                 }}
@@ -638,8 +701,8 @@ function StageOutcome({ currentCase, ranked, ordered, prescribed, setPrescribed,
           >
             <div style={{
               ...glassCard, padding: 26,
-              border: "1px solid rgba(45,212,191,0.35)",
-              background: "linear-gradient(135deg, rgba(45,212,191,0.10), rgba(18,18,20,0.55))",
+              border: `1px solid ${isDark ? "rgba(45,212,191,0.35)" : "rgba(13,148,136,0.35)"}`,
+              background: isDark ? "linear-gradient(135deg, rgba(45,212,191,0.10), rgba(18,18,20,0.55))" : "linear-gradient(135deg, rgba(13,148,136,0.10), rgba(255,255,255,0.75))",
             }}>
               <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 8 }}>
                 <Award size={16} color={T.teal} />
@@ -676,7 +739,11 @@ function StageOutcome({ currentCase, ranked, ordered, prescribed, setPrescribed,
 
 const STAGE_LABELS = ["Presentation", "Differentials", "Investigations", "Treatment"];
 
-export function ClinicalCaseSolver({ onBack }: { onBack?: () => void }) {
+export function ClinicalCaseSolver({ onBack, userButton }: { onBack?: () => void; userButton?: React.ReactNode }) {
+  const { theme } = useTheme();
+  const T = getT(theme);
+  const isDark = theme === "dark";
+
   // Select a random case index on mount
   const [currentCaseIndex, setCurrentCaseIndex] = useState(() => Math.floor(Math.random() * CASES.length));
   
@@ -711,89 +778,72 @@ export function ClinicalCaseSolver({ onBack }: { onBack?: () => void }) {
     setSubmitted(false);
   };
 
+  const crumbs = [{ label: "Portal", onClick: onBack }, { label: "Case Solver" }];
+
   return (
-    <main style={{
-      minHeight: "100vh", background: T.bg, fontFamily: T.font, color: T.text,
-      padding: "clamp(24px, 4vw, 56px)", WebkitFontSmoothing: "antialiased", overflowX: "hidden",
-    }}>
-      <div style={{ maxWidth: 960, margin: "0 auto" }}>
-        {/* Header + stepper */}
-        <header style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 14, marginBottom: 30 }}>
-          <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
-            {onBack && (
-              <button 
-                onClick={onBack}
-                style={{
-                  background: "rgba(255,255,255,0.03)",
-                  border: T.hairline,
-                  borderRadius: "50%",
-                  width: 38,
-                  height: 38,
-                  display: "grid",
-                  placeItems: "center",
-                  cursor: "pointer",
-                  color: T.text
-                }}
-              >
-                <ArrowLeft size={16} />
-              </button>
-            )}
-            <div>
-              <p style={{ margin: 0, fontSize: 11.5, letterSpacing: 1.6, textTransform: "uppercase", color: T.faint }}>
-                ASU Medical Portal · Clinical Case Solver
-              </p>
-              <h1 style={{ margin: "4px 0 0", fontSize: "clamp(20px, 2.5vw, 28px)", fontWeight: 700, letterSpacing: -0.6 }}>
-                {currentCase.code}
-              </h1>
-            </div>
-          </div>
-          <div style={{ display: "flex", gap: 8 }}>
-            {STAGE_LABELS.map((label, i) => (
-              <div key={label} style={{ display: "flex", alignItems: "center", gap: 8 }}>
-                <span style={{
-                  width: 26, height: 26, borderRadius: "50%", display: "grid", placeItems: "center",
-                  fontSize: 11, fontWeight: 700,
-                  background: i < stage ? T.teal : i === stage ? "rgba(45,212,191,0.15)" : "rgba(255,255,255,0.04)",
-                  border: `1px solid ${i <= stage ? T.teal : "rgba(255,255,255,0.10)"}`,
-                  color: i < stage ? "#0b0b0c" : i === stage ? T.teal : T.faint,
-                }}>
-                  {i < stage ? <Check size={12} strokeWidth={3} /> : i + 1}
-                </span>
+    <PortalShell crumbs={crumbs} userButton={userButton}>
+      <main style={{
+        minHeight: "100vh", background: T.bg, fontFamily: T.font, color: T.text,
+        padding: "clamp(24px, 4vw, 56px)", WebkitFontSmoothing: "antialiased", overflowX: "hidden",
+      }}>
+        <div style={{ maxWidth: 960, margin: "0 auto" }}>
+          {/* Header + stepper */}
+          <header style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 14, marginBottom: 30 }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 14 }}>
+              <div>
+                <h1 style={{ margin: "4px 0 0", fontSize: "clamp(20px, 2.5vw, 28px)", fontWeight: 700, letterSpacing: -0.6 }}>
+                  {currentCase.code}
+                </h1>
               </div>
-            ))}
-          </div>
-        </header>
+            </div>
+            <div style={{ display: "flex", gap: 8 }}>
+              {STAGE_LABELS.map((label, i) => (
+                <div key={label} style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                  <span style={{
+                    width: 26, height: 26, borderRadius: "50%", display: "grid", placeItems: "center",
+                    fontSize: 11, fontWeight: 700,
+                    background: i < stage ? T.teal : i === stage ? (isDark ? "rgba(45,212,191,0.15)" : "rgba(13,148,136,0.15)") : (isDark ? "rgba(255,255,255,0.04)" : "rgba(24,24,27,0.05)"),
+                    border: `1px solid ${i <= stage ? T.teal : (isDark ? "rgba(255,255,255,0.10)" : "rgba(24,24,27,0.12)")}`,
+                    color: i < stage ? (isDark ? "#0b0b0c" : "#fff") : i === stage ? T.teal : T.faint,
+                  }}>
+                    {i < stage ? <Check size={12} strokeWidth={3} /> : i + 1}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </header>
 
-        {/* Stage body */}
-        <AnimatePresence mode="wait">
-          <motion.div key={stage} variants={stageMotion} initial="initial" animate="animate" exit="exit">
-            {stage === 0 && <StagePresentation currentCase={currentCase} />}
-            {stage === 1 && <StageDifferentials currentCase={currentCase} ranked={ranked} setRanked={setRanked} />}
-            {stage === 2 && <StageInvestigations currentCase={currentCase} ordered={ordered} setOrdered={setOrdered} ran={ran} setRan={setRan} />}
-            {stage === 3 && (
-              <StageOutcome
-                currentCase={currentCase}
-                ranked={ranked} ordered={ordered}
-                prescribed={prescribed} setPrescribed={setPrescribed}
-                submitted={submitted} setSubmitted={setSubmitted}
-                onBack={onBack} onRestart={restart}
-              />
-            )}
-          </motion.div>
-        </AnimatePresence>
+          {/* Stage body */}
+          <AnimatePresence mode="wait">
+            <motion.div key={stage} variants={stageMotion} initial="initial" animate="animate" exit="exit">
+              {stage === 0 && <StagePresentation currentCase={currentCase} />}
+              {stage === 1 && <StageDifferentials currentCase={currentCase} ranked={ranked} setRanked={setRanked} />}
+              {stage === 2 && <StageInvestigations currentCase={currentCase} ordered={ordered} setOrdered={setOrdered} ran={ran} setRan={setRan} />}
+              {stage === 3 && (
+                <StageOutcome
+                  currentCase={currentCase}
+                  ranked={ranked} ordered={ordered}
+                  prescribed={prescribed} setPrescribed={setPrescribed}
+                  submitted={submitted} setSubmitted={setSubmitted}
+                  onBack={onBack} onRestart={restart}
+                />
+              )}
+            </motion.div>
+          </AnimatePresence>
 
-        {/* Stage navigation */}
-        {stage < 3 && (
-          <div style={{ display: "flex", justifyContent: "space-between", marginTop: 24 }}>
-            <PillButton disabled={stage === 0} onClick={() => setStage((s) => s - 1)}>
-              <ArrowLeft size={14} /> Back
-            </PillButton>
-            <PillButton variant="solid" disabled={!canAdvance} onClick={() => setStage((s) => s + 1)}>
-              {stage === 2 ? "Proceed to Treatment" : "Continue"} <ArrowRight size={14} />
-            </PillButton>
-          </div>
-        )}
-      </div>
-    </main>
+          {/* Stage navigation */}
+          {stage < 3 && (
+            <div style={{ display: "flex", justifyContent: "space-between", marginTop: 24 }}>
+              <PillButton disabled={stage === 0} onClick={() => setStage((s) => s - 1)}>
+                <ArrowLeft size={14} /> Back
+              </PillButton>
+              <PillButton variant="solid" disabled={!canAdvance} onClick={() => setStage((s) => s + 1)}>
+                {stage === 2 ? "Proceed to Treatment" : "Continue"} <ArrowRight size={14} />
+              </PillButton>
+            </div>
+          )}
+        </div>
+      </main>
+    </PortalShell>
   );
 }
