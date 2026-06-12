@@ -15,6 +15,7 @@ import {
   Settings,
 } from "lucide-react";
 import { SYLLABUS_MODULES } from "../data";
+import { useTheme } from "../context/ThemeContext";
 
 /* ---------------------------------- Types --------------------------------- */
 
@@ -106,11 +107,11 @@ const GRADES: GradeKey[] = ["A", "B", "C", "D"];
 const CUSTOM_PCTS: Record<GradeKey, number> = { A: 0.85, B: 0.75, C: 0.65, D: 0.6 };
 
 const GRADE_COLORS: Record<GradeKey | "Fail", string> = {
-  A: "text-emerald-400",
-  B: "text-sky-400",
-  C: "text-amber-400",
-  D: "text-orange-400",
-  Fail: "text-rose-400",
+  A: "text-emerald-600 dark:text-emerald-400",
+  B: "text-sky-600 dark:text-sky-400",
+  C: "text-amber-600 dark:text-amber-400",
+  D: "text-orange-600 dark:text-orange-400",
+  Fail: "text-rose-600 dark:text-rose-400",
 };
 
 /* --------------------------------- Helpers -------------------------------- */
@@ -185,6 +186,7 @@ function ProgressRing({ pct, label }: { pct: number; label: string }) {
   const r = (size - stroke) / 2;
   const circ = 2 * Math.PI * r;
   const clamped = Math.min(Math.max(pct, 0), 100);
+  const { isDark } = useTheme();
 
   return (
     <div className="relative flex items-center justify-center" style={{ width: size, height: size }}>
@@ -194,7 +196,7 @@ function ProgressRing({ pct, label }: { pct: number; label: string }) {
           cy={size / 2}
           r={r}
           fill="none"
-          stroke="rgba(255,255,255,0.08)"
+          stroke={isDark ? "rgba(255,255,255,0.08)" : "rgba(0, 0, 0, 0.04)"}
           strokeWidth={stroke}
         />
         <motion.circle
@@ -218,10 +220,10 @@ function ProgressRing({ pct, label }: { pct: number; label: string }) {
         </defs>
       </svg>
       <div className="absolute inset-0 flex flex-col items-center justify-center">
-        <span className="text-3xl font-semibold tracking-tight text-white tabular-nums">
+        <span className="text-3xl font-semibold tracking-tight text-gray-900 dark:text-white tabular-nums">
           {clamped.toFixed(1)}%
         </span>
-        <span className="text-[11px] uppercase tracking-widest text-white/40 mt-1">{label}</span>
+        <span className="text-[11px] uppercase tracking-widest text-gray-500 dark:text-white/40 mt-1">{label}</span>
       </div>
     </div>
   );
@@ -229,7 +231,9 @@ function ProgressRing({ pct, label }: { pct: number; label: string }) {
 
 /* ------------------------------ Main component ----------------------------- */
 
-export function MarksCalculator({ onBack }: { onBack: () => void }) {
+export function MarksCalculator({ onBack, userButton }: { onBack: () => void; userButton?: React.ReactNode }) {
+  const { isDark } = useTheme();
+
   // Navigation & Selection state
   const [selectedPreset, setSelectedPreset] = useState<ModulePreset | null>(null);
   const [selectedYearTab, setSelectedYearTab] = useState<number>(2); // Default to Year 2
@@ -377,7 +381,7 @@ export function MarksCalculator({ onBack }: { onBack: () => void }) {
   /* ---------------------------------- Render --------------------------------- */
 
   return (
-    <div className="min-h-screen bg-[#0b0b0c] text-white antialiased selection:bg-sky-500/30">
+    <div className="min-h-screen bg-background text-foreground antialiased selection:bg-sky-500/30 transition-colors duration-300">
       {/* Ambient glow background */}
       <div className="pointer-events-none fixed inset-0 overflow-hidden">
         <div className="absolute -top-40 left-1/4 h-96 w-96 rounded-full bg-sky-500/10 blur-[120px]" />
@@ -390,44 +394,47 @@ export function MarksCalculator({ onBack }: { onBack: () => void }) {
         {!selectedPreset ? (
           <div>
             {/* Header */}
-            <header className="mb-10 flex items-center gap-4">
-              <button
-                onClick={onBack}
-                aria-label="Go back to dashboard"
-                className="flex h-10 w-10 items-center justify-center rounded-full border border-white/[0.08] bg-white/[0.04] backdrop-blur-xl transition-colors hover:bg-white/[0.08]"
-              >
-                <ArrowLeft size={18} className="text-white/70" />
-              </button>
-              <div>
-                <h1 className="text-xl font-bold tracking-tight">ASU Tools</h1>
-                <p className="text-xs text-white/40">Home · Marks Calculator</p>
+            <header className="mb-10 flex items-center justify-between gap-4">
+              <div className="flex items-center gap-4">
+                <button
+                  onClick={onBack}
+                  aria-label="Go back to dashboard"
+                  className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.04] backdrop-blur-xl transition-colors hover:bg-gray-100 dark:hover:bg-white/[0.08] cursor-pointer text-gray-700 dark:text-white"
+                >
+                  <ArrowLeft size={18} className="text-current" />
+                </button>
+                <div>
+                  <h1 className="text-xl font-bold tracking-tight text-gray-900 dark:text-white">ASU Tools</h1>
+                  <p className="text-xs text-gray-500 dark:text-white/40">Home · Marks Calculator</p>
+                </div>
               </div>
+              {userButton && <div className="shrink-0">{userButton}</div>}
             </header>
 
             {/* Selection Title */}
             <div className="text-center max-w-2xl mx-auto mb-12 space-y-3">
-              <div className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-sky-500/10 text-sky-400">
+              <div className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-sky-500/10 text-sky-500 dark:text-sky-400">
                 <Calculator size={28} />
               </div>
-              <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl bg-gradient-to-r from-white via-white to-white/60 bg-clip-text text-transparent">
+              <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl bg-gradient-to-r from-gray-950 via-gray-900 to-gray-700 dark:from-white dark:via-white dark:to-white/60 bg-clip-text text-transparent">
                 Marks Calculator & Predictor
               </h2>
-              <p className="text-sm text-white/50 leading-relaxed">
+              <p className="text-sm text-gray-650 dark:text-white/50 leading-relaxed">
                 Choose a module from the official curriculum below to estimate target exam marks required for your desired grade, or construct a custom module.
               </p>
             </div>
 
             {/* Year Selector Tabs */}
-            <div className="flex justify-center border-b border-white/[0.06] mb-8">
+            <div className="flex justify-center border-b border-gray-200 dark:border-white/[0.06] mb-8">
               <div className="flex gap-2 p-1 overflow-x-auto pb-2">
                 {[1, 2, 3, 4, 5].map((y) => (
                   <button
                     key={y}
                     onClick={() => setSelectedYearTab(y)}
-                    className={`px-5 py-2.5 rounded-xl text-sm font-medium transition-all ${
+                    className={`px-5 py-2.5 rounded-xl text-sm font-medium transition-all cursor-pointer ${
                       selectedYearTab === y
-                        ? "bg-white text-black shadow-lg"
-                        : "text-white/60 hover:bg-white/[0.04] hover:text-white"
+                        ? "bg-gray-900 dark:bg-white text-white dark:text-black shadow-md font-semibold"
+                        : "text-gray-500 dark:text-white/60 hover:bg-gray-100 dark:hover:bg-white/[0.04] hover:text-gray-900 dark:hover:text-white"
                     }`}
                   >
                     Year {y}
@@ -450,7 +457,7 @@ export function MarksCalculator({ onBack }: { onBack: () => void }) {
                       boundaries: { A: 85, B: 75, C: 65, D: 60 },
                     });
                   }}
-                  className="px-5 py-2.5 rounded-xl text-sm font-medium text-sky-400 border border-sky-500/20 bg-sky-500/5 hover:bg-sky-500/10 transition-all flex items-center gap-1.5"
+                  className="px-5 py-2.5 rounded-xl text-sm font-medium text-sky-700 dark:text-sky-400 border border-sky-300 dark:border-sky-500/20 bg-sky-500/5 hover:bg-sky-500/10 transition-all flex items-center gap-1.5 cursor-pointer"
                 >
                   <Plus size={15} /> Custom Module
                 </button>
@@ -459,15 +466,15 @@ export function MarksCalculator({ onBack }: { onBack: () => void }) {
 
             {/* Semester Selector Toggle */}
             <div className="flex justify-center mb-8">
-              <div className="inline-flex rounded-full bg-white/[0.03] border border-white/[0.06] p-1">
+              <div className="inline-flex rounded-full bg-gray-100 dark:bg-white/[0.03] border border-gray-200 dark:border-white/[0.06] p-1">
                 {[1, 2].map((s) => (
                   <button
                     key={s}
                     onClick={() => setSelectedSemesterTab(s)}
-                    className={`rounded-full px-6 py-1.5 text-xs font-semibold uppercase tracking-wider transition-all ${
+                    className={`rounded-full px-6 py-1.5 text-xs font-semibold uppercase tracking-wider transition-all cursor-pointer ${
                       selectedSemesterTab === s
-                        ? "bg-white/15 text-white shadow-md border border-white/10"
-                        : "text-white/40 hover:text-white/70"
+                        ? "bg-white dark:bg-white/15 text-gray-950 dark:text-white shadow-sm dark:shadow-md border border-gray-250 dark:border-white/10"
+                        : "text-gray-500 dark:text-white/40 hover:text-gray-700 dark:hover:text-white/70"
                     }`}
                   >
                     Semester {s}
@@ -484,39 +491,39 @@ export function MarksCalculator({ onBack }: { onBack: () => void }) {
                   <button
                     key={m.code}
                     onClick={() => selectModulePreset(getModulePreset(m.code, m.name, m.marks))}
-                    className="portal-card text-left bg-white/[0.02] hover:bg-white/[0.05] rounded-2xl p-5 border border-white/[0.06] hover:border-white/[0.12] transition-all flex justify-between items-center group"
+                    className="portal-card text-left bg-card hover:bg-gray-100/50 dark:hover:bg-white/[0.05] rounded-2xl p-5 border border-gray-200 dark:border-white/[0.06] hover:border-gray-300 dark:hover:border-white/[0.12] transition-all flex justify-between items-center group cursor-pointer"
                   >
                     <div className="space-y-1.5">
                       <div className="flex items-center gap-2 flex-wrap">
-                        <span className="text-[11px] font-semibold tracking-wider uppercase text-sky-400 bg-sky-400/10 px-2 py-0.5 rounded">
+                        <span className="text-[11px] font-semibold tracking-wider uppercase text-sky-700 dark:text-sky-400 bg-sky-500/10 dark:bg-sky-400/10 px-2 py-0.5 rounded">
                           {m.code}
                         </span>
                         {isOfficialPreset ? (
-                          <span className="text-[10px] font-bold text-emerald-400 bg-emerald-500/[0.08] px-2 py-0.5 rounded flex items-center gap-1">
+                          <span className="text-[10px] font-bold text-emerald-700 dark:text-emerald-400 bg-emerald-500/[0.08] px-2 py-0.5 rounded flex items-center gap-1">
                             <Sparkles size={10} /> Detailed Preset
                           </span>
                         ) : (
-                          <span className="text-[10px] font-medium text-white/40 bg-white/[0.05] px-2 py-0.5 rounded">
+                          <span className="text-[10px] font-medium text-gray-500 dark:text-white/40 bg-gray-100 dark:bg-white/[0.05] px-2 py-0.5 rounded">
                             Standard Predictor
                           </span>
                         )}
                       </div>
-                      <h3 className="font-archivo text-base font-bold text-white group-hover:text-sky-300 transition-colors line-clamp-1">
+                      <h3 className="font-archivo text-base font-bold text-gray-900 dark:text-white group-hover:text-sky-600 dark:group-hover:text-sky-300 transition-colors line-clamp-1">
                         {m.name}
                       </h3>
-                      <p className="text-xs text-white/40 font-medium">
+                      <p className="text-xs text-gray-500 dark:text-white/40 font-medium">
                         {m.cp} CP · {m.marks} Marks total
                       </p>
                     </div>
                     <ChevronRight
                       size={18}
-                      className="text-white/30 group-hover:text-white/60 group-hover:translate-x-1 transition-all shrink-0"
+                      className="text-gray-400 dark:text-white/30 group-hover:text-gray-700 dark:group-hover:text-white/60 group-hover:translate-x-1 transition-all shrink-0"
                     />
                   </button>
                 );
               })}
               {(SYLLABUS_MODULES[selectedYearTab]?.[selectedSemesterTab] || []).length === 0 && (
-                <div className="col-span-full py-16 text-center text-white/30 text-sm">
+                <div className="col-span-full py-16 text-center text-gray-400 dark:text-white/30 text-sm">
                   No modules configured for this semester yet.
                 </div>
               )}
@@ -532,27 +539,30 @@ export function MarksCalculator({ onBack }: { onBack: () => void }) {
                 <button
                   onClick={() => setSelectedPreset(null)}
                   aria-label="Go back to selection screen"
-                  className="flex h-10 w-10 items-center justify-center rounded-full border border-white/[0.08] bg-white/[0.04] backdrop-blur-xl transition-colors hover:bg-white/[0.08]"
+                  className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.04] backdrop-blur-xl transition-colors hover:bg-gray-100 dark:hover:bg-white/[0.08] cursor-pointer text-gray-700 dark:text-white"
                 >
-                  <ArrowLeft size={18} className="text-white/70" />
+                  <ArrowLeft size={18} className="text-current" />
                 </button>
                 <div>
-                  <h1 className="flex items-center gap-2 text-xl font-semibold tracking-tight sm:text-2xl">
-                    <Calculator size={22} className="text-sky-400" />
+                  <h1 className="flex items-center gap-2 text-xl font-semibold tracking-tight sm:text-2xl text-gray-900 dark:text-white">
+                    <Calculator size={22} className="text-sky-500 dark:text-sky-400" />
                     Marks Calculator
                   </h1>
-                  <p className="text-sm text-white/40">
+                  <p className="text-sm text-gray-500 dark:text-white/40">
                     {isCustom ? "Custom Builder" : `ASU · Year ${selectedYearTab} · Semester ${selectedSemesterTab}`}
                   </p>
                 </div>
               </div>
-              <button
-                onClick={resetScores}
-                className="flex items-center gap-2 rounded-full border border-white/[0.08] bg-white/[0.04] px-4 py-2 text-sm text-white/70 backdrop-blur-xl transition-colors hover:bg-white/[0.08]"
-              >
-                <RefreshCw size={14} />
-                Reset
-              </button>
+              <div className="flex items-center gap-3">
+                <button
+                  onClick={resetScores}
+                  className="flex items-center gap-2 rounded-full border border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.04] px-4 py-2 text-sm text-gray-700 dark:text-white/70 backdrop-blur-xl transition-colors hover:bg-gray-100 dark:hover:bg-white/[0.08] cursor-pointer"
+                >
+                  <RefreshCw size={14} />
+                  Reset
+                </button>
+                {userButton && <div className="shrink-0">{userButton}</div>}
+              </div>
             </header>
 
             <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
@@ -568,12 +578,12 @@ export function MarksCalculator({ onBack }: { onBack: () => void }) {
                       exit={{ opacity: 0, height: 0 }}
                       className="overflow-hidden"
                     >
-                      <div className="mb-5 space-y-3 rounded-xl border border-white/[0.06] bg-white/[0.02] p-4">
+                      <div className="mb-5 space-y-3 rounded-xl border border-gray-200 dark:border-white/[0.06] bg-secondary p-4">
                         <input
                           value={customName}
                           onChange={(e) => setCustomName(e.target.value)}
                           placeholder="Module name"
-                          className="w-full rounded-lg border border-white/[0.08] bg-black/30 px-3 py-2 text-sm placeholder-white/25 outline-none transition-colors focus:border-sky-400/50"
+                          className="w-full rounded-lg border border-gray-200 dark:border-white/[0.08] bg-white dark:bg-black/30 px-3 py-2 text-sm text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-white/25 outline-none transition-colors focus:border-sky-500"
                         />
                         {customSections.map((s) => (
                           <div key={s.id} className="flex items-center gap-2">
@@ -581,19 +591,19 @@ export function MarksCalculator({ onBack }: { onBack: () => void }) {
                               value={s.name}
                               onChange={(e) => updateCustomSection(s.id, { name: e.target.value })}
                               placeholder="Section name"
-                              className="min-w-0 flex-1 rounded-lg border border-white/[0.08] bg-black/30 px-3 py-2 text-sm placeholder-white/25 outline-none focus:border-sky-400/50"
+                              className="min-w-0 flex-1 rounded-lg border border-gray-200 dark:border-white/[0.08] bg-white dark:bg-black/30 px-3 py-2 text-sm text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-white/25 outline-none focus:border-sky-500"
                             />
                             <input
                               value={s.max}
                               onChange={(e) => updateCustomSection(s.id, { max: e.target.value })}
                               placeholder="Max"
                               inputMode="decimal"
-                              className="w-20 rounded-lg border border-white/[0.08] bg-black/30 px-3 py-2 text-sm placeholder-white/25 outline-none focus:border-sky-400/50"
+                              className="w-20 rounded-lg border border-gray-200 dark:border-white/[0.08] bg-white dark:bg-black/30 px-3 py-2 text-sm text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-white/25 outline-none focus:border-sky-500"
                             />
                             <button
                               onClick={() => removeCustomSection(s.id)}
                               aria-label="Remove section"
-                              className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-white/[0.06] text-white/40 transition-colors hover:bg-rose-500/10 hover:text-rose-400"
+                              className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-gray-200 dark:border-white/[0.06] text-gray-400 dark:text-white/40 transition-colors hover:bg-rose-500/10 hover:text-rose-500 dark:hover:text-rose-400 cursor-pointer"
                             >
                               <Trash2 size={15} />
                             </button>
@@ -601,12 +611,12 @@ export function MarksCalculator({ onBack }: { onBack: () => void }) {
                         ))}
                         <button
                           onClick={addCustomSection}
-                          className="flex items-center gap-1.5 text-sm text-sky-400 transition-colors hover:text-sky-300"
+                          className="flex items-center gap-1.5 text-sm text-sky-700 dark:text-sky-400 transition-colors hover:text-sky-600 dark:hover:text-sky-300 cursor-pointer"
                         >
                           <Plus size={15} /> Add section
                         </button>
-                        <p className="text-xs text-white/35">
-                          Module total: <span className="font-medium text-white/70 tabular-nums">{total}</span> marks ·
+                        <p className="text-xs text-gray-500 dark:text-white/35">
+                          Module total: <span className="font-medium text-gray-700 dark:text-white/70 tabular-nums">{total}</span> marks ·
                           Boundaries auto-set at A ≥85%, B ≥75%, C ≥65%, D ≥60%
                         </p>
                       </div>
@@ -617,12 +627,12 @@ export function MarksCalculator({ onBack }: { onBack: () => void }) {
                 {/* Section score inputs */}
                 <div className="space-y-3">
                   <div className="flex items-center justify-between">
-                    <h2 className="text-sm font-semibold text-white/80">{activeModule.name}</h2>
-                    <span className="text-xs text-white/35 tabular-nums">Total: {total} marks</span>
+                    <h2 className="text-sm font-semibold text-gray-950 dark:text-white/80">{activeModule.name}</h2>
+                    <span className="text-xs text-gray-500 dark:text-white/35 tabular-nums">Total: {total} marks</span>
                   </div>
 
                   {activeModule.sections.length === 0 && (
-                    <p className="flex items-center gap-2 text-sm text-white/40">
+                    <p className="flex items-center gap-2 text-sm text-gray-450 dark:text-white/40">
                       <HelpCircle size={15} /> Add at least one section with a max score.
                     </p>
                   )}
@@ -635,10 +645,10 @@ export function MarksCalculator({ onBack }: { onBack: () => void }) {
                         layout
                         initial={{ opacity: 0, y: 6 }}
                         animate={{ opacity: 1, y: 0 }}
-                        className="rounded-xl border border-white/[0.06] bg-white/[0.02] p-3.5"
+                        className="rounded-xl border border-gray-200 dark:border-white/[0.06] bg-card p-3.5"
                       >
                         <div className="flex items-center justify-between gap-3">
-                          <label htmlFor={`score-${s.id}`} className="min-w-0 flex-1 truncate text-sm text-white/70">
+                          <label htmlFor={`score-${s.id}`} className="min-w-0 flex-1 truncate text-sm text-gray-800 dark:text-white/70 font-medium">
                             {s.name}
                           </label>
                           <div className="flex items-center gap-1.5">
@@ -648,13 +658,13 @@ export function MarksCalculator({ onBack }: { onBack: () => void }) {
                               onChange={(e) => setScores((p) => ({ ...p, [s.id]: e.target.value }))}
                               placeholder="—"
                               inputMode="decimal"
-                              className={`w-20 rounded-lg border bg-black/30 px-3 py-2 text-right text-sm tabular-nums placeholder-white/25 outline-none transition-colors ${
+                              className={`w-20 rounded-lg border bg-white dark:bg-black/30 px-3 py-2 text-right text-sm tabular-nums text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-white/25 outline-none transition-colors ${
                                 error
-                                  ? "border-rose-500/50 focus:border-rose-400"
-                                  : "border-white/[0.08] focus:border-sky-400/50"
+                                  ? "border-rose-500/50 focus:border-rose-500"
+                                  : "border-gray-200 dark:border-white/[0.08] focus:border-sky-500"
                               }`}
                             />
-                            <span className="w-12 text-xs text-white/35 tabular-nums">/ {s.max}</span>
+                            <span className="w-12 text-xs text-gray-500 dark:text-white/35 tabular-nums">/ {s.max}</span>
                           </div>
                         </div>
                         <AnimatePresence>
@@ -663,7 +673,7 @@ export function MarksCalculator({ onBack }: { onBack: () => void }) {
                               initial={{ opacity: 0, height: 0 }}
                               animate={{ opacity: 1, height: "auto" }}
                               exit={{ opacity: 0, height: 0 }}
-                              className="mt-1.5 flex items-center gap-1 text-xs text-rose-400"
+                              className="mt-1.5 flex items-center gap-1 text-xs text-rose-600 dark:text-rose-400 font-semibold"
                             >
                               <AlertTriangle size={12} /> {error}
                             </motion.p>
@@ -678,7 +688,7 @@ export function MarksCalculator({ onBack }: { onBack: () => void }) {
                 {!isCustom && (
                   <button
                     onClick={handleCustomize}
-                    className="mt-6 w-full flex items-center justify-center gap-1.5 text-xs text-white/50 hover:text-sky-400 hover:border-sky-500/30 transition-all py-3 rounded-xl border border-white/[0.06] bg-white/[0.02] hover:bg-sky-500/5"
+                    className="mt-6 w-full flex items-center justify-center gap-1.5 text-xs text-gray-500 dark:text-white/50 hover:text-sky-700 dark:hover:text-sky-400 hover:border-sky-300 dark:hover:border-sky-500/30 transition-all py-3 rounded-xl border border-gray-200 dark:border-white/[0.06] bg-secondary hover:bg-sky-500/5 cursor-pointer"
                   >
                     <Settings size={13} /> Customize Section Layout
                   </button>
@@ -691,12 +701,12 @@ export function MarksCalculator({ onBack }: { onBack: () => void }) {
                 <GlassCard className="flex flex-col items-center gap-4 p-6 sm:flex-row sm:justify-around">
                   <ProgressRing pct={pctAchieved} label="Achieved" />
                   <div className="space-y-2 text-center sm:text-left">
-                    <p className="text-sm text-white/40">Marks entered</p>
-                    <p className="text-2xl font-semibold tabular-nums">
+                    <p className="text-sm text-gray-500 dark:text-white/40">Marks entered</p>
+                    <p className="text-2xl font-bold tabular-nums text-gray-900 dark:text-white">
                       {calc.entered}
-                      <span className="text-base font-normal text-white/35"> / {total}</span>
+                      <span className="text-base font-normal text-gray-400 dark:text-white/35"> / {total}</span>
                     </p>
-                    <p className="text-xs text-white/40 tabular-nums">
+                    <p className="text-xs text-gray-450 dark:text-white/40 tabular-nums">
                       {calc.remainingMax} marks still on the table
                     </p>
                   </div>
@@ -711,7 +721,7 @@ export function MarksCalculator({ onBack }: { onBack: () => void }) {
                     ] as const
                   ).map(({ label, grade, hint }) => (
                     <GlassCard key={label} className="p-4 text-center">
-                      <p className="text-[11px] uppercase tracking-widest text-white/40">{label}</p>
+                      <p className="text-[11px] uppercase tracking-widest text-gray-550 dark:text-white/40">{label}</p>
                       <motion.p
                         key={`${label}-${grade}`}
                         initial={{ scale: 0.8, opacity: 0 }}
@@ -720,15 +730,15 @@ export function MarksCalculator({ onBack }: { onBack: () => void }) {
                       >
                         {grade}
                       </motion.p>
-                      <p className="text-[11px] text-white/35">{hint}</p>
+                      <p className="text-[11px] text-gray-450 dark:text-white/35">{hint}</p>
                     </GlassCard>
                   ))}
                 </div>
 
                 {/* Target grade cards */}
                 <GlassCard className="p-5">
-                  <h2 className="mb-4 flex items-center gap-2 text-sm font-medium text-white/80">
-                    <Award size={16} className="text-amber-400" /> Target Grades
+                  <h2 className="mb-4 flex items-center gap-2 text-sm font-semibold text-gray-900 dark:text-white/80">
+                    <Award size={16} className="text-amber-500" /> Target Grades
                   </h2>
                   <div className="space-y-3">
                     {GRADES.map((g) => {
@@ -740,33 +750,33 @@ export function MarksCalculator({ onBack }: { onBack: () => void }) {
                           layout
                           className={`flex items-center justify-between gap-3 rounded-xl border p-3.5 ${
                             status.kind === "achieved"
-                              ? "border-emerald-500/25 bg-emerald-500/[0.06]"
+                              ? "border-emerald-500/25 bg-emerald-500/[0.04] dark:bg-emerald-500/[0.06]"
                               : status.kind === "out-of-reach"
-                                ? "border-rose-500/20 bg-rose-500/[0.04] opacity-60"
-                                : "border-amber-500/20 bg-amber-500/[0.04]"
+                                ? "border-rose-500/20 bg-rose-500/[0.02] dark:bg-rose-500/[0.04] opacity-60"
+                                : "border-amber-500/20 bg-amber-500/[0.02] dark:bg-amber-500/[0.04]"
                           }`}
                         >
                           <div className="flex items-center gap-3">
                             <span className={`text-xl font-bold ${GRADE_COLORS[g]}`}>{g}</span>
-                            <span className="text-xs text-white/40 tabular-nums">≥ {min} marks</span>
+                            <span className="text-xs text-gray-500 dark:text-white/40 tabular-nums">≥ {min} marks</span>
                           </div>
                           <div className="text-right">
                             {status.kind === "achieved" && (
-                              <span className="flex items-center gap-1.5 text-sm font-medium text-emerald-400">
+                              <span className="flex items-center gap-1.5 text-sm font-medium text-emerald-600 dark:text-emerald-400">
                                 <CheckCircle2 size={15} /> Achieved
                               </span>
                             )}
                             {status.kind === "out-of-reach" && (
-                              <span className="flex items-center gap-1.5 text-sm font-medium text-rose-400">
+                              <span className="flex items-center gap-1.5 text-sm font-medium text-rose-650 dark:text-rose-400">
                                 <AlertTriangle size={15} /> Out of Reach
                               </span>
                             )}
                             {status.kind === "possible" && (
                               <div className="text-sm">
-                                <span className="font-medium text-amber-400 tabular-nums">
+                                <span className="font-semibold text-amber-600 dark:text-amber-400 tabular-nums">
                                   +{status.marksNeeded} marks needed
                                 </span>
-                                <p className="text-xs text-white/40 tabular-nums">
+                                <p className="text-xs text-gray-500 dark:text-white/40 tabular-nums">
                                   Need {status.pctNeeded.toFixed(0)}% on remaining
                                 </p>
                               </div>

@@ -7,6 +7,10 @@ import { getQuizHistory, clearQuizHistory } from '../utils/storage';
 import { SyllabusTracker } from './SyllabusTracker';
 import { useLanguage } from '../context/LanguageContext';
 
+/* ------------------------------------------------------------------ */
+/* Types                                                               */
+/* ------------------------------------------------------------------ */
+
 export interface BreadcrumbItem {
   label: string;
   onClick?: () => void;
@@ -23,6 +27,10 @@ interface Props {
   userButton?: React.ReactNode;
   breadcrumbPath?: BreadcrumbItem[];
 }
+
+/* ------------------------------------------------------------------ */
+/* Color records                                                       */
+/* ------------------------------------------------------------------ */
 
 const badgeColors: Record<SubjectColor, string> = {
   anatomy: 'bg-anatomy/10 text-anatomy',
@@ -68,16 +76,114 @@ const hoverText: Record<SubjectColor, string> = {
   clinical: 'group-hover:text-clinical',
 };
 
-function pctColor(pct: number) {
+const startButtonBg: Record<SubjectColor, string> = {
+  anatomy: 'bg-anatomy',
+  histology: 'bg-histology',
+  physiology: 'bg-physiology',
+  biochem: 'bg-biochem',
+  microbiology: 'bg-microbiology',
+  pathology: 'bg-pathology',
+  pharma: 'bg-pharma',
+  clinical: 'bg-clinical',
+};
+
+const LEGEND: { id: SubjectColor; en: string; ar: string }[] = [
+  { id: 'anatomy', en: 'Anatomy', ar: 'التشريح' },
+  { id: 'histology', en: 'Histology', ar: 'الأنسجة' },
+  { id: 'physiology', en: 'Physiology', ar: 'الفسيولوجيا' },
+  { id: 'biochem', en: 'Biochemistry', ar: 'الكيمياء الحيوية' },
+  { id: 'microbiology', en: 'Microbiology', ar: 'الأحياء الدقيقة' },
+  { id: 'pathology', en: 'Pathology', ar: 'الباثولوجيا' },
+  { id: 'pharma', en: 'Pharmacology', ar: 'الأدوية' },
+  { id: 'clinical', en: 'Clinical', ar: 'الإكلينيكي' },
+];
+
+/* ------------------------------------------------------------------ */
+/* Helpers                                                             */
+/* ------------------------------------------------------------------ */
+
+/** Score color classification. */
+const pctColor = (pct: number): string => {
   if (pct >= 75) return 'text-physiology';
   if (pct >= 50) return 'text-biochem';
   return 'text-pathology';
+};
+
+const FALLBACK: Record<string, { en: string; ar: string }> = {
+  back: { en: 'Back', ar: 'رجوع' },
+  portal: { en: 'Portal', ar: 'البوابة' },
+  syllabusProgress: { en: 'Syllabus & Progress', ar: 'المنهج والتقدم' },
+  chapters: { en: 'Chapters', ar: 'الفصول' },
+  subjects: { en: 'Subjects', ar: 'المواد' },
+  questions: { en: 'Questions', ar: 'الأسئلة' },
+  start: { en: 'Start', ar: 'ابدأ' },
+  page: { en: 'Page', ar: 'صفحة' },
+  legend: { en: 'Subject Color Guide', ar: 'دليل ألوان المواد' },
+  recentResults: { en: 'Recent Results', ar: 'النتائج الأخيرة' },
+  clearHistory: { en: 'Clear history', ar: 'مسح السجل' },
+  noHistory: { en: 'No quiz attempts yet. Your recent results will appear here.', ar: 'لا توجد محاولات بعد. ستظهر نتائجك الأخيرة هنا.' },
+  noChapters: { en: 'No chapters available for this module yet.', ar: 'لا توجد فصول متاحة لهذه المادة بعد.' },
+};
+
+/** Normalized, render-safe view of a QuizResult regardless of exact stored shape. */
+interface HistoryView {
+  raw: QuizResult;
+  key: string;
+  chapterTitle: string;
+  correct: number;
+  total: number;
+  pct: number;
+  seconds: number;
+  date: Date | null;
 }
 
-function formatDate(iso: string) {
-  const d = new Date(iso);
-  return d.toLocaleDateString(undefined, { month: 'short', day: 'numeric' });
-}
+const toHistoryView = (result: QuizResult, index: number): HistoryView => {
+  const r = result as unknown as Record<string, unknown>;
+  const num = (...keys: string[]): number | null => {
+    for (const k of keys) {
+      const v = r[k];
+      if (typeof v === 'number' && Number.isFinite(v)) return v;
+    }
+    return null;
+  };
+  const str = (...keys: string[]): string | null => {
+    for (const k of keys) {
+      const v = r[k];
+      if (typeof v === 'string' && v.length > 0) return v;
+    }
+    return null;
+  };
+
+  const correct = num('score', 'correct', 'correctCount', 'correctAnswers') ?? 0;
+  const total = num('total', 'totalQuestions', 'questionCount') ?? 0;
+  const explicitPct = num('percentage', 'pct');
+  const pct = total > 0
+    ? Math.round((correct / total) * 100)
+    : Math.max(0, Math.min(100, Math.round(explicitPct ?? 0)));
+  const seconds = num('timeElapsed', 'elapsed', 'duration', 'time') ?? 0;
+
+  const rawDate = r['date'] ?? r['timestamp'] ?? r['completedAt'] ?? r['createdAt'];
+  let date: Date | null = null;
+  if (typeof rawDate === 'number' || typeof rawDate === 'string') {
+    const d = new Date(rawDate);
+    if (!Number.isNaN(d.getTime())) date = d;
+  }
+
+  return {
+    raw: result,
+    key: str('id') ?? `${date ? date.getTime() : 'h'}_${index}`,
+    chapterTitle: str('chapterTitle', 'chapterName', 'chapter', 'title') ?? '—',
+    correct,
+    total,
+    pct,
+    seconds,
+    date,
+  };
+};
+
+/* ------------------------------------------------------------------ */
+/* Component                                                           */
+/* ------------------------------------------------------------------ */
 
 export function ChapterSelect({
   chapters,
@@ -90,14 +196,30 @@ export function ChapterSelect({
   userButton,
   breadcrumbPath,
 }: Props) {
+  const { t, language } = useLanguage();
+  const isRTL = language === 'ar';
+
+  const label = (key: string): string => {
+    const translated = typeof t === 'function' ? t(key) : undefined;
+    if (translated && translated !== key) return translated;
+    const f = FALLBACK[key];
+    return f ? (isRTL ? f.ar : f.en) : key;
+  };
+
   const [history, setHistory] = useState<QuizResult[]>([]);
   const [showTracker, setShowTracker] = useState(false);
-  const { t, language } = useLanguage();
 
-  const totalSubjectsCount = new Set(chapters.flatMap(c => c.subjects.map(s => s.id))).size || 7;
-
+  /* History retrieval on mount */
   useEffect(() => {
-    setHistory(getQuizHistory().filter(r => r && typeof r === 'object').slice(0, 6));
+    try {
+      const all = getQuizHistory();
+      const cleaned = (Array.isArray(all) ? all : []).filter(
+        (r): r is QuizResult => r !== null && typeof r === 'object',
+      );
+      setHistory(cleaned.slice(0, 6));
+    } catch {
+      setHistory([]);
+    }
   }, []);
 
   const handleClearHistory = () => {
@@ -105,397 +227,282 @@ export function ChapterSelect({
     setHistory([]);
   };
 
+  /* Academic stats */
+  const distinctSubjects = chapters.length > 0
+    ? new Set(chapters.flatMap((c) => c.subjects.map((s) => s.id))).size
+    : 7;
+  const totalQuestions = chapters.reduce(
+    (sum, c) => sum + c.subjects.reduce((s, sub) => s + sub.questions.length, 0),
+    0,
+  );
+
+  const crumbs: BreadcrumbItem[] = breadcrumbPath ?? [
+    { label: label('portal'), onClick: onBackToModeSelect },
+    { label: moduleCode },
+    { label: studyModeName },
+  ];
+
+  const BackArrow = isRTL ? ArrowRight : ArrowLeft;
+  const StartArrow = isRTL ? ArrowLeft : ArrowRight;
+
+  const formatDay = (d: Date | null): string =>
+    d ? d.toLocaleDateString(isRTL ? 'ar' : 'en', { month: 'short', day: 'numeric' }) : '—';
+
+  const views = history.map(toHistoryView);
+
   return (
-    <div className="min-h-screen bg-gray-50/50 dark:bg-gray-950 font-manrope relative overflow-hidden">
-      {/* Dynamic Floating Background Blobs */}
-      <div className="fixed inset-0 -z-10 overflow-hidden bg-background pointer-events-none">
-        <div className="absolute top-[10%] left-[5%] h-[35vw] w-[35vw] rounded-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-physiology/6 to-transparent dark:from-physiology/4blob-float-1" />
-        <div className="absolute bottom-[10%] right-[5%] h-[40vw] w-[40vw] rounded-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-anatomy/6 to-transparent dark:from-anatomy/4blob-float-2" />
-      </div>
-
+    <div dir={isRTL ? 'rtl' : 'ltr'} className="relative min-h-screen overflow-hidden bg-background text-foreground">
+      {/* Self-contained animations (framer-motion intentionally not imported) */}
       <style>{`
-        @keyframes fadeInUp {
-          from { opacity: 0; transform: translateY(24px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes float {
-          0%, 100% { transform: translateY(0px); }
-          50% { transform: translateY(-6px); }
-        }
-        @keyframes floatBlob1 {
-          0%, 100% { transform: translate(0, 0) scale(1); }
-          50% { transform: translate(5%, 8%) scale(1.08); }
-        }
-        @keyframes floatBlob2 {
-          0%, 100% { transform: translate(0, 0) scale(1); }
-          50% { transform: translate(-6%, -5%) scale(0.92); }
-        }
-        .blob-float-1 { animation: floatBlob1 25s ease-in-out infinite; }
-        .blob-float-2 { animation: floatBlob2 30s ease-in-out infinite alternate; }
-
-        @keyframes gradientShift {
-          0% { background-position: 0% 50%; }
-          50% { background-position: 100% 50%; }
-          100% { background-position: 0% 50%; }
-        }
-        @keyframes drawLine {
-          to { stroke-dashoffset: 0; }
-        }
-        .card-animate { animation: fadeInUp 600ms cubic-bezier(0.34,1.56,0.64,1) both; }
-        .card-animate:nth-child(1) { animation-delay: 80ms; }
-        .card-animate:nth-child(2) { animation-delay: 160ms; }
-        .card-animate:nth-child(3) { animation-delay: 240ms; }
-        .card-animate:nth-child(4) { animation-delay: 320ms; }
-        .card-animate:nth-child(5) { animation-delay: 400ms; }
-        .header-anim { animation: fadeInUp 500ms ease-out both; }
-        .header-sub { animation: fadeInUp 500ms ease-out 150ms both; }
-        .header-stats { animation: fadeInUp 500ms ease-out 300ms both; }
-        .blob-1 { animation: float 6s ease-in-out infinite; transform: translate3d(0, 0, 0); will-change: transform; }
-        .blob-2 { animation: float 8s ease-in-out infinite reverse; transform: translate3d(0, 0, 0); will-change: transform; }
-        .dot-grid {
-          background-image: radial-gradient(circle, rgba(0,0,0,0.04) 1px, transparent 1px);
-          background-size: 20px 20px;
-        }
-        .dark .dot-grid {
-          background-image: radial-gradient(circle, rgba(255,255,255,0.04) 1px, transparent 1px);
-        }
-        @keyframes scrollReveal {
-          from { opacity: 0; transform: translateY(40px) scale(0.95); }
-          to { opacity: 1; transform: translateY(0) scale(1); }
-        }
-        @supports (animation-timeline: view()) {
-          .scroll-reveal {
-            animation: scrollReveal both;
-            animation-timeline: view();
-            animation-range: entry 5% cover 25%;
-          }
-        }
-        .gradient-title {
-          background: linear-gradient(120deg, #10B981, #06B6D4, #3B82F6, #8B5CF6);
+        @keyframes cs-fade-up { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+        @keyframes cs-float-a { 0%,100% { transform: translate(0,0); } 50% { transform: translate(30px, 40px); } }
+        @keyframes cs-float-b { 0%,100% { transform: translate(0,0); } 50% { transform: translate(-40px, -30px); } }
+        @keyframes cs-hue { 0%,100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
+        .cs-enter { opacity: 0; animation: cs-fade-up .55s cubic-bezier(.21,.65,.36,1) forwards; }
+        .cs-blob-a { animation: cs-float-a 14s ease-in-out infinite; }
+        .cs-blob-b { animation: cs-float-b 18s ease-in-out infinite; }
+        .cs-gradient-title {
+          background-image: linear-gradient(120deg, #10B981, #06B6D4, #3B82F6, #8B5CF6);
           background-size: 300% 300%;
+          animation: cs-hue 8s ease-in-out infinite;
           -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          animation: gradientShift 8s ease infinite;
-        }
-        .chapter-card {
-          transition: all 400ms cubic-bezier(0.34,1.56,0.64,1);
-          box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.01);
-        }
-        .chapter-card:hover {
-          transform: translateY(-8px) scale(1.015);
-          box-shadow: 0 24px 48px -12px rgba(16, 185, 129, 0.08);
-        }
-        .chapter-card:active { transform: translateY(-3px) scale(0.995); }
-        .btn-start { transition: all 300ms cubic-bezier(0.34,1.56,0.64,1); }
-        .btn-start:hover { transform: scale(0.97); box-shadow: 0 8px 24px rgba(0,0,0,0.15); }
-        .btn-start:active { transform: scale(0.94); }
-        .badge-pill { transition: all 200ms ease; }
-        .badge-pill:hover { transform: scale(1.08); }
-        .history-card { transition: all 250ms ease; }
-        .history-card:hover { transform: translateY(-2px); }
-        .ecg-line {
-          stroke-dasharray: 1000;
-          stroke-dashoffset: 1000;
-          animation: drawLine 6s linear infinite;
-          transform: translate3d(0, 0, 0);
-          will-change: transform;
-          filter: drop-shadow(0 0 2px rgba(16, 185, 129, 0.2));
-        }
-        .dark .ecg-line {
-          filter: drop-shadow(0 0 4px rgba(16, 185, 129, 0.5));
-        }
-        .btn-back { transition: all 250ms cubic-bezier(0.34,1.56,0.64,1); }
-        .btn-back:hover { transform: translateX(-3px); }
-        .progress-line {
-          background: linear-gradient(90deg, #10B981 0%, #06B6D4 50%, #3B82F6 100%);
-          background-size: 200% 100%;
-          animation: shimmer 3s ease-in-out infinite;
-        }
-        @keyframes shimmer {
-          0% { background-position: 200% 0; }
-          100% { background-position: -200% 0; }
+          background-clip: text;
+          color: transparent;
         }
       `}</style>
 
-      {/* STICKY HEADER */}
-      <header className="shrinking-header bg-white/70 dark:bg-gray-900/70 backdrop-blur-xl border-b border-gray-100 dark:border-gray-800/50 sticky top-0 z-50 animate-fade-in">
-        <div className="max-w-[1600px] mx-auto px-6 lg:px-8">
-          <div className="flex items-center justify-between py-4">
-            <div className="flex items-center gap-4">
+      {/* Background grid + floating blobs */}
+      <div
+        aria-hidden
+        className="pointer-events-none absolute inset-0 animate-fade-in"
+        style={{
+          backgroundImage: 'radial-gradient(circle, currentColor 1px, transparent 1px)',
+          backgroundSize: '20px 20px',
+          opacity: 0.04,
+        }}
+      />
+      <div aria-hidden className="cs-blob-a pointer-events-none absolute -top-40 -left-40 h-[480px] w-[480px] rounded-full bg-gradient-radial from-physiology/4 to-transparent blur-3xl" />
+      <div aria-hidden className="cs-blob-b pointer-events-none absolute -bottom-40 -right-40 h-[480px] w-[480px] rounded-full bg-gradient-radial from-anatomy/4 to-transparent blur-3xl" />
+
+      <div className="relative mx-auto max-w-6xl px-4 py-6 sm:px-6 lg:px-8">
+        {/* Unified Header Card Panel */}
+        <div className="cs-enter mb-8 rounded-[28px] border border-border bg-card p-6 sm:p-8 shadow-sm" style={{ animationDelay: '0ms' }}>
+          {/* ---------------- Top navigation bar ---------------- */}
+          <nav className="flex items-center gap-3 mb-6">
+            <button
+              type="button"
+              onClick={onBackToModeSelect}
+              aria-label={label('back')}
+              className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-border bg-secondary text-muted-foreground hover:text-foreground dark:text-white/70 dark:hover:text-white hover:bg-muted transition-all active:scale-95 cursor-pointer"
+            >
+              <BackArrow size={16} />
+            </button>
+
+            <ol className="flex min-w-0 flex-1 items-center gap-1 overflow-x-auto text-xs font-medium text-gray-500 dark:text-white/60">
+              {crumbs.map((crumb, i) => (
+                <li key={`${crumb.label}_${i}`} className="flex shrink-0 items-center gap-1">
+                  {i > 0 && <ChevronRight size={13} className={`text-gray-400 dark:text-white/30 ${isRTL ? 'rotate-180' : ''}`} />}
+                  {crumb.onClick ? (
+                    <button
+                      type="button"
+                      onClick={crumb.onClick}
+                      className="rounded px-1 py-0.5 transition-colors text-gray-500 dark:text-white/60 hover:text-gray-950 dark:hover:text-white cursor-pointer"
+                    >
+                      {crumb.label}
+                    </button>
+                  ) : (
+                    <span className={i === crumbs.length - 1 ? 'font-semibold text-gray-950 dark:text-white' : ''}>{crumb.label}</span>
+                  )}
+                </li>
+              ))}
+            </ol>
+
+            {userButton && <div className="shrink-0">{userButton}</div>}
+          </nav>
+
+          {/* ---------------- Hero section ---------------- */}
+          <header className="mb-0">
+            <div className="flex flex-wrap items-end justify-between gap-4">
+              <div>
+                <h1 className="cs-gradient-title text-3xl font-bold tracking-tight sm:text-4xl">{moduleName}</h1>
+                <p className="mt-1.5 text-sm text-muted-foreground dark:text-white/50">
+                  {moduleCode} · {studyModeName}
+                </p>
+              </div>
               <button
-                onClick={onBackToModeSelect}
-                className="btn-back inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white text-sm font-semibold border border-gray-100 dark:border-gray-700"
+                type="button"
+                onClick={() => setShowTracker(true)}
+                className="inline-flex items-center gap-2 rounded-2xl border border-border bg-secondary px-4 py-2.5 text-sm font-semibold text-gray-850 dark:text-white transition-all hover:bg-muted active:scale-95 cursor-pointer"
               >
-                <ArrowLeft size={16} />
-                <span className="hidden sm:inline">{t('backToStudyModes') || 'Back'}</span>
+                <Calendar size={16} className="text-physiology" />
+                {label('syllabusProgress')}
               </button>
-              
-              {/* Desktop Breadcrumbs (Full Path) */}
-              <div className="header-anim hidden lg:flex items-center gap-2 text-sm">
-                {breadcrumbPath ? (
-                  breadcrumbPath.map((segment, idx) => {
-                    const isLast = idx === breadcrumbPath.length - 1;
-                    return (
-                      <React.Fragment key={idx}>
-                        {segment.onClick && !isLast ? (
-                          <button
-                            onClick={segment.onClick}
-                            className="text-gray-400 dark:text-gray-500 font-medium hover:text-physiology transition-colors duration-200"
-                          >
-                            {segment.label}
-                          </button>
-                        ) : (
-                          <span className={isLast ? "text-gray-900 dark:text-white font-bold" : "text-gray-400 dark:text-gray-500 font-medium"}>
-                            {segment.label}
+            </div>
+
+            {/* Academic stats */}
+            <div className="mt-6 flex flex-wrap gap-3 text-xs">
+              <span className="inline-flex items-center gap-1.5 rounded-full border border-border bg-secondary px-3 py-1.5 text-gray-700 dark:text-white/80 font-medium">
+                <Layers size={13} className="text-clinical" />
+                {chapters.length} {label('chapters')}
+              </span>
+              <span className="inline-flex items-center gap-1.5 rounded-full border border-border bg-secondary px-3 py-1.5 text-gray-700 dark:text-white/80 font-medium">
+                <GraduationCap size={13} className="text-biochem" />
+                {distinctSubjects} {label('subjects')}
+              </span>
+              <span className="inline-flex items-center gap-1.5 rounded-full border border-border bg-secondary px-3 py-1.5 text-gray-700 dark:text-white/80 font-medium">
+                <Award size={13} className="text-physiology" />
+                {totalQuestions} {label('questions')}
+              </span>
+            </div>
+          </header>
+        </div>
+
+        {/* ---------------- Main layout: grid + sidebar ---------------- */}
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-[1fr_320px]">
+          {/* Chapter grid */}
+          <main>
+            {chapters.length === 0 ? (
+              <div className="cs-enter rounded-[28px] border border-dashed border-border dark:border-white/[0.1] py-16 text-center text-sm text-muted-foreground dark:text-white/40">
+                {label('noChapters')}
+              </div>
+            ) : (
+              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                {chapters.map((chapter, i) => {
+                  const accent = chapter.accentColor;
+                  return (
+                    <article
+                      key={chapter.id}
+                      className="cs-enter group relative overflow-hidden bg-card border border-border dark:border-white/[0.06] backdrop-blur-xl rounded-[28px] p-6 transition-all duration-300 hover:scale-[1.015] hover:-translate-y-2 hover:border-gray-300 dark:hover:border-white/[0.14]"
+                      style={{ animationDelay: `${120 + i * 70}ms` }}
+                    >
+                      {/* Corner gradient accent */}
+                      <div
+                        aria-hidden
+                        className={`pointer-events-none absolute -top-12 ${isRTL ? '-left-12' : '-right-12'} h-40 w-40 rounded-full bg-gradient-to-br ${cornerGradient[accent]} to-transparent blur-2xl`}
+                      />
+
+                      <div className="relative">
+                        <div className="mb-3 flex items-start justify-between gap-3">
+                          <span className="text-2xl">{chapter.emoji}</span>
+                          <span className="rounded-full border border-border dark:border-white/[0.08] bg-secondary/80 dark:bg-white/[0.04] px-2 py-0.5 text-[10px] font-semibold tabular-nums text-muted-foreground dark:text-white/50">
+                            #{chapter.id}
                           </span>
+                        </div>
+
+                        <h3 className={`text-base font-semibold text-foreground dark:text-white transition-colors ${hoverText[accent]}`}>
+                          {chapter.title}
+                        </h3>
+                        <p className="mt-0.5 line-clamp-2 text-xs text-muted-foreground dark:text-white/45">{chapter.subtitle}</p>
+
+                        {/* Subject badges */}
+                        {chapter.subjects.length > 0 && (
+                          <div className="mt-3 flex flex-wrap gap-1.5">
+                            {chapter.subjects.map((s) => (
+                              <span key={s.id} className={`rounded-full px-2 py-0.5 text-[10px] font-medium ${badgeColors[s.id]}`}>
+                                {s.name}
+                              </span>
+                            ))}
+                          </div>
                         )}
-                        {!isLast && <ChevronRight size={12} className="text-gray-300 dark:text-gray-600" />}
-                      </React.Fragment>
-                    );
-                  })
-                ) : (
-                  <>
-                    <span className="text-gray-400 dark:text-gray-500 font-medium">{t('portal')}</span>
-                    <ChevronRight size={12} className="text-gray-300 dark:text-gray-600" />
-                    <span className="text-gray-900 dark:text-white font-bold">{moduleName}</span>
-                  </>
+
+                        <div className="mt-5 flex items-center justify-between">
+                          <span className="text-[11px] text-muted-foreground dark:text-white/40">
+                            {label('page')} {chapter.page} · {chapter.lectureRange}
+                          </span>
+                          <button
+                            type="button"
+                            onClick={() => onSelectChapter(chapter)}
+                            aria-label={`${label('start')}: ${chapter.title}`}
+                            className={`flex h-10 w-10 items-center justify-center rounded-full text-white dark:text-black shadow-lg transition-all hover:scale-110 active:scale-95 ${startButtonBg[accent]}`}
+                          >
+                            <StartArrow size={17} strokeWidth={2.5} />
+                          </button>
+                        </div>
+                      </div>
+                    </article>
+                  );
+                })}
+              </div>
+            )}
+
+            {/* Legend */}
+            <section
+              className="cs-enter mt-8 rounded-[28px] border border-border dark:border-white/[0.06] bg-card p-5 backdrop-blur-xl"
+              style={{ animationDelay: `${160 + chapters.length * 70}ms` }}
+            >
+              <h4 className="mb-3 flex items-center gap-1.5 text-xs font-semibold text-muted-foreground dark:text-white/60">
+                <Palette size={14} />
+                {label('legend')}
+              </h4>
+              <div className="grid grid-cols-2 gap-x-4 gap-y-2 sm:grid-cols-4">
+                {LEGEND.map((item) => (
+                  <span key={item.id} className="flex items-center gap-2 text-xs text-muted-foreground dark:text-white/65">
+                    <span className={`h-2.5 w-2.5 shrink-0 rounded-full ${dotColors[item.id]}`} />
+                    {isRTL ? item.ar : item.en}
+                  </span>
+                ))}
+              </div>
+            </section>
+          </main>
+
+          {/* ---------------- History sidebar ---------------- */}
+          <aside className="cs-enter" style={{ animationDelay: '200ms' }}>
+            <div className="rounded-[28px] border border-border dark:border-white/[0.06] bg-card p-5 backdrop-blur-xl lg:sticky lg:top-6">
+              <div className="mb-4 flex items-center justify-between">
+                <h4 className="flex items-center gap-1.5 text-xs font-semibold text-muted-foreground dark:text-white/60">
+                  <Award size={14} className="text-biochem" />
+                  {label('recentResults')}
+                </h4>
+                {views.length > 0 && (
+                  <button
+                    type="button"
+                    onClick={handleClearHistory}
+                    aria-label={label('clearHistory')}
+                    title={label('clearHistory')}
+                    className="flex h-7 w-7 items-center justify-center rounded-full text-muted-foreground/50 dark:text-white/35 transition-colors hover:bg-pathology/10 hover:text-pathology"
+                  >
+                    <Trash2 size={13} />
+                  </button>
                 )}
               </div>
 
-              {/* Tablet Breadcrumbs (Truncated) */}
-              <div className="header-anim hidden md:flex lg:hidden items-center gap-2 text-sm">
-                <span className="text-gray-400 dark:text-gray-500 font-medium">{t('portal')}</span>
-                <ChevronRight size={12} className="text-gray-300 dark:text-gray-600" />
-                <span className="text-gray-400 dark:text-gray-500 font-medium tracking-widest">...</span>
-                <ChevronRight size={12} className="text-gray-300 dark:text-gray-600" />
-                <span className="text-gray-900 dark:text-white font-bold">{moduleName}</span>
-              </div>
-            </div>
-            
-            <div className="flex items-center gap-3">
-              {userButton}
-            </div>
-          </div>
-          <div className="h-0.5 -mx-6 lg:-mx-8">
-            <div className="progress-line h-full w-full opacity-40 rounded-full" />
-          </div>
-        </div>
-      </header>
-
-      {/* HERO HEADER */}
-      <div className="relative overflow-hidden bg-white dark:bg-gray-900 border-b border-gray-100 dark:border-gray-800">
-        <div className="absolute inset-0 dot-grid opacity-50" />
-        <div className="blob-1 absolute -top-20 -right-20 w-72 h-72 rounded-full bg-gradient-to-br from-physiology/10 to-clinical/10 blur-3xl" />
-        <div className="blob-2 absolute -bottom-16 -left-16 w-64 h-64 rounded-full bg-gradient-to-br from-biochem/10 to-pharma/10 blur-3xl" />
-
-        {/* ECG Heartbeat line background */}
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none opacity-[0.03] dark:opacity-[0.05]">
-          <svg className="w-full h-40 text-gray-900 dark:text-white" viewBox="0 0 400 100" preserveAspectRatio="none">
-            <path
-              className="ecg-line"
-              d="M 0 50 L 120 50 L 130 30 L 140 70 L 150 45 L 155 55 L 160 50 L 280 50 L 290 20 L 300 80 L 310 40 L 315 60 L 320 50 L 400 50"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-            />
-          </svg>
-        </div>
-
-        <div className="relative max-w-[1600px] mx-auto px-6 py-8 lg:py-12">
-          <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
-            <div>
-              <div className="header-anim inline-flex items-center gap-2 px-4 py-1.5 bg-physiology/10 text-physiology-dark rounded-full text-xs font-semibold tracking-wide uppercase mb-4 animate-pulse">
-                {t('asu')} • {t('portal')} <GraduationCap size={14} />
-              </div>
-              <h1 className="header-anim font-archivo text-4xl lg:text-5xl font-black tracking-tight leading-none mb-3">
-                <span className="gradient-title">{moduleName}</span>
-              </h1>
-              <p className="header-sub text-gray-500 dark:text-gray-400 text-sm font-medium max-w-lg leading-relaxed">
-                {language === 'en' ? 'Active Study Mode' : 'وضع الدراسة النشط'}: <span className="font-extrabold text-physiology">{studyModeName}</span>
-              </p>
-            </div>
-
-            <div className="flex items-center lg:items-end gap-3 sm:gap-4 mt-2 lg:mt-0 flex-wrap">
-              <button
-                onClick={() => setShowTracker(true)}
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-physiology/10 hover:bg-physiology/15 border border-physiology/20 text-physiology-dark text-xs font-bold transition-all duration-200 hover:scale-[1.02] mr-2"
-              >
-                <Calendar size={14} className="text-physiology" />
-                {t('syllabusTracker')}
-              </button>
-
-              <div className="header-stats flex items-center gap-4 lg:gap-8 mr-2 lg:mr-0">
-                <div className="text-center">
-                  <div className="font-archivo text-3xl font-black text-gray-900 dark:text-white">{chapters.length}</div>
-                  <div className="text-xs text-gray-400 dark:text-gray-500 font-semibold uppercase tracking-wide">{t('chaptersCount')}</div>
-                </div>
-                <div className="w-px h-10 bg-gray-200 dark:bg-gray-700" />
-                <div className="text-center">
-                  <div className="font-archivo text-3xl font-black text-gray-900 dark:text-white">{totalSubjectsCount}</div>
-                  <div className="text-xs text-gray-400 dark:text-gray-500 font-semibold uppercase tracking-wide">{t('subjectsTab')}</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* CHAPTER GRID */}
-      <div className="max-w-[1600px] mx-auto px-6 py-10 lg:py-14">
-        <div className="flex items-center gap-3 mb-8">
-          <div className="w-1.5 h-6 rounded-full bg-gradient-to-b from-physiology to-clinical" />
-          <h2 className="font-archivo text-xl font-bold text-gray-900 dark:text-white tracking-tight">Select a Chapter</h2>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {chapters.map((chapter) => (
-            <div
-              key={chapter.id}
-              className="card-animate scroll-reveal chapter-card glass-panel glow-border rounded-[30px] p-7 cursor-pointer group relative overflow-hidden"
-              onClick={() => onSelectChapter(chapter)}
-            >
-              <div className={`absolute top-0 right-0 w-24 h-24 bg-gradient-to-bl ${cornerGradient[chapter.accentColor]} to-transparent rounded-bl-[60px] pointer-events-none`} />
-
-              <div className="relative">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-11 h-11 rounded-2xl bg-gradient-to-br from-physiology/15 to-clinical/10 flex items-center justify-center text-xl">
-                    {chapter.emoji}
-                  </div>
-                  <div>
-                    <div className="text-[11px] font-bold text-gray-400 dark:text-gray-500 uppercase tracking-wider">
-                      {t('chapter')} {chapter.id}
-                    </div>
-                  </div>
-                </div>
-
-                <h3 className={`font-archivo text-xl font-bold text-gray-900 dark:text-white tracking-tight mb-4 ${hoverText[chapter.accentColor]} transition-colors duration-300`}>
-                  {chapter.title}
-                </h3>
-
-                <div className="flex flex-wrap gap-1.5 mb-5">
-                  {chapter.subjects.map((s) => (
-                    <span
-                      key={s.id}
-                      className={`badge-pill inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[10px] font-bold ${badgeColors[s.id as SubjectColor]} uppercase tracking-wide`}
-                    >
-                      <span className={`w-1.5 h-1.5 rounded-full ${dotColors[s.id as SubjectColor]}`} />
-                      {s.name}
-                    </span>
+              {views.length === 0 ? (
+                <p className="py-6 text-center text-[11px] leading-relaxed text-muted-foreground dark:text-white/35">{label('noHistory')}</p>
+              ) : (
+                <ul className="space-y-2">
+                  {views.map((v) => (
+                    <li key={v.key}>
+                      <button
+                        type="button"
+                        onClick={() => onSelectHistory?.(v.raw)}
+                        disabled={!onSelectHistory}
+                        className="w-full rounded-2xl border border-border dark:border-white/[0.05] bg-muted/20 dark:bg-white/[0.02] px-3.5 py-3 text-start transition-all enabled:hover:border-gray-300 dark:enabled:hover:border-white/[0.14] enabled:hover:bg-muted/50 dark:enabled:hover:bg-white/[0.05] enabled:active:scale-[0.985] disabled:cursor-default"
+                      >
+                        <div className="flex items-center justify-between gap-2">
+                          <span className={`text-sm font-bold tabular-nums ${pctColor(v.pct)}`}>{v.pct}%</span>
+                          <span className="text-[10px] text-muted-foreground dark:text-white/40">{formatDay(v.date)}</span>
+                        </div>
+                        <p className="mt-1 truncate text-xs text-foreground/80 dark:text-white/75">{v.chapterTitle}</p>
+                        <div className="mt-1.5 flex items-center gap-3 text-[10px] text-muted-foreground dark:text-white/40">
+                          <span className="inline-flex items-center gap-1">
+                            <Clock size={10} />
+                            {formatTime(v.seconds)}
+                          </span>
+                          <span className="tabular-nums">
+                            {v.correct}/{v.total}
+                          </span>
+                        </div>
+                      </button>
+                    </li>
                   ))}
-                </div>
-
-                <div className="h-px bg-gray-100 dark:bg-gray-800 mb-4" />
-
-                <div className="flex items-center justify-between text-xs">
-                  <div className="flex items-center gap-1.5 text-gray-400 dark:text-gray-500 font-medium">
-                    <Layers size={14} />
-                    {chapter.subjects.length} {t('subjectsCount')}
-                  </div>
-                  <button
-                    className="btn-start inline-flex items-center gap-2 px-5 py-2.5 bg-gray-900 dark:bg-white hover:bg-gray-800 dark:hover:bg-gray-100 text-white dark:text-gray-900 rounded-full font-bold tracking-wide"
-                    onClick={(e) => { e.stopPropagation(); onSelectChapter(chapter); }}
-                  >
-                    {t('start')}
-                    <ArrowRight size={14} />
-                  </button>
-                </div>
-              </div>
+                </ul>
+              )}
             </div>
-          ))}
-        </div>
-
-        {/* RECENT RESULTS */}
-        {history.length > 0 && (
-          <div className="mt-12 text-start">
-            <div className="flex items-center justify-between mb-5">
-              <div className="flex items-center gap-3">
-                <div className="w-1.5 h-6 rounded-full bg-gradient-to-b from-biochem to-physiology" />
-                <h2 className="font-archivo text-xl font-bold text-gray-900 dark:text-white tracking-tight">{t('recentResults')}</h2>
-                <span className="text-xs text-gray-400 dark:text-gray-500 font-semibold">{history.length} {t('sessions')}</span>
-              </div>
-              <button
-                onClick={handleClearHistory}
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-semibold text-gray-400 dark:text-gray-500 hover:text-pathology hover:bg-pathology/5 border border-transparent hover:border-pathology/15 transition-all duration-200"
-              >
-                <Trash2 size={12} />
-                {t('clear')}
-              </button>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              {history.map((r) => (
-                <button
-                  key={r.id}
-                  onClick={() => onSelectHistory && onSelectHistory(r)}
-                  className="history-card scroll-reveal text-start w-full cursor-pointer glass-panel rounded-3xl px-5 py-4 flex items-center gap-4 hover:border-gray-300 dark:hover:border-gray-700 hover:scale-[1.01] hover:shadow-md active:scale-[0.99] transition-all duration-300 glow-border"
-                >
-                  <div className="flex-shrink-0 min-w-[60px] h-[52px] rounded-2xl bg-gray-50 dark:bg-gray-800 flex items-center justify-center px-2 shadow-inner">
-                    <span className={`font-archivo text-base font-black tracking-tight ${pctColor(r.pct)}`}>{r.pct}%</span>
-                  </div>
-                  <div className="flex-1 min-w-0">
-                    <div className="font-archivo text-sm font-bold text-gray-900 dark:text-white truncate">
-                      {r.chapterTitle} — {r.subjectName}
-                    </div>
-                    <div className="flex items-center gap-2 mt-0.5">
-                      <span className="text-[11px] text-gray-400 dark:text-gray-500 font-medium">
-                        {r.correct}/{r.total} {t('correct')}
-                      </span>
-                      <span className="text-gray-200 dark:text-gray-700">•</span>
-                      <span className="inline-flex items-center gap-1 text-[11px] text-gray-400 dark:text-gray-500 font-medium">
-                        <Clock size={10} />
-                        {formatTime(r.elapsedSeconds)}
-                      </span>
-                    </div>
-                  </div>
-                  <div className="flex-shrink-0 text-right">
-                    <div className="text-[10px] text-gray-300 dark:text-gray-600 font-medium">{formatDate(r.date)}</div>
-                    <Award size={14} className={`mt-1 ml-auto ${pctColor(r.pct)}`} />
-                  </div>
-                </button>
-              ))}
-            </div>
-          </div>
-        )}
-
-        {/* SUBJECT LEGEND */}
-        <div className="mt-12 p-6 glass-panel scroll-reveal rounded-[24px] shadow-sm text-start">
-          <div className="flex items-center gap-2 mb-4">
-            <Palette size={16} className="text-gray-400 dark:text-gray-500" />
-            <span className="text-xs font-bold text-gray-400 dark:text-gray-500 uppercase tracking-wider">{t('subjectColorGuide')}</span>
-          </div>
-          <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
-            {(
-              [
-                ['anatomy', 'Anatomy'],
-                ['histology', 'Histology'],
-                ['physiology', 'Physiology'],
-                ['biochem', 'Biochemistry'],
-                ['microbiology', 'Microbiology'],
-                ['pathology', 'Pathology'],
-                ['pharma', 'Pharmacology'],
-                ['clinical', 'Clinical'],
-              ] as [SubjectColor, string][]
-            ).map(([color, label]) => (
-              <div key={color} className="flex items-center gap-2">
-                <span className={`w-3 h-3 rounded-full ${dotColors[color]}`} />
-                <span className="text-sm font-semibold text-gray-600 dark:text-gray-400">{label}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div className="mt-10 pb-8 text-center space-y-1.5 border-t border-gray-100 dark:border-gray-800/80 pt-6">
-          <p className="text-xs text-gray-450 dark:text-gray-500 font-semibold tracking-wider uppercase">
-            {t('asu')} • {t('portalTitle')}
-          </p>
-          <p className="text-[11px] text-gray-400 dark:text-gray-500 font-medium max-w-xl mx-auto px-6 leading-relaxed">
-            {t('developedForStudents')}{' '}
-            <a href="mailto:omarhmaged@gmail.com" className="hover:text-physiology dark:hover:text-white transition-colors underline font-semibold">
-              omarhmaged@gmail.com
-            </a>
-          </p>
+          </aside>
         </div>
       </div>
 
+      {/* ---------------- Syllabus tracker modal ---------------- */}
       {showTracker && (
         <SyllabusTracker
           moduleCode={moduleCode}
@@ -507,3 +514,5 @@ export function ChapterSelect({
     </div>
   );
 }
+
+export default ChapterSelect;

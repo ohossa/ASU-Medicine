@@ -84,6 +84,8 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
 
   // Case Study sub-question drafts temporary state
   const [subAnswers, setSubAnswers] = useState<Record<string, any>>({});
+  const [subEssayDrafts, setSubEssayDrafts] = useState<Record<string, string>>({});
+  const [revealedSubEssays, setRevealedSubEssays] = useState<Record<string, boolean>>({});
 
   const elapsedRef = useRef(0);
   const question = questions[current];
@@ -153,7 +155,16 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
         }));
       }
     } else if ((question.type === 'case' || question.type === 'casestudy') && question.subQuestions) {
-      setSubAnswers(answers[current] || {});
+      const saved = answers[current] || {};
+      setSubAnswers(saved);
+      const drafts: Record<string, string> = {};
+      const revs: Record<string, boolean> = {};
+      question.subQuestions.forEach(subQ => {
+        drafts[subQ.id] = saved[subQ.id]?.text || '';
+        revs[subQ.id] = saved[subQ.id] !== undefined;
+      });
+      setSubEssayDrafts(drafts);
+      setRevealedSubEssays(revs);
     }
   }, [current, question]);
 
@@ -187,7 +198,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
 
   if (!question) {
     return (
-      <div className="flex min-h-screen items-center justify-center bg-[#0b0b0c] text-white/50">
+      <div className="flex min-h-screen items-center justify-center bg-background text-muted-foreground">
         <AlertCircle size={18} className="mr-2" /> No questions available.
       </div>
     );
@@ -265,17 +276,17 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
           let badgeClass = 'flex h-7 w-7 shrink-0 items-center justify-center rounded-full border text-xs font-semibold transition-colors ';
 
           if (!hasAnswered) {
-            btnClass += 'border-white/[0.07] bg-white/[0.025] hover:bg-white/[0.06]';
-            badgeClass += 'border-white/15 text-white/40';
+            btnClass += 'border-gray-200 dark:border-white/[0.07] bg-gray-50/50 dark:bg-white/[0.025] hover:bg-gray-100 dark:hover:bg-white/[0.06] text-gray-800 dark:text-white';
+            badgeClass += 'border-gray-300 dark:border-white/15 text-gray-500 dark:text-white/40 bg-gray-100/50 dark:bg-white/[0.03]';
           } else if (isCorrect) {
-            btnClass += 'border-emerald-500/40 bg-emerald-500/10 text-emerald-300';
-            badgeClass += 'border-emerald-500/40 text-emerald-300 bg-emerald-500/10';
+            btnClass += 'border-emerald-500/40 bg-emerald-500/10 text-emerald-600 dark:text-emerald-300';
+            badgeClass += 'border-emerald-500/40 text-emerald-600 dark:text-emerald-300 bg-emerald-500/10';
           } else if (selected && !isCorrect) {
-            btnClass += 'border-rose-500/40 bg-rose-500/10 text-rose-300 wrong-shake';
-            badgeClass += 'border-rose-500/40 text-rose-300 bg-rose-500/10';
+            btnClass += 'border-rose-500/40 bg-rose-500/10 text-rose-600 dark:text-rose-300 wrong-shake';
+            badgeClass += 'border-rose-500/40 text-rose-600 dark:text-rose-300 bg-rose-500/10';
           } else {
-            btnClass += 'border-white/[0.04] bg-white/[0.01] text-white/30 cursor-not-allowed';
-            badgeClass += 'border-white/10 text-white/20';
+            btnClass += 'border-gray-100 dark:border-white/[0.04] bg-gray-50/30 dark:bg-white/[0.01] text-gray-400 dark:text-white/30 cursor-not-allowed';
+            badgeClass += 'border-gray-200 dark:border-white/10 text-gray-300 dark:text-white/20';
           }
 
           return (
@@ -317,13 +328,13 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
           let btnClass = 'flex flex-col items-center gap-2 rounded-2xl border py-6 transition-all duration-200 ';
 
           if (!hasAnswered) {
-            btnClass += 'border-white/[0.07] bg-white/[0.025] text-white/60 hover:bg-white/[0.06]';
+            btnClass += 'border-gray-200 dark:border-white/[0.07] bg-gray-50/50 dark:bg-white/[0.025] text-gray-700 dark:text-white/60 hover:bg-gray-100 dark:hover:bg-white/[0.06]';
           } else if (isCorrect) {
-            btnClass += 'border-emerald-500/40 bg-emerald-500/10 text-emerald-300';
+            btnClass += 'border-emerald-500/40 bg-emerald-500/10 text-emerald-600 dark:text-emerald-300';
           } else if (selected && !isCorrect) {
-            btnClass += 'border-rose-500/40 bg-rose-500/10 text-rose-300 wrong-shake';
+            btnClass += 'border-rose-500/40 bg-rose-500/10 text-rose-655 dark:text-rose-300 wrong-shake';
           } else {
-            btnClass += 'border-white/[0.04] bg-white/[0.01] text-white/20 cursor-not-allowed';
+            btnClass += 'border-gray-150 dark:border-white/[0.04] bg-gray-50/30 dark:bg-white/[0.01] text-gray-400 dark:text-white/20 cursor-not-allowed';
           }
 
           return (
@@ -353,11 +364,11 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
           onChange={e => setEssayDraft(e.target.value)}
           rows={7}
           placeholder={t('essayPlaceholder') || "Type your answer…"}
-          className="w-full resize-y rounded-xl border border-white/[0.08] bg-black/30 p-4 text-sm leading-relaxed text-white placeholder-white/25 outline-none transition-colors focus:border-white/25 backdrop-blur-xl"
+          className="w-full resize-y rounded-xl border border-gray-200 dark:border-white/[0.08] bg-white dark:bg-black/30 p-4 text-sm leading-relaxed text-gray-950 dark:text-white placeholder-gray-400 dark:placeholder-white/25 outline-none transition-colors focus:border-gray-400 dark:focus:border-white/25 backdrop-blur-xl"
         />
-        <div className="flex items-center justify-between text-xs text-white/35">
+        <div className="flex items-center justify-between text-xs text-gray-500 dark:text-white/35">
           <span className="flex items-center gap-1.5">
-            <Lightbulb size={13} className="text-amber-400/70" />
+            <Lightbulb size={13} className="text-amber-500/70 dark:text-amber-400/70" />
             Structure: definition, mechanism, clinical relevance.
           </span>
           <span className="tabular-nums">{wordCount(essayDraft)} words</span>
@@ -367,7 +378,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
           <div className="flex justify-end">
             <button
               onClick={() => setShowEssayAnswer(true)}
-              className="px-6 py-2.5 bg-white text-black rounded-full text-xs font-bold tracking-wide hover:scale-[0.98] transition-transform"
+              className="px-6 py-2.5 bg-gray-950 dark:bg-white text-white dark:text-black rounded-full text-xs font-bold tracking-wide hover:scale-[0.98] transition-transform hover:bg-gray-900 dark:hover:bg-gray-100"
             >
               {t('revealModelAnswer') || "Reveal Model Answer"}
             </button>
@@ -375,31 +386,31 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
         )}
 
         {(showEssayAnswer || isCompleted) && (
-          <div className="space-y-4 rounded-xl border border-emerald-500/20 bg-emerald-500/[0.03] p-4 text-start">
+          <div className="space-y-4 rounded-xl border border-emerald-500/20 bg-emerald-50/50 dark:bg-emerald-500/[0.03] p-4 text-start">
             <div className="flex items-center gap-2">
-              <Lightbulb size={16} className="text-emerald-400" />
-              <span className="text-xs font-bold text-emerald-400 uppercase tracking-wider">
+              <Lightbulb size={16} className="text-emerald-500 dark:text-emerald-400" />
+              <span className="text-xs font-bold text-emerald-600 dark:text-emerald-400 uppercase tracking-wider">
                 {t('modelAnswerReference') || "Reference Answer"}
               </span>
             </div>
-            <p className="text-xs text-white/80 leading-relaxed whitespace-pre-wrap">{question.modelAnswer}</p>
+            <p className="text-xs text-gray-700 dark:text-white/80 leading-relaxed whitespace-pre-wrap">{question.modelAnswer}</p>
 
             {question.keyConcept && (
-              <div className="rounded-lg border border-sky-500/15 bg-sky-500/[0.03] p-3 flex items-start gap-2.5">
-                <Bookmark size={15} className="text-sky-400 shrink-0 mt-0.5" />
+              <div className="rounded-lg border border-sky-500/15 bg-sky-50/50 dark:bg-sky-500/[0.03] p-3 flex items-start gap-2.5">
+                <Bookmark size={15} className="text-sky-550 dark:text-sky-400 shrink-0 mt-0.5" />
                 <div>
-                  <span className="text-[10px] font-bold text-sky-400 uppercase tracking-wider block mb-0.5">Key Concept</span>
-                  <p className="text-xs text-white/70 leading-relaxed">{question.keyConcept}</p>
+                  <span className="text-[10px] font-bold text-sky-600 dark:text-sky-400 uppercase tracking-wider block mb-0.5">Key Concept</span>
+                  <p className="text-xs text-gray-700 dark:text-white/70 leading-relaxed">{question.keyConcept}</p>
                 </div>
               </div>
             )}
 
             {!isCompleted && (
-              <div className="pt-4 border-t border-emerald-500/10">
-                <h4 className="text-xs font-bold text-white/60 uppercase tracking-wider mb-1">
+              <div className="pt-4 border-t border-gray-200 dark:border-emerald-500/10">
+                <h4 className="text-xs font-bold text-gray-650 dark:text-white/60 uppercase tracking-wider mb-1">
                   {t('selfGrading') || "Self Grading"}
                 </h4>
-                <p className="text-xs text-white/45 mb-3">
+                <p className="text-xs text-gray-500 dark:text-white/45 mb-3">
                   {t('selfGradingDesc') || "Grade yourself based on the reference answer above."}
                 </p>
                 <div className="flex gap-2">
@@ -408,7 +419,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                       onChange({ text: essayDraft, selfGrade: 'correct' });
                       setShowEssayAnswer(false);
                     }}
-                    className="px-5 py-2 bg-emerald-500 text-black hover:bg-emerald-400 rounded-full text-xs font-bold transition-colors"
+                    className="px-5 py-2 bg-emerald-500 hover:bg-emerald-400 dark:bg-emerald-600 dark:hover:bg-emerald-500 text-white dark:text-black rounded-full text-xs font-bold transition-colors"
                   >
                     {t('correct') || "Correct"}
                   </button>
@@ -417,7 +428,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                       onChange({ text: essayDraft, selfGrade: 'incorrect' });
                       setShowEssayAnswer(false);
                     }}
-                    className="px-5 py-2 border border-rose-500/30 text-rose-400 hover:bg-rose-500/5 rounded-full text-xs font-bold transition-colors"
+                    className="px-5 py-2 border border-rose-200 dark:border-rose-500/30 text-rose-600 dark:text-rose-400 hover:bg-rose-50 dark:hover:bg-rose-500/5 rounded-full text-xs font-bold transition-colors"
                   >
                     {t('incorrect') || "Incorrect"}
                   </button>
@@ -441,7 +452,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
 
     return (
       <div className="space-y-5">
-        <div className="rounded-xl border border-white/[0.05] bg-white/[0.01] p-5 leading-loose text-base text-white/80 text-left">
+        <div className="rounded-xl border border-gray-200 dark:border-white/[0.05] bg-gray-50/50 dark:bg-white/[0.01] p-5 leading-loose text-base text-gray-800 dark:text-white/80 text-left">
           {parts.map((part, i) => (
             <React.Fragment key={i}>
               <span className="whitespace-pre-wrap">{part}</span>
@@ -451,7 +462,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                     ? checkBlank(i, blankInputs[i] || '')
                       ? 'ring-2 ring-emerald-500/40'
                       : 'ring-2 ring-rose-500/40'
-                    : 'ring-2 ring-white/10 focus-within:ring-white/30'
+                    : 'ring-2 ring-gray-200 dark:ring-white/10 focus-within:ring-gray-400 dark:focus-within:ring-white/30'
                 }`}>
                   <input
                     type="text"
@@ -463,12 +474,12 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                       setBlankInputs(next);
                     }}
                     placeholder={`Blank ${i + 1}`}
-                    className={`px-3 py-1.5 rounded-lg text-sm font-bold outline-none bg-[#0e0e10] border-0 text-center transition-all ${
+                    className={`px-3 py-1.5 rounded-lg text-sm font-bold outline-none bg-gray-100 dark:bg-[#0e0e10] border-0 text-center transition-all ${
                       blankSubmitted
                         ? checkBlank(i, blankInputs[i] || '')
-                          ? 'text-emerald-400 bg-emerald-500/5'
-                          : 'text-rose-400 bg-rose-500/5 line-through'
-                        : 'text-white'
+                          ? 'text-emerald-600 dark:text-emerald-400 bg-emerald-500/5'
+                          : 'text-rose-600 dark:text-rose-400 bg-rose-500/5 line-through'
+                        : 'text-gray-900 dark:text-white'
                     }`}
                     style={{ width: `${Math.max(120, (blankInputs[i]?.length || 8) * 9 + 40)}px` }}
                   />
@@ -486,7 +497,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                 onChange({ inputs: [...blankInputs], submitted: true });
               }}
               disabled={blankInputs.some((v, i) => i < blanks && !v?.trim())}
-              className="px-6 py-2.5 bg-white text-black rounded-full text-xs font-bold tracking-wide hover:scale-[0.98] transition-transform disabled:opacity-35 disabled:cursor-not-allowed"
+              className="px-6 py-2.5 bg-gray-950 dark:bg-white text-white dark:text-black rounded-full text-xs font-bold tracking-wide hover:scale-[0.98] transition-transform hover:bg-gray-900 dark:hover:bg-gray-100 disabled:opacity-35 disabled:cursor-not-allowed"
             >
               Check Answers
             </button>
@@ -501,19 +512,19 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                 <div
                   key={i}
                   className={`flex items-start gap-2.5 p-3 rounded-xl border text-xs ${
-                    isCorrect ? 'border-emerald-500/20 bg-emerald-500/[0.03]' : 'border-rose-500/20 bg-rose-500/[0.03]'
+                    isCorrect ? 'border-emerald-500/20 bg-emerald-50/50 dark:bg-emerald-500/[0.03]' : 'border-rose-500/20 bg-rose-50/50 dark:bg-rose-500/[0.03]'
                   }`}
                 >
                   <div className="mt-0.5">
-                    {isCorrect ? <Check size={14} className="text-emerald-400" /> : <X size={14} className="text-rose-400" />}
+                    {isCorrect ? <Check size={14} className="text-emerald-500 dark:text-emerald-400" /> : <X size={14} className="text-rose-500 dark:text-rose-400" />}
                   </div>
                   <div>
-                    <span className={`font-semibold block ${isCorrect ? 'text-emerald-400' : 'text-rose-400'}`}>
+                    <span className={`font-semibold block ${isCorrect ? 'text-emerald-600' : 'text-rose-600'}`}>
                       Blank {i + 1}: {isCorrect ? 'Correct!' : `Incorrect — you wrote "${blankInputs[i] || '—'}"`}
                     </span>
                     {!isCorrect && (
-                      <span className="text-white/50 block mt-0.5">
-                        Correct answer: <span className="text-emerald-400 font-medium">{correctAns}</span>
+                      <span className="text-gray-500 dark:text-white/50 block mt-0.5">
+                        Correct answer: <span className="text-emerald-600 dark:text-emerald-450 font-semibold">{correctAns}</span>
                       </span>
                     )}
                   </div>
@@ -542,16 +553,16 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
 
             let rowClass = 'flex flex-col gap-2 rounded-xl border p-3.5 sm:flex-row sm:items-center sm:justify-between transition-all ';
             if (!isSubmitted) {
-              rowClass += 'border-white/[0.07] bg-white/[0.025]';
+              rowClass += 'border-gray-200 dark:border-white/[0.07] bg-gray-50/50 dark:bg-white/[0.025]';
             } else if (isCorrect) {
-              rowClass += 'border-emerald-500/20 bg-emerald-500/[0.03]';
+              rowClass += 'border-emerald-500/20 bg-emerald-50/50 dark:bg-emerald-500/[0.03]';
             } else {
-              rowClass += 'border-rose-500/20 bg-rose-500/[0.03]';
+              rowClass += 'border-rose-500/20 bg-rose-50/50 dark:bg-rose-500/[0.03]';
             }
 
             return (
               <div key={i} className={rowClass}>
-                <span className="text-sm text-white/80">{p.premise}</span>
+                <span className="text-sm text-gray-800 dark:text-white/80">{p.premise}</span>
                 <div className="relative flex items-center gap-3">
                   <select
                     disabled={isSubmitted}
@@ -560,20 +571,20 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                       const nextMatches = { ...map, [i]: Number(e.target.value) };
                       onChange({ scrambled, matches: nextMatches, submitted: false });
                     }}
-                    className={`w-full appearance-none rounded-lg border bg-black/40 py-2 pe-9 ps-3 text-sm outline-none transition-colors sm:w-56 ${
-                      selectedIdx !== undefined ? `${style.border} text-white` : 'border-white/[0.1] text-white/40'
+                    className={`w-full appearance-none rounded-lg border bg-white dark:bg-black/40 py-2 pe-9 ps-3 text-sm outline-none transition-colors sm:w-56 ${
+                      selectedIdx !== undefined ? 'border-gray-400 dark:border-white/30 text-gray-950 dark:text-white' : 'border-gray-250 dark:border-white/[0.1] text-gray-550 dark:text-white/40'
                     }`}
                   >
                     <option value="" disabled>Select a match…</option>
                     {scrambled.map((tOpt: string, j: number) => (
-                      <option key={j} value={j} className="bg-[#161618]">{tOpt}</option>
+                      <option key={j} value={j} className="bg-white text-gray-950 dark:bg-[#161618] dark:text-white">{tOpt}</option>
                     ))}
                   </select>
-                  <ChevronDown size={15} className="pointer-events-none absolute end-3 top-1/2 -translate-y-1/2 text-white/40" />
+                  <ChevronDown size={15} className="pointer-events-none absolute end-3 top-1/2 -translate-y-1/2 text-gray-400 dark:text-white/40" />
                   
                   {isSubmitted && (
                     <div className="shrink-0">
-                      {isCorrect ? <Check size={16} className="text-emerald-400" /> : <X size={16} className="text-rose-400" />}
+                      {isCorrect ? <Check size={16} className="text-emerald-500 dark:text-emerald-400" /> : <X size={16} className="text-rose-550 dark:text-rose-400" />}
                     </div>
                   )}
                 </div>
@@ -587,7 +598,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
             <button
               onClick={() => onChange({ scrambled, matches: map, submitted: true })}
               disabled={Object.keys(map).length < pairs.length}
-              className="px-6 py-2.5 bg-white text-black rounded-full text-xs font-bold tracking-wide hover:scale-[0.98] transition-transform disabled:opacity-35 disabled:cursor-not-allowed"
+              className="px-6 py-2.5 bg-gray-950 dark:bg-white text-white dark:text-black rounded-full text-xs font-bold tracking-wide hover:scale-[0.98] transition-transform disabled:opacity-35 disabled:cursor-not-allowed"
             >
               Submit Matches
             </button>
@@ -595,14 +606,14 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
         )}
 
         {isSubmitted && (
-          <div className="space-y-2 text-start text-xs border-t border-white/[0.06] pt-4">
-            <h4 className="font-semibold text-white/60 mb-2 uppercase tracking-wider">Correct Matches:</h4>
+          <div className="space-y-2 text-start text-xs border-t border-gray-200 dark:border-white/[0.06] pt-4">
+            <h4 className="font-semibold text-gray-650 dark:text-white/60 mb-2 uppercase tracking-wider">Correct Matches:</h4>
             {pairs.map((p, i) => {
               const isCorrect = map[i] === scrambled.indexOf(p.target);
               if (isCorrect) return null;
               return (
-                <div key={i} className="text-rose-400">
-                  <span className="font-medium">{p.premise}</span> should match: <span className="text-emerald-400 font-semibold">{p.target}</span>
+                <div key={i} className="text-rose-600 dark:text-rose-400">
+                  <span className="font-semibold text-gray-800 dark:text-white/80">{p.premise}</span> should match: <span className="text-emerald-600 dark:text-emerald-450 font-semibold">{p.target}</span>
                 </div>
               );
             })}
@@ -616,11 +627,11 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
     const subAns = value ?? {};
     return (
       <div className="space-y-5">
-        <div className="rounded-xl border border-sky-500/20 bg-sky-500/[0.05] p-4 text-start">
-          <p className="mb-2 flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-sky-300">
+        <div className="rounded-xl border border-sky-500/30 bg-sky-50/70 dark:bg-sky-500/[0.05] p-4 text-start">
+          <p className="mb-2 flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-sky-655 dark:text-sky-300">
             <Activity size={14} /> Clinical Case
           </p>
-          <p className="text-sm leading-relaxed text-white/75">{q.text ?? q.question}</p>
+          <p className="text-sm leading-relaxed text-gray-800 dark:text-white/75">{q.text ?? q.question}</p>
         </div>
 
         <div className="space-y-6">
@@ -630,8 +641,8 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
             const isCorrect = subQ.type === 'mcq' && subVal === subQ.correctIndex;
 
             return (
-              <div key={subQ.id} className="border-t border-white/[0.06] pt-5 text-start">
-                <h4 className="mb-3 text-sm font-semibold text-white/90">
+              <div key={subQ.id} className="border-t border-gray-200 dark:border-white/[0.06] pt-5 text-start">
+                <h4 className="mb-3 text-sm font-semibold text-gray-900 dark:text-white/90">
                   Sub-question {sIdx + 1}: {subQ.text}
                 </h4>
 
@@ -645,17 +656,17 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                       let badgeClass = 'flex h-6 w-6 shrink-0 items-center justify-center rounded-full border text-xs font-semibold transition-colors ';
 
                       if (!isCompleted) {
-                        optClass += 'border-white/[0.07] bg-white/[0.025] hover:bg-white/[0.06]';
-                        badgeClass += 'border-white/15 text-white/40';
+                        optClass += 'border-gray-200 dark:border-white/[0.07] bg-gray-50/50 dark:bg-white/[0.025] hover:bg-gray-100 dark:hover:bg-white/[0.06] text-gray-800 dark:text-white';
+                        badgeClass += 'border-gray-300 dark:border-white/15 text-gray-500 dark:text-white/40 bg-gray-100/50 dark:bg-white/[0.03]';
                       } else if (isCorrectOpt) {
-                        optClass += 'border-emerald-500/40 bg-emerald-500/10 text-emerald-300';
-                        badgeClass += 'border-emerald-500/40 text-emerald-300 bg-emerald-500/10';
+                        optClass += 'border-emerald-500/40 bg-emerald-500/10 text-emerald-600 dark:text-emerald-300';
+                        badgeClass += 'border-emerald-500/40 text-emerald-600 dark:text-emerald-300 bg-emerald-500/10';
                       } else if (selected && !isCorrectOpt) {
-                        optClass += 'border-rose-500/40 bg-rose-500/10 text-rose-300 wrong-shake';
-                        badgeClass += 'border-rose-500/40 text-rose-300 bg-rose-500/10';
+                        optClass += 'border-rose-500/40 bg-rose-500/10 text-rose-600 dark:text-rose-300 wrong-shake';
+                        badgeClass += 'border-rose-500/40 text-rose-600 dark:text-rose-300 bg-rose-500/10';
                       } else {
-                        optClass += 'border-white/[0.04] bg-white/[0.01] text-white/30 cursor-not-allowed';
-                        badgeClass += 'border-white/10 text-white/20';
+                        optClass += 'border-gray-100 dark:border-white/[0.04] bg-gray-50/30 dark:bg-white/[0.01] text-gray-400 dark:text-white/30 cursor-not-allowed';
+                        badgeClass += 'border-gray-200 dark:border-white/10 text-gray-300 dark:text-white/20';
                       }
 
                       return (
@@ -687,14 +698,14 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                       onChange={e => setSubEssayDrafts(prev => ({ ...prev, [subQ.id]: e.target.value }))}
                       rows={3}
                       placeholder="Type your essay answer…"
-                      className="w-full resize-y rounded-xl border border-white/[0.08] bg-black/30 p-4 text-xs leading-relaxed text-white placeholder-white/25 outline-none transition-colors focus:border-white/25 backdrop-blur-xl"
+                      className="w-full resize-y rounded-xl border border-gray-200 dark:border-white/[0.08] bg-white dark:bg-black/30 p-4 text-xs leading-relaxed text-gray-950 dark:text-white placeholder-gray-400 dark:placeholder-white/25 outline-none transition-colors focus:border-gray-400 dark:focus:border-white/25 backdrop-blur-xl"
                     />
 
                     {!isCompleted && !revealedSubEssays[subQ.id] && (
                       <div className="flex justify-end">
                         <button
                           onClick={() => setRevealedSubEssays(prev => ({ ...prev, [subQ.id]: true }))}
-                          className="px-5 py-2 bg-white text-black rounded-full text-[10px] font-bold tracking-wide hover:scale-[0.98] transition-transform"
+                          className="px-5 py-2 bg-gray-950 dark:bg-white text-white dark:text-black rounded-full text-[10px] font-bold tracking-wide hover:scale-[0.98] transition-transform hover:bg-gray-900 dark:hover:bg-gray-100"
                         >
                           Reveal Answer
                         </button>
@@ -702,13 +713,13 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                     )}
 
                     {(revealedSubEssays[subQ.id] || isCompleted) && (
-                      <div className="space-y-3 rounded-lg border border-emerald-500/20 bg-emerald-500/[0.02] p-3 text-xs">
-                        <p className="font-semibold text-emerald-400">Reference Answer:</p>
-                        <p className="text-white/85 leading-relaxed whitespace-pre-wrap">{subQ.modelAnswer}</p>
+                      <div className="space-y-3 rounded-lg border border-emerald-500/20 bg-emerald-50/50 dark:bg-emerald-500/[0.02] p-3 text-xs">
+                        <p className="font-semibold text-emerald-600 dark:text-emerald-400">Reference Answer:</p>
+                        <p className="text-gray-800 dark:text-white/85 leading-relaxed whitespace-pre-wrap">{subQ.modelAnswer}</p>
                         
                         {!isCompleted && (
-                          <div className="pt-3 border-t border-emerald-500/10">
-                            <p className="text-[10px] font-bold text-white/50 uppercase tracking-wider mb-2">Self Grading:</p>
+                          <div className="pt-3 border-t border-gray-200 dark:border-emerald-500/10">
+                            <p className="text-[10px] font-bold text-gray-500 dark:text-white/50 uppercase tracking-wider mb-2">Self Grading:</p>
                             <div className="flex gap-2">
                               <button
                                 onClick={() => {
@@ -718,7 +729,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                                   });
                                   setRevealedSubEssays(prev => ({ ...prev, [subQ.id]: false }));
                                 }}
-                                className="px-4 py-1.5 bg-emerald-500 text-black hover:bg-emerald-400 rounded-full text-[10px] font-bold transition-colors"
+                                className="px-4 py-1.5 bg-emerald-500 hover:bg-emerald-400 dark:bg-emerald-600 dark:hover:bg-emerald-500 text-white dark:text-black rounded-full text-[10px] font-bold transition-colors"
                               >
                                 Correct
                               </button>
@@ -730,7 +741,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                                   });
                                   setRevealedSubEssays(prev => ({ ...prev, [subQ.id]: false }));
                                 }}
-                                className="px-4 py-1.5 border border-rose-500/30 text-rose-400 hover:bg-rose-500/5 rounded-full text-[10px] font-bold transition-colors"
+                                className="px-4 py-1.5 border border-rose-200 dark:border-rose-500/30 text-rose-600 dark:text-rose-400 hover:bg-rose-50 dark:hover:bg-rose-500/5 rounded-full text-[10px] font-bold transition-colors"
                               >
                                 Incorrect
                               </button>
@@ -783,37 +794,37 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
   /* ---------------------------------- Render --------------------------------- */
 
   return (
-    <div dir={isRTL ? 'rtl' : 'ltr'} className="min-h-screen bg-[#0b0b0c] text-white antialiased">
+    <div dir={isRTL ? 'rtl' : 'ltr'} className="min-h-screen bg-background text-foreground antialiased transition-colors duration-300">
       {/* Ambient glow */}
       <div className="pointer-events-none fixed inset-0 overflow-hidden">
         <div className={`absolute -top-32 start-1/3 h-80 w-80 rounded-full blur-[130px] opacity-20 ${style.bg}`} />
       </div>
 
       {/* Header */}
-      <header className="sticky top-0 z-30 border-b border-white/[0.06] bg-[#0b0b0c]/80 backdrop-blur-xl">
+      <header className="sticky top-0 z-30 border-b border-border bg-background/80 backdrop-blur-xl transition-colors duration-300">
         <div className="mx-auto flex max-w-4xl items-center justify-between gap-3 px-4 py-3 sm:px-6">
           <div className="flex min-w-0 items-center gap-3">
             <button
               onClick={onBack}
               aria-label="Back"
-              className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-white/[0.08] bg-white/[0.04] transition-colors hover:bg-white/[0.08]"
+              className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.04] transition-colors hover:bg-gray-100 dark:hover:bg-white/[0.08]"
             >
-              <ArrowLeft size={16} className={`text-white/70 ${isRTL ? 'rotate-180' : ''}`} />
+              <ArrowLeft size={16} className={`text-gray-750 dark:text-white/70 ${isRTL ? 'rotate-180' : ''}`} />
             </button>
             <div className="min-w-0">
-              <p className="truncate text-sm font-semibold">{chapter.title}</p>
+              <p className="truncate text-sm font-semibold text-gray-900 dark:text-white">{chapter.title}</p>
               <p className={`truncate text-xs ${style.text} opacity-80`}>{subject?.name ?? 'General'}</p>
             </div>
           </div>
 
           <div className="flex items-center gap-2">
-            <span className="flex items-center gap-1.5 rounded-full border border-white/[0.08] bg-white/[0.04] px-3 py-1.5 text-xs tabular-nums text-white/70">
+            <span className="flex items-center gap-1.5 rounded-full border border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.04] px-3 py-1.5 text-xs tabular-nums text-gray-650 dark:text-white/70">
               <Clock size={13} /> {formatTime(elapsed)}
             </span>
             <button
               onClick={() => setShowShortcuts(s => !s)}
               aria-label="Keyboard shortcuts"
-              className="hidden h-9 w-9 items-center justify-center rounded-full border border-white/[0.08] bg-white/[0.04] text-white/50 transition-colors hover:bg-white/[0.08] sm:flex"
+              className="hidden h-9 w-9 items-center justify-center rounded-full border border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.04] text-gray-500 dark:text-white/50 transition-colors hover:bg-gray-100 dark:hover:bg-white/[0.08] sm:flex"
             >
               <Keyboard size={15} />
             </button>
@@ -821,7 +832,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
               onClick={() => setShowGrid(s => !s)}
               aria-label="Question grid"
               className={`flex h-9 w-9 items-center justify-center rounded-full border transition-colors ${
-                showGrid ? `${style.border} ${style.bg} ${style.text}` : 'border-white/[0.08] bg-white/[0.04] text-white/50 hover:bg-white/[0.08]'
+                showGrid ? `${style.border} ${style.bg} text-white` : 'border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.04] text-gray-550 dark:text-white/50 hover:bg-gray-100 dark:hover:bg-white/[0.08]'
               }`}
             >
               <Grid3X3 size={15} />
@@ -831,9 +842,9 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
         </div>
 
         {/* Progress bar */}
-        <div className="h-[2px] w-full bg-white/[0.05]">
+        <div className="h-[2px] w-full bg-gray-150 dark:bg-white/[0.05]">
           <motion.div
-            className={`h-full ${style.bg.replace('/10', '')} bg-gradient-to-r from-white/60 to-white/90`}
+            className={`h-full ${style.bg.replace('/10', '')} bg-gradient-to-r from-gray-450 to-gray-600 dark:from-white/60 dark:to-white/90`}
             animate={{ width: `${progress}%` }}
             transition={{ type: 'spring', stiffness: 80, damping: 20 }}
           />
@@ -847,13 +858,13 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
             initial={{ opacity: 0, y: -8 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
-            className="fixed end-4 top-16 z-40 w-64 rounded-xl border border-white/[0.08] bg-[#161618]/95 p-4 text-xs shadow-2xl backdrop-blur-xl"
+            className="fixed end-4 top-16 z-40 w-64 rounded-xl border border-gray-205 dark:border-white/[0.08] bg-white/95 dark:bg-[#161618]/95 p-4 text-xs shadow-2xl backdrop-blur-xl text-gray-800 dark:text-white"
           >
-            <p className="mb-2 font-semibold text-white/80">Keyboard shortcuts</p>
+            <p className="mb-2 font-semibold text-gray-900 dark:text-white/80">Keyboard shortcuts</p>
             {[['← →', 'Navigate questions'], ['1–9', 'Select option'], ['F', 'Flag question'], ['G', 'Toggle grid']].map(([k, d]) => (
-              <div key={k} className="flex items-center justify-between py-1 text-white/50">
+              <div key={k} className="flex items-center justify-between py-1 text-gray-500 dark:text-white/50">
                 <span>{d}</span>
-                <kbd className="rounded border border-white/15 bg-white/[0.06] px-1.5 py-0.5 font-mono text-[10px] text-white/70">{k}</kbd>
+                <kbd className="rounded border border-gray-200 dark:border-white/15 bg-gray-100 dark:bg-white/[0.06] px-1.5 py-0.5 font-mono text-[10px] text-gray-700 dark:text-white/70">{k}</kbd>
               </div>
             ))}
           </motion.div>
@@ -867,7 +878,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="overflow-hidden border-b border-white/[0.06] bg-white/[0.02]"
+            className="overflow-hidden border-b border-gray-200 dark:border-white/[0.06] bg-gray-50/30 dark:bg-white/[0.02]"
           >
             <div className="mx-auto grid max-w-4xl grid-cols-8 gap-2 px-4 py-4 sm:grid-cols-12 sm:px-6">
               {questions.map((q, i) => {
@@ -881,8 +892,8 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                       i === current
                         ? `${style.border} ${style.bg} text-white`
                         : answeredQ
-                          ? 'border-emerald-500/30 bg-emerald-500/10 text-emerald-300'
-                          : 'border-white/[0.08] bg-white/[0.03] text-white/40 hover:bg-white/[0.07]'
+                          ? 'border-emerald-500/30 bg-emerald-500/10 text-emerald-600 dark:text-emerald-300'
+                          : 'border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.03] text-gray-400 dark:text-white/40 hover:bg-gray-100 dark:hover:bg-white/[0.07]'
                     }`}
                   >
                     {i + 1}
@@ -910,10 +921,10 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
             {/* Question meta */}
             <div className="mb-4 flex items-center justify-between">
               <div className="flex items-center gap-2.5">
-                <span className={`flex items-center gap-1.5 rounded-full border px-3 py-1 text-[11px] font-medium ${style.border} ${style.bg} ${style.text}`}>
+                <span className={`flex items-center gap-1.5 rounded-full border px-3 py-1 text-[11px] font-medium ${style.borderOp15} ${style.bgOp10} ${style.text}`}>
                   <Target size={12} /> {typeLabels[question.type] ?? 'Question'}
                 </span>
-                <span className="text-xs text-white/35 tabular-nums">
+                <span className="text-xs text-gray-500 dark:text-white/35 tabular-nums">
                   {current + 1} / {total} · {answeredCount} answered
                 </span>
               </div>
@@ -922,7 +933,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                 className={`flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-xs transition-colors ${
                   flagged.has(current)
                     ? 'border-amber-500/40 bg-amber-500/10 text-amber-300'
-                    : 'border-white/[0.08] bg-white/[0.03] text-white/45 hover:bg-white/[0.07]'
+                    : 'border-gray-250 dark:border-white/[0.08] bg-gray-50 dark:bg-white/[0.03] text-gray-500 dark:text-white/45 hover:bg-gray-100 dark:hover:bg-white/[0.07]'
                 }`}
               >
                 <Bookmark size={13} className={flagged.has(current) ? 'fill-amber-400' : ''} />
@@ -931,32 +942,32 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
             </div>
 
             {/* Question card */}
-            <div className="rounded-2xl border border-white/[0.07] bg-white/[0.03] p-5 shadow-[0_8px_40px_rgba(0,0,0,0.4)] backdrop-blur-xl sm:p-7">
+            <div className="rounded-2xl border border-gray-200 dark:border-white/[0.07] bg-card p-5 shadow-sm dark:shadow-[0_8px_40px_rgba(0,0,0,0.4)] backdrop-blur-xl sm:p-7">
               {question.type !== 'fillblank' && renderFormattedText(
                 question.text ?? question.question,
-                "mb-6 text-base font-medium leading-relaxed text-white sm:text-lg text-left whitespace-pre-line"
+                "mb-6 text-base font-semibold leading-relaxed text-gray-900 dark:text-white sm:text-lg text-left whitespace-pre-line"
               )}
               
               {renderAnswerArea()}
 
               {/* Explanations & key concept box (Shown once user answered the question) */}
               {answered && (
-                <div className="mt-6 space-y-4 border-t border-white/[0.06] pt-6 text-start">
+                <div className="mt-6 space-y-4 border-t border-gray-200 dark:border-white/[0.06] pt-6 text-start">
                   {question.explanation && (
-                    <div className="flex items-start gap-3 rounded-xl border border-emerald-500/10 bg-emerald-500/[0.03] p-4">
-                      <Lightbulb size={16} className="text-emerald-400 shrink-0 mt-0.5" />
+                    <div className="flex items-start gap-3 rounded-xl border border-emerald-500/20 bg-emerald-50/50 dark:bg-emerald-500/[0.03] p-4">
+                      <Lightbulb size={16} className="text-emerald-500 dark:text-emerald-400 shrink-0 mt-0.5" />
                       <div>
-                        <div className="text-[10px] font-bold text-emerald-400 uppercase tracking-wider mb-1">Explanation</div>
-                        <p className="text-xs text-white/70 leading-relaxed">{question.explanation}</p>
+                        <div className="text-[10px] font-bold text-emerald-600 dark:text-emerald-400 uppercase tracking-wider mb-1">Explanation</div>
+                        <p className="text-xs text-gray-700 dark:text-white/70 leading-relaxed">{question.explanation}</p>
                       </div>
                     </div>
                   )}
                   {question.keyConcept && (
-                    <div className="flex items-start gap-3 rounded-xl border border-sky-500/10 bg-sky-500/[0.03] p-4">
-                      <Bookmark size={16} className="text-sky-400 shrink-0 mt-0.5" />
+                    <div className="flex items-start gap-3 rounded-xl border border-sky-500/20 bg-sky-50/50 dark:bg-sky-500/[0.03] p-4">
+                      <Bookmark size={16} className="text-sky-500 dark:text-sky-400 shrink-0 mt-0.5" />
                       <div>
-                        <span className="text-[10px] font-bold text-sky-400 uppercase tracking-wider block mb-0.5">Key Concept</span>
-                        <p className="text-xs text-white/70 leading-relaxed">{question.keyConcept}</p>
+                        <span className="text-[10px] font-bold text-sky-600 dark:text-sky-400 uppercase tracking-wider block mb-0.5">Key Concept</span>
+                        <p className="text-xs text-gray-700 dark:text-white/70 leading-relaxed">{question.keyConcept}</p>
                       </div>
                     </div>
                   )}
@@ -971,7 +982,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
           <button
             onClick={() => goTo(current - 1)}
             disabled={current === 0}
-            className="flex items-center gap-2 rounded-full border border-white/[0.08] bg-white/[0.04] px-5 py-2.5 text-sm text-white/70 transition-colors hover:bg-white/[0.08] disabled:cursor-not-allowed disabled:opacity-30"
+            className="flex items-center gap-2 rounded-full border border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.04] px-5 py-2.5 text-sm text-gray-700 dark:text-white/70 transition-colors hover:bg-gray-150 dark:hover:bg-white/[0.08] disabled:cursor-not-allowed disabled:opacity-30"
           >
             <ArrowLeft size={15} className={isRTL ? 'rotate-180' : ''} /> Previous
           </button>
@@ -979,14 +990,14 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
           {current < total - 1 ? (
             <button
               onClick={() => goTo(current + 1)}
-              className={`flex items-center gap-2 rounded-full border px-6 py-2.5 text-sm font-medium transition-all ${style.border} ${style.bg} text-white hover:brightness-125`}
+              className={`flex items-center gap-2 rounded-full border px-6 py-2.5 text-sm font-semibold transition-all ${style.border} ${style.bg} text-white hover:brightness-110 active:scale-95`}
             >
               Next <ArrowRight size={15} className={isRTL ? 'rotate-180' : ''} />
             </button>
           ) : (
             <button
               onClick={() => setConfirmFinish(true)}
-              className="flex items-center gap-2 rounded-full bg-white px-6 py-2.5 text-sm font-semibold text-black transition-transform hover:scale-[1.03]"
+              className="flex items-center gap-2 rounded-full bg-gray-950 dark:bg-white px-6 py-2.5 text-sm font-semibold text-white dark:text-black hover:bg-gray-900 dark:hover:bg-gray-100 transition-all active:scale-95"
             >
               <Check size={15} /> Finish
             </button>
@@ -1009,19 +1020,19 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.92, opacity: 0 }}
               onClick={e => e.stopPropagation()}
-              className="w-full max-w-sm rounded-2xl border border-white/[0.08] bg-[#161618] p-6 shadow-2xl"
+              className="w-full max-w-sm rounded-2xl border border-gray-200 dark:border-white/[0.08] bg-white dark:bg-[#161618] p-6 shadow-2xl text-gray-900 dark:text-white"
             >
               <h3 className="text-lg font-semibold">Submit attempt?</h3>
-              <p className="mt-2 text-sm text-white/50">
-                You answered <span className="font-medium text-white tabular-nums">{answeredCount}</span> of{' '}
+              <p className="mt-2 text-sm text-gray-500 dark:text-white/50">
+                You answered <span className="font-medium text-gray-900 dark:text-white tabular-nums">{answeredCount}</span> of{' '}
                 <span className="tabular-nums">{total}</span> questions
                 {flagged.size > 0 && (
-                  <> · <span className="text-amber-400 tabular-nums">{flagged.size} flagged</span></>
+                  <> · <span className="text-amber-500 dark:text-amber-400 tabular-nums">{flagged.size} flagged</span></>
                 )}
                 . Time: <span className="tabular-nums">{formatTime(elapsed)}</span>.
               </p>
               {answeredCount < total && (
-                <p className="mt-3 flex items-center gap-2 rounded-lg border border-amber-500/25 bg-amber-500/10 p-3 text-xs text-amber-300">
+                <p className="mt-3 flex items-center gap-2 rounded-lg border border-amber-200 dark:border-amber-500/25 bg-amber-50 dark:bg-amber-500/10 p-3 text-xs text-amber-700 dark:text-amber-300">
                   <AlertCircle size={14} className="shrink-0" />
                   {total - answeredCount} unanswered question{total - answeredCount === 1 ? '' : 's'} will be marked incorrect.
                 </p>
@@ -1029,13 +1040,13 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
               <div className="mt-5 flex gap-3">
                 <button
                   onClick={() => setConfirmFinish(false)}
-                  className="flex-1 rounded-full border border-white/[0.1] py-2.5 text-sm text-white/70 transition-colors hover:bg-white/[0.06]"
+                  className="flex-1 rounded-full border border-gray-200 dark:border-white/[0.1] py-2.5 text-sm text-gray-650 dark:text-white/70 transition-colors hover:bg-gray-100 dark:hover:bg-white/[0.06]"
                 >
                   Keep working
                 </button>
                 <button
                   onClick={finish}
-                  className="flex-1 rounded-full bg-white py-2.5 text-sm font-semibold text-black transition-transform hover:scale-[1.02]"
+                  className="flex-1 rounded-full bg-gray-950 dark:bg-white py-2.5 text-sm font-semibold text-white dark:text-black transition-transform hover:scale-[1.02]"
                 >
                   Submit
                 </button>

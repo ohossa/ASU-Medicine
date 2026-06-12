@@ -1,282 +1,690 @@
-// src/app/components/SyllabusTracker.tsx
-// Improvements:
-//  - Progress bar at the top shows overall completion
-//  - Toast cleanup: original had a bug where the timer cleanup fn returned inside setState
-//    (it was a no-op cleanup). Fixed by storing timer in a ref.
-//  - Chapter cards use grid-cols properly on all breakpoints
-//  - Notes use a <textarea> (not <input>) for longer notes
-//  - "Close" button moved to sticky footer so it's always reachable
-//  - Keyboard: Escape closes the modal
-
 import { useState, useEffect, useRef, useCallback } from 'react';
-import { Check, Edit3, X, Calendar, ChevronDown, ChevronUp } from 'lucide-react';
-import type { ChapterData } from '../types';
+import { Check, Edit3, X, Calendar, ChevronDown, ChevronUp, BookOpen, Layers, Target, GraduationCap } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import type { ChapterData, SubjectData, SubjectColor } from '../types';
+import { subjectStyles } from '../types';
 import { useLanguage } from '../context/LanguageContext';
 import { triggerCloudSync } from '../hooks/useCloudSync';
+
+/* ------------------------------------------------------------------ */
+/* Types                                                               */
+/* ------------------------------------------------------------------ */
+
+interface LectureState {
+  studied: boolean;
+  revised: boolean;
+}
+
+interface ChapterState {
+  studied: boolean;
+  revised: boolean;
+  mcq: boolean;
+  essay: boolean;
+  notes: string;
+  lectures?: Record<string, LectureState>; // key: `${subjectId}_L${lectureNumber}`
+}
 
 interface Props {
   moduleCode: string;
   moduleName: string;
-  chapters:   ChapterData[];
-  onClose:    () => void;
+  chapters: ChapterData[];
+  onClose: () => void;
 }
 
-interface ChapterState {
-  studied:  boolean;
-  revised:  boolean;
-  mcq:      boolean;
-  essay:    boolean;
-  notes:    string;
-}
+type BaseField = 'studied' | 'revised' | 'mcq' | 'essay';
+type LectureField = 'studied' | 'revised';
 
-type CheckField = keyof Omit<ChapterState, 'notes'>;
+/* ------------------------------------------------------------------ */
+/* Static helpers                                                      */
+/* ------------------------------------------------------------------ */
 
-const STATUS_FIELDS: { field: CheckField; label: string; activeClass: string }[] = [
-  { field: 'studied', label: 'Studied',  activeClass: 'bg-physiology text-white border-physiology' },
-  { field: 'revised', label: 'Revised',  activeClass: 'bg-biochem text-white border-biochem' },
-  { field: 'mcq',     label: 'MCQ Done', activeClass: 'bg-anatomy text-white border-anatomy' },
-  { field: 'essay',   label: 'Essay',    activeClass: 'bg-histology text-white border-histology' },
+const ACCENT: Record<SubjectColor, { text: string; softBg: string; solidBg: string; border: string; ring: string }> = {
+  physiology:   { text: 'text-physiology',   softBg: 'bg-physiology/15',   solidBg: 'bg-physiology',   border: 'border-physiology/40',   ring: 'ring-physiology/40' },
+  biochem:      { text: 'text-biochem',      softBg: 'bg-biochem/15',      solidBg: 'bg-biochem',      border: 'border-biochem/40',      ring: 'ring-biochem/40' },
+  microbiology: { text: 'text-microbiology', softBg: 'bg-microbiology/15', solidBg: 'bg-microbiology', border: 'border-microbiology/40', ring: 'ring-microbiology/40' },
+  anatomy:      { text: 'text-anatomy',      softBg: 'bg-anatomy/15',      solidBg: 'bg-anatomy',      border: 'border-anatomy/40',      ring: 'ring-anatomy/40' },
+  histology:    { text: 'text-histology',    softBg: 'bg-histology/15',    solidBg: 'bg-histology',    border: 'border-histology/40',    ring: 'ring-histology/40' },
+  pathology:    { text: 'text-pathology',    softBg: 'bg-pathology/15',    solidBg: 'bg-pathology',    border: 'border-pathology/40',    ring: 'ring-pathology/40' },
+  pharma:       { text: 'text-pharma',       softBg: 'bg-pharma/15',       solidBg: 'bg-pharma',       border: 'border-pharma/40',       ring: 'ring-pharma/40' },
+  clinical:     { text: 'text-clinical',     softBg: 'bg-clinical/15',     solidBg: 'bg-clinical',     border: 'border-clinical/40',     ring: 'ring-clinical/40' },
+};
+
+/** Optional extra classes coming from the shared subjectStyles map (shape-agnostic, safe access). */
+const styleHint = (color: SubjectColor): string => {
+  const s = (subjectStyles as Record<string, unknown>)[color];
+  return typeof s === 'string' ? s : '';
+};
+
+const emptyChapterState = (): ChapterState => ({
+  studied: false,
+  revised: false,
+  mcq: false,
+  essay: false,
+  notes: '',
+  lectures: {},
+});
+
+const lectureKeys = (subject: SubjectData): string[] =>
+  Array.from({ length: Math.max(0, subject.lectureCount) }, (_, i) => `${subject.id}_L${i + 1}`);
+
+const BASE_FIELDS: { field: BaseField; labelKey: string; Icon: typeof BookOpen }[] = [
+  { field: 'studied', labelKey: 'studied', Icon: BookOpen },
+  { field: 'revised', labelKey: 'revised', Icon: Calendar },
+  { field: 'mcq',     labelKey: 'mcqDone', Icon: Target },
+  { field: 'essay',   labelKey: 'essay',   Icon: GraduationCap },
 ];
 
-const INACTIVE_CLASS = 'bg-muted border-transparent text-muted-foreground hover:bg-accent';
+const FALLBACK: Record<string, { en: string; ar: string }> = {
+  syllabusTracker: { en: 'Syllabus Tracker', ar: 'متتبع المنهج' },
+  overallProgress: { en: 'Overall Progress', ar: 'التقدم الكلي' },
+  studied:         { en: 'Studied', ar: 'تمت المذاكرة' },
+  revised:         { en: 'Revised', ar: 'تمت المراجعة' },
+  mcqDone:         { en: 'MCQ Done', ar: 'تم حل الاختيارات' },
+  essay:           { en: 'Essay', ar: 'المقالي' },
+  completed:       { en: 'Completed', ar: 'مكتمل' },
+  lecture:         { en: 'Lecture', ar: 'محاضرة' },
+  lectures:        { en: 'Lectures', ar: 'محاضرات' },
+  markAllStudied:  { en: 'All Studied', ar: 'الكل مُذاكر' },
+  markAllRevised:  { en: 'All Revised', ar: 'الكل مُراجَع' },
+  notes:           { en: 'Notes', ar: 'ملاحظات' },
+  notesPlaceholder:{ en: 'Write your notes for this chapter…', ar: 'اكتب ملاحظاتك لهذا الفصل…' },
+  close:           { en: 'Close', ar: 'إغلاق' },
+  saved:           { en: 'Saved', ar: 'تم الحفظ' },
+  page:            { en: 'Page', ar: 'صفحة' },
+  noChapters:      { en: 'No chapters available for this module yet.', ar: 'لا توجد فصول متاحة لهذه المادة بعد.' },
+};
 
-function computeProgress(data: Record<number, ChapterState>, chapters: ChapterData[]): number {
-  if (!chapters.length) return 0;
-  const total  = chapters.length * 4; // 4 checkboxes each
-  const done   = chapters.reduce((acc, ch) => {
-    const s = data[ch.id];
-    if (!s) return acc;
-    return acc + [s.studied, s.revised, s.mcq, s.essay].filter(Boolean).length;
-  }, 0);
-  return Math.round((done / total) * 100);
-}
+/* ------------------------------------------------------------------ */
+/* Component                                                           */
+/* ------------------------------------------------------------------ */
 
 export function SyllabusTracker({ moduleCode, moduleName, chapters, onClose }: Props) {
-  const { t }        = useLanguage();
-  const storageKey   = `asu_study_tracker_${moduleCode}`;
-  const toastTimer   = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const [showToast,  setShowToast]  = useState(false);
-  const [expanded,   setExpanded]   = useState<Set<number>>(new Set(chapters.map(c => c.id)));
+  const { t, language } = useLanguage();
+  const isRTL = language === 'ar';
+  const storageKey = `asu_study_tracker_${moduleCode}`;
 
-  const [data, setData] = useState<Record<number, ChapterState>>(() => {
-    try {
-      const saved = localStorage.getItem(storageKey);
-      if (saved) return JSON.parse(saved);
-    } catch { /* fall through */ }
-    const initial: Record<number, ChapterState> = {};
-    chapters.forEach(ch => { initial[ch.id] = { studied: false, revised: false, mcq: false, essay: false, notes: '' }; });
-    return initial;
-  });
+  /** Translation with graceful local fallback if a key is missing. */
+  const label = useCallback(
+    (key: string): string => {
+      const translated = typeof t === 'function' ? t(key) : undefined;
+      if (translated && translated !== key) return translated;
+      const f = FALLBACK[key];
+      return f ? (isRTL ? f.ar : f.en) : key;
+    },
+    [t, isRTL],
+  );
 
-  // Sync from cloud
+  /** Builds a fully-shaped state map from a raw localStorage payload. */
+  const hydrate = useCallback(
+    (raw: string | null): Record<number, ChapterState> => {
+      let parsed: Record<string, Partial<ChapterState>> = {};
+      if (raw) {
+        try {
+          parsed = (JSON.parse(raw) as Record<string, Partial<ChapterState>>) ?? {};
+        } catch {
+          parsed = {};
+        }
+      }
+      const next: Record<number, ChapterState> = {};
+      for (const ch of chapters) {
+        const saved = parsed[String(ch.id)] ?? {};
+        next[ch.id] = {
+          studied: !!saved.studied,
+          revised: !!saved.revised,
+          mcq: !!saved.mcq,
+          essay: !!saved.essay,
+          notes: typeof saved.notes === 'string' ? saved.notes : '',
+          lectures: saved.lectures && typeof saved.lectures === 'object' ? saved.lectures : {},
+        };
+      }
+      return next;
+    },
+    [chapters],
+  );
+
+  const [data, setData] = useState<Record<number, ChapterState>>(() =>
+    hydrate(typeof window !== 'undefined' ? localStorage.getItem(storageKey) : null),
+  );
+  const [expandedChapters, setExpandedChapters] = useState<Set<number>>(new Set());
+  const [expandedSubjects, setExpandedSubjects] = useState<Set<string>>(new Set());
+  const [showToast, setShowToast] = useState(false);
+  const toastTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  /* Re-hydrate when module or chapter list changes */
   useEffect(() => {
-    const handle = () => {
-      try {
-        const saved = localStorage.getItem(storageKey);
-        if (saved) setData(JSON.parse(saved));
-      } catch { /* ignore */ }
+    setData(hydrate(typeof window !== 'undefined' ? localStorage.getItem(storageKey) : null));
+  }, [storageKey, hydrate]);
+
+  /* Escape key closes the modal */
+  useEffect(() => {
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') onClose();
     };
-    window.addEventListener('storage', handle);
-    return () => window.removeEventListener('storage', handle);
-  }, [storageKey]);
-
-  // Close on Escape
-  useEffect(() => {
-    const handle = (e: KeyboardEvent) => { if (e.key === 'Escape') onClose(); };
-    window.addEventListener('keydown', handle);
-    return () => window.removeEventListener('keydown', handle);
+    window.addEventListener('keydown', onKey);
+    return () => window.removeEventListener('keydown', onKey);
   }, [onClose]);
 
-  const persist = useCallback((next: Record<number, ChapterState>) => {
-    localStorage.setItem(storageKey, JSON.stringify(next));
-    triggerCloudSync();
-    // Show toast — clear any pending timer first
-    if (toastTimer.current !== null) clearTimeout(toastTimer.current);
-    setShowToast(true);
-    toastTimer.current = setTimeout(() => { setShowToast(false); toastTimer.current = null; }, 1600);
-  }, [storageKey]);
+  /* Multi-tab support */
+  useEffect(() => {
+    const onStorage = (e: StorageEvent) => {
+      if (e.key === storageKey) setData(hydrate(e.newValue));
+    };
+    window.addEventListener('storage', onStorage);
+    return () => window.removeEventListener('storage', onStorage);
+  }, [storageKey, hydrate]);
 
-  // Clean up toast timer on unmount
-  useEffect(() => () => { if (toastTimer.current !== null) clearTimeout(toastTimer.current); }, []);
+  /* Toast timer cleanup */
+  useEffect(() => {
+    return () => {
+      if (toastTimer.current) clearTimeout(toastTimer.current);
+    };
+  }, []);
 
-  const toggleField = useCallback((chapterId: number, field: CheckField) => {
-    setData(prev => {
-      const next = { ...prev, [chapterId]: { ...prev[chapterId], [field]: !prev[chapterId]?.[field] } };
-      persist(next);
+  /* Save + sync + toast */
+  const persist = useCallback(
+    (next: Record<number, ChapterState>) => {
+      setData(next);
+      try {
+        localStorage.setItem(storageKey, JSON.stringify(next));
+      } catch {
+        /* storage unavailable — keep in-memory state */
+      }
+      triggerCloudSync();
+      setShowToast(true);
+      if (toastTimer.current) clearTimeout(toastTimer.current);
+      toastTimer.current = setTimeout(() => setShowToast(false), 1600);
+    },
+    [storageKey],
+  );
+
+  /* ----------------------------- mutations ----------------------------- */
+
+  const toggleBase = useCallback(
+    (chapterId: number, field: BaseField) => {
+      const current = data[chapterId] ?? emptyChapterState();
+      const nextVal = !current[field];
+      
+      let lectures = { ...(current.lectures ?? {}) };
+      if (field === 'studied' || field === 'revised') {
+        const chapter = chapters.find((c) => c.id === chapterId);
+        if (chapter) {
+          for (const sub of chapter.subjects) {
+            const keys = lectureKeys(sub);
+            for (const k of keys) {
+              const existing = lectures[k] ?? { studied: false, revised: false };
+              lectures[k] = { ...existing, [field]: nextVal };
+            }
+          }
+        }
+      }
+
+      persist({
+        ...data,
+        [chapterId]: {
+          ...current,
+          [field]: nextVal,
+          lectures,
+        },
+      });
+    },
+    [data, chapters, persist],
+  );
+
+  const toggleLecture = useCallback(
+    (chapterId: number, subjectId: SubjectColor, lectureNumber: number, field: LectureField) => {
+      const current = data[chapterId] ?? emptyChapterState();
+      const key = `${subjectId}_L${lectureNumber}`;
+      const lecture = current.lectures?.[key] ?? { studied: false, revised: false };
+      persist({
+        ...data,
+        [chapterId]: {
+          ...current,
+          lectures: { ...(current.lectures ?? {}), [key]: { ...lecture, [field]: !lecture[field] } },
+        },
+      });
+    },
+    [data, persist],
+  );
+
+  const markAllLectures = useCallback(
+    (chapterId: number, subject: SubjectData, field: LectureField) => {
+      const keys = lectureKeys(subject);
+      if (keys.length === 0) return;
+      const current = data[chapterId] ?? emptyChapterState();
+      const lectures = { ...(current.lectures ?? {}) };
+      const allOn = keys.every((k) => lectures[k]?.[field]);
+      for (const k of keys) {
+        const existing = lectures[k] ?? { studied: false, revised: false };
+        lectures[k] = { ...existing, [field]: !allOn };
+      }
+      persist({ ...data, [chapterId]: { ...current, lectures } });
+    },
+    [data, persist],
+  );
+
+  const setNotes = useCallback(
+    (chapterId: number, notes: string) => {
+      const current = data[chapterId] ?? emptyChapterState();
+      persist({ ...data, [chapterId]: { ...current, notes } });
+    },
+    [data, persist],
+  );
+
+  const toggleChapterExpanded = useCallback((chapterId: number) => {
+    setExpandedChapters((prev) => {
+      const next = new Set(prev);
+      if (next.has(chapterId)) next.delete(chapterId);
+      else next.add(chapterId);
       return next;
     });
-  }, [persist]);
+  }, []);
 
-  const updateNotes = useCallback((chapterId: number, value: string) => {
-    setData(prev => {
-      const next = { ...prev, [chapterId]: { ...prev[chapterId], notes: value } };
-      persist(next);
+  const toggleSubjectExpanded = useCallback((key: string) => {
+    setExpandedSubjects((prev) => {
+      const next = new Set(prev);
+      if (next.has(key)) next.delete(key);
+      else next.add(key);
       return next;
     });
-  }, [persist]);
+  }, []);
 
-  const toggleExpand = (id: number) => setExpanded(prev => {
-    const next = new Set(prev);
-    if (next.has(id)) next.delete(id); else next.add(id);
-    return next;
-  });
+  /* ----------------------------- progress ------------------------------ */
 
-  const progress = computeProgress(data, chapters);
+  const chapterCounts = (chapter: ChapterData): { done: number; total: number } => {
+    const st = data[chapter.id];
+    let total = 4;
+    let done = 0;
+    for (const f of ['studied', 'revised', 'mcq', 'essay'] as BaseField[]) {
+      if (st?.[f]) done++;
+    }
+    for (const sub of chapter.subjects) {
+      total += Math.max(0, sub.lectureCount) * 2;
+      for (const key of lectureKeys(sub)) {
+        const ls = st?.lectures?.[key];
+        if (ls?.studied) done++;
+        if (ls?.revised) done++;
+      }
+    }
+    return { done, total };
+  };
+
+  let overallTotal = 0;
+  let overallDone = 0;
+  for (const ch of chapters) {
+    const { done, total } = chapterCounts(ch);
+    overallTotal += total;
+    overallDone += done;
+  }
+  const overallPct = overallTotal === 0 ? 0 : Math.round((overallDone / overallTotal) * 100);
+
+  /* ------------------------------- UI bits ------------------------------ */
+
+  const CheckBox = ({
+    checked,
+    color,
+    text,
+    onToggle,
+  }: {
+    checked: boolean;
+    color: SubjectColor;
+    text: string;
+    onToggle: () => void;
+  }) => {
+    const a = ACCENT[color];
+    return (
+      <button
+        type="button"
+        onClick={onToggle}
+        aria-pressed={checked}
+        className={`group inline-flex items-center gap-2 rounded-lg px-2 py-1 text-xs transition-colors ${
+          checked ? a.text : 'text-muted-foreground dark:text-white/50 hover:text-foreground dark:hover:text-white'
+        }`}
+      >
+        <span
+          className={`flex h-[18px] w-[18px] items-center justify-center rounded-md border transition-all duration-200 ${
+            checked ? `${a.solidBg} ${a.border}` : 'border-border dark:border-white/20 bg-card dark:bg-white/[0.02] group-hover:border-gray-400 dark:group-hover:border-white/40'
+          }`}
+        >
+          <motion.span
+            initial={false}
+            animate={{ scale: checked ? 1 : 0, opacity: checked ? 1 : 0 }}
+            transition={{ type: 'spring', stiffness: 500, damping: 30 }}
+          >
+            <Check size={12} className="text-black" strokeWidth={3} />
+          </motion.span>
+        </span>
+        {text}
+      </button>
+    );
+  };
+
+  /* ------------------------------- render ------------------------------- */
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6
-                 bg-foreground/20 dark:bg-background/60 backdrop-blur-md animate-fade-in"
+      dir={isRTL ? 'rtl' : 'ltr'}
+      className="fixed inset-0 z-50 flex items-center justify-center p-4"
       role="dialog"
       aria-modal="true"
-      aria-label="Syllabus Tracker"
+      aria-label={label('syllabusTracker')}
     >
-      <div className="w-full max-w-4xl glass-panel glow-border rounded-[28px] shadow-2xl
-                      overflow-hidden flex flex-col max-h-[92vh] animate-slide-up">
+      {/* Backdrop overlay */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.2 }}
+        onClick={onClose}
+        className="absolute inset-0 bg-black/45 dark:bg-background/60 backdrop-blur-md"
+      />
 
-        {/* ── Header ─────────────────────────────────────────────────── */}
-        <div className="px-6 sm:px-8 py-5 border-b border-border bg-card/40 flex items-center justify-between gap-4">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-2xl bg-physiology/10 text-physiology-dark dark:text-physiology flex items-center justify-center">
-              <Calendar size={20} />
-            </div>
-            <div>
-              <h3 className="font-archivo text-xl font-black text-foreground tracking-tight">{t('syllabusTracker') || 'Syllabus Tracker'}</h3>
-              <p className="text-[11px] text-muted-foreground font-semibold uppercase tracking-wider mt-0.5">{moduleCode} · {moduleName}</p>
-            </div>
+      {/* Main modal */}
+      <motion.div
+        initial={{ opacity: 0, scale: 0.94, y: 12 }}
+        animate={{ opacity: 1, scale: 1, y: 0 }}
+        exit={{ opacity: 0, scale: 0.96, y: 8 }}
+        transition={{ type: 'spring', stiffness: 320, damping: 28 }}
+        onClick={(e) => e.stopPropagation()}
+        className="relative w-full max-w-4xl bg-card border border-border backdrop-blur-2xl rounded-[28px] overflow-hidden flex flex-col max-h-[92vh] shadow-2xl"
+      >
+        {/* Header */}
+        <div className="sticky top-0 z-10 flex items-center gap-4 border-b border-border bg-card/85 px-5 py-4 backdrop-blur-xl sm:px-7">
+          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl border border-border dark:border-white/[0.08] bg-secondary dark:bg-white/[0.04]">
+            <GraduationCap size={22} className="text-physiology" />
           </div>
-          <button onClick={onClose}
-            aria-label="Close tracker"
-            className="w-9 h-9 rounded-full bg-muted hover:bg-accent flex items-center justify-center
-                       text-muted-foreground hover:text-foreground transition-colors">
+          <div className="min-w-0 flex-1">
+            <h2 className="truncate text-base font-semibold text-foreground dark:text-white sm:text-lg">{label('syllabusTracker')}</h2>
+            <p className="truncate text-xs text-muted-foreground dark:text-white/50">
+              {moduleCode} · {moduleName}
+            </p>
+          </div>
+          <button
+            type="button"
+            onClick={onClose}
+            aria-label={label('close')}
+            className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-border dark:border-white/[0.08] bg-secondary/80 dark:bg-white/[0.03] text-muted-foreground hover:text-foreground dark:text-white/60 dark:hover:text-white transition-all active:scale-95"
+          >
             <X size={16} />
           </button>
         </div>
 
-        {/* ── Progress bar ───────────────────────────────────────────── */}
-        <div className="px-6 sm:px-8 py-3 border-b border-border bg-card/20">
-          <div className="flex items-center justify-between mb-1.5">
-            <span className="text-[11px] font-bold text-muted-foreground uppercase tracking-wider">{t('overallProgress')}</span>
-            <span className="text-[11px] font-black text-foreground">{progress}%</span>
+        {/* Scrollable body */}
+        <div className="flex-1 overflow-y-auto px-5 py-5 sm:px-7">
+          {/* Overall progress */}
+          <div className="mb-6">
+            <div className="mb-2 flex items-center justify-between text-xs">
+              <span className="font-medium text-muted-foreground dark:text-white/70">{label('overallProgress')}</span>
+              <span className="font-semibold tabular-nums text-foreground dark:text-white">
+                {overallPct}% · {overallDone}/{overallTotal}
+              </span>
+            </div>
+            <div className="h-2.5 w-full overflow-hidden rounded-full border border-border dark:border-white/[0.06] bg-secondary dark:bg-white/[0.04]">
+              <motion.div
+                initial={false}
+                animate={{ width: `${overallPct}%` }}
+                transition={{ type: 'spring', stiffness: 120, damping: 22 }}
+                className="h-full rounded-full bg-gradient-to-r from-physiology to-clinical"
+              />
+            </div>
           </div>
-          <div className="h-1.5 rounded-full bg-muted overflow-hidden">
-            <div
-              className="h-full bg-gradient-to-r from-physiology to-clinical rounded-full transition-all duration-700 ease-out"
-              style={{ width: `${progress}%` }}
-            />
-          </div>
-        </div>
 
-        {/* ── Chapter list ───────────────────────────────────────────── */}
-        <div className="flex-1 overflow-y-auto p-5 sm:p-7 space-y-3">
-          {chapters.map(ch => {
-            const state    = data[ch.id] || { studied: false, revised: false, mcq: false, essay: false, notes: '' };
-            const isOpen   = expanded.has(ch.id);
-            const doneCount = [state.studied, state.revised, state.mcq, state.essay].filter(Boolean).length;
+          {/* Empty state */}
+          {chapters.length === 0 && (
+            <div className="rounded-2xl border border-dashed border-border dark:border-white/[0.1] py-12 text-center text-sm text-muted-foreground dark:text-white/40">
+              {label('noChapters')}
+            </div>
+          )}
 
-            return (
-              <div key={ch.id}
-                className="bg-card border border-border rounded-[20px] overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-200">
+          {/* Chapter accordion cards */}
+          <div className="space-y-3">
+            {chapters.map((chapter) => {
+              const st = data[chapter.id] ?? emptyChapterState();
+              const isOpen = expandedChapters.has(chapter.id);
+              const { done, total } = chapterCounts(chapter);
+              const accent = ACCENT[chapter.accentColor];
+              const chapterComplete = total > 0 && done === total;
 
-                {/* Chapter header row — click to expand/collapse */}
-                <button
-                  className="w-full flex items-center justify-between gap-4 px-5 py-4 text-left hover:bg-muted/40 transition-colors"
-                  onClick={() => toggleExpand(ch.id)}
-                  aria-expanded={isOpen}
+              return (
+                <div
+                  key={chapter.id}
+                  className={`overflow-hidden rounded-2xl border bg-card/30 dark:bg-white/[0.02] transition-colors ${
+                    chapterComplete ? accent.border : 'border-border dark:border-white/[0.08]'
+                  }`}
                 >
-                  <div className="flex items-center gap-3 flex-1 min-w-0">
-                    <span className="text-xl w-10 h-10 flex-shrink-0 flex items-center justify-center
-                                     rounded-xl bg-muted/60 border border-border text-base">
-                      {ch.emoji}
-                    </span>
-                    <div className="min-w-0">
-                      <span className="text-[10px] font-bold text-muted-foreground uppercase tracking-wider block">
-                        {t('chapter')} {ch.id}
+                  {/* Card header */}
+                  <button
+                    type="button"
+                    onClick={() => toggleChapterExpanded(chapter.id)}
+                    aria-expanded={isOpen}
+                    className="flex w-full items-center gap-3 px-4 py-3.5 text-start transition-colors hover:bg-muted/40 dark:hover:bg-white/[0.03] sm:px-5"
+                  >
+                    <span className="text-xl">{chapter.emoji}</span>
+                    <span className="min-w-0 flex-1">
+                      <span className="block truncate text-sm font-semibold text-foreground dark:text-white">{chapter.title}</span>
+                      <span className="block truncate text-[11px] text-muted-foreground dark:text-white/45">
+                        {chapter.subtitle} · {label('page')} {chapter.page} · {chapter.lectureRange}
                       </span>
-                      <h4 className="font-archivo text-sm font-bold text-foreground leading-snug truncate">
-                        {ch.title}
-                      </h4>
-                    </div>
-                  </div>
-                  <div className="flex items-center gap-3 flex-shrink-0">
-                    <span className={`text-[10px] font-black tabular-nums
-                                      ${doneCount === 4 ? 'text-success-dark dark:text-success'
-                                        : doneCount > 0 ? 'text-biochem-dark dark:text-biochem'
-                                        : 'text-muted-foreground'}`}>
-                      {doneCount}/4
                     </span>
-                    {isOpen ? <ChevronUp size={14} className="text-muted-foreground" /> : <ChevronDown size={14} className="text-muted-foreground" />}
-                  </div>
-                </button>
+                    <span
+                      className={`shrink-0 rounded-full border px-2.5 py-1 text-[11px] font-medium tabular-nums ${
+                        chapterComplete
+                          ? `${accent.softBg} ${accent.text} ${accent.border}`
+                          : 'border-border dark:border-white/[0.08] bg-secondary dark:bg-white/[0.04] text-muted-foreground dark:text-white/60'
+                      }`}
+                    >
+                      {done}/{total} {label('completed')}
+                    </span>
+                    <motion.span
+                      initial={false}
+                      animate={{ rotate: isOpen ? (isRTL ? -180 : 180) : 0 }}
+                      transition={{ type: 'spring', stiffness: 300, damping: 24 }}
+                      className="shrink-0 text-muted-foreground dark:text-white/40"
+                    >
+                      <ChevronDown size={18} />
+                    </motion.span>
+                  </button>
 
-                {/* Expandable content */}
-                {isOpen && (
-                  <div className="px-5 pb-5 space-y-4 border-t border-border/60">
-                    {/* Status buttons */}
-                    <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 pt-4">
-                      {STATUS_FIELDS.map(({ field, activeClass }) => {
-                        const active = state[field];
-                        return (
-                          <button key={field}
-                            onClick={() => toggleField(ch.id, field)}
-                            className={`px-3 py-2.5 rounded-full border text-[11px] font-bold
-                                        flex items-center justify-center gap-1.5 transition-all duration-200
-                                        shadow-sm hover:scale-[1.03] active:scale-[0.98]
-                                        ${active ? activeClass : INACTIVE_CLASS}`}
-                          >
-                            {active && <Check size={11} strokeWidth={3} />}
-                            {t(field === 'mcq' ? 'mcqDone' : field === 'essay' ? 'essayDone' : field)}
-                          </button>
-                        );
-                      })}
-                    </div>
+                  {/* Expanded content */}
+                  <AnimatePresence initial={false}>
+                    {isOpen && (
+                      <motion.div
+                        key="chapter-body"
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: 'auto', opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ type: 'spring', stiffness: 240, damping: 30 }}
+                        className="overflow-hidden"
+                      >
+                        <div className="space-y-5 border-t border-border dark:border-white/[0.06] px-4 py-4 sm:px-5">
+                          {/* Base statuses */}
+                          <div className="flex flex-wrap gap-2">
+                            {BASE_FIELDS.map(({ field, labelKey, Icon }) => {
+                              const active = st[field];
+                              return (
+                                <button
+                                  key={field}
+                                  type="button"
+                                  onClick={() => toggleBase(chapter.id, field)}
+                                  aria-pressed={active}
+                                  className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-xs font-medium transition-all active:scale-95 ${
+                                    active
+                                      ? `${accent.softBg} ${accent.text} ${accent.border} ${styleHint(chapter.accentColor)}`
+                                      : 'border-border dark:border-white/[0.08] bg-card dark:bg-white/[0.02] text-muted-foreground dark:text-white/55 hover:border-gray-300 dark:hover:border-white/20 hover:text-foreground dark:hover:text-white/85'
+                                  }`}
+                                >
+                                  <Icon size={13} />
+                                  {label(labelKey)}
+                                  {active && <Check size={13} strokeWidth={3} />}
+                                </button>
+                              );
+                            })}
+                          </div>
 
-                    {/* Notes */}
-                    <div className="flex items-start gap-2.5">
-                      <Edit3 size={14} className="text-muted-foreground mt-3 flex-shrink-0" />
-                      <div className="flex-1">
-                        <span className="text-[10px] font-bold text-muted-foreground uppercase tracking-widest block mb-1.5">
-                          {t('personalNotes') || 'Personal Notes'}
-                        </span>
-                        <textarea
-                          rows={2}
-                          value={state.notes}
-                          onChange={e => updateNotes(ch.id, e.target.value)}
-                          placeholder={t('notesPlaceholder') || 'Type your notes here…'}
-                          className="w-full resize-y bg-muted/50 border border-border focus:border-physiology
-                                     rounded-xl text-xs font-medium text-foreground placeholder:text-muted-foreground/60
-                                     py-2.5 px-3.5 focus:outline-none focus:ring-2 focus:ring-physiology/20
-                                     transition-all leading-relaxed"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                )}
-              </div>
-            );
-          })}
+                          {/* Subjects */}
+                          {chapter.subjects.length > 0 && (
+                            <div className="space-y-2">
+                              {chapter.subjects.map((subject) => {
+                                const subKey = `${chapter.id}_${subject.id}`;
+                                const subOpen = expandedSubjects.has(subKey);
+                                const subAccent = ACCENT[subject.id];
+                                const keys = lectureKeys(subject);
+                                const subDone = keys.reduce((n, k) => {
+                                  const ls = st.lectures?.[k];
+                                  return n + (ls?.studied ? 1 : 0) + (ls?.revised ? 1 : 0);
+                                }, 0);
+
+                                return (
+                                  <div key={subject.id} className="overflow-hidden rounded-xl border border-border dark:border-white/[0.06] bg-muted/20 dark:bg-white/[0.015]">
+                                    <button
+                                      type="button"
+                                      onClick={() => toggleSubjectExpanded(subKey)}
+                                      aria-expanded={subOpen}
+                                      className="flex w-full items-center gap-2.5 px-3.5 py-2.5 text-start transition-colors hover:bg-muted/40 dark:hover:bg-white/[0.03]"
+                                    >
+                                      <Layers size={14} className={subAccent.text} />
+                                      <span className="min-w-0 flex-1">
+                                        <span className="block truncate text-xs font-semibold text-foreground/80 dark:text-white/85">{subject.name}</span>
+                                        <span className="block truncate text-[10px] text-muted-foreground dark:text-white/40">
+                                          {subject.lectureCount} {label('lectures')} · {subject.lectures}
+                                        </span>
+                                      </span>
+                                      <span className="shrink-0 text-[10px] tabular-nums text-muted-foreground dark:text-white/45">
+                                        {subDone}/{keys.length * 2}
+                                      </span>
+                                      <span className="shrink-0 text-muted-foreground dark:text-white/40">
+                                        {subOpen ? <ChevronUp size={15} /> : <ChevronDown size={15} />}
+                                      </span>
+                                    </button>
+
+                                    <AnimatePresence initial={false}>
+                                      {subOpen && (
+                                        <motion.div
+                                          key="subject-body"
+                                          initial={{ height: 0, opacity: 0 }}
+                                          animate={{ height: 'auto', opacity: 1 }}
+                                          exit={{ height: 0, opacity: 0 }}
+                                          transition={{ type: 'spring', stiffness: 260, damping: 30 }}
+                                          className="overflow-hidden"
+                                        >
+                                          <div className="border-t border-border dark:border-white/[0.05] px-3.5 py-3">
+                                            {keys.length === 0 ? (
+                                              <p className="py-1 text-[11px] text-muted-foreground dark:text-white/35">—</p>
+                                            ) : (
+                                              <>
+                                                {/* Mark-all utilities */}
+                                                <div className="mb-2.5 flex flex-wrap gap-2">
+                                                  <button
+                                                    type="button"
+                                                    onClick={() => markAllLectures(chapter.id, subject, 'studied')}
+                                                    className={`rounded-full border px-2.5 py-1 text-[10px] font-medium transition-all active:scale-95 border-border dark:border-white/[0.08] bg-card dark:bg-white/[0.03] ${subAccent.text} hover:bg-muted dark:hover:bg-white/[0.07]`}
+                                                  >
+                                                    {label('markAllStudied')}
+                                                  </button>
+                                                  <button
+                                                    type="button"
+                                                    onClick={() => markAllLectures(chapter.id, subject, 'revised')}
+                                                    className={`rounded-full border px-2.5 py-1 text-[10px] font-medium transition-all active:scale-95 border-border dark:border-white/[0.08] bg-card dark:bg-white/[0.03] ${subAccent.text} hover:bg-muted dark:hover:bg-white/[0.07]`}
+                                                  >
+                                                    {label('markAllRevised')}
+                                                  </button>
+                                                </div>
+
+                                                {/* Lecture rows */}
+                                                <div className="space-y-1">
+                                                  {keys.map((k, i) => {
+                                                    const ls = st.lectures?.[k] ?? { studied: false, revised: false };
+                                                    return (
+                                                      <div
+                                                        key={k}
+                                                        className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1 rounded-lg px-2 py-1.5 hover:bg-muted/40 dark:hover:bg-white/[0.03]"
+                                                      >
+                                                        <span className="text-xs text-foreground/80 dark:text-white/70">
+                                                          {label('lecture')} {i + 1}
+                                                        </span>
+                                                        <span className="flex items-center gap-3">
+                                                          <CheckBox
+                                                            checked={ls.studied}
+                                                            color={subject.id}
+                                                            text={label('studied')}
+                                                            onToggle={() => toggleLecture(chapter.id, subject.id, i + 1, 'studied')}
+                                                          />
+                                                          <CheckBox
+                                                            checked={ls.revised}
+                                                            color={subject.id}
+                                                            text={label('revised')}
+                                                            onToggle={() => toggleLecture(chapter.id, subject.id, i + 1, 'revised')}
+                                                          />
+                                                        </span>
+                                                      </div>
+                                                    );
+                                                  })}
+                                                </div>
+                                              </>
+                                            )}
+                                          </div>
+                                        </motion.div>
+                                      )}
+                                    </AnimatePresence>
+                                  </div>
+                                );
+                              })}
+                            </div>
+                          )}
+
+                          {/* Notes block */}
+                          <div>
+                            <div className="mb-1.5 flex items-center gap-1.5 text-xs font-medium text-muted-foreground dark:text-white/60">
+                              <Edit3 size={13} />
+                              {label('notes')}
+                            </div>
+                            <textarea
+                              value={st.notes}
+                              onChange={(e) => setNotes(chapter.id, e.target.value)}
+                              placeholder={label('notesPlaceholder')}
+                              rows={3}
+                              className="w-full resize-y rounded-xl border border-border dark:border-white/[0.08] bg-card dark:bg-white/[0.02] px-3 py-2.5 text-xs text-foreground dark:text-white/85 placeholder:text-muted-foreground dark:placeholder:text-white/30 outline-none transition-shadow focus:ring-2 focus:ring-physiology/50"
+                            />
+                          </div>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+              );
+            })}
+          </div>
         </div>
 
-        {/* ── Sticky footer ──────────────────────────────────────────── */}
-        <div className="px-6 py-4 border-t border-border bg-card/40 flex justify-end">
-          <button onClick={onClose}
-            className="px-6 py-2.5 bg-foreground dark:bg-foreground hover:opacity-90
-                       text-background rounded-full text-xs font-bold tracking-wide
-                       transition-all duration-200 active:scale-[0.98] glow-border">
-            {t('close') || 'Close'}
+        {/* Footer */}
+        <div className="sticky bottom-0 z-10 border-t border-border bg-card/85 px-5 py-3.5 backdrop-blur-xl sm:px-7">
+          <button
+            type="button"
+            onClick={onClose}
+            className="ms-auto block rounded-xl border border-border dark:border-white/[0.12] px-5 py-2 text-sm font-medium text-muted-foreground dark:text-white/80 transition-all hover:bg-muted dark:hover:border-white/[0.06] dark:hover:text-white/50 active:scale-95"
+          >
+            {label('close')}
           </button>
         </div>
+      </motion.div>
 
-        {/* ── Save toast ─────────────────────────────────────────────── */}
+      {/* Save toast */}
+      <AnimatePresence>
         {showToast && (
-          <div className="absolute bottom-16 left-1/2 -translate-x-1/2 toast-in
-                          px-4 py-2 bg-foreground/90 text-background rounded-full
-                          text-xs font-bold shadow-lg flex items-center gap-1.5 whitespace-nowrap">
-            <Check size={11} className="text-success" strokeWidth={3} />
-            {t('saveSuccess') || 'Saved'}
-          </div>
+          <motion.div
+            key="save-toast"
+            initial={{ opacity: 0, y: 16, scale: 0.95 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: 8, scale: 0.97 }}
+            transition={{ type: 'spring', stiffness: 400, damping: 28 }}
+            className="pointer-events-none fixed bottom-6 left-1/2 z-[60] flex -translate-x-1/2 items-center gap-2 rounded-full border border-border bg-card/95 px-4 py-2 text-xs font-medium text-foreground shadow-xl backdrop-blur-xl"
+          >
+            <span className="flex h-4 w-4 items-center justify-center rounded-full bg-physiology">
+              <Check size={10} className="text-black" strokeWidth={3} />
+            </span>
+            {label('saved')}
+          </motion.div>
         )}
-      </div>
+      </AnimatePresence>
     </div>
   );
 }

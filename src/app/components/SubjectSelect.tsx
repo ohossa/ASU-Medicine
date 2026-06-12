@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import {
   ArrowLeft,
   ChevronRight,
@@ -15,373 +15,504 @@ import {
   ArrowRight,
   CheckCircle,
   Clock,
+  Layers,
+  Award
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
-import type { ChapterData, SubjectData, SubjectColor } from '../types';
+import { motion, AnimatePresence } from 'framer-motion';
+import type { ChapterData, SubjectData, SubjectColor, Question } from '../types';
 import { subjectStyles } from '../types';
-import { shuffleArray } from '../data';
 import { useLanguage } from '../context/LanguageContext';
 import { getQuizHistory } from '../utils/storage';
-import { useState, useEffect } from 'react';
+import type { QuizResult } from '../utils/storage';
+
+/* ------------------------------------------------------------------ */
+/* Types                                                               */
+/* ------------------------------------------------------------------ */
 
 export interface BreadcrumbItem {
   label: string;
   onClick?: () => void;
 }
 
+interface LectureState {
+  studied: boolean;
+  revised: boolean;
+}
+
+interface ChapterState {
+  studied: boolean;
+  revised: boolean;
+  mcq: boolean;
+  essay: boolean;
+  notes: string;
+  lectures?: Record<string, LectureState>;
+}
+
 interface Props {
   chapter: ChapterData;
   onBack: () => void;
-  onSelectSubject: (subject: SubjectData, questions: ReturnType<typeof shuffleArray>) => void;
-  onQuickStart: (questions: ReturnType<typeof shuffleArray>) => void;
+  onSelectSubject: (subject: SubjectData, questions: Question[]) => void;
+  onQuickStart: (questions: Question[]) => void;
   breadcrumbPath?: BreadcrumbItem[];
   userButton?: React.ReactNode;
 }
 
-const iconMap: Record<string, LucideIcon> = {
-  Activity,
-  FlaskConical,
-  Bone,
-  Microscope,
-  ShieldAlert,
-  Pill,
-  Stethoscope,
-  Biohazard,
+interface LatestResult {
+  correct: number;
+  total: number;
+  pct: number;
+  elapsedSeconds: number;
+}
+
+/* ------------------------------------------------------------------ */
+/* Static maps                                                         */
+/* ------------------------------------------------------------------ */
+
+const ACCENT: Record<SubjectColor, { text: string; softBg: string; solidBg: string; border: string; gradient: string }> = {
+  physiology:   { text: 'text-physiology',   softBg: 'bg-physiology/10',   solidBg: 'bg-physiology',   border: 'border-physiology/30',   gradient: 'from-physiology/20 to-physiology/5' },
+  biochem:      { text: 'text-biochem',      softBg: 'bg-biochem/10',      solidBg: 'bg-biochem',      border: 'border-biochem/30',      gradient: 'from-biochem/20 to-biochem/5' },
+  microbiology: { text: 'text-microbiology', softBg: 'bg-microbiology/10', solidBg: 'bg-microbiology', border: 'border-microbiology/30', gradient: 'from-microbiology/20 to-microbiology/5' },
+  anatomy:      { text: 'text-anatomy',      softBg: 'bg-anatomy/10',      solidBg: 'bg-anatomy',      border: 'border-anatomy/30',      gradient: 'from-anatomy/20 to-anatomy/5' },
+  histology:    { text: 'text-histology',    softBg: 'bg-histology/10',    solidBg: 'bg-histology',    border: 'border-histology/30',    gradient: 'from-histology/20 to-histology/5' },
+  pathology:    { text: 'text-pathology',    softBg: 'bg-pathology/10',    solidBg: 'bg-pathology',    border: 'border-pathology/30',    gradient: 'from-pathology/20 to-pathology/5' },
+  pharma:       { text: 'text-pharma',       softBg: 'bg-pharma/10',       solidBg: 'bg-pharma',       border: 'border-pharma/30',       gradient: 'from-pharma/20 to-pharma/5' },
+  clinical:     { text: 'text-clinical',     softBg: 'bg-clinical/10',     solidBg: 'bg-clinical',     border: 'border-clinical/30',     gradient: 'from-clinical/20 to-clinical/5' },
 };
 
-const totalQs = (subjects: SubjectData[]) =>
-  subjects.reduce((a, s) => a + s.questions.length, 0);
+const ICON_BY_NAME: Record<string, LucideIcon> = {
+  activity: Activity,
+  flaskconical: FlaskConical,
+  flask: FlaskConical,
+  bone: Bone,
+  microscope: Microscope,
+  shieldalert: ShieldAlert,
+  shield: ShieldAlert,
+  pill: Pill,
+  stethoscope: Stethoscope,
+  biohazard: Biohazard,
+};
+
+const ICON_BY_SUBJECT: Record<SubjectColor, LucideIcon> = {
+  physiology: Activity,
+  biochem: FlaskConical,
+  microbiology: Biohazard,
+  anatomy: Bone,
+  histology: Microscope,
+  pathology: ShieldAlert,
+  pharma: Pill,
+  clinical: Stethoscope,
+};
+
+const iconFor = (subject: SubjectData): LucideIcon =>
+  ICON_BY_NAME[(subject.iconName || '').toLowerCase().replace(/[^a-z]/g, '')] ?? ICON_BY_SUBJECT[subject.id] ?? HelpCircle;
+
+/** Optional extra classes from the shared subjectStyles map (shape-agnostic). */
+const styleHint = (color: SubjectColor): string => {
+  const s = (subjectStyles as Record<string, unknown>)[color];
+  return typeof s === 'string' ? s : '';
+};
+
+/* ------------------------------------------------------------------ */
+/* Helpers                                                             */
+/* ------------------------------------------------------------------ */
+
+const pctColor = (pct: number): string => {
+  if (pct >= 75) return 'text-physiology';
+  if (pct >= 50) return 'text-biochem';
+  return 'text-pathology';
+};
+
+const fmtElapsed = (seconds: number): string => {
+  const s = Math.max(0, Math.round(seconds));
+  const m = Math.floor(s / 60);
+  const rest = s % 60;
+  if (m === 0) return `${rest}s`;
+  return rest > 0 ? `${m}m ${rest}s` : `${m}m`;
+};
+
+const FALLBACK: Record<string, { en: string; ar: string }> = {
+  back:           { en: 'Back', ar: 'رجوع' },
+  page:           { en: 'Page', ar: 'صفحة' },
+  subjects:       { en: 'Subjects', ar: 'المواد' },
+  questions:      { en: 'Questions', ar: 'الأسئلة' },
+  available:      { en: 'available', ar: 'متاح' },
+  comingSoon:     { en: 'Coming Soon', ar: 'قريبًا' },
+  syllabus:       { en: 'Syllabus', ar: 'المنهج' },
+  latestResult:   { en: 'Latest Result', ar: 'آخر نتيجة' },
+  elapsed:        { en: 'elapsed', ar: 'مستغرق' },
+  quickStartTitle:{ en: 'Feeling confident?', ar: 'هل تشعر بالثقة؟' },
+  quickStartDesc: { en: 'Take on every subject in this chapter in one combined session.', ar: 'اختبر كل مواد هذا الفصل في جلسة واحدة مجمعة.' },
+  startAll:       { en: 'Start All Subjects', ar: 'ابدأ كل المواد' },
+  completed:      { en: 'Completed', ar: 'مكتمل' },
+  noSubjects:     { en: 'No subjects available in this chapter yet.', ar: 'لا توجد مواد متاحة في هذا الفصل بعد.' },
+};
+
+/** Defensive view over QuizResult without depending on its exact shape. */
+const matchLatestResult = (history: QuizResult[], chapterId: number, subjectName: string): LatestResult | null => {
+  for (const result of history) {
+    const r = result as unknown as Record<string, unknown>;
+    if (r['chapterId'] !== chapterId || r['subjectName'] !== subjectName) continue;
+
+    const num = (...keys: string[]): number | null => {
+      for (const k of keys) {
+        const v = r[k];
+        if (typeof v === 'number' && Number.isFinite(v)) return v;
+      }
+      return null;
+    };
+
+    const correct = num('correct', 'score', 'correctCount') ?? 0;
+    const total = num('total', 'totalQuestions', 'questionCount') ?? 0;
+    const explicitPct = num('pct', 'percentage');
+    const pct = total > 0
+      ? Math.round((correct / total) * 100)
+      : Math.max(0, Math.min(100, Math.round(explicitPct ?? 0)));
+    const elapsedSeconds = num('elapsedSeconds', 'timeElapsed', 'elapsed', 'duration', 'time') ?? 0;
+
+    return { correct, total, pct, elapsedSeconds };
+  }
+  return null;
+};
+
+/* ------------------------------------------------------------------ */
+/* Component                                                           */
+/* ------------------------------------------------------------------ */
 
 export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart, breadcrumbPath, userButton }: Props) {
-  const allQuestions = useMemo(() => chapter.subjects.flatMap((s) => s.questions), [chapter]);
-  const totalQuestions = useMemo(() => totalQs(chapter.subjects), [chapter.subjects]);
   const { t, language } = useLanguage();
-  
-  const [history, setHistory] = useState(() => getQuizHistory().filter(r => r && typeof r === 'object'));
+  const isRTL = language === 'ar';
 
+  const label = (key: string): string => {
+    const translated = typeof t === 'function' ? t(key) : undefined;
+    if (translated && translated !== key) return translated;
+    const f = FALLBACK[key];
+    return f ? (isRTL ? f.ar : f.en) : key;
+  };
+
+  const [history, setHistory] = useState<QuizResult[]>([]);
+  const [trackerData, setTrackerData] = useState<Record<number, ChapterState>>({});
+
+  /* Exam history */
   useEffect(() => {
-    const handleStorage = () => setHistory(getQuizHistory().filter(r => r && typeof r === 'object'));
-    window.addEventListener('storage', handleStorage);
-    return () => window.removeEventListener('storage', handleStorage);
+    try {
+      const all = getQuizHistory();
+      setHistory((Array.isArray(all) ? all : []).filter((r): r is QuizResult => r !== null && typeof r === 'object'));
+    } catch {
+      setHistory([]);
+    }
   }, []);
 
+  /* Syllabus tracker data: scan all asu_study_tracker_* keys, use the first map containing this chapter */
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    try {
+      for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+        if (!key || !key.startsWith('asu_study_tracker_')) continue;
+        const raw = localStorage.getItem(key);
+        if (!raw) continue;
+        let parsed: Record<string, ChapterState>;
+        try {
+          parsed = JSON.parse(raw) as Record<string, ChapterState>;
+        } catch {
+          continue;
+        }
+        const entry = parsed?.[String(chapter.id)];
+        if (entry && typeof entry === 'object') {
+          const map: Record<number, ChapterState> = {};
+          for (const [k, v] of Object.entries(parsed)) {
+            const id = Number(k);
+            if (Number.isFinite(id) && v && typeof v === 'object') map[id] = v;
+          }
+          setTrackerData(map);
+          return;
+        }
+      }
+      setTrackerData({});
+    } catch {
+      setTrackerData({});
+    }
+  }, [chapter.id]);
+
+  /* Per-subject syllabus progress % */
+  const syllabusProgress = useMemo(() => {
+    const lectures = trackerData[chapter.id]?.lectures ?? {};
+    const result: Record<string, number> = {};
+    for (const subject of chapter.subjects) {
+      const total = Math.max(0, subject.lectureCount) * 2;
+      if (total === 0) {
+        result[subject.id] = 0;
+        continue;
+      }
+      let done = 0;
+      const prefix = `${subject.id}_L`;
+      for (const [key, ls] of Object.entries(lectures)) {
+        if (!key.startsWith(prefix)) continue;
+        if (ls?.studied) done++;
+        if (ls?.revised) done++;
+      }
+      result[subject.id] = Math.min(100, Math.round((done / total) * 100));
+    }
+    return result;
+  }, [trackerData, chapter]);
+
+  /* Per-subject latest exam result */
+  const latestResults = useMemo(() => {
+    const result: Record<string, LatestResult | null> = {};
+    for (const subject of chapter.subjects) {
+      result[subject.id] = matchLatestResult(history, chapter.id, subject.name);
+    }
+    return result;
+  }, [history, chapter]);
+
+  const allQuestions = useMemo(() => chapter.subjects.flatMap((s) => s.questions), [chapter]);
+  const activeSubjects = chapter.subjects.filter((s) => s.questions.length > 0).length;
+
+  const accent = ACCENT[chapter.accentColor];
+  const BackArrow = isRTL ? ArrowRight : ArrowLeft;
+  const ForwardArrow = isRTL ? ArrowLeft : ArrowRight;
+
+  const crumbs: BreadcrumbItem[] = breadcrumbPath ?? [
+    { label: label('back'), onClick: onBack },
+    { label: chapter.title },
+  ];
+
   return (
-    <div className="min-h-screen bg-gray-50/50 dark:bg-gray-950 font-manrope relative overflow-hidden">
-      {/* Dynamic Floating Background Blobs */}
-      <div className="fixed inset-0 -z-10 overflow-hidden bg-background pointer-events-none">
-        <div className="absolute top-[10%] left-[5%] h-[35vw] w-[35vw] rounded-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-physiology/6 to-transparent dark:from-physiology/4blob-float-1" />
-        <div className="absolute bottom-[10%] right-[5%] h-[40vw] w-[40vw] rounded-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-anatomy/6 to-transparent dark:from-anatomy/4blob-float-2" />
-      </div>
+    <div dir={isRTL ? 'rtl' : 'ltr'} className="relative min-h-screen overflow-hidden bg-background text-foreground">
+      {/* Themed floating blobs */}
+      <motion.div
+        aria-hidden
+        animate={{ x: [0, 30, 0], y: [0, 40, 0] }}
+        transition={{ duration: 14, repeat: Infinity, ease: 'easeInOut' }}
+        className={`pointer-events-none absolute -top-40 -left-40 h-[460px] w-[460px] rounded-full bg-gradient-to-br ${accent.gradient} blur-3xl opacity-60 dark:opacity-60 ${styleHint(chapter.accentColor)}`}
+      />
+      <motion.div
+        aria-hidden
+        animate={{ x: [0, -40, 0], y: [0, -30, 0] }}
+        transition={{ duration: 18, repeat: Infinity, ease: 'easeInOut' }}
+        className={`pointer-events-none absolute -bottom-40 -right-40 h-[460px] w-[460px] rounded-full bg-gradient-to-tl ${accent.gradient} blur-3xl opacity-40`}
+      />
 
-      <style>{`
-        @keyframes fadeInUp {
-          from { opacity: 0; transform: translateY(28px); }
-          to { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes slideInLeft {
-          from { opacity: 0; transform: translateX(-20px); }
-          to { opacity: 1; transform: translateX(0); }
-        }
-        @keyframes float {
-          0%, 100% { transform: translateY(0px); }
-          50% { transform: translateY(-8px); }
-        }
-        @keyframes floatBlob1 {
-          0%, 100% { transform: translate(0, 0) scale(1); }
-          50% { transform: translate(5%, 8%) scale(1.08); }
-        }
-        @keyframes floatBlob2 {
-          0%, 100% { transform: translate(0, 0) scale(1); }
-          50% { transform: translate(-6%, -5%) scale(0.92); }
-        }
-        .blob-float-1 { animation: floatBlob1 25s ease-in-out infinite; }
-        .blob-float-2 { animation: floatBlob2 30s ease-in-out infinite alternate; }
+      <div className="relative mx-auto max-w-6xl px-4 py-6 sm:px-6 lg:px-8">
+        {/* ---------------- Sticky navigation header ---------------- */}
+        <motion.nav
+          initial={{ opacity: 0, y: -12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ type: 'spring', stiffness: 260, damping: 26 }}
+          className={`sticky top-3 z-20 mb-8 flex items-center gap-3 rounded-2xl border bg-card/85 px-3 py-2.5 backdrop-blur-xl border-border dark:${accent.border}`}
+        >
+          <button
+            type="button"
+            onClick={onBack}
+            aria-label={label('back')}
+            className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-border dark:border-white/[0.08] bg-secondary/80 dark:bg-white/[0.03] text-muted-foreground hover:text-foreground dark:text-white/60 dark:hover:text-white transition-all active:scale-95"
+          >
+            <BackArrow size={16} />
+          </button>
 
-        @keyframes pulseRing {
-          0% { transform: scale(0.9); opacity: 0.6; }
-          50% { transform: scale(1.1); opacity: 0.2; }
-          100% { transform: scale(0.9); opacity: 0.6; }
-        }
-        @keyframes shimmer {
-          0% { background-position: 200% 0; }
-          100% { background-position: -200% 0; }
-        }
-        .card-stagger { animation: fadeInUp 600ms cubic-bezier(0.34,1.56,0.64,1) both; }
-        .card-stagger:nth-child(1) { animation-delay: 100ms; }
-        .card-stagger:nth-child(2) { animation-delay: 160ms; }
-        .card-stagger:nth-child(3) { animation-delay: 220ms; }
-        .card-stagger:nth-child(4) { animation-delay: 280ms; }
-        .card-stagger:nth-child(5) { animation-delay: 340ms; }
-        .card-stagger:nth-child(6) { animation-delay: 400ms; }
-        .card-stagger:nth-child(7) { animation-delay: 460ms; }
-        
-        .subject-card {
-          transition: all 400ms cubic-bezier(0.34, 1.56, 0.64, 1);
-        }
-        .subject-card:hover {
-          transform: translateY(-8px) scale(1.02);
-        }
-        .subject-card:active { transform: translateY(-2px) scale(0.98); }
-        .icon-float { transition: transform 350ms cubic-bezier(0.34,1.56,0.64,1); }
-        .subject-card:hover .icon-float { transform: scale(1.15) rotate(-5deg); }
-        .arrow-bounce { transition: transform 300ms cubic-bezier(0.34,1.56,0.64,1); }
-        .subject-card:hover .arrow-bounce { transform: translateX(4px); }
-        .glow-ring { animation: pulseRing 3s ease-in-out infinite; }
-        .blob-1 { animation: float 7s ease-in-out infinite; }
-        .blob-2 { animation: float 9s ease-in-out infinite reverse; }
-        .btn-back { transition: all 250ms cubic-bezier(0.34,1.56,0.64,1); }
-        .btn-back:hover { transform: translateX(-3px); }
-        .progress-line {
-          background: linear-gradient(90deg, #10B981 0%, #06B6D4 50%, #3B82F6 100%);
-          background-size: 200% 100%;
-          animation: shimmer 3s ease-in-out infinite;
-        }
-
-        .header-anim { animation: slideInLeft 500ms ease-out both; }
-        .header-anim-delay { animation: slideInLeft 500ms ease-out 100ms both; }
-        .stats-anim { animation: fadeInUp 600ms ease-out 300ms both; }
-      `}</style>
-
-      {/* STICKY HEADER */}
-      <header className="shrinking-header bg-white/70 dark:bg-gray-900/70 backdrop-blur-xl border-b border-gray-100 dark:border-gray-800/50 sticky top-0 z-50">
-        <div className="max-w-[1600px] mx-auto px-6 lg:px-8">
-          <div className="flex items-center justify-between py-4">
-            <div className="flex items-center gap-4">
-              <button
-                onClick={onBack}
-                className="btn-back inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white text-sm font-semibold border border-gray-100 dark:border-gray-700"
-              >
-                <ArrowLeft size={16} />
-                <span className="hidden sm:inline">{t('chaptersCount')}</span>
-              </button>
-              {/* Desktop Breadcrumbs (Full Path) */}
-              <div className="header-anim hidden lg:flex items-center gap-2 text-sm">
-                {breadcrumbPath ? (
-                  breadcrumbPath.map((segment, idx) => {
-                    const isLast = idx === breadcrumbPath.length - 1;
-                    return (
-                      <React.Fragment key={idx}>
-                        {segment.onClick && !isLast ? (
-                          <button
-                            onClick={segment.onClick}
-                            className="text-gray-400 dark:text-gray-500 font-medium hover:text-physiology transition-colors duration-200"
-                          >
-                            {segment.label}
-                          </button>
-                        ) : (
-                          <span className={isLast ? "text-gray-900 dark:text-white font-bold" : "text-gray-400 dark:text-gray-500 font-medium"}>
-                            {segment.label}
-                          </span>
-                        )}
-                        {!isLast && <ChevronRight size={12} className="text-gray-300 dark:text-gray-600" />}
-                      </React.Fragment>
-                    );
-                  })
+          <ol className="flex min-w-0 flex-1 items-center gap-1 overflow-x-auto text-xs text-muted-foreground dark:text-white/45">
+            {crumbs.map((crumb, i) => (
+              <li key={`${crumb.label}_${i}`} className="flex shrink-0 items-center gap-1">
+                {i > 0 && <ChevronRight size={13} className={`text-white/25 ${isRTL ? 'rotate-180' : ''}`} />}
+                {crumb.onClick ? (
+                  <button type="button" onClick={crumb.onClick} className="rounded px-1 py-0.5 transition-colors hover:text-foreground dark:hover:text-white">
+                    {crumb.label}
+                  </button>
                 ) : (
-                  <>
-                    <span className="text-gray-400 dark:text-gray-500 font-medium">{t('portal')}</span>
-                    <ChevronRight size={12} className="text-gray-300 dark:text-gray-600" />
-                    <span className="text-gray-900 dark:text-white font-bold">{t('chapter')} {chapter.id}</span>
-                  </>
+                  <span className={i === crumbs.length - 1 ? 'font-medium text-foreground dark:text-white/80' : ''}>{crumb.label}</span>
                 )}
-              </div>
+              </li>
+            ))}
+          </ol>
 
-              {/* Tablet Breadcrumbs (Truncated) */}
-              <div className="header-anim hidden md:flex lg:hidden items-center gap-2 text-sm">
-                <span className="text-gray-400 dark:text-gray-500 font-medium">{t('portal')}</span>
-                <ChevronRight size={12} className="text-gray-300 dark:text-gray-600" />
-                <span className="text-gray-400 dark:text-gray-500 font-medium tracking-widest">...</span>
-                <ChevronRight size={12} className="text-gray-300 dark:text-gray-600" />
-                <span className="text-gray-900 dark:text-white font-bold">{t('chapter')} {chapter.id}</span>
-              </div>
-            </div>
-            <div className="flex items-center gap-3">
-              <div className="stats-anim flex items-center gap-2 px-4 py-2 bg-physiology/5 border border-physiology/15 rounded-full">
-                <span className="w-2 h-2 rounded-full bg-physiology" />
-                <span className="text-xs font-bold text-physiology-dark">
-                  {chapter.subjects.length} {t('availableSubjects')}
-                </span>
-              </div>
-              {userButton}
-            </div>
-          </div>
-          <div className="h-0.5 -mx-6 lg:-mx-8">
-            <div className="progress-line h-full w-full opacity-40 rounded-full" />
-          </div>
-        </div>
-      </header>
+          <span className={`hidden shrink-0 items-center gap-1.5 rounded-full px-2.5 py-1 text-[10px] font-medium sm:inline-flex ${accent.softBg} ${accent.text}`}>
+            <Layers size={11} />
+            {activeSubjects}/{chapter.subjects.length} {label('available')}
+          </span>
 
-      {/* HERO */}
-      <div className="relative overflow-hidden bg-white dark:bg-gray-900 border-b border-gray-100 dark:border-gray-800">
+          {userButton && <div className="shrink-0">{userButton}</div>}
+        </motion.nav>
 
-        <div className="blob-1 absolute -top-16 right-20 w-56 h-56 rounded-full bg-gradient-to-br from-physiology/8 to-clinical/6 blur-3xl" />
-        <div className="blob-2 absolute -bottom-20 left-10 w-48 h-48 rounded-full bg-gradient-to-br from-anatomy/8 to-histology/6 blur-3xl" />
-
-        <div className="relative max-w-[1600px] mx-auto px-6 lg:px-8 py-10 lg:py-14">
-          <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
-            <div>
-              <div className="header-anim inline-flex items-center gap-2.5 px-4 py-2 bg-gray-900 dark:bg-white text-white dark:text-gray-900 rounded-full text-xs font-bold tracking-wide uppercase mb-5">
-                <span className="text-lg">{chapter.emoji}</span>
-                {t('chapter')} {chapter.id}
-              </div>
-              <h1 className="header-anim font-archivo text-4xl lg:text-5xl font-black text-gray-900 dark:text-white tracking-tight leading-tight mb-3">
-                {chapter.title}
-              </h1>
-              <p className="header-anim-delay text-gray-400 dark:text-gray-500 text-base lg:text-lg font-medium max-w-md leading-relaxed">
-                {chapter.subtitle} — {language === 'en' ? 'Select a subject to begin your assessment.' : 'اختر مادة لبدء التقييم.'}
-              </p>
-            </div>
-
-            <div className="stats-anim flex items-center gap-5 lg:gap-8 bg-gray-50/80 dark:bg-gray-800/80 px-6 py-4 rounded-2xl border border-gray-100 dark:border-gray-700">
-              <div className="text-center">
-                <div className="font-archivo text-2xl font-black text-gray-900 dark:text-white">{chapter.subjects.length}</div>
-                <div className="text-[10px] text-gray-400 dark:text-gray-500 font-bold uppercase tracking-wider mt-0.5">{t('subjectsTab')}</div>
-              </div>
-              <div className="w-px h-8 bg-gray-200 dark:bg-gray-700" />
-              <div className="text-center">
-                <div className="font-archivo text-2xl font-black text-physiology">{totalQuestions}</div>
-                <div className="text-[10px] text-gray-400 dark:text-gray-500 font-bold uppercase tracking-wider mt-0.5">{t('questions')}</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* SUBJECT CARDS */}
-      <div className="max-w-[1600px] mx-auto px-6 lg:px-8 py-10 lg:py-14">
-        <div className="flex items-center gap-3 mb-8">
-          <div className="w-1.5 h-6 rounded-full bg-gradient-to-b from-physiology to-anatomy" />
-          <h2 className="font-archivo text-lg font-bold text-gray-900 dark:text-white tracking-tight">{t('chooseSubject')}</h2>
-          <div className="flex-1 h-px bg-gray-100 dark:bg-gray-800 ml-2" />
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 text-start">
-          {chapter.subjects.map((subject) => {
-            const color = subject.id as SubjectColor;
-            const s = subjectStyles[color];
-            const Icon = iconMap[subject.iconName] ?? Activity;
-            const hasQuestions = subject.questions.length > 0;
-            
-            const latestResult = history.find(r => r.chapterId === chapter.id && r.subjectName === subject.name);
-            const isCompleted = !!latestResult;
-
-            return (
-              <div
-                key={subject.id}
-                className={`card-stagger scroll-reveal subject-card glass-panel glow-border rounded-[30px] p-6 cursor-pointer group relative overflow-hidden transition-all duration-300 ${
-                  !hasQuestions ? 'opacity-60' : ''
-                } ${isCompleted ? 'bg-physiology/5 border-physiology/30 hover:border-physiology/50 hover:bg-physiology/10' : ''}`}
-                onClick={() => hasQuestions && onSelectSubject(subject, subject.questions)}
-              >
-                <div className={`absolute -top-8 -right-8 w-24 h-24 rounded-full ${s.bgOp5} group-hover:${s.bgOp10} transition-colors duration-500 pointer-events-none`} />
-                <div className={`absolute -top-4 -right-4 w-12 h-12 rounded-full ${s.bgOp8} glow-ring`} />
-                
-                {isCompleted && (
-                  <div className="absolute top-5 right-5 text-physiology bg-physiology/10 rounded-full p-1.5 border border-physiology/20 shadow-sm z-10 animate-fade-in">
-                    <CheckCircle size={28} strokeWidth={2.5} className="drop-shadow-sm" />
-                  </div>
-                )}
-
-                <div className="relative">
-                  <div className={`icon-float w-14 h-14 rounded-2xl bg-gradient-to-br ${s.gradientFrom} ${s.gradientTo} flex items-center justify-center mb-4 ${s.borderOp10} border`}>
-                    <Icon size={24} className={s.text} />
-                  </div>
-
-                  <h3 className={`font-archivo text-lg font-bold ${isCompleted ? 'text-physiology' : 'text-gray-900 dark:text-white'} group-hover:${s.text} transition-colors duration-300 tracking-tight mb-1 pr-8`}>
-                    {subject.name}
-                  </h3>
-
-                  <div className={`flex items-center gap-2 px-3 py-2 ${s.bgOp5} rounded-xl mb-5 ${s.borderOp10} border`}>
-                    <HelpCircle size={14} className={s.text} />
-                    <span className={`text-xs font-bold ${s.textDark}`}>
-                      {hasQuestions ? `${subject.questions.length} ${t('questions')}` : t('comingSoon')}
-                    </span>
-                  </div>
-
-                  <div className="h-px bg-gray-100 dark:bg-gray-800 mb-4" />
-
-                  <div className="flex items-center justify-end relative h-5">
-                    {/* Default Begin Text */}
-                    {hasQuestions && !isCompleted && (
-                      <div className={`absolute right-0 arrow-bounce flex items-center gap-1 text-xs font-bold ${s.text} opacity-0 group-hover:opacity-100 transition-opacity duration-300`}>
-                        {t('begin')}
-                        <ArrowRight size={14} />
-                      </div>
-                    )}
-                    
-                    {/* Retake Text (if completed) */}
-                    {hasQuestions && isCompleted && (
-                      <div className={`absolute right-0 arrow-bounce flex items-center gap-1 text-xs font-bold text-physiology opacity-0 group-hover:opacity-100 transition-opacity duration-300`}>
-                        Retake Subject
-                        <ArrowRight size={14} />
-                      </div>
-                    )}
-                  </div>
-                  
-                  {/* Floating Pop-up for Previous Results on Hover */}
-                  {isCompleted && latestResult && (
-                    <div className="absolute top-full left-0 right-0 mt-4 opacity-0 group-hover:opacity-100 group-hover:-translate-y-20 transition-all duration-300 pointer-events-none z-20">
-                      <div className="bg-white dark:bg-gray-800 rounded-xl p-3 shadow-xl border border-gray-100 dark:border-gray-700 mx-auto w-[90%]">
-                        <div className="text-[10px] uppercase font-bold text-gray-400 mb-1">Latest Exam Result</div>
-                        <div className="flex items-center justify-between">
-                          <div className={`font-black ${latestResult.pct >= 75 ? 'text-physiology' : latestResult.pct >= 50 ? 'text-biochem' : 'text-pathology'}`}>
-                            {latestResult.pct}%
-                          </div>
-                          <div className="text-xs font-bold text-gray-600 dark:text-gray-300">
-                            {latestResult.correct}/{latestResult.total}
-                          </div>
-                          <div className="flex items-center gap-1 text-[10px] text-gray-500">
-                            <Clock size={10} />
-                            {Math.floor(latestResult.elapsedSeconds / 60)}m
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  )}
-                </div>
-              </div>
-            );
-          })}
-        </div>
-
-        {/* QUICK START BANNER */}
-        <div
-          className="mt-10 glass-panel scroll-reveal rounded-3xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-start glow-border"
+        {/* ---------------- Hero panel ---------------- */}
+        <motion.header
+          initial={{ opacity: 0, y: 14 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ type: 'spring', stiffness: 240, damping: 26, delay: 0.05 }}
+          className="mb-10 flex flex-wrap items-center justify-between gap-5"
         >
           <div className="flex items-center gap-4">
-            <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-gray-900 to-gray-700 dark:from-gray-100 dark:to-gray-300 flex items-center justify-center">
-              <Zap size={20} className="text-white dark:text-gray-900" />
-            </div>
+            <span className="text-4xl">{chapter.emoji}</span>
             <div>
-              <h3 className="font-archivo text-base font-bold text-gray-900 dark:text-white tracking-tight">{t('quickStartAllSubjectsBanner')}</h3>
-              <p className="text-xs text-gray-400 dark:text-gray-500 font-medium mt-0.5">
-                {t('quickStartAllSubjectsDescBanner')}
+              <h1 className="text-2xl font-bold tracking-tight sm:text-3xl text-foreground dark:text-white">{chapter.title}</h1>
+              <p className="mt-1 text-sm text-muted-foreground dark:text-white/50">
+                {chapter.subtitle} · {label('page')} {chapter.page} · {chapter.lectureRange}
               </p>
             </div>
           </div>
-          <button
-            disabled={totalQuestions === 0}
-            onClick={() => onQuickStart(allQuestions)}
-            className="inline-flex items-center gap-2 px-6 py-3 bg-gray-900 dark:bg-white hover:bg-gray-800 dark:hover:bg-gray-100 disabled:opacity-40 text-white dark:text-gray-900 rounded-full text-sm font-bold tracking-wide transition-all duration-300 hover:scale-[0.97] active:scale-95"
-            style={{ boxShadow: '0 4px 16px rgba(0,0,0,0.12)' }}
-          >
-            {t('startAll')}
-            <ArrowRight size={16} />
-          </button>
-        </div>
 
-        <div className="mt-10 pb-8 text-center space-y-1.5 border-t border-gray-100 dark:border-gray-800/80 pt-6">
-          <p className="text-xs text-gray-450 dark:text-gray-500 font-semibold tracking-wider uppercase">
-            {t('asu')} • {t('portalTitle')}
-          </p>
-          <p className="text-[11px] text-gray-400 dark:text-gray-500 font-medium max-w-xl mx-auto px-6 leading-relaxed">
-            {t('developedForStudents')}{' '}
-            <a href="mailto:omarhmaged@gmail.com" className="hover:text-physiology dark:hover:text-white transition-colors underline font-semibold">
-              omarhmaged@gmail.com
-            </a>
-          </p>
-        </div>
+          <div className={`flex items-center gap-5 rounded-2xl border px-5 py-3 border-border dark:${accent.border} bg-card dark:bg-white/[0.02] backdrop-blur-xl`}>
+            <div className="text-center">
+              <p className={`text-lg font-bold tabular-nums ${accent.text}`}>{chapter.subjects.length}</p>
+              <p className="text-[10px] text-muted-foreground dark:text-white/45">{label('subjects')}</p>
+            </div>
+            <div className="h-8 w-px bg-border dark:bg-white/[0.08]" />
+            <div className="text-center">
+              <p className={`text-lg font-bold tabular-nums ${accent.text}`}>{allQuestions.length}</p>
+              <p className="text-[10px] text-muted-foreground dark:text-white/45">{label('questions')}</p>
+            </div>
+          </div>
+        </motion.header>
+
+        {/* ---------------- Subject grid ---------------- */}
+        {chapter.subjects.length === 0 ? (
+          <div className="rounded-[28px] border border-dashed border-border dark:border-white/[0.1] py-16 text-center text-sm text-muted-foreground dark:text-white/40">
+            {label('noSubjects')}
+          </div>
+        ) : (
+          <motion.div
+            initial="hidden"
+            animate="show"
+            variants={{ hidden: {}, show: { transition: { staggerChildren: 0.07, delayChildren: 0.1 } } }}
+            className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3"
+          >
+            {chapter.subjects.map((subject) => {
+              const Icon = iconFor(subject);
+              const subAccent = ACCENT[subject.id];
+              const isActive = subject.questions.length > 0;
+              const progress = syllabusProgress[subject.id] ?? 0;
+              const latest = latestResults[subject.id] ?? null;
+              const isCompleted = latest !== null;
+
+              return (
+                <motion.button
+                  key={subject.id}
+                  type="button"
+                  variants={{
+                    hidden: { opacity: 0, y: 20 },
+                    show: { opacity: 1, y: 0, transition: { type: 'spring', stiffness: 260, damping: 24 } },
+                  }}
+                  whileHover={isActive ? { scale: 1.03, y: -4, transition: { type: 'spring', stiffness: 400, damping: 18 } } : undefined}
+                  whileTap={isActive ? { scale: 0.98 } : undefined}
+                  disabled={!isActive}
+                  onClick={() => isActive && onSelectSubject(subject, subject.questions)}
+                  className={`group relative flex flex-col text-start bg-card dark:bg-white/[0.02] border border-border dark:border-white/[0.06] backdrop-blur-xl rounded-[28px] p-6 transition-colors ${
+                    isActive ? 'hover:border-gray-300 dark:hover:border-white/20 cursor-pointer' : 'cursor-not-allowed opacity-50 saturate-50'
+                  }`}
+                >
+                  {/* Icon + completed badge */}
+                  <div className="mb-4 flex items-start justify-between">
+                    <span className={`flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br ${subAccent.gradient} border ${subAccent.border}`}>
+                      <Icon size={22} className={subAccent.text} />
+                    </span>
+                    {isCompleted && (
+                      <span className="inline-flex items-center gap-1 rounded-full bg-physiology/10 px-2 py-0.5 text-[10px] font-medium text-physiology">
+                        <CheckCircle size={11} />
+                        {label('completed')}
+                      </span>
+                    )}
+                  </div>
+
+                  <h3 className="text-sm font-semibold text-foreground dark:text-white">{subject.name}</h3>
+                  <p className="mt-0.5 text-[11px] text-muted-foreground dark:text-white/40">{subject.lectures}</p>
+
+                  {/* Questions badge */}
+                  <span
+                    className={`mt-3 inline-flex w-fit items-center gap-1.5 rounded-full px-2.5 py-1 text-[10px] font-medium ${
+                      isActive ? `${subAccent.softBg} ${subAccent.text}` : 'bg-secondary text-muted-foreground dark:bg-white/[0.05] dark:text-white/40'
+                    }`}
+                  >
+                    <HelpCircle size={11} />
+                    {isActive ? `${subject.questions.length} ${label('questions')}` : label('comingSoon')}
+                  </span>
+
+                  {/* Syllabus progress */}
+                  <div className="mt-4 w-full">
+                    <div className="mb-1.5 flex items-center justify-between text-[10px]">
+                      <span className="text-muted-foreground dark:text-white/45">{label('syllabus')}</span>
+                      <span className={`font-semibold tabular-nums ${progress > 0 ? subAccent.text : 'text-muted-foreground dark:text-white/35'}`}>{progress}%</span>
+                    </div>
+                    <div className="h-1 w-full overflow-hidden rounded-full bg-secondary dark:bg-white/[0.06]">
+                      <motion.div
+                        initial={false}
+                        animate={{ width: `${progress}%` }}
+                        transition={{ type: 'spring', stiffness: 140, damping: 24 }}
+                        className={`h-full rounded-full ${subAccent.solidBg}`}
+                      />
+                    </div>
+                  </div>
+
+                  {/* Past results footer */}
+                  <AnimatePresence initial={false}>
+                    {latest && (
+                      <motion.div
+                        key="latest"
+                        initial={{ opacity: 0, height: 0 }}
+                        animate={{ opacity: 1, height: 'auto' }}
+                        exit={{ opacity: 0, height: 0 }}
+                        className="overflow-hidden w-full"
+                      >
+                        <div className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-1 border-t border-border dark:border-white/[0.06] pt-3 text-[10px] text-muted-foreground dark:text-white/45">
+                          <span className="inline-flex items-center gap-1">
+                            <Award size={11} className={pctColor(latest.pct)} />
+                            {label('latestResult')}:
+                            <span className={`font-bold tabular-nums ${pctColor(latest.pct)}`}>
+                              {latest.pct}% ({latest.correct}/{latest.total})
+                            </span>
+                          </span>
+                          <span className="inline-flex items-center gap-1 tabular-nums text-muted-foreground dark:text-white/40">
+                            <Clock size={11} />
+                            {fmtElapsed(latest.elapsedSeconds)} {label('elapsed')}
+                          </span>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+
+                  {/* Hover arrow */}
+                  {isActive && (
+                    <span className={`absolute bottom-5 ${isRTL ? 'left-5' : 'right-5'} text-transparent transition-colors group-hover:text-muted-foreground dark:group-hover:text-white/40`}>
+                      <ForwardArrow size={16} />
+                    </span>
+                  )}
+                </motion.button>
+              );
+            })}
+          </motion.div>
+        )}
+
+        {/* ---------------- Quick start banner ---------------- */}
+        {allQuestions.length > 0 && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ type: 'spring', stiffness: 220, damping: 26, delay: 0.25 }}
+            className="mt-8 flex flex-wrap items-center justify-between gap-4 bg-card dark:bg-white/[0.02] border border-border dark:border-white/[0.06] backdrop-blur-xl rounded-3xl p-6"
+          >
+            <div className="flex items-center gap-3.5">
+              <span className={`flex h-11 w-11 items-center justify-center rounded-2xl ${accent.softBg}`}>
+                <Zap size={20} className={accent.text} />
+              </span>
+              <div>
+                <p className="text-sm font-semibold text-foreground dark:text-white">{label('quickStartTitle')}</p>
+                <p className="text-xs text-muted-foreground dark:text-white/45">{label('quickStartDesc')}</p>
+              </div>
+            </div>
+            <motion.button
+              type="button"
+              whileHover={{ scale: 1.04, transition: { type: 'spring', stiffness: 400, damping: 18 } }}
+              whileTap={{ scale: 0.97 }}
+              onClick={() => onQuickStart(allQuestions)}
+              className={`inline-flex items-center gap-2 rounded-2xl px-5 py-2.5 text-sm font-semibold text-white dark:text-black shadow-lg ${accent.solidBg}`}
+            >
+              {label('startAll')}
+              <ForwardArrow size={16} strokeWidth={2.5} />
+            </motion.button>
+          </motion.div>
+        )}
       </div>
     </div>
   );
 }
+
+export default SubjectSelect;

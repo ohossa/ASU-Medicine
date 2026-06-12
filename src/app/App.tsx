@@ -1816,6 +1816,7 @@ function MainApp() {
           <Suspense fallback={<div>Loading...</div>}>
             <QuestionSearch
               onBack={() => navigateTo('yearSelect')}
+              userButton={customUserButton}
             />
           </Suspense>
         )}
@@ -1825,6 +1826,7 @@ function MainApp() {
           <Suspense fallback={<div>Loading...</div>}>
             <MarksCalculator
               onBack={() => navigateTo('yearSelect')}
+              userButton={customUserButton}
             />
           </Suspense>
         )}

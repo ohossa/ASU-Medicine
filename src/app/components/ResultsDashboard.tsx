@@ -20,6 +20,7 @@ import {
 import type { ChapterData, SubjectData, Question, SubjectColor } from '../types';
 import { subjectStyles, formatTime } from '../types';
 import { useLanguage } from '../context/LanguageContext';
+import { useTheme } from '../context/ThemeContext';
 
 interface Props {
   chapter: ChapterData;
@@ -203,6 +204,7 @@ function ScoreRing({ percentage }: { percentage: number }) {
   const r = 78;
   const circumference = 2 * Math.PI * r; // ≈ 490
   const [offset, setOffset] = useState(circumference);
+  const { isDark } = useTheme();
 
   useEffect(() => {
     const id = window.setTimeout(() => {
@@ -211,12 +213,16 @@ function ScoreRing({ percentage }: { percentage: number }) {
     return () => window.clearTimeout(id);
   }, [percentage, circumference]);
 
-  const ringColor = percentage >= 75 ? '#34d399' : percentage >= 60 ? '#fbbf24' : '#fb7185';
+  const ringColor = isDark
+    ? (percentage >= 75 ? '#34d399' : percentage >= 60 ? '#fbbf24' : '#fb7185')
+    : (percentage >= 75 ? '#10b981' : percentage >= 60 ? '#f59e0b' : '#f43f5e');
+
+  const bgStroke = isDark ? 'rgba(255, 255, 255, 0.07)' : 'rgba(0, 0, 0, 0.04)';
 
   return (
     <div className="relative" style={{ width: 168, height: 168 }}>
       <svg width={168} height={168} className="-rotate-90">
-        <circle cx={84} cy={84} r={r} fill="none" stroke="rgba(255,255,255,0.07)" strokeWidth={12} />
+        <circle cx={84} cy={84} r={r} fill="none" stroke={bgStroke} strokeWidth={12} />
         <circle
           cx={84}
           cy={84}
@@ -231,13 +237,29 @@ function ScoreRing({ percentage }: { percentage: number }) {
         />
       </svg>
       <div className="absolute inset-0 flex flex-col items-center justify-center">
-        <span className="text-4xl font-bold tabular-nums tracking-tight text-white">{percentage}%</span>
-        <span className="mt-1 rounded-full border border-white/[0.1] bg-white/[0.05] px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-white/50">
+        <span className="text-4xl font-bold tabular-nums tracking-tight text-gray-900 dark:text-white">{percentage}%</span>
+        <span className="mt-1 rounded-full border border-gray-200 dark:border-white/[0.1] bg-gray-100/50 dark:bg-white/[0.05] px-2.5 py-0.5 text-[10px] font-semibold uppercase tracking-[0.2em] text-gray-500 dark:text-white/50">
           Score
         </span>
       </div>
     </div>
   );
+}
+
+function getFilterBadgeCls(key: 'all' | 'wrong' | 'flagged', isActive: boolean): string {
+  if (isActive) {
+    return 'bg-white/10 text-white/70 dark:bg-black/10 dark:text-black/70';
+  }
+  switch (key) {
+    case 'all':
+      return 'bg-gray-100 dark:bg-white/10 text-gray-600 dark:text-white/70';
+    case 'wrong':
+      return 'bg-rose-500/10 dark:bg-rose-500/15 text-rose-600 dark:text-rose-400';
+    case 'flagged':
+      return 'bg-amber-500/10 dark:bg-amber-500/15 text-amber-600 dark:text-amber-400';
+    default:
+      return '';
+  }
 }
 
 /* ------------------------------ Main component ----------------------------- */
@@ -257,13 +279,14 @@ export function ResultsDashboard({
 }: Props) {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { t, language } = useLanguage();
+  const { isDark } = useTheme();
   const isRTL = language === 'ar';
 
   const [filter, setFilter] = useState<'all' | 'wrong' | 'flagged'>('all');
   const [openExplanations, setOpenExplanations] = useState<Set<number>>(new Set());
   const [openConcepts, setOpenConcepts] = useState<Set<number>>(new Set());
 
-  const style = subjectStyles[(subject?.color ?? 'blue') as SubjectColor];
+  const style = subjectStyles[(subject?.id ?? 'clinical') as SubjectColor];
 
   /* Score math */
   const correctness = questions.map((q, i) => checkAnswerCorrect(q, answers[i]));
@@ -277,7 +300,13 @@ export function ResultsDashboard({
   const badge = getPerformanceBadge(percentage);
   const gradeLetter = badge.replace('Grade ', '');
   const gradeColor =
-    percentage >= 75 ? 'text-emerald-400' : percentage >= 65 ? 'text-sky-400' : percentage >= 60 ? 'text-amber-400' : 'text-rose-400';
+    percentage >= 75
+      ? 'text-emerald-600 dark:text-emerald-400'
+      : percentage >= 65
+        ? 'text-sky-650 dark:text-sky-400'
+        : percentage >= 60
+          ? 'text-amber-600 dark:text-amber-400'
+          : 'text-rose-600 dark:text-rose-400';
 
   /* Confetti celebration */
   useEffect(() => {
@@ -315,10 +344,10 @@ export function ResultsDashboard({
             key={oi}
             className={`flex items-center gap-3 rounded-xl border px-4 py-3 text-sm transition-colors ${
               isCorrect
-                ? 'border-emerald-500 bg-emerald-500/10 text-emerald-400'
+                ? 'border-emerald-500 bg-emerald-500/10 text-emerald-600 dark:text-emerald-400'
                 : isUserWrong
-                  ? 'border-rose-500 bg-rose-500/10 text-rose-400'
-                  : 'border-white/[0.07] bg-white/[0.02] text-white/50'
+                  ? 'border-rose-500 bg-rose-500/10 text-rose-600 dark:text-rose-400'
+                  : 'border-gray-200 dark:border-white/[0.07] bg-gray-50/30 dark:bg-white/[0.02] text-gray-700 dark:text-white/50'
             }`}
           >
             <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-current/40 text-[11px] font-semibold">
@@ -341,27 +370,27 @@ export function ResultsDashboard({
     return (
       <div className="mt-4 space-y-4">
         <div>
-          <p className="mb-1.5 text-xs font-semibold uppercase tracking-widest text-white/40">Your Answer</p>
+          <p className="mb-1.5 text-xs font-semibold uppercase tracking-widest text-gray-400 dark:text-white/40">Your Answer</p>
           <textarea
             readOnly
             value={ans?.text ?? ans?.draft ?? ''}
             rows={5}
-            className="w-full resize-none rounded-xl border border-white/[0.08] bg-black/30 p-4 text-sm leading-relaxed text-white/80 outline-none"
+            className="w-full resize-none rounded-xl border border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-black/30 p-4 text-sm leading-relaxed text-gray-800 dark:text-white/80 outline-none"
           />
         </div>
         {q.modelAnswer && (
-          <div className="rounded-xl border border-emerald-500/25 bg-emerald-500/[0.06] p-4 text-start">
-            <p className="mb-2 flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-emerald-400">
+          <div className="rounded-xl border border-emerald-500/25 bg-emerald-500/[0.03] dark:bg-emerald-500/[0.06] p-4 text-start">
+            <p className="mb-2 flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-emerald-600 dark:text-emerald-400">
               <CheckCircle2 size={14} /> Reference Model Answer
             </p>
-            <p className="text-sm leading-relaxed text-white/75">{q.modelAnswer}</p>
+            <p className="text-sm leading-relaxed text-gray-700 dark:text-white/75">{q.modelAnswer}</p>
           </div>
         )}
         <span
           className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-xs font-medium ${
             selfGrade === 'correct'
-              ? 'border-emerald-500/40 bg-emerald-500/10 text-emerald-400'
-              : 'border-rose-500/40 bg-rose-500/10 text-rose-400'
+              ? 'border-emerald-500/40 bg-emerald-500/10 text-emerald-600 dark:text-emerald-400'
+              : 'border-rose-500/40 bg-rose-500/10 text-rose-600 dark:text-rose-400'
           }`}
         >
           {selfGrade === 'correct' ? <Check size={13} /> : <X size={13} />}
@@ -378,7 +407,7 @@ export function ResultsDashboard({
 
     return (
       <div className="mt-4 space-y-4">
-        <p className="text-[15px] leading-loose text-white/80 text-start">
+        <p className="text-[15px] leading-loose text-gray-800 dark:text-white/80 text-start">
           {parts.map((part, pi) => (
             <React.Fragment key={pi}>
               {part}
@@ -386,8 +415,8 @@ export function ResultsDashboard({
                 <span
                   className={`mx-1 inline-block rounded-lg border px-3 py-0.5 text-sm font-medium ${
                     isBlankCorrect(q, inputs, pi)
-                      ? 'border-emerald-500/50 bg-emerald-500/10 text-emerald-400'
-                      : 'border-rose-500/50 bg-rose-500/10 text-rose-400 line-through'
+                      ? 'border-emerald-500/50 bg-emerald-500/10 text-emerald-600 dark:text-emerald-400'
+                      : 'border-rose-500/50 bg-rose-500/10 text-rose-600 dark:text-rose-400 line-through'
                   }`}
                 >
                   {inputs[pi]?.trim() || '—'}
@@ -396,18 +425,18 @@ export function ResultsDashboard({
             </React.Fragment>
           ))}
         </p>
-        <div className="rounded-xl border border-white/[0.07] bg-white/[0.02] p-4 text-start">
-          <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-white/40">Answer Key</p>
+        <div className="rounded-xl border border-gray-200 dark:border-white/[0.07] bg-gray-50/50 dark:bg-white/[0.02] p-4 text-start">
+          <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-gray-400 dark:text-white/40">Answer Key</p>
           <ul className="space-y-1.5">
             {blanks.map((b, bi) => (
               <li key={bi} className="flex flex-wrap items-center gap-2 text-sm">
-                <span className="text-white/35 tabular-nums">#{bi + 1}</span>
-                <span className="font-medium text-emerald-400">{b}</span>
+                <span className="text-gray-450 dark:text-white/35 tabular-nums">#{bi + 1}</span>
+                <span className="font-medium text-emerald-600 dark:text-emerald-400">{b}</span>
                 {(q.acceptedAnswers?.[bi]?.length ?? 0) > 0 && (
-                  <span className="text-xs text-white/35">(also: {q.acceptedAnswers![bi].join(', ')})</span>
+                  <span className="text-xs text-gray-400 dark:text-white/35">(also: {q.acceptedAnswers![bi].join(', ')})</span>
                 )}
-                <span className="text-white/30">·</span>
-                <span className={isBlankCorrect(q, inputs, bi) ? 'text-emerald-400/80' : 'text-rose-400/80 line-through'}>
+                <span className="text-gray-300 dark:text-white/30">·</span>
+                <span className={isBlankCorrect(q, inputs, bi) ? 'text-emerald-600/80 dark:text-emerald-400/80' : 'text-rose-650/80 dark:text-rose-400/80 line-through'}>
                   you: {inputs[bi]?.trim() || 'blank'}
                 </span>
               </li>
@@ -432,21 +461,21 @@ export function ResultsDashboard({
             <div
               key={pi}
               className={`grid grid-cols-1 gap-2 rounded-xl border p-3.5 sm:grid-cols-[1fr_auto_1fr] sm:items-center ${
-                rowCorrect ? 'border-emerald-500/40 bg-emerald-500/[0.05]' : 'border-rose-500/40 bg-rose-500/[0.05]'
+                rowCorrect ? 'border-emerald-500/40 bg-emerald-500/[0.03] dark:bg-emerald-500/[0.05]' : 'border-rose-500/40 bg-rose-500/[0.03] dark:bg-rose-500/[0.05]'
               }`}
             >
-              <span className="text-sm text-white/80">{p.premise ?? p.left}</span>
-              <ChevronRight size={15} className={`hidden text-white/30 sm:block ${isRTL ? 'rotate-180' : ''}`} />
+              <span className="text-sm text-gray-800 dark:text-white/80">{p.premise ?? p.left}</span>
+              <ChevronRight size={15} className={`hidden text-gray-450 dark:text-white/30 sm:block ${isRTL ? 'rotate-180' : ''}`} />
               <div className="flex flex-wrap items-center gap-2 text-sm sm:justify-end">
-                <span className={rowCorrect ? 'font-medium text-emerald-400' : 'text-rose-400 line-through'}>
+                <span className={rowCorrect ? 'font-medium text-emerald-650 dark:text-emerald-400' : 'text-rose-650 dark:text-rose-400 line-through'}>
                   {userChoice ?? 'No match'}
                 </span>
                 {rowCorrect ? (
-                  <Check size={14} className="text-emerald-400" />
+                  <Check size={14} className="text-emerald-500 dark:text-emerald-400" />
                 ) : (
                   <>
-                    <X size={14} className="text-rose-400" />
-                    <span className="rounded-md border border-emerald-500/30 bg-emerald-500/10 px-2 py-0.5 text-xs text-emerald-400">
+                    <X size={14} className="text-rose-500 dark:text-rose-400" />
+                    <span className="rounded-md border border-emerald-500/30 bg-emerald-500/10 px-2 py-0.5 text-xs text-emerald-650 dark:text-emerald-400">
                       {target}
                     </span>
                   </>
@@ -462,11 +491,11 @@ export function ResultsDashboard({
   const renderCase = (q: Question, ans: any) => (
     <div className="mt-4 space-y-4">
       {(q.caseText ?? q.description ?? q.text) && (
-        <div className="rounded-xl border border-sky-500/20 bg-sky-500/[0.05] p-4 text-start">
-          <p className="mb-2 flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-sky-300">
+        <div className="rounded-xl border border-sky-500/20 bg-sky-500/[0.03] dark:bg-sky-500/[0.05] p-4 text-start">
+          <p className="mb-2 flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-sky-600 dark:text-sky-300">
             <Activity size={14} /> Clinical Case
           </p>
-          <p className="text-sm leading-relaxed text-white/75">{q.caseText ?? q.description ?? q.text}</p>
+          <p className="text-sm leading-relaxed text-gray-700 dark:text-white/75">{q.caseText ?? q.description ?? q.text}</p>
         </div>
       )}
       {(q.subQuestions ?? []).map((sq: any, si: number) => {
@@ -474,19 +503,19 @@ export function ResultsDashboard({
         const isSubMcq = sq.type === 'mcq';
         const subCorrect = isSubMcq ? userAns === sq.correctIndex : userAns?.selfGrade === 'correct';
         return (
-          <div key={si} className="rounded-xl border border-white/[0.07] bg-white/[0.02] p-4 text-start">
+          <div key={si} className="rounded-xl border border-gray-200 dark:border-white/[0.07] bg-gray-50/30 dark:bg-white/[0.02] p-4 text-start">
             <div className="mb-3 flex items-start justify-between gap-3">
-              <p className="text-sm font-medium text-white/85">
-                <span className="text-white/40">{si + 1}.</span> {sq.text}
+              <p className="text-sm font-medium text-gray-805 dark:text-white/85">
+                <span className="text-gray-400 dark:text-white/40">{si + 1}.</span> {sq.text}
               </p>
               {userAns !== undefined ? (
                 subCorrect ? (
-                  <CheckCircle2 size={17} className="shrink-0 text-emerald-400" />
+                  <CheckCircle2 size={17} className="shrink-0 text-emerald-500 dark:text-emerald-400" />
                 ) : (
-                  <XCircle size={17} className="shrink-0 text-rose-400" />
+                  <XCircle size={17} className="shrink-0 text-rose-500 dark:text-rose-400" />
                 )
               ) : (
-                <span className="text-xs text-white/30 shrink-0 font-medium">Unanswered</span>
+                <span className="text-xs text-gray-400 dark:text-white/30 shrink-0 font-medium">Unanswered</span>
               )}
             </div>
             {isSubMcq && sq.options ? (
@@ -499,10 +528,10 @@ export function ResultsDashboard({
                       key={oi}
                       className={`flex items-center gap-2.5 rounded-lg border px-3 py-2 text-sm ${
                         isCorrect
-                          ? 'border-emerald-500/50 bg-emerald-500/10 text-emerald-400'
+                          ? 'border-emerald-500/50 bg-emerald-500/10 text-emerald-600 dark:text-emerald-400'
                           : isUserWrong
-                            ? 'border-rose-500/50 bg-rose-500/10 text-rose-400'
-                            : 'border-white/[0.06] bg-transparent text-white/45'
+                            ? 'border-rose-500/50 bg-rose-500/10 text-rose-600 dark:text-rose-400'
+                            : 'border-gray-200 dark:border-white/[0.06] bg-transparent text-gray-500 dark:text-white/45'
                       }`}
                     >
                       {isCorrect ? <Check size={13} /> : isUserWrong ? <X size={13} /> : <span className="w-[13px]" />}
@@ -514,14 +543,14 @@ export function ResultsDashboard({
             ) : (
               <div className="space-y-3">
                 <div>
-                  <p className="mb-1 text-[10px] font-bold uppercase tracking-wider text-white/40">Your Answer</p>
-                  <p className="text-sm bg-black/20 rounded-lg p-3 border border-white/[0.05] text-white/85 leading-relaxed whitespace-pre-wrap">
+                  <p className="mb-1 text-[10px] font-bold uppercase tracking-wider text-gray-400 dark:text-white/40">Your Answer</p>
+                  <p className="text-sm bg-gray-100/50 dark:bg-black/20 rounded-lg p-3 border border-gray-200 dark:border-white/[0.05] text-gray-800 dark:text-white/85 leading-relaxed whitespace-pre-wrap">
                     {userAns?.text || 'No answer submitted'}
                   </p>
                 </div>
                 {sq.modelAnswer && (
-                  <div className="rounded-lg border border-emerald-500/15 bg-emerald-500/[0.02] p-3 text-xs leading-relaxed text-white/70">
-                    <span className="font-semibold text-emerald-400 block mb-1">Reference Answer:</span>
+                  <div className="rounded-lg border border-emerald-500/15 bg-emerald-500/[0.01] dark:bg-emerald-500/[0.02] p-3 text-xs leading-relaxed text-gray-650 dark:text-white/70">
+                    <span className="font-semibold text-emerald-600 dark:text-emerald-400 block mb-1">Reference Answer:</span>
                     {sq.modelAnswer}
                   </div>
                 )}
@@ -549,27 +578,27 @@ export function ResultsDashboard({
   /* ---------------------------------- Render --------------------------------- */
 
   return (
-    <div dir={isRTL ? 'rtl' : 'ltr'} className="min-h-screen bg-[#0b0b0c] text-white antialiased" style={{ fontFamily: "'Outfit', 'Manrope', 'Archivo', system-ui, sans-serif" }}>
+    <div dir={isRTL ? 'rtl' : 'ltr'} className="min-h-screen bg-background text-foreground antialiased transition-colors duration-300" style={{ fontFamily: "'Outfit', 'Manrope', 'Archivo', system-ui, sans-serif" }}>
       {/* Ambient glow */}
       <div className="pointer-events-none fixed inset-0 overflow-hidden">
-        <div className="absolute -top-40 start-1/4 h-96 w-96 rounded-full bg-emerald-500/[0.07] blur-[130px]" />
-        <div className="absolute bottom-0 end-1/4 h-96 w-96 rounded-full bg-sky-500/[0.07] blur-[130px]" />
+        <div className="absolute -top-40 start-1/4 h-96 w-96 rounded-full bg-emerald-500/[0.04] dark:bg-emerald-500/[0.07] blur-[130px]" />
+        <div className="absolute bottom-0 end-1/4 h-96 w-96 rounded-full bg-sky-500/[0.04] dark:bg-sky-500/[0.07] blur-[130px]" />
       </div>
 
       {/* ── Section A: Header Banner ───────────────────────────────────────── */}
-      <header className="sticky top-0 z-30 border-b border-white/[0.06] bg-[#0b0b0c]/85 backdrop-blur-xl">
+      <header className="sticky top-0 z-30 border-b border-border bg-background/85 backdrop-blur-xl transition-colors duration-300">
         <div className="mx-auto flex max-w-5xl items-center justify-between gap-3 px-4 py-3.5 sm:px-6">
           <div className="flex min-w-0 items-center gap-3">
             <button
               onClick={onBackToChapters}
               aria-label="Back to chapters"
-              className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-white/[0.08] bg-white/[0.04] transition-colors hover:bg-white/[0.08]"
+              className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.04] text-gray-700 dark:text-white/70 transition-colors hover:bg-gray-100 dark:hover:bg-white/[0.08]"
             >
-              <ArrowLeft size={16} className={`text-white/70 ${isRTL ? 'rotate-180' : ''}`} />
+              <ArrowLeft size={16} className={`text-current ${isRTL ? 'rotate-180' : ''}`} />
             </button>
             <div className="min-w-0">
-              <p className="truncate text-sm font-semibold tracking-tight">{chapter.title}</p>
-              <p className="truncate text-xs text-white/40">
+              <p className="truncate text-sm font-semibold tracking-tight text-gray-900 dark:text-white">{chapter.title}</p>
+              <p className="truncate text-xs text-gray-500 dark:text-white/40">
                 <button onClick={onBackToSubjects} className={`transition-colors hover:underline ${style.text}`}>
                   {subject?.name ?? 'Subjects'}
                 </button>
@@ -585,38 +614,38 @@ export function ResultsDashboard({
         {/* ── Section B: Analytics Summary Grid ────────────────────────────── */}
         <div className="mb-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {/* Circular score */}
-          <div className="flex flex-col items-center justify-center rounded-3xl border border-white/[0.06] bg-white/[0.02] p-6 backdrop-blur-xl">
+          <div className="flex flex-col items-center justify-center rounded-3xl border border-gray-200 dark:border-white/[0.06] bg-card p-6 backdrop-blur-xl transition-colors duration-300">
             <ScoreRing percentage={percentage} />
           </div>
 
           {/* Accuracy */}
-          <div className="flex flex-col justify-center rounded-3xl border border-white/[0.06] bg-white/[0.02] p-6 backdrop-blur-xl">
-            <Award size={20} className="mb-3 text-emerald-400/80" />
-            <p className="text-3xl font-bold tabular-nums tracking-tight">
-              {correctCount} <span className="text-lg font-normal text-white/35">/ {totalCount}</span>
+          <div className="flex flex-col justify-center rounded-3xl border border-gray-200 dark:border-white/[0.06] bg-card p-6 backdrop-blur-xl transition-colors duration-300">
+            <Award size={20} className="mb-3 text-emerald-500 dark:text-emerald-400" />
+            <p className="text-3xl font-bold tabular-nums tracking-tight text-gray-900 dark:text-white">
+              {correctCount} <span className="text-lg font-normal text-gray-400 dark:text-white/35">/ {totalCount}</span>
             </p>
-            <p className="mt-1 text-sm font-medium text-white/70">Accuracy Rating</p>
-            <p className="mt-1 text-xs text-white/40">
+            <p className="mt-1 text-sm font-medium text-gray-700 dark:text-white/70">Accuracy Rating</p>
+            <p className="mt-1 text-xs text-gray-500 dark:text-white/40">
               {percentage >= 85 ? 'Excellent performance!' : percentage >= 65 ? 'Solid work — keep refining.' : percentage >= 60 ? 'Passed — review the misses.' : 'Needs revision. You have this.'}
             </p>
           </div>
 
           {/* Time */}
-          <div className="flex flex-col justify-center rounded-3xl border border-white/[0.06] bg-white/[0.02] p-6 backdrop-blur-xl">
-            <Clock size={20} className="mb-3 text-sky-400/80" />
-            <p className="text-3xl font-bold tabular-nums tracking-tight">{formatTime(elapsedSeconds)}</p>
-            <p className="mt-1 text-sm font-medium text-white/70">Elapsed Time</p>
-            <span className="mt-2 w-fit rounded-full border border-white/[0.08] bg-white/[0.04] px-2.5 py-1 text-[11px] tabular-nums text-white/45">
+          <div className="flex flex-col justify-center rounded-3xl border border-gray-200 dark:border-white/[0.06] bg-card p-6 backdrop-blur-xl transition-colors duration-300">
+            <Clock size={20} className="mb-3 text-sky-500 dark:text-sky-400" />
+            <p className="text-3xl font-bold tabular-nums tracking-tight text-gray-900 dark:text-white">{formatTime(elapsedSeconds)}</p>
+            <p className="mt-1 text-sm font-medium text-gray-700 dark:text-white/70">Elapsed Time</p>
+            <span className="mt-2 w-fit rounded-full border border-gray-200 dark:border-white/[0.08] bg-gray-100/50 dark:bg-white/[0.04] px-2.5 py-1 text-[11px] tabular-nums text-gray-500 dark:text-white/45">
               ~{avgSeconds}s per question
             </span>
           </div>
 
           {/* Grade */}
-          <div className="flex flex-col justify-center rounded-3xl border border-white/[0.06] bg-white/[0.02] p-6 backdrop-blur-xl">
-            <Activity size={20} className="mb-3 text-amber-400/80" />
+          <div className="flex flex-col justify-center rounded-3xl border border-gray-200 dark:border-white/[0.06] bg-card p-6 backdrop-blur-xl transition-colors duration-300">
+            <Activity size={20} className="mb-3 text-amber-500 dark:text-amber-400" />
             <p className={`text-4xl font-bold tracking-tight ${gradeColor}`}>{gradeLetter}</p>
-            <p className="mt-1 text-sm font-medium text-white/70">Course Grade</p>
-            <span className="mt-2 w-fit rounded-full border border-white/[0.08] bg-white/[0.04] px-2.5 py-1 text-[11px] text-white/45">
+            <p className="mt-1 text-sm font-medium text-gray-700 dark:text-white/70">Course Grade</p>
+            <span className="mt-2 w-fit rounded-full border border-gray-200 dark:border-white/[0.08] bg-gray-100/50 dark:bg-white/[0.04] px-2.5 py-1 text-[11px] text-gray-500 dark:text-white/45">
               {getPerformanceLabel(percentage)}
             </span>
           </div>
@@ -626,19 +655,19 @@ export function ResultsDashboard({
         <div className="mb-12 flex flex-wrap items-center justify-center gap-3">
           <button
             onClick={onRetake}
-            className="flex items-center gap-2 rounded-full bg-physiology px-6 py-3 text-sm font-semibold text-white shadow-lg transition-all hover:bg-physiology-dark hover:scale-[1.03] active:scale-[0.98]"
+            className="flex items-center gap-2 rounded-full bg-physiology px-6 py-3 text-sm font-semibold text-white shadow-lg transition-all hover:bg-physiology-dark hover:scale-[1.03] active:scale-[0.98] cursor-pointer"
           >
             <RotateCcw size={15} /> Retake Session
           </button>
           <button
             onClick={onTryAnotherSubject}
-            className="flex items-center gap-2 rounded-full border border-white/[0.1] bg-white/[0.03] px-6 py-3 text-sm font-medium text-white/75 transition-colors hover:bg-white/[0.08]"
+            className="flex items-center gap-2 rounded-full border border-gray-200 dark:border-white/[0.1] bg-gray-50/50 dark:bg-white/[0.03] px-6 py-3 text-sm font-medium text-gray-700 dark:text-white/75 transition-colors hover:bg-gray-100 dark:hover:bg-white/[0.08] cursor-pointer"
           >
             <LayoutGrid size={15} /> Practice Another Topic
           </button>
           <button
             onClick={onBackToChapters}
-            className="flex items-center gap-2 rounded-full border border-white/[0.1] bg-white/[0.03] px-6 py-3 text-sm font-medium text-white/75 transition-colors hover:bg-white/[0.08]"
+            className="flex items-center gap-2 rounded-full border border-gray-200 dark:border-white/[0.1] bg-gray-50/50 dark:bg-white/[0.03] px-6 py-3 text-sm font-medium text-gray-700 dark:text-white/75 transition-colors hover:bg-gray-100 dark:hover:bg-white/[0.08] cursor-pointer"
           >
             Back to Chapters <ArrowRight size={15} className={isRTL ? 'rotate-180' : ''} />
           </button>
@@ -648,31 +677,35 @@ export function ResultsDashboard({
         <div className="mb-6 flex flex-wrap gap-2">
           {(
             [
-              { key: 'all', label: 'All Questions', count: totalCount, badge: 'bg-white/10 text-white/70' },
-              { key: 'wrong', label: 'Incorrect', count: wrongCount, badge: 'bg-rose-500/15 text-rose-400' },
-              { key: 'flagged', label: 'Flagged', count: flaggedCount, badge: 'bg-amber-500/15 text-amber-400' },
+              { key: 'all', label: 'All Questions', count: totalCount },
+              { key: 'wrong', label: 'Incorrect', count: wrongCount },
+              { key: 'flagged', label: 'Flagged', count: flaggedCount },
             ] as const
-          ).map(({ key, label, count, badge: badgeCls }) => (
-            <button
-              key={key}
-              onClick={() => setFilter(key)}
-              className={`flex items-center gap-2 rounded-full border px-4 py-2 text-sm transition-all ${
-                filter === key
-                  ? 'border-white/30 bg-white text-black font-semibold'
-                  : 'border-white/[0.08] bg-white/[0.03] text-white/60 hover:bg-white/[0.07]'
-              }`}
-            >
-              {label}
-              <span className={`rounded-full px-2 py-0.5 text-[11px] font-semibold tabular-nums ${filter === key ? 'bg-black/10 text-black/70' : badgeCls}`}>
-                {count}
-              </span>
-            </button>
-          ))}
+          ).map(({ key, label, count }) => {
+            const isActive = filter === key;
+            const badgeCls = getFilterBadgeCls(key, isActive);
+            return (
+              <button
+                key={key}
+                onClick={() => setFilter(key)}
+                className={`flex items-center gap-2 rounded-full border px-4 py-2 text-sm transition-all cursor-pointer ${
+                  isActive
+                    ? 'border-gray-300 dark:border-white/30 bg-gray-900 dark:bg-white text-white dark:text-black font-semibold shadow-sm'
+                    : 'border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.03] text-gray-650 dark:text-white/60 hover:bg-gray-100 dark:hover:bg-white/[0.07]'
+                }`}
+              >
+                {label}
+                <span className={`rounded-full px-2 py-0.5 text-[11px] font-semibold tabular-nums ${badgeCls}`}>
+                  {count}
+                </span>
+              </button>
+            );
+          })}
         </div>
 
         {/* ── Section E: Detailed Question Review Feed ─────────────────────── */}
         {visible.length === 0 ? (
-          <div className="rounded-3xl border border-white/[0.06] bg-white/[0.02] p-12 text-center text-sm text-white/40">
+          <div className="rounded-3xl border border-gray-200 dark:border-white/[0.06] bg-card p-12 text-center text-sm text-gray-400 dark:text-white/40">
             No questions match this filter.
           </div>
         ) : (
@@ -681,21 +714,21 @@ export function ResultsDashboard({
             const correct = correctness[i];
             const isFlagged = flaggedQuestions.has(i);
             return (
-              <div key={i} className="mb-6 rounded-3xl border border-white/[0.06] bg-white/[0.02] p-6 text-start backdrop-blur-xl">
+              <div key={i} className="mb-6 rounded-3xl border border-gray-200 dark:border-white/[0.06] bg-card p-6 text-start backdrop-blur-xl transition-colors duration-300">
                 {/* Card header */}
                 <div className="mb-4 flex flex-wrap items-center gap-2.5">
-                  <span className="text-sm font-semibold text-white/85">Question {i + 1}</span>
-                  <span className={`rounded-full border px-2.5 py-0.5 text-[11px] font-medium ${style.border} ${style.bg} ${style.text}`}>
+                  <span className="text-sm font-semibold text-gray-900 dark:text-white/85">Question {i + 1}</span>
+                  <span className={`rounded-full border px-2.5 py-0.5 text-[11px] font-medium ${style.borderOp15} ${style.bgOp10} ${style.text}`}>
                     {subject?.name ?? 'General'}
                   </span>
                   {isFlagged && (
-                    <span className="flex items-center gap-1 rounded-full border border-amber-500/40 bg-amber-500/10 px-2.5 py-0.5 text-[11px] font-medium text-amber-400">
-                      <Flag size={11} className="fill-amber-400" /> Flagged
+                    <span className="flex items-center gap-1 rounded-full border border-amber-500/40 bg-amber-500/10 px-2.5 py-0.5 text-[11px] font-medium text-amber-600 dark:text-amber-400">
+                      <Flag size={11} className="fill-amber-500 dark:fill-amber-400" /> Flagged
                     </span>
                   )}
                   <span
                     className={`ms-auto flex items-center gap-1.5 rounded-full px-3 py-1 text-xs font-semibold ${
-                      correct ? 'bg-emerald-500/15 text-emerald-400' : 'bg-rose-500/15 text-rose-400'
+                      correct ? 'bg-emerald-500/10 dark:bg-emerald-500/15 text-emerald-600 dark:text-emerald-400' : 'bg-rose-500/10 dark:bg-rose-500/15 text-rose-600 dark:text-rose-400'
                     }`}
                   >
                     {correct ? <CheckCircle2 size={13} /> : <XCircle size={13} />}
@@ -711,14 +744,14 @@ export function ResultsDashboard({
 
                 {/* Toggle collapsers */}
                 {(q.explanation || q.keyConcept) && (
-                  <div className="mt-5 flex flex-wrap gap-2 border-t border-white/[0.05] pt-4">
+                  <div className="mt-5 flex flex-wrap gap-2 border-t border-gray-200 dark:border-white/[0.05] pt-4">
                     {q.explanation && (
                       <button
                         onClick={() => toggleSet(setOpenExplanations, i)}
-                        className={`flex items-center gap-1.5 rounded-full border px-3.5 py-1.5 text-xs font-medium transition-colors ${
+                        className={`flex items-center gap-1.5 rounded-full border px-3.5 py-1.5 text-xs font-medium transition-colors cursor-pointer ${
                           openExplanations.has(i)
-                            ? 'border-amber-500/40 bg-amber-500/10 text-amber-300'
-                            : 'border-white/[0.08] bg-white/[0.03] text-white/50 hover:bg-white/[0.07]'
+                            ? 'border-amber-500/40 bg-amber-500/10 text-amber-700 dark:text-amber-300'
+                            : 'border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.03] text-gray-500 dark:text-white/50 hover:bg-gray-100 dark:hover:bg-white/[0.07]'
                         }`}
                       >
                         <Lightbulb size={13} /> Explanation
@@ -727,10 +760,10 @@ export function ResultsDashboard({
                     {q.keyConcept && (
                       <button
                         onClick={() => toggleSet(setOpenConcepts, i)}
-                        className={`flex items-center gap-1.5 rounded-full border px-3.5 py-1.5 text-xs font-medium transition-colors ${
+                        className={`flex items-center gap-1.5 rounded-full border px-3.5 py-1.5 text-xs font-medium transition-colors cursor-pointer ${
                           openConcepts.has(i)
-                            ? 'border-sky-500/40 bg-sky-500/10 text-sky-300'
-                            : 'border-white/[0.08] bg-white/[0.03] text-white/50 hover:bg-white/[0.07]'
+                            ? 'border-sky-500/40 bg-sky-500/10 text-sky-700 dark:text-sky-300'
+                            : 'border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.03] text-gray-500 dark:text-white/50 hover:bg-gray-100 dark:hover:bg-white/[0.07]'
                         }`}
                       >
                         <Bookmark size={13} /> Key Concept
@@ -740,19 +773,19 @@ export function ResultsDashboard({
                 )}
 
                 {q.explanation && openExplanations.has(i) && (
-                  <div className="mt-3 rounded-xl border border-amber-500/20 bg-amber-500/[0.05] p-4 transition-all">
-                    <p className="mb-1.5 flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-amber-400">
+                  <div className="mt-3 rounded-xl border border-amber-500/20 bg-amber-500/[0.03] dark:bg-amber-500/[0.05] p-4 transition-all">
+                    <p className="mb-1.5 flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-amber-600 dark:text-amber-400">
                       <Lightbulb size={13} /> Explanation
                     </p>
-                    <p className="text-sm leading-relaxed text-white/75">{q.explanation}</p>
+                    <p className="text-sm leading-relaxed text-gray-700 dark:text-white/75">{q.explanation}</p>
                   </div>
                 )}
                 {q.keyConcept && openConcepts.has(i) && (
-                  <div className="mt-3 rounded-xl border border-sky-500/20 bg-sky-500/[0.05] p-4 transition-all">
-                    <p className="mb-1.5 flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-sky-400">
+                  <div className="mt-3 rounded-xl border border-sky-500/20 bg-sky-500/[0.03] dark:bg-sky-500/[0.05] p-4 transition-all">
+                    <p className="mb-1.5 flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-sky-600 dark:text-sky-400">
                       <Bookmark size={13} /> Key Concept
                     </p>
-                    <p className="text-sm leading-relaxed text-white/75">{q.keyConcept}</p>
+                    <p className="text-sm leading-relaxed text-gray-700 dark:text-white/75">{q.keyConcept}</p>
                   </div>
                 )}
               </div>

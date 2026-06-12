@@ -56,8 +56,7 @@ export default function LoadingScreen({
           initial={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.5, ease: "easeInOut" }}
-          className="fixed inset-0 z-[9999] flex flex-col items-center justify-center"
-          style={{ backgroundColor: "#0b0b0c" }}
+          className="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-background text-foreground"
         >
           {/* Breathing logo mark */}
           <motion.div
