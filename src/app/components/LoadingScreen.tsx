@@ -67,7 +67,7 @@ export default function LoadingScreen({
             <Activity
               size={44}
               strokeWidth={1}
-              className="text-white"
+              className="text-physiology"
               aria-hidden="true"
             />
           </motion.div>
@@ -77,7 +77,7 @@ export default function LoadingScreen({
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 0.15 }}
-            className="text-sm font-extralight uppercase text-white"
+            className="text-sm font-extralight uppercase text-foreground"
             style={{ letterSpacing: "0.45em", textIndent: "0.45em" }}
           >
             ASU Medical Portal
@@ -87,7 +87,7 @@ export default function LoadingScreen({
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.35 }}
-            className="mt-3 text-[11px] font-light text-neutral-500"
+            className="mt-3 text-[11px] font-light text-muted-foreground"
             style={{ letterSpacing: "0.3em", textIndent: "0.3em" }}
           >
             Ain Shams University
@@ -95,12 +95,12 @@ export default function LoadingScreen({
 
           {/* Hairline progress track */}
           <div
-            className="mt-12 w-44 overflow-hidden bg-neutral-800"
+            className="mt-12 w-44 overflow-hidden bg-muted"
             style={{ height: 1 }}
             aria-hidden="true"
           >
             <motion.div
-              className="h-full bg-neutral-400"
+              className="h-full bg-physiology"
               initial={{ width: "0%" }}
               animate={{ width: `${progress}%` }}
               transition={{ ease: "easeOut", duration: 0.3 }}
