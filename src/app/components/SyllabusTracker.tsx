@@ -47,6 +47,10 @@ const ACCENT: Record<SubjectColor, { text: string; softBg: string; solidBg: stri
   pathology:    { text: 'text-pathology',    softBg: 'bg-pathology/15',    solidBg: 'bg-pathology',    border: 'border-pathology/40',    ring: 'ring-pathology/40' },
   pharma:       { text: 'text-pharma',       softBg: 'bg-pharma/15',       solidBg: 'bg-pharma',       border: 'border-pharma/40',       ring: 'ring-pharma/40' },
   clinical:     { text: 'text-clinical',     softBg: 'bg-clinical/15',     solidBg: 'bg-clinical',     border: 'border-clinical/40',     ring: 'ring-clinical/40' },
+  parasitology: { text: 'text-parasitology', softBg: 'bg-parasitology/15', solidBg: 'bg-parasitology', border: 'border-parasitology/40', ring: 'ring-parasitology/40' },
+  psychiatry:   { text: 'text-psychiatry',   softBg: 'bg-psychiatry/15',   solidBg: 'bg-psychiatry',   border: 'border-psychiatry/40',   ring: 'ring-psychiatry/40' },
+  ophthalmology:{ text: 'text-ophthalmology',softBg: 'bg-ophthalmology/15',solidBg: 'bg-ophthalmology',border: 'border-ophthalmology/40',ring: 'ring-ophthalmology/40' },
+  ent:          { text: 'text-ent',          softBg: 'bg-ent/15',          solidBg: 'bg-ent',          border: 'border-ent/40',          ring: 'ring-ent/40' },
 };
 
 /** Optional extra classes coming from the shared subjectStyles map (shape-agnostic, safe access). */
