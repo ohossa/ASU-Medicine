@@ -9,13 +9,16 @@ const STRUCTURE = {
       'IBM-1 [Introduction to Medical Biochemistry]',
       'IHC-1 [Introduction to Histology and Cell Biology]',
       'MIM-1 [Immunology Module]',
-      'MBMG-1 [Molecular Biology and Medical Genetics]'
+      'MBMG-1 [Molecular Biology and Medical Genetics]',
+      'P1-1 [Introduction to ICT and Medical Terminology]'
     ],
     'semester-2': [
       'IPAT-1 [Introduction to Pathology]',
       'IPHA-1 [Introduction to Clinical Pharmacology]',
       'MINF-1 [Infection Module]',
-      'MLS-1 [Locomotor Module]'
+      'MLS-1 [Locomotor Module]',
+      'BLS-HE-1 [Basic Life Support and Clinical Examination]',
+      'P2-1 [Presentation Skills - Learning Skills - Time Management]'
     ]
   },
   'year-2': {
@@ -27,25 +30,32 @@ const STRUCTURE = {
     'semester-2': [
       'MCNS-2 [Central Nervous System]',
       'MSS-2 [Special Senses]',
-      'MEM-2 [Endocrine System and Metabolism]'
+      'MEM-2 [Endocrine System and Metabolism]',
+      'P3-2 [Behavioral science]',
+      'R-2 [Fundamentals of Research]'
     ]
   },
   'year-3': {
     'semester-1': [
       'MGL-3 [GIT and Liver]',
-      'MUG-3 [Urogenital System]'
+      'MUG-3 [Urogenital System]',
+      'P4-3 [Medical Ethics]',
+      'P5-3 [Doctor-Patient Communication]'
     ],
     'semester-2': [
       'CEO-3 [Community Environmental and Occupational Medicine]',
       'FT-3 [Forensic Medicine and Clinical Toxicology]',
       'ORL-3 [Otorhinolaryngology]',
-      'MED1-3 [Foundation of Internal Medicine]'
+      'MED1-3 [Foundation of Internal Medicine]',
+      'P6-3 [Leadership skills and Management skills]',
+      'R-3 [Scientific Research]'
     ]
   },
   'year-4': {
     'semester-1': [
       'MED2-4 [General and Special Internal Medicine 1]',
-      'FAM-4 [Family Medicine]'
+      'FAM-4 [Family Medicine]',
+      'P7-4 [Communication within a Medical Team]'
     ],
     'semester-2': [
       'MED3-4 [General and Special Internal Medicine 2]',

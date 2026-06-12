@@ -1,4 +1,5 @@
 import { createContext, useContext, useEffect, useState } from 'react';
+import { triggerCloudSync } from '../hooks/useCloudSync';
 
 interface ThemeContextType {
   isDark: boolean;
@@ -21,14 +22,27 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   });
 
   useEffect(() => {
+    const prev = localStorage.getItem('theme');
+    const next = isDark ? 'dark' : 'light';
     if (isDark) {
       document.documentElement.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
     } else {
       document.documentElement.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
+    }
+    localStorage.setItem('theme', next);
+    if (prev !== next) {
+      triggerCloudSync();
     }
   }, [isDark]);
+
+  useEffect(() => {
+    const handleStorageChange = () => {
+      const pref = localStorage.getItem('theme');
+      setIsDark(pref !== 'light');
+    };
+    window.addEventListener('storage', handleStorageChange);
+    return () => window.removeEventListener('storage', handleStorageChange);
+  }, []);
 
   return (
     <ThemeContext.Provider value={{ isDark, toggleTheme: () => setIsDark((d) => !d) }}>

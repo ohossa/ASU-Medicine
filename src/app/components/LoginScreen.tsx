@@ -77,7 +77,7 @@ const FEATURES = [
 export function LoginScreen() {
   return (
     <main
-      className="relative min-h-screen overflow-hidden antialiased bg-background"
+      className="relative min-h-screen overflow-hidden antialiased"
     >
       {/* Single ambient light source behind the card */}
       <div

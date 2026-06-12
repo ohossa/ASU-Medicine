@@ -175,7 +175,7 @@ export function QuestionSearch({ onBack, userButton }: QuestionSearchProps) {
 
   return (
     <div
-      className="min-h-screen w-full text-foreground bg-background antialiased transition-colors duration-300"
+      className="min-h-screen w-full text-foreground antialiased transition-colors duration-300"
       style={{ fontFamily: "-apple-system, 'SF Pro Text', Inter, sans-serif" }}
     >
       {/* ---------- Sticky header ---------- */}

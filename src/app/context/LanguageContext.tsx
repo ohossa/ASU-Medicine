@@ -1,4 +1,5 @@
 import { createContext, useContext, useEffect, useState } from 'react';
+import { triggerCloudSync } from '../hooks/useCloudSync';
 
 type Language = 'en' | 'ar';
 
@@ -330,14 +331,27 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   });
 
   useEffect(() => {
+    const prev = localStorage.getItem('language');
     document.documentElement.dir = 'ltr';
     document.documentElement.lang = language;
     try {
       localStorage.setItem('language', language);
+      if (prev !== language) {
+        triggerCloudSync();
+      }
     } catch (e) {
       console.error(e);
     }
   }, [language]);
+
+  useEffect(() => {
+    const handleStorageChange = () => {
+      const pref = localStorage.getItem('language');
+      setLanguage(pref === 'ar' ? 'ar' : 'en');
+    };
+    window.addEventListener('storage', handleStorageChange);
+    return () => window.removeEventListener('storage', handleStorageChange);
+  }, []);
 
   const toggleLanguage = () => {
     setLanguage((prev) => (prev === 'en' ? 'ar' : 'en'));

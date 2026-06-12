@@ -331,7 +331,7 @@ export function ChapterSelect({
     d ? d.toLocaleDateString(isRTL ? 'ar' : 'en', { month: 'short', day: 'numeric' }) : '—';
 
   return (
-    <div dir={isRTL ? 'rtl' : 'ltr'} className="relative min-h-screen overflow-hidden bg-background text-foreground">
+    <div dir={isRTL ? 'rtl' : 'ltr'} className="relative min-h-screen overflow-hidden text-foreground">
       {/* Self-contained animations (framer-motion intentionally not imported) */}
       <style>{`
         @keyframes cs-fade-up { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
@@ -351,16 +351,7 @@ export function ChapterSelect({
         }
       `}</style>
 
-      {/* Background grid + floating blobs */}
-      <div
-        aria-hidden
-        className="pointer-events-none absolute inset-0 animate-fade-in"
-        style={{
-          backgroundImage: 'radial-gradient(circle, currentColor 1px, transparent 1px)',
-          backgroundSize: '20px 20px',
-          opacity: 0.04,
-        }}
-      />
+
       <div aria-hidden className="cs-blob-a pointer-events-none absolute -top-40 -left-40 h-[480px] w-[480px] rounded-full bg-gradient-radial from-physiology/4 to-transparent blur-3xl" />
       <div aria-hidden className="cs-blob-b pointer-events-none absolute -bottom-40 -right-40 h-[480px] w-[480px] rounded-full bg-gradient-radial from-anatomy/4 to-transparent blur-3xl" />
 

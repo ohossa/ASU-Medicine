@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "meta": {
+    "moduleCode": "R-2",
+    "moduleName": "Fundamentals of Research",
+    "year": 2,
+    "semester": 2,
+    "creditPoints": 3,
+    "totalMarks": 60,
+    "keywords": ["research", "fundamentals", "research methodology", "biostatistics", "fundamentals of research"]
+  },
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Introduction",
+      "subtitle": "Overview of research principles, types of medical research, and scope",
+      "emoji": "🔍",
+      "page": 4,
+      "lectureRange": "Lecture 1",
+      "subjects": []
+    },
+    {
+      "id": 2,
+      "title": "Research question and hypothesis",
+      "subtitle": "Formulating research questions, objectives, and testable hypotheses",
+      "emoji": "💡",
+      "page": 7,
+      "lectureRange": "Lecture 2",
+      "subjects": []
+    },
+    {
+      "id": 3,
+      "title": "Epidemiological studies and causality",
+      "subtitle": "Observational and experimental study designs, cohort, case-control, and causality",
+      "emoji": "📈",
+      "page": 13,
+      "lectureRange": "Lecture 3",
+      "subjects": []
+    },
+    {
+      "id": 4,
+      "title": "Sampling",
+      "subtitle": "Sampling techniques, probability vs. non-probability sampling, and sample size selection",
+      "emoji": "🎲",
+      "page": 41,
+      "lectureRange": "Lecture 4",
+      "subjects": []
+    },
+    {
+      "id": 5,
+      "title": "Sources of data and questionnaire",
+      "subtitle": "Primary and secondary data sources, questionnaire design, and data collection methods",
+      "emoji": "📝",
+      "page": 53,
+      "lectureRange": "Lecture 5",
+      "subjects": []
+    },
+    {
+      "id": 6,
+      "title": "Bias and confounding",
+      "subtitle": "Identifying and controlling selection bias, information bias, and confounding factors",
+      "emoji": "⚠️",
+      "page": 66,
+      "lectureRange": "Lecture 6",
+      "subjects": []
+    },
+    {
+      "id": 7,
+      "title": "Research ethics",
+      "subtitle": "Ethical codes, informed consent, institutional review boards (IRBs), and patient rights",
+      "emoji": "🛡️",
+      "page": 71,
+      "lectureRange": "Lecture 7",
+      "subjects": []
+    },
+    {
+      "id": 8,
+      "title": "Citation and plagiarism",
+      "subtitle": "Referencing styles, academic integrity, and avoiding plagiarism in scientific writing",
+      "emoji": "📚",
+      "page": 78,
+      "lectureRange": "Lecture 8",
+      "subjects": []
+    },
+    {
+      "id": 9,
+      "title": "Protocol writing",
+      "subtitle": "Structure and components of a research protocol and proposal writing",
+      "emoji": "📋",
+      "page": 82,
+      "lectureRange": "Lecture 9",
+      "subjects": []
+    },
+    {
+      "id": 10,
+      "title": "Descriptive statistics",
+      "subtitle": "Measures of central tendency, dispersion, normal distribution, and descriptive data summary",
+      "emoji": "📊",
+      "page": 87,
+      "lectureRange": "Lecture 10",
+      "subjects": []
+    },
+    {
+      "id": 11,
+      "title": "Data presentation",
+      "subtitle": "Methods of presenting data using tables, charts, graphs, and frequency distributions",
+      "emoji": "🎨",
+      "page": 96,
+      "lectureRange": "Lecture 11",
+      "subjects": []
+    }
+  ]
+}

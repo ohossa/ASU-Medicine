@@ -2,7 +2,7 @@ import { readdir, readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 
 // Re-defining internal types to avoid build/import path resolution issues in TS execution
-type SubjectColor = 'anatomy' | 'histology' | 'physiology' | 'biochem' | 'microbiology' | 'pathology' | 'pharma' | 'clinical';
+type SubjectColor = 'anatomy' | 'histology' | 'physiology' | 'biochem' | 'microbiology' | 'pathology' | 'pharma' | 'clinical' | 'parasitology' | 'psychiatry' | 'ophthalmology' | 'ent';
 type QuestionType = 'mcq' | 'truefalse' | 'matching' | 'essay' | 'case' | 'fillblank';
 
 interface ModuleMeta {
@@ -74,7 +74,11 @@ const ALLOWED_SUBJECTS: Set<SubjectColor> = new Set([
   'microbiology',
   'pathology',
   'pharma',
-  'clinical'
+  'clinical',
+  'parasitology',
+  'psychiatry',
+  'ophthalmology',
+  'ent'
 ]);
 
 export function validateModuleFile(bank: QuestionBankFile): string[] {

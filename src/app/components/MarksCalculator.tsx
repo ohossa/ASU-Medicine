@@ -381,7 +381,7 @@ export function MarksCalculator({ onBack, userButton }: { onBack: () => void; us
   /* ---------------------------------- Render --------------------------------- */
 
   return (
-    <div className="min-h-screen bg-background text-foreground antialiased selection:bg-sky-500/30 transition-colors duration-300">
+    <div className="min-h-screen text-foreground antialiased selection:bg-sky-500/30 transition-colors duration-300">
       {/* Ambient glow background */}
       <div className="pointer-events-none fixed inset-0 overflow-hidden">
         <div className="absolute -top-40 left-1/4 h-96 w-96 rounded-full bg-sky-500/10 blur-[120px]" />

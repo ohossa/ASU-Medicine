@@ -168,10 +168,17 @@ export function SyllabusTracker({ moduleCode, moduleName, chapters, onClose }: P
     return () => window.removeEventListener('keydown', onKey);
   }, [onClose]);
 
-  /* Multi-tab support */
+  /* Multi-tab support & Cloud sync update support */
   useEffect(() => {
-    const onStorage = (e: StorageEvent) => {
-      if (e.key === storageKey) setData(hydrate(e.newValue));
+    const onStorage = (e: Event) => {
+      if ('key' in e) {
+        const se = e as StorageEvent;
+        if (se.key === storageKey) {
+          setData(hydrate(se.newValue));
+        }
+      } else {
+        setData(hydrate(localStorage.getItem(storageKey)));
+      }
     };
     window.addEventListener('storage', onStorage);
     return () => window.removeEventListener('storage', onStorage);

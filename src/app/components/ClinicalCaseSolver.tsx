@@ -11,7 +11,7 @@ import {
 /* ================================ Theme ================================== */
 
 const T = {
-  bg: "#0b0b0c",
+  bg: "transparent",
   glass: "rgba(18,18,20,0.55)",
   glassBorder: "1px solid rgba(255,255,255,0.08)",
   hairline: "1px solid rgba(255,255,255,0.06)",

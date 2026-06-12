@@ -1,0 +1,1489 @@
+{
+  "schemaVersion": 1,
+  "meta": {
+    "moduleCode": "P3-2",
+    "moduleName": "Behavioral science",
+    "year": 2,
+    "semester": 2,
+    "creditPoints": 1.5,
+    "totalMarks": 30,
+    "keywords": [
+      "behavioral",
+      "science",
+      "psychology",
+      "psychiatry",
+      "behavioral science"
+    ]
+  },
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Introduction to Psychology",
+      "subtitle": "Foundations, schools of thought, and methods of psychological study",
+      "emoji": "🧠",
+      "page": 1,
+      "lectureRange": "Lecture 1",
+      "subjects": []
+    },
+    {
+      "id": 2,
+      "title": "Basics of research methodology",
+      "subtitle": "Principles of scientific investigation and research design",
+      "emoji": "📊",
+      "page": 5,
+      "lectureRange": "Lecture 2",
+      "subjects": []
+    },
+    {
+      "id": 3,
+      "title": "Brain Structures and their Functions",
+      "subtitle": "Neurobiological basis of behavior and neuroanatomy",
+      "emoji": "🧬",
+      "page": 10,
+      "lectureRange": "Lecture 3",
+      "subjects": []
+    },
+    {
+      "id": 4,
+      "title": "Developmental Psychology",
+      "subtitle": "Psychological growth and development across the lifespan",
+      "emoji": "👶",
+      "page": 15,
+      "lectureRange": "Lecture 4",
+      "subjects": [
+        {
+          "id": "clinical",
+          "name": "Clinical",
+          "iconName": "Stethoscope",
+          "lectures": "Lecture 4",
+          "lectureCount": 1,
+          "questions": [
+            {
+              "id": "P32-CH4-CLIN-0001",
+              "type": "mcq",
+              "lecture": 4,
+              "text": "Kohlberg identified the three levels of moral development as the:",
+              "explanation": "Kohlberg’s three levels are: preconventional (self‑interest), conventional (social rules), and postconventional (abstract principles).",
+              "keyConcept": "Kohlberg's levels: preconventional (self), conventional (social), postconventional (principles).",
+              "options": [
+                "Preconventional, conventional, and postconventional",
+                "Conditional, unconditional, and postconditional",
+                "Self‑interested, social, and personal",
+                "Premoral, conventional, and posttechnical"
+              ],
+              "correctIndex": 0,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH4-CLIN-0002",
+              "type": "mcq",
+              "lecture": 4,
+              "text": "A toddler learning to use the toilet who sometimes feels bad when he or she \"messes up\" is at Erikson's stage called:",
+              "explanation": "Erikson’s second stage (ages ~1–3) centers on developing independence; toilet training is a key task, and failure leads to shame/doubt.",
+              "keyConcept": "Autonomy vs. shame/doubt is Erikson's second stage (1-3 years).",
+              "options": [
+                "Identity versus role confusion",
+                "Initiative versus guilt",
+                "Autonomy versus shame and doubt",
+                "Intimacy versus isolation"
+              ],
+              "correctIndex": 2,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH4-CLIN-0003",
+              "type": "mcq",
+              "lecture": 4,
+              "text": "Which represents the correct order of Piaget's stages of intellectual development?",
+              "explanation": "Piaget’s correct sequence: sensorimotor (0–2), preoperational (2–7), concrete operational (7–11), formal operational (12+).",
+              "keyConcept": "Piaget's sequence: sensorimotor, preoperational, concrete operational, formal operational.",
+              "options": [
+                "Sensorimotor, concrete operational, formal operational, post operational",
+                "Preoperational, concrete operational, formal operational, sensorimotor",
+                "Sensorimotor, preoperational, concrete operational, formal operational",
+                "Preoperational, informal operational, formal operational, post operational"
+              ],
+              "correctIndex": 2,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH4-CLIN-0004",
+              "type": "mcq",
+              "lecture": 4,
+              "text": "According to Jean Piaget’s cognitive development theory, the concrete operational stage is characterized by:",
+              "explanation": "Concrete operational stage (ages 7–11) features conservation, logical thinking about concrete events, and understanding relationships.",
+              "keyConcept": "Concrete operational stage features conservation and logical thinking about concrete events.",
+              "options": [
+                "Symbolic thinking",
+                "Grasping concepts of conservation of mass and understanding relations",
+                "Forming hypotheses and systematically testing them",
+                "Occurring in ages from 2 to 7 years old"
+              ],
+              "correctIndex": 1,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH4-CLIN-0005",
+              "type": "mcq",
+              "lecture": 4,
+              "text": "In moral development, conventional conformity means:",
+              "explanation": "At the conventional level’s “good boy/good girl” orientation, behavior is driven by a desire to gain approval and avoid disapproval from others.",
+              "keyConcept": "Conventional conformity is driven by desire for approval and avoidance of disapproval.",
+              "options": [
+                "The individual behaves appropriately to avoid punishment",
+                "The individual behaves appropriately to avoid disapproval by others",
+                "The individual behaves appropriately to receive a reward",
+                "The individual behaves appropriately to respect rules and laws"
+              ],
+              "correctIndex": 1,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH4-CLIN-0006",
+              "type": "mcq",
+              "lecture": 4,
+              "text": "Which of the following most clearly demonstrates the existence of emotional attachment?",
+              "explanation": "Separation anxiety (distress when separated from a primary caregiver) is a strong indicator of an emotional attachment bond.",
+              "keyConcept": "Separation anxiety is a strong indicator of emotional attachment.",
+              "options": [
+                "Separation anxiety",
+                "Learning to walk",
+                "Imprinting",
+                "Language development"
+              ],
+              "correctIndex": 0,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH4-CLIN-0007",
+              "type": "mcq",
+              "lecture": 4,
+              "text": "A child is largely nonverbal, is learning to coordinate purposeful movements with sense information, and is developing the concept of object permanence. The child is in Piaget’s stage:",
+              "explanation": "Sensorimotor stage (birth–2 years) includes development of object permanence, coordination of sensory input with motor actions, and pre‑language communication.",
+              "keyConcept": "Sensorimotor stage (0-2 years) includes object permanence and sensory-motor coordination.",
+              "options": [
+                "Sensorimotor",
+                "Preoperational",
+                "Concrete operational",
+                "Formal operations"
+              ],
+              "correctIndex": 0,
+              "modelAnswer": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Personality",
+      "subtitle": "Theories of personality development, traits, and assessments",
+      "emoji": "👤",
+      "page": 20,
+      "lectureRange": "Lecture 5",
+      "subjects": [
+        {
+          "id": "clinical",
+          "name": "Clinical",
+          "iconName": "Stethoscope",
+          "lectures": "Lecture 5",
+          "lectureCount": 1,
+          "questions": [
+            {
+              "id": "P32-CH5-CLIN-0001",
+              "type": "mcq",
+              "lecture": 5,
+              "text": "Maslow called the higher needs:",
+              "explanation": "Maslow distinguished lower deficiency needs (physiological, safety, belonging, esteem) from higher growth/being needs (self-actualization, transcendence).",
+              "keyConcept": "Maslow's higher needs are growth/being needs (self-actualization, transcendence).",
+              "options": [
+                "Biological needs",
+                "Deficit or deficiency needs",
+                "Satisfaction needs",
+                "Growth or being needs"
+              ],
+              "correctIndex": 3,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH5-CLIN-0002",
+              "type": "mcq",
+              "lecture": 5,
+              "text": "The humanistic theory of personality proposed by Carl Rogers is called:",
+              "explanation": "Rogers developed client-centered (or person-centered) therapy, which emphasizes unconditional positive regard, empathy, and congruence.",
+              "keyConcept": "Rogers developed client-centered therapy emphasizing unconditional positive regard.",
+              "options": [
+                "Client-centered approach",
+                "Construct revision approach",
+                "Fixed role approach",
+                "Rational-emotive approach"
+              ],
+              "correctIndex": 0,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH5-CLIN-0003",
+              "type": "mcq",
+              "lecture": 5,
+              "text": "According to Freud, the id is governed by the:",
+              "explanation": "The id operates on the pleasure principle, seeking immediate gratification of instincts and avoiding pain.",
+              "keyConcept": "The id operates on the pleasure principle, seeking immediate gratification.",
+              "options": [
+                "Pleasure principle",
+                "Reality principle",
+                "Ego ideal",
+                "Creature comfort principle"
+              ],
+              "correctIndex": 0,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH5-CLIN-0004",
+              "type": "mcq",
+              "lecture": 5,
+              "text": "A defining characteristic of traits is that they are:",
+              "explanation": "Traits are stable, enduring patterns of behavior, thought, and emotion that persist across time and situations.",
+              "keyConcept": "Traits are stable, enduring patterns of behavior.",
+              "options": [
+                "Biological and fixed",
+                "Observed",
+                "Evaluative",
+                "Enduring"
+              ],
+              "correctIndex": 3,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH5-CLIN-0005",
+              "type": "mcq",
+              "lecture": 5,
+              "text": "The humanistic viewpoint emphasizes which of the following?",
+              "explanation": "Humanism focuses on conscious experience, free will, personal growth, and the drive toward self-actualization.",
+              "keyConcept": "Humanism focuses on free will, personal growth, and self-actualization.",
+              "options": [
+                "Free will, self-image, and self-actualization",
+                "Determinism, the unconscious and biological drives",
+                "Natural selection and practical skills",
+                "The idea that \"the environment is the key causal matrix\""
+              ],
+              "correctIndex": 0,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH5-CLIN-0006",
+              "type": "mcq",
+              "lecture": 5,
+              "text": "Which of the following is an unconscious personality structure made up of the reality self, responsible for compromising and maintaining harmony?",
+              "explanation": "The ego mediates between the id’s impulses and the superego’s demands, operating on the reality principle to maintain balance.",
+              "keyConcept": "The ego mediates between id and superego, operating on reality principle.",
+              "options": [
+                "Superego",
+                "Id",
+                "Ego",
+                "Subconscious"
+              ],
+              "correctIndex": 2,
+              "modelAnswer": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Psychology of Learning",
+      "subtitle": "Classical, operant conditioning, and cognitive learning theories",
+      "emoji": "🏫",
+      "page": 25,
+      "lectureRange": "Lecture 6",
+      "subjects": [
+        {
+          "id": "clinical",
+          "name": "Clinical",
+          "iconName": "Stethoscope",
+          "lectures": "Lecture 6",
+          "lectureCount": 1,
+          "questions": [
+            {
+              "id": "P32-CH6-CLIN-0001",
+              "type": "mcq",
+              "lecture": 6,
+              "text": "Pavlov is famous for his work in:",
+              "explanation": "Pavlov’s experiments with dogs demonstrated that a neutral stimulus (bell) could come to elicit a salivation response after pairing with food – the foundation of classical conditioning.",
+              "keyConcept": "Pavlov discovered classical conditioning through salivation experiments.",
+              "options": [
+                "Contingent conditioning",
+                "Operant conditioning",
+                "Classical conditioning",
+                "Oppositional conditioning"
+              ],
+              "correctIndex": 2,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH6-CLIN-0002",
+              "type": "mcq",
+              "lecture": 6,
+              "text": "A bakery gives customers a free pastry after every 6 pastry purchases. This is an example of what kind of reinforcement schedule?",
+              "explanation": "Reinforcement occurs after a fixed number of responses (6 purchases) – that is a fixed-ratio schedule.",
+              "keyConcept": "Fixed-ratio schedule reinforces after a set number of responses.",
+              "options": [
+                "Fixed interval",
+                "Fixed ratio",
+                "Variable interval",
+                "Variable ratio"
+              ],
+              "correctIndex": 1,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH6-CLIN-0003",
+              "type": "mcq",
+              "lecture": 6,
+              "text": "In classical conditioning, UR and CR are:",
+              "explanation": "The unconditioned response (UR) and conditioned response (CR) are typically the same or very similar behavior (e.g., salivation to food and to bell).",
+              "keyConcept": "UR and CR are typically the same or similar behavior.",
+              "options": [
+                "Opposite behaviours",
+                "The same behavior",
+                "The result of extinction",
+                "The same stimulus"
+              ],
+              "correctIndex": 1,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH6-CLIN-0004",
+              "type": "mcq",
+              "lecture": 6,
+              "text": "Giving a student extra homework after they misbehave in class is an example of:",
+              "explanation": "Adding an aversive stimulus (extra homework) to decrease a behavior is positive punishment.",
+              "keyConcept": "Positive punishment adds an aversive stimulus to decrease behavior.",
+              "options": [
+                "Positive punishment",
+                "Negative punishment",
+                "Positive reinforcement",
+                "Negative reinforcement"
+              ],
+              "correctIndex": 0,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH6-CLIN-0005",
+              "type": "mcq",
+              "lecture": 6,
+              "text": "After being bitten by a big dog, Ahmed was scared of other big dogs but he was not scared of little dogs. This pattern demonstrates:",
+              "explanation": "Ahmed discriminates between big dogs (feared) and little dogs (not feared), responding differently to similar but distinct stimuli.",
+              "keyConcept": "Discrimination is responding differently to distinct stimuli.",
+              "options": [
+                "Shaping",
+                "Generalization",
+                "Discrimination",
+                "Latent learning"
+              ],
+              "correctIndex": 2,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH6-CLIN-0006",
+              "type": "mcq",
+              "lecture": 6,
+              "text": "Positive reinforcement ______ the likelihood of a behaviour, and negative reinforcement ______ the likelihood of behaviour.",
+              "explanation": "Both positive reinforcement (adding a reward) and negative reinforcement (removing an aversive stimulus) increase the likelihood of a behavior.",
+              "keyConcept": "Both positive and negative reinforcement increase behavior likelihood.",
+              "options": [
+                "Increases, increases",
+                "Decreases, decreases",
+                "Increases, decreases",
+                "Decreases, increases"
+              ],
+              "correctIndex": 0,
+              "modelAnswer": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Attention & Perception",
+      "subtitle": "Cognitive processing of sensory information and focus",
+      "emoji": "👁️",
+      "page": 30,
+      "lectureRange": "Lecture 7",
+      "subjects": [
+        {
+          "id": "clinical",
+          "name": "Clinical",
+          "iconName": "Stethoscope",
+          "lectures": "Lecture 7",
+          "lectureCount": 1,
+          "questions": [
+            {
+              "id": "P32-CH7-CLIN-0001",
+              "type": "mcq",
+              "lecture": 7,
+              "text": "An imaginary perception, such as seeing, hearing, or smelling something that does not exist in the external world is called a(n):",
+              "explanation": "A hallucination is a sensory perception without an external stimulus. (A delusion is a false belief.)",
+              "keyConcept": "Hallucination is sensory perception without external stimulus.",
+              "options": [
+                "Illusion",
+                "Hallucination",
+                "Stroboscopic movement",
+                "Muller‑Lyer illusion",
+                "Delusion"
+              ],
+              "correctIndex": 1,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH7-CLIN-0002",
+              "type": "mcq",
+              "lecture": 7,
+              "text": "Television advertisements that are in black and white are just trying to take advantage of which attention getting technique?",
+              "explanation": "Black‑and‑white ads use contrast (light vs. dark, absence of color) to stand out and capture attention.",
+              "keyConcept": "Contrast (light/dark) captures attention.",
+              "options": [
+                "Loudness",
+                "Motion",
+                "Contrast",
+                "Repetition",
+                "Modeling"
+              ],
+              "correctIndex": 2,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH7-CLIN-0003",
+              "type": "mcq",
+              "lecture": 7,
+              "text": "Illusions are:",
+              "explanation": "Illusions are misperceptions of real external stimuli (e.g., the Müller‑Lyer illusion), not creations from nothing.",
+              "keyConcept": "Illusions are misperceptions of real external stimuli.",
+              "options": [
+                "Distortions of existing stimuli",
+                "The same as hallucinations",
+                "The result of innate mechanisms",
+                "Not based on external reality",
+                "In subjective space"
+              ],
+              "correctIndex": 0,
+              "modelAnswer": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Psychology of Memory",
+      "subtitle": "Encoding, storage, retrieval, and forgetting mechanisms",
+      "emoji": "💾",
+      "page": 35,
+      "lectureRange": "Lecture 8",
+      "subjects": [
+        {
+          "id": "clinical",
+          "name": "Clinical",
+          "iconName": "Stethoscope",
+          "lectures": "Lecture 8",
+          "lectureCount": 1,
+          "questions": [
+            {
+              "id": "P32-CH8-CLIN-0001",
+              "type": "mcq",
+              "lecture": 8,
+              "text": "The definition of memory is that it is an active system that receives, organizes, and:",
+              "explanation": "Memory involves three processes: encoding (receiving), storage (holding), and retrieval.",
+              "keyConcept": "Memory involves encoding, storage, and retrieval.",
+              "options": [
+                "Stores information",
+                "Decays information",
+                "Filters all incoming information",
+                "Discards old information"
+              ],
+              "correctIndex": 0,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH8-CLIN-0002",
+              "type": "mcq",
+              "lecture": 8,
+              "text": "The first step in placing information into memory storage is:",
+              "explanation": "Sensory memory (iconic/echoic) holds raw sensory input very briefly before further processing.",
+              "keyConcept": "Sensory memory holds raw input briefly before processing.",
+              "options": [
+                "Mnemonic memory",
+                "Short‑term memory",
+                "Sensory memory",
+                "Rehearsal"
+              ],
+              "correctIndex": 2,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH8-CLIN-0003",
+              "type": "mcq",
+              "lecture": 8,
+              "text": "Procedural memory, unlike declarative memory, is responsible for:",
+              "explanation": "Procedural memory (implicit memory) stores how to perform skills and habits (“knowing how”).",
+              "keyConcept": "Procedural memory stores skills and habits ('knowing how').",
+              "options": [
+                "Records facts",
+                "Preserves images",
+                "Includes sounds and smells",
+                "Involves the hippocampus",
+                "Involves sequences or routines"
+              ],
+              "correctIndex": 4,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH8-CLIN-0004",
+              "type": "mcq",
+              "lecture": 8,
+              "text": "Why are mnemonic devices effective?",
+              "explanation": "Mnemonics improve encoding by organizing information and providing retrieval cues, often through rehearsal.",
+              "keyConcept": "Mnemonics improve encoding through organization and rehearsal.",
+              "options": [
+                "To remember material, you must first pay attention to it",
+                "Memory depends on the strategy of memory organization and how often it is rehearsed",
+                "Memory depends on retrieval strategies",
+                "They stir up emotions"
+              ],
+              "correctIndex": 1,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH8-CLIN-0005",
+              "type": "mcq",
+              "lecture": 8,
+              "text": "The process of holding information in memory is referred to as:",
+              "explanation": "Storage is the retention of encoded information over time.",
+              "keyConcept": "Storage is retention of encoded information.",
+              "options": [
+                "Retrieval",
+                "Encoding",
+                "Storage",
+                "Organization"
+              ],
+              "correctIndex": 2,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH8-CLIN-0006",
+              "type": "mcq",
+              "lecture": 8,
+              "text": "The storage capacity of long‑term memory is best described as:",
+              "explanation": "Long‑term memory is considered to have virtually unlimited capacity; we never “fill it up.”",
+              "keyConcept": "Long-term memory has virtually unlimited capacity.",
+              "options": [
+                "A single item",
+                "About seven items",
+                "About seven volumes",
+                "Limitless"
+              ],
+              "correctIndex": 3,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH8-CLIN-0007",
+              "type": "mcq",
+              "lecture": 8,
+              "text": "The inability to recall events preceding an accident involving injuries to the head is called:",
+              "explanation": "Retrograde amnesia is loss of memory for events that occurred before the trauma or injury.",
+              "keyConcept": "Retrograde amnesia is loss of memory for events before trauma.",
+              "options": [
+                "Retrograde amnesia",
+                "Prograde amnesia",
+                "Motivated forgetting",
+                "Cognitive blockage"
+              ],
+              "correctIndex": 0,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH8-CLIN-0008",
+              "type": "mcq",
+              "lecture": 8,
+              "text": "According to the interference theory of forgetting:",
+              "explanation": "Interference theory proposes that forgetting occurs because other information competes with retrieval (proactive and retroactive interference).",
+              "keyConcept": "Interference theory: other information competes with retrieval.",
+              "options": [
+                "Memory capacity is limited so that when new information is brought in, older memories must be removed",
+                "New learning can inhibit the retrieval of stored memory, and vice versa",
+                "Forgetting is directly related to the complexity and meaningfulness of the incoming information",
+                "Cues present at the time of learning interfere with memory retrieval"
+              ],
+              "correctIndex": 1,
+              "modelAnswer": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Psychology of Thinking",
+      "subtitle": "Cognitive processes, problem-solving, and decision-making",
+      "emoji": "💭",
+      "page": 40,
+      "lectureRange": "Lecture 9",
+      "subjects": []
+    },
+    {
+      "id": 10,
+      "title": "Intelligence",
+      "subtitle": "Concepts, theories, and measurement of intellectual abilities",
+      "emoji": "💡",
+      "page": 45,
+      "lectureRange": "Lecture 10",
+      "subjects": [
+        {
+          "id": "clinical",
+          "name": "Clinical",
+          "iconName": "Stethoscope",
+          "lectures": "Lecture 10",
+          "lectureCount": 1,
+          "questions": [
+            {
+              "id": "P32-CH10-CLIN-0001",
+              "type": "mcq",
+              "lecture": 10,
+              "text": "______ is the capacity for learning certain and specific abilities.",
+              "explanation": "Aptitude refers to the potential or capacity to learn specific skills or knowledge, whereas achievement measures what has already been learned.",
+              "keyConcept": "Aptitude is the potential to learn specific skills.",
+              "options": [
+                "Achievement",
+                "Intelligence",
+                "Aptitude",
+                "Scholastic"
+              ],
+              "correctIndex": 2,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH10-CLIN-0002",
+              "type": "mcq",
+              "lecture": 10,
+              "text": "IQ may be defined as:",
+              "explanation": "The traditional formula for IQ is (MA/CA) × 100, with 100 representing average performance.",
+              "keyConcept": "IQ = (MA/CA) × 100, with 100 as average.",
+              "options": [
+                "Mental age (MA) / Chronological age (CA) x 100",
+                "Chronological age (CA) / Mental age (MA) x 100",
+                "Mental age (MA) / 100 x Chronological age (CA)",
+                "Mental age (MA) x Chronological age (CA) x 100"
+              ],
+              "correctIndex": 0,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH10-CLIN-0003",
+              "type": "mcq",
+              "lecture": 10,
+              "text": "If a girl has an intelligence quotient of 100, we know that she has a:",
+              "explanation": "IQ of 100 means mental age equals chronological age – average for her age group.",
+              "keyConcept": "IQ of 100 indicates mental age equals chronological age.",
+              "options": [
+                "Perfect score on a set of age‑related tests",
+                "Test performance superior to 90% of other children the same age",
+                "Mental age typical of children who have the same chronological age",
+                "Mental age below those of children with the same chronological age"
+              ],
+              "correctIndex": 2,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH10-CLIN-0004",
+              "type": "mcq",
+              "lecture": 10,
+              "text": "The Wechsler adult intelligence scale can be used to assess eligibility for:",
+              "explanation": "WAIS is used in clinical and educational settings to identify cognitive strengths/weaknesses, often for special educational support.",
+              "keyConcept": "WAIS identifies cognitive strengths/weaknesses for special educational support.",
+              "options": [
+                "Special educational needs",
+                "Housing benefit",
+                "Disability allowance",
+                "Suicide risk"
+              ],
+              "correctIndex": 0,
+              "modelAnswer": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Psychology of Language",
+      "subtitle": "Development, structures, and cognitive aspects of communication",
+      "emoji": "💬",
+      "page": 50,
+      "lectureRange": "Lecture 11",
+      "subjects": [
+        {
+          "id": "clinical",
+          "name": "Clinical",
+          "iconName": "Stethoscope",
+          "lectures": "Lecture 11",
+          "lectureCount": 1,
+          "questions": [
+            {
+              "id": "P32-CH11-CLIN-0001",
+              "type": "mcq",
+              "lecture": 11,
+              "text": "In the development of language, the child by the age of 1–2 years:",
+              "explanation": "By 12–18 months, most children have a vocabulary of about 20–50 words; “25 words” is a reasonable average for that range.",
+              "keyConcept": "By 12-18 months, typical vocabulary is 20-50 words.",
+              "options": [
+                "Combines sentences of 2 words",
+                "Use grammatical rules",
+                "Has vocabulary of 25 words",
+                "Begin to speak"
+              ],
+              "correctIndex": 2,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH11-CLIN-0002",
+              "type": "mcq",
+              "lecture": 11,
+              "text": "The set of rules that governs the proper use and combination of language symbols is:",
+              "explanation": "Syntax refers to the grammatical rules for combining words into phrases and sentences.",
+              "keyConcept": "Syntax is grammatical rules for combining words.",
+              "options": [
+                "Syntax",
+                "Semanticity",
+                "Generativity",
+                "Phonology"
+              ],
+              "correctIndex": 0,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH11-CLIN-0003",
+              "type": "mcq",
+              "lecture": 11,
+              "text": "Learning the speech sounds of the native language is known as:",
+              "explanation": "Phonology is the study of the sound system of a language, including phonemes and their patterns.",
+              "keyConcept": "Phonology is the study of a language's sound system.",
+              "options": [
+                "Semantics",
+                "Grammar",
+                "Syntax",
+                "Phonology"
+              ],
+              "correctIndex": 3,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH11-CLIN-0004",
+              "type": "mcq",
+              "lecture": 11,
+              "text": "Semantics refers to:",
+              "explanation": "Semantics is the branch of language concerned with meaning (words, phrases, sentences).",
+              "keyConcept": "Semantics concerns meaning in language.",
+              "options": [
+                "Learning word meanings",
+                "Knowledge of the rules of combining words in sentences",
+                "Learning to communicate with words",
+                "Learning new words"
+              ],
+              "correctIndex": 0,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH11-CLIN-0005",
+              "type": "mcq",
+              "lecture": 11,
+              "text": "Pragmatics is:",
+              "explanation": "Pragmatics covers the social use of language – context, inference, turn‑taking, politeness, etc.",
+              "keyConcept": "Pragmatics covers social use of language and context.",
+              "options": [
+                "Understanding how communication works",
+                "Learning new words",
+                "Combining words in sentences",
+                "Sound differences between similar words"
+              ],
+              "correctIndex": 0,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH11-CLIN-0006",
+              "type": "mcq",
+              "lecture": 11,
+              "text": "Syntax is:",
+              "explanation": "Syntax deals with sentence structure and the rules for combining words into grammatical sequences.",
+              "keyConcept": "Syntax deals with sentence structure and combination rules.",
+              "options": [
+                "Knowledge of how words and phrases can be combined",
+                "Study of word meanings",
+                "Subtle sound differences between similar words",
+                "Perceiving different phonemic categories"
+              ],
+              "correctIndex": 0,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH11-CLIN-0007",
+              "type": "mcq",
+              "lecture": 11,
+              "text": "The suggestion that infants are born as \"universal language perceivers\" according to Chomsky refers to:",
+              "explanation": "Infants initially can perceive phonetic contrasts from any language; this ability narrows to their native language by about 12 months.",
+              "keyConcept": "Infants can initially discriminate all phonetic contrasts.",
+              "options": [
+                "An ability to distinguish between different languages",
+                "A preference for the native language over others",
+                "An inability to distinguish between different languages",
+                "An ability to discriminate between all sounds used in all languages"
+              ],
+              "correctIndex": 3,
+              "modelAnswer": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Psychology of Sleep",
+      "subtitle": "Physiological stages, functions of sleep, and sleep disorders",
+      "emoji": "💤",
+      "page": 55,
+      "lectureRange": "Lecture 12",
+      "subjects": [
+        {
+          "id": "clinical",
+          "name": "Clinical",
+          "iconName": "Stethoscope",
+          "lectures": "Lecture 12",
+          "lectureCount": 1,
+          "questions": [
+            {
+              "id": "P32-CH12-CLIN-0001",
+              "type": "mcq",
+              "lecture": 12,
+              "text": "An individual is displaying rapid eye movement, suppressed muscle tone, and is difficult to wake up. When s/he does awake, s/he reports dreaming. The cycle of sleep s/he was experiencing is:",
+              "explanation": "REM sleep is characterized by rapid eye movements, muscle atonia (suppressed tone), high arousal threshold, and vivid dreaming.",
+              "keyConcept": "REM sleep is characterized by rapid eye movements, muscle atonia, and vivid dreaming.",
+              "options": [
+                "Slow wave sleep (SWS)",
+                "Stage 1 sleep",
+                "Stage 2 sleep",
+                "REM sleep"
+              ],
+              "correctIndex": 3,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH12-CLIN-0002",
+              "type": "mcq",
+              "lecture": 12,
+              "text": "What seems to be the purpose of atonia during REM sleep?",
+              "explanation": "REM atonia is a paralysis of most skeletal muscles that prevents dream enactment (REM sleep behavior disorder occurs when this mechanism fails).",
+              "keyConcept": "REM atonia prevents dream enactment.",
+              "options": [
+                "It keeps the person or animal from suddenly waking up",
+                "It protects the brain from becoming too synchronized",
+                "It prevents night terrors",
+                "It prevents the person or animal from acting out their dreams"
+              ],
+              "correctIndex": 3,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH12-CLIN-0003",
+              "type": "mcq",
+              "lecture": 12,
+              "text": "Which of the following is not true about night terrors?",
+              "explanation": "Night terrors occur during NREM deep sleep (stages 3–4), typically in the first third of the night, not the last third.",
+              "keyConcept": "Night terrors occur during NREM deep sleep in the first third of the night.",
+              "options": [
+                "Sudden arousal with terrified affect",
+                "Usually occur in the last third of sleep",
+                "Amnesia for the episode",
+                "Median age of onset is 6 years",
+                "Usually occur in deep sleep"
+              ],
+              "correctIndex": 1,
+              "modelAnswer": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "title": "Circadian Rhythms",
+      "subtitle": "Biological clocks, sleep-wake cycles, and physiological timing",
+      "emoji": "⏰",
+      "page": 60,
+      "lectureRange": "Lecture 13",
+      "subjects": []
+    },
+    {
+      "id": 14,
+      "title": "Psychology of Motivation",
+      "subtitle": "Internal and external factors driving human behavior",
+      "emoji": "🎯",
+      "page": 65,
+      "lectureRange": "Lecture 14",
+      "subjects": []
+    },
+    {
+      "id": 15,
+      "title": "Psychology of Emotions",
+      "subtitle": "Physiological, cognitive, and expressive components of emotion",
+      "emoji": "🎭",
+      "page": 70,
+      "lectureRange": "Lecture 15",
+      "subjects": [
+        {
+          "id": "clinical",
+          "name": "Clinical",
+          "iconName": "Stethoscope",
+          "lectures": "Lecture 15",
+          "lectureCount": 1,
+          "questions": [
+            {
+              "id": "P32-CH15-CLIN-0001",
+              "type": "mcq",
+              "lecture": 15,
+              "text": "According to the Cannon‑Bard theory of emotion:",
+              "explanation": "Cannon‑Bard proposes that the thalamus sends simultaneous signals to the cortex (emotion) and body (arousal).",
+              "keyConcept": "Cannon-Bard: simultaneous emotional and physiological responses.",
+              "options": [
+                "Emotional experience and physiological arousal occur at the same time",
+                "Emotional experience precedes physiological arousal",
+                "Physiological arousal precedes emotional experience",
+                "We cannot experience different emotions"
+              ],
+              "correctIndex": 0,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH15-CLIN-0002",
+              "type": "mcq",
+              "lecture": 15,
+              "text": "According to the James‑Lange theory of emotion:",
+              "explanation": "James‑Lange states that we feel emotion after our body reacts (e.g., “I feel afraid because I am trembling”).",
+              "keyConcept": "James-Lange: body reaction first, then emotion.",
+              "options": [
+                "Emotional experience and physiological arousal occur at the same time",
+                "Emotional experience precedes physiological arousal",
+                "Physiological arousal precedes emotional experience",
+                "We cannot experience different emotions"
+              ],
+              "correctIndex": 2,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH15-CLIN-0003",
+              "type": "mcq",
+              "lecture": 15,
+              "text": "According to Abraham Maslow:",
+              "explanation": "Safety needs are the second level (after physiological) in Maslow’s hierarchy – relatively low, but not the base.",
+              "keyConcept": "Safety needs are second level in Maslow's hierarchy.",
+              "options": [
+                "Human behavior is directed by sex and aggression",
+                "Human beings start their development of motivation from the tip of hierarchy",
+                "A human being always can pass to higher level from the hierarchy without satisfaction of the lower level",
+                "Feeling safe and secure is one of the lower levels of hierarchy",
+                "Innovation and creation are present at the base of the hierarchy"
+              ],
+              "correctIndex": 3,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH15-CLIN-0004",
+              "type": "mcq",
+              "lecture": 15,
+              "text": "Self‑actualization is:",
+              "explanation": "Self‑actualization (fulfilling one’s potential) is the peak of Maslow’s hierarchy.",
+              "keyConcept": "Self-actualization is the peak of Maslow's hierarchy.",
+              "options": [
+                "A continuous state of success and achievement a human being can attain",
+                "A psychodynamic concept presented with Freud",
+                "Achieved at the base of hierarchy of needs",
+                "One of the important physiological needs",
+                "A concept introduced by Abraham Maslow"
+              ],
+              "correctIndex": 4,
+              "modelAnswer": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Psychology of Stress",
+      "subtitle": "Causes, physiological responses, and psychological effects of stress",
+      "emoji": "⚡",
+      "page": 75,
+      "lectureRange": "Lecture 16",
+      "subjects": [
+        {
+          "id": "clinical",
+          "name": "Clinical",
+          "iconName": "Stethoscope",
+          "lectures": "Lecture 16",
+          "lectureCount": 1,
+          "questions": [
+            {
+              "id": "P32-CH16-CLIN-0001",
+              "type": "mcq",
+              "lecture": 16,
+              "text": "During an encounter judged as stressful, cortisol is released by the:",
+              "explanation": "Cortisol is secreted by the adrenal cortex as part of the HPA axis response to stress.",
+              "keyConcept": "Cortisol is secreted by adrenal cortex via HPA axis.",
+              "options": [
+                "Sympathetic nervous system",
+                "Hypothalamus",
+                "Pituitary gland",
+                "Adrenal glands"
+              ],
+              "correctIndex": 3,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH16-CLIN-0002",
+              "type": "mcq",
+              "lecture": 16,
+              "text": "The release of ______ decreases the effectiveness of the immune system in responding to prolonged stress.",
+              "explanation": "Chronic elevated corticosteroids (e.g., cortisol) suppress immune function, increasing susceptibility to illness.",
+              "keyConcept": "Chronic corticosteroids suppress immune function.",
+              "options": [
+                "Corticosteroids",
+                "Endorphins",
+                "Dopamine",
+                "Catecholamines",
+                "Serotonin"
+              ],
+              "correctIndex": 0,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH16-CLIN-0003",
+              "type": "mcq",
+              "lecture": 16,
+              "text": "At the time of acute stress, the adrenal medulla releases ______ that grows heart rate and respiration.",
+              "explanation": "The adrenal medulla secretes epinephrine and norepinephrine (catecholamines), which increase heart rate, respiration, and blood pressure.",
+              "keyConcept": "Adrenal medulla secretes catecholamines (epinephrine/norepinephrine) for fight-or-flight.",
+              "options": [
+                "Endorphins",
+                "Dopamine",
+                "Catecholamines",
+                "Corticosteroids",
+                "Acetylcholine"
+              ],
+              "correctIndex": 2,
+              "modelAnswer": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "title": "Frustration & Defensive Mechanisms",
+      "subtitle": "Coping strategies, conflict, and ego defense mechanisms",
+      "emoji": "🛡️",
+      "page": 80,
+      "lectureRange": "Lecture 17",
+      "subjects": [
+        {
+          "id": "clinical",
+          "name": "Clinical",
+          "iconName": "Stethoscope",
+          "lectures": "Lecture 17",
+          "lectureCount": 1,
+          "questions": [
+            {
+              "id": "P32-CH17-CLIN-0001",
+              "type": "mcq",
+              "lecture": 17,
+              "text": "Reasons of frustration include:",
+              "explanation": "Frustration arises from external barriers, internal conflicts, and personal limitations (skills, resources, etc.).",
+              "keyConcept": "Frustration arises from environmental obstacles, conflicts, and personal limitations.",
+              "options": [
+                "Environmental obstacles",
+                "Conflicts",
+                "Limitations in the subject's ability",
+                "All of the above",
+                "None of the above"
+              ],
+              "correctIndex": 3,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH17-CLIN-0002",
+              "type": "mcq",
+              "lecture": 17,
+              "text": "According to Freud, a process that distorts reality to prevent the individual from being overwhelmed by anxiety is known as:",
+              "explanation": "Defense mechanisms are unconscious strategies the ego uses to distort reality and reduce anxiety.",
+              "keyConcept": "Defense mechanisms are unconscious ego strategies to reduce anxiety.",
+              "options": [
+                "Defense mechanism",
+                "Projection",
+                "Psychic determinism",
+                "The unconscious",
+                "The Id"
+              ],
+              "correctIndex": 0,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH17-CLIN-0003",
+              "type": "mcq",
+              "lecture": 17,
+              "text": "According to Freud, the defense mechanism that involves reverting to immature behaviors that have relieved anxiety in the past is:",
+              "explanation": "Regression is a return to earlier, less mature behaviors (e.g., tantrums, thumb‑sucking) when faced with stress.",
+              "keyConcept": "Regression is return to earlier, less mature behaviors under stress.",
+              "options": [
+                "Rationalization",
+                "Regression",
+                "Projection",
+                "Displacement",
+                "Humor"
+              ],
+              "correctIndex": 1,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH17-CLIN-0004",
+              "type": "mcq",
+              "lecture": 17,
+              "text": "In Freud's theory, the part of the personality that helps the individual adapt to external reality by making compromises between the id, the superego, and the environment is the:",
+              "explanation": "The ego operates on the reality principle, mediating between id impulses, superego demands, and external reality.",
+              "keyConcept": "The ego mediates between id, superego, and reality.",
+              "options": [
+                "Ego",
+                "Pleasure principle",
+                "Reality principle",
+                "Rationalization",
+                "Projection"
+              ],
+              "correctIndex": 0,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH17-CLIN-0005",
+              "type": "mcq",
+              "lecture": 17,
+              "text": "The defense mechanism known as ______ involves attributing one's own undesirable feelings to other people.",
+              "explanation": "Projection is attributing one’s own unacceptable thoughts, feelings, or motives to someone else.",
+              "keyConcept": "Projection attributes one's own unacceptable feelings to others.",
+              "options": [
+                "Regression",
+                "Rationalization",
+                "Displacement",
+                "Projection",
+                "Reaction formation"
+              ],
+              "correctIndex": 3,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH17-CLIN-0006",
+              "type": "mcq",
+              "lecture": 17,
+              "text": "\"Everyone around me thinks they're big, funny and clever. They're all telling me my goldfish hiding Swimmy has died. They even thought I'd be fooled by flushing a pretend one down the toilet. She's only stiff because she's cold. But It's ok...I put boiling water in there so she could warm up.\" What defence mechanism does this show?",
+              "explanation": "The person refuses to accept the reality that the fish is dead (denying the painful truth).",
+              "keyConcept": "Denial is refusing to accept painful reality.",
+              "options": [
+                "Denial",
+                "Rationalisation",
+                "Withdrawal",
+                "Projection",
+                "Intellectualization"
+              ],
+              "correctIndex": 0,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH17-CLIN-0007",
+              "type": "mcq",
+              "lecture": 17,
+              "text": "\"I'm sure my boyfriend has been cheating on me. When I find out he'll be sorry. Oh yeah and I need to buy my husband a birthday present...\" What defence mechanism am I experiencing?",
+              "explanation": "The speaker refers to both a \"boyfriend\" and a \"husband\" – denying the reality of being married (or of infidelity) by contradictory statements.",
+              "keyConcept": "Denial involves contradictory statements that avoid reality.",
+              "options": [
+                "Reaction Formation",
+                "Withdrawal",
+                "Projection",
+                "Denial",
+                "Rationalization"
+              ],
+              "correctIndex": 3,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH17-CLIN-0008",
+              "type": "mcq",
+              "lecture": 17,
+              "text": "\"It's so unfair! My mum doesn't care how much I cry and scream, she won't get me a car. She doesn't even care about me! She hates me!\" What defence mechanism does this demonstrate?",
+              "explanation": "The person reverts to childlike emotional outbursts (crying, screaming, tantrums) – a return to earlier, less mature behavior.",
+              "keyConcept": "Regression reverts to childlike emotional outbursts.",
+              "options": [
+                "Sublimation",
+                "Rationalisation",
+                "Repression",
+                "Regression",
+                "Identification"
+              ],
+              "correctIndex": 3,
+              "modelAnswer": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "title": "Sensory Deprivation",
+      "subtitle": "Effects of reduced sensory input on cognition and mental state",
+      "emoji": "🌌",
+      "page": 85,
+      "lectureRange": "Lecture 18",
+      "subjects": []
+    },
+    {
+      "id": 19,
+      "title": "Social Psychology",
+      "subtitle": "Group dynamics, social influence, attitudes, and relationships",
+      "emoji": "👥",
+      "page": 90,
+      "lectureRange": "Lecture 19",
+      "subjects": [
+        {
+          "id": "clinical",
+          "name": "Clinical",
+          "iconName": "Stethoscope",
+          "lectures": "Lecture 19",
+          "lectureCount": 1,
+          "questions": [
+            {
+              "id": "P32-CH19-CLIN-0001",
+              "type": "mcq",
+              "lecture": 19,
+              "text": "Locus of control refers to:",
+              "explanation": "Locus of control is the degree to which people believe they have control over events (internal) versus outside forces (external).",
+              "keyConcept": "Locus of control is belief about control over events (internal vs. external).",
+              "options": [
+                "Causal explanations for self‑perception",
+                "The tendency for group decisions to be more extreme than individual decisions",
+                "The increase in obedience behaviour when encouraged by authority figures",
+                "Placing the onus of responsibility within or outside self",
+                "The characteristic of an authoritarian leader"
+              ],
+              "correctIndex": 3,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH19-CLIN-0002",
+              "type": "mcq",
+              "lecture": 19,
+              "text": "In social psychology, conformity refers to which of the following:",
+              "explanation": "Conformity is adjusting one’s attitudes or actions to align with real or imagined group norms.",
+              "keyConcept": "Conformity is adjusting attitudes/actions to align with group norms.",
+              "options": [
+                "Is the change that occurs in response to minority influence",
+                "A change in belief or behaviour in response to group pressure",
+                "Refers to change in behaviour in response to a command or order from an authority figure",
+                "Is evident in the phenomena of bystander effect",
+                "Is the result of group polarisation"
+              ],
+              "correctIndex": 1,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH19-CLIN-0003",
+              "type": "mcq",
+              "lecture": 19,
+              "text": "The psychology of attribution:",
+              "explanation": "Attribution theory describes how people infer the causes of their own and others’ behavior (e.g., internal vs. external factors).",
+              "keyConcept": "Attribution theory describes how people infer causes of behavior.",
+              "options": [
+                "States that people over‑emphasise the personal influence to explain observed behaviour in others",
+                "Refers to a person's individual personality traits",
+                "Refers to the cognitive labelling theory which assigns causal explanations to observed events",
+                "Is related to the locus of control",
+                "Refers to the association between an event, person or feeling and the situation"
+              ],
+              "correctIndex": 2,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH19-CLIN-0004",
+              "type": "mcq",
+              "lecture": 19,
+              "text": "The drive‑theory of aggressive behaviour states that aggression results from:",
+              "explanation": "Drive theory (frustration‑aggression hypothesis) proposes that frustration creates a drive to aggress; “poor frustration tolerance” is the closest match among options.",
+              "keyConcept": "Drive theory (frustration-aggression) proposes frustration creates drive to aggress.",
+              "options": [
+                "Observational learning",
+                "Poor frustration tolerance",
+                "Long‑term substance misuse",
+                "Easy access to weapons",
+                "Depiction of violence in the media"
+              ],
+              "correctIndex": 1,
+              "modelAnswer": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "title": "Psychology of Aggression and Violence",
+      "subtitle": "Theories, causes, and prevention of aggressive behaviors",
+      "emoji": "🔥",
+      "page": 95,
+      "lectureRange": "Lecture 20",
+      "subjects": [
+        {
+          "id": "clinical",
+          "name": "Clinical",
+          "iconName": "Stethoscope",
+          "lectures": "Lecture 20",
+          "lectureCount": 1,
+          "questions": [
+            {
+              "id": "P32-CH20-CLIN-0001",
+              "type": "mcq",
+              "lecture": 20,
+              "text": "Aggression always:",
+              "explanation": "The core definition of aggression is behavior intended to harm another person who wants to avoid that harm. Physical pain or emotional arousal is not required.",
+              "keyConcept": "Aggression is defined as behavior intended to harm another who wishes to avoid harm.",
+              "options": [
+                "Is committed by someone who has been deliberately provoked",
+                "Involves intent to harm someone",
+                "Causes physical pain",
+                "Involves emotional arousal"
+              ],
+              "correctIndex": 1,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH20-CLIN-0002",
+              "type": "mcq",
+              "lecture": 20,
+              "text": "In a revision of frustration‑aggression theory, Berkowitz theorized that:",
+              "explanation": "Berkowitz added that environmental cues associated with aggression (e.g., weapons) can trigger aggressive responses when frustration has already created anger.",
+              "keyConcept": "Berkowitz added that environmental aggression cues can trigger responses.",
+              "options": [
+                "Frustration is instinctive",
+                "Aggression cues can release bottled‑up anger",
+                "Frustration produces escape more often than aggression",
+                "Aggression is learned through a modeling effect"
+              ],
+              "correctIndex": 1,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH20-CLIN-0003",
+              "type": "mcq",
+              "lecture": 20,
+              "text": "A person kicking a cat after losing a game of checkers is an example of:",
+              "explanation": "Displacing aggression from the real source of frustration (the opponent or the loss) onto a safer, less threatening target (the cat).",
+              "keyConcept": "Displacement redirects aggression from the source to a safer target.",
+              "options": [
+                "Regression",
+                "Relative Frustration",
+                "The weapons effect",
+                "Displacement"
+              ],
+              "correctIndex": 3,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH20-CLIN-0004",
+              "type": "mcq",
+              "lecture": 20,
+              "text": "Research has shown a positive correlation between aggression and the level of:",
+              "explanation": "Higher testosterone levels are associated with increased aggressive behavior in both animal and human studies.",
+              "keyConcept": "Higher testosterone levels correlate with increased aggression.",
+              "options": [
+                "GABA",
+                "Testosterone",
+                "Acetylcholine",
+                "Estrogen"
+              ],
+              "correctIndex": 1,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH20-CLIN-0005",
+              "type": "mcq",
+              "lecture": 20,
+              "text": "How many types of aggression are there?",
+              "explanation": "The most common division is into hostile (affective, impulsive) aggression and instrumental (proactive, goal‑directed) aggression.",
+              "keyConcept": "Two main types: hostile and instrumental aggression.",
+              "options": [
+                "2",
+                "3",
+                "4",
+                "5"
+              ],
+              "correctIndex": 0,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH20-CLIN-0006",
+              "type": "mcq",
+              "lecture": 20,
+              "text": "The leading researchers into SLT and aggression were by who?",
+              "explanation": "Albert Bandura’s social learning theory (Bobo doll experiment) demonstrated that aggression is learned through observation and modeling.",
+              "keyConcept": "Bandura's social learning theory demonstrated aggression through modeling.",
+              "options": [
+                "heller",
+                "bandura",
+                "keller and wander",
+                "Zimbabwe"
+              ],
+              "correctIndex": 1,
+              "modelAnswer": null
+            },
+            {
+              "id": "P32-CH20-CLIN-0007",
+              "type": "mcq",
+              "lecture": 20,
+              "text": "Types of aggression:",
+              "explanation": "Hostile aggression is one of the two major types (along with instrumental aggression). The other options are not recognized categories.",
+              "keyConcept": "Hostile aggression is one of the two major types.",
+              "options": [
+                "Selectively Stimuli",
+                "Organizing",
+                "Receiving Stimuli",
+                "Hostile Aggression"
+              ],
+              "correctIndex": 3,
+              "modelAnswer": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "title": "Psychology in Relation to Medicine",
+      "subtitle": "Applications of behavioral science to clinical practice",
+      "emoji": "🏥",
+      "page": 100,
+      "lectureRange": "Lecture 21",
+      "subjects": []
+    },
+    {
+      "id": 22,
+      "title": "Doctor Patient Relationship",
+      "subtitle": "Communication, trust, compliance, and clinical interaction",
+      "emoji": "🤝",
+      "page": 105,
+      "lectureRange": "Lecture 22",
+      "subjects": []
+    }
+  ]
+}

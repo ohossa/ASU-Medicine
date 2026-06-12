@@ -51,7 +51,7 @@ export function HistoryScreen({ onBack, onSelectHistory, userButton }: HistorySc
   }, {} as Record<string, QuizResult[]>);
 
   return (
-    <div className="min-h-screen bg-gray-50/50 dark:bg-gray-950 font-manrope">
+    <div className="min-h-screen font-manrope">
       {/* HEADER */}
       <header className="shrinking-header bg-white/70 dark:bg-gray-900/70 backdrop-blur-xl border-b border-gray-100 dark:border-gray-800/50 sticky top-0 z-50">
         <div className="max-w-[1600px] mx-auto px-6 lg:px-8">

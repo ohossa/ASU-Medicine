@@ -39,6 +39,7 @@ const ClinicalCaseSolver = lazy(() => import('./components/ClinicalCaseSolver').
 const QuestionSearch = lazy(() => import('./components/QuestionSearch').then(m => ({ default: m.QuestionSearch })));
 const MarksCalculator = lazy(() => import('./components/MarksCalculator').then(m => ({ default: m.MarksCalculator })));
 import { SyllabusTracker } from './components/SyllabusTracker';
+import { StudyTrackerSelectorModal } from './components/StudyTrackerSelectorModal';
 import { ThemeProvider, useTheme } from './context/ThemeContext';
 import { ThemeToggle } from './components/ThemeToggle';
 import { LanguageProvider, useLanguage } from './context/LanguageContext';
@@ -354,6 +355,8 @@ function MainApp() {
   });
 
   const [showTracker, setShowTracker] = useState(false);
+  const [showTrackerSelector, setShowTrackerSelector] = useState(false);
+  const [trackerModule, setTrackerModule] = useState<ModuleInfo | null>(null);
   const [showSupportModal, setShowSupportModal] = useState(false);
   const [showLanguageModal, setShowLanguageModal] = useState(false);
   const [showPortalsModal, setShowPortalsModal] = useState(false);
@@ -960,12 +963,6 @@ function MainApp() {
 
   return (
     <div className="min-h-screen text-gray-900 dark:text-gray-100 font-manrope selection:bg-physiology/20 selection:text-physiology-dark">
-      {/* Dynamic Floating Background Blobs & Interactive Dots */}
-      <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
-        <InteractiveBackground />
-        <div className="absolute top-[10%] left-[5%] h-[35vw] w-[35vw] rounded-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-physiology/30 to-transparent dark:from-physiology/20 blob-float-1" />
-        <div className="absolute bottom-[10%] right-[5%] h-[40vw] w-[40vw] rounded-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-anatomy/30 to-transparent dark:from-anatomy/20 blob-float-2" />
-      </div>
 
       <style>{`
         @keyframes shrinkHeader {
@@ -1276,6 +1273,27 @@ function MainApp() {
                       <span className="text-[9px] px-2 py-0.5 rounded-full bg-[#2dd4bf]/15 text-[#2dd4bf] uppercase tracking-wider font-bold">Search</span>
                     </h4>
                     <p className="text-xs text-gray-500 font-medium mt-1">Search text in all database questions and answers</p>
+                  </div>
+                </button>
+
+                {/* Study Tracker */}
+                <button
+                  onClick={() => setShowTrackerSelector(true)}
+                  className="portal-card text-left bg-white dark:bg-gray-900 rounded-3xl p-6 flex items-center gap-5 border border-gray-100 dark:border-gray-800 hover:border-physiology/30 hover:shadow-md transition-all group w-full"
+                >
+                  <div className="w-12 h-12 rounded-xl bg-physiology/10 flex items-center justify-center text-physiology group-hover:scale-110 transition-transform">
+                    <GraduationCap size={24} />
+                  </div>
+                  <div>
+                    <h4 className="font-archivo font-bold text-gray-900 dark:text-white flex items-center gap-2">
+                      {language === 'en' ? 'Study Tracker' : 'متابع المذاكرة'}
+                      <span className="text-[9px] px-2 py-0.5 rounded-full bg-physiology/15 text-physiology uppercase tracking-wider font-bold">
+                        {language === 'en' ? 'Syllabus' : 'المنهج'}
+                      </span>
+                    </h4>
+                    <p className="text-xs text-gray-500 font-medium mt-1">
+                      {language === 'en' ? 'Track syllabus and lecture study progress' : 'تابع تقدم مذاكرة محاضرات وفصول المنهج'}
+                    </p>
                   </div>
                 </button>
 
@@ -1841,6 +1859,29 @@ function MainApp() {
         />
       )}
 
+      {showTracker && trackerModule && (
+        <SyllabusTracker
+          moduleCode={trackerModule.code}
+          moduleName={trackerModule.name}
+          chapters={getChaptersForModuleAndMode(trackerModule.code, 'mixed')}
+          onClose={() => {
+            setShowTracker(false);
+            setTrackerModule(null);
+          }}
+        />
+      )}
+
+      {showTrackerSelector && (
+        <StudyTrackerSelectorModal
+          onClose={() => setShowTrackerSelector(false)}
+          onSelectModule={(mod) => {
+            setShowTrackerSelector(false);
+            setTrackerModule(mod);
+            setShowTracker(true);
+          }}
+        />
+      )}
+
       {/* PREMIUM COMING SOON ALERT DIALOG / MODAL */}
       {modalModule && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-6 bg-gray-950/40 backdrop-blur-md transition-all duration-300">
@@ -2160,6 +2201,13 @@ export default function App() {
 
   return (
     <ThemeProvider>
+      {/* Dynamic Floating Background Blobs & Interactive Dots */}
+      <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
+        <InteractiveBackground />
+        <div className="absolute top-[10%] left-[5%] h-[35vw] w-[35vw] rounded-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-physiology/30 to-transparent dark:from-physiology/20 blob-float-1" />
+        <div className="absolute bottom-[10%] right-[5%] h-[40vw] w-[40vw] rounded-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-anatomy/30 to-transparent dark:from-anatomy/20 blob-float-2" />
+      </div>
+
       <SignedIn>
         <MainApp />
       </SignedIn>

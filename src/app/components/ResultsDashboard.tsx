@@ -578,7 +578,7 @@ export function ResultsDashboard({
   /* ---------------------------------- Render --------------------------------- */
 
   return (
-    <div dir={isRTL ? 'rtl' : 'ltr'} className="min-h-screen bg-background text-foreground antialiased transition-colors duration-300" style={{ fontFamily: "'Outfit', 'Manrope', 'Archivo', system-ui, sans-serif" }}>
+    <div dir={isRTL ? 'rtl' : 'ltr'} className="min-h-screen text-foreground antialiased transition-colors duration-300" style={{ fontFamily: "'Outfit', 'Manrope', 'Archivo', system-ui, sans-serif" }}>
       {/* Ambient glow */}
       <div className="pointer-events-none fixed inset-0 overflow-hidden">
         <div className="absolute -top-40 start-1/4 h-96 w-96 rounded-full bg-emerald-500/[0.04] dark:bg-emerald-500/[0.07] blur-[130px]" />

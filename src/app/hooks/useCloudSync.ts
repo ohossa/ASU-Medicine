@@ -2,8 +2,9 @@ import { useEffect, useCallback, useRef } from 'react';
 import { useAuth } from '@clerk/clerk-react';
 
 const STORAGE_KEYS = [
+  'theme',
+  'language',
   'endocrine_essay_quiz_history',
-  'asu_study_tracker_MEM-2',
   'asu_medical_student_year',
   'asu_portal_screen',
   'asu_portal_year',
@@ -22,6 +23,8 @@ export function useCloudSync() {
     isSyncing.current = true;
     try {
       const payload: Record<string, any> = {};
+      
+      // Collect standard keys
       STORAGE_KEYS.forEach(key => {
         const val = localStorage.getItem(key);
         if (val) {
@@ -32,6 +35,23 @@ export function useCloudSync() {
           }
         }
       });
+
+      // Also dynamically collect any keys starting with asu_study_tracker_
+      if (typeof window !== 'undefined') {
+        for (let i = 0; i < localStorage.length; i++) {
+          const key = localStorage.key(i);
+          if (key && key.startsWith('asu_study_tracker_')) {
+            const val = localStorage.getItem(key);
+            if (val) {
+              try {
+                payload[key] = JSON.parse(val);
+              } catch {
+                payload[key] = val;
+              }
+            }
+          }
+        }
+      }
 
       if (Object.keys(payload).length === 0) return;
 

@@ -198,7 +198,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
 
   if (!question) {
     return (
-      <div className="flex min-h-screen items-center justify-center bg-background text-muted-foreground">
+      <div className="flex min-h-screen items-center justify-center text-muted-foreground">
         <AlertCircle size={18} className="mr-2" /> No questions available.
       </div>
     );
@@ -794,7 +794,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
   /* ---------------------------------- Render --------------------------------- */
 
   return (
-    <div dir={isRTL ? 'rtl' : 'ltr'} className="min-h-screen bg-background text-foreground antialiased transition-colors duration-300">
+    <div dir={isRTL ? 'rtl' : 'ltr'} className="min-h-screen text-foreground antialiased transition-colors duration-300">
       {/* Ambient glow */}
       <div className="pointer-events-none fixed inset-0 overflow-hidden">
         <div className={`absolute -top-32 start-1/3 h-80 w-80 rounded-full blur-[130px] opacity-20 ${style.bg}`} />

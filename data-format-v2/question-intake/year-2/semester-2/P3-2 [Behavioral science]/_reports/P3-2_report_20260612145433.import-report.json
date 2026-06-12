@@ -1,0 +1,430 @@
+{
+  "inputPath": "data-format-v2/question-intake/year-2/semester-2/P3-2 [Behavioral science]/_ready/deepseek_json_20260612_2cdc38.json",
+  "targetPath": "src/imports/year-2/semester-2/P3-2.json",
+  "moduleCode": "P3-2",
+  "added": [
+    {
+      "id": "P32-CH12-CLIN-0001",
+      "chapterId": 12,
+      "subject": "clinical",
+      "text": "An individual is displaying rapid eye movement, suppressed muscle tone, and is difficult to wake up. When s/he does awake, s/he reports dreaming. The cycle of sleep s/he was experiencing is:"
+    },
+    {
+      "id": "P32-CH12-CLIN-0002",
+      "chapterId": 12,
+      "subject": "clinical",
+      "text": "What seems to be the purpose of atonia during REM sleep?"
+    },
+    {
+      "id": "P32-CH12-CLIN-0003",
+      "chapterId": 12,
+      "subject": "clinical",
+      "text": "Which of the following is not true about night terrors?"
+    },
+    {
+      "id": "P32-CH5-CLIN-0001",
+      "chapterId": 5,
+      "subject": "clinical",
+      "text": "Maslow called the higher needs:"
+    },
+    {
+      "id": "P32-CH5-CLIN-0002",
+      "chapterId": 5,
+      "subject": "clinical",
+      "text": "The humanistic theory of personality proposed by Carl Rogers is called:"
+    },
+    {
+      "id": "P32-CH5-CLIN-0003",
+      "chapterId": 5,
+      "subject": "clinical",
+      "text": "According to Freud, the id is governed by the:"
+    },
+    {
+      "id": "P32-CH5-CLIN-0004",
+      "chapterId": 5,
+      "subject": "clinical",
+      "text": "A defining characteristic of traits is that they are:"
+    },
+    {
+      "id": "P32-CH5-CLIN-0005",
+      "chapterId": 5,
+      "subject": "clinical",
+      "text": "The humanistic viewpoint emphasizes which of the following?"
+    },
+    {
+      "id": "P32-CH5-CLIN-0006",
+      "chapterId": 5,
+      "subject": "clinical",
+      "text": "Which of the following is an unconscious personality structure made up of the reality self, responsible for compromising and maintaining harmony?"
+    },
+    {
+      "id": "P32-CH6-CLIN-0001",
+      "chapterId": 6,
+      "subject": "clinical",
+      "text": "Pavlov is famous for his work in:"
+    },
+    {
+      "id": "P32-CH6-CLIN-0002",
+      "chapterId": 6,
+      "subject": "clinical",
+      "text": "A bakery gives customers a free pastry after every 6 pastry purchases. This is an example of what kind of reinforcement schedule?"
+    },
+    {
+      "id": "P32-CH6-CLIN-0003",
+      "chapterId": 6,
+      "subject": "clinical",
+      "text": "In classical conditioning, UR and CR are:"
+    },
+    {
+      "id": "P32-CH6-CLIN-0004",
+      "chapterId": 6,
+      "subject": "clinical",
+      "text": "Giving a student extra homework after they misbehave in class is an example of:"
+    },
+    {
+      "id": "P32-CH6-CLIN-0005",
+      "chapterId": 6,
+      "subject": "clinical",
+      "text": "After being bitten by a big dog, Ahmed was scared of other big dogs but he was not scared of little dogs. This pattern demonstrates:"
+    },
+    {
+      "id": "P32-CH6-CLIN-0006",
+      "chapterId": 6,
+      "subject": "clinical",
+      "text": "Positive reinforcement ______ the likelihood of a behaviour, and negative reinforcement ______ the likelihood of behaviour."
+    },
+    {
+      "id": "P32-CH20-CLIN-0001",
+      "chapterId": 20,
+      "subject": "clinical",
+      "text": "Aggression always:"
+    },
+    {
+      "id": "P32-CH20-CLIN-0002",
+      "chapterId": 20,
+      "subject": "clinical",
+      "text": "In a revision of frustration‑aggression theory, Berkowitz theorized that:"
+    },
+    {
+      "id": "P32-CH20-CLIN-0003",
+      "chapterId": 20,
+      "subject": "clinical",
+      "text": "A person kicking a cat after losing a game of checkers is an example of:"
+    },
+    {
+      "id": "P32-CH20-CLIN-0004",
+      "chapterId": 20,
+      "subject": "clinical",
+      "text": "Research has shown a positive correlation between aggression and the level of:"
+    },
+    {
+      "id": "P32-CH20-CLIN-0005",
+      "chapterId": 20,
+      "subject": "clinical",
+      "text": "How many types of aggression are there?"
+    },
+    {
+      "id": "P32-CH20-CLIN-0006",
+      "chapterId": 20,
+      "subject": "clinical",
+      "text": "The leading researchers into SLT and aggression were by who?"
+    },
+    {
+      "id": "P32-CH20-CLIN-0007",
+      "chapterId": 20,
+      "subject": "clinical",
+      "text": "Types of aggression:"
+    },
+    {
+      "id": "P32-CH10-CLIN-0001",
+      "chapterId": 10,
+      "subject": "clinical",
+      "text": "______ is the capacity for learning certain and specific abilities."
+    },
+    {
+      "id": "P32-CH10-CLIN-0002",
+      "chapterId": 10,
+      "subject": "clinical",
+      "text": "IQ may be defined as:"
+    },
+    {
+      "id": "P32-CH10-CLIN-0003",
+      "chapterId": 10,
+      "subject": "clinical",
+      "text": "If a girl has an intelligence quotient of 100, we know that she has a:"
+    },
+    {
+      "id": "P32-CH10-CLIN-0004",
+      "chapterId": 10,
+      "subject": "clinical",
+      "text": "The Wechsler adult intelligence scale can be used to assess eligibility for:"
+    },
+    {
+      "id": "P32-CH4-CLIN-0001",
+      "chapterId": 4,
+      "subject": "clinical",
+      "text": "Kohlberg identified the three levels of moral development as the:"
+    },
+    {
+      "id": "P32-CH4-CLIN-0002",
+      "chapterId": 4,
+      "subject": "clinical",
+      "text": "A toddler learning to use the toilet who sometimes feels bad when he or she \"messes up\" is at Erikson's stage called:"
+    },
+    {
+      "id": "P32-CH4-CLIN-0003",
+      "chapterId": 4,
+      "subject": "clinical",
+      "text": "Which represents the correct order of Piaget's stages of intellectual development?"
+    },
+    {
+      "id": "P32-CH4-CLIN-0004",
+      "chapterId": 4,
+      "subject": "clinical",
+      "text": "According to Jean Piaget’s cognitive development theory, the concrete operational stage is characterized by:"
+    },
+    {
+      "id": "P32-CH4-CLIN-0005",
+      "chapterId": 4,
+      "subject": "clinical",
+      "text": "In moral development, conventional conformity means:"
+    },
+    {
+      "id": "P32-CH4-CLIN-0006",
+      "chapterId": 4,
+      "subject": "clinical",
+      "text": "Which of the following most clearly demonstrates the existence of emotional attachment?"
+    },
+    {
+      "id": "P32-CH4-CLIN-0007",
+      "chapterId": 4,
+      "subject": "clinical",
+      "text": "A child is largely nonverbal, is learning to coordinate purposeful movements with sense information, and is developing the concept of object permanence. The child is in Piaget’s stage:"
+    },
+    {
+      "id": "P32-CH19-CLIN-0001",
+      "chapterId": 19,
+      "subject": "clinical",
+      "text": "Locus of control refers to:"
+    },
+    {
+      "id": "P32-CH19-CLIN-0002",
+      "chapterId": 19,
+      "subject": "clinical",
+      "text": "In social psychology, conformity refers to which of the following:"
+    },
+    {
+      "id": "P32-CH19-CLIN-0003",
+      "chapterId": 19,
+      "subject": "clinical",
+      "text": "The psychology of attribution:"
+    },
+    {
+      "id": "P32-CH19-CLIN-0004",
+      "chapterId": 19,
+      "subject": "clinical",
+      "text": "The drive‑theory of aggressive behaviour states that aggression results from:"
+    },
+    {
+      "id": "P32-CH17-CLIN-0001",
+      "chapterId": 17,
+      "subject": "clinical",
+      "text": "Reasons of frustration include:"
+    },
+    {
+      "id": "P32-CH17-CLIN-0002",
+      "chapterId": 17,
+      "subject": "clinical",
+      "text": "According to Freud, a process that distorts reality to prevent the individual from being overwhelmed by anxiety is known as:"
+    },
+    {
+      "id": "P32-CH17-CLIN-0003",
+      "chapterId": 17,
+      "subject": "clinical",
+      "text": "According to Freud, the defense mechanism that involves reverting to immature behaviors that have relieved anxiety in the past is:"
+    },
+    {
+      "id": "P32-CH17-CLIN-0004",
+      "chapterId": 17,
+      "subject": "clinical",
+      "text": "In Freud's theory, the part of the personality that helps the individual adapt to external reality by making compromises between the id, the superego, and the environment is the:"
+    },
+    {
+      "id": "P32-CH17-CLIN-0005",
+      "chapterId": 17,
+      "subject": "clinical",
+      "text": "The defense mechanism known as ______ involves attributing one's own undesirable feelings to other people."
+    },
+    {
+      "id": "P32-CH17-CLIN-0006",
+      "chapterId": 17,
+      "subject": "clinical",
+      "text": "\"Everyone around me thinks they're big, funny and clever. They're all telling me my goldfish hiding Swimmy has died. They even thought I'd be fooled by flushing a pretend one down the toilet. She's only stiff because she's cold. But It's ok...I put boiling water in there so she could warm up.\" What defence mechanism does this show?"
+    },
+    {
+      "id": "P32-CH17-CLIN-0007",
+      "chapterId": 17,
+      "subject": "clinical",
+      "text": "\"I'm sure my boyfriend has been cheating on me. When I find out he'll be sorry. Oh yeah and I need to buy my husband a birthday present...\" What defence mechanism am I experiencing?"
+    },
+    {
+      "id": "P32-CH17-CLIN-0008",
+      "chapterId": 17,
+      "subject": "clinical",
+      "text": "\"It's so unfair! My mum doesn't care how much I cry and scream, she won't get me a car. She doesn't even care about me! She hates me!\" What defence mechanism does this demonstrate?"
+    },
+    {
+      "id": "P32-CH16-CLIN-0001",
+      "chapterId": 16,
+      "subject": "clinical",
+      "text": "During an encounter judged as stressful, cortisol is released by the:"
+    },
+    {
+      "id": "P32-CH16-CLIN-0002",
+      "chapterId": 16,
+      "subject": "clinical",
+      "text": "The release of ______ decreases the effectiveness of the immune system in responding to prolonged stress."
+    },
+    {
+      "id": "P32-CH16-CLIN-0003",
+      "chapterId": 16,
+      "subject": "clinical",
+      "text": "At the time of acute stress, the adrenal medulla releases ______ that grows heart rate and respiration."
+    },
+    {
+      "id": "P32-CH15-CLIN-0001",
+      "chapterId": 15,
+      "subject": "clinical",
+      "text": "According to the Cannon‑Bard theory of emotion:"
+    },
+    {
+      "id": "P32-CH15-CLIN-0002",
+      "chapterId": 15,
+      "subject": "clinical",
+      "text": "According to the James‑Lange theory of emotion:"
+    },
+    {
+      "id": "P32-CH15-CLIN-0003",
+      "chapterId": 15,
+      "subject": "clinical",
+      "text": "According to Abraham Maslow:"
+    },
+    {
+      "id": "P32-CH15-CLIN-0004",
+      "chapterId": 15,
+      "subject": "clinical",
+      "text": "Self‑actualization is:"
+    },
+    {
+      "id": "P32-CH11-CLIN-0001",
+      "chapterId": 11,
+      "subject": "clinical",
+      "text": "In the development of language, the child by the age of 1–2 years:"
+    },
+    {
+      "id": "P32-CH11-CLIN-0002",
+      "chapterId": 11,
+      "subject": "clinical",
+      "text": "The set of rules that governs the proper use and combination of language symbols is:"
+    },
+    {
+      "id": "P32-CH11-CLIN-0003",
+      "chapterId": 11,
+      "subject": "clinical",
+      "text": "Learning the speech sounds of the native language is known as:"
+    },
+    {
+      "id": "P32-CH11-CLIN-0004",
+      "chapterId": 11,
+      "subject": "clinical",
+      "text": "Semantics refers to:"
+    },
+    {
+      "id": "P32-CH11-CLIN-0005",
+      "chapterId": 11,
+      "subject": "clinical",
+      "text": "Pragmatics is:"
+    },
+    {
+      "id": "P32-CH11-CLIN-0006",
+      "chapterId": 11,
+      "subject": "clinical",
+      "text": "Syntax is:"
+    },
+    {
+      "id": "P32-CH11-CLIN-0007",
+      "chapterId": 11,
+      "subject": "clinical",
+      "text": "The suggestion that infants are born as \"universal language perceivers\" according to Chomsky refers to:"
+    },
+    {
+      "id": "P32-CH8-CLIN-0001",
+      "chapterId": 8,
+      "subject": "clinical",
+      "text": "The definition of memory is that it is an active system that receives, organizes, and:"
+    },
+    {
+      "id": "P32-CH8-CLIN-0002",
+      "chapterId": 8,
+      "subject": "clinical",
+      "text": "The first step in placing information into memory storage is:"
+    },
+    {
+      "id": "P32-CH8-CLIN-0003",
+      "chapterId": 8,
+      "subject": "clinical",
+      "text": "Procedural memory, unlike declarative memory, is responsible for:"
+    },
+    {
+      "id": "P32-CH8-CLIN-0004",
+      "chapterId": 8,
+      "subject": "clinical",
+      "text": "Why are mnemonic devices effective?"
+    },
+    {
+      "id": "P32-CH8-CLIN-0005",
+      "chapterId": 8,
+      "subject": "clinical",
+      "text": "The process of holding information in memory is referred to as:"
+    },
+    {
+      "id": "P32-CH8-CLIN-0006",
+      "chapterId": 8,
+      "subject": "clinical",
+      "text": "The storage capacity of long‑term memory is best described as:"
+    },
+    {
+      "id": "P32-CH8-CLIN-0007",
+      "chapterId": 8,
+      "subject": "clinical",
+      "text": "The inability to recall events preceding an accident involving injuries to the head is called:"
+    },
+    {
+      "id": "P32-CH8-CLIN-0008",
+      "chapterId": 8,
+      "subject": "clinical",
+      "text": "According to the interference theory of forgetting:"
+    },
+    {
+      "id": "P32-CH7-CLIN-0001",
+      "chapterId": 7,
+      "subject": "clinical",
+      "text": "An imaginary perception, such as seeing, hearing, or smelling something that does not exist in the external world is called a(n):"
+    },
+    {
+      "id": "P32-CH7-CLIN-0002",
+      "chapterId": 7,
+      "subject": "clinical",
+      "text": "Television advertisements that are in black and white are just trying to take advantage of which attention getting technique?"
+    },
+    {
+      "id": "P32-CH7-CLIN-0003",
+      "chapterId": 7,
+      "subject": "clinical",
+      "text": "Illusions are:"
+    }
+  ],
+  "skippedDuplicates": [],
+  "removedExistingDuplicates": [],
+  "needsReview": []
+}

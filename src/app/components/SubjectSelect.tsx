@@ -295,7 +295,7 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart, 
   ];
 
   return (
-    <div dir={isRTL ? 'rtl' : 'ltr'} className="relative min-h-screen overflow-hidden bg-background text-foreground">
+    <div dir={isRTL ? 'rtl' : 'ltr'} className="relative min-h-screen overflow-hidden text-foreground">
       {/* Themed floating blobs */}
       <motion.div
         aria-hidden
