@@ -45,6 +45,22 @@
   --color-clinical-light:    #ECFEFF;
   --color-clinical-dark:     #0891B2;
 
+  --color-parasitology:      #F43F5E;
+  --color-parasitology-light:#FFF1F2;
+  --color-parasitology-dark: #E11D48;
+
+  --color-psychiatry:        #6366F1;
+  --color-psychiatry-light:  #EEF2FF;
+  --color-psychiatry-dark:   #4F46E5;
+
+  --color-ophthalmology:     #0D9488;
+  --color-ophthalmology-light:#F0FDFA;
+  --color-ophthalmology-dark: #0F766E;
+
+  --color-ent:               #0EA5E9;
+  --color-ent-light:         #F0F9FF;
+  --color-ent-dark:          #0369A1;
+
   --color-success:           #22C55E;
   --color-success-light:     #F0FDF4;
   --color-success-dark:      #15803D;

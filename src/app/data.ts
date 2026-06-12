@@ -55,7 +55,11 @@ function topicToColor(topic: string): SubjectColor {
   if (t.includes('histology')) return 'histology';
   if (t.includes('physiology')) return 'physiology';
   if (t.includes('biochem')) return 'biochem';
-  if (t.includes('micro') || t.includes('bacter') || t.includes('virus') || t.includes('parasit') || t.includes('fung')) return 'microbiology';
+  if (t.includes('parasit')) return 'parasitology';
+  if (t.includes('psychiat')) return 'psychiatry';
+  if (t.includes('ophthalm') || t.includes('eye')) return 'ophthalmology';
+  if (t.includes('ent') || t.includes('ear') || t.includes('hearing') || t.includes('smell') || t.includes('taste') || t.includes('oto')) return 'ent';
+  if (t.includes('micro') || t.includes('bacter') || t.includes('virus') || t.includes('fung')) return 'microbiology';
   if (t.includes('pathology')) return 'pathology';
   if (t.includes('pharmacology') || t.includes('pharma')) return 'pharma';
   if (t.includes('clinical') || t.includes('case')) return 'clinical';
@@ -71,6 +75,10 @@ const colorToName: Record<SubjectColor, string> = {
   pathology: 'Pathology',
   pharma: 'Pharmacology',
   clinical: 'Clinical',
+  parasitology: 'Parasitology',
+  psychiatry: 'Psychiatry',
+  ophthalmology: 'Ophthalmology',
+  ent: 'E.N.T.',
 };
 
 const colorToIcon: Record<SubjectColor, string> = {
@@ -82,6 +90,10 @@ const colorToIcon: Record<SubjectColor, string> = {
   pathology: 'ShieldAlert',
   pharma: 'Pill',
   clinical: 'Stethoscope',
+  parasitology: 'Bug',
+  psychiatry: 'Brain',
+  ophthalmology: 'Eye',
+  ent: 'Ear',
 };
 
 const SUBJECT_ORDER: SubjectColor[] = [
@@ -90,8 +102,12 @@ const SUBJECT_ORDER: SubjectColor[] = [
   'physiology',
   'biochem',
   'microbiology',
+  'parasitology',
   'pathology',
   'pharma',
+  'psychiatry',
+  'ophthalmology',
+  'ent',
   'clinical',
 ];
 
@@ -286,7 +302,8 @@ export const SYLLABUS_MODULES: Record<number, Record<number, ModuleInfo[]>> = {
       { code: 'MCVS-2', name: 'Cardiovascular System Module', cp: 11, marks: 220, keywords: ['cardio', 'cvs', 'mcvs', 'cardiovascular', 'heart', 'cardiac', 'blood vessels', 'artery', 'vein', 'circulation'] },
     ],
     2: [
-      { code: 'MCNS-2', name: 'Central Nervous System Module', cp: 13, marks: 260, keywords: ['cns', 'central nervous', 'mcns', 'neuro', 'neurology', 'brain', 'spinal cord', 'cerebrum', 'cerebellum', 'sensory', 'motor', 'nerves'] },
+      { code: 'MCNS1-2', name: 'Central Nervous System 1 Module', cp: 6.5, marks: 130, keywords: ['cns1', 'cns 1', 'mcns1', 'neuro1', 'cns-1', 'brainstem', 'neck', 'sensory system', 'motor system'] },
+      { code: 'MCNS2-2', name: 'Central Nervous System 2 Module', cp: 6.5, marks: 130, keywords: ['cns2', 'cns 2', 'mcns2', 'neuro2', 'cns-2', 'diencephalon', 'cerebrum', 'sleep', 'epilepsy', 'infections'] },
       { code: 'MSS-2', name: 'Special Senses Module', cp: 4, marks: 80, keywords: ['special senses', 'senses', 'mss', 'eye', 'ear', 'ophthalmology', 'vision', 'hearing', 'olfaction', 'taste'] },
       { code: 'MEM-2', name: 'Endocrine System & Metabolism Module', cp: 5.5, marks: 110, keywords: ['endocrine', 'metabolism', 'mem', 'hormone', 'hormones', 'pituitary', 'thyroid', 'adrenal', 'pancreas', 'diabetes'] },
       { code: 'P3-2', name: 'Behavioral science', cp: 1.5, marks: 30, keywords: ['behavioral', 'science', 'psychology', 'psychiatry', 'behavioral science'] },

@@ -6,7 +6,11 @@ export type SubjectColor =
   | 'histology'
   | 'pathology'
   | 'pharma'
-  | 'clinical';
+  | 'clinical'
+  | 'parasitology'
+  | 'psychiatry'
+  | 'ophthalmology'
+  | 'ent';
 
 export type Screen =
   | 'yearSelect'
@@ -234,6 +238,74 @@ export const subjectStyles: Record<SubjectColor, SubjectStyle> = {
     gradientFrom: 'from-clinical/15',
     gradientTo: 'to-clinical/5',
     hoverShadowRgba: 'rgba(6,182,212,0.15)',
+  },
+  parasitology: {
+    bg: 'bg-parasitology',
+    bgOp5: 'bg-parasitology/5',
+    bgOp8: 'bg-parasitology/8',
+    bgOp10: 'bg-parasitology/10',
+    bgOp15: 'bg-parasitology/15',
+    text: 'text-parasitology',
+    textDark: 'text-parasitology-dark',
+    border: 'border-parasitology',
+    borderOp10: 'border-parasitology/10',
+    borderOp15: 'border-parasitology/15',
+    borderOp40: 'border-parasitology/40',
+    hoverBorder: 'hover:border-parasitology/40',
+    gradientFrom: 'from-parasitology/15',
+    gradientTo: 'to-parasitology/5',
+    hoverShadowRgba: 'rgba(244,63,94,0.15)',
+  },
+  psychiatry: {
+    bg: 'bg-psychiatry',
+    bgOp5: 'bg-psychiatry/5',
+    bgOp8: 'bg-psychiatry/8',
+    bgOp10: 'bg-psychiatry/10',
+    bgOp15: 'bg-psychiatry/15',
+    text: 'text-psychiatry',
+    textDark: 'text-psychiatry-dark',
+    border: 'border-psychiatry',
+    borderOp10: 'border-psychiatry/10',
+    borderOp15: 'border-psychiatry/15',
+    borderOp40: 'border-psychiatry/40',
+    hoverBorder: 'hover:border-psychiatry/40',
+    gradientFrom: 'from-psychiatry/15',
+    gradientTo: 'to-psychiatry/5',
+    hoverShadowRgba: 'rgba(99,102,241,0.15)',
+  },
+  ophthalmology: {
+    bg: 'bg-ophthalmology',
+    bgOp5: 'bg-ophthalmology/5',
+    bgOp8: 'bg-ophthalmology/8',
+    bgOp10: 'bg-ophthalmology/10',
+    bgOp15: 'bg-ophthalmology/15',
+    text: 'text-ophthalmology',
+    textDark: 'text-ophthalmology-dark',
+    border: 'border-ophthalmology',
+    borderOp10: 'border-ophthalmology/10',
+    borderOp15: 'border-ophthalmology/15',
+    borderOp40: 'border-ophthalmology/40',
+    hoverBorder: 'hover:border-ophthalmology/40',
+    gradientFrom: 'from-ophthalmology/15',
+    gradientTo: 'to-ophthalmology/5',
+    hoverShadowRgba: 'rgba(13,148,136,0.15)',
+  },
+  ent: {
+    bg: 'bg-ent',
+    bgOp5: 'bg-ent/5',
+    bgOp8: 'bg-ent/8',
+    bgOp10: 'bg-ent/10',
+    bgOp15: 'bg-ent/15',
+    text: 'text-ent',
+    textDark: 'text-ent-dark',
+    border: 'border-ent',
+    borderOp10: 'border-ent/10',
+    borderOp15: 'border-ent/15',
+    borderOp40: 'border-ent/40',
+    hoverBorder: 'hover:border-ent/40',
+    gradientFrom: 'from-ent/15',
+    gradientTo: 'to-ent/5',
+    hoverShadowRgba: 'rgba(14,165,233,0.15)',
   },
 };
 

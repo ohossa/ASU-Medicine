@@ -16,7 +16,11 @@ import {
   CheckCircle,
   Clock,
   Layers,
-  Award
+  Award,
+  Brain,
+  Eye,
+  Ear,
+  Bug
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -78,6 +82,10 @@ const ACCENT: Record<SubjectColor, { text: string; softBg: string; solidBg: stri
   pathology:    { text: 'text-pathology',    softBg: 'bg-pathology/10',    solidBg: 'bg-pathology',    border: 'border-pathology/30',    gradient: 'from-pathology/20 to-pathology/5' },
   pharma:       { text: 'text-pharma',       softBg: 'bg-pharma/10',       solidBg: 'bg-pharma',       border: 'border-pharma/30',       gradient: 'from-pharma/20 to-pharma/5' },
   clinical:     { text: 'text-clinical',     softBg: 'bg-clinical/10',     solidBg: 'bg-clinical',     border: 'border-clinical/30',     gradient: 'from-clinical/20 to-clinical/5' },
+  parasitology: { text: 'text-parasitology', softBg: 'bg-parasitology/10', solidBg: 'bg-parasitology', border: 'border-parasitology/30', gradient: 'from-parasitology/20 to-parasitology/5' },
+  psychiatry:   { text: 'text-psychiatry',   softBg: 'bg-psychiatry/10',   solidBg: 'bg-psychiatry',   border: 'border-psychiatry/30',   gradient: 'from-psychiatry/20 to-psychiatry/5' },
+  ophthalmology:{ text: 'text-ophthalmology',softBg: 'bg-ophthalmology/10',solidBg: 'bg-ophthalmology',border: 'border-ophthalmology/30',gradient: 'from-ophthalmology/20 to-ophthalmology/5' },
+  ent:          { text: 'text-ent',          softBg: 'bg-ent/10',          solidBg: 'bg-ent',          border: 'border-ent/30',          gradient: 'from-ent/20 to-ent/5' },
 };
 
 const ICON_BY_NAME: Record<string, LucideIcon> = {
@@ -91,6 +99,10 @@ const ICON_BY_NAME: Record<string, LucideIcon> = {
   pill: Pill,
   stethoscope: Stethoscope,
   biohazard: Biohazard,
+  brain: Brain,
+  eye: Eye,
+  ear: Ear,
+  bug: Bug,
 };
 
 const ICON_BY_SUBJECT: Record<SubjectColor, LucideIcon> = {
@@ -102,6 +114,10 @@ const ICON_BY_SUBJECT: Record<SubjectColor, LucideIcon> = {
   pathology: ShieldAlert,
   pharma: Pill,
   clinical: Stethoscope,
+  parasitology: Bug,
+  psychiatry: Brain,
+  ophthalmology: Eye,
+  ent: Ear,
 };
 
 const iconFor = (subject: SubjectData): LucideIcon =>
