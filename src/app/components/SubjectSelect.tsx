@@ -362,7 +362,11 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart, 
             <div>
               <h1 className="text-2xl font-bold tracking-tight sm:text-3xl text-foreground dark:text-white">{chapter.title}</h1>
               <p className="mt-1 text-sm text-muted-foreground dark:text-white/50">
-                {chapter.subtitle} · {label('page')} {chapter.page} · {chapter.lectureRange}
+                {chapter.id === 0 ? (
+                  `${chapter.subtitle} · ${chapter.lectureRange}`
+                ) : (
+                  `${chapter.subtitle} · ${label('page')} ${chapter.page} · ${chapter.lectureRange}`
+                )}
               </p>
             </div>
           </div>
