@@ -696,3 +696,27 @@
   color: #ffffff !important;
 }
 
+/* Clerk Last Used Badge Polish */
+.clerk-dark-theme-container .cl-socialButtonsBlockButton {
+  position: relative !important;
+}
+
+.clerk-dark-theme-container .cl-socialButtonsBlockButtonBadge,
+.clerk-dark-theme-container .cl-socialButtonsBlockButton__badge {
+  position: absolute !important;
+  top: 0 !important;
+  right: 16px !important;
+  transform: translateY(-50%) !important;
+  background-color: rgba(45, 212, 191, 0.15) !important;
+  border: 1px solid rgba(45, 212, 191, 0.35) !important;
+  color: #2dd4bf !important;
+  font-size: 8.5px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.05em !important;
+  padding: 1.5px 7px !important;
+  border-radius: 9999px !important;
+  line-height: 1.2 !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6) !important;
+}
+

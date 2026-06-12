@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Activity, BookOpen, RefreshCw, Shield } from "lucide-react";
+import { Activity, BookOpen, Search, Heart } from "lucide-react";
 import { SignIn } from "@clerk/clerk-react";
 import { dark } from "@clerk/themes";
 
@@ -36,7 +36,12 @@ const clerkAppearance = {
     headerSubtitle: "text-[#8e8e93]",
     socialButtonsBlockButton:
       "border border-white/[0.08] bg-white/[0.04] text-slate-200 " +
-      "hover:bg-white/[0.07] transition-colors duration-200",
+      "hover:bg-white/[0.07] transition-colors duration-200 relative",
+    socialButtonsBlockButtonBadge:
+      "!absolute !top-0 !right-4 !-translate-y-1/2 " +
+      "!bg-teal-500/15 !border !border-teal-500/30 !text-teal-400 " +
+      "!text-[8.5px] !font-extrabold !uppercase !tracking-widest !px-2.5 !py-0.5 !rounded-full " +
+      "!leading-none !shadow-md",
     dividerLine: "bg-white/[0.08]",
     dividerText: "text-[#8e8e93]",
     formFieldLabel: "text-slate-300",
@@ -56,19 +61,19 @@ const clerkAppearance = {
 
 const FEATURES = [
   {
+    icon: Heart,
+    title: "Clinical Case Solver",
+    desc: "Solve randomized clinical cases with vital monitors, history sheets, and diagnostic tests.",
+  },
+  {
     icon: BookOpen,
-    title: "All question types",
-    desc: "MCQ, Essay, Fill-in-the-blank, Matching, Case Studies — every format your exam demands.",
+    title: "Syllabus & Study Tracker",
+    desc: "Track syllabus progress, lecture completion checklists, and store notes for every chapter.",
   },
   {
-    icon: RefreshCw,
-    title: "Cross-device sync",
-    desc: "Progress, notes, and quiz history sync automatically via the cloud.",
-  },
-  {
-    icon: Shield,
-    title: "Secure & private",
-    desc: "Clerk-powered authentication keeps your data yours — no shared databases.",
+    icon: Search,
+    title: "Question Search & Calculator",
+    desc: "Search text across all database questions and calculate target grades or marks requirements.",
   },
 ];
 
@@ -89,52 +94,32 @@ export function LoginScreen() {
 
       <div className="relative z-10 mx-auto grid min-h-screen w-full max-w-6xl
                       grid-cols-1 items-center gap-16 px-6 py-16
-                      lg:grid-cols-2 lg:gap-24 lg:px-12">
+                      lg:grid-cols-2 lg:gap-24 lg:px-12 lg:items-start lg:pt-40 lg:pb-24">
 
         {/* ----------------------- Left: brand & features ------------------- */}
-        <section className="mx-auto w-full max-w-md lg:mx-0">
-
-          {/* Logo mark */}
-          <motion.div {...fadeUp(0)} className="flex items-center gap-4">
-            <div
-              className="grid h-12 w-12 place-items-center rounded-2xl"
-              style={{
-                backgroundColor: "#121214",
-                border: "1px solid rgba(255,255,255,0.06)",
-              }}
+        <section className="mx-auto w-full max-w-md lg:mx-0 lg:h-[480px] flex flex-col justify-between">
+          <div>
+            {/* Headline */}
+            <motion.h1
+              {...fadeUp(0.1)}
+              className="text-4xl font-semibold leading-[1.15] tracking-tight
+                         text-white sm:text-5xl"
             >
-              <Activity size={20} strokeWidth={1.5} className="text-white" />
-            </div>
-            <div>
-              <p className="text-base font-bold tracking-tight text-white">
-                ASU Medical Portal
-              </p>
-              <p className="font-mono text-[10px] uppercase tracking-widest text-[#8e8e93]">
-                Ain Shams University
-              </p>
-            </div>
-          </motion.div>
+              Master your Medical Studies.
+            </motion.h1>
 
-          {/* Headline */}
-          <motion.h1
-            {...fadeUp(0.1)}
-            className="mt-12 text-4xl font-semibold leading-[1.1] tracking-tight
-                       text-white sm:text-5xl"
-          >
-            Master your Medical Studies.
-          </motion.h1>
-
-          {/* Intro */}
-          <motion.p
-            {...fadeUp(0.2)}
-            className="mt-5 text-base leading-relaxed text-[#8e8e93]"
-          >
-            Practice every question format, track your syllabus, and study
-            smarter — built for ASU Medicine students.
-          </motion.p>
+            {/* Intro */}
+            <motion.p
+              {...fadeUp(0.2)}
+              className="mt-4 text-[14.5px] leading-relaxed text-[#8e8e93]"
+            >
+              Practice every question format, track your syllabus, and study
+              smarter — built for ASU Medicine students.
+            </motion.p>
+          </div>
 
           {/* Features */}
-          <div className="mt-12 space-y-7">
+          <div className="space-y-6 lg:mt-0 mt-8">
             {FEATURES.map((f, i) => {
               const Icon = f.icon;
               return (
@@ -161,7 +146,7 @@ export function LoginScreen() {
                   </div>
                   <div>
                     <h3 className="text-sm font-medium text-white">{f.title}</h3>
-                    <p className="mt-1 text-sm leading-relaxed text-[#8e8e93]">
+                    <p className="mt-1 text-[13px] leading-relaxed text-[#8e8e93]">
                       {f.desc}
                     </p>
                   </div>
@@ -188,7 +173,7 @@ export function LoginScreen() {
               boxShadow: "0 24px 80px rgba(0,0,0,0.45)",
             }}
           >
-            <div className="clerk-dark-theme-container">
+            <div className="clerk-dark-theme-container lg:h-[480px] flex items-center justify-center">
               <SignIn routing="hash" appearance={clerkAppearance} />
             </div>
           </div>

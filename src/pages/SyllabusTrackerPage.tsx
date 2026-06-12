@@ -409,8 +409,25 @@ export function SyllabusTrackerPage({ userButton }: { userButton?: React.ReactNo
         data-tab={tab}
       >
 
-      {/* Main Split Area */}
-      <div className="main">
+        {/* Sub-Header with Back Button for mobile and desktop viewports */}
+        <div className="flex items-center justify-between px-5 py-3 border-b border-zinc-200/60 dark:border-white/[0.06] bg-white/40 dark:bg-black/20 backdrop-blur-md relative z-20 shrink-0">
+          <button
+            onClick={() => navigate(`/year-2/${moduleCode.toLowerCase()}`)}
+            className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl border border-zinc-200/80 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.02] text-xs font-bold text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-white/[0.06] hover:border-zinc-300 dark:hover:border-white/[0.14] transition-all duration-200 active:scale-95 cursor-pointer"
+          >
+            <ArrowLeft size={14} className={isRTL ? 'rotate-180' : ''} />
+            <span>{isRTL ? 'العودة للمواد' : 'Back to Modules'}</span>
+          </button>
+          
+          <span className="text-xs font-bold tracking-wider text-gray-400 dark:text-gray-500 uppercase">
+            {moduleCode} · {isRTL ? 'متتبع المنهج' : 'Syllabus Tracker'}
+          </span>
+          
+          <div className="w-[110px] hidden sm:block" />
+        </div>
+
+        {/* Main Split Area */}
+        <div className="main">
         {/* Left Pane - Syllabus Outline */}
         <aside className="pane outline-pane">
           <div className="pane-head">
