@@ -1,10 +1,26 @@
 import { useState, useEffect, useRef, Suspense, lazy } from 'react';
 import { BrowserRouter, Routes, Route, Navigate, useParams, useNavigate, useLocation } from 'react-router';
 import { ProgressProvider } from './store/progress';
-import { LevelUpOverlay } from './components/LevelUpOverlay';
-import Dashboard from '../pages/Dashboard';
-import YearModules from '../pages/YearModules';
-import StudyMode from '../pages/StudyMode';
+import { FX } from './lib/fx.config';
+import { useDeferredMount } from './hooks/useDeferredMount';
+
+// Lazy-loaded components for routing/modals
+const Dashboard = lazy(() => import('../pages/Dashboard'));
+const YearModules = lazy(() => import('../pages/YearModules'));
+const StudyMode = lazy(() => import('../pages/StudyMode'));
+const SubjectSelect = lazy(() => import('./components/SubjectSelect').then(m => ({ default: m.SubjectSelect })));
+const StudyTrackerSelectorModal = lazy(() => import('./components/StudyTrackerSelectorModal').then(m => ({ default: m.StudyTrackerSelectorModal })));
+
+// Lazy-loaded FX layer components
+const LazyLevelUpOverlay = lazy(() => import('./components/LevelUpOverlay').then(m => ({ default: m.LevelUpOverlay })));
+const LazyInteractiveBackground = lazy(() => import('./components/ui/InteractiveBackground').then(m => ({ default: m.InteractiveBackground })));
+const LazyConfettiManager = lazy(() => import('./components/ConfettiManager').then(m => ({ default: m.ConfettiManager })));
+const LazySoundManagerComponent = lazy(() => import('./components/SoundManagerComponent').then(m => ({ default: m.SoundManagerComponent })));
+
+// Eager mode aliases (using lazy loading under the hood to prevent entry bundle bloat)
+const EagerLevelUpOverlay = LazyLevelUpOverlay;
+const EagerInteractiveBackground = LazyInteractiveBackground;
+
 import { createPortal } from 'react-dom';
 import { AnimatePresence } from 'framer-motion';
 import {
@@ -36,7 +52,6 @@ import {
 } from 'lucide-react';
 import type { ChapterData, SubjectData, Question, Screen, SubjectColor } from './types';
 const ChapterSelect = lazy(() => import('./components/ChapterSelect').then(m => ({ default: m.ChapterSelect })));
-import { SubjectSelect } from './components/SubjectSelect';
 const QuizInterface = lazy(() => import('./components/QuizInterface').then(m => ({ default: m.QuizInterface })));
 const ResultsDashboard = lazy(() => import('./components/ResultsDashboard').then(m => ({ default: m.ResultsDashboard })));
 const HistoryScreen = lazy(() => import('./components/HistoryScreen').then(m => ({ default: m.HistoryScreen })));
@@ -47,12 +62,10 @@ const QuestionSearch = lazy(() => import('./components/QuestionSearch').then(m =
 const MarksCalculator = lazy(() => import('./components/MarksCalculator').then(m => ({ default: m.MarksCalculator })));
 const SyllabusTrackerPage = lazy(() => import('../pages/SyllabusTrackerPage').then(m => ({ default: m.SyllabusTrackerPage })));
 import { SyllabusTracker } from './components/SyllabusTracker';
-import { StudyTrackerSelectorModal } from './components/StudyTrackerSelectorModal';
 import { ThemeProvider, useTheme } from './context/ThemeContext';
 import { ThemeToggle } from './components/ThemeToggle';
 import { LanguageProvider, useLanguage } from './context/LanguageContext';
 import { LanguageToggle } from './components/LanguageToggle';
-import { InteractiveBackground } from './components/ui/InteractiveBackground';
 import { StackedCarousel } from './components/ui/StackedCarousel';
 import { saveQuizResult, getQuizHistory } from './utils/storage';
 import type { QuizResult } from './utils/storage';
@@ -429,19 +442,21 @@ function QuizFlowWrapper({
       )}
 
       {screen === 'subjects' && selectedChapter && (
-        <SubjectSelect
-          chapter={selectedChapter}
-          breadcrumbPath={[
-            { label: t('portal') || 'Portal', onClick: () => navigate('/') },
-            { label: t(`year${selectedYear || 2}`) || `Year ${selectedYear || 2}`, onClick: () => navigate('/year-2') },
-            { label: selectedModule?.name || '', onClick: () => navigate(`/year-2/${selectedModule.code.toLowerCase()}`) },
-            { label: selectedChapter.title }
-          ]}
-          onBack={() => setScreen('chapters')}
-          onSelectSubject={handleSelectSubject}
-          onQuickStart={handleQuickStart}
-          userButton={customUserButton}
-        />
+        <Suspense fallback={<div>Loading...</div>}>
+          <SubjectSelect
+            chapter={selectedChapter}
+            breadcrumbPath={[
+              { label: t('portal') || 'Portal', onClick: () => navigate('/') },
+              { label: t(`year${selectedYear || 2}`) || `Year ${selectedYear || 2}`, onClick: () => navigate('/year-2') },
+              { label: selectedModule?.name || '', onClick: () => navigate(`/year-2/${selectedModule.code.toLowerCase()}`) },
+              { label: selectedChapter.title }
+            ]}
+            onBack={() => setScreen('chapters')}
+            onSelectSubject={handleSelectSubject}
+            onQuickStart={handleQuickStart}
+            userButton={customUserButton}
+          />
+        </Suspense>
       )}
 
       {screen === 'quiz' && quizPayload && (
@@ -1067,9 +1082,9 @@ function MainApp() {
       appearance={{
         baseTheme: undefined,
         elements: {
-          userButtonBox: "w-11 h-11 md:w-12 md:h-12",
-          userButtonTrigger: "w-11 h-11 md:w-12 md:h-12",
-          userButtonAvatarBox: "w-11 h-11 md:w-12 md:h-12 border border-physiology shadow-md",
+          userButtonBox: "w-9 h-9",
+          userButtonTrigger: "w-9 h-9",
+          userButtonAvatarBox: "w-9 h-9 border border-physiology shadow-md",
           userButtonAvatarImage: "w-full h-full object-cover",
         }
       }}
@@ -1213,38 +1228,44 @@ function MainApp() {
         <AnimatePresence mode="wait">
           <Routes location={location} key={location.pathname}>
             {/* Main Dashboard page */}
-          <Route path="/" element={
-            <Dashboard 
-              userButton={customUserButton} 
-              onOpenTrackerSelector={() => setShowTrackerSelector(true)} 
-            />
-          } />
+            <Route path="/" element={
+              <Suspense fallback={<div className="fixed inset-0 bg-background pointer-events-none" />}>
+                <Dashboard 
+                  userButton={customUserButton} 
+                  onOpenTrackerSelector={() => setShowTrackerSelector(true)} 
+                />
+              </Suspense>
+            } />
 
-          {/* Year Modules page */}
-          <Route path="/year-2" element={
-            <YearModules 
-              userButton={customUserButton} 
-            />
-          } />
+            {/* Year Modules page */}
+            <Route path="/year-2" element={
+              <Suspense fallback={<div className="fixed inset-0 bg-background pointer-events-none" />}>
+                <YearModules 
+                  userButton={customUserButton} 
+                />
+              </Suspense>
+            } />
 
-          {/* Study Mode Selector page */}
-          <Route path="/year-2/:code" element={
-            <StudyMode 
-              userButton={customUserButton} 
-              onStartStudyMode={(mode, mCode) => {
-                const targetModule = lookupModule(mCode);
-                if (targetModule) {
-                  setSelectedModule(targetModule);
-                  setStudyMode(mode);
-                  setScreen('chapters');
-                  navigate(`/year-2/${mCode.toLowerCase()}/${mode}`);
-                }
-              }}
-              onOpenSyllabus={(mCode) => {
-                navigate(`/year-2/${mCode.toLowerCase()}/tracker`);
-              }}
-            />
-          } />
+            {/* Study Mode Selector page */}
+            <Route path="/year-2/:code" element={
+              <Suspense fallback={<div className="fixed inset-0 bg-background pointer-events-none" />}>
+                <StudyMode 
+                  userButton={customUserButton} 
+                  onStartStudyMode={(mode, mCode) => {
+                    const targetModule = lookupModule(mCode);
+                    if (targetModule) {
+                      setSelectedModule(targetModule);
+                      setStudyMode(mode);
+                      setScreen('chapters');
+                      navigate(`/year-2/${mCode.toLowerCase()}/${mode}`);
+                    }
+                  }}
+                  onOpenSyllabus={(mCode) => {
+                    navigate(`/year-2/${mCode.toLowerCase()}/tracker`);
+                  }}
+                />
+              </Suspense>
+            } />
 
           {/* Chapters / Quiz sub-flow wrapper */}
           <Route path="/year-2/:code/:mode" element={
@@ -1363,13 +1384,15 @@ function MainApp() {
 
       <AnimatePresence>
         {showTrackerSelector && (
-          <StudyTrackerSelectorModal
-            onClose={() => setShowTrackerSelector(false)}
-            onSelectModule={(mod) => {
-              setShowTrackerSelector(false);
-              navigate(`/year-2/${mod.code.toLowerCase()}/tracker`);
-            }}
-          />
+          <Suspense fallback={null}>
+            <StudyTrackerSelectorModal
+              onClose={() => setShowTrackerSelector(false)}
+              onSelectModule={(mod) => {
+                setShowTrackerSelector(false);
+                navigate(`/year-2/${mod.code.toLowerCase()}/tracker`);
+              }}
+            />
+          </Suspense>
         )}
       </AnimatePresence>
 
@@ -1685,6 +1708,7 @@ function MainApp() {
 
 export default function App() {
   const [ready, setReady] = useState(false);
+  const deferredMounted = useDeferredMount();
 
   if (!ready) {
     return <LoadingScreen onComplete={() => setReady(true)} />;
@@ -1694,7 +1718,19 @@ export default function App() {
     <ThemeProvider>
       {/* Dynamic Floating Background Blobs & Interactive Dots */}
       <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
-        <InteractiveBackground />
+        {FX.DEFERRED_FX ? (
+          deferredMounted && FX.reactiveBackground && (
+            <Suspense fallback={null}>
+              <LazyInteractiveBackground />
+            </Suspense>
+          )
+        ) : (
+          FX.reactiveBackground && (
+            <Suspense fallback={null}>
+              <EagerInteractiveBackground />
+            </Suspense>
+          )
+        )}
         <div className="absolute top-[10%] left-[5%] h-[35vw] w-[35vw] rounded-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-physiology/30 to-transparent dark:from-physiology/20 blob-float-1" />
         <div className="absolute bottom-[10%] right-[5%] h-[40vw] w-[40vw] rounded-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-anatomy/30 to-transparent dark:from-anatomy/20 blob-float-2" />
       </div>
@@ -1703,7 +1739,21 @@ export default function App() {
         <BrowserRouter>
           <ProgressProvider>
             <MainApp />
-            <LevelUpOverlay />
+            {FX.DEFERRED_FX ? (
+              deferredMounted && (
+                <Suspense fallback={null}>
+                  {FX.gamification && <LazyLevelUpOverlay />}
+                  {FX.confetti && <LazyConfettiManager />}
+                  {FX.sound && <LazySoundManagerComponent />}
+                </Suspense>
+              )
+            ) : (
+              FX.gamification && (
+                <Suspense fallback={null}>
+                  <EagerLevelUpOverlay />
+                </Suspense>
+              )
+            )}
           </ProgressProvider>
         </BrowserRouter>
       </SignedIn>

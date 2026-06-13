@@ -1,7 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, Suspense, lazy } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Activity } from "lucide-react";
-import { ECGMonitor } from "./ECGMonitor";
+import { FX } from "../lib/fx.config";
+import { useDeferredMount } from "../hooks/useDeferredMount";
+import { ECGMonitor as EagerECGMonitor } from "./ECGMonitor";
+
+const LazyECGMonitor = lazy(() => import("./ECGMonitor").then(m => ({ default: m.ECGMonitor })));
 
 interface LoadingScreenProps {
   isLoading?: boolean;
@@ -19,6 +23,7 @@ export default function LoadingScreen({
   onComplete,
   duration = 2400, // simulated load time (ms) when uncontrolled
 }: LoadingScreenProps) {
+  const deferredMounted = useDeferredMount();
   const isControlled = controlledLoading !== undefined;
   const [internalProgress, setInternalProgress] = useState(0);
   const [internalLoading, setInternalLoading] = useState(true);
@@ -60,8 +65,16 @@ export default function LoadingScreen({
           className="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-background text-foreground"
         >
           {/* Breathing logo mark / ECG Monitor */}
-          <div className="w-56 mb-8">
-            <ECGMonitor height={64} />
+          <div className="w-56 mb-8 h-16 flex items-center justify-center">
+            {FX.DEFERRED_FX ? (
+              deferredMounted && FX.ecgMonitor ? (
+                <Suspense fallback={null}>
+                  <LazyECGMonitor height={64} />
+                </Suspense>
+              ) : null
+            ) : (
+              FX.ecgMonitor && <EagerECGMonitor height={64} />
+            )}
           </div>
 
           {/* Wordmark */}

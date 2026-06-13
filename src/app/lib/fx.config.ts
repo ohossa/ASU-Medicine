@@ -1,5 +1,6 @@
 // Central feature flags. Flip anything off instantly.
 export const FX = {
+  DEFERRED_FX: true,        // master flag to defer FX loading for LCP/FCP optimizations
   reactiveBackground: true, // bg responds to quiz state
   ecgMonitor: true,         // heartbeat line under timer
   confetti: true,           // celebration on completion / perfect score

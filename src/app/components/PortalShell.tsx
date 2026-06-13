@@ -22,11 +22,13 @@ export function PortalShell({ crumbs, children, userButton, hideFooter }: { crum
             <span className="font-heading font-black tracking-tight text-[15px] leading-tight">
               ASU Medical Portal
             </span>
-            {isLoaded && isSignedIn && displayName && (
-              <span className="text-[10.5px] font-bold tracking-wide text-zinc-400 dark:text-zinc-500 leading-none mt-0.5 opacity-90">
-                {displayName}
-              </span>
-            )}
+            <div className="h-[14px] flex items-center justify-center mt-0.5">
+              {isLoaded && isSignedIn && displayName ? (
+                <span className="text-[10.5px] font-bold tracking-wide text-zinc-400 dark:text-zinc-500 leading-none opacity-90">
+                  {displayName}
+                </span>
+              ) : null}
+            </div>
           </div>
           
           <nav className="hidden md:flex items-center gap-1.5 text-[13px] text-zinc-500 dark:text-zinc-400 rounded-full px-4 py-1.5 bg-zinc-100/60 dark:bg-white/[0.04] border border-zinc-200/50 dark:border-white/[0.05] backdrop-blur-md absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
@@ -45,7 +47,7 @@ export function PortalShell({ crumbs, children, userButton, hideFooter }: { crum
           </nav>
           
           <div className="flex items-center gap-2.5">
-            <div className="relative flex items-center">
+            <div className="w-9 h-9 relative flex items-center justify-center shrink-0">
               {userButton || (
                 <>
                   <div className="h-9 w-9 rounded-full bg-gradient-to-br from-emerald-400 to-emerald-600 grid place-items-center font-heading font-bold text-[13px] text-white">M</div>

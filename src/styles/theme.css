@@ -4,13 +4,40 @@
    enhanced glassmorphism, and micro-interaction polish.
    ============================================================ */
 
+@font-face {
+  font-family: 'Archivo Fallback';
+  src: local('Arial');
+  ascent-override: 93%;
+  descent-override: 23%;
+  line-gap-override: 0%;
+  size-adjust: 104%;
+}
+
+@font-face {
+  font-family: 'Manrope Fallback';
+  src: local('Arial');
+  ascent-override: 95%;
+  descent-override: 25%;
+  line-gap-override: 0%;
+  size-adjust: 98%;
+}
+
+@font-face {
+  font-family: 'Amiri Fallback';
+  src: local('Times New Roman');
+  ascent-override: 120%;
+  descent-override: 45%;
+  line-gap-override: 0%;
+  size-adjust: 90%;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme {
   /* ── Fonts ──────────────────────────────────────────────── */
-  --font-archivo: 'Archivo', sans-serif;
-  --font-manrope: 'Manrope', sans-serif;
-  --font-amiri: 'Amiri', serif;
+  --font-archivo: 'Archivo', 'Archivo Fallback', sans-serif;
+  --font-manrope: 'Manrope', 'Manrope Fallback', sans-serif;
+  --font-amiri: 'Amiri', 'Amiri Fallback', serif;
 
   /* ── Subject colors ─────────────────────────────────────── */
   --color-anatomy:           #3B82F6;

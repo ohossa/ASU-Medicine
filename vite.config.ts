@@ -28,4 +28,36 @@ export default defineConfig({
     },
   },
   assetsInclude: ['**/*.svg', '**/*.csv'],
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes('node_modules/react/') || id.includes('node_modules/react-dom/') || id.includes('node_modules/react-router/')) {
+            return 'vendor-react';
+          }
+          if (id.includes('node_modules/@clerk/')) {
+            return 'vendor-clerk';
+          }
+          if (id.includes('node_modules/framer-motion/') || id.includes('node_modules/motion/') || id.includes('node_modules/@emotion/')) {
+            return 'vendor-motion';
+          }
+          if (id.includes('node_modules/@mui/')) {
+            return 'vendor-mui';
+          }
+          if (id.includes('node_modules/lucide-react/')) {
+            return 'vendor-lucide';
+          }
+          if (id.includes('node_modules/recharts/') || id.includes('node_modules/d3-')) {
+            return 'vendor-recharts';
+          }
+          if (id.includes('node_modules/@radix-ui/') || id.includes('node_modules/vaul/') || id.includes('node_modules/date-fns/') || id.includes('node_modules/class-variance-authority/') || id.includes('node_modules/tailwind-merge/') || id.includes('node_modules/clsx/')) {
+            return 'vendor-utils';
+          }
+          if (id.includes('canvas-confetti') || id.includes('src/app/lib/celebrate') || id.includes('src/app/lib/sound')) {
+            return 'fx-libs';
+          }
+        }
+      }
+    }
+  }
 })

@@ -1,6 +1,6 @@
 import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from 'react';
 import { pulse } from '../lib/pulseEngine';
-import { sound } from '../lib/sound';
+import { FX } from '../lib/fx.config';
 
 export interface ProgressState {
   xp: number;
@@ -46,7 +46,9 @@ export function ProgressProvider({ children, onSync }: { children: ReactNode; on
       const level = Math.floor(xp / LEVEL_STEP) + 1;
       if (level > s.level) {
         setLastLevelUp(Date.now());
-        sound.levelUp();
+        if (!FX.DEFERRED_FX) {
+          import('../lib/sound').then(({ sound }) => sound.levelUp());
+        }
         pulse.burst(window.innerWidth / 2, window.innerHeight / 2, 'levelup');
       }
       return { ...s, xp, level };
