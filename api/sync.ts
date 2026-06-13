@@ -1,12 +1,13 @@
 import { verifyToken } from '@clerk/backend';
 import { Redis } from '@upstash/redis';
 
+// Support both Vercel KV environment variables and standard Upstash Redis variables
+const redisUrl = process.env.KV_REST_API_URL || process.env.UPSTASH_REDIS_REST_URL || '';
+const redisToken = process.env.KV_REST_API_TOKEN || process.env.UPSTASH_REDIS_REST_TOKEN || '';
 
-
-// Initialize Upstash Redis with Vercel KV environment variables
 const redis = new Redis({
-  url: process.env.KV_REST_API_URL || '',
-  token: process.env.KV_REST_API_TOKEN || '',
+  url: redisUrl,
+  token: redisToken,
 });
 
 export default async function handler(req: Request) {
@@ -15,6 +16,19 @@ export default async function handler(req: Request) {
     'X-Content-Type-Options': 'nosniff',
     'X-Frame-Options': 'DENY'
   };
+
+  // Safe status check diagnostics endpoint
+  if (req.url.includes('status=true') || req.url.includes('debug=true')) {
+    return new Response(JSON.stringify({
+      status: "ok",
+      redisConfigured: !!redisUrl,
+      clerkConfigured: !!process.env.CLERK_SECRET_KEY,
+      detectedKeys: Object.keys(process.env).filter(k => k.includes('REDIS') || k.includes('KV') || k.includes('CLERK'))
+    }), {
+      status: 200,
+      headers: securityHeaders
+    });
+  }
 
   try {
     // 1. Limit Payload Size (2MB)
@@ -53,8 +67,8 @@ export default async function handler(req: Request) {
 
     // 3. Handle GET Request (Fetch Data)
     if (req.method === 'GET') {
-      if (!process.env.KV_REST_API_URL) {
-        return new Response(JSON.stringify({ data: null, message: "KV not configured yet" }), {
+      if (!redisUrl) {
+        return new Response(JSON.stringify({ data: null, message: "Redis/KV not configured yet" }), {
           status: 200,
           headers: securityHeaders
         });
@@ -69,8 +83,8 @@ export default async function handler(req: Request) {
 
     // 4. Handle POST Request (Save Data)
     if (req.method === 'POST') {
-      if (!process.env.KV_REST_API_URL) {
-        return new Response(JSON.stringify({ success: true, message: "KV not configured yet, skipped save" }), {
+      if (!redisUrl) {
+        return new Response(JSON.stringify({ success: true, message: "Redis/KV not configured yet, skipped save" }), {
           status: 200,
           headers: securityHeaders
         });
