@@ -1,7 +1,7 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
 import { dirname, extname, join } from 'node:path';
 
-type SubjectColor = 'anatomy' | 'histology' | 'physiology' | 'biochem' | 'microbiology' | 'pathology' | 'pharma' | 'clinical';
+type SubjectColor = 'anatomy' | 'histology' | 'physiology' | 'biochem' | 'microbiology' | 'pathology' | 'pharma' | 'clinical' | 'parasitology' | 'psychiatry' | 'ophthalmology' | 'ent';
 type QuestionType = 'mcq' | 'truefalse' | 'matching' | 'essay' | 'case' | 'fillblank';
 
 type QuestionBankFile = {
@@ -98,7 +98,11 @@ const SUBJECT_DISPLAY: Record<SubjectColor, { name: string; iconName: string; ke
   microbiology: { name: 'Microbiology', iconName: 'Biohazard', key: 'MICR' },
   pathology: { name: 'Pathology', iconName: 'ShieldAlert', key: 'PATH' },
   pharma: { name: 'Pharmacology', iconName: 'Pill', key: 'PHAR' },
-  clinical: { name: 'Clinical', iconName: 'Stethoscope', key: 'CLIN' }
+  clinical: { name: 'Clinical', iconName: 'Stethoscope', key: 'CLIN' },
+  parasitology: { name: 'Parasitology', iconName: 'Bug', key: 'PARA' },
+  psychiatry: { name: 'Psychiatry', iconName: 'Brain', key: 'PSYC' },
+  ophthalmology: { name: 'Ophthalmology', iconName: 'Eye', key: 'OPHT' },
+  ent: { name: 'E.N.T.', iconName: 'Ear', key: 'ENT' }
 };
 
 async function main(): Promise<void> {
@@ -258,9 +262,13 @@ function inferSubject(value: string): SubjectColor | null {
   if (normalized.includes('histology') || normalized.includes('histo')) return 'histology';
   if (normalized.includes('physiology') || normalized.includes('physio')) return 'physiology';
   if (normalized.includes('biochem')) return 'biochem';
-  if (normalized.includes('micro') || normalized.includes('bacter') || normalized.includes('virus') || normalized.includes('parasit') || normalized.includes('fung')) return 'microbiology';
+  if (normalized.includes('micro') || normalized.includes('bacter') || normalized.includes('virus') || normalized.includes('fung')) return 'microbiology';
+  if (normalized.includes('parasit')) return 'parasitology';
   if (normalized.includes('pathology') || normalized.includes('patho')) return 'pathology';
   if (normalized.includes('pharma')) return 'pharma';
+  if (normalized.includes('psychiatry') || normalized.includes('psychiat') || normalized.includes('behavioral') || normalized.includes('psychology')) return 'psychiatry';
+  if (normalized.includes('ophthalmology') || normalized.includes('ophthalm') || normalized.includes('eye')) return 'ophthalmology';
+  if (normalized.includes('ent') || normalized.includes('ear') || normalized.includes('nose') || normalized.includes('throat') || normalized.includes('otorhinolaryngology')) return 'ent';
   if (normalized.includes('clinical') || normalized.includes('case')) return 'clinical';
   return null;
 }

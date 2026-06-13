@@ -52,7 +52,7 @@ Plus **type-specific fields** defined in Section 4.
 SECTION 3 — CANONICAL SUBJECT NAMES
 ═══════════════════════════════════════════════════════════════
 
-Use **EXACTLY** one of these 8 subject names. Do NOT invent, rename, or modify them:
+Use **EXACTLY** one of these 12 subject names. Do NOT invent, rename, or modify them:
 
 | Subject Name | Internal ID | Icon |
 |---|---|---|
@@ -61,11 +61,15 @@ Use **EXACTLY** one of these 8 subject names. Do NOT invent, rename, or modify t
 | `"Physiology"` | `physiology` | Activity |
 | `"Biochemistry"` | `biochem` | FlaskConical |
 | `"Microbiology"` | `microbiology` | Biohazard |
+| `"Parasitology"` | `parasitology` | Bug |
 | `"Pathology"` | `pathology` | ShieldAlert |
 | `"Pharmacology"` | `pharma` | Pill |
+| `"Psychiatry"` | `psychiatry` | Brain |
+| `"Ophthalmology"` | `ophthalmology` | Eye |
+| `"ENT"` | `ent` | Ear |
 | `"Clinical"` | `clinical` | Stethoscope |
 
-> **Note**: `"Parasitology"`, `"Ophthalmology"`, `"ENT"`, and `"Psychiatry"` are legacy display-only subjects in the app. For incoming batches, map them to the closest canonical subject or use `"Clinical"`.
+> **Note**: To ensure the database parses correctly, match the subject of the question exactly to one of the 12 names above. Do not use custom names or abbreviations.
 
 ═══════════════════════════════════════════════════════════════
 SECTION 4 — QUESTION TYPE TEMPLATES
@@ -239,8 +243,12 @@ Subject keys used in IDs:
 | Physiology | `PHYS` |
 | Biochemistry | `BIOC` |
 | Microbiology | `MICR` |
+| Parasitology | `PARA` |
 | Pathology | `PATH` |
 | Pharmacology | `PHAR` |
+| Psychiatry | `PSYC` |
+| Ophthalmology | `OPHT` |
+| ENT | `ENT` |
 | Clinical | `CLIN` |
 
 ═══════════════════════════════════════════════════════════════
@@ -250,7 +258,7 @@ SECTION 6 — PRE-OUTPUT VALIDATION CHECKLIST
 Before outputting, verify ALL of the following:
 
 - [ ] `moduleCode` is a valid code from Section 7.
-- [ ] Every `subject` is exactly one of the 8 canonical names from Section 3.
+- [ ] Every `subject` is exactly one of the 12 canonical names from Section 3.
 - [ ] Every `chapterTitle` matches an entry from Section 8, OR `chapterId` is a valid integer.
 - [ ] Every MCQ/truefalse has `options` (array) and `correctAnswer` (capital letter).
 - [ ] `correctAnswer` letter is valid for the number of options (e.g. don't use "E" with only 4 options).
