@@ -606,13 +606,52 @@
 }
 
 /* Strip borders, shadows, backgrounds from all structural Clerk elements inside the dark wrapper */
-.clerk-dark-theme-container [class^="cl-"]:not(.cl-formFieldInput):not(.cl-socialButtonsBlockButton):not(.cl-formButtonPrimary):not(.cl-dividerLine),
-.clerk-dark-theme-container [class*=" cl-"]:not(.cl-formFieldInput):not(.cl-socialButtonsBlockButton):not(.cl-formButtonPrimary):not(.cl-dividerLine) {
+.clerk-dark-theme-container [class^="cl-"]:not(.cl-formFieldInput):not(.cl-socialButtonsBlockButton):not(.cl-formButtonPrimary):not(.cl-dividerLine):not(.cl-otpCodeFieldInput):not(.cl-otpCodeFieldInputs),
+.clerk-dark-theme-container [class*=" cl-"]:not(.cl-formFieldInput):not(.cl-socialButtonsBlockButton):not(.cl-formButtonPrimary):not(.cl-dividerLine):not(.cl-otpCodeFieldInput):not(.cl-otpCodeFieldInputs) {
   border: none !important;
   box-shadow: none !important;
   background-color: transparent !important;
   background-image: none !important;
 }
+
+/* Styling for Clerk OTP code inputs in Light Mode */
+.cl-otpCodeFieldInputs {
+  gap: 8px !important;
+  justify-content: center !important;
+}
+.cl-otpCodeFieldInput {
+  background-color: #ffffff !important;
+  border: 1.5px solid rgba(0, 0, 0, 0.15) !important;
+  color: #0d0f1a !important;
+  font-weight: 700 !important;
+  font-size: 1.35rem !important;
+  border-radius: 8px !important;
+  width: 44px !important;
+  height: 52px !important;
+  text-align: center !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.06) !important;
+  transition: all 0.2s ease !important;
+}
+.cl-otpCodeFieldInput:focus {
+  border-color: #10B981 !important;
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.18) !important;
+  outline: none !important;
+}
+
+/* Styling for Clerk OTP code inputs in Dark Mode */
+.dark .clerk-dark-theme-container .cl-otpCodeFieldInput,
+.clerk-dark-theme-container .cl-otpCodeFieldInput {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.18) !important;
+  color: #ffffff !important;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.3) !important;
+}
+.dark .clerk-dark-theme-container .cl-otpCodeFieldInput:focus,
+.clerk-dark-theme-container .cl-otpCodeFieldInput:focus {
+  border-color: #2dd4bf !important;
+  box-shadow: 0 0 0 3px rgba(45, 212, 191, 0.28) !important;
+}
+
 
 /* Invert the Apple logo inside Clerk social buttons to make it white */
 .clerk-dark-theme-container img[alt*="Apple"],
