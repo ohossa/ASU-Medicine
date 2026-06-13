@@ -263,18 +263,66 @@ function PillButton({ children, onClick, disabled, variant = "ghost" }: {
 function EcgWaveform() {
   const { theme } = useTheme();
   const T = getT(theme);
+  const isDark = theme === "dark";
   const beat = "h14 l4 -5 l4 5 h8 l5 -26 l6 40 l5 -14 h10 q6 0 9 -6 q3 6 9 6 h14";
-  const d = `M0 40 ${beat} ${beat} ${beat}`;
+  const d = `M0 40 ${beat.repeat(20)}`;
+
+  // Define grid line colors matching the theme
+  const gridColor = isDark ? "rgba(45, 212, 191, 0.08)" : "rgba(13, 148, 136, 0.06)";
+  const majorGridColor = isDark ? "rgba(45, 212, 191, 0.18)" : "rgba(13, 148, 136, 0.15)";
+
   return (
-    <div style={{ overflow: "hidden", borderRadius: 12 }}>
-      <motion.svg
-        width="200%" height="80" viewBox="0 0 720 80" fill="none"
-        animate={{ x: ["0%", "-50%"] }}
-        transition={{ duration: 2.4, repeat: Infinity, ease: "linear" }}
+    <div style={{
+      position: "relative",
+      overflow: "hidden",
+      borderRadius: 12,
+      height: 80,
+      background: isDark ? "rgba(0, 0, 0, 0.15)" : "rgba(0, 0, 0, 0.02)",
+      border: T.hairline
+    }}>
+      <svg
+        width="100%" height="100%" viewBox="0 0 880 80" preserveAspectRatio="none" fill="none"
       >
-        <path d={d} stroke={T.teal} strokeWidth={1.8} strokeLinejoin="round"
-          style={{ filter: `drop-shadow(0 0 6px ${T.teal}77)` }} />
-      </motion.svg>
+        <defs>
+          <pattern id="ecg-grid" width="16" height="16" patternUnits="userSpaceOnUse">
+            <path d="M 16 0 L 0 0 0 16" fill="none" stroke={gridColor} strokeWidth="0.5" />
+          </pattern>
+          <pattern id="ecg-grid-major" width="80" height="80" patternUnits="userSpaceOnUse">
+            <path d="M 80 0 L 0 0 0 80" fill="none" stroke={majorGridColor} strokeWidth="1" />
+          </pattern>
+          
+          <linearGradient id="portal-grad" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stopColor="#000" />
+            <stop offset="4%" stopColor="#fff" />
+            <stop offset="96%" stopColor="#fff" />
+            <stop offset="100%" stopColor="#000" />
+          </linearGradient>
+          
+          <mask id="portal-mask">
+            <rect width="880" height="80" fill="url(#portal-grad)" />
+          </mask>
+        </defs>
+
+        {/* Grid Background */}
+        <rect width="880" height="80" fill="url(#ecg-grid)" />
+        <rect width="880" height="80" fill="url(#ecg-grid-major)" />
+
+        {/* Masked Wave */}
+        <g mask="url(#portal-mask)">
+          <motion.g
+            animate={{ x: [0, -880] }}
+            transition={{ duration: 5.5, repeat: Infinity, ease: "linear" }}
+          >
+            {/* Soft Glow Underlay */}
+            <path d={d} stroke={T.teal} strokeWidth={3.5} strokeLinejoin="round" strokeLinecap="round"
+              style={{ filter: `blur(4px)`, opacity: 0.35 }} />
+            
+            {/* Sharp Main Line */}
+            <path d={d} stroke={T.teal} strokeWidth={1.8} strokeLinejoin="round" strokeLinecap="round"
+              style={{ filter: `drop-shadow(0 0 4px ${T.teal})` }} />
+          </motion.g>
+        </g>
+      </svg>
     </div>
   );
 }
