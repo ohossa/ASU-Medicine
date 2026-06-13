@@ -62,7 +62,7 @@ export function useCloudSync() {
       if (Object.keys(payload).length === 0) return;
 
       const token = await getToken();
-      await fetch('/api/sync', {
+      const res = await fetch('/api/sync', {
         method: 'POST',
         headers: { 
           'Content-Type': 'application/json',
@@ -70,6 +70,11 @@ export function useCloudSync() {
         },
         body: JSON.stringify(payload)
       });
+
+      if (!res.ok) {
+        const errText = await res.text();
+        throw new Error(`API push failed: ${res.status} - ${errText}`);
+      }
     } catch (err) {
       console.error("Cloud push failed:", err);
     } finally {
@@ -88,14 +93,17 @@ export function useCloudSync() {
           headers: { Authorization: `Bearer ${token}` }
         });
         
-        if (!res.ok) throw new Error("API sync failed");
+        if (!res.ok) {
+          const errText = await res.text();
+          throw new Error(`API sync failed: ${res.status} - ${errText}`);
+        }
         
         const { data } = await res.json();
         
         if (data && isMounted) {
           let hasChanges = false;
           Object.keys(data).forEach(key => {
-            if (data[key]) {
+            if (data[key] !== undefined && data[key] !== null) {
               const cloudVal = typeof data[key] === 'string' ? data[key] : JSON.stringify(data[key]);
               const localVal = localStorage.getItem(key);
               

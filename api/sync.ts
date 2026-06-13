@@ -15,7 +15,7 @@ if (!redisUrl && process.env.REDIS_URL) {
     } else if (rawUrl.startsWith('http://') || rawUrl.startsWith('https://')) {
       redisUrl = rawUrl;
     }
-  } catch (e) {
+  } catch (e: any) {
     console.error("Failed to parse REDIS_URL:", e);
   }
 }
@@ -57,13 +57,18 @@ export default async function handler(req: any, res: any) {
       return res.status(401).json({ error: 'Unauthorized: Missing token' });
     }
 
-    const verified = await verifyToken(token, {
-      secretKey: process.env.CLERK_SECRET_KEY,
-    });
+    let verified;
+    try {
+      verified = await verifyToken(token, {
+        secretKey: process.env.CLERK_SECRET_KEY,
+      });
+    } catch (err: any) {
+      return res.status(401).json({ error: 'Unauthorized: Clerk verification failed', details: err.message });
+    }
 
     const userId = verified.sub;
     if (!userId) {
-      return res.status(401).json({ error: 'Unauthorized: Invalid token' });
+      return res.status(401).json({ error: 'Unauthorized: Invalid token claims' });
     }
 
     const redisKey = `user_data:${userId}`;
@@ -83,9 +88,17 @@ export default async function handler(req: any, res: any) {
         return res.status(200).json({ success: true, message: "Redis/KV not configured yet, skipped save" });
       }
       
-      const body = req.body;
-      if (!body) {
-        return res.status(400).json({ error: 'Bad Request: Missing JSON body' });
+      let body = req.body;
+      if (typeof body === 'string') {
+        try {
+          body = JSON.parse(body);
+        } catch (e: any) {
+          return res.status(400).json({ error: 'Bad Request: Malformed JSON body string', details: e.message });
+        }
+      }
+      
+      if (!body || (typeof body === 'object' && Object.keys(body).length === 0)) {
+        return res.status(400).json({ error: 'Bad Request: Missing or empty JSON body', bodyType: typeof body });
       }
 
       await redis.set(redisKey, body);
@@ -93,8 +106,8 @@ export default async function handler(req: any, res: any) {
     }
 
     return res.status(405).json({ error: 'Method Not Allowed' });
-  } catch (error) {
+  } catch (error: any) {
     console.error('API Error:', error);
-    return res.status(500).json({ error: 'Internal Server Error' });
+    return res.status(500).json({ error: 'Internal Server Error', message: error.message, stack: error.stack });
   }
 }
