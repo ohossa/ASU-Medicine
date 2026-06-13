@@ -10,45 +10,36 @@ const redis = new Redis({
   token: redisToken,
 });
 
-export default async function handler(req: Request) {
-  const securityHeaders = {
-    'Content-Type': 'application/json',
-    'X-Content-Type-Options': 'nosniff',
-    'X-Frame-Options': 'DENY'
-  };
+export default async function handler(req: any, res: any) {
+  // Set CORS / security headers
+  res.setHeader('Content-Type', 'application/json');
+  res.setHeader('X-Content-Type-Options', 'nosniff');
+  res.setHeader('X-Frame-Options', 'DENY');
 
-  // Safe status check diagnostics endpoint
-  if (req.url.includes('status=true') || req.url.includes('debug=true')) {
-    return new Response(JSON.stringify({
+  // Diagnostic Status Check
+  const url = req.url || '';
+  if (url.includes('status=true') || url.includes('debug=true')) {
+    return res.status(200).json({
       status: "ok",
       redisConfigured: !!redisUrl,
       clerkConfigured: !!process.env.CLERK_SECRET_KEY,
       detectedKeys: Object.keys(process.env).filter(k => k.includes('REDIS') || k.includes('KV') || k.includes('CLERK'))
-    }), {
-      status: 200,
-      headers: securityHeaders
     });
   }
 
   try {
     // 1. Limit Payload Size (2MB)
-    const contentLength = req.headers.get('content-length');
+    const contentLength = req.headers['content-length'];
     if (contentLength && parseInt(contentLength, 10) > 1024 * 1024 * 2) {
-      return new Response(JSON.stringify({ error: 'Payload Too Large: Maximum size is 2MB' }), {
-        status: 413,
-        headers: securityHeaders
-      });
+      return res.status(413).json({ error: 'Payload Too Large: Maximum size is 2MB' });
     }
 
     // 2. Authenticate with Clerk
-    const authHeader = req.headers.get('Authorization');
+    const authHeader = req.headers['authorization'];
     const token = authHeader?.replace('Bearer ', '');
 
     if (!token) {
-      return new Response(JSON.stringify({ error: 'Unauthorized: Missing token' }), {
-        status: 401,
-        headers: securityHeaders
-      });
+      return res.status(401).json({ error: 'Unauthorized: Missing token' });
     }
 
     const verified = await verifyToken(token, {
@@ -57,67 +48,38 @@ export default async function handler(req: Request) {
 
     const userId = verified.sub;
     if (!userId) {
-      return new Response(JSON.stringify({ error: 'Unauthorized: Invalid token' }), {
-        status: 401,
-        headers: securityHeaders
-      });
+      return res.status(401).json({ error: 'Unauthorized: Invalid token' });
     }
 
     const redisKey = `user_data:${userId}`;
 
-    // 3. Handle GET Request (Fetch Data)
+    // 3. Handle GET Request
     if (req.method === 'GET') {
       if (!redisUrl) {
-        return new Response(JSON.stringify({ data: null, message: "Redis/KV not configured yet" }), {
-          status: 200,
-          headers: securityHeaders
-        });
+        return res.status(200).json({ data: null, message: "Redis/KV not configured yet" });
       }
-      
       const data = await redis.get(redisKey);
-      return new Response(JSON.stringify({ data: data || null }), {
-        status: 200,
-        headers: securityHeaders,
-      });
+      return res.status(200).json({ data: data || null });
     }
 
-    // 4. Handle POST Request (Save Data)
+    // 4. Handle POST Request
     if (req.method === 'POST') {
       if (!redisUrl) {
-        return new Response(JSON.stringify({ success: true, message: "Redis/KV not configured yet, skipped save" }), {
-          status: 200,
-          headers: securityHeaders
-        });
+        return res.status(200).json({ success: true, message: "Redis/KV not configured yet, skipped save" });
       }
-
-      let body: any;
-      try {
-        body = await req.json();
-      } catch {
-        return new Response(JSON.stringify({ error: 'Bad Request: Malformed JSON body' }), {
-          status: 400,
-          headers: securityHeaders
-        });
-      }
-
-      // Store the JSON payload
-      await redis.set(redisKey, body);
       
-      return new Response(JSON.stringify({ success: true }), {
-        status: 200,
-        headers: securityHeaders,
-      });
+      const body = req.body;
+      if (!body) {
+        return res.status(400).json({ error: 'Bad Request: Missing JSON body' });
+      }
+
+      await redis.set(redisKey, body);
+      return res.status(200).json({ success: true });
     }
 
-    return new Response(JSON.stringify({ error: 'Method Not Allowed' }), {
-      status: 405,
-      headers: securityHeaders
-    });
+    return res.status(405).json({ error: 'Method Not Allowed' });
   } catch (error) {
     console.error('API Error:', error);
-    return new Response(JSON.stringify({ error: 'Internal Server Error' }), {
-      status: 500,
-      headers: securityHeaders
-    });
+    return res.status(500).json({ error: 'Internal Server Error' });
   }
 }
