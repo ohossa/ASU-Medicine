@@ -62,7 +62,7 @@ export function PortalShell({ crumbs, children, userButton, hideFooter }: { crum
       {!hideFooter && (
         <footer className="border-t border-zinc-200/70 dark:border-white/[0.06] py-10 text-center">
           <p className="text-[13px] text-zinc-500 dark:text-zinc-400">Ain Shams University <span className="mx-1.5 opacity-40">•</span> ASU Medical Portal</p>
-          <a href="mailto:support@asumedportal.com" className="mt-1.5 inline-block text-[12px] text-zinc-400 dark:text-zinc-500 hover:text-[#22c55e] transition-colors">support@asumedportal.com</a>
+          <a href="mailto:omarhmaged@gmail.com" className="mt-1.5 inline-block text-[12px] text-zinc-400 dark:text-zinc-500 hover:text-[#22c55e] transition-colors">omarhmaged@gmail.com</a>
         </footer>
       )}
     </div>

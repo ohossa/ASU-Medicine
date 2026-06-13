@@ -695,8 +695,14 @@ function StageOutcome({ currentCase, ranked, ordered, prescribed, setPrescribed,
       <AnimatePresence>
         {submitted && (
           <motion.div
-            initial={{ y: 24, opacity: 0 }} animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+            variants={{
+              initial: { y: 24, opacity: 0 },
+              animate: { y: 0, opacity: 1, transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1], staggerChildren: 0.08 } },
+              exit: { y: 24, opacity: 0, transition: { duration: 0.3 } }
+            }}
+            initial="initial"
+            animate="animate"
+            exit="exit"
             style={{ display: "grid", gap: 18 }}
           >
             <div style={{

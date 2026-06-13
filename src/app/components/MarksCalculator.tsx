@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useMemo, useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Award,
@@ -234,20 +234,173 @@ function ProgressRing({ pct, label }: { pct: number; label: string }) {
 export function MarksCalculator({ onBack, userButton }: { onBack: () => void; userButton?: React.ReactNode }) {
   const { isDark } = useTheme();
 
-  // Navigation & Selection state
-  const [selectedPreset, setSelectedPreset] = useState<ModulePreset | null>(null);
-  const [selectedYearTab, setSelectedYearTab] = useState<number>(2); // Default to Year 2
-  const [selectedSemesterTab, setSelectedSemesterTab] = useState<number>(2); // Default to Sem 2
+  // Navigation & Selection state loaded from localStorage for persistent user session
+  const [selectedPreset, setSelectedPreset] = useState<ModulePreset | null>(() => {
+    try {
+      const saved = localStorage.getItem('asu_marks_calculator_selected_preset');
+      return saved ? JSON.parse(saved) : null;
+    } catch {
+      return null;
+    }
+  });
+
+  const [selectedYearTab, setSelectedYearTab] = useState<number>(() => {
+    try {
+      const saved = localStorage.getItem('asu_marks_calculator_year_tab');
+      return saved ? Number(saved) : 2;
+    } catch {
+      return 2;
+    }
+  });
+
+  const [selectedSemesterTab, setSelectedSemesterTab] = useState<number>(() => {
+    try {
+      const saved = localStorage.getItem('asu_marks_calculator_semester_tab');
+      return saved ? Number(saved) : 2;
+    } catch {
+      return 2;
+    }
+  });
 
   // Scores inputs mapping
   const [scores, setScores] = useState<Record<string, string>>({});
 
   // Custom module builder state
-  const [customName, setCustomName] = useState("My Custom Module");
-  const [customSections, setCustomSections] = useState<CustomSection[]>([
-    { id: nextId(), name: "Continuous Assessment", max: "40" },
-    { id: nextId(), name: "Final Exam", max: "60" },
-  ]);
+  const [customName, setCustomName] = useState(() => {
+    try {
+      const saved = localStorage.getItem('asu_marks_calculator_custom_name');
+      return saved || "My Custom Module";
+    } catch {
+      return "My Custom Module";
+    }
+  });
+
+  const [customSections, setCustomSections] = useState<CustomSection[]>(() => {
+    try {
+      const saved = localStorage.getItem('asu_marks_calculator_custom_sections');
+      return saved ? JSON.parse(saved) : [
+        { id: nextId(), name: "Continuous Assessment", max: "40" },
+        { id: nextId(), name: "Final Exam", max: "60" },
+      ];
+    } catch {
+      return [
+        { id: nextId(), name: "Continuous Assessment", max: "40" },
+        { id: nextId(), name: "Final Exam", max: "60" },
+      ];
+    }
+  });
+
+  // Effects to save states to localStorage and trigger cloud synchronization
+  useEffect(() => {
+    if (selectedPreset) {
+      localStorage.setItem('asu_marks_calculator_selected_preset', JSON.stringify(selectedPreset));
+    } else {
+      localStorage.removeItem('asu_marks_calculator_selected_preset');
+    }
+    import("../hooks/useCloudSync").then(m => m.triggerCloudSync());
+  }, [selectedPreset]);
+
+  useEffect(() => {
+    localStorage.setItem('asu_marks_calculator_year_tab', String(selectedYearTab));
+    import("../hooks/useCloudSync").then(m => m.triggerCloudSync());
+  }, [selectedYearTab]);
+
+  useEffect(() => {
+    localStorage.setItem('asu_marks_calculator_semester_tab', String(selectedSemesterTab));
+    import("../hooks/useCloudSync").then(m => m.triggerCloudSync());
+  }, [selectedSemesterTab]);
+
+  useEffect(() => {
+    localStorage.setItem('asu_marks_calculator_custom_name', customName);
+    import("../hooks/useCloudSync").then(m => m.triggerCloudSync());
+  }, [customName]);
+
+  useEffect(() => {
+    localStorage.setItem('asu_marks_calculator_custom_sections', JSON.stringify(customSections));
+    import("../hooks/useCloudSync").then(m => m.triggerCloudSync());
+  }, [customSections]);
+
+  // Load scores for the selected module preset on preset change
+  useEffect(() => {
+    if (selectedPreset) {
+      try {
+        const savedAll = localStorage.getItem('asu_marks_calculator_scores');
+        const all = savedAll ? JSON.parse(savedAll) : {};
+        const presetScores = all[selectedPreset.id] || {};
+        setScores(presetScores);
+      } catch (e) {
+        console.error("Failed to load scores:", e);
+      }
+    } else {
+      setScores({});
+    }
+  }, [selectedPreset]);
+
+  // Save scores to localStorage and trigger cloud sync when scores change
+  useEffect(() => {
+    if (!selectedPreset) return;
+    try {
+      const savedAll = localStorage.getItem('asu_marks_calculator_scores');
+      const all = savedAll ? JSON.parse(savedAll) : {};
+      
+      if (JSON.stringify(all[selectedPreset.id]) !== JSON.stringify(scores)) {
+        all[selectedPreset.id] = scores;
+        localStorage.setItem('asu_marks_calculator_scores', JSON.stringify(all));
+        import("../hooks/useCloudSync").then(m => m.triggerCloudSync());
+      }
+    } catch (e) {
+      console.error("Failed to save scores:", e);
+    }
+  }, [scores, selectedPreset]);
+
+  // Listen for storage events (e.g. from cloud pull syncing on another device)
+  useEffect(() => {
+    const handleStorage = () => {
+      try {
+        const savedPreset = localStorage.getItem('asu_marks_calculator_selected_preset');
+        if (savedPreset) {
+          const parsedPreset = JSON.parse(savedPreset);
+          setSelectedPreset(prev => JSON.stringify(prev) !== JSON.stringify(parsedPreset) ? parsedPreset : prev);
+        } else {
+          setSelectedPreset(null);
+        }
+        
+        const savedYear = localStorage.getItem('asu_marks_calculator_year_tab');
+        if (savedYear) {
+          setSelectedYearTab(Number(savedYear));
+        }
+
+        const savedSem = localStorage.getItem('asu_marks_calculator_semester_tab');
+        if (savedSem) {
+          setSelectedSemesterTab(Number(savedSem));
+        }
+
+        const savedCustomName = localStorage.getItem('asu_marks_calculator_custom_name');
+        if (savedCustomName) {
+          setCustomName(savedCustomName);
+        }
+
+        const savedCustomSections = localStorage.getItem('asu_marks_calculator_custom_sections');
+        if (savedCustomSections) {
+          const parsedSections = JSON.parse(savedCustomSections);
+          setCustomSections(prev => JSON.stringify(prev) !== JSON.stringify(parsedSections) ? parsedSections : prev);
+        }
+
+        const activePreset = savedPreset ? JSON.parse(savedPreset) : null;
+        if (activePreset) {
+          const savedAll = localStorage.getItem('asu_marks_calculator_scores');
+          const all = savedAll ? JSON.parse(savedAll) : {};
+          const presetScores = all[activePreset.id] || {};
+          setScores(prev => JSON.stringify(prev) !== JSON.stringify(presetScores) ? presetScores : prev);
+        }
+      } catch (e) {
+        console.error("Failed to load synced storage", e);
+      }
+    };
+
+    window.addEventListener('storage', handleStorage);
+    return () => window.removeEventListener('storage', handleStorage);
+  }, []);
 
   const isCustom = selectedPreset?.id === CUSTOM_ID;
 
@@ -336,7 +489,14 @@ export function MarksCalculator({ onBack, userButton }: { onBack: () => void; us
 
   /* Handlers */
   const selectModulePreset = (preset: ModulePreset) => {
-    setScores({});
+    try {
+      const savedAll = localStorage.getItem('asu_marks_calculator_scores');
+      const all = savedAll ? JSON.parse(savedAll) : {};
+      const presetScores = all[preset.id] || {};
+      setScores(presetScores);
+    } catch {
+      setScores({});
+    }
     setSelectedPreset(preset);
   };
 

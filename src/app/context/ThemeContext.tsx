@@ -3,10 +3,11 @@ import { triggerCloudSync } from '../hooks/useCloudSync';
 
 interface ThemeContextType {
   isDark: boolean;
+  theme: "light" | "dark";
   toggleTheme: () => void;
 }
 
-const ThemeContext = createContext<ThemeContextType>({ isDark: false, toggleTheme: () => {} });
+const ThemeContext = createContext<ThemeContextType>({ isDark: false, theme: "dark", toggleTheme: () => {} });
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [isDark, setIsDark] = useState(() => {
@@ -45,7 +46,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   }, []);
 
   return (
-    <ThemeContext.Provider value={{ isDark, toggleTheme: () => setIsDark((d) => !d) }}>
+    <ThemeContext.Provider value={{ isDark, theme: isDark ? "dark" : "light", toggleTheme: () => setIsDark((d) => !d) }}>
       {children}
     </ThemeContext.Provider>
   );

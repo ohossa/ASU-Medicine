@@ -235,14 +235,30 @@ export default function StudyMode({ userButton, onStartStudyMode, onOpenSyllabus
 
         {/* ── BACK BUTTON ─────────────────────────────────────── */}
         <div className="flex justify-center py-14">
-          <button onClick={() => navigate('/year-2')}
-             className="flex items-center gap-2 rounded-full border px-5 py-2.5 text-[14px] font-semibold cursor-pointer bg-transparent
-                        border-zinc-200/80 dark:border-white/[0.08]
-                        text-zinc-600 dark:text-zinc-300
-                        hover:bg-zinc-100 dark:hover:bg-white/[0.05] transition-colors group">
-            <ArrowLeft size={15} className="transition-transform group-hover:-translate-x-0.5" />
+          <motion.button
+            whileHover="hover"
+            whileTap={{ scale: 0.96 }}
+            onClick={() => navigate('/year-2')}
+            className="flex items-center gap-2.5 rounded-full border px-6 py-3 text-[14px] font-bold cursor-pointer
+                       border-zinc-200/80 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.02]
+                       text-zinc-700 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white
+                       shadow-sm hover:shadow-[0_4px_12px_rgba(0,0,0,0.05)] dark:hover:shadow-[0_4px_20px_rgba(255,255,255,0.02)]
+                       transition-all backdrop-blur-sm relative overflow-hidden"
+          >
+            <motion.div
+              variants={{
+                initial: { x: 0 },
+                hover: { x: -4 }
+              }}
+              initial="initial"
+              animate="initial"
+              transition={{ type: "spring", stiffness: 300, damping: 20 }}
+              className="flex items-center justify-center"
+            >
+              <ArrowLeft size={15} />
+            </motion.div>
             Back to Modules
-          </button>
+          </motion.button>
         </div>
       </main>
       </motion.div>

@@ -11,7 +11,13 @@ const STORAGE_KEYS = [
   'asu_portal_semester',
   'asu_portal_module',
   'asu_portal_studyMode',
-  'asu_flagged_questions'
+  'asu_flagged_questions',
+  'asu_marks_calculator_selected_preset',
+  'asu_marks_calculator_scores',
+  'asu_marks_calculator_custom_name',
+  'asu_marks_calculator_custom_sections',
+  'asu_marks_calculator_year_tab',
+  'asu_marks_calculator_semester_tab'
 ];
 
 export function useCloudSync() {

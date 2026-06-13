@@ -305,7 +305,8 @@ export function ChapterSelect({
     const accent = mCh.accentColor;
     return (
       <article
-        className="cs-enter group relative overflow-hidden bg-gradient-to-r from-card to-secondary/30 border border-border dark:border-white/[0.06] backdrop-blur-xl rounded-[28px] p-6 sm:p-8 transition-all duration-300 hover:scale-[1.01] hover:-translate-y-1 hover:border-gray-300 dark:hover:border-white/[0.14] mb-6"
+        onClick={() => onSelectChapter(mCh)}
+        className="cs-enter group relative overflow-hidden bg-gradient-to-r from-card to-secondary/30 border border-border dark:border-white/[0.06] backdrop-blur-xl rounded-[28px] p-6 sm:p-8 transition-all duration-300 hover:scale-[1.01] hover:-translate-y-1 hover:border-gray-300 dark:hover:border-white/[0.14] mb-6 cursor-pointer"
         style={{ animationDelay: '100ms' }}
       >
         <div
@@ -373,7 +374,8 @@ export function ChapterSelect({
     return (
       <article
         key={chapter.id}
-        className="cs-enter group relative overflow-hidden bg-card border border-border dark:border-white/[0.06] backdrop-blur-xl rounded-[28px] p-6 transition-all duration-300 hover:scale-[1.015] hover:-translate-y-2 hover:border-gray-300 dark:hover:border-white/[0.14]"
+        onClick={() => onSelectChapter(chapter)}
+        className="cs-enter group relative overflow-hidden bg-card border border-border dark:border-white/[0.06] backdrop-blur-xl rounded-[28px] p-6 transition-all duration-300 hover:scale-[1.015] hover:-translate-y-2 hover:border-gray-300 dark:hover:border-white/[0.14] cursor-pointer"
         style={{ animationDelay: `${120 + index * 70}ms` }}
       >
         {/* Corner gradient accent */}

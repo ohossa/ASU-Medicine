@@ -183,9 +183,10 @@ export default function YearModules({ userButton }: YearModulesProps) {
               <CardShell
                 key={m.code}
                 accent={active ? theme.accent : "#71717a"}
+                onClick={active ? (e) => handleStartModule(e, m) : undefined}
                 className={`group flex flex-col h-full ${
                   active
-                    ? "transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_24px_50px_-24px_rgba(34,197,94,0.25)] dark:hover:shadow-[0_24px_50px_-20px_rgba(34,197,94,0.15)]"
+                    ? "cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_24px_50px_-24px_rgba(34,197,94,0.25)] dark:hover:shadow-[0_24px_50px_-20px_rgba(34,197,94,0.15)]"
                     : "saturate-50 opacity-70"
                 }`}
               >

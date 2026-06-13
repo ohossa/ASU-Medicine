@@ -71,6 +71,7 @@ const FALLBACK: Record<string, { en: string; ar: string }> = {
   completed:       { en: 'Completed', ar: 'مكتمل' },
   lecture:         { en: 'Lecture', ar: 'محاضرة' },
   lectures:        { en: 'Lectures', ar: 'محاضرات' },
+  chapters:        { en: 'Chapters', ar: 'فصول' },
   markAllStudied:  { en: 'Mark All Studied', ar: 'الكل مُذاكر' },
   markAllRevised:  { en: 'Mark All Revised', ar: 'الكل مُراجَع' },
   notes:           { en: 'Notes', ar: 'ملاحظات' },
@@ -409,21 +410,13 @@ export function SyllabusTrackerPage({ userButton }: { userButton?: React.ReactNo
         data-tab={tab}
       >
 
-        {/* Sub-Header with Back Button for mobile and desktop viewports */}
+        {/* Sub-Header for mobile and desktop viewports */}
         <div className="flex items-center justify-between px-5 py-3 border-b border-zinc-200/60 dark:border-white/[0.06] bg-white/40 dark:bg-black/20 backdrop-blur-md relative z-20 shrink-0">
-          <button
-            onClick={() => navigate(`/year-2/${moduleCode.toLowerCase()}`)}
-            className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-xl border border-zinc-200/80 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.02] text-xs font-bold text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-white/[0.06] hover:border-zinc-300 dark:hover:border-white/[0.14] transition-all duration-200 active:scale-95 cursor-pointer"
-          >
-            <ArrowLeft size={14} className={isRTL ? 'rotate-180' : ''} />
-            <span>{isRTL ? 'العودة للمواد' : 'Back to Modules'}</span>
-          </button>
-          
-          <span className="text-xs font-bold tracking-wider text-gray-400 dark:text-gray-500 uppercase">
+          <div className="w-24 hidden sm:block" />
+          <span className="text-xs font-bold tracking-wider text-gray-400 dark:text-gray-500 uppercase mx-auto">
             {moduleCode} · {isRTL ? 'متتبع المنهج' : 'Syllabus Tracker'}
           </span>
-          
-          <div className="w-[110px] hidden sm:block" />
+          <div className="w-24 hidden sm:block" />
         </div>
 
         {/* Main Split Area */}
@@ -433,7 +426,7 @@ export function SyllabusTrackerPage({ userButton }: { userButton?: React.ReactNo
           <div className="pane-head">
             <h2>{label('syllabusOutline')}</h2>
             <span className="pill frost">
-              {chapters.length} {label('lectures')}
+              {chapters.length} {label('chapters')}
             </span>
           </div>
 
@@ -456,6 +449,98 @@ export function SyllabusTrackerPage({ userButton }: { userButton?: React.ReactNo
             {chapters.length === 0 ? (
               <div className="py-6 text-center text-xs text-muted-foreground">
                 {label('noChapters')}
+              </div>
+            ) : moduleCode === 'MCNS-2' ? (
+              <div className="space-y-4">
+                <div className="space-y-1">
+                  <div className="text-[10px] font-extrabold uppercase tracking-wider text-sky-600 dark:text-sky-400 px-3 py-1 bg-sky-500/5 dark:bg-sky-500/10 rounded-md select-none mb-1.5 border border-sky-500/10">
+                    CNS 1 (Chapters 1-5)
+                  </div>
+                  <div className="space-y-1">
+                    {chapters.slice(0, 5).map((ch, idx) => {
+                      const realIdx = idx;
+                      const isActive = realIdx === activeChapterIndex;
+                      const counts = chapterCounts(ch);
+                      const pct = counts.total === 0 ? 0 : Math.round((counts.done / counts.total) * 100);
+                      return (
+                        <button
+                          key={ch.id}
+                          className={`chapter ${isActive ? 'active' : ''}`}
+                          onClick={() => {
+                            setActiveChapterIndex(realIdx);
+                            setOpenSubjectIndex(0);
+                            if (isMobile) {
+                              setTab('workspace');
+                            }
+                          }}
+                        >
+                          <div className="ch-emoji">{ch.emoji || '🦋'}</div>
+                          <div className="ch-body">
+                            <div className="ch-title">
+                              {isRTL ? `الفصل ${realIdx + 1}:` : `Chapter ${realIdx + 1}:`} {ch.title}
+                            </div>
+                            <div className="ch-meta">
+                              {label('page')} {ch.page} · {ch.subjects.length} Subjects
+                            </div>
+                          </div>
+                          <div className="ch-prog">
+                            <span className="done-pill">
+                              {counts.done}/{counts.total}
+                            </span>
+                            <div className="ch-mini">
+                              <i style={{ width: `${pct}%` }}></i>
+                            </div>
+                          </div>
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
+
+                <div className="space-y-1">
+                  <div className="text-[10px] font-extrabold uppercase tracking-wider text-purple-600 dark:text-purple-400 px-3 py-1 bg-purple-500/5 dark:bg-purple-500/10 rounded-md select-none mb-1.5 mt-2 border border-purple-500/10">
+                    CNS 2 (Chapters 6-10)
+                  </div>
+                  <div className="space-y-1">
+                    {chapters.slice(5, 10).map((ch, idx) => {
+                      const realIdx = idx + 5;
+                      const isActive = realIdx === activeChapterIndex;
+                      const counts = chapterCounts(ch);
+                      const pct = counts.total === 0 ? 0 : Math.round((counts.done / counts.total) * 100);
+                      return (
+                        <button
+                          key={ch.id}
+                          className={`chapter ${isActive ? 'active' : ''}`}
+                          onClick={() => {
+                            setActiveChapterIndex(realIdx);
+                            setOpenSubjectIndex(0);
+                            if (isMobile) {
+                              setTab('workspace');
+                            }
+                          }}
+                        >
+                          <div className="ch-emoji">{ch.emoji || '🦋'}</div>
+                          <div className="ch-body">
+                            <div className="ch-title">
+                              {isRTL ? `الفصل ${realIdx + 1}:` : `Chapter ${realIdx + 1}:`} {ch.title}
+                            </div>
+                            <div className="ch-meta">
+                              {label('page')} {ch.page} · {ch.subjects.length} Subjects
+                            </div>
+                          </div>
+                          <div className="ch-prog">
+                            <span className="done-pill">
+                              {counts.done}/{counts.total}
+                            </span>
+                            <div className="ch-mini">
+                              <i style={{ width: `${pct}%` }}></i>
+                            </div>
+                          </div>
+                        </button>
+                      );
+                    })}
+                  </div>
+                </div>
               </div>
             ) : (
               chapters.map((ch, idx) => {
@@ -518,6 +603,11 @@ export function SyllabusTrackerPage({ userButton }: { userButton?: React.ReactNo
                 <div className="ws-sub">
                   {label('page')} {activeChapter.page} • {activeChapter.lectureRange}
                   <span className="chiplet">{moduleName}</span>
+                  {moduleCode === 'MCNS-2' && (
+                    <span className={`chiplet ${activeChapterIndex < 5 ? 'bg-sky-500/10 text-sky-700 dark:text-sky-400 border border-sky-500/10' : 'bg-purple-500/10 text-purple-700 dark:text-purple-400 border border-purple-500/10'}`}>
+                      {activeChapterIndex < 5 ? 'CNS 1' : 'CNS 2'}
+                    </span>
+                  )}
                 </div>
               </div>
 
@@ -673,16 +763,38 @@ export function SyllabusTrackerPage({ userButton }: { userButton?: React.ReactNo
         </button>
       </nav>
 
-      {/* Save Toast Alert */}
+      {/* Floating Back to Modules Button */}
+      <motion.button
+        whileHover="hover"
+        whileTap={{ scale: 0.95 }}
+        onClick={() => navigate(`/year-2/${moduleCode.toLowerCase()}`)}
+        className="fixed bottom-[86px] sm:bottom-[56px] left-1/2 -translate-x-1/2 z-50 flex items-center gap-2.5 px-6 py-3 rounded-full border border-zinc-200/80 dark:border-white/[0.08] bg-white/90 dark:bg-zinc-950/80 text-sm font-bold text-zinc-700 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white shadow-[0_8px_32px_rgba(0,0,0,0.12)] dark:shadow-[0_8px_32px_rgba(0,0,0,0.35)] backdrop-blur-md transition-all duration-200 cursor-pointer"
+      >
+        <motion.div
+          variants={{
+            initial: { x: 0 },
+            hover: { x: isRTL ? 4 : -4 }
+          }}
+          initial="initial"
+          animate="initial"
+          transition={{ type: "spring", stiffness: 300, damping: 20 }}
+          className="flex items-center justify-center text-emerald-500 dark:text-emerald-400"
+        >
+          <ArrowLeft size={15} className={isRTL ? 'rotate-180' : ''} />
+        </motion.div>
+        <span className="tracking-wide">{isRTL ? 'العودة للمواد' : 'Back to Modules'}</span>
+      </motion.button>
+
+      {/* Save Toast Alert (Centered top to clear bottom button) */}
       <AnimatePresence>
         {showToast && (
           <motion.div
             key="save-toast"
-            initial={{ opacity: 0, y: 16, scale: 0.95 }}
+            initial={{ opacity: 0, y: -16, scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: 8, scale: 0.97 }}
+            exit={{ opacity: 0, y: -8, scale: 0.97 }}
             transition={{ type: 'spring', stiffness: 400, damping: 28 }}
-            className="pointer-events-none fixed bottom-6 left-1/2 z-[60] flex -translate-x-1/2 items-center gap-2 rounded-full border border-border bg-card/95 px-4 py-2 text-xs font-medium text-foreground shadow-xl backdrop-blur-xl"
+            className="pointer-events-none fixed top-20 left-1/2 z-[60] flex -translate-x-1/2 items-center gap-2 rounded-full border border-border bg-card/95 px-4 py-2 text-xs font-medium text-foreground shadow-xl backdrop-blur-xl"
           >
             <span className="flex h-4 w-4 items-center justify-center rounded-full bg-[#22c55e]">
               <Check size={10} className="text-black" strokeWidth={3} />

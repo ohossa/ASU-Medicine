@@ -135,7 +135,15 @@ export default function Dashboard({ userButton, onOpenTrackerSelector }: Dashboa
                 key={year.id}
                 accent={year.accent}
                 accent2={year.id === 2 ? "#a855f7" : undefined}
-                onClick={() => setActiveIdx(i)}
+                onClick={(e) => {
+                  if (i === activeIdx) {
+                    if (year.active) {
+                      handleEnterYear(e, year);
+                    }
+                  } else {
+                    setActiveIdx(i);
+                  }
+                }}
                 className="absolute left-1/2 top-1/2 w-[320px] sm:w-[420px] lg:w-[480px] h-[340px] sm:h-[360px] cursor-pointer"
                 style={{
                   transform: `translate(-50%, -50%)

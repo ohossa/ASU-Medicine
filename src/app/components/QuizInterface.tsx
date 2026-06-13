@@ -44,7 +44,9 @@ const isAnswered = (q: Question, a: any): boolean => {
   if (a === undefined || a === null) return false;
   switch (q.type) {
     case 'essay':
-      return typeof a === 'object' ? a.text?.trim().length > 0 : typeof a === 'string' && a.trim().length > 0;
+      return typeof a === 'object'
+        ? (a.text?.trim().length > 0 || a.selfGrade !== undefined)
+        : typeof a === 'string' && a.trim().length > 0;
     case 'fillblank':
       return typeof a === 'object' && a.submitted === true;
     case 'matching':
@@ -56,6 +58,115 @@ const isAnswered = (q: Question, a: any): boolean => {
       return true;
   }
 };
+
+const norm = (s: any) => String(s ?? '').trim().toLowerCase();
+
+function checkAnswerCorrect(q: Question, ans: any): boolean {
+  if (ans === undefined || ans === null) return false;
+
+  switch (q.type) {
+    case 'mcq':
+    case 'truefalse':
+      return ans === q.correctIndex;
+
+    case 'matching': {
+      const pairs = q.pairs ?? [];
+      const scrambled: string[] = ans?.scrambled ?? [];
+      const matches: Record<number, number> = ans?.matches ?? {};
+      if (!pairs.length || !scrambled.length) return false;
+      return pairs.every((p: any, i: number) => {
+        const correctScrambledIndex = scrambled.indexOf(p.target ?? p.right);
+        return matches[i] === correctScrambledIndex && correctScrambledIndex !== -1;
+      });
+    }
+
+    case 'essay':
+      return ans?.selfGrade === 'correct';
+
+    case 'fillblank': {
+      const inputs: string[] = ans?.inputs ?? [];
+      const blanks: string[] = q.blanks ?? [];
+      const accepted: string[][] = q.acceptedAnswers ?? [];
+      if (!blanks.length) return false;
+      return blanks.every((primary, i) => {
+        const user = norm(inputs[i]);
+        if (!user) return false;
+        const alternatives = (accepted[i] ?? []).map(norm);
+        return user === norm(primary) || alternatives.includes(user);
+      });
+    }
+
+    case 'case':
+    case 'casestudy': {
+      const subs = q.subQuestions ?? [];
+      if (!subs.length) return false;
+      return subs.every((sq: any) => {
+        const subAns = ans?.[sq.id];
+        if (sq.type === 'mcq') {
+          return subAns === sq.correctIndex;
+        } else {
+          return subAns?.selfGrade === 'correct';
+        }
+      });
+    }
+
+    default:
+      return false;
+  }
+}
+
+function getQuestionStatus(q: Question, ans: any): 'correct' | 'incorrect' | 'pending' | 'unanswered' {
+  const answered = isAnswered(q, ans);
+  if (!answered) return 'unanswered';
+
+  if (q.type === 'essay') {
+    if (ans?.selfGrade === 'correct') return 'correct';
+    if (ans?.selfGrade === 'incorrect') return 'incorrect';
+    return 'pending';
+  }
+
+  if (q.type === 'case' || q.type === 'casestudy') {
+    const subs = q.subQuestions ?? [];
+    if (!subs.length) return 'unanswered';
+    
+    let hasPending = false;
+    let hasIncorrect = false;
+    let hasAnsweredAny = false;
+    
+    for (const sq of subs) {
+      const subAns = ans?.[sq.id];
+      if (subAns === undefined) {
+        hasPending = true;
+        continue;
+      }
+      hasAnsweredAny = true;
+      if (sq.type === 'mcq') {
+        if (subAns !== sq.correctIndex) {
+          hasIncorrect = true;
+        }
+      } else {
+        // essay sub-question
+        const graded = typeof subAns === 'object' && subAns.selfGrade !== undefined;
+        
+        if (graded) {
+          if (subAns.selfGrade === 'incorrect') {
+            hasIncorrect = true;
+          }
+        } else {
+          hasPending = true;
+        }
+      }
+    }
+    
+    if (!hasAnsweredAny) return 'unanswered';
+    if (hasIncorrect) return 'incorrect';
+    if (hasPending) return 'pending';
+    return 'correct';
+  }
+
+  // For MCQ, True/False, Matching, Fillblank:
+  return checkAnswerCorrect(q, ans) ? 'correct' : 'incorrect';
+}
 
 const wordCount = (s: string) => (s.trim() ? s.trim().split(/\s+/).length : 0);
 
@@ -361,7 +472,11 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
         <textarea
           value={essayDraft}
           disabled={isCompleted}
-          onChange={e => setEssayDraft(e.target.value)}
+          onChange={e => {
+            const val = e.target.value;
+            setEssayDraft(val);
+            onChange({ text: val, selfGrade: value?.selfGrade });
+          }}
           rows={7}
           placeholder={t('essayPlaceholder') || "Type your answer…"}
           className="w-full resize-y rounded-xl border border-gray-200 dark:border-white/[0.08] bg-white dark:bg-black/30 p-4 text-sm leading-relaxed text-gray-950 dark:text-white placeholder-gray-400 dark:placeholder-white/25 outline-none transition-colors focus:border-gray-400 dark:focus:border-white/25 backdrop-blur-xl"
@@ -695,7 +810,14 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                     <textarea
                       value={subEssayDrafts[subQ.id] || ''}
                       disabled={isCompleted}
-                      onChange={e => setSubEssayDrafts(prev => ({ ...prev, [subQ.id]: e.target.value }))}
+                      onChange={e => {
+                        const val = e.target.value;
+                        setSubEssayDrafts(prev => ({ ...prev, [subQ.id]: val }));
+                        onChange({
+                          ...subAns,
+                          [subQ.id]: { text: val, selfGrade: subVal?.selfGrade }
+                        });
+                      }}
                       rows={3}
                       placeholder="Type your essay answer…"
                       className="w-full resize-y rounded-xl border border-gray-200 dark:border-white/[0.08] bg-white dark:bg-black/30 p-4 text-xs leading-relaxed text-gray-950 dark:text-white placeholder-gray-400 dark:placeholder-white/25 outline-none transition-colors focus:border-gray-400 dark:focus:border-white/25 backdrop-blur-xl"
@@ -882,23 +1004,41 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
           >
             <div className="mx-auto grid max-w-4xl grid-cols-8 gap-2 px-4 py-4 sm:grid-cols-12 sm:px-6">
               {questions.map((q, i) => {
-                const answeredQ = isAnswered(q, answers[i]);
+                const status = getQuestionStatus(q, answers[i]);
                 const isFlagged = flagged.has(i);
+
+                let btnStyles = "";
+                if (status === 'correct') {
+                  btnStyles = "border-emerald-500/30 dark:border-emerald-500/20 bg-emerald-500/10 dark:bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 font-semibold";
+                } else if (status === 'incorrect') {
+                  btnStyles = "border-rose-500/30 dark:border-rose-500/20 bg-rose-500/10 dark:bg-rose-500/15 text-rose-600 dark:text-rose-400 font-semibold";
+                } else if (status === 'pending') {
+                  btnStyles = "border-sky-500/30 dark:border-sky-500/20 bg-sky-500/10 dark:bg-sky-500/15 text-sky-600 dark:text-sky-400 font-semibold";
+                } else {
+                  if (isFlagged) {
+                    btnStyles = "border-amber-500/30 dark:border-amber-500/20 bg-amber-500/10 dark:bg-amber-500/15 text-amber-600 dark:text-amber-400 font-semibold";
+                  } else {
+                    btnStyles = "border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.03] text-gray-400 dark:text-white/40 hover:bg-gray-100 dark:hover:bg-white/[0.07]";
+                  }
+                }
+
+                const isActive = i === current;
+                const activeRing = isActive
+                  ? "ring-2 ring-zinc-800 dark:ring-zinc-200 ring-offset-2 dark:ring-offset-zinc-950 scale-105 z-10 shadow-md"
+                  : "";
+
                 return (
-                  <button
+                  <motion.button
                     key={i}
                     onClick={() => goTo(i)}
-                    className={`relative flex h-9 items-center justify-center rounded-lg border text-xs font-medium tabular-nums transition-all ${
-                      i === current
-                        ? `${style.border} ${style.bg} text-white`
-                        : answeredQ
-                          ? 'border-emerald-500/30 bg-emerald-500/10 text-emerald-600 dark:text-emerald-300'
-                          : 'border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.03] text-gray-400 dark:text-white/40 hover:bg-gray-100 dark:hover:bg-white/[0.07]'
-                    }`}
+                    whileHover={{ scale: 1.08 }}
+                    whileTap={{ scale: 0.95 }}
+                    transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                    className={`relative flex h-9 items-center justify-center rounded-lg border text-xs font-medium tabular-nums transition-all cursor-pointer ${btnStyles} ${activeRing}`}
                   >
                     {i + 1}
-                    {isFlagged && <Flag size={9} className="absolute -end-1 -top-1 fill-amber-400 text-amber-400" />}
-                  </button>
+                    {isFlagged && <Flag size={9} className="absolute -end-1 -top-1 fill-amber-500 text-amber-500" />}
+                  </motion.button>
                 );
               })}
             </div>

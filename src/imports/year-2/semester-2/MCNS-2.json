@@ -22,7 +22,7 @@
           "id": "anatomy",
           "name": "Anatomy",
           "iconName": "Bone",
-          "lectures": "External Spinal Cord Features & Sensory Cortex",
+          "lectures": "Sensory Cortex, Spinal Cord External Features",
           "lectureCount": 2,
           "questions": [
             {
@@ -40,7 +40,7 @@
           "id": "histology",
           "name": "Histology",
           "iconName": "Microscope",
-          "lectures": "Histological Structure & Neuroglia",
+          "lectures": "Structure of CNS",
           "lectureCount": 1,
           "questions": [
             {
@@ -64,8 +64,8 @@
           "id": "biochem",
           "name": "Biochemistry",
           "iconName": "FlaskConical",
-          "lectures": "Energy Sources & Ammonia Metabolism",
-          "lectureCount": 2,
+          "lectures": "Ammonia and Urea Cycle, Energy Sources of CNS, Hyperammonaemia, Inborn Errors of Amino Acid Metabolism, Neurotransmitters, One-carbon Unit and Folate Metabolism, Vitamin Deficiency and Metabolic Disorders",
+          "lectureCount": 7,
           "questions": [
             {
               "id": "MCNS2-CH1-BIOCH-0001",
@@ -122,7 +122,7 @@
           "id": "histology",
           "name": "Histology",
           "iconName": "Microscope",
-          "lectures": "Structure of Receptors & Spinal Cord Gray Matter",
+          "lectures": "Gray Matter, Receptors",
           "lectureCount": 2,
           "questions": [
             {
@@ -146,8 +146,8 @@
           "id": "physiology",
           "name": "Physiology",
           "iconName": "Activity",
-          "lectures": "Sensory Coding, Spinothalamic & Dorsal Columns",
-          "lectureCount": 3,
+          "lectures": "Pain and Pain Control, Sensation Carried by Dorsal Column Tracts, Sensations Carried by Spinothalamic Tract, Sensory Receptors and Sensory Coding, Somatosensory Cortex",
+          "lectureCount": 5,
           "questions": [
             {
               "id": "MCNS2-CH2-PHYS-0001",
@@ -170,7 +170,7 @@
           "id": "anatomy",
           "name": "Anatomy",
           "iconName": "Bone",
-          "lectures": "Anterolateral System and Ascending Tracts",
+          "lectures": "Ascending Pathways",
           "lectureCount": 1,
           "questions": [
             {
@@ -188,7 +188,7 @@
           "id": "pharma",
           "name": "Pharmacology",
           "iconName": "Pill",
-          "lectures": "Opioid Analgesics",
+          "lectures": "Opioids",
           "lectureCount": 1,
           "questions": [
             {
@@ -222,8 +222,8 @@
           "id": "anatomy",
           "name": "Anatomy",
           "iconName": "Bone",
-          "lectures": "Motor Cortex, Descending Tracts, Cerebellum, and Basal Ganglia",
-          "lectureCount": 4,
+          "lectures": "Basal Ganglia, Blood Supply and Lesions of Spinal Cord, Cerebellum, Motor Cortex, Pyramidal and Extrapyramidal Tract",
+          "lectureCount": 5,
           "questions": [
             {
               "id": "MCNS2-CH3-ANAT-0001",
@@ -246,8 +246,8 @@
           "id": "histology",
           "name": "Histology",
           "iconName": "Microscope",
-          "lectures": "White Matter & Stretch Receptors Structure",
-          "lectureCount": 2,
+          "lectures": "Cerebellum, Stretch Receptors, White Matter",
+          "lectureCount": 3,
           "questions": [
             {
               "id": "MCNS2-CH3-HIST-0001",
@@ -270,8 +270,8 @@
           "id": "physiology",
           "name": "Physiology",
           "iconName": "Activity",
-          "lectures": "Stretch Reflexes, Descending Tracts, Cerebellar & Basal Ganglia Function",
-          "lectureCount": 4,
+          "lectures": "Basal Ganglia, Cerebellum, Descending Motor Tracts Functions, Motor Cortex Function, Muscle Stretch Reflex, Other Reflexes, Sensory and Motor Disorders",
+          "lectureCount": 7,
           "questions": [
             {
               "id": "MCNS2-CH3-PHYS-0001",
@@ -294,7 +294,7 @@
           "id": "pathology",
           "name": "Pathology",
           "iconName": "ShieldAlert",
-          "lectures": "Neurodegenerative Diseases of Basal Ganglia & Cerebellar Tumors",
+          "lectures": "Cerebellar Tumours, Neurodegenrative disorders of the basal ganglia",
           "lectureCount": 2,
           "questions": [
             {
@@ -312,7 +312,7 @@
           "id": "pharma",
           "name": "Pharmacology",
           "iconName": "Pill",
-          "lectures": "Treatment of Parkinsonism",
+          "lectures": "Drug Therapy of Parkinsonism",
           "lectureCount": 1,
           "questions": [
             {
@@ -334,9 +334,9 @@
         },
         {
           "id": "clinical",
-          "name": "Clinical",
+          "name": "Neurology",
           "iconName": "Stethoscope",
-          "lectures": "Neurology: Spinal Cord & Motor/Sensory Lesions",
+          "lectures": "Clinical Applications on motor and Sensory Lesions",
           "lectureCount": 1,
           "questions": [
             {
@@ -364,8 +364,8 @@
           "id": "anatomy",
           "name": "Anatomy",
           "iconName": "Bone",
-          "lectures": "Brain Stem Features, Cranial Cavity, Face, Scalp, Trigeminal & Fossa",
-          "lectureCount": 5,
+          "lectures": "Autonomic Ganglia, Blood Supply of Brain Stem, Brain Stem, Columns of Cranial Nerve Nuclei, Cranial Cavity, Face, Fourth Ventricle and Reticular Formation, Pterygopalatine Fossa, Scalp, Temporal and Infratemporal Fossae, Trigeminal Nerve",
+          "lectureCount": 11,
           "questions": [
             {
               "id": "MCNS2-CH4-ANAT-0001",
@@ -388,7 +388,7 @@
           "id": "histology",
           "name": "Histology",
           "iconName": "Microscope",
-          "lectures": "Histology of Medulla, Pons, and Midbrain",
+          "lectures": "Medulla, Midbrain, Pons",
           "lectureCount": 3,
           "questions": [
             {
@@ -420,9 +420,9 @@
       "subjects": [
         {
           "id": "anatomy",
-          "name": "Anatomy",
+          "name": "Anatomy of The Neck",
           "iconName": "Bone",
-          "lectures": "Fascia, Triangles, Sympathetic Chain, Last Cranial Nerves",
+          "lectures": "Fascia, Last four cranial nerves, Suprahyoid muscles, cervical plexus and sympathetic chain, Triangles",
           "lectureCount": 4,
           "questions": [
             {
