@@ -1,0 +1,29 @@
+{
+  "short_name": "ASU Portal",
+  "name": "ASU Medical Portal",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "any"
+    },
+    {
+      "src": "/asu-medicine-logo.webp",
+      "type": "image/webp",
+      "sizes": "512x512",
+      "purpose": "any"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#0c0e16",
+  "theme_color": "#0c0e16",
+  "display": "standalone",
+  "orientation": "portrait"
+}
