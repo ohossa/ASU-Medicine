@@ -1,29 +1,54 @@
 import { verifyToken } from '@clerk/backend';
-import { Redis } from '@upstash/redis';
+import { Redis as UpstashRedis } from '@upstash/redis';
+import ioredis from 'ioredis';
 
 // Support Vercel KV variables, standard Upstash variables, or parse REDIS_URL directly
-let redisUrl = process.env.KV_REST_API_URL || process.env.UPSTASH_REDIS_REST_URL || '';
-let redisToken = process.env.KV_REST_API_TOKEN || process.env.UPSTASH_REDIS_REST_TOKEN || '';
+const kvUrl = process.env.KV_REST_API_URL || process.env.UPSTASH_REDIS_REST_URL || '';
+const kvToken = process.env.KV_REST_API_TOKEN || process.env.UPSTASH_REDIS_REST_TOKEN || '';
+const redisUrl = process.env.REDIS_URL || '';
 
-if (!redisUrl && process.env.REDIS_URL) {
-  try {
-    const rawUrl = process.env.REDIS_URL;
-    if (rawUrl.startsWith('redis://') || rawUrl.startsWith('rediss://')) {
-      const parsed = new URL(rawUrl);
-      redisUrl = `https://${parsed.hostname}`;
-      redisToken = parsed.password;
-    } else if (rawUrl.startsWith('http://') || rawUrl.startsWith('https://')) {
-      redisUrl = rawUrl;
+// Initialize connection client dynamically
+let dbClient: {
+  get: (key: string) => Promise<any>;
+  set: (key: string, value: any) => Promise<any>;
+};
+
+if (redisUrl) {
+  // Use standard TCP Redis client
+  const tcpClient = new ioredis(redisUrl);
+  dbClient = {
+    get: async (key: string) => {
+      const val = await tcpClient.get(key);
+      if (!val) return null;
+      try {
+        return JSON.parse(val);
+      } catch {
+        return val;
+      }
+    },
+    set: async (key: string, value: any) => {
+      const valStr = typeof value === 'string' ? value : JSON.stringify(value);
+      await tcpClient.set(key, valStr);
     }
-  } catch (e: any) {
-    console.error("Failed to parse REDIS_URL:", e);
-  }
+  };
+} else if (kvUrl && kvToken) {
+  // Use Upstash REST Redis client
+  const restClient = new UpstashRedis({ url: kvUrl, token: kvToken });
+  dbClient = {
+    get: async (key: string) => {
+      return await restClient.get(key);
+    },
+    set: async (key: string, value: any) => {
+      await restClient.set(key, value);
+    }
+  };
+} else {
+  // Fallback dummy client
+  dbClient = {
+    get: async () => null,
+    set: async () => {}
+  };
 }
-
-const redis = new Redis({
-  url: redisUrl,
-  token: redisToken,
-});
 
 export default async function handler(req: any, res: any) {
   // Set CORS / security headers
@@ -36,7 +61,7 @@ export default async function handler(req: any, res: any) {
   if (url.includes('status=true') || url.includes('debug=true')) {
     return res.status(200).json({
       status: "ok",
-      redisConfigured: !!redisUrl,
+      redisConfigured: !!redisUrl || (!!kvUrl && !!kvToken),
       clerkConfigured: !!process.env.CLERK_SECRET_KEY,
       detectedKeys: Object.keys(process.env).filter(k => k.includes('REDIS') || k.includes('KV') || k.includes('CLERK'))
     });
@@ -75,16 +100,16 @@ export default async function handler(req: any, res: any) {
 
     // 3. Handle GET Request
     if (req.method === 'GET') {
-      if (!redisUrl) {
+      if (!redisUrl && (!kvUrl || !kvToken)) {
         return res.status(200).json({ data: null, message: "Redis/KV not configured yet" });
       }
-      const data = await redis.get(redisKey);
+      const data = await dbClient.get(redisKey);
       return res.status(200).json({ data: data || null });
     }
 
     // 4. Handle POST Request
     if (req.method === 'POST') {
-      if (!redisUrl) {
+      if (!redisUrl && (!kvUrl || !kvToken)) {
         return res.status(200).json({ success: true, message: "Redis/KV not configured yet, skipped save" });
       }
       
@@ -101,7 +126,7 @@ export default async function handler(req: any, res: any) {
         return res.status(400).json({ error: 'Bad Request: Missing or empty JSON body', bodyType: typeof body });
       }
 
-      await redis.set(redisKey, body);
+      await dbClient.set(redisKey, body);
       return res.status(200).json({ success: true });
     }
 
