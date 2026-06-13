@@ -1,9 +1,24 @@
 import { verifyToken } from '@clerk/backend';
 import { Redis } from '@upstash/redis';
 
-// Support both Vercel KV environment variables and standard Upstash Redis variables
-const redisUrl = process.env.KV_REST_API_URL || process.env.UPSTASH_REDIS_REST_URL || '';
-const redisToken = process.env.KV_REST_API_TOKEN || process.env.UPSTASH_REDIS_REST_TOKEN || '';
+// Support Vercel KV variables, standard Upstash variables, or parse REDIS_URL directly
+let redisUrl = process.env.KV_REST_API_URL || process.env.UPSTASH_REDIS_REST_URL || '';
+let redisToken = process.env.KV_REST_API_TOKEN || process.env.UPSTASH_REDIS_REST_TOKEN || '';
+
+if (!redisUrl && process.env.REDIS_URL) {
+  try {
+    const rawUrl = process.env.REDIS_URL;
+    if (rawUrl.startsWith('redis://') || rawUrl.startsWith('rediss://')) {
+      const parsed = new URL(rawUrl);
+      redisUrl = `https://${parsed.hostname}`;
+      redisToken = parsed.password;
+    } else if (rawUrl.startsWith('http://') || rawUrl.startsWith('https://')) {
+      redisUrl = rawUrl;
+    }
+  } catch (e) {
+    console.error("Failed to parse REDIS_URL:", e);
+  }
+}
 
 const redis = new Redis({
   url: redisUrl,
