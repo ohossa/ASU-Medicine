@@ -1,0 +1,1182 @@
+CHUNK 78 FAILED AFTER 4 ATTEMPTS
+ERROR: {"error":{"code":429,"message":"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 4.361251603s.","status":"RESOURCE_EXHAUSTED","details":[{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Learn more about Gemini API quotas","url":"https://ai.google.dev/gemini-api/docs/rate-limits"}]},{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerDayPerProjectPerModel-FreeTier","quotaDimensions":{"location":"global","model":"gemini-2.5-flash"},"quotaValue":"20"}]},{"@type":"type.googleapis.com/google.rpc.RetryInfo","retryDelay":"4s"}]}}
+
+--- RAW TEXT ---
+- c) Superior cerebellar artery.
+- d) Vertebral artery.
+
+**Correct Answer: a**
+
+**13.** One of the followings is not a component of Facial nerve:
+- a) Special visceral afferent.
+- b) General visceral efferent.
+- c) General visceral afferent.
+- d) Special visceral efferent.
+
+**Correct Answer: c** (Note: Facial nerve has SVA (taste), GVE (parasympathetic), SVE (motor), not GVA)
+
+**14.** Nucleus in brain stem common to IX, X and XI cranial nerves:
+- a) Nucleus solitarius.
+- b) Nucleus ambiguus.
+- c) Dentate nucleus.
+- d) Red nucleus.
+
+**Correct Answer: b**
+
+**15.** In adults, the spinal cord normally ends at:
+- a) Lower border of L1.
+- b) Lower border of L3.
+- c) Lower border of S1.
+- d) Lower border of L5.
+
+**Correct Answer: a**
+
+**16.** Regarding the midbrain, one of the following is true:
+- a) The cerebral aqueduct of the midbrain connects the 3rd and lateral ventricles.
+- b) It occupies the tentorial notch of the tentorium cerebelli.
+- c) The facial nerve curves forwards around its lateral surface.
+- d) The oculomotor nerve is attached to the tectum above the inferior colliculus.
+
+**Correct Answer: b**
+
+**17.** The following statements concern the third ventricle, one of them is correct:
+- a) It is the cavity of the hindbrain.
+- b) It communicates with the lateral ventricles through the cerebral aqueduct.
+- c) It is continuous with the fourth ventricle through the interventricular foramen.
+- d) The choroid plexus is located in the roof.
+
+**Correct Answer: d**
+
+**18.** Regarding the cerebellum, one of the following is true:
+- a) The neocerebellum connected to the cerebral cortex.
+- b) The primary fissure present on its lower surface.
+- c) It is consisted of two lobes.
+- d) The superior vermis has nodule, uvula & pyramid.
+
+**Correct Answer: a**
+
+**19.** Regarding the cortical areas of the cerebral hemisphere, one of the following is true:
+- a) The premotor area programs the activity of the primary sensory area.
+- b) Astereognosis occurs due to injury of the primary auditory area.
+- c) Broca’s area is the sensory speech area.
+- d) In both the primary motor and primary sensory areas the body is represented upside-down.
+
+**Correct Answer: d**
+
+**20.** Regarding the medulla oblongata, one of the following is true:
+- a) The olive is caused by the superior olivary nucleus.
+- b) The hypoglossal nerve is attached to the posterolateral fissure.
+- c) The vagus nerve is attached to the anterolateral fissure.
+- d) The pyramidal decussation obliterates the lower part of the anterior median fissure.
+
+**Correct Answer: d**
+
+*(Continue similarly for questions 21–100 from original document, but omitted for brevity – available in source)*
+
+---
+
+## Section 6: Sensory Questions (Short Answer)
+
+**1. Mention mechanism of Pain control?**
+- Presynaptic Inhibition
+
+**2. What is type of sensation lost in Syringomyelia?**
+- Jacket (Dissociated) sensory loss (pain and temperature)
+
+**3. Mention Extracranial causes of headache?**
+- Hypertension, Nasal sinusitis, Errors of refraction
+
+**4. Explain cause of Stamping Gait in Tabes dorsalis?**
+- Loss of proprioception due to inflammation of Dorsal root ganglia
+
+**5. What is center of stereognosis?**
+- Somatic Association cortex (areas 5 & 7)
+
+**6. Explain why fast pain is lost before slow pain in Tabes dorsalis?**
+- Due to inflammation of dorsal root compressing myelinated nerves (A delta fibers)
+
+**7. What are sensations lost in Right hemisection of spinal cord (Contralateral) at the same site of lesion?**
+- Pain, Temperature
+
+**8. Mention the disease in which pain is felt as if it is a bullet?**
+- Thalamic syndrome
+
+**9. Mention the disease in which pupil doesn't constrict with light but constricts with accommodation, and explain why?**
+- Tabes dorsalis due to damage of pretectal nucleus (center of light reflex) by spirochete, while superior colliculus (center of near vision) is intact.
+
+---
+
+## Section 7: Motor Questions (Short Answer)
+
+*(Answers provided in original)*
+
+**1. Difference between Negative stretch reflex and Inverse stretch reflex regarding stimulus and response?**
+- Negative stretch reflex: Stimulus = muscle contraction (end of normal stretch reflex); Response = muscle relaxation.
+- Inverse stretch reflex: Stimulus = marked stretch; Response = muscle relaxation.
+
+**2. Importance of Jendrassik maneuver?**
+- Distract the brain to decrease its inhibitory signals on anterior horn cells of the reflex.
+
+**3. Difference in function between Putamen and Caudate circuit?**
+- Putamen: planning program; Caudate: cognitive control.
+
+**4. Explain the cause of Alpha rigidity in Parkinsonism?**
+- Loss of inhibition of lentiform nucleus on vestibular nucleus (normally vestibular nucleus sends alpha impulses to AHC of antigravity muscles).
+
+**5. Define static tremors and explain its cause?**
+- Static tremors appear during rest and disappear in exercise. Cause: loss of control over the thalamus, so thalamus sends unadjusted signals to cortex causing contraction of agonist then antagonist.
+
+**6. Mention 2 tracts controlling flexors of upper limb?**
+- Lateral corticospinal and Rubrospinal tract
+
+**7. Mention cause of dorsiflexion of big toe without fanning of other toes?**
+- Lesion in area 4 only
+
+**8. Explain one cause of hyperreflexia in chronic UMNL?**
+- Denervation hypersensitivity
+
+**9. Define Nystagmus and its cause?**
+- To and fro eye movement; cause: Vestibulocerebellum lesion
+
+**10. Difference between Servoassistant and servocomparator function?**
+- Servoassistant: function of stretch reflex (load reflex); Servocomparator: function of spinocerebellum comparing intended movement from cortex with actual movement.
+
+**11. Mention 2 signs in UMNL?**
+- Clasp knife spasticity and Clonus
+
+**12. One test to differentiate between Sensory and Motor ataxia?**
+- Romberg test: positive in sensory ataxia
+
+**13. Define Ataxia, explain cause of Trunkal ataxia?**
+- Incoordination of voluntary movement in absence of muscle paralysis. Cause of trunkal ataxia: lesion in vestibulocerebellum.
+
+**14. Mention 2 structures which discharge unadjusted signals and how they are controlled?**
+- Cortex: controlled by damping function of stretch reflex; Thalamus: controlled by basal ganglia circuits (balance between direct excitatory and indirect inhibitory pathways).
+
+**15. Function of Cerebrocerebellum?**
+- Planning of next movement, not concerned with ongoing movement.
+
+**16. Cause of pendular knee jerk?**
+- Lesion in Cerebrocerebellum (leading to hypotonia).
+
+**17. Difference between lead pipe and cog wheel rigidity?**
+- (Not provided in text; typical answer: lead pipe is uniform resistance, cogwheel is ratchet-like due to tremor.)
+
+**18. Cause of normoreflexia in Parkinsonism?**
+- Alpha rigidity increases tone in agonist and antagonist equally, canceling each other during reflex.
+
+**19. Define Motor Apraxia and its cause?**
+- Loss of motor memory; cause: lesion in Area 6, SMA.
+
+**20. Coordination between Lateral and Medial corticospinal tract?**
+- Lateral controls distal limb muscles, medial controls trunk; during writing there is coordination between them.
+
+**21. Explain Alpha Gamma coactivation?**
+- During voluntary contraction, supraspinal centers activate both alpha and gamma motor neurons simultaneously.
+
+**22. Causes of Hypertonia?**
+- Lesion in Area 6, Lentiform nucleus, Paleocerebellum, Medullary RF.
+
+**23. Cause of hypotonia in Acute UMNL?**
+- Sudden withdrawal of supraspinal facilitatory impulses (gamma on AHC).
+
+**24. Role of GPI on the thalamus?**
+- Inhibitory on thalamus (indirect pathway); loss of its inhibitory effect leads to direct pathway due to inhibitory effect of caudate on GPI.
+
+**25. Damping function in motor point of view?**
+- (Refers to stretch reflex and spinocerebellum function)
+
+**26. Structure which has intrinsic activity?**
+- Pontine RF
+
+**27. Function of SMA?**
+- Complex motor plan, bimanual coordination.
+
+**28. Site which puts the idea for voluntary movement?**
+- Prefrontal association cortex
+
+**29. Example of Disynaptic reflex and its importance?**
+- Inverse stretch reflex; importance: protect muscle tendon.
+
+**30. One polysynaptic reflex?**
+- Flexor withdrawal reflex
+
+**31. Cause of loss of superficial reflex in UMNL and LMNL?**
+- UMNL: loss of control all over the reflex; LMNL: lesion of AHC or cut of efferent.
+
+**32. Difference between Parkinsonism and Neocerebellar syndrome regarding conversation?**
+- Parkinsonism: slow monotonous speech; Neocerebellar syndrome: staccato speech.
+
+**33. Cause of Circumduction Gait in UMNL?**
+- Extrapyramidal tract is intact, so area 6 sends signals to vestibulospinal tract to control proximal muscles.
+
+**34. Physiological relation between area 4 and area 6?**
+- Area 6 shares with area 4 in fine movement (30% of pyramidal tract fibers).
+
+**35. Why patient fails to stop his finger at the nose?**
+- Loss of damping (off) function of spinocerebellum.
+
+**36. Why cerebellum is always excitatory?**
+- Deep nuclear cell receives excitatory signals from climbing and mossy fibers, and inhibitory signal from Purkinje fibers.
+
+**37. Property not present in Stretch reflex?**
+- After discharge
+
+**38. Cause of Dysdiadochokinesia?**
+- Inability to do rapid alternating movement due to lesion in Cerebrocerebellum.
+
+**39. Cause of failure to swing arm during walking; gait abnormality?**
+- Basal ganglia lesion (Parkinsonism); gait: shuffling gait.
+
+**40. Can you treat Parkinsonism by Dopamine administration?**
+- No, dopamine doesn't cross BBB; give L‑Dopa which crosses and converts to dopamine.
+
+**41. Types of Ataxia and cause of each type?**
+- Sensory: Tabes dorsalis; Motor: Cerebellar disease; Trunkal: Vestibulocerebellum lesion.
+
+---
+
+## Section 8: Anatomy Short Answer Questions (Essay Style)
+
+*(From “Section 1 Anatomy” – cleaned)*
+
+**Spinal cord**
+- **Mention the 2 enlargements present in the spinal cord:** Cervical enlargement and lumbar enlargement.
+- **Compare between the spinal cord of the adult and the newborn:** Adult: C1 till L1; Newborn: C1 till L3.
+- **Mention the 3 ligaments supporting the spinal cord:** Filum terminale, ligamentum denticulatum, subarachnoid septum.
+- **Complete:** Dura mater and arachnoid mater end opposite which vertebrae? **S2**
+- **Extent of the scalp:** Anteriorly: supraorbital margin; Posteriorly: external occipital protuberance and highest nuchal line; Laterally: superior temporal line.
+- **Effects of dense connective tissue in scalp:** Infection remains localized, wounds don’t gap, small wound causes profuse bleeding.
+- **Compare frontal and occipital belly nerve supply:** Frontal belly: temporal branch of facial nerve; Occipital belly: posterior auricular branch of facial nerve.
+- **Why is loose connective tissue the dangerous layer?** Because its emissary veins can spread infection from scalp to cranial cavity.
+- **Sensory nerve supply of scalp:** In front of auricle: supratrochlear, supraorbital, zygomaticotemporal, auriculotemporal; Behind auricle: great auricular, lesser occipital, greater occipital, third occipital.
+
+**Face**
+- **Boundaries of face:** Superior: hair line; Inferior: lower border of mandible; Sideways: from one auricle to the other.
+- **Facial artery terminates by anastomosing with:** Dorsal nasal artery.
+- **2 branches of facial artery in face:** Superior labial and Inferior labial.
+- **Deep communications of anterior facial vein:** To superior ophthalmic vein (→ cavernous sinus) and to deep facial vein (→ pterygoid venous plexus → cavernous sinus via emissary veins).
+- **Dangerous area of face:** Triangle including upper lip, nose, medial angles of eye. Infection can spread to cavernous sinus causing thrombosis.
+- **Branches of ophthalmic nerve in face:** Supratrochlear, supraorbital, palpebral branch of lacrimal, infratrochlear.
+- **3 branches of maxillary nerve:** Zygomaticotemporal, zygomaticofacial, infraorbital.
+- **3 branches of infraorbital nerve:** Palpebral, nasal, labial.
+- **Branches of mandibular nerve in face:** Auriculotemporal, buccal, mental.
+- **Muscles of facial expression develop from:** 2nd pharyngeal arch.
+
+**Cerebral Hemisphere: Sensory Cortex**
+- **Lesion of first somatosensory area causes:** Contralateral hemianesthesia.
+- **Site of first somatosensory area:** Postcentral gyrus and posterior part of paracentral lobule.
+- **Site of second somatosensory area:** Superior lip of posterior ramus of lateral sulcus behind central sulcus.
+- **Site of area 43:** Parietal operculum extending into anterior part of insula.
+- **Lesion of areas 5 & 7 causes:** Astereognosis.
+- **Site of inferior parietal lobule:** Supramarginal gyrus and angular gyrus.
+- **Lesion of inferior parietal lobule causes:** Receptive aphasia.
+- **3 speech centers:** Broca’s, Wernicke’s, Supplementary motor area.
+
+**Cerebral Hemisphere: Motor Cortex**
+- **Site of primary motor area:** Precentral gyrus and anterior part of paracentral lobule.
+- **Body representation of premotor area:** Upside down, contralateral, proportionate to skill.
+- **Lesion of area 4 causes:** Contralateral hemiplegia especially fine skilled movements.
+- **Site of premotor area:** In front of area 4 (superior, middle, inferior frontal gyri) and medial surface.
+- **Lesion of area 6 causes:** Apraxia, muscle spasticity, reappearance of grasp reflex.
+- **Site of frontal eye field:** In front of area 6 (superior and middle frontal gyri).
+- **Lesion of area 8 causes:** Ipsilateral deviation of both eyes and inability to turn eyes to opposite side.
+- **Site of Broca’s area:** Pars triangularis and pars opercularis of inferior frontal gyrus.
+- **Lesion of Broca’s area:** Expressive aphasia.
+- **Site of supplementary motor area:** Medial frontal gyrus.
+- **Lesion of SMA causes:** Akinetic mutism.
+
+**Ascending Tracts**
+- **3 neurons for pain and temperature from body:** 1st: DRG; 2nd: Fast pain lamina I, Slow pain lamina II (SGR); 3rd: VPLN of thalamus.
+- **3 neurons for pain and temperature from face:** 1st: Trigeminal ganglion; 2nd: Spinal nucleus of trigeminal; 3rd: VPMN of thalamus.
+- **3 neurons for crude touch and pressure:** 1st: DRG; 2nd: Lamina IV (nucleus proprius); 3rd: VPLN of thalamus.
+
+**Dorsal Column Tracts**
+- **Sensations carried:** Fine touch, proprioception, vibration, deep pressure, stereognosis.
+- **3 neurons for conscious proprioception and fine touch:** 1st: DRG; 2nd: Gracile and cuneate nuclei of medulla; 3rd: VPLN.
+- **4 tracts carrying unconscious proprioception to cerebellum:** Posterior spinocerebellar, anterior spinocerebellar, spino‑olivary, cuneocerebellar.
+- **Tract forming external arcuate fibers:** Cuneocerebellar tract.
+- **Tracts carrying unconscious proprioception from lower limb:** Posterior spinocerebellar, anterior spinocerebellar, spino‑olivary.
+
+**Descending Tracts**
+- **2 extrapyramidal tracts:** Tectospinal and rubrospinal.
+- **Origin of olivospinal tract:** Inferior olivary nucleus of medulla.
+- **Lamination of lateral corticospinal tract in spinal cord:** Cervical fibers medial, sacral fibers lateral.
+- **Lamination of pyramidal tract in internal capsule:** Face in genu, upper limb anterior, lower limb posterior in posterior limb.
+- **Tracts ending on alpha and gamma neurons of extensors:** Medial and lateral vestibulospinal tracts.
+- **Complete:** Tectospinal tract forms dorsal tegmental decussation; rubrospinal tract forms ventral tegmental decussation.
+
+**Blood Supply of Spinal Cord**
+- **3 arteries supplying spinal cord:** Anterior spinal, posterior spinal, segmental arteries.
+- **Artery supplying medial medulla and anterior 2/3 of spinal cord:** Anterior spinal artery.
+- **Artery supplying posterior 1/3 of spinal cord:** Posterior spinal artery.
+- **Origin of anterior spinal artery:** Single artery formed by union of two anterior spinal arteries, each from vertebral artery.
+- **Origin of posterior spinal artery:** Vertebral artery or PICA.
+- **Origin of radicular arteries:** Vertebral, ascending cervical, posterior intercostal, 1st lumbar.
+- **6 veins draining spinal cord:** Anteromedian, posteromedian, four veins along ventral and dorsal roots.
+
+**Spinal Cord Lesions**
+- **Complete transverse section:** Above C5: death; Between C5-T1: quadriplegia; Below T1: paraplegia.
+- **Hemisection:** At lesion: ipsilateral loss of all sensations, ipsilateral LMNL; Below lesion ipsilateral: loss of proprioception, UMNL; Below lesion contralateral: loss of pain and temperature.
+- **Anterior spinal artery occlusion:** Bilateral UMNL below lesion, bilateral loss of pain and temperature, preservation of proprioception and touch.
+
+**Basal Ganglia**
+- **Parts of neostriatum:** Caudate and Putamen.
+- **Parts of paleostriatum:** Globus pallidus internal and external.
+- **Blood supply of basal ganglia:** Central branches of anterior and middle cerebral arteries.
+- **Venous drainage of basal ganglia:** Thalamostriate vein.
+- **Complete:** Head of caudate bulges into anterior horn of lateral ventricle; body lies in floor of body of lateral ventricle; tail lies in roof of inferior horn of lateral ventricle.
+
+**Cerebellum**
+- **3 lobes (functional):** Archicerebellum, paleocerebellum, neocerebellum.
+- **Archicerebellum formed of:** 2 flocculi and nodule (part of inferior vermis).
+- **Paleocerebellum formed of:** Vermal part and 2 paravermal parts of cerebellar hemisphere.
+- **Neocerebellum formed of:** Lateral parts of cerebellar hemisphere.
+- **4 cerebellar nuclei:** Dentate, Emboliform, Globose, Fastigial.
+- **Arteries supplying cerebellum:** Superior cerebellar, anterior inferior cerebellar, posterior inferior cerebellar.
+- **Veins draining cerebellum:** Superior cerebellar veins and inferior cerebellar veins.
+- **4 afferent fibers of ICP:** Posterior spinocerebellar, dorsal external arcuate, ventral external arcuate, olivocerebellar.
+- **Efferent fibers of ICP:** Cerebellovestibular, cerebelloreticular, cerebello‑olivary.
+- **Afferent fiber of MCP:** Corticopontocerebellar fibers.
+- **Afferent fibers of SCP:** Anterior spinocerebellar, tectocerebellar.
+- **Efferent fibers of SCP:** Fastigioreticular, cerebellorubral, dentatothalamic, dentatorubrothalamic.
+
+**Brain Stem External Features**
+- **3 external features of ventral medulla:** Pyramid, Olive, ICP.
+- **Cranial nerves on ventral medulla:** Glossopharyngeal (9), Vagus (10), Accessory (11), Hypoglossal (12).
+- **3 external features of ventral pons:** MCP, Basilar artery sulcus, transverse grooves.
+- **Cranial nerves on ventral pons:** Trigeminal (5), Abducent (6), Facial (7), Vestibulocochlear (8).
+- **Nerves affected by cerebellopontine angle tumor:** Facial and Vestibulocochlear.
+- **4 structures winding around cerebral peduncle:** Optic tract, Trochlear nerve, Posterior cerebral artery, Basal vein.
+- **Boundaries of interpeduncular fossa:** Anterior: optic chiasma; Anterolateral: optic tract; Posterolateral: cerebral peduncle; Posterior: upper border of pons.
+- **Contents of interpeduncular fossa:** Tuber cinereum, mamillary bodies, posterior perforated substance, oculomotor nerve.
+- **3 elevations of closed medulla:** Gracile, Cuneate, ICP.
+- **Borders of open medulla:** Base: medullary striae; Apex: continuous with central canal; Floor: hypoglossal, vagal, and vestibular trigones.
+- **Borders of back of pons:** Base: medullary striae; Apex: cerebral aqueduct; Floor: medial eminence, facial colliculus, vestibular area.
+- **External features of back of midbrain:** 2 superior and 2 inferior colliculi.
+
+**Fourth Ventricle**
+- **Roof of fourth ventricle:** Superiorly: SCP and superior medullary velum; Inferiorly: inferior medullary velum.
+- **Floor of fourth ventricle:** Pontine part (medial eminence, facial colliculus, vestibular area); Medullary part (hypoglossal trigone, vagal trigone, vestibular trigone).
+- **Lateral boundaries:** Superiorly: SCP; Inferiorly: ICP + gracile and cuneate tracts; Lateral recess.
+- **Choroid plexus lies in:** Lower part of roof of fourth ventricle.
+
+**Columns of Cranial Nerve Nuclei**
+- **GSE column nuclei:** 3,4,6,12.
+- **SVE column nuclei:** Motor nucleus of 5, Motor nucleus of 7, Nucleus ambiguus (9,10,11).
+- **GVE column nuclei:** Edinger‑Westphal (3), Superior salivatory (7), Inferior salivatory (9), Dorsal vagal (10).
+- **Spinal part of accessory nerve supplies:** Sternomastoid and Trapezius.
+- **Origin of spinal accessory:** Spinal nucleus in ventral horn of upper 5 cervical segments.
+- **Muscles supplied by motor nucleus of trigeminal:** 4 muscles of mastication, Tensor palate, Tensor tympani, Anterior belly of digastric, Mylohyoid.
+
+**Blood Supply of Brain Stem**
+- **Arteries supplying medulla:** Anterior spinal, PICA, medullary branches of vertebral, posterior spinal.
+- **Arteries supplying pons:** Branches of basilar artery.
+- **Pontine hemorrhage causes:** Pinpoint pupil, hyperpyrexia, quadriplegia.
+- **Arteries supplying midbrain:** Branches of posterior cerebral and superior cerebellar.
+- **Medial medullary syndrome causes:** Contralateral hemiplegia (flaccid), contralateral loss of proprioception and fine touch, ipsilateral LMNL of tongue.
+- **Lateral medullary syndrome causes:** Cerebellar ataxia, ipsilateral loss of pain/temp from face, contralateral loss from body, ipsilateral paralysis of palate/pharynx/larynx, loss of taste, ipsilateral Horner’s syndrome.
+
+**Cranial Cavity, Temporal Region, Pterygopalatine Fossa**
+- **Fracture of anterior cranial fossa:** Bleeding and CSF rhinorrhea, orbital hemorrhage and subconjunctival hemorrhage.
+- **Fracture of middle cranial fossa:** Bleeding and CSF otorrhea, CN 7 & 8 involvement.
+- **Fracture of posterior cranial fossa:** Blood escapes into nape and posterior triangle of neck.
+- **Attachments of falx cerebri:** Apex: crista galli and frontal crest; Base: upper surface of tentorium; Upper border: lips of sagittal sulcus; Lower free border: encloses inferior sagittal sinus.
+- **Attachments of falx cerebelli:** Base: tentorium; Apex: margins of foramen magnum; Posterior border: internal occipital crest; Anterior border: free.
+- **Nerve supply of dura:** Anterior fossa: anterior ethmoidal + maxillary; Middle fossa: maxillary + mandibular; Posterior fossa: meningeal branches of 10,12 and recurrent branches of C1-3.
+- **Venous drainage of dura:** Meningeal veins and diploic veins.
+- **Extradural vs Subdural hemorrhage:** Extradural: arterial (middle meningeal); Subdural: venous.
+- **Single sinuses:** Superior sagittal, inferior sagittal, straight, occipital.
+- **Paired sinuses:** Sphenoparietal, cavernous, superior petrosal, inferior petrosal, sigmoid, transverse.
+- **Tributaries of superior sagittal sinus:** Superior cerebral veins, arachnoid villi.
+- **External relations of cavernous sinus:** Anterior: superior orbital fissure; Posterior: apex of petrous temporal and crus cerebri; Medial: pituitary and sphenoid sinus; Lateral: temporal lobe; Superior: optic tract and ICA; Inferior: foramen lacerum.
+- **Structures inside cavernous sinus:** Oculomotor, trochlear, ophthalmic, maxillary, abducent nerves; ICA.
+- **Tributaries of cavernous sinus:** Superior ophthalmic, inferior ophthalmic, central retinal, superficial middle cerebral.
+- **Drainage of cavernous sinus:** Superior and inferior petrosal sinuses.
+- **Communications of cavernous sinus:** Pterygoid plexus via emissary vein; Facial vein via superior ophthalmic; Opposite side via intercavernous sinuses.
+- **Nerve piercing cribriform plate:** Olfactory.
+- **Nerve through optic canal:** Optic nerve.
+- **Nerve in front of crossing of tentorium margins:** Oculomotor.
+- **Nerve at crossing of tentorium margins:** Trochlear.
+- **Nerve through hypoglossal canal:** Hypoglossal.
+- **Branches of cerebral part of ICA:** Ophthalmic, posterior communicating, anterior choroidal, anterior and middle cerebral.
+- **Boundaries of temporal fossa:** Superior: superior temporal line; Inferior: zygomatic arch.
+- **Boundaries of infratemporal fossa:** Lateral: ramus of mandible; Medial: lateral pterygoid plate; Anterior: posterior maxilla; Posterior: styloid process; Superior: greater wing of sphenoid.
+- **Communications of infratemporal fossa:** With temporal fossa (deep to zygomatic arch); With middle cranial fossa (foramen ovale & spinosum); With orbit (inferior orbital fissure); With pterygopalatine fossa (pterygomaxillary fissure).
+- **Nerve supply of muscles of mastication:** All by anterior division of mandibular nerve except medial pterygoid by trunk.
+- **Actions of muscles of mastication:** All protrude except temporalis retracts; All elevate except lateral pterygoid depresses; Medial & lateral pterygoid produce side‑to‑side movement.
+- **Lateral relations of lateral pterygoid:** Ramus of mandible, superficial head of medial pterygoid, tendon of temporalis, maxillary artery, pterygoid plexus.
+- **Medial relations of lateral pterygoid:** Deep head of medial pterygoid, tensor palati, MMA, maxillary artery, mandibular nerve trunk, otic ganglion, sphenomandibular ligament.
+- **3 ligaments of TMJ:** Lateral, stylomandibular, sphenomandibular.
+- **Branches of posterior division of mandibular nerve:** Auriculotemporal, lingual, inferior alveolar.
+- **Branches of inferior alveolar nerve:** Mylohyoid, mental, incisive.
+- **4 branches of maxillary nerve:** Meningeal, two ganglionic, zygomatic, posterior superior alveolar.
+- **Boundaries of pterygopalatine fossa:** Anterior: posterior maxilla; Posterior: pterygoid process; Medial: palatine bone; Lateral: opens to infratemporal fossa.
+- **Contents of pterygopalatine fossa:** 3rd part of maxillary artery, maxillary nerve, pterygopalatine ganglion.
+- **Branches of 3rd part of maxillary artery:** Posterior superior alveolar, infraorbital, greater & lesser palatine, sphenopalatine, pharyngeal, artery of pterygoid canal.
+- **Drainage of pterygoid plexus:** Maxillary vein.
+- **Communications of pterygoid plexus:** Facial vein (deep facial), cavernous sinus (emissary veins), inferior ophthalmic vein.
+- **Otic ganglion:** Site: below foramen ovale; Sympathetic root: around MMA; Parasympathetic root: inferior salivatory nucleus → tympanic branch of 9 → tympanic plexus → lesser petrosal → otic ganglion; Distribution: postganglionic to parotid.
+- **Compare sympathetic root:** Otic: around MMA; Submandibular: around facial artery; Sphenopalatine: around ICA (deep petrosal).
+
+**Anatomy of the Neck**
+- **Tributaries of external jugular vein:** Anterior jugular, transverse cervical, suprascapular, posterior external jugular.
+- **Floor of posterior triangle:** Semispinalis capitis, splenius capitis, levator scapulae, scalenus medius, scalenus anterior.
+- **5 contents of posterior triangle:** Spinal accessory nerve, roots/trunks of brachial plexus, cutaneous nerves of cervical plexus, subclavian vein, external jugular vein.
+- **Cutaneous branches of cervical plexus:** Great auricular, lesser occipital, transverse cervical, supraclavicular.
+- **Boundaries of anterior triangle:** Anterior: anterior median line; Posterior: anterior border of sternomastoid; Superior: inferior border of mandible and line to mastoid.
+- **Boundaries of submental triangle:** Apex: symphysis menti; Sides: anterior bellies of digastric; Base: body of hyoid; Floor: mylohyoid muscles.
+- **Contents of submental triangle:** Submental lymph nodes, submental artery and vein, mylohyoid nerve and vessels, small veins forming anterior jugular.
+- **Boundaries of digastric triangle:** Anterior: anterior belly of digastric; Posterior: posterior belly of digastric and stylohyoid; Superior: inferior border of mandible to mastoid; Roof: skin, superficial, deep fascia; Floor: mylohyoid and hyoglossus.
+- **5 contents of digastric triangle:** Submandibular gland, submandibular LN, submandibular ganglion, facial artery, facial vein.
+- **Boundaries of carotid triangle:** Superior: posterior belly of digastric; Anterior: superior belly of omohyoid; Posterior: anterior border of sternomastoid; Roof: skin, fascia; Floor: hyoglossus, thyrohyoid, middle and inferior constrictors.
+- **3 contents of carotid triangle:** CCA, ICA, ECA.
+- **Contents of muscular triangle:** Infrahyoid muscles.
+- **Nerve supply of infrahyoid muscles:** All by ansa cervicalis except thyrohyoid (C1 via hypoglossal).
+- **Nerve supply of suprahyoid muscles:** Anterior digastric and mylohyoid by nerve to mylohyoid; Posterior digastric and stylohyoid by facial; Geniohyoid by C1 via hypoglossal.
+- **Structure of ansa cervicalis:** Two limbs: superior (C1) and inferior (C2-3).
+- **Cervical sympathetic ganglia sites:** Superior: C2-3; Middle: C6-7; Inferior: C7.
+- **Branches of glossopharyngeal nerve:** Tympanic, carotid, pharyngeal, muscular, tonsillar, lingual.
+- **Branches of vagus from superior vagal ganglion:** Meningeal, auricular.
+
+---
+
+## Section 9: Multiple Choice Questions from Online Assessment (1–9)
+
+**QUESTION 1:** A 40-year-old female has paraesthesia in her right hand and difficulty in walking. CSF shows elevated levels of IgG, some mononuclear cells, and oligoclonal bands. Which of the following is the most probable etiology?
+- a) Malignant neoplasm
+- b) Autoimmune disease
+- c) Pick's disease
+- d) Depigmentation of substantia nigra
+
+**Correct Answer: b**
+
+**QUESTION 2:** Cavity of Diencephalon is called:
+- a) Lateral ventricle
+- b) 3rd ventricle
+- c) Aqueduct of sylvius
+- d) 4th ventricle
+- e) Central canal
+
+**Correct Answer: b**
+
+**QUESTION 3:** The posterior neuropore closes on:
+- a) 29th day IUFL
+- b) 27th day IUFL
+- c) 25th day IUFL
+- d) 30th day IUFL
+- e) 23rd day IUFL
+
+**Correct Answer: b**
+
+**QUESTION 4:** Several members of a large family are affected by onset of decreasing mental function and motor coordination when they reach middle age. Their extremity movements are marked by choreoathetosis. Genetic testing reveals increased trinucleotide CAG repeats. Which intracranial structure is most likely grossly abnormal?
+- a) Caudate nucleus
+- b) Midbrain
+- c) Temporal lobe
+- d) Locus ceruleus
+- e) Spinal cord
+
+**Correct Answer: a**
+
+**QUESTION 5:** Which antipsychotic drug is most likely to have the highest risk of QT interval prolongation “black box warning”?
+- a) Thioridazine
+- b) Haloperidol
+- c) Lithium
+- d) Risperidone
+- e) Quetiapine
+
+**Correct Answer: a**
+
+**QUESTION 6:** A 55-year-old woman with moderate Alzheimer disease prescribed a transdermal patch “drug X” which increases CNS acetylcholine indirectly by inhibiting AChE. She suffered diarrhea and abdominal cramps. Most likely drug X?
+- a) Donepezil
+- b) Rivastigmine
+- c) Haloperidol
+- d) Memantine
+- e) Riluzole
+
+**Correct Answer: b**
+
+**QUESTION 7:** Cavity of Telencephalon is called:
+- a) Lateral ventricle
+- b) 3rd ventricle
+- c) 4th ventricle
+- d) Aqueduct of sylvius
+- e) Central canal
+
+**Correct Answer: a**
+
+**QUESTION 8:** 5 year old boy suffers recent onset gait instability and ataxia. MRI shows a midline posterior fossa mass. Biopsy reveals sheets of primitive cells and many mitotic figures. Most common cytogenetic aberration?
+- a) CAG trinucleotide repeat expansions
+- b) loss of the short arm of chromosome 17 (17p)
+- c) loss of the long arm of chromosome 17 (17q)
+- d) WNT‑activated
+- e) Presence of apolipoprotein E4 allele
+
+**Correct Answer: b**
+
+**QUESTION 9:** During brain development, the cervical flexure is formed:
+- a) at the junction of the hind‑brain and spinal cord.
+- b) at the junction of the fore‑brain and mid‑brain.
+- c) at the junction of the mid‑brain and hind‑brain.
+- d) at the end of the neural tube.
+
+**Correct Answer: a**
+
+---
+
+---
+
+**1.** A 25‑year‑old woman presents with proximal, jerky, non‑purposeful movements of the limbs accompanied by hypotonia. Degeneration of which central nervous system structure is most likely responsible?  
+A. Cerebellar vermis  
+B. Substantia nigra pars compacta  
+C. Caudate nucleus  
+D. Anterior horn cells of the spinal cord  
+E. Frontal and temporal neocortex  
+Answer: C
+
+**2.** A 52‑year‑old man has had progressive headaches and concentration difficulties for two months. His behaviour becomes odd, and he then suffers a generalised seizure. MRI shows a large, necrotic mass in the left cerebral hemisphere that crosses the corpus callosum into the right hemisphere. Which neoplasm is most likely?  
+A. Pilocytic astrocytoma  
+B. Meningioma  
+C. Metastatic adenocarcinoma  
+D. Medulloblastoma  
+E. Glioblastoma  
+Answer: E
+
+**3.** A 23‑year‑old man is found unconscious after a fall. CT shows a biconvex, lens‑shaped hyperdensity between the skull and the dura. What is the most probable cause?  
+A. Hypertension  
+B. Arteriovenous malformation  
+C. Trauma  
+D. Atherosclerosis  
+E. Ruptured saccular aneurysm  
+Answer: C
+
+**4.** A newborn boy has an underdeveloped mandible and zygomatic bone, low‑set slanting eyes, and facial asymmetry. Which pharyngeal arch is most likely defective?  
+A. First arch  
+B. Second arch  
+C. Third arch  
+D. Fourth arch  
+E. Sixth arch  
+Answer: A
+
+**5.** A 10‑year‑old girl has a cystic cerebellar tumour. Microscopy shows spindle cells with hair‑like processes, microcysts, and Rosenthal fibres. What is the diagnosis?  
+A. Pilocytic astrocytoma  
+B. Medulloblastoma  
+C. Ependymoma  
+D. Haemangioblastoma  
+E. Oligodendroglioma  
+Answer: A
+
+**6.** A 28‑year‑old woman has unilateral tinnitus, vertigo, and progressive hearing loss. MRI reveals a 3 cm mass at the cerebellopontine angle. Which microscopic finding is most characteristic?  
+A. Glandular differentiation  
+B. Pseudorosettes in a fibrillar background  
+C. Whorled spindle cells with psammoma bodies  
+D. Hypo‑ and hypercellular areas (Antoni A and B)  
+E. Lipid‑laden stromal cells  
+Answer: D
+
+**7.** A 5‑year‑old boy has recent‑onset gait instability and ataxia. MRI shows a midline posterior fossa mass. Biopsy reveals sheets of primitive small round cells with many mitoses. Which cytogenetic abnormality is most common?  
+A. CAG trinucleotide repeat expansions  
+B. Loss of the short arm of chromosome 17 (17p)  
+C. Loss of the long arm of chromosome 17 (17q)  
+D. WNT pathway activation  
+E. Apolipoprotein E4 allele  
+Answer: B
+
+**8.** A 32‑year‑old woman has difficulty writing, right arm weakness, and reduced light touch on the left leg. CSF shows elevated IgG, mononuclear cells, and oligoclonal bands. Which pathologic finding is most likely?  
+A. Lewy bodies in substantia nigra  
+B. Perivascular lymphocytes with demyelinated axons in white matter  
+C. Neurofibrillary tangles and neuritic plaques  
+D. Multinucleated cells in grey and white matter  
+E. Atrophy of caudate and putamen  
+Answer: B
+
+**9.** A 56‑year‑old man with polycystic kidney disease develops sudden severe headache and nuchal rigidity. CT shows subarachnoid haemorrhage. What is the most likely cause?  
+A. Trauma  
+B. Ruptured saccular aneurysm  
+C. Arteriovenous malformation  
+D. Hypertensive bleed  
+E. Middle meningeal artery rupture  
+Answer: B
+
+**10.** A 32‑year‑old woman has right arm weakness and reduced light touch on the left leg. CSF shows oligoclonal bands. The most likely diagnosis is:  
+A. Parkinson disease  
+B. Alzheimer disease  
+C. Multiple sclerosis  
+D. Huntington disease  
+E. Amyotrophic lateral sclerosis  
+Answer: C
+
+**11.** Which part of the anterior wall of the third ventricle is formed by a thin membrane derived from the telencephalon?  
+A. Tela choroidea  
+B. Pineal body  
+C. Tegmentum of the midbrain  
+D. Lamina terminalis  
+E. Thalamus  
+Answer: D
+
+**12.** All of the following are constituents of the lateral wall of the cavernous sinus except:  
+A. Oculomotor nerve  
+B. Trochlear nerve  
+C. Ophthalmic nerve  
+D. Maxillary nerve  
+E. Mandibular nerve  
+Answer: E
+
+**13.** Which cranial nerve emerges from the anterior aspect of the medulla oblongata between the pyramid and the olive?  
+A. Glossopharyngeal  
+B. Vagus  
+C. Accessory  
+D. Hypoglossal  
+E. Abducens  
+Answer: D
+
+**14.** The internal arcuate fibres are axons of which nucleus?  
+A. Olivary  
+B. Arcuate  
+C. Accessory cuneate  
+D. Red  
+E. Cuneate  
+Answer: E
+
+**15.** Unconscious proprioception from the biceps brachii is carried primarily by which tract?  
+A. Gracile  
+B. Cuneate  
+C. Posterior spinocerebellar  
+D. Anterior spinocerebellar  
+E. Spino‑olivary  
+Answer: E
+
+**16.** Which tract is responsible for spino‑visual reflexes (turning the head and eyes toward a cutaneous stimulus)?  
+A. Cuneocerebellar  
+B. Ventral spinothalamic  
+C. Lateral spinothalamic  
+D. Spinoreticular  
+E. Spinotectal  
+Answer: E
+
+**17.** All of the following structures wind around the cerebral peduncle except:  
+A. Optic tract  
+B. Trochlear nerve  
+C. Posterior cerebral artery  
+D. Basal vein  
+E. Trigeminal nerve  
+Answer: E
+
+**18.** Which structure is present at the level of the midbrain?  
+A. Arcuate nucleus  
+B. Trapezoid body  
+C. Vestibular nucleus  
+D. Central tegmental tract  
+E. Arcuate fibres  
+Answer: D
+
+**19.** The facial colliculus is formed by:  
+A. Motor fibres of the facial nerve  
+B. Abducent nucleus  
+C. Vestibular nucleus  
+D. Dorsal vagal nucleus  
+E. Hypoglossal nucleus  
+Answer: B
+
+**20.** The choroid plexus of the fourth ventricle is located in its:  
+A. Superior roof  
+B. Inferior roof  
+C. Lateral wall  
+D. Floor  
+E. Lateral recess only  
+Answer: B
+
+**21.** The median part of the upper lip (philtrum) is derived embryologically from the:  
+A. Frontal prominence  
+B. Intermaxillary segment  
+C. Lateral nasal prominence  
+D. Mandibular prominence  
+E. Maxillary prominence  
+Answer: B
+
+**22.** The lateral part of the upper lip is derived from the:  
+A. Maxillary prominence  
+B. Medial nasal prominence  
+C. Lateral nasal prominence  
+D. Intermaxillary segment  
+E. Frontal prominence  
+Answer: A
+
+**23.** A newborn has an underdeveloped mandible, zygomatic bone, and low‑set ears. Which pharyngeal arch is defective?  
+A. First arch  
+B. Second arch  
+C. Third arch  
+D. Fourth arch  
+E. Sixth arch  
+Answer: A
+
+**24.** Which muscle develops from the first pharyngeal arch?  
+A. Platysma  
+B. Cricothyroid  
+C. Stylopharyngeus  
+D. Tensor veli palatini  
+E. Palatoglossus  
+Answer: D
+
+**25.** The branchial arch supplied by the glossopharyngeal nerve is the:  
+A. First  
+B. Second  
+C. Third  
+D. Fourth  
+E. Sixth  
+Answer: C
+
+**26.** Which receptor is specialised for tactile discrimination and two‑point discrimination?  
+A. Pacinian corpuscle  
+B. Ruffini ending  
+C. Free nerve ending  
+D. Krause end bulb  
+E. Meissner corpuscle  
+Answer: E
+
+**27.** Which receptor helps a blind person read Braille by detecting fine texture and edges?  
+A. Plexus of Bonnet  
+B. Ruffini ending  
+C. Free nerve ending  
+D. Krause end bulb  
+E. Meissner corpuscle  
+Answer: E
+
+**28.** The plexus of Bonnet is best described as:  
+A. A capsulated receptor with concentric lamellae  
+B. A mechanoreceptor around hair follicles  
+C. A thermoreceptor in the dermis  
+D. A nociceptor in the epidermis  
+E. A proprioceptor in joint capsules  
+Answer: B
+
+**29.** Which receptors are located most deeply in the skin (dermis and hypodermis)?  
+A. Meissner and Merkel  
+B. Pacinian corpuscle and Ruffini endings  
+C. Krause end bulb and free nerve endings  
+D. Meissner and plexus of Bonnet  
+E. Merkel and free nerve endings  
+Answer: B
+
+**30.** Which receptor has a motor efferent supply?  
+A. Pacinian corpuscle  
+B. Muscle spindle  
+C. Golgi tendon organ  
+D. Free nerve ending  
+E. Meissner corpuscle  
+Answer: B
+
+**31.** The Golgi tendon organ differs from the muscle spindle in that it:  
+A. Is stimulated by passive stretch  
+B. Lies parallel to extrafusal fibres  
+C. Lacks motor innervation  
+D. Has a connective tissue capsule  
+E. Is larger in size  
+Answer: C
+
+**32.** Which lamina of the spinal cord corresponds to the substantia gelatinosa?  
+A. Lamina I  
+B. Lamina II  
+C. Lamina III  
+D. Lamina IV  
+E. Lamina V  
+Answer: B
+
+**33.** Clark’s nucleus (dorsal nucleus) is located in which lamina?  
+A. Lamina V  
+B. Lamina VI  
+C. Lamina VII  
+D. Lamina VIII  
+E. Lamina IX  
+Answer: C
+
+**34.** Gamma motor neurons are found in which lamina of the spinal cord?  
+A. Lamina I  
+B. Lamina II  
+C. Lamina V  
+D. Lamina IX  
+E. Lamina X  
+Answer: D
+
+**35.** A patient with a spinal cord lesion has loss of vibration and position sense in both legs but normal pain and temperature sensation. Which tract is most likely affected?  
+A. Lateral spinothalamic  
+B. Anterior spinothalamic  
+C. Gracile  
+D. Cuneate  
+E. Spinocerebellar  
+Answer: C
+
+**36.** The reticular activating system (RAS) is best described by which statement?  
+A. Its neurons are located only in the medulla oblongata.  
+B. Its neurons can be activated by sensory signals from proprioceptors.  
+C. Its activity is decreased by stress.  
+D. It discharges inhibitory signals to spinal motor neurons.  
+E. It is inhibited by ephedrine.  
+Answer: B
+
+**37.** Which EEG wave pattern indicates deep (slow‑wave) sleep in an adult?  
+A. Alpha  
+B. Beta  
+C. Theta  
+D. Delta  
+E. Gamma  
+Answer: D
+
+**38.** Operant conditioning is a type of:  
+A. Non‑associative learning  
+B. Associative learning  
+C. Sensitisation  
+D. Habituation  
+E. Implicit memory  
+Answer: B
+
+**39.** Stimulation of the lateral hypothalamic area in an experimental animal produces:  
+A. Feeding behaviour  
+B. Fear and aggression  
+C. Bradycardia  
+D. Oxytocin release  
+E. Hypothermia  
+Answer: A
+
+**40.** Semantic memory refers to:  
+A. Memory of personal events  
+B. Procedural (skill) memory  
+C. Memory of facts and general knowledge  
+D. Non‑declarative memory  
+E. Short‑term working memory  
+Answer: C
+
+**41.** The representational (non‑dominant) hemisphere in most people is described by which feature?  
+A. It is responsible for language comprehension.  
+B. It always lies in the left hemisphere.  
+C. It has no known function.  
+D. It is concerned with analytical tasks.  
+E. It contains Broca’s area.  
+Answer: B
+
+**42.** GABA is an inhibitory neurotransmitter that increases the permeability of the postsynaptic membrane to which ion?  
+A. Sodium  
+B. Calcium  
+C. Bicarbonate  
+D. Chloride  
+E. Potassium  
+Answer: D
+
+**43.** The endogenous analgesia system includes which brain region?  
+A. Primary somatosensory cortex  
+B. Raphe magnus nucleus  
+C. Dorsal root ganglion  
+D. Periaqueductal grey  
+E. Supraoptic nucleus  
+Answer: D
+
+**44.** Fast pain (first pain) is transmitted to the CNS by which fibres?  
+A. Aα fibres  
+B. Aδ fibres  
+C. Aβ fibres  
+D. C fibres  
+E. B fibres  
+Answer: B
+
+**45.** Which of the following inhibits pain sensation?  
+A. Adaptation of pain receptors  
+B. Increased kinin release  
+C. Naloxone injection  
+D. Stimulation of opioid receptors  
+E. Activation of the lateral spinothalamic tract  
+Answer: D
+
+**46.** During the cotton wool test for crude touch, the receptors responsible are:  
+A. Nociceptors  
+B. Thermoreceptors  
+C. Mechanoreceptors  
+D. Chemoreceptors  
+E. Proprioceptors  
+Answer: C
+
+**47.** Tactile discrimination (two‑point discrimination) is best tested by:  
+A. Tuning fork  
+B. Cotton wisp  
+C. Two‑point (Weber’s) compass  
+D. Hot and cold tubes  
+E. Reflex hammer  
+Answer: C
+
+**48.** Which antiepileptic drug is associated with the highest risk of neonatal cleft lip and cleft palate?  
+A. Carbamazepine  
+B. Topiramate  
+C. Valproic acid  
+D. Phenytoin  
+E. Phenobarbital  
+Answer: D
+
+**49.** Which drug is used as a rescue medication for sudden akinetic episodes (off‑periods) in advanced Parkinson’s disease?  
+A. Carbidopa  
+B. Selegiline  
+C. Apomorphine  
+D. Ropinirole  
+E. Benztropine  
+Answer: C
+
+**50.** Antipsychotic‑induced akathisia is best treated with:  
+A. Clozapine  
+B. Propranolol  
+C. Benztropine  
+D. Dantrolene  
+E. Bromocriptine  
+Answer: B
+
+**51.** The mood stabiliser with delayed onset, narrow therapeutic index, and requirement for blood level monitoring is:  
+A. Valproate  
+B. Carbamazepine  
+C. Lamotrigine  
+D. Lithium  
+E. Risperidone  
+Answer: D
+
+**52.** Which combination of drugs should be avoided because both can cause agranulocytosis?  
+A. Haloperidol + Valproate  
+B. Lithium + Valproate  
+C. Risperidone + Carbamazepine  
+D. Quetiapine + Carbamazepine  
+E. Clozapine + Carbamazepine  
+Answer: E
+
+**53.** Which antiepileptic is used as migraine prophylaxis and can cause weight loss and renal stones?  
+A. Levetiracetam  
+B. Carbamazepine  
+C. Ethosuximide  
+D. Phenytoin  
+E. Topiramate  
+Answer: E
+
+**54.** Which antidepressant is approved for management of chronic neuropathic pain (e.g., diabetic neuropathy)?  
+A. Tranylcypromine  
+B. Phenelzine  
+C. Venlafaxine  
+D. Lithium  
+E. Bupropion  
+Answer: C
+
+**55.** Which statement about ester local anesthetics is false?  
+A. They are hydrolysed by plasma pseudocholinesterases.  
+B. Procaine is a member of this group.  
+C. They are shorter acting than amides.  
+D. They are less liable to induce allergy.  
+E. They are less liable to systemic toxicity than amides.  
+Answer: D
+
+**56.** The only medically justified long‑term use of phenobarbital is for:  
+A. Schizophrenia  
+B. Insomnia  
+C. Anxiety  
+D. Alcohol withdrawal  
+E. Certain epilepsies  
+Answer: E
+
+**57.** The main benefit of adding carbidopa to levodopa in Sinemet is that carbidopa:  
+A. Inhibits peripheral MAO‑B  
+B. Inhibits peripheral aromatic L‑amino acid decarboxylase  
+C. Inhibits central COMT  
+D. Inhibits central MAO‑A  
+E. Increases dopamine release  
+Answer: B
+
+**58.** Which opioid antagonist is also used to reduce alcohol craving?  
+A. Meperidine  
+B. Buprenorphine  
+C. Naltrexone  
+D. Naloxone  
+E. Methadone  
+Answer: C
+
+**59.** The potency of inhaled anaesthetics is quantitatively defined as the:  
+A. Blood/gas partition coefficient  
+B. Minimum alveolar concentration (MAC)  
+C. Cerebrovascular resistance  
+D. Volatility index  
+E. Oil/gas partition coefficient  
+Answer: B
+
+**60.** Which antiviral drug is used to treat neonates with herpes simplex virus encephalitis?  
+A. Amantadine  
+B. Oseltamivir  
+C. Interferon  
+D. Acyclovir  
+E. Foscarnet  
+Answer: D
+
+**61.** An important virulence factor of *Cryptococcus neoformans* is the production of:  
+A. IgA protease  
+B. Catalase  
+C. A neurotoxin  
+D. Internalin  
+E. Melanin  
+Answer: E
+
+**62.** The vaccine used for protection against tetanus consists of:  
+A. Conjugate polysaccharide  
+B. Heat‑killed bacteria  
+C. Live attenuated bacteria  
+D. Polysaccharide capsule  
+E. Toxoid  
+Answer: E
+
+**63.** Which characteristic is true of *Listeria monocytogenes*?  
+A. It is strictly a human pathogen.  
+B. It can grow at refrigerator temperature (4°C).  
+C. It is catalase negative.  
+D. It is a Gram‑negative coccus.  
+E. It is an extracellular pathogen.  
+Answer: B
+
+**64.** In a suspected case of rabies, the most important specimen for virus detection is:  
+A. Blood  
+B. Faeces  
+C. Saliva  
+D. Skin swab  
+E. Throat swab  
+Answer: C
+
+**65.** Which is a cannabinoid drug used for management of hashish (cannabis) dependence?  
+A. Dronabinol  
+B. Naltrexone  
+C. Naloxone  
+D. Clonidine  
+E. Disulfiram  
+Answer: A
+
+**66.** In the urea cycle, which two compounds are end products (released from the cycle)?  
+A. Urea and citrulline  
+B. Urea and arginine  
+C. Urea and fumarate  
+D. Urea and ornithine  
+E. Urea only  
+Answer: C
+
+**67.** Which enzyme is stimulated by cortisol to increase epinephrine synthesis?  
+A. Dopamine β‑hydroxylase  
+B. Phenylethanolamine N‑methyltransferase (PNMT)  
+C. Dopa decarboxylase  
+D. Tyrosine hydroxylase  
+E. N‑acetyltransferase  
+Answer: B
+
+**68.** Which cofactor is required for the conversion of phenylalanine to tyrosine?  
+A. FAD  
+B. NAD  
+C. ATP  
+D. PLP  
+E. Tetrahydrobiopterin (BH₄)  
+Answer: E
+
+**69.** The inborn error of branched‑chain amino acid metabolism that causes a burnt‑sugar odour in urine is:  
+A. Albinism  
+B. Alkaptonuria  
+C. Phenylketonuria  
+D. Homocystinuria  
+E. Maple syrup urine disease  
+Answer: E
+
+**70.** Thiamine pyrophosphate (TPP) is a coenzyme for the oxidative decarboxylation of:  
+A. Glucose  
+B. α‑amino acids  
+C. Triglycerides  
+D. α‑Keto acids  
+E. Fatty acids  
+Answer: D
+
+**71.** Pellagra (dermatitis, diarrhoea, dementia, death) is caused by deficiency of:  
+A. Thiamine (B₁)  
+B. Riboflavin (B₂)  
+C. Pyridoxine (B₆)  
+D. Cobalamin (B₁₂)  
+E. Niacin (B₃)  
+Answer: E
+
+**72.** Which vitamin is directly involved in one‑carbon transfer reactions (e.g., purine and thymidylate synthesis)?  
+A. Niacin  
+B. Riboflavin  
+C. Folate  
+D. Thiamine  
+E. Vitamin C  
+Answer: C
+
+**73.** Methyl‑THF donates its methyl group to homocysteine to form:  
+A. Cysteine  
+B. Methionine  
+C. Serine  
+D. Glycine  
+E. S‑adenosylmethionine  
+Answer: B
+
+**74.** Which of the following releases free ammonia in the body?  
+A. Synthesis of purines  
+B. Synthesis of monoamines  
+C. Synthesis of aminosugars  
+D. Catabolism of amino acids  
+E. Synthesis of pyrimidines  
+Answer: D
+
+**75.** Glutamate dehydrogenase is allosterically activated by:  
+A. GTP  
+B. ATP  
+C. ADP and GDP  
+D. NADH  
+E. Citrate  
+Answer: C
+
+**76.** The enzyme carbamoyl phosphate synthetase I (CPS I) is activated by:  
+A. Ornithine  
+B. Citrulline  
+C. N‑Acetylglutamate  
+D. Arginine  
+E. Urea  
+Answer: C
+
+**77.** Which compound links the urea cycle with the citric acid cycle?  
+A. Oxaloacetate  
+B. Citrate  
+C. Fumarate  
+D. Malate  
+E. Succinate  
+Answer: C
+
+**78.** Serotonin is synthesised from which amino acid?  
+A. Tyrosine  
+B. Phenylalanine  
+C. Histidine  
+D. Tryptophan  
+E. Glutamate  
+Answer: D
+
+**79.** The central nervous system is soft because it:  
+A. Is rich in blood vessels.  
+B. Contains abundant connective tissue.  
+C. Contains no connective tissue.  
+D. Is composed mainly of fat.  
+Answer: C
+
+**80.** The blood‑CSF barrier is NOT formed by:  
+A. Foot processes of astrocytes  
+B. Basement membrane of ependymal cells  
+C. Fenestrated endothelial cells  
+D. Ependymal cells connected by tight junctions  
+Answer: C
+
+**81.** A patient with a lesion in the right cerebral peduncle (midbrain) would present with:  
+A. Loss of fine touch on the left side of the body  
+B. Loss of pain sensation on the right side  
+C. Skeletal motor loss on the entire left side  
+D. Bilateral motor loss  
+E. Sensory loss only  
+Answer: C
+
+**82.** Which receptors are most likely responsible for the sudden muscle relaxation when a weight‑lifter releases a heavy load after a sustained hold?  
+A. Muscle spindle primary endings (Ia)  
+B. Muscle spindle secondary endings (II)  
+C. Golgi tendon organ (Ib)  
+D. Pacinian corpuscles  
+E. Free nerve endings  
+Answer: C
+

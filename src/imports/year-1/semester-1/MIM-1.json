@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "comingSoon": true,
+  "meta": {
+    "moduleCode": "MIM-1",
+    "moduleName": "Immunology Module",
+    "year": 1,
+    "semester": 1,
+    "creditPoints": 3,
+    "totalMarks": 60,
+    "keywords": [
+      "immunology",
+      "mim"
+    ]
+  },
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Innate Immunity",
+      "subtitle": "Innate Immunity",
+      "emoji": "🛡️",
+      "page": 1,
+      "lectureRange": "Lectures 1",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 2,
+      "title": "Adaptive Immunity",
+      "subtitle": "Adaptive Immunity",
+      "emoji": "🦠",
+      "page": 2,
+      "lectureRange": "Lectures 2",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 3,
+      "title": "Clinical Immunology",
+      "subtitle": "Clinical Immunology",
+      "emoji": "🧪",
+      "page": 3,
+      "lectureRange": "Lectures 3",
+      "subjects": [],
+      "keywords": []
+    }
+  ]
+}

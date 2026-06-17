@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "comingSoon": true,
+  "meta": {
+    "moduleCode": "P6-3",
+    "moduleName": "Leadership & Management Skills",
+    "year": 3,
+    "semester": 2,
+    "creditPoints": 1,
+    "totalMarks": 20,
+    "keywords": [
+      "leadership",
+      "management",
+      "p6"
+    ]
+  },
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Leadership Styles & Team Dynamics",
+      "subtitle": "Leadership Styles & Team Dynamics",
+      "emoji": "👥",
+      "page": 1,
+      "lectureRange": "Lectures 1",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 2,
+      "title": "Healthcare Management, Quality & Conflict Resolution",
+      "subtitle": "Healthcare Management, Quality & Conflict Resolution",
+      "emoji": "🏥",
+      "page": 2,
+      "lectureRange": "Lectures 2",
+      "subjects": [],
+      "keywords": []
+    }
+  ]
+}

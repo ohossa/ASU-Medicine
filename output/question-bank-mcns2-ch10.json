@@ -1,0 +1,314 @@
+{
+  "schemaVersion": 1,
+  "meta": {
+    "moduleCode": "MCNS-2",
+    "moduleName": "Central Nervous System",
+    "year": 2,
+    "semester": 2,
+    "creditPoints": 6,
+    "totalMarks": 200,
+    "keywords": [
+      "CNS",
+      "Neuroanatomy",
+      "Neuropharmacology",
+      "Neurophysiology",
+      "Neuropathology"
+    ]
+  },
+  "chapterTitle": "X. Miscellaneous & Embryology",
+  "questions": [
+    {
+      "id": "mcns2-ch1-anatomy-q360",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The ultimobranchial body gives rise to:",
+      "explanation": "The ultimobranchial body (also called the pharyngeal ultimobranchial body or C cells) is derived from the neural crest of the 5th pharyngeal pouch (or 4th in some classifications). It gives rise to the parafollicular cells (C cells) of the thyroid gland, which secrete calcitonin for calcium regulation. The thymus, tonsil, and parathyroids arise from 3rd and 4th pouches.",
+      "keyConcept": "Ultimobranchial body gives rise to parafollicular C cells of thyroid (secrete calcitonin).",
+      "options": [
+        "Tonsil.",
+        "Superior parathyroid.",
+        "Thymus.",
+        "Parafollicular cells.",
+        "Chromaffin cells."
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q363",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The hyoid bone is derived from:",
+      "explanation": "The hyoid bone body is derived from migrating neural crest cells of the 2nd and 3rd pharyngeal arches. The lesser horn and upper body come from the 2nd arch; the greater horn and lower body come from the 3rd arch. This embryological origin explains the dual nerve supply (CN VII for 2nd arch structures, CN IX for 3rd arch structures).",
+      "keyConcept": "Hyoid bone body derived from neural crest cells of 2nd and 3rd arches; lesser horn from 2nd, greater horn from 3rd.",
+      "options": [
+        "Migrating paraxial mesoderm of 1st & 2nd arches.",
+        "Migrating paraxial mesoderm of 2nd & 3rd arches.",
+        "Migrating paraxial mesoderm of 3rd & 4th arches.",
+        "Migrating neural crest cells of 1st & 2nd arches.",
+        "Migrating neural crest cells of 2nd & 3rd arches."
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q380",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The parafollicular cells of the thyroid gland:",
+      "explanation": "Parafollicular cells (C cells) of the thyroid gland are derived from the neural crest of the ultimobranchial body (5th pharyngeal pouch) and produce calcitonin, which lowers blood calcium levels. They are NOT mesodermal in origin—they arise from neuroectoderm. They do NOT originate from the dorsal part of the 3rd pouch (which gives inferior parathyroids). Only the statement that they produce calcitonin is correct.",
+      "keyConcept": "Parafollicular cells produce calcitonin; derived from ultimobranchial body (neural crest), NOT mesoderm.",
+      "options": [
+        "Produce calcitonin.",
+        "Are mesodermal in origin.",
+        "Originate from dorsal part of 3rd pouch.",
+        "All the above is true.",
+        "a and b are true."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q407",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Failure of closure of anterior neuropore of the neural tube leads to:",
+      "explanation": "Failure of closure of the anterior neuropore of the neural tube leads to anencephaly, a condition where the cranial vault fails to form and the brain is exposed to amniotic fluid. The anterior neuropore closes around day 25. Spina bifida results from failure of closure of the posterior neuropore. Anencephaly is incompatible with life.",
+      "keyConcept": "Anterior neuropore closure failure = ANENCEPHALY (exposed brain); posterior neuropore failure = SPINA BIFIDA.",
+      "options": [
+        "Anencephaly.",
+        "Spina bifida.",
+        "Microcephaly.",
+        "Hydrocephalus.",
+        "Scaphocephaly."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q416",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The commonest site of spina bifida is:",
+      "explanation": "Spina bifida is most common in the lumbosacral region because the lumbar and sacral vertebrae are the last to close their vertebral arches (sacral arches close last, around puberty). The most common type is spina bifida occulta at L5-S1. The thoraco-lumbar region is also a common site, but lumbosacral is the most common overall.",
+      "keyConcept": "Commonest site of spina bifida = lumbosacral region; vertebrae close from cranial to caudal direction.",
+      "options": [
+        "Cervical.",
+        "Upper thoracic.",
+        "Mid-thoracic.",
+        "Thoraco-lumbar.",
+        "Lumbo-sacral."
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q429",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Enumerate derivatives of 4th pharyngeal pouch.",
+      "explanation": "The fourth pharyngeal pouch gives rise to the superior parathyroid glands (from the dorsal wing) and the ultimobranchial body (from the ventral wing, which contains neural crest cells that become parafollicular C cells of the thyroid). The superior parathyroids descend only a short distance, explaining their consistent position on the posterior aspect of the middle thyroid.",
+      "keyConcept": "4th pharyngeal pouch: DORSAL = superior parathyroids; VENTRAL = ultimobranchial body (parafollicular C cells).",
+      "modelAnswer": "Derivatives of the fourth pharyngeal pouch: (1) Dorsal wing: Superior parathyroid glands—descend only a short distance, retaining a relatively constant position on the posterior aspect of the middle thyroid. (2) Ventral wing: Ultimobranchial body—contains neural crest-derived cells that migrate into the thyroid gland to become parafollicular (C) cells, which secrete calcitonin. The 4th pouch also contributes to the formation of the thyroid cartilage and epiglottis (along with 4th arch cartilage)."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q642",
+      "type": "essay",
+      "lecture": 1,
+      "text": "What do chromaffin cells give?",
+      "explanation": "Chromaffin cells (neural crest derivatives) give rise to the adrenal medulla, paraganglia (including carotid and aortic bodies), and extra-adrenal chromaffin tissue throughout the body.",
+      "keyConcept": "Neural crest chromaffin cell derivatives",
+      "modelAnswer": "Adrenal medulla, carotid body, and paraganglia"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1073",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The anterior neuropore of neural tube closes at ……… day of pregnancy.",
+      "explanation": "The anterior neuropore closes at day 25 of embryonic development; failure results in anencephaly. The posterior neuropore closes around day 27.",
+      "keyConcept": "Anterior neuropore closes at day 25 of pregnancy.",
+      "options": [
+        "23rd",
+        "25th",
+        "27th",
+        "29th"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1076",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The neural crest gives all the following EXCEPT:",
+      "explanation": "Spinal nerves are formed from dorsal and ventral roots which originate from the neural tube (CNS), not from neural crest. Neural crest gives dorsal root ganglia, autonomic ganglia, and postganglionic neurons.",
+      "keyConcept": "Spinal nerves: from neural tube, not neural crest.",
+      "options": [
+        "All spinal nerves.",
+        "Dorsal root ganglia.",
+        "Autonomic ganglia.",
+        "Postganglionic autonomic neurons."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1077",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Failure of closure of the neural tube leads to:",
+      "explanation": "Rachischisis (myeloschisis) results from failure of neural tube closure, causing exposure of neural tissue; spina bifida results from vertebral arch defects.",
+      "keyConcept": "Neural tube closure failure: rachischisis (exposed neural tissue).",
+      "options": [
+        "Acrania.",
+        "Rachischisis.",
+        "Spina bifida occulta.",
+        "Spina bifida cystica."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-pharma-q43",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "A mood stabilizer safe in pregnant patients with bipolar depression is",
+      "explanation": "Carbamazepine has a relatively better fetal safety profile than valproate (which causes neural tube defects) and phenytoin.",
+      "keyConcept": "Carbamazepine has relatively better fetal safety profile than valproate or phenytoin.",
+      "options": [
+        "Valproate.",
+        "Carbamazepine.",
+        "Phenytoin.",
+        "Ethosuximide."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-pharma-q45",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Teratogenic effects are more likely to be induced by",
+      "explanation": "Teratogenic effects are most likely with valproate AND phenytoin. Option D is correct. Valproate has the HIGHEST teratogenic potential (1-2% neural tube defects). Phenytoin causes fetal hydantoin syndrome. Carbamazepine has lower teratogenic risk. Both A and B are highly teratogenic.",
+      "keyConcept": "Valproate carries the highest risk of neural tube defects among antiepileptics; phenytoin causes fetal hydantoin syndrome.",
+      "options": [
+        "Phenytoin.",
+        "Valproate.",
+        "Carbamazepine.",
+        "A and B."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-pharma-q176",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "A mood stabilizer safe in pregnant patients with bipolar depression:",
+      "explanation": "In pregnancy, lamotrigine is considered the safest mood stabilizer for bipolar disorder. Valproate is contraindicated (teratogenic). Carbamazepine and phenytoin have teratogenic effects but are considered somewhat safer than valproate. Ethosuximide is for absence seizures, not bipolar. The answer is A - lamotrigine is the mood stabilizer safe in pregnant patients with bipolar depression. It's FDA category C but has the best safety profile among mood stabilizers during pregnancy. Valproate causes neural tube defects, carbamazepine may cause neural tube defects but less frequently.",
+      "keyConcept": "Lamotrigine is the preferred mood stabilizer in pregnancy due to better safety profile than valproate or carbamazepine.",
+      "options": [
+        "Carbamazepine",
+        "Valproate",
+        "Phenytoin",
+        "Ethosuximide"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-pharma-q179",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Teratogenic effects are more likely to be induced by:",
+      "explanation": "Both phenytoin and valproate are teratogenic. Valproate has the HIGHEST teratogenic potential among antiepileptics, causing neural tube defects (1-2% risk of spina bifida), craniofacial abnormalities, cardiovascular defects, and cognitive impairment. Phenytoin causes fetal hydantoin syndrome (craniofacial abnormalities, nail/digit hypoplasia, growth restriction). The risk with valproate is dose-dependent but present even at low doses. Carbamazepine also has teratogenic potential but lower than valproate. The answer is D (A & B) because both phenytoin and valproate are highly teratogenic, with valproate being worse.",
+      "keyConcept": "Valproate has the highest teratogenic risk among antiepileptics, followed by phenytoin; both should be avoided in pregnancy.",
+      "options": [
+        "Phenytoin",
+        "Valproate",
+        "Carbamazepine",
+        "A & B"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch10-pharma-q26",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "An antiepileptic suitable for a pregnant women with tonic clonic epilepsy is",
+      "explanation": "Carbamazepine is suitable for pregnant women with tonic clonic epilepsy. Option B is correct. Among the options, carbamazepine has relatively lower teratogenic risk than valproate (neural tube defects) and phenytoin (fetal hydantoin syndrome). Ethosuximide (D) is for absence seizures only.",
+      "keyConcept": "Carbamazepine is preferred over valproate in pregnancy due to lower neural tube defect risk.",
+      "options": [
+        "Phenytoin.",
+        "Carbamazepine.",
+        "Valproate.",
+        "Ethosuximide."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch10-pharma-q29",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The following antiepileptic is not preferred during pregnancy",
+      "explanation": "Valproate is NOT preferred during pregnancy. Option D is correct. Valproate has the HIGHEST teratogenic risk (1-2% neural tube defects). Lamotrigine and levetiracetam are considered safer alternatives. Carbamazepine has intermediate risk. All antiepileptics carry some risk, but valproate is most contraindicated.",
+      "keyConcept": "Valproate's high teratogenic potential (neural tube defects) makes it contraindicated in pregnancy.",
+      "options": [
+        "Lamotrigine",
+        "Carbamazepine",
+        "Levetiracetam",
+        "Valproate"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch10-pharma-q85",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The following antiepileptic is not preferred during pregnancy:",
+      "explanation": "Valproate is CONTRAINDICATED in pregnancy due to significant teratogenicity. It causes neural tube defects (spina bifida), craniofacial abnormalities, and developmental delays. FDA pregnancy category X for migraine use. Lamotrigine and levetiracetam are considered safer options during pregnancy (though not ideal). Carbamazepine also has teratogenic potential but less than valproate. Valproate's risks far outweigh benefits in pregnancy - it's absolutely contraindicated especially during first trimester for any indication (epilepsy, migraine, bipolar).",
+      "keyConcept": "Valproate is contraindicated in pregnancy due to neural tube defects and significant teratogenic effects.",
+      "options": [
+        "Lamotrigine",
+        "Carbamazepine",
+        "Levetiracetam",
+        "Valproate"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch10-pharma-q92",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "An antiepileptic suitable for a pregnant woman with tonic clonic epilepsy is:",
+      "explanation": "Carbamazepine is the safest antiepileptic option during pregnancy for tonic-clonic epilepsy. Valproate (C) is absolutely contraindicated (neural tube defects). Phenytoin (A) and valproate have teratogenic effects. Ethosuximide (D) is not effective for tonic-clonic seizures. Carbamazepine is FDA category D (positive evidence of risk) but among the available options, it's considered safer than valproate. The answer is B - carbamazepine is suitable for pregnant women with tonic-clonic epilepsy, though ideally lamotrigine would be preferred.",
+      "keyConcept": "Carbamazepine is the least teratogenic among traditional antiepileptics for tonic-clonic epilepsy in pregnancy.",
+      "options": [
+        "Phenytoin",
+        "Carbamazepine",
+        "Valproate",
+        "Ethosuximide"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch10-pharma-q139",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The following antiepileptic drug is not preferred in pregnancy:",
+      "explanation": "Valproate is teratogenic (neural tube defects) and should be avoided in pregnancy. Lamotrigine and carbamazepine are safer options but still require careful risk-benefit analysis. All AEDs have some risk.",
+      "keyConcept": "Valproate is most teratogenic AED, not preferred in pregnancy",
+      "options": [
+        "Lamotrigine",
+        "Carbamazepine",
+        "Valproate",
+        "All of the above"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch1-biochem-q264",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Folic acid supplementation is recommended for which of the following?",
+      "explanation": "Folic acid supplementation (400-800 mcg daily) is recommended for ALL women planning pregnancy to reduce neural tube defect risk in the fetus. This should begin at least one month before conception.",
+      "keyConcept": "Folic acid supplementation recommended for all women planning pregnancy",
+      "options": [
+        "All women planning to get pregnant.",
+        "Only pregnant women with megaloblastic anemia.",
+        "All vegetarians, whether pregnant or not.",
+        "Only patients with low blood folic acid, for fear of toxicity."
+      ],
+      "correctIndex": 0
+    }
+  ]
+}

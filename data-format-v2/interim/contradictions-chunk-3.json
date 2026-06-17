@@ -1,0 +1,2228 @@
+[
+  {
+    "id": "mcns2-ch5-anatomy-q34",
+    "text": "Purkinje cells are stimulated by the following except:",
+    "options": [
+      "climbing fibers",
+      "mossy fiber",
+      "Basket, golgi cell",
+      "parallel fiber"
+    ],
+    "correctIndex": 0,
+    "explanation": "Purkinje cells are excited by climbing fibers, mossy fibers (indirectly via granule cells), and parallel fibers; basket and Golgi cells provide inhibitory input.",
+    "keyConcept": "Purkinje cell inputs",
+    "wrongOpt": "mossy fiber",
+    "context": "e excited by climbing fibers, mossy fibers (indirectly via granule cell"
+  },
+  {
+    "id": "mcns2-ch5-physiology-q2",
+    "text": "Basal ganglia lesion may Not cause:",
+    "options": [
+      "Akinesia disorder.",
+      "Mask face",
+      "Cogwheel rigidity.",
+      "Monotonous speech.",
+      "Flaccidity"
+    ],
+    "correctIndex": 2,
+    "explanation": "Basal ganglia lesions cause rigidity, not flaccidity. Option E is correct. Flaccidity is a LMN sign or occurs with cerebellar lesions. Parkinsonian basal ganglia lesions produce cogwheel rigidity, not flaccidity. Options A-D are all recognized features of basal ganglia dysfunction: akinesia (inability to initiate movement), mask face (hypomimia), cogwheel rigidity, and monotonous speech.",
+    "keyConcept": "Basal ganglia lesions produce extrapyramidal signs including rigidity and akinesia, not flaccidity.",
+    "wrongOpt": "Mask face",
+    "context": "bility to initiate movement), mask face (hypomimia), cogwheel rigidit"
+  },
+  {
+    "id": "mcns2-ch5-physiology-q10",
+    "text": "The following is NOT a neurological feature of cerebellar lesion:",
+    "options": [
+      "Abnormal coordination tests.",
+      "Rebound phenomenon.",
+      "Dysdiadochokinesia.",
+      "Shuffling gate.",
+      "Kinetic tremors."
+    ],
+    "correctIndex": 0,
+    "explanation": "Shuffling gait is NOT a cerebellar feature - it is a Parkinsonian gait. Option D is correct. Cerebellar lesions cause ataxic gait (wide-based, staggering), not shuffling gait. Options A, B, C, E are all cerebellar signs: abnormal coordination, rebound phenomenon, dysdiadochokinesia, and kinetic tremors.",
+    "keyConcept": "Shuffling gait is characteristic of basal ganglia disease (Parkinsonism), not cerebellar lesions.",
+    "wrongOpt": "Kinetic tremors.",
+    "context": "enon, dysdiadochokinesia, and kinetic tremors."
+  },
+  {
+    "id": "mcns2-ch5-physiology-q11",
+    "text": "Neocerebellum syndrome is NOT associated with:",
+    "options": [
+      "Ataxia.",
+      "Hypertonia.",
+      "Inability to do complex movements.",
+      "Rebound phenomenon.",
+      "Decomposition of movements"
+    ],
+    "correctIndex": 2,
+    "explanation": "Neocerebellum syndrome is NOT associated with hypertonia - it causes hypotonia. Option B is correct. Cerebellar lesions characteristically reduce muscle tone. Options A, C, D, E are all associated with neocerebellar syndrome: ataxia, inability to perform complex movements, rebound phenomenon, and decomposition of movements.",
+    "keyConcept": "Cerebellar lesions cause hypotonia due to loss of cerebellar facilitatory influence on muscle tone.",
+    "wrongOpt": "Decomposition of movements",
+    "context": "ents, rebound phenomenon, and decomposition of movements."
+  },
+  {
+    "id": "mcns2-ch5-physiology-q12",
+    "text": "Neocerebellum disease is associated with:",
+    "options": [
+      "Shuffling gait.",
+      "Zigzag gait.",
+      "Stamping gait.",
+      "Circumduction gate.",
+      "Drunken gait"
+    ],
+    "correctIndex": 1,
+    "explanation": "Neocerebellum disease is associated with zigzag gait. Option B is correct. The neocerebellum controls coordination of voluntary movements; lesions cause ataxic gait that is wide-based and staggering (drunken/zigzag). Option A (shuffling) is Parkinsonian. Option C (stamping) is sensory ataxia. Option D (circumduction) is UMN gait. Option E (drunken gait) is actually correct but zigzag is more specific for neocerebellar lesions.",
+    "keyConcept": "Neocerebellar lesions produce a characteristic zigzag or drunken ataxic gait due to loss of movement coordination.",
+    "wrongOpt": "Drunken gait",
+    "context": "ction) is umn gait. option e (drunken gait) is actually correct but zigz"
+  },
+  {
+    "id": "mcns2-ch5-physiology-q28",
+    "text": "Which is NOT typically associated with a cerebellar lesion?",
+    "options": [
+      "Intention tremor",
+      "Ataxia",
+      "Dysmetria",
+      "Nystagmus",
+      "Static tremor"
+    ],
+    "correctIndex": 0,
+    "explanation": "Nystagmus is typically associated with vestibular lesions, not cerebellar lesions. Intention tremor, ataxia, dysmetria, and dysdiadochokinesia are cerebellar signs.",
+    "keyConcept": "Cerebellar lesions cause intention tremor, ataxia, dysmetria, and dysdiadochokinesia; nystagmus is vestibular.",
+    "wrongOpt": "Ataxia",
+    "context": "ar lesions. intention tremor, ataxia, dysmetria, and dysdiadochoki"
+  },
+  {
+    "id": "mcns2-ch5-physiology-q29",
+    "text": "Fibers from the cerebral cortex to the corpus striatum release which neurotransmitter?",
+    "options": [
+      "GABA",
+      "Dopamine",
+      "Acetylcholine",
+      "Serotonin",
+      "Glutamate"
+    ],
+    "correctIndex": 0,
+    "explanation": "The corticostriatal pathway uses glutamate as its neurotransmitter, providing excitatory input from the cerebral cortex to the corpus striatum (caudate and putamen).",
+    "keyConcept": "Corticostriatal neurotransmission",
+    "wrongOpt": "Glutamate",
+    "context": " corticostriatal pathway uses glutamate as its neurotransmitter, prov"
+  },
+  {
+    "id": "mcns2-ch5-physiology-q34",
+    "text": "Which function is primarily associated with the flocculonodular lobe of the cerebellum?",
+    "options": [
+      "Fine motor coordination",
+      "Equilibrium",
+      "Regulation of muscle tone",
+      "Motor learning",
+      "Planning of voluntary movements"
+    ],
+    "correctIndex": 0,
+    "explanation": "The flocculonodular lobe (vestibulocerebellum) is primarily concerned with equilibrium and balance, receiving input from the vestibular apparatus.",
+    "keyConcept": "Vestibulocerebellar function",
+    "wrongOpt": "Equilibrium",
+    "context": ") is primarily concerned with equilibrium and balance, receiving input "
+  },
+  {
+    "id": "mcns2-ch5-physiology-q37",
+    "text": "The idea of the voluntary movement is generated in which one of the following:\nA. 1ry motor area 4\nB. Premotor cortex\nC. Supplementary motor area\nD. Prefrontal cortex\nE. Cerebellum",
+    "options": [
+      "1ry motor area 4",
+      "Premotor cortex",
+      "Supplementary motor area",
+      "Prefrontal cortex",
+      "Cerebellum"
+    ],
+    "correctIndex": 3,
+    "explanation": "The prefrontal cortex generates the idea and plan for voluntary movement, while the primary motor cortex executes the movement and supplementary motor area prepares for it.",
+    "keyConcept": "Prefrontal cortex generates the idea of voluntary movement.",
+    "wrongOpt": "Supplementary motor area",
+    "context": "tex executes the movement and supplementary motor area prepares for it."
+  },
+  {
+    "id": "mcns2-ch5-histology-q2",
+    "text": "Cerebellar glomeruli contain the following structures EXCEPT:",
+    "options": [
+      "Rosettes of mossy fibers",
+      "Dendrites of granule cells",
+      "Axons of Golgi cells",
+      "Dendrites of basket cells"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cerebellar glomeruli contain rosettes of mossy fibers, dendrites of granule cells, and axons of Golgi cells (inhibitory). They do NOT contain dendrites of basket cells - those are involved in different synapses on Purkinje cell bodies.",
+    "keyConcept": "Cerebellar glomerulus: mossy fiber rosette + granule cell dendrites + Golgi cell axons. Basket cells synapse on Purkinje soma.",
+    "wrongOpt": "Dendrites of granule cells",
+    "context": "ain rosettes of mossy fibers, dendrites of granule cells, and axons of golgi cells (in"
+  },
+  {
+    "id": "mcns2-ch5-histology-q3",
+    "text": "The main efferent fiber of the cerebellar cortex is formed by axons of:",
+    "options": [
+      "Purkinje cells",
+      "Golgi cells",
+      "Basket cells",
+      "Granule cell"
+    ],
+    "correctIndex": 0,
+    "explanation": "Purkinje cells are the SOLE OUTPUT of the cerebellar cortex - their axons are the only fibers leaving the cortex to deeper nuclei. These axons are inhibitory (GABAergic). Golgi, basket, and granule cells are all interneurons.",
+    "keyConcept": "Purkinje cells: only efferent of cerebellar cortex; GABAergic; projects to deep nuclei and vestibular nuclei.",
+    "wrongOpt": "Granule cell",
+    "context": "abaergic). golgi, basket, and granule cells are all interneurons."
+  },
+  {
+    "id": "mcns2-ch5-histology-q5",
+    "text": "Which of the following tracts carries the climbing fibers of cerebellum?",
+    "options": [
+      "Ventral spinothalamic tract",
+      "Dorsal spinocerebellar tract",
+      "Pontocerebellar tract",
+      "Olivocerebellar tract"
+    ],
+    "correctIndex": 3,
+    "explanation": "Climbing fibers travel via the olivocerebellar tract through the inferior cerebellar peduncle to reach the cerebellum. The dorsal spinocerebellar tract carries proprioceptive information from the trunk. The pontocerebellar tract carries mossy fibers from the pontine nuclei.",
+    "keyConcept": "Olivocerebellar tract: inferior cerebellar peduncle → climbing fibers to cerebellum.",
+    "wrongOpt": "Dorsal spinocerebellar tract",
+    "context": " to reach the cerebellum. the dorsal spinocerebellar tract carries proprioceptive inform"
+  },
+  {
+    "id": "mcns2-ch5-histology-q6",
+    "text": "The molecular layer of cerebellum contains which of the following structures?",
+    "options": [
+      "Purkinje cell bodies",
+      "Basket cell bodies",
+      "Golgi cell bodies",
+      "Cerebellar glomeruli"
+    ],
+    "correctIndex": 0,
+    "explanation": "The molecular layer of cerebellum contains stellate cells (with cell bodies here), basket cells (with cell bodies here), and the dendrites of Purkinje cells and Golgi cells. Purkinje cell bodies are in the Purkinje layer. Golgi cell bodies are in the granular layer. Cerebellar glomeruli are in the granular layer.",
+    "keyConcept": "Cerebellar molecular layer: stellate + basket cells, Purkinje/Golgi dendrites. Purkinje layer: Purkinje cell bodies. Granular layer: granule cells, Golgi bodies, glomeruli.",
+    "wrongOpt": "Golgi cell bodies",
+    "context": "es are in the purkinje layer. golgi cell bodies are in the granular layer. ce"
+  },
+  {
+    "id": "mcns2-ch5-histology-q7",
+    "text": "The deepest layer of the cerebellar cortex is",
+    "options": [
+      "Molecular layer",
+      "Purkinje layer",
+      "Granular layer"
+    ],
+    "correctIndex": 0,
+    "explanation": "The cerebellar cortex has 3 layers: molecular layer (outer), Purkinje cell layer (middle), and granular layer (deepest/innermost). The granular layer contains granule cells, Golgi cells, and cerebellar glomeruli.",
+    "keyConcept": "Cerebellar cortex layers (superficial to deep): molecular → Purkinje → granular.",
+    "wrongOpt": "Granular layer",
+    "context": "inje cell layer (middle), and granular layer (deepest/innermost). the gran"
+  },
+  {
+    "id": "mcns2-ch6-anatomy-q9",
+    "text": "Regarding Broca’s area, select the correct answer:",
+    "options": [
+      "It is a sensory speech center",
+      "It is located in middle frontal gyrus",
+      "It is present in the dominant hemisphere",
+      "It is supplied by anterior cerebral artery",
+      "None of the above is correct"
+    ],
+    "correctIndex": 1,
+    "explanation": "Broca's area is located in the inferior frontal gyrus (not middle) and is a motor speech center (not sensory). It is present in the dominant hemisphere (usually left) and is supplied by the middle cerebral artery, not anterior cerebral artery.",
+    "keyConcept": "Broca's area: motor speech center in inferior frontal gyrus of dominant hemisphere, supplied by MCA.",
+    "wrongOpt": "It is present in the dominant hemisphere",
+    "context": " speech center (not sensory). it is present in the dominant hemisphere (usually left) and is supplie"
+  },
+  {
+    "id": "mcns2-ch6-anatomy-q28",
+    "text": "The frontal lobe of cerebral hemisphere DOESN'T include ……… area.",
+    "options": [
+      "Premotor",
+      "Primary somatosensory",
+      "Prefrontal",
+      "Broca's"
+    ],
+    "correctIndex": 1,
+    "explanation": "The primary somatosensory area (postcentral gyrus, area 1-3) is in the parietal lobe, not the frontal lobe. Frontal lobe contains premotor, prefrontal, and Broca's areas.",
+    "keyConcept": "Frontal lobe doesn't include primary somatosensory (it's parietal).",
+    "wrongOpt": "Premotor",
+    "context": "l lobe. frontal lobe contains premotor, prefrontal, and broca's area"
+  },
+  {
+    "id": "mcns2-ch6-anatomy-q29",
+    "text": "The area of reflex (involuntary) conjugate eye movement lies in ……… lobe of the cerebral hemisphere.",
+    "options": [
+      "Frontal",
+      "Parietal",
+      "Temporal",
+      "Occipital"
+    ],
+    "correctIndex": 3,
+    "explanation": "The occipital lobe contains the area for reflex (involuntary) conjugate eye movements - the visual fixation center in the frontal eye field projects to superior colliculus for reflexive gaze.",
+    "keyConcept": "Reflex conjugate eye movement area: occipital lobe.",
+    "wrongOpt": "Frontal",
+    "context": "visual fixation center in the frontal eye field projects to superio"
+  },
+  {
+    "id": "mcns2-ch6-histology-q4",
+    "text": "All of the following are layers of cerebral cortex EXCEPT",
+    "options": [
+      "molecular layer",
+      "purkinje layer",
+      "external granular layer",
+      "internal granular layer",
+      "multiform layer"
+    ],
+    "correctIndex": 0,
+    "explanation": "Purkinje layer is a layer of the CEREBELLAR cortex, not cerebral cortex. The cerebral cortex layers are: molecular (I), external granular (II), external pyramidal (III), internal granular (IV), internal pyramidal (V), multiform (VI).",
+    "keyConcept": "Cerebral cortex 6 layers: I molecular, II external granular, III external pyramidal, IV internal granular, V internal pyramidal, VI multiform. Cerebellar cortex: molecular, Purkinje, granular.",
+    "wrongOpt": "purkinje layer",
+    "context": "purkinje layer is a layer of the cerebellar "
+  },
+  {
+    "id": "mcns2-ch6-histology-q5",
+    "text": "All of the following are histological layers of the cerebral cortex except:",
+    "options": [
+      "Pyramidal",
+      "Molecular",
+      "Granular",
+      "Purkinje"
+    ],
+    "correctIndex": 0,
+    "explanation": "Purkinje cells are characteristic of the CEREBELLAR cortex, not cerebral cortex. The cerebral cortex has 6 layers: molecular, external granular, external pyramidal, internal granular, internal pyramidal, and multiform. The cerebellar cortex has 3 layers.",
+    "keyConcept": "Cerebral cortex layers: I-VI (6 layers). Cerebellar cortex: molecular, Purkinje, granular (3 layers).",
+    "wrongOpt": "Molecular",
+    "context": "cerebral cortex has 6 layers: molecular, external granular, external "
+  },
+  {
+    "id": "mcns2-ch6-histology-q6",
+    "text": "All of the following are cells of the cerebral cortex except:",
+    "options": [
+      "Pyramidal cells",
+      "Granular cells",
+      "Fusiform cells",
+      "Cells of Martinotti",
+      "None of the above"
+    ],
+    "correctIndex": 0,
+    "explanation": "All of these - pyramidal cells, granular cells, fusiform cells, and Martinotti cells - ARE cells of the cerebral cortex. Pyramidal cells are the most common excitatory neurons. Granular cells are small interneurons. Fusiform cells are in the deep layer. Martinotti cells have ascending axons.",
+    "keyConcept": "Cerebral cortex neurons: pyramidal (main), granular, fusiform, Martinotti, basket, Chandelier cells.",
+    "wrongOpt": "Granular cells",
+    "context": "l of these - pyramidal cells, granular cells, fusiform cells, and martinot"
+  },
+  {
+    "id": "mcns2-ch6-histology-q13",
+    "text": "A male patient 40 years presented with left-sided hemiplegia, brain MRI revealed a space-occupying lesion in the right cerebral hemisphere. Biopsy examination showed a highly cellular tumor with malignant cells, areas of necrosis & vascular proliferation. The most possible diagnosis is:",
+    "options": [
+      "Glioblastoma multiforme.",
+      "Anaplastic astrocytoma.",
+      "Ependymoma.",
+      "Metastatic carcinoma.",
+      "Malignant meningioma."
+    ],
+    "correctIndex": 0,
+    "explanation": "Glioblastoma multiforme shows highly cellular tumor with malignant cells, necrosis, and vascular proliferation. These features distinguish it from anaplastic astrocytoma (which lacks necrosis) and ependymoma.",
+    "keyConcept": "Glioblastoma: necrosis and vascular proliferation = hallmark features",
+    "wrongOpt": "Ependymoma.",
+    "context": "ma (which lacks necrosis) and ependymoma."
+  },
+  {
+    "id": "mcns2-ch7-anatomy-q3",
+    "text": "Lateral spinothalamic tract carries the sensations of:",
+    "options": [
+      "Touch.",
+      "Vibration",
+      "Position.",
+      "Pain and temperature.",
+      "None of the above."
+    ],
+    "correctIndex": 3,
+    "explanation": "The lateral spinothalamic tract carries pain and temperature sensations. The ventral spinothalamic carries crude touch, while the dorsal columns carry fine touch, vibration, and proprioception.",
+    "keyConcept": "Lateral spinothalamic carries pain and temperature",
+    "wrongOpt": "Vibration",
+    "context": "sal columns carry fine touch, vibration, and proprioception."
+  },
+  {
+    "id": "mcns2-ch7-anatomy-q19",
+    "text": "The descending tracts run in the following part of the midbrain:",
+    "options": [
+      "Tectum.",
+      "Tegmentum.",
+      "Crus cerebri.",
+      "Substantia nigra.",
+      "Periaqueductal grey."
+    ],
+    "correctIndex": 2,
+    "explanation": "The descending tracts (corticospinal, corticobulbar) run in the crus cerebri of the midbrain. The tegmentum contains ascending tracts and nuclei. The substantia nigra separates the crus from the tegmentum.",
+    "keyConcept": "Descending tracts in crus cerebri",
+    "wrongOpt": "Tegmentum.",
+    "context": "a separates the crus from the tegmentum."
+  },
+  {
+    "id": "mcns2-ch7-anatomy-q20",
+    "text": "A 45-year-old patient presents with difficulty walking, muscle weakness, and a loss of proprioception (awareness of body position). Imaging reveals a lesion in the spinal cord. Which major ascending tract in the spinal cord is most likely affected, leading to these symptoms?",
+    "options": [
+      "Corticospinal tract",
+      "Spinothalamic tract",
+      "Dorsal column-medial lemniscus pathway",
+      "Spinocerebellar tract",
+      "Anterolateral system"
+    ],
+    "correctIndex": 2,
+    "explanation": "The dorsal column-medial lemniscus pathway carries proprioception, vibration sense, and fine discriminative touch from the body to the thalamus and then to the somatosensory cortex. Lesions cause loss of proprioception, vibration sense, and stereognosis. The spinothalamic tract carries pain and temperature; the corticospinal tract carries motor signals; spinocerebellar tracts carry proprioceptive data to the cerebellum.",
+    "keyConcept": "Dorsal column-medial lemniscus pathway = proprioception, vibration, fine touch; its lesion causes sensory ataxia and positive Romberg.",
+    "wrongOpt": "Corticospinal tract",
+    "context": "ies pain and temperature; the corticospinal tract carries motor signals; spinoc"
+  },
+  {
+    "id": "mcns2-ch7-anatomy-q21",
+    "text": "Acute-stage upper motor neuron lesions result in:",
+    "options": [
+      "hypertonia",
+      "extensor toe response",
+      "clonus",
+      "flaccid paralysis",
+      "spastic paresis"
+    ],
+    "correctIndex": 3,
+    "explanation": "In the ACUTE stage of upper motor neuron lesion, there is FLACCID paralysis (not spastic) due to spinal shock—loss of all reflexes and tone below the lesion. This phase lasts days to weeks. Later, as spinal shock resolves, spasticity, hyperreflexia, clonus, and Babinski sign develop. The answer choice D (flaccid paralysis) describes the acute UMN lesion phase.",
+    "keyConcept": "Acute UMN lesion = FLACCID paralysis (spinal shock); chronic UMN lesion = spasticity, hyperreflexia, Babinski sign.",
+    "wrongOpt": "clonus",
+    "context": "s, spasticity, hyperreflexia, clonus, and babinski sign develop. t"
+  },
+  {
+    "id": "mcns2-ch7-anatomy-q33",
+    "text": "Which of the following is NOT an extrapyramidal tract?",
+    "options": [
+      "Rubrospinal tract",
+      "Reticulospinal tract",
+      "Vestibulospinal tract",
+      "Corticobulbar tract",
+      "Tectospinal tract"
+    ],
+    "correctIndex": 0,
+    "explanation": "The corticospinal tract is the main pyramidal tract for voluntary movement. The reticulospinal, rubrospinal, and vestibulospinal tracts are extrapyramidal. The tectospinal tract is also extrapyramidal.",
+    "keyConcept": "Corticospinal tracts are the only major pyramidal motor pathways; all others are extrapyramidal.",
+    "wrongOpt": "Vestibulospinal tract",
+    "context": "iculospinal, rubrospinal, and vestibulospinal tracts are extrapyramidal. the tect"
+  },
+  {
+    "id": "mcns2-ch7-anatomy-q39",
+    "text": "Dorsal spinocerebellar enters cerebellum through ............. while ventral spinocerebellar through.............",
+    "options": [
+      "Superior cerebellar peduncle, inferior cerebellar peduncle",
+      "inferior cerebellar peduncle, superior cerebellar peduncle",
+      "Superior cerebellar peduncle only",
+      "inferior cerebellar peduncle only"
+    ],
+    "correctIndex": 0,
+    "explanation": "The dorsal spinocerebellar tract enters via the inferior cerebellar peduncle while the ventral spinocerebellar tract enters via the superior cerebellar peduncle.",
+    "keyConcept": "Cerebellar peduncle entries",
+    "wrongOpt": "inferior cerebellar peduncle, superior cerebellar peduncle",
+    "context": "rebellar tract enters via the inferior cerebellar peduncle while the ventral spinocerebe"
+  },
+  {
+    "id": "mcns2-ch7-anatomy-q44",
+    "text": "The lateral spinothalamic tract carries which sensations?",
+    "options": [
+      "Fine touch and vibration",
+      "Pain and temperature",
+      "Proprioception and pressure",
+      "Crude touch only"
+    ],
+    "correctIndex": 1,
+    "explanation": "The lateral spinothalamic tract carries pain and temperature sensation after crossing in the spinal cord, while fine touch and vibration are carried by the dorsal columns.",
+    "keyConcept": "Lateral spinothalamic tract: pain and temperature.",
+    "wrongOpt": "Fine touch and vibration",
+    "context": "ing in the spinal cord, while fine touch and vibration are carried by the dorsal col"
+  },
+  {
+    "id": "mcns2-ch7-anatomy-q46",
+    "text": "The corticospinal tract in the spinal cord is located in which funiculus?",
+    "options": [
+      "Anterior funiculus",
+      "Lateral funiculus (mainly) and anterior funiculus (minor)",
+      "Posterior funiculus",
+      "Dorsal funiculus"
+    ],
+    "correctIndex": 1,
+    "explanation": "The corticospinal tract is located primarily in the lateral funiculus (about 85% of fibers), with the remaining fibers traveling in the anterior funiculus as the anterior corticospinal tract.",
+    "keyConcept": "Corticospinal tract: mainly lateral funiculus, some in anterior funiculus.",
+    "wrongOpt": "Anterior funiculus",
+    "context": "ining fibers traveling in the anterior funiculus as the anterior corticospinal"
+  },
+  {
+    "id": "mcns2-ch7-physiology-q1",
+    "text": "Which of the following is true with respect to the corticospinal pathway:",
+    "options": [
+      "It must be intact to elicit a positive Babinski's sign.",
+      "It synapses with gamma motor neurons in the spinal cord.",
+      "Is mostly an ipsilateral pathway in the spinal cord.",
+      "Is a multineuron pathway."
+    ],
+    "correctIndex": 1,
+    "explanation": "The corticospinal pathway is a multineuron pathway. Option D is correct. The corticospinal tract has upper motor neurons in motor cortex that synapse with lower motor neurons in the spinal cord (via interneurons or directly). Option A is wrong (intact tract = negative Babinski). Option B is wrong (synapses with LMN in cord). Option C is wrong (it is contralateral, not ipsilateral, in the spinal cord after decussation at pyramids).",
+    "keyConcept": "The corticospinal pathway is a multineuronal system with upper and lower motor neurons connected via interneurons in the spinal cord.",
+    "wrongOpt": "Is a multineuron pathway.",
+    "context": "the corticospinal pathway is a multineuron pathway. option d is correct. the cort"
+  },
+  {
+    "id": "mcns2-ch7-physiology-q3",
+    "text": "Upper motor neuron lesion shows the following except:",
+    "options": [
+      "Increased muscle tone of affected muscles.",
+      "Positive Babinski's sign.",
+      "Flaccidity of muscles affected.",
+      "Exaggerated deep reflexes."
+    ],
+    "correctIndex": 0,
+    "explanation": "UMNL shows spasticity, not flaccidity. Option C is incorrect (flaccidity is LMN). Options A, B, D are correct UMN signs: increased tone, positive Babinski, exaggerated deep reflexes. The UMN lesion releases lower motor neurons from cortical inhibition, causing hyperreflexia and spasticity.",
+    "keyConcept": "Upper motor neuron lesions cause spastic paralysis with hyperreflexia, not the flaccid paralysis of lower motor neuron lesions.",
+    "wrongOpt": "Exaggerated deep reflexes.",
+    "context": "ased tone, positive babinski, exaggerated deep reflexes. the umn lesion releases lower"
+  },
+  {
+    "id": "mcns2-ch7-physiology-q11",
+    "text": "Which of the following observation would suggest that an upper motor neuron lesion rather than a lower motor neuron lesion is present?",
+    "options": [
+      "Marked muscle atrophy.",
+      "Hyporeflexia.",
+      "Spasticity.",
+      "Fasciculations.",
+      "Localized paralysis."
+    ],
+    "correctIndex": 0,
+    "explanation": "Spasticity (velocity-dependent increase in tone) is a hallmark of UMN lesions, along with hyperreflexia, Babinski sign, and clonus. LMN lesions cause flaccid paralysis, hyporeflexia, muscle atrophy, and fasciculations.",
+    "keyConcept": "Spasticity is a positive UMN sign that distinguishes upper from lower motor neuron lesions.",
+    "wrongOpt": "Fasciculations.",
+    "context": "reflexia, muscle atrophy, and fasciculations."
+  },
+  {
+    "id": "mcns2-ch7-physiology-q15",
+    "text": "The medial motor system includes all the following tracts Except:\nA. Vestibulospinal tract\nB. Rubrospinal tract\nC. Reticulospinal tract\nD. Tectospinal tract\nE. Ventral corticospinal tract",
+    "options": [
+      "Vestibulospinal tract",
+      "Rubrospinal tract",
+      "Reticulospinal tract",
+      "Tectospinal tract",
+      "Ventral corticospinal tract"
+    ],
+    "correctIndex": 0,
+    "explanation": "The rubrospinal tract belongs to the lateral motor system, not the medial motor system. Medial motor system includes vestibulospinal, reticulospinal, tectospinal, and ventral corticospinal tracts.",
+    "keyConcept": "Rubrospinal tract is part of lateral motor system, not medial.",
+    "wrongOpt": "Rubrospinal tract",
+    "context": "the rubrospinal tract belongs to the lateral motor "
+  },
+  {
+    "id": "mcns2-ch7-physiology-q16",
+    "text": "In upper motor neuron lesion, there is:\nA. Flaccid paralysis\nB. No paralysis\nC. Spastic muscle\nD. Hypotonia\nE. Ataxia",
+    "options": [
+      "Flaccid paralysis",
+      "No paralysis",
+      "Spastic muscle",
+      "Hypotonia",
+      "Ataxia"
+    ],
+    "correctIndex": 2,
+    "explanation": "Upper motor neuron lesions cause spastic paralysis with hypertonia and hyperreflexia due to loss of cortical inhibition of spinal reflex arcs, unlike lower motor neuron lesions which cause flaccid paralysis.",
+    "keyConcept": "UMN lesion: spastic muscle (hypertonia, hyperreflexia).",
+    "wrongOpt": "Flaccid paralysis",
+    "context": "or neuron lesions which cause flaccid paralysis."
+  },
+  {
+    "id": "mcns2-ch7-pharma-q3",
+    "text": "Less extrapyramidal effects with risk of agranulocytosis may be seen with:",
+    "options": [
+      "Clozapine",
+      "Thioridazine",
+      "Haloperidol",
+      "Risperidone",
+      "Olanzapine"
+    ],
+    "correctIndex": 0,
+    "explanation": "Clozapine has the LEAST extrapyramidal side effects but carries the risk of agranulocytosis. This is the classic tradeoff with atypical antipsychotics. Thioridazine (B) is a low-potency typical with moderate EPS. Haloperidol (C) has high EPS risk. Risperidone (D) has moderate EPS risk, especially at higher doses. Clozapine's unique pharmacology (D4 > D2 affinity, strong 5-HT2A antagonism) results in minimal EPS but significant hematological toxicity requiring monitoring. The answer is A - clozapine has the best EPS profile but dangerous agranulocytosis risk.",
+    "keyConcept": "Clozapine has minimal EPS but significant agranulocytosis risk - the classic atypical antipsychotic tradeoff.",
+    "wrongOpt": "Thioridazine",
+    "context": "with atypical antipsychotics. thioridazine (b) is a low-potency typical "
+  },
+  {
+    "id": "mcns2-ch7-pharma-q4",
+    "text": "The following antipsychotic drug has the least central side effects especially extrapyramidal side effects:",
+    "options": [
+      "Haloperidol",
+      "Clozapine",
+      "Aripiprazole",
+      "Chlorpromazine"
+    ],
+    "correctIndex": 2,
+    "explanation": "Aripiprazole has the LEAST central side effects, especially extrapyramidal side effects. This is due to its unique pharmacology as a partial D2 and 5-HT1A agonist with 5-HT2A antagonism. Haloperidol (A) has high EPS. Clozapine (B) has low EPS but significant sedation and other side effects. Chlorpromazine (D) has moderate EPS and significant sedation. Aripiprazole's partial agonism means it has both agonist and antagonist activity at dopamine receptors, resulting in a stabilizing effect with minimal EPS. The answer is C - aripiprazole has the least central side effects among these options.",
+    "keyConcept": "Aripiprazole's partial D2 agonism results in minimal extrapyramidal side effects compared to other antipsychotics.",
+    "wrongOpt": "Haloperidol",
+    "context": "onist with 5-ht2a antagonism. haloperidol (a) has high eps. clozapine ("
+  },
+  {
+    "id": "mcns2-ch7-pharma-q5",
+    "text": "What are the extrapyramidal adverse effects of antipsychotics?",
+    "options": [
+      "Akathisia",
+      "Dystonia",
+      "Parkinsonism",
+      "All of the above"
+    ],
+    "correctIndex": 0,
+    "explanation": "Extrapyramidal effects of antipsychotics: acute dystonia, akathisia (restlessness), parkinsonism (bradykinesia, rigidity, tremor), and tardive dyskinesia (late-onset choreiform movements).选项D正确. The answer is D. Caused by D2 blockade in nigrostriatal pathway.",
+    "keyConcept": "EPS includes acute dystonia, akathisia, parkinsonism, and tardive dyskinesia from nigrostriatal D2 blockade.",
+    "wrongOpt": "Dystonia",
+    "context": "ects of antipsychotics: acute dystonia, akathisia (restlessness), pa"
+  },
+  {
+    "id": "mcns2-ch8-anatomy-q19",
+    "text": "Which of the following shares in forming lateral wall of third ventricle?",
+    "options": [
+      "Hypothalamus.",
+      "Epithalamus",
+      "Lamina terminalis.",
+      "Anterior commissure",
+      "Habenular nuclei."
+    ],
+    "correctIndex": 0,
+    "explanation": "The lateral wall of the third ventricle is formed superiorly by the thalamus and inferiorly by the hypothalamus, separated by the hypothalamic sulcus. The hypothalamus forms the floor and contributes to the anterior wall. The epithalamus forms the posterior wall. Lamina terminalis forms the anterior wall.",
+    "keyConcept": "Lateral wall of 3rd ventricle is formed by thalamus (superior) and hypothalamus (inferior), separated by hypothalamic sulcus.",
+    "wrongOpt": "Epithalamus",
+    "context": "tes to the anterior wall. the epithalamus forms the posterior wall. lam"
+  },
+  {
+    "id": "mcns2-ch8-anatomy-q21",
+    "text": "One of the following structures does not contribute to floor of 3rd Ventricle:",
+    "options": [
+      "Lamina terminalis.",
+      "Optic chiasma.",
+      "Mamillary bodies.",
+      "Tuber cinerium.",
+      "Posterior perforated substance."
+    ],
+    "correctIndex": 0,
+    "explanation": "The floor of the third ventricle (from anterior to posterior) is formed by the optic chiasma, tuber cinereum, mammillary bodies, and posterior perforated substance. The lamina terminalis forms the AN anterior wall of the third ventricle, not the floor. The optic chiasma lies just above the pituitary stalk at the anterior aspect of the ventricle.",
+    "keyConcept": "Lamina terminalis forms anterior wall of 3rd ventricle, NOT the floor. Floor = optic chiasma, tuber cinereum, mammillary bodies.",
+    "wrongOpt": "Posterior perforated substance.",
+    "context": "ereum, mammillary bodies, and posterior perforated substance. the lamina terminalis forms t"
+  },
+  {
+    "id": "mcns2-ch8-anatomy-q39",
+    "text": "The spinal cord is anchored to the dura mater by the",
+    "options": [
+      "Coccygeal ligament",
+      "Ligamentum flavum",
+      "Anterior longitudinal ligament",
+      "Denticulate ligaments",
+      "Cauda equina"
+    ],
+    "correctIndex": 3,
+    "explanation": "Denticulate ligaments are pial extensions that anchor the spinal cord to the dura mater laterally; the coccygeal ligament (filum terminale externum) attaches the cord terminus to the coccyx.",
+    "keyConcept": "Denticulate ligaments spinal cord anchoring",
+    "wrongOpt": "Coccygeal ligament",
+    "context": "the dura mater laterally; the coccygeal ligament (filum terminale externum) at"
+  },
+  {
+    "id": "mcns2-ch8-anatomy-q42",
+    "text": "Which ventricle develops from the rhombencephalon?",
+    "options": [
+      "Lateral ventricle",
+      "Third ventricle",
+      "Fourth ventricle",
+      "Cerebral aqueduct",
+      "None of the above"
+    ],
+    "correctIndex": 2,
+    "explanation": "The fourth ventricle develops from the rhombencephalon (hindbrain), specifically from the cavity of the metencephalon. The lateral ventricles develop from the telencephalon.",
+    "keyConcept": "Fourth ventricle derives from the hindbrain (rhombencephalon) cavity.",
+    "wrongOpt": "Lateral ventricle",
+    "context": "ity of the metencephalon. the lateral ventricles develop from the telencephal"
+  },
+  {
+    "id": "mcns2-ch8-anatomy-q43",
+    "text": "Which dural venous sinus is a paired structure?",
+    "options": [
+      "Superior sagittal sinus",
+      "Inferior sagittal sinus",
+      "Straight sinus",
+      "Inferior petrosal sinus",
+      "Occipital sinus"
+    ],
+    "correctIndex": 0,
+    "explanation": "The transverse sinus and sigmoid sinus are paired structures (one on each side). The straight sinus and superior sagittal sinus are unpaired midline structures.",
+    "keyConcept": "Transverse and sigmoid sinuses are paired lateral structures; sagittal and straight sinuses are midline unpaired.",
+    "wrongOpt": "Straight sinus",
+    "context": "tures (one on each side). the straight sinus and superior sagittal sinus a"
+  },
+  {
+    "id": "mcns2-ch8-anatomy-q48",
+    "text": "Leptomeninges is membrane between:",
+    "options": [
+      "dura, arachnoid",
+      "dura, pia",
+      "pia, arachnoid",
+      "All the above"
+    ],
+    "correctIndex": 0,
+    "explanation": "Leptomeninges refers to the pia mater and arachnoid mater together, which are delicate membranes lying between the dura mater and subarachnoid space.",
+    "keyConcept": "Leptomeninges definition",
+    "wrongOpt": "dura, pia",
+    "context": "e membranes lying between the dura mater and subarachnoid space."
+  },
+  {
+    "id": "mcns2-ch8-anatomy-q57",
+    "text": "Which part of the anterior wall of the third ventricle is formed by a thin membrane derived from the telencephalon?",
+    "options": [
+      "Tela choroidea",
+      "Pineal body",
+      "Tegmentum of the midbrain",
+      "Lamina terminalis",
+      "Thalamus"
+    ],
+    "correctIndex": 0,
+    "explanation": "The lamina terminalis forms the anterior wall of the third ventricle; it is a thin membrane derived from the telencephalon containing the organum vasculosum.",
+    "keyConcept": "Third ventricle anterior wall",
+    "wrongOpt": "Lamina terminalis",
+    "context": "the lamina terminalis forms the anterior wall of th"
+  },
+  {
+    "id": "mcns2-ch8-anatomy-q58",
+    "text": "The blood‑CSF barrier is NOT formed by:",
+    "options": [
+      "Foot processes of astrocytes",
+      "Basement membrane of ependymal cells",
+      "Fenestrated endothelial cells",
+      "Ependymal cells connected by tight junctions"
+    ],
+    "correctIndex": 0,
+    "explanation": "The blood-CSF barrier uses fenestrated endothelial cells (allowing passage) and is NOT formed by astrocyte foot processes (those form the BBB).",
+    "keyConcept": "Blood-CSF barrier components",
+    "wrongOpt": "Fenestrated endothelial cells",
+    "context": "the blood-csf barrier uses fenestrated endothelial cells (allowing passage) and is not"
+  },
+  {
+    "id": "mcns2-ch8-anatomy-q62",
+    "text": "The choroid plexus is present in all ventricles except:",
+    "options": [
+      "Lateral ventricles",
+      "Third ventricle",
+      "Fourth ventricle",
+      "Cerebral aqueduct"
+    ],
+    "correctIndex": 0,
+    "explanation": "The cerebral aqueduct (connecting third and fourth ventricles) is a narrow channel lined with ependyma but lacks choroid plexus, making it distinct from all three ventricles which have choroid plexus for CSF production.",
+    "keyConcept": "Cerebral aqueduct lacks choroid plexus (only ventricles have it).",
+    "wrongOpt": "Fourth ventricle",
+    "context": "queduct (connecting third and fourth ventricles) is a narrow channel lined w"
+  },
+  {
+    "id": "mcns2-ch8-anatomy-q66",
+    "text": "Choose the correct order of CSF circulation:",
+    "options": [
+      "Third ventricle, lateral ventricles, fourth ventricle, subarachnoid space.",
+      "Lateral ventricles, fourth ventricle, third ventricle, central canal.",
+      "Lateral ventricles, third ventricle, fourth ventricle, subarachnoid space.",
+      "Fourth ventricle, third ventricle, lateral ventricles, central canal."
+    ],
+    "correctIndex": 0,
+    "explanation": "CSF flows from lateral ventricles through interventricular foramina to third ventricle, then through cerebral aqueduct to fourth ventricle, and finally into subarachnoid space.",
+    "keyConcept": "CSF flow: lateral -> third -> fourth -> subarachnoid space.",
+    "wrongOpt": "Lateral ventricles, fourth ventricle, third ventricle, centr",
+    "context": "csf flows from lateral ventricles through interventricular fora"
+  },
+  {
+    "id": "mcns2-ch8-microbiology-q1",
+    "text": "chemical examination of CSF in case of bacterial meningitis include",
+    "options": [
+      "↑ protein",
+      "normal glucose",
+      "CSF is clear.",
+      "None of the above"
+    ],
+    "correctIndex": 1,
+    "explanation": "Bacterial meningitis CSF findings: 1) Protein is ELEVATED (due to inflammation and blood-brain barrier breakdown) - TRUE; 2) Glucose is REDUCED (bacteria consume glucose) - CSF glucose < 40 mg/dL or CSF/serum ratio < 0.4; 3) CSF is TURBID, not clear (cloudy due to pus cells) - FALSE. Normal glucose is not expected. The answer is D ('None of the above') because all statements except protein elevation are incorrect. Actually, the option says 'normal glucose' which is wrong for bacterial meningitis. Option B 'CSF is clear' is wrong. So D (None of the above) is correct because A and B are wrong. Wait, let me reconsider: Option A says '↑ protein' which is correct. Option B says 'normal glucose' which is INCORRECT. Option C says 'CSF is clear' which is INCORRECT. So the correct answer is D because B and C are wrong, even though A is correct. The question asks which is NOT included in bacterial meningitis findings.",
+    "keyConcept": "Bacterial meningitis shows elevated protein, decreased glucose, and turbid (not clear) CSF - the answer excludes normal glucose and clear CSF.",
+    "wrongOpt": "↑ protein",
+    "context": "me reconsider: option a says '↑ protein' which is correct. option b s"
+  },
+  {
+    "id": "mcns2-ch8-microbiology-q2",
+    "text": "physical examination of fungal meningitis of CSF is/are.",
+    "options": [
+      "CSF is turbid",
+      "↓ protein",
+      "Normal glucose",
+      "None of the above"
+    ],
+    "correctIndex": 2,
+    "explanation": "Fungal meningitis CSF findings: 1) CSF may be turbid or clear (variable); 2) Protein is ELEVATED (not decreased) - Option B is WRONG; 3) Glucose may be normal or decreased (not typically normal) - but can be normal. The answer is D - none of the above correctly describe fungal meningitis. Fungal meningitis typically shows: mild elevation in protein, normal to low glucose, and lymphocytic pleocytosis. India ink or cryptococcal antigen testing is needed for diagnosis. The CSF appearance in fungal meningitis is variable but often clear initially.",
+    "keyConcept": "Fungal meningitis typically shows elevated protein and normal-to-low glucose, not the patterns listed in options A, B, or C.",
+    "wrongOpt": "None of the above",
+    "context": " be normal. the answer is d - none of the above correctly describe fungal men"
+  },
+  {
+    "id": "mcns2-ch8-pathology-q3",
+    "text": "CSF in acute septic meningitis does NOT show:",
+    "options": [
+      "Increased amount",
+      "Increased protein content",
+      "Increased sugar content",
+      "Polymorphonuclear cells",
+      "Organisms"
+    ],
+    "correctIndex": 0,
+    "explanation": "In acute septic meningitis, CSF shows decreased glucose (bacteria consume it), elevated protein, increased WBCs (neutrophils), and organisms on Gram stain.",
+    "keyConcept": "CSF findings in meningitis",
+    "wrongOpt": "Organisms",
+    "context": "eased wbcs (neutrophils), and organisms on gram stain."
+  },
+  {
+    "id": "mcns2-ch8-pathology-q4",
+    "text": "CSF shows cobweb coagulum of fibrin on standing in case of:",
+    "options": [
+      "Acute pyogenic meningitis",
+      "Chronic meningitis",
+      "Brain abscess",
+      "Encephalitis",
+      "Cerebral infarction"
+    ],
+    "correctIndex": 0,
+    "explanation": "Chronic meningitis causes high protein in CSF leading to fibrin web formation (cobweb coagulum) on standing, unlike acute pyogenic meningitis with diffuse clotting.",
+    "keyConcept": "CSF cobweb coagulum",
+    "wrongOpt": "Chronic meningitis",
+    "context": "chronic meningitis causes high protein in csf le"
+  },
+  {
+    "id": "mcns2-ch8-pharma-q2",
+    "text": "Which antibiotics achieve therapeutic CSF level only with meningeal inflammation?",
+    "options": [
+      "Sulfonamides, Trimethoprim, Chloramphenicol, Rifampicin",
+      "β-lactam, Monobactam, Vancomycin, quinolones, Acyclovir",
+      "Aminoglycosides, 1st & 2nd Generation of cephalosporines, Amphotericin B",
+      "None"
+    ],
+    "correctIndex": 0,
+    "explanation": "Antibiotics achieving therapeutic CSF levels ONLY with meningeal inflammation: penicillins, cephalosporins, vancomycin, aminoglycosides, and most others.选项B正确. The answer is B. Meningeal inflammation increases BBB permeability, allowing these antibiotics to penetrate.",
+    "keyConcept": "Most antibiotics (penicillins, cephalosporins, vancomycin) require meningeal inflammation for adequate CSF penetration.",
+    "wrongOpt": "Aminoglycosides, 1st & 2nd Generation of cephalosporines, Am",
+    "context": ", cephalosporins, vancomycin, aminoglycosides, and most others.选项b正确. the a"
+  },
+  {
+    "id": "mcns2-ch8-histology-q1",
+    "text": "One of the following a component of Blood CSF barrier:",
+    "options": [
+      "Border cells of arachnoid matter",
+      "tight junctions between ependymal cells.",
+      "astrocytes.",
+      "Trabecular cells of arachnoid matter"
+    ],
+    "correctIndex": 1,
+    "explanation": "The blood-CSF barrier is formed by the choroid plexus epithelium (border cells of arachnoid matter - actually choroid plexus cells), not ependymal cells. Ependymal cells line ventricles. The barrier consists of fenestrated capillaries + choroid plexus epithelium with tight junctions.",
+    "keyConcept": "Blood-CSF barrier: choroid plexus epithelium + fenestrated capillaries + tight junctions.",
+    "wrongOpt": "Border cells of arachnoid matter",
+    "context": "he choroid plexus epithelium (border cells of arachnoid matter - actually choroid plexus cel"
+  },
+  {
+    "id": "mcns2-ch8-histology-q3",
+    "text": "The brain CSF barrier is not formed of:",
+    "options": [
+      "Fenestrated endothelial cells",
+      "Foot processes of astrocytes",
+      "Basement membrane of ependymal cells",
+      "Ependymal cells connected by tight junction."
+    ],
+    "correctIndex": 3,
+    "explanation": "The brain-CSF barrier is formed by ependymal cells connected by tight junctions, basement membrane, and astrocyte foot processes. Fenestrated endothelial cells are NOT part of this barrier - the brain capillary endothelium has tight junctions forming the blood-brain barrier.",
+    "keyConcept": "Brain-CSF barrier: ependymal tight junctions + basement membrane + astrocyte foot processes.",
+    "wrongOpt": "Fenestrated endothelial cells",
+    "context": "and astrocyte foot processes. fenestrated endothelial cells are not part of this barrier "
+  },
+  {
+    "id": "mcns2-ch8-histology-q4",
+    "text": "The blood CSF barrier is not formed of:",
+    "options": [
+      "Endothelial cells of fenestrated blood capillaries",
+      "Foot processes of astrocytes",
+      "Basement membrane of blood capillaries",
+      "Ependymal cells connected by tight junction."
+    ],
+    "correctIndex": 0,
+    "explanation": "Foot processes of astrocytes are part of the BLOOD-BRAIN barrier, not the blood-CSF barrier. The blood-CSF barrier consists of fenestrated capillaries, basement membrane, and choroid plexus epithelium (connected by tight junctions).",
+    "keyConcept": "Blood-CSF barrier: fenestrated capillaries + choroid epithelium with tight junctions. Blood-brain barrier: tight junction endothelium + astrocyte foot processes.",
+    "wrongOpt": "Foot processes of astrocytes",
+    "context": "foot processes of astrocytes are part of the blood-brain b"
+  },
+  {
+    "id": "mcns2-ch9-anatomy-q14",
+    "text": "A lesion of the anterior cerebral artery would most likely result in paralysis of:",
+    "options": [
+      "Mouth.",
+      "Neck.",
+      "Shoulder.",
+      "Hand.",
+      "Foot."
+    ],
+    "correctIndex": 0,
+    "explanation": "The anterior cerebral artery supplies the medial surface of the cerebral hemisphere, including the motor cortex representing the lower limb (paracentral lobule). Occlusion causes contralateral paralysis primarily affecting the leg and foot. The MCA supplies the lateral hemisphere (face, arm); the PCA supplies the occipital and inferior temporal regions.",
+    "keyConcept": "Anterior cerebral artery supplies medial hemisphere; occlusion causes contralateral LEG paralysis (paracentral lobule).",
+    "wrongOpt": "Foot.",
+    "context": "imarily affecting the leg and foot. the mca supplies the lateral "
+  },
+  {
+    "id": "mcns2-ch9-anatomy-q27",
+    "text": "In the dominant hemisphere cortical branches of middle cerebral artery supply the following areas Except.",
+    "options": [
+      "Auditory area",
+      "Broca’s area",
+      "Frontal eye field",
+      "Wernick’s area",
+      "The whole primary motor area"
+    ],
+    "correctIndex": 0,
+    "explanation": "MCA supplies auditory area, Broca's area, and frontal eye field; the whole primary motor area (for face and hand) is supplied by MCA, not an exception; the leg area is ACA.",
+    "keyConcept": "MCA cortical supply areas",
+    "wrongOpt": "Frontal eye field",
+    "context": "itory area, broca's area, and frontal eye field; the whole primary motor area"
+  },
+  {
+    "id": "mcns2-ch9-anatomy-q28",
+    "text": "One of the following arteries does not share in formation of circle of Willis:",
+    "options": [
+      "Middle cerebral",
+      "Anterior cerebral",
+      "Posterior cerebral",
+      "Internal carotid",
+      "Posterior communicating"
+    ],
+    "correctIndex": 0,
+    "explanation": "Middle cerebral artery does NOT directly participate in the circle of Willis; it arises from the internal carotid as a branch outside the circle. The circle includes ACA, PCA, ICA, and posterior communicating arteries.",
+    "keyConcept": "Circle of Willis exclusion",
+    "wrongOpt": "Internal carotid",
+    "context": "of willis; it arises from the internal carotid as a branch outside the circl"
+  },
+  {
+    "id": "mcns2-ch9-anatomy-q29",
+    "text": "Anterior cerebral artery supply:",
+    "options": [
+      "Paracentral lobule",
+      "Auditory cortex",
+      "Inferior parietal lobule",
+      "Temporal pole",
+      "Visual cortex"
+    ],
+    "correctIndex": 0,
+    "explanation": "ACA supplies the paracentral lobule (motor and sensory for lower limb), medial aspect of frontal/parietal lobes; auditory cortex is supplied by MCA, not ACA.",
+    "keyConcept": "ACA supply territories",
+    "wrongOpt": "Auditory cortex",
+    "context": "ct of frontal/parietal lobes; auditory cortex is supplied by mca, not aca."
+  },
+  {
+    "id": "mcns2-ch9-anatomy-q30",
+    "text": "Cortical branches of middle cerebral artery supply:",
+    "options": [
+      "The whole hemisphere",
+      "Lateral surface of occipital lobe",
+      "Lateral part of orbital surface",
+      "Paracentral lobule",
+      "All of the above"
+    ],
+    "correctIndex": 1,
+    "explanation": "MCA cortical branches supply lateral part of orbital surface, lateral surface (most except occipital), and temporal pole; occipital lobe and paracentral lobule are supplied by PCA and ACA respectively.",
+    "keyConcept": "MCA cortical supply",
+    "wrongOpt": "Paracentral lobule",
+    "context": "oral pole; occipital lobe and paracentral lobule are supplied by pca and aca r"
+  },
+  {
+    "id": "mcns2-ch9-anatomy-q31",
+    "text": "Posterior cerebral artery supplies:",
+    "options": [
+      "Lateral surface of occipital lobe",
+      "Visual cortex",
+      "Lower border of temporal lobe",
+      "Thalamus",
+      "All of the above"
+    ],
+    "correctIndex": 0,
+    "explanation": "PCA supplies: occipital lobe (visual cortex), lower border of temporal lobe, thalamus (central branches), and posterior limb of internal capsule; all of these are correct.",
+    "keyConcept": "PCA complete supply",
+    "wrongOpt": "Visual cortex",
+    "context": "pca supplies: occipital lobe (visual cortex), lower border of temporal lo"
+  },
+  {
+    "id": "mcns2-ch9-anatomy-q32",
+    "text": "Central branches of posterior cerebral artery supply:",
+    "options": [
+      "Thalamus",
+      "Geniculate bodies",
+      "Posterior parts of caudate & lentiform nuclei",
+      "All of the above",
+      "A & B only"
+    ],
+    "correctIndex": 2,
+    "explanation": "Central branches of PCA (thalamogeniculate arteries) supply thalamus, lateral/genual geniculate bodies, and posterior parts of caudate and lentiform nuclei.",
+    "keyConcept": "PCA central branches",
+    "wrongOpt": "Thalamus",
+    "context": "mogeniculate arteries) supply thalamus, lateral/genual geniculate bo"
+  },
+  {
+    "id": "mcns2-ch9-anatomy-q34",
+    "text": "Which artery is connected to the posterior cerebral artery (PCA) by the posterior communicating artery?",
+    "options": [
+      "Anterior communicating artery",
+      "Middle cerebral artery",
+      "Posterior inferior cerebellar artery",
+      "Internal carotid artery",
+      "Basilar artery"
+    ],
+    "correctIndex": 0,
+    "explanation": "The posterior communicating artery (PCoM) connects the internal carotid artery (ICA) with the posterior cerebral artery (PCA), forming part of the circle of Willis and providing collateral circulation.",
+    "keyConcept": "Posterior communicating artery links ICA to PCA as part of the circle of Willis.",
+    "wrongOpt": "Internal carotid artery",
+    "context": "ng artery (pcom) connects the internal carotid artery (ica) with the posterior cere"
+  },
+  {
+    "id": "mcns2-ch9-anatomy-q46",
+    "text": "The part of the internal carotid artery which DOESN'T give branches is:",
+    "options": [
+      "Cervical",
+      "Petrous",
+      "Cavernous",
+      "Cerebral"
+    ],
+    "correctIndex": 0,
+    "explanation": "The cervical part of the internal carotid artery (from carotid bifurcation to skull base) does not give branches; branches arise from the petrous, cavernous, and cerebral portions.",
+    "keyConcept": "Cervical internal carotid: no branches.",
+    "wrongOpt": "Petrous",
+    "context": "ches; branches arise from the petrous, cavernous, and cerebral port"
+  },
+  {
+    "id": "mcns2-ch10-anatomy-q7",
+    "text": "A 25-year-old patient sustains a head injury during a bicycle accident. On examination, there is a palpable swelling on the scalp that appears to be filled with blood. The hematoma is located between the periosteum and the galea aponeurotica. Which specific type of scalp hematoma is this most likely indicative of?",
+    "options": [
+      "Epidural hematoma",
+      "Subdural hematoma",
+      "Subperiosteal hematoma",
+      "Subcutaneous hematoma",
+      "Subgaleal hematoma"
+    ],
+    "correctIndex": 4,
+    "explanation": "A hematoma between the periosteum and the galea aponeurotica is called a SUBGALEAL hematoma. The galea aponeurotica (epicranial aponeurosis) connects the frontalis and occipitalis muscles. A subperiosteal hematoma would be between periosteum and bone; subcutaneous hematoma is between skin and galea. Epidural and subdural hematomas are intracranial, not in the scalp layers.",
+    "keyConcept": "Subgaleal hematoma = between periosteum and galea aponeurotica; 'boxer's hematoma' in scalp trauma.",
+    "wrongOpt": "Subdural hematoma",
+    "context": " skin and galea. epidural and subdural hematomas are intracranial, not in the"
+  },
+  {
+    "id": "mcns2-ch10-anatomy-q9",
+    "text": "A 2-year-old male patient presents to the clinic with a chief complaint of difficulty sucking. His mother reports that he has been having trouble breastfeeding for the past few weeks. She also notices that he has difficulty closing his lips completely. Which of the following muscles is most likely affected in this patient?",
+    "options": [
+      "Orbicularis oris",
+      "Frontalis",
+      "Occipitalis",
+      "Buccinator",
+      "Orbicularis oculi"
+    ],
+    "correctIndex": 0,
+    "explanation": "Orbicularis oris is the muscle of the lips that allows pursing, tightening, and closure of the mouth (essential for breastfeeding and sucking). Weakness causes inability to close lips completely (milk dribbles out). The buccinator keeps food between teeth during chewing; the frontalis and occipitalis are muscles of facial expression in the scalp.",
+    "keyConcept": "Orbicularis oris surrounds the mouth and is essential for lip closure and sucking; weakness causes dribbling of milk.",
+    "wrongOpt": "Frontalis",
+    "context": "een teeth during chewing; the frontalis and occipitalis are muscles o"
+  },
+  {
+    "id": "mcns2-ch10-anatomy-q10",
+    "text": "A 45-year-old male patient presents to the clinic with a chief complaint of difficulty walking. He reports that he has been having trouble balancing and coordinating his movements for the past few months. He also has difficulty judging distances and reaching for objects. Which of the following anatomical areas of the brain is most likely affected in this patient?",
+    "options": [
+      "Cerebellum",
+      "Frontal lobe",
+      "Parietal lobe",
+      "Temporal lobe",
+      "Occipital lobe"
+    ],
+    "correctIndex": 0,
+    "explanation": "Difficulty balancing, coordinating movements, and judging distances (dysmetria) are classic signs of cerebellar dysfunction. The cerebellum coordinates voluntary movements, maintains balance, and regulates muscle tone. Cerebellar lesions cause ataxia, intention tremor, dysmetria, and dysarthria. The frontal lobe controls motor planning; the parietal lobe processes sensation.",
+    "keyConcept": "Cerebellar lesion = ataxia (difficulty balancing/coordinating), dysmetria (difficulty judging distances), intention tremor.",
+    "wrongOpt": "Frontal lobe",
+    "context": "ysmetria, and dysarthria. the frontal lobe controls motor planning; the "
+  },
+  {
+    "id": "mcns2-ch10-anatomy-q11",
+    "text": "A 25-year-old male patient presents to the clinic with a chief complaint of difficulty paying attention. He reports that he has been having trouble staying focused on tasks and remembering things for the past few months. He also has difficulty controlling his impulses and making decisions. Which of the following anatomical areas of the brain is most likely affected in this patient?",
+    "options": [
+      "Frontal lobe",
+      "Parietal lobe",
+      "Temporal lobe",
+      "Occipital lobe",
+      "Cerebellum"
+    ],
+    "correctIndex": 0,
+    "explanation": "The frontal lobe is responsible for executive functions including attention, working memory, impulse control, decision-making, and social behavior. Difficulty staying focused, remembering things, and controlling impulses indicates frontal lobe dysfunction. The prefrontal cortex is particularly important for these higher cognitive functions. The parietal lobe processes sensation; the cerebellum coordinates movement.",
+    "keyConcept": "Frontal lobe = executive functions (attention, memory, impulse control, decision-making); damage causes frontal lobe syndrome.",
+    "wrongOpt": "Parietal lobe",
+    "context": "gher cognitive functions. the parietal lobe processes sensation; the cere"
+  },
+  {
+    "id": "mcns2-ch10-anatomy-q12",
+    "text": "A patient presents with difficulty in walking, a loss of proprioception (awareness of body position), and a positive Romberg sign (swaying or falling when asked to stand with eyes closed). Imaging reveals a lesion in the spinal cord. Which neural tract is most likely affected in this case?",
+    "options": [
+      "Corticospinal tract",
+      "Spinocerebellar tract",
+      "Dorsal column-medial lemniscus pathway",
+      "Spinothalamic tract",
+      "Anterolateral system"
+    ],
+    "correctIndex": 2,
+    "explanation": "The dorsal column-medial lemniscus pathway carries proprioception, vibration sense, and fine (discriminative) touch. A lesion causing loss of proprioception and a positive Romberg sign (swaying/falling with eyes closed) indicates dorsal column damage. The spinothalamic tract carries pain and temperature; the corticospinal tract carries motor signals; spinocerebellar tracts carry proprioceptive information to the cerebellum.",
+    "keyConcept": "Loss of proprioception, vibration sense, stereognosis, and positive Romberg sign = dorsal column-medial lemniscus pathway lesion.",
+    "wrongOpt": "Corticospinal tract",
+    "context": "ies pain and temperature; the corticospinal tract carries motor signals; spinoc"
+  },
+  {
+    "id": "mcns2-ch10-anatomy-q14",
+    "text": "A 42-year-old right-handed male arrives to the emergency department and is intoxicated. At the time of presentation, he is unable to move his hands and arms. The following day, once he is sober, a more thorough neurological examination reveals a complete flaccid paralysis of the upper limbs and severely diminished-to-absent reflex activity. What is the most likely area of spinal damage?",
+    "options": [
+      "Area A",
+      "Area B",
+      "Area C",
+      "Area D",
+      "Area E"
+    ],
+    "correctIndex": 0,
+    "explanation": "This question appears to reference a spinal cord cross-section image showing different horn regions. Area C corresponds to the anterior horn where lower motor neurons reside. Damage to anterior horn cells at C8 level (or nearby) causes flaccid paralysis of the upper limbs with areflexia due to LMN destruction. This is consistent with anterior cord syndrome from watershed infarction, commonly seen after cardiac arrest or severe hypotension. The flaccid paralysis and absent reflexes indicate LMN, not UMN lesion.",
+    "keyConcept": "Anterior horn cell damage causes flaccid paralysis with areflexia due to destruction of lower motor neurons.",
+    "wrongOpt": "Area C",
+    "context": "owing different horn regions. area c corresponds to the anterior h"
+  },
+  {
+    "id": "mcns2-ch10-anatomy-q27",
+    "text": "Antipsychotic‑induced akathisia is best treated with:",
+    "options": [
+      "Clozapine",
+      "Propranolol",
+      "Benztropine",
+      "Dantrolene",
+      "Bromocriptine"
+    ],
+    "correctIndex": 0,
+    "explanation": "Propranolol (beta-blocker) is first-line treatment for antipsychotic-induced akathisia, likely by blocking beta-2 receptors in the locus coeruleus.",
+    "keyConcept": "Akathisia treatment",
+    "wrongOpt": "Propranolol",
+    "context": "propranolol (beta-blocker) is first-line "
+  },
+  {
+    "id": "mcns2-ch10-anatomy-q29",
+    "text": "Which antidepressant is approved for management of chronic neuropathic pain (e.g., diabetic neuropathy)?",
+    "options": [
+      "Tranylcypromine",
+      "Phenelzine",
+      "Venlafaxine",
+      "Lithium",
+      "Bupropion"
+    ],
+    "correctIndex": 0,
+    "explanation": "Venlafaxine (SNRI) and duloxetine are antidepressants approved for diabetic neuropathy and other chronic pain conditions.",
+    "keyConcept": "Antidepressants for neuropathic pain",
+    "wrongOpt": "Venlafaxine",
+    "context": "venlafaxine (snri) and duloxetine are ant"
+  },
+  {
+    "id": "mcns2-ch10-anatomy-q32",
+    "text": "Which antiviral drug is used to treat neonates with herpes simplex virus encephalitis?",
+    "options": [
+      "Amantadine",
+      "Oseltamivir",
+      "Interferon",
+      "Acyclovir",
+      "Foscarnet"
+    ],
+    "correctIndex": 0,
+    "explanation": "Acyclovir (guanine analog) is the treatment of choice for HSV encephalitis in neonates, reducing mortality when given early.",
+    "keyConcept": "HSV encephalitis treatment",
+    "wrongOpt": "Acyclovir",
+    "context": "acyclovir (guanine analog) is the treat"
+  },
+  {
+    "id": "mcns2-ch10-anatomy-q33",
+    "text": "In a suspected case of rabies, the most important specimen for virus detection is:",
+    "options": [
+      "Blood",
+      "Faeces",
+      "Saliva",
+      "Skin swab",
+      "Throat swab"
+    ],
+    "correctIndex": 0,
+    "explanation": "Saliva contains the highest concentration of rabies virus; a skin biopsy from the nape of the neck (hair follicles) is also used for fluorescent antibody testing.",
+    "keyConcept": "Rabies diagnosis specimen",
+    "wrongOpt": "Saliva",
+    "context": "saliva contains the highest concentr"
+  },
+  {
+    "id": "mcns2-ch10-anatomy-q37",
+    "text": "Hemorrhage reaching the ……… layer of the scalp can cause black eye.",
+    "options": [
+      "Dense connective tissue",
+      "Aponeurotic",
+      "Loose connective tissue",
+      "Periosteal"
+    ],
+    "correctIndex": 2,
+    "explanation": "Blood in the loose areolar tissue layer (subaponeurotic space) of the scalp can track around the orbit producing 'black eye' (periorbital ecchymosis).",
+    "keyConcept": "Black eye: hemorrhage in loose connective tissue layer of scalp.",
+    "wrongOpt": "Aponeurotic",
+    "context": "oose areolar tissue layer (subaponeurotic space) of the scalp can track"
+  },
+  {
+    "id": "mcns2-ch10-physiology-q6",
+    "text": "Parkinson,s disease causes:",
+    "options": [
+      "Muscle paralysis.",
+      "Increased resistance throughout the range of movement.",
+      "Increased facial movements during speech.",
+      "Tremors, which are obvious during movements."
+    ],
+    "correctIndex": 1,
+    "explanation": "Parkinson's disease causes increased resistance throughout range of movement. Option B is correct. Lead-pipe rigidity is constant resistance throughout passive movement range. Options A, C, D are wrong: no paralysis in Parkinsonism; decreased (not increased) facial movements; tremors are at rest (not during movements).",
+    "keyConcept": "Parkinsonian lead-pipe rigidity shows constant resistance throughout the full range of passive movement.",
+    "wrongOpt": "Tremors, which are obvious during movements.",
+    "context": " increased) facial movements; tremors are at rest (not during movem"
+  },
+  {
+    "id": "mcns2-ch10-pharma-q1",
+    "text": "The following antiparkinsonian drug (s) induce (s) Insomnia",
+    "options": [
+      "L-dopa",
+      "Selegiline",
+      "Amantadine",
+      "B & C",
+      "A & C"
+    ],
+    "correctIndex": 1,
+    "explanation": "Selegiline and Amantadine induce insomnia. Option D is correct. Both selegiline (MAO-B inhibitor) and amantadine (dopamine release enhancer) can cause insomnia as an adverse effect. L-dopa can also cause insomnia but the question specifically asks about drugs that induce insomnia.",
+    "keyConcept": "MAO-B inhibitors (selegiline) and amantadine are antiparkinsonian drugs that can cause insomnia as an adverse effect.",
+    "wrongOpt": "L-dopa",
+    "context": "nsomnia as an adverse effect. l-dopa can also cause insomnia but t"
+  },
+  {
+    "id": "mcns2-ch10-pharma-q2",
+    "text": "The following drug can be used alone in treatment of Parkinson disease",
+    "options": [
+      "L-dopa",
+      "Pramipexole",
+      "Entacapone",
+      "Carbidopa"
+    ],
+    "correctIndex": 1,
+    "explanation": "Pramipexole can be used alone in treatment of Parkinson disease. Option B is correct. Pramipexole is a D2/D3 dopamine agonist that can be used as monotherapy in early Parkinson's disease. L-dopa is combined with carbidopa/benserazide (not used alone). Entacapone is a COMT inhibitor added to L-dopa. Carbidopa is a peripheral decarboxylase inhibitor that cannot penetrate BBB.",
+    "keyConcept": "D2 agonists like pramipexole can be used as monotherapy in early Parkinson's disease due to their ability to directly stimulate dopamine receptors.",
+    "wrongOpt": "L-dopa",
+    "context": "in early parkinson's disease. l-dopa is combined with carbidopa/be"
+  },
+  {
+    "id": "mcns2-ch10-pharma-q3",
+    "text": "The following drugs can minimize motor complication of using l-dopa in advanced Parkinson’s disease except",
+    "options": [
+      "MAO-B inhibitors",
+      "COMT inhibitors",
+      "Amantadine",
+      "D2 agonists",
+      "Pyridoxine"
+    ],
+    "correctIndex": 0,
+    "explanation": "Pyridoxine does NOT minimize motor complications of L-dopa. Option E is correct. Pyridoxine (vitamin B6) actually interferes with L-dopa efficacy by enhancing peripheral decarboxylation. MAO-B inhibitors, COMT inhibitors, amantadine, and D2 agonists all help reduce motor complications (on-off phenomenon, dyskinesia).",
+    "keyConcept": "Pyridoxine (B6) interferes with L-dopa metabolism and should be avoided in Parkinsonism treatment.",
+    "wrongOpt": "COMT inhibitors",
+    "context": "boxylation. mao-b inhibitors, comt inhibitors, amantadine, and d2 agonists "
+  },
+  {
+    "id": "mcns2-ch10-pharma-q8",
+    "text": "Which of the following possesses a weak analgesic effect?",
+    "options": [
+      "Nitrous oxide.",
+      "Halothane",
+      "Ketamine",
+      "Fentanyl"
+    ],
+    "correctIndex": 0,
+    "explanation": "Halothane has weak analgesic effect. Option B is correct. Volatile anesthetics vary in analgesia: halothane provides minimal analgesia, while ketamine (C) and nitrous oxide (A) provide significant analgesia. Fentanyl (D) is a potent opioid analgesic.",
+    "keyConcept": "Halothane lacks significant analgesic properties, distinguishing it from ketamine and nitrous oxide.",
+    "wrongOpt": "Halothane",
+    "context": "halothane has weak analgesic effect. op"
+  },
+  {
+    "id": "mcns2-ch10-pharma-q11",
+    "text": "The following anesthetic agent is not acting through increase GABA activity",
+    "options": [
+      "Halothane",
+      "Propofol",
+      "Isoflurane",
+      "Ketamine"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ketamine does NOT act through increased GABA activity. Option D is correct. Ketamine is an NMDA receptor antagonist. Halothane (A), propofol (B), and isoflurane (C) all enhance GABA-A receptor activity. Ketamine produces dissociative anesthesia through NMDA blockade.",
+    "keyConcept": "Ketamine provides anesthesia through NMDA receptor antagonism, unlike volatiles and propofol which enhance GABA.",
+    "wrongOpt": "Halothane",
+    "context": " an nmda receptor antagonist. halothane (a), propofol (b), and isoflu"
+  },
+  {
+    "id": "mcns2-ch10-pharma-q12",
+    "text": "The following increase potency and MAC value of anesthetic except",
+    "options": [
+      "Opioid Drugs",
+      "Benzodiazepines",
+      "Alcohol abuse",
+      "Elderly patient"
+    ],
+    "correctIndex": 0,
+    "explanation": "Alcohol ABUSE decreases potency and MAC value, not increases. Option C is incorrect. Chronic alcohol use induces hepatic enzymes, increasing drug metabolism and requiring higher doses. Opioids (A), benzodiazepines (B), and elderly (D) all decrease MAC (increase potency/more sensitive).",
+    "keyConcept": "Chronic alcohol use induces hepatic metabolism, requiring increased anesthetic doses.",
+    "wrongOpt": "Benzodiazepines",
+    "context": "ng higher doses. opioids (a), benzodiazepines (b), and elderly (d) all decr"
+  },
+  {
+    "id": "mcns2-ch10-pharma-q14",
+    "text": "Which of the following is ester local anesthetic?",
+    "options": [
+      "Lidocaine",
+      "Bupivacaine",
+      "Ropivacaine",
+      "Benzocaine"
+    ],
+    "correctIndex": 0,
+    "explanation": "Benzocaine is an ester local anesthetic. Option D is correct. Lidocaine (A), bupivacaine (B), and ropivacaine (C) are all amides. Esters include benzocaine, procaine, tetracaine. Amides are metabolized in liver, esters in plasma by cholinesterase.",
+    "keyConcept": "Benzocaine is an ester local anesthetic, distinguishing it from amide-type agents like lidocaine.",
+    "wrongOpt": "Bupivacaine",
+    "context": " d is correct. lidocaine (a), bupivacaine (b), and ropivacaine (c) are "
+  },
+  {
+    "id": "mcns2-ch10-pharma-q16",
+    "text": "Which of the following is wrong regarding local anesthetics?",
+    "options": [
+      "Binding to plasma protein affects duration of action",
+      "Lipid solubility affects potency",
+      "Addition of vasoconstrictor shorten duration of action",
+      "Pka affects speed of onset"
+    ],
+    "correctIndex": 2,
+    "explanation": "Vasoconstrictors PROLONG, not shorten duration - this is WRONG. Option C is incorrect. Epinephrine constricts vessels, decreasing absorption, prolonging duration. Options A, B, D are correct: plasma protein binding affects duration, lipid solubility affects potency, pKa affects onset speed.",
+    "keyConcept": "Vasoconstrictors added to local anesthetics prolong duration by reducing vascular absorption.",
+    "wrongOpt": "Lipid solubility affects potency",
+    "context": "ein binding affects duration, lipid solubility affects potency, pka affects onset speed."
+  },
+  {
+    "id": "mcns2-ch10-pharma-q17",
+    "text": "The following conditions decrease activity of local anesthetic except",
+    "options": [
+      "Repeated administration",
+      "Infection",
+      "Decrease intracellular acidity",
+      "Addition of sodium bicarbonate"
+    ],
+    "correctIndex": 0,
+    "explanation": "Addition of sodium bicarbonate INCREASES activity - this is NOT false. Option D is correct. Sodium bicarbonate alkalinizes the solution, increasing the unionized (active) form of local anesthetics, enhancing activity. Options A, B, C correctly describe factors that decrease activity: repeated administration (tachyphylaxis), infection (acidity), intracellular acidity (ion trapping).",
+    "keyConcept": "Sodium bicarbonate enhances local anesthetic activity by increasing the un ionized base form.",
+    "wrongOpt": "Infection",
+    "context": "ministration (tachyphylaxis), infection (acidity), intracellular acid"
+  },
+  {
+    "id": "mcns2-ch10-pharma-q22",
+    "text": "An antiepileptic drug for absence seizures is:",
+    "options": [
+      "Diazepam.",
+      "Carbamazepine.",
+      "Ethosuximide.",
+      "Phenytoin"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ethosuximide is the drug of choice for absence seizures. Option C is correct. Ethosuximide blocks T-type calcium channels in thalamic neurons, specifically effective for absence seizures. Diazepam (A) is for status epilepticus. Carbamazepine (B) and phenytoin (D) can worsen absence seizures.",
+    "keyConcept": "Ethosuximide's thalamic T-channel blockade specifically suppresses absence seizure activity.",
+    "wrongOpt": "Phenytoin",
+    "context": "pticus. carbamazepine (b) and phenytoin (d) can worsen absence seizur"
+  },
+  {
+    "id": "mcns2-ch10-pharma-q23",
+    "text": "The following antiepileptic is not used in tonic clonic epilepsy:",
+    "options": [
+      "Phenytoin.",
+      "Carbamazepine.",
+      "Valproate",
+      "Ethosuximide"
+    ],
+    "correctIndex": 3,
+    "explanation": "Ethosuximide is NOT used in tonic clonic epilepsy. Option D is correct. Ethosuximide is only effective for absence seizures and does not protect against generalized tonic-clonic seizures. Phenytoin (A), carbamazepine (B), and valproate (C) are all effective for tonic-clonic seizures.",
+    "keyConcept": "Ethosuximide is specific for absence seizures and may worsen generalized tonic-clonic seizures.",
+    "wrongOpt": "Valproate",
+    "context": "n (a), carbamazepine (b), and valproate (c) are all effective for ton"
+  },
+  {
+    "id": "mcns2-ch10-pharma-q27",
+    "text": "The following drugs may induce epileptic like seizures except",
+    "options": [
+      "Tricyclic antidepressants",
+      "Lithium carbonate",
+      "Haloperidol",
+      "Benzodiazepines"
+    ],
+    "correctIndex": 0,
+    "explanation": "Benzodiazepines do NOT induce seizures - they treat them. Option D is correct. Tricyclic antidepressants (A), lithium (B), and haloperidol (C) can all lower seizure threshold. Benzodiazepines are anticonvulsants that raise seizure threshold.",
+    "keyConcept": "Benzodiazepines are anticonvulsants; tricyclics, lithium, and antipsychotics can precipitate seizures.",
+    "wrongOpt": "Haloperidol",
+    "context": "essants (a), lithium (b), and haloperidol (c) can all lower seizure thr"
+  },
+  {
+    "id": "mcns2-ch10-pharma-q29",
+    "text": "The following antiepileptic is not preferred during pregnancy",
+    "options": [
+      "Lamotrigine",
+      "Carbamazepine",
+      "Levetiracetam",
+      "Valproate"
+    ],
+    "correctIndex": 3,
+    "explanation": "Valproate is NOT preferred during pregnancy. Option D is correct. Valproate has the HIGHEST teratogenic risk (1-2% neural tube defects). Lamotrigine and levetiracetam are considered safer alternatives. Carbamazepine has intermediate risk. All antiepileptics carry some risk, but valproate is most contraindicated.",
+    "keyConcept": "Valproate's high teratogenic potential (neural tube defects) makes it contraindicated in pregnancy.",
+    "wrongOpt": "Lamotrigine",
+    "context": "k (1-2% neural tube defects). lamotrigine and levetiracetam are conside"
+  },
+  {
+    "id": "mcns2-ch10-pharma-q33",
+    "text": "Indications of antidepressants do not include:",
+    "options": [
+      "Chronic neuropathic pain.",
+      "Convulsive disorders.",
+      "Eating disorders",
+      "Obsessive-compulsive disorders."
+    ],
+    "correctIndex": 0,
+    "explanation": "Convulsive disorders are NOT an indication for antidepressants. Option B is correct. Antidepressants are used for chronic neuropathic pain (A), eating disorders (C), and OCD (D). Some antidepressants (bupropion) can actually lower seizure threshold. TCAs are used for neuropathic pain, not seizures.",
+    "keyConcept": "Antidepressants treat mood and anxiety disorders, neuropathic pain, and some eating disorders, but not convulsive disorders.",
+    "wrongOpt": "Eating disorders",
+    "context": "chronic neuropathic pain (a), eating disorders (c), and ocd (d). some antide"
+  },
+  {
+    "id": "mcns2-ch10-pharma-q36",
+    "text": "The following drug(s) can be used in treatment of myoclonic epilepsy:",
+    "options": [
+      "Levetiracetam",
+      "Valproate",
+      "Topiramate",
+      "All of the above"
+    ],
+    "correctIndex": 0,
+    "explanation": "Levetiracetam, valproate, and topiramate are all effective antiepileptic drugs for myoclonic seizures, making 'all of the above' the correct answer.",
+    "keyConcept": "Myoclonic epilepsy responds to multiple AEDs including levetiracetam, valproate, and topiramate.",
+    "wrongOpt": "Valproate",
+    "context": "levetiracetam, valproate, and topiramate are all effec"
+  },
+  {
+    "id": "mcns2-ch10-pharma-q39",
+    "text": "All of the following anesthetic drugs can cause respiratory irritation except:",
+    "options": [
+      "Halothane",
+      "Sevoflurane",
+      "Isoflurane",
+      "Desflurane"
+    ],
+    "correctIndex": 0,
+    "explanation": "Halothane is non‑irritating to the airway; desflurane is the most pungent and respiratory irritant, followed by isoflurane and sevoflurane.",
+    "keyConcept": "Halothane is the only anesthetic agent listed that does not irritate the respiratory tract.",
+    "wrongOpt": "Sevoflurane",
+    "context": "t, followed by isoflurane and sevoflurane."
+  },
+  {
+    "id": "mcns2-ch10-pharma-q77",
+    "text": "The following anesthetic agent is not acting through increase GABA activity:",
+    "options": [
+      "Halothane",
+      "Propofol",
+      "Isoflurane",
+      "Ketamine"
+    ],
+    "correctIndex": 3,
+    "explanation": "Ketamine produces anesthesia through NMDA receptor antagonism, not GABA enhancement. Mechanism: ketamine is a non-competitive NMDA receptor antagonist that blocks glutamate signaling. Halothane, propofol, and isoflurane all enhance GABA-A receptor activity (though via slightly different mechanisms), leading to increased chloride conductance and neuronal inhibition. Ketamine uniquely preserves cardiovascular function and provides good analgesia, but its NMDA mechanism means it doesn't work through GABA. This makes ketamine useful when GABA-enhancing agents are contraindicated.",
+    "keyConcept": "Ketamine is the only anesthetic listed that acts via NMDA antagonism rather than GABA enhancement.",
+    "wrongOpt": "Halothane",
+    "context": "t blocks glutamate signaling. halothane, propofol, and isoflurane all"
+  },
+  {
+    "id": "mcns2-ch10-pharma-q78",
+    "text": "Abuse and expanding closed gas spaces are adverse effects of which of the following anesthetics :",
+    "options": [
+      "Ketamine",
+      "Nitrous oxide",
+      "Propofol",
+      "Halothane"
+    ],
+    "correctIndex": 1,
+    "explanation": "Nitrous oxide (N2O) causes two unique adverse effects: 1) Abuse potential - N2O produces euphoria and is abused ('laughing gas'); 2) Expanding closed gas spaces - N2O diffuses 34x faster than nitrogen, so it rapidly fills enclosed spaces (bowel, middle ear, pneumothorax, air emboli), expanding them. This can cause bowel distension, middle ear damage, or worsen pneumothorax. Ketamine has no significant abuse potential for gas abuse. Propofol and halothane don't cause gas expansion. The correct answer is B - N2O's ability to expand closed gas spaces limits its use in patients with bowel obstruction, pneumothorax, or middle ear disease.",
+    "keyConcept": "Nitrous oxide's unique adverse effects are abuse potential and expansion of closed gas spaces due to rapid diffusion.",
+    "wrongOpt": "Ketamine",
+    "context": "mage, or worsen pneumothorax. ketamine has no significant abuse pote"
+  },
+  {
+    "id": "mcns2-ch10-pharma-q80",
+    "text": "Which of the following possesses a weak analgesic effect:",
+    "options": [
+      "Nitrous oxide",
+      "Halothane",
+      "Ketamine",
+      "Fentanyl"
+    ],
+    "correctIndex": 0,
+    "explanation": "Analgesic potency comparison: Fentanyl > Ketamine > Halothane > Nitrous oxide. Nitrous oxide has WEAK analgesic effect. While N2O provides some analgesia (used in labor, dentistry), its potency is low. Ketamine provides moderate analgesia through NMDA antagonism. Halothane provides minimal analgesia. Fentanyl is a potent opioid with strong analgesic effects. N2O's weak analgesic effect means it's often combined with other agents for surgical procedures. The correct answer is A - nitrous oxide possesses weak analgesic effect compared to the other options.",
+    "keyConcept": "Nitrous oxide has weak analgesic potency compared to opioids (fentanyl) and ketamine.",
+    "wrongOpt": "Halothane",
+    "context": "arison: fentanyl > ketamine > halothane > nitrous oxide. nitrous oxid"
+  },
+  {
+    "id": "mcns2-ch10-pharma-q81",
+    "text": "Which of the following is ester local anesthetic:",
+    "options": [
+      "Lidocaine",
+      "Bupivacaine",
+      "Ropivacaine",
+      "Benzocaine"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ester vs Amide local anesthetics: Esters: procaine, tetracaine, benzocaine, cocaine - metabolized by plasma cholinesterase (short duration). Amides: lidocaine, mepivacaine, bupivacaine, ropivacaine - metabolized in liver (longer duration, longer half-life). Benzocaine is a classic ester local anesthetic used topically. Lidocaine (A), bupivacaine (B), and ropivacaine (C) are all amide-type local anesthetics. The correct answer is D - benzocaine is the ester anesthetic. Esters are more prone to causing allergic reactions (para-aminobenzoic acid metabolite).",
+    "keyConcept": "Benzocaine is an ester local anesthetic, distinguishing it from the amide anesthetics lidocaine, bupivacaine, and ropivacaine.",
+    "wrongOpt": "Bupivacaine",
+    "context": "ides: lidocaine, mepivacaine, bupivacaine, ropivacaine - metabolized in"
+  },
+  {
+    "id": "mcns2-ch10-pharma-q83",
+    "text": "The following conditions decrease activity of local anesthetic EXCEPT:",
+    "options": [
+      "Repeated administration",
+      "Infection",
+      "Decrease intracellular acidity",
+      "Addition of sodium bicarbonate"
+    ],
+    "correctIndex": 0,
+    "explanation": "Adding sodium bicarbonate INCREASES local anesthetic activity (not decreases). Bicarbonate raises pH, increasing the unionized (base) form of the anesthetic. The unionized form readily crosses nerve membranes; once inside (lower pH), it becomes ionized and blocks sodium channels. Therefore, option D (addition of sodium bicarbonate) actually INCREASES activity, making it the exception. Options A, B, C all DECREASE activity: repeated administration can cause tachyphylaxis; infection decreases activity (acidic environment traps drug extracellularly); decrease intracellular acidity (more ionized form extracellularly, less penetration). The correct answer is D because sodium bicarbonate enhances activity, contrary to what the question implies.",
+    "keyConcept": "Adding sodium bicarbonate increases local anesthetic activity by raising pH and increasing nerve membrane penetration.",
+    "wrongOpt": "Infection",
+    "context": "tion can cause tachyphylaxis; infection decreases activity (acidic en"
+  },
+  {
+    "id": "mcns2-ch10-pharma-q85",
+    "text": "The following antiepileptic is not preferred during pregnancy:",
+    "options": [
+      "Lamotrigine",
+      "Carbamazepine",
+      "Levetiracetam",
+      "Valproate"
+    ],
+    "correctIndex": 3,
+    "explanation": "Valproate is CONTRAINDICATED in pregnancy due to significant teratogenicity. It causes neural tube defects (spina bifida), craniofacial abnormalities, and developmental delays. FDA pregnancy category X for migraine use. Lamotrigine and levetiracetam are considered safer options during pregnancy (though not ideal). Carbamazepine also has teratogenic potential but less than valproate. Valproate's risks far outweigh benefits in pregnancy - it's absolutely contraindicated especially during first trimester for any indication (epilepsy, migraine, bipolar).",
+    "keyConcept": "Valproate is contraindicated in pregnancy due to neural tube defects and significant teratogenic effects.",
+    "wrongOpt": "Lamotrigine",
+    "context": " category x for migraine use. lamotrigine and levetiracetam are conside"
+  },
+  {
+    "id": "mcns2-ch10-pharma-q86",
+    "text": "All the following are true concerning antiepileptics:",
+    "options": [
+      "Females who get pregnant should discontinue the antiepileptic drug",
+      "Lamotrigine may induce fatal dermatitis",
+      "They are contraindicated in neuropathic pain",
+      "Carbamazepine antagonizes the action of antidiuretic hormone",
+      "B & D"
+    ],
+    "correctIndex": 2,
+    "explanation": "Let me analyze option E carefully - all options except one should be true. Option A: 'Females who get pregnant should discontinue antiepileptic' - FALSE - they should NOT discontinue abruptly but should continue with careful management and folic acid supplementation. Option B: 'Lamotrigine may induce fatal dermatitis' - TRUE. Option C: 'They are contraindicated in neuropathic pain' - FALSE - many antiepileptics (gabapentin, pregabalin, carbamazepine) are first-line treatments for neuropathic pain. Option D: 'Carbamazepine antagonizes ADH' - TRUE (causes SIADH, not antagonizes). Since E is an option and the question says 'which is not true', option E cannot be the answer (it has no content). Wait, looking at the options, E has no text shown. This might mean E is incomplete in the original. Given the context, option A and C are FALSE statements. But the question format suggests one answer. Looking at standard exam patterns, option E would typically be 'All of the above' or 'None of the above' type. Given standard medical exam conventions, I believe the answer is E (all/none of the above pattern).",
+    "keyConcept": "Antiepileptics are NOT contraindicated in neuropathic pain - gabapentin and pregabalin are first-line treatments.",
+    "wrongOpt": "Lamotrigine may induce fatal dermatitis",
+    "context": "d supplementation. option b: 'lamotrigine may induce fatal dermatitis' - true. option c: 'they are "
+  },
+  {
+    "id": "mcns2-ch10-pharma-q87",
+    "text": "Preferred therapy for a girl with combined absence and tonic clonic epilepsy is :",
+    "options": [
+      "Ethosuximide",
+      "Carbamazepine",
+      "Valproate",
+      "Phenytoin plus carbamazepine"
+    ],
+    "correctIndex": 2,
+    "explanation": "For combined absence and tonic-clonic epilepsy, valproate is the drug of choice because it is broad-spectrum and effective for both seizure types. Ethosuximide only works for absence seizures (B-wrong). Carbamazepine can worsen absence seizures (A-wrong). Phenytoin plus carbamazepine is irrational (D-wrong). Valproate is the only option that effectively treats BOTH absence and generalized tonic-clonic seizures. It's the first-line treatment for mixed seizure disorders. The answer is C - valproate is preferred therapy for combined absence and tonic-clonic epilepsy.",
+    "keyConcept": "Valproate is the drug of choice for combined absence and tonic-clonic epilepsy due to its broad-spectrum efficacy.",
+    "wrongOpt": "Ethosuximide",
+    "context": "ctive for both seizure types. ethosuximide only works for absence seizur"
+  },
+  {
+    "id": "mcns2-ch10-pharma-q88",
+    "text": "Uses of antiepileptics include all of the following EXCEPT:",
+    "options": [
+      "Lamotrigine / mood stabilizer in bipolar manic depression",
+      "Phenytoin / digitalis arrhythmia",
+      "Gabapentin / neuropathic pain",
+      "Carbamazepine / dilutional hyponatremia"
+    ],
+    "correctIndex": 0,
+    "explanation": "Analyzing the options: A) Lamotrigine is a mood stabilizer in bipolar - TRUE; B) Phenytoin is used in digitalis arrhythmia - TRUE (phenytoin treats digitalis-induced arrhythmias); C) Gabapentin is used in neuropathic pain - TRUE; D) Carbamazepine is used in dilutional hyponatremia - TRUE (it causes SIADH which would worsen hyponatremia, not treat it). Wait, this seems contradictory. Let me reconsider. Actually, carbamazepine causes hyponatremia (not treats it). So option D statement is WRONG - carbamazepine doesn't treat dilutional hyponatremia, it CAUSES it. The answer should be B if the question asks which is NOT a use. Actually, I need to re-read - option B says 'Phenytoin / digitalis arrhythmia' which IS a correct use. Option D says 'Carbamazepine / dilutional hyponatremia' - this is INCORRECT because carbamazepine causes hyponatremia, it doesn't treat it. So the answer is B for 'not correctly matched' if we're looking for wrong indication. Wait, but the question says 'uses include all EXCEPT'. If D is wrong (carbamazepine doesn't treat hyponatremia), then D would be the answer. Let me think again - the question asks which pair is NOT correctly matched. Carbamazepine does NOT treat hyponatremia; it causes it. So D is incorrect. The answer is B if B is also wrong, but B is correct. Actually, looking more carefully: 'Carbamazepine / dilutional hyponatremia' - carbamazepine is known to cause SIADH leading to hyponatremia, so it's the CAUSE, not the treatment. This pair is incorrectly matched. So the answer is B would only be correct if B is wrong. But B is correct. Therefore D is the answer.",
+    "keyConcept": "Carbamazepine causes hyponatremia (SIADH), it does not treat dilutional hyponatremia.",
+    "wrongOpt": "Phenytoin / digitalis arrhythmia",
+    "context": "d to re-read - option b says 'phenytoin / digitalis arrhythmia' which is a correct use. opti"
+  },
+  {
+    "id": "mcns2-ch10-pharma-q90",
+    "text": "An antiepileptic drug for absence seizures is :",
+    "options": [
+      "Diazepam",
+      "Carbamazepine",
+      "Ethosuximide",
+      "Phenytoin"
+    ],
+    "correctIndex": 2,
+    "explanation": "Ethosuximide is specifically used for absence seizures. Diazepam (A) is used for status epilepticus, not absence maintenance therapy. Carbamazepine (B) is for partial seizures and can actually worsen absence seizures. Phenytoin (D) is for generalized tonic-clonic and partial seizures, not absence. Ethosuximide works by blocking T-type calcium channels in thalamic neurons. The answer is C - ethosuximide is the antiepileptic for absence seizures.",
+    "keyConcept": "Ethosuximide selectively treats absence seizures via T-type calcium channel blockade.",
+    "wrongOpt": "Diazepam",
+    "context": "ly used for absence seizures. diazepam (a) is used for status epilep"
+  },
+  {
+    "id": "mcns2-ch10-pharma-q91",
+    "text": "The following antiepileptic drug is not enzyme inducer:",
+    "options": [
+      "Phenytoin",
+      "Carbamazepine",
+      "Valproate",
+      "Phenobarbital"
+    ],
+    "correctIndex": 0,
+    "explanation": "Valproate is NOT an enzyme inducer - it actually inhibits some CYP enzymes. Enzyme inducers include: phenytoin, carbamazepine, phenobarbital, and rifampin. These increase metabolism of other drugs (including OCPs, warfarin, many others). Valproate inhibits hepatic enzymes, leading to increased levels of drugs metabolized by CYP2C9 and glucuronidation. This is why valproate has many drug interactions (warfarin, lamotrigine, phenytoin levels affected). The answer is C - valproate is the exception (not an enzyme inducer).",
+    "keyConcept": "Valproate is an enzyme inhibitor, not an inducer, distinguishing it from phenytoin, carbamazepine, and phenobarbital.",
+    "wrongOpt": "Carbamazepine",
+    "context": " inducers include: phenytoin, carbamazepine, phenobarbital, and rifampin."
+  },
+  {
+    "id": "mcns2-ch10-pharma-q92",
+    "text": "An antiepileptic suitable for a pregnant woman with tonic clonic epilepsy is:",
+    "options": [
+      "Phenytoin",
+      "Carbamazepine",
+      "Valproate",
+      "Ethosuximide"
+    ],
+    "correctIndex": 1,
+    "explanation": "Carbamazepine is the safest antiepileptic option during pregnancy for tonic-clonic epilepsy. Valproate (C) is absolutely contraindicated (neural tube defects). Phenytoin (A) and valproate have teratogenic effects. Ethosuximide (D) is not effective for tonic-clonic seizures. Carbamazepine is FDA category D (positive evidence of risk) but among the available options, it's considered safer than valproate. The answer is B - carbamazepine is suitable for pregnant women with tonic-clonic epilepsy, though ideally lamotrigine would be preferred.",
+    "keyConcept": "Carbamazepine is the least teratogenic among traditional antiepileptics for tonic-clonic epilepsy in pregnancy.",
+    "wrongOpt": "Phenytoin",
+    "context": "icated (neural tube defects). phenytoin (a) and valproate have terato"
+  },
+  {
+    "id": "mcns2-ch10-pharma-q93",
+    "text": "The following antiepileptic drug is not matched with its adverse effect:",
+    "options": [
+      "Lamotrigine / Stevens Jonson syndrome",
+      "Gabapentin / Megaloblastic anemia",
+      "Topiramate / renal stone & Glaucoma",
+      "Levetiracetam / mood change & agitation"
+    ],
+    "correctIndex": 1,
+    "explanation": "Let me analyze each pairing: A) Lamotrigine / SJS - CORRECT; B) Gabapentin / Megaloblastic anemia - INCORRECT - gabapentin does not cause megaloblastic anemia (this is associated with phenytoin); C) Topiramate / renal stone & glaucoma - CORRECT (topiramate causes kidney stones and angle-closure glaucoma); D) Levetiracetam / mood change & agitation - CORRECT (psychiatric side effects including irritability). The answer is B - gabapentin is NOT associated with megaloblastic anemia; this is a mispairing with phenytoin instead.",
+    "keyConcept": "Gabapentin does not cause megaloblastic anemia; this side effect is associated with phenytoin.",
+    "wrongOpt": "Topiramate / renal stone & Glaucoma",
+    "context": "ssociated with phenytoin); c) topiramate / renal stone & glaucoma - correct (topiramate causes "
+  },
+  {
+    "id": "mcns2-ch10-pharma-q96",
+    "text": "The following antiepileptic drug acts by binding to VS2 A to modify glutamate release:",
+    "options": [
+      "Valproate",
+      "Levetiracetam",
+      "Lamotrigine",
+      "Gabapentin"
+    ],
+    "correctIndex": 1,
+    "explanation": "Levetiracetam acts by binding to synaptic vesicle protein 2A (SV2A) and modifying glutamate release. This is its unique mechanism distinguishing it from other antiepileptics. Valproate (A) - multiple mechanisms including GABA enhancement; lamotrigine (C) - sodium and calcium channel blockade; gabapentin (D) - alpha-2-delta calcium channel subunit binding. The answer is B - levetiracetam's mechanism involves SV2A binding to modify glutamate release.",
+    "keyConcept": "Levetiracetam's unique mechanism is SV2A binding to modulate glutamate release, distinguishing it from other antiepileptics.",
+    "wrongOpt": "Valproate",
+    "context": "it from other antiepileptics. valproate (a) - multiple mechanisms inc"
+  },
+  {
+    "id": "mcns2-ch10-pharma-q97",
+    "text": "One of the following drugs could be used sublingually in treatment of migraine attacks:",
+    "options": [
+      "Ergotamine",
+      "Triptan",
+      "Topiramate",
+      "Acetaminophen"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ergotamine is available as sublingual tablets for acute migraine treatment. Triptans (like sumatriptan) are available as nasal spray, subcutaneous injection, and oral tablets, but not typically sublingual. Topiramate (C) is a prophylactic, not acute treatment. Acetaminophen (D) is oral, not sublingual. The answer is A - ergotamine sublingual tablets are a recognized formulation for migraine treatment. However, triptans are more commonly used now due to better efficacy and fewer side effects.",
+    "keyConcept": "Ergotamine is available as sublingual tablets for acute migraine treatment, unlike triptans which are oral/nasal/injectable.",
+    "wrongOpt": "Triptan",
+    "context": "for acute migraine treatment. triptans (like sumatriptan) are avail"
+  },
+  {
+    "id": "mcns2-ch10-pharma-q98",
+    "text": "The following antipsychotic drug is preferred in children because it has less effect on cognitive function:",
+    "options": [
+      "Olanzapine",
+      "Aripiprazole",
+      "Quetiapine",
+      "Thioridazine"
+    ],
+    "correctIndex": 3,
+    "explanation": "Thioridazine has the least cognitive impairment among typical antipsychotics, making it potentially preferred in children. However, it has significant cardiac toxicity (QT prolongation). Among the options, thioridazine (D) is classically associated with fewer cognitive effects than haloperidol or chlorpromazine. Aripiprazole (B) is an atypical with relatively low sedation. Quetiapine (C) is also relatively low cognitive effect. The answer is D - thioridazine is preferred in children due to less cognitive impairment, though its cardiac effects limit use. Note: Thioridazine is now rarely used due to retinal toxicity and cardiac effects.",
+    "keyConcept": "Thioridazine has relatively low cognitive impairment among antipsychotics, though cardiac toxicity limits its use.",
+    "wrongOpt": "Aripiprazole",
+    "context": "aloperidol or chlorpromazine. aripiprazole (b) is an atypical with relat"
+  },
+  {
+    "id": "mcns2-ch10-pharma-q99",
+    "text": "The following is not true about antipsychotics:",
+    "options": [
+      "Control symptoms of schizophrenia without affecting the basic disorder",
+      "Low potency drugs are preferred in elderly & cardiac patients",
+      "Thioridazine may block cardiac conduction & increase QT interval",
+      "They don’t induce dependence"
+    ],
+    "correctIndex": 0,
+    "explanation": "Low potency antipsychotics (like chlorpromazine) are actually preferred in elderly and cardiac patients because they have less EPS, not because of cardiac effects. Option B is incorrect. Let me analyze: A) Control symptoms without affecting basic disorder - TRUE (antipsychotics are symptomatic, not curative); C) Thioridazine may block cardiac conduction and increase QT - TRUE; D) They don't induce dependence - TRUE. Option B states 'low potency drugs are preferred in elderly & cardiac patients' - this is actually TRUE (they have better cardiac profile and fewer EPS). Wait, the question asks which is NOT true. Let me reconsider. Actually, thioridazine has significant cardiac effects (QT prolongation), so it's NOT preferred in cardiac patients. But the statement in B is about low potency drugs being preferred, which is true. The NOT TRUE statement might be about the mechanism or effects. Actually, re-reading: Option A says they 'control symptoms without affecting basic disorder' - this IS true. If all A, C, D are true and B is also true, then maybe the answer relates to what 'low potency' means. Perhaps the statement about low potency being preferred in cardiac patients is considered incorrect because these drugs have other issues (orthostatic hypotension, anticholinergic effects). But standard teaching is that low potency antipsychotics ARE preferred in elderly due to lower EPS. I'll assume there's an error or the answer is related to the cardiac effects of thioridazine making it NOT preferred. Actually, looking at this again, maybe A is wrong - antipsychotics DO affect the basic disorder somewhat (especially atypicals). Or perhaps the answer is B if considering that all antipsychotics have various issues. Given typical exam patterns, I'll go with A being the answer if the question is about whether antipsychotics truly don't affect the underlying disorder. But that's a philosophical point. I'll choose B as the answer if the question implies that cardiac patients should avoid low-potency drugs due to orthostatic hypotension. Actually, let me reconsider - thioridazine (low potency) has QT prolongation, making it dangerous in cardiac patients, contradicting B. So B is the wrong statement.",
+    "keyConcept": "Low potency antipsychotics like thioridazine are NOT preferred in cardiac patients due to QT prolongation and other cardiac effects.",
+    "wrongOpt": "Low potency drugs are preferred in elderly & cardiac patient",
+    "context": "ence - true. option b states 'low potency drugs are preferred in elderly & cardiac patients' - this is actually true (the"
+  },
+  {
+    "id": "mcns2-ch10-pharma-q102",
+    "text": "The following drug is 1st choice in treatment of psychosis in Parkinson disease:",
+    "options": [
+      "Haloperidol",
+      "Risperidone",
+      "Aripiprazole",
+      "Quetiapine"
+    ],
+    "correctIndex": 3,
+    "explanation": "Quetiapine is the preferred antipsychotic for psychosis in Parkinson's disease because it has the lowest EPS risk among antipsychotics and doesn't worsen parkinsonian symptoms. Haloperidol (A) and risperidone (B) can worsen parkinsonism. Aripiprazole (C) may also worsen motor symptoms in some patients. Quetiapine's low D2 affinity and rapid dissociation from D2 receptors results in minimal motor side effects. Pimavanserin is also FDA-approved for Parkinson's psychosis but wasn't listed. The answer is D - quetiapine is the first choice for psychosis in Parkinson's disease.",
+    "keyConcept": "Quetiapine is preferred in Parkinson's disease psychosis due to its minimal extrapyramidal effects and low propensity to worsen motor symptoms.",
+    "wrongOpt": "Haloperidol",
+    "context": "worsen parkinsonian symptoms. haloperidol (a) and risperidone (b) can w"
+  },
+  {
+    "id": "mcns2-ch10-pharma-q103",
+    "text": "The following antipsychotic drug is preferred in children suffering from autism:",
+    "options": [
+      "Olanzapine",
+      "Aripiprazole",
+      "Quetiapine",
+      "Thioridazine"
+    ],
+    "correctIndex": 1,
+    "explanation": "Aripiprazole is an atypical antipsychotic with a favorable side effect profile, making it suitable for children with autism spectrum disorders. It has lower EPS risk and less sedation than older antipsychotics. Olanzapine (A) causes significant weight gain/metabolic syndrome. Quetiapine (C) has significant sedation. Thioridazine (D) has cardiac toxicity. Aripiprazole is FDA-approved for irritability in autism in children. Its partial agonist activity at D2 and 5-HT1A receptors provides efficacy with tolerability. The answer is B - aripiprazole is preferred for autism-related irritability.",
+    "keyConcept": "Aripiprazole is FDA-approved for autism irritability in children due to its favorable efficacy and side effect profile.",
+    "wrongOpt": "Olanzapine",
+    "context": "on than older antipsychotics. olanzapine (a) causes significant weight"
+  },
+  {
+    "id": "mcns2-ch10-pharma-q104",
+    "text": "Which drugs are classified as opioid antitussives?",
+    "options": [
+      "Codeine",
+      "Dextromethorphan",
+      "Both A and B",
+      "Neither A nor B"
+    ],
+    "correctIndex": 0,
+    "explanation": "Opioid antitussives include: codeine and dextromethorphan. These act on the cough center in the medulla. Codeine is a weak opioid agonist used for cough and pain. Dextromethorphan is a non-opioid that acts on sigma receptors and NMDA receptors.选项C正确. The answer is C. These are central cough suppressants.",
+    "keyConcept": "Codeine and dextromethorphan are opioid antitussives acting on the medullary cough center.",
+    "wrongOpt": "Dextromethorphan",
+    "context": "tussives include: codeine and dextromethorphan. these act on the cough cente"
+  },
+  {
+    "id": "mcns2-ch10-pharma-q105",
+    "text": "Name some strong pure agonists opioids.",
+    "options": [
+      "Morphine",
+      "Fentanyl",
+      "Methadone",
+      "All of the above"
+    ],
+    "correctIndex": 0,
+    "explanation": "Strong pure agonist opioids include: morphine, heroin, fentanyl, methadone, meperidine, hydromorphone, oxymorphone.选项D正确. The answer is D. These have full agonist activity at mu opioid receptors, providing maximum analgesia but also respiratory depression, sedation, and dependence potential.",
+    "keyConcept": "Morphine, fentanyl, methadone are strong pure mu opioid agonists - maximum analgesia with respiratory depression risk.",
+    "wrongOpt": "Fentanyl",
+    "context": "ds include: morphine, heroin, fentanyl, methadone, meperidine, hydro"
+  },
+  {
+    "id": "mcns2-ch10-pharma-q107",
+    "text": "Which drugs are classified as opioid antidiarrheals?",
+    "options": [
+      "Loperamide",
+      "Diphenoxylate",
+      "Both A and B",
+      "Neither A nor B"
+    ],
+    "correctIndex": 0,
+    "explanation": "Opioid antidiarrheals include: loperamide (Imodium), diphenoxylate (with atropine as Lomotil), and opium tincture. These act on mu receptors in the myenteric plexus, decreasing motility and secretion.选项C正确. The answer is C. Loperamide does not cross BBB significantly, avoiding CNS effects.",
+    "keyConcept": "Loperamide and diphenoxylate are opioid antidiarrheals - mu receptor agonists in the gut decreasing motility.",
+    "wrongOpt": "Diphenoxylate",
+    "context": "nclude: loperamide (imodium), diphenoxylate (with atropine as lomotil), a"
+  },
+  {
+    "id": "mcns2-ch10-pharma-q110",
+    "text": "What are the first choice agents in early Parkinson’s disease?",
+    "options": [
+      "L-dopa/carbidopa",
+      "Non-ergot dopamine agonists (Rotigotine)",
+      "MAO-B inhibitors",
+      "All of the above"
+    ],
+    "correctIndex": 1,
+    "explanation": "First choice agents in early Parkinson's disease: levodopa/carbidopa combinations (most effective for motor symptoms) and dopamine agonists (ropinirole, pramipexole) as alternatives. MAO-B inhibitors (selegiline) may be used early.选项D正确. The answer is D. Treatment choice depends on age, symptom severity, and cognitive status.",
+    "keyConcept": "Levodopa/carbidopa and dopamine agonists are first-line for early PD - L-dopa is most effective, agonists delay motor complications.",
+    "wrongOpt": "MAO-B inhibitors",
+    "context": "pramipexole) as alternatives. mao-b inhibitors (selegiline) may be used earl"
+  },
+  {
+    "id": "mcns2-ch10-pharma-q114",
+    "text": "What are the classic antiepileptic drugs?",
+    "options": [
+      "Phenytoin",
+      "Carbamazepine",
+      "Valproate",
+      "All of the above"
+    ],
+    "correctIndex": 0,
+    "explanation": "Classic antiepileptic drugs include: phenytoin, carbamazepine, valproic acid, ethosuximide, phenobarbital, and benzodiazepines. These are first-generation drugs with well-established efficacy.选项D正确. The answer is D. They have more drug interactions and side effects compared to newer agents.",
+    "keyConcept": "Phenytoin, carbamazepine, valproate, ethosuximide are classic antiepileptics - more side effects and interactions than newer drugs.",
+    "wrongOpt": "Carbamazepine",
+    "context": "tic drugs include: phenytoin, carbamazepine, valproic acid, ethosuximide,"
+  },
+  {
+    "id": "mcns2-ch10-pharma-q115",
+    "text": "What are the newer antiepileptic drugs?",
+    "options": [
+      "Lamotrigine",
+      "Levetiracetam",
+      "Oxcarbazepine",
+      "All of the above"
+    ],
+    "correctIndex": 0,
+    "explanation": "Newer antiepileptic drugs include: lamotrigine, levetiracetam, topiramate, gabapentin, pregabalin, vigabatrin, tiagabine, oxcarbazepine, lacosamide, and zonimide. These have improved side effect profiles.选项D正确. The answer is D. They are often used as adjuncts or alternatives to classic drugs.",
+    "keyConcept": "Lamotrigine, levetiracetam, topiramate are newer antiepileptics - better tolerated with fewer drug interactions.",
+    "wrongOpt": "Levetiracetam",
+    "context": "c drugs include: lamotrigine, levetiracetam, topiramate, gabapentin, preg"
+  },
+  {
+    "id": "mcns2-ch10-pharma-q118",
+    "text": "Which class of antidepressants is the first choice for initial therapy?",
+    "options": [
+      "MAOIs",
+      "SSRIs",
+      "TCAs",
+      "Atypical antipsychotics"
+    ],
+    "correctIndex": 1,
+    "explanation": "SSRIs (fluoxetine, sertraline, paroxetine, citalopram, escitalopram) are first-choice for initial therapy due to: efficacy, once-daily dosing, safety in overdose, and favorable side effect profile.选项B正确. The answer is B. They are better tolerated than TCAs and MAOIs.",
+    "keyConcept": "SSRIs are first-line antidepressants - safe, effective, once-daily, and favorable side effect profile.",
+    "wrongOpt": "MAOIs",
+    "context": "etter tolerated than tcas and maois."
+  },
+  {
+    "id": "mcns2-ch10-pharma-q119",
+    "text": "Which class of antidepressants is reserved for resistant cases?",
+    "options": [
+      "MAOIs",
+      "SSRIs",
+      "TCAs",
+      "Atypical antipsychotics"
+    ],
+    "correctIndex": 0,
+    "explanation": "MAOI antidepressants are reserved for resistant cases that fail other antidepressants. They require careful monitoring and dietary restrictions.选项C正确. The answer is C. They are used when SSRIs, SNRIs, and TCAs have failed due to their complexity and risk.",
+    "keyConcept": "MAOIs are reserved for treatment-resistant depression - require tyramine diet and careful monitoring.",
+    "wrongOpt": "SSRIs",
+    "context": "swer is c. they are used when ssris, snris, and tcas have failed "
+  },
+  {
+    "id": "mcns2-ch10-pharma-q121",
+    "text": "What are the cholinesterase enzyme inhibitors used in the treatment of Alzheimer disease?",
+    "options": [
+      "Donepezil",
+      "Rivastigmine",
+      "Galantamine",
+      "All of the above"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cholinesterase inhibitors for Alzheimer's: donepezil (Aricept), rivastigmine (Exelon), galantamine (Razadyne). These increase acetylcholine in the brain.选项D正确. The answer is D. They provide modest symptomatic benefit.",
+    "keyConcept": "Donepezil, rivastigmine, galantamine are cholinesterase inhibitors - modestly effective in Alzheimer's.",
+    "wrongOpt": "Rivastigmine",
+    "context": "eimer's: donepezil (aricept), rivastigmine (exelon), galantamine (razady"
+  },
+  {
+    "id": "mcns2-ch10-pharma-q126",
+    "text": "What are the typical antipsychotics?",
+    "options": [
+      "Chlorpromazine",
+      "Thioridazine",
+      "Haloperidol",
+      "All of the above"
+    ],
+    "correctIndex": 0,
+    "explanation": "Typical antipsychotics include: haloperidol, chlorpromazine, thioridazine, fluphenazine, perphenazine, and flupentixol.选项D正确. The answer is D. They have high D2 affinity and significant EPS risk.",
+    "keyConcept": "Haloperidol, chlorpromazine, thioridazine are typical antipsychotics - high EPS risk from D2 blockade.",
+    "wrongOpt": "Thioridazine",
+    "context": " haloperidol, chlorpromazine, thioridazine, fluphenazine, perphenazine, "
+  },
+  {
+    "id": "mcns2-ch10-pharma-q127",
+    "text": "What are the atypical antipsychotics?",
+    "options": [
+      "Risperidone",
+      "Aripiprazole",
+      "Clozapine",
+      "All of the above"
+    ],
+    "correctIndex": 0,
+    "explanation": "Atypical antipsychotics include: clozapine, olanzapine, risperidone, quetiapine, ziprasidone, aripiprazole, paliperidone.选项D正确. The answer is D. They have lower EPS risk but metabolic side effects.",
+    "keyConcept": "Clozapine, olanzapine, risperidone are atypicals - lower EPS but weight gain, metabolic syndrome risk.",
+    "wrongOpt": "Aripiprazole",
+    "context": "one, quetiapine, ziprasidone, aripiprazole, paliperidone.选项d正确. the answ"
+  },
+  {
+    "id": "mcns2-ch10-pharma-q129",
+    "text": "How is opioid abuse managed?",
+    "options": [
+      "Methadone (oral) or buprenorphine (SL)",
+      "Naltrexone",
+      "Symptomatic treatment of withdrawal symptoms",
+      "All of the above"
+    ],
+    "correctIndex": 0,
+    "explanation": "Opioid abuse management: detoxification (methadone, buprenorphine maintenance), behavioral therapy, naltrexone (opioid antagonist) to prevent relapse, and support groups.选项D正确. The answer is D. Methadone maintenance is gold standard for opioid dependence.",
+    "keyConcept": "Opioid dependence: methadone/buprenorphine maintenance, naltrexone, behavioral therapy - comprehensive approach.",
+    "wrongOpt": "Naltrexone",
+    "context": "tenance), behavioral therapy, naltrexone (opioid antagonist) to preven"
+  },
+  {
+    "id": "mcns2-ch10-pharma-q135",
+    "text": "Which of the following antiepileptic drugs is not an enzyme inducer?",
+    "options": [
+      "Phenytoin",
+      "Carbamazepine",
+      "Valproate",
+      "Phenobarbital"
+    ],
+    "correctIndex": 0,
+    "explanation": "Valproate is not a CYP enzyme inducer; it actually inhibits some cytochrome P450 enzymes. Phenytoin, carbamazepine, and phenobarbital are all enzyme inducers that increase metabolism of other drugs.",
+    "keyConcept": "Valproate is NOT an enzyme inducer (unlike phenytoin, carbamazepine, phenobarbital)",
+    "wrongOpt": "Carbamazepine",
+    "context": "rome p450 enzymes. phenytoin, carbamazepine, and phenobarbital are all en"
+  },
+  {
+    "id": "mcns2-ch10-pharma-q137",
+    "text": "Which of the following anesthetic agents is not acting through increase GABA activity?",
+    "options": [
+      "Halothane",
+      "Propofol",
+      "Ketamine",
+      "Isoflurane"
+    ],
+    "correctIndex": 2,
+    "explanation": "Ketamine acts as an NMDA receptor antagonist, not through GABA enhancement. Halothane, propofol, and isoflurane all enhance GABA-A receptor activity (inhibitory neurotransmitter).",
+    "keyConcept": "Ketamine acts on NMDA receptors, not through GABA enhancement",
+    "wrongOpt": "Halothane",
+    "context": "not through gaba enhancement. halothane, propofol, and isoflurane all"
+  },
+  {
+    "id": "mcns2-ch10-pharma-q138",
+    "text": "The following opioid drug should be avoided in patient taking MAOI:",
+    "options": [
+      "Morphine",
+      "Fentanyl",
+      "Meperidine",
+      "Codeine"
+    ],
+    "correctIndex": 2,
+    "explanation": "Meperidine (pethidine) should be avoided with MAOIs due to risk of serotonin syndrome and severe adverse reactions. It has serotonergic properties unlike other opioids. Morphine, fentanyl, and codeine do not have this specific interaction.",
+    "keyConcept": "Meperidine contraindicated with MAOIs (serotonin syndrome risk)",
+    "wrongOpt": "Morphine",
+    "context": "perties unlike other opioids. morphine, fentanyl, and codeine do not"
+  },
+  {
+    "id": "mcns2-ch10-pharma-q139",
+    "text": "The following antiepileptic drug is not preferred in pregnancy:",
+    "options": [
+      "Lamotrigine",
+      "Carbamazepine",
+      "Valproate",
+      "All of the above"
+    ],
+    "correctIndex": 2,
+    "explanation": "Valproate is teratogenic (neural tube defects) and should be avoided in pregnancy. Lamotrigine and carbamazepine are safer options but still require careful risk-benefit analysis. All AEDs have some risk.",
+    "keyConcept": "Valproate is most teratogenic AED, not preferred in pregnancy",
+    "wrongOpt": "Lamotrigine",
+    "context": "ould be avoided in pregnancy. lamotrigine and carbamazepine are safer o"
+  },
+  {
+    "id": "mcns2-ch10-pharma-q140",
+    "text": "The following analgesic is not recommended to be taken in renal failure or more than 48 hours for fear of convulsions:",
+    "options": [
+      "Morphine",
+      "Tramadol",
+      "Meperidine",
+      "Codeine"
+    ],
+    "correctIndex": 2,
+    "explanation": "Meperidine (pethidine) should be avoided in renal failure and not used for more than 48 hours due to accumulation of normeperidine, which causes seizures. Morphine, codeine, and tramadol are safer alternatives.",
+    "keyConcept": "Meperidine contraindicated in renal failure (normeperidine accumulation causes seizures)",
+    "wrongOpt": "Morphine",
+    "context": "idine, which causes seizures. morphine, codeine, and tramadol are sa"
+  },
+  {
+    "id": "mcns2-ch10-pharma-q141",
+    "text": "The following antiepileptic drug is not an enzyme inducer:",
+    "options": [
+      "Phenytoin",
+      "Carbamazepine",
+      "Valproate",
+      "Phenobarbital"
+    ],
+    "correctIndex": 2,
+    "explanation": "Valproate is not a CYP enzyme inducer; it actually inhibits some cytochrome P450 enzymes. Phenytoin, carbamazepine, and phenobarbital are all potent enzyme inducers.",
+    "keyConcept": "Valproate NOT an enzyme inducer (inhibits CYP enzymes)",
+    "wrongOpt": "Phenytoin",
+    "context": "some cytochrome p450 enzymes. phenytoin, carbamazepine, and phenobarb"
+  },
+  {
+    "id": "mcns2-ch10-pharma-q145",
+    "text": "Which anti‑Parkinsonian drug commonly produces atropine‑like adverse effects (dry mouth, blurred vision)?",
+    "options": [
+      "Levodopa",
+      "Bromocriptine",
+      "Benztropine",
+      "Amantadine",
+      "Selegiline"
+    ],
+    "correctIndex": 0,
+    "explanation": "Benztropine is an anticholinergic anti-Parkinsonian drug that produces peripheral atropine-like side effects including dry mouth, blurred vision, constipation, and urinary retention.",
+    "keyConcept": "Anticholinergic Parkinson drugs",
+    "wrongOpt": "Benztropine",
+    "context": "benztropine is an anticholinergic anti-pa"
+  },
+  {
+    "id": "mcns2-ch10-pharma-q147",
+    "text": "Which drug is used for tremors (in Parkinson’s)?",
+    "options": [
+      "Levodopa",
+      "Bromocriptine",
+      "Benztropine",
+      "Amantadine",
+      "Selegiline"
+    ],
+    "correctIndex": 0,
+    "explanation": "Benztropine (anticholinergic) is particularly effective for tremor in Parkinson's disease, acting by blocking excessive cholinergic activity in the striatum.",
+    "keyConcept": "Parkinsonian tremor treatment",
+    "wrongOpt": "Benztropine",
+    "context": "benztropine (anticholinergic) is particul"
+  },
+  {
+    "id": "mcns2-ch10-pathology-q5",
+    "text": "What are the gross characteristics of Multiple Sclerosis lesions?",
+    "options": [
+      "Multiple, well-circumscribed",
+      "Gray-tan plaques near the ventricles and in various areas of the CNS.",
+      "Both A and B",
+      "None of the above"
+    ],
+    "correctIndex": 1,
+    "explanation": "Multiple sclerosis lesions appear as multiple, well-circumscribed gray-tan plaques near ventricles and throughout CNS white matter. These plaques represent areas of demyelination. Option C 'Both A and B' is correct. The lesions are typically periventricular but can occur anywhere in CNS. The answer is C. MS is characterized by disseminated plaques in time and space.",
+    "keyConcept": "MS lesions appear as gray-tan plaques near ventricles - the classic radiological and pathological finding.",
+    "wrongOpt": "Multiple, well-circumscribed",
+    "context": "multiple sclerosis lesions appear as m"
+  },
+  {
+    "id": "mcns2-ch10-pathology-q8",
+    "text": "What imaging studies are mandatory for Multiple Sclerosis diagnosis?",
+    "options": [
+      "MRI brain",
+      "CT scan",
+      "PET scan",
+      "Ultrasound"
+    ],
+    "correctIndex": 0,
+    "explanation": "MRI of the brain is MANDATORY for MS diagnosis - it shows plaques as hyperintense lesions on T2/FLAIR images. CT scan (B) is not sensitive for MS. PET (C) and ultrasound (D) are not primary diagnostic tools. MRI demonstrates dissemination in space (multiple lesions) and time (gadolinium enhancement of active lesions). The answer is A. McDonald criteria require MRI evidence of CNS lesions.",
+    "keyConcept": "MRI brain is essential for MS diagnosis, demonstrating white matter lesions that fulfill dissemination in space and time.",
+    "wrongOpt": "CT scan",
+    "context": "e lesions on t2/flair images. ct scan (b) is not sensitive for ms. "
+  },
+  {
+    "id": "mcns2-ch10-pathology-q10",
+    "text": "What is the location and symptoms of an epidural hematoma?",
+    "options": [
+      "Between the skull and dura",
+      "Symptoms include lucid interval before loss of consciousness and possible transtentorial herniation.",
+      "Both A and B",
+      "None of the above"
+    ],
+    "correctIndex": 1,
+    "explanation": "Epidural hematoma is located between skull and dura (A). Classic presentation: lucid interval (period of consciousness after trauma) followed by rapid neurological deterioration and possible transtentorial herniation (B). This is a neurosurgical emergency. Option C 'Both A and B' is correct. The lucid interval occurs as blood accumulates, raising intracranial pressure. The answer is C. Mortality is high without surgical evacuation.",
+    "keyConcept": "Epidural hematoma presents with lucid interval followed by rapid deterioration - a neurosurgical emergency.",
+    "wrongOpt": "Both A and B",
+    "context": "surgical emergency. option c 'both a and b' is correct. the lucid interv"
+  },
+  {
+    "id": "mcns2-ch10-pathology-q11",
+    "text": "What is the location and symptoms of a subdural hematoma?",
+    "options": [
+      "Between the dura and arachnoid",
+      "Symptoms include slow venous bleeding with delayed onset of headache and confusion.",
+      "Both A and B",
+      "None of the above"
+    ],
+    "correctIndex": 1,
+    "explanation": "Subdural hematoma is located between dura and arachnoid (A). Symptoms include slow venous bleeding with delayed onset of headache, confusion, and altered consciousness (B). This differs from arterial epidural hematoma which presents acutely. Option C 'Both A and B' is correct. Acute subdural hematoma presents within 72 hours; chronic subdural may present weeks after injury. The answer is C. Subdural hematoma crosses suture lines unlike epidural.",
+    "keyConcept": "Subdural hematoma is venous bleeding between dura and arachnoid with delayed, progressive symptoms.",
+    "wrongOpt": "Both A and B",
+    "context": "h presents acutely. option c 'both a and b' is correct. acute subdural h"
+  },
+  {
+    "id": "mcns2-ch10-pathology-q12",
+    "text": "Which vessel is most commonly involved in an epidural hematoma?",
+    "options": [
+      "Middle meningeal artery",
+      "Anterior cerebral artery",
+      "Posterior cerebral artery",
+      "Basilar artery"
+    ],
+    "correctIndex": 0,
+    "explanation": "The middle meningeal artery (branch of maxillary artery) is most commonly involved in epidural hematoma, usually from temporal bone fracture. It courses through the middle cranial fossa. The answer is A. Anterior cerebral artery (B), posterior cerebral artery (C), and basilar artery (D) are not typically involved in epidural hematoma. The middle meningeal artery injury causes rapid arterial bleeding and quick progression.",
+    "keyConcept": "Middle meningeal artery injury causes epidural hematoma - the most common arterial source in head trauma.",
+    "wrongOpt": "Anterior cerebral artery",
+    "context": "anial fossa. the answer is a. anterior cerebral artery (b), posterior cerebral arter"
+  },
+  {
+    "id": "mcns2-ch10-pathology-q17",
+    "text": "What are the key microscopic features of oligodendrogliomas WHO grade II?",
+    "options": [
+      "Sheets of regular cells with rounded nuclei containing finely granular rounded chromatin surrounded by a clear halo of cytoplasm and anastomosing capillaries",
+      "Highly cellular with marked nuclear atypia",
+      "Presence of Rosenthal fibers",
+      "Presence of eosinophilic granular bodies"
+    ],
+    "correctIndex": 0,
+    "explanation": "Oligodendroglioma WHO grade II shows: sheets of regular cells with rounded nuclei containing finely granular rounded chromatin ('fried egg' appearance), surrounded by clear halo (perinuclear halo), and characteristic 'chicken-wire' or anastomosing capillary network. Option A is CORRECT. Highly cellular with marked nuclear atypia (B) suggests higher grade (anaplastic). Rosenthal fibers (C) and eosinophilic granular bodies (D) are seen in pilocytic astrocytoma. The answer is A. The 'fried egg' cells and capillary network are classic histological features.",
+    "keyConcept": "Oligodendrogliomas show 'fried egg' cells with perinuclear halos and 'chicken-wire' capillary network.",
+    "wrongOpt": "Highly cellular with marked nuclear atypia",
+    "context": "network. option a is correct. highly cellular with marked nuclear atypia (b) suggests higher grade (an"
+  },
+  {
+    "id": "mcns2-ch10-pathology-q19",
+    "text": "Where are pilocytic astrocytomas most commonly located?",
+    "options": [
+      "Cerebral hemispheres",
+      "Cerebellum",
+      "Brainstem",
+      "Spinal cord"
+    ],
+    "correctIndex": 1,
+    "explanation": "Pilocytic astrocytomas are most commonly located in the CEREBELLUM (posterior fossa). They also occur in optic pathways, brainstem, and spinal cord. The cerebellar location is classic, especially in children. The answer is B. This is the most common pediatric brain tumor and has excellent prognosis when completely resected.",
+    "keyConcept": "Pilocytic astrocytoma occurs most commonly in the cerebellum in children - excellent prognosis with resection.",
+    "wrongOpt": "Brainstem",
+    "context": "also occur in optic pathways, brainstem, and spinal cord. the cerebel"
+  },
+  {
+    "id": "mcns2-ch10-pathology-q26",
+    "text": "The cause of death in rabies is:",
+    "options": [
+      "Muscle paralysis.",
+      "Heart failure.",
+      "Paralysis of respiratory muscles.",
+      "Respiratory center failure."
+    ],
+    "correctIndex": 2,
+    "explanation": "Death in rabies is due to respiratory muscle paralysis (bulbar palsy affecting respiratory muscles), not heart failure or direct respiratory center failure. The virus destroys motor neurons in the brainstem.",
+    "keyConcept": "Rabies death from respiratory muscle paralysis (bulbar palsy)",
+    "wrongOpt": "Respiratory center failure.",
+    "context": ", not heart failure or direct respiratory center failure. the virus destroys motor neur"
+  },
+  {
+    "id": "mcns2-ch10-microbiology-q1",
+    "text": "which of the following false about the symptoms of meningitis",
+    "options": [
+      "Decrease appetite",
+      "Unsensitivity to light",
+      "Seizures",
+      "None of the above"
+    ],
+    "correctIndex": 0,
+    "explanation": "Meningitis symptoms include: headache, fever, neck stiffness, photophobia (sensitivity to light), seizures, irritability, nausea/vomiting, and decreased appetite. INCREASED APPETITE is NOT a symptom of meningitis. The body typically suppresses appetite during infection. The answer is C - increased appetite is false about meningitis symptoms. Meningitis causes systemic illness with fever and malaise that would decrease, not increase, appetite.",
+    "keyConcept": "Meningitis causes decreased appetite, not increased appetite - other symptoms include headache, fever, neck stiffness, photophobia.",
+    "wrongOpt": "Seizures",
+    "context": "hobia (sensitivity to light), seizures, irritability, nausea/vomitin"
+  },
+  {
+    "id": "mcns2-ch10-microbiology-q2",
+    "text": "2-year-old child has a fever, stiff neck & is irritable. Gram stain of the Spinal fluid reveals G-ve small pleomorphic coccobacillary organisms.",
+    "options": [
+      "Hemophilus influenzae",
+      "E. coli",
+      "Streptococcus pneumoniae",
+      "Staph. Golden"
+    ],
+    "correctIndex": 0,
+    "explanation": "A 2-year-old with fever, stiff neck, irritability, and Gram-negative diplococci suggests Hemophilus influenzae type b (Hib) meningitis. H. influenzae is a small gram-negative coccobacillus. E. coli (B) is gram-negative rods, not diplococci. Streptococcus pneumoniae (C) is gram-positive diplococci. Staph aureus (D) is gram-positive cocci. The clinical picture (young child, meningitis signs, gram-negative) is classic for Hib. However, Hib meningitis has become rare due to vaccination. The answer is A - Hemophilus influenzae.",
+    "keyConcept": "Hemophilus influenzae type b causes meningitis in unvaccinated young children, appearing as small gram-negative coccobacilli.",
+    "wrongOpt": "E. coli",
+    "context": " gram-negative coccobacillus. e. coli (b) is gram-negative rods, no"
+  },
+  {
+    "id": "mcns2-ch10-microbiology-q3",
+    "text": "The following is best used for treatment of cryptococcal meningitis:",
+    "options": [
+      "Amphotericin B",
+      "Nystatin",
+      "Fluconazole",
+      "A & c in combination"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cryptococcal meningitis treatment: Amphotericin B + Fluconazole combination is the treatment of choice for induction, followed by fluconazole consolidation. Amphotericin B (A) alone is toxic; fluconazole (C) alone is not sufficient for induction. The combination provides synergistic effect with amphotericin B's rapid fungicidal action and fluconazole's CNS penetration. For HIV patients, lifelong fluconazole maintenance is needed. The answer is D - A & C in combination. Standard regimen: Amphotericin B + flucytosine initially, then fluconazole.",
+    "keyConcept": "Cryptococcal meningitis requires Amphotericin B + Fluconazole induction therapy, followed by fluconazole consolidation/maintenance.",
+    "wrongOpt": "Fluconazole",
+    "context": "s treatment: amphotericin b + fluconazole combination is the treatment "
+  },
+  {
+    "id": "mcns2-ch10-microbiology-q5",
+    "text": "spasm of throat muscle due to rabies lead to \n\nA) Hydrophobia \nB) Increased salivation \nC) Paralysis \nD) None of the above",
+    "options": [
+      "Hydrophobia",
+      "Increased salivation",
+      "Paralysis",
+      "None of the above"
+    ],
+    "correctIndex": 0,
+    "explanation": "Spasm of throat muscles in rabies leads to HYDROPHOBIA (fear of water). This occurs because the virus affects the medulla, causing painful spasms of pharyngeal muscles when attempting to swallow. A) Hydrophobia - TRUE (pathognomonic for rabies); B) Increased salivation - TRUE (but due to difficulty swallowing, not the primary spasm-related symptom); C) Paralysis - can occur in 'dumb' rabies. The answer is A - hydrophobia is the classic manifestation of rabies pharyngeal spasm. Patients cannot swallow due to painful spasms when attempting to drink.",
+    "keyConcept": "Hydrophobia (fear of water due to painful pharyngeal spasms) is pathognomonic for rabies encephalitis.",
+    "wrongOpt": "Increased salivation",
+    "context": "pathognomonic for rabies); b) increased salivation - true (but due to difficulty"
+  },
+  {
+    "id": "mcns2-ch10-microbiology-q9",
+    "text": "The best rabies vaccine used now in humans is \n\nA) Human diploid cell vaccine \nB) Simple vaccine \nC) Duck embryo vaccine \nD) Flurry vaccine",
+    "options": [
+      "Human diploid cell vaccine",
+      "Simple vaccine",
+      "Duck embryo vaccine",
+      "Flurry vaccine"
+    ],
+    "correctIndex": 0,
+    "explanation": "The best rabies vaccine is the Human Diploid Cell Vaccine (HDCV). A) HDCV - CORRECT (inactivated virus grown in human diploid cells); B) Simple vaccine - not a standard term; C) Duck embryo vaccine - older vaccine with more side effects; D) Flurry vaccine - not a recognized rabies vaccine. HDCV is the gold standard - highly immunogenic with minimal side effects. The answer is A. Modern alternatives include purified chick embryo cell (PCEC) vaccine. These are all inactivated virus vaccines given IM (deltoid, not gluteus).",
+    "keyConcept": "Human Diploid Cell Vaccine (HDCV) is the gold standard rabies vaccine - safe and highly immunogenic.",
+    "wrongOpt": "Simple vaccine",
+    "context": "n in human diploid cells); b) simple vaccine - not a standard term; c) duc"
+  },
+  {
+    "id": "mcns2-ch10-microbiology-q11",
+    "text": "The presence of Negri bodies in host cell is characteristic of \n\nA) Mumps \nB) Rabies \nC) Infectious mononucleosis \nD) Aseptic meningitis.",
+    "options": [
+      "Mumps",
+      "Rabies",
+      "Infectious mononucleosis",
+      "Aseptic meningitis."
+    ],
+    "correctIndex": 1,
+    "explanation": "Negri bodies are characteristic of RABIES. They are eosinophilic intracytoplasmic inclusion bodies found in neurons, especially in rabies-infected brain tissue. A) Mumps - causes parotitis, not associated with Negri bodies; B) Rabies - CORRECT (Negri bodies are pathognomonic); C) Infectious mononucleosis - associated with atypical lymphocytes, not Negri bodies; D) Aseptic meningitis - caused by various viruses (enterovirus, HSV), not associated with Negri bodies. The answer is B - Negri bodies are pathognomonic for rabies infection.",
+    "keyConcept": "Negri bodies are eosinophilic cytoplasmic inclusions in neurons that are pathognomonic for rabies.",
+    "wrongOpt": "Mumps",
+    "context": "ies-infected brain tissue. a) mumps - causes parotitis, not assoc"
+  }
+]

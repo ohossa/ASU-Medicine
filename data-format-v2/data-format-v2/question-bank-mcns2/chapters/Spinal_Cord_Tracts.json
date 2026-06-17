@@ -1,0 +1,1390 @@
+{
+  "schemaVersion": 1,
+  "meta": {
+    "moduleCode": "MCNS-2",
+    "moduleName": "Central Nervous System",
+    "year": 2,
+    "semester": 2,
+    "creditPoints": 6,
+    "totalMarks": 200,
+    "keywords": [
+      "CNS",
+      "Neuroanatomy",
+      "Neuropharmacology",
+      "Neurophysiology",
+      "Neuropathology"
+    ]
+  },
+  "chapters": [
+    {
+      "id": 7,
+      "title": "Spinal Cord Tracts",
+      "subtitle": "",
+      "emoji": "🧠",
+      "page": 7,
+      "lectureRange": "L1-L5",
+      "subjects": [
+        {
+          "id": "anatomy",
+          "name": "Anatomy",
+          "iconName": "anatomy",
+          "lectures": "L1-L5",
+          "lectureCount": 5,
+          "questions": [
+            {
+              "id": "mcns2-ch7-anatomy-q1",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The lateral most fibers of the dorsal column tract:",
+              "explanation": "The dorsal column tracts (gracile and cuneate) carry conscious proprioception and fine touch. The lateralmost fibers in the dorsal column represent sacral segments, which ascend most medially in the spinal cord.",
+              "keyConcept": "Sacral fibers are most lateral in dorsal columns",
+              "options": [
+                "Cervical fibers.",
+                "Upper thoracic fibers.",
+                "Lower thoracic fibers.",
+                "Lumbar fibers.",
+                "Sacral fibers."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q2",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The lateral most fibers of the spinothalamic tract:",
+              "explanation": "The spinothalamic tracts show somatotopic organization where sacral fibers are most lateral (superficial) and cervical fibers are most medial (deep). This arrangement is preserved as fibers ascend through the brainstem.",
+              "keyConcept": "Sacral fibers are most lateral in spinothalamic tract",
+              "options": [
+                "Cervical fibers.",
+                "Upper thoracic fibers.",
+                "Lower thoracic fibers.",
+                "Lumbar fibers.",
+                "Sacral fibers."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q3",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Lateral spinothalamic tract carries the sensations of:",
+              "explanation": "The lateral spinothalamic tract carries pain and temperature sensations. The ventral spinothalamic carries crude touch, while the dorsal columns carry fine touch, vibration, and proprioception.",
+              "keyConcept": "Lateral spinothalamic carries pain and temperature",
+              "options": [
+                "Touch.",
+                "Vibration",
+                "Position.",
+                "Pain and temperature.",
+                "None of the above."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q4",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "All statements about ventral spinothalamic tract are true Except:",
+              "explanation": "The ventral spinothalamic tract decussates at the spinal cord level (not medulla) before ascending. It carries crude touch and pressure, lies in the anterior white column, and terminates in VPL of thalamus.",
+              "keyConcept": "Ventral spinothalamic decussates at spinal cord level",
+              "options": [
+                "Is concerned with crude touch and pressure.",
+                "Its fibers decussate in the medulla oblongata.",
+                "Terminates in ventral posterolateral nucleus of thalamus.",
+                "Shares in formation of spinal lemniscus.",
+                "Lies in the anterior white column."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q5",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The crossed corticospinal tract occupies the:",
+              "explanation": "The lateral corticospinal tract occupies the lateral white column of the spinal cord. It is the continuation of the pyramidal decussation and controls voluntary movement of the contralateral limbs.",
+              "keyConcept": "Lateral corticospinal tract in lateral white column",
+              "options": [
+                "Anterior limb of internal capsule.",
+                "Lateral white column of spinal cord.",
+                "Pyramid.",
+                "Basis pedunculi.",
+                "Basis pontis."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q6",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Select the correct answer about lateral corticospinal tract:",
+              "explanation": "The lateral corticospinal tract arises mainly from the precentral gyrus (primary motor area, Brodmann area 4). Its fibers decussate in the pyramidal decussation of the medulla.",
+              "keyConcept": "Lateral corticospinal arises from precentral gyrus",
+              "options": [
+                "Most of its fibers arise from precentral gyrus.",
+                "Present in anterior funiculus.",
+                "Passes in anterior limb of internal capsule.",
+                "Decussates in upper medulla.",
+                "Its injury produces a lower motor neuron lesion."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q7",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Regarding lamination of lateral corticospinal tract in brain stem, select the most medial fibers:",
+              "explanation": "In the brainstem, the lateral corticospinal tract fibers are organized somatotopically with cervical fibers most lateral and sacral fibers most medial. This is the reverse of their spinal cord arrangement.",
+              "keyConcept": "Sacral fibers most medial in LCST at brainstem",
+              "options": [
+                "Cervical fibers.",
+                "Lumbar fibers.",
+                "Sacral fibers.",
+                "Coccygeal fibers.",
+                "Thoracic fibers."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q8",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The corticospinal fibers are broken into bundles in:",
+              "explanation": "In the pons, the corticospinal fibers are broken into bundles by the transverse pontocerebellar fibers, creating the scattered appearance of the basis pontis.",
+              "keyConcept": "Corticospinal fibers scattered in basis pontis",
+              "options": [
+                "Basis pontis.",
+                "Basis pedunculi.",
+                "Tegmental part of pons.",
+                "Tegmentum of midbrain.",
+                "None of the above."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q9",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "As regards the pyramidal tract, choose the INCORRECT statement:",
+              "explanation": "The pyramidal tract descends as a compact bundle in the medullary pyramids, not scattered. The scattering occurs only in the basis pontis due to crossing pontocerebellar fibers.",
+              "keyConcept": "Pyramidal tract compact in medulla, scattered in pons",
+              "options": [
+                "It arises mainly from motor & premotor areas.",
+                "It passes in posterior limb of internal capsule.",
+                "It descends as a compact bundle in basis pontis.",
+                "Its crossed fibers form lateral corticospinal tract.",
+                "In spinal cord, its cervical fibers are medial."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q10",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "As regards the pyramidal tract, choose the CORRECT statement:",
+              "explanation": "The corticospinal fibers descend as scattered bundles in the basis pontis because they are interrupted by transverse pontine fibers. This is a normal anatomical feature of the pontine base.",
+              "keyConcept": "Corticospinal scattered in pons by pontine fibers",
+              "options": [
+                "It arises from motor area 4 only.",
+                "It passes through anterior limb of internal capsule.",
+                "It descends within the medial 3/5 of basis pedunculi.",
+                "It descends as scattered bundles in basis pontis.",
+                "Its crossed fibers in medulla form anterior corticospinal tract."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q11",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Upper motor neuron lesion is characterized by:",
+              "explanation": "Positive Babinski sign (dorsiflexion of big toe with fanning) is a hallmark of upper motor neuron lesion, indicating corticospinal tract damage and release of primitive reflexes.",
+              "keyConcept": "Positive Babinski indicates UMN lesion",
+              "options": [
+                "Hypotonia.",
+                "Paralysis of muscle & all types of movement.",
+                "Lost tendon jerks.",
+                "+ve Babiniski sign.",
+                "Disuse atrophy of muscles."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q12",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Lower motor neuron lesion is characterized by:",
+              "explanation": "LMN lesion causes lost/absent tendon jerks due to direct muscle denervation, muscle atrophy, and loss of all muscle tone and reflexes.",
+              "keyConcept": "LMN lesion causes lost tendon jerks",
+              "options": [
+                "Spasticity.",
+                "Paralysis of voluntary movements only.",
+                "Lost tendon jerks.",
+                "+ve Babiniski sign.",
+                "Normal response to electric stimuli."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q13",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Describe lamination of pyramidal tract in cerebral cortex, internal capsule, brain stem & spinal cord.",
+              "explanation": "The pyramidal tract is somatotopically organized at each level: CEREBRAL CORTEX: Arises from areas 4, 6, and adjacent areas; descends through corona radiata. INTERNAL CAPSULE: Posterior limb (face most anterior, arm, leg most posterior). BRAIN STEM: Basis pedunculi of midbrain (medial 3/5), basis pontis (scattered bundles), medullary pyramids. MEDULLARY DECUSSATION: Arm fibers decussate first (become lateral CST), leg fibers lower. SPINAL CORD: Cervical fibers most medial, sacral most lateral.",
+              "keyConcept": "Pyramidal tract somatotopy: face anterior in internal capsule, arm medial in cord, leg lateral in cord",
+              "modelAnswer": "Pyramidal tract lamination: (A) CEREBRAL CORTEX: Arises from motor areas 4, 6, and adjacent areas; fibers descend through corona radiata. (B) INTERNAL CAPSULE: Passes through posterior limb (somatotopic: face most anterior, leg most posterior). (C) BRAIN STEM: Passes through basis pedunculi of midbrain (medial 3/5), basis pontis (scattered bundles), medullary pyramids. (D) MEDULLA: In pyramidal decussation, fibers destined for arm decussate first (become lateral CST), those for leg remain ipsilateral then decussate lower. (E) SPINAL CORD: Lateral CST has cervical fibers most medial, sacral most lateral."
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q14",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Describe termination of pyramidal tract.",
+              "explanation": "The pyramidal tract terminates on anterior horn cells: The lateral corticospinal tract terminates on alpha motor neurons (final common pathway) and gamma motor neurons in the anterior horn of all spinal segments. The anterior corticospinal tract (uncrossed, small) terminates similarly but only in upper cervical segments. Corticobulbar fibers terminate on cranial nerve motor nuclei in the brainstem.",
+              "keyConcept": "Corticospinal tract terminates on anterior horn motor neurons; corticobulbar terminates on brainstem motor nuclei",
+              "modelAnswer": "Termination of pyramidal tract: The lateral corticospinal tract terminates on alpha motor neurons (final common pathway) and gamma motor neurons in the anterior horn of all spinal segments. The anterior corticospinal tract (uncrossed) terminates similarly but only in upper segments. Corticobulbar fibers terminate on cranial nerve motor nuclei in the brainstem."
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q15",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Describe tectospinal tract.",
+              "explanation": "The tectospinal tract: ORIGIN from superior colliculus of midbrain; COURSE decussates immediately below its origin, descends in spinal cord (mostly upper cervical segments); FUNCTION mediates reflex turning of head and neck in response to visual and auditory stimuli (spino-visual and spino-auditory reflexes). It is part of the extrapyramidal system.",
+              "keyConcept": "Tectospinal tract: superior colliculus origin, immediate decussation, mediates head/neck reflexes to visual/auditory stimuli",
+              "modelAnswer": "Tectospinal tract: (ORIGIN) Superior colliculus of midbrain; (COURSE) Decussates immediately below its origin, descends in spinal cord (most fibers terminate in upper cervical segments); (FUNCTION) Reflex turning of head and neck in response to visual and auditory stimuli (spino-visual and spino-auditory reflexes); (CLINICAL) Lesion causes inability to turn head toward stimuli."
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q16",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Describe rubrospinal tract.",
+              "explanation": "The rubrospinal tract: ORIGIN from red nucleus (magnocellular part) of midbrain; COURSE decussates immediately, descends through brain stem into lateral white column; FUNCTION facilitates flexor muscle tone and inhibits extensor tone; takes over function of corticospinal tract after lesion. Lesion causes decerebrate rigidity.",
+              "keyConcept": "Rubrospinal tract: red nucleus origin, facilitates flexor tone, takes over after corticospinal lesion",
+              "modelAnswer": "Rubrospinal tract: (ORIGIN) Red nucleus (magnocellular part) of midbrain; (COURSE) Decussates immediately, descends through brain stem, enters lateral white column of spinal cord; (FUNCTION) Facilitates flexor muscle tone, inhibits extensor tone; (RELATION) Takes over function of corticospinal tract after lesion; (CLINICAL) Lesion causes decerebrate rigidity."
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q17",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Give an account on differences between upper & lower motor neuron lesions.",
+              "explanation": "UMN vs LMN lesion differences: UMN lesions cause spastic paralysis, hypertonia, hyperreflexia, clonus, positive Babinski sign, and no muscle atrophy (or minimal). LMN lesions cause flaccid paralysis, hypotonia, hyporeflexia/areflexia, muscle atrophy, fasciculations, and no Babinski sign. UMN affects descending corticospinal pathways; LMN affects the peripheral motor neurons or their cell bodies.",
+              "keyConcept": "UMN: spastic, hyperreflexia, Babinski positive, no atrophy. LMN: flaccid, areflexia, atrophy, fasciculations",
+              "modelAnswer": "UMN vs LMN lesion differences: (UMN) Spastic paralysis, hypertonia, hyperreflexia, clonus, positive Babinski, no muscle atrophy (or minimal); (LMN) Flaccid paralysis, hypotonia, hyporeflexia/areflexia, muscle atrophy, fasciculations, no Babinski. UMN lesion affects descending corticospinal pathways; LMN affects peripheral motor neurons or their cell bodies."
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q18",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The anterolateral boundary of interpeduncular fossa is formed by:",
+              "explanation": "The crus cerebri (basis pedunculi) forms the anterolateral boundary of the interpeduncular fossa. It contains the corticospinal, corticobulbar, and corticopontine fibers.",
+              "keyConcept": "Crus cerebri forms anterolateral boundary of interpeduncular fossa",
+              "options": [
+                "Optic chiasma.",
+                "Optic tract.",
+                "Crus cerebri.",
+                "Pons.",
+                "Posterior perforated substance."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q19",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The descending tracts run in the following part of the midbrain:",
+              "explanation": "The descending tracts (corticospinal, corticobulbar) run in the crus cerebri of the midbrain. The tegmentum contains ascending tracts and nuclei. The substantia nigra separates the crus from the tegmentum.",
+              "keyConcept": "Descending tracts in crus cerebri",
+              "options": [
+                "Tectum.",
+                "Tegmentum.",
+                "Crus cerebri.",
+                "Substantia nigra.",
+                "Periaqueductal grey."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q20",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "A 45-year-old patient presents with difficulty walking, muscle weakness, and a loss of proprioception (awareness of body position). Imaging reveals a lesion in the spinal cord. Which major ascending tract in the spinal cord is most likely affected, leading to these symptoms?",
+              "explanation": "The dorsal column-medial lemniscus pathway carries proprioception, vibration sense, and fine discriminative touch from the body to the thalamus and then to the somatosensory cortex. Lesions cause loss of proprioception, vibration sense, and stereognosis. The spinothalamic tract carries pain and temperature; the corticospinal tract carries motor signals; spinocerebellar tracts carry proprioceptive data to the cerebellum.",
+              "keyConcept": "Dorsal column-medial lemniscus pathway = proprioception, vibration, fine touch; its lesion causes sensory ataxia and positive Romberg.",
+              "options": [
+                "Corticospinal tract",
+                "Spinothalamic tract",
+                "Dorsal column-medial lemniscus pathway",
+                "Spinocerebellar tract",
+                "Anterolateral system"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q21",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Acute-stage upper motor neuron lesions result in:",
+              "explanation": "In the ACUTE stage of upper motor neuron lesion, there is FLACCID paralysis (not spastic) due to spinal shock—loss of all reflexes and tone below the lesion. This phase lasts days to weeks. Later, as spinal shock resolves, spasticity, hyperreflexia, clonus, and Babinski sign develop. The answer choice D (flaccid paralysis) describes the acute UMN lesion phase.",
+              "keyConcept": "Acute UMN lesion = FLACCID paralysis (spinal shock); chronic UMN lesion = spasticity, hyperreflexia, Babinski sign.",
+              "options": [
+                "hypertonia",
+                "extensor toe response",
+                "clonus",
+                "flaccid paralysis",
+                "spastic paresis"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q22",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The anterolateral boundary of interpeduncular fossa is formed by:",
+              "explanation": "The crus cerebri (cerebral peduncle) forms the anterolateral boundary of the interpeduncular fossa. The posterior boundary is the pontine tegmentum and the fossa floor is the posterior perforated substance.",
+              "keyConcept": "Interpeduncular fossa boundaries: anterolateral = crus cerebri; posterior = tegmentum; floor = perforated substance.",
+              "options": [
+                "Optic chiasma",
+                "Optic tract",
+                "Crus cerebri",
+                "Pons",
+                "Posterior perforated substance"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q23",
+              "type": "essay",
+              "lecture": 1,
+              "text": "What are the sensations carried by dorsal column tracts?",
+              "explanation": "The dorsal column tracts (fasciculus gracilis and cuneatus) carry epicritic sensations: fine touch, vibration, conscious proprioception, stereognosis, and two-point discrimination. These are precise, discriminative sensory modalities.",
+              "keyConcept": "Dorsal columns: fine touch, vibration, conscious proprioception, stereognosis. Epicritic sensations.",
+              "modelAnswer": "Fine touch, proprioception (conscious), vibration sense, deep pressure, and stereognosis (recognition of size, shape, and texture of objects). These are discriminative tactile and proprioceptive sensations that require intact dorsal column-medial lemniscal pathway."
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q24",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Mention 2 extrapyramidal tracts.",
+              "explanation": "The two major extrapyramidal tracts (motor pathways outside the corticospinal tract) are the tectospinal tract (from superior colliculus, controls neck muscles) and the rubrospinal tract (from red nucleus, controls limb flexor muscles).",
+              "keyConcept": "Extrapyramidal tracts: tectospinal (neck control), rubrospinal (flexor muscles). Both modulate movement.",
+              "modelAnswer": "1) Tectospinal tract - originates from superior colliculus, crosses in dorsal tegmental decussation, descends to cervical spinal cord to control neck and upper trunk muscles in response to visual stimuli. 2) Rubrospinal tract - originates from red nucleus, crosses in ventral tegmental decussation, descends to control flexor muscles of the upper limb."
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q25",
+              "type": "essay",
+              "lecture": 1,
+              "text": "What is the lamination of of fibers in the lateral corticospinal tract in the spinal cord?",
+              "explanation": "The lateral corticospinal tract shows somatotopic lamination in the spinal cord with cervical fibers located most medially and sacral fibers most laterally. This arrangement reflects the body map with upper extremity representations medial and lower extremity lateral.",
+              "keyConcept": "Lateral corticospinal tract lamination: cervical (medial) to sacral (lateral) - inverted somatotopic organization.",
+              "modelAnswer": "Cervical fibers are medial while sacral fibers are lateral. This medial-to-lateral arrangement from neck to sacrum reflects the body map of the corticospinal tract."
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q26",
+              "type": "essay",
+              "lecture": 1,
+              "text": "What is the lamination of pyramidal tract in the internal capsule?",
+              "explanation": "In the internal capsule, the pyramidal tract fibers are organized with fibers for facial muscles in the genu (knee), upper limb fibers most anterior in the posterior limb, and lower limb fibers most posterior in the posterior limb.",
+              "keyConcept": "Internal capsule pyramidal tract: genu = face, anterior posterior limb = upper limb, posterior posterior limb = lower limb.",
+              "modelAnswer": "Fibers for face muscles are in the genu; upper limb area lies most anterior and lower limb area lies most posterior in the posterior limb of internal capsule. This anterior-to-posterior arrangement in the posterior limb represents head-to-toe body map."
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q27",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Upper motor neuron lesion is characterized by",
+              "explanation": "UMN lesion is characterized by spasticity (hypertonia), hyperreflexia, Babinski sign (plantar extension), and retained muscle bulk initially; option E (plantar flexion) describes normal reflex.",
+              "keyConcept": "UMN lesion characteristics",
+              "options": [
+                "Hypotonia",
+                "Marked wasting of muscles",
+                "Restricted extent of paralysis",
+                "Absent cremasteric and abdominal reflexes",
+                "Plantar flexion of big toe on scratching skin of sole"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q28",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Lower motor neuron lesion is characterized by",
+              "explanation": "LMN lesion is characterized by flaccid paralysis, hypotonia, muscle wasting, fasciculations, decreased/absent reflexes, and no Babinski sign (plantar reflex absent or normal flexion).",
+              "keyConcept": "LMN lesion characteristics",
+              "options": [
+                "Hypertonia",
+                "Absent abdominal reflexes",
+                "Increased tendon reflexes",
+                "Marked muscle wasting",
+                "Dorsiflexion of big toe (Babinski’s sign)"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q29",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Upper motor neuron lesion is characterized by",
+              "explanation": "UMN lesion features: spastic paralysis, hypertonia, hyperreflexia, Babinski positive; does NOT include hypotonia, marked wasting, or restricted paralysis (those are LMN features).",
+              "keyConcept": "UMN vs LMN distinguishing features",
+              "options": [
+                "Hypotonia",
+                "Marked wasting of muscles",
+                "Restricted extent of paralysis",
+                "Absent cremasteric and abdominal reflexes",
+                "Plantar flexion of big toe on scratching skin of sole"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q30",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Lower motor neuron lesion is characterized by",
+              "explanation": "LMN lesion features: flaccid paralysis, hypotonia, muscle atrophy, fasciculations, absent reflexes; Babinski is NOT present (it's a UMN sign); hypertonia and increased reflexes are UMN features.",
+              "keyConcept": "LMN lesion clinical features",
+              "options": [
+                "Hypertonia",
+                "Absent abdominal reflexes",
+                "Increased tendon reflexes",
+                "Marked muscle wasting",
+                "Dorsiflexion of big toe (Babinski’s sign)"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q31",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Upper motor neuron lesion is characterized by",
+              "explanation": "UMN lesion is characterized by spastic paralysis, hypertonia, hyperreflexia, positive Babinski (dorsiflexion of big toe), and primitive reflexes; plantar flexion indicates a normal (intact) reflex.",
+              "keyConcept": "UMN Babinski positive sign",
+              "options": [
+                "Hypotonia",
+                "Marked wasting of muscles",
+                "Restricted extent of paralysis",
+                "Absent cremasteric and abdominal reflexes",
+                "Plantar flexion of big toe on scratching skin of sole"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q32",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Lower motor neuron lesion is characterized by",
+              "explanation": "LMN lesion is characterized by flaccid paralysis, muscle wasting, fasciculations, and decreased/absent reflexes; hypertonia, increased reflexes, and Babinski are UMN features, not LMN.",
+              "keyConcept": "LMN flaccid paralysis and atrophy",
+              "options": [
+                "Hypertonia",
+                "Absent abdominal reflexes",
+                "Increased tendon reflexes",
+                "Marked muscle wasting",
+                "Dorsiflexion of big toe (Babinski’s sign)"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q33",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Upper motor neuron lesion is characterized by",
+              "explanation": "UMN lesion features: spasticity, hyperreflexia, positive Babinski, and loss of abdominal reflexes; options A, B, C describe LMN features (hypotonia, wasting, restricted paralysis).",
+              "keyConcept": "UMN lesion complete picture",
+              "options": [
+                "Hypotonia",
+                "Marked wasting of muscles",
+                "Restricted extent of paralysis",
+                "Absent cremasteric and abdominal reflexes",
+                "Plantar flexion of big toe on scratching skin of sole"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q34",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Lower motor neuron lesion is characterized by",
+              "explanation": "LMN lesion causes flaccid paralysis with marked muscle wasting and absent reflexes; options A, B, C, E are UMN features (hypertonia, absent reflexes, hyperreflexia, Babinski).",
+              "keyConcept": "LMN lesion complete picture",
+              "options": [
+                "Hypertonia",
+                "Absent abdominal reflexes",
+                "Increased tendon reflexes",
+                "Marked muscle wasting",
+                "Dorsiflexion of big toe (Babinski’s sign)"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q35",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Upper motor neuron lesion is characterized by",
+              "explanation": "UMN signs include hypertonia, hyperreflexia, and Babinski (dorsiflexion); options A, B, C and normal plantar flexion are NOT UMN characteristics.",
+              "keyConcept": "UMN hallmark signs",
+              "options": [
+                "Hypotonia",
+                "Marked wasting of muscles",
+                "Restricted extent of paralysis",
+                "Absent cremasteric and abdominal reflexes",
+                "Plantar flexion of big toe on scratching skin of sole"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q36",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Lower motor neuron lesion is characterized by",
+              "explanation": "LMN signs include flaccidity, hyporeflexia, marked wasting, and fasciculations; hypertonia, hyperreflexia, and Babinski are UMN features not seen in LMN lesions.",
+              "keyConcept": "LMN hallmark signs",
+              "options": [
+                "Hypertonia",
+                "Absent abdominal reflexes",
+                "Increased tendon reflexes",
+                "Marked muscle wasting",
+                "Dorsiflexion of big toe (Babinski’s sign)"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q37",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Upper motor neuron lesion is characterized by",
+              "explanation": "UMN lesion produces spastic paralysis, hyperreflexia, and Babinski sign (E); hypotonia, wasting, restricted paralysis are LMN features not seen in UMN.",
+              "keyConcept": "UMN spastic vs LMN flaccid",
+              "options": [
+                "Hypotonia",
+                "Marked wasting of muscles",
+                "Restricted extent of paralysis",
+                "Absent cremasteric and abdominal reflexes",
+                "Plantar flexion of big toe on scratching skin of sole"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q38",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Lower motor neuron lesion is characterized by",
+              "explanation": "LMN lesion causes flaccid paralysis with marked muscle wasting; hypertonia, absent reflexes, increased reflexes, and Babinski are UMN features.",
+              "keyConcept": "LMN wasting characteristic",
+              "options": [
+                "Hypertonia",
+                "Absent abdominal reflexes",
+                "Increased tendon reflexes",
+                "Marked muscle wasting",
+                "Dorsiflexion of big toe (Babinski’s sign)"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q39",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Upper motor neuron lesion is characterized by",
+              "explanation": "Plantoflexion (E) describes normal reflex; UMN lesion causes Babinski (dorsiflexion), hypertonia, hyperreflexia, spasticity; other options describe LMN features.",
+              "keyConcept": "Babinski vs normal plantar",
+              "options": [
+                "Hypotonia",
+                "Marked wasting of muscles",
+                "Restricted extent of paralysis",
+                "Absent cremasteric and abdominal reflexes",
+                "Plantar flexion of big toe on scratching skin of sole"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q40",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Lower motor neuron lesion is characterized by",
+              "explanation": "Muscle wasting (D) is the hallmark of LMN lesion; hypertonia, absent reflexes, increased reflexes, and Babinski are all UMN characteristics, not LMN.",
+              "keyConcept": "LMN atrophy hallmark",
+              "options": [
+                "Hypertonia",
+                "Absent abdominal reflexes",
+                "Increased tendon reflexes",
+                "Marked muscle wasting",
+                "Dorsiflexion of big toe (Babinski’s sign)"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q41",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Upper motor neuron lesion is characterized by",
+              "explanation": "UMN lesion causes Babinski positive (dorsiflexion), spasticity, hyperreflexia; options A-D describe LMN or normal findings.",
+              "keyConcept": "UMN Babinski positive",
+              "options": [
+                "Hypotonia",
+                "Marked wasting of muscles",
+                "Restricted extent of paralysis",
+                "Absent cremasteric and abdominal reflexes",
+                "Plantar flexion of big toe on scratching skin of sole"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q42",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Lower motor neuron lesion is characterized by",
+              "explanation": "LMN lesion causes marked muscle wasting; hypertonia, absent/increased reflexes, and Babinski are UMN features not seen in LMN.",
+              "keyConcept": "LMN wasting",
+              "options": [
+                "Hypertonia",
+                "Absent abdominal reflexes",
+                "Increased tendon reflexes",
+                "Marked muscle wasting",
+                "Dorsiflexion of big toe (Babinski’s sign)"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q43",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Upper motor neuron lesion is characterized by",
+              "explanation": "UMN produces hyperreflexia, spasticity, and Babinski positive; normal plantar flexion (E) is not a UMN sign.",
+              "keyConcept": "UMN vs normal plantar",
+              "options": [
+                "Hypotonia",
+                "Marked wasting of muscles",
+                "Restricted extent of paralysis",
+                "Absent cremasteric and abdominal reflexes",
+                "Plantar flexion of big toe on scratching skin of sole"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q44",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Lower motor neuron lesion is characterized by",
+              "explanation": "LMN lesion causes flaccid paralysis and marked muscle wasting; hypertonia, hyperreflexia, and Babinski are UMN signs.",
+              "keyConcept": "LMN flaccid wasting",
+              "options": [
+                "Hypertonia",
+                "Absent abdominal reflexes",
+                "Increased tendon reflexes",
+                "Marked muscle wasting",
+                "Dorsiflexion of big toe (Babinski’s sign)"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q45",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Upper motor neuron lesion is characterized by",
+              "explanation": "UMN lesion produces spastic paralysis, hyperreflexia, and Babinski positive (E); other options describe LMN or normal findings.",
+              "keyConcept": "UMN Babinski positive",
+              "options": [
+                "Hypotonia",
+                "Marked wasting of muscles",
+                "Restricted extent of paralysis",
+                "Absent cremasteric and abdominal reflexes",
+                "Plantar flexion of big toe on scratching skin of sole"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q46",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Lower motor neuron lesion is characterized by",
+              "explanation": "LMN lesion causes marked muscle wasting; hypertonia, absent/increased reflexes, and Babinski are UMN features not seen in LMN.",
+              "keyConcept": "LMN wasting",
+              "options": [
+                "Hypertonia",
+                "Absent abdominal reflexes",
+                "Increased tendon reflexes",
+                "Marked muscle wasting",
+                "Dorsiflexion of big toe (Babinski’s sign)"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q47",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Upper motor neuron lesion is characterized by",
+              "explanation": "UMN produces hyperreflexia, spasticity, and Babinski positive; normal plantar flexion (E) is not a UMN sign.",
+              "keyConcept": "UMN vs normal",
+              "options": [
+                "Hypotonia",
+                "Marked wasting of muscles",
+                "Restricted extent of paralysis",
+                "Absent cremasteric and abdominal reflexes",
+                "Plantar flexion of big toe on scratching skin of sole"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q48",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Lower motor neuron lesion is characterized by",
+              "explanation": "LMN lesion causes flaccid paralysis and marked muscle wasting; hypertonia, hyperreflexia, and Babinski are UMN signs.",
+              "keyConcept": "LMN flaccid wasting",
+              "options": [
+                "Hypertonia",
+                "Absent abdominal reflexes",
+                "Increased tendon reflexes",
+                "Marked muscle wasting",
+                "Dorsiflexion of big toe (Babinski’s sign)"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q49",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which tract continues as the neospinothalamic pathway carrying pain and temperature sensations to the thalamus?",
+              "explanation": "The neospinothalamic tract carries fast, sharp pain and temperature via lateral spinothalamic fibers. It ascends through the brainstem and terminates in the ventral posterolateral (VPL) thalamic nucleus.",
+              "keyConcept": "Neospinothalamic tract conveys rapid, well-localized pain via direct pathway to thalamus.",
+              "options": [
+                "Spinoreticular tract",
+                "Medial lemniscus",
+                "Spinocerebellar tract",
+                "Spinal lemniscus",
+                "Corticospinal tract"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q50",
+              "type": "mcq",
+              "lecture": 4,
+              "text": "Which thalamic nuclei receive input from the paleospinothalamic tract?",
+              "explanation": "The paleospinothalamic tract (archispinothalamic) carries slow, dull pain and temperature to the intralaminar nuclei of the thalamus, which project diffusely to association cortex.",
+              "keyConcept": "Paleospinothalamic tract terminates in intralaminar thalamic nuclei for poorly localized pain.",
+              "options": [
+                "Ventral posterolateral nucleus (VPLN)",
+                "Ventral posteromedial nucleus (VPMN)",
+                "Spinal nucleus of trigeminal",
+                "Lateral geniculate",
+                "Intralaminar nucleus"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q51",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "Which extrapyramidal tract helps adjust the head and neck in response to visual and cutaneous stimuli?",
+              "explanation": "The tectospinal tract originates from the superior colliculus and carries reflexes related to head and neck movement in response to visual stimuli, decussating at the midbrain.",
+              "keyConcept": "Tectospinal tract mediates reflex head movements toward visual stimuli, crossing at midbrain level.",
+              "options": [
+                "Tectospinal",
+                "Rubrospinal",
+                "Reticulospinal",
+                "Vestibulospinal",
+                "Corticospinal"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q52",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "Which descending motor pathway serves as an alternate route to the corticospinal tract?",
+              "explanation": "The rubrospinal tract originates from the red nucleus, decussates immediately, and descends in the lateral funiculus. It serves as an accessory pathway for corticospinal function, particularly for flexor muscle control.",
+              "keyConcept": "Rubrospinal tract is a crossed extrapyramidal pathway for motor control of distal limbs.",
+              "options": [
+                "Corticobulbar tract",
+                "Rubrospinal tract",
+                "Vestibulospinal tract",
+                "Reticulospinal tract",
+                "Tectospinal tract"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q53",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following is related to the anterior corticospinal tract?",
+              "explanation": "The anterior corticospinal tract arises from the medial precentral cortex, descends without decussating in the spinal cord, and terminates on interneurons controlling proximal muscles and axial muscles.",
+              "keyConcept": "Anterior corticospinal tract is uncrossed, controlling axial and proximal limb muscles.",
+              "options": [
+                "Supplies the muscles of the trunk",
+                "Controls fine movements of fingers",
+                "Decussates in the medulla",
+                "Supplies distal limb muscles only",
+                "Carries sensory fibers"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q54",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "Which of the following is NOT an extrapyramidal tract?",
+              "explanation": "The corticospinal tract is the main pyramidal tract for voluntary movement. The reticulospinal, rubrospinal, and vestibulospinal tracts are extrapyramidal. The tectospinal tract is also extrapyramidal.",
+              "keyConcept": "Corticospinal tracts are the only major pyramidal motor pathways; all others are extrapyramidal.",
+              "options": [
+                "Rubrospinal tract",
+                "Reticulospinal tract",
+                "Vestibulospinal tract",
+                "Corticobulbar tract",
+                "Tectospinal tract"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q55",
+              "type": "mcq",
+              "lecture": 4,
+              "text": "Tectospinal tract origin is......",
+              "explanation": "The tectospinal tract originates from the contralateral superior colliculus and descends to the cervical spinal cord, mediating reflex adjustments of head and neck position in response to visual stimuli.",
+              "keyConcept": "Tectospinal tract originates from superior colliculus for head-neck reflexes to visual inputs.",
+              "options": [
+                "Red nucleus",
+                "Medial vestibular nucleus",
+                "Lateral vestibular nucleus",
+                "Reticular formation",
+                "Superior colliculus"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q56",
+              "type": "mcq",
+              "lecture": 5,
+              "text": "A patient has a lesion affecting the dorsal column tracts. Which artery is most likely affected?",
+              "explanation": "The dorsal columns (gracile and cuneate fasciculi) are supplied by the posterior spinal arteries, which are branches of the vertebral arteries.",
+              "keyConcept": "Posterior spinal arteries supply the dorsal columns, unlike the anterior spinal artery supplying the cord anteriorly.",
+              "options": [
+                "Anterior spinal artery",
+                "Posterior spinal artery",
+                "Radicular artery",
+                "Adamkiewicz artery",
+                "Posterior inferior cerebellar artery"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q57",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "Ventral spinothalamic tract is:",
+              "explanation": "The ventral spinothalamic tract crosses at the spinal cord level and ascends through the brainstem, eventually reaching the thalamus via the spinal lemniscus.",
+              "keyConcept": "Ventral spinothalamic tract",
+              "options": [
+                "on same side",
+                "on opposite side",
+                "ascend in pons then thalamus",
+                "b, c"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q58",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "All characters of dorsal spinocerebellar tract except:",
+              "explanation": "The dorsal spinocerebellar tract carries impulses from the lower limb and trunk on the ipsilateral side (after crossing once in the spinal cord via Clarke's nucleus).",
+              "keyConcept": "Dorsal spinocerebellar tract",
+              "options": [
+                "arise from clark nucleus (C8-L2)",
+                "ascending in white matter then closed medulla then end in cerebellum",
+                "carry impulse from lower limb only on same side",
+                "carry impulse from lower limb, trunk in opposite side"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q59",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "All characters of ventral spinocerebellar tract except:",
+              "explanation": "The ventral spinocerebellar tract carries impulses from the lower limb on both sides (decussates twice) and trunk on the same side, not only trunk on same side.",
+              "keyConcept": "Ventral spinocerebellar tract",
+              "options": [
+                "ascend in all level of white matter then brain stem",
+                "carry impulse from trunk on same side only",
+                "carry impulse from lower limb on same or opposite side",
+                "arise from cells in posterior horn (V-VII)"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q60",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "Dorsal spinocerebellar enters cerebellum through ............. while ventral spinocerebellar through.............",
+              "explanation": "The dorsal spinocerebellar tract enters via the inferior cerebellar peduncle while the ventral spinocerebellar tract enters via the superior cerebellar peduncle.",
+              "keyConcept": "Cerebellar peduncle entries",
+              "options": [
+                "Superior cerebellar peduncle, inferior cerebellar peduncle",
+                "inferior cerebellar peduncle, superior cerebellar peduncle",
+                "Superior cerebellar peduncle only",
+                "inferior cerebellar peduncle only"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q61",
+              "type": "essay",
+              "lecture": 1,
+              "text": "2 extrapyramidal tracts:",
+              "explanation": "The two main extrapyramidal tracts are the reticulospinal tract (medial and lateral) and the vestibulospinal tract (lateral and medial).",
+              "keyConcept": "Extrapyramidal tracts",
+              "modelAnswer": "Rubro-spinal tract and vestibulo-spinal tract."
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q62",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Lamination of lateral corticospinal tract in spinal cord:",
+              "explanation": "The lateral corticospinal tract is laminated: cervical fibers are most lateral, sacral fibers most medial, controlling progressive distal-to-proximal muscles.",
+              "keyConcept": "Corticospinal lamination",
+              "modelAnswer": "Cervical fibers most lateral, sacral most medial."
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q63",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Lamination of pyramidal tract in internal capsule:",
+              "explanation": "In the internal capsule, the pyramidal tract is arranged: anterior limb (frontal connections), genu (face), posterior limb (arm, leg) from front to back.",
+              "keyConcept": "Pyramidal internal capsule",
+              "modelAnswer": "Anterior limb: frontal; Genu: face; Posterior limb: arm above, leg below."
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q64",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Complete: Tectospinal",
+              "explanation": "The tectospinal tract arises from the superior colliculus, decussates, and descends to control reflex head/neck movements toward visual stimuli.",
+              "keyConcept": "Tectospinal tract",
+              "modelAnswer": "Origin: superior colliculus; Function: reflex head and neck movements toward visual stimuli."
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q65",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The lateral spinothalamic tract carries which sensations?",
+              "explanation": "The lateral spinothalamic tract carries pain and temperature sensation after crossing in the spinal cord, while fine touch and vibration are carried by the dorsal columns.",
+              "keyConcept": "Lateral spinothalamic tract: pain and temperature.",
+              "options": [
+                "Fine touch and vibration",
+                "Pain and temperature",
+                "Proprioception and pressure",
+                "Crude touch only"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q66",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The dorsal spinocerebellar tract originates from which nucleus?",
+              "explanation": "The dorsal spinocerebellar tract originates from Clarke's nucleus (nucleus dorsalis) located in the intermediate grey matter at T1-L2 levels, carrying proprioceptive information to the cerebellum.",
+              "keyConcept": "Dorsal spinocerebellar tract originates from Clarke's nucleus.",
+              "options": [
+                "Nucleus proprius",
+                "Clarke's nucleus",
+                "Substantia gelatinosa",
+                "Posteromarginal nucleus"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q67",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The corticospinal tract in the spinal cord is located in which funiculus?",
+              "explanation": "The corticospinal tract is located primarily in the lateral funiculus (about 85% of fibers), with the remaining fibers traveling in the anterior funiculus as the anterior corticospinal tract.",
+              "keyConcept": "Corticospinal tract: mainly lateral funiculus, some in anterior funiculus.",
+              "options": [
+                "Anterior funiculus",
+                "Lateral funiculus (mainly) and anterior funiculus (minor)",
+                "Posterior funiculus",
+                "Dorsal funiculus"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q68",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following is a characteristic of the extrapyramidal tracts?",
+              "explanation": "Extrapyramidal tracts (rubrospinal, vestibulospinal, reticulospinal, tectospinal) influence muscle tone, posture, and automatic movements rather than fine skilled movements controlled by the pyramidal system.",
+              "keyConcept": "Extrapyramidal tracts: regulate posture and muscle tone.",
+              "options": [
+                "They originate exclusively from the motor cortex.",
+                "They are concerned with fine skilled movements.",
+                "They influence posture and muscle tone.",
+                "They decussate only in the medulla."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-anatomy-q69",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which tract is the main alternative (indirect) pathway to the corticospinal tract for motor control?",
+              "explanation": "The red nucleus/rubrospinal tract is the principal alternative motor pathway.",
+              "keyConcept": "Rubrospinal tract: main indirect pathway from cerebellum via red nucleus to spinal cord.",
+              "options": [
+                "Tectospinal tract",
+                "Lateral vestibulospinal tract",
+                "Medial reticulospinal tract",
+                "Rubrospinal tract",
+                "Olivospinal tract"
+              ],
+              "correctIndex": 0
+            }
+          ]
+        },
+        {
+          "id": "physiology",
+          "name": "Physiology",
+          "iconName": "physiology",
+          "lectures": "L1-L5",
+          "lectureCount": 5,
+          "questions": [
+            {
+              "id": "mcns2-ch7-physiology-q1",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following is true with respect to the corticospinal pathway:",
+              "explanation": "The corticospinal pathway is a multineuron pathway. Option D is correct. The corticospinal tract has upper motor neurons in motor cortex that synapse with lower motor neurons in the spinal cord (via interneurons or directly). Option A is wrong (intact tract = negative Babinski). Option B is wrong (synapses with LMN in cord). Option C is wrong (it is contralateral, not ipsilateral, in the spinal cord after decussation at pyramids).",
+              "keyConcept": "The corticospinal pathway is a multineuronal system with upper and lower motor neurons connected via interneurons in the spinal cord.",
+              "options": [
+                "It must be intact to elicit a positive Babinski's sign.",
+                "It synapses with gamma motor neurons in the spinal cord.",
+                "Is mostly an ipsilateral pathway in the spinal cord.",
+                "Is a multineuron pathway."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-physiology-q2",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The extrapyramidal system:",
+              "explanation": "The extrapyramidal system is inhibitory to muscle tone. Option E is correct. The extrapyramidal system (basal ganglia, red nucleus, reticular formation) normally inhibits muscle tone. When damaged, rigidity results. Option A is wrong (originates from cortex AND brainstem). Option B is wrong (not 90% crossed). Option C is wrong (terminates at gamma neurons, not alpha). Option D is wrong (active from birth).",
+              "keyConcept": "Extrapyramidal system normally inhibits muscle tone; lesions result in rigidity.",
+              "options": [
+                "Originates from cortical areas only.",
+                "About 90% of its descending fibers are crossed to the opposite side.",
+                "Terminates at alpha & gamma neurons in the sp. cord & the cranial nuclei.",
+                "Starts its function during the first year of life.",
+                "Is inhibitory to the muscle tone."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-physiology-q3",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Upper motor neuron lesion shows the following except:",
+              "explanation": "UMNL shows spasticity, not flaccidity. Option C is incorrect (flaccidity is LMN). Options A, B, D are correct UMN signs: increased tone, positive Babinski, exaggerated deep reflexes. The UMN lesion releases lower motor neurons from cortical inhibition, causing hyperreflexia and spasticity.",
+              "keyConcept": "Upper motor neuron lesions cause spastic paralysis with hyperreflexia, not the flaccid paralysis of lower motor neuron lesions.",
+              "options": [
+                "Increased muscle tone of affected muscles.",
+                "Positive Babinski's sign.",
+                "Flaccidity of muscles affected.",
+                "Exaggerated deep reflexes."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-physiology-q4",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Compare& contrast the function of pyramidal & non-pyramidal tracts Non-pyramidal Pyramidal Helps pyramidal system to do fine skilled movement of distal parts by proper positioning of the proximal parts Initiate fine skilled movements of the distal parts of the opposite side of the body (lateral corticospinal tract) Initiate gross movements involving groups of muscles in the proximal parts Initiate gross movements of the proximal parts of the opposite side of body (ventral corticospinal) Regulation of muscle tone Help in controlling muscletone& postural background coordination of voluntary movements together with cerebellum Bilateral supply of abdominal & thoracic muscles (uncrossed corticospinal tract) Regulation of autonomic functions (reticulospinal tracts) Inhibition of Babiniski's sign Must pass through distributing centers (BG From cortical areas directly Important key items : center of motor actions, various kinds of inputs, idea , motivation and memory, where to make a plan ? , where to send  the plan , role of BG and cerebellum . Physiology Questions and Answers  2017",
+              "explanation": "Pyramidal tracts (corticospinal and corticobulbar) originate from motor cortex (areas 4, 6, 3, 1, 2) and descend through internal capsule, cerebral peduncle, pons, and medulla. Functions: 1) Fine skilled voluntary movements, especially distal limb muscles; 2) Fractionated finger movements; 3) Fine motor control. Lesions cause spastic paralysis with positive Babinski sign. Non-pyramidal tracts (rubrospinal, vestibulospinal, reticulospinal) originate in brainstem, descend in spinal cord, and control: 1) Posture and tone; 2) Proximal limb movements; 3) Equilibrium; 4) Automatic movements. They facilitate flexors (rubrospinal) or extensors (vestibulospinal). Non-pyramidal lesions cause: 1) Difficulty with posture and walking; 2) Impaired righting reflexes; 3) Slowness of movement. The two systems work together - non-pyramidal helps pyramidal do fine skilled movements.",
+              "keyConcept": "Pyramidal tracts control fine skilled movements; non-pyramidal tracts maintain posture and tone.",
+              "modelAnswer": "22\nnuclei ) then send the fibres to variety of brain\nstem nuclei"
+            },
+            {
+              "id": "mcns2-ch7-physiology-q5",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Mention the different inputs on spinal lower motor neurons. Explain briefly how these inputs affect motor function",
+              "explanation": "Spinal lower motor neurons (alpha motor neurons) receive multiple inputs: 1) Corticospinal tract - direct excitatory input for voluntary movements; 2) Reticulospinal tract - modulates tone and posture; 3) Vestibulospinal tract - maintains posture and equilibrium; 4) Rubrospinal tract - facilitates flexor muscles; 5) Ia afferents (stretch reflex) - excitatory input; 6) Ib afferents (inverse stretch reflex) - inhibitory via interneurons; 7) Renshaw cell feedback - negative feedback preventing excessive discharge. These inputs determine motor neuron firing. Upper motor neurons influence LMNs via descending tracts. Interneurons integrate all inputs, providing the final common pathway for motor output. Pathological changes: UMN lesions increase all excitatory inputs (spasticity); LMN lesions eliminate all inputs (flaccid paralysis, atrophy).",
+              "keyConcept": "Lower motor neurons integrate multiple descending and peripheral inputs, serving as the final common pathway for motor output.",
+              "modelAnswer": "1. Lateral descending system - Lateral cortico-spinal tract.    - Rubrospinal tracts\nEffect: fine skilled movements of distal limb muscles.\n2. Medial descending system - Ventral cortico-spinal tract.    - Reticulo-spinal tracts. - Vestibulo-spinal tracts.    - Tecto-spinal tract. - Olivo-spinal tract.\nEffect: a. Control proximal limb and axial muscles.\nb. Gross movement of trunk and coordinated limb movement.\nc. Control balance, posture & stabilization of body.\nd. Give postural background for skilled movements.\n3. Afferents of:  - Stretch reflex: muscle contraction. - Inverse stretch reflex: reflex relaxation.  - Flexor withdrawal reflex: flexion & withdrawal of the limb. - Crossed extensor reflex:\nIpsilateral limb: contraction of flexors & relaxation of extensors\nContralateral limb: contraction of extensors & relaxation of flexors. - Abdominal reflex: contraction of abdominal muscles & shift of umbilicus.  - Planter reflex: planter flexion."
+            },
+            {
+              "id": "mcns2-ch7-physiology-q6",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Differentiate between upper and lower motor neuron lesions as regards the causes and extend of paralysis. Upper Motor Neuron Lesion Lower Motor Neuron Lesion Causes haemorrhage or thrombosis in internal capsule (most common) Diabetes mellitus Beriberi & Alcoholism Poliomyelitis Myasthenia gravis Physiology Questions and Answers  2017",
+              "explanation": "Upper motor neuron (UMN) lesions occur in the brain or spinal cord above the LMNs. Causes include stroke, MS, cerebral palsy. Characteristics: 1) Spastic paralysis (not flaccid); 2) Hyperreflexia (brisk reflexes); 3) Positive Babinski sign (extensor plantar); 4) No muscle atrophy (or mild disuse atrophy); 5) No fasciculations; 6) Increased muscle tone/spasticity. Lower motor neuron (LMN) lesions occur in the anterior horn or peripheral nerves. Causes include polio, peripheral neuropathy. Characteristics: 1) Flaccid paralysis; 2) Hyporeflexia/areflexia; 3) Muscle atrophy (rapid, severe); 4) Fasciculations and fibrillations; 5) Decreased muscle tone/flaccidity; 6) No Babinski sign. UMN = central paralysis with spasticity; LMN = peripheral paralysis with flaccidity and atrophy.",
+              "keyConcept": "UMN lesions cause spastic paralysis with hyperreflexia; LMN lesions cause flaccid paralysis with atrophy and hyporeflexia.",
+              "modelAnswer": "23\nExtent of\nparalysis\n1. In cortex: localized. contralateral monoplegia\n2. Internal capsule: acute stage contralateral\nhemiplegia \"flaccid paralysis” chronic stage\ncontralateral hemiplegia \"spastic paralysis\"\n3. Brain stem: above medullary pyramidcrossed\nhemiplegia contralateral hemiplegia of UMNL &\nIpsilateral LMNL of 3 to 10th cranial nerves\nbelow medullary pyramid Ipsilateral paralysis\nof half of the body\nIpsilateral localized flaccid paralysis\nof a muscle or a group of muscles."
+            },
+            {
+              "id": "mcns2-ch7-physiology-q7",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Differentiate between clinical spasticity and rigidity. Spasticity Rigidity Hypertonia occurs in UMNL (Lesion in corticospinal tracts mostly due to hemorrhage or thrombosis In Internal capsule). Hypertonia occurs in Parkinsonism (Lesion in substantia nigra & loss of dopaminergic nigrostriatal neurons). It is caused by: Increase In the activity of gamma motor neurons due to loss of strong supraspinal inhibitory effect on stretch reflex mainly from area 6 & BG while some facilitatory discharge remain intact along both medial reticulospinal & vestibulospinal tract. It is caused by: abnormal over excitation of alpha and gamma motor neurons (mainly alpha) as BG which is Inhibitory is affected. It occurs more in antigravity muscles (UL is flexed & adducted, LL is extended & adducted). It occurs in flexors & extensors but more in flexors. It appears like clasp knife (sudden release after initial resistance). In mild cases, it is cogwheel rigidity (not continuous) but in severe cases, it is lead pipe rigidity (steady & continuous). Spasticity is associated with hyperreflexia. Rigidity is associated with normoflexia. Physiology Questions and Answers  2017",
+              "explanation": "Clinical spasticity is a velocity-dependent increase in muscle tone due to UMN lesions (corticospinal tract damage). Characteristics: 1) Velocity-dependent - tone increases more with rapid stretch; 2) Affects anti-gravity muscles preferentially (flexors in upper limb, extensors in lower limb); 3) Exaggerated stretch reflexes; 4) Clasp-knife phenomenon (initial resistance then sudden release); 5) Positive Babinski sign. Causes hyperexcitability of the stretch reflex arc due to loss of corticospinal inhibition. Rigidity is a velocity-independent increase in tone seen in basal ganglia disorders (Parkinson's). Types: 1) Cogwheel rigidity - resistance with ratchet-like interruptions; 2) Lead-pipe rigidity - smooth, constant resistance throughout range. Rigidity affects both flexors and extensors equally. Key difference: spasticity is velocity-dependent and UMN-mediated; rigidity is velocity-independent and basal ganglia-mediated.",
+              "keyConcept": "Spasticity is velocity-dependent UMN sign; rigidity is velocity-independent basal ganglia sign affecting flexors and extensors equally.",
+              "modelAnswer": "29\nHigher Brain Functions"
+            },
+            {
+              "id": "mcns2-ch7-physiology-q8",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "In Thermal sensations, all of the following are true EXCEPT:\n\nA) Cold receptors are more numerous than Hot receptors, but Hot receptors adapt more rapidly than cold receptors.\nB) Are transmitted through lateral division of anterolateral system.\nC) Temperature higher than 45°C produces hot pain and temperature lower than 10°C produces cold pain.\nD) The maximal discharge of hot receptors occurs at 45°C and of cold receptors occurs at 25°C.\nE) They are carried by Aβ fibers.",
+              "explanation": "Thermal sensations are carried by Aδ fibers (cold) and C fibers (hot), not Aβ fibers. Aβ fibers carry touch, pressure, and vibration. Cold receptors adapt slower than hot receptors, and maximal discharge occurs at 25°C (cold) and 45°C (hot).",
+              "keyConcept": "Temperature sensation: Aδ (cold, 10-40°C), C fibers (heat, 30-45°C); transmitted via spinothalamic tract.",
+              "options": [
+                "a",
+                "b",
+                "c",
+                "d",
+                "e"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-physiology-q9",
+              "type": "mcq",
+              "lecture": 5,
+              "text": "The pyramidal tract:",
+              "explanation": "The pyramidal tract (corticospinal tract) arises from motor cortex and carries fine, discrete voluntary movements. Most fibers (85-90%) cross in the medulla (pyramidal decussation). Functions develop after birth as motor skills emerge.",
+              "keyConcept": "The pyramidal tract mediates fine voluntary movements and is unique in having the majority of fibers cross at the medullary pyramids.",
+              "options": [
+                "Arises only from subcortical areas.",
+                "Carries its functions immediately after birth.",
+                "Most of its fibers do not cross.",
+                "Responsible for fine movements.",
+                "Some fibers are facilitatory and others are inhibitory to Stretch reflex."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-physiology-q10",
+              "type": "mcq",
+              "lecture": 5,
+              "text": "Damage which interrupt upper motor neuron pathways in the internal capsule would NOT lead to:",
+              "explanation": "Internal capsule lesions affect corticospinal tracts causing UMN signs: spastic paralysis, hyperreflexia, Babinski sign, and loss of abdominal reflexes on the contralateral side. Muscle wasting occurs in LMN lesions, not UMN.",
+              "keyConcept": "UMN lesions cause paralysis with preserved muscle bulk; LMN lesions cause flaccid paralysis with muscle atrophy.",
+              "options": [
+                "Paralysis and loss of fine voluntary movements especially Of the hand & fingers.",
+                "Wasting of muscles.",
+                "Loss of abdominal reflex.",
+                "Positive Babinski sign.",
+                "Hyperreflexia on the contralateral side."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-physiology-q11",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following observation would suggest that an upper motor neuron lesion rather than a lower motor neuron lesion is present?",
+              "explanation": "Spasticity (velocity-dependent increase in tone) is a hallmark of UMN lesions, along with hyperreflexia, Babinski sign, and clonus. LMN lesions cause flaccid paralysis, hyporeflexia, muscle atrophy, and fasciculations.",
+              "keyConcept": "Spasticity is a positive UMN sign that distinguishes upper from lower motor neuron lesions.",
+              "options": [
+                "Marked muscle atrophy.",
+                "Hyporeflexia.",
+                "Spasticity.",
+                "Fasciculations.",
+                "Localized paralysis."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-physiology-q12",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "In a patient with an upper motor neuron lesion, superficial reflexes (e.g., abdominal reflex) are absent. Which tract is most likely intact?",
+              "explanation": "Upper motor neuron lesions abolish superficial reflexes (abdominal, cremasteric) due to disruption of descending cortical facilitation to spinal interneurons.",
+              "keyConcept": "UMN lesions eliminate superficial reflexes by removing cortical facilitation to spinal reflex arcs.",
+              "options": [
+                "Spinothalamic tract",
+                "Dorsal column–medial lemniscal pathway",
+                "Spinocerebellar tract",
+                "Corticospinal tract",
+                "Rubrospinal tract"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-physiology-q13",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "Lesion of the spinocerebellar tract typically produces:",
+              "explanation": "Spinocerebellar tract lesion causes ipsilateral ataxia and loss of proprioception from the limb, as these tracts carry uncrossed sensory information from muscle spindles and tendon organs.",
+              "keyConcept": "Spinocerebellar tract damage produces ipsilateral limb ataxia and impaired proprioception.",
+              "options": [
+                "Hypotonia",
+                "Hyporeflexia",
+                "Kinetic tremor",
+                "Clonus",
+                "Babinski sign"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-physiology-q14",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Regarding somatosensory area 1 all are correct, Except:\nA. Lies anterior to central gyrus.\nB. Size of representation depends on number of receptors.\nC. Have columns that is specialized to receive one type of sensation.\nD. Contralateral representation.\nE. Share in pyramidal tract origin.",
+              "explanation": "Somatosensory area 1 lies posterior to the central gyrus (postcentral gyrus), not anterior; it receives contralateral input, has columns specialized for single sensation types, and its representation size reflects receptor density.",
+              "keyConcept": "Somatosensory area 1 lies posterior to central gyrus (postcentral gyrus).",
+              "options": [
+                "Lies anterior to central gyrus",
+                "Size of representation depends on number of receptors",
+                "Have columns that is specialized to receive one type of sensation",
+                "Contralateral representation",
+                "Share in pyramidal tract origin"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-physiology-q15",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The medial motor system includes all the following tracts Except:\nA. Vestibulospinal tract\nB. Rubrospinal tract\nC. Reticulospinal tract\nD. Tectospinal tract\nE. Ventral corticospinal tract",
+              "explanation": "The rubrospinal tract belongs to the lateral motor system, not the medial motor system. Medial motor system includes vestibulospinal, reticulospinal, tectospinal, and ventral corticospinal tracts.",
+              "keyConcept": "Rubrospinal tract is part of lateral motor system, not medial.",
+              "options": [
+                "Vestibulospinal tract",
+                "Rubrospinal tract",
+                "Reticulospinal tract",
+                "Tectospinal tract",
+                "Ventral corticospinal tract"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-physiology-q16",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "In upper motor neuron lesion, there is:\nA. Flaccid paralysis\nB. No paralysis\nC. Spastic muscle\nD. Hypotonia\nE. Ataxia",
+              "explanation": "Upper motor neuron lesions cause spastic paralysis with hypertonia and hyperreflexia due to loss of cortical inhibition of spinal reflex arcs, unlike lower motor neuron lesions which cause flaccid paralysis.",
+              "keyConcept": "UMN lesion: spastic muscle (hypertonia, hyperreflexia).",
+              "options": [
+                "Flaccid paralysis",
+                "No paralysis",
+                "Spastic muscle",
+                "Hypotonia",
+                "Ataxia"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-physiology-q17",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "In lower motor neuron lesion, loss of superficial reflexes could be explained by the fact that:\nA. These reflexes need intact corticospinal tract\nB. These reflexes were suppressed by corticospinal tract\nC. There is damage to the center of these reflexes\nD. There is damage to the afferent of these reflexes\nE. There is supraspinal inhibition of these reflexes",
+              "explanation": "Superficial reflexes (abdominal, cremasteric) are polysynaptic reflexes whose centers are in the spinal cord; LMN damage eliminates the efferent limb of these reflexes.",
+              "keyConcept": "Superficial reflex loss in LMN lesion: damage to reflex center.",
+              "options": [
+                "These reflexes need intact corticospinal tract",
+                "These reflexes were suppressed by corticospinal tract",
+                "There is damage to the center of these reflexes",
+                "There is damage to the afferent of these reflexes",
+                "There is supraspinal inhibition of these reflexes"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-physiology-q18",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following maneuvers will weakens the stretch reflex in skeletal muscle?\nA. Sectioning the dorsal root of a spinal nerve\nB. Disruption of the spinocerebellar tract\nC. Disruption of the corticospinal tract\nD. Sectioning the medial lemniscus on the contralateral side of the skeletal muscle in question\nE. Creating a lesion in the contralateral globus pallidus",
+              "explanation": "Sectioning the dorsal root eliminates the afferent limb of the stretch reflex (Ia fibers from muscle spindles), causing immediate weakening or loss of the reflex.",
+              "keyConcept": "Dorsal root sectioning: weakens stretch reflex by cutting afferent limb.",
+              "options": [
+                "Sectioning the dorsal root of a spinal nerve",
+                "Disruption of the spinocerebellar tract",
+                "Disruption of the corticospinal tract",
+                "Sectioning the medial lemniscus on the contralateral side of the skeletal muscle in question",
+                "Creating a lesion in the contralateral globus pallidus"
+              ],
+              "correctIndex": 0
+            }
+          ]
+        },
+        {
+          "id": "pharma",
+          "name": "Pharmacology",
+          "iconName": "pharma",
+          "lectures": "L1-L5",
+          "lectureCount": 5,
+          "questions": [
+            {
+              "id": "mcns2-ch7-pharma-q1",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Enumerate possible extrapyramidal adverse effects of antipsychotics",
+              "explanation": "Extrapyramidal side effects of antipsychotics include acute dystonia, akathisia, Parkinsonism, and tardive dyskinesia, arising from D2 blockade in the nigrostriatal pathway.",
+              "keyConcept": "EPS from antipsychotics manifest as acute dystonia, akathisia, drug‑induced Parkinsonism, and tardive dyskinesia.",
+              "modelAnswer": "Extrapyramidal adverse effects of antipsychotics: (1) Acute dystonia — involuntary muscle contractions (spasms, torticollis, oculogyric crisis) occurring within hours to days of starting therapy. Managed with anticholinergic agents (benztropine, diphenhydramine). (2) Akathisia — subjective restlessness and inability to sit still, occurring within days to weeks. Treated with beta‑blockers (propranolol) or dose reduction. (3) Drug‑induced Parkinsonism — bradykinesia, rigidity, tremor resembling idiopathic Parkinson's disease, occurring within 1–4 weeks. Treated with anticholinergics or dose reduction. (4) Tardive dyskinesia — involuntary choreoathetoid movements (orofacial dyskinesia, tongue protrusion) developing after months to years; potentially irreversible. Risk factors: elderly, female, typical antipsychotics, high dose, long duration."
+            },
+            {
+              "id": "mcns2-ch7-pharma-q2",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The correct statement regarding extrapyramidal effects of antipsychotics:",
+              "explanation": "Extrapyramidal effects (EPS) occur most commonly with HIGH POTENCY agents (like haloperidol), not low potency. Option A is FALSE. Tardive dyskinesia is NOT relieved by anticholinergics - anticholinergics may actually worsen it. Option B is FALSE. Anticholinergics ARE useful in neuroleptic-induced parkinsonism (drug-induced parkinsonism responds to anticholinergics). Option C is TRUE. The answer is C - anticholinergics are useful in neuroleptic-induced parkinsonism. Typical antipsychotics: low potency (chlorpromazine) have less EPS but more sedation/anticholinergic; high potency (haloperidol) have more EPS but less sedation.",
+              "keyConcept": "High potency antipsychotics (haloperidol) cause most EPS; anticholinergics treat drug-induced parkinsonism but not tardive dyskinesia.",
+              "options": [
+                "Occur most commonly with low potency agents",
+                "Tardive dyskinesia is relieved by anticholinergics",
+                "Anticholinergics are useful in neuroleptic induced parkinsonism",
+                "Both A & B"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-pharma-q3",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Less extrapyramidal effects with risk of agranulocytosis may be seen with:",
+              "explanation": "Clozapine has the LEAST extrapyramidal side effects but carries the risk of agranulocytosis. This is the classic tradeoff with atypical antipsychotics. Thioridazine (B) is a low-potency typical with moderate EPS. Haloperidol (C) has high EPS risk. Risperidone (D) has moderate EPS risk, especially at higher doses. Clozapine's unique pharmacology (D4 > D2 affinity, strong 5-HT2A antagonism) results in minimal EPS but significant hematological toxicity requiring monitoring. The answer is A - clozapine has the best EPS profile but dangerous agranulocytosis risk.",
+              "keyConcept": "Clozapine has minimal EPS but significant agranulocytosis risk - the classic atypical antipsychotic tradeoff.",
+              "options": [
+                "Clozapine",
+                "Thioridazine",
+                "Haloperidol",
+                "Risperidone",
+                "Olanzapine"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-pharma-q4",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The following antipsychotic drug has the least central side effects especially extrapyramidal side effects:",
+              "explanation": "Aripiprazole has the LEAST central side effects, especially extrapyramidal side effects. This is due to its unique pharmacology as a partial D2 and 5-HT1A agonist with 5-HT2A antagonism. Haloperidol (A) has high EPS. Clozapine (B) has low EPS but significant sedation and other side effects. Chlorpromazine (D) has moderate EPS and significant sedation. Aripiprazole's partial agonism means it has both agonist and antagonist activity at dopamine receptors, resulting in a stabilizing effect with minimal EPS. The answer is C - aripiprazole has the least central side effects among these options.",
+              "keyConcept": "Aripiprazole's partial D2 agonism results in minimal extrapyramidal side effects compared to other antipsychotics.",
+              "options": [
+                "Haloperidol",
+                "Clozapine",
+                "Aripiprazole",
+                "Chlorpromazine"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch7-pharma-q5",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "What are the extrapyramidal adverse effects of antipsychotics?",
+              "explanation": "Extrapyramidal effects of antipsychotics: acute dystonia, akathisia (restlessness), parkinsonism (bradykinesia, rigidity, tremor), and tardive dyskinesia (late-onset choreiform movements).选项D正确. The answer is D. Caused by D2 blockade in nigrostriatal pathway.",
+              "keyConcept": "EPS includes acute dystonia, akathisia, parkinsonism, and tardive dyskinesia from nigrostriatal D2 blockade.",
+              "options": [
+                "Akathisia",
+                "Dystonia",
+                "Parkinsonism",
+                "All of the above"
+              ],
+              "correctIndex": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from 'motion/react';
+import { checkAnswerCorrect } from '../utils/quiz';
+import { norm } from '../utils/string';
 import {
   ArrowLeft,
   ArrowRight,
@@ -14,7 +16,8 @@ import {
   Bookmark,
   AlertCircle,
   Activity,
-  ChevronDown
+  ChevronDown,
+  Star
 } from 'lucide-react';
 import type { ChapterData, SubjectData, Question, SubjectColor } from '../types';
 import { subjectStyles, formatTime } from '../types';
@@ -58,62 +61,6 @@ const isAnswered = (q: Question, a: any): boolean => {
       return true;
   }
 };
-
-const norm = (s: any) => String(s ?? '').trim().toLowerCase();
-
-function checkAnswerCorrect(q: Question, ans: any): boolean {
-  if (ans === undefined || ans === null) return false;
-
-  switch (q.type) {
-    case 'mcq':
-    case 'truefalse':
-      return ans === q.correctIndex;
-
-    case 'matching': {
-      const pairs = q.pairs ?? [];
-      const scrambled: string[] = ans?.scrambled ?? [];
-      const matches: Record<number, number> = ans?.matches ?? {};
-      if (!pairs.length || !scrambled.length) return false;
-      return pairs.every((p: any, i: number) => {
-        const correctScrambledIndex = scrambled.indexOf(p.target ?? p.right);
-        return matches[i] === correctScrambledIndex && correctScrambledIndex !== -1;
-      });
-    }
-
-    case 'essay':
-      return ans?.selfGrade === 'correct';
-
-    case 'fillblank': {
-      const inputs: string[] = ans?.inputs ?? [];
-      const blanks: string[] = q.blanks ?? [];
-      const accepted: string[][] = q.acceptedAnswers ?? [];
-      if (!blanks.length) return false;
-      return blanks.every((primary, i) => {
-        const user = norm(inputs[i]);
-        if (!user) return false;
-        const alternatives = (accepted[i] ?? []).map(norm);
-        return user === norm(primary) || alternatives.includes(user);
-      });
-    }
-
-    case 'case':
-    case 'casestudy': {
-      const subs = q.subQuestions ?? [];
-      if (!subs.length) return false;
-      return subs.every((sq: any) => {
-        const subAns = ans?.[sq.id];
-        if (sq.type === 'mcq') {
-          return subAns === sq.correctIndex;
-        } else {
-          return subAns?.selfGrade === 'correct';
-        }
-      });
-    }
-
-    default:
-      return false;
-  }
-}
 
 function getQuestionStatus(q: Question, ans: any): 'correct' | 'incorrect' | 'pending' | 'unanswered' {
   const answered = isAnswered(q, ans);
@@ -197,6 +144,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
   const [subAnswers, setSubAnswers] = useState<Record<string, any>>({});
   const [subEssayDrafts, setSubEssayDrafts] = useState<Record<string, string>>({});
   const [revealedSubEssays, setRevealedSubEssays] = useState<Record<string, boolean>>({});
+  const lastFocusedSubQ = useRef<string | null>(null);
 
   const elapsedRef = useRef(0);
   const question = questions[current];
@@ -247,6 +195,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
 
   /* Sync temporary states on index change */
   useEffect(() => {
+    lastFocusedSubQ.current = null;
     setShowEssayAnswer(false);
     if (!question) return;
 
@@ -289,6 +238,17 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
       else if (e.key === 'ArrowLeft') goTo(isRTL ? current + 1 : current - 1);
       else if (e.key.toLowerCase() === 'f') toggleFlag();
       else if (e.key.toLowerCase() === 'g') setShowGrid(s => !s);
+      else if (e.key === 'Enter' && question) {
+        if (question.type === 'essay' && answers[current]?.selfGrade === undefined && !showEssayAnswer) {
+          setShowEssayAnswer(true);
+        }
+        if ((question.type === 'case' || question.type === 'casestudy') && lastFocusedSubQ.current) {
+          const subId = lastFocusedSubQ.current;
+          if ((answers[current] ?? {})[subId]?.selfGrade === undefined && !revealedSubEssays[subId]) {
+            setRevealedSubEssays(prev => ({ ...prev, [subId]: true }));
+          }
+        }
+      }
       else if (/^[1-9]$/.test(e.key) && question) {
         const idx = Number(e.key) - 1;
         if (question.type === 'mcq' && question.options && idx < question.options.length) {
@@ -301,11 +261,42 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
             setAnswers(prev => ({ ...prev, [current]: idx === 0 }));
           }
         }
+        if (question.type === 'essay' && showEssayAnswer) {
+          const ans = answers[current];
+          if (ans?.selfGrade === undefined) {
+            if (idx === 0) {
+              setAnswers(prev => ({ ...prev, [current]: { text: prev[current]?.text || '', selfGrade: 'correct' } }));
+              setShowEssayAnswer(false);
+            } else if (idx === 1) {
+              setAnswers(prev => ({ ...prev, [current]: { text: prev[current]?.text || '', selfGrade: 'incorrect' } }));
+              setShowEssayAnswer(false);
+            }
+          }
+        }
+        if ((question.type === 'case' || question.type === 'casestudy') && lastFocusedSubQ.current) {
+          const subId = lastFocusedSubQ.current;
+          const subVal = (answers[current] ?? {})[subId];
+          if (subVal?.selfGrade === undefined && revealedSubEssays[subId]) {
+            if (idx === 0) {
+              setAnswers(prev => ({
+                ...prev,
+                [current]: { ...prev[current], [subId]: { text: subVal?.text || '', selfGrade: 'correct' } }
+              }));
+              setRevealedSubEssays(prev => ({ ...prev, [subId]: false }));
+            } else if (idx === 1) {
+              setAnswers(prev => ({
+                ...prev,
+                [current]: { ...prev[current], [subId]: { text: subVal?.text || '', selfGrade: 'incorrect' } }
+              }));
+              setRevealedSubEssays(prev => ({ ...prev, [subId]: false }));
+            }
+          }
+        }
       }
     };
     window.addEventListener('keydown', handler);
     return () => window.removeEventListener('keydown', handler);
-  }, [current, question, goTo, toggleFlag, answers, isRTL]);
+  }, [current, question, goTo, toggleFlag, answers, isRTL, showEssayAnswer, revealedSubEssays]);
 
   if (!question) {
     return (
@@ -492,7 +483,14 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
         {!isCompleted && !showEssayAnswer && (
           <div className="flex justify-end">
             <button
-              onClick={() => setShowEssayAnswer(true)}
+              onClick={() => {
+                setShowEssayAnswer(true);
+                requestAnimationFrame(() => {
+                  setTimeout(() => {
+                    document.querySelector('[data-essay-answer]')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                  }, 150);
+                });
+              }}
               className="px-6 py-2.5 bg-gray-950 dark:bg-white text-white dark:text-black rounded-full text-xs font-bold tracking-wide hover:scale-[0.98] transition-transform hover:bg-gray-900 dark:hover:bg-gray-100"
             >
               {t('revealModelAnswer') || "Reveal Model Answer"}
@@ -501,7 +499,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
         )}
 
         {(showEssayAnswer || isCompleted) && (
-          <div className="space-y-4 rounded-xl border border-emerald-500/20 bg-emerald-50/50 dark:bg-emerald-500/[0.03] p-4 text-start">
+          <div data-essay-answer className="space-y-4 rounded-xl border border-emerald-500/20 bg-emerald-50/50 dark:bg-emerald-500/[0.03] p-4 text-start">
             <div className="flex items-center gap-2">
               <Lightbulb size={16} className="text-emerald-500 dark:text-emerald-400" />
               <span className="text-xs font-bold text-emerald-600 dark:text-emerald-400 uppercase tracking-wider">
@@ -757,11 +755,79 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
 
             return (
               <div key={subQ.id} className="border-t border-gray-200 dark:border-white/[0.06] pt-5 text-start">
-                <h4 className="mb-3 text-sm font-semibold text-gray-900 dark:text-white/90">
-                  Sub-question {sIdx + 1}: {subQ.text}
-                </h4>
+                {(() => {
+                  const cleanText = (subQ.text ?? '')
+                    .replace(/^\[TYPE:\s*\w+\]\s*/i, '')
+                    .replace(/^Sub-question\s*\d*\s*:?\s*/i, '');
+                  return (
+                    <h4 className="mb-3 text-sm font-semibold text-gray-900 dark:text-white/90 leading-relaxed">
+                      {cleanText}
+                    </h4>
+                  );
+                })()}
 
-                {subQ.type === 'mcq' && subQ.options ? (
+                {subQ.type === 'fillblank' ? (() => {
+                  const parts = subQ.text.split('___');
+                  const blanksCount = Math.max(parts.length - 1, 1);
+                  const blankInputs: string[] = (subVal?.inputs as string[] | undefined) || Array(blanksCount).fill('');
+                  const submitted = subVal?.submitted === true;
+                  const checkSubBlank = (i: number, val: string) => {
+                    const primary = (subQ.blanks || [])[i]?.trim().toLowerCase() || '';
+                    const alts = ((subQ.acceptedAnswers || [])[i] || []).map(a => a.trim().toLowerCase());
+                    return val.trim().toLowerCase() === primary || alts.includes(val.trim().toLowerCase());
+                  };
+                  return (
+                    <div className="space-y-4">
+                      <div className="rounded-xl border border-gray-200 dark:border-white/[0.05] bg-gray-50/50 dark:bg-white/[0.01] p-4 leading-loose text-sm text-gray-800 dark:text-white/80 text-left">
+                        {parts.map((part, i) => (
+                          <React.Fragment key={i}>
+                            <span className="whitespace-pre-wrap">{part}</span>
+                            {i < blanksCount && (
+                              <span className={`inline-block mx-1 align-middle rounded-lg transition-all ${
+                                submitted
+                                  ? checkSubBlank(i, blankInputs[i] || '')
+                                    ? 'ring-2 ring-emerald-500/40'
+                                    : 'ring-2 ring-rose-500/40'
+                                  : 'ring-2 ring-gray-200 dark:ring-white/10 focus-within:ring-gray-400 dark:focus-within:ring-white/30'
+                              }`}>
+                                <input
+                                  type="text"
+                                  disabled={submitted}
+                                  value={blankInputs[i] || ''}
+                                  onChange={e => {
+                                    const next = [...blankInputs];
+                                    next[i] = e.target.value;
+                                    onChange({ ...subAns, [subQ.id]: { inputs: next, submitted: false } });
+                                  }}
+                                  placeholder={`Blank ${i + 1}`}
+                                  className={`px-3 py-1 rounded-lg text-xs font-bold outline-none bg-gray-100 dark:bg-[#0e0e10] border-0 text-center transition-all ${
+                                    submitted
+                                      ? checkSubBlank(i, blankInputs[i] || '')
+                                        ? 'text-emerald-600 dark:text-emerald-400 bg-emerald-500/5'
+                                        : 'text-rose-600 dark:text-rose-400 bg-rose-500/5 line-through'
+                                      : 'text-gray-900 dark:text-white'
+                                  }`}
+                                  style={{ width: `${Math.max(120, (blankInputs[i]?.length || 8) * 9 + 40)}px` }}
+                                />
+                              </span>
+                            )}
+                          </React.Fragment>
+                        ))}
+                      </div>
+                      {!submitted && (
+                        <div className="flex justify-end">
+                          <button
+                            onClick={() => onChange({ ...subAns, [subQ.id]: { inputs: blankInputs, submitted: true } })}
+                            disabled={blankInputs.some(b => !b?.trim())}
+                            className="px-6 py-2.5 bg-gray-950 dark:bg-white text-white dark:text-black rounded-full text-xs font-bold tracking-wide hover:scale-[0.98] transition-transform disabled:opacity-35 disabled:cursor-not-allowed"
+                          >
+                            Submit Answers
+                          </button>
+                        </div>
+                      )}
+                    </div>
+                  );
+                })() : subQ.type === 'mcq' && subQ.options ? (
                   <div className="space-y-2.5">
                     {subQ.options.map((opt, oIdx) => {
                       const selected = subVal === oIdx;
@@ -818,6 +884,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                           [subQ.id]: { text: val, selfGrade: subVal?.selfGrade }
                         });
                       }}
+                      onFocus={() => { lastFocusedSubQ.current = subQ.id; }}
                       rows={3}
                       placeholder="Type your essay answer…"
                       className="w-full resize-y rounded-xl border border-gray-200 dark:border-white/[0.08] bg-white dark:bg-black/30 p-4 text-xs leading-relaxed text-gray-950 dark:text-white placeholder-gray-400 dark:placeholder-white/25 outline-none transition-colors focus:border-gray-400 dark:focus:border-white/25 backdrop-blur-xl"
@@ -826,7 +893,14 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                     {!isCompleted && !revealedSubEssays[subQ.id] && (
                       <div className="flex justify-end">
                         <button
-                          onClick={() => setRevealedSubEssays(prev => ({ ...prev, [subQ.id]: true }))}
+                          onClick={() => {
+                            setRevealedSubEssays(prev => ({ ...prev, [subQ.id]: true }));
+                            requestAnimationFrame(() => {
+                              setTimeout(() => {
+                                document.querySelector(`[data-sub-essay="${subQ.id}"]`)?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                              }, 150);
+                            });
+                          }}
                           className="px-5 py-2 bg-gray-950 dark:bg-white text-white dark:text-black rounded-full text-[10px] font-bold tracking-wide hover:scale-[0.98] transition-transform hover:bg-gray-900 dark:hover:bg-gray-100"
                         >
                           Reveal Answer
@@ -835,7 +909,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                     )}
 
                     {(revealedSubEssays[subQ.id] || isCompleted) && (
-                      <div className="space-y-3 rounded-lg border border-emerald-500/20 bg-emerald-50/50 dark:bg-emerald-500/[0.02] p-3 text-xs">
+                      <div data-sub-essay={subQ.id} className="space-y-3 rounded-lg border border-emerald-500/20 bg-emerald-50/50 dark:bg-emerald-500/[0.02] p-3 text-xs">
                         <p className="font-semibold text-emerald-600 dark:text-emerald-400">Reference Answer:</p>
                         <p className="text-gray-800 dark:text-white/85 leading-relaxed whitespace-pre-wrap">{subQ.modelAnswer}</p>
                         
@@ -929,7 +1003,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
             <button
               onClick={onBack}
               aria-label="Back"
-              className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.04] transition-colors hover:bg-gray-100 dark:hover:bg-white/[0.08]"
+              className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.04] transition-colors hover:bg-gray-100 dark:hover:bg-white/[0.08]"
             >
               <ArrowLeft size={16} className={`text-gray-750 dark:text-white/70 ${isRTL ? 'rotate-180' : ''}`} />
             </button>
@@ -946,14 +1020,14 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
             <button
               onClick={() => setShowShortcuts(s => !s)}
               aria-label="Keyboard shortcuts"
-              className="hidden h-9 w-9 items-center justify-center rounded-full border border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.04] text-gray-500 dark:text-white/50 transition-colors hover:bg-gray-100 dark:hover:bg-white/[0.08] sm:flex"
+              className="hidden h-11 w-11 items-center justify-center rounded-full border border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.04] text-gray-500 dark:text-white/50 transition-colors hover:bg-gray-100 dark:hover:bg-white/[0.08] sm:flex"
             >
               <Keyboard size={15} />
             </button>
             <button
               onClick={() => setShowGrid(s => !s)}
               aria-label="Question grid"
-              className={`flex h-9 w-9 items-center justify-center rounded-full border transition-colors ${
+              className={`flex h-11 w-11 items-center justify-center rounded-full border transition-colors ${
                 showGrid ? `${style.border} ${style.bg} text-white` : 'border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.04] text-gray-550 dark:text-white/50 hover:bg-gray-100 dark:hover:bg-white/[0.08]'
               }`}
             >
@@ -983,12 +1057,27 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
             className="fixed end-4 top-16 z-40 w-64 rounded-xl border border-gray-205 dark:border-white/[0.08] bg-white/95 dark:bg-[#161618]/95 p-4 text-xs shadow-2xl backdrop-blur-xl text-gray-800 dark:text-white"
           >
             <p className="mb-2 font-semibold text-gray-900 dark:text-white/80">Keyboard shortcuts</p>
-            {[['← →', 'Navigate questions'], ['1–9', 'Select option'], ['F', 'Flag question'], ['G', 'Toggle grid']].map(([k, d]) => (
+            {[['← →', 'Navigate questions'], ['1–9', 'Select MCQ / True-False option'], ['Enter', 'Reveal essay answer'], ['1 / 2', 'Correct / Wrong (essay)'], ['F', 'Flag question'], ['G', 'Toggle grid']].map(([k, d]) => (
               <div key={k} className="flex items-center justify-between py-1 text-gray-500 dark:text-white/50">
                 <span>{d}</span>
                 <kbd className="rounded border border-gray-200 dark:border-white/15 bg-gray-100 dark:bg-white/[0.06] px-1.5 py-0.5 font-mono text-[10px] text-gray-700 dark:text-white/70">{k}</kbd>
               </div>
             ))}
+            <div className="mt-3 border-t border-gray-200 dark:border-white/[0.08] pt-3">
+              <p className="mb-1.5 font-semibold text-gray-900 dark:text-white/80">Star Legend</p>
+              <div className="flex items-center gap-3 py-0.5 text-gray-500 dark:text-white/50">
+                <span className="text-amber-500 dark:text-amber-400 font-bold">★</span>
+                <span>Repeated 2-3 times</span>
+              </div>
+              <div className="flex items-center gap-3 py-0.5 text-gray-500 dark:text-white/50">
+                <span className="text-amber-500 dark:text-amber-400 font-bold">★★</span>
+                <span>Repeated 4-5 times</span>
+              </div>
+              <div className="flex items-center gap-3 py-0.5 text-gray-500 dark:text-white/50">
+                <span className="text-amber-500 dark:text-amber-400 font-bold">★★★</span>
+                <span>Repeated 6+ times</span>
+              </div>
+            </div>
           </motion.div>
         )}
       </AnimatePresence>
@@ -1034,7 +1123,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                     whileHover={{ scale: 1.08 }}
                     whileTap={{ scale: 0.95 }}
                     transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                    className={`relative flex h-9 items-center justify-center rounded-lg border text-xs font-medium tabular-nums transition-all cursor-pointer ${btnStyles} ${activeRing}`}
+                    className={`relative flex h-11 items-center justify-center rounded-lg border text-xs font-medium tabular-nums transition-all cursor-pointer ${btnStyles} ${activeRing}`}
                   >
                     {i + 1}
                     {isFlagged && <Flag size={9} className="absolute -end-1 -top-1 fill-amber-500 text-amber-500" />}
@@ -1067,6 +1156,20 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                 <span className="text-xs text-gray-500 dark:text-white/35 tabular-nums">
                   {current + 1} / {total} · {answeredCount} answered
                 </span>
+                {question.repetitionCount && question.repetitionCount > 1 && (
+                  <span
+                    title={`Repeated ${question.repetitionCount} times — high priority question`}
+                    className="flex items-center gap-0.5 text-[11px] font-bold text-amber-500 dark:text-amber-400 shrink-0 select-none"
+                  >
+                    {question.repetitionCount >= 6 ? (
+                      <><Star size={11} className="fill-amber-500" /><Star size={11} className="fill-amber-500" /><Star size={11} className="fill-amber-500" /></>
+                    ) : question.repetitionCount >= 4 ? (
+                      <><Star size={11} className="fill-amber-500" /><Star size={11} className="fill-amber-500" /></>
+                    ) : (
+                      <Star size={11} className="fill-amber-500" />
+                    )}
+                  </span>
+                )}
               </div>
               <button
                 onClick={toggleFlag}
@@ -1083,7 +1186,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
 
             {/* Question card */}
             <div className="rounded-2xl border border-gray-200 dark:border-white/[0.07] bg-card p-5 shadow-sm dark:shadow-[0_8px_40px_rgba(0,0,0,0.4)] backdrop-blur-xl sm:p-7">
-              {question.type !== 'fillblank' && renderFormattedText(
+              {question.type !== 'fillblank' && question.type !== 'case' && question.type !== 'casestudy' && renderFormattedText(
                 question.text ?? question.question,
                 "mb-6 text-base font-semibold leading-relaxed text-gray-900 dark:text-white sm:text-lg text-left whitespace-pre-line"
               )}
@@ -1102,7 +1205,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                       </div>
                     </div>
                   )}
-                  {question.keyConcept && (
+                  {question.keyConcept && question.type !== 'essay' && (
                     <div className="flex items-start gap-3 rounded-xl border border-sky-500/20 bg-sky-50/50 dark:bg-sky-500/[0.03] p-4">
                       <Bookmark size={16} className="text-sky-500 dark:text-sky-400 shrink-0 mt-0.5" />
                       <div>

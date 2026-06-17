@@ -1,0 +1,2400 @@
+{
+  "schemaVersion": 1,
+  "meta": {
+    "moduleCode": "MCNS-2",
+    "moduleName": "Central Nervous System",
+    "year": 2,
+    "semester": 2,
+    "creditPoints": 6,
+    "totalMarks": 200,
+    "keywords": [
+      "CNS",
+      "Neuroanatomy",
+      "Neuropharmacology",
+      "Neurophysiology",
+      "Neuropathology"
+    ]
+  },
+  "chapterTitle": "II. The Sensory System",
+  "questions": [
+    {
+      "id": "mcns2-ch1-anatomy-q80",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "As regards the spinal nerves, choose the CORRECT statement;",
+      "explanation": "The autonomic fibers arise from the lateral horn (intermediolateral cell column) of the spinal cord gray matter, not the anterior horn. The posterior root carries sensory fibers and contains the dorsal root ganglion. The ventral root carries motor fibers.",
+      "keyConcept": "Autonomic fibers arise from the lateral horn, not the anterior horn",
+      "options": [
+        "Its posterior root contains autonomic fibers.",
+        "Its ventral root carries a root ganglion.",
+        "The dendrites of its posterior root pass centrally.",
+        "Its autonomic fibers arise from anterior horn.",
+        "Cells of spinal ganglion are pseudounipolar."
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q82",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Intermediolateral group of neurons is in:",
+      "explanation": "The intermediolateral cell column (lateral horn) contains the cell bodies of sympathetic preganglionic neurons and is located in the lateral horn of the spinal cord gray matter (T1–L2).",
+      "keyConcept": "Intermediolateral cell column = lateral horn = sympathetic preganglionic neurons",
+      "options": [
+        "Dorsal horn.",
+        "Lateral horn.",
+        "Ventral horn.",
+        "All of the above.",
+        "None of the above."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q87",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Crude touch is carried on which tract?",
+      "explanation": "Crude touch and pressure are carried by the ventral (anterior) spinothalamic tract. Pain and temperature are carried by the lateral spinothalamic tract, while fine touch uses the dorsal columns.",
+      "keyConcept": "Ventral spinothalamic carries crude touch",
+      "options": [
+        "Lateral spinothalamic T.",
+        "Ventral spinothalamic T.",
+        "Spinocerebellar T.",
+        "Spinotectal T.",
+        "Cuneate T."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q92",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The right medial lemniscus carries sensations of:",
+      "explanation": "The medial lemniscus is formed by second order neurons of the dorsal column pathway (gracile and cuneate). It carries conscious proprioception and fine touch from the contralateral side of the body.",
+      "keyConcept": "Medial lemniscus carries contralateral fine touch/proprioception",
+      "options": [
+        "Pain from the left side of the body.",
+        "Conscious proprioception from the left side of the body.",
+        "Muscle tone from right side of the body.",
+        "Crude touch from the left side of the body.",
+        "Fine touch from right side of body."
+      ],
+      "correctIndex": 4
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q96",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The postcentral gyrus receives all the following sensations Except:",
+      "explanation": "The postcentral gyrus is the primary somatosensory cortex. It receives pain and temperature via the spinothalamic pathway, but does not receive muscle tone, which is a motor function.",
+      "keyConcept": "Postcentral gyrus processes sensory modalities except motor tone",
+      "options": [
+        "Tactile discrimination.",
+        "Touch.",
+        "Muscle tone.",
+        "Pain and temperature.",
+        "Form."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q97",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Sense of movement and sense of position are lost after lesion of:",
+      "explanation": "Sense of movement (kinesthesia) and position sense are carried by the dorsal column tracts (gracile and cuneate). Loss of these sensations indicates damage to the posterior columns.",
+      "keyConcept": "Gracile and cuneate tracts carry position/movement sense",
+      "options": [
+        "Spinorecticular tract.",
+        "Lateral spinothalamic tract.",
+        "Ventral spinothalamic tract.",
+        "Gracile and cuneate tracts.",
+        "Spinotectal tract."
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q101",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which one of the following sensations has most of its fibers NOT synapsing in the spinal cord?",
+      "explanation": "Fine touch and conscious proprioception from the upper limb (position sense) do not synapse in the spinal cord; their first order neurons pass directly to the dorsal column nuclei in the medulla.",
+      "keyConcept": "Dorsal column sensations bypass spinal synapse",
+      "options": [
+        "Sensation of pain of left lower limb.",
+        "Sensation of crude touch of right upper limb.",
+        "Sensation of position of left upper limb.",
+        "Sensation of temperature of left big toe.",
+        "Sensation of pain of left shoulder."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q106",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "As regards pathway of fine touch, choose the CORRECT statement:",
+      "explanation": "Fine touch pathway: 1st neuron (dorsal root ganglion) ascends in dorsal columns to gracile/cuneate nuclei; 2nd neuron decussates as internal arcuate fibers and ascends in medial lemniscus (not spinal lemniscus) to VPL (not VPM) of thalamus.",
+      "keyConcept": "Fine touch uses medial lemniscus, not spinal lemniscus",
+      "options": [
+        "Its 1st neuron terminates in posterior horn of spinal cord.",
+        "Its 2nd neuron form external arcuate fibers.",
+        "Its fibers ascend in brain stem within spinal lemniscus.",
+        "VPMN of thalamus forms its 3rd neuron.",
+        "Its fibers pass through posterior limb of internal capsule."
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q114",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Syringomyelia first affects:",
+      "explanation": "Syringomyelia first affects crossing spinothalamic fibers in the central cord, causing bilateral loss of pain and temperature while preserving dorsal column functions (touch, proprioception).",
+      "keyConcept": "Syringomyelia affects crossing pain/temperature fibers",
+      "options": [
+        "Vibration sense.",
+        "Pain and temperature on both sides of the body.",
+        "Pain and temperature on one side of the body.",
+        "Touch sensation.",
+        "Motor activity."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q116",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "A patient who has a right hemisection of spinal cord at the level of T6 will suffer from all the following EXCEPT:",
+      "explanation": "Right hemisection at T6 causes ipsilateral paralysis and proprioception loss in the right lower limb, contralateral pain/temperature loss in the left lower limb. Fine touch from upper limb uses dorsal columns which are unaffected.",
+      "keyConcept": "Hemisection spares ipsilateral upper limb fine touch",
+      "options": [
+        "Paralysis of muscles of 6th right intercostal space.",
+        "Loss of proprioception of right lower limb.",
+        "Loss of fine touch in right upper limb.",
+        "Loss of pain & temperature in left lower limb.",
+        "Paralysis of right lower limb."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q123",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Describe pathway of pain from face.",
+      "explanation": "Pain from the face uses the trigeminal pathway: 1st neuron (pseudounipolar) cell body in trigeminal ganglion → enters pons → descends to spinal nucleus of CN V → 2nd neuron decussates as internal arcuate fibers → ascends as trigeminal lemniscus → VPM of thalamus → 3rd neuron projects via posterior limb of internal capsule to postcentral gyrus (S1 cortex).",
+      "keyConcept": "Trigeminal pain pathway: trigeminal ganglion → spinal nucleus CN V → VPM thalamus → postcentral gyrus",
+      "modelAnswer": "Pain pathway from face: (1st neuron) Trigeminal ganglion → (enters pons) → descends to spinal nucleus of CN V → (2nd neuron) decussates as internal arcuate fibers → ascends as trigeminal lemniscus → VPM of thalamus → (3rd neuron) via posterior limb of internal capsule → postcentral gyrus (S1 cortex)."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q124",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Enumerate the neurons that form pathway of pain from body.",
+      "explanation": "Pain from the body uses a three-neuron pathway: 1st: Dorsal root ganglion cell (peripheral process receives pain, central process enters spinal cord via Lissauer's tract); 2nd: Substantia gelatinosa/lamina I in posterior horn (axon decussates in anterior white commissure, ascends 1-2 segments); 3rd: VPL nucleus of thalamus (projects to somatosensory cortex via internal capsule).",
+      "keyConcept": "Three-neuron pain pathway from body: DRG → posterior horn → VPL thalamus → cortex",
+      "modelAnswer": "Neurons in pain pathway from body: (1st) Dorsal root ganglion cell - peripheral process receives pain, central process enters spinal cord; (2nd) Neuron in posterior horn (substantia gelatinosa/lamina I) - axon decussates in anterior white commissure and ascends 1-2 segments; (3rd) Neuron in VPL nucleus of thalamus - axon projects to somatosensory cortex via internal capsule."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q125",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Enumerate the neurons that form pathway of crude touch from body.",
+      "explanation": "Crude touch from the body uses a three-neuron pathway: 1st: Dorsal root ganglion cell (peripheral process receives touch, central process enters and ascends/descends 1-2 segments in Lissauer's tract); 2nd: Nucleus proprius (laminae III, IV) in posterior horn (axon decussates and ascends in ventral spinothalamic tract); 3rd: VPL thalamus → postcentral gyrus. Crude touch crosses early and ascends contralaterally.",
+      "keyConcept": "Three-neuron crude touch pathway: DRG → nucleus proprius → VPL thalamus → cortex",
+      "modelAnswer": "Neurons in crude touch pathway from body: (1st) Dorsal root ganglion cell - peripheral process receives touch, central process enters spinal cord and ascends/descends 1-2 segments in Lissauer's tract; (2nd) Neuron in nucleus proprius of posterior horn (laminae III, IV) - axon decussates in anterior white commissure and ascends in ventral spinothalamic tract; (3rd) Neuron in VPL nucleus of thalamus - axon projects to postcentral gyrus via posterior limb of internal capsule."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q126",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Enumerate the neurons that form pathway of conscious proprioception & fine touch from body.",
+      "explanation": "Conscious proprioception and fine touch use dorsal column pathways: 1st: Dorsal root ganglion cell (peripheral receptor → central process ascends ipsilaterally in dorsal columns); Gracile tract carries lower body info, cuneate tract carries upper body info. 2nd: Gracile/cuneate nuclei of medulla → internal arcuate fibers decussate → medial lemniscus → VPL thalamus. 3rd: VPL → postcentral gyrus via posterior limb of internal capsule. These fibers remain ipsilateral until the medulla.",
+      "keyConcept": "Dorsal column pathway: ipsilateral ascent in fasciculus gracilis/cuneatus → medial lemniscus after decussation",
+      "modelAnswer": "Neurons in conscious proprioception and fine touch pathway: (1st) Dorsal root ganglion cell - peripheral receptor receives stimulus, central process ascends ipsilaterally in dorsal columns (fasciculus gracilis/cuneatus); (2nd) Neuron in gracile/cuneate nuclei of medulla - axon decussates as internal arcuate fibers and ascends as medial lemniscus to VPL of thalamus; (3rd) Neuron in VPL of thalamus - axon passes through posterior limb of internal capsule to postcentral gyrus."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q127",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Enumerate the tracts that carry conscious & unconscious proprioception.",
+      "explanation": "Conscious proprioception is carried by: Gracile tract (lower body below T6) and Cuneate tract (upper body above T6). Unconscious proprioception is carried by: Posterior spinocerebellar tract (from Clarke's nucleus, lower body), Anterior spinocerebellar tract (lower body), and Cuneocerebellar tract (from accessory cuneate nucleus, upper body). The distinction is clinically important.",
+      "keyConcept": "Conscious: dorsal columns (gracile/cuneate). Unconscious: spinocerebellar tracts (posterior, anterior, cuneocerebellar)",
+      "modelAnswer": "Tracts for proprioception: (A) CONSCIOUS proprioception: Gracile tract (lower body) and Cuneate tract (upper body). (B) UNCONSCIOUS proprioception: (1) Posterior spinocerebellar tract (from Clarke's nucleus, lower body); (2) Anterior spinocerebellar tract (lower body); (3) Cuneocerebellar tract (from accessory cuneate nucleus, upper body)."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q128",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Give an account on pathway of pain from the face and body.",
+      "explanation": "Pain from face and body both reach the thalamus and cortex but use different pathways: BODY: DRG → Lissauer's tract → substantia gelatinosa → decussates → lateral spinothalamic tract → VPL thalamus → postcentral gyrus. FACE: Trigeminal ganglion → spinal nucleus CN V → decussates → trigeminal lemniscus → VPM thalamus → postcentral gyrus. Both pathways converge at thalamus and somatosensory cortex but use different nuclei.",
+      "keyConcept": "Face pain uses trigeminal lemniscus (VPM); body pain uses spinothalamic tract (VPL)",
+      "modelAnswer": "Pain pathway from face and body: BODY: (1st) DRG → Lissauer's tract → posterior horn; (2nd) Substantia gelatinosa → decussates → lateral spinothalamic tract; (3rd) VPL thalamus → postcentral gyrus. FACE: (1st) Trigeminal ganglion → spinal nucleus CN V; (2nd) Decussates → trigeminal lemniscus; (3rd) VPM thalamus → postcentral gyrus. Both pathways converge at thalamus and cortex but use different nuclei."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q129",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Name the tract (s) carrying touch sensations of the face.",
+      "explanation": "Touch from the face is carried by two tracts: Discriminative (fine) touch uses the principal (main) sensory nucleus of CN V → ventral trigeminothalamic tract → VPM of thalamus → postcentral gyrus. Crude touch uses the spinal nucleus of CN V → ventral trigeminothalamic tract → VPM thalamus. Both pathways ultimately project to the VPM and postcentral gyrus.",
+      "keyConcept": "Face touch: principal sensory nucleus (fine touch) and spinal nucleus (crude touch) both via ventral trigeminothalamic tract to VPM",
+      "modelAnswer": "Touch sensations of the face are carried by: (1) Discriminative (fine) touch: Principal (main) sensory nucleus of CN V → ventral trigeminothalamic tract → VPM of thalamus → postcentral gyrus. (2) Crude touch: Spinal nucleus of CN V → ventral trigeminothalamic tract → VPM of thalamus. Both pathways use the trigeminal nerve and its sensory nuclei."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q134",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Describe the clinical picture of a patient with Brown Sequard syndrome.",
+      "explanation": "Brown-Sequard syndrome (hemisection of cord): IPSILATERAL to lesion: UMN paralysis below level, loss of conscious proprioception and fine touch (dorsal columns), LMN signs at exact segment level; CONTRALATERAL to lesion: loss of pain and temperature starting 1-2 segments below (spinothalamic fibers have already crossed). At lesion level: LMN signs at that specific level.",
+      "keyConcept": "Brown-Sequard: ipsilateral UMN paralysis + dorsal column loss; contralateral pain/temperature loss",
+      "modelAnswer": "Brown-Sequard syndrome (hemisection): (1) IPSILATERAL to lesion: UMN paralysis below; loss of conscious proprioception and fine touch (dorsal columns); (2) CONTRALATERAL to lesion: Loss of pain and temperature starting 1-2 segments below (spinothalamic); (3) At lesion level: LMN signs at exact segment, and loss of all sensations at that level."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q135",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Describe sensory loss in case of syringomyelia.",
+      "explanation": "Syringomyelia causes dissociated sensory loss: (1) BILATERAL cape-like loss of pain and temperature (due to damage to crossing spinothalamic fibers in anterior white commissure where syrinx forms); (2) Touch sensation partially preserved (dorsal columns intact); (3) Proprioception preserved; (4) Loss begins in upper limbs and may extend. The key finding is dissociated sensory loss - loss of pain/temperature with preserved touch and proprioception.",
+      "keyConcept": "Syringomyelia: cavitation near central canal damages crossing spinothalamic fibers causing dissociated sensory loss",
+      "modelAnswer": "Sensory loss in syringomyelia: (1) BILATERAL cape-like loss of pain and temperature (due to damage to crossing spinothalamic fibers in anterior white commissure); (2) Touch sensation partially preserved (dorsal columns intact); (3) Proprioception preserved; (4) Sensory loss begins in upper limbs and may extend to trunk and lower limbs; (5) 'Dissociated sensory loss' - loss of pain/temperature with preserved touch."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q139",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Persistent pain in big toe is received in:",
+      "explanation": "The big toe is represented in the most medial and inferior part of the postcentral gyrus, which continues onto the paracentral lobule. The representation follows a somatotopic pattern with the foot at the medial surface.",
+      "keyConcept": "Big toe represented at medial postcentral gyrus/paracentral lobule",
+      "options": [
+        "Lower part of post central gyrus.",
+        "Upper part of post central gyrus.",
+        "Anterior part of paracentral lobule.",
+        "Posterior part of paracentral lobule.",
+        "Superior lip of lateral sulcus."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q167",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The internal arcuate fibers in the medulla are axons of:",
+      "explanation": "Internal arcuate fibers are axons of second-order neurons in the dorsal column nuclei (gracile and cuneate nuclei). They decussate in the medulla to form the medial lemniscus.",
+      "keyConcept": "Internal arcuate fibers from gracile/cuneate nuclei",
+      "options": [
+        "Nucleus solitarius.",
+        "Superior olivary nucleus.",
+        "Accessory cuneate nuclei.",
+        "Inferior vestibular nucleus.",
+        "Gracile & cuneate nuclei."
+      ],
+      "correctIndex": 4
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q187",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The nucleus that receives taste fibers is:",
+      "explanation": "The gracile and cuneate nuclei are supplied by the posterior inferior cerebellar artery (PICA) and vertebral artery branches, not the anterior spinal artery.",
+      "keyConcept": "Posterior spinal arteries supply dorsal column nuclei",
+      "options": [
+        "Nucleus Solitarius.",
+        "Nucleus Ambiguus.",
+        "Spinal nucleus of V.",
+        "Inferior salivatory nucleus.",
+        "Dorsal vagal nucleus."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q193",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Describe sensory decussation.",
+      "explanation": "Sensory decussation (lemniscal decussation): LOCATION at the caudal medulla (similar level to pyramidal decussation). PROCESS: Second-order neurons from gracile and cuneate nuclei send fibers that become internal arcuate fibers and cross in the medulla. RESULT: These crossed fibers form the medial lemniscus which ascends to the contralateral thalamus. IMPORTANCE: This explains why dorsal column lesions cause ipsilateral sensory loss.",
+      "keyConcept": "Sensory decussation: dorsal column nuclei fibers cross to form medial lemniscus; dorsal column lesions cause ipsilateral loss",
+      "modelAnswer": "NUCLEI OF TRIGEMINAL NERVE: (1) MOTOR NUCLEUS (SVE) - muscles of mastication, tensor tympani, tensor veli palatini, mylohyoid, anterior belly of digastric; (2) PRINCIPAL SENSORY NUCLEUS (GSA) - discriminative touch from face; (3) SPINAL NUCLEUS (GSA) - pain and temperature from face; (4) MESENCEPHALIC NUCLEUS - proprioception from mastication muscles and teeth."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q195",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Enumerate structures in basis pontis.",
+      "explanation": "Structures in the basis pontis include: (1) LONGITUDINAL FIBERS - corticopontine, corticospinal, corticobulbar fibers descending through the pons; (2) TRANSVERSE FIBERS - pontocerebellar fibers linking the pons with the cerebellum (these are interrupted by longitudinal fibers); (3) PONTINE NUCLEI - gray matter between fiber bundles receiving cortical input; (4) BASILAR ARTERY runs in the basilar sulcus. The basis pontis is separated from tegmentum by the trapezoid body.",
+      "keyConcept": "Basis pontis: longitudinal fibers (corticospinal), transverse fibers (pontocerebellar), pontine nuclei",
+      "modelAnswer": "NUCLEI OF SVE COLUMN: (1) TRIGEMINAL MOTOR NUCLEUS (V) - mastication muscles; (2) FACIAL MOTOR NUCLEUS (VII) - facial expression muscles; (3) NUCLEUS AMBIGUUS (IX, X, XI) - pharynx/larynx muscles, sternocleidomastoid, trapezius; (4) ACCESSORY NUCLEUS (XI) - same as nucleus ambiguus for spinal part."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q410",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The layer rich in neuroblasts in the developing spinal cord is:",
+      "explanation": "The mantle layer (intermediate zone) of the developing spinal cord is rich in NEUROBLASTS (developing neurons) and is located between the ventricular zone (ependymal layer) and the marginal zone. The alar plate neuroblasts form the dorsal horn (sensory); the basal plate neuroblasts form the ventral horn (motor).",
+      "keyConcept": "Mantle layer (intermediate zone) contains neuroblasts; alar plate forms dorsal horn; basal plate forms ventral horn.",
+      "options": [
+        "Roof plate.",
+        "Mantle layer.",
+        "Marginal layer.",
+        "Floor plate.",
+        "All of the above."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q412",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Alar plates form:",
+      "explanation": "The alar plates are the dorsal sensory horns of the spinal cord that develop from the alar (sensory) region of the neural tube. They form the dorsal (posterior) horns which receive sensory (afferent) fibers from the dorsal root ganglia. The basal plates form the ventral horns (motor).",
+      "keyConcept": "Alar plates form the DORSAL HORNS of spinal cord (sensory); basal plates form VENTRAL horns (motor).",
+      "options": [
+        "Lateral horns.",
+        "Dorsal horns.",
+        "Ventral horns.",
+        "All of the above.",
+        "None of the above."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q413",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Basal plates form:",
+      "explanation": "Basal plates are the anterior (ventral) portions of the alar and basal plates in the developing neural tube. The basal plate gives rise to motor neurons that form the VENTRAL (anterior) horns of the spinal cord, which contain lower motor neurons. The alar plates form the dorsal (posterior) horns. Lateral horns appear only at T1-L2 levels (sympathetic neurons).",
+      "keyConcept": "Basal plates form VENTRAL HORNS of spinal cord (motor neurons); alar plates form dorsal horns (sensory neurons).",
+      "options": [
+        "Ventral horns.",
+        "Dorsal horns.",
+        "Lateral horns.",
+        "All of the above.",
+        "None of the above."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q471",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "A patient complains of unsteadiness during that is profound during darkness. Examination shows a marked diminution of position sense, vibration sense, and stereognosis of all extremities. He is unable to stand without wavering for more than a few seconds when his eyes are closed. There are no other abnormal findings. The lesion most likely involves the:",
+      "explanation": "Bilateral dorsal column lesion causes loss of proprioception, vibration sense, and stereognosis in all extremities, with a positive Romberg sign (falls when eyes closed because proprioception is lost). The patient uses visual input to compensate, hence the profound unsteadiness in darkness. Spinocerebellar tract lesions cause ataxia but not sensory loss; lateral column lesions affect corticospinal tracts.",
+      "keyConcept": "Bilateral dorsal column lesion = loss of proprioception/vibration/stereognosis, positive Romberg; profound unsteadiness in darkness because vision cannot compensate.",
+      "options": [
+        "Lateral columns of the spinal cord, bilaterally",
+        "Inferior cerebellar peduncles, bilaterally",
+        "Dorsal columns of the spinal cord, bilaterally",
+        "Spinothalamic tracts, bilaterally",
+        "Corticospinal tracts"
+      ],
+      "correctIndex": 4
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q474",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which of the following might be the location of lesion in this patient? (referring to Question 31)",
+      "explanation": "In Brown-Sequard syndrome (hemisection of spinal cord), the lesion affects the ipsilateral corticospinal tract (motor paralysis) and ipsilateral dorsal column (loss of proprioception/vibration) below the lesion, while the contralateral spinothalamic tract (pain/temperature) is lost because it crosses within one or two segments. Left motor deficit + right pinprick loss = LEFT cord hemisection. At C8 level, this causes motor weakness in the left lower limb and sensory loss on the right below C8.",
+      "keyConcept": "Left motor + right pain loss = LEFT Brown-Sequard syndrome. Left C8 cord hemisection causes left lower limb weakness and right C8-dermatome pain loss.",
+      "options": [
+        "Right C6 cord",
+        "Right C8 cord",
+        "Left C6 cord",
+        "Left C8 cord"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q475",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "A patient with a traumatic lesion of the left half of the spinal cord at the level of the eighth cervical segment might present the following sign(s) and symptom(s):",
+      "explanation": "In left hemisection (Brown-Sequard syndrome), the corticospinal tract is damaged on the left side, causing ipsilateral UMN signs below the lesion. Option D is correct because the left corticospinal damage produces left-sided positive Babinski sign below C8. Option A is wrong (pain/temp loss is contralateral in spinothalamic tract damage). Option B is wrong (position sense loss is ipsilateral in dorsal column damage). Option C is wrong (hemiplegia would be ipsilateral, not right). Option E is wrong (LMN signs occur at the lesion level, not below).",
+      "keyConcept": "In spinal cord hemisection, ipsilateral UMN paralysis and Babinski sign occur below the lesion due to corticospinal tract damage.",
+      "options": [
+        "Loss of pain and temperature sensations on the left side below the level of the lesion",
+        "Loss of position sense of the right leg",
+        "Right hemiplegia",
+        "Left positive Babinski sign",
+        "Right-sided lower motor paralysis in the segment of the lesion and muscular atrophy"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q514",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Hemisection of spinal cord gives the following symptoms on the same side below the level of lesion:",
+      "explanation": "Brown-Sequard syndrome (hemisection of spinal cord): ipsilateral motor weakness and proprioception loss (corticospinal and dorsal columns) BELOW lesion; contralateral pain/temperature loss (spinothalamic) 1-2 segments below lesion.选项D正确. The answer is D. This is the classic dissociated sensory loss pattern.",
+      "keyConcept": "Brown-Sequard: ipsilateral motor/ proprioception loss, contralateral pain/temperature loss - below lesion level.",
+      "options": [
+        "Proprioception loss",
+        "Upper motor neuron lesion",
+        "Loss of pain and temperature",
+        "All of the above",
+        "a & B only"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q528",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Spinal n. of trigeminal, equivalent to:",
+      "explanation": "The spinal nucleus of the trigeminal nerve is equivalent to substantia gelatinosa (Rexed lamina II) of the spinal cord dorsal horn. Both are involved in pain and temperature transmission. The main sensory nucleus handles fine touch; Clarke's nucleus is for proprioception.",
+      "keyConcept": "Spinal nucleus of V = substantia gelatinosa (pain/temp). Main sensory nucleus = epicritic touch.",
+      "options": [
+        "Substantia gelatinosa",
+        "Clarck’s n",
+        "Main sensory n",
+        "Commissural nuclei"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q532",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Crossing fibers of gracile & cuneate tracts are called:",
+      "explanation": "Internal arcuate fibers are the DECUSSATING (crossing) fibers of the dorsal column-medial lemniscal system. They cross in the sensory decussation of the closed medulla and form the medial lemniscus. External arcuate fibers are cerebellar afferents.",
+      "keyConcept": "Internal arcuate fibers: cross in sensory decussation → form medial lemniscus. External arcuate: cerebellar afferents.",
+      "options": [
+        "Internal arcuate",
+        "Dorsal external arcuate",
+        "Ventral external arcuate",
+        "Horizontal"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q544",
+      "type": "essay",
+      "lecture": 1,
+      "text": "What does lesion of first somatosensory area cause?",
+      "explanation": "The first somatosensory area receives sensory input from the contralateral body. A lesion causes contralateral hemianesthesia (loss of sensation on the opposite side of the body). The face area is in the lower part, upper limb in middle, and lower limb on the medial surface.",
+      "keyConcept": "First somatosensory area: postcentral gyrus; lesion → contralateral hemianesthesia (loss of all sensation).",
+      "modelAnswer": "Contralateral hemianesthesia (loss of sensation on the opposite side of the body). More detailed: loss of fine touch, proprioception, and stereognosis on the contralateral side, particularly affecting the distal parts of limbs more than proximal."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q546",
+      "type": "essay",
+      "lecture": 1,
+      "text": "What is the site of second somatosensory area?",
+      "explanation": "The second somatosensory area (S2) is located in the superior lip of the postcentral gyrus, behind the central sulcus, and extends into the parietal operculum. It receives input from S1 and is involved in more complex sensory processing.",
+      "keyConcept": "Second somatosensory area: superior lip of postcentral gyrus, parietal operculum, near lateral sulcus.",
+      "modelAnswer": "Superior lip of post-ramus of lateral sulcus behind the central sulcus. It lies in the parietal operculum and extends into the anterior part of insula. Smaller body representation than S1, bilateral representation."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q561",
+      "type": "essay",
+      "lecture": 1,
+      "text": "What are the 3 neurons that form the pathway of pain and temperature from the body?",
+      "explanation": "Pain and temperature from the body: 1st neuron: dorsal root ganglion → spinal cord dorsal horn. 2nd neuron: substantia gelatinosa/lamina 4 → VPL nucleus of thalamus (decussating as spinothalamic tract). 3rd neuron: VPL → somatosensory cortex.",
+      "keyConcept": "Pain/temp pathway (body): DRG → dorsal horn → VPL (decussates at spinal level) → SI cortex.",
+      "modelAnswer": "First order neuron: cell body in dorsal root ganglion, peripheral process from receptor, central process enters spinal cord. Second order neuron: substantia gelatinosa (lamina 2) for slow pain; nucleus proprius (lamina 4) for fast pain and temperature. Axons cross at spinal level and ascend in spinothalamic tract to VPL nucleus of thalamus. Third order neuron: VPL nucleus of thalamus to primary somatosensory cortex."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q563",
+      "type": "essay",
+      "lecture": 1,
+      "text": "What are the 3 neurons that form the pathway of crude touch and pressure?",
+      "explanation": "Crude touch and pressure: 1st: DRG → spinal cord dorsal column. 2nd: nucleus proprius (lamina 4-5) → VPL via anterior spinothalamic tract. 3rd: VPL → somatosensory cortex. This is different from fine touch which travels in dorsal columns.",
+      "keyConcept": "Crude touch/pressure: DRG → nucleus proprius → VPL (via anterior spinothalamic) → cortex.",
+      "modelAnswer": "First order neuron: dorsal root ganglion cell, central process to dorsal column. Second order neuron: nucleus proprius (laminae 4-5 of dorsal horn), axons cross and ascend in anterior spinothalamic tract to VPL nucleus of thalamus. Third order neuron: VPL nucleus of thalamus to primary somatosensory cortex."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q564",
+      "type": "essay",
+      "lecture": 1,
+      "text": "What are the 3 neurons that for the pathway of conscious proprioception and fine touch?",
+      "explanation": "Conscious proprioception and fine touch: 1st neuron: DRG → medulla (dorsal columns). 2nd neuron: gracile/cuneate nuclei → VPL via internal arcuate fibers (decussation = sensory decussation). 3rd neuron: VPL → SI cortex.",
+      "keyConcept": "Conscious proprioception: DRG → gracile/cuneate nuclei → VPL (decussates in medulla) → cortex.",
+      "modelAnswer": "First order neuron: dorsal root ganglion cell, central process ascends in dorsal column (fasciculus gracilis for lower body, fasciculus cuneatus for upper body) to the medulla. Second order neuron: gracile and cuneate nuclei of medulla, axons cross as internal arcuate fibers (sensory decussation) to form medial lemniscus to VPL nucleus of thalamus. Third order neuron: VPL nucleus of thalamus to primary somatosensory cortex."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q571",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Which artery supplies the posterior 1/3 of the spinal cord?",
+      "explanation": "The posterior spinal arteries (usually two) supply the posterior one-third of the spinal cord, including the dorsal horns and dorsal columns. They run along the posterolateral surfaces near the dorsal nerve roots.",
+      "keyConcept": "Posterior spinal arteries: posterior 1/3 of spinal cord (dorsal columns and dorsal horns).",
+      "modelAnswer": "Posterior spinal arteries. They supply the posterior horns and posterior columns of the spinal cord, running along the posterolateral sulcus near the dorsal nerve roots."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q575",
+      "type": "essay",
+      "lecture": 1,
+      "text": "What is the effect of spinal cord hemisection?",
+      "explanation": "Brown-Sequard syndrome (hemisection): at lesion level = ipsilateral loss of all sensation + LMNL; below lesion (ipsilateral) = proprioception loss + UMNL; below lesion (contralateral) = pain/temperature loss. This occurs because corticospinal and dorsal columns cross in the brainstem while spinothalamic crosses at spinal level.",
+      "keyConcept": "Brown-Sequard: at level = IPSI all sensation + LMNL; below IPSI = proprioception + UMNL; below CONTRA = pain/temp.",
+      "modelAnswer": "At the level of lesion (ipsilateral): loss of all types of sensation and lower motor neuron signs. Below the lesion (ipsilateral): loss of proprioception and upper motor neuron signs. Below the lesion (contralateral): loss of pain and temperature sensations. This dissociated sensory loss is characteristic of hemisection."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q653",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The ventral grey column of the spinal cord contains the following groups of nerve cells Except",
+      "explanation": "The ventral grey column contains dorsomedial, ventrolateral, intermediolateral, and central groups; the retrodorsolateral group is found in the dorsal horn (lamina IX), not ventral horn.",
+      "keyConcept": "Ventral horn neuronal groups",
+      "options": [
+        "Dorsomedial group",
+        "Ventrolateral group",
+        "Intermediolateral group",
+        "Central group",
+        "Retrodorsolateral group"
+      ],
+      "correctIndex": 4
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q654",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The gracile and cuneate tracts of the spinal cord are supplied by",
+      "explanation": "The gracile and cuneate tracts are supplied by the posterior spinal arteries (branches of vertebral artery) and radicular arteries; the anterior spinal artery supplies anterior cord structures.",
+      "keyConcept": "Dorsal column arterial supply",
+      "options": [
+        "Anterior spinal artery",
+        "Posterior spinal artery",
+        "Radicular arteries",
+        "All of the above",
+        "Vertebral artery"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q657",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Hemisection of spinal cord gives the following symptoms on the same side below the level of lesion",
+      "explanation": "In spinal cord hemisection (Brown-Sequard), ipsilateral loss below lesion includes proprioception (dorsal columns) and upper motor neuron signs (corticospinal tract); pain/temperature loss is contralateral (spinothalamic decussation).",
+      "keyConcept": "Brown-Sequard ipsilateral signs",
+      "options": [
+        "Proprioception loss",
+        "Upper motor neuron lesion",
+        "Loss of pain and temperature",
+        "All of the above",
+        "A & B only"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q658",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The following occur in Brown Sequard Syndrome Except",
+      "explanation": "In Brown-Sequard syndrome, the LMN lesion at the level of lesion is ipsilateral (not contralateral); the lesion involves corticospinal tract (ipsi UMN signs) and dorsal columns (ipsi proprioception).",
+      "keyConcept": "Brown-Sequard LMN lesion side",
+      "options": [
+        "Ipsilateral UMN lesion below level of lesion",
+        "Contralateral loss of exteroceptive sensations below level of lesion",
+        "Ipsilateral loss of proprioceptive sensations below level of lesion",
+        "Contralateral L.M.N. lesion at same level of lesion",
+        "Ipsilateral loss of pain and temperature at same level of lesion"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q680",
+      "type": "mcq",
+      "lecture": 3,
+      "text": "Which of the following correctly pairs a neural structure with its functional role?",
+      "explanation": "The dorsal column-medial lemniscal pathway carries fine touch, vibration, and proprioception. The nucleus cuneatus (not gracilis) receives upper limb proprioception. Gracilis nucleus receives lower limb input.",
+      "keyConcept": "Dorsal column pathways are modality-specific: cuneatus for upper limb, gracilis for lower limb.",
+      "options": [
+        "Spinothalamic tract – conscious proprioception from lower limb",
+        "Cuneate nucleus – unconscious proprioception from upper limb",
+        "Gracile nucleus – conscious proprioception from lower limb",
+        "Dorsal spinocerebellar tract – unconscious proprioception from upper limb",
+        "Ventral spinocerebellar tract – unconscious proprioception from upper limb"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q681",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which tracts carry kinesthetic sensation from the body?",
+      "explanation": "Kinesthetic sensation (joint position, movement) travels via the dorsal column-medial lemniscal pathway: gracile fasciculus for lower body, cuneate fasciculus for upper body.",
+      "keyConcept": "Dorsal columns are the exclusive pathway for conscious proprioception and kinesthesia.",
+      "options": [
+        "Anterior spinocerebellar tract",
+        "Dorsal spinocerebellar tract",
+        "Dorsal spinothalamic tract",
+        "Ventral spinothalamic tract",
+        "Gracile and Cuneate tracts"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q683",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Unconscious proprioception from the wrist is carried through which of the following tracts?",
+      "explanation": "Unconscious proprioception from the upper limb is carried by cuneospinocerebellar fibers that travel in the inferior cerebellar peduncle to the cerebellum (not the dorsal columns which carry conscious proprioception).",
+      "keyConcept": "Cuneospinocerebellar tract carries unconscious upper limb proprioception via inferior cerebellar peduncle.",
+      "options": [
+        "Cuneocerebellar tract",
+        "Dorsal spinocerebellar tract",
+        "Ventral spinocerebellar tract",
+        "Spinothalamic tract",
+        "Cuneate tract"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q693",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "A patient presents with sudden onset bilateral paraplegia and loss of pain and temperature sensation below a certain level. The most likely cause is:",
+      "explanation": "Anterior spinal artery syndrome causes bilateral motor paralysis (corticospinal tracts) and loss of pain/temperature (spinothalamic tracts) below the lesion, with preserved proprioception (dorsal columns supplied by posterior spinal arteries).",
+      "keyConcept": "Anterior spinal artery occlusion causes bilateral motor and pain/temperature loss with preserved proprioception.",
+      "options": [
+        "Anterior spinal artery occlusion",
+        "Posterior spinal artery occlusion",
+        "Adamkiewicz artery occlusion",
+        "Brown-Séquard syndrome",
+        "None of the above"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q694",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "30-year-old male suffers a traumatic injury to his spine. He cannot move his legs and has lost all sensation below the level of the injury. Most likely diagnosis:",
+      "explanation": "Bilateral leg weakness and loss of pain/temperature suggest anterior cord syndrome from anterior spinal artery occlusion. Posterior column function (proprioception) is preserved because they are supplied by posterior spinal arteries.",
+      "keyConcept": "Anterior cord syndrome spares dorsal columns while affecting lateral corticospinal and spinothalamic tracts.",
+      "options": [
+        "Complete spinal cord transection at C4",
+        "Complete spinal cord transection at T5",
+        "Complete spinal cord transection at T8",
+        "Hemisection of spinal cord at T12",
+        "Brown-Séquard syndrome"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q695",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Right hemisection of the spinal cord most likely produces which finding?",
+      "explanation": "Right spinal cord hemisection (Brown-Sequard syndrome) causes ipsilateral motor paralysis and proprioception loss below the lesion, with contralateral pain/temperature loss starting 1-2 segments below.",
+      "keyConcept": "Brown-Sequard syndrome: ipsilateral UMN paralysis and dorsal column loss, contralateral pain/temperature loss.",
+      "options": [
+        "Loss of all types of sensation of the left side at the level of the lesion",
+        "Loss of proprioception of the left side below the level of the lesion",
+        "Loss of pain and temperature sensations of the left side below the level of the lesion",
+        "Left lower motor neuron lesion at the level of the lesion",
+        "Left upper motor neuron lesion at the level of the lesion"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q696",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Loss of proprioception on the same side of a lesion with loss of pain and temperature on the opposite side is characteristic of which condition?",
+      "explanation": "This pattern describes Brown-Sequard syndrome where ipsilateral proprioception (dorsal column) is lost with contralateral pain/temperature loss (spinothalamic) due to hemisection of the spinal cord.",
+      "keyConcept": "Ipsilateral proprioception + contralateral pain loss indicates hemisection (Brown-Sequard syndrome).",
+      "options": [
+        "Complete spinal cord transection at C4",
+        "Complete spinal cord transection at T5",
+        "Complete spinal cord transection at T8",
+        "Complete spinal cord transection at T12",
+        "Brown-Séquard syndrome"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q766",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "........... tactile localization, discrimination",
+      "explanation": "Fine (discriminative) touch enables tactile localization and two-point discrimination, mediated by Meissner corpuscles and Merkel discs traveling via the dorsal column-medial lemniscal pathway.",
+      "keyConcept": "Fine touch function",
+      "options": [
+        "fine touch",
+        "crude touch",
+        "pain, temperature",
+        "proprioception"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q768",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "All receptors of fine touch except:",
+      "explanation": "Fine touch receptors include Meissner corpuscles, Merkel discs, and Ruffini endings; tendon spindles are proprioceptive receptors, not tactile.",
+      "keyConcept": "Fine touch receptors",
+      "options": [
+        "Meissner corpuscle",
+        "Merkel disc",
+        "Ruffini disc",
+        "tendon spindle"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q771",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Receptors of crude touch are:",
+      "explanation": "Crude (light) touch receptors include Meissner corpuscles, Merkel discs combined with free nerve endings, and peritrichial (hair follicle) nerve endings.",
+      "keyConcept": "Crude touch receptors",
+      "options": [
+        "Meissner corpuscle",
+        "Merkel disc , free nerve ending",
+        "peritrichial nerve ending",
+        "All the above"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q776",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Receptors of pain, temperature are:",
+      "explanation": "Free nerve endings are the receptors for pain and temperature sensation throughout the body; they are the most primitive and widely distributed sensory receptors.",
+      "keyConcept": "Pain temperature receptors",
+      "options": [
+        "Merkel disc",
+        "free nerve ending",
+        "Ruffini corpuscle",
+        "muscle spindle"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q777",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "All characters of pain, temperature pathway except:",
+      "explanation": "Pain and temperature pathway uses small cells in dorsal root ganglia entering via the lateral division (not medium cells entering medially).",
+      "keyConcept": "Pain pathway characteristics",
+      "options": [
+        "small cell in spinal ganglia",
+        "enter lateral division of posterior root",
+        "medium cell in spinal ganglia that enter medial division of posterior root",
+        "have free nerve ending"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q782",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "First order neuron in pain, temperature from head face is .............. while second order neuron is ..........",
+      "explanation": "Pain and temperature from the face: first order neurons are in the trigeminal (spinal) nucleus, second order are in the spinal trigeminal nucleus that projects to the thalamus.",
+      "keyConcept": "Facial pain pathway",
+      "options": [
+        "trigeminal nucleus, spinal nuclei",
+        "MSN, trigeminal nucleus",
+        "mesencephalic nucleus, MSN",
+        "Principal sensory nucleus, MSN"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q840",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "If a patient cannot recognize an unseen familiar object placed in his hand, the sensory tract that might be affected is:",
+      "explanation": "Stereognosis (recognition of objects by touch) requires intact dorsal column-medial lemniscal pathway; cuneate tract carries this from the upper limb.",
+      "keyConcept": "Stereognosis pathway",
+      "options": [
+        "Dorsal spinocerebellar tract",
+        "Cuneate tract",
+        "Spino-olivary tract",
+        "Ventral spinothalamic tract"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q846",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Examination of the lower limbs in a patient diagnosed with tabes dorsalis can reveal one of the following:",
+      "explanation": "Tabes dorsalis (dorsal column degeneration in neurosyphilis) causes sensory ataxia due to loss of proprioception, leading to gait problems.",
+      "keyConcept": "Tabes dorsalis presentation",
+      "options": [
+        "bilateral loss of pain and temperature",
+        "bilateral loss of crude touch",
+        "sensory ataxia",
+        "Hypertonia"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q865",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The plexus of Bonnet is best described as:",
+      "explanation": "The plexus of Bonnet (hair follicle receptor network) is a mechanoreceptor formed by free nerve endings that wrap around hair follicles to detect hair movement.",
+      "keyConcept": "Plexus of Bonnet",
+      "options": [
+        "A capsulated receptor with concentric lamellae",
+        "A mechanoreceptor around hair follicles",
+        "A thermoreceptor in the dermis",
+        "A nociceptor in the epidermis",
+        "A proprioceptor in joint capsules"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q866",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which receptors are located most deeply in the skin (dermis and hypodermis)?",
+      "explanation": "Pacinian corpuscles and Ruffini endings are the deepest tactile receptors, located in the dermis and hypodermis for vibration and stretch detection.",
+      "keyConcept": "Deep skin receptors",
+      "options": [
+        "Meissner and Merkel",
+        "Pacinian corpuscle and Ruffini endings",
+        "Krause end bulb and free nerve endings",
+        "Meissner and plexus of Bonnet",
+        "Merkel and free nerve endings"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q879",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The endogenous analgesia system includes which brain region?",
+      "explanation": "The periaqueductal grey (PAG) in the midbrain contains endogenous opioid neurons that activate descending pain inhibition pathways.",
+      "keyConcept": "Endogenous analgesia",
+      "options": [
+        "Primary somatosensory cortex",
+        "Raphe magnus nucleus",
+        "Dorsal root ganglion",
+        "Periaqueductal grey",
+        "Supraoptic nucleus"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q882",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Tactile discrimination (two‑point discrimination) is best tested by:",
+      "explanation": "Weber's two-point compass test assesses tactile discrimination ability, testing the spatial resolution of Meissner and Merkel receptors.",
+      "keyConcept": "Two-point discrimination test",
+      "options": [
+        "Tuning fork",
+        "Cotton wisp",
+        "Two‑point (Weber’s) compass",
+        "Hot and cold tubes",
+        "Reflex hammer"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q924",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Lesion of first somatosensory area causes:",
+      "explanation": "Lesion of the first somatosensory area (S1, postcentral gyrus) causes contralateral loss of fine touch, pressure, and stereognosis.",
+      "keyConcept": "S1 lesion effects",
+      "modelAnswer": "Contralateral loss of fine touch, pressure, and stereognosis."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q925",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Site of first somatosensory area:",
+      "explanation": "The first somatosensory area is located in the postcentral gyrus (areas 3, 1, 2) of the parietal lobe, posterior to the central sulcus.",
+      "keyConcept": "S1 location",
+      "modelAnswer": "Postcentral gyrus (areas 3, 1, 2) of parietal lobe."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q927",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Site of area 43:",
+      "explanation": "Area 43 (taste cortex) is located in the lower part of the postcentral gyrus near the insula, where gustatory and general sensation integrate.",
+      "keyConcept": "Area 43 location",
+      "modelAnswer": "Lower postcentral gyrus adjacent to operculum."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q943",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Sensations carried:",
+      "explanation": "Vibration, fine touch, and proprioception sensations are carried by the dorsal column-medial lemniscal pathway to the somatosensory cortex.",
+      "keyConcept": "Dorsal column sensations",
+      "modelAnswer": "Vibration, fine touch, and proprioception."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q951",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Artery supplying posterior 1/3 of spinal cord:",
+      "explanation": "The posterior spinal artery supplies the posterior third of the spinal cord, running along the dorsal surface to provide blood to the dorsal horns and posterior columns.",
+      "keyConcept": "Posterior spinal artery supplies the posterior third of the spinal cord.",
+      "modelAnswer": "The posterior spinal arteries (usually paired) supply the posterior one-third of the spinal cord. They arise from the vertebral or posterior inferior cerebellar arteries (PICA) and run along the dorsal roots, supplying the dorsal columns and dorsal horns."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q974",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Origin of spinal accessory:",
+      "explanation": "The spinal accessory nerve originates from the spinal nucleus located in the ventral horn of the first five cervical segments (C1-C5), with fibers ascending through the foramen magnum to join the cranial root.",
+      "keyConcept": "Spinal accessory originates from ventral horn of upper 5 cervical segments.",
+      "modelAnswer": "Spinal nucleus in ventral horn of upper 5 cervical segments."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1040",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "A patient with syringomyelia typically loses pain and temperature sensation in the upper limbs but retains touch and vibration. Which tract is damaged?",
+      "explanation": "Syringomyelia damages the crossing fibers of the lateral spinothalamic tract in the cervical region, causing bilateral loss of pain and temperature while preserving dorsal column functions like touch and vibration.",
+      "keyConcept": "Syringomyelia: lateral spinothalamic tract damaged, losing pain/temperature but preserving touch/vibration.",
+      "options": [
+        "Dorsal columns",
+        "Lateral spinothalamic tract",
+        "Anterior spinothalamic tract",
+        "Spinocerebellar tract"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1054",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "A patient has loss of pain and temperature on the right side of the body and loss of proprioception on the left side below the level of a spinal cord lesion. This pattern is characteristic of:",
+      "explanation": "This pattern describes Brown-Sequard syndrome: ipsilateral motor and proprioceptive loss (corticospinal and dorsal columns) below the lesion with contralateral pain/temperature loss (lateral spinothalamic crossing fibers).",
+      "keyConcept": "Brown-Sequard: ipsilateral motor and proprioception loss, contralateral pain loss below lesion.",
+      "options": [
+        "Anterior cord syndrome",
+        "Brown-Sequard syndrome (hemisection)",
+        "Central cord syndrome",
+        "Posterior cord syndrome"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1061",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The sensory (dorsal) part of the spinal cord develops from the:",
+      "explanation": "The alar plate forms sensory (dorsal) grey matter.",
+      "keyConcept": "Sensory dorsal horn develops from alar lamina of neural tube.",
+      "options": [
+        "Basal lamina (plate)",
+        "Floor plate",
+        "Roof plate",
+        "Notochord",
+        "Alar lamina (plate)"
+      ],
+      "correctIndex": 4
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1068",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Choose the correct statement about the sensory homunculus:",
+      "explanation": "The sensory homunculus represents the body upside-down (inverted) in the postcentral gyrus, with larger representations for areas with higher receptor density like lips and fingertips.",
+      "keyConcept": "Sensory homunculus: body represented upside-down in postcentral gyrus.",
+      "options": [
+        "It is the body representation within the motor cortex.",
+        "Somatosensory cortex corresponds point by point with regions in ipsilateral side of the body.",
+        "The body is represented upside down.",
+        "The body representation depends on the size of the target part."
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1075",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Regarding the development of the spinal cord, choose the incorrect combination:",
+      "explanation": "The alar lamina (sensory) forms the dorsal horns of grey matter, while the basal lamina (motor) forms the ventral horns - the statement incorrectly matches them.",
+      "keyConcept": "Alar lamina: dorsal horns; Basal lamina: ventral horns.",
+      "options": [
+        "The lumen of the neural tube – the central canal.",
+        "The alar lamina – the ventral horns of the grey matter.",
+        "Neurons opposite the sulcus limitans – lateral horns of the grey matter.",
+        "The marginal layer – the white matter."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q75",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Mention the origin of spinal part of accessory nerve.",
+      "explanation": "The spinal part of the accessory nerve originates from the spinal nucleus located in the ventral (anterior) horn of the upper 5 cervical segments (C1-C5) of the spinal cord. The fibers ascend through the foramen magnum to join the cranial root.",
+      "keyConcept": "Accessory nerve spinal root: ventral horns of C1-C5. Ascends through foramen magnum.",
+      "modelAnswer": "Spinal nucleus located in the ventral horn of the upper five cervical segments of the spinal cord (C1-C5). The axons ascend through the vertebral canal, enter the skull via the foramen magnum, and join the cranial root to form the complete accessory nerve."
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q78",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The right spinal lemniscus carries sensations of",
+      "explanation": "The right spinal lemniscus carries pain and temperature sensation from the left side of the body (crossed fibers from spinothalamic tract); proprioception is carried in the dorsal column-medial lemniscus pathway.",
+      "keyConcept": "Spinal lemniscus crossed pain/temperature",
+      "options": [
+        "Pain and temperature from left side of the body",
+        "Conscious proprioception from left side of the body",
+        "Muscle tone from right side of body",
+        "All of the above",
+        "None of the above"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q17",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Gracile and cuneate nuclei are supplied by medullary branches of:",
+      "explanation": "The gracile and cuneate nuclei (dorsal column nuclei) are supplied by the posterior inferior cerebellar artery (PICA) and direct medullary branches of the vertebral artery, not the anterior spinal artery.",
+      "keyConcept": "Posterior spinal/PICA supply dorsal column nuclei",
+      "options": [
+        "Vertebral artery.",
+        "Posterior inferior cerebellar artery",
+        "Anterior spinal artery.",
+        "Posterior spinal artery.",
+        "Anterior inferior cerebellar artery."
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q42",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Which artery supplies the medial part of medulla oblongata and the anterior 2/3 of the spinal cord?",
+      "explanation": "The anterior spinal artery supplies the medial part of the medulla (including the pyramid, medial lemniscus, and hypoglossal nucleus) and the anterior two-thirds of the spinal cord (including the anterior and lateral horns and white columns).",
+      "keyConcept": "Anterior spinal artery: medial medulla + anterior 2/3 spinal cord (all motor and sensory pathways except dorsal columns).",
+      "modelAnswer": "Anterior spinal artery. It supplies the pyramid, medial lemniscus, and hypoglossal nucleus in the medulla, and the anterior and lateral horns plus anterior and lateral white columns of the spinal cord."
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q80",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "During the cotton wool test for crude touch, the receptors responsible are:",
+      "explanation": "Mechanoreceptors detect the light touch sensation tested by cotton wool; they include Meissner corpuscles and Merkel discs.",
+      "keyConcept": "Crude touch receptors",
+      "options": [
+        "Nociceptors",
+        "Thermoreceptors",
+        "Mechanoreceptors",
+        "Chemoreceptors",
+        "Proprioceptors"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch7-anatomy-q1",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The lateral most fibers of the dorsal column tract:",
+      "explanation": "The dorsal column tracts (gracile and cuneate) carry conscious proprioception and fine touch. The lateralmost fibers in the dorsal column represent sacral segments, which ascend most medially in the spinal cord.",
+      "keyConcept": "Sacral fibers are most lateral in dorsal columns",
+      "options": [
+        "Cervical fibers.",
+        "Upper thoracic fibers.",
+        "Lower thoracic fibers.",
+        "Lumbar fibers.",
+        "Sacral fibers."
+      ],
+      "correctIndex": 4
+    },
+    {
+      "id": "mcns2-ch7-anatomy-q3",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Lateral spinothalamic tract carries the sensations of:",
+      "explanation": "The lateral spinothalamic tract carries pain and temperature sensations. The ventral spinothalamic carries crude touch, while the dorsal columns carry fine touch, vibration, and proprioception.",
+      "keyConcept": "Lateral spinothalamic carries pain and temperature",
+      "options": [
+        "Touch.",
+        "Vibration",
+        "Position.",
+        "Pain and temperature.",
+        "None of the above."
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch7-anatomy-q20",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "A 45-year-old patient presents with difficulty walking, muscle weakness, and a loss of proprioception (awareness of body position). Imaging reveals a lesion in the spinal cord. Which major ascending tract in the spinal cord is most likely affected, leading to these symptoms?",
+      "explanation": "The dorsal column-medial lemniscus pathway carries proprioception, vibration sense, and fine discriminative touch from the body to the thalamus and then to the somatosensory cortex. Lesions cause loss of proprioception, vibration sense, and stereognosis. The spinothalamic tract carries pain and temperature; the corticospinal tract carries motor signals; spinocerebellar tracts carry proprioceptive data to the cerebellum.",
+      "keyConcept": "Dorsal column-medial lemniscus pathway = proprioception, vibration, fine touch; its lesion causes sensory ataxia and positive Romberg.",
+      "options": [
+        "Corticospinal tract",
+        "Spinothalamic tract",
+        "Dorsal column-medial lemniscus pathway",
+        "Spinocerebellar tract",
+        "Anterolateral system"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch7-anatomy-q22",
+      "type": "essay",
+      "lecture": 1,
+      "text": "What are the sensations carried by dorsal column tracts?",
+      "explanation": "The dorsal column tracts (fasciculus gracilis and cuneatus) carry epicritic sensations: fine touch, vibration, conscious proprioception, stereognosis, and two-point discrimination. These are precise, discriminative sensory modalities.",
+      "keyConcept": "Dorsal columns: fine touch, vibration, conscious proprioception, stereognosis. Epicritic sensations.",
+      "modelAnswer": "Fine touch, proprioception (conscious), vibration sense, deep pressure, and stereognosis (recognition of size, shape, and texture of objects). These are discriminative tactile and proprioceptive sensations that require intact dorsal column-medial lemniscal pathway."
+    },
+    {
+      "id": "mcns2-ch7-anatomy-q35",
+      "type": "mcq",
+      "lecture": 5,
+      "text": "A patient has a lesion affecting the dorsal column tracts. Which artery is most likely affected?",
+      "explanation": "The dorsal columns (gracile and cuneate fasciculi) are supplied by the posterior spinal arteries, which are branches of the vertebral arteries.",
+      "keyConcept": "Posterior spinal arteries supply the dorsal columns, unlike the anterior spinal artery supplying the cord anteriorly.",
+      "options": [
+        "Anterior spinal artery",
+        "Posterior spinal artery",
+        "Radicular artery",
+        "Adamkiewicz artery",
+        "Posterior inferior cerebellar artery"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch7-anatomy-q44",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The lateral spinothalamic tract carries which sensations?",
+      "explanation": "The lateral spinothalamic tract carries pain and temperature sensation after crossing in the spinal cord, while fine touch and vibration are carried by the dorsal columns.",
+      "keyConcept": "Lateral spinothalamic tract: pain and temperature.",
+      "options": [
+        "Fine touch and vibration",
+        "Pain and temperature",
+        "Proprioception and pressure",
+        "Crude touch only"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch9-anatomy-q7",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Mention the origin of posterior spinal artery & the parts supplied by it.",
+      "explanation": "The posterior spinal arteries: ORIGIN usually from posterior inferior cerebellar arteries (PICA) or vertebral arteries; COURSE descends as two vessels near dorsal roots; PARTS SUPPLIED: posterior 1/3 of spinal cord including posterior horn, posterior columns, and posterior white columns. Note: posterior spinal arteries are often discontinuous and depend on radicular artery reinforcement.",
+      "keyConcept": "Posterior spinal arteries: PICA/vertebral origin, supplies posterior 1/3 (sensory - dorsal columns)",
+      "modelAnswer": "Posterior spinal arteries: (ORIGIN) Usually from posterior inferior cerebellar arteries (PICA) or vertebral arteries; (COURSE) Descends as two vessels near dorsal roots; (PARTS SUPPLIED) (1) Posterior 1/3 of spinal cord; (2) Posterior horn; (3) Posterior columns; (4) Posterior white columns. Note: Posterior spinal arteries are often discontinuous and reinforced by radicular arteries."
+    },
+    {
+      "id": "mcns2-ch9-anatomy-q8",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Describe the effect of anterior spinal artery occlusion.",
+      "explanation": "Anterior spinal artery occlusion: AREA AFFECTED is the anterior 2/3 of spinal cord. CLINICAL features: bilateral loss of motor function (anterior horn involvement) → flaccid then spastic paralysis; bilateral loss of pain and temperature (spinothalamic tracts); PRESERVED: dorsal column functions (proprioception, vibration, fine touch) bilaterally since posterior columns are spared.",
+      "keyConcept": "Anterior spinal artery occlusion: anterior 2/3 cord affected, motor + pain/temperature lost, dorsal columns preserved",
+      "modelAnswer": "Anterior spinal artery occlusion: (AREA AFFECTED) Anterior 2/3 of spinal cord; (CLINICAL) Bilateral loss of motor function (anterior horn) → flaccid then spastic paralysis; bilateral loss of pain and temperature (spinothalamic tracts); PRESERVED: dorsal column functions (proprioception, vibration, fine touch) bilaterally."
+    },
+    {
+      "id": "mcns2-ch9-anatomy-q11",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "A branch from cavernous part of internal carotid artery is:",
+      "explanation": "The lateral spinothalamic tract carries pain from the right lower limb, which was affected. The ipsilateral loss of vibration sense indicates dorsal column involvement (gracile tract for lower limb). The UMN signs and the pattern of sensory loss indicate a right hemisection (Brown-Sequard) at T6 level.",
+      "keyConcept": "Brown-Sequard syndrome causes ipsilateral motor and contralateral pain loss",
+      "options": [
+        "Carotficotympanic artery.",
+        "Pterygoid artery.",
+        "Hypophyseal artery.",
+        "Anterior choroidal artery.",
+        "Ophthalmic artery."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch9-anatomy-q17",
+      "type": "essay",
+      "lecture": 1,
+      "text": "What is the effect of anterior spinal artery occlusion?",
+      "explanation": "Anterior spinal artery occlusion causes bilateral UMNL paralysis and bilateral loss of pain/temperature below the lesion. Proprioception and fine touch are preserved because the dorsal columns (supplied by posterior spinal arteries) are intact.",
+      "keyConcept": "Anterior spinal artery occlusion: bilateral UMNL + loss pain/temp below, WITH preserved proprioception.",
+      "modelAnswer": "Bilateral upper motor neuron paralysis below the lesion, bilateral loss of pain and temperature sensations below the lesion, with PRESERVATION of proprioception, fine touch, and vibration sense (since dorsal columns are intact)."
+    },
+    {
+      "id": "mcns2-ch9-anatomy-q33",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Lesion of the anterior spinal artery most likely produces which finding?",
+      "explanation": "Anterior spinal artery syndrome causes bilateral loss of motor function (corticospinal tracts) and pain/temperature sensation (spinothalamic tracts), with dorsal column function (proprioception, vibration) preserved.",
+      "keyConcept": "Anterior spinal artery supplies corticospinal and spinothalamic tracts; dorsal columns are supplied by posterior arteries.",
+      "options": [
+        "Intact pain and temperature sensation",
+        "Intact dorsal column sensations",
+        "Intact voluntary motor function",
+        "Impaired conscious proprioception",
+        "Impaired unconscious proprioception"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch10-anatomy-q2",
+      "type": "case",
+      "lecture": 1,
+      "text": "A teenager girl discovered loss of sensation of her right hand and on examination, the doctor discovered loss of pain and temperature of distal part of the upper limb. Also, there was diminished pain and temperature on left hand. The condition was diagnosed as cavitations of the spinal cord.",
+      "explanation": "This case describes syringomyelia: a cavitation (syrinx) in the central part of the spinal cord. The patient has bilateral cape-like sensory loss. The pain and temperature fibers are involved because the crossing fibers in the anterior white commissure are closest to the central canal where the syrinx forms. Dorsal columns are spared. The most common site is cervical and upper thoracic segments where the central canal is widest.",
+      "keyConcept": "Syringomyelia: cavitation damages closest crossing pain/temperature fibers; spares dorsal columns",
+      "subQuestions": [
+        {
+          "id": "mcns2-ch10-anatomy-q2-sq1",
+          "type": "essay",
+          "text": "[TYPE: essay] What is your diagnosis?",
+          "explanation": "This case describes syringomyelia: a cavitation (syrinx) in the central part of the spinal cord. The patient has bilateral cape-like sensory loss. The pain and temperature fibers are involved because the crossing fibers in the anterior white commissure are closest to the central canal where the syrinx forms. Dorsal columns are spared. The most common site is cervical and upper thoracic segments where the central canal is widest.",
+          "keyConcept": "Syringomyelia: cavitation damages closest crossing pain/temperature fibers; spares dorsal columns",
+          "modelAnswer": "Syringomyelia."
+        },
+        {
+          "id": "mcns2-ch10-anatomy-q2-sq2",
+          "type": "essay",
+          "text": "[TYPE: essay] Why the pain and temperature fibers are only involved in this case?",
+          "explanation": "This case describes syringomyelia: a cavitation (syrinx) in the central part of the spinal cord. The patient has bilateral cape-like sensory loss. The pain and temperature fibers are involved because the crossing fibers in the anterior white commissure are closest to the central canal where the syrinx forms. Dorsal columns are spared. The most common site is cervical and upper thoracic segments where the central canal is widest.",
+          "keyConcept": "Syringomyelia: cavitation damages closest crossing pain/temperature fibers; spares dorsal columns",
+          "modelAnswer": "Because the closest fibers to the central canal & these cavitations are the crossing fibers carrying pain & temperature."
+        },
+        {
+          "id": "mcns2-ch10-anatomy-q2-sq3",
+          "type": "essay",
+          "text": "[TYPE: essay] Where is the most common site for such condition?",
+          "explanation": "This case describes syringomyelia: a cavitation (syrinx) in the central part of the spinal cord. The patient has bilateral cape-like sensory loss. The pain and temperature fibers are involved because the crossing fibers in the anterior white commissure are closest to the central canal where the syrinx forms. Dorsal columns are spared. The most common site is cervical and upper thoracic segments where the central canal is widest.",
+          "keyConcept": "Syringomyelia: cavitation damages closest crossing pain/temperature fibers; spares dorsal columns",
+          "modelAnswer": "Cervical & upper thoracic segments of spinal cord."
+        }
+      ]
+    },
+    {
+      "id": "mcns2-ch10-anatomy-q12",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "A patient presents with difficulty in walking, a loss of proprioception (awareness of body position), and a positive Romberg sign (swaying or falling when asked to stand with eyes closed). Imaging reveals a lesion in the spinal cord. Which neural tract is most likely affected in this case?",
+      "explanation": "The dorsal column-medial lemniscus pathway carries proprioception, vibration sense, and fine (discriminative) touch. A lesion causing loss of proprioception and a positive Romberg sign (swaying/falling with eyes closed) indicates dorsal column damage. The spinothalamic tract carries pain and temperature; the corticospinal tract carries motor signals; spinocerebellar tracts carry proprioceptive information to the cerebellum.",
+      "keyConcept": "Loss of proprioception, vibration sense, stereognosis, and positive Romberg sign = dorsal column-medial lemniscus pathway lesion.",
+      "options": [
+        "Corticospinal tract",
+        "Spinocerebellar tract",
+        "Dorsal column-medial lemniscus pathway",
+        "Spinothalamic tract",
+        "Anterolateral system"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch1-histology-q1",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "As regards the histological structure of gray matter of spinal cord, choose the INCORRECT statement:",
+      "explanation": "Nerve fibers within the gray matter are mostly unmyelinated or thinly myelinated, not heavily myelinated. Heavy myelination is characteristic of white matter tracts. The gray matter contains neuron cell bodies, dendrites, and glial cells.",
+      "keyConcept": "Gray matter fibers are mostly unmyelinated; white matter fibers are myelinated",
+      "options": [
+        "It contain nerve cells & neuroglia cells.",
+        "Its nerve cells are multipolar.",
+        "The nerve fibers within the gray matter are mostly myelinated.",
+        "Golgi type II neurons terminate in gray matter near their origin.",
+        "Golgi type I neurons form long ascending fibers."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-histology-q8",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which of the following receptors are mechanoreceptors?",
+      "explanation": "All of these - Merkel's disc, Meissner's corpuscle, and Bounet's plexus (a free nerve ending network) are mechanoreceptors. They transduce mechanical stimuli into neural signals. Merkel's = pressure, Meissner's = light touch, Bounet's = slowly adapting stretch receptor.",
+      "keyConcept": "Mechanoreceptors: Merkel's (pressure), Meissner's (touch), Bounet's plexus (stretch). All detect mechanical stimuli.",
+      "options": [
+        "Plexus of Bounet",
+        "Merkel’s disc",
+        "Meissner’s corpuscle",
+        "All of the above"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-histology-q10",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Free nerve endings are widely distributed in",
+      "explanation": "Free nerve endings are the simplest sensory receptors and are widely distributed throughout the body including epidermis, cornea, mucous membranes of visceral organs, and serous membranes. They detect pain, temperature, and crude touch.",
+      "keyConcept": "Free nerve endings: most widely distributed receptor; detect pain, temperature, crude touch; in epidermis, cornea, viscera.",
+      "options": [
+        "Epidermis of the skin",
+        "Cornea",
+        "Mucous membrane of visceral organs",
+        "Serous membranes",
+        "All of the above"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-histology-q11",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "What do free nerve endings respond to?",
+      "explanation": "Free nerve endings respond to noxious (painful), thermal, and crude touch stimuli. They are polymodal receptors capable of detecting multiple stimulus types. Different fiber types (A-delta for pain/temperature, C for pain) mediate these responses.",
+      "keyConcept": "Free nerve endings: polymodal - respond to painful, thermal, and tactile stimuli via Aδ and C fibers.",
+      "options": [
+        "Noxious(painful) stimuli",
+        "Crude touch",
+        "Thermal stimuli",
+        "All of the above"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-histology-q43",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Mention the cutaneous unencapsulated receptors?",
+      "explanation": "Cutaneous unencapsulated receptors include free nerve endings (pain, temperature), peritrichial endings around hair follicles (light touch), and Merkel's discs (fine touch); all lack a connective tissue capsule.",
+      "keyConcept": "Unencapsulated cutaneous receptors",
+      "options": [
+        "Free nerve endings",
+        "Peritrichial nerve endings",
+        "Merkel’s tactile disc",
+        "All of the above"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-histology-q44",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Mention the cutaneous encapsulated receptors?",
+      "explanation": "Cutaneous encapsulated receptors include Meissner's corpuscles (light touch), Pacinian corpuscles (vibration), Ruffini endings (stretch), and Merkel's discs are sometimes considered encapsulated; all have a surrounding connective tissue capsule.",
+      "keyConcept": "Encapsulated cutaneous receptors",
+      "options": [
+        "Meissner’s corpuscles",
+        "Pacinian corpuscles",
+        "Ruffini corpuscles",
+        "All of the above"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-histology-q48",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Which of the following statements concerning the nucleus dorsalis of Clark is TRUE?",
+      "explanation": "The nucleus dorsalis of Clark projects to the cerebellum via the dorsal spinocerebellar tract, carrying proprioceptive information from muscle spindles and tendon organs. It is in the dorsal horn, present only at certain levels (C8-L3).",
+      "keyConcept": "Clarke's nucleus projects to cerebellum via dorsal spinocerebellar tract",
+      "options": [
+        "It is found in the ventral horn.",
+        "It is present at all spinal levels.",
+        "It is homologous in function to the main sensory nucleus.",
+        "It projects to the cerebellum."
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch1-histology-q50",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Destruction of the ventral horn results in one of the following:",
+      "explanation": "Destruction of the ventral horn (lower motor neuron) causes flaccid paralysis with muscle atrophy, loss of reflexes, and fasciculations. Crude touch (dorsal column), fine touch (dorsal column), and pain sensation (spinothalamic) are not affected.",
+      "keyConcept": "Ventral horn destruction causes flaccid paralysis (LMN lesion)",
+      "options": [
+        "Loss of crude touch.",
+        "Loss of fine touch.",
+        "Flaccid paralysis.",
+        "Loss of pain sensation."
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch1-histology-q53",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Preganglionic sympathetic neurons are present in lamina «.. of spinal cord gray matter:",
+      "explanation": "Preganglionic sympathetic neurons are located in the intermediolateral cell column of the lateral horn, corresponding to lamina VII of Rexed. Parasympathetic neurons are in sacral segments (S2-S4), not thoracic lamina II.",
+      "keyConcept": "Sympathetic preganglionic neurons in lateral horn (lamina VII, T1-L2/3)",
+      "options": [
+        "I.",
+        "II.",
+        "VII.",
+        "X."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-histology-q56",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Which of the following tracts lie in the dorsal funiculus?",
+      "explanation": "The dorsal (posterior) funiculus contains the fasciculus gracilis and fasciculus cuneatus. The rubrospinal tract is in the lateral funiculus; vestibulospinal tract is in the ventral funiculus.",
+      "keyConcept": "Cuneate tract (fasciculus cuneatus) lies in the dorsal funiculus",
+      "options": [
+        "Cuneate.",
+        "Rubrospinal.",
+        "Vestibulospinal.",
+        "Red nucleus."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-histology-q60",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Internal arcuate fibers:",
+      "explanation": "Internal arcuate fibers arise from the gracile and cuneate nuclei, decussate (cross the midline) in the medulla, and ascend as the medial lemniscus to the thalamus. They are the second-order neurons of the dorsal column-medial lemniscal pathway.",
+      "keyConcept": "Internal arcuate fibers arise from gracile and cuneate nuclei, form medial lemniscus",
+      "options": [
+        "Arise from gracile and cuneate nuclei.",
+        "Terminate at gracile and cuneate nuclei.",
+        "Form lateral lemniscus.",
+        "Carry proprioceptive impulses from the head."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-histology-q82",
+      "type": "mcq",
+      "lecture": 4,
+      "text": "Which correctly describes a feature of Pacinian corpuscles compared to Meissner corpuscles?",
+      "explanation": "In Pacinian corpuscles, the afferent fiber passes axially through the center, while in Meissner corpuscles the nerve fiber has a coiled (tortuous) course between lamellar cells.",
+      "keyConcept": "Corpuscle structural differences",
+      "options": [
+        "Pacinian detect light touch, Meissner detect vibration",
+        "Pacinian are mainly in non‑hairy skin, Meissner in hairy skin",
+        "Pacinian are in epidermis, Meissner in dermis",
+        "Pacinian detect temperature, Meissner detect pain",
+        "Pacinian have fibers that pass axially through the corpuscle, Meissner fibers are coiled"
+      ],
+      "correctIndex": 4
+    },
+    {
+      "id": "mcns2-ch1-histology-q84",
+      "type": "mcq",
+      "lecture": 4,
+      "text": "Which feature characterizes the nerve ending in a Meissner’s corpuscle?",
+      "explanation": "The nerve fiber in Meissner's corpuscle has a characteristic tortuous (coiled) course between the lamellar cells, unlike the straight axial course in Pacinian corpuscles.",
+      "keyConcept": "Meissner corpuscle structure",
+      "options": [
+        "Myelinated straight course",
+        "Unmyelinated straight course",
+        "Nerve has tortuous course",
+        "Single terminal ending",
+        "Myelinated afferent fiber enters the base of the corpuscle"
+      ],
+      "correctIndex": 4
+    },
+    {
+      "id": "mcns2-ch1-histology-q86",
+      "type": "mcq",
+      "lecture": 4,
+      "text": "Which feature is common to both free nerve endings and Merkel’s discs?",
+      "explanation": "Both free nerve endings and Merkel's discs are found in the epidermis; free nerve endings detect pain and temperature while Merkel discs detect light touch.",
+      "keyConcept": "Epidermal receptors",
+      "options": [
+        "They are the most numerous sensory receptors in the body",
+        "Found in the epidermis of the skin",
+        "Respond to noxious stimuli",
+        "Respond to thermal stimuli",
+        "Arise from subepidermal plexus of nerves"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-histology-q87",
+      "type": "mcq",
+      "lecture": 4,
+      "text": "Which type of receptor is found in the cornea?",
+      "explanation": "The cornea contains abundant free nerve endings (no specific encapsulated receptors) making it extremely sensitive to pain and touch.",
+      "keyConcept": "Corneal innervation",
+      "options": [
+        "Pacinian",
+        "Meissner",
+        "Merkel",
+        "Ruffini",
+        "Free nerve endings"
+      ],
+      "correctIndex": 4
+    },
+    {
+      "id": "mcns2-ch1-histology-q88",
+      "type": "mcq",
+      "lecture": 4,
+      "text": "Which sensory receptors penetrate the epidermis?",
+      "explanation": "Free nerve endings and Merkel discs both penetrate the epidermis; free nerve endings respond to pain/temperature while Merkel discs mediate light touch.",
+      "keyConcept": "Epidermal nerve endings",
+      "options": [
+        "Free nerve endings and Merkel discs",
+        "Meissner and Pacinian corpuscles",
+        "Ruffini endings and Pacinian corpuscles",
+        "Muscle spindles and Golgi tendon organs",
+        "Krause end bulbs and Ruffini endings"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-histology-q89",
+      "type": "mcq",
+      "lecture": 4,
+      "text": "Regarding the cervical spinal cord, which statement is correct?",
+      "explanation": "Substantia gelatinosa (Roland's substance) is located in lamina II of the spinal cord gray matter and processes pain and temperature sensations.",
+      "keyConcept": "Substantia gelatinosa location",
+      "options": [
+        "Substantia gelatinosa receives mostly motor input",
+        "Substantia gelatinosa is located in lamina II",
+        "Clarke’s nucleus is located in lamina VI",
+        "Clarke’s nucleus is found in all cervical segments",
+        "Retropostero‑lateral column of cervical segments supplies the distal part of the lower limb"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-histology-q91",
+      "type": "mcq",
+      "lecture": 4,
+      "text": "Which structure is found in the cervical segment (internal structures of spinal cord)?",
+      "explanation": "Clarke's nucleus is found in lamina VII (intermediate gray matter) at cervical levels, serving as the origin of the dorsal spinocerebellar tract.",
+      "keyConcept": "Clarke's nucleus location",
+      "options": [
+        "Intermediolateral cell column in lamina VII grey matter",
+        "Intermediolateral cell column in lamina VII white matter",
+        "Clarke’s nucleus in lamina VII grey matter",
+        "Clarke’s nucleus in lamina VII white matter",
+        "Substantia gelatinosa in lamina VII grey matter"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch1-histology-q92",
+      "type": "mcq",
+      "lecture": 4,
+      "text": "Which structure is found in lamina I of the spinal cord gray matter?",
+      "explanation": "The posteromarginal nucleus is located in lamina I of the spinal cord and receives pain and temperature afferents from the periphery.",
+      "keyConcept": "Spinal cord lamina I",
+      "options": [
+        "Clarke nucleus",
+        "Substantia gelatinosa",
+        "Posteromarginal nucleus",
+        "Intermediolateral cell column",
+        "Nucleus proprius"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch1-physiology-q10",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Sensory ataxia is characterized by:",
+      "explanation": "Sensory ataxia is characterized by stamping gait. Option A is correct. Sensory ataxia results from dorsal column dysfunction causing loss of proprioception; patients stamp their feet hard to gain vibratory and position sense feedback. Options B, C, D, E describe cerebellar features: staccato speech, kinetic tremors, failure of coordination with eyes open, and cerebellar lesions.",
+      "keyConcept": "Sensory ataxia presents with stamping gait as patients rely on heavy foot contact to compensate for lost proprioception.",
+      "options": [
+        "Stamping gait.",
+        "Staccato speech.",
+        "Kinetic tremors.",
+        "Failure of coordination even with opened eyes",
+        "Cerebellar lesion."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-physiology-q20",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Brown-Sequard syndrome is characterized by:",
+      "explanation": "Brown-Sequard syndrome: loss of vibration sense on the same side below lesion. Option A is correct. Hemisection causes ipsilateral dorsal column loss (vibration, proprioception) and corticospinal loss (motor) below; contralateral spinothalamic loss (pain, temperature). Options B, C, D are incorrect (motor loss is ipsilateral, reflex loss at lesion level is LMN, pain loss is contralateral).",
+      "keyConcept": "Brown-Sequard hemisection produces ipsilateral motor and dorsal column loss, contralateral pain/temperature loss below the lesion.",
+      "options": [
+        "Loss of vibration sense on the same side below level of the lesion",
+        "Loss of voluntary movements on the opposite side below the level of the lesion",
+        "Loss of reflex movements on the opposite side at the level of the lesion",
+        "Loss of pain sensation on the same side below the level of the lesion"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch1-physiology-q21",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "43 year old woman is evaluated in the hospital and is found to have multiple neurologic abnormalities from the level T 12 down. She has loss of vibration and proprioception on the left but these senses are present on the right side. She has absent pain and temperature sensation in the right side from T12 down. Motor power was lost in the left leg but normal motor strength in her right leg. What is the most likely cause of her neurologic symptoms?",
+      "explanation": "Hemisection on the left part of spinal cord. Option C is correct. Left hemisection explains: left vibration/proprioception loss (dorsal columns), right pain/temperature loss (spinothalamic), left leg paralysis (corticospinal). Complete transection would affect both sides. Right hemisection would cause opposite findings.",
+      "keyConcept": "Ipsilateral dorsal column and motor loss with contralateral spinothalamic loss indicates spinal cord hemisection on the side of motor/dorsal column deficits.",
+      "options": [
+        "Complete spinal cord transection at upper thoracic segments.",
+        "Complete spinal cord transection at lower thoracic segments.",
+        "Hemisection on the left part of spinal cord",
+        "Hemisection on the right part of spinal cord"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch1-physiology-q36",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Discuss the characters and functions of primary somatic sensory area (I). Describe the effects of its lesion.",
+      "explanation": "The primary somatic sensory area (SMI, Brodmann areas 3, 1, 2) is located in the postcentral gyrus. Its key characteristics include: contralateral representation (receives input from the opposite side of the body), inverted somatotopic representation (upside-down homunculus with lips and fingers having large representations), and modality orientation (posterior part receives touch/pressure while anterior part receives proprioception). Functions include perception of fine touch, precise localization, stereognosis, proprioception, and discrimination of temperature and texture. Lesions cause loss of fine touch and stereognosis with preserved crude sensation, as thalamus handles crude sensory processing.",
+      "keyConcept": "SMI processes fine sensory discrimination through contralateral, inverted cortical representation proportional to receptor density.",
+      "modelAnswer": "Site: postcentral gyrus\nCharacters:\n1. It receives all sensations from the opposite side of the body.\n2. Inverted representation “upside down”.\n3. Area of representation is proportional to the number of receptors (lip has a large number of receptors so it has a large cortical area of representation).\nIt shows modality orientation as it is divided into vertical columns, each receives specific sensation as:\n- Posterior part: Pressure & Tactile\n- Anterior part: Proprioception\nThe characters can be abbreviated in this word and box: MILC (Modality orientation, Inverted, Lips of fingers, Crossed) [Note: MILC box is image-based, description provided in text].\nFunctions: perception of\n1. Fine touch\n2. Localization of pain & temperature\n3. Stereognosis\n4. Proprioception\n5. Vibration, pressure, texture of materials & discrimination of various grades of temperature.\nLesion:\n1. Loss of fine touch, stereognosis, proprioception, vibration, pressure & texture of materials\n2. Fine localization is lost but crude localization is present\n3. Pain and temperature are poorly affected as they are perceived in thalamus"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q37",
+      "type": "essay",
+      "lecture": 1,
+      "text": "List and explain the effects of syringomyelia cavity involving the cervical and the thoracic segments of the spinal cord.",
+      "explanation": "Syringomyelia is a fluid-filled cavity (syrinx) within the spinal cord. At cervical levels, it typically affects the crossing spinothalamic fibers in the anterior white commissure, causing bilateral loss of pain and temperature sensation ('cape-like' or 'suspended' sensory loss) while preserving dorsal column functions (proprioception, vibration sense). Motor manifestations include lower motor neuron weakness and atrophy in the intrinsic hand muscles, with possible extension to affect corticospinal tracts causing UMN signs in the lower limbs. At thoracic levels, similar sensory findings occur at the trunk level, plus possible sympathetic disruption. The cavity expands over time, damaging crossing fibers first, then anterior horn cells (causing LMN signs), then corticospinal tracts.",
+      "keyConcept": "Syringomyelia causes 'cape-like' pain/temperature loss by destroying crossing spinothalamic fibers while preserving proprioception.",
+      "modelAnswer": " Syringomyelia: widening of the central canal due to abnormal overgrowth of glial tissue of more\ncommon in female which causes damage of pain and temperature fibers crossing in front of the\ncentral canal. -  later fibers of crude touch and pressure are affected\n Effects of syringomyelia:\n1. Loss of pain, touch and temperature at both sides of the body at the level of the affected segment\ncausing  “Jacket distribution anesthesia”\n2. Dorsal column sensations “fine touch & proprioception” are intact this leads to dissociated\nsensory loss"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q57",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Regarding sensory receptors:",
+      "explanation": "According to Müller's law of specific nerve energies, each receptor is specific to its adequate stimulus. Receptors have LOW threshold for their specific stimulus. Receptor potential is directly proportional to stimulus intensity, not inversely.",
+      "keyConcept": "Law of specific nerve energies: each receptor responds only to its adequate stimulus at low threshold.",
+      "options": [
+        "Receptors are non-specific to stimuli according to Muller’s law",
+        "Stimulation of certain receptors can produces different modalities of sensations",
+        "Receptors are stimulated by adequate stimuli at a low threshold",
+        "Receptor potential is inversely related to the intensity of stimulus according to Weber Fechner law",
+        "The same receptor may be stimulated by different stimuli to produce different sensations"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch1-physiology-q58",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Regarding Crude Touch sensation:",
+      "explanation": "Crude touch is one of the protopathic (primitive) sensations along with pain and temperature. It is transmitted through the anterior spinothalamic tract (not dorsal column), perceived at the level of the thalamus (not cortex), and uses free nerve endings (not Meissner's corpuscles).",
+      "keyConcept": "Protopathic sensations (crude touch, pain, temperature) travel via anterolateral system; epicritic (fine touch, vibration) via dorsal column.",
+      "options": [
+        "Is perceived at the level of the sensory cortex",
+        "Is transmitted through dorsal column pathway",
+        "Its receptors are Meissner’s corpuscles",
+        "Is better felt in non-hairy skin areas",
+        "It is one of the protopathic sensations"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-physiology-q72",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "A reflex arc includes:",
+      "explanation": "A reflex arc requires at minimum a sensory receptor, a sensory neuron, at least one synapse in the CNS, and an efferent motor neuron. This means at least two sets of sequential neurons (afferent and efferent).",
+      "keyConcept": "Reflex arc components: receptor → afferent neuron → CNS integration → efferent neuron → effector.",
+      "options": [
+        "At least two sets of sequential neurons",
+        "At least two sequential sets of central synapses",
+        "At least two types of sensory receptors",
+        "At least two types of efferent neurons"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch1-physiology-q120",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Regarding adaptation, Touch receptors are rapidly adapting receptors while pain receptors are slowly adapting receptors",
+      "explanation": "Touch receptors (Meissner's and Pacinian corpuscles) are rapidly adapting phasic receptors, while pain receptors (free nerve endings) are slowly adapting tonic receptors, reflecting their functional roles in sensory processing.",
+      "keyConcept": "Receptor adaptation rates and functional significance",
+      "modelAnswer": "Touch receptors (e.g., Pacinian corpuscles, Meissner corpuscles) are rapidly adapting receptors that respond to changes in stimulus intensity but stop firing during sustained stimulation, allowing the CNS to detect new stimuli. Pain receptors (nociceptors, e.g., free nerve endings) are slowly adapting receptors that continue firing as long as the damaging stimulus is present, ensuring the body is continuously warned of tissue injury."
+    },
+    {
+      "id": "mcns2-ch1-physiology-q124",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Compare between crude touch sensation & thermal sensation regarding ( Def. receptors & afferent neuron type)",
+      "explanation": "Crude touch uses free nerve endings and type A-delta fibers (discriminative touch uses Meissner's corpuscles with A-beta fibers); thermal sensation uses thermal receptors with A-delta (cold) and C fibers (warm).",
+      "keyConcept": "Touch and thermal sensation receptor differences",
+      "modelAnswer": "Crude touch sensation is carried by the anterior spinothalamic tract, uses mechanical receptors (tactile discs, Ruffini endings), and transmitted by A-beta and A-delta fibers. Thermal sensation (heat/cold) is carried by the lateral spinothalamic tract, uses thermoreceptors (free nerve endings), and transmitted by A-delta and C fibers. Crude touch receptors have larger receptive fields and lower spatial resolution compared to thermal receptors."
+    },
+    {
+      "id": "mcns2-ch1-physiology-q138",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Which of the following does not contain channels that are activated by mechanical distortion?",
+      "explanation": "Hair end organs (Ruffini endings) are slowly adapting receptors for skin stretch, not activated by mechanical distortion. Muscle spindles, Pacinian corpuscles, and cochlear hair cells all use mechanically-gated ion channels.",
+      "keyConcept": "Mechanically-gated channels are found in sensory receptors for touch, pressure, and hearing; Ruffini endings detect static skin stretch rather than vibration.",
+      "options": [
+        "Muscle spindle.",
+        "Pacinian corpuscles.",
+        "Hair cells in cochlea.",
+        "Hair end organs."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-physiology-q153",
+      "type": "mcq",
+      "lecture": 3,
+      "text": "Which type of sensory receptors in the skin respond quickly at the onset of a stimulus but stop firing if the stimulus is constant?",
+      "explanation": "Pacinian corpuscles are rapidly adapting receptors that respond quickly at the onset and offset of a stimulus but cease firing during sustained stimulation due to their large, encapsulated structure.",
+      "keyConcept": "Pacinian corpuscles are rapidly adapting mechanoreceptors detecting vibration and rapid changes.",
+      "options": [
+        "Temperature receptors (rapidly adapting)",
+        "Temperature receptors (slowly adapting)",
+        "Pain receptors (rapidly adapting)",
+        "Touch receptors (rapidly adapting)",
+        "Touch receptors (slowly adapting)"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-physiology-q154",
+      "type": "mcq",
+      "lecture": 3,
+      "text": "Which sensory receptor adapts rapidly to sustained skin stimulation?",
+      "explanation": "Meissner's corpuscles are rapidly adapting receptors in the dermal papillae that adapt quickly to sustained skin stimulation, making them ideal for detecting motion and texture.",
+      "keyConcept": "Meissner's corpuscles are rapidly adapting tactile receptors in glabrous skin for motion detection.",
+      "options": [
+        "Touch receptor",
+        "Pain receptor",
+        "Temperature receptor",
+        "Proprioceptor",
+        "Nociceptor"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-physiology-q157",
+      "type": "mcq",
+      "lecture": 3,
+      "text": "Which stimulates pain receptors?",
+      "explanation": "Pain receptors (nociceptors) respond to noxious stimuli including intense mechanical distortion, heat (>45C), and chemical irritants (bradykinin, substance P, prostaglandins).",
+      "keyConcept": "Nociceptors are polymodal free nerve endings responding to mechanical, thermal, and chemical noxious stimuli.",
+      "options": [
+        "Local increase of Na+ concentration",
+        "Local decrease of Na+ concentration",
+        "Local increase of K+ concentration",
+        "Local decrease of K+ concentration",
+        "Local increase of Ca2+ concentration"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-physiology-q161",
+      "type": "mcq",
+      "lecture": 3,
+      "text": "Which fibers transmit crude touch sensation?",
+      "explanation": "Crude touch is transmitted by A-beta fibers via the dorsal column-medial lemniscal pathway (fasciculus cuneatus for upper body, fasciculus gracilis for lower body). Fine touch uses the same pathway.",
+      "keyConcept": "Crude touch travels via dorsal column pathways (A-beta fibers) to the thalamus and sensory cortex.",
+      "options": [
+        "Aδ fibers",
+        "D fibers",
+        "Aβ fibers",
+        "Ia fibers",
+        "Ib fibers"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-physiology-q166",
+      "type": "mcq",
+      "lecture": 3,
+      "text": "In secondary hyperalgesia, which describes the affected area?",
+      "explanation": "Secondary hyperalgesia occurs in the surrounding undamaged tissue adjacent to the primary injury site, where nociceptors become sensitized by inflammatory mediators released from damaged cells.",
+      "keyConcept": "Secondary hyperalgesia extends beyond the injury site due to central sensitization of dorsal horn neurons.",
+      "options": [
+        "Normal skin surrounding non-healthy tissue",
+        "Only the site of injury",
+        "Inflamed tissue directly exposed to noxious stimuli",
+        "All dermatomes sharing the same dorsal root ganglion",
+        "Systemic distribution"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-physiology-q167",
+      "type": "mcq",
+      "lecture": 3,
+      "text": "Which explains pain relief when you rub the skin near an injury?",
+      "explanation": "Rubbing the skin activates A-beta mechanoreceptors that inhibit pain transmission in the dorsal horn through gating mechanisms in the substantia gelatinosa (gate control theory).",
+      "keyConcept": "Gate control theory: tactile stimulation inhibits nociceptive transmission via A-beta fiber activation of inhibitory interneurons in dorsal horn.",
+      "options": [
+        "Convergence projection theory",
+        "Endogenous opioid system",
+        "Central sensitization theory",
+        "Gate theory",
+        "Convergence facilitation theory"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch1-physiology-q168",
+      "type": "mcq",
+      "lecture": 3,
+      "text": "A woman wore a dress on the beach. Later, wearing a jacket over the same area caused pain. This is an example of:",
+      "explanation": "Wearing a jacket over tanned skin causes referred pain from sunburned skin, demonstrating referred pain where visceral or deep somatic injury is perceived as cutaneous pain.",
+      "keyConcept": "Referred pain from deep tissue injury can be perceived as cutaneous pain due to convergence of somatic and visceral afferents on dorsal horn neurons.",
+      "options": [
+        "Increase receptor sensitivity by tissue products",
+        "Activity-dependent increase in excitability of dorsal horn neurons",
+        "Increased threshold of peripheral nociceptors due to inflammatory mediators",
+        "Decreased inhibitory interneuron function in the spinal cord",
+        "Impaired saltatory conduction in primary afferent neurons"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-physiology-q169",
+      "type": "mcq",
+      "lecture": 3,
+      "text": "Which receptors inhibit pain sensation in the CNS?",
+      "explanation": "Endogenous opioid peptides (endorphins and enkephalins) released from periaqueductal gray and nucleus raphe magnus inhibit pain transmission in the dorsal horn.",
+      "keyConcept": "Endogenous opioid peptides from brainstem nuclei inhibit nociceptive transmission in the spinal cord dorsal horn.",
+      "options": [
+        "Opioid receptors",
+        "Glycine receptors",
+        "Nicotinic receptors",
+        "Dopamine receptors",
+        "GABA receptors"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-physiology-q177",
+      "type": "mcq",
+      "lecture": 3,
+      "text": "Which statement is true regarding deep pressure sensation?",
+      "explanation": "Deep pressure sensation is transmitted by A-beta fibers via dorsal column pathways and by A-delta fibers via spinothalamic tracts. It has a high threshold compared to light touch.",
+      "keyConcept": "Deep pressure uses A-beta fibers in dorsal columns and A-delta fibers in spinothalamic tracts.",
+      "options": [
+        "It is mediated by slowly adapting receptors",
+        "It is transmitted only by free nerve endings",
+        "It adapts rapidly to sustained stimulus",
+        "It is carried exclusively by Aδ fibers",
+        "It is not associated with vibration"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-physiology-q181",
+      "type": "mcq",
+      "lecture": 3,
+      "text": "Which pair correctly matches a reflex with its sensory receptor?",
+      "explanation": "The inverse stretch reflex (autogenic inhibition) uses Golgi tendon organs as receptors that inhibit alpha motor neurons when tension becomes dangerous.",
+      "keyConcept": "Golgi tendon organs mediate inverse stretch reflex to prevent muscle damage from excessive tension.",
+      "options": [
+        "Stretch and Golgi tendon organ",
+        "Flexor and muscle spindle",
+        "Crossed extensor and Pacinian corpuscle",
+        "Tendon and Ruffini ending",
+        "Withdrawal and free nerve ending"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-physiology-q188",
+      "type": "mcq",
+      "lecture": 3,
+      "text": "Which accurately describes the pattern of dissociative sensory loss in syringomyelia?",
+      "explanation": "Syringomyelia causes dissociated sensory loss with loss of pain and temperature but preserved touch and proprioception due to damage to crossing spinothalamic fibers in the central canal.",
+      "keyConcept": "Syringomyelia selectively damages crossing spinothalamic fibers, causing cape-like pain/temperature loss with preserved dorsal column function.",
+      "options": [
+        "Loss of pain and touch with preservation of temperature",
+        "Loss of touch and temperature with preservation of pain",
+        "Loss of pain with preservation of touch and temperature",
+        "Loss of pain and temperature with preservation of touch",
+        "Loss of temperature with preservation of touch and pain"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-physiology-q194",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which of the following best describes the gate control theory of pain?",
+      "explanation": "The gate control theory proposes that large myelinated afferent fibers (touch) can inhibit transmission of pain signals in the dorsal horn through interneurons, effectively 'closing the gate' on pain perception.",
+      "keyConcept": "Gate control: large afferent fiber activity inhibits dorsal horn pain transmission.",
+      "options": [
+        "Pain is transmitted only by large myelinated fibres.",
+        "Activity in large afferent fibres can inhibit pain transmission in the dorsal horn.",
+        "Pain is solely a cortical phenomenon.",
+        "Endorphins are released only from the pituitary."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch5-physiology-q6",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which one of the following is NOT true regarding the cerebellum:",
+      "explanation": "Cerebellar ataxia is sensory ataxia - it worsens with eye closure (positive Romberg). Option B is INCORRECT as stated. Actually, cerebellar ataxia is NOT sensory (sensory ataxia is dorsal column dysfunction). The correct answer is B because cerebellar ataxia is motor ataxia, characterized by clumsiness that is visible with eyes open, unlike sensory ataxia which hides behind visual compensation. Wait - re-reading: cerebellar ataxia is a motor (not sensory) ataxia that DOES NOT require visual compensation to demonstrate.",
+      "keyConcept": "Cerebellar ataxia is a motor coordination deficit visible even with eyes open, unlike sensory ataxia which requires eye closure to manifest.",
+      "options": [
+        "Each cerebellar hemisphere controls movements of the ipsilateral muscles.",
+        "Cerebellar ataxia is a sensory ataxia.",
+        "Cerebellar lesions cause pendular knee jerks.",
+        "The intention tremor associated with cerebellar disease is worsened by movement.",
+        "The neocerebellar syndrome gait is zig-zag like."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch7-physiology-q8",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "In Thermal sensations, all of the following are true EXCEPT:\n\nA) Cold receptors are more numerous than Hot receptors, but Hot receptors adapt more rapidly than cold receptors.\nB) Are transmitted through lateral division of anterolateral system.\nC) Temperature higher than 45°C produces hot pain and temperature lower than 10°C produces cold pain.\nD) The maximal discharge of hot receptors occurs at 45°C and of cold receptors occurs at 25°C.\nE) They are carried by Aβ fibers.",
+      "explanation": "Thermal sensations are carried by Aδ fibers (cold) and C fibers (hot), not Aβ fibers. Aβ fibers carry touch, pressure, and vibration. Cold receptors adapt slower than hot receptors, and maximal discharge occurs at 25°C (cold) and 45°C (hot).",
+      "keyConcept": "Temperature sensation: Aδ (cold, 10-40°C), C fibers (heat, 30-45°C); transmitted via spinothalamic tract.",
+      "options": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch7-physiology-q14",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Regarding somatosensory area 1 all are correct, Except:\nA. Lies anterior to central gyrus.\nB. Size of representation depends on number of receptors.\nC. Have columns that is specialized to receive one type of sensation.\nD. Contralateral representation.\nE. Share in pyramidal tract origin.",
+      "explanation": "Somatosensory area 1 lies posterior to the central gyrus (postcentral gyrus), not anterior; it receives contralateral input, has columns specialized for single sensation types, and its representation size reflects receptor density.",
+      "keyConcept": "Somatosensory area 1 lies posterior to central gyrus (postcentral gyrus).",
+      "options": [
+        "Lies anterior to central gyrus",
+        "Size of representation depends on number of receptors",
+        "Have columns that is specialized to receive one type of sensation",
+        "Contralateral representation",
+        "Share in pyramidal tract origin"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch10-physiology-q12",
+      "type": "mcq",
+      "lecture": 3,
+      "text": "The pain analgesic system includes which structure?",
+      "explanation": "The periaqueductal gray matter in the midbrain is a key component of the descending pain inhibitory system, connecting to nucleus raphe magnus and inhibiting dorsal horn pain transmission.",
+      "keyConcept": "Periaqueductal gray is the central controller of descending pain inhibition to dorsal horn.",
+      "options": [
+        "Periaqueductal neurons which secrete serotonin",
+        "Periaqueductal neurons which secrete enkephalin",
+        "Periaqueductal neurons which secrete endorphin",
+        "Local cord neurons which secrete serotonin",
+        "Local cord neurons which secrete endorphin"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch10-physiology-q13",
+      "type": "mcq",
+      "lecture": 3,
+      "text": "Which is correctly matched regarding the pain analgesic system?",
+      "explanation": "The periaqueductal gray matter is the origin of descending pain inhibitory pathways that project to nucleus raphe magnus and release opioids to inhibit dorsal horn pain transmission.",
+      "keyConcept": "PAG is the key origin of descending analgesic pathways utilizing endogenous opioids.",
+      "options": [
+        "Nucleus raphe magnus → Serotonin",
+        "Periaqueductal gray → Dopamine",
+        "Periventricular area → Acetylcholine",
+        "Pain inhibitory complex → Glutamate",
+        "Nucleus reticularis paragigantocellularis → GABA"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-pharma-q3",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Addition of the following drugs to L dopa produce all the following except",
+      "explanation": "Entacapone DECREASES L-dopa bioavailability and duration of action - this is WRONG. Option D is incorrect. Entacapone inhibits COMT, which DECREASES L-dopa metabolism, thereby INCREASING its bioavailability and duration of action. Domperidone decreases nausea (A is correct). Benztropine decreases absorption (B is correct). Apomorphine decreases off time (C is correct).",
+      "keyConcept": "COMT inhibitors like entacapone prolong L-dopa action by preventing its peripheral breakdown.",
+      "options": [
+        "Domperidone / decreases l dopa induced nausea & vomiting",
+        "Benztropine / decreases l dopa absorption",
+        "Apomorphine / decreases off time of on-off phenomena",
+        "Entacapone / Decrease L-dopa bioavailability and duration of action"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-pharma-q6",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Conscious sedation may be induced by",
+      "explanation": "Fentanyl with Midazolam induces conscious sedation. Option A is correct. This combination (opioid + benzodiazepine) provides analgesia and amnesia for conscious sedation in minor procedures. Droperidol is used for neuroleptanalgesia (B). Domperidone is antiemetic (C).",
+      "keyConcept": "Conscious sedation combines fentanyl (analgesia) with midazolam (anxiolysis/amnesia) for procedural sedation.",
+      "options": [
+        "Fentanyl / Midazolam",
+        "Midazolam /Droperidol",
+        "Fentanyl /Domperidone",
+        "None of the above"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-pharma-q29",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "A drug inducing a GABA- mediated sedative hypnotic effect in intensive care units",
+      "explanation": "Propofol induces GABA-mediated sedation in ICU. Option B is correct. Propofol enhances GABA-A receptor activity, providing sedation. Ketamine (C) acts on NMDA receptors. Fentanyl (A) is opioid. Propofol is preferred for ICU sedation due to rapid onset/offset and easy titration.",
+      "keyConcept": "Propofol provides GABAergic sedation with rapid onset and recovery, ideal for ICU sedation protocols.",
+      "options": [
+        "fentanyl.",
+        "Propofol",
+        "Ketamine.",
+        "B and C"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-pharma-q123",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Mention mechanism and adverse effects of sumatriptan.",
+      "explanation": "Sumatriptan's mechanism involves 5-HT1B/1D receptor agonism causing cranial vessel constriction and inhibition of trigeminal pain pathways. Adverse effects include chest tightness, flushing, and paresthesia; contraindicated in ischemic heart disease.",
+      "keyConcept": "Sumatriptan treats migraine via cranial vasoconstriction and trigeminal pain pathway inhibition.",
+      "modelAnswer": "**Mechanism of Sumatriptan:**\n- Selective agonist at 5-HT1B and 5-HT1D receptors\n- Causes cranial vasoconstriction\n- Inhibits trigeminal nerve firing\n- Blocks neuropeptide release\n- Reduces neurogenic inflammation\n- Alleviates migraine pain\n\n**Adverse Effects:**\n\n1. **Cardiovascular:**\n   - Chest pressure/tightness\n   - Palpitations\n   - Hypertension\n   - Coronary vasospasm\n\n2. **CNS:**\n   - Dizziness\n   - Paresthesia\n   - Drowsiness\n\n3. **Other:**\n   - Flushing\n   - Warmth\n   - Neck pain\n\n**Contraindications:**\n- Ischemic heart disease\n- Uncontrolled hypertension\n- Peripheral vascular disease\n- Basilar or hemiplegic migraine\n- Concurrent MAOI use (serotonin syndrome)\n\n**Drug Interactions:**\n- SSRIs/SNRIs (serotonin syndrome risk)\n- Ergotamines (prolonged vasoconstriction)"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q153",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The following is not common between pethidine & Buprenorphine:",
+      "explanation": "Both pethidine and buprenorphine are opioids with similar side effects including analgesia, respiratory depression, nausea/vomiting, and constipation. However, buprenorphine has a ceiling effect on respiratory depression - increasing dose beyond a certain point does not proportionally increase respiratory depression. Pethidine does NOT have this ceiling effect - its respiratory depression increases linearly with dose. This makes buprenorphine safer in overdose. Option B is the correct answer because respiratory depression IS NOT increased proportionally with dose in buprenorphine due to its partial agonist activity at mu receptors, unlike pethidine which shows dose-dependent respiratory depression.",
+      "keyConcept": "Buprenorphine's ceiling effect on respiratory depression distinguishes it from pethidine's linear dose-dependent depression.",
+      "options": [
+        "Analgesic effect in severe pain",
+        "Respiratory depression is increased by increasing dose",
+        "Nausea & vomiting",
+        "Constipation"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-pharma-q155",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Conscious sedation may be induced by:",
+      "explanation": "Conscious sedation is achieved by combining a benzodiazepine (for anxiolysis, amnesia, sedation) with an opioid (for analgesia). Fentanyl (opioid) + Midazolam (benzodiazepine) is the classic combination. Fentanyl provides analgesia while midazolam provides anxiolysis and sedation. Option B (Midazolam/Droperidol) - droperidol is used for neuroleptanalgesia, not conscious sedation. Option C (Fentanyl/Domperidone) - domperidone is an antiemetic, not a sedative. Option D is incorrect. The combination allows reduced doses of each drug while achieving adequate sedation and analgesia for procedures like dental work.",
+      "keyConcept": "Conscious sedation uses fentanyl (analgesic) + midazolam (benzodiazepine) for safe procedural sedation.",
+      "options": [
+        "Fentanyl / Midazolam",
+        "Midazolam / Droperidol",
+        "Fentanyl / Domperidone",
+        "None of the above"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-pharma-q156",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The following concerning Naloxone is not correct:",
+      "explanation": "Naloxone is a competitive opioid antagonist at mu, kappa, and delta receptors. Properties: 1) Shorter half-life (~1 hour) than most opioid agonists (like morphine, heroin) - this is why repeated dosing may be needed; 2) Given parenterally (IV, IM, SC), NOT orally - oral bioavailability is poor due to first-pass metabolism; 3) Used to reverse opioid overdose (respiratory depression, CNS depression); 4) Specific antagonist at opioid receptors. Option B is NOT correct because naloxone is NOT given orally (this is the incorrect statement). The correct answer is B.",
+      "keyConcept": "Naloxone is a short-acting opioid antagonist given parenterally (not orally) to reverse opioid overdose.",
+      "options": [
+        "Has a shorter half-life than its agonist",
+        "Given orally",
+        "Given in anesthesia to reverse CNS depression of its agonist",
+        "It’s a specific antagonist to opioid receptors"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch1-pharma-q190",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The following abused drug is wrongly matched to replacement therapy:",
+      "explanation": "Disulfiram is used to treat alcohol dependence - it inhibits aldehyde dehydrogenase, causing accumulation of acetaldehyde when alcohol is consumed. However, this is a form of aversion therapy, not replacement therapy. Replacement therapy involves substituting a safer alternative. The WRONG pairing is C - Disulfiram is NOT replacement therapy. Pentobarbital/phenobarbital (A) - barbiturate replacement for barbiturate dependence; Morphine/methadone (B) - opioid replacement; Alprazolam/diazepam (D) - benzodiazepine replacement (longer-acting for shorter-acting). Disulfiram works through psychological deterrence, not replacement. The answer is C - alcohol/disulfiram is incorrectly matched to replacement therapy.",
+      "keyConcept": "Disulfiram is aversion therapy for alcohol, not replacement therapy like methadone for opioids.",
+      "options": [
+        "Pentobarbital / phenobarbital",
+        "Morphine / methadone",
+        "Alcohol / Disulfiram",
+        "Alprazolam / Diazepam"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch1-pharma-q198",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "What is the classification of codeine? And what’s it’s uses?",
+      "explanation": "Codeine is classified as a weak opioid agonist with moderate analgesic and antitussive effects. Uses: mild-moderate pain (often with acetaminophen or aspirin), cough suppression, and diarrhea treatment.选项A正确. The answer is A. Codeine's analgesic effect requires metabolic conversion to morphine by CYP2D6.",
+      "keyConcept": "Codeine is a weak opioid used for mild pain, cough, and diarrhea - requires CYP2D6 activation to morphine.",
+      "options": [
+        "Moderate analgesic and antitussive",
+        "Strong analgesic and antitussive",
+        "Weak analgesic and anti-diarrheal",
+        "Moderate analgesic and anti-diarrheal"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-pharma-q228",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "All the following are involved in the mechanism of action of morphine Except",
+      "explanation": "Morphine's effects are primarily mediated by mu (not kappa) opioid receptors; it also inhibits calcium influx (reducing transmitter release), increases K+ efflux (causing hyperpolarization), and reduces emotional pain response.",
+      "keyConcept": "Mu vs kappa opioid receptor activation",
+      "options": [
+        "Most effects are mediated by activation of kappa receptors",
+        "Inhibition of calcium influx resulting in inhibition of transmitter release",
+        "Increase in K outflux resulting in hyperpolarization of neuronal membrane",
+        "Reduction of emotional response to pain"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-pharma-q231",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Constipation associated with the use of morphine may be relieved by",
+      "explanation": "Morphine-induced constipation is relieved by stool softeners (docusate), stimulant laxatives, and peripherally-acting opioid antagonists (methylnaltrexone) that don't reverse analgesia.",
+      "keyConcept": "Opioid-induced constipation treatment",
+      "options": [
+        "Docusate",
+        "Loperamide",
+        "Codeine",
+        "Diphenoxylate"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-pharma-q232",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The following is not common between pethidine & tramadol",
+      "explanation": "Pethidine and tramadol both have analgesic properties and can cause seizures at high doses, but tramadol's action is only partially reversed by naloxone (has non-opioid mechanisms), unlike pethidine.",
+      "keyConcept": "Tramadol vs pethidine naloxone reversal",
+      "options": [
+        "Analgesics",
+        "Action completely reversed by naloxone",
+        "Less respiratory depression than morphine",
+        "Increase risk of convulsions with high doses"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-pharma-q233",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Neuropathic pain may be managed by",
+      "explanation": "Neuropathic pain management includes tricyclic antidepressants (amitriptyline), anticonvulsants (carbamazepine, gabapentin), and atypical opioids (tramadol), all acting on different pain pathways.",
+      "keyConcept": "Neuropathic pain multimodal management",
+      "options": [
+        "Tricyclic antidepressants",
+        "Carbamazepine",
+        "Gabapentin",
+        "Tramadol",
+        "All of the above"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-pharma-q234",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The following is not true concerning codeine:",
+      "explanation": "Codeine side effects include constipation (not diarrhea), as it is an opioid constipating effect. It is less potent as an antitussive than morphine.",
+      "keyConcept": "Codeine side effects: antitussive, analgesic, constipating (not diarrheal)",
+      "options": [
+        "Inhibits cough center in medulla.",
+        "Less potent antitussive than morphine.",
+        "Diarrhea is a troublesome side effect.",
+        "Analgesic."
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch1-pharma-q259",
+      "type": "mcq",
+      "lecture": 5,
+      "text": "Which drug can be used to manage fentanyl intoxication?",
+      "explanation": "Naloxone, like naltrexone, is an opioid antagonist that can reverse fentanyl intoxication by competitively blocking opioid receptors.",
+      "keyConcept": "Fentanyl intoxication treatment",
+      "options": [
+        "Naltrexone",
+        "Methadone",
+        "Buprenorphine",
+        "Naloxone",
+        "Clonidine"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-pharma-q260",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which correctly describes the difference between tramadol and morphine?",
+      "explanation": "Tramadol is a mixed mechanism analgesic with both mu-opioid agonist activity and inhibition of serotonin/norepinephrine reuptake, unlike pure morphine.",
+      "keyConcept": "Tramadol vs morphine",
+      "options": [
+        "Tramadol is a mixed opioid–nonopioid analgesic that increases serotonin and norepinephrine, while morphine is a pure opioid agonist",
+        "Tramadol is a pure opioid agonist, morphine is mixed",
+        "Both act only on μ receptors",
+        "Morphine increases serotonin and norepinephrine, tramadol does not",
+        "Tramadol has no effect on opioid receptors"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-pharma-q278",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Concerning sensory receptors, all the followings are true, Except:",
+      "explanation": "Sensory receptors do not fatigue easily (unlike many other excitable tissues); they maintain responsiveness during sustained stimulation, though they may adapt at different rates.",
+      "keyConcept": "Sensory receptors do not fatigue easily.",
+      "options": [
+        "Acts as detectors.",
+        "Acts as transducers.",
+        "They are fatigued easily.",
+        "They vary in sensitivity.",
+        "They are excitable."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-pharma-q279",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "All the following receptors are phasic receptors Except:",
+      "explanation": "Free nerve endings are tonic (slowly adapting) receptors that continue firing during sustained stimulation, unlike phasic receptors like Pacinian corpuscles, Meissner's corpuscles, hair end organs, and Merkel's discs which adapt rapidly.",
+      "keyConcept": "Free nerve endings are tonic receptors; others listed are phasic.",
+      "options": [
+        "Hair end organs.",
+        "Pacinian corpuscles.",
+        "Meissner’s corpuscles.",
+        "Merkel's discs.",
+        "Free nerve endings."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-pharma-q288",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Pain sensation can be inhibited by:",
+      "explanation": "Opioid receptor stimulation activates descending pain inhibitory pathways from the periaqueductal grey to the dorsal horn, blocking pain signal transmission.",
+      "keyConcept": "Opioid receptor stimulation inhibits pain sensation.",
+      "options": [
+        "Adaptation of pain receptors.",
+        "Increasing the pain threshold by kinin.",
+        "Injection of naloxone.",
+        "Stimulation of opioid receptors.",
+        "Stimulation of lateral spinothalamic tract."
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch10-pharma-q7",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "One of the following anesthetic protocols is NOT correctly matched:",
+      "explanation": "Neuroleptanalgesia uses droperidol plus fentanyl, NOT propofol - this is WRONG. Option D is incorrect. Neuroleptanalgesia = droperidol (neuroleptic) + fentanyl (opioid). Propofol is used for deep sedation/anesthesia. Options A, B, C are correctly matched.",
+      "keyConcept": "Neuroleptanalgesia combines droperidol with fentanyl for sedation and analgesia; propofol is a separate anesthetic agent.",
+      "options": [
+        "Dissociative anesthesia/ ketamine.",
+        "Conscious sedation/ midazolam & fentanyl.",
+        "Deep sedation/ propofol.",
+        "Neuroleptanalgesia / propofol plus fentanyl."
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch10-pharma-q8",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which of the following possesses a weak analgesic effect?",
+      "explanation": "Halothane has weak analgesic effect. Option B is correct. Volatile anesthetics vary in analgesia: halothane provides minimal analgesia, while ketamine (C) and nitrous oxide (A) provide significant analgesia. Fentanyl (D) is a potent opioid analgesic.",
+      "keyConcept": "Halothane lacks significant analgesic properties, distinguishing it from ketamine and nitrous oxide.",
+      "options": [
+        "Nitrous oxide.",
+        "Halothane",
+        "Ketamine",
+        "Fentanyl"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch10-pharma-q79",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "One of the following anesthetics protocols is not correctly matched:",
+      "explanation": "Neuroleptanalgesia is the combination of a neuroleptic (droperidol) with an opioid (fentanyl), producing a state of calmness and analgesia without complete unconsciousness. Propofol plus fentanyl is actually IV anesthesia/conscious sedation, not neuroleptanalgesia. The correct combinations: A) Ketamine produces dissociative anesthesia - CORRECT; B) Midazolam + Fentanyl produces conscious sedation - CORRECT; C) Propofol produces deep sedation/anesthesia - CORRECT; D) Propofol + Fentanyl = IV anesthesia, NOT neuroleptanalgesia (which requires droperidol). The answer is D because neuroleptanalgesia specifically refers to droperidol + fentanyl combination.",
+      "keyConcept": "Neuroleptanalgesia specifically refers to droperidol + fentanyl, producing calmness and analgesia.",
+      "options": [
+        "Dissociative anesthesia / Ketamine",
+        "Conscious sedation / Midazolam & Fentanyl",
+        "Deep sedation / Propofol",
+        "Neuroleptanalgesia / Propofol plus Fentanyl"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch10-pharma-q80",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which of the following possesses a weak analgesic effect:",
+      "explanation": "Analgesic potency comparison: Fentanyl > Ketamine > Halothane > Nitrous oxide. Nitrous oxide has WEAK analgesic effect. While N2O provides some analgesia (used in labor, dentistry), its potency is low. Ketamine provides moderate analgesia through NMDA antagonism. Halothane provides minimal analgesia. Fentanyl is a potent opioid with strong analgesic effects. N2O's weak analgesic effect means it's often combined with other agents for surgical procedures. The correct answer is A - nitrous oxide possesses weak analgesic effect compared to the other options.",
+      "keyConcept": "Nitrous oxide has weak analgesic potency compared to opioids (fentanyl) and ketamine.",
+      "options": [
+        "Nitrous oxide",
+        "Halothane",
+        "Ketamine",
+        "Fentanyl"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch10-pharma-q105",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Name some strong pure agonists opioids.",
+      "explanation": "Strong pure agonist opioids include: morphine, heroin, fentanyl, methadone, meperidine, hydromorphone, oxymorphone.选项D正确. The answer is D. These have full agonist activity at mu opioid receptors, providing maximum analgesia but also respiratory depression, sedation, and dependence potential.",
+      "keyConcept": "Morphine, fentanyl, methadone are strong pure mu opioid agonists - maximum analgesia with respiratory depression risk.",
+      "options": [
+        "Morphine",
+        "Fentanyl",
+        "Methadone",
+        "All of the above"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch10-pharma-q106",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "What are the partial agonists opioids?",
+      "explanation": "Partial agonist opioids include buprenorphine (partial mu agonist) and pentazocine (partial kappa agonist, mixed agonist-antagonist).选项A正确. Buprenorphine is used for opioid dependence (Suboxone) and analgesia. Its ceiling effect on respiratory depression makes it safer. The answer is A. Pentazocine can precipitate withdrawal in opioid-dependent patients.",
+      "keyConcept": "Buprenorphine is a partial mu agonist with ceiling effect on respiratory depression - used in opioid dependence treatment.",
+      "options": [
+        "Buprenorphine",
+        "Morphine",
+        "Fentanyl",
+        "Methadone"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch10-pharma-q138",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The following opioid drug should be avoided in patient taking MAOI:",
+      "explanation": "Meperidine (pethidine) should be avoided with MAOIs due to risk of serotonin syndrome and severe adverse reactions. It has serotonergic properties unlike other opioids. Morphine, fentanyl, and codeine do not have this specific interaction.",
+      "keyConcept": "Meperidine contraindicated with MAOIs (serotonin syndrome risk)",
+      "options": [
+        "Morphine",
+        "Fentanyl",
+        "Meperidine",
+        "Codeine"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch10-pharma-q140",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The following analgesic is not recommended to be taken in renal failure or more than 48 hours for fear of convulsions:",
+      "explanation": "Meperidine (pethidine) should be avoided in renal failure and not used for more than 48 hours due to accumulation of normeperidine, which causes seizures. Morphine, codeine, and tramadol are safer alternatives.",
+      "keyConcept": "Meperidine contraindicated in renal failure (normeperidine accumulation causes seizures)",
+      "options": [
+        "Morphine",
+        "Tramadol",
+        "Meperidine",
+        "Codeine"
+      ],
+      "correctIndex": 3
+    }
+  ]
+}

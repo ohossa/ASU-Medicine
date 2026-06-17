@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "comingSoon": true,
+  "meta": {
+    "moduleCode": "FAM-4",
+    "moduleName": "Family Medicine",
+    "year": 4,
+    "semester": 1,
+    "creditPoints": 2,
+    "totalMarks": 40,
+    "keywords": [
+      "family medicine",
+      "primary care",
+      "fam"
+    ]
+  },
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Primary Care & Disease Prevention",
+      "subtitle": "Primary Care & Disease Prevention",
+      "emoji": "🏥",
+      "page": 1,
+      "lectureRange": "Lectures 1",
+      "subjects": [],
+      "keywords": []
+    }
+  ]
+}

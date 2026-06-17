@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "comingSoon": true,
+  "meta": {
+    "moduleCode": "R-3",
+    "moduleName": "Scientific Research",
+    "year": 3,
+    "semester": 2,
+    "creditPoints": 1,
+    "totalMarks": 20,
+    "keywords": [
+      "research",
+      "r3"
+    ]
+  },
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Designing a Scientific Research Proposal",
+      "subtitle": "Designing a Scientific Research Proposal",
+      "emoji": "📑",
+      "page": 1,
+      "lectureRange": "Lectures 1",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 2,
+      "title": "Scientific Writing, Citation & Publication Ethics",
+      "subtitle": "Scientific Writing, Citation & Publication Ethics",
+      "emoji": "✍️",
+      "page": 2,
+      "lectureRange": "Lectures 2",
+      "subjects": [],
+      "keywords": []
+    }
+  ]
+}

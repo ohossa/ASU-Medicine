@@ -7,7 +7,15 @@
     "semester": 2,
     "creditPoints": 4,
     "totalMarks": 80,
-    "keywords": ["special senses", "senses", "mss", "eye", "ear", "ophthalmology", "ent"]
+    "keywords": [
+      "special senses",
+      "senses",
+      "mss",
+      "eye",
+      "ear",
+      "ophthalmology",
+      "ent"
+    ]
   },
   "chapters": [
     {
@@ -42,7 +50,8 @@
             }
           ]
         }
-      ]
+      ],
+      "keywords": []
     },
     {
       "id": 2,
@@ -76,7 +85,8 @@
             }
           ]
         }
-      ]
+      ],
+      "keywords": []
     },
     {
       "id": 3,
@@ -110,7 +120,8 @@
             }
           ]
         }
-      ]
+      ],
+      "keywords": []
     },
     {
       "id": 4,
@@ -138,7 +149,8 @@
             }
           ]
         }
-      ]
+      ],
+      "keywords": []
     },
     {
       "id": 5,
@@ -172,7 +184,8 @@
             }
           ]
         }
-      ]
+      ],
+      "keywords": []
     },
     {
       "id": 6,
@@ -206,7 +219,8 @@
             }
           ]
         }
-      ]
+      ],
+      "keywords": []
     },
     {
       "id": 7,
@@ -240,7 +254,8 @@
             }
           ]
         }
-      ]
+      ],
+      "keywords": []
     },
     {
       "id": 8,
@@ -268,7 +283,8 @@
             }
           ]
         }
-      ]
+      ],
+      "keywords": []
     },
     {
       "id": 9,
@@ -296,7 +312,8 @@
             }
           ]
         }
-      ]
+      ],
+      "keywords": []
     }
   ]
 }

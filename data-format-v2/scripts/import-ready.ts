@@ -28,6 +28,12 @@ interface Question {
   keyConcept?: string;
   subQuestions?: SubQuestion[];
   blanks?: string[];
+  repetitionCount?: number;
+
+  /* ── Analytics fields (reserved for future usage) ── */
+  avgCorrectRate?: number;
+  totalAttempts?: number;
+  discriminationIndex?: number;
 }
 
 interface SubQuestion {
@@ -58,6 +64,7 @@ interface Chapter {
   page: number;
   lectureRange: string;
   subjects: Subject[];
+  keywords?: string[];
 }
 
 interface QuestionBankFile {
@@ -193,6 +200,10 @@ async function findTargetFile(moduleCode: string, searchDir = 'src/imports'): Pr
 }
 
 // deduplication helpers
+function cleanStarText(text: string): string {
+  return text.replace(/(?:\s*\*+)?\s*★+\s*$/g, '').trim();
+}
+
 function makeDuplicateKey(question: Pick<Question | IncomingQuestion, 'text' | 'question' | 'options'>): string {
   return normalize(`${question.text ?? question.question ?? ''} ${(question.options ?? []).join(' ')}`);
 }
@@ -201,20 +212,36 @@ function normalize(value: string): string {
   return value.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim().replace(/\s+/g, ' ');
 }
 
+function findQuestionById(bank: QuestionBankFile, id: string): Question | undefined {
+  for (const chapter of bank.chapters) {
+    for (const subject of chapter.subjects) {
+      const found = subject.questions.find((q) => q.id === id);
+      if (found) return found;
+    }
+  }
+  return undefined;
+}
+
 function removeExistingDuplicates(bank: QuestionBankFile, report: ImportReport): void {
   const seen = new Map<string, string>();
   for (const chapter of bank.chapters) {
     for (const subject of chapter.subjects) {
       const uniqueQuestions: Question[] = [];
       for (const question of subject.questions) {
-        const key = makeDuplicateKey(question);
+        const cleanText = cleanStarText(question.text);
+        const key = makeDuplicateKey({ ...question, text: cleanText });
         const keptId = seen.get(key);
         if (keptId) {
           if (!report.removedExistingDuplicates.some((item) => item.removedId === question.id)) {
-            report.removedExistingDuplicates.push({ keptId, removedId: question.id, text: question.text });
+            report.removedExistingDuplicates.push({ keptId, removedId: question.id, text: cleanText });
+          }
+          const keptQuestion = uniqueQuestions.find((q) => q.id === keptId);
+          if (keptQuestion) {
+            keptQuestion.repetitionCount = (keptQuestion.repetitionCount ?? 1) + 1;
           }
           continue;
         }
+        question.text = cleanText;
         seen.set(key, question.id);
         uniqueQuestions.push(question);
       }
@@ -228,7 +255,7 @@ function buildDuplicateIndex(bank: QuestionBankFile): Map<string, string> {
   for (const chapter of bank.chapters) {
     for (const subject of chapter.subjects) {
       for (const question of subject.questions) {
-        index.set(makeDuplicateKey(question), question.id);
+        index.set(makeDuplicateKey({ ...question, text: cleanStarText(question.text) }), question.id);
       }
     }
   }
@@ -240,9 +267,40 @@ function resolveChapter(bank: QuestionBankFile, question: IncomingQuestion, batc
   if (chapterId) return bank.chapters.find((chapter) => chapter.id === chapterId);
 
   const title = normalize(question.chapterTitle ?? batch.defaultChapterTitle ?? '');
-  if (!title) return undefined;
 
-  return bank.chapters.find((chapter) => normalize(chapter.title) === title || normalize(chapter.subtitle) === title);
+  if (title) {
+    const exact = bank.chapters.find((chapter) => normalize(chapter.title) === title || normalize(chapter.subtitle) === title);
+    if (exact) return exact;
+  }
+
+  // Keyword-based matching fallback
+  const textToAnalyze = title || normalize(question.text ?? question.question ?? '');
+  if (!textToAnalyze) return undefined;
+
+  const words = new Set(textToAnalyze.split(/\s+/));
+  let bestChapter: Chapter | undefined;
+  let bestScore = 0;
+
+  for (const chapter of bank.chapters) {
+    if (!chapter.keywords?.length) continue;
+    const chapterKeywords = chapter.keywords.map(k => normalize(k));
+    let hits = 0;
+    for (const kw of chapterKeywords) {
+      for (const word of words) {
+        if (word.length > 2 && (kw === word || kw.includes(word) || word.includes(kw))) {
+          hits++;
+          break;
+        }
+      }
+    }
+    const score = hits > 0 ? hits / Math.min(chapter.keywords.length, words.size) : 0;
+    if (score > bestScore) {
+      bestScore = score;
+      bestChapter = chapter;
+    }
+  }
+
+  return bestScore >= 0.15 ? bestChapter : undefined;
 }
 
 function inferSubject(value: string): SubjectColor | null {
@@ -302,7 +360,7 @@ function convertQuestion(incoming: IncomingQuestion, moduleCode: string, chapter
     id,
     type,
     lecture: incoming.lecture ?? chapter.id,
-    text: incoming.text ?? incoming.question ?? '',
+    text: cleanStarText(incoming.text ?? incoming.question ?? ''),
     explanation: incoming.explanation ?? 'Review the related lecture material for the rationale.',
     keyConcept: incoming.keyConcept
   };
@@ -317,7 +375,7 @@ function convertQuestion(incoming: IncomingQuestion, moduleCode: string, chapter
 }
 
 function convertSubQuestion(incoming: IncomingSubQuestion, id: string): SubQuestion {
-  const type = incoming.type === 'essay' ? 'essay' : 'mcq';
+  const type = (incoming.type === 'essay' || incoming.type === 'fillblank') ? incoming.type : 'mcq';
   const base = {
     id,
     type,
@@ -327,6 +385,7 @@ function convertSubQuestion(incoming: IncomingSubQuestion, id: string): SubQuest
   };
 
   if (type === 'essay') return { ...base, type, modelAnswer: incoming.modelAnswer ?? '' };
+  if (type === 'fillblank') return { ...base, type, blanks: incoming.blanks ?? [], acceptedAnswers: incoming.acceptedAnswers };
 
   const options = incoming.options ?? [];
   return { ...base, type, options, correctIndex: normalizeCorrectIndex(incoming, options) };
@@ -339,6 +398,7 @@ function validateQuestion(question: Question): string | null {
   if (question.type === 'essay' && !question.modelAnswer) return 'Essay modelAnswer is missing.';
   if (question.type === 'matching' && !question.pairs?.length) return 'Matching pairs are missing.';
   if (question.type === 'fillblank' && !question.blanks?.length) return 'Fillblank blanks are missing.';
+  if (question.type === 'fillblank' && question.acceptedAnswers && question.acceptedAnswers.length !== question.blanks!.length) return 'Fillblank acceptedAnswers length does not match blanks.';
   if (question.type === 'case' && !question.subQuestions?.length) return 'Case subQuestions are missing.';
   return null;
 }
@@ -470,10 +530,15 @@ async function main() {
         return;
       }
 
-      const duplicateKey = makeDuplicateKey(incoming);
+      const cleanedIncomingText = cleanStarText(text);
+      const duplicateKey = makeDuplicateKey({ ...incoming, text: cleanedIncomingText });
       const matchedDuplicateId = duplicateIndex.get(duplicateKey);
       if (matchedDuplicateId) {
-        report.skippedDuplicates.push({ matchedId: matchedDuplicateId, text });
+        const existingQuestion = findQuestionById(bank, matchedDuplicateId);
+        if (existingQuestion) {
+          existingQuestion.repetitionCount = (existingQuestion.repetitionCount ?? 1) + 1;
+        }
+        report.skippedDuplicates.push({ matchedId: matchedDuplicateId, text: cleanedIncomingText });
         return;
       }
 

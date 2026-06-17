@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "comingSoon": true,
+  "meta": {
+    "moduleCode": "EM1-5",
+    "moduleName": "Emergency Medicine & Trauma 1",
+    "year": 5,
+    "semester": 1,
+    "creditPoints": 2,
+    "totalMarks": 40,
+    "keywords": [
+      "emergency",
+      "trauma",
+      "em1"
+    ]
+  },
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Resuscitation & Critical Care",
+      "subtitle": "Resuscitation & Critical Care",
+      "emoji": "🚑",
+      "page": 1,
+      "lectureRange": "Lectures 1",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 2,
+      "title": "Advanced Trauma Life Support",
+      "subtitle": "Advanced Trauma Life Support",
+      "emoji": "🩺",
+      "page": 2,
+      "lectureRange": "Lectures 2",
+      "subjects": [],
+      "keywords": []
+    }
+  ]
+}

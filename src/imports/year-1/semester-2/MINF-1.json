@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "comingSoon": true,
+  "meta": {
+    "moduleCode": "MINF-1",
+    "moduleName": "Infection Module",
+    "year": 1,
+    "semester": 2,
+    "creditPoints": 3,
+    "totalMarks": 60,
+    "keywords": [
+      "infection",
+      "microbiology",
+      "minf"
+    ]
+  },
+  "chapters": [
+    {
+      "id": 1,
+      "title": "General & Systemic Bacteriology",
+      "subtitle": "General & Systemic Bacteriology",
+      "emoji": "🦠",
+      "page": 1,
+      "lectureRange": "Lectures 1",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 2,
+      "title": "Virology, Mycology & Parasitology",
+      "subtitle": "Virology, Mycology & Parasitology",
+      "emoji": "🧫",
+      "page": 2,
+      "lectureRange": "Lectures 2",
+      "subjects": [],
+      "keywords": []
+    }
+  ]
+}

@@ -1,0 +1,438 @@
+CHUNK 23 FAILED AFTER 4 ATTEMPTS
+ERROR: {"error":{"code":429,"message":"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 47.482742458s.","status":"RESOURCE_EXHAUSTED","details":[{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Learn more about Gemini API quotas","url":"https://ai.google.dev/gemini-api/docs/rate-limits"}]},{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerDayPerProjectPerModel-FreeTier","quotaDimensions":{"model":"gemini-2.5-flash","location":"global"},"quotaValue":"20"}]},{"@type":"type.googleapis.com/google.rpc.RetryInfo","retryDelay":"47s"}]}}
+
+--- RAW TEXT ---
+Part 4
+Local & general Anesthesia
+1=B 2=D 3=B 4=B 5=D 6=B 7=B
+8=C 9=D 10=C 11=C 12=B 13=D 14=D
+15=C 16=C 17=D 18=C 19=C 20=D 21=C
+22=D 23=C 24=D 25=D
+1. The following about thiopental is WRONG :
+A. Has a rapid onset of action due to rapid crossing of BBB.
+B. Ultra short acting due to rapid metabolism.
+C. Enzyme inducer and may precipitate porphyria.
+D. May induce respiratory depression with no available antidote.
+2. One of the following anesthetic protocols is NOT correctly matched:
+A. Dissociative anesthesia/ ketamine.
+B. Conscious sedation/ midazolam & fentanyl.
+C. Deep sedation/ propofol.
+D. Neuroleptanalgesia / propofol plus fentanyl.
+3. Which of the following possesses a weak analgesic effect?
+A. Nitrous oxide.
+B. Halothane
+C. Ketamine
+D. Fentanyl
+4. A drug inducing a GABA- mediated sedative hypnotic effect in 
+intensive care units
+A. fentanyl.
+B. Propofol
+C. Ketamine.
+D. B and C
+5. Dentists avoid extraction in infection because of all the following Except:
+A. Fear of spread of infection.
+B. Infection decreases extracellular unionized form of local anesthetics.
+C. Infection reduces crossing of local anesthetics inside nerve cell.
+D. Infection increases extracellular unionized form of local anesthetics.
+6. The following is not true concerning ester type local anesthetics:
+A. Shorter acting than amides.
+B. Less liable to induce allergy.
+C. Less liable to systemic toxicity than amides.
+D. Procaine is a member of this group.
+7. The following is not true about local anesthetics:
+A. Adding sodium bicarbonate increases activity of local anesthetics.
+B. Bupivacaine is short acting.
+C. Lidocaine is an amide.
+D. Benzocaine is used as a surface anesthetic.
+8. The following is not true about cocaine:
+A. It is a local anesthetic.
+B. Acute toxicity may result in convulsions.
+C. It is a potent vasodilator.
+D. Chronic abuse results in psychosis.
+9. The following anesthetic agent is not acting through increase GABA activity 
+A. Halothane
+B. Propofol
+C. Isoflurane
+D. Ketamine
+10. The following increase potency and MAC value of anesthetic except
+A. Opioid Drugs
+B. Benzodiazepines
+C. Alcohol abuse
+D. Elderly patient
+11. The following is not  adverse effect of halothane
+A. Malignant hyperthermia
+B. Bradycardia & arrhythmia
+C. Hypertension
+D. Hepatic toxicity
+E. Increase in intracranial pressure (ICP)
+12. The following statement about halogenated anesthetics  is wrong
+A. Isoflurane may precipitate ischemia in cardiac patients
+B. Halothane is strong  analgesic with medium rate of induction 
+C. Desflurane suitable for one day surgery
+D. Sevoflurane is preferred as inhalation agent for children 
+13. Nitrous oxide, the following is incorrect
+A. Effective analgesic with low potency
+B. Safer than halothane with less respiratory depression and less hepatic 
+toxicity
+C. Risk of abuse on prolonged exposure
+D. Iron deficiency anemia on chronic exposure
+14. The following is not common adverse effect of nitrous oxide
+A. Hypoxia if take pure without oxygen
+B. Increase pressure in the middle ear
+C. Abortion on prolonged exposure
+D. Hepatic toxicity 
+15. Which of the following is wrong regarding propofol?
+A. Rapid induction & rapid recovery due to rapid metabolism
+B. Used in conscious and deep sedation
+C. Respiratory depression and vomiting are common adverse effect
+D. Useful in one day surgery as intravenous anesthetic 
+16. Which of the following is wrong regarding ketamine?
+A. Short acting IV agent producing dissociative anesthesia
+B. Has profound analgesic effect
+C. Useful in hypertension as it decrease blood pressure 
+D. Hallucination may occur on recovery
+17. Which of the following is ester local anesthetic?
+A. Lidocaine
+B. Bupivacaine
+C. Ropivacaine
+D. Benzocaine 
+18. Which of the following is not a characteristic feature of amide local 
+anesthetics?
+A. Longer duration of action than ester group
+B. Metabolized in the liver
+C. High risk of  severe hypersensitivity reaction
+D. Duration of action is prolonged in patient with heart failure
+19. Which of the following is wrong regarding local anesthetics?
+A. Binding to plasma protein affects duration of action
+B. Lipid solubility affects potency 
+C. Addition of vasoconstrictor shorten duration of action
+D. Pka affects speed of onset 
+20. The following conditions decrease activity of local anesthetic except
+A. Repeated administration 
+B. Infection
+C. Decrease intracellular acidity 
+D. Addition of sodium bicarbonate
+21. Which of the following is wrong statement about local anesthetics?
+A. All are vasodilators except cocaine
+B. Vasoconstrictors may be added to local anesthetic except cocaine
+C. Cocaine is used as local anesthetic in fingers and toles
+D. Vasoconstrictors added to local anesthetic include epinephrine & 
+Felypressin
+22.  Addition of epinephrine to local anesthetic do not 
+A. Decreases absorption
+B. Increases duration of action
+C. Decreases systemic adverse effects
+D. Increases potency 
+23. Which of following method of administration of local anesthetic is more 
+suitable for dentistry ?
+A. Spinal anesthesia
+B. Epidural Anesthesia
+C. Nerve block
+D. IV regional anesthesia
+24. Which of the following is not adverse effect of spinal anesthesia
+A. Headache
+B. Spinal root injury
+C. CSF infection
+D. Hypertension
+25. Which of the following is a wrong statement?
+A. Propranolol decrease metabolism of lidocaine and may precipitate its 
+toxicity
+B. Addition of epinephrine to local anesthetics may induce severe 
+hypertension due to unopposed alpha action
+C. Lidocaine with epinephrine should be avoided in patient taking 
+antidepressant drugs such as TCA & MAOIs
+D. Felypressin is not suitable with local anesthetics in cardiac patients 
+Part  5: 
+Drug therapy of epilepsy & 
+Migraine
+1=D 2=B 3=A 4=D 5=A 6=B 7=C 8=D 9=C
+10=B 11=B 12=B 13=D 14=D 15=D 16=B 17=D 18=D
+19=C 20=C 21=D 22=B 23=C 24=C 25=E 26=D 27=F
+28=A 29=E 30=C 31=C 32=C 33=A 34=D 35=B
+1. Uses of antiepileptics include all the following Except:
+A. Lamotrigine / mood stabilizer in bipolar manic depression
+B. Phenytoin /digitalis arrhythmia.
+C. Gabapentin/ neuropathic pain
+D. Carbamazepine/dilutional hyponatremia.
+2. Gingival hyperplasia is a common side effect of:
+A. Valproate
+B. Phenytoin
+C. Ethosuximide
+D. Carbamazepine
+3. The following side effect is most likely to be seen with carbamazepine
+A. Water retention
+B. Coarse facial features
+C. Hirsutism
+D. Gingival Hyperplasia
+4. Hirsutism may be induced by:
+A. Valproate
+B. Interferon.
+C. Heparin
+D. Phenytoin
+E. B and D
+5. Valproate toxicity does not include:
+A. Hirsutism
+B. Hand tremor
+C. Thrombocytopenia
+D. Rare but fatal hepatitis.
+6. A mood stabilizer safe in pregnant patients with bipolar depression is
+A. Valproate.
+B. Carbamazepine.
+C. Phenytoin.
+D. Ethosuximide.
+7. An antiepileptic drug for absence seizures is:
+A. Diazepam.
+B. Carbamazepine.
+C. Ethosuximide.
+D. Phenytoin
+8. The following antiepileptic is not used  in tonic clonic epilepsy:
+A. Phenytoin.
+B. Carbamazepine.
+C. Valproate
+D. Ethosuximide
+9. Preferred therapy for a girl with combined absence and tonic clonic 
+epilepsy is
+A. Ethosuximide.
+B. Carbamazepine.
+C. Valproate.
+D.Phenytoin plus carbamazepine.
+10 . All the following are important guidelines in the management of 
+epilepsy Except
+A. All antiepileptics should be given after meals.
+B. Pregnant females should discontinue the antiepileptic drug
+C. Gradual withdrawal of therapy to avoid status epilepticus.
+D. Monotherapy is preferred to avoid drug interactions.
+11. The following is not correctly matched to its mechanism of action:
+A. Phenytoin/sodium channel blockade.
+B. Clonazepam/ Cl- channel blockade.
+C. Valproate/inhibition of GABA transaminase.
+D. Ethosuximide/Ca++ channel blockade.
+12. An antiepileptic suitable for a pregnant women with tonic clonic 
+epilepsy is
+A. Phenytoin.
+B. Carbamazepine.
+C. Valproate.
+D. Ethosuximide.
+13. Teratogenic effects are more likely to be induced by
+A. Phenytoin.
+B. Valproate.
+C. Carbamazepine.
+D. A and B.
+14. The following drugs may induce epileptic like  seizures except
+A. Tricyclic antidepressants
+B. Lithium carbonate
+C. Haloperidol
+D. Benzodiazepines 
+15. The following is not correctly matched to its mechanism of action:
+A. Levetiracetam/ Bind vesicle protein and modify glutamate release
+B. Lamotrigine/ block Na+ channels & presynaptic Ca++ channels
+C. Valproate/NMDA glutamate receptor antagonist.
+D. Ethosuximide/ Na+ channel blocker 
+16. Ethosuximide useful in 
+A. Partial epilepsy
+B. Absence seizure
+C. Tonic clonic
+D. A & C  
+17. Which of the following is incorrect regarding antiepileptic drugs
+A. Fosphenytoin is prodrug of phenytoin with less cardiac side effects
+B. Oxcarbazepine is analogue to carbamazepine with the same 
+indications but less adverse effects
+C. Phenytoin & carbamazepine are contraindicated in absence & 
+myoclonic seizures
+D. Clonazepam is 1st line in absence & myoclonic seizures
+18. Choose the incorrect statement
+A. Levetiracetam & valproate are broad spectrum used in all types of 
+epilepsy
+B. Carbamazepine is 1st choice in partial epilepsy
+C. Valproate is 1st line in myoclonic epilepsy
+D. Clonazepam is 2nd line in partial epilepsy
+19. Which of the following is not adverse effect of phenytoin?
+A. Osteomalacia
+B. Gingival Hyperplasia
+C. Agranulocytosis
+D. Teratogenicity
+20. Which of the following is not adverse effect of Carbamazepine?
+A. Agranulocytosis
+B. Dilutional hyponatremia
+C. Megaloblastic anemia   
+D. Enzyme inducer
+21. The following antiepileptic is not preferred during pregnancy
+A. Lamotrigine
+B. Carbamazepine
+C. Levetiracetam
+D. Valproate 
+22.The following antiepileptic drug is not matched with its adverse effect
+A. Lamotrigine/ Stevens Jonson Syndrome
+B. Gabapentin / Megaloblastic anemia
+C. Topiramate / Renal stone & glaucoma
+D. Levetiracetam / Mood change and agitation
+23. The following antiepilpetic drug is not enzyme inducer
+A. Phenytoin
+B. Carbamazepine
+C. Valproate
+D. Phenobarbital 
+24. Regarding adverse effects & precautions with sumatriptan, which is 
+incorrect? 
+A. Unpleasant taste with nasal spray
+B. Chest pressure
+C. Hypotension
+D. Serotonin syndrome with SSRIS
+E. Contraindicated in aptients with ischemic heart disease  
+25. Regarding adverse effects of ergotamine, which is incorrect?
+A. Nausea & vomiting
+B. Chest pressure
+C. Vasospasm & gangrene . Avoided in peripheral vascular disease
+D. Valvular heart disease with long term use
+E. Hypotension
+26. Which of the following drug is contraindicated during acute attack of 
+migraine 
+A. Propranolol
+B. Amitriptyline
+C. Valproate
+D. Dihydroergotamine  
+Cross match
+27. Ergotamine
+28. Valproate
+29. Timolol
+30. Sumatriptan
+31. NSAIDs/Paracetamol
+Cross match
+32. Metoclopramide
+33. Ergotamine
+34. Sumatriptan
+35. Topiramate
+A. Antiepileptic for migraine prophylaxis
+B. Antidepressant for migraine prophylaxis
+C. Initial therapy for moderate to severe cases
+D. Mild infrequent migraine attack 
+E. Beta blocker for migraine prophylaxis
+F. Of choice in prolonged or infrequent headache
+A. Long term use result in valvular heart disease
+B. Suppress firing of trigeminal nerve
+C. Added to ergotamine to increase its absorption
+D. Serotonin syndrome may occur with SSRI
+Part  6: 
+Antidepressant Drugs
+1=D 2=B 3=C 4=A 5=A 6=C 7=B 8=D
+9=C 10=D 11=D 12=B 13=C 14=A 15=D 16=C
+17=A 18=B 19=D 20=E 21=F 22=C 23=C 24=D
+25=E 26=C 27=C 28=E 29=D 30=B 31=A 32=C
+33=D
+1. Fluoxetine does not induce:
+A. Serotonin syndrome if co- administered with tranylcypromine
+B. Anxiety.
+C. Nausea.
+D. Marked sedation.
+2. An antidepressant useful for smoking cessation is:
+A. Venlafaxine.
+B. Bupropion.
+C. Imipramine.
+D. Mianserin.
+3. The following is not true concerning tricyclic antidepressant toxicity:
+A. Arrhythmia is managed by NaHCO3
+B. Convulsions is one of the features of toxicity.
+C. Atropine toxicity is seldom seen
+D. Conduction defects are responsible for the arrhythmia.
+4. The following concerning venlafaxine is not true:
+A. Anticholinergic side effects are frequently encountered with its use .
+B. It is a norepinephrine serotonin reuptake inhibitor.
+C. Nausea is a troublesome side effect.
+D. Hypertension may occur during therapy.
+5. Severe hypertension is most likely to occur following intake of old 
+cheese with
+A. Tranylcypromine.
+B. Moclobemide.
+C. Selegiline.
+D. Bupropion.
+6. Nocturnal enuresis is treated with imipramine but not fluoxetine 
+because
+A. Imipramine induces insomnia while fluoxetine induces sedation.
+B. Imipramine is safer than fluoxetine.
+C. Imipramine possess anticholinergic effect but fluoxetine does not.
+D. All of the above
+7. Indications of antidepressants do not include:
+A. Chronic neuropathic pain.
+B. Convulsive disorders.
+C. Eating disorders
+D. Obsessive-compulsive disorders.
+8. The nonselective MAOIs have limited use as antidepressants because 
+of their;
+A. Low efficacy
+B. High toxicity
+C. Potential to interact with many foods and drugs
+D. Both B & C.
+9. Reduction in sexual function is least seen with
+A. Imipramine
+B. Fluoxetine.
+C. Bupropion.
+D. Both B & C.
+10. Disadvantages of tricyclic antidepressants include:
+A. Narrow safety margin.
+B. Frequent side effects.
+C. Delayed therapeutic effect.
+D. All of the above
+11. The following is not correctly matched:
+A. Fluoxetine/ selective serotonin reuptake inhibitor.
+B. Mirtazapine/presynaptic α2 receptor blocker.
+C. Venlafaxine/ norepinephrine serotonin reuptake inhibitor.
+D. Moclobemide/ selective monoamine oxidase - B inhibitor.
+Cross Match
+12. Bupropion. 
+13. Buspirone
+14. Venlafaxine
+15. Fluoxetine
+A. Norepinephrine serotonin reuptake inhibitor
+B. Inhibitor of dopamine & NE reuptake
+C. Agonist/Partial 5HT1A agonist
+D. Selective serotonin reuptake inhibitor
+Cross Match 
+16. Bupropion. 
+17. Imipramine
+18. Venlafaxine
+19. Fluoxetine 
+20. Agomelatine
+21. Phenelzine
+A. Sexual dysfunction & atropine side effects
+B. Hypertension
+C. Convulsions with no reduction in sexual dysfunction
+D. Sexual dysfunction & serotonin syndrome
+E. Melatonin receptor agonist & 5HT2c antagonist
+F. Non-selective MAOI
+22. Which of the following drug interaction with TCA is wrong?
+A. Alpha blocker / potential postural hypotensive effect
+B. TCA / potentiate the effect of sympathomimitics
+C. SSRIs/decrease toxicity of TCA
+D. MAOIs/ Serotonin syndrome
+23. The following is not adverse effect of Imipramine
+A. Prolongation of QT interval leading to arrhythmia
+B. Confusion, dry mouth and increase IOP
+C. Insomnia and Hallucination
+D. Convulsion 
+24. Which of the following is not adverse effect encountered with 
+fluoxetine?
+A. Nausea
+B. Sexual Dysfunction
+C. Increase risk of suicide
+D. Sedation & dry mouth
+25. The following a do not induce sexual dysfunction
+A. Tricyclic antidepressants
+B. Mirtazapine
+C. Fluoxetine
+D. Bupropion
+E. B & D
+26. The following drug do not increase serotonin in the brain
+A. Imipramine
+B. Fluoxetine
+C. Bupropion
+D. Venlafaxine
+E. Mirtazapine
+Cross match
+27. Duloxetine
+28. Imipramine
+29. Bupropion
+A. Anxiety disorders (OCD)
+B. severe depression of alter sleep circadian rhythm
+C. stimulate pudendal nerve supplying urinary sphincter
+30. Agomelatine D. depression in heavy smoker
+31. SSRIS
+E. Nocturnal enuresis because has atropine like action

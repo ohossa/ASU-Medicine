@@ -1,0 +1,6139 @@
+{
+  "moduleCode": "MCNS-2",
+  "questions": [
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Norepinephrine is produced by",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "hydroxylation of dopamine.",
+        "methylation of epinephrine.",
+        "decarboxylation of dopamine.",
+        "oxidation of epinephrine."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Production of norepinephrine from dopamine requires",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "a copper-containing oxidase.",
+        "vitamin C.",
+        "tetrahydrobiopterin.",
+        "a and b."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Production of epinephrine from nor-epinephrine requires",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "an N-methyltransferase.",
+        "S-adenosylmethionine.",
+        "both (a) and (b).",
+        "neither (a) nor (b)."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Catecholamines are catabolized by",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "monoamine oxidase (MAO), followed by aldehyde dehydrogenase.",
+        "catechol O-methyltransferase (COMT).",
+        "both (a) and (b).",
+        "neither (a) nor (b)."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The end product of adrenaline and noradrenaline catabolism is",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "vanillylmandelic acid (VMA).",
+        "homovanillic acid.",
+        "phenylacetic acid.",
+        "phenyl pyruvic acid."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "To increase the synthesis of catecholamines in the brain, a patient with Parkinsonism may be given",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "L-dopa.",
+        "alpha-methyl dopa.",
+        "MAO inhibitors.",
+        "tyramine."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Decarboxylation of 5-hydroxytryptophan results in formation of",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "tryptamine.",
+        "serotonin.",
+        "melatonin.",
+        "tyramine."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Serotonin is",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "5-hydroxytryptamine.",
+        "a tyrosine derivative.",
+        "produced by N-acetylation and O-methylation of melatonin.",
+        "a and c."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Serotonin is catabolized by",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "monoamine oxidase (MAO).",
+        "catechol O-methyltransferase (COMT).",
+        "both (a) and (b).",
+        "neither (a) nor (b)."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following increases in 24-hour urine with pheochromocytoma (adrenaline-secreting tumor)?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Noradrenaline.",
+        "Vanillylmandelic acid (VMA).",
+        "5-Hydroxyindole-acetic acid (5-HIAA).",
+        "Phenylacetyl-glutamine."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following may be measured in 24-hour urine to diagnose carcinoid syndrome (argentaffinoma, serotonin-secreting tumor)?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "5-Hydroxytryptamine.",
+        "5-Hydroxyindole-acetic acid (5-HIAA).",
+        "Vanillylmandelic acid (VMA).",
+        "Phenylacetyl-glutamine."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following may serve as a tumor marker?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Vanillylmandelic acid.",
+        "5-hydroxyindole acetic acid.",
+        "Phenyl pyruvic acid.",
+        "a and b."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following enzymes is important for synthesis of both epinephrine and melatonin?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "aromatic aminoacid decarboxylase.",
+        "O-methyltransferase.",
+        "Dihydrobiopterin reductase.",
+        "a and c."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Histamine is formed from histidine by",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "aromatic L-aminoacid decarboxylase.",
+        "a reaction that requires pyridoxal phosphate.",
+        "both (a) and (b).",
+        "neither (a) nor (b)."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Tyramine",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "is the decarboxylation product of tyrosine, which is present in aged food.",
+        "can displace catecholamines from their stores.",
+        "may precipitate a hypertensive crisis in patients taking MAO inhibitors as anti-depressant.",
+        "all the above."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Nitric oxide is a hormone and a neurotransmitter produced",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "by the action of nitric oxide synthase.",
+        "from glycine.",
+        "both (a) and (b).",
+        "neither (a) nor (b)."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Nitric oxide synthase",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "acts on arginine and needs Oxygen and NADPH.",
+        "produces citrulline and nitric oxide.",
+        "has three isozymes: neuronal, endothelial and phagocytic.",
+        "all the above."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which nitric oxide synthase isozyme is",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "neuronal.",
+        "endothelial.",
+        "phagocytic.",
+        "a and b."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Urea cycle is a pathway that",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "takes place mainly in the liver cells.",
+        "produces ammonia from urea.",
+        "both (a) and (b).",
+        "neither (a) nor (b)."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "In the urea cycle, urea is produced from",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "arginine by arginase enzyme.",
+        "fumarate by fumarase.",
+        "arginino-succinate by arginino-succinase.",
+        "carbon dioxide and ammonium ions by carbamoyl phosphate synthetase."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Although arginine is formed in the urea cycle, it is considered an essential amino-acid. Why?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "It must be broken down by arginase enzyme.",
+        "Its rate of synthesis is not enough for growing children.",
+        "It is formed in the cytosol, therefore it cannot be used.",
+        "It is formed in the D-configuration."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Two reactions of the urea cycle take place in the mitochondria. These are",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "carbamoyl phosphate synthetase and ornithine transcarbamoylase.",
+        "arginino-succinate synthetase and argininosuccinase.",
+        "argininosuccinase and fumarase.",
+        "fumarase and arginase."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is a high energy compound formed in the urea cycle?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Ornithine.",
+        "Carbamoyl phosphate.",
+        "Citrulline.",
+        "Arginino-succinate."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following aminoacids is formed in the urea cycle and used in protein synthesis?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Ornithine.",
+        "Citrulline.",
+        "Arginino-succinate.",
+        "Arginine."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Ornithine is an aminoacid formed from",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "arginine and can be transformed to glutamate in two steps.",
+        "glutamate and can be transformed to arginine in the urea cycle.",
+        "arginine and transformed to aceto-acetate on fasting.",
+        "a and b."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "N-acetyl-glutamate",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "is an allosteric activator of ornithine transcarbamoylase.",
+        "increases after meal intake.",
+        "both (a) and (b).",
+        "neither (a) nor (b)."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "In the urea cycle, which aminoacids should be transported between the mitochondria and the cytosol in either direction?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "ornithine and citrulline.",
+        "citrulline and arginine.",
+        "arginine and ornithine.",
+        "citrulline and arginino-succinate."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is produced by the urea cycle with the production of urea?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Ammonia.",
+        "Fumarate.",
+        "Arginine.",
+        "Aspartate."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The urea cycle is active in cases of",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "carbohydrate intake.",
+        "protein intake.",
+        "fasting.",
+        "b and c."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "How many carbon and nitrogen atoms are there in a urea molecule?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "One carbon and one nitrogen.",
+        "One carbon and two nitrogen.",
+        "Two carbon and two nitrogen.",
+        "Two carbon and one nitrogen."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is the source of urea carbon?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Methyl group of methionine.",
+        "Methylene-tetrahydrofolate.",
+        "Carbon dioxide.",
+        "Carbonyl carbon of pyruvate."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following gives one nitrogen atom of the urea molecule?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Aspartate.",
+        "Glutamate.",
+        "Fumarate.",
+        "Ornithine."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is a source of urea nitrogen?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Ammonium ion formed from ammonia.",
+        "Aspartate.",
+        "Both (a) and (b).",
+        "Neither (a) nor (b)."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Glutamate can be the source of both nitrogen atoms of urea through which reactions?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Glutaminase.",
+        "Glutamate dehydrogenase.",
+        "Glutamate oxaloacetate transaminase.",
+        "b and c."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Ammonia is introduced in the urea cycle by",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "reacting as ammonium ion with carbon dioxide and ATP.",
+        "forming ornithine.",
+        "making a part of N-acetyl glutamate.",
+        "the arginase reaction."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "How is carbamoyl phosphate synthetase I different from carbamoyl phosphate synthetase II?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "I is mitochondrial while II is cytosolic.",
+        "I is used for pyrimidine synthesis but II is for urea synthesis.",
+        "I does not need N-acetyl glutamate as allosteric activator, unlike II.",
+        "I uses glutamine not ammonia as a nitrogen donor."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is an energy-producing pathway?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Citrate cycle.",
+        "Urea cycle.",
+        "Both (a) and (b).",
+        "Neither (a) nor (b)."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "How many ATP (energy currency) are used in one turn of urea cycle?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "2",
+        "3",
+        "4",
+        "5"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following reactions linked to urea cycle may help covering its energy cost?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Malate dehydrogenase involved in aspartate regeneration from fumarate.",
+        "Glutamate dehydrogenase involved in provision of ammonia.",
+        "Glutaminase involved in provision of ammonia.",
+        "a and b."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "ATP is consumed in which of the following reactions?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Carbamoyl phosphate synthetase.",
+        "Ornithine transcarbamoylase.",
+        "Arginino-succinate synthetase.",
+        "a and c."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "What is the use of glutamate for the urea cycle?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Production of ammonia by glutamate dehydrogenase reaction.",
+        "Regeneration of aspartate by the glutamate:oxaloacetate transaminase reaction.",
+        "Formation of the cycle activator: N-acetyl-glutamate.",
+        "All the above."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "How is citric acid cycle useful for urea cycle?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Providing energy.",
+        "Regeneration of aspartate from fumarate, through malate and oxalo-acetate.",
+        "Both (a) and (b).",
+        "Neither (a) nor (b)."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is true about urea cycle?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Its rate varies with the type of food.",
+        "Is not necessary in times of fasting.",
+        "The concentration of its enzymes is constant.",
+        "It is a closed pathway, with its intermediates not involved in other metabolic reactions."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which reaction of the urea cycle is the primary control reaction of the pathway?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Carbamoyl phosphate synthetase.",
+        "Ornithine transcarbamoylase.",
+        "Arginino-succinate synthetase.",
+        "Arginase."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The rate of the urea cycle is controlled by",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "substrate availability.",
+        "induction of the cycle enzyme.",
+        "arginine, which activates the synthesis of the allosteric activator.",
+        "all the above."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Asparagine is important as",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "an intermediate of the urea cycle.",
+        "an aminoacid that is formed by post-translational modification.",
+        "a primary source of ammonia in the kidney.",
+        "a requirement for certain cancer cells."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "matching",
+      "text": "Match each description to the proper molecule:",
+      "explanation": "",
+      "keyConcept": "",
+      "pairs": [
+        {
+          "premise": "58- On hydrolysis, produces urea.",
+          "target": "(b) Arginine"
+        },
+        {
+          "premise": "5",
+          "target": "N/A"
+        }
+      ]
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following is not true concerning codeine:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Inhibits cough center in medulla.",
+        "Less potent antitussive than morphine.",
+        "Diarrhea is a troublesome side effect.",
+        "Analgesic."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following is not common between pethidine & buprenorphine:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Analgesic effect in severe pain.",
+        "Respiratory depression is increased by increasing dose.",
+        "Nausea & vomiting.",
+        "Constipation."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Pethidine differs from morphine in all the following Except:",
+      "explanation": "N/A\n\nKEY_",
+      "keyConcept": "",
+      "options": [
+        "It is preferred for long term treatment of chronic pain.",
+        "It is less liable to cause asphyxia neonatorum.",
+        "It is less liable to cause biliary colic.",
+        "It has atropine like action."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following is NOT used in alcohol abuse",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Disulfiram",
+        "Acamprosate",
+        "Flumazenil",
+        "Naltrexone",
+        "Thiamine"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "matching",
+      "text": "Cross Match each of the following to its adverse effect",
+      "explanation": "",
+      "keyConcept": "",
+      "pairs": [
+        {
+          "premise": "1) Livido reticularis",
+          "target": "E. Amantadine"
+        },
+        {
+          "premise": "2) Fatal hepatotoxicity & hair thinning",
+          "target": "D. Valproate"
+        },
+        {
+          "premise": "3) Chest wall rigidity",
+          "target": "A. Fentanyl"
+        }
+      ]
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "matching",
+      "text": "Cross Match each of the following drugs to its mechanism of action",
+      "explanation": "",
+      "keyConcept": "",
+      "pairs": [
+        {
+          "premise": "1) Inhibitor of serotonin & norepinephrine reuptake",
+          "target": "C. Tramadol"
+        },
+        {
+          "premise": "2) Inhibitor of dopamine & NE reuptake",
+          "target": "A. Bupropion"
+        },
+        {
+          "premise": "3) Agonist/Partial SHT 1A agonist",
+          "target": "B. Buspirone"
+        },
+        {
+          "premise": "4) Increases serotonin & norepinephrine release",
+          "target": "D. Mirtazapine"
+        }
+      ]
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following statements concerning anesthetics is correct ?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Thiopental is ultra short acting due to rapid metabolism.",
+        "Ketamine blocks NMDA receptors .",
+        "Propofol possesses a strong analgesic effect.",
+        "Halothane is the least likely inhalation agent to increase intracranial tension.",
+        "Dissociative anesthesia is induced by midazolam."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following concerning antiparkinsonian drugs is/are CORRECT?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Apomorphine is given subcutaneously in emergency.",
+        "L-dopa- induced dyskinesia is reduced by carbidopa.",
+        "Benztropine reduces fluctuations in response to L-dopa.",
+        "Amantadine may induce insomnia.",
+        "A and D."
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is not a NSAID? :",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Aspirin",
+        "Paracetamol",
+        "Indomethacin",
+        "Ibuprofen"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which one of the following statements regarding NSAIDs is FALSE?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Nephrotoxicity may occur on chronic use of high doses",
+        "Respiratory depression seen with opioid analgesics does not occur with therapeutic doses of NSAIDs",
+        "Their use does not result in drug dependence seen with opioid analgesics",
+        "Aspirin is a good choice for use as analgesic antipyretic for children",
+        "They may cause-gastric mucosal irritation and bleeding"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following is common between aspirin and other NSAIDs",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Reversibly inhibit COX enzyme",
+        "Prolonged antiplatelet effect",
+        "Prophylaxis against myocardial infarction.",
+        "Hypersensitivity reactions may occur"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "NSAIDs are best avoided in:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Asthmatic patients",
+        "Hypersensitivity to aspirin",
+        "Patients with a history of gastric bleeding",
+        "All of the above"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "All the following uses are shared by both aspirin and celecoxib EXCEPT",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Anti-inflammatory in chronic inflammatory musculoskeletal disorders.",
+        "Prophylaxis against myocardial infarction.",
+        "Acute pain.",
+        "Primary dysmenorrhea."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following analgesic agents poses a risk in a 60-year-old patient with a history of transient ischemic attacks",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Paracetamol",
+        "Celecoxib.",
+        "Aspirin.",
+        "A and B"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is FALSE concerning selective COX 2 inhibitors ? :",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Are associated with low risk of gastric ulceration",
+        "Have a low risk of cardiotoxicity and stroke",
+        "Nephrotoxicity is a serious adverse effect",
+        "Celecoxib should not be given to patients with sulfonamide allergy"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following drug is NOT correctly matched to its side effects",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Indomethacin/ severe headache due to cerebral VD.",
+        "Paracetamol/ bleeding.",
+        "Celecoxib/ rash since it is structurally related to sulfonamides.",
+        "Ibuprofen/Reye's syndrome.",
+        "B and D"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following statements about aspirin is INCORRECT:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "It is mainly used today as a cardiovascular drug.",
+        "It reversibly inhibits COX enzyme.",
+        "Hyperuricemia occurs with low dose.",
+        "Inhibits platelet aggregation in low dose.",
+        "Tinnitus may occur with high dose"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which one of the following statements regarding paracetamol is TRUE? :",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "It is excreted unchanged by the kidney",
+        "The maximum recommended daily dose in adults is 4 gm.",
+        "Exhibits strong anti-inflammatory activity",
+        "It should not be given in patient allergic to aspirin"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Concerning paracetamol, all are true Except:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Preferred to aspirin in peptic ulcer.",
+        "Acute paracetamol poisoning causes hepatic damage.",
+        "Interferes with excretion of uric acid.",
+        "May be used intravenously in acute fever of infectious origin."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following agent/s is/are used in transient ischemic attacks",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Low dose aspirin",
+        "Warfarin",
+        "Heparin",
+        "A and B",
+        "A and C"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "matching",
+      "text": "Cross Match each of the following adverse effect to the corresponding drug",
+      "explanation": "",
+      "keyConcept": "",
+      "pairs": [
+        {
+          "premise": "1) Aplastic anemia & bleeding",
+          "target": "C. Indomethacin in osteoarthritis"
+        },
+        {
+          "premise": "2) Diarrhea & alopecia",
+          "target": "A. Colchicine in gout"
+        },
+        {
+          "premise": "3) Hyperuricemia & bleeding",
+          "target": "D. Aspirin in transient ischemic attacks"
+        }
+      ]
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Chronic use of which of the following may increase paracetamol toxicity",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Cimetidine",
+        "Ketoconazole",
+        "Rifampicin",
+        "None of the above"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following reversibly inhibits COX-1 and COX-2 enzymes?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Aspirin",
+        "Ibuprofen",
+        "Allopurinol",
+        "Celecoxib",
+        "Sulphinpyrazone"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following is NOT true?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Liver failure following paracetamol toxicity is due to glutathione depletion",
+        "Piroxicam is given 3 times daily",
+        "Diclofenac exhibits higher efficacy than ibuprofen & less side effects than indomethacin",
+        "Sulfinpyrazone may induce peptic ulcer",
+        "Probencid & sulfinpyrazone may induce acute attack of gout"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "This adverse effect is less with celecoxib compared to indomethacin",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Nephrotoxicity",
+        "Stroke",
+        "Myocardial infarction",
+        "Skin rash",
+        "Peptic ulcer"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Indomethacin is least likely to be prescribed in",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Acute gouty arthritis.",
+        "Osteoarthritis",
+        "Patent ductus arteriosus.",
+        "Rheumatoid arthritis.",
+        "Ankylosing spondiolytis"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following poses the least risk of adverse cardiovascular events",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Naproxen",
+        "Piroxicam",
+        "Diclofenac",
+        "Indomethacin"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Pain from ala of nose Is carried by which nerve?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Infratrochlear",
+        "Infraorbital",
+        "External nasal",
+        "Buccal",
+        "Auriculotemporal"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Regarding the scalp the following statements are true Except:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Infection from scalp wounds can spread to superior sagittal sinus.",
+        "Its blood vessels run in the loose subaponeurotic space.",
+        "Its skin, superficial fascia and aponeurosis move as one layer.",
+        "Frontal bellies of occipito-frontalis can corrugate skin of forehead.",
+        "Occipital bellies are supplied by facial nerve."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The large blood vessels of scalp run into",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Skin.",
+        "Subcutaneous connective tissue",
+        "Epicranial aponeurosis.",
+        "Loose areolar tissue.",
+        "Pericranium."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following veins unite with a posterior a branch of the retromandibular vein to form external jugular vein?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Posterior Auricular",
+        "Superficial Temporal.",
+        "Facial.",
+        "Transverse facial.",
+        "Deep facial."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The plane of movement of scalp is between:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Skin & epicranial aponeurosis",
+        "Epicranial aponeurosis & pericranium.",
+        "Skin & subcutaneous fat",
+        "Pericranium & skull",
+        "Connective tissue layer & aponeurosis."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Cranial Nerves",
+      "chapterId": 7,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following nerves supplying scalp and face Is not derived from trigeminal nerve?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Great auricular",
+        "Auriculotemporal.",
+        "Zygomaticotemporal.",
+        "Supraorbital",
+        "Supratrochlear."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Loss of sensation from the lower eye lid indicates injury of which nerve?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Lacrimal",
+        "Infratrochlear",
+        "Infraorbital",
+        "Zygomaticofacial",
+        "Zygomaticotemporal"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following muscles can produce transverse wrinkles in the forehead?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Corrugator supercilii.",
+        "Frontalis.",
+        "Orbicularis oculi.",
+        "Zygomaticus minor.",
+        "None of the above."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Retromandibular vein:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Is formed by union of maxillary & superficial temporal veins.",
+        "Begins inside parotid gland.",
+        "Is deep to facial nerve inside parotid gland.",
+        "Divides into 2 branches.",
+        "All the above."
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Bleeding beneath the pericranium of the scalp:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Spreads underneath all of the scalp.",
+        "Makes a swelling that takes the shape of the underlying bone.",
+        "Reaches to the upper eyelids.",
+        "Reaches to the back of neck.",
+        "Reaches the extradural space."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The motor nerve of the scalp behind the auricle is:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Buccal branch of facial nerve.",
+        "Posterior auricular branch of facial nerve.",
+        "Zygomatic branch of facial nerve:",
+        "Temporal branch of facial nerve.",
+        "Marginal mandibular branch of facial nerve."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Lymph from central part of upper lip drop, directly to:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Submandibular lymph nodes.",
+        "Submental lymph nodes.",
+        "Parotid lymph nodes.",
+        "Mastoid lymph nodes.",
+        "Deep cervical lymph nodes."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Buccinator:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Is one of the muscles of mastication.",
+        "Is supplied by buccal branch of mandibular nerve.",
+        "Arises from both mandible and maxilla.",
+        "Is covered by investing layer of fascia.",
+        "Accumulates food in vestibule of mouth."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The branch of the mandibular nerve that supplies the scalp is the:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Zygomaticotemporal nerve",
+        "Lesser occipital nerve",
+        "Supraorbital nerve",
+        "Third occipital nerve",
+        "Auriculotemporal nerve"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Internal carotid artery supplies:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Chin",
+        "Forehead",
+        "Cheek",
+        "Non-hairy temple",
+        "Hairy temple"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The scalp Is:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Supplied by the great auricular nerve in front of the auricle.",
+        "Supplied by the supratrochlear and supraorbital arteries branches of the facial artery.",
+        "Supplied posteriorly by the greater occipital nerve from the ventral ramus of C2.",
+        "Supplied behind the auricle by the lesser occipital nerve from the ventral ramus of C2.",
+        "Drained by supratrochlear and supraorbital veins, which unite to form the superior ophthalmic vein."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The upper lip:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Is supplied by facial artery.",
+        "Is supplied by maxillary nerve",
+        "Lies in the dangerous area of face.",
+        "Its philtrum is obliterated in infections.",
+        "All the above is true."
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Facial artery:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Is a branch of internal carotid artery",
+        "Enters face at antero-inferior angle of Buccinator",
+        "Has a tortuous course",
+        "Ends at side of nose.",
+        "Ends by anastomosing with supraorbital artery."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following contains parasympathetic postganglionic fibers?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Lesser petrosal nerve.",
+        "Glossopharyngeal nerve.",
+        "Tympanic nerve.",
+        "Auriculotemporal nerve.",
+        "Great auricular nerve."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The nerve supply of the muscle of the scalp is:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Trigeminal nerve.",
+        "Great auricular nerve.",
+        "Glossopharyngeal nerve",
+        "Facial nerve.",
+        "Great occipital nerve,"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Pulse felt at antero-inferior angle of masseter is from which artery?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Facial artery.",
+        "Lingual artery.",
+        "Superficial temporal artery.",
+        "Submental artery.",
+        "External carotid artery."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Infection from dangerous area of face may be transmitted to the following venous sinus:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Superior petrosal.",
+        "Sigmoid.",
+        "Inferior sagittal.",
+        "Superior sagittal.",
+        "Cavernous."
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "In which of the following layers of the scalp does infection tend to spread:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Skin.",
+        "Connective tissue layer.",
+        "Aponeurotic layer",
+        "Loose areolar tissue layer.",
+        "Periosteal layer."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Pain from upper lip is carried by.",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Buccal",
+        "Mental",
+        "Infraorbital",
+        "Zygomaticofacial",
+        "Marginal mandibular"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Infection of lateral part of the upper eye lid leads to enlargement of this group of lymph nodes:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Submental group",
+        "Mastoid group",
+        "Submandibular group",
+        "Parotid group",
+        "Occipital group"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Bleeding in which layer of scalp causes black eye?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Skin.",
+        "Connective tissue.",
+        "Aponeurosis.",
+        "Loose areolar tissue.",
+        "Pericranium."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The lowermost soft part of the auricle of ear is called:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Promontory",
+        "Tragus",
+        "Concha",
+        "Lobule",
+        "None of the above."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The nerve that carries the sensation for the lower eyelid is:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Supraorbital",
+        "Infraorbital",
+        "Buccal",
+        "Mental",
+        "Auriculotemporal"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Regarding Scalp, all are true Except:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Its wounds bleed profusely.",
+        "Its wounds gape if the aponeurosis is cut.",
+        "It has no sebaceous glands.",
+        "Its veins communicate with the intracranial Venous sinuses.",
+        "It contains a muscle of facial expression."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The non-hairy region of the temple is supplied by which of the following nerves?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Infratrochlear",
+        "Infraorbital",
+        "Auriculotemporal",
+        "Zygomaticotemporal",
+        "Zygomaticofacial"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The main sensory nerve to the lower lip Is the:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Buccal.",
+        "Cervical of facial.",
+        "Mental.",
+        "Great auricular.",
+        "None of the above."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Infection of scalp area behind the ear affects which group of LNs",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Submental group",
+        "Submandibular group",
+        "Deep parotid group",
+        "Superficial parotid group",
+        "Occipital group"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is sensory to the scalp behind the auricle?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Auriculotemporal nerve.",
+        "Superficial temporal nerve.",
+        "Great auricular nerve.",
+        "Zygomaticotemporal nerve.",
+        "Buccal nerve."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "All of the following regarding orbicularis oris muscle is correct Except:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "It is a muscle of facial expression.",
+        "It is supplied by facial nerve.",
+        "Its fibers form complete circles around the mouth.",
+        "It can close the oral (labial) fissure.",
+        "It helps in speech."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The nerve supplying the buccinator muscle is:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Mandibular",
+        "Facial",
+        "Glossopharyngeal",
+        "Vagus",
+        "Cranial accessory"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following is a branch of the superficial temporal artery in the face:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Supraorbital.",
+        "Supratrochlear.",
+        "Infraorbital.",
+        "Transverse facial.",
+        "Inferior labial."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The 2 frontal bellies:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Originate from skin of eyebrows.",
+        "Are separated from each other.",
+        "Are supplied by supraorbital nerve.",
+        "Form the only muscle of face.",
+        "Are attached to superior temporal line."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Regarding buccinator muscle, all the following statements are true Except:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "It arises from both maxilla and mandible.",
+        "The pterygomandibular raphe is a common origin for this muscle and the middle constrictor.",
+        "Its middle fibers decussate at the modiolus.",
+        "It is covered by buccopharyngeal fascia.",
+        "It compresses the cheeks against the teeth."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Lacrimal part of orbicularis oculi:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Is attached to medial palpebral ligament.",
+        "Closes the eye gently.",
+        "Is attached to lateral palpebral raphe.",
+        "Is supplied by auriculotemporal nerve.",
+        "Is a part of orbicularis oris."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Regarding lips all are true Except:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "The main sensory supply to upper lip is facial nerve.",
+        "The main sensory supply to lower lip is Mental nerve.",
+        "Their muscles are formed mainly by orbicularis oris.",
+        "Their blood supply is through facial artery.",
+        "In facial palsy lips can’t be dilated."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Cranial Nerves",
+      "chapterId": 7,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The branch of facial nerve that supplies the platysma is the",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Temporal",
+        "Zygomatic",
+        "Buccal",
+        "Mandibular",
+        "Cervical"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Mandibular nerve is sensory to:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Upper eyelid.",
+        "Lower lip.",
+        "Tip of nose.",
+        "Lower eyelid.",
+        "Upper lip."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Pulse felt in front of tragus of ear against zygomatic arch is from which artery?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Facial artery.",
+        "Maxillary artery.",
+        "Infraorbital artery.",
+        "Superficial temporal artery.",
+        "Posterior auricular artery."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The anterior triangle of the neck, include the following Except one:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "The muscular triangle.",
+        "The carotid triangle.",
+        "The digastric triangle.",
+        "The submental triangle.",
+        "The occipital triangle."
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Regarding digastric triangle. All are true Except:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "It is bounded anteriorly by anterior belly of digastric.",
+        "It is bounded posteriorly by posterior belly of digastric and stylohyoid.",
+        "It is bounded superiorly by hyoid bone.",
+        "It contains submandibular gland.",
+        "It contains submandibular lymph nodes."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following muscles subdivides the posterior triangle of the neck:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Sternocleidomastoid.",
+        "Superior belly of omohyoid.",
+        "Inferior belly of omohyoid.",
+        "Posterior belly of digastric.",
+        "Subclavius."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following muscle bounds the carotid triangle posteriorly:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Digastric (posterior belly).",
+        "Digastric (anterior belly).",
+        "Omohyoid (superior belly).",
+        "Omohyoid (inferior belly)",
+        "Strenocleidomastoid."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following structures form the floor of the posterior triangle of the neck Except:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Levatorscapulae.",
+        "Splenuis capitis.",
+        "Scalenus medius.",
+        "Investing layer of deep cervical fascia.",
+        "Prevertebral layer of deep cervical fascia."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The cutaneous nerve supply over the anterior triangle of the neck is largely from:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Dorsal rami of cervical nerves.",
+        "Great auricular nerve.",
+        "Transverse cutaneous nerve."
+      ],
+      "correctAnswer": null
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Six hours after a meal, which of the following is (are) MOST important as a source of fuel for the brain?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Glycogen from the muscle.",
+        "Ketone bodies from the liver.",
+        "Protein from the muscle.",
+        "Fatty acids from the adipose tissue.",
+        "Glycogen from the liver."
+      ],
+      "correctAnswer": null
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is an absolute requirement for the brain at all times?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Glucose and oxygen.",
+        "Glucose and ketone bodies.",
+        "Ketone bodies and oxygen.",
+        "Glucose and fatty acids."
+      ],
+      "correctAnswer": null
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "In fasting conditions, glucose is provided for the brain by:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Absorption from the intestine.",
+        "Glycogenolysis in the liver.",
+        "Gluconeogenesis in the liver.",
+        "(b) and (c)."
+      ],
+      "correctAnswer": null
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Brain cells uptake glucose by:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "GLUT1 and GLUT2.",
+        "GLUT and GLUT5.",
+        "GLUT4.",
+        "SGLT2."
+      ],
+      "correctAnswer": null
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "In carcinoid syndrome the argentaffin tissue of the abdominal cavity overproduce:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Serotonin.",
+        "Histamine.",
+        "Tryptamine.",
+        "Tyrosine."
+      ],
+      "correctAnswer": null
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The rate limiting step in the biosynthesis of catecholamines is:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Decarboxylation of dihydroxyphenylalanine.",
+        "Hydroxylation of phenylalanine.",
+        "Hydroxylation of tyrosine.",
+        "Oxidation of dopamine."
+      ],
+      "correctAnswer": null
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following amine acids may act as a neurotransmitter?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Glycine.",
+        "Glutamic acid.",
+        "Gamma-amino-butyric acid (GABA).",
+        "All the above."
+      ],
+      "correctAnswer": null
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The enzyme dopamine beta-oxidase (hydroxylase) which catalyzes conversion of dopamine to norepinephrine requires:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Vitamin A.",
+        "Vitamin C.",
+        "Vitamin E.",
+        "Vitamin B12."
+      ],
+      "correctAnswer": null
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Histamine is formed from histidine by:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Deamination.",
+        "Dehydrogenation.",
+        "Decarboxylation.",
+        "Carboxylation."
+      ],
+      "correctAnswer": null
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "A vasodilating compound is produced by the decarboxylation of the amino acid:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Arginine.",
+        "Aspartic acid.",
+        "Glutamine.",
+        "Histidine."
+      ],
+      "correctAnswer": null
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Gamma-amino-butyric acid (GABA) is produced by:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Decarboxylation of glutamic acid.",
+        "Transamination of gamma-hydroxy-butyric acid.",
+        "A reaction that requires vitamin B6 derived cofactor.",
+        "A and c."
+      ],
+      "correctAnswer": null
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The defective enzyme in histidinemia is:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Histidine carboxylase.",
+        "Histidine decarboxylase.",
+        "Histidase.",
+        "Histidine oxidase."
+      ],
+      "correctAnswer": null
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Serotonin is synthesized from:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Serine.",
+        "Phenylalanine.",
+        "Tyrosine.",
+        "Tryptophan."
+      ],
+      "correctAnswer": null
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following increases in 24 Hour urine with pheochromocytoma (adrenaline-secreting tumor)?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Noradrenaline.",
+        "Vanillylmandelic acid (VMA).",
+        "5-Hydroxyindole-acetic acid (5-HIAA).",
+        "Phenylacetyl-glutamine."
+      ],
+      "correctAnswer": null
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following may be measured in 24-hour urine to diagnose carcinoid syndrome (argentaffinoma, serotonin secreting tumor)?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "5-Hydroxytryptamine.",
+        "5-Hydroxyindole-acetic acid (5-HIAA).",
+        "Vanillylmandelic acid (VMA).",
+        "Phenylacetyl-glutamine."
+      ],
+      "correctAnswer": null
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following may serve as a tumor marker?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Vanillylmandelic acid.",
+        "5-hydroxyindole acetic acid.",
+        "Phenyl pyruvic acid.",
+        "a and b."
+      ],
+      "correctAnswer": null
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following enzymes is important for synthesis of both epinephrine and melatonin?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Aromatic amino acid decarboxylase.",
+        "O-methyltransferase.",
+        "Dihydrobiopterin reductase.",
+        "a and c."
+      ],
+      "correctAnswer": null
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Methyl dopa decreases blood pressure by:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Inhibiting the synthesis of catecholamines.",
+        "Antagonizing the action of aldosterone.",
+        "Stimulating the release of renin.",
+        "Inhibiting the breakdown of angiotensin."
+      ],
+      "correctAnswer": null
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is true about the amino acid neurotransmitters?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Glutamic acid is an excitatory, while Glycine and GABA are inhibitory neurotransmitters.",
+        "Glycine constitutes one third of the collagen amino acids, and glutamic acid is largely produced from other amino acids.",
+        "Monosodium glutamate is a widely used food additive.",
+        "All the above."
+      ],
+      "correctAnswer": null
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Histamine is formed from histidine by which of the following enzymes or reactions:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Aromatic L-amino acid decarboxylase.",
+        "A reaction that requires pyridoxal phosphate.",
+        "Both (a) and (b).",
+        "Neither (a) nor (b)."
+      ],
+      "correctAnswer": null
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Nitric Oxide is a hormone and a neurotransmitter synthesized:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "By the action of nitric oxide synthase.",
+        "From glycine.",
+        "Both (a) and (b).",
+        "Neither (a) nor (b)."
+      ],
+      "correctAnswer": null
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "GABA (gamma amino butyric acid) is:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Post-synaptic excitatory transmitter.",
+        "Post-synaptic inhibitor transmitter.",
+        "Activator of glia-cell function.",
+        "Inhibitor of glia-cell function."
+      ],
+      "correctAnswer": null
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Mono Amine Oxidase (MAO) catalyzes the conversion of serotonin to:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Dopamine.",
+        "5-hydroxyindole-acetic acid.",
+        "Epinephrine.",
+        "Vanillylmandelic acid.",
+        "Melatonin."
+      ],
+      "correctAnswer": null
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "L-Dopa (Dihydroxyphenylalanine) is:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Produced by decarboxylation of noradrenaline.",
+        "Converted to tyrosine by a hydroxylase enzyme.",
+        "Both (a) and (b).",
+        "Neither (a) nor (b)."
+      ],
+      "correctAnswer": null
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The rate-limiting step in catecholamine synthesis is:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Hydroxylation of tyrosine.",
+        "Formation of dopa.",
+        "Both (a) and (b).",
+        "Neither (a) nor (b)."
+      ],
+      "correctAnswer": null
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Decarboxylation of 5-hydroxytryptophan results in formation of:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Tryptamine.",
+        "Serotonin.",
+        "Melatonin.",
+        "Tyramine."
+      ],
+      "correctAnswer": null
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Serotonin is:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "5-hydroxytryptamine.",
+        "A tyrosine derivative.",
+        "Produced by N-acetylation and methylation of melatonin.",
+        "a and c."
+      ],
+      "correctAnswer": null
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Serotonin is catabolized by:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Monoamine oxidase (MAO).",
+        "Catechol O-methyltransferase (COMT).",
+        "Both (a) and (b).",
+        "Neither (a) nor (b)."
+      ],
+      "correctAnswer": null
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Vitamin B-derived coenzyme is needed for the synthesis of which of the following?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Epinephrine from norepinephrine.",
+        "Melatonin from serotonin.",
+        "Histidine from histamine.",
+        "Dopamine from dopa.",
+        "Methionine from homocysteine."
+      ],
+      "correctAnswer": null
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Melatonin is synthesized from which of the following?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Calcitonin.",
+        "Melanin.",
+        "Tyrosine.",
+        "Tryptophan.",
+        "Melanocyte stimulating hormone."
+      ],
+      "correctAnswer": null
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is a tumor marker that indicates high adrenaline secretion?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Blood dopamine.",
+        "Plasma monoamine oxidase.",
+        "Urinary van-mandelic acid (VMA).",
+        "Adrenal L-dopa decarboxylase.",
+        "5-hydroxyindole-acetic acid in 24-hour urine."
+      ],
+      "correctAnswer": null
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Catecholamines are:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Include dopamine, norepinephrine, epinephrine.",
+        "Are both hormones and neurotransmitters.",
+        "Both (a) and (b).",
+        "Neither (a) nor (b)."
+      ],
+      "correctAnswer": null
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Regarding the structure of catecholamines:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Contain the catechol (3,4-dihydroxyphenyl) ring in their structure.",
+        "Are synthesized from the amino acid glycine.",
+        "Both (a) and (b).",
+        "Neither (a) nor (b)."
+      ],
+      "correctAnswer": null
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following reactions produces carbon dioxide?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Conversion of acetyl CoA to malonyl CoA.",
+        "Synthesis of serotonin from its precursor.",
+        "Action of monoamine oxidase on norepinephrine.",
+        "Conversion of homocysteine to methionine.",
+        "Production of creatinine from creatine."
+      ],
+      "correctAnswer": null
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is measured in the urine to confirm the presence of an adrenaline secreting tumor?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Noradrenaline.",
+        "5-hydroxy-indole-acetate.",
+        "Vanillomandelic acid.",
+        "Monoamine oxidase.",
+        "Epinephrine."
+      ],
+      "correctAnswer": null
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Norepinephrine is produced by:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Hydroxylation of dopamine.",
+        "Methylation of epinephrine.",
+        "Decarboxylation of dopamine.",
+        "Oxidation of epinephrine."
+      ],
+      "correctAnswer": null
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Production of norepinephrine from dopamine requires:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Copper-containing oxidase.",
+        "Vitamin C.",
+        "Tetrahydrobiopterin.",
+        "a+b."
+      ],
+      "correctAnswer": null
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Hormones and neurotransmitters:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Are signal molecules used for cell-cell communication.",
+        "Are mostly polypeptides or nitrogenous compounds, both derived from amino acids.",
+        "Include non-nitrogenous compounds too.",
+        "All the above."
+      ],
+      "correctAnswer": null
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Vitamin B6 is important for which of the following regarding brain metabolism?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Production of important neurotransmitters.",
+        "Detoxification of ammonia by formation of glutamine.",
+        "Energy production from acetyl CoA.",
+        "Energy storage as creatine phosphate.",
+        "Catabolism of catecholamines."
+      ],
+      "correctAnswer": null
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The end product of adrenaline and noradrenaline catabolism is:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Vanillylmandelic acid (VMA).",
+        "Homovanillic acid.",
+        "Phenyl acetic acid.",
+        "Phenyl pyruvic acid."
+      ],
+      "correctAnswer": null
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "To increase the synthesis of catecholamines in the brain, a patient with Parkinsonism may be given:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "L-dopa.",
+        "Alpha-methyldopa.",
+        "MAO inhibitors.",
+        "Tyramine."
+      ],
+      "correctAnswer": null
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following coenzymes is required for the synthesis of GABA, serotonin, and histamine from their respective amino acid precursors?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Tetrahydrofolate.",
+        "Pyridoxal phosphate.",
+        "Thiamine pyrophosphate.",
+        "Methyl cobalamin.",
+        "Biotin."
+      ],
+      "correctAnswer": null
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Synthesis of gamma-aminobutyric acid (GABA) occurs by a:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Carboxylation reaction requiring vitamin K.",
+        "Transamination reaction requiring vitamin B6.",
+        "Hydroxylation reaction requiring vitamin C.",
+        "Decarboxylation reaction requiring vitamin B6.",
+        "Oxidation reaction requiring niacin."
+      ],
+      "correctAnswer": null
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Production of epinephrine from norepinephrine requires:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "N-methyltransferase.",
+        "S-adenosylmethionine.",
+        "Both (a) and (b).",
+        "Neither (a) nor (b)."
+      ],
+      "correctAnswer": null
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Catecholamines are catabolized by:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Monoamine oxidase (MAO), followed by aldehyde dehydrogenase.",
+        "Catechol O-methyltransferase (COMT).",
+        "Both (a) and (b).",
+        "Neither (a) nor (b)."
+      ],
+      "correctAnswer": null
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Nitric oxide synthase:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Acts on arginine and needs oxygen and NADPH.",
+        "Produces citrulline and nitric oxide.",
+        "Has three isozymes: neuronal, endothelial and phagocytic.",
+        "All the above."
+      ],
+      "correctAnswer": null
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which nitric oxide synthase isozyme is inducible?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Neuronal.",
+        "Endothelial.",
+        "Phagocytic.",
+        "a and b."
+      ],
+      "correctAnswer": null
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is a substrate for nitric oxide synthase?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Guanosine triphosphate.",
+        "Sodium nitrate.",
+        "Nitric oxide.",
+        "Arginine.",
+        "Glycine."
+      ],
+      "correctAnswer": null
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which of the following may be considered a physiological ammonia-fixing reaction?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Glutamate dehydrogenase.",
+        "Glutamine synthetase.",
+        "Carbamoyl phosphate synthetase.",
+        "Both B and C."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Synthesis of glutamine is accompanied by the hydrolysis of",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "ATP",
+        "ADP",
+        "TIP",
+        "Creatin phosphate"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Uremia occurs in",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Cirrhosis of the liver",
+        "Nephritis",
+        "Diabetes mellitus",
+        "Coronary thrombosis"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Glutamine is important.",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "For safe transport of ammonia as the amide nitrogen.",
+        "As the major source of ammonia for urinary excretion.",
+        "For synthesis of asparagine, purines, and pyrimidines.",
+        "All the above."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "A genetic defect of an enzyme of urea cycle leads to",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Low blood ammonia.",
+        "High blood urea.",
+        "High blood glutamine.",
+        "All the above."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which of the following may be true about the glutamine synthetase reaction in the brain?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "It normally helps detoxify ammonia.",
+        "At high ammonia concentration, it can deplete glutamate, with consequent decrease of GABA.",
+        "Both A and B.",
+        "Neither A nor B."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Why may glutamate dehydrogenase be considered a catabolic and not anabolic enzyme?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "It catalyzes a one-way reaction.",
+        "Its Km for ammonia is about ten times the physiological concentration of ammonia.",
+        "It is inactivated with high protein intake.",
+        "The product of the anabolic direction is not important."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Why is lactulose given to liver cell failure patients?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "It is not digested or absorbed, thus has an osmotic laxative effect.",
+        "By bacterial action, it produces lactic acid, thus acidifying the intestine.",
+        "Both A and B.",
+        "Neither A nor B."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Ammonia is normally used for synthesis of",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Glutamine.",
+        "Alanine.",
+        "Glutamate.",
+        "Aspartate."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Glutaminase reaction is important for which of the following?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Releasing ammonia to form urea by liver cells.",
+        "Liberation of ammonia in the brain tissue.",
+        "Acidification of urine by renal tubular cells.",
+        "Detoxification of ammonia in the muscle and nervous tissue."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Glutamic acid is most probably produced by which of the following?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Pepsin in the stomach.",
+        "Alanine-glyoxylate transaminase in liver cells.",
+        "Glutaminase in renal tubular cells.",
+        "Glutamate dehydrogenase at low ammonia concentration."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which of the following is a normal flow of nitrogen in human metabolism?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "N2 → NH3 → glutamine → glutamate → urea.",
+        "Valine → alanine → glutamate → NH3 → urea.",
+        "Glutamate → leucine → glutamine → NH3 → urea.",
+        "Alanine → glutamate → histidine → NH3 → urea."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which of the following passes in the urine of a patient with phenylketonuria?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Phenyl-pyruvic acid.",
+        "Phenyl-lactic acid.",
+        "Phenyl-acetyl-glutamine.",
+        "All the above."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "If a woman with phenylketonuria who is not on a low-phenylalanine diet becomes pregnant, the newborn is expected to be.",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Completely normal because the disease is recessive.",
+        "Affected with maternal phenylketonuria syndrome due to the teratogenic effect of phenylalanine.",
+        "Having microcephaly and congenital heart abnormality.",
+        "Bandec."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Phenylalanine hydroxylase is a mono-oxygenase (mixed function oxygenase) that,",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Is a copper-containing metalloenzyme.",
+        "Oxidizes phenylalanine and reduces tetrahydrobiopterin.",
+        "Incorporates the two atoms of the oxygen molecule in one substrate molecule.",
+        "Necessitates the presence of NADPH-dependent reductase to restore the active cofactor."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which of the following would you give to patients with deficient tetrahydrobiopterin metabolism?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "High doses of folic acid.",
+        "Vitamin B12.",
+        "Phenylalanine hydroxylase enzyme.",
+        "Dopa and 5-hydroxytryptophan."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The clinical picture of classic phenylketonuria results from deficiency of",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Catecholamines.",
+        "Melanin.",
+        "Both A and B.",
+        "Neither A nor B."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Biochemistry",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Management of phenylketonuria necessitates.",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Early detection by routine neonatal screening.",
+        "Low phenylalanine feeding formula (milk substitute).",
+        "Starting treatment before the age of 1 month.",
+        "All the above."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Folic acid supplementation is recommended for which of the following?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "All women planning to get pregnant.",
+        "Only pregnant women with megaloblastic anemia.",
+        "All vegetarians, whether pregnant or not.",
+        "Only patients with low blood folic acid, for fear of toxicity."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Hyper-homocysteinemia may result from deficiency of",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Pyridoxine (vitamin B6).",
+        "Cobalamin (vitamin B12).",
+        "Folic acid.",
+        "Any of the above."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which of the following statements is correct about folate requirement?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Folic acid requirement is about 300-400 μg/day.",
+        "The need for folate nearly doubles by the third trimester of pregnancy.",
+        "Folic acid is present primarily in leafy vegetables; in addition to yeast and liver.",
+        "All the above."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which of the following is a character of cervical level of spinal cord?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Rounded in shape.",
+        "Has largest white matter/grey matter ratio.",
+        "Small in size.",
+        "Central canal is central."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "About spinal nerve all true except:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Lateral division of dorsal root carry pain, temp.",
+        "Medial division carry proprioception & touch.",
+        "Dorsal root ganglia contain cells of same size.",
+        "Thick myelinated fibers carry proprioception."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which of the following is true about the dorsal root ganglion?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "It is a collection of nerve cells inside the central nervous system.",
+        "It is located at the viscera.",
+        "It has nerve cells of variable size.",
+        "It has no connective tissue capsule."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Nerve cells of dorsal root ganglia are characterized by:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Of the same size.",
+        "Have multiple processes.",
+        "Have eccentric nucleus.",
+        "Associated with myelinated & unmyelinated nerve fibers."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Nucleus dorsalis (Claris nucleus), all true except:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "In the medial aspect of the base of the posterior horn, in level from C8-L3.",
+        "Involved in lamina 7 of gray matter.",
+        "Large cells with eccentric nucleus.",
+        "Give rise to ventral spinocerebellar tract."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "One of the following nuclei is not present in all segments of the spinal cord:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Postero-marginal nucleus.",
+        "Nucleus dorsalis (Clark's nucleus).",
+        "Substantia gelatinosa.",
+        "Main sensory nucleus (nucleus proprius dorsalis)."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which of the following statements concerning the nucleus dorsalis of Clark is TRUE?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "It is found in the ventral horn.",
+        "It is present at all spinal levels.",
+        "It is homologous in function to the main sensory nucleus.",
+        "It projects to the cerebellum."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which of the following statements concerning the lateral horn of the spinal cord is TRUE?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Gives origin to pre-ganglionic sympathetic fibers.",
+        "It is most prominent at sacral levels.",
+        "It is present in all spinal cord levels.",
+        "It contains pre-ganglionic parasympathetic neurons."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Destruction of the ventral horn results in one of the following:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Loss of crude touch.",
+        "Loss of fine touch.",
+        "Flaccid paralysis.",
+        "Loss of pain sensation."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which of the following is true about the grey matter?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "It is located outside the white matter in spinal cord.",
+        "It is formed of nerve cells mainly.",
+        "It has satellite cells sheath around its cells.",
+        "It has no neuroglia."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Anterior horn of spinal cord contains the following nuclei EXCEPT:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Anteromedial.",
+        "Anterolateral.",
+        "Middle.",
+        "Posterolateral."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Preganglionic sympathetic neurons are present in lamina «.. of spinal cord gray matter:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "I.",
+        "II.",
+        "VII.",
+        "X."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The main sensory nucleus of spinal cord is:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Substantia gelatinosa.",
+        "Nucleus proprius.",
+        "Spinal nucleus of trigeminal nerve.",
+        "Posteromarginal nucleus."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which of the following tracts DON'T extend to all segment of spinal cord?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Lateral vestibulospinal tract.",
+        "Medullary reticulospinal tract.",
+        "Pontine reticulospinal tract.",
+        "Tectospinal tract."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which of the following tracts lie in the dorsal funiculus?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Cuneate.",
+        "Rubrospinal.",
+        "Vestibulospinal.",
+        "Red nucleus."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which of the following tracts is present in all segments of spinal cord?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Gracile and cuneate nuclei of the same side with the cerebellum.",
+        "Gracile and cuneate nuclei of the opposite side with the cerebellum.",
+        "Gracile and cuneate nuclei of the opposite side with the spinal cord.",
+        "Dorsal spinocerebellar tract."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The first order neuron in proprioception from the lower half of the body is in:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Gracile nucleus.",
+        "Cuneate nucleus.",
+        "Spinal ganglia.",
+        "Main sensory nucleus."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The second order neuron in proprioception from the lower half of the body is in:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Gracile nucleus on the same side.",
+        "Cuneate nucleus on the same side.",
+        "Gracile nucleus on opposite side.",
+        "Cuneate nucleus on opposite side."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Anterior external arcuate fibers relay in:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Arcuate nucleus of the same side.",
+        "Arcuate nucleus of the opposite side.",
+        "Inferior olivary nucleus.",
+        "Dentate nucleus."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Internal arcuate fibers:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Arise from gracile and cuneate nuclei.",
+        "Terminate at gracile and cuneate nuclei.",
+        "Form lateral lemniscus.",
+        "Carry proprioceptive impulses from the head."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "One of the following is true about gracile tract:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Presents only in cervical & thoracic levels of spinal cord.",
+        "Carries proprioception from the upper half of the body.",
+        "Terminates at gracile nucleus in medulla.",
+        "Arises from spinal ganglia in upper half of body."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "One of the following is true about cuneate tract:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "It arises from spinal ganglia in upper half of body.",
+        "It arises from cuneate nucleus on same side.",
+        "It arises from cuneate nucleus on opposite side.",
+        "It is present in lateral column of white matter in spinal cord."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The central canal is lined by:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Simple squamous epithelium.",
+        "Stratified squamous epithelium.",
+        "Simple columnar to cuboidal epithelium partially ciliated.",
+        "Simple columnar non-ciliated epithelium."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The oligodendrocyte is derived from ... while microglia is derived from ...",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Ectoderm; mesoderm.",
+        "Ectoderm; ectoderm.",
+        "Mesoderm; ectoderm.",
+        "Mesoderm; mesoderm."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which of the following cells produce myelin sheath?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Oligodendrocytes.",
+        "Astrocytes.",
+        "Satellite cells.",
+        "Ependymal cells."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "In the CNS, which of the following are phagocytic cells?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Astrocytes.",
+        "Microglia.",
+        "Oligodendrocytes.",
+        "Ependymal cells."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "In the CNS injury, which of the following cells are abundant?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Astrocytes & microglia.",
+        "Microglia & oligodendrocytes.",
+        "Oligodendrocytes & astrocytes.",
+        "Ependymal cells."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Endothelial cells of blood capillaries in brain characterized by having:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "More vesicles.",
+        "More mitochondria.",
+        "Few tight junctions.",
+        "More desmosomes."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which of the following is involved in the blood-brain barrier?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Astrocytes.",
+        "Ependymal cells.",
+        "Oligodendrocytes.",
+        "Schwann cells."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The distribution of grey and white matter depends on the distribution of:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Blood vessels.",
+        "Myelin.",
+        "Pigments.",
+        "Astrocytes."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "One of the following is a component of Blood CSF barrier:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Border cells of arachnoid matter.",
+        "Tight junctions between ependymal cells.",
+        "Astrocytes.",
+        "Trabecular cells of arachnoid matter."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "One of the followings is not present in grey matter:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Nerve cells.",
+        "Myelinated nerve fibers.",
+        "Neuroglial cells.",
+        "Unmyelinated nerve fibers."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The processes of protoplasmic astrocytes are characterized by:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Few long thin.",
+        "Few short spiny.",
+        "Numerous short.",
+        "Few short."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Tanycytes line which of the following:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "All cavities in brain.",
+        "Choroid plexus.",
+        "3rd ventricle.",
+        "4th ventricle."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The apical surface of ependymal cells has:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Microvilli.",
+        "Cilia.",
+        "Sterocilia.",
+        "Microfolds."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The basal surface of tanycytes has:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Infoldings.",
+        "Basal processes.",
+        "Dense plaques.",
+        "Canaliculi."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "All of the followings have choroid plexus EXCEPT:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "3rd ventricles.",
+        "4th ventricles.",
+        "Lateral ventricle.",
+        "Cerebral aqueduct."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The central canal is lined by:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Simple squamous epithelium.",
+        "Stratified squamous epithelium.",
+        "Simple columnar to cuboidal epithelium partially ciliated.",
+        "Simple columnar non-ciliated epithelium."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The oligodendrocyte is derived from ... while microglia is derived from ...",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Ectoderm; mesoderm.",
+        "Ectoderm; ectoderm.",
+        "Mesoderm; ectoderm.",
+        "Mesoderm; mesoderm."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which of the following cells produce myelin sheath?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Oligodendrocytes.",
+        "Astrocytes.",
+        "Satellite cells.",
+        "Ependymal cells."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "In the CNS, which of the following are phagocytic cells?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Astrocytes.",
+        "Microglia.",
+        "Oligodendrocytes.",
+        "Ependymal cells."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "In the CNS injury, which of the following cells are abundant?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Astrocytes & microglia.",
+        "Microglia & oligodendrocytes.",
+        "Oligodendrocytes & astrocytes.",
+        "Ependymal cells."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Endothelial cells of blood capillaries in brain characterized by having:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "More vesicles.",
+        "More mitochondria.",
+        "Few tight junctions.",
+        "More desmosomes."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which of the following is involved in the blood-brain barrier?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Astrocytes.",
+        "Ependymal cells.",
+        "Oligodendrocytes.",
+        "Schwann cells."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The distribution of grey and white matter depends on the distribution of:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Blood vessels.",
+        "Myelin.",
+        "Pigments.",
+        "Astrocytes."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "One of the following is a component of Blood CSF barrier:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Border cells of arachnoid matter.",
+        "Tight junctions between ependymal cells.",
+        "Astrocytes.",
+        "Trabecular cells of arachnoid matter."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "One of the followings is not present in grey matter:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Nerve cells.",
+        "Myelinated nerve fibers.",
+        "Neuroglial cells.",
+        "Unmyelinated nerve fibers."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Cerebrum & Cortical Functions",
+      "chapterId": 2,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Martinotti cells of cerebral cortex are characterized by:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Inner pyramidal cells.",
+        "Outer pyramidal cells.",
+        "Giant cells of Betz.",
+        "None of the above."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Inner pyramidal cells are present in layer .... of cerebral cortex:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "I.",
+        "II.",
+        "III.",
+        "IV."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Cerebrum & Cortical Functions",
+      "chapterId": 2,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Giant cells of Betz are present in which layer of cerebral cortex?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Outer pyramidal.",
+        "Inner pyramidal.",
+        "Molecular.",
+        "Granular."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Cerebrum & Cortical Functions",
+      "chapterId": 2,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Cerebral cortex is characterized by:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Has smooth surface.",
+        "Neurons of the same shapes.",
+        "Layers of the same thickness all over the brain.",
+        "Has both laminar & columnar arrangement."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Cells of Cajal are present in:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Molecular layer of cerebrum.",
+        "Molecular layer of cerebellum.",
+        "Granular layer of cerebrum.",
+        "Granular layer of cerebellum."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Cerebrum & Cortical Functions",
+      "chapterId": 2,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "All of the following are layers of cerebral cortex EXCEPT:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Molecular layer.",
+        "Purkinje layer.",
+        "External granular layer.",
+        "Internal granular layer."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Pia matter is formed of:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Simple squamous epithelium.",
+        "Simple columnar epithelium.",
+        "Simple columnar ciliated epithelium.",
+        "Modified fibroblasts."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The inner surface of dura mater is lined by:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Pseudostratified columnar epithelium.",
+        "Simple columnar epithelium.",
+        "Simple squamous epithelium.",
+        "Stratified columnar epithelium."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The brain CSF barrier is not formed of:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Fenestrated endothelial cells.",
+        "Foot processes of astrocytes.",
+        "Basement membrane of ependymal cells.",
+        "Ependymal cells connected by tight junction."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The blood CSF barrier is not formed of:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Fenestrated endothelial cells.",
+        "Foot processes of astrocytes.",
+        "Basement membrane of blood capillaries.",
+        "Ependymal cells connected by tight junction."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Tight junction between ependymal cells forms:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Blood-brain barrier.",
+        "Blood-CSF barrier.",
+        "Outer glia limitans.",
+        "Inner glia limitans."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Glial fibrillar acidic protein (GFAP) is a marker of:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Astrocyte.",
+        "Oligodendroglia.",
+        "Ependymal cells.",
+        "Microglia."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Parallel fibers make synapse with Purkinje cells dendrites:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Spiral synapse.",
+        "Cross over synapse.",
+        "Basket-like synapse.",
+        "Glomerular synapse."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The main efferent fiber of the cerebellar cortex is formed by axons of:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Purkinje cells.",
+        "Golgi cells.",
+        "Basket cells.",
+        "Granule cells."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Cerebellar cortex:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Contain Martinotti cells in the molecular layer.",
+        "Is of uniform structure all over cerebellum.",
+        "Formed of 6 layers.",
+        "Show sulci."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Climbing fibers:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Axons of Golgi cells.",
+        "Olivocerebellar fibers.",
+        "End in granular layer.",
+        "Part of cerebellar island."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The dorsal motor nucleus of vagus gives rise to:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "GVE.",
+        "GSE.",
+        "SVE.",
+        "SSE."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Spinal nucleus of trigeminal, equivalent to:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Substantia gelatinosa.",
+        "Main sensory nucleus.",
+        "Commissural nuclei.",
+        "Clark’s nucleus."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Cranial Nerves",
+      "chapterId": 7,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Nuclei of the vagus nerve include the following except:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Nucleus ambiguous.",
+        "Dorsal motor nucleus of vagus.",
+        "Inferior salivatory nucleus.",
+        "Solitary nucleus."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Cranial Nerves",
+      "chapterId": 7,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Mesencephalic nucleus of trigeminal nerve:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Formed of 2nd order neuron of proprioception from face.",
+        "Formed of pseudo-unipolar neurons.",
+        "Extend in the midbrain in the level of inferior colliculus only.",
+        "Contain 1st order neurons of pain from face."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Cranial nerve nucleus in floor of 4th ventricle close to midline in lower pons is:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Hypoglossal nerve.",
+        "Abducent nucleus.",
+        "Motor facial nucleus.",
+        "Motor vagus nucleus."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The first order neurons for pain and temperature pathway from face and head are located in:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Trigeminal ganglion.",
+        "Dorsal root ganglion.",
+        "Mesencephalic nucleus of trigeminal nerve.",
+        "Spinal nucleus of trigeminal nerve."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The most of V nerve nuclei are best seen in:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Lower midbrain.",
+        "Middle pons.",
+        "Upper pons.",
+        "Open medulla."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The only cranial nerve that decussates before its emergence is:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Oculomotor.",
+        "Abducent.",
+        "Trochlear.",
+        "Facial."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The first order neurons in proprioception pathway from face and head are in:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Trigeminal ganglion.",
+        "Dorsal root ganglion.",
+        "Spinal nucleus of trigeminal nerve.",
+        "Mesencephalic nucleus of trigeminal nerve."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Internal arcuate fibers are present in:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Superior midbrain.",
+        "Inferior midbrain.",
+        "Open medulla.",
+        "Lower pons."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Each of the following statements concerning closed medulla is true EXCEPT:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "In the lower part, there are motor decussation.",
+        "At a higher level, there are sensory decussation.",
+        "Contains the main inferior olivary nucleus.",
+        "Contains gracile and cuneate nucleus."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Cranial nerves in medulla oblongata are the following EXCEPT:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Hypoglossal.",
+        "Accessory.",
+        "Vagus.",
+        "Facial."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Gracile & Cuneate N. are present in:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Dorsal aspect of closed medulla.",
+        "Ventral aspect of closed medulla.",
+        "Dorsal aspect of open medulla.",
+        "Ventral aspect of open medulla."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Crossing fibers of gracile & cuneate tracts are called:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Internal arcuate.",
+        "Dorsal external arcuate.",
+        "Ventral external arcuate.",
+        "Horizontal."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Lowermost level of medulla shows:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Internal arcuate fibers.",
+        "Decussating corticospinal fibers.",
+        "Inferior olive nucleus.",
+        "Superior olive nucleus."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Arcuate nucleus is found in:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Ventral to pyramids.",
+        "Ventral to cuneate nucleus.",
+        "Medial to olive.",
+        "Dorsal to Inferior cerebellar Peduncle."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Ventral external arcuate fibers arise from:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Accessory cuneate nucleus.",
+        "Cuneate nucleus.",
+        "Arcuate nucleus.",
+        "Pontine nucleus."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The central gray in upper closed medulla contains:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Spinal nucleus of V nerve.",
+        "Olive nucleus.",
+        "Nucleus solitaries.",
+        "Arcuate nucleus."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Internal arcuate fibers are seen in:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Lower level of closed medulla.",
+        "Upper level of closed medulla.",
+        "Open medulla.",
+        "Lower pons."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The reticular formation controls the endocrine system due to its connections with:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Hypothalamus.",
+        "Spinal cord.",
+        "Thalamus.",
+        "Cerebral cortex."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "One of the relays nuclei of auditory pathway is:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Inferior olive nucleus.",
+        "Superior olivary nucleus.",
+        "Vestibular nucleus.",
+        "Superior colliculus."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Sections in lower level of pons show:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Middle cerebellar peduncle.",
+        "Superior cerebellar peduncle.",
+        "Mesencephalic nucleus of V.",
+        "Medial & Inferior vestibular nuclei."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Basis pontis contain the following except:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Corticospinal fibers.",
+        "Corticonuclear fibers.",
+        "Pontine reticulospinal.",
+        "Transverse pontine fibers."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Auditory pathways contain the following except:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Cochlear nuclei.",
+        "Trapezoid body.",
+        "Medial lemniscus.",
+        "Inferior colliculus."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "About substantia nigra, all true except:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Formed of compactum & reticularis.",
+        "Connected to basal ganglia.",
+        "Contain melanin.",
+        "Present dorsal to basis pontis."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The superior colliculus of midbrain is formed of the following EXCEPT:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Stratum basale.",
+        "Stratum zonale.",
+        "Stratum opticum.",
+        "Stratum lemnisci."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The tract in MLB responsible for head righting reflex is:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Tectospinal.",
+        "Vestibule spinal.",
+        "Reticulospinal.",
+        "Interstitiospinal."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The specific feature of upper midbrain is presence of:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Crus cerebri.",
+        "Substantia nigra.",
+        "Red nucleus.",
+        "Superior cerebellar peduncle decussation."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Central tegmental tract contains fibers connecting between:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Red nucleus & olivary nucleus.",
+        "Superior colliculus & Inferior Colliculus.",
+        "Red nucleus & pontine nucleus.",
+        "Olivary nucleus & pontine nucleus."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Superior cerebellar decussation:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Present in inferior level of midbrain.",
+        "Formed by tectospinal tract.",
+        "Fibers pass through ICP.",
+        "Its fibers descend in all segments of spinal cord."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Superior colliculus, all true except:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Composed of small & large nuclei.",
+        "Connected with retina.",
+        "Connected to occipital cortex.",
+        "Give tectospinal tract & dorsal tegmental tract."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Inferior olivary nucleus:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Receive rubro-olivary fibers through the central tegmental tract.",
+        "Present in the ventral aspect of closed medulla.",
+        "Its efferent fibers reach the ipsilateral cerebellar cortex through the superior cerebellar peduncle.",
+        "Its efferent fibers are the mossy fibers reaching the cerebellar cortex."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Medial longitudinal bundle, all true except:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Receive ascending & descending fibers from vestibular nuclei.",
+        "Function for movement of the head & neck.",
+        "Extending from brainstem till cervical segments of spinal cord.",
+        "Extend the whole length of spinal cord."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Dorsal tegmental decussation:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Formed of rubrospinal tract.",
+        "Its fibers descend in all segments of spinal cord.",
+        "Present in inferior level of midbrain.",
+        "Formed by tectospinal tract."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which of the following is a WHO grade IV tumor?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Diffuse astrocytoma.",
+        "Oligodendroglioma.",
+        "Ependymoma.",
+        "Medulloblastoma."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Pilocytic astrocytoma is characterized by all EXCEPT:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Usually occurs in children.",
+        "Usually occurs in the cerebellum.",
+        "It's usually cystic.",
+        "It's of bad prognosis."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Psammoma bodies are characteristic of:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Astrocytoma.",
+        "Oligodendroglioma.",
+        "Medulloblastoma.",
+        "Meningioma."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Pilocytic astrocytoma shows the following EXCEPT:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Activation of the mitogen-activated protein kinase (MAPK) pathway.",
+        "Activation & alternations of BRAF.",
+        "Inactivation of neurofibromatosis type 1 (NF1).",
+        "Mutations in IDH1 & IDH2."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Cerebrum & Cortical Functions",
+      "chapterId": 2,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "A 50-year-old man has a 3cm diameter left frontal lobe mass with areas of calcification. Microscopically, sheets of regular cells with spherical nuclei surrounded by clear halo of cytoplasm are seen. Which of the following diagnosis is most likely to be made on microscopic examination of this mass?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Thrombosed berry aneurysm.",
+        "Oligodendroglioma.",
+        "Meningioma.",
+        "Schwannoma."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The following tumor is always benign:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Pilocytic astrocytoma.",
+        "Glioblastoma multiforme.",
+        "Ependymoma.",
+        "Medulloblastoma.",
+        "Meningioma."
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Cerebrum & Cortical Functions",
+      "chapterId": 2,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The biopsy of a ring-enhancing tumor in the left parietal lobe of a 60-year-old patient reveals an astrocytic tumor that displays marked cellular atypia, mitotic activity, areas of pseudopalisading necrosis & multifocal microvascular hyperplasia. The diagnosis is:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Astrocytoma grade 1.",
+        "Astrocytoma grade 2.",
+        "Anaplastic astrocytoma.",
+        "Astrocytoma grade 4 (Glioblastoma multiforme).",
+        "Pilocytic astrocytoma."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Microscopic rosette formation is a characteristic feature of:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Astrocytoma.",
+        "Oligodendroglioma.",
+        "Medulloblastoma.",
+        "Meningioma.",
+        "Schwannoma."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "A 10-year-old girl develops ataxia & hydrocephalus. CT scan shows a midline partially cystic cerebellar mass. Microscopic examination shows elongated bipolar astrocytes with fibrillar processes and Rosenthal fibers. The diagnosis is:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Astrocytoma grade 1.",
+        "Astrocytoma grade 2.",
+        "Anaplastic astrocytoma.",
+        "Astrocytoma grade 4."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "A female 50-year-old presented with brain tumor with focal erosion of the skull bones. The tumor was excised and examined histologically. It consisted of spindle-shaped & syncytial cells arranged in a whorly pattern. The most possible diagnosis is:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Astrocytoma.",
+        "Ependymoma.",
+        "Meningioma.",
+        "Glioblastoma multiforme.",
+        "Schwannoma."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "A 65-year-old man develops new onset of seizures & headaches. A CT scan reveals a 6 cm left-sided intracerebral mass. Which of the following is the most likely diagnosis?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Meningioma.",
+        "Ependymoma.",
+        "Schwannoma.",
+        "Glioblastoma multiforme.",
+        "Medulloblastoma."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Medulloblastoma is a:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Glial tumor.",
+        "Neuronal tumor.",
+        "Tumor of undifferentiated cells.",
+        "Nerve sheath tumor.",
+        "Malformative tumor."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The following tumor shows a whorly pattern of growth:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Astrocytoma.",
+        "Oligodendroglioma.",
+        "Ependymoma.",
+        "Medulloblastoma.",
+        "Meningioma."
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "A 5-year-old child suffered from headache & blurring of vision. Radiological examination showed a cerebellar tumor. Microscopic examination of a biopsy from this tumor revealed diffuse infiltration by malignant small round cells with rosette formation. The most possible diagnosis is:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Anaplastic astrocytoma.",
+        "Glioblastoma multiforme.",
+        "Ependymoma.",
+        "Neuroblastoma.",
+        "Medulloblastoma."
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Astrocytoma is:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Glial tumor.",
+        "Neuronal tumor.",
+        "Tumor of undifferentiated cells.",
+        "Nerve sheath tumor.",
+        "Malformative tumor."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Meningioma shows:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Rosenthal fibers.",
+        "Vascular proliferation.",
+        "Papillary formation.",
+        "Rosette formation.",
+        "Psammoma bodies."
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "A 9-year-old child has enlargement of the lateral ventricles with a 4 cm homogenous well-circumscribed mass within the 4th ventricle. Microscopically, it shows rosettes & pseudo-rosettes. Which of the following is the most likely diagnosis?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Astrocytoma.",
+        "Ependymoma.",
+        "Meningioma.",
+        "Metastatic carcinoma.",
+        "Schwannoma."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Glioblastoma multiforme shows:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Rosenthal fibers.",
+        "Vascular proliferation.",
+        "Papillary formation.",
+        "Rosette formation."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The following histological picture is not characteristic of Glioblastoma multiforme:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Highly anaplastic tumor cells.",
+        "Papillary formation.",
+        "Necrosis.",
+        "Tumor giant cells.",
+        "Vascular proliferation."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The most common brain tumor in children:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Astrocytoma.",
+        "Ependymoma.",
+        "Medulloblastoma.",
+        "Meningioma.",
+        "Schwannoma."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The following is not a feature of meningioma:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Usually occurs in adults.",
+        "Always a benign tumor.",
+        "Has a whorly cut surface.",
+        "Characterized by Psammoma bodies."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which of the following tumors is malignant:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Meningioma.",
+        "Glioblastoma multiforme.",
+        "Schwannoma.",
+        "Neurofibroma."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "A male patient 40 years old presented with hemiplegia & deafness. Radiological examination showed a tumor at the cerebellopontine angle. Biopsy from this tumor showed a neurogenic tumor formed of hypercellular and hypocellular areas. The most possible diagnosis is:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Neuroblastoma.",
+        "Schwannoma.",
+        "Ganglioneuroma.",
+        "Ganglioneuroblastoma.",
+        "Neurofibroma."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "An 18-year-old male presents with a well-circumscribed mass involving the 4th ventricle. Diagnostic microscopical findings in this condition include:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Rosenthal fibers.",
+        "Chicken wire calcification.",
+        "Rosettes & pseudorosettes formation.",
+        "Verocay bodies."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The following is not a type of glioma:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Ganglioneuroma.",
+        "Astrocytoma.",
+        "Ependymoma.",
+        "Glioblastoma."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Cerebrum & Cortical Functions",
+      "chapterId": 2,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "A 33-year-old male presents with seizures, MRI shows an ill-defined area of infiltrative tumor expanding the frontal lobe. Biopsy of this lesion shows glial tissue with slightly increased cellularity and mild nuclear pleomorphism. No mitotic activity, no necrosis & no vascular proliferation. What is the most likely diagnosis?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Astrocytoma grade 1.",
+        "Astrocytoma grade 2.",
+        "Anaplastic astrocytoma.",
+        "Astrocytoma grade 4."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Cerebrum & Cortical Functions",
+      "chapterId": 2,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "A male patient 40 years presented with left-sided hemiplegia, brain MRI revealed a space-occupying lesion in the right cerebral hemisphere. Biopsy examination showed a highly cellular tumor with malignant cells, areas of necrosis & vascular proliferation. The most possible diagnosis is:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Glioblastoma multiforme.",
+        "Anaplastic astrocytoma.",
+        "Ependymoma.",
+        "Metastatic carcinoma.",
+        "Malignant meningioma."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Oligodendroglioma is not a:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Glial tumor.",
+        "Cerebral tumor.",
+        "High-grade tumor.",
+        "Well-circumscribed tumor."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "A 9-year-old girl is evaluated for headache and ataxia over the last 2 months. A CT scan reveals a midline partially cystic cerebellar mass, microscopic examination shows elongated bipolar astrocytes with fibrillar processes and Rosenthal fibers. The diagnosis is:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Astrocytoma grade 1.",
+        "Astrocytoma grade 2.",
+        "Anaplastic astrocytoma.",
+        "Astrocytoma grade 4."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The following tumor arises from the lining of the ventricular system:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Pilocytic astrocytoma.",
+        "Ependymoma.",
+        "Medulloblastoma.",
+        "Meningioma.",
+        "Schwannoma."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Astrocytoma is a:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Glial tumor.",
+        "Neuronal tumor.",
+        "Tumor of undifferentiated cells.",
+        "Nerve sheath tumor.",
+        "Malformative tumor."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Oligodendrogliomas are not characterized by:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Have IDH1 mutation.",
+        "Have IDH2 mutation.",
+        "Activation of the mitogen-activated protein kinase (MAPK).",
+        "Chromosomes 1p/19q codeletion."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pathology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which of the following is true about meningococcal meningitis?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "It most commonly affects adults around the sixth decade of life.",
+        "The dura mater is mainly affected by suppuration.",
+        "The condition may be complicated by acute adrenal insufficiency.",
+        "All of the above."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pathology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Rabies is transmitted to CNS via:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Arteries.",
+        "Veins.",
+        "Peripheral nerves.",
+        "Direct implantation.",
+        "Lymphatics."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Pathology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "A child with tuberculous meningitis, his CSF examination will show an increased number of:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Macrophages.",
+        "Lymphocytes.",
+        "Plasma cells.",
+        "Giant cells."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pathology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Muscle paralysis in case of poliomyelitis is due to:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Destruction of the muscle fibers by the toxins of the organisms.",
+        "Inflammation of the muscle.",
+        "Inflammation of the nerves supplying the affected muscles.",
+        "Degeneration of their anterior horn cells in the spinal cord."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pathology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Poliomyelitis is a:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Bacterial infection.",
+        "Viral infection.",
+        "Fungal infection.",
+        "Parasitic infection."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pathology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The cause of death in rabies is:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Muscle paralysis.",
+        "Heart failure.",
+        "Paralysis of respiratory muscles.",
+        "Respiratory center failure."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pathology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Infection spreads from suppurative lung diseases to the brain via:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Vertebral arteries.",
+        "Vertebral veins.",
+        "Local extension.",
+        "Direct spread from air sinuses."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pathology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Rabies is a:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Bacterial infection.",
+        "Viral infection.",
+        "Fungal infection.",
+        "Parasitic infection."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pathology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Myotic cerebral aneurysms are due to:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Congenital weakness of the wall of cerebral vessels.",
+        "Septic emboli from subacute bacterial endocarditis.",
+        "Atherosclerosis of the cerebral vessels.",
+        "Increased intracranial tension."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pathology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Subarachnoid hemorrhage is due to:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Trauma.",
+        "Rupture of cerebral aneurysm.",
+        "Inflammation of the vessels of the circle of Willis.",
+        "All of the above."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Pathology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "A 58-year-old hypertensive patient presents with sudden onset of hemiplegia followed by symptoms of increased intracranial tension (headache & vomiting). A CT scan shows extensive intracerebral hemorrhage in the region of basal ganglia. The most probable diagnosis is:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Ruptured arteriovenous malformation.",
+        "Ruptured congenital berry aneurysm.",
+        "Ruptured multiple microaneurysms (Charcot-Bouchard microaneurysms).",
+        "Thrombotic occlusion of"
+      ],
+      "correctAnswer": null
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following antiepileptic drugs is not an enzyme inducer?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Phenytoin",
+        "Carbamazepine",
+        "Valproate",
+        "Phenobarbital"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is a wrong statement regarding antiepileptic drugs?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Females who get pregnant should discontinue the antiepileptic drug",
+        "Lamotrigine may induce fatal dermatitis",
+        "They are contraindicated in neuropathic pain",
+        "Carbamazepine antagonizes the action of antidiuretic hormone"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following anesthetic agents is not acting through increase GABA activity?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Halothane",
+        "Propofol",
+        "Ketamine",
+        "Isoflurane"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is 1st choice as empiric antibiotic in meningitis suspected to streptococcal agalactia in 55 year old patient?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Ampicillin + ceftriaxone",
+        "Vancomycin + ceftriaxone",
+        "Vancomycin + ceftriaxone + Ampicillin",
+        "Vancomycin + Cefepime"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is correct regarding Fingolimod?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Decrease BBB invasion by T- lymphocyte",
+        "Prevent T lymphocyte migration from lymph node",
+        "Used with caution in cardiac patients",
+        "All of the above"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "A drug effective in reducing emotional bluntness in schizophrenics is:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Carbamazepine",
+        "Clozapine",
+        "Chlorpromazine",
+        "Clonazepam"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following opioid drug should be avoided in patient taking MAOI:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Morphine",
+        "Fentanyl",
+        "Meperidine",
+        "Codeine"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Lidocaine is preferred to bupivacaine in local anesthesia due to:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Higher pKa",
+        "Longer duration",
+        "Higher potency",
+        "More rapid onset"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Ethosuximide is useful in:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Partial epilepsy",
+        "Absence seizure",
+        "Tonic clonic",
+        "A and B"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following antiepileptic drug is not preferred in pregnancy:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Lamotrigine",
+        "Carbamazepine",
+        "Valproate",
+        "All of the above"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following anesthetic agent is not acting through increase GABA activity:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Halothane",
+        "Propofol",
+        "Ketamine",
+        "Isoflurane"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is not correctly matched to its mechanism of action?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Phenytoin / sodium channel blockade",
+        "Clonazepam / Cl channel blockade",
+        "Valproate / inhibition of GABA transaminase",
+        "Ethosuximide / Ca++ channel blockade"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Riluzole is prescribed in Amyotrophic lateral sclerosis to:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Decrease onset of dementia",
+        "Decrease confusion and headache",
+        "Decrease need for ventilator",
+        "All of the above"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Nicotine abuse may be managed by:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Varenicline",
+        "Bupropion",
+        "Buprenorphine",
+        "Acamprosate",
+        "A and B"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following analgesic is not recommended to be taken in renal failure or more than 48 hours for fear of convulsions:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Morphine",
+        "Tramadol",
+        "Meperidine",
+        "Codeine"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following is not true about local anesthetics:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Adding sodium bicarbonate increases activity of local anesthetics",
+        "Bupivacaine is short acting",
+        "Lidocaine is an amide",
+        "Benzocaine is used as surface anesthetic"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following antiepileptic drug is not an enzyme inducer:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Phenytoin",
+        "Carbamazepine",
+        "Valproate",
+        "Phenobarbital"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following anesthetic agent is not acting through increase GABA activity:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Halothane",
+        "Propofol",
+        "Ketamine",
+        "Isoflurane"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is 1st choice as empiric antibiotic in meningitis suspected to streptococcal agalactia in 55 year old patient?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Ampicillin + ceftriaxone",
+        "Vancomycin + ceftriaxone",
+        "Vancomycin + ceftriaxone + Ampicillin",
+        "Vancomycin + Cefepime"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is correct regarding Fingolimod?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Decrease BBB invasion by T- lymphocyte",
+        "Prevent T lymphocyte migration from lymph node",
+        "Used with caution in cardiac patients",
+        "All of the above"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "A drug effective in reducing emotional bluntness in schizophrenics is:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Carbamazepine",
+        "Clozapine",
+        "Chlorpromazine",
+        "Clonazepam"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following opioid drug should be avoided in patient taking MAOI:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Morphine",
+        "Fentanyl",
+        "Meperidine",
+        "Codeine"
+      ],
+      "correctAnswer": "C"
+    }
+  ]
+}

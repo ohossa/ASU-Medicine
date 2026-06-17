@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "comingSoon": true,
+  "meta": {
+    "moduleCode": "P7-4",
+    "moduleName": "Communication within a Medical Team",
+    "year": 4,
+    "semester": 1,
+    "creditPoints": 1,
+    "totalMarks": 20,
+    "keywords": [
+      "communication",
+      "team",
+      "p7"
+    ]
+  },
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Interprofessional Communication & Collaboration",
+      "subtitle": "Interprofessional Communication & Collaboration",
+      "emoji": "🤝",
+      "page": 1,
+      "lectureRange": "Lectures 1",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 2,
+      "title": "Handover Protocols, SBAR & Team Safety",
+      "subtitle": "Handover Protocols, SBAR & Team Safety",
+      "emoji": "📋",
+      "page": 2,
+      "lectureRange": "Lectures 2",
+      "subjects": [],
+      "keywords": []
+    }
+  ]
+}

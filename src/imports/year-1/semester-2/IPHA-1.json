@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "comingSoon": true,
+  "meta": {
+    "moduleCode": "IPHA-1",
+    "moduleName": "Introduction to Clinical Pharmacology",
+    "year": 1,
+    "semester": 2,
+    "creditPoints": 3,
+    "totalMarks": 60,
+    "keywords": [
+      "pharmacology",
+      "ipha"
+    ]
+  },
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Pharmacokinetics & Pharmacodynamics",
+      "subtitle": "Pharmacokinetics & Pharmacodynamics",
+      "emoji": "💊",
+      "page": 1,
+      "lectureRange": "Lectures 1",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 2,
+      "title": "Autonomic Pharmacology",
+      "subtitle": "Autonomic Pharmacology",
+      "emoji": "🧠",
+      "page": 2,
+      "lectureRange": "Lectures 2",
+      "subjects": [],
+      "keywords": []
+    }
+  ]
+}

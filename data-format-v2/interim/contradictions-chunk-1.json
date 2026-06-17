@@ -1,0 +1,2653 @@
+[
+  {
+    "id": "mcns2-ch1-anatomy-q6",
+    "text": "A chain of successive tracts in CNS having the same function is called:",
+    "options": [
+      "Fasciculus",
+      "Pathway",
+      "Lemniscus",
+      "Commissure",
+      "Decussation"
+    ],
+    "correctIndex": 1,
+    "explanation": "A pathway is a chain of successive tracts in the CNS serving the same function. A fasciculus is a smaller bundle within a tract. A lemniscus is a specific ascending brainstem pathway. A commissure connects two sides of the CNS, and a decussation is a midline crossing.",
+    "keyConcept": "Pathway = chain of successive tracts with identical function",
+    "wrongOpt": "Fasciculus",
+    "context": " serving the same function. a fasciculus is a smaller bundle within a "
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q7",
+    "text": "A bundle of nerve fibers in the CNS having the same beginning, termination and function is called:",
+    "options": [
+      "Pathway",
+      "Tract",
+      "Lemniscus",
+      "Commissure",
+      "Decussation"
+    ],
+    "correctIndex": 1,
+    "explanation": "A tract is a bundle of nerve fibers in the CNS sharing the same origin, termination, and function. A pathway is a chain of tracts. A lemniscus is an ascending brainstem bundle. A commissure connects hemispheres, and a decussation is a crossing.",
+    "keyConcept": "Tract = CNS fiber bundle with common origin, termination, and function",
+    "wrongOpt": "Pathway",
+    "context": " termination, and function. a pathway is a chain of tracts. a lemni"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q143",
+    "text": "Injury to the right paracentral lobule leads to paralysis of:",
+    "options": [
+      "Left side of face.",
+      "Right side of face.",
+      "Left leg.",
+      "Right upper limb.",
+      "Right foot."
+    ],
+    "correctIndex": 3,
+    "explanation": "The right paracentral lobule controls the left leg. Since motor pathways cross (decussate), injury to the right paracentral lobule causes paralysis of the contralateral (left) lower limb.",
+    "keyConcept": "Right paracentral lobule controls left leg",
+    "wrongOpt": "Left leg.",
+    "context": "racentral lobule controls the left leg. since motor pathways cross (d"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q156",
+    "text": "Hind brain (Rhombencephalon) includes all the following EXCEPT:",
+    "options": [
+      "Medulla oblongata.",
+      "Cerebellum.",
+      "Pons.",
+      "Crus cerebri.",
+      "Fourth ventricle."
+    ],
+    "correctIndex": 0,
+    "explanation": "The hindbrain (rhombencephalon) includes the medulla oblongata, pons, and cerebellum. The crus cerebri is part of the midbrain (not hindbrain), containing corticospinal and corticobulbar fibers.",
+    "keyConcept": "Crus cerebri is midbrain, not hindbrain",
+    "wrongOpt": "Cerebellum.",
+    "context": " medulla oblongata, pons, and cerebellum. the crus cerebri is part of t"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q215",
+    "text": "The venous sinus enclosed within the lower concave margin of the falx cerebri is:",
+    "options": [
+      "Superior sagittal sinus.",
+      "Inferior sagittal sinus.",
+      "Sigmoid sinus.",
+      "Straight sinus.",
+      "Sphenoparietal sinus."
+    ],
+    "correctIndex": 1,
+    "explanation": "The inferior sagittal sinus runs along the lower free margin of the falx cerebri before draining into the straight sinus. The superior sagittal sinus runs along the upper attached border.",
+    "keyConcept": "Inferior sagittal sinus in lower falx margin",
+    "wrongOpt": "Straight sinus.",
+    "context": "ebri before draining into the straight sinus. the superior sagittal sinus r"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q228",
+    "text": "As regards trigeminal ganglion, choose the INCORRECT statement:",
+    "options": [
+      "It is a sensory ganglion,",
+      "Anterolaterally, it gives attachment to divisions of trigeminal nerve.",
+      "It lies at apex of petreous temporal bone.",
+      "Central processes of its cells form sensory root of trigeminal nerve."
+    ],
+    "correctIndex": 0,
+    "explanation": "The trigeminal ganglion (Gasserian ganglion) is a crescent-shaped sensory ganglion located in Meckel's cave, which lies on the anterior surface of the petrous temporal bone, NOT at its apex. It gives rise to the ophthalmic, maxillary, and mandibular divisions anterolaterally. Its central processes form the sensory root that enters the pons, while its peripheral processes form the three divisions.",
+    "keyConcept": "Trigeminal ganglion lies in Meckel's cave on the anterior surface of petrous temporal bone, not at the apex.",
+    "wrongOpt": "Anterolaterally, it gives attachment to divisions of trigemi",
+    "context": "ary, and mandibular divisions anterolaterally. its central processes form t"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q261",
+    "text": "The pretracheal fascia is attached inferiority to:",
+    "options": [
+      "Trachea.",
+      "Esophagus.",
+      "Thyroid cartilage.",
+      "Cricoid cartilage.",
+      "Pericardium."
+    ],
+    "correctIndex": 0,
+    "explanation": "The pretracheal fascia encloses the thyroid gland, trachea, and esophagus. It is attached superiorly to the thyroid and cricoid cartilages and inferiorly it extends into the superior mediastinum where it fuses with the fibrous pericardium and aortic arch adventitia. This allows infections inferior to the fascia to potentially spread into the mediastinum.",
+    "keyConcept": "Pretracheal fascia attaches inferiorly to pericardium/aortic adventitia.",
+    "wrongOpt": "Esophagus.",
+    "context": "e thyroid gland, trachea, and esophagus. it is attached superiorly to "
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q285",
+    "text": "The following muscles are in the muscular triangle Except:",
+    "options": [
+      "Sternohyoid.",
+      "Thyrohyoid.",
+      "Omohyoid.",
+      "Hyoglossus.",
+      "Sternothyroid."
+    ],
+    "correctIndex": 0,
+    "explanation": "The muscular triangle contains the infrahyoid (strap) muscles: sternohyoid, sternothyroid, omohyoid, and thyrohyoid. The hyoglossus is an extrinsic muscle of the tongue that lies deep to the digastric triangle and floor of the mouth, not within the muscular triangle of the neck.",
+    "keyConcept": "Hyoglossus is an extrinsic tongue muscle, NOT an infrahyoid strap muscle in muscular triangle.",
+    "wrongOpt": "Thyrohyoid.",
+    "context": " sternothyroid, omohyoid, and thyrohyoid. the hyoglossus is an extrinsi"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q317",
+    "text": "All the following are contents of posterior triangle of neck EXCEPT:",
+    "options": [
+      "Suprascapular artery.",
+      "Trunks of brachial plexus.",
+      "Cranial part of accessory nerve.",
+      "Transverse cervical vein.",
+      "Occipital artery."
+    ],
+    "correctIndex": 0,
+    "explanation": "The posterior triangle contains the spinal ACCESSORY nerve (not cranial part), trunks of the brachial plexus, transverse cervical artery and vein, suprascapular vessels, external jugular vein, and occipital artery. The cranial part of the accessory nerve joins the vagus nerve within the jugular foramen and exits the skull along with CN X; it does NOT enter or cross the posterior triangle.",
+    "keyConcept": "Cranial part of accessory nerve joins vagus; spinal part crosses posterior triangle.",
+    "wrongOpt": "Occipital artery.",
+    "context": "s, external jugular vein, and occipital artery. the cranial part of the acces"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q390",
+    "text": "Which of the following is not true regarding the branchial cyst?",
+    "options": [
+      "Covers all clefts except the first.",
+      "Is usually close to the angle of mandible.",
+      "It is related to the posterior border of sternomastoid muscle.",
+      "It is the remnant of cervical sinus.",
+      "It is lined by ectoderm (stratified squamous epithelium)."
+    ],
+    "correctIndex": 0,
+    "explanation": "A branchial cyst is a remnant of the cervical sinus of His (the second pharyngeal cleft), located near the angle of the mandible and along the anterior border of the sternocleidomastoid muscle. It is lined by ectoderm (stratified squamous epithelium). The statement that it is related to the posterior border of sternomastoid is INCORRECT—the cyst lies along the ANTERIOR border of sternocleidomastoid, not posterior.",
+    "keyConcept": "Branchial cyst = remnant of cervical sinus; lined by ectoderm; lies along ANTERIOR border of sternocleidomastoid (not posterior).",
+    "wrongOpt": "It is lined by ectoderm (stratified squamous epithelium).",
+    "context": "e sternocleidomastoid muscle. it is lined by ectoderm (stratified squamous epithelium). the statement that it is rela"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q393",
+    "text": "The stapedius muscle is attached to the stapes and is derived from the mesoderm of the:",
+    "options": [
+      "Pre-otic somites.",
+      "Occipital somites.",
+      "First branchial arch.",
+      "Second branchial arch.",
+      "Third branchial arch."
+    ],
+    "correctIndex": 2,
+    "explanation": "The stapedius muscle is derived from mesoderm of the second branchial arch. It is innervated by the facial nerve (CN VII) and functions to stabilize the stapes and dampen sound. The first arch gives tensor tympani; pre-otic and occipital somites give other muscles.",
+    "keyConcept": "Stapedius derived from 2nd arch mesoderm; innervated by facial nerve (CN VII); stabilizes stapes.",
+    "wrongOpt": "Second branchial arch.",
+    "context": " derived from mesoderm of the second branchial arch. it is innervated by the facia"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q409",
+    "text": "Each of the following cells is derived from the neuroepithelial cells EXCEPT:",
+    "options": [
+      "Ependymal cells.",
+      "Microglia cells.",
+      "Astrocytes.",
+      "Motor neurons.",
+      "Oligodendroglia."
+    ],
+    "correctIndex": 0,
+    "explanation": "Microglia are the resident macrophages of the CNS and are derived from MONOCYTES (mesodermal origin), NOT from neuroepithelial cells. Neuroepithelial cells give rise to ependymal cells, astrocytes, oligodendrocytes (all neuroglia), and motor neurons. Microglia are unique among CNS cells in being mesodermal in origin.",
+    "keyConcept": "Microglia are derived from mesoderm (monocytes), NOT from neuroepithelial cells. All other glial cells and neurons come from neuroepithelial cells.",
+    "wrongOpt": "Motor neurons.",
+    "context": "drocytes (all neuroglia), and motor neurons. microglia are unique among cn"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q445",
+    "text": "Foramen spinosum gives passage to:",
+    "options": [
+      "Hypoglossal nerve.",
+      "Mandibular nerve.",
+      "Lesser petrosal nerve.",
+      "Maxillary nerve.",
+      "Middle meningeal artery."
+    ],
+    "correctIndex": 4,
+    "explanation": "Foramen spinosum is located in the greater wing of the sphenoid bone and transmits the middle meningeal artery (and its associated vein) into the cranial cavity. The middle meningeal artery is a branch of the maxillary artery and is the main arterial supply to the meninges. Foramen ovale transmits the mandibular nerve; foramen rotundum transmits the maxillary nerve.",
+    "keyConcept": "Foramen spinosum transmits the middle meningeal artery (branch of maxillary artery) into the cranial cavity.",
+    "wrongOpt": "Maxillary nerve.",
+    "context": "oramen rotundum transmits the maxillary nerve."
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q446",
+    "text": "Greater wing of sphenoid shows all the following EXCEPT:",
+    "options": [
+      "Superior orbital fissure.",
+      "Foramen rotundum.",
+      "Foramen ovale.",
+      "Foramen lacerum.",
+      "Foramen spinosum."
+    ],
+    "correctIndex": 3,
+    "explanation": "The greater wing of the sphenoid bone contains the superior orbital fissure, foramen rotundum, foramen ovale, and foramen spinosum. However, foramen lacerum is NOT part of the greater wing—it is located at the junction of the petrous temporal and sphenoid body. Foramen lacerum transmits the internal carotid artery (its pteryoid segment) and is closed inferiorly by fibrocartilage.",
+    "keyConcept": "Greater wing of sphenoid has: superior orbital fissure, foramen rotundum, foramen ovale, foramen spinosum. Foramen lacerum is at petrous-sphenoid junction, not part of greater wing.",
+    "wrongOpt": "Foramen spinosum.",
+    "context": " rotundum, foramen ovale, and foramen spinosum. however, foramen lacerum is n"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q447",
+    "text": "The posterolateral fontanelle ossifies to form:",
+    "options": [
+      "Pterion.",
+      "Asterion.",
+      "Lambda.",
+      "Bregma.",
+      "Inion."
+    ],
+    "correctIndex": 0,
+    "explanation": "The posterolateral fontanelle is located at the junction of the parietal, temporal, and occipital bones (asterion). It normally closes by 6 months of age and ossifies to form the ASTERION. The anterior fontanelle forms bregma; the pterion is not a fontanelle but a suture junction; lambda is the lambdoid-sagittal junction.",
+    "keyConcept": "Posterolateral fontanelle ossifies to form ASTERION (parietal-temporal-occipital junction). Anterior fontanelle forms bregma.",
+    "wrongOpt": "Asterion.",
+    "context": " age and ossifies to form the asterion. the anterior fontanelle forms"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q456",
+    "text": "A 25 year old woman suffers from a traumatic scalp avulsion due to a revolving machinery at her workplace. All the following are considered boundaries for the scalp EXCEPT:",
+    "options": [
+      "Superior nuchal line",
+      "Zygomatic arch",
+      "Zygomatic bone",
+      "Supraorbital arch",
+      "External occipital protuberance"
+    ],
+    "correctIndex": 0,
+    "explanation": "The scalp is bounded by: superior nuchal line (posterior), zygomatic arch (laterally), and supraorbital arch/ridge (anterior). The EXTERNAL OCCIPITAL PROTUBERANCE is a landmark on the skull but the scalp's posterior boundary is the superior nuchal line, not the protuberance itself. The zygomatic arch is the lateral boundary; zygomatic bone is part of the face, not a boundary of the scalp.",
+    "keyConcept": "Scalp boundaries: superior nuchal line (posterior), zygomatic arch (lateral), supraorbital arch (anterior). External occipital protuberance is a skull landmark, not scalp boundary.",
+    "wrongOpt": "Zygomatic arch",
+    "context": "rior nuchal line (posterior), zygomatic arch (laterally), and supraorbital"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q458",
+    "text": "A patient undergoes a surgical procedure on their scalp, and during the operation, there is profuse bleeding from an artery in the scalp. The bleeding is located near the superior nuchal line. Which artery is most likely the source of this bleeding?",
+    "options": [
+      "Occipital artery",
+      "Supraorbital artery",
+      "Middle temporal artery",
+      "Superficial temporal artery",
+      "Posterior auricular artery"
+    ],
+    "correctIndex": 4,
+    "explanation": "The occipital artery runs along the superior nuchal line and supplies the posterior scalp. It is a branch of the external carotid artery and anastomoses with the supratrochlear and posterior auricular arteries. The supraorbital artery supplies the forehead; superficial temporal artery supplies the lateral scalp; posterior auricular artery supplies behind the ear.",
+    "keyConcept": "Occipital artery supplies the scalp near the superior nuchal line (posterior scalp); branch of external carotid.",
+    "wrongOpt": "Occipital artery",
+    "context": "the occipital artery runs along the superior nucha"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q459",
+    "text": "A 50-year-old man presents with a deep laceration to the side of the scalp in front of the ear, following a bicycle accident. Profuse bleeding is noted from the wound. Which artery is most likely the source of this bleeding?",
+    "options": [
+      "Facial artery",
+      "Occipital artery",
+      "Middle meningeal artery",
+      "Superficial temporal artery",
+      "Vertebral artery"
+    ],
+    "correctIndex": 3,
+    "explanation": "The superficial temporal artery (branch of external carotid) runs in front of the ear and supplies the lateral scalp. It is the most likely source of profuse bleeding from a laceration in front of the ear. The middle meningeal artery is intracranial; the vertebral artery enters the foramen magnum; the facial artery supplies the face.",
+    "keyConcept": "Superficial temporal artery supplies lateral scalp and is the source of bleeding from wounds in front of the ear.",
+    "wrongOpt": "Facial artery",
+    "context": "nters the foramen magnum; the facial artery supplies the face."
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q460",
+    "text": "A 45-year-old male patient presents with a chief complaint of numbness and tingling on the right side of his head. On physical examination, the patient has decreased sensation to light touch and pinprick on the right side of his forehead, scalp, and approaching the ear. Which of the following nerves is most likely injured in this patient?",
+    "options": [
+      "Auriculotemporal nerve",
+      "Greater occipital nerve",
+      "Lesser occipital nerve",
+      "Supraorbital nerve",
+      "Zygomaticotemporal nerve"
+    ],
+    "correctIndex": 3,
+    "explanation": "Decreased sensation on the forehead, anterior scalp, and approaching the ear indicates injury to the supraorbital nerve, which is a branch of the frontal nerve (itself from the ophthalmic division of CN V). The auriculotemporal nerve (CN V3) supplies the temple; the zygomaticotemporal nerve supplies the lateral forehead; the greater and lesser occipital nerves supply the posterior scalp.",
+    "keyConcept": "Supraorbital nerve (V1) supplies the forehead and anterior scalp; decreased sensation here indicates V1 injury.",
+    "wrongOpt": "Auriculotemporal nerve",
+    "context": "halmic division of cn v). the auriculotemporal nerve (cn v3) supplies the temple; "
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q461",
+    "text": "A 55-year-old male patient presents with a complaint of right eyebrow is drooping. On physical examination, the patient has weakness of the right frontalis muscle. Which nerve is most likely damaged in this patient?",
+    "options": [
+      "Auriculotemporal nerve",
+      "Supratrochlear nerve",
+      "Greater occipital nerve",
+      "Lesser occipital nerve",
+      "Facial nerve"
+    ],
+    "correctIndex": 4,
+    "explanation": "Weakness of the frontalis muscle indicates facial nerve (CN VII) injury. The frontalis muscle is one of the muscles of facial expression, all of which are innervated by the facial nerve. Drooping of the eyebrow (ptosis of eyebrow) and inability to raise it are signs of frontal branch facial nerve palsy. Supratrochlear nerve is sensory only; cranial nerve damage would not affect frontalis.",
+    "keyConcept": "Frontalis muscle weakness = facial nerve (CN VII) lesion; frontalis is a muscle of facial expression innervated by temporal branch of CN VII.",
+    "wrongOpt": "Supratrochlear nerve",
+    "context": "al branch facial nerve palsy. supratrochlear nerve is sensory only; cranial nerv"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q462",
+    "text": "A 5-year-old child presents with a repetitive eye blinking that has started concomitantly with him joining school for the first time, his mother sought medical attention. You assured here that the condition is self limiting and that its due to the child's anxiety. What is the most likely part of the orbicularis oculi is involved",
+    "options": [
+      "Orbital",
+      "Palpebral",
+      "Lacrimal",
+      "Zygomatic",
+      "Buccal"
+    ],
+    "correctIndex": 0,
+    "explanation": "The palpebral part of the orbicularis oculi is responsible for gentle, involuntary blinking (as seen in the anxious child starting school). The orbital part produces forced, voluntary eye closure. The lacrimal partcompresses the lacrimal sac. The school-related anxiety triggering repetitive blinking involves the involuntary (palpebral) portion.",
+    "keyConcept": "Palpebral part of orbicularis oculi produces gentle involuntary BLINKING; orbital part produces forced voluntary eye closure.",
+    "wrongOpt": "Palpebral",
+    "context": "the palpebral part of the orbicularis oculi"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q463",
+    "text": "A 20-year-old man presents to the clinic with a chief complaint of burning sensation in his forehead for 3 days duration, that lately is developing vesicles. He reported a history of a sever attack of common cold that resolved a week ago. A herpes Zoster infection was diagnosed. What is the most likely nerve involved in his complaint",
+    "options": [
+      "Mandibular",
+      "Trigeminal",
+      "Facial",
+      "Ophthalmic",
+      "Maxillary"
+    ],
+    "correctIndex": 1,
+    "explanation": "Herpes zoster on the forehead following a common cold (prodromal viral infection) indicates shingles of the ophthalmic division of the trigeminal nerve (CN V1). The forehead is supplied by the supraorbital and supratrochlear nerves (terminal branches of V1). The frontal nerve is the largest branch of the ophthalmic division. Ramsay Hunt syndrome affects CN VII.",
+    "keyConcept": "Herpes zoster on forehead = ophthalmic division of trigeminal nerve (CN V1) involvement (shingles).",
+    "wrongOpt": "Ophthalmic",
+    "context": "on) indicates shingles of the ophthalmic division of the trigeminal ne"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q464",
+    "text": "A 35-year-old man presents to the clinic with a chief complaint of food accumulation and dripping from the side of his mouth, after recovering from a parotid surgery involving removal of the benign tumor. What is the most likely nerve involved.",
+    "options": [
+      "Temporal",
+      "Zygomatic",
+      "Mandibular",
+      "Cervical",
+      "Buccal"
+    ],
+    "correctIndex": 4,
+    "explanation": "After parotid surgery, food accumulation and drooping from the side of the mouth indicates buccal nerve injury (a branch of the mandibular nerve, CN V3). The buccal nerve provides sensory innervation to the cheek mucosa and skin over the buccinator. Motor buccinator weakness (from CN VII) causes food accumulation, but after parotid surgery CN VII is at risk from the surgical field.",
+    "keyConcept": "Buccal nerve (sensory branch of CN V3) supplies cheek mucosa; post-parotid surgery causes buccal nerve injury with food accumulation and drooling.",
+    "wrongOpt": "Mandibular",
+    "context": "nerve injury (a branch of the mandibular nerve, cn v3). the buccal ner"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q465",
+    "text": "A 28-year-old patient is involved in a car accident and sustains a traumatic injury to their spinal cord. As a result, they lose motor function below the waist and have no sensation in their lower limbs. Based on the location of the injury, which region of the spinal cord is most likely affected?",
+    "options": [
+      "Cervical",
+      "Thoracic",
+      "Lumbar",
+      "Sacral",
+      "Coccygeal"
+    ],
+    "correctIndex": 2,
+    "explanation": "Loss of motor function below the waist and no sensation in lower limbs indicates a lesion affecting the lumbar and sacral regions of the spinal cord. The lumbar spinal cord segments (L1-L5) are located around T11-L1 vertebral levels. The cervical region controls the upper limbs; thoracic region controls the trunk. In this adult, the lesion is in the lower spinal cord.",
+    "keyConcept": "Motor and sensory loss in lower limbs = lumbar/sacral spinal cord region; controls lower limb movement and sensation.",
+    "wrongOpt": "Cervical",
+    "context": " t11-l1 vertebral levels. the cervical region controls the upper lim"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q467",
+    "text": "A 50-year-old female patient presents to the clinic with a chief complaint of right-sided hemiparesis. She reports that she woke up this morning and was unable to move her right arm or leg. Which of the following anatomical areas of the brain is most likely affected in this patient?",
+    "options": [
+      "Post central gyrus",
+      "Angular gyrus",
+      "Precentral gyrus",
+      "The opercular and triangular parts of the inferior frontal gyrus",
+      "Superior lip of posterior ramus of lateral sulcus"
+    ],
+    "correctIndex": 0,
+    "explanation": "The precentral gyrus (primary motor cortex) in the frontal lobe is the region responsible for voluntary motor control. Hemiparesis (weakness of right arm and leg) indicates a lesion in the LEFT precentral gyrus (contralateral to the affected side). The postcentral gyrus is somatosensory; the angular gyrus is for reading and language; Broca's area is for speech production.",
+    "keyConcept": "Right-sided hemiparesis = lesion in the LEFT precentral gyrus (primary motor cortex); contralateral motor control.",
+    "wrongOpt": "Angular gyrus",
+    "context": "l gyrus is somatosensory; the angular gyrus is for reading and language; "
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q471",
+    "text": "A patient complains of unsteadiness during that is profound during darkness. Examination shows a marked diminution of position sense, vibration sense, and stereognosis of all extremities. He is unable to stand without wavering for more than a few seconds when his eyes are closed. There are no other abnormal findings. The lesion most likely involves the:",
+    "options": [
+      "Lateral columns of the spinal cord, bilaterally",
+      "Inferior cerebellar peduncles, bilaterally",
+      "Dorsal columns of the spinal cord, bilaterally",
+      "Spinothalamic tracts, bilaterally",
+      "Corticospinal tracts"
+    ],
+    "correctIndex": 0,
+    "explanation": "Bilateral dorsal column lesion causes loss of proprioception, vibration sense, and stereognosis in all extremities, with a positive Romberg sign (falls when eyes closed because proprioception is lost). The patient uses visual input to compensate, hence the profound unsteadiness in darkness. Spinocerebellar tract lesions cause ataxia but not sensory loss; lateral column lesions affect corticospinal tracts.",
+    "keyConcept": "Bilateral dorsal column lesion = loss of proprioception/vibration/stereognosis, positive Romberg; profound unsteadiness in darkness because vision cannot compensate.",
+    "wrongOpt": "Corticospinal tracts",
+    "context": "lateral column lesions affect corticospinal tracts."
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q472",
+    "text": "The spinal tract involved with the control of trunk muscles is:",
+    "options": [
+      "anterior corticospinal",
+      "anterior spinocerebellar",
+      "spino-olivary",
+      "lateral corticospinal",
+      "vestibulospinal"
+    ],
+    "correctIndex": 0,
+    "explanation": "The anterior corticospinal tract descends from the motor cortex in the lateral column but then crosses in the spinal cord (anterior white commissure) and supplies the TRUNK muscles (axial and proximal limb muscles). It is involved in fine control of trunk posture and proximal limb movements. The lateral corticospinal tract controls limb muscles.",
+    "keyConcept": "Anterior corticospinal tract controls axial/trunk muscles; decussates in spinal cord. Lateral corticospinal tract controls limb muscles.",
+    "wrongOpt": "lateral corticospinal",
+    "context": " proximal limb movements. the lateral corticospinal tract controls limb muscles."
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q486",
+    "text": "What is the most common position for the appendix?",
+    "options": [
+      "Retrocecal",
+      "Pelvic",
+      "Subcecal",
+      "Preileal"
+    ],
+    "correctIndex": 0,
+    "explanation": "The retrocecal position is the most common anatomical position of the appendix, occurring in approximately 65% of individuals. In this position, the appendix lies posterior to the cecum, often tucked behind the ileum. Other less common positions include pelvic (20-30%), subcecal, and preileal. The retrocecal position is clinically significant as it can alter the presentation of appendicitis and may complicate diagnosis.",
+    "keyConcept": "The retrocecal position is the most common appendix location due to embryological rotation of the cecum.",
+    "wrongOpt": "Pelvic",
+    "context": "less common positions include pelvic (20-30%), subcecal, and preil"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q487",
+    "text": "Which part of the intestine can protrude through a wound just above the umbilicus and to the left?",
+    "options": [
+      "Jejunum",
+      "Ileum",
+      "Transverse colon",
+      "Sigmoid colon"
+    ],
+    "correctIndex": 0,
+    "explanation": "The jejunum is the correct answer because wounds above the umbilicus to the left expose the left upper quadrant where coils of jejunum are located. The jejunum begins at the duodenojejunal flexure (at L2 level, left of the midline) and occupies the left upper abdomen. The transverse colon is more centrally located at the umbilical level, sigmoid colon is in the lower left pelvis, and ileum is predominantly in the right lower abdomen and pelvis. Jejunal hernias through abdominal wall defects are clinically recognized due to the fixed mesenteric attachment at the duodenojejunal junction.",
+    "keyConcept": "The jejunum occupies the left upper abdomen and can protrude through左侧上腹部的伤口.",
+    "wrongOpt": "Ileum",
+    "context": "in the lower left pelvis, and ileum is predominantly in the right"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q514",
+    "text": "Hemisection of spinal cord gives the following symptoms on the same side below the level of lesion:",
+    "options": [
+      "Proprioception loss",
+      "Upper motor neuron lesion",
+      "Loss of pain and temperature",
+      "All of the above",
+      "a & B only"
+    ],
+    "correctIndex": 2,
+    "explanation": "Brown-Sequard syndrome (hemisection of spinal cord): ipsilateral motor weakness and proprioception loss (corticospinal and dorsal columns) BELOW lesion; contralateral pain/temperature loss (spinothalamic) 1-2 segments below lesion.选项D正确. The answer is D. This is the classic dissociated sensory loss pattern.",
+    "keyConcept": "Brown-Sequard: ipsilateral motor/ proprioception loss, contralateral pain/temperature loss - below lesion level.",
+    "wrongOpt": "Proprioception loss",
+    "context": "psilateral motor weakness and proprioception loss (corticospinal and dorsal col"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q528",
+    "text": "Spinal n. of trigeminal, equivalent to:",
+    "options": [
+      "Substantia gelatinosa",
+      "Clarck’s n",
+      "Main sensory n",
+      "Commissural nuclei"
+    ],
+    "correctIndex": 0,
+    "explanation": "The spinal nucleus of the trigeminal nerve is equivalent to substantia gelatinosa (Rexed lamina II) of the spinal cord dorsal horn. Both are involved in pain and temperature transmission. The main sensory nucleus handles fine touch; Clarke's nucleus is for proprioception.",
+    "keyConcept": "Spinal nucleus of V = substantia gelatinosa (pain/temp). Main sensory nucleus = epicritic touch.",
+    "wrongOpt": "Main sensory n",
+    "context": "temperature transmission. the main sensory nucleus handles fine touch; cla"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q532",
+    "text": "Crossing fibers of gracile & cuneate tracts are called:",
+    "options": [
+      "Internal arcuate",
+      "Dorsal external arcuate",
+      "Ventral external arcuate",
+      "Horizontal"
+    ],
+    "correctIndex": 1,
+    "explanation": "Internal arcuate fibers are the DECUSSATING (crossing) fibers of the dorsal column-medial lemniscal system. They cross in the sensory decussation of the closed medulla and form the medial lemniscus. External arcuate fibers are cerebellar afferents.",
+    "keyConcept": "Internal arcuate fibers: cross in sensory decussation → form medial lemniscus. External arcuate: cerebellar afferents.",
+    "wrongOpt": "Internal arcuate",
+    "context": "internal arcuate fibers are the decussating (c"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q534",
+    "text": "One of the relays nuclel of auditory pathway is:",
+    "options": [
+      "Inferior olive nucleus",
+      "Superior olivary nucleus",
+      "Vestibular nucleus",
+      "Superior colliculus"
+    ],
+    "correctIndex": 0,
+    "explanation": "The superior olivary nucleus is a relay in the auditory pathway, located in the pons. It receives input from the cochlear nuclei and projects to the inferior colliculus via the lateral lemniscus. The trapezoid body also passes through this area.",
+    "keyConcept": "Auditory pathway: cochlear nuclei → superior olive (binaural hearing) → lateral lemniscus → inferior colliculus → MGB.",
+    "wrongOpt": "Superior olivary nucleus",
+    "context": "the superior olivary nucleus is a relay in the auditory pa"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q535",
+    "text": "Basis pontis contain the following except:",
+    "options": [
+      "Corticospinal fibers",
+      "Corticonuclear fibers",
+      "Pontine reticulospinal",
+      "Transverse pontine fibers"
+    ],
+    "correctIndex": 0,
+    "explanation": "Basis pontis contains corticospinal fibers (descending to spinal cord), corticonuclear fibers (to cranial nerve nuclei), and transverse pontine fibers (to cerebellum). Pontine reticulospinal fibers are in the tegmentum (not basis), along with other tegmental structures.",
+    "keyConcept": "Basis pontis: corticospinal, corticonuclear, transverse pontine fibers. Tegmentum: reticulospinal, sensory nuclei.",
+    "wrongOpt": "Corticonuclear fibers",
+    "context": " (descending to spinal cord), corticonuclear fibers (to cranial nerve nuclei), an"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q536",
+    "text": "Auditory pathways contain the following except:",
+    "options": [
+      "Cochlear nuclei",
+      "Trapezoid body",
+      "Medial lemniscus",
+      "Inferior colliculus",
+      "Medial geniculate Body"
+    ],
+    "correctIndex": 0,
+    "explanation": "The medial lemniscus carries somatosensory information (fine touch, vibration, proprioception), not auditory information. Auditory pathway: cochlear nuclei → superior olive → lateral lemniscus → inferior colliculus → medial geniculate body → auditory cortex.",
+    "keyConcept": "Auditory pathway: cochlear nuclei → superior olive → lateral lemniscus → inferior colliculus → MGB → auditory cortex.",
+    "wrongOpt": "Medial lemniscus",
+    "context": "the medial lemniscus carries somatosensory informa"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q537",
+    "text": "The specific feature of upper mid brain is presence of:",
+    "options": [
+      "Crus cerebri",
+      "Substantia nigra",
+      "Red nucleus",
+      "Superior cerebellar peduncle decussation"
+    ],
+    "correctIndex": 3,
+    "explanation": "The SUPERIOR cerebellar peduncle DECUSSATION is specific to the upper midbrain - it carries cerebellar output to the thalamus. The crus cerebri and substantia nigra are present throughout the midbrain. Red nucleus is present in the upper midbrain but its decussation is not unique to upper level.",
+    "keyConcept": "Upper midbrain specific feature: decussation of superior cerebellar peduncles (dentatothalamic fibers).",
+    "wrongOpt": "Crus cerebri",
+    "context": "r output to the thalamus. the crus cerebri and substantia nigra are pres"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q541",
+    "text": "Fibers derived from which nucleus run transversally to form the trapezoid body?",
+    "options": [
+      "Ventral cochlear nucleus",
+      "Dorsal cochlear nucleus",
+      "All of the above",
+      "None of the above"
+    ],
+    "correctIndex": 0,
+    "explanation": "The VENTRAL cochlear nucleus gives rise to fibers that cross transversely to form the trapezoid body in the pons. These are part of the auditory pathway to the superior olivary nucleus. The dorsal cochlear nucleus projects via the intermediate acoustic stria.",
+    "keyConcept": "Ventral cochlear nucleus → trapezoid body → superior olivary nucleus (auditory pathway).",
+    "wrongOpt": "Dorsal cochlear nucleus",
+    "context": "superior olivary nucleus. the dorsal cochlear nucleus projects via the intermediate"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q542",
+    "text": "What is the lateral lemniscus formed of?",
+    "options": [
+      "Three acoustic stria",
+      "Fibers from superior olive",
+      "Fibers from the nuclei of the trapezoid body",
+      "All of the above"
+    ],
+    "correctIndex": 2,
+    "explanation": "The lateral lemniscus is formed from ALL THREE acoustic stria (dorsal, intermediate, and ventral) plus fibers from the superior olivary nucleus and trapezoid body nuclei. It carries auditory information from the cochlear nuclei to the inferior colliculus.",
+    "keyConcept": "Lateral lemniscus: from all 3 acoustic stria + superior olive + trapezoid nuclei → inferior colliculus.",
+    "wrongOpt": "Three acoustic stria",
+    "context": " lemniscus is formed from all three acoustic stria (dorsal, intermediate, and ve"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q650",
+    "text": "The anterior triangle of the neck, include the following",
+    "options": [
+      "The muscular triangle",
+      "The carotid triangle",
+      "The digastric triangle",
+      "The submental triangle",
+      "The occipital triangle"
+    ],
+    "correctIndex": 0,
+    "explanation": "The anterior triangle has four subdivisions (muscular, carotid, digastric, submental); the occipital triangle is part of the posterior triangle, not anterior triangle.",
+    "keyConcept": "Anterior triangle subdivisions",
+    "wrongOpt": "The occipital triangle",
+    "context": "rotid, digastric, submental); the occipital triangle is part of the posterior tria"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q653",
+    "text": "The ventral grey column of the spinal cord contains the following groups of nerve cells Except",
+    "options": [
+      "Dorsomedial group",
+      "Ventrolateral group",
+      "Intermediolateral group",
+      "Central group",
+      "Retrodorsolateral group"
+    ],
+    "correctIndex": 0,
+    "explanation": "The ventral grey column contains dorsomedial, ventrolateral, intermediolateral, and central groups; the retrodorsolateral group is found in the dorsal horn (lamina IX), not ventral horn.",
+    "keyConcept": "Ventral horn neuronal groups",
+    "wrongOpt": "Central group",
+    "context": "teral, intermediolateral, and central groups; the retrodorsolateral group"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q654",
+    "text": "The gracile and cuneate tracts of the spinal cord are supplied by",
+    "options": [
+      "Anterior spinal artery",
+      "Posterior spinal artery",
+      "Radicular arteries",
+      "All of the above",
+      "Vertebral artery"
+    ],
+    "correctIndex": 0,
+    "explanation": "The gracile and cuneate tracts are supplied by the posterior spinal arteries (branches of vertebral artery) and radicular arteries; the anterior spinal artery supplies anterior cord structures.",
+    "keyConcept": "Dorsal column arterial supply",
+    "wrongOpt": "Radicular arteries",
+    "context": "ches of vertebral artery) and radicular arteries; the anterior spinal artery s"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q662",
+    "text": "Arterial supply of upper 1/2 of internal capsule is derived from:",
+    "options": [
+      "Central branches of middle cerebral",
+      "Central branches of posterior cerebral",
+      "Central branches of anterior cerebral",
+      "All of the above",
+      "None of the above"
+    ],
+    "correctIndex": 0,
+    "explanation": "Upper half of internal capsule is supplied by central branches of anterior cerebral artery; lower half receives branches from anterior choroidal and posterior communicating arteries.",
+    "keyConcept": "Internal capsule upper half supply",
+    "wrongOpt": "Central branches of anterior cerebral",
+    "context": "ternal capsule is supplied by central branches of anterior cerebral artery; lower half receives b"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q663",
+    "text": "Vertebrobasilar system supplies the following Except:",
+    "options": [
+      "Cerebellum",
+      "Inner ear",
+      "Visual cortex",
+      "Temporal pole",
+      "Pons"
+    ],
+    "correctIndex": 0,
+    "explanation": "Vertebrobasilar system supplies cerebellum, inner ear (labyrinthine artery), occipital cortex (PCA), and pons; the temporal pole is supplied by MCA, not vertebrobasilar.",
+    "keyConcept": "Vertebrobasilar territories",
+    "wrongOpt": "Inner ear",
+    "context": "r system supplies cerebellum, inner ear (labyrinthine artery), occipi"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q664",
+    "text": "Which of the following veins end in cavernous sinus:",
+    "options": [
+      "Superior cerebral veins",
+      "Inferior cerebral veins",
+      "Deep middle cerebral vein",
+      "Superficial middle cerebral vein",
+      "None of the above"
+    ],
+    "correctIndex": 0,
+    "explanation": "The superficial middle cerebral vein drains into the cavernous sinus; superior and inferior cerebral veins drain into superior sagittal and transverse sinuses respectively.",
+    "keyConcept": "Cavernous sinus drainage",
+    "wrongOpt": "Inferior cerebral veins",
+    "context": "cavernous sinus; superior and inferior cerebral veins drain into superior sagittal "
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q665",
+    "text": "The vein that opens in the straight sinus is:",
+    "options": [
+      "Great cerebral",
+      "Internal cerebral",
+      "Deep middle cerebral",
+      "All of the above",
+      "None of the above"
+    ],
+    "correctIndex": 0,
+    "explanation": "The great cerebral vein (of Galen) receives internal cerebral veins and drains into the straight sinus; internal cerebral vein drains deep structures into great cerebral vein.",
+    "keyConcept": "Straight sinus drainage",
+    "wrongOpt": "Internal cerebral",
+    "context": "bral vein (of galen) receives internal cerebral veins and drains into the str"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q674",
+    "text": "The following structures form the floor of the posterior triangle of the neck Except:",
+    "options": [
+      "Levatorscapulae.",
+      "Splenuis capitis.",
+      "Scalenus medius.",
+      "Investing layer of deep cervical fascia.",
+      "Prevertebral layer of deep cervical fascia."
+    ],
+    "correctIndex": 3,
+    "explanation": "The floor of the posterior triangle is formed by the levator scapulae, splenius capitis, and scalenus medius muscles, covered by the prevertebral layer of deep cervical fascia. The investing layer surrounds the trapezius and sternocleidomastoid, not forming the floor.",
+    "keyConcept": "Investing layer of deep cervical fascia is NOT part of floor of posterior triangle - EXCEPTION",
+    "wrongOpt": "Prevertebral layer of deep cervical fascia.",
+    "context": "edius muscles, covered by the prevertebral layer of deep cervical fascia. the investing layer surrounds"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q699",
+    "text": "Which of the following is present in the ventral surface of the medulla?",
+    "options": [
+      "Medullary stria",
+      "The pyramid",
+      "Inferior colliculus",
+      "Cuneate tubercle",
+      "Gracile tubercle"
+    ],
+    "correctIndex": 0,
+    "explanation": "The ventral medullary surface contains the pyramids (corticospinal tracts) and the olives (inferior olivary nucleus). The dorsal surface shows the fasciculus gracilis and cuneatus.",
+    "keyConcept": "Medullary pyramids contain decussating corticospinal fibers; olives contain inferior olivary nuclei.",
+    "wrongOpt": "The pyramid",
+    "context": "al medullary surface contains the pyramids (corticospinal tracts) and t"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q703",
+    "text": "Which of the following carries preganglionic parasympathetic fibers to the submandibular gland?",
+    "options": [
+      "Glossopharyngeal nerve",
+      "Vagus nerve",
+      "Trigeminal nerve",
+      "Chorda tympani",
+      "Hypoglossal nerve"
+    ],
+    "correctIndex": 3,
+    "explanation": "The lingual branch of the trigeminal nerve (V3) carries taste sensation from the anterior two-thirds of the tongue via the chorda tympani (from CN VII) to the submandibular ganglion.",
+    "keyConcept": "General sensory fibers to submandibular ganglion travel via lingual nerve (V3); preganglionic parasympathetic travels separately via chorda tympani.",
+    "wrongOpt": "Trigeminal nerve",
+    "context": "the lingual branch of the trigeminal nerve (v3) carries taste sensation "
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q707",
+    "text": "Which of the following nerves carries parasympathetic fibers to the otic ganglion?",
+    "options": [
+      "Lesser petrosal nerve",
+      "Greater petrosal nerve",
+      "Chorda tympani",
+      "Auriculotemporal nerve",
+      "Vagus nerve"
+    ],
+    "correctIndex": 2,
+    "explanation": "The tympanic branch of the glossopharyngeal nerve (CN IX) carries parasympathetic fibers to the otic ganglion. The otic ganglion then sends postganglionic fibers via the auriculotemporal nerve to the parotid gland.",
+    "keyConcept": "CN IX tympanic branch carries parasympathetic fibers to otic ganglion for parotid gland.",
+    "wrongOpt": "Auriculotemporal nerve",
+    "context": "postganglionic fibers via the auriculotemporal nerve to the parotid gland."
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q716",
+    "text": "Which structure receives the drainage of the inferior petrosal sinus as it exits the cranial cavity?",
+    "options": [
+      "Sigmoid sinus",
+      "Internal jugular vein",
+      "Subclavian vein",
+      "Cavernous sinus",
+      "Superior sagittal sinus"
+    ],
+    "correctIndex": 1,
+    "explanation": "The inferior petrosal sinus drains into the internal jugular vein at the jugular foramen. It receives blood from the cavernous sinus and drains the inferior part of the brain.",
+    "keyConcept": "Inferior petrosal sinus drains directly into the internal jugular vein at the jugular foramen.",
+    "wrongOpt": "Cavernous sinus",
+    "context": "n. it receives blood from the cavernous sinus and drains the inferior part "
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q719",
+    "text": "Which venous sinus drains directly into the internal jugular vein (IJV)?",
+    "options": [
+      "Superior sagittal sinus",
+      "Transverse sinus",
+      "Cavernous sinus",
+      "Sigmoid sinus",
+      "Inferior petrosal sinus"
+    ],
+    "correctIndex": 3,
+    "explanation": "The sigmoid sinus drains directly into the internal jugular vein (IJV) at the jugular bulb. The inferior petrosal sinus also drains into the IJV, but the sigmoid is the major drainage pathway.",
+    "keyConcept": "Sigmoid sinus is the primary venous sinus draining into the internal jugular vein.",
+    "wrongOpt": "Inferior petrosal sinus",
+    "context": "ijv) at the jugular bulb. the inferior petrosal sinus also drains into the ijv, but"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q720",
+    "text": "The vein running along the roof of the posterior triangle of the neck drains into which vein?",
+    "options": [
+      "External jugular vein",
+      "Internal jugular vein",
+      "Subclavian vein",
+      "Brachiocephalic vein",
+      "Cephalic vein"
+    ],
+    "correctIndex": 0,
+    "explanation": "The external jugular vein drains the posterior triangle of the neck and empties into the subclavian vein (or sometimes the internal jugular vein at the root of the neck).",
+    "keyConcept": "External jugular vein drains posterior triangle and joins subclavian vein.",
+    "wrongOpt": "Internal jugular vein",
+    "context": "lavian vein (or sometimes the internal jugular vein at the root of the neck)."
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q726",
+    "text": "The angle of the mandible is supplied by which nerve?",
+    "options": [
+      "Auriculotemporal nerve",
+      "Great auricular nerve",
+      "Buccal nerve",
+      "Inferior alveolar nerve",
+      "Mental nerve"
+    ],
+    "correctIndex": 3,
+    "explanation": "The angle of the mandible receives sensory innervation from the auriculotemporal nerve (branch of V3) and the inferior alveolar nerve (also V3). The buccal nerve also contributes.",
+    "keyConcept": "V3 branches (auriculotemporal, inferior alveolar) supply sensation to the mandibular angle.",
+    "wrongOpt": "Auriculotemporal nerve",
+    "context": " sensory innervation from the auriculotemporal nerve (branch of v3) and the inferi"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q733",
+    "text": "Which ligament prevents the mandible from posterior dislocation?",
+    "options": [
+      "Temporomandibular ligament",
+      "Sphenomandibular ligament",
+      "Stylomandibular ligament",
+      "Lateral pterygoid ligament",
+      "Capsular ligament"
+    ],
+    "correctIndex": 3,
+    "explanation": "The lateral pterygoid muscle has upper and lower heads; the articular disc and capsule of the TMJ are attached to the condylar neck. The temporomandibular ligament prevents posterior dislocation of the mandible.",
+    "keyConcept": "Temporomandibular ligament (lateral) prevents excessive posterior mandibular displacement.",
+    "wrongOpt": "Temporomandibular ligament",
+    "context": "hed to the condylar neck. the temporomandibular ligament prevents posterior dislocatio"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q735",
+    "text": "Which structure forms part of the medial wall of the infratemporal fossa?",
+    "options": [
+      "Medial pterygoid plate",
+      "Maxilla",
+      "Mandibular ramus",
+      "Greater wing of sphenoid",
+      "Lateral pterygoid plate"
+    ],
+    "correctIndex": 0,
+    "explanation": "The lateral pterygoid plate forms part of the medial wall of the infratemporal fossa. It provides attachment for the medial and lateral pterygoid muscles and the superior pharyngeal constrictor.",
+    "keyConcept": "Lateral pterygoid plate contributes to the medial boundary of the infratemporal fossa.",
+    "wrongOpt": "Lateral pterygoid plate",
+    "context": "the lateral pterygoid plate forms part of the medial wall"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q736",
+    "text": "Which structure forms the medial boundary of the infratemporal fossa?",
+    "options": [
+      "Ramus of the mandible",
+      "Greater wing of the sphenoid bone",
+      "Lateral pterygoid plate",
+      "Maxillary tuberosity",
+      "Medial pterygoid plate"
+    ],
+    "correctIndex": 2,
+    "explanation": "The lateral pterygoid plate forms the medial boundary of the infratemporal fossa. The lateral boundary is the ramus of the mandible, and the roof is the greater wing of sphenoid.",
+    "keyConcept": "Lateral pterygoid plate defines the medial limit of the infratemporal fossa.",
+    "wrongOpt": "Ramus of the mandible",
+    "context": ". the lateral boundary is the ramus of the mandible, and the roof is the greater "
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q742",
+    "text": "Which structure is located within the carotid sheath?",
+    "options": [
+      "Sympathetic trunk",
+      "Vagus nerve",
+      "Phrenic nerve",
+      "Ansa cervicalis",
+      "Hypoglossal nerve"
+    ],
+    "correctIndex": 0,
+    "explanation": "The carotid sheath contains the common/internal carotid artery, internal jugular vein, and vagus nerve (CN X). It extends from the carotid bifurcation to the root of the neck.",
+    "keyConcept": "Carotid sheath contains ICA, IJV, and CN X - a true fascial investment of the neck vessels.",
+    "wrongOpt": "Vagus nerve",
+    "context": "y, internal jugular vein, and vagus nerve (cn x). it extends from the c"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q744",
+    "text": "Nerve group cell outside CNS:",
+    "options": [
+      "decussation",
+      "Ganglia",
+      "tract",
+      "Nucleus"
+    ],
+    "correctIndex": 0,
+    "explanation": "A ganglion (plural: ganglia) is a collection of neuron cell bodies located outside the CNS, such as dorsal root ganglia or autonomic ganglia.",
+    "keyConcept": "Ganglion definition",
+    "wrongOpt": "Ganglia",
+    "context": "a ganglion (plural: ganglia) is a collection of neuron ce"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q748",
+    "text": "Posterior column lies between:",
+    "options": [
+      "posterior median septum, anterior horn",
+      "posterior median septum, posterior horn",
+      "anterior median fissure, posterior horn",
+      "anterior median fissure , anterior horn"
+    ],
+    "correctIndex": 1,
+    "explanation": "The posterior (dorsal) column lies between the posterior median septum and the posterior horn, carrying proprioception and fine touch sensation.",
+    "keyConcept": "Posterior column location",
+    "wrongOpt": "posterior median septum, anterior horn",
+    "context": "rsal) column lies between the posterior median septum and the posterior horn, carry"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q749",
+    "text": "Anterior column lies between:",
+    "options": [
+      "posterior median septum, anterior horn",
+      "posterior median septum, posterior horn",
+      "anterior median fissure, posterior horn",
+      "anterior median fissure , anterior horn"
+    ],
+    "correctIndex": 3,
+    "explanation": "The anterior column lies between the anterior median fissure and the anterior horn, containing motor neurons for voluntary movement.",
+    "keyConcept": "Anterior column location",
+    "wrongOpt": "anterior median fissure, posterior horn",
+    "context": "erior column lies between the anterior median fissure and the anterior horn, contai"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q754",
+    "text": "Which Nuclei is present in lateral horn?",
+    "options": [
+      "sensory",
+      "motor",
+      "commissural",
+      "sympathetic"
+    ],
+    "correctIndex": 0,
+    "explanation": "The sympathetic (intermediolateral) nucleus is present in the lateral horn at T1-L2 levels, containing preganglionic sympathetic neurons.",
+    "keyConcept": "Lateral horn nuclei",
+    "wrongOpt": "sympathetic",
+    "context": "the sympathetic (intermediolateral) nucleus i"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q755",
+    "text": "Sympathetic Nuclei is present in:",
+    "options": [
+      "thoracic, upper 2 lumbar",
+      "thoracic, sacral",
+      "cervical, upper 2 thoracic",
+      "sacral, coccygeal"
+    ],
+    "correctIndex": 0,
+    "explanation": "Sympathetic preganglionic neurons are located in the intermediolateral cell column of the lateral horn from thoracic to upper 2 lumbar segments (T1-L2).",
+    "keyConcept": "Sympathetic outflow",
+    "wrongOpt": "thoracic, sacral",
+    "context": "lumn of the lateral horn from thoracic to upper 2 lumbar segments (t"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q757",
+    "text": "Grey matter is .......... While white matter is ...........",
+    "options": [
+      "peripheral, central",
+      "central, peripheral",
+      "All central",
+      "All peripheral"
+    ],
+    "correctIndex": 0,
+    "explanation": "Grey matter (cell bodies) is centrally located in the spinal cord while white matter (myelinated fibers) is peripherally located, the reverse of the brain.",
+    "keyConcept": "Grey vs white matter distribution",
+    "wrongOpt": "central, peripheral",
+    "context": "grey matter (cell bodies) is centrally located in the spinal cord "
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q760",
+    "text": "Second order Neuron start in ........., going via ...........",
+    "options": [
+      "upper half of spinal , medulla",
+      "medulla, medial lemniscus",
+      "medulla , thalamus",
+      "lower half of spinal , pons"
+    ],
+    "correctIndex": 0,
+    "explanation": "Second order neurons start in the medulla (gracile and cuneate nuclei) and cross to form the medial lemniscus, ascending to the thalamus.",
+    "keyConcept": "Proprioception second neuron",
+    "wrongOpt": "medulla, medial lemniscus",
+    "context": "nd order neurons start in the medulla (gracile and cuneate nuclei) "
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q761",
+    "text": "Third order Neuron start in ......... going via ...........",
+    "options": [
+      "medulla, cerebral cortex area 3,1,2",
+      "pons , cerebral cortex area 3,1,2",
+      "pons, cerebral cortex area 3,1,2",
+      "thalamus , cerebral cortex area 3,1,2"
+    ],
+    "correctIndex": 0,
+    "explanation": "Third order neurons in sensory pathways start in the VPL nucleus of the thalamus and project via internal capsule to the primary somatosensory cortex (areas 3, 1, 2).",
+    "keyConcept": "Third order somatosensory neuron",
+    "wrongOpt": "thalamus , cerebral cortex area 3,1,2",
+    "context": "art in the vpl nucleus of the thalamus and project via internal caps"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q762",
+    "text": "Gracile tract arise from:",
+    "options": [
+      "sacral , lumbar, lower thoracic",
+      "sacral , lumbar, only",
+      "coccygeal , sacral, lumbar",
+      "cervical , upper thoracic"
+    ],
+    "correctIndex": 0,
+    "explanation": "The gracile fasciculus carries proprioception and fine touch from the lower body (sacral, lumbar, and lower thoracic dermatomes) and synapses in the gracile nucleus.",
+    "keyConcept": "Gracile tract origin",
+    "wrongOpt": "sacral , lumbar, only",
+    "context": "ne touch from the lower body (sacral, lumbar, and lower thoracic d"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q767",
+    "text": "All receptors of proprioception except:",
+    "options": [
+      "tendon spindle",
+      "muscle spindle",
+      "Merkel",
+      "Pacinian corpuscle"
+    ],
+    "correctIndex": 0,
+    "explanation": "Proprioception receptors include muscle spindles, tendon spindles (Golgi tendon organs), and joint receptors; Merkel discs are tactile receptors, not proprioceptive.",
+    "keyConcept": "Proprioception receptors",
+    "wrongOpt": "muscle spindle",
+    "context": "prioception receptors include muscle spindles, tendon spindles (golgi tend"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q768",
+    "text": "All receptors of fine touch except:",
+    "options": [
+      "Meissner corpuscle",
+      "Merkel disc",
+      "Ruffini disc",
+      "tendon spindle"
+    ],
+    "correctIndex": 0,
+    "explanation": "Fine touch receptors include Meissner corpuscles, Merkel discs, and Ruffini endings; tendon spindles are proprioceptive receptors, not tactile.",
+    "keyConcept": "Fine touch receptors",
+    "wrongOpt": "Merkel disc",
+    "context": " include meissner corpuscles, merkel discs, and ruffini endings; tendon"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q771",
+    "text": "Receptors of crude touch are:",
+    "options": [
+      "Meissner corpuscle",
+      "Merkel disc , free nerve ending",
+      "peritrichial nerve ending",
+      "All the above"
+    ],
+    "correctIndex": 1,
+    "explanation": "Crude (light) touch receptors include Meissner corpuscles, Merkel discs combined with free nerve endings, and peritrichial (hair follicle) nerve endings.",
+    "keyConcept": "Crude touch receptors",
+    "wrongOpt": "Meissner corpuscle",
+    "context": "ight) touch receptors include meissner corpuscles, merkel discs combined with "
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q775",
+    "text": "Spinal lemniscus made by joining:",
+    "options": [
+      "ventral, dorsal spinothalamic",
+      "ventral , lateral spinothalamic",
+      "dorsal, lateral spinothalamic",
+      "None of above"
+    ],
+    "correctIndex": 1,
+    "explanation": "The spinal lemniscus is formed by the union of ventral and lateral spinothalamic tracts, carrying pain and temperature sensation through the brainstem.",
+    "keyConcept": "Spinal lemniscus composition",
+    "wrongOpt": "ventral, dorsal spinothalamic",
+    "context": "cus is formed by the union of ventral and lateral spinothalamic tra"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q781",
+    "text": "First order neuron in touch from head face is .............. while second order neuron is ..........",
+    "options": [
+      "mesencephalic nucleus, MSN",
+      "MSN, trigeminal nucleus",
+      "trigeminal nucleus, MSN",
+      "Principal sensory nucleus, MSN"
+    ],
+    "correctIndex": 0,
+    "explanation": "For facial touch, the first order neuron is in the trigeminal nucleus (mesencephalic for proprioception, principal sensory for touch) and the second order is the main sensory nucleus.",
+    "keyConcept": "Facial touch neurons",
+    "wrongOpt": "trigeminal nucleus, MSN",
+    "context": " first order neuron is in the trigeminal nucleus (mesencephalic for propriocep"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q783",
+    "text": "Lemniscus of pathway from face and head called:",
+    "options": [
+      "spinal",
+      "medial",
+      "lateral",
+      "trigeminal"
+    ],
+    "correctIndex": 3,
+    "explanation": "The trigeminal lemniscus (trigeminothalamic tract) carries facial sensory information (touch, pain, temperature) from the principal sensory and spinal trigeminal nuclei to the VPM thalamus.",
+    "keyConcept": "Trigeminal lemniscus",
+    "wrongOpt": "spinal",
+    "context": "rom the principal sensory and spinal trigeminal nuclei to the vpm "
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q791",
+    "text": "Molecular layer Contains all the following except:",
+    "options": [
+      "outer stellate, inner basket",
+      "dendrite of purkinje cell",
+      "Mossy fiber, dendrite of granular cell",
+      "Axon of granular cell",
+      "dendrite of golgi cell"
+    ],
+    "correctIndex": 0,
+    "explanation": "The molecular layer contains outer stellate cells, inner basket cells, Purkinje cell dendrites, Golgi cell dendrites, and parallel fibers (Granular cell axons); mossy fibers are in the granular layer.",
+    "keyConcept": "Cerebellar molecular layer contents",
+    "wrongOpt": "Mossy fiber, dendrite of granular cell",
+    "context": "fibers (granular cell axons); mossy fibers are in the granular layer."
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q794",
+    "text": "-- Contains T-shaped axon in Molecular layer:",
+    "options": [
+      "granular cell",
+      "purkinje cell",
+      "golgi cell",
+      "Molecular cells"
+    ],
+    "correctIndex": 0,
+    "explanation": "Granular cells have T-shaped axons (parallel fibers) that run tangentially in the molecular layer, forming excitatory synapses with Purkinje cell dendrites.",
+    "keyConcept": "Granular cell axon",
+    "wrongOpt": "purkinje cell",
+    "context": "ming excitatory synapses with purkinje cell dendrites."
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q795",
+    "text": "Cerebral medulla contain all the following except:",
+    "options": [
+      "Afferent fiber",
+      "Purkinje cell",
+      "dentate nuclei",
+      "purkinje fiber axon"
+    ],
+    "correctIndex": 0,
+    "explanation": "The cerebral medulla contains afferent/efferent fibers, dentate nuclei, and Purkinje fiber axons; Purkinje cells themselves are in the cerebellar cortex, not the medulla.",
+    "keyConcept": "Cerebral medulla contents",
+    "wrongOpt": "Purkinje cell",
+    "context": "ei, and purkinje fiber axons; purkinje cells themselves are in the cerebe"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q796",
+    "text": "Medial longitudinal bundle continue in spinal cord through:",
+    "options": [
+      "vestibulospinal, rubrospinal",
+      "sulcomarginal, reticulospinal",
+      "reticulospinal, olivospinal",
+      "vestibulospinal, sulcomarginal"
+    ],
+    "correctIndex": 0,
+    "explanation": "The medial longitudinal fasciculus continues in the spinal cord via the vestibulospinal and sulcomarginal tracts, coordinating head-eye movements.",
+    "keyConcept": "MLF continuation",
+    "wrongOpt": "sulcomarginal, reticulospinal",
+    "context": "d via the vestibulospinal and sulcomarginal tracts, coordinating head-eye"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q797",
+    "text": "Border cell attached by:",
+    "options": [
+      "tight junction",
+      "desmosome",
+      "fascia adherens",
+      "b,c",
+      "a,b"
+    ],
+    "correctIndex": 0,
+    "explanation": "Border cells (meningothelial cells) between arachnoid and dura are attached by both tight junctions and desmosomes for structural integrity.",
+    "keyConcept": "Border cell junctions",
+    "wrongOpt": "desmosome",
+    "context": "d by both tight junctions and desmosomes for structural integrity."
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q840",
+    "text": "If a patient cannot recognize an unseen familiar object placed in his hand, the sensory tract that might be affected is:",
+    "options": [
+      "Dorsal spinocerebellar tract",
+      "Cuneate tract",
+      "Spino-olivary tract",
+      "Ventral spinothalamic tract"
+    ],
+    "correctIndex": 0,
+    "explanation": "Stereognosis (recognition of objects by touch) requires intact dorsal column-medial lemniscal pathway; cuneate tract carries this from the upper limb.",
+    "keyConcept": "Stereognosis pathway",
+    "wrongOpt": "Cuneate tract",
+    "context": "umn-medial lemniscal pathway; cuneate tract carries this from the upper l"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q846",
+    "text": "Examination of the lower limbs in a patient diagnosed with tabes dorsalis can reveal one of the following:",
+    "options": [
+      "bilateral loss of pain and temperature",
+      "bilateral loss of crude touch",
+      "sensory ataxia",
+      "Hypertonia"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tabes dorsalis (dorsal column degeneration in neurosyphilis) causes sensory ataxia due to loss of proprioception, leading to gait problems.",
+    "keyConcept": "Tabes dorsalis presentation",
+    "wrongOpt": "sensory ataxia",
+    "context": "tion in neurosyphilis) causes sensory ataxia due to loss of proprioception"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q853",
+    "text": "A 23‑year‑old man is found unconscious after a fall. CT shows a biconvex, lens‑shaped hyperdensity between the skull and the dura. What is the most probable cause?",
+    "options": [
+      "Hypertension",
+      "Arteriovenous malformation",
+      "Trauma",
+      "Atherosclerosis",
+      "Ruptured saccular aneurysm"
+    ],
+    "correctIndex": 0,
+    "explanation": "A biconvex, lens-shaped hyperdensity between skull and dura is an epidural hematoma, typically from traumatic middle meningeal artery rupture.",
+    "keyConcept": "Epidural hematoma",
+    "wrongOpt": "Trauma",
+    "context": "ural hematoma, typically from traumatic middle meningeal artery ru"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q856",
+    "text": "All of the following are constituents of the lateral wall of the cavernous sinus except:",
+    "options": [
+      "Oculomotor nerve",
+      "Trochlear nerve",
+      "Ophthalmic nerve",
+      "Maxillary nerve",
+      "Mandibular nerve"
+    ],
+    "correctIndex": 0,
+    "explanation": "The mandibular nerve (V3) runs in the lateral wall of the cavernous sinus floor, not the lateral wall; oculomotor, trochlear, V1, and V2 are in the lateral wall.",
+    "keyConcept": "Cavernous sinus contents",
+    "wrongOpt": "Mandibular nerve",
+    "context": "the mandibular nerve (v3) runs in the lateral wall"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q857",
+    "text": "The internal arcuate fibres are axons of which nucleus?",
+    "options": [
+      "Olivary",
+      "Arcuate",
+      "Accessory cuneate",
+      "Red",
+      "Cuneate"
+    ],
+    "correctIndex": 1,
+    "explanation": "Internal arcuate fibers are axons of the cuneate and gracile nuclei that cross at the sensory decussation to form the medial lemniscus.",
+    "keyConcept": "Internal arcuate fiber origin",
+    "wrongOpt": "Cuneate",
+    "context": "cuate fibers are axons of the cuneate and gracile nuclei that cross"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q858",
+    "text": "Unconscious proprioception from the biceps brachii is carried primarily by which tract?",
+    "options": [
+      "Gracile",
+      "Cuneate",
+      "Posterior spinocerebellar",
+      "Anterior spinocerebellar",
+      "Spino‑olivary"
+    ],
+    "correctIndex": 0,
+    "explanation": "The cuneate tract carries proprioception from the upper limb (including biceps brachii) and synapses in the cuneate nucleus of the medulla.",
+    "keyConcept": "Upper limb proprioception tract",
+    "wrongOpt": "Cuneate",
+    "context": "the cuneate tract carries proprioception "
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q859",
+    "text": "All of the following structures wind around the cerebral peduncle except:",
+    "options": [
+      "Optic tract",
+      "Trochlear nerve",
+      "Posterior cerebral artery",
+      "Basal vein",
+      "Trigeminal nerve"
+    ],
+    "correctIndex": 0,
+    "explanation": "The trigeminal nerve does not wind around the cerebral peduncle; optic tract, trochlear nerve, posterior cerebral artery, and basal vein do.",
+    "keyConcept": "Cerebral peduncle relations",
+    "wrongOpt": "Trochlear nerve",
+    "context": "rebral peduncle; optic tract, trochlear nerve, posterior cerebral artery, a"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q860",
+    "text": "The median part of the upper lip (philtrum) is derived embryologically from the:",
+    "options": [
+      "Frontal prominence",
+      "Intermaxillary segment",
+      "Lateral nasal prominence",
+      "Mandibular prominence",
+      "Maxillary prominence"
+    ],
+    "correctIndex": 0,
+    "explanation": "The intermaxillary segment (from medial nasal prominences) forms the philtrum of the upper lip, the primary palate, and the four incisor teeth.",
+    "keyConcept": "Philtrum embryology",
+    "wrongOpt": "Intermaxillary segment",
+    "context": "the intermaxillary segment (from medial nasal prominence"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q864",
+    "text": "Which receptor helps a blind person read Braille by detecting fine texture and edges?",
+    "options": [
+      "Plexus of Bonnet",
+      "Ruffini ending",
+      "Free nerve ending",
+      "Krause end bulb",
+      "Meissner corpuscle"
+    ],
+    "correctIndex": 0,
+    "explanation": "Meissner corpuscles detect fine tactile details and edges, enabling blind individuals to read Braille through subtle texture differences.",
+    "keyConcept": "Braille reading receptors",
+    "wrongOpt": "Meissner corpuscle",
+    "context": "meissner corpuscles detect fine tactile details "
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q869",
+    "text": "Which lamina of the spinal cord corresponds to the substantia gelatinosa?",
+    "options": [
+      "Lamina I",
+      "Lamina II",
+      "Lamina III",
+      "Lamina IV",
+      "Lamina V"
+    ],
+    "correctIndex": 0,
+    "explanation": "Substantia gelatinosa (Roland's substance) corresponds to Rexed lamina II of the posterior horn, specializing in pain and temperature modulation.",
+    "keyConcept": "Substantia gelatinosa lamina",
+    "wrongOpt": "Lamina II",
+    "context": "bstance) corresponds to rexed lamina ii of the posterior horn, specia"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q870",
+    "text": "Clark’s nucleus (dorsal nucleus) is located in which lamina?",
+    "options": [
+      "Lamina V",
+      "Lamina VI",
+      "Lamina VII",
+      "Lamina VIII",
+      "Lamina IX"
+    ],
+    "correctIndex": 0,
+    "explanation": "Clarke's nucleus (dorsocentral nucleus) is located in Rexed lamina VII at T1-L2 levels, serving as the origin of the dorsal spinocerebellar tract.",
+    "keyConcept": "Clarke's nucleus lamina",
+    "wrongOpt": "Lamina VI",
+    "context": " nucleus) is located in rexed lamina vii at t1-l2 levels, serving as "
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q871",
+    "text": "Gamma motor neurons are found in which lamina of the spinal cord?",
+    "options": [
+      "Lamina I",
+      "Lamina II",
+      "Lamina V",
+      "Lamina IX",
+      "Lamina X"
+    ],
+    "correctIndex": 0,
+    "explanation": "Gamma motor neurons are located in Rexed lamina IX of the anterior horn, innervating intrafusal muscle fibers within muscle spindles.",
+    "keyConcept": "Gamma motor neuron location",
+    "wrongOpt": "Lamina IX",
+    "context": " neurons are located in rexed lamina ix of the anterior horn, innerva"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q874",
+    "text": "Which EEG wave pattern indicates deep (slow‑wave) sleep in an adult?",
+    "options": [
+      "Alpha",
+      "Beta",
+      "Theta",
+      "Delta",
+      "Gamma"
+    ],
+    "correctIndex": 3,
+    "explanation": "Delta waves (0.5-2 Hz, high amplitude) are the hallmark of deep slow-wave sleep in adults, replacing alpha rhythms.",
+    "keyConcept": "Delta sleep waves",
+    "wrongOpt": "Alpha",
+    "context": "ve sleep in adults, replacing alpha rhythms."
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q875",
+    "text": "Operant conditioning is a type of:",
+    "options": [
+      "Non‑associative learning",
+      "Associative learning",
+      "Sensitisation",
+      "Habituation",
+      "Implicit memory"
+    ],
+    "correctIndex": 0,
+    "explanation": "Operant (instrumental) conditioning is associative learning where behavior is modified by its consequences (reward or punishment).",
+    "keyConcept": "Operant conditioning",
+    "wrongOpt": "Associative learning",
+    "context": "instrumental) conditioning is associative learning where behavior is modified by"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q878",
+    "text": "GABA is an inhibitory neurotransmitter that increases the permeability of the postsynaptic membrane to which ion?",
+    "options": [
+      "Sodium",
+      "Calcium",
+      "Bicarbonate",
+      "Chloride",
+      "Potassium"
+    ],
+    "correctIndex": 0,
+    "explanation": "GABA-A receptors are ligand-gated chloride channels; chloride influx hyperpolarizes the neuron, causing inhibition.",
+    "keyConcept": "GABA mechanism",
+    "wrongOpt": "Chloride",
+    "context": "-a receptors are ligand-gated chloride channels; chloride influx hyp"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q879",
+    "text": "The endogenous analgesia system includes which brain region?",
+    "options": [
+      "Primary somatosensory cortex",
+      "Raphe magnus nucleus",
+      "Dorsal root ganglion",
+      "Periaqueductal grey",
+      "Supraoptic nucleus"
+    ],
+    "correctIndex": 0,
+    "explanation": "The periaqueductal grey (PAG) in the midbrain contains endogenous opioid neurons that activate descending pain inhibition pathways.",
+    "keyConcept": "Endogenous analgesia",
+    "wrongOpt": "Periaqueductal grey",
+    "context": "the periaqueductal grey (pag) in the midbrain contain"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q885",
+    "text": "The only medically justified long‑term use of phenobarbital is for:",
+    "options": [
+      "Schizophrenia",
+      "Insomnia",
+      "Anxiety",
+      "Alcohol withdrawal",
+      "Certain epilepsies"
+    ],
+    "correctIndex": 0,
+    "explanation": "Phenobarbital is justified long-term only for certain epilepsies (generalized tonic-clonic, partial seizures) due to its side effect profile.",
+    "keyConcept": "Phenobarbital use",
+    "wrongOpt": "Certain epilepsies",
+    "context": " justified long-term only for certain epilepsies (generalized tonic-clonic, pa"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q888",
+    "text": "An important virulence factor of *Cryptococcus neoformans* is the production of:",
+    "options": [
+      "IgA protease",
+      "Catalase",
+      "A neurotoxin",
+      "Internalin",
+      "Melanin"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cryptococcus neoformans produces melanin via phenol oxidase, which protects against oxidative stress and is a major virulence factor.",
+    "keyConcept": "Cryptococcus virulence",
+    "wrongOpt": "Melanin",
+    "context": "ptococcus neoformans produces melanin via phenol oxidase, which pro"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q889",
+    "text": "The vaccine used for protection against tetanus consists of:",
+    "options": [
+      "Conjugate polysaccharide",
+      "Heat‑killed bacteria",
+      "Live attenuated bacteria",
+      "Polysaccharide capsule",
+      "Toxoid"
+    ],
+    "correctIndex": 0,
+    "explanation": "Tetanus vaccine contains inactivated tetanus toxin (toxoid) that stimulates antibody production without causing disease.",
+    "keyConcept": "Tetanus vaccine",
+    "wrongOpt": "Toxoid",
+    "context": "ns inactivated tetanus toxin (toxoid) that stimulates antibody pro"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q898",
+    "text": "Methyl‑THF donates its methyl group to homocysteine to form:",
+    "options": [
+      "Cysteine",
+      "Methionine",
+      "Serine",
+      "Glycine",
+      "S‑adenosylmethionine"
+    ],
+    "correctIndex": 0,
+    "explanation": "Methyl-THF transfers its methyl group to homocysteine via methionine synthase (requiring B12) to regenerate methionine.",
+    "keyConcept": "Methyl-THF function",
+    "wrongOpt": "Methionine",
+    "context": "hyl group to homocysteine via methionine synthase (requiring b12) to r"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q900",
+    "text": "Glutamate dehydrogenase is allosterically activated by:",
+    "options": [
+      "GTP",
+      "ATP",
+      "ADP and GDP",
+      "NADH",
+      "Citrate"
+    ],
+    "correctIndex": 0,
+    "explanation": "ADP and GDP are allosteric activators of glutamate dehydrogenase, which catalyzes oxidative deamination of glutamate.",
+    "keyConcept": "Glutamate dehydrogenase regulation",
+    "wrongOpt": "ADP and GDP",
+    "context": "adp and gdp are allosteric activators of "
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q901",
+    "text": "The enzyme carbamoyl phosphate synthetase I (CPS I) is activated by:",
+    "options": [
+      "Ornithine",
+      "Citrulline",
+      "N‑Acetylglutamate",
+      "Arginine",
+      "Urea"
+    ],
+    "correctIndex": 0,
+    "explanation": "N-acetylglutamate (synthesized from acetyl-CoA and glutamate) is the essential allosteric activator of CPS I, the first urea cycle enzyme.",
+    "keyConcept": "CPS I activation",
+    "wrongOpt": "Urea",
+    "context": "activator of cps i, the first urea cycle enzyme."
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q902",
+    "text": "Which compound links the urea cycle with the citric acid cycle?",
+    "options": [
+      "Oxaloacetate",
+      "Citrate",
+      "Fumarate",
+      "Malate",
+      "Succinate"
+    ],
+    "correctIndex": 0,
+    "explanation": "Fumarate links the urea and citric acid cycles; it is produced from argininosuccinate in the urea cycle and enters the CAC.",
+    "keyConcept": "Urea cycle CAC link",
+    "wrongOpt": "Fumarate",
+    "context": "fumarate links the urea and citric aci"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q903",
+    "text": "Serotonin is synthesised from which amino acid?",
+    "options": [
+      "Tyrosine",
+      "Phenylalanine",
+      "Histidine",
+      "Tryptophan",
+      "Glutamate"
+    ],
+    "correctIndex": 0,
+    "explanation": "Serotonin (5-HT) is synthesized from tryptophan via tryptophan hydroxylase (rate-limiting) and aromatic amino acid decarboxylase.",
+    "keyConcept": "Serotonin synthesis precursor",
+    "wrongOpt": "Tryptophan",
+    "context": "in (5-ht) is synthesized from tryptophan via tryptophan hydroxylase (r"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q1041",
+    "text": "Which structure is part of the diencephalon?",
+    "options": [
+      "Pineal gland",
+      "Superior colliculus",
+      "Mammillary body",
+      "Thalamus"
+    ],
+    "correctIndex": 0,
+    "explanation": "The diencephalon consists of four major structures: thalamus, hypothalamus, epithalamus (including pineal gland), and subthalamus, surrounding the third ventricle.",
+    "keyConcept": "Diencephalon: thalamus, hypothalamus, epithalamus, subthalamus.",
+    "wrongOpt": "Thalamus",
+    "context": "sts of four major structures: thalamus, hypothalamus, epithalamus (i"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q1042",
+    "text": "A lesion of the left optic tract causes:",
+    "options": [
+      "Left homonymous hemianopia",
+      "Right homonymous hemianopia",
+      "Bitemporal hemianopia",
+      "Binasal hemianopia"
+    ],
+    "correctIndex": 0,
+    "explanation": "A left optic tract lesion causes right homonymous hemianopia because optic tract fibers carry information from the contralateral visual field, so damage affects the opposite side.",
+    "keyConcept": "Left optic tract lesion: right homonymous hemianopia.",
+    "wrongOpt": "Right homonymous hemianopia",
+    "context": "eft optic tract lesion causes right homonymous hemianopia because optic tract fibers ca"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q1063",
+    "text": "A patient shows ipsilateral tongue atrophy, contralateral loss of vibration, and contralateral loss of pain/temperature of the body. The lesion is in the:",
+    "options": [
+      "Lateral medulla",
+      "Medial pons",
+      "Midbrain tegmentum",
+      "Medial medulla",
+      "Internal capsule"
+    ],
+    "correctIndex": 0,
+    "explanation": "Medial medullary syndrome (CN XII, medial lemniscus, pyramid).",
+    "keyConcept": "Tongue deviation toward lesion with ipsilateral atrophy: hypoglossal nerve lesion.",
+    "wrongOpt": "Medial medulla",
+    "context": "medial medullary syndrome (cn xii, medial le"
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q1064",
+    "text": "Cavernous sinus thrombosis from a \"danger area\" facial infection spreads via the:",
+    "options": [
+      "Retromandibular vein",
+      "Facial artery",
+      "Inferior petrosal sinus to the IJV",
+      "Great cerebral vein",
+      "Superior ophthalmic vein"
+    ],
+    "correctIndex": 1,
+    "explanation": "Facial vein to superior ophthalmic vein to cavernous sinus.",
+    "keyConcept": "Cavernous sinus thrombosis from facial infection: danger area around nose/upper lip.",
+    "wrongOpt": "Superior ophthalmic vein",
+    "context": "facial vein to superior ophthalmic vein to cavernous sinus."
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q1066",
+    "text": "The superior speech center is situated within the ……… area.",
+    "options": [
+      "Premotor",
+      "Primary motor",
+      "Broca's",
+      "Supplementary motor"
+    ],
+    "correctIndex": 3,
+    "explanation": "The supplementary motor area (SMA, medial area 6) is the superior speech center involved in planning and initiating speech movements, lying medial to premotor cortex.",
+    "keyConcept": "Superior speech center: supplementary motor area.",
+    "wrongOpt": "Premotor",
+    "context": "ch movements, lying medial to premotor cortex."
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q1070",
+    "text": "Inability to perform tasks although the person has the will to perform it indicates a lesion in ……… area.",
+    "options": [
+      "Primary motor",
+      "Premotor",
+      "Broca's",
+      "Wernicke's"
+    ],
+    "correctIndex": 0,
+    "explanation": "A premotor area lesion causes apraxia - inability to perform tasks despite intact motor pathways and will, due to loss of motor planning programs.",
+    "keyConcept": "Premotor lesion: apraxia (can't perform tasks despite will).",
+    "wrongOpt": "Premotor",
+    "context": "a premotor area lesion causes apraxia - "
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q1104",
+    "text": "The viscera of the neck are surrounded by ……… fascia.",
+    "options": [
+      "Investing",
+      "Pretracheal",
+      "Carotid",
+      "Prevertebral"
+    ],
+    "correctIndex": 1,
+    "explanation": "The pretracheal fascia forms a sheath around the trachea, esophagus, and thyroid gland, fusing laterally with the carotid sheath.",
+    "keyConcept": "Pretracheal fascia surrounds cervical viscera.",
+    "wrongOpt": "Carotid",
+    "context": "nd, fusing laterally with the carotid sheath."
+  },
+  {
+    "id": "mcns2-ch1-anatomy-q1121",
+    "text": "The trunk of the mandibular nerve supplies ……… muscle(s).",
+    "options": [
+      "Medial pterygoid",
+      "Tensor tympani",
+      "Tensor palati",
+      "All of the above"
+    ],
+    "correctIndex": 0,
+    "explanation": "The trunk of the mandibular nerve gives off medial pterygoid nerve (supplying medial pterygoid, tensor tympani, and tensor palati) before dividing into anterior and posterior divisions.",
+    "keyConcept": "V3 trunk supplies: medial pterygoid, tensor tympani, tensor palati.",
+    "wrongOpt": "Tensor tympani",
+    "context": " (supplying medial pterygoid, tensor tympani, and tensor palati) before di"
+  },
+  {
+    "id": "mcns2-ch1-histology-q9",
+    "text": "The sensory nerve enters the Meissner’s corpuscle from:",
+    "options": [
+      "lower part",
+      "Side",
+      "Central core",
+      "Aany site of the corpuscle"
+    ],
+    "correctIndex": 0,
+    "explanation": "In Meissner's corpuscle, the sensory nerve enters from the SIDE (laterally), not from the lower part or central core. The nerve fiber then runs spirally between the Schwann cell stacks within the corpuscle.",
+    "keyConcept": "Meissner's corpuscle: sensory nerve enters from side; nerve fibers spiral between Schwann cell stacks.",
+    "wrongOpt": "Side",
+    "context": "sensory nerve enters from the side (laterally), not from the low"
+  },
+  {
+    "id": "mcns2-ch1-histology-q10",
+    "text": "Free nerve endings are widely distributed in",
+    "options": [
+      "Epidermis of the skin",
+      "Cornea",
+      "Mucous membrane of visceral organs",
+      "Serous membranes",
+      "All of the above"
+    ],
+    "correctIndex": 0,
+    "explanation": "Free nerve endings are the simplest sensory receptors and are widely distributed throughout the body including epidermis, cornea, mucous membranes of visceral organs, and serous membranes. They detect pain, temperature, and crude touch.",
+    "keyConcept": "Free nerve endings: most widely distributed receptor; detect pain, temperature, crude touch; in epidermis, cornea, viscera.",
+    "wrongOpt": "Cornea",
+    "context": "the body including epidermis, cornea, mucous membranes of visceral"
+  },
+  {
+    "id": "mcns2-ch1-histology-q11",
+    "text": "What do free nerve endings respond to?",
+    "options": [
+      "Noxious(painful) stimuli",
+      "Crude touch",
+      "Thermal stimuli",
+      "All of the above"
+    ],
+    "correctIndex": 2,
+    "explanation": "Free nerve endings respond to noxious (painful), thermal, and crude touch stimuli. They are polymodal receptors capable of detecting multiple stimulus types. Different fiber types (A-delta for pain/temperature, C for pain) mediate these responses.",
+    "keyConcept": "Free nerve endings: polymodal - respond to painful, thermal, and tactile stimuli via Aδ and C fibers.",
+    "wrongOpt": "Crude touch",
+    "context": "xious (painful), thermal, and crude touch stimuli. they are polymodal r"
+  },
+  {
+    "id": "mcns2-ch1-histology-q13",
+    "text": "Pacinian corpuscles are found in",
+    "options": [
+      "Dermis & hypodermis",
+      "Pancreas",
+      "Urinary bladder",
+      "All of the above"
+    ],
+    "correctIndex": 0,
+    "explanation": "Pacinian corpuscles are found in deep tissues including dermis and hypodermis, as well as mesenteries, pancreas, urinary bladder, and other viscera. They detect deep pressure and vibration. Their wide distribution reflects their role in detecting deep mechanical stimuli.",
+    "keyConcept": "Pacinian corpuscles: deep dermis, hypodermis, mesenteries, pancreas, urinary bladder - deep pressure/vibration.",
+    "wrongOpt": "Pancreas",
+    "context": "rmis, as well as mesenteries, pancreas, urinary bladder, and other v"
+  },
+  {
+    "id": "mcns2-ch1-histology-q23",
+    "text": "The apical surface of ependymal Cells has:",
+    "options": [
+      "Microvilli",
+      "Cilia",
+      "Sterocilia",
+      "Microfolds"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ependymal cells have cilia on their apical surface that help circulate CSF. They also have microvilli but cilia are the distinguishing feature. The ciliary movement helps propel CSF through the ventricles.",
+    "keyConcept": "Ependymal cells: ciliated simple columnar epithelium lining ventricles; cilia circulate CSF.",
+    "wrongOpt": "Microvilli",
+    "context": "circulate csf. they also have microvilli but cilia are the distinguish"
+  },
+  {
+    "id": "mcns2-ch1-histology-q25",
+    "text": "Which of the following cells Produce myelin sheath?",
+    "options": [
+      "Oligodendrocytes.",
+      "Astrocytes",
+      "Satellite cells.",
+      "Ependymal"
+    ],
+    "correctIndex": 2,
+    "explanation": "Oligodendrocytes form myelin sheaths in the CNS (one oligodendrocyte can myelinate multiple axons). Schwann cells do this in the PNS. Astrocytes provide support; satellite cells support neurons in ganglia; ependymal cells line ventricles.",
+    "keyConcept": "Oligodendrocytes: CNS myelin (multiple axons). Schwann cells: PNS myelin (one axon each).",
+    "wrongOpt": "Astrocytes",
+    "context": "ann cells do this in the pns. astrocytes provide support; satellite ce"
+  },
+  {
+    "id": "mcns2-ch1-histology-q27",
+    "text": "In the CNS Injury, which of the following cells are abundant:",
+    "options": [
+      "Astrocytes & microglia.",
+      "Microglia & oligodendrocytes",
+      "Oligodendrocytes & astrocytes",
+      "Ependymal cells"
+    ],
+    "correctIndex": 0,
+    "explanation": "In CNS injury, astrocytes proliferate (gliosis) to form glial scars, and microglia activate to phagocytose debris. This reactive gliosis is a hallmark of CNS injury response. Oligodendrocytes and ependymal cells do not become abundant.",
+    "keyConcept": "CNS injury response: astrocyte proliferation (gliosis) + microglia activation (phagocytosis).",
+    "wrongOpt": "Ependymal cells",
+    "context": "esponse. oligodendrocytes and ependymal cells do not become abundant."
+  },
+  {
+    "id": "mcns2-ch1-histology-q30",
+    "text": "Glial fibrillar acidic protein (GFAP) is marker of:",
+    "options": [
+      "Astrocyte",
+      "Oligodendroglia",
+      "Ependymal cells",
+      "Microglia"
+    ],
+    "correctIndex": 0,
+    "explanation": "GFAP (glial fibrillary acidic protein) is an intermediate filament protein specific to astrocytes. It is used as a marker to identify astrocytes in histology and neuropathology. Oligodendrocytes, microglia, and ependymal cells do not contain GFAP.",
+    "keyConcept": "GFAP: astrocyte marker (intermediate filament). Used to identify astrocytes in CNS.",
+    "wrongOpt": "Ependymal cells",
+    "context": "godendrocytes, microglia, and ependymal cells do not contain gfap."
+  },
+  {
+    "id": "mcns2-ch1-histology-q31",
+    "text": "Climbing fibers:",
+    "options": [
+      "Axons of Golgi cells",
+      "Olivocerebellar fibers",
+      "End in granular layer",
+      "Part of cerebellar island"
+    ],
+    "correctIndex": 1,
+    "explanation": "Climbing fibers are the axons of contralateral inferior olivary nucleus neurons. They ascend through the inferior cerebellar peduncle and climb on Purkinje cell dendrites. They carry error signals for motor learning. Mossy fibers (not climbing) end in granular layer.",
+    "keyConcept": "Climbing fibers: olivocerebellar (contralateral ION), climb on Purkinje dendrites, carry error signals.",
+    "wrongOpt": "End in granular layer",
+    "context": ". mossy fibers (not climbing) end in granular layer."
+  },
+  {
+    "id": "mcns2-ch1-histology-q34",
+    "text": "The cytoplasm of astrocytes contains",
+    "options": [
+      "Microtubules",
+      "Glial Fibrillary acid protein(GFAP)",
+      "Thread-like mitochondria",
+      "All of the above"
+    ],
+    "correctIndex": 2,
+    "explanation": "Astrocytes contain microtubules (for transport), GFAP (glial fibrillary acidic protein - their intermediate filament marker), and thread-like mitochondria. These contents help identify astrocytes histologically. GFAP is the most specific marker.",
+    "keyConcept": "Astrocyte cytoplasm: GFAP (marker), microtubules, mitochondria. GFAP used for astrocyte identification.",
+    "wrongOpt": "Microtubules",
+    "context": "astrocytes contain microtubules (for transport), gfap (glial "
+  },
+  {
+    "id": "mcns2-ch1-histology-q36",
+    "text": "Ventral external arcuate fibers arise from:",
+    "options": [
+      "Accessory cuneate nucleus",
+      "Cuneate nucleus",
+      "Arcuate nucleus",
+      "Pontine nucleus"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ventral external arcuate fibers arise from the ARCUATE NUCLEUS (not the cuneate nucleus which projects to cerebellum via dorsal external arcuate fibers). The arcuate nucleus receives corticofugal fibers and projects to the cerebellum.",
+    "keyConcept": "Ventral external arcuate: from arcuate nucleus → cerebellum (via ICP). Dorsal external arcuate: from accessory cuneate → cerebellum.",
+    "wrongOpt": "Cuneate nucleus",
+    "context": " the arcuate nucleus (not the cuneate nucleus which projects to cerebellum "
+  },
+  {
+    "id": "mcns2-ch1-histology-q39",
+    "text": "Internal arcuate fibers are seen in:",
+    "options": [
+      "Lower level of closed medulla",
+      "Upper level of closed medulla",
+      "Open medulla",
+      "Lower pans"
+    ],
+    "correctIndex": 0,
+    "explanation": "Internal arcuate fibers are seen in the UPPER level of closed medulla where the sensory decussation occurs. At the lower level, the motor decussation is occurring. In the open medulla, the medial lemniscus has already formed and ascended.",
+    "keyConcept": "Upper closed medulla: sensory decussation (internal arcuate fibers). Lower closed medulla: motor decussation.",
+    "wrongOpt": "Upper level of closed medulla",
+    "context": "rcuate fibers are seen in the upper level of closed medulla where the sensory decussation"
+  },
+  {
+    "id": "mcns2-ch1-histology-q44",
+    "text": "Mention the cutaneous encapsulated receptors?",
+    "options": [
+      "Meissner’s corpuscles",
+      "Pacinian corpuscles",
+      "Ruffini corpuscles",
+      "All of the above"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cutaneous encapsulated receptors include Meissner's corpuscles (light touch), Pacinian corpuscles (vibration), Ruffini endings (stretch), and Merkel's discs are sometimes considered encapsulated; all have a surrounding connective tissue capsule.",
+    "keyConcept": "Encapsulated cutaneous receptors",
+    "wrongOpt": "Pacinian corpuscles",
+    "context": "r's corpuscles (light touch), pacinian corpuscles (vibration), ruffini endings "
+  },
+  {
+    "id": "mcns2-ch1-histology-q61",
+    "text": "The oligodendrocyte is derived from ... while microglia is derived from ...",
+    "options": [
+      "Ectoderm; mesoderm.",
+      "Ectoderm; ectoderm.",
+      "Mesoderm; ectoderm.",
+      "Mesoderm; mesoderm."
+    ],
+    "correctIndex": 0,
+    "explanation": "Oligodendrocytes are derived from neuroectoderm (like astrocytes), while microglia are derived from mesenchyme (monocyte-macrophage lineage). This distinction is important for understanding CNS pathology.",
+    "keyConcept": "Oligodendrocytes from ectoderm, microglia from mesoderm",
+    "wrongOpt": "Ectoderm; ectoderm.",
+    "context": "rocytes are derived from neuroectoderm (like astrocytes), while micr"
+  },
+  {
+    "id": "mcns2-ch1-histology-q73",
+    "text": "Medulloblastoma is a:",
+    "options": [
+      "Glial tumor.",
+      "Neuronal tumor.",
+      "Tumor of undifferentiated cells.",
+      "Nerve sheath tumor.",
+      "Malformative tumor."
+    ],
+    "correctIndex": 2,
+    "explanation": "Medulloblastoma is a tumor of undifferentiated/primitive neuroectodermal cells (PNET), not a glial tumor (astrocytoma/oligodendroglioma) or neuronal tumor. It arises from cerebellar granule cell precursors.",
+    "keyConcept": "Medulloblastoma: tumor of undifferentiated cells (PNET), not glial or neuronal",
+    "wrongOpt": "Neuronal tumor.",
+    "context": "ocytoma/oligodendroglioma) or neuronal tumor. it arises from cerebellar gra"
+  },
+  {
+    "id": "mcns2-ch1-histology-q76",
+    "text": "The following histological picture is not characteristic of Glioblastoma multiforme:",
+    "options": [
+      "Highly anaplastic tumor cells.",
+      "Papillary formation.",
+      "Necrosis.",
+      "Tumor giant cells.",
+      "Vascular proliferation."
+    ],
+    "correctIndex": 1,
+    "explanation": "Papillary formation is NOT characteristic of glioblastoma multiforme. GBM shows highly anaplastic cells, necrosis, tumor giant cells, and vascular proliferation. Papillary architecture is seen in papillary ependymomas or papillary meningiomas.",
+    "keyConcept": "Papillary formation is NOT characteristic of glioblastoma - EXCEPTION",
+    "wrongOpt": "Vascular proliferation.",
+    "context": "rosis, tumor giant cells, and vascular proliferation. papillary architecture is see"
+  },
+  {
+    "id": "mcns2-ch1-histology-q92",
+    "text": "Which structure is found in lamina I of the spinal cord gray matter?",
+    "options": [
+      "Clarke nucleus",
+      "Substantia gelatinosa",
+      "Posteromarginal nucleus",
+      "Intermediolateral cell column",
+      "Nucleus proprius"
+    ],
+    "correctIndex": 0,
+    "explanation": "The posteromarginal nucleus is located in lamina I of the spinal cord and receives pain and temperature afferents from the periphery.",
+    "keyConcept": "Spinal cord lamina I",
+    "wrongOpt": "Posteromarginal nucleus",
+    "context": "the posteromarginal nucleus is located in lamina i of the"
+  },
+  {
+    "id": "mcns2-ch1-histology-q94",
+    "text": "Which of the following nuclei has motor function?",
+    "options": [
+      "Clarke nucleus",
+      "Intermediolateral nucleus",
+      "Posteromarginal nucleus",
+      "Anteromedial nucleus",
+      "Nucleus proprius"
+    ],
+    "correctIndex": 0,
+    "explanation": "The anteromedial nucleus (in the anterior horn) has motor function, containing motor neuron pools for axial and proximal limb muscles.",
+    "keyConcept": "Anterior horn nuclei",
+    "wrongOpt": "Anteromedial nucleus",
+    "context": "the anteromedial nucleus (in the anterior horn) has mo"
+  },
+  {
+    "id": "mcns2-ch1-physiology-q2",
+    "text": "In the nigrostriated lesion there is:",
+    "options": [
+      "Kinetic tremors.",
+      "Lead pipe rigidity.",
+      "Positive Babiniski sign.",
+      "Rebound phenomenon.",
+      "Spasticity"
+    ],
+    "correctIndex": 1,
+    "explanation": "Nigrostriatal lesions (Parkinson's disease) cause lead-pipe rigidity, not spasticity or kinetic tremors. Option B is correct. Lead-pipe rigidity is a hallmark of Parkinsonian rigidity - constant resistance throughout range of motion. Option A is wrong (kinetic tremors are cerebellar). Option C is wrong (positive Babinski is UMN sign, not typical of basal ganglia lesions). Option D is wrong (rebound phenomenon is cerebellar). Option E is wrong (spasticity is corticospinal, not basal ganglia).",
+    "keyConcept": "Nigrostriatal lesions cause lead-pipe rigidity with constant resistance throughout passive range of motion.",
+    "wrongOpt": "Kinetic tremors.",
+    "context": "e rigidity, not spasticity or kinetic tremors. option b is correct. lead-pip"
+  },
+  {
+    "id": "mcns2-ch1-physiology-q6",
+    "text": "Which sentence is NOT true about kinetic tremors:",
+    "options": [
+      "Occurs during rest.",
+      "Is due to neocerebellar lesion.",
+      "Is accompanied with hypotonia.",
+      "Disappear during sleep.",
+      "Associated with motor ataxia"
+    ],
+    "correctIndex": 0,
+    "explanation": "Kinetic tremors occur during MOVEMENT, not at rest. Option A is INCORRECT and therefore the correct answer. Kinetic/intention tremors worsen with voluntary movement and are cerebellar. Option B, C, D, E all correctly describe kinetic tremors as neocerebellar, accompanied by hypotonia, disappearing during sleep, and associated with motor ataxia.",
+    "keyConcept": "Kinetic tremor is a movement-dependent tremor of cerebellar origin, unlike the resting tremor of Parkinsonism.",
+    "wrongOpt": "Associated with motor ataxia",
+    "context": "isappearing during sleep, and associated with motor ataxia."
+  },
+  {
+    "id": "mcns2-ch1-physiology-q7",
+    "text": "Spasticity is characterized by:",
+    "options": [
+      "Affecting all body muscles.",
+      "Due to increase alpha and gamma cells activities.",
+      "Occurs with basal ganglia lesion.",
+      "Associated with static tremors.",
+      "Is of clasp-knife nature."
+    ],
+    "correctIndex": 2,
+    "explanation": "Spasticity is of clasp-knife nature. Option E is correct. Clasp-knife spasticity is velocity-dependent increased tone with sudden release, characteristic of UMN lesions. Options A, B, C, D are incorrect: spasticity affects antigravity muscles primarily; is due to UMN (not basal ganglia) lesions; is associated with static/resting tremors (Parkinsonian); and clonus is not defining characteristic.",
+    "keyConcept": "Clasp-knife spasticity is the hallmark of corticospinal (upper motor neuron) lesions, with sudden release after initial resistance.",
+    "wrongOpt": "Is of clasp-knife nature.",
+    "context": "spasticity is of clasp-knife nature. option e is correct. clasp-kn"
+  },
+  {
+    "id": "mcns2-ch1-physiology-q16",
+    "text": "Dysdiadochokinesia is associated with lesions of the:",
+    "options": [
+      "Premotor cortex",
+      "Primary motor cortex",
+      "Cerebellum",
+      "Basal ganglia"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dysdiadochokinesia is associated with lesions of the cerebellum. Option C is correct. Inability to perform rapid alternating movements is a classic cerebellar sign. Options A, B, D are wrong (premotor, primary motor, basal ganglia lesions cause different symptoms).",
+    "keyConcept": "Dysdiadochokinesia (impaired rapid alternating movements) indicates cerebellar dysfunction.",
+    "wrongOpt": "Cerebellum",
+    "context": "ssociated with lesions of the cerebellum. option c is correct. inabili"
+  },
+  {
+    "id": "mcns2-ch1-physiology-q17",
+    "text": "An 83-year-old man was referred to a medical centre with a history of difficulty in walking. During examination: he was unsteady on his feet, dysarthric, negative Romberg’s sign, and appearance of tremor during movement were observed. What is the most probable diagnosis for this patient?",
+    "options": [
+      "Motor ataxia",
+      "Sensory ataxia",
+      "Vestibular ataxia",
+      "Hysterical ataxia."
+    ],
+    "correctIndex": 0,
+    "explanation": "Motor ataxia is the most probable diagnosis. Option A is correct. The patient has unsteady gait, dysarthria, negative Romberg (intact proprioception), and tremor during movement - all cerebellar signs. Sensory ataxia (B) would have positive Romberg. Vestibular ataxia (C) would have vertigo/nystagmus. Hysterical ataxia (D) lacks consistency.",
+    "keyConcept": "Negative Romberg with movement tremor and dysarthria points to cerebellar (motor) ataxia.",
+    "wrongOpt": "Sensory ataxia",
+    "context": "ement - all cerebellar signs. sensory ataxia (b) would have positive rombe"
+  },
+  {
+    "id": "mcns2-ch1-physiology-q18",
+    "text": "A musician has lost his ability to play the piano with no signs of muscle paralysis. What is the probable site of lesion?",
+    "options": [
+      "Area 4",
+      "Area 8",
+      "Area 1,2,3",
+      "Area within premotor area (area 6)"
+    ],
+    "correctIndex": 3,
+    "explanation": "Lesion within premotor area (area 6) is most probable. Option D is correct. Piano playing requires coordinated, skilled movements programmed by premotor cortex, not primary motor cortex (which executes fine movements). Area 8 is frontal eye fields; areas 1,2,3 are somatosensory. Loss without paralysis suggests premotor rather than primary motor lesion.",
+    "keyConcept": "Premotor area (area 6) programs skilled sequential movements; lesions disrupt coordination without paralysis.",
+    "wrongOpt": "Area 8",
+    "context": "ich executes fine movements). area 8 is frontal eye fields; areas "
+  },
+  {
+    "id": "mcns2-ch1-physiology-q19",
+    "text": "Spinal shock produces:-",
+    "options": [
+      "Automatic micturition",
+      "Hypotension",
+      "Positive Babinski sign",
+      "Spasticity of the paralyzed muscles"
+    ],
+    "correctIndex": 0,
+    "explanation": "Spinal shock produces hypotension. Option B is correct. Loss of sympathetic outflow after spinal cord transection causes vasodilation and hypotension. Options A, C, D describe later effects (automatic micturition after shock, positive Babinski develops later, spasticity develops weeks later). During spinal shock: flaccid paralysis, areflexia, loss of bowel/bladder, hypotension.",
+    "keyConcept": "Acute spinal shock causes flaccid paralysis, areflexia, and hypotension due to loss of sympathetic tone.",
+    "wrongOpt": "Hypotension",
+    "context": "spinal shock produces hypotension. option b is correct. loss of"
+  },
+  {
+    "id": "mcns2-ch1-physiology-q28",
+    "text": "Compared to alpha motor neurons, gamma motor neurons are:",
+    "options": [
+      "More numerous",
+      "Supply ordinary contractile skeletal muscle fibers",
+      "One type",
+      "Innervates the muscle spindle.",
+      "Transmit impulses from the central part of intrafusal fibers."
+    ],
+    "correctIndex": 4,
+    "explanation": "Gamma motor neurons innervate the muscle spindle. Option D is correct. Gamma motor neurons supply intrafusal muscle fibers,调节 spindle sensitivity. Options A is wrong (alpha are more numerous). Option B is wrong (alpha supply extrafusal). Option C is wrong (two types exist). Option E is wrong (transmit from peripheral receptor).",
+    "keyConcept": "Gamma motor neurons regulate muscle spindle sensitivity by contracting intrafusal fibers during voluntary movement.",
+    "wrongOpt": "More numerous",
+    "context": "options a is wrong (alpha are more numerous). option b is wrong (alpha su"
+  },
+  {
+    "id": "mcns2-ch1-physiology-q53",
+    "text": "Gliosis means:",
+    "options": [
+      "Regeneration of the brain tissue",
+      "Necrosis of the brain tissue",
+      "Fibrosis of the brain tissue",
+      "None of the above"
+    ],
+    "correctIndex": 0,
+    "explanation": "Gliosis is the proliferation of glial cells (particularly astrocytes) in response to CNS injury. It represents a protective/scarring response rather than true regeneration. Brain tissue cannot regenerate neurons, so gliosis forms a glial scar. Option A (regeneration) is wrong because neurons don't regenerate in CNS. Option B (necrosis) is the cause of gliosis, not gliosis itself. Option C (fibrosis) occurs in other tissues but not brain - brain forms glial (astrocytic) scars, not fibrous scars. The correct answer is D (None of the above) because gliosis specifically means proliferation of neuroglial cells as a response to CNS injury, which is neither regeneration nor fibrosis.",
+    "keyConcept": "Gliosis is astrocyte proliferation forming a glial scar in response to CNS injury, not true regeneration or fibrosis.",
+    "wrongOpt": "None of the above",
+    "context": "ars. the correct answer is d (none of the above) because gliosis specifically"
+  },
+  {
+    "id": "mcns2-ch1-physiology-q64",
+    "text": "+ve Babinski sign is NOT present in:",
+    "options": [
+      "LMNL.",
+      "Chronic UMNL.",
+      "Deep sleep.",
+      "Coma.",
+      "Before the age of 1 year."
+    ],
+    "correctIndex": 4,
+    "explanation": "A positive Babinski sign (dorsiflexion of hallux with fanning) is normal in infants before age 1 year due to immature corticospinal tracts. It indicates UMN lesion in adults. It IS present in LMNL, chronic UMNL, deep sleep, and coma.",
+    "keyConcept": "Babinski positive = UMN lesion in adults; normal in infants <1 year; negative in LMN lesions.",
+    "wrongOpt": "Coma.",
+    "context": "chronic umnl, deep sleep, and coma."
+  },
+  {
+    "id": "mcns2-ch1-physiology-q72",
+    "text": "A reflex arc includes:",
+    "options": [
+      "At least two sets of sequential neurons",
+      "At least two sequential sets of central synapses",
+      "At least two types of sensory receptors",
+      "At least two types of efferent neurons"
+    ],
+    "correctIndex": 3,
+    "explanation": "A reflex arc requires at minimum a sensory receptor, a sensory neuron, at least one synapse in the CNS, and an efferent motor neuron. This means at least two sets of sequential neurons (afferent and efferent).",
+    "keyConcept": "Reflex arc components: receptor → afferent neuron → CNS integration → efferent neuron → effector.",
+    "wrongOpt": "At least two sets of sequential neurons",
+    "context": "rent motor neuron. this means at least two sets of sequential neurons (afferent and efferent)."
+  },
+  {
+    "id": "mcns2-ch1-physiology-q75",
+    "text": "Which of the following is NOT a character of ARAS:",
+    "options": [
+      "Present in pons and midbrain.",
+      "Indirectly and directly excites the whole cortex.",
+      "Receives excitatory impulses from cortical areas.",
+      "Facilitates spinal cord motor neurons of antigravity muscles.",
+      "Responsible for arousal."
+    ],
+    "correctIndex": 2,
+    "explanation": "The ARAS does NOT receive excitatory impulses from cortical areas; rather, cortical areas excite the ARAS. The ARAS is present in pons/midbrain, indirectly activates cortex, facilitates antigravity muscles, and is responsible for arousal.",
+    "keyConcept": "ARAS: brainstem system that activates cortex; receives input FROM cortex, not sending to it.",
+    "wrongOpt": "Responsible for arousal.",
+    "context": "s antigravity muscles, and is responsible for arousal."
+  },
+  {
+    "id": "mcns2-ch1-physiology-q78",
+    "text": "Brain waves:",
+    "options": [
+      "Regular synchronized alpha waves are recorded in paradoxical sleep.",
+      "Desynchronized, low voltage, high frequency waves are recorded due to activation of RAS.",
+      "Highest voltage low frequency waves are recorded in adults during awake relaxed state.",
+      "Intrinsic activity of reticular formation produces beta waves.",
+      "Gamma waves are recorded in deep sleep."
+    ],
+    "correctIndex": 4,
+    "explanation": "Desynchronized, low voltage, high frequency (beta) waves are recorded when RAS is activated during alertness. Paradoxical sleep shows similar waves. Alpha waves dominate relaxed wakefulness. Delta waves are slow, high voltage seen in deep sleep. Gamma waves are high frequency associated with cognitive processing.",
+    "keyConcept": "Beta = RAS activation/alertness; Alpha = relaxed wake; Theta = drowsiness/children; Delta = deep sleep; Gamma = cognition.",
+    "wrongOpt": "Desynchronized, low voltage, high frequency waves are record",
+    "context": "desynchronized, low voltage, high frequency "
+  },
+  {
+    "id": "mcns2-ch1-physiology-q97",
+    "text": "Which sentence is NOT correct for long-term potentiation:",
+    "options": [
+      "A rapid repeated brief stimulation leads to a persistent enhancement of response.",
+      "Glutamate transmitter and its NMDA receptors may play a role.",
+      "Increase Ca++ in pre and post-synaptic neurons may play a role.",
+      "Protein synthesis, growth and increased neuronal connections are possible mechanisms.",
+      "Involved in cerebellar learning."
+    ],
+    "correctIndex": 1,
+    "explanation": "LTP (long-term potentiation) is primarily involved in hippocampal learning, not cerebellar learning. The cerebellum uses a different mechanism involving LTD (long-term depression) for motor learning. LTP does involve glutamate/NMDA receptors, Ca++ increases, protein synthesis, and new connections.",
+    "keyConcept": "LTP: hippocampal learning (memory); LTD: cerebellar learning (motor). Both involve glutamate receptors.",
+    "wrongOpt": "Protein synthesis, growth and increased neuronal connections",
+    "context": "da receptors, ca++ increases, protein synthesis, and new connections."
+  },
+  {
+    "id": "mcns2-ch1-physiology-q135",
+    "text": "What is the role of the enterorhinal cortex in smell?",
+    "options": [
+      "Perception and discrimination of odor",
+      "Emotional response to odors",
+      "Olfactory memories",
+      "Modulation of taste"
+    ],
+    "correctIndex": 0,
+    "explanation": "The enterorhinal cortex (area 28) is the major gateway for neocortical information to hippocampus, critical for forming and retrieving olfactory memories and spatial memory.",
+    "keyConcept": "Enterorhinal cortex memory function",
+    "wrongOpt": "Olfactory memories",
+    "context": "al for forming and retrieving olfactory memories and spatial memory."
+  },
+  {
+    "id": "mcns2-ch1-physiology-q142",
+    "text": "Muscle tone is NOT reduced in the following condition:",
+    "options": [
+      "Area 6 lesion.",
+      "Tabes dorsalis.",
+      "Parkinsonism",
+      "UMNL",
+      "Paleocerebellar lesion."
+    ],
+    "correctIndex": 2,
+    "explanation": "Parkinsonism is characterized by rigidity (lead-pipe or cogwheel), which represents increased muscle tone. UMNL lesions, cerebellar lesions, and tabes dorsalis all reduce muscle tone.",
+    "keyConcept": "Parkinsonism uniquely preserves or increases muscle tone, unlike other neurological conditions that cause hypotonia.",
+    "wrongOpt": "UMNL",
+    "context": "esents increased muscle tone. umnl lesions, cerebellar lesions, "
+  },
+  {
+    "id": "mcns2-ch1-physiology-q143",
+    "text": "Tendon jerks are exaggerated in:",
+    "options": [
+      "Anterior horn cell disease.",
+      "Dorsal root lesions",
+      "Chorea.",
+      "Internal capsule lesion.",
+      "Parkinsonism."
+    ],
+    "correctIndex": 0,
+    "explanation": "Parkinsonism results in hyperreflexia due to loss of dopaminergic inhibition of the striatum, leading to excessive muscle tone and exaggerated stretch reflexes. Anterior horn cell disease and dorsal root lesions cause hyporeflexia.",
+    "keyConcept": "Parkinsonian rigidity leads to hyperreflexia due to disrupted dopamine-GABA balance in the basal ganglia.",
+    "wrongOpt": "Dorsal root lesions",
+    "context": "nterior horn cell disease and dorsal root lesions cause hyporeflexia."
+  },
+  {
+    "id": "mcns2-ch1-physiology-q148",
+    "text": "Which of the following is NOT a function of the prefrontal association area?",
+    "options": [
+      "Operation of working memory.",
+      "Storage of coordinated vocalization programs.",
+      "Decision making and personality traits.",
+      "Language comprehension.",
+      "Motor control"
+    ],
+    "correctIndex": 0,
+    "explanation": "The prefrontal association area mediates working memory, decision-making, personality, and language (Broca's area handles speech production). Primary motor control resides in the primary motor cortex, not prefrontal area.",
+    "keyConcept": "The prefrontal cortex subserves executive functions and working memory, not direct motor execution.",
+    "wrongOpt": "Motor control",
+    "context": "s speech production). primary motor control resides in the primary motor "
+  },
+  {
+    "id": "mcns2-ch1-physiology-q162",
+    "text": "Which substance stimulates pain receptors?",
+    "options": [
+      "Histamine",
+      "Kinin",
+      "Serotonin",
+      "Acetylcholine",
+      "Dopamine"
+    ],
+    "correctIndex": 1,
+    "explanation": "Bradykinin, substance P, histamine, prostaglandins, and serotonin are all algogenic substances that stimulate nociceptors and cause pain when released during tissue injury or inflammation.",
+    "keyConcept": "Algogenic substances (bradykinin, prostaglandins, substance P) sensitize and activate nociceptors.",
+    "wrongOpt": "Histamine",
+    "context": "bradykinin, substance p, histamine, prostaglandins, and serotoni"
+  },
+  {
+    "id": "mcns2-ch1-physiology-q163",
+    "text": "Which nerve fibers transmit warm temperature sensation?",
+    "options": [
+      "Aδ fibers",
+      "Aβ fibers",
+      "C fibers",
+      "Ia fibers",
+      "Ib fibers"
+    ],
+    "correctIndex": 0,
+    "explanation": "Warm temperature sensation (30-45C) is transmitted by C fibers via the lateral spinothalamic tract to the ventral posterolateral (VPL) thalamic nucleus, then to sensory cortex.",
+    "keyConcept": "Warm receptors are C fiber thermoreceptors projecting via spinothalamic tract to VPL thalamus.",
+    "wrongOpt": "C fibers",
+    "context": "on (30-45c) is transmitted by c fibers via the lateral spinothalamic"
+  },
+  {
+    "id": "mcns2-ch1-physiology-q175",
+    "text": "The initial phase of a migraine attack is associated with which vascular event?",
+    "options": [
+      "Vasoconstriction",
+      "Vasodilation",
+      "Hemorrhage",
+      "Thrombosis",
+      "Edema"
+    ],
+    "correctIndex": 0,
+    "explanation": "The initial phase of migraine involves cortical spreading depression followed by vasoconstriction causing the aura. Later phases involve vasodilation and neurogenic inflammation.",
+    "keyConcept": "Migraine starts with cortical spreading depression and vasoconstriction (aura), followed by vasodilation causing headache.",
+    "wrongOpt": "Vasodilation",
+    "context": "he aura. later phases involve vasodilation and neurogenic inflammation."
+  },
+  {
+    "id": "mcns2-ch1-physiology-q183",
+    "text": "The Golgi tendon organ provides input to which neurons?",
+    "options": [
+      "γ motor neurons",
+      "Ia sensory neurons",
+      "α motor neurons",
+      "Ib sensory neurons",
+      "Interneurons"
+    ],
+    "correctIndex": 0,
+    "explanation": "Golgi tendon organs synapse on Ib inhibitory interneurons in the spinal cord that inhibit alpha motor neurons of the homonymous muscle, providing protective autogenic inhibition.",
+    "keyConcept": "Golgi tendon organs activate Ib inhibitory interneurons to autogenically inhibit muscle contraction under high tension.",
+    "wrongOpt": "Interneurons",
+    "context": "gans synapse on ib inhibitory interneurons in the spinal cord that inhib"
+  },
+  {
+    "id": "mcns2-ch1-physiology-q192",
+    "text": "Which statement about climbing fibers is correct?",
+    "options": [
+      "They originate from the inferior olivary nucleus",
+      "They form powerful excitatory synapses on Purkinje cells",
+      "Each Purkinje cell receives input from a single climbing fiber",
+      "They play a role in motor learning",
+      "All of the above"
+    ],
+    "correctIndex": 2,
+    "explanation": "Climbing fibers originate from the inferior olivary nucleus, form powerful excitatory synapses on Purkinje cells, each Purkinje cell receives input from a single climbing fiber, and they play a role in motor learning.",
+    "keyConcept": "Climbing fiber characteristics",
+    "wrongOpt": "They play a role in motor learning",
+    "context": " a single climbing fiber, and they play a role in motor learning."
+  },
+  {
+    "id": "mcns2-ch1-physiology-q195",
+    "text": "The following sensation is not perceived by Somatosensory A 1:\nA. Crude Touch.\nB. Fast pain.\nC. Vibration sense.\nD. Proprioceptive sensation.\nE. Stereognosis.",
+    "options": [
+      "Crude Touch",
+      "Fast pain",
+      "Vibration sense",
+      "Proprioceptive sensation",
+      "Stereognosis"
+    ],
+    "correctIndex": 0,
+    "explanation": "Crude touch is transmitted by the anterior spinothalamic tract, not by somatosensory area 1 which processes fine/discriminative touch, vibration, proprioception, and stereognosis.",
+    "keyConcept": "Somatosensory area 1 does not process crude touch (anterior spinothalamic does).",
+    "wrongOpt": "Stereognosis",
+    "context": "ibration, proprioception, and stereognosis."
+  },
+  {
+    "id": "mcns2-ch1-physiology-q199",
+    "text": "An athlete was carrying a heavy weight during a competition for a time and then he suddenly left it. This could be explained by activation of:\nA. IIb fibers\nB. Ia fibers\nC. Ib fibers\nD. Gamma efferent fibers\nE. a motor neurons",
+    "options": [
+      "IIb fibers",
+      "Ia fibers",
+      "Ib fibers",
+      "Gamma efferent fibers",
+      "a motor neurons"
+    ],
+    "correctIndex": 0,
+    "explanation": "Golgi tendon organs (Ib fibers) detect muscle tension; when tension becomes excessive, they trigger autogenic inhibition to protect the muscle from damage by relaxing it.",
+    "keyConcept": "Golgi tendon organ (Ib fibers): autogenic inhibition when tension excessive.",
+    "wrongOpt": "Ib fibers",
+    "context": "golgi tendon organs (ib fibers) detect muscle tension; when "
+  },
+  {
+    "id": "mcns2-ch1-physiology-q204",
+    "text": "The memory of a sequence of events in which a person participated is called:\nA. Semantic memory\nB. Episodic\nC. Implicit\nD. Procedural\nE. Conditional",
+    "options": [
+      "Semantic memory",
+      "Episodic",
+      "Implicit",
+      "Procedural",
+      "Conditional"
+    ],
+    "correctIndex": 0,
+    "explanation": "Episodic memory records personal experiences organized in time sequence (autobiographical memory), allowing recall of events in which one actively participated.",
+    "keyConcept": "Episodic memory: memory of personal events in sequence.",
+    "wrongOpt": "Episodic",
+    "context": "episodic memory records personal exper"
+  },
+  {
+    "id": "mcns2-ch1-pharma-q1",
+    "text": "The following is not an adverse effect of direct D2 receptor agonists",
+    "options": [
+      "Hallucination",
+      "Dyskinesia",
+      "Insomnia",
+      "Impulse control disorders",
+      "Vasospasm"
+    ],
+    "correctIndex": 3,
+    "explanation": "Insomnia is NOT an adverse effect of direct D2 receptor agonists. Option C is correct. D2 agonists (pramipexole, ropinirole) commonly cause hallucinations, dyskinesia (especially with long-term use), and impulse control disorders. Insomnia is not a typical adverse effect; actually, these drugs can cause daytime sleepiness. Amantadine is known to cause insomnia.",
+    "keyConcept": "D2 agonists cause neuropsychiatric effects (hallucinations, dyskinesia, impulse control disorders) but not insomnia.",
+    "wrongOpt": "Hallucination",
+    "context": "e, ropinirole) commonly cause hallucinations, dyskinesia (especially with"
+  },
+  {
+    "id": "mcns2-ch1-pharma-q2",
+    "text": "The following is not an adverse effect of amantadine",
+    "options": [
+      "Hallucination",
+      "Day time sleepiness",
+      "Livedo reticularis",
+      "Ankle edema",
+      "Tolerance"
+    ],
+    "correctIndex": 1,
+    "explanation": "Daytime sleepiness is NOT an adverse effect of amantadine. Option B is correct. Amantadine causes hallucinations, livedo reticularis (skin rash), ankle edema, and tolerance. Insomnia is actually a known amantadine effect (along with dizziness). Daytime sleepiness is more typical of dopamine agonists.",
+    "keyConcept": "Amantadine commonly causes insomnia, livedo reticularis, and ankle edema, but not daytime sleepiness.",
+    "wrongOpt": "Hallucination",
+    "context": "is correct. amantadine causes hallucinations, livedo reticularis (skin ra"
+  },
+  {
+    "id": "mcns2-ch1-pharma-q5",
+    "text": "Addition of carbidopa to L dopa increases risk of all the following adverse effects except",
+    "options": [
+      "Dyskinesia",
+      "Hallucination",
+      "Nausea & vomiting",
+      "Confusion"
+    ],
+    "correctIndex": 2,
+    "explanation": "Nausea & vomiting is NOT increased by adding carbidopa. Option C is correct. Carbidopa prevents peripheral conversion of L-dopa to dopamine, reducing peripheral side effects including nausea/vomiting. However, it increases brain dopamine, which can increase CNS adverse effects: dyskinesia, hallucinations, and confusion.",
+    "keyConcept": "Carbidopa reduces peripheral L-dopa side effects (nausea) but increases central dopaminergic effects (dyskinesia, hallucinations).",
+    "wrongOpt": "Dyskinesia",
+    "context": "increase cns adverse effects: dyskinesia, hallucinations, and confusio"
+  },
+  {
+    "id": "mcns2-ch1-pharma-q11",
+    "text": "The dose of benzodiazepines should be adjusted in:",
+    "options": [
+      "Elderly patients.",
+      "Concomitant administration with alcohol.",
+      "Hepatic dysfunction.",
+      "All of the above."
+    ],
+    "correctIndex": 1,
+    "explanation": "Dose adjustment is needed in elderly AND with alcohol AND with hepatic dysfunction. Option D is correct. All three factors require dose adjustment: elderly have reduced metabolism, alcohol potentiates CNS depression, hepatic dysfunction impairs metabolism of benzodiazepines.",
+    "keyConcept": "Benzodiazepine dosing requires adjustment in elderly, hepatic impairment, and when combined with CNS depressants.",
+    "wrongOpt": "Hepatic dysfunction.",
+    "context": "rly and with alcohol and with hepatic dysfunction. option d is correct. all thre"
+  },
+  {
+    "id": "mcns2-ch1-pharma-q17",
+    "text": "The following anxiolytic drug do not act through GABA",
+    "options": [
+      "Zolpidem",
+      "Buspirone",
+      "Lorazepam",
+      "Phenobarbital"
+    ],
+    "correctIndex": 1,
+    "explanation": "Buspirone does not act through GABA. Option B is correct. Buspirone is a 5-HT1A partial agonist anxiolytic. Zolpidem (A), lorazepam (C), and phenobarbital (D) all enhance GABAergic transmission. Buspirone works through serotonin modulation.",
+    "keyConcept": "Buspirone is a 5-HT1A serotonin receptor partial agonist, distinct from GABA-acting anxiolytics.",
+    "wrongOpt": "Zolpidem",
+    "context": "a partial agonist anxiolytic. zolpidem (a), lorazepam (c), and pheno"
+  },
+  {
+    "id": "mcns2-ch1-pharma-q18",
+    "text": "The following drug has no sedative hypnotic effect",
+    "options": [
+      "Antihistamines",
+      "Tricyclic antidepressants",
+      "Flumazenil",
+      "Clonidine"
+    ],
+    "correctIndex": 2,
+    "explanation": "Flumazenil has no sedative hypnotic effect. Option C is correct. Flumazenil is a benzodiazepine antagonist that blocks GABA-benzodiazepine receptors. It reverses sedation and would not cause sedation. Antihistamines (A), tricyclics (B), and clonidine (D) all have sedative effects.",
+    "keyConcept": "Flumazenil is a benzodiazepine antagonist with no intrinsic sedative activity.",
+    "wrongOpt": "Antihistamines",
+    "context": "and would not cause sedation. antihistamines (a), tricyclics (b), and clon"
+  },
+  {
+    "id": "mcns2-ch1-pharma-q20",
+    "text": "The following is a Wrong statement about Barbiturates",
+    "options": [
+      "Low therapeutic index",
+      "Strong enzyme inhibitors",
+      "Dose dependent CNS depression up to coma",
+      "No specific antidote"
+    ],
+    "correctIndex": 1,
+    "explanation": "Barbiturates are NOT strong enzyme inducers - this is WRONG. Option B is incorrect. Barbiturates are potent CYP450 inducers, increasing metabolism of many drugs. Options A, C, D are correct: low therapeutic index, dose-dependent CNS depression, no specific antidote.",
+    "keyConcept": "Barbiturates are potent enzyme inducers that increase hepatic metabolism of many co-administered drugs.",
+    "wrongOpt": "Low therapeutic index",
+    "context": " options a, c, d are correct: low therapeutic index, dose-dependent cns depressio"
+  },
+  {
+    "id": "mcns2-ch1-pharma-q21",
+    "text": "The following statement is Wrong regarding pharmacokinetics of Benzodiazepines",
+    "options": [
+      "Absorption of intramuscular injection except lorazepam is slower than oral",
+      "Metabolized in the liver by oxidation followed by glucuronidation except lorazepam",
+      "Clinical duration of action of long acting BDZs is shorter than the actual half life as they form active metabolites",
+      "Lorazepam has no active metabolites"
+    ],
+    "correctIndex": 2,
+    "explanation": "Clinical duration of long-acting BZDs is longer than actual half-life - this is WRONG. Option C is incorrect. Long-acting BZDs form active metabolites that prolong their effect beyond the parent compound's half-life. Options A, B, D are correct: IM absorption is slower (except lorazepam), lorazepam uses glucuronidation not oxidation, lorazepam has no active metabolites.",
+    "keyConcept": "Long-acting benzodiazepines have prolonged effects due to active metabolites, making actual duration longer than parent half-life.",
+    "wrongOpt": "Lorazepam has no active metabolites",
+    "context": "lucuronidation not oxidation, lorazepam has no active metabolites."
+  },
+  {
+    "id": "mcns2-ch1-pharma-q22",
+    "text": "BDZs do not induce the following effect",
+    "options": [
+      "Anticonvulsant & Spasmolytic",
+      "Decrease stage II of NREM sleep",
+      "Decrease REM sleep",
+      "Decrease stage III & IV of NREM sleep"
+    ],
+    "correctIndex": 1,
+    "explanation": "BDZs do NOT decrease stage II NREM sleep. Option B is correct. Benzodiazepines decrease REM sleep and stages III/IV (deep sleep), but actually increase stage II NREM sleep (light sleep). This is why they suppress deep sleep and REM sleep while promoting light sleep.",
+    "keyConcept": "Benzodiazepines suppress REM and deep sleep (III/IV) while preserving or increasing light sleep (stage II).",
+    "wrongOpt": "Decrease REM sleep",
+    "context": "b is correct. benzodiazepines decrease rem sleep and stages iii/iv (deep sleep"
+  },
+  {
+    "id": "mcns2-ch1-pharma-q32",
+    "text": "The following is not adverse effect of halothane",
+    "options": [
+      "Malignant hyperthermia",
+      "Bradycardia & arrhythmia",
+      "Hypertension",
+      "Hepatic toxicity",
+      "Increase in intracranial pressure (ICP)"
+    ],
+    "correctIndex": 1,
+    "explanation": "Halothane causes hypotension, not hypertension. Option C is incorrect. Halothane causes cardiovascular depression: bradycardia, hypotension, and arrhythmias. It also causes malignant hyperthermia, hepatic toxicity, and increases ICP. The vasodilation and myocardial depression lead to hypotension.",
+    "keyConcept": "Halothane's cardiovascular effects include bradycardia, hypotension, and arrhythmias due to myocardial depression.",
+    "wrongOpt": "Malignant hyperthermia",
+    "context": "d arrhythmias. it also causes malignant hyperthermia, hepatic toxicity, and increa"
+  },
+  {
+    "id": "mcns2-ch1-pharma-q37",
+    "text": "Which of the following is not adverse effect of spinal anesthesia",
+    "options": [
+      "Headache",
+      "Spinal root injury",
+      "CSF infection",
+      "Hypertension"
+    ],
+    "correctIndex": 1,
+    "explanation": "Hypertension is NOT an adverse effect of spinal anesthesia. Option D is correct. Spinal anesthesia causes hypotension (not hypertension) due to sympathetic block and vasodilation. Options A, B, C are recognized complications: post-dural puncture headache, nerve root irritation, meningitis.",
+    "keyConcept": "Spinal anesthesia causes hypotension due to sympathetic blockade, not hypertension.",
+    "wrongOpt": "Headache",
+    "context": "ications: post-dural puncture headache, nerve root irritation, menin"
+  },
+  {
+    "id": "mcns2-ch1-pharma-q39",
+    "text": "Gingival hyperplasia is a common side effect of:",
+    "options": [
+      "Valproate",
+      "Phenytoin",
+      "Ethosuximide",
+      "Carbamazepine"
+    ],
+    "correctIndex": 1,
+    "explanation": "Gingival hyperplasia is a common side effect of phenytoin. Option B is correct. Phenytoin's well-known side effects include gingival hyperplasia, hirsutism, coarse facial features, and osteomalacia. Valproate (A) causes weight gain, tremor, hepatotoxicity. Ethosuximide (C) causes GI upset, headache. Carbamazepine (D) causes SIADH, aplastic anemia.",
+    "keyConcept": "Phenytoin causes gingival hyperplasia, hirsutism, and coarse facial features through effects on connective tissue.",
+    "wrongOpt": "Valproate",
+    "context": "l features, and osteomalacia. valproate (a) causes weight gain, tremo"
+  },
+  {
+    "id": "mcns2-ch1-pharma-q40",
+    "text": "The following side effect is most likely to be seen with carbamazepine",
+    "options": [
+      "Water retention",
+      "Coarse facial features",
+      "Hirsutism",
+      "Gingival Hyperplasia"
+    ],
+    "correctIndex": 0,
+    "explanation": "Carbamazepine causes WATER RETENTION (SIADH). Option A is correct. Carbamazepine induces SIADH, causing hyponatremia and water retention. Options B, C, D are phenytoin effects (coarse facial features, hirsutism, gingival hyperplasia).",
+    "keyConcept": "Carbamazepine's SIADH effect causes dilutional hyponatremia requiring monitoring.",
+    "wrongOpt": "Coarse facial features",
+    "context": ", c, d are phenytoin effects (coarse facial features, hirsutism, gingival hyperpla"
+  },
+  {
+    "id": "mcns2-ch1-pharma-q41",
+    "text": "Hirsutism may be induced by:",
+    "options": [
+      "Valproate",
+      "Interferon.",
+      "Heparin",
+      "Phenytoin",
+      "B and D"
+    ],
+    "correctIndex": 3,
+    "explanation": "Hirsutism may be induced by phenytoin. Option D is correct. Phenytoin causes hirsutism (excessive hair growth) as a characteristic side effect. Valproate (A) causes weight gain, tremor. Interferon (B) causes flu-like symptoms. Heparin (C) causes osteoporosis.",
+    "keyConcept": "Phenytoin causes hirsutism through altered androgen metabolism and connective tissue effects.",
+    "wrongOpt": "Valproate",
+    "context": "a characteristic side effect. valproate (a) causes weight gain, tremo"
+  },
+  {
+    "id": "mcns2-ch1-pharma-q42",
+    "text": "Valproate toxicity does not include:",
+    "options": [
+      "Hirsutism",
+      "Hand tremor",
+      "Thrombocytopenia",
+      "Rare but fatal hepatitis."
+    ],
+    "correctIndex": 1,
+    "explanation": "Hirsutism is NOT valproate toxicity - it is caused by phenytoin. Option A is incorrect. Valproate causes hand tremor, thrombocytopenia, hepatotoxicity (rare but fatal). Options B, C, D are valproate toxicities. Hirsutism is a phenytoin effect.",
+    "keyConcept": "Valproate's main toxicities include hepatotoxicity, thrombocytopenia, and tremor; hirsutism is a phenytoin effect.",
+    "wrongOpt": "Hirsutism",
+    "context": "hirsutism is not valproate toxicity - i"
+  },
+  {
+    "id": "mcns2-ch1-pharma-q46",
+    "text": "Ethosuximide useful in",
+    "options": [
+      "Partial epilepsy",
+      "Absence seizure",
+      "Tonic clonic",
+      "A & C"
+    ],
+    "correctIndex": 1,
+    "explanation": "Ethosuximide is useful in absence seizure. Option B is correct. Ethosuximide is first-line for childhood absence epilepsy. It does not work for partial epilepsy (A) or tonic-clonic seizures (C). Valproate would cover both absence and tonic-clonic.",
+    "keyConcept": "Ethosuximide's specificity for absence seizures comes from thalamic T-channel modulation.",
+    "wrongOpt": "Partial epilepsy",
+    "context": "pilepsy. it does not work for partial epilepsy (a) or tonic-clonic seizures "
+  },
+  {
+    "id": "mcns2-ch1-pharma-q47",
+    "text": "Which of the following is not adverse effect of phenytoin?",
+    "options": [
+      "Osteomalacia",
+      "Gingival Hyperplasia",
+      "Agranulocytosis",
+      "Teratogenicity"
+    ],
+    "correctIndex": 1,
+    "explanation": "Agranulocytosis is NOT a phenytoin adverse effect. Option C is correct. Phenytoin causes gingival hyperplasia, osteomalacia (via vitamin D metabolism), and teratogenicity (fetal hydantoin syndrome). Agranulocytosis is more associated with carbamazepine. Phenytoin's hematologic effects include macrocytosis and megaloblastic anemia (not agranulocytosis).",
+    "keyConcept": "Phenytoin's adverse effects include gingival hyperplasia, osteomalacia, and teratogenicity; agranulocytosis is rare.",
+    "wrongOpt": "Osteomalacia",
+    "context": " causes gingival hyperplasia, osteomalacia (via vitamin d metabolism), a"
+  }
+]

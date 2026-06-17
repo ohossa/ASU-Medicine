@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "comingSoon": true,
+  "meta": {
+    "moduleCode": "MBL-2",
+    "moduleName": "Blood & Lymphatic System",
+    "year": 2,
+    "semester": 1,
+    "creditPoints": 4,
+    "totalMarks": 80,
+    "keywords": [
+      "blood",
+      "lymphatic",
+      "hematology",
+      "mbl"
+    ]
+  },
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Erythrocytes & Anemias",
+      "subtitle": "Erythrocytes & Anemias",
+      "emoji": "🩸",
+      "page": 1,
+      "lectureRange": "Lectures 1",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 2,
+      "title": "Leukocytes & Lymphatics",
+      "subtitle": "Leukocytes & Lymphatics",
+      "emoji": "🛡️",
+      "page": 2,
+      "lectureRange": "Lectures 2",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 3,
+      "title": "Hemostasis & Bleeding Disorders",
+      "subtitle": "Hemostasis & Bleeding Disorders",
+      "emoji": "🩹",
+      "page": 3,
+      "lectureRange": "Lectures 3",
+      "subjects": [],
+      "keywords": []
+    }
+  ]
+}

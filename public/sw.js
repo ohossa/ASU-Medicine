@@ -6,10 +6,8 @@ const PRECACHE_ASSETS = [
   "/index.html",
   "/manifest.json",
   "/favicon.png",
-  "/favicon.svg",
   "/asu-medicine-logo.webp",
-  "/icons.svg",
-  "https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Archivo:wght@100;200;300;400;500;600;700;800;900&family=Manrope:wght@300;400;500;600;700;800;900&display=swap"
+  "/icons.svg"
 ];
 
 self.addEventListener("install", (event) => {

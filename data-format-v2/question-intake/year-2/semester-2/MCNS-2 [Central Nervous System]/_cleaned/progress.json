@@ -1,0 +1,709 @@
+{
+  "totalChunks": 81,
+  "processedChunks": 39,
+  "failedChunks": 61,
+  "lastProcessedAt": "2026-06-15T07:25:28.065Z",
+  "estimatedQuestions": 6147,
+  "chunks": [
+    {
+      "index": 31,
+      "section": "Part 8",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_031.txt",
+      "status": "done"
+    },
+    {
+      "index": 50,
+      "section": "Part 8",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_050.txt",
+      "status": "done"
+    },
+    {
+      "index": 63,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_063_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 64,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_064.txt",
+      "status": "done"
+    },
+    {
+      "index": 61,
+      "section": "Part 8",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_061_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 65,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_065.txt",
+      "status": "done"
+    },
+    {
+      "index": 66,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_066_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 67,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_067_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 68,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_068_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 69,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_069_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 70,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_070_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 71,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_071_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 72,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_072_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 73,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_073_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 74,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_074_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 75,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_075_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 76,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_076_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 77,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_077_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 78,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_078_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 79,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_079_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 80,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_080_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 82,
+      "section": "part 7",
+      "questionCount": 27,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_082.txt",
+      "status": "done"
+    },
+    {
+      "index": 81,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_081_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 83,
+      "section": "## Head and Neck Questions",
+      "questionCount": 81,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_083_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 61,
+      "section": "Part 8",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_061_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 63,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_063_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 66,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_066_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 67,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_067_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 68,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_068_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 69,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_069_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 70,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_070_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 71,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_071_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 72,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_072_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 73,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_073_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 74,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_074_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 75,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_075_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 76,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_076_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 77,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_077_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 78,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_078_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 79,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_079_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 80,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_080_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 83,
+      "section": "## Head and Neck Questions",
+      "questionCount": 81,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_083_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 81,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_081_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 69,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_069.txt",
+      "status": "done"
+    },
+    {
+      "index": 70,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_070.txt",
+      "status": "done"
+    },
+    {
+      "index": 71,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_071.txt",
+      "status": "done"
+    },
+    {
+      "index": 67,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_067.txt",
+      "status": "done"
+    },
+    {
+      "index": 73,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_073.txt",
+      "status": "done"
+    },
+    {
+      "index": 74,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_074.txt",
+      "status": "done"
+    },
+    {
+      "index": 72,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_072.txt",
+      "status": "done"
+    },
+    {
+      "index": 76,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_076.txt",
+      "status": "done"
+    },
+    {
+      "index": 77,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_077.txt",
+      "status": "done"
+    },
+    {
+      "index": 78,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_078.txt",
+      "status": "done"
+    },
+    {
+      "index": 79,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_079_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 80,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_080.txt",
+      "status": "done"
+    },
+    {
+      "index": 81,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_081.txt",
+      "status": "done"
+    },
+    {
+      "index": 83,
+      "section": "## Head and Neck Questions",
+      "questionCount": 81,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_083_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 75,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_075.txt",
+      "status": "done"
+    },
+    {
+      "index": 83,
+      "section": "## Head and Neck Questions",
+      "questionCount": 81,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_083_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 79,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_079_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 79,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_079.txt",
+      "status": "done"
+    },
+    {
+      "index": 16,
+      "section": "Part 11",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_016.txt",
+      "status": "done"
+    },
+    {
+      "index": 8,
+      "section": "Part 6",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_008.txt",
+      "status": "done"
+    },
+    {
+      "index": 17,
+      "section": "Part 11",
+      "questionCount": 41,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_017_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 20,
+      "section": "Part 13",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_020_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 23,
+      "section": "Part 4",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_023_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 30,
+      "section": "Part 8",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_030_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 24,
+      "section": "Part 4",
+      "questionCount": 80,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_024.txt",
+      "status": "done"
+    },
+    {
+      "index": 51,
+      "section": "Part 8",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_051_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 52,
+      "section": "Part 8",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_052_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 55,
+      "section": "Part 8",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_055_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 56,
+      "section": "Part 8",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_056_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 58,
+      "section": "Part 8",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_058_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 60,
+      "section": "Part 8",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_060_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 63,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_063_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 64,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_064_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 65,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_065_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 66,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_066_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 71,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_071_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 75,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_075_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 78,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_078_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 82,
+      "section": "part 7",
+      "questionCount": 27,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_082_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 17,
+      "section": "Part 11",
+      "questionCount": 41,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_017.txt",
+      "status": "done"
+    },
+    {
+      "index": 20,
+      "section": "Part 13",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_020.txt",
+      "status": "done"
+    },
+    {
+      "index": 23,
+      "section": "Part 4",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_023.txt",
+      "status": "done"
+    },
+    {
+      "index": 30,
+      "section": "Part 8",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_030.txt",
+      "status": "done"
+    },
+    {
+      "index": 51,
+      "section": "Part 8",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_051.txt",
+      "status": "done"
+    },
+    {
+      "index": 52,
+      "section": "Part 8",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_052.txt",
+      "status": "done"
+    },
+    {
+      "index": 55,
+      "section": "Part 8",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_055.txt",
+      "status": "done"
+    },
+    {
+      "index": 56,
+      "section": "Part 8",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_056.txt",
+      "status": "done"
+    },
+    {
+      "index": 58,
+      "section": "Part 8",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_058.txt",
+      "status": "done"
+    },
+    {
+      "index": 60,
+      "section": "Part 8",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_060.txt",
+      "status": "done"
+    },
+    {
+      "index": 63,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_063.txt",
+      "status": "done"
+    },
+    {
+      "index": 64,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_064.txt",
+      "status": "done"
+    },
+    {
+      "index": 65,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_065.txt",
+      "status": "done"
+    },
+    {
+      "index": 66,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_066.txt",
+      "status": "done"
+    },
+    {
+      "index": 71,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_071.txt",
+      "status": "done"
+    },
+    {
+      "index": 75,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_075.txt",
+      "status": "done"
+    },
+    {
+      "index": 78,
+      "section": "part 7",
+      "questionCount": 90,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_078_FAILED.txt",
+      "status": "failed"
+    },
+    {
+      "index": 82,
+      "section": "part 7",
+      "questionCount": 27,
+      "outputFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_082.txt",
+      "status": "done"
+    }
+  ]
+}

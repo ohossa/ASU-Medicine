@@ -141,21 +141,30 @@ function transformSubQuestion(sq: RawSubQuestion, parentId: number): SubQuestion
   };
 }
 
+function extractStarRepetitionCount(text: string): { text: string; count?: number } {
+  const match = text.match(/(?:\s*\*+)?\s*(★+)\s*$/);
+  if (!match) return { text: text.trim() };
+  const starCount = match[1].length;
+  return { text: text.replace(/(?:\s*\*+)?\s*★+\s*$/, '').trim(), count: starCount * 2 };
+}
+
 function transformQuestion(q: RawQuestion, color: SubjectColor, idOffset: number): Question {
   const rawType = q.type || 'essay'; // default to essay if not specified
   const textVal = q.question || q.text || '';
+  const { text: cleanText, count: starCount } = extractStarRepetitionCount(textVal);
   const uniqueId = q.id + idOffset;
 
   if (rawType === 'case') {
     return {
       id: uniqueId,
       type: 'case',
-      text: textVal,
+      text: cleanText,
       lecture: 1,
       subjectColor: color,
       explanation: q.explanation || '',
       keyConcept: q.keyConcept,
       subQuestions: (q.subQuestions || []).map(sq => transformSubQuestion(sq, uniqueId)),
+      repetitionCount: starCount ?? q.repetitionCount,
     };
   }
 
@@ -163,12 +172,13 @@ function transformQuestion(q: RawQuestion, color: SubjectColor, idOffset: number
     return {
       id: uniqueId,
       type: 'matching',
-      text: textVal,
+      text: cleanText,
       lecture: 1,
       subjectColor: color,
       pairs: q.pairs || [],
       explanation: q.explanation || '',
       keyConcept: q.keyConcept,
+      repetitionCount: starCount ?? q.repetitionCount,
     };
   }
 
@@ -176,12 +186,13 @@ function transformQuestion(q: RawQuestion, color: SubjectColor, idOffset: number
     return {
       id: uniqueId,
       type: 'essay',
-      text: textVal,
+      text: cleanText,
       lecture: 1,
       subjectColor: color,
       modelAnswer: q.modelAnswer || '',
       explanation: q.explanation || '',
       keyConcept: q.keyConcept,
+      repetitionCount: starCount ?? q.repetitionCount,
     };
   }
 
@@ -189,13 +200,14 @@ function transformQuestion(q: RawQuestion, color: SubjectColor, idOffset: number
     return {
       id: uniqueId,
       type: 'fillblank',
-      text: textVal,
+      text: cleanText,
       lecture: 1,
       subjectColor: color,
       blanks: q.blanks || [],
       acceptedAnswers: q.acceptedAnswers,
       explanation: q.explanation || '',
       keyConcept: q.keyConcept,
+      repetitionCount: starCount ?? q.repetitionCount,
     };
   }
 
@@ -210,13 +222,14 @@ function transformQuestion(q: RawQuestion, color: SubjectColor, idOffset: number
   return {
     id: uniqueId,
     type: isTrueFalse ? 'truefalse' : 'mcq',
-    text: textVal,
+    text: cleanText,
     lecture: 1,
     subjectColor: color,
     options,
     correctIndex: idx >= 0 && idx < options.length ? idx : 0,
     explanation: q.explanation || '',
     keyConcept: q.keyConcept,
+    repetitionCount: starCount ?? q.repetitionCount,
   };
 }
 
@@ -703,6 +716,7 @@ export function getChaptersForModuleAndMode(
             iconName: subj.iconName,
             lectures: subj.lectures || '',
             lectureCount: subj.lectureCount || 1,
+            lectureNames: subj.lectureNames || [],
             questions,
           };
         })

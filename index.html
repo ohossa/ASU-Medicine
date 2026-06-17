@@ -13,27 +13,53 @@
     <meta property="og:description" content="Master the ASU medical syllabus through structured assessment, clinical case solvers, and interactive quizzes." />
     <meta property="og:image" content="https://asu.codes/social-preview.png" />
 
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="ASU Medical Portal" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://asu.codes/" />
-    <meta property="twitter:title" content="ASU Medical Portal" />
-    <meta property="twitter:description" content="Master the ASU medical syllabus through structured assessment, clinical case solvers, and interactive quizzes." />
-    <meta property="twitter:image" content="https://asu.codes/social-preview.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://asu.codes/" />
+    <meta name="twitter:title" content="ASU Medical Portal" />
+    <meta name="twitter:description" content="Master the ASU medical syllabus through structured assessment, clinical case solvers, and interactive quizzes." />
+    <meta name="twitter:image" content="https://asu.codes/social-preview.png" />
+    <meta name="twitter:image:width" content="1200" />
+    <meta name="twitter:image:height" content="630" />
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "ASU Medical Portal",
+      "url": "https://asu.codes/",
+      "description": "Master the ASU medical syllabus through structured assessment, clinical case solvers, and interactive quizzes.",
+      "publisher": {
+        "@type": "EducationalOrganization",
+        "name": "Ain Shams University",
+        "url": "https://asu.edu.eg/"
+      }
+    }
+    </script>
 
     <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="manifest" href="/manifest.json" />
-    <meta name="theme-color" content="#0c0e16" />
-    
+    <meta name="theme-color" content="#f8f9fc" />
+
+    <!-- Preconnect to auth & analytics origins -->
+    <link rel="preconnect" href="https://accounts.clerk.dev" crossorigin />
+    <link rel="dns-prefetch" href="https://accounts.clerk.dev" />
+
     <!-- iOS PWA Support -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="ASU Portal" />
-    <link rel="apple-touch-icon" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/favicon-512.png" />
 
     <link rel="preload" href="/fonts/manrope-400-normal-latin.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/fonts/archivo-700-normal-latin.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="/fonts/archivo-800-normal-latin.woff2" as="font" type="font/woff2" crossorigin />
-    <link rel="preload" as="image" href="/src/assets/hero.png" />
+    <link rel="preload" as="image" href="/hero.png" />
   </head>
   <body>
     <div id="root"></div>

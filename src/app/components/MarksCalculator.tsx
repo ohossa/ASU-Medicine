@@ -1,5 +1,5 @@
 import React, { useMemo, useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from "motion/react";
 import {
   Award,
   Calculator,
@@ -56,7 +56,8 @@ const OFFICIAL_PRESETS: Record<string, ModulePreset> = {
       { id: "cns-ca", name: "Continuous Assessment", max: 66 },
       { id: "cns-act", name: "Activities / Moodle", max: 12 },
       { id: "cns-prac", name: "Practical Exam", max: 78 },
-      { id: "cns-final", name: "Final Exam (MCQ + Essay)", max: 104 },
+      { id: "cns-final-1", name: "CNS 1", max: 62 },
+      { id: "cns-final-2", name: "CNS 2", max: 42 },
     ],
     boundaries: { A: 221, B: 195, C: 169, D: 156 },
   },
@@ -95,8 +96,7 @@ const OFFICIAL_PRESETS: Record<string, ModulePreset> = {
     id: "P3-2",
     name: "Behavioral Sciences",
     sections: [
-      { id: "bs-ca", name: "Continuous Assessment", max: 10 },
-      { id: "bs-final", name: "Final Exam", max: 20 },
+      { id: "bs-final", name: "Final Exam", max: 30 },
     ],
     boundaries: { A: 26, B: 23, C: 20, D: 18 },
   },

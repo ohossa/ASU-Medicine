@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "comingSoon": true,
+  "meta": {
+    "moduleCode": "MED3-4",
+    "moduleName": "General & Special Internal Medicine 2",
+    "year": 4,
+    "semester": 2,
+    "creditPoints": 5.5,
+    "totalMarks": 110,
+    "keywords": [
+      "internal medicine",
+      "med3"
+    ]
+  },
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Neurology",
+      "subtitle": "Neurology",
+      "emoji": "🧠",
+      "page": 1,
+      "lectureRange": "Lectures 1",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 2,
+      "title": "Endocrinology & Diabetes",
+      "subtitle": "Endocrinology & Diabetes",
+      "emoji": "🍬",
+      "page": 2,
+      "lectureRange": "Lectures 2",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 3,
+      "title": "Hematology & Oncology",
+      "subtitle": "Hematology & Oncology",
+      "emoji": "🩸",
+      "page": 3,
+      "lectureRange": "Lectures 3",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 4,
+      "title": "Rheumatology & Clinical Immunology",
+      "subtitle": "Rheumatology & Clinical Immunology",
+      "emoji": "🦴",
+      "page": 4,
+      "lectureRange": "Lectures 4",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 5,
+      "title": "Geriatrics & Psychiatry",
+      "subtitle": "Geriatrics & Psychiatry",
+      "emoji": "👴",
+      "page": 5,
+      "lectureRange": "Lectures 5",
+      "subjects": [],
+      "keywords": []
+    }
+  ]
+}

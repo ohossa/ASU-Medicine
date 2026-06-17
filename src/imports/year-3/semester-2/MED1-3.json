@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "comingSoon": true,
+  "meta": {
+    "moduleCode": "MED1-3",
+    "moduleName": "Foundation of Internal Medicine",
+    "year": 3,
+    "semester": 2,
+    "creditPoints": 2,
+    "totalMarks": 40,
+    "keywords": [
+      "internal medicine",
+      "med1"
+    ]
+  },
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Clinical History & Communication",
+      "subtitle": "Clinical History & Communication",
+      "emoji": "📝",
+      "page": 1,
+      "lectureRange": "Lectures 1",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 2,
+      "title": "Physical Examination Skills",
+      "subtitle": "Physical Examination Skills",
+      "emoji": "🩺",
+      "page": 2,
+      "lectureRange": "Lectures 2",
+      "subjects": [],
+      "keywords": []
+    }
+  ]
+}

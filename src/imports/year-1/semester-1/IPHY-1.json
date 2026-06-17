@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "comingSoon": true,
+  "meta": {
+    "moduleCode": "IPHY-1",
+    "moduleName": "Introduction to Physiology",
+    "year": 1,
+    "semester": 1,
+    "creditPoints": 3,
+    "totalMarks": 60,
+    "keywords": [
+      "physiology",
+      "iphy"
+    ]
+  },
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Homeostasis & Membrane Transport",
+      "subtitle": "Homeostasis & Membrane Transport",
+      "emoji": "⚖️",
+      "page": 1,
+      "lectureRange": "Lectures 1",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 2,
+      "title": "Autonomic Nervous System",
+      "subtitle": "Autonomic Nervous System",
+      "emoji": "🧠",
+      "page": 2,
+      "lectureRange": "Lectures 2",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 3,
+      "title": "Excitable Tissues",
+      "subtitle": "Excitable Tissues",
+      "emoji": "⚡",
+      "page": 3,
+      "lectureRange": "Lectures 3",
+      "subjects": [],
+      "keywords": []
+    }
+  ]
+}

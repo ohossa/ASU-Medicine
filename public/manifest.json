@@ -1,29 +1,32 @@
 {
-  "short_name": "ASU Portal",
   "name": "ASU Medical Portal",
+  "short_name": "ASU Portal",
+  "description": "Master the ASU medical syllabus through structured assessment, clinical case solvers, and interactive quizzes.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8f9fc",
+  "theme_color": "#0c0e16",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
   "icons": [
     {
       "src": "/favicon.png",
+      "sizes": "128x128",
       "type": "image/png",
-      "sizes": "512x512",
       "purpose": "any"
     },
     {
-      "src": "/favicon.svg",
-      "type": "image/svg+xml",
-      "sizes": "any",
-      "purpose": "any"
+      "src": "/favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
     },
     {
-      "src": "/asu-medicine-logo.webp",
-      "type": "image/webp",
+      "src": "/favicon-512.png",
       "sizes": "512x512",
-      "purpose": "any"
+      "type": "image/png",
+      "purpose": "any maskable"
     }
-  ],
-  "start_url": "/",
-  "background_color": "#0c0e16",
-  "theme_color": "#0c0e16",
-  "display": "standalone",
-  "orientation": "portrait"
+  ]
 }

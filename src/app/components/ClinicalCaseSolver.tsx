@@ -2,7 +2,7 @@
 // ASU Medical Portal — Interactive clinical case simulator.
 
 import React, { useMemo, useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from "motion/react";
 import {
   Activity, Clock, Heart, Check, X,
   ArrowRight, ArrowLeft, Award, FileText,
@@ -408,6 +408,7 @@ function StagePresentation({ currentCase }: { currentCase: CaseData }) {
           <img
             src={currentCase.imageUrl}
             alt="Clinical scan mockup"
+            loading="lazy"
             style={{
               width: "100%",
               height: "100%",

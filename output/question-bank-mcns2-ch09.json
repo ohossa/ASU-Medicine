@@ -1,0 +1,726 @@
+{
+  "schemaVersion": 1,
+  "meta": {
+    "moduleCode": "MCNS-2",
+    "moduleName": "Central Nervous System",
+    "year": 2,
+    "semester": 2,
+    "creditPoints": 6,
+    "totalMarks": 200,
+    "keywords": [
+      "CNS",
+      "Neuroanatomy",
+      "Neuropharmacology",
+      "Neurophysiology",
+      "Neuropathology"
+    ]
+  },
+  "chapterTitle": "IX. Neurodegenerative & Demyelinating Diseases",
+  "questions": [
+    {
+      "id": "mcns2-ch1-pharma-q92",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Riluzole is prescribed in Amyotrophic lateral sclerosis to:",
+      "explanation": "Riluzole is a glutamate release inhibitor that modestly extends survival and delays ventilator dependence in ALS by reducing excitotoxic neuronal death.",
+      "keyConcept": "Riluzole reduces glutamate‑mediated excitotoxicity to modestly prolong survival and delay ventilation in ALS.",
+      "options": [
+        "Decrease onset of dementia",
+        "Decrease confusion and headache",
+        "Decrease need for ventilator",
+        "All of the above"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch10-pharma-q2",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The following drug can be used alone in treatment of Parkinson disease",
+      "explanation": "Pramipexole can be used alone in treatment of Parkinson disease. Option B is correct. Pramipexole is a D2/D3 dopamine agonist that can be used as monotherapy in early Parkinson's disease. L-dopa is combined with carbidopa/benserazide (not used alone). Entacapone is a COMT inhibitor added to L-dopa. Carbidopa is a peripheral decarboxylase inhibitor that cannot penetrate BBB.",
+      "keyConcept": "D2 agonists like pramipexole can be used as monotherapy in early Parkinson's disease due to their ability to directly stimulate dopamine receptors.",
+      "options": [
+        "L-dopa",
+        "Pramipexole",
+        "Entacapone",
+        "Carbidopa"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch10-pharma-q59",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Fampridine: Mechanism, route and its role in multiple sclerosis",
+      "explanation": "Fampridine (dalfampridine) is a potassium channel blocker that improves walking in multiple sclerosis by enhancing conduction in demyelinated axons. Given orally, it is the only MS treatment specifically approved for walking improvement.",
+      "keyConcept": "Fampridine enhances conduction in demyelinated nerves, improving MS-related walking disability.",
+      "modelAnswer": "**Fampridine (Dalfampridine):**\n\n**Mechanism of Action:**\n- Blocks voltage-gated potassium channels\n- Increases action potential duration\n- Enhances conduction in demyelinated axons\n- Improves nerve impulse propagation\n- Reduces conduction block\n\n**Route of Administration:**\n- Oral tablets\n- 10 mg twice daily\n- Not extended release (dalfampridine is the sustained-release formulation)\n\n**Role in Multiple Sclerosis:**\n\n1. **Walking Improvement:**\n   - FDA-approved for improving walking\n   - First MS treatment specifically for this indication\n   - 30-40% of patients respond\n\n2. **How it helps:**\n   - Improves ambulation\n   - Faster walking speed\n   - Less fatigue\n\n**Adverse Effects:**\n- Seizures (dose-related)\n- Dizziness\n- Insomnia\n- Urinary tract infections\n\n**Contraindications:**\n- History of seizures\n- Moderate to severe renal impairment\n- Concurrent use with other potassium channel blockers"
+    },
+    {
+      "id": "mcns2-ch10-pharma-q60",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Enumerate three disease modifying drugs (DMDs) used in multiple sclerosis. Mention mechanism of one of them",
+      "explanation": "Three disease-modifying drugs for MS are interferon-beta (immunomodulator), glatiramer acetate (synthetic myelin), and fingolimod (S1P receptor modulator). Interferon-beta reduces relapse frequency by modulating immune response.",
+      "keyConcept": "MS disease-modifying drugs include interferon-beta, glatiramer, and fingolimod with different immunomodulatory mechanisms.",
+      "modelAnswer": "Three disease-modifying drugs (DMDs) in multiple sclerosis:\n\n**1. Interferon-beta (IFN-β):**\n- **Mechanism:**\n  - Immunomodulation\n  - Reduces pro-inflammatory cytokines\n  - Increases anti-inflammatory cytokines\n  - Reduces T-cell migration across BBB\n  - Decreases relapse frequency\n- **Examples:** Avonex, Rebif, Betaseron\n- **Route:** SC or IM injection\n\n**2. Glatiramer Acetate:**\n- **Mechanism:**\n  - Synthetic myelin basic protein analog\n  - Shifts T-cell response from pro-inflammatory to anti-inflammatory\n  - Creates immune tolerance\n- **Route:** SC injection\n\n**3. Fingolimod:**\n- **Mechanism:**\n  - Sphingosine-1-phosphate receptor modulator\n  - Traps lymphocytes in lymph nodes\n  - Reduces autoreactive T-cell CNS infiltration\n- **Route:** Oral\n\n**Other DMDs:**\n- Natalizumab (mAb against α4-integrin)\n- Ocrelizumab (anti-CD20 mAb)\n- Dimethyl fumarate\n- Teriflunomide\n- Alemtuzumab"
+    },
+    {
+      "id": "mcns2-ch10-pharma-q62",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Enumerate 2 antipsychotic drugs suitable to manage psychosis in Parkinson disease",
+      "explanation": "In Parkinson's disease psychosis, clozapine and quetiapine are preferred because they have minimal D2 antagonism in the nigrostriatal pathway, avoiding worsening of motor symptoms.",
+      "keyConcept": "Clozapine and quetiapine are the preferred antipsychotics in Parkinson's disease psychosis due to their low D2 blocking potency in motor pathways.",
+      "modelAnswer": "Two antipsychotics suitable for psychosis in Parkinson's disease: (1) Clozapine — at low doses (12.5–50 mg/day) it has minimal D2 receptor occupancy in the nigrostriatal pathway, effectively treating psychosis without worsening parkinsonism. Requires WBC monitoring. (2) Quetiapine — also has low D2 affinity and minimal motor worsening; considered first‑line in PD psychosis due to favorable tolerability without mandatory blood monitoring."
+    },
+    {
+      "id": "mcns2-ch10-pharma-q102",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The following drug is 1st choice in treatment of psychosis in Parkinson disease:",
+      "explanation": "Quetiapine is the preferred antipsychotic for psychosis in Parkinson's disease because it has the lowest EPS risk among antipsychotics and doesn't worsen parkinsonian symptoms. Haloperidol (A) and risperidone (B) can worsen parkinsonism. Aripiprazole (C) may also worsen motor symptoms in some patients. Quetiapine's low D2 affinity and rapid dissociation from D2 receptors results in minimal motor side effects. Pimavanserin is also FDA-approved for Parkinson's psychosis but wasn't listed. The answer is D - quetiapine is the first choice for psychosis in Parkinson's disease.",
+      "keyConcept": "Quetiapine is preferred in Parkinson's disease psychosis due to its minimal extrapyramidal effects and low propensity to worsen motor symptoms.",
+      "options": [
+        "Haloperidol",
+        "Risperidone",
+        "Aripiprazole",
+        "Quetiapine"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch10-pharma-q122",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "What is the management approach for Multiple Sclerosis?",
+      "explanation": "MS management: disease-modifying therapies (interferon-beta, glatiramer, natalizumab, fingolimod) for relapsing forms; symptom management; rehabilitation.选项D正确. The answer is D. No cure - treatment aims to reduce relapses and disability.",
+      "keyConcept": "MS management uses disease-modifying therapies to reduce relapse rate and slow disability progression.",
+      "options": [
+        "Treatment of acute episodes (exacerbations) with corticosteroids",
+        "Disease Modifying Drugs (DMDs)",
+        "Symptomatic treatment",
+        "All of the above"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-pathology-q2",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which of the following aneurysms can affect the cerebral vessels:",
+      "explanation": "Cerebral aneurysms can be of multiple types: 1) Congenital/berry aneurysms - most common, form at arterial bifurcations due to congenital media weakness; 2) Atherosclerotic aneurysms - result from atherosclerotic weakening of vessel wall, usually fusiform; 3) Mycotic aneurysms - due to septic emboli from bacterial endocarditis weakening vessel wall (rare); 4) Traumatic aneurysms - false aneurysms from head trauma. All types can affect cerebral vessels. Option D (All of the above) is correct. The most common are congenital berry aneurysms at the Circle of Willis.",
+      "keyConcept": "Cerebral aneurysms have multiple etiologies including congenital, atherosclerotic, and mycotic types.",
+      "options": [
+        "Mycotic aneurysms",
+        "Atherosclerotic aneurysms",
+        "Congenital aneurysms",
+        "All of the above"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-pathology-q7",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "What is the most common cause of dementia in the elderly population?",
+      "explanation": "Alzheimer's Disease is the MOST COMMON cause of dementia in the elderly, accounting for 60-80% of cases. Frontotemporal lobe degeneration (B) is less common and affects younger patients. Huntington Chorea (C) is a genetic disorder causing chorea and dementia. Parkinson's Disease (D) can cause dementia (Parkinson's disease dementia) but AD is more common. The answer is A - Alzheimer's Disease. Risk increases with age; APOE4 allele is a major risk factor.",
+      "keyConcept": "Alzheimer's Disease is the leading cause of dementia in the elderly, characterized by amyloid plaques and neurofibrillary tangles.",
+      "options": [
+        "Alzheimer’s Disease (AD)",
+        "Frontotemporal lobe degeneration",
+        "Huntington Chorea",
+        "Parkinson’s Disease"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-pathology-q8",
+      "type": "essay",
+      "lecture": 1,
+      "text": "What is the primary lipid of myelin?",
+      "explanation": "The primary lipid of myelin is cerebroside (galactocerebroside), a galactose-containing glycolipid. Myelin composition: ~40% water, ~60% lipids (cholesterol, phospholipids, cerebrosides), ~10% proteins. Cerebroside provides the insulating property and is specific to myelin-forming cells. Other myelin lipids include cholesterol and sphingomyelin. The primary lipid (by concentration in myelin sheets) is actually cholesterol, but cerebroside is considered the characteristic myelin lipid.",
+      "keyConcept": "Cerebroside (galactocerebroside) is the characteristic lipid of myelin, providing insulating properties.",
+      "modelAnswer": "The primary lipid of myelin is galactocerebroside (also called cerebroside). Sphingolipids such as galactocerebroside and sulfatide constitute the predominant lipids of the myelin sheath, accounting for about 25-30% of myelin dry weight. Their hydrophobic character is critical for the insulating properties of myelin, allowing saltatory conduction of nerve impulses."
+    },
+    {
+      "id": "mcns2-ch1-pathology-q10",
+      "type": "essay",
+      "lecture": 1,
+      "text": "What is Krabbe disease?",
+      "explanation": "Krabbe disease (globoid cell leukodystrophy) is a rare autosomal recessive lysosomal storage disorder caused by deficiency of galactocerebrosidase. This leads to accumulation of galactocerebroside, which is toxic to oligodendrocytes, causing severe demyelination. Clinical features: irritability, stiffness, developmental regression, optic atrophy, seizures. Onset is typically in infancy (3-6 months), progressing rapidly. Pathology shows multinucleated macrophages (globoid cells). It is a primary disease of myelin (leukodystrophy).",
+      "keyConcept": "Krabbe disease is a leukodystrophy caused by galactocerebrosidase deficiency leading to oligodendrocyte destruction.",
+      "modelAnswer": "Krabbe disease is an autosomal recessive disorder characterized by a deficiency of Galactosyl ceramidase, resulting in the accumulation of unmetabolized lipids, leading to demyelination and severe progressive degeneration of motor skills."
+    },
+    {
+      "id": "mcns2-ch1-pathology-q11",
+      "type": "essay",
+      "lecture": 1,
+      "text": "What are primary diseases of myelin?",
+      "explanation": "Primary diseases of myelin (leukodystrophies) are conditions primarily affecting oligodendrocytes or myelin itself, with relative preservation of axons initially. Examples include: Multiple Sclerosis (autoimmune), Krabbe disease (lysosomal enzyme deficiency), Metachromatic leukodystrophy (ARSA deficiency), Adrenoleukodystrophy (peroxisomal disorder), and Pelizaeus-Merzbacher disease (PLP1 mutation). These contrast with axonal diseases where myelin is secondarily affected.",
+      "keyConcept": "Primary myelin diseases (leukodystrophies) include MS, Krabbe disease, and metachromatic leukodystrophy - all affecting oligodendrocytes.",
+      "modelAnswer": "Primary diseases of myelin refer to diseases within the CNS where axons are tightly ensheathed by myelin, and myelin is not formed properly or has abnormal turnover kinetics."
+    },
+    {
+      "id": "mcns2-ch1-pathology-q12",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "What is the clinical syndrome of altered mental status secondary to head injury?",
+      "explanation": "Concussion is the clinical syndrome of altered mental status following head injury. It involves transient neurological dysfunction without structural damage. Contusion (B) is direct parenchymal injury. Diffuse axonal injury (C) involves shearing of axons. Epidural hematoma (D) is bleeding between skull and dura. The answer is A - concussion is the classic mild TBI with altered mental status, often with loss of consciousness, confusion, and amnesia.",
+      "keyConcept": "Concussion is transient altered mental status from head trauma without structural brain damage.",
+      "options": [
+        "Concussion",
+        "Contusion",
+        "Diffuse axonal injury",
+        "Epidural hematoma"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-pathology-q13",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "What is a contusion in traumatic head injury? And what is its types?",
+      "explanation": "Contusion is direct parenchymal brain injury with three types: coup injury at the point of impact, contrecoup injury opposite the impact, and intermediate coup. This includes direct neuronal and glial damage, hemorrhage, and edema. Option D 'All of the above' is correct. Contusions occur from deceleration-acceleration forces causing brain to impact skull. The answer is D. Contusions may evolve into contrecoup injuries due to brain movement within the skull.",
+      "keyConcept": "Contusions are direct brain injuries including coup (impact), contrecoup (rebound), and intermediate injuries.",
+      "options": [
+        "Direct parenchymal injury to the brain",
+        "Coup injury at the point of impact",
+        "Contrecoup injury opposite the point of impact",
+        "All of the above"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch1-pathology-q15",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "What is the condition called when a patient experiences a lucid interval before losing consciousness?",
+      "explanation": "'Talk and die' syndrome refers to the classic epidural hematoma presentation where patients talk after injury, then deteriorate as the hematoma expands. This reflects the lucid interval. Option A is CORRECT. 'Talk and die' describes the sequence: initial consciousness (talking), followed by rapid neurological decline from expanding hematoma and impending herniation. The answer is A. This distinguishes epidural from subdural hematoma which typically presents without lucid interval.",
+      "keyConcept": "'Talk and die' syndrome describes the lucid interval in epidural hematoma before rapid deterioration.",
+      "options": [
+        "“Talk and die” syndrome",
+        "Delayed herniation",
+        "Secondary brain injury",
+        "Cerebral edema"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-pathology-q16",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "What is the most common cause of cerebral infarction?",
+      "explanation": "The most common cause of cerebral infarction is arterial occlusion from thrombi or emboli. Thrombosis typically occurs at atherosclerotic plaques in large arteries; emboli usually arise from carotid plaque, cardiac sources (atrial fibrillation, valve vegetations), or aortic arch. Option A is CORRECT. Venous occlusion (B) is less common. Cerebral vasculitis (C) and Moyamoya (D) are uncommon causes. The answer is A. Cardioembolic and large vessel atherosclerotic strokes are most common.",
+      "keyConcept": "Arterial thrombi/emboli causing large vessel occlusion are the most common cause of cerebral infarction.",
+      "options": [
+        "Arterial occlusion of the cerebral arteries by either thrombi or emboli",
+        "Venous occlusion",
+        "Cerebral vasculitis",
+        "Moyamoya disease"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-pathology-q17",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "What causes lacunar infarcts?",
+      "explanation": "Lacunar infarcts are caused by occlusion of penetrating branches of cerebral arteries (lenticulostriate arteries, etc.). Small vessel disease from lipohyalinosis and fibrinoid necrosis leads to these occlusions. Option A is CORRECT. Large artery occlusion (B) causes larger cortical strokes. Vasculitis (C) and emboli (D) cause different stroke types. The answer is A. Lacunes are associated with chronic hypertension.",
+      "keyConcept": "Lacunar infarcts result from small penetrating artery occlusion due to lipohyalinosis, commonly from hypertension.",
+      "options": [
+        "Occlusion of penetrating branches of cerebral arteries",
+        "Occlusion of large cerebral arteries",
+        "Vasculitis",
+        "Emboli"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-pathology-q18",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "What is the most common cause of thrombotic occlusion of the carotid or cerebral arteries?",
+      "explanation": "Atherosclerosis is the most common cause of thrombotic occlusion of carotid/cerebral arteries. Atherosclerotic plaques narrow arteries, promote thrombus formation, and can cause artery-to-artery embolism. Option A is CORRECT. Moyamoya disease (B), vasculitis (C), and fibromuscular dysplasia (D) are uncommon causes. The answer is A. Atherosclerosis risk factors include hypertension, diabetes, smoking, hyperlipidemia.",
+      "keyConcept": "Atherosclerosis is the leading cause of carotid/cerebral artery thrombosis - modifiable risk factors are key.",
+      "options": [
+        "Atherosclerosis",
+        "Moyamoya disease",
+        "Vasculitis",
+        "Fibromuscular dysplasia"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-pathology-q19",
+      "type": "essay",
+      "lecture": 1,
+      "text": "What are the causes of meningitis?",
+      "explanation": "Causes of meningitis include: Bacterial (S. pneumoniae, N. meningitidis, H. influenzae, Listeria - most common in adults); Viral (enteroviruses, HSV, HIV, arboviruses); Fungal (Cryptococcus - especially in HIV); Tuberculous (Mycobacterium tuberculosis); Parasitic (Naegleria, Acanthamoeba). Transmission routes: hematogenous spread, direct extension (sinusitis, otitis), meningitis, trauma. Risk factors include immunocompromise, overcrowding, and incomplete vaccination.",
+      "keyConcept": "Meningitis causes include bacteria, viruses, fungi, and parasites - route of infection is usually hematogenous.",
+      "modelAnswer": "Infection (bacterial, viral, tuberculous, spirochetal, or cryptococcal), Certain drugs and chemicals, SLE, Meningeal carcinomatosis."
+    },
+    {
+      "id": "mcns2-ch1-pathology-q26",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Describe the gross pathology of Ependymomas.",
+      "explanation": "Ependymomas appear as: well-demarcated, grayish-red masses that may be solid or cystic. They may have areas of hemorrhage and necrosis. Intracranial ependymomas often fill the ventricle; spinal ependymomas are intramedullary. The answer is A. The well-circumscribed nature allows for surgical resection.",
+      "keyConcept": "Ependymomas are well-demarcated masses - intracranial tumors fill ventricles, spinal tumors are intramedullary.",
+      "options": [
+        "Ependymomas are well-circumscribed tumors that are soft and spongy",
+        "Ependymomas are highly vascular with necrosis",
+        "Ependymomas are mucinous with myxoid stroma",
+        "Ependymomas are often cystic with a mural nodule"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-pathology-q27",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "What are the microscopic features of Ependymomas?",
+      "explanation": "Ependymoma microscopic features include: perivascular pseudorosettes (tumor cells arranged around blood vessels with fibrillary processes) and true ependymal rosettes (tumor cells arranged around central lumen). The cells have uniform, round to oval nuclei. The answer is A. Perivascular pseudorosettes are the most distinctive feature. GFAP is positive.",
+      "keyConcept": "Ependymomas show perivascular pseudorosettes and true rosettes - diagnostic histological features.",
+      "options": [
+        "Uniform small cells, round to oval nuclei with granular chromatin",
+        "Highly cellular with marked nuclear atypia",
+        "Presence of Rosenthal fibers",
+        "Presence of endothelial proliferation"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-pathology-q28",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Which of the following is true about meningococcal meningitis?",
+      "explanation": "Meningococcal meningitis primarily affects young adults (not elderly), involves the leptomeninges (pia-arachnoid), not primarily the dura. Waterhouse-Friderichsen syndrome (acute adrenal insufficiency) is a serious complication due to bilateral adrenal hemorrhage.",
+      "keyConcept": "Meningococcal meningitis: young adults, leptomeninges, Waterhouse-Friderichsen syndrome",
+      "options": [
+        "It most commonly affects adults around the sixth decade of life.",
+        "The dura mater is mainly affected by suppuration.",
+        "The condition may be complicated by acute adrenal insufficiency.",
+        "All of the above."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-pathology-q29",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Infection spreads from suppurative lung diseases to the brain via:",
+      "explanation": "Infection spreads from suppurative lung diseases (lung abscess, bronchiectasis) to the brain via vertebral veins (Batson's venous plexus), which connects the pelvic veins to the intracranial venous sinuses.",
+      "keyConcept": "Lung infection spreads to brain via vertebral veins (Batson's plexus)",
+      "options": [
+        "Vertebral arteries.",
+        "Vertebral veins.",
+        "Local extension.",
+        "Direct spread from air sinuses."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-pathology-q30",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Myotic cerebral aneurysms are due to:",
+      "explanation": "Mycotic (septic) aneurysms result from septic emboli lodging in cerebral vessels, typically from subacute bacterial endocarditis. The emboli cause arterial wall weakening and aneurysm formation.",
+      "keyConcept": "Mycotic aneurysms from septic emboli of subacute bacterial endocarditis",
+      "options": [
+        "Congenital weakness of the wall of cerebral vessels.",
+        "Septic emboli from subacute bacterial endocarditis.",
+        "Atherosclerosis of the cerebral vessels.",
+        "Increased intracranial tension."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-pathology-q31",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Modes of infection in pyogenic meningitis include all EXCEPT:",
+      "explanation": "Pyogenic meningitis spreads via droplet infection, local spread from sinuses, direct implantation (skull fracture), and skin seeding; blood transfusion is NOT a mode.",
+      "keyConcept": "Meningitis routes of infection",
+      "options": [
+        "Droplet infection",
+        "Blood transfusion",
+        "Local spread from paranasal sinuses",
+        "Via skin",
+        "Direct implantation in case of skull fracture"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch8-pathology-q1",
+      "type": "truefalse",
+      "lecture": 1,
+      "text": "True or False: Oligoclonal bands are usually identified in the CSF of patients with Multiple Sclerosis.",
+      "explanation": "TRUE - Oligoclonal bands are typically found in the CSF of MS patients. These bands represent locally synthesized IgG antibodies within the CNS, indicating intrathecal inflammation. Oligoclonal bands are found in ~90-95% of MS patients and help support diagnosis. They distinguish MS from other conditions and indicate ongoing immune activity within the CNS. The answer is True.",
+      "keyConcept": "Oligoclonal bands in CSF indicate intrathecal IgG synthesis and support MS diagnosis.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch8-pathology-q3",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "CSF in acute septic meningitis does NOT show:",
+      "explanation": "In acute septic meningitis, CSF shows decreased glucose (bacteria consume it), elevated protein, increased WBCs (neutrophils), and organisms on Gram stain.",
+      "keyConcept": "CSF findings in meningitis",
+      "options": [
+        "Increased amount",
+        "Increased protein content",
+        "Increased sugar content",
+        "Polymorphonuclear cells",
+        "Organisms"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch8-pathology-q4",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "CSF shows cobweb coagulum of fibrin on standing in case of:",
+      "explanation": "Chronic meningitis causes high protein in CSF leading to fibrin web formation (cobweb coagulum) on standing, unlike acute pyogenic meningitis with diffuse clotting.",
+      "keyConcept": "CSF cobweb coagulum",
+      "options": [
+        "Acute pyogenic meningitis",
+        "Chronic meningitis",
+        "Brain abscess",
+        "Encephalitis",
+        "Cerebral infarction"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch10-pathology-q3",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "What is the crucial event in the pathogenesis of Alzheimer’s Disease (AD)?",
+      "explanation": "The crucial event in AD pathogenesis is accumulation of Beta Amyloid Peptide (Aß) in the brain. Aß is derived from APP (amyloid precursor protein) via proteolytic cleavage by beta-secretase and gamma-secretase. Aß 1-42 is particularly prone to aggregation and forms the amyloid plaques. Option A is CORRECT. B) Tau protein accumulation is also important (forms neurofibrillary tangles) but Aß accumulation is considered the initiating/crucial event. C) Alpha-synuclein is seen in Parkinson's disease (Lewy bodies). D) Prion protein is in prion diseases. The answer is A - Aß accumulation is the key initiating event in AD pathogenesis.",
+      "keyConcept": "Beta-amyloid accumulation is the crucial initiating event in Alzheimer's disease, leading to plaque formation and neuronal dysfunction.",
+      "options": [
+        "The accumulation of Beta Amyloid Peptide (Aß) in the brain over time.",
+        "The accumulation of Tau protein in the brain over time.",
+        "The accumulation of Alpha-synuclein in the brain over time.",
+        "The accumulation of Prion protein in the brain over time."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch10-pathology-q4",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "What is the role of Amyloid Precursor Protein (APP) in Alzheimer’s Disease (AD)?",
+      "explanation": "APP (Amyloid Precursor Protein) is sequentially cleaved by enzymes (secretases) to generate Aß peptide. Alpha-secretase cleaves APP first, then beta-secretase (BACE), then gamma-secretase releases Aß. Option A is CORRECT. B) APP generates Aß, not Tau; C) Not alpha-synuclein; D) Not prion protein. The amyloid cascade hypothesis: APP processing → Aß accumulation → plaques → inflammation → tau pathology → neuronal death. The answer is A - APP is cleaved to generate Aß, the main component of amyloid plaques in AD.",
+      "keyConcept": "APP sequential cleavage by secretases generates Aß peptide, the amyloid plaque component in Alzheimer's disease.",
+      "options": [
+        "APP is sequentially cleaved by enzymes to generate Aß.",
+        "APP is sequentially cleaved by enzymes to generate Tau protein.",
+        "APP is sequentially cleaved by enzymes to generate Alpha-synuclein.",
+        "APP is sequentially cleaved by enzymes to generate Prion protein."
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch10-pathology-q5",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "What are the gross characteristics of Multiple Sclerosis lesions?",
+      "explanation": "Multiple sclerosis lesions appear as multiple, well-circumscribed gray-tan plaques near ventricles and throughout CNS white matter. These plaques represent areas of demyelination. Option C 'Both A and B' is correct. The lesions are typically periventricular but can occur anywhere in CNS. The answer is C. MS is characterized by disseminated plaques in time and space.",
+      "keyConcept": "MS lesions appear as gray-tan plaques near ventricles - the classic radiological and pathological finding.",
+      "options": [
+        "Multiple, well-circumscribed",
+        "Gray-tan plaques near the ventricles and in various areas of the CNS.",
+        "Both A and B",
+        "None of the above"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch10-pathology-q6",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "What is the microscopic appearance of active Multiple Sclerosis plaques?",
+      "explanation": "Active MS plaques show ongoing myelin breakdown with abundant macrophages containing myelin debris (lipid-laden macrophages). Option A is CORRECT. Complete loss of myelin with axonal damage (B) is more advanced/stable lesions. Inflammation with lymphocytes (C) is present but not the defining feature. Gliosis (D) is the end result. The answer is A. Active plaques have perivascular inflammation and myelin breakdown; chronic plaques show gliosis with few cells.",
+      "keyConcept": "Active MS plaques are characterized by macrophages containing myelin debris - evidence of ongoing demyelination.",
+      "options": [
+        "Evidence of ongoing myelin breakdown with abundant macrophages containing myelin debris.",
+        "Complete loss of myelin with axonal damage.",
+        "Inflammation with lymphocytic infiltration.",
+        "Gliosis with astrocytosis."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch10-pathology-q7",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "What is the clinical course of Multiple Sclerosis?",
+      "explanation": "Multiple sclerosis typically follows a relapsing-remitting course: episodes of neurological dysfunction (relapses) followed by partial or complete recovery (remissions). Over time, deficits accumulate. Option A is CORRECT. Primary progressive MS (B) occurs in ~10-15% but the classic course is relapsing-remitting. Complete recovery (C) doesn't occur - there's typically residual deficit. The answer is A. Most patients eventually transition to secondary progressive MS.",
+      "keyConcept": "MS follows a relapsing-remitting course with accumulated deficits over time - distinguishing it from other conditions.",
+      "options": [
+        "Relapsing and remitting episodes of neurologic impairment with gradual accumulation of deficits over time.",
+        "Progressive worsening from onset.",
+        "Complete recovery after initial episode.",
+        "Static condition with no progression."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch10-pathology-q9",
+      "type": "essay",
+      "lecture": 1,
+      "text": "What are the main symptoms of Multiple Sclerosis?",
+      "explanation": "Main symptoms of MS include: sensory symptoms (numbness, tingling), motor weakness, visual disturbances (optic neuritis - pain with eye movement, vision loss), ataxia, diplopia, fatigue, bladder dysfunction, and cognitive changes. Symptoms vary depending on which CNS areas are affected by demyelination. The pattern of symptoms reflects disseminated CNS involvement. Optic neuritis is a common presenting symptom. Symptoms may worsen with heat (Uhthoff phenomenon).",
+      "keyConcept": "MS symptoms reflect disseminated CNS lesions: sensory changes, weakness, optic neuritis, ataxia, and fatigue.",
+      "modelAnswer": "Fatigue, visual impairment, cognitive impairment, weakness, spasms, pain, and bowel and urinary dysfunction."
+    },
+    {
+      "id": "mcns2-ch10-pathology-q10",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "What is the location and symptoms of an epidural hematoma?",
+      "explanation": "Epidural hematoma is located between skull and dura (A). Classic presentation: lucid interval (period of consciousness after trauma) followed by rapid neurological deterioration and possible transtentorial herniation (B). This is a neurosurgical emergency. Option C 'Both A and B' is correct. The lucid interval occurs as blood accumulates, raising intracranial pressure. The answer is C. Mortality is high without surgical evacuation.",
+      "keyConcept": "Epidural hematoma presents with lucid interval followed by rapid deterioration - a neurosurgical emergency.",
+      "options": [
+        "Between the skull and dura",
+        "Symptoms include lucid interval before loss of consciousness and possible transtentorial herniation.",
+        "Both A and B",
+        "None of the above"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch10-pathology-q11",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "What is the location and symptoms of a subdural hematoma?",
+      "explanation": "Subdural hematoma is located between dura and arachnoid (A). Symptoms include slow venous bleeding with delayed onset of headache, confusion, and altered consciousness (B). This differs from arterial epidural hematoma which presents acutely. Option C 'Both A and B' is correct. Acute subdural hematoma presents within 72 hours; chronic subdural may present weeks after injury. The answer is C. Subdural hematoma crosses suture lines unlike epidural.",
+      "keyConcept": "Subdural hematoma is venous bleeding between dura and arachnoid with delayed, progressive symptoms.",
+      "options": [
+        "Between the dura and arachnoid",
+        "Symptoms include slow venous bleeding with delayed onset of headache and confusion.",
+        "Both A and B",
+        "None of the above"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch10-pathology-q12",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which vessel is most commonly involved in an epidural hematoma?",
+      "explanation": "The middle meningeal artery (branch of maxillary artery) is most commonly involved in epidural hematoma, usually from temporal bone fracture. It courses through the middle cranial fossa. The answer is A. Anterior cerebral artery (B), posterior cerebral artery (C), and basilar artery (D) are not typically involved in epidural hematoma. The middle meningeal artery injury causes rapid arterial bleeding and quick progression.",
+      "keyConcept": "Middle meningeal artery injury causes epidural hematoma - the most common arterial source in head trauma.",
+      "options": [
+        "Middle meningeal artery",
+        "Anterior cerebral artery",
+        "Posterior cerebral artery",
+        "Basilar artery"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch10-pathology-q14",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "What is the appearance of an epidural hematoma on a head CT scan?",
+      "explanation": "Epidural hematoma appears as a biconvex (lens-shaped or lens-shaped) hyperdensity on CT that does NOT cross suture lines. This is because it's arterial bleeding that stays localized between the skull and dural attachments at sutures. Option A is CORRECT. Crescent-shaped hemorrhage crossing suture lines is subdural hematoma (B). The answer is A. The lens shape reflects the collection being bounded by suture lines.",
+      "keyConcept": "Epidural hematoma appears as biconvex (lens-shaped) collection that does not cross suture lines on CT.",
+      "options": [
+        "Biconvex-shaped hemorrhage that does not cross suture lines",
+        "Crescent-shaped hemorrhage that crosses suture lines",
+        "Circular hemorrhage that does not cross suture lines",
+        "Irregular hemorrhage that crosses suture lines"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch10-pathology-q15",
+      "type": "truefalse",
+      "lecture": 1,
+      "text": "True or False: Oligodendrogliomas have a better prognosis than that of diffuse astrocytic tumors of similar grade.",
+      "explanation": "TRUE - Oligodendrogliomas generally have a better prognosis than diffuse astrocytic tumors of similar grade. This is because oligodendrogliomas: respond better to chemotherapy (1p/19q codeletion), grow more slowly, and have better survival rates. Diffuse astrocytic tumors (glioblastoma, anaplastic astrocytoma) have worse outcomes even with aggressive treatment. The 1p/19q codeletion in oligodendrogliomas predicts chemotherapy responsiveness. The answer is True.",
+      "keyConcept": "Oligodendrogliomas have better prognosis than astrocytomas due to 1p/19q codeletion predicting chemotherapy response.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch10-pathology-q16",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "What is the key genetic finding in oligodendrogliomas?",
+      "explanation": "The key genetic finding in oligodendrogliomas is codeletion of chromosomes 1p and 19q. This occurs through unbalanced translocation t(1;19)(q10;p10). This codeletion is associated with better prognosis and excellent response to PCV chemotherapy (procarbazine, lomustine, vincristine). Option B is CORRECT. EGFR overexpression (A) is seen in glioblastoma. IDH1 mutation (C) is found in many gliomas but not specific. MDM2 amplification (D) is in some glioblastomas. The answer is B.",
+      "keyConcept": "1p/19q codeletion is the hallmark genetic abnormality of oligodendroglioma, predicting better prognosis.",
+      "options": [
+        "Overexpression of EGFR",
+        "Codeletion of chromosomes 1p and 19q",
+        "Mutation in IDH1",
+        "Amplification of MDM2"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch10-pathology-q17",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "What are the key microscopic features of oligodendrogliomas WHO grade II?",
+      "explanation": "Oligodendroglioma WHO grade II shows: sheets of regular cells with rounded nuclei containing finely granular rounded chromatin ('fried egg' appearance), surrounded by clear halo (perinuclear halo), and characteristic 'chicken-wire' or anastomosing capillary network. Option A is CORRECT. Highly cellular with marked nuclear atypia (B) suggests higher grade (anaplastic). Rosenthal fibers (C) and eosinophilic granular bodies (D) are seen in pilocytic astrocytoma. The answer is A. The 'fried egg' cells and capillary network are classic histological features.",
+      "keyConcept": "Oligodendrogliomas show 'fried egg' cells with perinuclear halos and 'chicken-wire' capillary network.",
+      "options": [
+        "Sheets of regular cells with rounded nuclei containing finely granular rounded chromatin surrounded by a clear halo of cytoplasm and anastomosing capillaries",
+        "Highly cellular with marked nuclear atypia",
+        "Presence of Rosenthal fibers",
+        "Presence of eosinophilic granular bodies"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch10-pathology-q18",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "What are the key microscopic features of oligodendrogliomas WHO grade III?",
+      "explanation": "Anaplastic oligodendroglioma (WHO grade III) shows: increased cellularity, marked nuclear atypia, brisk mitotic activity, and microvascular proliferation. Unlike grade II, grade III shows clear malignant features. The 'fried egg' appearance may still be present but with more pleomorphism.选项A符合WHO III级标准. Options B, C, D describe features of other tumors (higher grade astrocytoma or pilocytic astrocytoma). The answer is A. Grade III oligodendrogliomas have 1p/19q codeletion and respond well to chemotherapy.",
+      "keyConcept": "Anaplastic oligodendroglioma (grade III) shows marked nuclear atypia and mitotic activity, distinguishing it from grade II.",
+      "options": [
+        "More aggressive with higher cell density, nuclear anaplasia, and prominent mitotic activity",
+        "Low cellularity with mild nuclear atypia",
+        "Presence of endothelial proliferation",
+        "Presence of necrosis"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch10-pathology-q19",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Where are pilocytic astrocytomas most commonly located?",
+      "explanation": "Pilocytic astrocytomas are most commonly located in the CEREBELLUM (posterior fossa). They also occur in optic pathways, brainstem, and spinal cord. The cerebellar location is classic, especially in children. The answer is B. This is the most common pediatric brain tumor and has excellent prognosis when completely resected.",
+      "keyConcept": "Pilocytic astrocytoma occurs most commonly in the cerebellum in children - excellent prognosis with resection.",
+      "options": [
+        "Cerebral hemispheres",
+        "Cerebellum",
+        "Brainstem",
+        "Spinal cord"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch10-pathology-q20",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "What genetic alterations are associated with pilocytic astrocytomas?",
+      "explanation": "Pilocytic astrocytomas are associated with genetic alterations including BRAF fusion (KIAA1549-BRAF) and other MAPK pathway activations. These are low-grade tumors with different genetics from diffuse astrocytomas.选项A正确 - BRAF改变与毛细胞型星形细胞瘤相关. The answer is A. BRAF V600E mutation also occurs but less commonly. These alterations drive MAPK pathway signaling.",
+      "keyConcept": "Pilocytic astrocytomas harbor BRAF alterations (KIAA1549-BRAF fusion) - distinguishing them from diffuse astrocytomas.",
+      "options": [
+        "Activation of the mitogen-activated protein kinase (MAPK) pathway",
+        "Mutation in IDH1",
+        "Amplification of MDM2",
+        "Deletion of chromosomes 1p and 19q"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch10-pathology-q21",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "What is the gross appearance of pilocytic astrocytomas?",
+      "explanation": "Pilocytic astrocytomas have a characteristic gross appearance: well-circumscribed, often cystic with a mural nodule. The cyst contains yellow fluid; the solid portion may be variegated. They are demarcated from surrounding brain.选项A正确. The answer is A. This well-defined border facilitates surgical resection.",
+      "keyConcept": "Pilocytic astrocytomas appear as well-circumscribed, often cystic tumors with mural nodule - distinct from diffuse gliomas.",
+      "options": [
+        "Often cystic, with a mural nodule in the wall of the cyst",
+        "Solid and well-circumscribed",
+        "Highly vascular with necrosis",
+        "Mucinous with myxoid stroma"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch10-pathology-q22",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "What are the key microscopic features of pilocytic astrocytomas?",
+      "explanation": "Pilocytic astrocytomas show: biphasic pattern with Rosenthal fibers (eosinophilic, corkscrew fibers) and compact areas alternating with loose, microcystic areas. There are also eosinophilic granular bodies.选项A正确 - Rosenthal纤维和嗜酸性颗粒体是特征. The answer is A. These features distinguish pilocytic astrocytoma from diffuse astrocytoma. Mitotic activity and necrosis are absent or minimal.",
+      "keyConcept": "Pilocytic astrocytoma shows Rosenthal fibers and eosinophilic granular bodies - pathognomonic histological features.",
+      "options": [
+        "Low to moderate cellularity often with a biphasic pattern",
+        "High cellularity with marked nuclear atypia",
+        "Presence of Rosenthal fibers and eosinophilic granular bodies",
+        "Presence of endothelial proliferation"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch10-pathology-q23",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Rabies is transmitted to CNS via:",
+      "explanation": "Rabies virus travels from the bite site via retrograde axonal transport through peripheral nerves to the CNS. This is why post-exposure prophylaxis must be administered promptly before the virus reaches the CNS.",
+      "keyConcept": "Rabies spreads to CNS via retrograde axonal transport through peripheral nerves",
+      "options": [
+        "Arteries.",
+        "Veins.",
+        "Peripheral nerves.",
+        "Direct implantation.",
+        "Lymphatics."
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch10-pathology-q26",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "The cause of death in rabies is:",
+      "explanation": "Death in rabies is due to respiratory muscle paralysis (bulbar palsy affecting respiratory muscles), not heart failure or direct respiratory center failure. The virus destroys motor neurons in the brainstem.",
+      "keyConcept": "Rabies death from respiratory muscle paralysis (bulbar palsy)",
+      "options": [
+        "Muscle paralysis.",
+        "Heart failure.",
+        "Paralysis of respiratory muscles.",
+        "Respiratory center failure."
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch10-pathology-q27",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Rabies is a:",
+      "explanation": "Rabies is caused by the rabies virus (Lyssavirus, Rhabdoviridae family). It is transmitted through animal bites via retrograde axonal transport to the CNS.",
+      "keyConcept": "Rabies is a viral infection (rabies virus, Rhabdoviridae)",
+      "options": [
+        "Bacterial infection.",
+        "Viral infection.",
+        "Fungal infection.",
+        "Parasitic infection."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch10-anatomy-q19",
+      "type": "essay",
+      "lecture": 1,
+      "text": "What is the major genetic risk factor for Alzheimer’s Disease?",
+      "explanation": "Model Answer: APOE4 (Apolipoprotein E epsilon 4 allele) is the major genetic risk factor for late-onset Alzheimer's Disease. Individuals carrying one copy have 3-4x increased risk, while homozygous carriers have 10-15x increased risk. APOE4 impairs amyloid clearance and promotes amyloid fibril formation.",
+      "keyConcept": "APOE4 polymorphism is the primary genetic determinant of AD risk through effects on amyloid metabolism.",
+      "modelAnswer": "The major genetic risk factor for Alzheimer's disease is the apolipoprotein E (APOE) epsilon-4 allele. APOE4 carriers have a significantly increased risk of developing both early-onset and late-onset AD. APOE4 impairs amyloid-beta clearance, promotes aggregation, and affects lipid metabolism in neurons. Having one copy increases risk ~3-fold; two copies increase risk ~12-15-fold. Other genes include APP, PSEN1, PSEN2 (autosomal dominant early-onset forms)."
+    },
+    {
+      "id": "mcns2-ch10-biochem-q2",
+      "type": "essay",
+      "lecture": 1,
+      "text": "What is the inhibitor of dopa-decarboxylase used in the treatment of Parkinson Disease?",
+      "explanation": "Carbidopa is a peripheral DOPA decarboxylase inhibitor used in Parkinson's treatment; it prevents peripheral L-DOPA conversion to dopamine, increasing brain delivery and reducing peripheral side effects like nausea.",
+      "keyConcept": "Carbidopa peripheral DOPA decarboxylase inhibition",
+      "modelAnswer": "Carbidopa (or benserazide) is the peripheral inhibitor of DOPA-decarboxylase (aromatic L-amino acid decarboxylase) used in Parkinson's disease treatment. It prevents peripheral conversion of L-DOPA to dopamine, reducing side effects and increasing CNS availability of L-DOPA."
+    }
+  ]
+}

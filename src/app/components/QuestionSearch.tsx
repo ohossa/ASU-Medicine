@@ -3,7 +3,7 @@
 // Search engine across all database questions and answers.
 
 import React, { useState, useMemo, useCallback } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence } from "motion/react";
 import {
   Search, ArrowLeft, BookOpen, Flag, FileText, Check, X, ShieldAlert,
   CornerDownRight, LayoutGrid, HelpCircle

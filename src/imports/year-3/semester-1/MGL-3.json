@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "comingSoon": true,
+  "meta": {
+    "moduleCode": "MGL-3",
+    "moduleName": "GIT & Liver",
+    "year": 3,
+    "semester": 1,
+    "creditPoints": 5.5,
+    "totalMarks": 110,
+    "keywords": [
+      "git",
+      "liver",
+      "gastroenterology",
+      "mgl"
+    ]
+  },
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Upper GI Tract (Oral to Stomach)",
+      "subtitle": "Upper GI Tract (Oral to Stomach)",
+      "emoji": "🍽️",
+      "page": 1,
+      "lectureRange": "Lectures 1",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 2,
+      "title": "Lower GI Tract (Intestines)",
+      "subtitle": "Lower GI Tract (Intestines)",
+      "emoji": "🥗",
+      "page": 2,
+      "lectureRange": "Lectures 2",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 3,
+      "title": "Hepatobiliary System & Pancreas",
+      "subtitle": "Hepatobiliary System & Pancreas",
+      "emoji": "🫀",
+      "page": 3,
+      "lectureRange": "Lectures 3",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 4,
+      "title": "Gastrointestinal Pathologies & Drugs",
+      "subtitle": "Gastrointestinal Pathologies & Drugs",
+      "emoji": "💊",
+      "page": 4,
+      "lectureRange": "Lectures 4",
+      "subjects": [],
+      "keywords": []
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "comingSoon": true,
+  "meta": {
+    "moduleCode": "MBMG-1",
+    "moduleName": "Molecular Biology & Medical Genetics",
+    "year": 1,
+    "semester": 1,
+    "creditPoints": 3,
+    "totalMarks": 60,
+    "keywords": [
+      "molecular biology",
+      "genetics",
+      "mbmg"
+    ]
+  },
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Molecular Biology & DNA",
+      "subtitle": "Molecular Biology & DNA",
+      "emoji": "🧬",
+      "page": 1,
+      "lectureRange": "Lectures 1",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 2,
+      "title": "Genetics & Hereditary Disorders",
+      "subtitle": "Genetics & Hereditary Disorders",
+      "emoji": "📊",
+      "page": 2,
+      "lectureRange": "Lectures 2",
+      "subjects": [],
+      "keywords": []
+    }
+  ]
+}

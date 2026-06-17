@@ -1,5 +1,5 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import { Activity, BookOpen, Search, Heart } from "lucide-react";
 import { SignIn } from "@clerk/clerk-react";
 import { dark } from "@clerk/themes";

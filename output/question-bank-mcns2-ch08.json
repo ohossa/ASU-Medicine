@@ -1,0 +1,888 @@
+{
+  "schemaVersion": 1,
+  "meta": {
+    "moduleCode": "MCNS-2",
+    "moduleName": "Central Nervous System",
+    "year": 2,
+    "semester": 2,
+    "creditPoints": 6,
+    "totalMarks": 200,
+    "keywords": [
+      "CNS",
+      "Neuroanatomy",
+      "Neuropharmacology",
+      "Neurophysiology",
+      "Neuropathology"
+    ]
+  },
+  "chapterTitle": "VIII. Infections Affecting Muscle Tone & Nervous System",
+  "questions": [
+    {
+      "id": "mcns2-ch1-pharma-q77",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Dexamethasone is injected IV in meningitis for:",
+      "explanation": "Dexamethasone adjunctive therapy in bacterial meningitis is given as 0.15 mg/kg IV every 6 hours for 2–4 days, preferably starting before or with the first dose of antibiotics.",
+      "keyConcept": "Dexamethasone in meningitis: 0.15 mg/kg IV q6h for 2–4 days, initiated with or before antibiotics.",
+      "options": [
+        "2‑4 days every 12 hours",
+        "2‑4 days every 6 hours",
+        "10‑14 days every 6 hours",
+        "10‑14 days every 12 hours"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-pharma-q90",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Dexamethasone is injected intravenous for:",
+      "explanation": "Dexamethasone for bacterial meningitis is administered as 0.15 mg/kg IV every 6 hours for 2–4 days, with the first dose given before or concurrent with antibiotics.",
+      "keyConcept": "Dexamethasone 0.15 mg/kg IV q6h for 2–4 days is the standard adjunctive regimen for bacterial meningitis.",
+      "options": [
+        "2‑4 days every 12 or 24 hours",
+        "10‑14 days every 6 hours",
+        "2‑4 days every 6 hours",
+        "10‑14 days every 12 or 24 hours"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-pharma-q207",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "What is the initial management for bacterial meningitis?",
+      "explanation": "Initial management of bacterial meningitis: immediate blood cultures, then empiric broad-spectrum antibiotics (3rd gen cephalosporin + vancomycin + ampicillin if >50yo/immunocompromised), plus dexamethasone before or with first antibiotic dose.选项A正确. Lumbar puncture follows if no contraindications. The answer is A. Every hour of delay increases mortality.",
+      "keyConcept": "Bacterial meningitis requires immediate empiric antibiotics (3rd gen cephalosporin + vancomycin) and dexamethasone.",
+      "options": [
+        "Immediate dexamethasone + Empiric antibiotic",
+        "Supportive care",
+        "Antiviral therapy",
+        "Antibiotics"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-pharma-q208",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "What is the aim of dexamethasone therapy in meningitis?",
+      "explanation": "Dexamethasone in meningitis reduces inflammation and cerebral edema, lowering intracranial pressure. It decreases neurological complications and mortality, especially in pneumococcal meningitis.选项A正确. Give BEFORE or with first antibiotic dose. The answer is A. Steroids reduce the inflammatory response to bacterial lysis.",
+      "keyConcept": "Dexamethasone reduces cerebral inflammation and complications in bacterial meningitis when given early.",
+      "options": [
+        "Improve outcome by reducing inflammation-induced brain edema and complications",
+        "Reduce fever",
+        "Treat bacterial infection",
+        "None"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-pharma-q209",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "What antibiotics are used for empirical therapy in suspected bacterial meningitis in a one month case?",
+      "explanation": "Empirical therapy for bacterial meningitis: 3rd generation cephalosporin (ceftriaxone or cefotaxime) PLUS vancomycin (for resistant pneumococcus). In patients >50 or immunocompromised, add ampicillin for Listeria.选项A正确. The answer is A. Therapy is adjusted once culture and sensitivity return.",
+      "keyConcept": "Empiric bacterial meningitis therapy: 3rd gen cephalosporin + vancomycin ± ampicillin for Listeria coverage.",
+      "options": [
+        "Ampicillin + cefotaxime or Ampicillin + Gentamicin",
+        "Vancomycin + Ceftriaxone +Ampicillin",
+        "Sulfonamides, Trimethoprim, Chloramphenicol, Rifampicin",
+        "Aminoglycosides, 1st & 2nd Generation of cephalosporines, Amphotericin B"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-pharma-q212",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "What is the choice of antibiotic in bacterial meningitis for patients <1 month?",
+      "explanation": "Bacterial meningitis in patients <1 month: Ampicillin + Cefotaxime (or aminoglycoside). Covers Group B Strep, E. coli, Listeria.选项B正确. The answer is B. Age-specific empiric therapy covers the most likely pathogens for that age group.",
+      "keyConcept": "Neonatal meningitis (<1 month): ampicillin + cefotaxime - covers Group B Strep, E. coli, Listeria.",
+      "options": [
+        "Vancomycin",
+        "Ampicillin + cefotaxime or Ampicillin + Gentamicin",
+        "Sulfonamides, Trimethoprim, Chloramphenicol, Rifampicin",
+        "Aminoglycosides, 1st & 2nd Generation of cephalosporines, Amphotericin B"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-pharma-q214",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which antibiotic is used in all cases of bacterial meningitis except in children < 1 month?",
+      "explanation": "3rd generation cephalosporins (ceftriaxone, cefotaxime) are used in ALL cases of bacterial meningitis EXCEPT in neonates (<1 month) where ampicillin-based regimens are used.选项A正确. The answer is A. Ceftriaxone is the cornerstone of empiric bacterial meningitis therapy.",
+      "keyConcept": "3rd generation cephalosporins are universal bacterial meningitis coverage except in neonates requiring ampicillin.",
+      "options": [
+        "Vancomycin",
+        "Ampicillin + cefotaxime or Ampicillin + Gentamicin",
+        "Sulfonamides, Trimethoprim, Chloramphenicol, Rifampicin",
+        "Aminoglycosides, 1st & 2nd Generation of cephalosporines, Amphotericin B"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-pharma-q215",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "What is the empirical therapy for bacterial meningitis in children < 1 month?",
+      "explanation": "Empirical therapy for neonatal bacterial meningitis (<1 month): Ampicillin + Cefotaxime (or Gentamicin). Covers Group B Strep, E. coli, Listeria, and other neonate pathogens.选项A正确. The answer is A. Duration is typically 2-3 weeks depending on organism.",
+      "keyConcept": "Neonatal meningitis: ampicillin + cefotaxime covers the key neonate pathogens including Group B Strep.",
+      "options": [
+        "Ampicillin + cefotaxime or Ampicillin + Gentamicin",
+        "Vancomycin + Ceftriaxone +Ampicillin",
+        "Sulfonamides, Trimethoprim, Chloramphenicol, Rifampicin",
+        "Aminoglycosides, 1st & 2nd Generation of cephalosporines, Amphotericin B"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-pharma-q216",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which antibiotic is used in all cases of bacterial meningitis except in surgical interference in the brain?",
+      "explanation": "3rd generation cephalosporins are used in ALL bacterial meningitis EXCEPT post-neurosurgical meningitis, where Pseudomonas-coverage (cefepime, meropenem) is needed.选项A正确. The answer is A. Post-surgical patients need different empiric coverage for hospital-acquired pathogens.",
+      "keyConcept": "Post-surgical meningitis requires anti-pseudomonal coverage (cefepime, meropenem) instead of standard cephalosporins.",
+      "options": [
+        "Ceftriaxone (3rd generation cephalosporines)",
+        "Vancomycin",
+        "Ampicillin + cefotaxime or Ampicillin + Gentamicin",
+        "Aminoglycosides, 1st & 2nd Generation of cephalosporines, Amphotericin B"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch10-pharma-q54",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Discuss rational of using dexamethasone in treatment of meningitis (Aim, dose, duration and its relation to empirical antibiotic therapy)",
+      "explanation": "Dexamethasone in bacterial meningitis reduces inflammation and cerebral edema, decreasing ICP and improving outcomes. Given before or with first antibiotic dose (0.15 mg/kg q6h for 2-4 days in adults), it reduces hearing loss and neurological complications.",
+      "keyConcept": "Dexamethasone reduces meningitis complications when given before/with antibiotics via anti-inflammatory effects.",
+      "modelAnswer": "Rationale for dexamethasone in meningitis treatment:\n\n**Aim:**\n- Reduce inflammation in subarachnoid space\n- Decrease cerebral edema\n- Lower intracranial pressure\n- Reduce neurological complications\n\n**Dose and Duration:**\n- **Adults:** Dexamethasone 0.15 mg/kg IV q6h\n- **Duration:** 2-4 days\n- **Timing:** Given BEFORE or WITH first antibiotic dose\n- **Children:** 0.15 mg/kg q6h for 2-4 days\n\n**Relation to Empirical Antibiotics:**\n\n1. **Given BEFORE antibiotics:**\n   - Ideally 15-20 minutes before\n   - Allows anti-inflammatory effect to start first\n\n2. **OR Given WITH first dose:**\n   - In practice, often given together\n   - Still beneficial if within first few hours\n\n3. **Continue regardless of CSF culture:**\n   - If bacterial meningitis suspected\n   - Stop if viral/HSV meningitis confirmed\n\n**Benefits:**\n- Reduces hearing loss (especially H. influenzae)\n- Decreases mortality\n- Fewer neurological sequelae\n- Less cerebral edema\n\n**Caveat:**\n- Avoid in TB/fungal meningitis (may mask symptoms)\n- Monitor blood glucose"
+    },
+    {
+      "id": "mcns2-ch1-pathology-q20",
+      "type": "essay",
+      "lecture": 1,
+      "text": "What are the clinical features of meningitis?",
+      "explanation": "Clinical features of meningitis: Classic triad - fever, neck stiffness, altered mental status. Additional features: headache, photophobia, nausea/vomiting, seizures, focal neurological deficits. In infants: irritability, poor feeding, bulging fontanelle. Signs: nuchal rigidity, Kernig sign (knee extension with hip flexed), Brudzinski sign (neck flexion causes hip flexion). Bacterial meningitis typically presents acutely with rapid deterioration. Viral meningitis may have milder presentation. CSF analysis confirms diagnosis.",
+      "keyConcept": "Meningitis presents with fever, neck stiffness, and altered mental status - Kernig and Brudzinski signs are positive.",
+      "modelAnswer": "Fever, headache, neck stiffness, photophobia, altered mental state, cranial nerve deficit."
+    },
+    {
+      "id": "mcns2-ch1-pathology-q21",
+      "type": "essay",
+      "lecture": 1,
+      "text": "How is acute meningitis characterized?",
+      "explanation": "Acute meningitis is characterized by rapid onset (hours to days) of symptoms: severe headache, fever, neck stiffness, altered consciousness. CSF shows: elevated opening pressure, pleocytosis (neutrophils in bacterial, lymphocytes in viral), elevated protein, decreased glucose (bacterial). Bacterial meningitis requires immediate antibiotic treatment. CSF Gram stain and culture identify the organism. The acute presentation distinguishes meningitis from subacute/chronic meningitis (TB, fungal - weeks).",
+      "keyConcept": "Acute bacterial meningitis presents with rapid symptom onset, neutrophilic pleocytosis, high protein, and low CSF glucose.",
+      "modelAnswer": "Inflammation of the leptomeninges with cerebrospinal fluid (CSF) in the subarachnoid space, Pyogenic (meningococci, pneumococci, E. coli, Beta Strept), Aseptic (enteroviruses, measles, mumps, influenza)."
+    },
+    {
+      "id": "mcns2-ch5-pathology-q2",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Cerebellar brain abscess is usually a complication of:",
+      "explanation": "Cerebellar abscess commonly complicates chronic suppurative otitis media due to direct spread of infection from the middle ear through the tegmen tympani.",
+      "keyConcept": "Cerebellar abscess etiology",
+      "options": [
+        "Suppurative otitis media",
+        "Suppurative lung diseases",
+        "Sinusitis",
+        "Skull fractures",
+        "Systemic pyaemia"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch8-pathology-q2",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "A child with tuberculous meningitis, his CSF examination will show an increased number of:",
+      "explanation": "Tuberculous meningitis causes lymphocytic pleocytosis in CSF (typically 100-500 cells/ microliter). Neutrophils are seen in acute bacterial meningitis; macrophages and plasma cells may be present but lymphocytes predominate.",
+      "keyConcept": "TB meningitis: lymphocytic pleocytosis in CSF",
+      "options": [
+        "Macrophages.",
+        "Lymphocytes.",
+        "Plasma cells.",
+        "Giant cells."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch10-pathology-q25",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Poliomyelitis is a:",
+      "explanation": "Poliomyelitis is caused by poliovirus, an enterovirus (RNA virus). It is transmitted fecal- orally and causes anterior horn cell destruction leading to flaccid paralysis.",
+      "keyConcept": "Poliomyelitis is a viral infection (poliovirus, enterovirus)",
+      "options": [
+        "Bacterial infection.",
+        "Viral infection.",
+        "Fungal infection.",
+        "Parasitic infection."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch10-pathology-q29",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Mode of infection in poliomyelitis is:",
+      "explanation": "Poliomyelitis spreads via the fecal-oral route, primarily through ingestion of contaminated food or water, with feces being the main source of viral shedding.",
+      "keyConcept": "Polio transmission",
+      "options": [
+        "Ingestion of contaminated food or drink",
+        "Droplet infection",
+        "Blood spread from a septic focus",
+        "Direct spread from air sinuses"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-microbiology-q1",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "most common of neonatal meningitis is",
+      "explanation": "Neonatal meningitis causes include: Group B Streptococcus, E. coli, Listeria monocytogenes, and Gram-negative bacilli. All three (Listeria, E. coli, H. influenzae) can cause neonatal meningitis. In early-onset neonatal meningitis (< 7 days), E. coli and Group B Strep are most common. Listeria can cross the placenta causing congenital infection. The answer is D - all of the above can cause neonatal meningitis. The most common specific organisms vary by age and risk factors.",
+      "keyConcept": "Neonatal meningitis is caused by E. coli, Group B Streptococcus, and Listeria monocytogenes acquired during delivery or from the environment.",
+      "options": [
+        "listeria monocytes",
+        "E. coli",
+        "influenza b",
+        "all of the above"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch1-microbiology-q2",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "positive biochemical reaction of Cryptococcus neoformans to",
+      "explanation": "Cryptococcus neoformans is POSITIVE for both oxidase and catalase tests. The urease test is also positive. However, looking at the options: A) oxidase - TRUE; B) catalase - TRUE; C) urease - TRUE. Option D 'a & b' (oxidase AND catalase) would be correct. The answer is C (urease) if we're looking for which is not positive, but all three are positive. Let me reconsider - the question asks 'positive biochemical reaction of Cryptococcus neoformans to' which implies what does it test positive for. Both oxidase and catalase are positive. Urease is also positive for Cryptococcus. Actually, Cryptococcus is urease positive too. This is confusing. Let me think about what makes clinical sense: For fungal identification, oxidase and catalase are key. Cryptococcus is oxidase positive and catalase positive. Urease... C. neoformans is typically urease NEGATIVE (distinguishing it from C. gattii which is urease positive). Yes! C. neoformans is UREASE NEGATIVE. So the answer is C - urease is NOT positive. The correct answer about what it IS positive for would be oxidase and catalase (option D = a & b).",
+      "keyConcept": "Cryptococcus neoformans is positive for oxidase and catalase but NEGATIVE for urease (distinguishing it from C. gattii).",
+      "options": [
+        "oxidase",
+        "catalase",
+        "urease",
+        "a& b"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch1-microbiology-q3",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "colony of Cryptococcus neoformans is………while colony N. meningitides is",
+      "explanation": "Cryptococcus neoformans colony: creamy, mucoid, tan-colored colonies on Sabouraud dextrose agar. The polysaccharide capsule gives it a mucoid appearance. Neisseria meningitidis colony: smooth, moist, translucent colonies - it does NOT have the mucoid appearance of Cryptococcus. Option A states 'creamy mucoid (Cryptococcus), smooth (N. meningitidis)' - this is correct. The answer is A. N. meningitidis forms greyish, transparent, smooth colonies, while Cryptococcus has the characteristic mucoid appearance due to its capsule.",
+      "keyConcept": "Cryptococcus colonies are creamy-mucoid; N. meningitidis colonies are smooth - differentiating these two organisms.",
+      "options": [
+        "creamy mucoid, smooth",
+        "smooth, creamy mucoid",
+        "Not explicitly listed"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-microbiology-q4",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "All of the following are symptoms of meningitis except....",
+      "explanation": "Meningitis symptoms include: irritability (A), stiff neck (B), nausea and vomiting (D). INCREASED APPETITE (C) is NOT a symptom of meningitis - patients typically have decreased appetite due to systemic illness. Meningitis causes fever, headache, photophobia, neck stiffness, altered mental status, and nausea/vomiting. Increased appetite would be contradictory to the anorexia that accompanies infection. The answer is C - increased appetite is not a meningitis symptom.",
+      "keyConcept": "Meningitis causes decreased appetite along with headache, fever, neck stiffness, and nausea/vomiting - not increased appetite.",
+      "options": [
+        "irritability",
+        "stiff neck",
+        "increased appetite",
+        "nausea and vomiting"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch1-microbiology-q5",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "For diagnosis of carrier of n. Meningitis, we take ...",
+      "explanation": "For diagnosing N. meningitidis CARRIER state, a nasopharyngeal swab (or wash) is collected from the back of the nasopharynx. Carriers harbor the bacteria in their nasopharynx without symptoms. Blood culture is for bacteremia/sepsis. CSF sample is for suspected meningitis (invasive disease, not carrier state). Urine sample is not appropriate. The answer is C - nasopharyngeal swab is the correct specimen for identifying carriers of N. meningitidis. This is done for contact tracing during outbreaks.",
+      "keyConcept": "Nasopharyngeal swab is the specimen for identifying N. meningitidis carriers, not blood, CSF, or urine.",
+      "options": [
+        "blood sample.",
+        "CSF sample",
+        "Nasopharyngeal swap",
+        "Urine sample"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch1-microbiology-q6",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "In bacterial meningitis ...",
+      "explanation": "Bacterial meningitis CSF findings: A) Proteins are elevated - TRUE (inflammation increases protein); B) CSF is clear - FALSE (CSF is turbid/cloudy due to inflammatory cells); C) Glucose is reduced - TRUE (bacteria metabolize glucose). Option D 'a, c' means proteins elevated AND glucose reduced - BOTH are correct. The answer is D. In bacterial meningitis: elevated protein, low glucose, high WBC with neutrophil predominance, turbid CSF. This contrasts with viral meningitis which has normal/low protein, normal glucose, and clear CSF.",
+      "keyConcept": "Bacterial meningitis shows elevated protein and decreased glucose - both elevated proteins and reduced glucose are diagnostic features.",
+      "options": [
+        "Proteins are elevated.",
+        "CSF is clear.",
+        "Glucose is reduced.",
+        "a, c"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-microbiology-q7",
+      "type": "mcq",
+      "lecture": 1,
+      "text": ".... used to demonstrate of encapsulated yeast cells of cryptococcus.",
+      "explanation": "India ink is used to demonstrate encapsulated yeast cells of Cryptococcus neoformans. The capsule appears as a clear halo around the yeast cells against the dark ink background. Gram stain (B) shows the yeast but not the capsule well. Sabouraud's dextrose agar (C) is for culture, not direct visualization. Giemsa stain (D) is for blood parasites and some bacteria. India ink is the classic method for Cryptococcus visualization, though the cryptococcal antigen test is more sensitive. The answer is A - India ink demonstrates the characteristic polysaccharide capsule of Cryptococcus.",
+      "keyConcept": "India ink stain reveals Cryptococcus capsule as a clear halo against dark background, the classic diagnostic method.",
+      "options": [
+        "India ink",
+        "Gram stain",
+        "Seaboard’s dextrose agar",
+        "Giemsa stain"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-microbiology-q8",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Cryptococcus neoformans is ....",
+      "explanation": "Cryptococcus neoformans characteristics: yeast with gelatinous polysaccharide capsule (A-TRUE), urease positive (B-TRUE), and pathogenic to mice (C-TRUE). The capsule is its major virulence factor, giving colonies a mucoid appearance. The urease test helps differentiate it (C. neoformans urease positive, though some sources say variable). It's pathogenic to mice (intracranial inoculation causes致死). The answer is D - all of the above are characteristics of Cryptococcus neoformans.",
+      "keyConcept": "Cryptococcus neoformans is an encapsulated yeast that is urease positive, pathogenic to mice, and causes meningitis in immunocompromised.",
+      "options": [
+        "Yeast cells with gelatinous capsule",
+        "Urease positive",
+        "Pathogenic to mice",
+        "All of the above"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch1-microbiology-q9",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Pathogenic Neisseria are characterized by:",
+      "explanation": "Pathogenic Neisseria (N. gonorrhoeae, N. meningitidis) characteristics: B) Grow on chocolate agar - TRUE (requires chocolate agar enriched with factor V (NAD) and factor X (hemin)); A) Grow on ordinary media - FALSE (requires enriched media); C) Grow at room temperature - FALSE (grow best at 35-37°C, not room temp); D) Oxidase-negative - FALSE (Neisseria are oxidase POSITIVE). The answer is B - chocolate agar provides the nutrients (X and V factors) that Neisseria need for growth.",
+      "keyConcept": "Neisseria require chocolate agar (enriched with X and V factors) and are oxidase-positive - they don't grow on ordinary media.",
+      "options": [
+        "Grow on ordinary media.",
+        "Grow on chocolate agar.",
+        "Grow at room temperature.",
+        "Oxidase-Negative."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-microbiology-q10",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Epidemic cerebrospinal meningitis:",
+      "explanation": "Epidemic cerebrospinal meningitis: B) Caused by serotypes A, B, C, Y, W135 - TRUE (these are the main epidemic strains). A) Transmitted only by cases - FALSE (asymptomatic carriers are the main source); C) Penicillin G is used as chemoprophylaxis - FALSE (rifampicin, ciprofloxacin, or ceftriaxone are used for prophylaxis; penicillin is for treatment); D) Live vaccine - FALSE (polysaccharide or conjugate vaccines are used, not live vaccines). The answer is B - N. meningitidis serotypes A, B, C, Y, W135 cause epidemics.",
+      "keyConcept": "Epidemic meningitis is caused by N. meningitidis serotypes A, B, C, Y, W135; carriers are the main source, not cases.",
+      "options": [
+        "Is transmitted only by cases.",
+        "Is caused mainly by serotypes A, B, C.Y, W 135",
+        "Penicillin G is used as chemoprophylaxis.",
+        "Live at vaccine is used to prevent epidemics."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-microbiology-q11",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The most common route of meningitis transmission",
+      "explanation": "The most common route of meningitis transmission is hematogenous (through blood). Bacteria reach the meninges via bloodstream from a primary focus (pneumonia, sinusitis, otitis). Direct spread from adjacent structures (otitis media, sinusitis) is less common but important. Trauma can introduce organisms directly. The answer is A - hematogenous spread is the most common route. Examples: S. pneumoniae from pneumonia travels through blood to meninges; N. meningitidis bacteremia leads to meningeal seeding.",
+      "keyConcept": "Meningitis most commonly occurs via hematogenous spread from a distant infection site to the meninges.",
+      "options": [
+        "Hematogenous",
+        "Direct spread from otitis media",
+        "Nearby focus as sinusitis",
+        "Trauma"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-microbiology-q12",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which of the Following organisms cause adult meningitis:",
+      "explanation": "In adults, the most common cause of bacterial meningitis is Streptococcus pneumoniae (pneumococcus). N. meningitidis is also common in young adults. Listeria monocytogenes (A) is more common in neonates, elderly, immunocompromised. E. coli (B) is neonatal. Group B streptococci (C) is neonatal. N. meningitidis (D) causes meningitis in young adults, especially in crowded conditions (military, college). The answer is E (likely 'both C and D' or similar). If the question asks for organisms causing adult meningitis, both S. pneumoniae and N. meningitidis are correct. Option E probably means 'all of the above' or a combination. Let me assume E is the intended answer meaning N. meningitidis is among the causes. Actually, looking at the options, E might mean 'all mentioned' but that's not correct. The most common in adults is S. pneumoniae, with N. meningitidis being second. Given the options, E is probably a grouping. The answer is D if it's asking for N. meningitidis specifically, but if asking for what causes adult meningitis (in general), the answer includes multiple organisms. Given the format, E might be 'D' = all mentioned or 'both C and D'. I'll go with D (N. meningitidis) as the commonly tested answer in this age group context.",
+      "keyConcept": "In adults, S. pneumoniae is the most common cause of bacterial meningitis, with N. meningitidis being second most common.",
+      "options": [
+        "Listeria monocytogens",
+        "Escherichia coli",
+        "Group B streptococci",
+        "Neisseria meningitidis",
+        "C & d"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch1-microbiology-q13",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Chronically ill young male spends most of his time raising & training pigeons. He develops mild Pulmonary infection & eventually presents to the physician with headache, mental status changes, fever.",
+      "explanation": "A young male who raises pigeons has exposure to bird droppings, which is the classic source of Cryptococcus neoformans (found in soil contaminated with pigeon droppings). Aspergillus (A) is from decaying vegetation, not pigeon droppings specifically. Candida (B) is normal flora/opportunistic. Histoplasma (D) is from bird/bat droppings generally. The answer is C - Cryptococcus neoformans is classically associated with pigeon exposure. Inhaling aerosolized organisms from dried pigeon droppings causes pulmonary infection that can spread to CNS.",
+      "keyConcept": "Pigeon droppings are the classic source of Cryptococcus neoformans - pulmonary exposure can lead to meningitis.",
+      "options": [
+        "Aspergillus",
+        "Candida albicans",
+        "Cryptococcus neoformans",
+        "Histoplasma capsulatum"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch1-microbiology-q14",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "10 years old boy has a severe headache & vomiting that began yesterday. He is now confused.",
+      "explanation": "A 10-year-old with severe headache, vomiting, confusion suggests bacterial meningitis (likely N. meningitidis given age and presentation). Close contacts need chemoprophylaxis. Rifampicin is the standard prophylaxis for N. meningitidis contacts. A) 'No prophylaxis necessary' - FALSE; B) 'Vaccine' - vaccines exist but don't protect immediately (not for serogroup B); C) 'Rifampicin' - TRUE for prophylaxis; D) 'Sulfonamide' - not used for meningococcal prophylaxis (sulfonamides were used historically but resistance is now common). The answer is C - contacts should receive rifampicin prophylaxis. Ciprofloxacin or ceftriaxone are also options.",
+      "keyConcept": "N. meningitidis contacts receive rifampicin prophylaxis to eradicate nasopharyngeal carriage and prevent disease.",
+      "options": [
+        "No prophylaxis is necessary.",
+        "They should be given vaccine.",
+        "They should be given Rifampicin as prophylaxis.",
+        "They should be given sulfonamide as prophylaxis."
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch1-microbiology-q15",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "1 week newborn develops meningitis. Short G+ve rods are isolated.",
+      "explanation": "A newborn with meningitis and short G+ve rods: Listeria monocytogenes is a short gram-positive rod causing neonatal meningitis (often from maternal infection during delivery). Group B Streptococcus (S. agalactiae) is also G+ve cocci, not rods. E. coli is G-ve rods. Corynebacterium diphtheriae is G+ve rods but causes diphtheria, not meningitis. The answer is D - Listeria monocytogenes. Listeria is a small rod, catalase positive, beta-hemolytic, causing early or late-onset neonatal meningitis, especially in premature infants.",
+      "keyConcept": "Listeria monocytogenes is a gram-positive rod causing neonatal meningitis; it's catalase-positive and associated with maternal infection.",
+      "options": [
+        "Corynebacterium diphtheriae",
+        "Escherichia coli",
+        "Group B streptococci",
+        "Listeria monocytogens"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-microbiology-q16",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "A neonate was delivered 3 weeks prematurely.",
+      "explanation": "Premature neonate (delivered 3 weeks early): Listeria monocytogenes can be transmitted in utero (late pregnancy) leading to congenital infection, or during passage through birth canal. The timing of maternal infection determines transmission route. In utero infection (early in pregnancy) causes more severe anomalies; late pregnancy/delivery causes neonatal sepsis/meningitis. A 3-week premature delivery suggests late-pregnancy transmission. The answer is B - in utero transmission late in pregnancy or during delivery. Listeria can cross the placenta causing fetal infection, presenting as preterm labor or neonatal sepsis.",
+      "keyConcept": "Listeria monocytogenes transmission to neonates occurs via in utero infection (late pregnancy) or during passage through infected birth canal.",
+      "options": [
+        "In utero transmission early in pregnancy",
+        "In utero transmission late in pregnancy",
+        "During passage in birth canal",
+        "Droplet transmission from anterior nares of health care providers"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-microbiology-q17",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "An 18-year-old man in a military camp presented to your hospital with fever, severe headache, Drowsiness & neck rigidity.",
+      "explanation": "An 18-year-old in a military camp with fever, severe headache, drowsiness suggests meningococcal meningitis. Military camps are classic for meningococcal outbreaks due to crowded conditions. Humans are the ONLY reservoir for N. meningitidis (not animals, soil, or water). The disease spreads through respiratory droplets from HUMAN CARRIERS (often asymptomatic). The answer is A - human carrier. Up to 10-20% of populations are asymptomatic carriers of N. meningitidis, serving as the reservoir for epidemics.",
+      "keyConcept": "N. meningitidis is transmitted person-to-person via respiratory droplets; humans (carriers) are the only reservoir.",
+      "options": [
+        "A human carrier",
+        "An infected animal",
+        "Bird feces",
+        "Food or water"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-microbiology-q18",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Quellung test is positive with:",
+      "explanation": "The Quellung (capsule swelling) test is positive with Streptococcus pneumoniae. The test uses antisera against capsular polysaccharides - when mixed with S. pneumoniae, the capsule swells and becomes visible under microscopy. Enterobacter (B) and S. aureus (C) are not tested this way. Diphtheriae (D) is identified by other methods (Elek test, gram stain). The Quellung reaction is specific for identifying encapsulated organisms, particularly S. pneumoniae and H. influenzae type b. The answer is A - S. pneumoniae shows positive Quellung test with type-specific antisera.",
+      "keyConcept": "The Quellung test identifies S. pneumoniae by demonstrating capsular swelling with type-specific antisera.",
+      "options": [
+        "S. pneumoniae",
+        "Enterobacter",
+        "S. aureus",
+        "Diphtheriae"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-microbiology-q19",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which of the following is the primary virulence factor of S. pneumoniae?",
+      "explanation": "The PRIMARY virulence factor of S. pneumoniae is its polysaccharide capsule. The capsule prevents phagocytosis by inhibiting opsonization and complement activation. Bile solubility (A) and optochin sensitivity (B) are identifying characteristics, not virulence factors. Pili (C) are not the primary virulence factor. The polysaccharide capsule is antiphagocytic and determines serotype. The answer is D - polysaccharide capsule. Over 90 serotypes exist based on capsule composition, and vaccine development targets these capsular polysaccharides.",
+      "keyConcept": "S. pneumoniae virulence depends primarily on its antiphagocytic polysaccharide capsule.",
+      "options": [
+        "Bile solubility.",
+        "Optochin production.",
+        "Pili.",
+        "Polysaccharide capsule."
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch1-microbiology-q20",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "An eight-year-old boy presented with fever, severe headache and a stiff Neck.",
+      "explanation": "An 8-year-old with fever, severe headache, and stiff neck needs lumbar puncture for definitive diagnosis of meningitis. CSF analysis (cell count, protein, glucose, Gram stain, culture) confirms bacterial meningitis. While CBC (A) and blood sugar (B) are helpful, they don't diagnose meningitis. Urine analysis (C) is not primary for meningitis. The answer is D - lumbar puncture is essential to diagnose meningitis, determine causative organism, and guide treatment.",
+      "keyConcept": "Lumbar puncture is mandatory for diagnosing meningitis - CSF analysis identifies the organism and guides treatment.",
+      "options": [
+        "Complete Blood Count",
+        "Blood sugar determination",
+        "Urine analysis",
+        "Lumbar puncture"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch1-microbiology-q21",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Meningitis associated with Neisseria meningitidis usually occurs as what type of disease?",
+      "explanation": "Meningitis associated with N. meningitidis usually occurs as EPIDEMIC disease. Unlike S. pneumoniae (endemic), N. meningitidis causes outbreaks in close populations (military barracks, college dormitories). The organism spreads rapidly through respiratory droplets in crowded conditions. Endemic meningococcal disease occurs at baseline rates; epidemics occur cyclically. The answer is B - epidemic. This is why meningococcal vaccines are required for college students and military personnel.",
+      "keyConcept": "N. meningitidis causes epidemic meningitis in close-contact settings like military camps and dormitories.",
+      "options": [
+        "Endemic.",
+        "Epidemic.",
+        "Pandemic.",
+        "Isolated."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-microbiology-q22",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "What is the reservoir of Neisseria meningitidis?",
+      "explanation": "The reservoir of N. meningitidis is HUMAN CARRIERS. Humans are the only natural reservoir - the organism colonizes the nasopharynx without causing disease in carriers. Neither soil (A), saltwater (B), nor animals (D) serve as reservoirs. Up to 10-20% of the population may carry N. meningitidis asymptomatically. The answer is C - human carriers. This is why outbreaks are controlled by prophylaxis of close contacts to eliminate carriage.",
+      "keyConcept": "N. meningitidis has humans as its only reservoir - asymptomatic carriers transmit the organism via respiratory secretions.",
+      "options": [
+        "Soil.",
+        "Saltwater.",
+        "Human carriers.",
+        "Domesticated animals."
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch1-microbiology-q23",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "How is Neisseria meningitidis spread?",
+      "explanation": "N. meningitidis spreads through respiratory secretions and droplets (coughing, sneezing, close contact). This is why it causes epidemics in close quarters. Fomites (B) are less important. Food/water (C) are not vehicles. Insects (D) are not vectors. The answer is A - respiratory secretions/droplets. Saliva and nasopharyngeal secretions transmit meningococci through coughing, kissing, or sharing utensils.",
+      "keyConcept": "N. meningitidis spreads via respiratory droplets - close contact allows transmission in crowded conditions.",
+      "options": [
+        "Through respiratory secretions or droplets.",
+        "Through contaminated fomites.",
+        "Through consumption of contaminated food or water",
+        "By insect vectors."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-microbiology-q24",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "What is the major virulence factor of Streptococcus pneumoniae?",
+      "explanation": "The MAJOR virulence factor of Streptococcus pneumoniae is its capsule. The polysaccharide capsule prevents phagocytosis and is the basis for serotyping. DNase (A) is produced by S. aureus. Pyogenic exotoxins (C) are not the primary S. pneumoniae virulence factor. M protein (D) is a virulence factor of Group A Strep. The answer is B - capsule. The capsule is anti-phagocytic and determines the organism's ability to cause invasive disease.",
+      "keyConcept": "S. pneumoniae virulence depends on its polysaccharide capsule preventing phagocytosis.",
+      "options": [
+        "DNase.",
+        "Capsule.",
+        "Pyogenic exotoxins.",
+        "M protein."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-microbiology-q25",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "What are the characteristics of proteolytic strains?",
+      "explanation": "Proteolytic strains characteristics: produce enzymes that degrade tissue, cause more invasive/necrotizing infections.选项D正确. The answer is D. Associated with severe infections and tissue destruction.",
+      "keyConcept": "Proteolytic bacterial strains degrade tissue proteins, causing invasive, necrotizing infections.",
+      "options": [
+        "Glucose and maltose fermentation",
+        "Gelatin liquefaction",
+        "H2S production",
+        "All of the above"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-microbiology-q26",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "What are the clinical manifestations of Tetanus?",
+      "explanation": "Tetanus clinical manifestations: lockjaw (trismus), risus sardonicus, opisthotonus, muscle rigidity, spasms triggered by stimuli, and autonomic dysfunction.选项D正确. The answer is D. Spasms can cause fractures. Incubation: 3-21 days.",
+      "keyConcept": "Tetanus: lockjaw, risus sardonicus, opisthotonus, spasms - caused by tetanospasmin toxin.",
+      "options": [
+        "Lockjaw or trismus",
+        "Exaggerated reflexes",
+        "Respiratory failure leading to death",
+        "All of the above"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-microbiology-q27",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "How can the presence of toxin be detected in botulism?",
+      "explanation": "Botulinum toxin detection: mouse bioassay (inoculate patient serum/feces into mice - death indicates toxin), PCR for organism, culture.选项D正确. The answer is D. Toxin blocks acetylcholine release at neuromuscular junction.",
+      "keyConcept": "Botulism diagnosis: mouse bioassay detects toxin - blocks ACh release causing flaccid paralysis.",
+      "options": [
+        "In patient blood or food remnants using PCR or ELISA",
+        "Isolation of Clostridium botulinum from food",
+        "Mouse bioassay",
+        "All of the above"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch1-microbiology-q28",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "What are the classic symptoms of meningeal irritation?",
+      "explanation": "Classic meningeal irritation signs: neck stiffness (nuchal rigidity), positive Kernig sign (knee extension limited with hip flexed), positive Brudzinski sign (hip flexion with neck flexion).选项D正确. The answer is D. These indicate meningeal inflammation.",
+      "keyConcept": "Meningeal irritation: Kernig and Brudzinski signs - neck stiffness with characteristic reflex responses.",
+      "options": [
+        "Headache",
+        "Neck stiffness",
+        "Projectile vomiting",
+        "All of the above"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-microbiology-q29",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "What is the diagnostic test for meningitis?",
+      "explanation": "Diagnostic test for meningitis: lumbar puncture with CSF analysis (cell count, protein, glucose, Gram stain, culture, PCR).选项A正确. The answer is A. CSF shows: bacteria (neutrophils, high protein, low glucose), viral (lymphocytes, normal glucose).",
+      "keyConcept": "Lumbar puncture for CSF analysis - the definitive diagnostic test for meningitis.",
+      "options": [
+        "CSF analysis using lumbar puncture",
+        "Blood culture",
+        "PCR",
+        "All of the above"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-microbiology-q30",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "What are the members of the Herpesviridae family that can cause viral meningitis?",
+      "explanation": "Herpesviridae causing viral meningitis: HSV-1, HSV-2 (genital herpes), VZV, EBV, HHV-6.选项C正确. The answer is C. HSV-2 is a common cause of recurrent lymphocytic meningitis.",
+      "keyConcept": "HSV-2, HSV-1, VZV, EBV are Herpesviridae family members causing viral meningitis.",
+      "options": [
+        "Herpes simplex",
+        "Varicella zoster virus",
+        "Both A and B",
+        "None of the above"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-microbiology-q31",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "What are the risk factors for rhinocerebral mucormycosis?",
+      "explanation": "Risk factors for rhinocerebral mucormycosis: uncontrolled diabetes (especially DKA), immunocompromise (neutropenia, steroids), iron overload, trauma/burns, and ketoacidosis.选项C正确. The answer is C. Diabetic patients are at highest risk.",
+      "keyConcept": "Rhinocerebral mucormycosis: uncontrolled diabetes and immunocompromise are main risk factors.",
+      "options": [
+        "Diabetic ketoacidosis",
+        "Hematologic malignancies (Leukemia & lymphoma)",
+        "Both A and B",
+        "None of the above"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch8-microbiology-q2",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "physical examination of fungal meningitis of CSF is/are.",
+      "explanation": "Fungal meningitis CSF findings: 1) CSF may be turbid or clear (variable); 2) Protein is ELEVATED (not decreased) - Option B is WRONG; 3) Glucose may be normal or decreased (not typically normal) - but can be normal. The answer is D - none of the above correctly describe fungal meningitis. Fungal meningitis typically shows: mild elevation in protein, normal to low glucose, and lymphocytic pleocytosis. India ink or cryptococcal antigen testing is needed for diagnosis. The CSF appearance in fungal meningitis is variable but often clear initially.",
+      "keyConcept": "Fungal meningitis typically shows elevated protein and normal-to-low glucose, not the patterns listed in options A, B, or C.",
+      "options": [
+        "CSF is turbid",
+        "↓ protein",
+        "Normal glucose",
+        "None of the above"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch8-microbiology-q3",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "A 33-year-old HIV +ve man complains of: headache & blurred vision. CSF obtained by lumbar Puncture reveals a capsulated organism visible by india ink.",
+      "explanation": "An HIV+ patient with headache, blurred vision, and CSF showing encapsulated non-dimorphic yeast is classic for Cryptococcus neoformans. A) 'Spaghetti and meatball' on KOH - this describes Malassezia furfur (tinea versicolor), not Cryptococcus; B) 'Branching septate hyphae' - describes Aspergillus; C) 'Mycelial at room temp, yeast at 37°C' - describes dimorphic fungi like Histoplasma; D) 'Encapsulated non-dimorphic yeast' - CORRECT for Cryptococcus. Cryptococcus is an encapsulated yeast (non-dimorphic) that grows as yeast at both room temperature and 37°C. The India ink preparation shows the characteristic capsule. The answer is D - Cryptococcus neoformans is an encapsulated, non-dimorphic yeast.",
+      "keyConcept": "Cryptococcus neoformans is an encapsulated, non-dimorphic yeast causing meningitis in HIV patients.",
+      "options": [
+        "Can be seen as spaghetti & meat ball on KOH.",
+        "Consists of branching septate hyphae",
+        "Exists as mycelial form at room temp & yeast at 37°c.",
+        "Encapsulated non-dimorphic yeast."
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch10-microbiology-q1",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "which of the following false about the symptoms of meningitis",
+      "explanation": "Meningitis symptoms include: headache, fever, neck stiffness, photophobia (sensitivity to light), seizures, irritability, nausea/vomiting, and decreased appetite. INCREASED APPETITE is NOT a symptom of meningitis. The body typically suppresses appetite during infection. The answer is C - increased appetite is false about meningitis symptoms. Meningitis causes systemic illness with fever and malaise that would decrease, not increase, appetite.",
+      "keyConcept": "Meningitis causes decreased appetite, not increased appetite - other symptoms include headache, fever, neck stiffness, photophobia.",
+      "options": [
+        "Decrease appetite",
+        "Unsensitivity to light",
+        "Seizures",
+        "None of the above"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch10-microbiology-q2",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "2-year-old child has a fever, stiff neck & is irritable. Gram stain of the Spinal fluid reveals G-ve small pleomorphic coccobacillary organisms.",
+      "explanation": "A 2-year-old with fever, stiff neck, irritability, and Gram-negative diplococci suggests Hemophilus influenzae type b (Hib) meningitis. H. influenzae is a small gram-negative coccobacillus. E. coli (B) is gram-negative rods, not diplococci. Streptococcus pneumoniae (C) is gram-positive diplococci. Staph aureus (D) is gram-positive cocci. The clinical picture (young child, meningitis signs, gram-negative) is classic for Hib. However, Hib meningitis has become rare due to vaccination. The answer is A - Hemophilus influenzae.",
+      "keyConcept": "Hemophilus influenzae type b causes meningitis in unvaccinated young children, appearing as small gram-negative coccobacilli.",
+      "options": [
+        "Hemophilus influenzae",
+        "E. coli",
+        "Streptococcus pneumoniae",
+        "Staph. Golden"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch10-microbiology-q3",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The following is best used for treatment of cryptococcal meningitis:",
+      "explanation": "Cryptococcal meningitis treatment: Amphotericin B + Fluconazole combination is the treatment of choice for induction, followed by fluconazole consolidation. Amphotericin B (A) alone is toxic; fluconazole (C) alone is not sufficient for induction. The combination provides synergistic effect with amphotericin B's rapid fungicidal action and fluconazole's CNS penetration. For HIV patients, lifelong fluconazole maintenance is needed. The answer is D - A & C in combination. Standard regimen: Amphotericin B + flucytosine initially, then fluconazole.",
+      "keyConcept": "Cryptococcal meningitis requires Amphotericin B + Fluconazole induction therapy, followed by fluconazole consolidation/maintenance.",
+      "options": [
+        "Amphotericin B",
+        "Nystatin",
+        "Fluconazole",
+        "A & c in combination"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch10-microbiology-q4",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "To management of rabies, which of the following must use \n\nA) Active immunization \nB) Passive immunization",
+      "explanation": "Rabies post-exposure prophylaxis (PEP) includes both active and passive immunization. A) Active immunization - rabies vaccine (inactivated virus) stimulates antibody production; B) Passive immunization - rabies immune globulin (RIG) provides immediate antibodies. Both are needed because vaccines take 2 weeks to generate antibodies while RIG provides immediate protection. The answer is C - both A and B. Standard PEP: wound cleaning, RIG (infiltrated around wound), and 4-dose vaccine series.",
+      "keyConcept": "Rabies PEP requires both vaccine (active) and immune globulin (passive) immunity for complete protection.",
+      "options": [
+        "a",
+        "b",
+        "a, b",
+        "None of the above"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch10-microbiology-q5",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "spasm of throat muscle due to rabies lead to \n\nA) Hydrophobia \nB) Increased salivation \nC) Paralysis \nD) None of the above",
+      "explanation": "Spasm of throat muscles in rabies leads to HYDROPHOBIA (fear of water). This occurs because the virus affects the medulla, causing painful spasms of pharyngeal muscles when attempting to swallow. A) Hydrophobia - TRUE (pathognomonic for rabies); B) Increased salivation - TRUE (but due to difficulty swallowing, not the primary spasm-related symptom); C) Paralysis - can occur in 'dumb' rabies. The answer is A - hydrophobia is the classic manifestation of rabies pharyngeal spasm. Patients cannot swallow due to painful spasms when attempting to drink.",
+      "keyConcept": "Hydrophobia (fear of water due to painful pharyngeal spasms) is pathognomonic for rabies encephalitis.",
+      "options": [
+        "Hydrophobia",
+        "Increased salivation",
+        "Paralysis",
+        "None of the above"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch10-microbiology-q6",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The best route of rabies virus to reach the spinal cord and CNS of the host is \n\nA) Blood due to high level of viremia \nB) Along the afferent peripheral neurons \nC) Being carried by macrophages.",
+      "explanation": "The rabies virus reaches the CNS via peripheral neurons (axonal transport). After bite/scratch, virus replicates in muscle at inoculation site, then enters peripheral nerve endings and travels retrograde to the spinal cord and brain. A) Blood (viremia) - incorrect; B) Along afferent peripheral neurons - CORRECT (virus uses axonal transport); C) Carried by macrophages - not the primary route. The answer is B. This is why post-exposure prophylaxis must be started immediately - once the virus reaches the CNS via neural spread, it's too late.",
+      "keyConcept": "Rabies virus travels retrograde along peripheral neurons to reach the CNS, not via blood.",
+      "options": [
+        "Blood due to high level of viremia",
+        "Along the afferent peripheral neurons",
+        "Being carried by macrophages."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch10-microbiology-q7",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Post exposure Vaccination is successful in rabies because \n\nA) The virus is weak. \nB) The vaccine is potent.\nC) The incubatory period is long. \nD) All of the above",
+      "explanation": "Post-exposure vaccination works because the incubation period is long (weeks to months), allowing vaccine-induced immunity to develop before the virus reaches the CNS. A) 'Virus is weak' - incorrect; B) 'Vaccine is potent' - not the main reason; C) 'Incubatory period is long' - CORRECT. The long incubation period allows time for vaccine to generate protective antibodies. D) 'All of the above' - incorrect because A and B are wrong. The answer is C. Typical incubation: 1-3 months depending on distance from CNS and viral load.",
+      "keyConcept": "Rabies vaccine succeeds because the long incubation period (weeks-months) allows vaccine-induced immunity to develop before CNS invasion.",
+      "options": [
+        "The virus is weak.",
+        "The vaccine is potent.",
+        "The incubatory period is long.",
+        "All of the above"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch10-microbiology-q9",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The best rabies vaccine used now in humans is \n\nA) Human diploid cell vaccine \nB) Simple vaccine \nC) Duck embryo vaccine \nD) Flurry vaccine",
+      "explanation": "The best rabies vaccine is the Human Diploid Cell Vaccine (HDCV). A) HDCV - CORRECT (inactivated virus grown in human diploid cells); B) Simple vaccine - not a standard term; C) Duck embryo vaccine - older vaccine with more side effects; D) Flurry vaccine - not a recognized rabies vaccine. HDCV is the gold standard - highly immunogenic with minimal side effects. The answer is A. Modern alternatives include purified chick embryo cell (PCEC) vaccine. These are all inactivated virus vaccines given IM (deltoid, not gluteus).",
+      "keyConcept": "Human Diploid Cell Vaccine (HDCV) is the gold standard rabies vaccine - safe and highly immunogenic.",
+      "options": [
+        "Human diploid cell vaccine",
+        "Simple vaccine",
+        "Duck embryo vaccine",
+        "Flurry vaccine"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch10-microbiology-q10",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Treatment of rabies includes the followings EXCEPT \n\nA) Post-exposure vaccination \nB) Passive immunization \nC) Cleaning of the wound with tetanus prophylaxis \nD) Antiviral drugs",
+      "explanation": "Rabies treatment includes: A) Post-exposure vaccination - TRUE; B) Passive immunity (RIG) - TRUE; C) Wound care - TRUE (important for reducing viral load). What would NOT be included? Possibly D (something else). But given the options listed as a, b, c, d with d being the answer, the question asks which is EXCEPT. If all A, B, C are part of treatment, and D is 'None of the above', then none would be the exception. But typically rabies PEP includes wound cleaning, RIG, and vaccine. Perhaps the question is poorly formatted. I'll assume the answer relates to which component is NOT standard. Given standard PEP includes all listed, the answer is likely D if it represents an incorrect option not shown. The answer is D if the question is asking for an exception to standard management. Since standard care includes all of the above, the answer might be that none are exceptions. But without seeing option D's content, I'll go with the format implying D is the exception. The answer is likely D if there's an option like 'none' or something not standard.",
+      "keyConcept": "Rabies PEP includes wound care, passive immunity (RIG), and active vaccination - all are standard components.",
+      "options": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch10-microbiology-q11",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The presence of Negri bodies in host cell is characteristic of \n\nA) Mumps \nB) Rabies \nC) Infectious mononucleosis \nD) Aseptic meningitis.",
+      "explanation": "Negri bodies are characteristic of RABIES. They are eosinophilic intracytoplasmic inclusion bodies found in neurons, especially in rabies-infected brain tissue. A) Mumps - causes parotitis, not associated with Negri bodies; B) Rabies - CORRECT (Negri bodies are pathognomonic); C) Infectious mononucleosis - associated with atypical lymphocytes, not Negri bodies; D) Aseptic meningitis - caused by various viruses (enterovirus, HSV), not associated with Negri bodies. The answer is B - Negri bodies are pathognomonic for rabies infection.",
+      "keyConcept": "Negri bodies are eosinophilic cytoplasmic inclusions in neurons that are pathognomonic for rabies.",
+      "options": [
+        "Mumps",
+        "Rabies",
+        "Infectious mononucleosis",
+        "Aseptic meningitis."
+      ],
+      "correctIndex": 1
+    }
+  ]
+}

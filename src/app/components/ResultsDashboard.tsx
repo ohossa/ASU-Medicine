@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import { checkAnswerCorrect } from '../utils/quiz';
+import { norm } from '../utils/string';
 import {
   ArrowLeft,
   ChevronRight,
@@ -55,62 +57,6 @@ function getPerformanceBadge(pct: number): string {
   if (pct >= 65) return 'Grade C';
   if (pct >= 60) return 'Grade D';
   return 'Grade F';
-}
-
-const norm = (s: any) => String(s ?? '').trim().toLowerCase();
-
-function checkAnswerCorrect(q: Question, ans: any): boolean {
-  if (ans === undefined || ans === null) return false;
-
-  switch (q.type) {
-    case 'mcq':
-    case 'truefalse':
-      return ans === q.correctIndex;
-
-    case 'matching': {
-      const pairs = q.pairs ?? [];
-      const scrambled: string[] = ans?.scrambled ?? [];
-      const matches: Record<number, number> = ans?.matches ?? {};
-      if (!pairs.length || !scrambled.length) return false;
-      return pairs.every((p: any, i: number) => {
-        const correctScrambledIndex = scrambled.indexOf(p.target ?? p.right);
-        return matches[i] === correctScrambledIndex && correctScrambledIndex !== -1;
-      });
-    }
-
-    case 'essay':
-      return ans?.selfGrade === 'correct';
-
-    case 'fillblank': {
-      const inputs: string[] = ans?.inputs ?? [];
-      const blanks: string[] = q.blanks ?? [];
-      const accepted: string[][] = q.acceptedAnswers ?? [];
-      if (!blanks.length) return false;
-      return blanks.every((primary, i) => {
-        const user = norm(inputs[i]);
-        if (!user) return false;
-        const alternatives = (accepted[i] ?? []).map(norm);
-        return user === norm(primary) || alternatives.includes(user);
-      });
-    }
-
-    case 'case':
-    case 'casestudy': {
-      const subs = q.subQuestions ?? [];
-      if (!subs.length) return false;
-      return subs.every((sq: any) => {
-        const subAns = ans?.[sq.id];
-        if (sq.type === 'mcq') {
-          return subAns === sq.correctIndex;
-        } else {
-          return subAns?.selfGrade === 'correct';
-        }
-      });
-    }
-
-    default:
-      return false;
-  }
 }
 
 /* Checks a single fill-blank slot */
@@ -507,7 +453,12 @@ export function ResultsDashboard({
       {(q.subQuestions ?? []).map((sq: any, si: number) => {
         const userAns = ans?.[sq.id];
         const isSubMcq = sq.type === 'mcq';
-        const subCorrect = isSubMcq ? userAns === sq.correctIndex : userAns?.selfGrade === 'correct';
+        const isSubFill = sq.type === 'fillblank';
+        const subCorrect = isSubFill
+          ? checkAnswerCorrect(sq, userAns)
+          : isSubMcq
+            ? userAns === sq.correctIndex
+            : userAns?.selfGrade === 'correct';
         return (
           <div key={si} className="rounded-xl border border-gray-200 dark:border-white/[0.07] bg-gray-50/30 dark:bg-white/[0.02] p-4 text-start">
             <div className="mb-3 flex items-start justify-between gap-3">
@@ -524,7 +475,27 @@ export function ResultsDashboard({
                 <span className="text-xs text-gray-400 dark:text-white/30 shrink-0 font-medium">Unanswered</span>
               )}
             </div>
-            {isSubMcq && sq.options ? (
+            {isSubFill ? (
+              <div className="space-y-2">
+                {(sq.text ?? '').split('___').map((part: string, pi: number) => (
+                  <React.Fragment key={pi}>
+                    <span className="text-sm text-gray-800 dark:text-white/80">{part}</span>
+                    {pi < (sq.blanks ?? []).length && (
+                      <span
+                        className={`mx-1 inline-block rounded-lg border px-2.5 py-0.5 text-sm font-medium ${
+                          isBlankCorrect(sq, userAns?.inputs ?? [], pi)
+                            ? 'border-emerald-500/50 bg-emerald-500/10 text-emerald-600 dark:text-emerald-400'
+                            : 'border-rose-500/50 bg-rose-500/10 text-rose-600 dark:text-rose-400 line-through'
+                        }`}
+                      >
+                        {(userAns?.inputs ?? [])[pi]?.trim() || '—'}
+                      </span>
+                    )}
+                  </React.Fragment>
+                ))}
+                {!userAns && <span className="text-xs text-gray-400 dark:text-white/30">No answer submitted</span>}
+              </div>
+            ) : isSubMcq && sq.options ? (
               <div className="space-y-1.5">
                 {sq.options.map((opt: string, oi: number) => {
                   const isCorrect = oi === sq.correctIndex;
@@ -694,6 +665,7 @@ export function ResultsDashboard({
               <button
                 key={key}
                 onClick={() => setFilter(key)}
+                aria-pressed={isActive}
                 className={`flex items-center gap-2 rounded-full border px-4 py-2 text-sm transition-all cursor-pointer ${
                   isActive
                     ? 'border-gray-300 dark:border-white/30 bg-gray-900 dark:bg-white text-white dark:text-black font-semibold shadow-sm'
@@ -707,6 +679,37 @@ export function ResultsDashboard({
               </button>
             );
           })}
+        </div>
+
+        {/* Expand / Collapse All controls */}
+        <div className="mb-4 flex flex-wrap gap-2">
+          <button
+            onClick={() => {
+              const indices = new Set(visible.map(({ i }) => i));
+              setOpenExplanations(new Set(indices));
+            }}
+            className="flex items-center gap-1.5 rounded-full border border-amber-500/30 bg-amber-500/5 px-3.5 py-1.5 text-xs font-medium text-amber-700 dark:text-amber-300 transition-colors hover:bg-amber-500/10"
+          >
+            <Lightbulb size={13} /> Expand All Explanations
+          </button>
+          <button
+            onClick={() => {
+              const indices = new Set(visible.map(({ i }) => i));
+              setOpenConcepts(new Set(indices));
+            }}
+            className="flex items-center gap-1.5 rounded-full border border-sky-500/30 bg-sky-500/5 px-3.5 py-1.5 text-xs font-medium text-sky-700 dark:text-sky-300 transition-colors hover:bg-sky-500/10"
+          >
+            <Bookmark size={13} /> Expand All Concepts
+          </button>
+          <button
+            onClick={() => {
+              setOpenExplanations(new Set());
+              setOpenConcepts(new Set());
+            }}
+            className="flex items-center gap-1.5 rounded-full border border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.03] px-3.5 py-1.5 text-xs font-medium text-gray-500 dark:text-white/50 transition-colors hover:bg-gray-100 dark:hover:bg-white/[0.07]"
+          >
+            Collapse All
+          </button>
         </div>
 
         {/* ── Section E: Detailed Question Review Feed ─────────────────────── */}

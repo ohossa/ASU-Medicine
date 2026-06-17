@@ -2,6 +2,7 @@ import { defineConfig } from 'vite'
 import path from 'path'
 import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react'
+import { visualizer } from 'rollup-plugin-visualizer'
 
 function figmaAssetResolver() {
   return {
@@ -21,6 +22,7 @@ export default defineConfig({
     figmaAssetResolver(),
     react(),
     tailwindcss(),
+    ...(process.env.ANALYZE ? [visualizer({ open: true, gzipSize: true, brotliSize: true, filename: 'stats.html' })] : []),
   ],
   resolve: {
     alias: {
@@ -38,7 +40,7 @@ export default defineConfig({
           if (id.includes('node_modules/@clerk/')) {
             return 'vendor-clerk';
           }
-          if (id.includes('node_modules/framer-motion/') || id.includes('node_modules/motion/') || id.includes('node_modules/@emotion/')) {
+          if (id.includes('node_modules/motion/') || id.includes('node_modules/@emotion/')) {
             return 'vendor-motion';
           }
           if (id.includes('node_modules/@mui/')) {

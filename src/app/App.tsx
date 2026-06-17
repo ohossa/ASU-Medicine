@@ -1,8 +1,14 @@
 import { useState, useEffect, useRef, Suspense, lazy } from 'react';
 import { BrowserRouter, Routes, Route, Navigate, useParams, useNavigate, useLocation } from 'react-router';
+import safeStorage from './utils/safeStorage';
 import { ProgressProvider } from './store/progress';
 import { FX } from './lib/fx.config';
 import { useDeferredMount } from './hooks/useDeferredMount';
+import { checkAnswerCorrect } from './utils/quiz';
+import { useViewTransition } from './hooks/useViewTransition';
+import { ClerkThemeTogglePortal } from './components/ClerkThemeTogglePortal';
+import { LanguageProfilePage } from './components/profile/LanguageProfilePage';
+import { AcademicYearProfilePage } from './components/profile/AcademicYearProfilePage';
 
 // Lazy-loaded components for routing/modals
 const Dashboard = lazy(() => import('../pages/Dashboard'));
@@ -21,8 +27,7 @@ const LazySoundManagerComponent = lazy(() => import('./components/SoundManagerCo
 const EagerLevelUpOverlay = LazyLevelUpOverlay;
 const EagerInteractiveBackground = LazyInteractiveBackground;
 
-import { createPortal } from 'react-dom';
-import { AnimatePresence } from 'framer-motion';
+import { AnimatePresence } from 'motion/react';
 import {
   GraduationCap,
   BookOpen,
@@ -98,237 +103,6 @@ interface ResultPayload {
   flaggedQuestions: Set<number>;
 }
 
-// Unified portal footer component matching ASU branding
-function PortalFooter() {
-  return (
-    <footer className="w-full mt-16 pb-8 text-center space-y-2 border-t border-gray-100 dark:border-gray-800/80 pt-6">
-      <p className="text-xs text-gray-400 dark:text-gray-500 font-semibold tracking-wider uppercase">
-        Ain Shams University • ASU Medical Portal
-      </p>
-      <p className="text-[11px] text-gray-400 dark:text-gray-500 font-medium max-w-xl mx-auto px-6 leading-relaxed">
-        Developed for medical students. For inquiries, database updates, or error reports, please contact:{' '}
-        <a
-          href="mailto:omarhmaged@gmail.com"
-          className="hover:text-physiology dark:hover:text-white transition-colors underline font-semibold"
-        >
-          omarhmaged@gmail.com
-        </a>
-      </p>
-    </footer>
-  );
-}
-
-function ClerkThemeTogglePortal() {
-  const [container, setContainer] = useState<Element | null>(null);
-
-  useEffect(() => {
-    const findContainer = () => {
-      const previews = document.querySelectorAll('.cl-userPreview');
-      let preview: Element | null = null;
-      for (let i = 0; i < previews.length; i++) {
-        const p = previews[i];
-        if (p.closest('.cl-userProfile-root')) {
-          continue;
-        }
-        preview = p;
-        break;
-      }
-
-      if (preview) {
-        let existing = preview.querySelector('#clerk-custom-toggle-container');
-        if (!existing) {
-          existing = document.createElement('div');
-          existing.id = 'clerk-custom-toggle-container';
-          existing.className = 'ms-auto flex items-center justify-end pl-2 shrink-0 scale-85 origin-right';
-          preview.appendChild(existing);
-        }
-        setContainer(existing);
-      } else {
-        setContainer(null);
-      }
-    };
-
-    findContainer();
-
-    const observer = new MutationObserver(() => {
-      findContainer();
-    });
-
-    observer.observe(document.body, { childList: true, subtree: true });
-    return () => observer.disconnect();
-  }, []);
-
-  if (!container) return null;
-
-  return createPortal(<ThemeToggle />, container);
-}
-
-function LanguageProfilePage() {
-  const { language, toggleLanguage } = useLanguage();
-
-  return (
-    <div className="p-6 text-gray-900 font-manrope">
-      <div className="flex items-center gap-3 mb-6">
-        <div className="w-10 h-10 rounded-xl bg-physiology/10 flex items-center justify-center text-physiology shrink-0">
-          <Globe size={22} />
-        </div>
-        <div className="text-left rtl:text-right">
-          <h3 className="font-archivo text-lg font-bold tracking-tight text-gray-900">
-            {language === 'en' ? "Language Settings" : "إعدادات اللغة"}
-          </h3>
-          <p className="text-xs text-gray-500 font-medium mt-0.5">
-            {language === 'en' ? "Select your preferred language for the layout and content." : "اختر لغتك المفضلة للواجهة والمحتوى."}
-          </p>
-        </div>
-      </div>
-
-      <div className="space-y-4">
-        <div className="flex flex-col gap-2">
-          <label className="text-xs font-bold uppercase tracking-wider text-gray-450">
-            {language === 'en' ? "Language" : "اللغة"}
-          </label>
-          <div className="relative">
-            <select
-              value={language}
-              onChange={(e) => {
-                if (e.target.value !== language) {
-                  toggleLanguage();
-                }
-              }}
-              className="w-full p-4 pr-10 rounded-xl bg-gray-50 border border-gray-100 hover:border-physiology/20 text-sm font-semibold text-gray-700 focus:outline-none focus:ring-2 focus:ring-physiology/50 transition-all duration-200 cursor-pointer appearance-none text-left rtl:text-right"
-            >
-              <option value="en">English (US)</option>
-              <option value="ar">العربية (Arabic)</option>
-            </select>
-            <div className="absolute inset-y-0 right-0 flex items-center pr-4 pointer-events-none text-gray-450">
-              <Globe size={18} />
-            </div>
-          </div>
-        </div>
-        
-        <p className="text-[11px] text-gray-400 font-medium mt-2 leading-relaxed">
-          {language === 'en' 
-            ? "Note: Changing language will translate the interface layout and module topic names."
-            : "ملاحظة: تغيير اللغة سيقوم بترجمة واجهة المستخدم وأسماء مواضيع الموديلات الدراسي."}
-        </p>
-      </div>
-    </div>
-  );
-}
-
-function AcademicYearProfilePage({
-  studentYear,
-  setStudentYear,
-  setScreen,
-  setSelectedYear,
-  setSelectedSemester,
-  setSelectedModule,
-  setStudyMode,
-  setSelectedChapter
-}: {
-  studentYear: number | null;
-  setStudentYear: (y: number | null) => void;
-  setScreen: any;
-  setSelectedYear: any;
-  setSelectedSemester: any;
-  setSelectedModule: any;
-  setStudyMode: any;
-  setSelectedChapter: any;
-}) {
-  const { language } = useLanguage();
-
-  const handleSelectYear = (year: number) => {
-    localStorage.setItem('asu_medical_student_year', year.toString());
-    localStorage.removeItem('asu_portal_year');
-    localStorage.removeItem('asu_portal_semester');
-    localStorage.removeItem('asu_portal_module');
-    localStorage.removeItem('asu_portal_studyMode');
-    localStorage.removeItem('asu_portal_screen');
-    
-    // Update local state
-    setStudentYear(year);
-    setSelectedYear(null);
-    setSelectedSemester(null);
-    setSelectedModule(null);
-    setStudyMode(null);
-    setSelectedChapter(null);
-    setScreen('yearSelect');
-    
-    // Trigger cloud sync
-    if (typeof window !== 'undefined') {
-      window.dispatchEvent(new Event('trigger-cloud-sync'));
-    }
-  };
-
-  const getYearName = (yr: number) => {
-    if (language === 'en') {
-      if (yr === 1) return "First Year";
-      if (yr === 2) return "Second Year";
-      if (yr === 3) return "Third Year";
-      if (yr === 4) return "Fourth Year";
-      if (yr === 5) return "Fifth Year";
-    } else {
-      if (yr === 1) return "السنة الأولى";
-      if (yr === 2) return "السنة الثانية";
-      if (yr === 3) return "السنة الثالثة";
-      if (yr === 4) return "السنة الرابعة";
-      if (yr === 5) return "السنة الخامسة";
-    }
-    return `Year ${yr}`;
-  };
-
-  return (
-    <div className="p-6 text-gray-900 font-manrope">
-      <div className="flex items-center gap-3 mb-6">
-        <div className="w-10 h-10 rounded-xl bg-physiology/10 flex items-center justify-center text-physiology shrink-0">
-          <GraduationCap size={22} />
-        </div>
-        <div className="text-left rtl:text-right">
-          <h3 className="font-archivo text-lg font-bold tracking-tight text-gray-900">
-            {language === 'en' ? "Change Academic Year" : "تغيير السنة الدراسية"}
-          </h3>
-          <p className="text-xs text-gray-505 font-medium mt-0.5">
-            {language === 'en' ? `Current: ${getYearName(studentYear || 1)}` : `الحالي: ${getYearName(studentYear || 1)}`}
-          </p>
-        </div>
-      </div>
-
-      <div className="space-y-2">
-        {([1, 2, 3, 4, 5] as const).map((yr) => {
-          const isCurrent = studentYear === yr;
-          return (
-            <button
-              key={yr}
-              onClick={() => handleSelectYear(yr)}
-              className={`w-full p-4 rounded-xl flex items-center justify-between border transition-all duration-200 text-left rtl:text-right ${
-                isCurrent 
-                  ? "bg-physiology/10 border-physiology/30 text-physiology-dark"
-                  : "bg-gray-50 border-gray-100 hover:bg-physiology/5 text-gray-700"
-              }`}
-            >
-              <div className="text-left rtl:text-right">
-                <span className="block text-sm font-bold">
-                  {language === 'en' ? `Year ${yr}` : `السنة ${yr}`}
-                </span>
-                <span className="block text-[11px] text-gray-400 mt-0.5">
-                  {language === 'en' 
-                    ? `Switch to Year ${yr} syllabus and courses`
-                    : `الانتقال إلى منهج ومقررات السنة ${yr}`}
-                </span>
-              </div>
-              {isCurrent && (
-                <div className="w-5.5 h-5.5 rounded-full bg-physiology flex items-center justify-center text-white shrink-0">
-                  <Check size={12} strokeWidth={3} />
-                </div>
-              )}
-            </button>
-          );
-        })}
-      </div>
-    </div>
-  );
-}
-
 const lookupModule = (mCode: string): ModuleInfo | null => {
   for (const year of Object.values(SYLLABUS_MODULES)) {
     for (const sem of Object.values(year)) {
@@ -377,12 +151,12 @@ function QuizFlowWrapper({
   setStudyMode: (m: 'mcq' | 'essay' | 'mixed' | null) => void;
   screen: Screen;
   setScreen: (s: Screen) => void;
-  activeChapters: any[];
+  activeChapters: ChapterData[];
   studyModeNameMap: Record<string, string>;
   selectedChapter: ChapterData | null;
   setSelectedChapter: (c: ChapterData | null) => void;
   handleSelectChapter: (c: ChapterData) => void;
-  handleSelectHistory: (res: any, source: any) => void;
+  handleSelectHistory: (res: QuizResult, source: 'chapters' | 'history') => void;
   customUserButton: React.ReactNode;
   selectedYear: number | null;
   selectedSemester: number | null;
@@ -508,6 +282,7 @@ function QuizFlowWrapper({
 }
 
 function MainApp() {
+  const transitionTo = useViewTransition();
   const { t, language, toggleLanguage } = useLanguage();
   const { user } = useUser();
   const { isDark } = useTheme();
@@ -523,7 +298,7 @@ function MainApp() {
   // Student Year tracking
   const [studentYear, setStudentYear] = useState<number | null>(() => {
     try {
-      const saved = localStorage.getItem('asu_medical_student_year');
+      const saved = safeStorage.getItem('asu_medical_student_year');
       return saved ? parseInt(saved, 10) : null;
     } catch {
       return null;
@@ -533,7 +308,7 @@ function MainApp() {
   // Navigation states
   const [screen, setScreen] = useState<Screen>(() => {
     try {
-      const saved = localStorage.getItem('asu_portal_screen');
+      const saved = safeStorage.getItem('asu_portal_screen');
       if (saved) {
         if (saved === 'quiz' || saved === 'results') return 'chapters';
         return saved as Screen;
@@ -544,16 +319,16 @@ function MainApp() {
   const [isFromHistory, setIsFromHistory] = useState(false);
   const [historySource, setHistorySource] = useState<'chapters' | 'history' | null>(null);
   const [selectedYear, setSelectedYear] = useState<number | null>(() => {
-    try { const saved = localStorage.getItem('asu_portal_year'); return saved ? Number(saved) : null; } catch { return null; }
+    try { const saved = safeStorage.getItem('asu_portal_year'); return saved ? Number(saved) : null; } catch { return null; }
   });
   const [selectedSemester, setSelectedSemester] = useState<number | null>(() => {
-    try { const saved = localStorage.getItem('asu_portal_semester'); return saved ? Number(saved) : null; } catch { return null; }
+    try { const saved = safeStorage.getItem('asu_portal_semester'); return saved ? Number(saved) : null; } catch { return null; }
   });
   const [selectedModule, setSelectedModule] = useState<ModuleInfo | null>(() => {
-    try { const saved = localStorage.getItem('asu_portal_module'); return saved ? JSON.parse(saved) : null; } catch { return null; }
+    try { const saved = safeStorage.getItem('asu_portal_module'); return saved ? JSON.parse(saved) : null; } catch { return null; }
   });
   const [studyMode, setStudyMode] = useState<'mcq' | 'essay' | 'mixed' | null>(() => {
-    try { const saved = localStorage.getItem('asu_portal_studyMode'); return saved as any || null; } catch { return null; }
+    try { const saved = safeStorage.getItem('asu_portal_studyMode'); return saved as any || null; } catch { return null; }
   });
 
   const [showTracker, setShowTracker] = useState(false);
@@ -640,7 +415,7 @@ function MainApp() {
   useEffect(() => {
     const handleStorage = () => {
       try {
-        const saved = localStorage.getItem('asu_medical_student_year');
+        const saved = safeStorage.getItem('asu_medical_student_year');
         if (saved) {
           setStudentYear(parseInt(saved, 10));
         }
@@ -680,15 +455,15 @@ function MainApp() {
 
   // Sync state to localStorage
   useEffect(() => {
-    localStorage.setItem('asu_portal_screen', screen);
-    if (selectedYear) localStorage.setItem('asu_portal_year', selectedYear.toString());
-    else localStorage.removeItem('asu_portal_year');
-    if (selectedSemester) localStorage.setItem('asu_portal_semester', selectedSemester.toString());
-    else localStorage.removeItem('asu_portal_semester');
-    if (selectedModule) localStorage.setItem('asu_portal_module', JSON.stringify(selectedModule));
-    else localStorage.removeItem('asu_portal_module');
-    if (studyMode) localStorage.setItem('asu_portal_studyMode', studyMode);
-    else localStorage.removeItem('asu_portal_studyMode');
+    safeStorage.setItem('asu_portal_screen', screen);
+    if (selectedYear) safeStorage.setItem('asu_portal_year', selectedYear.toString());
+    else safeStorage.removeItem('asu_portal_year');
+    if (selectedSemester) safeStorage.setItem('asu_portal_semester', selectedSemester.toString());
+    else safeStorage.removeItem('asu_portal_semester');
+    if (selectedModule) safeStorage.setItem('asu_portal_module', JSON.stringify(selectedModule));
+    else safeStorage.removeItem('asu_portal_module');
+    if (studyMode) safeStorage.setItem('asu_portal_studyMode', studyMode);
+    else safeStorage.removeItem('asu_portal_studyMode');
     
     // Trigger cloud sync to push these states
     if (typeof window !== 'undefined') {
@@ -755,16 +530,6 @@ function MainApp() {
       setScreen('yearSelect');
     }
   }, [screen, selectedYear, selectedSemester, selectedModule, studyMode, selectedChapter, quizPayload, resultPayload]);
-
-  const transitionTo = (fn: () => void) => {
-    // @ts-ignore
-    if (document.startViewTransition) {
-      // @ts-ignore
-      document.startViewTransition(fn);
-    } else {
-      fn();
-    }
-  };
 
   // Navigate back helper for breadcrumbs
   const navigateTo = (targetScreen: Screen) => {
@@ -846,53 +611,6 @@ function MainApp() {
       setQuizPayload({ chapter: selectedChapter!, subject: null, questions });
       setScreen('quiz');
     });
-  };
-
-  const checkAnswerCorrect = (q: Question, ans: any) => {
-    if (ans === undefined) return false;
-    if (q.type === 'mcq' || q.type === 'truefalse') {
-      return ans === q.correctIndex;
-    }
-    if (q.type === 'matching') {
-      const scrambled = ans.scrambled;
-      const matches = ans.matches || ans;
-      if (!scrambled || !matches || !q.pairs) return false;
-      return q.pairs.every((pair, pIdx) => {
-        const correctTargetIdx = scrambled.indexOf(pair.target);
-        return matches[pIdx] === correctTargetIdx;
-      });
-    }
-    if (q.type === 'essay') {
-      return ans?.selfGrade === 'correct';
-    }
-    if (q.type === 'case' && q.subQuestions) {
-      return q.subQuestions.every((subQ) => {
-        const subAns = ans[subQ.id];
-        if (subAns === undefined) return false;
-        if (subQ.type === 'mcq') {
-          return subAns === subQ.correctIndex;
-        }
-        if (subQ.type === 'essay') {
-          return subAns?.selfGrade === 'correct';
-        }
-        return false;
-      });
-    }
-    if (q.type === 'fillblank') {
-      const userAnswers = ans.userAnswers || [];
-      const blanks = q.blanks || [];
-      if (userAnswers.length !== blanks.length) return false;
-      return blanks.every((correctWord, bIdx) => {
-        const userWord = (userAnswers[bIdx] || '').trim().toLowerCase();
-        const correctWordLower = correctWord.toLowerCase();
-        const matchesPrimary = userWord === correctWordLower;
-        const matchesAccepted = q.acceptedAnswers?.[bIdx]?.some(
-          (alt) => alt.trim().toLowerCase() === userWord
-        );
-        return matchesPrimary || matchesAccepted;
-      });
-    }
-    return false;
   };
 
   const handleFinishQuiz = (answers: Record<number, any>, elapsedSeconds: number, flaggedQuestions: Set<number>) => {
@@ -988,7 +706,7 @@ function MainApp() {
     const flaggedSet = new Set<number>(result.flaggedQuestionIds || []);
 
     // Try to locate the module definition
-    let targetModule = SYLLABUS_MODULES[yr]?.[sem]?.find((m: any) => m.code === modCode) || null;
+    let targetModule = SYLLABUS_MODULES[yr]?.[sem]?.find((m: ModuleInfo) => m.code === modCode) || null;
     if (!targetModule && modCode === 'MEM-2') {
       targetModule = {
         code: 'MEM-2',
@@ -1218,8 +936,10 @@ function MainApp() {
         .grid-delay:nth-child(1) { animation-delay: 40ms; }
         .grid-delay:nth-child(2) { animation-delay: 80ms; }
       `}</style>
-
-      <main className="w-full relative z-10">
+      <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-physiology focus:text-white focus:rounded-lg focus:outline-none">
+        Skip to content
+      </a>
+      <main id="main-content" className="w-full relative z-10">
         <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden transform-gpu">
           <div className="absolute top-[-20%] left-[-10%] w-[50%] h-[50%] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-physiology/10 to-transparent dark:from-physiology/5 rounded-full mix-blend-multiply dark:mix-blend-screen animate-pulse duration-10000 will-change-transform transform-gpu"></div>
           <div className="absolute bottom-[-20%] right-[-10%] w-[50%] h-[50%] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-clinical/10 to-transparent dark:from-clinical/5 rounded-full mix-blend-multiply dark:mix-blend-screen animate-pulse duration-10000 will-change-transform transform-gpu" style={{ animationDelay: '2s' }}></div>

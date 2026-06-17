@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "comingSoon": true,
+  "meta": {
+    "moduleCode": "IAE-1",
+    "moduleName": "Introduction to Anatomy & Embryology",
+    "year": 1,
+    "semester": 1,
+    "creditPoints": 3,
+    "totalMarks": 60,
+    "keywords": [
+      "anatomy",
+      "embryology",
+      "iae"
+    ]
+  },
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Introduction to Anatomy",
+      "subtitle": "Introduction to Anatomy",
+      "emoji": "🦴",
+      "page": 1,
+      "lectureRange": "Lectures 1",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 2,
+      "title": "General Embryology",
+      "subtitle": "General Embryology",
+      "emoji": "🧬",
+      "page": 2,
+      "lectureRange": "Lectures 2",
+      "subjects": [],
+      "keywords": []
+    }
+  ]
+}

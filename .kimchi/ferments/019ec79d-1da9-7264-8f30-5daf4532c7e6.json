@@ -1,0 +1,200 @@
+{
+  "id": "019ec79d-1da9-7264-8f30-5daf4532c7e6",
+  "name": "Clean CNS OCR Questions",
+  "description": "i made a large collection of CNS questions, SOOOOOO huge '/Users/omarhossa/Documents/Medcine ASU/ASU-Medical-Portal/data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_raw/main CNS questions.txt' thousands on thousands i want you to run the first prompt 1 the OCR cleaner on it perfectly with no mistakes and ALLLLLL questions i dont want you to miss anything. this is a large file dont make any mistakes /Users/omarhossa/Documents/Medcine\\ ASU/ASU-Medical-Portal/OCR_CLEANER_PROMPT.md this is the OCR cleaner prompt we made earlier grill me with any questions u have and u can if u find any skills u can use u can do so. i want a clean output",
+  "status": "paused",
+  "worktree": {
+    "path": "/Users/omarhossa/Documents/Medcine ASU/ASU-Medical-Portal",
+    "branch": "main",
+    "commit": "1cd82f940d7d5b2263899aa6729fdc5ecbde7a4f"
+  },
+  "scoping": {
+    "goal": {
+      "answer": "Run the OCR cleaner prompt (Step 1 of the MEDARK pipeline) on the entire 94,722-line, 2.7 MB raw CNS question file by splitting it into ~80-question LLM-processed chunks, producing validated, perfectly formatted cleaned question blocks with no silent drops.",
+      "confirmedAt": "2026-06-14T19:48:02.786Z"
+    },
+    "criteria": {
+      "answer": "Every cleaned chunk file is saved to `data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/` with a numbered filename (e.g. `chunk_001.txt`, `chunk_002.txt`, ...).\nNo question is silently dropped: the total number of detected question boundaries in the raw file equals the total number of `QUESTION_TYPE:` blocks across all cleaned chunk files plus the total number of entries in the FLAGGED, SATA, and REMOVED sections.\nThe cleaned output follows the EXACT OCR cleaner prompt template (Section 3): every block has `QUESTION_TYPE`, `SUBJECT`, `CHAPTER`, `LECTURE`, `TEXT`, `ANSWER`, `EXPLANATION: N/A`, and `KEY_CONCEPT: N/A`.\nFlagged, SATA, and REMOVed questions are collected in a separate `flagged_review.txt` file with raw text preserved and clear reasons stated.\nA final verification command (`npx tsx data-format-v2/scripts/validate-cleaner-output.ts` run on all chunks) confirms structural soundness with 0 errors.\nThe original raw file is never modified — read-only access only.",
+      "confirmedAt": "2026-06-14T19:48:02.786Z"
+    },
+    "constraints": {
+      "answer": "Never modify the original `_raw/main CNS questions.txt` file., Must follow `OCR_CLEANER_PROMPT.md` output format exactly (Section 3 template)., Must not silently drop questions — if uncertain, flag them in FLAGGED/SATA/REMOVED sections., Must handle OpenRouter API failures gracefully with retries and resume-from-last capability., Must rate-limit API calls to avoid OpenRouter throttling (max ~5 concurrent requests)., Must reuse existing project tooling (`validate-cleaner-output.ts`, `openai` SDK, `tsx`) where possible.",
+      "confirmedAt": "2026-06-14T19:48:02.786Z"
+    },
+    "phases": {
+      "answer": "Build Pipeline & Pilot, Bulk Processing, Verification & Assembly",
+      "confirmedAt": "2026-06-14T19:48:02.786Z"
+    },
+    "assumptions": {
+      "answer": "The OpenRouter API key in `.env.local` remains valid with sufficient quota for ~70 LLM calls.; ~80-100 questions per chunk (~15-30 KB of raw text) fits comfortably within GPT-4o's context window alongside the full OCR cleaner prompt.; The OCR cleaner prompt works effectively on the actual file content; the pilot phase may reveal minor prompt tweaks needed.; Processing ~70 chunks will complete within a reasonable wall-clock time (API-latency dependent, likely 30-90 minutes).; Some garbled text at the very beginning (Arabic dedication, table of contents) may be unrecoverable and will be properly flagged by the LLM rather than silently dropped.",
+      "confirmedAt": "2026-06-14T19:48:02.786Z"
+    }
+  },
+  "phases": [
+    {
+      "id": "phase-1",
+      "index": 1,
+      "name": "Build Pipeline & Pilot",
+      "goal": "Write a TypeScript batch-cleaning script, validate the approach on 3 pilot chunks, and confirm output quality.",
+      "description": "Create `data-format-v2/scripts/cleaner-batch.ts` that reads the raw file, detects major section boundaries (Part 1-13 + Head & Neck), splits each section into ~80-question chunks, prepends the full OCR cleaner prompt, calls OpenRouter GPT-4o, and saves cleaned output to `_cleaned/chunk_XXX.txt`. Includes retry logic, progress tracking, and resume capability. Run on the first 3 chunks, validate outputs with `validate-cleaner-output.ts`, and adjust the prompt/script if needed.",
+      "parallel": false,
+      "status": "completed",
+      "steps": [
+        {
+          "id": "step-1",
+          "index": 1,
+          "description": "Write the cleaner-batch.ts script with chunking, LLM calling, retry logic, and resume support.",
+          "status": "verified",
+          "verification": {
+            "command": "test -f 'data-format-v2/scripts/cleaner-batch.ts'",
+            "retries": 2,
+            "retryDelayMs": 1000
+          },
+          "parallel": false,
+          "startedAt": "2026-06-14T19:48:49.079Z",
+          "completedAt": "2026-06-14T19:56:23.129Z",
+          "result": {
+            "success": true,
+            "exitCode": 0,
+            "stdout": "",
+            "stderr": "",
+            "completedAt": "2026-06-14T19:56:23.129Z"
+          }
+        },
+        {
+          "id": "step-2",
+          "index": 2,
+          "description": "Run the script in pilot mode on the first 3 chunks and inspect raw outputs.",
+          "status": "verified",
+          "verification": {
+            "command": "test $(ls -1 'data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_'*'.txt' 2>/dev/null | wc -l) -ge 3",
+            "retries": 2,
+            "retryDelayMs": 1000
+          },
+          "parallel": false,
+          "startedAt": "2026-06-14T19:56:52.103Z",
+          "completedAt": "2026-06-14T20:29:02.108Z",
+          "result": {
+            "success": true,
+            "exitCode": 0,
+            "stdout": "",
+            "stderr": "",
+            "completedAt": "2026-06-14T20:29:02.108Z"
+          }
+        },
+        {
+          "id": "step-3",
+          "index": 3,
+          "description": "Validate pilot outputs using the existing validator script.",
+          "status": "verified",
+          "verification": {
+            "command": "npx tsx data-format-v2/scripts/validate-cleaner-output.ts 'data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_001.txt'",
+            "retries": 2,
+            "retryDelayMs": 1000
+          },
+          "parallel": false,
+          "startedAt": "2026-06-14T20:30:56.356Z",
+          "completedAt": "2026-06-14T21:06:17.150Z",
+          "result": {
+            "success": true,
+            "exitCode": 0,
+            "stdout": "",
+            "stderr": "",
+            "completedAt": "2026-06-14T21:06:17.150Z"
+          }
+        }
+      ],
+      "startedAt": "2026-06-14T19:48:24.384Z",
+      "completedAt": "2026-06-14T21:07:23.575Z",
+      "summary": "Phase 1 complete. Built cleaner-batch.ts script with chunking, retry logic, resume support. Ran pilot on 3 chunks using Gemini API (after OpenRouter free-tier failure). Validated all outputs with 0 errors after fixing validator edge cases: SATA regex, matching/case/essay ANSWER handling, case TEXT via CASE_TEXT, empty block cleanup. Ready for Phase 2 bulk processing.",
+      "grade": {
+        "grade": "A",
+        "rationale": "All gates pass; project checks validate.",
+        "gradedAt": "2026-06-14T21:07:23.575Z"
+      }
+    },
+    {
+      "id": "phase-2",
+      "index": 2,
+      "name": "Bulk Processing",
+      "goal": "Process all remaining chunks through the validated pipeline.",
+      "description": "Run `cleaner-batch.ts` across the entire file. The script automatically skips already-processed chunks (resume capability), processes ~70 chunks in total, respects rate limits (~5 concurrent calls), and logs progress. Each chunk receives the full OCR cleaner prompt plus its raw text segment. Outputs are saved as individual `_cleaned/chunk_XXX.txt` files.",
+      "parallel": false,
+      "status": "active",
+      "steps": [
+        {
+          "id": "step-1",
+          "index": 1,
+          "description": "Execute the bulk cleaning run for all chunks in the raw file.",
+          "status": "pending",
+          "verification": {
+            "command": "npx tsx data-format-v2/scripts/cleaner-batch.ts --all",
+            "retries": 2,
+            "retryDelayMs": 1000
+          },
+          "parallel": false,
+          "startedAt": "2026-06-14T21:08:50.848Z"
+        }
+      ],
+      "startedAt": "2026-06-14T21:07:57.102Z"
+    },
+    {
+      "id": "phase-3",
+      "index": 3,
+      "name": "Verification & Assembly",
+      "goal": "Validate every chunk, reconcile question counts, and assemble final deliverables.",
+      "description": "Run `validate-cleaner-output.ts` on every chunk. Count total QUESTION_TYPE blocks and compare against detected raw-question boundaries via a reconciliation script. Assemble all FLAGGED, SATA, and REMOVED sections from every chunk into a single `flagged_review.txt`. Produce a summary report. Optionally concatenate all clean chunks into one master file.",
+      "parallel": false,
+      "status": "planned",
+      "steps": [
+        {
+          "id": "step-1",
+          "index": 1,
+          "description": "Validate all chunk files with the existing validator.",
+          "status": "pending",
+          "verification": {
+            "command": "for f in 'data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/chunk_'*'.txt'; do npx tsx data-format-v2/scripts/validate-cleaner-output.ts \"$f\" || exit 1; done",
+            "retries": 2,
+            "retryDelayMs": 1000
+          },
+          "parallel": false
+        },
+        {
+          "id": "step-2",
+          "index": 2,
+          "description": "Run a reconciliation script that counts raw questions vs clean + flagged + SATA + removed.",
+          "status": "pending",
+          "verification": {
+            "command": "npx tsx data-format-v2/scripts/reconcile-counts.ts 'data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_raw/main CNS questions.txt' 'data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/'",
+            "retries": 2,
+            "retryDelayMs": 1000
+          },
+          "parallel": false
+        }
+      ]
+    }
+  ],
+  "decisions": [],
+  "memories": [],
+  "createdAt": "2026-06-14T19:30:23.272Z",
+  "updatedAt": "2026-06-15T12:34:25.061Z",
+  "goal": "Run the OCR cleaner prompt (Step 1 of the MEDARK pipeline) on the entire 94,722-line, 2.7 MB raw CNS question file by splitting it into ~80-question LLM-processed chunks, producing validated, perfectly formatted cleaned question blocks with no silent drops.",
+  "successCriteria": [
+    "Every cleaned chunk file is saved to `data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_cleaned/` with a numbered filename (e.g. `chunk_001.txt`, `chunk_002.txt`, ...).",
+    "No question is silently dropped: the total number of detected question boundaries in the raw file equals the total number of `QUESTION_TYPE:` blocks across all cleaned chunk files plus the total number of entries in the FLAGGED, SATA, and REMOVED sections.",
+    "The cleaned output follows the EXACT OCR cleaner prompt template (Section 3): every block has `QUESTION_TYPE`, `SUBJECT`, `CHAPTER`, `LECTURE`, `TEXT`, `ANSWER`, `EXPLANATION: N/A`, and `KEY_CONCEPT: N/A`.",
+    "Flagged, SATA, and REMOVed questions are collected in a separate `flagged_review.txt` file with raw text preserved and clear reasons stated.",
+    "A final verification command (`npx tsx data-format-v2/scripts/validate-cleaner-output.ts` run on all chunks) confirms structural soundness with 0 errors.",
+    "The original raw file is never modified — read-only access only."
+  ],
+  "constraints": [
+    "Never modify the original `_raw/main CNS questions.txt` file.",
+    "Must follow `OCR_CLEANER_PROMPT.md` output format exactly (Section 3 template).",
+    "Must not silently drop questions — if uncertain, flag them in FLAGGED/SATA/REMOVED sections.",
+    "Must handle OpenRouter API failures gracefully with retries and resume-from-last capability.",
+    "Must rate-limit API calls to avoid OpenRouter throttling (max ~5 concurrent requests).",
+    "Must reuse existing project tooling (`validate-cleaner-output.ts`, `openai` SDK, `tsx`) where possible."
+  ],
+  "lastActiveAt": "2026-06-14T21:07:57.102Z",
+  "activePhaseId": "phase-2"
+}

@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "comingSoon": true,
+  "meta": {
+    "moduleCode": "MLS-1",
+    "moduleName": "Locomotor Module",
+    "year": 1,
+    "semester": 2,
+    "creditPoints": 3,
+    "totalMarks": 60,
+    "keywords": [
+      "locomotor",
+      "anatomy",
+      "mls"
+    ]
+  },
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Upper Limb Anatomy & Injuries",
+      "subtitle": "Upper Limb Anatomy & Injuries",
+      "emoji": "💪",
+      "page": 1,
+      "lectureRange": "Lectures 1",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 2,
+      "title": "Lower Limb Anatomy & Injuries",
+      "subtitle": "Lower Limb Anatomy & Injuries",
+      "emoji": "🦵",
+      "page": 2,
+      "lectureRange": "Lectures 2",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 3,
+      "title": "Spine & Musculoskeletal Pathologies",
+      "subtitle": "Spine & Musculoskeletal Pathologies",
+      "emoji": "🦴",
+      "page": 3,
+      "lectureRange": "Lectures 3",
+      "subjects": [],
+      "keywords": []
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "comingSoon": true,
+  "meta": {
+    "moduleCode": "CEO-3",
+    "moduleName": "Community, Environmental & Occupational Medicine",
+    "year": 3,
+    "semester": 2,
+    "creditPoints": 2,
+    "totalMarks": 40,
+    "keywords": [
+      "community medicine",
+      "epidemiology",
+      "ceo"
+    ]
+  },
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Public Health & Epidemiology",
+      "subtitle": "Public Health & Epidemiology",
+      "emoji": "🌍",
+      "page": 1,
+      "lectureRange": "Lectures 1",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 2,
+      "title": "Environmental & Occupational Hazards",
+      "subtitle": "Environmental & Occupational Hazards",
+      "emoji": "⚠️",
+      "page": 2,
+      "lectureRange": "Lectures 2",
+      "subjects": [],
+      "keywords": []
+    }
+  ]
+}

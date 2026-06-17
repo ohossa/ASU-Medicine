@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "comingSoon": true,
+  "meta": {
+    "moduleCode": "MCVS-2",
+    "moduleName": "Cardiovascular System",
+    "year": 2,
+    "semester": 1,
+    "creditPoints": 4.5,
+    "totalMarks": 90,
+    "keywords": [
+      "cardiovascular",
+      "cardiology",
+      "mcvs"
+    ]
+  },
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Cardiac Anatomy & Histology",
+      "subtitle": "Cardiac Anatomy & Histology",
+      "emoji": "❤️",
+      "page": 1,
+      "lectureRange": "Lectures 1",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 2,
+      "title": "Electrophysiology & ECG",
+      "subtitle": "Electrophysiology & ECG",
+      "emoji": "⚡",
+      "page": 2,
+      "lectureRange": "Lectures 2",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 3,
+      "title": "Hemodynamics & Blood Pressure",
+      "subtitle": "Hemodynamics & Blood Pressure",
+      "emoji": "📈",
+      "page": 3,
+      "lectureRange": "Lectures 3",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 4,
+      "title": "Cardiovascular Pathologies & Pharmacology",
+      "subtitle": "Cardiovascular Pathologies & Pharmacology",
+      "emoji": "💊",
+      "page": 4,
+      "lectureRange": "Lectures 4",
+      "subjects": [],
+      "keywords": []
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "comingSoon": true,
+  "meta": {
+    "moduleCode": "EM2-5",
+    "moduleName": "Emergency Medicine & Trauma 2",
+    "year": 5,
+    "semester": 2,
+    "creditPoints": 2,
+    "totalMarks": 40,
+    "keywords": [
+      "emergency",
+      "trauma",
+      "em2"
+    ]
+  },
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Environmental & Toxicological Emergencies",
+      "subtitle": "Environmental & Toxicological Emergencies",
+      "emoji": "☠️",
+      "page": 1,
+      "lectureRange": "Lectures 1",
+      "subjects": [],
+      "keywords": []
+    }
+  ]
+}

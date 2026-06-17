@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import { useParams, useNavigate } from 'react-router';
 import { Check, Edit3, Calendar, ChevronDown, BookOpen, Layers, Target, GraduationCap, Globe, Sun, Moon, ArrowLeft } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from 'motion/react';
 import type { ChapterData, SubjectData, SubjectColor } from '../app/types';
 import { useLanguage } from '../app/context/LanguageContext';
 import { useTheme } from '../app/context/ThemeContext';
@@ -366,6 +366,9 @@ export function SyllabusTrackerPage({ userButton }: { userButton?: React.ReactNo
   }, [chapters, chapterCounts]);
 
   const getLectureTitle = (subject: SubjectData, index: number): string => {
+    if (subject.lectureNames && subject.lectureNames[index]) {
+      return subject.lectureNames[index];
+    }
     if (subject.lectures) {
       // Split on comma or arabic comma
       const split = subject.lectures.split(/[,،]/).map(s => s.trim());
@@ -690,7 +693,7 @@ export function SyllabusTrackerPage({ userButton }: { userButton?: React.ReactNo
                               return (
                                 <div key={k} className="lec">
                                   <span className="lec-name">
-                                    {isRTL ? `محاضرة ${li + 1}` : `Lecture ${li + 1}`} · {lecTitle}
+                                    {lecTitle}
                                   </span>
                                   <div className="lec-checks">
                                     <button

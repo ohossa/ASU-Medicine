@@ -1,0 +1,757 @@
+{
+  "moduleCode": "MCNS-2",
+  "moduleName": "Central Nervous System",
+  "chapterTitle": "Blood Supply of the CNS",
+  "totalQuestions": 51,
+  "description": "MEDARK v2 chapter chunk for incremental validation",
+  "questions": [
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Internal carotid artery supplies:",
+      "explanation": "The internal carotid artery enters the skull through the carotid canal and supplies the forehead via the supraorbital and supratrochlear branches of the ophthalmic artery. It does not supply the chin, cheek, or temple.",
+      "keyConcept": "Internal carotid artery supplies the forehead via ophthalmic branches",
+      "options": [
+        "Chin.",
+        "Forehead.",
+        "Cheek.",
+        "Non-hairy temple.",
+        "Hairy temple."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Internal carotid blood is lost in injury of the:",
+      "explanation": "The internal carotid artery supplies the forehead via branches of the ophthalmic artery. Injury to the forehead region would lead to blood loss from the internal carotid system. The chin and cheek are supplied by external carotid branches.",
+      "keyConcept": "Forehead injury can lead to internal carotid blood loss",
+      "options": [
+        "Chin.",
+        "Forehead.",
+        "Cheek.",
+        "Non-hairy temple.",
+        "Hairy temple."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Describe venous drainage of face & its applied anatomy.",
+      "explanation": "The venous drainage of the face is primarily via the facial vein into the internal jugular vein. Tributaries include the supraorbital, supratrochlear, external nasal, and labial veins. The facial vein communicates with the cavernous sinus via the superior ophthalmic vein and with the pterygoid plexus via the deep facial vein. Infections in the 'danger triangle' can spread to the cavernous sinus.",
+      "keyConcept": "Facial vein drains into internal jugular and communicates with cavernous sinus",
+      "modelAnswer": "The venous drainage of the face is primarily via the facial vein, which drains into the internal jugular vein. Important tributaries include the supraorbital, supratrochlear, external nasal, and superior and inferior labial veins. The facial vein communicates with the cavernous sinus via the superior ophthalmic vein and the pterygoid plexus via the deep facial vein. Clinically, infections in the 'danger triangle of the face' (upper lip, nose, medial eye) can spread to the cavernous sinus, causing thrombosis."
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The spinal cord region that has the richest blood supply is:",
+      "explanation": "The cervical region of the spinal cord has the richest blood supply due to high metabolic demand and the watershed areas at C4-T1 levels, making it vulnerable to ischemic injury.",
+      "keyConcept": "Cervical cord has richest blood supply",
+      "options": [
+        "Cervical region.",
+        "Lumbar region.",
+        "Sacral region.",
+        "Lower thoracic region.",
+        "Upper thoracic region."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Give an account on blood supply (cervical part) of the spinal cord.",
+      "explanation": "Blood supply of cervical spinal cord: Anterior spinal artery (from vertebral arteries) supplies anterior 2/3 of cord including anterior horn, lateral horn, anterior and lateral white columns. Posterior spinal arteries (from PICA or vertebral) supply posterior 1/3 including posterior horn and posterior columns. Radicular arteries from vertebral, ascending cervical, and deep cervical arteries reinforce the longitudinal arteries.",
+      "keyConcept": "Cervical cord blood supply: anterior spinal artery (anterior 2/3) and posterior spinal arteries (posterior 1/3)",
+      "modelAnswer": "Blood supply of cervical spinal cord: (1) VERTEBRAL ARTERIES → anterior spinal artery (formed at medulla) and two posterior spinal arteries; (2) ANTERIOR SPINAL ARTERY supplies anterior 2/3 of cord (anterior horn, lateral horn, anterior and lateral white columns); (3) POSTERIOR SPINAL ARTERIES supply posterior 1/3 (posterior horn, posterior columns); (4) RADICULAR ARTERIES from vertebral, ascending cervical, and deep cervical arteries reinforce the longitudinal arteries."
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Mention the origin of anterior spinal artery & the parts supplied by it.",
+      "explanation": "The anterior spinal artery: ORIGIN formed by union of two anterior spinal branches of vertebral arteries at the medulla; COURSE descends in the anterior median fissure; PARTS SUPPLIED: anterior 2/3 of spinal cord, anterior horn (motor), lateral horn (sympathetic), anterior and lateral white columns, and gray commissure with crossing fibers.",
+      "keyConcept": "Anterior spinal artery: vertebral artery origin, supplies anterior 2/3 of cord including motor and sympathetic regions",
+      "modelAnswer": "Anterior spinal artery: (ORIGIN) Formed by union of two anterior spinal branches of vertebral arteries at the medulla; (COURSE) Descends in anterior median fissure; (PARTS SUPPLIED) (1) Anterior 2/3 of spinal cord; (2) Anterior horn (motor); (3) Lateral horn (sympathetic); (4) Anterior and lateral white columns; (5) Gray commissure (with crossing fibers)."
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Mention the origin of posterior spinal artery & the parts supplied by it.",
+      "explanation": "The posterior spinal arteries: ORIGIN usually from posterior inferior cerebellar arteries (PICA) or vertebral arteries; COURSE descends as two vessels near dorsal roots; PARTS SUPPLIED: posterior 1/3 of spinal cord including posterior horn, posterior columns, and posterior white columns. Note: posterior spinal arteries are often discontinuous and depend on radicular artery reinforcement.",
+      "keyConcept": "Posterior spinal arteries: PICA/vertebral origin, supplies posterior 1/3 (sensory - dorsal columns)",
+      "modelAnswer": "Posterior spinal arteries: (ORIGIN) Usually from posterior inferior cerebellar arteries (PICA) or vertebral arteries; (COURSE) Descends as two vessels near dorsal roots; (PARTS SUPPLIED) (1) Posterior 1/3 of spinal cord; (2) Posterior horn; (3) Posterior columns; (4) Posterior white columns. Note: Posterior spinal arteries are often discontinuous and reinforced by radicular arteries."
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Describe the effect of anterior spinal artery occlusion.",
+      "explanation": "Anterior spinal artery occlusion: AREA AFFECTED is the anterior 2/3 of spinal cord. CLINICAL features: bilateral loss of motor function (anterior horn involvement) → flaccid then spastic paralysis; bilateral loss of pain and temperature (spinothalamic tracts); PRESERVED: dorsal column functions (proprioception, vibration, fine touch) bilaterally since posterior columns are spared.",
+      "keyConcept": "Anterior spinal artery occlusion: anterior 2/3 cord affected, motor + pain/temperature lost, dorsal columns preserved",
+      "modelAnswer": "Anterior spinal artery occlusion: (AREA AFFECTED) Anterior 2/3 of spinal cord; (CLINICAL) Bilateral loss of motor function (anterior horn) → flaccid then spastic paralysis; bilateral loss of pain and temperature (spinothalamic tracts); PRESERVED: dorsal column functions (proprioception, vibration, fine touch) bilaterally."
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Anterior spinal artery supplies the following structures Except:",
+      "explanation": "The anterior spinal artery supplies the anterior 2/3 of the spinal cord including the anterior horn, lateral horn, and anterior/lateral white columns. It does NOT supply the posterior columns, which are supplied by the posterior spinal arteries.",
+      "keyConcept": "Anterior spinal does not supply posterior columns",
+      "options": [
+        "Nucleus ambiguus.",
+        "Hypoglossal nucleus.",
+        "Pyramid.",
+        "Medial lemniscus.",
+        "Medial longitudinal bundle."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Anterior spinal artery supplies all the following EXCEPT:",
+      "explanation": "The anterior spinal artery supplies the anterior horn, lateral horn, and anterior/lateral white columns. It does NOT supply the posterior columns, which are supplied by the posterior spinal arteries.",
+      "keyConcept": "Anterior spinal does not supply posterior columns",
+      "options": [
+        "UMN of pyramidal tract.",
+        "2nd order neuron of conscious proprioception.",
+        "The part of medulla medial to hypoglossal nerve.",
+        "The nucleus that supplies muscles of tongue.",
+        "The fibers that carry fine touch of opposite side of body."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "A branch from cavernous part of internal carotid artery is:",
+      "explanation": "The lateral spinothalamic tract carries pain from the right lower limb, which was affected. The ipsilateral loss of vibration sense indicates dorsal column involvement (gracile tract for lower limb). The UMN signs and the pattern of sensory loss indicate a right hemisection (Brown-Sequard) at T6 level.",
+      "keyConcept": "Brown-Sequard syndrome causes ipsilateral motor and contralateral pain loss",
+      "options": [
+        "Carotficotympanic artery.",
+        "Pterygoid artery.",
+        "Hypophyseal artery.",
+        "Anterior choroidal artery.",
+        "Ophthalmic artery."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "As regards intracranial part of internal carotid artery, choose the INCORRECT statement:",
+      "explanation": "The intracranial internal carotid artery has four parts: cervical, petrous, cavernous, and cerebral. The petrous part enters through the carotid canal and supplies the middle ear. The cavernous part lies medial to the abducent nerve. The cerebral part gives ophthalmic artery. However, the internal carotid does NOT end opposite the posterior perforated substance; the posterior perforated substance is related to the posterior cerebral artery, not the ICA terminal bifurcation.",
+      "keyConcept": "Internal carotid artery ends by bifurcating into anterior and middle cerebral arteries, not opposite posterior perforated substance.",
+      "options": [
+        "Its petreous part enters skull through carotid canal.",
+        "Its cavernous part lies medial to abducent nerve.",
+        "It ends opposite posterior perforated substance.",
+        "Its petreous part supplies middle ear.",
+        "Its cerebral part gives ophthalmic artery."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Enumerate branches of internal carotid artery.",
+      "explanation": "The internal carotid artery has multiple branches in its cervical, petrous, cavernous, and cerebral segments. These branches supply the orbit, meninges, pituitary, middle ear, and brain.",
+      "keyConcept": "ICA branches: ophthalmic, posterior communicating, anterior choroidal, anterior cerebral, and middle cerebral arteries are major branches.",
+      "modelAnswer": "Branches of the internal carotid artery include: (1) Cervical part: no branches. (2) Petrous part: caroticotympanic artery and pterygoid artery. (3) Cavernous part: meningohypophyseal branches (superior and inferior hypophyseal arteries), branches to trigeminal ganglion, and artery of the inferior cavernous sinus. (4) Cerebral part: ophthalmic artery, posterior communicating artery, anterior choroidal artery, anterior cerebral artery, and middle cerebral artery."
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 11,
+      "type": "mcq",
+      "text": "A lesion of the anterior cerebral artery would most likely result in paralysis of:",
+      "explanation": "The anterior cerebral artery supplies the medial surface of the cerebral hemisphere, including the motor cortex representing the lower limb (paracentral lobule). Occlusion causes contralateral paralysis primarily affecting the leg and foot. The MCA supplies the lateral hemisphere (face, arm); the PCA supplies the occipital and inferior temporal regions.",
+      "keyConcept": "Anterior cerebral artery supplies medial hemisphere; occlusion causes contralateral LEG paralysis (paracentral lobule).",
+      "options": [
+        "Mouth.",
+        "Neck.",
+        "Shoulder.",
+        "Hand.",
+        "Foot."
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Internal carotid artery supplies:",
+      "explanation": "Internal carotid artery supplies: brain, eye, forehead, and nose. It gives off ophthalmic artery (supplies eye), and anterior/middle cerebral arteries.选项A正确. The answer is A. It's the main supply to the brain.",
+      "keyConcept": "Internal carotid artery supplies the brain (cerebral hemispheres), eye, forehead - NOT the cheek or chin.",
+      "options": [
+        "Chin",
+        "Forehead",
+        "Cheek",
+        "Non-hairy temple",
+        "Hairy temple"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the origin of anterior spinal artery?",
+      "explanation": "The anterior spinal artery is formed by the union of two arteries, each arising from a vertebral artery. The two branches join at the level of the foramen magnum to form a single median anterior spinal artery that descends in the anterior median fissure.",
+      "keyConcept": "Anterior spinal artery: single median artery formed by union of two branches from vertebral arteries.",
+      "modelAnswer": "It is a single median artery formed by the union of two anterior spinal arteries, each being a branch of the corresponding vertebral artery at the level of the medulla."
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the origin of posterior spinal artery?",
+      "explanation": "The posterior spinal arteries may arise directly from the vertebral artery or from the posterior inferior cerebellar artery (PICA). They descend as two channels on the posterior surface of the spinal cord.",
+      "keyConcept": "Posterior spinal artery: arises from vertebral artery or PICA.",
+      "modelAnswer": "Vertebral artery or posterior inferior cerebellar artery (PICA). Either directly from the vertebral artery or as a branch of PICA."
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the effect of anterior spinal artery occlusion?",
+      "explanation": "Anterior spinal artery occlusion causes bilateral UMNL paralysis and bilateral loss of pain/temperature below the lesion. Proprioception and fine touch are preserved because the dorsal columns (supplied by posterior spinal arteries) are intact.",
+      "keyConcept": "Anterior spinal artery occlusion: bilateral UMNL + loss pain/temp below, WITH preserved proprioception.",
+      "modelAnswer": "Bilateral upper motor neuron paralysis below the lesion, bilateral loss of pain and temperature sensations below the lesion, with PRESERVATION of proprioception, fine touch, and vibration sense (since dorsal columns are intact)."
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Mention the blood supply of internal capsule.",
+      "explanation": "The internal capsule blood supply varies by region: the upper anterior and posterior limbs receive MCA branches; the lower anterior limb and genu receive ACA branches; the lower posterior limb receives the anterior choroidal artery; and the retrolentiform/sublentiform parts receive the anterior choroidal artery.",
+      "keyConcept": "Internal capsule vascular supply zones",
+      "modelAnswer": "Upper half of anterior limb and upper half of posterior limb: MCA\nLower ½ of anterior limb and genu: ACA\nLower ½ of posterior limb: Post communicating and anterior choroidal artery\nRetrolentiform and Sublentiform: Anterior choroidal artery"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Mention the branches of vertebral artery",
+      "explanation": "The vertebral artery gives off meningeal, posterior inferior cerebellar (PICA), posterior spinal, anterior spinal, and medullary (paramedian) branches as it ascends through the foramen magnum.",
+      "keyConcept": "Vertebral artery branch types",
+      "modelAnswer": "Meningeal, Posterior inferior cerebellar, posterior spinal, anterior spinal, medullary branches"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Mention the beginning and termination of vertebral artery.",
+      "explanation": "The vertebral artery begins as a branch of the first (proximal) part of the subclavian artery and terminates at the lower border of the pons by joining the contralateral vertebral artery to form the basilar artery.",
+      "keyConcept": "Vertebral artery origin and termination",
+      "modelAnswer": "Begins as a branch of first part of subclavian artery\nEnds at lower border of pons by joining the other vertebral artery to form basilary artery"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Mention the beginning and termination of basilar artery.",
+      "explanation": "The basilar artery is formed at the lower border of the pons by the union of the two vertebral arteries and terminates at the upper border of the pons by dividing into the two posterior cerebral arteries.",
+      "keyConcept": "Basilar artery formation and termination",
+      "modelAnswer": "It’s formed by union of right and left vertebral arteries at lower border of pons\nEnds at upper border of pons by giving its two terminal branches “right and left posterior cerebral arteries”"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Mention the branches of basilar artery",
+      "explanation": "The basilar artery gives off pontine (paramedian) branches, labyrinthine artery, anterior inferior cerebellar artery (AICA), superior cerebellar artery (SCA), and its terminal branches the posterior cerebral arteries.",
+      "keyConcept": "Basilar artery branches and distribution",
+      "modelAnswer": "Pontine branches, labyrinthine, anterior inferior cerebellar, superior cerebellar, posterior cerebellar"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Mention the arteries that form the circle of Willis",
+      "explanation": "The circle of Willis is formed anteriorly by the anterior cerebral arteries and anterior communicating artery, laterally by the internal carotid arteries and posterior communicating arteries, and posteriorly by the posterior cerebral arteries.",
+      "keyConcept": "Circle of Willis components",
+      "modelAnswer": "ACA, anterior communicating artery, ICA, PCA, posterior communicating"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "List the cortical areas supplied by anterior cerebral artery.",
+      "explanation": "The anterior cerebral artery supplies the medial surface of the cerebral hemisphere (except occipital lobe), a one-inch strip of the superior lateral surface, and the medial part of the orbital surface of the frontal lobe.",
+      "keyConcept": "Anterior cerebral artery cortical territories",
+      "modelAnswer": "Medial surface: All except occipital lobe\nLateral surface: One inch strip superiorly\nInferior surface: Medial part of orbital surface"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "List the cortical areas supplied by middle cerebral artery.",
+      "explanation": "The middle cerebral artery supplies most of the lateral cerebral surface (excluding occipital pole and superior/inferior border strips), the lateral orbital surface, and the temporal pole.",
+      "keyConcept": "Middle cerebral artery cortical territories",
+      "modelAnswer": "Lateral surface: large area except occipital lobe+ a strip along superior border+ a strip along inferior border\nInferior surface: lateral part of orbital surface+ temporal pole"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "List the cortical areas supplied by posterior cerebral artery.",
+      "explanation": "The posterior cerebral artery supplies the medial and lateral occipital surfaces, the inferior temporal surface (except temporal pole), and contributes to the visual cortex via calcarine artery.",
+      "keyConcept": "Posterior cerebral artery cortical territories",
+      "modelAnswer": "Medial surface: occipital lobe\nLateral surface: occipital lobe+ strip along lower border of hemisphere\nInferior surface: tentorial part except temporal pole"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the immediate metabolic precursor of dopamine that can cross the blood-brain barrier?",
+      "explanation": "L-DOPA (levodopa) is the immediate metabolic precursor of dopamine that crosses the blood-brain barrier via the large neutral amino acid transporter, where it is converted to dopamine by DOPA decarboxylase in the brain.",
+      "keyConcept": "L-DOPA as dopamine precursor crossing BBB",
+      "modelAnswer": "L-DOPA"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "In the dominant hemisphere cortical branches of middle cerebral artery supply the following areas Except.",
+      "explanation": "MCA supplies auditory area, Broca's area, and frontal eye field; the whole primary motor area (for face and hand) is supplied by MCA, not an exception; the leg area is ACA.",
+      "keyConcept": "MCA cortical supply areas",
+      "options": [
+        "Auditory area",
+        "Broca’s area",
+        "Frontal eye field",
+        "Wernick’s area",
+        "The whole primary motor area"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "One of the following arteries does not share in formation of circle of Willis:",
+      "explanation": "Middle cerebral artery does NOT directly participate in the circle of Willis; it arises from the internal carotid as a branch outside the circle. The circle includes ACA, PCA, ICA, and posterior communicating arteries.",
+      "keyConcept": "Circle of Willis exclusion",
+      "options": [
+        "Middle cerebral",
+        "Anterior cerebral",
+        "Posterior cerebral",
+        "Internal carotid",
+        "Posterior communicating"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Anterior cerebral artery supply:",
+      "explanation": "ACA supplies the paracentral lobule (motor and sensory for lower limb), medial aspect of frontal/parietal lobes; auditory cortex is supplied by MCA, not ACA.",
+      "keyConcept": "ACA supply territories",
+      "options": [
+        "Paracentral lobule",
+        "Auditory cortex",
+        "Inferior parietal lobule",
+        "Temporal pole",
+        "Visual cortex"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Cortical branches of middle cerebral artery supply:",
+      "explanation": "MCA cortical branches supply lateral part of orbital surface, lateral surface (most except occipital), and temporal pole; occipital lobe and paracentral lobule are supplied by PCA and ACA respectively.",
+      "keyConcept": "MCA cortical supply",
+      "options": [
+        "The whole hemisphere",
+        "Lateral surface of occipital lobe",
+        "Lateral part of orbital surface",
+        "Paracentral lobule",
+        "All of the above"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Posterior cerebral artery supplies:",
+      "explanation": "PCA supplies: occipital lobe (visual cortex), lower border of temporal lobe, thalamus (central branches), and posterior limb of internal capsule; all of these are correct.",
+      "keyConcept": "PCA complete supply",
+      "options": [
+        "Lateral surface of occipital lobe",
+        "Visual cortex",
+        "Lower border of temporal lobe",
+        "Thalamus",
+        "All of the above"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Central branches of posterior cerebral artery supply:",
+      "explanation": "Central branches of PCA (thalamogeniculate arteries) supply thalamus, lateral/genual geniculate bodies, and posterior parts of caudate and lentiform nuclei.",
+      "keyConcept": "PCA central branches",
+      "options": [
+        "Thalamus",
+        "Geniculate bodies",
+        "Posterior parts of caudate & lentiform nuclei",
+        "All of the above",
+        "A & B only"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Internal carotid artery supplies:",
+      "explanation": "The forehead is supplied by the supratrochlear and supraorbital arteries, which are branches of the internal carotid artery (via the ophthalmic artery). The chin and cheek are supplied by facial artery; the non-hairy temple by superficial temporal artery.",
+      "keyConcept": "Forehead supplied by internal carotid branches (supraorbital, supratrochlear arteries)",
+      "options": [
+        "Chin",
+        "Forehead",
+        "Cheek",
+        "Non-hairy temple",
+        "Hairy temple"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which of the following is involved in the blood-brain barrier?",
+      "explanation": "Astrocytes (specifically their end-feet) are involved in the blood-brain barrier, induction, and maintenance. They release factors that promote tight junction formation between endothelial cells.",
+      "keyConcept": "Astrocytes are involved in blood-brain barrier structure and function",
+      "options": [
+        "Astrocytes.",
+        "Ependymal cells.",
+        "Oligodendrocytes.",
+        "Schwann cells."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Lesion of the anterior spinal artery most likely produces which finding?",
+      "explanation": "Anterior spinal artery syndrome causes bilateral loss of motor function (corticospinal tracts) and pain/temperature sensation (spinothalamic tracts), with dorsal column function (proprioception, vibration) preserved.",
+      "keyConcept": "Anterior spinal artery supplies corticospinal and spinothalamic tracts; dorsal columns are supplied by posterior arteries.",
+      "options": [
+        "Intact pain and temperature sensation",
+        "Intact dorsal column sensations",
+        "Intact voluntary motor function",
+        "Impaired conscious proprioception",
+        "Impaired unconscious proprioception"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which artery is connected to the posterior cerebral artery (PCA) by the posterior communicating artery?",
+      "explanation": "The posterior communicating artery (PCoM) connects the internal carotid artery (ICA) with the posterior cerebral artery (PCA), forming part of the circle of Willis and providing collateral circulation.",
+      "keyConcept": "Posterior communicating artery links ICA to PCA as part of the circle of Willis.",
+      "options": [
+        "Anterior communicating artery",
+        "Middle cerebral artery",
+        "Posterior inferior cerebellar artery",
+        "Internal carotid artery",
+        "Basilar artery"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The great cerebral vein (of Galen) is formed by the union of which veins?",
+      "explanation": "The great cerebral vein (of Galen) is formed by the union of the two internal cerebral veins, which drain the deep brain structures including the basal ganglia and thalamus.",
+      "keyConcept": "Vein of Galen forms from union of internal cerebral veins draining deep brain structures.",
+      "options": [
+        "Superior sagittal veins",
+        "Basal veins of Rosenthal",
+        "Right and left internal cerebral veins",
+        "Veins of Trolard",
+        "Superficial middle cerebral veins"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Origin of anterior spinal artery:",
+      "explanation": "The anterior spinal artery is formed by the union of two vessels, each arising from the corresponding vertebral artery, creating a single midline artery that descends along the anterior median fissure.",
+      "keyConcept": "Anterior spinal artery originates from the vertebral arteries as a common trunk.",
+      "modelAnswer": "Single artery formed by union of two anterior spinal arteries, each from vertebral artery."
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Origin of posterior spinal artery:",
+      "explanation": "The posterior spinal artery typically arises from either the vertebral artery directly or from the posterior inferior cerebellar artery (PICA), forming paired vessels that supply the posterior spinal cord.",
+      "keyConcept": "Posterior spinal artery may originate from vertebral artery or PICA.",
+      "modelAnswer": "Vertebral artery or PICA."
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Anterior spinal artery occlusion:",
+      "explanation": "Anterior spinal artery occlusion produces bilateral upper motor neuron signs below the lesion and bilateral loss of pain/temperature with preserved proprioception due to intact posterior columns.",
+      "keyConcept": "ASA occlusion: bilateral motor loss, pain loss, preserved proprioception.",
+      "modelAnswer": "Bilateral UMNL below lesion, bilateral loss of pain and temperature, preservation of proprioception and touch."
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Venous drainage of dura:",
+      "explanation": "Dural venous drainage occurs via meningeal veins (accompanying meningeal arteries) and diploic veins (within skull bones), which connect to both intracranial venous sinuses and external scalp veins.",
+      "keyConcept": "Dura drains via meningeal veins and diploic veins.",
+      "modelAnswer": "Meningeal veins and diploic veins."
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is a component of the blood-brain barrier?",
+      "explanation": "The blood-brain barrier consists of tight junctions between non-fenestrated endothelial cells, a thick basement membrane, and astrocytic end-feet that together restrict molecular passage.",
+      "keyConcept": "Blood-brain barrier: tight junctions between non-fenestrated endothelial cells.",
+      "options": [
+        "Fenestrated capillaries",
+        "Tight junctions between endothelial cells",
+        "Large pericellular spaces",
+        "Absence of astrocytic end-feet"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Anterior cerebral artery supplies all the following EXCEPT:",
+      "explanation": "The anterior cerebral artery supplies the medial cerebral surface, orbital inferior surface, and genu of internal capsule, but the anterior limb is supplied by the middle cerebral artery via perforating branches.",
+      "keyConcept": "Anterior cerebral artery supplies medial surface and genu, not anterior limb of internal capsule.",
+      "options": [
+        "Most of medial surface of the cerebral hemisphere.",
+        "Medial aspect of orbital part of inferior surface of the hemisphere.",
+        "Genu of the internal capsule.",
+        "All anterior limb of internal capsule."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The Charcot's artery is the largest branch of ……… set of central branches of circle of Willis.",
+      "explanation": "Charcot's artery (also called the artery of cerebral hemorrhage) is the largest anterolateral central branch of the circle of Willis, supplying the internal capsule and basal ganglia.",
+      "keyConcept": "Charcot's artery: largest anterolateral central branch of circle of Willis.",
+      "options": [
+        "Anteromedial",
+        "Anterolateral",
+        "Posteromedial",
+        "Posterolateral"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Occlusion of right anterior cerebral artery may lead to:",
+      "explanation": "Right anterior cerebral artery occlusion causes left lower limb paralysis (contralateral) since it supplies the medial motor cortex controlling the leg.",
+      "keyConcept": "Right ACA occlusion: left lower limb paralysis (contralateral).",
+      "options": [
+        "Left hemiplegia.",
+        "Cerebral paraplegia.",
+        "Paralysis of the left upper limb.",
+        "Paralysis of the left lower limb."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "An aneurysm of the cavernous part of the internal carotid artery compresses the ……… nerve.",
+      "explanation": "The abducent nerve (CN VI) runs through the cavernous sinus adjacent to the internal carotid artery; an aneurysm here compresses CN VI causing lateral rectus palsy.",
+      "keyConcept": "Cavernous ICA aneurysm compresses abducent nerve (CN VI).",
+      "options": [
+        "Oculomotor",
+        "Trochlear",
+        "Ophthalmic",
+        "Abducent"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The largest branch of the vertebral artery is:",
+      "explanation": "The largest branch of the vertebral artery is the basilar artery, formed by the union of the two vertebral arteries at the pontomedullary junction.",
+      "keyConcept": "Largest vertebral branch: basilar artery.",
+      "options": [
+        "Anterior spinal.",
+        "Posterior spinal.",
+        "Anterior inferior cerebellar.",
+        "Posterior inferior cerebellar."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The part of the internal carotid artery which DOESN'T give branches is:",
+      "explanation": "The cervical part of the internal carotid artery (from carotid bifurcation to skull base) does not give branches; branches arise from the petrous, cavernous, and cerebral portions.",
+      "keyConcept": "Cervical internal carotid: no branches.",
+      "options": [
+        "Cervical",
+        "Petrous",
+        "Cavernous",
+        "Cerebral"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "A branch from the internal carotid artery is:",
+      "explanation": "The ophthalmic artery is a crucial branch of the internal carotid artery as it emerges from the cavernous part, supplying the eye and orbital structures.",
+      "keyConcept": "Internal carotid branch: ophthalmic artery.",
+      "options": [
+        "Superior thyroid",
+        "Lingual",
+        "Ophthalmic",
+        "Occipital"
+      ],
+      "correctAnswer": "C"
+    }
+  ]
+}

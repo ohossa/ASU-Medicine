@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "comingSoon": true,
+  "meta": {
+    "moduleCode": "IPAT-1",
+    "moduleName": "Introduction to Pathology",
+    "year": 1,
+    "semester": 2,
+    "creditPoints": 3,
+    "totalMarks": 60,
+    "keywords": [
+      "pathology",
+      "ipat"
+    ]
+  },
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Cellular Injury & Adaptations",
+      "subtitle": "Cellular Injury & Adaptations",
+      "emoji": "🦠",
+      "page": 1,
+      "lectureRange": "Lectures 1",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 2,
+      "title": "Inflammation & Repair",
+      "subtitle": "Inflammation & Repair",
+      "emoji": "🔥",
+      "page": 2,
+      "lectureRange": "Lectures 2",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 3,
+      "title": "Hemodynamics & Neoplasia",
+      "subtitle": "Hemodynamics & Neoplasia",
+      "emoji": "❤️",
+      "page": 3,
+      "lectureRange": "Lectures 3",
+      "subjects": [],
+      "keywords": []
+    }
+  ]
+}

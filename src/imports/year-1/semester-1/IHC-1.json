@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "comingSoon": true,
+  "meta": {
+    "moduleCode": "IHC-1",
+    "moduleName": "Introduction to Histology & Cell Biology",
+    "year": 1,
+    "semester": 1,
+    "creditPoints": 3,
+    "totalMarks": 60,
+    "keywords": [
+      "histology",
+      "cell biology",
+      "ihc"
+    ]
+  },
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Cytology & Cell Cytoplasm",
+      "subtitle": "Cytology & Cell Cytoplasm",
+      "emoji": "🔬",
+      "page": 1,
+      "lectureRange": "Lectures 1",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 2,
+      "title": "Epithelial & Connective Tissues",
+      "subtitle": "Epithelial & Connective Tissues",
+      "emoji": "🧫",
+      "page": 2,
+      "lectureRange": "Lectures 2",
+      "subjects": [],
+      "keywords": []
+    }
+  ]
+}

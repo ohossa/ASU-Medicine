@@ -1,0 +1,1797 @@
+{
+  "moduleCode": "MCNS-2",
+  "moduleName": "Central Nervous System",
+  "chapterTitle": "Cerebellum & Basal Ganglia",
+  "totalQuestions": 111,
+  "description": "MEDARK v2 chapter chunk for incremental validation",
+  "questions": [
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Describe how unconscious proprioception is carried to cerebellum.",
+      "explanation": "Unconscious proprioception reaches the cerebellum via spinocerebellar tracts: From lower body: Muscle spindles/Golgi tendon organs → dorsal root ganglion (1st neuron) → Clarke's nucleus in posterior horn (2nd neuron) → posterior spinocerebellar tract → inferior cerebellar peduncle → cerebellum. From upper body: Same pathway but accessory cuneate nucleus → cuneocerebellar tract → inferior cerebellar peduncle. These tracts carry proprioceptive information for motor coordination without conscious awareness.",
+      "keyConcept": "Unconscious proprioception to cerebellum via spinocerebellar tracts through inferior cerebellar peduncle",
+      "modelAnswer": "Unconscious proprioception to cerebellum: (1) From lower body: Muscle spindles/Golgi tendon organs → dorsal root ganglion (1st) → Clarke's nucleus (2nd) → posterior spinocerebellar tract (or anterior) → inferior cerebellar peduncle → cerebellum. (2) From upper body: Same → accessory cuneate nucleus (2nd) → cuneocerebellar tract → inferior cerebellar peduncle → cerebellum."
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following fibers carry proprioception from the upper limb to the cerebellum?",
+      "explanation": "The cuneocerebellar tract carries unconscious proprioception from the upper limb to the cerebellum. It originates from the accessory cuneate nucleus (lateral cuneate nucleus) and enters through the inferior cerebellar peduncle.",
+      "keyConcept": "Cuneocerebellar tract carries upper limb proprioception",
+      "options": [
+        "Ventral spinocerebellar tract.",
+        "Dorsal spinocerebellar tract.",
+        "Cuneocerebellar tract.",
+        "Internal arcuate fibers.",
+        "Vestibulo-cerebellar fibers."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Afferent fibers in the superior cerebellar peduncle include:",
+      "explanation": "The anterior (ventral) spinocerebellar tract carries proprioceptive information from the lower body to the cerebellum via the superior cerebellar peduncle. It decussates twice (once at the level of entry and once before entering the cerebellum).",
+      "keyConcept": "Anterior spinocerebellar enters via superior cerebellar peduncle",
+      "options": [
+        "Dentatothalamic fibers.",
+        "Fastigiorubral fibers.",
+        "Posterior spinocerebellar fibers.",
+        "Dorsal external arcuate fibers.",
+        "Anterior spinocerebellar fibers."
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The inferior cerebellar peduncle contains:",
+      "explanation": "The posterior (dorsal) spinocerebellar tract carries proprioceptive information from the lower body to the cerebellum via the inferior cerebellar peduncle. It does not decussate.",
+      "keyConcept": "Posterior spinocerebellar tract via inferior cerebellar peduncle",
+      "options": [
+        "Dentatothalamic fibers.",
+        "Gracile tract.",
+        "Tectocerebellar tract.",
+        "Posterior spinocerebellar tract.",
+        "Pont-cerebellar tract."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Superior cerebellar peduncle contains which of the following tracts?",
+      "explanation": "The superior cerebellar peduncle contains the ventral (anterior) spinocerebellar tract which carries proprioceptive feedback from the lower limbs to the cerebellum.",
+      "keyConcept": "Superior cerebellar peduncle contains ventral spinocerebellar",
+      "options": [
+        "Dorsal spinocerebellar tract.",
+        "Ventral spinocerebellar tract.",
+        "Olivo cerebellar tract.",
+        "Cuneo-cerebellar tract.",
+        "Ponto-cerebellar tract."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The most lateral nucleus in the interior of the cerebellum is:",
+      "explanation": "The dentate nucleus is the largest and most lateral cerebellar nucleus. It receives input from the cerebellar cortex (particularly the lateral parts) and projects via the superior cerebellar peduncle to the thalamus and red nucleus.",
+      "keyConcept": "Dentate nucleus is most lateral, projects via SCP",
+      "options": [
+        "Dentate nucleus.",
+        "Fastigial nucleus.",
+        "Emboliform nucleus.",
+        "Globose nucleus.",
+        "Vestibular nucleus."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The nucleus that projects neocerebellar efferent is the:",
+      "explanation": "The dentate nucleus is the main output nucleus of the neocerebellum (lateral hemispheres). It projects inhibitory fibers via the superior cerebellar peduncle to the contralateral thalamus (VPL/VPM) and red nucleus.",
+      "keyConcept": "Dentate nucleus projects neocerebellar efferent",
+      "options": [
+        "Dentate nucleus.",
+        "Fastigial nucleus.",
+        "Emboliform nucleus.",
+        "Globose nucleus.",
+        "Vestibular nucleus."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The neocerebellum is anatomically located in the following part of the cerebellum:",
+      "explanation": "The neocerebellum (lateral parts of posterior lobe) is anatomically located in the posterior lobe of the cerebellum. It is concerned with planning and executing voluntary movements, particularly those requiring skilled precision.",
+      "keyConcept": "Neocerebellum in posterior lobe",
+      "options": [
+        "Vermis.",
+        "Flocculo-nodular lobe.",
+        "Posterior lobe only"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Thrombosis of posterior inferior cerebellar artery affects:",
+      "explanation": "PICA thrombosis causes lateral medullary (Wallenberg) syndrome: ipsilateral vestibular dysfunction (vertigo, nystagmus), cerebellar ataxia, facial pain/temperature loss, dysphagia, hoarseness, and contralateral body pain/temperature loss.",
+      "keyConcept": "PICA thrombosis causes lateral medullary syndrome",
+      "options": [
+        "Inferior olivary nucleus.",
+        "Hypoglossal nucleus.",
+        "Medial lemniscus.",
+        "Nucleus ambiguus.",
+        "All of the above."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Thalamic nucleus that relays cerebellar output:",
+      "explanation": "The ventral lateral thalamic nucleus receives input from the deep cerebellar nuclei (dentate, emboliform, globose nuclei) via the superior cerebellar peduncle and dentatothalamic tract. It then projects to the motor and premotor cortices, serving as the cerebellar relay to the cerebrum.",
+      "keyConcept": "Ventral lateral nucleus relays cerebellar output to the cerebral cortex.",
+      "options": [
+        "Anterior nucleus.",
+        "Ventral anterior nucleus.",
+        "Ventral lateral nucleus.",
+        "Lateral dorsal nucleus.",
+        "Pulvinar."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The thalamic nucleus that relays cerebellar fibers to the cerebral cortex is the:",
+      "explanation": "The ventral lateral (VL) nucleus is the principal relay nucleus for cerebellar output destined for the cerebral cortex. It receives input from the cerebellum via the superior cerebellar peduncle and dentatothalamic tract, and projects to the motor and premotor cortices, influencing voluntary movement.",
+      "keyConcept": "Ventral lateral nucleus relays cerebellar fibers from the dentate nucleus to the motor cortex.",
+      "options": [
+        "Anterior nucleus.",
+        "Ventral lateral nucleus.",
+        "Lateral dorsal nucleus.",
+        "Dorsomedial nucleus.",
+        "Ventral posterior nucleus."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Thalamic nucleus that relays basal ganglia output:",
+      "explanation": "The ventral anterior (VA) nucleus is the thalamic relay for basal ganglia output. It receives input from the internal segment of the globus pallidus (medial GPi) and projects to the premotor and supplementary motor cortices. This pathway is important for motor planning and sequencing of movements.",
+      "keyConcept": "Ventral anterior nucleus relays basal ganglia output (from GPi) to premotor cortex.",
+      "options": [
+        "Anterior nucleus.",
+        "Ventral anterior nucleus.",
+        "Ventral lateral nucleus.",
+        "Lateral dorsal nucleus.",
+        "Pulvinar."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "A patient suffering from damage of basal ganglia may NOT show:",
+      "explanation": "Basal ganglia lesions do NOT cause hyperreflexia and clonus - these are UMN signs. Option B is correct. The basal ganglia lesions cause hypokinetic movements (hypokinesia), shuffling gait, and tremor, but not hyperreflexia. Option A is wrong (static tremors occur in basal ganglia lesions). Option C is wrong (shuffling gait is a feature). Option D is wrong (degeneration of dopaminergic neurons in substantia nigra is the cause of Parkinson's). Option E is wrong (hypokinesia does occur).",
+      "keyConcept": "Basal ganglia lesions cause hypokinetic features (hypokinesia, shuffling gait) with normal or decreased reflexes, not hyperreflexia.",
+      "options": [
+        "Static tremors.",
+        "Hyperreflexia and clonus.",
+        "Shuffling gait.",
+        "Degeneration of dopaminergic neurons.",
+        "Hypokinesia in all movements"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Basal ganglia lesion may Not cause:",
+      "explanation": "Basal ganglia lesions cause rigidity, not flaccidity. Option E is correct. Flaccidity is a LMN sign or occurs with cerebellar lesions. Parkinsonian basal ganglia lesions produce cogwheel rigidity, not flaccidity. Options A-D are all recognized features of basal ganglia dysfunction: akinesia (inability to initiate movement), mask face (hypomimia), cogwheel rigidity, and monotonous speech.",
+      "keyConcept": "Basal ganglia lesions produce extrapyramidal signs including rigidity and akinesia, not flaccidity.",
+      "options": [
+        "Akinesia disorder.",
+        "Mask face",
+        "Cogwheel rigidity.",
+        "Monotonous speech.",
+        "Flaccidity"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Concerning the basal ganglia function, which is NOT true:",
+      "explanation": "Basal ganglia mainly regulate/inhibit movement, not increase muscle tone. Option D is correct. The basal ganglia work through indirect pathways to inhibit excessive movement and regulate motor planning. Increased muscle tone is a brainstem/spinal cord function. Options A, B, C, and E all accurately describe basal ganglia functions in movement planning, timing, and suppression of unwanted movements.",
+      "keyConcept": "The basal ganglia modulate movement patterns and timing while suppressing involuntary movements, rather than directly increasing muscle tone.",
+      "options": [
+        "Caudate nucleus plan the sequence of patterns of movement.",
+        "Caudate nucleus modifies the timing of movements.",
+        "Putamen helps execution of subconscious learned pattern of movement.",
+        "Basal ganglia mainly increases the muscle tone.",
+        "Basal ganglia prevent involuntary movements"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Regarding the cerebellum, which is NOT true:",
+      "explanation": "The cerebellum has INDIRECT stimulatory effect on alpha motor neurons via the red nucleus and thalamus, not direct. Option D is incorrect. Options A, B, C, E are all true: cerebellum helps plan and time movements, receives input from motor cortex, receives spindle/GTO input via spinocerebellar tracts, and predicts successive movements.",
+      "keyConcept": "Cerebellar influence on motor neurons is indirect, acting through the red nucleus and thalamus to modulate cortical output.",
+      "options": [
+        "Cerebellum helps in planning and timing of voluntary movements.",
+        "The cerebellum is stimulated by the motor cortex.",
+        "The receptor activity of the spindles and Golgi tendons organs reaches the cerebellum through the spinocerebellar tract.",
+        "The cerebellum has direct stimulatory effect on alpha motor neurons.",
+        "The cerebellum predicts and plans for the successive movements"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The cerebellum is NOT involved in:",
+      "explanation": "Neocerebellum INCREASES muscle tone, not decreases. Option E is incorrect. Cerebellar lesions cause hypotonia. Options A-D are all true: cerebellum maintains posture, provides continuous feedback, coordinates rapid alternating movements, and the neocerebellum increases (not decreases) muscle tone.",
+      "keyConcept": "The cerebellum facilitates muscle tone; lesions cause hypotonia and movement incoordination.",
+      "options": [
+        "The maintenance of posture.",
+        "Continuous feedback of information even during action.",
+        "The performance of rapid alternating movements.",
+        "Coordination of movements.",
+        "Neocerebellum decreases muscle tone."
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which one of the following is NOT true regarding the cerebellum:",
+      "explanation": "Cerebellar ataxia is sensory ataxia - it worsens with eye closure (positive Romberg). Option B is INCORRECT as stated. Actually, cerebellar ataxia is NOT sensory (sensory ataxia is dorsal column dysfunction). The correct answer is B because cerebellar ataxia is motor ataxia, characterized by clumsiness that is visible with eyes open, unlike sensory ataxia which hides behind visual compensation. Wait - re-reading: cerebellar ataxia is a motor (not sensory) ataxia that DOES NOT require visual compensation to demonstrate.",
+      "keyConcept": "Cerebellar ataxia is a motor coordination deficit visible even with eyes open, unlike sensory ataxia which requires eye closure to manifest.",
+      "options": [
+        "Each cerebellar hemisphere controls movements of the ipsilateral muscles.",
+        "Cerebellar ataxia is a sensory ataxia.",
+        "Cerebellar lesions cause pendular knee jerks.",
+        "The intention tremor associated with cerebellar disease is worsened by movement.",
+        "The neocerebellar syndrome gait is zig-zag like."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Concerning cerebellum:",
+      "explanation": "Neocerebellum helps planning of movements. Option D is correct. The neocerebellum (lateral hemispheres) receives input from motor and premotor cortex and helps in movement planning and timing. Option A is wrong (each hemisphere controls ipsilateral muscles). Option B is wrong (spinocerebellar tracts provide unconscious proprioception). Option C is wrong (paleocerebellum调节肌张力). Option E is wrong (cerebellar ataxia has hypotonia, not spasticity).",
+      "keyConcept": "The neocerebellum (lateral hemispheres) is crucial for movement planning and coordination with the motor cortex.",
+      "options": [
+        "Each cerebellar hemisphere coordinates the contralateral muscles.",
+        "Spinocerebellar tracts give rise to conscious recognition of joint position sense.",
+        "Paleocerbellar is facilitatory to muscle tone.",
+        "Neocerebellum helps planning of movements.",
+        "Cerebellar ataxia is associated with spasticity."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which is NOT a function of the cerebellum includes:",
+      "explanation": "The cerebellum INHIBITS excess cortical activity, not inhibits cortical activity per se (which would be incorrect). Option E is poorly worded. Actually, the cerebellum projects to thalamus and cerebral cortex via the dentatothalamic pathway, modulating (facilitating or inhibiting) cortical motor areas. This helps fine-tune movements. The cerebellum doesn't directly inhibit cortical output but regulates it.",
+      "keyConcept": "The cerebellum modulates cortical motor output through the dentatothalamic pathway, regulating movement precision.",
+      "options": [
+        "Stop the movement at the precise intended point.",
+        "Prevents oscillation of movements.",
+        "Planning and timing function.",
+        "Predictive function.",
+        "Inhibit excess cortical activity."
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Neocerebellar syndrome in humans is NOT characterized by:",
+      "explanation": "Neocerebellar syndrome is NOT characterized by static tremors - these are Parkinsonian. Option E is correct. Neocerebellar syndrome features include hypotonia, pendular knee jerks, ataxia, dysarthria, and intention tremor (not static). Static tremors are characteristic of Parkinson's disease due to basal ganglia dysfunction.",
+      "keyConcept": "Neocerebellar syndrome features intention tremor (worse with movement), not the resting/static tremor of Parkinsonism.",
+      "options": [
+        "Hypotonia.",
+        "Pendular knee jerk.",
+        "Disturbance of balance",
+        "Dysarthria.",
+        "Static tremors."
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following is NOT a neurological feature of cerebellar lesion:",
+      "explanation": "Shuffling gait is NOT a cerebellar feature - it is a Parkinsonian gait. Option D is correct. Cerebellar lesions cause ataxic gait (wide-based, staggering), not shuffling gait. Options A, B, C, E are all cerebellar signs: abnormal coordination, rebound phenomenon, dysdiadochokinesia, and kinetic tremors.",
+      "keyConcept": "Shuffling gait is characteristic of basal ganglia disease (Parkinsonism), not cerebellar lesions.",
+      "options": [
+        "Abnormal coordination tests.",
+        "Rebound phenomenon.",
+        "Dysdiadochokinesia.",
+        "Shuffling gate.",
+        "Kinetic tremors."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Neocerebellum syndrome is NOT associated with:",
+      "explanation": "Neocerebellum syndrome is NOT associated with hypertonia - it causes hypotonia. Option B is correct. Cerebellar lesions characteristically reduce muscle tone. Options A, C, D, E are all associated with neocerebellar syndrome: ataxia, inability to perform complex movements, rebound phenomenon, and decomposition of movements.",
+      "keyConcept": "Cerebellar lesions cause hypotonia due to loss of cerebellar facilitatory influence on muscle tone.",
+      "options": [
+        "Ataxia.",
+        "Hypertonia.",
+        "Inability to do complex movements.",
+        "Rebound phenomenon.",
+        "Decomposition of movements"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Neocerebellum disease is associated with:",
+      "explanation": "Neocerebellum disease is associated with zigzag gait. Option B is correct. The neocerebellum controls coordination of voluntary movements; lesions cause ataxic gait that is wide-based and staggering (drunken/zigzag). Option A (shuffling) is Parkinsonian. Option C (stamping) is sensory ataxia. Option D (circumduction) is UMN gait. Option E (drunken gait) is actually correct but zigzag is more specific for neocerebellar lesions.",
+      "keyConcept": "Neocerebellar lesions produce a characteristic zigzag or drunken ataxic gait due to loss of movement coordination.",
+      "options": [
+        "Shuffling gait.",
+        "Zigzag gait.",
+        "Stamping gait.",
+        "Circumduction gate.",
+        "Drunken gait"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "A cerebellar lesion is most likely associated with severe loss of equilibrium and drunken gait when the lesion involves:",
+      "explanation": "Lesion of the flocculonodular lobe causes severe equilibrium loss and drunken gait. Option D is correct. The flocculonodular lobe (vestibulocerebellum) receives vestibular input and controls balance. Lesions cause severe ataxia, especially of trunk and gait, with patients being unable to stand without support. The neocerebellum affects appendicular coordination, not truncal equilibrium primarily.",
+      "keyConcept": "The vestibulocerebellum (flocculonodular lobe) is essential for truncal stability and equilibrium.",
+      "options": [
+        "The neocerebellum.",
+        "Lateral zones of cerebellar hemisphere.",
+        "Intermediate zone of cerebellar hemisphere.",
+        "The flocculonodular lobe.",
+        "The caudate nucleus"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following is NOT a neurological feature of cerebellar lesion:",
+      "explanation": "Lead-pipe rigidity is NOT a cerebellar feature - it is Parkinsonian. Option B is correct. Cerebellar lesions cause hypotonia, not rigidity. Options A, C, D, E are all cerebellar signs: dysmetria, dysdiadochokinesia, rebound phenomenon, and incoordination.",
+      "keyConcept": "Cerebellar signs include hypotonia, dysmetria, and coordination deficits, not rigidity.",
+      "options": [
+        "Dysmetria.",
+        "Lead-pipe rigidity.",
+        "Dysdiadochokinesia.",
+        "Rebound phenomenon.",
+        "Inccordination of voluntary movements"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Purkinji cells of the cerebellar cortex are excited by:",
+      "explanation": "Purkinje cells are excited by granule cells. Option B is correct. Granule cells receive input from mossy fibers and then send parallel fibers to excite Purkinje cells. This is the main excitatory input to Purkinje cells in the cerebellar cortex. Option A is wrong (deep nuclei provide input to Purkinje cells via inhibition). Option C is wrong (basket cells inhibit Purkinje cells).",
+      "keyConcept": "Granule cells provide the primary excitatory input to Purkinje cells via parallel fibers in the cerebellar cortex.",
+      "options": [
+        "Inputs from deep nuclei.",
+        "Mossy fibers.",
+        "Basket cells.",
+        "Granule cells."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "A major function of the climbing fibers to cerebellar cortex is:",
+      "explanation": "Climbing fiber function includes learning novel movement patterns. Option B is correct. Climbing fibers carry error signals and teach the cerebellum about unexpected events, contributing to motor learning ( cerebellar long-term depression). Option A is wrong (climbing fibers excite Purkinje cells, not inhibit). Option C is wrong (emotional stimuli are limbic, not cerebellar climbing fiber function). Option D is wrong (Purkinje cells, not climbing fibers, directly influence motor neurons via deep nuclei).",
+      "keyConcept": "Climbing fibers convey error signals to the cerebellum for motor learning and adaptation.",
+      "options": [
+        "Inhibiting Purkinji cells.",
+        "Learning novel movement patterns.",
+        "Recognizing emotional stimuli.",
+        "Directly exciting alpha motor neurons."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Neocerebellar lesions are associated with:",
+      "explanation": "Neocerebellar lesions are associated with pendular knee jerk. Option D is correct. The cerebellum facilitates stretch reflex; when damaged, the reflex becomes unopposed and pendular (oscillates). Options A, B, C are incorrect: clasp-knife rigidity is UMN, positive Romberg is sensory ataxia, monotonous speech is from basal ganglia.",
+      "keyConcept": "Pendular knee jerks indicate cerebellar hypotonus due to loss of cerebellar modulation of stretch reflex.",
+      "options": [
+        "Clasp-knife rigidity.",
+        "Positive Romberg’s sign.",
+        "Monotonus speech.",
+        "Pendular knee jerk."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Regarding the cerebellum, all the following are true except:",
+      "explanation": "Cerebellum CAN initiate gross movements (Option B is INCORRECT). The cerebellum coordinates but does not initiate movements; the cerebrum initiates. Options A, C, D are true: cerebellum has reverberating circuits (via deep nuclei), prevents overshooting, and acts as a programmer for movements. The cerebellum fine-tunes motor commands but the cerebral cortex initiates voluntary movements.",
+      "keyConcept": "The cerebellum coordinates and refines motor commands but does not initiate voluntary movements.",
+      "options": [
+        "Has no reverbrating circuits.",
+        "Can initiate gross movements.",
+        "Prevents overshooting of movements.",
+        "Acts as a programmer."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Concerning the basal ganglia function:",
+      "explanation": "Damage to caudate circuit results in loss of timing and scaling of movements. Option D is correct. The caudate circuit (caudate-putamen-GP-SNr-thalamus-caudate) is involved in movement scaling and timing. Option A is wrong (putamen executes learned patterns). Option B is wrong (caudate circuit is cognitive, putamen is motor). Option C is wrong (caudate circuit terminates in premotor, not motor area 4).",
+      "keyConcept": "Caudate nucleus circuits process movement scaling and timing through cortico-basal ganglia-thalamic loops.",
+      "options": [
+        "Caudate circuit helps execution of learned pattern of movement.",
+        "Putamen circuit is important for cognitive control of voluntary movements.",
+        "Caudate circuit terminates in motor area 4.",
+        "Damage to caudate circuit results in loss of timing and scaling of movements."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Concerning the cerebellum:",
+      "explanation": "Cerebellar lesion is associated with dysmetria. Option B is correct. Dysmetria (overshooting/undershooting target) is a cardinal cerebellar sign. Option A is wrong (lateral zone is for coordination, not servo-comparator which is intermediate). Option C is wrong (Purkinje cells are inhibitory to deep nuclei). Option D is wrong (mossy fibers are for established patterns, climbing fibers for learning).",
+      "keyConcept": "Dysmetria - inability to accurately reach a target - is a hallmark of cerebellar lesions.",
+      "options": [
+        "The lateral zone has servo-comparator function.",
+        "Cerebellar lesion is associated with dysmetria.",
+        "The cerebellar output fibers originate from Purkinje cells.",
+        "Mossy fibers are involved in newly learned patterns of movements."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Lesion in the left cerebellar hemisphere results in:",
+      "explanation": "Lesion in left cerebellar hemisphere results in falling to the left side. Option D is correct. Each cerebellar hemisphere controls ipsilateral muscles and balance. Option A is wrong (cerebellar lesions don't cause paralysis). Option B is wrong (tremors are ipsilateral). Option C is wrong (monotonous speech is basal ganglia).",
+      "keyConcept": "Cerebellar hemisphere lesions cause ipsilateral ataxia and falling due to loss of coordinated muscle control.",
+      "options": [
+        "Paralysis of voluntary movements on left side of the body.",
+        "Tremors on right side of the body.",
+        "Slow monotonus speech.",
+        "Falling to the left side during walking."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Regarding servocomparator function of the cerebellum:",
+      "explanation": "Cerebellum compares intended plan with actual movement (servocomparator function). Option B is correct. The cerebellum receives copies of motor commands (efference copy) and actual movement feedback, comparing them to correct ongoing movements. Options A, C, D are wrong: cerebellum sends indirect (via thalamus) not direct messages; receives unconscious (not conscious) proprioception; receives plan from cortex not basal ganglia.",
+      "keyConcept": "The cerebellum acts as a servocomparator, matching intended movement with actual execution through continuous feedback.",
+      "options": [
+        "Cerebellum sends direct corrective messages to muscles.",
+        "Cerebellum compares the intended plan of movement with the actual movement.",
+        "Cerebellum receives feedback information from muscles through conscious proprioceptive receptors.",
+        "Cerebellum receives a copy of plan of movement from basal ganglia."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Patient with cerebellar lesion complains of the following except:",
+      "explanation": "Cerebellar lesions do NOT disturb autonomic functions. Option C is correct. Autonomic dysfunction is not a feature of cerebellar lesions. Options A, B, D are cerebellar features: dysarthria, ataxic gait, inability to adjust movements (dysmetria). Cerebellum is purely motor coordination, not autonomic control.",
+      "keyConcept": "Cerebellar lesions affect motor coordination (gait, speech, movement adjustment) but not autonomic functions.",
+      "options": [
+        "Difficulty in speech.",
+        "Unsteady gait.",
+        "Disturbed autonomic functions.",
+        "Inability to adjust movement."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Describe the functions of the basal ganglia. Discuss briefly the effect of",
+      "explanation": "Basal ganglia functions include: 1) Regulation of muscle tone - particularly axial and proximal tone; 2) Initiation and termination of voluntary movements; 3) Suppression of unwanted movements; 4) Processing of motor sequences; 5) Involuntary movements control. Key structures: caudate and putamen (striatum) receive input; globus pallidus and substantia nigra provide output. Two pathways: direct (facilitates movement) and indirect (inhibits unwanted movements). Parkinsonism (basal ganglia lesion) presents with: 1) Rigidity (cogwheel type); 2) Bradykinesia; 3) Resting tremor (pill-rolling); 4) Postural instability. Treatment targets dopamine replacement. Huntington disease (chorea) involves basal ganglia degeneration causing involuntary choreiform movements and cognitive decline.",
+      "keyConcept": "Basal ganglia regulate muscle tone, initiate/terminate voluntary movements, and prevent unwanted movements through direct and indirect pathways.",
+      "modelAnswer": "lesion in Substantia Nigra."
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Explain the role of the basal ganglia in regulation of muscle tone and voluntary movements and the effect of its lesions on it. Outline the clinical features of the degenerative disease affecting basal ganglia. Role and effect of lesion              discussed before All BG disease are characterized by: Changes in ms tone&involuntary movements in the contralateral side of the body. Disease Cause Characters Physiology Questions and Answers  2017",
+      "explanation": "The basal ganglia regulate muscle tone through its output to thalamus and brainstem reticular formation. When basal ganglia output is increased (direct pathway), it inhibits thalamic activity, reducing cortical drive for movement and increasing tone. When output is decreased (indirect pathway), thalamic activity increases, facilitating cortical movement commands and reducing tone. Cerebellar lesions cause: 1) Intention tremor (not at rest); 2) Ataxic gait; 3) Dysmetria; 4) Nystagmus; 5) Dysarthria (scanning speech). These differ from basal ganglia lesions which cause resting tremor, rigidity, and bradykinesia. Basal ganglia lesions typically produce hypertonic states (parkinsonism), while cerebellar lesions produce hypotonia. The two systems work together: basal ganglia selects appropriate movements, cerebellum coordinates timing and precision.",
+      "keyConcept": "Basal ganglia regulate tone via thalamic modulation; lesions cause rigidity (parkinsonism) or chorea (hyperkinetic).",
+      "modelAnswer": "26\nChorea\nlesion in Caudate\nnucleus\n(decreasing GABA\nin striatopallidal\nconnection)\na. Hypotonia\nb. Rapid involuntary dancing purpose-less jerky moments of\ndistal limb ms & facial ms during rest\nThe movements increased by emotions & disappear during\nrest - Types\n1. Huntington's Chorea → a hereditary disease in female\nwith dementia\n2. Sydenham's Chorea → a complication of rheumatic fever\nin female children\nHemiballismus\nLesion in\nsubthalamic\nnucleus\n(decreasing\nglutamate)\na. Hypertonia\nb. Involuntary sudden Strong movement of alimb or a Joint\nIf occurs bilateral → Laryngeal & respiratory spasm → Death\nAthetosis\nlesion of Globus\npallidus\n(decreased GABA)\na. Hypertonia\nb. Involuntary slow twisting movements in hands arms &\nface\ne.g. pronation with flexion & Supination with extension\n(worm or snake dance)\nParkinsonism Discussed before"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "essay",
+      "text": "List the physiological divisions of cerebellum and mention function of each & role of cerebrocerebellum in regulating voluntary motor act.",
+      "explanation": "The cerebellum has three functional divisions: 1) Vestibulocerebellum (archicerebellum) - flocculonodular lobe; functions in equilibrium, vestibular reflexes, and posture control. Lesions cause vertigo, nystagmus, ataxia, and truncal instability; 2) Spinocerebellum (paleocerebellum) - vermis and intermediate zones; functions in coordination of limb movements, regulation of muscle tone, and error correction. Lesions cause intention tremor, dysmetria, ataxic gait, and hypotonia; 3) Cerebrocerebellum (neocerebellum) - lateral hemispheres; functions in movement planning, motor learning, and programming of voluntary movements. Lesions cause dysdiadochokinesia, dysmetria, and impaired rapid alternating movements. The cerebrocerebellum communicates with the cerebral cortex via thalamus, helping plan movements before execution.",
+      "keyConcept": "Cerebellum has three functional divisions: vestibulocerebellum (equilibrium), spinocerebellum (coordination), cerebrocerebellum (planning).",
+      "modelAnswer": "1. Vestibulocerebellum or archicerebellum consists of folliculonodular lobe and part of the vermis  - Function: concerned with equilibrium\n2. Spinocerebellum or paleocerebellum consists of intermediate zones of cerebellar hemispheres  - Function: coordination\n3. Cerebrocerebellum or neocerebellum consists of lateral zones of cerebellar hemispheres  - Function: Planning and sequencing, prediction and timing\nequilibrium\nPhysiology Questions and Answers  2017\n27"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following cerebellar parts has mainly spinal connections:",
+      "explanation": "The spinocerebellum (vermis and intermediate zones) has mainly spinal connections - receives proprioceptive input from spine, controls axial and limb movement.选项B正确. The answer is B. Vestibulocerebellum has vestibular connections; cerebrocerebellum has cerebral connections.",
+      "keyConcept": "Spinocerebellum (vermis) has spinal connections - receives proprioceptive input, controls axial muscle tone.",
+      "options": [
+        "Archicerebellum",
+        "Paleocerebellum",
+        "Neocerebellum",
+        "All of the above",
+        "None of the above"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The inferior cerebellar peduncle contains:",
+      "explanation": "The inferior cerebellar peduncle contains: dorsal spinocerebellar tract (carries proprioceptive info to cerebellum), and vestibular connections.选项D正确. The answer is D. It carries afferent and efferent cerebellar pathways.",
+      "keyConcept": "Inferior cerebellar peduncle: dorsal spinocerebellar tract + vestibular connections - afferent to cerebellum.",
+      "options": [
+        "Dentatothalamic fibers",
+        "Gracile tract",
+        "Tectocerebellar tract",
+        "Posterior spinocerebellar tract",
+        "Pont-cerebellar tract"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Histology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following share in the cerebellar islands:",
+      "explanation": "Cerebellar islands (islands of granular cells) contain rosettes of mossy fiber terminals surrounded by dendrites of granule cells. Mossy fibers synapse with granule cell dendrites in these glomeruli.",
+      "keyConcept": "Cerebellar glomeruli: mossy fiber rosettes + granule cell dendrites; input from spinal cord/brainstem.",
+      "options": [
+        "Dendrites of stellate cells",
+        "Dendrites of Golgi II cells",
+        "Dendrites of granule cells",
+        "Climbing fibers"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Histology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Cerebellar glomeruli contain the following structures EXCEPT:",
+      "explanation": "Cerebellar glomeruli contain rosettes of mossy fibers, dendrites of granule cells, and axons of Golgi cells (inhibitory). They do NOT contain dendrites of basket cells - those are involved in different synapses on Purkinje cell bodies.",
+      "keyConcept": "Cerebellar glomerulus: mossy fiber rosette + granule cell dendrites + Golgi cell axons. Basket cells synapse on Purkinje soma.",
+      "options": [
+        "Rosettes of mossy fibers",
+        "Dendrites of granule cells",
+        "Axons of Golgi cells",
+        "Dendrites of basket cells"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Histology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The main efferent fiber of the cerebellar cortex is formed by axons of:",
+      "explanation": "Purkinje cells are the SOLE OUTPUT of the cerebellar cortex - their axons are the only fibers leaving the cortex to deeper nuclei. These axons are inhibitory (GABAergic). Golgi, basket, and granule cells are all interneurons.",
+      "keyConcept": "Purkinje cells: only efferent of cerebellar cortex; GABAergic; projects to deep nuclei and vestibular nuclei.",
+      "options": [
+        "Purkinje cells",
+        "Golgi cells",
+        "Basket cells",
+        "Granule cell"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Histology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Cerebellar cortex:",
+      "explanation": "The cerebellar cortex is NOT uniform - different regions have different afferent inputs (vestibular, spinocerebellar, corticocerebellar). It has 3 layers (molecular, Purkinje, granular), not 6. It does show sulci (folia).",
+      "keyConcept": "Cerebellar cortex: 3 layers (molecular, Purkinje, granular), folia/sulci, non-uniform structure.",
+      "options": [
+        "Contain martonitti cells in the molecular layer.",
+        "Is of uniform structure all over cerebellum",
+        "Formed of 6 layers",
+        "Show sulci."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Histology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following tracts carries the climbing fibers of cerebellum?",
+      "explanation": "Climbing fibers travel via the olivocerebellar tract through the inferior cerebellar peduncle to reach the cerebellum. The dorsal spinocerebellar tract carries proprioceptive information from the trunk. The pontocerebellar tract carries mossy fibers from the pontine nuclei.",
+      "keyConcept": "Olivocerebellar tract: inferior cerebellar peduncle → climbing fibers to cerebellum.",
+      "options": [
+        "Ventral spinothalamic tract",
+        "Dorsal spinocerebellar tract",
+        "Pontocerebellar tract",
+        "Olivocerebellar tract"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Histology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The molecular layer of cerebellum contains which of the following structures?",
+      "explanation": "The molecular layer of cerebellum contains stellate cells (with cell bodies here), basket cells (with cell bodies here), and the dendrites of Purkinje cells and Golgi cells. Purkinje cell bodies are in the Purkinje layer. Golgi cell bodies are in the granular layer. Cerebellar glomeruli are in the granular layer.",
+      "keyConcept": "Cerebellar molecular layer: stellate + basket cells, Purkinje/Golgi dendrites. Purkinje layer: Purkinje cell bodies. Granular layer: granule cells, Golgi bodies, glomeruli.",
+      "options": [
+        "Purkinje cell bodies",
+        "Basket cell bodies",
+        "Golgi cell bodies",
+        "Cerebellar glomeruli"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Histology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The deepest layer of the cerebellar cortex is",
+      "explanation": "The cerebellar cortex has 3 layers: molecular layer (outer), Purkinje cell layer (middle), and granular layer (deepest/innermost). The granular layer contains granule cells, Golgi cells, and cerebellar glomeruli.",
+      "keyConcept": "Cerebellar cortex layers (superficial to deep): molecular → Purkinje → granular.",
+      "options": [
+        "Molecular layer",
+        "Purkinje layer",
+        "Granular layer"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Superior cerebellar decussation:",
+      "explanation": "The superior cerebellar decussation is present at the level of the INFERIOR colliculus (lower midbrain), where dentatothalamic fibers cross. The tectospinal tract forms the dorsal tegmental decussation. Superior cerebellar peduncle fibers pass through the midbrain, not ICP.",
+      "keyConcept": "Superior cerebellar decussation: at inferior colliculus level, dentatothalamic fibers cross.",
+      "options": [
+        "Present in inferior level of midbrain.",
+        "Formed by tectospinal tract.",
+        "Fibers pass through ICP.",
+        "Its fibers descend in all segments of spinal cord."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What are the four tracts that carry unconscious proprioception to the cerebellum?",
+      "explanation": "The four tracts carrying unconscious proprioception to the cerebellum are: posterior spinocerebellar (lower limb, from Clarke's column), anterior spinocerebellar (both limbs, from spinal border cells), spino-olivary (to inferior olive then cerebellum), and cuneocerebellar (upper limb, from accessory cuneate nucleus).",
+      "keyConcept": "Unconscious proprioception to cerebellum: posterior and anterior spinocerebellar, spino-olivary, cuneocerebellar tracts.",
+      "modelAnswer": "1) Posterior spinocerebellar tract (from Clarke's column, lower limb). 2) Anterior spinocerebellar tract (from spinal border cells, both limbs). 3) Spino-olivary tract (to inferior olivary nucleus, then to cerebellum). 4) Cuneocerebellar tract (from accessory cuneate nucleus, upper limb)."
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What are the parts of neostriatum?",
+      "explanation": "The neostriatum consists of the caudate nucleus and putamen. Together with the globus pallidus, these form the corpus striatum. The caudate and putamen are separated by the internal capsule but are functionally connected.",
+      "keyConcept": "Neostriatum: caudate nucleus + putamen. Striatum = neostriatum + paleostriatum (globus pallidus).",
+      "modelAnswer": "Caudate nucleus and putamen. These are the input nuclei of the basal ganglia, receiving cortical input. They are separated by the internal capsule but functionally linked as the striatum."
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What are the parts of paleostriatum?",
+      "explanation": "The paleostriatum (globus pallidus) consists of two parts: the internal (medial) segment (GPi) and external (lateral) segment (GPe). GPi is the main output nucleus; GPe is part of the indirect pathway.",
+      "keyConcept": "Paleostriatum: globus pallidus internal (GPi) + external (GPe). GPi = output; GPe = indirect pathway.",
+      "modelAnswer": "Globus pallidus external (GPe) and globus pallidus internal (GPi). The external segment is part of the indirect pathway; the internal segment is the main output of the basal ganglia."
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the blood supply of basal ganglia?",
+      "explanation": "The basal ganglia (caudate, putamen, globus pallidus, substantia nigra, subthalamic nucleus) are supplied by central branches of the anterior cerebral artery and middle cerebral artery. The lenticulostriate arteries (branches of MCA) are the primary supply.",
+      "keyConcept": "Basal ganglia: supplied by lenticulostriate arteries (branches of MCA) and anterior cerebral artery branches.",
+      "modelAnswer": "Central branches of the anterior and middle cerebral arteries, particularly the lenticulostriate arteries which penetrate the basal ganglia through the anterior perforated substance."
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the venous drainage of basal ganglia?",
+      "explanation": "The basal ganglia drain into veins that empty into the thalamostriate vein (also called terminal vein), which then drains into the internal cerebral veins and ultimately the great cerebral vein (Galen) into the straight sinus.",
+      "keyConcept": "Basal ganglia venous drainage: thalamostriate vein → internal cerebral veins → great cerebral vein → straight sinus.",
+      "modelAnswer": "Veins that drain into the thalamostriate vein, which courses through the basal ganglia region and empties into the internal cerebral veins, then to the great cerebral vein of Galen."
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What are the 3 lobes of the cerebellum (Functional classification)?",
+      "explanation": "The three functional lobes of the cerebellum are: archicerebellum (vestibulocerebellum - flocculonodular lobe), paleocerebellum (spinocerebellum - vermis and paravermis), and neocerebellum (cerebrocerebellum - lateral hemispheres).",
+      "keyConcept": "Cerebellar functional lobes: archi (vestibular), paleo (spinal), neo (cerebral).",
+      "modelAnswer": "Archicerebellum (flocculonodular lobe - vestibular connections), paleocerebellum (vermis and paravermis - spinal connections), and neocerebellum (lateral hemispheres - cerebral cortex connections)."
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the archicerebellum formed of?",
+      "explanation": "The archicerebellum consists of the flocculus (paired lateral structures) and nodule (median part of inferior vermis). It is the oldest part of the cerebellum (phylogenetically) and is connected to the vestibular system.",
+      "keyConcept": "Archicerebellum: flocculus + nodule. Oldest part, vestibular connections, maintains balance.",
+      "modelAnswer": "The flocculus (paired lateral structures) and nodule (median part of the inferior vermis). These structures form the flocculonodular lobe, which receives primary vestibular input."
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the paleocerebellum formed of?",
+      "explanation": "The paleocerebellum consists of the vermis (median zone) and paravermal (intermediate) zones of both cerebellar hemispheres. It receives proprioceptive input from the spinal cord and controls axial and proximal limb movements.",
+      "keyConcept": "Paleocerebellum: vermis + paravermis. Receives spinal input, controls axial/proximal movement.",
+      "modelAnswer": "The vermal part and the two paravermal parts of the cerebellar hemisphere. The vermis controls axial muscles; paravermis controls proximal limb muscles. Both receive proprioceptive input from the spinal cord."
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the neocerebellum formed of?",
+      "explanation": "The neocerebellum consists of the lateral parts of the cerebellar hemispheres (the largest part in humans). It receives cortical input via the pontocerebellar pathway and is involved in planning and executing voluntary movements.",
+      "keyConcept": "Neocerebellum: lateral cerebellar hemispheres. Receives cortical input, plans skilled movements.",
+      "modelAnswer": "The lateral parts of the cerebellar hemisphere. This is the phylogenetically newest part (neocerebellum), connected to the cerebral cortex via the pontocerebellar pathway, and involved in planning and execution of skilled voluntary movements."
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Mention the 4 cerebellar nuclei.",
+      "explanation": "The four deep cerebellar nuclei (medial to lateral) are: fastigial nucleus (most medial), globose nucleus, emboliform nucleus, and dentate nucleus (most lateral, largest). The dentate nucleus is the main output nucleus, projecting via the superior cerebellar peduncle.",
+      "keyConcept": "Cerebellar nuclei (medial to lateral): fastigial, globose, emboliform, dentate. Dentate = main output.",
+      "modelAnswer": "Dentate nucleus (largest, most lateral), emboliform nucleus, globose nucleus, and fastigial nucleus (most medial). The dentate nucleus is the main output, while the fastigial nucleus influences vestibular and eye movements."
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What are the arteries that supply the cerebellum?",
+      "explanation": "The cerebellum is supplied by three paired arteries: superior cerebellar artery (SCA - from basilar), anterior inferior cerebellar artery (AICA - from basilar), and posterior inferior cerebellar artery (PICA - usually from vertebral).",
+      "keyConcept": "Cerebellar arteries: SCA (superior), AICA (anterior inferior), PICA (posterior inferior).",
+      "modelAnswer": "Superior cerebellar artery (branch of basilar artery), anterior inferior cerebellar artery (AICA - branch of basilar), and posterior inferior cerebellar artery (PICA - usually from vertebral artery)."
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What are the veins that drain the cerebellum?",
+      "explanation": "The cerebellum is drained by superior cerebellar veins (emptying into the superior petrosal sinus or straight sinus) and inferior cerebellar veins (emptying into the transverse sinus or jugular bulb).",
+      "keyConcept": "Cerebellar veins: superior (to superior petrosal sinus/straight sinus) and inferior (to transverse sinus/jugular).",
+      "modelAnswer": "Superior cerebellar veins (drain to superior petrosal sinus or straight sinus) and inferior cerebellar veins (drain to transverse sinus or jugular bulb)."
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Parallel fibers make synapse with Purkinje cells dendrites:",
+      "explanation": "Parallel fibers (axons of granule cells) make basket-like synapses with Purkinje cell dendrites in the molecular layer. These are excitatory synapses using glutamate as neurotransmitter.",
+      "keyConcept": "Parallel fibers make basket-like synapses with Purkinje cell dendrites",
+      "options": [
+        "Spiral synapse.",
+        "Cross over synapse.",
+        "Basket-like synapse.",
+        "Glomerular synapse."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The main efferent fiber of the cerebellar cortex is formed by axons of:",
+      "explanation": "Purkinje cells are the main output neurons of the cerebellar cortex. Their axons project to the deep cerebellar nuclei and vestibular nuclei, carrying all cerebellar cortical information.",
+      "keyConcept": "Purkinje cell axons form the main efferent output of cerebellar cortex",
+      "options": [
+        "Purkinje cells.",
+        "Golgi cells.",
+        "Basket cells.",
+        "Granule cells."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Cerebellar cortex:",
+      "explanation": "Martinotti cells are present in the molecular layer of the cerebellar cortex, where their axons ascend to make inhibitory synapses on Purkinje cell dendrites. Cerebellar cortex is not of uniform structure (has different regions).",
+      "keyConcept": "Martinotti cells present in molecular layer of cerebellar cortex",
+      "options": [
+        "Contain Martinotti cells in the molecular layer.",
+        "Is of uniform structure all over cerebellum.",
+        "Formed of 6 layers.",
+        "Show sulci."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "A 10-year-old girl develops ataxia & hydrocephalus. CT scan shows a midline partially cystic cerebellar mass. Microscopic examination shows elongated bipolar astrocytes with fibrillar processes and Rosenthal fibers. The diagnosis is:",
+      "explanation": "Pilocytic astrocytoma (WHO grade I) in children shows elongated bipolar astrocytes with Rosenthal fibers and fibrillary processes. These are benign, often cystic cerebellar tumors with good prognosis.",
+      "keyConcept": "Pilocytic astrocytoma: Rosenthal fibers, bipolar astrocytes, cystic cerebellar tumor in children",
+      "options": [
+        "Astrocytoma grade 1.",
+        "Astrocytoma grade 2.",
+        "Anaplastic astrocytoma.",
+        "Astrocytoma grade 4."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "A 5-year-old child suffered from headache & blurring of vision. Radiological examination showed a cerebellar tumor. Microscopic examination of a biopsy from this tumor revealed diffuse infiltration by malignant small round cells with rosette formation. The most possible diagnosis is:",
+      "explanation": "Medulloblastoma presents in children with cerebellar symptoms (ataxia, increased ICP) and shows malignant small round cells with rosette formation (Homer-Wright rosettes). It is a WHO grade IV PNET.",
+      "keyConcept": "Medulloblastoma: small round cells, rosette formation, cerebellar tumor in children",
+      "options": [
+        "Anaplastic astrocytoma.",
+        "Glioblastoma multiforme.",
+        "Ependymoma.",
+        "Neuroblastoma.",
+        "Medulloblastoma."
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "A 9-year-old girl is evaluated for headache and ataxia over the last 2 months. A CT scan reveals a midline partially cystic cerebellar mass, microscopic examination shows elongated bipolar astrocytes with fibrillar processes and Rosenthal fibers. The diagnosis is:",
+      "explanation": "Pilocytic astrocytoma (WHO grade I) shows elongated bipolar astrocytes with Rosenthal fibers and fibrillar processes. It is benign, cystic, midline cerebellar tumor in children with good prognosis.",
+      "keyConcept": "Pilocytic astrocytoma: Rosenthal fibers, bipolar astrocytes, cystic cerebellar tumor",
+      "options": [
+        "Astrocytoma grade 1.",
+        "Astrocytoma grade 2.",
+        "Anaplastic astrocytoma.",
+        "Astrocytoma grade 4."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Pathology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "A 58-year-old hypertensive patient presents with sudden onset of hemiplegia followed by symptoms of increased intracranial tension (headache & vomiting). A CT scan shows extensive intracerebral hemorrhage in the region of basal ganglia. The most probable diagnosis is:",
+      "explanation": "Charcot-Bouchard microaneurysms are small aneurysms that form on small penetrating arteries in hypertensive patients, most commonly affecting the basal ganglia (lenticulostriate arteries) and causing hypertensive intracerebral hemorrhage.",
+      "keyConcept": "Hypertensive intracerebral hemorrhage: Charcot-Bouchard microaneurysms in basal ganglia",
+      "options": [
+        "Ruptured arteriovenous malformation.",
+        "Ruptured congenital berry aneurysm.",
+        "Ruptured multiple microaneurysms (Charcot-Bouchard microaneurysms).",
+        "Thrombotic occlusion of"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The cerebellum is NOT involved in:",
+      "explanation": "The cerebellum coordinates movement, maintains posture, and regulates muscle tone and stretch reflexes. It does not subserve primary sensory perception - that is a function of the sensory cortex and thalamus.",
+      "keyConcept": "The cerebellum fine-tunes motor output but does not process raw sensory information.",
+      "options": [
+        "Maintenance of posture",
+        "Coordination of movements",
+        "Regulation of reflexes",
+        "Control of voluntary movements",
+        "Sensory perception"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 6,
+      "type": "mcq",
+      "text": "Which tract passes through the superior cerebellar peduncle?",
+      "explanation": "The superior cerebellar peduncle contains primarily efferent fibers from the dentate nucleus to the contralateral red nucleus and thalamus (dentatorubrothalamic pathway), carrying cerebellar output.",
+      "keyConcept": "Superior cerebellar peduncle is the major output pathway from cerebellum to forebrain.",
+      "options": [
+        "Anterior spinocerebellar tract",
+        "Dorsal spinocerebellar tract",
+        "Gracile tract",
+        "Cuneate tract",
+        "Spino-olivary tract"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 6,
+      "type": "mcq",
+      "text": "Which fibers enter the cerebellum through the inferior cerebellar peduncle?",
+      "explanation": "The inferior cerebellar peduncle carries afferent fibers including the dorsal spinocerebellar tract (from Clarke's column), cuneocerebellar fibers, and vestibulocerebellar fibers.",
+      "keyConcept": "Inferior cerebellar peduncle is primarily afferent, carrying proprioceptive and vestibular information to cerebellum.",
+      "options": [
+        "Anterior spinocerebellar tract",
+        "Dorsal spinocerebellar tract",
+        "Gracile tract",
+        "Cuneate tract",
+        "Ventral spinothalamic tract"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 5,
+      "type": "mcq",
+      "text": "Which fibers are afferent to cerebellum through the inferior cerebellar peduncle?",
+      "explanation": "Afferents through the inferior cerebellar peduncle include: dorsal spinocerebellar tract (from Clarke's column), cuneocerebellar fibers from accessory cuneate nucleus, and vestibulocerebellar fibers.",
+      "keyConcept": "Inferior cerebellar peduncle carries proprioceptive and vestibular afferents to cerebellum.",
+      "options": [
+        "Anterior spinocerebellar fibers",
+        "External arcuate fibers",
+        "Internal arcuate fibers",
+        "Fibers from gracile tract",
+        "Ventral spinothalamic fibers"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 7,
+      "type": "mcq",
+      "text": "Which structure of the basal ganglia is classified as the paleostriatum?",
+      "explanation": "The globus pallidus internus (GPi) and externus (GPe) together form the paleostriatum (old striatum), while the putamen and caudate nucleus form the neostriatum (new striatum).",
+      "keyConcept": "Paleostriatum refers to the globus pallidus, distinguished from the neostriatum (caudate-putamen).",
+      "options": [
+        "Caudate nucleus",
+        "Putamen",
+        "Globus pallidus",
+        "Subthalamic nucleus",
+        "Substantia nigra"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 7,
+      "type": "mcq",
+      "text": "Which structure is part of the neostriatum?",
+      "explanation": "The neostriatum consists of the caudate nucleus and putamen (also called the striatum). It receives cortical input and dopaminergic input from the substantia nigra pars compacta.",
+      "keyConcept": "Neostriatum comprises caudate and putamen, the major input structures of the basal ganglia.",
+      "options": [
+        "Globus pallidus",
+        "Claustrum",
+        "Subthalamic nucleus",
+        "Caudate nucleus",
+        "Substantia nigra"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 6,
+      "type": "mcq",
+      "text": "Which cerebellar structures are separated by fissura prima?",
+      "explanation": "The fissura prima separates the anterior and posterior lobes of the cerebellum. It divides the culmen (anterior lobe) from the declive, folium, and tuber (posterior lobe).",
+      "keyConcept": "Fissura prima divides the anterior and posterior cerebellar lobes, separating motor from non-motor regions.",
+      "options": [
+        "Anterior and posterior lobes",
+        "Superior surface and inferior surface",
+        "Paleocerebellum and neocerebellum",
+        "Cerebellar hemispheres",
+        "Superior and inferior vermis"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 6,
+      "type": "mcq",
+      "text": "Which function is primarily controlled by the flocculonodular lobe of the cerebellum?",
+      "explanation": "The flocculonodular lobe (vestibulocerebellum) primarily regulates balance and eye movements through connections with the vestibular nuclei. Lesions cause ataxia and nystagmus.",
+      "keyConcept": "Flocculonodular lobe controls vestibular function, balance, and eye movements via vestibular nuclei.",
+      "options": [
+        "Fine motor coordination",
+        "Planning movements",
+        "Equilibrium and posture",
+        "Speech",
+        "Sensory integration"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 5,
+      "type": "mcq",
+      "text": "A lesion in the posterior inferior cerebellar artery (PICA) territory can result in which of the following neurological deficits?",
+      "explanation": "PICA supplies the lateral medulla and inferior cerebellum. PICA syndrome causes ipsilateral dysphagia, hoarseness, decreased gag reflex (nucleus ambiguus), and cerebellar signs, with contralateral pain/temperature loss.",
+      "keyConcept": "PICA syndrome presents with ipsilateral cranial nerve deficits and contralateral sensory loss.",
+      "options": [
+        "Ipsilateral loss of vibration and proprioception",
+        "Contralateral hemiplegia",
+        "Contralateral loss of pain and temperature of the body",
+        "Bilateral loss of light touch",
+        "Ipsilateral visual field defect"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which clinical finding is most characteristic of cerebellar lesions?",
+      "explanation": "Intention tremor (absent at rest, present with movement) is characteristic of cerebellar lesions, reflecting loss of coordination and smooth movement execution.",
+      "keyConcept": "Intention tremor is the hallmark of cerebellar dysfunction, unlike resting tremor seen in basal ganglia lesions.",
+      "options": [
+        "Spasticity",
+        "Rigidity",
+        "Hypotonia",
+        "Hyperreflexia",
+        "Clonus"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which function is characteristic of the medial motor system (but not lateral) and also a function of the cerebellum?",
+      "explanation": "The medial motor system (including vestibulospinal and reticulospinal tracts) controls axial and proximal muscles for posture and balance, unlike the lateral corticospinal system controlling distal movements.",
+      "keyConcept": "Medial motor system regulates proximal and axial muscles for posture; lateral system controls distal skilled movements.",
+      "options": [
+        "Fine skilled movements of distal muscles",
+        "Control of axial and proximal muscles",
+        "Independent finger movements",
+        "Voluntary motor initiation",
+        "Fractionated hand movements"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which is NOT typically associated with a cerebellar lesion?",
+      "explanation": "Nystagmus is typically associated with vestibular lesions, not cerebellar lesions. Intention tremor, ataxia, dysmetria, and dysdiadochokinesia are cerebellar signs.",
+      "keyConcept": "Cerebellar lesions cause intention tremor, ataxia, dysmetria, and dysdiadochokinesia; nystagmus is vestibular.",
+      "options": [
+        "Intention tremor",
+        "Ataxia",
+        "Dysmetria",
+        "Nystagmus",
+        "Static tremor"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Fibers from the cerebral cortex to the corpus striatum release which neurotransmitter?",
+      "explanation": "The corticostriatal pathway uses glutamate as its neurotransmitter, providing excitatory input from the cerebral cortex to the corpus striatum (caudate and putamen).",
+      "keyConcept": "Corticostriatal neurotransmission",
+      "options": [
+        "GABA",
+        "Dopamine",
+        "Acetylcholine",
+        "Serotonin",
+        "Glutamate"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Static tremor is caused by which mechanism in the basal ganglia?",
+      "explanation": "Static (resting) tremor in Parkinson's disease results from oscillatory activity between the globus pallidus interna and subthalamic nucleus due to loss of dopamine.",
+      "keyConcept": "Parkinsonian tremor mechanism",
+      "options": [
+        "Loss of dopamine in substantia nigra",
+        "Hyperactivity of the direct pathway",
+        "Cerebellar Purkinje cell degeneration",
+        "Oscillation between GPi and subthalamic nucleus",
+        "Failure of corticospinal inhibition"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "How does dopamine act on the basal ganglia motor pathways?",
+      "explanation": "D1 receptors in the direct pathway are excitatory; dopamine binding to D1 receptors stimulates the direct pathway which ultimately facilitates movement via reduced GPi activity.",
+      "keyConcept": "Dopamine receptor pathways",
+      "options": [
+        "D1 inhibits the direct pathway",
+        "D1 excites the direct pathway",
+        "D2 excites the indirect pathway",
+        "D2 excites the direct pathway",
+        "Dopamine inhibits both pathways"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which function is performed by the cerebellum?",
+      "explanation": "The cerebellum corrects movements on the same side of the body through its deep cerebellar nuclei and their projections to the thalamus and motor cortex.",
+      "keyConcept": "Ipsilateral cerebellar function",
+      "options": [
+        "Correct movement on the same side of the body",
+        "Initiation of voluntary movement on the same side",
+        "Coordination of opposite side limb movements",
+        "Regulation of muscle strength",
+        "Primary sensory perception"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which deficit is most characteristic of a cerebellar lesion?",
+      "explanation": "Cerebellar lesions characteristically impair motor learning (adaptation of movements), as the cerebellum is essential for procedural memory and motor skill acquisition.",
+      "keyConcept": "Cerebellar motor learning",
+      "options": [
+        "Muscle weakness",
+        "Loss of motor learning",
+        "Loss of pain sensation",
+        "Aphasia",
+        "Visual field defect"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which function is primarily associated with the flocculonodular lobe of the cerebellum?",
+      "explanation": "The flocculonodular lobe (vestibulocerebellum) is primarily concerned with equilibrium and balance, receiving input from the vestibular apparatus.",
+      "keyConcept": "Vestibulocerebellar function",
+      "options": [
+        "Fine motor coordination",
+        "Equilibrium",
+        "Regulation of muscle tone",
+        "Motor learning",
+        "Planning of voluntary movements"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which clinical sign is characteristic of an ipsilateral cerebellar lesion?",
+      "explanation": "Ipsilateral cerebellar lesions cause hypotonia due to loss of the cerebellum's facilitatory influence on alpha motor neurons and reduced gamma motor activity.",
+      "keyConcept": "Cerebellar hypotonia",
+      "options": [
+        "Spasticity",
+        "Resting tremor",
+        "Chorea",
+        "Hypotonia",
+        "Hyperreflexia"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which deficit is specifically associated with a lesion affecting climbing fibers of the cerebellum?",
+      "explanation": "Climbing fiber lesions specifically impair motor learning (adaptation of the vestibulo-ocular reflex), as these fibers from the inferior olive encode error signals for cerebellar plasticity.",
+      "keyConcept": "Climbing fiber function",
+      "options": [
+        "Dysmetria",
+        "Loss of motor learning",
+        "Intentional tremor",
+        "Resting tremor",
+        "Chorea"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Pathology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Cerebellar brain abscess is usually a complication of:",
+      "explanation": "Cerebellar abscess commonly complicates chronic suppurative otitis media due to direct spread of infection from the middle ear through the tegmen tympani.",
+      "keyConcept": "Cerebellar abscess etiology",
+      "options": [
+        "Suppurative otitis media",
+        "Suppurative lung diseases",
+        "Sinusitis",
+        "Skull fractures",
+        "Systemic pyaemia"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Purkinje cells are stimulated by the following except:",
+      "explanation": "Purkinje cells are excited by climbing fibers, mossy fibers (indirectly via granule cells), and parallel fibers; basket and Golgi cells provide inhibitory input.",
+      "keyConcept": "Purkinje cell inputs",
+      "options": [
+        "climbing fibers",
+        "mossy fiber",
+        "Basket, golgi cell",
+        "parallel fiber"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Regarding the cerebellum, choose one correct answer:",
+      "explanation": "The spinocerebellum (vermis and intermediate hemisphere) regulates muscle tone and coordination; the neocerebellum plans movement and the paleocerebellum controls equilibrium.",
+      "keyConcept": "Cerebellar functional divisions",
+      "options": [
+        "Middle cerebellar peduncle connects it to medulla oblongata.",
+        "Spinocerebellum regulates muscle tone.",
+        "Neocerebellum is concerned with equilibrium.",
+        "Paleocerebellum is concerned with planning and programming movement."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "A 10‑year‑old girl has a cystic cerebellar tumour. Microscopy shows spindle cells with hair‑like processes, microcysts, and Rosenthal fibres. What is the diagnosis?",
+      "explanation": "Pilocytic astrocytoma in children shows characteristic hair-like processes (ROSE), microcysts, and Rosenthal fibers; often cystic with mural nodule.",
+      "keyConcept": "Pilocytic astrocytoma",
+      "options": [
+        "Pilocytic astrocytoma",
+        "Medulloblastoma",
+        "Ependymoma",
+        "Haemangioblastoma",
+        "Oligodendroglioma"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "4 tracts carrying unconscious proprioception to cerebellum:",
+      "explanation": "The four tracts carrying unconscious proprioception to cerebellum are dorsal spinocerebellar, ventral spinocerebellar, cuneocerebellar, and rostral spinocerebellar tracts.",
+      "keyConcept": "Cerebellar proprioceptive tracts",
+      "modelAnswer": "Dorsal spinocerebellar, ventral spinocerebellar, cuneocerebellar, rostral spinocerebellar."
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Parts of neostriatum:",
+      "explanation": "The neostriatum (striatum proper) consists of the caudate nucleus and putamen, separated by the internal capsule but functionally interconnected as part of the basal ganglia motor loop.",
+      "keyConcept": "Neostriatum = caudate nucleus + putamen.",
+      "modelAnswer": "Caudate and Putamen."
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Parts of paleostriatum:",
+      "explanation": "The paleostriatum refers to the globus pallidus, which is divided into internal (GPi) and external (GPe) segments that serve as the main output nuclei of the basal ganglia.",
+      "keyConcept": "Paleostriatum = globus pallidus internus and externus.",
+      "modelAnswer": "Globus pallidus internal and external."
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Blood supply of basal ganglia:",
+      "explanation": "The basal ganglia receive blood supply from central branches of the anterior and middle cerebral arteries, which penetrate the brain substance to supply the caudate, putamen, and globus pallidus.",
+      "keyConcept": "Basal ganglia supplied by branches of anterior and middle cerebral arteries.",
+      "modelAnswer": "Central branches of anterior and middle cerebral arteries."
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Venous drainage of basal ganglia:",
+      "explanation": "The thalamostriate vein drains the basal ganglia and thalamus, carrying blood to the internal cerebral vein and ultimately the vein of Galen.",
+      "keyConcept": "Thalamostriate vein provides venous drainage for basal ganglia.",
+      "modelAnswer": "Thalamostriate vein."
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Archicerebellum formed of:",
+      "explanation": "The archicerebellum, the oldest functional region, is formed by the flocculi and nodule, which together constitute the vestibular cerebellum controlling balance and eye movements.",
+      "keyConcept": "Archicerebellum = flocculus and nodule of inferior vermis.",
+      "modelAnswer": "2 flocculi and nodule (part of inferior vermis)."
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Paleocerebellum formed of:",
+      "explanation": "The paleocerebellum, controlling posture and gait, is formed by the vermal portion and paravermal zones of the cerebellar hemispheres, receiving proprioceptive input from the body.",
+      "keyConcept": "Paleocerebellum = vermis and paravermal zones for postural control.",
+      "modelAnswer": "Vermal part and 2 paravermal parts of cerebellar hemisphere."
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Neocerebellum formed of:",
+      "explanation": "The neocerebellum, the largest and most recent functional region, is formed by the lateral parts of the cerebellar hemispheres and is responsible for planning and executing voluntary movements.",
+      "keyConcept": "Neocerebellum = lateral cerebellar hemisphere for skilled movements.",
+      "modelAnswer": "Lateral parts of cerebellar hemisphere."
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "4 cerebellar nuclei:",
+      "explanation": "The four deep cerebellar nuclei from lateral to medial are: dentate (largest), emboliform, globose, and fastigial, each projecting to different thalamic and brainstem targets.",
+      "keyConcept": "Four cerebellar nuclei: dentate, emboliform, globose, fastigial.",
+      "modelAnswer": "Dentate, Emboliform, Globose, Fastigial."
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Arteries supplying cerebellum:",
+      "explanation": "The cerebellum receives blood from three paired arteries: superior cerebellar (SCA), anterior inferior cerebellar (AICA), and posterior inferior cerebellar (PICA) arteries.",
+      "keyConcept": "Cerebellum supplied by SCA, AICA, and PICA.",
+      "modelAnswer": "Superior cerebellar, anterior inferior cerebellar, posterior inferior cerebellar."
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Veins draining cerebellum:",
+      "explanation": "Cerebellar venous drainage is divided into superior cerebellar veins (draining to straight sinus) and inferior cerebellar veins (draining to transverse and sigmoid sinuses).",
+      "keyConcept": "Cerebellar veins drain to straight, transverse, and sigmoid sinuses.",
+      "modelAnswer": "Superior cerebellar veins and inferior cerebellar veins."
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which tract carries unconscious proprioception from the lower limb to the cerebellum without crossing?",
+      "explanation": "The posterior spinocerebellar tract carries unconscious proprioceptive information from the lower limb directly to the cerebellum on the same side without crossing, originating from Clarke's nucleus at T1-L2.",
+      "keyConcept": "Unconscious proprioception from lower limb: posterior spinocerebellar tract, uncrossed.",
+      "options": [
+        "Anterior spinocerebellar",
+        "Posterior spinocerebellar",
+        "Cuneocerebellar",
+        "Spino-olivary"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is a function of the vestibulocerebellum (flocculonodular lobe)?",
+      "explanation": "The vestibulocerebellum (flocculonodular lobe) receives vestibular input and controls balance, posture, and eye movements, making it essential for spatial orientation.",
+      "keyConcept": "Vestibulocerebellum: controls balance and eye movements.",
+      "options": [
+        "Fine motor coordination of limbs",
+        "Balance and eye movements",
+        "Planning of voluntary movement",
+        "Muscle tone regulation"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is a function of the basal ganglia?",
+      "explanation": "The basal ganglia modulate movement through indirect and direct pathways that influence thalamic output to the motor cortex, without directly executing voluntary movements.",
+      "keyConcept": "Basal ganglia: modulate movement and motor learning, not direct execution.",
+      "options": [
+        "Direct execution of voluntary movement",
+        "Modulation of movement and motor learning",
+        "Sensory processing",
+        "Coordination of balance"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which tract passes through the superior cerebellar peduncle?",
+      "explanation": "The anterior spinocerebellar tract enters via the SCP.",
+      "keyConcept": "Superior cerebellar peduncle carries dentatothalamic fibers from cerebellum to thalamus.",
+      "options": [
+        "Posterior spinocerebellar tract",
+        "Anterior spinocerebellar tract",
+        "Cuneocerebellar tract",
+        "Dorsal external arcuate fibers",
+        "Olivocerebellar fibers"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The idea of the voluntary movement is generated in which one of the following:\nA. 1ry motor area 4\nB. Premotor cortex\nC. Supplementary motor area\nD. Prefrontal cortex\nE. Cerebellum",
+      "explanation": "The prefrontal cortex generates the idea and plan for voluntary movement, while the primary motor cortex executes the movement and supplementary motor area prepares for it.",
+      "keyConcept": "Prefrontal cortex generates the idea of voluntary movement.",
+      "options": [
+        "1ry motor area 4",
+        "Premotor cortex",
+        "Supplementary motor area",
+        "Prefrontal cortex",
+        "Cerebellum"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following statements concerning the general functional role of the cerebellum is correct?\nA. The cerebellum directly stimulates motor neurons required to make a movement\nB. The cerebellum is unable to make corrective adjustments to the movement once it is performed\nC. The cerebellum does not receive feedback from muscles that execute the actual movement\nD. The cerebellum is not involved in the planning of a movement, only its execution\nE. The cerebellum plays an active role in the coordination of the muscles required to make a movement",
+      "explanation": "The cerebellum coordinates muscle activity during movement through its internal models and predictive control, receiving proprioceptive feedback and making real-time adjustments, but does not directly stimulate motor neurons.",
+      "keyConcept": "Cerebellum coordinates muscles during movement, doesn't directly stimulate motor neurons.",
+      "options": [
+        "The cerebellum directly stimulates motor neurons required to make a movement",
+        "The cerebellum is unable to make corrective adjustments to the movement once it is performed",
+        "The cerebellum does not receive feedback from muscles that execute the actual movement",
+        "The cerebellum is not involved in the planning of a movement, only its execution",
+        "The cerebellum plays an active role in the coordination of the muscles required to make a movement"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following statements best describes a functional role for the cerebellar vermis?\nA. Controls and coordinates movements of the axial muscles as well as the shoulder and hip\nB. Controls movements that involve distal limb musculature\nC. Functions with the cerebral cortex to plan movements\nD. Stimulates motor neurons through its connections to the spinal cord\nE. Inhibits motor neurons through its connections to the spinal cord",
+      "explanation": "The cerebellar vermis controls axial and proximal muscles of the shoulders and hips (trunk muscles), while the lateral hemispheres control distal limb musculature for fine movements.",
+      "keyConcept": "Cerebellar vermis: axial/proximal muscle control (shoulder, hip).",
+      "options": [
+        "Controls and coordinates movements of the axial muscles as well as the shoulder and hip",
+        "Controls movements that involve distal limb musculature",
+        "Functions with the cerebral cortex to plan movements",
+        "Stimulates motor neurons through its connections to the spinal cord",
+        "Inhibits motor neurons through its connections to the spinal cord"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The declarative memory is described by which one of the following?\nA. It can be remembered after thinking of related events\nB. Recall of general facts is the episodic type\nC. Memory of personal experiences is the semantic type\nD. Its center is in hippocampus and cerebellum\nE. It cannot be converted to non-declarative memory",
+      "explanation": "Declarative memory can be recalled by thinking of related events; it includes episodic (personal experiences) and semantic (general facts) components, primarily mediated by hippocampus.",
+      "keyConcept": "Declarative memory: recalled through related events, hippocampal.",
+      "options": [
+        "It can be remembered after thinking of related events",
+        "Recall of general facts is the episodic type",
+        "Memory of personal experiences is the semantic type",
+        "Its center is in hippocampus and cerebellum",
+        "It cannot be converted to non-declarative memory"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "matching",
+      "text": "Match the sign of cerebellar ataxia in column A with its definition in column B.",
+      "explanation": "Dysmetria is inability to estimate distance during movement; dysdiadochokinesia is inability to perform rapid alternating movements; intention tremor occurs with voluntary movement; nystagmus is rhythmic eye movement.",
+      "keyConcept": "Cerebellar signs: dysmetria (distance), dysdiadochokinesia (alternating), intention tremor (movement), nystagmus (eye).",
+      "pairs": [
+        {
+          "premise": "1) Dysmetria",
+          "target": "Inability to estimate distance."
+        },
+        {
+          "premise": "2) Dysdiadochokinesia",
+          "target": "Inability to perform rapid alternating movements."
+        },
+        {
+          "premise": "3) Intention tremor",
+          "target": "Shaking of fingers on doing movements."
+        },
+        {
+          "premise": "4) Nystagmus",
+          "target": "Horizontal movement in both eyes."
+        }
+      ]
+    }
+  ]
+}

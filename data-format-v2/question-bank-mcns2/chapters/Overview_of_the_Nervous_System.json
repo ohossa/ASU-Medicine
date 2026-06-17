@@ -1,0 +1,2327 @@
+{
+  "schemaVersion": 1,
+  "meta": {
+    "moduleCode": "MCNS-2",
+    "moduleName": "Central Nervous System Module",
+    "year": 2,
+    "semester": 2,
+    "creditPoints": 13,
+    "totalMarks": 4678,
+    "keywords": [
+      "cns",
+      "central nervous",
+      "mcns",
+      "neuro",
+      "brain",
+      "spinal cord"
+    ]
+  },
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Overview of the Nervous System",
+      "subtitle": "",
+      "emoji": "🧠",
+      "page": 1,
+      "lectureRange": "",
+      "subjects": [
+        {
+          "id": "anatomy",
+          "name": "Anatomy",
+          "iconName": "Bone",
+          "lectures": "",
+          "lectureCount": 5,
+          "lectureNames": [
+            "Sensory Cortex",
+            "Spinal Cord External Features",
+            "Lecture 3",
+            "Lecture 4",
+            "Lecture 5"
+          ],
+          "questions": [
+            {
+              "id": "mcns2-ch1-anatomy-q1",
+              "type": "matching",
+              "lecture": 1,
+              "text": "For each term in the left column, choose the appropriate description in the right column",
+              "explanation": "Ganglion = A collection of cell bodies outside CNS. Tract = A bundle of nerve fibers within CNS. Nucleus = A collection of cell bodies within CNS. Lemniscus = A collection of ascending fibers within brainstem. Nerve = A Bundle of nerve fibers outside CNS.",
+              "keyConcept": "Matching For each term in the left column, choose the appropriate description in the right column",
+              "pairs": [
+                {
+                  "premise": "Ganglion.",
+                  "target": "A collection of cell bodies outside CNS."
+                },
+                {
+                  "premise": "Tract.",
+                  "target": "A bundle of nerve fibers within CNS."
+                },
+                {
+                  "premise": "Nucleus.",
+                  "target": "A collection of cell bodies within CNS."
+                },
+                {
+                  "premise": "Lemniscus.",
+                  "target": "A collection of ascending fibers within brain stem."
+                },
+                {
+                  "premise": "Nerve.",
+                  "target": "A Bundle of nerve fibers outside CNS."
+                }
+              ]
+            },
+            {
+              "id": "mcns2-ch1-anatomy-q2",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Choose the INCORRECT matching",
+              "explanation": "Mesencephalon = midbrain. Its cavity is cerebral aqueduct.",
+              "keyConcept": "Mesencephalon = midbrain",
+              "options": [
+                "Diencephalon - 3rd ventricle.",
+                "Midbrain - cerebral aqueduct of Sylvius.",
+                "Cerebral hemisphere - lateral ventricle.",
+                "Hind brain - 4th ventricle.",
+                "Mesencephalon - 2nd ventricle."
+              ],
+              "correctIndex": 4
+            },
+            {
+              "id": "mcns2-ch1-anatomy-q3",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Choose the CORRECT statement",
+              "explanation": "Cerebral hemispheres contain deep nuclei formed of grey matter. (a) is wrong because in spinal cord, grey matter is H-shaped. (b) is wrong because in brain stem, grey matter form deep nuclei. (d) is wrong because in cerebellum, grey matter forms outer cortex. (e) is wrong because in spinal cord, white matter surrounds grey matter.",
+              "keyConcept": "Cerebral hemispheres contain deep nuclei formed of grey matter",
+              "options": [
+                "In spinal cord, white matter is H-shaped.",
+                "In brain stem, white matter surrounds grey matter.",
+                "Cerebral hemispheres contain deep nuclei formed of grey matter.",
+                "In cerebellum, white matter forms the outer cortex.",
+                "In spinal cord, grey matter surrounds white matter."
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "mcns2-ch1-anatomy-q4",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The nucleus is",
+              "explanation": "The nucleus is a group of cell bodies within CNS. The correct answer is: A group of cell bodies within central nervous system.",
+              "keyConcept": "The nucleus is a group of cell bodies within CNS",
+              "options": [
+                "A group of cell bodies within peripheral nervous system.",
+                "A group of cell bodies within central nervous system.",
+                "A group of nerve fibers within peripheral nervous system.",
+                "A group of nerve fibers within central nervous system.",
+                "A collection of nerve fibers in brain stem."
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "mcns2-ch1-anatomy-q5",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Choose the CORRECT matching",
+              "explanation": "The tract = a bundle of nerve fibers within CNS. (a) is wrong because Ganglion = group of cell bodies within PNS. (b) is wrong because Pathway = a chain of successive tracts having same functions. (c) is wrong because Lemniscus = a collection of ascending fibers within the brain stem. (d) is wrong because Afferent = an input going towards a certain structure.",
+              "keyConcept": "The tract = a bundle of nerve fibers within CNS",
+              "options": [
+                "Ganglion - a group of cell bodies within CNS.",
+                "Pathway - a chain of successive tracts having different functions.",
+                "Lemniscus - a collection of descending fibers within the brain stem.",
+                "Afferent - an output going away from a certain structure.",
+                "Tract - a bundle of nerve fibers within CNS."
+              ],
+              "correctIndex": 4
+            },
+            {
+              "id": "mcns2-ch1-anatomy-q6",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "A chain of successive tracts in CNS having the same function is called",
+              "explanation": "Pathway = a chain of successive tracts in CNS having same functions. The correct answer is: Pathway.",
+              "keyConcept": "Pathway = a chain of successive tracts in CNS having same functions",
+              "options": [
+                "Fasciculus",
+                "Pathway",
+                "Lemniscus",
+                "Commissure",
+                "Decussation"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "mcns2-ch1-anatomy-q7",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "A bundle of nerve fibers in the CNS having the same beginning, termination and function is called",
+              "explanation": "Tract = A bundle of nerve fibers in the CNS having the same beginning, termination and function. The correct answer is: Tract.",
+              "keyConcept": "Tract = A bundle of nerve fibers in the CNS having the same beginning, termination and function",
+              "options": [
+                "Pathway",
+                "Tract",
+                "Lemniscus",
+                "Commissure",
+                "Decussation"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "mcns2-ch1-anatomy-q8",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following cells is not a neuroglia?",
+              "explanation": "Purkinje cells are large neurons of the cerebellar cortex, not glial cells. Astrocytes, ependymal cells, oligodendrocytes and microglia are all neuroglia of the CNS.",
+              "keyConcept": "Purkinje cells are neurons, not neuroglia.",
+              "options": [
+                "Purkinje",
+                "Astrocytes",
+                "Ependymal",
+                "Oligodendrocytes",
+                "Microglia"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch1-anatomy-q9",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Locate the site of Somatosensory Area 1 (S1) and describe its body representation. (3 Marks)",
+              "explanation": "The primary somatosensory cortex (S1) occupies the postcentral gyrus and processes contralateral discriminative touch, proprioception and conscious sensation. Its body map is an inverted homunculus, with the leg on the medial surface and the face most laterally. Areas with high receptor density, such as the hand and face, occupy disproportionately large cortical territory.",
+              "keyConcept": "S1 lies in the postcentral gyrus with an inverted contralateral sensory homunculus.",
+              "modelAnswer": "Site: the postcentral gyrus and the posterior part of the paracentral lobule. Body representation: an inverted sensory homunculus - the lower limb is represented medially (in the paracentral lobule), the trunk and upper limb in the middle, and the face laterally."
+            },
+            {
+              "id": "mcns2-ch1-anatomy-q10",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Describe the functions and the effect of a lesion of Somatosensory Area 2 (S2). (2 Marks)",
+              "explanation": "The secondary somatosensory area (S2) lies in the parietal operculum and receives bilateral sensory input, unlike the strictly contralateral S1. It contributes to crude touch, pain and temperature perception and to integrative functions like recognising objects by touch. Because its representation is bilateral, lesions cause difficulty recognising or localising stimuli on both sides of the body.",
+              "keyConcept": "S2 processes bilateral pain, temperature and crude touch with higher-order tactile recognition.",
+              "modelAnswer": "Functions: S2 is involved in the perception of pain, temperature and crude touch, and contributes to higher-order sensory processing such as tactile recognition and sensory memory. Lesion effect: impairment in recognising or localising stimuli, affecting both sides of the body (bilateral effects)."
+            },
+            {
+              "id": "mcns2-ch1-anatomy-q11",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "In infants, the spinal cord typically ends at which level?",
+              "explanation": "In newborns the spinal cord extends down to the L3 vertebral level because the vertebral column elongates faster than the cord during growth. By adulthood the conus medullaris ascends to the L1–L2 level.",
+              "keyConcept": "In infants the spinal cord ends at the L3 vertebral level.",
+              "options": [
+                "T12",
+                "L1",
+                "L2",
+                "L3",
+                "L4"
+              ],
+              "correctIndex": 3
+            },
+            {
+              "id": "mcns2-ch1-anatomy-q12",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The subarachnoid space of the spinal cord ends at which vertebral level?",
+              "explanation": "The dural sac and the spinal subarachnoid space extend down to the level of the second sacral vertebra (S2). This lies well below the conus medullaris, so a lumbar puncture below L2 safely enters CSF around the cauda equina.",
+              "keyConcept": "The spinal subarachnoid space terminates at the S2 vertebral level.",
+              "options": [
+                "L1",
+                "L2",
+                "L3",
+                "L4",
+                "S2"
+              ],
+              "correctIndex": 4
+            },
+            {
+              "id": "mcns2-ch1-anatomy-q13",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which spinal level gives rise to the sympathetic white rami communicantes?",
+              "explanation": "White rami communicantes carry preganglionic sympathetic fibers and exist only at the thoracolumbar levels T1–L2. Of the options listed, only T5 falls within this sympathetic outflow.",
+              "keyConcept": "White rami communicantes occur only at thoracolumbar levels T1–L2.",
+              "options": [
+                "T5",
+                "C8",
+                "L3",
+                "L4",
+                "S1"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch1-anatomy-q14",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "S2 spinal segment lies opposite to level of …… vertebra",
+              "explanation": "Because the spinal cord is shorter than the vertebral column, the sacral cord segments lie opposite the first lumbar (L1) vertebra. This vertebra–segment mismatch increases progressively toward the conus.",
+              "keyConcept": "Sacral cord segments lie opposite the L1 vertebra.",
+              "options": [
+                "S2",
+                "L4",
+                "L3",
+                "L2",
+                "L1"
+              ],
+              "correctIndex": 4
+            },
+            {
+              "id": "mcns2-ch1-anatomy-q15",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Both rami of …… spinal nerve are purely motor",
+              "explanation": "The first cervical (C1, suboccipital) nerve usually has no dorsal sensory root. Therefore both its anterior and posterior rami are purely motor.",
+              "keyConcept": "Both rami of the C1 spinal nerve are purely motor.",
+              "options": [
+                "C1",
+                "T1",
+                "T12",
+                "L1",
+                "All rami are mixed"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch1-anatomy-q16",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Preganglionic sympathetic fibers lies at ……",
+              "explanation": "Preganglionic sympathetic neurons occupy the lateral horn of the cord from T1 to L2. L2 is the lowest level among the choices that still contains this outflow.",
+              "keyConcept": "Preganglionic sympathetic neurons span the T1–L2 lateral horn.",
+              "options": [
+                "C1",
+                "C8",
+                "L2",
+                "L3",
+                "S1"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "mcns2-ch1-anatomy-q17",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "A patient sustains a fracture of the T4 vertebra. Which spinal cord segment is most likely affected?",
+              "explanation": "In the upper thoracic region the cord segment lies about two levels below the same-numbered vertebra. A fracture of the T4 vertebra therefore injures the T6 cord segment.",
+              "keyConcept": "Upper-thoracic vertebrae overlie cord segments roughly two levels lower.",
+              "options": [
+                "T2 segment",
+                "T3 segment",
+                "T4 segment",
+                "T5 segment",
+                "T6 segment"
+              ],
+              "correctIndex": 4
+            },
+            {
+              "id": "mcns2-ch1-anatomy-q18",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following pairs is matched correctly in the motor hierarchy?",
+              "explanation": "Parietal association areas 5 and 7 integrate somatosensory input to provide awareness of body position in space. The other pairings are wrong because area 4 governs voluntary movement, area 6 motor planning, and area 17 vision.",
+              "keyConcept": "Parietal areas 5 and 7 mediate awareness of body position in space.",
+              "options": [
+                "Area 4 –muscle tone regulation",
+                "Area 6 –fine voluntary movements",
+                "Areas 3,1,2 –motor planning",
+                "Areas 5 and 7 –awareness of body position in space",
+                "Area 17 –voluntary motor control"
+              ],
+              "correctIndex": 3
+            },
+            {
+              "id": "mcns2-ch1-anatomy-q19",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Damage to which brain area typically causes sensory aphasia",
+              "explanation": "Wernicke's area, in the posterior superior temporal gyrus, is responsible for comprehension of language. Damage to it produces receptive (sensory) aphasia with fluent but meaningless speech.",
+              "keyConcept": "Wernicke's area damage causes receptive (sensory) aphasia.",
+              "options": [
+                "Broca area",
+                "Wernicke area",
+                "Angular gyrus",
+                "Supramarginal gyrus",
+                "Primary auditory cortex"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "mcns2-ch1-anatomy-q20",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following is true regarding the representation in the somatosensory area one S1?",
+              "explanation": "The primary somatosensory cortex receives crossed input, so each S1 represents the opposite half of the face and body. This contralateral organization is the correct statement among the options.",
+              "keyConcept": "Primary somatosensory cortex represents the contralateral face and body.",
+              "options": [
+                "Receive ipsilateral solitario-thalamo-cortical fibers from thalamus",
+                "Disproportionate to body Receptors",
+                "Face sensation is represented posteriorly, and body sensation is represented anteriorly",
+                "Face sensation is represented anteriorly, and body sensation is represented posteriorly",
+                "Face and body sensation is represented contralaterally"
+              ],
+              "correctIndex": 4
+            },
+            {
+              "id": "mcns2-ch1-anatomy-q21",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which cortical area(s) is/are located in the postcentral gyrus?",
+              "explanation": "The primary somatosensory cortex comprising Brodmann areas 3, 1 and 2 occupies the postcentral gyrus. Areas 5/7 and 39/40 lie further back in the parietal lobe.",
+              "keyConcept": "Brodmann areas 3, 1 and 2 form the postcentral gyrus.",
+              "options": [
+                "Wernicke’s area",
+                "Area 43",
+                "Supra marginal gyrus (area 40) and angular gyrus (Area 39)",
+                "Area 5 and 7",
+                "Area 1 and 2"
+              ],
+              "correctIndex": 4
+            },
+            {
+              "id": "mcns2-ch1-anatomy-q22",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Primary sensory cortex is present in which of the following areas?",
+              "explanation": "The postcentral gyrus continues onto the medial surface as the posterior part of the paracentral lobule. This region represents primary sensation from the contralateral lower limb.",
+              "keyConcept": "The posterior paracentral lobule contains lower-limb primary sensory cortex.",
+              "options": [
+                "Precentral gyrus",
+                "Anterior part of paracentral lobule",
+                "Posterior part of paracentral lobule",
+                "Superior lip of posterior ramus of lateral sulcus",
+                "Superior parietal lobule"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "mcns2-ch1-anatomy-q23",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Contralateral representation of face and body is founded in ……",
+              "explanation": "The primary somatosensory area (S1) contains the sensory homunculus for the contralateral face and body. It is the cortical site of contralateral sensory representation.",
+              "keyConcept": "S1 holds the contralateral sensory homunculus of face and body.",
+              "options": [
+                "Primary somatosensory area",
+                "Secondary somatosensory area",
+                "Gustatory area",
+                "Somatosensory association area",
+                "Wernicke’s area"
+              ],
+              "correctIndex": 0
+            }
+          ]
+        },
+        {
+          "id": "physiology",
+          "name": "Physiology",
+          "iconName": "Activity",
+          "lectures": "",
+          "lectureCount": 4,
+          "lectureNames": [
+            "Processing of Signals in CNS",
+            "Lecture 2",
+            "Lecture 3",
+            "Lecture 4"
+          ],
+          "questions": [
+            {
+              "id": "mcns2-ch1-physiology-q1",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following is a character of chemical synapse?",
+              "explanation": "True: chemical synapse is characterized by being unidirectional, can be excitatory or inhibitory according to neurotransmitter, slower than electric one, sensitive for drugs and its postsynaptic receptor can be an ion channel or related to cell membrane ion channel. A, B, C & E False wrong answers as explained before.",
+              "keyConcept": "True: chemical synapse is characterized by being unidirectional, can be excitatory or inhibitory according to neurotransmitter, slower than",
+              "options": [
+                "Bidirectional.",
+                "It is always excitatory.",
+                "Faster than electrical synapse.",
+                "Sensitive to drugs.",
+                "Depend on movements of ions."
+              ],
+              "correctIndex": 3
+            },
+            {
+              "id": "mcns2-ch1-physiology-q2",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Concerning chemical synapses, all the followings are true, Except",
+              "explanation": "False: the delay transmission for chemical synapse is around 0.5 msec. A, B, C & E True: all are true information.",
+              "keyConcept": "False: the delay transmission for chemical synapse is around 0,5 msec",
+              "options": [
+                "It constitutes the majority in human being.",
+                "It may be excitatory or inhibitory.",
+                "Conduction of action potential is unidirectional.",
+                "The delay of transmission is 3-5 msec.",
+                "They are sensitive to drugs."
+              ],
+              "correctIndex": 3
+            },
+            {
+              "id": "mcns2-ch1-physiology-q3",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "For cells that communicate by electrical synapses, the message travels between cells via",
+              "explanation": "True: electrical synapse is mediated by gap junctions that transmit action potential from one neuron to another. A, B, D & E False: wrong answers.",
+              "keyConcept": "True: electrical synapse is mediated by gap junctions that transmit action potential from one neuron to another",
+              "options": [
+                "Ions moving across the synaptic cleft.",
+                "The diffusion of neurotransmitters.",
+                "Gap junctions.",
+                "Active transport across the synaptic cleft.",
+                "Passive transport across the synaptic cleft."
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "mcns2-ch1-physiology-q4",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Excitatory postsynaptic potential can be mediated by which of the following mechanisms?",
+              "explanation": "True: Excitatory post synaptic potential can be mediated by opening of Na+ channel, closure of K+ channel decreasing the K+ conductance, closure of Cl- channel and excitatory intracellular pathways. Any of these mechanisms will decrease the resting membrane potential generating excitatory postsynaptic potential. A, B, D & E False.",
+              "keyConcept": "True: Excitatory post synaptic potential can be mediated by opening of Na+ channel, closure of K+ channel decreasing",
+              "options": [
+                "Opening of Cl- channels.",
+                "Opening of K+ channels.",
+                "Opening of Na+ channels.",
+                "Increase K+ conductance.",
+                "Inhibitory intracellular pathway."
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "mcns2-ch1-physiology-q5",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Opening of ligand-gated Cl- channels causes",
+              "explanation": "True: opening of ligand gated Cl- channel will lead Cl- influx that hyperpolarize the membrane leading to its inhibition. B & C False: It leads to hyperpolarization with no generation of action potential. D False: not related. E False: It leads to hyperpolarization.",
+              "keyConcept": "True: opening of ligand gated Cl- channel will lead Cl- influx that hyperpolarize the membrane leading to its",
+              "options": [
+                "inhibition of the postsynaptic neuron",
+                "depolarization of the postsynaptic neuron",
+                "initiation of an action potential",
+                "block of ligand-gated cation channels",
+                "No change in resting membrane potential"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch1-physiology-q6",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The binding of a neurotransmitter to its receptor at an inhibitory synapse can lead to the ______ of ______ channels.",
+              "explanation": "True: inhibition of a synapse can be achieved by opening of K+ channel, closure of Na or Ca++ channel & opening of Cl- channel. B, C, D & E False.",
+              "keyConcept": "True: inhibition of a synapse can be achieved by opening of K+ channel, closure of Na or Ca++",
+              "options": [
+                "Opening: potassium",
+                "Closure: potassium",
+                "Opening: sodium",
+                "Closing: chloride",
+                "Opening: calcium"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch1-physiology-q7",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following factors depress synaptic transmission?",
+              "explanation": "True: synaptic transmission is depressed (inhibited) by hypoxia, acidosis and pressure. A, C, D & E False: all have excitatory effects on synapses.",
+              "keyConcept": "True: synaptic transmission is depressed (inhibited) by hypoxia, acidosis and pressure",
+              "options": [
+                "Alkalosis",
+                "Hypoxia",
+                "Caffeine",
+                "Strychnine",
+                "Theophylline"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "mcns2-ch1-physiology-q8",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Synaptic delay is",
+              "explanation": "True: Synaptic delay is the minimal time for neurotransmitter to traverse the synaptic cleft, attach to its receptor and produce an action potential. The least time for monosynaptic connection is 0.5 millisecond. A & E False. C & D False not related to either type of neurotransmitter or number of its receptors.",
+              "keyConcept": "True: Synaptic delay is the minimal time for neurotransmitter to traverse the synaptic cleft, attach to its receptor",
+              "options": [
+                "The time needed for release of neurotransmitter from synaptic vesicles.",
+                "The minimal delay time in the central nervous system is about 0.5 millisecond.",
+                "Determined by the type of the neurotransmitter.",
+                "Determined by the number of postsynaptic receptors.",
+                "The time needed for breakdown of neurotransmitter."
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "mcns2-ch1-physiology-q9",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Synaptic fatigue is due to",
+              "explanation": "true because prolonged stimulation leads to exhaustion of neurotransmitters which results from imbalance of synthesis and release of NT and cessation of stimulation. A, B, C, D false: they not related to prolonged stimulation of synapse.",
+              "keyConcept": "true because prolonged stimulation leads to exhaustion of neurotransmitters which results from imbalance of synthesis and release of",
+              "options": [
+                "decreased synthesis of neurotransmitters.",
+                "inability to release neurotransmitters by exocytosis.",
+                "failure of action potentials to open voltage-gated Ca++ channels.",
+                "presynaptic terminal inhibition.",
+                "imbalance between rates of synthesis and release of neurotransmitters."
+              ],
+              "correctIndex": 4
+            },
+            {
+              "id": "mcns2-ch1-physiology-q10",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "A prolonged output discharge could be obtained from which of the following processing way?",
+              "explanation": "True: Reverberating circuit produce multiple prolonged output discharge that is larger than input stimulus and continue after input stimulus is removed till synaptic fatigue happen. B, C, D & E False: all lead to shortening of output discharge.",
+              "keyConcept": "True: Reverberating circuit produce multiple prolonged output discharge that is larger than input stimulus and continue after input",
+              "options": [
+                "Reverberating circuit",
+                "Presynaptic inhibition",
+                "Postsynaptic inhibition",
+                "Lateral inhibition",
+                "Feed forward inhibition."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch1-physiology-q11",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The after discharge in a neuronal pool is based mainly upon the",
+              "explanation": "True: Prolonged after discharge is based either on synaptic after discharge or reverberating circuits (mainly). A False: multiple inputs discharging in less number of output neurons. B False: single input leads to multiple output in different or single pathway in presence of input stimulus. D False: occlusion leads to less output than expected. E False: A common zone between 2 adjacent neurons.",
+              "keyConcept": "True: Prolonged after discharge is based either on synaptic after discharge or reverberating circuits (mainly)",
+              "options": [
+                "Converging",
+                "Divergence",
+                "Reverberatory",
+                "Occlusion",
+                "Subliminal fringe"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "mcns2-ch1-physiology-q12",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following refers to one presynaptic neuron terminating on many postsynaptic neurons?",
+              "explanation": "True: Divergence means an input presynaptic neuron that ends on multiple post synaptic neurons. B False: convergence means multiple input neurons terminate on single output neuron. C False: facilitation happen in subliminal fringe zone of 2 nearby input neurons that can be stimulated by submaximal stimulus, so more output neurons than if each one is stimulated separately. D False: Occlusion happen in subliminal fringe zone of 2 very near input neurons are stimulated by maximal stimulus, so fewer output neurons than if each one is stimulated separately. E False: it is prolongation of output signals even after input stimulus is finished.",
+              "keyConcept": "True: Divergence means an input presynaptic neuron that ends on multiple post synaptic neurons",
+              "options": [
+                "Divergence",
+                "Convergence",
+                "Facilitation",
+                "Occlusion",
+                "After discharge"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch1-physiology-q13",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Receptor potential is characterized by which of the following?",
+              "explanation": "True: Receptor potential is a local potential that is characterized by increased amplitude by increasing stimulus intensity, can be graded so doesn’t obey all or none law, summated, no refractory period, can be propagated to action potential and can die out and can’t be blocked by anesthesia. A, B, C & D False: all are characters of action potential.",
+              "keyConcept": "True: Receptor potential is a local potential that is characterized by increased amplitude by increasing stimulus intensity, can",
+              "options": [
+                "Obey all or none law.",
+                "Has refractory period.",
+                "Always propagates to action potential.",
+                "Can be blocked by anesthetics.",
+                "Its intensity is increased by increase intensity of stimulation."
+              ],
+              "correctIndex": 4
+            },
+            {
+              "id": "mcns2-ch1-physiology-q14",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Regarding neurotransmitters",
+              "explanation": "True: Dopamine is the main neurotransmitter in the limbic system, and its functions are closely related to mood. A & D False: Acetyl choline is mainly an excitatory transmitter, and Glutamate is one of the main excitatory transmitters in CNS. C False: Catecholamines are rapidly acting neurotransmitters. E False: GABA & Glycine are the main inhibitory neurotransmitters.",
+              "keyConcept": "True: Dopamine is the main neurotransmitter in the limbic system, and its functions are closely related to mood",
+              "options": [
+                "Ach is an inhibitory transmitter.",
+                "Dopamine function is related to mood.",
+                "Catecholamines are slow potent transmitters.",
+                "Glutamate is an inhibitory transmitter.",
+                "GABA is an excitatory transmitter."
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "mcns2-ch1-physiology-q15",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "GABA is an inhibitory neurotransmitter that increases the permeability of Postsynaptic neuron to",
+              "explanation": "True: GABA produces hyperpolarization and inhibition of neurons by increasing their permeability to Cl influx. B & C False: increasing the permeability to the cations Na+ or Ca++ lead to depolarization and excitation of neurons. D False: HCO3- is not one of the ions involved in changing the membrane potential of neurons. E False: GABA doesn’t open K+ channel.",
+              "keyConcept": "True: GABA produces hyperpolarization and inhibition of neurons by increasing their permeability to Cl influx",
+              "options": [
+                "Cl-.",
+                "Na+.",
+                "Ca++.",
+                "HCO3.",
+                "K+"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch1-physiology-q16",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "An athlete was carrying a heavy weight during a competition for a time and then he suddenly left it. This could be explained by activation of",
+              "explanation": "C. True: Inverse stretch reflex (Ib) is stimulated due to increased tension caused by strong contraction, to cause sudden relaxation of the muscle protecting it from tear of tendon. A., B, D. & E False: IIb, I a are the receptors of muscle spindle and sensitive to stretch of muscle, gamma efferent supply the peripheral part of intrafusal muscle fibers and affect the sensitivity of muscle spindle, α motor neurons supply the extrafusal muscle fibers to cause muscle contraction.",
+              "keyConcept": "C",
+              "options": [
+                "IIb fibers",
+                "Ia fibers",
+                "Ib fibers",
+                "Gamma efferent fibers",
+                "a motor neurons"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "mcns2-ch1-physiology-q17",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The medial motor system includes all the following tracts Except",
+              "explanation": "B True: medial motor system includes vestibulospinal, reticulospinal, tectospinal while lateral motor system includes lateral corticospinal tract and rubrospinal tract. A, C, D & E False.",
+              "keyConcept": "B True: medial motor system includes vestibulospinal, reticulospinal, tectospinal while lateral motor system includes lateral corticospinal tract and",
+              "options": [
+                "Vestibulospinal tract.",
+                "Rubrospinal tract.",
+                "Reticulospinal tract.",
+                "Tectospinal tract.",
+                "Ventral corticospinal tract."
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "mcns2-ch1-physiology-q18",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following nuclei affected in hemiballismus?",
+              "explanation": "B True: Subthalamic nucleus lesion leads to hemiballismus. A False: Caudate nucleus lesion leads to chorea. C. False; Substantia nigra lesion leads to parkinsonism. D. False: lentiform lesion leads to athetosis. E. False: false statement.",
+              "keyConcept": "B True: Subthalamic nucleus lesion leads to hemiballismus",
+              "options": [
+                "Caudate nucleus",
+                "Subthalamic nucleus",
+                "Substantia nigra",
+                "Lentiform",
+                "None of the above"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "mcns2-ch1-physiology-q19",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Damage to Broca’s area causes which one of the following?",
+              "explanation": "C True: This is motor aphasia. A. False: Visual agnosia occurs in case of visual association areas lesion in representational hemisphere. B. False: Paralysis of muscles of pharynx and larynx leads to dysarthria. D. False: Non understandable excessive words occur in sensory aphasia. E False: Inattention and neglect occurs in parieto-occipito-temporal association area lesion.",
+              "keyConcept": "C True: This is motor aphasia",
+              "options": [
+                "Visual agnosia.",
+                "Paralysis of muscles of pharynx and larynx.",
+                "Limitation of vocabulary to very few words.",
+                "Non understandable excessive words.",
+                "Inattention and neglect."
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "mcns2-ch1-physiology-q20",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "GABA is an inhibitory neurotransmitter that increases the permeability of the postsynaptic neuron to:",
+              "explanation": "GABA opens chloride channels, increasing Cl- influx and hyperpolarizing the postsynaptic membrane. This produces inhibitory postsynaptic potentials.",
+              "keyConcept": "GABA increases postsynaptic membrane permeability to chloride.",
+              "options": [
+                "K+",
+                "HCO3-",
+                "Na+",
+                "Ca++",
+                "Cl-"
+              ],
+              "correctIndex": 4
+            },
+            {
+              "id": "mcns2-ch1-physiology-q21",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Regarding neurotransmitters:",
+              "explanation": "Dopamine is a monoamine transmitter strongly linked to mood, reward and motor control. GABA is inhibitory while glutamate is the main excitatory transmitter.",
+              "keyConcept": "Dopamine function is related to mood.",
+              "options": [
+                "GABA is an excitatory transmitter",
+                "Catecholamines are slow potent transmitters",
+                "Dopamine function is related to mood",
+                "Glutamate is an inhibitory transmitter",
+                "Ach is an inhibitory transmitter"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "mcns2-ch1-physiology-q22",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Postsynaptic inhibition in the central nervous system is primarily mediated by which neurotransmitter?",
+              "explanation": "Glycine is the principal inhibitory neurotransmitter mediating postsynaptic inhibition in the spinal cord. It opens chloride channels to hyperpolarize the postsynaptic neuron.",
+              "keyConcept": "Glycine mediates postsynaptic inhibition in the central nervous system.",
+              "options": [
+                "Glutamate",
+                "Acetylcholine",
+                "Glycine",
+                "Dopamine",
+                "GABA"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "mcns2-ch1-physiology-q23",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which response occurs in a stretch reflex?",
+              "explanation": "In the stretch reflex, stretching a muscle excites its spindle afferents and reflexively contracts the same (agonist) muscle. Reciprocal inhibition simultaneously relaxes the antagonist.",
+              "keyConcept": "The stretch reflex contracts the stretched agonist muscle.",
+              "options": [
+                "Reciprocal inhibition failure",
+                "Relaxation of the stretched muscle",
+                "Negative feedback inhibition",
+                "Contraction of antagonist muscles",
+                "Contraction of agonist muscle"
+              ],
+              "correctIndex": 4
+            },
+            {
+              "id": "mcns2-ch1-physiology-q24",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following statements best describes sensory adaptation?",
+              "explanation": "Sensory adaptation is the progressive decline in receptor response despite a maintained stimulus. It allows the nervous system to ignore constant, unchanging stimuli.",
+              "keyConcept": "Sensory adaptation is diminished response to a continuous stimulus.",
+              "options": [
+                "Diminished sensation despite continuous application of the stimulus",
+                "Increased sensation with repeated stimulation",
+                "Complete absence of sensation after brief stimulus",
+                "Activation of additional receptors over time",
+                "Conversion of one type of sensation into another"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch1-physiology-q25",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Concerning synapses:",
+              "explanation": "The correct answer is (d) Chemical synapses are affected by many drugs & chemicals. Among the listed options this is the choice that best matches the stem, and the other options are incorrect distractors.",
+              "keyConcept": "Synapses",
+              "options": [
+                "Chemical synapses are not widely distributed in CNS.",
+                "Electric synapses are characterized by delayed transmission.",
+                "Electric synapse is a unidirectional synapse.",
+                "Chemical synapses are affected by many drugs & chemicals.",
+                "In chemical synapses, gap junction conduct impulses between presynaptic & postsynaptic structure."
+              ],
+              "correctIndex": 3
+            },
+            {
+              "id": "mcns2-ch1-physiology-q26",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Regarding neurotransmitters:",
+              "explanation": "The correct answer is (b) Dopamine function is related to mood. Among the listed options this is the choice that best matches the stem, and the other options are incorrect distractors.",
+              "keyConcept": "Neurotransmitters",
+              "options": [
+                "ACh is an inhibitory transmitter.",
+                "Dopamine function is related to mood.",
+                "Catecholamines are slow potent transmitters.",
+                "Glutamate is an inhibitory transmitter.",
+                "GABA is an excitatory transmitter."
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "mcns2-ch1-physiology-q27",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The mechanism of synaptic transmission includes:",
+              "explanation": "The correct answer is (e) The released transmitter combines with specific receptors on postsynaptic membrane. Among the listed options this is the choice that best matches the stem, and the other options are incorrect distractors.",
+              "keyConcept": "The mechanism of synaptic transmission includes",
+              "options": [
+                "Ca++ ions are released from the presynaptic knob.",
+                "Presynaptic knobs release only an excitatory transmitter.",
+                "Chemical transmission causes development of only excitatory postsynaptic state.",
+                "Excitatory transmitters hyperpolarize the postsynaptic membrane.",
+                "The released transmitter combines with specific receptors on postsynaptic membrane."
+              ],
+              "correctIndex": 4
+            },
+            {
+              "id": "mcns2-ch1-physiology-q28",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Regarding neurotransmitters:",
+              "explanation": "The correct answer is (c) The action of a neurotransmitter whether excitatory or inhibitory depends on its receptors. Among the listed options this is the choice that best matches the stem, and the other options are incorrect distractors.",
+              "keyConcept": "Neurotransmitters",
+              "options": [
+                "Neuropeptides are rapidly acting transmitters.",
+                "Rapidly acting transmitters are slowly inactivated.",
+                "The action of a neurotransmitter whether excitatory or inhibitory depends on its receptors.",
+                "Dopamine is an important excitatory transmitter.",
+                "Substance P function to decrease pain transmission."
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "mcns2-ch1-physiology-q29",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Regarding neurotransmitters:",
+              "explanation": "The correct answer is (c) The same neurotransmitter may excite a target organ and inhibit another one. Among the listed options this is the choice that best matches the stem, and the other options are incorrect distractors.",
+              "keyConcept": "Neurotransmitters",
+              "options": [
+                "Neurohormones are secreted at synapses to affect neurons activity.",
+                "Neuromodulator is secreted by neuron into blood.",
+                "The same neurotransmitter may excite a target organ and inhibit another one.",
+                "A neurotransmitter has a specific one type of receptor.",
+                "Neuropeptides mediate acute responses of the nervous system."
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "mcns2-ch1-physiology-q30",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Regarding Acetylcholine:",
+              "explanation": "The correct answer is (a) Is involved in arousal and motor activities. Among the listed options this is the choice that best matches the stem, and the other options are incorrect distractors.",
+              "keyConcept": "Acetylcholine",
+              "options": [
+                "Is involved in arousal and motor activities.",
+                "Its receptor sensitivity is increased in myasthenia gravis.",
+                "Is always excitatory to its target cells.",
+                "Is involved in regulation of feeding.",
+                "Its action is potentiated by benzodiazepines."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch1-physiology-q31",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Regarding neurotransmitters:",
+              "explanation": "The correct answer is (e) Benzodiazepines potentiate the actions of GABA. 1 Body fluids & Homeostasis Biophysics Sensory. Among the listed options this is the choice that best matches the stem, and the other options are incorrect distractors.",
+              "keyConcept": "Neurotransmitters",
+              "options": [
+                "Glycine causes depolarization of postsynaptic membrane.",
+                "GABA is antagonized by strychnine.",
+                "GABA causes increase Na+ influx to postsynaptic neuron.",
+                "Glycine is a facilitatory transmitter.",
+                "Benzodiazepines potentiate the actions of GABA. 1 Body fluids & Homeostasis Biophysics Sensory"
+              ],
+              "correctIndex": 4
+            }
+          ]
+        },
+        {
+          "id": "biochem",
+          "name": "Biochemistry",
+          "iconName": "FlaskConical",
+          "lectures": "",
+          "lectureCount": 7,
+          "lectureNames": [
+            "Ammonia and Urea Cycle",
+            "Energy Sources of CNS",
+            "Hyperammonaemia",
+            "Inborn Errors of Amino Acid Metabolism",
+            "Neurotransmitters",
+            "One-carbon Unit and Folate Metabolism",
+            "Vitamin Deficiency and Metabolic Disorders"
+          ],
+          "questions": [
+            {
+              "id": "mcns2-ch1-biochem-q1",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Histamine is formed from histidine by which of the following?",
+              "explanation": "Histamine is produced from histidine by the enzyme histidine decarboxylase, which removes the carboxyl group. This decarboxylation reaction requires pyridoxal phosphate as a coenzyme.",
+              "keyConcept": "Histamine is formed from histidine by decarboxylation.",
+              "options": [
+                "Hydroxylation",
+                "Transamination",
+                "Decarboxylation",
+                "Dehydrogenation",
+                "Deamination"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "mcns2-ch1-biochem-q2",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Neurons uptake glucose from the circulation through which of the following?",
+              "explanation": "Neurons take up glucose mainly through the high-affinity transporter GLUT3, allowing efficient uptake even at low glucose levels. GLUT1 instead serves the blood-brain barrier and glia.",
+              "keyConcept": "Neurons take up glucose via GLUT3.",
+              "options": [
+                "GLUT 5",
+                "GLUT 2",
+                "GLUT 1",
+                "GLUT 4",
+                "GLUT 3"
+              ],
+              "correctIndex": 4
+            },
+            {
+              "id": "mcns2-ch1-biochem-q3",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "What is the inborn error of branched chain amino acids metabolism?",
+              "explanation": "Maple syrup urine disease results from a defect in branched-chain alpha-keto acid dehydrogenase, impairing catabolism of leucine, isoleucine and valine. Accumulated keto acids give the urine a characteristic sweet odor.",
+              "keyConcept": "Maple syrup urine disease is the inborn error of branched-chain amino acid metabolism.",
+              "options": [
+                "Phenylketonuria",
+                "Albinism",
+                "Alkaptonuria",
+                "Maple syrup urine disease",
+                "Homocystinuria"
+              ],
+              "correctIndex": 3
+            },
+            {
+              "id": "mcns2-ch1-biochem-q4",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following is/are allosteric activator(s) of glutamate dehydrogenase?",
+              "explanation": "Glutamate dehydrogenase is allosterically activated by ADP and GDP, signalling a low-energy state that favors amino acid oxidation. GTP and ATP act as inhibitors of the enzyme.",
+              "keyConcept": "ADP and GDP allosterically activate glutamate dehydrogenase.",
+              "options": [
+                "ATP",
+                "ADP and GDP",
+                "GTP",
+                "NADH+H",
+                "AMP and GMP"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "mcns2-ch1-biochem-q5",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following releases free ammonia?",
+              "explanation": "Catabolism of amino acids releases free ammonia, largely through oxidative deamination of glutamate. The biosynthetic reactions listed instead consume amide or amino nitrogen rather than liberating free ammonia.",
+              "keyConcept": "Amino acid catabolism releases free ammonia.",
+              "options": [
+                "Synthesis of pyrimidines",
+                "Synthesis of monoamines",
+                "Synthesis of aminosugars",
+                "Synthesis of purines",
+                "Catabolism of amino acids"
+              ],
+              "correctIndex": 4
+            },
+            {
+              "id": "mcns2-ch1-biochem-q6",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following results from decrease of Gamma Amino Butyric Acid (GABA) synthesis?",
+              "explanation": "GABA is the major inhibitory neurotransmitter, so reduced GABA synthesis lowers inhibition and produces convulsions. This is why vitamin B6 deficiency, which impairs GABA formation, can cause seizures.",
+              "keyConcept": "Decreased GABA synthesis causes convulsions.",
+              "options": [
+                "Convulsions",
+                "Nausea",
+                "Vomiting",
+                "Depression",
+                "Headache"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch1-biochem-q7",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which one of the following enzymes is stimulated by cortisol in epinephrine synthesis?",
+              "explanation": "Cortisol from the adrenal cortex induces phenylethanolamine N-methyl transferase (PNMT), which converts norepinephrine to epinephrine. This links adrenal medullary and cortical function.",
+              "keyConcept": "Cortisol stimulates N-methyl transferase (PNMT) in epinephrine synthesis.",
+              "options": [
+                "N-acetyl transferase",
+                "Dopa decarboxylase",
+                "N-methyl transferase",
+                "Tyrosine hydroxylase",
+                "Dopamine hydroxylase"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "mcns2-ch1-biochem-q8",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which one of the following LDH isoenzymes is expressed in neurons?",
+              "explanation": "Neurons express LDH1, the isoenzyme composed of four H subunits suited to aerobic tissues. It favors conversion of lactate back to pyruvate for oxidative metabolism.",
+              "keyConcept": "Neurons express the LDH1 isoenzyme.",
+              "options": [
+                "LDH 4",
+                "LDH 5",
+                "LDH 1",
+                "LDH 2",
+                "LDH 3"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "mcns2-ch1-biochem-q9",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Methyl THF is used in synthesis of which of the following?",
+              "explanation": "Methyl-tetrahydrofolate donates its methyl group, via vitamin B12, to convert homocysteine into methionine. This reaction also regenerates free tetrahydrofolate.",
+              "keyConcept": "Methyl-THF supplies the methyl group to form methionine from homocysteine.",
+              "options": [
+                "Methionine from homocysteine",
+                "Methylene THF",
+                "Methenyl THF",
+                "C2 & C8 of purines",
+                "Glycine"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch1-biochem-q10",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The active form of folate is the carrier of which of the following?",
+              "explanation": "Tetrahydrofolate, the active form of folate, carries and transfers one-carbon units at various oxidation levels. These units are used in nucleotide and amino acid synthesis.",
+              "keyConcept": "Active folate carries one-carbon units.",
+              "options": [
+                "One-carbon units",
+                "Thiamine",
+                "Ferrireductase",
+                "Niacin",
+                "Vitamin B12"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch1-biochem-q11",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following is caused by niacin deficiency?",
+              "explanation": "Niacin (vitamin B3) deficiency causes pellagra, classically presenting with dermatitis, diarrhea and dementia. Niacin is a precursor of the coenzymes NAD and NADP.",
+              "keyConcept": "Niacin deficiency causes pellagra.",
+              "options": [
+                "Beriberi",
+                "Megaloblastic anemia",
+                "Pernicious anemia",
+                "Folate trap",
+                "Pellagra"
+              ],
+              "correctIndex": 4
+            },
+            {
+              "id": "mcns2-ch1-biochem-q12",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following is caused by thiamin deficiency?",
+              "explanation": "Thiamin (vitamin B1) deficiency causes beriberi and Wernicke-Korsakoff syndrome. Thiamin pyrophosphate is a coenzyme for oxidative decarboxylation reactions.",
+              "keyConcept": "Thiamin deficiency causes beriberi.",
+              "options": [
+                "Beriberi",
+                "Folate trap",
+                "Megaloblastic anemia",
+                "Pernicious anemia",
+                "Pellagra"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch1-biochem-q13",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following is/are the end product(s) of urea cycle?",
+              "explanation": "The cleavage of arginine by arginase yields urea and ornithine, while the preceding cleavage of argininosuccinate releases fumarate. The recognized end products of the cycle are therefore urea and fumarate.",
+              "keyConcept": "The end products of the urea cycle are urea and fumarate.",
+              "options": [
+                "urea & ornithine",
+                "urea & arginine",
+                "urea & citrulline",
+                "urea only",
+                "urea & fumarate"
+              ],
+              "correctIndex": 4
+            },
+            {
+              "id": "mcns2-ch1-biochem-q14",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which one of the following compounds is a link between citric acid cycle and urea cycle?",
+              "explanation": "Fumarate produced in the urea cycle can enter the citric acid cycle, linking the two pathways. There it is converted to malate and then oxaloacetate.",
+              "keyConcept": "Fumarate links the urea cycle to the citric acid cycle.",
+              "options": [
+                "Citrate",
+                "Fumarate",
+                "Ornithine",
+                "Urea",
+                "Succinate"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "mcns2-ch1-biochem-q15",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which one of the following enzymes catalyzes this reaction: CO2 + NH3 + 2ATP yields carbamoyl phosphate?",
+              "explanation": "Carbamoyl phosphate synthetase I, a mitochondrial enzyme, combines ammonia, carbon dioxide and two ATP to form carbamoyl phosphate. This is the committed first step of the urea cycle.",
+              "keyConcept": "Carbamoyl phosphate synthetase I forms carbamoyl phosphate in the urea cycle.",
+              "options": [
+                "Argininosuccinate lyase",
+                "Argininosuccinate synthetase",
+                "Ornithine transcarbamoylase",
+                "Carbamoyl phosphate synthetase I",
+                "Arginase"
+              ],
+              "correctIndex": 3
+            },
+            {
+              "id": "mcns2-ch1-biochem-q16",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which one of the following is required for the conversion of phenylalanine into tyrosine?",
+              "explanation": "Phenylalanine hydroxylase converts phenylalanine to tyrosine using tetrahydrobiopterin as the essential cofactor. Deficiency of this system causes phenylketonuria.",
+              "keyConcept": "Tetrahydrobiopterin is required to convert phenylalanine to tyrosine.",
+              "options": [
+                "ATP",
+                "FAD",
+                "PLP",
+                "NAD",
+                "Tetrahydrobiopterin"
+              ],
+              "correctIndex": 4
+            },
+            {
+              "id": "mcns2-ch1-biochem-q17",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Ammonia produced during amino acid catabolism is eliminated through the urea cycle. (a) Name the enzyme catalyzing the rate-limiting step of the urea cycle. (b) Name the allosteric activator of this enzyme. (c) Enumerate the sources of the urea nitrogen atoms. (3 Marks)",
+              "explanation": "The urea cycle disposes of toxic ammonia by incorporating two nitrogen atoms into urea. CPS I catalyses the committed, rate-limiting first step in the mitochondria and is allosterically activated by N-acetylglutamate, whose level rises when amino acid catabolism increases. The two urea nitrogens are derived from free ammonia and from aspartate.",
+              "keyConcept": "The urea cycle removes ammonia using nitrogens from free ammonia and aspartate.",
+              "modelAnswer": "(a) Rate-limiting enzyme: Carbamoyl phosphate synthetase I (CPS I). (b) Allosteric activator: N-acetylglutamate. (c) Sources of urea nitrogen atoms: the first nitrogen comes from free ammonia (NH3), and the second nitrogen comes from the amino group of aspartate in the cytosol."
+            },
+            {
+              "id": "mcns2-ch1-biochem-q18",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Describe the regulation of the urea cycle. (3 Marks)",
+              "explanation": "Urea cycle activity is matched to the nitrogen load that must be excreted. In the short term, N-acetylglutamate (made from glutamate and acetyl-CoA) allosterically activates CPS I. Over days, a high dietary protein intake or prolonged fasting increases transcription of all the urea cycle enzymes, raising the cycle's overall capacity.",
+              "keyConcept": "The urea cycle is regulated short-term by N-acetylglutamate and long-term by dietary protein.",
+              "modelAnswer": "Short-term (allosteric) regulation: N-acetylglutamate is an allosteric activator of carbamoyl phosphate synthetase I, so its concentration controls flux through the cycle. Long-term (adaptive) regulation: the synthesis of the urea cycle enzymes is induced or repressed according to dietary protein intake."
+            },
+            {
+              "id": "mcns2-ch1-biochem-q19",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Describe the biochemical basis of the following: (a) Methotrexate. (b) L-dopa in Parkinsonism. (3 Marks)",
+              "explanation": "Both answers rest on enzyme and transport specificity. Methotrexate is a folate analogue that competitively inhibits dihydrofolate reductase, depleting tetrahydrofolate and starving rapidly dividing cells of nucleotides. L-dopa is used instead of dopamine because dopamine cannot cross the blood-brain barrier, whereas its precursor can and is then converted to dopamine centrally.",
+              "keyConcept": "Methotrexate inhibits dihydrofolate reductase; L-dopa crosses the blood-brain barrier to replace dopamine.",
+              "modelAnswer": "(a) Methotrexate is an anticancer drug that inhibits dihydrofolate reductase, blocking regeneration of tetrahydrofolate and therefore halting the nucleotide (purine and thymidylate) synthesis needed for cell division. (b) L-dopa crosses the blood-brain barrier (unlike dopamine), where it is decarboxylated to dopamine, restoring the dopamine/acetylcholine balance in the basal ganglia that is lost in Parkinsonism."
+            },
+            {
+              "id": "mcns2-ch1-biochem-q20",
+              "type": "essay",
+              "lecture": 1,
+              "text": "What is the importance of the astrocyte-neuron (lactate) shuttle? (1 Mark)",
+              "explanation": "The astrocyte-neuron lactate shuttle couples neuronal activity to energy supply. Astrocytes, which contact the capillaries, perform glycolysis and export lactate that neurons take up and oxidise for ATP. This provides neurons with a rapid fuel during intense synaptic activity.",
+              "keyConcept": "Astrocytes supply neurons with lactate as a rapid energy source during activity.",
+              "modelAnswer": "Astrocytes take up glucose from the blood and convert it to lactate. This lactate is then shuttled to neurons, where it is used as a primary energy source, particularly during periods of high neuronal activity."
+            },
+            {
+              "id": "mcns2-ch1-biochem-q21",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Why does Vitamin B6 deficiency cause convulsions? (1 Mark)",
+              "explanation": "GABA is the principal inhibitory neurotransmitter of the CNS and is made from glutamate by the B6-dependent enzyme glutamate decarboxylase. When pyridoxal phosphate is deficient, GABA levels drop while excitatory activity is unopposed. The resulting imbalance toward excitation lowers the seizure threshold and produces convulsions.",
+              "keyConcept": "Vitamin B6 deficiency lowers GABA synthesis, causing neuronal over-excitation and convulsions.",
+              "modelAnswer": "Vitamin B6 (pyridoxal phosphate) is a required cofactor for the synthesis of GABA, an inhibitory neurotransmitter. In its deficiency, GABA synthesis falls, removing inhibitory tone and leading to neuronal over-excitation and hyperactivity that manifests as convulsions."
+            },
+            {
+              "id": "mcns2-ch1-biochem-q22",
+              "type": "essay",
+              "lecture": 1,
+              "text": "A 53-year-old man presented with uncontrolled hypertension, severe headache, and palpitations. His urinary vanillylmandelic acid (VMA) was 630 mg/day (normal 5 mg/day). (a) What is the most probable diagnosis? (b) What is the biochemical basis of the drug chosen for treatment (alpha-methyl tyrosine)? (c) What are the neurotransmitters synthesized from tyrosine? (3 Marks)",
+              "explanation": "The markedly elevated VMA (a catecholamine metabolite) together with hypertension, headache and palpitations is the classic picture of a pheochromocytoma. Alpha-methyl tyrosine works by blocking tyrosine hydroxylase, the committed rate-limiting step that converts tyrosine to L-DOPA, so the whole catecholamine pathway is reduced. That pathway sequentially produces dopamine, then norepinephrine, then epinephrine.",
+              "keyConcept": "Pheochromocytoma overproduces catecholamines; alpha-methyl tyrosine blocks the rate-limiting tyrosine hydroxylase.",
+              "modelAnswer": "(a) Most probable diagnosis: Pheochromocytoma (a catecholamine-secreting tumour of the adrenal medulla). (b) Alpha-methyl tyrosine inhibits tyrosine hydroxylase, the rate-limiting enzyme of catecholamine synthesis, thereby reducing catecholamine production. (c) Neurotransmitters synthesised from tyrosine: dopamine, norepinephrine (noradrenaline), and epinephrine (adrenaline)."
+            },
+            {
+              "id": "mcns2-ch1-biochem-q23",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Enumerate the \"brain fuels\". (1 Mark)",
+              "explanation": "The brain has a high, continuous energy demand but very limited fuel storage. Under normal fed conditions it relies almost exclusively on glucose delivered by the blood. During prolonged fasting or starvation, ketone bodies produced by the liver become a major alternative fuel and spare glucose.",
+              "keyConcept": "The brain uses glucose normally and ketone bodies during prolonged fasting.",
+              "modelAnswer": "Glucose: the primary fuel of the brain under normal conditions. Ketone bodies (e.g., beta-hydroxybutyrate): used during prolonged fasting or starvation when glucose availability is limited."
+            },
+            {
+              "id": "mcns2-ch1-biochem-q24",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Mention the importance of Vitamin B3 (Niacin). (1 Mark)",
+              "explanation": "Vitamin B3 is incorporated into the nicotinamide nucleotides NAD+ and NADP+, the major electron carriers of catabolic and anabolic redox reactions. Adequate niacin is therefore essential for ATP generation in glycolysis and the Krebs cycle. Its deficiency produces pellagra, remembered as the three Ds: dermatitis, diarrhoea and dementia.",
+              "keyConcept": "Niacin forms the NAD/NADP coenzymes; its deficiency causes pellagra (dermatitis, diarrhoea, dementia).",
+              "modelAnswer": "Function: niacin is a precursor of NAD and NADP, which are essential coenzymes for redox reactions in energy metabolism (e.g., glycolysis and the Krebs cycle). Deficiency: leads to Pellagra, characterised by the 3 Ds - Dermatitis, Diarrhoea, and Dementia."
+            },
+            {
+              "id": "mcns2-ch1-biochem-q25",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Ammonia produced during amino acid catabolism is eliminated through the urea cycle. (1) Name the enzyme catalyzing the rate-limiting step of the urea cycle. (2) Name the allosteric activator of this enzyme. (3) Enumerate the sources of the urea nitrogen atoms.",
+              "explanation": "CPS I catalyzes the committed, rate-limiting step of the urea cycle and is allosterically activated by N-acetylglutamate. The two nitrogen atoms of urea are derived from free ammonia and from the amino group of aspartate.",
+              "keyConcept": "CPS I is the rate-limiting urea-cycle enzyme activated by N-acetylglutamate.",
+              "modelAnswer": "(1) Carbamoyl phosphate synthetase I (CPS I). (2) N-acetylglutamate. (3) The first nitrogen comes free as NH3, while the second nitrogen comes from aspartic acid in the cytosol."
+            },
+            {
+              "id": "mcns2-ch1-biochem-q26",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following enzymatic changes explains the slow rate of glycolysis in neurons?",
+              "explanation": "Neurons have reduced activity of 6-phosphofructo-2-kinase, lowering fructose-2,6-bisphosphate, the main activator of phosphofructokinase-1. This slows the rate of glycolysis in neurons.",
+              "keyConcept": "Low fructose-2,6-bisphosphate slows neuronal glycolysis.",
+              "options": [
+                "High activity of 6 phosphofructo 2 kinase which inhibit the formation of fructose 2,6 bisphosphate",
+                "Reduced activity of 6 phosphofructo 2 kinase with decreased fructose 2,6 bisphosphate",
+                "Reduced activity of hexokinase with decreased intracellular glucose",
+                "High activity of 6 phosphofructo 2 kinase which stimulate the formation of fructose 2,6 bisphosphate"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "mcns2-ch1-biochem-q27",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "During excessive exercise, which substance serves as an energy source for neurons?",
+              "explanation": "During heavy exercise, lactate produced by muscle and astrocytes is taken up and oxidized by neurons for energy. This astrocyte-neuron lactate shuttle supplements glucose use.",
+              "keyConcept": "Lactate serves as a neuronal energy source during heavy exercise.",
+              "options": [
+                "Glucose",
+                "Fatty acids",
+                "Ketone bodies",
+                "Glycogen",
+                "Lactate"
+              ],
+              "correctIndex": 4
+            },
+            {
+              "id": "mcns2-ch1-biochem-q28",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which statement about ketone bodies is correct?",
+              "explanation": "Ketone bodies are not a major energy source in the well-fed state, when glucose predominates. They become important for the brain only during prolonged fasting.",
+              "keyConcept": "Ketone bodies are not a major fuel in the well-fed state.",
+              "options": [
+                "Main energy source for the brain",
+                "Main energy source for the liver during starvation",
+                "Not a major source of energy in well-fed state",
+                "Primary substrate for gluconeogenesis",
+                "Stored as glycogen in astrocytes"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "mcns2-ch1-biochem-q29",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "During starvation, which of the following occurs?",
+              "explanation": "During starvation the brain adapts to utilize ketone bodies for energy. The liver produces ketone bodies but cannot use them because it lacks thiophorase.",
+              "keyConcept": "During starvation the brain utilizes ketone bodies.",
+              "options": [
+                "Ketone bodies are utilized in liver",
+                "Ketone bodies are utilized in brain",
+                "Glucose are utilized in liver",
+                "Fatty acid are utilized in brain",
+                "Amino acid are utilized in brain"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "mcns2-ch1-biochem-q30",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following enzymes is absent in neurons?",
+              "explanation": "Neurons lack 6-phosphofructo-2-kinase/fructose-2,6-bisphosphatase (PFK2/FBPase2). Its absence keeps fructose-2,6-bisphosphate low and glycolysis slow.",
+              "keyConcept": "Neurons lack the PFK2/FBPase2 enzyme.",
+              "options": [
+                "Hexokinase",
+                "Phosphofructokinase 1",
+                "Pyruvate kinase",
+                "Pf2k/fb3",
+                "Lactate dehydrogenase"
+              ],
+              "correctIndex": 3
+            },
+            {
+              "id": "mcns2-ch1-biochem-q31",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following laboratory findings is used as a marker for carcinoid tumor?",
+              "explanation": "Carcinoid tumors secrete excess serotonin, which is metabolized to 5-hydroxyindoleacetic acid (5-HIAA). Elevated urinary 5-HIAA is the diagnostic marker.",
+              "keyConcept": "Urinary 5-HIAA is the marker of carcinoid tumor.",
+              "options": [
+                "Vanillylmandelic acid",
+                "Homovanillic acid",
+                "MOA",
+                "5-hydroxyindoleacetic acid",
+                "Serotonin"
+              ],
+              "correctIndex": 3
+            },
+            {
+              "id": "mcns2-ch1-biochem-q32",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following neurotransmitters is the principal excitatory neurotransmitter in the central nervous system?",
+              "explanation": "Glutamate is the principal excitatory neurotransmitter of the central nervous system. GABA and glycine are the main inhibitory transmitters.",
+              "keyConcept": "Glutamate is the main excitatory CNS neurotransmitter.",
+              "options": [
+                "Gamma aminobutyric acid",
+                "Glycine",
+                "Dopamine",
+                "Serotonin",
+                "Glutamate"
+              ],
+              "correctIndex": 4
+            },
+            {
+              "id": "mcns2-ch1-biochem-q33",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which substance acts as an antioxidant in astrocytes by forming reduced glutathione?",
+              "explanation": "NADPH provides reducing power to regenerate reduced glutathione in astrocytes. This protects against oxidative damage as an antioxidant defense.",
+              "keyConcept": "NADPH regenerates reduced glutathione for antioxidant defense.",
+              "options": [
+                "NADPH",
+                "NADH",
+                "Vitamin B6",
+                "Vitamin C",
+                "GSSG"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch1-biochem-q34",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "In pheochromocytoma, which metabolite is typically increased in urine?",
+              "explanation": "Pheochromocytoma overproduces catecholamines that are metabolized to vanillylmandelic acid. Elevated urinary VMA is characteristic.",
+              "keyConcept": "Pheochromocytoma raises urinary vanillylmandelic acid.",
+              "options": [
+                "Dopamine",
+                "Epinephrine",
+                "Norepinephrine",
+                "Vanillylmandelic acid",
+                "Serotonin"
+              ],
+              "correctIndex": 3
+            },
+            {
+              "id": "mcns2-ch1-biochem-q35",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following amino acids is the precursor of serotonin?",
+              "explanation": "Tryptophan is the amino acid precursor of serotonin (5-hydroxytryptamine). It is hydroxylated and decarboxylated to form serotonin.",
+              "keyConcept": "Tryptophan is the precursor of serotonin.",
+              "options": [
+                "Tryptophan",
+                "Tyrosine",
+                "Phenylalanine",
+                "Glutamate",
+                "Histidine"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch1-biochem-q36",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following drugs prevents the peripheral conversion of levodopa to dopamine?",
+              "explanation": "Carbidopa inhibits peripheral dopa decarboxylase, preventing conversion of levodopa to dopamine outside the brain. This increases central levodopa availability and reduces side effects.",
+              "keyConcept": "Carbidopa blocks peripheral conversion of levodopa to dopamine.",
+              "options": [
+                "Niacin (B3)",
+                "Monoamine oxidase inhibitors (MAOIs)",
+                "α-methyl tyrosine",
+                "α-methyl dopa",
+                "Carbidopa"
+              ],
+              "correctIndex": 4
+            },
+            {
+              "id": "mcns2-ch1-biochem-q37",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following glucose transporters is present on astrocytes?",
+              "explanation": "Astrocytes express the GLUT1 glucose transporter. Neurons rely mainly on GLUT3.",
+              "keyConcept": "Astrocytes express the GLUT1 glucose transporter.",
+              "options": [
+                "GLUT 1",
+                "GLUT 2",
+                "GLUT 3",
+                "GLUT 4",
+                "GLUT 5"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch1-biochem-q38",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following is the rate limiting enzyme in catecholamine synthesis?",
+              "explanation": "Tyrosine hydroxylase is the rate-limiting enzyme of catecholamine synthesis. It converts tyrosine to DOPA.",
+              "keyConcept": "Tyrosine hydroxylase is the rate-limiting catecholamine enzyme.",
+              "options": [
+                "Dopa decarboxylase",
+                "Dopamine beta hydroxylase",
+                "Tyrosine hydroxylase",
+                "Monoamine oxidase",
+                "Phenylethanolamine N-methyltransferase"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "mcns2-ch1-biochem-q39",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following effects is produced by carbidopa when given with L-DOPA?",
+              "explanation": "By inhibiting peripheral decarboxylation of L-DOPA, carbidopa increases the amount reaching the brain. This enhances the therapeutic action of L-DOPA.",
+              "keyConcept": "Carbidopa increases L-DOPA action centrally.",
+              "options": [
+                "Increase L-DOPA action",
+                "Decrease dopamine receptor sensitivity",
+                "Increase dopamine breakdown in the brain",
+                "Decrease L-DOPA action",
+                "Block serotonin reuptake"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch1-biochem-q40",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "GABA in postsynaptic nerve which increases the permeability of?",
+              "explanation": "GABA binding to postsynaptic GABA-A receptors increases chloride permeability. The resulting chloride influx hyperpolarizes the neuron and inhibits it.",
+              "keyConcept": "GABA increases postsynaptic chloride permeability.",
+              "options": [
+                "Cl-",
+                "Ca++",
+                "K+",
+                "Mg++",
+                "Na+"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch1-biochem-q41",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Deficiency or dysregulation of which of the following neurotransmitters is most closely associated with mood disorders?",
+              "explanation": "Deficiency or dysregulation of serotonin is most closely linked to mood disorders such as depression. This underlies the use of serotonergic antidepressants.",
+              "keyConcept": "Serotonin dysregulation is closely associated with mood disorders.",
+              "options": [
+                "Serotonin",
+                "Dopamine",
+                "Norepinephrine",
+                "Acetylcholine",
+                "GABA"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch1-biochem-q42",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which enzyme is classified as a transaminase?",
+              "explanation": "Alanine aminotransferase is a transaminase that transfers an amino group between alanine and alpha-ketoglutarate. Transaminases interconvert amino acids and keto acids.",
+              "keyConcept": "Alanine aminotransferase is a transaminase.",
+              "options": [
+                "Glutamate dehydrogenase",
+                "Alanine aminotransferase",
+                "Glutaminase",
+                "L-amino acid oxidase",
+                "D-amino acid oxidase"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "mcns2-ch1-biochem-q43",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following cofactors is required for transamination reactions?",
+              "explanation": "Transamination reactions require pyridoxal phosphate, the active form of vitamin B6, as a coenzyme. It carries the amino group during the reaction.",
+              "keyConcept": "Pyridoxal phosphate is the coenzyme for transamination.",
+              "options": [
+                "Vitamin B6",
+                "NADH",
+                "Vitamin C",
+                "NADPH",
+                "Pyridoxal phosphate"
+              ],
+              "correctIndex": 4
+            },
+            {
+              "id": "mcns2-ch1-biochem-q44",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which enzyme catalyzes transamination reactions in amino acid metabolism?",
+              "explanation": "Aspartate aminotransferase catalyzes transamination between aspartate and alpha-ketoglutarate. Like other transaminases it requires pyridoxal phosphate.",
+              "keyConcept": "Aspartate aminotransferase catalyzes a transamination reaction.",
+              "options": [
+                "Glutaminase",
+                "Glutamate dehydrogenase",
+                "Ornithine transcarbamylase",
+                "Aspartate aminotransferase",
+                "Glutamine synthase"
+              ],
+              "correctIndex": 3
+            },
+            {
+              "id": "mcns2-ch1-biochem-q45",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following is the common amino acid acceptor in all transamination reactions?",
+              "explanation": "Alpha-ketoglutarate is the common amino-group acceptor in transamination reactions, becoming glutamate. This channels amino groups toward disposal.",
+              "keyConcept": "Alpha-ketoglutarate is the universal transamination amino acceptor.",
+              "options": [
+                "Oxaloacetate",
+                "Pyruvate",
+                "α-ketoglutarate",
+                "Glutamate",
+                "Alanine"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "mcns2-ch1-biochem-q46",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which enzyme is involved in transdeaminase?",
+              "explanation": "Glutamate dehydrogenase performs the oxidative deamination step of transdeamination, releasing free ammonia. It works after transaminases funnel amino groups into glutamate.",
+              "keyConcept": "Glutamate dehydrogenase carries out oxidative deamination in transdeamination.",
+              "options": [
+                "Glutamate dehydrogenase",
+                "Alanine aminotransferase",
+                "Glutaminase",
+                "L-amino acid oxidase",
+                "D-amino acid oxidase"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch1-biochem-q47",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Hyperammonemia is associated with …… in the brain",
+              "explanation": "Hyperammonemia raises brain tryptophan uptake and thereby increases serotonin synthesis. It also depletes alpha-ketoglutarate through glutamine formation, contributing to encephalopathy.",
+              "keyConcept": "Hyperammonemia is associated with increased brain serotonin.",
+              "options": [
+                "Increased glutamate",
+                "Increased α-ketoglutarate",
+                "Decreased ammonia",
+                "Decreased Glutamine",
+                "Increased serotonin"
+              ],
+              "correctIndex": 4
+            },
+            {
+              "id": "mcns2-ch1-biochem-q48",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which compound in the urea cycle requires ATP for its synthesis?",
+              "explanation": "Argininosuccinate synthesis from citrulline and aspartate consumes ATP in the urea cycle. This is one of the cycle's energy-requiring steps.",
+              "keyConcept": "Argininosuccinate synthesis in the urea cycle requires ATP.",
+              "options": [
+                "Aspartic acid",
+                "Citrulline",
+                "Fumarate",
+                "Urea",
+                "Arginosuccinate"
+              ],
+              "correctIndex": 4
+            },
+            {
+              "id": "mcns2-ch1-biochem-q49",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "In a patient with a urea cycle disorder, which metabolite typically accumulates?",
+              "explanation": "In urea cycle disorders, ammonia is diverted into glutamine, which accumulates. Elevated glutamine reflects impaired ammonia disposal.",
+              "keyConcept": "Glutamine accumulates in urea cycle disorders.",
+              "options": [
+                "α-ketoglutarate",
+                "Glutamine",
+                "Urea",
+                "Glutamate",
+                "Arginine"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "mcns2-ch1-biochem-q50",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following changes occurs in the brain as a result of hyperammonemia?",
+              "explanation": "In hyperammonemia ammonia is detoxified by combining with glutamate to form glutamine, depleting glutamate. Because GABA is synthesized from glutamate, both glutamate and GABA fall in the brain.",
+              "keyConcept": "Hyperammonemia decreases brain glutamate and GABA.",
+              "options": [
+                "Increased glutamine and increased GABA",
+                "Increased glutamate and decreased GABA",
+                "Decreased glutamate and decreased GABA",
+                "Decreased glutamate and decreased glutamine",
+                "Decreased glutamine and increased glutamate"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "mcns2-ch1-biochem-q51",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "human body?",
+              "explanation": "Urea is the main nitrogen-containing excretory product of protein metabolism in humans. It is synthesized in the liver and excreted by the kidneys.",
+              "keyConcept": "Urea is the principal nitrogen excretory product in humans.",
+              "options": [
+                "Ammonia",
+                "Glutamine",
+                "Amino acid",
+                "Uric acid",
+                "Urea"
+              ],
+              "correctIndex": 4
+            },
+            {
+              "id": "mcns2-ch1-biochem-q52",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "In ornithine transcarbamylasedeficiency, which of the following amino acids becomes essential?",
+              "explanation": "Ornithine transcarbamylase deficiency blocks the urea cycle, so arginine can no longer be synthesized adequately and becomes essential. Supplementation helps maintain the cycle.",
+              "keyConcept": "Arginine becomes essential in ornithine transcarbamylase deficiency.",
+              "options": [
+                "Citrulline",
+                "Ornithine",
+                "Arginine",
+                "Glutamine",
+                "Aspartate"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "mcns2-ch1-biochem-q53",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The nitrogen atoms of urea are derived from which of the following sources?",
+              "explanation": "The two nitrogen atoms of urea come from free ammonia (via carbamoyl phosphate) and from aspartate. These enter the urea cycle at different steps.",
+              "keyConcept": "Urea nitrogen derives from ammonia and aspartate.",
+              "options": [
+                "Ammonia and aspartate",
+                "Ammonia and glutamate",
+                "Aspartate and alanine",
+                "Glutamine and aspartate",
+                "Ammonia and ornithine"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch1-biochem-q54",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following amino acids are responsible for the characteristic burned sugar odor of urine?",
+              "explanation": "The branched-chain amino acids leucine, isoleucine and valine accumulate in maple syrup urine disease. Their keto acids give urine the characteristic burnt-sugar (maple syrup) odor.",
+              "keyConcept": "Branched-chain amino acids cause the maple-syrup urine odor.",
+              "options": [
+                "Phenylalanine, tyrosine, tryptophan",
+                "Leucine, isoleucine, valine",
+                "Glycine, serine, alanine",
+                "Methionine, cysteine, taurine",
+                "Aspartate, glutamate, asparagine"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "mcns2-ch1-biochem-q55",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "A mother notices that her month-old baby’s urine has a sweet, burnt sugar smell while changing the diaper. Laboratory tests reveal elevated levels of leucine, isoleucine, and valine in the blood. Which enzyme deficiency is most likely responsible for this condition?",
+              "explanation": "Maple syrup urine disease is caused by deficiency of the branched-chain alpha-ketoacid dehydrogenase complex. This blocks degradation of leucine, isoleucine and valine.",
+              "keyConcept": "Branched-chain ketoacid dehydrogenase deficiency causes maple syrup urine disease.",
+              "options": [
+                "Phenylalanine hydroxylase",
+                "Tyrosine hydroxylase",
+                "Branched chain α-ketoacid dehydrogenase complex",
+                "Tryptophan hydroxylase",
+                "Dihydrobiopterin reductase"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "mcns2-ch1-biochem-q56",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following reactions is impaired in thiamine pyrophosphate deficiency?",
+              "explanation": "Thiamine pyrophosphate is the coenzyme for oxidative decarboxylation of alpha-keto acids such as pyruvate and alpha-ketoglutarate. Its deficiency impairs these dehydrogenase reactions.",
+              "keyConcept": "Thiamine deficiency impairs oxidative decarboxylation of alpha-keto acids.",
+              "options": [
+                "Transamination of amino acids",
+                "Carboxylation of acetyl CoA",
+                "Reduction of ribonucleotides",
+                "Oxidative phosphorylation in mitochondria",
+                "Oxidative decarboxylation of alpha keto acids"
+              ],
+              "correctIndex": 4
+            },
+            {
+              "id": "mcns2-ch1-biochem-q57",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "In phenylketonuria, …… in the brain.",
+              "explanation": "In phenylketonuria, excess phenylalanine inhibits tyrosine and dopamine synthesis, lowering brain dopamine. This contributes to the neurological impairment.",
+              "keyConcept": "Phenylketonuria decreases brain dopamine.",
+              "options": [
+                "Dopamine level decreases",
+                "Serotonin level increases",
+                "Norepinephrine level increases",
+                "Acetylcholine level increases",
+                "GABA level increases"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch1-biochem-q58",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "In phenylketonuria, which substance accumulates in the blood?",
+              "explanation": "Phenylketonuria results from deficient phenylalanine hydroxylase, so phenylalanine accumulates in the blood. The excess is toxic to the developing brain.",
+              "keyConcept": "Phenylalanine accumulates in the blood in phenylketonuria.",
+              "options": [
+                "Tyrosine",
+                "Dopamine",
+                "Phenylalanine",
+                "Homocysteine",
+                "Pyruvate"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "mcns2-ch1-biochem-q59",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following disease and metabolite pairs is correctly matched?",
+              "explanation": "Phenylketonuria is correctly matched with accumulation of phenylalanine. Maple syrup urine disease accumulates branched-chain amino acids, not the options listed.",
+              "keyConcept": "Phenylketonuria is characterized by accumulation of phenylalanine.",
+              "options": [
+                "Maple syrup urine disease and isolysin",
+                "Maple syrup urine disease and lysin",
+                "Maple syrup urine disease and glycine",
+                "Phenylketonuria and urea",
+                "Phenylketonuria and phenylalanine"
+              ],
+              "correctIndex": 4
+            },
+            {
+              "id": "mcns2-ch1-biochem-q60",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "In phenylketonuria, deficiency of which of the following substances occurs?",
+              "explanation": "Because phenylalanine cannot be converted to tyrosine, synthesis of catecholamines (dopamine, norepinephrine, epinephrine) is reduced. This catecholamine deficiency affects the brain.",
+              "keyConcept": "Phenylketonuria causes catecholamine deficiency.",
+              "options": [
+                "Catecholamines",
+                "Branched amino acids",
+                "Phenylpyruvate",
+                "Phenylalanine",
+                "Phenylacetate"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch1-biochem-q61",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "A 55 year-old chronic alcoholic presents with confusion, ataxia, and memory impairment. Which of the following conditions is most likely responsible for his presentation?",
+              "explanation": "Chronic alcoholism with confusion, ataxia and memory loss indicates Wernicke-Korsakoff syndrome from thiamine deficiency. It is a classic clinical triad.",
+              "keyConcept": "Thiamine deficiency causes Wernicke-Korsakoff syndrome.",
+              "options": [
+                "Wernicke korsakoff",
+                "Wet Beriberi",
+                "Dry Beriberi",
+                "Pellagra",
+                "Homocystinemia"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch1-biochem-q62",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "A 55 year-old chronic alcoholic presents with confusion, ataxia, and memory impairment. Which of the following enzymes if affected?",
+              "explanation": "Thiamine deficiency impairs the thiamine-dependent alpha-ketoglutarate dehydrogenase of the citric acid cycle. Reduced activity limits brain energy production.",
+              "keyConcept": "Thiamine deficiency impairs alpha-ketoglutarate dehydrogenase.",
+              "options": [
+                "Thymidylate synthase",
+                "Dehydrogenases",
+                "α-ketoglutarate dehydrogenase",
+                "Homocysteine methyl transferase",
+                "Methylmalonyl-CoA mutase"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "mcns2-ch1-biochem-q63",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following vitamins is required for one carbon transfer reactions involved in nucleotide synthesis?",
+              "explanation": "Folic acid carries one-carbon units required for purine and thymidylate (nucleotide) synthesis. Its deficiency impairs DNA synthesis.",
+              "keyConcept": "Folic acid supplies one-carbon units for nucleotide synthesis.",
+              "options": [
+                "Folic acid",
+                "Vitamin B12",
+                "Vitamin B6",
+                "Vitamin C",
+                "Vitamin K"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch1-biochem-q64",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Impairment of oxidative decarboxylation leads to inability to utilize glucose due to deficiency of which pf the following?",
+              "explanation": "Thiamine (vitamin B1) is the cofactor for pyruvate dehydrogenase, which decarboxylates pyruvate for glucose oxidation. Its deficiency blocks glucose utilization.",
+              "keyConcept": "Thiamine deficiency impairs oxidative decarboxylation needed for glucose use.",
+              "options": [
+                "Vitamin B1",
+                "Vitamin B2",
+                "Vitamin B3",
+                "Vitamin B6",
+                "Vitamin B12"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch1-biochem-q65",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "A patient presents with chronic diarrhea, cognitive decline, and photosensitive skin rash. Which supplement should you indicate to this patient?",
+              "explanation": "Diarrhea, dementia and a photosensitive dermatitis are the classic triad of pellagra from niacin deficiency. Niacin supplementation is the treatment.",
+              "keyConcept": "Niacin deficiency causes pellagra (diarrhea, dementia, dermatitis).",
+              "options": [
+                "Thiamine",
+                "Folic acid",
+                "Pyridoxine",
+                "Cobalamin",
+                "Niacin"
+              ],
+              "correctIndex": 4
+            },
+            {
+              "id": "mcns2-ch1-biochem-q66",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which vitamin deficiency is neurologically affected by folic acid status, as folic acid supplementation can mask its hematological signs but not prevent neurological damage?",
+              "explanation": "Folate supplementation can correct the megaloblastic anemia of vitamin B12 deficiency while the neurological damage progresses. B12 deficiency therefore has masked hematologic but unprevented neurologic effects.",
+              "keyConcept": "Folate masks the anemia but not neuropathy of B12 deficiency.",
+              "options": [
+                "Vitamin B1",
+                "Vitamin B2",
+                "Vitamin B6",
+                "Vitamin B12",
+                "Vitamin C"
+              ],
+              "correctIndex": 3
+            },
+            {
+              "id": "mcns2-ch1-biochem-q67",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which biochemical process is inhibited by sulfonamides?",
+              "explanation": "Sulfonamides inhibit bacterial dihydropteroate synthase, blocking folic acid synthesis. Humans obtain folate from the diet, giving selective toxicity.",
+              "keyConcept": "Sulfonamides inhibit bacterial folic acid synthesis.",
+              "options": [
+                "Purine synthesis",
+                "Folic acid synthesis",
+                "Pyrimidine degradation",
+                "Amino acid transamination",
+                "Glycolysis"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "mcns2-ch1-biochem-q68",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which vitamins are directly required for the remethylation of homocysteine to methionine?",
+              "explanation": "Remethylation of homocysteine to methionine requires methyl-tetrahydrofolate and vitamin B12 (methylcobalamin). Both vitamins are needed for the methionine synthase reaction.",
+              "keyConcept": "Folate and vitamin B12 remethylate homocysteine to methionine.",
+              "options": [
+                "Vitamin C and Vitamin D",
+                "Vitamin B6 and Vitamin B2",
+                "Folic acid and Vitamin B12",
+                "Vitamin K and Vitamin E",
+                "Niacin and Riboflavin"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "mcns2-ch1-biochem-q69",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which reaction uses methyl tetrahydrofolate as a cofactor?",
+              "explanation": "Methyl-tetrahydrofolate donates its methyl group during conversion of homocysteine to methionine. Vitamin B12 transfers this methyl group.",
+              "keyConcept": "Methyl-tetrahydrofolate is used in homocysteine remethylation to methionine.",
+              "options": [
+                "Serine → Glycine",
+                "Glycine → Serine",
+                "Homocysteine → Methionine",
+                "Methionine → Homocysteine",
+                "Cysteine → Homocysteine"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "mcns2-ch1-biochem-q70",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following acts as a coenzyme for aromatic amino acid hydroxylases?",
+              "explanation": "Tetrahydrobiopterin is the coenzyme for aromatic amino acid hydroxylases such as phenylalanine, tyrosine and tryptophan hydroxylase. It supplies reducing equivalents for hydroxylation.",
+              "keyConcept": "Tetrahydrobiopterin is the coenzyme for aromatic amino acid hydroxylases.",
+              "options": [
+                "Tetrahydrobiopterin",
+                "Pyridoxal phosphate",
+                "Flavin adenine dinucleotide",
+                "Nicotinamide adenine dinucleotide",
+                "Thiamine pyrophosphate"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch1-biochem-q71",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The conversion of which of the following requires vitamin B12 and folic acid?",
+              "explanation": "Conversion of homocysteine to methionine requires both folic acid (as methyl-tetrahydrofolate) and vitamin B12. Deficiency of either raises homocysteine.",
+              "keyConcept": "Homocysteine-to-methionine conversion needs folate and vitamin B12.",
+              "options": [
+                "Serine to glycine",
+                "Glutamate to gamma-aminobutyric acid",
+                "Homocysteine to methionine",
+                "Tyrosine to dopamine",
+                "Phenylalanine to tyrosine"
+              ],
+              "correctIndex": 2
+            }
+          ]
+        },
+        {
+          "id": "histology",
+          "name": "Histology",
+          "iconName": "Microscope",
+          "lectures": "",
+          "lectureCount": 4,
+          "lectureNames": [
+            "Structure of CNS",
+            "Lecture 2",
+            "Lecture 3",
+            "Lecture 4"
+          ],
+          "questions": [
+            {
+              "id": "mcns2-ch1-histology-q1",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "A demyelinating lesion is observed in a patient with Multiple Sclerosis. Which adult cell population is most likely to remyelinate the axons?",
+              "explanation": "Within the CNS, adult oligodendrocyte progenitor cells can differentiate into oligodendrocytes and remyelinate denuded axons. Schwann cells myelinate the peripheral, not central, nervous system.",
+              "keyConcept": "Adult oligodendrocyte progenitors remyelinate CNS axons.",
+              "options": [
+                "Astrocytes",
+                "Schwann cells",
+                "Adult oligodendrocyte progenitors",
+                "Neurons",
+                "Microglia"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "mcns2-ch1-histology-q2",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "A pathologist stains brain tissue using GFAP. Which glial cell is being evaluated?",
+              "explanation": "Glial fibrillary acidic protein (GFAP) is the intermediate filament marker of astrocytes. It is widely used to identify astrocytes and astrocytic tumors.",
+              "keyConcept": "GFAP is the histological marker of astrocytes.",
+              "options": [
+                "Ependymal cell",
+                "Microglia",
+                "Oligodendrocyte",
+                "Astrocyte",
+                "Schwann cell"
+              ],
+              "correctIndex": 3
+            },
+            {
+              "id": "mcns2-ch1-histology-q3",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "In a patient with CNS inflammation, microglial cells are observed in an activated state. Which function do these cells primarily perform?",
+              "explanation": "Microglia are the resident immune cells of the CNS and, when activated, act as phagocytes that engulf debris and pathogens. They do not form myelin or release neurotransmitters.",
+              "keyConcept": "Activated microglia perform phagocytosis in the CNS.",
+              "options": [
+                "Axonal regeneration",
+                "Phagocytosis",
+                "Synaptic inhibition",
+                "Neurotransmitter release",
+                "Myelin sheath formation"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "mcns2-ch1-histology-q4",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The blood-brain barrier lacks protection in all of the following regions except:",
+              "explanation": "Circumventricular organs such as the pineal body, posterior pituitary, choroid plexus and parts of the hypothalamus lack a complete blood-brain barrier. The cerebral cortex retains an intact barrier.",
+              "keyConcept": "The cerebral cortex has an intact blood-brain barrier.",
+              "options": [
+                "Pineal body",
+                "Cerebral cortex",
+                "Posterior pituitary",
+                "Choroid plexus",
+                "Hypothalamus"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "mcns2-ch1-histology-q5",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The horizontal cells of Cajal are located in which layer of the cerebral cortex?",
+              "explanation": "Horizontal cells of Cajal are found in the most superficial molecular (plexiform) layer of the cortex. Their axons run horizontally within this layer.",
+              "keyConcept": "Horizontal cells of Cajal lie in the molecular layer.",
+              "options": [
+                "Molecular layer",
+                "External granular layer",
+                "Internal granular layer",
+                "Inner pyramidal layer",
+                "Multiform layer"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch1-histology-q6",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which cell type lines the ventricles of the brain and contributes to CSF circulation?",
+              "explanation": "Ependymal cells form the ciliated epithelium lining the ventricles and central canal. Their cilia help circulate cerebrospinal fluid.",
+              "keyConcept": "Ependymal cells line the ventricles and move CSF.",
+              "options": [
+                "Satellite cells",
+                "Astrocytes",
+                "Microglia",
+                "Schwann cells",
+                "Ependymal cells"
+              ],
+              "correctIndex": 4
+            },
+            {
+              "id": "mcns2-ch1-histology-q7",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which cerebral cortex cell type is found in all layers and has ascending axons?",
+              "explanation": "Cells of Martinotti occur in all cortical layers and send their axons upward toward the molecular layer. This ascending axon is their distinguishing feature.",
+              "keyConcept": "Cells of Martinotti occur in all layers with ascending axons.",
+              "options": [
+                "Cell of Martinotti",
+                "Horizontal cell of Cajal",
+                "Granule cell",
+                "Fusiform cell",
+                "Pyramidal cell"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch1-histology-q8",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which CNS region contains protoplasmic astrocytes as the predominant glial type?",
+              "explanation": "Protoplasmic astrocytes predominate in the gray matter, whereas fibrous astrocytes are characteristic of white matter. Their many short branching processes contact neurons and capillaries.",
+              "keyConcept": "Protoplasmic astrocytes predominate in gray matter.",
+              "options": [
+                "Peripheral ganglia",
+                "White matter",
+                "Gray matter",
+                "Ependymal lining",
+                "Subarachnoid space"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "mcns2-ch1-histology-q9",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which glial cell type in the CNS is primarily responsible for forming the myelin sheath?",
+              "explanation": "Oligodendrocytes myelinate axons within the CNS, each ensheathing several axons. Schwann cells perform the equivalent role only in the peripheral nervous system.",
+              "keyConcept": "Oligodendrocytes form CNS myelin.",
+              "options": [
+                "Oligodendrocyte",
+                "Microglia",
+                "Ependymal cell",
+                "Astrocyte",
+                "Schwann cell"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch1-histology-q10",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which layer contains the giant pyramidal (Betz) cells?",
+              "explanation": "The giant pyramidal cells of Betz are located in the internal pyramidal layer (layer V) of the motor cortex. Their axons contribute to the corticospinal tract.",
+              "keyConcept": "Betz cells lie in the internal pyramidal layer.",
+              "options": [
+                "Molecular layer",
+                "External pyramidal layer",
+                "Multiform layer",
+                "Internal pyramidal layer",
+                "External granular layer"
+              ],
+              "correctIndex": 3
+            },
+            {
+              "id": "mcns2-ch1-histology-q11",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following characteristics best distinguishes oligodendrocytes from Schwann cells?",
+              "explanation": "A single oligodendrocyte can myelinate several axons, whereas one Schwann cell myelinates only a single internode of one axon. Schwann cells, not oligodendrocytes, are derived from neural crest.",
+              "keyConcept": "One oligodendrocyte myelinates multiple axons.",
+              "options": [
+                "Presence in gray matter only",
+                "Presence of axons",
+                "Production of neurotransmitters",
+                "Derivation from neural crest",
+                "Ability to myelinate multiple axons"
+              ],
+              "correctIndex": 4
+            },
+            {
+              "id": "mcns2-ch1-histology-q12",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which structure is formed by astrocyte foot processes and contributes to selective permeability in CNS capillaries?",
+              "explanation": "Perivascular astrocyte foot processes ensheath CNS capillaries and help induce and maintain the blood-brain barrier. They contribute to its selective permeability.",
+              "keyConcept": "Perivascular astrocyte feet support the blood-brain barrier.",
+              "options": [
+                "Subarachnoid space",
+                "Internal elastic lamina",
+                "Ependymal lining",
+                "Choroidal villus",
+                "Perivascular astrocyte feet"
+              ],
+              "correctIndex": 4
+            },
+            {
+              "id": "mcns2-ch1-histology-q13",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Describe the structure, type, functions, and clinical relevance of astrocytes in the CNS.",
+              "explanation": "Astrocytes are the most abundant glial cells and provide structural and metabolic support to neurons. Their foot processes contact capillaries to help form and maintain the blood-brain barrier, while GFAP gives them their characteristic cytoskeleton and serves as a diagnostic marker. Following injury they proliferate to form a glial scar.",
+              "keyConcept": "Astrocytes are GFAP-positive glia that support neurons and maintain the blood-brain barrier.",
+              "modelAnswer": "Structure: star-shaped cells with foot processes, GFAP-positive intermediate filaments, and glycogen storage. Types: fibrous astrocytes (mainly white matter) and protoplasmic astrocytes (mainly gray matter). Functions: maintenance of the blood-brain barrier, ionic balance, metabolic support, repair by glial scar formation, and neurotransmitter regulation. Clinical relevance: GFAP is a diagnostic marker in astrocytoma."
+            },
+            {
+              "id": "mcns2-ch1-histology-q14",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Describe the six layers of the cerebral cortex with their components.",
+              "explanation": "The neocortex is organised into six horizontal layers distinguished by their predominant cell types and fibre bands. Granular layers (2 and 4) are rich in small stellate or granule cells that receive input, while pyramidal layers (3 and 5) contain output neurons, including the giant pyramidal (Betz) cells of the motor cortex. The bands of Baillarger are horizontal myelinated fibre plexuses within the granular and pyramidal layers.",
+              "keyConcept": "The cerebral cortex has six layers alternating granular and pyramidal cell populations.",
+              "modelAnswer": "1) Molecular layer: horizontal cells of Cajal and tangential fibres. 2) External granular layer: small granule cells. 3) External pyramidal layer: small and medium pyramidal cells. 4) Internal granular layer: granule cells and the outer band of Baillarger. 5) Internal pyramidal layer: giant pyramidal cells and the inner band of Baillarger. 6) Multiform (pleomorphic) layer: fusiform and granule cells."
+            },
+            {
+              "id": "mcns2-ch1-histology-q15",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Discuss the types, structure and functions of astrocytes.",
+              "explanation": "Astrocytes exist as fibrous and protoplasmic types adapted to white and gray matter respectively. Their perivascular foot processes and GFAP-rich cytoplasm allow them to support the blood-brain barrier and buffer the neuronal microenvironment. They also store glycogen and respond to injury by forming a glial scar.",
+              "keyConcept": "Fibrous and protoplasmic astrocytes support neurons, the blood-brain barrier, and ionic balance.",
+              "modelAnswer": "Types: fibrous astrocytes (mainly white matter) and protoplasmic astrocytes (mainly gray matter). Structure: star-shaped cells with a large nucleus and cytoplasm containing GFAP, microtubules and glycogen; processes end as astrocytic feet contacting blood vessels. Functions: regulate metabolic exchange, maintain extracellular ionic balance, form part of the blood-brain barrier, repair by glial scar formation, and store glycogen."
+            },
+            {
+              "id": "mcns2-ch1-histology-q16",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Explain the components and significance of the blood-brain barrier.",
+              "explanation": "The blood-brain barrier is formed mainly by tight junctions between brain capillary endothelial cells, reinforced by a basement membrane, pericytes and astrocytic foot processes. This structural arrangement makes the barrier highly selective, blocking most large or charged molecules and pathogens. It thereby protects the CNS and keeps the extracellular environment tightly regulated for neuronal function.",
+              "keyConcept": "The blood-brain barrier uses tight-junctioned endothelium, basement membrane, pericytes, and astrocytic feet to protect the brain.",
+              "modelAnswer": "Components: 1) continuous endothelial cells joined by tight junctions; 2) a continuous basement membrane; 3) pericytes; 4) astrocytic end-feet. Significance: it selectively restricts the passage of substances from blood to brain, protecting neural tissue from toxins and pathogens while allowing essential nutrients such as glucose and oxygen to cross, thereby maintaining a stable neuronal environment."
+            },
+            {
+              "id": "mcns2-ch1-histology-q17",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Differentiate between motor and sensory cortex based on cellular composition.",
+              "explanation": "Cortical regions are described as agranular or granular depending on the balance of pyramidal output cells and granule input cells. The motor cortex is agranular and thick, dominated by large pyramidal cells that give rise to descending motor fibres. The sensory cortex is granular and thinner, rich in granule cells suited to receiving and processing afferent input.",
+              "keyConcept": "Motor cortex is pyramidal-rich and agranular; sensory cortex is granule-rich and granular.",
+              "modelAnswer": "Motor cortex (agranular): thicker, with prominent pyramidal cells (including giant Betz cells) and few granule cells. Sensory cortex (granular): thinner, with prominent granule (granular) cells and very few pyramidal cells."
+            },
+            {
+              "id": "mcns2-ch1-histology-q18",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Enumerate the six histological layers of the cerebral cortex.",
+              "explanation": "From the surface inward, the neocortex consists of six named layers. These alternate between granular layers (external and internal granular) and pyramidal layers (external and internal pyramidal), bounded superficially by the molecular layer and deeply by the multiform layer. This six-layered pattern (isocortex) is characteristic of most of the cerebral cortex.",
+              "keyConcept": "The six cortical layers: molecular, external granular, external pyramidal, internal granular, internal pyramidal, multiform.",
+              "modelAnswer": "1) Molecular layer. 2) External granular layer. 3) External pyramidal layer. 4) Internal granular layer. 5) Internal pyramidal layer. 6) Multiform (pleomorphic) layer."
+            },
+            {
+              "id": "mcns2-ch1-histology-q19",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Which cell is involved in the Blood-Brain Barrier (BBB), and what is its intermediate filament? (1 Mark)",
+              "explanation": "The blood-brain barrier is formed primarily by tight junctions between brain capillary endothelial cells, supported by the foot processes of astrocytes that induce and maintain the barrier. Astrocytes are identified histologically by their characteristic intermediate filament, glial fibrillary acidic protein (GFAP). GFAP staining is widely used to demonstrate astrocytes and reactive gliosis.",
+              "keyConcept": "Astrocytes support the blood-brain barrier and contain the intermediate filament GFAP.",
+              "modelAnswer": "Cell: the astrocyte (its perivascular foot processes). Intermediate filament: Glial Fibrillary Acidic Protein (GFAP)."
+            },
+            {
+              "id": "mcns2-ch1-histology-q20",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Enumerate the central glia (neuroglia). (2 Marks)",
+              "explanation": "The central neuroglia are the supporting cells of the CNS, each with a distinct role. Astrocytes provide metabolic and structural support and contribute to the blood-brain barrier, while oligodendrocytes produce the myelin sheaths of central axons. Microglia act as the resident phagocytes and immune cells, and ependymal cells line the ventricular system and help circulate cerebrospinal fluid.",
+              "keyConcept": "Central glia are astrocytes, oligodendrocytes, microglia and ependymal cells.",
+              "modelAnswer": "Astrocytes (support and form the blood-brain barrier). Oligodendrocytes (myelinate CNS axons). Microglia (phagocytic immune cells). Ependymal cells (line the ventricles)."
+            },
+            {
+              "id": "mcns2-ch1-histology-q21",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following statements is true regarding neuroglia?",
+              "explanation": "Astrocytes proliferate to form glial scar tissue (gliosis) after central nervous system injury. Oligodendrocytes, not astrocytes or microglia, produce central myelin.",
+              "keyConcept": "Astrocytes perform gliosis after CNS injury.",
+              "options": [
+                "Astrocytes perform gliosis",
+                "Oligodendrocytes form the blood brain barrier",
+                "Microglia produce myelin",
+                "Schwann cells are found in the central nervous system",
+                "Ependymal cells form nodes of Ranvier"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch1-histology-q22",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following statements is true regarding the layers of the cerebral cortex?",
+              "explanation": "The outer band of Baillarger lies within the inner granular (fourth) layer of the cerebral cortex. These bands are horizontal myelinated fiber plexuses.",
+              "keyConcept": "The outer band of Baillarger lies in the inner granular layer.",
+              "options": [
+                "The outer band of Baillargeris present in the inner granular layer",
+                "The inner band of Baillargeris present in the molecular layer",
+                "The molecular layer contains large pyramidal cells",
+                "The inner granular layer lacks stellate cells",
+                "The multiform layer is the most superficial layer"
+              ],
+              "correctIndex": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

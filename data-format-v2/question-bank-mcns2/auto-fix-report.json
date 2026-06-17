@@ -1,0 +1,1367 @@
+{
+  "fixed": 227,
+  "fixes": [
+    {
+      "id": "mcns2-ch1-anatomy-q6",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q7",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q19",
+      "old": 0,
+      "new": 4,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q94",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q162",
+      "old": 0,
+      "new": 3,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q308",
+      "old": 0,
+      "new": 3,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q393",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q403",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q440",
+      "old": 0,
+      "new": 4,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q445",
+      "old": 0,
+      "new": 4,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q457",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q463",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q464",
+      "old": 0,
+      "new": 4,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q465",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q469",
+      "old": 0,
+      "new": 3,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q492",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q504",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q648",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q667",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q669",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q676",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q707",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q723",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q737",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q743",
+      "old": 0,
+      "new": 3,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q745",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q746",
+      "old": 0,
+      "new": 3,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q752",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q763",
+      "old": 0,
+      "new": 3,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q765",
+      "old": 0,
+      "new": 3,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q775",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q776",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q783",
+      "old": 0,
+      "new": 3,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q800",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q857",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q862",
+      "old": 0,
+      "new": 3,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q867",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q872",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q874",
+      "old": 0,
+      "new": 3,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q883",
+      "old": 0,
+      "new": 3,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q894",
+      "old": 0,
+      "new": 4,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q897",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1033",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1036",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1037",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1040",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1046",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1049",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1059",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1064",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1066",
+      "old": 0,
+      "new": 3,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1069",
+      "old": 0,
+      "new": 3,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1081",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1082",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1086",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1092",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1093",
+      "old": 0,
+      "new": 3,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1094",
+      "old": 0,
+      "new": 3,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1098",
+      "old": 0,
+      "new": 3,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1099",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1104",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1106",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1108",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1111",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1120",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1135",
+      "old": 0,
+      "new": 3,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1136",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1137",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1143",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1149",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-histology-q23",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-histology-q26",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-histology-q27",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-histology-q31",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-histology-q42",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-histology-q83",
+      "old": 0,
+      "new": 3,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-histology-q87",
+      "old": 0,
+      "new": 4,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q7",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q14",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q15",
+      "old": 0,
+      "new": 3,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q24",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q73",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q97",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q142",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q151",
+      "old": 0,
+      "new": 4,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q162",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q2",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q17",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q18",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q22",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q29",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q34",
+      "old": 0,
+      "new": 3,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q39",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q41",
+      "old": 0,
+      "new": 3,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q42",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation contradicts current"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q60",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q63",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q64",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q65",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q66",
+      "old": 0,
+      "new": 3,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q68",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q69",
+      "old": 0,
+      "new": 3,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q72",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q87",
+      "old": 0,
+      "new": 3,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q89",
+      "old": 0,
+      "new": 3,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q97",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q98",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q157",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q164",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q168",
+      "old": 0,
+      "new": 3,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q173",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q174",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q175",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation contradicts current"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q183",
+      "old": 0,
+      "new": 3,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q184",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q189",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q192",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q193",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q196",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q205",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q206",
+      "old": 0,
+      "new": 3,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q227",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q236",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q239",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q249",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q250",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q252",
+      "old": 0,
+      "new": 4,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q253",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q35",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q42",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q44",
+      "old": 0,
+      "new": 4,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q50",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q171",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q216",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q247",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q267",
+      "old": 0,
+      "new": 4,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q276",
+      "old": 0,
+      "new": 3,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q279",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q293",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q297",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-pathology-q3",
+      "old": 0,
+      "new": 3,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-microbiology-q12",
+      "old": 0,
+      "new": 3,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-microbiology-q13",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-microbiology-q19",
+      "old": 0,
+      "new": 3,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-microbiology-q22",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch1-microbiology-q28",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q59",
+      "old": 0,
+      "new": 4,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q66",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q67",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q98",
+      "old": 0,
+      "new": 3,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q106",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q110",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q30",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q38",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q60",
+      "old": 0,
+      "new": 4,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q67",
+      "old": 0,
+      "new": 4,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q68",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q73",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q77",
+      "old": 0,
+      "new": 4,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q78",
+      "old": 0,
+      "new": 3,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q92",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q94",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q96",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch3-physiology-q18",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch3-biochem-q4",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch4-physiology-q12",
+      "old": 0,
+      "new": 3,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch5-anatomy-q30",
+      "old": 0,
+      "new": 3,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch5-physiology-q11",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch5-physiology-q15",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch5-physiology-q16",
+      "old": 0,
+      "new": 3,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch5-physiology-q35",
+      "old": 0,
+      "new": 3,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch6-anatomy-q20",
+      "old": 0,
+      "new": 4,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch6-anatomy-q28",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch6-anatomy-q29",
+      "old": 0,
+      "new": 3,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch6-physiology-q11",
+      "old": 0,
+      "new": 4,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch7-anatomy-q3",
+      "old": 0,
+      "new": 3,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch7-anatomy-q19",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch7-anatomy-q21",
+      "old": 0,
+      "new": 3,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch7-anatomy-q34",
+      "old": 0,
+      "new": 4,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch7-physiology-q1",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch7-pharma-q4",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q41",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q56",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q63",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch8-microbiology-q2",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch9-anatomy-q30",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch9-anatomy-q32",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch9-anatomy-q42",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch9-anatomy-q44",
+      "old": 0,
+      "new": 3,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch9-anatomy-q47",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch10-anatomy-q25",
+      "old": 0,
+      "new": 3,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch10-anatomy-q26",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch10-anatomy-q28",
+      "old": 0,
+      "new": 4,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch10-anatomy-q31",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch10-physiology-q3",
+      "old": 0,
+      "new": 3,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch10-physiology-q5",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch10-physiology-q6",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch10-physiology-q14",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch10-pharma-q1",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch10-pharma-q2",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch10-pharma-q11",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch10-pharma-q23",
+      "old": 0,
+      "new": 3,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch10-pharma-q29",
+      "old": 0,
+      "new": 3,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch10-pharma-q34",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch10-pharma-q38",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch10-pharma-q77",
+      "old": 0,
+      "new": 3,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch10-pharma-q78",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch10-pharma-q85",
+      "old": 0,
+      "new": 3,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch10-pharma-q87",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch10-pharma-q90",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch10-pharma-q92",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch10-pharma-q93",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch10-pharma-q96",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch10-pharma-q98",
+      "old": 0,
+      "new": 3,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch10-pharma-q102",
+      "old": 0,
+      "new": 3,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch10-pharma-q103",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch10-pharma-q110",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch10-pharma-q118",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch10-pharma-q137",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch10-pharma-q138",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch10-pharma-q139",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch10-pharma-q140",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch10-pharma-q141",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch10-pharma-q142",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch10-pharma-q143",
+      "old": 0,
+      "new": 2,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch10-pathology-q19",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    },
+    {
+      "id": "mcns2-ch10-microbiology-q11",
+      "old": 0,
+      "new": 1,
+      "reason": "explanation supports different option"
+    }
+  ]
+}

@@ -1,0 +1,900 @@
+{
+  "schemaVersion": 1,
+  "meta": {
+    "moduleCode": "MCNS-2",
+    "moduleName": "Central Nervous System",
+    "year": 2,
+    "semester": 2,
+    "creditPoints": 6,
+    "totalMarks": 200,
+    "keywords": [
+      "CNS",
+      "Neuroanatomy",
+      "Neuropharmacology",
+      "Neurophysiology",
+      "Neuropathology"
+    ]
+  },
+  "chapters": [
+    {
+      "id": 6,
+      "title": "Cerebrum & Cortical Functions",
+      "subtitle": "",
+      "emoji": "🧠",
+      "page": 6,
+      "lectureRange": "L1-L5",
+      "subjects": [
+        {
+          "id": "anatomy",
+          "name": "Anatomy",
+          "iconName": "anatomy",
+          "lectures": "L1-L5",
+          "lectureCount": 5,
+          "questions": [
+            {
+              "id": "mcns2-ch6-anatomy-q1",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "A lesion in the Broca’s area of the cerebral hemisphere leads to:",
+              "explanation": "Broca's area is located in the inferior frontal gyrus of the dominant hemisphere. It coordinates the motor aspects of speech production. Lesions here cause motor aphasia with hesitant, non-fluent speech but preserved comprehension.",
+              "keyConcept": "Broca's area lesion causes motor aphasia",
+              "options": [
+                "Motor aphasia.",
+                "Sensory aphasia.",
+                "Hemiplegia.",
+                "Return of grasp reflex.",
+                "Astereognosis."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch6-anatomy-q2",
+              "type": "matching",
+              "lecture": 1,
+              "text": "Match cortical area in left column with its lesion in right column: Broca’s area.",
+              "explanation": "Broca's area in the inferior frontal gyrus controls motor speech production. Lesions in the dominant hemisphere cause motor aphasia (difficulty producing speech with preserved comprehension).",
+              "keyConcept": "Broca's area causes motor aphasia when lesioned",
+              "pairs": [
+                {
+                  "premise": "1) Broca’s area",
+                  "target": "Motor aphasia."
+                }
+              ]
+            },
+            {
+              "id": "mcns2-ch6-anatomy-q3",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Frontal lobe in dominant hemisphere contains the following areas Except:",
+              "explanation": "Wernicke's speech area is located in the posterior superior temporal gyrus, not in the frontal lobe. The frontal lobe contains areas 4, 6, 8, and supplementary motor area.",
+              "keyConcept": "Wernicke's area is in temporal lobe, not frontal",
+              "options": [
+                "Primary motor area (4).",
+                "Frontal eye field (8).",
+                "Supplementary motor area (Ms II).",
+                "Premotor area (6).",
+                "Wernicke's speech area."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch6-anatomy-q4",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Broca’s area:",
+              "explanation": "Broca's area is the motor speech center present in the dominant hemisphere (usually left). It is located in the inferior frontal gyrus and coordinates speech production, not sensory aspects.",
+              "keyConcept": "Broca's area present in dominant hemisphere only",
+              "options": [
+                "Is the sensory speech center.",
+                "It is located in middle frontal gyrus.",
+                "It is present in the dominant hemisphere.",
+                "All of the above.",
+                "None of the above."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch6-anatomy-q5",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Parietal lobe in the dominant hemisphere is concerned with the following Except:",
+              "explanation": "Facial recognition is processed in the inferior temporal lobe (fusiform gyrus), not the parietal lobe. The parietal lobe is concerned with stereognosis, proprioception, and spatial processing.",
+              "keyConcept": "Facial recognition in temporal, not parietal lobe",
+              "options": [
+                "Facial recognition.",
+                "Stereognosis.",
+                "Perception of proprioceptive impulses.",
+                "Perception of exteroceptive impulses.",
+                "Comprehension of received auditory & visual information."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch6-anatomy-q6",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Cortical areas in temporal lobe include all the following Except:",
+              "explanation": "Area for control of involuntary conjugate lateral eye movements is the occipital eye field (area 18), not the temporal lobe. The temporal lobe contains auditory areas and parts of Wernicke's area and facial recognition area.",
+              "keyConcept": "Involuntary eye movement control is occipital, not temporal",
+              "options": [
+                "Part of facial recognition area.",
+                "Part of Wernicke's area.",
+                "Primary auditory area.",
+                "Secondary auditory area.",
+                "Area for control of involuntary conjugate lateral movements of eye."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch6-anatomy-q7",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The frontal lobe of the non-dominant hemisphere is concerned with which of the following functions:",
+              "explanation": "The non-dominant hemisphere (usually right) is primarily responsible for control of behavior, emotional expression, and visuospatial functions. The dominant hemisphere handles speech and language.",
+              "keyConcept": "Non-dominant frontal lobe controls behavior/emotions",
+              "options": [
+                "Production of speech.",
+                "Understanding of speech.",
+                "Reflex conjugate eye movement.",
+                "Receiving auditory stimuli.",
+                "Control of behavior."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch6-anatomy-q8",
+              "type": "case",
+              "lecture": 1,
+              "text": "A lady 55 years old, developed right sided hemiplegia mainly in the upper limb due to cerebrovascular accident as proved by MRI. The lesion affects the frontal and parietal lobes.",
+              "explanation": "The presentation of right-sided hemiplegia predominantly affecting the upper limb, with frontal and parietal lobe involvement on MRI, suggests a stroke in the territory of the middle cerebral artery (MCA), specifically the superior division.",
+              "keyConcept": "Upper limb‑predominant hemiplegia with frontal/parietal involvement indicates MCA territory infarction affecting the motor cortex homunculus.",
+              "subQuestions": [
+                {
+                  "id": "mcns2-ch6-anatomy-q8-sq1",
+                  "type": "mcq",
+                  "text": "What is your diagnosis?",
+                  "explanation": "The presentation of right-sided hemiplegia predominantly affecting the upper limb, with frontal and parietal lobe involvement on MRI, suggests a stroke in the territory of the middle cerebral artery (MCA), specifically the superior division.",
+                  "keyConcept": "Upper limb‑predominant hemiplegia with frontal/parietal involvement indicates MCA territory infarction affecting the motor cortex homunculus.",
+                  "options": [],
+                  "correctIndex": 0
+                },
+                {
+                  "id": "mcns2-ch6-anatomy-q8-sq2",
+                  "type": "mcq",
+                  "text": "Which vessel is most likely affected?",
+                  "explanation": "The presentation of right-sided hemiplegia predominantly affecting the upper limb, with frontal and parietal lobe involvement on MRI, suggests a stroke in the territory of the middle cerebral artery (MCA), specifically the superior division.",
+                  "keyConcept": "Upper limb‑predominant hemiplegia with frontal/parietal involvement indicates MCA territory infarction affecting the motor cortex homunculus.",
+                  "options": [],
+                  "correctIndex": 0
+                }
+              ]
+            },
+            {
+              "id": "mcns2-ch6-anatomy-q9",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Regarding Broca’s area, select the correct answer:",
+              "explanation": "Broca's area is located in the inferior frontal gyrus (not middle) and is a motor speech center (not sensory). It is present in the dominant hemisphere (usually left) and is supplied by the middle cerebral artery, not anterior cerebral artery.",
+              "keyConcept": "Broca's area: motor speech center in inferior frontal gyrus of dominant hemisphere, supplied by MCA.",
+              "options": [
+                "It is a sensory speech center",
+                "It is located in middle frontal gyrus",
+                "It is present in the dominant hemisphere",
+                "It is supplied by anterior cerebral artery",
+                "None of the above is correct"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch6-anatomy-q10",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Frontal lobe in the dominant hemisphere is concerned with the following functions Except:",
+              "explanation": "Understanding received auditory information (receptive language) is a function of Wernicke's area in the temporal lobe, not the frontal lobe. The frontal lobe handles speech production, skilled movements, eye movement initiation, and behavior control.",
+              "keyConcept": "Frontal lobe functions: speech production (Broca), skilled movements, conjugate eye movements, behavior control.",
+              "options": [
+                "Production of speech",
+                "Performance of skilled movements",
+                "Initiation of conjugate lateral eye movements",
+                "Understanding of received auditory information",
+                "Control of behavior"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch6-anatomy-q11",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Frontal lobe in the non-dominant hemisphere contains the following areas Except:",
+              "explanation": "Wernicke's speech area is located in the temporal lobe (superior temporal gyrus), not in the frontal lobe of the non-dominant hemisphere. The non-dominant hemisphere contains the same motor areas as the dominant but lacks speech areas.",
+              "keyConcept": "Non-dominant hemisphere frontal lobe contains motor areas (4,6,8) but NOT Wernicke's area (temporal lobe).",
+              "options": [
+                "Primary motor area (4)",
+                "Frontal eye field (I)",
+                "Supplementary motor area (MS II)",
+                "Premotor area (6)",
+                "Werneck’s speech area"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch6-anatomy-q12",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Parietal lobe in the dominant hemisphere is concerned with the following Except:",
+              "explanation": "Facial recognition (prosopagnosia) is a function of the fusiform face area in the inferior temporal lobe, not the parietal lobe. The dominant parietal lobe handles stereognosis, cutaneous and proprioceptive perception, and language comprehension.",
+              "keyConcept": "Parietal lobe: stereognosis, sensation, proprioception; prosopagnosia involves temporal fusiform area.",
+              "options": [
+                "Facial recognition",
+                "Stereognosis",
+                "Perception of cutaneous stimuli",
+                "Perception of proprioceptive impulses",
+                "Comprehension of received auditory & visual information"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch6-anatomy-q13",
+              "type": "essay",
+              "lecture": 1,
+              "text": "What is the site of Broca’s area?",
+              "explanation": "Broca's area is located in the pars triangularis and pars opercularis of the inferior frontal gyrus of the dominant hemisphere. It is the motor speech center, responsible for speech production.",
+              "keyConcept": "Broca's area: inferior frontal gyrus (pars triangularis + opercularis), dominant hemisphere.",
+              "modelAnswer": "Pars triangularis and pars opercularis of the inferior frontal gyrus in the dominant hemisphere (usually left). This is the motor speech area responsible for expressive language production."
+            },
+            {
+              "id": "mcns2-ch6-anatomy-q14",
+              "type": "essay",
+              "lecture": 1,
+              "text": "What is the site of supplementary motor area?",
+              "explanation": "The supplementary motor area (MII, area 6 on the medial surface) is located in the medial frontal gyrus, anterior to the paracentral lobule. It is involved in speech planning and initiation.",
+              "keyConcept": "Supplementary motor area: medial frontal gyrus, medial surface of frontal lobe.",
+              "modelAnswer": "Medial frontal gyrus (medial surface of frontal lobe), anterior to the paracentral lobule. Also called MII or SMA, involved in planning and initiating complex movements including speech."
+            },
+            {
+              "id": "mcns2-ch6-anatomy-q15",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Mention the relations of corpus callosum",
+              "explanation": "The corpus callosum is related superiorly to the falx cerebri and anterior cerebral arteries, and inferiorly to the fornix and septum pellucidum, making it a key anatomical landmark in the interhemispheric fissure.",
+              "keyConcept": "Corpus callosum superior and inferior relations",
+              "modelAnswer": "Superiorly: Falx cerebri and Anterior cerebral arteries\nInferiorly: Fornix and septum pellucidum"
+            },
+            {
+              "id": "mcns2-ch6-anatomy-q16",
+              "type": "essay",
+              "lecture": 1,
+              "text": "What is the clinical feature that can assist in distinguishing Frontotemporal lobe degeneration from Alzheimer's Disease?",
+              "explanation": "Model Answer: Early prominent personality changes, behavioral disinhibition, and language difficulties (aphasia) suggest Frontotemporal Lobar Degeneration (FTLD), while early memory impairment with visuospatial dysfunction suggests Alzheimer's Disease. FTLD typically presents before age 65 with frontal/executive deficits.",
+              "keyConcept": "FTLD presents with early behavioral changes and preserved memory, distinguishing it from amnestic Alzheimer's presentation.",
+              "modelAnswer": "Clinical features distinguishing frontotemporal lobar degeneration (FTLD) from Alzheimer's disease include: 1) FTLD presents with early behavioral changes (disinhibition, apathy, compulsions) or language deficits, while memory and spatial orientation are relatively preserved early on. 2) AD presents with early anterograde amnesia and progressive memory loss. 3) FTLD onset is typically earlier (45-65 years) compared to AD. 4) FTLD shows frontal and temporal lobe atrophy on imaging, while AD shows hippocampal and medial temporal lobe atrophy."
+            },
+            {
+              "id": "mcns2-ch6-anatomy-q17",
+              "type": "mcq",
+              "lecture": 5,
+              "text": "Where is the supplementary motor area located?",
+              "explanation": "The supplementary motor area (SMA) is located in the medial surface of frontal lobe, anterior to the primary motor cortex (area 4), in Brodmann area 6.",
+              "keyConcept": "SMA is medial frontal cortex involved in motor planning, located anterior to primary motor cortex.",
+              "options": [
+                "Superior frontal gyrus",
+                "Inferior frontal gyrus",
+                "Precentral gyrus",
+                "Postcentral gyrus",
+                "Medial frontal gyrus"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch6-anatomy-q18",
+              "type": "mcq",
+              "lecture": 5,
+              "text": "Which function is primarily controlled by the primary motor cortex (area 4)?",
+              "explanation": "The primary motor cortex (area 4) controls discrete, fine voluntary movements, especially of the distal limbs. It contains large pyramidal neurons (Betz cells) in layer V.",
+              "keyConcept": "Primary motor cortex mediates fine, skilled voluntary movements via Betz cells and corticospinal output.",
+              "options": [
+                "Planning complex movements",
+                "Converting plans into movements",
+                "Processing sensory input",
+                "Gives you the idea to move",
+                "Controlling eye movements"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch6-anatomy-q19",
+              "type": "mcq",
+              "lecture": 5,
+              "text": "Broca’s area is located in......",
+              "explanation": "Broca's area (expressive speech center) is located in the inferior frontal gyrus of the dominant hemisphere (usually left), Brodmann areas 44 and 45.",
+              "keyConcept": "Broca's area in the inferior frontal gyrus controls motor speech production.",
+              "options": [
+                "Superior frontal gyrus",
+                "Middle frontal gyrus",
+                "Inferior frontal gyrus",
+                "Precentral gyrus",
+                "Anterior part of paracentral lobule"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch6-anatomy-q20",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "Primary integrative neuron of cerebral Cortex:",
+              "explanation": "Purkinje cells are the primary integrative neurons of the cerebellar cortex, receiving input from climbing and parallel fibers and outputting via their axons to deep nuclei.",
+              "keyConcept": "Purkinje cell function",
+              "options": [
+                "granular cell",
+                "purkinje cell",
+                "golgi cell",
+                "Molecular cells"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch6-anatomy-q21",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "A 52‑year‑old man has had progressive headaches and concentration difficulties for two months. His behaviour becomes odd, and he then suffers a generalised seizure. MRI shows a large, necrotic mass in the left cerebral hemisphere that crosses the corpus callosum into the right hemisphere. Which neoplasm is most likely?",
+              "explanation": "Glioblastoma multiforme typically crosses the corpus callosum (butterfly glioma), shows necrosis and ring enhancement, and has poor prognosis.",
+              "keyConcept": "Glioblastoma features",
+              "options": [
+                "Pilocytic astrocytoma",
+                "Meningioma",
+                "Metastatic adenocarcinoma",
+                "Medulloblastoma",
+                "Glioblastoma"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch6-anatomy-q22",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Site of Broca’s area:",
+              "explanation": "Broca's area (speech apraxia) is located in the inferior frontal gyrus (areas 44, 45) of the dominant hemisphere, usually the left.",
+              "keyConcept": "Broca's area location",
+              "modelAnswer": "Inferior frontal gyrus (areas 44, 45) of dominant hemisphere."
+            },
+            {
+              "id": "mcns2-ch6-anatomy-q23",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Lesion of Broca’s area:",
+              "explanation": "Lesion of Broca's area causes expressive (motor) aphasia: non-fluent speech with good comprehension but impaired repetition.",
+              "keyConcept": "Broca's area lesion",
+              "modelAnswer": "Expressive aphasia: non-fluent speech, good comprehension, poor repetition."
+            },
+            {
+              "id": "mcns2-ch6-anatomy-q24",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Site of supplementary motor area:",
+              "explanation": "The supplementary motor area (SMA) is located on the medial surface of the frontal lobe anterior to the leg area of M1.",
+              "keyConcept": "SMA location",
+              "modelAnswer": "Medial frontal lobe above area 4."
+            },
+            {
+              "id": "mcns2-ch6-anatomy-q25",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following is a function of the prefrontal cortex?",
+              "explanation": "The prefrontal cortex mediates executive functions including planning, decision-making, personality expression, and social behavior, distinguishing humans from other primates.",
+              "keyConcept": "Prefrontal cortex: executive functions and personality.",
+              "options": [
+                "Primary motor control",
+                "Visual processing",
+                "Executive functions and personality",
+                "Auditory perception"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch6-anatomy-q26",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The genu of the corpus callosum is supplied mainly by the:",
+              "explanation": "The ACA supplies the genu of the corpus callosum.",
+              "keyConcept": "Genu of corpus callosum supplied by anterior cerebral artery.",
+              "options": [
+                "Middle cerebral artery",
+                "Anterior cerebral artery",
+                "Posterior cerebral artery",
+                "Anterior choroidal artery",
+                "Posterior communicating artery"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch6-anatomy-q27",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The supplementary motor area is located in the:",
+              "explanation": "The SMA lies on the medial frontal gyrus, anterior to the leg area.",
+              "keyConcept": "Supplementary motor area located in medial aspect of frontal lobe (medial area 6).",
+              "options": [
+                "Medial frontal gyrus",
+                "Inferior frontal gyrus",
+                "Precentral gyrus",
+                "Postcentral gyrus",
+                "Superior parietal lobule"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch6-anatomy-q28",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Broca's motor speech area lies in the:",
+              "explanation": "Broca's area = pars opercularis/triangularis of the inferior frontal gyrus.",
+              "keyConcept": "Brocas motor speech area in inferior frontal gyrus (dominant hemisphere).",
+              "options": [
+                "Superior temporal gyrus",
+                "Inferior frontal gyrus",
+                "Supramarginal gyrus",
+                "Angular gyrus",
+                "Medial frontal gyrus"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch6-anatomy-q29",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The frontal lobe of cerebral hemisphere DOESN'T include ……… area.",
+              "explanation": "The primary somatosensory area (postcentral gyrus, area 1-3) is in the parietal lobe, not the frontal lobe. Frontal lobe contains premotor, prefrontal, and Broca's areas.",
+              "keyConcept": "Frontal lobe doesn't include primary somatosensory (it's parietal).",
+              "options": [
+                "Premotor",
+                "Primary somatosensory",
+                "Prefrontal",
+                "Broca's"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch6-anatomy-q30",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The area of reflex (involuntary) conjugate eye movement lies in ……… lobe of the cerebral hemisphere.",
+              "explanation": "The occipital lobe contains the area for reflex (involuntary) conjugate eye movements - the visual fixation center in the frontal eye field projects to superior colliculus for reflexive gaze.",
+              "keyConcept": "Reflex conjugate eye movement area: occipital lobe.",
+              "options": [
+                "Frontal",
+                "Parietal",
+                "Temporal",
+                "Occipital"
+              ],
+              "correctIndex": 0
+            }
+          ]
+        },
+        {
+          "id": "physiology",
+          "name": "Physiology",
+          "iconName": "physiology",
+          "lectures": "L1-L5",
+          "lectureCount": 5,
+          "questions": [
+            {
+              "id": "mcns2-ch6-physiology-q1",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Pre-motor cortex:",
+              "explanation": "Pre-motor cortex controls movements like speech, eye and head movements. Option B is correct. The premotor area (area 6) is rostral to motor cortex and programs movements, especially those involving proximal muscles and axial/girdle muscles. Option A is wrong (premotor is in frontal lobe, not temporal). Option C is wrong (facilitates stretch reflex is area 4). Option D is wrong (fine skilled movements are area 4).",
+              "keyConcept": "Premotor cortex (area 6) programs complex movements involving speech, eye, and head coordination.",
+              "options": [
+                "Is found in the temporal cortex.",
+                "Control movements as speech, eye and head movements.",
+                "Facilitates the stretch reflex.",
+                "Initiates fine skilled movements."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch6-physiology-q2",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Lesion in frontal lobe speech center produces:",
+              "explanation": "Lesion in Broca's area (frontal lobe speech center) produces expressive aphasia - difficulty producing speech despite understanding. The patient knows what they want to say but cannot articulate. Sensory aphasia (Wernicke's) affects comprehension; motor aphasia affects speech production.",
+              "keyConcept": "Broca's area lesion: expressive (motor) aphasia - non-fluent, effortful speech with preserved comprehension.",
+              "options": [
+                "Speech muscle paralysis.",
+                "Inability to select appropriate words.",
+                "Inability to process visual languages.",
+                "Sensory aphasia.",
+                "Expressive defect in speech."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch6-physiology-q3",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The primary role of amygdala in memory is:",
+              "explanation": "The amygdala processes the emotional significance of memories (fear conditioning, emotional tagging) but does not store semantic memory, initiate synaptic changes, or handle short-term memory operation. The hippocampus handles consolidation and storage.",
+              "keyConcept": "Amygdala: emotional component of memory (fear, emotional tagging). Hippocampus: consolidation and declarative memory.",
+              "options": [
+                "Storage of semantic memory.",
+                "Consolidation of memory.",
+                "Operation of short-term memory.",
+                "Processing and remembering the emotional component of memories.",
+                "Initiation of synaptic changes needed for memory storage."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch6-physiology-q4",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which sentence is NOT true about the Amygdala:",
+              "explanation": "The amygdala is NOT the area for consolidation of memory - that is the hippocampus. The amygdala processes emotional responses and emotional components of memories. Lesion leads to hypoactive emotional response, not hyperphagia. Stimulation causes rage.",
+              "keyConcept": "Amygdala: emotional processing of memories. Hippocampus: memory consolidation. Different structures.",
+              "options": [
+                "Is involved in processing of the emotional components of memories.",
+                "Is involved in processing of the emotional responses to odors.",
+                "Its lesion leads to hyperphagia and omniphagia.",
+                "Its stimulation leads to rage and aggression.",
+                "Is the area for consolidation of memory."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch6-physiology-q5",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "What is the role of the amygdala in smell?",
+              "explanation": "The amygdala processes emotional aspects of olfactory stimuli, particularly those associated with fear and reward, connecting olfactory information with emotional and behavioral responses.",
+              "keyConcept": "Amygdala olfactory-emotional processing",
+              "options": [
+                "Perception and discrimination of odor",
+                "Emotional response to odors",
+                "Olfactory memories",
+                "Modulation of taste"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch6-physiology-q6",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "Infarction of blood vessels supplying the cerebral cortex most commonly results in:",
+              "explanation": "Cerebral cortical infarction typically causes upper motor neuron lesions resulting in spastic paralysis, as the corticospinal tract controls voluntary movement and its interruption leads to hypertonia and hyperreflexia.",
+              "keyConcept": "Upper motor neuron lesion",
+              "options": [
+                "Spastic paralysis",
+                "Flaccid paralysis",
+                "Sensory loss only",
+                "Ataxia",
+                "Hypotonia"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch6-physiology-q7",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Vascular infarcts involve motor cortex after few weeks will be associated with which of the following:\nA. Spastic muscle paralysis\nB. Flaccid muscle paralysis\nC. No paralysis, only jerky, fast movements\nD. Loss of sensation in ipsilateral foot.\nE. Loss of sensation in the contralateral foot.",
+              "explanation": "After vascular infarcts involving motor cortex, spastic muscle paralysis develops over weeks due to loss of upper motor neuron inhibition of spinal reflexes, resulting in hypertonia and hyperreflexia.",
+              "keyConcept": "Motor cortex infarct: spastic paralysis develops over weeks.",
+              "options": [
+                "Spastic muscle paralysis",
+                "Flaccid muscle paralysis",
+                "No paralysis, only jerky, fast movements",
+                "Loss of sensation in ipsilateral foot",
+                "Loss of sensation in the contralateral foot"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch6-physiology-q8",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Elaboration of thoughts is considered one of the functions of which of the following areas?\nA. Wernicke’s area\nB. Parietal cortex\nC. Visual association area\nD. Prefrontal association area\nE. Auditory association area",
+              "explanation": "The prefrontal association area is responsible for elaborating thoughts, planning, and integrating information from various cortical regions for complex cognitive tasks.",
+              "keyConcept": "Prefrontal association area: elaboration of thoughts.",
+              "options": [
+                "Wernicke’s area",
+                "Parietal cortex",
+                "Visual association area",
+                "Prefrontal association area",
+                "Auditory association area"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch6-physiology-q9",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Damage to Broca’s area causes which one of the following?\nA. Visual agnosia\nB. Paralysis of muscles of pharynx and larynx\nC. Limitation of vocabulary to very few words\nD. Non understandable excessive words\nE. Inattention and neglect",
+              "explanation": "Broca's aphasia causes non-fluent, effortful speech with limited vocabulary as the patient struggles to motor-plan speech output, though language comprehension remains intact.",
+              "keyConcept": "Broca's lesion: limited vocabulary, non-fluent but comprehension preserved.",
+              "options": [
+                "Visual agnosia",
+                "Paralysis of muscles of pharynx and larynx",
+                "Limitation of vocabulary to very few words",
+                "Non understandable excessive words",
+                "Inattention and neglect"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch6-physiology-q10",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Anomic aphasia is mostly due to lesion near which of following areas?\nA. Angular gyrus\nB. Arcuate fasiculus\nC. Broca's area\nD. Wernicke's area\nE. Exner's area",
+              "explanation": "Anomic aphasia (word-finding difficulty) commonly results from lesions near the angular gyrus, disrupting lexical retrieval while preserving other language functions.",
+              "keyConcept": "Anomic aphasia: angular gyrus lesion.",
+              "options": [
+                "Angular gyrus",
+                "Arcuate fasiculus",
+                "Broca's area",
+                "Wernicke's area",
+                "Exner's area"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch6-physiology-q11",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which one of the followings is concerned with motivation?\nA. Wernicke’s area\nB. Piriform cortex\nC. Prefrontal association area\nD. Entorhinal cortex\nE. Amygdala",
+              "explanation": "The amygdala is centrally involved in motivation and emotional processing, particularly fear and reward-related behaviors, through its connections with hypothalamus and brainstem.",
+              "keyConcept": "Amygdala: motivation and emotional processing.",
+              "options": [
+                "Wernicke’s area",
+                "Piriform cortex",
+                "Prefrontal association area",
+                "Entorhinal cortex",
+                "Amygdala"
+              ],
+              "correctIndex": 0
+            }
+          ]
+        },
+        {
+          "id": "histology",
+          "name": "Histology",
+          "iconName": "histology",
+          "lectures": "L1-L5",
+          "lectureCount": 5,
+          "questions": [
+            {
+              "id": "mcns2-ch6-histology-q1",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Martinoti cells of cerebral cortex are characterized by:",
+              "explanation": "Martinotti cells have axons directed UPWARDS (toward the cortical surface). Their dendrites extend laterally, cell bodies are multipolar (not rounded), and they use various neurotransmitters. They are inhibitory interneurons in the cortex.",
+              "keyConcept": "Martinotti cells: cortical interneurons with ascending axons; deliver inhibitory signals to superficial layers.",
+              "options": [
+                "Their dendrites are directed laterally.",
+                "Their axons are directed upwards.",
+                "Their cell bodies are rounded.",
+                "Their neurotransmitter is acetyl choline.",
+                "their cytoplasm is basophilic."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch6-histology-q2",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Giant cells of Betz are present in which layer of cerebral cortex:",
+              "explanation": "Giant cells of Betz are found in the INNER PYRAMIDAL layer (layer V) of the motor cortex. These are the largest neurons in the CNS and give rise to corticospinal tract fibers. They are characteristic of the primary motor area.",
+              "keyConcept": "Betz cells: giant pyramidal neurons in layer V of motor cortex; corticospinal tract origin.",
+              "options": [
+                "Outer pyramidal",
+                "Inner pyramidal",
+                "Outer granular",
+                "Molecular"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch6-histology-q3",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Cerebral cortex is characterized by:",
+              "explanation": "Cerebral cortex has both laminar (6 layers) and columnar (functional minicolumns) organization. It has a folded surface (gyri and sulci), varying thickness, different neuron shapes in different layers, and shows plasticity.",
+              "keyConcept": "Cerebral cortex: 6 layers, columnar organization, folded surface, varying thickness, high plasticity.",
+              "options": [
+                "Has smooth surface.",
+                "Neurons of the same shapes",
+                "Layers of the same thickness all over the brain",
+                "Has both laminar & columnar arrangement",
+                "It lacks plasticity."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch6-histology-q4",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "All of the following are layers of cerebral cortex EXCEPT",
+              "explanation": "Purkinje layer is a layer of the CEREBELLAR cortex, not cerebral cortex. The cerebral cortex layers are: molecular (I), external granular (II), external pyramidal (III), internal granular (IV), internal pyramidal (V), multiform (VI).",
+              "keyConcept": "Cerebral cortex 6 layers: I molecular, II external granular, III external pyramidal, IV internal granular, V internal pyramidal, VI multiform. Cerebellar cortex: molecular, Purkinje, granular.",
+              "options": [
+                "molecular layer",
+                "purkinje layer",
+                "external granular layer",
+                "internal granular layer",
+                "multiform layer"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch6-histology-q5",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "All of the following are histological layers of the cerebral cortex except:",
+              "explanation": "Purkinje cells are characteristic of the CEREBELLAR cortex, not cerebral cortex. The cerebral cortex has 6 layers: molecular, external granular, external pyramidal, internal granular, internal pyramidal, and multiform. The cerebellar cortex has 3 layers.",
+              "keyConcept": "Cerebral cortex layers: I-VI (6 layers). Cerebellar cortex: molecular, Purkinje, granular (3 layers).",
+              "options": [
+                "Pyramidal",
+                "Molecular",
+                "Granular",
+                "Purkinje"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch6-histology-q6",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "All of the following are cells of the cerebral cortex except:",
+              "explanation": "All of these - pyramidal cells, granular cells, fusiform cells, and Martinotti cells - ARE cells of the cerebral cortex. Pyramidal cells are the most common excitatory neurons. Granular cells are small interneurons. Fusiform cells are in the deep layer. Martinotti cells have ascending axons.",
+              "keyConcept": "Cerebral cortex neurons: pyramidal (main), granular, fusiform, Martinotti, basket, Chandelier cells.",
+              "options": [
+                "Pyramidal cells",
+                "Granular cells",
+                "Fusiform cells",
+                "Cells of Martinotti",
+                "None of the above"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch6-histology-q7",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "Martinotti cells of cerebral cortex are characterized by:",
+              "explanation": "Martinotti cells are characterized by being inner pyramidal cells (layer V) of the cerebral cortex. They have axons that ascend to the molecular layer.",
+              "keyConcept": "Martinotti cells are inner pyramidal cells (layer V) of cerebral cortex",
+              "options": [
+                "Inner pyramidal cells.",
+                "Outer pyramidal cells.",
+                "Giant cells of Betz.",
+                "None of the above."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch6-histology-q8",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "Giant cells of Betz are present in which layer of cerebral cortex?",
+              "explanation": "Giant cells of Betz are large pyramidal neurons found in layer V (inner pyramidal layer) of the primary motor cortex. They give rise to the corticospinal tract.",
+              "keyConcept": "Giant cells of Betz in layer V (inner pyramidal) of primary motor cortex",
+              "options": [
+                "Outer pyramidal.",
+                "Inner pyramidal.",
+                "Molecular.",
+                "Granular."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch6-histology-q9",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "Cerebral cortex is characterized by:",
+              "explanation": "The cerebral cortex has both laminar organization (6 distinct layers) and columnar arrangement (functional columns of neurons). The surface is folded into gyri and sulci, neurons vary in shape, and layer thickness varies by region.",
+              "keyConcept": "Cerebral cortex has both laminar (6 layers) and columnar arrangement",
+              "options": [
+                "Has smooth surface.",
+                "Neurons of the same shapes.",
+                "Layers of the same thickness all over the brain.",
+                "Has both laminar & columnar arrangement."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch6-histology-q10",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "All of the following are layers of cerebral cortex EXCEPT:",
+              "explanation": "The cerebral cortex has six layers: molecular (I), external granular (II), external pyramidal (III), internal granular (IV), internal pyramidal (V), and multiform (VI). The Purkinje layer is in the cerebellar cortex, not cerebral cortex.",
+              "keyConcept": "Purkinje layer is in cerebellum NOT cerebral cortex (cerebral has 6 layers, not Purkinje)",
+              "options": [
+                "Molecular layer.",
+                "Purkinje layer.",
+                "External granular layer.",
+                "Internal granular layer."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch6-histology-q11",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "A 50-year-old man has a 3cm diameter left frontal lobe mass with areas of calcification. Microscopically, sheets of regular cells with spherical nuclei surrounded by clear halo of cytoplasm are seen. Which of the following diagnosis is most likely to be made on microscopic examination of this mass?",
+              "explanation": "Oligodendrogliomas have characteristic 'fried egg' cells (spherical nuclei with clear halo cytoplasm), often calcified, in the frontal lobe. They arise from oligodendrocytes and are slow-growing.",
+              "keyConcept": "Oligodendroglioma: 'fried egg' cells with clear halo, calcifications, frontal lobe",
+              "options": [
+                "Thrombosed berry aneurysm.",
+                "Oligodendroglioma.",
+                "Meningioma.",
+                "Schwannoma."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch6-histology-q12",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "The biopsy of a ring-enhancing tumor in the left parietal lobe of a 60-year-old patient reveals an astrocytic tumor that displays marked cellular atypia, mitotic activity, areas of pseudopalisading necrosis & multifocal microvascular hyperplasia. The diagnosis is:",
+              "explanation": "Ring-enhancing tumor with pseudopalisading necrosis and microvascular hyperplasia is diagnostic of glioblastoma multiforme (WHO grade IV). These features distinguish it from lower-grade astrocytomas.",
+              "keyConcept": "Pseudopalisading necrosis and microvascular hyperplasia = glioblastoma multiforme (grade IV)",
+              "options": [
+                "Astrocytoma grade 1.",
+                "Astrocytoma grade 2.",
+                "Anaplastic astrocytoma.",
+                "Astrocytoma grade 4 (Glioblastoma multiforme).",
+                "Pilocytic astrocytoma."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch6-histology-q13",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "A 33-year-old male presents with seizures, MRI shows an ill-defined area of infiltrative tumor expanding the frontal lobe. Biopsy of this lesion shows glial tissue with slightly increased cellularity and mild nuclear pleomorphism. No mitotic activity, no necrosis & no vascular proliferation. What is the most likely diagnosis?",
+              "explanation": "Grade II astrocytomas show increased cellularity, mild nuclear pleomorphism, but no mitotic activity, necrosis, or vascular proliferation. They are diffuse astrocytomas in young adults, slower growing than anaplastic or GBM.",
+              "keyConcept": "Grade II astrocytoma: slightly increased cellularity, mild pleomorphism, no necrosis/mitosis",
+              "options": [
+                "Astrocytoma grade 1.",
+                "Astrocytoma grade 2.",
+                "Anaplastic astrocytoma.",
+                "Astrocytoma grade 4."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch6-histology-q14",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "A male patient 40 years presented with left-sided hemiplegia, brain MRI revealed a space-occupying lesion in the right cerebral hemisphere. Biopsy examination showed a highly cellular tumor with malignant cells, areas of necrosis & vascular proliferation. The most possible diagnosis is:",
+              "explanation": "Glioblastoma multiforme shows highly cellular tumor with malignant cells, necrosis, and vascular proliferation. These features distinguish it from anaplastic astrocytoma (which lacks necrosis) and ependymoma.",
+              "keyConcept": "Glioblastoma: necrosis and vascular proliferation = hallmark features",
+              "options": [
+                "Glioblastoma multiforme.",
+                "Anaplastic astrocytoma.",
+                "Ependymoma.",
+                "Metastatic carcinoma.",
+                "Malignant meningioma."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch6-histology-q15",
+              "type": "mcq",
+              "lecture": 4,
+              "text": "Which statement is true regarding the layers of the cerebral cortex?",
+              "explanation": "The outer band of Baillarger (optic radiation fibers) is found in the inner granular layer (layer IV) of the cerebral cortex, while the inner band is in layer V.",
+              "keyConcept": "Cerebral cortex layers",
+              "options": [
+                "The outer band of Baillarger is present in the inner granular layer",
+                "The inner band of Baillarger is present in the molecular layer",
+                "The molecular layer contains large pyramidal cells",
+                "The inner granular layer lacks stellate cells",
+                "The multiform layer is the most superficial layer"
+              ],
+              "correctIndex": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1174 @@
+{
+  "schemaVersion": 1,
+  "meta": {
+    "moduleCode": "MCNS-2",
+    "moduleName": "Central Nervous System",
+    "year": 2,
+    "semester": 2,
+    "creditPoints": 6,
+    "totalMarks": 200,
+    "keywords": [
+      "CNS",
+      "Neuroanatomy",
+      "Neuropharmacology",
+      "Neurophysiology",
+      "Neuropathology"
+    ]
+  },
+  "chapterTitle": "VI. Diencephalon, Reticular Formation & Sleep",
+  "questions": [
+    {
+      "id": "mcns2-ch1-anatomy-q584",
+      "type": "essay",
+      "lecture": 1,
+      "text": "What are the contents of interpeduncular fossa?",
+      "explanation": "The contents of the interpeduncular fossa include the tuber cinereum (hypothalamic eminence), mammillary bodies (posterior), posterior perforated substance (vascular area), and the oculomotor nerve emerges from the medial side of the cerebral peduncle.",
+      "keyConcept": "Interpeduncular fossa contents: tuber cinereum, mammillary bodies, posterior perforated substance, CN III.",
+      "modelAnswer": "Tuber cinereum (hypothalamic eminence), mammillary bodies (part of Papez circuit), posterior perforated substance (contains central branches of posterior cerebral artery), and the oculomotor nerve (emerges between cerebral peduncles)."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q637",
+      "type": "essay",
+      "lecture": 1,
+      "text": "What are the connections of septal areas?",
+      "explanation": "The septal areas connect to the hypothalamus via the medial forebrain bundle and to the habenular nuclei via the stria medullaris thalami, forming key components of the limbic circuitry.",
+      "keyConcept": "Septal area connections and limbic circuitry",
+      "modelAnswer": "Medial forebrain bundle: connects septal areas and amygdala with the hypothalamus\nStria medullaris thalami: connects septal areas to the habenular nuclei"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q638",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Mention 1 connection carried out by the fornix.",
+      "explanation": "The fornix carries the major output tract of the hippocampus, connecting it to the mammillary bodies via the postcommissural fornix, thus completing the Papez circuit involved in memory and emotion.",
+      "keyConcept": "Fornix as hippocampus output pathway",
+      "modelAnswer": "Hippocampus and mamillary bodies"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q783",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Lemniscus of pathway from face and head called:",
+      "explanation": "The trigeminal lemniscus (trigeminothalamic tract) carries facial sensory information (touch, pain, temperature) from the principal sensory and spinal trigeminal nuclei to the VPM thalamus.",
+      "keyConcept": "Trigeminal lemniscus",
+      "options": [
+        "spinal",
+        "medial",
+        "lateral",
+        "trigeminal"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q822",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Anterior external arcuate fibres relay in:",
+      "explanation": "Anterior external arcuate fibers relay in the arcuate nucleus of the opposite side before projecting to the cerebellum.",
+      "keyConcept": "Anterior external arcuate relay",
+      "options": [
+        "Arcuate nucleus of the same side.",
+        "Arcuate nucleus of the opposite side.",
+        "Inferior olivary nucleus.",
+        "Dentate nucleus."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q833",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Trigeminal lemniscus is present in:",
+      "explanation": "The trigeminal lemniscus (trigeminothalamic tract) is present in the medulla and pons, carrying facial sensory information to the VPM thalamus.",
+      "keyConcept": "Trigeminal lemniscus location",
+      "options": [
+        "Medulla and Pons.",
+        "Pons and mid brain.",
+        "Mid brain.",
+        "Medulla."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q873",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The reticular activating system (RAS) is best described by which statement?",
+      "explanation": "The RAS receives sensory input from proprioceptors and various sensory modalities to maintain cortical arousal and alertness.",
+      "keyConcept": "Reticular activating system",
+      "options": [
+        "Its neurons are located only in the medulla oblongata.",
+        "Its neurons can be activated by sensory signals from proprioceptors.",
+        "Its activity is decreased by stress.",
+        "It discharges inhibitory signals to spinal motor neurons.",
+        "It is inhibited by ephedrine."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q874",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which EEG wave pattern indicates deep (slow‑wave) sleep in an adult?",
+      "explanation": "Delta waves (0.5-2 Hz, high amplitude) are the hallmark of deep slow-wave sleep in adults, replacing alpha rhythms.",
+      "keyConcept": "Delta sleep waves",
+      "options": [
+        "Alpha",
+        "Beta",
+        "Theta",
+        "Delta",
+        "Gamma"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q942",
+      "type": "essay",
+      "lecture": 1,
+      "text": "3 neurons for crude touch and pressure:",
+      "explanation": "Crude touch uses three neurons: DRG (first), nucleus proprius (second), VPL thalamus (third), ascending via anterior spinothalamic tract.",
+      "keyConcept": "Crude touch pathway",
+      "modelAnswer": "First order: DRG; Second order: nucleus proprius; Third order: VPL thalamus."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1041",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which structure is part of the diencephalon?",
+      "explanation": "The diencephalon consists of four major structures: thalamus, hypothalamus, epithalamus (including pineal gland), and subthalamus, surrounding the third ventricle.",
+      "keyConcept": "Diencephalon: thalamus, hypothalamus, epithalamus, subthalamus.",
+      "options": [
+        "Pineal gland",
+        "Superior colliculus",
+        "Mammillary body",
+        "Thalamus"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch4-anatomy-q4",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which of the following thalamic nuclei is related to the limbic system?",
+      "explanation": "The anterior thalamic nucleus is a key component of the limbic system Papez circuit, which includes the hippocampus, fornix, mammillary bodies, and cingulate gyrus. It receives input from the hippocampus via the fornix and mammillothalamic tract, and projects to the cingulate gyrus, playing a central role in emotion and memory.",
+      "keyConcept": "Anterior thalamic nucleus is part of Papez circuit (limbic system); connected to hippocampus and cingulate gyrus.",
+      "options": [
+        "Ventral postero-medial nucleus.",
+        "Ventral postero-lateral nucleus.",
+        "Pulvinar.",
+        "Anterior nucleus.",
+        "Ventral anterior nucleus."
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch4-anatomy-q6",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The anterior thalamic nucleus is connected to the:",
+      "explanation": "The anterior thalamic nucleus receives major input from the mammillary bodies via the mammillothalamic tract. The mammillary bodies receive input from the hippocampus via the fornix, completing the Papez circuit of the limbic system. It also projects back to the hippocampus indirectly.",
+      "keyConcept": "Anterior thalamic nucleus is connected to hypothalamus via mammillothalamic tract and Papez circuit.",
+      "options": [
+        "Hippocampus.",
+        "Cerebellum.",
+        "Basal ganglia.",
+        "Prefrontal cortex.",
+        "Hypothalamus."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch4-anatomy-q7",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which of the following is (are) included in the metathalamus:",
+      "explanation": "The metathalamus is the posterior part of the thalamus consisting of the medial and lateral geniculate bodies. The medial geniculate body relays auditory information; the lateral geniculate body relays visual information. The epithalamus (pineal body, habenular nuclei, posterior commissure) is a separate division.",
+      "keyConcept": "Metathalamus consists of medial and lateral geniculate bodies; relays auditory and visual impulses respectively.",
+      "options": [
+        "Geniculate bodies.",
+        "Pineal body.",
+        "Habenular nuclei.",
+        "Posterior commissure.",
+        "None of the above."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch4-anatomy-q8",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The medial surface of thalamus:",
+      "explanation": "The medial surface of the thalamus forms the lateral wall of the third ventricle, is limited inferiorly by the hypothalamic sulcus, and the two thalami are connected in about 80% of individuals by an interthalamic adhesion (massa intermedia). All the listed statements about the medial surface are correct.",
+      "keyConcept": "Medial surface of thalamus: forms lateral wall of 3rd ventricle, bounded below by hypothalamic sulcus, connected to opposite thalamus by interthalamic adhesion.",
+      "options": [
+        "Forms lateral wall of 3rd ventricle.",
+        "Is limited inferiorly by hypothalamic sulcus.",
+        "Is connected to the opposite surface by interthalamic adhesions.",
+        "All of the above.",
+        "A&B only."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch4-anatomy-q9",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Epithalamus is formed of:",
+      "explanation": "The epithalamus is the posterior portion of the thalamus comprising the pineal body, habenular nuclei, habenular commissure, and posterior commissure. It is involved in circadian rhythm regulation (via pineal melatonin secretion) and emotional processing related to the limbic system.",
+      "keyConcept": "Epithalamus comprises pineal body, habenular nuclei, and posterior commissure; regulates circadian rhythms.",
+      "options": [
+        "Pineal body.",
+        "Habenular nuclei.",
+        "Posterior commissure.",
+        "All of the above.",
+        "A&B only."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch4-anatomy-q17",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which of the following thalamic nuclei projects to the cingulate gyrus?",
+      "explanation": "The anterior thalamic nucleus is part of the limbic system's Papez circuit. It receives input from the hippocampus via the mammillothalamic tract and projects to the cingulate gyrus, which is involved in emotion, memory, and pain perception. This circuit is essential for emotional processing and memory consolidation.",
+      "keyConcept": "Anterior thalamic nucleus projects to cingulate gyrus as part of Papez limbic circuit.",
+      "options": [
+        "Anterior nucleus.",
+        "Ventral lateral nucleus.",
+        "Lateral geniculate body.",
+        "Pulvinar.",
+        "Ventral posterior lateral nucleus."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch4-anatomy-q18",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The thalamic nucleus that shares in formation of limbic system is:",
+      "explanation": "The dorsomedial (mediodorsal) nucleus of the thalamus is reciprocally connected with the prefrontal cortex and is a key component of the limbic system. It is involved in cognitive functions, emotion, and memory. It receives input from the hypothalamus and limbic structures, and projects to the prefrontal cortex.",
+      "keyConcept": "Dorsomedial nucleus is limbic-related; connects with prefrontal cortex for cognition and emotion.",
+      "options": [
+        "Dorso-medial nucleus.",
+        "Ventral posterolateral nucleus.",
+        "Ventral anterior nucleus.",
+        "Ventral lateral nucleus.",
+        "Lateral dorsal nucleus."
+      ],
+      "correctIndex": 4
+    },
+    {
+      "id": "mcns2-ch4-anatomy-q19",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Describe anterior thalamic nuclei.",
+      "explanation": "The anterior thalamic nuclei are a group of thalamic nuclei located at the anterior pole of the thalamus. They include the anteroventral, anterodorsal, and anteromedial nuclei. They receive major input from the mammillary bodies via the mammillothalamic tract and are key components of the limbic Papez circuit, involved in memory and emotional processing.",
+      "keyConcept": "Anterior thalamic nuclei receive mammillothalamic tract input; part of Papez circuit for memory and emotion.",
+      "modelAnswer": "The anterior thalamic nuclei are a group of nuclei at the anterior pole of the thalamus, comprising anteroventral, anterodorsal, and anteromedial nuclei. They receive: (1) Input from the mammillary bodies via the mammillothalamic tract. (2) Input from the hippocampus via the fornix. They project to the cingulate gyrus and prefrontal cortex via the thalamocingulate radiation. These nuclei are part of the limbic system (Papez circuit), involved in memory consolidation and emotional processing. The anteroventral nucleus is the largest and projects to the anterior cingulate cortex."
+    },
+    {
+      "id": "mcns2-ch4-anatomy-q22",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Describe blood supply of thalamus.",
+      "explanation": "The thalamus receives its blood supply primarily from the posterior cerebral circulation. The main sources are the posterior communicating artery, anterior choroidal artery (from internal carotid), and the P1 segment of the posterior cerebral artery. The tuberothalamic artery (from posterior communicating) supplies the anterior thalamic nuclei.",
+      "keyConcept": "Thalamic blood supply: posterior communicating artery, P1 segment of PCA, and anterior choroidal artery.",
+      "modelAnswer": "Blood supply of the thalamus: (1) Tuberothalamic artery (from posterior communicating artery)—supplies anterior thalamic nuclei. (2) Thalamoperforating arteries (from P1 segment of posterior cerebral artery)—supply VL, VA, and medial thalamus including the red nucleus. (3) Thalamogeniculate arteries (from P2 segment of PCA)—supply VPL, VPM, pulvinar, and lateral geniculate body. (4) Anterior choroidal artery (from internal carotid)—supplies part of the lateral thalamus and internal capsule. The posterior cerebral artery supplies most of the thalamus. The paramedian branches from the basilar artery supply the medial thalamus. Thalamic veins drain into the internal cerebral veins and basal veins."
+    },
+    {
+      "id": "mcns2-ch4-anatomy-q23",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Enumerate functions of hypothalamus.",
+      "explanation": "The hypothalamus is a small region at the base of the brain that serves as the master regulator of homeostasis. It controls autonomic, endocrine, and behavioral functions by maintaining the body's internal equilibrium. It integrates pituitary function with nervous system input and regulates circadian rhythms.",
+      "keyConcept": "Hypothalamus regulates homeostasis via autonomic, endocrine, and behavioral functions.",
+      "modelAnswer": "Functions of the hypothalamus: (1) Autonomic regulation—controls sympathetic and parasympathetic output via the autonomic nervous system (heart rate, blood pressure, GI motility). (2) Endocrine regulation—produces releasing and inhibiting hormones that control anterior pituitary (GnRH, TRH, CRH, GHRH, somatostatin); produces ADH and oxytocin stored in posterior pituitary. (3) Thermoregulation—monitors blood temperature and controls heat loss/production. (4) Food and water intake—hunger and thirst centers. (5) Circadian rhythms—suprachiasmatic nucleus regulates sleep-wake cycles. (6) Emotional and behavioral responses—part of the limbic system (rage, aggression, pleasure). (7) Sleep regulation—participates in sleep-wake cycles. (8) Cardiovascular regulation—influences blood pressure and heart rate."
+    },
+    {
+      "id": "mcns2-ch4-anatomy-q24",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Describe communications of hypothalamus with pituitary gland.",
+      "explanation": "The hypothalamus communicates with the pituitary gland through two pathways: the hypothalamo-hypophyseal portal system (for anterior pituitary) and the hypothalamo-hypophyseal tract (for posterior pituitary). The median eminence and infundibular stalk are key connection points.",
+      "keyConcept": "Hypothalamus-pituitary: portal system (anterior) and tract (posterior).",
+      "modelAnswer": "Communications of the hypothalamus with the pituitary gland: (1) Hypothalamo-hypophyseal portal system (anterior pituitary): Hypothalamic neurons in the arcuate and paraventricular nuclei secrete releasing/inhibiting hormones into the primary capillary plexus of the median eminence. These travel down the portal venules to the anterior pituitary, where they stimulate or inhibit hormone secretion from adenohypophyseal cells. (2) Hypothalamo-hypophyseal tract (posterior pituitary): Neurons with cell bodies in the supraoptic and paraventricular nuclei of the hypothalamus send axons down the infundibular stalk to the posterior pituitary. These axons release ADH (vasopressin) and oxytocin directly into the systemic circulation. (3) The infundibular stem connects the median eminence to the posterior pituitary, containing these axon tracts."
+    },
+    {
+      "id": "mcns2-ch4-anatomy-q25",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Regarding pituitary gland, all the following statements are true Except:",
+      "explanation": "Pituitary gland: in sella turcica, connected to hypothalamus via infundibulum, anterior lobe (adenohypophysis) and posterior lobe (neurohypophysis), has portal circulation.选项A正确. The answer is A. Portal system allows hypothalamic regulation.",
+      "keyConcept": "Pituitary: sella turcica, two lobes, portal circulation for hypothalamic control - posterior stores ADH/oxytocin.",
+      "options": [
+        "It lies in anterior part of the neck.",
+        "It is controlled by hypothalamus.",
+        "It has a portal system of veins.",
+        "Axons of nerve cells in hypothalamus carry hormones to the neurohypophysis.",
+        "The adenohypophysis secretes at least six different hormones."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch4-anatomy-q27",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The following are efferent hypothalamic fibers Except:",
+      "explanation": "Corticohypothalamic fibers are afferent (going TO hypothalamus FROM cortex), not efferent. Efferent hypothalamic tracts include supraoptic hypophyseal, tuberoinfundibular, mamillotegmental, and paraventriculohypophyseal tracts.",
+      "keyConcept": "Hypothalamic efferent tracts: supraoptic-hypophyseal, tuberoinfundibular, mamillotegmental, paraventriculohypophyseal.",
+      "options": [
+        "Corticohypothalamic",
+        "Supraoptic hypophyseal",
+        "Tuberoinfundibular",
+        "Mamillo tegmental",
+        "Para ventriculo hypophyseal"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch4-anatomy-q28",
+      "type": "essay",
+      "lecture": 1,
+      "text": "What’s the arterial supply of thalamus?",
+      "explanation": "The thalamus receives arterial blood from perforating branches of the posterior cerebral artery (PCA), specifically the posteromedial (for medial/anterior thalamus) and posterolateral (thalamogeniculate) groups, which are branches of the P2 segment of the PCA.",
+      "keyConcept": "Thalamic blood supply via PCA branches",
+      "modelAnswer": "Medial and anterior regions by posteromedial group of posterior cerebral artery\nLateral and posterior regions by posterolateral group of posterior cerebral artery (thalamogeniculate artery)"
+    },
+    {
+      "id": "mcns2-ch4-anatomy-q29",
+      "type": "essay",
+      "lecture": 1,
+      "text": "What’s the venous drainage of thalamus?",
+      "explanation": "Venous drainage of the thalamus is primarily via the thalamostriate vein (also called the terminal vein), which drains into the internal cerebral vein and subsequently contributes to the vein of Galen.",
+      "keyConcept": "Thalamic venous drainage via thalamostriate vein",
+      "modelAnswer": "The venous drainage of the thalamus is via the thalamostriate veins, which drain into the internal cerebral veins. These veins ultimately drain into the great cerebral vein (of Galen) and then into the straight sinus. The thalamus also drains via the basal vein to the great cerebral vein."
+    },
+    {
+      "id": "mcns2-ch4-anatomy-q30",
+      "type": "essay",
+      "lecture": 1,
+      "text": "What does lesion of hippocampus or papez circuit cause?",
+      "explanation": "Lesions to the hippocampus or Papez circuit cause anterograde amnesia (inability to form new memories) while preserving old memories, reflecting the hippocampus's critical role in memory consolidation.",
+      "keyConcept": "Hippocampal lesions and anterograde amnesia",
+      "modelAnswer": "Anterograde amnesia(loss of recent memory and preservation of old memory)"
+    },
+    {
+      "id": "mcns2-ch4-anatomy-q31",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "All characters of lateral spino-thalamic tract except:",
+      "explanation": "The lateral spinothalamic tract arises from the opposite side (after crossing in the spinal cord) and ascends through all brainstem levels to the thalamus.",
+      "keyConcept": "Lateral spinothalamic tract",
+      "options": [
+        "arise from SGR",
+        "arise at same side",
+        "arise at opposite side",
+        "ascend in pons"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch4-anatomy-q32",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Stimulation of the lateral hypothalamic area in an experimental animal produces:",
+      "explanation": "The lateral hypothalamus is the feeding (hunger) center; stimulation produces hunger and eating behavior, while destruction causes anorexia.",
+      "keyConcept": "Lateral hypothalamus function",
+      "options": [
+        "Feeding behaviour",
+        "Fear and aggression",
+        "Bradycardia",
+        "Oxytocin release",
+        "Hypothermia"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch7-anatomy-q4",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "All statements about ventral spinothalamic tract are true Except:",
+      "explanation": "The ventral spinothalamic tract decussates at the spinal cord level (not medulla) before ascending. It carries crude touch and pressure, lies in the anterior white column, and terminates in VPL of thalamus.",
+      "keyConcept": "Ventral spinothalamic decussates at spinal cord level",
+      "options": [
+        "Is concerned with crude touch and pressure.",
+        "Its fibers decussate in the medulla oblongata.",
+        "Terminates in ventral posterolateral nucleus of thalamus.",
+        "Shares in formation of spinal lemniscus.",
+        "Lies in the anterior white column."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch7-anatomy-q28",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which tract continues as the neospinothalamic pathway carrying pain and temperature sensations to the thalamus?",
+      "explanation": "The neospinothalamic tract carries fast, sharp pain and temperature via lateral spinothalamic fibers. It ascends through the brainstem and terminates in the ventral posterolateral (VPL) thalamic nucleus.",
+      "keyConcept": "Neospinothalamic tract conveys rapid, well-localized pain via direct pathway to thalamus.",
+      "options": [
+        "Spinoreticular tract",
+        "Medial lemniscus",
+        "Spinocerebellar tract",
+        "Spinal lemniscus",
+        "Corticospinal tract"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch7-anatomy-q29",
+      "type": "mcq",
+      "lecture": 4,
+      "text": "Which thalamic nuclei receive input from the paleospinothalamic tract?",
+      "explanation": "The paleospinothalamic tract (archispinothalamic) carries slow, dull pain and temperature to the intralaminar nuclei of the thalamus, which project diffusely to association cortex.",
+      "keyConcept": "Paleospinothalamic tract terminates in intralaminar thalamic nuclei for poorly localized pain.",
+      "options": [
+        "Ventral posterolateral nucleus (VPLN)",
+        "Ventral posteromedial nucleus (VPMN)",
+        "Spinal nucleus of trigeminal",
+        "Lateral geniculate",
+        "Intralaminar nucleus"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch7-anatomy-q36",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Ventral spinothalamic tract is:",
+      "explanation": "The ventral spinothalamic tract crosses at the spinal cord level and ascends through the brainstem, eventually reaching the thalamus via the spinal lemniscus.",
+      "keyConcept": "Ventral spinothalamic tract",
+      "options": [
+        "on same side",
+        "on opposite side",
+        "ascend in pons then thalamus",
+        "b, c"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q19",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which of the following shares in forming lateral wall of third ventricle?",
+      "explanation": "The lateral wall of the third ventricle is formed superiorly by the thalamus and inferiorly by the hypothalamus, separated by the hypothalamic sulcus. The hypothalamus forms the floor and contributes to the anterior wall. The epithalamus forms the posterior wall. Lamina terminalis forms the anterior wall.",
+      "keyConcept": "Lateral wall of 3rd ventricle is formed by thalamus (superior) and hypothalamus (inferior), separated by hypothalamic sulcus.",
+      "options": [
+        "Hypothalamus.",
+        "Epithalamus",
+        "Lamina terminalis.",
+        "Anterior commissure",
+        "Habenular nuclei."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q20",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The lateral wall of the third ventricle is formed by:",
+      "explanation": "The lateral wall of the third ventricle is formed superiorly by the thalamus and inferiorly by the hypothalamus, separated by the hypothalamic sulcus. Neither the lamina terminalis nor the anterior commissure forms the lateral wall; they are part of the anterior wall and intraventricular structures respectively.",
+      "keyConcept": "Lateral wall of 3rd ventricle is formed by thalamus (superior part) and hypothalamus (inferior part).",
+      "options": [
+        "Thalamus.",
+        "Hypothalamus.",
+        "Lamina terminalis.",
+        "All of the above.",
+        "A&B only."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q24",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which of the following shares in forming anterior wall of 3rd ventricle?",
+      "explanation": "The anterior wall of the third ventricle is formed by the lamina terminalis, which extends from the optic chiasma superiorly to the anterior commissure. The anterior columns of the fornix also contribute. The hypothalamus forms the floor, the thalamus forms the lateral wall, and the epithalamus (pineal body) forms the posterior wall.",
+      "keyConcept": "Lamina terminalis forms the anterior wall of the third ventricle, connecting optic chiasma to anterior commissure.",
+      "options": [
+        "Hypothalamus.",
+        "Epithalamus.",
+        "Lamina terminalis.",
+        "Pineal body.",
+        "Mammillary bodies."
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q26",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which of the following shares in forming the lateral wall of the third ventricle?",
+      "explanation": "The lateral wall of the third ventricle is formed by the thalamus (superior portion) and hypothalamus (inferior portion), separated by the hypothalamic sulcus. The epithalamus, lamina terminalis, anterior commissure, and habenular nuclei do not form the lateral wall—they are components of the anterior or posterior walls.",
+      "keyConcept": "Hypothalamus contributes to lateral wall of 3rd ventricle (inferior part); thalamus forms the superior part.",
+      "options": [
+        "Hypothalamus.",
+        "Epithalamus.",
+        "Lamina terminalis.",
+        "Anterior commissure.",
+        "Habenular nuclei."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q27",
+      "type": "essay",
+      "lecture": 1,
+      "text": "List the boundaries of the 3rd ventricle.",
+      "explanation": "The third ventricle is a midline slit-like cavity bounded anteriorly by the lamina terminalis and anterior columns of fornix, posteriorly by the pineal body and posterior commissure, laterally by the thalamus and hypothalamus (separated by hypothalamic sulcus), superiorly by the roof formed by the fornix body and choroid plexus, and inferiorly by the hypothalamus (optic chiasma, tuber cinereum, mammillary bodies, posterior perforated substance).",
+      "keyConcept": "3rd ventricle boundaries: anterior = lamina terminalis; posterior = pineal body; lateral = thalamus/hypothalamus; roof = fornix/choroid plexus; floor = hypothalamus structures.",
+      "modelAnswer": "Anterior wall: lamina terminalis and anterior columns of fornix. Posterior wall: pineal body and posterior commissure. Lateral walls: thalamus (superior) and hypothalamus (inferior), separated by the hypothalamic sulcus. Roof: fornix body and choroid plexus (derived from tela choroidea). Floor (from anterior to posterior): optic chiasma, tuber cinereum, mammillary bodies, and posterior perforated substance."
+    },
+    {
+      "id": "mcns2-ch1-histology-q36",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Ventral external arcuate fibers arise from:",
+      "explanation": "Ventral external arcuate fibers arise from the ARCUATE NUCLEUS (not the cuneate nucleus which projects to cerebellum via dorsal external arcuate fibers). The arcuate nucleus receives corticofugal fibers and projects to the cerebellum.",
+      "keyConcept": "Ventral external arcuate: from arcuate nucleus → cerebellum (via ICP). Dorsal external arcuate: from accessory cuneate → cerebellum.",
+      "options": [
+        "Accessory cuneate nucleus",
+        "Cuneate nucleus",
+        "Arcuate nucleus",
+        "Pontine nucleus"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch3-histology-q3",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The reticular formation controls the endocrine system due to its connections with:",
+      "explanation": "The reticular formation controls the endocrine system through its extensive connections with the hypothalamus. The hypothalamus is the main link between the nervous system and the endocrine system, and the reticular formation modulates hypothalamic function.",
+      "keyConcept": "Reticular formation → hypothalamus → pituitary → endocrine control. RF also influences autonomic functions via hypothalamus.",
+      "options": [
+        "hypothalamus",
+        "Spinal cord",
+        "Thalamus",
+        "Cerebral cortex"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch3-histology-q5",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "The basal surface of tanycytes has:",
+      "explanation": "Tanycytes have long basal processes that extend to blood vessels and hypothalamic nuclei, allowing them to transport substances between the CSF and blood/hypothalamus. This makes them specialized for neuroendocrine communication.",
+      "keyConcept": "Tanycytes have basal processes for transport between ventricle and hypothalamus",
+      "options": [
+        "Infoldings.",
+        "Basal processes.",
+        "Dense plaques.",
+        "Canaliculi."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch3-histology-q14",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Arcuate nucleus is found in:",
+      "explanation": "The arcuate nucleus is found ventral to the pyramids in the medulla. It is a small nucleus that gives rise to some of the ventral external arcuate fibers that enter the cerebellum.",
+      "keyConcept": "Arcuate nucleus found ventral to pyramids in medulla",
+      "options": [
+        "Ventral to pyramids.",
+        "Ventral to cuneate nucleus.",
+        "Medial to olive.",
+        "Dorsal to Inferior cerebellar Peduncle."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-physiology-q6",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which sentence is NOT true about kinetic tremors:",
+      "explanation": "Kinetic tremors occur during MOVEMENT, not at rest. Option A is INCORRECT and therefore the correct answer. Kinetic/intention tremors worsen with voluntary movement and are cerebellar. Option B, C, D, E all correctly describe kinetic tremors as neocerebellar, accompanied by hypotonia, disappearing during sleep, and associated with motor ataxia.",
+      "keyConcept": "Kinetic tremor is a movement-dependent tremor of cerebellar origin, unlike the resting tremor of Parkinsonism.",
+      "options": [
+        "Occurs during rest.",
+        "Is due to neocerebellar lesion.",
+        "Is accompanied with hypotonia.",
+        "Disappear during sleep.",
+        "Associated with motor ataxia"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-physiology-q47",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Describe mechanism of sleep. Compare & contrast between its types. ARAS is fatigued during the waking day & as a result it became inactive. Passive theory of sleep",
+      "explanation": "Sleep is regulated by the interaction of circadian rhythm (suprachiasmatic nucleus) and sleep homeostatic drive (adenosine accumulation). Sleep involves two main states: Non-REM (NREM) sleep has three stages progressing from light (N1, N2) to deep (N3/slow-wave) sleep, characterized by: decreased muscle tone, slow EEG waves, reduced heart rate and blood pressure, vivid dreams uncommon. REM sleep: active brain with REMs, vivid dreams, muscle atonia (except eye and respiratory muscles), increased brain metabolism. ARAS (Ascending Reticular Activating System) maintains wakefulness through cholinergic projections to thalamus and cortex. During sleep, ARAS is inhibited by sleep-promoting areas (ventrolateral preoptic nucleus). Sleep functions include: memory consolidation, brain restoration, hormone regulation, synaptic homeostasis.",
+      "keyConcept": "Sleep involves NREM stages (N1-N3) and REM sleep, regulated by ARAS, circadian rhythm, and homeostatic sleep drive.",
+      "modelAnswer": "Active inhibition of ARAS by sleep centers in brain:\nCenters that lead to non-REM sleep:\na. Raphe Magnus secreting serotonin.\nb. some areas in tractus solitaries\nc. Diencephalic sleep zone.\nCenters that lead to REM sleep:\na. Locus cerulus secreting noradrenaline.\nb. Reticular formation secreting acetylcholine\nActive theory of sleep\nIt is the accumulation of some sleep factors causing sleep.\nIt is said that a peptide produced in brain causes sleep.\nMetabolic theory of\nsleep\nIts types:\nREM sleep Slow wave sleep (non-REM)\nIn episodes during night 20% of\nthe sleep time, occurs more\nfrequency early in morning.\n80% of the sleeping time. Timing\n1 stage\nEEG records β waves\n(paradoxical sleep )\n4 stages (EEG becomes slower with\nhigh amplitude)\nBrain waves\nRapid eye movement Eye deviates up & miosed Eye movement\nMental rest Physical rest Importance\nIncrease sympathetic activity. Increase parasympathetic activity Autonomic changes\nabsent present Sleep talking & walking\nActive remembered dreams Occur but not remembered Dreams\npresent absent Penile erection\npresent absent Teeth grinding\ndecrease increase Growth hormone\nExtremely inhibited Slightly inhibited Muscle tone\nHigh (difficult to be aroused) Low (easier to be aroused) Threshold of arousal"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q48",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Characteristics of REM sleep & why it's called paradoxical sleep. - Rapid Eye Movement    - Active remembered Dreams - Marked decrease in muscle tone (except extraocular muscles ) indicating strong inhibition of the spinal muscle control areas  - Irregular or increased impulse, blood pressure & respiration - Deep sleep, difficult to be aroused    - Penile erection - Teeth Grinding     - Decreased level of GH - No sleep talking or walking Physiology Questions and Answers  2017",
+      "explanation": "REM sleep is called 'paradoxical sleep' because the brain is highly active (similar to wakefulness) while motor output is deeply inhibited. Characteristics: 1) Rapid Eye Movements - conjugate movements tracked during dreaming; 2) Vivid, memorable dreams - cortical activation during REM; 3) Muscle atonia - active inhibition of motor neurons via glycinergic/GABAergic neurons in pons, preventing movement during dreaming; 4) Increased brain metabolism - EEG similar to wakefulness; 5) Increased heart rate, blood pressure, respiration; 6) Erectile activity (penile/clitoral erection). The atonia is mediated by subcoeruleus nucleus activating medullary reticular formation, which inhibits motor neurons. This atonia protects the sleeper from acting out dreams. REM sleep deprivation causes: increased appetite, irritability, hallucinations, difficulty with memory consolidation. REM sleep is essential for procedural and emotional memory processing.",
+      "keyConcept": "REM sleep is paradoxical: brain is awake and dreaming while muscles are paralyzed by active inhibitory mechanisms.",
+      "modelAnswer": "32\nIt's called paradoxical sleep because it indicates marked brain activity though person is still sleep &\nEEG changes show rapid, irregular, low voltage,desynchronized B waves like that in alert state\n(Desynchronized β rhythm)"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q52",
+      "type": "essay",
+      "lecture": 1,
+      "text": "List the functions of the limbic system.",
+      "explanation": "The limbic system (limbic lobe + limbic structures) has multiple functions: 1) Emotional behavior - amygdala processes fear, anger, and emotional significance of stimuli; hypothalamus coordinates emotional responses (fight, flight, feeding); 2) Memory - hippocampus consolidates declarative memories from short to long term; Papez circuit involved; 3) Motivation - hypothalamus (feeding, thirst centers), reward pathways (dopamine from VTA); 4) Visceral responses - hypothalamus integrates autonomic responses with emotions (heart rate, blood pressure changes); 5) Sexual behavior - hypothalamus (medial preoptic area - male; ventromedial hypothalamus - female); 6) Olfactory function - pyriform cortex processes olfactory information; 7) Learning - hippocampus involved in spatial learning and memory; 8) Temperature regulation - anterior hypothalamus (heat loss), posterior hypothalamus (heat conservation).",
+      "keyConcept": "The limbic system coordinates emotions, memory, motivation, and visceral responses through amygdala, hippocampus, and hypothalamus.",
+      "modelAnswer": "1. Olfaction: limbic system is responsible for perception & discriminationof olfactory sensation&\nthere is relationship bet. Sex and smell\n2. Control of feeding: has a role in regulation of appetite and the lesion in amygdaloid nuclei lead to\namniophagia (eating all kinds of food) (Hyperphagia)\n3. Control of autonomic response: limbic stimulation produce of autonomic effects which are parts\nof response to emotions\n4. Maternal and sexual behavior\n5. Control of emotions: both limbic system and hypothalamus are concerned with emotion\ngenesis(feeling and moods)\n Fear : caused by stimulation of amygdloid &PVN of hypothalamus . It is abolished by\ndestruction of amygdala\n Rage :It is violent anger to minor stimuli . it is caused by stimulation of Rage area\n(amygdale&lateralhypothalamus ) & by destruction of ventromedial nucleus of hypothalamus\n6. Relation to memory: hippocampus is the site of encoding of short term memory and its\nconsolidation & bilateral lesion of hippocampus leads to anterograde amnesia\n7. Motivation: has to centers that control the motivation (reward system in lateral and ventromedial\nnucleus and punishment centers found in periventricular nucleus).\n8. Learning : operant  conditioning\nPapez circuit : - Excitatory ,involved in emotions - Reverberating circuits and long after discharge\nPapez circuit :\nHippocampusfornix   →   Mamillary bodies\n↑                                                      ↓\nCingulate gyrus →Anterior thalamic nuclei\n39\n## CNS Biochemistry\nQuestion 1\nWhich one of the following LDH isoenzymes is expressed in neurons?\nA. LDH1\nB. LDH2\nC. LDH3\nD. LDH4\nE. LDH5\nCorrect Answer: A. LDH1\n*Explanation: “In neurons, this lactate can be used as an energy substrate following its conversion to pyruvate by LDH1 (mainly expressed in neurons).”*\nQuestion 2\nNeurons uptake glucose from the circulation through which of the following?\nA. Glut 1\nB. Glut 2\nC. Glut 3\nD. Glut 4\nE. Glut 5\nCorrect Answer: C. Glut 3\n*Explanation: The file states: “Neurons can also take up glucose via the neuronal GLUT3.”*\nQuestion 3\nComplete: …………. neuronal activity (e.g., sleep and anesthesia) → …………. brain glycogen levels, while …………. neuronal activity → …………. brain glycogen levels.\nCorrect Answer: Decreased ; increased ; increased ; decreased\n*Explanation: The file states: “Decreased neuronal activity e.g., sleep and anesthesia → increased brain glycogen levels, while increased neuronal activity → decreased brain glycogen levels.”*\nQuestion 4\nChemicals in the brain that pass messages among neurons are called:\nA. Glia\nB. Hormones\nC. Neurochemicals\nD. Neurotransmitters\nCorrect Answer: D. Neurotransmitters\n*Explanation: Direct definition from the slide.*\nQuestion 5\nNeurotransmitters that increase brain activity are classified as:\nA. Inhibitory\nB. Excitatory\nC. Activity\nD. Disinhibitory\nCorrect Answer: B. Excitatory\n*Explanation: Excitatory neurotransmitters increase brain activity.*\nQuestion 6\nWhich of the following results from decreased Gamma Amino Butyric Acid (GABA) synthesis?\nA. Depression\nB. Nausea\nC. Headache\nD. Convulsions\nE. Vomiting\nCorrect Answer: D. Convulsions\n*Explanation: The file states: “GABA deficiency is related to epilepsy and seizure.”*\nQuestion 7\nWhich of the following enzymes is stimulated by cortisol in epinephrine synthesis?\nA. Dopamine hydroxylase\nB. N-methyl transferase\nC. Dopa decarboxylase\nD. Tyrosine hydroxylase\nE. N-acetyl transferase\nCorrect Answer: B. N-methyl transferase\n*Explanation: Cortisol induces phenylethanolamine N-methyltransferase (PNMT), which converts norepinephrine to epinephrine.*\nQuestion 8\nMatch the following (more than one answer possible):\n1) Serotonin\n2) Dopamine\n3) Epinephrine\nA) Monoamine oxidase (MAO)\nB) Catechol-O-Methyl Transferase (COMT)\nC) 5-hydroxyindolacetic acid (5-HIAA)\nD) Homovanillic acid (HVA)\nE) Vanillylmandelic acid (VMA)\nCorrect Answers: 1→A,C ; 2→A,B,D ; 3→A,B,E\n*Explanation: Serotonin is catabolized by MAO to 5-HIAA; dopamine and epinephrine are catabolized by MAO and COMT; dopamine gives HVA; epinephrine gives VMA.*\nQuestion 9\nIn carcinoid syndrome, the argentaffin cells of the GIT overproduce which of the following?\nA. Serotonin\nB. Tyrosine\nC. Histamine\nD. Nicotinic acid\nE. Tryptamine\nCorrect Answer: A. Serotonin\n*Explanation: The file states: “Carcinoid tumor → increased production of serotonin.”*\nQuestion 10\nHistamine is formed from histidine by which of the following chemical reactions?\nA. Hydroxylation\nB. Decarboxylation\nC. Transamination\nD. Deamination\nE. Dehydrogenation\nCorrect Answer: B. Decarboxylation\n*Explanation: Histidine decarboxylase converts histidine to histamine.*\nQuestion 11\nWhich of the following releases free ammonia?\nA. Synthesis of purines\nB. Synthesis of monoamines\nC. Synthesis of aminosugars\nD. Catabolism of amino acids\nE. Synthesis of pyrimidines\nCorrect Answer: D. Catabolism of amino acids\n*Explanation: Deamination of amino acids releases ammonia.*\nQuestion 12\nWhich of the following is/are allosteric activator(s) of glutamate dehydrogenase?\nA. GTP\nB. ADP and GDP\nC. ATP\nD. NADH+H\nCorrect Answer: B. ADP and GDP\n*Explanation: Glutamate dehydrogenase is activated by ADP and GDP (energy-poor signals).*\nQuestion 13\nWhich one of the following enzymes catalyzes this reaction? (Carbamoyl phosphate + ornithine → citrulline)\nA. Ornithine transcarbamoylase\nB. Argininosuccinate synthetase\nC. Arginase\nD. Argininosuccinate lyase\nE. Carbamoyl phosphate synthetase I\nCorrect Answer: A. Ornithine transcarbamoylase\n*Explanation: This is the second enzyme of the urea cycle.*\nQuestion 14\nWhich of the following compounds is a link between urea cycle and citric acid cycle?\nA. Ornithine\nB. Citrate\nC. Fumarate\nD. Urea\nE. Succinate\nCorrect Answer: C. Fumarate\n*Explanation: Fumarate is produced in the urea cycle (by argininosuccinate lyase) and enters the TCA cycle.*\nQuestion 15\nWhich one of the following is required for the conversion of phenylalanine into tyrosine?\nA. PLP\nB. Tetrahydrobiopterin\nC. FAD\nD. ATP\nE. NAD\nCorrect Answer: B. Tetrahydrobiopterin\n*Explanation: Phenylalanine hydroxylase requires tetrahydrobiopterin as a cofactor.*\nQuestion 16\nWhat is the inborn error of branched chain amino acids metabolism?\nA. Alkaptonuria\nB. Homocystinuria\nC. Albinism\nD. Phenylketonuria\nE. Maple syrup urine disease\nCorrect Answer: E. Maple syrup urine disease\n*Explanation: The file states: “It results from deficiency of the dehydrogenase complex which catalyzes the oxidative decarboxylation step.”*\nQuestion 17\nThiamin pyrophosphate (TPP) is required for oxidative decarboxylation of which of the followings?\nA. Glucose\nB. α-amino acids\nC. Triglycerides\nD. α-keto acids\nE. Fatty acids\nCorrect Answer: D. α-keto acids\n*Explanation: TPP is a cofactor for pyruvate dehydrogenase, α-ketoglutarate dehydrogenase, and branched-chain α-keto acid dehydrogenase.*\nQuestion 18\nWhich of the following is caused by niacin deficiency?\nA. Megaloblastic anemia\nB. Pernicious anemia\nC. Beriberi\nD. Pellagra\nE. Folate trap\nCorrect Answer: D. Pellagra\n*Explanation: The file states: “Niacin (B3) deficiency → Pellagra [4 Ds].”*\nQuestion 19\nWhich of the following vitamins is involved in one carbon metabolism?\nA. Niacin\nB. Riboflavin\nC. Folate\nD. Thiamine\nE. Vitamin C\nCorrect Answer: C. Folate\n*Explanation: The file states: “THF is the carrier of activated one carbon units.”*\nQuestion 20\nThe active form of folate is the carrier of which of the following?\nA. Ferri reductase\nB. One-carbon units\nC. Niacin\nD. Thiamine\nE. Vitamin B12\nCorrect Answer: B. One-carbon units\n*Explanation: Tetrahydrofolate carries one-carbon units.*\nQuestion 21\nMethyl THF is used in synthesis of which of the following?\nA. Methionine from homocysteine\nB. Glycine\nC. Methylene THF\nD. C2 and C8 of purines\nE. Methenyl THF\nCorrect Answer: A. Methionine from homocysteine\n*Explanation: Methyl THF donates a methyl group to homocysteine to form methionine (via methionine synthase).*\n## CNS Pathology (from “CNS pathology Q 22.pdf”)\nQuestion 22\nSpread of suppurative lung disease to the brain is usually due to:\na) Lymphatic spread\nb) Retrograde hematogenous spread (paravertebral vessels)\nc) Direct spread\nd) Through normal body passages\nCorrect Answer: b) Retrograde hematogenous spread (paravertebral vessels)\n*Explanation: Lung infections often reach the brain via Batson’s plexus (retrograde venous spread).*\nQuestion 23\nA previously healthy 31-year-old woman experiences extensive subarachnoid hemorrhage at the base of the brain. She is afebrile. The CSF protein is slightly increased, but the glucose is normal. Most likely diagnosis:\na) Acute bacterial meningitis\nb) Ruptured berry aneurysm\nc) Cerebellopontine angle tumor\nd) Pilocytic astrocytoma\ne) Meningioma\nCorrect Answer: b) Ruptured berry aneurysm\n*Explanation: Subarachnoid hemorrhage at the base without fever suggests ruptured berry aneurysm (circle of Willis).*\nQuestion 24\nA 58-year-old hypertensive patient presents with sudden onset of hemiplegia, followed by increased intracranial tension. CT shows extensive intracerebral hemorrhage in the region of basal ganglia. Most probable diagnosis:\na) Ruptured Arteriovenous malformation\nb) Ruptured congenital berry aneurysm\nc) Ruptured multiple microaneurysms (Charcot‑Bouchard microaneurysms)\nd) Thrombotic occlusion of the middle cerebral artery\nCorrect Answer: c) Ruptured multiple microaneurysms (Charcot‑Bouchard microaneurysms)\n*Explanation: Hypertensive hemorrhage typically involves basal ganglia/thalamus due to microaneurysm rupture.*\nQuestion 25\nA 68-year-old man with long‑standing dementia dies. Silver stain of cortex reveals intraneuronal inclusions. These inclusions are:\na) Lewy bodies\nb) Tau proteins\nc) Negri bodies\nd) Schwann bodies\nCorrect Answer: b) Tau proteins\n*Explanation: Neurofibrillary tangles (tau) in Alzheimer dementia are silver‑positive.*\nQuestion 26\nA 50-year-old man has a 3 cm left frontal mass with calcification. Microscopically, sheets of regular cells with spherical nuclei and clear halo of cytoplasm. Most likely diagnosis:\na) Thrombosed berry aneurysm\nb) Oligodendroglioma\nc) Meningioma\nd) Schwannoma\ne) Organizing abscess\nCorrect Answer: b) Oligodendroglioma\n*Explanation: “Fried egg” appearance (clear halo) and calcification are characteristic of oligodendroglioma.*\nQuestion 27\nA 9-year-old child has a 4 cm homogenous, well‑circumscribed mass within the fourth ventricle. Microscopically shows rosettes & pseudorosettes. Most likely diagnosis:\na) Astrocytoma\nb) Ependymoma\nc) Meningioma\nd) Metastatic carcinoma\ne) Schwannoma\nCorrect Answer: b) Ependymoma\n*Explanation: Fourth ventricle tumor with rosettes/pseudorosettes is ependymoma.*\nQuestion 28\nA 10-year-old girl develops ataxia and hydrocephalus. CT shows a midline cerebellar mass. Most likely diagnosis:\na) Schwannoma\nb) Meningioma\nc) Neurofibroma\nd) Medulloblastoma\nCorrect Answer: d) Medulloblastoma\n*Explanation: Midline cerebellar mass in a child = medulloblastoma.*\nQuestion 29\nA 65-year-old man has new‑onset seizures and headaches. CT reveals a 6 cm left‑sided intracerebral mass. Most likely diagnosis:\na) Meningioma\nb) Ependymoma\nc) Schwannoma\nd) Glioblastoma multiforme\nCorrect Answer: d) Glioblastoma multiforme\n*Explanation: Large, aggressive intracerebral mass in older adult = GBM.*\nQuestion 30\nBiopsy of a ring‑enhancing tumor in left parietal lobe of a 60‑year‑old shows astrocytic tumor with marked cellular atypia, mitotic activity, pseudopalisading necrosis, and microvascular hyperplasia. Diagnosis:\na) Astrocytoma, grade I\nb) Astrocytoma, grade 2\nc) Anaplastic astrocytoma\nd) Astrocytoma, grade 4 (glioblastoma multiforme)\nCorrect Answer: d) Astrocytoma, grade 4 (glioblastoma multiforme)\n*Explanation: Pseudopalisading necrosis and microvascular proliferation are hallmarks of GBM.*\nQuestion 31\nA 9-year-old girl with headaches and ataxia; CT shows midline partially cystic cerebellar mass. Microscopy shows elongated bipolar astrocytes with Rosenthal fibers. Diagnosis:\na) Astrocytoma, grade I\nb) Astrocytoma, grade 2\nc) Anaplastic astrocytoma\nd) Astrocytoma, grade 4\nCorrect Answer: a) Astrocytoma, grade I (Pilocytic astrocytoma)\n*Explanation: Rosenthal fibers and biphasic pattern = pilocytic astrocytoma (WHO grade I).*\nQuestion 32\nA 33-year-old male with seizures; MRI shows ill‑defined infiltrative tumor in frontal lobe. Biopsy shows glial tissue with slightly increased cellularity and mild nuclear pleomorphism. No mitoses, necrosis, or vascular proliferation. Diagnosis:\na) Astrocytoma, grade I\nb) Astrocytoma, grade 2 (diffuse fibrillar)\nc) Anaplastic astrocytoma\nd) Glioblastoma multiforme\nCorrect Answer: b) Astrocytoma, grade 2 (diffuse fibrillar)\n*Explanation: Low-grade infiltrative astrocytoma without anaplastic features.*\nQuestion 33\nAn 18-year-old male with a well‑circumscribed mass involving the 4th ventricle. Diagnostic microscopic findings include:\na) Rosenthal fibers\nb) Chicken wire calcifications\nc) Rosettes & pseudorosettes formation\nd) Verocay bodies\nCorrect Answer: c) Rosettes & pseudorosettes formation\n*Explanation: Ependymoma (4th ventricle) shows ependymal rosettes.*\nQuestion 34\nA 45-year-old woman with right‑sided hearing loss and tinnitus. CT shows a 2 cm mass at the cerebellum. Diagnostic microscopic findings include:\na) Rosenthal fibers\nb) Chicken wire calcifications\nc) Rosettes & pseudorosettes\nd) Verocay bodies\nCorrect Answer: d) Verocay bodies\n*Explanation: Cerebellopontine angle mass (schwannoma) shows Antoni A/B areas with Verocay bodies.*\nQuestion 35\nAn 86-year-old man with progressive disorientation and language impairment. Microscopic findings include:\na) Rosenthal fibers\nb) Amyloid β proteins\nc) Lewy bodies\nd) Verocay bodies\nCorrect Answer: b) Amyloid β proteins\n*Explanation: Alzheimer disease shows amyloid plaques and neurofibrillary tangles.*\nQuestion 36\nOligodendrogliomas (ODs) are not characterized by:\na) have IDH 1 mutation\nb) have IDH 2 mutation\nc) Activation of the mitogen‑activated protein kinase (MAPK)\nd) Chromosomes 1p/19q codeletion\nCorrect Answer: c) Activation of MAPK\n*Explanation: Oligodendrogliomas typically have IDH1/2 mutations and 1p/19q codeletion; MAPK activation is more common in pilocytic astrocytoma.*\nQuestion 37\nLocalized Pilocytic Astrocytoma shows all except:\nA. Activation of the MAPK pathway\nB. Activation, alterations of BRAF\nC. Inactivation of neurofibromatosis type 1 (NF1)\nD. Mutations in IDH1 and IDH2\nCorrect Answer: D. Mutations in IDH1 and IDH2\n*Explanation: Pilocytic astrocytomas have BRAF alterations, not IDH mutations.*\n## CNS Pharmacology (from “EL-SHAAEIR pharma CNS mcq-2 [old].pdf”)\nQuestion 38\nNeuropathic pain may be managed by:\nA. Tricyclic antidepressants\nB. Tramadol\nC. Carbamazepine\nD. All of the above\nCorrect Answer: D. All of the above\n*Explanation: TCAs, tramadol, and carbamazepine are used for neuropathic pain.*\nQuestion 39\nNeuroleptanalgesia may be induced by:\nA. Fentanyl / Midazolam\nB. Midazolam / Droperidol\nC. Fentanyl / Domperidone\nD. Fentanyl / Droperidol\nCorrect Answer: D. Fentanyl / Droperidol\n*Explanation: Neuroleptanalgesia = opioid + neuroleptic (fentanyl + droperidol).*\nQuestion 40\nFluoxetine does not induce:\nA. Serotonin syndrome if co‑administered with tranylcypromine\nB. Anxiety\nC. Nausea\nD. Marked sedation\nCorrect Answer: D. Marked sedation\n*Explanation: Fluoxetine is more activating than sedating.*\nQuestion 41\nAn antidepressant useful for smoking cessation is:\nA. Bupropion\nB. Venlafaxine\nC. Mianserine\nD. Imipramine\nCorrect Answer: A. Bupropion\n*Explanation: Bupropion is FDA‑approved for smoking cessation.*\nQuestion 42\nThe following is not true concerning tricyclic antidepressant toxicity:\nA. Arrhythmia is managed by NaHCO₃\nB. Convulsions is one of the features of toxicity\nC. Atropine toxicity is seldom seen\nD. Conduction defects are responsible for the arrhythmia\nCorrect Answer: C. Atropine toxicity is seldom seen\n*Explanation: TCA toxicity causes anticholinergic effects (like atropine), so atropine toxicity is common, not seldom.*\nQuestion 43\nThe following concerning venlafaxine is not true:\nA. Anticholinergic side effects are frequently encountered with its use\nB. It is a norepinephrine serotonin reuptake inhibitor\nC. Nausea is a troublesome side effect\nD. Hypertension may occur during therapy\nCorrect Answer: A. Anticholinergic side effects are frequently encountered\n*Explanation: Venlafaxine has low anticholinergic activity.*\nQuestion 44\nSevere hypertension is most likely to occur following intake of old cheese with:\nA. Phenelzine\nB. Moclobemide\nC. Selegiline\nD. Bupropion\nCorrect Answer: A. Phenelzine\n*Explanation: Non‑selective MAOIs (phenelzine) cause hypertensive crisis with tyramine (old cheese).*\nQuestion 45\nNocturnal enuresis is treated with imipramine but not fluoxetine because:\nA. Imipramine induces insomnia while fluoxetine induces sedation\nB. Imipramine is safer than fluoxetine\nC. Imipramine possesses anticholinergic effects but fluoxetine does not\nD. All of the above\nCorrect Answer: C. Imipramine possesses anticholinergic effects but fluoxetine does not\n*Explanation: Anticholinergic effect helps enuresis (relaxes bladder).*\nQuestion 46\nIndications of antidepressants do not include:\nA. Convulsive disorders\nB. Eating disorders\nC. Chronic neuropathic pain\nD. Obsessive‑compulsive disorders\nCorrect Answer: A. Convulsive disorders\n*Explanation: Antidepressants can lower seizure threshold; not indicated for convulsive disorders.*\nQuestion 47\nThe nonselective MAOIs have limited use as antidepressants because of their:\nA. Low efficacy\nB. High toxicity\nC. Potential to interact with many foods and drugs\nD. Both B & C\nCorrect Answer: D. Both B & C\n*Explanation: High toxicity and many interactions (hypertensive crisis, serotonin syndrome).*\nQuestion 48\nReduction in sexual function is least seen with:\nA. Imipramine\nB. Fluoxetine\nC. Bupropion\nD. Both B & C\nCorrect Answer: C. Bupropion\n*Explanation: Bupropion has the lowest rate of sexual dysfunction.*\nQuestion 49\nDisadvantages of tricyclic antidepressants include:\nA. Narrow safety margin\nB. Frequent side effects\nC. Delayed therapeutic effect\nD. All of the above\nCorrect Answer: D. All of the above\n*Explanation: TCAs are toxic in overdose, have many side effects, and take weeks to work.*\nQuestion 50\nThe following is not correctly matched:\nA. Fluoxetine / selective serotonin reuptake inhibitor\nB. Mirtazepine / presynaptic α2 receptor blocker\nC. Venlafaxine / norepinephrine serotonin reuptake inhibitor\nD. Moclobemide / selective monoamine oxidase‑B inhibitor\nCorrect Answer: D. Moclobemide / selective MAO‑B inhibitor\n*Explanation: Moclobemide is a reversible MAO‑A inhibitor, not MAO‑B.*\nQuestion 51\nMatch the following (Bupropion, Buspirone, Venlafaxine, Fluoxetine):\nBupropion – Inhibitor of dopamine & NE reuptake\nBuspirone – Partial 5HT1A agonist\nVenlafaxine – Norepinephrine serotonin reuptake inhibitor\nFluoxetine – Selective serotonin reuptake inhibitor\nCorrect Answers: Bupropion → B, Buspirone → C, Venlafaxine → A, Fluoxetine → D\nQuestion 52\nUses of antiepileptics include all the following Except:\nA. Lamotrigine / mood stabilizer in bipolar manic depression\nB. Phenytoin / digitalis arrhythmia\nC. Ethosuximide / Petit Mal\nD. Carbamazepine / dilutional hyponatremia\nCorrect Answer: B. Phenytoin / digitalis arrhythmia\n*Explanation: Phenytoin is used for digitalis arrhythmia? No, phenytoin is used for other arrhythmias but not first‑line; the incorrect match is likely B.*\nQuestion 53\nGingival hyperplasia is a common side effect of:\nA. Valproate\nB. Phenytoin\nC. Ethosuximide\nD. Carbamazepine\nCorrect Answer: B. Phenytoin\n*Explanation: Phenytoin causes gingival hyperplasia.*\nQuestion 54\nThe following side effect is most likely to be seen with carbamazepine:\nA. Water retention\nB. Coarse facial features\nC. Hirsutism\nD. Gingival Hyperplasia\nCorrect Answer: A. Water retention\n*Explanation: Carbamazepine causes SIADH → water retention/hyponatremia.*\nQuestion 55\nA drug known to induce hirsutism as a side‑effect is:\nA. Valproate\nB. Famotidine\nC. Heparin\nD. Phenytoin\nCorrect Answer: D. Phenytoin\n*Explanation: Phenytoin can cause hirsutism.*\nQuestion 56\nValproate toxicity does not include:\nA. Hirsutism\nB. Hair Loss\nC. Thrombocytopenia\nD. Fine hand tremors\nCorrect Answer: A. Hirsutism\n*Explanation: Valproate causes hair loss, not hirsutism.*\nQuestion 57\nA mood stabilizer safe in pregnant patients with bipolar depression is:\nA. Carbamazepine\nB. Valproate\nC. Phenytoin\nD. Ethosuximide\nCorrect Answer: None are completely safe; but least teratogenic among options? Valproate is highly teratogenic. Typically lamotrigine is preferred. However, from the file, likely the intended answer is none. But the question asks “safe” – perhaps carbamazepine? No. I’ll state: No option is safe; however, among these, carbamazepine has lower risk than valproate. But standard answer: A. Carbamazepine is sometimes used but not safe. Given the options, carbamazepine is the least teratogenic. But careful: The file says “safe” – none are. I’ll go with A.\n*But to be accurate: Valproate is contraindicated. I’ll choose A. Carbamazepine.*\nQuestion 58\nAn antiepileptic drug for absence seizures is:\nA. Diazepam\nB. Carbamazepine\nC. Ethosuximide\nD. Phenytoin\nCorrect Answer: C. Ethosuximide\n*Explanation: Ethosuximide is first‑line for absence seizures.*\nQuestion 59\nThe following antiepileptic is not used in tonic‑clonic epilepsy:\nA. Phenytoin\nB. Carbamazepine\nC. Valproate\nD. Ethosuximide\nCorrect Answer: D. Ethosuximide\n*Explanation: Ethosuximide is only for absence seizures, not tonic‑clonic.*\nQuestion 60\nPreferred therapy for a girl with combined absence and tonic‑clonic epilepsy is:\nA. Valproate\nB. Carbamazepine\nC. Ethosuximide\nD. Phenytoin plus carbamazepine\nCorrect Answer: A. Valproate\n*Explanation: Valproate is effective for both seizure types.*\nQuestion 61\nAll the following are important guidelines in the management of epilepsy except:\nA. All antiepileptics should be given after meals\nB. Pregnant females should discontinue the antiepileptic drug\nC. Gradual withdrawal of therapy to avoid status epilepticus\nD. Monotherapy is preferred to avoid drug interactions\nCorrect Answer: B. Pregnant females should discontinue the antiepileptic drug\n*Explanation: Discontinuing AEDs in pregnancy can cause seizures; switch to safer drug instead.*\nQuestion 62\nThe following is not correctly matched to its mechanism of action:\nA. Phenytoin / sodium channel blockade\nB. Clonazepam / Cl channel blockade\nC. Valproate / inhibition of GABA transaminase (↑GABA level)\nD. Ethosuximide / Ca channel blockade\nCorrect Answer: B. Clonazepam / Cl channel blockade\n*Explanation: Benzodiazepines enhance GABA‑A (Cl channel opening), not blockade.*\nQuestion 63\nAn antiepileptic suitable for pregnant women with tonic‑clonic epilepsy is:\nA. Phenytoin\nB. Carbamazepine\nC. Valproate\nD. Ethosuximide\nCorrect Answer: B. Carbamazepine (or lamotrigine, but among options carbamazepine is safer than valproate/phenytoin)\nQuestion 64\nTeratogenic effects are more likely to be induced by:\nA. Phenytoin\nB. Valproate\nC. Carbamazepine\nD. A and B\nCorrect Answer: D. A and B\n*Explanation: Phenytoin and valproate are highly teratogenic.*\nQuestion 65\nThe following is not true about antipsychotics:\nA. Control symptoms of schizophrenia without affecting the basic disorder\nB. Low potency drugs are preferred in elderly & cardiac patients\nC. Thioridazine may block cardiac conduction & increase QT interval\nD. They do not induce dependence\nCorrect Answer: B. Low potency drugs are preferred in elderly & cardiac patients\n*Explanation: Low potency antipsychotics have more anticholinergic and cardiac effects, not preferred in elderly/cardiac.*\nQuestion 66\nThe correct statement(s) regarding extrapyramidal effects of antipsychotics:\nA. Occur most commonly with low potency agents\nB. Tardive dyskinesia is relieved by anticholinergics\nC. Anticholinergics are useful in neuroleptic‑induced parkinsonism\nD. Both A and B\nCorrect Answer: C. Anticholinergics are useful in neuroleptic‑induced parkinsonism\n*Explanation: EPS more common with high potency; anticholinergics help acute EPS but not tardive dyskinesia.*\nQuestion 67\nThe following are correctly matched with its areas of dopamine blockade:\nA. Extrapyramidal effects / basal ganglia\nB. Increase prolactin secretion / mesolimbic\nC. Antiemetic / chemoreceptor trigger zone\nD. A and C\nCorrect Answer: D. A and C\n*Explanation: Prolactin increase is from tuberoinfundibular blockade, not mesolimbic.*\nQuestion 68\nThe risk of inducing rigidity, tremors & tardive dyskinesia is highest with:\nA. Haloperidol\nB. Clozapine\nC. Thioridazine\nD. Risperidone\nCorrect Answer: A. Haloperidol\n*Explanation: High‑potency typical antipsychotics (haloperidol) cause most EPS.*\nQuestion 69\nA drug effective in reducing emotional bluntness (negative symptoms) in schizophrenics is:\nA. Carbamazepine\nB. Clozapine\nC. Chlorpromazine\nD. Clonazepam\nCorrect Answer: B. Clozapine\n*Explanation: Clozapine improves negative symptoms and is used in resistant schizophrenia.*\nQuestion 70\nWhich of the following drugs could calm a violent patient in a few hours?\nA. Haloperidol\nB. Buspirone\nC. Flumazenil\nD. Fluoxetine\nCorrect Answer: A. Haloperidol\n*Explanation: Haloperidol has rapid calming effect in agitation/psychosis.*\nQuestion 71\nA drug reserved for resistant cases of schizophrenia for fear of agranulocytosis is:\nA. Haloperidol\nB. Clozapine\nC. Aripiprazole\nD. Risperidone\nCorrect Answer: B. Clozapine\n*Explanation: Clozapine is reserved for refractory schizophrenia due to risk of agranulocytosis.*\nQuestion 72\nWhich of the following improves negative symptoms in schizophrenia?\nA. Risperidone\nB. Haloperidol\nC. Chlorpromazine\nD. All of the above\nCorrect Answer: A. Risperidone (atypicals better than typicals for negative symptoms; among these, risperidone is atypical)\nQuestion 73\nThe following is not correctly matched to its use:\nA. Diazepam / muscle spasticity\nB. Midazolam / anesthesia\nC. Clonazepam / epilepsy\nD. Buspirone / panic attack\nCorrect Answer: D. Buspirone / panic attack\n*Explanation: Buspirone is for generalized anxiety, not panic attacks.*\nQuestion 74\nThe following concerning zolpidem is not true:\nA. Short acting hypnotic with less hangover than benzodiazepines\nB. Acts on benzodiazepine‑1 receptor\nC. More liable to induce rebound insomnia & REM disturbance than benzodiazepines\nD. Less tolerance and dependence than benzodiazepines\nCorrect Answer: C. More liable to induce rebound insomnia\n*Explanation: Zolpidem has less rebound insomnia than BZDs.*\nQuestion 75\nThe major limitation to the use of benzodiazepines in anxiety is:\nA. No antidote available\nB. Cardiovascular depression is common\nC. Dependence\nD. Increased risk of respiratory depression\nCorrect Answer: C. Dependence\n*Explanation: BZDs cause tolerance and dependence.*\nQuestion 76\nWhich of the following is preferred for treatment of anxiety with panic attacks:\nA. Buspirone\nB. Alprazolam\nC. Haloperidol\nD. Zolpidem\nCorrect Answer: B. Alprazolam\n*Explanation: Alprazolam is approved for panic disorder.*\nQuestion 77\nAn anxiolytic useful in a patient with a history of drug dependence is:\nA. Buspirone\nB. Alprazolam\nC. Diazepam\nD. Lorazepam\nCorrect Answer: A. Buspirone\n*Explanation: Buspirone has no abuse potential.*\nQuestion 78\nThe dose of benzodiazepines should be adjusted in:\nA. Elderly patients\nB. Concomitant administration with alcohol\nC. Hepatic dysfunction\nD. All of the above\nCorrect Answer: D. All of the above\n*Explanation: All reduce BZD metabolism or increase effects.*\nQuestion 79\nThe following concerning the use of benzodiazepines is not true:\nA. Abuse is associated with memory loss\nB. Toxic dose results in prolonged sleep\nC. Respiratory depression is reversed by flumazenil\nD. Shorter acting agents are preferred as anxiolytics\nCorrect Answer: D. Shorter acting agents are preferred as anxiolytics\n*Explanation: Long‑acting BZDs are preferred for anxiety to avoid interdose withdrawal.*\nQuestion 80\nA drug whose toxic dose results in prolonged sleep reversed by flumazenil:\nA. Triazolam\nB. Buspirone\nC. Pentobarbital\nD. Phenobarbital\nCorrect Answer: A. Triazolam\n*Explanation: BZDs (triazolam) are reversed by flumazenil.*\nQuestion 81\nFlumazenil is an antidote for all the following Except:\nA. Triazolam\nB. Buspirone\nC. Zolpidem\nD. Diazepam\nCorrect Answer: B. Buspirone\n*Explanation: Buspirone is not a BZD and not reversed by flumazenil.*\nQuestion 82\nAll the following characteristics are shared by flumazenil and naloxone Except:\nA. Have shorter t½ than their respective agonists\nB. Given orally\nC. Given in anesthesia to reverse CNS depression of their agonists\nD. Specific respiratory stimulants in benzodiazepine or opioid toxicity\nCorrect Answer: B. Given orally\n*Explanation: Both are given IV, not orally.*\nQuestion 83\nAbuse potential of buspirone is low because:\nA. It has a weak anxiolytic effect\nB. It has no recognizable effect on brain neurotransmitters\nC. It has a delayed onset of action\nD. Its marked sedating effect is troublesome\nCorrect Answer: C. It has a delayed onset of action\n*Explanation: Buspirone lacks immediate rewarding effects, reducing abuse liability.*\nQuestion 84\nDentists avoid extraction in infection because of all the following Except:\nA. Fear of spread of infection\nB. Infection decreases extracellular unionized form of local anesthetics\nC. Infection reduces crossing of local anesthetics inside nerve cell\nD. Infection increases extracellular unionized form of local anesthetics\nCorrect Answer: D. Infection increases extracellular unionized form\n*Explanation: Infection lowers pH, decreasing unionized form, not increasing.*\nQuestion 85\nThe following is not true concerning ester type local anesthetics:\nA. Shorter acting than amides\nB. Less liable to induce allergy\nC. Less liable to systemic toxicity than amides\nD. Procaine is a member of this group\nCorrect Answer: B. Less liable to induce allergy\n*Explanation: Esters are more allergenic due to PABA metabolite.*\nQuestion 86\nThe following is not true about local anesthetics:\nA. Adding sodium bicarbonate increases activity\nB. Bupivacaine is short acting\nC. Lidocaine is an amide\nD. Benzocaine is used as a surface anesthetic\nCorrect Answer: B. Bupivacaine is short acting\n*Explanation: Bupivacaine is long acting.*\nQuestion 87\nThe following is not true about cocaine:\nA. It is a local anesthetic\nB. Acute toxicity may result in convulsions\nC. It is a potent vasodilator\nD. Chronic abuse results in psychosis\nCorrect Answer: C. It is a potent vasodilator\n*Explanation: Cocaine is a vasoconstrictor.*\nQuestion 88\nSumatriptan precautions include all of the following except:\nA. Should not be used for long term\nB. Diabetic patient\nC. Men over 40\nD. Postmenopausal\nCorrect Answer: C. Men over 40\n*Explanation: Triptans are avoided in men over 40 with cardiac risk, but the exception is “men over 40” is not a precaution per se; typical precautions include cardiovascular disease, not just age.*\nQuestion 89\nGangrene may be associated with:\nA. Acetaminophen\nB. Metoclopramide\nC. Opioid\nD. Dihydroergotamine\nCorrect Answer: D. Dihydroergotamine\n*Explanation: Ergot derivatives cause vasospasm and gangrene.*\nQuestion 90\nAll mentioned drugs useful in prophylaxis of migraine except:\nA. Amitriptyline\nB. Clonidine\nC. Diazepam\nD. Topiramate\nCorrect Answer: C. Diazepam\n*Explanation: Diazepam is not a migraine prophylactic.*\nQuestion 91\nAll mentioned drugs useful in treatment of migraine except:\nA. Nifedipine\nB. Ergotamine\nC. Benzodiazepine\nD. Morphine\nCorrect Answer: A. Nifedipine\n*Explanation: Nifedipine is not used for acute migraine.*\nQuestion 92\nMild infrequent migraine attack is managed by:\nA. Triptan\nB. Ergot\nC. Diazepam\nD. Ibuprofen\nCorrect Answer: D. Ibuprofen\n*Explanation: NSAIDs are first‑line for mild migraine.*\nQuestion 93\nResistant migraine attack is managed by:\nA. Metoclopramide\nB. Dihydroergotamine\nC. Diazepam\nD. Sumatriptan\nCorrect Answer: B. Dihydroergotamine\n*Explanation: DHE is used for refractory migraine.*\nQuestion 94\nOne of the following pairs of drugs used in treatment of migraine could be used intranasally:\nA. Sumatriptan and diazepam\nB. Metoclopramide and morphine\nC. Ergotamine and triptan\nD. Triptan and dihydroergotamine\nCorrect Answer: D. Triptan and dihydroergotamine\n*Explanation: Both sumatriptan and DHE have intranasal formulations.*\nQuestion 95\nOne of the following drugs could be used sublingually in treatment of migraine attacks:\nA. Ergotamine\nB. Triptan\nC. Topiramate\nD. Acetaminophen\nCorrect Answer: A. Ergotamine\n*Explanation: Ergotamine is available sublingually.*\nQuestion 96\nSumatriptan should not be combined within 24 hours with the following drug:\nA. Naproxen\nB. Morphine\nC. Ergotamine\nD. Atropine\nCorrect Answer: C. Ergotamine\n*Explanation: Additive vasoconstriction.*\n## Parasitology (from “parasitology.pdf”)\nQuestion 97\nWhat is the most common parasitic infection of the CNS?\na) Echinococcosis\nb) Sparganosis\nc) Cerebral malaria\nd) Neurocysticercosis\ne) Amoebic brain abscess\nCorrect Answer: d) Neurocysticercosis\n*Explanation: The file states it is the most common parasitic CNS infection.*\nQuestion 98\nThe most common presenting problem associated with neurocysticercosis is:\na) Nausea and vomiting\nb) Decreased level of consciousness\nc) New onset seizures\nd) Blurred vision\ne) Facial palsy\nCorrect Answer: c) New onset seizures\n*Explanation: The file lists seizures as the most common presentation.*\nQuestion 99\n20-year-old immigrant from China with headache, confusion, seizures, multiple subcutaneous nodules, and eating raw frog meat. Suspect:\na) Granulomatous amoebic encephalitis (GAE)\nb) Primary amoebic meningoencephalitis (PAM)\nc) Sleeping sickness\nd) Cerebral malaria\ne) Sparganosis\nCorrect Answer: e) Sparganosis\n*Explanation: The file associates raw frog meat with sparganosis.*\nQuestion 100\nA 23-year-old woman, former pig farmer from Angola, with left-sided weakness and seizures. MRI shows parietal cysts. Diagnosis:\na) Primary amoebic meningoencephalitis\nb) Cerebral malaria\nc) Neurocysticercosis\nd) Granulomatous amoebic encephalitis\ne) Sleeping sickness\nCorrect Answer: c) Neurocysticercosis\n*Explanation: History of pig farming and cystic lesions suggest neurocysticercosis.*\nQuestion 101\nWhich mode of transmission accounts for neurocysticercosis?\na) Drinking water containing cyclops infected with procercoid larva\nb) Swimming water contaminated with Naegleria fowleri trophozoites\nc) Swallowing Taenia solium eggs in contaminated water or food\nd) Inhaling Acanthamoeba cyst or trophozoite through nasal passages\ne) Using frog tissues as poultices\nCorrect Answer: c) Swallowing Taenia solium eggs\n*Explanation: The file states: “The patient ingested eggs of Taenia solium in food or drink contaminated by stools.”*\nQuestion 102\nA 17-year-old male with palpebral edema, conjunctival congestion, and a nodular mass removed from the eye. Most probable diagnosis:\na) Acanthamoeba keratitis\nb) Toxoplasmosis\nc) Naegleria fowleri infection\nd) Sparganosis\ne) Cysticercosis\nCorrect Answer: d) Sparganosis\n*Explanation: Subcutaneous/ocular nodule from frog/cyclops exposure – sparganosis.*\nQuestion 103\nA previously healthy 12-year-old boy with fever, headache, altered taste/smell, confusion after swimming in a freshwater lake. CSF shows PMN leukocytosis and motile cells. Death. Most likely diagnosis:\na) Bacterial meningitis\nb) Granulomatous amoebic encephalitis\nc) Neurocysticercosis\nd) Primary amoebic meningoencephalitis\ne) Sparganosis\nCorrect Answer: d) Primary amoebic meningoencephalitis\n*Explanation: The file describes Naegleria fowleri from warm freshwater, rapid course, altered taste/smell.*\nQuestion 104\nWhich parasite causes primary amoebic meningoencephalitis?\na) Naegleria fowleri\nb) Entamoeba histolytica\nc) Spirometra mansoni\nd) Acanthamoeba polyphaga\ne) Acanthamoeba castellani\nCorrect Answer: a) Naegleria fowleri\n*Explanation: From the slide: Naegleria fowleri = PAM.*\nQuestion 105\nMost likely route of transmission for PAM:\na) Ingestion of contaminated food\nb) Ingestion of contaminated water\nc) Ingestion of undercooked pork\nd) Penetration through nasal mucosa\ne) Penetration through the cornea\nCorrect Answer: d) Penetration through nasal mucosa\n*Explanation: The file states: “Swimming water contaminated with Naegleria fowleri trophozoites” entering via cribriform plate.*\nQuestion 106\n25-year-old with acute meningoencephalitis, altered taste/smell, CSF wet mount shows motile trophozoites. Most likely organism:\na) Naegleria fowleri\nb) Acanthamoeba castellani\nc) Entamoeba histolytica\nd) Plasmodium falciparum\ne) Toxoplasma gondii\nCorrect Answer: a) Naegleria fowleri\n*Explanation: Biflagellate trophozoite of Naegleria.*\nQuestion 107\n30-year-old contact lens user with severe keratitis; culture of tap water would most likely reveal:\na) Acanthamoeba species\nb) Entamoeba histolytica\nc) Naegleria fowleri\nd) Spirometra mansoni\ne) Toxoplasma gondii\nCorrect Answer: a) Acanthamoeba species\n*Explanation: Acanthamoeba causes keratitis in contact lens users.*\nQuestion 108\nAs regards Acanthamoeba encephalitis:\na) The invasive stage is the amoeboflagellate\nb) Trophozoites only can be found in the brain\nc) Chronic inflammation of the brain is seen\nd) The trophozoite reaches the brain through the cribriform plate\ne) It is usually fatal within 10 days\nCorrect Answer: c) Chronic inflammation of the brain is seen (Granulomatous encephalitis)\nQuestion 109\nA baby born with hydrocephalus (image). Which infection?\na) Congenital toxoplasmosis\nb) Neurocysticercosis\nc) Granulomatous amoebic encephalitis\nd) Amoebic brain abscess\ne) Primary amoebic meningoencephalitis\nCorrect Answer: a) Congenital toxoplasmosis\n*Explanation: Hydrocephalus, intracranial calcifications, chorioretinitis – classic toxoplasmosis.*\nQuestion 110\nTreatment of toxoplasmosis in an AIDS patient includes:\na) Albendazole\nb) Mebendazole\nc) Pyrimethamine\nd) Praziquantel\ne) Ketoconazole\nCorrect Answer: c) Pyrimethamine\n*Explanation: Pyrimethamine + sulfadiazine is standard.*\nQuestion 1\nConcerning the lateral ventricle, choose one correct answer:\na. Its anterior horn lies in the parietal lobe.\nb. Its posterior horn lies in the temporal lobe.\nc. It is the cavity of the cerebral hemisphere.\nd. Has no choroid plexus.\nCorrect Answer: c. It is the cavity of the cerebral hemisphere.\n*Explanation: The lateral ventricles are the cavities of the cerebral hemispheres.*\nQuestion 2\nThe cisterna magna of subarachnoid space is a name given to the:\na. interpeduncular cistern.\nb. cistern of the corpus callosum.\nc. cistern of the lateral fissure.\nd. cerebello‑medullary cistern.\nCorrect Answer: d. cerebello‑medullary cistern.\n*Explanation: The cisterna magna is the cerebellomedullary cistern.*\nQuestion 3\nOne of the following, does not belong to the long association fibers:\na. fornix.\nb. superior longitudinal bundle.\nc. uncinate fasciculus.\nd. inferior longitudinal bundle.\nCorrect Answer: a. fornix.\n*Explanation: The fornix is a projection fiber (part of the limbic system), not a long association fiber.*\nQuestion 4\nThe paracentral lobule contains motor and sensory areas for one of the following parts:\na. head and neck.\nb. trunk.\nc. upper limb.\nd. lower limb.\nCorrect Answer: d. lower limb.\n*Explanation: The paracentral lobule contains the leg and foot area of the primary motor and sensory cortices.*\nQuestion 5\nOne of the following muscles is not inserted into the mandible:\na. temporalis.\nb. buccinator.\nc. masseter.\nd. medial pterygoid.\nCorrect Answer: b. buccinator.\n*Explanation: The buccinator inserts into the orbicularis oris and the pterygomandibular raphe, not into the mandible.*\nQuestion 6\nRegarding the parotid duct, the following statements are correct, except:\na. it courses across masseter below transverse facial artery.\nb. it opens into vestibule of mouth opposite upper second molar tooth.\nc. it can be palpated against the contracted masseter muscle.\nd. it pierces masseter muscle to reach the vestibule of mouth.\nCorrect Answer: d. it pierces masseter muscle to reach the vestibule of mouth.\n*Explanation: The parotid duct pierces the buccinator, not the masseter.*\nQuestion 7\nThe following are branches of the mandibular nerve or its divisions, except:\na. nerve to the medial pterygoid from the trunk.\nb. superior alveolar nerve from its anterior division.\nc. inferior alveolar nerve from its posterior division.\nd. auriculo‑temporal nerve from its posterior division.\nCorrect Answer: b. superior alveolar nerve from its anterior division.\n*Explanation: The superior alveolar nerve is a branch of the maxillary nerve, not the mandibular.*\nQuestion 8\nThe following nerves are embedded in the lateral wall of the cavernous sinus except:\na. oculomotor.\nb. trochlear.\nc. ophthalmic division of the trigeminal.\nd. mandibular division of the trigeminal.\nCorrect Answer: d. mandibular division of the trigeminal.\n*Explanation: The mandibular nerve (V3) does not pass through the cavernous sinus; it exits via foramen ovale.*\nQuestion 9\nA patient noticed on tongue protrusion it deviates to the left. Possibly this is due to damage of:\na. left lingual nerve.\nb. left chorda tympani nerve.\nc. left vagus nerve.\nd. left hypoglossal nerve.\nCorrect Answer: d. left hypoglossal nerve.\n*Explanation: The genioglossus (protrudes tongue) is supplied by the hypoglossal nerve; deviation toward the side of the lesion.*\nQuestion 10\nThe sensory supply of the mucous membrane of the larynx below the level of the vocal cords is:\na. recurrent laryngeal nerve.\nb. superior laryngeal nerve.\nc. external laryngeal nerve.\nd. internal laryngeal nerve.\nCorrect Answer: a. recurrent laryngeal nerve.\n*Explanation: Below the vocal folds, sensation is from the recurrent laryngeal nerve (branch of vagus).*\nQuestion 11\nThe only muscle of the soft palate that is not supplied by the vagus nerve is the:\na. palatoglossus.\nb. palatopharyngeus.\nc. tensor palate.\nd. levator palate.\nCorrect Answer: c. tensor palate.\n*Explanation: The tensor veli palatini is supplied by the mandibular nerve (V3), not the vagus.*\nQuestion 12\nWhich of the following muscles can retract the mandible?\na. platysma.\nb. buccinator.\nc. temporalis.\nd. masseter.\nCorrect Answer: c. temporalis.\n*Explanation: The posterior fibers of the temporalis retract the mandible.*\nQuestion 13\nOne of the followings is a feature of the mandible of old age:\na. The mandible consists of two halves.\nb. The mental foramen lies near the upper margin of the mandible.\nc. The ramus of the mandible is nearly vertical.\nd. The mandibular canal lies near the lower border of the mandible.\nCorrect Answer: c. The ramus of the mandible is nearly vertical.\n*Explanation: In old age, after tooth loss, the ramus becomes more vertical and the angle increases.*\nQuestion 14\nThe maxillary nerve leaves the cranial cavity by passing through:\na. Foramen ovale\nb. Sphenopalatine foramen\nc. Foramen spinosum\nd. Foramen rotundum\nCorrect Answer: d. Foramen rotundum.\n*Explanation: The maxillary nerve (V2) exits the skull via the foramen rotundum.*\nQuestion 15\nRegarding the arterial supply of the face, one of the following arteries is a branch of the ophthalmic artery:\na. Dorsal nasal\nb. Mental\nc. Buccal\nd. Intraorbital\nCorrect Answer: a. Dorsal nasal.\n*Explanation: The dorsal nasal artery is a terminal branch of the ophthalmic artery.*\nQuestion 16\nThe insertion of which of the following muscles of mastication is close to the wisdom tooth?\na. Masseter\nb. Temporalis\nc. Lateral pterygoid\nd. Medial pterygoid\nCorrect Answer: b. Temporalis.\n*Explanation: The temporalis inserts on the coronoid process and anterior border of the ramus, near the third molar.*\nQuestion 17\nWhich of the following structures is embraced by the 2 roots of the auriculotemporal nerve?\na. Superficial temporal artery\nb. Posterior auricular artery\nc. Middle meningeal artery\nd. Accessory meningeal artery\nCorrect Answer: c. Middle meningeal artery.\n*Explanation: The auriculotemporal nerve encircles the middle meningeal artery.*\nQuestion 18\nThe Parasympathetic root of sphenopalatine ganglion is:\na. Lesser superficial petrosal nerve\nb. Chorda tympani nerve\nc. Deep petrosal nerve\nd. Greater superficial petrosal nerve\nCorrect Answer: d. Greater superficial petrosal nerve.\n*Explanation: The greater petrosal nerve (from facial nerve) carries preganglionic parasympathetics to the pterygopalatine ganglion.*\nQuestion 19\nThe insertion of which of the following muscles prevents an upward enlargement of a thyroid tumor?\na. Sternohyoid\nb. Omohyoid\nc. Sternothyroid\nd. Thyrohyoid\nCorrect Answer: c. Sternothyroid.\n*Explanation: The sternothyroid depresses the thyroid cartilage and limits upward movement of the thyroid gland.*\nQuestion 20\nThe 1st cervical spinal nerve communicates with the:\na. Great auricular nerve\nb. Hypoglossal nerve\nc. Vagus nerve\nd. Cranial accessory nerve\nCorrect Answer: b. Hypoglossal nerve.\n*Explanation: C1 fibers join the hypoglossal nerve (via the ansa cervicalis).*\nQuestion 21\nWhich one of the following nerves is deep to hyoglossus muscle?\na. Vagus nerve\nb. Glossopharyngeal nerve\nc. Accessory nerve\nd. Hypoglossal nerve\nCorrect Answer: b. Glossopharyngeal nerve.\n*Explanation: The glossopharyngeal nerve passes deep to the hyoglossus muscle.*\nQuestion 22\nThe muscles which open the vocal cords are:\na. Posterior cricoarytenoids\nb. Lateral cricoarytenoids\nc. Thyroarytenoids\nd. Transverse arytenoid\nCorrect Answer: a. Posterior cricoarytenoids.\n*Explanation: The posterior cricoarytenoids are the only abductors of the vocal cords.*\nQuestion 23\nRegarding the paleo‑cerebellum, choose the correct statement:\na. It is connected to the vestibular system\nb. It is connected to the spinal cord\nc. It is connected to the cerebral cortex\nd. It is concerned with equilibrium\nCorrect Answer: b. It is connected to the spinal cord.\n*Explanation: The paleocerebellum (spinocerebellum) receives input from the spinal cord.*\nQuestion 24\nThe greatest commissure in the brain is:\na. Habenula commissure\nb. Hippocampal commissure\nc. Corpus callosum\nd. Anterior commissure\nCorrect Answer: c. Corpus callosum.\n*Explanation: The corpus callosum is the largest commissural fiber tract.*\nQuestion 25\nRegarding the internal capsule, the auditory radiation passes in:\na. Anterior limb\nb. Posterior limb\nc. Sublenticular part\nd. Retrolenticular part\nCorrect Answer: d. Retrolenticular part.\n*Explanation: The auditory radiation (from medial geniculate body) passes through the retrolenticular part of the internal capsule.*\nQuestion 26\nThe main blood supply of the medial surface of the cerebrum is:\na. Posterior inferior cerebellar\nb. Anterior cerebral\nc. Middle cerebral\nd. Posterior cerebral\nCorrect Answer: b. Anterior cerebral.\n*Explanation: The anterior cerebral artery supplies the medial surface of the frontal and parietal lobes.*\nQuestion 27\nThe pterion is an important clinical landmark because it overlies the:\na. Superior sagittal sinus\nb. Anterior branch of the middle meningeal artery\nc. Anterior cerebral artery\nd. Confluence of sinuses\nCorrect Answer: b. Anterior branch of the middle meningeal artery.\n*Explanation: The pterion overlies the anterior division of the middle meningeal artery.*\nQuestion 28\nThe superficial temporal vein unites with which vein to form the retromandibular vein?\na. Supraorbital\nb. Supratrochlear\nc. Deep facial\nd. Maxillary\nCorrect Answer: d. Maxillary.\n*Explanation: The superficial temporal and maxillary veins unite to form the retromandibular vein.*\nQuestion 29\nThe muscle which divides the lacrimal gland into 2 parts is:\na. Levator palpebrae superioris\nb. Superior oblique\nc. Superior rectus\nd. Lateral rectus\nCorrect Answer: a. Levator palpebrae superioris.\n*Explanation: The levator palpebrae superioris tendon divides the lacrimal gland into orbital and palpebral parts.*\nQuestion 30\nThe branch of the external carotid artery that passes posterosuperiorly along the inferior border of the posterior belly of the digastric muscle is the:\na. Lingual.\nb. Maxillary.\nc. Occipital.\nd. Posterior auricular.\nCorrect Answer: c. Occipital.\n*Explanation: The occipital artery runs along the inferior border of the posterior belly of digastric.*\nQuestion 31\nThe following branch of vagus nerve passes between ECA and ICA:\na. Pharyngeal.\nb. Recurrent laryngeal.\nc. Superior laryngeal.\nd. Meningeal.\nCorrect Answer: c. Superior laryngeal.\n*Explanation: The superior laryngeal nerve descends between the internal and external carotid arteries.*\nQuestion 32\nThe choroid plexus of the 4th ventricle is derived from the following artery:\na. Posterior inferior cerebellar.\nb. Anterior inferior cerebellar.\nc. Superior cerebellar.\nd. Middle cerebral.\nCorrect Answer: a. Posterior inferior cerebellar.\n*Explanation: The choroid plexus of the 4th ventricle is supplied by the posterior inferior cerebellar artery (PICA).*\nQuestion 33\nThe pyramidal tract fibers supply the following cranial nerve nucleus:\na. Olfactory.\nb. Optic.\nc. Trigeminal.\nd. Vestibulocochlear.\nCorrect Answer: c. Trigeminal.\n*Explanation: Corticobulbar fibers supply the motor nucleus of the trigeminal nerve (mastication).*\nQuestion 34\nThe synovial variety of the Atlanto‑occipital joint is:\nA. Pivot\nB. Plane\nC. Ellipsoid\nD. Hinge\nCorrect Answer: C. Ellipsoid.\n*Explanation: The atlanto‑occipital joint is a condylar (ellipsoid) synovial joint.*\nQuestion 35\nDuring clinical examination of the mouth of a 45‑year‑old man, deviation of the uvula to right side was noticed. What is the cranial nerve mostly affected?\nA. Right vagus\nB. Left vagus\nC. Right glossopharyngeal\nD. Left glossopharyngeal\nCorrect Answer: B. Left vagus.\n*Explanation: The uvula deviates away from the side of the lesion; left vagus lesion → uvula deviates to the right.*\nQuestion 36\nThe parasympathetic nucleus supplying the lacrimal gland is:\nA. Superior salivary\nB. Inferior salivary\nC. Edinger‑Westphal\nD. Dorsal nucleus of vagus\nCorrect Answer: A. Superior salivary.\n*Explanation: The superior salivatory nucleus gives rise to preganglionic fibers that reach the lacrimal gland via the greater petrosal nerve.*\nQuestion 37\nWhich of the following structure passes in the gap below the inferior constrictor muscle of the pharynx?\nA. Pharyngotympanic tube.\nB. Stylopharyngeus muscle.\nC. Recurrent laryngeal nerve.\nD. External laryngeal nerve.\nCorrect Answer: C. Recurrent laryngeal nerve.\n*Explanation: The recurrent laryngeal nerve enters the larynx below the inferior constrictor (between it and the esophagus).*\nQuestion 38\nThe middle meningeal vessels pass through which of the following skull foramina?\nA. Ovale\nB. Spinosum\nC. Lacrurn\nD. Rotundum\nCorrect Answer: B. Spinosum.\n*Explanation: The middle meningeal artery passes through the foramen spinosum.*\nQuestion 39\nWhat is the muscle responsible for flexion of the head to the same side and rotation of the face to the opposite side?\nA. Trapezius\nB. Sternomastoid\nC. Platysma\nD. Sternohyoid\nCorrect Answer: B. Sternomastoid.\n*Explanation: The sternocleidomastoid flexes the head ipsilaterally and rotates the face contralaterally.*\nQuestion 40\nA 35‑year‑old man came to the outpatient clinic complaining of dripping of saliva and accumulation of the food in the vestibule of the mouth cavity. Which muscle was most probably affected?\nA. Temporalis\nB. Masseter\nC. Buccinator\nD. Lateral pterygoid\nCorrect Answer: C. Buccinator.\n*Explanation: The buccinator keeps the vestibule clear; its paralysis causes food accumulation in the cheek.*\nQuestion 41\nA 55‑year‑old man is admitted to the hospital with severe scalp lacerations, which were sutured. After three days the wound is inflamed, swollen, and painful. Which of the following layers of the scalp is the dangerous area?\nA. Skin\nB. Connective tissue\nC. Aponeurosis of occipitofrontalis\nD. Loose areolar tissue\nCorrect Answer: D. Loose areolar tissue.\n*Explanation: Infection in the loose areolar tissue (dangerous area) can spread to the cranial cavity via emissary veins.*\nQuestion 42\nThe muscle which rotates the eyeball downwards and laterally is:\nA. Superior rectus\nB. Inferior rectus\nC. Superior oblique\nD. Lateral rectus\nCorrect Answer: C. Superior oblique.\n*Explanation: The superior oblique primarily intorts and depresses, but also abducts (down and out).*\nQuestion 43\nA 38‑year‑old man was admitted to the hospital for a partial thyroidectomy. After the operation, the patient could not abduct the true vocal cords due to a nerve injury. Which of the following muscles was most likely affected?\nA. Posterior cricoarytenoid\nB. Lateral cricoarytenoid\nC. Thyroarytenoid\nD. Cricothyroid\nCorrect Answer: A. Posterior cricoarytenoid.\n*Explanation: The posterior cricoarytenoid is the only abductor of the vocal cords; supplied by the recurrent laryngeal nerve.*\nQuestion 44\nThe parotid duct opens into the vestibule of the mouth opposite:\nA. The upper 2nd premolar tooth.\nB. The upper 1st molar tooth.\nC. The upper 2nd molar tooth.\nD. The upper 3rd molar tooth\nCorrect Answer: C. The upper 2nd molar tooth.\n*Explanation: The parotid duct opens opposite the upper second molar.*\nQuestion 45\nThe lesser palatine nerve originates from:\nA. Maxillary nerve\nB. Greater palatine nerve\nC. Otic ganglion\nD. Sphenopalatine ganglion\nCorrect Answer: D. Sphenopalatine ganglion.\n*Explanation: The lesser palatine nerve is a branch of the pterygopalatine ganglion (sphenopalatine ganglion).*\nQuestion 46\nThe only tributary of the subclavian vein is:\nA. IJV\nB. EJV\nC. Brachiocephalic\nD. Anterior jugular\nCorrect Answer: B. EJV.\n*Explanation: The external jugular vein is a tributary of the subclavian vein.*\nQuestion 47\nThe anterior boundary of tonsillar fossa is:\nA. Palatoglossal fold\nB. Palatopharyngeal fold\nC. Soft palate\nD. Dorsum of the tongue\nCorrect Answer: A. Palatoglossal fold.\n*Explanation: The palatoglossal arch (anterior pillar) forms the anterior boundary of the tonsillar fossa.*\nQuestion 48\nIn case of right corticobulbar tract injury above the level of the motor nucleus of facial nerve, which side of the face is affected?\nA. Upper ½ right side.\nB. Lower ½ right side.\nC. Upper ½ left side.\nD. Lower ½ left side.\nCorrect Answer: D. Lower ½ left side.\n*Explanation: UMN lesion of right corticobulbar tract → contralateral lower face weakness (left lower face).*\nQuestion 49\nWhich of the following structures has an extrapyramidal function?\nA. Amygdaloid nucleus\nB. Claustrum\nC. Corpus striatum\nD. Fornix\nCorrect Answer: C. Corpus striatum.\n*Explanation: The corpus striatum (caudate + putamen) is part of the basal ganglia (extrapyramidal system).*\nQuestion 50\nThe following are projection fibers of the cerebral hemisphere:\nA. Corticobulbar\nB. Cingulum\nC. Arcuate\nD. Uncinate\nCorrect Answer: A. Corticobulbar.\n*Explanation: Corticobulbar fibers are projection fibers (cortex to brainstem).*\nQuestion 51\nA 69‑year‑old woman was brought to the ER with inability to speak. She was diagnosed that she had motor aphasia. Which lobe of the brain is affected?\nA. Frontal\nB. Parietal\nC. Temporal\nD. Occipital\nCorrect Answer: A. Frontal.\n*Explanation: Broca’s area (motor speech) is in the inferior frontal gyrus.*\nQuestion 52\nThe part of the cerebellum concerned with planning and programming movement is:\nA. Spinocerebellar\nB. Vestibulocerebellum\nC. Archicerebellum\nD. Neocerebellum\nCorrect Answer: D. Neocerebellum.\n*Explanation: The neocerebellum (cerebrocerebellum) is involved in planning and coordination of voluntary movements.*\nQuestion 53\nA patient came to ER presenting with headache; fever; nausea; stiffness of the neck. He was diagnosed as meningitis. What is the name of the procedure by which a special needle is inserted into the subarachnoid space to get sample of CSF to confirm the diagnosis?\nA. Conus medullaris\nB. Lumbar cistern\nC. Lumbar puncture\nD. Filum terminale\nCorrect Answer: C. Lumbar puncture.\n*Explanation: Lumbar puncture is performed to obtain CSF from the subarachnoid space.*\nQuestion 54\nThe skin over buccinator is supplied by the following nerve:\na) Ophthalmic\nb) Mandibular\nc) Maxillary\nd) Facial\nCorrect Answer: b) Mandibular.\n*Explanation: The buccal branch of the mandibular nerve (V3) supplies skin over the buccinator.*\nQuestion 55\nThe parasympathetic supply of the parotid gland is from the following nerve:\na) Lesser petrosal\nb) Deep petrosal\nc) Greater petrosal\nd) External petrosal\nCorrect Answer: a) Lesser petrosal.\n*Explanation: The lesser petrosal nerve (from the tympanic plexus) carries preganglionic parasympathetics to the otic ganglion for the parotid gland.*\nQuestion 56\nWhich of the following lymph nodes drains directly the tip of the tongue?\na) Jugulo‑digastric\nb) Jugulo‑omohyoid\nc) Submental\nd) Submandibular\nCorrect Answer: c) Submental.\n*Explanation: The tip of the tongue drains to the submental lymph nodes.*\nQuestion 57\nThe only infrahyoid muscle which is not supplied by ansa cervicalis is:\na) Sternohyoid\nb) Thyrohyoid\nc) Omohyoid\nd) Sternothyroid\nCorrect Answer: b) Thyrohyoid.\n*Explanation: Thyrohyoid is supplied by C1 via the hypoglossal nerve, not by ansa cervicalis.*\nQuestion 58\nThe rootlets of the vagus nerve are emerging between:\na) Pyramid and olive.\nb) Pyramid and pons.\nc) Olive and inferior cerebellar peduncle.\nd) Gracile and cuneate tubercles.\nCorrect Answer: c) Olive and inferior cerebellar peduncle.\n*Explanation: Vagus rootlets emerge from the medulla in the post‑olivary sulcus (between olive and inferior cerebellar peduncle).*\nQuestion 59\nThe part of the cerebellum concerned with balance is:\na) Paleocerebellum\nb) Neocerebellum\nc) Flocculonodular\nd) Lateral zone area\nCorrect Answer: c) Flocculonodular.\n*Explanation: The flocculonodular lobe (vestibulocerebellum) is concerned with balance and eye movements.*\nQuestion 60\nDeep inguinal ring is a gap in:\na) Fascia transversalis\nb) External spermatic fascia\nc) External oblique aponeurosis\nd) Cremasteric muscle\nCorrect Answer: a) Fascia transversalis.\n*Explanation: The deep inguinal ring is an opening in the transversalis fascia.*\nQuestion 61\nThe short gastric arteries originate from:\na) Hepatic\nb) Coeliac\nc) Gastroduodenal\nd) Splenic\nCorrect Answer: d) Splenic.\n*Explanation: Short gastric arteries are branches of the splenic artery.*\nQuestion 62\nThe bare area of the liver is enclosed by which of the following ligaments:\na) ligamentum teres\nb) Coronary ligament\nc) Ligamentum venosum\nd) Falciform ligament\nCorrect Answer: b) Coronary ligament.\n*Explanation: The bare area of the liver is bounded by the two layers of the coronary ligament.*\nQuestion 63\nWhich of the following nerves emerges from the medial aspect of psoas major muscle?\na) Obturator\nb) Iliohypogastric\nc) Ilioinguinal\nd) Lateral cutaneous nerve of thigh\nCorrect Answer: a) Obturator.\n*Explanation: The obturator nerve emerges from the medial border of psoas major.*\nQuestion 64\nThe following single branch of abdominal aorta arises at the level of L3:\na) Coeliac\nb) Superior mesenteric\nc) Inferior mesenteric\nd) Median sacral\nCorrect Answer: d) Median sacral.\n*Explanation: The median sacral artery arises from the aorta just above its bifurcation (L4 level usually, but among options it is the most caudal).*\nQuestion 65\nThe lateral umbilical fold is raised by:\na) Obliterated umbilical artery\nb) Obliterated urachus\nc) Deep circumflex iliac artery\nd) Inferior epigastric artery\nCorrect Answer: d) Inferior epigastric artery.\n*Explanation: The lateral umbilical fold contains the inferior epigastric vessels.*\nQuestion 66\nA 68 year‑old man with forward tilting of the trunk and short steps, rigidity and trembling. Diagnosis: Parkinson’s disease. Which area of the midbrain is suspected to be affected?\na. Crus cerebri\nb. Substantia nigra\nc. Tegmentum\nd. Tectum\nCorrect Answer: b. Substantia nigra.\n*Explanation: Parkinson’s disease involves degeneration of the substantia nigra pars compacta (dopaminergic neurons).*\nQuestion 67\nA 64‑year‑old man unable to produce speech but understands and can write words. What area is affected?\na. Broca's area\nb. Premotor area\nc. Wernicke's area\nd. Supplementary motor area\nCorrect Answer: a. Broca's area.\n*Explanation: Broca’s aphasia (non‑fluent) affects speech production with preserved comprehension.*\nQuestion 68\nA 45‑year‑old male with absent cremasteric reflex. Which nerve is responsible for the efferent limb?\na) Ilioinguinal\nb) Iliohypogastric\nc) Genitofemoral\nd) Pudendal\nCorrect Answer: c) Genitofemoral.\n*Explanation: The cremasteric reflex efferent limb is via the genital branch of the genitofemoral nerve.*\nQuestion 69\nA 70‑year‑old man with 90% blockage at the origin of the inferior mesenteric artery. Which artery would provide collateral supply to the descending colon?\na) Left gastroepiploic\nb) Middle colic artery\nc) Sigmoid artery\nd) Superior rectal artery\nCorrect Answer: b) Middle colic artery.\n*Explanation: The middle colic artery (from superior mesenteric) can collateralize with the left colic artery (from inferior mesenteric).*\nQuestion 70\nA 55‑year‑old man with a perforating ulcer in the posterior wall of the stomach. Where would peritonitis most likely develop initially?\na) Omental bursa\nb) Greater sac\nc) Morison's pouch\nd) Right subhepatic space\nCorrect Answer: a) Omental bursa.\n*Explanation: Posterior gastric ulcer perforates into the lesser sac (omental bursa).*\n2nd Edition\nCNS Module - Part 2\nQuestions\nOmar Elazab\nMBBCH, Ain Shams University\nCairo, Egypt\nRevised By\nShymaa Elsayed\nMBBCH, Ain Shams University\nCairo, Egypt\nMayada Aziz\nMBBCH, Ain Shams University\nCairo, Egypt\nRoaa Abdultawab\nAin Shams University\nCairo, Egypt\nAhmed Abdullah\nAin Shams University\nCairo, Egypt\nMostafa Osama\nMBBCH, Ain Shams University\nCairo, Egypt\nNour Mohamed\nAin Shams University\nCairo, Egypt\nFor personal use only, No other uses without permission. Copyright © 2024. All rights reserved\nCNS Module - Part 2\nQuestions\niBooky املى بياناتك وابعتها عشـان تفعل أكونت\nName\nPhone No.\nUniversity ID\nE-mail\niBooky\n1. Answers of the MCQs\n2. More Questions\n3. Explanations of some questionsابعتلنا رسالة\nفيها صورة الصفحة دي\n012 8000 4002\nتواصل معنا لتحصل علي\nاملزيد من خالل األبليكيشن\niBooky\nContact Us\n012 8000 4002\nJoin Our Channel\n1.\nPreface\nDear colleagues,\nPresenting you with the third edition of   | CNS Module (Questions)\nThis edition’s content is made out to help you solve MCQs & Short Essay easily.\nHoping this book improves your studying experience to be as enjoyable and as\nfruitful as possible\n.\nOmar Elazab\nMBBCH, Ain Shams University\n| CNS Module - Part 2 (Questions)\nBy: Omar Elazab\nSecond Edition Copyright © 2024\nNo part of this publication may be reproduced or transmitted in any form or by any means, electronic or\nmechanical, including photocopying, recording, or any information storage and retrieval system, without\npermission in writing from the publisher.جميع احلقوق محفوظة\nال يسمح بنسخ أو تصوير أو تسجيل أو تداول أي جزء من هذا الكتاب بأي وسيلة إلكترونية أو تقنية أو بأي وسيلة اخري\nكما يحظرحظرا ً تاما ً استعمال مواد هذا الكتاب استعماال ً جتاريا ً من أي نوع كان إال باذن خطي لذالك من الناشر\nFirst Edition 2023\nIndex\nPathology\nSection 1 (MCQ)\nPharmacology\nMicrobiology\nPathological aspects of CNS infections\nNeurodegenerative & Demyelinating diseases\nTrauma & vascular disorders\nCNS tumors\nOpioid drugs\nDrug therapy of Parkinsonism\nAnxiolytic and sedative hypnotics\nLocal anesthetics\nDrug therapy of epilepsy and migraine\nAntidepressant drugs\n3\n4\n5\n6\n11\n14\n15\n18\n21\n25\nAntimicrobial therapy of meningitis\nDrug therapy of neurodegenerative & myeline disease\nDrug therapy of psychosis and drug abuse\nMeningitis\nAseptic Meningitis and Poliomyelitis\nNeuromuscular infections\nEncephalitis\nParasitology\nProtozoa of CNS (free-living amoebae)\nLarvae of cestodes\nOther important parasitic infections of the CNS\n27\n29\n31\n35\n40\n42\n45\n51\n55\n57\nIndex Index\nSection 2 (Short Essay) Section 2 (Short Essay)\nPathology Pathology\nNeurodegenerative 61\nSphingolipids related disorders 63\nCNS trauma 64\nMicrovascular diseases of CNS 65\nPathology of CNS infections 67\nCNS tumors 69\nPharmacology Pharmacology\nOpioids 75\nDrug Therapy of Parkinson’s Disease 77\nAnxiolytics & sedative hypnotics 79\nLocal anesthesia 81\nGeneral anesthesia 82\nEpilepsy 84\nMigraine 85\nDrug therapy of depression 87\nAntimicrobial therapy for meningitis 89\nDrug therapy for neurodegenerative and\nmylene disease 91\nDrug therapy of psychosis 93\nDrug abuse 95\nIndex Index\nSection 2 (Short Essay) Section 2 (Short Essay)\nMicrobiology Microbiology\nInfections affecting muscle tone 97\nBacterial meningitis 98\nFungal meningitis 101\nViral meningitis 102\nViral encephalitis 104\nParasitology Parasitology\nNaegleria fowleri 109\nAcanthamoeba 110\nSparganosis 111\nCysticercosis 111\nOther CNS parasitic infection 112\nتواصل معنا لتحصل علي\nاملزيد من خالل األبليكيشن\niBooky\nContact Us\n012 8000 4002\nJoin Our Channel\nI\nMCQ\n5\nSection\nPathology\nChapter 1\nPathological aspects of CNS infections\n?\n1. Which of the following is true about\nmeningococcal meningitis:\nPathology\n6. Poliomyelitis is usually an infection of:\na. Cerebral tissue\na. It most commonly affects adults around the\nsixth decade of life\nb. The Dura matter is mainly affected by\nsuppuration\nc. The condition may be complicated by acute\nadrenal insufficiency\nd. All of the above\n2. Rabies is transmitted to CNS via:\na. Arteries\nb. Veins\nc. Peripheral nerves\nd. Direct implantation\ne. Lymphatics\n3. A child with tuberculous meningitis his CSF\nexamination will show an increased number of:\na. Macrophages\nb. Lymphocytes\nc. Plasma cells\nd. Giant cells\ne. Epithelioid cells\n4. Muscle paralysis in case of poliomyelitis is\ndue to:\na. Destruction of the muscle fibers by the toxins\nof the organisms\nb. Inflammation of the muscle\nc. Inflammation of the nerves supplying the\naffected muscles\nd. Degeneration of their anterior horn cells in\nthe spinal cord\ne. Degeneration of the neuromuscular junctions\n5. The following disease is transmitted by\nblood transfusion:\na. Meningitis\nb. Poliomyelitis\nc. Autoimmune deficiency syndrome (AIDS)\nd. Brain abscess\ne. Rabies\nb. Cerebellar tissue\nc. Anterior horn cells of the spinal cord\nd. Posterior horn cells of the spinal cord\ne. Peripheral nerves\n7.\nCSF in acute septic meningitis doesn’t show:\na. Increased in amount\nb. Increased protein content\nc. Increased sugar content\nd. Polymorphonuclear cells\ne. Organisms"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q77",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Electroencephalogram:",
+      "explanation": "The EEG represents summation of excitatory (EPSP) and inhibitory (IPSP) postsynaptic potentials in cortical neurons. It is recorded in awake persons, not anesthetized. Theta waves appear during relaxed states; beta waves during alert states.",
+      "keyConcept": "EEG = summation of cortical EPSPs/IPSPs; alpha in relaxed wakefulness; beta in alertness; theta in drowsiness.",
+      "options": [
+        "Recorded in an anaesthetized person.",
+        "Represents summation of EPSP & IPSP in brain neurons.",
+        "Theta waves dominate in adult during awake state with mental rest.",
+        "Beta waves are recorded in light sleep.",
+        "A diffuse generalized wave is recorded after an initial localized small wave."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-physiology-q78",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Brain waves:",
+      "explanation": "Desynchronized, low voltage, high frequency (beta) waves are recorded when RAS is activated during alertness. Paradoxical sleep shows similar waves. Alpha waves dominate relaxed wakefulness. Delta waves are slow, high voltage seen in deep sleep. Gamma waves are high frequency associated with cognitive processing.",
+      "keyConcept": "Beta = RAS activation/alertness; Alpha = relaxed wake; Theta = drowsiness/children; Delta = deep sleep; Gamma = cognition.",
+      "options": [
+        "Regular synchronized alpha waves are recorded in paradoxical sleep.",
+        "Desynchronized, low voltage, high frequency waves are recorded due to activation of RAS.",
+        "Highest voltage low frequency waves are recorded in adults during awake relaxed state.",
+        "Intrinsic activity of reticular formation produces beta waves.",
+        "Gamma waves are recorded in deep sleep."
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch1-physiology-q79",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "The EEG wave recorded in high mental activity, hyperaroused state is:",
+      "explanation": "Beta waves (13-30 Hz, 25μV, irregular, desynchronized) are recorded during high mental activity and hyperaroused states. Alpha waves dominate relaxed wakefulness; theta waves appear in drowsiness and children; delta waves in deep sleep; gamma waves (30-80 Hz) are associated with consciousness but are very low voltage.",
+      "keyConcept": "Beta waves: alert, active thinking; alpha: relaxed closed eyes; theta: drowsy/children; delta: sleep.",
+      "options": [
+        "Alpha (8-13 HZ, 50µv, regular, synchronized).",
+        "Beta (13-30 HZ, 25µv, irregular, desynchronized).",
+        "Theta (4-7 HZ, 100µv, regular, synchronized).",
+        "Delta (0.5-3.5 HZ, 100µv, regular, synchronized).",
+        "Gamma (30-80 HZ, 0.5-2µv, irregular, desynchronized)."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-physiology-q80",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "The EEG wave recorded in children is:",
+      "explanation": "Theta waves (4-7 Hz, 100μV, regular, synchronized) are prominent in children and adults during drowsiness. Alpha waves dominate in adults at rest; beta in alertness; delta in deep sleep; gamma in intensive cognitive tasks.",
+      "keyConcept": "Theta waves: dominant in children; appear in adult drowsiness.",
+      "options": [
+        "Alpha (8-13 HZ, 50µv, regular, synchronized).",
+        "Beta (13-30 HZ, 25µv, irregular, desynchronized).",
+        "Theta (4-7 HZ, 100µv, regular, synchronized).",
+        "Delta (0.5-3.5 HZ, 100µv, regular, synchronized).",
+        "Gamma (30-80 HZ, 0.5-2µv, irregular, desynchronized)."
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch1-physiology-q81",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "β waves of EEG are:",
+      "explanation": "Beta waves are faster than alpha (13-30 Hz vs 8-13 Hz) and are recorded during alert, active states, not in relaxed or sleeping states. They disappear (replaced by alpha) when a person relaxes with eyes closed. They are NOT character of relaxed awake state, children, or paradoxical sleep.",
+      "keyConcept": "Beta waves: alert/active mental state, faster than alpha, low voltage, desynchronized.",
+      "options": [
+        "Character of relaxed awake state.",
+        "Faster than α waves, but slower than δ waves.",
+        "Recorded in children.",
+        "Disappear when the person becomes alert.",
+        "Recorded in paradoxical sleep."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-physiology-q82",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which of the following sentences about sleep and arousal is true:",
+      "explanation": "Orexin (hypocretin) from the lateral hypothalamus regulates sleep-wake switching by modulating brainstem nuclei activity. Posterior hypothalamus promotes wakefulness; cholinergic neurons induce arousal; serotonergic and noradrenergic neurons promote REM sleep at different sites.",
+      "keyConcept": "Orexin regulates sleep-wake balance; posterior hypothalamus = wakefulness; cholinergic = arousal; serotonergic/noradrenergic = REM.",
+      "options": [
+        "Posterior hypothalamus is a Non-REM sleep center.",
+        "Cholinergic neurons of upper brain stem induce arousal.",
+        "Serotonergic brain stem neurons induce REM sleep.",
+        "Suprachasmatic nucleus is a REM sleep center.",
+        "Orexin hormone of the hypothalamus regulates brain stem nuclei activity and switches the activity between seep and arousal."
+      ],
+      "correctIndex": 4
+    },
+    {
+      "id": "mcns2-ch1-physiology-q83",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "REM sleep differs from Non-REM sleep in:",
+      "explanation": "REM sleep is characterized by low voltage desynchronized waves (like wakefulness), vivid dreams, penile erection, and irregular HR/BP. Non-REM has synchronized waves, longer duration early in night, and increased GH. Both have different durations throughout sleep.",
+      "keyConcept": "REM: desynchronized EEG, dreams, irregular vitals, low arousal threshold; non-REM: synchronized EEG, longer early cycle.",
+      "options": [
+        "Has longer duration in the sleep cycles.",
+        "Low voltage desynchronized brain waves are recorded during it.",
+        "Presence of sleep walking & talking.",
+        "Low threshold of arousal.",
+        "Increased level of growth hormone."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-physiology-q84",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Sleep, all are true EXCEPT:",
+      "explanation": "Increased activity of raphe magnus and locus coeruleus PROMOTES wakefulness and arousal, not sleep. These nuclei are part of the ascending activating system.",
+      "keyConcept": "Raphe magnus and locus coeruleus = wakefulness/REM-on neurons; NOT sleep centers.",
+      "options": [
+        "It helps brain rest and brain plasticity.",
+        "It may be due to synaptic fatigue of RAS neurons.",
+        "It may be due to active inhibition of RAS by sleep centers.",
+        "It may be due to increased activity of raphe magnus and locus coeruleus brain stem nuclei.",
+        "It may be due to accumulation of sleep inducing lipids or peptide in the CSF."
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch1-physiology-q85",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Compared to REM sleep, Non-REM sleep is characterized by:",
+      "explanation": "Non-REM sleep is characterized by increased growth hormone secretion (especially in early sleep cycles), synchronized high-amplitude slow waves, decreased muscle tone, and autonomic stability. REM sleep has irregular HR/BP, dreams, decreased muscle tone, and no GH increase.",
+      "keyConcept": "Non-REM: GH secretion, synchronized EEG, muscle relaxation; REM: dreams, desynchronized EEG, atonia.",
+      "options": [
+        "Dreams and penile erection.",
+        "Irregular HR and ABP.",
+        "Marked decrease in muscle tone.",
+        "Increase in growth hormone secretion.",
+        "Recording of high frequency, low voltage, desynchronized brain waves."
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch1-physiology-q86",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Paradoxical sleep is characterized by:",
+      "explanation": "Paradoxical (REM) sleep includes rapid eye movements and movement of finger/toe muscles, occurs later in sleep cycles (not at start), and has 4 stages only in non-REM. Vitals are irregular, not markedly decreased. REM is important for mental restitution.",
+      "keyConcept": "REM sleep: rapid eye movements, muscle twitches, irregular vitals, dreaming, mental restoration.",
+      "options": [
+        "Occurs at the start of sleep cycle.",
+        "Includes 4 sleep stages.",
+        "Movement of eye, finger and toe muscles.",
+        "Marked decrease in blood pressure & heart rate.",
+        "Important for physical rest."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-physiology-q87",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which of the following is a REM sleep center:",
+      "explanation": "The locus coeruleus (noradrenergic) and laterodorsal tegmental nuclei (cholinergic) are REM sleep centers. Raphe nucleus promotes sleep but is more related to non-REM. Anterior hypothalamus is sleep-promoting; suprachiasmatic nucleus regulates circadian rhythm.",
+      "keyConcept": "REM sleep centers: locus coeruleus (noradrenergic), LDT/PPT (cholinergic).",
+      "options": [
+        "Raphe nucleus.",
+        "Locus coeruleus.",
+        "Reticular formation.",
+        "Anterior hypothalamus.",
+        "Suprachasmatic nucleus of hypothalamus."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-physiology-q88",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which of the following is a neurotransmitter for REM sleep:",
+      "explanation": "Acetylcholine is the primary neurotransmitter for REM sleep, released by cholinergic neurons in the laterodorsal tegmental nucleus. Norepinephrine and serotonin are associated with wakefulness and non-REM sleep.",
+      "keyConcept": "REM sleep: cholinergic neurotransmission; serotonin/norepinephrine: wakefulness/non-REM.",
+      "options": [
+        "Acetylcholine.",
+        "Norepinephrine.",
+        "Serotonin.",
+        "Histamine.",
+        "GABA."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-physiology-q103",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Consolidation of memory increases by:",
+      "explanation": "Sleep (especially REM sleep) enhances memory consolidation through synaptic reorganization. Anesthesia, concussion, and electroshock impair consolidation.",
+      "keyConcept": "REM sleep enhances memory consolidation by promoting synaptic plasticity and memory transfer to cortex.",
+      "options": [
+        "Anesthesia.",
+        "Sleep.",
+        "Concussion.",
+        "Electroshock therapy.",
+        "Mental fatigue."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-physiology-q104",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Consolidation of memory decreases by:",
+      "explanation": "REM sleep is critical for memory consolidation. Lack of REM sleep impairs consolidation. Interesting information, rehearsal, mental rest, and quiet sleep all enhance consolidation.",
+      "keyConcept": "REM sleep is essential for memory consolidation; deprivation impairs learning and memory.",
+      "options": [
+        "Interesting information.",
+        "Lack of REM sleep.",
+        "Rehearsal.",
+        "Mental rest.",
+        "Quiet sleep."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-physiology-q132",
+      "type": "essay",
+      "lecture": 1,
+      "text": "What are the stages and EEG characteristics of very light sleep?",
+      "explanation": "Very light sleep (Stage N1) is characterized by theta wave EEG activity (4-8 Hz), vertex sharp waves, and loss of alpha rhythm, representing transition from wakefulness to sleep.",
+      "keyConcept": "Stage N1 sleep EEG characteristics",
+      "modelAnswer": "Very light sleep (Stage N1) is characterized by theta wave EEG activity (4-8 Hz), vertex sharp waves, and loss of alpha rhythm, representing transition from wakefulness to sleep."
+    },
+    {
+      "id": "mcns2-ch1-physiology-q133",
+      "type": "essay",
+      "lecture": 1,
+      "text": "What are the stages and EEG",
+      "explanation": "N2 sleep (light sleep) shows sleep spindles and K-complexes on EEG; N3 (deep sleep) shows delta waves; REM sleep shows theta rhythm with sawtooth waves and muscle atonia.",
+      "keyConcept": "Sleep stage EEG patterns",
+      "modelAnswer": "Sleep stages and EEG patterns:\n1) Stage N1 (light sleep): theta waves (4-7 Hz), low amplitude.\n2) Stage N2: sleep spindles (12-14 Hz bursts) and K-complexes.\n3) Stage N3 (slow-wave/deep sleep): delta waves (0.5-4 Hz), high amplitude.\n4) REM sleep: low-amplitude, mixed-frequency waves resembling wakefulness (desynchronized EEG), with rapid eye movements and muscle atonia."
+    },
+    {
+      "id": "mcns2-ch1-physiology-q141",
+      "type": "mcq",
+      "lecture": 4,
+      "text": "Pain sensation is characterized by:",
+      "explanation": "Substance P is the primary neurotransmitter for slow pain (secondary pain) transmission in polymodal C fibers. Glutamate mediates fast pain through AMPA receptors. Pain perception involves the spinothalamic tract and thalamus, not direct cortical perception.",
+      "keyConcept": "Substance P functions as the primary neurotransmitter for slow, dull, diffuse pain via C fiber transmission.",
+      "options": [
+        "Sharply localized.",
+        "Perceived at the sensory cortex.",
+        "Occurs in skin, deep structures, and viscera.",
+        "Glutamate is the neurotransmitter involved in its conduction.",
+        "Slow pain."
+      ],
+      "correctIndex": 4
+    },
+    {
+      "id": "mcns2-ch1-physiology-q203",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "A wife came to the doctor, and complained that her husband talks during his sleep, and that frightens her, the doctor explained that:\nA. This is normal in REM sleep\nB. She can ask her husband about his dream, and he will probably remember them\nC. Teeth grinding is expected to happen\nD. She can easily wake him up\nE. This probably happens a lot near the morning",
+      "explanation": "Sleep talking occurs during REM sleep when motor inhibition prevents dream enactment, but the person is difficult to wake from this stage; they typically won't remember the dream.",
+      "keyConcept": "Sleep talking occurs in REM; difficult to wake, no dream recall.",
+      "options": [
+        "This is normal in REM sleep",
+        "She can ask her husband about his dream, and he will probably remember them",
+        "Teeth grinding is expected to happen",
+        "She can easily wake him up",
+        "This probably happens a lot near the morning"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch3-physiology-q14",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which parts of the hypothalamus control autonomic responses?",
+      "explanation": "The hypothalamus controls autonomic responses primarily through the posterior and lateral hypothalamus (sympathetic) and anterior/ventromedial regions (parasympathetic), via descending pathways to brainstem autonomic centers.",
+      "keyConcept": "Hypothalamic autonomic regulation",
+      "options": [
+        "Control of internal homeostasis",
+        "Control of endocrine functions",
+        "Control of autonomic responses",
+        "Regulation of food intake and appetite"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch3-physiology-q30",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which area of hypothalamus is responsible for sexual behavior?\nA. Supraoptic nucleus\nB. Paraventricular nucleus\nC. Anterior part of hypothalamus\nD. Suprachiasmatic nucleus\nE. Pre-optic nucleus",
+      "explanation": "The anterior hypothalamus contains structures essential for sexual behavior and mating, including the preoptic area which shows sex differences in neuron number.",
+      "keyConcept": "Anterior hypothalamus: sexual behavior.",
+      "options": [
+        "Supraoptic nucleus",
+        "Paraventricular nucleus",
+        "Anterior part of hypothalamus",
+        "Suprachiasmatic nucleus",
+        "Pre-optic nucleus"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch4-physiology-q2",
+      "type": "mcq",
+      "lecture": 6,
+      "text": "Substantia Gelatinosa of Rolandi can NOT be inhibited by:\n\nA) Stimulation of Aβ fibres.\nB) Release of endorphins from the hypothalamus.\nC) Counter irritant.\nD) Aquipuncture\nE) Herpes Zoster.",
+      "explanation": "Herpes Zoster activates (rather than inhibits) substantia gelatinosa by causing nociceptive input. Aβ fiber stimulation, endorphins, counter-irritants, and acupuncture all inhibit SG via presynaptic inhibition or descending pathways.",
+      "keyConcept": "Substantia Gelatinosa modulates pain via T-junction; inhibited by Aβ stimulation, endorphins, counter-irritants.",
+      "options": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch4-physiology-q3",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Lateral nuclei of hypothalamus are NOT involved in:",
+      "explanation": "Heat gain is a function of the posterior hypothalamus (not lateral). The lateral hypothalamus handles feeding, thirst, orexin release, rage, and approach motivation. The ventromedial nucleus is the satiety center.",
+      "keyConcept": "Lateral hypothalamus: feeding, thirst, orexin, rage. Posterior hypothalamus: heat conservation/gain.",
+      "options": [
+        "Feeding and thirst.",
+        "Release of orexin hormone.",
+        "Rage.",
+        "Approach motivation.",
+        "Heat gain."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch4-physiology-q5",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Regarding the hypothalamus:",
+      "explanation": "Heat gain center is in the POSTERIOR hypothalamus (not anterior). Anterior hypothalamus is for heat loss. Satiety center (ventromedial) does not have intrinsic activity - it responds to signals. Suprachiasmatic nucleus regulates circadian rhythms, not body activities synchronization in that context.",
+      "keyConcept": "Anterior hypothalamus: heat loss. Posterior hypothalamus: heat gain. Ventromedial: satiety. Lateral: feeding.",
+      "options": [
+        "Satiety center has intrinsic activity.",
+        "Heat gain center is present in the anterior hypothalamus.",
+        "Ventromedial nuclei synchronize body activities according to dark-light cycles.",
+        "Posterior hypothalamus function as a sleep center.",
+        "Anterior hypothalamic nuclei play a role in all of sleep, heat loss, parasympathetic activity and sexual drive."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch4-physiology-q6",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "What is the main function of the hypothalamus?",
+      "explanation": "The hypothalamus maintains internal homeostasis through autonomic control, regulates endocrine function via pituitary connection, controls food intake, temperature, thirst, and circadian rhythms.",
+      "keyConcept": "Hypothalamus integrative functions",
+      "options": [
+        "Control of internal homeostasis",
+        "Control of endocrine functions",
+        "Control of autonomic responses",
+        "All of the above"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch4-physiology-q7",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "How does the hypothalamus control endocrine functions Through nervous control?",
+      "explanation": "Hypothalamic neurons directly control the posterior pituitary via axonal projections, releasing oxytocin and vasopressin (ADH) into systemic circulation in response to neural stimuli.",
+      "keyConcept": "Hypothalamic-posterior pituitary connection",
+      "options": [
+        "Control of posterior pituitary gland leads to secret oxytocin & vasopressin",
+        "Control of Adrenal medulla leads to secret catecholamines",
+        "Modulation of Anterior pituitary gland",
+        "Modulation of adrenal cortex"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch4-physiology-q8",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "How does the hypothalamus control endocrine functions Through hormonal control?",
+      "explanation": "Hypothalamic releasing and inhibiting hormones travel through the hypothalamic-hypophyseal portal system to control anterior pituitary hormone secretion, which then regulates peripheral endocrine glands.",
+      "keyConcept": "Hypothalamic-anterior pituitary portal system",
+      "options": [
+        "Control of Anterior pituitary gland, which controls most body endocrine glands",
+        "Control of Posterior pituitary gland",
+        "Modulation of thyroid gland",
+        "Modulation of adrenal glands"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch4-physiology-q9",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which part of the hypothalamus is the feeding center?",
+      "explanation": "The lateral hypothalamus contains the feeding (hunger) center; stimulation increases appetite and feeding behavior while destruction causes anorexia and weight loss.",
+      "keyConcept": "Lateral hypothalamus feeding center",
+      "options": [
+        "Lateral hypothalamus",
+        "VM hypothalamus",
+        "Posterior hypothalamus",
+        "Anterior hypothalamus"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch4-physiology-q10",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which part of the hypothalamus is the satiety center?",
+      "explanation": "The ventromedial hypothalamus contains the satiety center; stimulation produces feeling of fullness and stops eating while destruction leads to hyperphagia and obesity.",
+      "keyConcept": "Ventromedial hypothalamus satiety center",
+      "options": [
+        "Lateral hypothalamus",
+        "VM hypothalamus",
+        "Posterior hypothalamus",
+        "Anterior hypothalamus"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch4-physiology-q12",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Stimulation of lateral nucleus of the hypothalamus produces:\nA. Fear\nB. Bradycardia\nC. oxytocin secretion\nD. food intake\nE. maternal behaviour",
+      "explanation": "Stimulation of the lateral hypothalamus triggers feeding behavior and food intake (hunger center), while the ventromedial hypothalamus acts as the satiety center.",
+      "keyConcept": "Lateral hypothalamus stimulation: food intake (hunger).",
+      "options": [
+        "Fear",
+        "Bradycardia",
+        "oxytocin secretion",
+        "food intake",
+        "maternal behaviour"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch5-physiology-q8",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which is NOT a function of the cerebellum includes:",
+      "explanation": "The cerebellum INHIBITS excess cortical activity, not inhibits cortical activity per se (which would be incorrect). Option E is poorly worded. Actually, the cerebellum projects to thalamus and cerebral cortex via the dentatothalamic pathway, modulating (facilitating or inhibiting) cortical motor areas. This helps fine-tune movements. The cerebellum doesn't directly inhibit cortical output but regulates it.",
+      "keyConcept": "The cerebellum modulates cortical motor output through the dentatothalamic pathway, regulating movement precision.",
+      "options": [
+        "Stop the movement at the precise intended point.",
+        "Prevents oscillation of movements.",
+        "Planning and timing function.",
+        "Predictive function.",
+        "Inhibit excess cortical activity."
+      ],
+      "correctIndex": 4
+    },
+    {
+      "id": "mcns2-ch10-physiology-q14",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Excitation of the RAS occurs by:\nA. Signals from the sleep centers\nB. Analeptic drugs\nC. Anesthetics\nD. Lack of cortical signals\nE. Vascular lesion",
+      "explanation": "Analeptic drugs (like doxapram) stimulate the reticular activating system by exciting respiratory and vasomotor centers, making them useful in CNS depression.",
+      "keyConcept": "Analeptic drugs excite the RAS.",
+      "options": [
+        "Signals from the sleep centers",
+        "Analeptic drugs",
+        "Anesthetics",
+        "Lack of cortical signals",
+        "Vascular lesion"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-pharma-q22",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "BDZs do not induce the following effect",
+      "explanation": "BDZs do NOT decrease stage II NREM sleep. Option B is correct. Benzodiazepines decrease REM sleep and stages III/IV (deep sleep), but actually increase stage II NREM sleep (light sleep). This is why they suppress deep sleep and REM sleep while promoting light sleep.",
+      "keyConcept": "Benzodiazepines suppress REM and deep sleep (III/IV) while preserving or increasing light sleep (stage II).",
+      "options": [
+        "Anticonvulsant & Spasmolytic",
+        "Decrease stage II of NREM sleep",
+        "Decrease REM sleep",
+        "Decrease stage III & IV of NREM sleep"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-pharma-q23",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The following is not an adverse effect of BZDS",
+      "explanation": "Decrease in REM sleep on sudden withdrawal is NOT an adverse effect - it is a withdrawal effect. Option B is incorrect. Insomnia and REM rebound occur on withdrawal, not as direct adverse effects during use. Options A, C, D are correct direct adverse effects: sedation/hangover, cognitive impairment, tolerance/dependence.",
+      "keyConcept": "Benzodiazepine withdrawal causes REM rebound insomnia; direct adverse effects include sedation, cognitive impairment, and dependence.",
+      "options": [
+        "Sedation & hangover",
+        "Insomnia & decrease in REM sleep on sudden withdrawal",
+        "Decrease in cognitive function of the brain",
+        "Tolerance & dependence"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-pharma-q110",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Discuss the effects of benzodiazepines on sleep pattern and their clinical significance.",
+      "explanation": "Benzodiazepines alter sleep architecture by suppressing REM sleep, reducing slow-wave (deep) sleep, increasing light sleep (stage II), and prolonging sleep latency initially. Clinically this means less restorative sleep and possible rebound REM on withdrawal.",
+      "keyConcept": "BZDs increase light sleep but suppress REM and deep sleep, reducing sleep quality despite hypnotic effect.",
+      "modelAnswer": "Effects of benzodiazepines on sleep pattern:\n\n**1. REM Sleep:**\n- Decreased REM sleep duration\n- Suppressed REM rebound on withdrawal\n- May affect memory consolidation\n\n**2. Slow-Wave Sleep (NREM stages III/IV):**\n- Decreased deep sleep\n- Reduced restorative sleep\n- May affect growth hormone secretion\n\n**3. Sleep Latency:**\n- Decreased time to sleep onset\n\n**4. Total Sleep Time:**\n- Increased total sleep time\n\n**5. Sleep Architecture:**\n- Increased stage II (light sleep)\n- Fragmented sleep\n\n**Clinical Significance:**\n- Less restorative sleep despite longer total sleep\n- Rebound insomnia and REM rebound on withdrawal\n- Memory consolidation may be impaired\n- Daytime somnolence and hangover effect"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q204",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "How do Benzodiazepines affect sleep?",
+      "explanation": "Benzodiazepines affect sleep by: decreasing sleep latency, increasing total sleep time, reducing REM sleep, increasing stage 2 sleep, and decreasing slow-wave sleep. They suppress REM and deep sleep, affecting sleep quality.选项D正确. The answer is D. This explains the groggy feeling and why they are not ideal for long-term sleep management.",
+      "keyConcept": "Benzodiazepines reduce REM and slow-wave sleep while increasing stage 2 - improving sleep onset but reducing quality.",
+      "options": [
+        "Shorten sleep latency",
+        "Increase stage 2 NREM sleep",
+        "Decrease stage 3 & 4 NREM sleep",
+        "All of the above"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-biochem-q68",
+      "type": "essay",
+      "lecture": 1,
+      "text": "What is the hormone involved in regulating sleep patterns and follows a circadian rhythm? And how it is formed?",
+      "explanation": "Melatonin is the pineal hormone regulating circadian rhythms and sleep-wake cycles, synthesized from serotonin via N-acetylation and methylation in the pineal body under darkness-activated signaling.",
+      "keyConcept": "Melatonin synthesis and circadian regulation",
+      "modelAnswer": "Melatonin\nFrom serotonin in pineal body by acetylation and methylation"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q76",
+      "type": "essay",
+      "lecture": 1,
+      "text": "What are the functions of nitric oxide?",
+      "explanation": "Nitric oxide causes vasodilation in cerebral/coronal arteries, relaxes GIT/urinary smooth muscle, stimulates hypothalamic hormone release, enables macrophage killing, and is used therapeutically (nitroglycerin for angina, inhaled NO for pulmonary hypertension).",
+      "keyConcept": "NO physiological and pharmacological roles",
+      "modelAnswer": "Vasodilatation in cerebral, coronary & muscle arteries\nRelaxation of GIT & urinary tract\nStimulate release of hormones from hypothalamus\nProduced from macrophage, monocytes & neutrophils to kill microorganisms\nPharmacological functions: Nitroglycerin - treat angina; Inhalation of NO - treat pulmonary hypertension & pulmonary edema without decrease systemic blood pressure"
+    }
+  ]
+}

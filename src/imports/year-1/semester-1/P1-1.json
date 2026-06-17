@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "comingSoon": true,
+  "meta": {
+    "moduleCode": "P1-1",
+    "moduleName": "Introduction to ICT & Medical Terminology",
+    "year": 1,
+    "semester": 1,
+    "creditPoints": 1,
+    "totalMarks": 20,
+    "keywords": [
+      "ict",
+      "medical terminology",
+      "p1"
+    ]
+  },
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Medical Terminology & Prefixes/Suffixes",
+      "subtitle": "Medical Terminology & Prefixes/Suffixes",
+      "emoji": "📝",
+      "page": 1,
+      "lectureRange": "Lectures 1",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 2,
+      "title": "Healthcare Information & Communication Technology",
+      "subtitle": "Healthcare Information & Communication Technology",
+      "emoji": "💻",
+      "page": 2,
+      "lectureRange": "Lectures 2",
+      "subjects": [],
+      "keywords": []
+    }
+  ]
+}

@@ -1,0 +1,2266 @@
+{
+  "schemaVersion": 1,
+  "meta": {
+    "moduleCode": "MCNS-2",
+    "moduleName": "Central Nervous System",
+    "year": 2,
+    "semester": 2,
+    "creditPoints": 6,
+    "totalMarks": 200,
+    "keywords": [
+      "CNS",
+      "Neuroanatomy",
+      "Neuropharmacology",
+      "Neurophysiology",
+      "Neuropathology"
+    ]
+  },
+  "chapters": [
+    {
+      "id": 2,
+      "title": "Cranial Nerves",
+      "subtitle": "",
+      "emoji": "🧠",
+      "page": 2,
+      "lectureRange": "L1-L5",
+      "subjects": [
+        {
+          "id": "anatomy",
+          "name": "Anatomy",
+          "iconName": "anatomy",
+          "lectures": "L1-L5",
+          "lectureCount": 5,
+          "questions": [
+            {
+              "id": "mcns2-ch2-anatomy-q1",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The branch of facial nerve that supplies the platysma is the:",
+              "explanation": "The cervical branch of the facial nerve (CN VII) descends into the neck to supply the platysma muscle. The temporal, zygomatic, and buccal branches supply facial muscles above the mouth.",
+              "keyConcept": "Cervical branch of facial nerve innervates the platysma",
+              "options": [
+                "Temporal branch.",
+                "Zygomatic branch.",
+                "Buccal branch.",
+                "Madibular branch.",
+                "Cervical branch."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q2",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The branch of facial nerve that supplies the Platysma is the:",
+              "explanation": "The cervical branch of the facial nerve (CN VII) descends to supply the platysma muscle in the neck.",
+              "keyConcept": "Cervical branch of facial nerve (CN VII) → platysma",
+              "options": [
+                "Temporal branch.",
+                "Zygomatic branch.",
+                "Buccal branch.",
+                "Mandibular branch.",
+                "Cervical branch."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q3",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "In facial nerve lesion (Bell's palsy), all the following could be manifested EXCEPT:",
+              "explanation": "Bell's palsy is facial nerve (CN VII) palsy. It causes inability to close the eyelids and facial muscle weakness. Hearing is generally unaffected; in fact, sounds may seem louder (hyperacusis) due to stapedial nerve involvement.",
+              "keyConcept": "Bell's palsy does NOT cause weaker hearing; hyperacusis may occur due to stapedial nerve involvement",
+              "options": [
+                "Inability to close eyelids.",
+                "Atrophy of facial expression muscles.",
+                "Inefficient chewing.",
+                "Falling of food out of mouth.",
+                "Weaker heard sounds."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q4",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following nerves that supply scalp & face is not derived of Trigeminal nerve?",
+              "explanation": "The great auricular nerve (C2–C3) derives from the cervical plexus, not the trigeminal nerve. All other listed nerves are branches of the trigeminal nerve.",
+              "keyConcept": "Great auricular nerve (C2–C3) is NOT a branch of the trigeminal nerve",
+              "options": [
+                "Auriculotemporal.",
+                "Zygomatico-temporal.",
+                "Infraorbital.",
+                "Supratrochlear.",
+                "Great auricular."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q5",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Describe branches of facial nerve in neck & its terminal branches.",
+              "explanation": "The facial nerve gives the posterior auricular nerve in the neck before entering the parotid gland. Its five terminal branches are temporal, zygomatic, buccal, marginal mandibular, and cervical. The cervical branch supplies the platysma.",
+              "keyConcept": "Facial nerve terminal branches: temporal, zygomatic, buccal, marginal mandibular, cervical",
+              "modelAnswer": "The facial nerve gives off the posterior auricular nerve in the neck before entering the parotid gland. Within and beyond the parotid, it divides into five terminal branches: temporal, zygomatic, buccal, marginal mandibular, and cervical. The cervical branch supplies the platysma."
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q6",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following cranial nerves is attached to the back of the brain stem?",
+              "explanation": "The trochlear nerve (CN IV) is unique as the only cranial nerve to attach to the posterior (dorsal) surface of the brain stem. It emerges from the posterior aspect of the midbrain, just below the inferior colliculus.",
+              "keyConcept": "Trochlear nerve is only CN from posterior brainstem",
+              "options": [
+                "Oculomotor nerve.",
+                "Trochlear nerve.",
+                "Maxillary nerve.",
+                "Abducent nerve.",
+                "Facial nerve."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q7",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "A pontine cranial nerve that is not attached to lower border of pons:",
+              "explanation": "The trigeminal nerve (CN V) is attached to the lateral surface of the pons, at the junction of the pons and middle cerebellar peduncle. The abducent nerve attaches at the lower border, and facial/vestibulocochlear at the cerebellopontine angle.",
+              "keyConcept": "Trigeminal attaches at pons-middle cerebellar peduncle junction",
+              "options": [
+                "Abducent nerve.",
+                "Facial nerve.",
+                "Vestibular nerve.",
+                "Cochlear nerve.",
+                "Trigeminal nerve."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q8",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Rootlets of hypoglossal nerve lie:",
+              "explanation": "The hypoglossal nerve rootlets emerge from the anterolateral sulcus of the medulla, which lies between the pyramid and olive. This is the anterior surface of the medulla.",
+              "keyConcept": "CN XII between pyramid and olive",
+              "options": [
+                "Between pyramid and olive.",
+                "Between olive and inferior cerebellar peduncle.",
+                "Behind the inferior cerebellar peduncle.",
+                "Between lower border of pons & pyramid.",
+                "None of the above."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q9",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Rootlets of glossopharyngeal nerve lie:",
+              "explanation": "The glossopharyngeal nerve rootlets emerge from the posterolateral sulcus of the medulla, which lies between the olive and inferior cerebellar peduncle.",
+              "keyConcept": "CN IX between olive and inferior cerebellar peduncle",
+              "options": [
+                "Between pyramid and olive.",
+                "Between olive and inferior cerebellar peduncle.",
+                "Behind the inferior cerebellar peduncle.",
+                "Between lower border of pons and medulla.",
+                "None of the above."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q10",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The cranial nerve that has the most medial attachment to the pons:",
+              "explanation": "The abducent nerve (CN VI) has the most medial attachment to the pons, emerging in the median line at the pontomedullary junction. The facial and vestibulocochlear nerves attach more laterally.",
+              "keyConcept": "Abducent nerve most medial pontine attachment",
+              "options": [
+                "Abducent nerve.",
+                "Facial nerve.",
+                "Vestibular nerve.",
+                "Cochlear nerve.",
+                "Trigeminal nerve."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q11",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "As regards cranial nerve attachment to brain stem, choose the CORRECT matching:",
+              "explanation": "The vestibulocochlear nerve attaches at the cerebellopontine angle, which is the angle between the pons, cerebellum, and medulla. This is the correct matching for the anatomical location.",
+              "keyConcept": "CN VIII at cerebellopontine angle",
+              "options": [
+                "Hypoglossal nerve - posterolateral sulcus of medulla.",
+                "Vagus nerve - groove between pyramid & olive.",
+                "Vestibulo-cochlear nerve - cerebello-pontine angle.",
+                "Facial nerve - lower border of pons above pyramid.",
+                "Trochlear nerve - interpeduncular fossa."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q12",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "As regards the attachment of the cranial nerves to the brain stem, choose the INCORRECT matching:",
+              "explanation": "The hypoglossal nerve attaches in the sulcus between the olive and inferior cerebellar peduncle. This is a posterior attachment, not between pyramid and olive. The statement is incorrect about the groove location.",
+              "keyConcept": "CN XII between olive and ICP",
+              "options": [
+                "Hypoglossal nerve - sulcus between olive & ICP.",
+                "Trigeminal nerve - Junction of MCP & basis pontis.",
+                "Abducent nerve - above pyramid.",
+                "Facial nerve - cerebello-pontine angle.",
+                "Oculomotor nerve - medial side of crus cerebri."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q13",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The cranial nerve nucleus that supplies muscles of the larynx is the:",
+              "explanation": "The nucleus solitarius is the visceral afferent column (receiving taste and visceral sensation), not the GVE column. GVE nuclei include Edinger-Westphal (III), superior/inferior salivary nuclei (VII/IX), and dorsal motor nucleus of X.",
+              "keyConcept": "Nucleus solitarius is visceral afferent, not efferent",
+              "options": [
+                "Solitary nucleus.",
+                "Ambiguus nucleus.",
+                "Dorsal motor vagal nucleus.",
+                "Motor facial nucleus.",
+                "Spinal nucleus of V (trigeminal)."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q14",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The common motor nucleus of IX, X and XI cranial nerves is:",
+              "explanation": "Special visceral efferent (branchiomotor) column includes: trigeminal motor nucleus (V), facial nucleus (VII), nucleus ambiguus (IX, X, XI), and accessory nucleus (XI). These supply pharyngeal arch muscles.",
+              "keyConcept": "SVE column - pharyngeal arch muscles",
+              "options": [
+                "Solitarius nucleus.",
+                "Nucleus ambiguus.",
+                "Spinal nucleus of V.",
+                "Inferior salivatory nucleus.",
+                "Dorsal vagal nucleus."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q15",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The mesencephalic nucleus of trigeminal nerve has the following functional component:",
+              "explanation": "The abducent nucleus is not connected to the medial longitudinal bundle, which primarily coordinates eye movements between III, IV, and VI nuclei. Actually, it IS connected; perhaps another nucleus like the trochlear nucleus is being referenced.",
+              "keyConcept": "Medial longitudinal bundle coordinates vestibular-eye reflexes",
+              "options": [
+                "Special visceral afferent.",
+                "General somatic afferent.",
+                "General visceral afferent.",
+                "Special visceral efferent.",
+                "General somatic efferent."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q16",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The parasympathetic nucleus of the ninth cranial nerve is the:",
+              "explanation": "The special visceral efferent column supplies muscles derived from pharyngeal arches: mandibular arch (V) - muscles of mastication; VII - facial muscles; IX, X, XI - pharynx/larynx/sternocleidomastoid/trapezius.",
+              "keyConcept": "SVE column supplies pharyngeal arch muscles",
+              "options": [
+                "Lacrimatory nucleus.",
+                "Dorsal vagal nucleus.",
+                "Inferior salivatory nucleus.",
+                "Superior salivatory nucleus.",
+                "Ambiguus nucleus."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q17",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following cranial nerve nuclei is not connected to the medial longitudinal bundle:",
+              "explanation": "This matching tests cranial nerve nuclei columns: SE - somatic muscles (III,IV,VI,XII); SVE - pharyngeal arch muscles (V,VII,IX,X,XI); GVE - parasympathetic (III,VII,IX,X).",
+              "keyConcept": "SVE column supplies pharyngeal arch derived muscles",
+              "options": [
+                "Oculomotor nerve.",
+                "Trochlear nerve.",
+                "Abducent nerve.",
+                "Cochlear nerve.",
+                "Facial nerve."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q18",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "All the following are nuclei of facial nerve EXCEPT:",
+              "explanation": "The anterior spinal artery supplies the anterior 2/3 of the spinal cord: anterior horn, lateral horn, and anterior/lateral white columns. It does NOT supply the posterior columns.",
+              "keyConcept": "Anterior spinal does not supply posterior columns",
+              "options": [
+                "Nucleus Solitarius.",
+                "Superior salivatory nucleus.",
+                "Spinal nucleus of V.",
+                "Inferior salivatory nucleus.",
+                "Motor nucleus."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q19",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The cranial nerve nucleus that supplies muscles of the larynx is the:",
+              "explanation": "Thrombosis of PICA affects the lateral medulla: cerebellum (ataxia), vestibular nuclei (vertigo/nystagmus), spinal trigeminal nucleus (face pain), nucleus ambiguus (dysphagia), and spinothalamic tract (contralateral body pain).",
+              "keyConcept": "PICA thrombosis causes lateral medullary syndrome",
+              "options": [
+                "Solitary nucleus.",
+                "Nucleus Ambiquus.",
+                "Dorsal motor vagal nucleus.",
+                "Motor facial nucleus.",
+                "Spinal nucleus of V."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q20",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Connects the vestibular nuclei with cranial nuclei of III, IV, & VI:",
+              "explanation": "Medial medullary syndrome includes: contralateral hemiparesis (pyramidal tract), contralateral loss of proprioception and fine touch (medial lemniscus), and ipsilateral tongue paralysis (hypoglossal nerve).",
+              "keyConcept": "Medial medullary syndrome - contralateral weakness and proprioception loss",
+              "options": [
+                "Medial longitudinal bundle.",
+                "Medial forebrain bundle.",
+                "Trapezoid body.",
+                "Stria terminalis.",
+                "Fronto-occipital bundle."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q21",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The pharyngeal arch supplied by the only pontine cranial nerve that is NOT attached to the lower border of pons is:",
+              "explanation": "The medial zone of medulla containing the pyramid is supplied by the anterior spinal artery, which runs in the anterior median fissure. This zone includes the pyramid and medial lemniscus.",
+              "keyConcept": "Anterior spinal artery supplies medial medulla",
+              "options": [
+                "First arch.",
+                "Second arch.",
+                "Third arch.",
+                "Fourth arch.",
+                "Sixth arch."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q22",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "First neuron for proprioception from muscles of mastication is:",
+              "explanation": "The posterior columns (gracile and cuneate nuclei) are supplied by the posterior spinal arteries and vertebral arteries, NOT by the anterior spinal artery. The anterior spinal supplies the anterior 2/3 of the cord.",
+              "keyConcept": "Posterior columns not supplied by anterior spinal artery",
+              "options": [
+                "Trigeminal ganglion.",
+                "Trigeminal main sensory nucleus.",
+                "Mesencephalic nucleus.",
+                "Spinal nucleus.",
+                "Trigeminal motor nucleus."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q23",
+              "type": "matching",
+              "lecture": 1,
+              "text": "For each type of cranial nerve nuclei columns in left column, choose the appropriate structure supplied by it in right column:",
+              "explanation": "Cranial nerve nuclei are organized into columns: Somatic Efferent (eye/tongue muscles), Special Visceral Efferent (pharyngeal arch muscles), General Visceral Efferent (parasympathetic), and Visceral Afferent (taste/visceral sensation).",
+              "keyConcept": "Cranial nerve nuclei organized into functional columns",
+              "pairs": [
+                {
+                  "premise": "1) SVE column",
+                  "target": "Muscles of larynx."
+                },
+                {
+                  "premise": "2) SSA column",
+                  "target": "Auditory pathway."
+                },
+                {
+                  "premise": "3) GSE column",
+                  "target": "Muscles of tongue."
+                },
+                {
+                  "premise": "4) GVE column",
+                  "target": "Sphincter pupillae muscle."
+                },
+                {
+                  "premise": "5) GSA column",
+                  "target": "Pain from teeth."
+                }
+              ]
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q24",
+              "type": "matching",
+              "lecture": 1,
+              "text": "For each type of cranial nerve nuclei columns in left column, choose the appropriate function from right column:",
+              "explanation": "Each nucleus column has distinct functions: SE controls voluntary eye/tongue movement; SVE controls mastication/facial expression/swallowing; GVE controls parasympathetic functions; Visceral afferent handles taste and visceral sensation.",
+              "keyConcept": "Nucleus columns have distinct functional roles",
+              "pairs": [
+                {
+                  "premise": "1) GSE column",
+                  "target": "Supplies muscles that develop from myotomes."
+                },
+                {
+                  "premise": "2) SVE column",
+                  "target": "Supplies muscles that develop from pharyngeal arches."
+                },
+                {
+                  "premise": "3) GVE column",
+                  "target": "Gives preganglionic parasympathetic fibers."
+                },
+                {
+                  "premise": "4) GSA column",
+                  "target": "Receives general sensations."
+                },
+                {
+                  "premise": "5) SSA column",
+                  "target": "Receives auditory sensations."
+                }
+              ]
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q25",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Describe ventral surface of medulla oblongata & cranial nerves attached to it.",
+              "explanation": "The ventral surface of the medulla oblongata shows: (1) PYRAMIDS - containing corticospinal fibers, located on either side of anterior median fissure; (2) OLVES (inferior olivary nuclei) - lateral to pyramids; (3) CRANIAL NERVES: CN IX (glossopharyngeal), CN X (vagus), CN XI (accessory - cranial part), and CN XII (hypoglossal) attach at the pontomedullary junction. The pyramids are most prominent features and are where pyramidal decussation occurs caudally.",
+              "keyConcept": "Ventral medulla: pyramids, olives, and cranial nerves IX, X, XI, XII attached at pontomedullary junction",
+              "modelAnswer": "LEMNISCI (sensory pathways in brainstem): (1) MEDIAL LEMNISCUS - from dorsal column nuclei (gracile/cuneate) through medulla, pons, midbrain to VPL thalamus; carries conscious proprioception and fine touch. (2) SPINAL LEMNISCUS - from spinothalamic tracts through brainstem to VPL; carries pain and temperature. (3) TRIGEMINAL LEMNISCUS - from trigeminal sensory nuclei to VPM thalamus; carries face sensation. (4) LATERAL LEMNISCUS - auditory pathway from cochlear nuclei to inferior colliculus."
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q26",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Describe ventral surface of pons & cranial nerves attached to it.",
+              "explanation": "The ventral surface of the pons shows: (1) BASILAR SULCUS - midline groove containing basilar artery; (2) TRANSVERSE FIBERS - connecting the two hemispheres of cerebellum; (3) CRANIAL NERVES: CN V (trigeminal) attaches at the lateral aspect of the pons; CN VI (abducens), CN VII (facial), and CN VIII (vestibulocochlear) attach at the pontomedullary junction. The pons is divided into basilar part (ventral) and tegmental part (dorsal).",
+              "keyConcept": "Ventral pons: basilar sulcus, transverse fibers, CN V at lateral surface, CN VI-VIII at pontomedullary junction",
+              "modelAnswer": "INTERNAL FEATURES OF MEDULLA: (1) PYRAMIDS - contain corticospinal fibers; (2) OLVES - contain inferior olivary nuclei; (3) INTERNAL ARCUATE FIBERS - decussating sensory fibers from dorsal column nuclei; (4) MEDIAL LEMNISCUS - formed after sensory decussation; (5) HYPOGLOSSAL NUCLEUS - in floor near central canal; (6) DORSAL MOTOR NUCLEUS OF X; (7) NUCLEUS SOLITARIUS; (8) NUCLEUS AMBIGUUS; (9) INFERIOR SALIVARY NUCLEUS; (10) INFERIOR CEREBELLAR PEDUNCLES laterally."
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q27",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Describe ventral surface of midbrain & cranial nerves attached to it.",
+              "explanation": "The ventral surface of the midbrain shows the cerebral peduncles (crura cerebri): two cylindrical masses separated by the interpeduncular fossa. CN III (oculomotor) emerges from the medial surface of each peduncle. The peduncles contain descending motor fibers. The midbrain connects the pons (below) to the diencephalon (above). The ventral midbrain is separated from the dorsal tectum by the cerebral aqueduct.",
+              "keyConcept": "Ventral midbrain: cerebral peduncles with CN III emerging medially; connects pons to diencephalon",
+              "modelAnswer": "PYRAMID AL DECUSSATION: (LOCATION) Caudal medulla; (PROCESS) About 85-90% of corticospinal fibers cross obliquely in the anterior median fissure; (RESULT) Crossed fibers form the lateral corticospinal tract in the lateral white column; uncrossed fibers remain as anterior corticospinal tract; (CLINICAL) Decussation explains contralateral motor control and UMN lesion signs."
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q28",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Enumerate nuclei of vagus nerve & the structures supplied by each nucleus.",
+              "explanation": "Nuclei of the vagus nerve: (1) DORSAL MOTOR NUCLEUS (GVE) - parasympathetic preganglionic fibers to thoracic and abdominal viscera (via thoracic vagal branches); (2) NUCLEUS AMBIGUUS (SVE) - motor to pharynx and larynx via pharyngeal branch and recurrent laryngeal nerve; (3) NUCLEUS SOLITARIUS (SVA/GVA) - taste from epiglottis and general visceral sensation; (4) SPINAL NUCLEUS OF V (GSA) - general sensory from larynx.",
+              "keyConcept": "Vagus nerve nuclei: dorsal motor (GVE), nucleus ambiguus (SVE), nucleus solitarius (SVA/GVA), spinal V (GSA)",
+              "modelAnswer": "(Diagnosis) Lateral medullary syndrome (Wallenberg syndrome) - PICA thrombosis. (Intention tremors) Vestibular nuclei involvement causing balance problems; (Ptosis) Horner syndrome (descending sympathetic pathway involved); (Decreased swallowing) Nucleus ambiguus dysfunction; (Vertigo) Vestibular nucleus involvement; (Nystagmus) Vestibular nucleus involvement."
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q29",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Enumerate nuclei of facial nerve & the structures supplied by each nucleus.",
+              "explanation": "Nuclei of the facial nerve: (1) FACIAL MOTOR NUCLEUS (SVE) - motor to muscles of facial expression, stapedius, stylohyoid, posterior belly of digastric; (2) SUPERIOR SALIVARY NUCLEUS (GVE) - parasympathetic to lacrimal gland (via greater petrosal nerve and pterygopalatine ganglion), submandibular and sublingual glands (via chorda tympani and submandibular ganglion); (3) NUCLEUS SOLITARIUS (SVA) - taste from anterior two-thirds of tongue via chorda tympani; (4) MESENCEPHALIC NUCLEUS OF V - proprioception from facial muscles.",
+              "keyConcept": "Facial nerve nuclei: motor (facial expression muscles), superior salivary (lacrimal, submandibular, sublingual glands), solitarius (taste)",
+              "modelAnswer": "(Diagnosis) Posterior inferior cerebellar artery (PICA) thrombosis - lateral medullary syndrome. (Vertigo and nystagmus) Vestibular nuclei involvement; (Absence of pharyngeal reflex) Nucleus ambiguus; (Absence of gag reflex) Nucleus ambiguus involvement; (Horner syndrome) Descending sympathetic pathway in lateral medulla."
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q30",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Enumerate nuclei of trigeminal nerve & structures supplied by each nucleus.",
+              "explanation": "The trochlear nerve (CN IV) runs in the superior wall (roof) of the cavernous sinus, along with the oculomotor and abducent nerves. The ophthalmic nerve (V1) runs in the lateral wall.",
+              "keyConcept": "CN IV in superior wall of cavernous sinus",
+              "modelAnswer": "NUCLEI OF TRIGEMINAL NERVE: (1) MOTOR NUCLEUS (SVE) in pons → muscles of mastication, tensor tympani, tensor veli palatini, mylohyoid, anterior belly of digastric; (2) PRINCIPAL SENSORY NUCLEUS (GSA) in pons → discriminative/light touch from face; (3) SPINAL NUCLEUS (GSA) in medulla → pain and temperature from face; (4) MESENCEPHALIC NUCLEUS in midbrain → proprioception from mastication muscles, teeth, TMJ."
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q31",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Enumerate nuclei of oculomotor nerve & structures supplied by each nucleus.",
+              "explanation": "The superior petrosal sinus runs along the lesser wing of the sphenoid bone, connecting the cavernous sinus to the transverse sinus. It drains the eye and middle ear region.",
+              "keyConcept": "Superior petrosal sinus along lesser wing of sphenoid",
+              "modelAnswer": "NUCLEI OF OCULOMOTOR NERVE: (1) OCULOMOTOR NUCLEUS (SSE) → supplies superior rectus, inferior rectus, medial rectus, inferior oblique muscles; (2) EDINGER-WESTPHAL NUCLEUS (GVE) → parasympathetic to sphincter pupillae (pupil constriction) and ciliary muscle (accommodation); (3) Central caudal nucleus → coordinates function of both."
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q32",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Sensory innervation to the dura above the tentorium cerebelli is from which cranial nerve?",
+              "explanation": "Extradural hemorrhage results from rupture of the middle meningeal artery, which passes through the foramen spinosum and grooves the inner table of the skull at the pterion. This creates a lens-shaped (biconvex) hematoma.",
+              "keyConcept": "Middle meningeal artery rupture causes extradural hemorrhage",
+              "options": [
+                "Trigeminal nerve.",
+                "Facial nerve.",
+                "Glossopharyngeal nerve.",
+                "Vagus nerve.",
+                "Hypoglossal nerve."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q33",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following cranial nerves is not related to cavernous sinus?",
+              "explanation": "The inferior sagittal sinus runs along the lower free margin of the falx cerebri and drains into the straight sinus. It receives blood from the medial aspects of the cerebral hemispheres.",
+              "keyConcept": "Inferior sagittal sinus in lower falx cerebri",
+              "options": [
+                "Oculomotor nerve.",
+                "Trochlear nerve.",
+                "Maxillary nerve.",
+                "Abducent nerve.",
+                "Facial nerve."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q34",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Describe roots of trigeminal nerve.",
+              "explanation": "The trigeminal nerve emerges from the pons by two roots: a large sensory root and a smaller motor root. The sensory root carries general somatic sensation from the face and contains the central processes of the trigeminal ganglion cells, while the motor root carries special visceral efferent fibers for muscles of mastication.",
+              "keyConcept": "Trigeminal nerve has two roots: large sensory root and small motor root emerging from pons.",
+              "modelAnswer": "The trigeminal nerve emerges from the lateral aspect of the pons by two roots: (1) Sensory root—larger root carrying general somatic sensation (pain, temperature, touch, proprioception) from the face and oral cavity. It contains the central processes of pseudounipolar neurons whose cell bodies lie in the trigeminal (Gasserian) ganglion. (2) Motor root—smaller root carrying special visceral efferent fibers that innervate the muscles of mastication, tensor tympani, tensor palati, mylohyoid, and anterior belly of digastric."
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q35",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The muscle supplied by C1 through hypoglossal nerve is the:",
+              "explanation": "The thyrohyoid muscle is an infrahyoid muscle that is an exception to the ansa cervicalis innervation pattern. It is supplied by C1 spinal nerve fibers that descend with the hypoglossal nerve (CN XII). After some distance, these fibers leave the hypoglossal nerve as the nerve to thyrohyoid to directly innervate the thyrohyoid muscle.",
+              "keyConcept": "Thyrohyoid is supplied by C1 via hypoglossal nerve (nerve to thyrohyoid).",
+              "options": [
+                "Trapezius.",
+                "Sternomastoid.",
+                "Omohyoid.",
+                "Digastric.",
+                "Thyrohyoid."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q36",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Pain from the palatine tonsil is carried on the following cranial nerve:",
+              "explanation": "The palatine tonsil receives its general sensory innervation (pain, touch, temperature) from the glossopharyngeal nerve (CN IX), specifically through its tonsillar branch that innervates the mucosa over the tonsil. This explains why tonsillar pain may be referred to the ear via the tympanic branch of the glossopharyngeal nerve (Jacobson's nerve).",
+              "keyConcept": "Pain from palatine tonsil is carried by glossopharyngeal nerve (CN IX).",
+              "options": [
+                "Facial nerve.",
+                "Vestibulo-cochlear nerve.",
+                "Glossopharyngeal nerve.",
+                "Vagus nerve.",
+                "Accessory nerve."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q37",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Glossopharyngeal nerve carries sensation from all the following areas EXCEPT:",
+              "explanation": "The glossopharyngeal nerve (CN IX) carries general sensation from the oropharynx, posterior one-third of the tongue, palatine tonsils, and middle ear (via the tympanic nerve). However, the laryngopharynx is innervated primarily by the vagus nerve (CN X) via its pharyngeal branches. Therefore, CN IX does NOT carry sensation from the laryngopharynx.",
+              "keyConcept": "Laryngopharynx sensation is carried by vagus nerve (CN X), not glossopharyngeal (CN IX).",
+              "options": [
+                "Oropharynx.",
+                "Posterior 1/3 of tongue.",
+                "Palatine tonsils.",
+                "Laryngopharynx.",
+                "Middle ear."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q38",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The glossopharyngeal nerve gives branches to:",
+              "explanation": "The glossopharyngeal nerve (CN IX) gives the lesser petrosal nerve to the otic ganglion (preganglionic parasympathetic for parotid gland), motor branches to the stylopharyngeus muscle, and sensory branches to the mucous membrane covering the palatine tonsil and posterior tongue. All three listed options are correct functions of CN IX.",
+              "keyConcept": "CN IX supplies otic ganglion, stylopharyngeus, and palatine tonsil mucosa.",
+              "options": [
+                "The otic ganglion.",
+                "The stylopharyngeus muscle.",
+                "The mucous membrane covering the tonsil.",
+                "All of the above.",
+                "A&B only."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q39",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The glossopharyngeal nerve:",
+              "explanation": "The glossopharyngeal nerve (CN IX) carries special visceral afferent (taste) fibers from the posterior one-third of the tongue to the nucleus solitarius. It does NOT supply all pharyngeal muscles (only stylopharyngeus); the constrictors are supplied by the pharyngeal plexus. It also does NOT pass superficial to hyoglossus (it passes between the superior and middle constrictors to reach the pharynx). Therefore, only statement B is correct.",
+              "keyConcept": "CN IX carries taste from posterior one-third of tongue; does NOT supply all pharyngeal muscles.",
+              "options": [
+                "Supplies all pharyngeal muscles.",
+                "Carries taste sensation from posterior 1/3 of tongue.",
+                "Passes superficial to hyoglossus muscle.",
+                "All of the above.",
+                "None of the above."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q40",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The glossopharyngeal nerve supplies the mucous membrane of:",
+              "explanation": "The glossopharyngeal nerve supplies the mucous membrane of the oropharynx, including the palatine tonsillar fossa and posterior one-third of the tongue. It does NOT supply the nasopharynx (innervated by maxillary nerve via sphenopalatine ganglion), laryngopharynx (innervated by vagus nerve), or larynx (innervated by internal laryngeal and recurrent laryngeal nerves from vagus).",
+              "keyConcept": "Glossopharyngeal supplies oropharynx, not nasopharynx, laryngopharynx, or larynx.",
+              "options": [
+                "Nasopharynx.",
+                "Oropharynx.",
+                "Laryngopharynx.",
+                "Larynx.",
+                "All of the above."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q41",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The following are branches of the vagus nerve in the neck Except:",
+              "explanation": "The vagus nerve gives several branches in the neck: pharyngeal branch, superior laryngeal nerve, recurrent laryngeal nerve (left and right), and cardiac branches. The carotid body and carotid sinus, however, receive their sensory innervation from the glossopharyngeal nerve (CN IX) via the branch of Hering (carotid branch), NOT from the vagus nerve.",
+              "keyConcept": "Branches to carotid body are from glossopharyngeal nerve (CN IX), NOT vagus.",
+              "options": [
+                "Branches to the carotid body.",
+                "Left recurrent laryngeal nerve.",
+                "Pharyngeal branch.",
+                "Superior laryngeal nerve.",
+                "Cardiac branches."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q42",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Regarding vagus nerve; all are true Except:",
+              "explanation": "The vagus nerve is the longest cranial nerve, descends within the carotid sheath, has two ganglia (jugular and nodose), and injury causes tachycardia due to loss of parasympathetic tone. However, the vagus is NOT joined by the spinal root of the accessory nerve. Only the cranial root of accessory joins the vagus; the spinal root forms the separate spinal accessory nerve supplying SCM and trapezius.",
+              "keyConcept": "Vagus is joined by cranial root of accessory, NOT spinal root.",
+              "options": [
+                "It is the longest cranial nerve.",
+                "It is joined by the spinal root of the accessory nerve.",
+                "It has two ganglia.",
+                "It descends within the carotid sheath.",
+                "Its injury leads to palpitation and tachycardia (increase in heart rate)."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q43",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Regarding the spinal accessory nerve; all are true Except:",
+              "explanation": "The spinal accessory nerve arises from the spinal cord (C1-C6/7), enters the cranial cavity through the foramen magnum, and exits via the jugular foramen. It supplies sternocleidomastoid and trapezius. It does NOT contribute to the pharyngeal plexus of nerves; this plexus is formed by glossopharyngeal (CN IX), vagus (CN X), and sympathetic fibers.",
+              "keyConcept": "Spinal accessory nerve does NOT contribute to the pharyngeal plexus.",
+              "options": [
+                "Arises entirely from the spinal cord.",
+                "Enters the skull via the foramen magnum.",
+                "Leaves the skull via the jugular foramen.",
+                "Contributes to the pharyngeal plexus of nerves.",
+                "Its injury in the posterior triangle results in wasting of the trapezius on the same side."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q44",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Accessory nerve supplies which of the following muscles?",
+              "explanation": "The accessory nerve (CN XI) is traditionally described as supplying two muscles: sternocleidomastoid (upper part of neck) and trapezius (posterior neck and shoulder). Some sources also describe supply to levator scapulae, but standard dental and gross anatomy teaches that accessory nerve innervates sternocleidomastoid and trapezius.",
+              "keyConcept": "Accessory nerve supplies sternocleidomastoid and trapezius muscles.",
+              "options": [
+                "Trapezius.",
+                "Sternomastoid.",
+                "Levator scapulae.",
+                "Scalenus anterior.",
+                "A&B."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q45",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Regarding accessory nerve: the following statements are true Except:",
+              "explanation": "The accessory nerve is a motor nerve. Its cranial part takes origin near the nucleus ambiguus but is distinct from it. Its spinal part runs between the investing and prevertebral layers of cervical fascia in the posterior triangle. The cranial part joins the vagus. However, the accessory nerve (both roots) does NOT emerge at the groove between the pyramid and the olive—that is the exit site of the hypoglossal nerve (CN XII). The accessory nerve emerges lateral to the olive in the postolivary sulcus.",
+              "keyConcept": "Accessory nerve emerges lateral to olive (postolivary sulcus), NOT between pyramid and olive.",
+              "options": [
+                "It is a purely motor nerve.",
+                "Its cranial part takes origin from the nucleus ambiguus.",
+                "It emerges at the groove between pyramid and olive.",
+                "Its spinal part runs between investing and prevertebral layers of cervical fascia.",
+                "Its cranial part joins the vagus."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q46",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The hypoglossal nerve:",
+              "explanation": "The hypoglossal nerve (CN XII) exits the skull through the hypoglossal canal, not the jugular foramen. It carries C1 spinal nerve fibers that branch off to supply the thyrohyoid and geniohyoid muscles. CN XII does NOT lie within the carotid sheath (it crosses superficially over it), is NOT joined by C2, is purely motor (NOT sensory), and emerges between the pyramid and the olive (not between the olive and ICP).",
+              "keyConcept": "Hypoglossal nerve carries C1 fibers and supplies thyrohyoid and geniohyoid; joined by branch from C1 not C2.",
+              "options": [
+                "Emerges from medulla between olive and inferior cerebellar peduncle.",
+                "Leaves the skull through jugular foramen.",
+                "Lies within the upper part of carotid sheath.",
+                "Is joined by a branch from C2.",
+                "It sensory to the anterior 2/3 of the tongue."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q47",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "All the following muscles are supplied by the hypoglossal nerve Except:",
+              "explanation": "The hypoglossal nerve (CN XII) supplies all intrinsic and extrinsic muscles of the tongue except the palatoglossus (supplied by the vagus nerve). This includes genioglossus, hyoglossus, styloglossus, and all intrinsic tongue muscles. The anterior belly of the digastric, however, is supplied by the mandibular nerve (CN V3) via the nerve to mylohyoid, not by the hypoglossal nerve.",
+              "keyConcept": "Anterior belly of digastric is supplied by mandibular nerve (V3), NOT hypoglossal nerve.",
+              "options": [
+                "Anterior belly of digastric.",
+                "Hyoglossus.",
+                "Genioglossus.",
+                "Styloglossus.",
+                "Intrinsic muscles of tongue."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q48",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "As regards types of fibers within glossopharyngeal nerve, choose the INCORRECT matching:",
+              "explanation": "The glossopharyngeal nerve (CN IX) carries multiple fiber types: special visceral efferent (styloharyngeus), general visceral efferent/secretomotor (parotid via otic ganglion), general visceral afferent (from carotid body/sinus and tonsil), special visceral afferent (taste from posterior tongue), and general somatic afferent (from posterior tongue and pharynx). It does NOT carry proprioceptive fibers from the salpingopharyngeus muscle; proprioception of pharyngeal muscles is generally carried by the vagus nerve or spinal accessory contributions.",
+              "keyConcept": "Glossopharyngeal does NOT carry proprioception from salpingopharyngeus muscle.",
+              "options": [
+                "Branchiomotor fibers - stylopharyngeus muscle.",
+                "GVE secretomotor fibers - Parotid gland.",
+                "GVA fibers - from tonsil.",
+                "SVA fibers - taste from posterior 1/3 of tongue.",
+                "GSA fibers - proprioceptive from salpingopharyngeus muscle."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q49",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "As regards branches of glossopharyngeal nerve, choose the INCORRECT statement:",
+              "explanation": "The glossopharyngeal nerve has several branches: the tympanic branch (Jacobson's nerve) contributes to the lesser petrosal nerve for parotid secretion; the tonsillar and lingual branches carry sensation from the tonsil and posterior one-third of the tongue (including taste); the pharyngeal branch carries sensory and motor fibers to the pharyngeal plexus; and the muscular branch supplies the stylopharyngeus. However, taste from the anterior TWO-THIRDS of the tongue is carried by the chorda tympani of the facial nerve (CN VII), not the glossopharyngeal nerve.",
+              "keyConcept": "Anterior two-thirds tongue taste is CN VII (chorda tympani), NOT glossopharyngeal.",
+              "options": [
+                "Its tympanic branch shares in providing nerve supply to parotid gland.",
+                "Its pharyngeal branch carries sensory fibers.",
+                "It gives a muscular branch to stylopharyngeus.",
+                "Its tonsillar branch supplies soft palate.",
+                "Its lingual branch carries special sensation from anterior 2/3 of tongue"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q50",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "As regards types of fibers within vagus nerve, choose the INCORRECT matching:",
+              "explanation": "The vagus nerve contains branchiomotor fibers for pharyngeal, laryngeal, and palatal muscles; general visceral efferent (parasympathetic) fibers that are INHIBITORY to the heart, stimulatory to the gut, and cause bronchoconstriction; general visceral afferent fibers from thoracoabdominal viscera; special visceral afferent fibers for taste from the epiglottis; and general somatic afferent fibers from the external ear. The GVE fibers to the heart are parasympathetic and therefore inhibitory, NOT excitatory.",
+              "keyConcept": "Vagal parasympathetic fibers are INHIBITORY to the heart (decrease rate/contractility).",
+              "options": [
+                "Branchiomotor fibers - muscles of palate, pharynx & larynx.",
+                "GVE fibers - excitatory to heart.",
+                "GVA fibers - from mucosa of respiratory system.",
+                "SVA fibers - taste from epiglottis.",
+                "GSA fibers - sensory from external ear."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q51",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "As regards accessory nerve, choose the INCORRECT statement:",
+              "explanation": "The spinal accessory nerve has a cranial part arising from the nucleus ambiguus (joining the vagus and exiting via jugular foramen) and a spinal part arising from the anterior horn cells of C1-C5, entering the skull through the foramen magnum, and exiting via the jugular foramen. The spinal part does NOT unite with the cranial part at the foramen ovale; rather, the cranial part exits with the glossopharyngeal and vagus through the jugular foramen, and the spinal part also exits through the jugular foramen but courses independently to supply the sternocleidomastoid and trapezius.",
+              "keyConcept": "Spinal accessory does NOT unite with cranial part at foramen ovale; both exit via jugular foramen.",
+              "options": [
+                "Its cranial part arises from nucleus ambiguus.",
+                "Its spinal part unites with its cranial part at foramen ovale.",
+                "It exits from skull with vagus & glossopharyngeal nerves.",
+                "Its cranial part is distributed through pharyngeal & recurrent laryngeal nerves.",
+                "Its spinal part enters cranial cavity through foramen magnum."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q52",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The fibers of C1 that join the hypoglossal nerve supply all the following EXCEPT:",
+              "explanation": "C1 spinal nerve fibers run briefly with the hypoglossal nerve (CN XII) as a hitchhiker. They supply the meningeal branch to the dura mater of posterior cranial fossa, the nerves to thyrohyoid and geniohyoid, and contribute to the ansa cervicalis as the descending hypoglossi. However, the styloglossus muscle is supplied directly by the hypoglossal nerve (CN XII) proper, NOT by C1 fibers.",
+              "keyConcept": "C1 fibers via hypoglossal supply thyrohyoid, geniohyoid, and ansa cervicalis, but NOT styloglossus.",
+              "options": [
+                "Meningeal nerve.",
+                "Nerve to styloglossus.",
+                "Nerve to Thyrohyoid.",
+                "Nerve to Geniohyoid.",
+                "Descends hypoglossi."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q53",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Enumerate branches of glossopharyngeal nerve.",
+              "explanation": "The glossopharyngeal nerve (CN IX) has several branches: (1) tympanic branch (Jacobson's nerve) to the middle ear, forming the tympanic plexus; (2) lesser petrosal nerve (from tympanic plexus) to the otic ganglion for parotid gland secretion; (3) carotid branch (nerve of Hering) to the carotid body and carotid sinus; (4) pharyngeal branches contributing to the pharyngeal plexus; (5) tonsillar branches to the palatine tonsils; (6) lingual branches to the posterior one-third of the tongue (general sensation and taste); and (7) muscular branch to the stylopharyngeus muscle.",
+              "keyConcept": "CN IX branches: tympanic, lesser petrosal, carotid, pharyngeal, tonsillar, lingual, and stylopharyngeus.",
+              "modelAnswer": "Branches of glossopharyngeal nerve: (1) tympanic branch (Jacobson's nerve); (2) lesser petrosal nerve (to otic ganglion); (3) carotid branch (nerve of Hering); (4) pharyngeal branches; (5) tonsillar branches; (6) lingual branches (posterior 1/3 tongue); (7) muscular branch to stylopharyngeus."
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q54",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Enumerate branches of vagus nerve in neck & thorax.",
+              "explanation": "The vagus nerve gives multiple branches as it descends through the neck and thorax. In the neck: meningeal branch, auricular branch (Arnold's nerve), pharyngeal branches, superior laryngeal nerve (external and internal), recurrent laryngeal nerve (left hooks around aortic arch, right hooks around subclavian artery), and cardiac branches. In the thorax: recurrent laryngeal nerves (also in thorax), cardiac branches, pulmonary branches, and esophageal plexus branches. In the abdomen: gastric branches (anterior and posterior), hepatic branches, celiac branches, renal branches, and intestinal branches.",
+              "keyConcept": "Vagus branches: neck (auricular, pharyngeal, superior laryngeal, recurrent laryngeal, cardiac), thorax (cardiac, pulmonary, esophageal), abdomen (gastric, hepatic, celiac).",
+              "modelAnswer": "Neck branches: meningeal, auricular (Arnold's nerve), pharyngeal, superior laryngeal nerve, recurrent laryngeal nerve (left around aorta, right around subclavian), cardiac branches. Thoracic branches: cardiac, pulmonary, esophageal plexus, recurrent laryngeal. Abdominal branches: anterior and posterior gastric, hepatic, celiac, renal, and intestinal branches."
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q55",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Describe cranial & spinal parts of accessory nerve.",
+              "explanation": "The accessory nerve (CN XI) has two distinct parts. The cranial part arises from the nucleus ambiguus in the medulla oblongata, exits via the jugular foramen, and joins the vagus nerve. Its fibers are distributed with the vagus via the pharyngeal and recurrent laryngeal branches to supply the muscles of the palate, pharynx, and larynx. The spinal part arises from the spinal accessory nucleus in the lateral horn of the upper five or six cervical spinal cord segments, ascends through the foramen magnum, exits via the jugular foramen, descends in the posterior triangle, and supplies the sternocleidomastoid and trapezius muscles.",
+              "keyConcept": "Cranial accessory = nucleus ambiguus → vagus → pharyngeal + recurrent laryngeal. Spinal accessory = C1-C5 → SCM + trapezius.",
+              "modelAnswer": "Cranial part: arises from nucleus ambiguus in medulla, exits via jugular foramen, joins vagus nerve, and is distributed via pharyngeal and recurrent laryngeal branches to supply muscles of palate, pharynx, and larynx. Spinal part: arises from spinal accessory nucleus (C1-C5/6), enters cranial cavity through foramen magnum, exits via jugular foramen, descends posteriorly in neck through posterior triangle, and supplies sternocleidomastoid and trapezius muscles."
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q56",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Enumerate branches of hypoglossal nerve.",
+              "explanation": "The hypoglossal nerve (CN XII) emerges from the hypoglossal canal above the occipital condyle, descends between the internal carotid artery and internal jugular vein, and curves forward above the hyoid bone to reach the tongue. Its branches include: (1) meningeal branch to the dura of posterior cranial fossa; (2) descending hypoglossi (C1 fibers) contributing to the ansa cervicalis; (3) nerve to thyrohyoid (C1 fibers); (4) nerve to geniohyoid (C1 fibers); and (5) lingual branches to the muscles of the tongue (hyoglossus, genioglossus, styloglossus, and intrinsic tongue muscles).",
+              "keyConcept": "Hypoglossal branches: meningeal, C1 to ansa cervicalis, C1 to thyrohyoid/geniohyoid, lingual branches to tongue muscles.",
+              "modelAnswer": "Branches of hypoglossal nerve: (1) meningeal branch to posterior cranial fossa dura; (2) descending hypoglossi (C1 fibers to ansa cervicalis); (3) nerve to thyrohyoid (C1); (4) nerve to geniohyoid (C1); (5) lingual branches to all extrinsic and intrinsic tongue muscles except palatoglossus (genioglossus, hyoglossus, styloglossus, superior/inferior longitudinal, transverse, vertical)."
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q57",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The branchial arch supplied by the glossopharyngeal nerve is the:",
+              "explanation": "The glossopharyngeal nerve (CN IX) is the nerve of the third pharyngeal arch. It supplies the stylopharyngeus muscle (the only muscle derived from the 3rd arch) and provides sensory innervation to the pharynx, middle ear, and posterior third of the tongue. CN V3 is 1st arch; CN VII is 2nd; CN X superior laryngeal is 4th.",
+              "keyConcept": "Glossopharyngeal nerve (CN IX) is the nerve of the 3rd pharyngeal arch.",
+              "options": [
+                "1st arch.",
+                "2nd arch.",
+                "3rd arch.",
+                "4th arch.",
+                "6th arch."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q58",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The pharyngeal arch supplied by the only pontine cranial nerve that is not attached to the lower border of the pons is the:",
+              "explanation": "The abducent nerve (CN VI) is the only cranial nerve attached to the lower border of the pons (all others attach at the upper border). It supplies the lateral rectus muscle of the eye, derived from the 6th pharyngeal arch. The 1st arch nerve is CN V (trigeminal), which attaches to the upper pons.",
+              "keyConcept": "CN VI (abducent) is the only cranial nerve attached to the LOWER border of the pons; innervates lateral rectus (6th arch).",
+              "options": [
+                "1st arch.",
+                "2nd arch.",
+                "3rd arch.",
+                "4th arch.",
+                "6th arch."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q59",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Enumerate derivatives of the pharyngeal arch supplied by the facial nerve.",
+              "explanation": "The facial nerve (CN VII) is the nerve of the second pharyngeal arch. All muscles, cartilages, and bones derived from the second arch are supplied by CN VII. These include muscles of facial expression, stapedius, stylohyoid, posterior belly of digastric, and the styloid process of the hyoid bone.",
+              "keyConcept": "CN VII (facial nerve) supplies: muscles of facial expression, stapedius, stylohyoid, posterior belly of digastric, and styloid process.",
+              "modelAnswer": "Derivatives of the second pharyngeal arch supplied by the facial nerve (CN VII): (1) Muscles—muscles of facial expression, stapedius, stylohyoid, and posterior belly of digastric. (2) Bones—styloid process of hyoid bone and lesser horn of hyoid (via Reichert's cartilage). (3) Ligaments—stylohyoid ligament. All these structures are innervated by CN VII regardless of their final anatomical position."
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q60",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following nerves supplying the scalp and face is not derived from the trigeminal nerve?",
+              "explanation": "The greater occipital nerve (C2) is NOT derived from the trigeminal nerve - it's a dorsal ramus of C2.选项A正确. The answer is A. It supplies the scalp posterior to the auricle.",
+              "keyConcept": "Greater occipital nerve (C2 dorsal ramus) is the only scalp nerve not from trigeminal - supplies posterior scalp.",
+              "options": [
+                "Great auricular",
+                "Auriculotemporal.",
+                "Zygomaticotemporal.",
+                "Supraorbital",
+                "Supratrochlear."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q61",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "The branch of facial nerve that supplies the platysma is the",
+              "explanation": "The branch of facial nerve that supplies the platysma is the cervical branch (also called mandibular branch in some texts).选项E正确. The answer is E. Platysma is a neck muscle of facial expression.",
+              "keyConcept": "Cervical branch of facial nerve supplies platysma - the only muscle in the neck from facial nerve.",
+              "options": [
+                "Temporal",
+                "Zygomatic",
+                "Buccal",
+                "Mandibular",
+                "Cervical"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q62",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The cranial nerve nucleus that supplies muscles of the larynx is the:",
+              "explanation": "The nucleus supplying muscles of the larynx is the nucleus ambiguus - gives rise to vagus nerve (CN X) which innervates most laryngeal muscles.选项B正确. The answer is B. The recurrent laryngeal nerve comes from vagus.",
+              "keyConcept": "Nucleus ambiguus (vagus) innervates laryngeal muscles via recurrent laryngeal nerve - voice production.",
+              "options": [
+                "Solitary nucleus",
+                "Ambiguus nucleus",
+                "Dorsal motor vagal nucleus",
+                "Motor facial nucleus",
+                "Spinal nucleus of V (trigeminal)"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q63",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "General visceral efferent column includes the following nuclei Except:",
+              "explanation": "General visceral efferent column includes: dorsal motor nucleus of vagus, inferior salivatory nucleus, and superior salivatory nucleus. The Edinger-Westphal is parasympathetic to eye, NOT included here.选项C正确. The answer is C. Edinger-Westphal is for eye, not for glands/viscera.",
+              "keyConcept": "GVE column: dorsal vagal, inferior and superior salivatory nuclei - NOT Edinger-Westphal (eye).",
+              "options": [
+                "Dorsal vagal nucleus.",
+                "Edinger Westphal nucleus.",
+                "Nucleus ambiguus.",
+                "Superior salivatory nucleus.",
+                "Inferior salivatory nucleus."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q64",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Special visceral efferent nuclei include:",
+              "explanation": "Special visceral efferent nuclei include: trigeminal motor nucleus (V), facial motor nucleus (VII), nucleus ambiguus (IX, X, XI), and hypoglossal nucleus (XII).选项D正确. The answer is D. These innervate pharyngeal arch-derived muscles.",
+              "keyConcept": "Special visceral efferent nuclei: CN V, VII, IX, X, XI motor nuclei - innervate pharyngeal arch muscles.",
+              "options": [
+                "Trigeminal motor nucleus.",
+                "Facial motor nucleus.",
+                "Nucleus ambiguus.",
+                "All of the above.",
+                "None of the above."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q65",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following nuclei represents the somatic efferent column?",
+              "explanation": "The somatic efferent column includes: oculomotor (III), trochlear (IV), abducens (VI), and hypoglossal (XII) nuclei - these control extraocular and tongue muscles.选项A正确. The answer is A. These are all somatic motor nuclei.",
+              "keyConcept": "Somatic efferent column: CN III, IV, VI, XII - control eye muscles and tongue muscles.",
+              "options": [
+                "Abducent nucleus.",
+                "Nucleus ambiguus.",
+                "Nucleus solitarius.",
+                "Dorsal vagal nucleus.",
+                "Motor nucleus of V."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q66",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "All the following are nuclei of facial nerve EXCEPT:",
+              "explanation": "Facial nerve nuclei include: facial motor nucleus (muscles of expression), superior salivatory nucleus (parasympathetic lacrimal/nasal glands), and solitary nucleus (taste from anterior 2/3 tongue). The cochlear nucleus is for hearing, NOT part of facial nerve.选项D正确. The answer is D. Cochlear nucleus is CN VIII.",
+              "keyConcept": "Facial nerve nuclei: motor (expression), superior salivatory (lacrimal), solitary (taste) - NOT cochlear nucleus.",
+              "options": [
+                "Nucleus Solitarius.",
+                "Superior salivatory nucleus.",
+                "Spinal nucleus of V.",
+                "Inferior salivatory nucleus.",
+                "Motor nucleus."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q67",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The nucleus that receives taste fibers is:",
+              "explanation": "The nucleus that receives taste fibers is the solitary nucleus (nucleus tractus solitarius) - receives taste from CN VII, IX, X.选项A正确. The answer is A. Located in medulla.",
+              "keyConcept": "Solitary nucleus receives taste: CN VII (anterior 2/3 tongue), CN IX (posterior 1/3), CN X (epiglottis).",
+              "options": [
+                "Nucleus Solitarius.",
+                "Nucleus Ambiguus.",
+                "Spinal nucleus of V.",
+                "Inferior salivatory nucleus.",
+                "Dorsal vagal nucleus."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q68",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Injury of motor root of trigeminal nerve would cause paralysis of:",
+              "explanation": "Injury of motor root of trigeminal nerve (portio minor) would cause paralysis of: muscles of mastication (masseter, temporalis, medial and lateral pterygoids), mylohyoid, anterior belly of digastric, tensor tympani, tensor veli palatini.选项B正确. The answer is B. These are all innervated by CN V3 motor root.",
+              "keyConcept": "Motor root of CN V: mastication muscles, mylohyoid, digastric, tensor tympani/veli palatini - all affected.",
+              "options": [
+                "Buccinator.",
+                "Lateral pterygoid.",
+                "Orbicularis oculi.",
+                "Posterior belly of digastric.",
+                "Platysma."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q69",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Fibers of vagus nerve exit ….",
+              "explanation": "The vagus nerve (CN X) exits the brainstem between the olive and inferior cerebellar peduncle, at the posterolateral sulcus of the medulla. This is the same level where glossopharyngeal and accessary nerves also emerge.",
+              "keyConcept": "Vagus nerve: exits between olive and inferior cerebellar peduncle at posterolateral sulcus.",
+              "options": [
+                "Between pyramids & olive",
+                "Between olive & inferior cerebellar peduncle",
+                "At pontomedullary junction",
+                "At spinomedullary junction"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q70",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following nuclei receive the GSA fibers of facial nerve:",
+              "explanation": "GSA (general somatic afferent) fibers of the facial nerve carry proprioception from facial muscles and sensation from a small area of the external ear. These fibers relay in the spinal nucleus of the trigeminal nerve, which spans the pons and medulla.",
+              "keyConcept": "Facial nerve GSA: relays in spinal nucleus of trigeminal (same as other facial sensation).",
+              "options": [
+                "Spinal nucleus of trigeminal nerve",
+                "Mesenchephalic nucleus",
+                "Main sensory nucleus",
+                "Solitary nucleus"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q71",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The cranial nerve whose component is Only GSE:",
+              "explanation": "The hypoglossal nerve (CN XII) has ONLY general somatic efferent (GSE) fibers, supplying the extrinsic and intrinsic muscles of the tongue. Other cranial nerves have mixed components. The vagus, glossopharyngeal, and accessory nerves all have visceral components.",
+              "keyConcept": "CN XII (hypoglossal): only GSE fibers to tongue muscles. Vagus: GSE + GVE + SVA + GVA.",
+              "options": [
+                "Hypoglossal nerve",
+                "Vagus nerve",
+                "Glossopharyngeal N.",
+                "Accessory nerve."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q72",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Nuclei of the vagus nerve include the following except:",
+              "explanation": "The inferior salivatory nucleus supplies parasympathetic fibers to the parotid gland via the glossopharyngeal nerve (CN IX), not the vagus. The vagus has: nucleus ambiguus (branchial GSE), dorsal motor nucleus of vagus (GVE), and solitary nucleus (SVA, GVA).",
+              "keyConcept": "Vagus nuclei: nucleus ambiguus (motor), dorsal motor nucleus (parasympathetic), solitary nucleus (sensory).",
+              "options": [
+                "Nucleus ambiguous",
+                "Dorsal motor nucleus of vagus",
+                "Inferior salivatory nucleus",
+                "Solitary nucleus"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q73",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Cranial nerve nucleus in floor of 4th ventricle close to midline in lower pons is:",
+              "explanation": "The abducent nucleus (CN VI) is located in the floor of the fourth ventricle, close to the midline in the lower pons. It supplies the lateral rectus muscle. The facial motor nucleus is more lateral, and the hypoglossal nucleus is in the medulla.",
+              "keyConcept": "Abducent nucleus: floor of 4th ventricle, lower pons, near midline; supplies lateral rectus.",
+              "options": [
+                "Hypoglossal nerve",
+                "Abducent nucleus",
+                "Motor facial nucleus",
+                "Motor vagus nucleus"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q74",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The only cranial nerve that decussate before its emergence is:",
+              "explanation": "The trochlear nerve (CN IV) is the ONLY cranial nerve that decussates (crosses) before emerging from the brainstem. It decussates in the superior medullary velum. All other cranial nerves emerge without crossing.",
+              "keyConcept": "CN IV (trochlear): only cranial nerve that decussates before emergence; crosses in superior medullary velum.",
+              "options": [
+                "Oculomotor",
+                "Trochlear",
+                "Abducent",
+                "Facial"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q75",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Cranial nerves in medulla oblongata are the following EXCEPT",
+              "explanation": "The facial nerve (CN VII) emerges from the PONS (at pontomedullary junction), not the medulla. The medullary cranial nerves are: IX (glossopharyngeal), X (vagus), XI (accessory), and XII (hypoglossal).",
+              "keyConcept": "Medullary cranial nerves: CN IX, X, XI, XII. CN VII (facial) is pontine.",
+              "options": [
+                "hypoglossal",
+                "accessory",
+                "vagus",
+                "facial",
+                "glossopharyngeal"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q76",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Mention the cranial nerves present in the ventral surface of the medulla oblongata.",
+              "explanation": "The cranial nerves with nuclei or roots in the medulla are CN IX (glossopharyngeal), X (vagus), XI (accessory), and XII (hypoglossal). They emerge from the posterolateral sulcus (IX, X, XI) and anterolateral sulcus (XII).",
+              "keyConcept": "Medullary cranial nerves: CN IX, X, XI (posterolateral sulcus), CN XII (anterolateral sulcus).",
+              "modelAnswer": "Glossopharyngeal nerve (CN IX), vagus nerve (CN X), accessory nerve (CN XI), and hypoglossal nerve (CN XII). They emerge from the posterolateral sulcus (CN IX, X, XI) and anterolateral sulcus (CN XII)."
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q77",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Mention the cranial nerves present in the ventral surface of the pons.",
+              "explanation": "The cranial nerves present in the pons are CN V (trigeminal - pontine), VI (abducent - pontine), VII (facial - pontomedullary junction), and VIII (vestibulocochlear - pontomedullary junction). The facial and vestibulocochlear emerge at the cerebellopontine angle.",
+              "keyConcept": "Pontine cranial nerves: CN V, VI, VII, VIII. Trigeminal (lateral pons), abducent ( midline), facial/vestibulocochlear (cerebellopontine angle).",
+              "modelAnswer": "Trigeminal nerve (CN V), abducent nerve (CN VI), facial nerve (CN VII), and vestibulocochlear nerve (CN VIII). They emerge from the pontine surface: trigeminal laterally, abducent at the midline, and facial/vestibulocochlear at the cerebellopontine angle."
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q78",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Mention the cranial nerve nuclei belonging to GSE column.",
+              "explanation": "The GSE (general somatic efferent) cranial nerve nuclei are: oculomotor (CN III), trochlear (CN IV), abducent (CN VI), and hypoglossal (CN XII). These supply extraocular muscles and tongue muscles.",
+              "keyConcept": "GSE cranial nerve nuclei: CN III, IV, VI, XII. Supply extraocular and tongue muscles.",
+              "modelAnswer": "Nucleus of oculomotor nerve (CN III), nucleus of trochlear nerve (CN IV), nucleus of abducent nerve (CN VI), and nucleus of hypoglossal nerve (CN XII). These supply the extraocular muscles (except superior oblique and lateral rectus) and tongue muscles."
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q79",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Mention the cranial nerve nuclei belonging to SVE column and mention their distribution.",
+              "explanation": "The SVE (special visceral efferent) nuclei include: motor nucleus of CN V (muscles of mastication + tensor tympani/palate), motor nucleus of CN VII (facial muscles), and nucleus ambiguus (CN IX, X, XI - pharynx/larynx muscles).",
+              "keyConcept": "SVE nuclei: motor V (mastication), motor VII (facial expression), nucleus ambiguus (IX, X, XI - pharynx/larynx).",
+              "modelAnswer": "Motor nucleus of trigeminal (CN V): supplies muscles of first pharyngeal arch (masticatory muscles, tensor tympani, tensor veli palatini, mylohyoid, anterior digastric). Motor nucleus of facial (CN VII): supplies muscles of second pharyngeal arch (facial expression, stapedius, stylohyoid, posterior digastric). Nucleus ambiguus: CN IX - stylopharyngeus; CN X and XI - muscles of palate, pharynx, and larynx."
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q80",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Mention the cranial nerve nuclei belonging to GVE column.",
+              "explanation": "The GVE (general visceral efferent) nuclei include: Edinger-Westphal nucleus (CN III - pupillary constriction), superior salivatory nucleus (CN VII - lacrimal and salivary glands), inferior salivatory nucleus (CN IX - parotid gland), and dorsal vagal nucleus (CN X - thoracic/abdominal viscera).",
+              "keyConcept": "GVE nuclei: Edinger-Westphal (III), superior salivatory (VII), inferior salivatory (IX), dorsal vagal (X).",
+              "modelAnswer": "Edinger-Westphal nucleus (CN III) - parasympathetic to eye (pupillary constriction, accommodation). Superior salivatory nucleus (CN VII) - submandibular and sublingual salivary glands, lacrimal gland. Inferior salivatory nucleus (CN IX) - parotid gland. Dorsal vagal nucleus (CN X) - parasympathetic to thoracic and abdominal viscera."
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q81",
+              "type": "essay",
+              "lecture": 1,
+              "text": "What does the spinal part of accessory nerve supply?",
+              "explanation": "The spinal part of the accessory nerve (CN XI) supplies the sternocleidomastoid and trapezius muscles. These are muscles of the neck and shoulder that control head movement and scapular elevation.",
+              "keyConcept": "Accessory nerve (spinal part): supplies sternocleidomastoid and trapezius. Purely motor.",
+              "modelAnswer": "Sternomastoid muscle (rotates head to opposite side) and trapezius muscle (elevates scapula, rotates head). These are the only two muscles supplied by the spinal part of the accessory nerve."
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q82",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Mention the origin of spinal part of accessory nerve.",
+              "explanation": "The spinal part of the accessory nerve originates from the spinal nucleus located in the ventral (anterior) horn of the upper 5 cervical segments (C1-C5) of the spinal cord. The fibers ascend through the foramen magnum to join the cranial root.",
+              "keyConcept": "Accessory nerve spinal root: ventral horns of C1-C5. Ascends through foramen magnum.",
+              "modelAnswer": "Spinal nucleus located in the ventral horn of the upper five cervical segments of the spinal cord (C1-C5). The axons ascend through the vertebral canal, enter the skull via the foramen magnum, and join the cranial root to form the complete accessory nerve."
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q83",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Mention the branches of glossopharyngeal nerve.",
+              "explanation": "The glossopharyngeal nerve (CN IX) gives off: tympanic branch (to middle ear and meninges), carotid branch (to carotid body and sinus), pharyngeal branches (to pharyngeal mucosa), muscular branch (to stylopharyngeus), tonsillar branches (to tonsil), and lingual branches (to posterior 1/3 of tongue).",
+              "keyConcept": "CN IX branches: tympanic, carotid, pharyngeal, muscular (stylopharyngeus), tonsillar, lingual.",
+              "modelAnswer": "Tympanic branch (to middle ear and mastoid air cells), carotid branch (to carotid sinus and body), pharyngeal branches (to pharyngeal mucosa), muscular branch (to stylopharyngeus muscle), tonsillar branches (to palatine tonsil), and lingual branches (to posterior 1/3 of tongue for taste and general sensation)."
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q84",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The cranial part of the accessory nerve arises from",
+              "explanation": "The cranial part of the accessory nerve (CN XI) arises from the nucleus ambiguus in the medulla, carrying fibers that eventually join the vagus nerve to innervate laryngeal muscles.",
+              "keyConcept": "Accessory nerve nucleus ambiguus origin",
+              "options": [
+                "Nucleus ambiguus",
+                "Spinal nucleus of V",
+                "Main sensory nucleus of V",
+                "Nucleus solitarius",
+                "Dorsal vagal nucleus"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q85",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The right spinal lemniscus carries sensations of",
+              "explanation": "The right spinal lemniscus carries pain and temperature sensation from the left side of the body (crossed fibers from spinothalamic tract); proprioception is carried in the dorsal column-medial lemniscus pathway.",
+              "keyConcept": "Spinal lemniscus crossed pain/temperature",
+              "options": [
+                "Pain and temperature from left side of the body",
+                "Conscious proprioception from left side of the body",
+                "Muscle tone from right side of body",
+                "All of the above",
+                "None of the above"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q86",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The cranial part of the accessory nerve arises from",
+              "explanation": "The cranial part of accessory nerve arises from nucleus ambiguus in the medulla (fibers that join vagus for laryngeal innervation); the spinal part arises from C1-C5 spinal cord levels.",
+              "keyConcept": "Accessory nerve dual origin",
+              "options": [
+                "Nucleus ambiguus",
+                "Spinal nucleus of V",
+                "Main sensory nucleus of V",
+                "Nucleus solitarius",
+                "Dorsal vagal nucleus"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q87",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The right spinal lemniscus carries sensations of",
+              "explanation": "The right spinal lemniscus carries crossed pain and temperature sensation from the left body (fibers have decussated at spinal cord levels before ascending in the spinothalamic tract).",
+              "keyConcept": "Spinothalamic tract crossing level",
+              "options": [
+                "Pain and temperature from left side of the body",
+                "Conscious proprioception from left side of the body",
+                "Muscle tone from right side of body",
+                "All of the above",
+                "None of the above"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q88",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The cranial part of the accessory nerve arises from",
+              "explanation": "The cranial accessory nerve fibers arise from nucleus ambiguus and travel with the vagus nerve to innervate pharyngeal and laryngeal muscles; this is why it is considered part of CN X's nerve pattern.",
+              "keyConcept": "Accessory nerve vagal component",
+              "options": [
+                "Nucleus ambiguus",
+                "Spinal nucleus of V",
+                "Main sensory nucleus of V",
+                "Nucleus solitarius",
+                "Dorsal vagal nucleus"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q89",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The right spinal lemniscus carries sensations of",
+              "explanation": "The spinothalamic tract crosses at or near the segmental level of entry and ascends as the spinal lemniscus carrying pain/temperature from the contralateral side of the body.",
+              "keyConcept": "Pain temperature tract decussation",
+              "options": [
+                "Pain and temperature from left side of the body",
+                "Conscious proprioception from left side of the body",
+                "Muscle tone from right side of body",
+                "All of the above",
+                "None of the above"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q90",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The cranial part of the accessory nerve arises from",
+              "explanation": "The cranial part of accessory nerve arises from nucleus ambiguus in the medulla, and its fibers join the vagus nerve to supply pharyngeal and laryngeal muscles.",
+              "keyConcept": "Accessory nerve nucleus ambiguus",
+              "options": [
+                "Nucleus ambiguus",
+                "Spinal nucleus of V",
+                "Main sensory nucleus of V",
+                "Nucleus solitarius",
+                "Dorsal vagal nucleus"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q91",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The right spinal lemniscus carries sensations of",
+              "explanation": "The right spinal lemniscus carries pain and temperature from the LEFT side of the body, as the spinothalamic tract crosses at the spinal cord level before ascending.",
+              "keyConcept": "Spinothalamic decussation",
+              "options": [
+                "Pain and temperature from left side of the body",
+                "Conscious proprioception from left side of the body",
+                "Muscle tone from right side of body",
+                "All of the above",
+                "None of the above"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q92",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The cranial part of the accessory nerve arises from",
+              "explanation": "Cranial accessory nerve fibers originate from nucleus ambiguus and merge with vagus nerve; this is why the cranial component is sometimes considered part of CN X.",
+              "keyConcept": "Accessory vagal merger",
+              "options": [
+                "Nucleus ambiguus",
+                "Spinal nucleus of V",
+                "Main sensory nucleus of V",
+                "Nucleus solitarius",
+                "Dorsal vagal nucleus"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q93",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The right spinal lemniscus carries sensations of",
+              "explanation": "The right spinal lemniscus carries left-sided pain and temperature because spinothalamic fibers cross at their segmental level before ascending in the lemniscus.",
+              "keyConcept": "Spinal lemniscus contralateral input",
+              "options": [
+                "Pain and temperature from left side of the body",
+                "Conscious proprioception from left side of the body",
+                "Muscle tone from right side of body",
+                "All of the above",
+                "None of the above"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q94",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The cranial part of the accessory nerve arises from",
+              "explanation": "Cranial accessory nerve fibers arise from nucleus ambiguus in the medulla and join the vagus nerve, explaining why they are sometimes considered part of CN X.",
+              "keyConcept": "Cranial XI nucleus ambiguus",
+              "options": [
+                "Nucleus ambiguus",
+                "Spinal nucleus of V",
+                "Main sensory nucleus of V",
+                "Nucleus solitarius",
+                "Dorsal vagal nucleus"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q95",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The right spinal lemniscus carries sensations of",
+              "explanation": "The spinal lemniscus carries pain and temperature sensation from the contralateral body side because second-order neurons cross at the spinal cord level before ascending.",
+              "keyConcept": "Contralateral pain/temperature pathway",
+              "options": [
+                "Pain and temperature from left side of the body",
+                "Conscious proprioception from left side of the body",
+                "Muscle tone from right side of body",
+                "All of the above",
+                "None of the above"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q96",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The cranial part of the accessory nerve arises from",
+              "explanation": "Cranial XI arises from nucleus ambiguus and travels with vagus nerve; this dual origin (spinal part from C1-C5) makes accessory nerve unique.",
+              "keyConcept": "Accessory nerve unique dual origin",
+              "options": [
+                "Nucleus ambiguus",
+                "Spinal nucleus of V",
+                "Main sensory nucleus of V",
+                "Nucleus solitarius",
+                "Dorsal vagal nucleus"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q97",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The right spinal lemniscus carries sensations of",
+              "explanation": "Spinal lemniscus is formed by crossed spinothalamic fibers carrying pain/temperature from the opposite side of the body after decussating at their entry level.",
+              "keyConcept": "Lemniscus crossed pathways",
+              "options": [
+                "Pain and temperature from left side of the body",
+                "Conscious proprioception from left side of the body",
+                "Muscle tone from right side of body",
+                "All of the above",
+                "None of the above"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q98",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The cranial part of the accessory nerve arises from",
+              "explanation": "Cranial XI arises from nucleus ambiguus in the medulla and its fibers join the vagus nerve; the spinal part arises separately from C1-C5 levels.",
+              "keyConcept": "Accessory nucleus ambiguus origin",
+              "options": [
+                "Nucleus ambiguus",
+                "Spinal nucleus of V",
+                "Main sensory nucleus of V",
+                "Nucleus solitarius",
+                "Dorsal vagal nucleus"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q99",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The right spinal lemniscus carries sensations of",
+              "explanation": "The right spinal lemniscus carries left-sided pain and temperature because spinothalamic tract fibers cross at their segmental level before ascending in the brainstem.",
+              "keyConcept": "Spinothalamic tract crossing",
+              "options": [
+                "Pain and temperature from left side of the body",
+                "Conscious proprioception from left side of the body",
+                "Muscle tone from right side of body",
+                "All of the above",
+                "None of the above"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q100",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The cranial part of the accessory nerve arises from",
+              "explanation": "Cranial accessory nerve arises from nucleus ambiguus and joins vagus nerve; this is why cranial XI is functionally part of CN X.",
+              "keyConcept": "Accessory nucleus ambiguus",
+              "options": [
+                "Nucleus ambiguus",
+                "Spinal nucleus of V",
+                "Main sensory nucleus of V",
+                "Nucleus solitarius",
+                "Dorsal vagal nucleus"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q101",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The right spinal lemniscus carries sensations of",
+              "explanation": "Right spinal lemniscus carries pain/temperature from left body because spinothalamic fibers cross at the spinal level before ascending.",
+              "keyConcept": "Contralateral lemniscus input",
+              "options": [
+                "Pain and temperature from left side of the body",
+                "Conscious proprioception from left side of the body",
+                "Muscle tone from right side of body",
+                "All of the above",
+                "None of the above"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q102",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The cranial part of the accessory nerve arises from",
+              "explanation": "Cranial XI from nucleus ambiguus joins vagus nerve; spinal part from C1-C5 is separate, explaining the nerve's unique dual origin.",
+              "keyConcept": "Accessory dual composition",
+              "options": [
+                "Nucleus ambiguus",
+                "Spinal nucleus of V",
+                "Main sensory nucleus of V",
+                "Nucleus solitarius",
+                "Dorsal vagal nucleus"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q103",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The right spinal lemniscus carries sensations of",
+              "explanation": "Spinal lemniscus carries contralateral pain and temperature after decussation at spinal levels.",
+              "keyConcept": "Lemniscus decussation",
+              "options": [
+                "Pain and temperature from left side of the body",
+                "Conscious proprioception from left side of the body",
+                "Muscle tone from right side of body",
+                "All of the above",
+                "None of the above"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q104",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The cranial part of the accessory nerve arises from",
+              "explanation": "Cranial accessory nerve arises from nucleus ambiguus and joins vagus nerve; this explains its functional integration with CN X.",
+              "keyConcept": "Accessory nucleus ambiguus",
+              "options": [
+                "Nucleus ambiguus",
+                "Spinal nucleus of V",
+                "Main sensory nucleus of V",
+                "Nucleus solitarius",
+                "Dorsal vagal nucleus"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q105",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The right spinal lemniscus carries sensations of",
+              "explanation": "Spinal lemniscus carries contralateral pain and temperature sensation because spinothalamic fibers cross at their entry level.",
+              "keyConcept": "Spinothalamic crossing",
+              "options": [
+                "Pain and temperature from left side of the body",
+                "Conscious proprioception from left side of the body",
+                "Muscle tone from right side of body",
+                "All of the above",
+                "None of the above"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q106",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The cranial part of the accessory nerve arises from",
+              "explanation": "Cranial XI from nucleus ambiguus joins vagus nerve; spinal part from C1-C5 is separate, explaining dual origin.",
+              "keyConcept": "Accessory dual composition",
+              "options": [
+                "Nucleus ambiguus",
+                "Spinal nucleus of V",
+                "Main sensory nucleus of V",
+                "Nucleus solitarius",
+                "Dorsal vagal nucleus"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q107",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The right spinal lemniscus carries sensations of",
+              "explanation": "Spinal lemniscus carries contralateral pain and temperature after decussation at spinal levels.",
+              "keyConcept": "Lemniscus decussation",
+              "options": [
+                "Pain and temperature from left side of the body",
+                "Conscious proprioception from left side of the body",
+                "Muscle tone from right side of body",
+                "All of the above",
+                "None of the above"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q108",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following nerves supplying scalp and face Is not derived from trigeminal nerve?",
+              "explanation": "The great auricular nerve (C2-C3) is derived from the cervical plexus, not the trigeminal nerve. It supplies the skin over the parotid gland and mastoid area. The auriculotemporal, zygomaticotemporal, supraorbital, and supratrochlear are all trigeminal branches.",
+              "keyConcept": "Great auricular nerve from C2-C3 cervical plexus, not trigeminal (V)",
+              "options": [
+                "Great auricular",
+                "Auriculotemporal.",
+                "Zygomaticotemporal.",
+                "Supraorbital",
+                "Supratrochlear."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q109",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The branch of facial nerve that supplies the platysma is the",
+              "explanation": "The platysma (a facial expression muscle in the neck) is supplied by the cervical branch of the facial nerve. This branch also innervates the orbicularis oris and the lower lip muscles.",
+              "keyConcept": "Cervical branch of facial nerve supplies platysma",
+              "options": [
+                "Temporal",
+                "Zygomatic",
+                "Buccal",
+                "Mandibular",
+                "Cervical"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q110",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "The corticonuclear (corticobulbar) tract provides only contralateral innervation to which of the following cranial nerves?",
+              "explanation": "The corticobulbar tract provides bilateral innervation to muscles of the head and face, EXCEPT for the lower facial muscles (chin, lips) which receive only contralateral input. This bilateral pattern preserves function if one hemisphere is damaged.",
+              "keyConcept": "Corticobulbar fibers to lower face are uniquely contralateral; all other cranial nerve motor nuclei receive bilateral input.",
+              "options": [
+                "Facial nerve (upper face)",
+                "Trigeminal nerve",
+                "Hypoglossal nerve",
+                "Oculomotor nerve",
+                "Accessory nerve"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q111",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "A patient has a tumor in the fourth ventricle. Which cranial nerve nucleus is most likely affected due to its location?",
+              "explanation": "The abducens nucleus (CN VI) is located in the floor of the fourth ventricle, near the facial colliculus. A fourth ventricle tumor would most likely affect the abducens nerve, which has a long intracranial course.",
+              "keyConcept": "Abducens nucleus in the pons is vulnerable to fourth ventricle masses due to its dorsal location.",
+              "options": [
+                "Trigeminal nucleus",
+                "Facial nucleus",
+                "Abducent nucleus",
+                "Glossopharyngeal nucleus",
+                "Vagus nucleus"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q112",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "Which cranial nerve emerges from the dorsal (back) aspect of the brainstem?",
+              "explanation": "The trochlear nerve (CN IV) is unique as it exits dorsally from the midbrain (just below the inferior colliculus) after decussating in the superior medullary velum. All other cranial nerves exit ventrally.",
+              "keyConcept": "CN IV is the only cranial nerve with dorsal exit from the midbrain after decussation.",
+              "options": [
+                "Oculomotor nerve",
+                "Facial nerve",
+                "Trigeminal nerve",
+                "Abducent nerve",
+                "Trochlear nerve"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q113",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "Which cranial nerve nuclei are located in the pons?",
+              "explanation": "Pontine cranial nerve nuclei include: abducens (VI), facial (VII), vestibulocochlear (VIII), and the principal sensory nucleus of trigeminal (V). The oculomotor and trochlear nuclei are in the midbrain.",
+              "keyConcept": "CN V, VI, VII, VIII nuclei are located in the pons; III and IV are midbrain, IX, X, XI, XII are medullary.",
+              "options": [
+                "Trigeminal and Abducent",
+                "Facial and Oculomotor",
+                "Hypoglossal and Vagus",
+                "Olfactory and Optic",
+                "Spinal Accessory and Glossopharyngeal"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q114",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "Which cranial nerve is not found in the open medulla?",
+              "explanation": "The hypoglossal nerve (XII) emerges from the pre-olivary sulcus of the closed medulla, not the open medulla. Cranial nerves IX, X, XI emerge from the open medulla at the post-olivary area.",
+              "keyConcept": "CN XII emerges from the closed medulla; CN IX, X, XI emerge from the open medulla.",
+              "options": [
+                "Oculomotor nerve",
+                "Hypoglossal nerve",
+                "Vagus nerve",
+                "Vestibulocochlear nerve",
+                "No correct answer"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q115",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "Which cranial nerve nucleus is located most medially in the medulla?",
+              "explanation": "The nucleus tractus solitarius (solitary nucleus) is located most medially in the medulla, receiving visceral sensory input from vagus and glossopharyngeal nerves for taste and visceral reflexes.",
+              "keyConcept": "Solitary nucleus is the most medial medullary nucleus, involved in visceral sensory processing.",
+              "options": [
+                "Vagus",
+                "Glossopharyngeal",
+                "Hypoglossal",
+                "Spinal accessory",
+                "Trigeminal"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q116",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "Which cranial nerve nucleus contains both general visceral afferent (GVA) and special visceral afferent (SVA) fibers?",
+              "explanation": "The nucleus tractus solitarius in the medulla contains both GVA (visceral sensation including baroreceptor and chemoreceptor input) and SVA (taste) fibers, making it unique in having both modalities.",
+              "keyConcept": "Solitary nucleus processes both visceral afferent and special visceral afferent (taste) information.",
+              "options": [
+                "Trigeminal motor nucleus",
+                "Hypoglossal nucleus",
+                "Facial motor nucleus",
+                "Nucleus solitarius",
+                "Dorsal motor nucleus of vagus"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q117",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "Which of the following structures is supplied by the hypoglossal nerve (CN XII)?",
+              "explanation": "The hypoglossal nerve (XII) innervates all intrinsic and extrinsic muscles of the tongue except the palatoglossus (which is innervated by the vagus nerve via the pharyngeal plexus).",
+              "keyConcept": "CN XII controls tongue musculature; palatoglossus is the only tongue muscle innervated by CN X.",
+              "options": [
+                "Pharyngeal muscles",
+                "Palatal muscles",
+                "Tongue muscles",
+                "Sternocleidomastoid muscle",
+                "Facial muscles"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q118",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "Which cranial nerve sends afferent fibers to the nucleus solitarius?",
+              "explanation": "Cranial nerves VII (facial), IX (glossopharyngeal), and X (vagus) send afferent (taste and visceral) fibers to the nucleus solitarius. The vagus nerve carries the largest contribution of visceral information.",
+              "keyConcept": "Solitary nucleus receives visceral and taste afferents from CN VII, IX, and X.",
+              "options": [
+                "Facial nerve",
+                "Trigeminal nerve",
+                "Abducent nerve",
+                "Hypoglossal nerve",
+                "Accessory nerve"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q119",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "Which cranial nerve supplies fibers to the nucleus ambiguus?",
+              "explanation": "The nucleus ambiguus is the origin of special visceral efferent (SVE) fibers for CN IX (stylopharyngeus), CN X (pharynx, larynx, esophagus), and CN XI (sternocleidomastoid, trapezius).",
+              "keyConcept": "Nucleus ambiguus innervates pharyngeal and laryngeal muscles via CN IX, X, and XI.",
+              "options": [
+                "Facial nerve",
+                "Glossopharyngeal nerve",
+                "Trigeminal nerve",
+                "Hypoglossal nerve",
+                "Abducent nerve"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q120",
+              "type": "mcq",
+              "lecture": 4,
+              "text": "At which anatomical level does the oculomotor nerve emerge?",
+              "explanation": "The oculomotor nerve (CN III) emerges from the midbrain on the anterior surface between the cerebral peduncles, just posterior to the posterior clinoid process.",
+              "keyConcept": "CN III emerges from the midbrain between the cerebral peduncles on the anterior surface.",
+              "options": [
+                "At the level of the superior midbrain colliculus",
+                "At the level of the inferior olivary nucleus",
+                "At the level of the pons",
+                "At the level of the medullary pyramids",
+                "At the level of the cerebellar peduncles"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q121",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "Which of the following nerves arises from the union of the vagus and accessory nerves?",
+              "explanation": "The internal laryngeal nerve is formed by the union of the external laryngeal nerve (from superior laryngeal of vagus) and the recurrent laryngeal nerve, but they join at the larynx, not intracranially.",
+              "keyConcept": "Internal laryngeal nerve arises at the larynx from the superior laryngeal nerve division of CN X.",
+              "options": [
+                "Glossopharyngeal nerve",
+                "Hypoglossal nerve",
+                "Recurrent laryngeal nerve",
+                "Superior laryngeal nerve",
+                "Pharyngeal nerve"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q122",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "A patient that had trauma to the spinal accessory nerve is expected to suffer from:",
+              "explanation": "The spinal accessory nerve (CN XI) innervates the sternocleidomastoid and trapezius muscles. Damage causes inability to shrug the shoulder (trapezius) and difficulty rotating the head (sternocleidomastoid).",
+              "keyConcept": "CN XI supplies sternocleidomastoid and trapezius for neck rotation and shoulder abduction.",
+              "options": [
+                "Paralysis of genioglossus muscle",
+                "Paralysis of muscles of the lower part of the face",
+                "Deviation of the tongue towards the damaged side",
+                "Deviation of the tongue towards the healthy side",
+                "Paralysis of sternomastoid muscle"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q123",
+              "type": "mcq",
+              "lecture": 5,
+              "text": "Which of the following cranial nerves passes through the cavernous sinus?",
+              "explanation": "CN III, IV, V1, V2, and VI all pass through the cavernous sinus. CN III and IV are in the lateral wall with V1 and V2; CN VI runs through the sinus itself next to the internal carotid artery.",
+              "keyConcept": "Cavernous sinus contains CN III, IV, V1, V2, VI and the internal carotid artery.",
+              "options": [
+                "Abducent nerve",
+                "Oculomotor nerve",
+                "Trochlear nerve",
+                "Optic nerve",
+                "Olfactory nerve"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q124",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "Which structure receives its sensory innervation from the trigeminal nerve?",
+              "explanation": "The dura mater receives sensory innervation from all three divisions of the trigeminal nerve. The anterior cranial fossa is innervated by V1, the middle cranial fossa by V2 and V3.",
+              "keyConcept": "Dura mater sensory innervation is provided by all three trigeminal divisions via meningeal branches.",
+              "options": [
+                "Upper eyelid",
+                "Lower lobe of the ear",
+                "Skin over the angle of the mandible",
+                "Posterior one-third of the tongue",
+                "External auditory meatus skin"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q125",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "Which nerve is the motor branch of the posterior division of the trigeminal nerve?",
+              "explanation": "The mylohyoid nerve is the motor branch of the posterior division of the mandibular nerve (V3). It innervates the mylohyoid muscle and anterior belly of the digastric muscle.",
+              "keyConcept": "Mylohyoid nerve from V3 posterior division supplies mylohyoid and anterior digastric muscles.",
+              "options": [
+                "Lingual nerve",
+                "Buccal nerve",
+                "Auriculotemporal nerve",
+                "Inferior alveolar nerve",
+                "Mental nerve"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q126",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "One of the following cranial nerves contains sensory nerves fibers:",
+              "explanation": "The trigeminal nerve (CN V) contains sensory fibers for face, scalp, and oral cavity; the other listed nerves are purely motor.",
+              "keyConcept": "Trigeminal sensory function",
+              "options": [
+                "Occulomotor nerve.",
+                "Trochlear nerve.",
+                "Trigeminal nerve.",
+                "Abducent nerve."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q127",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "One of the following cranial nerves is attached to the posterior aspect of the brain stem:",
+              "explanation": "The trochlear nerve (CN IV) is the only cranial nerve that emerges from the posterior aspect of the brainstem, specifically from the dorsal surface of the midbrain.",
+              "keyConcept": "Trochlear nerve origin",
+              "options": [
+                "Abducent nerve.",
+                "Vagus nerve.",
+                "Occulomotor nerve.",
+                "Trochlear nerve."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q128",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which cranial nerve emerges from the anterior aspect of the medulla oblongata between the pyramid and the olive?",
+              "explanation": "The hypoglossal nerve (CN XII) emerges from the anterior aspect of the medulla between the pyramid and olive, carrying only motor fibers.",
+              "keyConcept": "Hypoglossal nerve origin",
+              "options": [
+                "Glossopharyngeal",
+                "Vagus",
+                "Accessory",
+                "Hypoglossal",
+                "Abducens"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q129",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The branchial arch supplied by the glossopharyngeal nerve is the:",
+              "explanation": "The glossopharyngeal nerve (CN IX) supplies the third branchial arch, which gives rise to stylopharyngeus muscle and the stylotympanic fissure.",
+              "keyConcept": "Third arch nerve",
+              "options": [
+                "First",
+                "Second",
+                "Third",
+                "Fourth",
+                "Sixth"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q130",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Cranial nerves on ventral medulla:",
+              "explanation": "Cranial nerves associated with the ventral medulla are CN IX (glossopharyngeal), CN X (vagus), CN XI (accessory), and CN XII (hypoglossal), emerging in order from above downward.",
+              "keyConcept": "Medullary cranial nerves: 9, 10, 11, 12.",
+              "modelAnswer": "Glossopharyngeal (9), Vagus (10), Accessory (11), Hypoglossal (12)."
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q131",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Cranial nerves on ventral pons:",
+              "explanation": "Cranial nerves associated with the ventral pons include CN V (trigeminal), CN VI (abducent), CN VII (facial), and CN VIII (vestibulocochlear), emerging at the pontomedullary junction.",
+              "keyConcept": "Pontine cranial nerves: 5, 6, 7, 8.",
+              "modelAnswer": "Trigeminal (5), Abducent (6), Facial (7), Vestibulocochlear (8)."
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q132",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Spinal part of accessory nerve supplies:",
+              "explanation": "The spinal part of the accessory nerve (CN XI) supplies the sternocleidomastoid and trapezius muscles, which are responsible for head movement and shoulder elevation.",
+              "keyConcept": "Spinal accessory nerve supplies sternocleidomastoid and trapezius.",
+              "modelAnswer": "Sternomastoid and Trapezius."
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q133",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Branches of glossopharyngeal nerve:",
+              "explanation": "The glossopharyngeal nerve (CN IX) gives six branches: tympanic (to middle ear), carotid (to carotid body/sinus), pharyngeal (to pharynx), muscular (to stylopharyngeus), tonsillar, and lingual branches.",
+              "keyConcept": "CN IX branches: tympanic, carotid, pharyngeal, muscular, tonsillar, lingual.",
+              "modelAnswer": "Tympanic, carotid, pharyngeal, muscular, tonsillar, lingual."
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q134",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The motor nucleus of the trigeminal nerve belongs to which column of cranial nerve nuclei?",
+              "explanation": "The motor nucleus of the trigeminal nerve is a special visceral efferent (SVE) nucleus, innervating muscles derived from the first pharyngeal arch (muscles of mastication).",
+              "keyConcept": "Motor nucleus of V is special visceral efferent (SVE).",
+              "options": [
+                "General somatic efferent (GSE)",
+                "Special visceral efferent (SVE)",
+                "General visceral efferent (GVE)",
+                "Special somatic afferent (SSA)"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q135",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The optic nerve is a derivative of the:",
+              "explanation": "The optic nerve develops as an outpouching of the diencephalon (forerain), making it technically a CNS tract rather than a true peripheral nerve, with myelin provided by oligodendrocytes.",
+              "keyConcept": "Optic nerve is a diencephalon derivative, not true peripheral nerve.",
+              "options": [
+                "Neural crest",
+                "Diencephalon (outpouching of the forebrain)",
+                "Mesencephalon",
+                "Neural tube"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q136",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The hypoglossal nerve (CN XII) supplies all intrinsic and extrinsic muscles of the tongue except the:",
+              "explanation": "The hypoglossal nerve (CN XII) supplies all tongue muscles except palatoglossus, which is innervated by the pharyngeal plexus via the vagus nerve (CN X) due to its origin from the fourth pharyngeal arch.",
+              "keyConcept": "Palatoglossus is supplied by vagus (CN X), not hypoglossal.",
+              "options": [
+                "Genioglossus",
+                "Hyoglossus",
+                "Styloglossus",
+                "Palatoglossus"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q137",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following is a pure motor cranial nerve?",
+              "explanation": "The hypoglossal nerve (CN XII) is a pure motor nerve carrying general somatic efferent fibers to all intrinsic and most extrinsic tongue muscles, with no sensory component.",
+              "keyConcept": "Hypoglossal nerve (CN XII) is pure motor to tongue muscles.",
+              "options": [
+                "Trigeminal",
+                "Facial",
+                "Hypoglossal",
+                "Glossopharyngeal"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q138",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "A lesion of the spinal accessory nerve causes paralysis of:",
+              "explanation": "CN XI supplies sternocleidomastoid and trapezius.",
+              "keyConcept": "Spinal accessory nerve: sternocleidomastoid and trapezius muscles.",
+              "options": [
+                "Masseter and the temporalis muscle",
+                "Genioglossus muscle of the tongue",
+                "Buccinator",
+                "Sternocleidomastoid and trapezius",
+                "Platysma"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q139",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "UMNL of cranial nerves can result from cerebrovascular accident affecting ……… artery.",
+              "explanation": "The anterior cerebral artery supplies medial frontal and parietal regions including motor cortex areas controlling lower limbs; CVA here causes contralateral leg weakness and UMN signs.",
+              "keyConcept": "Anterior cerebral artery: UMN lesion of cranial nerves (if affecting cortical areas).",
+              "options": [
+                "Anterior cerebral",
+                "Middle cerebral",
+                "Anterior choroidal",
+                "Posterior communicating"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q140",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The facial nerve leaves the cranial cavity by passing through:",
+              "explanation": "The facial nerve (CN VII) exits the cranial cavity through the stylomastoid foramen located between the styloid and mastoid processes.",
+              "keyConcept": "Facial nerve exits via stylomastoid foramen.",
+              "options": [
+                "Foramen ovale.",
+                "Jugular foramen.",
+                "Stylomastoid foramen.",
+                "Posterior condylar canal."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q141",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Facial nerve DOESN'T give parasympathetic supply to ……… gland.",
+              "explanation": "The facial nerve provides parasympathetic supply to the lacrimal gland via the greater petrosal nerve and to submandibular and sublingual glands via chorda tympani; the parotid gland receives parasympathetic from CN IX.",
+              "keyConcept": "Facial nerve doesn't parasympathetically supply parotid gland (CN IX does).",
+              "options": [
+                "Lacrimal",
+                "Parotid",
+                "Submandibular",
+                "Sublingual"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q142",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Lesion of facial nerve at stylomastoid foramen leads to:",
+              "explanation": "A lesion at stylomastoid foramen causes lower motor neuron facial paralysis affecting all muscles on that side, including the forehead (loss of frontalis and orbicularis oculi).",
+              "keyConcept": "Stylomastoid lesion: LMN facial paralysis (entire ipsilateral face).",
+              "options": [
+                "Loss of taste sensation from ipsilateral anterior 2/3 of tongue.",
+                "Motor loss on the contralateral half of the face.",
+                "Motor loss on the ipsilateral half of face.",
+                "Loss of taste sensation from ipsilateral half of soft palate."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-anatomy-q143",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The hypoglossal nerve pierces ……… muscle at the end of its course.",
+              "explanation": "The hypoglossal nerve (CN XII) pierces the genioglossus muscle near its insertion before distributing to all intrinsic and most extrinsic tongue muscles.",
+              "keyConcept": "Hypoglossal nerve pierces genioglossus muscle.",
+              "options": [
+                "Genioglossus",
+                "Hyoglossus",
+                "Palatoglossus",
+                "Styloglossus"
+              ],
+              "correctIndex": 0
+            }
+          ]
+        },
+        {
+          "id": "clinical",
+          "name": "Clinical",
+          "iconName": "clinical",
+          "lectures": "L1-L5",
+          "lectureCount": 5,
+          "questions": [
+            {
+              "id": "mcns2-ch2-clinical-q1",
+              "type": "case",
+              "lecture": 1,
+              "text": "A 54 years old man presented with a tumor in the posterior cranial fossa. The neurologist wanted to check the integrity of the 9th, 10th and 11th cranial nerves.",
+              "explanation": "The vagus nerve (CN X) is tested clinically by asking the patient to say 'ah' while observing palatal elevation (uvula should remain midline or deviate to the unaffected side), checking the gag reflex (afferent limb via CN IX, efferent via CN X), and checking the cough reflex. The glossopharyngeal nerve carries taste from the posterior one-third of the tongue and general sensation from the tonsillar fossa; its sensory branches include the tympanic, tonsillar, lingual, and carotid branches. The accessory nerve supplies the sternocleidomastoid and trapezius muscles.",
+              "keyConcept": "Vagus tested by palatal movement/gag reflex; glossopharyngeal sensory = tympanic, carotid, tonsillar, lingual; accessory = SCM + trapezius.",
+              "subQuestions": [
+                {
+                  "id": "mcns2-ch2-clinical-q1-sq1",
+                  "type": "mcq",
+                  "text": "[TYPE: essay] How can you test for integrity of vagus nerve?",
+                  "explanation": "The vagus nerve (CN X) is tested clinically by asking the patient to say 'ah' while observing palatal elevation (uvula should remain midline or deviate to the unaffected side), checking the gag reflex (afferent limb via CN IX, efferent via CN X), and checking the cough reflex. The glossopharyngeal nerve carries taste from the posterior one-third of the tongue and general sensation from the tonsillar fossa; its sensory branches include the tympanic, tonsillar, lingual, and carotid branches. The accessory nerve supplies the sternocleidomastoid and trapezius muscles.",
+                  "keyConcept": "Vagus tested by palatal movement/gag reflex; glossopharyngeal sensory = tympanic, carotid, tonsillar, lingual; accessory = SCM + trapezius.",
+                  "options": [],
+                  "correctIndex": 0
+                },
+                {
+                  "id": "mcns2-ch2-clinical-q1-sq2",
+                  "type": "mcq",
+                  "text": "[TYPE: essay] Enumerate sensory branches of glossopharyngeal nerve.",
+                  "explanation": "The vagus nerve (CN X) is tested clinically by asking the patient to say 'ah' while observing palatal elevation (uvula should remain midline or deviate to the unaffected side), checking the gag reflex (afferent limb via CN IX, efferent via CN X), and checking the cough reflex. The glossopharyngeal nerve carries taste from the posterior one-third of the tongue and general sensation from the tonsillar fossa; its sensory branches include the tympanic, tonsillar, lingual, and carotid branches. The accessory nerve supplies the sternocleidomastoid and trapezius muscles.",
+                  "keyConcept": "Vagus tested by palatal movement/gag reflex; glossopharyngeal sensory = tympanic, carotid, tonsillar, lingual; accessory = SCM + trapezius.",
+                  "options": [],
+                  "correctIndex": 0
+                },
+                {
+                  "id": "mcns2-ch2-clinical-q1-sq3",
+                  "type": "mcq",
+                  "text": "[TYPE: essay] Name the muscle(s) supplied by accessory nerve.",
+                  "explanation": "The vagus nerve (CN X) is tested clinically by asking the patient to say 'ah' while observing palatal elevation (uvula should remain midline or deviate to the unaffected side), checking the gag reflex (afferent limb via CN IX, efferent via CN X), and checking the cough reflex. The glossopharyngeal nerve carries taste from the posterior one-third of the tongue and general sensation from the tonsillar fossa; its sensory branches include the tympanic, tonsillar, lingual, and carotid branches. The accessory nerve supplies the sternocleidomastoid and trapezius muscles.",
+                  "keyConcept": "Vagus tested by palatal movement/gag reflex; glossopharyngeal sensory = tympanic, carotid, tonsillar, lingual; accessory = SCM + trapezius.",
+                  "options": [],
+                  "correctIndex": 0
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "histology",
+          "name": "Histology",
+          "iconName": "histology",
+          "lectures": "L1-L5",
+          "lectureCount": 5,
+          "questions": [
+            {
+              "id": "mcns2-ch2-histology-q1",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "Nuclei of the vagus nerve include the following except:",
+              "explanation": "Vagus nerve nuclei include: nucleus ambiguus (motor), dorsal motor nucleus of vagus (parasympathetic), and solitary nucleus (sensory). The inferior salivatory nucleus supplies the parotid gland via the glossopharyngeal nerve.",
+              "keyConcept": "Inferior salivatory nucleus is NOT part of vagus (it's glossopharyngeal) - EXCEPTION",
+              "options": [
+                "Nucleus ambiguous.",
+                "Dorsal motor nucleus of vagus.",
+                "Inferior salivatory nucleus.",
+                "Solitary nucleus."
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch2-histology-q2",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "Mesencephalic nucleus of trigeminal nerve:",
+              "explanation": "The mesencephalic nucleus of the trigeminal nerve contains pseudo-unipolar neurons (first-order neurons) for proprioception from face, muscles, and temporomandibular joint. It is the only sensory nucleus with cell bodies in the CNS.",
+              "keyConcept": "Mesencephalic nucleus contains pseudo-unipolar neurons for facial proprioception (1st order)",
+              "options": [
+                "Formed of 2nd order neuron of proprioception from face.",
+                "Formed of pseudo-unipolar neurons.",
+                "Extend in the midbrain in the level of inferior colliculus only.",
+                "Contain 1st order neurons of pain from face."
+              ],
+              "correctIndex": 0
+            }
+          ]
+        },
+        {
+          "id": "physiology",
+          "name": "Physiology",
+          "iconName": "physiology",
+          "lectures": "L1-L5",
+          "lectureCount": 5,
+          "questions": [
+            {
+              "id": "mcns2-ch2-physiology-q1",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following is Not characterizing the pyramidal tract?\nA. It has only cortical origin.\nB. It terminates on AHCs and cranial nerve nuclei.\nC. It is functioning since birth.\nD. 90% of it cross to opposite side at medulla.\nE. It is only one neuron from cortex to AHCs.",
+              "explanation": "The pyramidal tract is not fully functional at birth (infants have primitive reflexes but lack voluntary control); it matures over the first two years as corticospinal fibers fully develop.",
+              "keyConcept": "Pyramidal tract is not fully functional at birth.",
+              "options": [
+                "It has only cortical origin",
+                "It terminates on AHCs and cranial nerve nuclei",
+                "It is functioning since birth",
+                "90% of it cross to opposite side at medulla",
+                "It is only one neuron from cortex to AHCs"
+              ],
+              "correctIndex": 0
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

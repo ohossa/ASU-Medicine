@@ -1,0 +1,5322 @@
+{
+  "moduleCode": "MCNS-2",
+  "questions": [
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Mention the branches of the vagal nerve from the superior vagal ganglion.",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Meningeal nerve and Auricular nerve"
+    },
+    {
+      "chapterTitle": "Thalamus & Hypothalamus",
+      "chapterId": 3,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What’s the arterial supply of thalamus?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Medial and anterior regions by posteromedial group of posterior cerebral artery\nLateral and posterior regions by posterolateral group of posterior cerebral artery (thalamogeniculate artery)"
+    },
+    {
+      "chapterTitle": "Thalamus & Hypothalamus",
+      "chapterId": 3,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What’s the venous drainage of thalamus?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Thalamostriate vein"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Mention the boundaries of lateral ventricle.",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Lateral wall: thalamus and hypothalamus\nRoof: Layer of ependyma. Choroid plexus hangs from its roof.\nFloor: optic chiasma, infundibulum, tuber cinereum, mamillary bodies, posterior perforated substance, tegmentum of midbrain\nAnterior wall: lamina terminalis, column of fornix, anterior commissure\nPosterior wall: posterior commissure, pineal body, suprapineal recess"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Mention the recesses of third ventricle.",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Optic recess\nInfundibular recess\nPineal recess\nSuprapineal recess"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What are the connections of septal areas?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Medial forebrain bundle: connects septal areas and amygdala with the hypothalamus\nStria medullaris thalami: connects septal areas to the habenular nuclei"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Mention 1 connection carried out by the fornix.",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Hippocampus and mamillary bodies"
+    },
+    {
+      "chapterTitle": "Thalamus & Hypothalamus",
+      "chapterId": 3,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What does lesion of hippocampus or papez circuit cause?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Anterograde amnesia(loss of recent memory and preservation of old memory)"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What does the limbic lobe consist of?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Subcallosal area (paraolfactory gyrus)\nCingulate gyrus\nIsthmus\nParahippocampal gyrus\nUncus"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Enumerate the long association fibers.",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Superior longitudinal bundle, inferior longitudinal bundle, fronto occipital bundle, uncinate bundle, cingulum"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Mention the blood supply of internal capsule.",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Upper half of anterior limb and upper half of posterior limb: MCA\nLower ½ of anterior limb and genu: ACA\nLower ½ of posterior limb: Post communicating and anterior choroidal artery\nRetrolentiform and Sublentiform: Anterior choroidal artery"
+    },
+    {
+      "chapterTitle": "Cerebrum & Cortical Functions",
+      "chapterId": 2,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Mention the relations of corpus callosum",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Superiorly: Falx cerebri and Anterior cerebral arteries\nInferiorly: Fornix and septum pellucidum"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Mention the subarachnoid cisterns",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Cerebello medullary cistern\nCistern of great cerebral vein\nCisterna pontis\nInterpeduncular cistern\nCistern of lateral fossa"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "How is the CSF formed?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "By choroid plexus of ventricles"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Mention the circulation of CSF",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Lateral ventricles > interventricular foramen>third ventricle > aqueduct of sylvius > fourth ventricle > Median foramen of magendie and two lateral foramen of lucshka > subarachnoid space"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Mention the absorption of CSF",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "By arachnoid villi and granulations into dural venous sinuses\nA little amount is formed around cerebral vessels and from ependyma cells"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Mention the branches of vertebral artery",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Meningeal, Posterior inferior cerebellar, posterior spinal, anterior spinal, medullary branches"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Mention the beginning and termination of vertebral artery.",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Begins as a branch of first part of subclavian artery\nEnds at lower border of pons by joining the other vertebral artery to form basilary artery"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Mention the beginning and termination of basilar artery.",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "It’s formed by union of right and left vertebral arteries at lower border of pons\nEnds at upper border of pons by giving its two terminal branches “right and left posterior cerebral arteries”"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Mention the branches of basilar artery",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Pontine branches, labyrinthine, anterior inferior cerebellar, superior cerebellar, posterior cerebellar"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Mention the arteries that form the circle of Willis",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "ACA, anterior communicating artery, ICA, PCA, posterior communicating"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "List the cortical areas supplied by anterior cerebral artery.",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Medial surface: All except occipital lobe\nLateral surface: One inch strip superiorly\nInferior surface: Medial part of orbital surface"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "List the cortical areas supplied by middle cerebral artery.",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Lateral surface: large area except occipital lobe+ a strip along superior border+ a strip along inferior border\nInferior surface: lateral part of orbital surface+ temporal pole"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "List the cortical areas supplied by posterior cerebral artery.",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Medial surface: occipital lobe\nLateral surface: occipital lobe+ strip along lower border of hemisphere\nInferior surface: tentorial part except temporal pole"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What does the mesenchyme around Meckle’s cartilage give?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Mandible, Spehnomandibular ligament, Spine of sphenoid, Anterior ligament of malleus"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What do chromaffin cells give?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Adrenal medulla, carotid body, and paraganglia"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Compare between 2nd and 3rd arch. (according to aortic arch)",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "2nd arch: disappear leaving stapedial artery\n3rd arch: CCA, proximal part of ICA, and ECA arises as a sprout"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the derivative of 3rd pharyngeal pouch?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Inferior parathyroid gland and epithelium of thymus"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Mention the 3 derivatives of intermaxillary segment.",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Philtrum of upper lip\nPart of upper jaw that carries the 4 incisor teeth\n1ry palate"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Mention the 5 secondary brain vesicles and their derivatives in adult brain.",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Telencephalon: Cerebral hemisphere\nDiencephalon: Thalamus, hypothalamus, epithalamus, subthalamus\nMesencephalon: Midbrain\nMetencephalon: Pons\nMyelencephalon: Medulla"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Mention the derivatives of neural crest.",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Neuroblast, Spongioblast, Melanocyte, Chromaffin cells, Odontoblasts and cartilaginous elements of the branchial arches"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Mention functions of the nervous system",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Maintains homeostasis\nControl of muscles & glands\nControl of mental function\nReceive sensory impulses\nProcessing & integrating information"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Define synapse",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "It is the site of contact between 2 neurons with separate protoplasm (functional junction)"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Enumerate functions of synapses",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Transmission of impulses\nConvergence of impulse: Collection of Impulses — intensity of impulses (intensification)\nDivergence of impulses: spreading of impulses\nThe site of action of drugs"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Compare between chemical synapse & electric synapse regarding Def. & Characteristics",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Chemical synapse\nDef. Occur by release of neurotransmitter from presynaptic terminal (terminal button) traverse the synaptic cleft & affect postsynaptic membrane\nCharacteristics: Less common, Unidirectional, Less fast, Drug sensitive, Excitatory or inhibitory\nElectric synapse\nDef. Occur by passage of ions & small molecules through gap junction between 2 adjacent cells\nCharacteristics: More common, Bidirectional, Faster, No drug sensitivity, Excitatory only"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Illustrate the mechanism of chemical neurotransmission in synapses",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Release of neurotransmitter from presynaptic knob\nNT crosses the cleft.\nCombines with its specific receptor on postsynaptic membrane.\nChanges the RMP of postsynaptic membrane by opening or closing channels.\nRemoval of NT."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "essay",
+      "text": "List the ways of removal of NT",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Active Reuptake by the presynaptic membrane\nInactivation by enzyme on postsynaptic membrane.\nPassive diffusion away."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Define:\nNeurohormone\nNeuromodulator\nNeurotransmitter",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Neurohormone: A chemical substance secreted by a neuron into blood\nNeuromodulator: A slowly inactivated (long acting) chemical substance secreted\nNeurotransmitter: A chemical substance secreted by neurons to stimulate or inhibit other neurons"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Mention the sites of release of Acetyl choline",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Brain (cortex, thalamus)\nNM junction\nAll preganglionic neurons\nAll postganglionic parasympathetic neurons\nSome postganglionic sympathetic as sweat glands and blood vessels of skeletal muscles."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Mention effects of Norepinephrine",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Stimulatory on α1 receptors Inhibitory on β2 receptors"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the effect of GABA?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Inhibitory, by increasing the influx of Cl- causing hyperpolarization"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Regarding adaptation, Touch receptors are rapidly adapting receptors while pain receptors are slowly adapting receptors",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": ""
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Enumerate properties of receptors",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": ""
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Illustrate mechanism of receptors adaptation",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": ""
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The resting membrane potential is closest to the equilibrium potential of which ion?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Na+",
+        "K+",
+        "Ca2+",
+        "Cl-"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Explain paradoxical cold sensation",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": ""
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Compare between crude touch sensation & thermal sensation regarding ( Def. receptors & afferent neuron type)",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": ""
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Mention the mechanism of stimulation of pain receptors.",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": ""
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Compare between reflex movements & voluntary movements regarding requirements",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": ""
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Mention the clinical importance of stretch reflex",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": ""
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Compare between nuclear bag fibers & nuclear chain fibers",
+      "explanation": "",
+      "keyConcept": "N/A",
+      "modelAnswer": ""
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is coma?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Unconsciousness from which the person cannot be aroused"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is sleep?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Physiological and spontaneous unconsciousness from which a person can be aroused by stimuli"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What are the functions of sleep?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Restoration of physiological & biochemical processes (Cognition, metabolic, thermal, caloric & immune processes) Helps learning & memory Neural plasticity (maturation)"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What are the stages and EEG characteristics of very light sleep?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Theta waves"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What are the stages and EEG",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": ""
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "What is the role of the piriform cortex in smell?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Perception and discrimination of odor",
+        "Emotional response to odors",
+        "Olfactory memories",
+        "Modulation of taste"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Cerebrum & Cortical Functions",
+      "chapterId": 2,
+      "subject": "Physiology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "What is the role of the amygdala in smell?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Perception and discrimination of odor",
+        "Emotional response to odors",
+        "Olfactory memories",
+        "Modulation of taste"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "What is the role of the enterorhinal cortex in smell?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Perception and discrimination of odor",
+        "Emotional response to odors",
+        "Olfactory memories",
+        "Modulation of taste"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Physiology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "What is responsible for the conscious discrimination of odors?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Frontal and orbitofrontal neocortex",
+        "Amygdala & lateral hypothalamus",
+        "Ventromedial nucleus of hypothalamus",
+        "Lateral & VM hypothalamus, septum, Amygdala, thalamus & basal ganglia"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "What is the role of normal limbic system in maternal & sexual behavior?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Normal maternal behavior",
+        "Emotional expression during sexual act",
+        "Modulation of maternal behavior",
+        "Modulation of sexual behavior"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "What factors can modify sexual behavior?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Prefrontal cortex",
+        "Social factors",
+        "Psychic factors",
+        "All of the above"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Thalamus & Hypothalamus",
+      "chapterId": 3,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "What is the main function of the hypothalamus?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Control of internal homeostasis",
+        "Control of endocrine functions",
+        "Control of autonomic responses",
+        "All of the above"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which parts of the hypothalamus control autonomic responses?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Control of internal homeostasis",
+        "Control of endocrine functions",
+        "Control of autonomic responses",
+        "Regulation of food intake and appetite"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Thalamus & Hypothalamus",
+      "chapterId": 3,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "How does the hypothalamus control endocrine functions Through nervous control?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Control of posterior pituitary gland leads to secret oxytocin & vasopressin",
+        "Control of Adrenal medulla leads to secret catecholamines",
+        "Modulation of Anterior pituitary gland",
+        "Modulation of adrenal cortex"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Thalamus & Hypothalamus",
+      "chapterId": 3,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "How does the hypothalamus control endocrine functions Through hormonal control?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Control of Anterior pituitary gland, which controls most body endocrine glands",
+        "Control of Posterior pituitary gland",
+        "Modulation of thyroid gland",
+        "Modulation of adrenal glands"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Thalamus & Hypothalamus",
+      "chapterId": 3,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which part of the hypothalamus is the feeding center?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Lateral hypothalamus",
+        "VM hypothalamus",
+        "Posterior hypothalamus",
+        "Anterior hypothalamus"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Thalamus & Hypothalamus",
+      "chapterId": 3,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which part of the hypothalamus is the satiety center?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Lateral hypothalamus",
+        "VM hypothalamus",
+        "Posterior hypothalamus",
+        "Anterior hypothalamus"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Mention the cutaneous unencapsulated receptors?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Free nerve endings",
+        "Peritrichial nerve endings",
+        "Merkel’s tactile disc",
+        "All of the above"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Mention the cutaneous encapsulated receptors?",
+      "explanation": "",
+      "keyConcept": "N/A",
+      "options": [
+        "Meissner’s corpuscles",
+        "Pacinian corpuscles",
+        "Ruffini corpuscles",
+        "All of the above"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What tumor is characterized by excessive production of catecholamines? And what is the treatment of it?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Pheochromocytoma\nα-methyl tyrosine"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the rate limiting enzyme in catecholamine synthesis?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Tyrosine hydroxylase"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the fate of catecholamines?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Active uptake by sympathetic nerve endings\nEnzymatic hydrolysis"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What enzymes cause the oxidative deamination and inactivation of catecholamines?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Monoamine oxidase (MAO)"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the primary end product of dopamine inactivation?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Homovanillic acid (HVA)"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the primary end product of epinephrine and norepinephrine enzymatic inactivation?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Vanillylmandelic acid (VMA)"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the neurodegenerative movement disorder characterized by insufficient dopamine production?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Parkinson Disease"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the immediate metabolic precursor of dopamine that can cross the blood-brain barrier?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "L-DOPA"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the inhibitor of dopa-decarboxylase used in the treatment of Parkinson Disease?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Carbidopa"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What enzyme is inhibited by a-methyl tyrosine in the treatment of pheochromocytoma?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Tyrosine hydroxylase"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the neurotransmitter produced in the CNS, gastrointestinal tract & platelets?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Serotonin (5-HT)"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the end product of serotonin degradation?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "5-hydroxyindolacetic acid (5-HIAA)"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What tumor is characterized by increased production of serotonin and decreased production of nicotinic acid?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Carcinoid tumor (Argentaffinoma)"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the hormone involved in regulating sleep patterns and follows a circadian rhythm? And how it is formed?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Melatonin\nFrom serotonin in pineal body by acetylation and methylation"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What happens in Vitamin B6 deficiency?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Reduction in GABA levels with signs of hyperactivity and convulsions"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What factors can lead to melatonin deficiency?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Cigarettes\nCaffeine\nFrequent stress\nAntidepressants\nß-blocker"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "How is histamine formed?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Histamine is formed by decarboxylation of histidine in a reaction requiring PLP"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the role of histamine?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Histamine mediates a wide range of cellular responses, including allergic and inflammatory reactions, gastric acid secretion\nAct as a Neurotransmitter in CNS\nPowerful vasodilator"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the function of histamine in the brain?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Histamine acts as a Neurotransmitter in parts of the brain by mediating arousal."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the neurotransmitters that act as vasodilator?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Histamine\nNitric oxide"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "How is nitric oxide synthesized?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Nitric oxide is synthesized from L-arginine in a reaction catalyzed by nitric oxide synthase enzyme"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What are the functions of nitric oxide?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Vasodilatation in cerebral, coronary & muscle arteries\nRelaxation of GIT & urinary tract\nStimulate release of hormones from hypothalamus\nProduced from macrophage, monocytes & neutrophils to kill microorganisms\nPharmacological functions: Nitroglycerin - treat angina; Inhalation of NO - treat pulmonary hypertension & pulmonary edema without decrease systemic blood pressure"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Which neurotransmitter is derived from tyrosine?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Catecholamines (Dopamine, Norepinephrine, Epinephrine)"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Where are dopamine and norepinephrine synthesized?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "In the brain and function as neurotransmitters"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "fillblank",
+      "text": "Epinephrine is synthesized in_________ and the primary end product in the adrenal medulla of newborns is _________",
+      "explanation": "",
+      "keyConcept": "",
+      "blanks": [
+        "In the adrenal medulla",
+        "Norepinephrine",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A"
+      ]
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What happens to epinephrine with advancing age?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Dramatically raised, depending upon cortisol levels"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is histamine synthesized from? And What is the enzyme required for histamine synthesis?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Histidine\nHistidine decarboxylase"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "fillblank",
+      "text": "The coenzyme required for histamine synthesis is_________ and cells secrete it is_________",
+      "explanation": "",
+      "keyConcept": "",
+      "blanks": [
+        "PLP",
+        "Mast cells",
+        "N/A",
+        "N/A",
+        "N/A",
+        "N/A"
+      ]
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What are the major functions of histamine? (Name two)",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Mediating allergic and inflammatory reactions.\ngastric acid secretion.\nas a neurotransmitter in parts of the brain."
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Is histamine a vasodilator? If true, what else? And if false, why?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "True\nNitric oxide"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "How is nitric oxide synthesized? And What enzyme catalyzes the synthesis of nitric oxide?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "From L-arginine\nNitric oxide synthase"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is glycine synthesized from? And what is the enzyme catalyzes its formation?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Serine\nSerine hydroxy-methyltransferase"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "How is glycine removed from the synapse?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Reuptake through high-affinity transporter"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What are the biogenic amines neurotransmitters?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Acetylcholine\nMonoamines"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What are the effects of acetylcholine?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Mostly excitatory effects"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is Myasthenia gravis?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "A chronic autoimmune neuromuscular disease causing weakness in the skeletal muscles"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the primary end product of catecholamine synthesis in the adrenal medulla?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Norepinephrine (NE)"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What happens when there are elevated levels of excitatory amino acids?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Neurotoxicity resulting in neuronal death or injury"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the principal inhibitory neurotransmitter?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "GABA (Gamma Aminobutyric Acid)"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is GABA derived from?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Glutamic acid"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What are the classification of neurotransmitters based on functions?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Excitatory\nInhibitory"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What are examples of excitatory amino acid neurotransmitters?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Glutamate\nAspartate"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the principal excitatory neurotransmitter?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Glutamate"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Where are neurotransmitters stored?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "In secretory vesicles (synaptic vesicles) before release into the synaptic cleft"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What are the substrates for glutamate transaminase?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "α- ketoglutarate\nL-aspartate"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "How is ammonia utilized in the conversion of glutamate to glutamine?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Ammonia is used by glutamine synthetase to convert glutamate to glutamine"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Which amino acids can produce both glucose and ketone bodies?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Tyrosine\nphenylalanine\ntryptophan\nthreonine\nisoleucine"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the main pathway of deamination for amino acids?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "L-glutamate dehydrogenase"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Which enzyme is responsible for the oxidative deamination of D-AAs and glycine?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "D-AA oxidase flavoprotein"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the function of D-AA oxidase flavoprotein?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Conversion of D-amino acids to the α-keto acid will remove the asymmetry of the α-carbon atom."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the product of the transdeamination of glutamine?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Glutamate."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the role of glutamate dehydrogenase?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Conversion of glutamate to α-ketoglutarate."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the major pathway of oxidative deamination?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "L-glutamate dehydrogenase"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Which organs mainly carry out oxidative deamination?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Liver, kidney\nheart, brain, and muscle"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What coenzyme is required for L-glutamate dehydrogenase?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "NAD\nNADP"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "truefalse",
+      "text": "NAD+ is used in oxidative deamination and NADP+ in reductive amination.",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What stimulates L-glutamate dehydrogenase?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "ADP\nGDP"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What inhibits L-glutamate dehydrogenase?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "ATP\nGTP\nNADH"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the coenzyme of the enzyme D-AA oxidase?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "FAD"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "In which organs is D-AA oxidase found?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Liver and kidney"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the enzyme responsible for nonoxidative deamination of glutamine?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Deamidases"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What substrates does Ketoglutarate-D-AA oxidase flavoprotein act on?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "D-AAs\nglycine."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What happens to glutamine in the liver?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Cleaved by glutaminase enzyme to produce ammonia"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What amino acids can’t go through transamination?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Lysine\nThreonine\nProline\nHydroxyproline"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What enzyme converts pyruvate to alanine in muscles?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "ALT enzyme"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the function of L-AA oxidase?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Oxidative deamination of L-amino acids."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the process of non-oxidative deamination for glutamine and asparagine?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Deamidases release NH3 which enters urea cycle in the liver, or passes in urine in the kidney."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Where does NH3 released by deamidases in the liver go?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Urea cycle"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Where does NH3 released by deamidases in the kidney go?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Urine"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What are the sources of ammonia NH3?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Catabolism of amino acids\ncatabolism of purine and pyrimidine\nglutaminase enzyme\nCatabolism of amines\nintestinal bacteria"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the synthetic fates of ammonia?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Synthesis of non essential amino acids\nSynthesis of glutamine"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the major mechanism of ammonia excretion in the liver?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Synthesis of urea"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "How is hepatic encephalopathy diagnosed?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Exclusion of other causes of encephalopathy\nidentification of the precipitating cause\nrapid response to empiric treatment"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "How does lactulose help in the reduction of ammonia production?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Inhibits intestinal ammonia production by reducing colonic bacterial load and acidifying the gut lumen"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the function of neomycin in the treatment of hepatic encephalopathy?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Kills intestinal bacteria"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Name three substances used to increase ammonia clearance.",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Sodium benzoate\nsodium phenylbutyrate\nsodium phenylacetate"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "How does sodium benzoate contribute to ammonia clearance?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Interacts with glycine to form Hippurate, which is then excreted in the urine"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the role of L-ornithine-L-aspartate in hepatic encephalopathy treatment?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Stimulates the urea cycle, leading to the loss of ammonia"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the effect of hyperammonia on brain function?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Decrease in Krebs’ cycle and ATP production\ndecrease in GABA (neurotransmitter)\ninterference with electric activity in the brain\ncerebral edema, and increased serotonin production"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What are the causes of hyperammonemia?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Acquired hyperammonemia due to liver diseases\ncongenital hyperammonemia due to deficiencies in urea cycle enzymes, membrane-associated ornithine transporter, or N-acetyl glutamate synthase"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the first step of the urea cycle?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Carbamoyl phosphate synthesis"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the enzyme responsible for carbamoyl phosphate synthesis?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Carbamoyl phosphate synthetase I"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the enzyme catalyzing the second step of the urea cycle?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Ornithine transcarbamoylase"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the second step of the urea cycle? And it’s enzyme?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Citrulline synthesis"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the third step of the urea cycle? And it’s enzyme?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Argininosuccinate synthesis\nArgininosuccinate synthetase"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the fourth step of the urea cycle? And it’s enzyme?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Cleavage of argininosuccinate\nArgininosuccinate lyase"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the final step of the urea cycle? And it’s enzyme?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Cleavage of arginine\nArginase"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the rate-limiting enzyme of the urea cycle?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Carbamoyl Phosphate Synthetase I (CPS I)"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Synthesis of urea occurs in the liver and excretion by the kidney",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": ""
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Which enzyme is present in the cytosol and used in pyrimidine synthesis? And what is its other mitochondrial enzyme used in urea cycle?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "CPS II\nCPS I"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "How many ATP molecules and high energy bonds are utilized in the urea cycle?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "3 ATP\n4 High energy bonds"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the main fate of urea?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Excreted in urine"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What activates carbamoyl phosphate synthetase I (CPS I)?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "N-acetylglutamate"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the relationship between the urea cycle and the citric acid cycle?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": ""
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "What is phenylketonuria?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "A condition caused by a deficiency of phenylalanine hydroxylase",
+        "A condition caused by a deficiency of dihydrobiopterin reductase",
+        "A condition caused by a deficiency of dihydrobiopterin biosynthesis",
+        "A condition caused by a deficiency of homocystinuria"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "What are the clinical pictures of phenylketonuria?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Mental retardation",
+        "Depigmentation",
+        "Urine with a bad mousy odor",
+        "All of the above"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "How is phenylketonuria treated?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "A diet low in phenylalanine, supplementation of tyrosine",
+        "Giving DOPA and serotonin if there is dihydrobiopterin deficiency",
+        "Both A and B",
+        "None of the above"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "What is maple syrup urine disease?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "A condition resulting from a deficiency of the dehydrogenase complex involved in branched-chain amino acid catabolism",
+        "A condition resulting from a deficiency of the dehydrogenase complex involved in phenylalanine catabolism",
+        "A condition resulting from a deficiency of the dehydrogenase complex involved in tyrosine catabolism",
+        "A condition resulting from a deficiency of the dehydrogenase complex involved in tryptophan catabolism"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "What are the effects of maple syrup urine disease?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Mental retardation and may lead to early death",
+        "The urine has a sweet smell-like maple syrup or burned sugar",
+        "Both A and B",
+        "None of the above"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "What is the treatment for maple syrup urine disease?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "A diet low in branched-chain amino acids",
+        "A diet low in phenylalanine",
+        "A diet low in tyrosine",
+        "A diet low in tryptophan"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "All the following are involved in the mechanism of action of morphine Except",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Most effects are mediated by activation of kappa receptors",
+        "Inhibition of calcium influx resulting in inhibition of transmitter release",
+        "Increase in K outflux resulting in hyperpolarization of neuronal membrane",
+        "Reduction of emotional response to pain"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Indications of morphine do not include",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Analgesic in cancer pain",
+        "Acute pulmonary edema in acute left ventricular failure & myocardial infarction",
+        "In anesthesia",
+        "Severe pain following head injury"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Most serious adverse effect/s of morphine",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Dependence",
+        "Respiratory depression",
+        "Hypertension",
+        "A and B"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Constipation associated with the use of morphine may be relieved by",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Docusate",
+        "Loperamide",
+        "Codeine",
+        "Diphenoxylate"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following is not common between pethidine & tramadol",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Analgesics",
+        "Action completely reversed by naloxone",
+        "Less respiratory depression than morphine",
+        "Increase risk of convulsions with high doses"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Neuropathic pain may be managed by",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Tricyclic antidepressants",
+        "Carbamazepine",
+        "Gabapentin",
+        "Tramadol",
+        "All of the above"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following nerves supplying the scalp is derived from dorsal rami of spinal nerves?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Zypomaticotemporal",
+        "Great auricular",
+        "Greater occipital",
+        "Lesser occipital",
+        "None of the above"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The posterior triangle of the neck",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Is bordered by sternocleidomastoid, mandible and trapezius",
+        "Has the accessory nerve beneath fascia of its floor",
+        "Is roofed by prevertebral layer of fascia",
+        "Contains the internal jugular vein",
+        "Contains trunks of the brachial plexus"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The anterior triangle of the neck, include the following",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "The muscular triangle",
+        "The carotid triangle",
+        "The digastric triangle",
+        "The submental triangle",
+        "The occipital triangle"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Regarding tentorium cerebelli",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "It roofs over middle cranial fossa",
+        "Its free border is attached to anterior clinoid process",
+        "Its attached border is attached to post clinoid process",
+        "It includes transverse venous sinus in its attached border",
+        "Oculomotor and trochlear nerves pierce dura at the point of crossing of its free & attached borders"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The falx cerebri",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Is attached anteriorly to anterior clinoid process",
+        "Contains superior sagittal sinus",
+        "Separates pituitary gland from cerebrum",
+        "Separates cerebrum from cerebellum",
+        "Contains superior petrosal sinus"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The spinal cord is anchored to the dura mater by the",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Coccygeal ligament",
+        "Ligamentum flavum",
+        "Anterior longitudinal ligament",
+        "Denticulate ligaments",
+        "Cauda equina"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The ventral grey column of the spinal cord contains the following groups of nerve cells Except",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Dorsomedial group",
+        "Ventrolateral group",
+        "Intermediolateral group",
+        "Central group",
+        "Retrodorsolateral group"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Hind brain (Rhombencephalon) includes the following Except",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Medulla oblongata",
+        "Cerebellum",
+        "Pons",
+        "Crus cerebri",
+        "Fourth ventricle"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Brain stem includes the following Except",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Mid brain",
+        "Pons",
+        "Medulla oblongata",
+        "Cerebellum",
+        "Cerebral aqueduct"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Cranial Nerves",
+      "chapterId": 7,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The cranial part of the accessory nerve arises from",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Nucleus ambiguus",
+        "Spinal nucleus of V",
+        "Main sensory nucleus of V",
+        "Nucleus solitarius",
+        "Dorsal vagal nucleus"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Cranial Nerves",
+      "chapterId": 7,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The right spinal lemniscus carries sensations of",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Pain and temperature from left side of the body",
+        "Conscious proprioception from left side of the body",
+        "Muscle tone from right side of body",
+        "All of the above",
+        "None of the above"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The gracile and cuneate tracts of the spinal cord are supplied by",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Anterior spinal artery",
+        "Posterior spinal artery",
+        "Radicular arteries",
+        "All of the above",
+        "Vertebral artery"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "To do lumbar puncture in an adult a needle is introduced",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Below or above tip of 4th lumbar spine",
+        "Below tip of 1st lumbar spine",
+        "Below tip of 2nd lumbar spine",
+        "Below tip of thoracic 12 spine",
+        "None of the above"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Complete section of spinal cord above C5 results in",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Quadriplegia",
+        "Death",
+        "Paraplegia",
+        "Hemiplegia",
+        "None of the above"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Hemisection of spinal cord gives the following symptoms on the same side below the level of lesion",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Proprioception loss",
+        "Upper motor neuron lesion",
+        "Loss of pain and temperature",
+        "All of the above",
+        "A & B only"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following occur in Brown Sequard Syndrome Except",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Ipsilateral UMN lesion below level of lesion",
+        "Contralateral loss of exteroceptive sensations below level of lesion",
+        "Ipsilateral loss of proprioceptive sensations below level of lesion",
+        "Contralateral L.M.N. lesion at same level of lesion",
+        "Ipsilateral loss of pain and temperature at same level of lesion"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Spinal Cord Tracts",
+      "chapterId": 6,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Upper motor neuron lesion is characterized by",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Hypotonia",
+        "Marked wasting of muscles",
+        "Restricted extent of paralysis",
+        "Absent cremasteric and abdominal reflexes",
+        "Plantar flexion of big toe on scratching skin of sole"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Spinal Cord Tracts",
+      "chapterId": 6,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Lower motor neuron lesion is characterized by",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Hypertonia",
+        "Absent abdominal reflexes",
+        "Increased tendon reflexes",
+        "Marked muscle wasting",
+        "Dorsiflexion of big toe (Babinski’s sign)"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Syringomyelia first affects",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Vibration sense",
+        "Pain and temperature on both sides of the body",
+        "Pain and temperature on one side of the body",
+        "Touch sensation",
+        "Motor activity"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Hind brain (Rhombencephalon) includes the following Except",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Medulla oblongata",
+        "Cerebellum",
+        "Pons",
+        "Crus cerebri",
+        "Fourth ventricle"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Brain stem includes the following Except",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Mid brain",
+        "Pons",
+        "Medulla oblongata",
+        "Cerebellum",
+        "Cerebral aqueduct"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Cranial Nerves",
+      "chapterId": 7,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The cranial part of the accessory nerve arises from",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Nucleus ambiguus",
+        "Spinal nucleus of V",
+        "Main sensory nucleus of V",
+        "Nucleus solitarius",
+        "Dorsal vagal nucleus"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Cranial Nerves",
+      "chapterId": 7,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The right spinal lemniscus carries sensations of",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Pain and temperature from left side of the body",
+        "Conscious proprioception from left side of the body",
+        "Muscle tone from right side of body",
+        "All of the above",
+        "None of the above"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The gracile and cuneate tracts of the spinal cord are supplied by",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Anterior spinal artery",
+        "Posterior spinal artery",
+        "Radicular arteries",
+        "All of the above",
+        "Vertebral artery"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "To do lumbar puncture in an adult a needle is introduced",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Below or above tip of 4th lumbar spine",
+        "Below tip of 1st lumbar spine",
+        "Below tip of 2nd lumbar spine",
+        "Below tip of thoracic 12 spine",
+        "None of the above"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Complete section of spinal cord above C5 results in",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Quadriplegia",
+        "Death",
+        "Paraplegia",
+        "Hemiplegia",
+        "None of the above"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Hemisection of spinal cord gives the following symptoms on the same side below the level of lesion",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Proprioception loss",
+        "Upper motor neuron lesion",
+        "Loss of pain and temperature",
+        "All of the above",
+        "A & B only"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following occur in Brown Sequard Syndrome Except",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Ipsilateral UMN lesion below level of lesion",
+        "Contralateral loss of exteroceptive sensations below level of lesion",
+        "Ipsilateral loss of proprioceptive sensations below level of lesion",
+        "Contralateral L.M.N. lesion at same level of lesion",
+        "Ipsilateral loss of pain and temperature at same level of lesion"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Spinal Cord Tracts",
+      "chapterId": 6,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Upper motor neuron lesion is characterized by",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Hypotonia",
+        "Marked wasting of muscles",
+        "Restricted extent of paralysis",
+        "Absent cremasteric and abdominal reflexes",
+        "Plantar flexion of big toe on scratching skin of sole"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Spinal Cord Tracts",
+      "chapterId": 6,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Lower motor neuron lesion is characterized by",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Hypertonia",
+        "Absent abdominal reflexes",
+        "Increased tendon reflexes",
+        "Marked muscle wasting",
+        "Dorsiflexion of big toe (Babinski’s sign)"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Syringomyelia first affects",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Vibration sense",
+        "Pain and temperature on both sides of the body",
+        "Pain and temperature on one side of the body",
+        "Touch sensation",
+        "Motor activity"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Hind brain (Rhombencephalon) includes the following Except",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Medulla oblongata",
+        "Cerebellum",
+        "Pons",
+        "Crus cerebri",
+        "Fourth ventricle"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Brain stem includes the following Except",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Mid brain",
+        "Pons",
+        "Medulla oblongata",
+        "Cerebellum",
+        "Cerebral aqueduct"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Cranial Nerves",
+      "chapterId": 7,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The cranial part of the accessory nerve arises from",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Nucleus ambiguus",
+        "Spinal nucleus of V",
+        "Main sensory nucleus of V",
+        "Nucleus solitarius",
+        "Dorsal vagal nucleus"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Cranial Nerves",
+      "chapterId": 7,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The right spinal lemniscus carries sensations of",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Pain and temperature from left side of the body",
+        "Conscious proprioception from left side of the body",
+        "Muscle tone from right side of body",
+        "All of the above",
+        "None of the above"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The gracile and cuneate tracts of the spinal cord are supplied by",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Anterior spinal artery",
+        "Posterior spinal artery",
+        "Radicular arteries",
+        "All of the above",
+        "Vertebral artery"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "To do lumbar puncture in an adult a needle is introduced",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Below or above tip of 4th lumbar spine",
+        "Below tip of 1st lumbar spine",
+        "Below tip of 2nd lumbar spine",
+        "Below tip of thoracic 12 spine",
+        "None of the above"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Complete section of spinal cord above C5 results in",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Quadriplegia",
+        "Death",
+        "Paraplegia",
+        "Hemiplegia",
+        "None of the above"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Hemisection of spinal cord gives the following symptoms on the same side below the level of lesion",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Proprioception loss",
+        "Upper motor neuron lesion",
+        "Loss of pain and temperature",
+        "All of the above",
+        "A & B only"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following occur in Brown Sequard Syndrome Except",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Ipsilateral UMN lesion below level of lesion",
+        "Contralateral loss of exteroceptive sensations below level of lesion",
+        "Ipsilateral loss of proprioceptive sensations below level of lesion",
+        "Contralateral L.M.N. lesion at same level of lesion",
+        "Ipsilateral loss of pain and temperature at same level of lesion"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Spinal Cord Tracts",
+      "chapterId": 6,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Upper motor neuron lesion is characterized by",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Hypotonia",
+        "Marked wasting of muscles",
+        "Restricted extent of paralysis",
+        "Absent cremasteric and abdominal reflexes",
+        "Plantar flexion of big toe on scratching skin of sole"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Spinal Cord Tracts",
+      "chapterId": 6,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Lower motor neuron lesion is characterized by",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Hypertonia",
+        "Absent abdominal reflexes",
+        "Increased tendon reflexes",
+        "Marked muscle wasting",
+        "Dorsiflexion of big toe (Babinski’s sign)"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Syringomyelia first affects",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Vibration sense",
+        "Pain and temperature on both sides of the body",
+        "Pain and temperature on one side of the body",
+        "Touch sensation",
+        "Motor activity"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Hind brain (Rhombencephalon) includes the following Except",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Medulla oblongata",
+        "Cerebellum",
+        "Pons",
+        "Crus cerebri",
+        "Fourth ventricle"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Brain stem includes the following Except",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Mid brain",
+        "Pons",
+        "Medulla oblongata",
+        "Cerebellum",
+        "Cerebral aqueduct"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Cranial Nerves",
+      "chapterId": 7,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The cranial part of the accessory nerve arises from",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Nucleus ambiguus",
+        "Spinal nucleus of V",
+        "Main sensory nucleus of V",
+        "Nucleus solitarius",
+        "Dorsal vagal nucleus"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Cranial Nerves",
+      "chapterId": 7,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The right spinal lemniscus carries sensations of",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Pain and temperature from left side of the body",
+        "Conscious proprioception from left side of the body",
+        "Muscle tone from right side of body",
+        "All of the above",
+        "None of the above"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The gracile and cuneate tracts of the spinal cord are supplied by",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Anterior spinal artery",
+        "Posterior spinal artery",
+        "Radicular arteries",
+        "All of the above",
+        "Vertebral artery"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "To do lumbar puncture in an adult a needle is introduced",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Below or above tip of 4th lumbar spine",
+        "Below tip of 1st lumbar spine",
+        "Below tip of 2nd lumbar spine",
+        "Below tip of thoracic 12 spine",
+        "None of the above"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Complete section of spinal cord above C5 results in",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Quadriplegia",
+        "Death",
+        "Paraplegia",
+        "Hemiplegia",
+        "None of the above"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Hemisection of spinal cord gives the following symptoms on the same side below the level of lesion",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Proprioception loss",
+        "Upper motor neuron lesion",
+        "Loss of pain and temperature",
+        "All of the above",
+        "A & B only"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following occur in Brown Sequard Syndrome Except",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Ipsilateral UMN lesion below level of lesion",
+        "Contralateral loss of exteroceptive sensations below level of lesion",
+        "Ipsilateral loss of proprioceptive sensations below level of lesion",
+        "Contralateral L.M.N. lesion at same level of lesion",
+        "Ipsilateral loss of pain and temperature at same level of lesion"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Spinal Cord Tracts",
+      "chapterId": 6,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Upper motor neuron lesion is characterized by",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Hypotonia",
+        "Marked wasting of muscles",
+        "Restricted extent of paralysis",
+        "Absent cremasteric and abdominal reflexes",
+        "Plantar flexion of big toe on scratching skin of sole"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Spinal Cord Tracts",
+      "chapterId": 6,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Lower motor neuron lesion is characterized by",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Hypertonia",
+        "Absent abdominal reflexes",
+        "Increased tendon reflexes",
+        "Marked muscle wasting",
+        "Dorsiflexion of big toe (Babinski’s sign)"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Syringomyelia first affects",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Vibration sense",
+        "Pain and temperature on both sides of the body",
+        "Pain and temperature on one side of the body",
+        "Touch sensation",
+        "Motor activity"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Hind brain (Rhombencephalon) includes the following Except",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Medulla oblongata",
+        "Cerebellum",
+        "Pons",
+        "Crus cerebri",
+        "Fourth ventricle"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Brain stem includes the following Except",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Mid brain",
+        "Pons",
+        "Medulla oblongata",
+        "Cerebellum",
+        "Cerebral aqueduct"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Cranial Nerves",
+      "chapterId": 7,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The cranial part of the accessory nerve arises from",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Nucleus ambiguus",
+        "Spinal nucleus of V",
+        "Main sensory nucleus of V",
+        "Nucleus solitarius",
+        "Dorsal vagal nucleus"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Cranial Nerves",
+      "chapterId": 7,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The right spinal lemniscus carries sensations of",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Pain and temperature from left side of the body",
+        "Conscious proprioception from left side of the body",
+        "Muscle tone from right side of body",
+        "All of the above",
+        "None of the above"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The gracile and cuneate tracts of the spinal cord are supplied by",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Anterior spinal artery",
+        "Posterior spinal artery",
+        "Radicular arteries",
+        "All of the above",
+        "Vertebral artery"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "To do lumbar puncture in an adult a needle is introduced",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Below or above tip of 4th lumbar spine",
+        "Below tip of 1st lumbar spine",
+        "Below tip of 2nd lumbar spine",
+        "Below tip of thoracic 12 spine",
+        "None of the above"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Complete section of spinal cord above C5 results in",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Quadriplegia",
+        "Death",
+        "Paraplegia",
+        "Hemiplegia",
+        "None of the above"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Hemisection of spinal cord gives the following symptoms on the same side below the level of lesion",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Proprioception loss",
+        "Upper motor neuron lesion",
+        "Loss of pain and temperature",
+        "All of the above",
+        "A & B only"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following occur in Brown Sequard Syndrome Except",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Ipsilateral UMN lesion below level of lesion",
+        "Contralateral loss of exteroceptive sensations below level of lesion",
+        "Ipsilateral loss of proprioceptive sensations below level of lesion",
+        "Contralateral L.M.N. lesion at same level of lesion",
+        "Ipsilateral loss of pain and temperature at same level of lesion"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Spinal Cord Tracts",
+      "chapterId": 6,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Upper motor neuron lesion is characterized by",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Hypotonia",
+        "Marked wasting of muscles",
+        "Restricted extent of paralysis",
+        "Absent cremasteric and abdominal reflexes",
+        "Plantar flexion of big toe on scratching skin of sole"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Spinal Cord Tracts",
+      "chapterId": 6,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Lower motor neuron lesion is characterized by",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Hypertonia",
+        "Absent abdominal reflexes",
+        "Increased tendon reflexes",
+        "Marked muscle wasting",
+        "Dorsiflexion of big toe (Babinski’s sign)"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Syringomyelia first affects",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Vibration sense",
+        "Pain and temperature on both sides of the body",
+        "Pain and temperature on one side of the body",
+        "Touch sensation",
+        "Motor activity"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Hind brain (Rhombencephalon) includes the following Except",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Medulla oblongata",
+        "Cerebellum",
+        "Pons",
+        "Crus cerebri",
+        "Fourth ventricle"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Brain stem includes the following Except",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Mid brain",
+        "Pons",
+        "Medulla oblongata",
+        "Cerebellum",
+        "Cerebral aqueduct"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Cranial Nerves",
+      "chapterId": 7,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The cranial part of the accessory nerve arises from",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Nucleus ambiguus",
+        "Spinal nucleus of V",
+        "Main sensory nucleus of V",
+        "Nucleus solitarius",
+        "Dorsal vagal nucleus"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Cranial Nerves",
+      "chapterId": 7,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The right spinal lemniscus carries sensations of",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Pain and temperature from left side of the body",
+        "Conscious proprioception from left side of the body",
+        "Muscle tone from right side of body",
+        "All of the above",
+        "None of the above"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The gracile and cuneate tracts of the spinal cord are supplied by",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Anterior spinal artery",
+        "Posterior spinal artery",
+        "Radicular arteries",
+        "All of the above",
+        "Vertebral artery"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "To do lumbar puncture in an adult a needle is introduced",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Below or above tip of 4th lumbar spine",
+        "Below tip of 1st lumbar spine",
+        "Below tip of 2nd lumbar spine",
+        "Below tip of thoracic 12 spine",
+        "None of the above"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Complete section of spinal cord above C5 results in",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Quadriplegia",
+        "Death",
+        "Paraplegia",
+        "Hemiplegia",
+        "None of the above"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Hemisection of spinal cord gives the following symptoms on the same side below the level of lesion",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Proprioception loss",
+        "Upper motor neuron lesion",
+        "Loss of pain and temperature",
+        "All of the above",
+        "A & B only"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following occur in Brown Sequard Syndrome Except",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Ipsilateral UMN lesion below level of lesion",
+        "Contralateral loss of exteroceptive sensations below level of lesion",
+        "Ipsilateral loss of proprioceptive sensations below level of lesion",
+        "Contralateral L.M.N. lesion at same level of lesion",
+        "Ipsilateral loss of pain and temperature at same level of lesion"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Spinal Cord Tracts",
+      "chapterId": 6,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Upper motor neuron lesion is characterized by",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Hypotonia",
+        "Marked wasting of muscles",
+        "Restricted extent of paralysis",
+        "Absent cremasteric and abdominal reflexes",
+        "Plantar flexion of big toe on scratching skin of sole"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Spinal Cord Tracts",
+      "chapterId": 6,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Lower motor neuron lesion is characterized by",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Hypertonia",
+        "Absent abdominal reflexes",
+        "Increased tendon reflexes",
+        "Marked muscle wasting",
+        "Dorsiflexion of big toe (Babinski’s sign)"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Syringomyelia first affects",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Vibration sense",
+        "Pain and temperature on both sides of the body",
+        "Pain and temperature on one side of the body",
+        "Touch sensation",
+        "Motor activity"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Hind brain (Rhombencephalon) includes the following Except",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Medulla oblongata",
+        "Cerebellum",
+        "Pons",
+        "Crus cerebri",
+        "Fourth ventricle"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Brain stem includes the following Except",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Mid brain",
+        "Pons",
+        "Medulla oblongata",
+        "Cerebellum",
+        "Cerebral aqueduct"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Cranial Nerves",
+      "chapterId": 7,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The cranial part of the accessory nerve arises from",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Nucleus ambiguus",
+        "Spinal nucleus of V",
+        "Main sensory nucleus of V",
+        "Nucleus solitarius",
+        "Dorsal vagal nucleus"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Cranial Nerves",
+      "chapterId": 7,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The right spinal lemniscus carries sensations of",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Pain and temperature from left side of the body",
+        "Conscious proprioception from left side of the body",
+        "Muscle tone from right side of body",
+        "All of the above",
+        "None of the above"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The gracile and cuneate tracts of the spinal cord are supplied by",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Anterior spinal artery",
+        "Posterior spinal artery",
+        "Radicular arteries",
+        "All of the above",
+        "Vertebral artery"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "To do lumbar puncture in an adult a needle is introduced",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Below or above tip of 4th lumbar spine",
+        "Below tip of 1st lumbar spine",
+        "Below tip of 2nd lumbar spine",
+        "Below tip of thoracic 12 spine",
+        "None of the above"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Complete section of spinal cord above C5 results in",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Quadriplegia",
+        "Death",
+        "Paraplegia",
+        "Hemiplegia",
+        "None of the above"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Hemisection of spinal cord gives the following symptoms on the same side below the level of lesion",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Proprioception loss",
+        "Upper motor neuron lesion",
+        "Loss of pain and temperature",
+        "All of the above",
+        "A & B only"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following occur in Brown Sequard Syndrome Except",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Ipsilateral UMN lesion below level of lesion",
+        "Contralateral loss of exteroceptive sensations below level of lesion",
+        "Ipsilateral loss of proprioceptive sensations below level of lesion",
+        "Contralateral L.M.N. lesion at same level of lesion",
+        "Ipsilateral loss of pain and temperature at same level of lesion"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Spinal Cord Tracts",
+      "chapterId": 6,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Upper motor neuron lesion is characterized by",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Hypotonia",
+        "Marked wasting of muscles",
+        "Restricted extent of paralysis",
+        "Absent cremasteric and abdominal reflexes",
+        "Plantar flexion of big toe on scratching skin of sole"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Spinal Cord Tracts",
+      "chapterId": 6,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Lower motor neuron lesion is characterized by",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Hypertonia",
+        "Absent abdominal reflexes",
+        "Increased tendon reflexes",
+        "Marked muscle wasting",
+        "Dorsiflexion of big toe (Babinski’s sign)"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Syringomyelia first affects",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Vibration sense",
+        "Pain and temperature on both sides of the body",
+        "Pain and temperature on one side of the body",
+        "Touch sensation",
+        "Motor activity"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Hind brain (Rhombencephalon) includes the following Except",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Medulla oblongata",
+        "Cerebellum",
+        "Pons",
+        "Crus cerebri",
+        "Fourth ventricle"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Brain stem includes the following Except",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Mid brain",
+        "Pons",
+        "Medulla oblongata",
+        "Cerebellum",
+        "Cerebral aqueduct"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Cranial Nerves",
+      "chapterId": 7,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The cranial part of the accessory nerve arises from",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Nucleus ambiguus",
+        "Spinal nucleus of V",
+        "Main sensory nucleus of V",
+        "Nucleus solitarius",
+        "Dorsal vagal nucleus"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Cranial Nerves",
+      "chapterId": 7,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The right spinal lemniscus carries sensations of",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Pain and temperature from left side of the body",
+        "Conscious proprioception from left side of the body",
+        "Muscle tone from right side of body",
+        "All of the above",
+        "None of the above"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The gracile and cuneate tracts of the spinal cord are supplied by",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Anterior spinal artery",
+        "Posterior spinal artery",
+        "Radicular arteries",
+        "All of the above",
+        "Vertebral artery"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "To do lumbar puncture in an adult a needle is introduced",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Below or above tip of 4th lumbar spine",
+        "Below tip of 1st lumbar spine",
+        "Below tip of 2nd lumbar spine",
+        "Below tip of thoracic 12 spine",
+        "None of the above"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Complete section of spinal cord above C5 results in",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Quadriplegia",
+        "Death",
+        "Paraplegia",
+        "Hemiplegia",
+        "None of the above"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Hemisection of spinal cord gives the following symptoms on the same side below the level of lesion",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Proprioception loss",
+        "Upper motor neuron lesion",
+        "Loss of pain and temperature",
+        "All of the above",
+        "A & B only"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following occur in Brown Sequard Syndrome Except",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Ipsilateral UMN lesion below level of lesion",
+        "Contralateral loss of exteroceptive sensations below level of lesion",
+        "Ipsilateral loss of proprioceptive sensations below level of lesion",
+        "Contralateral L.M.N. lesion at same level of lesion",
+        "Ipsilateral loss of pain and temperature at same level of lesion"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Spinal Cord Tracts",
+      "chapterId": 6,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Upper motor neuron lesion is characterized by",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Hypotonia",
+        "Marked wasting of muscles",
+        "Restricted extent of paralysis",
+        "Absent cremasteric and abdominal reflexes",
+        "Plantar flexion of big toe on scratching skin of sole"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Spinal Cord Tracts",
+      "chapterId": 6,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Lower motor neuron lesion is characterized by",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Hypertonia",
+        "Absent abdominal reflexes",
+        "Increased tendon reflexes",
+        "Marked muscle wasting",
+        "Dorsiflexion of big toe (Babinski’s sign)"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Syringomyelia first affects",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Vibration sense",
+        "Pain and temperature on both sides of the body",
+        "Pain and temperature on one side of the body",
+        "Touch sensation",
+        "Motor activity"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Hind brain (Rhombencephalon) includes the following Except",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Medulla oblongata",
+        "Cerebellum",
+        "Pons",
+        "Crus cerebri",
+        "Fourth ventricle"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Brain stem includes the following Except",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Mid brain",
+        "Pons",
+        "Medulla oblongata",
+        "Cerebellum",
+        "Cerebral aqueduct"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Cranial Nerves",
+      "chapterId": 7,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The cranial part of the accessory nerve arises from",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Nucleus ambiguus",
+        "Spinal nucleus of V",
+        "Main sensory nucleus of V",
+        "Nucleus solitarius",
+        "Dorsal vagal nucleus"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Cranial Nerves",
+      "chapterId": 7,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The right spinal lemniscus carries sensations of",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Pain and temperature from left side of the body",
+        "Conscious proprioception from left side of the body",
+        "Muscle tone from right side of body",
+        "All of the above",
+        "None of the above"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The gracile and cuneate tracts of the spinal cord are supplied by",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Anterior spinal artery",
+        "Posterior spinal artery",
+        "Radicular arteries",
+        "All of the above",
+        "Vertebral artery"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "To do lumbar puncture in an adult a needle is introduced",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Below or above tip of 4th lumbar spine",
+        "Below tip of 1st lumbar spine",
+        "Below tip of 2nd lumbar spine",
+        "Below tip of thoracic 12 spine",
+        "None of the above"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Complete section of spinal cord above C5 results in",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Quadriplegia",
+        "Death",
+        "Paraplegia",
+        "Hemiplegia",
+        "None of the above"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Hemisection of spinal cord gives the following symptoms on the same side below the level of lesion",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Proprioception loss",
+        "Upper motor neuron lesion",
+        "Loss of pain and temperature",
+        "All of the above",
+        "A & B only"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following occur in Brown Sequard Syndrome Except",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Ipsilateral UMN lesion below level of lesion",
+        "Contralateral loss of exteroceptive sensations below level of lesion",
+        "Ipsilateral loss of proprioceptive sensations below level of lesion",
+        "Contralateral L.M.N. lesion at same level of lesion",
+        "Ipsilateral loss of pain and temperature at same level of lesion"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Spinal Cord Tracts",
+      "chapterId": 6,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Upper motor neuron lesion is characterized by",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Hypotonia",
+        "Marked wasting of muscles",
+        "Restricted extent of paralysis",
+        "Absent cremasteric and abdominal reflexes",
+        "Plantar flexion of big toe on scratching skin of sole"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Spinal Cord Tracts",
+      "chapterId": 6,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Lower motor neuron lesion is characterized by",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Hypertonia",
+        "Absent abdominal reflexes",
+        "Increased tendon reflexes",
+        "Marked muscle wasting",
+        "Dorsiflexion of big toe (Babinski’s sign)"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Syringomyelia first affects",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Vibration sense",
+        "Pain and temperature on both sides of the body",
+        "Pain and temperature on one side of the body",
+        "Touch sensation",
+        "Motor activity"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Hind brain (Rhombencephalon) includes the following Except",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Medulla oblongata",
+        "Cerebellum",
+        "Pons",
+        "Crus cerebri",
+        "Fourth ventricle"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Brain stem includes the following Except",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Mid brain",
+        "Pons",
+        "Medulla oblongata",
+        "Cerebellum",
+        "Cerebral aqueduct"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Cranial Nerves",
+      "chapterId": 7,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The cranial part of the accessory nerve arises from",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Nucleus ambiguus",
+        "Spinal nucleus of V",
+        "Main sensory nucleus of V",
+        "Nucleus solitarius",
+        "Dorsal vagal nucleus"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Cranial Nerves",
+      "chapterId": 7,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The right spinal lemniscus carries sensations of",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Pain and temperature from left side of the body",
+        "Conscious proprioception from left side of the body",
+        "Muscle tone from right side of body",
+        "All of the above",
+        "None of the above"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The gracile and cuneate tracts of the spinal cord are supplied by",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Anterior spinal artery",
+        "Posterior spinal artery",
+        "Radicular arteries",
+        "All of the above",
+        "Vertebral artery"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "To do lumbar puncture in an adult a needle is introduced",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Below or above tip of 4th lumbar spine",
+        "Below tip of 1st lumbar spine",
+        "Below tip of 2nd lumbar spine",
+        "Below tip of thoracic 12 spine",
+        "None of the above"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Complete section of spinal cord above C5 results in",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Quadriplegia",
+        "Death",
+        "Paraplegia",
+        "Hemiplegia",
+        "None of the above"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Hemisection of spinal cord gives the following symptoms on the same side below the level of lesion",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Proprioception loss",
+        "Upper motor neuron lesion",
+        "Loss of pain and temperature",
+        "All of the above",
+        "A & B only"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following occur in Brown Sequard Syndrome Except",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Ipsilateral UMN lesion below level of lesion",
+        "Contralateral loss of exteroceptive sensations below level of lesion",
+        "Ipsilateral loss of proprioceptive sensations below level of lesion",
+        "Contralateral L.M.N. lesion at same level of lesion",
+        "Ipsilateral loss of pain and temperature at same level of lesion"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Spinal Cord Tracts",
+      "chapterId": 6,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Upper motor neuron lesion is characterized by",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Hypotonia",
+        "Marked wasting of muscles",
+        "Restricted extent of paralysis",
+        "Absent cremasteric and abdominal reflexes",
+        "Plantar flexion of big toe on scratching skin of sole"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Spinal Cord Tracts",
+      "chapterId": 6,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Lower motor neuron lesion is characterized by",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Hypertonia",
+        "Absent abdominal reflexes",
+        "Increased tendon reflexes",
+        "Marked muscle wasting",
+        "Dorsiflexion of big toe (Babinski’s sign)"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Syringomyelia first affects",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Vibration sense",
+        "Pain and temperature on both sides of the body",
+        "Pain and temperature on one side of the body",
+        "Touch sensation",
+        "Motor activity"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Hind brain (Rhombencephalon) includes the following Except",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Medulla oblongata",
+        "Cerebellum",
+        "Pons",
+        "Crus cerebri",
+        "Fourth ventricle"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Brain stem includes the following Except",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Mid brain",
+        "Pons",
+        "Medulla oblongata",
+        "Cerebellum",
+        "Cerebral aqueduct"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Cranial Nerves",
+      "chapterId": 7,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The cranial part of the accessory nerve arises from",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Nucleus ambiguus",
+        "Spinal nucleus of V",
+        "Main sensory nucleus of V",
+        "Nucleus solitarius",
+        "Dorsal vagal nucleus"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Cranial Nerves",
+      "chapterId": 7,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The right spinal lemniscus carries sensations of",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Pain and temperature from left side of the body",
+        "Conscious proprioception from left side of the body",
+        "Muscle tone from right side of body",
+        "All of the above",
+        "None of the above"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The gracile and cuneate tracts of the spinal cord are supplied by",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Anterior spinal artery",
+        "Posterior spinal artery",
+        "Radicular arteries",
+        "All of the above",
+        "Vertebral artery"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "To do lumbar puncture in an adult a needle is introduced",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Below or above tip of 4th lumbar spine",
+        "Below tip of 1st lumbar spine",
+        "Below tip of 2nd lumbar spine",
+        "Below tip of thoracic 12 spine",
+        "None of the above"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Complete section of spinal cord above C5 results in",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Quadriplegia",
+        "Death",
+        "Paraplegia",
+        "Hemiplegia",
+        "None of the above"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Hemisection of spinal cord gives the following symptoms on the same side below the level of lesion",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Proprioception loss",
+        "Upper motor neuron lesion",
+        "Loss of pain and temperature",
+        "All of the above",
+        "A & B only"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following occur in Brown Sequard Syndrome Except",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Ipsilateral UMN lesion below level of lesion",
+        "Contralateral loss of exteroceptive sensations below level of lesion",
+        "Ipsilateral loss of proprioceptive sensations below level of lesion",
+        "Contralateral L.M.N. lesion at same level of lesion",
+        "Ipsilateral loss of pain and temperature at same level of lesion"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Spinal Cord Tracts",
+      "chapterId": 6,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Upper motor neuron lesion is characterized by",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Hypotonia",
+        "Marked wasting of muscles",
+        "Restricted extent of paralysis",
+        "Absent cremasteric and abdominal reflexes",
+        "Plantar flexion of big toe on scratching skin of sole"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Spinal Cord Tracts",
+      "chapterId": 6,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Lower motor neuron lesion is characterized by",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Hypertonia",
+        "Absent abdominal reflexes",
+        "Increased tendon reflexes",
+        "Marked muscle wasting",
+        "Dorsiflexion of big toe (Babinski’s sign)"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Syringomyelia first affects",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Vibration sense",
+        "Pain and temperature on both sides of the body",
+        "Pain and temperature on one side of the body",
+        "Touch sensation",
+        "Motor activity"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Hind brain (Rhombencephalon) includes the following Except",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Medulla oblongata",
+        "Cerebellum",
+        "Pons",
+        "Crus cerebri",
+        "Fourth ventricle"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Brain stem includes the following Except",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Mid brain",
+        "Pons",
+        "Medulla oblongata",
+        "Cerebellum",
+        "Cerebral aqueduct"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Cranial Nerves",
+      "chapterId": 7,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The cranial part of the accessory nerve arises from",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Nucleus ambiguus",
+        "Spinal nucleus of V",
+        "Main sensory nucleus of V",
+        "Nucleus solitarius",
+        "Dorsal vagal nucleus"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Cranial Nerves",
+      "chapterId": 7,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The right spinal lemniscus carries sensations of",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Pain and temperature from left side of the body",
+        "Conscious proprioception from left side of the body",
+        "Muscle tone from right side of body",
+        "All of the above",
+        "None of the above"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The gracile and cuneate tracts of the spinal cord are supplied by",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Anterior spinal artery",
+        "Posterior spinal artery",
+        "Radicular arteries",
+        "All of the above",
+        "Vertebral artery"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "To do lumbar puncture in an adult a needle is introduced",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Below or above tip of 4th lumbar spine",
+        "Below tip of 1st lumbar spine",
+        "Below tip of 2nd lumbar spine",
+        "Below tip of thoracic 12 spine",
+        "None of the above"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Complete section of spinal cord above C5 results in",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Quadriplegia",
+        "Death",
+        "Paraplegia",
+        "Hemiplegia",
+        "None of the above"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Hemisection of spinal cord gives the following symptoms on the same side below the level of lesion",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Proprioception loss",
+        "Upper motor neuron lesion",
+        "Loss of pain and temperature",
+        "All of the above",
+        "A & B only"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following occur in Brown Sequard Syndrome Except",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Ipsilateral UMN lesion below level of lesion",
+        "Contralateral loss of exteroceptive sensations below level of lesion",
+        "Ipsilateral loss of proprioceptive"
+      ],
+      "correctAnswer": null
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Regarding the fourth ventricle",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Is the cavity of hind brain",
+        "Communicates with subarachnoid space",
+        "Has a large median operture",
+        "All of the above",
+        "None of the above"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Regarding cerebrospinal fluid (C.S.F.) all statements are true Except:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Is formed by choroid plexuses of ventricles",
+        "Helps in removal of metabolites",
+        "Finally reaches the blood stream",
+        "Reaches cisternamagna through the aqueduct of Sylvius",
+        "Is filtered through arachnoid granulations"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "In the dominant hemisphere cortical branches of middle cerebral artery supply the following areas Except.",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Auditory area",
+        "Broca’s area",
+        "Frontal eye field",
+        "Wernick’s area",
+        "The whole primary motor area"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "One of the following arteries does not share in formation of circle of Willis:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Middle cerebral",
+        "Anterior cerebral",
+        "Posterior cerebral",
+        "Internal carotid",
+        "Posterior communicating"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Anterior cerebral artery supply:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Paracentral lobule",
+        "Auditory cortex",
+        "Inferior parietal lobule",
+        "Temporal pole",
+        "Visual cortex"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "matching",
+      "text": "Match the named cerebral vessels in left column with their corresponding anatomical sites in right column.",
+      "explanation": "",
+      "keyConcept": "",
+      "pairs": [
+        {
+          "premise": "630- Posterior cerebral",
+          "target": "d. Winds round crus cerebri"
+        },
+        {
+          "premise": "631- Circulus arteriosus",
+          "target": "a. Interpeduncular fossa"
+        },
+        {
+          "premise": "632- Basilar",
+          "target": "b. Median groove on ventral surface of pons"
+        },
+        {
+          "premise": "633- Anterior cerebral",
+          "target": "e. above trunk of corpus callosum"
+        },
+        {
+          "premise": "634- Middle cerebral",
+          "target": "c. Lateral sulcus"
+        }
+      ]
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Arterial supply of anterior ends of caudate & lentiform nuclei is derived from:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Central branches of middle cerebral",
+        "Central branches of posterior cerebral",
+        "Central branches of anterior cerebral",
+        "All of the above",
+        "None of the above"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Arterial supply of upper 1/2 of internal capsule is derived from:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Central branches of middle cerebral",
+        "Central branches of posterior cerebral",
+        "Central branches of anterior cerebral",
+        "All of the above",
+        "None of the above"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Vertebrobasilar system supplies the following Except:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Cerebellum",
+        "Inner ear",
+        "Visual cortex",
+        "Temporal pole",
+        "Pons"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Cortical branches of middle cerebral artery supply:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "The whole hemisphere",
+        "Lateral surface of occipital lobe",
+        "Lateral part of orbital surface",
+        "Paracentral lobule",
+        "All of the above"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Posterior cerebral artery supplies:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Lateral surface of occipital lobe",
+        "Visual cortex",
+        "Lower border of temporal lobe",
+        "Thalamus",
+        "All of the above"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Central branches of posterior cerebral artery supply:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Thalamus",
+        "Geniculate bodies",
+        "Posterior parts of caudate & lentiform nuclei",
+        "All of the above",
+        "A & B only"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following veins end in cavernous sinus:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Superior cerebral veins",
+        "Inferior cerebral veins",
+        "Deep middle cerebral vein",
+        "Superficial middle cerebral vein",
+        "None of the above"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The vein that opens in the straight sinus is:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Great cerebral",
+        "Internal cerebral",
+        "Deep middle cerebral",
+        "All of the above",
+        "None of the above"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is an absolute requirement for the brain at all times?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Glucose and oxygen.",
+        "Glucose and ketone bodies.",
+        "Ketone bodies and oxygen.",
+        "Glucose and fatty acids."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "In fasting conditions, glucose is provided for the brain by",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "absorption from the intestine.",
+        "glycogenolysis in the liver.",
+        "gluconeogenesis in the liver.",
+        "(b) and (c)."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Brain cells uptake glucose by",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "GLUT1 and GLUT2.",
+        "GLUT1 and GLUT3.",
+        "GLUT4.",
+        "SGLT2."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Glucose uptake by the brain is",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "insulin-dependent.",
+        "sodium-dependent.",
+        "ATP-dependent.",
+        "insulin-independent."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Brain cells oxidize glucose to",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "lactate.",
+        "ketone bodies.",
+        "carbon dioxide.",
+        "carbon dioxide and water."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "In brain cells, glucose is phosphorylated by",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "glucokinase.",
+        "hexokinase.",
+        "phosphofructokinase.",
+        "phosphohexose isomerase."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Glucose 6-phosphate is utilized in which pathway in brain cells?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Glycolysis.",
+        "Pentose phosphate pathway.",
+        "Both (a) and (b).",
+        "Neither (a) nor (b)."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "What is the importance of HMP pathway in the brain cells?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Nucleic acid synthesis.",
+        "Antioxidant.",
+        "Gluconeogenesis.",
+        "Mitochondrial transfer of reducing equivalents."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Hormones and neurotransmitters",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "are signal molecules used for cell-cell communication.",
+        "are mostly polypeptides or nitrogenous compounds, both derived from amino-acids.",
+        "include non-nitrogenous compounds too.",
+        "all the above."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following aminoacids may act as a neurotransmitter?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Glycine.",
+        "Glutamic acid.",
+        "Gamma-amino-butyric acid (GABA).",
+        "All the above."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Gamma-amino-butyric acid (GABA) is produced by",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "decarboxylation of glutamic acid.",
+        "transamination of gamma-hydroxy-butyric acid.",
+        "a reaction that requires vitamin B6 derived cofactor.",
+        "a and c."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is true about the aminoacid neurotransmitters?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Glutamic acid is an excitatory, while glycine and GABA are inhibitory neurotransmitters.",
+        "Glycine constitutes one third of the collagen aminoacids, and glutamic acid is largely produced from other aminoacids.",
+        "Monosodium glutamate is a widely used food additive.",
+        "All the above."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Catecholamines",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "include dopamine, noradrenaline (norepinephrine) and adrenaline (epinephrine).",
+        "are both hormones and neurotransmitters.",
+        "both (a) and (b).",
+        "neither (a) nor (b)."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Catecholamines",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "contain the catechol (3,4-dihydroxy-phenyl) ring in their structure.",
+        "are synthesized from the aminoacid glycine.",
+        "both (a) and (b).",
+        "neither (a) nor (b)."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "L-Dopa (Dihydroxyphenylalanine) is",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "produced by decarboxylation of dopamine.",
+        "converted to tyrosine by a hydroxylase enzyme.",
+        "both (a) and (b).",
+        "neither (a) nor (b)."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The rate-limiting step in catecholamine synthesis is",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "hydroxylation of tyrosine.",
+        "formation of dopa.",
+        "both (a) and (b).",
+        "neither (a) nor (b)."
+      ],
+      "correctAnswer": "C"
+    }
+  ]
+}

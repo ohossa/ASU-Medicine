@@ -7,7 +7,13 @@
     "semester": 2,
     "creditPoints": 3,
     "totalMarks": 60,
-    "keywords": ["research", "fundamentals", "research methodology", "biostatistics", "fundamentals of research"]
+    "keywords": [
+      "research",
+      "fundamentals",
+      "research methodology",
+      "biostatistics",
+      "fundamentals of research"
+    ]
   },
   "chapters": [
     {
@@ -17,7 +23,8 @@
       "emoji": "🔍",
       "page": 4,
       "lectureRange": "Lecture 1",
-      "subjects": []
+      "subjects": [],
+      "keywords": []
     },
     {
       "id": 2,
@@ -26,7 +33,8 @@
       "emoji": "💡",
       "page": 7,
       "lectureRange": "Lecture 2",
-      "subjects": []
+      "subjects": [],
+      "keywords": []
     },
     {
       "id": 3,
@@ -35,7 +43,8 @@
       "emoji": "📈",
       "page": 13,
       "lectureRange": "Lecture 3",
-      "subjects": []
+      "subjects": [],
+      "keywords": []
     },
     {
       "id": 4,
@@ -44,7 +53,8 @@
       "emoji": "🎲",
       "page": 41,
       "lectureRange": "Lecture 4",
-      "subjects": []
+      "subjects": [],
+      "keywords": []
     },
     {
       "id": 5,
@@ -53,7 +63,8 @@
       "emoji": "📝",
       "page": 53,
       "lectureRange": "Lecture 5",
-      "subjects": []
+      "subjects": [],
+      "keywords": []
     },
     {
       "id": 6,
@@ -62,7 +73,8 @@
       "emoji": "⚠️",
       "page": 66,
       "lectureRange": "Lecture 6",
-      "subjects": []
+      "subjects": [],
+      "keywords": []
     },
     {
       "id": 7,
@@ -71,7 +83,8 @@
       "emoji": "🛡️",
       "page": 71,
       "lectureRange": "Lecture 7",
-      "subjects": []
+      "subjects": [],
+      "keywords": []
     },
     {
       "id": 8,
@@ -80,7 +93,8 @@
       "emoji": "📚",
       "page": 78,
       "lectureRange": "Lecture 8",
-      "subjects": []
+      "subjects": [],
+      "keywords": []
     },
     {
       "id": 9,
@@ -89,7 +103,8 @@
       "emoji": "📋",
       "page": 82,
       "lectureRange": "Lecture 9",
-      "subjects": []
+      "subjects": [],
+      "keywords": []
     },
     {
       "id": 10,
@@ -98,7 +113,8 @@
       "emoji": "📊",
       "page": 87,
       "lectureRange": "Lecture 10",
-      "subjects": []
+      "subjects": [],
+      "keywords": []
     },
     {
       "id": 11,
@@ -107,7 +123,8 @@
       "emoji": "🎨",
       "page": 96,
       "lectureRange": "Lecture 11",
-      "subjects": []
+      "subjects": [],
+      "keywords": []
     }
   ]
 }

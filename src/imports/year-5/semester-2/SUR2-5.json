@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "comingSoon": true,
+  "meta": {
+    "moduleCode": "SUR2-5",
+    "moduleName": "General & Special Surgery 2",
+    "year": 5,
+    "semester": 2,
+    "creditPoints": 4,
+    "totalMarks": 80,
+    "keywords": [
+      "surgery",
+      "sur2"
+    ]
+  },
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Orthopedics & Musculoskeletal Trauma",
+      "subtitle": "Orthopedics & Musculoskeletal Trauma",
+      "emoji": "🦴",
+      "page": 1,
+      "lectureRange": "Lectures 1",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 2,
+      "title": "Urology & Male Genital Surgery",
+      "subtitle": "Urology & Male Genital Surgery",
+      "emoji": "♂️",
+      "page": 2,
+      "lectureRange": "Lectures 2",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 3,
+      "title": "Neurosurgery & Specialty Surgery",
+      "subtitle": "Neurosurgery & Specialty Surgery",
+      "emoji": "🧠",
+      "page": 3,
+      "lectureRange": "Lectures 3",
+      "subjects": [],
+      "keywords": []
+    }
+  ]
+}

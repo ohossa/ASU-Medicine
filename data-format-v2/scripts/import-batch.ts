@@ -10,7 +10,7 @@ type QuestionBankFile = {
   chapters: Chapter[];
 };
 
-type Chapter = { id: number; title: string; subtitle: string; emoji: string; page: number; lectureRange: string; subjects: Subject[] };
+type Chapter = { id: number; title: string; subtitle: string; emoji: string; page: number; lectureRange: string; subjects: Subject[]; keywords?: string[] };
 type Subject = { id: SubjectColor; name: string; iconName: string; lectures: string; lectureCount: number; questions: Question[] };
 
 type Question = {
@@ -27,17 +27,25 @@ type Question = {
   subQuestions?: SubQuestion[];
   blanks?: string[];
   acceptedAnswers?: string[][];
+  repetitionCount?: number;
+
+  /* ── Analytics fields (reserved for future usage) ── */
+  avgCorrectRate?: number;
+  totalAttempts?: number;
+  discriminationIndex?: number;
 };
 
 type SubQuestion = {
   id: string;
-  type: 'mcq' | 'essay';
+  type: 'mcq' | 'essay' | 'fillblank';
   text: string;
   options?: string[];
   correctIndex?: number;
   modelAnswer?: string;
   explanation: string;
   keyConcept?: string;
+  blanks?: string[];
+  acceptedAnswers?: string[][];
 };
 
 type IncomingBatch = {
@@ -69,7 +77,7 @@ type IncomingQuestion = {
 };
 
 type IncomingSubQuestion = {
-  type?: 'mcq' | 'essay';
+  type?: 'mcq' | 'essay' | 'fillblank';
   question?: string;
   text?: string;
   options?: string[];
@@ -78,6 +86,8 @@ type IncomingSubQuestion = {
   modelAnswer?: string;
   explanation?: string;
   keyConcept?: string;
+  blanks?: string[];
+  acceptedAnswers?: string[][];
 };
 
 type ImportReport = {
@@ -137,10 +147,16 @@ async function main(): Promise<void> {
       return;
     }
 
-    const duplicateKey = makeDuplicateKey(incoming);
+    const cleanedIncomingText = cleanStarText(text);
+    const duplicateKey = makeDuplicateKey({ ...incoming, text: cleanedIncomingText });
     const matchedDuplicateId = duplicateIndex.get(duplicateKey);
     if (matchedDuplicateId) {
-      report.skippedDuplicates.push({ matchedId: matchedDuplicateId, text });
+      // Increment repetitionCount on the existing question
+      const existingQuestion = findQuestionById(bank, matchedDuplicateId);
+      if (existingQuestion) {
+        existingQuestion.repetitionCount = (existingQuestion.repetitionCount ?? 1) + 1;
+      }
+      report.skippedDuplicates.push({ matchedId: matchedDuplicateId, text: cleanedIncomingText });
       return;
     }
 
@@ -177,9 +193,40 @@ function resolveChapter(bank: QuestionBankFile, question: IncomingQuestion, batc
   if (chapterId) return bank.chapters.find((chapter) => chapter.id === chapterId);
 
   const title = normalize(question.chapterTitle ?? batch.defaultChapterTitle ?? '');
-  if (!title) return undefined;
 
-  return bank.chapters.find((chapter) => normalize(chapter.title) === title || normalize(chapter.subtitle) === title);
+  if (title) {
+    const exact = bank.chapters.find((chapter) => normalize(chapter.title) === title || normalize(chapter.subtitle) === title);
+    if (exact) return exact;
+  }
+
+  // Keyword-based matching fallback
+  const textToAnalyze = title || normalize(question.text ?? question.question ?? '');
+  if (!textToAnalyze) return undefined;
+
+  const words = new Set(textToAnalyze.split(/\s+/));
+  let bestChapter: Chapter | undefined;
+  let bestScore = 0;
+
+  for (const chapter of bank.chapters) {
+    if (!chapter.keywords?.length) continue;
+    const chapterKeywords = chapter.keywords.map(k => normalize(k));
+    let hits = 0;
+    for (const kw of chapterKeywords) {
+      for (const word of words) {
+        if (word.length > 2 && (kw === word || kw.includes(word) || word.includes(kw))) {
+          hits++;
+          break;
+        }
+      }
+    }
+    const score = hits > 0 ? hits / Math.min(chapter.keywords.length, words.size) : 0;
+    if (score > bestScore) {
+      bestScore = score;
+      bestChapter = chapter;
+    }
+  }
+
+  return bestScore >= 0.15 ? bestChapter : undefined;
 }
 
 function getOrCreateSubject(chapter: Chapter, subjectId: SubjectColor): Subject {
@@ -206,7 +253,7 @@ function convertQuestion(incoming: IncomingQuestion, moduleCode: string, chapter
     id,
     type,
     lecture: incoming.lecture ?? chapter.id,
-    text: incoming.text ?? incoming.question ?? '',
+    text: cleanStarText(incoming.text ?? incoming.question ?? ''),
     explanation: incoming.explanation ?? 'Review the related lecture material for the rationale.',
     keyConcept: incoming.keyConcept
   };
@@ -221,7 +268,7 @@ function convertQuestion(incoming: IncomingQuestion, moduleCode: string, chapter
 }
 
 function convertSubQuestion(incoming: IncomingSubQuestion, id: string): SubQuestion {
-  const type = incoming.type === 'essay' ? 'essay' : 'mcq';
+  const type = (incoming.type === 'essay' || incoming.type === 'fillblank') ? incoming.type : 'mcq';
   const base = {
     id,
     type,
@@ -231,6 +278,7 @@ function convertSubQuestion(incoming: IncomingSubQuestion, id: string): SubQuest
   };
 
   if (type === 'essay') return { ...base, type, modelAnswer: incoming.modelAnswer ?? '' };
+  if (type === 'fillblank') return { ...base, type, blanks: incoming.blanks ?? [], acceptedAnswers: incoming.acceptedAnswers };
 
   const options = incoming.options ?? [];
   return { ...base, type, options, correctIndex: normalizeCorrectIndex(incoming, options) };
@@ -297,16 +345,30 @@ function nextQuestionId(moduleCode: string, chapter: Chapter, subject: SubjectCo
   return `${prefix}${String(maxSequence + 1).padStart(4, '0')}`;
 }
 
+function cleanStarText(text: string): string {
+  return text.replace(/(?:\s*\*+)?\s*★+\s*$/g, '').trim();
+}
+
 function buildDuplicateIndex(bank: QuestionBankFile): Map<string, string> {
   const index = new Map<string, string>();
   for (const chapter of bank.chapters) {
     for (const subject of chapter.subjects) {
       for (const question of subject.questions) {
-        index.set(makeDuplicateKey(question), question.id);
+        index.set(makeDuplicateKey({ ...question, text: cleanStarText(question.text) }), question.id);
       }
     }
   }
   return index;
+}
+
+function findQuestionById(bank: QuestionBankFile, id: string): Question | undefined {
+  for (const chapter of bank.chapters) {
+    for (const subject of chapter.subjects) {
+      const found = subject.questions.find((q) => q.id === id);
+      if (found) return found;
+    }
+  }
+  return undefined;
 }
 
 function removeExistingDuplicates(bank: QuestionBankFile, report: ImportReport): void {
@@ -317,16 +379,23 @@ function removeExistingDuplicates(bank: QuestionBankFile, report: ImportReport):
       const uniqueQuestions: Question[] = [];
 
       for (const question of subject.questions) {
-        const key = makeDuplicateKey(question);
+        const cleanText = cleanStarText(question.text);
+        const key = makeDuplicateKey({ ...question, text: cleanText });
         const keptId = seen.get(key);
 
         if (keptId) {
           if (!report.removedExistingDuplicates.some((item) => item.removedId === question.id)) {
-            report.removedExistingDuplicates.push({ keptId, removedId: question.id, text: question.text });
+            report.removedExistingDuplicates.push({ keptId, removedId: question.id, text: cleanText });
+          }
+          // Increment repetitionCount on the KEPT question
+          const keptQuestion = uniqueQuestions.find((q) => q.id === keptId);
+          if (keptQuestion) {
+            keptQuestion.repetitionCount = (keptQuestion.repetitionCount ?? 1) + 1;
           }
           continue;
         }
 
+        question.text = cleanText;
         seen.set(key, question.id);
         uniqueQuestions.push(question);
       }

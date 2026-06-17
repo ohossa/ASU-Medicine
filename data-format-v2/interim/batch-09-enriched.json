@@ -1,0 +1,5856 @@
+{
+  "moduleCode": "MCNS-2",
+  "questions": [
+    {
+      "chapterTitle": "Cerebrum & Cortical Functions",
+      "chapterId": 2,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Infarction of blood vessels supplying the cerebral cortex most commonly results in:",
+      "explanation": "",
+      "keyConcept": "N/A",
+      "options": [
+        "Spastic paralysis",
+        "Flaccid paralysis",
+        "Sensory loss only",
+        "Ataxia",
+        "Hypotonia"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "In syringomyelia, sensory loss typically follows which pattern?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Jacket distribution",
+        "Fingers",
+        "Lower limbs",
+        "Feet",
+        "Trunk"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which brain structure is typically damaged in left‑sided hemiballismus?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Left globus pallidus",
+        "Right subthalamic nucleus",
+        "Left caudate nucleus",
+        "Right putamen",
+        "Left thalamus"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Fibers from the cerebral cortex to the corpus striatum release which neurotransmitter?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "GABA",
+        "Dopamine",
+        "Acetylcholine",
+        "Serotonin",
+        "Glutamate"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Static tremor is caused by which mechanism in the basal ganglia?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Loss of dopamine in substantia nigra",
+        "Hyperactivity of the direct pathway",
+        "Cerebellar Purkinje cell degeneration",
+        "Oscillation between GPi and subthalamic nucleus",
+        "Failure of corticospinal inhibition"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "How does dopamine act on the basal ganglia motor pathways?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "D1 inhibits the direct pathway",
+        "D1 excites the direct pathway",
+        "D2 excites the indirect pathway",
+        "D2 excites the direct pathway",
+        "Dopamine inhibits both pathways"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Glutamate is secreted by:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Cerebral cortex to corpus striatum",
+        "Intrastriatal interneurons",
+        "Substantia nigra to corpus striatum",
+        "Corpus striatum to substantia nigra",
+        "Basal ganglia to brain stem"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which function is performed by the cerebellum?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Correct movement on the same side of the body",
+        "Initiation of voluntary movement on the same side",
+        "Coordination of opposite side limb movements",
+        "Regulation of muscle strength",
+        "Primary sensory perception"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which statement about climbing fibers is correct?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "They originate from the inferior olivary nucleus",
+        "They form powerful excitatory synapses on Purkinje cells",
+        "Each Purkinje cell receives input from a single climbing fiber",
+        "They play a role in motor learning",
+        "All of the above"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which deficit is most characteristic of a cerebellar lesion?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Muscle weakness",
+        "Loss of motor learning",
+        "Loss of pain sensation",
+        "Aphasia",
+        "Visual field defect"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Physiology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which structure is primarily responsible for the damping action that prevents tremors during voluntary movements?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Vestibulocerebellum",
+        "Spinocerebellum",
+        "Cerebrocerebellum",
+        "Basal ganglia",
+        "Motor cortex"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which function is primarily associated with the flocculonodular lobe of the cerebellum?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Fine motor coordination",
+        "Equilibrium",
+        "Regulation of muscle tone",
+        "Motor learning",
+        "Planning of voluntary movements"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which clinical sign is characteristic of an ipsilateral cerebellar lesion?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Spasticity",
+        "Resting tremor",
+        "Chorea",
+        "Hypotonia",
+        "Hyperreflexia"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Tremors present during voluntary movement and reduced during sleep indicate which condition?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Resting tremor",
+        "Rigidity",
+        "Chorea",
+        "Ataxia",
+        "Dysdiadochokinesia"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which deficit is specifically associated with a lesion affecting climbing fibers of the cerebellum?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Dysmetria",
+        "Loss of motor learning",
+        "Intentional tremor",
+        "Resting tremor",
+        "Chorea"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which enzymatic change explains the slow rate of glycolysis in neurons?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "High activity of 6‑phosphofructo‑2‑kinase which inhibits formation of fructose‑2,6‑bisphosphate",
+        "Reduced activity of 6‑phosphofructo‑2‑kinase with decreased fructose‑2,6‑bisphosphate",
+        "Reduced activity of hexokinase with decreased intracellular glucose",
+        "Reduced activity of 6‑phosphofructo‑2‑kinase with decreased fructose‑2,6‑bisphosphate (variant)",
+        "High activity of 6‑phosphofructo‑2‑kinase which stimulates formation of fructose‑2,6‑bisphosphate"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "During excessive exercise, which substance serves as an energy source for neurons?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Glucose",
+        "Fatty acids",
+        "Ketone bodies",
+        "Glycogen",
+        "Lactate"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which statement about ketone bodies is correct?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Main energy source for the brain",
+        "Main energy source for the liver during starvation",
+        "Not a major source of energy in well‑fed state",
+        "Primary substrate for gluconeogenesis",
+        "Stored as glycogen in astrocytes"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "During starvation, which of the following occurs?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Ketone bodies are utilized in liver",
+        "Ketone bodies are utilized in brain",
+        "Glucose is utilized in liver",
+        "Fatty acids are utilized in brain",
+        "Amino acids are utilized in brain"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which enzyme is absent in neurons?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Hexokinase",
+        "Phosphofructokinase‑1",
+        "Pyruvate kinase",
+        "PFK2/FBPase3 (6‑phosphofructo‑2‑kinase/fructose‑2,6‑bisphosphatase‑3)",
+        "Lactate dehydrogenase"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which laboratory finding is used as a marker for carcinoid tumor?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Vanillylmandelic acid",
+        "Homovanillic acid",
+        "MAO",
+        "5‑hydroxyindoleacetic acid",
+        "Serotonin"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which neurotransmitter is the principal excitatory neurotransmitter in the CNS?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "GABA",
+        "Glycine",
+        "Dopamine",
+        "Serotonin",
+        "Glutamate"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which substance acts as an antioxidant in astrocytes by forming reduced glutathione?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "NADPH",
+        "NADH",
+        "Vitamin B6",
+        "Vitamin C",
+        "GSSG"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "In pheochromocytoma, which metabolite is typically increased in urine?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Dopamine",
+        "Epinephrine",
+        "Norepinephrine",
+        "Vanillylmandelic acid",
+        "Serotonin"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which amino acid is the precursor of serotonin?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Tryptophan",
+        "Tyrosine",
+        "Phenylalanine",
+        "Glutamate",
+        "Histidine"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which drug prevents the peripheral conversion of levodopa to dopamine?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Niacin (B3)",
+        "MAOIs",
+        "α‑methyl tyrosine",
+        "α‑methyl dopa",
+        "Carbidopa"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which glucose transporter is present on astrocytes?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "GLUT1",
+        "GLUT2",
+        "GLUT3",
+        "GLUT4",
+        "GLUT5"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which is the rate‑limiting enzyme in catecholamine synthesis?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Dopa decarboxylase",
+        "Dopamine β‑hydroxylase",
+        "Tyrosine hydroxylase",
+        "MAO",
+        "Phenylethanolamine N‑methyltransferase"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "What is the final disposal form of the amino group in the human body?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Ammonia",
+        "Glutamine",
+        "Amino acid",
+        "Uric acid",
+        "Urea"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "In ornithine transcarbamylase deficiency, which amino acid becomes essential?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Citrulline",
+        "Ornithine",
+        "Arginine",
+        "Glutamine",
+        "Aspartate"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "The nitrogen atoms of urea are derived from which sources?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Ammonia and aspartate",
+        "Ammonia and glutamate",
+        "Aspartate and alanine",
+        "Glutamine and aspartate",
+        "Ammonia and ornithine"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Biochemistry",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which amino acids are responsible for the characteristic burned sugar odor of urine in maple syrup urine disease?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Phenylalanine, tyrosine, tryptophan",
+        "Leucine, isoleucine, valine",
+        "Glycine, serine, alanine",
+        "Methionine, cysteine, taurine",
+        "Aspartate, glutamate, asparagine"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "A month‑old baby’s urine has a sweet, burnt sugar smell. Elevated leucine, isoleucine, valine. Which enzyme deficiency?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Phenylalanine hydroxylase",
+        "Tyrosine hydroxylase",
+        "Branched‑chain α‑ketoacid dehydrogenase complex",
+        "Tryptophan hydroxylase",
+        "Dihydrobiopterin reductase"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which reaction is impaired in thiamine pyrophosphate deficiency?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Transamination of amino acids",
+        "Carboxylation of acetyl‑CoA",
+        "Reduction of ribonucleotides",
+        "Oxidative phosphorylation",
+        "Oxidative decarboxylation of α‑keto acids"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "In phenylketonuria, which substance accumulates in the blood?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Tyrosine",
+        "Dopamine",
+        "Phenylalanine",
+        "Homocysteine",
+        "Pyruvate"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which disease and metabolite pair is correctly matched?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Maple syrup urine disease and isolysine",
+        "Maple syrup urine disease and lysine",
+        "Maple syrup urine disease and glycine",
+        "Phenylketonuria and urea",
+        "Phenylketonuria and phenylalanine"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "In phenylketonuria, deficiency of which substance occurs?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Catecholamines",
+        "Branched‑chain amino acids",
+        "Phenylpyruvate",
+        "Phenylalanine",
+        "Phenylacetate"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "A 55‑year‑old chronic alcoholic presents with confusion, ataxia, and memory impairment. Most likely condition?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Wernicke‑Korsakoff",
+        "Wet beriberi",
+        "Dry beriberi",
+        "Pellagra",
+        "Homocystinemia"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "In the same patient (alcoholic, confusion, ataxia), which enzyme is affected?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Thymidylate synthase",
+        "Dehydrogenases",
+        "α‑Ketoglutarate dehydrogenase",
+        "Homocysteine methyltransferase",
+        "Methylmalonyl‑CoA mutase"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which vitamin is required for one‑carbon transfer reactions involved in nucleotide synthesis?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Folic acid",
+        "Vitamin B12",
+        "Vitamin B6",
+        "Vitamin C",
+        "Vitamin K"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Impairment of oxidative decarboxylation leads to inability to utilize glucose due to deficiency of which vitamin?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Vitamin B1",
+        "Vitamin B2",
+        "Vitamin B3",
+        "Vitamin B6",
+        "Vitamin B12"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "A patient with chronic diarrhea, cognitive decline, and photosensitive skin rash. Which supplement?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Thiamine",
+        "Folic acid",
+        "Pyridoxine",
+        "Cobalamin",
+        "Niacin"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which vitamin deficiency is neurologically affected by folic acid status – folic acid can mask hematological signs but not prevent neurological damage?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Vitamin B1",
+        "Vitamin B2",
+        "Vitamin B6",
+        "Vitamin B12",
+        "Vitamin C"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which biochemical process is inhibited by sulfonamides?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Purine synthesis",
+        "Folic acid synthesis",
+        "Pyrimidine degradation",
+        "Amino acid transamination",
+        "Glycolysis"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which vitamins are directly required for the remethylation of homocysteine to methionine?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Vitamin C and D",
+        "Vitamin B6 and B2",
+        "Folic acid and vitamin B12",
+        "Vitamin K and E",
+        "Niacin and riboflavin"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which reaction uses methyltetrahydrofolate as a cofactor?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Serine → glycine",
+        "Glycine → serine",
+        "Homocysteine → methionine",
+        "Methionine → homocysteine",
+        "Cysteine → homocysteine"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which acts as a coenzyme for aromatic amino acid hydroxylases?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Tetrahydrobiopterin",
+        "Pyridoxal phosphate",
+        "FAD",
+        "NAD",
+        "TPP"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Biochemistry",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "The conversion of which requires vitamin B12 and folic acid?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Serine to glycine",
+        "Glutamate to GABA",
+        "Homocysteine to methionine",
+        "Tyrosine to dopamine",
+        "Phenylalanine to tyrosine"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 4,
+      "type": "mcq",
+      "text": "Which statement is true regarding neuroglia?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Astrocytes perform gliosis",
+        "Oligodendrocytes form the blood‑brain barrier",
+        "Microglia produce myelin",
+        "Schwann cells are found in the CNS",
+        "Ependymal cells form nodes of Ranvier"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Cerebrum & Cortical Functions",
+      "chapterId": 2,
+      "subject": "Histology",
+      "lecture": 4,
+      "type": "mcq",
+      "text": "Which statement is true regarding the layers of the cerebral cortex?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "The outer band of Baillarger is present in the inner granular layer",
+        "The inner band of Baillarger is present in the molecular layer",
+        "The molecular layer contains large pyramidal cells",
+        "The inner granular layer lacks stellate cells",
+        "The multiform layer is the most superficial layer"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 4,
+      "type": "mcq",
+      "text": "Which correctly describes a feature of Pacinian corpuscles compared to Meissner corpuscles?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Pacinian detect light touch, Meissner detect vibration",
+        "Pacinian are mainly in non‑hairy skin, Meissner in hairy skin",
+        "Pacinian are in epidermis, Meissner in dermis",
+        "Pacinian detect temperature, Meissner detect pain",
+        "Pacinian have fibers that pass axially through the corpuscle, Meissner fibers are coiled"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 4,
+      "type": "mcq",
+      "text": "Which receptors provide the sense of movement and position of the body?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Nociceptors",
+        "Thermoreceptors",
+        "Mechanoreceptors",
+        "Proprioception receptors",
+        "Chemoreceptors"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 4,
+      "type": "mcq",
+      "text": "Which feature characterizes the nerve ending in a Meissner’s corpuscle?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Myelinated straight course",
+        "Unmyelinated straight course",
+        "Nerve has tortuous course",
+        "Single terminal ending",
+        "Myelinated afferent fiber enters the base of the corpuscle"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 4,
+      "type": "mcq",
+      "text": "Which sensation is primarily detected by Meissner’s corpuscles?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Crude touch and tactile discrimination",
+        "Vibration and pressure",
+        "Pain and temperature",
+        "Proprioception",
+        "Pressure and stretch"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Histology",
+      "lecture": 4,
+      "type": "mcq",
+      "text": "Which mechanoreceptor is primarily responsible for detecting vibration?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Pacinian",
+        "Meissner",
+        "Merkel",
+        "Ruffini",
+        "Free nerve endings"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 4,
+      "type": "mcq",
+      "text": "Which feature is common to both free nerve endings and Merkel’s discs?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "They are the most numerous sensory receptors in the body",
+        "Found in the epidermis of the skin",
+        "Respond to noxious stimuli",
+        "Respond to thermal stimuli",
+        "Arise from subepidermal plexus of nerves"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 4,
+      "type": "mcq",
+      "text": "Which type of receptor is found in the cornea?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Pacinian",
+        "Meissner",
+        "Merkel",
+        "Ruffini",
+        "Free nerve endings"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 4,
+      "type": "mcq",
+      "text": "Which sensory receptors penetrate the epidermis?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Free nerve endings and Merkel discs",
+        "Meissner and Pacinian corpuscles",
+        "Ruffini endings and Pacinian corpuscles",
+        "Muscle spindles and Golgi tendon organs",
+        "Krause end bulbs and Ruffini endings"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 4,
+      "type": "mcq",
+      "text": "Regarding the cervical spinal cord, which statement is correct?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Substantia gelatinosa receives mostly motor input",
+        "Substantia gelatinosa is located in lamina II",
+        "Clarke’s nucleus is located in lamina VI",
+        "Clarke’s nucleus is found in all cervical segments",
+        "Retropostero‑lateral column of cervical segments supplies the distal part of the lower limb"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 4,
+      "type": "mcq",
+      "text": "Which statement about Clarke’s nucleus is correct?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Clarke’s nucleus is present at all levels",
+        "Clarke’s nucleus is present at all cervical levels",
+        "Clarke’s nucleus is present at all thoracic levels",
+        "Clarke’s nucleus is present at all lumbar levels",
+        "Clarke’s nucleus is present at all sacral levels"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 4,
+      "type": "mcq",
+      "text": "Which structure is found in the cervical segment (internal structures of spinal cord)?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Intermediolateral cell column in lamina VII grey matter",
+        "Intermediolateral cell column in lamina VII white matter",
+        "Clarke’s nucleus in lamina VII grey matter",
+        "Clarke’s nucleus in lamina VII white matter",
+        "Substantia gelatinosa in lamina VII grey matter"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 4,
+      "type": "mcq",
+      "text": "Which structure is found in lamina I of the spinal cord gray matter?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Clarke nucleus",
+        "Substantia gelatinosa",
+        "Posteromarginal nucleus",
+        "Intermediolateral cell column",
+        "Nucleus proprius"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 4,
+      "type": "mcq",
+      "text": "Which type of neuron forms synaptic junctions with intrafusal muscle fibers within a muscle spindle?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Alpha neurons",
+        "Beta neurons",
+        "Gamma neurons",
+        "Golgi type I",
+        "Golgi type II"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Histology",
+      "lecture": 4,
+      "type": "mcq",
+      "text": "Which of the following nuclei has motor function?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Clarke nucleus",
+        "Intermediolateral nucleus",
+        "Posteromarginal nucleus",
+        "Anteromedial nucleus",
+        "Nucleus proprius"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 5,
+      "type": "mcq",
+      "text": "Which opioid is a long‑acting, pure agonist associated with milder withdrawal symptoms?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Heroin",
+        "Morphine",
+        "Methadone",
+        "Fentanyl",
+        "Codeine"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 5,
+      "type": "mcq",
+      "text": "A patient is found unconscious with pinpoint pupils and hypothermia, suspected heroin intoxication. Which drug should be administered?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Naltrexone",
+        "Methadone",
+        "Buprenorphine",
+        "Naloxone",
+        "Clonidine"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 5,
+      "type": "mcq",
+      "text": "Which opioid acts as a partial agonist at the μ receptor and is used in opioid dependence management?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Morphine",
+        "Methadone",
+        "Buprenorphine",
+        "Naloxone",
+        "Fentanyl"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 5,
+      "type": "mcq",
+      "text": "An alcoholic patient shows dependence related to activation of opioid receptors. Which drug is used for treatment?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Naltrexone",
+        "Methadone",
+        "Buprenorphine",
+        "Naloxone",
+        "Clonidine"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 5,
+      "type": "mcq",
+      "text": "Which drug can be used to manage fentanyl intoxication?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Naltrexone",
+        "Methadone",
+        "Buprenorphine",
+        "Naloxone",
+        "Clonidine"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which correctly describes the difference between tramadol and morphine?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Tramadol is a mixed opioid–nonopioid analgesic that increases serotonin and norepinephrine, while morphine is a pure opioid agonist",
+        "Tramadol is a pure opioid agonist, morphine is mixed",
+        "Both act only on μ receptors",
+        "Morphine increases serotonin and norepinephrine, tramadol does not",
+        "Tramadol has no effect on opioid receptors"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which drug is associated with livedo reticularis as a side effect?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Amantadine",
+        "Levodopa",
+        "Selegiline",
+        "Bromocriptine",
+        "Entacapone"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which anti‑Parkinsonian drug commonly produces atropine‑like adverse effects (dry mouth, blurred vision)?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Levodopa",
+        "Bromocriptine",
+        "Benztropine",
+        "Amantadine",
+        "Selegiline"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which drug is used as a rescue therapy to manage sudden episodes of motor deterioration in Parkinson’s disease?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Apomorphine",
+        "Levodopa",
+        "Bromocriptine",
+        "Selegiline",
+        "Amantadine"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which drug is used as a rescue medication in off akinesia?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Selegiline",
+        "Levodopa",
+        "Bromocriptine",
+        "Apomorphine",
+        "Entacapone"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which drug is used for tremors (in Parkinson’s)?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Levodopa",
+        "Bromocriptine",
+        "Benztropine",
+        "Amantadine",
+        "Selegiline"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which drug can be used to control tremors in a patient with benign prostatic hyperplasia?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Amantadine",
+        "Levodopa",
+        "Selegiline",
+        "Propranolol",
+        "Entacapone"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pathology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Modes of infection in pyogenic meningitis include all EXCEPT:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Droplet infection",
+        "Blood transfusion",
+        "Local spread from paranasal sinuses",
+        "Via skin",
+        "Direct implantation in case of skull fracture"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Pathology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "CSF in acute septic meningitis does NOT show:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Increased amount",
+        "Increased protein content",
+        "Increased sugar content",
+        "Polymorphonuclear cells",
+        "Organisms"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Pathology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "CSF shows cobweb coagulum of fibrin on standing in case of:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Acute pyogenic meningitis",
+        "Chronic meningitis",
+        "Brain abscess",
+        "Encephalitis",
+        "Cerebral infarction"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Pathology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Cerebellar brain abscess is usually a complication of:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Suppurative otitis media",
+        "Suppurative lung diseases",
+        "Sinusitis",
+        "Skull fractures",
+        "Systemic pyaemia"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pathology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Gliosis means:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Regeneration of the brain tissue",
+        "Necrosis of the brain tissue",
+        "Fibrosis of the brain tissue",
+        "None of the above"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pathology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Infection spreads from suppurative lung diseases to the brain via:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Vertebral arteries",
+        "Vertebral veins",
+        "Local extension",
+        "Peripheral nerves",
+        "None of the above"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pathology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Poliomyelitis is a:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Bacterial infection",
+        "Viral infection",
+        "Fungal infection",
+        "Parasitic infection",
+        "None of the above"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pathology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Poliomyelitis is usually an infection of:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Cerebral tissue",
+        "Cerebellar tissue",
+        "Anterior horn cells of the spinal cord",
+        "Posterior horn cells of the spinal cord",
+        "Peripheral nerves"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pathology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Mode of infection in poliomyelitis is:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Ingestion of contaminated food or drink",
+        "Droplet infection",
+        "Blood spread from a septic focus",
+        "Direct spread from air sinuses"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pathology",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Muscle paralysis in case of poliomyelitis is due to:",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": ""
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Nerve cell group have same function inside CNS:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "decussation",
+        "fasciculus",
+        "tract",
+        "Nucleus"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Nerve group cell outside CNS:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "decussation",
+        "Ganglia",
+        "tract",
+        "Nucleus"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Nerve group cell with same origin, function inside CNS:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "decussation",
+        "Ganglia",
+        "tract",
+        "fasciculus"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Nerve group cell with different origin , function:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "decussation",
+        "lemniscus",
+        "tract",
+        "fasciculus"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Crossing of fibers from both sides in middle line:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "decussation",
+        "lemniscus",
+        "tract",
+        "fasciculus"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Ascending sensory bundle in brain stem, end in diencephalon:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "decussation",
+        "tract",
+        "lemniscus",
+        "fasciculus"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Posterior column lies between:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "posterior median septum, anterior horn",
+        "posterior median septum, posterior horn",
+        "anterior median fissure, posterior horn",
+        "anterior median fissure , anterior horn"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Anterior column lies between:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "posterior median septum, anterior horn",
+        "posterior median septum, posterior horn",
+        "anterior median fissure, posterior horn",
+        "anterior median fissure , anterior horn"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Lateral column lies between:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "posterior median septum , anterior horn",
+        "anterior column, posterior column",
+        "anterior median fissure, posterior horn",
+        "posterior median fissure , anterior horn"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Posterior column is ........ while lateral, anterior is............",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "ascending only , (descending, ascending)",
+        "ascending only , descending only",
+        "descending only, ascending only",
+        "descending only , (descending, ascending)"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Commissural Nuclei is between:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "posterior, anterior column",
+        "posterior, lateral column",
+        "sensory, motor Nuclei",
+        "None of the above"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Central canal in CNS is lined by:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "simple squamous epithelium",
+        "simple cubical epithelium",
+        "simple columnar epithelium",
+        "stratified cubical epithelium"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which Nuclei is present in lateral horn?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "sensory",
+        "motor",
+        "commissural",
+        "sympathetic"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Sympathetic Nuclei is present in:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "thoracic, upper 2 lumbar",
+        "thoracic, sacral",
+        "cervical, upper 2 thoracic",
+        "sacral, coccygeal"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Anterior column is present between:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "posterior medium septum, posterior horn",
+        "posterior medium septum , posterior horn",
+        "anterior medium fissure, anterior horn",
+        "anterior medium fissure , posterior horn"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Grey matter is .......... While white matter is ...........",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "peripheral, central",
+        "central, peripheral",
+        "All central",
+        "All peripheral"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "All characters of proprioception pathway except:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "large cell in spinal ganglia, thick unmyleinated nerve fiber",
+        "enter CNS from medial division of posterior column of white matter",
+        "medium cell in spinal ganglia, thin unmyleinated fiber",
+        "long ascending as Gracile , cuneate tract"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "First order Neuron in proprioception path way end in:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "upper half of spinal cord then ascend as tract",
+        "closed medulla",
+        "open medulla",
+        "VPL of thalamus"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Second order Neuron start in ........., going via ...........",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "upper half of spinal , medulla",
+        "medulla, medial lemniscus",
+        "medulla , thalamus",
+        "lower half of spinal , pons"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Third order Neuron start in ......... going via ...........",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "medulla, cerebral cortex area 3,1,2",
+        "pons , cerebral cortex area 3,1,2",
+        "pons, cerebral cortex area 3,1,2",
+        "thalamus , cerebral cortex area 3,1,2"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Gracile tract arise from:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "sacral , lumbar, lower thoracic",
+        "sacral , lumbar, only",
+        "coccygeal , sacral, lumbar",
+        "cervical , upper thoracic"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Cuneate tract arise from:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "sacral , lumbar, lower thoracic",
+        "sacral , lumbar, only",
+        "coccygeal , sacral, lumbar",
+        "cervical , upper thoracic"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "All characters of medial lemniscus except:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "arise from upper closed medulla",
+        "cross from opposite side to thalamus",
+        "arise from pons in brain stem",
+        "Also called sensory decussation"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "........... means sensation of movement, vibration, position",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "fine touch",
+        "crude touch",
+        "pain, temperature",
+        "proprioception"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "........... tactile localization, discrimination",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "fine touch",
+        "crude touch",
+        "pain, temperature",
+        "proprioception"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "All receptors of proprioception except:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "tendon spindle",
+        "muscle spindle",
+        "Merkel",
+        "Pacinian corpuscle"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "All receptors of fine touch except:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Meissner corpuscle",
+        "Merkel disc",
+        "Ruffini disc",
+        "tendon spindle"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Gracile, cuneate tract are:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "on same side",
+        "on opposite side",
+        "may be same or opposite side"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Axon in proprioception ascend in:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "genu of internal capsule",
+        "posterior limb of internal capsule",
+        "anterior limb of internal capsule"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Receptors of crude touch are:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Meissner corpuscle",
+        "Merkel disc , free nerve ending",
+        "peritrichial nerve ending",
+        "All the above"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "All characters of crude touch except:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "medium sized cell in spinal ganglia",
+        "enter medial division of posterior root",
+        "small sized cell in spinal ganglia",
+        "end in cerebral cortex area 3,1,2"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "First order neuron in crude touch end in:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "posterior root",
+        "anterior root",
+        "lateral root",
+        "None of above"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Second order neuron starts in ....... goes via ...........",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "medulla , spinal lemniscus",
+        "MSN , spinal lemniscus",
+        "MSN , thalamus",
+        "pons, thalamus"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Spinal Cord Tracts",
+      "chapterId": 6,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Ventral spinothalamic tract is:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "on same side",
+        "on opposite side",
+        "ascend in pons then thalamus",
+        "b, c"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Spinal lemniscus made by joining:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "ventral, dorsal spinothalamic",
+        "ventral , lateral spinothalamic",
+        "dorsal, lateral spinothalamic",
+        "None of above"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Receptors of pain, temperature are:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Merkel disc",
+        "free nerve ending",
+        "Ruffini corpuscle",
+        "muscle spindle"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "All characters of pain, temperature pathway except:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "small cell in spinal ganglia",
+        "enter lateral division of posterior root",
+        "medium cell in spinal ganglia that enter medial division of posterior root",
+        "have free nerve ending"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "First order neuron of pain, temperature start in ......., go via ...........",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "small cell in spinal ganglia, lateral division of posterior root",
+        "small cell in spinal ganglia, medial division of posterior root",
+        "medium cell in spinal ganglia, lateral division of posterior root",
+        "large cell in spinal ganglia, medial division of posterior root"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Thalamus & Hypothalamus",
+      "chapterId": 3,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "All characters of lateral spino-thalamic tract except:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "arise from SGR",
+        "arise at same side",
+        "arise at opposite side",
+        "ascend in pons"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Second order neuron in pain, temperature start in ......., go via ...........",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "SGR, spinal lemniscus",
+        "SGR, thalamus",
+        "MSN, spinal lemniscus",
+        "thalamus, cerebral cortex"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "All characters of proprioception pathway of face, head except:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "unipolar nerve with no ganglia",
+        "multipolar nerve with ganglia",
+        "mesencephalic nucleus is first order neuron",
+        "main sensory nucleus is second order neuron"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "First order neuron in touch from head face is .............. while second order neuron is ..........",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "mesencephalic nucleus, MSN",
+        "MSN, trigeminal nucleus",
+        "trigeminal nucleus, MSN",
+        "Principal sensory nucleus, MSN"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "First order neuron in pain, temperature from head face is .............. while second order neuron is ..........",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "trigeminal nucleus, spinal nuclei",
+        "MSN, trigeminal nucleus",
+        "mesencephalic nucleus, MSN",
+        "Principal sensory nucleus, MSN"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Lemniscus of pathway from face and head called:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "spinal",
+        "medial",
+        "lateral",
+        "trigeminal"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Spinal Cord Tracts",
+      "chapterId": 6,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "All characters of dorsal spinocerebellar tract except:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "arise from clark nucleus (C8-L2)",
+        "ascending in white matter then closed medulla then end in cerebellum",
+        "carry impulse from lower limb only on same side",
+        "carry impulse from lower limb, trunk in opposite side"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Spinal Cord Tracts",
+      "chapterId": 6,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "All characters of ventral spinocerebellar tract except:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "ascend in all level of white matter then brain stem",
+        "carry impulse from trunk on same side only",
+        "carry impulse from lower limb on same or opposite side",
+        "arise from cells in posterior horn (V-VII)"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Spinal Cord Tracts",
+      "chapterId": 6,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Dorsal spinocerebellar enters cerebellum through ............. while ventral spinocerebellar through.............",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Superior cerebellar peduncle, inferior cerebellar peduncle",
+        "inferior cerebellar peduncle, superior cerebellar peduncle",
+        "Superior cerebellar peduncle only",
+        "inferior cerebellar peduncle only"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "All characters of spino-tectal tract except:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "arise from nerve cell in posterior horn (I,V)",
+        "ascend at all level of spinal on opposite side then tectum in mid brain",
+        "drive reflex, movement of eye, head",
+        "ascend in inferior olivary nucleus in medulla"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "All characters of spino-olivary tract except:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "arise from nerve cell in posterior horn (IV,V)",
+        "ascend at all level of spinal on opposite side",
+        "drive reflex, movement of eye, head",
+        "ascend in inferior olivary nucleus in medulla"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "All the following paired tract except:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "vestibulo-spinal tract",
+        "reticulospinal tract",
+        "sulco-marginal tract",
+        "tecto-spinal tract"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "All the following is single tract except:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "sulco-marginal tract",
+        "tecto-spinal tract",
+        "rubro-spinal tract",
+        "olivo-spinal tract"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "All the following direct tract except:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "lateral reticulo-spinal tract, rubro-spinal tract",
+        "olivo-spinal and vestibulo-spinal tract",
+        "ventral reticulo-spinal tract and sulco-marginal tract",
+        "none of the above"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Tecto-spinal tract arise from:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "inferior olivary nucleus",
+        "superior colliculus of tectum in mid brain",
+        "red nucleus",
+        "medial longitudinal bundle"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "All those tract end in all level of spinal cord except:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "lateral vestibulo-spinal tract",
+        "sulco-marginal tract",
+        "rubro-spinal and ventral vestibulo-spinal tract",
+        "reticulo-spinal tract"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Molecular layer Contains all the following except:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "outer stellate, inner basket",
+        "dendrite of purkinje cell",
+        "Mossy fiber, dendrite of granular cell",
+        "Axon of granular cell",
+        "dendrite of golgi cell"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Cerebrum & Cortical Functions",
+      "chapterId": 2,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Primary integrative neuron of cerebral Cortex:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "granular cell",
+        "purkinje cell",
+        "golgi cell",
+        "Molecular cells"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Large pyriform multipolar Cell:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "granular cell",
+        "purkinje cell",
+        "golgi cell",
+        "Molecular cells"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "All the following characters of Golgi Cell except:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "large cell, many, long dendrite",
+        "dendrite extend in all cortex layer",
+        "its axon in granular layers that synapse with granular cell",
+        "its dendrite in golgi layer only"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "-- Contains T-shaped axon in Molecular layer:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "granular cell",
+        "purkinje cell",
+        "golgi cell",
+        "Molecular cells"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Purkinje cells are stimulated by the following except:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "climbing fibers",
+        "mossy fiber",
+        "Basket, golgi cell",
+        "parallel fiber"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Cerebral medulla contain all the following except:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Afferent fiber",
+        "Purkinje cell",
+        "dentate nuclei",
+        "purkinje fiber axon"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Medial longitudinal bundle continue in spinal cord through:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "vestibulospinal, rubrospinal",
+        "sulcomarginal, reticulospinal",
+        "reticulospinal, olivospinal",
+        "vestibulospinal, sulcomarginal"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Border cell attached by:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "tight junction",
+        "desmosome",
+        "fascia adherens",
+        "b,c",
+        "a,b"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Leptomeninges is membrane between:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "dura, arachnoid",
+        "dura, pia",
+        "pia, arachnoid",
+        "All the above"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "One layer of modified fibroblast:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "pia matter",
+        "dura matter",
+        "arachnoid matter",
+        "Purkinje cell"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "-- present between extracerebral capillary, subarachnoid space:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "blood brain barrier",
+        "arachnoid barrier",
+        "CSF barrier",
+        "All the following"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Blood brain barrier formed of all the following except:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "thick basement membrane",
+        "tight junction between ependymal cell",
+        "non fenestrated endothelium",
+        "end feed of astrocyte"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Type of junction between endothelium or ependymal:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "desmosome",
+        "gap junction",
+        "tight junction",
+        "Junctional Complex"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The blood CSF barrier is formed of all the following except:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "endothelial cells of the blood capillaries",
+        "basement membrane of the blood capillaries",
+        "foot processes of the astrocytes",
+        "ependymal cells that are connected by tight junctions"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The blood brain barrier is formed of all the following except:",
+      "explanation": "",
+      "keyConcept": "N/A",
+      "options": [
+        "endothelial cells of blood capillaries",
+        "basement membrane of the blood capillaries",
+        "foot processes of the astrocytes",
+        "ependymal cells that are connected by tight junctions"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The central nervous system is soft because:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "It consists of neurons joined by connective tissue.",
+        "It is rich in blood vessels.",
+        "It does not contain connective tissue.",
+        "It contains fat cells."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is/are true for central nervous system?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "I only.",
+        "II only.",
+        "II and III only.",
+        "I, II and III."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The distribution of grey and white matter depends on the distribution of:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Blood vessels.",
+        "Myelin.",
+        "Pigments.",
+        "Astrocytes."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The central canal is lined by:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Simple squamous epithelium.",
+        "Stratified squamous epithelium.",
+        "Simple cuboidal epithelium partially ciliated.",
+        "Simple columnar non ciliated epithelium."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "One of the followings is not present in grey matter:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Nerve cells.",
+        "Myelinated nerve fibres.",
+        "Neuroglial cells.",
+        "Unmyelinated nerve fibres."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "One of the following is a character of lumbar level of spinal cord?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "It never has lateral horns.",
+        "Small in size.",
+        "Smallest white matter / grey matter ratio.",
+        "Ventral central canal."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is a character of thoracic level of spinal cord?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Oval in shape.",
+        "Large in size.",
+        "It has 4 horns.",
+        "It has 2 lateral horns."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is a character of cervical level of spinal cord?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Rounded in shape.",
+        "Has largest white matter/grey matter ratio.",
+        "Small in size.",
+        "Central canal is central."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "One of the following tracts carries sensations to subcortical level:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Dorsal spinocerebellar tract.",
+        "Gracile tract.",
+        "Lateral spinothalamic.",
+        "Ventral spinothalamic."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Receptor/s for proprioception is/are:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "I only.",
+        "II only.",
+        "III only.",
+        "I, II and III."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is a receptor for vibration?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Meissner's corpuscle.",
+        "Ruffini's corpuscle.",
+        "Merkel's disc.",
+        "Pacinian corpuscle."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The first order neuron in proprioception from the lower half of the body is in:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Gracile nucleus.",
+        "Cuneate nucleus.",
+        "Spinal ganglia.",
+        "Main sensory nucleus."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The first order neuron in proprioception from the upper half of the body is in:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Gracile nucleus.",
+        "Cuneate nucleus.",
+        "Spinal ganglia.",
+        "Main sensory nucleus."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The second order neuron in proprioception from lower half of the body is in:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Gracile nucleus on the same side.",
+        "Cuneate nucleus on the same side.",
+        "Gracile nucleus on opposite side.",
+        "Cuneate nucleus on opposite side."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Internal arcuate fibres are present in:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Superior midbrain.",
+        "Inferior midbrain.",
+        "Open medulla.",
+        "Closed medulla."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "External arcuate fibres carry impulses to:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Thalamus.",
+        "Cerebral cortex.",
+        "Cerebellum.",
+        "Pons."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "One of the following is true about gracile tract:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Presents only in cervical & thoracic levels of spinal cord.",
+        "Carries proprioception from the upper half of the body.",
+        "Terminates at gracile nucleus in medulla.",
+        "Arises from spinal ganglia in upper half of body."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "One of the following is true about cuneate tract:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "It arises from spinal ganglia in upper half of body.",
+        "It arises from cuneate nucleus on same side.",
+        "It arises from cuneate nucleus on opposite side.",
+        "It is present in lateral column of white matter in spinal cord."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Anterior external arcuate fibres connect:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Gracile and cuneate nuclei of the opposite side with the cerebellum.",
+        "Gracile and cuneate nuclei of the same side with the cerebellum.",
+        "Gracile and cuneate nuclei of the opposite side with the spinal cord.",
+        "Gracile and cuneate nuclei of the same side with the spinal cord."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Posterior external arcuate fibres connect:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Gracile and cuneate nuclei of the opposite side with the cerebellum.",
+        "Gracile and cuneate nuclei of the same side with the cerebellum.",
+        "Gracile and cuneate nuclei of the opposite side with the spinal cord.",
+        "Gracile and cuneate nuclei of the same side with the spinal cord."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Anterior external arcuate fibres relay in:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Arcuate nucleus of the same side.",
+        "Arcuate nucleus of the opposite side.",
+        "Inferior olivary nucleus.",
+        "Dentate nucleus."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Arcuate fibres carry:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Proprioception from the body.",
+        "Pain and temperature from the head.",
+        "Pain and temperature from the body.",
+        "Crude touch from head."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Internal arcuate fibres:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Arise from gracile and cuneate nuclei.",
+        "Terminate at gracile and cuneate nuclei.",
+        "Form lateral lemniscus.",
+        "Carry proprioceptive impulses from the head."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Origin of medial lemniscus is:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Gracile and cuneate nuclei of same side.",
+        "Gracile and cuneate nuclei of opposite side.",
+        "Arcuate nucleus of same side.",
+        "Arcuate nucleus of opposite side."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Decussation of internal arcuate fibres takes place in:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Spinal cord.",
+        "Upper part of closed medulla.",
+        "Lower part of closed medulla.",
+        "Open medulla."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "One of the following is true about first order neurons in proprioception of the body:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "They are the small cells in spinal ganglia.",
+        "They have thin unmyelinated nerve fibres.",
+        "Their central branches enter the spinal cord through the lateral division of the posterior roots.",
+        "They give ascending and descending branches in spinal cord."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is involved in the blood brain barrier?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Astrocytes.",
+        "Ependymal cells.",
+        "Oligodendrocytes.",
+        "Schwann cells."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "One of the following statements is true:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "20% of the pyramidal fibers cross in pyramidal decussation.",
+        "The first order neuron for proprioception from head is in spinal nucleus of trigeminal nerve.",
+        "There are 3 vestibular nuclei.",
+        "The ventral vestibulospinal tract passes in medial longitudinal bundle."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The first order neurons in proprioception pathway from face and head are in:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Trigeminal ganglion.",
+        "Dorsal root ganglion.",
+        "Spinal nucleus of trigeminal nerve.",
+        "Mesencephalic nucleus of trigeminal nerve."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The first order neurons for pain and temperature pathway from face and head are located in:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Trigeminal ganglion.",
+        "Dorsal root ganglion.",
+        "Mesencephalic nucleus of trigeminal nerve.",
+        "Spinal nucleus of trigeminal nerve."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The second order neuron in simple touch pathway from face and head are in:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Trigeminal ganglion.",
+        "Main sensory nucleus.",
+        "Spinal nucleus of trigeminal nerve.",
+        "Mesencephalic nucleus of trigeminal nerve."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Trigeminal lemniscus is present in:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Medulla and Pons.",
+        "Pons and mid brain.",
+        "Mid brain.",
+        "Medulla."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The final neurons in the auditory pathway are cells of:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Medial geniculate body.",
+        "Lateral geniculate body.",
+        "Inferior colliculus.",
+        "Superior colliculus."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Arachnoid barrier is the barrier between:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "extracerebral capillaries and subarachnoid space.",
+        "blood and CSF.",
+        "blood and brain cells.",
+        "subarachnoid space and CSF."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "One of the following is a component of Blood CSF barrier:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Border cells of arachnoid matter.",
+        "tight junctions between ependymal cells.",
+        "astrocytes.",
+        "Trabecular cells of arachnoid matter."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Blood brain barrier is formed of tight junctions between:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "fenestrated endothelium.",
+        "end feet of astrocytes.",
+        "non fenestrated endothelium.",
+        "Border cells."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Border cells can be found in:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "pia matter.",
+        "arachnoid matter.",
+        "dura matter.",
+        "pons."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Pia matter is formed of:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "simple squamous epithelium.",
+        "simple columnar epithelium.",
+        "simple columnar ciliated epithelium.",
+        "modified fibroblasts."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "One of the following is true about climbing fibres:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "They arise from pontine nuclei.",
+        "They synapse with granular cells.",
+        "Each fibre synapse with one Purkinje cell.",
+        "They carry inhibitory signals."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "If a patient cannot recognize an unseen familiar object placed in his hand, the sensory tract that might be affected is:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Dorsal spinocerebellar tract",
+        "Cuneate tract",
+        "Spino-olivary tract",
+        "Ventral spinothalamic tract"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "A 5-year-old girl diagnosed with meningitis. The doctor prescribes her antibiotics. Which of the following statements should be considered true?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "The blood brain barrier normally allows the passage of all antibiotics.",
+        "The blood brain barrier does not allow the passage of antibiotics due to their big molecular size.",
+        "The systemic administration of penicillin normally results in large amount entering CNS.",
+        "The meninges become more permeable to penicillin at the site of inflammation and its concentration rises in cerebrospinal fluid."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "A patient with lesion in the right gracile nucleus is expected to have diminished:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "tactile localization at the right arm",
+        "fine touch at the left leg",
+        "stereognosis at the right hand",
+        "tactile discrimination at the right leg"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "An injury to the posterior column of the lumbar spinal cord may be manifested as loss of:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "fine touch at the upper limbs.",
+        "tactile discrimination at the lower limbs",
+        "crude touch at the upper limbs",
+        "pain & temperature at the lower limbs"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following can be found in a patient diagnosed with syringomyelia?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "loss of pain and temperature in the upper limbs and chest.",
+        "loss of touch in the upper limbs and chest",
+        "loss of pain and temperature in the abdomen and lower limbs",
+        "loss of touch in the abdomen and lower limbs"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "A patient with defective pain, temperature, simple touch and proprioception sensations from one side of the face and scalp probably has lesion in:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "spinal lemniscus",
+        "trigeminal lemniscus",
+        "lateral lemniscus",
+        "medial lemniscus"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Examination of the lower limbs in a patient diagnosed with tabes dorsalis can reveal one of the following:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "bilateral loss of pain and temperature",
+        "bilateral loss of crude touch",
+        "sensory ataxia",
+        "Hypertonia"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Concerning the lateral ventricle, choose one correct answer:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Its anterior horn lies in the parietal lobe.",
+        "Its posterior horn lies in the temporal lobe.",
+        "Is the only cavity in the telencephalon.",
+        "Has no choroid plexus."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Concerning the cerebrospinal fluid, choose one correct answer:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Produced mainly in the subarachnoid space.",
+        "Produced by the arachnoid granulations.",
+        "Third ventricle has a choroid plexus in its roof.",
+        "Fourth ventricle has a choroid plexus in its floor."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Concerning the choroid plexus; choose one best answer:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "All ventricles have choroids plexuses.",
+        "Is formed by a plexus of capillaries and a thin layer of cuboidal epithelium.",
+        "Is responsible for absorption of the cerebrospinal fluid.",
+        "All of the choroids plexuses are present in the floor of the ventricles."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Concerning the fourth ventricle; choose the most correct answer:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Its floor is formed by the closed medulla and pons.",
+        "Its roof is formed by the superior and inferior medullary vela.",
+        "Its choroids plexus is present in the floor of the ventricle.",
+        "It has a communication with the lateral ventricle."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "One of the following structures is a content of interpeduncular fossa:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Mammillary bodies.",
+        "Tuberculum cinereum.",
+        "anterior perforated substance.",
+        "Optic tract."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Concerning the interpeduncular fossa, one of the following is a boundary of the fossa:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Cerebellar peduncles.",
+        "Optic tract.",
+        "Optic nerve.",
+        "Tuber cinereum."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "One of the following is correct:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "The anterior perforated substance lies on the medial side of the optic chiasma.",
+        "The olfactory nerve filaments end in the olfactory bulb.",
+        "The lateral olfactory root ends in the cuneus.",
+        "The infundibulum connects the tuber cinereum with the parotid gland."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Cranial Nerves",
+      "chapterId": 7,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "One of the following cranial nerves contains sensory nerves fibers:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Occulomotor nerve.",
+        "Trochlear nerve.",
+        "Trigeminal nerve.",
+        "Abducent nerve."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Cranial Nerves",
+      "chapterId": 7,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "One of the following cranial nerves is attached to the posterior aspect of the brain stem:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Abducent nerve.",
+        "Vagus nerve.",
+        "Occulomotor nerve.",
+        "Trochlear nerve."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The cisterna magna of subarachnoid space is a name given to the:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Interpeduncular cistern.",
+        "Cistern of the corpus callosum.",
+        "Cistern of the lateral fissure.",
+        "Cerebellomedullary cistern."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Regarding the cerebellum, choose one correct answer:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Middle cerebellar peduncle connects it to medulla oblongata.",
+        "Spinocerebellum regulates muscle tone.",
+        "Neocerebellum is concerned with equilibrium.",
+        "Paleocerebellum is concerned with planning and programming movement."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "In lateral medullary syndrome (Wallenberg) the lesion is in one of the following arteries:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Posterior inferior cerebellar artery.",
+        "Anterior inferior cerebellar artery.",
+        "Superior cerebellar artery.",
+        "Vertebral artery."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "A patient shows definite weakness of the right facial muscles while facial skin sensation is normal. On testing of the ocular movements, there is evidence of slight weakness of the right lateral rectus muscle. Radiology reveals the presence of tumour. Locate the possible site of the tumour.",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Inferior level of pons",
+        "Closed medulla at level of motor decussation.",
+        "Upper level of pons",
+        "Open medulla."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "A patient complains of tremors in the right hand while doing fine movements. When asked to walk along a straight line on the floor, the patient sways over to the right side. When asked to touch his nose with his right index finger, the right hand displays tremor, and the finger tends to overshoot the target. At surgery, he is found to have tumour. Locate the possible site of tumour.",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Cerebellum on both sides.",
+        "Spinal cord on both sides.",
+        "Spinal cord on right side.",
+        "Cerebellum on right side."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "A female patient has reduced pain and temperature sense in upper limbs and chest but her sense of tactile discrimination is perfectly normal in these areas. State which tract/tracts is/are involved and name the disease.",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Ventral spinothalamic – syringomyelia.",
+        "Lateral spinothalamic and gracile – Tabes dorsalis.",
+        "Ventral and lateral spinothalamic – syringomyelia.",
+        "Lateral spinothalamic – syringomyelia."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The neurologist observes a patient with a high stamping gait. He asks the patient to stand and to close his eyes. The patient immediately starts to sway over. Name the ascending pathways that are involved and name the disease.",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Gracile on one side – Tabes dorsalis.",
+        "Cuneate on one side – Tabes dorsalis.",
+        "Gracile on both sides – Tabes dorsalis.",
+        "Cuneate on both sides – Tabes dorsalis."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "A 25‑year‑old woman presents with proximal, jerky, non‑purposeful movements of the limbs accompanied by hypotonia. Degeneration of which central nervous system structure is most likely responsible?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Cerebellar vermis",
+        "Substantia nigra pars compacta",
+        "Caudate nucleus",
+        "Anterior horn cells of the spinal cord",
+        "Frontal and temporal neocortex"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Cerebrum & Cortical Functions",
+      "chapterId": 2,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "A 52‑year‑old man has had progressive headaches and concentration difficulties for two months. His behaviour becomes odd, and he then suffers a generalised seizure. MRI shows a large, necrotic mass in the left cerebral hemisphere that crosses the corpus callosum into the right hemisphere. Which neoplasm is most likely?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Pilocytic astrocytoma",
+        "Meningioma",
+        "Metastatic adenocarcinoma",
+        "Medulloblastoma",
+        "Glioblastoma"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "A 23‑year‑old man is found unconscious after a fall. CT shows a biconvex, lens‑shaped hyperdensity between the skull and the dura. What is the most probable cause?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Hypertension",
+        "Arteriovenous malformation",
+        "Trauma",
+        "Atherosclerosis",
+        "Ruptured saccular aneurysm"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "A newborn boy has an underdeveloped mandible and zygomatic bone, low‑set slanting eyes, and facial asymmetry. Which pharyngeal arch is most likely defective?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "First arch",
+        "Second arch",
+        "Third arch",
+        "Fourth arch",
+        "Sixth arch"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "A 10‑year‑old girl has a cystic cerebellar tumour. Microscopy shows spindle cells with hair‑like processes, microcysts, and Rosenthal fibres. What is the diagnosis?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Pilocytic astrocytoma",
+        "Medulloblastoma",
+        "Ependymoma",
+        "Haemangioblastoma",
+        "Oligodendroglioma"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "A 28‑year‑old woman has unilateral tinnitus, vertigo, and progressive hearing loss. MRI reveals a 3 cm mass at the cerebellopontine angle. Which microscopic finding is most characteristic?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Glandular differentiation",
+        "Pseudorosettes in a fibrillar background",
+        "Whorled spindle cells with psammoma bodies",
+        "Hypo‑ and hypercellular areas (Antoni A and B)",
+        "Lipid‑laden stromal cells"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "A 5‑year‑old boy has recent‑onset gait instability and ataxia. MRI shows a midline posterior fossa mass. Biopsy reveals sheets of primitive small round cells with many mitoses. Which cytogenetic abnormality is most common?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "CAG trinucleotide repeat expansions",
+        "Loss of the short arm of chromosome 17 (17p)",
+        "Loss of the long arm of chromosome 17 (17q)",
+        "WNT pathway activation",
+        "Apolipoprotein E4 allele"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "A 32‑year‑old woman has difficulty writing, right arm weakness, and reduced light touch on the left leg. CSF shows elevated IgG, mononuclear cells, and oligoclonal bands. Which pathologic finding is most likely?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Lewy bodies in substantia nigra",
+        "Perivascular lymphocytes with demyelinated axons in white matter",
+        "Neurofibrillary tangles and neuritic plaques",
+        "Multinucleated cells in grey and white matter",
+        "Atrophy of caudate and putamen"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "A 56‑year‑old man with polycystic kidney disease develops sudden severe headache and nuchal rigidity. CT shows subarachnoid haemorrhage. What is the most likely cause?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Trauma",
+        "Ruptured saccular aneurysm",
+        "Arteriovenous malformation",
+        "Hypertensive bleed",
+        "Middle meningeal artery rupture"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "A 32‑year‑old woman has right arm weakness and reduced light touch on the left leg. CSF shows oligoclonal bands. The most likely diagnosis is:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Parkinson disease",
+        "Alzheimer disease",
+        "Multiple sclerosis",
+        "Huntington disease",
+        "Amyotrophic lateral sclerosis"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which part of the anterior wall of the third ventricle is formed by a thin membrane derived from the telencephalon?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Tela choroidea",
+        "Pineal body",
+        "Tegmentum of the midbrain",
+        "Lamina terminalis",
+        "Thalamus"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "All of the following are constituents of the lateral wall of the cavernous sinus except:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Oculomotor nerve",
+        "Trochlear nerve",
+        "Ophthalmic nerve",
+        "Maxillary nerve",
+        "Mandibular nerve"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Cranial Nerves",
+      "chapterId": 7,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which cranial nerve emerges from the anterior aspect of the medulla oblongata between the pyramid and the olive?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Glossopharyngeal",
+        "Vagus",
+        "Accessory",
+        "Hypoglossal",
+        "Abducens"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The internal arcuate fibres are axons of which nucleus?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Olivary",
+        "Arcuate",
+        "Accessory cuneate",
+        "Red",
+        "Cuneate"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Unconscious proprioception from the biceps brachii is carried primarily by which tract?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Gracile",
+        "Cuneate",
+        "Posterior spinocerebellar",
+        "Anterior spinocerebellar",
+        "Spino‑olivary"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which tract is responsible for spino‑visual reflexes (turning the head and eyes toward a cutaneous stimulus)?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Cuneocerebellar",
+        "Ventral spinothalamic",
+        "Lateral spinothalamic",
+        "Spinoreticular",
+        "Spinotectal"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "All of the following structures wind around the cerebral peduncle except:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Optic tract",
+        "Trochlear nerve",
+        "Posterior cerebral artery",
+        "Basal vein",
+        "Trigeminal nerve"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which structure is present at the level of the midbrain?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Arcuate nucleus",
+        "Trapezoid body",
+        "Vestibular nucleus",
+        "Central tegmental tract",
+        "Arcuate fibres"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The facial colliculus is formed by:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Motor fibres of the facial nerve",
+        "Abducent nucleus",
+        "Vestibular nucleus",
+        "Dorsal vagal nucleus",
+        "Hypoglossal nucleus"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The choroid plexus of the fourth ventricle is located in its:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Superior roof",
+        "Inferior roof",
+        "Lateral wall",
+        "Floor",
+        "Lateral recess only"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The median part of the upper lip (philtrum) is derived embryologically from the:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Frontal prominence",
+        "Intermaxillary segment",
+        "Lateral nasal prominence",
+        "Mandibular prominence",
+        "Maxillary prominence"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The lateral part of the upper lip is derived from the:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Maxillary prominence",
+        "Medial nasal prominence",
+        "Lateral nasal prominence",
+        "Intermaxillary segment",
+        "Frontal prominence"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "A newborn has an underdeveloped mandible, zygomatic bone, and low‑set ears. Which pharyngeal arch is defective?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "First arch",
+        "Second arch",
+        "Third arch",
+        "Fourth arch",
+        "Sixth arch"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which muscle develops from the first pharyngeal arch?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Platysma",
+        "Cricothyroid",
+        "Stylopharyngeus",
+        "Tensor veli palatini",
+        "Palatoglossus"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Cranial Nerves",
+      "chapterId": 7,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The branchial arch supplied by the glossopharyngeal nerve is the:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "First",
+        "Second",
+        "Third",
+        "Fourth",
+        "Sixth"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which receptor is specialised for tactile discrimination and two‑point discrimination?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Pacinian corpuscle",
+        "Ruffini ending",
+        "Free nerve ending",
+        "Krause end bulb",
+        "Meissner corpuscle"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which receptor helps a blind person read Braille by detecting fine texture and edges?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Plexus of Bonnet",
+        "Ruffini ending",
+        "Free nerve ending",
+        "Krause end bulb",
+        "Meissner corpuscle"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The plexus of Bonnet is best described as:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "A capsulated receptor with concentric lamellae",
+        "A mechanoreceptor around hair follicles",
+        "A thermoreceptor in the dermis",
+        "A nociceptor in the epidermis",
+        "A proprioceptor in joint capsules"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which receptors are located most deeply in the skin (dermis and hypodermis)?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Meissner and Merkel",
+        "Pacinian corpuscle and Ruffini endings",
+        "Krause end bulb and free nerve endings",
+        "Meissner and plexus of Bonnet",
+        "Merkel and free nerve endings"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which receptor has a motor efferent supply?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Pacinian corpuscle",
+        "Muscle spindle",
+        "Golgi tendon organ",
+        "Free nerve ending",
+        "Meissner corpuscle"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The Golgi tendon organ differs from the muscle spindle in that it:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Is stimulated by passive stretch",
+        "Lies parallel to extrafusal fibres",
+        "Lacks motor innervation",
+        "Has a connective tissue capsule",
+        "Is larger in size"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which lamina of the spinal cord corresponds to the substantia gelatinosa?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Lamina I",
+        "Lamina II",
+        "Lamina III",
+        "Lamina IV",
+        "Lamina V"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Clark’s nucleus (dorsal nucleus) is located in which lamina?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Lamina V",
+        "Lamina VI",
+        "Lamina VII",
+        "Lamina VIII",
+        "Lamina IX"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Gamma motor neurons are found in which lamina of the spinal cord?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Lamina I",
+        "Lamina II",
+        "Lamina V",
+        "Lamina IX",
+        "Lamina X"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "A patient with a spinal cord lesion has loss of vibration and position sense in both legs but normal pain and temperature sensation. Which tract is most likely affected?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Lateral spinothalamic",
+        "Anterior spinothalamic",
+        "Gracile",
+        "Cuneate",
+        "Spinocerebellar"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The reticular activating system (RAS) is best described by which statement?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Its neurons are located only in the medulla oblongata.",
+        "Its neurons can be activated by sensory signals from proprioceptors.",
+        "Its activity is decreased by stress.",
+        "It discharges inhibitory signals to spinal motor neurons.",
+        "It is inhibited by ephedrine."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which EEG wave pattern indicates deep (slow‑wave) sleep in an adult?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Alpha",
+        "Beta",
+        "Theta",
+        "Delta",
+        "Gamma"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Operant conditioning is a type of:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Non‑associative learning",
+        "Associative learning",
+        "Sensitisation",
+        "Habituation",
+        "Implicit memory"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Thalamus & Hypothalamus",
+      "chapterId": 3,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Stimulation of the lateral hypothalamic area in an experimental animal produces:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Feeding behaviour",
+        "Fear and aggression",
+        "Bradycardia",
+        "Oxytocin release",
+        "Hypothermia"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Semantic memory refers to:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Memory of personal events",
+        "Procedural (skill) memory",
+        "Memory of facts and general knowledge",
+        "Non‑declarative memory",
+        "Short‑term working memory"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The representational (non‑dominant) hemisphere in most people is described by which feature?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "It is responsible for language comprehension.",
+        "It always lies in the left hemisphere.",
+        "It has no known function.",
+        "It is concerned with analytical tasks.",
+        "It contains Broca’s area."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "GABA is an inhibitory neurotransmitter that increases the permeability of the postsynaptic membrane to which ion?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Sodium",
+        "Calcium",
+        "Bicarbonate",
+        "Chloride",
+        "Potassium"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The endogenous analgesia system includes which brain region?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Primary somatosensory cortex",
+        "Raphe magnus nucleus",
+        "Dorsal root ganglion",
+        "Periaqueductal grey",
+        "Supraoptic nucleus"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Fast pain (first pain) is transmitted to the CNS by which fibres?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Aα fibres",
+        "Aδ fibres",
+        "Aβ fibres",
+        "C fibres",
+        "B fibres"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following inhibits pain sensation?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Adaptation of pain receptors",
+        "Increased kinin release",
+        "Naloxone injection",
+        "Stimulation of opioid receptors",
+        "Activation of the lateral spinothalamic tract"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "During the cotton wool test for crude touch, the receptors responsible are:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Nociceptors",
+        "Thermoreceptors",
+        "Mechanoreceptors",
+        "Chemoreceptors",
+        "Proprioceptors"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Tactile discrimination (two‑point discrimination) is best tested by:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Tuning fork",
+        "Cotton wisp",
+        "Two‑point (Weber’s) compass",
+        "Hot and cold tubes",
+        "Reflex hammer"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which antiepileptic drug is associated with the highest risk of neonatal cleft lip and cleft palate?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Carbamazepine",
+        "Topiramate",
+        "Valproic acid",
+        "Phenytoin",
+        "Phenobarbital"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which drug is used as a rescue medication for sudden akinetic episodes (off‑periods) in advanced Parkinson’s disease?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Carbidopa",
+        "Selegiline",
+        "Apomorphine",
+        "Ropinirole",
+        "Benztropine"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Antipsychotic‑induced akathisia is best treated with:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Clozapine",
+        "Propranolol",
+        "Benztropine",
+        "Dantrolene",
+        "Bromocriptine"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The mood stabiliser with delayed onset, narrow therapeutic index, and requirement for blood level monitoring is:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Valproate",
+        "Carbamazepine",
+        "Lamotrigine",
+        "Lithium",
+        "Risperidone"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which combination of drugs should be avoided because both can cause agranulocytosis?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Haloperidol + Valproate",
+        "Lithium + Valproate",
+        "Risperidone + Carbamazepine",
+        "Quetiapine + Carbamazepine",
+        "Clozapine + Carbamazepine"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which antiepileptic is used as migraine prophylaxis and can cause weight loss and renal stones?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Levetiracetam",
+        "Carbamazepine",
+        "Ethosuximide",
+        "Phenytoin",
+        "Topiramate"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which antidepressant is approved for management of chronic neuropathic pain (e.g., diabetic neuropathy)?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Tranylcypromine",
+        "Phenelzine",
+        "Venlafaxine",
+        "Lithium",
+        "Bupropion"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which statement about ester local anesthetics is false?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "They are hydrolysed by plasma pseudocholinesterases.",
+        "Procaine is a member of this group.",
+        "They are shorter acting than amides.",
+        "They are less liable to induce allergy.",
+        "They are less liable to systemic toxicity than amides."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The only medically justified long‑term use of phenobarbital is for:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Schizophrenia",
+        "Insomnia",
+        "Anxiety",
+        "Alcohol withdrawal",
+        "Certain epilepsies"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The main benefit of adding carbidopa to levodopa in Sinemet is that carbidopa:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Inhibits peripheral MAO‑B",
+        "Inhibits peripheral aromatic L‑amino acid decarboxylase",
+        "Inhibits central COMT",
+        "Inhibits central MAO‑A",
+        "Increases dopamine release"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which opioid antagonist is also used to reduce alcohol craving?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Meperidine",
+        "Buprenorphine",
+        "Naltrexone",
+        "Naloxone",
+        "Methadone"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The potency of inhaled anaesthetics is quantitatively defined as the:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Blood/gas partition coefficient",
+        "Minimum alveolar concentration (MAC)",
+        "Cerebrovascular resistance",
+        "Volatility index",
+        "Oil/gas partition coefficient"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which antiviral drug is used to treat neonates with herpes simplex virus encephalitis?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Amantadine",
+        "Oseltamivir",
+        "Interferon",
+        "Acyclovir",
+        "Foscarnet"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "An important virulence factor of *Cryptococcus neoformans* is the production of:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "IgA protease",
+        "Catalase",
+        "A neurotoxin",
+        "Internalin",
+        "Melanin"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The vaccine used for protection against tetanus consists of:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Conjugate polysaccharide",
+        "Heat‑killed bacteria",
+        "Live attenuated bacteria",
+        "Polysaccharide capsule",
+        "Toxoid"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which characteristic is true of *Listeria monocytogenes*?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "It is strictly a human pathogen.",
+        "It can grow at refrigerator temperature (4°C).",
+        "It is catalase negative.",
+        "It is a Gram‑negative coccus.",
+        "It is an extracellular pathogen."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "In a suspected case of rabies, the most important specimen for virus detection is:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Blood",
+        "Faeces",
+        "Saliva",
+        "Skin swab",
+        "Throat swab"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which is a cannabinoid drug used for management of hashish (cannabis) dependence?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Dronabinol",
+        "Naltrexone",
+        "Naloxone",
+        "Clonidine",
+        "Disulfiram"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "In the urea cycle, which two compounds are end products (released from the cycle)?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Urea and citrulline",
+        "Urea and arginine",
+        "Urea and fumarate",
+        "Urea and ornithine",
+        "Urea only"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which enzyme is stimulated by cortisol to increase epinephrine synthesis?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Dopamine β‑hydroxylase",
+        "Phenylethanolamine N‑methyltransferase (PNMT)",
+        "Dopa decarboxylase",
+        "Tyrosine hydroxylase",
+        "N‑acetyltransferase"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which cofactor is required for the conversion of phenylalanine to tyrosine?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "FAD",
+        "NAD",
+        "ATP",
+        "PLP",
+        "Tetrahydrobiopterin (BH₄)"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The inborn error of branched‑chain amino acid metabolism that causes a burnt‑sugar odour in urine is:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Albinism",
+        "Alkaptonuria",
+        "Phenylketonuria",
+        "Homocystinuria",
+        "Maple syrup urine disease"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Thiamine pyrophosphate (TPP) is a coenzyme for the oxidative decarboxylation of:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Glucose",
+        "α‑amino acids",
+        "Triglycerides",
+        "α‑Keto acids",
+        "Fatty acids"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Pellagra (dermatitis, diarrhoea, dementia, death) is caused by deficiency of:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Thiamine (B₁)",
+        "Riboflavin (B₂)",
+        "Pyridoxine (B₆)",
+        "Cobalamin (B₁₂)",
+        "Niacin (B₃)"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which vitamin is directly involved in one‑carbon transfer reactions (e.g., purine and thymidylate synthesis)?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Niacin",
+        "Riboflavin",
+        "Folate",
+        "Thiamine",
+        "Vitamin C"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Methyl‑THF donates its methyl group to homocysteine to form:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Cysteine",
+        "Methionine",
+        "Serine",
+        "Glycine",
+        "S‑adenosylmethionine"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following releases free ammonia in the body?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Synthesis of purines",
+        "Synthesis of monoamines",
+        "Synthesis of aminosugars",
+        "Catabolism of amino acids",
+        "Synthesis of pyrimidines"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Glutamate dehydrogenase is allosterically activated by:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "GTP",
+        "ATP",
+        "ADP and GDP",
+        "NADH",
+        "Citrate"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The enzyme carbamoyl phosphate synthetase I (CPS I) is activated by:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Ornithine",
+        "Citrulline",
+        "N‑Acetylglutamate",
+        "Arginine",
+        "Urea"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which compound links the urea cycle with the citric acid cycle?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Oxaloacetate",
+        "Citrate",
+        "Fumarate",
+        "Malate",
+        "Succinate"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Serotonin is synthesised from which amino acid?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Tyrosine",
+        "Phenylalanine",
+        "Histidine",
+        "Tryptophan",
+        "Glutamate"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The central nervous system is soft because it:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Is rich in blood vessels.",
+        "Contains abundant connective tissue.",
+        "Contains no connective tissue.",
+        "Is composed mainly of fat."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The blood‑CSF barrier is NOT formed by:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Foot processes of astrocytes",
+        "Basement membrane of ependymal cells",
+        "Fenestrated endothelial cells",
+        "Ependymal cells connected by tight junctions"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "A patient with a lesion in the right cerebral peduncle (midbrain) would present with:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Loss of fine touch on the left side of the body",
+        "Loss of pain sensation on the right side",
+        "Skeletal motor loss on the entire left side",
+        "Bilateral motor loss",
+        "Sensory loss only"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which receptors are most likely responsible for the sudden muscle relaxation when a weight‑lifter releases a heavy load after a sustained hold?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Muscle spindle primary endings (Ia)",
+        "Muscle spindle secondary endings (II)",
+        "Golgi tendon organ (Ib)",
+        "Pacinian corpuscles",
+        "Free nerve endings"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Mention the 2 enlargements present in the spinal cord:",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Cervical enlargement and lumbar enlargement."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Compare between the spinal cord of the adult and the newborn:",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Adult: C1 till L1; Newborn: C1 till L3."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Mention the 3 ligaments supporting the spinal cord:",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Filum terminale, ligamentum denticulatum, subarachnoid septum."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Complete: Dura",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "mater and arachnoid mater end opposite which vertebrae? S2"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Extent of the scalp:",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Anteriorly: supraorbital margin; Posteriorly: external occipital protuberance and highest nuchal line; Laterally: superior temporal line."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Effects of dense connective tissue in scalp:",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Infection remains localized, wounds don’t gap, small wound causes profuse bleeding."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Compare frontal and occipital belly nerve supply:",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Frontal belly: temporal branch of facial nerve; Occipital belly: posterior auricular branch of facial nerve."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Why is loose connective tissue the dangerous layer?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Because its emissary veins can spread infection from scalp to cranial cavity."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Sensory nerve supply of scalp:",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "In front of auricle: supratrochlear, supraorbital, zygomaticotemporal, auriculotemporal; Behind auricle: great auricular, lesser occipital, greater occipital, third occipital."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Boundaries of face:",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Superior: hair line; Inferior: lower border of mandible; Sideways: from one auricle to the other."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Facial artery terminates by anastomosing with:",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Dorsal nasal artery."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "2 branches of facial artery in face:",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Superior labial and Inferior labial."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Deep communications of anterior facial vein:",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "To superior ophthalmic vein (→ cavernous sinus) and to deep facial vein (→ pterygoid venous plexus → cavernous sinus via emissary veins)."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Dangerous area of face:",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Triangle including upper lip, nose, medial angles of eye. Infection can spread to cavernous sinus causing thrombosis."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Branches of ophthalmic nerve in face:",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Supratrochlear, supraorbital, palpebral branch of lacrimal, infratrochlear."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "3 branches of maxillary nerve:",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Zygomaticotemporal, zygomaticofacial, infraorbital."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "3 branches of infraorbital nerve:",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Palpebral, nasal, labial."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Branches of mandibular nerve in face:",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Auriculotemporal, buccal, mental."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Muscles of facial expression develop from:",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "2nd pharyngeal arch."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Lesion of first somatosensory area causes:",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Contralateral hemianesthesia."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Site of first somatosensory area:",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Postcentral gyrus and posterior part of paracentral lobule."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Site of second somatosensory area:",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Superior lip of posterior ramus of lateral sulcus behind central sulcus."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Site of area 43:",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Parietal operculum extending into anterior part of insula."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Lesion of areas 5 & 7 causes:",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Astereognosis."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Site of inferior parietal lobule:",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Supramarginal gyrus and angular gyrus."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Lesion of inferior parietal lobule causes:",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Receptive aphasia."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "3 speech centers:",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Broca’s, Wernicke’s, Supplementary motor area."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Site of primary motor area:",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Precentral gyrus and anterior part of paracentral lobule."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Body representation of premotor area:",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Upside down, contralateral, proportionate to skill."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Lesion of area 4 causes:",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Contralateral hemiplegia especially fine skilled movements."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Site of premotor area:",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "In front of area 4 (superior, middle, inferior frontal gyri) and medial surface."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Lesion of area 6 causes:",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Apraxia, muscle spasticity, reappearance of grasp reflex."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Site of frontal eye field:",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "In front of area 6 (superior and middle frontal gyri)."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Lesion of area 8 causes:",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Ipsilateral deviation of both eyes and inability to turn eyes to opposite side."
+    },
+    {
+      "chapterTitle": "Cerebrum & Cortical Functions",
+      "chapterId": 2,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Site of Broca’s area:",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Pars triangularis and pars opercularis of inferior frontal gyrus."
+    },
+    {
+      "chapterTitle": "Cerebrum & Cortical Functions",
+      "chapterId": 2,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Lesion of Broca’s area:",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Expressive aphasia."
+    },
+    {
+      "chapterTitle": "Cerebrum & Cortical Functions",
+      "chapterId": 2,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Site of supplementary motor area:",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Medial frontal gyrus."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Lesion of SMA causes:",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Akinetic mutism."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "3 neurons for pain and temperature from body:",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "1st: DRG; 2nd: Fast pain lamina I, Slow pain lamina II (SGR); 3rd: VPLN of thalamus."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "3 neurons for pain and temperature from face:",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "1st: Trigeminal ganglion; 2nd: Spinal nucleus of trigeminal; 3rd: VPMN of thalamus."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "3 neurons for crude touch and pressure:",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "1st: DRG; 2nd: Lamina IV (nucleus proprius); 3rd: VPLN of thalamus."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Sensations carried:",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Fine touch, proprioception, vibration, deep pressure, stereognosis."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "3 neurons for conscious proprioception and fine touch:",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "1st: DRG; 2nd: Gracile and cuneate nuclei of medulla; 3rd: VPLN."
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "4 tracts carrying unconscious proprioception to cerebellum:",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Posterior spinocerebellar, anterior spinocerebellar, spino‑olivary, cuneocerebellar."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Tract forming external arcuate fibers:",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Cuneocerebellar tract."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Tracts carrying unconscious proprioception from lower limb:",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Posterior spinocerebellar, anterior spinocerebellar, spino‑olivary."
+    },
+    {
+      "chapterTitle": "Spinal Cord Tracts",
+      "chapterId": 6,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "2 extrapyramidal tracts:",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Tectospinal and rubrospinal."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Origin of olivospinal tract:",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Inferior olivary nucleus of medulla."
+    },
+    {
+      "chapterTitle": "Spinal Cord Tracts",
+      "chapterId": 6,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Lamination of lateral corticospinal tract in spinal cord:",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Cervical fibers medial, sacral fibers lateral."
+    },
+    {
+      "chapterTitle": "Spinal Cord Tracts",
+      "chapterId": 6,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Lamination of pyramidal tract in internal capsule:",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Face in genu, upper limb anterior, lower limb posterior in posterior limb."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Tracts ending on alpha and gamma neurons of extensors:",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Medial and lateral vestibulospinal tracts."
+    },
+    {
+      "chapterTitle": "Spinal Cord Tracts",
+      "chapterId": 6,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Complete: Tectospinal",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "tract forms dorsal tegmental decussation; rubrospinal tract forms ventral tegmental decussation."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "3 arteries supplying spinal cord:",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Anterior spinal, posterior spinal, segmental arteries."
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Artery supplying medial medulla and anterior 2/3 of spinal cord:",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": "Anterior spinal artery."
+    }
+  ]
+}

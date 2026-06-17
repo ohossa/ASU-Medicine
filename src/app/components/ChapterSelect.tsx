@@ -325,9 +325,7 @@ export function ChapterSelect({
             <h2 className="text-xl font-bold text-foreground dark:text-white tracking-tight">
               {mCh.title}
             </h2>
-            <p className="text-xs sm:text-sm text-muted-foreground dark:text-white/50 leading-relaxed">
-              {mCh.subtitle}
-            </p>
+
             {mCh.subjects.length > 0 && (
               <div className="mt-3 flex flex-wrap gap-1.5 pt-1">
                 {mCh.subjects.map((s) => (
@@ -395,7 +393,7 @@ export function ChapterSelect({
           <h3 className={`text-base font-semibold text-foreground dark:text-white transition-colors ${hoverText[accent]}`}>
             {chapter.title}
           </h3>
-          <p className="mt-0.5 line-clamp-2 text-xs text-muted-foreground dark:text-white/45">{chapter.subtitle}</p>
+
 
           {/* Subject badges */}
           {chapter.subjects.length > 0 && (
@@ -410,7 +408,7 @@ export function ChapterSelect({
 
           <div className="mt-5 flex items-center justify-between">
             <span className="text-[11px] text-muted-foreground dark:text-white/40">
-              {label('page')} {chapter.page} · {chapter.lectureRange}
+              {chapter.subjects.reduce((a, s) => a + s.questions.length, 0)} {label('questions')}
             </span>
             <button
               type="button"

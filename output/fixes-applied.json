@@ -1,0 +1,6 @@
+[
+  {"id": "mcns2-ch1-anatomy-q47", "field": "correctIndex", "before": "3 (Palpebral part)", "after": "4 (Orbital part)", "reason": "User-reported contradiction: explanation states orbital part causes firm closure, but correctIndex pointed to palpebral part"},
+  {"id": "mcns2-ch1-biochem-q155", "field": "correctIndex", "before": "1 (Pentose phosphate pathway)", "after": "0 (Glycolysis)", "reason": "Explanation states glycolysis is main utilization pathway; correctIndex pointed to PPP instead"},
+  {"id": "mcns2-ch1-biochem-q159", "field": "correctIndex", "before": "0 (decarboxylation)", "after": "3 (a and c)", "reason": "Explanation explicitly states 'both a and c are correct' but correctIndex was only a"},
+  {"id": "mcns2-ch1-pharma-q9", "field": "correctIndex", "before": "0 (No antidote)", "after": "2 (Dependence)", "reason": "Explanation states 'Dependence is the major limitation' and 'Option C is correct', but correctIndex was A"}
+]

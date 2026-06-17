@@ -6,7 +6,7 @@ import { getQuizHistoryForModule } from '../app/utils/storage';
 import { getModuleQuestionCounts, isModuleActive } from '../app/data';
 import { applySubjectTheme } from '../app/theme/subjectThemes';
 import { CardShell } from '../components/cards/PremiumCards';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { pageVariants } from '../app/lib/motion';
 
 /* ────────────────────────────────────────────────

@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "comingSoon": true,
+  "meta": {
+    "moduleCode": "P2-1",
+    "moduleName": "Presentation, Learning & Time Management Skills",
+    "year": 1,
+    "semester": 2,
+    "creditPoints": 1,
+    "totalMarks": 20,
+    "keywords": [
+      "presentation",
+      "learning",
+      "p2"
+    ]
+  },
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Learning Strategies & Memory Techniques",
+      "subtitle": "Learning Strategies & Memory Techniques",
+      "emoji": "🧠",
+      "page": 1,
+      "lectureRange": "Lectures 1",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 2,
+      "title": "Effective Presentation & Communication Skills",
+      "subtitle": "Effective Presentation & Communication Skills",
+      "emoji": "🎤",
+      "page": 2,
+      "lectureRange": "Lectures 2",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 3,
+      "title": "Time Management & Goal Setting",
+      "subtitle": "Time Management & Goal Setting",
+      "emoji": "⏰",
+      "page": 3,
+      "lectureRange": "Lectures 3",
+      "subjects": [],
+      "keywords": []
+    }
+  ]
+}

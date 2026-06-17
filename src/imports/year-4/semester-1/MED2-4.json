@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "comingSoon": true,
+  "meta": {
+    "moduleCode": "MED2-4",
+    "moduleName": "General & Special Internal Medicine 1",
+    "year": 4,
+    "semester": 1,
+    "creditPoints": 5.5,
+    "totalMarks": 110,
+    "keywords": [
+      "internal medicine",
+      "med2"
+    ]
+  },
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Cardiology",
+      "subtitle": "Cardiology",
+      "emoji": "❤️",
+      "page": 1,
+      "lectureRange": "Lectures 1",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 2,
+      "title": "Pulmonology",
+      "subtitle": "Pulmonology",
+      "emoji": "🫁",
+      "page": 2,
+      "lectureRange": "Lectures 2",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 3,
+      "title": "Gastroenterology & Hepatology",
+      "subtitle": "Gastroenterology & Hepatology",
+      "emoji": "🍽️",
+      "page": 3,
+      "lectureRange": "Lectures 3",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 4,
+      "title": "Nephrology",
+      "subtitle": "Nephrology",
+      "emoji": "🫘",
+      "page": 4,
+      "lectureRange": "Lectures 4",
+      "subjects": [],
+      "keywords": []
+    }
+  ]
+}

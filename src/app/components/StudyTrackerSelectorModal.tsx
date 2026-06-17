@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { GraduationCap, ChevronRight, ChevronLeft, X, Lock, CheckCircle, Info, ArrowRight, BookOpen, Layers, Award, Calendar } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from 'motion/react';
 import { useLanguage } from '../context/LanguageContext';
 import { SYLLABUS_MODULES, isModuleActive } from '../data';
 import type { ModuleInfo } from '../data';

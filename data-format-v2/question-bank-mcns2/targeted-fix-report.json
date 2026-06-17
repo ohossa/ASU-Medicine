@@ -1,0 +1,5248 @@
+{
+  "fixed": 749,
+  "report": [
+    {
+      "id": "mcns2-ch1-anatomy-q2",
+      "text": "Choose the CORRECT statement:",
+      "old": "In spinal cord, white matter is H-shaped.",
+      "new": "Cerebral hemispheres contain deep nuclei formed of grey matter.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q5",
+      "text": "Choose the CORRECT matching:",
+      "old": "Ganglion – a group of cell bodies within CNS.",
+      "new": "Lemniscus – a collection of descending fibers within the brain stem.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q8",
+      "text": "The sensory supply of the skin over the angle of t",
+      "old": "Infraorbital nerve.",
+      "new": "Great auricular nerve.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q10",
+      "text": "Pain from upper lip is carried by:",
+      "old": "Buccal nerve.",
+      "new": "Infraorbital nerve.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q12",
+      "text": "The nerve that carries the sensation for the lower",
+      "old": "Supraorbital nerve.",
+      "new": "Infraorbital nerve.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q14",
+      "text": "Pain from ala of nose is carried by which nerve?",
+      "old": "Infra-trohlear N.",
+      "new": "External nasal N.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q17",
+      "text": "Which one of the following scalp nerves is derived",
+      "old": "Auriculotemporal N.",
+      "new": "Greater occipital N.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q20",
+      "text": "Infection of scalp area behind the ear affects ...",
+      "old": "Submental group.",
+      "new": "Occipital group.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q21",
+      "text": "The branch of the mandibular nerve that supplies t",
+      "old": "Zygomatico-temporal nerve.",
+      "new": "Auriculotemporal nerve.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q24",
+      "text": "The nerve supplying the buccinator muscle is:",
+      "old": "Mandibular nerve.",
+      "new": "Facial nerve.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q26",
+      "text": "Which of the following is sensory to the scalp beh",
+      "old": "Auriculotemporal nerve.",
+      "new": "Great auricular nerve.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q27",
+      "text": "Retromandibular vein:",
+      "old": "Is formed by union of maxillary & superficial temporal veins.",
+      "new": "Is deep to facial nerve inside parotid gland.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q28",
+      "text": "Lacrimal part of orbicularis oculi:",
+      "old": "Is attached to medial palpebral ligament.",
+      "new": "Is a part of orbicularis oris.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q30",
+      "text": "Mandibular nerve is sensory to:",
+      "old": "Upper eyelid.",
+      "new": "Lower eyelid.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q33",
+      "text": "Pain from capsule of parotid gland is carried by:",
+      "old": "Lesser petrosal nerve.",
+      "new": "Great auricular nerve.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q34",
+      "text": "Bleeding in which layer of scalp causes black eye?",
+      "old": "Skin.",
+      "new": "Loose areolar connective tissue.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q36",
+      "text": "In which of the following layers of scalp does inf",
+      "old": "Skin.",
+      "new": "Loose areolar connective tissue.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q37",
+      "text": "The plane of movement of scalp is between:",
+      "old": "Skin & epicranial aponeurosis.",
+      "new": "Epicranial aponeurosis & pericranium.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q38",
+      "text": "The large blood vessels of scalp run in:",
+      "old": "Skin.",
+      "new": "Subcutaneous connective tissue.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q39",
+      "text": "The nerve supply of the muscle of the sclap is:",
+      "old": "Trigeminal nerve.",
+      "new": "Facial nerve.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q40",
+      "text": "The main sensory nerve of the upper lip is:",
+      "old": "Buccal branch of mandibular nerve.",
+      "new": "Infraorbital nerve.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q41",
+      "text": "The main sensory nerve of the lower lip is:",
+      "old": "Buccal branch of mandibular nerve.",
+      "new": "Mental nerve.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q44",
+      "text": "The pulse felt in front of tragus of ear against z",
+      "old": "Facial artery.",
+      "new": "Superficial temporal artery.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q45",
+      "text": "The Occipito-frontalis muscle:",
+      "old": "Closes the eyelids.",
+      "new": "Elevates the eyebrows.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q46",
+      "text": "Facial muscles:",
+      "old": "Take origin from skin.",
+      "new": "Act as sphincters for facial openings.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q47",
+      "text": "The muscle that causes firm closure of eyelids is:",
+      "old": "Orbicularis oris.",
+      "new": "Palpebral part of orbicularis oculi.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q50",
+      "text": "The sphincter of the lips is the:",
+      "old": "Buccinator.",
+      "new": "Orbicularis oris.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q53",
+      "text": "As regards the occipital bellies of occipito-front",
+      "old": "They are separated by an extension of epicranial aponeurosis.",
+      "new": "They are inserted into lateral 2/3 of highest nuchal line.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q68",
+      "text": "Which of the following is not present in the sacra",
+      "old": "Filum terminale.",
+      "new": "Ligamentum denticulatum.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q70",
+      "text": "In adults the spinal cord usually terminates at th",
+      "old": "Upper border of the 12th thoracic vertebra.",
+      "new": "Lower border of the 1st lumbar vertebra.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q78",
+      "text": "Which of the following is purely sensory?",
+      "old": "Ventral ramus of spinal nerve.",
+      "new": "Dorsal root of spinal nerve.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q80",
+      "text": "As regards the spinal nerves, choose the CORRECT s",
+      "old": "Its posterior root contains autonomic fibers.",
+      "new": "Its autonomic fibers arise from anterior horn.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q82",
+      "text": "Intermediolateral group of neurons is in:",
+      "old": "Dorsal horn.",
+      "new": "Lateral horn.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q83",
+      "text": "As regards the dorsal root fibers of spinal nerves",
+      "old": "Cells of dorsal root ganglion are multipolar.",
+      "new": "Dorsal root fibers give ascending fibers which form long tracts.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q85",
+      "text": "As regards the nuclei of the anterior horn of the ",
+      "old": "Its alpha neurons supply intrafusal muscle fibers.",
+      "new": "Its anteromedial nucleus extends in all levels of spinal cord.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q87",
+      "text": "Crude touch is carried on which tract?",
+      "old": "Lateral spinothalamic T.",
+      "new": "Ventral spinothalamic T.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q88",
+      "text": "The second order neuron in the pathway of pain fro",
+      "old": "Dorsal root ganglion.",
+      "new": "Spinal nucleus of Trigeminal nerve.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q92",
+      "text": "The right medial lemniscus carries sensations of:",
+      "old": "Pain from the left side of the body.",
+      "new": "Fine touch from right side of body.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q93",
+      "text": "Conscious proprioception from right lower limb are",
+      "old": "Left lateral spinothalamic tract.",
+      "new": "Right gracile tract.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q97",
+      "text": "Sense of movement and sense of position are lost a",
+      "old": "Spinorecticular tract.",
+      "new": "Gracile and cuneate tracts.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q98",
+      "text": "The cuneate tract carries which of the following s",
+      "old": "Crude touch from upper limb.",
+      "new": "Fine touch from upper limb.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q99",
+      "text": "The left spinal lemniscus carries sensations of:",
+      "old": "Pain from the left side of the body.",
+      "new": "Crude touch from the right side of the body.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q100",
+      "text": "The medial most fibers of the gracile tract are:",
+      "old": "Cervical fibers.",
+      "new": "Sacral fibers.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q101",
+      "text": "Which one of the following sensations has most of ",
+      "old": "Sensation of pain of left lower limb.",
+      "new": "Sensation of crude touch of right upper limb.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q102",
+      "text": "A lesion in the right gracile tract leads to loss ",
+      "old": "Sense of position of left big toe.",
+      "new": "Vibration sense of right tibia.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q106",
+      "text": "As regards pathway of fine touch, choose the CORRE",
+      "old": "Its 1st neuron terminates in posterior horn of spinal cord.",
+      "new": "Its fibers ascend in brain stem within spinal lemniscus.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q107",
+      "text": "Sacral fibers are the most medial fibers in the sp",
+      "old": "Lateral spinothalamic tract.",
+      "new": "Gracile tract.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q108",
+      "text": "Injury of the right cortico-bulbar tract would aff",
+      "old": "Right upper quadrant of face.",
+      "new": "Right lower quadrant of face.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q109",
+      "text": "The corticonuclear tract has unilateral connection",
+      "old": "Medial part of oculomotor nucleus.",
+      "new": "Lower 7 of facial nucleus.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q113",
+      "text": "A patient suffered UMNL paralysis in the left lowe",
+      "old": "Poliomyelitis.",
+      "new": "Right hemisection of the spinal cord.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q114",
+      "text": "Syringomyelia first affects:",
+      "old": "Vibration sense.",
+      "new": "Pain and temperature on both sides of the body.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q138",
+      "text": "Lesion of which cerebral area in left hemisphere c",
+      "old": "Inferior parietal lobule.",
+      "new": "Inferior frontal gyrus.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q140",
+      "text": "Motor aphasia is due to lesion of the following ar",
+      "old": "Insula.",
+      "new": "Broca's area.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q142",
+      "text": "Injury to the left paracentral lobule leads to par",
+      "old": "Left hand.",
+      "new": "Left foot.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q143",
+      "text": "Injury to the right paracentral lobule leads to pa",
+      "old": "Left side of face.",
+      "new": "Right upper limb.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q144",
+      "text": "Reappearance of the grasp reflex occurs in lesion ",
+      "old": "Area 4.",
+      "new": "Supplementary motor area.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q150",
+      "text": "A lesion of frontal cortex in the dominant hemisph",
+      "old": "Expressive aphasia.",
+      "new": "Receptive aphasia.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q153",
+      "text": "The facial recognition areas are found in the unde",
+      "old": "Frontal lobes.",
+      "new": "Temporal & occipital lobes.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q157",
+      "text": "One of the following is not a content of the inter",
+      "old": "Tuber cinereum.",
+      "new": "Anterior perforated substance.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q159",
+      "text": "Which of the following structures lies between lim",
+      "old": "Hypoglossal trigone.",
+      "new": "Facial colliculus.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q161",
+      "text": "The facial colliculus is formed by:",
+      "old": "Facial nerve.",
+      "new": "Facial motor nucleus and abducent nerve fibers.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q164",
+      "text": "All the following form boundaries of interpeduncul",
+      "old": "Cerebral peduncle.",
+      "new": "Optic nerve.",
+      "reason": "negated in EXCEPT"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q166",
+      "text": "Posterior external arcuate fibers are axons of:",
+      "old": "Arcuate nucleus.",
+      "new": "Accessory cuneate nucleus.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q167",
+      "text": "The internal arcuate fibers in the medulla are axo",
+      "old": "Nucleus solitarius.",
+      "new": "Gracile & cuneate nuclei.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q168",
+      "text": "The fibers present in the medial 1/5 of the crus c",
+      "old": "Corticospinal fibers.",
+      "new": "Frontopontine fibers.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q169",
+      "text": "Which of the following olivary nuclear complex is ",
+      "old": "Medial accessory olivary nucleus.",
+      "new": "Superior olivary nucleus.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q175",
+      "text": "As regards the medial longitudinal bundle, choose ",
+      "old": "It extends from thalamus to spinal cord.",
+      "new": "Its ascending fibers are connected with interstitial nucleus of Cajal.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q185",
+      "text": "Which of the following nuclei represents the somat",
+      "old": "Abducent nucleus.",
+      "new": "Nucleus ambiguus.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q186",
+      "text": "The special visceral efferent column of nuclei:",
+      "old": "Supplies smooth muscles.",
+      "new": "Include the dorsal vagal nucleus.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q203",
+      "text": "The sinus that runs along the lesser wing of sphen",
+      "old": "Sphenoparietal sinus.",
+      "new": "Straight sinus.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q209",
+      "text": "The sinus that runs along the junction between the",
+      "old": "Sphenoparietal sinus.",
+      "new": "Superior sagittal sinus.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q214",
+      "text": "Falx cerebri:",
+      "old": "Contains superior petrosal sinus.",
+      "new": "Separates cerebral hemispheres from cerebellum.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q215",
+      "text": "The venous sinus enclosed within the lower concave",
+      "old": "Superior sagittal sinus.",
+      "new": "Inferior sagittal sinus.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q220",
+      "text": "Middle meningeal artery supplies dura of:",
+      "old": "Anterior cranial fossa.",
+      "new": "Middle cranial fossa.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q225",
+      "text": "Which one of the following structures is not embed",
+      "old": "Ophthalmic nerve.",
+      "new": "Abducent nerve.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q226",
+      "text": "Which one of the following is considered as an emi",
+      "old": "Sphenoparietal sinus.",
+      "new": "Inferior petrosal sinus.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q227",
+      "text": "Emissary veins of cavernous sinus pass through all",
+      "old": "Foramen lacerum.",
+      "new": "Mastoid foramen.",
+      "reason": "negated in EXCEPT"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q234",
+      "text": "The nerve that emerges between the two heads of la",
+      "old": "The inferior alveolar nerve.",
+      "new": "The buccal nerve.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q235",
+      "text": "The structure attached to the pterygoid hamulus is",
+      "old": "Stylomandibular ligament.",
+      "new": "Pterygomandibular raphe.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q236",
+      "text": "The parasympathetic root to submandibular ganglion",
+      "old": "Lesser petrosal nerve.",
+      "new": "Chorda tympani nerve.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q257",
+      "text": "The artery present in anterior part of digastric t",
+      "old": "External carotid artery.",
+      "new": "Facial artery.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q258",
+      "text": "The posterior part of the floor of carotid triangl",
+      "old": "Thyrohyoid & hyoglossus.",
+      "new": "Middle & inferior constrictors.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q259",
+      "text": "The floor of anterior part of carotid triangle is ",
+      "old": "Thyrohyoid & Geniohyoid.",
+      "new": "Mylohyoid & hyoglossus.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q263",
+      "text": "Which of the following arteries is a content of th",
+      "old": "1st part of subclavian artery.",
+      "new": "Transverse cervical artery.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q264",
+      "text": "The floor of digastric triangle ; formed by:",
+      "old": "Thyrohyoid and hyoglossus.",
+      "new": "Mylohyoid and hyoglossus.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q265",
+      "text": "The cervical fascia that forms the sheath of the p",
+      "old": "Superficial fascia.",
+      "new": "Investing cervical fascia.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q266",
+      "text": "The ansa cervicalis is found in:",
+      "old": "Muscular triangle.",
+      "new": "Carotid triangle.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q271",
+      "text": "The following structures are contents of the carot",
+      "old": "Common carotid artery.",
+      "new": "Sympathetic trunk.",
+      "reason": "negated in EXCEPT"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q274",
+      "text": "Which of following muscles subdivides the posterio",
+      "old": "Sternocleidomastoid.",
+      "new": "Inferior belly of omohyoid.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q276",
+      "text": "The sternocleidomastoid, omohyoid and trapezius bo",
+      "old": "Carotid triangle.",
+      "new": "Occipital triangle.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q280",
+      "text": "One of the following arteries is not a content of ",
+      "old": "The internal carotid artery.",
+      "new": "The superficial temporal artery.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q284",
+      "text": "The cutaneous nerve supply over the anterior trian",
+      "old": "Dorsal rami of cervical nerves.",
+      "new": "Transverse cutaneous nerve.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q289",
+      "text": "A protruded tongue which deviates to the right and",
+      "old": "Right glossopharyngeal nerve.",
+      "new": "Right hypoglossal nerve.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q293",
+      "text": "Which of the following branches arises from the in",
+      "old": "Meningeal branch.",
+      "new": "Pharyngeal branch.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q296",
+      "text": "The sensory nerve that supplies the larynx below t",
+      "old": "External laryngeal N.",
+      "new": "Recurrent laryngeal N.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q298",
+      "text": "The nerve that carries taste sensation from the po",
+      "old": "Chorda tympani.",
+      "new": "Glossopharyngeal nerve.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q301",
+      "text": "Which of the following fibers is contained in nerv",
+      "old": "Preganglionic sympathetic.",
+      "new": "Postganglionic sympathetic.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q304",
+      "text": "The recurrent laryngeal nerve:",
+      "old": "Lies in front of trachea.",
+      "new": "Contains fibers from cranial part of accessory nerve.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q307",
+      "text": "The ansa cervicalis:",
+      "old": "Is a nerve loop on the internal jugular vein.",
+      "new": "Supplies most of the infrahyoid muscles.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q309",
+      "text": "Which one of the following is used as a venous man",
+      "old": "Anterior jugular vein.",
+      "new": "External jugular vein.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q319",
+      "text": "As regards contents of posterior triangle, choose ",
+      "old": "Anterior jugular vein ends in subclavian vein.",
+      "new": "Subclavian artery may give deep branch of transverse cervical artery.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q321",
+      "text": "Anterior part of digastric triangle contains all t",
+      "old": "Lingual nerve.",
+      "new": "External carotid artery.",
+      "reason": "negated in EXCEPT"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q352",
+      "text": "Which of the following nuclei relays auditory impu",
+      "old": "Anterior thalamic nuclei.",
+      "new": "Medial geniculate body.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q353",
+      "text": "Arterial supply of the speech areas is from:",
+      "old": "Anterior cerebral artery.",
+      "new": "Middle cerebral artery.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q354",
+      "text": "Occlusion of this artery in dominant hemisphere re",
+      "old": "Anterior choroidal artery.",
+      "new": "Posterior cerebral artery.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q360",
+      "text": "The ultimobranchial body gives rise to:",
+      "old": "Tonsil.",
+      "new": "Parafollicular cells.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q361",
+      "text": "The nerve of the branchial arch that gives the upp",
+      "old": "Mandibular nerve.",
+      "new": "Facial nerve.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q363",
+      "text": "The hyoid bone is derived from:",
+      "old": "Migrating paraxial mesoderm of 1st & 2nd arches.",
+      "new": "Migrating neural crest cells of 1st & 2nd arches.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q367",
+      "text": "Which bone develops from the 1st pharyngeal arch?",
+      "old": "Stapes.",
+      "new": "Styloid process.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q368",
+      "text": "The nerve of the branchial arch that gives the sty",
+      "old": "Mandibular nerve.",
+      "new": "Facial nerve.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q373",
+      "text": "The nerve that supplies muscles derived from 2nd b",
+      "old": "Hypoglossal nerve.",
+      "new": "Facial nerve.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q376",
+      "text": "The 3rd pharyngeal arch cartilage gives rise to:",
+      "old": "Stylohyoid ligament.",
+      "new": "Greater cornu of hyoid bone.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q378",
+      "text": "The pharyngeal arch that gives rise to styloid pro",
+      "old": "Mandibular nerve.",
+      "new": "Facial nerve.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q384",
+      "text": "Tympanic membrane is derived from:",
+      "old": "Ectoderm.",
+      "new": "Ectoderm + endoderm + mesoderm.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q385",
+      "text": "The external auditory meatus develops by:",
+      "old": "Excavation of the otic placode.",
+      "new": "Deepening of the first pharyngeal cleft.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q391",
+      "text": "The tensor tympani muscle is attached to the malle",
+      "old": "Preotic somites.",
+      "new": "First branchial arch.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q395",
+      "text": "The lateral part of the upper lip is derived from ",
+      "old": "Maxillary prominence.",
+      "new": "Lateral nasal prominence.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q396",
+      "text": "The structure derived from the intermaxillary segm",
+      "old": "Lateral part of the upper lip.",
+      "new": "Philtrum of the upper lip.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q400",
+      "text": "The median part of the upper lip is derived from t",
+      "old": "Maxillary prominence.",
+      "new": "Lateral nasal prominence.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q402",
+      "text": "The nasolacrimal groove lies between the:",
+      "old": "Frontal prominence and mandibular swellings.",
+      "new": "Maxillary and lateral nasal swellings.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q405",
+      "text": "Oblique facial cleft is due to:",
+      "old": "Failure of fusion of lingual swellings.",
+      "new": "Failure of fusion of lateral nasal fold and maxillary swelling.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q407",
+      "text": "Failure of closure of anterior neuropore of the ne",
+      "old": "Anencephaly.",
+      "new": "Spina bifida.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q408",
+      "text": "The structure(s) derived from spongioblasts of neu",
+      "old": "Dura mater.",
+      "new": "Chromaffin cells.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q410",
+      "text": "The layer rich in neuroblasts in the developing sp",
+      "old": "Roof plate.",
+      "new": "Mantle layer.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q411",
+      "text": "Neuroepithelial cells give rise to:",
+      "old": "Neuroblasts.",
+      "new": "Ependymal cells.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q412",
+      "text": "Alar plates form:",
+      "old": "Lateral horns.",
+      "new": "Dorsal horns.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q433",
+      "text": "The upward extension of the posterior longitudinal",
+      "old": "Posterior atlanto-occipital membrane.",
+      "new": "Membrana tectoria.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q434",
+      "text": "The structure attached to the side of the odontoid",
+      "old": "Apical ligament.",
+      "new": "Alar ligament.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q436",
+      "text": "The median atlanto-axial joint:",
+      "old": "Is fibrous in type.",
+      "new": "Allows nodding of head.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q443",
+      "text": "What is the structure that does not appear in norm",
+      "old": "Pterion.",
+      "new": "Coronal suture.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q446",
+      "text": "Greater wing of sphenoid shows all the following E",
+      "old": "Superior orbital fissure.",
+      "new": "Foramen lacerum.",
+      "reason": "negated in EXCEPT"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q448",
+      "text": "Which one of the following bones does not share in",
+      "old": "Frontal bone.",
+      "new": "Greater wing of sphenoid.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q450",
+      "text": "Greater wing of sphenoid shows:",
+      "old": "Hypoglossal canal.",
+      "new": "Foramen rotundum.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q451",
+      "text": "Internal auditory meatus gives passage to:",
+      "old": "Middle meningeal artery.",
+      "new": "Facial nerve.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q452",
+      "text": "The lateral pterygoid plate is a part of the:",
+      "old": "Parietal bone.",
+      "new": "Sphenoid bone.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q453",
+      "text": "Which one of the following is a part of the poster",
+      "old": "Body of sphenoid.",
+      "new": "Transverse sulcus.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q454",
+      "text": "As regards the pterion, choose the CORRECT stateme",
+      "old": "It is related to the middle cerebral artery.",
+      "new": "Is represents the site of ossification of anterolateral fontanelle.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q458",
+      "text": "A patient undergoes a surgical procedure on their ",
+      "old": "Occipital artery",
+      "new": "Posterior auricular artery",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q459",
+      "text": "A 50-year-old man presents with a deep laceration ",
+      "old": "Facial artery",
+      "new": "Superficial temporal artery",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q460",
+      "text": "A 45-year-old male patient presents with a chief c",
+      "old": "Auriculotemporal nerve",
+      "new": "Supraorbital nerve",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q461",
+      "text": "A 55-year-old male patient presents with a complai",
+      "old": "Auriculotemporal nerve",
+      "new": "Facial nerve",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q476",
+      "text": "24-year-old man was brought to the ER following a ",
+      "old": "Complete section of spinal cord at C8 level",
+      "new": "Central cord syndrome",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q489",
+      "text": "The large blood vessels of the scalp run into:",
+      "old": "Skin.",
+      "new": "Subcutaneous connective tissue",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q491",
+      "text": "The plane of movement of the scalp is between:",
+      "old": "Skin & epicranial aponeurosis",
+      "new": "Connective tissue layer & aponeurosis.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q495",
+      "text": "The motor nerve of the scalp behind the auricle is",
+      "old": "Buccal branch of facial nerve.",
+      "new": "Posterior auricular branch of facial nerve.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q496",
+      "text": "Buccinator:",
+      "old": "Is one of the muscles of mastication.",
+      "new": "Is supplied by buccal branch of mandibular nerve.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q499",
+      "text": "Lymph from central part of upper lip drains direct",
+      "old": "Submandibular lymph nodes.",
+      "new": "Submental lymph nodes.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q503",
+      "text": "In which of the following layers of the scalp does",
+      "old": "Skin.",
+      "new": "Loose areolar tissue layer.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q510",
+      "text": "The following is a branch of the superficial tempo",
+      "old": "Supraorbital.",
+      "new": "Transverse facial.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q514",
+      "text": "Hemisection of spinal cord gives the following sym",
+      "old": "Proprioception loss",
+      "new": "Loss of pain and temperature",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q515",
+      "text": "The falx cerebri:",
+      "old": "Is attached anteriorly to anterior clinoid process.",
+      "new": "Contains superior sagittal sinus.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q518",
+      "text": "The buccal branch of the mandibular nerve supplies",
+      "old": "Buccinator muscle.",
+      "new": "Skin and mucous membrane of cheek.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q519",
+      "text": "The otic ganglion:",
+      "old": "Lies below foramen oval.",
+      "new": "Its sympathetic root is derived from the plexus around internal carotid artery.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q521",
+      "text": "The lingual nerve:",
+      "old": "Is a branch of the posterior division of maxillary nerve.",
+      "new": "Carries taste from posterior third of tongue.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q522",
+      "text": "A lesion of mandibular nerve immediately after its",
+      "old": "Loss of parotid gland secretion.",
+      "new": "Loss of taste sensation from anterior part of tongue.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q525",
+      "text": "The roots of the brachial plexus pass between:",
+      "old": "Scalenus anterior and sternomastoid.",
+      "new": "Scalenus anterior and scalenus medius.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q529",
+      "text": "Internal arcuate fibers are present in:",
+      "old": "Superior midbrain.",
+      "new": "Closed medulla.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q532",
+      "text": "Crossing fibers of gracile & cuneate tracts are ca",
+      "old": "Internal arcuate",
+      "new": "Dorsal external arcuate",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q533",
+      "text": "Lowermost level of medulla shows:",
+      "old": "Internal arcuate fibers",
+      "new": "Inferior olive nucleus",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q537",
+      "text": "The specific feature of upper mid brain is presenc",
+      "old": "Crus cerebri",
+      "new": "Superior cerebellar peduncle decussation",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q540",
+      "text": "Dorsal tegmental decussation:",
+      "old": "Formed of rubrospinal tract",
+      "new": "Present in inferior level of midbrain.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q542",
+      "text": "What is the lateral lemniscus formed of?",
+      "old": "Three acoustic stria",
+      "new": "Fibers from the nuclei of the trapezoid body",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q651",
+      "text": "Regarding tentorium cerebelli",
+      "old": "It roofs over middle cranial fossa",
+      "new": "Oculomotor and trochlear nerves pierce dura at the point of crossing of its free & attached borders",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q661",
+      "text": "Arterial supply of anterior ends of caudate & lent",
+      "old": "Central branches of middle cerebral",
+      "new": "Central branches of anterior cerebral",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q670",
+      "text": "Lymph from central part of upper lip drop, directl",
+      "old": "Submandibular lymph nodes.",
+      "new": "Submental lymph nodes.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q671",
+      "text": "Pulse felt in front of tragus of ear against zygom",
+      "old": "Facial artery.",
+      "new": "Superficial temporal artery.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q673",
+      "text": "Which of the following muscles subdivides the post",
+      "old": "Sternocleidomastoid.",
+      "new": "Inferior belly of omohyoid.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q674",
+      "text": "The following structures form the floor of the pos",
+      "old": "Levatorscapulae.",
+      "new": "Investing layer of deep cervical fascia.",
+      "reason": "negated in EXCEPT"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q677",
+      "text": "The second-order neuron transmitting pain and temp",
+      "old": "Ventral posterolateral nucleus (VPLN)",
+      "new": "Spinal nucleus of trigeminal",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q680",
+      "text": "Which of the following correctly pairs a neural st",
+      "old": "Spinothalamic tract – conscious proprioception from lower limb",
+      "new": "Dorsal spinocerebellar tract – unconscious proprioception from upper limb",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q683",
+      "text": "Unconscious proprioception from the wrist is carri",
+      "old": "Cuneocerebellar tract",
+      "new": "Dorsal spinocerebellar tract",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q687",
+      "text": "Which part of the brain controls motor function of",
+      "old": "Right precentral gyrus",
+      "new": "Left paracentral lobule",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q691",
+      "text": "Which muscle is supplied only by contralateral cor",
+      "old": "Orbicularis oris",
+      "new": "Muscles of the upper part of the face",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q692",
+      "text": "Which facial muscle receives only contralateral co",
+      "old": "Orbicularis oculi of the upper face",
+      "new": "Orbicularis oris of the lower face",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q695",
+      "text": "Right hemisection of the spinal cord most likely p",
+      "old": "Loss of all types of sensation of the left side at the level of the lesion",
+      "new": "Loss of pain and temperature sensations of the left side below the level of the lesion",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q697",
+      "text": "Hemisection of the spinal cord most likely produce",
+      "old": "Loss of all types of sensation of the opposite side at the level of the lesion",
+      "new": "Loss of proprioception of the opposite side below the level of the lesion",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q698",
+      "text": "The medial geniculate body is connected to the bra",
+      "old": "Superior colliculus",
+      "new": "Inferior colliculus",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q700",
+      "text": "Which structure is found at the level of the open ",
+      "old": "Inferior cerebellar peduncle",
+      "new": "Main olivary nucleus",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q701",
+      "text": "The aqueduct of Sylvius connects which of the foll",
+      "old": "Lateral ventricles to third ventricle",
+      "new": "Third ventricle to fourth ventricle",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q702",
+      "text": "Luschka connects which two structures?",
+      "old": "Fourth ventricle and third ventricle",
+      "new": "Fourth ventricle and subarachnoid space",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q703",
+      "text": "Which of the following carries preganglionic paras",
+      "old": "Glossopharyngeal nerve",
+      "new": "Chorda tympani",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q704",
+      "text": "The cartilages of the larynx develop embryological",
+      "old": "First and second arches",
+      "new": "Fourth and sixth pharyngeal arches",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q706",
+      "text": "Inferior salivatory nucleus supplies which of the ",
+      "old": "Submental gland",
+      "new": "Parotid gland",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q709",
+      "text": "Which nerve carries postganglionic parasympathetic",
+      "old": "Lesser petrosal nerve",
+      "new": "Auriculotemporal nerve",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q711",
+      "text": "A patient presents with paralysis of the right foo",
+      "old": "Right middle cerebral artery",
+      "new": "Right anterior cerebral artery",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q712",
+      "text": "Which structure ends in the internal jugular vein?",
+      "old": "Superior petrosal sinus",
+      "new": "Sigmoid sinus",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q713",
+      "text": "Which anatomical structure serves as the primary p",
+      "old": "Superior ophthalmic vein",
+      "new": "Pterygoid plexus",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q715",
+      "text": "Which nerve carries postganglionic parasympathetic",
+      "old": "Deep petrosal nerve",
+      "new": "Greater petrosal nerve",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q716",
+      "text": "Which structure receives the drainage of the infer",
+      "old": "Sigmoid sinus",
+      "new": "Internal jugular vein",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q719",
+      "text": "Which venous sinus drains directly into the intern",
+      "old": "Superior sagittal sinus",
+      "new": "Sigmoid sinus",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q724",
+      "text": "Which major vein does the common facial vein typic",
+      "old": "External jugular vein",
+      "new": "Internal jugular vein",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q726",
+      "text": "The angle of the mandible is supplied by which ner",
+      "old": "Auriculotemporal nerve",
+      "new": "Inferior alveolar nerve",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q727",
+      "text": "Which nerve provides cutaneous innervation to the ",
+      "old": "Marginal mandibular nerve",
+      "new": "Great auricular nerve",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q729",
+      "text": "The nerve to the pterygoid canal is formed by the ",
+      "old": "Auriculotemporal nerve and deep petrosal nerve",
+      "new": "Greater petrosal nerve and deep petrosal nerve",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q730",
+      "text": "A patient presents with pain localized to the temp",
+      "old": "Masseteric nerve",
+      "new": "Auriculotemporal nerve",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q732",
+      "text": "The retromandibular vein divides within the paroti",
+      "old": "Internal jugular vein and subclavian vein",
+      "new": "Anterior facial vein and posterior auricular vein",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q733",
+      "text": "Which ligament prevents the mandible from posterio",
+      "old": "Temporomandibular ligament",
+      "new": "Lateral pterygoid ligament",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q736",
+      "text": "Which structure forms the medial boundary of the i",
+      "old": "Ramus of the mandible",
+      "new": "Lateral pterygoid plate",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q738",
+      "text": "Which vein joins with the maxillary vein to form t",
+      "old": "Facial vein",
+      "new": "Superficial temporal vein",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q739",
+      "text": "Which blood vessel arises as a branch from the thi",
+      "old": "Deep temporal artery",
+      "new": "Middle meningeal artery",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q741",
+      "text": "Which artery is located below the posterior belly ",
+      "old": "Facial artery",
+      "new": "Occipital artery",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q748",
+      "text": "Posterior column lies between:",
+      "old": "posterior median septum, anterior horn",
+      "new": "posterior median septum, posterior horn",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q749",
+      "text": "Anterior column lies between:",
+      "old": "posterior median septum, anterior horn",
+      "new": "anterior median fissure , anterior horn",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q750",
+      "text": "Lateral column lies between:",
+      "old": "posterior median septum , anterior horn",
+      "new": "anterior column, posterior column",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q756",
+      "text": "Anterior column is present between:",
+      "old": "posterior medium septum, posterior horn",
+      "new": "anterior medium fissure, anterior horn",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q770",
+      "text": "Axon in proprioception ascend in:",
+      "old": "genu of internal capsule",
+      "new": "posterior limb of internal capsule",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q771",
+      "text": "Receptors of crude touch are:",
+      "old": "Meissner corpuscle",
+      "new": "Merkel disc , free nerve ending",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q792",
+      "text": "Large pyriform multipolar Cell:",
+      "old": "granular cell",
+      "new": "purkinje cell",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q805",
+      "text": "The central canal is lined by:",
+      "old": "Simple squamous epithelium.",
+      "new": "Simple cuboidal epithelium partially ciliated.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q807",
+      "text": "One of the following is a character of lumbar leve",
+      "old": "It never has lateral horns.",
+      "new": "Smallest white matter / grey matter ratio.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q809",
+      "text": "Which of the following is a character of cervical ",
+      "old": "Rounded in shape.",
+      "new": "Has largest white matter/grey matter ratio.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q818",
+      "text": "One of the following is true about gracile tract:",
+      "old": "Presents only in cervical & thoracic levels of spinal cord.",
+      "new": "Terminates at gracile nucleus in medulla.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q820",
+      "text": "Anterior external arcuate fibres connect:",
+      "old": "Gracile and cuneate nuclei of the opposite side with the cerebellum.",
+      "new": "Gracile and cuneate nuclei of the same side with the cerebellum.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q822",
+      "text": "Anterior external arcuate fibres relay in:",
+      "old": "Arcuate nucleus of the same side.",
+      "new": "Arcuate nucleus of the opposite side.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q825",
+      "text": "Origin of medial lemniscus is:",
+      "old": "Gracile and cuneate nuclei of same side.",
+      "new": "Gracile and cuneate nuclei of opposite side.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q829",
+      "text": "One of the following statements is true:",
+      "old": "20% of the pyramidal fibers cross in pyramidal decussation.",
+      "new": "The ventral vestibulospinal tract passes in medial longitudinal bundle.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q839",
+      "text": "One of the following is true about climbing fibres",
+      "old": "They arise from pontine nuclei.",
+      "new": "Each fibre synapse with one Purkinje cell.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q841",
+      "text": "A 5-year-old girl diagnosed with meningitis. The d",
+      "old": "The blood brain barrier normally allows the passage of all antibiotics.",
+      "new": "The meninges become more permeable to penicillin at the site of inflammation and its concentration rises in cerebrospinal fluid.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q845",
+      "text": "A patient with defective pain, temperature, simple",
+      "old": "spinal lemniscus",
+      "new": "trigeminal lemniscus",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q849",
+      "text": "One of the following is correct:",
+      "old": "The anterior perforated substance lies on the medial side of the optic chiasma.",
+      "new": "The olfactory nerve filaments end in the olfactory bulb.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q851",
+      "text": "A female patient has reduced pain and temperature ",
+      "old": "Ventral spinothalamic – syringomyelia.",
+      "new": "Ventral and lateral spinothalamic – syringomyelia.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q863",
+      "text": "Which receptor is specialised for tactile discrimi",
+      "old": "Pacinian corpuscle",
+      "new": "Meissner corpuscle",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q876",
+      "text": "Semantic memory refers to:",
+      "old": "Memory of personal events",
+      "new": "Memory of facts and general knowledge",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q877",
+      "text": "The representational (non‑dominant) hemisphere in ",
+      "old": "It is responsible for language comprehension.",
+      "new": "It always lies in the left hemisphere.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q881",
+      "text": "Which of the following inhibits pain sensation?",
+      "old": "Adaptation of pain receptors",
+      "new": "Stimulation of opioid receptors",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q886",
+      "text": "The main benefit of adding carbidopa to levodopa i",
+      "old": "Inhibits peripheral MAO‑B",
+      "new": "Inhibits peripheral aromatic L‑amino acid decarboxylase",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q891",
+      "text": "In the urea cycle, which two compounds are end pro",
+      "old": "Urea and citrulline",
+      "new": "Urea and fumarate",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1031",
+      "text": "Which of the following is a common microscopic fea",
+      "old": "They are both present in series with extrafusal fibres.",
+      "new": "They are both encapsulated receptors.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1032",
+      "text": "Which of the following best describes the conditio",
+      "old": "Loss of all sensation on one side of the body",
+      "new": "Ignoring stimuli from the opposite side, often with failure to dress or shave that side",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1034",
+      "text": "Which of the following is a character of the cervi",
+      "old": "Oval in shape",
+      "new": "Has the largest white matter/grey matter ratio",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1035",
+      "text": "The first order neuron in proprioception from the ",
+      "old": "Gracile nucleus",
+      "new": "Spinal ganglia",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1038",
+      "text": "In a complete spinal cord transection at the level",
+      "old": "Paralysis of both upper limbs",
+      "new": "Paraplegia of both lower limbs",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1039",
+      "text": "Which of the following is a rapid, monosynaptic re",
+      "old": "Golgi tendon reflex",
+      "new": "Stretch reflex",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1043",
+      "text": "The recurrent laryngeal nerve is a branch of the:",
+      "old": "Glossopharyngeal nerve",
+      "new": "Vagus nerve",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1044",
+      "text": "The cauda equina is composed of:",
+      "old": "The lower part of the spinal cord",
+      "new": "Dorsal and ventral roots of lumbar, sacral and coccygeal nerves",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1045",
+      "text": "The maxillary nerve exits the skull through which ",
+      "old": "Foramen ovale",
+      "new": "Foramen rotundum",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1047",
+      "text": "A patient has weakness of the right lower face, bu",
+      "old": "Right facial nerve (LMN)",
+      "new": "Right corticobulbar tract (UMN)",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1048",
+      "text": "The muscle spindle is stretched by contraction of ",
+      "old": "Alpha motor neurons",
+      "new": "Gamma motor neurons",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1050",
+      "text": "A patient with a tumour in the left frontal eye fi",
+      "old": "Moving the left eye laterally",
+      "new": "Conjugate gaze to the right",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1052",
+      "text": "The medial longitudinal fasciculus (MLF) coordinat",
+      "old": "Cerebellum and basal ganglia",
+      "new": "Eyes and head (vestibulo-ocular reflex)",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1053",
+      "text": "Which of the following is a characteristic of the ",
+      "old": "It is responsible for language.",
+      "new": "It is involved in emotion and memory.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1054",
+      "text": "A patient has loss of pain and temperature on the ",
+      "old": "Anterior cord syndrome",
+      "new": "Brown-Sequard syndrome (hemisection)",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1056",
+      "text": "Contralateral sensation from the face and body is ",
+      "old": "Primary motor cortex (area 4)",
+      "new": "Primary somatosensory area (SI)",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1057",
+      "text": "The motor branch to mylohyoid arises from the post",
+      "old": "Buccal nerve",
+      "new": "Inferior alveolar nerve",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1058",
+      "text": "The first-order neuron carrying pain and temperatu",
+      "old": "Spinal nucleus of the trigeminal nerve",
+      "new": "Trigeminal ganglion",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1060",
+      "text": "The chief retractor of the mandible is the:",
+      "old": "Anterior (vertical) fibers of temporalis",
+      "new": "Posterior fibers of temporalis",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1061",
+      "text": "The sensory (dorsal) part of the spinal cord devel",
+      "old": "Basal lamina (plate)",
+      "new": "Alar lamina (plate)",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1062",
+      "text": "Unconscious proprioception from the upper limb (el",
+      "old": "Anterior spinocerebellar tract",
+      "new": "Cuneocerebellar tract",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1065",
+      "text": "Retrolentiform part of internal capsule DOESN'T tr",
+      "old": "Visual radiation.",
+      "new": "Parieto-pontine fibers.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1067",
+      "text": "Choose the wrong statement about the speech areas:",
+      "old": "Motor area lies in the inferior frontal gyrus.",
+      "new": "Both areas are present in both cerebral hemispheres.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1068",
+      "text": "Choose the correct statement about the sensory hom",
+      "old": "It is the body representation within the motor cortex.",
+      "new": "The body is represented upside down.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1071",
+      "text": "Inability to recognize familiar objects by touch i",
+      "old": "Precentral gyrus.",
+      "new": "Superior parietal lobule.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1072",
+      "text": "Which of the following is mesodermal in origin?",
+      "old": "Spinal cord.",
+      "new": "Dura mater.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1074",
+      "text": "Myelination inside the CNS depends on:",
+      "old": "Astrocytes.",
+      "new": "Schwann cells.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1079",
+      "text": "The cavity of the mesencephalon is:",
+      "old": "Lateral ventricle.",
+      "new": "Cerebral aqueduct.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1089",
+      "text": "Choose the wrong statement about the orbicularis o",
+      "old": "Its orbital part closes the eye tightly.",
+      "new": "Its lacrimal part is attached in front of the lacrimal sac.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1100",
+      "text": "Choose the wrong statement about the straight sinu",
+      "old": "It is formed by union of inferior sagittal sinus and great cerebral vein.",
+      "new": "Deviates to the right to continue as the right transverse sinus.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1103",
+      "text": "The only tributary of the subclavian vein is:",
+      "old": "Lingual.",
+      "new": "External jugular.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1105",
+      "text": "The retropharyngeal space lies:",
+      "old": "Between investing and pretracheal fascia.",
+      "new": "Between buccopharyngeal and prevertebral fascia.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1109",
+      "text": "The carotid sheath encloses:",
+      "old": "Phrenic nerve.",
+      "new": "Vagus nerve.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1110",
+      "text": "A nerve running along the posterior border of ster",
+      "old": "Greater occipital.",
+      "new": "Lesser occipital.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1112",
+      "text": "A nerve embedded in the roof of the posterior tria",
+      "old": "Lesser occipital.",
+      "new": "Spinal accessory.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1113",
+      "text": "Tight scalene muscles can compress:",
+      "old": "Subclavian vein.",
+      "new": "Subclavian artery.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1119",
+      "text": "The main opener of the mouth is:",
+      "old": "Temporalis.",
+      "new": "Lateral pterygoid.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1124",
+      "text": "To operate on the lower teeth, the ……… nerve is an",
+      "old": "Auriculotemporal.",
+      "new": "Inferior alveolar.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1125",
+      "text": "A branch from the 3rd part of maxillary artery is:",
+      "old": "Middle meningeal.",
+      "new": "Posterior superior alveolar.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1131",
+      "text": "Nerve of pterygoid canal is formed by union of ………",
+      "old": "Lesser petrosal and greater petrosal",
+      "new": "Deep petrosal and greater petrosal",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1133",
+      "text": "Reflex cough accompanying ear wash is caused by ir",
+      "old": "Tympanic branch of glossopharyngeal",
+      "new": "Auricular branch of vagus",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1138",
+      "text": "A branch from the 2nd part of subclavian artery is",
+      "old": "Vertebral.",
+      "new": "Internal thoracic.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1142",
+      "text": "Choose the wrong statement about the subclavian ve",
+      "old": "It is the continuation of the axillary vein.",
+      "new": "It is separated from subclavian artery by anterior scalene muscle.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-histology-q3",
+      "text": "One of the following is NOT a character of Meissne",
+      "old": "It is an encapsulated nerve ending.",
+      "new": "The nerve fibers run spirally between the Schwann cells.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-histology-q6",
+      "text": "Which of the following is a character of muscle sp",
+      "old": "Present In series with muscle fibers.",
+      "new": "Innervated by afferent & efferent nerve fiber.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-histology-q7",
+      "text": "Pacinian corpuscle:",
+      "old": "Lies in dermal papillae of skin.",
+      "new": "Contain concentric layers of Teloglia.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-histology-q11",
+      "text": "What do free nerve endings respond to?",
+      "old": "Noxious(painful) stimuli",
+      "new": "Thermal stimuli",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-histology-q12",
+      "text": "What is the site of Merkel’s tactile disc?",
+      "old": "Deep layers of the epidermis of the palmer surfaces of hands and planter surfaces of feet",
+      "new": "Transitional sites between hairy & non-hairy skin",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-histology-q14",
+      "text": "One of the following is a character of lumbar leve",
+      "old": "It never has lateral horns.",
+      "new": "Smallest whiter matter /grey matter ratio.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-histology-q16",
+      "text": "Which of the following is true about the dorsal ro",
+      "old": "It is a collection of nerve cells inside the central nervous system.",
+      "new": "It has nerve cells of variable size.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-histology-q17",
+      "text": "Nerve cells of dorsal root ganglia are characteriz",
+      "old": "Of the same size",
+      "new": "Associated with myelinated & unmyelinated nerve fibers.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-histology-q19",
+      "text": "Dura matter characterized by being:",
+      "old": "Fibrous nonvascular layer",
+      "new": "Fibrous vascular layer",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-histology-q21",
+      "text": "The processes of protoplasmic astrocytes character",
+      "old": "Few long thin",
+      "new": "Numerous short",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-histology-q25",
+      "text": "Which of the following cells Produce myelin sheath",
+      "old": "Oligodendrocytes.",
+      "new": "Satellite cells.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-histology-q27",
+      "text": "In the CNS Injury, which of the following cells ar",
+      "old": "Microglia & oligodendrocytes",
+      "new": "Astrocytes & microglia.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-histology-q28",
+      "text": "Cells of Cajal are present in",
+      "old": "molecular layer of cerebrum",
+      "new": "molecular layer of cerebellum",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-histology-q32",
+      "text": "The outer band of baillarger is present in which l",
+      "old": "Molecular layer",
+      "new": "Inner granular layer",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-histology-q33",
+      "text": "The inner band of baillarger is present in which l",
+      "old": "Molecular layer",
+      "new": "Inner pyramidal layer",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-histology-q34",
+      "text": "The cytoplasm of astrocytes contains",
+      "old": "Microtubules",
+      "new": "Thread-like mitochondria",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-histology-q35",
+      "text": "Which of the following is true about microglia?",
+      "old": "They are present in the retina and optic nerve",
+      "new": "They are small spindle shaped cells with branching poles",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-histology-q40",
+      "text": "Inferior olivary nucleus:",
+      "old": "Receive rubro-olivary fibers.",
+      "new": "Its efferent fibers reach the ipsilateral cerebellar cortex through the superior cerebellar peduncle.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-histology-q45",
+      "text": "Which of the following is true about the dorsal ro",
+      "old": "It is a collection of nerve cells inside the central nervous system.",
+      "new": "It has nerve cells of variable size.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-histology-q47",
+      "text": "One of the following nuclei is not present in all ",
+      "old": "Postero-marginal nucleus.",
+      "new": "Nucleus dorsalis (Clark's nucleus).",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-histology-q48",
+      "text": "Which of the following statements concerning the n",
+      "old": "It is found in the ventral horn.",
+      "new": "It projects to the cerebellum.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-histology-q50",
+      "text": "Destruction of the ventral horn results in one of ",
+      "old": "Loss of crude touch.",
+      "new": "Flaccid paralysis.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-histology-q54",
+      "text": "The main sensory nucleus of spinal cord is:",
+      "old": "Substantia gelatinosa.",
+      "new": "Nucleus proprius.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-histology-q55",
+      "text": "Which of the following tracts DON'T extend to all ",
+      "old": "Lateral vestibulospinal tract.",
+      "new": "Tectospinal tract.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-histology-q57",
+      "text": "Which of the following tracts is present in all se",
+      "old": "Gracile and cuneate nuclei of the same side with the cerebellum.",
+      "new": "Dorsal spinocerebellar tract.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-histology-q59",
+      "text": "Anterior external arcuate fibers relay in:",
+      "old": "Arcuate nucleus of the same side.",
+      "new": "Inferior olivary nucleus.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-histology-q64",
+      "text": "Endothelial cells of blood capillaries in brain ch",
+      "old": "More vesicles.",
+      "new": "Few tight junctions.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-histology-q73",
+      "text": "Medulloblastoma is a:",
+      "old": "Glial tumor.",
+      "new": "Tumor of undifferentiated cells.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-histology-q76",
+      "text": "The following histological picture is not characte",
+      "old": "Highly anaplastic tumor cells.",
+      "new": "Papillary formation.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-histology-q78",
+      "text": "Which of the following tumors is malignant:",
+      "old": "Meningioma.",
+      "new": "Glioblastoma multiforme.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-histology-q82",
+      "text": "Which correctly describes a feature of Pacinian co",
+      "old": "Pacinian detect light touch, Meissner detect vibration",
+      "new": "Pacinian have fibers that pass axially through the corpuscle, Meissner fibers are coiled",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-histology-q84",
+      "text": "Which feature characterizes the nerve ending in a ",
+      "old": "Myelinated straight course",
+      "new": "Myelinated afferent fiber enters the base of the corpuscle",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-histology-q89",
+      "text": "Regarding the cervical spinal cord, which statemen",
+      "old": "Substantia gelatinosa receives mostly motor input",
+      "new": "Substantia gelatinosa is located in lamina II",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-histology-q90",
+      "text": "Which statement about Clarke’s nucleus is correct?",
+      "old": "Clarke’s nucleus is present at all levels",
+      "new": "Clarke’s nucleus is present at all thoracic levels",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-histology-q91",
+      "text": "Which structure is found in the cervical segment (",
+      "old": "Intermediolateral cell column in lamina VII grey matter",
+      "new": "Clarke’s nucleus in lamina VII grey matter",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-histology-q93",
+      "text": "Which type of neuron forms synaptic junctions with",
+      "old": "Alpha neurons",
+      "new": "Gamma neurons",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q1",
+      "text": "Crude touch sensation is:",
+      "old": "Carried along Aδ fibers.",
+      "new": "Carried in the lateral spinothalamic tract.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q2",
+      "text": "In the nigrostriated lesion there is:",
+      "old": "Kinetic tremors.",
+      "new": "Lead pipe rigidity.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q3",
+      "text": "Chorea:",
+      "old": "Is due to lesion in the substantia nigra.",
+      "new": "Is associated with hypotonia.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q9",
+      "text": "Motor ataxia is NOT characterized by:",
+      "old": "Zig zag gait.",
+      "new": "Normal coordination with opened eyes",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q11",
+      "text": "65 year-old man has been complaining of worsening ",
+      "old": "Muscular flaccidity.",
+      "new": "Normal tendon jerks.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q12",
+      "text": "The motor area 4 is:",
+      "old": "Located in the post central gyrus in the frontal lobe.",
+      "new": "The main cortical area responsible for control of fine discrete movements",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q18",
+      "text": "A musician has lost his ability to play the piano ",
+      "old": "Area 4",
+      "new": "Area within premotor area (area 6)",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q20",
+      "text": "Brown-Sequard syndrome is characterized by:",
+      "old": "Loss of vibration sense on the same side below level of the lesion",
+      "new": "Loss of pain sensation on the same side below the level of the lesion",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q21",
+      "text": "43 year old woman is evaluated in the hospital and",
+      "old": "Complete spinal cord transection at upper thoracic segments.",
+      "new": "Hemisection on the left part of spinal cord",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q22",
+      "text": "After falling down from a staircase, a young woman",
+      "old": "Transection of the right half of the spinal cord in the upper thoracic region",
+      "new": "Transection of the left side of the spinal cord in the upper thoracic region",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q23",
+      "text": "Lesion in the right internal capsule (UMNL) would ",
+      "old": "Flaccid paralysis on the right Side of body.",
+      "new": "Spastic paralysis on the left Side of body.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q25",
+      "text": "Mass reflex:",
+      "old": "Has a pattern of rigidity of upper limbs.",
+      "new": "Has a pattern of massive lower limb flexion with emptying of rectum and bladder.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q26",
+      "text": "Long-term effects of cord trans-section at T12 inc",
+      "old": "Paralysis of urinary bladder muscle.",
+      "new": "Hypertonia and hyperreflexia in lower limbs.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q28",
+      "text": "Compared to alpha motor neurons, gamma motor neuro",
+      "old": "More numerous",
+      "new": "Transmit impulses from the central part of intrafusal fibers.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q30",
+      "text": "The stretch reflex:",
+      "old": "Is a polysynaptic reflex.",
+      "new": "Is the fastest body reflex.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q54",
+      "text": "Concerning synapses:",
+      "old": "Chemical synapses are not widely distributed in CNS",
+      "new": "Electric synapse is a unidirectional synapse",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q55",
+      "text": "Regarding neurotransmitters:",
+      "old": "ACh is an inhibitory transmitter",
+      "new": "GABA is an excitatory transmitter",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q56",
+      "text": "The mechanism of synaptic transmission includes:",
+      "old": "Ca++ ions are released from the presynaptic knob",
+      "new": "The released transmitter combines with specific receptors on postsynaptic membrane",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q57",
+      "text": "Regarding sensory receptors:",
+      "old": "Receptors are non-specific to stimuli according to Muller’s law",
+      "new": "Receptor potential is inversely related to the intensity of stimulus according to Weber Fechner law",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q58",
+      "text": "Regarding Crude Touch sensation:",
+      "old": "Is perceived at the level of the sensory cortex",
+      "new": "Is transmitted through dorsal column pathway",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q62",
+      "text": "The crossed extensor reflex:",
+      "old": "Provides a typical example of servoassist function.",
+      "new": "Does not involve reciprocal inhibition.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q64",
+      "text": "+ve Babinski sign is NOT present in:",
+      "old": "LMNL.",
+      "new": "Before the age of 1 year.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q65",
+      "text": "Which of the following reflexes is correctly paire",
+      "old": "Autogenic inhibition - muscle spindle",
+      "new": "Stretch reflex - muscle spindle",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q66",
+      "text": "Sensory impulses from spindles of a stretched musc",
+      "old": "Directly inhibiting γ-motor neurons of the antagonistic muscles",
+      "new": "Inhibiting the transmitter release from the central terminals of afferents from the spindles of the antagonistic muscles",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q68",
+      "text": "Muscle spindles:",
+      "old": "Are found in all skeletal muscles",
+      "new": "Consist of a large number of extrafusal muscle fibers",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q72",
+      "text": "A reflex arc includes:",
+      "old": "At least two sets of sequential neurons",
+      "new": "At least two types of efferent neurons",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q74",
+      "text": "Increased γ-motor neuron discharge stimulates musc",
+      "old": "Produces stretch of the extrafusal muscle fibers",
+      "new": "Causes stretch of the central region of the intrafusal fibers",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q75",
+      "text": "Which of the following is NOT a character of ARAS:",
+      "old": "Present in pons and midbrain.",
+      "new": "Receives excitatory impulses from cortical areas.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q76",
+      "text": "Secondary evoked potential is characterized by:",
+      "old": "Localized to a specific cortical area.",
+      "new": "Due to stimulation of non-specific thalamic nuclei.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q77",
+      "text": "Electroencephalogram:",
+      "old": "Recorded in an anaesthetized person.",
+      "new": "Represents summation of EPSP & IPSP in brain neurons.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q78",
+      "text": "Brain waves:",
+      "old": "Regular synchronized alpha waves are recorded in paradoxical sleep.",
+      "new": "Gamma waves are recorded in deep sleep.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q79",
+      "text": "The EEG wave recorded in high mental activity, hyp",
+      "old": "Alpha (8-13 HZ, 50µv, regular, synchronized).",
+      "new": "Beta (13-30 HZ, 25µv, irregular, desynchronized).",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q80",
+      "text": "The EEG wave recorded in children is:",
+      "old": "Alpha (8-13 HZ, 50µv, regular, synchronized).",
+      "new": "Theta (4-7 HZ, 100µv, regular, synchronized).",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q81",
+      "text": "β waves of EEG are:",
+      "old": "Character of relaxed awake state.",
+      "new": "Faster than α waves, but slower than δ waves.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q82",
+      "text": "Which of the following sentences about sleep and a",
+      "old": "Posterior hypothalamus is a Non-REM sleep center.",
+      "new": "Orexin hormone of the hypothalamus regulates brain stem nuclei activity and switches the activity between seep and arousal.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q85",
+      "text": "Compared to REM sleep, Non-REM sleep is characteri",
+      "old": "Dreams and penile erection.",
+      "new": "Increase in growth hormone secretion.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q87",
+      "text": "Which of the following is a REM sleep center:",
+      "old": "Raphe nucleus.",
+      "new": "Locus coeruleus.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q89",
+      "text": "Which of the following is NOT a function of the pr",
+      "old": "Operation of working memory.",
+      "new": "Decision making and personality traits.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q91",
+      "text": "Aphasia:",
+      "old": "Is an abnormal speech due to defect in articulation.",
+      "new": "Broca’s aphasia characterized by excessive meaningless speech.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q92",
+      "text": "Speech centers do NOT include:",
+      "old": "Wernicke’s area.",
+      "new": "Somatic sensory association area.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q93",
+      "text": "Sensory aphasia occurs with lesion in:",
+      "old": "Visual pathway.",
+      "new": "Auditory association area.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q94",
+      "text": "Concerning learning:",
+      "old": "Habituation is due to increase intracellular calcium leading to augmented response.",
+      "new": "Sensitization occurs by presynaptic facilitation.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q98",
+      "text": "In memory:",
+      "old": "Implicit memory is the conscious recall of information.",
+      "new": "Explicit memory is stored in basal ganglia and cerebellum.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q99",
+      "text": "Short-term memory is:",
+      "old": "Stored after 2 hours from getting the information.",
+      "new": "Due to transient synaptic modifications such as increased release of neurotransmitters.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q100",
+      "text": "Long-term memory is:",
+      "old": "Stored immediately after getting the information.",
+      "new": "Involves gene activation and protein synthesis.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q101",
+      "text": "Which sentence is NOT true regarding consolidation",
+      "old": "It is the conversion of short-term memory to a long-term one.",
+      "new": "Completed in 5 minutes.",
+      "reason": "negated in EXCEPT"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q102",
+      "text": "Mechanisms of long-term memory do NOT include:",
+      "old": "Transient synaptic modifications.",
+      "new": "Structural and functional synaptic changes.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q104",
+      "text": "Consolidation of memory decreases by:",
+      "old": "Interesting information.",
+      "new": "Lack of REM sleep.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q105",
+      "text": "Habituation:",
+      "old": "Is the gradual increase in response in presence of a repeated stimulus.",
+      "new": "Is due to gradual decrease in the neurotransmitter release in the involved pathway.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q107",
+      "text": "Post-tetanic facilitation:",
+      "old": "Is a gradual loss of response to a repeated benign stimulus.",
+      "new": "Explained by accumulation of Ca++ in the presynaptic neuron upon rapid short-term stimulation.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q108",
+      "text": "In long-term depression:",
+      "old": "A rapid repeated brief stimulation leads to a persistent enhancement of response.",
+      "new": "A slow, prolonged, low frequency stimulation leads to decrease strength of synaptic transmission.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q109",
+      "text": "Functions of the limbic system do NOT include:",
+      "old": "Perception and discrimination of olfaction.",
+      "new": "Control of feeding, maternal & sexual behaviors.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q139",
+      "text": "Concerning synapses, which of the following is tru",
+      "old": "Chemical synapses are not widely distributed in CNS.",
+      "new": "Electric synapse is a unidirectional synapse.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q141",
+      "text": "Pain sensation is characterized by:",
+      "old": "Sharply localized.",
+      "new": "Slow pain.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q145",
+      "text": "Clonus:",
+      "old": "Is a flexion withdrawal reflex.",
+      "new": "Can be elicited by sudden maintained stretch of a Hypertonic muscle.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q146",
+      "text": "Babinski sign is present in:",
+      "old": "Hypertonic muscle.",
+      "new": "Upper motor neuron lesion.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q156",
+      "text": "Which explains areas with low two-point discrimina",
+      "old": "Less convergence of afferent nerve fibers",
+      "new": "Poor cortical representation",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q159",
+      "text": "Which type of pain is transmitted by Aδ nerve fibe",
+      "old": "Chemical pain",
+      "new": "Slow pain",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q166",
+      "text": "In secondary hyperalgesia, which describes the aff",
+      "old": "Normal skin surrounding non-healthy tissue",
+      "new": "Only the site of injury",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q167",
+      "text": "Which explains pain relief when you rub the skin n",
+      "old": "Convergence projection theory",
+      "new": "Gate theory",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q168",
+      "text": "A woman wore a dress on the beach. Later, wearing ",
+      "old": "Increase receptor sensitivity by tissue products",
+      "new": "Activity-dependent increase in excitability of dorsal horn neurons",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q172",
+      "text": "Deep pain is typically characterized by:",
+      "old": "Well localized and sharp",
+      "new": "Poorly localized",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q176",
+      "text": "Stereognosis sensation is carried by which neural ",
+      "old": "Ventral spinothalamic tract",
+      "new": "Dorsal column tract",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q178",
+      "text": "Which statement is correct regarding muscle tone?",
+      "old": "Stretch reflex is monosynaptic",
+      "new": "It depends only on upper motor neurons",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q179",
+      "text": "Which statement regarding muscle spindle and Golgi",
+      "old": "Muscle spindle is responsible for muscle tension",
+      "new": "Golgi tendon organ initiates the stretch reflex",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q185",
+      "text": "Which function is attributed to the pontine circui",
+      "old": "Initiation of voluntary movement",
+      "new": "Regulation of muscle tone",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q186",
+      "text": "Ankle clonus occurs due to:",
+      "old": "Loss of cerebellar inhibition",
+      "new": "Stretch reflex inhibition",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q190",
+      "text": "Which brain structure is typically damaged in left",
+      "old": "Left globus pallidus",
+      "new": "Right subthalamic nucleus",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q192",
+      "text": "Which statement about climbing fibers is correct?",
+      "old": "They originate from the inferior olivary nucleus",
+      "new": "Each Purkinje cell receives input from a single climbing fiber",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q194",
+      "text": "Which of the following best describes the gate con",
+      "old": "Pain is transmitted only by large myelinated fibres.",
+      "new": "Activity in large afferent fibres can inhibit pain transmission in the dorsal horn.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q196",
+      "text": "If the gamma efferent discharge to a muscle is sec",
+      "old": "The muscle will be paralyzed",
+      "new": "Ability to carry a load is affected",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q198",
+      "text": "The withdrawal reflex is initiated by stimulation ",
+      "old": "Muscle spindle",
+      "new": "Cutaneous free nerve ending",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q201",
+      "text": "A patient has lesion in right motor area 4, he wil",
+      "old": "Loss fine discrete movements in right leg",
+      "new": "Loss of fine discrete movements in left hand",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q202",
+      "text": "A high school student was trying to solve a math p",
+      "old": "Alpha waves",
+      "new": "Gamma waves",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q205",
+      "text": "Semantic memory is characterized by which of the f",
+      "old": "It is the memory of personal events",
+      "new": "It is the memory of facts",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q1",
+      "text": "The following is not an adverse effect of direct D",
+      "old": "Hallucination",
+      "new": "Impulse control disorders",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q5",
+      "text": "Addition of carbidopa to L dopa increases risk of ",
+      "old": "Dyskinesia",
+      "new": "Nausea & vomiting",
+      "reason": "negated in EXCEPT"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q11",
+      "text": "The dose of benzodiazepines should be adjusted in:",
+      "old": "Elderly patients.",
+      "new": "Concomitant administration with alcohol.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q14",
+      "text": "Flumazenil is an antidote for all the following Ex",
+      "old": "Triazolam.",
+      "new": "Buspirone",
+      "reason": "negated in EXCEPT"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q15",
+      "text": "All the following characteristics are shared by fl",
+      "old": "Have shorter t1/2 than their respective agonists.",
+      "new": "Given orally.",
+      "reason": "negated in EXCEPT"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q16",
+      "text": "Abuse potential of buspirone is low because",
+      "old": "It has a weak anxiolytic effect",
+      "new": "It has a delayed onset of action.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q19",
+      "text": "The following drug is not matched with its mechani",
+      "old": "Diazepam increases frequency of opening of chloride channels",
+      "new": "Buspirone is selective 5HT1A antagonist",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q20",
+      "text": "The following is a Wrong statement about Barbitura",
+      "old": "Low therapeutic index",
+      "new": "Strong enzyme inhibitors",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q21",
+      "text": "The following statement is Wrong regarding pharmac",
+      "old": "Absorption of intramuscular injection except lorazepam is slower than oral",
+      "new": "Clinical duration of action of long acting BDZs is shorter than the actual half life as they form active metabolites",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q23",
+      "text": "The following is not an adverse effect of BZDS",
+      "old": "Sedation & hangover",
+      "new": "Insomnia & decrease in REM sleep on sudden withdrawal",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q24",
+      "text": "The following is a Wrong statement about BZDs",
+      "old": "Lorazepam is an intermediate duration and effective anxiolytic and in status epilepticus",
+      "new": "Midazolam is long acting acting used in anesthesia as hypnotic and should be avoided as anxiolytic",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q25",
+      "text": "The following is wrong about zolpidem",
+      "old": "Short acting non BDZs hypnotic",
+      "new": "Tolerance & dependence is more common than BDZs",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q27",
+      "text": "The following statement is wrong",
+      "old": "Chronic anxiety is added to antidepressant in the beginning of therapy till the effect of antidepressant appears",
+      "new": "Panic disorders require highly potent drugs such as alprazolam & buspirone",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q28",
+      "text": "The following about thiopental is WRONG:",
+      "old": "Has a rapid onset of action due to rapid crossing of BBB.",
+      "new": "Ultra short acting due to rapid metabolism.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q32",
+      "text": "The following is not adverse effect of halothane",
+      "old": "Malignant hyperthermia",
+      "new": "Bradycardia & arrhythmia",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q35",
+      "text": "Which of the following is wrong regarding propofol",
+      "old": "Rapid induction & rapid recovery due to rapid metabolism",
+      "new": "Respiratory depression and vomiting are common adverse effect",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q36",
+      "text": "Which of the following is wrong regarding ketamine",
+      "old": "Short acting IV agent producing dissociative anesthesia",
+      "new": "Useful in hypertension as it decrease blood pressure",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q37",
+      "text": "Which of the following is not adverse effect of sp",
+      "old": "Headache",
+      "new": "Spinal root injury",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q38",
+      "text": "Which of the following is a wrong statement?",
+      "old": "Propranolol decrease metabolism of lidocaine and may precipitate its toxicity",
+      "new": "Felypressin is not suitable with local anesthetics in cardiac patients",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q46",
+      "text": "Ethosuximide useful in",
+      "old": "Partial epilepsy",
+      "new": "Absence seizure",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q47",
+      "text": "Which of the following is not adverse effect of ph",
+      "old": "Osteomalacia",
+      "new": "Gingival Hyperplasia",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q48",
+      "text": "Which of the following is not adverse effect of Ca",
+      "old": "Agranulocytosis",
+      "new": "Megaloblastic anemia",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q50",
+      "text": "Regarding adverse effects & precautions with sumat",
+      "old": "Unpleasant taste with nasal spray",
+      "new": "Hypotension",
+      "reason": "negated in EXCEPT"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q51",
+      "text": "Regarding adverse effects of ergotamine, which is ",
+      "old": "Nausea & vomiting",
+      "new": "Hypotension",
+      "reason": "negated in EXCEPT"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q53",
+      "text": "Fluoxetine does not induce:",
+      "old": "Serotonin syndrome if co- administered with tranylcypromine",
+      "new": "Marked sedation.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q56",
+      "text": "Nocturnal enuresis is treated with imipramine but ",
+      "old": "Imipramine induces insomnia while fluoxetine induces sedation.",
+      "new": "Imipramine possess anticholinergic effect but fluoxetine does not.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q61",
+      "text": "Which of the following is not adverse effect encou",
+      "old": "Nausea",
+      "new": "Sedation & dry mouth",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q70",
+      "text": "Moclobemide is preferred to phenelzine because:",
+      "old": "It inhibits MAO‑A and MAO‑B enzymes",
+      "new": "It is a selective MAO‑A inhibitor only",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q78",
+      "text": "Which of the following statement is Wrong about us",
+      "old": "Taken for 2‑4 days every 6 hours",
+      "new": "Should be started immediately after empiric antibiotic",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q79",
+      "text": "Which of the following is 1st choice as empiric an",
+      "old": "Ampicillin + ceftriaxone",
+      "new": "Vancomycin + Ceftriaxone + Ampicillin",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q80",
+      "text": "Which of the following is Wrong about meningitis d",
+      "old": "Duration of treatment up to 21 days",
+      "new": "Rifampicin is added to Vancomycin during using dexamethasone because it increases metabolism of vancomycin",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q81",
+      "text": "Chemoprophylaxis is not recommended in meningitis ",
+      "old": "Neisseria meningitidis",
+      "new": "Streptococcus Pneumoniae",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q82",
+      "text": "Choose from the following pair of antibiotics not ",
+      "old": "Aminoglycosides and β‑lactam",
+      "new": "Amphotericin and Aminoglycosides",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q83",
+      "text": "Principles of antimicrobial therapy for meningitis",
+      "old": "Antibiotics should be lipophilic‑ionized in physiological pH",
+      "new": "Once organism is identified, treatment should be continued for 7 to 21 days",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q86",
+      "text": "Intrapartum Group B streptococcus prophylaxis requ",
+      "old": "GBS carrier mother",
+      "new": "History of GBS bacteriuria at any time during pregnancy",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q91",
+      "text": "TB meningitis:",
+      "old": "Duration will take 9‑12 months",
+      "new": "Corticosteroid may be required in stage 2 or 3",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q94",
+      "text": "Which of the following is correct regarding Fingol",
+      "old": "Decrease BBB invasion by T‑lymphocyte",
+      "new": "Prevent T lymphocyte migration from Lymph node",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q95",
+      "text": "Which of the following is correct about Fingolimod",
+      "old": "Associated with 1st dose tachycardia",
+      "new": "1st parenteral & oral Diseases modified drug",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q153",
+      "text": "The following is not common between pethidine & Bu",
+      "old": "Analgesic effect in severe pain",
+      "new": "Respiratory depression is increased by increasing dose",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q154",
+      "text": "The advantage of adding Bromocriptine to L-dopa is",
+      "old": "Activates D1 receptors improving the condition",
+      "new": "Reduces the risk of psychosis of L-dopa",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q156",
+      "text": "The following concerning Naloxone is not correct:",
+      "old": "Has a shorter half-life than its agonist",
+      "new": "Given in anesthesia to reverse CNS depression of its agonist",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q159",
+      "text": "The following is wrong statement about BZDs:",
+      "old": "Lorazepam is an intermediate duration and effective anxiolytic and used in status epilepticus",
+      "new": "Midazolam is long acting used in anesthesia as hypnotic and should be avoided as anxiolytic",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q160",
+      "text": "Abuse potential of Buspirone is low because:",
+      "old": "It has a weak anxiolytic effect",
+      "new": "It has a delayed onset of action",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q161",
+      "text": "The following drug is not matched with its mechani",
+      "old": "Diazepam increases frequency of opening of chloride channels",
+      "new": "Buspirone is selective 5HT1A antagonist",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q162",
+      "text": "All of the following characteristics are shared by",
+      "old": "Have shorter t½ than their respective agonists",
+      "new": "Given orally",
+      "reason": "negated in EXCEPT"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q163",
+      "text": "The following statement is wrong regarding pharmac",
+      "old": "Absorption of intramuscular injection except Lorazepam is slower than oral",
+      "new": "Clinical duration of action of long acting BZDs is shorter than the actual half-life as they form active metabolites",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q165",
+      "text": "The following is not common adverse effect of nitr",
+      "old": "Hypoxia if take pure without oxygen",
+      "new": "Hepatic toxicity",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q166",
+      "text": "Which of the following is a wrong statement:",
+      "old": "Propranolol decrease metabolism of Lidocaine and may precipitate its toxicity",
+      "new": "Addition of epinephrine to local anesthetics may induce severe hypertension due to unopposed alpha action",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q170",
+      "text": "Ethosuximide useful in:",
+      "old": "Partial epilepsy",
+      "new": "Absence seizure",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q171",
+      "text": "The following side effect is most likely to be see",
+      "old": "Water retention",
+      "new": "Gingival hyperplasia",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q172",
+      "text": "All mentioned drugs useful in prophylaxis of migra",
+      "old": "Amitriptyline",
+      "new": "Diazepam",
+      "reason": "negated in EXCEPT"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q177",
+      "text": "Which of the following is not adverse effect of ca",
+      "old": "Agranulocytosis",
+      "new": "Megaloblastic anemia",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q181",
+      "text": "Regarding adverse effects & precautions with Sumat",
+      "old": "Unpleasant taste with nasal spray",
+      "new": "Hypotension",
+      "reason": "negated in EXCEPT"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q182",
+      "text": "Sumatriptan precautions include all of the followi",
+      "old": "Shouldn’t be used for long term",
+      "new": "Postmenopausal",
+      "reason": "negated in EXCEPT"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q186",
+      "text": "The following is not adverse effect of lithium car",
+      "old": "Ataxia & Tremors",
+      "new": "Renal tubular damage",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q190",
+      "text": "The following abused drug is wrongly matched to re",
+      "old": "Pentobarbital / phenobarbital",
+      "new": "Alcohol / Disulfiram",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q197",
+      "text": "The following is correctly matched to its adverse ",
+      "old": "Clozapine / marked extrapyramidal side effects",
+      "new": "Venlafaxine / hypertension more common",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q198",
+      "text": "What is the classification of codeine? And what’s ",
+      "old": "Moderate analgesic and antitussive",
+      "new": "Weak analgesic and anti-diarrheal",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q204",
+      "text": "How do Benzodiazepines affect sleep?",
+      "old": "Shorten sleep latency",
+      "new": "Increase stage 2 NREM sleep",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q212",
+      "text": "What is the choice of antibiotic in bacterial meni",
+      "old": "Vancomycin",
+      "new": "Ampicillin + cefotaxime or Ampicillin + Gentamicin",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q213",
+      "text": "What is the triple therapy for cases with patients",
+      "old": "Vancomycin + Ceftriaxone +Ampicillin",
+      "new": "Ampicillin + cefotaxime or Ampicillin + Gentamicin",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q221",
+      "text": "How is bipolar manic depression managed during the",
+      "old": "Lithium and/or antipsychotics",
+      "new": "Mood stabilizers",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q230",
+      "text": "Most serious adverse effect/s of morphine",
+      "old": "Dependence",
+      "new": "Respiratory depression",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q232",
+      "text": "The following is not common between pethidine & tr",
+      "old": "Analgesics",
+      "new": "Action completely reversed by naloxone",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q240",
+      "text": "The following is common between aspirin and other ",
+      "old": "Reversibly inhibit COX enzyme",
+      "new": "Hypersensitivity reactions may occur",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q241",
+      "text": "NSAIDs are best avoided in:",
+      "old": "Asthmatic patients",
+      "new": "Patients with a history of gastric bleeding",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q245",
+      "text": "Which one of the following statements regarding pa",
+      "old": "It is excreted unchanged by the kidney",
+      "new": "The maximum recommended daily dose in adults is 4 gm.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q253",
+      "text": "Indomethacin is least likely to be prescribed in",
+      "old": "Osteoarthritis",
+      "new": "Acute gouty arthritis.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q255",
+      "text": "Which of the following is 1st choice as empiric an",
+      "old": "Ampicillin + ceftriaxone",
+      "new": "Vancomycin + ceftriaxone + Ampicillin",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q256",
+      "text": "Ethosuximide is useful in:",
+      "old": "Partial epilepsy",
+      "new": "Absence seizure",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q257",
+      "text": "Which of the following is not correctly matched to",
+      "old": "Phenytoin / sodium channel blockade",
+      "new": "Valproate / inhibition of GABA transaminase",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q264",
+      "text": "Which of the following is a character of chemical ",
+      "old": "Bidirectional.",
+      "new": "Sensitive to drugs.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q268",
+      "text": "Opening of ligand-gated Cl- channels causes:",
+      "old": "Inhibition of the postsynaptic neuron.",
+      "new": "Block of ligand-gated cation channels.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q271",
+      "text": "Synaptic delay is:",
+      "old": "The time needed for release of neurotransmitter from synaptic vesicles.",
+      "new": "The minimal delay time in the central nervous system is about 0.5 millisecond.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q272",
+      "text": "Synaptic fatigue is due to:",
+      "old": "Decreased synthesis of neurotransmitters.",
+      "new": "Imbalance between rates of synthesis and release of neurotransmitters.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q276",
+      "text": "Receptor potential is characterized by which of th",
+      "old": "Obey all or none law.",
+      "new": "Its intensity is increased by increase intensity of stimulation.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q280",
+      "text": "Specificity:",
+      "old": "Explains the process of adaptation.",
+      "new": "Means that each receptor is most sensitive to a specific form of energy called Adequate stimulus.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q283",
+      "text": "Slow pain:",
+      "old": "Is carried along type A-delta fibers.",
+      "new": "Pathway activates the non-specific thalamic nuclei.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q286",
+      "text": "Tic douloureux:",
+      "old": "Is due to convergence facilitation theory.",
+      "new": "Sharp lancinating pain in the distribution of the facial nerve.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q288",
+      "text": "Pain sensation can be inhibited by:",
+      "old": "Adaptation of pain receptors.",
+      "new": "Stimulation of opioid receptors.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q290",
+      "text": "Tactile discrimination is characterized by:",
+      "old": "Receptors are muscle spindle.",
+      "new": "Rapidly adapting sensation.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q34",
+      "text": "Six hours after a meal, which of the following is ",
+      "old": "Glycogen from the muscle.",
+      "new": "Ketone bodies from the liver.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q38",
+      "text": "Catecholamines",
+      "old": "include dopamine, (norepinephrine) (epinephrine)",
+      "new": "are Both hormones And Neurotransmitters",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q41",
+      "text": "The urea cycle is active in cases of",
+      "old": "carbohydrate intake",
+      "new": "Protein intake",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q43",
+      "text": "If there were complete absence of carbamoyl phosph",
+      "old": "Non-enzymatic synthesis.",
+      "new": "bacterial action on ammonia.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q46",
+      "text": "Which of the following may be true about the gluta",
+      "old": "It normally helps detoxify ammonia.",
+      "new": "At high ammonia concentration, it can deplete glutamate, with consequent decrease of GABA.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q48",
+      "text": "Ammonia toxicity to the brain is Probably through ",
+      "old": "Inhibition of energy production in brain Cells.",
+      "new": "Production of increased amounts of the inhibitory neurotransmitter GABA.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q52",
+      "text": "Primary hyperammonemia may be treated by",
+      "old": "Low-protein diet.",
+      "new": "agents that increase excretion of Conjugated amino acids, e.g., benzoic acid and phenylacetate.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q53",
+      "text": "Maple syrup urine disease is an inborn error of me",
+      "old": "Sulphur-containing amino acids",
+      "new": "Branched chain amino acids.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q57",
+      "text": "Methionine is synthesized in human body from:",
+      "old": "Cysteine and homoserine",
+      "new": "Homocysteine and serine",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q147",
+      "text": "What are the effects of maple syrup urine disease?",
+      "old": "Mental retardation and may lead to early death",
+      "new": "The urine has a sweet smell-like maple syrup or burned sugar",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q149",
+      "text": "Which of the following is an absolute requirement ",
+      "old": "Glucose and oxygen.",
+      "new": "Glucose and fatty acids.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q155",
+      "text": "Glucose 6-phosphate is utilized in which pathway i",
+      "old": "Glycolysis.",
+      "new": "Pentose phosphate pathway.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q158",
+      "text": "Which of the following aminoacids may act as a neu",
+      "old": "Glycine.",
+      "new": "Glutamic acid.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q174",
+      "text": "Nitric oxide is a hormone and a neurotransmitter p",
+      "old": "by the action of nitric oxide synthase.",
+      "new": "from glycine.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q175",
+      "text": "Nitric oxide synthase",
+      "old": "acts on arginine and needs Oxygen and NADPH.",
+      "new": "has three isozymes: neuronal, endothelial and phagocytic.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q177",
+      "text": "Urea cycle is a pathway that",
+      "old": "takes place mainly in the liver cells.",
+      "new": "produces ammonia from urea.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q179",
+      "text": "Although arginine is formed in the urea cycle, it ",
+      "old": "It must be broken down by arginase enzyme.",
+      "new": "Its rate of synthesis is not enough for growing children.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q181",
+      "text": "Which of the following is a high energy compound f",
+      "old": "Ornithine.",
+      "new": "Carbamoyl phosphate.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q183",
+      "text": "Ornithine is an aminoacid formed from",
+      "old": "arginine and can be transformed to glutamate in two steps.",
+      "new": "glutamate and can be transformed to arginine in the urea cycle.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q193",
+      "text": "How is carbamoyl phosphate synthetase I different ",
+      "old": "I is mitochondrial while II is cytosolic.",
+      "new": "I is used for pyrimidine synthesis but II is for urea synthesis.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q194",
+      "text": "Which of the following is an energy-producing path",
+      "old": "Citrate cycle.",
+      "new": "Urea cycle.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q199",
+      "text": "How is citric acid cycle useful for urea cycle?",
+      "old": "Providing energy.",
+      "new": "Regeneration of aspartate from fumarate, through malate and oxalo-acetate.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q202",
+      "text": "The rate of the urea cycle is controlled by",
+      "old": "substrate availability.",
+      "new": "induction of the cycle enzyme.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q203",
+      "text": "Asparagine is important as",
+      "old": "an intermediate of the urea cycle.",
+      "new": "a requirement for certain cancer cells.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q205",
+      "text": "In fasting conditions, glucose is provided for the",
+      "old": "Absorption from the intestine.",
+      "new": "Gluconeogenesis in the liver.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q208",
+      "text": "The rate limiting step in the biosynthesis of cate",
+      "old": "Decarboxylation of dihydroxyphenylalanine.",
+      "new": "Hydroxylation of tyrosine.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q209",
+      "text": "Which of the following amine acids may act as a ne",
+      "old": "Glycine.",
+      "new": "Glutamic acid.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q213",
+      "text": "Gamma-amino-butyric acid (GABA) is produced by:",
+      "old": "Decarboxylation of glutamic acid.",
+      "new": "A reaction that requires vitamin B6 derived cofactor.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q222",
+      "text": "GABA (gamma amino butyric acid) is:",
+      "old": "Post-synaptic excitatory transmitter.",
+      "new": "Post-synaptic inhibitor transmitter.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q227",
+      "text": "Serotonin is:",
+      "old": "5-hydroxytryptamine.",
+      "new": "A tyrosine derivative.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q229",
+      "text": "Vitamin B-derived coenzyme is needed for the synth",
+      "old": "Epinephrine from norepinephrine.",
+      "new": "Dopamine from dopa.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q232",
+      "text": "Catecholamines are:",
+      "old": "Include dopamine, norepinephrine, epinephrine.",
+      "new": "Are both hormones and neurotransmitters.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q234",
+      "text": "Which of the following reactions produces carbon d",
+      "old": "Conversion of acetyl CoA to malonyl CoA.",
+      "new": "Synthesis of serotonin from its precursor.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q235",
+      "text": "Which of the following is measured in the urine to",
+      "old": "Noradrenaline.",
+      "new": "Vanillomandelic acid.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q238",
+      "text": "Hormones and neurotransmitters:",
+      "old": "Are signal molecules used for cell-cell communication.",
+      "new": "Are mostly polypeptides or nitrogenous compounds, both derived from amino acids.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q245",
+      "text": "Nitric oxide synthase:",
+      "old": "Acts on arginine and needs oxygen and NADPH.",
+      "new": "Produces citrulline and nitric oxide.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q248",
+      "text": "Which of the following may be considered a physiol",
+      "old": "Glutamate dehydrogenase.",
+      "new": "Glutamine synthetase.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q252",
+      "text": "A genetic defect of an enzyme of urea cycle leads ",
+      "old": "Low blood ammonia.",
+      "new": "High blood urea.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q253",
+      "text": "Why may glutamate dehydrogenase be considered a ca",
+      "old": "It catalyzes a one-way reaction.",
+      "new": "Its Km for ammonia is about ten times the physiological concentration of ammonia.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q256",
+      "text": "Glutaminase reaction is important for which of the",
+      "old": "Releasing ammonia to form urea by liver cells.",
+      "new": "Liberation of ammonia in the brain tissue.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q257",
+      "text": "Glutamic acid is most probably produced by which o",
+      "old": "Pepsin in the stomach.",
+      "new": "Glutamate dehydrogenase at low ammonia concentration.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q258",
+      "text": "Which of the following is a normal flow of nitroge",
+      "old": "N2 → NH3 → glutamine → glutamate → urea.",
+      "new": "Valine → alanine → glutamate → NH3 → urea.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q260",
+      "text": "If a woman with phenylketonuria who is not on a lo",
+      "old": "Completely normal because the disease is recessive.",
+      "new": "Affected with maternal phenylketonuria syndrome due to the teratogenic effect of phenylalanine.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q261",
+      "text": "Phenylalanine hydroxylase is a mono-oxygenase (mix",
+      "old": "Is a copper-containing metalloenzyme.",
+      "new": "Necessitates the presence of NADPH-dependent reductase to restore the active cofactor.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q262",
+      "text": "Which of the following would you give to patients ",
+      "old": "High doses of folic acid.",
+      "new": "Dopa and 5-hydroxytryptophan.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q265",
+      "text": "Which of the following statements is correct about",
+      "old": "Folic acid requirement is about 300-400 μg/day.",
+      "new": "The need for folate nearly doubles by the third trimester of pregnancy.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q268",
+      "text": "Which statement about ketone bodies is correct?",
+      "old": "Main energy source for the brain",
+      "new": "Not a major source of energy in well‑fed state",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q269",
+      "text": "During starvation, which of the following occurs?",
+      "old": "Ketone bodies are utilized in liver",
+      "new": "Ketone bodies are utilized in brain",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pathology-q4",
+      "text": "What are neurodegenerative diseases?",
+      "old": "Disorders characterized by the cellular degeneration of subsets of neurons that are typically related by function, rather than physical location in the brain.",
+      "new": "Disorders characterized by the cellular degeneration of subsets of neurons that are typically related by function and physical location in the brain.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pathology-q13",
+      "text": "What is a contusion in traumatic head injury? And ",
+      "old": "Direct parenchymal injury to the brain",
+      "new": "Contrecoup injury opposite the point of impact",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pathology-q29",
+      "text": "Infection spreads from suppurative lung diseases t",
+      "old": "Vertebral arteries.",
+      "new": "Vertebral veins.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pathology-q30",
+      "text": "Myotic cerebral aneurysms are due to:",
+      "old": "Congenital weakness of the wall of cerebral vessels.",
+      "new": "Septic emboli from subacute bacterial endocarditis.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-pathology-q31",
+      "text": "Modes of infection in pyogenic meningitis include ",
+      "old": "Droplet infection",
+      "new": "Blood transfusion",
+      "reason": "negated in EXCEPT"
+    },
+    {
+      "id": "mcns2-ch1-microbiology-q4",
+      "text": "All of the following are symptoms of meningitis ex",
+      "old": "irritability",
+      "new": "increased appetite",
+      "reason": "negated in EXCEPT"
+    },
+    {
+      "id": "mcns2-ch1-microbiology-q7",
+      "text": ".... used to demonstrate of encapsulated yeast cel",
+      "old": "India ink",
+      "new": "Gram stain",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-microbiology-q8",
+      "text": "Cryptococcus neoformans is ....",
+      "old": "Yeast cells with gelatinous capsule",
+      "new": "Urease positive",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-microbiology-q10",
+      "text": "Epidemic cerebrospinal meningitis:",
+      "old": "Is transmitted only by cases.",
+      "new": "Is caused mainly by serotypes A, B, C.Y, W 135",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-microbiology-q11",
+      "text": "The most common route of meningitis transmission",
+      "old": "Hematogenous",
+      "new": "Direct spread from otitis media",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-microbiology-q14",
+      "text": "10 years old boy has a severe headache & vomiting ",
+      "old": "No prophylaxis is necessary.",
+      "new": "They should be given Rifampicin as prophylaxis.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-microbiology-q16",
+      "text": "A neonate was delivered 3 weeks prematurely.",
+      "old": "In utero transmission early in pregnancy",
+      "new": "In utero transmission late in pregnancy",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-microbiology-q20",
+      "text": "An eight-year-old boy presented with fever, severe",
+      "old": "Complete Blood Count",
+      "new": "Lumbar puncture",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-microbiology-q27",
+      "text": "How can the presence of toxin be detected in botul",
+      "old": "In patient blood or food remnants using PCR or ELISA",
+      "new": "Mouse bioassay",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-parasitology-q1",
+      "text": "Acanthamoeba can be a problem for people who:",
+      "old": "Inhale the trophozoites or cysts",
+      "new": "Wear contact lens",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch1-parasitology-q3",
+      "text": "The infective stage of Naegleria fowleri is:",
+      "old": "Cyst form",
+      "new": "Amoeboid trophozoite",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q1",
+      "text": "The branch of facial nerve that supplies the platy",
+      "old": "Temporal branch.",
+      "new": "Cervical branch.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q3",
+      "text": "Which of the following nerves that supply scalp & ",
+      "old": "Auriculotemporal.",
+      "new": "Great auricular.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q5",
+      "text": "Which of the following cranial nerves is attached ",
+      "old": "Oculomotor nerve.",
+      "new": "Trochlear nerve.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q6",
+      "text": "A pontine cranial nerve that is not attached to lo",
+      "old": "Abducent nerve.",
+      "new": "Trigeminal nerve.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q8",
+      "text": "Rootlets of glossopharyngeal nerve lie:",
+      "old": "Between pyramid and olive.",
+      "new": "Between olive and inferior cerebellar peduncle.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q10",
+      "text": "As regards cranial nerve attachment to brain stem,",
+      "old": "Hypoglossal nerve - posterolateral sulcus of medulla.",
+      "new": "Vestibulo-cochlear nerve - cerebello-pontine angle.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q12",
+      "text": "The cranial nerve nucleus that supplies muscles of",
+      "old": "Solitary nucleus.",
+      "new": "Dorsal motor vagal nucleus.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q34",
+      "text": "Pain from the palatine tonsil is carried on the fo",
+      "old": "Facial nerve.",
+      "new": "Glossopharyngeal nerve.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q37",
+      "text": "The glossopharyngeal nerve:",
+      "old": "Supplies all pharyngeal muscles.",
+      "new": "Carries taste sensation from posterior 1/3 of tongue.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q44",
+      "text": "The hypoglossal nerve:",
+      "old": "Emerges from medulla between olive and inferior cerebellar peduncle.",
+      "new": "Is joined by a branch from C2.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q61",
+      "text": "Injury of motor root of trigeminal nerve would cau",
+      "old": "Buccinator.",
+      "new": "Posterior belly of digastric.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q62",
+      "text": "Fibers of vagus nerve exit ….",
+      "old": "Between pyramids & olive",
+      "new": "Between olive & inferior cerebellar peduncle",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q81",
+      "text": "A patient has a tumor in the fourth ventricle. Whi",
+      "old": "Trigeminal nucleus",
+      "new": "Facial nucleus",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q82",
+      "text": "Which cranial nerve emerges from the dorsal (back)",
+      "old": "Oculomotor nerve",
+      "new": "Trochlear nerve",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q86",
+      "text": "Which cranial nerve nucleus contains both general ",
+      "old": "Trigeminal motor nucleus",
+      "new": "Nucleus solitarius",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q87",
+      "text": "Which of the following structures is supplied by t",
+      "old": "Pharyngeal muscles",
+      "new": "Tongue muscles",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q91",
+      "text": "Which of the following nerves arises from the unio",
+      "old": "Glossopharyngeal nerve",
+      "new": "Superior laryngeal nerve",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q96",
+      "text": "One of the following cranial nerves contains senso",
+      "old": "Occulomotor nerve.",
+      "new": "Trigeminal nerve.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q97",
+      "text": "One of the following cranial nerves is attached to",
+      "old": "Abducent nerve.",
+      "new": "Trochlear nerve.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q103",
+      "text": "The motor nucleus of the trigeminal nerve belongs ",
+      "old": "General somatic efferent (GSE)",
+      "new": "Special visceral efferent (SVE)",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q107",
+      "text": "A lesion of the spinal accessory nerve causes para",
+      "old": "Masseter and the temporalis muscle",
+      "new": "Sternocleidomastoid and trapezius",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q109",
+      "text": "The facial nerve leaves the cranial cavity by pass",
+      "old": "Foramen ovale.",
+      "new": "Stylomastoid foramen.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q111",
+      "text": "Lesion of facial nerve at stylomastoid foramen lea",
+      "old": "Loss of taste sensation from ipsilateral anterior 2/3 of tongue.",
+      "new": "Motor loss on the ipsilateral half of face.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q1",
+      "text": "Nerve attached to the lower border of pons above p",
+      "old": "Trigeminal nerve.",
+      "new": "Abducent nerve.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q3",
+      "text": "Medial eminence in floor of fourth ventricle overl",
+      "old": "Hypoglossal nerve.",
+      "new": "Abducent nerve.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q6",
+      "text": "Which of the following nerves lies close to the me",
+      "old": "Facial nerve.",
+      "new": "Abducent nerve.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q8",
+      "text": "As regards pons, choose the CORRECT statement:",
+      "old": "Cerebello-pontine angle gives attachment to VI & VII cranial nerves.",
+      "new": "Cerebello-pontine tumors cause deafness & vertigo.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q9",
+      "text": "In dorsal surface of medulla oblongata, choose COR",
+      "old": "Gracile tubercle is the most medial structure of open medulla.",
+      "new": "Vestibular trigone lies between limbs of inferior fovea.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q17",
+      "text": "Gracile and cuneate nuclei are supplied by medulla",
+      "old": "Vertebral artery.",
+      "new": "Posterior spinal artery.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q18",
+      "text": "Regarding the medulla oblongata, the medial zone c",
+      "old": "Posterior spinal artery.",
+      "new": "Anterior spinal artery.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q29",
+      "text": "The fourth ventricle is connected to the third ven",
+      "old": "Optic recess.",
+      "new": "Cerebral aqueduct.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q31",
+      "text": "A patient presents with a complaint of persistent ",
+      "old": "Posterior division of great auricular",
+      "new": "Lesser occipital",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q33",
+      "text": "A 44-year-old female patient has a lesion in the r",
+      "old": "fine touch and pain sensation from the entire left side of the body",
+      "new": "skeletal motor control to the entire right side of the body",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q35",
+      "text": "Sections In lower level of pons show.",
+      "old": "Middle cerebellar peduncle:",
+      "new": "Superior cerebellar peduncle",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q40",
+      "text": "Which of the following nuclei extend in the midbra",
+      "old": "Vestibular nuclei",
+      "new": "Mesencephalic nuclei",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q41",
+      "text": "Which of the following tracts are present in the t",
+      "old": "Medial longitudinal fasciculus",
+      "new": "Central tegmental tract",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q62",
+      "text": "Head rotation in response to visual stimuli, with ",
+      "old": "Rubrospinal tract",
+      "new": "Tectospinal tract",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q64",
+      "text": "Which artery and its branches are primarily respon",
+      "old": "Anterior inferior cerebellar artery",
+      "new": "Basilar artery",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q66",
+      "text": "Which part of the fourth ventricle contains the ch",
+      "old": "Floor of the fourth ventricle",
+      "new": "Roof of the fourth ventricle",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q69",
+      "text": "Which of the following nuclei, located in the midb",
+      "old": "Dorsal motor nucleus of vagus",
+      "new": "Edinger-Westphal nucleus",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q70",
+      "text": "Which of the following arteries supplies the midbr",
+      "old": "Basilar artery",
+      "new": "Posterior inferior cerebellar artery",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q72",
+      "text": "Which muscle is responsible for retraction of the ",
+      "old": "Anterior fibers of the temporalis",
+      "new": "Posterior fibers of the temporalis",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q74",
+      "text": "Concerning the fourth ventricle; choose the most c",
+      "old": "Its floor is formed by the closed medulla and pons.",
+      "new": "Its roof is formed by the superior and inferior medullary vela.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q82",
+      "text": "Which receptors are most likely responsible for th",
+      "old": "Muscle spindle primary endings (Ia)",
+      "new": "Golgi tendon organ (Ib)",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q93",
+      "text": "A tumor in the floor of the fourth ventricle (faci",
+      "old": "Oculomotor nucleus",
+      "new": "Abducent nucleus",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q97",
+      "text": "Anterior cerebral artery is responsible for the su",
+      "old": "Sensory and motor areas of the contralateral upper limb.",
+      "new": "Sensory and motor areas of the contralateral lower limb.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch3-physiology-q7",
+      "text": "Muscle contraction in response to maintained stret",
+      "old": "nuclear bag fibers)",
+      "new": "nuclear chain fibers",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch3-physiology-q9",
+      "text": "Medullary reticular formation is stimulated by:",
+      "old": "Primary motor cortex.",
+      "new": "Basal ganglia.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch3-physiology-q14",
+      "text": "Which parts of the hypothalamus control autonomic ",
+      "old": "Control of internal homeostasis",
+      "new": "Control of autonomic responses",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch3-physiology-q16",
+      "text": "Which response occurs in a stretch reflex?",
+      "old": "Reciprocal inhibition failure",
+      "new": "Contraction of agonist muscle",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch3-physiology-q19",
+      "text": "Which response occurs in a stretch reflex? (varian",
+      "old": "Inhibition of antagonist muscles",
+      "new": "Activation of gamma motor neurons only",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch3-physiology-q23",
+      "text": "Muscle stretch reflex is facilitated by:\nA. Medull",
+      "old": "Medullary reticular formation",
+      "new": "Cortical area 4",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch3-physiology-q24",
+      "text": "Which of the following nuclei affected in hemiball",
+      "old": "Caudate nucleus",
+      "new": "Subthalamic nucleus",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch3-physiology-q26",
+      "text": "The phenomenon of decerebrate rigidity can be expl",
+      "old": "Stimulation of type 1b sensory neurons",
+      "new": "Unopposed activity of the pontine reticular nuclei",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch3-physiology-q27",
+      "text": "Which of the following events are present when we ",
+      "old": "Increased activity of anterior hypothalamus and RAS",
+      "new": "Norepinephrine and serotonin levels are usually high",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch3-physiology-q28",
+      "text": "The representational hemisphere is described by wh",
+      "old": "It always lies in left hemisphere",
+      "new": "It is responsible for visuospatial relations",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch3-physiology-q30",
+      "text": "Which area of hypothalamus is responsible for sexu",
+      "old": "Supraoptic nucleus",
+      "new": "Anterior part of hypothalamus",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch3-physiology-q31",
+      "text": "Which of the following describes learning?\nA. Memo",
+      "old": "Memory is not essential for it",
+      "new": "Operant conditioning is a type of associative learning",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch3-histology-q4",
+      "text": "The processes of protoplasmic astrocytes are chara",
+      "old": "Few long thin.",
+      "new": "Numerous short.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch3-histology-q5",
+      "text": "The basal surface of tanycytes has:",
+      "old": "Infoldings.",
+      "new": "Basal processes.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch3-histology-q8",
+      "text": "One of the following is a component of Blood CSF b",
+      "old": "Border cells of arachnoid matter.",
+      "new": "Tight junctions between ependymal cells.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch3-histology-q10",
+      "text": "The most of V nerve nuclei are best seen in:",
+      "old": "Lower midbrain.",
+      "new": "Upper pons.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch3-histology-q15",
+      "text": "One of the relays nuclei of auditory pathway is:",
+      "old": "Inferior olive nucleus.",
+      "new": "Superior olivary nucleus.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch3-histology-q16",
+      "text": "Sections in lower level of pons show:",
+      "old": "Middle cerebellar peduncle.",
+      "new": "Medial & Inferior vestibular nuclei.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch4-anatomy-q2",
+      "text": "Which of the following arteries supplies the pitui",
+      "old": "Common carotid artery.",
+      "new": "Internal carotid artery.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch4-anatomy-q3",
+      "text": "Which of the following thalamic nuclei has a motor",
+      "old": "Lateral dorsal nucleus.",
+      "new": "Ventral lateral nucleus.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch4-anatomy-q4",
+      "text": "Which of the following thalamic nuclei is related ",
+      "old": "Ventral postero-medial nucleus.",
+      "new": "Anterior nucleus.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch4-anatomy-q11",
+      "text": "Nucleus ventralis posterior medialis (VPM) of thal",
+      "old": "Medial lemniscus.",
+      "new": "Trigeminal lemniscus.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch4-anatomy-q12",
+      "text": "The thalamic nucleus for pain and temperature sens",
+      "old": "Ventral anterior nucleus.",
+      "new": "Ventral posteromedial nucleus.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch4-anatomy-q13",
+      "text": "The thalamic nucleus in which spinal & medial lemn",
+      "old": "Ventralis posterior medialis (VPM) nucleus.",
+      "new": "Ventralis posterior lateralis (VPL) nucleus.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch4-anatomy-q15",
+      "text": "Which of the following surfaces (aspects) of thala",
+      "old": "Superior surface.",
+      "new": "Lateral surface.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch4-anatomy-q16",
+      "text": "Which of the following thalamic nuclei relays moto",
+      "old": "Anterior thalamic nucleus.",
+      "new": "Ventral anterior nucleus.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch4-anatomy-q18",
+      "text": "The thalamic nucleus that shares in formation of l",
+      "old": "Dorso-medial nucleus.",
+      "new": "Lateral dorsal nucleus.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch4-anatomy-q26",
+      "text": "Sensations received by the thalamus are Except:",
+      "old": "Exteroceptive",
+      "new": "Smell",
+      "reason": "negated in EXCEPT"
+    },
+    {
+      "id": "mcns2-ch4-physiology-q5",
+      "text": "Regarding the hypothalamus:",
+      "old": "Satiety center has intrinsic activity.",
+      "new": "Heat gain center is present in the anterior hypothalamus.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch4-physiology-q6",
+      "text": "What is the main function of the hypothalamus?",
+      "old": "Control of internal homeostasis",
+      "new": "Control of endocrine functions",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch5-anatomy-q2",
+      "text": "Which of the following fibers carry proprioception",
+      "old": "Ventral spinocerebellar tract.",
+      "new": "Cuneocerebellar tract.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch5-anatomy-q3",
+      "text": "Afferent fibers in the superior cerebellar peduncl",
+      "old": "Dentatothalamic fibers.",
+      "new": "Anterior spinocerebellar fibers.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch5-anatomy-q4",
+      "text": "The inferior cerebellar peduncle contains:",
+      "old": "Dentatothalamic fibers.",
+      "new": "Posterior spinocerebellar tract.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch5-anatomy-q5",
+      "text": "Superior cerebellar peduncle contains which of the",
+      "old": "Dorsal spinocerebellar tract.",
+      "new": "Ventral spinocerebellar tract.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch5-anatomy-q8",
+      "text": "The neocerebellum is anatomically located in the f",
+      "old": "Vermis.",
+      "new": "Posterior lobe only",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch5-anatomy-q10",
+      "text": "Thalamic nucleus that relays cerebellar output:",
+      "old": "Anterior nucleus.",
+      "new": "Ventral lateral nucleus.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch5-anatomy-q11",
+      "text": "The thalamic nucleus that relays cerebellar fibers",
+      "old": "Anterior nucleus.",
+      "new": "Ventral lateral nucleus.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch5-anatomy-q12",
+      "text": "Thalamic nucleus that relays basal ganglia output:",
+      "old": "Anterior nucleus.",
+      "new": "Ventral anterior nucleus.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch5-anatomy-q29",
+      "text": "Which structure of the basal ganglia is classified",
+      "old": "Caudate nucleus",
+      "new": "Globus pallidus",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch5-anatomy-q33",
+      "text": "A lesion in the posterior inferior cerebellar arte",
+      "old": "Ipsilateral loss of vibration and proprioception",
+      "new": "Contralateral loss of pain and temperature of the body",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch5-anatomy-q48",
+      "text": "Which tract carries unconscious proprioception fro",
+      "old": "Anterior spinocerebellar",
+      "new": "Posterior spinocerebellar",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch5-anatomy-q49",
+      "text": "Which of the following is a function of the vestib",
+      "old": "Fine motor coordination of limbs",
+      "new": "Balance and eye movements",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch5-physiology-q1",
+      "text": "A patient suffering from damage of basal ganglia m",
+      "old": "Static tremors.",
+      "new": "Shuffling gait.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch5-physiology-q2",
+      "text": "Basal ganglia lesion may Not cause:",
+      "old": "Akinesia disorder.",
+      "new": "Cogwheel rigidity.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch5-physiology-q5",
+      "text": "The cerebellum is NOT involved in:",
+      "old": "The maintenance of posture.",
+      "new": "Neocerebellum decreases muscle tone.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch5-physiology-q7",
+      "text": "Concerning cerebellum:",
+      "old": "Each cerebellar hemisphere coordinates the contralateral muscles.",
+      "new": "Neocerebellum helps planning of movements.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch5-physiology-q8",
+      "text": "Which is NOT a function of the cerebellum includes",
+      "old": "Stop the movement at the precise intended point.",
+      "new": "Inhibit excess cortical activity.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch5-physiology-q9",
+      "text": "Neocerebellar syndrome in humans is NOT characteri",
+      "old": "Hypotonia.",
+      "new": "Static tremors.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch5-physiology-q12",
+      "text": "Neocerebellum disease is associated with:",
+      "old": "Shuffling gait.",
+      "new": "Zigzag gait.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch5-physiology-q13",
+      "text": "A cerebellar lesion is most likely associated with",
+      "old": "The neocerebellum.",
+      "new": "The flocculonodular lobe.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch5-physiology-q14",
+      "text": "Purkinji cells of the cerebellar cortex are excite",
+      "old": "Inputs from deep nuclei.",
+      "new": "Granule cells.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch5-physiology-q18",
+      "text": "Concerning the basal ganglia function:",
+      "old": "Caudate circuit helps execution of learned pattern of movement.",
+      "new": "Damage to caudate circuit results in loss of timing and scaling of movements.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch5-physiology-q19",
+      "text": "Concerning the cerebellum:",
+      "old": "The lateral zone has servo-comparator function.",
+      "new": "Cerebellar lesion is associated with dysmetria.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch5-physiology-q20",
+      "text": "Lesion in the left cerebellar hemisphere results i",
+      "old": "Paralysis of voluntary movements on left side of the body.",
+      "new": "Falling to the left side during walking.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch5-physiology-q21",
+      "text": "Regarding servocomparator function of the cerebell",
+      "old": "Cerebellum sends direct corrective messages to muscles.",
+      "new": "Cerebellum compares the intended plan of movement with the actual movement.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch5-physiology-q27",
+      "text": "Which function is characteristic of the medial mot",
+      "old": "Fine skilled movements of distal muscles",
+      "new": "Control of axial and proximal muscles",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch5-physiology-q31",
+      "text": "How does dopamine act on the basal ganglia motor p",
+      "old": "D1 inhibits the direct pathway",
+      "new": "Dopamine inhibits both pathways",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch5-physiology-q33",
+      "text": "Which deficit is most characteristic of a cerebell",
+      "old": "Muscle weakness",
+      "new": "Loss of motor learning",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch5-physiology-q37",
+      "text": "The idea of the voluntary movement is generated in",
+      "old": "1ry motor area 4",
+      "new": "Prefrontal cortex",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch5-histology-q1",
+      "text": "Which of the following share in the cerebellar isl",
+      "old": "Dendrites of stellate cells",
+      "new": "Dendrites of granule cells",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch5-histology-q5",
+      "text": "Which of the following tracts carries the climbing",
+      "old": "Ventral spinothalamic tract",
+      "new": "Olivocerebellar tract",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch5-histology-q8",
+      "text": "Parallel fibers make synapse with Purkinje cells d",
+      "old": "Spiral synapse.",
+      "new": "Basket-like synapse.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch6-anatomy-q4",
+      "text": "Broca’s area:",
+      "old": "Is the sensory speech center.",
+      "new": "It is present in the dominant hemisphere.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch6-anatomy-q7",
+      "text": "The frontal lobe of the non-dominant hemisphere is",
+      "old": "Production of speech.",
+      "new": "Control of behavior.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch6-anatomy-q9",
+      "text": "Regarding Broca’s area, select the correct answer:",
+      "old": "It is a sensory speech center",
+      "new": "It is located in middle frontal gyrus",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch6-anatomy-q16",
+      "text": "Where is the supplementary motor area located?",
+      "old": "Superior frontal gyrus",
+      "new": "Medial frontal gyrus",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch6-anatomy-q18",
+      "text": "Broca’s area is located in......",
+      "old": "Superior frontal gyrus",
+      "new": "Inferior frontal gyrus",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch6-anatomy-q19",
+      "text": "Primary integrative neuron of cerebral Cortex:",
+      "old": "granular cell",
+      "new": "purkinje cell",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch6-anatomy-q24",
+      "text": "Which of the following is a function of the prefro",
+      "old": "Primary motor control",
+      "new": "Executive functions and personality",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch6-anatomy-q25",
+      "text": "The genu of the corpus callosum is supplied mainly",
+      "old": "Middle cerebral artery",
+      "new": "Anterior cerebral artery",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch6-anatomy-q27",
+      "text": "Broca's motor speech area lies in the:",
+      "old": "Superior temporal gyrus",
+      "new": "Inferior frontal gyrus",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch6-physiology-q1",
+      "text": "Pre-motor cortex:",
+      "old": "Is found in the temporal cortex.",
+      "new": "Control movements as speech, eye and head movements.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch6-physiology-q2",
+      "text": "Lesion in frontal lobe speech center produces:",
+      "old": "Speech muscle paralysis.",
+      "new": "Expressive defect in speech.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch6-physiology-q3",
+      "text": "The primary role of amygdala in memory is:",
+      "old": "Storage of semantic memory.",
+      "new": "Consolidation of memory.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch6-physiology-q5",
+      "text": "What is the role of the amygdala in smell?",
+      "old": "Perception and discrimination of odor",
+      "new": "Emotional response to odors",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch6-physiology-q8",
+      "text": "Elaboration of thoughts is considered one of the f",
+      "old": "Wernicke’s area",
+      "new": "Prefrontal association area",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch6-histology-q1",
+      "text": "Martinoti cells of cerebral cortex are characteriz",
+      "old": "Their dendrites are directed laterally.",
+      "new": "Their axons are directed upwards.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch6-histology-q2",
+      "text": "Giant cells of Betz are present in which layer of ",
+      "old": "Outer pyramidal",
+      "new": "Inner pyramidal",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch6-histology-q3",
+      "text": "Cerebral cortex is characterized by:",
+      "old": "Has smooth surface.",
+      "new": "Layers of the same thickness all over the brain",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch6-histology-q8",
+      "text": "Giant cells of Betz are present in which layer of ",
+      "old": "Outer pyramidal.",
+      "new": "Inner pyramidal.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch7-anatomy-q1",
+      "text": "The lateral most fibers of the dorsal column tract",
+      "old": "Cervical fibers.",
+      "new": "Sacral fibers.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch7-anatomy-q2",
+      "text": "The lateral most fibers of the spinothalamic tract",
+      "old": "Cervical fibers.",
+      "new": "Sacral fibers.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch7-anatomy-q5",
+      "text": "The crossed corticospinal tract occupies the:",
+      "old": "Anterior limb of internal capsule.",
+      "new": "Lateral white column of spinal cord.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch7-anatomy-q7",
+      "text": "Regarding lamination of lateral corticospinal trac",
+      "old": "Cervical fibers.",
+      "new": "Sacral fibers.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch7-anatomy-q10",
+      "text": "As regards the pyramidal tract, choose the CORRECT",
+      "old": "It arises from motor area 4 only.",
+      "new": "Its crossed fibers in medulla form anterior corticospinal tract.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch7-anatomy-q12",
+      "text": "Lower motor neuron lesion is characterized by:",
+      "old": "Spasticity.",
+      "new": "Lost tendon jerks.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch7-anatomy-q18",
+      "text": "The anterolateral boundary of interpeduncular foss",
+      "old": "Optic chiasma.",
+      "new": "Crus cerebri.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch7-anatomy-q20",
+      "text": "A 45-year-old patient presents with difficulty wal",
+      "old": "Corticospinal tract",
+      "new": "Dorsal column-medial lemniscus pathway",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch7-anatomy-q31",
+      "text": "Which descending motor pathway serves as an altern",
+      "old": "Corticobulbar tract",
+      "new": "Rubrospinal tract",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch7-anatomy-q32",
+      "text": "Which of the following is related to the anterior ",
+      "old": "Supplies the muscles of the trunk",
+      "new": "Supplies distal limb muscles only",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch7-anatomy-q35",
+      "text": "A patient has a lesion affecting the dorsal column",
+      "old": "Anterior spinal artery",
+      "new": "Posterior spinal artery",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch7-anatomy-q44",
+      "text": "The lateral spinothalamic tract carries which sens",
+      "old": "Fine touch and vibration",
+      "new": "Pain and temperature",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch7-anatomy-q45",
+      "text": "The dorsal spinocerebellar tract originates from w",
+      "old": "Nucleus proprius",
+      "new": "Clarke's nucleus",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch7-anatomy-q46",
+      "text": "The corticospinal tract in the spinal cord is loca",
+      "old": "Anterior funiculus",
+      "new": "Lateral funiculus (mainly) and anterior funiculus (minor)",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch7-anatomy-q47",
+      "text": "Which of the following is a characteristic of the ",
+      "old": "They originate exclusively from the motor cortex.",
+      "new": "They influence posture and muscle tone.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch7-anatomy-q48",
+      "text": "Which tract is the main alternative (indirect) pat",
+      "old": "Tectospinal tract",
+      "new": "Rubrospinal tract",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch7-physiology-q2",
+      "text": "The extrapyramidal system:",
+      "old": "Originates from cortical areas only.",
+      "new": "Is inhibitory to the muscle tone.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch7-physiology-q9",
+      "text": "The pyramidal tract:",
+      "old": "Arises only from subcortical areas.",
+      "new": "Most of its fibers do not cross.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch7-physiology-q16",
+      "text": "In upper motor neuron lesion, there is:\nA. Flaccid",
+      "old": "Flaccid paralysis",
+      "new": "Spastic muscle",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch7-physiology-q17",
+      "text": "In lower motor neuron lesion, loss of superficial ",
+      "old": "These reflexes need intact corticospinal tract",
+      "new": "There is damage to the center of these reflexes",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch7-pharma-q2",
+      "text": "The correct statement regarding extrapyramidal eff",
+      "old": "Occur most commonly with low potency agents",
+      "new": "Anticholinergics are useful in neuroleptic induced parkinsonism",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q3",
+      "text": "Leptomeninges refer to the:",
+      "old": "Dura mater.",
+      "new": "Dura mater and arachnoid mater.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q4",
+      "text": "The spinal cord is anchored to the dura mater by t",
+      "old": "Coccygeal ligament.",
+      "new": "Denticulate ligaments.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q18",
+      "text": "Blockage of CSF flow between the 3rd & 4th ventric",
+      "old": "Interventricular foramen.",
+      "new": "Cerebral aqueduct.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q24",
+      "text": "Which of the following shares in forming anterior ",
+      "old": "Hypothalamus.",
+      "new": "Lamina terminalis.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q39",
+      "text": "The spinal cord is anchored to the dura mater by t",
+      "old": "Coccygeal ligament",
+      "new": "Denticulate ligaments",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q42",
+      "text": "Which ventricle develops from the rhombencephalon?",
+      "old": "Lateral ventricle",
+      "new": "Fourth ventricle",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q44",
+      "text": "Which structure directly connects the dural venous",
+      "old": "Diploic veins",
+      "new": "Emissary veins",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q45",
+      "text": "The superior cerebral veins primarily drain into w",
+      "old": "Straight sinus",
+      "new": "Superior sagittal sinus",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q46",
+      "text": "Cerebrospinal fluid (CSF) is primarily drained int",
+      "old": "Choroid plexus",
+      "new": "Arachnoid granulations",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q49",
+      "text": "-- present between extracerebral capillary, subara",
+      "old": "blood brain barrier",
+      "new": "arachnoid barrier",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q52",
+      "text": "Concerning the cerebrospinal fluid, choose one cor",
+      "old": "Produced mainly in the subarachnoid space.",
+      "new": "Third ventricle has a choroid plexus in its roof.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q53",
+      "text": "Concerning the choroid plexus; choose one best ans",
+      "old": "All ventricles have choroids plexuses.",
+      "new": "Is formed by a plexus of capillaries and a thin layer of cuboidal epithelium.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q54",
+      "text": "The cisterna magna of subarachnoid space is a name",
+      "old": "Interpeduncular cistern.",
+      "new": "Cerebellomedullary cistern.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q55",
+      "text": "A 32‑year‑old woman has difficulty writing, right ",
+      "old": "Lewy bodies in substantia nigra",
+      "new": "Perivascular lymphocytes with demyelinated axons in white matter",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q61",
+      "text": "Which of the following is true about the arachnoid",
+      "old": "They produce cerebrospinal fluid.",
+      "new": "They absorb cerebrospinal fluid into the venous system.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch8-microbiology-q1",
+      "text": "chemical examination of CSF in case of bacterial m",
+      "old": "↑ protein",
+      "new": "normal glucose",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch8-microbiology-q3",
+      "text": "A 33-year-old HIV +ve man complains of: headache &",
+      "old": "Can be seen as spaghetti & meat ball on KOH.",
+      "new": "Exists as mycelial form at room temp & yeast at 37°c.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch8-histology-q1",
+      "text": "One of the following a component of Blood CSF barr",
+      "old": "Border cells of arachnoid matter",
+      "new": "tight junctions between ependymal cells.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch8-histology-q2",
+      "text": "The inner surface of dura mater is lined by.",
+      "old": "Pseudostratified columnar epith.",
+      "new": "Simple squamous epith.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch8-histology-q3",
+      "text": "The brain CSF barrier is not formed of:",
+      "old": "Fenestrated endothelial cells",
+      "new": "Ependymal cells connected by tight junction.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch8-histology-q5",
+      "text": "The inner surface of dura mater is lined by:",
+      "old": "Pseudostratified columnar epithelium.",
+      "new": "Simple squamous epithelium.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch9-anatomy-q33",
+      "text": "Lesion of the anterior spinal artery most likely p",
+      "old": "Intact pain and temperature sensation",
+      "new": "Intact dorsal column sensations",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch9-anatomy-q35",
+      "text": "The great cerebral vein (of Galen) is formed by th",
+      "old": "Superior sagittal veins",
+      "new": "Right and left internal cerebral veins",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch9-anatomy-q40",
+      "text": "Which of the following is a component of the blood",
+      "old": "Fenestrated capillaries",
+      "new": "Tight junctions between endothelial cells",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch9-anatomy-q43",
+      "text": "Occlusion of right anterior cerebral artery may le",
+      "old": "Left hemiplegia.",
+      "new": "Paralysis of the left lower limb.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch10-anatomy-q1",
+      "text": "Subperiosteal hematoma:",
+      "old": "Is localized.",
+      "new": "Takes the shape of the bone.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch10-anatomy-q5",
+      "text": "Extradural hematoma occurs due to the rupture of t",
+      "old": "Foramen rotundum.",
+      "new": "Foramen spinosum.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch10-anatomy-q7",
+      "text": "A 25-year-old patient sustains a head injury durin",
+      "old": "Epidural hematoma",
+      "new": "Subgaleal hematoma",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch10-anatomy-q12",
+      "text": "A patient presents with difficulty in walking, a l",
+      "old": "Corticospinal tract",
+      "new": "Dorsal column-medial lemniscus pathway",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch10-anatomy-q17",
+      "text": "Extradural hemorrhage is caused by rupture of:",
+      "old": "Anterior cerebral artery.",
+      "new": "Middle meningeal artery.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch10-anatomy-q37",
+      "text": "Hemorrhage reaching the ……… layer of the scalp can",
+      "old": "Dense connective tissue",
+      "new": "Loose connective tissue",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch10-anatomy-q38",
+      "text": "Which of the following is true about the intracran",
+      "old": "Extradural bleeding means bleeding between dura and arachnoid maters.",
+      "new": "Subdural bleeding crosses the suture line.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch10-physiology-q2",
+      "text": "Which of the following is NOT a feature of Parkins",
+      "old": "A tremor at rest.",
+      "new": "A clasp-knife type of spastic rigidity.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch10-physiology-q4",
+      "text": "Parkinson’s disease is characterized by:",
+      "old": "Decreased dopamine in the globus pallidus.",
+      "new": "Increased activity of α motor neurons.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch10-physiology-q7",
+      "text": "When the sole is stroked firmly by a key:",
+      "old": "The big toe planter-flexes in a patient having an UMNL.",
+      "new": "The other toes show fanning in UMNL.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch10-physiology-q11",
+      "text": "Regarding Evoked brain potentials:",
+      "old": "It is used for mapping of the brain.",
+      "new": "It consists of a primary diffuse wave followed by a secondary localized wave.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch10-pharma-q4",
+      "text": "The following is a wrong statement about antiparki",
+      "old": "Selegiline is selective MAO-B inhibitor and decreases end of dose akinesia induced by L-dopa",
+      "new": "Apomorphine taken orally to decrease off time & sudden akinetic episodes in advanced Parkinson’s disease",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch10-pharma-q7",
+      "text": "One of the following anesthetic protocols is NOT c",
+      "old": "Dissociative anesthesia/ ketamine.",
+      "new": "Neuroleptanalgesia / propofol plus fentanyl.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch10-pharma-q13",
+      "text": "The following statement about halogenated anesthet",
+      "old": "Isoflurane may precipitate ischemia in cardiac patients",
+      "new": "Halothane is strong analgesic with medium rate of induction",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch10-pharma-q16",
+      "text": "Which of the following is wrong regarding local an",
+      "old": "Binding to plasma protein affects duration of action",
+      "new": "Addition of vasoconstrictor shorten duration of action",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch10-pharma-q18",
+      "text": "Which of the following is wrong statement about lo",
+      "old": "All are vasodilators except cocaine",
+      "new": "Vasoconstrictors may be added to local anesthetic except cocaine",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch10-pharma-q20",
+      "text": "Which of following method of administration of loc",
+      "old": "Spinal anesthesia",
+      "new": "Nerve block",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch10-pharma-q30",
+      "text": "The following antiepileptic drug is not matched wi",
+      "old": "Lamotrigine/ Stevens Jonson Syndrome",
+      "new": "Gabapentin / Megaloblastic anemia",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch10-pharma-q79",
+      "text": "One of the following anesthetics protocols is not ",
+      "old": "Dissociative anesthesia / Ketamine",
+      "new": "Neuroleptanalgesia / Propofol plus Fentanyl",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch10-pharma-q82",
+      "text": "The following statement about halogenated anesthet",
+      "old": "Isoflurane may precipitate ischemia in cardiac patients",
+      "new": "Halothane is strong analgesic with medium rate of induction",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch10-pharma-q84",
+      "text": "Which of the following is not a characteristic fea",
+      "old": "Longer duration of action than ester group",
+      "new": "High risk of severe hypersensitivity reaction",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch10-pharma-q86",
+      "text": "All the following are true concerning antiepilepti",
+      "old": "Females who get pregnant should discontinue the antiepileptic drug",
+      "new": "They are contraindicated in neuropathic pain",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch10-pharma-q95",
+      "text": "One of the following pairs of drugs used in treatm",
+      "old": "Sumatriptan & Diazepam",
+      "new": "Ergotamine & Triptan",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch10-pharma-q100",
+      "text": "The following is wrong regarding management of alc",
+      "old": "Naltrexone blocks opioid receptors (↓ relapse)",
+      "new": "Triazolam replaces alcohol because it has smoother withdrawal",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch10-pharma-q112",
+      "text": "Why are vasoconstrictors added to local anesthetic",
+      "old": "To prolong the duration of action",
+      "new": "To reduce systemic adverse effects and bleeding tendency",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch10-pharma-q122",
+      "text": "What is the management approach for Multiple Scler",
+      "old": "Treatment of acute episodes (exacerbations) with corticosteroids",
+      "new": "Disease Modifying Drugs (DMDs)",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch10-pharma-q130",
+      "text": "Which of the following statements concerning anest",
+      "old": "Thiopental is ultra short acting due to rapid metabolism.",
+      "new": "Ketamine blocks NMDA receptors .",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch10-pharma-q131",
+      "text": "The following concerning antiparkinsonian drugs is",
+      "old": "Apomorphine is given subcutaneously in emergency.",
+      "new": "Amantadine may induce insomnia.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch10-pathology-q1",
+      "text": "Subarachnoid hemorrhage is due to:",
+      "old": "Trauma of meningeal artery",
+      "new": "Rupture of cerebral aneurysms",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch10-pathology-q4",
+      "text": "What is the role of Amyloid Precursor Protein (APP",
+      "old": "APP is sequentially cleaved by enzymes to generate Aß.",
+      "new": "APP is sequentially cleaved by enzymes to generate Prion protein.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch10-pathology-q5",
+      "text": "What are the gross characteristics of Multiple Scl",
+      "old": "Multiple, well-circumscribed",
+      "new": "Gray-tan plaques near the ventricles and in various areas of the CNS.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch10-pathology-q10",
+      "text": "What is the location and symptoms of an epidural h",
+      "old": "Between the skull and dura",
+      "new": "Symptoms include lucid interval before loss of consciousness and possible transtentorial herniation.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch10-pathology-q11",
+      "text": "What is the location and symptoms of a subdural he",
+      "old": "Between the dura and arachnoid",
+      "new": "Symptoms include slow venous bleeding with delayed onset of headache and confusion.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch10-pathology-q16",
+      "text": "What is the key genetic finding in oligodendroglio",
+      "old": "Overexpression of EGFR",
+      "new": "Codeletion of chromosomes 1p and 19q",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch10-pathology-q22",
+      "text": "What are the key microscopic features of pilocytic",
+      "old": "Low to moderate cellularity often with a biphasic pattern",
+      "new": "Presence of Rosenthal fibers and eosinophilic granular bodies",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch10-pathology-q23",
+      "text": "Rabies is transmitted to CNS via:",
+      "old": "Arteries.",
+      "new": "Peripheral nerves.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch10-pathology-q24",
+      "text": "Muscle paralysis in case of poliomyelitis is due t",
+      "old": "Destruction of the muscle fibers by the toxins of the organisms.",
+      "new": "Degeneration of their anterior horn cells in the spinal cord.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch10-pathology-q25",
+      "text": "Poliomyelitis is a:",
+      "old": "Bacterial infection.",
+      "new": "Viral infection.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch10-pathology-q26",
+      "text": "The cause of death in rabies is:",
+      "old": "Muscle paralysis.",
+      "new": "Paralysis of respiratory muscles.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch10-pathology-q27",
+      "text": "Rabies is a:",
+      "old": "Bacterial infection.",
+      "new": "Viral infection.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch10-pathology-q28",
+      "text": "Poliomyelitis is usually an infection of:",
+      "old": "Cerebral tissue",
+      "new": "Anterior horn cells of the spinal cord",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch10-microbiology-q6",
+      "text": "The best route of rabies virus to reach the spinal",
+      "old": "Blood due to high level of viremia",
+      "new": "Along the afferent peripheral neurons",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch10-microbiology-q7",
+      "text": "Post exposure Vaccination is successful in rabies ",
+      "old": "The virus is weak.",
+      "new": "The incubatory period is long.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch10-microbiology-q8",
+      "text": "Diagnosis is of rabies in an infected animal can b",
+      "old": "Detection of specific antibodies in the serum",
+      "new": "Detection of Negri bodies in the brain tissue",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch10-microbiology-q10",
+      "text": "Treatment of rabies includes the followings EXCEPT",
+      "old": "a",
+      "new": "d",
+      "reason": "explicit correct"
+    },
+    {
+      "id": "mcns2-ch10-microbiology-q10",
+      "text": "Treatment of rabies includes the followings EXCEPT",
+      "old": "d",
+      "new": "b",
+      "reason": "negated in EXCEPT"
+    },
+    {
+      "id": "mcns2-ch10-histology-q2",
+      "text": "A 65-year-old man develops new onset of seizures &",
+      "old": "Meningioma.",
+      "new": "Glioblastoma multiforme.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch10-histology-q4",
+      "text": "Meningioma shows:",
+      "old": "Rosenthal fibers.",
+      "new": "Psammoma bodies.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch10-histology-q5",
+      "text": "The following is not a feature of meningioma:",
+      "old": "Usually occurs in adults.",
+      "new": "Has a whorly cut surface.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch10-histology-q7",
+      "text": "Oligodendroglioma is not a:",
+      "old": "Glial tumor.",
+      "new": "High-grade tumor.",
+      "reason": "keyConcept match"
+    },
+    {
+      "id": "mcns2-ch10-histology-q9",
+      "text": "Oligodendrogliomas are not characterized by:",
+      "old": "Have IDH1 mutation.",
+      "new": "Chromosomes 1p/19q codeletion.",
+      "reason": "keyConcept match"
+    }
+  ]
+}

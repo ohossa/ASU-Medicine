@@ -23,7 +23,7 @@ import {
   Bug
 } from 'lucide-react';
 import type { LucideIcon } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from 'motion/react';
 import type { ChapterData, SubjectData, SubjectColor, Question } from '../types';
 import { subjectStyles } from '../types';
 import { useLanguage } from '../context/LanguageContext';
@@ -440,7 +440,7 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart, 
                   </div>
 
                   <h3 className="text-sm font-semibold text-foreground dark:text-white">{subject.name}</h3>
-                  <p className="mt-0.5 text-[11px] text-muted-foreground dark:text-white/40">{subject.lectures}</p>
+                  <p className="mt-0.5 text-[11px] text-muted-foreground dark:text-white/40">{subject.questions.length} {label('questions')}</p>
 
                   {/* Questions badge */}
                   <span

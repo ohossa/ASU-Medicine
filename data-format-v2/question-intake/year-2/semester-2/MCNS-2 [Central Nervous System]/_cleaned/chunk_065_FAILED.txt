@@ -1,0 +1,2611 @@
+CHUNK 65 FAILED AFTER 4 ATTEMPTS
+ERROR: {"error":{"code":429,"message":"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 49.04910644s.","status":"RESOURCE_EXHAUSTED","details":[{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Learn more about Gemini API quotas","url":"https://ai.google.dev/gemini-api/docs/rate-limits"}]},{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerDayPerProjectPerModel-FreeTier","quotaDimensions":{"location":"global","model":"gemini-2.5-flash"},"quotaValue":"20"}]},{"@type":"type.googleapis.com/google.rpc.RetryInfo","retryDelay":"49s"}]}}
+
+--- RAW TEXT ---
+
+@@@ 124 @@@
+
+
+
+95. The following is NOT used in alcohol abuse
+A. Disulfiram ~ C. Flumazenil
+B. Acamprosate D. Naltrexone E. Thiamine
+
+Cross Match each of the following to its adverse effect
+
+96. Livido reticularis A. Fentanyl
+97. Fatal hepatotoxicity & hair thinning  B. Lamotrigine
+98. Chest wall rigidity C. Carbamazepine
+
+D. Valproate
+E. Amantadine
+Cross Match each of the following drugs to its mechanism of action
+99. Inhibitor of serotonin & norepinephrine reuptake A. Bupropion
+100. Inhibitor of dopamine & NE reuptake B. Buspirone
+101. Agonist/Partial SHT 1A agonist C. Tramadol
+102. Increases serotonin & norepinephrine release D. Mirtazapine
+E. Moclobemide
+103. Which of the following statements concerning anesthetics is correct ?
+A. Thiopental is ultra short acting due to rapid metabolism.
+B. Ketamine blocks NMDA receptors .
+C. Propofol possesses a strong analgesic effect.
+D. Halothane is the least likely inhalation agent to increase intracranial tension.
+E. Dissociative anesthesia is induced by midazolam.
+104. The following concerning antiparkinsonian drugs is/are CORRECT?
+A. Apomorphine is given subcutaneously in emergency.
+B. L-dopa- induced dyskinesia is reduced by carbidopa.
+C. Benztropine reduces fluctuations in response to L-dopa.
+
+D. Amantadine may induce insomnia.
+
+E. A and D.
+95.C 96. E 97.D 08. A 99. C
+100. A 101.B 102. D. 103.B 104. E
+
+-113 -
+
+
+
+@@@ 125 @@@
+
+
+
+Non-Steroidal Anti-Inflammatory Drugs
+
+1. Which of the following is not a NSAID? :
+
+A. Aspirin C. Indomethacin
+B. Paracetamol D. Ibuprofen
+
+2. Which one of the following statements regarding NSAIDs 1s FALSE?
+A. Nephrotoxicity may occur on chronic use of high doses
+B. Respiratory depression seen with opioid analgesics does not occur with therapeutic
+
+doses of NSAIDs
+C. Their use does not result in drug dependence seen with opioid analgesics
+D. Aspirin is a good choice for use as analgesic antipyretic for children
+
+E. They may cause-gastric mucosal irritation and bleeding
+
+3. The following is common between aspirin and other NSAIDs
+A. Reversibly inhibit COX enzyme
+B. Prolonged antiplatelet effect
+C. Prophylaxis against myocardial infarction.
+D. Hypersensitivity reactions may occur
+
+4. NSAIDs are best avoided in:
+A. Asthmatic patients C. Patients with a history of gastric bleeding
+B. Hypersensitivity to aspirin D. All of the above
+
+5. All the following uses are shared by both aspirin and celecoxib EXCEPT
+A. Anti-inflammatory in chronic inflammatory musculoskeletal disorders.
+B. Prophylaxis against myocardial infarction.
+C. Acute pain.
+D. Primary dysmenorrhea.
+
+6. Which of the following analgesic agents poses a risk in a 60-year-old patient with a history
+
+of transient ischemic attacks
+
+A. Paracetamol C. Aspirin.
+B. Celecoxib. D.Aand B
+1.B 2.D 3.D .4.D 5B 6. B.
+
+-114-
+
+
+
+@@@ 126 @@@
+
+
+
+7. Which of the following is FALSE concerning selective COX 2 inhibitors ? :
+
+A. Are associated with low risk of gastric ulceration
+
+B. Have a low risk of cardiotoxicity and stroke
+
+C. Nephrotoxicity is a serious adverse effect
+
+D. Celecoxib should not be given to patients with sulfonamide allergy
+8. The following drug is NOT correctly matched to its side effects
+
+A. Indomethacin/ severe headache due to cerebral VD.
+
+B. Paracetamol/ bleeding.
+
+C. Celecoxib/ rash since it is structurally related to sulfonamides.
+
+D. Ibuprofen/Reye's syndrome.
+
+E.BandD
+9. Which of the following statements about aspirin is INCORRECT:
+
+A. It is mainly used today as a cardiovascular drug.
+
+B. It reversibly inhibits COX enzyme.
+
+C. Hyperuricemia occurs with low dose.
+
+D. Inhibits platelet aggregation in low dose.
+
+E. Tinnitus may occur with high dose
+10. Which one of the following statements regarding paracetamol is TRUE? :
+
+A. It 1s excreted unchanged by the kidney
+
+B. The maximum recommended daily dose in adults 1s 4 gm.
+
+C. Exhibits strong anti-inflammatory activity
+
+D. It should not be given in patient allergic to aspirin
+11. Concerning paracetamol, all are true Except:
+
+A. Preferred to aspirin in peptic ulcer.
+
+B. Acute paracetamol poisoning causes hepatic damage.
+
+C. Interferes with excretion of uric acid.
+
+D. May be used intravenously in acute fever of infectious origin.
+12. The following agent/s is/are used in transient ischemic attacks
+
+A. Low dose aspirin C. Heparin
+
+B. Warfarin D.AandB E.Aand C
+
+7.B 8.E 9.B "10.B 11. C 12. A
+
+-115-
+
+
+
+@@@ 127 @@@
+
+
+
+Cross Match each of the following adverse effect to the corresponding drug
+
+13. Aplastic anemia & bleeding A. Colchicine in gout
+14. Diarrhea & alopecia B. Paracetamol in fever
+15. Hyperuricemia & bleeding C. Indomethacin in osteoarthritis
+
+D. Aspirin in transient ischemic attacks
+E. Ibuprofen in dysmenorrhea
+
+16. Chronic use of which of the following may increase paracetamol toxicity
+
+A. Cimetidine C. Rifampicin
+B. Ketoconazole D. None of the above
+17. Which of the following reversibly inhibits COX-1 and COX-2 enzymes?
+A. Aspirin C. Allopurinol
+B. Ibuprofen D. Celecoxib E. Sulphinpyrazone
+
+18. The following is NOT true?
+A. Liver failure following paracetamol toxicity is due to glutathione depletion
+B. Piroxicam is given 3 times daily
+C. Diclofenac exhibits higher efficacy than ibuprofen & less side effects than indomethacin
+D. Sulfinpyrazone may induce peptic ulcer
+E. Probencid & sulfinpyrazone may induce acute attack of gout
+19. This adverse effect is less with celecoxib compared to indomethacin
+A. Nephrotoxicity C. Myocardial infarction
+B. Stroke D. Skin rash E. Peptic ulcer
+20. Indomethacin is least likely to be prescribed in
+A. Acute gouty arthritis. C. Patent ductus arteriosus.
+B. Osteoarthritis - D. Rheumatoid arthritis. E. Ankylosing spondiolytis
+
+21. The following poses the least risk of adverse cardiovascular events
+
+A. Naproxen C. Diclofenac
+B. Piroxicam D. Indomethacin
+13.C 14.A 15.D 16. C
+17. B 18.B 19.E - 20.B 21. A
+
+
+
+@@@ 128 @@@
+
+
+
+
+
+
+
+@@@ 129 @@@
+
+
+
+
+
+
+
+@@@ 130 @@@
+
+
+
+
+
+
+
+@@@ 131 @@@
+
+
+
+
+
+
+
+@@@ 132 @@@
+
+
+
+
+
+
+
+@@@ 133 @@@
+
+
+
+
+
+
+
+@@@ 134 @@@
+
+
+
+SECTION |
+
+
+
+@@@ 135 @@@
+
+
+
+. Ee tt ale HE i â€” a
+
+Pain from ala of nose Is carried by which nerve? | 6.
+
+a.
+b.
+
+C.
+
+Regarding the scalp the following statements
+
+Infratrochlear d. Buccal
+
+Infraorbital e. Auriculotemporal
+
+External nasal
+
+are true Except:
+
+Infection from scalp wounds can spread to
+superior sagittal sinus.
+
+Its blood vessels run in the loose subaponeurotic
+space.
+
+Its skin, superficial fascia and aponeurosis move
+as one layer. Tv
+
+Frontal bellies of occipito-frontalis can corrugate
+skin of forehead.
+
+Occipital bellies are supplied by facial nerve.
+
+The large blood vessels of scalp run into
+
+a.
+b.
+
+n
+
+d.
+
+Skin.
+
+Subcutaneous connective tissue
+Epicranial aponeurosis. le
+Loose areolar tissue.
+
+Pericranium.
+
+Which of the following veins unite with a
+posterior a branch of the retromandibular
+vein to form external jugular vein?
+
+8.
+b.
+c.
+d.
+
+Posterior Auricular
+Superficial Temporal.
+Facial.
+
+Transverse facial.
+
+Deep facial.
+
+The plane of movement of scalp is between:
+
+a
+b.
+
+a on
+
+Skin & epicranial aponeurosis
+Epicranial aponeurosis & pericranium.
+Skin & subcutaneous fat
+
+Pericranium & skull
+
+Connective tissue layer & aponeurosis.
+
+|
+1
+|
+|
+1
+1
+â€ک|
+1
+1
+LJ
+'
+
+â€ک
+â€™
+i
+'
+I
+!
+|
+I
+I
+|
+|
+|
+|
+|
+[
+|
+|
+|
+|
+[
+|
+[
+|
+\
+|
+!
+!
+[
+|
+|
+|
+!
+I
+!
+1
+â€ک
+i
+
+oe ew WS
+
+a = WW
+
+y
+
+9.
+
+ace
+
+)
+
+Which of the following nerves supplying scalp
+and face Is not derived from trigeminal nerve?
+
+a
+b.
+
+a
+H
+
+d.
+
+Great auricular
+Auriculotemporal.
+Zygomaticotemporal.
+Supraorbital
+
+Supratrochlear.
+
+Loss of sensation from the lower eye lid
+indicates injury of which nerve?
+
+a
+b.
+e
+d.
+
+Lacrimal
+Infratrochlear
+Infraorbital
+Zygomaticofacial
+
+Zygomaticotemporal
+
+Which of the following muscles can produce
+transverse wrinkles in the forehead?
+
+a. Corrugator supercilii.
+
+b. Frontalis.
+
+c. Orbicularis oculi.
+
+d. Zygomaticus minor.
+
+e. None of the above.
+
+Retromandibular vein:
+
+a. Is formed by union of maxillary & superficial
+temporal veins.
+
+b. Begins inside parotid gland.
+Is deep to facial nerve inside parotid gland.
+
+d. Divides into 2 branches.
+
+e. Allthe above.
+
+Bleeding beneath the pericranium of the scalp:
+
+Spreads underneath all of the scalp.
+
+Makes a swelling that takes the shape of the
+underlying bone.
+
+Reaches to the upper eyelids.
+Reaches to the back of neck.
+
+Reaches the extradural space.
+
+Test Your CNS / NERD
+
+
+
+@@@ 136 @@@
+
+
+
+J â€™ . ry, man Tar Va ie gl
+: â€™ i - !
+E آ» . â€ک
+آ»
+â€ک â€œ4
+' , ee PRES
+al - i . : ih a Ea a al n
+
+Il. The motor nerve of the scalp behind the : 12. Lymph from central part of upper lip drop, |
+auricle is: directly to:
+
+- ew a w= wy =
+
+a. Buccal branch of facial nerve. Submandibular lymph nodes.
+
+a.
+b. Posterior auricular branch of facial nerve. ; b. Submental lymph nodes.
+
+Zygomatic branch of facial nerve: c. Parotid lymph nodes.
+d. Temporal branch of facial nerve. d. Mastoid lymph nodes.
+آ¢. Buccal branch of facial nerve. e. Deep cervical lymph nodes.
+12. Buccinator: 18. The branch of the mandibular nerve that
+Is one of the muscles of mastication. supplies the scalp js the}
+Is supplied by buccal branch of mandibular a. Zygomaticotemporal nerve
+nerve. : b. Lesser occipital nerve
+Arises from both mandible and maxilla. c. Supraorbital nerve
+d. Is covered by investing layer of fascia. d. Third occipital nerve
+e. Accumulates food in vestibule of mouth. : e. Auriculotemporal nerve
+1 آ® *
+3. Internal carotid artery supplies: "19. The scalp Is:
+a. Chin d. Non-hairy temple a. Supplied by the great auricular nerve in front of
+b. Forehead e. Hairy temple the auricle.
+c. Cheek : b. Supplied by the supratrochlear and supraorbital
+
+arteries branches of the facial artery.
+
+14. The upper lip: c. Supplied posteriorly by the greater occipital
+
+Is supplied by facial artery. nerve from the ventral ramus of C2.
+
+d. Supplied behind the auricle by the lesser
+
+a
+b. Is lied i
+supplied by maxillary nerve occipital nerve from the ventral ramus of C2.
+
+آ¢. Liesin the dangerous area of face. \
+e. Drained by supratrochlear and supraorbital
+d. Its philtrum is obliterated in infections. veins, which unite to form the superior
+e. All the above is true. ophthalmic vein.
+15. Which of the following contains 20. Faclal artery:
+parasympathetic postganglionic fibers? a. Isa branch of internal carotid artery
+a. Lesser petrosal nerve. b. Enters face at antero-inferior angle of Buccinator
+b. Glossopharyngeal nerve. c. Has a tortuous course
+آ¢. Tympanic nerve. d. Ends at side of nose.
+d. Auriculotemporal nerve. e. Ends by anastomosing with supraorbital artery.
+e. Great auricular nerve.
+
+21. The nerve supply of the muscle of the scalp I$}
+16. Pulse felt at antero-inferior angle of
+
+a. Trigeminal nerve.
+masseter is from which artery? b. Great auricular nerve.
+a. Facial artery. c. Glossopharyngeal nerve
+b. Lingual artery. | d. Facial nerve.
+c. Superficial temporal artery. e. Great occipital nerve,
+d. Submental artery.
+
+e. External carotid artery.
+
+| 3 | A ERD / Test Your CNS
+
+
+
+@@@ 137 @@@
+
+
+
+22. Infection from dangerous area of face may be
+
+24.
+
+26.
+
+27.
+
+transmitted to the following venous sinus:
+
+a. Superior petrosal. d. Superior sagittal.
+
+b. Sigmoid. e. Cavernous.
+
+c. Inferior sagittal.
+
+آ¢. Pyramid
+In which of the following layers of the scalp
+does infection tend to spread:
+
+Skin.
+
+0
+b. Connective tissue layer.
+
+4
+
+Aponeurotic layer
+d. Loose areolar tissue layer.
+
+e. Periosteal layer.
+
+Pain from upper lip is carried by.
+a. Buccal
+
+b. Mental
+
+c,
+
+Infraorbital
+d. Zygomaticofacial
+
+e. Marginal mandibular
+
+Infection of lateral part of the upper eye lid
+leads to enlargement of this group of lymph
+nodes:
+
+Submental group
+Mastoid group
+Submandibular group
+Parotid group
+
+# 8 nn UT
+
+Occipital group
+
+Bleeding in which layer of scalp causes black
+eye?
+
+a. Skin.
+
+b. Connective tissue.
+
+c. Aponeurosis.
+
+d. Loose areolar tissue.
+
+eآ¢. Pericranium.
+
+The lowermost soft part of the auricle of ear : 29,
+is called:
+â€œa. Promontory d. Lobule
+
+b. Tragus e. Concha
+
+-â€”â€” ea a EE a a a a a =
+
+lL natomy
+
+28. The nerve that carries the sensation for the
+
+lower eyelid is:
+
+d. Mental
+
+~e. Auriculotemporal
+
+Supraorbital
+
+b. Infraorbital
+
+آ¢. Buccal
+
+Regarding Scalp, all are true Except:
+
+Its wounds bleed profusely.
+
+a
+b. Its wounds gape if the aponeurosis is cut.
+
+0
+
+It has no sebaceous glands.
+
+2.
+
+Its veins communicate with the intracranial
+Venous sinuses.
+
+e. lt contains a muscle of facial expression.
+
+The non-hairy region of the temple is
+supplied by which of the following nerves?
+
+Infratrochlear
+
+a
+b. Infraorbital
+
+0
+
+Auriculotemporal
+
+B-
+
+Zygomaticotemporal
+
+e. Zygomaticofacial
+
+The main sensory nerve to the lower lip Is the:
+
+Buccal.
+
+or
+
+Cervical of facial.
+Mental.
+d. Great auricular.
+
+e. None of the above.
+
+Infection of scalp area behind the ear affects
+which group of LNs
+
+Submental group
+
+a
+b. Submandibular group
+
+Nn
+
+Deep parotid group
+d. Superficial parotid group
+e. Occipital group
+
+Which of the following is sensory to the
+scalp behind the auricle?
+
+a. Auriculotemporal nerve.
+b. Superficial temporal nerve.
+
+c. Great auricular nerve.
+
+a.
+
+Zygomaticotemporal nerve.
+
+e. Buccal nerve.
+
+Test Your CNS / NERD | 4 |
+
+
+
+@@@ 138 @@@
+
+
+
+34. All of the following regarding orbicularis
+oris muscle is correct Except:
+
+It is a muscle of facial expression.
+
+b. Itis supplied by facial nerve.
+
+cآ¢. Its fibers form complete circles around the
+mouth.
+
+d. It can close the oral (labial) fissure.
+
+e. Ithelpsin speech.
+
+35. The nerve supplying the buccinator muscle is:
+a. Mandibular d. Vagus
+b. Facial e. Cranial accessory
+آ¢. Glossopharyngeal
+36. The following is a branch of the superficial
+temporal artery in the face:
+a. Supraorbital. d. Transverse facial.
+b. Supratrochlear. e. Inferior labial.
+c. Infraorbital.
+37. The 2 frontal bellies:
+a. Originate from skin of eyebrows.
+b. Are separated from each other.
+c. Are supplied by supraorbital nerve.
+d. Form the only muscle of face.
+e. Are attached to superior temporal line.
+38. Regarding buccinator muscle, all the
+
+following statements are true Except:
+
+a. It arises from both maxilla and mandible.
+
+b. The pterygomandibular raphe is a common
+
+origin for this muscle and the middle constrictor.
+c. Its middle fibers decussate at the modiolus.
+It is covered by buccopharyngeal fascia.
+
+It compresses the cheeks against the teeth.
+
+| 5 | NERD / Test Your CNS
+
+Hw â€” â€” â€” â€”â€” â€”â€”â€”â€”â€”â€”â€” â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”
+
+i EEE EE TE TE J
+
+FP pâ€”â€” 1
+-_â€”â€” em Ea a a Ea a
+- _ LT ee penâ€”â€”
+
+39. Lacrimal part of orbicularis
+
+a.
+b.
+c
+d.
+
+e.
+
+â€”â€”
+
+oculj
+ii
+Is attached to medial palpebral ligamep,
+Closes the eye gently.
+Is attached to lateral palpebral raphe %
+Is supplied by auriculotemporal nerye.
+
+Is a part of orbicularis oris.
+
+40. Regarding lips all are true Except:
+
+a.
+
+b.
+
+d.
+
+The main sensory supply to upper lip is facia)
+nerve.
+
+The main sensory supply to lower lip is Ment)
+nerve.
+
+Their muscles are formed mainly by orbicyy
+oris.
+
+Their blood supply is through facial artery,
+In facial palsy lips canâ€™t be dilated.
+
+41. The branch of facial nerve that supplies the
+platysma is the
+
+a.
+b.
+
+Cc.
+
+3.
+d. Mandibular
+
+e. Cervical
+
+Temporal
+Zygomatic
+
+Buccal
+
+42. Mandibular nerve is sensory.to:
+
+a.
+b.
+
+Cc.
+
+Upper eyelid. d. Lower eyelid.
+
+Tip of nose. e. Upper lip.
+
+Lower lip.
+
+43. Pulse felt in front of tragus of ear against
+rygomatic arch is from which artery?
+
+a.
+b.
+
+C.
+
+F
+
+Facial artery.
+
+Maxillary artery.
+
+Infraorbital artery.
+Superficial temporal artery.
+
+posterior auricular artery.
+
+5.
+
+
+
+@@@ 139 @@@
+
+
+
+a â€”
+
+The anterior triangle of the neck, include the
+
+. 6,
+following Except one:
+
+a. The muscular triangle.
+b. The carotid triangle.
+
+c. The digastric triangle.
+
+d. % the submental triangle.
+
+e. The occipital triangle.
+
+Which of the following muscles subdivides
+the posterior triangle of the neck:
+
+a. Sternocleidomastoid. *
+b. Superior belly of omohyoid.
+Inferior belly of omohyoid.
+d. Posterior belly of digastric.
+e. Subclavius.
+The following structures form the floor of
+the posterior triangle of the neck Except: y
+a. Levatorscapulae.
+bh. Splenuis capitis.
+آ¢. Scalenus medius.
+d. Investing layer of deep cervical fascia.
+eo. Prevertebral layer of deep cervical fascia.
+Regarding Infrahyold muscles, all are true
+Except: 9.
+a. Include sternohyoid, sternothyroid, omohyoid
+and thyrohyoid muscles.
+b. Can depress hyoid bone.
+Are all supplied by the ansa cervicalis.
+d. Intermediate tendon of omohyoid is attached to
+clavicle.
+e. Superior belly of omohyoid helps to bound
+carotid triangle. \
+10.
+
+The sternocleidomastoid, eomohyoid and
+trapezius bound which of the following
+triangles?
+
+a. Carotid. d. Muscular.
+b. Digastric. e. Submental.
+آ¢. Occipital.
+
+L 2) Anatomy ol the neck)
+
+i â€”â€”
+
+Regarding digastric triangle. All are true
+Except:
+
+a. Itis bounded anteriorly by anterior belly of
+digastric.
+
+b. Itis bounded posteriorly by posterior belly of
+digastric and stylohyoid.
+
+It is bounded superiorly by hyoid bone.
+d. [It contains submandibular gland.
+
+e. It contains submandibular lymph nodes.
+
+The following muscle bounds the carotid
+triangle posteriorly:
+
+a. Digastric (posterior belly).
+b. Digastric (anterior belly).
+Omohyoid (superior belly).
+d. Omohyoid (inferior belly)
+
+e. Strenocleidomastoid.
+
+n
+
+The cutaneous nerve supply over the anterior
+triangle of the neck is largely from:
+
+a. Dorsal rami of cervical nerves.
+b. Great auricular nerve.
+
+Transverse cutaneous nerve.
+
+~
+
+d. Suprascapular nerve,
+
+e. Supraclavicular nerve.
+
+The following lie in the posterior triangle of
+the neck Except:
+
+Spinal part of accessory nerve.
+
+a
+b. First part of subclavian artery.
+
+n
+
+External jugular vein.
+d. Trunks of Brachial plexus.
+e. Occipital artery
+
+Regarding anterior triangle of neck all are
+true Except:
+
+It is bounded anteriorly by midline of neck.
+
+b. Itis bounded posteriorly by posterior border of
+â€کsternocleidomastoid. |
+
+c. Its roof is formed of skin, superficial fascia and
+investing layer of deep cervical fascia.
+
+d. Its roof contains transverse cutaneous nerve.
+
+e. lItis subdivided into four smaller triangles.
+
+Test Your CNS / NERD | 6 |
+
+
+
+@@@ 140 @@@
+
+
+
+16. Regarding supraclavicular triangle, All oy,
+true statements Except:
+
+Tl. The roots of the brachial plexus pass
+
+Scalenus anterior and sternomastoid. a. Itisthe lower smaller division of the posteriq,
+
+triangle.
+b. Scalenus anterior and clavicle. gle
+
+آ¢. Scalenus anterior and scalenus medius. b. Its bounded superiorly by superior belly of
+
+omohyoid.
+d. Scalenus medius and scalenus posterior.
+
+c. Itcontains part of subclavian artery.
+
+d. Trunks of brachial plexus can be felt in the
+triangle.
+
+e. Scalenus posterior and levator scapulae,
+
+12. The posterior triangle of the neck:
+
+e. Suprascapular vessels run transversely in the
+
+a. Is bordered by sternocleidomastoid, mandible triangle.
+
+and trapezius.
+
+Ei i i lh TE pS
+
+b. Has the accessory nerve beneath fascia of its . 12. One of the following structures pierces the
+
+floor. roof of the posterior triangle of neck:
+آ¢. Isroofed by prevertebral layer of fascia,
+
+Phrenic nerve.
+d. Contains the internal jugular vein.
+
+a.
+: . b. Suprascapular artery.
+e. Contains trunks of the brachial plexus. |
+
+c. Transverse cervical artery.
+
+13. One of the following arteries is not a content | d. External jugular vein.
+of the carotid triangle: e. Occipital artery.
+a. The internal carotid artery. 18. The following muscles are in the muscular
+b. The superior thyroid artery. | triangle Except:
+آ¢. The occipital artery.
+a. Sternohyoid.
+d. The superficial temporal artery.
+| b. Thyrohyoid.
+e. The facial artery.
+آ¢. Omohyoid
+14. Regarding carotid triangle, select the correct d. Hyoglossus.
+statement: e. Sternothyroid.
+It is bounded by inferior belly of omohyoid. ' 19. The following are contents of the digastric
+
+b. Hyoglossus forms its floor posteriorly.
+
+-â€” a.
+
+triangle Except:
+cآ¢. Internal jugular vein lies medial to carotid
+arteries. Submandibular salivary gland.
+
+a.
+d. Sympathetic chain is enclosed in carotid sheath. b. Facial artery and vein.
+
+-â€”â€” ee mo wm a oa a ao
+
+Hypoglossal nerve,
+
+"
+
+آ¢. It contains the carotid sinus.
+
+Q
+
+Submental lymph nodes.
+15. Which of the following is correct regarding
+
+posterior triangle of the necl?
+
+- a = =
+
+e. . Nerve to mylohoid.
+
+a. Contains the spinal accessory nerve within its
+fascial roof.
+
+b. Contains the third part of subclavian artery
+beneath its fascial floor.
+
+OE a eo ow oe ee a OW Se em em ee wT
+
+c. Branches from thyrocervical trunk lie between
+its roof and its floor.
+
+d. All of the above.
+
+آ¢. None of the above.
+
+(7 ) NERD /Test Your CNS
+
+
+
+@@@ 141 @@@
+
+
+
+2.
+
+\
+
+The falx cerebri:
+
+a. Is attached anteriorly to anterior clinoid process.
+b. Contains superior sagittal sinus.
+
+c. Separates pituitary gland from cerebrum.
+
+d. Separates cerebrum from cerebellum.
+
+e. Contains superior petrosal sinus.
+
+Extradural hemorrhage is caused by rupture
+2,
+
+of:
+
+a. Anterior cerebral artery.
+b. Internal carotid artery.
+
+Middle meningeal artery.
+d. Superior cerebral vein.
+
+آ¢. None of the above.
+
+Regarding pituitary gland, all the following
+statements are true Except:
+
+It lies in anterior part of the neck.
+
+a.
+b. Itis controlled by hypothalamus.
+
+n
+
+It has a portal system of veins.
+
+d. Axons of nerve cells in hypothalamus carry
+hormones to the neurohypophysis.
+
+e. The adenchypophysis secretes at least six
+different hormones.
+
+All the following drain into cavernous sinus
+Except:
+
+Ophthalmic veins.
+
+a,
+b. Central retinal vein.
+
+Nn
+
+Sphenoparietal sinus.
+d. Great cerebral vein.
+
+o. Superficial middle cerebral vein.
+
+The flax cerebri contains which of the following
+sinuses in its concave lower margin?
+
+Superior sagittal.
+
+a
+b. Inferior sagittal.
+
+--â€” wm wm a ww =
+
+Nn
+
+Sigmoid.
+
+=
+
+Straight.
+
+o. Sphenoparietal.
+
+pr
+
+d
+3) Cranial Cavity,
+he J â€”â€”â€”â€” â€”â€”â€”â€”â€”â€”
+
+6.
+
+o.
+
+_
+
+'
+
+' 10
+â€ک \A
+[
+
+=
+
+)
+
+The straight sinus:
+
+Lies at the line of attachment of falx cerebri to sky.
+
+b. Is formed by union of great cerebral vein and
+inferior sagittal sinus.
+
+آ¢. ls commonly absent.
+d. Drains the superior sagittal sinus.
+
+e. Is a paired venous sinus.
+
+One of the following nerves are not in
+relation to the cavernous sinus:
+
+a. Oculomotor.
+b. Trochlear.
+c. Abducent.
+
+d. Ophthalmic.
+
+e. Mandibular.
+
+The cavernous sinus communicates with all
+the following Except:
+
+Ophthalmic veins.
+
+a.
+b. Facial vein.
+
+Nn
+
+Pterygoid venous plexus.
+d. Superior sagittal sinus.
+
+e. Inferior petrosal sinus.
+
+The superior sagittal sinus:
+
+a. lIsinvaginated by aggregations of arachnoid
+villi.
+
+b. Contains few valves.
+Drains cerebellar veins.
+
+d. Joins the inferior sagittal sinus to form straight
+sinus.
+
+e. Is connected with scalp through mastoid
+emissary vein.
+
+Regarding tentorium cerebelli: All are true
+Except:
+
+It roofs over middle cranial fossa.
+
+b. Its free border is attached to anterior clinoid
+process.
+
+c. Its attached border is attached to post clinoid
+process.
+
+d. ltincludes transverse venous sinus in its
+attached border.
+
+e. Oculomotor and trochlear nerves pierce dura
+
+at the point of crossing of its free & attached
+borders.
+
+Test Your CNS / NERD | 8 |
+
+
+
+@@@ 142 @@@
+
+
+
+| 8
+
+12,
+
+a ET -5, rt
+.
+.
+. . = . PA a
+â€œ ot = â€”
+
+The following dural venous sinus lies in
+the junction of the falx cerebri with the
+tentorium cerebelli:
+
+a. Sphenoparietal.
+b. Inferior petrosal.
+آ¢. Straight,
+
+d. Inferior sagittal.
+
+e. Occipital.
+
+Regarding meninges; all are true Except:
+
+a. Outer layer of dura forms folds to separate
+different parts of brain.
+
+b. Subdural space is between dura & arachnoid.
+Pia dips into the sulci of brain.
+
+d. Subarachnoid space contains C.S.F..
+
+e. Dura receives nerves from all divisions of the
+trigeminal.
+
+Which of the following arteries supply the
+pituitary gland?
+
+a. Common carotid.
+b. Internal carotid.
+
+External carotid.
+
+HN
+
+d. Subclavian.
+
+e. Vertebral.
+
+All the following venous sinuses lie between
+
+outer (endosteal) and inner (meningeal)
+layers of dura Except:
+
+Superior sagittal.
+
+a.
+b. Inferior sagittal.
+
+fn
+
+Sigmoid.
+
+B-
+
+Right transverse.
+
+آ¢. Left transverse,
+
+(9) NERD / Test Your CNS
+
+a.
+b.
+C
+d.
+
+The following are tributaries tt
+cavernous sinus Except: ;
+
+Sphenoparietal sinus.
+Straight sinus.
+
+Central retinal vein.
+Superior ophthalmic vein.
+
+Inferior ophthalmic vein.
+
+Regarding the superior sagittal sinus, q| thy
+
+statements are true Except:
+
+a.
+b.
+C.
+d.
+
+â€™
+e.
+
+May share in confluence of sinuses.
+Has lacunae lateralis.
+
+Receives diploic veins.
+
+May communicate with veins of nose.
+
+Receives the superficial middle cerebral vein,
+
+12. All the following are communications of
+cavernous sinus, Except:
+
+es mm Em Em EE Ae a em a a A
+
+b.
+
+Cavernous sinus of the opposite side.
+
+Pharyngeal venous plexus through foramen
+lacerum.
+
+Pterygoid venous plexus through foramen
+ovale.
+
+Transverse venous sinus via superior petrosal
+sinus.
+
+Sigmoid sinus by straight sinus.
+
+18. One of the following structures is embedded
+in the wall of the cavernous sinus:
+
+a.
+b.
+
+Mandibular nerve.
+
+Internal carotid artery.
+
+آ¢. Ophthalmic nerve.
+
+2.
+
+Abducent nerve.
+
+Trigeminal ganglion.
+
+
+
+@@@ 143 @@@
+
+
+
+â€کA muscle attached to the coronold process of
+
+TT
+{ 4 | Iniratemporal l'ossa }
+
+Sâ€” p a es
+All are contents of infratemporal fossa . 2 A muscle which elevates and retracts the
+Except: mandible:
+a. Medial pterygoid muscle. a. Masseter. d. Lateral pterygoid,
+b. Lateral pterygoid muscle. : b. Temporalis. e. Digastric.
+آ¢. Pterygoid venous plexus. : c. Medial pterygoid.
+
+d. Middle meningeal artery.
+
+"8. Opening of the jaw is helped by all the
+e. Third part of maxillary artery. folowing muscles Eniopt
+Regarding temporalis, All are true Except: a. Lateral pterygoid. ~ d. Geniohyoid.
+a. tis attached to neck of mandible. b. Masseter. e. Mylohyoid.
+b. It elevates the mandible. c. Digastric.
+
+4
+
+Its posterior fibers retract the mandible. :
+2 ' 9, Pterygoid venous plexus communicates with:
+d. Itis a fan shaped muscle.
+e. Itis covered by temporal fascia. : a. Cavernous sinus.
+b. Facial vein.
+
+Inferior ophthalmic vein.
+
+Mendinle; | d. All of the above.
+a. Buccinator. ~~ d. Temporalis. e. Aand B only.
+b. Lateral pterygoid. e. Masseter.
+
+. 10. The following muscle can protract the
+آ¢. Medial pterygoid,
+
+mandible:
+The most horizontal fibers of temporalis a. Platysma. d. Masseter.
+muscles are: b. Buccinator. e. Lateral pterygoid.
+a. Deep. d. Middle. c. Temporalis.
+b. Superficial. e. Anterior.
+
+c. Posterior.
+
+Tl. The buccal branch of the mandibular nerve
+
+| supplies:
+The pterygoid venous plexus receives a. Buccinator muscle.
+tributaries from: b. Skin and mucous membrane of cheek.
+a. Sphenopalatine vein. c. Only skin of cheek.
+b. Inferior alveolar vein. d. Only mucous membrane of cheek.
+
+n
+
+Posterior superior alveolar vein. Molar teeth.
+
+d. Middle meningeal veins.
+
+12. At the following are muscles of mastication
+
+e. All of these veins.
+
+Except:
+All of the following nerves are derived from the a. Medial pterygoid. d. Temporalis.
+posterior division of mandibular nerve Except: b. Lateral pterygoid. e. Masseter.
+Auriculotemporal nerve. c. Buccinator.
+
+Nerve to mylohyoid.
+
+a
+b
+آ¢. Nerve to medial pterygoid.
+d. Inferior alveolar.
+
+آ©
+
+Lingual.
+
+Test Your CNS/ NERD | 10 |
+
+
+
+@@@ 144 @@@
+
+
+
+vos malk s
+
+a w ar Te rR a yy
+ho. ' da hy alt)
+voy a
+â€ک {5 i
+Lo ee or . Bs Adib Th - Ly See 3 Syn BE EN it
+
+13. Regarding medial pterygoid muscle, All are
+
+true Except:
+
+It has two heads of origin.
+b. ltlies on lateral surface of ramus of mandible.
+آ¢. ltis supplied by trunk of mandibular nerve.
+d. lt can elevate the mandible. |
+
+آ¢. Lingual nerve lies in the space between the
+muscle and the ramus of mandible.
+
+Retraction of mandible is produced by:
+
+8. Upper fibers of lateral pterygoid muscle.
+
+b. Anterior fibers of Masseter muscle.
+Posterior fibers of temporalis muscle.
+
+d. Anterior belly of digastric muscle.
+
+آ©. Superficial head of medial pterygoid muscle.
+
+Anterior division of mandibular nerve gives
+the following branches Except:
+
+8. Nerve to medial pterygoid.
+b. Nerve to lateral pterygoid.
+
+n
+
+Buccal nerve.
+
+a.
+
+Deep temporal nerves.
+
+آ¢. Nerve to Masseter,
+
+fe:
+
+b
+
+(11) NERD /Test Your CNS
+
+WEE OW en ee â€”â€”â€”â€”â€”â€”
+LE te =
+i EI I Ee a I EE
+
+16. Regarding maxillary artery all are trye
+Except:
+
+12
+
+> uf
+
+It is the smaller of the terminal divisions of
+external carotid artery.
+
+It is related to medial surface of neck of
+mandible.
+
+It supplies all teeth.
+It runs superficial or deep to lateral pterygoiq.
+
+It enters pterygopalatine fossa through pteryg,
+maxillary fissure.
+
+Concerning the otic ganglion, select the fq|s,
+statement: g
+
+a.
+b.
+
+C.
+
+It lies below foramen ovale.
+It lies deep to the mandibular nerve.
+
+It is functionally connected to the
+glossopharyngeal nerve.
+
+It is closely related to the nerve to the medial
+
+~ pterygoid muscle.
+
+Its sympathetic root is derived from the plexus
+around internal carotid artery. |
+
+Regarding pterygoid venous plexus, All are
+true statements Except:
+
+da.
+
+YO
+
+It can transmit infection from face to cavernous
+sinus.
+
+Its tributaries correspond to branches of the
+maxillary artery.
+
+It drains into the maxillary vein.
+
+It is connected to inferior ophthalmic vein bya
+vein that passes through inferior orbital fissure.
+
+It surrounds Masseter muscle.
+
+1A
+
+
+
+@@@ 145 @@@
+
+
+
+Anatom
+
+CHD
+
+The oculomotor nerve:
+
+a
+
+b.
+c.
+d.
+
+Lesion of oculomotor nerve leads to all of the
+
+Is motor to all extrinsic ocular muscles.
+Runs within lateral wall of cavernous sinus.
+Emerges from the back of brain stem.
+Reaches the orbit through optic canal.
+
+Carries pre-ganglionic para-sympathetic fibers
+to lacrimal gland.
+
+following Except:
+
+a. Internal squint.
+
+b. Ptosis.
+
+آ¢. Dilated pupil.
+
+d. Diplopia.
+
+eo. Inability to move the eyeball downwards.
+
+Both oculomotor and trochlear nerves are
+similar in all the following Except:
+
+b.
+
+Their nuclei are located in the midbrain.
+
+They both pass between the posterior cerebral
+
+and superior cerebellar arteries.
+
+They both pierce dura at the crossing of free and
+
+attached borders of tentorium cerebelli.
+
+They both pass in lateral wall of cavernous sinus.
+
+They both enter orbit through superior orbital
+fissure within the common tendinous ring.
+
+Aciessory nerve ry which of the
+
+following muscles?
+a. Trapezius. | d Scalenus anterior.
+b. Strenomastoid. e. A&B.
+
+Cc.
+
+All the following are branches of facial nerve
+
+Levator scapulae.
+
+Except:
+
+a. Chorda tympani.
+
+b. Greater superficial petrosal.
+آ¢. Deep petrosal.
+
+d. Nerve to stapedius,
+
+e.
+
+Nerve to posterior belly of digastric.
+
+oe me a a a
+
+' 8
+, De
+
+EE EE we Ee os Em a Ee A a ew
+
+-_ a -- e = =
+
+-_ es es.sesas =.
+
+OE OW OT OR OW TE es Em mm wm Em Ee Em ow mew em
+
+CECE WE CE Ca
+
+2.
+
+To assess the function of the trigeminal
+nerve, you can ask the patient to:
+
+a. Clench his teeth.
+
+b. Taste sugar placed on anterior part of tongue.
+آ¢. Say "Ah" |
+
+d. Close his eye firmly.
+
+e. Show his teeth or smile.
+
+The ophthalmic nerve:
+
+Enters the orbit through the optic foramen.
+Carries corneal sensation.
+
+c. Is motor to levator palpebrae superioris.
+
+d. Issensory to the upper teeth. | |
+
+e. When injured the light reflex is abolished on the
+same side.
+
+A lesion of the mandibular nerve after its
+exit from foramen ovale may result in:
+
+Loss of parotid gland secretion.
+
+b. Loss of taste sensation from anterior part of
+tongue.
+
+c.. Loss of general sensations from posterior part of
+
+tongue.
+
+ d. Paralysis of Buccinator.
+
+e. Loss of sensation of lower lip.
+
+Maxillary Nerve:
+
+Leaves the skull through foramen ovale.
+Enters the orbit through superior orbital fissure.
+
+c. Gives the posterior superior alveolar (dental)
+branch.
+
+d. Has otic ganglion attached to it.
+
+e. Supplies skin of lower lip.
+
+One of the following is not given from the
+superior cervical sympathetic ganglia:
+
+The laryngopharyngeal branch.
+
+a
+~ b. The internal carotid nerve.
+
+آ¢. The cardiac branches.
+
+8
+
+Communicating branches to the last four cranial
+nerves,
+
+آ¢. The ansa subclavia.
+
+Test Your CNS / NERD (12)
+
+
+
+@@@ 146 @@@
+
+
+
+Tl. Choose one correct statement regarding the
+lingual nerve:
+a. tis a branch of the posterior division of
+maxillary nerve.
+b. It leaves skull through foramen rotundum.
+It carries fibers from first cervical spinal nerve.
+d. It carries taste from posterior third of tongue.
+e. ltis closely related to the third molar tooth.
+12. Conceming the accessory nerve, select the
+false statement:
+a. It has cranial and spinal roots.
+b. The cranial root joins vagus nerve.
+آ¢. The spinal root enters the skull through the
+jugular foramen.
+d. The spinal root supplies the trapezius and
+sternomastoid muscles.
+آ¢. The spinal accessory runs in the roof of the
+posterior triangle.
+13. Concerning the maxillary nerve, one
+statement is false:
+a. In enters the pterygopalatine fossa through the
+pterygomaxillary fissure. .
+b. Gives two sensory roots to the sphenopalatine
+ganglion. Le
+c. Enters the orbit through the infra-orbital fissure.
+d. Gives off a zygomatic branch.
+آ¢. Contains only sensory fibers.
+14. Allis true regarding maxillary nerve Except:
+a. lItis entirely sensory.
+b. Supplies upper lip.
+c. Supplies lower eyelid.
+d. Supplies skin over zygomatic bone.
+آ¢. Runs through foramen ovale.
+15. The lingual nerve:
+a. Leaves the skull through the pterygomaxillary
+fissure.
+bb. Carries fibers from the first cervical spinal nerve.
+c. Is closely related to the first molar tooth.
+d. Joins chorda tympani on hyoglossus muscle.
+e. Carries sensory fibers from the anterior part of
+
+tongue.
+
+(13 | NERD /Test Your CNS
+
+TE I EE em oe om ow wm Ee ae aE WW = Bo wm OW
+
+a â€”â€”-â€”w -
+
+oe â€”â€”-â€”
+hdd i tet a
+
+eed Tp â€”â€”â€”â€”
+
+OE ee me mm
+
+16. Regarding the mandibular nerve, All are
+true Except:
+
+a. Supplies all lower jaw teeth.
+
+b. Has motor and sensory fibers.
+
+c. Passes through foramen ovale.
+
+d. Passes in lateral wall of cavernous sinus.
+
+e. Gives a meningeal branch
+
+12. The recurrent laryngeal nerve:
+
+Lies infront of trachea.
+
+b. Contains fibers from cranial part of accessory
+nerve.
+Is a branch of superior laryngeal nerve.
+
+d. Hooks around common carotid artery.
+
+e. Supplies all muscles of larynx.
+
+18. Which of the following nerves run in lateral
+
+wall of cavernous sinus?
+
+a. Mandibular.
+
+b. Abducent.
+
+c. Optic.
+
+d. Trochlear.
+
+e. None of the above.
+
+19. Choose one correct statement regarding
+glossopharyngeal nerve:
+a. ltis purely sensory.
+
+It carries preganglionic parasympathetic fibers
+to lacrimal gland.
+
+It carries afferent fibers from carotid sinus.
+It supplies anterior part of tongue.
+
+It unites with vagus nerve below jugular
+foramen.
+
+20. The hypoglossal nerve:
+
+a.
+
+Supplies sensation to the anterior part of the
+tongue.
+
+Carries fibers from the second and third cervical
+nerves.
+
+Passes between the internal and external carotid
+arteries.
+
+Is motor to all intrinsic muscles of the tongue.
+
+If injured, the tongue on protrusion deviates
+away from the affected side.
+
+
+
+@@@ 147 @@@
+
+
+
+â€”â€”
+|]
+
+21. Injury to the motor root of the trigeminal
+
+nerve would cause paralysis of:
+
+a. Buccinator.
+b. Lateral pterygoid.
+
+Orbicularis oculi.
+
+n
+
+d. Posterior belly of digastric.
+e. Platysma.
+
+22. All the following statements regarding
+
+trigeminal ganglion are true Except:
+
+It lies in middle cranial fossa.
+
+a.
+b. Itlies within a fold of dura.
+
+0
+
+It contains bipolar nerve cells.
+
+a.
+
+Central processes of its cells form sensory root
+of trigeminal.
+
+e. Motor root of trigeminal lies beneath it.
+
+To test for facial nerve injury, you ask the
+patient to
+
+a. Clench his teeth
+
+b. Say â€œAh
+
+Firmly close eyes
+
+d. Bend head to shoulder
+
+آ¢. Depress mandible.
+
+Nn
+
+Taste from posterior third of tongue is
+carried by:
+
+Glossopharyngeal nerve.
+Hypoglossal nerve.
+
+Lingual nerve.
+
+Q nn UT آ»
+
+Vagus nerve.
+
+آ¢. Chorda tympani.
+
+Regarding chorda tympani; all are correct
+statements Except:
+
+It is a branch of facial nerve.
+
+a.
+b. It crosses the tympanic membrane.
+
+n
+
+It joins lingual nerve beneath lateral pterygoid.
+
+It is related to medial side of lower third molar.
+
+e
+
+It carries taste and parasympathetic fibers.
+
+- Rocfemmy
+
+. 26. The ansa cervicalls supplies one of the
+
+â€™
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+[
+|
+|
+|
+|
+[
+[
+|
+I
+|
+|
+I
+{
+|
+|
+J
+|
+'
+}
+\
+'
+|
+1
+I
+I
+I
+|
+|
+!
+I
+[
+
+â€”â€” ow. Em
+
+ett. EE râ€”
+
+27.
+
+28.
+
+following muscles:
+
+a. Mylohyoid. d. Omohyoid.
+b. Stylohyoid. e. Thyrohyoid.
+آ¢. Geniohyoid.
+
+The following glands receive their
+parasympathetic innervation from the facial
+nerves Except:
+
+a. Lacrimal. d. Nasal.
+b. Submandibular. e. Sublingual.
+c. Parotid.
+
+The maxillary nerve:
+
+a. Arises from the geniculate ganglion.
+b. Runs in the lateral wall of the cavernous sinus.
+
+Has the otic ganglion attached to it.
+
+0
+
+d. Supplies the skin of the bridge of the nose.
+e. Has sensory and motor fibers.
+The cervical branch of facial nerve supplies:
+
+Sternomastoid.
+
+a
+b. Masseter.
+
+n
+
+Zygomaticus major.
+d. Platysmia.
+
+e. Buccinator.
+
+The trochlear nerve is peculiar (different)
+from other cranial nerves because:
+
+a. lt emerges from dorsal aspect of brain stem.
+
+b. It decussates with that of the opposite side.
+
+آ¢. [Its nucleus lies in the midbrain.
+
+d. It receives ipsilateral and contralateral
+corticonuclear fibers.
+
+e. A&B only.
+
+31. The maxillary nerve supplies all of the
+
+following Except:
+
+a. All upper jaw teeth.
+b.
+
+آ¢. Meninges.
+
+Sensory fibers to the palate.
+
+=
+
+The upper lip:
+آ¢. The upper eyelid.
+
+Test Your CNS / NERD (14)
+
+
+
+@@@ 148 @@@
+
+
+
+32. The facial nerve supplies all the following
+
+Except:
+
+a. Skin of face.
+
+b. Platysma.
+
+c. Secretomotor fibers to sublingual gland.
+d. Stapedius.
+
+e. Secretomotor fibers to lacrimal gland.
+
+33. The glossopharyngeal nerve supplies the
+
+following:
+
+a. The otic ganglion.
+
+b. The stylopharyngeus muscle.
+
+آ¢. The mucous membrane covering the tonsil.
+d. All the above.
+
+e. A&Bonly.
+
+34. If you ask a patient to protrude his tongue
+and it deviates to the left, this indicates
+injury to which nerve?
+
+آ® Qa pn UT آ»
+
+Left hypoglossal.
+
+Right hypoglossal.
+Lingual.
+
+Left glossopharyngeal.
+Right glossopharyngeal.
+
+35. The glossopharyngeal nerve:
+
+Supplies all pharyngeal muscles.
+
+Carries taste sensation from circumvallate
+papillae.
+
+Passes superficial to hyoglossus muscle.
+All the above.
+
+None of the above.
+
+36. The facial nerve:
+
+& an T
+
+Leaves the skull through foramen spinosum.
+Supplies sensory fibers to the cornea.
+Is sensory to skin covering buccinator.
+
+Carries secreto-motor fibers for the parotid
+gland.
+
+Provides one limb of the corneal reflex arc.
+
+(15) NERD / Test Your CNS
+
+[rap â€”â€”â€”â€”â€”â€”â€” Ti EE
+
+-â€” == w= ow
+
+CE EL. RE TES
+
+â€”
+
+37. The following are cutaneous branches of the
+
+41.
+
+cervical plexus Except
+
+a. Transverse d. Dorsal scapular,
+
+cutaneous. e. Supraclavicular.
+b. Great auricular.
+
+c. Lesser occipital.
+
+The following are branches of the vagus
+nerve in the neck Except:
+
+a. Branches to the carotid body.
+b. Left recurrent laryngeal nerve.
+c. Pharyngeal branch.
+
+d. Superior laryngeal nerve.
+
+e. Cardiac branches.
+
+Which branch of the following nerves
+synapses in the ciliary ganglion?
+
+a. Abducent nerve.
+
+b. Nerve to inferior oblique.
+Nerve to superior oblique.
+d. Ophthalmic.
+
+e. Superior division of oculomotor.
+
+Nn
+
+Which of the following nerves is a dorsal
+ramus of the second cervical nerve?
+
+Great auricular.
+
+a
+b. Greater occipital.
+
+Nn
+
+Lesser occipital.
+
+Transverse cervical.
+
+8
+
+e. Supraclavicular.
+
+Regarding vagus nerve; all are true Except:
+
+a. ltisthe longest cranial nerve.
+
+b. Itis joined by the spinal root of the accessory
+nerve.
+
+It has two ganglia.
+d. It descends within the carotid sheath.
+
+e. Its injury leads to palpitation and tachycardia
+(increase in heart rate).
+
+
+
+@@@ 149 @@@
+
+
+
+42. Which of the following fibers is contained in | 42. Which is the correct statement regarding
+nerve of pterygoid canal: cervical sympathetic trunk?
+
+Preganglionic sympathetic. It lies anterior to carotid sheath.
+
+a
+b. Postganglionic sympathetic. b. It contains ascending postganglionic axons.
+
+c. It receives white rami communicantes from
+cervical nerves.
+
+آ¢. Postganglionic parasympathetic.
+
+d. Taste from anterior part of tongue.
+
+0. Taste from posterior part of tongue. d. Supplies branches to the heart.
+
+e. Its middle ganglion is the largest.
+43. Regarding pharyngeal branch of vagus, all
+
+are true statements Except: If you ask a patient to say â€œAhâ€‌ and you
+
+notice deviation of the uvula to the right
+side, you suspect injury to which nerve?
+
+a. It carries fibers that originate from cranial part of
+accessory nerve.
+
+b. Itshares in forming the pharyngeal plexus of
+nerves.
+
+. Trigeminal.
+
+a
+b. Accessory.
+It supplies all pharyngeal constrictors.
+
+i
+
+Glossopharyngeal.
+d. Itsupplies all soft palate muscles Except tensor d. Hvpoalossal
+palati. alan |
+
+: e. None of the above.
+e. ltsupplies all muscles attached to posterior
+
+OE RE BT OR SE EE Ee Sm en En En En En EE EE EE EE SE EE EE EE EE EE EE EE SE EE EE A Ee EE SE EE En En En en EE EE EE En en En EE A ee de de dh Ee Ee EE ee Ee ee =
+
+It leaves the skull through stylomastoid foramen.
+e. Infratrochlear.
+
+border of thyroid cartilage. 49. The parasympathetic root of otic ganglion is
+
+44. Anterior division of mandibular nerve gives | a branch of which nerve:
+
+the following branches Except: a Oculomotor. oo
+
+a. Nerve to medial pterygoid. | b. Trochlear.
+
+b. Nerve to lateral pterygoid. c. Facial.
+
+c. Buccal nerve. d. Glossopharyngeal.
+
+d.. Deep temporal nerves. e. Vagus.
+
+e erve to masseter 50. The hypoglossal nerve:
+45. The hypoglossal nerve supplies the following a. Emerges from medulla between olive and
+
+muscles Except: | inferior cerebellar peduncle.
+
+b. Leaves the skull through jugular foramen.
+
+a. Hyoglossus. | |
+
+b. Inferior longitudinal muscle of the tongue, | â‚¬.. Lies withinthe upper part of carotid sheath.
+
+آ¢. Genioglossus d. Is joined by a branch from C2.
+
+d. Styloglossus e. Itsensory to the anterior ?/, of the tongue.
+
+eo. Mylohyoid. . 51. All are branches of nasociliary nerve Except:
+46. Concerning the chorda tympani nerve; all a. Long ciliary.
+
+are true Except: b. Lacrimal.
+
+a. ltis a branch of the facial nerve. Anterior ethmoidal.
+
+d. Posterior ethmoidal.
+
+آ¢. It carries taste sensation from the anterior %/, of
+tongue.
+
+d. Itsupplies the submandibular gland.
+
+e. It joins the lingual nerve in the infratemporal
+fossa.
+
+Test Your CNS / NERD
+
+
+
+@@@ 150 @@@
+
+
+
+â€”
+
+52. All the following muscles are supplied by the : 52. All the following muscles receive motor
+
+54.
+
+55.
+
+56.
+
+hypoglossal nerve Except:
+
+a. Anterior belly of digastric.
+b. Hyoglossus.
+
+4
+
+Genioglossus.
+d. Styloglossus.
+
+e. Intrinsic muscles of tongue.
+
+The deep petrosal nerve is composed of
+nerve fibers whose cell bodies are located in
+which ganglion?
+
+Geniculate.
+Trigeminal.
+Pterygopalatine.
+
+Superior cervical sympathetic.
+
+آ® on TF آ»
+
+Inferior vagal ganglion.
+
+Injury of abducent nerve leads to:
+
+Internal squint.
+Inability to move eye upwards.
+Inability to move eye downwards.
+
+A dilated pupil.
+
+e a pn UT &
+
+Loss of accomodation.
+
+Inability to whistle or suck on a straw may
+indicate a lesion of which nerve:
+
+a. Maxillary.
+b. Mandibular.
+آ¢. Facial.
+
+d. Glossopharyngeal. |
+آ«. Hypoglossal.
+
+All The following muscles are supplied by
+facial nerve Except;
+
+Buccinator.
+
+a
+b. Posterior belly of digastric.
+
+آ¢. Tensor tympani.
+d. Auricular muscles.
+e. Stylohyoid,
+
+(17) NERD /Test Your CNS
+
+atte EE EE EEE ET
+
+i â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€”â€” Em me A WE WE WR mE OE EE EE Ee EW EE Ee EE EE OE EE Ee EE EE EE a em
+
+fibers from the cervical plexus Except:
+
+a. Thyrohyoid. d. Mpylohyoid,
+b. Omohyoid.
+
+c. Sternohyoid.
+
+e. Geniohyoid,
+
+Regarding the accessory nerve; All the
+following statements are true Except:
+
+a. lItis a purely motor nerve.
+
+Its cranial part takes origin from the nucleus
+ambiguus.
+
+c. It emerges at the groove between pyramid and
+olive.
+
+d. Its spinal part runs between investing and
+prevertebral layers of cervical fascia.
+
+e. Its cranial part joins the vagus.
+
+59. The following are branches of the cervical
+
+plexus Except:
+
+a. Phrenic. d. Supraclavicular.
+
+b. Great auricular. e. Lesser occipital.
+
+c. Suprascapular.
+
+60. The ansa cervicalis:
+
+61.
+
+Is a nerve loop on the internal jugular vein.
+
+b. Is formed of fibers from the upper three cervical
+nerves.
+
+Supplies most of the infrahyoid muscles.
+d. All of the above.
+e. A&B only.
+
+Regarding cervical spinal nerves, All are true
+
+statements Except:
+
+a. Their dorsal rami supply skin and muscles of
+back. |
+
+b. Upper four ventral rami form cervical plexus.
+Lower four ventral rami form brachial plexus.
+
+d. They receive grey rami communicantes from the
+cervical sympathetic ganglia.
+
+e. They give white rami communicantes to the
+cervical sympathetic ganglia.
+
+
+
+@@@ 151 @@@
+
+
+
+JE no tami
+

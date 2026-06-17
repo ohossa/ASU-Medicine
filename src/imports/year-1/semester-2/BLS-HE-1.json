@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "comingSoon": true,
+  "meta": {
+    "moduleCode": "BLS-HE-1",
+    "moduleName": "Basic Life Support & Clinical Examination",
+    "year": 1,
+    "semester": 2,
+    "creditPoints": 2,
+    "totalMarks": 40,
+    "keywords": [
+      "bls",
+      "cpr",
+      "clinical examination",
+      "bls-he"
+    ]
+  },
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Basic Life Support (BLS) & CPR",
+      "subtitle": "Basic Life Support (BLS) & CPR",
+      "emoji": "🚑",
+      "page": 1,
+      "lectureRange": "Lectures 1",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 2,
+      "title": "Medical History Taking",
+      "subtitle": "Medical History Taking",
+      "emoji": "📝",
+      "page": 2,
+      "lectureRange": "Lectures 2",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 3,
+      "title": "General Clinical Examination",
+      "subtitle": "General Clinical Examination",
+      "emoji": "🩺",
+      "page": 3,
+      "lectureRange": "Lectures 3",
+      "subjects": [],
+      "keywords": []
+    }
+  ]
+}

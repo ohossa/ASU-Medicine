@@ -1,4 +1,4 @@
-import type { Variants, Transition } from 'framer-motion';
+import type { Variants, Transition } from 'motion/react';
 
 export const spring: Transition = { type: 'spring', stiffness: 320, damping: 30, mass: 0.8 };
 

@@ -1,0 +1,2566 @@
+{
+  "schemaVersion": 1,
+  "meta": {
+    "moduleCode": "MCNS-2",
+    "moduleName": "Central Nervous System Module",
+    "year": 2,
+    "semester": 2,
+    "creditPoints": 13,
+    "totalMarks": 3049,
+    "keywords": [
+      "cns",
+      "central nervous",
+      "mcns",
+      "neuro",
+      "brain",
+      "spinal cord"
+    ]
+  },
+  "questions": [
+    {
+      "id": "mcns2-ch1-anatomy-q36",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "In which of the following layers of scalp does infection tend to spread?",
+      "explanation": "Infection spreads most readily in the loose areolar connective tissue layer because it contains valveless emissary veins that can transmit infection intracranially.",
+      "keyConcept": "Loose areolar tissue is the dangerous layer of the scalp due to valveless emissary veins",
+      "options": [
+        "Skin.",
+        "Connective tissue.",
+        "Aponeurosis.",
+        "Loose areolar connective tissue.",
+        "Pericranium."
+      ],
+      "correctIndex": 3,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q162",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Posterolateral boundary of the interpeduncular fossa is formed by:",
+      "explanation": "The posterolateral boundary of the interpeduncular fossa is formed by the cerebral peduncles. These are two large bundles of descending fibers on either side of the midbrain.",
+      "keyConcept": "Cerebral peduncles form posterolateral boundary",
+      "options": [
+        "Optic chiasma.",
+        "Optic tract.",
+        "Pons.",
+        "Cerebral peduncles.",
+        "None of the above."
+      ],
+      "correctIndex": 3,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q165",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Contents of interpeduncular fossa belong to:",
+      "explanation": "The interpeduncular fossa is located in the midbrain, between the cerebral peduncles. Its contents (oculomotor nerve, posterior perforated substance, etc.) are all midbrain structures.",
+      "keyConcept": "Interpeduncular fossa belongs to midbrain",
+      "options": [
+        "Midbrain.",
+        "Thalamus.",
+        "Hypothalamus.",
+        "Cerebellum.",
+        "Pons."
+      ],
+      "correctIndex": 0,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q408",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The structure(s) derived from spongioblasts of neural crest is (are):",
+      "explanation": "Spongioblasts (neural crest cells) give rise to chromaffin cells (adrenal medulla), which secrete epinephrine and norepinephrine. Microglia come from mesoderm ( monocytes), not neural crest. Oligodendrocytes and astrocytes come from neuroepithelial cells (glial precursors). Dura and pia mater are mesodermal.",
+      "keyConcept": "Chromaffin cells (adrenal medulla) derived from neural crest/spongioblasts; microglia from mesoderm, not neural crest.",
+      "options": [
+        "Dura mater.",
+        "Oligodendrocytes.",
+        "Microglia.",
+        "Pia mater.",
+        "Chromaffin cells."
+      ],
+      "correctIndex": 4,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q411",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Neuroepithelial cells give rise to:",
+      "explanation": "Neuroepithelial cells (radial glial cells) in the ventricular zone of the developing neural tube give rise to all the cellular elements of the CNS: neuroblasts (neurons), glioblasts (astrocytes and oligodendrocytes), and ependymal cells (lining the ventricles and central canal). The marginal zone contains axon tracts.",
+      "keyConcept": "Neuroepithelial cells give rise to neuroblasts (neurons), glioblasts (astrocytes/oligodendrocytes), and ependymal cells.",
+      "options": [
+        "Neuroblasts.",
+        "Glioblasts.",
+        "Ependymal cells.",
+        "All of the above.",
+        "None of the above."
+      ],
+      "correctIndex": 3,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q488",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Regarding the scalp, the following statements are true Except:",
+      "explanation": "The scalp has 5 layers (SCALP): Skin, Connective tissue, Aponeurosis, Loose areolar tissue, Pericranium. The main blood vessels run in the connective tissue layer.选项E正确. The answer is E. The 'dangerous area' is the loose areolar tissue connecting to intracranial venous sinuses.",
+      "keyConcept": "Scalp layers (SCALP): skin, connective tissue, aponeurosis, loose areolar tissue, pericranium - vessels in layer 2.",
+      "options": [
+        "Infection from scalp wounds can spread to superior sagittal sinus.",
+        "Its blood vessels run in the loose subaponeurotic space.",
+        "Its skin, superficial fascia, and aponeurosis move as one layer.",
+        "Frontal bellies of occipito-frontalis can corrugate skin of forehead.",
+        "Occipital bellies are supplied by facial nerve."
+      ],
+      "correctIndex": 4,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q491",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The plane of movement of the scalp is between:",
+      "explanation": "The plane of movement of the scalp is between the aponeurosis and pericranium (the loose areolar tissue layer). This allows scalp movement.选项B正确. The answer is B. Infection can spread in this 'dangerous layer' to intracranial structures.",
+      "keyConcept": "Scalp movement occurs between aponeurosis and pericranium - the loose areolar 'dangerous' layer.",
+      "options": [
+        "Skin & epicranial aponeurosis",
+        "Epicranial aponeurosis & pericranium.",
+        "Skin & subcutaneous fat",
+        "Pericranium & skull",
+        "Connective tissue layer & aponeurosis."
+      ],
+      "correctIndex": 1,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q500",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "The scalp is:",
+      "explanation": "The scalp is: 5 layers (SCALP), highly vascular, innervated by multiple nerves, and the danger lies in the loose areolar layer connecting to intracranial sinuses.选项C正确. The answer is C. Infection can spread to meninges via this layer.",
+      "keyConcept": "Scalp has 5 layers - loose areolar tissue is the 'dangerous' layer connecting to intracranial venous sinuses.",
+      "options": [
+        "Supplied by the great auricular nerve in front of the auricle.",
+        "Supplied by the supratrochlear and supraorbital arteries branches of the facial artery.",
+        "Supplied posteriorly by the greater occipital nerve from the ventral ramus of C2.",
+        "Supplied behind the auricle by the lesser occipital nerve from the ventral ramus of C2.",
+        "Drained by supratrochlear and supraorbital veins, which unite to form the superior ophthalmic vein."
+      ],
+      "correctIndex": 3,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q503",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "In which of the following layers of the scalp does infection tend to spread:",
+      "explanation": "Infection tends to spread in the loose areolar connective tissue layer (layer 4) of the scalp - the 'dangerous' layer communicating with intracranial spaces.选项D正确. The answer is D. This layer lacks barriers, allowing spread.",
+      "keyConcept": "Loose areolar layer (layer 4) is the dangerous zone - infections spread easily to intracranial structures.",
+      "options": [
+        "Skin.",
+        "Connective tissue layer.",
+        "Aponeurotic layer",
+        "Loose areolar tissue layer.",
+        "Periosteal layer."
+      ],
+      "correctIndex": 3,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q506",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Regarding Scalp, all are true Except:",
+      "explanation": "Regarding scalp: 5 layers, vessels in connective tissue layer, infection spreads in loose areolar layer.选项C正确. The answer is C. The danger lies in layer 4 (loose areolar) connecting to intracranial venous sinuses.",
+      "keyConcept": "Scalp has 5 layers (SCALP) - dangerous layer is loose areolar tissue connecting to intracranial venous sinuses.",
+      "options": [
+        "Its wounds bleed profusely.",
+        "Its wounds gape if the aponeurosis is cut.",
+        "It has no sebaceous glands.",
+        "Its veins communicate with the intracranial venous sinuses.",
+        "It contains a muscle of facial expression."
+      ],
+      "correctIndex": 2,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q582",
+      "type": "essay",
+      "lecture": 1,
+      "text": "What are the 4 structures that wind around the cerebral peduncle?",
+      "explanation": "Four structures wind around the cerebral peduncle: optic tract (lateral), trochlear nerve (lateral, emerges dorsally), posterior cerebral artery (lateral), and basal vein (dorsal). The cerebral peduncle is the ventral part of the midbrain.",
+      "keyConcept": "Structures around cerebral peduncle: optic tract, trochlear nerve, PCA, basal vein.",
+      "modelAnswer": "Optic tract (wraps around the posterolateral aspect), trochlear nerve (CN IV - emerges just below the inferior colliculus and winds around the peduncle), posterior cerebral artery (on the superior surface), and basal vein (dorsal aspect).",
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q636",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Mention the branches of the vagal nerve from the superior vagal ganglion.",
+      "explanation": "The vagal nerve (CN X) exits the skull via the jugular foramen. Its superior (jugular) ganglion gives off only meningeal and auricular branches before the nerve continues inferiorly as the cervical vagus.",
+      "keyConcept": "Vagal nerve ganglia and extracranial branches",
+      "modelAnswer": "Meningeal nerve and Auricular nerve",
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q647",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Mention the derivatives of neural crest.",
+      "explanation": "Neural crest cells migrate to form sensory ganglia (neuroblasts), autonomic ganglia, melanocytes, chromaffin cells, Schwann cells, meninges (pia and arachnoid), odontoblasts, and skeletal elements of branchial arches.",
+      "keyConcept": "Neural crest cell derivatives and migration",
+      "modelAnswer": "Neuroblast, Spongioblast, Melanocyte, Chromaffin cells, Odontoblasts and cartilaginous elements of the branchial arches",
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q725",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "The deep facial vein connects which two venous structures?",
+      "explanation": "The deep facial vein connects the pterygoid plexus with the facial vein (anteriorly). It passes through the buccinator muscle and provides a pathway for infection spread between facial and intracranial structures.",
+      "keyConcept": "Deep facial vein links pterygoid plexus to facial vein for venous communications.",
+      "options": [
+        "Anterior facial vein and pterygoid venous plexus",
+        "Angular vein and cavernous sinus",
+        "Maxillary vein and retromandibular vein",
+        "External jugular vein and internal jugular vein",
+        "Inferior ophthalmic vein and cavernous sinus"
+      ],
+      "correctIndex": 0,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q787",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "All the following is single tract except:",
+      "explanation": "The tectospinal tract is a single midline tract (decussates in the midbrain); the other tracts (rubro-spinal, olivo-spinal) are also single but have bilateral components.",
+      "keyConcept": "Single vs paired tracts",
+      "options": [
+        "sulco-marginal tract",
+        "tecto-spinal tract",
+        "rubro-spinal tract",
+        "olivo-spinal tract"
+      ],
+      "correctIndex": 0,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q860",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The median part of the upper lip (philtrum) is derived embryologically from the:",
+      "explanation": "The intermaxillary segment (from medial nasal prominences) forms the philtrum of the upper lip, the primary palate, and the four incisor teeth.",
+      "keyConcept": "Philtrum embryology",
+      "options": [
+        "Frontal prominence",
+        "Intermaxillary segment",
+        "Lateral nasal prominence",
+        "Mandibular prominence",
+        "Maxillary prominence"
+      ],
+      "correctIndex": 1,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q912",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Why is loose connective tissue the dangerous layer?",
+      "explanation": "The loose areolar tissue (dangerous layer) contains valveless emissary veins connecting scalp veins to intracranial venous sinuses, allowing infection spread.",
+      "keyConcept": "Dangerous layer of scalp",
+      "modelAnswer": "Because its emissary veins can spread infection from scalp to cranial cavity.",
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q923",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Muscles of facial expression develop from:",
+      "explanation": "Muscles of facial expression develop from the second pharyngeal arch (hyoid arch), innervated by CN VII (facial nerve).",
+      "keyConcept": "Facial muscle embryology",
+      "modelAnswer": "Second pharyngeal arch mesoderm.",
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q993",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Nerve at crossing of tentorium margins:",
+      "explanation": "The trochlear nerve (CN IV) is unique as the only cranial nerve to exit posteriorly from the dorsal midbrain, crossing at the superior medullary velum at the tentorium margin level.",
+      "keyConcept": "Trochlear nerve exits posteriorly at tentorium crossing level.",
+      "modelAnswer": "The trochlear nerve (CN IV) is the smallest cranial nerve and exits the brainstem at the dorsal surface of the midbrain, just below the inferior colliculus. It wraps around the cerebral peduncle and runs in the lateral wall of the cavernous sinus, anterior to CN III at the tentorial edge.",
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q995",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Branches of cerebral part of ICA:",
+      "explanation": "The cerebral part of the internal carotid artery gives five branches: ophthalmic, posterior communicating, anterior choroidal, anterior cerebral, and middle cerebral arteries, supplying the orbit, diencephalon, and cerebral hemispheres.",
+      "keyConcept": "ICA cerebral branches: ophthalmic, posterior communicating, anterior choroidal, ACA, MCA.",
+      "modelAnswer": "Ophthalmic, posterior communicating, anterior choroidal, anterior and middle cerebral.",
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1078",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The adult derivatives of the telencephalon are:",
+      "explanation": "The telencephalon develops into the cerebral hemispheres including the basal ganglia, hippocampus, and lateral ventricles, while thalamus, hypothalamus, and midbrain derive from diencephalon and mesencephalon.",
+      "keyConcept": "Telencephalon: cerebral hemispheres.",
+      "options": [
+        "Cerebral hemispheres.",
+        "Thalamus.",
+        "Hypothalamus.",
+        "Midbrain."
+      ],
+      "correctIndex": 0,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1101",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which of the following diploic veins drains extracranially?",
+      "explanation": "The frontal diploic vein drains through the supraorbital notch to the supraorbital vein and eventually the angular vein, providing extracranial drainage.",
+      "keyConcept": "Frontal diploic vein drains extracranially via supraorbital vein.",
+      "options": [
+        "Frontal.",
+        "Anterior temporal.",
+        "Posterior temporal.",
+        "Occipital."
+      ],
+      "correctIndex": 0,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q104",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The optic nerve is a derivative of the:",
+      "explanation": "The optic nerve develops as an outpouching of the diencephalon (forerain), making it technically a CNS tract rather than a true peripheral nerve, with myelin provided by oligodendrocytes.",
+      "keyConcept": "Optic nerve is a diencephalon derivative, not true peripheral nerve.",
+      "options": [
+        "Neural crest",
+        "Diencephalon (outpouching of the forebrain)",
+        "Mesencephalon",
+        "Neural tube"
+      ],
+      "correctIndex": 1,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q14",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "As regards the internal structure of the midbrain, choose the CORRECT matching:",
+      "explanation": "The nucleus ambiguus is the special visceral efferent (branchiomotor) nucleus for cranial nerves IX, X, and XI. It supplies stylopharyngeus (IX), pharynx/larynx muscles (X), and sternocleidomastoid/trapezius (XI).",
+      "keyConcept": "Nucleus ambiguus - common motor for IX, X, XI",
+      "options": [
+        "Parieto-pontine fibers - medial 1/5 of crus cerebri.",
+        "Sustantia nigra - between tegmentum & tectum.",
+        "Ventral tegmental Decussation - tegmentum at level of inferior colliculus.",
+        "Cortico-spinal tract - lateral 1/5 of crus cerebri.",
+        "Cortico-nuclear tract - middle 3/5 of crus cerebri."
+      ],
+      "correctIndex": 3,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q16",
+      "type": "matching",
+      "lecture": 1,
+      "text": "For each structure in left column, choose its appropriate place in midbrain from right column:",
+      "explanation": "The somatic efferent column includes: oculomotor nucleus (III), trochlear nucleus (IV), abducent nucleus (VI), and hypoglossal nucleus (XII). These nuclei supply muscles derived from somites.",
+      "keyConcept": "CN III, IV, VI, XII are somatic efferent nuclei",
+      "pairs": [
+        {
+          "premise": "64) IV cranial nerve nucleus.",
+          "target": "c. Tegmentum."
+        },
+        {
+          "premise": "65) Superior colliculus.",
+          "target": "b. Tectum."
+        },
+        {
+          "premise": "66) Corticonuclear fibers.",
+          "target": "a. Crus cerebri."
+        },
+        {
+          "premise": "67) Red nucleus.",
+          "target": "c. Tegmentum."
+        },
+        {
+          "premise": "68) Occipitopontine fibers.",
+          "target": "a. Crus cerebri."
+        },
+        {
+          "premise": "69) Reticular formation.",
+          "target": "c. Tegmentum."
+        },
+        {
+          "premise": "70) Substantia nigra.",
+          "target": "d. Area between crus cerebri & tegmentum."
+        }
+      ],
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q63",
+      "type": "mcq",
+      "lecture": 3,
+      "text": "Decussation at the level of the superior midbrain occurs in which of the following tracts?",
+      "explanation": "The trochlear nerve (CN IV) is unique in that it exits the midbrain dorsally and decussates completely before emerging. The oculomotor nerve exits ventrally. Other cranial nerves exit at pontine or medullary levels.",
+      "keyConcept": "CN IV is the only cranial nerve that decussates and exits dorsally from the midbrain.",
+      "options": [
+        "Rubrospinal tract",
+        "Vestibulospinal tract",
+        "Reticulospinal tract",
+        "Corticospinal tract",
+        "Cuneate tract"
+      ],
+      "correctIndex": 4,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q69",
+      "type": "mcq",
+      "lecture": 4,
+      "text": "Which of the following nuclei, located in the midbrain, contains general visceral efferent (GVE) fibers?",
+      "explanation": "The Edinger-Westphal nucleus (accessory oculomotor nucleus) is located in the midbrain and contains preganglionic parasympathetic neurons that supply the ciliary and sphincter pupillae muscles.",
+      "keyConcept": "Edinger-Westphal nucleus provides parasympathetic innervation to intraocular muscles.",
+      "options": [
+        "Dorsal motor nucleus of vagus",
+        "Edinger-Westphal nucleus",
+        "Nucleus ambiguus",
+        "Inferior salivatory nucleus",
+        "Superior salivatory nucleus"
+      ],
+      "correctIndex": 1,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q70",
+      "type": "mcq",
+      "lecture": 5,
+      "text": "Which of the following arteries supplies the midbrain?",
+      "explanation": "The midbrain is supplied by the posterior cerebral artery (PCA) and its branches, including the posterior communicating artery. The basilar artery supplies the upper midbrain through its superior cerebellar artery branch.",
+      "keyConcept": "PCA and basilar artery branches supply the midbrain via posterior circulation.",
+      "options": [
+        "Basilar artery",
+        "Posterior spinal artery",
+        "Posterior inferior cerebellar artery",
+        "Superior cerebellar artery",
+        "Anterior cerebral artery"
+      ],
+      "correctIndex": 3,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q85",
+      "type": "essay",
+      "lecture": 1,
+      "text": "External features of back of midbrain:",
+      "explanation": "The posterior midbrain displays four colliculi: two superior colliculi (involved in visual reflexes) and two inferior colliculi (involved in auditory reflexes), collectively forming the tectal plate or quadrigeminal plate.",
+      "keyConcept": "Posterior midbrain: two superior and two inferior colliculi.",
+      "modelAnswer": "2 superior and 2 inferior colliculi.",
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q89",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Arteries supplying midbrain:",
+      "explanation": "The midbrain receives blood from branches of the posterior cerebral artery (supplying the anterior and lateral regions) and branches of the superior cerebellar artery (supplying the posterior region).",
+      "keyConcept": "Midbrain supplied by posterior cerebral and superior cerebellar arteries.",
+      "modelAnswer": "Branches of posterior cerebral and superior cerebellar.",
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q30",
+      "type": "case",
+      "lecture": 1,
+      "text": "A six-year old boy suffers from inability to control his micturition at night. On doing an X-ray, it showed a defect in the lower vertebral laminae with bulging meninges.",
+      "explanation": "The X-ray finding of a defect in the lower vertebral laminae with bulging meninges indicates spina bifida cystica (meningocoele). This results from failure of fusion of the dorsal portions of the vertebrae, leaving a midline defect through which meninges (and potentially spinal cord) protrude. The inability to control micturition suggests involvement of the cauda equina.",
+      "keyConcept": "Defect in vertebral laminae with bulging meninges = spina bifida cystica (meningocoele); from failure of posterior neural arch fusion.",
+      "subQuestions": [
+        {
+          "id": "mcns2-ch8-anatomy-q30-sq1",
+          "type": "essay",
+          "text": "TYPE: essay What is the name of this condition?",
+          "explanation": "The X-ray finding of a defect in the lower vertebral laminae with bulging meninges indicates spina bifida cystica (meningocoele). This results from failure of fusion of the dorsal portions of the vertebrae, leaving a midline defect through which meninges (and potentially spinal cord) protrude. The inability to control micturition suggests involvement of the cauda equina.",
+          "keyConcept": "Defect in vertebral laminae with bulging meninges = spina bifida cystica (meningocoele); from failure of posterior neural arch fusion.",
+          "modelAnswer": "Spina bifida cystica (meningocoele)."
+        },
+        {
+          "id": "mcns2-ch8-anatomy-q30-sq2",
+          "type": "essay",
+          "text": "TYPE: essay Explain it embryologically.",
+          "explanation": "The X-ray finding of a defect in the lower vertebral laminae with bulging meninges indicates spina bifida cystica (meningocoele). This results from failure of fusion of the dorsal portions of the vertebrae, leaving a midline defect through which meninges (and potentially spinal cord) protrude. The inability to control micturition suggests involvement of the cauda equina.",
+          "keyConcept": "Defect in vertebral laminae with bulging meninges = spina bifida cystica (meningocoele); from failure of posterior neural arch fusion.",
+          "modelAnswer": "It is due to the failure of the fusion of the dorsal portions of the vertebrae leaving a midline defect."
+        }
+      ],
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q51",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Concerning the lateral ventricle, choose one correct answer:",
+      "explanation": "The lateral ventricle is the only cavity in the telencephalon, with anterior horn in frontal lobe, body in parietal, and posterior/temporal horns in temporal lobe.",
+      "keyConcept": "Lateral ventricle structure",
+      "options": [
+        "Its anterior horn lies in the parietal lobe.",
+        "Its posterior horn lies in the temporal lobe.",
+        "Is the only cavity in the telencephalon.",
+        "Has no choroid plexus."
+      ],
+      "correctIndex": 2,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch9-anatomy-q12",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "As regards intracranial part of internal carotid artery, choose the INCORRECT statement:",
+      "explanation": "The intracranial internal carotid artery has four parts: cervical, petrous, cavernous, and cerebral. The petrous part enters through the carotid canal and supplies the middle ear. The cavernous part lies medial to the abducent nerve. The cerebral part gives ophthalmic artery. However, the internal carotid does NOT end opposite the posterior perforated substance; the posterior perforated substance is related to the posterior cerebral artery, not the ICA terminal bifurcation.",
+      "keyConcept": "Internal carotid artery ends by bifurcating into anterior and middle cerebral arteries, not opposite posterior perforated substance.",
+      "options": [
+        "Its petreous part enters skull through carotid canal.",
+        "Its cavernous part lies medial to abducent nerve.",
+        "It ends opposite posterior perforated substance.",
+        "Its petreous part supplies middle ear.",
+        "Its cerebral part gives ophthalmic artery."
+      ],
+      "correctIndex": 2,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch9-anatomy-q39",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Venous drainage of dura:",
+      "explanation": "Dural venous drainage occurs via meningeal veins (accompanying meningeal arteries) and diploic veins (within skull bones), which connect to both intracranial venous sinuses and external scalp veins.",
+      "keyConcept": "Dura drains via meningeal veins and diploic veins.",
+      "modelAnswer": "Meningeal veins and diploic veins.",
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch10-anatomy-q7",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "A 25-year-old patient sustains a head injury during a bicycle accident. On examination, there is a palpable swelling on the scalp that appears to be filled with blood. The hematoma is located between the periosteum and the galea aponeurotica. Which specific type of scalp hematoma is this most likely indicative of?",
+      "explanation": "A hematoma between the periosteum and the galea aponeurotica is called a SUBGALEAL hematoma. The galea aponeurotica (epicranial aponeurosis) connects the frontalis and occipitalis muscles. A subperiosteal hematoma would be between periosteum and bone; subcutaneous hematoma is between skin and galea. Epidural and subdural hematomas are intracranial, not in the scalp layers.",
+      "keyConcept": "Subgaleal hematoma = between periosteum and galea aponeurotica; 'boxer's hematoma' in scalp trauma.",
+      "options": [
+        "Epidural hematoma",
+        "Subdural hematoma",
+        "Subperiosteal hematoma",
+        "Subcutaneous hematoma",
+        "Subgaleal hematoma"
+      ],
+      "correctIndex": 4,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch10-anatomy-q38",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which of the following is true about the intracranial hemorrhage?",
+      "explanation": "Subdural hemorrhage crosses suture lines because it's venous bleeding with low pressure that accumulates slowly, unlike arterial extradural bleeding which is confined by suture attachments.",
+      "keyConcept": "Subdural bleeding crosses suture lines (venous).",
+      "options": [
+        "Extradural bleeding means bleeding between dura and arachnoid maters.",
+        "Extradural bleeding is commonly venous in origin.",
+        "Subdural bleeding is commonly arterial in origin.",
+        "Subdural bleeding crosses the suture line."
+      ],
+      "correctIndex": 3,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q412",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Alar plates form:",
+      "explanation": "The alar plates are the dorsal sensory horns of the spinal cord that develop from the alar (sensory) region of the neural tube. They form the dorsal (posterior) horns which receive sensory (afferent) fibers from the dorsal root ganglia. The basal plates form the ventral horns (motor).",
+      "keyConcept": "Alar plates form the DORSAL HORNS of spinal cord (sensory); basal plates form VENTRAL horns (motor).",
+      "options": [
+        "Lateral horns.",
+        "Dorsal horns.",
+        "Ventral horns.",
+        "All of the above.",
+        "None of the above."
+      ],
+      "correctIndex": 1,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q413",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Basal plates form:",
+      "explanation": "Basal plates are the anterior (ventral) portions of the alar and basal plates in the developing neural tube. The basal plate gives rise to motor neurons that form the VENTRAL (anterior) horns of the spinal cord, which contain lower motor neurons. The alar plates form the dorsal (posterior) horns. Lateral horns appear only at T1-L2 levels (sympathetic neurons).",
+      "keyConcept": "Basal plates form VENTRAL HORNS of spinal cord (motor neurons); alar plates form dorsal horns (sensory neurons).",
+      "options": [
+        "Ventral horns.",
+        "Dorsal horns.",
+        "Lateral horns.",
+        "All of the above.",
+        "None of the above."
+      ],
+      "correctIndex": 0,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q879",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The endogenous analgesia system includes which brain region?",
+      "explanation": "The periaqueductal grey (PAG) in the midbrain contains endogenous opioid neurons that activate descending pain inhibition pathways.",
+      "keyConcept": "Endogenous analgesia",
+      "options": [
+        "Primary somatosensory cortex",
+        "Raphe magnus nucleus",
+        "Dorsal root ganglion",
+        "Periaqueductal grey",
+        "Supraoptic nucleus"
+      ],
+      "correctIndex": 3,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1061",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The sensory (dorsal) part of the spinal cord develops from the:",
+      "explanation": "The alar plate forms sensory (dorsal) grey matter.",
+      "keyConcept": "Sensory dorsal horn develops from alar lamina of neural tube.",
+      "options": [
+        "Basal lamina (plate)",
+        "Floor plate",
+        "Roof plate",
+        "Notochord",
+        "Alar lamina (plate)"
+      ],
+      "correctIndex": 4,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q21",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Describe dorsal surface of midbrain.",
+      "explanation": "The dorsal surface of the midbrain (tectum) shows the quadrigeminal plate (corpora quadrigemina): (1) SUPERIOR COLLICULI - visual reflexes (paired); (2) INFERIOR COLLICULI - auditory pathway. Below the inferior colliculi are the superior cerebellar peduncles. The trochlear nerve (CN IV) is the only cranial nerve to exit dorsally, emerging between the two inferior colliculi.",
+      "keyConcept": "Dorsal midbrain: quadrigeminal plate (superior and inferior colliculi); CN IV exits dorsally",
+      "modelAnswer": "Dorsal surface of midbrain (tectum/quadrigeminal plate):\n- 2 SUPERIOR COLLICULI: involved in visual reflexes\n- 2 INFERIOR COLLICULI: involved in auditory reflexes\n- TROCHLEAR NERVE (CN IV): only cranial nerve to exit posteriorly, emerges between inferior colliculi after decussating in superior medullary velum\n- Superior medullary velum: contains decussating fibers of CN IV",
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q35",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Sections In lower level of pons show.",
+      "explanation": "Sections at the lower level of pons show the MIDDLE cerebellar peduncle (the largest cerebellar peduncle, connecting pons to cerebellum). The superior cerebellar peduncle is more superior. The mesencephalic nucleus of V is in the midbrain. Medial and inferior vestibular nuclei are in the upper medulla.",
+      "keyConcept": "Lower pons: middle cerebellar peduncle. Midbrain: superior cerebellar peduncle. Medulla: inferior cerebellar peduncle.",
+      "options": [
+        "Middle cerebellar peduncle:",
+        "Superior cerebellar peduncle",
+        "Mesencephalic nucleus of v",
+        "Medial & Inferior vestibular nuclei"
+      ],
+      "correctIndex": 0,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch5-anatomy-q26",
+      "type": "mcq",
+      "lecture": 6,
+      "text": "Which tract passes through the superior cerebellar peduncle?",
+      "explanation": "The superior cerebellar peduncle contains primarily efferent fibers from the dentate nucleus to the contralateral red nucleus and thalamus (dentatorubrothalamic pathway), carrying cerebellar output.",
+      "keyConcept": "Superior cerebellar peduncle is the major output pathway from cerebellum to forebrain.",
+      "options": [
+        "Anterior spinocerebellar tract",
+        "Dorsal spinocerebellar tract",
+        "Gracile tract",
+        "Cuneate tract",
+        "Spino-olivary tract"
+      ],
+      "correctIndex": 0,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch7-anatomy-q30",
+      "type": "mcq",
+      "lecture": 3,
+      "text": "Which extrapyramidal tract helps adjust the head and neck in response to visual and cutaneous stimuli?",
+      "explanation": "The tectospinal tract originates from the superior colliculus and carries reflexes related to head and neck movement in response to visual stimuli, decussating at the midbrain.",
+      "keyConcept": "Tectospinal tract mediates reflex head movements toward visual stimuli, crossing at midbrain level.",
+      "options": [
+        "Tectospinal",
+        "Rubrospinal",
+        "Reticulospinal",
+        "Vestibulospinal",
+        "Corticospinal"
+      ],
+      "correctIndex": 0,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q130",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Describe corticonuclear (corticobulbar) tract.",
+      "explanation": "The corticonuclear (corticobulbar) tract: ORIGIN from precentral/postcentral gyri and frontal eye fields; COURSE through posterior limb of internal capsule, basis pedunculi of midbrain, basis pontis, medullary pyramids; TERMINATION on motor nuclei of cranial nerves (III, IV, V, VI, VII, IX, X, XI, XII). Most CN nuclei receive BILATERAL input except the lower facial nucleus (mainly contralateral) and trochlear nucleus.",
+      "keyConcept": "Corticobulbar tract: mostly bilateral cortical input to cranial nerve nuclei (except lower face)",
+      "modelAnswer": "Corticobulbar (corticomotor) tract: (ORIGIN) Precentral and postcentral gyri, frontal eye fields; (COURSE) Descends through posterior limb of internal capsule, basis pedunculi of midbrain, basis pontis, medullary pyramids; (TERMINATION) On motor nuclei of cranial nerves (CN III, IV, V, VI, VII, IX, X, XI, XII); (CONNECTIONS) Most CN nuclei receive BILATERAL input (except lower facial nucleus - mainly contralateral, and trochlear nucleus).",
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q156",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Hind brain (Rhombencephalon) includes all the following EXCEPT:",
+      "explanation": "The hindbrain (rhombencephalon) includes the medulla oblongata, pons, and cerebellum. The crus cerebri is part of the midbrain (not hindbrain), containing corticospinal and corticobulbar fibers.",
+      "keyConcept": "Crus cerebri is midbrain, not hindbrain",
+      "options": [
+        "Medulla oblongata.",
+        "Cerebellum.",
+        "Pons.",
+        "Crus cerebri.",
+        "Fourth ventricle."
+      ],
+      "correctIndex": 3,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q173",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Basis pontis contains all the following structures EXCEPT:",
+      "explanation": "The mesencephalic nucleus of the trigeminal nerve receives proprioceptive afferents from muscles of mastication and extraocular muscles. It is unique as a nucleus containing primary sensory neuron cell bodies (neural crest derived).",
+      "keyConcept": "Mesencephalic nucleus receives mastication proprioception",
+      "options": [
+        "Corticospinal fibers.",
+        "Pontine nuclei.",
+        "Corticonuclear fibers.",
+        "Reticular formation.",
+        "Transverse pontine fibers."
+      ],
+      "correctIndex": 3,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q178",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The nucleus ambiguus does not supply the following muscle(s):",
+      "explanation": "The hypoglossal nucleus is the only somatic efferent nucleus in the brainstem that supplies muscles of somite origin. Other somatic efferent nuclei (III, IV, VI) are in the midbrain/pons.",
+      "keyConcept": "Hypoglossal nucleus is SE column in medulla",
+      "options": [
+        "Laryngeal muscles.",
+        "Stylopharyngeus.",
+        "Pharyngeal constrictors.",
+        "Palatoglossus.",
+        "Tensor palati."
+      ],
+      "correctIndex": 4,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q191",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Describe boundaries & contents of interpeduncular fossa.",
+      "explanation": "The interpeduncular fossa is bounded: ANTERIORLY by the optic chiasma; LATERALLY by the cerebral peduncles; POSTERIORLY by the mammillary bodies; INFERIORLY by the pons. CONTENTS: (1) Posterior perforated substance (contains central artery of midbrain); (2) Basilar artery bifurcation; (3) Mamillary bodies form the posterior boundary. It is a clinically important space for aneurysms and tumors.",
+      "keyConcept": "Interpeduncular fossa: bounded by optic chiasma anteriorly, cerebral peduncles laterally, mammillary bodies posteriorly",
+      "modelAnswer": "SENSORY DECUSSATION: (LOCATION) Caudal medulla; (PROCESS) Second-order neurons from gracile and cuneate nuclei send fibers that become internal arcuate fibers and cross in the medulla; (RESULT) Forms the medial lemniscus which ascends to the contralateral thalamus; (IMPORTANCE) Explains why dorsal column lesions cause ipsilateral sensory loss.",
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q192",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Give an account on different lemnisci (beginning, termination & function).",
+      "explanation": "There are four major lemnisci in the brainstem: (1) MEDIAL LEMNISCUS - from dorsal column nuclei (gracile/cuneate) through medulla, pons, midbrain to VPL thalamus; carries conscious proprioception and fine touch; (2) SPINAL LEMNISCUS - from spinothalamic tracts to VPL; carries pain and temperature; (3) TRIGEMINAL LEMNISCUS - from trigeminal sensory nuclei to VPM; carries face sensation; (4) LATERAL LEMNISCUS - from cochlear nuclei to inferior colliculus; carries auditory information.",
+      "keyConcept": "Four lemnisci: medial (proprioception/touch), spinal (pain/temperature), trigeminal (face sensation), lateral (hearing)",
+      "modelAnswer": "NUCLEI OF VAGUS NERVE: (1) DORSAL MOTOR NUCLEUS (GVE) - parasympathetic to thoracic and abdominal viscera; (2) NUCLEUS AMBIGUUS (SVE) - motor to pharynx and larynx (via pharyngeal branch and recurrent laryngeal nerve); (3) NUCLEUS SOLITARIUS (SVA/GVA) - taste from epiglottis and general visceral sensation; (4) SPINAL NUCLEUS OF V (GSA) - sensory from larynx.",
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q414",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Neural crest gives all the following Except:",
+      "explanation": "The red nucleus is a motor relay center in the midbrain that develops from the NEUROEPITHELIUM of the midbrain, NOT from neural crest. Neural crest derivatives include spinal ganglia (sensory), arachnoid mater, suprarenal medulla (chromaffin cells), and sympathetic ganglia. This makes B the exception.",
+      "keyConcept": "Red nucleus from midbrain neuroepithelium, NOT neural crest. Neural crest gives: spinal ganglia, arachnoid, adrenal medulla, sympathetic ganglia.",
+      "options": [
+        "Spinal ganglia.",
+        "Red nucleus.",
+        "Arachnoid mater.",
+        "Suprarenal medulla.",
+        "Sympathetic ganglia."
+      ],
+      "correctIndex": 1,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q459",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "A 50-year-old man presents with a deep laceration to the side of the scalp in front of the ear, following a bicycle accident. Profuse bleeding is noted from the wound. Which artery is most likely the source of this bleeding?",
+      "explanation": "The superficial temporal artery (branch of external carotid) runs in front of the ear and supplies the lateral scalp. It is the most likely source of profuse bleeding from a laceration in front of the ear. The middle meningeal artery is intracranial; the vertebral artery enters the foramen magnum; the facial artery supplies the face.",
+      "keyConcept": "Superficial temporal artery supplies lateral scalp and is the source of bleeding from wounds in front of the ear.",
+      "options": [
+        "Facial artery",
+        "Occipital artery",
+        "Middle meningeal artery",
+        "Superficial temporal artery",
+        "Vertebral artery"
+      ],
+      "correctIndex": 3,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q537",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The specific feature of upper mid brain is presence of:",
+      "explanation": "The SUPERIOR cerebellar peduncle DECUSSATION is specific to the upper midbrain - it carries cerebellar output to the thalamus. The crus cerebri and substantia nigra are present throughout the midbrain. Red nucleus is present in the upper midbrain but its decussation is not unique to upper level.",
+      "keyConcept": "Upper midbrain specific feature: decussation of superior cerebellar peduncles (dentatothalamic fibers).",
+      "options": [
+        "Crus cerebri",
+        "Substantia nigra",
+        "Red nucleus",
+        "Superior cerebellar peduncle decussation"
+      ],
+      "correctIndex": 3,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q538",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Central tegmental tract contains fibers connect between:",
+      "explanation": "The central tegmental tract connects the red nucleus (midbrain) to the inferior olivary nucleus (medulla). It carries rubroreticular and reticuloolivary fibers. This pathway is important for motor learning and coordination.",
+      "keyConcept": "Central tegmental tract: red nucleus ↔ inferior olivary nucleus (olivocerebellar pathway).",
+      "options": [
+        "Red nucleus & olivary nucleus",
+        "Superior colliculus & Inferior Colliculus",
+        "Red nucleus & pontine nucleus",
+        "Olivary nucleus & pontine nucleus"
+      ],
+      "correctIndex": 0,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q540",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Dorsal tegmental decussation:",
+      "explanation": "The dorsal tegmental decussation is formed by the TECTOSPINAL tract, which crosses at the level of the inferior colliculus in the midbrain. It descends to control neck muscles in response to visual stimuli. It is not the rubrospinal tract and does not descend in all spinal segments.",
+      "keyConcept": "Dorsal tegmental decussation: tectospinal tract crosses at inferior colliculus level, controls neck muscles.",
+      "options": [
+        "Formed of rubrospinal tract",
+        "Its fibers descend in all segments of spinal cord.",
+        "Present in inferior level of midbrain.",
+        "Formed by tectospinal tract."
+      ],
+      "correctIndex": 2,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q646",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Mention the 5 secondary brain vesicles and their derivatives in adult brain.",
+      "explanation": "The five secondary brain vesicles and their adult derivatives are: telencephalon (cerebral hemispheres), diencephalon (thalamus, hypothalamus, epithalamus, subthalamus), mesencephalon (midbrain), metencephalon (pons and cerebellum), and myelencephalon (medulla oblongata).",
+      "keyConcept": "Secondary brain vesicle derivatives",
+      "modelAnswer": "Telencephalon: Cerebral hemisphere\nDiencephalon: Thalamus, hypothalamus, epithalamus, subthalamus\nMesencephalon: Midbrain\nMetencephalon: Pons\nMyelencephalon: Medulla",
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q713",
+      "type": "mcq",
+      "lecture": 5,
+      "text": "Which anatomical structure serves as the primary pathway for a facial infection to spread into the cranial cavity and cause cavernous sinus thrombosis?",
+      "explanation": "The pterygoid plexus of veins in the infratemporal fossa connects with the cavernous sinus via the emissary veins through the foramen ovale and foramen lacerum, providing a pathway for facial infection spread to meninges.",
+      "keyConcept": "Pterygoid plexus connects to cavernous sinus via emissary veins, enabling intracranial spread of facial infections.",
+      "options": [
+        "Superior ophthalmic vein",
+        "Facial artery",
+        "Maxillary vein",
+        "Pterygoid plexus",
+        "Retromandibular vein"
+      ],
+      "correctIndex": 3,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q789",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Tecto-spinal tract arise from:",
+      "explanation": "The tectospinal tract arises from the superior colliculus of the midbrain tectum and descends to control reflexive head and neck movements in response to visual stimuli.",
+      "keyConcept": "Tectospinal tract origin",
+      "options": [
+        "inferior olivary nucleus",
+        "superior colliculus of tectum in mid brain",
+        "red nucleus",
+        "medial longitudinal bundle"
+      ],
+      "correctIndex": 1,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q5",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which of the following cranial nerves is attached to the back of the brain stem?",
+      "explanation": "The trochlear nerve (CN IV) is unique as the only cranial nerve to attach to the posterior (dorsal) surface of the brain stem. It emerges from the posterior aspect of the midbrain, just below the inferior colliculus.",
+      "keyConcept": "Trochlear nerve is only CN from posterior brainstem",
+      "options": [
+        "Oculomotor nerve.",
+        "Trochlear nerve.",
+        "Maxillary nerve.",
+        "Abducent nerve.",
+        "Facial nerve."
+      ],
+      "correctIndex": 1,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q25",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Describe ventral surface of midbrain & cranial nerves attached to it.",
+      "explanation": "The ventral surface of the midbrain shows the cerebral peduncles (crura cerebri): two cylindrical masses separated by the interpeduncular fossa. CN III (oculomotor) emerges from the medial surface of each peduncle. The peduncles contain descending motor fibers. The midbrain connects the pons (below) to the diencephalon (above). The ventral midbrain is separated from the dorsal tectum by the cerebral aqueduct.",
+      "keyConcept": "Ventral midbrain: cerebral peduncles with CN III emerging medially; connects pons to diencephalon",
+      "modelAnswer": "PYRAMID AL DECUSSATION: (LOCATION) Caudal medulla; (PROCESS) About 85-90% of corticospinal fibers cross obliquely in the anterior median fissure; (RESULT) Crossed fibers form the lateral corticospinal tract in the lateral white column; uncrossed fibers remain as anterior corticospinal tract; (CLINICAL) Decussation explains contralateral motor control and UMN lesion signs.",
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q81",
+      "type": "mcq",
+      "lecture": 3,
+      "text": "A patient has a tumor in the fourth ventricle. Which cranial nerve nucleus is most likely affected due to its location?",
+      "explanation": "The abducens nucleus (CN VI) is located in the floor of the fourth ventricle, near the facial colliculus. A fourth ventricle tumor would most likely affect the abducens nerve, which has a long intracranial course.",
+      "keyConcept": "Abducens nucleus in the pons is vulnerable to fourth ventricle masses due to its dorsal location.",
+      "options": [
+        "Trigeminal nucleus",
+        "Facial nucleus",
+        "Abducent nucleus",
+        "Glossopharyngeal nucleus",
+        "Vagus nucleus"
+      ],
+      "correctIndex": 2,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q82",
+      "type": "mcq",
+      "lecture": 3,
+      "text": "Which cranial nerve emerges from the dorsal (back) aspect of the brainstem?",
+      "explanation": "The trochlear nerve (CN IV) is unique as it exits dorsally from the midbrain (just below the inferior colliculus) after decussating in the superior medullary velum. All other cranial nerves exit ventrally.",
+      "keyConcept": "CN IV is the only cranial nerve with dorsal exit from the midbrain after decussation.",
+      "options": [
+        "Oculomotor nerve",
+        "Facial nerve",
+        "Trigeminal nerve",
+        "Abducent nerve",
+        "Trochlear nerve"
+      ],
+      "correctIndex": 4,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q83",
+      "type": "mcq",
+      "lecture": 3,
+      "text": "Which cranial nerve nuclei are located in the pons?",
+      "explanation": "Pontine cranial nerve nuclei include: abducens (VI), facial (VII), vestibulocochlear (VIII), and the principal sensory nucleus of trigeminal (V). The oculomotor and trochlear nuclei are in the midbrain.",
+      "keyConcept": "CN V, VI, VII, VIII nuclei are located in the pons; III and IV are midbrain, IX, X, XI, XII are medullary.",
+      "options": [
+        "Trigeminal and Abducent",
+        "Facial and Oculomotor",
+        "Hypoglossal and Vagus",
+        "Olfactory and Optic",
+        "Spinal Accessory and Glossopharyngeal"
+      ],
+      "correctIndex": 0,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q90",
+      "type": "mcq",
+      "lecture": 4,
+      "text": "At which anatomical level does the oculomotor nerve emerge?",
+      "explanation": "The oculomotor nerve (CN III) emerges from the midbrain on the anterior surface between the cerebral peduncles, just posterior to the posterior clinoid process.",
+      "keyConcept": "CN III emerges from the midbrain between the cerebral peduncles on the anterior surface.",
+      "options": [
+        "At the level of the superior midbrain colliculus",
+        "At the level of the inferior olivary nucleus",
+        "At the level of the pons",
+        "At the level of the medullary pyramids",
+        "At the level of the cerebellar peduncles"
+      ],
+      "correctIndex": 0,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q97",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "One of the following cranial nerves is attached to the posterior aspect of the brain stem:",
+      "explanation": "The trochlear nerve (CN IV) is the only cranial nerve that emerges from the posterior aspect of the brainstem, specifically from the dorsal surface of the midbrain.",
+      "keyConcept": "Trochlear nerve origin",
+      "options": [
+        "Abducent nerve.",
+        "Vagus nerve.",
+        "Occulomotor nerve.",
+        "Trochlear nerve."
+      ],
+      "correctIndex": 3,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q5",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Brain stem includes all the following Except:",
+      "explanation": "The brain stem consists of midbrain, pons, and medulla oblongata. The cerebellum lies posterior to the brain stem and is not considered part of it, though it is connected by three peduncles.",
+      "keyConcept": "Cerebellum not part of brain stem",
+      "options": [
+        "Mid brain.",
+        "Pons.",
+        "Medulla oblongata.",
+        "Cerebellum.",
+        "Cerebral acquiduct."
+      ],
+      "correctIndex": 3,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q12",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which one of the following is an afferent connection to the inferior colliculus:",
+      "explanation": "This matching tests midbrain structures: cerebral aqueduct (around which the tectal plate curves); trochlear nucleus (inferior to oculomotor); superior cerebellar peduncle (lateral to red nucleus).",
+      "keyConcept": "Superior cerebellar peduncle decussates in midbrain",
+      "options": [
+        "Lateral lemniscus.",
+        "Spinal lemniscus.",
+        "Trigeminal lemniscus.",
+        "Medial lemniscus.",
+        "None of the above."
+      ],
+      "correctIndex": 0,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q26",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Describe parts of midbrain & enumerate structures within each part.",
+      "explanation": "The midbrain has three parts: (1) TECTUM (quadrigeminal plate) - dorsal, contains superior colliculus (visual reflexes) and inferior colliculus (auditory relay); (2) TEGMENTUM - between tectum and crus cerebri, contains crus cerebri, substantia nigra, red nucleus, RAPPORT decussation, medial lemniscus, and decussations of superior cerebellar peduncle and red nucleus; (3) CRUS CEREBRI (cerebral peduncle) - ventral, contains descending motor fibers (frontopontine most medial, corticospinal/corticobulbar middle, parieto/temporopontine most lateral).",
+      "keyConcept": "Midbrain parts: tectum (colliculi), tegmentum (red nucleus, substantia nigra), crus cerebri (descending fibers)",
+      "modelAnswer": "NUCLEI OF GSA COLUMN: (1) TRIGEMINAL NUCLEI (principal and spinal) - face, head; (2) COCHLEAR NUCLEI - hearing; (3) VESTIBULAR NUCLEI - balance; (4) SPINAL NUCLEUS OF V - general sensation from head and face. All receive general somatic afferent fibers from head and neck region.",
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q27",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Enumerate tegmental decussations of midbrain.",
+      "explanation": "Tegmental decussations of the midbrain include: (1) DECUSSATION OF SUPERIOR CEREBELLAR PEDUNCLE - dentate nucleus output to thalamus crosses in midbrain; (2) DECUSSATION OF RED NUCLEUS (rubrobulbar and rubospinal tracts) - crosses just below superior colliculus; (3) TROCHLEAR NERVE DECUSSATION - CN IV is unique as the only cranial nerve to exit dorsally and completely cross before emerging. These decussations are part of the extrapyramidal motor system.",
+      "keyConcept": "Tegmental decussations: superior cerebellar peduncle, red nucleus, and trochlear nerve (only dorsal-exiting CN)",
+      "modelAnswer": "MEDIAL MEDULLARY SYNDROME: (CAUSE) Occlusion of anterior spinal artery or vertebral artery; (SIGNS) IPSILATERAL: tongue paralysis (hypoglossal nerve); CONTRALATERAL: UMN paralysis of body (pyramidal tract), loss of proprioception and fine touch (medial lemniscus); (PRESERVED) Pain and temperature (spinothalamic intact), dorsal column for upper levels.",
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q33",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "A 44-year-old female patient has a lesion in the right cerebral peduncle in the midbrain. She would present with a loss of:",
+      "explanation": "The corticospinal tract decussates at the pyramidal decussation in the lower medulla. After decussation, the fibers descend in the lateral column of the spinal cord. A right cerebral peduncle lesion affects fibers that have NOT yet decussated, therefore causing CONTRALATERAL (left-sided) motor weakness. The corticospinal fibers to the lower limb are most medial in the peduncle.",
+      "keyConcept": "Cerebral peduncle contains corticospinal fibers BEFORE their decussation in the medulla; right peduncle lesion = LEFT-sided weakness.",
+      "options": [
+        "fine touch and pain sensation from the entire left side of the body",
+        "fine touch and pain sensation from the entire right side of the body",
+        "skeletal motor control to the entire right side of the body",
+        "skeletal motor control to both sides of the body",
+        "skeletal motor control to the entire left side of the body"
+      ],
+      "correctIndex": 4,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q37",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The superior colliculus of midbrain is formed of the following EXCEPT.",
+      "explanation": "The superior colliculus has 4 layers (stratum zonale, stratum cinereum, stratum opticum, stratum lemnisci), not 5. The stratum basilare (basal layer) is not a recognized layer of the superior colliculus. It is part of the visual reflex pathway.",
+      "keyConcept": "Superior colliculus layers (superficial to deep): zonale → cinereum → opticum → lemnisci. Not stratum basilare.",
+      "options": [
+        "Stratum basal",
+        "Stratum zonale",
+        "Stratum opticum",
+        "Stratum lemnisci",
+        "Stratum cinereum"
+      ],
+      "correctIndex": 0,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q40",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which of the following nuclei extend in the midbrain:",
+      "explanation": "The mesencephalic nucleus of the trigeminal nerve extends through the midbrain (alongside the central gray). It is the only sensory nucleus that contains primary afferent cell bodies. Vestibular nuclei are in the pons/medulla. Motor facial is pontine. Superior olive is pontine.",
+      "keyConcept": "Mesencephalic nucleus of V: only primary afferent neuron in CNS, extends through midbrain.",
+      "options": [
+        "Vestibular nuclei",
+        "Mesencephalic nuclei",
+        "Motor n of facial",
+        "Superior olive"
+      ],
+      "correctIndex": 1,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q47",
+      "type": "essay",
+      "lecture": 1,
+      "text": "What are the external features of the back of midbrain?",
+      "explanation": "The posterior surface of the midbrain shows the corpora quadrigemina - two superior colliculi (visual reflexes) and two inferior colliculi (auditory relay). These are separated by a cross-shaped sulcus. The cerebral peduncles are visible ventrally.",
+      "keyConcept": "Midbrain posterior features: 4 colliculi (2 superior, 2 inferior) - visual and auditory centers.",
+      "modelAnswer": "Four colliculi: two superior colliculi (visual reflexes - part of visual pathway, coordinates head/eye movements) and two inferior colliculi (auditory relay - part of lateral lemniscus pathway). They form the quadrigeminal plate separated by a cruciform sulcus.",
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q53",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Mention the arteries that supply the midbrain.",
+      "explanation": "The midbrain is supplied by branches from the posterior cerebral artery (main supply to the cerebral peduncles and colliculi) and the superior cerebellar artery (supplying the inferior colliculus and surrounding area).",
+      "keyConcept": "Midbrain: branches of posterior cerebral artery and superior cerebellar artery.",
+      "modelAnswer": "Branches of the posterior cerebral artery (supplies cerebral peduncles, red nucleus, substantia nigra, superior colliculus) and branches of the superior cerebellar artery (supplies inferior colliculus and adjacent midbrain).",
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q56",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Hind brain (Rhombencephalon) includes the following Except",
+      "explanation": "The hindbrain (rhombencephalon) includes medulla oblongata, pons, cerebellum, and fourth ventricle; the crus cerebri is part of the midbrain (mesencephalon), not hindbrain.",
+      "keyConcept": "Hindbrain components",
+      "options": [
+        "Medulla oblongata",
+        "Cerebellum",
+        "Pons",
+        "Crus cerebri",
+        "Fourth ventricle"
+      ],
+      "correctIndex": 3,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q57",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Brain stem includes the following Except",
+      "explanation": "The brain stem includes midbrain, pons, and medulla oblongata; the cerebellum and cerebral aqueduct are not part of the brain stem proper (cerebral aqueduct connects third and fourth ventricles).",
+      "keyConcept": "Brain stem structural components",
+      "options": [
+        "Mid brain",
+        "Pons",
+        "Medulla oblongata",
+        "Cerebellum",
+        "Cerebral aqueduct"
+      ],
+      "correctIndex": 4,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q62",
+      "type": "mcq",
+      "lecture": 3,
+      "text": "Head rotation in response to visual stimuli, with crossing at the level of the superior colliculus, is mediated by which tract?",
+      "explanation": "The tectospinal tract decussates at the superior medullary velum (rostral medulla), which is at the level of the midbrain-pons junction, not the midbrain itself.",
+      "keyConcept": "Tectospinal tract decussates at the level of the inferior colliculus/superior medullary velum.",
+      "options": [
+        "Rubrospinal tract",
+        "Vestibulospinal tract",
+        "Reticulospinal tract",
+        "Corticospinal tract",
+        "Tectospinal tract"
+      ],
+      "correctIndex": 4,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q65",
+      "type": "mcq",
+      "lecture": 4,
+      "text": "Which of the following is present in the dorsal surface of the midbrain?",
+      "explanation": "The corpora quadrigemina (superior and inferior colliculi) are on the dorsal midbrain surface. The basis pedunculi (cerebral peduncles) are on the ventral surface.",
+      "keyConcept": "Dorsal midbrain features include the four colliculi (corpora quadrigemina) for visual and auditory reflexes.",
+      "options": [
+        "Oculomotor nerve",
+        "Trochlear nerve",
+        "Facial colliculus",
+        "Inferior colliculus",
+        "Gracile colliculus"
+      ],
+      "correctIndex": 3,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q73",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Ascending sensory bundle in brain stem, end in diencephalon:",
+      "explanation": "The medial lemniscus is an ascending sensory bundle in the brainstem carrying fine touch and proprioception information, terminating in the VPL nucleus of thalamus.",
+      "keyConcept": "Medial lemniscus",
+      "options": [
+        "decussation",
+        "tract",
+        "lemniscus",
+        "fasciculus"
+      ],
+      "correctIndex": 2,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q78",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which structure is present at the level of the midbrain?",
+      "explanation": "The central tegmental tract (carrying pallidal and cerebellar projections) is present at midbrain level, running between red nucleus and inferior olivary nucleus.",
+      "keyConcept": "Midbrain structures",
+      "options": [
+        "Arcuate nucleus",
+        "Trapezoid body",
+        "Vestibular nucleus",
+        "Central tegmental tract",
+        "Arcuate fibres"
+      ],
+      "correctIndex": 3,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q81",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "A patient with a lesion in the right cerebral peduncle (midbrain) would present with:",
+      "explanation": "Right cerebral peduncle lesion causes left-sided motor weakness (contralateral) because corticospinal fibers have already crossed at the pyramidal decussation.",
+      "keyConcept": "Cerebral peduncle lesion",
+      "options": [
+        "Loss of fine touch on the left side of the body",
+        "Loss of pain sensation on the right side",
+        "Skeletal motor loss on the entire left side",
+        "Bilateral motor loss",
+        "Sensory loss only"
+      ],
+      "correctIndex": 2,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch7-anatomy-q13",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Describe lamination of pyramidal tract in cerebral cortex, internal capsule, brain stem & spinal cord.",
+      "explanation": "The pyramidal tract is somatotopically organized at each level: CEREBRAL CORTEX: Arises from areas 4, 6, and adjacent areas; descends through corona radiata. INTERNAL CAPSULE: Posterior limb (face most anterior, arm, leg most posterior). BRAIN STEM: Basis pedunculi of midbrain (medial 3/5), basis pontis (scattered bundles), medullary pyramids. MEDULLARY DECUSSATION: Arm fibers decussate first (become lateral CST), leg fibers lower. SPINAL CORD: Cervical fibers most medial, sacral most lateral.",
+      "keyConcept": "Pyramidal tract somatotopy: face anterior in internal capsule, arm medial in cord, leg lateral in cord",
+      "modelAnswer": "Pyramidal tract lamination: (A) CEREBRAL CORTEX: Arises from motor areas 4, 6, and adjacent areas; fibers descend through corona radiata. (B) INTERNAL CAPSULE: Passes through posterior limb (somatotopic: face most anterior, leg most posterior). (C) BRAIN STEM: Passes through basis pedunculi of midbrain (medial 3/5), basis pontis (scattered bundles), medullary pyramids. (D) MEDULLA: In pyramidal decussation, fibers destined for arm decussate first (become lateral CST), those for leg remain ipsilateral then decussate lower. (E) SPINAL CORD: Lateral CST has cervical fibers most medial, sacral most lateral.",
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch7-anatomy-q15",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Describe tectospinal tract.",
+      "explanation": "The tectospinal tract: ORIGIN from superior colliculus of midbrain; COURSE decussates immediately below its origin, descends in spinal cord (mostly upper cervical segments); FUNCTION mediates reflex turning of head and neck in response to visual and auditory stimuli (spino-visual and spino-auditory reflexes). It is part of the extrapyramidal system.",
+      "keyConcept": "Tectospinal tract: superior colliculus origin, immediate decussation, mediates head/neck reflexes to visual/auditory stimuli",
+      "modelAnswer": "Tectospinal tract: (ORIGIN) Superior colliculus of midbrain; (COURSE) Decussates immediately below its origin, descends in spinal cord (most fibers terminate in upper cervical segments); (FUNCTION) Reflex turning of head and neck in response to visual and auditory stimuli (spino-visual and spino-auditory reflexes); (CLINICAL) Lesion causes inability to turn head toward stimuli.",
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch7-anatomy-q16",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Describe rubrospinal tract.",
+      "explanation": "The rubrospinal tract: ORIGIN from red nucleus (magnocellular part) of midbrain; COURSE decussates immediately, descends through brain stem into lateral white column; FUNCTION facilitates flexor muscle tone and inhibits extensor tone; takes over function of corticospinal tract after lesion. Lesion causes decerebrate rigidity.",
+      "keyConcept": "Rubrospinal tract: red nucleus origin, facilitates flexor tone, takes over after corticospinal lesion",
+      "modelAnswer": "Rubrospinal tract: (ORIGIN) Red nucleus (magnocellular part) of midbrain; (COURSE) Decussates immediately, descends through brain stem, enters lateral white column of spinal cord; (FUNCTION) Facilitates flexor muscle tone, inhibits extensor tone; (RELATION) Takes over function of corticospinal tract after lesion; (CLINICAL) Lesion causes decerebrate rigidity.",
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch7-anatomy-q19",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The descending tracts run in the following part of the midbrain:",
+      "explanation": "The descending tracts (corticospinal, corticobulbar) run in the crus cerebri of the midbrain. The tegmentum contains ascending tracts and nuclei. The substantia nigra separates the crus from the tegmentum.",
+      "keyConcept": "Descending tracts in crus cerebri",
+      "options": [
+        "Tectum.",
+        "Tegmentum.",
+        "Crus cerebri.",
+        "Substantia nigra.",
+        "Periaqueductal grey."
+      ],
+      "correctIndex": 2,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q91",
+      "type": "mcq",
+      "lecture": 3,
+      "text": "Which of the following nerves arises from the union of the vagus and accessory nerves?",
+      "explanation": "The internal laryngeal nerve is formed by the union of the external laryngeal nerve (from superior laryngeal of vagus) and the recurrent laryngeal nerve, but they join at the larynx, not intracranially.",
+      "keyConcept": "Internal laryngeal nerve arises at the larynx from the superior laryngeal nerve division of CN X.",
+      "options": [
+        "Glossopharyngeal nerve",
+        "Hypoglossal nerve",
+        "Recurrent laryngeal nerve",
+        "Superior laryngeal nerve",
+        "Pharyngeal nerve"
+      ],
+      "correctIndex": 4,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q637",
+      "type": "essay",
+      "lecture": 1,
+      "text": "What are the connections of septal areas?",
+      "explanation": "The septal areas connect to the hypothalamus via the medial forebrain bundle and to the habenular nuclei via the stria medullaris thalami, forming key components of the limbic circuitry.",
+      "keyConcept": "Septal area connections and limbic circuitry",
+      "modelAnswer": "Medial forebrain bundle: connects septal areas and amygdala with the hypothalamus\nStria medullaris thalami: connects septal areas to the habenular nuclei",
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1041",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which structure is part of the diencephalon?",
+      "explanation": "The diencephalon consists of four major structures: thalamus, hypothalamus, epithalamus (including pineal gland), and subthalamus, surrounding the third ventricle.",
+      "keyConcept": "Diencephalon: thalamus, hypothalamus, epithalamus, subthalamus.",
+      "options": [
+        "Pineal gland",
+        "Superior colliculus",
+        "Mammillary body",
+        "Thalamus"
+      ],
+      "correctIndex": 3,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Choose the INCORRECT matching:",
+      "explanation": "The mesencephalon (midbrain) surrounds the cerebral aqueduct of Sylvius, not a '2nd ventricle.' There is no standard 2nd ventricle; the brain ventricles are the paired lateral ventricles, third, and fourth.",
+      "keyConcept": "Mesencephalon surrounds the cerebral aqueduct, not a 2nd ventricle",
+      "options": [
+        "Diencephalon – 3rd ventricle",
+        "Midbrain – cerebral aqueduct of Sylvius",
+        "Cerebral hemisphere – lateral ventricle",
+        "Hind brain – 4th ventricle",
+        "Mesencephalon – 2nd ventricle"
+      ],
+      "correctIndex": 4,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q198",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Enumerate nuclei of GSE column & the structures supplied by each nucleus.",
+      "explanation": "The emissary veins of the superior sagittal sinus pass through the foramen cecum (anterior) and parietal foramina (posterior). These veins connect the extracranial venous system with the dural venous sinuses.",
+      "keyConcept": "Foramen cecum transmits emissary vein of superior sagittal sinus",
+      "modelAnswer": "NUCLEI OF GSE COLUMN: (1) OCULOMOTOR NUCLEUS (III) in midbrain → superior, inferior, medial rectus, inferior oblique; (2) TROCHLEAR NUCLEUS (IV) in midbrain → superior oblique; (3) ABDUCENT NUCLEUS (VI) in pons → lateral rectus; (4) HYPOGLOSSAL NUCLEUS (XII) in medulla → intrinsic and extrinsic tongue muscles (except palatoglossus).",
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q226",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which one of the following is considered as an emissary vein?",
+      "explanation": "Emissary veins are valveless veins that pass through cranial foramina and connect intracranial dural venous sinuses with extracranial veins. The inferior petrosal sinus itself is functionally considered an emissary vein because it connects the cavernous sinus (intracranial) with the internal jugular vein (extracranial). The other sinuses listed are purely intracranial venous structures without direct extracranial connections.",
+      "keyConcept": "Inferior petrosal sinus is functionally an emissary vein connecting cavernous sinus to internal jugular vein.",
+      "options": [
+        "Sphenoparietal sinus.",
+        "Superior petrosal sinus.",
+        "Inferior petrosal sinus.",
+        "Transverse sinus.",
+        "Straight sinus."
+      ],
+      "correctIndex": 2,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q227",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Emissary veins of cavernous sinus pass through all the following foramina Except:",
+      "explanation": "Emissary veins from the cavernous sinus pass through the foramen lacerum, foramen ovale, and emissary sphenoidal foramen (foramen of Vesalius) to connect with the pterygoid venous plexus. The mastoid foramen, however, transmits an emissary vein connecting the sigmoid sinus to the posterior auricular veins, not the cavernous sinus. Therefore, mastoid foramen is not a route for cavernous sinus emissary veins.",
+      "keyConcept": "Mastoid foramen connects sigmoid sinus to extracranial veins, not cavernous sinus emissary veins.",
+      "options": [
+        "Foramen lacerum.",
+        "Foramen ovale.",
+        "Carotid canal.",
+        "Mastoid foramen.",
+        "Emissary sphenoidal foramen."
+      ],
+      "correctIndex": 3,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q229",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Enumerate the tributaries, drainage & communications of cavernous sinus.",
+      "explanation": "The cavernous sinus is a major dural venous sinus that receives tributaries from multiple sources and communicates extensively with extracranial veins. Understanding its tributaries, drainage, and communications is clinically essential because infections from the face can spread retrogradely to the cavernous sinus, causing potentially fatal cavernous sinus thrombosis.",
+      "keyConcept": "Cavernous sinus receives ophthalmic veins, middle meningeal vein, and communicates with pterygoid plexus via emissary veins.",
+      "modelAnswer": "Tributaries of cavernous sinus: superior and inferior ophthalmic veins, central retinal vein, superficial middle cerebral vein, and sphenoparietal sinus. Drainage: blood drains posteriorly into the inferior petrosal sinus (to internal jugular vein) and superior petrosal sinus (to transverse sinus). Communications: pterygoid venous plexus via emissary veins through foramen lacerum and foramen ovale; facial vein via ophthalmic veins; basilar venous plexus posteriorly.",
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q406",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Ciliary ganglion is derived from:",
+      "explanation": "The ciliary ganglion is derived from neural crest cells that migrate from the optic vesicle region. Neural crest cells also give rise to the spheno-ethmoidal, submandibular, and sublingual ganglia of the parasympathetic system. Schwann cells come from neural crest butpia mater and dura mater have different origins.",
+      "keyConcept": "Ciliary ganglion (parasympathetic) derived from neural crest cells; receives preganglionic parasympathetic fibers from Edinger-Westphal nucleus.",
+      "options": [
+        "Neural crest.",
+        "Spongioblasts.",
+        "Local mesoderm.",
+        "Chromaffin cells.",
+        "Schwann cells."
+      ],
+      "correctIndex": 0,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q701",
+      "type": "mcq",
+      "lecture": 5,
+      "text": "The aqueduct of Sylvius connects which of the following ventricular structures?",
+      "explanation": "The aqueduct of Sylvius connects the third ventricle (above) to the fourth ventricle (below) in the midbrain. It passes through the cerebral peduncle.",
+      "keyConcept": "Cerebral aqueduct connects third and fourth ventricles, passing through the midbrain.",
+      "options": [
+        "Lateral ventricles to third ventricle",
+        "Third ventricle to fourth ventricle",
+        "Fourth ventricle to central canal",
+        "Third ventricle to lateral ventricles",
+        "Fourth ventricle to subarachnoid space"
+      ],
+      "correctIndex": 1,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1072",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which of the following is mesodermal in origin?",
+      "explanation": "Dura mater is derived from mesoderm (specifically the paraxial mesoderm surrounding the neural tube), while arachnoid and pia mater are ectodermal derivatives.",
+      "keyConcept": "Dura mater: mesodermal origin.",
+      "options": [
+        "Spinal cord.",
+        "Autonomic ganglia.",
+        "Dura mater.",
+        "Arachnoid mater."
+      ],
+      "correctIndex": 2,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1079",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The cavity of the mesencephalon is:",
+      "explanation": "The cavity of the mesencephalon is the cerebral aqueduct (of Sylvius), which connects the third and fourth ventricles.",
+      "keyConcept": "Mesencephalon cavity: cerebral aqueduct.",
+      "options": [
+        "Lateral ventricle.",
+        "Third ventricle.",
+        "Cerebral aqueduct.",
+        "Fourth ventricle."
+      ],
+      "correctIndex": 2,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q29",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The fourth ventricle is connected to the third ventricle by:",
+      "explanation": "The cerebral aqueduct of Sylvius is the narrow channel that passes through the midbrain and connects the third ventricle anteriorly with the fourth ventricle posteriorly. It is flanked by the cerebral peduncles and is the most common site of obstruction in non-communicating hydrocephalus.",
+      "keyConcept": "Cerebral aqueduct connects 3rd ventricle (anterior) with 4th ventricle (posterior).",
+      "options": [
+        "Optic recess.",
+        "Cerebral aqueduct.",
+        "Lateral recess.",
+        "Central canal.",
+        "Foramen of Lushka."
+      ],
+      "correctIndex": 1,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q58",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Regarding the fourth ventricle",
+      "explanation": "The fourth ventricle is the cavity of the hindbrain (rhombencephalon), communicates with third ventricle above and subarachnoid space below via median/lateral apertures, and has a roof and floor.",
+      "keyConcept": "Fourth ventricle features",
+      "options": [
+        "Is the cavity of hind brain",
+        "Communicates with subarachnoid space",
+        "Has a large median operture",
+        "All of the above",
+        "None of the above"
+      ],
+      "correctIndex": 3,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch4-anatomy-q2",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which of the following arteries supplies the pituitary gland?",
+      "explanation": "The cavernous sinus contains the internal carotid artery, not the maxillary artery. The maxillary artery is an extracranial branch of the external carotid artery.",
+      "keyConcept": "Maxillary artery not in cavernous sinus",
+      "options": [
+        "Common carotid artery.",
+        "Internal carotid artery.",
+        "External carotid artery.",
+        "Subclavian artery.",
+        "Vertebral artery."
+      ],
+      "correctIndex": 1,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q13",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Dural venous sinuses have all the following characters Except:",
+      "explanation": "Dural venous sinuses are endothelial-lined channels located between two layers of dura mater that drain blood from the brain, meninges, and skull bones. They communicate with extracranial veins via emissary veins and contain arachnoid villi for CSF absorption. However, they do NOT contain valves, unlike systemic veins. This valveless anatomy allows bidirectional blood flow and permits the spread of infection from extracranial sources into the intracranial venous system.",
+      "keyConcept": "Dural venous sinuses are valveless, allowing bidirectional blood flow and potential spread of infection.",
+      "options": [
+        "They are lined by endothelium.",
+        "They are rich in valves.",
+        "They drain brain & meninges.",
+        "They are connected to extracranial veins.",
+        "They lie between 2 dural layers."
+      ],
+      "correctIndex": 1,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q17",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Enumerate emissary veins connected to Superior sagittal sinus, Cavernous sinus & Sigmoid sinus.",
+      "explanation": "Emissary veins are valveless veins that connect intracranial dural venous sinuses with extracranial veins, allowing potential routes for infection spread and serving as alternative venous drainage pathways.",
+      "keyConcept": "Emissary veins connect intracranial sinuses to extracranial veins through specific cranial foramina.",
+      "modelAnswer": "Emissary veins connected to the superior sagittal sinus: parietal emissary vein (through parietal foramen), mastoid emissary vein (through mastoid foramen), and emissary vein through foramen caecum. Emissary veins of cavernous sinus: through foramen lacerum, foramen ovale, and emissary sphenoidal foramen (foramen of Vesalius). Emissary vein of sigmoid sinus: mastoid emissary vein through mastoid foramen, posterior condylar emissary vein through condylar canal.",
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q18",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Blockage of CSF flow between the 3rd & 4th ventricles involves the:",
+      "explanation": "The cerebral aqueduct of Sylvius is a narrow channel穿过 midbrain connecting the 3rd and 4th ventricles. Blockage of CSF flow between these ventricles occurs at the aqueduct, causing aqueductal stenosis and non-communicating hydrocephalus. The interventricular foramen connects lateral to 3rd ventricle; foramina of Magendie and Luschka connect 4th ventricle to subarachnoid space.",
+      "keyConcept": "Cerebral aqueduct of Sylvius connects 3rd and 4th ventricles; blockage causes non-communicating hydrocephalus.",
+      "options": [
+        "Interventricular foramen.",
+        "Cerebral aqueduct.",
+        "Foramen of Magendi.",
+        "Foramen of Luschka.",
+        "Central canal."
+      ],
+      "correctIndex": 1,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q22",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The cerebral aqueduct of Sylvius connects:",
+      "explanation": "The cerebral aqueduct of Sylvius is a narrow channel passing through the midbrain that connects the third ventricle (anteriorly, at the level of the midbrain) with the fourth ventricle (posteriorly, at the pontomedullary junction). It is surrounded by the periaqueductal gray matter.",
+      "keyConcept": "Cerebral aqueduct of Sylvius connects the third and fourth ventricles, surrounded by periaqueductal gray matter.",
+      "options": [
+        "Third and fourth ventricles.",
+        "Lateral and 3rd ventricles.",
+        "Lateral and 4 ventricles.",
+        "Fourth ventricle and subarachnoid space.",
+        "Fourth ventricle and central canal."
+      ],
+      "correctIndex": 0,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q41",
+      "type": "mcq",
+      "lecture": 5,
+      "text": "A patient presents with dilated lateral and third ventricles on brain imaging. Which structure is most likely obstructed?",
+      "explanation": "Obstructive hydrocephalus at the level of the foramen of Monro would cause dilation of the lateral and third ventricles but not the fourth ventricle (which would be normal size).",
+      "keyConcept": "Foramen of Monro obstruction causes dilation of lateral and third ventricles with normal fourth ventricle.",
+      "options": [
+        "Aqueduct of Sylvius",
+        "Foramen of Monro",
+        "Median foramen of Magendie",
+        "Lateral foramina of Luschka",
+        "Central canal of the spinal cord"
+      ],
+      "correctIndex": 1,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q42",
+      "type": "mcq",
+      "lecture": 5,
+      "text": "Which ventricle develops from the rhombencephalon?",
+      "explanation": "The fourth ventricle develops from the rhombencephalon (hindbrain), specifically from the cavity of the metencephalon. The lateral ventricles develop from the telencephalon.",
+      "keyConcept": "Fourth ventricle derives from the hindbrain (rhombencephalon) cavity.",
+      "options": [
+        "Lateral ventricle",
+        "Third ventricle",
+        "Fourth ventricle",
+        "Cerebral aqueduct",
+        "None of the above"
+      ],
+      "correctIndex": 2,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q44",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Which structure directly connects the dural venous sinuses with the extracranial veins of the scalp?",
+      "explanation": "Emissary veins connect the dural venous sinuses directly to the extracranial venous system through foramina in the skull (e.g., foramen ovale, foramen lacerum), providing alternative drainage pathways.",
+      "keyConcept": "Emissary veins create direct connections between intracranial dural sinuses and extracranial veins.",
+      "options": [
+        "Diploic veins",
+        "Emissary veins",
+        "Meningeal veins",
+        "Cerebral veins",
+        "Superficial temporal veins"
+      ],
+      "correctIndex": 1,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q47",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "A 25-year-old patient with a painful swelling on the upper lip and forehead after a pimple infection. The physician is concerned about risk of intracranial spread. Which veins provide a route for infections from the face to reach the superior sagittal sinus?",
+      "explanation": "Dangerous area of face (triangle with apex at nose bridge) infections can spread intracranially via the angular vein and superior ophthalmic vein to the cavernous sinus, causing cavernous sinus thrombosis.",
+      "keyConcept": "Facial vein infections spread to cavernous sinus via angular and superior ophthalmic veins.",
+      "options": [
+        "Facial veins",
+        "Emissary veins",
+        "Jugular veins",
+        "External carotid veins",
+        "Coronary veins"
+      ],
+      "correctIndex": 1,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q57",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which part of the anterior wall of the third ventricle is formed by a thin membrane derived from the telencephalon?",
+      "explanation": "The lamina terminalis forms the anterior wall of the third ventricle; it is a thin membrane derived from the telencephalon containing the organum vasculosum.",
+      "keyConcept": "Third ventricle anterior wall",
+      "options": [
+        "Tela choroidea",
+        "Pineal body",
+        "Tegmentum of the midbrain",
+        "Lamina terminalis",
+        "Thalamus"
+      ],
+      "correctIndex": 3,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q360",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The ultimobranchial body gives rise to:",
+      "explanation": "The ultimobranchial body (also called the pharyngeal ultimobranchial body or C cells) is derived from the neural crest of the 5th pharyngeal pouch (or 4th in some classifications). It gives rise to the parafollicular cells (C cells) of the thyroid gland, which secrete calcitonin for calcium regulation. The thymus, tonsil, and parathyroids arise from 3rd and 4th pouches.",
+      "keyConcept": "Ultimobranchial body gives rise to parafollicular C cells of thyroid (secrete calcitonin).",
+      "options": [
+        "Tonsil.",
+        "Superior parathyroid.",
+        "Thymus.",
+        "Parafollicular cells.",
+        "Chromaffin cells."
+      ],
+      "correctIndex": 3,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q363",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The hyoid bone is derived from:",
+      "explanation": "The hyoid bone body is derived from migrating neural crest cells of the 2nd and 3rd pharyngeal arches. The lesser horn and upper body come from the 2nd arch; the greater horn and lower body come from the 3rd arch. This embryological origin explains the dual nerve supply (CN VII for 2nd arch structures, CN IX for 3rd arch structures).",
+      "keyConcept": "Hyoid bone body derived from neural crest cells of 2nd and 3rd arches; lesser horn from 2nd, greater horn from 3rd.",
+      "options": [
+        "Migrating paraxial mesoderm of 1st & 2nd arches.",
+        "Migrating paraxial mesoderm of 2nd & 3rd arches.",
+        "Migrating paraxial mesoderm of 3rd & 4th arches.",
+        "Migrating neural crest cells of 1st & 2nd arches.",
+        "Migrating neural crest cells of 2nd & 3rd arches."
+      ],
+      "correctIndex": 4,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q380",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The parafollicular cells of the thyroid gland:",
+      "explanation": "Parafollicular cells (C cells) of the thyroid gland are derived from the neural crest of the ultimobranchial body (5th pharyngeal pouch) and produce calcitonin, which lowers blood calcium levels. They are NOT mesodermal in origin—they arise from neuroectoderm. They do NOT originate from the dorsal part of the 3rd pouch (which gives inferior parathyroids). Only the statement that they produce calcitonin is correct.",
+      "keyConcept": "Parafollicular cells produce calcitonin; derived from ultimobranchial body (neural crest), NOT mesoderm.",
+      "options": [
+        "Produce calcitonin.",
+        "Are mesodermal in origin.",
+        "Originate from dorsal part of 3rd pouch.",
+        "All the above is true.",
+        "a and b are true."
+      ],
+      "correctIndex": 0,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q407",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Failure of closure of anterior neuropore of the neural tube leads to:",
+      "explanation": "Failure of closure of the anterior neuropore of the neural tube leads to anencephaly, a condition where the cranial vault fails to form and the brain is exposed to amniotic fluid. The anterior neuropore closes around day 25. Spina bifida results from failure of closure of the posterior neuropore. Anencephaly is incompatible with life.",
+      "keyConcept": "Anterior neuropore closure failure = ANENCEPHALY (exposed brain); posterior neuropore failure = SPINA BIFIDA.",
+      "options": [
+        "Anencephaly.",
+        "Spina bifida.",
+        "Microcephaly.",
+        "Hydrocephalus.",
+        "Scaphocephaly."
+      ],
+      "correctIndex": 0,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q416",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The commonest site of spina bifida is:",
+      "explanation": "Spina bifida is most common in the lumbosacral region because the lumbar and sacral vertebrae are the last to close their vertebral arches (sacral arches close last, around puberty). The most common type is spina bifida occulta at L5-S1. The thoraco-lumbar region is also a common site, but lumbosacral is the most common overall.",
+      "keyConcept": "Commonest site of spina bifida = lumbosacral region; vertebrae close from cranial to caudal direction.",
+      "options": [
+        "Cervical.",
+        "Upper thoracic.",
+        "Mid-thoracic.",
+        "Thoraco-lumbar.",
+        "Lumbo-sacral."
+      ],
+      "correctIndex": 4,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q429",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Enumerate derivatives of 4th pharyngeal pouch.",
+      "explanation": "The fourth pharyngeal pouch gives rise to the superior parathyroid glands (from the dorsal wing) and the ultimobranchial body (from the ventral wing, which contains neural crest cells that become parafollicular C cells of the thyroid). The superior parathyroids descend only a short distance, explaining their consistent position on the posterior aspect of the middle thyroid.",
+      "keyConcept": "4th pharyngeal pouch: DORSAL = superior parathyroids; VENTRAL = ultimobranchial body (parafollicular C cells).",
+      "modelAnswer": "Derivatives of the fourth pharyngeal pouch: (1) Dorsal wing: Superior parathyroid glands—descend only a short distance, retaining a relatively constant position on the posterior aspect of the middle thyroid. (2) Ventral wing: Ultimobranchial body—contains neural crest-derived cells that migrate into the thyroid gland to become parafollicular (C) cells, which secrete calcitonin. The 4th pouch also contributes to the formation of the thyroid cartilage and epiglottis (along with 4th arch cartilage).",
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q642",
+      "type": "essay",
+      "lecture": 1,
+      "text": "What do chromaffin cells give?",
+      "explanation": "Chromaffin cells (neural crest derivatives) give rise to the adrenal medulla, paraganglia (including carotid and aortic bodies), and extra-adrenal chromaffin tissue throughout the body.",
+      "keyConcept": "Neural crest chromaffin cell derivatives",
+      "modelAnswer": "Adrenal medulla, carotid body, and paraganglia",
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1073",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The anterior neuropore of neural tube closes at ……… day of pregnancy.",
+      "explanation": "The anterior neuropore closes at day 25 of embryonic development; failure results in anencephaly. The posterior neuropore closes around day 27.",
+      "keyConcept": "Anterior neuropore closes at day 25 of pregnancy.",
+      "options": [
+        "23rd",
+        "25th",
+        "27th",
+        "29th"
+      ],
+      "correctIndex": 1,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1076",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The neural crest gives all the following EXCEPT:",
+      "explanation": "Spinal nerves are formed from dorsal and ventral roots which originate from the neural tube (CNS), not from neural crest. Neural crest gives dorsal root ganglia, autonomic ganglia, and postganglionic neurons.",
+      "keyConcept": "Spinal nerves: from neural tube, not neural crest.",
+      "options": [
+        "All spinal nerves.",
+        "Dorsal root ganglia.",
+        "Autonomic ganglia.",
+        "Postganglionic autonomic neurons."
+      ],
+      "correctIndex": 0,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1077",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Failure of closure of the neural tube leads to:",
+      "explanation": "Rachischisis (myeloschisis) results from failure of neural tube closure, causing exposure of neural tissue; spina bifida results from vertebral arch defects.",
+      "keyConcept": "Neural tube closure failure: rachischisis (exposed neural tissue).",
+      "options": [
+        "Acrania.",
+        "Rachischisis.",
+        "Spina bifida occulta.",
+        "Spina bifida cystica."
+      ],
+      "correctIndex": 1,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "anatomy"
+    },
+    {
+      "id": "mcns2-ch1-histology-q24",
+      "type": "fillblank",
+      "lecture": 1,
+      "text": "The oligodendrocyte is derived from ___ while microglia Is derived from ___:",
+      "explanation": "Oligodendrocytes are derived from neuroectoderm (neural tube/glial precursors), same as neurons and astrocytes. Microglia are derived from mesoderm (monocyte-macrophage lineage), making them the only non-ectodermal glial cells in the CNS.",
+      "keyConcept": "Oligodendrocytes: neuroectoderm. Microglia: mesoderm (monocyte origin). Astrocytes: neuroectoderm.",
+      "blanks": [
+        "Ectoderm",
+        "mesoderm"
+      ],
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "histology"
+    },
+    {
+      "id": "mcns2-ch1-histology-q55",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Which of the following tracts DON'T extend to all segment of spinal cord?",
+      "explanation": "The tectospinal tract is present only in upper cervical segments (C1-C6/8), originating from the tectum of midbrain. It does not extend to all spinal cord levels, unlike the vestibulospinal and reticulospinal tracts.",
+      "keyConcept": "Tectospinal tract does NOT extend to all spinal segments (present only in upper cervical)",
+      "options": [
+        "Lateral vestibulospinal tract.",
+        "Medullary reticulospinal tract.",
+        "Pontine reticulospinal tract.",
+        "Tectospinal tract."
+      ],
+      "correctIndex": 3,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "histology"
+    },
+    {
+      "id": "mcns2-ch3-histology-q16",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Sections in lower level of pons show:",
+      "explanation": "Sections at the lower level of pons show the middle cerebellar peduncle (entering), vestibular nuclei (medial and inferior), and facial nerve nucleus. The superior cerebellar peduncle is at higher midbrain levels.",
+      "keyConcept": "Lower pons: middle cerebellar peduncle, medial and inferior vestibular nuclei",
+      "options": [
+        "Middle cerebellar peduncle.",
+        "Superior cerebellar peduncle.",
+        "Mesencephalic nucleus of V.",
+        "Medial & Inferior vestibular nuclei."
+      ],
+      "correctIndex": 0,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "histology"
+    },
+    {
+      "id": "mcns2-ch3-histology-q20",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Superior cerebellar decussation:",
+      "explanation": "The superior cerebellar decussation (decussation of the superior cerebellar peduncles) is present at the inferior level of the midbrain. Tectospinal tract decussates at the midbrain but is not the superior cerebellar decussation.",
+      "keyConcept": "Superior cerebellar decussation at inferior midbrain level (superior cerebellar peduncles)",
+      "options": [
+        "Present in inferior level of midbrain.",
+        "Formed by tectospinal tract.",
+        "Fibers pass through ICP.",
+        "Its fibers descend in all segments of spinal cord."
+      ],
+      "correctIndex": 0,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "histology"
+    },
+    {
+      "id": "mcns2-ch5-histology-q9",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "A 10-year-old girl develops ataxia & hydrocephalus. CT scan shows a midline partially cystic cerebellar mass. Microscopic examination shows elongated bipolar astrocytes with fibrillar processes and Rosenthal fibers. The diagnosis is:",
+      "explanation": "Pilocytic astrocytoma (WHO grade I) in children shows elongated bipolar astrocytes with Rosenthal fibers and fibrillary processes. These are benign, often cystic cerebellar tumors with good prognosis.",
+      "keyConcept": "Pilocytic astrocytoma: Rosenthal fibers, bipolar astrocytes, cystic cerebellar tumor in children",
+      "options": [
+        "Astrocytoma grade 1.",
+        "Astrocytoma grade 2.",
+        "Anaplastic astrocytoma.",
+        "Astrocytoma grade 4."
+      ],
+      "correctIndex": 0,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "histology"
+    },
+    {
+      "id": "mcns2-ch1-histology-q42",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The ventral tegmental decussation is formed by",
+      "explanation": "The VENTRAL tegmental decussation is formed by the RUBROSPINAL tract. Fibers from the red nucleus cross in the midbrain (at superior colliculus level) to descend and control limb flexor muscles.",
+      "keyConcept": "Ventral tegmental decussation: rubrospinal tract crosses at superior colliculus level.",
+      "options": [
+        "Tectospinal",
+        "Rubrospinal",
+        "Anterior spinocerebellar",
+        "Posterior spinocerebellar"
+      ],
+      "correctIndex": 1,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "histology"
+    },
+    {
+      "id": "mcns2-ch3-histology-q10",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "The most of V nerve nuclei are best seen in:",
+      "explanation": "The main sensory and spinal nuclei of the trigeminal nerve are best seen in the upper pons at the level of the entry of the trigeminal nerve. The mesencephalic nucleus extends into the midbrain.",
+      "keyConcept": "Trigeminal nerve nuclei best seen in upper pons (entry zone)",
+      "options": [
+        "Lower midbrain.",
+        "Middle pons.",
+        "Upper pons.",
+        "Open medulla."
+      ],
+      "correctIndex": 2,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "histology"
+    },
+    {
+      "id": "mcns2-ch3-histology-q11",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "The only cranial nerve that decussates before its emergence is:",
+      "explanation": "The trochlear nerve (CN IV) is the only cranial nerve that decussates (crosses) in the brainstem before emerging from the dorsal surface of the midbrain. This is unique among cranial nerves.",
+      "keyConcept": "Trochlear nerve (CN IV) is the only cranial nerve that decussates before emergence",
+      "options": [
+        "Oculomotor.",
+        "Abducent.",
+        "Trochlear.",
+        "Facial."
+      ],
+      "correctIndex": 2,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "histology"
+    },
+    {
+      "id": "mcns2-ch3-histology-q17",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "The superior colliculus of midbrain is formed of the following EXCEPT:",
+      "explanation": "The superior colliculus has layers: stratum zonale (superficial), stratum opticum, stratum lemnisci, and stratum basale (deep). The dorsal tegmental tract is a fiber tract, not part of the colliculus structure.",
+      "keyConcept": "Superior colliculus layers: zonale, opticum, lemnisci, basale (NOT dorsal tegmental tract)",
+      "options": [
+        "Stratum basale.",
+        "Stratum zonale.",
+        "Stratum opticum.",
+        "Stratum lemnisci."
+      ],
+      "correctIndex": 0,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "histology"
+    },
+    {
+      "id": "mcns2-ch3-histology-q18",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "The specific feature of upper midbrain is presence of:",
+      "explanation": "The upper midbrain (superior colliculus level) has the crus cerebri (cerebral peduncle) on its ventral aspect, containing corticospinal and corticobulbar fibers. Substantia nigra and red nucleus are at this level but not specific to upper midbrain.",
+      "keyConcept": "Upper midbrain specific feature: crus cerebri (cerebral peduncle)",
+      "options": [
+        "Crus cerebri.",
+        "Substantia nigra.",
+        "Red nucleus.",
+        "Superior cerebellar peduncle decussation."
+      ],
+      "correctIndex": 0,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "histology"
+    },
+    {
+      "id": "mcns2-ch1-clinical-q3",
+      "type": "case",
+      "lecture": 1,
+      "text": "A 20 year old student was playing baseball when the ball hit him on the side of the head. He immediately fell to the ground unconscious. After 30 seconds he felt well & decided to sit & watch the match. An hour later, he felt so sleepy & then he became unconscious again. He was taken to the hospital & a skull X-ray showed a fracture in the region of the pterion.",
+      "explanation": "This patient presents with the classic clinical picture of extradural (epidural) hematoma following head trauma. The initial loss of consciousness represents the primary brain injury, the lucid interval represents temporary recovery, and the secondary deterioration is due to arterial bleeding causing expanding hematoma and increased intracranial pressure. Fracture at the pterion strongly suggests middle meningeal artery laceration.",
+      "keyConcept": "Pterion fracture with lucid interval = extradural hematoma from middle meningeal artery laceration.",
+      "subQuestions": [
+        {
+          "id": "mcns2-ch1-clinical-q3-sq1",
+          "type": "essay",
+          "text": "TYPE: essay Define the pterion.",
+          "explanation": "This patient presents with the classic clinical picture of extradural (epidural) hematoma following head trauma. The initial loss of consciousness represents the primary brain injury, the lucid interval represents temporary recovery, and the secondary deterioration is due to arterial bleeding causing expanding hematoma and increased intracranial pressure. Fracture at the pterion strongly suggests middle meningeal artery laceration.",
+          "keyConcept": "Pterion fracture with lucid interval = extradural hematoma from middle meningeal artery laceration.",
+          "modelAnswer": "The pterion is the region where the frontal, parietal, temporal, and sphenoid bones meet. It is located approximately 4 cm above the zygomatic arch and 3.5 cm behind the frontozygomatic suture. It is the thinnest part of the lateral skull and is closely related to the anterior branch of the middle meningeal artery."
+        },
+        {
+          "id": "mcns2-ch1-clinical-q3-sq2",
+          "type": "essay",
+          "text": "TYPE: essay Why are fractures in this region extremely dangerous?",
+          "explanation": "This patient presents with the classic clinical picture of extradural (epidural) hematoma following head trauma. The initial loss of consciousness represents the primary brain injury, the lucid interval represents temporary recovery, and the secondary deterioration is due to arterial bleeding causing expanding hematoma and increased intracranial pressure. Fracture at the pterion strongly suggests middle meningeal artery laceration.",
+          "keyConcept": "Pterion fracture with lucid interval = extradural hematoma from middle meningeal artery laceration.",
+          "modelAnswer": "Fractures at the pterion are dangerous because: (1) the pterion is the thinnest part of the skull, making it easily fractured; (2) the anterior branch of the middle meningeal artery lies immediately beneath it; (3) laceration of this artery causes rapid extradural hematoma; (4) the expanding hematoma compresses the brain and increases intracranial pressure, leading to brain herniation and death if not promptly treated."
+        }
+      ],
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "clinical"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q260",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "If a woman with phenylketonuria who is not on a low-phenylalanine diet becomes pregnant, the newborn is expected to be.",
+      "explanation": "Maternal phenylketonuria syndrome occurs when a PKU mother (untreated) has high phenylalanine levels during pregnancy, causing teratogenic effects: microcephaly, intellectual disability, congenital heart defects, and growth retardation in the fetus.",
+      "keyConcept": "Untreated maternal PKU causes fetal teratogenic effects (microcephaly, heart defects)",
+      "options": [
+        "Completely normal because the disease is recessive.",
+        "Affected with maternal phenylketonuria syndrome due to the teratogenic effect of phenylalanine.",
+        "Having microcephaly and congenital heart abnormality.",
+        "Bandec."
+      ],
+      "correctIndex": 2,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "biochem"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q264",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Folic acid supplementation is recommended for which of the following?",
+      "explanation": "Folic acid supplementation (400-800 mcg daily) is recommended for ALL women planning pregnancy to reduce neural tube defect risk in the fetus. This should begin at least one month before conception.",
+      "keyConcept": "Folic acid supplementation recommended for all women planning pregnancy",
+      "options": [
+        "All women planning to get pregnant.",
+        "Only pregnant women with megaloblastic anemia.",
+        "All vegetarians, whether pregnant or not.",
+        "Only patients with low blood folic acid, for fear of toxicity."
+      ],
+      "correctIndex": 0,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "biochem"
+    },
+    {
+      "id": "mcns2-ch1-pathology-q22",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Which tumors are classified as primary tumors of the CNS?",
+      "explanation": "Primary CNS tumors include: Gliomas (astrocytomas, oligodendrogliomas, ependymomas), medulloblastoma, meningiomas, schwannomas, and primary CNS lymphomas. Secondary (metastatic) tumors spread from extracranial primary cancers (lung, breast, melanoma). These are the main categories of brain tumors classified by tissue of origin. Meningiomas arise from arachnoid cap cells; schwannomas from Schwann cells.",
+      "keyConcept": "Primary CNS tumors arise from brain tissue (gliomas, medulloblastoma) or meninges (meningiomas) - distinguishing from metastatic tumors.",
+      "modelAnswer": "Gliomas, Neuroepithelial tumors, Meningiomas, Tumors of the pineal region.",
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "pathology"
+    },
+    {
+      "id": "mcns2-ch1-pathology-q26",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Describe the gross pathology of Ependymomas.",
+      "explanation": "Ependymomas appear as: well-demarcated, grayish-red masses that may be solid or cystic. They may have areas of hemorrhage and necrosis. Intracranial ependymomas often fill the ventricle; spinal ependymomas are intramedullary. The answer is A. The well-circumscribed nature allows for surgical resection.",
+      "keyConcept": "Ependymomas are well-demarcated masses - intracranial tumors fill ventricles, spinal tumors are intramedullary.",
+      "options": [
+        "Ependymomas are well-circumscribed tumors that are soft and spongy",
+        "Ependymomas are highly vascular with necrosis",
+        "Ependymomas are mucinous with myxoid stroma",
+        "Ependymomas are often cystic with a mural nodule"
+      ],
+      "correctIndex": 0,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "pathology"
+    },
+    {
+      "id": "mcns2-ch1-pathology-q29",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Infection spreads from suppurative lung diseases to the brain via:",
+      "explanation": "Infection spreads from suppurative lung diseases (lung abscess, bronchiectasis) to the brain via vertebral veins (Batson's venous plexus), which connects the pelvic veins to the intracranial venous sinuses.",
+      "keyConcept": "Lung infection spreads to brain via vertebral veins (Batson's plexus)",
+      "options": [
+        "Vertebral arteries.",
+        "Vertebral veins.",
+        "Local extension.",
+        "Direct spread from air sinuses."
+      ],
+      "correctIndex": 1,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "pathology"
+    },
+    {
+      "id": "mcns2-ch10-pathology-q10",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "What is the location and symptoms of an epidural hematoma?",
+      "explanation": "Epidural hematoma is located between skull and dura (A). Classic presentation: lucid interval (period of consciousness after trauma) followed by rapid neurological deterioration and possible transtentorial herniation (B). This is a neurosurgical emergency. Option C 'Both A and B' is correct. The lucid interval occurs as blood accumulates, raising intracranial pressure. The answer is C. Mortality is high without surgical evacuation.",
+      "keyConcept": "Epidural hematoma presents with lucid interval followed by rapid deterioration - a neurosurgical emergency.",
+      "options": [
+        "Between the skull and dura",
+        "Symptoms include lucid interval before loss of consciousness and possible transtentorial herniation.",
+        "Both A and B",
+        "None of the above"
+      ],
+      "correctIndex": 2,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "pathology"
+    },
+    {
+      "id": "mcns2-ch10-pathology-q13",
+      "type": "truefalse",
+      "lecture": 1,
+      "text": "True or False: A trans-tentorial herniation may occur in an epidural hematoma.",
+      "explanation": "TRUE - Trans-tentorial herniation can occur in epidural hematoma. As the hematoma expands, it causes mass effect leading to uncal herniation through the tentorial notch. This compresses the midbrain and causes rapid deterioration. The expanding temporal lobe herniates through the tentorium, compressing CN III and posterior cerebral artery. This is a life-threatening emergency requiring surgical evacuation. The answer is True.",
+      "keyConcept": "Trans-tentorial herniation is a complication of expanding epidural hematoma causing midbrain compression.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 0,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "pathology"
+    },
+    {
+      "id": "mcns2-ch5-pathology-q1",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "A 58-year-old hypertensive patient presents with sudden onset of hemiplegia followed by symptoms of increased intracranial tension (headache & vomiting). A CT scan shows extensive intracerebral hemorrhage in the region of basal ganglia. The most probable diagnosis is:",
+      "explanation": "Charcot-Bouchard microaneurysms are small aneurysms that form on small penetrating arteries in hypertensive patients, most commonly affecting the basal ganglia (lenticulostriate arteries) and causing hypertensive intracerebral hemorrhage.",
+      "keyConcept": "Hypertensive intracerebral hemorrhage: Charcot-Bouchard microaneurysms in basal ganglia",
+      "options": [
+        "Ruptured arteriovenous malformation.",
+        "Ruptured congenital berry aneurysm.",
+        "Ruptured multiple microaneurysms (Charcot-Bouchard microaneurysms).",
+        "Thrombotic occlusion of"
+      ],
+      "correctIndex": 2,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "pathology"
+    },
+    {
+      "id": "mcns2-ch10-physiology-q12",
+      "type": "mcq",
+      "lecture": 3,
+      "text": "The pain analgesic system includes which structure?",
+      "explanation": "The periaqueductal gray matter in the midbrain is a key component of the descending pain inhibitory system, connecting to nucleus raphe magnus and inhibiting dorsal horn pain transmission.",
+      "keyConcept": "Periaqueductal gray is the central controller of descending pain inhibition to dorsal horn.",
+      "options": [
+        "Periaqueductal neurons which secrete serotonin",
+        "Periaqueductal neurons which secrete enkephalin",
+        "Periaqueductal neurons which secrete endorphin",
+        "Local cord neurons which secrete serotonin",
+        "Local cord neurons which secrete endorphin"
+      ],
+      "correctIndex": 2,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "physiology"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q75",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which of the following is NOT a character of ARAS:",
+      "explanation": "The ARAS does NOT receive excitatory impulses from cortical areas; rather, cortical areas excite the ARAS. The ARAS is present in pons/midbrain, indirectly activates cortex, facilitates antigravity muscles, and is responsible for arousal.",
+      "keyConcept": "ARAS: brainstem system that activates cortex; receives input FROM cortex, not sending to it.",
+      "options": [
+        "Present in pons and midbrain.",
+        "Indirectly and directly excites the whole cortex.",
+        "Receives excitatory impulses from cortical areas.",
+        "Facilitates spinal cord motor neurons of antigravity muscles.",
+        "Responsible for arousal."
+      ],
+      "correctIndex": 2,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "physiology"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q170",
+      "type": "mcq",
+      "lecture": 3,
+      "text": "Extracranial headache is an example of:",
+      "explanation": "Extracranial headache originates from structures outside the cranium such as muscles, vessels, or nerves in the scalp and face (e.g., tension headache, cluster headache).",
+      "keyConcept": "Extracranial headaches arise from pericranial structures; intracranial headaches involve meninges or blood vessels.",
+      "options": [
+        "Referred pain",
+        "Fast pain",
+        "Psychogenic pain",
+        "Primary hyperalgesia",
+        "Secondary hyperalgesia"
+      ],
+      "correctIndex": 0,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "physiology"
+    },
+    {
+      "id": "mcns2-ch3-physiology-q8",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Which of the following statements about the reticular formation is correct?\nHas a sleep center in its upper part.\nNon-specifically activates the whole cortex, mainly directly.\nIts activity is inhibited by the medullary reticular formation.",
+      "explanation": "The reticular formation has a sleep center in the lower pons/medulla (not upper part). The medullary RF is inhibitory (not excitatory) to cortex. The RAS (in midbrain/pons) non-specifically activates cortex mainly via thalamus. These are the correct relationships for understanding ARAS function.",
+      "keyConcept": "Reticular formation: pontine/midbrain RAS activates cortex; medullary RF inhibits cortex; sleep center in lower brainstem.",
+      "modelAnswer": "Correct statement: The reticular activating system (RAS) non-specifically activates the whole cortex, mainly indirectly through thalamic relay nuclei. The medullary reticular formation provides inhibitory projections to cortex. Sleep-promoting centers are located in the lower brainstem (medulla/lower pons) near the raphe nuclei.",
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "physiology"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q285",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Concerning headache:",
+      "explanation": "Headache is a form of referred pain where intracranial and extracranial structures refer pain to the head through shared sensory innervation from trigeminal and cervical nerves.",
+      "keyConcept": "Headache is referred pain from intracranial/extracranial structures.",
+      "options": [
+        "It is an example of referred pain.",
+        "It is only caused by intracranial causes.",
+        "It is only caused by extracranial causes.",
+        "Migraine isn’t elicited by emotions.",
+        "Nausea and vomiting are not symptoms occurring during migraine attack."
+      ],
+      "correctIndex": 0,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "pharma"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q287",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The analgesia system includes:",
+      "explanation": "The analgesia system includes the periaqueductal grey matter in the midbrain and the raphe magnus nucleus in the medulla, which modulate pain transmission through descending inhibitory pathways.",
+      "keyConcept": "Analgesia system: periaqueductal area in midbrain, raphe magnus in medulla.",
+      "options": [
+        "Raphe magnus nucleus in the post horn of the spinal cord.",
+        "The peri-aqueductal area in the mid-brain.",
+        "The sensory area 1.",
+        "Supra-optic nuclei of the hypothalamus.",
+        "Dorsal root ganglion."
+      ],
+      "correctIndex": 1,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "pharma"
+    },
+    {
+      "id": "mcns2-ch3-pharma-q1",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which of the following is the best choice for patients with dementia due to substantia nigra lesion (Parkinson’s disease)?",
+      "explanation": "Rivastigmine is a centrally acting cholinesterase inhibitor FDA‑approved for dementia associated with Parkinson's disease, targeting the cholinergic deficit caused by basal forebrain degeneration.",
+      "keyConcept": "Rivastigmine is the cholinesterase inhibitor of choice for Parkinson's disease dementia.",
+      "options": [
+        "Rivastigmine",
+        "Memantine",
+        "Donepezil",
+        "Galantamine"
+      ],
+      "correctIndex": 0,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "pharma"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q43",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "A mood stabilizer safe in pregnant patients with bipolar depression is",
+      "explanation": "Carbamazepine has a relatively better fetal safety profile than valproate (which causes neural tube defects) and phenytoin.",
+      "keyConcept": "Carbamazepine has relatively better fetal safety profile than valproate or phenytoin.",
+      "options": [
+        "Valproate.",
+        "Carbamazepine.",
+        "Phenytoin.",
+        "Ethosuximide."
+      ],
+      "correctIndex": 1,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "pharma"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q45",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Teratogenic effects are more likely to be induced by",
+      "explanation": "Teratogenic effects are most likely with valproate AND phenytoin. Option D is correct. Valproate has the HIGHEST teratogenic potential (1-2% neural tube defects). Phenytoin causes fetal hydantoin syndrome. Carbamazepine has lower teratogenic risk. Both A and B are highly teratogenic.",
+      "keyConcept": "Valproate carries the highest risk of neural tube defects among antiepileptics; phenytoin causes fetal hydantoin syndrome.",
+      "options": [
+        "Phenytoin.",
+        "Valproate.",
+        "Carbamazepine.",
+        "A and B."
+      ],
+      "correctIndex": 3,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "pharma"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q176",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "A mood stabilizer safe in pregnant patients with bipolar depression:",
+      "explanation": "In pregnancy, lamotrigine is considered the safest mood stabilizer for bipolar disorder. Valproate is contraindicated (teratogenic). Carbamazepine and phenytoin have teratogenic effects but are considered somewhat safer than valproate. Ethosuximide is for absence seizures, not bipolar. The answer is A - lamotrigine is the mood stabilizer safe in pregnant patients with bipolar depression. It's FDA category C but has the best safety profile among mood stabilizers during pregnancy. Valproate causes neural tube defects, carbamazepine may cause neural tube defects but less frequently.",
+      "keyConcept": "Lamotrigine is the preferred mood stabilizer in pregnancy due to better safety profile than valproate or carbamazepine.",
+      "options": [
+        "Carbamazepine",
+        "Valproate",
+        "Phenytoin",
+        "Ethosuximide"
+      ],
+      "correctIndex": 0,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "pharma"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q179",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Teratogenic effects are more likely to be induced by:",
+      "explanation": "Both phenytoin and valproate are teratogenic. Valproate has the HIGHEST teratogenic potential among antiepileptics, causing neural tube defects (1-2% risk of spina bifida), craniofacial abnormalities, cardiovascular defects, and cognitive impairment. Phenytoin causes fetal hydantoin syndrome (craniofacial abnormalities, nail/digit hypoplasia, growth restriction). The risk with valproate is dose-dependent but present even at low doses. Carbamazepine also has teratogenic potential but lower than valproate. The answer is D (A & B) because both phenytoin and valproate are highly teratogenic, with valproate being worse.",
+      "keyConcept": "Valproate has the highest teratogenic risk among antiepileptics, followed by phenytoin; both should be avoided in pregnancy.",
+      "options": [
+        "Phenytoin",
+        "Valproate",
+        "Carbamazepine",
+        "A & B"
+      ],
+      "correctIndex": 1,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "pharma"
+    },
+    {
+      "id": "mcns2-ch10-pharma-q26",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "An antiepileptic suitable for a pregnant women with tonic clonic epilepsy is",
+      "explanation": "Carbamazepine is suitable for pregnant women with tonic clonic epilepsy. Option B is correct. Among the options, carbamazepine has relatively lower teratogenic risk than valproate (neural tube defects) and phenytoin (fetal hydantoin syndrome). Ethosuximide (D) is for absence seizures only.",
+      "keyConcept": "Carbamazepine is preferred over valproate in pregnancy due to lower neural tube defect risk.",
+      "options": [
+        "Phenytoin.",
+        "Carbamazepine.",
+        "Valproate.",
+        "Ethosuximide."
+      ],
+      "correctIndex": 1,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "pharma"
+    },
+    {
+      "id": "mcns2-ch10-pharma-q29",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The following antiepileptic is not preferred during pregnancy",
+      "explanation": "Valproate is NOT preferred during pregnancy. Option D is correct. Valproate has the HIGHEST teratogenic risk (1-2% neural tube defects). Lamotrigine and levetiracetam are considered safer alternatives. Carbamazepine has intermediate risk. All antiepileptics carry some risk, but valproate is most contraindicated.",
+      "keyConcept": "Valproate's high teratogenic potential (neural tube defects) makes it contraindicated in pregnancy.",
+      "options": [
+        "Lamotrigine",
+        "Carbamazepine",
+        "Levetiracetam",
+        "Valproate"
+      ],
+      "correctIndex": 3,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "pharma"
+    },
+    {
+      "id": "mcns2-ch10-pharma-q85",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The following antiepileptic is not preferred during pregnancy:",
+      "explanation": "Valproate is CONTRAINDICATED in pregnancy due to significant teratogenicity. It causes neural tube defects (spina bifida), craniofacial abnormalities, and developmental delays. FDA pregnancy category X for migraine use. Lamotrigine and levetiracetam are considered safer options during pregnancy (though not ideal). Carbamazepine also has teratogenic potential but less than valproate. Valproate's risks far outweigh benefits in pregnancy - it's absolutely contraindicated especially during first trimester for any indication (epilepsy, migraine, bipolar).",
+      "keyConcept": "Valproate is contraindicated in pregnancy due to neural tube defects and significant teratogenic effects.",
+      "options": [
+        "Lamotrigine",
+        "Carbamazepine",
+        "Levetiracetam",
+        "Valproate"
+      ],
+      "correctIndex": 3,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "pharma"
+    },
+    {
+      "id": "mcns2-ch10-pharma-q92",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "An antiepileptic suitable for a pregnant woman with tonic clonic epilepsy is:",
+      "explanation": "Carbamazepine is the safest antiepileptic option during pregnancy for tonic-clonic epilepsy. Valproate (C) is absolutely contraindicated (neural tube defects). Phenytoin (A) and valproate have teratogenic effects. Ethosuximide (D) is not effective for tonic-clonic seizures. Carbamazepine is FDA category D (positive evidence of risk) but among the available options, it's considered safer than valproate. The answer is B - carbamazepine is suitable for pregnant women with tonic-clonic epilepsy, though ideally lamotrigine would be preferred.",
+      "keyConcept": "Carbamazepine is the least teratogenic among traditional antiepileptics for tonic-clonic epilepsy in pregnancy.",
+      "options": [
+        "Phenytoin",
+        "Carbamazepine",
+        "Valproate",
+        "Ethosuximide"
+      ],
+      "correctIndex": 1,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "pharma"
+    },
+    {
+      "id": "mcns2-ch10-pharma-q139",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The following antiepileptic drug is not preferred in pregnancy:",
+      "explanation": "Valproate is teratogenic (neural tube defects) and should be avoided in pregnancy. Lamotrigine and carbamazepine are safer options but still require careful risk-benefit analysis. All AEDs have some risk.",
+      "keyConcept": "Valproate is most teratogenic AED, not preferred in pregnancy",
+      "options": [
+        "Lamotrigine",
+        "Carbamazepine",
+        "Valproate",
+        "All of the above"
+      ],
+      "correctIndex": 2,
+      "chapterTitle": "X. Miscellaneous & Embryology",
+      "subject": "pharma"
+    }
+  ]
+}

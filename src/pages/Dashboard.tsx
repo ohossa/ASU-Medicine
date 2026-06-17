@@ -8,7 +8,7 @@ import { PortalShell } from '../app/components/PortalShell';
 import { applySubjectTheme } from '../app/theme/subjectThemes';
 import { pulse } from '../app/lib/pulseEngine';
 import { CardShell } from '../components/cards/PremiumCards';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { pageVariants } from '../app/lib/motion';
 
 /* ────────────────────────────────────────────────

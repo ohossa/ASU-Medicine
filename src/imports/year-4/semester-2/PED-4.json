@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "comingSoon": true,
+  "meta": {
+    "moduleCode": "PED-4",
+    "moduleName": "Pediatrics",
+    "year": 4,
+    "semester": 2,
+    "creditPoints": 3.5,
+    "totalMarks": 70,
+    "keywords": [
+      "pediatrics",
+      "ped"
+    ]
+  },
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Growth, Development & Nutrition",
+      "subtitle": "Growth, Development & Nutrition",
+      "emoji": "👶",
+      "page": 1,
+      "lectureRange": "Lectures 1",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 2,
+      "title": "Neonatology",
+      "subtitle": "Neonatology",
+      "emoji": "🍼",
+      "page": 2,
+      "lectureRange": "Lectures 2",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 3,
+      "title": "Pediatric Infectious Diseases & Systemic Pathology",
+      "subtitle": "Pediatric Infectious Diseases & Systemic Pathology",
+      "emoji": "🦠",
+      "page": 3,
+      "lectureRange": "Lectures 3",
+      "subjects": [],
+      "keywords": []
+    }
+  ]
+}

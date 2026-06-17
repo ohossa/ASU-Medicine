@@ -1,0 +1,6207 @@
+{
+  "moduleCode": "MCNS-2",
+  "questions": [
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Lidocaine is preferred to bupivacaine in local anesthesia due to:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Higher pKa",
+        "Longer duration",
+        "Higher potency",
+        "More rapid onset"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Ethosuximide is useful in:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Partial epilepsy",
+        "Absence seizure",
+        "Tonic clonic",
+        "A and B"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following antiepileptic drug is not preferred in pregnancy:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Lamotrigine",
+        "Carbamazepine",
+        "Valproate",
+        "All of the above"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following anesthetic agent is not acting through increase GABA activity:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Halothane",
+        "Propofol",
+        "Ketamine",
+        "Isoflurane"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is not correctly matched to its mechanism of action?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Phenytoin / sodium channel blockade",
+        "Clonazepam / Cl channel blockade",
+        "Valproate / inhibition of GABA transaminase",
+        "Ethosuximide / Ca++ channel blockade"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Riluzole is prescribed in Amyotrophic lateral sclerosis to:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Decrease onset of dementia",
+        "Decrease confusion and headache",
+        "Decrease need for ventilator",
+        "All of the above"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Nicotine abuse may be managed by:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Varenicline",
+        "Bupropion",
+        "Buprenorphine",
+        "Acamprosate",
+        "A and B"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following analgesic is not recommended to be taken in renal failure or more than 48 hours for fear of convulsions:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Morphine",
+        "Tramadol",
+        "Meperidine",
+        "Codeine"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following is not true about local anesthetics:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Adding sodium bicarbonate increases activity of local anesthetics",
+        "Bupivacaine is short acting",
+        "Lidocaine is an amide",
+        "Benzocaine is used as surface anesthetic"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following antiepileptic drug is not an enzyme inducer:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Phenytoin",
+        "Carbamazepine",
+        "Valproate",
+        "Phenobarbital"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following anesthetic agent is not acting through increase GABA activity:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Halothane",
+        "Propofol",
+        "Ketamine",
+        "Isoflurane"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is 1st choice as empiric antibiotic in meningitis suspected to streptococcal agalactia in 55 year old patient?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Ampicillin + ceftriaxone",
+        "Vancomycin + ceftriaxone",
+        "Vancomycin + ceftriaxone + Ampicillin",
+        "Vancomycin + Cefepime"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is correct regarding Fingolimod?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Decrease BBB invasion by T- lymphocyte",
+        "Prevent T lymphocyte migration from lymph node",
+        "Used with caution in cardiac patients",
+        "All of the above"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "A drug effective in reducing emotional bluntness in schizophrenics is:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Carbamazepine",
+        "Clozapine",
+        "Chlorpromazine",
+        "Clonazepam"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following opioid drug should be avoided in patient taking MAOI:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Morphine",
+        "Fentanyl",
+        "Meperidine",
+        "Codeine"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Lidocaine is preferred to bupivacaine in local anesthesia due to:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Higher pKa",
+        "Longer duration",
+        "Higher potency",
+        "More rapid onset"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Ethosuximide is useful in:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Partial epilepsy",
+        "Absence seizure",
+        "Tonic clonic",
+        "A and B"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following antiepileptic drug is not preferred in pregnancy:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Lamotrigine",
+        "Carbamazepine",
+        "Valproate",
+        "All of the above"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following anesthetic agent is not acting through increase GABA activity:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Halothane",
+        "Propofol",
+        "Ketamine",
+        "Isoflurane"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is not correctly matched to its mechanism of action?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Phenytoin / sodium channel blockade",
+        "Clonazepam / Cl channel blockade",
+        "Valproate / inhibition of GABA transaminase",
+        "Ethosuximide / Ca++ channel blockade"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Riluzole is prescribed in Amyotrophic lateral sclerosis to:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Decrease onset of dementia",
+        "Decrease confusion and headache",
+        "Decrease need for ventilator",
+        "All of the above"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Nicotine abuse may be managed by:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Varenicline",
+        "Bupropion",
+        "Buprenorphine",
+        "Acamprosate",
+        "A and B"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following analgesic is not recommended to be taken in renal failure or more than 48 hours for fear of convulsions:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Morphine",
+        "Tramadol",
+        "Meperidine",
+        "Codeine"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following is not true about local anesthetics:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Adding sodium bicarbonate increases activity of local anesthetics",
+        "Bupivacaine is short acting",
+        "Lidocaine is an amide",
+        "Benzocaine is used as surface anesthetic"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following antiepileptic drug is not an enzyme inducer:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Phenytoin",
+        "Carbamazepine",
+        "Valproate",
+        "Phenobarbital"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following anesthetic agent is not acting through increase GABA activity:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Halothane",
+        "Propofol",
+        "Ketamine",
+        "Isoflurane"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is 1st choice as empiric antibiotic in meningitis suspected to streptococcal agalactia in 55 year old patient?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Ampicillin + ceftriaxone",
+        "Vancomycin + ceftriaxone",
+        "Vancomycin + ceftriaxone + Ampicillin",
+        "Vancomycin + Cefepime"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is correct regarding Fingolimod?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Decrease BBB invasion by T- lymphocyte",
+        "Prevent T lymphocyte migration from lymph node",
+        "Used with caution in cardiac patients",
+        "All of the above"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "A drug effective in reducing emotional bluntness in schizophrenics is:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Carbamazepine",
+        "Clozapine",
+        "Chlorpromazine",
+        "Clonazepam"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following opioid drug should be avoided in patient taking MAOI:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Morphine",
+        "Fentanyl",
+        "Meperidine",
+        "Codeine"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Lidocaine is preferred to bupivacaine in local anesthesia due to:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Higher pKa",
+        "Longer duration",
+        "Higher potency",
+        "More rapid onset"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Ethosuximide is useful in:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Partial epilepsy",
+        "Absence seizure",
+        "Tonic clonic",
+        "A and B"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following antiepileptic drug is not preferred in pregnancy:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Lamotrigine",
+        "Carbamazepine",
+        "Valproate",
+        "All of the above"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following anesthetic agent is not acting through increase GABA activity:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Halothane",
+        "Propofol",
+        "Ketamine",
+        "Isoflurane"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is not correctly matched to its mechanism of action?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Phenytoin / sodium channel blockade",
+        "Clonazepam / Cl channel blockade",
+        "Valproate / inhibition of GABA transaminase",
+        "Ethosuximide / Ca++ channel blockade"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Riluzole is prescribed in Amyotrophic lateral sclerosis to:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Decrease onset of dementia",
+        "Decrease confusion and headache",
+        "Decrease need for ventilator",
+        "All of the above"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Nicotine abuse may be managed by:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Varenicline",
+        "Bupropion",
+        "Buprenorphine",
+        "Acamprosate",
+        "A and B"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following analgesic is not recommended to be taken in renal failure or more than 48 hours for fear of convulsions:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Morphine",
+        "Tramadol",
+        "Meperidine",
+        "Codeine"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following is not true about local anesthetics:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Adding sodium bicarbonate increases activity of local anesthetics",
+        "Bupivacaine is short acting",
+        "Lidocaine is an amide",
+        "Benzocaine is used as surface anesthetic"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following antiepileptic drug is not an enzyme inducer:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Phenytoin",
+        "Carbamazepine",
+        "Valproate",
+        "Phenobarbital"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following anesthetic agent is not acting through increase GABA activity:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Halothane",
+        "Propofol",
+        "Ketamine",
+        "Isoflurane"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is 1st choice as empiric antibiotic in meningitis suspected to streptococcal agalactia in 55 year old patient?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Ampicillin + ceftriaxone",
+        "Vancomycin + ceftriaxone",
+        "Vancomycin + ceftriaxone + Ampicillin",
+        "Vancomycin + Cefepime"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is correct regarding Fingolimod?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Decrease BBB invasion by T- lymphocyte",
+        "Prevent T lymphocyte migration from lymph node",
+        "Used with caution in cardiac patients",
+        "All of the above"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "A drug effective in reducing emotional bluntness in schizophrenics is:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Carbamazepine",
+        "Clozapine",
+        "Chlorpromazine",
+        "Clonazepam"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following opioid drug should be avoided in patient taking MAOI:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Morphine",
+        "Fentanyl",
+        "Meperidine",
+        "Codeine"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Lidocaine is preferred to bupivacaine in local anesthesia due to:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Higher pKa",
+        "Longer duration",
+        "Higher potency",
+        "More rapid onset"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Ethosuximide is useful in:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Partial epilepsy",
+        "Absence seizure",
+        "Tonic clonic",
+        "A and B"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following antiepileptic drug is not preferred in pregnancy:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Lamotrigine",
+        "Carbamazepine",
+        "Valproate",
+        "All of the above"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following anesthetic agent is not acting through increase GABA activity:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Halothane",
+        "Propofol",
+        "Ketamine",
+        "Isoflurane"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is not correctly matched to its mechanism of action?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Phenytoin / sodium channel blockade",
+        "Clonazepam / Cl channel blockade",
+        "Valproate / inhibition of GABA transaminase",
+        "Ethosuximide / Ca++ channel blockade"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Riluzole is prescribed in Amyotrophic lateral sclerosis to:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Decrease onset of dementia",
+        "Decrease confusion and headache",
+        "Decrease need for ventilator",
+        "All of the above"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Nicotine abuse may be managed by:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Varenicline",
+        "Bupropion",
+        "Buprenorphine",
+        "Acamprosate",
+        "A and B"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following analgesic is not recommended to be taken in renal failure or more than 48 hours for fear of convulsions:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Morphine",
+        "Tramadol",
+        "Meperidine",
+        "Codeine"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following is not true about local anesthetics:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Adding sodium bicarbonate increases activity of local anesthetics",
+        "Bupivacaine is short acting",
+        "Lidocaine is an amide",
+        "Benzocaine is used as surface anesthetic"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following antiepileptic drug is not an enzyme inducer:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Phenytoin",
+        "Carbamazepine",
+        "Valproate",
+        "Phenobarbital"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following anesthetic agent is not acting through increase GABA activity:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Halothane",
+        "Propofol",
+        "Ketamine",
+        "Isoflurane"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is 1st choice as empiric antibiotic in meningitis suspected to streptococcal agalactia in 55 year old patient?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Ampicillin + ceftriaxone",
+        "Vancomycin + ceftriaxone",
+        "Vancomycin + ceftriaxone + Ampicillin",
+        "Vancomycin + Cefepime"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is correct regarding Fingolimod?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Decrease BBB invasion by T- lymphocyte",
+        "Prevent T lymphocyte migration from lymph node",
+        "Used with caution in cardiac patients",
+        "All of the above"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "A drug effective in reducing emotional bluntness in schizophrenics is:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Carbamazepine",
+        "Clozapine",
+        "Chlorpromazine",
+        "Clonazepam"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following opioid drug should be avoided in patient taking MAOI:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Morphine",
+        "Fentanyl",
+        "Meperidine",
+        "Codeine"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Lidocaine is preferred to bupivacaine in local anesthesia due to:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Higher pKa",
+        "Longer duration",
+        "Higher potency",
+        "More rapid onset"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Ethosuximide is useful in:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Partial epilepsy",
+        "Absence seizure",
+        "Tonic clonic",
+        "A and B"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following antiepileptic drug is not preferred in pregnancy:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Lamotrigine",
+        "Carbamazepine",
+        "Valproate",
+        "All of the above"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following anesthetic agent is not acting through increase GABA activity:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Halothane",
+        "Propofol",
+        "Ketamine",
+        "Isoflurane"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is not correctly matched to its mechanism of action?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Phenytoin / sodium channel blockade",
+        "Clonazepam / Cl channel blockade",
+        "Valproate / inhibition of GABA transaminase",
+        "Ethosuximide / Ca++ channel blockade"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Riluzole is prescribed in Amyotrophic lateral sclerosis to:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Decrease onset of dementia",
+        "Decrease confusion and headache",
+        "Decrease need for ventilator",
+        "All of the above"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Nicotine abuse may be managed by:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Varenicline",
+        "Bupropion",
+        "Buprenorphine",
+        "Acamprosate",
+        "A and B"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following analgesic is not recommended to be taken in renal failure or more than 48 hours for fear of convulsions:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Morphine",
+        "Tramadol",
+        "Meperidine",
+        "Codeine"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following is not true about local anesthetics:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Adding sodium bicarbonate increases activity of local anesthetics",
+        "Bupivacaine is short acting",
+        "Lidocaine is an amide",
+        "Benzocaine is used as surface anesthetic"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following antiepileptic drug is not an enzyme inducer:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Phenytoin",
+        "Carbamazepine",
+        "Valproate",
+        "Phenobarbital"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following anesthetic agent is not acting through increase GABA activity:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Halothane",
+        "Propofol",
+        "Ketamine",
+        "Isoflurane"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is 1st choice as empiric antibiotic in meningitis suspected to streptococcal agalactia in 55 year old patient?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Ampicillin + ceftriaxone",
+        "Vancomycin + ceftriaxone",
+        "Vancomycin + ceftriaxone + Ampicillin",
+        "Vancomycin + Cefepime"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is correct regarding Fingolimod?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Decrease BBB invasion by T- lymphocyte",
+        "Prevent T lymphocyte migration from lymph node",
+        "Used with caution in cardiac patients",
+        "All of the above"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "A drug effective in reducing emotional bluntness in schizophrenics is:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Carbamazepine",
+        "Clozapine",
+        "Chlorpromazine",
+        "Clonazepam"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following opioid drug should be avoided in patient taking MAOI:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Morphine",
+        "Fentanyl",
+        "Meperidine",
+        "Codeine"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Lidocaine is preferred to bupivacaine in local anesthesia due to:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Higher pKa",
+        "Longer duration",
+        "Higher potency",
+        "More rapid onset"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Ethosuximide is useful in:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Partial epilepsy",
+        "Absence seizure",
+        "Tonic clonic",
+        "A and B"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following antiepileptic drug is not preferred in pregnancy:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Lamotrigine",
+        "Carbamazepine",
+        "Valproate",
+        "All of the above"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following anesthetic agent is not acting through increase GABA activity:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Halothane",
+        "Propofol",
+        "Ketamine",
+        "Isoflurane"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is not correctly matched to its mechanism of action?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Phenytoin / sodium channel blockade",
+        "Clonazepam / Cl channel blockade",
+        "Valproate / inhibition of GABA transaminase",
+        "Ethosuximide / Ca++ channel blockade"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Riluzole is prescribed in Amyotrophic lateral sclerosis to:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Decrease onset of dementia",
+        "Decrease confusion and headache",
+        "Decrease need for ventilator",
+        "All of the above"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Nicotine abuse may be managed by:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Varenicline",
+        "Bupropion",
+        "Buprenorphine",
+        "Acamprosate",
+        "A and B"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following analgesic is not recommended to be taken in renal failure or more than 48 hours for fear of convulsions:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Morphine",
+        "Tramadol",
+        "Meperidine",
+        "Codeine"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following is not true about local anesthetics:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Adding sodium bicarbonate increases activity of local anesthetics",
+        "Bupivacaine is short acting",
+        "Lidocaine is an amide",
+        "Benzocaine is used as surface anesthetic"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following antiepileptic drug is not an enzyme inducer:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Phenytoin",
+        "Carbamazepine",
+        "Valproate",
+        "Phenobarbital"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following anesthetic agent is not acting through increase GABA activity:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Halothane",
+        "Propofol",
+        "Ketamine",
+        "Isoflurane"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is 1st choice as empiric antibiotic in meningitis suspected to streptococcal agalactia in 55 year old patient?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Ampicillin + ceftriaxone",
+        "Vancomycin + ceftriaxone",
+        "Vancomycin + ceftriaxone + Ampicillin",
+        "Vancomycin + Cefepime"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is correct regarding Fingolimod?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Decrease BBB invasion by T- lymphocyte",
+        "Prevent T lymphocyte migration from lymph node",
+        "Used with caution in cardiac patients",
+        "All of the above"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "A drug effective in reducing emotional bluntness in schizophrenics is:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Carbamazepine",
+        "Clozapine",
+        "Chlorpromazine",
+        "Clonazepam"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following opioid drug should be avoided in patient taking MAOI:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Morphine",
+        "Fentanyl",
+        "Meperidine",
+        "Codeine"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Lidocaine is preferred to bupivacaine in local anesthesia due to:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Higher pKa",
+        "Longer duration",
+        "Higher potency",
+        "More rapid onset"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Ethosuximide is useful in:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Partial epilepsy",
+        "Absence seizure",
+        "Tonic clonic",
+        "A and B"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following antiepileptic drug is not preferred in pregnancy:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Lamotrigine",
+        "Carbamazepine",
+        "Valproate",
+        "All of the above"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following anesthetic agent is not acting through increase GABA activity:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Halothane",
+        "Propofol",
+        "Ketamine",
+        "Isoflurane"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is not correctly matched to its mechanism of action?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Phenytoin / sodium channel blockade",
+        "Clonazepam / Cl channel blockade",
+        "Valproate / inhibition of GABA transaminase",
+        "Ethosuximide / Ca++ channel blockade"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Riluzole is prescribed in Amyotrophic lateral sclerosis to:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Decrease onset of dementia",
+        "Decrease confusion and headache",
+        "Decrease need for ventilator",
+        "All of the above"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Nicotine abuse may be managed by:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Varenicline",
+        "Bupropion",
+        "Buprenorphine",
+        "Acamprosate",
+        "A and B"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following analgesic is not recommended to be taken in renal failure or more than 48 hours for fear of convulsions:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Morphine",
+        "Tramadol",
+        "Meperidine",
+        "Codeine"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following is not true about local anesthetics:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Adding sodium bicarbonate increases activity of local anesthetics",
+        "Bupivacaine is short acting",
+        "Lidocaine is an amide",
+        "Benzocaine is used as surface anesthetic"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following antiepileptic drug is not an enzyme inducer:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Phenytoin",
+        "Carbamazepine",
+        "Valproate",
+        "Phenobarbital"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following anesthetic agent is not acting through increase GABA activity:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Halothane",
+        "Propofol",
+        "Ketamine",
+        "Isoflurane"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is 1st choice as empiric antibiotic in meningitis suspected to streptococcal agalactia in 55 year old patient?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Ampicillin + ceftriaxone",
+        "Vancomycin + ceftriaxone",
+        "Vancomycin + ceftriaxone + Ampicillin",
+        "Vancomycin + Cefepime"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is correct regarding Fingolimod?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Decrease BBB invasion by T- lymphocyte",
+        "Prevent T lymphocyte migration from lymph node",
+        "Used with caution in cardiac patients",
+        "All of the above"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "A drug effective in reducing emotional bluntness in schizophrenics is:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Carbamazepine",
+        "Clozapine",
+        "Chlorpromazine",
+        "Clonazepam"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following opioid drug should be avoided in patient taking MAOI:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Morphine",
+        "Fentanyl",
+        "Meperidine",
+        "Codeine"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Lidocaine is preferred to bupivacaine in local anesthesia due to:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Higher pKa",
+        "Longer duration",
+        "Higher potency",
+        "More rapid onset"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Ethosuximide is useful in:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Partial epilepsy",
+        "Absence seizure",
+        "Tonic clonic",
+        "A and B"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following antiepileptic drug is not preferred in pregnancy:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Lamotrigine",
+        "Carbamazepine",
+        "Valproate",
+        "All of the above"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following anesthetic agent is not acting through increase GABA activity:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Halothane",
+        "Propofol",
+        "Ketamine",
+        "Isoflurane"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is not correctly matched to its mechanism of action?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Phenytoin / sodium channel blockade",
+        "Clonazepam / Cl channel blockade",
+        "Valproate / inhibition of GABA transaminase",
+        "Ethosuximide / Ca++ channel blockade"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Riluzole is prescribed in Amyotrophic lateral sclerosis to:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Decrease onset of dementia",
+        "Decrease confusion and headache",
+        "Decrease need for ventilator",
+        "All of the above"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Nicotine abuse may be managed by:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Varenicline",
+        "Bupropion",
+        "Buprenorphine",
+        "Acamprosate",
+        "A and B"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following analgesic is not recommended to be taken in renal failure or more than 48 hours for fear of convulsions:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Morphine",
+        "Tramadol",
+        "Meperidine",
+        "Codeine"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following is not true about local anesthetics:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Adding sodium bicarbonate increases activity of local anesthetics",
+        "Bupivacaine is short acting",
+        "Lidocaine is an amide",
+        "Benzocaine is used as surface anesthetic"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following antiepileptic drug is not an enzyme inducer:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Phenytoin",
+        "Carbamazepine",
+        "Valproate",
+        "Phenobarbital"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following anesthetic agent is not acting through increase GABA activity:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Halothane",
+        "Propofol",
+        "Ketamine",
+        "Isoflurane"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is 1st choice as empiric antibiotic in meningitis suspected to streptococcal agalactia in 55 year old patient?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Ampicillin + ceftriaxone",
+        "Vancomycin + ceftriaxone",
+        "Vancomycin + ceftriaxone + Ampicillin",
+        "Vancomycin + Cefepime"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is correct regarding Fingolimod?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Decrease BBB invasion by T- lymphocyte",
+        "Prevent T lymphocyte migration from lymph node",
+        "Used with caution in cardiac patients",
+        "All of the above"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "A drug effective in reducing emotional bluntness in schizophrenics is:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Carbamazepine",
+        "Clozapine",
+        "Chlorpromazine",
+        "Clonazepam"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following opioid drug should be avoided in patient taking MAOI:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Morphine",
+        "Fentanyl",
+        "Meperidine",
+        "Codeine"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Lidocaine is preferred to bupivacaine in local anesthesia due to:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Higher pKa",
+        "Longer duration",
+        "Higher potency",
+        "More rapid onset"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Ethosuximide is useful in:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Partial epilepsy",
+        "Absence seizure",
+        "Tonic clonic",
+        "A and B"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following antiepileptic drug is not preferred in pregnancy:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Lamotrigine",
+        "Carbamazepine",
+        "Valproate",
+        "All of the above"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following anesthetic agent is not acting through increase GABA activity:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Halothane",
+        "Propofol",
+        "Ketamine",
+        "Isoflurane"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is not correctly matched to its mechanism of action?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Phenytoin / sodium channel blockade",
+        "Clonazepam / Cl channel blockade",
+        "Valproate / inhibition of GABA transaminase",
+        "Ethosuximide / Ca++ channel blockade"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Riluzole is prescribed in Amyotrophic lateral sclerosis to:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Decrease onset of dementia",
+        "Decrease confusion and headache",
+        "Decrease need for ventilator",
+        "All of the above"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Nicotine abuse may be managed by:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Varenicline",
+        "Bupropion",
+        "Buprenorphine",
+        "Acamprosate",
+        "A and B"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following analgesic is not recommended to be taken in renal failure or more than 48 hours for fear of convulsions:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Morphine",
+        "Tramadol",
+        "Meperidine",
+        "Codeine"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following is not true about local anesthetics:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Adding sodium bicarbonate increases activity of local anesthetics",
+        "Bupivacaine is short acting",
+        "Lidocaine is an amide",
+        "Benzocaine is used as surface anesthetic"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following antiepileptic drug is not an enzyme inducer:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Phenytoin",
+        "Carbamazepine",
+        "Valproate",
+        "Phenobarbital"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following anesthetic agent is not acting through increase GABA activity:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Halothane",
+        "Propofol",
+        "Ketamine",
+        "Isoflurane"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is 1st choice as empiric antibiotic in meningitis suspected to streptococcal agalactia in 55 year old patient?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Ampicillin + ceftriaxone",
+        "Vancomycin + ceftriaxone",
+        "Vancomycin + ceftriaxone + Ampicillin",
+        "Vancomycin + Cefepime"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is correct regarding Fingolimod?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Decrease BBB invasion by T- lymphocyte",
+        "Prevent T lymphocyte migration from lymph node",
+        "Used with caution in cardiac patients",
+        "All of the above"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "A drug effective in reducing emotional bluntness in schizophrenics is:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Carbamazepine",
+        "Clozapine",
+        "Chlorpromazine",
+        "Clonazepam"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following opioid drug should be avoided in patient taking MAOI:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Morphine",
+        "Fentanyl",
+        "Meperidine",
+        "Codeine"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Lidocaine is preferred to bupivacaine in local anesthesia due to:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Higher pKa",
+        "Longer duration",
+        "Higher potency",
+        "More rapid onset"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Ethosuximide is useful in:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Partial epilepsy",
+        "Absence seizure",
+        "Tonic clonic",
+        "A and B"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following antiepileptic drug is not preferred in pregnancy:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Lamotrigine",
+        "Carbamazepine",
+        "Valproate",
+        "All of the above"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following anesthetic agent is not acting through increase GABA activity:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Halothane",
+        "Propofol",
+        "Ketamine",
+        "Isoflurane"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is not correctly matched to its mechanism of action?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Phenytoin / sodium channel blockade",
+        "Clonazepam / Cl channel blockade",
+        "Valproate / inhibition of GABA transaminase",
+        "Ethosuximide / Ca++ channel blockade"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Riluzole is prescribed in Amyotrophic lateral sclerosis to:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Decrease onset of dementia",
+        "Decrease confusion and headache",
+        "Decrease need for ventilator",
+        "All of the above"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Nicotine abuse may be managed by:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Varenicline",
+        "Bupropion",
+        "Buprenorphine",
+        "Acamprosate",
+        "A and B"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following analgesic is not recommended to be taken in renal failure or more than 48 hours for fear of convulsions:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Morphine",
+        "Tramadol",
+        "Meperidine",
+        "Codeine"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following is not true about local anesthetics:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Adding sodium bicarbonate increases activity of local anesthetics",
+        "Bupivacaine is short acting",
+        "Lidocaine is an amide",
+        "Benzocaine is used as surface anesthetic"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following antiepileptic drug is not an enzyme inducer:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Phenytoin",
+        "Carbamazepine",
+        "Valproate",
+        "Phenobarbital"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The following anesthetic agent is not acting through increase GABA activity:",
+      "explanation": "N/A\n\nKEY",
+      "keyConcept": "",
+      "options": [
+        "Halothane",
+        "Propofol",
+        "Ketamine",
+        "Isoflurane"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which of the following does not contain channels that are activated by mechanical distortion?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Muscle spindle.",
+        "Pacinian corpuscles.",
+        "Hair cells in cochlea.",
+        "Hair end organs."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Concerning synapses, which of the following is true?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Chemical synapses are not widely distributed in CNS.",
+        "Electric synapses are characterized by delayed transmission.",
+        "Electric synapse is a unidirectional synapse.",
+        "Chemical synapses are affected by many drugs and chemicals."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which of the following could NOT be an exteroceptor?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Muscle spindle.",
+        "Thermoreceptor.",
+        "Nociceptor.",
+        "Pacinian corpuscle.",
+        "Rods."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 4,
+      "type": "mcq",
+      "text": "Pain sensation is characterized by:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Sharply localized.",
+        "Perceived at the sensory cortex.",
+        "Occurs in skin, deep structures, and viscera.",
+        "Glutamate is the neurotransmitter involved in its conduction.",
+        "Slow pain."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Spinal Cord Tracts",
+      "chapterId": 6,
+      "subject": "Physiology",
+      "lecture": 5,
+      "type": "mcq",
+      "text": "The pyramidal tract:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Arises only from subcortical areas.",
+        "Carries its functions immediately after birth.",
+        "Most of its fibers do not cross.",
+        "Responsible for fine movements.",
+        "Some fibers are facilitatory and others are inhibitory to Stretch reflex."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 5,
+      "type": "mcq",
+      "text": "Muscle tone is NOT reduced in the following condition:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Area 6 lesion.",
+        "Tabes dorsalis.",
+        "Parkinsonism",
+        "UMNL",
+        "Paleocerebellar lesion."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 5,
+      "type": "mcq",
+      "text": "Tendon jerks are exaggerated in:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Anterior horn cell disease.",
+        "Dorsal root lesions",
+        "Chorea.",
+        "Internal capsule lesion.",
+        "Parkinsonism."
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 5,
+      "type": "mcq",
+      "text": "The ankle jerk is exaggerated:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Immediately after complete transection of spinal cord at mid-thoracic region.",
+        "In Parkinsonism.",
+        "In neocerebellar disease.",
+        "On the right side after damage in the left internal capsule.",
+        "In LMNL"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Spinal Cord Tracts",
+      "chapterId": 6,
+      "subject": "Physiology",
+      "lecture": 5,
+      "type": "mcq",
+      "text": "Damage which interrupt upper motor neuron pathways in the internal capsule would NOT lead to:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Paralysis and loss of fine voluntary movements especially Of the hand & fingers.",
+        "Wasting of muscles.",
+        "Loss of abdominal reflex.",
+        "Positive Babinski sign.",
+        "Hyperreflexia on the contralateral side."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 5,
+      "type": "mcq",
+      "text": "Clonus:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Is a flexion withdrawal reflex.",
+        "Occurs on the same side of the body after unilateral Damage to the internal capsule.",
+        "Is present in muscles with lower motor neuron lesion.",
+        "Can be elicited by sudden maintained stretch of a Hypertonic muscle.",
+        "Is present in muscles with upper motor neuron lesion."
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 5,
+      "type": "mcq",
+      "text": "Babinski sign is present in:",
+      "explanation": "",
+      "keyConcept": "N/A",
+      "options": [
+        "Hypertonic muscle.",
+        "Lower motor neuron lesion.",
+        "Upper motor neuron lesion.",
+        "Cerebellar lesion.",
+        "Coma."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Physiology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which ion is primarily responsible for rapid depolarization during an action potential?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "K+",
+        "Ca2+",
+        "Na+",
+        "Cl-"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The resting membrane potential is closest to the equilibrium potential of which ion?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Na+",
+        "K+",
+        "Ca2+",
+        "Cl-"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Lesion of the internal capsule results in:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Spastic paralysis of the contralateral side of the body.",
+        "Flaccid paralysis of both sides of the body.",
+        "Clonus in muscles of the same side",
+        "Exaggerated tendon jerk on the same side of the lesion"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Spinal Cord Tracts",
+      "chapterId": 6,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following observation would suggest that an upper motor neuron lesion rather than a lower motor neuron lesion is present?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Marked muscle atrophy.",
+        "Hyporeflexia.",
+        "Spasticity.",
+        "Fasciculations.",
+        "Localized paralysis."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The cerebellum is NOT involved in:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Maintenance of posture",
+        "Coordination of movements",
+        "Regulation of reflexes",
+        "Control of voluntary movements",
+        "Sensory perception"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Parkinson’s disease is characterized by:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Tremors that worsen by movements.",
+        "Paralysis of one side of the body.",
+        "Lead-pipe rigidity.",
+        "Rebound phenomenon.",
+        "Clonus."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The reticular formation is responsible for:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Regulating sleep and arousal",
+        "Controlling voluntary movements",
+        "Maintaining posture",
+        "Regulating reflexes",
+        "Sensory perception"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is NOT a function of the prefrontal association area?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Operation of working memory.",
+        "Storage of coordinated vocalization programs.",
+        "Decision making and personality traits.",
+        "Language comprehension.",
+        "Motor control"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which sentence is NOT true regarding consolidation of memory?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "It is the conversion of short-term memory to a long-term one.",
+        "It is completed in 5 minutes.",
+        "It represents the time needed for the structural and functional synaptic changes to take place.",
+        "It occurs in neocortex.",
+        "It increases and fastens by focusing and rehearsal."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Pathology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "What is the most common cause of dementia in the elderly population?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Alzheimer’s Disease (AD)",
+        "Parkinson’s Disease (PD)",
+        "Huntington’s Disease (HD)",
+        "Amyotrophic Lateral Sclerosis (ALS)",
+        "Multiple Sclerosis (MS)"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pathology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "What is the crucial event in the pathogenesis of Alzheimer’s Disease (AD)?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Accumulation of Beta Amyloid Peptide (AB) in the brain over time",
+        "Degeneration of dopamine-producing neurons",
+        "Formation of neurofibrillary tangles",
+        "Inflammation of the brain tissue",
+        "Oxidative stress"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pathology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "What is the role of Amyloid Precursor Protein (APP) in Alzheimer’s Disease (AD)?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "APP is sequentially cleaved by enzymes to generate AB.",
+        "APP is involved in the formation of neurofibrillary tangles.",
+        "APP is responsible for the degradation of beta amyloid peptide.",
+        "APP is a receptor for beta amyloid peptide.",
+        "APP is a neurotransmitter."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Pathology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "What is the major genetic risk factor for Alzheimer’s Disease?",
+      "explanation": "",
+      "keyConcept": "N/A",
+      "options": [
+        "Apolipoprotein E variant e4 (ApoE4)",
+        "Presenilin 1 (PSEN1)",
+        "Presenilin 2 (PSEN2)",
+        "Amyloid Precursor Protein (APP)",
+        "Tau protein"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the major genetic risk factor for Alzheimer’s Disease?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": ""
+    },
+    {
+      "chapterTitle": "Cerebrum & Cortical Functions",
+      "chapterId": 2,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the clinical feature that can assist in distinguishing Frontotemporal lobe degeneration from Alzheimer's Disease?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": ""
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What gene mutations cause autosomal dominant Parkinson's Disease?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": ""
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Which type of transmission (inheritance) is common in FTLD?",
+      "explanation": "",
+      "keyConcept": "",
+      "modelAnswer": ""
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Anatomy",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which of the following is primarily responsible for rapid depolarization during an action potential?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "K+",
+        "Ca2+",
+        "Na+",
+        "Cl-"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Contralateral representation of face and body is found in:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Primary somatosensory area",
+        "Secondary somatosensory area",
+        "Gustatory area",
+        "Somatosensory association area",
+        "Wernicke’s area"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Spinal Cord Tracts",
+      "chapterId": 6,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which tract continues as the neospinothalamic pathway carrying pain and temperature sensations to the thalamus?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Spinoreticular tract",
+        "Medial lemniscus",
+        "Spinocerebellar tract",
+        "Spinal lemniscus",
+        "Corticospinal tract"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which structure contains the first order neurons for facial pain and temperature?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Lamina I",
+        "Trigeminal ganglion",
+        "Substantia gelatinosa of Rolandi",
+        "Lamina IV to VIII",
+        "Nucleus proprius"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Spinal Cord Tracts",
+      "chapterId": 6,
+      "subject": "Anatomy",
+      "lecture": 4,
+      "type": "mcq",
+      "text": "Which thalamic nuclei receive input from the paleospinothalamic tract?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Ventral posterolateral nucleus (VPLN)",
+        "Ventral posteromedial nucleus (VPMN)",
+        "Spinal nucleus of trigeminal",
+        "Lateral geniculate",
+        "Intralaminar nucleus"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "The second-order neuron transmitting pain and temperature sensation from the face is located in which nucleus?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Ventral posterolateral nucleus (VPLN)",
+        "Ventral posteromedial nucleus (VPMN)",
+        "Spinal nucleus of trigeminal",
+        "Lateral geniculate",
+        "Intralaminar nucleus"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Loss of pain and temperature sensation from the face, with involvement of the corresponding ascending pathway, indicates a lesion in which of the following?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Spinal lemniscus",
+        "Trigeminal lemniscus",
+        "Medial lemniscus",
+        "Lateral lemniscus",
+        "Corticobulbar tract"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 5,
+      "type": "mcq",
+      "text": "Loss of sensation from both the left face and left body indicates a lesion in which of the following areas?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Right trigeminal nerve lesion",
+        "Left lateral spinothalamic region",
+        "Right lateral spinothalamic region",
+        "Left thalamic lesion",
+        "Right thalamic lesion"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which of the following correctly pairs a neural structure with its functional role?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Spinothalamic tract – conscious proprioception from lower limb",
+        "Cuneate nucleus – unconscious proprioception from upper limb",
+        "Gracile nucleus – conscious proprioception from lower limb",
+        "Dorsal spinocerebellar tract – unconscious proprioception from upper limb",
+        "Ventral spinocerebellar tract – unconscious proprioception from upper limb"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 6,
+      "type": "mcq",
+      "text": "Which tract passes through the superior cerebellar peduncle?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Anterior spinocerebellar tract",
+        "Dorsal spinocerebellar tract",
+        "Gracile tract",
+        "Cuneate tract",
+        "Spino-olivary tract"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Proprioceptive sensation from the big toe ascends to the brainstem through which fibers?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Spinothalamic tract",
+        "External arcuate fibers",
+        "Cuneate fibers",
+        "Anterior corticospinal tract",
+        "Internal arcuate fibers"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 6,
+      "type": "mcq",
+      "text": "Which fibers enter the cerebellum through the inferior cerebellar peduncle?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Anterior spinocerebellar tract",
+        "Dorsal spinocerebellar tract",
+        "Gracile tract",
+        "Cuneate tract",
+        "Ventral spinothalamic tract"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which tracts carry kinesthetic sensation from the body?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Anterior spinocerebellar tract",
+        "Dorsal spinocerebellar tract",
+        "Dorsal spinothalamic tract",
+        "Ventral spinothalamic tract",
+        "Gracile and Cuneate tracts"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "A patient has a lesion affecting the right gracile tract. Which of the following sensory deficits is most likely?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Pain and temperature loss in the right tibia",
+        "Vibration loss in the right tibia",
+        "Pain and temperature loss in the left tibia",
+        "Vibration loss in the left tibia",
+        "Complete loss of all sensations in both legs"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 5,
+      "type": "mcq",
+      "text": "Which fibers are afferent to cerebellum through the inferior cerebellar peduncle?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Anterior spinocerebellar fibers",
+        "External arcuate fibers",
+        "Internal arcuate fibers",
+        "Fibers from gracile tract",
+        "Ventral spinothalamic fibers"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Unconscious proprioception from the wrist is carried through which of the following tracts?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Cuneocerebellar tract",
+        "Dorsal spinocerebellar tract",
+        "Ventral spinocerebellar tract",
+        "Spinothalamic tract",
+        "Cuneate tract"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Cerebrum & Cortical Functions",
+      "chapterId": 2,
+      "subject": "Anatomy",
+      "lecture": 5,
+      "type": "mcq",
+      "text": "Where is the supplementary motor area located?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Superior frontal gyrus",
+        "Inferior frontal gyrus",
+        "Precentral gyrus",
+        "Postcentral gyrus",
+        "Medial frontal gyrus"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 5,
+      "type": "mcq",
+      "text": "A patient develops behavioral changes and wears inappropriate clothing after an accident affecting frontal bone. Which cortical area is affected?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Primary motor area",
+        "Premotor area",
+        "Supplementary motor area",
+        "Prefrontal area",
+        "Primary sensory area"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 5,
+      "type": "mcq",
+      "text": "Which area of the brain, when damaged, causes contralateral hemiplegia?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Supplementary motor area",
+        "Premotor area",
+        "Broca’s area",
+        "Primary motor area",
+        "Somatosensory cortex"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Cerebrum & Cortical Functions",
+      "chapterId": 2,
+      "subject": "Anatomy",
+      "lecture": 5,
+      "type": "mcq",
+      "text": "Which function is primarily controlled by the primary motor cortex (area 4)?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Planning complex movements",
+        "Converting plans into movements",
+        "Processing sensory input",
+        "Gives you the idea to move",
+        "Controlling eye movements"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 5,
+      "type": "mcq",
+      "text": "A 28-year-old man sustains a head injury. After recovery, his family reports marked personality change. Which area is affected?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Primary motor cortex",
+        "Supplementary motor area",
+        "Prefrontal cortex",
+        "Primary somatosensory cortex",
+        "Visual association cortex"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 5,
+      "type": "mcq",
+      "text": "Which part of the brain controls motor function of the right leg?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Right precentral gyrus",
+        "Left precentral gyrus",
+        "Right postcentral gyrus",
+        "Left postcentral gyrus",
+        "Left paracentral lobule"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 5,
+      "type": "mcq",
+      "text": "Loss of fine voluntary movements is most likely caused by a lesion in which area?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Supplementary motor area",
+        "Prefrontal cortex",
+        "Primary somatosensory cortex",
+        "Visual association cortex",
+        "Primary motor area"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Anatomy",
+      "lecture": 5,
+      "type": "mcq",
+      "text": "Which structure is responsible for fine skilled movements of the index finger?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Supplementary motor area",
+        "Prefrontal cortex",
+        "Primary somatosensory cortex",
+        "Corticospinal pathway",
+        "Primary motor area"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Cerebrum & Cortical Functions",
+      "chapterId": 2,
+      "subject": "Anatomy",
+      "lecture": 5,
+      "type": "mcq",
+      "text": "Broca’s area is located in......",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Superior frontal gyrus",
+        "Middle frontal gyrus",
+        "Inferior frontal gyrus",
+        "Precentral gyrus",
+        "Anterior part of paracentral lobule"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 5,
+      "type": "mcq",
+      "text": "A patient has difficulty voluntarily moving both eyes to the right side. This deficit is most likely due to a lesion in which area?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Left frontal eye field",
+        "Right frontal eye field",
+        "Left postcentral gyrus",
+        "Right postcentral gyrus",
+        "Left paracentral lobule"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 5,
+      "type": "mcq",
+      "text": "Loss of sensation from the left upper limb indicates a lesion in which of the following areas?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Right postcentral gyrus",
+        "Left postcentral gyrus",
+        "Right paracentral gyrus",
+        "Left paracentral gyrus",
+        "Left precentral gyrus"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Spinal Cord Tracts",
+      "chapterId": 6,
+      "subject": "Anatomy",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which extrapyramidal tract helps adjust the head and neck in response to visual and cutaneous stimuli?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Tectospinal",
+        "Rubrospinal",
+        "Reticulospinal",
+        "Vestibulospinal",
+        "Corticospinal"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which muscle is supplied only by contralateral corticobulbar fibers?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Orbicularis oris",
+        "Masseter",
+        "Genioglossus",
+        "Sternocleidomastoid",
+        "Muscles of the upper part of the face"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which facial muscle receives only contralateral cortical innervation?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Orbicularis oculi of the upper face",
+        "Orbicularis oris of the lower face",
+        "Buccinator",
+        "Zygomaticus major",
+        "Frontalis"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Spinal Cord Tracts",
+      "chapterId": 6,
+      "subject": "Anatomy",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which descending motor pathway serves as an alternate route to the corticospinal tract?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Corticobulbar tract",
+        "Rubrospinal tract",
+        "Vestibulospinal tract",
+        "Reticulospinal tract",
+        "Tectospinal tract"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Spinal Cord Tracts",
+      "chapterId": 6,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is related to the anterior corticospinal tract?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Supplies the muscles of the trunk",
+        "Controls fine movements of fingers",
+        "Decussates in the medulla",
+        "Supplies distal limb muscles only",
+        "Carries sensory fibers"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Spinal Cord Tracts",
+      "chapterId": 6,
+      "subject": "Anatomy",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which of the following is NOT an extrapyramidal tract?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Rubrospinal tract",
+        "Reticulospinal tract",
+        "Vestibulospinal tract",
+        "Corticobulbar tract",
+        "Tectospinal tract"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Anatomy",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Head rotation in response to visual stimuli, with crossing at the level of the superior colliculus, is mediated by which tract?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Rubrospinal tract",
+        "Vestibulospinal tract",
+        "Reticulospinal tract",
+        "Corticospinal tract",
+        "Tectospinal tract"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Anatomy",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Decussation at the level of the superior midbrain occurs in which of the following tracts?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Rubrospinal tract",
+        "Vestibulospinal tract",
+        "Reticulospinal tract",
+        "Corticospinal tract",
+        "Cuneate tract"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Spinal Cord Tracts",
+      "chapterId": 6,
+      "subject": "Anatomy",
+      "lecture": 4,
+      "type": "mcq",
+      "text": "Tectospinal tract origin is......",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Red nucleus",
+        "Medial vestibular nucleus",
+        "Lateral vestibular nucleus",
+        "Reticular formation",
+        "Superior colliculus"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Cranial Nerves",
+      "chapterId": 7,
+      "subject": "Anatomy",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "The corticonuclear (corticobulbar) tract provides only contralateral innervation to which of the following cranial nerves?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Facial nerve (upper face)",
+        "Trigeminal nerve",
+        "Hypoglossal nerve",
+        "Oculomotor nerve",
+        "Accessory nerve"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "A patient presents with sudden onset bilateral paraplegia and loss of pain and temperature sensation below a certain level. The most likely cause is:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Anterior spinal artery occlusion",
+        "Posterior spinal artery occlusion",
+        "Adamkiewicz artery occlusion",
+        "Brown-Séquard syndrome",
+        "None of the above"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "30-year-old male suffers a traumatic injury to his spine. He cannot move his legs and has lost all sensation below the level of the injury. Most likely diagnosis:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Complete spinal cord transection at C4",
+        "Complete spinal cord transection at T5",
+        "Complete spinal cord transection at T8",
+        "Hemisection of spinal cord at T12",
+        "Brown-Séquard syndrome"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Lesion of the anterior spinal artery most likely produces which finding?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Intact pain and temperature sensation",
+        "Intact dorsal column sensations",
+        "Intact voluntary motor function",
+        "Impaired conscious proprioception",
+        "Impaired unconscious proprioception"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Right hemisection of the spinal cord most likely produces which finding?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Loss of all types of sensation of the left side at the level of the lesion",
+        "Loss of proprioception of the left side below the level of the lesion",
+        "Loss of pain and temperature sensations of the left side below the level of the lesion",
+        "Left lower motor neuron lesion at the level of the lesion",
+        "Left upper motor neuron lesion at the level of the lesion"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Loss of proprioception on the same side of a lesion with loss of pain and temperature on the opposite side is characteristic of which condition?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Complete spinal cord transection at C4",
+        "Complete spinal cord transection at T5",
+        "Complete spinal cord transection at T8",
+        "Complete spinal cord transection at T12",
+        "Brown-Séquard syndrome"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Hemisection of the spinal cord most likely produces which finding?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Loss of all types of sensation of the opposite side at the level of the lesion",
+        "Loss of proprioception of the opposite side below the level of the lesion",
+        "Loss of dorsal column sensations of the same side below the level of the lesion",
+        "Lower motor neuron lesion of the opposite side at the level of the lesion",
+        "Upper motor neuron lesion of the opposite side at the level of the lesion"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Spinal Cord Tracts",
+      "chapterId": 6,
+      "subject": "Anatomy",
+      "lecture": 5,
+      "type": "mcq",
+      "text": "A patient has a lesion affecting the dorsal column tracts. Which artery is most likely affected?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Anterior spinal artery",
+        "Posterior spinal artery",
+        "Radicular artery",
+        "Adamkiewicz artery",
+        "Posterior inferior cerebellar artery"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 7,
+      "type": "mcq",
+      "text": "Which structure of the basal ganglia is classified as the paleostriatum?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Caudate nucleus",
+        "Putamen",
+        "Globus pallidus",
+        "Subthalamic nucleus",
+        "Substantia nigra"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 7,
+      "type": "mcq",
+      "text": "Which structure is part of the neostriatum?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Globus pallidus",
+        "Claustrum",
+        "Subthalamic nucleus",
+        "Caudate nucleus",
+        "Substantia nigra"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 6,
+      "type": "mcq",
+      "text": "Which cerebellar structures are separated by fissura prima?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Anterior and posterior lobes",
+        "Superior surface and inferior surface",
+        "Paleocerebellum and neocerebellum",
+        "Cerebellar hemispheres",
+        "Superior and inferior vermis"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 6,
+      "type": "mcq",
+      "text": "Which function is primarily controlled by the flocculonodular lobe of the cerebellum?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Fine motor coordination",
+        "Planning movements",
+        "Equilibrium and posture",
+        "Speech",
+        "Sensory integration"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Cranial Nerves",
+      "chapterId": 7,
+      "subject": "Anatomy",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "A patient has a tumor in the fourth ventricle. Which cranial nerve nucleus is most likely affected due to its location?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Trigeminal nucleus",
+        "Facial nucleus",
+        "Abducent nucleus",
+        "Glossopharyngeal nucleus",
+        "Vagus nucleus"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 4,
+      "type": "mcq",
+      "text": "The medial geniculate body is connected to the brachium of which structure?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Superior colliculus",
+        "Pineal gland",
+        "Inferior colliculus",
+        "Lateral geniculate body",
+        "Red nucleus"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Anatomy",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which artery and its branches are primarily responsible for supplying the pons?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Anterior inferior cerebellar artery",
+        "Superior cerebellar artery",
+        "Basilar artery",
+        "Posterior cerebral artery",
+        "Vertebral artery"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Cranial Nerves",
+      "chapterId": 7,
+      "subject": "Anatomy",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which cranial nerve emerges from the dorsal (back) aspect of the brainstem?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Oculomotor nerve",
+        "Facial nerve",
+        "Trigeminal nerve",
+        "Abducent nerve",
+        "Trochlear nerve"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Cranial Nerves",
+      "chapterId": 7,
+      "subject": "Anatomy",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which cranial nerve nuclei are located in the pons?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Trigeminal and Abducent",
+        "Facial and Oculomotor",
+        "Hypoglossal and Vagus",
+        "Olfactory and Optic",
+        "Spinal Accessory and Glossopharyngeal"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Cranial Nerves",
+      "chapterId": 7,
+      "subject": "Anatomy",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which cranial nerve is not found in the open medulla?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Oculomotor nerve",
+        "Hypoglossal nerve",
+        "Vagus nerve",
+        "Vestibulocochlear nerve",
+        "No correct answer"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Anatomy",
+      "lecture": 4,
+      "type": "mcq",
+      "text": "Which of the following is present in the dorsal surface of the midbrain?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Oculomotor nerve",
+        "Trochlear nerve",
+        "Facial colliculus",
+        "Inferior colliculus",
+        "Gracile colliculus"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which of the following is present in the ventral surface of the medulla?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Medullary stria",
+        "The pyramid",
+        "Inferior colliculus",
+        "Cuneate tubercle",
+        "Gracile tubercle"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which structure is found at the level of the open medulla?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Inferior cerebellar peduncle",
+        "Main olivary nucleus",
+        "Pyramidal decussation",
+        "Nucleus gracilis",
+        "Nucleus cuneatus"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Cranial Nerves",
+      "chapterId": 7,
+      "subject": "Anatomy",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which cranial nerve nucleus is located most medially in the medulla?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Vagus",
+        "Glossopharyngeal",
+        "Hypoglossal",
+        "Spinal accessory",
+        "Trigeminal"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 5,
+      "type": "mcq",
+      "text": "A patient presents with dilated lateral and third ventricles on brain imaging. Which structure is most likely obstructed?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Aqueduct of Sylvius",
+        "Foramen of Monro",
+        "Median foramen of Magendie",
+        "Lateral foramina of Luschka",
+        "Central canal of the spinal cord"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 5,
+      "type": "mcq",
+      "text": "The aqueduct of Sylvius connects which of the following ventricular structures?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Lateral ventricles to third ventricle",
+        "Third ventricle to fourth ventricle",
+        "Fourth ventricle to central canal",
+        "Third ventricle to lateral ventricles",
+        "Fourth ventricle to subarachnoid space"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 5,
+      "type": "mcq",
+      "text": "Which ventricle develops from the rhombencephalon?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Lateral ventricle",
+        "Third ventricle",
+        "Fourth ventricle",
+        "Cerebral aqueduct",
+        "None of the above"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 5,
+      "type": "mcq",
+      "text": "Luschka connects which two structures?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Fourth ventricle and third ventricle",
+        "Third ventricle and cerebral aqueduct",
+        "Central canal and fourth ventricle",
+        "Choroid plexus and lateral ventricle",
+        "Fourth ventricle and subarachnoid space"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Anatomy",
+      "lecture": 5,
+      "type": "mcq",
+      "text": "Which part of the fourth ventricle contains the choroid plexus?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Floor of the fourth ventricle",
+        "Lateral recess",
+        "Central canal",
+        "Cerebral aqueduct",
+        "Roof of the fourth ventricle"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Anatomy",
+      "lecture": 5,
+      "type": "mcq",
+      "text": "Which of the following structures connects the fourth ventricle to the subarachnoid space?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Cerebral aqueduct",
+        "Interventricular foramen (of Monro)",
+        "Foramen magnum",
+        "Central canal",
+        "Foramen of Magendie"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Anatomy",
+      "lecture": 5,
+      "type": "mcq",
+      "text": "Which of the following structures forms the roof of the fourth ventricle?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Cerebral aqueduct",
+        "Superior colliculus",
+        "Superior cerebellar peduncle",
+        "Pons",
+        "Medulla"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Cranial Nerves",
+      "chapterId": 7,
+      "subject": "Anatomy",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which cranial nerve nucleus contains both general visceral afferent (GVA) and special visceral afferent (SVA) fibers?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Trigeminal motor nucleus",
+        "Hypoglossal nucleus",
+        "Facial motor nucleus",
+        "Nucleus solitarius",
+        "Dorsal motor nucleus of vagus"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Anatomy",
+      "lecture": 4,
+      "type": "mcq",
+      "text": "Which of the following nuclei, located in the midbrain, contains general visceral efferent (GVE) fibers?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Dorsal motor nucleus of vagus",
+        "Edinger-Westphal nucleus",
+        "Nucleus ambiguus",
+        "Inferior salivatory nucleus",
+        "Superior salivatory nucleus"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Cranial Nerves",
+      "chapterId": 7,
+      "subject": "Anatomy",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which of the following structures is supplied by the hypoglossal nerve (CN XII)?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Pharyngeal muscles",
+        "Palatal muscles",
+        "Tongue muscles",
+        "Sternocleidomastoid muscle",
+        "Facial muscles"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which of the following carries preganglionic parasympathetic fibers to the submandibular gland?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Glossopharyngeal nerve",
+        "Vagus nerve",
+        "Trigeminal nerve",
+        "Chorda tympani",
+        "Hypoglossal nerve"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 8,
+      "type": "mcq",
+      "text": "The cartilages of the larynx develop embryologically from which of the following pharyngeal arches?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "First and second arches",
+        "Second and third arches",
+        "Third and fourth arches",
+        "Fifth and sixth arches",
+        "Fourth and sixth pharyngeal arches"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 4,
+      "type": "mcq",
+      "text": "Which type of fibers are carried by the Edinger-Westphal nucleus?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "General somatic efferent (GSE)",
+        "General somatic afferent (GSA)",
+        "Special sensory (SSA)",
+        "General visceral efferent (GVE)",
+        "Special visceral efferent (SVE)"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Cranial Nerves",
+      "chapterId": 7,
+      "subject": "Anatomy",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which cranial nerve sends afferent fibers to the nucleus solitarius?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Facial nerve",
+        "Trigeminal nerve",
+        "Abducent nerve",
+        "Hypoglossal nerve",
+        "Accessory nerve"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Cranial Nerves",
+      "chapterId": 7,
+      "subject": "Anatomy",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which cranial nerve supplies fibers to the nucleus ambiguus?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Facial nerve",
+        "Glossopharyngeal nerve",
+        "Trigeminal nerve",
+        "Hypoglossal nerve",
+        "Abducent nerve"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Cranial Nerves",
+      "chapterId": 7,
+      "subject": "Anatomy",
+      "lecture": 4,
+      "type": "mcq",
+      "text": "At which anatomical level does the oculomotor nerve emerge?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "At the level of the superior midbrain colliculus",
+        "At the level of the inferior olivary nucleus",
+        "At the level of the pons",
+        "At the level of the medullary pyramids",
+        "At the level of the cerebellar peduncles"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Inferior salivatory nucleus supplies which of the following?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Submental gland",
+        "Submandibular gland",
+        "Sublingual gland",
+        "Parotid gland",
+        "Lacrimal glands"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Cranial Nerves",
+      "chapterId": 7,
+      "subject": "Anatomy",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which of the following nerves arises from the union of the vagus and accessory nerves?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Glossopharyngeal nerve",
+        "Hypoglossal nerve",
+        "Recurrent laryngeal nerve",
+        "Superior laryngeal nerve",
+        "Pharyngeal nerve"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which of the following nerves carries parasympathetic fibers to the otic ganglion?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Lesser petrosal nerve",
+        "Greater petrosal nerve",
+        "Chorda tympani",
+        "Auriculotemporal nerve",
+        "Vagus nerve"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Taste sensation behind the vallecula is carried by:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Facial nerve",
+        "Trigeminal nerve",
+        "Abducent nerve",
+        "Hypoglossal nerve",
+        "Vagal nerve"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Cranial Nerves",
+      "chapterId": 7,
+      "subject": "Anatomy",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "A patient that had trauma to the spinal accessory nerve is expected to suffer from:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Paralysis of genioglossus muscle",
+        "Paralysis of muscles of the lower part of the face",
+        "Deviation of the tongue towards the damaged side",
+        "Deviation of the tongue towards the healthy side",
+        "Paralysis of sternomastoid muscle"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which nerve carries postganglionic parasympathetic fibers from the otic ganglion?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Lesser petrosal nerve",
+        "Greater petrosal nerve",
+        "Chorda tympani",
+        "Auriculotemporal nerve",
+        "Vagus nerve"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which nucleus is located in the special visceral efferent (SVE) column?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Dorsal motor nucleus of vagus",
+        "Motor nucleus of trigeminal",
+        "Spinal nucleus of trigeminal",
+        "Inferior salivatory nucleus",
+        "Superior salivatory nucleus"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Anatomy",
+      "lecture": 5,
+      "type": "mcq",
+      "text": "A 55-year-old man presents with difficulty speaking and swallowing. On examination, he has atrophy and deviation of the tongue to the right side. He also shows loss of vibration and proprioception on the left side of his body and loss of pain and temperature on the left side of his body. Most likely site of lesion:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Lateral part of medulla",
+        "Medial part of medulla",
+        "Intermediate part of medulla",
+        "Posterior part of medulla",
+        "Pons"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 5,
+      "type": "mcq",
+      "text": "A patient presents with paralysis of the right foot. Which artery is most likely affected?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Right middle cerebral artery",
+        "Left middle cerebral artery",
+        "Right anterior cerebral artery",
+        "Left anterior cerebral artery",
+        "Posterior cerebral artery"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Anatomy",
+      "lecture": 5,
+      "type": "mcq",
+      "text": "A lesion in the posterior inferior cerebellar artery (PICA) territory can result in which of the following neurological deficits?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Ipsilateral loss of vibration and proprioception",
+        "Contralateral hemiplegia",
+        "Contralateral loss of pain and temperature of the body",
+        "Bilateral loss of light touch",
+        "Ipsilateral visual field defect"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Anatomy",
+      "lecture": 5,
+      "type": "mcq",
+      "text": "Which of the following arteries supplies the midbrain?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Basilar artery",
+        "Posterior spinal artery",
+        "Posterior inferior cerebellar artery",
+        "Superior cerebellar artery",
+        "Anterior cerebral artery"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 5,
+      "type": "mcq",
+      "text": "Which structure ends in the internal jugular vein?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Superior petrosal sinus",
+        "Cavernous sinus",
+        "Sigmoid sinus",
+        "Transverse sinus",
+        "Inferior petrosal sinus"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Cranial Nerves",
+      "chapterId": 7,
+      "subject": "Anatomy",
+      "lecture": 5,
+      "type": "mcq",
+      "text": "Which of the following cranial nerves passes through the cavernous sinus?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Abducent nerve",
+        "Oculomotor nerve",
+        "Trochlear nerve",
+        "Optic nerve",
+        "Olfactory nerve"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 5,
+      "type": "mcq",
+      "text": "Which anatomical structure serves as the primary pathway for a facial infection to spread into the cranial cavity and cause cavernous sinus thrombosis?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Superior ophthalmic vein",
+        "Facial artery",
+        "Maxillary vein",
+        "Pterygoid plexus",
+        "Retromandibular vein"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 5,
+      "type": "mcq",
+      "text": "Which of the following nerves represents a motor component arising from the posterior division of the mandibular nerve?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Inferior alveolar nerve",
+        "Lingual nerve",
+        "Auriculotemporal nerve",
+        "Buccal nerve",
+        "Deep temporal nerve"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 5,
+      "type": "mcq",
+      "text": "Which nerve carries postganglionic parasympathetic fibers directly to the lacrimal gland for lacrimation?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Deep petrosal nerve",
+        "Lacrimal nerve",
+        "Greater petrosal nerve",
+        "Zygomaticotemporal nerve",
+        "Chorda tympani"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 5,
+      "type": "mcq",
+      "text": "Which structure receives the drainage of the inferior petrosal sinus as it exits the cranial cavity?",
+      "explanation": "",
+      "keyConcept": "N/A",
+      "options": [
+        "Sigmoid sinus",
+        "Internal jugular vein",
+        "Subclavian vein",
+        "Cavernous sinus",
+        "Superior sagittal sinus"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which branch represents the only purely sensory nerve arising from the anterior division of the mandibular nerve?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Auriculotemporal nerve",
+        "Lingual nerve",
+        "Buccal nerve",
+        "Inferior alveolar nerve",
+        "Mental nerve"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which dural venous sinus is a paired structure?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Superior sagittal sinus",
+        "Inferior sagittal sinus",
+        "Straight sinus",
+        "Inferior petrosal sinus",
+        "Occipital sinus"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which structure directly connects the dural venous sinuses with the extracranial veins of the scalp?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Diploic veins",
+        "Emissary veins",
+        "Meningeal veins",
+        "Cerebral veins",
+        "Superficial temporal veins"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Cranial Nerves",
+      "chapterId": 7,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which structure receives its sensory innervation from the trigeminal nerve?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Upper eyelid",
+        "Lower lobe of the ear",
+        "Skin over the angle of the mandible",
+        "Posterior one-third of the tongue",
+        "External auditory meatus skin"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which structure is NOT located in the lateral wall of the cavernous sinus?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Oculomotor nerve (CN III)",
+        "Trochlear nerve (CN IV)",
+        "Ophthalmic nerve (CN V1)",
+        "Maxillary nerve (CN V2)",
+        "Mandibular nerve (CN V3)"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The superior cerebral veins primarily drain into which dural venous sinus?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Straight sinus",
+        "Transverse sinus",
+        "Superior sagittal sinus",
+        "Sigmoid sinus",
+        "Cavernous sinus"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which venous sinus drains directly into the internal jugular vein (IJV)?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Superior sagittal sinus",
+        "Transverse sinus",
+        "Cavernous sinus",
+        "Sigmoid sinus",
+        "Inferior petrosal sinus"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Cerebrospinal fluid (CSF) is primarily drained into the venous system by which structure?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Choroid plexus",
+        "Ependymal cells",
+        "Central canal",
+        "Ventricular foramina",
+        "Arachnoid granulations"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which artery is connected to the posterior cerebral artery (PCA) by the posterior communicating artery?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Anterior communicating artery",
+        "Middle cerebral artery",
+        "Posterior inferior cerebellar artery",
+        "Internal carotid artery",
+        "Basilar artery"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "CSF produced in the fourth ventricle flows into which subarachnoid space via its three foramina?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Subarachnoid space over the cerebral hemispheres",
+        "Interpeduncular cistern",
+        "Quadrigeminal cistern",
+        "Pontine cistern",
+        "Cisterna magna"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The vein running along the roof of the posterior triangle of the neck drains into which vein?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "External jugular vein",
+        "Internal jugular vein",
+        "Subclavian vein",
+        "Brachiocephalic vein",
+        "Cephalic vein"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "A young athlete sustains a head injury and later develops a severe headache followed by sudden death. Rupture of an aneurysm in which structure is the most likely cause?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Middle meningeal artery",
+        "Internal carotid artery",
+        "Circle of Willis",
+        "Basilar artery",
+        "Vertebral artery"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Blood Supply of the CNS",
+      "chapterId": 9,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The great cerebral vein (of Galen) is formed by the union of which veins?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Superior sagittal veins",
+        "Basal veins of Rosenthal",
+        "Right and left internal cerebral veins",
+        "Veins of Trolard",
+        "Superficial middle cerebral veins"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "A 60-year-old patient presents with painful vesicular eruptions localized to the chin and lower lip on one side of the face. Which nerve is most likely involved?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Ophthalmic nerve (V1)",
+        "Mental nerve",
+        "Infraorbital nerve",
+        "Auriculotemporal nerve",
+        "Buccal nerve"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Fracture of the zygomatic arch is most likely to impair the function of which muscle?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Temporalis",
+        "Masseter muscle",
+        "Buccinator",
+        "Orbicularis oris",
+        "Sternocleidomastoid"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "A 25-year-old patient with a painful swelling on the upper lip and forehead after a pimple infection. The physician is concerned about risk of intracranial spread. Which veins provide a route for infections from the face to reach the superior sagittal sinus?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Facial veins",
+        "Emissary veins",
+        "Jugular veins",
+        "External carotid veins",
+        "Coronary veins"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which major vein does the common facial vein typically drain into?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "External jugular vein",
+        "Internal jugular vein",
+        "Subclavian vein",
+        "Brachiocephalic vein",
+        "Superior vena cava"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The deep facial vein connects which two venous structures?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Anterior facial vein and pterygoid venous plexus",
+        "Angular vein and cavernous sinus",
+        "Maxillary vein and retromandibular vein",
+        "External jugular vein and internal jugular vein",
+        "Inferior ophthalmic vein and cavernous sinus"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The angle of the mandible is supplied by which nerve?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Auriculotemporal nerve",
+        "Great auricular nerve",
+        "Buccal nerve",
+        "Inferior alveolar nerve",
+        "Mental nerve"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Cranial Nerves",
+      "chapterId": 7,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which nerve is the motor branch of the posterior division of the trigeminal nerve?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Lingual nerve",
+        "Buccal nerve",
+        "Auriculotemporal nerve",
+        "Inferior alveolar nerve",
+        "Mental nerve"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which nerve provides cutaneous innervation to the skin overlying the angle of the mandible?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Marginal mandibular nerve",
+        "Great auricular nerve",
+        "Transverse cervical nerve",
+        "Lesser occipital nerve",
+        "Auriculotemporal nerve"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which tissue layer contains arteries, veins, and nerves forming the neurovascular plane?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Epithelial layer",
+        "Muscular layer",
+        "Serous layer",
+        "Connective tissue layer",
+        "Cartilage layer"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The nerve to the pterygoid canal is formed by the union of which nerves?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Auriculotemporal nerve and deep petrosal nerve",
+        "Greater petrosal nerve and lesser petrosal nerve",
+        "Deep petrosal nerve and chorda tympani",
+        "Greater petrosal nerve and deep petrosal nerve",
+        "Auricular branch of vagus and glossopharyngeal nerve"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "A patient presents with pain localized to the temporomandibular joint (TMJ). Which nerve primarily transmits sensory information from the TMJ?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Masseteric nerve",
+        "Inferior alveolar nerve",
+        "Lingual nerve",
+        "Auriculotemporal nerve",
+        "Buccal nerve"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The postganglionic fibers of the sphenopalatine (pterygopalatine) ganglion are derived from which nerve?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Greater petrosal nerve",
+        "Lesser petrosal nerve",
+        "Chorda tympani",
+        "Deep petrosal nerve",
+        "Auriculotemporal nerve"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The retromandibular vein divides within the parotid gland into anterior and posterior divisions. Each division then unites with which veins respectively?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Internal jugular vein and subclavian vein",
+        "Anterior facial vein and posterior auricular vein",
+        "External jugular vein and internal jugular vein",
+        "Posterior facial vein and external jugular vein",
+        "Maxillary vein and vertebral vein"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which ligament prevents the mandible from posterior dislocation?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Temporomandibular ligament",
+        "Sphenomandibular ligament",
+        "Stylomandibular ligament",
+        "Lateral pterygoid ligament",
+        "Capsular ligament"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which muscle lies lateral to the lateral pterygoid muscle?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Buccinator",
+        "Temporalis",
+        "Masseter",
+        "Superficial head of medial pterygoid",
+        "Deep head of medial pterygoid"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which structure forms part of the medial wall of the infratemporal fossa?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Medial pterygoid plate",
+        "Maxilla",
+        "Mandibular ramus",
+        "Greater wing of sphenoid",
+        "Lateral pterygoid plate"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which structure forms the medial boundary of the infratemporal fossa?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Ramus of the mandible",
+        "Greater wing of the sphenoid bone",
+        "Lateral pterygoid plate",
+        "Maxillary tuberosity",
+        "Medial pterygoid plate"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which structure serves as the communication pathway between the infratemporal fossa and the pterygopalatine fossa?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Sphenopalatine foramen",
+        "Foramen rotundum",
+        "Pterygomaxillary fissure",
+        "Inferior orbital fissure",
+        "Pterygoid canal"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which muscle is responsible for retraction of the mandible?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Anterior fibers of the temporalis",
+        "Posterior fibers of the temporalis",
+        "Lateral pterygoid",
+        "Medial pterygoid",
+        "Superficial part of the masseter"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which vein joins with the maxillary vein to form the retromandibular vein?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Facial vein",
+        "Superficial temporal vein",
+        "Posterior auricular vein",
+        "Occipital vein",
+        "Internal jugular vein"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which blood vessel arises as a branch from the third part of the maxillary artery?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Deep temporal artery",
+        "Inferior alveolar artery",
+        "Middle meningeal artery",
+        "Infraorbital artery",
+        "Buccal artery"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which nerves pass through the pterygoid canal?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Chorda tympani and auriculotemporal",
+        "Deep petrosal and greater superficial petrosal",
+        "Mandibular and maxillary",
+        "Vagus and glossopharyngeal",
+        "Olfactory and optic"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which artery is located below the posterior belly of the digastric muscle?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Facial artery",
+        "Lingual artery",
+        "Maxillary artery",
+        "Occipital artery",
+        "Superior thyroid artery"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which structure is located within the carotid sheath?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Sympathetic trunk",
+        "Vagus nerve",
+        "Phrenic nerve",
+        "Ansa cervicalis",
+        "Hypoglossal nerve"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Postsynaptic inhibition in the CNS is primarily mediated by which neurotransmitter?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Glutamate",
+        "Acetylcholine",
+        "Glycine",
+        "Dopamine",
+        "GABA"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which response occurs in a stretch reflex?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Reciprocal inhibition failure",
+        "Relaxation of the stretched muscle",
+        "Negative feedback inhibition",
+        "Contraction of antagonist muscles",
+        "Contraction of agonist muscle"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which statement best describes sensory adaptation?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Diminished sensation despite continuous application of the stimulus",
+        "Increased sensation with repeated stimulation",
+        "Complete absence of sensation after brief stimulus",
+        "Activation of additional receptors over time",
+        "Conversion of one type of sensation into another"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which type of sensory receptors in the skin respond quickly at the onset of a stimulus but stop firing if the stimulus is constant?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Temperature receptors (rapidly adapting)",
+        "Temperature receptors (slowly adapting)",
+        "Pain receptors (rapidly adapting)",
+        "Touch receptors (rapidly adapting)",
+        "Touch receptors (slowly adapting)"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which sensory receptor adapts rapidly to sustained skin stimulation?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Touch receptor",
+        "Pain receptor",
+        "Temperature receptor",
+        "Proprioceptor",
+        "Nociceptor"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Discrimination of stimulus intensity depends mainly on:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Number of activated receptors",
+        "Type of receptor only",
+        "Length of the receptor",
+        "Location of the receptor",
+        "Presence of myelin only"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which explains areas with low two-point discrimination threshold?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Less convergence of afferent nerve fibers",
+        "More convergence of afferent nerve fibers",
+        "Fewer receptors per unit area",
+        "Poor cortical representation",
+        "Absence of sensory receptors"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which stimulates pain receptors?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Local increase of Na+ concentration",
+        "Local decrease of Na+ concentration",
+        "Local increase of K+ concentration",
+        "Local decrease of K+ concentration",
+        "Local increase of Ca2+ concentration"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which statement regarding sensory fiber conduction is correct?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Crude touch is carried on Aδ fibers",
+        "Fine touch is carried on C fibers",
+        "Fine touch is carried on Aδ fibers",
+        "Vibration sense is carried on Aδ fibers",
+        "Nociceptive stimuli are carried on Aβ fibers"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which type of pain is transmitted by Aδ nerve fibers?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Chemical pain",
+        "Visceral pain",
+        "Chronic pain",
+        "Slow pain",
+        "Fast pain"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Sudden increase in skin temperature above 50 °C leads to:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Transient impulses due to damage of cold receptors above 40 °C",
+        "Inhibition of mechanoreceptors",
+        "Stimulation of mechanoreceptors",
+        "Stimulation of thermal nociceptors",
+        "Stimulation of proprioceptors"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which fibers transmit crude touch sensation?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Aδ fibers",
+        "D fibers",
+        "Aβ fibers",
+        "Ia fibers",
+        "Ib fibers"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which substance stimulates pain receptors?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Histamine",
+        "Kinin",
+        "Serotonin",
+        "Acetylcholine",
+        "Dopamine"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which nerve fibers transmit warm temperature sensation?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Aδ fibers",
+        "Aβ fibers",
+        "C fibers",
+        "Ia fibers",
+        "Ib fibers"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Fast pain is characterized by which duration?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Long lasting",
+        "Delayed onset",
+        "Recurrent",
+        "Persistent",
+        "Short time"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Thalamus & Hypothalamus",
+      "chapterId": 3,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which sensory modality is primarily perceived at the level of the thalamus?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Fine touch",
+        "Proprioception",
+        "Crude sensation",
+        "Two-point discrimination",
+        "Cortical sensory integration"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which clinical sign is seen in chronic gastritis due to inflammation of the stomach wall?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Rigidity of overlying muscles",
+        "Rebound tenderness",
+        "Radiating pain to right shoulder",
+        "Radiating pain to left shoulder",
+        "Palpable mass"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "In secondary hyperalgesia, which describes the affected area?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Normal skin surrounding non-healthy tissue",
+        "Only the site of injury",
+        "Inflamed tissue directly exposed to noxious stimuli",
+        "All dermatomes sharing the same dorsal root ganglion",
+        "Systemic distribution"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which explains pain relief when you rub the skin near an injury?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Convergence projection theory",
+        "Endogenous opioid system",
+        "Central sensitization theory",
+        "Gate theory",
+        "Convergence facilitation theory"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "A woman wore a dress on the beach. Later, wearing a jacket over the same area caused pain. This is an example of:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Increase receptor sensitivity by tissue products",
+        "Activity-dependent increase in excitability of dorsal horn neurons",
+        "Increased threshold of peripheral nociceptors due to inflammatory mediators",
+        "Decreased inhibitory interneuron function in the spinal cord",
+        "Impaired saltatory conduction in primary afferent neurons"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which receptors inhibit pain sensation in the CNS?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Opioid receptors",
+        "Glycine receptors",
+        "Nicotinic receptors",
+        "Dopamine receptors",
+        "GABA receptors"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Extracranial headache is an example of:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Referred pain",
+        "Fast pain",
+        "Psychogenic pain",
+        "Primary hyperalgesia",
+        "Secondary hyperalgesia"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "The pain analgesic system includes which structure?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Periaqueductal neurons which secrete serotonin",
+        "Periaqueductal neurons which secrete enkephalin",
+        "Periaqueductal neurons which secrete endorphin",
+        "Local cord neurons which secrete serotonin",
+        "Local cord neurons which secrete endorphin"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Acupuncture relieves pain mainly by:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Gate control theory and psychogenic excitation",
+        "Direct inhibition of peripheral nociceptors",
+        "Blockade of sodium channels in sensory nerves",
+        "Suppression of inflammatory mediators",
+        "Degeneration of pain fibers"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Deep pain is typically characterized by:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Well localized and sharp",
+        "Poorly localized",
+        "Limited to the skin surface",
+        "Rapidly conducted by Aδ fibers only",
+        "Not associated with autonomic responses"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "CNS Pathology & Neuropharmacology",
+      "chapterId": 10,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which is correctly matched regarding the pain analgesic system?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Nucleus raphe magnus → Serotonin",
+        "Periaqueductal gray → Dopamine",
+        "Periventricular area → Acetylcholine",
+        "Pain inhibitory complex → Glutamate",
+        "Nucleus reticularis paragigantocellularis → GABA"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Referred pain from the gallbladder is most commonly felt in which area?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Right shoulder",
+        "Left shoulder",
+        "Periumbilical region",
+        "Left lower quadrant",
+        "Suprapubic region"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which is a cause of extracranial headache?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Bone inflammation",
+        "Meningeal irritation",
+        "Decreased cerebrospinal fluid pressure",
+        "Otitis media",
+        "Subarachnoid hemorrhage"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "The initial phase of a migraine attack is associated with which vascular event?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Vasoconstriction",
+        "Vasodilation",
+        "Hemorrhage",
+        "Thrombosis",
+        "Edema"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Stereognosis sensation is carried by which neural pathway?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Ventral spinothalamic tract",
+        "Dorsal spinothalamic tract",
+        "Dorsal spinocerebellar tract",
+        "Dorsal column tract",
+        "Ventral spinocerebellar tract"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which statement is true regarding deep pressure sensation?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "It is mediated by slowly adapting receptors",
+        "It is transmitted only by free nerve endings",
+        "It adapts rapidly to sustained stimulus",
+        "It is carried exclusively by Aδ fibers",
+        "It is not associated with vibration"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which statement is correct regarding muscle tone?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Stretch reflex is monosynaptic",
+        "It depends only on upper motor neurons",
+        "It is absent during normal posture",
+        "It is mediated by polysynaptic reflex",
+        "Its main action involves interneurons"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which statement regarding muscle spindle and Golgi tendon organ is correct?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Muscle spindle is responsible for muscle tension",
+        "Golgi tendon organ initiates the stretch reflex",
+        "Muscle spindle is responsible for muscle tone",
+        "Golgi tendon organ has damping function",
+        "Muscle spindle is located in the tendon"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Facilitation of stretch reflex is done by:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Lentiform nucleus",
+        "Caudate nucleus",
+        "Spino-cerebellum",
+        "Areas 4s,6",
+        "Medullary reticular formation"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which pair correctly matches a reflex with its sensory receptor?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Stretch and Golgi tendon organ",
+        "Flexor and muscle spindle",
+        "Crossed extensor and Pacinian corpuscle",
+        "Tendon and Ruffini ending",
+        "Withdrawal and free nerve ending"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Oscillating, interrupted voluntary movements typically occur due to loss of which function?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Postural reflex",
+        "Stretch reflex",
+        "Tendon reflex",
+        "Damping function",
+        "Withdrawal reflex"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which response occurs when the right foot is suddenly struck?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Flexion of left leg",
+        "Extension of left leg",
+        "Flexion of right arm",
+        "Extension of right leg",
+        "None of the above"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which clinical finding is most characteristic of cerebellar lesions?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Spasticity",
+        "Rigidity",
+        "Hypotonia",
+        "Hyperreflexia",
+        "Clonus"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which receptor is primarily responsible for maintaining muscle tone?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Golgi tendon organ",
+        "Pacinian corpuscle",
+        "Muscle spindle",
+        "Meissner corpuscle",
+        "Free nerve endings"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which response occurs in a stretch reflex? (variant)",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Inhibition of antagonist muscles",
+        "Relaxation of the stretched muscle",
+        "Activation of gamma motor neurons only",
+        "Contraction of local (agonist) active muscle",
+        "Reciprocal inhibition failure"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "The Golgi tendon organ provides input to which neurons?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "γ motor neurons",
+        "Ia sensory neurons",
+        "α motor neurons",
+        "Ib sensory neurons",
+        "Interneurons"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Spinal Cord Tracts",
+      "chapterId": 6,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "In a patient with an upper motor neuron lesion, superficial reflexes (e.g., abdominal reflex) are absent. Which tract is most likely intact?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Spinothalamic tract",
+        "Dorsal column–medial lemniscal pathway",
+        "Spinocerebellar tract",
+        "Corticospinal tract",
+        "Rubrospinal tract"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "A patient presents with hypertonia, exaggerated reflexes, and signs of an UMN lesion. Which mechanism best explains these findings?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Loss of cerebellar inhibition",
+        "Degeneration of anterior horn cells",
+        "Decreased gamma motor neuron discharge",
+        "Unopposed pontine reticulospinal fibers",
+        "Failure of neuromuscular transmission"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "The supplementary motor area is primarily responsible for which function?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Initiation of voluntary movement",
+        "Control of posture and balance",
+        "Control of complex movements of both hands",
+        "Coordination of eye movements",
+        "Regulation of muscle tone"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which function is attributed to the pontine circuit in motor control?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Initiation of voluntary movement",
+        "Storage of plan of skilled movement",
+        "Regulation of muscle tone",
+        "Execution of fine distal movements",
+        "Coordination of balance and posture"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which function is characteristic of the medial motor system (but not lateral) and also a function of the cerebellum?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Fine skilled movements of distal muscles",
+        "Control of axial and proximal muscles",
+        "Independent finger movements",
+        "Voluntary motor initiation",
+        "Fractionated hand movements"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Brain Stem",
+      "chapterId": 4,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Sudden, sustained dorsiflexion of the foot typically causes which response?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Plantar reflex",
+        "Babinski sign",
+        "Patellar clonus",
+        "Stretch reflex",
+        "Ankle clonus"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Ankle clonus occurs due to:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Loss of cerebellar inhibition",
+        "Degeneration of anterior horn cells",
+        "Stretch reflex inhibition",
+        "Inverse stretch reflex inhibition",
+        "Increase gamma discharge"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Spinal Cord Tracts",
+      "chapterId": 6,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Lesion of the spinocerebellar tract typically produces:",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Hypotonia",
+        "Hyporeflexia",
+        "Kinetic tremor",
+        "Clonus",
+        "Babinski sign"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Cerebellum & Basal Ganglia",
+      "chapterId": 5,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which is NOT typically associated with a cerebellar lesion?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Intention tremor",
+        "Ataxia",
+        "Dysmetria",
+        "Nystagmus",
+        "Static tremor"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which pattern of sensory loss is characteristic of peripheral neuritis?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Gloves and socks distribution",
+        "Hemibody loss",
+        "Face and arm loss",
+        "Dermatomal pattern",
+        "Scattered spots"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Introduction to CNS",
+      "chapterId": 1,
+      "subject": "Physiology",
+      "lecture": 3,
+      "type": "mcq",
+      "text": "Which accurately describes the pattern of dissociative sensory loss in syringomyelia?",
+      "explanation": "",
+      "keyConcept": "",
+      "options": [
+        "Loss of pain and touch with preservation of temperature",
+        "Loss of touch and temperature with preservation of pain",
+        "Loss of pain with preservation of touch and temperature",
+        "Loss of pain and temperature with preservation of touch",
+        "Loss of temperature with preservation of touch and pain"
+      ],
+      "correctAnswer": "D"
+    }
+  ]
+}

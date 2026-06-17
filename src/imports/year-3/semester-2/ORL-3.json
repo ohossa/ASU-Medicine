@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "comingSoon": true,
+  "meta": {
+    "moduleCode": "ORL-3",
+    "moduleName": "Otorhinolaryngology",
+    "year": 3,
+    "semester": 2,
+    "creditPoints": 2,
+    "totalMarks": 40,
+    "keywords": [
+      "ent",
+      "orl",
+      "otorhinolaryngology"
+    ]
+  },
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Otology & Rhinology",
+      "subtitle": "Otology & Rhinology",
+      "emoji": "👂",
+      "page": 1,
+      "lectureRange": "Lectures 1",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 2,
+      "title": "Laryngology & Head/Neck Diseases",
+      "subtitle": "Laryngology & Head/Neck Diseases",
+      "emoji": "🗣️",
+      "page": 2,
+      "lectureRange": "Lectures 2",
+      "subjects": [],
+      "keywords": []
+    }
+  ]
+}

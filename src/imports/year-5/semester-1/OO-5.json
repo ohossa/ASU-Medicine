@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "comingSoon": true,
+  "meta": {
+    "moduleCode": "OO-5",
+    "moduleName": "Ophthalmology",
+    "year": 5,
+    "semester": 1,
+    "creditPoints": 2,
+    "totalMarks": 40,
+    "keywords": [
+      "ophthalmology",
+      "eye",
+      "oo"
+    ]
+  },
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Optics & Refraction",
+      "subtitle": "Optics & Refraction",
+      "emoji": "👓",
+      "page": 1,
+      "lectureRange": "Lectures 1",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 2,
+      "title": "Anterior & Posterior Segment Diseases",
+      "subtitle": "Anterior & Posterior Segment Diseases",
+      "emoji": "👁️",
+      "page": 2,
+      "lectureRange": "Lectures 2",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 3,
+      "title": "Neuro-ophthalmology & Eye Injuries",
+      "subtitle": "Neuro-ophthalmology & Eye Injuries",
+      "emoji": "🧠",
+      "page": 3,
+      "lectureRange": "Lectures 3",
+      "subjects": [],
+      "keywords": []
+    }
+  ]
+}

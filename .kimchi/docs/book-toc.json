@@ -1,0 +1,106 @@
+{
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Overview of the Nervous System",
+      "pageRange": "2-57",
+      "subjects": {
+        "anatomy": ["Introduction to CNS", "Spinal cord external features", "Cerebral hemisphere: sensory cortex"],
+        "histology": ["Histological Structure of the CNS (Neuroglia — Cerebral cortex)"],
+        "biochem": ["Energy Sources of the CNS", "Biochem. of Neurotransmitters and related CNS disorders", "Sources of Ammonia in the Brain & urea cycle", "Ammonia metabolism & Urea Cycle", "Hyperammonemia and Encephalopathy", "Inborn Errors of Amino Acid Metabolism", "Vitamin Deficiency and Metabolic Disorders", "One-carbon unit and Folate Metabolism"],
+        "physiology": ["Processing of signals in CNS"]
+      }
+    },
+    {
+      "id": 2,
+      "title": "The Sensory System",
+      "pageRange": "58-113",
+      "subjects": {
+        "histology": ["Histological Structure of Receptors", "Internal Structure of Spinal Cord - Gray Matter"],
+        "physiology": ["Sensory Receptors and Sensory Coding", "Sensations Carried by the Spinothalamic Tract", "Pain and Pain control 1", "Pain and Pain control 2", "Sensations Carried by the Dorsal Column Tracts", "Somatosensory cortex"],
+        "anatomy": ["Anterolateral System and Pain Pathways", "Short ascending tracts & dorsal column tracts"],
+        "pharma": ["Opioids"]
+      }
+    },
+    {
+      "id": 3,
+      "title": "The Motor System, Spinal Cord Internal Structure and Impact of Different Lesions on Motor and Sensory Systems",
+      "pageRange": "114-234",
+      "subjects": {
+        "anatomy": ["Cerebral Hemisphere motor cortex", "Pyramidal & Extrapyramidal Tract", "Blood supply & lesions of spinal cord", "Basal Ganglia", "Cerebellum"],
+        "histology": ["Spinal Cord Internal Structure: White matter", "Stretch Receptors structure", "Cerebellum"],
+        "physiology": ["Muscle Stretch Reflex 1,2", "Other Reflexes", "Motor Cortex Function", "Descending Motor Tracts functions", "Sensory and Motor Disorders", "Basal Ganglia", "Cerebellum"],
+        "pathology": ["Neurodegenerative Diseases of the Basal Ganglia", "Cerebellar tumors"],
+        "pharma": ["Parkinsonism"],
+        "clinical": ["Clinical applications on motor & sensory lesions"]
+      }
+    },
+    {
+      "id": 4,
+      "title": "Brain Stem, Cranial Cavity, Temporal Region, and Pterygopalatine Fossa",
+      "pageRange": "235-305",
+      "subjects": {
+        "anatomy": ["Brain Stem external features", "Fourth Ventricle and Reticular Formation", "Columns of Cranial Nerve Nuclei", "Blood Supply of the Brain Stem", "Cranial Cavity", "SCALP", "FACE", "Temporal and Infratemporal Fossae", "Trigeminal Nerve", "Pterygopalatine Fossa", "Autonomic Ganglia"],
+        "histology": ["Brainstem — Medulla", "Brainstem — Pons", "Midbrain"]
+      }
+    },
+    {
+      "id": 5,
+      "title": "Anatomy of the Neck",
+      "pageRange": "306-334",
+      "subjects": {
+        "anatomy": ["Fascia of the Neck", "Triangles of the Neck", "Suprahyoid muscles, cervical plexus & sympathetic chain", "Last Four Cranial Nerves"]
+      }
+    },
+    {
+      "id": 6,
+      "title": "Diencephalon, Reticular Formation, Sleep and Epilepsy",
+      "pageRange": "335-372",
+      "subjects": {
+        "anatomy": ["Thalamus", "Hypothalamus and Third Ventricle"],
+        "physiology": ["Functions of Reticular Formation & Electrical activity of the Brain", "Sleep and Arousal"],
+        "pharma": ["Sedatives and Hypnotics", "Anesthesia", "Epilepsy and Migraines"]
+      }
+    },
+    {
+      "id": 7,
+      "title": "Cerebrum, Meninges and Higher Brain Function",
+      "pageRange": "373-411",
+      "subjects": {
+        "physiology": ["Cerebral Dominance and Association Areas", "Speech, Language and Aphasias", "Functions of the Limbic System", "Hypothalamus", "Memory, Learning and Amnesia"],
+        "pharma": ["Antidepressants"],
+        "anatomy": ["Limbic System", "Cerebral White Matter", "Lateral ventricle, cerebral meninges & CSF circulation", "Cerebral Blood Supply"]
+      }
+    },
+    {
+      "id": 8,
+      "title": "Infections Affecting Muscle Tone and Nervous System",
+      "pageRange": "412-461",
+      "subjects": {
+        "microbiology": ["Infections Affecting Muscle Tone", "Bacterial Meningitis", "Fungal Meningitis", "Aseptic Meningitis and Poliomyelitis", "Viral Encephalitis", "Rabies"],
+        "pharma": ["Treatment of Meningitis"],
+        "parasitology": ["Amoebic Encephalitis", "Larvae affecting the Brain"],
+        "pathology": ["Pathological Aspects of CNS Infections"]
+      }
+    },
+    {
+      "id": 9,
+      "title": "Neurodegenerative & Demyelinating Diseases, Trauma, Vascular Disorders & Tumors",
+      "pageRange": "462-501",
+      "subjects": {
+        "pathology": ["Neurodegenerative and Myelin Diseases", "CNS Trauma", "Cerebrovascular Diseases", "CNS Tumors"],
+        "pharma": ["Treatment of Neurodegenerative and Myelin Diseases"],
+        "clinical": ["Dementia: types, causes & clinical considerations"]
+      }
+    },
+    {
+      "id": 10,
+      "title": "Miscellaneous and Embryology",
+      "pageRange": "502-540",
+      "subjects": {
+        "pharma": ["Antipsychotics drugs", "Drug Abuse"],
+        "anatomy": ["Pharyngeal arches & Development of head & neck", "Development of face", "Development of nervous system"]
+      }
+    }
+  ]
+}

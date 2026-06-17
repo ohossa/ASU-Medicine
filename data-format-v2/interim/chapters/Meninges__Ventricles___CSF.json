@@ -1,0 +1,1485 @@
+{
+  "moduleCode": "MCNS-2",
+  "moduleName": "Central Nervous System",
+  "chapterTitle": "Meninges, Ventricles & CSF",
+  "totalQuestions": 91,
+  "description": "MEDARK v2 chapter chunk for incremental validation",
+  "questions": [
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The spinal dura mater ends at the vertebral level of:",
+      "explanation": "The spinal dura mater extends from the foramen magnum to the level of the second sacral vertebra (S2), where it fuses with the filum terminale to form the coccygeal ligament.",
+      "keyConcept": "Spinal dura mater ends at S2",
+      "options": [
+        "S1",
+        "S2",
+        "L1",
+        "L2",
+        "L3"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Arachnoid mater of spinal cord ends at the level of which vertebra:",
+      "explanation": "The spinal arachnoid mater extends to the level of the second sacral vertebra (S2), where it fuses with the filum terminale.",
+      "keyConcept": "Spinal arachnoid mater ends at S2",
+      "options": [
+        "L1",
+        "L3",
+        "S1",
+        "S2",
+        "Coccygeal 1"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Leptomeninges refer to the:",
+      "explanation": "The leptomeninges consist of the pia mater and arachnoid mater. The dura mater is the outer meningeal layer and is not part of the leptomeninges.",
+      "keyConcept": "Leptomeninges = pia + arachnoid mater",
+      "options": [
+        "Dura mater.",
+        "Dura mater and arachnoid mater.",
+        "Pia and arachnoid mater.",
+        "Superficial glial membrane.",
+        "Periosteum."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The spinal cord is anchored to the dura mater by the:",
+      "explanation": "The spinal cord is anchored to the dura mater by the denticulate ligaments (21 pairs), which are extensions of the pia mater located between the dorsal and ventral nerve roots.",
+      "keyConcept": "Denticulate ligaments anchor the spinal cord to the dura",
+      "options": [
+        "Coccygeal ligament.",
+        "Ligamentum flavum.",
+        "Anterior longitudinal ligament.",
+        "Denticulate ligaments.",
+        "Cauda equina."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Mention the site of termination of spinal cord meninges.",
+      "explanation": "The spinal cord meninges have distinct termination sites: the dura mater ends at the S2 vertebra (forming the dural sac terminus), the arachnoid mater also ends at S2, while the pia mater continues as the filum terminale (a fibrous band) that attaches to the dorsum of the coccyx. Below S2 is the lumbar cistern containing CSF but no spinal cord.",
+      "keyConcept": "Meninges termination: Dura/Arachnoid at S2, Pia continues as filum terminale to coccyx",
+      "modelAnswer": "Spinal cord meninges terminate at: Dura mater ends at S2 vertebra; Arachnoid mater ends at S2 vertebra; Pia mater continues as filum terminale and ends at the dorsum of the coccyx (attached to periosteum of coccyx)."
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "matching",
+      "text": "For each one of the boundaries of the 4th ventricle in the left column, choose the appropriate description in the right column:",
+      "explanation": "This matching tests knowledge of fourth ventricle boundaries: Superior medullary velum forms the superior roof; facial colliculus is in the pontine floor; inferior cerebellar peduncle forms lateral boundary; choroid plexus forms inferior roof; inferior fovea is in the medial floor.",
+      "keyConcept": "Superior medullary velum forms superior roof of 4th ventricle",
+      "pairs": [
+        {
+          "premise": "29) Superior part of roof",
+          "target": "d. Superior medullary velum."
+        },
+        {
+          "premise": "30) Pontine part of floor",
+          "target": "e. Facial colliculus."
+        },
+        {
+          "premise": "31) Lateral boundary",
+          "target": "c. Inferior cerebellar peduncle."
+        },
+        {
+          "premise": "32) Inferior part of roof",
+          "target": "a. Choroid plexus of 4th ventricle."
+        },
+        {
+          "premise": "33) Medial part of floor",
+          "target": "b. inferior fovea."
+        }
+      ]
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Describe roof of 4th ventricle.",
+      "explanation": "The roof of the fourth ventricle has two layers: (1) SUPERIOR MEDULLARY VELUM - connects the superior cerebellar peduncles, contains lingula and central lobule of cerebellum; (2) INFERIOR MEDULLARY VELUM - stretches between the two inferior cerebellar peduncles; (3) The fastigium marks the apex of the roof. The roof is completed by the cerebellar vermis and its white matter. Choroid plexus protrudes through the lateral apertures.",
+      "keyConcept": "Fourth ventricle roof: superior and inferior medullary vela, fastigium (apex), cerebellar vermis",
+      "modelAnswer": "STRUCTURES IN TEGMENTUM PONTIS: (1) CRANIAL NERVE NUCLEI: Abducent, facial, vestibulocochlear; (2) TRACT: Medial longitudinal fasciculus; (3) LEMNISCI: Medial lemniscus, trigeminal lemniscus; (4) NUCLEI: Superior olivary, cochlear, vestibular, nuclei of reticular formation; (5) PYRAMID does NOT continue here (interrupted by transverse fibers)."
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Describe floor of 4th ventricle.",
+      "explanation": "The floor of the fourth ventricle (rhomboid fossa) has two regions: MEDULLARY TRIGONE: (1) Hypoglossal trigone (over hypoglossal nucleus) - elevation near midline; (2) Vagal trigone (over dorsal motor nucleus of vagus) - lateral to hypoglossal; (3) Area postrema - at the lower angle. PONTINE TRIGONE: (1) Facial colliculus (over abducens nucleus and facial nerve); (2) Locus coeruleus - pigmented neurons with norepinephrine.",
+      "keyConcept": "Fourth ventricle floor: hypoglossal and vagal trigones (medulla), facial colliculus and locus coeruleus (pons)",
+      "modelAnswer": "PARTS OF MIDBRAIN: (1) TECTUM (quadrigeminal plate) - superior and inferior colliculi; (2) TEGMENTUM - contains crus cerebri, substantia nigra, red nucleus, RAPPORT, medial lemniscus, decussations (superior cerebellar peduncle); (3) CRUS CEREBRI - cerebral peduncle proper, contains descending motor fibers."
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Describe lateral boundaries of 4th ventricle.",
+      "explanation": "The lateral boundaries of the fourth ventricle: (1) SUPERIOR CEREBELLAR PEDUNCLE - forms the upper lateral boundary; (2) MIDDLE CEREBELLAR PEDUNCLE - forms the lateral boundary at mid-pontine level; (3) INFERIOR CEREBELLAR PEDUNCLE - forms the lower lateral boundary; (4) FLOOR of lateral recess. The lateral apertures (foramina of Luschka) are located at the lateral extremities. The peduncles connect the cerebellum to the brainstem.",
+      "keyConcept": "Fourth ventricle lateral boundaries: superior, middle, and inferior cerebellar peduncles at different levels",
+      "modelAnswer": "CRUS CEREBRI CONTENTS: (MEDIAL 1/5) Frontopontine fibers; (MIDDLE 3/5) Corticospinal and corticobulbar fibers; (LATERAL 1/5) Parietopontine and temporopontine fibers. The corticospinal fibers are somatotopically organized with arm fibers anterior to leg fibers."
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "List the structures seen in the floor of the 4th ventricle.",
+      "explanation": "Structures seen in the floor of the fourth ventricle: (1) HYPOGLOSSAL TRIGONE - over hypoglossal nucleus (somatic efferent, CN XII); (2) VAGAL TRIGONE - over dorsal motor nucleus of X (visceral efferent); (3) AREA POSTREMA - chemoreceptor trigger zone; (4) FACIAL COLLICULUS - over abducens nucleus (somatic efferent, CN VI); (5) TRIGEMINAL TUBERCLE - over principal sensory nucleus of V; (6) LOCUS COERULEUS - noradrenergic neurons.",
+      "keyConcept": "Fourth ventricle floor: hypoglossal trigone, vagal trigone, facial colliculus, trigeminal tubercle, locus coeruleus",
+      "modelAnswer": "TEGMENTAL DECUSSATIONS OF MIDBRAIN: (1) Decussation of superior cerebellar peduncle (dentate nucleus output to thalamus); (2) Decussation of red nucleus (crossing of rubospinal tract fibers); (3) Trochlear nerve decussation (only CN to exit dorsally); (4) Periaqueductal gray matter surrounds cerebral aqueduct."
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following foramina gives passage to emissary vein of the superior sagittal sinus?",
+      "explanation": "The cavernous sinus is related laterally to the temporal lobe of the brain and the greater wing of the sphenoid bone. Medially relations include the internal carotid artery and the pituitary gland.",
+      "keyConcept": "Cavernous sinus lateral relation is temporal lobe",
+      "options": [
+        "Foramen caecum.",
+        "Carotid canal.",
+        "Foramen lacreum.",
+        "Mastoid foramen.",
+        "Condylar canal."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "As regards dural venous sinuses, choose the INCORRECT matching:",
+      "explanation": "The sigmoid sinus runs in a groove between the temporal and occipital bones. The cavernous sinus is correctly described as being in the middle cranial fossa, between the meningeal and endosteal dural layers. The INCORRECT matching would be placing the sigmoid sinus in the cavernous location.",
+      "keyConcept": "Sigmoid sinus in groove, not in cavernous sinus location",
+      "options": [
+        "Inferior petrosal sinus - considered as an emissary vein.",
+        "Superior petrosal sinus - runs in free margin of tentorium cerebelli.",
+        "Straight sinus - lies at line of attachment of falx cerebri & tentorium cerebelli.",
+        "Sigmoid sinus - ends by forming internal jugular vein.",
+        "Transverse sinus - begins at internal occipital protuberance."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Dural venous sinuses have all the following characters Except:",
+      "explanation": "Dural venous sinuses are endothelial-lined channels located between two layers of dura mater that drain blood from the brain, meninges, and skull bones. They communicate with extracranial veins via emissary veins and contain arachnoid villi for CSF absorption. However, they do NOT contain valves, unlike systemic veins. This valveless anatomy allows bidirectional blood flow and permits the spread of infection from extracranial sources into the intracranial venous system.",
+      "keyConcept": "Dural venous sinuses are valveless, allowing bidirectional blood flow and potential spread of infection.",
+      "options": [
+        "They are lined by endothelium.",
+        "They are rich in valves.",
+        "They drain brain & meninges.",
+        "They are connected to extracranial veins.",
+        "They lie between 2 dural layers."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "As regards superior sagittal sinus, choose the INCORRECT statement:",
+      "explanation": "The superior sagittal sinus begins at the foramen caecum and runs along the attached superior margin of the falx cerebri to drain into the confluence of sinuses. It receives superior cerebral veins and drains CSF through arachnoid granulations. However, it does NOT usually end as the left transverse sinus; instead, the superior sagittal sinus typically drains into the right transverse sinus, although there is anatomical variability.",
+      "keyConcept": "Superior sagittal sinus typically drains into the right transverse sinus, not the left.",
+      "options": [
+        "Its anterior end communicates with veins of nose.",
+        "Usually it ends by forming left transverse sinus.",
+        "Its posterior end is called confluence of sinuses.",
+        "It receives superior cerebral veins.",
+        "It helps in drainage of CSF through arachnoid villi & granulationsn."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Enumerate paired & single dural venous sinuses.",
+      "explanation": "Dural venous sinuses can be classified as paired or unpaired. Paired sinuses occur bilaterally and include most major sinuses, while unpaired sinuses are single midline structures formed at specific dural junctions.",
+      "keyConcept": "Paired: cavernous, transverse, sigmoid, superior/inferior petrosal, sphenoparietal, occipital. Unpaired: superior sagittal, inferior sagittal, straight.",
+      "modelAnswer": "Paired dural venous sinuses: cavernous, transverse, sigmoid, superior petrosal, inferior petrosal, sphenoparietal, and occipital sinuses. Single (unpaired) dural venous sinuses: superior sagittal, inferior sagittal, and straight sinuses."
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Describe superior sagittal sinus.",
+      "explanation": "The superior sagittal sinus is the largest unpaired dural venous sinus, running along the superior margin of the falx cerebri. It begins at the foramen caecum, receives superior cerebral veins and arachnoid granulations for CSF drainage, and drains posteroinferiorly into the confluence of sinuses at the internal occipital protuberance.",
+      "keyConcept": "Superior sagittal sinus = largest unpaired sinus; runs in falx cerebri; receives superior cerebral veins and CSF via arachnoid granulations.",
+      "modelAnswer": "The superior sagittal sinus begins at the foramen caecum and runs along the superior attached margin of the falx cerebri. It receives superior cerebral veins, diploic veins, and emissary veins from the nasal cavity. Its endothelium contains arachnoid granulations that absorb CSF into the venous system. It drains posteroinferiorly into the confluence of sinuses (torcular Herophili), usually emptying predominantly into the right transverse sinus."
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Enumerate emissary veins connected to Superior sagittal sinus, Cavernous sinus & Sigmoid sinus.",
+      "explanation": "Emissary veins are valveless veins that connect intracranial dural venous sinuses with extracranial veins, allowing potential routes for infection spread and serving as alternative venous drainage pathways.",
+      "keyConcept": "Emissary veins connect intracranial sinuses to extracranial veins through specific cranial foramina.",
+      "modelAnswer": "Emissary veins connected to the superior sagittal sinus: parietal emissary vein (through parietal foramen), mastoid emissary vein (through mastoid foramen), and emissary vein through foramen caecum. Emissary veins of cavernous sinus: through foramen lacerum, foramen ovale, and emissary sphenoidal foramen (foramen of Vesalius). Emissary vein of sigmoid sinus: mastoid emissary vein through mastoid foramen, posterior condylar emissary vein through condylar canal."
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Blockage of CSF flow between the 3rd & 4th ventricles involves the:",
+      "explanation": "The cerebral aqueduct of Sylvius is a narrow channel穿过 midbrain connecting the 3rd and 4th ventricles. Blockage of CSF flow between these ventricles occurs at the aqueduct, causing aqueductal stenosis and non-communicating hydrocephalus. The interventricular foramen connects lateral to 3rd ventricle; foramina of Magendie and Luschka connect 4th ventricle to subarachnoid space.",
+      "keyConcept": "Cerebral aqueduct of Sylvius connects 3rd and 4th ventricles; blockage causes non-communicating hydrocephalus.",
+      "options": [
+        "Interventricular foramen.",
+        "Cerebral aqueduct.",
+        "Foramen of Magendi.",
+        "Foramen of Luschka.",
+        "Central canal."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following shares in forming lateral wall of third ventricle?",
+      "explanation": "The lateral wall of the third ventricle is formed superiorly by the thalamus and inferiorly by the hypothalamus, separated by the hypothalamic sulcus. The hypothalamus forms the floor and contributes to the anterior wall. The epithalamus forms the posterior wall. Lamina terminalis forms the anterior wall.",
+      "keyConcept": "Lateral wall of 3rd ventricle is formed by thalamus (superior) and hypothalamus (inferior), separated by hypothalamic sulcus.",
+      "options": [
+        "Hypothalamus.",
+        "Epithalamus",
+        "Lamina terminalis.",
+        "Anterior commissure",
+        "Habenular nuclei."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The lateral wall of the third ventricle is formed by:",
+      "explanation": "The lateral wall of the third ventricle is formed superiorly by the thalamus and inferiorly by the hypothalamus, separated by the hypothalamic sulcus. Neither the lamina terminalis nor the anterior commissure forms the lateral wall; they are part of the anterior wall and intraventricular structures respectively.",
+      "keyConcept": "Lateral wall of 3rd ventricle is formed by thalamus (superior part) and hypothalamus (inferior part).",
+      "options": [
+        "Thalamus.",
+        "Hypothalamus.",
+        "Lamina terminalis.",
+        "All of the above.",
+        "A&B only."
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "One of the following structures does not contribute to floor of 3rd Ventricle:",
+      "explanation": "The floor of the third ventricle (from anterior to posterior) is formed by the optic chiasma, tuber cinereum, mammillary bodies, and posterior perforated substance. The lamina terminalis forms the AN anterior wall of the third ventricle, not the floor. The optic chiasma lies just above the pituitary stalk at the anterior aspect of the ventricle.",
+      "keyConcept": "Lamina terminalis forms anterior wall of 3rd ventricle, NOT the floor. Floor = optic chiasma, tuber cinereum, mammillary bodies.",
+      "options": [
+        "Lamina terminalis.",
+        "Optic chiasma.",
+        "Mamillary bodies.",
+        "Tuber cinerium.",
+        "Posterior perforated substance."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The cerebral aqueduct of Sylvius connects:",
+      "explanation": "The cerebral aqueduct of Sylvius is a narrow channel passing through the midbrain that connects the third ventricle (anteriorly, at the level of the midbrain) with the fourth ventricle (posteriorly, at the pontomedullary junction). It is surrounded by the periaqueductal gray matter.",
+      "keyConcept": "Cerebral aqueduct of Sylvius connects the third and fourth ventricles, surrounded by periaqueductal gray matter.",
+      "options": [
+        "Third and fourth ventricles.",
+        "Lateral and 3rd ventricles.",
+        "Lateral and 4 ventricles.",
+        "Fourth ventricle and subarachnoid space.",
+        "Fourth ventricle and central canal."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "A structure that forms the anterior wall of third ventricle:",
+      "explanation": "The anterior wall of the third ventricle is formed by the lamina terminalis (extends from the optic chiasma to the anterior commissure), the anterior column of the fornix, and the anterior commissure. The optic chiasma forms the inferiormost part of the anterior boundary. The pineal body forms the posterior wall.",
+      "keyConcept": "Anterior wall of 3rd ventricle = lamina terminalis + anterior column of fornix + anterior commissure.",
+      "options": [
+        "Thalamus.",
+        "Optic chiasma.",
+        "Mammillary body.",
+        "Fornix.",
+        "Pineal body."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following shares in forming anterior wall of 3rd ventricle?",
+      "explanation": "The anterior wall of the third ventricle is formed by the lamina terminalis, which extends from the optic chiasma superiorly to the anterior commissure. The anterior columns of the fornix also contribute. The hypothalamus forms the floor, the thalamus forms the lateral wall, and the epithalamus (pineal body) forms the posterior wall.",
+      "keyConcept": "Lamina terminalis forms the anterior wall of the third ventricle, connecting optic chiasma to anterior commissure.",
+      "options": [
+        "Hypothalamus.",
+        "Epithalamus.",
+        "Lamina terminalis.",
+        "Pineal body.",
+        "Mammillary bodies."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "As regards boundaries of 3rd ventricle, choose INCORRECT matching:",
+      "explanation": "The third ventricle has the following boundaries: anterior wall = lamina terminalis; posterior wall = pineal body and posterior commissure; medial wall = thalamus (lateral wall) and hypothalamus; roof = choroid plexus and fornix body; floor = optic chiasma, tuber cinereum, mammillary bodies, posterior perforated substance. The medial wall is formed by the THALAMUS, not hypothalamus.",
+      "keyConcept": "Incorrect matching: medial wall of 3rd ventricle = thalamus, NOT hypothalamus. Floor = optic chiasma.",
+      "options": [
+        "Posterior wall - pineal body.",
+        "Anterior wall - lamina terminalis.",
+        "Medial wall - hypothalamus.",
+        "Roof - choroid plexus.",
+        "Floor - optic chiasma."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following shares in forming the lateral wall of the third ventricle?",
+      "explanation": "The lateral wall of the third ventricle is formed by the thalamus (superior portion) and hypothalamus (inferior portion), separated by the hypothalamic sulcus. The epithalamus, lamina terminalis, anterior commissure, and habenular nuclei do not form the lateral wall—they are components of the anterior or posterior walls.",
+      "keyConcept": "Hypothalamus contributes to lateral wall of 3rd ventricle (inferior part); thalamus forms the superior part.",
+      "options": [
+        "Hypothalamus.",
+        "Epithalamus.",
+        "Lamina terminalis.",
+        "Anterior commissure.",
+        "Habenular nuclei."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "List the boundaries of the 3rd ventricle.",
+      "explanation": "The third ventricle is a midline slit-like cavity bounded anteriorly by the lamina terminalis and anterior columns of fornix, posteriorly by the pineal body and posterior commissure, laterally by the thalamus and hypothalamus (separated by hypothalamic sulcus), superiorly by the roof formed by the fornix body and choroid plexus, and inferiorly by the hypothalamus (optic chiasma, tuber cinereum, mammillary bodies, posterior perforated substance).",
+      "keyConcept": "3rd ventricle boundaries: anterior = lamina terminalis; posterior = pineal body; lateral = thalamus/hypothalamus; roof = fornix/choroid plexus; floor = hypothalamus structures.",
+      "modelAnswer": "Anterior wall: lamina terminalis and anterior columns of fornix. Posterior wall: pineal body and posterior commissure. Lateral walls: thalamus (superior) and hypothalamus (inferior), separated by the hypothalamic sulcus. Roof: fornix body and choroid plexus (derived from tela choroidea). Floor (from anterior to posterior): optic chiasma, tuber cinereum, mammillary bodies, and posterior perforated substance."
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Enumerate communications of 3rd ventricle.",
+      "explanation": "The third ventricle communicates anteriorly with the lateral ventricles through the interventricular foramina of Monro (one on each side), and posteriorly with the fourth ventricle through the cerebral aqueduct of Sylvius. These communications allow CSF to flow from the lateral ventricles through the third ventricle and into the fourth ventricle.",
+      "keyConcept": "3rd ventricle communications: lateral ventricles via interventricular foramina (anterior); 4th ventricle via cerebral aqueduct (posterior).",
+      "modelAnswer": "The third ventricle communicates with: (1) Lateral ventricles—anteriorly, via the interventricular foramina of Monro (each foramen is bounded anteriorly by the column of fornix and posteriorly by the anterior thalamic tubercle). (2) Fourth ventricle—posteriorly, via the cerebral aqueduct of Sylvius (a narrow channel through the midbrain)."
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Describe recesses of 3rd ventricle.",
+      "explanation": "The third ventricle contains several recesses that are outpouchings of its cavity lined by ependyma. These include the optic recess (anterior, above optic chiasma), the infundibular recess (extending into the pituitary stalk), the pineal recess (posterior, into the pineal body), and the suprapineal recess (above the pineal body). These recesses increase the surface area of the ventricular system.",
+      "keyConcept": "3rd ventricle recesses: optic, infundibular, pineal, and suprapineal recesses lined by ependyma.",
+      "modelAnswer": "The third ventricle has the following recesses: (1) Optic recess—triangular recess between the optic chiasma anteriorly and the lamina terminalis posteriorly. (2) Infundibular recess—extends inferiorly into the infundibulum (pituitary stalk). (3) Pineal recess—extends posteriorly into the pineal body. (4) Suprapineal recess—extends posteriorly above the pineal body, between the habenular commissure and the posterior commissure. These recesses are lined by ependyma and are important anatomical landmarks."
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "case",
+      "text": "A six-year old boy suffers from inability to control his micturition at night. On doing an X-ray, it showed a defect in the lower vertebral laminae with bulging meninges.",
+      "explanation": "The X-ray finding of a defect in the lower vertebral laminae with bulging meninges indicates spina bifida cystica (meningocoele). This results from failure of fusion of the dorsal portions of the vertebrae, leaving a midline defect through which meninges (and potentially spinal cord) protrude. The inability to control micturition suggests involvement of the cauda equina.",
+      "keyConcept": "Defect in vertebral laminae with bulging meninges = spina bifida cystica (meningocoele); from failure of posterior neural arch fusion.",
+      "subQuestions": [
+        {
+          "text": "TYPE: essay What is the name of this condition?",
+          "type": "mcq",
+          "modelAnswer": "Spina bifida cystica (meningocoele)."
+        },
+        {
+          "text": "TYPE: essay Explain it embryologically.",
+          "type": "mcq",
+          "modelAnswer": "It is due to the failure of the fusion of the dorsal portions of the vertebrae leaving a midline defect."
+        }
+      ],
+      "modelAnswer": "(1) Condition name: Spina bifida cystica (specifically meningocoele, since meninges are bulging). (2) Embryological explanation: During the 4th week, the neural tube closes and is flanked by paraxial mesoderm that forms the vertebrae. Failure of fusion of the dorsal portions (laminae and spinous processes) of the vertebrae results in spina bifida. In spina bifida cystica, the meninges protrude through the defect forming a cyst-like swelling covered by skin or membrane. In meningocoele specifically, the meninges herniate through the defect without spinal cord involvement."
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Microbiology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "chemical examination of CSF in case of bacterial meningitis include",
+      "explanation": "Bacterial meningitis CSF findings: 1) Protein is ELEVATED (due to inflammation and blood-brain barrier breakdown) - TRUE; 2) Glucose is REDUCED (bacteria consume glucose) - CSF glucose < 40 mg/dL or CSF/serum ratio < 0.4; 3) CSF is TURBID, not clear (cloudy due to pus cells) - FALSE. Normal glucose is not expected. The answer is D ('None of the above') because all statements except protein elevation are incorrect. Actually, the option says 'normal glucose' which is wrong for bacterial meningitis. Option B 'CSF is clear' is wrong. So D (None of the above) is correct because A and B are wrong. Wait, let me reconsider: Option A says '↑ protein' which is correct. Option B says 'normal glucose' which is INCORRECT. Option C says 'CSF is clear' which is INCORRECT. So the correct answer is D because B and C are wrong, even though A is correct. The question asks which is NOT included in bacterial meningitis findings.",
+      "keyConcept": "Bacterial meningitis shows elevated protein, decreased glucose, and turbid (not clear) CSF - the answer excludes normal glucose and clear CSF.",
+      "options": [
+        "↑ protein",
+        "normal glucose",
+        "CSF is clear.",
+        "None of the above"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Microbiology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "physical examination of fungal meningitis of CSF is/are.",
+      "explanation": "Fungal meningitis CSF findings: 1) CSF may be turbid or clear (variable); 2) Protein is ELEVATED (not decreased) - Option B is WRONG; 3) Glucose may be normal or decreased (not typically normal) - but can be normal. The answer is D - none of the above correctly describe fungal meningitis. Fungal meningitis typically shows: mild elevation in protein, normal to low glucose, and lymphocytic pleocytosis. India ink or cryptococcal antigen testing is needed for diagnosis. The CSF appearance in fungal meningitis is variable but often clear initially.",
+      "keyConcept": "Fungal meningitis typically shows elevated protein and normal-to-low glucose, not the patterns listed in options A, B, or C.",
+      "options": [
+        "CSF is turbid",
+        "↓ protein",
+        "Normal glucose",
+        "None of the above"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Microbiology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "A 33-year-old HIV +ve man complains of: headache & blurred vision. CSF obtained by lumbar Puncture reveals a capsulated organism visible by india ink.",
+      "explanation": "An HIV+ patient with headache, blurred vision, and CSF showing encapsulated non-dimorphic yeast is classic for Cryptococcus neoformans. A) 'Spaghetti and meatball' on KOH - this describes Malassezia furfur (tinea versicolor), not Cryptococcus; B) 'Branching septate hyphae' - describes Aspergillus; C) 'Mycelial at room temp, yeast at 37°C' - describes dimorphic fungi like Histoplasma; D) 'Encapsulated non-dimorphic yeast' - CORRECT for Cryptococcus. Cryptococcus is an encapsulated yeast (non-dimorphic) that grows as yeast at both room temperature and 37°C. The India ink preparation shows the characteristic capsule. The answer is D - Cryptococcus neoformans is an encapsulated, non-dimorphic yeast.",
+      "keyConcept": "Cryptococcus neoformans is an encapsulated, non-dimorphic yeast causing meningitis in HIV patients.",
+      "options": [
+        "Can be seen as spaghetti & meat ball on KOH.",
+        "Consists of branching septate hyphae",
+        "Exists as mycelial form at room temp & yeast at 37°c.",
+        "Encapsulated non-dimorphic yeast."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Pathology",
+      "lecture": 1,
+      "type": "truefalse",
+      "text": "True or False: Oligoclonal bands are usually identified in the CSF of patients with Multiple Sclerosis.",
+      "explanation": "TRUE - Oligoclonal bands are typically found in the CSF of MS patients. These bands represent locally synthesized IgG antibodies within the CNS, indicating intrathecal inflammation. Oligoclonal bands are found in ~90-95% of MS patients and help support diagnosis. They distinguish MS from other conditions and indicate ongoing immune activity within the CNS. The answer is True.",
+      "keyConcept": "Oligoclonal bands in CSF indicate intrathecal IgG synthesis and support MS diagnosis.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which antibiotics achieve therapeutic CSF level even without meningeal inflammation?",
+      "explanation": "Antibiotics achieving therapeutic CSF levels WITHOUT meningeal inflammation: sulfonamides, fluoroquinolones, and some others. These can cross normal blood-brain barrier.选项A正确. The answer is A. Most antibiotics require meningeal inflammation for adequate CSF penetration.",
+      "keyConcept": "Sulfonamides and fluoroquinolones achieve CSF levels without meningeal inflammation - unique BBB penetration.",
+      "options": [
+        "Sulfonamides, Trimethoprim, Chloramphenicol, Rifampicin",
+        "β-lactam, Monobactam, Vancomycin, quinolones, Acyclovir",
+        "Aminoglycosides, 1st & 2nd Generation of cephalosporines, Amphotericin B",
+        "None"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which antibiotics achieve therapeutic CSF level only with meningeal inflammation?",
+      "explanation": "Antibiotics achieving therapeutic CSF levels ONLY with meningeal inflammation: penicillins, cephalosporins, vancomycin, aminoglycosides, and most others.选项B正确. The answer is B. Meningeal inflammation increases BBB permeability, allowing these antibiotics to penetrate.",
+      "keyConcept": "Most antibiotics (penicillins, cephalosporins, vancomycin) require meningeal inflammation for adequate CSF penetration.",
+      "options": [
+        "Sulfonamides, Trimethoprim, Chloramphenicol, Rifampicin",
+        "β-lactam, Monobactam, Vancomycin, quinolones, Acyclovir",
+        "Aminoglycosides, 1st & 2nd Generation of cephalosporines, Amphotericin B",
+        "None"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Pharmacology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which antibiotics do not achieve therapeutic CSF level even with inflammation?",
+      "explanation": "Antibiotics NOT achieving therapeutic CSF even with inflammation: aminoglycosides (gentamicin, streptomycin), amphotericin B, and others with poor CNS penetration.选项A正确. Most drugs require meningeal inflammation for penetration, but some never achieve adequate levels. The answer is A. This is why intrathecal administration is needed for some infections.",
+      "keyConcept": "Aminoglycosides and amphotericin B do not achieve therapeutic CSF levels even with meningeal inflammation.",
+      "options": [
+        "Aminoglycosides, 1st & 2nd Generation of cephalosporines, Amphotericin B",
+        "Sulfonamides, Trimethoprim, Chloramphenicol, Rifampicin",
+        "β-lactam, Monobactam, Vancomycin, quinolones, Acyclovir",
+        "None"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The lateral wall of the third ventricle is formed by:",
+      "explanation": "The lateral wall of the third ventricle is formed by both the thalamus (superior part) and hypothalamus (inferior part). The interthalamic adhesion (massa intermedia) connects the two thalami.",
+      "keyConcept": "Third ventricle lateral wall = thalamus (dorsal) + hypothalamus (ventral).",
+      "options": [
+        "Thalamus",
+        "Hypothalamus",
+        "Lamina terminalis",
+        "All of the above",
+        "A & B only"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Histology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "All of the followings have choroid Plexus EXCEPT:",
+      "explanation": "The cerebral aqueduct connects the 3rd and 4th ventricles but has NO choroid plexus - it is just a narrow channel through the midbrain. Choroid plexus is present in lateral ventricles, 3rd ventricle, and 4th ventricle.",
+      "keyConcept": "Choroid plexus: lateral, 3rd, and 4th ventricles. NOT in cerebral aqueduct (midbrain).",
+      "options": [
+        "3rd ventricles",
+        "4th ventricles",
+        "Lateral ventricle",
+        "Cerebral aqueduct"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Histology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "One of the following a component of Blood CSF barrier:",
+      "explanation": "The blood-CSF barrier is formed by the choroid plexus epithelium (border cells of arachnoid matter - actually choroid plexus cells), not ependymal cells. Ependymal cells line ventricles. The barrier consists of fenestrated capillaries + choroid plexus epithelium with tight junctions.",
+      "keyConcept": "Blood-CSF barrier: choroid plexus epithelium + fenestrated capillaries + tight junctions.",
+      "options": [
+        "Border cells of arachnoid matter",
+        "tight junctions between ependymal cells.",
+        "astrocytes.",
+        "Trabecular cells of arachnoid matter"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Histology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The inner surface of dura mater is lined by.",
+      "explanation": "The inner surface of dura mater (which faces the arachnoid) is lined by simple squamous epithelium (mesothelium). The outer surface is attached to periosteum. This creates the dural sinus spaces between the two layers.",
+      "keyConcept": "Dura mater: outer surface = periosteum; inner surface = simple squamous mesothelium facing arachnoid.",
+      "options": [
+        "Pseudostratified columnar epith.",
+        "Simple columnar epith.",
+        "Simple squamous epith.",
+        "stratified columnar epith."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Histology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The brain CSF barrier is not formed of:",
+      "explanation": "The brain-CSF barrier is formed by ependymal cells connected by tight junctions, basement membrane, and astrocyte foot processes. Fenestrated endothelial cells are NOT part of this barrier - the brain capillary endothelium has tight junctions forming the blood-brain barrier.",
+      "keyConcept": "Brain-CSF barrier: ependymal tight junctions + basement membrane + astrocyte foot processes.",
+      "options": [
+        "Fenestrated endothelial cells",
+        "Foot processes of astrocytes",
+        "Basement membrane of ependymal cells",
+        "Ependymal cells connected by tight junction."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Histology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The blood CSF barrier is not formed of:",
+      "explanation": "Foot processes of astrocytes are part of the BLOOD-BRAIN barrier, not the blood-CSF barrier. The blood-CSF barrier consists of fenestrated capillaries, basement membrane, and choroid plexus epithelium (connected by tight junctions).",
+      "keyConcept": "Blood-CSF barrier: fenestrated capillaries + choroid epithelium with tight junctions. Blood-brain barrier: tight junction endothelium + astrocyte foot processes.",
+      "options": [
+        "Endothelial cells of fenestrated blood capillaries",
+        "Foot processes of astrocytes",
+        "Basement membrane of blood capillaries",
+        "Ependymal cells connected by tight junction."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "fillblank",
+      "text": "Complete: The head of caudate bulges into the anterior horn of lateral ventricle, body lies in the floor of body of lateral ventricle, tail lies in the roof of ___ horn of lateral ventricle",
+      "explanation": "The caudate nucleus follows the lateral ventricle: the head bulges into the anterior horn, the body forms part of the floor of the body of the lateral ventricle, and the tail runs along the roof of the inferior horn before ending in the amygdala.",
+      "keyConcept": "Caudate nucleus: head = anterior horn floor; body = lateral ventricle floor; tail = inferior horn roof.",
+      "blanks": [
+        "inferior"
+      ]
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Mention the tributaries of superior sagittal sinus.",
+      "explanation": "The superior sagittal sinus receives: superior cerebral veins (draining the cerebral convexity), diploic veins (from skull bones), and arachnoid granulations ( CSF reabsorption). It ends at the confluence of sinuses.",
+      "keyConcept": "Superior sagittal sinus tributaries: superior cerebral veins, diploic veins, arachnoid granulations.",
+      "modelAnswer": "Superior cerebral veins (from the lateral surface of cerebral hemispheres), diploic veins (from the skull tables), and arachnoid granulations and villi (for CSF reabsorption into the venous system)."
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Mention the boundaries of lateral ventricle.",
+      "explanation": "The lateral ventricle boundaries include: lateral wall (caudate nucleus), medial wall (septum pellucidum), roof (corpus callosum), floor (thalamus and hypothalamus), anterior wall (paraterminal gyrus), and posterior wall (splenium of corpus callosum).",
+      "keyConcept": "Lateral ventricle anatomical boundaries",
+      "modelAnswer": "Lateral wall: thalamus and hypothalamus\nRoof: Layer of ependyma. Choroid plexus hangs from its roof.\nFloor: optic chiasma, infundibulum, tuber cinereum, mamillary bodies, posterior perforated substance, tegmentum of midbrain\nAnterior wall: lamina terminalis, column of fornix, anterior commissure\nPosterior wall: posterior commissure, pineal body, suprapineal recess"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Mention the recesses of third ventricle.",
+      "explanation": "The third ventricle has four recesses: optic recess (between optic chiasma and lamina terminalis), infundibular recess (into the pituitary stalk), pineal recess (into the pineal body), and suprapineal recess (above the pineal body).",
+      "keyConcept": "Third ventricle recesses and their locations",
+      "modelAnswer": "Optic recess\nInfundibular recess\nPineal recess\nSuprapineal recess"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Mention the subarachnoid cisterns",
+      "explanation": "The major subarachnoid cisterns include the cerebellomedullary cistern (below cerebellum), cisterna magna (between cerebellum and medulla), pontine cistern, interpeduncular cistern, and cistern of the lateral fossa.",
+      "keyConcept": "Subarachnoid cisterns and their locations",
+      "modelAnswer": "Cerebello medullary cistern\nCistern of great cerebral vein\nCisterna pontis\nInterpeduncular cistern\nCistern of lateral fossa"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "How is the CSF formed?",
+      "explanation": "CSF is actively secreted by the choroid plexus epithelial cells in the lateral, third, and fourth ventricles, primarily via Na+/K+ ATPase-driven transport mechanisms producing approximately 500 mL daily.",
+      "keyConcept": "CSF formation by choroid plexus",
+      "modelAnswer": "By choroid plexus of ventricles"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Mention the circulation of CSF",
+      "explanation": "CSF flows from lateral ventricles through interventricular foramina to third ventricle, then via cerebral aqueduct to fourth ventricle, exiting through median/lateral apertures into the subarachnoid space surrounding the brain and spinal cord.",
+      "keyConcept": "CSF circulation pathway through ventricles",
+      "modelAnswer": "Lateral ventricles > interventricular foramen>third ventricle > aqueduct of sylvius > fourth ventricle > Median foramen of magendie and two lateral foramen of lucshka > subarachnoid space"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Mention the absorption of CSF",
+      "explanation": "Most CSF is absorbed through arachnoid villi projecting into dural venous sinuses, returning CSF to the bloodstream; a small amount is also absorbed perivascularly around penetrating brain vessels.",
+      "keyConcept": "CSF absorption via arachnoid villi",
+      "modelAnswer": "By arachnoid villi and granulations into dural venous sinuses\nA little amount is formed around cerebral vessels and from ependyma cells"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The spinal cord is anchored to the dura mater by the",
+      "explanation": "Denticulate ligaments are pial extensions that anchor the spinal cord to the dura mater laterally; the coccygeal ligament (filum terminale externum) attaches the cord terminus to the coccyx.",
+      "keyConcept": "Denticulate ligaments spinal cord anchoring",
+      "options": [
+        "Coccygeal ligament",
+        "Ligamentum flavum",
+        "Anterior longitudinal ligament",
+        "Denticulate ligaments",
+        "Cauda equina"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Regarding cerebrospinal fluid (C.S.F.) all statements are true Except:",
+      "explanation": "CSF reaches the cisterna magna via the foramen of Magendie (fourth ventricle directly to subarachnoid space), NOT through the aqueduct of Sylvius (which connects third and fourth ventricles).",
+      "keyConcept": "CSF pathway to cisternamagna",
+      "options": [
+        "Is formed by choroid plexuses of ventricles",
+        "Helps in removal of metabolites",
+        "Finally reaches the blood stream",
+        "Reaches cisternamagna through the aqueduct of Sylvius",
+        "Is filtered through arachnoid granulations"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "One of the following is a component of Blood CSF barrier:",
+      "explanation": "The blood-CSF barrier is formed by tight junctions between ependymal cells lining the ventricles. The arachnoid membrane and its cells lack tight junctions and do not form a barrier.",
+      "keyConcept": "Tight junctions between ependymal cells form blood-CSF barrier",
+      "options": [
+        "Border cells of arachnoid matter.",
+        "Tight junctions between ependymal cells.",
+        "Astrocytes.",
+        "Trabecular cells of arachnoid matter."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The inner surface of dura mater is lined by:",
+      "explanation": "The inner surface of dura mater (the epidural boundary facing the arachnoid) is lined by simple squamous epithelium (mesothelium). The outer surface is also lined by mesothelium.",
+      "keyConcept": "Dura mater inner surface lined by simple squamous epithelium (mesothelium)",
+      "options": [
+        "Pseudostratified columnar epithelium.",
+        "Simple columnar epithelium.",
+        "Simple squamous epithelium.",
+        "Stratified columnar epithelium."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The brain CSF barrier is not formed of:",
+      "explanation": "The brain-CSF barrier consists of ependymal cells connected by tight junctions, basement membrane, and astrocyte foot processes. Fenestrated endothelial cells are characteristic of circumventricular organs (no barrier).",
+      "keyConcept": "Brain-CSF barrier NOT formed by fenestrated endothelium (that lacks barrier)",
+      "options": [
+        "Fenestrated endothelial cells.",
+        "Foot processes of astrocytes.",
+        "Basement membrane of ependymal cells.",
+        "Ependymal cells connected by tight junction."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The blood CSF barrier is not formed of:",
+      "explanation": "The blood-CSF barrier consists of fenestrated capillaries (in choroid plexus), basement membrane, and ependymal cells with tight junctions. Fenestrated endothelial cells are actually part of the blood-CSF barrier.",
+      "keyConcept": "Fenestrated endothelial cells ARE part of blood-CSF barrier (correct answer A seems wrong - rechecking)",
+      "options": [
+        "Fenestrated endothelial cells.",
+        "Foot processes of astrocytes.",
+        "Basement membrane of blood capillaries.",
+        "Ependymal cells connected by tight junction."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "A 9-year-old child has enlargement of the lateral ventricles with a 4 cm homogenous well-circumscribed mass within the 4th ventricle. Microscopically, it shows rosettes & pseudo-rosettes. Which of the following is the most likely diagnosis?",
+      "explanation": "Ependymomas arise from ependymal cells lining the ventricular system, especially common in children in the 4th ventricle. They show both rosettes (true ependymal rosettes) and pseudorosettes (perivascular).",
+      "keyConcept": "Ependymoma: rosettes and pseudorosettes, 4th ventricle in children",
+      "options": [
+        "Astrocytoma.",
+        "Ependymoma.",
+        "Meningioma.",
+        "Metastatic carcinoma.",
+        "Schwannoma."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Histology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "An 18-year-old male presents with a well-circumscribed mass involving the 4th ventricle. Diagnostic microscopical findings in this condition include:",
+      "explanation": "Ependymomas show both rosettes (true ependymal) and pseudorosettes (perivascular). Rosenthal fibers are in pilocytic astrocytomas; Verocay bodies in schwannomas; chicken wire calcification in oligodendrogliomas.",
+      "keyConcept": "Ependymoma: rosettes and pseudorosettes (not Rosenthal fibers or Verocay bodies)",
+      "options": [
+        "Rosenthal fibers.",
+        "Chicken wire calcification.",
+        "Rosettes & pseudorosettes formation.",
+        "Verocay bodies."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Pathology",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "A child with tuberculous meningitis, his CSF examination will show an increased number of:",
+      "explanation": "Tuberculous meningitis causes lymphocytic pleocytosis in CSF (typically 100-500 cells/ microliter). Neutrophils are seen in acute bacterial meningitis; macrophages and plasma cells may be present but lymphocytes predominate.",
+      "keyConcept": "TB meningitis: lymphocytic pleocytosis in CSF",
+      "options": [
+        "Macrophages.",
+        "Lymphocytes.",
+        "Plasma cells.",
+        "Giant cells."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 5,
+      "type": "mcq",
+      "text": "A patient presents with dilated lateral and third ventricles on brain imaging. Which structure is most likely obstructed?",
+      "explanation": "Obstructive hydrocephalus at the level of the foramen of Monro would cause dilation of the lateral and third ventricles but not the fourth ventricle (which would be normal size).",
+      "keyConcept": "Foramen of Monro obstruction causes dilation of lateral and third ventricles with normal fourth ventricle.",
+      "options": [
+        "Aqueduct of Sylvius",
+        "Foramen of Monro",
+        "Median foramen of Magendie",
+        "Lateral foramina of Luschka",
+        "Central canal of the spinal cord"
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 5,
+      "type": "mcq",
+      "text": "Which ventricle develops from the rhombencephalon?",
+      "explanation": "The fourth ventricle develops from the rhombencephalon (hindbrain), specifically from the cavity of the metencephalon. The lateral ventricles develop from the telencephalon.",
+      "keyConcept": "Fourth ventricle derives from the hindbrain (rhombencephalon) cavity.",
+      "options": [
+        "Lateral ventricle",
+        "Third ventricle",
+        "Fourth ventricle",
+        "Cerebral aqueduct",
+        "None of the above"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which dural venous sinus is a paired structure?",
+      "explanation": "The transverse sinus and sigmoid sinus are paired structures (one on each side). The straight sinus and superior sagittal sinus are unpaired midline structures.",
+      "keyConcept": "Transverse and sigmoid sinuses are paired lateral structures; sagittal and straight sinuses are midline unpaired.",
+      "options": [
+        "Superior sagittal sinus",
+        "Inferior sagittal sinus",
+        "Straight sinus",
+        "Inferior petrosal sinus",
+        "Occipital sinus"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Which structure directly connects the dural venous sinuses with the extracranial veins of the scalp?",
+      "explanation": "Emissary veins connect the dural venous sinuses directly to the extracranial venous system through foramina in the skull (e.g., foramen ovale, foramen lacerum), providing alternative drainage pathways.",
+      "keyConcept": "Emissary veins create direct connections between intracranial dural sinuses and extracranial veins.",
+      "options": [
+        "Diploic veins",
+        "Emissary veins",
+        "Meningeal veins",
+        "Cerebral veins",
+        "Superficial temporal veins"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The superior cerebral veins primarily drain into which dural venous sinus?",
+      "explanation": "Superior cerebral veins drain into the superior sagittal sinus (SSS). These veins pierce the arachnoid mater and drain into the SSS at right angles.",
+      "keyConcept": "Superior cerebral veins empty into the superior sagittal sinus on the superior brain surface.",
+      "options": [
+        "Straight sinus",
+        "Transverse sinus",
+        "Superior sagittal sinus",
+        "Sigmoid sinus",
+        "Cavernous sinus"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Cerebrospinal fluid (CSF) is primarily drained into the venous system by which structure?",
+      "explanation": "CSF is primarily drained into the venous system via the arachnoid villi and granulations that project into the dural venous sinuses, especially the superior sagittal sinus, returning CSF to the bloodstream.",
+      "keyConcept": "Arachnoid granulations drain CSF into dural venous sinuses (primarily superior sagittal sinus).",
+      "options": [
+        "Choroid plexus",
+        "Ependymal cells",
+        "Central canal",
+        "Ventricular foramina",
+        "Arachnoid granulations"
+      ],
+      "correctAnswer": "E"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "A 25-year-old patient with a painful swelling on the upper lip and forehead after a pimple infection. The physician is concerned about risk of intracranial spread. Which veins provide a route for infections from the face to reach the superior sagittal sinus?",
+      "explanation": "Dangerous area of face (triangle with apex at nose bridge) infections can spread intracranially via the angular vein and superior ophthalmic vein to the cavernous sinus, causing cavernous sinus thrombosis.",
+      "keyConcept": "Facial vein infections spread to cavernous sinus via angular and superior ophthalmic veins.",
+      "options": [
+        "Facial veins",
+        "Emissary veins",
+        "Jugular veins",
+        "External carotid veins",
+        "Coronary veins"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Pathology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "CSF in acute septic meningitis does NOT show:",
+      "explanation": "In acute septic meningitis, CSF shows decreased glucose (bacteria consume it), elevated protein, increased WBCs (neutrophils), and organisms on Gram stain.",
+      "keyConcept": "CSF findings in meningitis",
+      "options": [
+        "Increased amount",
+        "Increased protein content",
+        "Increased sugar content",
+        "Polymorphonuclear cells",
+        "Organisms"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Pathology",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "CSF shows cobweb coagulum of fibrin on standing in case of:",
+      "explanation": "Chronic meningitis causes high protein in CSF leading to fibrin web formation (cobweb coagulum) on standing, unlike acute pyogenic meningitis with diffuse clotting.",
+      "keyConcept": "CSF cobweb coagulum",
+      "options": [
+        "Acute pyogenic meningitis",
+        "Chronic meningitis",
+        "Brain abscess",
+        "Encephalitis",
+        "Cerebral infarction"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "Leptomeninges is membrane between:",
+      "explanation": "Leptomeninges refers to the pia mater and arachnoid mater together, which are delicate membranes lying between the dura mater and subarachnoid space.",
+      "keyConcept": "Leptomeninges definition",
+      "options": [
+        "dura, arachnoid",
+        "dura, pia",
+        "pia, arachnoid",
+        "All the above"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "-- present between extracerebral capillary, subarachnoid space:",
+      "explanation": "The arachnoid barrier cell layer is present between extracerebral capillaries and the subarachnoid space, regulating CSF composition.",
+      "keyConcept": "Arachnoid barrier",
+      "options": [
+        "blood brain barrier",
+        "arachnoid barrier",
+        "CSF barrier",
+        "All the following"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 2,
+      "type": "mcq",
+      "text": "The blood CSF barrier is formed of all the following except:",
+      "explanation": "The blood-CSF barrier is formed by endothelial cells, basement membrane, and ependymal cells with tight junctions; astrocyte foot processes are part of the BBB, not blood-CSF barrier.",
+      "keyConcept": "Blood-CSF barrier",
+      "options": [
+        "endothelial cells of the blood capillaries",
+        "basement membrane of the blood capillaries",
+        "foot processes of the astrocytes",
+        "ependymal cells that are connected by tight junctions"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "One of the following is a component of Blood CSF barrier:",
+      "explanation": "Tight junctions between ependymal cells form the blood-CSF barrier at the ventricular surface, along with choroid plexus epithelium.",
+      "keyConcept": "Blood-CSF barrier components",
+      "options": [
+        "Border cells of arachnoid matter.",
+        "tight junctions between ependymal cells.",
+        "astrocytes.",
+        "Trabecular cells of arachnoid matter."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Concerning the lateral ventricle, choose one correct answer:",
+      "explanation": "The lateral ventricle is the only cavity in the telencephalon, with anterior horn in frontal lobe, body in parietal, and posterior/temporal horns in temporal lobe.",
+      "keyConcept": "Lateral ventricle structure",
+      "options": [
+        "Its anterior horn lies in the parietal lobe.",
+        "Its posterior horn lies in the temporal lobe.",
+        "Is the only cavity in the telencephalon.",
+        "Has no choroid plexus."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Concerning the cerebrospinal fluid, choose one correct answer:",
+      "explanation": "The third ventricle has choroid plexus in its roof (derived from tela choroidea) producing CSF; lateral ventricles also have choroid plexus.",
+      "keyConcept": "Third ventricle choroid plexus",
+      "options": [
+        "Produced mainly in the subarachnoid space.",
+        "Produced by the arachnoid granulations.",
+        "Third ventricle has a choroid plexus in its roof.",
+        "Fourth ventricle has a choroid plexus in its floor."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Concerning the choroid plexus; choose one best answer:",
+      "explanation": "Choroid plexus is formed by a capillary network (from pia) covered by a thin layer of cuboidal epithelial cells (modified ependyma).",
+      "keyConcept": "Choroid plexus structure",
+      "options": [
+        "All ventricles have choroids plexuses.",
+        "Is formed by a plexus of capillaries and a thin layer of cuboidal epithelium.",
+        "Is responsible for absorption of the cerebrospinal fluid.",
+        "All of the choroids plexuses are present in the floor of the ventricles."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The cisterna magna of subarachnoid space is a name given to the:",
+      "explanation": "The cisterna magna (cerebellomedullary cistern) is the largest subarachnoid cistern located between the cerebellum and the medulla oblongata.",
+      "keyConcept": "Cisterna magna location",
+      "options": [
+        "Interpeduncular cistern.",
+        "Cistern of the corpus callosum.",
+        "Cistern of the lateral fissure.",
+        "Cerebellomedullary cistern."
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "A 32‑year‑old woman has difficulty writing, right arm weakness, and reduced light touch on the left leg. CSF shows elevated IgG, mononuclear cells, and oligoclonal bands. Which pathologic finding is most likely?",
+      "explanation": "Multiple sclerosis shows perivascular lymphocytic cuffing with demyelinated axons in white matter and oligoclonal IgG bands in CSF.",
+      "keyConcept": "Multiple sclerosis pathology",
+      "options": [
+        "Lewy bodies in substantia nigra",
+        "Perivascular lymphocytes with demyelinated axons in white matter",
+        "Neurofibrillary tangles and neuritic plaques",
+        "Multinucleated cells in grey and white matter",
+        "Atrophy of caudate and putamen"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "A 32‑year‑old woman has right arm weakness and reduced light touch on the left leg. CSF shows oligoclonal bands. The most likely diagnosis is:",
+      "explanation": "Multiple sclerosis presents with oligoclonal bands in CSF, periventricular white matter lesions, and relapsing-remitting neurological deficits.",
+      "keyConcept": "Multiple sclerosis diagnosis",
+      "options": [
+        "Parkinson disease",
+        "Alzheimer disease",
+        "Multiple sclerosis",
+        "Huntington disease",
+        "Amyotrophic lateral sclerosis"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which part of the anterior wall of the third ventricle is formed by a thin membrane derived from the telencephalon?",
+      "explanation": "The lamina terminalis forms the anterior wall of the third ventricle; it is a thin membrane derived from the telencephalon containing the organum vasculosum.",
+      "keyConcept": "Third ventricle anterior wall",
+      "options": [
+        "Tela choroidea",
+        "Pineal body",
+        "Tegmentum of the midbrain",
+        "Lamina terminalis",
+        "Thalamus"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The blood‑CSF barrier is NOT formed by:",
+      "explanation": "The blood-CSF barrier uses fenestrated endothelial cells (allowing passage) and is NOT formed by astrocyte foot processes (those form the BBB).",
+      "keyConcept": "Blood-CSF barrier components",
+      "options": [
+        "Foot processes of astrocytes",
+        "Basement membrane of ependymal cells",
+        "Fenestrated endothelial cells",
+        "Ependymal cells connected by tight junctions"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Choroid plexus lies in:",
+      "explanation": "The choroid plexus of the fourth ventricle lies in the lower part of the roof, formed by the inferior medullary velum and tela choroidea where blood vessels invaginate the pia mater.",
+      "keyConcept": "Choroid plexus of fourth ventricle lies in lower roof.",
+      "modelAnswer": "Lower part of roof of fourth ventricle."
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Tributaries of superior sagittal sinus:",
+      "explanation": "The superior sagittal sinus receives tributaries from the superior cerebral veins, which drain the cerebral convexity, and communicates with arachnoid granulations that absorb CSF into venous blood.",
+      "keyConcept": "SSS tributaries: superior cerebral veins and arachnoid villi.",
+      "modelAnswer": "Superior cerebral veins, arachnoid villi."
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Which of the following is true about the arachnoid granulations?",
+      "explanation": "Arachnoid granulations (Pacchionian bodies) are herniations of arachnoid mater into dural venous sinuses that absorb cerebrospinal fluid into the venous system.",
+      "keyConcept": "Arachnoid granulations absorb CSF into venous sinuses.",
+      "options": [
+        "They produce cerebrospinal fluid.",
+        "They absorb cerebrospinal fluid into the venous system.",
+        "They line the ventricles.",
+        "They form the blood-brain barrier."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The choroid plexus is present in all ventricles except:",
+      "explanation": "The cerebral aqueduct (connecting third and fourth ventricles) is a narrow channel lined with ependyma but lacks choroid plexus, making it distinct from all three ventricles which have choroid plexus for CSF production.",
+      "keyConcept": "Cerebral aqueduct lacks choroid plexus (only ventricles have it).",
+      "options": [
+        "Lateral ventricles",
+        "Third ventricle",
+        "Fourth ventricle",
+        "Cerebral aqueduct"
+      ],
+      "correctAnswer": "D"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The cerebral aqueduct of Sylvius connects:",
+      "explanation": "The aqueduct links the 3rd and 4th ventricles through the midbrain.",
+      "keyConcept": "Cerebral aqueduct connects third ventricle to fourth ventricle.",
+      "options": [
+        "The two lateral ventricles",
+        "Fourth ventricle and central canal",
+        "Third and fourth ventricles",
+        "Lateral and third ventricles",
+        "Fourth ventricle and the subarachnoid space"
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The circle of Willis lies within the ……… subarachnoid cistern.",
+      "explanation": "The circle of Willis lies within the interpeduncular subarachnoid cistern, surrounding the interpeduncular fossa between the cerebral peduncles.",
+      "keyConcept": "Circle of Willis: lies in interpeduncular subarachnoid cistern.",
+      "options": [
+        "Quadrigeminal",
+        "Interpeduncular",
+        "Cerebello-medullary",
+        "Pontine"
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The floor of the body of the lateral ventricle is formed by all the following EXCEPT:",
+      "explanation": "The floor of the lateral ventricle body is formed by the thalamus, body of caudate nucleus, and body of fornix; the tail of caudate lies in the roof of the inferior horn, not the floor.",
+      "keyConcept": "Tail of caudate nucleus: in roof of inferior horn, not floor of body.",
+      "options": [
+        "Body of caudate nucleus.",
+        "Tail of caudate nucleus.",
+        "Thalamus.",
+        "Body of fornix."
+      ],
+      "correctAnswer": "B"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "The lateral ventricles are connected to the third ventricle via:",
+      "explanation": "The interventricular foramina of Monro connect each lateral ventricle to the third ventricle, allowing CSF flow between these chambers.",
+      "keyConcept": "Lateral to third ventricle: interventricular foramina of Monro.",
+      "options": [
+        "Interventricular foramina of Monroe.",
+        "Cerebral aqueduct.",
+        "Foramen of Magendi.",
+        "Foramina of Luschka."
+      ],
+      "correctAnswer": "A"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Choose the correct order of CSF circulation:",
+      "explanation": "CSF flows from lateral ventricles through interventricular foramina to third ventricle, then through cerebral aqueduct to fourth ventricle, and finally into subarachnoid space.",
+      "keyConcept": "CSF flow: lateral -> third -> fourth -> subarachnoid space.",
+      "options": [
+        "Third ventricle, lateral ventricles, fourth ventricle, subarachnoid space.",
+        "Lateral ventricles, fourth ventricle, third ventricle, central canal.",
+        "Lateral ventricles, third ventricle, fourth ventricle, subarachnoid space.",
+        "Fourth ventricle, third ventricle, lateral ventricles, central canal."
+      ],
+      "correctAnswer": "C"
+    },
+    {
+      "chapterTitle": "Meninges, Ventricles & CSF",
+      "chapterId": 8,
+      "subject": "Anatomy",
+      "lecture": 1,
+      "type": "mcq",
+      "text": "Protrusion of meninges and brain tissue through a defect in the skull is:",
+      "explanation": "Meningoencephalocele involves protrusion of both meninges and brain tissue through a skull defect; meningocele involves only meninges.",
+      "keyConcept": "Meningoencephalocele: meninges and brain tissue protrude through skull defect.",
+      "options": [
+        "Hydrocele.",
+        "Meningocele.",
+        "Meningoencephalocele.",
+        "Meningohydroencephalocele."
+      ],
+      "correctAnswer": "C"
+    }
+  ]
+}

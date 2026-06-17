@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "comingSoon": true,
+  "meta": {
+    "moduleCode": "IBM-1",
+    "moduleName": "Introduction to Medical Biochemistry",
+    "year": 1,
+    "semester": 1,
+    "creditPoints": 3,
+    "totalMarks": 60,
+    "keywords": [
+      "biochemistry",
+      "ibm"
+    ]
+  },
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Cell Chemistry & Biophysics",
+      "subtitle": "Cell Chemistry & Biophysics",
+      "emoji": "🧪",
+      "page": 1,
+      "lectureRange": "Lectures 1",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 2,
+      "title": "Enzymes & Bioenergetics",
+      "subtitle": "Enzymes & Bioenergetics",
+      "emoji": "🔬",
+      "page": 2,
+      "lectureRange": "Lectures 2",
+      "subjects": [],
+      "keywords": []
+    }
+  ]
+}

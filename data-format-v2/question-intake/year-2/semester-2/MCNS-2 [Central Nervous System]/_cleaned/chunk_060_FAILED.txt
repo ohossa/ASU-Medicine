@@ -1,0 +1,415 @@
+CHUNK 60 FAILED AFTER 4 ATTEMPTS
+ERROR: {"error":{"code":429,"message":"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 19.186538837s.","status":"RESOURCE_EXHAUSTED","details":[{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Learn more about Gemini API quotas","url":"https://ai.google.dev/gemini-api/docs/rate-limits"}]},{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerDayPerProjectPerModel-FreeTier","quotaDimensions":{"location":"global","model":"gemini-2.5-flash"},"quotaValue":"20"}]},{"@type":"type.googleapis.com/google.rpc.RetryInfo","retryDelay":"19s"}]}}
+
+--- RAW TEXT ---
+? 
+10. What tumor is characterized by excessive 
+production of catecholamines? And what is 
+the treatment of it?
+communicate
+2. What is the rate limiting enzyme in 
+catecholamine synthesis?
+y Tyrosine hydroxylase
+3. What is the fate of catecholamines?
+y Active uptake by sympathetic nerve endings
+y Enzymatic hydrolysis 
+4. What enzymes cause the oxidative 
+deamination and inactivation of 
+catecholamines?
+y Monoamine oxidase (MAO)
+5. What is the primary end product of 
+dopamine inactivation?
+y Homovanillic acid (HVA)
+6. What is the primary end product of 
+epinephrine and norepinephrine enzymatic 
+inactivation?
+y Vanillylmandelic acid (VMA)
+7. 
+What is the neurodegenerative movement 
+disorder characterized by insufficient 
+dopamine production?
+y Parkinson Disease
+8. What is the immediate metabolic precursor 
+of dopamine that can cross the blood-brain 
+barrier?
+y L-DOPA
+9. What is the inhibitor of dopa-decarboxylase 
+used in the treatment of Parkinson Disease?
+y Carbidopa
+186 / CNS Module (Questions)
+y Pheochromocytoma
+y α-methyl tyrosine 
+11. What enzyme is inhibited by 
+a-methyl tyrosine in the treatment of 
+pheochromocytoma?
+y Tyrosine hydroxylase
+12. What is the neurotransmitter produced in 
+the CNS, gastrointestinal tract & platelets?
+y Serotonin (5-HT)
+13. What is the end product of serotonin 
+degradation?
+y 5-hydroxyindolacetic acid (5-HIAA)
+14. What tumor is characterized by increased 
+production of serotonin and decreased 
+production of nicotinic acid?
+y Carcinoid tumor (Argentaffinoma)
+15. What is the hormone involved in regulating 
+sleep patterns and follows a circadian 
+rhythm? And how it is formed?
+y Melatonin
+y From serotonin in pineal body by 
+acetylation and methylation 
+16. What happens in Vitamin B6 deficiency?
+y Reduction in GABA levels with signs of 
+hyperactivity and convulsions
+1 7. What factors can lead to melatonin 
+deficiency?
+y Cigarettes
+y Caffeine
+y Frequent stress
+y Antidepressants
+y ß-blocker
+18. How is histamine formed?
+y Histamine is formed by decarboxylation of 
+histidine in a reaction requiring PLP
+19. What is the role of histamine?
+y Histamine mediates a wide range of 
+cellular responses, including allergic 
+and inflammatory reactions, gastric acid 
+secretion
+y Act as a Neurotransmitter in CNS
+y Powerful vasodilator 
+20. What is the function of histamine in the 
+brain?
+y Histamine acts as a Neurotransmitter in 
+parts of the brain by mediating arousal. 
+21. What is the neurotransmitters that act as 
+vasodilator?
+y Histamine  
+y Nitric oxide 
+22. How is nitric oxide synthesized?
+y Nitric oxide is synthesized from L-arginine in 
+a reaction catalyzed by nitric oxide synthase 
+enzyme
+23. What are the functions of nitric oxide?
+y Vasodilatation in cerebral, coronary & 
+muscle arteries 
+y Relaxation of GIT & urinary tract 
+y Stimulate release of hormones from 
+hypothalamus 
+y Produced from macrophage, monocytes & 
+neutrophils to kill microorganisms 
+y Pharmacological functions: Nitroglycerin - treat angina; Inhalation of NO - treat 
+pulmonary hypertension & pulmonary 
+edema without decrease systemic blood 
+pressure
+Biochemistry
+24. Which neurotransmitter is derived from 
+tyrosine?
+y Catecholamines (Dopamine, 
+Norepinephrine, Epinephrine)
+25. Where are dopamine and norepinephrine 
+synthesized?
+y In the brain and function as 
+neurotransmitters
+26. Epinephrine is synthesized in……….. and 
+the primary end product in the adrenal 
+medulla of newborns is ………
+y In the adrenal medulla
+y Norepinephrine
+27. What happens to epinephrine with 
+advancing age?
+y Dramatically raised, depending upon 
+cortisol levels
+28. What is histamine synthesized from? And 
+What is the enzyme required for histamine 
+synthesis?
+y Histidine
+y Histidine decarboxylase
+29. The coenzyme required for histamine 
+synthesis is…… and cells secrete it is…..
+y PLP
+y Mast cells
+30. What are the major functions of histamine? 
+(Name two)
+y Mediating allergic and inflammatory 
+reactions.
+y gastric acid secretion.
+y as a neurotransmitter in parts of the brain.
+CNS Module (Questions) /   
+187
+Section
+2
+Short Essay
+31. Is histamine a vasodilator? If true, what 
+else? And if false, why?
+y True
+y Nitric oxide 
+32. How is nitric oxide synthesized? And What 
+enzyme catalyzes the synthesis of nitric 
+oxide?
+y From L-arginine
+y Nitric oxide synthase
+33. What is glycine synthesized from? And 
+what is the enzyme catalyzes its formation?
+y Serine
+y Serine hydroxy-methyltransferase
+34. How is glycine removed from the synapse?
+y Reuptake through high-affinity transporter
+35. What are the biogenic amines 
+neurotransmitters?
+y Acetylcholine
+y Monoamines
+36. What are the effects of acetylcholine?
+y Mostly excitatory effects
+37. What is Myasthenia gravis?
+y A chronic autoimmune neuromuscular 
+disease causing weakness in the skeletal 
+muscles
+38. What is the primary end product of 
+catecholamine synthesis in the adrenal 
+medulla?
+y Norepinephrine (NE)
+39. What happens when there are elevated 
+levels of excitatory amino acids?
+y Neurotoxicity resulting in neuronal death or 
+injury
+188 / CNS Module (Questions)
+40. What is the principal inhibitory 
+neurotransmitter?
+y GABA (Gamma Aminobutyric Acid)
+41. What is GABA derived from?
+y Glutamic acid
+42. What are the classification of 
+neurotransmitters based on functions?
+y Excitatory
+y Inhibitory
+43. What are examples of excitatory amino 
+acid neurotransmitters?
+y Glutamate
+y Aspartate
+44. What is the principal excitatory 
+neurotransmitter?
+y Glutamate
+45. Where are neurotransmitters stored?
+y In secretory vesicles (synaptic vesicles) 
+before release into the synaptic cleft
+189189 CNS Module (Questions) /   
+Biochemistry Biochemistry
+1. What are the substrates for glutamate 
+transaminase?
+ yα- ketoglutarate 
+ yL-aspartate
+2. How is ammonia utilized in the conversion 
+of glutamate to glutamine?
+ yAmmonia is used by glutamine synthetase 
+to convert glutamate to glutamine
+3. Which amino acids can produce both 
+glucose and ketone bodies?
+ yTyrosine
+ yphenylalanine
+ y tryptophan
+ y threonine
+ y isoleucine
+4. What is the main pathway of deamination 
+for amino acids?
+ yL-glutamate dehydrogenase
+5. Which enzyme is responsible for the 
+oxidative deamination of D-AAs and 
+glycine?
+ yD-AA oxidase flavoprotein
+6. What is the function of D-AA oxidase 
+flavoprotein?
+ yConversion of D-amino acids to the α-keto 
+acid will remove the asymmetry of the 
+α-carbon atom.
+7. What is the product of the 
+transdeamination of glutamine?
+ yGlutamate.
+8. What is the role of glutamate 
+dehydrogenase?
+ yConversion of glutamate to α-ketoglutarate.
+Sources of Ammonia Chapter 3??
+9. What is the major pathway of oxidative 
+deamination?
+ yL-glutamate dehydrogenase
+10. Which organs mainly carry out oxidative 
+deamination?
+ yLiver, kidney
+ yheart, brain, and muscle
+11. What coenzyme is required for L-glutamate 
+dehydrogenase?
+ yNAD  yNADP
+12. True or False: NAD+ is used in oxidative 
+deamination and NADP+ in reductive 
+amination.
+ yTrue
+13. What stimulates L-glutamate 
+dehydrogenase?
+ yADP  yGDP
+14. What inhibits L-glutamate dehydrogenase?
+ yATP yGTP yNADH
+15. What is the coenzyme of the enzyme D-AA 
+oxidase ? 
+ yFAD
+16. In which organs is D-AA oxidase found?
+ yLiver and kidney
+17. What is the enzyme responsible for non
+oxidative deamination of glutamine?
+ yDeamidases
+18. What substrates does Ketoglutarate-D-AA 
+oxidase flavoprotein act on?
+ yD-AAs
+ y glycine.
+Section
+2
+Short Essay
+19. What happens to glutamine in the liver?
+y Cleaved by glutaminase enzyme to produce 
+ammonia
+20. What amino acids can’t go through 
+transamination?
+y Lysine
+y Threonine
+y Proline
+y Hydroxyproline 
+21. What enzyme converts pyruvate to alanine 
+in muscles?
+y ALT enzyme
+22. What is the function of L-AA oxidase?
+y Oxidative deamination of L-amino acids.
+23. What is the process of non-oxidative 
+deamination for glutamine and 
+asparagine?
+y Deamidases release NH3 which enters urea 
+cycle in the liver, or passes in urine in the 
+kidney.
+24. Where does NH3 released by deamidases 
+in the liver go?
+y Urea cycle
+25. Where does NH3 released by deamidases 
+in the kidney go?
+y Urine
+26. What are the sources of ammonia NH3?
+y Catabolism of amino acids
+y catabolism of purine and pyrimidine
+y glutaminase enzyme
+y Catabolism of amines
+y intestinal bacteria
+190 / CNS Module (Questions)
+27. What is the synthetic fates of ammonia?
+y Synthesis of non essential amino acids
+y Synthesis of glutamine 
+28. What is the major mechanism of ammonia 
+excretion in the liver?
+y Synthesis of urea
+Chapter 4
+1. How is hepatic encephalopathy diagnosed?
+Urea cycle 
+Biochemistry
+? 
+8. What are the causes of hyperammonemia?
+y Exclusion of other causes of encephalopathy
+y identification of the precipitating cause
+y rapid response to empiric treatment
+2. How does lactulose help in the reduction of 
+ammonia production?
+y Inhibits intestinal ammonia production 
+by reducing colonic bacterial load and 
+acidifying the gut lumen
+3. What is the function of neomycin in the 
+treatment of hepatic encephalopathy?
+y Kills intestinal bacteria
+4. Name three substances used to increase 
+ammonia clearance.
+y Sodium benzoate
+y sodium phenylbutyrate
+y sodium phenylacetate
+5. How does sodium benzoate contribute to 
+ammonia clearance?
+y Interacts with glycine to form Hippurate, 
+which is then excreted in the urine
+6. What is the role of L-ornithine-L-aspartate 
+in hepatic encephalopathy treatment?
+y Stimulates the urea cycle, leading to the loss 
+of ammonia
+7. 
+What is the effect of hyperammonia on 
+brain function?
+y Decrease in Krebs’ cycle and ATP 
+production
+y decrease in GABA (neurotransmitter)
+y interference with electric activity in the brain
+y cerebral edema, and increased serotonin 
+production
+y Acquired hyperammonemia due to liver 
+diseases 
+y congenital hyperammonemia due to 
+deficiencies in urea cycle enzymes, 
+membrane-associated ornithine transporter, 
+or N-acetyl glutamate synthase
+9. What is the first step of the urea cycle?
+y Carbamoyl phosphate synthesis
+10. What is the enzyme responsible for 
+carbamoyl phosphate synthesis?
+y Carbamoyl phosphate synthetase I
+11. What is the enzyme catalyzing the second 
+step of the urea cycle?
+y Ornithine transcarbamoylase
+12. What is the second step of the urea cycle? 
+And it’s enzyme?
+y Citrulline synthesis
+13. What is the third step of the urea cycle? 
+And it’s enzyme?
+y Argininosuccinate synthesis 
+y Argininosuccinate synthetase
+14. What is the fourth step of the urea cycle? 
+And it’s enzyme?
+y Cleavage of argininosuccinate
+y Argininosuccinate lyase
+15. What is the final step of the urea cycle? 
+And it’s enzyme?
+y Cleavage of arginine 
+y Arginase
+CNS Module (Questions) /   
+191
+Section
+2
+Short Essay
+16. What is the rate-limiting enzyme of the 
+urea cycle?
+y Carbamoyl Phosphate Synthetase I (CPS I)
+1 7. Synthesis of urea occurs in the liver and 
+excretion by the kidney 
+18. Which enzyme is present in the cytosol and 
+used in pyrimidine synthesis? And what is its 
+other mitochondrial enzyme used in urea cycle?
+y CPS II 
+y CPS I
+19. How many ATP molecules and high energy 
+bonds are utilized in the urea cycle? 
+y 3 ATP
+y 4 High energy bonds 
+20. What is the main fate of urea?
+y Excreted in urine
+21. What activates carbamoyl phosphate 
+synthetase I (CPS I)?
+y N-acetylglutamate
+22. What is the relationship between the urea 
+cycle and the citric acid cycle?
+y CO2
+ needed for urea synthesis is mostly 
+produced from the citric acid cycle
+y Ammonia is derived from glutamic acid 
+by glutamate dehydrogenase enzyme that 
+give α-ketoglutarate. “intermediate in krebs’ 
+Cycle”
+y Fumarate produced by urea cycle can be 
+converted into oxaloacetic acid by citric | 
+acid cycle.
+y Aspartic acid used in urea cycle is formed 
+from oxaloacetate by transamination with 
+AST (GOT) enzyme.
+y ATP needed for urea cycle is derived from 
+citric acid cycle.
+192 / CNS Module (Questions)

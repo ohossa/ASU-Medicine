@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { Check, Edit3, X, Calendar, ChevronDown, ChevronUp, BookOpen, Layers, Target, GraduationCap } from 'lucide-react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from 'motion/react';
 import type { ChapterData, SubjectData, SubjectColor } from '../types';
 import { subjectStyles } from '../types';
 import { useLanguage } from '../context/LanguageContext';
@@ -628,7 +628,7 @@ export function SyllabusTracker({ moduleCode, moduleName, chapters, onClose }: P
                                                         className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1 rounded-lg px-2 py-1.5 hover:bg-muted/40 dark:hover:bg-white/[0.03]"
                                                       >
                                                         <span className="text-xs text-foreground/80 dark:text-white/70">
-                                                          {label('lecture')} {i + 1}
+                                                          {subject.lectureNames?.[i] || `${label('lecture')} ${i + 1}`}
                                                         </span>
                                                         <span className="flex items-center gap-3">
                                                           <CheckBox

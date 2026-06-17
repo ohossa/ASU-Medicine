@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "comingSoon": true,
+  "meta": {
+    "moduleCode": "MUG-3",
+    "moduleName": "Urogenital System",
+    "year": 3,
+    "semester": 1,
+    "creditPoints": 5,
+    "totalMarks": 100,
+    "keywords": [
+      "urogenital",
+      "renal",
+      "mug"
+    ]
+  },
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Renal System & Electrolytes",
+      "subtitle": "Renal System & Electrolytes",
+      "emoji": "🫘",
+      "page": 1,
+      "lectureRange": "Lectures 1",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 2,
+      "title": "Male Reproductive System",
+      "subtitle": "Male Reproductive System",
+      "emoji": "♂️",
+      "page": 2,
+      "lectureRange": "Lectures 2",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 3,
+      "title": "Female Reproductive System",
+      "subtitle": "Female Reproductive System",
+      "emoji": "♀️",
+      "page": 3,
+      "lectureRange": "Lectures 3",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 4,
+      "title": "Urogenital Pathologies & Drugs",
+      "subtitle": "Urogenital Pathologies & Drugs",
+      "emoji": "💊",
+      "page": 4,
+      "lectureRange": "Lectures 4",
+      "subjects": [],
+      "keywords": []
+    }
+  ]
+}

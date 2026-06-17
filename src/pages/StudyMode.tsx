@@ -6,7 +6,7 @@ import {
 import { PortalShell } from '../app/components/PortalShell';
 import { getModuleQuestionCounts, SYLLABUS_MODULES } from '../app/data';
 import { CardShell, IconBadge } from '../components/cards/PremiumCards';
-import { motion } from 'framer-motion';
+import { motion } from 'motion/react';
 import { pageVariants } from '../app/lib/motion';
 
 /* ────────────────────────────────────────────────

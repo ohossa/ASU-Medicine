@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "comingSoon": true,
+  "meta": {
+    "moduleCode": "OG-5",
+    "moduleName": "Obstetrics & Gynecology",
+    "year": 5,
+    "semester": 2,
+    "creditPoints": 3.5,
+    "totalMarks": 70,
+    "keywords": [
+      "obstetrics",
+      "gynecology",
+      "og"
+    ]
+  },
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Antenatal Care & Pregnancy Complications",
+      "subtitle": "Antenatal Care & Pregnancy Complications",
+      "emoji": "🤰",
+      "page": 1,
+      "lectureRange": "Lectures 1",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 2,
+      "title": "Labor & Obstetric Emergencies",
+      "subtitle": "Labor & Obstetric Emergencies",
+      "emoji": "👶",
+      "page": 2,
+      "lectureRange": "Lectures 2",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 3,
+      "title": "General Gynecology & Gynecologic Oncology",
+      "subtitle": "General Gynecology & Gynecologic Oncology",
+      "emoji": "♀️",
+      "page": 3,
+      "lectureRange": "Lectures 3",
+      "subjects": [],
+      "keywords": []
+    }
+  ]
+}

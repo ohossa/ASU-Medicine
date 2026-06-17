@@ -1,0 +1,871 @@
+CHUNK 51 FAILED AFTER 4 ATTEMPTS
+ERROR: {"error":{"code":429,"message":"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash\nPlease retry in 8.654174231s.","status":"RESOURCE_EXHAUSTED","details":[{"@type":"type.googleapis.com/google.rpc.Help","links":[{"description":"Learn more about Gemini API quotas","url":"https://ai.google.dev/gemini-api/docs/rate-limits"}]},{"@type":"type.googleapis.com/google.rpc.QuotaFailure","violations":[{"quotaMetric":"generativelanguage.googleapis.com/generate_content_free_tier_requests","quotaId":"GenerateRequestsPerDayPerProjectPerModel-FreeTier","quotaDimensions":{"model":"gemini-2.5-flash","location":"global"},"quotaValue":"20"}]},{"@type":"type.googleapis.com/google.rpc.RetryInfo","retryDelay":"8s"}]}}
+
+--- RAW TEXT ---
+c. Has a sleep center in its upper part. 
+d. Non-specifically activates the whole cortex, 
+mainly directly. 
+e. Its activity is inhibited by the medullary 
+reticular formation. 
+3. Medullary reticular formation is stimulated by: 
+a. Primary motor cortex. 
+b. Cerebrocerebellum. 
+c. Basal ganglia. 
+d. Vestibular nucleus. 
+e. Gamma motor neurons of spinal cord anterior 
+horn. 
+4.  Which sentence is NOT true about the 
+reticular formation: 
+a. Its excitatory component is located in the pons. 
+b. Its medullary component is inhibitory to all 
+cortical areas. 
+c. Its excitatory components constitutes the 
+ARAS. 
+d. Its pontine part is excitatory to spinal cord 
+motor neurons. 
+e. It is stimulated by both of Corticofugal and 
+sensory fibers. 
+5. Which of the following is NOT involved 
+in decreasing the activity of the pontine 
+reticular formation? 
+a. Cortical inhibitory areas. 
+b. Red nucleus. 
+c. Medullary reticular formation. 
+d. Basal ganglia.
+e. Corticofugal fibers. 
+6. Which of the following is NOT a character of ARAS: 
+a. Present in pons and midbrain. 
+b. Indirectly and directly excites the whole cortex. 
+c. Receives excitatory impulses from cortical areas. 
+d. Facilitates spinal cord motor neurons of 
+antigravity muscles. 
+e. Responsible for arousal. 
+7. 
+Concerning reticular formation, all are true EXCEPT: 
+a. It receives impulses from various somatic and 
+special sense pathways. 
+b. Its inhibitory motor part inhibits the spinal 
+cord motor neurons of antigravity muscles. 
+c. Its facilitatory motor part excites both the 
+cortex and the spinal cord.
+d. Its intrinsic activities characterized by diffuse 
+electric activity of all its components.
+e. Red nucleus and paleocerebellum inhibit its 
+pontine component. 
+8. Concerning reticular formation, all are true 
+EXCEPT: 
+a. It excites all parts of cortex through ARAS. 
+b. It is a link between higher and lower CNS centers. 
+c. It is responsible for perception and 
+localization of fast pain. 
+d. It is responsible for brain electrical activity.
+e. Its descending motor facilitatory component 
+plays a role in body support. 
+CNS Module (Questions) /   
+87
+Section
+1
+MCQ
+Chapter 2
+Electrical activity of the brain 
+1. 
+2. Electroencephalogram: 
+?
+Secondary evoked potential is characterized by: 
+a. Localized to a specific cortical area. 
+b. Consists of a small +ve followed by a small –ve wave. 
+c. Similar to beta waves of EEG. 
+d. Due to stimulation of non-specific thalamic 
+nuclei. 
+e. Recorded when the person shows mental 
+activity. 
+a. Recorded in an anaesthetized person. 
+b. Represents summation of EPSP & IPSP in 
+brain neurons. 
+c. Theta waves dominate in adult during awake 
+state with mental rest.
+d. Beta waves are recorded in light sleep. 
+e. A diffuse generalized wave is recorded after 
+an initial localized small wave. 
+3.  EEG: 
+a. Is recorded to map the brain. 
+b. Is used for identification of sleep stages. 
+c. Desynchronized waves are replaced by 
+synchronized waves in response to opening 
+of eyes. 
+d. Show low frequency- high voltage waves in 
+case of brain death. 
+e. Is recorded in an anesthetized person after 
+receptor stimulation. 
+4. Brain waves: 
+a. Regular synchronized alpha waves are 
+recorded in paradoxical sleep. 
+b. Desynchronized, low voltage, high frequency 
+waves are recorded due to activation of RAS. 
+c. Highest voltage low frequency waves are 
+recorded in adults during awake relaxed state. 
+d. Intrinsic activity of reticular formation 
+produces beta waves. 
+e. Gamma waves are recorded in deep sleep. 
+88 / CNS Module (Questions)
+5.  The EEG wave recorded in high mental 
+activity, hyperaroused state is:
+a. Alpha (8-13 HZ, 50µv, regular, synchronized). 
+b. Beta (13-30 HZ, 25µv, irregular, 
+desynchronized). 
+c. Theta (4-7 HZ, 100µv, regular, synchronized). 
+d. Delta (0.5-3.5 HZ, 100µv, regular, 
+synchronized). 
+e. Gamma (30-80 HZ, 0.5-2µv, irregular, 
+desynchronized). 
+6. The EEG wave recorded in children is: 
+a. Alpha (8-13 HZ, 50µv, regular, synchronized). 
+b. Beta (13-30 HZ, 25µv, irregular, 
+desynchronized). 
+c. Theta (4-7 HZ, 100µv, regular, synchronized). 
+d. Delta (0.5-3.5 HZ, 100µv, regular, 
+synchronized). 
+e. Gamma (30-80 HZ, 0.5-2µv, irregular, 
+desynchronized). 
+7.  
+β waves of EEG are: 
+a. Character of relaxed awake state. 
+b. Faster than α waves, but slower than δ waves. 
+c. Recorded in children. 
+d. Disappear when the person becomes alert. 
+e. Recorded in paradoxical sleep. 
+8. Regarding Evoked brain potentials: 
+a. It is used for mapping of the brain. 
+b. It is recorded in a conscious person. 
+c. It consists of a primary diffuse wave followed 
+by a secondary localized wave. 
+d. It is due to activity of RAS. 
+e. It represents summation of excitatory and 
+inhibitory potentials in brain neurons 
+Chapter 3
+?
+1. 
+Which of the following sentences about 
+sleep and arousal is true: 
+a. Posterior hypothalamus is a Non-REM sleep 
+center. 
+b. Cholinergic neurons of upper brain stem 
+induce arousal. 
+c. Serotonergic brain stem neurons induce REM 
+sleep.
+d. Suprachasmatic nucleus is a REM sleep center. 
+e. Orexin hormone of the hypothalamus 
+regulates brain stem nuclei activity and 
+switches the activity between seep and 
+arousal. 
+2.  REM sleep differs from Non-REM sleep in: 
+a. Has longer duration in the sleep cycles. 
+b. Low voltage desynchronized brain waves are 
+recorded during it. 
+c. Presence of sleep walking & talking. 
+d. Low threshold of arousal. 
+e. Increased level of growth hormone. 
+3. Sleep, all are true EXCEPT: 
+a. It helps brain rest and brain plasticity. 
+b. It may be due to synaptic fatigue of RAS neurons. 
+c. It may be due to active inhibition of RAS by 
+sleep centers. 
+d. It may be due to increased activity of raphe 
+magnus and locus coeruleus brain stem nuclei. 
+e. It may be due to accumulation of sleep
+inducing lipids or peptide in the CSF. 
+4. Compared to REM sleep, Non-REM sleep is 
+characterized by:
+a. Dreams and penile erection. 
+b. Irregular HR and ABP. 
+c. Marked decrease in muscle tone. 
+d. Increase in growth hormone secretion. 
+e. Recording of high frequency, low voltage, 
+desynchronized brain waves. 
+Sleep
+Physiology
+5. Paradoxical sleep is characterized by: 
+a. Occurs at the start of sleep cycle. 
+b. Includes 4 sleep stages. 
+c. Movement of eye, finger and toe muscles. 
+d. Marked decrease in blood pressure & heart rate. 
+e. Important for physical rest. 
+6. Which of the following is a REM sleep center: 
+a. Raphe nucleus. 
+b. Locus coeruleus. 
+c. Reticular formation. 
+d. Anterior hypothalamus. 
+e. Suprachasmatic nucleus of hypothalamus. 
+7. 
+Which of the following is a 
+neurotransmitter for REM sleep: 
+a. Acetylcholine. 
+b. Norepinephrine. 
+c. Serotonin. 
+d. Histamine. 
+e. GABA. 
+CNS Module (Questions) /   
+89
+Section
+1
+MCQ
+Chapter 4
+1. 
+Which of the following is NOT a function of 
+the prefrontal association area: 
+a. Operation of working memory. 
+b. Storage of coordinated vocalization 
+programs. 
+c. Decision making and personality traits.
+d. Thoughts. 
+e. Language comprehension. 
+2. Concerning speech, all are true EXCEPT: 
+Speech Learning 
+?
+a. Sensory aphasia occurs due to defect in visual 
+association area, auditory association area or 
+Wernicke’s area. 
+b. Expressive aphasia occurs due to lesion in 
+Broca’s area or Exner’s area. 
+c. Anomic aphasia is due to lesion in and around 
+auditory cortex. 
+d. In anomic aphasia, the patient cannot give 
+name for seen pictures and words. 
+e. Aphasia occurs only in case of lesion in the 
+categorical hemisphere. 
+3. Aphasia: 
+a. Is an abnormal speech due to defect in 
+articulation. 
+b. Is of fluent type due to lesion in Wernicke’s area. 
+c. May be due to lower motor neuron lesion of 
+vocalization muscles. 
+d. Is expressive in type due to lesion in auditory 
+association cortex. 
+e. Broca’s aphasia characterized by excessive 
+meaningless speech. 
+4.  Lesion in frontal lobe speech center 
+produces: 
+a. Speech muscle paralysis. 
+b. Inability to select appropriate words. 
+c. Inability to process visual languages. 
+d. Sensory aphasia. 
+e. Expressive defect in speech. 
+90 / CNS Module (Questions)
+5. Speech centers do NOT include: 
+a. Wernicke’s area. 
+b.  Broca’s area. 
+c. Somatic sensory association area. 
+d. Auditory association area. 
+e. Visual association area. 
+6. Sensory aphasia occurs with lesion in: 
+a. Visual pathway. 
+b. Broca’s area. 
+c. Exner’s area. 
+d. Auditory association area. 
+e. Tongue muscles.
+7. 
+Concerning learning: 
+a. Habituation is due to increase intracellular 
+calcium leading to augmented response. 
+b. Sensitization occurs by presynaptic 
+facilitation. 
+c. Operant conditioning occurs by inducing a 
+response to a neutral stimulus. 
+d. Classical conditioning occurs by stimulation of 
+reward and punishment centers. 
+e. -ve operant conditioning means adding of 
+something to induce learning of a specific 
+task or behavior  
+8. Motor aphasia occurs with lesion in: 
+a. Primary motor area. 
+b. Auditory association area. 
+c. Wernicke’s area. 
+d. Angular gyrus. 
+e. Exner’s area. 
+Physiology
+9. Concerning Learning: 
+a. In habituation, a repeated benign stimulus 
+produces gradual loss of response. 
+b. Associative learning is present when a 
+noxious stimulus occurs with a benign one. 
+c. Pairing of stimuli is a type of simple learning. 
+d. Adding a reward to decrease a certain 
+behavior is a +ve reinforcement. 
+e. In classical conditioning, an unconditioned 
+stimulus can produce a certain response when 
+paired with a neutral conditioned stimulus. 
+10. Regarding dysarthria, all of the following 
+are true EXCEPT: 
+a. It is a speech abnormality due to defect in 
+articulation . 
+b. It occurs in UMNL & LMNL affecting speech 
+muscles. 
+c. Is of slow monotonous type in Parkinsonism. 
+d. Is of spastic type due to lesion in Wernicke’s 
+area. 
+e. Is of ataxic staccato type in neocerebellar 
+syndrome 
+CNS Module (Questions) /   
+91
+Section
+1
+MCQ
+Chapter 5
+1. 
+Which sentence is NOT correct for long-term 
+potentiation: 
+a. A rapid repeated brief stimulation leads to a 
+persistent enhancement of response. 
+b. Glutamate transmitter and its NMDA 
+receptors may play a role. 
+c. Increase Ca++ in pre and post-synaptic 
+neurons may play a role. 
+d. Protein synthesis, growth and increased 
+neuronal connections are possible 
+mechanisms. 
+e. Involved in cerebellar learning. 
+2. In memory: 
+a. Implicit memory is the conscious recall of 
+information. 
+b. Explicit memory is stored in basal ganglia and 
+cerebellum. 
+c. Explicit memory types include priming and 
+procedural memory. 
+d. Episodic memory is stored in the 
+hippocampus and neocortex. 
+e. Semantic memory is the recall of events and 
+experiences.
+3. Short-term memory is: 
+a. Stored after 2 hours from getting the information. 
+b. Brain capacity for it is unlimited. 
+c. Encoded and stored in the neocortex.
+d.  Due to transient synaptic modifications such 
+as increased release of neurotransmitters. 
+e. Involves gene activation and protein synthesis 
+4. Long-term memory is: 
+a. Stored immediately after getting the 
+information. 
+b. Brain capacity for it is limited. 
+c. Encoded in hippocampus and stored in the 
+frontal lobe.
+d. Due to transient synaptic modifications such 
+as increased release of neurotransmitters. 
+92 / CNS Module (Questions)
+Memory
+?
+e. Involves gene activation and protein 
+synthesis. 
+5.  Which sentence is NOT true regarding 
+consolidation of memory: 
+a. It is the conversion of short-term memory to a 
+long-term one. 
+b. Completed in 5 minutes. 
+c. Represents the time needed for the structural 
+and functional synaptic changes to take place. 
+d. Occurs in neocortex. 
+e. Increases and fastens by focusing and 
+rehearsal. 
+6. Mechanisms of long-term memory do NOT include: 
+a. Transient synaptic modifications. 
+b. Increase presynaptic terminals and vesicles. 
+c. Structural and functional synaptic changes. 
+d. Formation of new synapses.
+e. Gene activation and protein synthesis 
+7. 
+The primary role of amygdala in memory is: 
+a. Storage of semantic memory. 
+b. Consolidation of memory. 
+c. Operation of short-term memory.
+d.  Processing and remembering the emotional 
+component of memories.
+e.  Initiation of synaptic changes needed for 
+memory storage. 
+8. Consolidation of memory increases by:
+a. Anesthesia. 
+b. Sleep. 
+c. Concussion. 
+d. Electroshock 
+therapy. 
+e. Mental fatigue. 
+9.  Consolidation of memory decreases by: 
+a. Interesting 
+information. 
+b. Lack of REM 
+sleep. 
+c. Rehearsal. 
+d. Mental rest. 
+e. Quiet sleep.
+Physiology
+10.  Habituation: 
+a. Is the gradual increase in response in 
+presence of a repeated stimulus. 
+b. Is involved in operant conditioning. 
+c. Explained by gradual inactivation of Ca++ 
+channels in the postsynaptic neuron. 
+d. Leads to the formation of new synapses. 
+e. Is due to gradual decrease in the 
+neurotransmitter release in the involved 
+pathway. 
+11. Which sentence is NOT true about 
+sensitization:
+a. A prolonged augmented response occurs 
+when a noxious stimulus paired to a benign 
+stimulus. 
+b. It is due to serotonin-induced facilitation. 
+c. Is involved in short-term memory. 
+d. Is involved in long-term memory. 
+e. It continues up to 60 seconds after removal of 
+the stimulus. 
+12. Post-tetanic facilitation: 
+a. Is a gradual loss of response to a repeated 
+benign stimulus. 
+b. The postsynaptic response continues as long 
+as the presynaptic stimulation is maintained. 
+c. Explained by accumulation of Ca++ in the 
+presynaptic neuron upon rapid short-term 
+stimulation. 
+d. Is associated with decrease postsynaptic 
+response after removal of presynaptic 
+stimulation. 
+e. Is the basis of classical conditioning. 
+13. In long-term depression: 
+a. A rapid repeated brief stimulation leads to a 
+persistent enhancement of response. 
+b. A slow, prolonged, low frequency stimulation 
+leads to decrease strength of synaptic 
+transmission. 
+c. A rapid tetanizing presynaptic stimulation 
+leads to continuation of postsynaptic 
+response after removal of the stimulus. 
+d. A noxious stimulus leads to presynaptic 
+facilitation of a habituated pathway. 
+e. A continuous benign stimulus leads to gradual 
+increase in response. 
+CNS Module (Questions) /   
+93
+Section
+1
+MCQ
+Chapter 6
+Limbic system - Hypothalamus
+1. 
+?
+Lateral nuclei of hypothalamus are NOT 
+involved in: 
+a. Feeding and thirst. 
+b. Release of orexin hormone. 
+c. Rage. 
+d. Approach motivation. 
+e. Heat gain. 
+2. Functions of the limbic system do NOT include: 
+a. Perception and discrimination of olfaction. 
+b. Control of feeding, maternal & sexual 
+behaviors. 
+c. Control of emotions. 
+d. Control of water balance. 
+e. Control of motivations. 
+3. Which sentence is NOT true about the 
+Amygdala: 
+a. Is involved in processing of the emotional 
+components of memories. 
+b. Is involved in processing of the emotional 
+responses to odors.
+c. Its lesion leads to hyperphagia and 
+omniphagia. 
+d. Its stimulation leads to rage and aggression. 
+e. Is the area for consolidation of memory. 
+4. The hypothalamus performs all of the 
+following functions EXCEPT: 
+a. Control of autonomic functions. 
+b. Regulation of anterior and posterior pituitary 
+hormonal secretion. 
+c. Control of voluntary movements. 
+d. Regulation of body temperature. 
+e. Control of appetite and food intake. 
+94 / CNS Module (Questions)
+5. Regarding the hypothalamus: 
+a. Satiety center has intrinsic activity. 
+b. Heat gain center is present in the anterior 
+hypothalamus. 
+c. Ventromedial nuclei synchronize body 
+activities according to dark-light cycles. 
+d. Posterior hypothalamus function as a sleep 
+center. 
+e. Anterior hypothalamic nuclei play a role in all 
+of sleep, heat loss, parasympathetic activity 
+and sexual drive. 
+Physiology
+Notes
+CNS Module (Questions) /   
+95
+3
+Section
+Histology
+Chapter 1
+?
+1. Receptor/s for proprioception is/are:
+I. Pacinian corpuscle. 
+II. Meissner’s corpuscle.
+III. Ruffini’ corpuscle.
+a. I only. 
+b. Il only.
+c. III only.
+d. I, II and III.
+2. Which of the following is a receptor for 
+vibration?
+a. Meissner’s corpuscle.
+b. Ruffini’s corpuscle.
+c. Merkel’s disc.
+d. Pacinian corpuscle.
+3. One of the following is NOT a character of 
+Meissner’s corpuscle:
+a. It is an encapsulated nerve ending.
+b. It is present in dermal papillae.
+c. The Schwann cells are arranged in two cores.
+d. The nerve fibers run spirally between the 
+Schwann cells.
+4. All about muscle spindle true except:
+a. Present in parallel with sk. Muscle fibers. 
+b. Contain collagen fibers. 
+c. Has gamma afferent fibers.
+d. Capsulated receptors 
+5.   Krause end bulb, all true except: 
+a. Has gelatinous core 
+b. Is a mechanoreceptor. 
+c. Present in conjunctiva & mouth cavity. 
+d. Has flattened Teloglia cells. 
+6. Which of the following is a character of 
+muscle spindle:
+a. Present In series with muscle fibers. 
+b. Innervated by afferent & efferent nerve fiber. 
+c. Contain intrafusal collagen fibers. 
+d. Responds to tension on muscle. 
+e. Non capsulated receptor   
+Receptors
+7. 
+Pacinian corpuscle: 
+a. Lies in dermal papillae of skin. 
+b. Noncapsulated receptor 
+Histology
+c. Has transversely arranged schwann cells. 
+d. Nerve fibers run in spiral coarse. 
+e. Contain concentric layers of Teloglia. 
+8. Which of the following receptors are 
+mechanoreceptors?
+a. Plexus of Bounet 
+b. Merkel’s disc 
+c. Meissner’s corpuscle 
+d. All of the above
+9. The sensory nerve enters the Meissner’s 
+corpuscle from:
+a. lower part 
+b. Side 
+c. Central core 
+d. Aany site of the 
+corpuscle
+10. Free nerve endings are widely distributed in
+a. Epidermis of the skin
+b. Cornea
+c. Mucous membrane of visceral organs
+d. Serous membranes
+e. All of the above
+11. What do free nerve endings respond to?
+a. Noxious(painful) 
+stimuli
+b. Crude touch
+c. Thermal stimuli
+d. All of the above
+12. What is the site of Merkel’s tactile disc?
+a. Deep layers of the epidermis of the palmer 
+surfaces of hands and planter surfaces of feet
+b. Transitional sites between hairy & non-hairy skin
+c. All of the above
+d. None of the above
+13. Pacinian corpuscles are found in
+c. Urinary bladder
+d. All of the above
+a. Dermis & 
+hypodermis
+b. Pancreas
+CNS Module (Questions) /   
+97
+Section
+1
+MCQ
+Chapter 2
+Spinal cord “Intro” & “Grey matter”
+?
+1. One of the following is a character of 
+lumbar level of spinal cord.
+a. It never has lateral horns. 
+b. Small in size. 
+c. Smallest whiter matter /grey matter ratio.
+d. Ventral central canal.
+2. Which of the following is a character of 
+thoracic level of spinal cord?
+a. Oval in shape.
+b. Large in size.
+c. It has 4 horns.
+d. It has 2 lateral horns.
+3. Which of the following is a character of 
+cervical level of spinal cord? 
+a. Rounded in shape. 
+b. Has largest white matter/grey matter ratio
+c. Small in size.
+d. Central canal is central.
+4. About spinal nerve all true except: 
+a. Lateral division of dorsal root carry pain, temp 
+b. Medial division carry proprioception & touch. 
+c. Dorsal root ganglia contain cells of same size. 
+d. Thick myelinated fibers carry proprioception.
+5. Which of the following is true about the 
+dorsal root ganglion: 
+a. It is a collection of nerve cells inside the 
+central nervous system.
+b. It is located at the viscera. 
+c. It has nerve cells of variable size. 
+d. It has no connective tissue capsule.
+98 / CNS Module (Questions)
+6. Nerve cells of dorsal root ganglia are 
+characterized by: 
+a. Of the same size 
+b. Have multiple processes. 
+c. Have eccentric nucleus.
+d. Associated with myelinated & unmyelinated 
+nerve fibers. 
+e. Have shwann cells around its cell bodies.
+7. 
+Nucleus dorsalis Clark’s nucleus, all true 
+except: 
+a. In the medial aspect of the base of the 
+posterior horn, In level from C8-L3
+b. Involved in lamina 7 of gray matter. 
+c. large cells with eccentric nucleus. 
+d. Give rise to ventral spinocerebellar tract.  
+8. One of the following nuclei is not present 
+in all segments of the spinal cord: 
+a. Postero-marginal nucleus. 
+b. Nucleus dorsalis (Clark’s nucleus). 
+c. Substantia gelatinosa. 
+d. Main sensory nucleus (nucleus proprius dorsalis). 
+9. Which of the following statements concerning 
+the nucleus dorsalis of Clark is TRUE?
+a. It is found in the ventral horn. 
+b. It is present at all spinal levels. 
+c. It is homologues in function to the main 
+sensory nucleus. 
+d. It projects to the cerebellum.
+10. Which of the following statements concerning 
+the lateral horn of the spinal cord is TRUE? 
+a. Gives origin to pre-ganglionic sympathetic 
+fibers. 
+b. It is most prominent at sacral levels.
+c. It is present in all spinal cord levels. 
+d. It contains pre-ganglionic parasympathetic 
+neurons. 
+9999 CNS Module (Questions) /   
+Histology Histology
+11. Destruction of the ventral horn results in 
+one of the following: 
+a. Loss of crude touch 
+b. Loss of fine touch 
+c. Flaccid paralysis 
+d. Loss of pain sensation  
+12. Which of the following is true about the 
+grey matter: 
+a. It is located outside the white matter in spinal 
+cord. 
+b. It is formed of nerve cells mainly. 
+c. It has satellite cells sheath around its cells. 
+d. It has no neuroglia.
+13. Anterior horn of spinal cord contains the 
+following nuclei EXCEPT
+a. anteromedial
+b. anterolateral 
+c. middle
+d. Posterolateral
+e. Posteromedial
+14. Preganglionic sympathetic neurons are 
+present in lamina …. of spinal cord gray 
+matter: 
+a. II
+b. III 
+c. VII 
+d. VI 
+e. X
+15. The main sensory nucleus of spinal cord is 
+called:
+a. substantia gelatinosa
+b. nucleus proprius 
+c. Clark nucleus
+d. posteromarginal nucleus
+e. none of the above
+16. Anterior, posterior and lateral horns are 
+present in....spinal cord segment
+a. Cervical 
+b. Thoracic 
+c. Sacral
+d. All of the above
+17. Which spinal cord segment has a thin 
+posterior horn and a thick anterior horn?
+a. Cervical
+b. Thoracic
+c. Lumber
+d. Sacral
+18. Which spinal cord segment has a thick 
+posterior horn and a thick anterior horn?
+a. Cervical
+b. Thoracic
+c. Lumber
+d. Sacral
+19. White matter is formed of all of the 
+following except
+a. Nerve fibers 
+b. Neuroglia 
+c. Blood vessels 
+d. None of the 
+above
+20. Intermediomedial nucleus is found in... 
+horn, but intermediolateral nucleus is 
+found in.. horn
+a. Posterior , anterior 
+b. Anterior , posterior 
+c. Lateral , anterior 
+d. Anterior , lateral 
+e. Posterior , lateral
+21. Grey matter is formed by all of the 
+following except
+a. Nerve cell 
+b. Neuroglia 
+c. Blood capillaries
+d. None of the above  
+22. Posteromarginal nucleus is found in
+a. Lamina I
+b. Lamina II
+c. Lamina III
+d. Lamina V
+23. Substantia Gelatinosa is found in
+a. Lamina I
+b. Lamina II
+c. Lamina III
+d. Lamina V
+24. Main sensory nucleus is found in 
+a. Lamina I
+b. Lamina II
+c. Lamina III & IV
+d. Lamina V
+Section
+1
+MCQ
+25. Clarke’s nucleus is found in
+a. Lamina I
+b. Lamina II
+c. Lamina VI
+d. Lamina VII
+26. Intermediomedial nucleus is found in
+a. Lamina I
+b. Lamina II
+c. Lamina VI
+d. Lamina VII
+27. Intermediolateral nucleus is found in
+a. Lamina I
+b. Lamina II
+c. Lamina VI
+d. Lamina VII
+28. Medial and lateral motor nuclear group is 
+found in
+a. Lamina I
+b. Lamina II
+c. Lamina VI
+d. Lamina IX
+29. Which lamina represents the central gray 
+substance surrounding the central canal?
+a. Lamina I
+b. Lamina II
+c. Lamina IX
+d. Lamina X
+100 / CNS Module (Questions)
+Chapter 3
+Spinal cord “White matter”
+1. Which of the following tracts lie in the 
+dorsal funiculus: 
+Histology
+? 
+7. One of the following is true about gracile tract: 
+a. Cuneate 
+b. Rubrospinal 
+c. Vestibulospinal 
+d. MLB 
+e. Spinocerebellar   
+2. Which of the following tracts is present in 
+all segments of spinal cord:
+a. Gracile 
+b. MLB 
+c. Cuneate
+d. Spinolivary   
+3. One of the following tracts carries 
+sensations to subcortical level:
+a. Dorsal spinocerebellar tract. 
+b. Gracile tract.
+c. Lateral spinothalamic.
+d. Ventral spinothalamic.
+4. All the following nuclei are present in all 
+segments of the spinal canal EXCEPT
+a. Postero- marginal nucleus
+b. nucleus dorsalis (Clarke nucleus)
+c. substantia gelatinosa
+d. main sensory nucleus (nucleus proprius 
+dorsalis)
+5. The first order neuron in proprioception 
+from the lower half of the body is in:
+a. Gracile nucleus.
+b. Cuneate nucleus. 
+c. Spinal ganglia.
+d. Main sensory nucleus.
+6. The second order neuron in proprioception 
+from lower half of the body is in:
+a. Gracile nucleus on the same side. 
+b. Cuneate nucleus on the same side.
+c. Gracile nucleus on opposite side.
+d. Cuneate nucleus on opposite side.
+a. Presents only in cervical&thoracic levels of 
+spinal cord.
+b. Carries proprioception from the upper half of 
+the body.
+c. Terminates at gracile nucleus in medulla. 
+d. Arises from spinal ganglia in upper half of body.
+8. One of the following is true about cuneate 
+tract:
+a. It arises from spinal ganglia in upper half of 
+body.
+b. It arises from cuneate nucleus on same side.
+c. It arises from cuneate nucleus on opposite side.
+d. It is present in lateral column of white matter 
+in spinal cord.
+9. 38 years old male complains of 
+unsteadiness in gait especially in the Dark, 
+his complaint may be due to lesion in:
+a. Lateral spinothalamic tract 
+b. Ventral spinothalamic tract
+c. Dorsal spinocerebellar tract
+d. Dorsal column tracts
+10. One of the following statements is true 
+about syringomyelia:
+a. There is congenital dilatation of central canal 
+in lumbar region.
+b. There is pressure on dorsal column. 
+c. There is pressure on lateral spinothalamic tracts.
+CNS Module (Questions) /   
+101
+Section
+1
+MCQ
+Chapter 4
+?
+Cerebrum & Cerebellum
+1. The central nervous system is soft because: 
+a. It consists of neurons joined by connective 
+tissue.
+b. It is rich in blood vessels.
+c. It does not contain connective tissue.
+d. It contains fat cells.

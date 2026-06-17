@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "comingSoon": true,
+  "meta": {
+    "moduleCode": "P5-3",
+    "moduleName": "Doctor-Patient Communication",
+    "year": 3,
+    "semester": 1,
+    "creditPoints": 1,
+    "totalMarks": 20,
+    "keywords": [
+      "communication",
+      "doctor-patient",
+      "p5"
+    ]
+  },
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Active Listening & Verbal/Non-Verbal Communication",
+      "subtitle": "Active Listening & Verbal/Non-Verbal Communication",
+      "emoji": "🗣️",
+      "page": 1,
+      "lectureRange": "Lectures 1",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 2,
+      "title": "Breaking Bad News & Handling Difficult Patients",
+      "subtitle": "Breaking Bad News & Handling Difficult Patients",
+      "emoji": "💔",
+      "page": 2,
+      "lectureRange": "Lectures 2",
+      "subjects": [],
+      "keywords": []
+    }
+  ]
+}

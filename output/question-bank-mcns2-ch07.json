@@ -1,0 +1,2847 @@
+{
+  "schemaVersion": 1,
+  "meta": {
+    "moduleCode": "MCNS-2",
+    "moduleName": "Central Nervous System",
+    "year": 2,
+    "semester": 2,
+    "creditPoints": 6,
+    "totalMarks": 200,
+    "keywords": [
+      "CNS",
+      "Neuroanatomy",
+      "Neuropharmacology",
+      "Neurophysiology",
+      "Neuropathology"
+    ]
+  },
+  "chapterTitle": "VII. Cerebrum, Meninges & Higher Brain",
+  "questions": [
+    {
+      "id": "mcns2-ch1-anatomy-q1",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Choose the INCORRECT matching:",
+      "explanation": "The mesencephalon (midbrain) surrounds the cerebral aqueduct of Sylvius, not a '2nd ventricle.' There is no standard 2nd ventricle; the brain ventricles are the paired lateral ventricles, third, and fourth.",
+      "keyConcept": "Mesencephalon surrounds the cerebral aqueduct, not a 2nd ventricle",
+      "options": [
+        "Diencephalon – 3rd ventricle",
+        "Midbrain – cerebral aqueduct of Sylvius",
+        "Cerebral hemisphere – lateral ventricle",
+        "Hind brain – 4th ventricle",
+        "Mesencephalon – 2nd ventricle"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q62",
+      "type": "case",
+      "lecture": 1,
+      "text": "A patient with an abscess in the upper lip was advised not to squeeze it for fear of spread of pus to a venous sinus inside skull.",
+      "explanation": "The facial vein lacks valves and communicates with the cavernous sinus via the ophthalmic veins. Squeezing an abscess in the upper lip (danger triangle) can force infected thrombi into the cavernous sinus, causing thrombosis.",
+      "keyConcept": "Upper lip abscess → risk of cavernous sinus thrombosis via valveless facial vein",
+      "subQuestions": [
+        {
+          "id": "mcns2-ch1-anatomy-q62-sq1",
+          "type": "essay",
+          "text": "What is the name of sinus at risk?",
+          "explanation": "The facial vein communicates with the cavernous sinus via valveless ophthalmic veins, making it the sinus at risk.",
+          "keyConcept": "Facial vein → cavernous sinus via ophthalmic veins",
+          "modelAnswer": "Cavernous sinus."
+        },
+        {
+          "id": "mcns2-ch1-anatomy-q62-sq2",
+          "type": "essay",
+          "text": "Describe 2 alternate pathways for passage of infection to the sinus.",
+          "explanation": "The facial vein has two main connections to the cavernous sinus: directly via the superior ophthalmic vein and indirectly via the deep facial vein to the pterygoid plexus.",
+          "keyConcept": "Facial vein connects to cavernous sinus via superior ophthalmic vein and pterygoid plexus",
+          "modelAnswer": "First pathway: via the angular vein → ophthalmic veins → cavernous sinus. Second pathway: via the deep facial vein → pterygoid plexus → emissary veins → cavernous sinus."
+        },
+        {
+          "id": "mcns2-ch1-anatomy-q62-sq3",
+          "type": "essay",
+          "text": "What other areas have similar risk?",
+          "explanation": "These areas drain into the facial vein and its tributaries, which communicate with the cavernous sinus without valves.",
+          "keyConcept": "Danger triangle includes medial eye, nose, and upper lip",
+          "modelAnswer": "The upper lip, nose, and medial angle of the eye (danger triangle of the face) have similar risk because the facial vein is valveless and communicates with the cavernous sinus."
+        }
+      ]
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q64",
+      "type": "case",
+      "lecture": 1,
+      "text": "A 12-years old boy fell from a bicycle & wounded his scalp. At the hospital, the doctor sutured the wound to limit its gaping & to stop the bleeding. Later, the boy returned to the hospital with black eye. The doctor prescribed an antibiotic to avoid dangerous complications.",
+      "explanation": "Scalp bleeding requires suturing because dense connective tissue prevents vasoconstriction. Gaping indicates aponeurosis involvement. Black eye results from blood tracking through loose areolar tissue to the eyelids. Cavernous sinus thrombosis is a dangerous complication.",
+      "keyConcept": "Scalp wound complications: profuse bleeding, black eye, cavernous sinus thrombosis",
+      "subQuestions": [
+        {
+          "id": "mcns2-ch1-anatomy-q64-sq1",
+          "type": "essay",
+          "text": "Why scalp bleeding cannot be stopped except by suturing?",
+          "explanation": "Dense fibrous septa in the subcutaneous tissue hold vessels open, preventing natural vasoconstriction.",
+          "keyConcept": "Scalp dense fibrous tissue prevents vasoconstriction → requires suturing",
+          "modelAnswer": "Because the scalp has a rich blood supply and the fibrous tissue in the connective tissue layer prevents the local vasoconstriction of the blood vessels in this layer."
+        },
+        {
+          "id": "mcns2-ch1-anatomy-q64-sq2",
+          "type": "essay",
+          "text": "Gaping of scalp wound indicates involvement of which layer of scalp?",
+          "explanation": "The epicranial aponeurosis is inelastic; when cut, the frontalis and occipitalis muscles retract, causing the wound to gape.",
+          "keyConcept": "Aponeurosis cut → wound gapes due to muscle retraction",
+          "modelAnswer": "Gaping of scalp wound indicates involvement of aponeurosis of occipito-frontalis muscle."
+        },
+        {
+          "id": "mcns2-ch1-anatomy-q64-sq3",
+          "type": "essay",
+          "text": "Explain the development of black eye.",
+          "explanation": "Blood in the subaponeurotic layer tracks anteriorly beneath the frontalis to the eyelids due to gravity.",
+          "keyConcept": "Subaponeurotic hematoma tracks to eyelids → black eye",
+          "modelAnswer": "If the wound causes subaponeurotic hematoma, the blood gravitates to the eyelids deep to the frontal bellies of the occipito-frontalis muscle which are attached to the skin of eyebrows, and so hematoma extends deep to it and reaches eyelids causing black eye."
+        },
+        {
+          "id": "mcns2-ch1-anatomy-q64-sq4",
+          "type": "essay",
+          "text": "What dangerous complication did the doctor expect?",
+          "explanation": "Infected blood from the scalp can spread via emissary veins to the cavernous sinus, causing thrombosis.",
+          "keyConcept": "Scalp infection can spread via emissary veins → cavernous sinus thrombosis",
+          "modelAnswer": "Cavernous sinus thrombosis."
+        }
+      ]
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q119",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Give an idea about lumbar puncture.",
+      "explanation": "Lumbar puncture is performed to obtain CSF or inject medications. The safe site is between L3-L4 or L4-L5 vertebrae (just above or below the L4 spinous process). The patient is positioned on the side or sitting forward. The needle passes through: skin, superficial fascia, supraspinous ligament, interspinous ligament, ligamentum flavum, epidural space, dura mater, and arachnoid mater to reach the subarachnoid space containing CSF.",
+      "keyConcept": "Lumbar puncture site (L3-L4/L4-L5), layers traversed, and subarachnoid CSF space",
+      "modelAnswer": "Lumbar puncture is performed to obtain CSF for diagnosis or inject medication/anesthesia. Site: between L3-L4 or L4-L5 vertebrae (just above or below L4 spine). The patient lies on side or sits forward. The needle passes through: skin, superficial fascia, supraspinous ligament, interspinous ligament, ligamentum flavum, epidural space, dura mater, arachnoid mater to reach subarachnoid space (containing CSF)."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q136",
+      "type": "case",
+      "lecture": 1,
+      "text": "A 25 year old patient had an operation under spinal anesthesia. During recovery, he could not feel the back of his lower limb with difficulty in climbing the stairs by the right foot.",
+      "explanation": "This case describes normal anatomy during lumbar puncture: The correct lumbar puncture site is just above or below the L4 spinous process (L3-L4 or L4-L5 interspace). The spinal cord normally ends at the lower border of L1 vertebra in adults. The meninges terminate at: Dura and arachnoid end at S2; Pia mater continues as filum terminale to the coccyx. These are safe landmarks because the cauda equina floats freely in the subarachnoid space below L1.",
+      "keyConcept": "Lumbar puncture site (L3-L4/L4-L5), cord ends at L1, meninges end at S2 (except pia)",
+      "subQuestions": [
+        {
+          "id": "mcns2-ch1-anatomy-q136-sq1",
+          "type": "essay",
+          "text": "[TYPE: essay] Where is the correct site for doing a lumbar puncture?",
+          "explanation": "This case describes normal anatomy during lumbar puncture: The correct lumbar puncture site is just above or below the L4 spinous process (L3-L4 or L4-L5 interspace). The spinal cord normally ends at the lower border of L1 vertebra in adults. The meninges terminate at: Dura and arachnoid end at S2; Pia mater continues as filum terminale to the coccyx. These are safe landmarks because the cauda equina floats freely in the subarachnoid space below L1.",
+          "keyConcept": "Lumbar puncture site (L3-L4/L4-L5), cord ends at L1, meninges end at S2 (except pia)",
+          "modelAnswer": "just above or below L4 spine."
+        },
+        {
+          "id": "mcns2-ch1-anatomy-q136-sq2",
+          "type": "essay",
+          "text": "[TYPE: essay] Where does the spinal cord normally end in such a patient?",
+          "explanation": "This case describes normal anatomy during lumbar puncture: The correct lumbar puncture site is just above or below the L4 spinous process (L3-L4 or L4-L5 interspace). The spinal cord normally ends at the lower border of L1 vertebra in adults. The meninges terminate at: Dura and arachnoid end at S2; Pia mater continues as filum terminale to the coccyx. These are safe landmarks because the cauda equina floats freely in the subarachnoid space below L1.",
+          "keyConcept": "Lumbar puncture site (L3-L4/L4-L5), cord ends at L1, meninges end at S2 (except pia)",
+          "modelAnswer": "Lower border of L1."
+        },
+        {
+          "id": "mcns2-ch1-anatomy-q136-sq3",
+          "type": "essay",
+          "text": "[TYPE: essay] What is the level of termination of the spinal meninges?",
+          "explanation": "This case describes normal anatomy during lumbar puncture: The correct lumbar puncture site is just above or below the L4 spinous process (L3-L4 or L4-L5 interspace). The spinal cord normally ends at the lower border of L1 vertebra in adults. The meninges terminate at: Dura and arachnoid end at S2; Pia mater continues as filum terminale to the coccyx. These are safe landmarks because the cauda equina floats freely in the subarachnoid space below L1.",
+          "keyConcept": "Lumbar puncture site (L3-L4/L4-L5), cord ends at L1, meninges end at S2 (except pia)",
+          "modelAnswer": "Dura & arachnoid mater - end at S2, while Pia mater > ends at L1."
+        }
+      ]
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q198",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Enumerate nuclei of GSE column & the structures supplied by each nucleus.",
+      "explanation": "The emissary veins of the superior sagittal sinus pass through the foramen cecum (anterior) and parietal foramina (posterior). These veins connect the extracranial venous system with the dural venous sinuses.",
+      "keyConcept": "Foramen cecum transmits emissary vein of superior sagittal sinus",
+      "modelAnswer": "NUCLEI OF GSE COLUMN: (1) OCULOMOTOR NUCLEUS (III) in midbrain → superior, inferior, medial rectus, inferior oblique; (2) TROCHLEAR NUCLEUS (IV) in midbrain → superior oblique; (3) ABDUCENT NUCLEUS (VI) in pons → lateral rectus; (4) HYPOGLOSSAL NUCLEUS (XII) in medulla → intrinsic and extrinsic tongue muscles (except palatoglossus)."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q202",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The nerve that runs in the floor of the cavernous sinus is:",
+      "explanation": "The optic nerve and oculomotor nerve are not related to the cavernous sinus. The optic nerve is in the optic canal; the oculomotor, trochlear, trigeminal (V1, V2), and abducent nerves traverse the cavernous sinus.",
+      "keyConcept": "Optic nerve not related to cavernous sinus",
+      "options": [
+        "Oculomotor nerve.",
+        "Trochlear nerve.",
+        "Ophthalmic",
+        "Maxillary nerve.",
+        "Abducent nerve."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q203",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The sinus that runs along the lesser wing of sphenoid is:",
+      "explanation": "The straight sinus (not cavernous) is enclosed within the tentorium cerebelli at its attachment to the falx cerebri. The cavernous sinus is in the middle cranial fossa, lateral to the sella turcica.",
+      "keyConcept": "Straight sinus enclosed in tentorium cerebelli",
+      "options": [
+        "Sphenoparietal sinus.",
+        "Superior sagittal sinus.",
+        "Inferior sagittal sinus.",
+        "Straight sinus.",
+        "Sigmoid sinus."
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q204",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The inferior petrosal sinus connects the cavernous sinus to the:",
+      "explanation": "The middle meningeal artery runs in a groove on the greater wing of the sphenoid, not through the cavernous sinus. It passes through the foraman spinosum to supply the dura.",
+      "keyConcept": "Middle meningeal artery not in cavernous sinus",
+      "options": [
+        "Straight sinus.",
+        "Transverse sinus.",
+        "Inferior sagittal sinus.",
+        "Internal jugular vein.",
+        "Sigmoid sinus."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q205",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which of the following foramina gives passage to emissary veins of the cavernous sinuses?",
+      "explanation": "Rupture of the middle meningeal artery causes extradural hemorrhage. This arterial bleeding creates a biconvex/lens-shaped collection that can cause rapid deterioration due to arterial pressure.",
+      "keyConcept": "Middle meningeal artery causes extradural hematoma",
+      "options": [
+        "Foramen caecum.",
+        "Jugular foramen.",
+        "Foramen lacerum.",
+        "Mastoid foramen.",
+        "Condylar foramen."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q207",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The inferior petrosal sinus connects the cavernous sinus with the:",
+      "explanation": "The cavernous part of the internal carotid artery gives off the inferolateral (暴发性) trunk and meningohypophyseal trunk branches, which supply the dura and pituitary gland.",
+      "keyConcept": "Cavernous ICA gives meningohypophyseal trunk",
+      "options": [
+        "Infernal jugular vein.",
+        "Beginning of transverse sinus.",
+        "Occipital sinus.",
+        "Beginning of sigmoid sinus.",
+        "Confluence of sinuses."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q208",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The most superior nerve that runs in lateral wall of cavernous sinus:",
+      "explanation": "Extradural hematoma occurs due to rupture of the middle meningeal artery, which passes through the foramen spinosum in the greater wing of the sphenoid bone. This creates the classic 'lens-shaped' hemorrhage.",
+      "keyConcept": "Foramen spinosum transmits middle meningeal artery",
+      "options": [
+        "Occulomotor nerve.",
+        "Trochlear nerve.",
+        "Ophthalmic nerve.",
+        "Maxillary nerve.",
+        "Abducent nerve."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q210",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The sinus that is enclosed within the tentorium cerebelli is:",
+      "explanation": "The cavernous sinus lies between the outer (endosteal) and inner (meningeal) layers of dura, but NOT between the layers of the falx cerebri. The falx contains the sagittal sinuses.",
+      "keyConcept": "Cavernous sinus not between falx cerebri layers",
+      "options": [
+        "Cavernous sinus.",
+        "Sphenoparietal sinus.",
+        "Transverse sinus.",
+        "Sigmoid sinus.",
+        "Superior petrosal sinus."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q211",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Cavernous sinus is related laterally to:",
+      "explanation": "The middle meningeal artery is NOT a tributary of the cavernous sinus. It is a branch of the maxillary artery that supplies the dura. The cavernous sinus receives the sphenoparietal sinus, superior and inferior ophthalmic veins, and middle cerebral vein.",
+      "keyConcept": "Middle meningeal artery not tributary of cavernous sinus",
+      "options": [
+        "Pituitary gland.",
+        "Temporal iobe of brain.",
+        "Foramen lacerum.",
+        "Optic chiasma.",
+        "Sphenoidal air sinus."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q212",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "As regards the cavernous sinus, choose the INCORRECT statement:",
+      "explanation": "The internal jugular vein is not a direct communication of the cavernous sinus. The cavernous sinus communicates with the pterygoid plexus (via foramen ovale), superior and inferior petrosal sinuses, and ultimately the internal jugular via the inferior petrosal sinus.",
+      "keyConcept": "Cavernous sinus communicates via petrosal sinuses, not directly to IJV",
+      "options": [
+        "Internal carotid artery runs in its floor.",
+        "Abducent nerve is embedded in its lateral wall.",
+        "It receives the ophthalmic veins anteriorly.",
+        "It is connected with pterygoid plexus of veins.",
+        "Sphenoidal sinus lies below it."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q213",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "A tributary of cavernous sinus is:",
+      "explanation": "The middle meningeal artery supplies the dura of the cranial vault, particularly the lateral parts. It does not supply the dura of the cranial base, which is supplied by other arteries like the occipital and vertebral arteries.",
+      "keyConcept": "Middle meningeal artery supplies dura of vault",
+      "options": [
+        "Central retinal vein.",
+        "Pterygoid plexus of veins.",
+        "Superior petrosal sinus.",
+        "Inferior petrosal sinus.",
+        "Great cerebral vein."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q215",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The venous sinus enclosed within the lower concave margin of the falx cerebri is:",
+      "explanation": "The inferior sagittal sinus runs along the lower free margin of the falx cerebri before draining into the straight sinus. The superior sagittal sinus runs along the upper attached border.",
+      "keyConcept": "Inferior sagittal sinus in lower falx margin",
+      "options": [
+        "Superior sagittal sinus.",
+        "Inferior sagittal sinus.",
+        "Sigmoid sinus.",
+        "Straight sinus.",
+        "Sphenoparietal sinus."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q216",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "All the following venous sinuses lie between outer (endosteal) & inner (meningeal) layers of dura EXCEPT:",
+      "explanation": "The cavernous sinus is located between the meningeal and endosteal layers of dura in the middle cranial fossa. It is NOT between the layers of the falx cerebri, which contains the sagittal sinuses.",
+      "keyConcept": "Cavernous sinus between meningeal layers in middle fossa",
+      "options": [
+        "Superior sagittal sinus.",
+        "Inferior sagittal sinus.",
+        "Right sigmoid sinus.",
+        "Right transverse sinus.",
+        "Left transverse sinus."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q217",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "All the following are tributaries of cavernous sinus EXCEPT:",
+      "explanation": "The middle meningeal artery is NOT a tributary of the cavernous sinus. It is a branch of the maxillary artery (external carotid system) that supplies the dura through the foramen spinosum. Cavernous sinus tributaries include sphenoparietal sinus and ophthalmic veins.",
+      "keyConcept": "Middle meningeal not tributary of cavernous sinus",
+      "options": [
+        "Sphenoparietal sinus.",
+        "Straight sinus.",
+        "Central retinal vein.",
+        "Superior ophthalmic vein.",
+        "Inferior ophthalmic vein."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q218",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The cavernous sinus communicates with all the following EXCEPT:",
+      "explanation": "The cavernous sinus does not communicate directly with the internal jugular vein. It drains indirectly via the superior and inferior petrosal sinuses, which connect to the transverse/sigmoid sinuses and ultimately the jugular bulb.",
+      "keyConcept": "Cavernous sinus drains via petrosal sinuses, not directly to IJV",
+      "options": [
+        "Ophthalmic veins.",
+        "Facial vein.",
+        "Pterygoid venous plexus.",
+        "Superior sagittal sinus.",
+        "Inferior petrosal sinus."
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q219",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which of the following structures is embedded in the lateral wall of cavernous sinus?",
+      "explanation": "The abducent nerve (CN VI) runs within the cavernous sinus, not in its lateral wall. The lateral wall contains the oculomotor, trochlear, ophthalmic (V1), and maxillary (V2) nerves.",
+      "keyConcept": "CN VI inside cavernous sinus, not in lateral wall",
+      "options": [
+        "Mandibular nerve.",
+        "Internal carotid artery.",
+        "Ophthalmic nerve.",
+        "Abducent nerve.",
+        "Trigeminal ganglion."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q220",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Middle meningeal artery supplies dura of:",
+      "explanation": "The middle meningeal artery supplies the dura mater of the cranial vault (convexities), not the cranial base. The base of the skull dura is supplied by branches from the vertebral, ascending pharyngeal, and other arteries.",
+      "keyConcept": "Middle meningeal supplies vault dura, not base",
+      "options": [
+        "Anterior cranial fossa.",
+        "Middle cranial fossa.",
+        "Posterior cranial fossa.",
+        "Anterior & middle cranial fossae.",
+        "Middle & posterior cranial fossae."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q222",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "All the following are paired sinuses Except:",
+      "explanation": "Most dural venous sinuses are paired, including the cavernous sinuses, transverse sinuses, sigmoid sinuses, superior petrosal sinuses, inferior petrosal sinuses, and occipital sinuses. The straight sinus, however, is an unpaired midline structure formed by the union of the inferior sagittal sinus and the great cerebral vein (vein of Galen) at the junction of the falx cerebri and tentorium cerebelli.",
+      "keyConcept": "Straight sinus is unpaired; most other dural venous sinuses are paired.",
+      "options": [
+        "Sphenoparietal sinus.",
+        "Cavernous sinus.",
+        "Straight sinus.",
+        "Sigmoid sinus.",
+        "Inferior petrosal sinus."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q224",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "As regards relations of cavernous sinus, choose the INCORRECT matching:",
+      "explanation": "The cavernous sinus is located in the middle cranial fossa on either side of the sella turcica, not in the posterior cranial fossa. Statement A is incorrect. It lies between the superior orbital fissure anteriorly and the apex of the petrous temporal bone posteriorly, rests on the body and greater wing of the sphenoid bone, receives blood from facial and ophthalmic veins, and transmits pulsations from the internal carotid artery to promote venous outflow.",
+      "keyConcept": "Cavernous sinus is in the middle cranial fossa, NOT the posterior cranial fossa.",
+      "options": [
+        "It lies in posterior cranial fossa.",
+        "The endosteal dura forms its roof.",
+        "It lies between inferior orbital fissure & apex of petreous temporal bone.",
+        "It lies on either side of greater wing of sphenoid.",
+        "Expansile pulsation of external carotid artery helps the passing of the blood outside the sinus."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q225",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which one of the following structures is not embedded in lateral wall of cavernous sinus?",
+      "explanation": "The lateral wall of the cavernous sinus contains the oculomotor nerve (CN III), trochlear nerve (CN IV), ophthalmic nerve (V1), and maxillary nerve (V2), arranged from superior to inferior. The abducent nerve (CN VI) is the exception—it runs through the body of the cavernous sinus, lateral to the internal carotid artery, not in the lateral wall.",
+      "keyConcept": "Abducent nerve (CN VI) runs through the body of cavernous sinus, not its lateral wall.",
+      "options": [
+        "Ophthalmic nerve.",
+        "Abducent nerve.",
+        "Oculomotor nerve.",
+        "Trochlear nerve.",
+        "Maxillary nerve."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q226",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which one of the following is considered as an emissary vein?",
+      "explanation": "Emissary veins are valveless veins that pass through cranial foramina and connect intracranial dural venous sinuses with extracranial veins. The inferior petrosal sinus itself is functionally considered an emissary vein because it connects the cavernous sinus (intracranial) with the internal jugular vein (extracranial). The other sinuses listed are purely intracranial venous structures without direct extracranial connections.",
+      "keyConcept": "Inferior petrosal sinus is functionally an emissary vein connecting cavernous sinus to internal jugular vein.",
+      "options": [
+        "Sphenoparietal sinus.",
+        "Superior petrosal sinus.",
+        "Inferior petrosal sinus.",
+        "Transverse sinus.",
+        "Straight sinus."
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q227",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Emissary veins of cavernous sinus pass through all the following foramina Except:",
+      "explanation": "Emissary veins from the cavernous sinus pass through the foramen lacerum, foramen ovale, and emissary sphenoidal foramen (foramen of Vesalius) to connect with the pterygoid venous plexus. The mastoid foramen, however, transmits an emissary vein connecting the sigmoid sinus to the posterior auricular veins, not the cavernous sinus. Therefore, mastoid foramen is not a route for cavernous sinus emissary veins.",
+      "keyConcept": "Mastoid foramen connects sigmoid sinus to extracranial veins, not cavernous sinus emissary veins.",
+      "options": [
+        "Foramen lacerum.",
+        "Foramen ovale.",
+        "Carotid canal.",
+        "Mastoid foramen.",
+        "Emissary sphenoidal foramen."
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q229",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Enumerate the tributaries, drainage & communications of cavernous sinus.",
+      "explanation": "The cavernous sinus is a major dural venous sinus that receives tributaries from multiple sources and communicates extensively with extracranial veins. Understanding its tributaries, drainage, and communications is clinically essential because infections from the face can spread retrogradely to the cavernous sinus, causing potentially fatal cavernous sinus thrombosis.",
+      "keyConcept": "Cavernous sinus receives ophthalmic veins, middle meningeal vein, and communicates with pterygoid plexus via emissary veins.",
+      "modelAnswer": "Tributaries of cavernous sinus: superior and inferior ophthalmic veins, central retinal vein, superficial middle cerebral vein, and sphenoparietal sinus. Drainage: blood drains posteriorly into the inferior petrosal sinus (to internal jugular vein) and superior petrosal sinus (to transverse sinus). Communications: pterygoid venous plexus via emissary veins through foramen lacerum and foramen ovale; facial vein via ophthalmic veins; basilar venous plexus posteriorly."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q232",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Enumerate structures embedded in lateral wall of cavernous sinus & the structures running within its cavity.",
+      "explanation": "The cavernous sinus contains important cranial nerves and vascular structures in its lateral wall and cavity. Understanding these relationships is crucial for diagnosing cavernous sinus pathologies such as thrombosis, carotid-cavernous fistula, and tumors.",
+      "keyConcept": "Lateral wall: CN III, IV, V1, V2. Body: ICA and CN VI.",
+      "modelAnswer": "Structures embedded in the lateral wall of the cavernous sinus (from superior to inferior): oculomotor nerve (CN III), trochlear nerve (CN IV), ophthalmic nerve (V1), and maxillary nerve (V2). Structures running within the cavity of the cavernous sinus: internal carotid artery with its sympathetic plexus (medial side), and the abducent nerve (CN VI) lateral to the internal carotid artery."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q406",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Ciliary ganglion is derived from:",
+      "explanation": "The ciliary ganglion is derived from neural crest cells that migrate from the optic vesicle region. Neural crest cells also give rise to the spheno-ethmoidal, submandibular, and sublingual ganglia of the parasympathetic system. Schwann cells come from neural crest butpia mater and dura mater have different origins.",
+      "keyConcept": "Ciliary ganglion (parasympathetic) derived from neural crest cells; receives preganglionic parasympathetic fibers from Edinger-Westphal nucleus.",
+      "options": [
+        "Neural crest.",
+        "Spongioblasts.",
+        "Local mesoderm.",
+        "Chromaffin cells.",
+        "Schwann cells."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q444",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Foramen ovale gives passage to:",
+      "explanation": "Foramen ovale is located in the greater wing of the sphenoid bone and transmits the mandibular nerve (CN V3), accessory meningeal artery, and emissary veins connecting the cavernous sinus to the pterygoid venous plexus. Foramen spinosum transmits the middle meningeal artery. The internal carotid artery passes through the carotid canal, not foramen ovale.",
+      "keyConcept": "Foramen ovale transmits mandibular nerve (CN V3), accessory meningeal artery; foramen spinosum transmits middle meningeal artery.",
+      "options": [
+        "Middle meningeal artery.",
+        "Internal carotid artery.",
+        "Maxillary nerve.",
+        "Mandibular nerve.",
+        "Hypoglossal nerve."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q453",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which one of the following is a part of the posterior cranial fossa?",
+      "explanation": "The transverse sulcus (for the transverse sinus) runs across the occipital bone and forms part of the posterior cranial fossa floor. The body of the sphenoid and crista galli are in the middle and anterior cranial fossae respectively. The cribriform plate is in the anterior cranial fossa. The lesser wing of sphenoid forms the posterior limit of the anterior cranial fossa.",
+      "keyConcept": "Transverse sulcus is in posterior cranial fossa (occipital bone); marks the junction with middle cranial fossa.",
+      "options": [
+        "Body of sphenoid.",
+        "Crista galli.",
+        "Cribriform plate of ethmoid.",
+        "Lesser wing of sphenoid.",
+        "Transverse sulcus."
+      ],
+      "correctIndex": 4
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q469",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "A 45-year-old patient presents with sudden difficulty in comprehending spoken language. They can speak fluently, but their speech lacks meaningful content. Which area of the brain is most likely affected in this case?",
+      "explanation": "Wernicke's area is located in the posterior part of the superior temporal gyrus (Brodmann area 22) of the dominant hemisphere. It is responsible for language comprehension. Damage causes receptive (sensory) aphasia—fluent but meaningless speech with poor comprehension. The patient speaks fluently but cannot understand others.",
+      "keyConcept": "Wernicke's area (posterior superior temporal gyrus) = language comprehension; lesion causes receptive/sensory aphasia.",
+      "options": [
+        "Primary motor cortex",
+        "Primary somatosensory cortex",
+        "Broca's area",
+        "Wernicke's area",
+        "Visual cortex"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q502",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Infection from dangerous area of face may be transmitted to the following venous sinus:",
+      "explanation": "Infection from dangerous area of face (upper lip, nose, orbit) may spread via facial vein → angular vein → superior ophthalmic vein → cavernous sinus.选项E正确. The answer is E. This is why facial infections can cause cavernous sinus thrombosis.",
+      "keyConcept": "Facial vein connects to cavernous sinus via angular and superior ophthalmic veins - spread route for infection.",
+      "options": [
+        "Superior petrosal.",
+        "Sigmoid.",
+        "Inferior sagittal.",
+        "Superior sagittal.",
+        "Cavernous."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q515",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The falx cerebri:",
+      "explanation": "The falx cerebri: a dura mater fold between cerebral hemispheres, attached to crista galli anteriorly and tentorium posteriorly, contains superior sagittal sinus.选项B正确. The answer is B. It prevents hemisphere displacement.",
+      "keyConcept": "Falx cerebri: dura fold between hemispheres, contains superior sagittal sinus - prevents midline shift.",
+      "options": [
+        "Is attached anteriorly to anterior clinoid process.",
+        "Contains superior sagittal sinus.",
+        "Separates pituitary gland from cerebrum.",
+        "Separates cerebrum from cerebellum.",
+        "Contains superior petrosal sinus."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q550",
+      "type": "essay",
+      "lecture": 1,
+      "text": "What does lesion of inferior parietal lobule cause?",
+      "explanation": "Lesion of the inferior parietal lobule (dominant hemisphere) causes receptive (sensory) aphasia - difficulty understanding language. In the non-dominant hemisphere, it causes contralateral hemisensory neglect.",
+      "keyConcept": "Inferior parietal lobule lesion: dominant hemisphere → receptive aphasia (Wernicke's area connections).",
+      "modelAnswer": "Receptive aphasia (Wernicke's aphasia) - fluent but meaningless speech with poor comprehension. Patient speaks fluently but cannot understand or produce meaningful language."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q556",
+      "type": "essay",
+      "lecture": 1,
+      "text": "What does lesion of area 6 cause?",
+      "explanation": "Area 6 lesion causes apraxia (inability to perform learned movements on command), muscle spasticity (due to release of area 4 from premotor facilitation), and reappearance of primitive grasp reflex. Motor learning is impaired.",
+      "keyConcept": "Area 6 lesion: apraxia, spasticity (UMN release signs), reappearance of primitive reflexes.",
+      "modelAnswer": "Apraxia (inability to perform coordinated voluntary movements despite intact motor and sensory systems), spasticity of muscles (due to loss of premotor area inhibition on area 4), and reappearance of primitive reflexes like the grasp reflex."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q585",
+      "type": "essay",
+      "lecture": 1,
+      "text": "What are the borders of the open medulla?",
+      "explanation": "The open medulla has the following borders: base = the medullary stria ( fibers crossing to cerebellum), apex = continuous with the cerebral aqueduct above and central canal below, floor = hypoglossal trigone, vagal trigone, and vestibular area.",
+      "keyConcept": "Open medulla borders: base = stria; apex = aqueduct/canal; floor = hypoglossal/vagal/vestibular trigones.",
+      "modelAnswer": "Base: medullary stria (transverse fibers crossing to cerebellum). Apex: continuous superiorly with cerebral aqueduct and inferiorly with central canal. Floor: hypoglossal trigone (overlies hypoglossal nucleus), vagal trigone (overlies dorsal vagal nucleus), and vestibular area (vestibular nuclei)."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q588",
+      "type": "essay",
+      "lecture": 1,
+      "text": "What does fracture of anterior cranial fossa cause?",
+      "explanation": "Anterior cranial fossa fractures typically cause CSF rhinorrhea (cerebrospinal fluid leaking through nose), orbital hemorrhage, and subconjunctival ecchymosis (blood tracking into the orbit and around eyes).",
+      "keyConcept": "Anterior cranial fossa fracture: CSF rhinorrhea, orbital hemorrhage, subconjunctival hemorrhage.",
+      "modelAnswer": "Cerebrospinal fluid rhinorrhea (CSF leak from nose due to meningeal tear), hemorrhage into the orbital cavity causing orbital ecchymosis ('raccoon eyes'), and subconjunctival hemorrhage. May also cause anosmia if olfactory nerves are damaged."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q589",
+      "type": "essay",
+      "lecture": 1,
+      "text": "List the 4 single sinuses.",
+      "explanation": "The four single (unpaired) dural venous sinuses are: superior sagittal sinus (in falx cerebri superiorly), inferior sagittal sinus (in falx cerebri inferiorly), straight sinus (confluence of falx and tentorium), and occipital sinus (in falx cerebelli).",
+      "keyConcept": "Single sinuses: superior sagittal, inferior sagittal, straight, occipital.",
+      "modelAnswer": "Superior sagittal sinus (in upper border of falx cerebri), inferior sagittal sinus (in lower border of falx cerebri), straight sinus (junction of falx cerebri and tentorium cerebelli), and occipital sinus (in falx cerebelli)."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q590",
+      "type": "essay",
+      "lecture": 1,
+      "text": "List the 6 paired sinuses.",
+      "explanation": "The six paired dural venous sinuses are: sphenoparietal, cavernous, superior petrosal, inferior petrosal, sigmoid, and transverse. These drain blood from the brain to the internal jugular vein via the sigmoid sinus.",
+      "keyConcept": "Paired sinuses: sphenoparietal, cavernous, superior/inferior petrosal, sigmoid, transverse.",
+      "modelAnswer": "Sphenoparietal sinus (along lesser wing of sphenoid), cavernous sinus (lateral to sella turcica), superior petrosal sinus (along petrous ridge), inferior petrosal sinus (below petrous ridge), sigmoid sinus (continuation to jugular bulb), and transverse sinus (in tentorium cerebelli)."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q592",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Mention the structures present inside the cavernous sinus.",
+      "explanation": "The cavernous sinus contains the internal carotid artery (with its sympathetic plexus) and several cranial nerves: oculomotor (III), trochlear (IV), ophthalmic division of trigeminal (V1), maxillary division (V2), and abducent (VI).",
+      "keyConcept": "Cavernous sinus contents: ICA, CN III, IV, V1, V2, VI. Important clinical relevance for cavernous sinus syndrome.",
+      "modelAnswer": "Oculomotor nerve (CN III), trochlear nerve (CN IV), ophthalmic nerve (CN V1), maxillary nerve (CN V2), abducent nerve (CN VI), and the internal carotid artery (with its surrounding sympathetic plexus). These structures run in the lateral wall (nerves) and center (ICA) of the sinus."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q593",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Mention 4 tributaries of the cavernous sinus",
+      "explanation": "The cavernous sinus receives blood from: superior ophthalmic vein (from orbit), inferior ophthalmic vein, central vein of retina, and superficial middle cerebral vein. These tributaries drain the orbit and cerebral surface.",
+      "keyConcept": "Cavernous sinus tributaries: superior/inferior ophthalmic veins, central retinal vein, superficial middle cerebral vein.",
+      "modelAnswer": "Superior ophthalmic vein (draining the orbit and face), inferior ophthalmic vein, central vein of retina, and superficial middle cerebral vein (draining the cerebral cortex)."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q594",
+      "type": "essay",
+      "lecture": 1,
+      "text": "What is the drainage of the cavernous sinus",
+      "explanation": "The cavernous sinus drains posteriorly via the superior petrosal sinus (to transverse-sigmoid sinus junction) and inferiorly via the inferior petrosal sinus (directly to internal jugular bulb).",
+      "keyConcept": "Cavernous sinus drainage: superior petrosal sinus → transverse-sigmoid; inferior petrosal sinus → internal jugular vein.",
+      "modelAnswer": "Superior petrosal sinus (drains to transverse-sigmoid sinus junction) and inferior petrosal sinus (drains directly to internal jugular bulb). These connections allow blood to drain from the cavernous sinus to the systemic circulation."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q595",
+      "type": "essay",
+      "lecture": 1,
+      "text": "What are the communications of the cavernous sinus?",
+      "explanation": "The cavernous sinus communicates with: the pterygoid venous plexus (via emissary veins through foramen ovale), the facial vein (via superior ophthalmic vein), and the opposite cavernous sinus (via intercavernous sinuses).",
+      "keyConcept": "Cavernous sinus communications: pterygoid plexus, facial vein (via ophthalmic), opposite cavernous sinus.",
+      "modelAnswer": "Pterygoid venous plexus via emissary vein passing through foramen ovale, facial vein via superior ophthalmic vein, and the opposite cavernous sinus via the intercavernous sinuses. These connections explain spread of facial infections to cavernous sinus."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q617",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Mention the communications of pterygoid plexus of veins",
+      "explanation": "The pterygoid plexus communicates with: the facial vein (via the deep facial vein), the cavernous sinus (via emissary veins through foramen ovale and spinosum), and the inferior ophthalmic vein (via a vein through the inferior orbital fissure).",
+      "keyConcept": "Pterygoid plexus: communicates with facial vein, cavernous sinus, inferior ophthalmic vein.",
+      "modelAnswer": "With facial vein via deep facial vein, with cavernous sinus via emissary veins, and with inferior ophthalmic vein via a vein that passes through the inferior orbital fissure. These connections allow spread of infection."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q655",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "To do lumbar puncture in an adult a needle is introduced",
+      "explanation": "In adults, lumbar puncture is performed at L3-L4 or L4-L5 interspace (below L2 where spinal cord terminates); the needle passes through skin, subcutaneous tissue, supraspinous ligament, interspinous ligament, ligamentum flavum, epidural space, dura, and arachnoid.",
+      "keyConcept": "Lumbar puncture anatomical levels",
+      "options": [
+        "Below or above tip of 4th lumbar spine",
+        "Below tip of 1st lumbar spine",
+        "Below tip of 2nd lumbar spine",
+        "Below tip of thoracic 12 spine",
+        "None of the above"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q664",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which of the following veins end in cavernous sinus:",
+      "explanation": "The superficial middle cerebral vein drains into the cavernous sinus; superior and inferior cerebral veins drain into superior sagittal and transverse sinuses respectively.",
+      "keyConcept": "Cavernous sinus drainage",
+      "options": [
+        "Superior cerebral veins",
+        "Inferior cerebral veins",
+        "Deep middle cerebral vein",
+        "Superficial middle cerebral vein",
+        "None of the above"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q701",
+      "type": "mcq",
+      "lecture": 5,
+      "text": "The aqueduct of Sylvius connects which of the following ventricular structures?",
+      "explanation": "The aqueduct of Sylvius connects the third ventricle (above) to the fourth ventricle (below) in the midbrain. It passes through the cerebral peduncle.",
+      "keyConcept": "Cerebral aqueduct connects third and fourth ventricles, passing through the midbrain.",
+      "options": [
+        "Lateral ventricles to third ventricle",
+        "Third ventricle to fourth ventricle",
+        "Fourth ventricle to central canal",
+        "Third ventricle to lateral ventricles",
+        "Fourth ventricle to subarachnoid space"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q702",
+      "type": "mcq",
+      "lecture": 5,
+      "text": "Luschka connects which two structures?",
+      "explanation": "The foramina of Luschka (lateral apertures) connect the fourth ventricle to the subarachnoid space at the cerebellopontine angle, allowing CSF to exit the ventricular system.",
+      "keyConcept": "Luschka apertures are lateral openings of fourth ventricle to subarachnoid space.",
+      "options": [
+        "Fourth ventricle and third ventricle",
+        "Third ventricle and cerebral aqueduct",
+        "Central canal and fourth ventricle",
+        "Choroid plexus and lateral ventricle",
+        "Fourth ventricle and subarachnoid space"
+      ],
+      "correctIndex": 4
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q712",
+      "type": "mcq",
+      "lecture": 5,
+      "text": "Which structure ends in the internal jugular vein?",
+      "explanation": "The sigmoid sinus drains into the internal jugular vein (IJV) at the jugular foramen. The IJV carries cerebral venous drainage from the brain to the brachiocephalic vein.",
+      "keyConcept": "Sigmoid sinus terminates at the internal jugular vein, which exits via jugular foramen.",
+      "options": [
+        "Superior petrosal sinus",
+        "Cavernous sinus",
+        "Sigmoid sinus",
+        "Transverse sinus",
+        "Inferior petrosal sinus"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q718",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Which structure is NOT located in the lateral wall of the cavernous sinus?",
+      "explanation": "The abducens nerve (CN VI) runs through the center of the cavernous sinus, not in the lateral wall. CN III, IV, V1, and V2 are located in the lateral wall of the cavernous sinus.",
+      "keyConcept": "CN VI traverses through the cavernous sinus itself, unlike other cranial nerves in its lateral wall.",
+      "options": [
+        "Oculomotor nerve (CN III)",
+        "Trochlear nerve (CN IV)",
+        "Ophthalmic nerve (CN V1)",
+        "Maxillary nerve (CN V2)",
+        "Mandibular nerve (CN V3)"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q719",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Which venous sinus drains directly into the internal jugular vein (IJV)?",
+      "explanation": "The sigmoid sinus drains directly into the internal jugular vein (IJV) at the jugular bulb. The inferior petrosal sinus also drains into the IJV, but the sigmoid is the major drainage pathway.",
+      "keyConcept": "Sigmoid sinus is the primary venous sinus draining into the internal jugular vein.",
+      "options": [
+        "Superior sagittal sinus",
+        "Transverse sinus",
+        "Cavernous sinus",
+        "Sigmoid sinus",
+        "Inferior petrosal sinus"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q798",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "One layer of modified fibroblast:",
+      "explanation": "The pia mater consists of a single layer of modified fibroblasts (mesothelial cells) that closely follow the contours of the brain and spinal cord.",
+      "keyConcept": "Pia mater structure",
+      "options": [
+        "pia matter",
+        "dura matter",
+        "arachnoid matter",
+        "Purkinje cell"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q799",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Blood brain barrier formed of all the following except:",
+      "explanation": "The blood-brain barrier consists of thick basement membrane, non-fenestrated endothelium, and astrocyte foot processes; ependymal cells form the CSF barrier, not BBB.",
+      "keyConcept": "Blood-brain barrier components",
+      "options": [
+        "thick basement membrane",
+        "tight junction between ependymal cell",
+        "non fenestrated endothelium",
+        "end feed of astrocyte"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q801",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "The blood brain barrier is formed of all the following except:",
+      "explanation": "The blood-brain barrier consists of endothelial cells, basement membrane, and astrocyte foot processes; ependymal cells with tight junctions form the ventricular lining, not the BBB.",
+      "keyConcept": "BBB vs ependymal barrier",
+      "options": [
+        "endothelial cells of blood capillaries",
+        "basement membrane of the blood capillaries",
+        "foot processes of the astrocytes",
+        "ependymal cells that are connected by tight junctions"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q828",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which of the following is involved in the blood brain barrier?",
+      "explanation": "Astrocytes form the blood-brain barrier through their foot processes surrounding CNS capillaries, regulating molecular passage into the brain.",
+      "keyConcept": "Astrocytes in BBB",
+      "options": [
+        "Astrocytes.",
+        "Ependymal cells.",
+        "Oligodendrocytes.",
+        "Schwann cells."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q835",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Arachnoid barrier is the barrier between:",
+      "explanation": "The arachnoid barrier cell layer separates extracerebral capillaries from the subarachnoid space, contributing to the blood-CSF barrier.",
+      "keyConcept": "Arachnoid barrier function",
+      "options": [
+        "extracerebral capillaries and subarachnoid space.",
+        "blood and CSF.",
+        "blood and brain cells.",
+        "subarachnoid space and CSF."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q836",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Blood brain barrier is formed of tight junctions between:",
+      "explanation": "The blood-brain barrier uses tight junctions between non-fenestrated (continuous) capillary endothelial cells, unlike fenestrated endothelium elsewhere.",
+      "keyConcept": "BBB tight junctions",
+      "options": [
+        "fenestrated endothelium.",
+        "end feet of astrocytes.",
+        "non fenestrated endothelium.",
+        "Border cells."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q837",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Border cells can be found in:",
+      "explanation": "Border cells (meningothelial cells) are found in the arachnoid mater, forming a continuous layer adjacent to the dura.",
+      "keyConcept": "Border cell location",
+      "options": [
+        "pia matter.",
+        "arachnoid matter.",
+        "dura matter.",
+        "pons."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q838",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Pia matter is formed of:",
+      "explanation": "Pia mater is formed of modified fibroblasts (mesothelial cells), a single layer that closely invests the brain and spinal cord surface.",
+      "keyConcept": "Pia mater composition",
+      "options": [
+        "simple squamous epithelium.",
+        "simple columnar epithelium.",
+        "simple columnar ciliated epithelium.",
+        "modified fibroblasts."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q856",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "All of the following are constituents of the lateral wall of the cavernous sinus except:",
+      "explanation": "The mandibular nerve (V3) runs in the lateral wall of the cavernous sinus floor, not the lateral wall; oculomotor, trochlear, V1, and V2 are in the lateral wall.",
+      "keyConcept": "Cavernous sinus contents",
+      "options": [
+        "Oculomotor nerve",
+        "Trochlear nerve",
+        "Ophthalmic nerve",
+        "Maxillary nerve",
+        "Mandibular nerve"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q908",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Complete: Dura",
+      "explanation": "The dura mater and arachnoid mater (the meninges) end opposite the S2 vertebra, forming the sacral dural sac.",
+      "keyConcept": "Dura mater termination",
+      "modelAnswer": "mater and arachnoid mater end opposite which vertebrae? S2"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q917",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Deep communications of anterior facial vein:",
+      "explanation": "The anterior facial vein communicates deeply with the superior ophthalmic vein (to cavernous sinus) and deep facial vein (to pterygoid plexus).",
+      "keyConcept": "Anterior facial vein connections",
+      "modelAnswer": "To superior ophthalmic vein (→ cavernous sinus) and to deep facial vein (→ pterygoid venous plexus → cavernous sinus via emissary veins)."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q918",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Dangerous area of face:",
+      "explanation": "The dangerous area of the face (midline triangle including upper lip and nose) connects via angular/emissary veins to the cavernous sinus.",
+      "keyConcept": "Dangerous area face",
+      "modelAnswer": "Triangle including upper lip, nose, medial angles of eye. Infection can spread to cavernous sinus causing thrombosis."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q956",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Complete: Head",
+      "explanation": "The caudate nucleus has three parts: the head bulges into the lateral ventricle's anterior horn, the body forms part of the floor, and the tail runs along the roof of the inferior horn.",
+      "keyConcept": "Caudate nucleus anatomy: head in anterior horn, body in floor, tail in inferior horn roof.",
+      "modelAnswer": "of caudate bulges into anterior horn of lateral ventricle; body lies in floor of body of lateral ventricle; tail lies in roof of inferior horn of lateral ventricle."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q982",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Nerve supply of dura:",
+      "explanation": "The dura mater receives sensory innervation differently in each fossa: anterior fossa from anterior ethmoidal and maxillary nerves, middle fossa from maxillary and mandibular divisions, posterior fossa from meningeal branches of CN X, XII and C1-3.",
+      "keyConcept": "Dura innervation: anterior (V1,V2), middle (V2,V3), posterior (CN 10,12, C1-3).",
+      "modelAnswer": "Anterior fossa: anterior ethmoidal + maxillary; Middle fossa: maxillary + mandibular; Posterior fossa: meningeal branches of 10,12 and recurrent branches of C1-3."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q983",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Single sinuses:",
+      "explanation": "The single (unpaired) dural venous sinuses include the superior sagittal, inferior sagittal, straight, and occipital sinuses, each lying in specific dural folds or along bone margins.",
+      "keyConcept": "Single sinuses: superior sagittal, inferior sagittal, straight, occipital.",
+      "modelAnswer": "Superior sagittal, inferior sagittal, straight, occipital."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q986",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Structures inside cavernous sinus:",
+      "explanation": "Within the cavernous sinus run the oculomotor, trochlear, ophthalmic division of trigeminal, maxillary division of trigeminal, and abducent nerves, along with the internal carotid artery.",
+      "keyConcept": "Cavernous sinus contents: CN 3,4,5V1,5V2,6, and internal carotid artery.",
+      "modelAnswer": "Oculomotor, trochlear, ophthalmic, maxillary, abducent nerves; ICA."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q987",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Tributaries of cavernous sinus:",
+      "explanation": "The cavernous sinus receives blood from the superior and inferior ophthalmic veins (connecting with facial venous drainage), the central retinal vein, and the superficial middle cerebral vein.",
+      "keyConcept": "Cavernous tributaries: superior/inferior ophthalmic, central retinal, superficial middle cerebral veins.",
+      "modelAnswer": "Superior ophthalmic, inferior ophthalmic, central retinal, superficial middle cerebral."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q988",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Drainage of cavernous sinus:",
+      "explanation": "The cavernous sinus drains posteriorly via the superior petrosal sinus (to sigmoid sinus) and inferior petrosal sinus (to jugular bulb), providing outflow from the cranial venous system.",
+      "keyConcept": "Cavernous sinus drains via superior and inferior petrosal sinuses.",
+      "modelAnswer": "Superior and inferior petrosal sinuses."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q989",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Communications of cavernous sinus:",
+      "explanation": "The cavernous sinus communicates with the pterygoid plexus via emissary veins through the foramen ovale, with the facial vein via the superior ophthalmic vein, and with the opposite cavernous sinus via the intercavernous sinuses.",
+      "keyConcept": "Cavernous communications: pterygoid plexus, facial vein, opposite cavernous sinus.",
+      "modelAnswer": "Pterygoid plexus via emissary vein; Facial vein via superior ophthalmic; Opposite side via intercavernous sinuses."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1011",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Communications of pterygoid plexus:",
+      "explanation": "The pterygoid plexus communicates with the facial vein via the deep facial vein, with the cavernous sinus via emissary veins through foramen ovale and spinosum, and with the inferior ophthalmic vein.",
+      "keyConcept": "Pterygoid plexus: facial vein, cavernous sinus, inferior ophthalmic vein connections.",
+      "modelAnswer": "Facial vein (deep facial), cavernous sinus (emissary veins), inferior ophthalmic vein."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1064",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Cavernous sinus thrombosis from a \"danger area\" facial infection spreads via the:",
+      "explanation": "Facial vein to superior ophthalmic vein to cavernous sinus.",
+      "keyConcept": "Cavernous sinus thrombosis from facial infection: danger area around nose/upper lip.",
+      "options": [
+        "Retromandibular vein",
+        "Facial artery",
+        "Inferior petrosal sinus to the IJV",
+        "Great cerebral vein",
+        "Superior ophthalmic vein"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1069",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Posterior choroidal artery is a branch from ……… artery.",
+      "explanation": "The posterior choroidal artery is a branch of the posterior cerebral artery that supplies the choroid plexus of the lateral and third ventricles.",
+      "keyConcept": "Posterior choroidal artery: branch of posterior cerebral artery.",
+      "options": [
+        "Internal carotid",
+        "Basilar",
+        "Anterior cerebral",
+        "Posterior cerebral"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1072",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which of the following is mesodermal in origin?",
+      "explanation": "Dura mater is derived from mesoderm (specifically the paraxial mesoderm surrounding the neural tube), while arachnoid and pia mater are ectodermal derivatives.",
+      "keyConcept": "Dura mater: mesodermal origin.",
+      "options": [
+        "Spinal cord.",
+        "Autonomic ganglia.",
+        "Dura mater.",
+        "Arachnoid mater."
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1079",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The cavity of the mesencephalon is:",
+      "explanation": "The cavity of the mesencephalon is the cerebral aqueduct (of Sylvius), which connects the third and fourth ventricles.",
+      "keyConcept": "Mesencephalon cavity: cerebral aqueduct.",
+      "options": [
+        "Lateral ventricle.",
+        "Third ventricle.",
+        "Cerebral aqueduct.",
+        "Fourth ventricle."
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1098",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "It is not a must to test the ……… nerve in case of cavernous sinus thrombosis.",
+      "explanation": "The facial nerve (CN VII) does not pass through the cavernous sinus; it exits via stylomastoid foramen, so it wouldn't be affected in cavernous sinus thrombosis.",
+      "keyConcept": "Facial nerve not in cavernous sinus, so not tested in thrombosis.",
+      "options": [
+        "Oculomotor",
+        "Trochlear",
+        "Abducent",
+        "Facial"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1099",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The cavernous sinus is drained to the transverse sinus by ……… sinus.",
+      "explanation": "The superior petrosal sinus drains the cavernous sinus into the transverse sinus, running along the petrous ridge at the attachment of tentorium cerebelli.",
+      "keyConcept": "Cavernous sinus drains to transverse sinus via superior petrosal sinus.",
+      "options": [
+        "Sphenoparietal",
+        "Superior petrosal",
+        "Inferior petrosal",
+        "Intercavernous"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1100",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Choose the wrong statement about the straight sinus:",
+      "explanation": "The straight sinus deviates to the LEFT to continue as the left transverse sinus (not right); the right transverse sinus typically continues from the superior sagittal sinus.",
+      "keyConcept": "Straight sinus deviates LEFT to become left transverse sinus.",
+      "options": [
+        "It is formed by union of inferior sagittal sinus and great cerebral vein.",
+        "Runs in the junction between falx cerebri and tentorium cerebelli.",
+        "Deviates to the right to continue as the right transverse sinus.",
+        "It is connected to the confluence of sinuses."
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q29",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Enumerate nuclei of oculomotor nerve & structures supplied by each nucleus.",
+      "explanation": "The superior petrosal sinus runs along the lesser wing of the sphenoid bone, connecting the cavernous sinus to the transverse sinus. It drains the eye and middle ear region.",
+      "keyConcept": "Superior petrosal sinus along lesser wing of sphenoid",
+      "modelAnswer": "NUCLEI OF OCULOMOTOR NERVE: (1) OCULOMOTOR NUCLEUS (SSE) → supplies superior rectus, inferior rectus, medial rectus, inferior oblique muscles; (2) EDINGER-WESTPHAL NUCLEUS (GVE) → parasympathetic to sphincter pupillae (pupil constriction) and ciliary muscle (accommodation); (3) Central caudal nucleus → coordinates function of both."
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q50",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The fibers of C1 that join the hypoglossal nerve supply all the following EXCEPT:",
+      "explanation": "C1 spinal nerve fibers run briefly with the hypoglossal nerve (CN XII) as a hitchhiker. They supply the meningeal branch to the dura mater of posterior cranial fossa, the nerves to thyrohyoid and geniohyoid, and contribute to the ansa cervicalis as the descending hypoglossi. However, the styloglossus muscle is supplied directly by the hypoglossal nerve (CN XII) proper, NOT by C1 fibers.",
+      "keyConcept": "C1 fibers via hypoglossal supply thyrohyoid, geniohyoid, and ansa cervicalis, but NOT styloglossus.",
+      "options": [
+        "Meningeal nerve.",
+        "Nerve to styloglossus.",
+        "Nerve to Thyrohyoid.",
+        "Nerve to Geniohyoid.",
+        "Descends hypoglossi."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q93",
+      "type": "mcq",
+      "lecture": 5,
+      "text": "Which of the following cranial nerves passes through the cavernous sinus?",
+      "explanation": "CN III, IV, V1, V2, and VI all pass through the cavernous sinus. CN III and IV are in the lateral wall with V1 and V2; CN VI runs through the sinus itself next to the internal carotid artery.",
+      "keyConcept": "Cavernous sinus contains CN III, IV, V1, V2, VI and the internal carotid artery.",
+      "options": [
+        "Abducent nerve",
+        "Oculomotor nerve",
+        "Trochlear nerve",
+        "Optic nerve",
+        "Olfactory nerve"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q2",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which of the following is a recess of the fourth ventricle?",
+      "explanation": "The lateral recess is the only true recess of the fourth ventricle. It extends laterally beneath the superior cerebellar peduncle and opens at the foramen of Luschka into the subarachnoid space.",
+      "keyConcept": "Lateral recess is a recess of fourth ventricle",
+      "options": [
+        "Lateral recess.",
+        "Pineal recess.",
+        "Suprapineal recess.",
+        "Optic recess.",
+        "Infundibular recess."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q4",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The superior angle of the fourth ventricle leads to:",
+      "explanation": "The superior angle of the fourth ventricle is continuous with the cerebral aqueduct (aqueduct of Sylvius), which connects the third and fourth ventricles.",
+      "keyConcept": "Superior 4th ventricle angle leads to cerebral aqueduct",
+      "options": [
+        "Optic recess.",
+        "Cerebral acquiduct.",
+        "Lateral recess.",
+        "Central canal.",
+        "Foramen of Luschka."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q29",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The fourth ventricle is connected to the third ventricle by:",
+      "explanation": "The cerebral aqueduct of Sylvius is the narrow channel that passes through the midbrain and connects the third ventricle anteriorly with the fourth ventricle posteriorly. It is flanked by the cerebral peduncles and is the most common site of obstruction in non-communicating hydrocephalus.",
+      "keyConcept": "Cerebral aqueduct connects 3rd ventricle (anterior) with 4th ventricle (posterior).",
+      "options": [
+        "Optic recess.",
+        "Cerebral aqueduct.",
+        "Lateral recess.",
+        "Central canal.",
+        "Foramen of Lushka."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q46",
+      "type": "essay",
+      "lecture": 1,
+      "text": "What are the borders of the back of pons?",
+      "explanation": "The posterior surface of the pons has: base = medullary stria (transverse pontine fibers entering the cerebellum), apex = continuous with cerebral aqueduct, floor = medial eminence, facial colliculus (facial nerve wrapping around abducent nucleus), and vestibular area.",
+      "keyConcept": "Posterior pons: stria at base, aqueduct at apex, floor has eminence, facial colliculus, vestibular area.",
+      "modelAnswer": "Base: medullary stria ( transverse pontine fibers). Apex: continuous with cerebral aqueduct of Sylvius. Floor: medial eminence (contains corticospinal fibers), facial colliculus ( CN VI nucleus with CN VII fibers looping around it), and vestibular area (vestibular nuclei)."
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q48",
+      "type": "essay",
+      "lecture": 1,
+      "text": "What forms the roof of the fourth ventricle?",
+      "explanation": "The roof of the fourth ventricle is formed superiorly by the superior cerebellar peduncles and superior medullary velum (containing the trochlear decussation), and inferiorly by the inferior medullary velum and the choroid plexus.",
+      "keyConcept": "Fourth ventricle roof: superior = superior cerebellar peduncle + superior medullary velum; inferior = inferior medullary velum.",
+      "modelAnswer": "Superiorly: superior cerebellar peduncle and superior medullary velum (form the upper roof). Inferiorly: inferior medullary velum (forms the lower roof). The choroid plexus of the fourth ventricle lies in the lower part of the roof."
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q51",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Where do choroid plexus of the fourth ventricle lie?",
+      "explanation": "The choroid plexus of the fourth ventricle lies in the lower part of the roof (inferiorly), protruding through the lateral recesses. It is formed by the tela choroidea and is continuous with the choroid plexus of the lateral ventricles via the foramen of Luschka.",
+      "keyConcept": "Fourth ventricle choroid plexus: lower part of roof, in tela choroidea of inferior roof.",
+      "modelAnswer": "Lower (inferior) part of the roof of the fourth ventricle. The choroid plexus is formed by the tela choroidea (pia mater + ependyma) and protrudes through the lateral apertures (foramina of Luschka)."
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q58",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Regarding the fourth ventricle",
+      "explanation": "The fourth ventricle is the cavity of the hindbrain (rhombencephalon), communicates with third ventricle above and subarachnoid space below via median/lateral apertures, and has a roof and floor.",
+      "keyConcept": "Fourth ventricle features",
+      "options": [
+        "Is the cavity of hind brain",
+        "Communicates with subarachnoid space",
+        "Has a large median operture",
+        "All of the above",
+        "None of the above"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q66",
+      "type": "mcq",
+      "lecture": 5,
+      "text": "Which part of the fourth ventricle contains the choroid plexus?",
+      "explanation": "The choroid plexus in the fourth ventricle is located in the roof (posterior/inferior border), specifically along the tela choroidea and in the lateral recesses near the foramina of Luschka.",
+      "keyConcept": "Fourth ventricle choroid plexus is found in the tela choroidea of the ventricular roof.",
+      "options": [
+        "Floor of the fourth ventricle",
+        "Lateral recess",
+        "Central canal",
+        "Cerebral aqueduct",
+        "Roof of the fourth ventricle"
+      ],
+      "correctIndex": 4
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q67",
+      "type": "mcq",
+      "lecture": 5,
+      "text": "Which of the following structures connects the fourth ventricle to the subarachnoid space?",
+      "explanation": "The foramen of Magendie is the median aperture connecting the fourth ventricle to the subarachnoid space (cisterna magna), allowing CSF flow from the ventricle to the basal cisterns.",
+      "keyConcept": "Median aperture (Magendie) connects fourth ventricle to subarachnoid space at the cisterna magna.",
+      "options": [
+        "Cerebral aqueduct",
+        "Interventricular foramen (of Monro)",
+        "Foramen magnum",
+        "Central canal",
+        "Foramen of Magendie"
+      ],
+      "correctIndex": 4
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q68",
+      "type": "mcq",
+      "lecture": 5,
+      "text": "Which of the following structures forms the roof of the fourth ventricle?",
+      "explanation": "The roof of the fourth ventricle consists of the superior cerebellar peduncles laterally and the tela choroidea with choroid plexus inferiorly. The floor is formed by the pons and upper medulla.",
+      "keyConcept": "Fourth ventricle roof comprises cerebellar peduncles and tela choroidea with choroid plexus.",
+      "options": [
+        "Cerebral aqueduct",
+        "Superior colliculus",
+        "Superior cerebellar peduncle",
+        "Pons",
+        "Medulla"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q71",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "CSF produced in the fourth ventricle flows into which subarachnoid space via its three foramina?",
+      "explanation": "CSF exits the fourth ventricle through the foramina of Luschka (lateral) and Magendie (median) into the subarachnoid space surrounding the brainstem and cerebellum (cisterna magna).",
+      "keyConcept": "Fourth ventricle CSF flows through Luschka and Magendie apertures into the subarachnoid space.",
+      "options": [
+        "Subarachnoid space over the cerebral hemispheres",
+        "Interpeduncular cistern",
+        "Quadrigeminal cistern",
+        "Pontine cistern",
+        "Cisterna magna"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q79",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The choroid plexus of the fourth ventricle is located in its:",
+      "explanation": "The choroid plexus of the fourth ventricle is located in the inferior roof (posterior medullary velum), not the floor or superior roof.",
+      "keyConcept": "Fourth ventricle choroid plexus",
+      "options": [
+        "Superior roof",
+        "Inferior roof",
+        "Lateral wall",
+        "Floor",
+        "Lateral recess only"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q84",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Borders of back of pons:",
+      "explanation": "The posterior surface of the pons is bounded by the medullary striae at its base (marking the pontomedullary junction), the cerebral aqueduct superiorly at the apex, and the floor consisting of the medial eminence, facial colliculus, and vestibular area.",
+      "keyConcept": "Posterior pons bounded by: medullary striae (base), cerebral aqueduct (apex), medial eminence/facial colliculus/vestibular area (floor).",
+      "modelAnswer": "Base: medullary striae; Apex: cerebral aqueduct; Floor: medial eminence, facial colliculus, vestibular area."
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q86",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Roof of fourth ventricle:",
+      "explanation": "The fourth ventricle roof consists of two vela: the superior medullary velum (connecting the superior cerebellar peduncles) forms the upper roof, while the inferior medullary velum (with choroid plexus) forms the lower roof.",
+      "keyConcept": "Fourth ventricle roof: superior and inferior medullary vela.",
+      "modelAnswer": "Superiorly: SCP and superior medullary velum; Inferiorly: inferior medullary velum."
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q94",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The fourth ventricle communicates with the subarachnoid space through the median aperture, the:",
+      "explanation": "The median aperture (foramen of Magendie) drains CSF into the cisterna magna.",
+      "keyConcept": "Fourth ventricle communicates with subarachnoid space via lateral apertures of Luschka and median aperture of Magendie.",
+      "options": [
+        "Interventricular foramen of Monro",
+        "Foramen of Magendie",
+        "Foramen of Luschka",
+        "Foramen of Winslow",
+        "Foramen spinosum"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch4-anatomy-q2",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which of the following arteries supplies the pituitary gland?",
+      "explanation": "The cavernous sinus contains the internal carotid artery, not the maxillary artery. The maxillary artery is an extracranial branch of the external carotid artery.",
+      "keyConcept": "Maxillary artery not in cavernous sinus",
+      "options": [
+        "Common carotid artery.",
+        "Internal carotid artery.",
+        "External carotid artery.",
+        "Subclavian artery.",
+        "Vertebral artery."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch4-anatomy-q15",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which of the following surfaces (aspects) of thalamus is related to posterior limb of internal capsule?",
+      "explanation": "The lateral surface of the thalamus is related to the posterior limb of the internal capsule. The internal capsule carries corticospinal, corticopontine, thalamocortical, and corticothalamic fibers between the thalamus and the cerebral cortex. The superior thalamic surface relates to the body of lateral ventricle.",
+      "keyConcept": "Lateral surface of thalamus is related to posterior limb of internal capsule (contains thalamocortical and corticospinal fibers).",
+      "options": [
+        "Superior surface.",
+        "Inferior surface.",
+        "Medial surface.",
+        "Lateral surface.",
+        "Posterior surface."
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch5-anatomy-q25",
+      "type": "essay",
+      "lecture": 1,
+      "text": "What are the veins that drain the cerebellum?",
+      "explanation": "The cerebellum is drained by superior cerebellar veins (emptying into the superior petrosal sinus or straight sinus) and inferior cerebellar veins (emptying into the transverse sinus or jugular bulb).",
+      "keyConcept": "Cerebellar veins: superior (to superior petrosal sinus/straight sinus) and inferior (to transverse sinus/jugular).",
+      "modelAnswer": "Superior cerebellar veins (drain to superior petrosal sinus or straight sinus) and inferior cerebellar veins (drain to transverse sinus or jugular bulb)."
+    },
+    {
+      "id": "mcns2-ch5-anatomy-q47",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Veins draining cerebellum:",
+      "explanation": "Cerebellar venous drainage is divided into superior cerebellar veins (draining to straight sinus) and inferior cerebellar veins (draining to transverse and sigmoid sinuses).",
+      "keyConcept": "Cerebellar veins drain to straight, transverse, and sigmoid sinuses.",
+      "modelAnswer": "Superior cerebellar veins and inferior cerebellar veins."
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q3",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Leptomeninges refer to the:",
+      "explanation": "The leptomeninges consist of the pia mater and arachnoid mater. The dura mater is the outer meningeal layer and is not part of the leptomeninges.",
+      "keyConcept": "Leptomeninges = pia + arachnoid mater",
+      "options": [
+        "Dura mater.",
+        "Dura mater and arachnoid mater.",
+        "Pia and arachnoid mater.",
+        "Superficial glial membrane.",
+        "Periosteum."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q4",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The spinal cord is anchored to the dura mater by the:",
+      "explanation": "The spinal cord is anchored to the dura mater by the denticulate ligaments (21 pairs), which are extensions of the pia mater located between the dorsal and ventral nerve roots.",
+      "keyConcept": "Denticulate ligaments anchor the spinal cord to the dura",
+      "options": [
+        "Coccygeal ligament.",
+        "Ligamentum flavum.",
+        "Anterior longitudinal ligament.",
+        "Denticulate ligaments.",
+        "Cauda equina."
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q5",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Mention the site of termination of spinal cord meninges.",
+      "explanation": "The spinal cord meninges have distinct termination sites: the dura mater ends at the S2 vertebra (forming the dural sac terminus), the arachnoid mater also ends at S2, while the pia mater continues as the filum terminale (a fibrous band) that attaches to the dorsum of the coccyx. Below S2 is the lumbar cistern containing CSF but no spinal cord.",
+      "keyConcept": "Meninges termination: Dura/Arachnoid at S2, Pia continues as filum terminale to coccyx",
+      "modelAnswer": "Spinal cord meninges terminate at: Dura mater ends at S2 vertebra; Arachnoid mater ends at S2 vertebra; Pia mater continues as filum terminale and ends at the dorsum of the coccyx (attached to periosteum of coccyx)."
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q6",
+      "type": "matching",
+      "lecture": 1,
+      "text": "For each one of the boundaries of the 4th ventricle in the left column, choose the appropriate description in the right column:",
+      "explanation": "This matching tests knowledge of fourth ventricle boundaries: Superior medullary velum forms the superior roof; facial colliculus is in the pontine floor; inferior cerebellar peduncle forms lateral boundary; choroid plexus forms inferior roof; inferior fovea is in the medial floor.",
+      "keyConcept": "Superior medullary velum forms superior roof of 4th ventricle",
+      "pairs": [
+        {
+          "premise": "29) Superior part of roof",
+          "target": "d. Superior medullary velum."
+        },
+        {
+          "premise": "30) Pontine part of floor",
+          "target": "e. Facial colliculus."
+        },
+        {
+          "premise": "31) Lateral boundary",
+          "target": "c. Inferior cerebellar peduncle."
+        },
+        {
+          "premise": "32) Inferior part of roof",
+          "target": "a. Choroid plexus of 4th ventricle."
+        },
+        {
+          "premise": "33) Medial part of floor",
+          "target": "b. inferior fovea."
+        }
+      ]
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q11",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which of the following foramina gives passage to emissary vein of the superior sagittal sinus?",
+      "explanation": "The cavernous sinus is related laterally to the temporal lobe of the brain and the greater wing of the sphenoid bone. Medially relations include the internal carotid artery and the pituitary gland.",
+      "keyConcept": "Cavernous sinus lateral relation is temporal lobe",
+      "options": [
+        "Foramen caecum.",
+        "Carotid canal.",
+        "Foramen lacreum.",
+        "Mastoid foramen.",
+        "Condylar canal."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q12",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "As regards dural venous sinuses, choose the INCORRECT matching:",
+      "explanation": "The sigmoid sinus runs in a groove between the temporal and occipital bones. The cavernous sinus is correctly described as being in the middle cranial fossa, between the meningeal and endosteal dural layers. The INCORRECT matching would be placing the sigmoid sinus in the cavernous location.",
+      "keyConcept": "Sigmoid sinus in groove, not in cavernous sinus location",
+      "options": [
+        "Inferior petrosal sinus - considered as an emissary vein.",
+        "Superior petrosal sinus - runs in free margin of tentorium cerebelli.",
+        "Straight sinus - lies at line of attachment of falx cerebri & tentorium cerebelli.",
+        "Sigmoid sinus - ends by forming internal jugular vein.",
+        "Transverse sinus - begins at internal occipital protuberance."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q13",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Dural venous sinuses have all the following characters Except:",
+      "explanation": "Dural venous sinuses are endothelial-lined channels located between two layers of dura mater that drain blood from the brain, meninges, and skull bones. They communicate with extracranial veins via emissary veins and contain arachnoid villi for CSF absorption. However, they do NOT contain valves, unlike systemic veins. This valveless anatomy allows bidirectional blood flow and permits the spread of infection from extracranial sources into the intracranial venous system.",
+      "keyConcept": "Dural venous sinuses are valveless, allowing bidirectional blood flow and potential spread of infection.",
+      "options": [
+        "They are lined by endothelium.",
+        "They are rich in valves.",
+        "They drain brain & meninges.",
+        "They are connected to extracranial veins.",
+        "They lie between 2 dural layers."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q14",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "As regards superior sagittal sinus, choose the INCORRECT statement:",
+      "explanation": "The superior sagittal sinus begins at the foramen caecum and runs along the attached superior margin of the falx cerebri to drain into the confluence of sinuses. It receives superior cerebral veins and drains CSF through arachnoid granulations. However, it does NOT usually end as the left transverse sinus; instead, the superior sagittal sinus typically drains into the right transverse sinus, although there is anatomical variability.",
+      "keyConcept": "Superior sagittal sinus typically drains into the right transverse sinus, not the left.",
+      "options": [
+        "Its anterior end communicates with veins of nose.",
+        "Usually it ends by forming left transverse sinus.",
+        "Its posterior end is called confluence of sinuses.",
+        "It receives superior cerebral veins.",
+        "It helps in drainage of CSF through arachnoid villi & granulationsn."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q15",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Enumerate paired & single dural venous sinuses.",
+      "explanation": "Dural venous sinuses can be classified as paired or unpaired. Paired sinuses occur bilaterally and include most major sinuses, while unpaired sinuses are single midline structures formed at specific dural junctions.",
+      "keyConcept": "Paired: cavernous, transverse, sigmoid, superior/inferior petrosal, sphenoparietal, occipital. Unpaired: superior sagittal, inferior sagittal, straight.",
+      "modelAnswer": "Paired dural venous sinuses: cavernous, transverse, sigmoid, superior petrosal, inferior petrosal, sphenoparietal, and occipital sinuses. Single (unpaired) dural venous sinuses: superior sagittal, inferior sagittal, and straight sinuses."
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q16",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Describe superior sagittal sinus.",
+      "explanation": "The superior sagittal sinus is the largest unpaired dural venous sinus, running along the superior margin of the falx cerebri. It begins at the foramen caecum, receives superior cerebral veins and arachnoid granulations for CSF drainage, and drains posteroinferiorly into the confluence of sinuses at the internal occipital protuberance.",
+      "keyConcept": "Superior sagittal sinus = largest unpaired sinus; runs in falx cerebri; receives superior cerebral veins and CSF via arachnoid granulations.",
+      "modelAnswer": "The superior sagittal sinus begins at the foramen caecum and runs along the superior attached margin of the falx cerebri. It receives superior cerebral veins, diploic veins, and emissary veins from the nasal cavity. Its endothelium contains arachnoid granulations that absorb CSF into the venous system. It drains posteroinferiorly into the confluence of sinuses (torcular Herophili), usually emptying predominantly into the right transverse sinus."
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q17",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Enumerate emissary veins connected to Superior sagittal sinus, Cavernous sinus & Sigmoid sinus.",
+      "explanation": "Emissary veins are valveless veins that connect intracranial dural venous sinuses with extracranial veins, allowing potential routes for infection spread and serving as alternative venous drainage pathways.",
+      "keyConcept": "Emissary veins connect intracranial sinuses to extracranial veins through specific cranial foramina.",
+      "modelAnswer": "Emissary veins connected to the superior sagittal sinus: parietal emissary vein (through parietal foramen), mastoid emissary vein (through mastoid foramen), and emissary vein through foramen caecum. Emissary veins of cavernous sinus: through foramen lacerum, foramen ovale, and emissary sphenoidal foramen (foramen of Vesalius). Emissary vein of sigmoid sinus: mastoid emissary vein through mastoid foramen, posterior condylar emissary vein through condylar canal."
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q18",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Blockage of CSF flow between the 3rd & 4th ventricles involves the:",
+      "explanation": "The cerebral aqueduct of Sylvius is a narrow channel穿过 midbrain connecting the 3rd and 4th ventricles. Blockage of CSF flow between these ventricles occurs at the aqueduct, causing aqueductal stenosis and non-communicating hydrocephalus. The interventricular foramen connects lateral to 3rd ventricle; foramina of Magendie and Luschka connect 4th ventricle to subarachnoid space.",
+      "keyConcept": "Cerebral aqueduct of Sylvius connects 3rd and 4th ventricles; blockage causes non-communicating hydrocephalus.",
+      "options": [
+        "Interventricular foramen.",
+        "Cerebral aqueduct.",
+        "Foramen of Magendi.",
+        "Foramen of Luschka.",
+        "Central canal."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q21",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "One of the following structures does not contribute to floor of 3rd Ventricle:",
+      "explanation": "The floor of the third ventricle (from anterior to posterior) is formed by the optic chiasma, tuber cinereum, mammillary bodies, and posterior perforated substance. The lamina terminalis forms the AN anterior wall of the third ventricle, not the floor. The optic chiasma lies just above the pituitary stalk at the anterior aspect of the ventricle.",
+      "keyConcept": "Lamina terminalis forms anterior wall of 3rd ventricle, NOT the floor. Floor = optic chiasma, tuber cinereum, mammillary bodies.",
+      "options": [
+        "Lamina terminalis.",
+        "Optic chiasma.",
+        "Mamillary bodies.",
+        "Tuber cinerium.",
+        "Posterior perforated substance."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q22",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The cerebral aqueduct of Sylvius connects:",
+      "explanation": "The cerebral aqueduct of Sylvius is a narrow channel passing through the midbrain that connects the third ventricle (anteriorly, at the level of the midbrain) with the fourth ventricle (posteriorly, at the pontomedullary junction). It is surrounded by the periaqueductal gray matter.",
+      "keyConcept": "Cerebral aqueduct of Sylvius connects the third and fourth ventricles, surrounded by periaqueductal gray matter.",
+      "options": [
+        "Third and fourth ventricles.",
+        "Lateral and 3rd ventricles.",
+        "Lateral and 4 ventricles.",
+        "Fourth ventricle and subarachnoid space.",
+        "Fourth ventricle and central canal."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q23",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "A structure that forms the anterior wall of third ventricle:",
+      "explanation": "The anterior wall of the third ventricle is formed by the lamina terminalis (extends from the optic chiasma to the anterior commissure), the anterior column of the fornix, and the anterior commissure. The optic chiasma forms the inferiormost part of the anterior boundary. The pineal body forms the posterior wall.",
+      "keyConcept": "Anterior wall of 3rd ventricle = lamina terminalis + anterior column of fornix + anterior commissure.",
+      "options": [
+        "Thalamus.",
+        "Optic chiasma.",
+        "Mammillary body.",
+        "Fornix.",
+        "Pineal body."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q25",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "As regards boundaries of 3rd ventricle, choose INCORRECT matching:",
+      "explanation": "The third ventricle has the following boundaries: anterior wall = lamina terminalis; posterior wall = pineal body and posterior commissure; medial wall = thalamus (lateral wall) and hypothalamus; roof = choroid plexus and fornix body; floor = optic chiasma, tuber cinereum, mammillary bodies, posterior perforated substance. The medial wall is formed by the THALAMUS, not hypothalamus.",
+      "keyConcept": "Incorrect matching: medial wall of 3rd ventricle = thalamus, NOT hypothalamus. Floor = optic chiasma.",
+      "options": [
+        "Posterior wall - pineal body.",
+        "Anterior wall - lamina terminalis.",
+        "Medial wall - hypothalamus.",
+        "Roof - choroid plexus.",
+        "Floor - optic chiasma."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q28",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Enumerate communications of 3rd ventricle.",
+      "explanation": "The third ventricle communicates anteriorly with the lateral ventricles through the interventricular foramina of Monro (one on each side), and posteriorly with the fourth ventricle through the cerebral aqueduct of Sylvius. These communications allow CSF to flow from the lateral ventricles through the third ventricle and into the fourth ventricle.",
+      "keyConcept": "3rd ventricle communications: lateral ventricles via interventricular foramina (anterior); 4th ventricle via cerebral aqueduct (posterior).",
+      "modelAnswer": "The third ventricle communicates with: (1) Lateral ventricles—anteriorly, via the interventricular foramina of Monro (each foramen is bounded anteriorly by the column of fornix and posteriorly by the anterior thalamic tubercle). (2) Fourth ventricle—posteriorly, via the cerebral aqueduct of Sylvius (a narrow channel through the midbrain)."
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q29",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Describe recesses of 3rd ventricle.",
+      "explanation": "The third ventricle contains several recesses that are outpouchings of its cavity lined by ependyma. These include the optic recess (anterior, above optic chiasma), the infundibular recess (extending into the pituitary stalk), the pineal recess (posterior, into the pineal body), and the suprapineal recess (above the pineal body). These recesses increase the surface area of the ventricular system.",
+      "keyConcept": "3rd ventricle recesses: optic, infundibular, pineal, and suprapineal recesses lined by ependyma.",
+      "modelAnswer": "The third ventricle has the following recesses: (1) Optic recess—triangular recess between the optic chiasma anteriorly and the lamina terminalis posteriorly. (2) Infundibular recess—extends inferiorly into the infundibulum (pituitary stalk). (3) Pineal recess—extends posteriorly into the pineal body. (4) Suprapineal recess—extends posteriorly above the pineal body, between the habenular commissure and the posterior commissure. These recesses are lined by ependyma and are important anatomical landmarks."
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q31",
+      "type": "fillblank",
+      "lecture": 1,
+      "text": "Complete: The head of caudate bulges into the anterior horn of lateral ventricle, body lies in the floor of body of lateral ventricle, tail lies in the roof of ___ horn of lateral ventricle",
+      "explanation": "The caudate nucleus follows the lateral ventricle: the head bulges into the anterior horn, the body forms part of the floor of the body of the lateral ventricle, and the tail runs along the roof of the inferior horn before ending in the amygdala.",
+      "keyConcept": "Caudate nucleus: head = anterior horn floor; body = lateral ventricle floor; tail = inferior horn roof.",
+      "blanks": [
+        "inferior"
+      ]
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q32",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Mention the tributaries of superior sagittal sinus.",
+      "explanation": "The superior sagittal sinus receives: superior cerebral veins (draining the cerebral convexity), diploic veins (from skull bones), and arachnoid granulations ( CSF reabsorption). It ends at the confluence of sinuses.",
+      "keyConcept": "Superior sagittal sinus tributaries: superior cerebral veins, diploic veins, arachnoid granulations.",
+      "modelAnswer": "Superior cerebral veins (from the lateral surface of cerebral hemispheres), diploic veins (from the skull tables), and arachnoid granulations and villi (for CSF reabsorption into the venous system)."
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q34",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Mention the recesses of third ventricle.",
+      "explanation": "The third ventricle has four recesses: optic recess (between optic chiasma and lamina terminalis), infundibular recess (into the pituitary stalk), pineal recess (into the pineal body), and suprapineal recess (above the pineal body).",
+      "keyConcept": "Third ventricle recesses and their locations",
+      "modelAnswer": "Optic recess\nInfundibular recess\nPineal recess\nSuprapineal recess"
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q36",
+      "type": "essay",
+      "lecture": 1,
+      "text": "How is the CSF formed?",
+      "explanation": "CSF is actively secreted by the choroid plexus epithelial cells in the lateral, third, and fourth ventricles, primarily via Na+/K+ ATPase-driven transport mechanisms producing approximately 500 mL daily.",
+      "keyConcept": "CSF formation by choroid plexus",
+      "modelAnswer": "By choroid plexus of ventricles"
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q37",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Mention the circulation of CSF",
+      "explanation": "CSF flows from lateral ventricles through interventricular foramina to third ventricle, then via cerebral aqueduct to fourth ventricle, exiting through median/lateral apertures into the subarachnoid space surrounding the brain and spinal cord.",
+      "keyConcept": "CSF circulation pathway through ventricles",
+      "modelAnswer": "Lateral ventricles > interventricular foramen>third ventricle > aqueduct of sylvius > fourth ventricle > Median foramen of magendie and two lateral foramen of lucshka > subarachnoid space"
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q38",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Mention the absorption of CSF",
+      "explanation": "Most CSF is absorbed through arachnoid villi projecting into dural venous sinuses, returning CSF to the bloodstream; a small amount is also absorbed perivascularly around penetrating brain vessels.",
+      "keyConcept": "CSF absorption via arachnoid villi",
+      "modelAnswer": "By arachnoid villi and granulations into dural venous sinuses\nA little amount is formed around cerebral vessels and from ependyma cells"
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q40",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Regarding cerebrospinal fluid (C.S.F.) all statements are true Except:",
+      "explanation": "CSF reaches the cisterna magna via the foramen of Magendie (fourth ventricle directly to subarachnoid space), NOT through the aqueduct of Sylvius (which connects third and fourth ventricles).",
+      "keyConcept": "CSF pathway to cisternamagna",
+      "options": [
+        "Is formed by choroid plexuses of ventricles",
+        "Helps in removal of metabolites",
+        "Finally reaches the blood stream",
+        "Reaches cisternamagna through the aqueduct of Sylvius",
+        "Is filtered through arachnoid granulations"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q41",
+      "type": "mcq",
+      "lecture": 5,
+      "text": "A patient presents with dilated lateral and third ventricles on brain imaging. Which structure is most likely obstructed?",
+      "explanation": "Obstructive hydrocephalus at the level of the foramen of Monro would cause dilation of the lateral and third ventricles but not the fourth ventricle (which would be normal size).",
+      "keyConcept": "Foramen of Monro obstruction causes dilation of lateral and third ventricles with normal fourth ventricle.",
+      "options": [
+        "Aqueduct of Sylvius",
+        "Foramen of Monro",
+        "Median foramen of Magendie",
+        "Lateral foramina of Luschka",
+        "Central canal of the spinal cord"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q42",
+      "type": "mcq",
+      "lecture": 5,
+      "text": "Which ventricle develops from the rhombencephalon?",
+      "explanation": "The fourth ventricle develops from the rhombencephalon (hindbrain), specifically from the cavity of the metencephalon. The lateral ventricles develop from the telencephalon.",
+      "keyConcept": "Fourth ventricle derives from the hindbrain (rhombencephalon) cavity.",
+      "options": [
+        "Lateral ventricle",
+        "Third ventricle",
+        "Fourth ventricle",
+        "Cerebral aqueduct",
+        "None of the above"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q43",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Which dural venous sinus is a paired structure?",
+      "explanation": "The transverse sinus and sigmoid sinus are paired structures (one on each side). The straight sinus and superior sagittal sinus are unpaired midline structures.",
+      "keyConcept": "Transverse and sigmoid sinuses are paired lateral structures; sagittal and straight sinuses are midline unpaired.",
+      "options": [
+        "Superior sagittal sinus",
+        "Inferior sagittal sinus",
+        "Straight sinus",
+        "Inferior petrosal sinus",
+        "Occipital sinus"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q44",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Which structure directly connects the dural venous sinuses with the extracranial veins of the scalp?",
+      "explanation": "Emissary veins connect the dural venous sinuses directly to the extracranial venous system through foramina in the skull (e.g., foramen ovale, foramen lacerum), providing alternative drainage pathways.",
+      "keyConcept": "Emissary veins create direct connections between intracranial dural sinuses and extracranial veins.",
+      "options": [
+        "Diploic veins",
+        "Emissary veins",
+        "Meningeal veins",
+        "Cerebral veins",
+        "Superficial temporal veins"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q45",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "The superior cerebral veins primarily drain into which dural venous sinus?",
+      "explanation": "Superior cerebral veins drain into the superior sagittal sinus (SSS). These veins pierce the arachnoid mater and drain into the SSS at right angles.",
+      "keyConcept": "Superior cerebral veins empty into the superior sagittal sinus on the superior brain surface.",
+      "options": [
+        "Straight sinus",
+        "Transverse sinus",
+        "Superior sagittal sinus",
+        "Sigmoid sinus",
+        "Cavernous sinus"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q46",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Cerebrospinal fluid (CSF) is primarily drained into the venous system by which structure?",
+      "explanation": "CSF is primarily drained into the venous system via the arachnoid villi and granulations that project into the dural venous sinuses, especially the superior sagittal sinus, returning CSF to the bloodstream.",
+      "keyConcept": "Arachnoid granulations drain CSF into dural venous sinuses (primarily superior sagittal sinus).",
+      "options": [
+        "Choroid plexus",
+        "Ependymal cells",
+        "Central canal",
+        "Ventricular foramina",
+        "Arachnoid granulations"
+      ],
+      "correctIndex": 4
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q47",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "A 25-year-old patient with a painful swelling on the upper lip and forehead after a pimple infection. The physician is concerned about risk of intracranial spread. Which veins provide a route for infections from the face to reach the superior sagittal sinus?",
+      "explanation": "Dangerous area of face (triangle with apex at nose bridge) infections can spread intracranially via the angular vein and superior ophthalmic vein to the cavernous sinus, causing cavernous sinus thrombosis.",
+      "keyConcept": "Facial vein infections spread to cavernous sinus via angular and superior ophthalmic veins.",
+      "options": [
+        "Facial veins",
+        "Emissary veins",
+        "Jugular veins",
+        "External carotid veins",
+        "Coronary veins"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q48",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Leptomeninges is membrane between:",
+      "explanation": "Leptomeninges refers to the pia mater and arachnoid mater together, which are delicate membranes lying between the dura mater and subarachnoid space.",
+      "keyConcept": "Leptomeninges definition",
+      "options": [
+        "dura, arachnoid",
+        "dura, pia",
+        "pia, arachnoid",
+        "All the above"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q49",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "-- present between extracerebral capillary, subarachnoid space:",
+      "explanation": "The arachnoid barrier cell layer is present between extracerebral capillaries and the subarachnoid space, regulating CSF composition.",
+      "keyConcept": "Arachnoid barrier",
+      "options": [
+        "blood brain barrier",
+        "arachnoid barrier",
+        "CSF barrier",
+        "All the following"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q50",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "The blood CSF barrier is formed of all the following except:",
+      "explanation": "The blood-CSF barrier is formed by endothelial cells, basement membrane, and ependymal cells with tight junctions; astrocyte foot processes are part of the BBB, not blood-CSF barrier.",
+      "keyConcept": "Blood-CSF barrier",
+      "options": [
+        "endothelial cells of the blood capillaries",
+        "basement membrane of the blood capillaries",
+        "foot processes of the astrocytes",
+        "ependymal cells that are connected by tight junctions"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q52",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Concerning the cerebrospinal fluid, choose one correct answer:",
+      "explanation": "The third ventricle has choroid plexus in its roof (derived from tela choroidea) producing CSF; lateral ventricles also have choroid plexus.",
+      "keyConcept": "Third ventricle choroid plexus",
+      "options": [
+        "Produced mainly in the subarachnoid space.",
+        "Produced by the arachnoid granulations.",
+        "Third ventricle has a choroid plexus in its roof.",
+        "Fourth ventricle has a choroid plexus in its floor."
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q53",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Concerning the choroid plexus; choose one best answer:",
+      "explanation": "Choroid plexus is formed by a capillary network (from pia) covered by a thin layer of cuboidal epithelial cells (modified ependyma).",
+      "keyConcept": "Choroid plexus structure",
+      "options": [
+        "All ventricles have choroids plexuses.",
+        "Is formed by a plexus of capillaries and a thin layer of cuboidal epithelium.",
+        "Is responsible for absorption of the cerebrospinal fluid.",
+        "All of the choroids plexuses are present in the floor of the ventricles."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q57",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which part of the anterior wall of the third ventricle is formed by a thin membrane derived from the telencephalon?",
+      "explanation": "The lamina terminalis forms the anterior wall of the third ventricle; it is a thin membrane derived from the telencephalon containing the organum vasculosum.",
+      "keyConcept": "Third ventricle anterior wall",
+      "options": [
+        "Tela choroidea",
+        "Pineal body",
+        "Tegmentum of the midbrain",
+        "Lamina terminalis",
+        "Thalamus"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q58",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The blood‑CSF barrier is NOT formed by:",
+      "explanation": "The blood-CSF barrier uses fenestrated endothelial cells (allowing passage) and is NOT formed by astrocyte foot processes (those form the BBB).",
+      "keyConcept": "Blood-CSF barrier components",
+      "options": [
+        "Foot processes of astrocytes",
+        "Basement membrane of ependymal cells",
+        "Fenestrated endothelial cells",
+        "Ependymal cells connected by tight junctions"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q59",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Choroid plexus lies in:",
+      "explanation": "The choroid plexus of the fourth ventricle lies in the lower part of the roof, formed by the inferior medullary velum and tela choroidea where blood vessels invaginate the pia mater.",
+      "keyConcept": "Choroid plexus of fourth ventricle lies in lower roof.",
+      "modelAnswer": "Lower part of roof of fourth ventricle."
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q60",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Tributaries of superior sagittal sinus:",
+      "explanation": "The superior sagittal sinus receives tributaries from the superior cerebral veins, which drain the cerebral convexity, and communicates with arachnoid granulations that absorb CSF into venous blood.",
+      "keyConcept": "SSS tributaries: superior cerebral veins and arachnoid villi.",
+      "modelAnswer": "Superior cerebral veins, arachnoid villi."
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q61",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which of the following is true about the arachnoid granulations?",
+      "explanation": "Arachnoid granulations (Pacchionian bodies) are herniations of arachnoid mater into dural venous sinuses that absorb cerebrospinal fluid into the venous system.",
+      "keyConcept": "Arachnoid granulations absorb CSF into venous sinuses.",
+      "options": [
+        "They produce cerebrospinal fluid.",
+        "They absorb cerebrospinal fluid into the venous system.",
+        "They line the ventricles.",
+        "They form the blood-brain barrier."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q62",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The choroid plexus is present in all ventricles except:",
+      "explanation": "The cerebral aqueduct (connecting third and fourth ventricles) is a narrow channel lined with ependyma but lacks choroid plexus, making it distinct from all three ventricles which have choroid plexus for CSF production.",
+      "keyConcept": "Cerebral aqueduct lacks choroid plexus (only ventricles have it).",
+      "options": [
+        "Lateral ventricles",
+        "Third ventricle",
+        "Fourth ventricle",
+        "Cerebral aqueduct"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q64",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The floor of the body of the lateral ventricle is formed by all the following EXCEPT:",
+      "explanation": "The floor of the lateral ventricle body is formed by the thalamus, body of caudate nucleus, and body of fornix; the tail of caudate lies in the roof of the inferior horn, not the floor.",
+      "keyConcept": "Tail of caudate nucleus: in roof of inferior horn, not floor of body.",
+      "options": [
+        "Body of caudate nucleus.",
+        "Tail of caudate nucleus.",
+        "Thalamus.",
+        "Body of fornix."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q65",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The lateral ventricles are connected to the third ventricle via:",
+      "explanation": "The interventricular foramina of Monro connect each lateral ventricle to the third ventricle, allowing CSF flow between these chambers.",
+      "keyConcept": "Lateral to third ventricle: interventricular foramina of Monro.",
+      "options": [
+        "Interventricular foramina of Monroe.",
+        "Cerebral aqueduct.",
+        "Foramen of Magendi.",
+        "Foramina of Luschka."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q66",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Choose the correct order of CSF circulation:",
+      "explanation": "CSF flows from lateral ventricles through interventricular foramina to third ventricle, then through cerebral aqueduct to fourth ventricle, and finally into subarachnoid space.",
+      "keyConcept": "CSF flow: lateral -> third -> fourth -> subarachnoid space.",
+      "options": [
+        "Third ventricle, lateral ventricles, fourth ventricle, subarachnoid space.",
+        "Lateral ventricles, fourth ventricle, third ventricle, central canal.",
+        "Lateral ventricles, third ventricle, fourth ventricle, subarachnoid space.",
+        "Fourth ventricle, third ventricle, lateral ventricles, central canal."
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch9-anatomy-q3",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Describe venous drainage of face & its applied anatomy.",
+      "explanation": "The venous drainage of the face is primarily via the facial vein into the internal jugular vein. Tributaries include the supraorbital, supratrochlear, external nasal, and labial veins. The facial vein communicates with the cavernous sinus via the superior ophthalmic vein and with the pterygoid plexus via the deep facial vein. Infections in the 'danger triangle' can spread to the cavernous sinus.",
+      "keyConcept": "Facial vein drains into internal jugular and communicates with cavernous sinus",
+      "modelAnswer": "The venous drainage of the face is primarily via the facial vein, which drains into the internal jugular vein. Important tributaries include the supraorbital, supratrochlear, external nasal, and superior and inferior labial veins. The facial vein communicates with the cavernous sinus via the superior ophthalmic vein and the pterygoid plexus via the deep facial vein. Clinically, infections in the 'danger triangle of the face' (upper lip, nose, medial eye) can spread to the cavernous sinus, causing thrombosis."
+    },
+    {
+      "id": "mcns2-ch9-anatomy-q40",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which of the following is a component of the blood-brain barrier?",
+      "explanation": "The blood-brain barrier consists of tight junctions between non-fenestrated endothelial cells, a thick basement membrane, and astrocytic end-feet that together restrict molecular passage.",
+      "keyConcept": "Blood-brain barrier: tight junctions between non-fenestrated endothelial cells.",
+      "options": [
+        "Fenestrated capillaries",
+        "Tight junctions between endothelial cells",
+        "Large pericellular spaces",
+        "Absence of astrocytic end-feet"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch9-anatomy-q44",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "An aneurysm of the cavernous part of the internal carotid artery compresses the ……… nerve.",
+      "explanation": "The abducent nerve (CN VI) runs through the cavernous sinus adjacent to the internal carotid artery; an aneurysm here compresses CN VI causing lateral rectus palsy.",
+      "keyConcept": "Cavernous ICA aneurysm compresses abducent nerve (CN VI).",
+      "options": [
+        "Oculomotor",
+        "Trochlear",
+        "Ophthalmic",
+        "Abducent"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch10-anatomy-q3",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "In case of fracture of pterion & formation of extradural hemorrhage, which blood vessel is most likely injured?",
+      "explanation": "The abducent nerve (CN VI) runs within the cavernous sinus, not in its lateral wall. The nerves in the lateral wall (from superior to inferior) are: oculomotor, trochlear, ophthalmic (V1), and maxillary (V2).",
+      "keyConcept": "CN VI inside cavernous sinus, not lateral wall",
+      "options": [
+        "Internal carotid artery.",
+        "Middle meningeal artery.",
+        "Middle cerebral artery.",
+        "Superficial middle cerebral vein.",
+        "Superior cerebral veins."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch10-anatomy-q4",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Rupture of middle meningeal artery causes which type of hemorrhage?",
+      "explanation": "The sigmoid sinus (not cavernous) is correctly matched with its groove. The cavernous sinus is in the middle cranial fossa, lateral to the sella turcica. The sigmoid sinus runs in a groove between the temporal and occipital bones.",
+      "keyConcept": "Sigmoid sinus has groove, cavernous sinus does not",
+      "options": [
+        "Extradural.",
+        "Subdural.",
+        "Subarachnoid.",
+        "Cerebral.",
+        "Ventricular."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-histology-q19",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Dura matter characterized by being:",
+      "explanation": "Dura mater is a fibrous, avascular layer (contains few blood vessels). It forms the outermost meninx. Arachnoid has trabeculae; pia is vascular; arachnoid barrier layer is cellular. Dura's toughness comes from collagen fibers.",
+      "keyConcept": "Dura mater: tough outer meninx, fibrous, relatively avascular; attached to periosteum of skull/vertebrae.",
+      "options": [
+        "Fibrous nonvascular layer",
+        "Have many trabeculae.",
+        "Vascular cellular layer",
+        "Fibrous vascular layer"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch1-histology-q20",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Concerning the pia matter, which of the following statements is true:",
+      "explanation": "Pia mater is highly vascular (contains blood vessels that penetrate to supply superficial brain tissue). It is the innermost meninx, in direct contact with brain. Arachnoid contains spaces (subarachnoid) for CSF, not pia. Dura contains venous sinuses.",
+      "keyConcept": "Pia mater: highly vascular, innermost meninx, follows brain contours closely.",
+      "options": [
+        "It is highly vascular.",
+        "It contains spaces for CSF.",
+        "It contains venous sinuses.",
+        "It is most outer layer."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-histology-q22",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Tanycytes line which of the following:",
+      "explanation": "Tanycytes are specialized ependymal cells that line the third ventricle and other ventricular surfaces, particularly in the hypothalamus. They have long basal processes that extend to blood vessels and are involved in neuroendocrine regulation.",
+      "keyConcept": "Tanycytes: specialized ependymal cells lining 3rd ventricle, transport molecules between brain and CSF.",
+      "options": [
+        "All cavities in brain",
+        "Choroid plexus",
+        "Choroid villi",
+        "3rd ventricle"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-histology-q29",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "tight junction between ependymal cells forms:",
+      "explanation": "Tight junctions between ependymal cells form the brain-CSF barrier, limiting passage between ventricles and brain parenchyma. The blood-brain barrier involves astrocyte foot processes and tight junction endothelial cells.",
+      "keyConcept": "Ependymal tight junctions = brain-CSF barrier. Astrocyte foot processes + endothelial tight junctions = blood-brain barrier.",
+      "options": [
+        "blood brain barrier",
+        "blood CSF barrier",
+        "outer glia limitans",
+        "inner glia limitans",
+        "arachnoid barrier"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-histology-q64",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Endothelial cells of blood capillaries in brain characterized by having:",
+      "explanation": "Brain capillary endothelial cells have few pinocytic vesicles (not more), abundant mitochondria (for transport functions), tight junctions (not few), and few desmosomes. Tight junctions are essential for the blood-brain barrier function.",
+      "keyConcept": "Brain endothelium: tight junctions, few pinocytic vesicles (blood-brain barrier)",
+      "options": [
+        "More vesicles.",
+        "More mitochondria.",
+        "Few tight junctions.",
+        "More desmosomes."
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch1-histology-q81",
+      "type": "mcq",
+      "lecture": 4,
+      "text": "Which statement is true regarding neuroglia?",
+      "explanation": "Astrocytes perform gliosis (reactive astrogliosis) in response to CNS injury, forming glial scars; they also maintain the blood-brain barrier and ion balance.",
+      "keyConcept": "Astrocyte functions",
+      "options": [
+        "Astrocytes perform gliosis",
+        "Oligodendrocytes form the blood‑brain barrier",
+        "Microglia produce myelin",
+        "Schwann cells are found in the CNS",
+        "Ependymal cells form nodes of Ranvier"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch3-histology-q6",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "All of the followings have choroid plexus EXCEPT:",
+      "explanation": "The cerebral aqueduct connects the third and fourth ventricles but does not have choroid plexus (it is too narrow). Choroid plexus is present in the lateral ventricles, third ventricle, and fourth ventricle.",
+      "keyConcept": "Cerebral aqueduct lacks choroid plexus (no choroid plexus EXCEPT in aqueduct)",
+      "options": [
+        "3rd ventricles.",
+        "4th ventricles.",
+        "Lateral ventricle.",
+        "Cerebral aqueduct."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch3-histology-q7",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Which of the following is involved in the blood-brain barrier?",
+      "explanation": "Astrocytes are involved in the blood-brain barrier, through their end-feet which induce and maintain tight junctions between endothelial cells. Ependymal cells form the blood-CSF barrier, not the blood-brain barrier.",
+      "keyConcept": "Astrocytes are involved in blood-brain barrier structure and function",
+      "options": [
+        "Astrocytes.",
+        "Ependymal cells.",
+        "Oligodendrocytes.",
+        "Schwann cells."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch3-histology-q8",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "One of the following is a component of Blood CSF barrier:",
+      "explanation": "The blood-CSF barrier is formed by tight junctions between ependymal cells. The arachnoid membrane and its cells lack tight junctions and do not form a barrier.",
+      "keyConcept": "Tight junctions between ependymal cells form blood-CSF barrier",
+      "options": [
+        "Border cells of arachnoid matter.",
+        "Tight junctions between ependymal cells.",
+        "Astrocytes.",
+        "Trabecular cells of arachnoid matter."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch8-histology-q1",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "One of the following a component of Blood CSF barrier:",
+      "explanation": "The blood-CSF barrier is formed by the choroid plexus epithelium (border cells of arachnoid matter - actually choroid plexus cells), not ependymal cells. Ependymal cells line ventricles. The barrier consists of fenestrated capillaries + choroid plexus epithelium with tight junctions.",
+      "keyConcept": "Blood-CSF barrier: choroid plexus epithelium + fenestrated capillaries + tight junctions.",
+      "options": [
+        "Border cells of arachnoid matter",
+        "tight junctions between ependymal cells.",
+        "astrocytes.",
+        "Trabecular cells of arachnoid matter"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch8-histology-q2",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The inner surface of dura mater is lined by.",
+      "explanation": "The inner surface of dura mater (which faces the arachnoid) is lined by simple squamous epithelium (mesothelium). The outer surface is attached to periosteum. This creates the dural sinus spaces between the two layers.",
+      "keyConcept": "Dura mater: outer surface = periosteum; inner surface = simple squamous mesothelium facing arachnoid.",
+      "options": [
+        "Pseudostratified columnar epith.",
+        "Simple columnar epith.",
+        "Simple squamous epith.",
+        "stratified columnar epith."
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch8-histology-q3",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The brain CSF barrier is not formed of:",
+      "explanation": "The brain-CSF barrier is formed by ependymal cells connected by tight junctions, basement membrane, and astrocyte foot processes. Fenestrated endothelial cells are NOT part of this barrier - the brain capillary endothelium has tight junctions forming the blood-brain barrier.",
+      "keyConcept": "Brain-CSF barrier: ependymal tight junctions + basement membrane + astrocyte foot processes.",
+      "options": [
+        "Fenestrated endothelial cells",
+        "Foot processes of astrocytes",
+        "Basement membrane of ependymal cells",
+        "Ependymal cells connected by tight junction."
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch8-histology-q4",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The blood CSF barrier is not formed of:",
+      "explanation": "Foot processes of astrocytes are part of the BLOOD-BRAIN barrier, not the blood-CSF barrier. The blood-CSF barrier consists of fenestrated capillaries, basement membrane, and choroid plexus epithelium (connected by tight junctions).",
+      "keyConcept": "Blood-CSF barrier: fenestrated capillaries + choroid epithelium with tight junctions. Blood-brain barrier: tight junction endothelium + astrocyte foot processes.",
+      "options": [
+        "Endothelial cells of fenestrated blood capillaries",
+        "Foot processes of astrocytes",
+        "Basement membrane of blood capillaries",
+        "Ependymal cells connected by tight junction."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch8-histology-q5",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "The inner surface of dura mater is lined by:",
+      "explanation": "The inner surface of dura mater (the epidural boundary facing the arachnoid) is lined by simple squamous epithelium (mesothelium). The outer surface is also lined by mesothelium.",
+      "keyConcept": "Dura mater inner surface lined by simple squamous epithelium (mesothelium)",
+      "options": [
+        "Pseudostratified columnar epithelium.",
+        "Simple columnar epithelium.",
+        "Simple squamous epithelium.",
+        "Stratified columnar epithelium."
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch8-histology-q6",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "A 9-year-old child has enlargement of the lateral ventricles with a 4 cm homogenous well-circumscribed mass within the 4th ventricle. Microscopically, it shows rosettes & pseudo-rosettes. Which of the following is the most likely diagnosis?",
+      "explanation": "Ependymomas arise from ependymal cells lining the ventricular system, especially common in children in the 4th ventricle. They show both rosettes (true ependymal rosettes) and pseudorosettes (perivascular).",
+      "keyConcept": "Ependymoma: rosettes and pseudorosettes, 4th ventricle in children",
+      "options": [
+        "Astrocytoma.",
+        "Ependymoma.",
+        "Meningioma.",
+        "Metastatic carcinoma.",
+        "Schwannoma."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-clinical-q1",
+      "type": "case",
+      "lecture": 1,
+      "text": "An old man starts to develop headache and by MRI proved to have tumour at the cerebellopontine angle.",
+      "explanation": "The trochlear nerve (CN IV) is the most superior nerve in the lateral wall of the cavernous sinus, running below the oculomotor and above the ophthalmic nerve.",
+      "keyConcept": "CN IV most superior in lateral wall of cavernous sinus",
+      "subQuestions": [
+        {
+          "id": "mcns2-ch1-clinical-q1-sq1",
+          "type": "essay",
+          "text": "TYPE: essay What is the 1st cranial nerve to be effected by that tumor?",
+          "explanation": "The trochlear nerve (CN IV) is the most superior nerve in the lateral wall of the cavernous sinus, running below the oculomotor and above the ophthalmic nerve.",
+          "keyConcept": "CN IV most superior in lateral wall of cavernous sinus",
+          "modelAnswer": "Cranial nerves affected"
+        },
+        {
+          "id": "mcns2-ch1-clinical-q1-sq2",
+          "type": "essay",
+          "text": "TYPE: essay Enumerate the symptoms resulting from compression of that nerve?",
+          "explanation": "The trochlear nerve (CN IV) is the most superior nerve in the lateral wall of the cavernous sinus, running below the oculomotor and above the ophthalmic nerve.",
+          "keyConcept": "CN IV most superior in lateral wall of cavernous sinus",
+          "modelAnswer": "Compression of facial nerve -> facial paralysis & compression of vestibule-cochlear nerve > deafness & vertigo."
+        }
+      ]
+    },
+    {
+      "id": "mcns2-ch1-clinical-q2",
+      "type": "case",
+      "lecture": 1,
+      "text": "A patient presented with a red swollen and painful right eye. The movements of the right eye were painful and the pupil of the eye was fixed and dilated. CT scan showed thrombosis of cavernous sinus.",
+      "explanation": "Cavernous sinus thrombosis is a life-threatening condition characterized by painful ophthalmoplegia, proptosis, chemosis, and a fixed dilated pupil due to compression of cranial nerves III, IV, V1, and VI within the cavernous sinus. It commonly arises from spread of infection from the facial 'danger triangle' or paranasal sinuses.",
+      "keyConcept": "Cavernous sinus thrombosis causes painful ophthalmoplegia, proptosis, and CN III/IV/V1/VI palsies.",
+      "subQuestions": [
+        {
+          "id": "mcns2-ch1-clinical-q2-sq1",
+          "type": "essay",
+          "text": "TYPE: essay Define the venous sinus & its function.",
+          "explanation": "Cavernous sinus thrombosis is a life-threatening condition characterized by painful ophthalmoplegia, proptosis, chemosis, and a fixed dilated pupil due to compression of cranial nerves III, IV, V1, and VI within the cavernous sinus. It commonly arises from spread of infection from the facial 'danger triangle' or paranasal sinuses.",
+          "keyConcept": "Cavernous sinus thrombosis causes painful ophthalmoplegia, proptosis, and CN III/IV/V1/VI palsies.",
+          "modelAnswer": "A dural venous sinus is an endothelial-lined channel located between two layers of dura mater. Its functions include drainage of blood from the brain, meninges, and skull bones; drainage of cerebrospinal fluid through arachnoid granulations; and maintenance of intracranial pressure by providing a low-pressure venous reservoir."
+        },
+        {
+          "id": "mcns2-ch1-clinical-q2-sq2",
+          "type": "essay",
+          "text": "TYPE: essay Describe the site & the contents of the cavernous sinus.",
+          "explanation": "Cavernous sinus thrombosis is a life-threatening condition characterized by painful ophthalmoplegia, proptosis, chemosis, and a fixed dilated pupil due to compression of cranial nerves III, IV, V1, and VI within the cavernous sinus. It commonly arises from spread of infection from the facial 'danger triangle' or paranasal sinuses.",
+          "keyConcept": "Cavernous sinus thrombosis causes painful ophthalmoplegia, proptosis, and CN III/IV/V1/VI palsies.",
+          "modelAnswer": "The cavernous sinus is located on either side of the sella turcica in the middle cranial fossa. Its lateral wall contains CN III, IV, V1, and V2. Its cavity contains the internal carotid artery with its sympathetic plexus and the abducent nerve (CN VI) lateral to the artery."
+        },
+        {
+          "id": "mcns2-ch1-clinical-q2-sq3",
+          "type": "essay",
+          "text": "TYPE: essay Define the dangerous area of face. Explain Why this drea is dangerous.",
+          "explanation": "Cavernous sinus thrombosis is a life-threatening condition characterized by painful ophthalmoplegia, proptosis, chemosis, and a fixed dilated pupil due to compression of cranial nerves III, IV, V1, and VI within the cavernous sinus. It commonly arises from spread of infection from the facial 'danger triangle' or paranasal sinuses.",
+          "keyConcept": "Cavernous sinus thrombosis causes painful ophthalmoplegia, proptosis, and CN III/IV/V1/VI palsies.",
+          "modelAnswer": "The dangerous area of the face is the triangular region bounded by the root of the nose and the two angles of the mouth. It is dangerous because facial veins in this area are valveless and communicate with the cavernous sinus via ophthalmic veins. Infections in this area can therefore spread retrogradely to the cavernous sinus, causing cavernous sinus thrombosis."
+        },
+        {
+          "id": "mcns2-ch1-clinical-q2-sq4",
+          "type": "essay",
+          "text": "TYPE: essay Name the veins that terminate in cavernous sinus.",
+          "explanation": "Cavernous sinus thrombosis is a life-threatening condition characterized by painful ophthalmoplegia, proptosis, chemosis, and a fixed dilated pupil due to compression of cranial nerves III, IV, V1, and VI within the cavernous sinus. It commonly arises from spread of infection from the facial 'danger triangle' or paranasal sinuses.",
+          "keyConcept": "Cavernous sinus thrombosis causes painful ophthalmoplegia, proptosis, and CN III/IV/V1/VI palsies.",
+          "modelAnswer": "Veins draining into the cavernous sinus include the superior and inferior ophthalmic veins, central retinal vein, superficial middle cerebral vein, sphenoparietal sinus, inferior cerebral veins, and emissary veins from the pterygoid venous plexus."
+        }
+      ]
+    },
+    {
+      "id": "mcns2-ch1-clinical-q6",
+      "type": "case",
+      "lecture": 1,
+      "text": "A 50 year old male started to complain from difficulty in swallowing few weeks ago. He had a computerized tomography scan (CT scan) on the neck done; it revealed the presence of a swelling (most likely cancer) near the jugular foramen.",
+      "explanation": "A jugular foramen tumor (glomus jugulare or skull base metastasis) can compress the glossopharyngeal (CN IX), vagus (CN X), and accessory (CN XI) nerves (Vernet's syndrome). Dysphagia results from involvement of the pharyngeal branches of the glossopharyngeal and vagus nerves that form the pharyngeal plexus and are essential for pharyngeal contraction during swallowing. Additionally, the inferior petrosal sinus (which drains from cavernous sinus) and the sigmoid sinus drain through the jugular foramen into the internal jugular vein and are endangered by tumor growth.",
+      "keyConcept": "Jugular foramen lesion (Vernet's syndrome) affects CN IX/X/XI; endangers inferior petrosal and sigmoid sinuses.",
+      "subQuestions": [
+        {
+          "id": "mcns2-ch1-clinical-q6-sq1",
+          "type": "essay",
+          "text": "[TYPE: essay] In this patient, which nerves could be involved & led to dysphagia?",
+          "explanation": "A jugular foramen tumor (glomus jugulare or skull base metastasis) can compress the glossopharyngeal (CN IX), vagus (CN X), and accessory (CN XI) nerves (Vernet's syndrome). Dysphagia results from involvement of the pharyngeal branches of the glossopharyngeal and vagus nerves that form the pharyngeal plexus and are essential for pharyngeal contraction during swallowing. Additionally, the inferior petrosal sinus (which drains from cavernous sinus) and the sigmoid sinus drain through the jugular foramen into the internal jugular vein and are endangered by tumor growth.",
+          "keyConcept": "Jugular foramen lesion (Vernet's syndrome) affects CN IX/X/XI; endangers inferior petrosal and sigmoid sinuses.",
+          "modelAnswer": "Glossopharyngeal nerve (CN IX) and vagus nerve (CN X). Loss of pharyngeal plexus function due to lesion at jugular foramen (Vernet's syndrome)."
+        },
+        {
+          "id": "mcns2-ch1-clinical-q6-sq2",
+          "type": "essay",
+          "text": "[TYPE: essay] Which venous sinuses are endangered by the cancer?",
+          "explanation": "A jugular foramen tumor (glomus jugulare or skull base metastasis) can compress the glossopharyngeal (CN IX), vagus (CN X), and accessory (CN XI) nerves (Vernet's syndrome). Dysphagia results from involvement of the pharyngeal branches of the glossopharyngeal and vagus nerves that form the pharyngeal plexus and are essential for pharyngeal contraction during swallowing. Additionally, the inferior petrosal sinus (which drains from cavernous sinus) and the sigmoid sinus drain through the jugular foramen into the internal jugular vein and are endangered by tumor growth.",
+          "keyConcept": "Jugular foramen lesion (Vernet's syndrome) affects CN IX/X/XI; endangers inferior petrosal and sigmoid sinuses.",
+          "modelAnswer": "Inferior petrosal sinus and sigmoid sinus (both drain through the jugular foramen into the internal jugular vein)."
+        }
+      ]
+    },
+    {
+      "id": "mcns2-ch3-clinical-q3",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Give a brief note on medial medullary syndrome.",
+      "explanation": "Infection from mastoid air cells typically spreads to the sigmoid sinus (which runs in the groove for the sigmoid sinus in the mastoid). This can cause sinus thrombosis and meningitis.",
+      "keyConcept": "Mastoid infection spreads to sigmoid sinus",
+      "modelAnswer": "MEDIAL MEDULLARY SYNDROME: (CAUSE) Anterior spinal artery or bilateral vertebral artery occlusion; (SIGNS): IPSILATERAL: complete paralysis and atrophy of tongue (CN XII); CONTRALATERAL: spastic paralysis of body (pyramidal tract), loss of proprioception and discriminative touch (medial lemniscus); (PRESERVED): pain, temperature, and crude touch (spinothalamic tracts intact bilaterally)."
+    },
+    {
+      "id": "mcns2-ch3-clinical-q4",
+      "type": "case",
+      "lecture": 1,
+      "text": "A 60 year old female complained of a sudden disturbance in gait, intension tremors, ptosis of right eyelid, decreased sweating on right side of face, decreased pain sensation on right side of face, a difficulty in swallowing. Pain sensation was decreased on left side of the body. A diagnosis of lateral medullary syndrome was made.",
+      "explanation": "The inferior petrosal sinus drains the cavernous sinus into the internal jugular vein, passing through the jugular foramen. It carries venous blood from the brain and meninges.",
+      "keyConcept": "Inferior petrosal drains to internal jugular vein",
+      "subQuestions": [
+        {
+          "id": "mcns2-ch3-clinical-q4-sq1",
+          "type": "essay",
+          "text": "TYPE: essay What causes this syndrome?",
+          "explanation": "The inferior petrosal sinus drains the cavernous sinus into the internal jugular vein, passing through the jugular foramen. It carries venous blood from the brain and meninges.",
+          "keyConcept": "Inferior petrosal drains to internal jugular vein",
+          "modelAnswer": "Occlusion of the right posterior inferior cerebellar artery (PICA) causing lateral medullary syndrome (Wallenberg syndrome)."
+        },
+        {
+          "id": "mcns2-ch3-clinical-q4-sq2",
+          "type": "essay",
+          "text": "TYPE: essay Analyze each of the patient's symptoms?",
+          "explanation": "The inferior petrosal sinus drains the cavernous sinus into the internal jugular vein, passing through the jugular foramen. It carries venous blood from the brain and meninges.",
+          "keyConcept": "Inferior petrosal drains to internal jugular vein",
+          "modelAnswer": "Intention tremors: cerebellar peduncle involvement. Ptosis and decreased sweating: sympathetic tract involvement (Horner syndrome). Decreased pain on right face: trigeminal spinal nucleus involvement. Difficulty swallowing: nucleus ambiguus involvement. Decreased pain on left body: spinothalamic tract involvement (crossed)."
+        }
+      ]
+    },
+    {
+      "id": "mcns2-ch1-physiology-q96",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Regarding dysarthria, all of the following are true EXCEPT:",
+      "explanation": "Dysarthria due to Wernicke's area lesion would cause receptive aphasia, not dysarthria. Wernicke's area controls language comprehension. Dysarthria is a motor speech disorder affecting articulation due to UMN/LMN lesions to speech muscles, not a cortical language area lesion.",
+      "keyConcept": "Dysarthria = motor speech disorder (articulation); Wernicke's area = receptive aphasia (comprehension).",
+      "options": [
+        "It is a speech abnormality due to defect in articulation.",
+        "It occurs in UMNL & LMNL affecting speech muscles.",
+        "Is of slow monotonous type in Parkinsonism.",
+        "Is of spastic type due to lesion in Wernicke’s area.",
+        "Is of ataxic staccato type in neocerebellar syndrome"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-physiology-q97",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which sentence is NOT correct for long-term potentiation:",
+      "explanation": "LTP (long-term potentiation) is primarily involved in hippocampal learning, not cerebellar learning. The cerebellum uses a different mechanism involving LTD (long-term depression) for motor learning. LTP does involve glutamate/NMDA receptors, Ca++ increases, protein synthesis, and new connections.",
+      "keyConcept": "LTP: hippocampal learning (memory); LTD: cerebellar learning (motor). Both involve glutamate receptors.",
+      "options": [
+        "A rapid repeated brief stimulation leads to a persistent enhancement of response.",
+        "Glutamate transmitter and its NMDA receptors may play a role.",
+        "Increase Ca++ in pre and post-synaptic neurons may play a role.",
+        "Protein synthesis, growth and increased neuronal connections are possible mechanisms.",
+        "Involved in cerebellar learning."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-physiology-q110",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Mention functions of the nervous system",
+      "explanation": "The nervous system maintains homeostasis, controls skeletal muscle activity, regulates glandular secretion, processes sensory information, and subserves higher mental functions including consciousness, learning, and memory.",
+      "keyConcept": "Nervous system integrative functions",
+      "modelAnswer": "Maintains homeostasis\nControl of muscles & glands\nControl of mental function\nReceive sensory impulses\nProcessing & integrating information"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q131",
+      "type": "essay",
+      "lecture": 1,
+      "text": "What are the functions of sleep?",
+      "explanation": "Sleep functions include restoration of physiological processes, cognitive consolidation, memory encoding, thermoregulation, immune system maintenance, and neural plasticity required for development and learning.",
+      "keyConcept": "Sleep functions and restorative roles",
+      "modelAnswer": "Restoration of physiological & biochemical processes (Cognition, metabolic, thermal, caloric & immune processes) Helps learning & memory Neural plasticity (maturation)"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q149",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which sentence is NOT true regarding consolidation of memory?",
+      "explanation": "Memory consolidation takes hours to days, not minutes. It involves structural and functional synaptic changes in the hippocampus initially, then neocortical storage. Focused attention and rehearsal enhance consolidation efficiency.",
+      "keyConcept": "Consolidation is a gradual process requiring hours to days for stable long-term memory formation.",
+      "options": [
+        "It is the conversion of short-term memory to a long-term one.",
+        "It is completed in 5 minutes.",
+        "It represents the time needed for the structural and functional synaptic changes to take place.",
+        "It occurs in neocortex.",
+        "It increases and fastens by focusing and rehearsal."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch3-physiology-q31",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which of the following describes learning?\nA. Memory is not essential for it\nB. Sensitization means decreased response to repeated stimuli\nC. Operant conditioning is a type of associative learning\nD. Habituation and sensitization are types of conditioning learning\nE. Habituation means increased response to repeated stimuli",
+      "explanation": "Operant (instrumental) conditioning is a type of associative learning where behavior is modified by consequences (reward or punishment), distinguishing it from non-associative learning.",
+      "keyConcept": "Operant conditioning: associative learning via consequences.",
+      "options": [
+        "Memory is not essential for it",
+        "Sensitization means decreased response to repeated stimuli",
+        "Operant conditioning is a type of associative learning",
+        "Habituation and sensitization are types of conditioning learning",
+        "Habituation means increased response to repeated stimuli"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch5-physiology-q33",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Which deficit is most characteristic of a cerebellar lesion?",
+      "explanation": "Cerebellar lesions characteristically impair motor learning (adaptation of movements), as the cerebellum is essential for procedural memory and motor skill acquisition.",
+      "keyConcept": "Cerebellar motor learning",
+      "options": [
+        "Muscle weakness",
+        "Loss of motor learning",
+        "Loss of pain sensation",
+        "Aphasia",
+        "Visual field defect"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch6-physiology-q9",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Damage to Broca’s area causes which one of the following?\nA. Visual agnosia\nB. Paralysis of muscles of pharynx and larynx\nC. Limitation of vocabulary to very few words\nD. Non understandable excessive words\nE. Inattention and neglect",
+      "explanation": "Broca's aphasia causes non-fluent, effortful speech with limited vocabulary as the patient struggles to motor-plan speech output, though language comprehension remains intact.",
+      "keyConcept": "Broca's lesion: limited vocabulary, non-fluent but comprehension preserved.",
+      "options": [
+        "Visual agnosia",
+        "Paralysis of muscles of pharynx and larynx",
+        "Limitation of vocabulary to very few words",
+        "Non understandable excessive words",
+        "Inattention and neglect"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-pharma-q199",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "What is L-Dopa?",
+      "explanation": "L-Dopa is levodopa, the metabolic precursor of dopamine that crosses the blood-brain barrier. It is converted to dopamine by aromatic L-amino acid decarboxylase (DOPA decarboxylase) in the brain and periphery.选项A正确. The answer is A. L-dopa is combined with carbidopa (a peripheral decarboxylase inhibitor) to reduce peripheral side effects and increase CNS delivery.",
+      "keyConcept": "Levodopa is a dopamine precursor that crosses the BBB - converted to dopamine by DOPA decarboxylase in the brain.",
+      "options": [
+        "A dopamine precursor that can cross the blood-brain barrier (BBB)",
+        "A dopamine agonist",
+        "A MAO-B inhibitor",
+        "A COMT inhibitor"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch8-pharma-q1",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which antibiotics achieve therapeutic CSF level even without meningeal inflammation?",
+      "explanation": "Antibiotics achieving therapeutic CSF levels WITHOUT meningeal inflammation: sulfonamides, fluoroquinolones, and some others. These can cross normal blood-brain barrier.选项A正确. The answer is A. Most antibiotics require meningeal inflammation for adequate CSF penetration.",
+      "keyConcept": "Sulfonamides and fluoroquinolones achieve CSF levels without meningeal inflammation - unique BBB penetration.",
+      "options": [
+        "Sulfonamides, Trimethoprim, Chloramphenicol, Rifampicin",
+        "β-lactam, Monobactam, Vancomycin, quinolones, Acyclovir",
+        "Aminoglycosides, 1st & 2nd Generation of cephalosporines, Amphotericin B",
+        "None"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch10-pharma-q55",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Mention characteristic features of empirical antibiotics in treatment of meningitis",
+      "explanation": "Empirical antibiotics for meningitis must have excellent CSF penetration, bactericidal activity, and cover likely pathogens. Key features include ability to cross inflamed meninges, achieve MIC well above bacterial MBC, and not be affected by meningeal inflammation.",
+      "keyConcept": "Empirical meningitis antibiotics require sufficient CSF penetration to achieve bactericidal concentrations against common pathogens.",
+      "modelAnswer": "Characteristic features of empirical antibiotics in meningitis:\n\n**1. CSF Penetration:**\n- Must cross blood-brain barrier\n- Better penetration when meninges inflamed\n- Achieves therapeutic concentrations\n\n**2. Bactericidal Activity:**\n- Kills bacteria, not just inhibits\n- Important in CSF due to limited immune defenses\n\n**3. Common Empiric Choices:**\n\n| Age | Likely Pathogens | Empiric Therapy |\n|-----|-----------------|----------------|\n| Neonates | GBS, E. coli, Listeria | Ampicillin + Cefotaxime |\n| 1-3 months | GBS, pneumococcus, meningococcus | Ceftriaxone + Vancomycin |\n| >3 months | pneumococcus, meningococcus | Ceftriaxone + Vancomycin |\n| Adults | pneumococcus, meningococcus | Ceftriaxone + Vancomycin |\n\n**4. Properties of Ideal Agents:**\n- High MIC/MBC ratio\n- Concentrates intracellularly\n- Not affected by protein binding in CSF\n- Stable at physiological pH\n\n**5. Monitoring:**\n- Check CSF cultures\n- Adjust based on sensitivities\n- Monitor clinical response"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q34",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Six hours after a meal, which of the following is (are) MOST important as a source of fuel for the brain?",
+      "explanation": "After 6 hours post-meal (fasting state), the brain relies primarily on ketone bodies (from hepatic fatty acid oxidation) as its main fuel. Glycogen stores are depleted. Fatty acids cannot cross the blood-brain barrier efficiently. Protein is not a primary brain fuel.",
+      "keyConcept": "Brain fuel: glucose (fed) → ketone bodies (fasting). Ketone bodies cross BBB and replace glucose after prolonged fasting.",
+      "options": [
+        "Glycogen from the muscle.",
+        "Ketone bodies from the liver.",
+        "Protein from the muscle.",
+        "Fatty acids from the adipose tissue."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-biochem-q151",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Brain cells uptake glucose by",
+      "explanation": "Brain cells uptake glucose via GLUT1 (blood-brain barrier) and GLUT3 (neurons); GLUT2 is in liver/pancreas, GLUT4 is insulin-dependent in muscle/adipose.",
+      "keyConcept": "Brain glucose transporters",
+      "options": [
+        "GLUT1 and GLUT2.",
+        "GLUT1 and GLUT3.",
+        "GLUT4.",
+        "SGLT2."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-biochem-q152",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Glucose uptake by the brain is",
+      "explanation": "Brain glucose uptake is insulin-independent; GLUT1 and GLUT3 are constitutively active at the blood-brain barrier and neuronal membranes.",
+      "keyConcept": "Insulin-independent brain glucose uptake",
+      "options": [
+        "insulin-dependent.",
+        "sodium-dependent.",
+        "ATP-dependent.",
+        "insulin-independent."
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch1-biochem-q206",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Brain cells uptake glucose by:",
+      "explanation": "Brain cells take up glucose via GLUT1 (on the blood-brain barrier, constitutive) and GLUT3 (on neurons, high affinity). GLUT2 is in liver and pancreas; GLUT4 is insulin-dependent (muscle/fat); GLUT5 is a fructose transporter; SGLT2 is in kidney.",
+      "keyConcept": "Brain glucose uptake by GLUT1 (BBB) and GLUT3 (neurons)",
+      "options": [
+        "GLUT1 and GLUT2.",
+        "GLUT and GLUT5.",
+        "GLUT4.",
+        "SGLT2."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-biochem-q277",
+      "type": "mcq",
+      "lecture": 3,
+      "text": "Which glucose transporter is present on astrocytes?",
+      "explanation": "GLUT1 is the glucose transporter predominantly expressed on astrocytes and the blood-brain barrier, facilitating glucose entry into the CNS.",
+      "keyConcept": "Astrocyte glucose transport",
+      "options": [
+        "GLUT1",
+        "GLUT2",
+        "GLUT3",
+        "GLUT4",
+        "GLUT5"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch9-biochem-q1",
+      "type": "essay",
+      "lecture": 1,
+      "text": "What is the immediate metabolic precursor of dopamine that can cross the blood-brain barrier?",
+      "explanation": "L-DOPA (levodopa) is the immediate metabolic precursor of dopamine that crosses the blood-brain barrier via the large neutral amino acid transporter, where it is converted to dopamine by DOPA decarboxylase in the brain.",
+      "keyConcept": "L-DOPA as dopamine precursor crossing BBB",
+      "modelAnswer": "L-DOPA (L-3,4-dihydroxyphenylalanine) is the immediate metabolic precursor of dopamine. It is formed from tyrosine by tyrosine hydroxylase (the rate-limiting step) and is converted to dopamine by aromatic L-amino acid decarboxylase (AADC) in the cytosol."
+    },
+    {
+      "id": "mcns2-ch10-biochem-q7",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "To increase the synthesis of catecholamines in the brain, a patient with Parkinsonism may be given",
+      "explanation": "L-dopa (levodopa) is the direct precursor of dopamine and is administered to increase catecholamine synthesis in Parkinson's disease, where dopaminergic neurons have degenerated. L-dopa crosses the blood-brain barrier unlike dopamine itself, then is converted to dopamine by DOPA decarboxylase.",
+      "keyConcept": "L-dopa as dopamine precursor in Parkinson's disease treatment",
+      "options": [
+        "L-dopa.",
+        "alpha-methyl dopa.",
+        "MAO inhibitors.",
+        "tyramine."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch10-biochem-q8",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "To increase the synthesis of catecholamines in the brain, a patient with Parkinsonism may be given:",
+      "explanation": "L-dopa crosses the blood-brain barrier and is converted to dopamine by DOPA decarboxylase, increasing catecholamine levels in Parkinson's patients with dopaminergic neuron loss. Alpha-methyldopa is an antihypertensive.",
+      "keyConcept": "L-dopa administered to increase brain catecholamine synthesis in Parkinson's disease",
+      "options": [
+        "L-dopa.",
+        "Alpha-methyldopa.",
+        "MAO inhibitors.",
+        "Tyramine."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-pathology-q6",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "What is dementia?",
+      "explanation": "Dementia is defined as the development of memory impairment and other cognitive deficits severe enough to DECREASE the affected person's capacity to function at the previous level, despite a NORMAL level of consciousness. Key points: 1) Memory AND other cognitive deficits; 2) Functional impairment (decreased capacity); 3) NORMAL consciousness (distinguishes from delirium). Option A matches this definition exactly. Option B adds 'altered level of consciousness' - that's delirium, not dementia. Option C says 'increase capacity' - wrong. Option D adds 'hallucinations' and 'altered consciousness' - not the core definition. The answer is A. Delirium differs from dementia by altered consciousness and acute onset.",
+      "keyConcept": "Dementia is cognitive decline with functional impairment but NORMAL consciousness - distinguishing it from delirium.",
+      "options": [
+        "The development of memory impairment and other cognitive deficits severe enough to decrease the affected person's capacity to function at the previous level despite a normal level of consciousness.",
+        "The development of memory impairment and other cognitive deficits severe enough to decrease the affected person's capacity to function at the previous level with an altered level of consciousness.",
+        "The development of memory impairment and other cognitive deficits severe enough to increase the affected person's capacity to function at the previous level despite a normal level of consciousness.",
+        "The development of memory impairment and other cognitive deficits severe enough to decrease the affected person's capacity to function at the previous level with an altered level of consciousness and hallucinations."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch10-pathology-q1",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Subarachnoid hemorrhage is due to:",
+      "explanation": "Subarachnoid hemorrhage (SAH) most commonly results from rupture of congenital berry aneurysms at the Circle of Willis. These aneurysms form at arterial bifurcation points due to congenital weakness of the media layer. When they rupture, blood enters the subarachnoid space. Option A (trauma to meningeal artery) causes epidural hematoma, not SAH. Option B (cortical veins) causes subdural hematoma. Option D (sudden BP rise) may contribute to rupture but is not the primary cause. Ruptured aneurysms account for ~85% of non-traumatic SAH, making Option C correct.",
+      "keyConcept": "Subarachnoid hemorrhage is most commonly caused by rupture of congenital berry aneurysms at the Circle of Willis.",
+      "options": [
+        "Trauma of meningeal artery",
+        "Trauma of cortical veins",
+        "Rupture of cerebral aneurysms",
+        "Sudden rise of blood pressure"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch8-microbiology-q1",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "chemical examination of CSF in case of bacterial meningitis include",
+      "explanation": "Bacterial meningitis CSF findings: 1) Protein is ELEVATED (due to inflammation and blood-brain barrier breakdown) - TRUE; 2) Glucose is REDUCED (bacteria consume glucose) - CSF glucose < 40 mg/dL or CSF/serum ratio < 0.4; 3) CSF is TURBID, not clear (cloudy due to pus cells) - FALSE. Normal glucose is not expected. The answer is D ('None of the above') because all statements except protein elevation are incorrect. Actually, the option says 'normal glucose' which is wrong for bacterial meningitis. Option B 'CSF is clear' is wrong. So D (None of the above) is correct because A and B are wrong. Wait, let me reconsider: Option A says '↑ protein' which is correct. Option B says 'normal glucose' which is INCORRECT. Option C says 'CSF is clear' which is INCORRECT. So the correct answer is D because B and C are wrong, even though A is correct. The question asks which is NOT included in bacterial meningitis findings.",
+      "keyConcept": "Bacterial meningitis shows elevated protein, decreased glucose, and turbid (not clear) CSF - the answer excludes normal glucose and clear CSF.",
+      "options": [
+        "↑ protein",
+        "normal glucose",
+        "CSF is clear.",
+        "None of the above"
+      ],
+      "correctIndex": 1
+    }
+  ]
+}

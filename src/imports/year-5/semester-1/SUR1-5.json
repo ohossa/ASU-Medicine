@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "comingSoon": true,
+  "meta": {
+    "moduleCode": "SUR1-5",
+    "moduleName": "General & Special Surgery 1",
+    "year": 5,
+    "semester": 1,
+    "creditPoints": 4,
+    "totalMarks": 80,
+    "keywords": [
+      "surgery",
+      "sur1"
+    ]
+  },
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Perioperative Care & General Surgery",
+      "subtitle": "Perioperative Care & General Surgery",
+      "emoji": "🏥",
+      "page": 1,
+      "lectureRange": "Lectures 1",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 2,
+      "title": "Abdominal & Hernia Surgery",
+      "subtitle": "Abdominal & Hernia Surgery",
+      "emoji": "🩹",
+      "page": 2,
+      "lectureRange": "Lectures 2",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 3,
+      "title": "Endocrine & Breast Surgery",
+      "subtitle": "Endocrine & Breast Surgery",
+      "emoji": "💊",
+      "page": 3,
+      "lectureRange": "Lectures 3",
+      "subjects": [],
+      "keywords": []
+    }
+  ]
+}

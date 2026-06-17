@@ -54,6 +54,12 @@ export interface Question {
   subQuestions?: SubQuestion[];
   blanks?: string[];         // correct answers for each ___ slot (in order)
   acceptedAnswers?: string[][];  // optional alternatives per blank slot
+  repetitionCount?: number;    // 2-3=★  4-5=★★  6+=★★★  auto-managed by importer
+
+  /* ── Analytics fields (reserved for future usage) ── */
+  avgCorrectRate?: number;      // 0.0–1.0, back-filled from usage logs
+  totalAttempts?: number;       // cumulative answer attempts
+  discriminationIndex?: number; // 0.0–1.0, item discrimination (how well it separates high/low performers)
 }
 
 export interface SubjectData {
@@ -62,6 +68,7 @@ export interface SubjectData {
   iconName: string;
   lectures: string;
   lectureCount: number;
+  lectureNames?: string[];
   questions: Question[];
 }
 
@@ -74,6 +81,7 @@ export interface ChapterData {
   lectureRange: string;
   accentColor: SubjectColor;
   subjects: SubjectData[];
+  keywords?: string[]; // chapter topic keywords for auto-sorting incoming questions
 }
 
 export interface QuizSession {

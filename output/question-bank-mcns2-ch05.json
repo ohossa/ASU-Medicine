@@ -1,0 +1,2086 @@
+{
+  "schemaVersion": 1,
+  "meta": {
+    "moduleCode": "MCNS-2",
+    "moduleName": "Central Nervous System",
+    "year": 2,
+    "semester": 2,
+    "creditPoints": 6,
+    "totalMarks": 200,
+    "keywords": [
+      "CNS",
+      "Neuroanatomy",
+      "Neuropharmacology",
+      "Neurophysiology",
+      "Neuropathology"
+    ]
+  },
+  "chapterTitle": "V. Anatomy of the Neck",
+  "questions": [
+    {
+      "id": "mcns2-ch1-anatomy-q8",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The sensory supply of the skin over the angle of the mandible is by:",
+      "explanation": "The great auricular nerve (C2–C3), a branch of the cervical plexus, supplies the skin over the angle of the mandible and the parotid gland. The infraorbital and mental nerves supply the upper and lower lips.",
+      "keyConcept": "Great auricular nerve (C2–C3) supplies skin over the angle of the mandible",
+      "options": [
+        "Infraorbital nerve.",
+        "Great auricular nerve.",
+        "Buccal nerve.",
+        "Mental nerve.",
+        "Infratrochlear nerve."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q20",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Infection of scalp area behind the ear affects ......... group of lymph nodes:",
+      "explanation": "The occipital group of lymph nodes lies at the apex of the posterior triangle and drains the posterior scalp region behind the ear.",
+      "keyConcept": "Scalp behind the ear drains to occipital lymph nodes",
+      "options": [
+        "Submental group.",
+        "Submandibular group.",
+        "Deep parotid group.",
+        "Superficial parotid group.",
+        "Occipital group."
+      ],
+      "correctIndex": 4
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q23",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The sensory supply of the skin over the angle of the mandible is carried by:",
+      "explanation": "The skin over the angle of the mandible is supplied by the great auricular nerve (C2–C3), which arises from the cervical plexus.",
+      "keyConcept": "Angle of mandible = C2–C3 via great auricular nerve",
+      "options": [
+        "C1+2",
+        "C2+3",
+        "C3+4",
+        "C4+5",
+        "Ch+6"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q171",
+      "type": "matching",
+      "lecture": 1,
+      "text": "As regards the internal features of the medulla, choose for each structure in left column, its appropriate description in right column:",
+      "explanation": "The nucleus solitarius receives taste fibers (special visceral afferent) from the facial, glossopharyngeal, and vagus nerves. It is the only nucleus dedicated to visceral afferent processing.",
+      "keyConcept": "Nucleus solitarius receives taste fibers",
+      "pairs": [
+        {
+          "premise": "45) Fourth ventricle",
+          "target": "d. Is present in open medulla."
+        },
+        {
+          "premise": "46) Sensory decussation",
+          "target": "c. Decussation of internal arcuate fibers."
+        },
+        {
+          "premise": "47) Descending fibers of spinal trigeminal tract",
+          "target": "e. Replaces Lissauer’s tract in spinal cord."
+        },
+        {
+          "premise": "48) Motor decussation",
+          "target": "a. Decussation of corticospinal tract."
+        },
+        {
+          "premise": "49) Spinal nucleus of trigeminal nerve",
+          "target": "b. Replaces substantia gelatinosa of spinal cord."
+        }
+      ]
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q200",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Enumerate nuclei of GVE column & the structures supplied by each nucleus.",
+      "explanation": "The inferior petrosal sinus connects the cavernous sinus to the internal jugular vein. It passes through the jugular foramen along with the glossopharyngeal, vagus, and accessory nerves.",
+      "keyConcept": "Inferior petrosal connects cavernous sinus to IJV",
+      "modelAnswer": "NUCLEI OF GVE COLUMN: (1) EDINGER-WESTPHAL NUCLEUS (III) in midbrain → ciliary ganglion → ciliary muscle and sphincter pupillae; (2) SUPERIOR SALIVARY NUCLEUS (VII) → pterygopalatine and submandibular ganglia → lacrimal, nasal, palatal glands, submandibular, sublingual glands; (3) INFERIOR SALIVARY NUCLEUS (IX) → otic ganglion → parotid gland; (4) DORSAL MOTOR NUCLEUS OF X → cardiac, pulmonary, GI parasympathetic."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q256",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The floor of digastric triangle of the neck is formed by which muscle:",
+      "explanation": "The digastric triangle (submandibular triangle) is bounded by the anterior belly of digastric anteriorly, the posterior belly of digastric posteriorly, and the inferior border of the mandible superiorly. Its floor is formed primarily by the mylohyoid muscle anteriorly and the hyoglossus muscle posteriorly. The mylohyoid separates the submandibular gland from the sublingual gland region.",
+      "keyConcept": "Floor of digastric triangle = mylohyoid and hyoglossus muscles.",
+      "options": [
+        "Mylohyoid.",
+        "Thyrohyoid.",
+        "Middle constrictor.",
+        "Stylohyoid.",
+        "Omohyoid."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q257",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The artery present in anterior part of digastric triangle of neck is:",
+      "explanation": "The digastric triangle contains the facial artery and vein as they course over the submandibular gland. In the anterior part of the triangle, the facial artery is a prominent content as it crosses the mandible to supply the face. The external carotid artery is deep to the posterior belly, while the internal carotid artery ascends outside the triangle within the carotid sheath.",
+      "keyConcept": "Facial artery is present in the anterior part of the digastric triangle.",
+      "options": [
+        "External carotid artery.",
+        "Internal carotid artery.",
+        "Ascending cervical artery.",
+        "Facial artery.",
+        "Transverse cervical artery."
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q258",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The posterior part of the floor of carotid triangle is formed by:",
+      "explanation": "The carotid triangle is bounded posteriorly by the sternocleidomastoid, superiorly by the posterior belly of digastric and stylohyoid, and inferiorly by the superior belly of omohyoid. Its floor is formed by the prevertebral fascia covering the pharyngeal constrictors; specifically, the posterior part of the floor consists of the middle and inferior constrictors of the pharynx.",
+      "keyConcept": "Posterior floor of carotid triangle = middle and inferior pharyngeal constrictors.",
+      "options": [
+        "Thyrohyoid & hyoglossus.",
+        "Mylohyoid & hyoglossus.",
+        "Sternothyroid & Thyrohyoid.",
+        "Superior & middle constrictors.",
+        "Middle & inferior constrictors."
+      ],
+      "correctIndex": 4
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q259",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The floor of anterior part of carotid triangle is formed of:",
+      "explanation": "The anterior part of the carotid triangle is bounded inferiorly by the superior belly of omohyoid medially and the anterior belly of digastric superiorly. The floor of the anterior part is formed by the mylohyoid muscle anteriorly and the hyoglossus muscle posteriorly, both of which lie deep to the contents of the submandibular region.",
+      "keyConcept": "Anterior floor of carotid triangle = mylohyoid and hyoglossus muscles.",
+      "options": [
+        "Thyrohyoid & Geniohyoid.",
+        "Middle & inferior constrictors of pharynx.",
+        "Mylohyoid & hyoglossus.",
+        "Hyoglossus & Thyrohyoid.",
+        "Superior & middle constrictors of pharynx."
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q260",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which muscle forms floor of anterior lower part of carotid triangle?",
+      "explanation": "The carotid triangle is subdivided by the digastric and omohyoid muscles. The anterior lower part is bounded by the sternocleidomastoid posteriorly and the superior belly of omohyoid superiorly. The mylohyoid muscle forms its floor in the anterior lower part, separating the contents from the oral cavity structures.",
+      "keyConcept": "Floor of anterior lower carotid triangle = mylohyoid muscle.",
+      "options": [
+        "Mylohyoid.",
+        "Hyoglossus.",
+        "Thyrohyoid.",
+        "Middle constrictor.",
+        "Omohyoid."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q263",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which of the following arteries is a content of the posterior triangle of the neck?",
+      "explanation": "The posterior triangle of the neck contains the subclavian artery (third part), trunks of the brachial plexus, spinal accessory nerve, transverse cervical artery, suprascapular artery, and external jugular vein. The transverse cervical artery is a branch of the thyrocervical trunk that crosses the floor of the posterior triangle to supply the trapezius muscle.",
+      "keyConcept": "Transverse cervical artery is a content of the posterior triangle.",
+      "options": [
+        "1st part of subclavian artery.",
+        "2nd part of subclavian artery.",
+        "Ascending cervical artery.",
+        "Deep cervical artery.",
+        "Transverse cervical artery."
+      ],
+      "correctIndex": 4
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q266",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The ansa cervicalis is found in:",
+      "explanation": "The ansa cervicalis is a loop formed by the union of the descending hypoglossal nerve (C1) and descending cervical nerve (C2-C3). It lies superficial to the carotid sheath in the lower part of the carotid triangle. It runs on the anterior surface of the common carotid artery and supplies all infrahyoid muscles except the thyrohyoid.",
+      "keyConcept": "Ansa cervicalis is found in the carotid triangle.",
+      "options": [
+        "Muscular triangle.",
+        "Supraclavicular triangle.",
+        "Digastric triangle.",
+        "Occipital triangle.",
+        "Carotid triangle."
+      ],
+      "correctIndex": 4
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q270",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which infrahyoid muscle is not supplied by the ansa cervicalis?",
+      "explanation": "The ansa cervicalis (C1-C3) supplies the sternohyoid, sternothyroid, omohyoid (both bellies), and thyrohyoid (via a branch from C1 to hypoglossal). However, the thyrohyoid is officially supplied by a branch from C1 that runs with the hypoglossal nerve and then descends as the nerve to thyrohyoid, bypassing the ansa cervicalis proper. Wait, among the options, thyrohyoid IS supplied by ansa fibers (C1) but NOT by the ansa loop itself. So E is the best answer.",
+      "keyConcept": "Thyrohyoid is supplied by nerve to thyrohyoid from C1 via hypoglossal, not by the ansa proper.",
+      "options": [
+        "Sternohyoid.",
+        "Sternothyroid.",
+        "Superior belly of Omohyoid.",
+        "Inferior belly of omohyoid.",
+        "Thyrohyoid."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q271",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The following structures are contents of the carotid sheath Except:",
+      "explanation": "The carotid sheath is formed by all three layers of deep cervical fascia and contains the common carotid artery, internal carotid artery, internal jugular vein, and vagus nerve (CN X). The sympathetic trunk lies posterior to the prevertebral fascia, outside the carotid sheath, in the retropharyngeal space.",
+      "keyConcept": "Sympathetic trunk is NOT in carotid sheath; it lies posterior to prevertebral fascia.",
+      "options": [
+        "Common carotid artery.",
+        "Internal carotid artery.",
+        "Sympathetic trunk.",
+        "Vagus nerve.",
+        "Internal jugular vein."
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q272",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Investing layer of deep cervical fascia invests all the following Except:",
+      "explanation": "The investing layer of deep cervical fascia surrounds the neck like a collar, enclosing the sternocleidomastoid, trapezius, submandibular gland, and parotid gland. The thyroid gland, however, is enclosed by the pretracheal fascia, not the investing fascia.",
+      "keyConcept": "Thyroid gland is enclosed by pretracheal fascia, not investing fascia.",
+      "options": [
+        "Parotid.",
+        "Submandibular gland.",
+        "Thyroid gland.",
+        "Trapezius.",
+        "Sternocleidomastoid."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q273",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Regarding sternocleidomastoid all are true Except:",
+      "explanation": "The sternocleidomastoid muscle arises from the manubrium sterni (anterior surface, not back) and the medial third of the clavicle. The anterior jugular vein crosses superficial (not deep) to the SCM in the superficial fascia. The external jugular vein is superficial to it, the lesser occipital nerve runs along its posterior border, and it is supplied by the spinal accessory nerve.",
+      "keyConcept": "Anterior jugular vein crosses superficial, NOT deep, to sternocleidomastoid.",
+      "options": [
+        "It arises from the back of the manubrium.",
+        "Anterior jugular vein crosses deep to it.",
+        "It is related superficially to the external jugular vein.",
+        "Lesser occipital nerve runs along its posterior border.",
+        "It is supplied by spinal part of accessory nerve."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q274",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which of following muscles subdivides the posterior triangle of neck:",
+      "explanation": "The posterior triangle of the neck is subdivided by the inferior belly of the omohyoid muscle into the occipital triangle (above, larger) and the supraclavicular triangle (below, smaller). This muscle creates a visible muscular landmark during dissection and surgery and contains the accessory nerve superiorly.",
+      "keyConcept": "Inferior belly of omohyoid subdivides posterior triangle into occipital and supraclavicular triangles.",
+      "options": [
+        "Sternocleidomastoid.",
+        "Superior belly of omohyoid.",
+        "Inferior belly of omohyoid.",
+        "Posterior belly of digastric.",
+        "Subclavius."
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q275",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The following structures form floor of post. triangle of neck Except:",
+      "explanation": "The floor of the posterior triangle is formed by prevertebral muscles covered by prevertebral fascia: from above downward, splenius capitis, levator scapulae, scalenus medius, and scalenus posterior. The investing layer of deep cervical fascia forms the roof (superficial boundary), not the floor, of the posterior triangle.",
+      "keyConcept": "Investing fascia forms ROOF (not floor) of posterior triangle.",
+      "options": [
+        "Levator scapulae.",
+        "Splenius capitis.",
+        "Scalenus medius.",
+        "Investing layer of deep cervical fascia.",
+        "Prevertebral layer of deep cervical fascia."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q276",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The sternocleidomastoid, omohyoid and trapezius bound which of the following triangles?",
+      "explanation": "The occipital triangle is the upper subdivision of the posterior triangle, bounded by the sternocleidomastoid anteriorly, the trapezius posteriorly, and the inferior belly of the omohyoid inferiorly. It contains the accessory nerve and trunks of the brachial plexus exiting between the scalene muscles.",
+      "keyConcept": "Occipital triangle is bounded by SCM, trapezius, and inferior belly of omohyoid.",
+      "options": [
+        "Carotid triangle.",
+        "Digastric triangle.",
+        "Occipital triangle.",
+        "Muscular triangle.",
+        "Submental triangle."
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q277",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "All the following lie in the posterior triangle of the neck Except:",
+      "explanation": "The posterior triangle contains the spinal accessory nerve (superficial to floor), external jugular vein (superficial), trunks of brachial plexus (between scalene muscles), transverse cervical vessels, and suprascapular vessels. The first part of the subclavian artery, however, lies medial to the anterior scalene muscle in the root of the neck, not within the posterior triangle.",
+      "keyConcept": "First part of subclavian artery is in root of neck, NOT posterior triangle.",
+      "options": [
+        "Spinal part of accessory nerve.",
+        "First part of subclavian artery.",
+        "External jugular vein.",
+        "Trunks of brachial plexus.",
+        "Occipital artery."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q279",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The anterior triangle of the neck includes all the following Except:",
+      "explanation": "The anterior triangle of the neck is bounded by the mandible superiorly, the sternocleidomastoid posterolaterally, and the midline anteriorly. It is subdivided into the submental triangle, digastric (submandibular) triangle, carotid triangle, and muscular triangle. The occipital triangle is part of the posterior triangle, not the anterior triangle.",
+      "keyConcept": "Occipital triangle is part of posterior triangle, NOT anterior triangle.",
+      "options": [
+        "The muscular triangle.",
+        "The carotid triangle.",
+        "The digastric triangle.",
+        "The submental triangle.",
+        "The occipital triangle."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q280",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "One of the following arteries is not a content of the carotid triangle:",
+      "explanation": "The carotid triangle contains the common carotid artery, its bifurcation, the internal carotid artery, and the external carotid artery with its branches (superior thyroid, lingual, facial, ascending pharyngeal, occipital). The superficial temporal artery, however, is a terminal branch of the external carotid that ascends within the parotid gland behind the temporomandibular joint, outside the carotid triangle.",
+      "keyConcept": "Superficial temporal artery is NOT in carotid triangle; it is in parotid region.",
+      "options": [
+        "The internal carotid artery.",
+        "The superior thyroid artery.",
+        "The occipital artery.",
+        "The superficial temporal artery.",
+        "The facial artery."
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q281",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The following muscle bounds the carotid triangle posteriorly:",
+      "explanation": "The carotid triangle is bounded posteriorly by the sternocleidomastoid muscle. Anteriorly it is bounded by the posterior belly of digastric and stylohyoid, superiorly by the posterior belly of digastric, and inferiorly by the superior belly of omohyoid. The sternocleidomastoid forms the posterior muscular boundary.",
+      "keyConcept": "Sternocleidomastoid bounds the carotid triangle posteriorly.",
+      "options": [
+        "Digastric (posterior belly).",
+        "Digastric (anterior belly).",
+        "Omohyoid (superior belly).",
+        "Omohyoid (inferior belly).",
+        "Sternocleidomastoid."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q282",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The following are contents of the digastric triangle Except:",
+      "explanation": "The digastric (submandibular) triangle contains the submandibular gland, facial artery and vein, hypoglossal nerve, lingual nerve, nerve to mylohyoid, and submandibular lymph nodes. The submental lymph nodes, however, are located in the submental triangle below the chin, not in the digastric triangle.",
+      "keyConcept": "Submental lymph nodes are in submental triangle, NOT digastric triangle.",
+      "options": [
+        "Submandibular salivary gland.",
+        "Facial artery and vein.",
+        "Hypoglossal nerve.",
+        "Submental lymph nodes.",
+        "Nerve to mylohyoid."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q284",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The cutaneous nerve supply over the anterior triangle of the neck is largely from:",
+      "explanation": "The skin over the anterior triangle of the neck is supplied mainly by the transverse cutaneous nerve (transverse cervical nerve), a branch of the cervical plexus (C2-C3). It emerges from behind the sternocleidomastoid and runs horizontally across the anterior triangle to supply the skin over this region.",
+      "keyConcept": "Transverse cutaneous nerve (cervical plexus C2-C3) supplies skin of anterior triangle.",
+      "options": [
+        "Dorsal rami of cervical nerves.",
+        "Great auricular nerve.",
+        "Transverse cutaneous nerve.",
+        "Suprascapular nerve.",
+        "Supraclavicular nerve."
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q285",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The following muscles are in the muscular triangle Except:",
+      "explanation": "The muscular triangle contains the infrahyoid (strap) muscles: sternohyoid, sternothyroid, omohyoid, and thyrohyoid. The hyoglossus is an extrinsic muscle of the tongue that lies deep to the digastric triangle and floor of the mouth, not within the muscular triangle of the neck.",
+      "keyConcept": "Hyoglossus is an extrinsic tongue muscle, NOT an infrahyoid strap muscle in muscular triangle.",
+      "options": [
+        "Sternohyoid.",
+        "Thyrohyoid.",
+        "Omohyoid.",
+        "Hyoglossus.",
+        "Sternothyroid."
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q287",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "A patient developed painful spasm of the neck muscles; this is most likely due to irritation of:",
+      "explanation": "Torticollis (wry neck) is characterized by painful spasm and contraction of the sternocleidomastoid muscle, causing twisting of the neck. Since the spinal accessory nerve (CN XI) supplies sternocleidomastoid and trapezius, irritation or injury to this nerve can trigger severe painful spasm of these muscles. The other options listed are purely cutaneous branches of the cervical plexus, which would cause sensory loss rather than muscle spasm.",
+      "keyConcept": "Painful neck muscle spasm (torticollis) is due to spinal accessory nerve irritation.",
+      "options": [
+        "Spinal accessory nerve.",
+        "Great auricular nerve.",
+        "Lesser occipital nerve.",
+        "Supraclavicular nerve.",
+        "Transverse cervical nerve."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q290",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Ansa cervicalis is formed by fibers from:",
+      "explanation": "The ansa cervicalis is a nerve loop formed by the union of the descending hypoglossal nerve (C1 fibers from the cervical plexus descending with the hypoglossal nerve) and the descending cervical nerve (C2-C3 fibers). It lies superficial to the carotid sheath and innervates the infrahyoid (strap) muscles: sternohyoid, sternothyroid, omohyoid, and thyrohyoid (the latter via a separate branch from C1, not through the ansa itself).",
+      "keyConcept": "Ansa cervicalis is formed by C1, C2, C3 fibers.",
+      "options": [
+        "C1,2,3.",
+        "C2,3,4.",
+        "C3,4,5.",
+        "C4,5,6.",
+        "C5,6,7."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q291",
+      "type": "matching",
+      "lecture": 1,
+      "text": "Match the nerve in the left column with its related statement in the right column:",
+      "explanation": "The cervical plexus gives cutaneous branches to the skin of the head, neck, and shoulder region. The great auricular nerve (C2-C3) supplies skin over parotid gland and mastoid. The maxillary nerve (CN V2) carries general sensation from upper teeth. The glossopharyngeal (CN IX) carries taste from posterior one-third of tongue. The facial nerve (CN VII) controls lacrimal gland secretion. The accessory nerve (CN XI) supplies sternocleidomastoid and trapezius.",
+      "keyConcept": "Great auricular = parotid skin; CN IX = taste posterior tongue; CN VII = lacrimal secretion; CN XI = SCM and trapezius.",
+      "pairs": [
+        {
+          "premise": "1) Great auricular nerve.",
+          "target": "Skin over parotid gland."
+        },
+        {
+          "premise": "2) Maxillary nerve.",
+          "target": "Tooth ache."
+        },
+        {
+          "premise": "3) Glossopharyngeal nerve.",
+          "target": "Taste of post. 1/3 of tongue."
+        },
+        {
+          "premise": "4) Facial nerve.",
+          "target": "Secretion of tears."
+        },
+        {
+          "premise": "5) Accessory nerve.",
+          "target": "Most muscles of palate."
+        }
+      ]
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q293",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which of the following branches arises from the inferior vagal ganglion?",
+      "explanation": "The vagus nerve has two ganglia: the superior (jugular) ganglion and the inferior (nodose) ganglion. The inferior vagal ganglion gives origin to the pharyngeal branches, superior laryngeal nerve, and cardiac branches. The auricular branch arises from the superior vagal ganglion, and the recurrent laryngeal nerve arises from the vagus trunk below the inferior ganglion. The meningeal branches mainly come from the superior ganglion.",
+      "keyConcept": "Pharyngeal branch arises from inferior vagal (nodose) ganglion.",
+      "options": [
+        "Meningeal branch.",
+        "Auricular branch.",
+        "Pharyngeal branch.",
+        "Carotid branch.",
+        "Recurrent laryngeal nerve."
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q295",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "All the following muscles receive motor fibers from the cervical nerves except:",
+      "explanation": "All infrahyoid and tongue-hyoid muscles in the list receive motor supply either from the cervical plexus (via ansa cervicalis or hypoglossal C1 fibers) or from cranial nerves. The mylohyoid is the exception, receiving its motor supply from the mandibular nerve (CN V3) via the nerve to mylohyoid, not from cervical spinal nerves.",
+      "keyConcept": "Mylohyoid is supplied by mandibular nerve (CN V3), not cervical nerves.",
+      "options": [
+        "Mylohyoid.",
+        "Thyrohyoid.",
+        "Geniohyoid.",
+        "Sternohyoid.",
+        "Omohyoid."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q299",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Painful spasm of the neck muscles is most likely due to irritation of which nerve?",
+      "explanation": "Painful spasm of neck muscles, known as torticollis or wry neck, is most commonly caused by irritation of the spinal accessory nerve (CN XI), which supplies the sternocleidomastoid and trapezius muscles. Irritation triggers involuntary painful contraction of these muscles, twisting the neck to one side. The other nerves listed are purely sensory cutaneous branches of the cervical plexus.",
+      "keyConcept": "Neck muscle spasm (torticollis) is due to spinal accessory nerve irritation.",
+      "options": [
+        "Spinal accessory nerve.",
+        "Greater auricular nerve.",
+        "Lesser occipital nerve.",
+        "Supraclavicular nerve.",
+        "Transverse cervical nerve."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q300",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "All the following structures pass through the jugular foramen Except:",
+      "explanation": "The jugular foramen transmits the glossopharyngeal (CN IX), vagus (CN X), and accessory (CN XI) nerves, along with the internal jugular vein and the inferior petrosal sinus. The hypoglossal nerve (CN XII) does NOT pass through the jugular foramen; it exits the skull through its own canal, the hypoglossal canal, located above the occipital condyle and anterolateral to the foramen magnum.",
+      "keyConcept": "Hypoglossal nerve (CN XII) exits through hypoglossal canal, NOT jugular foramen.",
+      "options": [
+        "Internal jugular vein.",
+        "Vagus nerve.",
+        "Hypoglossal nerve.",
+        "Accessory nerve.",
+        "Glossopharyngeal nerve."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q303",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "If the structures passing through the jugular foramen are affected by a cranial fracture, paralysed muscles would include:",
+      "explanation": "The jugular foramen transmits CN IX, X, and XI. Among the muscles listed, only the stylopharyngeus is supplied by the glossopharyngeal nerve (CN IX), which passes through the jugular foramen. The other muscles are supplied by cranial nerves that exit through other foramina: styloglossus (CN XII, hypoglossal canal), stapedius (CN VII, stylomastoid foramen), tensor palati (CN V3, foramen ovale), and orbicularis oculi (CN VII, stylomastoid foramen).",
+      "keyConcept": "Stylopharyngeus is supplied by CN IX, which passes through jugular foramen.",
+      "options": [
+        "Styloglossus.",
+        "Stylopharyngeus.",
+        "Stapedius.",
+        "Tensor palati.",
+        "Orbicularis oculi."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q304",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The recurrent laryngeal nerve:",
+      "explanation": "The recurrent laryngeal nerve is a branch of the vagus nerve (CN X) and descends deep to the pretracheal fascia in the tracheoesophageal groove. It contains motor fibers derived from the cranial part of the accessory nerve (via the vagus) that supply all intrinsic laryngeal muscles except cricothyroid. The right recurrent hooks around the subclavian artery, while the left hooks around the aortic arch.",
+      "keyConcept": "Recurrent laryngeal nerve contains cranial accessory fibers and supplies most intrinsic laryngeal muscles.",
+      "options": [
+        "Lies in front of trachea.",
+        "Contains fibers from cranial part of accessory nerve.",
+        "Is a branch of superior laryngeal nerve.",
+        "Hooks around common carotid artery.",
+        "Supplies all muscles of larynx."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q305",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The following are cutaneous branches of the cervical plexus Except:",
+      "explanation": "The cervical plexus (C1-C4) gives four main cutaneous branches: lesser occipital (C2), great auricular (C2-C3), transverse cervical (C2-C3), and supraclavicular (C3-C4). The dorsal scapular nerve, however, arises from the ROOTS of the brachial plexus (C5) and primarily supplies the rhomboids and levator scapulae; it is NOT a branch of the cervical plexus.",
+      "keyConcept": "Dorsal scapular nerve is from brachial plexus (C5), NOT cervical plexus.",
+      "options": [
+        "Transverse cutaneous N.",
+        "Great auricular N.",
+        "Lesser occipital N.",
+        "Dorsal scapular N.",
+        "Supraclavicular N."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q306",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The following are branches of the cervical plexus Except:",
+      "explanation": "The cervical plexus gives branches to the skin (cutaneous branches) and muscles. The suprascapular nerve arises from the upper trunk of the brachial plexus (formed by C5-C6), NOT from the cervical plexus. It supplies supraspinatus and infraspinatus muscles. All other listed nerves (phrenic, great auricular, supraclavicular, lesser occipital) are cervical plexus branches.",
+      "keyConcept": "Suprascapular nerve arises from brachial plexus upper trunk (C5-C6), NOT cervical plexus.",
+      "options": [
+        "Phrenic nerve.",
+        "Great auricular nerve.",
+        "Suprascapular nerve.",
+        "Supraclavicular nerve.",
+        "Lesser occipital nerve."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q307",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The ansa cervicalis:",
+      "explanation": "The ansa cervicalis is a nerve loop composed of fibers from the first three cervical nerves (C1-C3) via descending hypoglossal and descending cervical roots. It lies superficial to the carotid sheath, often crossing the internal jugular vein. It supplies most infrahyoid muscles: sternohyoid, sternothyroid, and omohyoid (but not thyrohyoid, which receives a separate C1 branch via the hypoglossal nerve).",
+      "keyConcept": "Ansa cervicalis = C1-C3 loop; lies on carotid sheath/IJV; supplies most infrahyoid muscles.",
+      "options": [
+        "Is a nerve loop on the internal jugular vein.",
+        "Is formed of fibers from the upper three cervical nerves.",
+        "Supplies most of the infrahyoid muscles.",
+        "All the above.",
+        "A & B only."
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q311",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "As regards investing layer of deep cervical fascia, choose the INCORRECT statement:",
+      "explanation": "The investing layer of deep cervical fascia lies deep to the platysma, splits to enclose the sternocleidomastoid and trapezius muscles, forms the roof of the posterior triangle, and surrounds the submandibular and parotid glands. The sphenomandibular ligament, however, is an accessory ligament of the temporomandibular joint derived from Meckel's cartilage ( cartilage of the first pharyngeal arch), NOT from the investing layer of deep cervical fascia.",
+      "keyConcept": "Sphenomandibular ligament is from Meckel's cartilage, NOT from investing layer of deep cervical fascia.",
+      "options": [
+        "It lies deep to Platysma.",
+        "It forms roof of posterior triangle of neck.",
+        "It invests trapezius muscle.",
+        "It invests submandibular gland.",
+        "It is thickened to form Sphenomandibular ligament."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q315",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "As regards the carotid sheath, choose the INCORRECT statement:",
+      "explanation": "The carotid sheath contains the common carotid artery, internal carotid artery, internal jugular vein (laterally), and vagus nerve. It is surrounded by deep cervical lymph nodes and extends from the base of the skull to the mediastinum. The sympathetic trunk, however, lies in the prevertebral fascia POSTERIOR to the sheath, NOT embedded in its posterior wall.",
+      "keyConcept": "Sympathetic trunk lies posterior to carotid sheath (in prevertebral fascia), NOT in its wall.",
+      "options": [
+        "It extends superiorly till base of skull.",
+        "It blends posteriorly with pretracheal fascia.",
+        "It contains internal jugular vein laterally.",
+        "Sympathetic trunk is embedded in its posterior wall.",
+        "It is surrounded by deep cervical lymph nodes."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q316",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "As regards the boundaries of the posterior triangle of neck, choose the INCORRECT matching:",
+      "explanation": "The posterior triangle of the neck is bounded anteriorly by the POSTERIOR border of the sternocleidomastoid muscle (not the anterior border), posteriorly by the anterior border of the trapezius, inferiorly by the clavicle (base), superiorly by the meeting of SCM and trapezius (apex), with a roof formed by the investing layer of deep cervical fascia and a floor formed by the prevertebral fascia overlying prevertebral and scalene muscles.",
+      "keyConcept": "Posterior triangle is bounded anteriorly by POSTERIOR border of sternocleidomastoid, NOT anterior border.",
+      "options": [
+        "Apex - meeting of trapezius & sternomastoid.",
+        "Base - clavicle.",
+        "Roof - investing layer of deep cervical fascia.",
+        "Floor - prevertebral fascia.",
+        "Anteriorly - anterior border of sternocleidomastoid."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q317",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "All the following are contents of posterior triangle of neck EXCEPT:",
+      "explanation": "The posterior triangle contains the spinal ACCESSORY nerve (not cranial part), trunks of the brachial plexus, transverse cervical artery and vein, suprascapular vessels, external jugular vein, and occipital artery. The cranial part of the accessory nerve joins the vagus nerve within the jugular foramen and exits the skull along with CN X; it does NOT enter or cross the posterior triangle.",
+      "keyConcept": "Cranial part of accessory nerve joins vagus; spinal part crosses posterior triangle.",
+      "options": [
+        "Suprascapular artery.",
+        "Trunks of brachial plexus.",
+        "Cranial part of accessory nerve.",
+        "Transverse cervical vein.",
+        "Occipital artery."
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q319",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "As regards contents of posterior triangle, choose CORRECT statement:",
+      "explanation": "The transverse cervical artery (also known as the cervicodorsal trunk) usually arises from the thyrocervical trunk of the subclavian artery. However, anatomical variations occur where the transverse cervical artery may arise directly from the subclavian artery as a deep branch (dorsal scapular artery). The suprascapular artery arises from the thyrocervical trunk, not the costocervical trunk.",
+      "keyConcept": "Transverse cervical artery may arise directly from subclavian artery as a variant.",
+      "options": [
+        "Anterior jugular vein ends in subclavian vein.",
+        "Subclavian artery lies infront of Scalenus anterior.",
+        "Subclavian artery may give deep branch of transverse cervical artery.",
+        "Suprascapular artery is a branch of costocervical trunk.",
+        "Lymph nodes in lower part of triangle drain posterior 1/3 of scalp."
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q320",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "As regards submental triangle, choose the INCORRECT statement:",
+      "explanation": "The submental triangle is bounded on each side by the ANTERIOR bellies of the digastric muscles (not posterior bellies), with the base formed by the hyoid bone and the apex at the symphysis menti of the mandible. It contains the submental lymph nodes and the facial artery. Since the boundary should be anterior bellies, stating posterior bellies is incorrect.",
+      "keyConcept": "Submental triangle is bounded by anterior bellies of digastric, NOT posterior bellies.",
+      "options": [
+        "Its base is formed by hyoid bone.",
+        "It is bounded on each side by posterior belly of digastric.",
+        "Its apex is formed by symphysis menti.",
+        "It contains the beginning of anterior jugular vein.",
+        "It contains mylohyoid nerve."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q321",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Anterior part of digastric triangle contains all the following EXCEPT:",
+      "explanation": "The anterior part of the digastric (submandibular) triangle contains the submandibular gland, facial artery and vein, hypoglossal nerve, lingual nerve, nerve to mylohyoid, and submandibular lymph nodes. The external carotid artery, however, lies deep to the posterior belly of digastric; while it forms part of the deep boundary, it is not typically considered a content of the anterior digastric triangle.",
+      "keyConcept": "External carotid artery is not a content of the anterior digastric triangle.",
+      "options": [
+        "Lingual nerve.",
+        "External carotid artery.",
+        "Submandibular gland.",
+        "Facial vein.",
+        "Mylohyoid nerve."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q322",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "As regards boundaries of carotid triangle, choose the INCORRECT matching:",
+      "explanation": "The carotid triangle is bounded superiorly by the posterior belly of the digastric muscle and stylohyoid, posteriorly by the anterior border of the sternocleidomastoid, and anteroinferiorly by the superior belly of the omohyoid. Its floor is formed by the hyoglossus, thyrohyoid, and pharyngeal constrictor muscles. The roof is formed by the investing layer of deep cervical fascia. Therefore, stating that the roof is the hyoglossus muscle is anatomically incorrect.",
+      "keyConcept": "Roof of carotid triangle = investing fascia; floor = hyoglossus, thyrohyoid, constrictors.",
+      "options": [
+        "Superiorly - posterior belly of digastric.",
+        "Anteriorly - superior belly of omohyoid.",
+        "Posteriorly - anterior border of sternomastoid.",
+        "Roof - hyoglossus muscle.",
+        "Floor - inferior constrictor of pharynx."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q323",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "All the following are branches of external carotid artery within the carotid triangle EXCEPT:",
+      "explanation": "Within the carotid triangle, the external carotid artery gives off several branches: superior thyroid, lingual, facial, ascending pharyngeal, and occipital arteries. The posterior auricular artery, however, arises from the external carotid artery near the posterior belly of the digastric muscle, usually above the level of the carotid triangle proper.",
+      "keyConcept": "Posterior auricular artery arises above carotid triangle, not within it.",
+      "options": [
+        "Posterior auricular artery.",
+        "Occipital artery.",
+        "Lingual artery.",
+        "Ascending pharyngeal artery.",
+        "Superior thyroid artery."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q324",
+      "type": "matching",
+      "lecture": 1,
+      "text": "Match for each muscle in left column with its appropriate nerve supply from right column:",
+      "explanation": "The infrahyoid muscles and some suprahyoid muscles have characteristic nerve supplies: stylohyoid is innervated by the facial nerve (CN VII); thyrohyoid by C1 via the hypoglossal nerve; anterior belly of digastric by the mylohyoid nerve (branch of mandibular nerve V3); sternocleidomastoid by the spinal accessory nerve (CN XI); and the inferior belly of omohyoid by the ansa cervicalis (C1-C3). These nerve-muscle relationships are clinically tested when evaluating cranial nerve palsies.",
+      "keyConcept": "Specific nerve supplies: stylohyoid = CN VII; thyrohyoid = C1; anterior digastric = V3; SCM = CN XI; omohyoid = ansa cervicalis.",
+      "pairs": [
+        {
+          "premise": "1) Stylohyoid.",
+          "target": "Facial nerve."
+        },
+        {
+          "premise": "2) Thyrohyoid.",
+          "target": "C1 through hypoglossal nerve."
+        },
+        {
+          "premise": "3) Anterior belly of digastric.",
+          "target": "Mylohyoid nerve."
+        },
+        {
+          "premise": "4) Sternocleidomastoid.",
+          "target": "Spinal accessory nerve."
+        },
+        {
+          "premise": "5) Inferior belly of omohyoid.",
+          "target": "Ansa cervicalis."
+        }
+      ]
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q325",
+      "type": "matching",
+      "lecture": 1,
+      "text": "Match each muscle in left column with its appropriate action from right column:",
+      "explanation": "The infrahyoid and suprahyoid muscles have specific actions: the mylohyoid supports the floor of the mouth and elevates the hyoid; the thyrohyoid depresses the hyoid (or elevates the larynx, depending on which end is fixed); the stylohyoid pulls the hyoid up and back; the digastric elevates the hyoid and depresses the mandible; and the sternothyroid depresses the hyoid bone and elevates the larynx when the hyoid is fixed.",
+      "keyConcept": "Mylohyoid = floor of mouth support; thyrohyoid = depresses hyoid; stylohyoid = retracts hyoid; digastric = hyoid elevation + mandible depression; sternothyroid = laryngeal elevation.",
+      "pairs": [
+        {
+          "premise": "1) Mylohyoid.",
+          "target": "Supports floor of mouth."
+        },
+        {
+          "premise": "2) Thyrohyoid.",
+          "target": "Depresses larynx."
+        },
+        {
+          "premise": "3) Stylohyoid.",
+          "target": "Pulls hyoid bone upwards & backwards."
+        },
+        {
+          "premise": "4) Digastric.",
+          "target": "Elevates hyoid bone & depresses mandible."
+        },
+        {
+          "premise": "5) Sternothyroid.",
+          "target": "Depresses hyoid bone & elevates larynx."
+        }
+      ]
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q326",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Cervical plexus gives muscular branches to all the following muscles EXCEPT:",
+      "explanation": "The cervical plexus (C1-C4) gives muscular branches to the scalene muscles, sternocleidomastoid (with accessory nerve contribution), trapezius (with accessory nerve contribution), levator scapulae (dorsal scapular nerve + C3-C4), and infrahyoid muscles via the ansa cervicalis. The mylohyoid, however, is supplied by the mandibular division of the trigeminal nerve (CN V3) via the nerve to mylohyoid, not by the cervical plexus.",
+      "keyConcept": "Mylohyoid is supplied by mandibular nerve (CN V3), NOT cervical plexus.",
+      "options": [
+        "Scalenus anterior.",
+        "Trapezius.",
+        "Levator scapulae.",
+        "Sternohyoid.",
+        "Mylohyoid."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q327",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Superior cervical sympathetic ganglion (SCSG) gives all the following branches EXCEPT:",
+      "explanation": "The superior cervical sympathetic ganglion is the largest cervical sympathetic ganglion, located at the level of C2-C3. It gives communicating branches to the last four cranial nerves (IX, X, XI, XII), pharyngeal branches for the pharyngeal plexus, cardiac branches to the superficial cardiac plexus, superior laryngeal nerve fibers, and external and internal carotid plexuses. It does NOT give direct tracheal branches (these come from the middle and inferior ganglia).",
+      "keyConcept": "Superior cervical sympathetic ganglion does NOT give tracheal branches.",
+      "options": [
+        "Communicating branches with last 4 cranial nerves.",
+        "Pharyngeal branch of pharyngeal plexus.",
+        "A cardiac branch to superficial cardiac plexus.",
+        "Tracheal branches.",
+        "Thyroid nerves."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q330",
+      "type": "matching",
+      "lecture": 1,
+      "text": "For each vagal branch in left column, choose the appropriate description from right column:",
+      "explanation": "The vagus nerve has several major branches in the neck and thorax: the external laryngeal nerve (motor to cricothyroid); the recurrent laryngeal nerves (right loops around subclavian artery, left around aortic arch); the auricular branch from the superior vagal ganglion; and the pharyngeal branch from the inferior vagal ganglion contributing to the pharyngeal plexus.",
+      "keyConcept": "External laryngeal = cricothyroid; recurrent laryngeal encircles great vessels; auricular = superior ganglion; pharyngeal = inferior ganglion.",
+      "pairs": [
+        {
+          "premise": "1) External laryngeal N.",
+          "target": "Supplies cricothyroid."
+        },
+        {
+          "premise": "2) Right recurrent laryngeal N.",
+          "target": "Begins in neck & ascends in tracheo-esophageal groove."
+        },
+        {
+          "premise": "3) Auricular nerve.",
+          "target": "Arises from superior vagal ganglion."
+        },
+        {
+          "premise": "4) Pharyngeal N.",
+          "target": "Arises from inferior vagal ganglion."
+        },
+        {
+          "premise": "5) Left recurrent laryngeal N.",
+          "target": "Winds around arch of aorta."
+        }
+      ]
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q332",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Enumerate superior & inferior attachments of investing layer of deep cervical fascia.",
+      "explanation": "The investing layer is the most superficial layer of deep cervical fascia. It splits to enclose the sternocleidomastoid and trapezius muscles and forms a collar around the neck. Superiorly, it attaches to the superior nuchal line, external occipital protuberance, mastoid process, zygomatic arch, and lower border of the mandible. Inferiorly, it attaches to the ligamentum nuchae, spine of the seventh cervical vertebra, acromion process, clavicle, and the manubrium of the sternum.",
+      "keyConcept": "Investing layer encloses SCM and trapezius; attaches skull to acromion, clavicle, and manubrium.",
+      "modelAnswer": "Superior attachments: superior nuchal line, external occipital protuberance, mastoid process, zygomatic arch, and lower border of the body of mandible. Inferior attachments: ligamentum nuchae, spine of C7, acromion process, clavicle, and manubrium sterni. The fascia splits to enclose the sternocleidomastoid and trapezius muscles."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q335",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Describe contents & relations of carotid sheath.",
+      "explanation": "The carotid sheath is a condensation of deep cervical fascia surrounding the major vascular structures of the neck. It contains the common carotid artery (medially, below the bifurcation) and internal carotid artery (medially, above), the internal jugular vein (laterally), and the vagus nerve (posteriorly, between the artery and vein). It is surrounded by deep cervical lymph nodes and is crossed anteriorly by the sternocleidomastoid muscle. Posteriorly, it is related to the prevertebral fascia and cervical sympathetic trunk; medially to the trachea, esophagus, and thyroid gland.",
+      "keyConcept": "Carotid sheath contains carotid arteries, internal jugular vein, and vagus nerve; surrounded by deep cervical lymph nodes.",
+      "modelAnswer": "Contents: common and internal carotid arteries (medial), internal jugular vein (lateral), vagus nerve (posterior, between artery and vein). Relations: anteriorly by sternocleidomastoid; posteriorly by prevertebral fascia and sympathetic trunk; medially by trachea, esophagus, and thyroid gland. The sheath extends from the base of the skull to the thoracic inlet."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q336",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Describe origin, insertion, nerve supply & action of sternocleidomastoid.",
+      "explanation": "Sternocleidomastoid (SCM) is the most prominent muscle of the neck, forming the boundary between the anterior and posterior triangles. It has two heads: a rounded sternal head from the manubrium sterni and a broad clavicular head from the medial third of the clavicle. Both heads merge and insert into the mastoid process of the temporal bone and the lateral half of the superior nuchal line. It is supplied by the spinal accessory nerve (CN XI) with proprioceptive fibers from C2-C3. Its actions: unilateral contraction turns the face to the opposite side and tilts the head toward the same side; bilateral contraction extends the head at the atlanto-occipital joint and flexes the cervical spine.",
+      "keyConcept": "SCM turns face opposite and tilts same side; bilateral = neck flexion + head extension; supplied by CN XI.",
+      "modelAnswer": "Origin: sternal head from the manubrium sterni; clavicular head from the medial one-third of the clavicle. Insertion: lateral surface of the mastoid process and lateral half of the superior nuchal line of the occipital bone. Nerve supply: spinal accessory nerve (CN XI) and proprioceptive fibers from C2-C3. Actions: unilateral contraction turns the face to the opposite side and tilts the head to the same side; bilateral contraction extends the head and flexes the neck."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q337",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Describe boundaries of posterior triangle of neck.",
+      "explanation": "The posterior triangle of the neck is a clinically important space bounded by the sternocleidomastoid muscle (anteriorly), the trapezius (posteriorly), and the clavicle (inferiorly/base). Its apex is formed by the meeting of the SCM and trapezius. The roof is formed by the investing layer of deep cervical fascia. The floor is formed by the prevertebral fascia covering the levator scapulae and scalene muscles (scalenus medius and anterior). It contains important neurovascular structures, including the accessory nerve, brachial plexus trunks, and subclavian vessels.",
+      "keyConcept": "Posterior triangle: SCM + trapezius + clavicle; roof = investing fascia; floor = prevertebral fascia over scalene muscles.",
+      "modelAnswer": "Apex: meeting of sternocleidomastoid and trapezius superiorly. Base: middle one-third of clavicle. Anterior boundary: posterior border of sternocleidomastoid. Posterior boundary: anterior border of trapezius. Roof: investing layer of deep cervical fascia. Floor: prevertebral fascia overlying levator scapulae, scalenus medius, and scalenus anterior muscles."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q338",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Enumerate contents of posterior triangle of neck.",
+      "explanation": "The posterior triangle contains numerous clinically significant structures. The accessory nerve (CN XI) crosses the triangle obliquely. The cutaneous branches of the cervical plexus emerge at the midpoint of the posterior border of the SCM (Erb's point). The trunks of the brachial plexus emerge between scalenus anterior and medius. The floor contains the levator scapulae and scalene muscles. The triangle also contains the transverse cervical and suprascapular vessels, external jugular vein, occipital artery, and deep cervical lymph nodes.",
+      "keyConcept": "Contents include CN XI, brachial plexus trunks, subclavian artery, suprascapular/transverse cervical vessels, external jugular, and deep cervical nodes.",
+      "modelAnswer": "Nerves: accessory nerve (CN XI), cutaneous branches of cervical plexus (great auricular, lesser occipital, supraclavicular, transverse cervical), trunks of brachial plexus. Vessels: external jugular vein, subclavian vein, transverse cervical artery and vein, suprascapular artery and vein, occipital artery, and third part of subclavian artery. Muscles: levator scapulae, scalenus medius, scalenus anterior. Lymph: supraclavicular and occipital lymph nodes."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q339",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Enumerate boundaries of anterior triangle of neck.",
+      "explanation": "The anterior triangle of the neck is the triangular space located anterior to the sternocleidomastoid muscle. It is bounded above by the body of the mandible (and the line extending from the angle of the mandible to the mastoid process), posteriorly by the anterior border of the sternocleidomastoid, and anteriorly by the midline of the neck from the symphysis menti to the suprasternal notch. Its roof consists of the platysma and the investing layer of deep cervical fascia. The floor is formed by the mylohyoid, hyoglossus, geniohyoid, thyrohyoid, sternohyoid, and sternothyroid muscles, as well as the constrictors of the pharynx. It is subdivided into four smaller triangles: submental, digastric (submandibular), carotid, and muscular.",
+      "keyConcept": "Anterior triangle = SCM + mandible + midline; subdivided into submental, digastric, carotid, and muscular.",
+      "modelAnswer": "Boundaries: anterior border of sternocleidomastoid (posteriorly), midline of neck from chin to sternum (anteriorly), and lower border of mandible (superiorly). Floor: mylohyoid, hyoglossus, geniohyoid, thyrohyoid, sternohyoid, sternothyroid, constrictors of the pharynx. Roof: platysma and investing fascia. Subdivided into submental, digastric (submandibular), carotid, and muscular triangles."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q340",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Enumerate boundaries & contents of submental triangle.",
+      "explanation": "The submental triangle is located below the chin, between the two anterior bellies of the digastric muscles. Its base is the hyoid bone, and its apex is the symphysis menti. The floor is the mylohyoid muscle. It contains the submental lymph nodes, which drain the chin, lower lip, and floor of the mouth. The facial artery also crosses this triangle, and the anterior jugular vein may begin here.",
+      "keyConcept": "Submental triangle: between anterior digastric bellies, hyoid base, mylohyoid floor, contains submental nodes.",
+      "modelAnswer": "Boundaries: between the anterior bellies of the left and right digastric muscles (lateral sides), base formed by the body of the hyoid bone, apex formed by the symphysis menti. Floor: mylohyoid muscle. Contents: submental lymph nodes (drain chin, lower lip, and floor of mouth), facial artery, and origin of the anterior jugular veins."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q341",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Enumerate boundaries & contents of digastric triangle.",
+      "explanation": "The digastric (submandibular) triangle is bounded by the anterior and posterior bellies of the digastric muscle and the lower border of the body of the mandible. The floor is formed by the mylohyoid, hyoglossus, and the superior and middle constrictor muscles of the pharynx. Its roof is formed by the investing fascia and platysma. It contains the submandibular salivary gland, facial artery and vein, mylohyoid nerve, lingual nerve, hypoglossal nerve, submandibular ganglion, cervical group of lymph nodes, and the external carotid artery (deep to posterior belly).",
+      "keyConcept": "Digastric triangle contains submandibular gland, facial artery/vein, lingual nerve, hypoglossal nerve, mylohyoid nerve, and submandibular nodes.",
+      "modelAnswer": "Boundaries: anterior belly of digastric, posterior belly of digastric, and lower border of mandible. Floor: mylohyoid, hyoglossus, superior and middle pharyngeal constrictors. Roof: investing fascia + platysma. Contents: submandibular gland, facial artery & vein, lingual nerve, hypoglossal nerve, mylohyoid nerve, submandibular ganglion, submandibular lymph nodes, and deep portion of external carotid artery."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q342",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Enumerate boundaries & contents of carotid triangle.",
+      "explanation": "The carotid triangle is bounded superiorly by the posterior belly of the digastric and stylohyoid muscles, anteroinferiorly by the superior belly of the omohyoid muscle, and posteriorly by the anterior border of the sternocleidomastoid muscle. The floor is formed by the hyoglossus, thyrohyoid, and the inferior pharyngeal constrictor muscles. Its roof is the investing fascia. It contains the bifurcation of the common carotid artery into internal and external carotid arteries; the internal jugular vein; the vagus nerve (CN X); the hypoglossal nerve (CN XII); the accessory nerve (CN XI); the glossopharyngeal nerve (CN IX); the superior laryngeal nerve; the ansa cervicalis; and deep cervical lymph nodes.",
+      "keyConcept": "Carotid triangle contains carotid bifurcation, IJV, CN IX/X/XI/XII, ansa cervicalis, and superior laryngeal nerve.",
+      "modelAnswer": "Boundaries: posterior belly of digastric and stylohyoid (superiorly), superior belly of omohyoid (anteroinferiorly), and anterior border of sternocleidomastoid (posteriorly). Floor: hyoglossus, thyrohyoid, and inferior constrictor of pharynx. Roof: investing fascia. Contents: common carotid bifurcation, internal & external carotid arteries, internal jugular vein, vagus nerve (CN X), hypoglossal nerve (CN XII), accessory nerve (CN XI), glossopharyngeal nerve (CN IX), ansa cervicalis, superior laryngeal nerve, and deep cervical lymph nodes."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q343",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Enumerate branches of cervical plexus.",
+      "explanation": "The cervical plexus is formed by the ventral rami of C1-C4 spinal nerves. Its cutaneous branches emerge near Erb's point (midpoint of posterior border of SCM) and include: (1) lesser occipital (C2), (2) great auricular (C2-C3), (3) transverse cervical (C2-C3), and (4) supraclavicular (C3-C4). Its muscular branches include the ansa cervicalis (C1-C3), phrenic nerve (C3-C5), segmental branches to prevertebral and scalene muscles, branches to sternocleidomastoid (with CN XI contribution), trapezius (with CN XI contribution), levator scapulae, and the nerve to rhomboids (dorsal scapular nerve, C4-C5).",
+      "keyConcept": "Cervical plexus branches: 4 cutaneous (lesser occipital, great auricular, transverse cervical, supraclavicular) and muscular (ansa cervicalis, phrenic, dorsal scapular).",
+      "modelAnswer": "Cutaneous branches: (1) lesser occipital (C2), (2) great auricular (C2-C3), (3) transverse cervical (C2-C3), (4) supraclavicular (C3-C4). Muscular branches: ansa cervicalis (C1-C3), phrenic nerve (C3-C5), branches to sternocleidomastoid and trapezius (with CN XI), levator scapulae, dorsal scapular nerve to rhomboids (C4-C5), and segmental branches to scalene muscles."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q344",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Give a short account on ansa cervicalis.",
+      "explanation": "The ansa cervicalis is a nerve loop in the anterior triangle of the neck formed by the descending hypoglossal nerve (C1 fibers traveling with the hypoglossal nerve) and the descending cervical nerve (C2-C3 fibers from the cervical plexus). It lies superficial to the internal jugular vein and carotid sheath. It innervates the infrahyoid muscles: sternohyoid, sternothyroid, and omohyoid (both bellies). The thyrohyoid and geniohyoid are supplied by separate branches from C1.",
+      "keyConcept": "Ansa cervicalis = C1 + C2-C3 loop on carotid sheath; supplies sternohyoid, sternothyroid, and omohyoid.",
+      "modelAnswer": "The ansa cervicalis is formed by the union of a descending branch from the cervical plexus (C2-C3) and a descending branch of the hypoglossal nerve (descending hypoglossi) containing C1 fibers. It lies on the anterior wall of the carotid sheath. It supplies the sternohyoid, sternothyroid, and omohyoid muscles (both bellies of omohyoid). The thyrohyoid and geniohyoid receive direct C1 branches via the hypoglossal nerve."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q345",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Enumerate branches of superior cervical sympathetic ganglion (SCSG).",
+      "explanation": "The superior cervical sympathetic ganglion (SCSG) is the largest cervical ganglion, located at the level of C1-C3 and the internal carotid artery. Its branches include: (1) gray rami communicantes to C1-C4 spinal nerves; (2) a branch to the internal carotid artery forming the internal carotid plexus (distributed to the eye and blood vessels of the head); (3) branches to the external carotid artery; (4) the pharyngeal branch contributing to the pharyngeal plexus; (5) superior laryngeal nerve; (6) cardiac branches to the superficial cardiac plexus; and (7) communicating branches to the last four cranial nerves (IX, X, XI, XII).",
+      "keyConcept": "SCSG branches: gray rami C1-C4, internal/external carotid plexuses, pharyngeal branch, superior laryngeal, cardiac.",
+      "modelAnswer": "Branches of SCSG: (1) gray rami to C1-C4; (2) internal carotid plexus to eye and head vessels; (3) external carotid plexus; (4) pharyngeal plexus branch; (5) superior laryngeal nerve; (6) cardiac branches to superficial cardiac plexus; (7) communicating branches to last four cranial nerves (glossopharyngeal, vagus, accessory, hypoglossal)."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q348",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Enumerate branches of superior & inferior vagal ganglia.",
+      "explanation": "The vagus nerve has a superior (jugular) ganglion and an inferior (nodose) ganglion in the neck. The superior vagal ganglion gives off the auricular branch (Arnold's nerve), which supplies sensation to the skin of the external acoustic meatus and the tympanic membrane, and the meningeal branch to the posterior cranial fossa dura. The inferior vagal ganglion gives rise to: the pharyngeal branch (joins pharyngeal plexus), the superior laryngeal nerve (dividing into external and internal branches), cardiac branches (to superficial and deep cardiac plexuses), and the recurrent laryngeal nerve (right loops around subclavian, left loops around aorta).",
+      "keyConcept": "Superior ganglion: auricular and meningeal branches. Inferior ganglion: pharyngeal, superior laryngeal, cardiac, recurrent laryngeal, and visceral branches.",
+      "modelAnswer": "Superior vagal ganglion branches: (1) auricular branch (Arnold's nerve), (2) meningeal branch. Inferior vagal ganglion branches: (1) pharyngeal branch, (2) superior laryngeal nerve (external and internal), (3) cardiac branches, (4) recurrent laryngeal nerve, (5) bronchial, esophageal, and gastric branches."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q349",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Mention the boundaries & the floor of the carotid triangle of the neck.",
+      "explanation": "The carotid triangle is one of the subdivisions of the anterior triangle of the neck. Its boundaries are formed by important muscles that define the surgical approach to the carotid vessels and cranial nerves. The floor muscles include the hyoglossus, thyrohyoid, and the inferior constrictor of the pharynx, which are clinically relevant during surgical dissection in this area.",
+      "keyConcept": "Carotid triangle floor: hyoglossus, thyrohyoid, sternohyoid, inferior pharyngeal constrictor, and thyroid.",
+      "modelAnswer": "Boundaries: superiorly by posterior belly of digastric and stylohyoid; anteroinferiorly by superior belly of omohyoid; posteriorly by anterior border of sternocleidomastoid. Floor: hyoglossus, thyrohyoid, sternohyoid (superior part), inferior constrictor of pharynx, and thyroid gland."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q350",
+      "type": "essay",
+      "lecture": 1,
+      "text": "List the vessels present in the posterior triangle of the neck",
+      "explanation": "The posterior triangle of the neck is a significant anatomical area containing several important vessels. Venous structures include the external jugular vein, subclavian vein, and various tributaries such as the transverse cervical, suprascapular, and anterior jugular veins. Arterial structures include the third part of the subclavian artery, occipital artery, and the transverse cervical and suprascapular arteries.",
+      "keyConcept": "Posterior triangle vessels: EJV, subclavian, transverse cervical, suprascapular, occipital, and third part of subclavian artery.",
+      "modelAnswer": "Veins: external jugular vein, subclavian vein, internal jugular vein (deep), transverse cervical vein, suprascapular vein, anterior jugular vein, and posterior external jugular vein. Arteries: third part of subclavian artery, occipital artery, transverse cervical artery, suprascapular artery, and superficial cervical artery."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q524",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The anterior triangle of the neck, include the following Except one:",
+      "explanation": "The occipital triangle is located in the posterior triangle of the neck, not the anterior triangle. The anterior triangle boundaries are: sternocleidomastoid (posterior), sternohyoid (anterior), and superior border of mandible (superior).",
+      "keyConcept": "Anterior triangle of neck is bounded by sternocleidomastoid, sternohyoid, and mandible; contains carotid, muscular, digastric, and submental triangles.",
+      "options": [
+        "The muscular triangle.",
+        "The carotid triangle.",
+        "The digastric triangle.",
+        "½ the submental triangle.",
+        "The occipital triangle."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q600",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Which nerve passes through the hypoglossal canal?",
+      "explanation": "The hypoglossal nerve (CN XII) passes through the hypoglossal canal in the occipital bone. It supplies all intrinsic and most extrinsic muscles of the tongue (except palatoglossus, supplied by cranial part of accessory nerve via vagus).",
+      "keyConcept": "CN XII passes through hypoglossal canal. Nerve to mylohyoid and anterior digastric branch of V3.",
+      "modelAnswer": "Hypoglossal nerve (CN XII). It passes through the hypoglossal canal in the occipital bone to supply the muscles of the tongue."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q621",
+      "type": "essay",
+      "lecture": 1,
+      "text": "What forms the floor of the posterior triangle?",
+      "explanation": "The floor of the posterior triangle is formed (from medial to lateral) by: semispinalis capitis, splenius capitis, levator scapulae, scalenus medius, and scalenus anterior. These muscles form the muscular floor of the triangle.",
+      "keyConcept": "Posterior triangle floor: semispinalis capitis, splenius capitis, levator scapulae, scalenus medius, scalenus anterior.",
+      "modelAnswer": "Semispinalis capitis (most medial), splenius capitis, levator scapulae, scalenus medius, and scalenus anterior (most lateral). These muscles form the floor from medial to lateral."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q622",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Mention 5 contents of the posterior triangle.",
+      "explanation": "The posterior triangle contains: spinal accessory nerve (motor to SCM and trapezius), roots and trunks of brachial plexus (between scalenes), cutaneous nerves of cervical plexus (great auricular, lesser occipital, transverse cervical, supraclavicular), subclavian vein (draining arm), and external jugular vein.",
+      "keyConcept": "Posterior triangle contents: CN XI, brachial plexus roots/trunks, cervical plexus cutaneous nerves, subclavian vein, external jugular vein.",
+      "modelAnswer": "Spinal accessory nerve (CN XI), roots and trunks of brachial plexus, cutaneous nerves of cervical plexus, subclavian vein, and external jugular vein."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q623",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Mention the cutaneous branches of the cervical plexus.",
+      "explanation": "The cutaneous branches of the cervical plexus are: great auricular nerve (to ear), lesser occipital nerve (to scalp behind ear), transverse cervical nerve (to anterior neck), and supraclavicular nerves (to shoulder and chest).",
+      "keyConcept": "Cervical plexus cutaneous: great auricular, lesser occipital, transverse cervical, supraclavicular nerves.",
+      "modelAnswer": "Great auricular nerve (to ear and parotid region), lesser occipital nerve (to scalp behind ear), transverse cervical nerve (to anterior and lateral neck), and supraclavicular nerves (to skin over shoulder and upper chest)."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q624",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Mention the boundaries of the anterior triangle.",
+      "explanation": "The anterior triangle is bounded: anteriorly by the anterior median line of neck, posteriorly by the anterior border of sternocleidomastoid, and superiorly by the inferior border of mandible and a line from the angle of mandible to the mastoid process.",
+      "keyConcept": "Anterior triangle: anterior = midline neck, posterior = SCM, superior = mandible to mastoid.",
+      "modelAnswer": "Anteriorly: anterior median line of neck. Posteriorly: anterior border of sternocleidomastoid muscle. Superiorly: inferior border of mandible and a line joining the angle of mandible to the mastoid process."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q625",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Mention the boundaries of submental triangle.",
+      "explanation": "The submental triangle has: base = body of hyoid bone, apex = symphysis menti (chin), and sides = anterior bellies of both digastric muscles. The floor is formed by the two mylohyoid muscles meeting in the midline.",
+      "keyConcept": "Submental triangle: base = hyoid, apex = symphysis menti, sides = anterior bellies of digastric, floor = mylohyoid muscles.",
+      "modelAnswer": "Base: hyoid bone. Apex: symphysis menti (chin). On each side: anterior belly of digastric muscle. Floor: two mylohyoid muscles meeting at the midline raphe."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q626",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Mention the contents of submental triangle.",
+      "explanation": "The submental triangle contains: submental lymph nodes (draining chin and central lower lip), submental artery and vein, small veins uniting to form the anterior jugular vein, and the mylohyoid nerve and vessels.",
+      "keyConcept": "Submental triangle: submental LN, submental vessels, anterior jugular tributaries, mylohyoid nerve.",
+      "modelAnswer": "Submental lymph nodes, submental artery and vein, small veins that unite to form the anterior jugular vein, and mylohyoid nerve and vessels."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q629",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Mention the boundaries of carotid triangle.",
+      "explanation": "The carotid triangle is bounded: superiorly by the posterior belly of digastric, anteriorly by the superior belly of omohyoid, and posteriorly by the anterior border of sternocleidomastoid. The floor is formed by hyoglossus, thyrohyoid, and the constrictor muscles.",
+      "keyConcept": "Carotid triangle: superior = posterior digastric, anterior = superior omohyoid, posterior = SCM, floor = hyoglossus, thyrohyoid, constrictors.",
+      "modelAnswer": "Superiorly: posterior belly of digastric. Anteriorly: superior belly of omohyoid. Posteriorly: anterior border of sternocleidomastoid. Roof: skin, superficial fascia, investing layer of deep cervical fascia. Floor: hyoglossus, thyrohyoid, and middle and inferior constrictors of the pharynx."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q630",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Mention 3 contents of carotid triangle.",
+      "explanation": "The carotid triangle contains the common carotid artery (CCA), internal carotid artery (ICA), and external carotid artery (ECA), along with their branches. The bifurcation of the CCA occurs in this triangle.",
+      "keyConcept": "Carotid triangle: contains CCA, ICA, ECA. Bifurcation and carotid sinus/body are here.",
+      "modelAnswer": "Common carotid artery (CCA), internal carotid artery (ICA), and external carotid artery (ECA). The carotid bifurcation occurs in this triangle, along with the carotid sinus and carotid body."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q632",
+      "type": "essay",
+      "lecture": 1,
+      "text": "What is the nerve supply of infrahyoid muscles?",
+      "explanation": "All infrahyoid muscles are supplied by the ansa cervicalis (C1-C3) EXCEPT the thyrohyoid, which is supplied by C1 fibers that travel with the hypoglossal nerve (CN XII) before branching off to supply it.",
+      "keyConcept": "Infrahyoid: ansa cervicalis (C1-C3) except thyrohyoid (C1 via CN XII).",
+      "modelAnswer": "All infrahyoid muscles are supplied by ansa cervicalis (C1-C3 fibers) except thyrohyoid, which is supplied by C1 fibers that accompany the hypoglossal nerve (CN XII) before descending to supply it."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q633",
+      "type": "essay",
+      "lecture": 1,
+      "text": "What is the nerve supply of suprahyoid muscles?",
+      "explanation": "The suprahyoid muscles have different innervation: anterior belly of digastric and mylohyoid are supplied by the nerve to mylohyoid (branch of V3), posterior belly of digastric and stylohyoid by the facial nerve (CN VII) directly, and geniohyoid by C1 fibers via the hypoglossal nerve.",
+      "keyConcept": "Suprahyoid: anterior digastric + mylohyoid = V3 (mylohyoid nerve); posterior digastric + stylohyoid = CN VII; geniohyoid = C1 via CN XII.",
+      "modelAnswer": "Anterior belly of digastric and mylohyoid by the nerve to mylohyoid (branch of V3). Posterior belly of digastric and stylohyoid by the facial nerve (CN VII). Geniohyoid by C1 fibers that travel with the hypoglossal nerve."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q648",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which of the following nerves supplying the scalp is derived from dorsal rami of spinal nerves?",
+      "explanation": "The greater occipital nerve (C2 dorsal ramus) is the only scalp nerve derived from dorsal rami of spinal nerves; all other listed nerves are derived from ventral rami (cervical plexus).",
+      "keyConcept": "Greater occipital nerve dorsal ramus origin",
+      "options": [
+        "Zypomaticotemporal",
+        "Great auricular",
+        "Greater occipital",
+        "Lesser occipital",
+        "None of the above"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q649",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The posterior triangle of the neck",
+      "explanation": "The posterior triangle is bounded by sternocleidomastoid, trapezius, and clavicle (not mandible); it is roofed by the superficial fascia and prevertebral layer of deep cervical fascia.",
+      "keyConcept": "Posterior triangle boundaries and roof",
+      "options": [
+        "Is bordered by sternocleidomastoid, mandible and trapezius",
+        "Has the accessory nerve beneath fascia of its floor",
+        "Is roofed by prevertebral layer of fascia",
+        "Contains the internal jugular vein",
+        "Contains trunks of the brachial plexus"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q650",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The anterior triangle of the neck, include the following",
+      "explanation": "The anterior triangle has four subdivisions (muscular, carotid, digastric, submental); the occipital triangle is part of the posterior triangle, not anterior triangle.",
+      "keyConcept": "Anterior triangle subdivisions",
+      "options": [
+        "The muscular triangle",
+        "The carotid triangle",
+        "The digastric triangle",
+        "The submental triangle",
+        "The occipital triangle"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q673",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which of the following muscles subdivides the posterior triangle of the neck:",
+      "explanation": "The inferior belly of the omohyoid muscle subdivides the posterior triangle into an occipital triangle (above) and a supraclavicular triangle (below). The sternocleidomastoid forms the anterior border; the superior belly of omohyoid is within the anterior triangle.",
+      "keyConcept": "Inferior belly of omohyoid subdivides posterior triangle into two parts",
+      "options": [
+        "Sternocleidomastoid.",
+        "Superior belly of omohyoid.",
+        "Inferior belly of omohyoid.",
+        "Posterior belly of digastric.",
+        "Subclavius."
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q674",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The following structures form the floor of the posterior triangle of the neck Except:",
+      "explanation": "The floor of the posterior triangle is formed by the levator scapulae, splenius capitis, and scalenus medius muscles, covered by the prevertebral layer of deep cervical fascia. The investing layer surrounds the trapezius and sternocleidomastoid, not forming the floor.",
+      "keyConcept": "Investing layer of deep cervical fascia is NOT part of floor of posterior triangle - EXCEPTION",
+      "options": [
+        "Levatorscapulae.",
+        "Splenuis capitis.",
+        "Scalenus medius.",
+        "Investing layer of deep cervical fascia.",
+        "Prevertebral layer of deep cervical fascia."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q720",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "The vein running along the roof of the posterior triangle of the neck drains into which vein?",
+      "explanation": "The external jugular vein drains the posterior triangle of the neck and empties into the subclavian vein (or sometimes the internal jugular vein at the root of the neck).",
+      "keyConcept": "External jugular vein drains posterior triangle and joins subclavian vein.",
+      "options": [
+        "External jugular vein",
+        "Internal jugular vein",
+        "Subclavian vein",
+        "Brachiocephalic vein",
+        "Cephalic vein"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q727",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Which nerve provides cutaneous innervation to the skin overlying the angle of the mandible?",
+      "explanation": "The great auricular nerve (from C2-C3 cervical plexus) provides cutaneous innervation to the skin overlying the angle of the mandible and parotid region.",
+      "keyConcept": "Great auricular nerve (C2-C3) supplies sensation over the mandibular angle and parotid area.",
+      "options": [
+        "Marginal mandibular nerve",
+        "Great auricular nerve",
+        "Transverse cervical nerve",
+        "Lesser occipital nerve",
+        "Auriculotemporal nerve"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q742",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Which structure is located within the carotid sheath?",
+      "explanation": "The carotid sheath contains the common/internal carotid artery, internal jugular vein, and vagus nerve (CN X). It extends from the carotid bifurcation to the root of the neck.",
+      "keyConcept": "Carotid sheath contains ICA, IJV, and CN X - a true fascial investment of the neck vessels.",
+      "options": [
+        "Sympathetic trunk",
+        "Vagus nerve",
+        "Phrenic nerve",
+        "Ansa cervicalis",
+        "Hypoglossal nerve"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q979",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Fracture of posterior cranial fossa:",
+      "explanation": "Posterior cranial fossa fractures allow blood to escape into the nape of neck and posterior triangle due to gravity, presenting with mastoid and neck bruising that tracks inferiorly.",
+      "keyConcept": "Posterior fossa fracture: blood tracks to nape and posterior triangle of neck.",
+      "modelAnswer": "Blood escapes into nape and posterior triangle of neck."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1015",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Floor of posterior triangle:",
+      "explanation": "The floor of the posterior triangle is formed by the semispinalis capitis, splenius capitis, levator scapulae, scalenus medius, and scalenus anterior muscles, from superficial to deep.",
+      "keyConcept": "Posterior triangle floor: semispinalis capitis, splenius capitis, levator scapulae, scalenus medius and anterior.",
+      "modelAnswer": "Semispinalis capitis, splenius capitis, levator scapulae, scalenus medius, scalenus anterior."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1016",
+      "type": "essay",
+      "lecture": 1,
+      "text": "5 contents of posterior triangle:",
+      "explanation": "Five important contents of the posterior triangle are the spinal accessory nerve, roots and trunks of the brachial plexus, cutaneous nerves of the cervical plexus, subclavian vein, and external jugular vein.",
+      "keyConcept": "Posterior triangle contents: spinal accessory, brachial plexus roots/trunks, cervical plexus cutaneous, subclavian vein, EJV.",
+      "modelAnswer": "Spinal accessory nerve, roots/trunks of brachial plexus, cutaneous nerves of cervical plexus, subclavian vein, external jugular vein."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1017",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Cutaneous branches of cervical plexus:",
+      "explanation": "The cervical plexus cutaneous branches are the great auricular (C2-3 to ear and parotid), lesser occipital (C2 to lateral scalp), transverse cervical (C2-3 to lateral neck), and supraclavicular nerves (C3-4 to shoulder and chest).",
+      "keyConcept": "Cervical plexus: great auricular, lesser occipital, transverse cervical, supraclavicular nerves.",
+      "modelAnswer": "Great auricular, lesser occipital, transverse cervical, supraclavicular."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1018",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Boundaries of anterior triangle:",
+      "explanation": "The anterior triangle is bounded anteriorly by the anterior median line of the neck, posteriorly by the anterior border of sternocleidomastoid, and superiorly by the inferior border of the mandible and line extending to the mastoid process.",
+      "keyConcept": "Anterior triangle: midline anterior, sternomastoid posterior, mandible/mastoid line superior.",
+      "modelAnswer": "Anterior: anterior median line; Posterior: anterior border of sternomastoid; Superior: inferior border of mandible and line to mastoid."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1019",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Boundaries of submental triangle:",
+      "explanation": "The submental triangle has its apex at the symphysis menti, sides formed by the anterior bellies of the digastric muscles, base along the body of hyoid, and floor formed by the mylohyoid muscles.",
+      "keyConcept": "Submental triangle: apex symphysis menti, sides anterior bellies of digastric, base hyoid body, floor mylohyoid.",
+      "modelAnswer": "Apex: symphysis menti; Sides: anterior bellies of digastric; Base: body of hyoid; Floor: mylohyoid muscles."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1020",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Contents of submental triangle:",
+      "explanation": "Contents of the submental triangle include the submental lymph nodes, submental artery and vein, mylohyoid nerve and vessels, and small veins that contribute to the anterior jugular vein formation.",
+      "keyConcept": "Submental contents: submental nodes, vessels, mylohyoid nerve and vessels, veins to anterior jugular.",
+      "modelAnswer": "Submental lymph nodes, submental artery and vein, mylohyoid nerve and vessels, small veins forming anterior jugular."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1023",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Boundaries of carotid triangle:",
+      "explanation": "The carotid triangle is bounded superiorly by the posterior belly of digastric, anteriorly by the superior belly of omohyoid, posteriorly by the anterior border of sternocleidomastoid; the floor is formed by hyoglossus, thyrohyoid, and the middle and inferior pharyngeal constrictors.",
+      "keyConcept": "Carotid triangle: posterior digastric superior, omohyoid anterior, SCM posterior; floor hyoglossus and constrictors.",
+      "modelAnswer": "Superior: posterior belly of digastric; Anterior: superior belly of omohyoid; Posterior: anterior border of sternomastoid; Roof: skin, fascia; Floor: hyoglossus, thyrohyoid, middle and inferior constrictors."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1024",
+      "type": "essay",
+      "lecture": 1,
+      "text": "3 contents of carotid triangle:",
+      "explanation": "The carotid triangle contains the common carotid artery and its bifurcation into the internal and external carotid arteries, along with the carotid body (chemoreceptor) and carotid sinus (baroreceptor).",
+      "keyConcept": "Carotid triangle contains: CCA, ICA, ECA, carotid body and sinus.",
+      "modelAnswer": "The three contents of the carotid triangle are: (1) Common carotid artery (bifurcates into internal and external carotid at upper border of thyroid cartilage); (2) Internal jugular vein (lateral to artery); (3) Vagus nerve (posterior to artery, between IJV and ICA)."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1026",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Nerve supply of infrahyoid muscles:",
+      "explanation": "All infrahyoid muscles are supplied by the ansa cervicalis (C1-3), except the thyrohyoid which receives C1 fibers via the hypoglossal nerve, reflecting their developmental origin from cervical somites.",
+      "keyConcept": "Infrahyoid muscles: all by ansa cervicalis except thyrohyoid (C1 via hypoglossal).",
+      "modelAnswer": "All by ansa cervicalis except thyrohyoid (C1 via hypoglossal)."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1027",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Nerve supply of suprahyoid muscles:",
+      "explanation": "Suprahyoid muscles have varied innervation: mylohyoid and anterior digastric by V3 (nerve to mylohyoid), posterior digastric and stylohyoid by CN VII, and geniohyoid by C1 traveling with the hypoglossal nerve.",
+      "keyConcept": "Suprahyoid: mylohyoid/anterior digastric (V3), posterior digastric/stylohyoid (CN VII), geniohyoid (C1).",
+      "modelAnswer": "Anterior digastric and mylohyoid by nerve to mylohyoid; Posterior digastric and stylohyoid by facial; Geniohyoid by C1 via hypoglossal."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1028",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Structure of ansa cervicalis:",
+      "explanation": "The ansa cervicalis is a loop of nerve fibers formed by the superior limb (C1 fibers traveling with the hypoglossal) and inferior limb (C2-3 fibers descending from the cervical plexus), supplying infrahyoid muscles.",
+      "keyConcept": "Ansa cervicalis: superior limb (C1 via hypoglossal) and inferior limb (C2-3 from plexus).",
+      "modelAnswer": "Two limbs: superior (C1) and inferior (C2-3)."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1030",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Branches of vagus from superior vagal ganglion:",
+      "explanation": "The vagus nerve's superior (jugular) ganglion gives off only meningeal and auricular branches before the nerve descends, contributing to sensory innervation of the dura and external ear.",
+      "keyConcept": "Superior vagal ganglion branches: meningeal and auricular.",
+      "modelAnswer": "The vagus nerve (CN X) gives off the following branches from the superior vagal (jugular) ganglion: (1) Meningeal branch — to the dura mater of posterior cranial fossa; (2) Auricular branch — to the external auditory meatus and a small area of the external ear. These are sensory branches."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1043",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The recurrent laryngeal nerve is a branch of the:",
+      "explanation": "The recurrent laryngeal nerve is a branch of the vagus nerve (CN X), arising from the inferior (recurrent) laryngeal branch that loops under the aortic arch on the left and subclavian artery on the right.",
+      "keyConcept": "Recurrent laryngeal nerve: branch of vagus nerve (CN X).",
+      "options": [
+        "Glossopharyngeal nerve",
+        "Vagus nerve",
+        "Hypoglossal nerve",
+        "Accessory nerve"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1083",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The great auricular nerve carries fibers from:",
+      "explanation": "The great auricular nerve arises from C2-C3 ventral rami (cervical plexus) and supplies the skin of the ear and adjacent scalp.",
+      "keyConcept": "Great auricular nerve: C2 and C3 ventral rami.",
+      "options": [
+        "C2 and C3 ventral rami.",
+        "C2 ventral ramus.",
+        "C2 dorsal ramus.",
+        "C3 dorsal ramus."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1092",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Skin over the angle of the mandible is supplied by ……… nerve.",
+      "explanation": "The great auricular nerve (C2-C3) supplies the skin over the angle of the mandible and lower ear region as part of cervical plexus distribution.",
+      "keyConcept": "Angle of mandible: great auricular nerve (C2-C3).",
+      "options": [
+        "Auriculotemporal",
+        "Great auricular",
+        "Posterior auricular",
+        "Lesser occipital"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1094",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Infection in the area of chin leads to enlargement of ……… lymph nodes.",
+      "explanation": "The submental lymph nodes drain the chin and lower lip midline, lying beneath the chin in the submental triangle.",
+      "keyConcept": "Chin infection: submental lymph nodes enlarge.",
+      "options": [
+        "Pre-auricular",
+        "Posterior auricular",
+        "Submandibular",
+        "Submental"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1107",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "An infrahyoid muscle supplied directly by C1 ventral ramus is:",
+      "explanation": "The thyrohyoid muscle is innervated directly by C1 fibers via the hypoglossal nerve. Other infrahyoid muscles receive ansa cervicalis (C1-3).",
+      "keyConcept": "Thyrohyoid: directly by C1 via hypoglossal nerve.",
+      "options": [
+        "Omohyoid.",
+        "Sternohyoid.",
+        "Sternothyroid.",
+        "Thyrohyoid."
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1108",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "A branch from external carotid artery running in both carotid and digastric triangles is ……… artery.",
+      "explanation": "The facial artery runs through both carotid triangle (origin from ECA) and digastric triangle (before entering face), giving off branches like submental, superior labial, and lateral nasal.",
+      "keyConcept": "Facial artery: runs through both carotid and digastric triangles.",
+      "options": [
+        "Superior thyroid",
+        "Facial",
+        "Occipital",
+        "Posterior auricular"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1109",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The carotid sheath encloses:",
+      "explanation": "The carotid sheath contains the common/internal carotid artery, internal jugular vein, and vagus nerve throughout its course in the neck.",
+      "keyConcept": "Carotid sheath: contains CCA/ICA, IJV, and vagus nerve.",
+      "options": [
+        "Phrenic nerve.",
+        "Vagus nerve.",
+        "Ansa cervicalis.",
+        "Sympathetic chain."
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1112",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "A nerve embedded in the roof of the posterior triangle of the neck and crossing the triangle parallel to levator scapulae is:",
+      "explanation": "The spinal accessory nerve (CN XI) crosses the posterior triangle embedded in its roof, running from the sternocleidomastoid to the trapezius, parallel to levator scapulae.",
+      "keyConcept": "Spinal accessory nerve: crosses posterior triangle parallel to levator scapulae.",
+      "options": [
+        "Lesser occipital.",
+        "Transverse cervical.",
+        "Spinal accessory.",
+        "Great auricular."
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1114",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "A nerve related to anterior aspect of anterior scalene muscle is:",
+      "explanation": "The phrenic nerve runs on the anterior surface of the anterior scalene muscle, making it vulnerable during scalene blocks and relevant in interscalene anesthesia.",
+      "keyConcept": "Phrenic nerve: anterior aspect of anterior scalene muscle.",
+      "options": [
+        "Phrenic.",
+        "Vagus.",
+        "Recurrent laryngeal.",
+        "Lower trunk of brachial plexus."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1119",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The main opener of the mouth is:",
+      "explanation": "The lateral pterygoid is the main mouth opener, pulling the mandibular neck forward and down; gravity and suprahyoid muscles assist.",
+      "keyConcept": "Lateral pterygoid: main opener of mouth.",
+      "options": [
+        "Temporalis.",
+        "Masseter.",
+        "Medial pterygoid.",
+        "Lateral pterygoid."
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1133",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Reflex cough accompanying ear wash is caused by irritation of ……… nerve.",
+      "explanation": "The auricular branch of the vagus nerve (Arnold's nerve) innervates the external acoustic meatus; its irritation during ear washing triggers the cough reflex.",
+      "keyConcept": "Ear wash cough reflex: auricular branch of vagus nerve.",
+      "options": [
+        "Tympanic branch of glossopharyngeal",
+        "Tonsillar branch of glossopharyngeal",
+        "Auricular branch of vagus",
+        "Superior laryngeal branch of vagus"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1140",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The external carotid artery crosses ……… triangles of the neck.",
+      "explanation": "The external carotid artery runs through the carotid triangle after originating in the neck, with branches emerging from its anterior, posterior, and medial surfaces.",
+      "keyConcept": "External carotid crosses carotid triangle of neck.",
+      "options": [
+        "Muscular and carotid",
+        "Submental and submandibular",
+        "Carotid and submandibular",
+        "Muscular and submental"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q26",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Enumerate nuclei of vagus nerve & the structures supplied by each nucleus.",
+      "explanation": "Nuclei of the vagus nerve: (1) DORSAL MOTOR NUCLEUS (GVE) - parasympathetic preganglionic fibers to thoracic and abdominal viscera (via thoracic vagal branches); (2) NUCLEUS AMBIGUUS (SVE) - motor to pharynx and larynx via pharyngeal branch and recurrent laryngeal nerve; (3) NUCLEUS SOLITARIUS (SVA/GVA) - taste from epiglottis and general visceral sensation; (4) SPINAL NUCLEUS OF V (GSA) - general sensory from larynx.",
+      "keyConcept": "Vagus nerve nuclei: dorsal motor (GVE), nucleus ambiguus (SVE), nucleus solitarius (SVA/GVA), spinal V (GSA)",
+      "modelAnswer": "(Diagnosis) Lateral medullary syndrome (Wallenberg syndrome) - PICA thrombosis. (Intention tremors) Vestibular nuclei involvement causing balance problems; (Ptosis) Horner syndrome (descending sympathetic pathway involved); (Decreased swallowing) Nucleus ambiguus dysfunction; (Vertigo) Vestibular nucleus involvement; (Nystagmus) Vestibular nucleus involvement."
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q33",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The muscle supplied by C1 through hypoglossal nerve is the:",
+      "explanation": "The thyrohyoid muscle is supplied by C1 spinal nerve fibers that travel with the hypoglossal nerve (CN XII) as the nerve to thyrohyoid. This is an exception to the rule that infrahyoid muscles are supplied by ansa cervicalis.",
+      "keyConcept": "Thyrohyoid is supplied by C1 via hypoglossal nerve (nerve to thyrohyoid).",
+      "options": [
+        "Trapezius.",
+        "Sternomastoid.",
+        "Omohyoid.",
+        "Digastric.",
+        "Thyrohyoid."
+      ],
+      "correctIndex": 4
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q35",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Glossopharyngeal nerve carries sensation from all the following areas EXCEPT:",
+      "explanation": "The glossopharyngeal nerve (CN IX) carries general sensation from the oropharynx, posterior one-third of the tongue, palatine tonsils, and middle ear (via the tympanic nerve). However, the laryngopharynx is innervated primarily by the vagus nerve (CN X) via its pharyngeal branches. Therefore, CN IX does NOT carry sensation from the laryngopharynx.",
+      "keyConcept": "Laryngopharynx sensation is carried by vagus nerve (CN X), not glossopharyngeal (CN IX).",
+      "options": [
+        "Oropharynx.",
+        "Posterior 1/3 of tongue.",
+        "Palatine tonsils.",
+        "Laryngopharynx.",
+        "Middle ear."
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q39",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The following are branches of the vagus nerve in the neck Except:",
+      "explanation": "The vagus nerve gives several branches in the neck: pharyngeal branch, superior laryngeal nerve, recurrent laryngeal nerve (left and right), and cardiac branches. The carotid body and carotid sinus, however, receive their sensory innervation from the glossopharyngeal nerve (CN IX) via the branch of Hering (carotid branch), NOT from the vagus nerve.",
+      "keyConcept": "Branches to carotid body are from glossopharyngeal nerve (CN IX), NOT vagus.",
+      "options": [
+        "Branches to the carotid body.",
+        "Left recurrent laryngeal nerve.",
+        "Pharyngeal branch.",
+        "Superior laryngeal nerve.",
+        "Cardiac branches."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q40",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Regarding vagus nerve; all are true Except:",
+      "explanation": "The vagus nerve is the longest cranial nerve, descends within the carotid sheath, has two ganglia (jugular and nodose), and injury causes tachycardia due to loss of parasympathetic tone. However, the vagus is NOT joined by the spinal root of the accessory nerve. Only the cranial root of accessory joins the vagus; the spinal root forms the separate spinal accessory nerve supplying SCM and trapezius.",
+      "keyConcept": "Vagus is joined by cranial root of accessory, NOT spinal root.",
+      "options": [
+        "It is the longest cranial nerve.",
+        "It is joined by the spinal root of the accessory nerve.",
+        "It has two ganglia.",
+        "It descends within the carotid sheath.",
+        "Its injury leads to palpitation and tachycardia (increase in heart rate)."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q41",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Regarding the spinal accessory nerve; all are true Except:",
+      "explanation": "The spinal accessory nerve arises from the spinal cord (C1-C6/7), enters the cranial cavity through the foramen magnum, and exits via the jugular foramen. It supplies sternocleidomastoid and trapezius. It does NOT contribute to the pharyngeal plexus of nerves; this plexus is formed by glossopharyngeal (CN IX), vagus (CN X), and sympathetic fibers.",
+      "keyConcept": "Spinal accessory nerve does NOT contribute to the pharyngeal plexus.",
+      "options": [
+        "Arises entirely from the spinal cord.",
+        "Enters the skull via the foramen magnum.",
+        "Leaves the skull via the jugular foramen.",
+        "Contributes to the pharyngeal plexus of nerves.",
+        "Its injury in the posterior triangle results in wasting of the trapezius on the same side."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q42",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Accessory nerve supplies which of the following muscles?",
+      "explanation": "The accessory nerve (CN XI) is traditionally described as supplying two muscles: sternocleidomastoid (upper part of neck) and trapezius (posterior neck and shoulder). Some sources also describe supply to levator scapulae, but standard dental and gross anatomy teaches that accessory nerve innervates sternocleidomastoid and trapezius.",
+      "keyConcept": "Accessory nerve supplies sternocleidomastoid and trapezius muscles.",
+      "options": [
+        "Trapezius.",
+        "Sternomastoid.",
+        "Levator scapulae.",
+        "Scalenus anterior.",
+        "A&B."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q43",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Regarding accessory nerve: the following statements are true Except:",
+      "explanation": "The accessory nerve is a motor nerve. Its cranial part takes origin near the nucleus ambiguus but is distinct from it. Its spinal part runs between the investing and prevertebral layers of cervical fascia in the posterior triangle. The cranial part joins the vagus. However, the accessory nerve (both roots) does NOT emerge at the groove between the pyramid and the olive—that is the exit site of the hypoglossal nerve (CN XII). The accessory nerve emerges lateral to the olive in the postolivary sulcus.",
+      "keyConcept": "Accessory nerve emerges lateral to olive (postolivary sulcus), NOT between pyramid and olive.",
+      "options": [
+        "It is a purely motor nerve.",
+        "Its cranial part takes origin from the nucleus ambiguus.",
+        "It emerges at the groove between pyramid and olive.",
+        "Its spinal part runs between investing and prevertebral layers of cervical fascia.",
+        "Its cranial part joins the vagus."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q45",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "All the following muscles are supplied by the hypoglossal nerve Except:",
+      "explanation": "The hypoglossal nerve (CN XII) supplies all intrinsic and extrinsic muscles of the tongue except the palatoglossus (supplied by the vagus nerve). This includes genioglossus, hyoglossus, styloglossus, and all intrinsic tongue muscles. The anterior belly of the digastric, however, is supplied by the mandibular nerve (CN V3) via the nerve to mylohyoid, not by the hypoglossal nerve.",
+      "keyConcept": "Anterior belly of digastric is supplied by mandibular nerve (V3), NOT hypoglossal nerve.",
+      "options": [
+        "Anterior belly of digastric.",
+        "Hyoglossus.",
+        "Genioglossus.",
+        "Styloglossus.",
+        "Intrinsic muscles of tongue."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q46",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "As regards types of fibers within glossopharyngeal nerve, choose the INCORRECT matching:",
+      "explanation": "The glossopharyngeal nerve (CN IX) carries multiple fiber types: special visceral efferent (styloharyngeus), general visceral efferent/secretomotor (parotid via otic ganglion), general visceral afferent (from carotid body/sinus and tonsil), special visceral afferent (taste from posterior tongue), and general somatic afferent (from posterior tongue and pharynx). It does NOT carry proprioceptive fibers from the salpingopharyngeus muscle; proprioception of pharyngeal muscles is generally carried by the vagus nerve or spinal accessory contributions.",
+      "keyConcept": "Glossopharyngeal does NOT carry proprioception from salpingopharyngeus muscle.",
+      "options": [
+        "Branchiomotor fibers - stylopharyngeus muscle.",
+        "GVE secretomotor fibers - Parotid gland.",
+        "GVA fibers - from tonsil.",
+        "SVA fibers - taste from posterior 1/3 of tongue.",
+        "GSA fibers - proprioceptive from salpingopharyngeus muscle."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q48",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "As regards types of fibers within vagus nerve, choose the INCORRECT matching:",
+      "explanation": "The vagus nerve contains branchiomotor fibers for pharyngeal, laryngeal, and palatal muscles; general visceral efferent (parasympathetic) fibers that are INHIBITORY to the heart, stimulatory to the gut, and cause bronchoconstriction; general visceral afferent fibers from thoracoabdominal viscera; special visceral afferent fibers for taste from the epiglottis; and general somatic afferent fibers from the external ear. The GVE fibers to the heart are parasympathetic and therefore inhibitory, NOT excitatory.",
+      "keyConcept": "Vagal parasympathetic fibers are INHIBITORY to the heart (decrease rate/contractility).",
+      "options": [
+        "Branchiomotor fibers - muscles of palate, pharynx & larynx.",
+        "GVE fibers - excitatory to heart.",
+        "GVA fibers - from mucosa of respiratory system.",
+        "SVA fibers - taste from epiglottis.",
+        "GSA fibers - sensory from external ear."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q49",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "As regards accessory nerve, choose the INCORRECT statement:",
+      "explanation": "The spinal accessory nerve has a cranial part arising from the nucleus ambiguus (joining the vagus and exiting via jugular foramen) and a spinal part arising from the anterior horn cells of C1-C5, entering the skull through the foramen magnum, and exiting via the jugular foramen. The spinal part does NOT unite with the cranial part at the foramen ovale; rather, the cranial part exits with the glossopharyngeal and vagus through the jugular foramen, and the spinal part also exits through the jugular foramen but courses independently to supply the sternocleidomastoid and trapezius.",
+      "keyConcept": "Spinal accessory does NOT unite with cranial part at foramen ovale; both exit via jugular foramen.",
+      "options": [
+        "Its cranial part arises from nucleus ambiguus.",
+        "Its spinal part unites with its cranial part at foramen ovale.",
+        "It exits from skull with vagus & glossopharyngeal nerves.",
+        "Its cranial part is distributed through pharyngeal & recurrent laryngeal nerves.",
+        "Its spinal part enters cranial cavity through foramen magnum."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q52",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Enumerate branches of vagus nerve in neck & thorax.",
+      "explanation": "The vagus nerve gives multiple branches as it descends through the neck and thorax. In the neck: meningeal branch, auricular branch (Arnold's nerve), pharyngeal branches, superior laryngeal nerve (external and internal), recurrent laryngeal nerve (left hooks around aortic arch, right hooks around subclavian artery), and cardiac branches. In the thorax: recurrent laryngeal nerves (also in thorax), cardiac branches, pulmonary branches, and esophageal plexus branches. In the abdomen: gastric branches (anterior and posterior), hepatic branches, celiac branches, renal branches, and intestinal branches.",
+      "keyConcept": "Vagus branches: neck (auricular, pharyngeal, superior laryngeal, recurrent laryngeal, cardiac), thorax (cardiac, pulmonary, esophageal), abdomen (gastric, hepatic, celiac).",
+      "modelAnswer": "Neck branches: meningeal, auricular (Arnold's nerve), pharyngeal, superior laryngeal nerve, recurrent laryngeal nerve (left around aorta, right around subclavian), cardiac branches. Thoracic branches: cardiac, pulmonary, esophageal plexus, recurrent laryngeal. Abdominal branches: anterior and posterior gastric, hepatic, celiac, renal, and intestinal branches."
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q53",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Describe cranial & spinal parts of accessory nerve.",
+      "explanation": "The accessory nerve (CN XI) has two distinct parts. The cranial part arises from the nucleus ambiguus in the medulla oblongata, exits via the jugular foramen, and joins the vagus nerve. Its fibers are distributed with the vagus via the pharyngeal and recurrent laryngeal branches to supply the muscles of the palate, pharynx, and larynx. The spinal part arises from the spinal accessory nucleus in the lateral horn of the upper five or six cervical spinal cord segments, ascends through the foramen magnum, exits via the jugular foramen, descends in the posterior triangle, and supplies the sternocleidomastoid and trapezius muscles.",
+      "keyConcept": "Cranial accessory = nucleus ambiguus → vagus → pharyngeal + recurrent laryngeal. Spinal accessory = C1-C5 → SCM + trapezius.",
+      "modelAnswer": "Cranial part: arises from nucleus ambiguus in medulla, exits via jugular foramen, joins vagus nerve, and is distributed via pharyngeal and recurrent laryngeal branches to supply muscles of palate, pharynx, and larynx. Spinal part: arises from spinal accessory nucleus (C1-C5/6), enters cranial cavity through foramen magnum, exits via jugular foramen, descends posteriorly in neck through posterior triangle, and supplies sternocleidomastoid and trapezius muscles."
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q62",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Fibers of vagus nerve exit ….",
+      "explanation": "The vagus nerve (CN X) exits the brainstem between the olive and inferior cerebellar peduncle, at the posterolateral sulcus of the medulla. This is the same level where glossopharyngeal and accessary nerves also emerge.",
+      "keyConcept": "Vagus nerve: exits between olive and inferior cerebellar peduncle at posterolateral sulcus.",
+      "options": [
+        "Between pyramids & olive",
+        "Between olive & inferior cerebellar peduncle",
+        "At pontomedullary junction",
+        "At spinomedullary junction"
+      ],
+      "correctIndex": 1
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q64",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The cranial nerve whose component is Only GSE:",
+      "explanation": "The hypoglossal nerve (CN XII) has ONLY general somatic efferent (GSE) fibers, supplying the extrinsic and intrinsic muscles of the tongue. Other cranial nerves have mixed components. The vagus, glossopharyngeal, and accessory nerves all have visceral components.",
+      "keyConcept": "CN XII (hypoglossal): only GSE fibers to tongue muscles. Vagus: GSE + GVE + SVA + GVA.",
+      "options": [
+        "Hypoglossal nerve",
+        "Vagus nerve",
+        "Glossopharyngeal N.",
+        "Accessory nerve."
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q65",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Nuclei of the vagus nerve include the following except:",
+      "explanation": "The inferior salivatory nucleus supplies parasympathetic fibers to the parotid gland via the glossopharyngeal nerve (CN IX), not the vagus. The vagus has: nucleus ambiguus (branchial GSE), dorsal motor nucleus of vagus (GVE), and solitary nucleus (SVA, GVA).",
+      "keyConcept": "Vagus nuclei: nucleus ambiguus (motor), dorsal motor nucleus (parasympathetic), solitary nucleus (sensory).",
+      "options": [
+        "Nucleus ambiguous",
+        "Dorsal motor nucleus of vagus",
+        "Inferior salivatory nucleus",
+        "Solitary nucleus"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q74",
+      "type": "essay",
+      "lecture": 1,
+      "text": "What does the spinal part of accessory nerve supply?",
+      "explanation": "The spinal part of the accessory nerve (CN XI) supplies the sternocleidomastoid and trapezius muscles. These are muscles of the neck and shoulder that control head movement and scapular elevation.",
+      "keyConcept": "Accessory nerve (spinal part): supplies sternocleidomastoid and trapezius. Purely motor.",
+      "modelAnswer": "Sternomastoid muscle (rotates head to opposite side) and trapezius muscle (elevates scapula, rotates head). These are the only two muscles supplied by the spinal part of the accessory nerve."
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q77",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The cranial part of the accessory nerve arises from",
+      "explanation": "The cranial part of the accessory nerve (CN XI) arises from the nucleus ambiguus in the medulla, carrying fibers that eventually join the vagus nerve to innervate laryngeal muscles.",
+      "keyConcept": "Accessory nerve nucleus ambiguus origin",
+      "options": [
+        "Nucleus ambiguus",
+        "Spinal nucleus of V",
+        "Main sensory nucleus of V",
+        "Nucleus solitarius",
+        "Dorsal vagal nucleus"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q87",
+      "type": "mcq",
+      "lecture": 3,
+      "text": "Which of the following structures is supplied by the hypoglossal nerve (CN XII)?",
+      "explanation": "The hypoglossal nerve (XII) innervates all intrinsic and extrinsic muscles of the tongue except the palatoglossus (which is innervated by the vagus nerve via the pharyngeal plexus).",
+      "keyConcept": "CN XII controls tongue musculature; palatoglossus is the only tongue muscle innervated by CN X.",
+      "options": [
+        "Pharyngeal muscles",
+        "Palatal muscles",
+        "Tongue muscles",
+        "Sternocleidomastoid muscle",
+        "Facial muscles"
+      ],
+      "correctIndex": 2
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q88",
+      "type": "mcq",
+      "lecture": 3,
+      "text": "Which cranial nerve sends afferent fibers to the nucleus solitarius?",
+      "explanation": "Cranial nerves VII (facial), IX (glossopharyngeal), and X (vagus) send afferent (taste and visceral) fibers to the nucleus solitarius. The vagus nerve carries the largest contribution of visceral information.",
+      "keyConcept": "Solitary nucleus receives visceral and taste afferents from CN VII, IX, and X.",
+      "options": [
+        "Facial nerve",
+        "Trigeminal nerve",
+        "Abducent nerve",
+        "Hypoglossal nerve",
+        "Accessory nerve"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q91",
+      "type": "mcq",
+      "lecture": 3,
+      "text": "Which of the following nerves arises from the union of the vagus and accessory nerves?",
+      "explanation": "The internal laryngeal nerve is formed by the union of the external laryngeal nerve (from superior laryngeal of vagus) and the recurrent laryngeal nerve, but they join at the larynx, not intracranially.",
+      "keyConcept": "Internal laryngeal nerve arises at the larynx from the superior laryngeal nerve division of CN X.",
+      "options": [
+        "Glossopharyngeal nerve",
+        "Hypoglossal nerve",
+        "Recurrent laryngeal nerve",
+        "Superior laryngeal nerve",
+        "Pharyngeal nerve"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q92",
+      "type": "mcq",
+      "lecture": 3,
+      "text": "A patient that had trauma to the spinal accessory nerve is expected to suffer from:",
+      "explanation": "The spinal accessory nerve (CN XI) innervates the sternocleidomastoid and trapezius muscles. Damage causes inability to shrug the shoulder (trapezius) and difficulty rotating the head (sternocleidomastoid).",
+      "keyConcept": "CN XI supplies sternocleidomastoid and trapezius for neck rotation and shoulder abduction.",
+      "options": [
+        "Paralysis of genioglossus muscle",
+        "Paralysis of muscles of the lower part of the face",
+        "Deviation of the tongue towards the damaged side",
+        "Deviation of the tongue towards the healthy side",
+        "Paralysis of sternomastoid muscle"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q99",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Cranial nerves on ventral medulla:",
+      "explanation": "Cranial nerves associated with the ventral medulla are CN IX (glossopharyngeal), CN X (vagus), CN XI (accessory), and CN XII (hypoglossal), emerging in order from above downward.",
+      "keyConcept": "Medullary cranial nerves: 9, 10, 11, 12.",
+      "modelAnswer": "Glossopharyngeal (9), Vagus (10), Accessory (11), Hypoglossal (12)."
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q101",
+      "type": "essay",
+      "lecture": 1,
+      "text": "Spinal part of accessory nerve supplies:",
+      "explanation": "The spinal part of the accessory nerve (CN XI) supplies the sternocleidomastoid and trapezius muscles, which are responsible for head movement and shoulder elevation.",
+      "keyConcept": "Spinal accessory nerve supplies sternocleidomastoid and trapezius.",
+      "modelAnswer": "The spinal part of the accessory nerve (CN XI) supplies the sternocleidomastoid and trapezius muscles. It arises from C1-C5 spinal segments, ascends through the foramen magnum, joins the cranial part, and exits via the jugular foramen to innervate these muscles for head rotation and shoulder elevation."
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q105",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The hypoglossal nerve (CN XII) supplies all intrinsic and extrinsic muscles of the tongue except the:",
+      "explanation": "The hypoglossal nerve (CN XII) supplies all tongue muscles except palatoglossus, which is innervated by the pharyngeal plexus via the vagus nerve (CN X) due to its origin from the fourth pharyngeal arch.",
+      "keyConcept": "Palatoglossus is supplied by vagus (CN X), not hypoglossal.",
+      "options": [
+        "Genioglossus",
+        "Hyoglossus",
+        "Styloglossus",
+        "Palatoglossus"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q107",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "A lesion of the spinal accessory nerve causes paralysis of:",
+      "explanation": "CN XI supplies sternocleidomastoid and trapezius.",
+      "keyConcept": "Spinal accessory nerve: sternocleidomastoid and trapezius muscles.",
+      "options": [
+        "Masseter and the temporalis muscle",
+        "Genioglossus muscle of the tongue",
+        "Buccinator",
+        "Sternocleidomastoid and trapezius",
+        "Platysma"
+      ],
+      "correctIndex": 3
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q55",
+      "type": "essay",
+      "lecture": 1,
+      "text": "What does the lateral medullary syndrome cause?",
+      "explanation": "Lateral medullary syndrome (Wallenberg syndrome, usually from PICA occlusion) causes: ipsilateral cerebellar ataxia, ipsilateral facial pain/temperature loss (spinal V nucleus), contralateral body pain/temperature loss (spinothalamic tract), ipsilateral palate/pharynx/larynx paralysis (nucleus ambiguus), loss of taste (solitary nucleus), and ipsilateral Horner's syndrome (sympathetic chain).",
+      "keyConcept": "Lateral medullary syndrome (Wallenberg): ipsilateral face sensory loss, contralateral body sensory loss, ataxia, dysphagia, Horner's.",
+      "modelAnswer": "Ipsilateral cerebellar ataxia (inferior cerebellar peduncle), ipsilateral loss of pain and temperature from face (spinal nucleus of trigeminal), contralateral loss of pain and temperature from body (spinothalamic tract), ipsilateral paralysis of palate, pharynx and larynx (nucleus ambiguus), loss of taste sensation (solitary nucleus), and ipsilateral Horner's syndrome (descending sympathetic tract)."
+    },
+    {
+      "id": "mcns2-ch10-anatomy-q21",
+      "type": "mcq",
+      "lecture": 5,
+      "text": "A 55-year-old man presents with difficulty speaking and swallowing. On examination, he has atrophy and deviation of the tongue to the right side. He also shows loss of vibration and proprioception on the left side of his body and loss of pain and temperature on the left side of his body. Most likely site of lesion:",
+      "explanation": "The vagus nerve (CN X) provides parasympathetic innervation to the heart, lungs, and GI tract. Damage causes dysphagia (swallowing difficulty) and dysphonia (voice changes) due to loss of laryngeal innervation.",
+      "keyConcept": "CN X parasympathetic fibers control GI motility and cardiac rhythm; damage causes dysphagia.",
+      "options": [
+        "Lateral part of medulla",
+        "Medial part of medulla",
+        "Intermediate part of medulla",
+        "Posterior part of medulla",
+        "Pons"
+      ],
+      "correctIndex": 0
+    },
+    {
+      "id": "mcns2-ch1-clinical-q5",
+      "type": "case",
+      "lecture": 1,
+      "text": "A passenger sitting beside an open window suddenly developed spasmodic pain in his neck accompanied by turning of his face to the right side.",
+      "explanation": "Spasmodic torticollis (wry neck) is characterized by painful, spasmodic contraction of the sternocleidomastoid muscle, causing the face to turn to the contralateral side or the same side depending on which head contracts. When the face turns to the right side, the LEFT sternocleidomastoid is contracting (rotating the face to the right). However, some texts describe the condition with the face turning toward the contracting muscle's side. The classic description of torticollis involves sternocleidomastoid spasm.",
+      "keyConcept": "Torticollis = sternocleidomastoid spasm; supplied by spinal accessory nerve (CN XI); enclosed by investing layer.",
+      "subQuestions": [
+        {
+          "id": "mcns2-ch1-clinical-q5-sq1",
+          "type": "essay",
+          "text": "[TYPE: essay] Name the affected muscle and its side.",
+          "explanation": "Spasmodic torticollis (wry neck) is characterized by painful, spasmodic contraction of the sternocleidomastoid muscle, causing the face to turn to the contralateral side or the same side depending on which head contracts. When the face turns to the right side, the LEFT sternocleidomastoid is contracting (rotating the face to the right). However, some texts describe the condition with the face turning toward the contracting muscle's side. The classic description of torticollis involves sternocleidomastoid spasm.",
+          "keyConcept": "Torticollis = sternocleidomastoid spasm; supplied by spinal accessory nerve (CN XI); enclosed by investing layer.",
+          "modelAnswer": "Sternocleidomastoid muscle, right side (the face turning to the right indicates contraction of the right sternocleidomastoid)."
+        },
+        {
+          "id": "mcns2-ch1-clinical-q5-sq2",
+          "type": "essay",
+          "text": "[TYPE: essay] Mention its nerve supply.",
+          "explanation": "Spasmodic torticollis (wry neck) is characterized by painful, spasmodic contraction of the sternocleidomastoid muscle, causing the face to turn to the contralateral side or the same side depending on which head contracts. When the face turns to the right side, the LEFT sternocleidomastoid is contracting (rotating the face to the right). However, some texts describe the condition with the face turning toward the contracting muscle's side. The classic description of torticollis involves sternocleidomastoid spasm.",
+          "keyConcept": "Torticollis = sternocleidomastoid spasm; supplied by spinal accessory nerve (CN XI); enclosed by investing layer.",
+          "modelAnswer": "Spinal accessory nerve (CN XI)."
+        },
+        {
+          "id": "mcns2-ch1-clinical-q5-sq3",
+          "type": "essay",
+          "text": "[TYPE: essay] Name the fascia enclosing this muscle.",
+          "explanation": "Spasmodic torticollis (wry neck) is characterized by painful, spasmodic contraction of the sternocleidomastoid muscle, causing the face to turn to the contralateral side or the same side depending on which head contracts. When the face turns to the right side, the LEFT sternocleidomastoid is contracting (rotating the face to the right). However, some texts describe the condition with the face turning toward the contracting muscle's side. The classic description of torticollis involves sternocleidomastoid spasm.",
+          "keyConcept": "Torticollis = sternocleidomastoid spasm; supplied by spinal accessory nerve (CN XI); enclosed by investing layer.",
+          "modelAnswer": "Investing layer of deep cervical fascia."
+        }
+      ]
+    },
+    {
+      "id": "mcns2-ch2-clinical-q1",
+      "type": "case",
+      "lecture": 1,
+      "text": "A 54 years old man presented with a tumor in the posterior cranial fossa. The neurologist wanted to check the integrity of the 9th, 10th and 11th cranial nerves.",
+      "explanation": "The vagus nerve (CN X) is tested clinically by asking the patient to say 'ah' while observing palatal elevation (uvula should remain midline or deviate to the unaffected side), checking the gag reflex (afferent limb via CN IX, efferent via CN X), and checking the cough reflex. The glossopharyngeal nerve carries taste from the posterior one-third of the tongue and general sensation from the tonsillar fossa; its sensory branches include the tympanic, tonsillar, lingual, and carotid branches. The accessory nerve supplies the sternocleidomastoid and trapezius muscles.",
+      "keyConcept": "Vagus tested by palatal movement/gag reflex; glossopharyngeal sensory = tympanic, carotid, tonsillar, lingual; accessory = SCM + trapezius.",
+      "subQuestions": [
+        {
+          "id": "mcns2-ch2-clinical-q1-sq1",
+          "type": "essay",
+          "text": "[TYPE: essay] How can you test for integrity of vagus nerve?",
+          "explanation": "The vagus nerve (CN X) is tested clinically by asking the patient to say 'ah' while observing palatal elevation (uvula should remain midline or deviate to the unaffected side), checking the gag reflex (afferent limb via CN IX, efferent via CN X), and checking the cough reflex. The glossopharyngeal nerve carries taste from the posterior one-third of the tongue and general sensation from the tonsillar fossa; its sensory branches include the tympanic, tonsillar, lingual, and carotid branches. The accessory nerve supplies the sternocleidomastoid and trapezius muscles.",
+          "keyConcept": "Vagus tested by palatal movement/gag reflex; glossopharyngeal sensory = tympanic, carotid, tonsillar, lingual; accessory = SCM + trapezius.",
+          "modelAnswer": "Ask patient to say 'ah' and observe palatal elevation (asymmetry indicates vagus palsy); test gag reflex (afferent limb via CN IX, efferent via CN X); observe for hoarseness (recurrent laryngeal involvement)."
+        },
+        {
+          "id": "mcns2-ch2-clinical-q1-sq2",
+          "type": "essay",
+          "text": "[TYPE: essay] Enumerate sensory branches of glossopharyngeal nerve.",
+          "explanation": "The vagus nerve (CN X) is tested clinically by asking the patient to say 'ah' while observing palatal elevation (uvula should remain midline or deviate to the unaffected side), checking the gag reflex (afferent limb via CN IX, efferent via CN X), and checking the cough reflex. The glossopharyngeal nerve carries taste from the posterior one-third of the tongue and general sensation from the tonsillar fossa; its sensory branches include the tympanic, tonsillar, lingual, and carotid branches. The accessory nerve supplies the sternocleidomastoid and trapezius muscles.",
+          "keyConcept": "Vagus tested by palatal movement/gag reflex; glossopharyngeal sensory = tympanic, carotid, tonsillar, lingual; accessory = SCM + trapezius.",
+          "modelAnswer": "Sensory branches: tympanic branch (to middle ear), carotid branch (to carotid body/sinus), pharyngeal branch, tonsillar branch, and lingual branch (posterior 1/3 tongue taste and sensation)."
+        },
+        {
+          "id": "mcns2-ch2-clinical-q1-sq3",
+          "type": "essay",
+          "text": "[TYPE: essay] Name the muscle(s) supplied by accessory nerve.",
+          "explanation": "The vagus nerve (CN X) is tested clinically by asking the patient to say 'ah' while observing palatal elevation (uvula should remain midline or deviate to the unaffected side), checking the gag reflex (afferent limb via CN IX, efferent via CN X), and checking the cough reflex. The glossopharyngeal nerve carries taste from the posterior one-third of the tongue and general sensation from the tonsillar fossa; its sensory branches include the tympanic, tonsillar, lingual, and carotid branches. The accessory nerve supplies the sternocleidomastoid and trapezius muscles.",
+          "keyConcept": "Vagus tested by palatal movement/gag reflex; glossopharyngeal sensory = tympanic, carotid, tonsillar, lingual; accessory = SCM + trapezius.",
+          "modelAnswer": "Sternocleidomastoid and trapezius muscles."
+        }
+      ]
+    },
+    {
+      "id": "mcns2-ch1-physiology-q173",
+      "type": "mcq",
+      "lecture": 3,
+      "text": "Referred pain from the gallbladder is most commonly felt in which area?",
+      "explanation": "Gallbladder pain is commonly referred to the right scapular region (C3-C5 dermatomes) due to shared central pathways with phrenic nerve dermatomes.",
+      "keyConcept": "Gallbladder referred pain typically localizes to the right shoulder/scapular area via C3-C5 pathways.",
+      "options": [
+        "Right shoulder",
+        "Left shoulder",
+        "Periumbilical region",
+        "Left lower quadrant",
+        "Suprapubic region"
+      ],
+      "correctIndex": 0
+    }
+  ]
+}
