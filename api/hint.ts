@@ -292,7 +292,9 @@ class NVIDIAAdapter implements AIAdapter {
 /* ─── helpers ─── */
 
 function buildSystemPrompt(req: HintRequest): string {
-  const isCorrect = !req.studentWrongAnswer;
+  const answeredIndex = req.userAnswer !== undefined && req.options ? parseInt(req.userAnswer, 10) : NaN;
+  const isCorrect = !isNaN(answeredIndex) && req.correctIndex !== undefined && answeredIndex === req.correctIndex;
+
   const parts: string[] = [
     isCorrect
       ? 'You are a medical tutor helping a student deepen their understanding of a question they answered correctly. Go beyond the basics — explain related concepts, clinical applications, or mnemonics. Encourage deeper thinking.'
@@ -317,8 +319,9 @@ function buildSystemPrompt(req: HintRequest): string {
     parts.push('CORRECT ANSWER: ' + req.correctAnswer);
   }
 
-  if (req.studentWrongAnswer) {
-    parts.push('STUDENT ANSWERED: ' + req.studentWrongAnswer);
+  if (!isNaN(answeredIndex) && req.options && req.options[answeredIndex]) {
+    const marker = isCorrect ? ' [CORRECT]' : ' [WRONG]';
+    parts.push('STUDENT SELECTED: ' + String.fromCharCode(65 + answeredIndex) + ') ' + req.options[answeredIndex] + marker);
   }
 
   if (req.explanation) {
