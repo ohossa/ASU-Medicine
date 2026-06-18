@@ -54,8 +54,7 @@ import {
   Home,
   Heart,
   Search,
-  Calculator,
-  Loader2
+  Calculator
 } from 'lucide-react';
 import type { ChapterData, SubjectData, Question, Screen, SubjectColor } from './types';
 const ChapterSelect = lazy(() => import('./components/ChapterSelect').then(m => ({ default: m.ChapterSelect })));
@@ -891,12 +890,7 @@ function MainApp() {
 
   return (
     <div className="min-h-screen text-gray-900 dark:text-gray-100 font-manrope selection:bg-physiology/20 selection:text-physiology-dark overflow-x-hidden">
-      {!dataReady && (
-        <div className="fixed inset-0 z-50 flex flex-col items-center justify-center gap-4 bg-white dark:bg-black transition-opacity duration-300">
-          <Loader2 size={40} className="animate-spin text-gray-500 dark:text-white/40" />
-          <p className="text-sm text-gray-500 dark:text-white/40">Loading question banks...</p>
-        </div>
-      )}
+      {!dataReady && <LoadingScreen isLoading={!dataReady} />}
 
       <style>{`
         @keyframes shrinkHeader {
