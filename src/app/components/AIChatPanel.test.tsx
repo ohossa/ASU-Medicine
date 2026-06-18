@@ -95,9 +95,8 @@ describe('AIChatPanel input behavior', () => {
     fireEvent.change(textarea, { target: { value: 'Multi\nline' } });
     fireEvent.keyDown(textarea, { key: 'Enter', shiftKey: true });
 
-    // Shift+Enter should NOT call onSend (auto-trigger on mount calls onSend(''), but Shift+Enter should not)
-    expect(onSend).toHaveBeenCalledTimes(1); // only the mount auto-trigger
-    expect(onSend).toHaveBeenCalledWith(''); // mount auto-trigger sends empty initial prompt
+    // Shift+Enter should NOT call onSend (no auto-trigger anymore - student must type first)
+    expect(onSend).not.toHaveBeenCalled();
   });
 
   it('clears input after submission', () => {

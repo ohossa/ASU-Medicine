@@ -55,11 +55,9 @@ describe('useHintSystem (chat interface)', () => {
       result.current.sendMessage('');
     });
 
-    // Empty message IS allowed when messages.length === 0 (auto-first-hint feature)
-    expect(result.current.messages).toHaveLength(1);
-    expect(result.current.messages[0].content).toBe('');
-    expect(result.current.messages[0].role).toBe('user');
-    expect(fetchMock).toHaveBeenCalled();
+    // Empty message is blocked - student must type something
+    expect(result.current.messages).toHaveLength(0);
+    expect(fetchMock).not.toHaveBeenCalled();
   });
 
   it('does nothing when sending whitespace-only message', async () => {
@@ -69,11 +67,9 @@ describe('useHintSystem (chat interface)', () => {
       result.current.sendMessage('   ');
     });
 
-    // Whitespace-only trims to empty string; same as empty message when messages.length === 0
-    expect(result.current.messages).toHaveLength(1);
-    expect(result.current.messages[0].content).toBe('');
-    expect(result.current.messages[0].role).toBe('user');
-    expect(fetchMock).toHaveBeenCalled();
+    // Whitespace-only trims to empty string and is blocked - student must type something
+    expect(result.current.messages).toHaveLength(0);
+    expect(fetchMock).not.toHaveBeenCalled();
   });
 
   it('sets error when no token available', async () => {

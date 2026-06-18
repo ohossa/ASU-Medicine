@@ -114,14 +114,6 @@ export function AIChatPanel({
     }
   }, [visible, messages]);
 
-  // Auto-trigger first hint when panel becomes visible (one-time, guards against initial mount call)
-  const hasAutoTriggeredRef = useRef(false);
-  useEffect(() => {
-    if (!visible || messages.length > 0 || loading) return;
-    if (hasAutoTriggeredRef.current) return;
-    hasAutoTriggeredRef.current = true;
-    onSend('');
-  }, [visible, messages, loading]);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     const val = e.target.value;
@@ -247,7 +239,18 @@ export function AIChatPanel({
                           </span>
                         </div>
                       )}
-                      <p className="whitespace-pre-wrap">{msg.content}</p>
+                      <p className="whitespace-pre-wrap">
+                        {/* Simple markdown bold parser: **text** → <strong>text</strong> */}
+                        {(() => {
+                          const parts = msg.content.split(/(\*\*.*?\*\*)/g);
+                          return parts.map((part, i) => {
+                            if (part.startsWith('**') && part.endsWith('**')) {
+                              return <strong key={i}>{part.slice(2, -2)}</strong>;
+                            }
+                            return part;
+                          });
+                        })()}
+                      </p>
                     </div>
                   </motion.div>
                 ))}
