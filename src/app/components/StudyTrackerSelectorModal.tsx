@@ -171,7 +171,7 @@ export function StudyTrackerSelectorModal({ onClose, onSelectModule }: Props) {
           {comingSoonModule || step !== 'year' ? (
             <button
               onClick={handleBack}
-              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl border border-gray-100 dark:border-gray-800 bg-gray-50 dark:bg-gray-800/40 text-xs font-bold text-gray-650 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-850 hover:border-gray-200 dark:hover:border-gray-700 transition-all active:scale-95 cursor-pointer"
+              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl border border-gray-100 dark:border-gray-800 bg-gray-50 dark:bg-gray-800/40 text-xs font-bold text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 hover:border-gray-200 dark:hover:border-gray-700 transition-all active:scale-95 cursor-pointer"
             >
               <ChevronLeft size={14} className={isRTL ? 'rotate-180' : ''} />
               <span>{tLocal('back')}</span>
@@ -184,7 +184,7 @@ export function StudyTrackerSelectorModal({ onClose, onSelectModule }: Props) {
 
           <button
             onClick={onClose}
-            className="w-8 h-8 rounded-xl bg-gray-100 dark:bg-gray-850 flex items-center justify-center text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 hover:scale-105 active:scale-95 transition-all cursor-pointer"
+            className="w-8 h-8 rounded-xl bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-gray-500 hover:text-gray-700 dark:hover:text-gray-300 hover:scale-105 active:scale-95 transition-all cursor-pointer"
             aria-label={tLocal('close')}
           >
             <X size={16} />
@@ -248,7 +248,7 @@ export function StudyTrackerSelectorModal({ onClose, onSelectModule }: Props) {
                       <button
                         key={year}
                         onClick={() => handleSelectYear(year)}
-                        className="group relative w-full overflow-hidden py-7 px-8 bg-white dark:bg-gradient-to-br dark:from-slate-900/60 dark:to-slate-950/80 border border-gray-150 dark:border-slate-800/80 hover:border-physiology/30 dark:hover:border-physiology/30 text-gray-900 dark:text-white rounded-[28px] shadow-[0_4px_20px_rgba(0,0,0,0.01)] hover:shadow-lg hover:shadow-physiology/4 dark:hover:shadow-physiology/8 transition-all duration-300 hover:scale-[1.02] hover:-translate-y-0.5 text-left rtl:text-right cursor-pointer flex items-center justify-between"
+                        className="group relative w-full overflow-hidden py-7 px-8 bg-white dark:bg-gradient-to-br dark:from-slate-900/60 dark:to-slate-950/80 border border-gray-100 dark:border-slate-800/80 hover:border-physiology/30 dark:hover:border-physiology/30 text-gray-900 dark:text-white rounded-[28px] shadow-[0_4px_20px_rgba(0,0,0,0.01)] hover:shadow-lg hover:shadow-physiology/4 dark:hover:shadow-physiology/8 transition-all duration-300 hover:scale-[1.02] hover:-translate-y-0.5 text-left rtl:text-right cursor-pointer flex items-center justify-between"
                       >
                         <div className="min-w-0 z-10 flex flex-col items-start pr-2 rtl:pr-0 rtl:pl-2">
                           <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-[9px] font-extrabold uppercase tracking-widest leading-none mb-3 border ${
@@ -268,7 +268,7 @@ export function StudyTrackerSelectorModal({ onClose, onSelectModule }: Props) {
                         <span className="font-archivo font-black text-6xl opacity-[0.03] dark:opacity-[0.05] group-hover:opacity-[0.10] text-gray-400 group-hover:text-physiology transition-all duration-300 select-none absolute right-16 top-1/2 -translate-y-1/2 pointer-events-none">
                           {year}
                         </span>
-                        <div className="w-8 h-8 rounded-full bg-gray-50 dark:bg-white/[0.04] border border-gray-150 dark:border-white/[0.06] group-hover:border-physiology/20 group-hover:bg-physiology/10 flex items-center justify-center text-gray-400 group-hover:text-physiology transition-all duration-300 transform group-hover:translate-x-1 rtl:group-hover:-translate-x-1 shrink-0 relative z-10">
+                        <div className="w-8 h-8 rounded-full bg-gray-50 dark:bg-white/[0.04] border border-gray-100 dark:border-white/[0.06] group-hover:border-physiology/20 group-hover:bg-physiology/10 flex items-center justify-center text-gray-400 group-hover:text-physiology transition-all duration-300 transform group-hover:translate-x-1 rtl:group-hover:-translate-x-1 shrink-0 relative z-10">
                           <ChevronRight size={16} className={isRTL ? 'rotate-180' : ''} />
                         </div>
                       </button>
@@ -300,7 +300,7 @@ export function StudyTrackerSelectorModal({ onClose, onSelectModule }: Props) {
                       <button
                         key={sem}
                         onClick={() => handleSelectSemester(sem)}
-                        className="group relative overflow-hidden p-6 bg-white dark:bg-gradient-to-br dark:from-slate-900/60 dark:to-slate-950/80 hover:bg-physiology/5 dark:hover:bg-physiology/8 border border-gray-150 dark:border-slate-800/80 hover:border-physiology/30 dark:hover:border-physiology/30 text-gray-900 dark:text-white rounded-[24px] shadow-[0_4px_20px_rgba(0,0,0,0.01)] hover:shadow-lg transition-all duration-300 hover:scale-[1.02] hover:-translate-y-0.5 text-center flex flex-col items-center justify-center gap-4 cursor-pointer min-h-[160px]"
+                        className="group relative overflow-hidden p-6 bg-white dark:bg-gradient-to-br dark:from-slate-900/60 dark:to-slate-950/80 hover:bg-physiology/5 dark:hover:bg-physiology/8 border border-gray-100 dark:border-slate-800/80 hover:border-physiology/30 dark:hover:border-physiology/30 text-gray-900 dark:text-white rounded-[24px] shadow-[0_4px_20px_rgba(0,0,0,0.01)] hover:shadow-lg transition-all duration-300 hover:scale-[1.02] hover:-translate-y-0.5 text-center flex flex-col items-center justify-center gap-4 cursor-pointer min-h-[160px]"
                       >
                         <div className="w-14 h-14 rounded-2xl bg-physiology/10 border border-physiology/20 flex items-center justify-center text-physiology group-hover:scale-110 group-hover:bg-physiology/15 transition-all duration-300 shrink-0">
                           {sem === 1 ? <BookOpen size={24} /> : <GraduationCap size={24} />}
@@ -344,7 +344,7 @@ export function StudyTrackerSelectorModal({ onClose, onSelectModule }: Props) {
                         onClick={() => handleSelectModule(mod)}
                         className={`group relative overflow-hidden w-full p-6 rounded-[24px] border transition-all duration-300 hover:scale-[1.01] hover:-translate-y-0.5 text-start flex flex-col gap-4 cursor-pointer ${
                           active
-                            ? 'bg-white dark:bg-gradient-to-br dark:from-slate-900/60 dark:to-slate-950/80 border-gray-150 dark:border-slate-800/85 hover:border-physiology/40 dark:hover:border-physiology/40 shadow-sm hover:shadow-md'
+                            ? 'bg-white dark:bg-gradient-to-br dark:from-slate-900/60 dark:to-slate-950/80 border-gray-100 dark:border-slate-800/85 hover:border-physiology/40 dark:hover:border-physiology/40 shadow-sm hover:shadow-md'
                             : 'bg-gray-50/60 dark:bg-white/[0.01] border-gray-100 dark:border-gray-800/40 opacity-70 dark:opacity-60'
                         }`}
                       >
@@ -375,10 +375,10 @@ export function StudyTrackerSelectorModal({ onClose, onSelectModule }: Props) {
 
                         <div className="flex items-center justify-between pt-3.5 border-t border-gray-100 dark:border-gray-800/60 text-[11px] font-medium text-gray-400 dark:text-gray-500 w-full">
                           <div className="flex items-center gap-3.5">
-                            <span className="inline-flex items-center gap-1 bg-gray-50 dark:bg-white/5 px-2.5 py-1 rounded-md border border-gray-150/40 dark:border-white/[0.04]">
+                            <span className="inline-flex items-center gap-1 bg-gray-50 dark:bg-white/5 px-2.5 py-1 rounded-md border border-gray-100/40 dark:border-white/[0.04]">
                               {tLocal('creditPoints')}: <strong className="text-gray-700 dark:text-gray-300 font-bold ms-0.5">{mod.cp}</strong>
                             </span>
-                            <span className="inline-flex items-center gap-1 bg-gray-50 dark:bg-white/5 px-2.5 py-1 rounded-md border border-gray-150/40 dark:border-white/[0.04]">
+                            <span className="inline-flex items-center gap-1 bg-gray-50 dark:bg-white/5 px-2.5 py-1 rounded-md border border-gray-100/40 dark:border-white/[0.04]">
                               {tLocal('marks')}: <strong className="text-gray-700 dark:text-gray-300 font-bold ms-0.5">{mod.marks}</strong>
                             </span>
                           </div>

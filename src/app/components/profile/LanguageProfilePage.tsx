@@ -22,7 +22,7 @@ export function LanguageProfilePage() {
 
       <div className="space-y-4">
         <div className="flex flex-col gap-2">
-          <label className="text-xs font-bold uppercase tracking-wider text-gray-450">
+          <label className="text-xs font-bold uppercase tracking-wider text-gray-400">
             {language === 'en' ? "Language" : "اللغة"}
           </label>
           <div className="relative">
@@ -38,7 +38,7 @@ export function LanguageProfilePage() {
               <option value="en">English (US)</option>
               <option value="ar">العربية (Arabic)</option>
             </select>
-            <div className="absolute inset-y-0 right-0 flex items-center pr-4 pointer-events-none text-gray-450">
+            <div className="absolute inset-y-0 right-0 flex items-center pr-4 pointer-events-none text-gray-400">
               <Globe size={18} />
             </div>
           </div>

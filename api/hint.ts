@@ -43,7 +43,7 @@ export interface HintRequest {
 
 export interface HintResponse {
   text: string;
-  source: 'static' | 'openai' | 'google' | 'custom';
+  source: 'static' | 'openai' | 'google' | 'nvidia';
   cached?: boolean;
 }
 
@@ -497,6 +497,8 @@ async function checkRateLimit(userId: string): Promise<boolean> {
   const recent = bucket.filter((t: number) => t > windowStart);
   if (recent.length >= RATE_LIMIT_MAX) return false;
   recent.push(now);
+  // Trim to max to prevent unbounded growth
+  if (recent.length > RATE_LIMIT_MAX) recent.shift();
   await dbClient.set(key, recent);
   return true;
 }

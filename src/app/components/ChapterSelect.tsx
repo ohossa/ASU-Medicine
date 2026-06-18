@@ -505,7 +505,7 @@ export function ChapterSelect({
               <button
                 type="button"
                 onClick={() => navigate(`/year-2/${moduleCode.toLowerCase()}/tracker`)}
-                className="inline-flex items-center gap-2 rounded-2xl border border-border bg-secondary px-4 py-2.5 text-sm font-semibold text-gray-850 dark:text-white transition-all hover:bg-muted active:scale-95 cursor-pointer"
+                className="inline-flex items-center gap-2 rounded-2xl border border-border bg-secondary px-4 py-2.5 text-sm font-semibold text-gray-800 dark:text-white transition-all hover:bg-muted active:scale-95 cursor-pointer"
               >
                 <Calendar size={16} className="text-physiology" />
                 {label('syllabusProgress')}

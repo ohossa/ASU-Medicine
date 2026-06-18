@@ -163,7 +163,7 @@ export function FlaggedQuestionsScreen({ onBack, onPracticeQuiz, userButton }: F
                       </span>
                     </div>
 
-                    <span className="px-2.5 py-1 rounded-md bg-gray-50 dark:bg-gray-800/50 border border-gray-200/50 dark:border-gray-700/50 text-[10px] font-black uppercase tracking-widest text-gray-650 dark:text-gray-400">
+                    <span className="px-2.5 py-1 rounded-md bg-gray-50 dark:bg-gray-800/50 border border-gray-200/50 dark:border-gray-700/50 text-[10px] font-black uppercase tracking-widest text-gray-600 dark:text-gray-400">
                       {getQuestionTypeLabel(q.type)}
                     </span>
                   </div>
@@ -180,7 +180,7 @@ export function FlaggedQuestionsScreen({ onBack, onPracticeQuiz, userButton }: F
                         const isCorrect = idx === q.correctIndex;
                         const isSelected = selectedOpt === idx;
                         
-                        let optionStyle = 'border-gray-100 dark:border-gray-850 hover:bg-gray-50 dark:hover:bg-gray-800/40 text-gray-800 dark:text-gray-250';
+                        let optionStyle = 'border-gray-100 dark:border-gray-800 hover:bg-gray-50 dark:hover:bg-gray-800 text-gray-800 dark:text-gray-300';
                         if (isSelected) {
                           optionStyle = isCorrect
                             ? 'bg-physiology/10 border-physiology text-physiology-dark dark:text-physiology'
@@ -241,7 +241,7 @@ export function FlaggedQuestionsScreen({ onBack, onPracticeQuiz, userButton }: F
                           <div className="font-bold text-xs uppercase tracking-wider text-gray-400 dark:text-gray-500 mb-2">Accepted Answers</div>
                           <div className="flex flex-wrap gap-2">
                             {q.blanks.map((blank, idx) => (
-                              <span key={idx} className="px-3 py-1 bg-white dark:bg-gray-900 border border-gray-150 dark:border-gray-800 rounded-lg text-xs font-bold">
+                              <span key={idx} className="px-3 py-1 bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 rounded-lg text-xs font-bold">
                                 {idx + 1}. <span className="text-physiology">{blank}</span>
                                 {q.acceptedAnswers?.[idx] && ` (or ${q.acceptedAnswers[idx].join(', ')})`}
                               </span>
@@ -256,7 +256,7 @@ export function FlaggedQuestionsScreen({ onBack, onPracticeQuiz, userButton }: F
                           {q.caseStudyText && (
                             <div>
                               <div className="font-bold text-xs uppercase tracking-wider text-gray-400 dark:text-gray-500 mb-1">Case Study</div>
-                              <p className="text-gray-800 dark:text-gray-250 italic leading-relaxed">{q.caseStudyText}</p>
+                              <p className="text-gray-800 dark:text-gray-300 italic leading-relaxed">{q.caseStudyText}</p>
                             </div>
                           )}
                           {q.subQuestions && (
@@ -294,7 +294,7 @@ export function FlaggedQuestionsScreen({ onBack, onPracticeQuiz, userButton }: F
                           {q.explanation && (
                             <div>
                               <div className="font-bold text-xs uppercase tracking-wider text-gray-400 dark:text-gray-500 mb-1">Explanation</div>
-                              <p className="text-gray-650 dark:text-gray-400 leading-relaxed">{q.explanation}</p>
+                              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">{q.explanation}</p>
                             </div>
                           )}
                         </div>

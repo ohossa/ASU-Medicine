@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, Suspense, lazy } from 'react';
+import { useState, useEffect, useRef, useMemo, Suspense, lazy } from 'react';
 import { BrowserRouter, Routes, Route, Navigate, useParams, useNavigate, useLocation } from 'react-router';
 import safeStorage from './utils/safeStorage';
 import { ProgressProvider } from './store/progress';
@@ -68,7 +68,7 @@ const ClinicalCaseSolver = lazy(() => import('./components/ClinicalCaseSolver').
 const QuestionSearch = lazy(() => import('./components/QuestionSearch').then(m => ({ default: m.QuestionSearch })));
 const MarksCalculator = lazy(() => import('./components/MarksCalculator').then(m => ({ default: m.MarksCalculator })));
 const SyllabusTrackerPage = lazy(() => import('../pages/SyllabusTrackerPage').then(m => ({ default: m.SyllabusTrackerPage })));
-import { SyllabusTracker } from './components/SyllabusTracker';
+
 import { ThemeProvider, useTheme } from './context/ThemeContext';
 import { ThemeToggle } from './components/ThemeToggle';
 import { LanguageProvider, useLanguage } from './context/LanguageContext';
@@ -364,14 +364,14 @@ function MainApp() {
 
   // ── 2. Helpers and Data Functions ─────────────────────────────────────────────
 
-  const getYearProgress = () => {
+  const yearProgress = useMemo(() => {
     try {
       if (!studentYear) return { completed: 0, total: 0, pct: 0 };
-      
+
       const historyList = getQuizHistory().filter(r => r && typeof r === 'object');
       let totalSubjects = 0;
       let completedSubjects = 0;
-      
+
       const semesters = SYLLABUS_MODULES[studentYear];
       if (semesters) {
         Object.values(semesters).forEach((modules) => {
@@ -382,8 +382,8 @@ function MainApp() {
                 chapter.subjects.forEach((subject) => {
                   totalSubjects++;
                   const isSolved = historyList.some(
-                    (r) => r.moduleCode === mod.code && 
-                           String(r.chapterId) === String(chapter.id) && 
+                    (r) => r.moduleCode === mod.code &&
+                           String(r.chapterId) === String(chapter.id) &&
                            r.subjectName === subject.name
                   );
                   if (isSolved) {
@@ -395,14 +395,14 @@ function MainApp() {
           });
         });
       }
-      
+
       const pct = totalSubjects > 0 ? Math.round((completedSubjects / totalSubjects) * 100) : 0;
       return { completed: completedSubjects, total: totalSubjects, pct };
     } catch (e) {
       console.error(e);
       return { completed: 0, total: 0, pct: 0 };
     }
-  };
+  }, [studentYear]);
 
   const hasActiveModulesForYear = (year: number): boolean => {
     const semesters = SYLLABUS_MODULES[year];
@@ -804,8 +804,8 @@ function MainApp() {
     mixed: 'Mixed Exam Mode'
   };
 
-  const customUserButton = (
-    <UserButton 
+  const customUserButton = useMemo(() => (
+    <UserButton
       appearance={{
         baseTheme: undefined,
         elements: {
@@ -887,7 +887,7 @@ function MainApp() {
         />
       </UserButton.MenuItems>
     </UserButton>
-  );
+  ), [language, transitionTo, navigate, setQuizPayload, setResultPayload, setShowPortalsModal, setShowSupportModal, studentYear, setStudentYear, setScreen, setSelectedYear, setSelectedSemester, setSelectedModule, setStudyMode, setSelectedChapter]);
 
   return (
     <div className="min-h-screen text-gray-900 dark:text-gray-100 font-manrope selection:bg-physiology/20 selection:text-physiology-dark overflow-x-hidden">
@@ -1087,7 +1087,7 @@ function MainApp() {
                   history={getQuizHistory()}
                   studentName={user ? (user.fullName || `${user.firstName} ${user.lastName}`.trim() || 'Student') : 'Student'}
                   studentYear={studentYear}
-                  progress={getYearProgress()}
+                  progress={yearProgress}
                 />
               </Suspense>
             </FeatureErrorBoundary>
@@ -1241,7 +1241,7 @@ function MainApp() {
 
             <button
               onClick={() => setShowSupportModal(false)}
-              className="w-full py-3.5 mt-6 bg-gray-100 dark:bg-gray-800 hover:bg-gray-250 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-xs font-bold tracking-wide transition-all duration-200"
+              className="w-full py-3.5 mt-6 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-xs font-bold tracking-wide transition-all duration-200"
             >
               Close
             </button>
@@ -1334,7 +1334,7 @@ function MainApp() {
 
             <button
               onClick={() => setShowLanguageModal(false)}
-              className="w-full py-3.5 mt-6 bg-gray-100 dark:bg-gray-800 hover:bg-gray-250 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-2xl text-xs font-bold tracking-wide transition-all duration-200"
+              className="w-full py-3.5 mt-6 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-2xl text-xs font-bold tracking-wide transition-all duration-200"
             >
               {language === 'en' ? 'Cancel' : 'إلغاء'}
             </button>
@@ -1382,7 +1382,7 @@ function MainApp() {
                   <BookOpen size={18} />
                 </div>
                 <div className="flex flex-col text-left rtl:text-right">
-                  <span className="text-sm font-semibold text-gray-700 dark:text-gray-250 group-hover:text-physiology transition-colors duration-200 tracking-wide font-manrope">
+                  <span className="text-sm font-semibold text-gray-700 dark:text-gray-300 group-hover:text-physiology transition-colors duration-200 tracking-wide font-manrope">
                     {language === 'en' ? "EMP Portal" : "بوابة EMP"}
                   </span>
                   <span className="text-[11px] text-gray-400 dark:text-gray-500 font-medium">
@@ -1402,7 +1402,7 @@ function MainApp() {
                   <Layers size={18} />
                 </div>
                 <div className="flex flex-col text-left rtl:text-right">
-                  <span className="text-sm font-semibold text-gray-700 dark:text-gray-250 group-hover:text-anatomy transition-colors duration-200 tracking-wide font-manrope">
+                  <span className="text-sm font-semibold text-gray-700 dark:text-gray-300 group-hover:text-anatomy transition-colors duration-200 tracking-wide font-manrope">
                     {language === 'en' ? "Mainstream Portal" : "البوابة الرئيسية"}
                   </span>
                   <span className="text-[11px] text-gray-400 dark:text-gray-500 font-medium">
@@ -1422,7 +1422,7 @@ function MainApp() {
                   <GraduationCap size={18} />
                 </div>
                 <div className="flex flex-col text-left rtl:text-right">
-                  <span className="text-sm font-semibold text-gray-700 dark:text-gray-250 group-hover:text-clinical transition-colors duration-200 tracking-wide font-manrope">
+                  <span className="text-sm font-semibold text-gray-700 dark:text-gray-300 group-hover:text-clinical transition-colors duration-200 tracking-wide font-manrope">
                     {language === 'en' ? "UMS Portal" : "بوابة UMS"}
                   </span>
                   <span className="text-[11px] text-gray-400 dark:text-gray-500 font-medium">
@@ -1434,7 +1434,7 @@ function MainApp() {
 
             <button
               onClick={() => setShowPortalsModal(false)}
-              className="w-full mt-6 py-3 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-750 text-gray-700 dark:text-gray-300 rounded-full text-xs font-bold tracking-wide transition-all duration-200"
+              className="w-full mt-6 py-3 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300 rounded-full text-xs font-bold tracking-wide transition-all duration-200"
             >
               {language === 'en' ? "Close" : "إغلاق"}
             </button>

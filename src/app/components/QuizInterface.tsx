@@ -152,7 +152,6 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
   }, [current, goTo, questions.length]);
 
   // Case Study sub-question drafts temporary state
-  const [_subAnswers, setSubAnswers] = useState<Record<string, any>>({});
   const [subEssayDrafts, setSubEssayDrafts] = useState<Record<string, string>>({});
   const [revealedSubEssays, setRevealedSubEssays] = useState<Record<string, boolean>>({});
   const lastFocusedSubQ = useRef<string | null>(null);
@@ -178,7 +177,6 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
       }
     } else if ((question.type === 'case' || question.type === 'casestudy') && question.subQuestions) {
       const saved = answers[current] || {};
-      setSubAnswers(saved);
       const drafts: Record<string, string> = {};
       const revs: Record<string, boolean> = {};
       question.subQuestions.forEach(subQ => {
@@ -406,9 +404,9 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
           } else if (isCorrect) {
             btnClass += 'border-emerald-500/40 bg-emerald-500/10 text-emerald-600 dark:text-emerald-300';
           } else if (selected && !isCorrect) {
-            btnClass += 'border-rose-500/40 bg-rose-500/10 text-rose-655 dark:text-rose-300 wrong-shake';
+            btnClass += 'border-rose-500/40 bg-rose-500/10 text-rose-600 dark:text-rose-300 wrong-shake';
           } else {
-            btnClass += 'border-gray-150 dark:border-white/[0.04] bg-gray-50/30 dark:bg-white/[0.01] text-gray-400 dark:text-white/20 cursor-not-allowed';
+            btnClass += 'border-gray-200 dark:border-white/[0.04] bg-gray-50/30 dark:bg-white/[0.01] text-gray-400 dark:text-white/20 cursor-not-allowed';
           }
 
           return (
@@ -482,7 +480,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
 
             {question.keyConcept && (
               <div className="rounded-lg border border-sky-500/15 bg-sky-50/50 dark:bg-sky-500/[0.03] p-3 flex items-start gap-2.5">
-                <Bookmark size={15} className="text-sky-550 dark:text-sky-400 shrink-0 mt-0.5" />
+                <Bookmark size={15} className="text-sky-500 dark:text-sky-400 shrink-0 mt-0.5" />
                 <div>
                   <span className="text-[10px] font-bold text-sky-600 dark:text-sky-400 uppercase tracking-wider block mb-0.5">Key Concept</span>
                   <p className="text-xs text-gray-700 dark:text-white/70 leading-relaxed">{question.keyConcept}</p>
@@ -492,7 +490,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
 
             {!isCompleted && (
               <div className="pt-4 border-t border-gray-200 dark:border-emerald-500/10">
-                <h4 className="text-xs font-bold text-gray-650 dark:text-white/60 uppercase tracking-wider mb-1">
+                <h4 className="text-xs font-bold text-gray-600 dark:text-white/60 uppercase tracking-wider mb-1">
                   {t('selfGrading') || "Self Grading"}
                 </h4>
                 <p className="text-xs text-gray-500 dark:text-white/45 mb-3">
@@ -639,7 +637,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
     return (
       <div className="space-y-5">
         <div className="rounded-xl border border-sky-500/30 bg-sky-50/70 dark:bg-sky-500/[0.05] p-4 text-start">
-          <p className="mb-2 flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-sky-655 dark:text-sky-300">
+          <p className="mb-2 flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-sky-600 dark:text-sky-300">
             <Activity size={14} /> Clinical Case
           </p>
           <p className="text-sm leading-relaxed text-gray-800 dark:text-white/75">{q.text}</p>
@@ -902,7 +900,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
               aria-label="Back"
               className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.04] transition-colors hover:bg-gray-100 dark:hover:bg-white/[0.08]"
             >
-              <ArrowLeft size={16} className={`text-gray-750 dark:text-white/70 ${isRTL ? 'rotate-180' : ''}`} />
+              <ArrowLeft size={16} className={`text-gray-700 dark:text-white/70 ${isRTL ? 'rotate-180' : ''}`} />
             </button>
             <div className="min-w-0">
               <p className="truncate text-sm font-semibold text-gray-900 dark:text-white">{chapter.title}</p>
@@ -911,7 +909,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
           </div>
 
           <div className="flex items-center gap-2">
-            <span className="flex items-center gap-1.5 rounded-full border border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.04] px-3 py-1.5 text-xs tabular-nums text-gray-650 dark:text-white/70">
+            <span className="flex items-center gap-1.5 rounded-full border border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.04] px-3 py-1.5 text-xs tabular-nums text-gray-600 dark:text-white/70">
               <Clock size={13} /> {formatTime(totalElapsed)}
             </span>
             <button
@@ -935,9 +933,9 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
         </div>
 
         {/* Progress bar */}
-        <div className="h-[2px] w-full bg-gray-150 dark:bg-white/[0.05]">
+        <div className="h-[2px] w-full bg-gray-100 dark:bg-white/[0.05]">
           <motion.div
-            className={`h-full ${style.bg.replace('/10', '')} bg-gradient-to-r from-gray-450 to-gray-600 dark:from-white/60 dark:to-white/90`}
+            className={`h-full ${style.bg.replace('/10', '')} bg-gradient-to-r from-gray-400 to-gray-600 dark:from-white/60 dark:to-white/90`}
             animate={{ width: `${progress}%` }}
             transition={{ type: 'spring', stiffness: 80, damping: 20 }}
           />
@@ -951,7 +949,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
             initial={{ opacity: 0, y: -8 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
-            className="fixed end-4 top-16 z-40 w-64 rounded-xl border border-gray-205 dark:border-white/[0.08] bg-white/95 dark:bg-[#161618]/95 p-4 text-xs shadow-2xl backdrop-blur-xl text-gray-800 dark:text-white"
+            className="fixed end-4 top-16 z-40 w-64 rounded-xl border border-gray-200 dark:border-white/[0.08] bg-white/95 dark:bg-[#161618]/95 p-4 text-xs shadow-2xl backdrop-blur-xl text-gray-800 dark:text-white"
           >
             <p className="mb-2 font-semibold text-gray-900 dark:text-white/80">Keyboard shortcuts</p>
             {[['← →', 'Navigate questions'], ['1–9', 'Select MCQ / True-False option'], ['Enter', 'Reveal essay answer'], ['1 / 2', 'Correct / Wrong (essay)'], ['F', 'Flag question'], ['G', 'Toggle grid']].map(([k, d]) => (
@@ -1073,7 +1071,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                 className={`flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-xs transition-colors ${
                   flagged.has(current)
                     ? 'border-amber-500/40 bg-amber-500/10 text-amber-300'
-                    : 'border-gray-250 dark:border-white/[0.08] bg-gray-50 dark:bg-white/[0.03] text-gray-500 dark:text-white/45 hover:bg-gray-100 dark:hover:bg-white/[0.07]'
+                    : 'border-gray-200 dark:border-white/[0.08] bg-gray-50 dark:bg-white/[0.03] text-gray-500 dark:text-white/45 hover:bg-gray-100 dark:hover:bg-white/[0.07]'
                 }`}
               >
                 <Bookmark size={13} className={flagged.has(current) ? 'fill-amber-400' : ''} />
@@ -1132,7 +1130,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
           <button
             onClick={() => handleGoTo(current - 1)}
             disabled={current === 0}
-            className="flex items-center gap-2 rounded-full border border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.04] px-5 py-2.5 text-sm text-gray-700 dark:text-white/70 transition-colors hover:bg-gray-150 dark:hover:bg-white/[0.08] disabled:cursor-not-allowed disabled:opacity-30"
+            className="flex items-center gap-2 rounded-full border border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.04] px-5 py-2.5 text-sm text-gray-700 dark:text-white/70 transition-colors hover:bg-gray-100 dark:hover:bg-white/[0.08] disabled:cursor-not-allowed disabled:opacity-30"
           >
             <ArrowLeft size={15} className={isRTL ? 'rotate-180' : ''} /> Previous
           </button>
@@ -1190,7 +1188,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
               <div className="mt-5 flex gap-3">
                 <button
                   onClick={() => setConfirmFinish(false)}
-                  className="flex-1 rounded-full border border-gray-200 dark:border-white/[0.1] py-2.5 text-sm text-gray-650 dark:text-white/70 transition-colors hover:bg-gray-100 dark:hover:bg-white/[0.06]"
+                  className="flex-1 rounded-full border border-gray-200 dark:border-white/[0.1] py-2.5 text-sm text-gray-600 dark:text-white/70 transition-colors hover:bg-gray-100 dark:hover:bg-white/[0.06]"
                 >
                   Keep working
                 </button>

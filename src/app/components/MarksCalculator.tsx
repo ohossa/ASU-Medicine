@@ -579,7 +579,7 @@ export function MarksCalculator({ onBack, userButton }: { onBack: () => void; us
               <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl bg-gradient-to-r from-gray-950 via-gray-900 to-gray-700 dark:from-white dark:via-white dark:to-white/60 bg-clip-text text-transparent">
                 Marks Calculator & Predictor
               </h2>
-              <p className="text-sm text-gray-650 dark:text-white/50 leading-relaxed">
+              <p className="text-sm text-gray-600 dark:text-white/50 leading-relaxed">
                 Choose a module from the official curriculum below to estimate target exam marks required for your desired grade, or construct a custom module.
               </p>
             </div>
@@ -633,7 +633,7 @@ export function MarksCalculator({ onBack, userButton }: { onBack: () => void; us
                     onClick={() => setSelectedSemesterTab(s)}
                     className={`rounded-full px-6 py-1.5 text-xs font-semibold uppercase tracking-wider transition-all cursor-pointer ${
                       selectedSemesterTab === s
-                        ? "bg-white dark:bg-white/15 text-gray-950 dark:text-white shadow-sm dark:shadow-md border border-gray-250 dark:border-white/10"
+                        ? "bg-white dark:bg-white/15 text-gray-950 dark:text-white shadow-sm dark:shadow-md border border-gray-200 dark:border-white/10"
                         : "text-gray-500 dark:text-white/40 hover:text-gray-700 dark:hover:text-white/70"
                     }`}
                   >
@@ -792,7 +792,7 @@ export function MarksCalculator({ onBack, userButton }: { onBack: () => void; us
                   </div>
 
                   {activeModule.sections.length === 0 && (
-                    <p className="flex items-center gap-2 text-sm text-gray-450 dark:text-white/40">
+                    <p className="flex items-center gap-2 text-sm text-gray-400 dark:text-white/40">
                       <HelpCircle size={15} /> Add at least one section with a max score.
                     </p>
                   )}
@@ -866,7 +866,7 @@ export function MarksCalculator({ onBack, userButton }: { onBack: () => void; us
                       {calc.entered}
                       <span className="text-base font-normal text-gray-400 dark:text-white/35"> / {total}</span>
                     </p>
-                    <p className="text-xs text-gray-450 dark:text-white/40 tabular-nums">
+                    <p className="text-xs text-gray-400 dark:text-white/40 tabular-nums">
                       {calc.remainingMax} marks still on the table
                     </p>
                   </div>
@@ -890,7 +890,7 @@ export function MarksCalculator({ onBack, userButton }: { onBack: () => void; us
                       >
                         {grade}
                       </motion.p>
-                      <p className="text-[11px] text-gray-450 dark:text-white/35">{hint}</p>
+                      <p className="text-[11px] text-gray-400 dark:text-white/35">{hint}</p>
                     </GlassCard>
                   ))}
                 </div>
@@ -927,7 +927,7 @@ export function MarksCalculator({ onBack, userButton }: { onBack: () => void; us
                               </span>
                             )}
                             {status.kind === "out-of-reach" && (
-                              <span className="flex items-center gap-1.5 text-sm font-medium text-rose-650 dark:text-rose-400">
+                              <span className="flex items-center gap-1.5 text-sm font-medium text-rose-600 dark:text-rose-400">
                                 <AlertTriangle size={15} /> Out of Reach
                               </span>
                             )}

@@ -195,13 +195,13 @@ export function QuestionSearch({ onBack, userButton }: QuestionSearchProps) {
           <div
             className="flex h-11 flex-1 items-center gap-2.5 rounded-2xl px-3.5 border border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.045] backdrop-blur-xl transition-colors"
           >
-            <Search size={16} className="shrink-0 text-gray-450 dark:text-neutral-500" />
+            <Search size={16} className="shrink-0 text-gray-400 dark:text-neutral-500" />
             <input
               autoFocus
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder="Search questions, answers, chapters…"
-              className="h-full w-full bg-transparent text-[15px] text-gray-900 dark:text-neutral-100 placeholder-gray-450 dark:placeholder-neutral-500 outline-none"
+              className="h-full w-full bg-transparent text-[15px] text-gray-900 dark:text-neutral-100 placeholder-gray-400 dark:placeholder-neutral-500 outline-none"
             />
             {query && (
               <button
@@ -220,7 +220,7 @@ export function QuestionSearch({ onBack, userButton }: QuestionSearchProps) {
             className={`relative flex h-9 w-9 shrink-0 items-center justify-center rounded-full border transition-all active:scale-95 cursor-pointer ${
               showFilters
                 ? "border-gray-300 dark:border-white/20 bg-gray-100 dark:bg-white/10 text-gray-950 dark:text-white"
-                : "border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.03] text-gray-750 dark:text-white/80 hover:bg-gray-100 dark:hover:bg-white/10"
+                : "border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.03] text-gray-700 dark:text-white/80 hover:bg-gray-100 dark:hover:bg-white/10"
             }`}
           >
             <Search size={15} />
@@ -382,7 +382,7 @@ export function QuestionSearch({ onBack, userButton }: QuestionSearchProps) {
 
                             {/* Explanation */}
                             {isRevealed && (q as any).explanation && (
-                              <div className="mt-3 flex gap-2 rounded-xl bg-gray-50 dark:bg-white/[0.03] border border-gray-200 dark:border-transparent px-4 py-3 text-[13px] leading-relaxed text-gray-650 dark:text-neutral-400">
+                              <div className="mt-3 flex gap-2 rounded-xl bg-gray-50 dark:bg-white/[0.03] border border-gray-200 dark:border-transparent px-4 py-3 text-[13px] leading-relaxed text-gray-600 dark:text-neutral-400">
                                 <HelpCircle size={14} className="mt-0.5 shrink-0 text-gray-400 dark:text-neutral-500" />
                                 <p>{(q as any).explanation}</p>
                               </div>
@@ -507,7 +507,7 @@ const EmptyState: React.FC<{ query: string; flaggedOnly: boolean }> = ({ query, 
         <Search size={22} className="text-gray-400 dark:text-neutral-500" />
       </div>
       <p className="text-[15px] font-medium text-gray-700 dark:text-neutral-300">No questions found</p>
-      <p className="max-w-xs text-[13px] leading-relaxed text-gray-450 dark:text-neutral-500">
+      <p className="max-w-xs text-[13px] leading-relaxed text-gray-400 dark:text-neutral-500">
         {flaggedOnly
           ? "No flagged questions match. Try disabling the flagged filter."
           : query.trim()

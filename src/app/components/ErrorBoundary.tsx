@@ -63,7 +63,7 @@ export class ErrorBoundary extends Component<Props, State> {
             </p>
 
             {this.state.error && (
-              <div className="bg-black/40 rounded-2xl p-4 border border-gray-850/80 mb-8 overflow-auto max-h-48 font-mono text-xs text-red-350/90 leading-normal">
+              <div className="bg-black/40 rounded-2xl p-4 border border-gray-800/80 mb-8 overflow-auto max-h-48 font-mono text-xs text-red-350/90 leading-normal">
                 <div className="font-bold mb-1 text-red-400">{this.state.error.toString()}</div>
                 {this.state.errorInfo?.componentStack && (
                   <pre className="mt-2 text-gray-500/80 whitespace-pre-wrap leading-relaxed">
@@ -76,7 +76,7 @@ export class ErrorBoundary extends Component<Props, State> {
             <div className="flex flex-col sm:flex-row gap-3">
               <button
                 onClick={this.handleReload}
-                className="flex-1 flex items-center justify-center gap-2 px-5 py-3.5 bg-gray-800 hover:bg-gray-700 text-white rounded-full text-xs font-bold transition-all border border-gray-750"
+                className="flex-1 flex items-center justify-center gap-2 px-5 py-3.5 bg-gray-800 hover:bg-gray-700 text-white rounded-full text-xs font-bold transition-all border border-gray-700"
               >
                 <RefreshCw size={14} />
                 Reload Page

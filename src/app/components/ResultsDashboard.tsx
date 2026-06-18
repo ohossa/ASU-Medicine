@@ -226,7 +226,6 @@ export function ResultsDashboard({
   onBackToSubjects,
   userButton,
 }: Props) {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { t, language } = useLanguage();
   const { isDark } = useTheme();
   const isRTL = language === 'ar';
@@ -253,7 +252,7 @@ export function ResultsDashboard({
     percentage >= 75
       ? 'text-emerald-600 dark:text-emerald-400'
       : percentage >= 65
-        ? 'text-sky-650 dark:text-sky-400'
+        ? 'text-sky-600 dark:text-sky-400'
         : percentage >= 60
           ? 'text-amber-600 dark:text-amber-400'
           : 'text-rose-600 dark:text-rose-400';
@@ -383,13 +382,13 @@ export function ResultsDashboard({
           <ul className="space-y-1.5">
             {blanks.map((b, bi) => (
               <li key={bi} className="flex flex-wrap items-center gap-2 text-sm">
-                <span className="text-gray-450 dark:text-white/35 tabular-nums">#{bi + 1}</span>
+                <span className="text-gray-400 dark:text-white/35 tabular-nums">#{bi + 1}</span>
                 <span className="font-medium text-emerald-600 dark:text-emerald-400">{b}</span>
                 {(q.acceptedAnswers?.[bi]?.length ?? 0) > 0 && (
                   <span className="text-xs text-gray-400 dark:text-white/35">(also: {q.acceptedAnswers![bi].join(', ')})</span>
                 )}
                 <span className="text-gray-300 dark:text-white/30">·</span>
-                <span className={isBlankCorrect(q, inputs, bi) ? 'text-emerald-600/80 dark:text-emerald-400/80' : 'text-rose-650/80 dark:text-rose-400/80 line-through'}>
+                <span className={isBlankCorrect(q, inputs, bi) ? 'text-emerald-600/80 dark:text-emerald-400/80' : 'text-rose-600/80 dark:text-rose-400/80 line-through'}>
                   you: {inputs[bi]?.trim() || 'blank'}
                 </span>
               </li>
@@ -437,7 +436,7 @@ export function ResultsDashboard({
         return (
           <div key={si} className="rounded-xl border border-gray-200 dark:border-white/[0.07] bg-gray-50/30 dark:bg-white/[0.02] p-4 text-start">
             <div className="mb-3 flex items-start justify-between gap-3">
-              <p className="text-sm font-medium text-gray-805 dark:text-white/85">
+              <p className="text-sm font-medium text-gray-800 dark:text-white/85">
                 <span className="text-gray-400 dark:text-white/40">{si + 1}.</span> {sq.text}
               </p>
               {userAns !== undefined ? (
@@ -501,7 +500,7 @@ export function ResultsDashboard({
                   </p>
                 </div>
                 {sq.modelAnswer && (
-                  <div className="rounded-lg border border-emerald-500/15 bg-emerald-500/[0.01] dark:bg-emerald-500/[0.02] p-3 text-xs leading-relaxed text-gray-650 dark:text-white/70">
+                  <div className="rounded-lg border border-emerald-500/15 bg-emerald-500/[0.01] dark:bg-emerald-500/[0.02] p-3 text-xs leading-relaxed text-gray-600 dark:text-white/70">
                     <span className="font-semibold text-emerald-600 dark:text-emerald-400 block mb-1">Reference Answer:</span>
                     {sq.modelAnswer}
                   </div>
@@ -644,7 +643,7 @@ export function ResultsDashboard({
                 className={`flex items-center gap-2 rounded-full border px-4 py-2 text-sm transition-all cursor-pointer ${
                   isActive
                     ? 'border-gray-300 dark:border-white/30 bg-gray-900 dark:bg-white text-white dark:text-black font-semibold shadow-sm'
-                    : 'border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.03] text-gray-650 dark:text-white/60 hover:bg-gray-100 dark:hover:bg-white/[0.07]'
+                    : 'border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.03] text-gray-600 dark:text-white/60 hover:bg-gray-100 dark:hover:bg-white/[0.07]'
                 }`}
               >
                 {label}
