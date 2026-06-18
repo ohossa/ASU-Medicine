@@ -479,17 +479,83 @@ Implementation: `` for critical links, or `link rel="prefetch"` injected dynamic
 
 ---
 
-## 10. Unresolved Questions (For Post-Plan Decisions)
+## 10. Locked Decisions — Stakeholder Answers (2026-06-18)
 
-1. **Sound licensing:** Should we synthesize sounds via Web Audio API (no external files) or use Freesound samples? Synthesis = zero loading, but less organic.
-2. **Exam mode question count:** Default 60 questions? Configurable per module?
-3. **Streak heatmap data:** Start from today, or retroactively compute from stored quiz history?
-4. **Spaced repetition sync:** Repetition state lives in `localStorage`. Should it sync to cloud? (Adds complexity, but enables cross-device review.)
-5. **Difficulty assignment strategy:** You chose NULL first, AI backfill later. What's the timeline for the AI backfill batch job?
-6. **Themed confetti shapes:** Custom Canvas 2D paths require design work. Should we start with simple color-coded confetti and upgrade to shapes in a later pass?
+| # | Question | Answer |
+|---|----------|--------|
+| 1 | **Sound licensing** | Freesound samples (.mp3). Organic, warm, professional. Bundle ~200KB. |
+| 2 | **Exam mode question count** | Configurable: 20 / 40 / 60 / 80 per session. Student selects before start. |
+| 3 | **Streak heatmap data** | Forward only (today onward). No retroactive computation. Clean slate. |
+| 4 | **Spaced repetition sync** | Cloud sync with localStorage fallback. Cross-device review enabled. |
+| 5 | **Difficulty assignment strategy** | Leave NULL in schema. Backfill via AI batch job later (not in scope now). |
+| 6 | **Themed confetti shapes** | Phase: Colors Phase 3, full themed shapes Phase 5. Iterate. |
+| 7 | **Sound default state** | ON by default. Mute toggle in settings. |
+| 8 | **Exam timer UX** | Simple toggle inside quiz settings. Not a separate screen. |
+| 9 | **Confetti trigger** | Generic for normal scores. Themed confetti ONLY on perfect scores (100%). |
+| 10 | **Design aesthetic** | Apple / Spotify throughout. Clean, smooth, glassmorphism, no clutter. |
 
 ---
 
-*Plan v3. 27 shipped. 50+ remaining. This is the architecture for a genuinely world-class medical education platform.*
+## 11. Phased Implementation Order (CONFIRMED)
 
-**Next step:** Approve this plan, answer the 6 unresolved questions above, and I start shipping Phase 1.
+### Phase 1: Schema Foundation (Day 1)
+- Add `difficulty`, `bloomLevel`, `tags`, `estimatedTimeSeconds`, `media` to `types.ts`
+- Add Zod schemas for runtime validation
+- Add analytics reserved fields
+- Fix all `any` types in `data.ts`
+- Commit: `schema: expand Question type with difficulty, bloom, tags, media`
+
+### Phase 2: Sound Design + Micro-Interactions (Day 1–2)
+- Source + normalize Freesound samples (correct chime, wrong thud, streak combo, timer pulse, perfect swell)
+- `lib/soundEngine.ts` with play/pause/mute
+- Micro-interactions: button press scale, option row hover, flag toggle burst, timer ring urgency
+- Commit: `design: sound engine + micro-interactions`
+
+### Phase 3: Countdown Timer + Exam Simulation Mode (Day 2–3)
+- Circular SVG timer ring with color phases
+- Configurable question count (20/40/60/80)
+- Timer toggle: Off / Practice / Exam (auto-submit)
+- Sound: accelerating pulse on urgency
+- Commit: `feat: countdown timer + exam simulation mode`
+
+### Phase 4: Themed Confetti + 3D Card Flip (Day 3–4)
+- Color-coded confetti per module (Phase 3)
+- 3D card flip reveal on answer (CSS 3D transforms)
+- Perfect score = legendary themed burst
+- Commit: `design: themed confetti + 3D card flip reveal`
+
+### Phase 5: Glassmorphism + Custom Cursor + HUD (Day 4–5)
+- Glassmorphism dashboard cards (frosted glass + lift on hover)
+- Custom cursor (glowing orb, color shift on hover)
+- XP / Streak / Level HUD in quiz
+- Commit: `design: glassmorphism dashboard + custom cursor + XP HUD`
+
+### Phase 6: Gamification Core (Day 5–7)
+- XP system with thresholds
+- Daily streak calendar (GitHub heatmap, forward only)
+- Spaced Repetition SM-2 engine
+- "Weakest Topics" auto-recommendation
+- LevelUpOverlay redesign
+- Commit: `feat: gamification (XP, streaks, spaced repetition, weakest topics)`
+
+### Phase 7: Accessibility + Polish (Day 7–8)
+- Global `prefers-reduced-motion`
+- `aria-live` quiz announcements
+- Focus traps in overlays
+- High-contrast mode
+- Touch target audit (44px minimum)
+- Semantic HTML landmarks
+- Commit: `a11y: reduced-motion, aria-live, focus traps, high-contrast`
+
+### Phase 8: Performance (Day 8–10)
+- Service Worker precache expansion (all hashed chunks)
+- Route prefetching
+- Loading skeletons for async content
+- Image optimization pipeline
+- Commit: `perf: SW expansion + prefetch + skeletons`
+
+---
+
+*Plan v3. Locked with stakeholder answers. 27 shipped. 50+ remaining. Ready to ship.*
+
+**Green light needed:** Say "ship Phase 1" and I start immediately.
