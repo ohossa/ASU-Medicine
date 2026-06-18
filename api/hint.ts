@@ -343,7 +343,7 @@ function buildUserPrompt(req: HintRequest): string {
 }
 
 function getAdapter(): AIAdapter {
-  const provider = (process.env.HINT_AI_PROVIDER ?? 'static').toLowerCase();
+  const provider = (process.env.HINT_AI_PROVIDER ?? detectProvider()).toLowerCase();
   switch (provider) {
     case 'openai':
       return new OpenAIAdapter();
@@ -357,6 +357,14 @@ function getAdapter(): AIAdapter {
     default:
       return new StaticFallbackAdapter();
   }
+}
+
+function detectProvider(): string {
+  // Auto-detect which AI provider to use based on available API keys
+  if (process.env.OPENAI_API_KEY) return 'openai';
+  if (process.env.GOOGLE_GENAI_API_KEY) return 'google';
+  if (process.env.NVIDIA_API_KEY) return 'nvidia';
+  return 'static';
 }
 
 /* ─── KV / Redis client (same pattern as api/sync.ts) ─── */
