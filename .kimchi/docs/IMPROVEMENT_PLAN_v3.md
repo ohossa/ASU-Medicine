@@ -94,6 +94,74 @@ export const QuestionSchema = z.object({
 
 ---
 
+### 2.2 Difficulty Assignment Strategy (Heuristic + AI, No Student Burden)
+
+**Principle:** Students should NEVER be asked to rate difficulty or see "this question was adjusted." It is entirely behind the scenes.
+
+#### Layer 1: Heuristic Defaults (Instant, Deterministic)
+
+At build time, every question gets a base `difficulty` based on **question type + text complexity + distractor count**:
+
+```typescript
+function assignDefaultDifficulty(q: Question): 1 | 2 | 3 | 4 | 5 {
+  let difficulty = 3; // MCQ baseline = medium
+  
+  if (q.type === 'truefalse')  difficulty = 1;
+  if (q.type === 'matching')   difficulty = 3;
+  if (q.type === 'essay')      difficulty = 4;
+  if (q.type === 'case_study') difficulty = 5;
+  
+  // Complex terminology → +1
+  const complex = /(?:metabolism|pathophysiology|pharmacokinetics|immunohistochemistry|electroencephalographic)/i.test(q.text);
+  if (complex) difficulty += 1;
+  
+  // Distractor density (MCQ only)
+  if (q.type === 'mcq' && Array.isArray(q.options)) {
+    if (q.options.length <= 2) difficulty -= 1;
+    if (q.options.length >= 5) difficulty += 1;
+    if (q.options.some(o => /all of the above|none of the above/i.test(o))) difficulty += 1;
+  }
+  
+  // Explanation depth
+  if (q.explanation && q.explanation.length > 400) difficulty += 1;
+  if (q.explanation && q.explanation.length < 100) difficulty -= 1;
+  
+  return Math.max(1, Math.min(5, difficulty)) as 1 | 2 | 3 | 4 | 5;
+}
+```
+
+**Result:** Every question immediately has a sensible difficulty. No empty fields. No AI cost.
+
+#### Layer 2: AI Batch Refinement (Optional, One-Time)
+
+A single batch job runs post-deployment to refine difficulty based on **clinical complexity** and **cognitive load**. This is a background process, not a student interaction.
+
+**Prompt template:**
+```
+You are a medical education assessment specialist. Rate this question's difficulty for a Year 2 medical student at Ain Shams University.
+
+Question: {text}
+Options: {options}
+Explanation: {explanation}
+
+Rate 1–5 based on: vocabulary complexity, number of cognitive steps, distractor strength, edge-case vs core knowledge, clinical realism.
+
+Return ONLY: {"difficulty": 1|2|3|4|5, "reasoning": "one sentence"}
+```
+
+**Cost:** Zero (NVIDIA Llama 3.1 is free). Time: ~30 minutes for 5,000 questions.
+
+#### What Students See
+
+Nothing. Difficulty is a **backend attribute** used by the quiz engine for:
+- **Adaptive mode:** Present easier questions first, then ramp up
+- **Exam simulation:** Hard questions weighted more in scoring
+- **Weakest topics:** Clustering by tag + difficulty
+
+No toggles. No "rate this question." No popups. Zero friction.
+
+---
+
 ## 3. INSANE Design Overhaul (The Wave They Chose)
 
 ### 3.1 Premium Exam Simulation Mode
