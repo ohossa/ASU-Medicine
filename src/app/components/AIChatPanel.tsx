@@ -114,6 +114,15 @@ export function AIChatPanel({
     }
   }, [visible, messages]);
 
+  // Auto-trigger first hint when panel becomes visible (one-time, guards against initial mount call)
+  const hasAutoTriggeredRef = useRef(false);
+  useEffect(() => {
+    if (!visible || messages.length > 0 || loading) return;
+    if (hasAutoTriggeredRef.current) return;
+    hasAutoTriggeredRef.current = true;
+    onSend('');
+  }, [visible, messages, loading]);
+
   const handleInputChange = (e: React.ChangeEvent<HTMLTextAreaElement>) => {
     const val = e.target.value;
     setInputValue(val);

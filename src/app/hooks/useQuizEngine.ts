@@ -67,6 +67,7 @@ function getAnswerState(
       return true;
     });
     if (!allDone) return 'submitted';
+    return 'correct';
   }
 
   return 'incorrect';

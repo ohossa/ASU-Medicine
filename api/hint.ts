@@ -36,6 +36,8 @@ export interface HintRequest {
   userAnswer?: string;
   studentWrongAnswer?: string;
   correctAnswer?: string;
+  modelAnswer?: string;
+  blanks?: string[];
   messages?: { role: 'user' | 'assistant'; content: string }[];
 }
 
@@ -285,7 +287,7 @@ class NVIDIAAdapter implements AIAdapter {
 
     const data = await res.json();
     const text = data.choices?.[0]?.message?.content?.trim() ?? '';
-    return { text, source: 'custom' };
+    return { text, source: 'nvidia' };
   }
 }
 

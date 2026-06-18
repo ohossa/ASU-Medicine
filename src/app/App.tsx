@@ -299,7 +299,7 @@ function MainApp() {
   // Lazy-load question banks
   const [dataReady, setDataReady] = useState(false);
   useEffect(() => {
-    ensureDataLoaded().then(() => setDataReady(true));
+    ensureDataLoaded().then(() => setDataReady(true)).catch(() => setDataReady(true));
   }, []);
 
   // ── 1. State Initializations ──────────────────────────────────────────────────
@@ -961,7 +961,7 @@ function MainApp() {
         </div>
 
         <AnimatePresence mode="wait">
-          <Routes location={location} key={location.pathname}>
+          <Routes location={location}>
             {/* Main Dashboard page */}
             <Route path="/" element={
               <Suspense fallback={<div className="fixed inset-0 bg-background pointer-events-none" />}>

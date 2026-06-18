@@ -94,6 +94,10 @@ function getQuestionStatus(q: Question, ans: any): 'correct' | 'incorrect' | 'pe
         if (subAns !== sq.correctIndex) {
           hasIncorrect = true;
         }
+      } else if (sq.type === 'fillblank') {
+        if (subAns?.submitted !== true) {
+          hasPending = true;
+        }
       } else {
         const graded = typeof subAns === 'object' && subAns.selfGrade !== undefined;
         if (graded) {

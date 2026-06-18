@@ -44,7 +44,8 @@ export function useHintSystem({
 
   const sendMessage = useCallback(
     async (text: string) => {
-      if (!enabled || !text.trim()) return;
+      if (!enabled) return;
+      if (!text.trim() && messages.length > 0) return;
 
       const userMsg: ChatMessage = {
         id: Date.now().toString(),
