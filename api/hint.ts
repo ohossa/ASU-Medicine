@@ -109,9 +109,40 @@ class StaticFallbackAdapter implements AIAdapter {
 class OpenAIAdapter implements AIAdapter {
   private apiKey: string;
   private model: string;
+  private baseUrl: string;
+  private headers: Record<string, string>;
+
   constructor() {
     this.apiKey = process.env.OPENAI_API_KEY ?? '';
     this.model = process.env.OPENAI_HINT_MODEL ?? 'gpt-4o-mini';
+
+    const customBase = process.env.KIMCHI_BASE_URL;
+    const isOpenRouter = this.apiKey.startsWith('sk-or-');
+
+    if (customBase && !isOpenRouter) {
+      // Custom OpenAI-compatible endpoint (e.g. Kimchi, LiteLLM proxy)
+      this.baseUrl = customBase.replace(/\/$/, '') + '/chat/completions';
+      this.headers = {
+        Authorization: `Bearer ${this.apiKey}`,
+        'Content-Type': 'application/json',
+      };
+    } else if (isOpenRouter) {
+      // OpenRouter key format: sk-or-...
+      this.baseUrl = 'https://openrouter.ai/api/v1/chat/completions';
+      this.headers = {
+        Authorization: `Bearer ${this.apiKey}`,
+        'Content-Type': 'application/json',
+        'HTTP-Referer': process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'https://asu-medical-portal.vercel.app',
+        'X-Title': 'ASU Medical Portal AI Tutor',
+      };
+    } else {
+      // Direct OpenAI
+      this.baseUrl = 'https://api.openai.com/v1/chat/completions';
+      this.headers = {
+        Authorization: `Bearer ${this.apiKey}`,
+        'Content-Type': 'application/json',
+      };
+    }
   }
 
   async generateHint(req: HintRequest): Promise<HintResponse> {
@@ -126,17 +157,14 @@ class OpenAIAdapter implements AIAdapter {
 
     // Include conversation history if available
     if (req.messages && req.messages.length > 0) {
-      messages.push(...req.messages);
+      messages.push(...req.messages.map(m => ({ role: m.role as 'user' | 'assistant', content: m.content })));
     }
 
     messages.push({ role: 'user', content: userPrompt });
 
-    const res = await fetch('https://api.openai.com/v1/chat/completions', {
+    const res = await fetch(this.baseUrl, {
       method: 'POST',
-      headers: {
-        Authorization: `Bearer ${this.apiKey}`,
-        'Content-Type': 'application/json',
-      },
+      headers: this.headers,
       body: JSON.stringify({
         model: this.model,
         messages,
@@ -147,7 +175,7 @@ class OpenAIAdapter implements AIAdapter {
 
     if (!res.ok) {
       const err = await res.text();
-      throw new Error(`OpenAI API error: ${res.status} ${err}`);
+      throw new Error(`OpenAI-compatible API error: ${res.status} ${err}`);
     }
 
     const data = await res.json();

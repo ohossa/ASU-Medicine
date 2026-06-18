@@ -104,7 +104,44 @@ export function useHintSystem({
           return;
         }
 
-        const data = await res.json();
+        if (!res.ok) {
+          const errData = await res.json().catch(() => ({ error: `HTTP ${res.status}` }));
+          throw new Error(errData.error || errData.message || `Server error (${res.status})`);
+        }
+
+        let data: any = {};
+        try {
+          data = await res.json();
+        } catch (_parseErr) {
+          // Server returned HTML or empty body (common in development)
+          const bodyText = await res.text().catch(() => '');
+          if (import.meta.env.DEV) {
+            setMessages((prev) => [
+              ...prev,
+              {
+                id: Date.now().toString() + '-ai',
+                role: 'assistant',
+                content:
+                  "🛠️ Dev mode: the AI tutor needs the backend running. Run `npx vercel dev` (port 3000) alongside `npm run dev` (port 5173), or check the API route is live.",
+              },
+            ]);
+          } else if (bodyText.includes('<!DOCTYPE') || bodyText.includes('<html')) {
+            setMessages((prev) => [
+              ...prev,
+              {
+                id: Date.now().toString() + '-ai',
+                role: 'assistant',
+                content:
+                  "Something went wrong — the server returned a page instead of an answer. Please try again in a moment.",
+              },
+            ]);
+          } else {
+            throw new Error('Server response was not valid JSON.');
+          }
+          setLoading(false);
+          return;
+        }
+
         setMessages((prev) => [
           ...prev,
           {

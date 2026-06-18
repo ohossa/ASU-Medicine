@@ -20,6 +20,15 @@ function figmaAssetResolver() {
 
 export default defineConfig({
   base: process.env.VITE_BASE_PATH || '/',
+  server: {
+    proxy: {
+      '/api': {
+        target: 'http://localhost:3000',
+        changeOrigin: true,
+        ws: true,
+      },
+    },
+  },
   plugins: [
     figmaAssetResolver(),
     react(),
