@@ -48,6 +48,14 @@ GOOGLE_GENAI_API_KEY=...
 GOOGLE_HINT_MODEL=gemini-1.5-flash
 ```
 
+Or for NVIDIA NIM:
+
+```
+HINT_AI_PROVIDER=nvidia
+NVIDIA_API_KEY=nvapi-your-key-here
+NVIDIA_HINT_MODEL=meta/llama-3.1-70b-instruct
+```
+
 ### For local development
 
 Create or edit `.env.local`:

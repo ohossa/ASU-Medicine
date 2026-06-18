@@ -210,6 +210,57 @@ class GoogleGenAIAdapter implements AIAdapter {
   }
 }
 
+class NVIDIAAdapter implements AIAdapter {
+  private apiKey: string;
+  private model: string;
+  constructor() {
+    this.apiKey = process.env.NVIDIA_API_KEY ?? '';
+    this.model = process.env.NVIDIA_HINT_MODEL ?? 'meta/llama-3.1-70b-instruct';
+  }
+
+  async generateHint(req: HintRequest): Promise<HintResponse> {
+    if (!this.apiKey) throw new Error('NVIDIA_API_KEY not configured');
+
+    const systemPrompt = buildSystemPrompt(req);
+    const userPrompt = buildUserPrompt(req);
+
+    const messages: { role: 'system' | 'user' | 'assistant'; content: string }[] = [
+      { role: 'system', content: systemPrompt },
+    ];
+
+    // Include conversation history if available
+    if (req.messages && req.messages.length > 0) {
+      messages.push(...req.messages.map(m => ({ role: m.role as 'user' | 'assistant', content: m.content })));
+    }
+
+    messages.push({ role: 'user', content: userPrompt });
+
+    const res = await fetch('https://integrate.api.nvidia.com/v1/chat/completions', {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${this.apiKey}`,
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        model: this.model,
+        messages,
+        max_tokens: 200,
+        temperature: 0.7,
+        top_p: 0.9,
+      }),
+    });
+
+    if (!res.ok) {
+      const err = await res.text();
+      throw new Error(`NVIDIA API error: ${res.status} ${err}`);
+    }
+
+    const data = await res.json();
+    const text = data.choices?.[0]?.message?.content?.trim() ?? '';
+    return { text, source: 'custom' };
+  }
+}
+
 /* ─── helpers ─── */
 
 function buildSystemPrompt(req: HintRequest): string {
@@ -271,6 +322,9 @@ function getAdapter(): AIAdapter {
     case 'google':
     case 'gemini':
       return new GoogleGenAIAdapter();
+    case 'nvidia':
+    case 'nim':
+      return new NVIDIAAdapter();
     case 'static':
     default:
       return new StaticFallbackAdapter();
