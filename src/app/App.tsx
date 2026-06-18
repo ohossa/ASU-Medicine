@@ -82,6 +82,7 @@ import LoadingScreen from './components/LoadingScreen';
 import { useCloudSync } from './hooks/useCloudSync';
 import { YearSelectionModal } from './components/YearSelectionModal';
 import {
+  ensureDataLoaded,
   getChaptersForModuleAndMode,
   getModuleQuestionCounts,
   isModuleActive,
@@ -293,6 +294,13 @@ function MainApp() {
   
   // Initialize automatic cloud synchronization
   useCloudSync();
+
+  // Lazy-load question banks
+  const [dataReady, setDataReady] = useState(false);
+  useEffect(() => {
+    ensureDataLoaded().then(() => setDataReady(true));
+  }, []);
+  if (!dataReady) return <LoadingScreen />;
 
   // ── 1. State Initializations ──────────────────────────────────────────────────
 

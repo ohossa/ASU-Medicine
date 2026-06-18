@@ -1,7 +1,7 @@
 import type { ChapterData, Question, SubjectColor, SubjectData, SubQuestion } from './types';
 
-// Glob all JSON files under src/imports recursively at build time
-const globbedFiles = import.meta.glob('../imports/**/*.json', { eager: true });
+// Glob all JSON files under src/imports recursively at build time (lazy)
+const globbedFiles = import.meta.glob('../imports/**/*.json');
 
 // ── Raw JSON types ─────────────────────────────────────────────────────────────
 
@@ -455,10 +455,13 @@ function detectDbTypeOfJson(rawData: any): 'mcq' | 'essay' {
   return 'mcq'; // fallback default
 }
 
-// Scan the files dynamically at build time
-for (const path in globbedFiles) {
-  const fileModule = globbedFiles[path];
-  const rawData = (fileModule as any).default || fileModule;
+let loadPromise: Promise<void> | null = null;
+
+async function loadAllModules(): Promise<void> {
+  for (const path in globbedFiles) {
+    const loader = globbedFiles[path];
+    const fileModule = await loader();
+    const rawData = (fileModule as any).default || fileModule;
 
   if (rawData && typeof rawData === 'object' && 'schemaVersion' in rawData) {
     const sv = rawData.schemaVersion;
@@ -550,6 +553,15 @@ for (const path in globbedFiles) {
       moduleDatabases[code].mcqRaw = rawData;
     }
   }
+}
+}
+
+export async function ensureDataLoaded(): Promise<void> {
+  if (Object.keys(moduleDatabases).length > 0) return Promise.resolve();
+  if (!loadPromise) {
+    loadPromise = loadAllModules();
+  }
+  return loadPromise;
 }
 
 // ── Builders ───────────────────────────────────────────────────────────────────
