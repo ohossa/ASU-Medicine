@@ -41,37 +41,48 @@ describe('AIChatPanel rendering', () => {
     expect(screen.getByPlaceholderText(/Ask AI Tutor/i)).toBeInTheDocument();
   });
 
-  it('shows message count badge when messages exist', () => {
-    // In minimal design, the message count badge was removed
+  it('shows AI Tutor header when expanded with messages', () => {
+    // Panel starts collapsed, need to expand by focusing textarea
     const messages = makeMessages([
       { id: '1', role: 'user', content: 'Hello' },
       { id: '2', role: 'assistant', content: 'Hi there' },
     ]);
     render(<AIChatPanel {...makeProps({ visible: true, messages })} />);
-    // No badge in minimal design - just the minimal header with "AI Tutor" text
+    // Expand the panel by focusing textarea
+    const textarea = screen.getByPlaceholderText(/Ask a follow-up/i);
+    fireEvent.focus(textarea);
     expect(screen.getAllByText(/AI Tutor/i).length).toBeGreaterThan(0);
   });
 
-  it('renders user messages with correct styling', () => {
+  it('renders user messages with correct styling when expanded', () => {
     const messages = makeMessages([
       { id: '1', role: 'user', content: 'My question' },
     ]);
     render(<AIChatPanel {...makeProps({ visible: true, messages })} />);
+    // Expand the panel by focusing textarea
+    const textarea = screen.getByPlaceholderText(/Ask a follow-up/i);
+    fireEvent.focus(textarea);
     const msgEl = screen.getByText('My question');
     expect(msgEl).toBeInTheDocument();
   });
 
-  it('renders assistant messages with AI label', () => {
+  it('renders assistant messages with AI label when expanded', () => {
     const messages = makeMessages([
       { id: '1', role: 'assistant', content: 'AI response' },
     ]);
     render(<AIChatPanel {...makeProps({ visible: true, messages })} />);
+    // Expand the panel by focusing textarea
+    const textarea = screen.getByPlaceholderText(/Ask a follow-up/i);
+    fireEvent.focus(textarea);
     expect(screen.getByText('AI response')).toBeInTheDocument();
     expect(screen.getByText('AI')).toBeInTheDocument();
   });
 
-  it('shows error message when error is set', () => {
+  it('shows error message when error is set and expanded', () => {
     render(<AIChatPanel {...makeProps({ visible: true, error: 'Network failed' })} />);
+    // Expand the panel by focusing textarea
+    const textarea = screen.getByPlaceholderText(/Ask AI Tutor/i);
+    fireEvent.focus(textarea);
     expect(screen.getByText(/Network failed/i)).toBeInTheDocument();
   });
 });
@@ -150,9 +161,12 @@ describe('AIChatPanel input behavior', () => {
 });
 
 describe('AIChatPanel clear behavior', () => {
-  it('renders clear button when messages exist', () => {
+  it('renders clear button when messages exist and panel is expanded', () => {
     const messages = makeMessages([{ id: '1', role: 'user', content: 'Test' }]);
     render(<AIChatPanel {...makeProps({ visible: true, messages })} />);
+    // Expand the panel by focusing textarea
+    const textarea = screen.getByPlaceholderText(/Ask a follow-up/i);
+    fireEvent.focus(textarea);
 
     expect(screen.getByText(/Clear/i)).toBeInTheDocument();
   });
@@ -167,6 +181,9 @@ describe('AIChatPanel clear behavior', () => {
     const onClear = vi.fn();
     const messages = makeMessages([{ id: '1', role: 'user', content: 'Test' }]);
     render(<AIChatPanel {...makeProps({ visible: true, messages, onClear })} />);
+    // Expand the panel by focusing textarea
+    const textarea = screen.getByPlaceholderText(/Ask a follow-up/i);
+    fireEvent.focus(textarea);
 
     fireEvent.click(screen.getByText(/Clear/i));
 
@@ -175,14 +192,20 @@ describe('AIChatPanel clear behavior', () => {
 });
 
 describe('AIChatPanel loading state', () => {
-  it('shows typing indicator when loading', () => {
+  it('shows typing indicator when loading and panel is expanded', () => {
     render(<AIChatPanel {...makeProps({ visible: true, loading: true })} />);
+    // Expand the panel by focusing textarea
+    const textarea = screen.getByPlaceholderText(/Ask AI Tutor/i);
+    fireEvent.focus(textarea);
 
     expect(screen.getByText(/AI is thinking/i)).toBeInTheDocument();
   });
 
-  it('shows bouncing dots when loading', () => {
+  it('shows bouncing dots when loading and panel is expanded', () => {
     render(<AIChatPanel {...makeProps({ visible: true, loading: true })} />);
+    // Expand the panel by focusing textarea
+    const textarea = screen.getByPlaceholderText(/Ask AI Tutor/i);
+    fireEvent.focus(textarea);
 
     // Three bouncing dots
     const dots = document.querySelectorAll('.animate-bounce');
@@ -198,24 +221,90 @@ describe('AIChatPanel loading state', () => {
 });
 
 describe('AIChatPanel message rendering', () => {
-  it('renders multiple messages in order', () => {
+  it('renders multiple messages in order when expanded', () => {
     const messages = makeMessages([
       { id: '1', role: 'user', content: 'First' },
       { id: '2', role: 'assistant', content: 'Second' },
       { id: '3', role: 'user', content: 'Third' },
     ]);
     render(<AIChatPanel {...makeProps({ visible: true, messages })} />);
+    // Expand the panel by focusing textarea
+    const textarea = screen.getByPlaceholderText(/Ask a follow-up/i);
+    fireEvent.focus(textarea);
 
     expect(screen.getByText('First')).toBeInTheDocument();
     expect(screen.getByText('Second')).toBeInTheDocument();
     expect(screen.getByText('Third')).toBeInTheDocument();
   });
 
-  it('renders long messages with wrapping', () => {
+  it('renders long messages with wrapping when expanded', () => {
     const longMessage = 'This is a very long message that should wrap properly within the chat container to demonstrate proper text handling.';
     const messages = makeMessages([{ id: '1', role: 'assistant', content: longMessage }]);
     render(<AIChatPanel {...makeProps({ visible: true, messages })} />);
+    // Expand the panel by focusing textarea
+    const textarea = screen.getByPlaceholderText(/Ask a follow-up/i);
+    fireEvent.focus(textarea);
 
     expect(screen.getByText(longMessage)).toBeInTheDocument();
+  });
+});
+
+describe('AIChatPanel expand/collapse behavior', () => {
+  it('shows expand chevron when panel is collapsed', () => {
+    render(<AIChatPanel {...makeProps({ visible: true })} />);
+    
+    const expandBtn = screen.getByRole('button', { name: /expand/i });
+    expect(expandBtn).toBeInTheDocument();
+  });
+
+  it('expands panel when expand button is clicked', () => {
+    const messages = makeMessages([{ id: '1', role: 'user', content: 'Test' }]);
+    render(<AIChatPanel {...makeProps({ visible: true, messages })} />);
+    
+    // Initially collapsed
+    expect(screen.queryByText(/Clear/i)).not.toBeInTheDocument();
+    
+    // Click expand button
+    const expandBtn = screen.getByRole('button', { name: /expand/i });
+    fireEvent.click(expandBtn);
+    
+    // Now expanded - clear button should be visible
+    expect(screen.getByText(/Clear/i)).toBeInTheDocument();
+  });
+
+  it('collapses panel when collapse button is clicked', async () => {
+    const messages = makeMessages([{ id: '1', role: 'user', content: 'Test' }]);
+    render(<AIChatPanel {...makeProps({ visible: true, messages })} />);
+    
+    // Expand first
+    const textarea = screen.getByPlaceholderText(/Ask a follow-up/i);
+    fireEvent.focus(textarea);
+    
+    // Verify expanded
+    expect(screen.getByText(/Clear/i)).toBeInTheDocument();
+    
+    // Click collapse button
+    const collapseBtn = screen.getByRole('button', { name: /collapse/i });
+    fireEvent.click(collapseBtn);
+    
+    // Now collapsed - wait for animation to complete (300ms duration)
+    await waitFor(() => {
+      expect(screen.queryByText(/Clear/i)).not.toBeInTheDocument();
+    }, { timeout: 500 });
+  });
+
+  it('expands panel when textarea is focused', () => {
+    const messages = makeMessages([{ id: '1', role: 'user', content: 'Test' }]);
+    render(<AIChatPanel {...makeProps({ visible: true, messages })} />);
+    
+    // Initially collapsed
+    expect(screen.queryByText(/Clear/i)).not.toBeInTheDocument();
+    
+    // Focus textarea
+    const textarea = screen.getByPlaceholderText(/Ask a follow-up/i);
+    fireEvent.focus(textarea);
+    
+    // Now expanded - clear button should be visible
+    expect(screen.getByText(/Clear/i)).toBeInTheDocument();
   });
 });

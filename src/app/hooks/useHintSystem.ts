@@ -12,7 +12,7 @@
  *  • Bilingual UI labels via LanguageContext
  */
 
-import { useCallback, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import type { Question } from '../types';
 
 export interface ChatMessage {
@@ -38,9 +38,18 @@ export function useHintSystem({
   getToken,
   enabled = true,
 }: UseHintSystemOptions) {
+  // Per-question message persistence store
+  const messagesStore = useRef<Map<string | number, ChatMessage[]>>(new Map());
+
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+
+  // When question.id changes, swap to stored messages for that question
+  useEffect(() => {
+    const stored = messagesStore.current.get(question.id) ?? [];
+    setMessages(stored);
+  }, [question.id]);
 
   const sendMessage = useCallback(
     async (text: string) => {
@@ -51,7 +60,11 @@ export function useHintSystem({
         role: 'user',
         content: text.trim(),
       };
-      setMessages((prev) => [...prev, userMsg]);
+      setMessages((prev) => {
+        const next = [...prev, userMsg];
+        messagesStore.current.set(question.id, next);
+        return next;
+      });
       setLoading(true);
       setError(null);
 
@@ -91,15 +104,19 @@ export function useHintSystem({
         });
 
         if (res.status === 429) {
-          setMessages((prev) => [
-            ...prev,
-            {
-              id: Date.now().toString() + '-ai',
-              role: 'assistant',
-              content:
-                "You're too fast. Take a slow breath, then try again in a minute.",
-            },
-          ]);
+          setMessages((prev) => {
+            const next = [
+              ...prev,
+              {
+                id: Date.now().toString() + '-ai',
+                role: 'assistant',
+                content:
+                  "You're too fast. Take a slow breath, then try again in a minute.",
+              },
+            ];
+            messagesStore.current.set(question.id, next);
+            return next;
+          });
           setLoading(false);
           return;
         }
@@ -116,25 +133,33 @@ export function useHintSystem({
           // Server returned HTML or empty body (common in development)
           const bodyText = await res.text().catch(() => '');
           if (import.meta.env.DEV) {
-            setMessages((prev) => [
-              ...prev,
-              {
-                id: Date.now().toString() + '-ai',
-                role: 'assistant',
-                content:
-                  "🛠️ Dev mode: the AI tutor needs the backend running. Run `npx vercel dev` (port 3000) alongside `npm run dev` (port 5173), or check the API route is live.",
-              },
-            ]);
+            setMessages((prev) => {
+              const next = [
+                ...prev,
+                {
+                  id: Date.now().toString() + '-ai',
+                  role: 'assistant',
+                  content:
+                    "🛠️ Dev mode: the AI tutor needs the backend running. Run `npx vercel dev` (port 3000) alongside `npm run dev` (port 5173), or check the API route is live.",
+                },
+              ];
+              messagesStore.current.set(question.id, next);
+              return next;
+            });
           } else if (bodyText.includes('<!DOCTYPE') || bodyText.includes('<html')) {
-            setMessages((prev) => [
-              ...prev,
-              {
-                id: Date.now().toString() + '-ai',
-                role: 'assistant',
-                content:
-                  "Something went wrong — the server returned a page instead of an answer. Please try again in a moment.",
-              },
-            ]);
+            setMessages((prev) => {
+              const next = [
+                ...prev,
+                {
+                  id: Date.now().toString() + '-ai',
+                  role: 'assistant',
+                  content:
+                    "Something went wrong — the server returned a page instead of an answer. Please try again in a moment.",
+                },
+              ];
+              messagesStore.current.set(question.id, next);
+              return next;
+            });
           } else {
             throw new Error('Server response was not valid JSON.');
           }
@@ -142,14 +167,18 @@ export function useHintSystem({
           return;
         }
 
-        setMessages((prev) => [
-          ...prev,
-          {
-            id: Date.now().toString() + '-ai',
-            role: 'assistant',
-            content: data.text ?? 'No response.',
-          },
-        ]);
+        setMessages((prev) => {
+          const next = [
+            ...prev,
+            {
+              id: Date.now().toString() + '-ai',
+              role: 'assistant',
+              content: data.text ?? 'No response.',
+            },
+          ];
+          messagesStore.current.set(question.id, next);
+          return next;
+        });
       } catch (err: unknown) {
         const message = err instanceof Error ? err.message : 'Failed to reach AI tutor.';
         setError(message);
@@ -164,14 +193,14 @@ export function useHintSystem({
       userAnswer,
       correctAnswer,
       studentWrongAnswer,
-      messages,
     ]
   );
 
   const clearChat = useCallback(() => {
+    messagesStore.current.set(question.id, []);
     setMessages([]);
     setError(null);
-  }, []);
+  }, [question.id]);
 
   return { messages, loading, error, sendMessage, clearChat };
 }
