@@ -27,28 +27,29 @@ function makeProps(overrides: any = {}) {
 describe('AIChatPanel rendering', () => {
   it('renders hidden when visible=false', () => {
     render(<AIChatPanel {...makeProps({ visible: false })} />);
-    expect(screen.queryByText(/AI Tutor/i)).not.toBeInTheDocument();
+    expect(screen.queryByPlaceholderText(/Ask AI Tutor/i)).not.toBeInTheDocument();
   });
 
-  it('renders visible when visible=true', () => {
+  it('renders visible when visible=true with empty state', () => {
     render(<AIChatPanel {...makeProps({ visible: true })} />);
-    // Use getAllByText since placeholder also contains "AI tutor"
-    const elements = screen.getAllByText(/AI Tutor/i);
-    expect(elements.length).toBeGreaterThan(0);
+    // In minimal design, just the input area is visible with "Ask AI Tutor..." placeholder
+    expect(screen.getByPlaceholderText(/Ask AI Tutor/i)).toBeInTheDocument();
   });
 
-  it('shows placeholder when no messages', () => {
+  it('shows initial placeholder when no messages', () => {
     render(<AIChatPanel {...makeProps({ visible: true })} />);
-    expect(screen.getByText(/Ask the AI tutor/i)).toBeInTheDocument();
+    expect(screen.getByPlaceholderText(/Ask AI Tutor/i)).toBeInTheDocument();
   });
 
   it('shows message count badge when messages exist', () => {
+    // In minimal design, the message count badge was removed
     const messages = makeMessages([
       { id: '1', role: 'user', content: 'Hello' },
       { id: '2', role: 'assistant', content: 'Hi there' },
     ]);
     render(<AIChatPanel {...makeProps({ visible: true, messages })} />);
-    expect(screen.getByText('2')).toBeInTheDocument();
+    // No badge in minimal design - just the minimal header with "AI Tutor" text
+    expect(screen.getAllByText(/AI Tutor/i).length).toBeGreaterThan(0);
   });
 
   it('renders user messages with correct styling', () => {
@@ -80,7 +81,7 @@ describe('AIChatPanel input behavior', () => {
     const onSend = vi.fn();
     render(<AIChatPanel {...makeProps({ visible: true, onSend })} />);
 
-    const textarea = screen.getByPlaceholderText(/Ask a follow-up/i);
+    const textarea = screen.getByPlaceholderText(/Ask AI Tutor/i);
     fireEvent.change(textarea, { target: { value: 'What is CN III?' } });
     fireEvent.keyDown(textarea, { key: 'Enter' });
 
@@ -91,11 +92,11 @@ describe('AIChatPanel input behavior', () => {
     const onSend = vi.fn();
     render(<AIChatPanel {...makeProps({ visible: true, onSend })} />);
 
-    const textarea = screen.getByPlaceholderText(/Ask a follow-up/i);
+    const textarea = screen.getByPlaceholderText(/Ask AI Tutor/i);
     fireEvent.change(textarea, { target: { value: 'Multi\nline' } });
     fireEvent.keyDown(textarea, { key: 'Enter', shiftKey: true });
 
-    // Shift+Enter should NOT call onSend (no auto-trigger anymore - student must type first)
+    // Shift+Enter should NOT call onSend
     expect(onSend).not.toHaveBeenCalled();
   });
 
@@ -103,7 +104,7 @@ describe('AIChatPanel input behavior', () => {
     const onSend = vi.fn();
     render(<AIChatPanel {...makeProps({ visible: true, onSend })} />);
 
-    const textarea = screen.getByPlaceholderText(/Ask a follow-up/i);
+    const textarea = screen.getByPlaceholderText(/Ask AI Tutor/i);
     fireEvent.change(textarea, { target: { value: 'Test message' } });
     fireEvent.keyDown(textarea, { key: 'Enter' });
 
@@ -113,8 +114,8 @@ describe('AIChatPanel input behavior', () => {
   it('disables input when loading', () => {
     render(<AIChatPanel {...makeProps({ visible: true, loading: true })} />);
 
-    const textarea = screen.getByPlaceholderText(/Ask a follow-up/i);
-    expect(textarea).toBeDisabled();
+    // When loading with no messages, the placeholder changes to "Ask AI Tutor..."
+    expect(screen.getByPlaceholderText(/Ask AI Tutor/i)).toBeDisabled();
   });
 
   it('disables send button when input is empty', () => {
@@ -127,7 +128,7 @@ describe('AIChatPanel input behavior', () => {
   it('enables send button when input has text', () => {
     render(<AIChatPanel {...makeProps({ visible: true })} />);
 
-    const textarea = screen.getByPlaceholderText(/Ask a follow-up/i);
+    const textarea = screen.getByPlaceholderText(/Ask AI Tutor/i);
     fireEvent.change(textarea, { target: { value: 'Hello' } });
 
     const sendBtn = screen.getByRole('button', { name: /send/i });
@@ -138,7 +139,7 @@ describe('AIChatPanel input behavior', () => {
     const onSend = vi.fn();
     render(<AIChatPanel {...makeProps({ visible: true, onSend })} />);
 
-    const textarea = screen.getByPlaceholderText(/Ask a follow-up/i);
+    const textarea = screen.getByPlaceholderText(/Ask AI Tutor/i);
     fireEvent.change(textarea, { target: { value: 'Test' } });
 
     const sendBtn = screen.getByRole('button', { name: /send/i });
