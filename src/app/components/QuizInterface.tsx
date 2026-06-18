@@ -260,7 +260,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
 
   const answered = answers[current] !== undefined && isAnswered(question, answers[current]);
 
-  // Chat-based AI tutor: visible only after wrong answer
+  // Chat-based AI tutor: visible after ANY answer (right or wrong)
   const isCompleted = answered;
   const isCorrect = question.type === 'essay'
     ? answers[current]?.selfGrade === 'correct'
@@ -273,7 +273,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
     correctAnswer: question.options?.[question.correctIndex ?? -1],
     studentWrongAnswer: isCompleted && !isCorrect && question.options ? question.options[answers[current] as number] : undefined,
     getToken,
-    enabled: isCompleted && !isCorrect,
+    enabled: isCompleted,
   });
 
   /* Table rendering parser helper */
@@ -1113,7 +1113,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
 
             {/* AI Chat Tutor Panel */}
             <AIChatPanel
-              visible={isCompleted && !isCorrect}
+              visible={isCompleted}
               messages={chatMessages}
               loading={chatLoading}
               error={chatError}
