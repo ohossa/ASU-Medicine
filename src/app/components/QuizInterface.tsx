@@ -23,6 +23,7 @@ import type { ChapterData, SubjectData, Question, SubjectColor } from '../types'
 import { subjectStyles, formatTime } from '../types';
 import { useLanguage } from '../context/LanguageContext';
 import { toggleFlaggedQuestion } from '../utils/storage';
+import { MatchingQuestion } from './MatchingQuestion';
 
 interface Props {
   chapter: ChapterData;
@@ -651,88 +652,15 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
   };
 
   const renderMatching = (q: Question, value: any, onChange: (v: any) => void) => {
-    const pairs = q.pairs ?? [];
-    const map = value?.matches ?? {};
-    const scrambled = value?.scrambled ?? [];
-    const isSubmitted = value?.submitted === true;
-
     return (
-      <div className="space-y-4">
-        <div className="space-y-2.5">
-          {pairs.map((p, i) => {
-            const selectedIdx = map[i];
-            const correctTargetIdx = scrambled.indexOf(p.target);
-            const isCorrect = selectedIdx === correctTargetIdx;
-
-            let rowClass = 'flex flex-col gap-2 rounded-xl border p-3.5 sm:flex-row sm:items-center sm:justify-between transition-all ';
-            if (!isSubmitted) {
-              rowClass += 'border-gray-200 dark:border-white/[0.07] bg-gray-50/50 dark:bg-white/[0.025]';
-            } else if (isCorrect) {
-              rowClass += 'border-emerald-500/20 bg-emerald-50/50 dark:bg-emerald-500/[0.03]';
-            } else {
-              rowClass += 'border-rose-500/20 bg-rose-50/50 dark:bg-rose-500/[0.03]';
-            }
-
-            return (
-              <div key={i} className={rowClass}>
-                <span className="text-sm text-gray-800 dark:text-white/80">{p.premise}</span>
-                <div className="relative flex items-center gap-3">
-                  <select
-                    disabled={isSubmitted}
-                    value={selectedIdx !== undefined ? String(selectedIdx) : ''}
-                    onChange={e => {
-                      const nextMatches = { ...map, [i]: Number(e.target.value) };
-                      onChange({ scrambled, matches: nextMatches, submitted: false });
-                    }}
-                    className={`w-full appearance-none rounded-lg border bg-white dark:bg-black/40 py-2 pe-9 ps-3 text-sm outline-none transition-colors sm:w-56 ${
-                      selectedIdx !== undefined ? 'border-gray-400 dark:border-white/30 text-gray-950 dark:text-white' : 'border-gray-250 dark:border-white/[0.1] text-gray-550 dark:text-white/40'
-                    }`}
-                  >
-                    <option value="" disabled>Select a match…</option>
-                    {scrambled.map((tOpt: string, j: number) => (
-                      <option key={j} value={j} className="bg-white text-gray-950 dark:bg-[#161618] dark:text-white">{tOpt}</option>
-                    ))}
-                  </select>
-                  <ChevronDown size={15} className="pointer-events-none absolute end-3 top-1/2 -translate-y-1/2 text-gray-400 dark:text-white/40" />
-                  
-                  {isSubmitted && (
-                    <div className="shrink-0">
-                      {isCorrect ? <Check size={16} className="text-emerald-500 dark:text-emerald-400" /> : <X size={16} className="text-rose-550 dark:text-rose-400" />}
-                    </div>
-                  )}
-                </div>
-              </div>
-            );
-          })}
-        </div>
-
-        {!isSubmitted && (
-          <div className="flex justify-end">
-            <button
-              onClick={() => onChange({ scrambled, matches: map, submitted: true })}
-              disabled={Object.keys(map).length < pairs.length}
-              className="px-6 py-2.5 bg-gray-950 dark:bg-white text-white dark:text-black rounded-full text-xs font-bold tracking-wide hover:scale-[0.98] transition-transform disabled:opacity-35 disabled:cursor-not-allowed"
-            >
-              Submit Matches
-            </button>
-          </div>
-        )}
-
-        {isSubmitted && (
-          <div className="space-y-2 text-start text-xs border-t border-gray-200 dark:border-white/[0.06] pt-4">
-            <h4 className="font-semibold text-gray-650 dark:text-white/60 mb-2 uppercase tracking-wider">Correct Matches:</h4>
-            {pairs.map((p, i) => {
-              const isCorrect = map[i] === scrambled.indexOf(p.target);
-              if (isCorrect) return null;
-              return (
-                <div key={i} className="text-rose-600 dark:text-rose-400">
-                  <span className="font-semibold text-gray-800 dark:text-white/80">{p.premise}</span> should match: <span className="text-emerald-600 dark:text-emerald-450 font-semibold">{p.target}</span>
-                </div>
-              );
-            })}
-          </div>
-        )}
-      </div>
+      <MatchingQuestion
+        pairs={q.pairs ?? []}
+        scrambled={value?.scrambled ?? []}
+        matches={value?.matches ?? {}}
+        submitted={value?.submitted === true}
+        disabled={false}
+        onChange={onChange}
+      />
     );
   };
 

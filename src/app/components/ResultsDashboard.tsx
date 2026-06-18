@@ -25,6 +25,7 @@ import { useTheme } from '../context/ThemeContext';
 import { celebrate } from '../lib/celebrate';
 import { pulse } from '../lib/pulseEngine';
 import { useProgress } from '../store/progress';
+import { MatchingQuestion } from './MatchingQuestion';
 
 interface Props {
   chapter: ChapterData;
@@ -400,42 +401,16 @@ export function ResultsDashboard({
   };
 
   const renderMatching = (q: Question, ans: any) => {
-    const pairs = q.pairs ?? [];
-    const scrambled: string[] = ans?.scrambled ?? [];
-    const matches: Record<number, number> = ans?.matches ?? {};
     return (
-      <div className="mt-4 space-y-2">
-        {pairs.map((p: any, pi: number) => {
-          const target = p.target ?? p.right;
-          const userChoice = matches[pi] !== undefined ? scrambled[matches[pi]] : undefined;
-          const rowCorrect = matches[pi] === scrambled.indexOf(target) && scrambled.indexOf(target) !== -1;
-          return (
-            <div
-              key={pi}
-              className={`grid grid-cols-1 gap-2 rounded-xl border p-3.5 sm:grid-cols-[1fr_auto_1fr] sm:items-center ${
-                rowCorrect ? 'border-emerald-500/40 bg-emerald-500/[0.03] dark:bg-emerald-500/[0.05]' : 'border-rose-500/40 bg-rose-500/[0.03] dark:bg-rose-500/[0.05]'
-              }`}
-            >
-              <span className="text-sm text-gray-800 dark:text-white/80">{p.premise ?? p.left}</span>
-              <ChevronRight size={15} className={`hidden text-gray-450 dark:text-white/30 sm:block ${isRTL ? 'rotate-180' : ''}`} />
-              <div className="flex flex-wrap items-center gap-2 text-sm sm:justify-end">
-                <span className={rowCorrect ? 'font-medium text-emerald-650 dark:text-emerald-400' : 'text-rose-650 dark:text-rose-400 line-through'}>
-                  {userChoice ?? 'No match'}
-                </span>
-                {rowCorrect ? (
-                  <Check size={14} className="text-emerald-500 dark:text-emerald-400" />
-                ) : (
-                  <>
-                    <X size={14} className="text-rose-500 dark:text-rose-400" />
-                    <span className="rounded-md border border-emerald-500/30 bg-emerald-500/10 px-2 py-0.5 text-xs text-emerald-650 dark:text-emerald-400">
-                      {target}
-                    </span>
-                  </>
-                )}
-              </div>
-            </div>
-          );
-        })}
+      <div className="mt-4">
+        <MatchingQuestion
+          pairs={q.pairs ?? []}
+          scrambled={ans?.scrambled ?? []}
+          matches={ans?.matches ?? {}}
+          submitted
+          disabled
+          onChange={() => {}}
+        />
       </div>
     );
   };
