@@ -4,6 +4,8 @@ import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react'
 import { visualizer } from 'rollup-plugin-visualizer'
 
+/// <reference types="vitest" />
+
 function figmaAssetResolver() {
   return {
     name: 'figma-asset-resolver',
@@ -31,6 +33,8 @@ export default defineConfig({
   },
   assetsInclude: ['**/*.svg', '**/*.csv'],
   build: {
+    reportCompressedSize: false,
+    chunkSizeWarningLimit: 600,
     rollupOptions: {
       output: {
         manualChunks(id) {
@@ -58,8 +62,19 @@ export default defineConfig({
           if (id.includes('canvas-confetti') || id.includes('src/app/lib/celebrate') || id.includes('src/app/lib/sound')) {
             return 'fx-libs';
           }
-        }
-      }
-    }
-  }
+        },
+      },
+    },
+  },
+  test: {
+    globals: true,
+    environment: 'happy-dom',
+    include: ['src/**/*.{test,spec}.{ts,tsx}'],
+    coverage: {
+      provider: 'v8',
+      reporter: ['text', 'json', 'html'],
+      include: ['src/app/**/*.ts'],
+      exclude: ['src/app/**/*.d.ts', 'node_modules/'],
+    },
+  },
 })
