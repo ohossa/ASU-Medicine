@@ -181,8 +181,25 @@ export function AIChatPanel({
               dir={isRTL ? 'rtl' : 'ltr'}
             >
               {error && (
-                <div className="flex items-start gap-2.5 rounded-xl border border-rose-500/20 bg-rose-50/50 dark:bg-rose-500/10 p-3 text-xs text-rose-700 dark:text-rose-300">
-                  <span className="font-semibold">{txt.error}:</span> {error}
+                <div className={`flex flex-col items-start gap-1.5 rounded-xl border p-3 text-xs ${
+                  /misconfigured|CLERK|secret/i.test(error)
+                    ? 'border-amber-500/20 bg-amber-50/50 dark:bg-amber-500/10 text-amber-700 dark:text-amber-300'
+                    : 'border-rose-500/20 bg-rose-50/50 dark:bg-rose-500/10 text-rose-700 dark:text-rose-300'
+                }`}>
+                  <div className="flex items-start gap-2">
+                    <span className="font-semibold shrink-0">{txt.error}:</span>
+                    <span className="leading-relaxed">{error}</span>
+                  </div>
+                  {/misconfigured|CLERK|secret/i.test(error) && (
+                    <a
+                      href="https://dashboard.clerk.com/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-0.5 rounded-md bg-amber-500/15 px-2 py-0.5 text-[11px] font-medium text-amber-700 dark:text-amber-300 hover:bg-amber-500/25 transition-colors"
+                    >
+                      Open Clerk Dashboard →
+                    </a>
+                  )}
                 </div>
               )}
 

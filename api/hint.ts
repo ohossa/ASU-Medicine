@@ -416,6 +416,10 @@ export default async function handler(req: any, res: any) {
 
   try {
     /* 1. Auth */
+    if (!process.env.CLERK_SECRET_KEY) {
+      return res.status(500).json({ error: 'Server misconfigured: CLERK_SECRET_KEY is not set. Add it to .env.local', hint: 'Get it from your Clerk Dashboard → API Keys' });
+    }
+
     const authHeader = req.headers['authorization'];
     const token = authHeader?.replace('Bearer ', '');
     if (!token) return res.status(401).json({ error: 'Unauthorized: Missing token' });
