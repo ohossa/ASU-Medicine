@@ -416,22 +416,30 @@ export default async function handler(req: any, res: any) {
 
   try {
     /* 1. Auth */
+    const isDevMode = process.env.NODE_ENV === 'development' || process.env.VERCEL_ENV === 'development';
+    let userId: string;
+
     if (!process.env.CLERK_SECRET_KEY) {
-      return res.status(500).json({ error: 'Server misconfigured: CLERK_SECRET_KEY is not set. Add it to .env.local', hint: 'Get it from your Clerk Dashboard → API Keys' });
-    }
+      if (isDevMode) {
+        // Local dev: bypass Clerk verification so AI tutor works without secrets
+        userId = 'dev-user';
+      } else {
+        return res.status(500).json({ error: 'Server misconfigured: CLERK_SECRET_KEY is not set. Add it in your Vercel project settings.', hint: 'Get it from your Clerk Dashboard → API Keys' });
+      }
+    } else {
+      const authHeader = req.headers['authorization'];
+      const token = authHeader?.replace('Bearer ', '');
+      if (!token) return res.status(401).json({ error: 'Unauthorized: Missing token' });
 
-    const authHeader = req.headers['authorization'];
-    const token = authHeader?.replace('Bearer ', '');
-    if (!token) return res.status(401).json({ error: 'Unauthorized: Missing token' });
-
-    let verified;
-    try {
-      verified = await verifyToken(token, { secretKey: process.env.CLERK_SECRET_KEY });
-    } catch (err: any) {
-      return res.status(401).json({ error: 'Unauthorized', details: err.message });
+      let verified;
+      try {
+        verified = await verifyToken(token, { secretKey: process.env.CLERK_SECRET_KEY });
+      } catch (err: any) {
+        return res.status(401).json({ error: 'Unauthorized', details: err.message });
+      }
+      userId = verified.sub ?? '';
+      if (!userId) return res.status(401).json({ error: 'Unauthorized: Invalid token' });
     }
-    const userId = verified.sub;
-    if (!userId) return res.status(401).json({ error: 'Unauthorized: Invalid token' });
 
     /* 2. Rate limit */
     const allowed = await checkRateLimit(userId);
