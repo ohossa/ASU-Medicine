@@ -1,7 +1,6 @@
-import React, { useState, useEffect, useRef, useCallback } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { checkAnswerCorrect } from '../utils/quiz';
-import { norm } from '../utils/string';
 import {
   ArrowLeft,
   ArrowRight,
@@ -16,13 +15,12 @@ import {
   Bookmark,
   AlertCircle,
   Activity,
-  ChevronDown,
   Star
 } from 'lucide-react';
 import type { ChapterData, SubjectData, Question, SubjectColor } from '../types';
 import { subjectStyles, formatTime } from '../types';
 import { useLanguage } from '../context/LanguageContext';
-import { toggleFlaggedQuestion } from '../utils/storage';
+
 import { MatchingQuestion } from './MatchingQuestion';
 import { useQuizEngine } from '../hooks/useQuizEngine';
 
@@ -45,7 +43,74 @@ const questionVariants = {
 
 /* --------------------------------- Helpers -------------------------------- */
 
+const isAnswered = (q: Question, a: any): boolean => {
+  if (a === undefined || a === null) return false;
+  switch (q.type) {
+    case 'essay':
+      return typeof a === 'object'
+        ? (a.text?.trim().length > 0 || a.selfGrade !== undefined)
+        : typeof a === 'string' && a.trim().length > 0;
+    case 'fillblank':
+      return typeof a === 'object' && a.submitted === true;
+    case 'matching':
+      return typeof a === 'object' && a.submitted === true;
+    case 'casestudy':
+    case 'case':
+      return typeof a === 'object' && Object.keys(a).length > 0;
+    default:
+      return true;
+  }
+};
 
+function getQuestionStatus(q: Question, ans: any): 'correct' | 'incorrect' | 'pending' | 'unanswered' {
+  const answered = isAnswered(q, ans);
+  if (!answered) return 'unanswered';
+
+  if (q.type === 'essay') {
+    if (ans?.selfGrade === 'correct') return 'correct';
+    if (ans?.selfGrade === 'incorrect') return 'incorrect';
+    return 'pending';
+  }
+
+  if (q.type === 'case' || q.type === 'casestudy') {
+    const subs = q.subQuestions ?? [];
+    if (!subs.length) return 'unanswered';
+
+    let hasPending = false;
+    let hasIncorrect = false;
+    let hasAnsweredAny = false;
+
+    for (const sq of subs) {
+      const subAns = ans?.[sq.id];
+      if (subAns === undefined) {
+        hasPending = true;
+        continue;
+      }
+      hasAnsweredAny = true;
+      if (sq.type === 'mcq') {
+        if (subAns !== sq.correctIndex) {
+          hasIncorrect = true;
+        }
+      } else {
+        const graded = typeof subAns === 'object' && subAns.selfGrade !== undefined;
+        if (graded) {
+          if (subAns.selfGrade === 'incorrect') {
+            hasIncorrect = true;
+          }
+        } else {
+          hasPending = true;
+        }
+      }
+    }
+
+    if (!hasAnsweredAny) return 'unanswered';
+    if (hasIncorrect) return 'incorrect';
+    if (hasPending) return 'pending';
+    return 'correct';
+  }
+
+  return checkAnswerCorrect(q, ans) ? 'correct' : 'incorrect';
+}
 
 const wordCount = (s: string) => (s.trim() ? s.trim().split(/\s+/).length : 0);
 
@@ -55,60 +120,39 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
   const { t, language } = useLanguage();
   const isRTL = language === 'ar';
 
-  const engine = useQuizEngine({ questions, onFinish });
+  const [direction, setDirection] = useState(1);
+  const [essayDraft, setEssayDraft] = useState('');
+  const [showEssayAnswer, setShowEssayAnswer] = useState(false);
+  const [confirmFinish, setConfirmFinish] = useState(false);
+
+  const engine = useQuizEngine({
+    questions,
+    onFinish: (session) => onFinish(session.answers, session.elapsedSeconds, session.flaggedQuestions),
+  });
   const {
-    current, answers, flagged, elapsedSeconds: totalElapsed, timerUrgency,
-    finished, confirmFinish, showGrid, showShortcuts, progress, answeredCount,
-    score, currentQuestion, blankInputs, blankSubmitted, answerState, revealed,
-    goTo, goNext, goPrev, toggleFlag, setAnswer, submitAnswer, revealAnswer,
-    finish, confirmFinishAction, toggleGrid, toggleShortcuts,
+    current, answers, flagged, elapsedSeconds: totalElapsed, timerUrgency: _timerUrgency,
+    finished: _finished, showGrid, showShortcuts, progress, answeredCount,
+    score: _score, currentQuestion: _currentQuestion, blankInputs, blankSubmitted, answerState: _answerState, revealed: _revealed,
+    goTo, goNext: _goNext, goPrev: _goPrev, toggleFlag, setAnswer, submitAnswer: _submitAnswer, revealAnswer: _revealAnswer,
+    finish: _finish, confirmFinishAction: _confirmFinishAction, toggleGrid, toggleShortcuts,
   } = engine;
 
+  const handleGoTo = React.useCallback((index: number) => {
+    if (index < 0 || index >= questions.length) return;
+    setDirection(index > current ? 1 : -1);
+    goTo(index);
+  }, [current, goTo, questions.length]);
+
   // Case Study sub-question drafts temporary state
-  const [subAnswers, setSubAnswers] = useState<Record<string, any>>({});
+  const [_subAnswers, setSubAnswers] = useState<Record<string, any>>({});
   const [subEssayDrafts, setSubEssayDrafts] = useState<Record<string, string>>({});
   const [revealedSubEssays, setRevealedSubEssays] = useState<Record<string, boolean>>({});
   const lastFocusedSubQ = useRef<string | null>(null);
-
-  const elapsedRef = useRef(0);
   const question = questions[current];
   const total = questions.length;
   
   const subjectColor: SubjectColor = question?.subjectColor ?? 'clinical';
   const style = subjectStyles[subjectColor];
-
-  const answeredCount = questions.reduce((n, q, i) => n + (isAnswered(q, answers[i]) ? 1 : 0), 0);
-  const progress = total > 0 ? ((current + 1) / total) * 100 : 0;
-
-
-
-  /* Navigation */
-  const goTo = useCallback(
-    (index: number) => {
-      if (index < 0 || index >= total) return;
-      setDirection(index > current ? 1 : -1);
-      setCurrent(index);
-      setShowGrid(false);
-    },
-    [current, total]
-  );
-
-  const setAnswer = useCallback((value: any) => {
-    setAnswers(prev => ({ ...prev, [current]: value }));
-  }, [current]);
-
-  const toggleFlag = useCallback(() => {
-    setFlagged(prev => {
-      const next = new Set(prev);
-      next.has(current) ? next.delete(current) : next.add(current);
-      return next;
-    });
-    toggleFlaggedQuestion(chapter.id, question?.id ?? current);
-  }, [current, chapter.id, question]);
-
-  const finish = useCallback(() => {
-    onFinish(answers, elapsedRef.current, flagged);
-  }, [answers, flagged, onFinish]);
 
   /* Sync temporary states on index change */
   useEffect(() => {
@@ -118,18 +162,11 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
 
     if (question.type === 'essay') {
       setEssayDraft(answers[current]?.text || '');
-    } else if (question.type === 'fillblank') {
-      const saved = answers[current]?.inputs as string[] | undefined;
-      setBlankInputs(saved || Array((question.blanks || []).length).fill(''));
-      setBlankSubmitted(answers[current]?.submitted === true);
     } else if (question.type === 'matching') {
       if (answers[current] === undefined && question.pairs) {
         // Scramble targets on first mount
         const scrambled = [...question.pairs].map(p => p.target).sort(() => Math.random() - 0.5);
-        setAnswers(prev => ({
-          ...prev,
-          [current]: { scrambled, matches: {}, submitted: false }
-        }));
+        setAnswer({ scrambled, matches: {}, submitted: false });
       }
     } else if ((question.type === 'case' || question.type === 'casestudy') && question.subQuestions) {
       const saved = answers[current] || {};
@@ -151,10 +188,10 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
       const tag = (e.target as HTMLElement)?.tagName;
       if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return;
 
-      if (e.key === 'ArrowRight') goTo(isRTL ? current - 1 : current + 1);
-      else if (e.key === 'ArrowLeft') goTo(isRTL ? current + 1 : current - 1);
+      if (e.key === 'ArrowRight') handleGoTo(isRTL ? current - 1 : current + 1);
+      else if (e.key === 'ArrowLeft') handleGoTo(isRTL ? current + 1 : current - 1);
       else if (e.key.toLowerCase() === 'f') toggleFlag();
-      else if (e.key.toLowerCase() === 'g') setShowGrid(s => !s);
+      else if (e.key.toLowerCase() === 'g') toggleGrid();
       else if (e.key === 'Enter' && question) {
         if (question.type === 'essay' && answers[current]?.selfGrade === undefined && !showEssayAnswer) {
           setShowEssayAnswer(true);
@@ -170,22 +207,22 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
         const idx = Number(e.key) - 1;
         if (question.type === 'mcq' && question.options && idx < question.options.length) {
           if (answers[current] === undefined) {
-            setAnswers(prev => ({ ...prev, [current]: idx }));
+            setAnswer(idx);
           }
         }
         if (question.type === 'truefalse' && idx < 2) {
           if (answers[current] === undefined) {
-            setAnswers(prev => ({ ...prev, [current]: idx === 0 }));
+            setAnswer(idx === 0);
           }
         }
         if (question.type === 'essay' && showEssayAnswer) {
           const ans = answers[current];
           if (ans?.selfGrade === undefined) {
             if (idx === 0) {
-              setAnswers(prev => ({ ...prev, [current]: { text: prev[current]?.text || '', selfGrade: 'correct' } }));
+              setAnswer({ text: answers[current]?.text || '', selfGrade: 'correct' });
               setShowEssayAnswer(false);
             } else if (idx === 1) {
-              setAnswers(prev => ({ ...prev, [current]: { text: prev[current]?.text || '', selfGrade: 'incorrect' } }));
+              setAnswer({ text: answers[current]?.text || '', selfGrade: 'incorrect' });
               setShowEssayAnswer(false);
             }
           }
@@ -195,16 +232,10 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
           const subVal = (answers[current] ?? {})[subId];
           if (subVal?.selfGrade === undefined && revealedSubEssays[subId]) {
             if (idx === 0) {
-              setAnswers(prev => ({
-                ...prev,
-                [current]: { ...prev[current], [subId]: { text: subVal?.text || '', selfGrade: 'correct' } }
-              }));
+              setAnswer({ ...answers[current], [subId]: { text: subVal?.text || '', selfGrade: 'correct' } });
               setRevealedSubEssays(prev => ({ ...prev, [subId]: false }));
             } else if (idx === 1) {
-              setAnswers(prev => ({
-                ...prev,
-                [current]: { ...prev[current], [subId]: { text: subVal?.text || '', selfGrade: 'incorrect' } }
-              }));
+              setAnswer({ ...answers[current], [subId]: { text: subVal?.text || '', selfGrade: 'incorrect' } });
               setRevealedSubEssays(prev => ({ ...prev, [subId]: false }));
             }
           }
@@ -213,7 +244,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
     };
     window.addEventListener('keydown', handler);
     return () => window.removeEventListener('keydown', handler);
-  }, [current, question, goTo, toggleFlag, answers, isRTL, showEssayAnswer, revealedSubEssays]);
+  }, [current, question, handleGoTo, toggleFlag, answers, isRTL, showEssayAnswer, revealedSubEssays]);
 
   if (!question) {
     return (
@@ -338,9 +369,9 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
     return (
       <div className="grid grid-cols-2 gap-3">
         {[
-          { label: 'True', val: true, icon: <Check size={20} />, accent: 'emerald' },
-          { label: 'False', val: false, icon: <X size={20} />, accent: 'rose' }
-        ].map(({ label, val, icon, accent }) => {
+          { label: 'True', val: true, icon: <Check size={20} /> },
+          { label: 'False', val: false, icon: <X size={20} /> }
+        ].map(({ label, val, icon }) => {
           const selected = value === val;
           const isCorrect = val === (question.correctIndex === 0);
 
@@ -471,8 +502,8 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
     );
   };
 
-  const renderFillBlank = (q: Question, value: any, onChange: (v: any) => void) => {
-    const parts = (q.text ?? q.question ?? '').split('___');
+  const renderFillBlank = (q: Question, _value: any, onChange: (v: any) => void) => {
+    const parts = (q.text ?? '').split('___');
     const blanks = Math.max(parts.length - 1, 1);
     const checkBlank = (i: number, val: string) => {
       const primary = (q.blanks || [])[i]?.trim().toLowerCase() || '';
@@ -501,7 +532,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                     onChange={e => {
                       const next = [...blankInputs];
                       next[i] = e.target.value;
-                      setBlankInputs(next);
+                      onChange({ inputs: next, submitted: false });
                     }}
                     placeholder={`Blank ${i + 1}`}
                     className={`px-3 py-1.5 rounded-lg text-sm font-bold outline-none bg-gray-100 dark:bg-[#0e0e10] border-0 text-center transition-all ${
@@ -523,7 +554,6 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
           <div className="flex justify-end">
             <button
               onClick={() => {
-                setBlankSubmitted(true);
                 onChange({ inputs: [...blankInputs], submitted: true });
               }}
               disabled={blankInputs.some((v, i) => i < blanks && !v?.trim())}
@@ -567,13 +597,13 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
     );
   };
 
-  const renderMatching = (q: Question, value: any, onChange: (v: any) => void) => {
+  const renderMatching = (q: Question, _value: any, onChange: (v: any) => void) => {
     return (
       <MatchingQuestion
         pairs={q.pairs ?? []}
-        scrambled={value?.scrambled ?? []}
-        matches={value?.matches ?? {}}
-        submitted={value?.submitted === true}
+        scrambled={_value?.scrambled ?? []}
+        matches={_value?.matches ?? {}}
+        submitted={_value?.submitted === true}
         disabled={false}
         onChange={onChange}
       />
@@ -588,14 +618,13 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
           <p className="mb-2 flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-sky-655 dark:text-sky-300">
             <Activity size={14} /> Clinical Case
           </p>
-          <p className="text-sm leading-relaxed text-gray-800 dark:text-white/75">{q.text ?? q.question}</p>
+          <p className="text-sm leading-relaxed text-gray-800 dark:text-white/75">{q.text}</p>
         </div>
 
         <div className="space-y-6">
-          {(q.subQuestions ?? []).map((subQ, sIdx) => {
+          {(q.subQuestions ?? []).map((subQ) => {
             const subVal = subAns[subQ.id];
             const isCompleted = subVal !== undefined;
-            const isCorrect = subQ.type === 'mcq' && subVal === subQ.correctIndex;
 
             return (
               <div key={subQ.id} className="border-t border-gray-200 dark:border-white/[0.06] pt-5 text-start">
@@ -859,17 +888,17 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
 
           <div className="flex items-center gap-2">
             <span className="flex items-center gap-1.5 rounded-full border border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.04] px-3 py-1.5 text-xs tabular-nums text-gray-650 dark:text-white/70">
-              <Clock size={13} /> {formatTime(elapsed)}
+              <Clock size={13} /> {formatTime(totalElapsed)}
             </span>
             <button
-              onClick={() => setShowShortcuts(s => !s)}
+              onClick={toggleShortcuts}
               aria-label="Keyboard shortcuts"
               className="hidden h-11 w-11 items-center justify-center rounded-full border border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.04] text-gray-500 dark:text-white/50 transition-colors hover:bg-gray-100 dark:hover:bg-white/[0.08] sm:flex"
             >
               <Keyboard size={15} />
             </button>
             <button
-              onClick={() => setShowGrid(s => !s)}
+              onClick={toggleGrid}
               aria-label="Question grid"
               className={`flex h-11 w-11 items-center justify-center rounded-full border transition-colors ${
                 showGrid ? `${style.border} ${style.bg} text-white` : 'border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.04] text-gray-550 dark:text-white/50 hover:bg-gray-100 dark:hover:bg-white/[0.08]'
@@ -1031,7 +1060,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
             {/* Question card */}
             <div className="rounded-2xl border border-gray-200 dark:border-white/[0.07] bg-card p-5 shadow-sm dark:shadow-[0_8px_40px_rgba(0,0,0,0.4)] backdrop-blur-xl sm:p-7">
               {question.type !== 'fillblank' && question.type !== 'case' && question.type !== 'casestudy' && renderFormattedText(
-                question.text ?? question.question,
+                question.text,
                 "mb-6 text-base font-semibold leading-relaxed text-gray-900 dark:text-white sm:text-lg text-left whitespace-pre-line"
               )}
               
@@ -1067,7 +1096,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
         {/* Footer navigation */}
         <div className="mt-8 flex items-center justify-between gap-3">
           <button
-            onClick={() => goTo(current - 1)}
+            onClick={() => handleGoTo(current - 1)}
             disabled={current === 0}
             className="flex items-center gap-2 rounded-full border border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.04] px-5 py-2.5 text-sm text-gray-700 dark:text-white/70 transition-colors hover:bg-gray-150 dark:hover:bg-white/[0.08] disabled:cursor-not-allowed disabled:opacity-30"
           >
@@ -1076,7 +1105,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
 
           {current < total - 1 ? (
             <button
-              onClick={() => goTo(current + 1)}
+              onClick={() => handleGoTo(current + 1)}
               className={`flex items-center gap-2 rounded-full border px-6 py-2.5 text-sm font-semibold transition-all ${style.border} ${style.bg} text-white hover:brightness-110 active:scale-95`}
             >
               Next <ArrowRight size={15} className={isRTL ? 'rotate-180' : ''} />
@@ -1116,7 +1145,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                 {flagged.size > 0 && (
                   <> · <span className="text-amber-500 dark:text-amber-400 tabular-nums">{flagged.size} flagged</span></>
                 )}
-                . Time: <span className="tabular-nums">{formatTime(elapsed)}</span>.
+                . Time: <span className="tabular-nums">{formatTime(totalElapsed)}</span>.
               </p>
               {answeredCount < total && (
                 <p className="mt-3 flex items-center gap-2 rounded-lg border border-amber-200 dark:border-amber-500/25 bg-amber-50 dark:bg-amber-500/10 p-3 text-xs text-amber-700 dark:text-amber-300">
@@ -1132,7 +1161,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                   Keep working
                 </button>
                 <button
-                  onClick={finish}
+                  onClick={() => { onFinish(answers, totalElapsed, flagged); setConfirmFinish(false); }}
                   className="flex-1 rounded-full bg-gray-950 dark:bg-white py-2.5 text-sm font-semibold text-white dark:text-black transition-transform hover:scale-[1.02]"
                 >
                   Submit

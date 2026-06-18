@@ -37,11 +37,13 @@ export interface SubQuestion {
   modelAnswer?: string;
   explanation: string;
   keyConcept?: string;
+  blanks?: string[];
+  acceptedAnswers?: string[][];
 }
 
 export interface Question {
   id: string | number;
-  type: 'mcq' | 'truefalse' | 'matching' | 'essay' | 'case' | 'fillblank';
+  type: 'mcq' | 'truefalse' | 'matching' | 'essay' | 'case' | 'casestudy' | 'fillblank';
   text: string;
   lecture: number;
   subjectColor: SubjectColor;
