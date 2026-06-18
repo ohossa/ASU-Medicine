@@ -295,12 +295,6 @@ function MainApp() {
   // Initialize automatic cloud synchronization
   useCloudSync();
 
-  // Lazy-load question banks
-  const [dataReady, setDataReady] = useState(false);
-  useEffect(() => {
-    ensureDataLoaded().then(() => setDataReady(true)).catch(() => setDataReady(true));
-  }, []);
-
   // ── 1. State Initializations ──────────────────────────────────────────────────
 
   // Student Year tracking
@@ -890,7 +884,6 @@ function MainApp() {
 
   return (
     <div className="min-h-screen text-gray-900 dark:text-gray-100 font-manrope selection:bg-physiology/20 selection:text-physiology-dark overflow-x-hidden">
-      {!dataReady && <LoadingScreen isLoading={!dataReady} />}
 
       <style>{`
         @keyframes shrinkHeader {
@@ -1442,61 +1435,97 @@ function MainApp() {
 }
 
 export default function App() {
-  const [ready, setReady] = useState(false);
+  const [showApp, setShowApp] = useState(false);
+  const [dataReady, setDataReady] = useState(false);
+  const [progress, setProgress] = useState(0);
   const deferredMounted = useDeferredMount();
 
-  if (!ready) {
-    return <LoadingScreen onComplete={() => setReady(true)} />;
-  }
+  // Start data loading immediately
+  useEffect(() => {
+    ensureDataLoaded().then(() => setDataReady(true)).catch(() => setDataReady(true));
+  }, []);
+
+  // Animate progress bar (0→100 over 2400ms)
+  useEffect(() => {
+    const start = performance.now();
+    let raf: number;
+    const tick = (now: number) => {
+      const t = Math.min((now - start) / 2400, 1);
+      setProgress((1 - Math.pow(1 - t, 3)) * 100);
+      if (t < 1) {
+        raf = requestAnimationFrame(tick);
+      }
+    };
+    raf = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(raf);
+  }, []);
+
+  // When both visual timer AND data are ready, show app
+  useEffect(() => {
+    if (dataReady && progress >= 99) {
+      // Wait a tiny beat so the bar is visually at 100%, then fade out
+      const t = setTimeout(() => setShowApp(true), 300);
+      return () => clearTimeout(t);
+    }
+  }, [dataReady, progress]);
 
   return (
     <ThemeProvider>
-      {/* Dynamic Floating Background Blobs & Interactive Dots */}
-      <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
-        {FX.DEFERRED_FX ? (
-          deferredMounted && FX.reactiveBackground && (
-            <Suspense fallback={null}>
-              <LazyInteractiveBackground />
-            </Suspense>
-          )
-        ) : (
-          FX.reactiveBackground && (
-            <Suspense fallback={null}>
-              <EagerInteractiveBackground />
-            </Suspense>
-          )
-        )}
-        <div className="absolute top-[10%] left-[5%] h-[35vw] w-[35vw] rounded-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-physiology/30 to-transparent dark:from-physiology/20 blob-float-1" />
-        <div className="absolute bottom-[10%] right-[5%] h-[40vw] w-[40vw] rounded-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-anatomy/30 to-transparent dark:from-anatomy/20 blob-float-2" />
-      </div>
-
-      <SignedIn>
-        <BrowserRouter>
-          <ProgressProvider>
-            <MainApp />
+      {/* Single smooth loading screen — stays visible until everything is ready */}
+      <LoadingScreen
+        isLoading={!showApp}
+        progress={dataReady ? 100 : progress}
+      />
+      {showApp && (
+        <>
+          {/* Dynamic Floating Background Blobs & Interactive Dots */}
+          <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
             {FX.DEFERRED_FX ? (
-              deferredMounted && (
+              deferredMounted && FX.reactiveBackground && (
                 <Suspense fallback={null}>
-                  {FX.gamification && <LazyLevelUpOverlay />}
-                  {FX.confetti && <LazyConfettiManager />}
-                  {FX.sound && <LazySoundManagerComponent />}
+                  <LazyInteractiveBackground />
                 </Suspense>
               )
             ) : (
-              FX.gamification && (
+              FX.reactiveBackground && (
                 <Suspense fallback={null}>
-                  <EagerLevelUpOverlay />
+                  <EagerInteractiveBackground />
                 </Suspense>
               )
             )}
-          </ProgressProvider>
-        </BrowserRouter>
-      </SignedIn>
-      <SignedOut>
-        <Suspense fallback={<LoadingScreen />}>
-          <LoginScreen />
-        </Suspense>
-      </SignedOut>
+            <div className="absolute top-[10%] left-[5%] h-[35vw] w-[35vw] rounded-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-physiology/30 to-transparent dark:from-physiology/20 blob-float-1" />
+            <div className="absolute bottom-[10%] right-[5%] h-[40vw] w-[40vw] rounded-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-anatomy/30 to-transparent dark:from-anatomy/20 blob-float-2" />
+          </div>
+
+          <SignedIn>
+            <BrowserRouter>
+              <ProgressProvider>
+                <MainApp />
+                {FX.DEFERRED_FX ? (
+                  deferredMounted && (
+                    <Suspense fallback={null}>
+                      {FX.gamification && <LazyLevelUpOverlay />}
+                      {FX.confetti && <LazyConfettiManager />}
+                      {FX.sound && <LazySoundManagerComponent />}
+                    </Suspense>
+                  )
+                ) : (
+                  FX.gamification && (
+                    <Suspense fallback={null}>
+                      <EagerLevelUpOverlay />
+                    </Suspense>
+                  )
+                )}
+              </ProgressProvider>
+            </BrowserRouter>
+          </SignedIn>
+          <SignedOut>
+            <Suspense fallback={<LoadingScreen />}>
+              <LoginScreen />
+            </Suspense>
+          </SignedOut>
+        </>
+      )}
     </ThemeProvider>
   );
 }
