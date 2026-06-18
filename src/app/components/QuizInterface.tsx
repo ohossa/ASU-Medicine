@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
+import { useAuth } from '@clerk/clerk-react';
 import { checkAnswerCorrect } from '../utils/quiz';
 import {
   ArrowLeft,
@@ -23,6 +24,8 @@ import { useLanguage } from '../context/LanguageContext';
 
 import { MatchingQuestion } from './MatchingQuestion';
 import { useQuizEngine } from '../hooks/useQuizEngine';
+import { useHintSystem } from '../hooks/useHintSystem';
+import { AIChatPanel } from './AIChatPanel';
 
 interface Props {
   chapter: ChapterData;
@@ -119,6 +122,7 @@ const wordCount = (s: string) => (s.trim() ? s.trim().split(/\s+/).length : 0);
 export function QuizInterface({ chapter, subject, questions, onBack, onFinish, userButton }: Props) {
   const { t, language } = useLanguage();
   const isRTL = language === 'ar';
+  const { getToken } = useAuth();
 
   const [direction, setDirection] = useState(1);
   const [essayDraft, setEssayDraft] = useState('');
@@ -255,6 +259,22 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
   }
 
   const answered = answers[current] !== undefined && isAnswered(question, answers[current]);
+
+  // Chat-based AI tutor: visible only after wrong answer
+  const isCompleted = answered;
+  const isCorrect = question.type === 'essay'
+    ? answers[current]?.selfGrade === 'correct'
+    : question.type === 'case' || question.type === 'casestudy'
+      ? getQuestionStatus(question, answers[current]) === 'correct'
+      : checkAnswerCorrect(question, answers[current]);
+  const { messages: chatMessages, loading: chatLoading, error: chatError, sendMessage, clearChat } = useHintSystem({
+    question,
+    userAnswer: answers[current],
+    correctAnswer: question.options?.[question.correctIndex ?? -1],
+    studentWrongAnswer: isCompleted && !isCorrect && question.options ? question.options[answers[current] as number] : undefined,
+    getToken,
+    enabled: isCompleted && !isCorrect,
+  });
 
   /* Table rendering parser helper */
   const renderFormattedText = (
@@ -1090,6 +1110,16 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                 </div>
               )}
             </div>
+
+            {/* AI Chat Tutor Panel */}
+            <AIChatPanel
+              visible={isCompleted && !isCorrect}
+              messages={chatMessages}
+              loading={chatLoading}
+              error={chatError}
+              onSend={sendMessage}
+              onClear={clearChat}
+            />
           </motion.div>
         </AnimatePresence>
 

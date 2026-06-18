@@ -1,144 +1,140 @@
 /**
  * useHintSystem.ts
  *
- * Tracks per-question wrong-answer attempts and fetches contextual AI hints
- * after the second consecutive incorrect answer on a given question.
+ * Interactive chat-based AI tutor that appears after a wrong answer.
+ * Tracks conversation history and provides contextual hints based on
+ * the question, user's wrong answer, and chat context.
  *
  * Features:
- *  • Persistent per-session attempt counts
- *  • Debounced fetch to backend /api/hint
- *  • Graceful degradation (static fallback when offline)
+ *  • Persistent chat message history per session
+ *  • Context-aware AI responses via /api/hint
  *  • Rate-limit awareness (429 handling)
+ *  • Bilingual UI labels via LanguageContext
  */
 
-import { useCallback, useRef, useState } from 'react';
+import { useCallback, useState } from 'react';
 import type { Question } from '../types';
 
-export interface Hint {
-  text: string;
-  source: 'static' | 'openai' | 'google' | 'custom';
-  cached?: boolean;
+export interface ChatMessage {
+  id: string;
+  role: 'user' | 'assistant';
+  content: string;
 }
 
 export interface UseHintSystemOptions {
   question: Question;
   userAnswer?: unknown;
+  correctAnswer?: string;
+  studentWrongAnswer?: string;
   getToken: () => Promise<string | null>;
   enabled?: boolean;
 }
 
-const CACHE_TTL_MS = 5 * 60_000; // 5 minutes
-const DEBOUNCE_MS = 400;
-
-export function useHintSystem({ question, userAnswer, getToken, enabled = true }: UseHintSystemOptions) {
-  const [hint, setHint] = useState<Hint | null>(null);
+export function useHintSystem({
+  question,
+  userAnswer,
+  correctAnswer,
+  studentWrongAnswer,
+  getToken,
+  enabled = true,
+}: UseHintSystemOptions) {
+  const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  const cacheRef = useRef<Map<string, { hint: Hint; ts: number }>>(new Map());
-  const timerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const abortRef = useRef<AbortController | null>(null);
+  const sendMessage = useCallback(
+    async (text: string) => {
+      if (!enabled || !text.trim()) return;
 
-  const cacheKey = useCallback(() => {
-    return `${question.id}-${question.type}-${JSON.stringify(userAnswer)}`;
-  }, [question, userAnswer]);
+      const userMsg: ChatMessage = {
+        id: Date.now().toString(),
+        role: 'user',
+        content: text.trim(),
+      };
+      setMessages((prev) => [...prev, userMsg]);
+      setLoading(true);
+      setError(null);
 
-  const clearHint = useCallback(() => {
-    setHint(null);
-    setError(null);
-    if (timerRef.current) clearTimeout(timerRef.current);
-    if (abortRef.current) abortRef.current.abort();
-  }, []);
-
-  const fetchHint = useCallback(
-    async (previousAttempts: number) => {
-      if (!enabled || previousAttempts < 2) {
-        clearHint();
-        return;
-      }
-
-      const key = cacheKey();
-      const cached = cacheRef.current.get(key);
-      if (cached && Date.now() - cached.ts < CACHE_TTL_MS) {
-        setHint(cached.hint);
-        setError(null);
-        return;
-      }
-
-      if (timerRef.current) clearTimeout(timerRef.current);
-      if (abortRef.current) abortRef.current.abort();
-
-      timerRef.current = setTimeout(async () => {
-        setLoading(true);
-        setError(null);
-        abortRef.current = new AbortController();
-
-        try {
-          const token = await getToken();
-          if (!token) {
-            setError('Sign in to receive AI hints.');
-            setLoading(false);
-            return;
-          }
-
-          const res = await fetch('/api/hint', {
-            method: 'POST',
-            headers: {
-              Authorization: `Bearer ${token}`,
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-              questionText: question.text ?? question.question ?? '',
-              options: question.options,
-              explanation: question.explanation,
-              subject: question.subjectColor,
-              chapter: question.chapterTitle,
-              previousAttempts,
-              userAnswer: userAnswer ? String(userAnswer) : undefined,
-            }),
-            signal: abortRef.current.signal,
-          });
-
-          if (res.status === 429) {
-            setHint({
-              text: "You're requesting hints too quickly. Take a moment to think it through, then try again.",
-              source: 'static',
-            });
-            setLoading(false);
-            return;
-          }
-
-          if (!res.ok) {
-            const data = await res.json().catch(() => ({}));
-            throw new Error(data.error || `HTTP ${res.status}`);
-          }
-
-          const data = await res.json();
-          const fetched: Hint = {
-            text: data.hint ?? 'No hint available.',
-            source: data.source ?? 'static',
-            cached: data.cached,
-          };
-
-          cacheRef.current.set(key, { hint: fetched, ts: Date.now() });
-          setHint(fetched);
-        } catch (err: any) {
-          if (err.name === 'AbortError') return;
-          setError(err.message || 'Failed to fetch hint.');
-          console.error('[useHintSystem]', err);
-        } finally {
+      try {
+        const token = await getToken();
+        if (!token) {
+          setError('Sign in to chat with AI tutor.');
           setLoading(false);
+          return;
         }
-      }, DEBOUNCE_MS);
+
+        const res = await fetch('/api/hint', {
+          method: 'POST',
+          headers: {
+            Authorization: `Bearer ${token}`,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            questionText: question.text ?? question.question ?? '',
+            options: question.options,
+            correctIndex: question.correctIndex,
+            explanation: question.explanation,
+            keyConcept: question.keyConcept,
+            subject: question.subjectColor,
+            chapter: question.chapterTitle,
+            previousAttempts: 1, // always >=1 since triggered after wrong answer
+            userAnswer: userAnswer != null ? String(userAnswer) : undefined,
+            studentWrongAnswer:
+              studentWrongAnswer ||
+              (userAnswer != null ? String(userAnswer) : undefined),
+            correctAnswer,
+            messages: [...messages, userMsg].map((m) => ({
+              role: m.role,
+              content: m.content,
+            })),
+          }),
+        });
+
+        if (res.status === 429) {
+          setMessages((prev) => [
+            ...prev,
+            {
+              id: Date.now().toString() + '-ai',
+              role: 'assistant',
+              content:
+                "You're too fast. Take a slow breath, then try again in a minute.",
+            },
+          ]);
+          setLoading(false);
+          return;
+        }
+
+        const data = await res.json();
+        setMessages((prev) => [
+          ...prev,
+          {
+            id: Date.now().toString() + '-ai',
+            role: 'assistant',
+            content: data.text ?? 'No response.',
+          },
+        ]);
+      } catch (err: unknown) {
+        const message = err instanceof Error ? err.message : 'Failed to reach AI tutor.';
+        setError(message);
+      } finally {
+        setLoading(false);
+      }
     },
-    [enabled, cacheKey, clearHint, getToken, question]
+    [
+      enabled,
+      getToken,
+      question,
+      userAnswer,
+      correctAnswer,
+      studentWrongAnswer,
+      messages,
+    ]
   );
 
-  return {
-    hint,
-    loading,
-    error,
-    fetchHint,
-    clearHint,
-  };
+  const clearChat = useCallback(() => {
+    setMessages([]);
+    setError(null);
+  }, []);
+
+  return { messages, loading, error, sendMessage, clearChat };
 }

@@ -26,15 +26,21 @@ import ioredis from 'ioredis';
 export interface HintRequest {
   questionText: string;
   options?: string[];
+  correctIndex?: number;
+  pairs?: { premise: string; target: string }[];
   explanation?: string;
+  keyConcept?: string;
   subject?: string;
   chapter?: string;
   previousAttempts: number;
   userAnswer?: string;
+  studentWrongAnswer?: string;
+  correctAnswer?: string;
+  messages?: { role: 'user' | 'assistant'; content: string }[];
 }
 
 export interface HintResponse {
-  hint: string;
+  text: string;
   source: 'static' | 'openai' | 'google' | 'custom';
   cached?: boolean;
 }
@@ -47,44 +53,54 @@ interface AIAdapter {
 
 class StaticFallbackAdapter implements AIAdapter {
   async generateHint(req: HintRequest): Promise<HintResponse> {
+    const hasMessages = req.messages && req.messages.length > 0;
+
+    // When there's a conversation happening but no AI provider, let the student know
+    if (hasMessages) {
+      return {
+        text: "I'm not able to see chat history without an AI provider configured. For now, focus on the core concept and remember: eliminate clearly wrong answers first, then reason from pathophysiology.",
+        source: 'static',
+      };
+    }
+
     const subject = req.subject?.toLowerCase() ?? '';
     const chapter = req.chapter?.toLowerCase() ?? '';
 
     // Tailored generic hints based on common medical subjects
     if (subject.includes('cns') || subject.includes('neuro') || chapter.includes('nervous') || chapter.includes('cranial')) {
-      return { hint: 'Think about which cranial nerve exits at the pontomedullary junction and what function it serves.', source: 'static' };
+      return { text: 'Think about which cranial nerve exits at the pontomedullary junction and what function it serves.', source: 'static' };
     }
     if (subject.includes('cardio') || subject.includes('heart') || chapter.includes('cardiac')) {
-      return { hint: 'Trace the blood flow through the chambers and valves. Which valve would be affected by this condition?', source: 'static' };
+      return { text: 'Trace the blood flow through the chambers and valves. Which valve would be affected by this condition?', source: 'static' };
     }
     if (subject.includes('resp') || chapter.includes('lung') || chapter.includes('pulmo')) {
-      return { hint: 'Consider the pressure gradients during inspiration and expiration. Which muscle is the primary driver?', source: 'static' };
+      return { text: 'Consider the pressure gradients during inspiration and expiration. Which muscle is the primary driver?', source: 'static' };
     }
     if (subject.includes('renal') || chapter.includes('kidney')) {
-      return { hint: 'Think about the nephron segments and what is reabsorbed or secreted at each site.', source: 'static' };
+      return { text: 'Think about the nephron segments and what is reabsorbed or secreted at each site.', source: 'static' };
     }
     if (subject.includes('endo') || chapter.includes('hormone')) {
-      return { hint: 'Which gland secretes this hormone, and what is its feedback loop?', source: 'static' };
+      return { text: 'Which gland secretes this hormone, and what is its feedback loop?', source: 'static' };
     }
     if (subject.includes('gastro') || chapter.includes('digest')) {
-      return { hint: 'Follow the anatomical pathway and think about where enzymes act or where absorption occurs.', source: 'static' };
+      return { text: 'Follow the anatomical pathway and think about where enzymes act or where absorption occurs.', source: 'static' };
     }
     if (subject.includes('musculo') || chapter.includes('muscle') || chapter.includes('bone')) {
-      return { hint: 'Consider the origin, insertion, and action of the muscle. Which nerve innervates it?', source: 'static' };
+      return { text: 'Consider the origin, insertion, and action of the muscle. Which nerve innervates it?', source: 'static' };
     }
     if (subject.includes('pharma') || chapter.includes('drug') || chapter.includes('pharmacology')) {
-      return { hint: 'What is the mechanism of action, and which receptor or enzyme is targeted?', source: 'static' };
+      return { text: 'What is the mechanism of action, and which receptor or enzyme is targeted?', source: 'static' };
     }
     if (subject.includes('micro') || chapter.includes('bacteria') || chapter.includes('virus')) {
-      return { hint: 'Think about the Gram stain, morphology, or viral family. What is the mode of transmission?', source: 'static' };
+      return { text: 'Think about the Gram stain, morphology, or viral family. What is the mode of transmission?', source: 'static' };
     }
     if (subject.includes('patho') || chapter.includes('disease') || chapter.includes('cancer')) {
-      return { hint: 'What is the underlying pathophysiology? Consider gross vs microscopic findings.', source: 'static' };
+      return { text: 'What is the underlying pathophysiology? Consider gross vs microscopic findings.', source: 'static' };
     }
 
     // Ultra-generic fallback
     return {
-      hint: 'Take a step back. What is the core concept being tested here? Look for clues in the stem and eliminate distractors that are clearly unrelated to the topic.',
+      text: 'Take a step back. What is the core concept being tested here? Look for clues in the stem and eliminate distractors that are clearly unrelated to the topic.',
       source: 'static',
     };
   }
@@ -101,7 +117,19 @@ class OpenAIAdapter implements AIAdapter {
   async generateHint(req: HintRequest): Promise<HintResponse> {
     if (!this.apiKey) throw new Error('OPENAI_API_KEY not configured');
 
-    const prompt = buildPrompt(req);
+    const systemPrompt = buildSystemPrompt(req);
+    const userPrompt = buildUserPrompt(req);
+
+    const messages: { role: 'system' | 'user' | 'assistant'; content: string }[] = [
+      { role: 'system', content: systemPrompt },
+    ];
+
+    // Include conversation history if available
+    if (req.messages && req.messages.length > 0) {
+      messages.push(...req.messages);
+    }
+
+    messages.push({ role: 'user', content: userPrompt });
 
     const res = await fetch('https://api.openai.com/v1/chat/completions', {
       method: 'POST',
@@ -111,15 +139,8 @@ class OpenAIAdapter implements AIAdapter {
       },
       body: JSON.stringify({
         model: this.model,
-        messages: [
-          {
-            role: 'system',
-            content:
-              'You are a medical tutor. Give a SHORT, targeted hint (1-2 sentences) that guides the student toward the correct answer without giving it away. Use the Socratic method.',
-          },
-          { role: 'user', content: prompt },
-        ],
-        max_tokens: 120,
+        messages,
+        max_tokens: 200,
         temperature: 0.7,
       }),
     });
@@ -130,8 +151,8 @@ class OpenAIAdapter implements AIAdapter {
     }
 
     const data = await res.json();
-    const hint = data.choices?.[0]?.message?.content?.trim() ?? '';
-    return { hint, source: 'openai' };
+    const text = data.choices?.[0]?.message?.content?.trim() ?? '';
+    return { text, source: 'openai' };
   }
 }
 
@@ -146,7 +167,24 @@ class GoogleGenAIAdapter implements AIAdapter {
   async generateHint(req: HintRequest): Promise<HintResponse> {
     if (!this.apiKey) throw new Error('GOOGLE_GENAI_API_KEY not configured');
 
-    const prompt = buildPrompt(req);
+    const systemPrompt = buildSystemPrompt(req);
+    const userPrompt = buildUserPrompt(req);
+
+    let contents: any[] = [];
+
+    // Include conversation history if available
+    if (req.messages && req.messages.length > 0) {
+      for (const msg of req.messages) {
+        contents.push({
+          role: msg.role === 'assistant' ? 'model' : 'user',
+          parts: [{ text: msg.content }],
+        });
+      }
+    }
+
+    contents.push({
+      parts: [{ text: userPrompt }],
+    });
 
     const res = await fetch(
       `https://generativelanguage.googleapis.com/v1beta/models/${this.model}:generateContent?key=${this.apiKey}`,
@@ -154,18 +192,9 @@ class GoogleGenAIAdapter implements AIAdapter {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          contents: [
-            {
-              parts: [
-                {
-                  text:
-                    'You are a medical tutor. Give a SHORT, targeted hint (1-2 sentences) that guides the student toward the correct answer without giving it away. Use the Socratic method.\n\n' +
-                    prompt,
-                },
-              ],
-            },
-          ],
-          generationConfig: { maxOutputTokens: 120, temperature: 0.7 },
+          systemInstruction: { parts: [{ text: systemPrompt }] },
+          contents,
+          generationConfig: { maxOutputTokens: 200, temperature: 0.7 },
         }),
       }
     );
@@ -176,23 +205,62 @@ class GoogleGenAIAdapter implements AIAdapter {
     }
 
     const data = await res.json();
-    const hint = data.candidates?.[0]?.content?.parts?.[0]?.text?.trim() ?? '';
-    return { hint, source: 'google' };
+    const text = data.candidates?.[0]?.content?.parts?.[0]?.text?.trim() ?? '';
+    return { text, source: 'google' };
   }
 }
 
 /* ─── helpers ─── */
 
-function buildPrompt(req: HintRequest): string {
-  let prompt = `Question: ${req.questionText}\n`;
-  if (req.options?.length) prompt += `Options: ${req.options.join(', ')}\n`;
-  if (req.explanation) prompt += `Explanation: ${req.explanation}\n`;
-  if (req.subject) prompt += `Subject: ${req.subject}\n`;
-  if (req.chapter) prompt += `Chapter: ${req.chapter}\n`;
-  if (req.userAnswer) prompt += `Student answered: ${req.userAnswer}\n`;
-  prompt += `Previous wrong attempts: ${req.previousAttempts}\n`;
-  prompt += `\nProvide a short Socratic hint.`;
-  return prompt;
+function buildSystemPrompt(req: HintRequest): string {
+  const parts: string[] = [
+    'You are a medical tutor helping a student understand why they got this question wrong.',
+    '',
+    'QUESTION: ' + req.questionText,
+  ];
+
+  if (req.options && req.options.length > 0) {
+    const optionsWithMarker = req.options.map((opt, i) => {
+      const marker = req.correctIndex === i ? ' [CORRECT]' : '';
+      return `${String.fromCharCode(65 + i)}) ${opt}${marker}`;
+    });
+    parts.push('OPTIONS: ' + optionsWithMarker.join(', '));
+  }
+
+  if (req.pairs && req.pairs.length > 0) {
+    parts.push('PAIRS: ' + req.pairs.map(p => `${p.premise} → ${p.target}`).join(', '));
+  }
+
+  if (req.correctAnswer) {
+    parts.push('CORRECT ANSWER: ' + req.correctAnswer);
+  }
+
+  if (req.studentWrongAnswer) {
+    parts.push('STUDENT ANSWERED: ' + req.studentWrongAnswer);
+  }
+
+  if (req.explanation) {
+    parts.push('EXPLANATION: ' + req.explanation);
+  }
+
+  if (req.keyConcept) {
+    parts.push('KEY CONCEPT: ' + req.keyConcept);
+  }
+
+  parts.push('');
+  parts.push('The student is asking questions in a chat. Be warm, encouraging, and precise. If they ask "why", explain the physiological mechanism. If they ask for a mnemonic, provide one. Always respond in English for medical accuracy.');
+
+  return parts.join('\n');
+}
+
+function buildUserPrompt(req: HintRequest): string {
+  if (req.messages && req.messages.length > 0) {
+    const lastMessage = req.messages[req.messages.length - 1];
+    if (lastMessage.role === 'user') {
+      return lastMessage.content;
+    }
+  }
+  return 'Give me a hint about this question.';
 }
 
 function getAdapter(): AIAdapter {
@@ -291,7 +359,7 @@ export default async function handler(req: any, res: any) {
       try { body = JSON.parse(body); } catch { return res.status(400).json({ error: 'Bad Request: Invalid JSON' }); }
     }
     const requestBody: HintRequest = body;
-    if (!requestBody.questionText || !requestBody.previousAttempts) {
+    if (!requestBody.questionText || requestBody.previousAttempts === undefined) {
       return res.status(400).json({ error: 'Bad Request: questionText and previousAttempts required' });
     }
 
