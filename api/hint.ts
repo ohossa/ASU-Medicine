@@ -295,24 +295,85 @@ function buildSystemPrompt(req: HintRequest): string {
   const answeredIndex = req.userAnswer !== undefined && req.options ? parseInt(req.userAnswer, 10) : NaN;
   const isCorrect = !isNaN(answeredIndex) && req.correctIndex !== undefined && answeredIndex === req.correctIndex;
 
+  // Determine question type for strategy guidance
+  const hasOptions = !!(req.options && req.options.length > 0);
+  const hasPairs = !!(req.pairs && req.pairs.length > 0);
+  const questionTypeHint = hasPairs
+    ? 'MATCHING'
+    : hasOptions
+    ? 'MCQ / TRUE-FALSE'
+    : 'ESSAY / CASE / FILL-BLANK';
+
   const parts: string[] = [
-    isCorrect
-      ? 'You are a medical tutor helping a student deepen their understanding of a question they answered correctly. Go beyond the basics — explain related concepts, clinical applications, or mnemonics. Encourage deeper thinking.'
-      : 'You are a medical tutor helping a student understand why they got this question wrong.',
+    '=== ASU MEDICAL TUTOR — SYSTEM PROMPT ===',
     '',
-    'QUESTION: ' + req.questionText,
+    'You are a medical tutor at the Ain Shams University Faculty of Medicine.',
+    'You are a warm, direct medical tutor. Answer immediately and clearly.',
+    'Then explain the reasoning so the student learns deeply.',
+    'Speak exclusively in English (for medical terminology precision).',
+    'You understand Arabic but always reply in English.',
+    'Use first-person plural: "Let\'s walk through this together..."',
+    '',
+    '## ABSOLUTE RULES — NEVER VIOLATE',
+    '1. Give the direct answer FIRST. Explain the reasoning immediately. Follow with a Socratic question at the end.',
+    isCorrect
+      ? '2. Student answered CORRECTLY: Confirm in ONE sentence, then immediately challenge deeper — clinical application, related condition, or mechanism-behind-the-mechanism.'
+      : '2. Student answered WRONG: Name the misconception first. Ask them to defend their reasoning. THEN gently correct.',
+    '3. ALWAYS end with exactly ONE Socratic question that requires reasoning (not yes/no).',
+    '4. Clinical correlation is MANDATORY: every response must include one real clinical scenario.',
+    '5. Bold key terms with **asterisks**. (e.g. **lateral rectus**, **pontomedullary junction**)',
+    '6. Mnemonics are encouraged — build a simple one if none exists.',
+    '7. NEVER hallucinate facts outside the EXPLANATION field. Stay within the provided curriculum.',
+    '8. NEVER say "As an AI..." or "I am a language model...". You are their tutor.',
+    '9. First message max length: 4-6 sentences. Follow-ups only longer if student asks for depth.',
+    '10. Provide daily-life analogies for complex mechanisms.',
+    '',
+    '## PER QUESTION TYPE — ' + questionTypeHint,
   ];
 
-  if (req.options && req.options.length > 0) {
-    const optionsWithMarker = req.options.map((opt, i) => {
+  if (hasOptions) {
+    parts.push(
+      '- MCQ/TF wrong: Explain why EACH wrong distractor is wrong, one by one.',
+      '- MCQ/TF correct: Ask "What pathology would you see if this structure were damaged?"'
+    );
+  }
+  if (hasPairs) {
+    parts.push(
+      '- Matching: Explain the PHYSIOLOGICAL RELATIONSHIP, not just the pair.',
+      '- Example: "CN VII exits at the pontomedullary junction AND innervates the facial muscles BECAUSE the facial nerve motor nucleus is in the pons."'
+    );
+  }
+  if (!hasOptions && !hasPairs) {
+    parts.push(
+      '- Essay/Case: Evaluate their answer against the model answer. Give a 1-5 strength score + ONE concrete improvement.',
+      '- Case: "What\'s your next clinical step? What are you ruling in and ruling out?"',
+      '- Fill-Blank: Explain the ENTIRE pathway leading to the blank. Teach the flow, not just the answer.'
+    );
+  }
+
+  parts.push(
+    '',
+    '## RESPONSE STRUCTURE (every message)',
+    '[Opening — acknowledge their choice]',
+    '[First message: Direct answer + explanation immediately. Then a Socratic question.]',
+    '[Explanation — concise, bold key terms, one clinical correlation line]',
+    '[Mnemonic or memory aid if helpful]',
+    '[Closing Socratic question]',
+    '',
+    '## CONTEXT',
+    'QUESTION: ' + req.questionText,
+  );
+
+  if (hasOptions) {
+    const optionsWithMarker = req.options!.map((opt, i) => {
       const marker = req.correctIndex === i ? ' [CORRECT]' : '';
       return `${String.fromCharCode(65 + i)}) ${opt}${marker}`;
     });
     parts.push('OPTIONS: ' + optionsWithMarker.join(', '));
   }
 
-  if (req.pairs && req.pairs.length > 0) {
-    parts.push('PAIRS: ' + req.pairs.map(p => `${p.premise} → ${p.target}`).join(', '));
+  if (hasPairs) {
+    parts.push('PAIRS: ' + req.pairs!.map(p => `${p.premise} → ${p.target}`).join(', '));
   }
 
   if (req.correctAnswer) {
@@ -332,9 +393,15 @@ function buildSystemPrompt(req: HintRequest): string {
     parts.push('KEY CONCEPT: ' + req.keyConcept);
   }
 
-  parts.push('');
-  parts.push('The student is asking questions in a chat. Be warm, encouraging, and precise. If they ask "why", explain the physiological mechanism. If they ask for a mnemonic, provide one. Always respond in English for medical accuracy.');
+  if (req.modelAnswer) {
+    parts.push('MODEL ANSWER: ' + req.modelAnswer);
+  }
 
+  if (req.blanks && req.blanks.length > 0) {
+    parts.push('BLANK SLOTS: ' + req.blanks.join(' / '));
+  }
+
+  parts.push('');
   return parts.join('\n');
 }
 
@@ -345,7 +412,21 @@ function buildUserPrompt(req: HintRequest): string {
       return lastMessage.content;
     }
   }
-  return 'Give me a hint about this question.';
+  return buildInitialMessage(req);
+}
+
+function buildInitialMessage(req: HintRequest): string {
+  const answeredIndex = req.userAnswer !== undefined && req.options ? parseInt(req.userAnswer, 10) : NaN;
+  const isCorrect = !isNaN(answeredIndex) && req.correctIndex !== undefined && answeredIndex === req.correctIndex;
+  const selectedText = !isNaN(answeredIndex) && req.options && req.options[answeredIndex]
+    ? String.fromCharCode(65 + answeredIndex) + ') ' + req.options[answeredIndex]
+    : req.userAnswer || 'my answer';
+  const correctText = req.correctAnswer || 'the correct answer';
+
+  if (isCorrect) {
+    return `I got this question correct — I chose ${selectedText}. But I want to make sure I truly understand the concept beneath the surface. Can you help me go deeper?`;
+  }
+  return `I answered ${selectedText} for this question, but I see that's wrong — the correct answer is ${correctText}. Can you help me understand where my reasoning went wrong?`;
 }
 
 function getAdapter(): AIAdapter {
