@@ -24,6 +24,7 @@ import { subjectStyles, formatTime } from '../types';
 import { useLanguage } from '../context/LanguageContext';
 import { toggleFlaggedQuestion } from '../utils/storage';
 import { MatchingQuestion } from './MatchingQuestion';
+import { useQuizEngine } from '../hooks/useQuizEngine';
 
 interface Props {
   chapter: ChapterData;
@@ -44,77 +45,7 @@ const questionVariants = {
 
 /* --------------------------------- Helpers -------------------------------- */
 
-const isAnswered = (q: Question, a: any): boolean => {
-  if (a === undefined || a === null) return false;
-  switch (q.type) {
-    case 'essay':
-      return typeof a === 'object'
-        ? (a.text?.trim().length > 0 || a.selfGrade !== undefined)
-        : typeof a === 'string' && a.trim().length > 0;
-    case 'fillblank':
-      return typeof a === 'object' && a.submitted === true;
-    case 'matching':
-      return typeof a === 'object' && a.submitted === true;
-    case 'casestudy':
-    case 'case':
-      return typeof a === 'object' && Object.keys(a).length > 0;
-    default:
-      return true;
-  }
-};
 
-function getQuestionStatus(q: Question, ans: any): 'correct' | 'incorrect' | 'pending' | 'unanswered' {
-  const answered = isAnswered(q, ans);
-  if (!answered) return 'unanswered';
-
-  if (q.type === 'essay') {
-    if (ans?.selfGrade === 'correct') return 'correct';
-    if (ans?.selfGrade === 'incorrect') return 'incorrect';
-    return 'pending';
-  }
-
-  if (q.type === 'case' || q.type === 'casestudy') {
-    const subs = q.subQuestions ?? [];
-    if (!subs.length) return 'unanswered';
-    
-    let hasPending = false;
-    let hasIncorrect = false;
-    let hasAnsweredAny = false;
-    
-    for (const sq of subs) {
-      const subAns = ans?.[sq.id];
-      if (subAns === undefined) {
-        hasPending = true;
-        continue;
-      }
-      hasAnsweredAny = true;
-      if (sq.type === 'mcq') {
-        if (subAns !== sq.correctIndex) {
-          hasIncorrect = true;
-        }
-      } else {
-        // essay sub-question
-        const graded = typeof subAns === 'object' && subAns.selfGrade !== undefined;
-        
-        if (graded) {
-          if (subAns.selfGrade === 'incorrect') {
-            hasIncorrect = true;
-          }
-        } else {
-          hasPending = true;
-        }
-      }
-    }
-    
-    if (!hasAnsweredAny) return 'unanswered';
-    if (hasIncorrect) return 'incorrect';
-    if (hasPending) return 'pending';
-    return 'correct';
-  }
-
-  // For MCQ, True/False, Matching, Fillblank:
-  return checkAnswerCorrect(q, ans) ? 'correct' : 'incorrect';
-}
 
 const wordCount = (s: string) => (s.trim() ? s.trim().split(/\s+/).length : 0);
 
@@ -124,22 +55,14 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
   const { t, language } = useLanguage();
   const isRTL = language === 'ar';
 
-  const [current, setCurrent] = useState(0);
-  const [direction, setDirection] = useState(1);
-  const [answers, setAnswers] = useState<Record<number, any>>({});
-  const [flagged, setFlagged] = useState<Set<number>>(new Set());
-  const [elapsed, setElapsed] = useState(0);
-  const [showGrid, setShowGrid] = useState(false);
-  const [showShortcuts, setShowShortcuts] = useState(false);
-  const [confirmFinish, setConfirmFinish] = useState(false);
-
-  // Essay draft temporary state
-  const [essayDraft, setEssayDraft] = useState('');
-  const [showEssayAnswer, setShowEssayAnswer] = useState(false);
-
-  // Fill in the blank temporary state
-  const [blankInputs, setBlankInputs] = useState<string[]>([]);
-  const [blankSubmitted, setBlankSubmitted] = useState(false);
+  const engine = useQuizEngine({ questions, onFinish });
+  const {
+    current, answers, flagged, elapsedSeconds: totalElapsed, timerUrgency,
+    finished, confirmFinish, showGrid, showShortcuts, progress, answeredCount,
+    score, currentQuestion, blankInputs, blankSubmitted, answerState, revealed,
+    goTo, goNext, goPrev, toggleFlag, setAnswer, submitAnswer, revealAnswer,
+    finish, confirmFinishAction, toggleGrid, toggleShortcuts,
+  } = engine;
 
   // Case Study sub-question drafts temporary state
   const [subAnswers, setSubAnswers] = useState<Record<string, any>>({});
@@ -157,14 +80,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
   const answeredCount = questions.reduce((n, q, i) => n + (isAnswered(q, answers[i]) ? 1 : 0), 0);
   const progress = total > 0 ? ((current + 1) / total) * 100 : 0;
 
-  /* Timer */
-  useEffect(() => {
-    const id = setInterval(() => {
-      elapsedRef.current += 1;
-      setElapsed(elapsedRef.current);
-    }, 1000);
-    return () => clearInterval(id);
-  }, []);
+
 
   /* Navigation */
   const goTo = useCallback(

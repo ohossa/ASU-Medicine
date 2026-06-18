@@ -5,6 +5,7 @@ import { ProgressProvider } from './store/progress';
 import { FX } from './lib/fx.config';
 import { useDeferredMount } from './hooks/useDeferredMount';
 import { checkAnswerCorrect } from './utils/quiz';
+import { FeatureErrorBoundary } from './components/FeatureErrorBoundary';
 import { useViewTransition } from './hooks/useViewTransition';
 import { ClerkThemeTogglePortal } from './components/ClerkThemeTogglePortal';
 import { LanguageProfilePage } from './components/profile/LanguageProfilePage';
@@ -989,7 +990,8 @@ function MainApp() {
 
           {/* Chapters / Quiz sub-flow wrapper */}
           <Route path="/year-2/:code/:mode" element={
-            <QuizFlowWrapper 
+            <FeatureErrorBoundary name="QuizFlow">
+              <QuizFlowWrapper 
               code={params.code} 
               mode={params.mode}
               selectedModule={selectedModule}
@@ -1019,6 +1021,7 @@ function MainApp() {
               historySource={historySource}
               t={t}
             />
+            </FeatureErrorBoundary>
           } />
 
           {/* Tools pages */}
@@ -1042,12 +1045,14 @@ function MainApp() {
           } />
 
           <Route path="/marks-calculator" element={
-            <Suspense fallback={<div>Loading...</div>}>
-              <MarksCalculator
-                onBack={() => navigate('/')}
-                userButton={customUserButton}
-              />
-            </Suspense>
+            <FeatureErrorBoundary name="MarksCalculator">
+              <Suspense fallback={<div>Loading...</div>}>
+                <MarksCalculator
+                  onBack={() => navigate('/')}
+                  userButton={customUserButton}
+                />
+              </Suspense>
+            </FeatureErrorBoundary>
           } />
 
           <Route path="/question-search" element={
@@ -1060,16 +1065,18 @@ function MainApp() {
           } />
 
           <Route path="/analytics" element={
-            <Suspense fallback={<div>Loading...</div>}>
-              <AnalyticsDashboard
-                onBack={() => navigate('/')}
-                userButton={customUserButton}
-                history={getQuizHistory()}
-                studentName={user ? (user.fullName || `${user.firstName} ${user.lastName}`.trim() || 'Student') : 'Student'}
-                studentYear={studentYear}
-                progress={getYearProgress()}
-              />
-            </Suspense>
+            <FeatureErrorBoundary name="AnalyticsDashboard">
+              <Suspense fallback={<div>Loading...</div>}>
+                <AnalyticsDashboard
+                  onBack={() => navigate('/')}
+                  userButton={customUserButton}
+                  history={getQuizHistory()}
+                  studentName={user ? (user.fullName || `${user.firstName} ${user.lastName}`.trim() || 'Student') : 'Student'}
+                  studentYear={studentYear}
+                  progress={getYearProgress()}
+                />
+              </Suspense>
+            </FeatureErrorBoundary>
           } />
 
           <Route path="/flagged-questions" element={
