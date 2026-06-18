@@ -243,7 +243,7 @@ class NVIDIAAdapter implements AIAdapter {
   private model: string;
   constructor() {
     this.apiKey = process.env.NVIDIA_API_KEY ?? '';
-    this.model = process.env.NVIDIA_HINT_MODEL ?? 'meta/llama-3.1-70b-instruct';
+    this.model = process.env.NVIDIA_HINT_MODEL ?? 'meta/llama-3.1-8b-instruct';
   }
 
   async generateHint(req: HintRequest): Promise<HintResponse> {
@@ -473,6 +473,10 @@ export default async function handler(req: any, res: any) {
     return res.status(200).json(response);
   } catch (error: any) {
     console.error('Hint API Error:', error);
-    return res.status(500).json({ error: 'Internal Server Error', message: error.message });
+    const msg = error.message || 'Unknown error';
+    // Extract the upstream status code from the adapter error message (e.g. "OpenAI API error: 402 ...")
+    const statusMatch = msg.match(/\b(\d{3})\b/);
+    const status = statusMatch ? parseInt(statusMatch[1], 10) : 502;
+    return res.status(status).json({ error: 'AI provider error', message: msg });
   }
 }

@@ -105,8 +105,8 @@ export function useHintSystem({
         }
 
         if (!res.ok) {
-          const errData = await res.json().catch(() => ({ error: `HTTP ${res.status}` }));
-          throw new Error(errData.error || errData.message || `Server error (${res.status})`);
+          const errData = await res.json().catch(() => ({ message: `HTTP ${res.status}` }));
+          throw new Error(errData.message || errData.error || `Server error (${res.status})`);
         }
 
         let data: any = {};
