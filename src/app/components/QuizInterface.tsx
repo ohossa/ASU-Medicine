@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useLayoutEffect, useRef } from 'react';
 import FocusTrap from 'focus-trap-react';
-import '../lib/3dCardFlip.css';
 import { motion, AnimatePresence } from 'motion/react';
 import { useAuth } from '@clerk/clerk-react';
+import { useSoundEngine } from '../hooks/useSoundEngine';
 import { checkAnswerCorrect } from '../utils/quiz';
 import {
   ArrowLeft,
@@ -129,6 +129,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
   const { t, language } = useLanguage();
   const isRTL = language === 'ar';
   const { getToken } = useAuth();
+  const { trigger: playSound } = useSoundEngine();
 
   const [announcement, setAnnouncement] = useState('');
   const [direction, setDirection] = useState(1);
@@ -173,6 +174,13 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
         ? getQuestionStatus(question, answers[current]) === 'correct'
         : checkAnswerCorrect(question, answers[current])
   ) : false;
+
+  /* Sound effect on answer reveal */
+  useEffect(() => {
+    if (answered && question) {
+      playSound(isCorrect ? "correct" : "wrong");
+    }
+  }, [answered, isCorrect, question, playSound]);
 
   /* aria-live announcement on answer reveal */
   useLayoutEffect(() => {
@@ -382,7 +390,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
             btnClass += 'border-emerald-500/40 bg-emerald-500/10 text-emerald-600 dark:text-emerald-300';
             badgeClass += 'border-emerald-500/40 text-emerald-600 dark:text-emerald-300 bg-emerald-500/10';
           } else if (selected && !isCorrect) {
-            btnClass += 'border-rose-500/40 bg-rose-500/10 text-rose-600 dark:text-rose-300';
+            btnClass += 'border-rose-500/40 bg-rose-500/10 text-rose-600 dark:text-rose-300 wrong-shake';
             badgeClass += 'border-rose-500/40 text-rose-600 dark:text-rose-300 bg-rose-500/10';
           } else {
             btnClass += 'border-gray-100 dark:border-white/[0.04] bg-gray-50/30 dark:bg-white/[0.01] text-gray-400 dark:text-white/30 cursor-not-allowed';
@@ -432,7 +440,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
           } else if (isCorrect) {
             btnClass += 'border-emerald-500/40 bg-emerald-500/10 text-emerald-600 dark:text-emerald-300';
           } else if (selected && !isCorrect) {
-            btnClass += 'border-rose-500/40 bg-rose-500/10 text-rose-600 dark:text-rose-300';
+            btnClass += 'border-rose-500/40 bg-rose-500/10 text-rose-600 dark:text-rose-300 wrong-shake';
           } else {
             btnClass += 'border-gray-200 dark:border-white/[0.04] bg-gray-50/30 dark:bg-white/[0.01] text-gray-400 dark:text-white/20 cursor-not-allowed';
           }
@@ -485,7 +493,11 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                 setShowEssayAnswer(true);
                 requestAnimationFrame(() => {
                   setTimeout(() => {
-                    document.querySelector('[data-essay-answer]')?.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+                  const answerEl = document.querySelector('[data-essay-answer]');
+                    if (answerEl) {
+                      answerEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                      setTimeout(() => window.scrollBy({ top: 180, behavior: 'smooth' }), 280);
+                    }
                   }, 150);
                 });
               }}
@@ -769,7 +781,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                         optClass += 'border-emerald-500/40 bg-emerald-500/10 text-emerald-600 dark:text-emerald-300';
                         badgeClass += 'border-emerald-500/40 text-emerald-600 dark:text-emerald-300 bg-emerald-500/10';
                       } else if (selected && !isCorrectOpt) {
-                        optClass += 'border-rose-500/40 bg-rose-500/10 text-rose-600 dark:text-rose-300';
+                        optClass += 'border-rose-500/40 bg-rose-500/10 text-rose-600 dark:text-rose-300 wrong-shake';
                         badgeClass += 'border-rose-500/40 text-rose-600 dark:text-rose-300 bg-rose-500/10';
                       } else {
                         optClass += 'border-gray-100 dark:border-white/[0.04] bg-gray-50/30 dark:bg-white/[0.01] text-gray-400 dark:text-white/30 cursor-not-allowed';

@@ -16,6 +16,19 @@
   border-left-color: var(--color-accent, rgba(255,255,255,0.5));
 }
 
+/* Subtle, minimalist shake for incorrect selection */
+@keyframes wrong-shake {
+  0%   { transform: translateX(0); }
+  20%  { transform: translateX(-3px); }
+  40%  { transform: translateX(2.5px); }
+  60%  { transform: translateX(-1.5px); }
+  80%  { transform: translateX(1px); }
+  100% { transform: translateX(0); }
+}
+.wrong-shake {
+  animation: wrong-shake 0.35s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+
 .custom-cursor {
   position: fixed;
   pointer-events: none;
