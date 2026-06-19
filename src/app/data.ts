@@ -1,4 +1,5 @@
 import type { ChapterData, Question, SubjectColor, SubjectData, SubQuestion } from './types';
+import { assignDefaultDifficulty, assignDefaultBloomLevel } from './lib/assignDefaultDifficulty';
 
 // Glob all JSON files under src/imports recursively at build time (lazy)
 const globbedFiles = import.meta.glob('../imports/**/*.json');
@@ -41,6 +42,73 @@ type RawTopic = {
 type RawChapter = {
   chapterTitle: string;
   topics: RawTopic[];
+};
+
+// ── V2 JSON Raw Types ─────────────────────────────────────────────────────────
+
+type V2RawQuestion = {
+  id: string | number;
+  type: Question['type'];
+  text?: string;
+  question?: string;
+  lecture?: number;
+  options?: string[];
+  correctIndex?: number;
+  correctAnswer?: string;
+  pairs?: { premise: string; target: string }[];
+  modelAnswer?: string;
+  explanation?: string;
+  keyConcept?: string;
+  subQuestions?: Array<{
+    id: string;
+    type: 'mcq' | 'essay';
+    text?: string;
+    options?: string[];
+    correctIndex?: number;
+    modelAnswer?: string;
+    explanation?: string;
+    keyConcept?: string;
+  }>;
+  blanks?: string[];
+  acceptedAnswers?: string[][];
+  difficulty?: 1 | 2 | 3 | 4 | 5;
+  bloomLevel?: Question['bloomLevel'];
+  tags?: string[];
+  estimatedTimeSeconds?: number;
+  media?: Question['media'];
+  avgCorrectRate?: number;
+  totalAttempts?: number;
+  discriminationIndex?: number;
+};
+
+type V2RawSubject = {
+  id: string;
+  name: string;
+  iconName: string;
+  lectures?: string;
+  lectureCount?: number;
+  lectureNames?: string[];
+  questions: V2RawQuestion[];
+};
+
+type V2RawChapter = {
+  id?: number;
+  title?: string;
+  subtitle?: string;
+  emoji?: string;
+  page?: number;
+  lectureRange?: string;
+  subjects?: V2RawSubject[];
+};
+
+type V2RawData = {
+  schemaVersion?: number;
+  meta?: {
+    moduleCode?: string;
+    [key: string]: unknown;
+  };
+  chapters?: V2RawChapter[];
+  [key: string]: unknown;
 };
 
 // ── Helpers ────────────────────────────────────────────────────────────────────
@@ -366,14 +434,14 @@ export const SYLLABUS_MODULES: Record<number, Record<number, ModuleInfo[]>> = {
 // ── Dynamic Loader ─────────────────────────────────────────────────────────────
 
 interface LoadedDatabases {
-  mcqRaw: any | null;
-  essayRaw: any | null;
-  v2Raw?: any | null;
+  mcqRaw: unknown | null;
+  essayRaw: unknown | null;
+  v2Raw?: V2RawData | null;
 }
 
 export const moduleDatabases: Record<string, LoadedDatabases> = {};
 
-function assertUniqueQuestionIds(rawData: any, filename: string): void {
+function assertUniqueQuestionIds(rawData: V2RawData, filename: string): void {
   const ids = new Set<string>();
   if (!rawData.chapters) return;
   for (const chapter of rawData.chapters) {
@@ -381,21 +449,21 @@ function assertUniqueQuestionIds(rawData: any, filename: string): void {
     for (const subject of chapter.subjects) {
       if (!subject.questions) continue;
       for (const question of subject.questions) {
-        if (ids.has(question.id)) {
+        if (ids.has(String(question.id))) {
           throw new Error(`Duplicate question id: ${question.id} in ${filename}`);
         }
-        ids.add(question.id);
+        ids.add(String(question.id));
       }
     }
   }
 }
 
-function transformV2Question(q: any, subjectColor: SubjectColor): Question {
-  return {
+function transformV2Question(q: V2RawQuestion, subjectColor: SubjectColor): Question {
+  const base = {
     id: q.id,
     type: q.type,
-    text: q.text,
-    lecture: q.lecture,
+    text: q.text || q.question || '',
+    lecture: q.lecture ?? 1,
     subjectColor,
     options: q.options,
     correctIndex: q.correctIndex,
@@ -403,10 +471,10 @@ function transformV2Question(q: any, subjectColor: SubjectColor): Question {
     modelAnswer: q.modelAnswer || undefined,
     explanation: q.explanation || '',
     keyConcept: q.keyConcept,
-    subQuestions: q.subQuestions ? q.subQuestions.map((sq: any) => ({
+    subQuestions: q.subQuestions ? q.subQuestions.map((sq) => ({
       id: sq.id,
       type: sq.type,
-      text: sq.text,
+      text: sq.text || sq.question || '',
       options: sq.options,
       correctIndex: sq.correctIndex,
       modelAnswer: sq.modelAnswer,
@@ -414,32 +482,52 @@ function transformV2Question(q: any, subjectColor: SubjectColor): Question {
       keyConcept: sq.keyConcept
     })) : undefined,
     blanks: q.blanks,
-    acceptedAnswers: q.acceptedAnswers
+    acceptedAnswers: q.acceptedAnswers,
+    difficulty: q.difficulty,
+    bloomLevel: q.bloomLevel,
+    tags: q.tags,
+    estimatedTimeSeconds: q.estimatedTimeSeconds,
+    media: q.media,
+    avgCorrectRate: q.avgCorrectRate,
+    totalAttempts: q.totalAttempts,
+    discriminationIndex: q.discriminationIndex,
+  };
+  return {
+    ...base,
+    difficulty: assignDefaultDifficulty(base),
+    bloomLevel: assignDefaultBloomLevel(base),
   };
 }
 
 // Helper to inspect JSON content structure and auto-detect database type
-function detectDbTypeOfJson(rawData: any): 'mcq' | 'essay' {
+function detectDbTypeOfJson(rawData: unknown): 'mcq' | 'essay' {
+  if (!rawData || typeof rawData !== 'object') return 'mcq';
+  const obj = rawData as Record<string, unknown>;
   let hasMcqFeatures = false;
   let hasEssayFeatures = false;
 
-  const chaptersList = rawData?.chapters || [];
+  const chaptersList = (obj?.chapters || []) as Array<Record<string, unknown>>;
   for (const ch of chaptersList) {
-    for (const tp of ch.topics || []) {
-      for (const q of tp.questions || []) {
-        if (q.options && q.options.length > 0) {
+    const topics = (ch.topics || []) as Array<Record<string, unknown>>;
+    for (const tp of topics) {
+      const questions = (tp.questions || []) as Array<Record<string, unknown>>;
+      for (const q of questions) {
+        const qObj = q as Record<string, unknown>;
+        const options = qObj.options as string[] | undefined;
+        if (options && options.length > 0) {
           hasMcqFeatures = true;
         }
+        const qType = qObj.type as string | undefined;
         if (
-          q.correctAnswer !== undefined ||
-          q.type === 'mcq' ||
-          q.type === 'truefalse' ||
-          q.type === 'matching' ||
-          q.type === 'fillblank'
+          qObj.correctAnswer !== undefined ||
+          qType === 'mcq' ||
+          qType === 'truefalse' ||
+          qType === 'matching' ||
+          qType === 'fillblank'
         ) {
           hasMcqFeatures = true;
         }
-        if (q.modelAnswer || q.type === 'essay') {
+        if (qObj.modelAnswer || qType === 'essay') {
           hasEssayFeatures = true;
         }
       }
@@ -461,7 +549,7 @@ async function loadAllModules(): Promise<void> {
   for (const path in globbedFiles) {
     const loader = globbedFiles[path];
     const fileModule = await loader();
-    const rawData = (fileModule as any).default || fileModule;
+    const rawData = (fileModule as Record<string, unknown>).default ?? fileModule;
 
   if (rawData && typeof rawData === 'object' && 'schemaVersion' in rawData) {
     const sv = rawData.schemaVersion;
@@ -663,9 +751,9 @@ export function getModuleQuestionCounts(moduleCode: string) {
   let essayCount = 0;
 
   if (db?.v2Raw) {
-    db.v2Raw.chapters.forEach((ch: any) => {
-      ch.subjects?.forEach((subj: any) => {
-        subj.questions?.forEach((q: any) => {
+    db.v2Raw.chapters?.forEach((ch: V2RawChapter) => {
+      ch.subjects?.forEach((subj: V2RawSubject) => {
+        subj.questions?.forEach((q: V2RawQuestion) => {
           if (q.type === 'essay') {
             essayCount++;
           } else {
@@ -678,10 +766,11 @@ export function getModuleQuestionCounts(moduleCode: string) {
   }
 
   if (db?.mcqRaw) {
-    mcqCount = db.mcqRaw.totalQuestions || 0;
-    if (mcqCount === 0 && db.mcqRaw.chapters) {
-      db.mcqRaw.chapters.forEach((ch: any) => {
-        ch.topics?.forEach((tp: any) => {
+    const mcqData = db.mcqRaw as { totalQuestions?: number; chapters?: RawChapter[] };
+    mcqCount = mcqData.totalQuestions || 0;
+    if (mcqCount === 0 && mcqData.chapters) {
+      mcqData.chapters.forEach((ch: RawChapter) => {
+        ch.topics?.forEach((tp: RawTopic) => {
           mcqCount += tp.questions?.length || 0;
         });
       });
@@ -689,10 +778,11 @@ export function getModuleQuestionCounts(moduleCode: string) {
   }
 
   if (db?.essayRaw) {
-    essayCount = db.essayRaw.totalQuestions || 0;
-    if (essayCount === 0 && db.essayRaw.chapters) {
-      db.essayRaw.chapters.forEach((ch: any) => {
-        ch.topics?.forEach((tp: any) => {
+    const essayData = db.essayRaw as { totalQuestions?: number; chapters?: RawChapter[] };
+    essayCount = essayData.totalQuestions || 0;
+    if (essayCount === 0 && essayData.chapters) {
+      essayData.chapters.forEach((ch: RawChapter) => {
+        ch.topics?.forEach((tp: RawTopic) => {
           essayCount += tp.questions?.length || 0;
         });
       });
@@ -711,16 +801,16 @@ export function getChaptersForModuleAndMode(
 
   if (db.v2Raw) {
     const chaptersList = db.v2Raw.chapters || [];
-    return chaptersList.map((ch: any) => {
+    return chaptersList.map((ch: V2RawChapter) => {
       const subjects: SubjectData[] = (ch.subjects || [])
-        .map((subj: any) => {
+        .map((subj: V2RawSubject) => {
           const questions = (subj.questions || [])
-            .filter((q: any) => {
+            .filter((q: V2RawQuestion) => {
               if (mode === 'mcq') return q.type !== 'essay';
               if (mode === 'essay') return q.type === 'essay';
               return true;
             })
-            .map((q: any) => transformV2Question(q, subj.id));
+            .map((q: V2RawQuestion) => transformV2Question(q, subj.id));
 
           return {
             id: subj.id,
@@ -737,9 +827,9 @@ export function getChaptersForModuleAndMode(
       const accentColor: SubjectColor = subjects[0]?.id || 'physiology';
 
       return {
-        id: ch.id,
-        title: ch.title,
-        subtitle: ch.subtitle || ch.title,
+        id: ch.id ?? 0,
+        title: ch.title || '',
+        subtitle: ch.subtitle || ch.title || '',
         emoji: ch.emoji || '🧠',
         page: ch.page || 1,
         lectureRange: ch.lectureRange || '',
@@ -749,13 +839,13 @@ export function getChaptersForModuleAndMode(
     });
   }
 
-  const mcqRaw = db.mcqRaw;
-  const essayRaw = db.essayRaw;
+  const mcqRaw = db.mcqRaw as { chapters?: RawChapter[] } | null;
+  const essayRaw = db.essayRaw as { chapters?: RawChapter[] } | null;
 
   if (!mcqRaw && !essayRaw) return [];
 
-  const mcqChaptersList = mcqRaw?.chapters || [];
-  const essayChaptersList = essayRaw?.chapters || [];
+  const mcqChaptersList = mcqRaw?.chapters || [] as RawChapter[];
+  const essayChaptersList = essayRaw?.chapters || [] as RawChapter[];
 
   const maxChapters = Math.max(mcqChaptersList.length, essayChaptersList.length);
   const resultChapters: ChapterData[] = [];
@@ -764,7 +854,7 @@ export function getChaptersForModuleAndMode(
     const rawMcq = mcqChaptersList[i];
     const rawEssay = essayChaptersList[i];
 
-    let meta: any;
+    let meta: (typeof CHAPTER_META)[number];
     if (moduleCode === 'MEM-2' && i < CHAPTER_META.length) {
       meta = CHAPTER_META[i];
     } else {

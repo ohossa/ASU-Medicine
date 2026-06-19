@@ -58,7 +58,18 @@ export interface Question {
   acceptedAnswers?: string[][];  // optional alternatives per blank slot
   repetitionCount?: number;    // 2-3=★  4-5=★★  6+=★★★  auto-managed by importer
 
-  /* ── Analytics fields (reserved for future usage) ── */
+  /* ── Difficulty & Bloom taxonomy ── */
+  difficulty?: 1 | 2 | 3 | 4 | 5;
+  bloomLevel?: 'remember' | 'understand' | 'apply' | 'analyze' | 'evaluate' | 'create';
+  tags?: string[];
+  estimatedTimeSeconds?: number;
+  media?: {
+    imageUrl?: string;
+    videoUrl?: string;
+    audioUrl?: string;
+  };
+
+  /* ── Analytics fields ── */
   avgCorrectRate?: number;      // 0.0–1.0, back-filled from usage logs
   totalAttempts?: number;       // cumulative answer attempts
   discriminationIndex?: number; // 0.0–1.0, item discrimination (how well it separates high/low performers)
