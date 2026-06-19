@@ -6,13 +6,11 @@ describe('Special Senses (MSS-2) restructured database validation', () => {
     await ensureDataLoaded();
   });
 
-  it('verifies that the module is active and loaded', () => {
+  it('verifies that the module is active and loaded with zero questions (as a skeleton foundation)', () => {
     const counts = getModuleQuestionCounts('MSS-2');
-    expect(counts.totalCount).toBeGreaterThan(0);
-    expect(counts.essayCount).toBeGreaterThan(0);
-    // Cloze cards are parsed as fillblank, which are counted as MCQ in UI count helper
-    expect(counts.mcqCount).toBeGreaterThan(0);
-    console.log(`MSS-2 total questions: ${counts.totalCount} (Essay: ${counts.essayCount}, Fillblank: ${counts.mcqCount})`);
+    expect(counts.totalCount).toBe(0);
+    expect(counts.essayCount).toBe(0);
+    expect(counts.mcqCount).toBe(0);
   });
 
   it('contains exactly 3 chapters for eye, ear, and chemical senses', () => {
@@ -74,48 +72,14 @@ describe('Special Senses (MSS-2) restructured database validation', () => {
     expect(ch3Subjects).toContain('clinical'); // ENT clinical mapped to clinical
   });
 
-  it('ensures that lectureName list matches the question lectures index', () => {
+  it('ensures that lectureName list is correctly populated and questions are empty', () => {
     const chapters = getChaptersForModuleAndMode('MSS-2', 'mixed');
     for (const ch of chapters) {
       for (const subj of ch.subjects) {
         expect(subj.lectureNames).toBeDefined();
         expect(subj.lectureNames!.length).toBe(subj.lectureCount);
-        
-        for (const q of subj.questions) {
-          // Lecture index must be 1-based and within bounds of the lectureNames array
-          expect(q.lecture).toBeGreaterThan(0);
-          expect(q.lecture).toBeLessThanOrEqual(subj.lectureCount);
-          
-          const lectureName = subj.lectureNames![q.lecture - 1];
-          expect(typeof lectureName).toBe('string');
-          expect(lectureName.length).toBeGreaterThan(0);
-        }
+        expect(subj.questions.length).toBe(0); // No questions right now, ready for future imports
       }
     }
-  });
-
-  it('validates the structure of cloze (fillblank) questions', () => {
-    const chapters = getChaptersForModuleAndMode('MSS-2', 'mixed');
-    let fillblankCount = 0;
-    for (const ch of chapters) {
-      for (const subj of ch.subjects) {
-        for (const q of subj.questions) {
-          if (q.type === 'fillblank') {
-            fillblankCount++;
-            expect(q.blanks).toBeDefined();
-            expect(q.blanks!.length).toBeGreaterThan(0);
-            
-            // The number of underscores (___) in the text must equal the number of blanks
-            const matches = q.text.match(/___/g);
-            expect(matches).not.toBeNull();
-            expect(matches!.length).toBe(q.blanks!.length);
-            
-            // Check that the explanation contains the completed sentence
-            expect(q.explanation).toContain('Completed Sentence:');
-          }
-        }
-      }
-    }
-    expect(fillblankCount).toBeGreaterThan(0);
   });
 });

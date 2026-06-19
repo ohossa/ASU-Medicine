@@ -1382,8 +1382,6 @@ export default function App() {
       />
       {showApp && (
         <>
-          {/* Custom Cursor - desktop only, glowing orb */}
-          <CustomCursor />
 
           {/* Dynamic Floating Background Blobs & Interactive Dots */}
           <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">

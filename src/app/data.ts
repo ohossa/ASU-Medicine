@@ -822,7 +822,7 @@ export function getChaptersForModuleAndMode(
             questions,
           };
         })
-        .filter((subj: SubjectData) => subj.questions.length > 0);
+        .filter((subj: SubjectData) => subj.questions.length > 0 || (subj.lectureNames && subj.lectureNames.length > 0));
 
       const accentColor: SubjectColor = subjects[0]?.id || 'physiology';
 
