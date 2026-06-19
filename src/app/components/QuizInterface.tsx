@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useLayoutEffect, useRef } from 'react';
 import FocusTrap from 'focus-trap-react';
 import '../lib/3dCardFlip.css';
 import { motion, AnimatePresence } from 'motion/react';
@@ -20,7 +20,7 @@ import {
   Activity,
   Star
 } from 'lucide-react';
-import type { ChapterData, SubjectData, Question, SubjectColor } from '../types';
+import type { ChapterData, SubjectData, Question, SubjectColor, QuizAnswer } from '../types';
 import { subjectStyles, formatTime } from '../types';
 import { useLanguage } from '../context/LanguageContext';
 
@@ -34,7 +34,7 @@ interface Props {
   subject: SubjectData | null;
   questions: Question[];
   onBack: () => void;
-  onFinish: (answers: Record<number, any>, elapsedSeconds: number, flaggedQuestions: Set<number>) => void;
+  onFinish: (answers: Record<number, QuizAnswer>, elapsedSeconds: number, flaggedQuestions: Set<number>) => void;
   userButton?: React.ReactNode;
 }
 
@@ -48,7 +48,7 @@ const questionVariants = {
 
 /* --------------------------------- Helpers -------------------------------- */
 
-const isAnswered = (q: Question, a: any): boolean => {
+const isAnswered = (q: Question, a: QuizAnswer | undefined): boolean => {
   if (a === undefined || a === null) return false;
   switch (q.type) {
     case 'essay':
@@ -67,7 +67,7 @@ const isAnswered = (q: Question, a: any): boolean => {
   }
 };
 
-function getQuestionStatus(q: Question, ans: any): 'correct' | 'incorrect' | 'pending' | 'unanswered' {
+function getQuestionStatus(q: Question, ans: QuizAnswer | undefined): 'correct' | 'incorrect' | 'pending' | 'unanswered' {
   const answered = isAnswered(q, ans);
   if (!answered) return 'unanswered';
 
@@ -142,11 +142,11 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
     onFinish: (session) => onFinish(session.answers, session.elapsedSeconds, session.flaggedQuestions),
   });
   const {
-    current, answers, flagged, elapsedSeconds: totalElapsed, timerUrgency: _timerUrgency,
-    finished: _finished, showGrid, showShortcuts, progress, answeredCount,
-    score: _score, currentQuestion: _currentQuestion, blankInputs, blankSubmitted, answerState: _answerState, revealed: _revealed,
-    goTo, goNext: _goNext, goPrev: _goPrev, toggleFlag, setAnswer, submitAnswer: _submitAnswer, revealAnswer: _revealAnswer,
-    finish: _finish, confirmFinishAction: _confirmFinishAction, toggleGrid, toggleShortcuts,
+    current, answers, flagged, elapsedSeconds: totalElapsed,
+    showGrid, showShortcuts, progress, answeredCount,
+    blankInputs, blankSubmitted,
+    goTo, toggleFlag, setAnswer,
+    toggleGrid, toggleShortcuts,
   } = engine;
 
   const handleGoTo = React.useCallback((index: number) => {
@@ -166,14 +166,14 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
   const style = subjectStyles[subjectColor];
 
   /* Detect answer and trigger 3D flip */
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (answered && !flipped) {
       setFlipped(true);
     }
-  }, [answered]);
+  }, [answered, flipped]);
 
   /* aria-live announcement on answer reveal */
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (!answered || !question) return;
     const lang = language === 'ar' ? 'ar' : 'en';
     const isCorrect = question.type === 'essay'
@@ -186,10 +186,10 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
       ? `${lang === 'ar' ? 'صحيح' : 'Correct'}. ${question.explanation?.slice(0, 80) || ''}`
       : `${lang === 'ar' ? 'خاطئ' : 'Incorrect'}. ${lang === 'ar' ? 'الإجابة الصحيحة كانت' : 'The correct answer was'} ${correctLabel}`;
     setAnnouncement(msg);
-  }, [answered, current, question, answers, language]);
+  }, [answered, current, question, answers, language, getQuestionStatus]);
 
   /* Sync temporary states on index change */
-  useEffect(() => {
+  useLayoutEffect(() => {
     lastFocusedSubQ.current = null;
     setShowEssayAnswer(false);
     setFlipped(false);
@@ -214,7 +214,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
       setSubEssayDrafts(drafts);
       setRevealedSubEssays(revs);
     }
-  }, [current, question]);
+  }, [current, question, answers]);
 
   /* Keyboard shortcuts */
   useEffect(() => {
@@ -280,7 +280,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
     };
     window.addEventListener('keydown', handler);
     return () => window.removeEventListener('keydown', handler);
-  }, [current, question, handleGoTo, toggleFlag, answers, isRTL, showEssayAnswer, revealedSubEssays]);
+  }, [current, question, handleGoTo, toggleFlag, answers, isRTL, showEssayAnswer, revealedSubEssays, setAnswer, toggleGrid]);
 
   if (!question) {
     return (
@@ -290,8 +290,6 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
     );
   }
 
-  const answered = answers[current] !== undefined && isAnswered(question, answers[current]);
-
   // Chat-based AI tutor: visible after ANY answer (right or wrong)
   const isCompleted = answered;
   const isCorrect = question.type === 'essay'
@@ -299,6 +297,8 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
     : question.type === 'case' || question.type === 'casestudy'
       ? getQuestionStatus(question, answers[current]) === 'correct'
       : checkAnswerCorrect(question, answers[current]);
+
+  const answered = answers[current] !== undefined && isAnswered(question, answers[current]);
   const { messages: chatMessages, loading: chatLoading, error: chatError, sendMessage, clearChat } = useHintSystem({
     question,
     userAnswer: answers[current],
@@ -366,7 +366,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
 
   /* ------------------------- Per-format answer renderers ------------------------- */
 
-  const renderMCQ = (q: Question, value: any, onChange: (v: any) => void) => {
+  const renderMCQ = (q: Question, value: QuizAnswer | undefined, onChange: (v: number) => void) => {
     const hasAnswered = value !== undefined;
     return (
       <div className="space-y-2.5">
@@ -416,7 +416,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
     );
   };
 
-  const renderTrueFalse = (value: any, onChange: (v: boolean) => void) => {
+  const renderTrueFalse = (value: QuizAnswer | undefined, onChange: (v: boolean) => void) => {
     const hasAnswered = value !== undefined;
     return (
       <div className="grid grid-cols-2 gap-3">
@@ -456,7 +456,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
     );
   };
 
-  const renderEssay = (value: any, onChange: (v: any) => void) => {
+  const renderEssay = (value: QuizAnswer | undefined, onChange: (v: { text: string; selfGrade?: string }) => void) => {
     const isCompleted = value?.selfGrade !== undefined;
     return (
       <div className="space-y-4">
@@ -554,7 +554,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
     );
   };
 
-  const renderFillBlank = (q: Question, _value: any, onChange: (v: any) => void) => {
+  const renderFillBlank = (q: Question, _value: QuizAnswer | undefined, onChange: (v: { inputs: string[]; submitted: boolean }) => void) => {
     const parts = (q.text ?? '').split('___');
     const blanks = Math.max(parts.length - 1, 1);
     const checkBlank = (i: number, val: string) => {
@@ -649,7 +649,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
     );
   };
 
-  const renderMatching = (q: Question, _value: any, onChange: (v: any) => void) => {
+  const renderMatching = (q: Question, _value: QuizAnswer | undefined, onChange: (v: { scrambled: string[]; matches: Record<string, string>; submitted: boolean }) => void) => {
     return (
       <MatchingQuestion
         pairs={q.pairs ?? []}
@@ -662,7 +662,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
     );
   };
 
-  const renderCaseStudy = (q: Question, value: any, onChange: (v: any) => void) => {
+  const renderCaseStudy = (q: Question, value: QuizAnswer | undefined, onChange: (v: QuizAnswer) => void) => {
     const subAns = value ?? {};
     return (
       <div className="space-y-5">
@@ -1033,20 +1033,13 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                   const status = getQuestionStatus(q, answers[i]);
                   const isFlagged = flagged.has(i);
 
-                let btnStyles = "";
-                if (status === 'correct') {
-                  btnStyles = "border-emerald-500/30 dark:border-emerald-500/20 bg-emerald-500/10 dark:bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 font-semibold";
-                } else if (status === 'incorrect') {
-                  btnStyles = "border-rose-500/30 dark:border-rose-500/20 bg-rose-500/10 dark:bg-rose-500/15 text-rose-600 dark:text-rose-400 font-semibold";
-                } else if (status === 'pending') {
-                  btnStyles = "border-sky-500/30 dark:border-sky-500/20 bg-sky-500/10 dark:bg-sky-500/15 text-sky-600 dark:text-sky-400 font-semibold";
-                } else {
-                  if (isFlagged) {
-                    btnStyles = "border-amber-500/30 dark:border-amber-500/20 bg-amber-500/10 dark:bg-amber-500/15 text-amber-600 dark:text-amber-400 font-semibold";
-                  } else {
-                    btnStyles = "border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.03] text-gray-400 dark:text-white/40 hover:bg-gray-100 dark:hover:bg-white/[0.07]";
-                  }
-                }
+                const btnClass = (() => {
+                  if (status === 'correct') return "border-emerald-500/30 dark:border-emerald-500/20 bg-emerald-500/10 dark:bg-emerald-500/15 text-emerald-600 dark:text-emerald-400 font-semibold";
+                  if (status === 'incorrect') return "border-rose-500/30 dark:border-rose-500/20 bg-rose-500/10 dark:bg-rose-500/15 text-rose-600 dark:text-rose-400 font-semibold";
+                  if (status === 'pending') return "border-sky-500/30 dark:border-sky-500/20 bg-sky-500/10 dark:bg-sky-500/15 text-sky-600 dark:text-sky-400 font-semibold";
+                  if (isFlagged) return "border-amber-500/30 dark:border-amber-500/20 bg-amber-500/10 dark:bg-amber-500/15 text-amber-600 dark:text-amber-400 font-semibold";
+                  return "border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.03] text-gray-400 dark:text-white/40 hover:bg-gray-100 dark:hover:bg-white/[0.07]";
+                })();
 
                 const isActive = i === current;
                 const activeRing = isActive
@@ -1060,7 +1053,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                     whileHover={{ scale: 1.08 }}
                     whileTap={{ scale: 0.95 }}
                     transition={{ type: "spring", stiffness: 400, damping: 17 }}
-                    className={`relative flex h-11 items-center justify-center rounded-lg border text-xs font-medium tabular-nums transition-all cursor-pointer ${btnStyles} ${activeRing}`}
+                    className={`relative flex h-11 items-center justify-center rounded-lg border text-xs font-medium tabular-nums transition-all cursor-pointer ${btnClass} ${activeRing}`}
                   >
                     {i + 1}
                     {isFlagged && <Flag size={9} className="absolute -end-1 -top-1 fill-amber-500 text-amber-500" />}

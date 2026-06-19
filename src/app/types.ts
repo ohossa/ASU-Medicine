@@ -41,6 +41,15 @@ export interface SubQuestion {
   acceptedAnswers?: string[][];
 }
 
+/** Union of all possible answer shapes stored in answers map */
+export type QuizAnswer =
+  | number                                          // MCQ / truefalse selection
+  | boolean                                         // truefalse (legacy)
+  | { text: string; selfGrade?: 'correct' | 'incorrect' }  // essay
+  | { inputs: string[]; submitted: boolean }        // fillblank
+  | { scrambled: string[]; matches: Record<string, string>; submitted: boolean } // matching
+  | Record<string, number | { text?: string; inputs?: string[]; selfGrade?: string; submitted?: boolean }>; // case/casestudy sub-answers
+
 export interface Question {
   id: string | number;
   type: 'mcq' | 'truefalse' | 'matching' | 'essay' | 'case' | 'casestudy' | 'fillblank';
