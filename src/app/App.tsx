@@ -23,7 +23,6 @@ const LazyLevelUpOverlay = lazy(() => import('./components/LevelUpOverlay').then
 const LazyInteractiveBackground = lazy(() => import('./components/ui/InteractiveBackground').then(m => ({ default: m.InteractiveBackground })));
 const LazyConfettiManager = lazy(() => import('./components/ConfettiManager').then(m => ({ default: m.ConfettiManager })));
 const LazySoundManagerComponent = lazy(() => import('./components/SoundManagerComponent').then(m => ({ default: m.SoundManagerComponent })));
-import CustomCursor from './components/CustomCursor';
 
 // Eager mode aliases (using lazy loading under the hood to prevent entry bundle bloat)
 const EagerLevelUpOverlay = LazyLevelUpOverlay;
@@ -113,6 +112,7 @@ function QuizFlowWrapper({
   handleSelectChapter,
   handleSelectHistory,
   customUserButton,
+  selectedYear,
   handleSelectSubject,
   handleQuickStart,
   quizPayload,
@@ -139,6 +139,7 @@ function QuizFlowWrapper({
   handleSelectChapter: (c: ChapterData) => void;
   handleSelectHistory: (res: QuizResult, source: 'chapters' | 'history') => void;
   customUserButton: React.ReactNode;
+  selectedYear: number | null;
   handleSelectSubject: (s: SubjectData, q: Question[]) => void;
   handleQuickStart: (q: Question[]) => void;
   quizPayload: QuizPayload | null;
@@ -909,12 +910,10 @@ function MainApp() {
               activeChapters={activeChapters}
               studyModeNameMap={studyModeNameMap}
               selectedChapter={selectedChapter}
-              setSelectedChapter={setSelectedChapter}
               handleSelectChapter={handleSelectChapter}
               handleSelectHistory={handleSelectHistory}
               customUserButton={customUserButton}
               selectedYear={selectedYear}
-              selectedSemester={selectedSemester}
               handleSelectSubject={handleSelectSubject}
               handleQuickStart={handleQuickStart}
               quizPayload={quizPayload}
