@@ -6,7 +6,7 @@ export function ConfettiManager() {
     const unsubscribe = pulse.subscribe(() => {
       const snapshot = pulse.getSnapshot();
       const [mood] = snapshot.split(':');
-      if (mood === 'celebrate') {
+      if (mood === 'celebrate' || mood === 'correct' || mood === 'streak') {
         import('../lib/celebrate').then(({ celebrate }) => {
           celebrate();
         });

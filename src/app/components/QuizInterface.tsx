@@ -3,6 +3,7 @@ import FocusTrap from 'focus-trap-react';
 import TimerSettingsPanel from '../components/TimerSettingsPanel';
 import { motion, AnimatePresence } from 'motion/react';
 import { useAuth } from '@clerk/clerk-react';
+import { fx } from '../lib/pulseEngine';
 import { useSoundEngine } from '../hooks/useSoundEngine';
 import { checkAnswerCorrect } from '../utils/quiz';
 import {
@@ -130,7 +131,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
   const { t, language } = useLanguage();
   const isRTL = language === 'ar';
   const { getToken } = useAuth();
-  const { trigger: playSound } = useSoundEngine();
+  const { trigger: playSound, muted, toggleMute } = useSoundEngine();
 
   const [announcement, setAnnouncement] = useState('');
   const [direction, setDirection] = useState(1);
@@ -177,10 +178,16 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
         : checkAnswerCorrect(question, answers[current])
   ) : false;
 
-  /* Sound effect on answer reveal */
+  /* Sound effect + pulse + confetti on answer reveal */
   useEffect(() => {
     if (answered && question) {
-      playSound(isCorrect ? "correct" : "wrong");
+      if (isCorrect) {
+        fx.correct(0.5, 0.5, 1);
+        playSound('correct');
+      } else {
+        fx.wrong(0.5, 0.5);
+        playSound('wrong');
+      }
     }
   }, [answered, isCorrect, question, playSound]);
 
@@ -495,12 +502,13 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                 setShowEssayAnswer(true);
                 requestAnimationFrame(() => {
                   setTimeout(() => {
-                  const answerEl = document.querySelector('[data-essay-answer]');
+                    const answerEl = document.querySelector('[data-essay-answer]');
                     if (answerEl) {
-                      answerEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                      setTimeout(() => window.scrollBy({ top: 180, behavior: 'smooth' }), 280);
+                      const targetY = answerEl.getBoundingClientRect().top + window.scrollY - 32;
+                      const extra = Math.min(400, window.innerHeight * 0.35);
+                      window.scrollTo({ top: targetY + extra, behavior: 'smooth' });
                     }
-                  }, 150);
+                  }, 120);
                 });
               }}
               className="px-6 py-2.5 bg-gray-950 dark:bg-white text-white dark:text-black rounded-full text-xs font-bold tracking-wide hover:scale-[0.98] transition-transform hover:bg-gray-900 dark:hover:bg-gray-100 btn-press"
@@ -1021,7 +1029,9 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
               <TimerSettingsPanel
                 mode={timerMode}
                 urgency={timerUrgency}
+                muted={muted}
                 onChangeMode={setTimerMode}
+                onToggleMute={toggleMute}
               />
               <div className="mt-3 border-t border-gray-200 dark:border-white/[0.08] pt-3">
                 <p className="mb-1.5 font-semibold text-gray-900 dark:text-white/80">Star Legend</p>

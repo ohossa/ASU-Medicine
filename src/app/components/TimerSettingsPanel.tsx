@@ -3,10 +3,12 @@ export type TimerMode = 'off' | 'practice';
 interface TimerSettingsPanelProps {
   mode: TimerMode;
   urgency?: 'normal' | 'warning' | 'critical';
+  muted?: boolean;
   onChangeMode: (m: TimerMode) => void;
+  onToggleMute?: () => void;
 }
 
-export default function TimerSettingsPanel({ mode, urgency = 'normal', onChangeMode }: TimerSettingsPanelProps) {
+export default function TimerSettingsPanel({ mode, urgency = 'normal', muted = false, onChangeMode, onToggleMute }: TimerSettingsPanelProps) {
   return (
     <div className="rounded-xl border border-gray-200 dark:border-white/[0.08] bg-gray-50 dark:bg-white/[0.03] p-3.5">
       <div className="flex items-center justify-between mb-2.5">
@@ -42,6 +44,30 @@ export default function TimerSettingsPanel({ mode, urgency = 'normal', onChangeM
           </button>
         ))}
       </div>
+
+      {onToggleMute && (
+        <button
+          onClick={onToggleMute}
+          className="mt-2.5 flex w-full items-center justify-center gap-1.5 rounded-lg border border-gray-200 dark:border-white/[0.08] bg-white dark:bg-black/20 py-1.5 text-[11px] font-medium transition-all hover:bg-gray-50 dark:hover:bg-white/[0.06]"
+        >
+          {muted ? (
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-gray-400 dark:text-white/40">
+              <path d="M11 5L6 9H2v6h4l5 4V5z"/>
+              <line x1="23" y1="9" x2="17" y2="15"/>
+              <line x1="17" y1="9" x2="23" y2="15"/>
+            </svg>
+          ) : (
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-gray-600 dark:text-white/70">
+              <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+              <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
+              <path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
+            </svg>
+          )}
+          <span className={muted ? 'text-gray-400 dark:text-white/40' : 'text-gray-600 dark:text-white/70'}>
+            {muted ? 'Unmute sounds' : 'Mute sounds'}
+          </span>
+        </button>
+      )}
 
       <p className="mt-2.5 text-[10px] leading-relaxed text-gray-500 dark:text-white/40">
         {mode === 'off'

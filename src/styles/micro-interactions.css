@@ -10,7 +10,7 @@
   border-left: 3px solid transparent;
 }
 .option-hover:hover {
-  border-left-color: var(--color-accent, rgba(255,255,255,0.3));
+  border-left-color: rgba(245, 158, 11, 0.5);
 }
 .option-selected {
   border-left-color: var(--color-accent, rgba(255,255,255,0.5));
