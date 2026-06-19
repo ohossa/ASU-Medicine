@@ -975,7 +975,6 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
       {/* Shortcuts popover */}
       <AnimatePresence>
         {showShortcuts && (
-          <FocusTrap>
             <motion.div
               initial={{ opacity: 0, y: -8 }}
               animate={{ opacity: 1, y: 0 }}
@@ -1007,14 +1006,13 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                 </div>
               </div>
             </motion.div>
-          </FocusTrap>
         )}
       </AnimatePresence>
 
       {/* Question palette grid */}
       <AnimatePresence>
         {showGrid && (
-          <FocusTrap>
+          <FocusTrap focusTrapOptions={{ clickOutsideDeactivates: true }}>
             <motion.div
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
@@ -1111,7 +1109,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
             </div>
 
             {/* Question card */}
-            <div className="rounded-2xl border border-gray-200 dark:border-white/[0.07] bg-card p-5 shadow-sm dark:shadow-[0_8px_40px_rgba(0,0,0,0.4)] backdrop-blur-xl sm:p-7">
+            <div className="rounded-2xl border border-gray-200 dark:border-white/[0.07] bg-card p-5 shadow-sm dark:shadow-[0_8px_40px_rgba(0,0,0,0.4)] sm:p-7">
               {question.type !== 'fillblank' && question.type !== 'case' && question.type !== 'casestudy' && renderFormattedText(
                 question.text,
                 "mb-6 text-base font-semibold leading-relaxed text-gray-900 dark:text-white sm:text-lg text-left whitespace-pre-line"
