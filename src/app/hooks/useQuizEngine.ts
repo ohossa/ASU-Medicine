@@ -1,15 +1,15 @@
-import { useState, useEffect, useCallback, useMemo, useRef } from 'react';
+import { useState, useEffect, useCallback, useMemo, useRef, useLayoutEffect } from 'react';
 import { checkAnswerCorrect } from '../utils/quiz';
 import type { Question } from '../types';
 
 export interface QuizSession {
   questions: Question[];
-  answers: Record<number, any>;
+  answers: Record<number, unknown>;
   elapsedSeconds: number;
   flaggedQuestions: Set<number>;
 }
 
-function isAnswered(q: Question, a: any): boolean {
+function isAnswered(q: Question, a: unknown): boolean {
   if (a === undefined || a === null) return false;
   switch (q.type) {
     case 'essay':
@@ -29,7 +29,7 @@ function isAnswered(q: Question, a: any): boolean {
 
 function getAnswerState(
   q: Question,
-  ans: any
+  ans: unknown
 ): 'unanswered' | 'answered' | 'submitted' | 'correct' | 'incorrect' {
   if (ans === undefined || ans === null) return 'unanswered';
 
@@ -93,12 +93,12 @@ function getDefaultEstimatedSeconds(q: Question): number {
 export function useQuizEngine(params: {
   questions: Question[];
   onFinish: (session: QuizSession) => void;
-  initialAnswers?: Record<number, any>;
+  initialAnswers?: Record<number, unknown>;
 }) {
   const { questions, onFinish, initialAnswers } = params;
 
   const [current, setCurrent] = useState(0);
-  const [answers, setAnswers] = useState<Record<number, any>>(() => initialAnswers ?? {});
+  const [answers, setAnswers] = useState<Record<number, unknown>>(() => initialAnswers ?? {});
   const [flagged, setFlagged] = useState<Set<number>>(new Set());
   const [elapsedSeconds, setElapsedSeconds] = useState(0);
   const [finished, setFinished] = useState(false);
@@ -107,8 +107,8 @@ export function useQuizEngine(params: {
   const [showShortcuts, setShowShortcuts] = useState(false);
   const [revealed, setRevealed] = useState<Set<number>>(new Set());
 
-  const answersRef = useRef(answers);
-  answersRef.current = answers;
+  const answersRef = useRef<Record<number, unknown>>(initialAnswers ?? {});
+  useLayoutEffect(() => { answersRef.current = answers; }, [answers]);
 
   const currentQuestion = questions[current] ?? questions[0];
   const total = questions.length;
@@ -210,7 +210,7 @@ export function useQuizEngine(params: {
   }, [current]);
 
   const setAnswer = useCallback(
-    (value: any) => {
+    (value: unknown) => {
       setAnswers((prev) => ({ ...prev, [current]: value }));
     },
     [current]
