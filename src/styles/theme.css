@@ -468,6 +468,22 @@
   }
 }
 
+/* ── Reduced Motion ────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01s !important;
+    scroll-behavior: auto !important;
+  }
+  .flip-card-inner {
+    transition: none !important;
+  }
+  .custom-cursor {
+    display: none !important;
+  }
+}
+
 /* ── Loading Spinner ────────────────────────────────────── */
 @keyframes spin {
   to { transform: rotate(360deg); }

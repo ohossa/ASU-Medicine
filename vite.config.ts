@@ -1,3 +1,4 @@
+import { VitePWA } from 'vite-plugin-pwa';
 import { defineConfig } from 'vite'
 import path from 'path'
 import tailwindcss from '@tailwindcss/vite'
@@ -33,6 +34,13 @@ export default defineConfig({
     figmaAssetResolver(),
     react(),
     tailwindcss(),
+    VitePWA({
+      registerType: 'autoUpdate',
+      workbox: {
+        globPatterns: ['**/*.{js,css,html,png,svg,ico,woff2,mp3}'],
+        maximumFileSizeToCacheInBytes: 5 * 1024 * 1024, // 5MB to handle large quiz bank chunks
+      },
+    }),
     ...(process.env.ANALYZE ? [visualizer({ open: true, gzipSize: true, brotliSize: true, filename: 'stats.html' })] : []),
   ],
   resolve: {

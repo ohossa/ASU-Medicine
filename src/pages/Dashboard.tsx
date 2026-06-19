@@ -62,6 +62,17 @@ export default function Dashboard({ userButton, onOpenTrackerSelector }: Dashboa
     applySubjectTheme('year' + YEARS[activeIdx].id);
   }, [activeIdx]);
 
+  /* Route prefetching for faster navigation */
+  useEffect(() => {
+    const links = ['/year-2', '/marks-calculator'];
+    links.forEach(path => {
+      const link = document.createElement('link');
+      link.rel = 'prefetch';
+      link.href = path;
+      document.head.appendChild(link);
+    });
+  }, []);
+
   /* Swipe: pointer-based so it works on touch + mouse */
   const onPointerDown = (e: React.PointerEvent) => { dragX.current = e.clientX; };
   const onPointerUp = useCallback((e: React.PointerEvent) => {

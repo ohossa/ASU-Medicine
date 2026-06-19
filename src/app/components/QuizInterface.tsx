@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import FocusTrap from 'focus-trap-react';
 import '../lib/3dCardFlip.css';
 import { motion, AnimatePresence } from 'motion/react';
 import { useAuth } from '@clerk/clerk-react';
@@ -129,6 +130,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
   const isRTL = language === 'ar';
   const { getToken } = useAuth();
 
+  const [announcement, setAnnouncement] = useState('');
   const [direction, setDirection] = useState(1);
   const [essayDraft, setEssayDraft] = useState('');
   const [showEssayAnswer, setShowEssayAnswer] = useState(false);
@@ -169,6 +171,22 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
       setFlipped(true);
     }
   }, [answered]);
+
+  /* aria-live announcement on answer reveal */
+  useEffect(() => {
+    if (!answered || !question) return;
+    const lang = language === 'ar' ? 'ar' : 'en';
+    const isCorrect = question.type === 'essay'
+      ? answers[current]?.selfGrade === 'correct'
+      : question.type === 'case' || question.type === 'casestudy'
+        ? getQuestionStatus(question, answers[current]) === 'correct'
+        : checkAnswerCorrect(question, answers[current]);
+    const correctLabel = question.options?.[question.correctIndex ?? -1] ?? '';
+    const msg = isCorrect
+      ? `${lang === 'ar' ? 'صحيح' : 'Correct'}. ${question.explanation?.slice(0, 80) || ''}`
+      : `${lang === 'ar' ? 'خاطئ' : 'Incorrect'}. ${lang === 'ar' ? 'الإجابة الصحيحة كانت' : 'The correct answer was'} ${correctLabel}`;
+    setAnnouncement(msg);
+  }, [answered, current, question, answers, language]);
 
   /* Sync temporary states on index change */
   useEffect(() => {
@@ -898,6 +916,11 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
 
   return (
     <div dir={isRTL ? 'rtl' : 'ltr'} className="min-h-screen text-foreground antialiased transition-colors duration-300">
+      {/* aria-live quiz announcer */}
+      <div aria-live="polite" aria-atomic="true" className="sr-only" data-testid="quiz-announcer">
+        {announcement}
+      </div>
+
       {/* Ambient glow */}
       <div className="pointer-events-none fixed inset-0 overflow-hidden">
         <div className={`absolute -top-32 start-1/3 h-80 w-80 rounded-full blur-[130px] opacity-20 ${style.bg}`} />
@@ -957,51 +980,58 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
       {/* Shortcuts popover */}
       <AnimatePresence>
         {showShortcuts && (
-          <motion.div
-            initial={{ opacity: 0, y: -8 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -8 }}
-            className="fixed end-4 top-16 z-40 w-64 rounded-xl border border-gray-200 dark:border-white/[0.08] bg-white/95 dark:bg-[#161618]/95 p-4 text-xs shadow-2xl backdrop-blur-xl text-gray-800 dark:text-white"
-          >
-            <p className="mb-2 font-semibold text-gray-900 dark:text-white/80">Keyboard shortcuts</p>
-            {[['← →', 'Navigate questions'], ['1–9', 'Select MCQ / True-False option'], ['Enter', 'Reveal essay answer'], ['1 / 2', 'Correct / Wrong (essay)'], ['F', 'Flag question'], ['G', 'Toggle grid']].map(([k, d]) => (
-              <div key={k} className="flex items-center justify-between py-1 text-gray-500 dark:text-white/50">
-                <span>{d}</span>
-                <kbd className="rounded border border-gray-200 dark:border-white/15 bg-gray-100 dark:bg-white/[0.06] px-1.5 py-0.5 font-mono text-[10px] text-gray-700 dark:text-white/70">{k}</kbd>
+          <FocusTrap>
+            <motion.div
+              initial={{ opacity: 0, y: -8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -8 }}
+              role="dialog"
+              aria-modal="true"
+              className="fixed end-4 top-16 z-40 w-64 rounded-xl border border-gray-200 dark:border-white/[0.08] bg-white/95 dark:bg-[#161618]/95 p-4 text-xs shadow-2xl backdrop-blur-xl text-gray-800 dark:text-white"
+            >
+              <p className="mb-2 font-semibold text-gray-900 dark:text-white/80">Keyboard shortcuts</p>
+              {[['← →', 'Navigate questions'], ['1–9', 'Select MCQ / True-False option'], ['Enter', 'Reveal essay answer'], ['1 / 2', 'Correct / Wrong (essay)'], ['F', 'Flag question'], ['G', 'Toggle grid']].map(([k, d]) => (
+                <div key={k} className="flex items-center justify-between py-1 text-gray-500 dark:text-white/50">
+                  <span>{d}</span>
+                  <kbd className="rounded border border-gray-200 dark:border-white/15 bg-gray-100 dark:bg-white/[0.06] px-1.5 py-0.5 font-mono text-[10px] text-gray-700 dark:text-white/70">{k}</kbd>
+                </div>
+              ))}
+              <div className="mt-3 border-t border-gray-200 dark:border-white/[0.08] pt-3">
+                <p className="mb-1.5 font-semibold text-gray-900 dark:text-white/80">Star Legend</p>
+                <div className="flex items-center gap-3 py-0.5 text-gray-500 dark:text-white/50">
+                  <span className="text-amber-500 dark:text-amber-400 font-bold">★</span>
+                  <span>Repeated 2-3 times</span>
+                </div>
+                <div className="flex items-center gap-3 py-0.5 text-gray-500 dark:text-white/50">
+                  <span className="text-amber-500 dark:text-amber-400 font-bold">★★</span>
+                  <span>Repeated 4-5 times</span>
+                </div>
+                <div className="flex items-center gap-3 py-0.5 text-gray-500 dark:text-white/50">
+                  <span className="text-amber-500 dark:text-amber-400 font-bold">★★★</span>
+                  <span>Repeated 6+ times</span>
+                </div>
               </div>
-            ))}
-            <div className="mt-3 border-t border-gray-200 dark:border-white/[0.08] pt-3">
-              <p className="mb-1.5 font-semibold text-gray-900 dark:text-white/80">Star Legend</p>
-              <div className="flex items-center gap-3 py-0.5 text-gray-500 dark:text-white/50">
-                <span className="text-amber-500 dark:text-amber-400 font-bold">★</span>
-                <span>Repeated 2-3 times</span>
-              </div>
-              <div className="flex items-center gap-3 py-0.5 text-gray-500 dark:text-white/50">
-                <span className="text-amber-500 dark:text-amber-400 font-bold">★★</span>
-                <span>Repeated 4-5 times</span>
-              </div>
-              <div className="flex items-center gap-3 py-0.5 text-gray-500 dark:text-white/50">
-                <span className="text-amber-500 dark:text-amber-400 font-bold">★★★</span>
-                <span>Repeated 6+ times</span>
-              </div>
-            </div>
-          </motion.div>
+            </motion.div>
+          </FocusTrap>
         )}
       </AnimatePresence>
 
       {/* Question palette grid */}
       <AnimatePresence>
         {showGrid && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            className="overflow-hidden border-b border-gray-200 dark:border-white/[0.06] bg-gray-50/30 dark:bg-white/[0.02]"
-          >
-            <div className="mx-auto grid max-w-4xl grid-cols-8 gap-2 px-4 py-4 sm:grid-cols-12 sm:px-6">
-              {questions.map((q, i) => {
-                const status = getQuestionStatus(q, answers[i]);
-                const isFlagged = flagged.has(i);
+          <FocusTrap>
+            <motion.div
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: 'auto' }}
+              exit={{ opacity: 0, height: 0 }}
+              role="dialog"
+              aria-modal="false"
+              className="overflow-hidden border-b border-gray-200 dark:border-white/[0.06] bg-gray-50/30 dark:bg-white/[0.02]"
+            >
+              <div className="mx-auto grid max-w-4xl grid-cols-8 gap-2 px-4 py-4 sm:grid-cols-12 sm:px-6">
+                {questions.map((q, i) => {
+                  const status = getQuestionStatus(q, answers[i]);
+                  const isFlagged = flagged.has(i);
 
                 let btnStyles = "";
                 if (status === 'correct') {
@@ -1038,7 +1068,8 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                 );
               })}
             </div>
-          </motion.div>
+            </motion.div>
+          </FocusTrap>
         )}
       </AnimatePresence>
 
