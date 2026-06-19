@@ -369,17 +369,20 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
           const selected = value === i;
           const isCorrect = i === q.correctIndex;
 
-          let btnClass = 'group flex w-full items-center gap-3.5 rounded-xl border px-4 py-3.5 text-start transition-all duration-200 btn-press option-hover ';
+          let btnClass = 'group flex w-full items-center gap-3.5 rounded-xl border px-4 py-3.5 text-start transition-all duration-200 btn-press ';
+          if (!hasAnswered) {
+            btnClass += 'option-hover ';
+          }
           let badgeClass = 'flex h-7 w-7 shrink-0 items-center justify-center rounded-full border text-xs font-semibold transition-colors ';
 
           if (!hasAnswered) {
             btnClass += 'border-gray-200 dark:border-white/[0.07] bg-gray-50/50 dark:bg-white/[0.025] hover:bg-gray-100 dark:hover:bg-white/[0.06] text-gray-800 dark:text-white';
             badgeClass += 'border-gray-300 dark:border-white/15 text-gray-500 dark:text-white/40 bg-gray-100/50 dark:bg-white/[0.03]';
           } else if (isCorrect) {
-            btnClass += 'border-emerald-500/40 bg-emerald-500/10 text-emerald-600 dark:text-emerald-300 option-selected';
+            btnClass += 'border-emerald-500/40 bg-emerald-500/10 text-emerald-600 dark:text-emerald-300';
             badgeClass += 'border-emerald-500/40 text-emerald-600 dark:text-emerald-300 bg-emerald-500/10';
           } else if (selected && !isCorrect) {
-            btnClass += 'border-rose-500/40 bg-rose-500/10 text-rose-600 dark:text-rose-300 wrong-shake';
+            btnClass += 'border-rose-500/40 bg-rose-500/10 text-rose-600 dark:text-rose-300';
             badgeClass += 'border-rose-500/40 text-rose-600 dark:text-rose-300 bg-rose-500/10';
           } else {
             btnClass += 'border-gray-100 dark:border-white/[0.04] bg-gray-50/30 dark:bg-white/[0.01] text-gray-400 dark:text-white/30 cursor-not-allowed';
@@ -429,7 +432,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
           } else if (isCorrect) {
             btnClass += 'border-emerald-500/40 bg-emerald-500/10 text-emerald-600 dark:text-emerald-300';
           } else if (selected && !isCorrect) {
-            btnClass += 'border-rose-500/40 bg-rose-500/10 text-rose-600 dark:text-rose-300 wrong-shake';
+            btnClass += 'border-rose-500/40 bg-rose-500/10 text-rose-600 dark:text-rose-300';
           } else {
             btnClass += 'border-gray-200 dark:border-white/[0.04] bg-gray-50/30 dark:bg-white/[0.01] text-gray-400 dark:text-white/20 cursor-not-allowed';
           }
@@ -753,17 +756,20 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                       const selected = subVal === oIdx;
                       const isCorrectOpt = oIdx === subQ.correctIndex;
 
-                      let optClass = 'group flex w-full items-center gap-3.5 rounded-xl border px-4 py-3 text-start transition-all duration-200 btn-press option-hover ';
+                      let optClass = 'group flex w-full items-center gap-3.5 rounded-xl border px-4 py-3 text-start transition-all duration-200 btn-press ';
+                      if (!isCompleted) {
+                        optClass += 'option-hover ';
+                      }
                       let badgeClass = 'flex h-6 w-6 shrink-0 items-center justify-center rounded-full border text-xs font-semibold transition-colors ';
 
                       if (!isCompleted) {
                         optClass += 'border-gray-200 dark:border-white/[0.07] bg-gray-50/50 dark:bg-white/[0.025] hover:bg-gray-100 dark:hover:bg-white/[0.06] text-gray-800 dark:text-white';
                         badgeClass += 'border-gray-300 dark:border-white/15 text-gray-500 dark:text-white/40 bg-gray-100/50 dark:bg-white/[0.03]';
                       } else if (isCorrectOpt) {
-                        optClass += 'border-emerald-500/40 bg-emerald-500/10 text-emerald-600 dark:text-emerald-300 option-selected';
+                        optClass += 'border-emerald-500/40 bg-emerald-500/10 text-emerald-600 dark:text-emerald-300';
                         badgeClass += 'border-emerald-500/40 text-emerald-600 dark:text-emerald-300 bg-emerald-500/10';
                       } else if (selected && !isCorrectOpt) {
-                        optClass += 'border-rose-500/40 bg-rose-500/10 text-rose-600 dark:text-rose-300 wrong-shake';
+                        optClass += 'border-rose-500/40 bg-rose-500/10 text-rose-600 dark:text-rose-300';
                         badgeClass += 'border-rose-500/40 text-rose-600 dark:text-rose-300 bg-rose-500/10';
                       } else {
                         optClass += 'border-gray-100 dark:border-white/[0.04] bg-gray-50/30 dark:bg-white/[0.01] text-gray-400 dark:text-white/30 cursor-not-allowed';
