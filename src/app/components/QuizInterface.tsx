@@ -51,9 +51,9 @@ const questionVariants = {
 const isAnswered = (q: Question, a: QuizAnswer | undefined): boolean => {
   if (a === undefined || a === null) return false;
   switch (q.type) {
-    case 'essay':
+  case 'essay':
       return typeof a === 'object'
-        ? (a.text?.trim().length > 0 || a.selfGrade !== undefined)
+        ? a.selfGrade !== undefined
         : typeof a === 'string' && a.trim().length > 0;
     case 'fillblank':
       return typeof a === 'object' && a.submitted === true;

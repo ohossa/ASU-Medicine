@@ -2,7 +2,7 @@ import { useCallback, useRef, useState, useEffect } from 'react';
 import { useNavigate } from 'react-router';
 import {
   Activity, Heart, Calculator, Search, GraduationCap,
-  Lock, ChevronRight, ArrowRight,
+  Lock, ArrowRight,
 } from 'lucide-react';
 import { PortalShell } from '../app/components/PortalShell';
 import { applySubjectTheme } from '../app/theme/subjectThemes';
@@ -11,7 +11,6 @@ import { CardShell } from '../components/cards/PremiumCards';
 import { motion } from 'motion/react';
 import { pageVariants } from '../app/lib/motion';
 import DashboardCard from '../app/components/DashboardCard';
-import ModuleCompletionRing from '../app/components/ui/ModuleCompletionRing';
 
 /* ────────────────────────────────────────────────
    DATA — real content, no lorem ipsum
@@ -249,8 +248,8 @@ export default function Dashboard({ userButton, onOpenTrackerSelector }: Dashboa
             { label: 'P3', pct: 85, color: '#34d399' },
             { label: 'R', pct: 44, color: '#fbbf24' },
           ].map((mod) => (
-            <DashboardCard key={mod.label} className="flex flex-col items-center gap-3">
-              <ModuleCompletionRing pct={mod.pct} size={56} color={mod.color} />
+            <DashboardCard key={mod.label} className="flex flex-col items-center gap-3 py-6">
+              <span className="text-2xl font-bold tabular-nums" style={{ color: mod.color }}>{mod.pct}%</span>
               <span className="text-xs font-semibold text-white/60">{mod.label}</span>
             </DashboardCard>
           ))}
