@@ -28,7 +28,7 @@ export function useCloudSync() {
     if (!isSignedIn || isSyncing.current) return;
     isSyncing.current = true;
     try {
-      const payload: Record<string, any> = {};
+      const payload: Record<string, unknown> = {};
       
       // Collect standard keys
       STORAGE_KEYS.forEach(key => {

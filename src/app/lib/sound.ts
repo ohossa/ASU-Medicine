@@ -6,7 +6,7 @@ class SoundManager {
   muted = localStorage.getItem('fx.muted') === '1';
 
   private ac() {
-    if (!this.ctx) this.ctx = new (window.AudioContext || (window as any).webkitAudioContext)();
+    if (!this.ctx) this.ctx = new (window.AudioContext || (window as unknown as { webkitAudioContext?: typeof AudioContext }).webkitAudioContext)();
     return this.ctx;
   }
   setMuted(m: boolean) { this.muted = m; localStorage.setItem('fx.muted', m ? '1' : '0'); }

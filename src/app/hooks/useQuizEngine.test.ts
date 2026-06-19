@@ -22,7 +22,7 @@ describe('useQuizEngine', () => {
     vi.useRealTimers();
   });
 
-  const createHook = (overrides?: { questions?: Question[]; initialAnswers?: Record<number, any> }) => {
+  const createHook = (overrides?: { questions?: Question[]; initialAnswers?: Record<number, string | number | boolean | { selfGrade: string }> }) => {
     const questions = overrides?.questions ?? [
       makeQ({ type: 'mcq', correctIndex: 1, options: ['A', 'B', 'C'] }),
       makeQ({ type: 'truefalse', correctIndex: 0 }),

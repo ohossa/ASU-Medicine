@@ -110,7 +110,7 @@ export interface QuizSession {
   chapter: ChapterData;
   subject: SubjectData | null; // null = Quick Start All
   questions: Question[];
-  answers: Record<number, any>; // questionIndex → user answer details (supporting essays/cases)
+  answers: Record<number, string | number>; // questionIndex → user answer details (supporting essays/cases)
   elapsedSeconds: number;
 }
 

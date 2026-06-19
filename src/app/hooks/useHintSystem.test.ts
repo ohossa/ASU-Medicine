@@ -10,7 +10,16 @@ describe('useHintSystem (chat interface)', () => {
     global.fetch = fetchMock;
   });
 
-  const makeProps = (overrides: any = {}) => ({
+  interface MakeProps {
+    question: Parameters<typeof useHintSystem>[0]['question'];
+    userAnswer?: unknown;
+    correctAnswer?: string;
+    studentWrongAnswer?: string;
+    getToken: () => Promise<string | null>;
+    enabled?: boolean;
+  }
+
+  const makeProps = (overrides: Partial<MakeProps> = {}) => ({
     question: {
       id: 1,
       text: 'What is CN VI?',
