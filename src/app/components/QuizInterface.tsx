@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useLayoutEffect, useRef } from 'react';
 import FocusTrap from 'focus-trap-react';
-import TimerSettingsPanel, { TimerMode } from '../components/TimerSettingsPanel';
+import TimerSettingsPanel from '../components/TimerSettingsPanel';
 import { motion, AnimatePresence } from 'motion/react';
 import { useAuth } from '@clerk/clerk-react';
 import { useSoundEngine } from '../hooks/useSoundEngine';
@@ -137,7 +137,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
   const [essayDraft, setEssayDraft] = useState('');
   const [showEssayAnswer, setShowEssayAnswer] = useState(false);
   const [confirmFinish, setConfirmFinish] = useState(false);
-  const [timerMode, setTimerMode] = useState<TimerMode>('practice');
+  const [timerMode, setTimerMode] = useState<'off' | 'practice' | 'exam'>('practice');
 
   const engine = useQuizEngine({
     questions,

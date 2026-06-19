@@ -10,7 +10,6 @@ import { pulse } from '../app/lib/pulseEngine';
 import { CardShell } from '../components/cards/PremiumCards';
 import { motion } from 'motion/react';
 import { pageVariants } from '../app/lib/motion';
-import DashboardCard from '../app/components/DashboardCard';
 
 /* ────────────────────────────────────────────────
    DATA — real content, no lorem ipsum
@@ -239,21 +238,6 @@ export default function Dashboard({ userButton, onOpenTrackerSelector }: Dashboa
             />
           ))}
         </div>
-
-        {/* ── PROGRESS STATS ───────────────────────────────────── */}
-        <section className="mt-14 grid grid-cols-2 gap-4 sm:grid-cols-4">
-          {[
-            { label: 'MCNS', pct: 72, color: '#818cf8' },
-            { label: 'MEM', pct: 58, color: '#f87171' },
-            { label: 'P3', pct: 85, color: '#34d399' },
-            { label: 'R', pct: 44, color: '#fbbf24' },
-          ].map((mod) => (
-            <DashboardCard key={mod.label} className="flex flex-col items-center gap-3 py-6">
-              <span className="text-2xl font-bold tabular-nums" style={{ color: mod.color }}>{mod.pct}%</span>
-              <span className="text-xs font-semibold text-white/60">{mod.label}</span>
-            </DashboardCard>
-          ))}
-        </section>
 
         {/* ── TOOLS ───────────────────────────────────────────── */}
         <hr className="my-14 border-zinc-200/70 dark:border-white/[0.06]" />
