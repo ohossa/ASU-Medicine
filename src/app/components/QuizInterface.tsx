@@ -193,6 +193,14 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
     }
   }, [answered, isCorrect, question, playSound, current]);
 
+  /* Smooth scroll to essay answer when revealed */
+  const essayAnswerRef = useRef<HTMLDivElement | null>(null);
+  useEffect(() => {
+    if (showEssayAnswer && essayAnswerRef.current) {
+      essayAnswerRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }, [showEssayAnswer]);
+
   /* aria-live announcement on answer reveal */
   useLayoutEffect(() => {
     if (!answered || !question) return;
@@ -521,7 +529,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
         )}
 
         {(showEssayAnswer || isCompleted) && (
-          <div data-essay-answer className="space-y-4 rounded-xl border border-emerald-500/20 bg-emerald-50/50 dark:bg-emerald-500/[0.03] p-4 text-start">
+          <div ref={essayAnswerRef} data-essay-answer className="space-y-4 rounded-xl border border-emerald-500/20 bg-emerald-50/50 dark:bg-emerald-500/[0.03] p-4 text-start">
             <div className="flex items-center gap-2">
               <Lightbulb size={16} className="text-emerald-500 dark:text-emerald-400" />
               <span className="text-xs font-bold text-emerald-600 dark:text-emerald-400 uppercase tracking-wider">

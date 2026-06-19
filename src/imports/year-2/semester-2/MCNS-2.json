@@ -30719,15 +30719,15 @@
               "type": "mcq",
               "lecture": 1,
               "text": "Ventral external arcuate fibers arise from:",
-              "explanation": "The correct answer is (a) Accessory cuneate nucleus. Among the listed options this is the choice that best matches the stem, and the other options are incorrect distractors.",
-              "keyConcept": "Ventral external arcuate fibers arise from",
+              "explanation": "Ventral external arcuate fibers arise from the ARCUATE NUCLEUS (not the cuneate nucleus which projects to cerebellum via dorsal external arcuate fibers). The arcuate nucleus receives corticofugal fibers and projects to the cerebellum.",
+              "keyConcept": "Ventral external arcuate fibers arise from the arcuate nucleus",
               "options": [
                 "Accessory cuneate nucleus",
                 "Cuneate nucleus",
                 "Arcuate nucleus",
                 "Pontine nucleus"
               ],
-              "correctIndex": 0
+              "correctIndex": 2
             },
             {
               "id": "mcns2-ch4-histology-q18",
