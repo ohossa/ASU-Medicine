@@ -1020,9 +1020,8 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
               ))}
               <TimerSettingsPanel
                 mode={timerMode}
-                questionCount={questions.length}
+                urgency={timerUrgency}
                 onChangeMode={setTimerMode}
-                onChangeQuestionCount={() => {}}
               />
               <div className="mt-3 border-t border-gray-200 dark:border-white/[0.08] pt-3">
                 <p className="mb-1.5 font-semibold text-gray-900 dark:text-white/80">Star Legend</p>
