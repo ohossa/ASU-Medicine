@@ -959,15 +959,17 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
           </div>
 
           <div className="flex items-center gap-2">
-            <span className={`flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-xs tabular-nums transition-colors ${
-              timerUrgency === 'critical'
-                ? "border-red-400/50 bg-red-50/50 dark:bg-red-500/10 text-red-600 dark:text-red-400 animate-pulse"
-                : timerUrgency === 'warning'
-                  ? "border-amber-400/50 bg-amber-50/50 dark:bg-amber-500/10 text-amber-600 dark:text-amber-400"
-                  : "border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.04] text-gray-600 dark:text-white/70"
-            }`}>
-              <Clock size={13} /> {formatTime(totalElapsed)}
-            </span>
+            {timerMode !== 'off' && (
+              <span className={`flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-xs tabular-nums transition-colors ${
+                timerUrgency === 'critical'
+                  ? "border-red-400/50 bg-red-50/50 dark:bg-red-500/10 text-red-600 dark:text-red-400 animate-pulse"
+                  : timerUrgency === 'warning'
+                    ? "border-amber-400/50 bg-amber-50/50 dark:bg-amber-500/10 text-amber-600 dark:text-amber-400"
+                    : "border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.04] text-gray-600 dark:text-white/70"
+              }`}>
+                <Clock size={13} /> {formatTime(totalElapsed)}
+              </span>
+            )}
             <button
               onClick={toggleShortcuts}
               aria-label="Keyboard shortcuts"
