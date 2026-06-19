@@ -142,11 +142,11 @@ describe('useQuizEngine', () => {
       expect(result.current.answerState).toBe('incorrect');
     });
 
-    it('answerState is submitted for essay with text but no grade', () => {
+    it('answerState is unanswered for essay with text but no grade', () => {
       const { result } = createHook();
       act(() => result.current.goTo(3));
       act(() => result.current.setAnswer({ text: 'Some essay' }));
-      expect(result.current.answerState).toBe('submitted');
+      expect(result.current.answerState).toBe('unanswered');
     });
 
     it('answerState is correct for self-graded correct essay', () => {

@@ -14,7 +14,7 @@ function isAnswered(q: Question, a: unknown): boolean {
   switch (q.type) {
     case 'essay':
       return typeof a === 'object'
-        ? (a.text?.trim().length > 0 || a.selfGrade !== undefined)
+        ? a.selfGrade !== undefined
         : typeof a === 'string' && a.trim().length > 0;
     case 'fillblank':
       return typeof a === 'object' && a.submitted === true;
@@ -93,9 +93,10 @@ function getDefaultEstimatedSeconds(q: Question): number {
 export function useQuizEngine(params: {
   questions: Question[];
   onFinish: (session: QuizSession) => void;
+  timerMode?: 'off' | 'practice' | 'exam';
   initialAnswers?: Record<number, unknown>;
 }) {
-  const { questions, onFinish, initialAnswers } = params;
+  const { questions, onFinish, timerMode = 'practice', initialAnswers } = params;
 
   const [current, setCurrent] = useState(0);
   const [answers, setAnswers] = useState<Record<number, unknown>>(() => initialAnswers ?? {});
@@ -115,12 +116,12 @@ export function useQuizEngine(params: {
 
   /* Timer */
   useEffect(() => {
-    if (showGrid || showShortcuts) return;
+    if (timerMode === 'off' || showGrid || showShortcuts) return;
     const id = setInterval(() => {
       setElapsedSeconds((prev) => prev + 1);
     }, 1000);
     return () => clearInterval(id);
-  }, [showGrid, showShortcuts]);
+  }, [timerMode, showGrid, showShortcuts]);
 
   /* Matching init on navigate */
   useEffect(() => {

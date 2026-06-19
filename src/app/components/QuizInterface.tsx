@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useLayoutEffect, useRef } from 'react';
 import FocusTrap from 'focus-trap-react';
+import TimerSettingsPanel, { TimerMode } from '../components/TimerSettingsPanel';
 import { motion, AnimatePresence } from 'motion/react';
 import { useAuth } from '@clerk/clerk-react';
 import { useSoundEngine } from '../hooks/useSoundEngine';
@@ -136,6 +137,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
   const [essayDraft, setEssayDraft] = useState('');
   const [showEssayAnswer, setShowEssayAnswer] = useState(false);
   const [confirmFinish, setConfirmFinish] = useState(false);
+  const [timerMode, setTimerMode] = useState<TimerMode>('practice');
 
   const engine = useQuizEngine({
     questions,
@@ -143,7 +145,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
   });
   const {
     current, answers, flagged, elapsedSeconds: totalElapsed,
-    showGrid, showShortcuts, progress, answeredCount,
+    showGrid, showShortcuts, progress, answeredCount, timerUrgency,
     blankInputs, blankSubmitted,
     goTo, toggleFlag, setAnswer,
     toggleGrid, toggleShortcuts,
@@ -957,7 +959,13 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
           </div>
 
           <div className="flex items-center gap-2">
-            <span className="flex items-center gap-1.5 rounded-full border border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.04] px-3 py-1.5 text-xs tabular-nums text-gray-600 dark:text-white/70">
+            <span className={`flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-xs tabular-nums transition-colors ${
+              timerUrgency === 'critical'
+                ? "border-red-400/50 bg-red-50/50 dark:bg-red-500/10 text-red-600 dark:text-red-400 animate-pulse"
+                : timerUrgency === 'warning'
+                  ? "border-amber-400/50 bg-amber-50/50 dark:bg-amber-500/10 text-amber-600 dark:text-amber-400"
+                  : "border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.04] text-gray-600 dark:text-white/70"
+            }`}>
               <Clock size={13} /> {formatTime(totalElapsed)}
             </span>
             <button
@@ -1008,6 +1016,12 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                   <kbd className="rounded border border-gray-200 dark:border-white/15 bg-gray-100 dark:bg-white/[0.06] px-1.5 py-0.5 font-mono text-[10px] text-gray-700 dark:text-white/70">{k}</kbd>
                 </div>
               ))}
+              <TimerSettingsPanel
+                mode={timerMode}
+                questionCount={questions.length}
+                onChangeMode={setTimerMode}
+                onChangeQuestionCount={() => {}}
+              />
               <div className="mt-3 border-t border-gray-200 dark:border-white/[0.08] pt-3">
                 <p className="mb-1.5 font-semibold text-gray-900 dark:text-white/80">Star Legend</p>
                 <div className="flex items-center gap-3 py-0.5 text-gray-500 dark:text-white/50">
