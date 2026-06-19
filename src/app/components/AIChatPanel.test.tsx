@@ -1,4 +1,4 @@
-import { describe, it, expect, vi, beforeEach } from 'vitest';
+import { describe, it, expect, vi } from 'vitest';
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
 import { AIChatPanel } from './AIChatPanel';
 import type { ChatMessage } from '../hooks/useHintSystem';
@@ -12,7 +12,7 @@ function makeMessages(overrides: Partial<ChatMessage>[] = []): ChatMessage[] {
   }));
 }
 
-function makeProps(overrides: any = {}) {
+function makeProps(overrides: Partial<Parameters<typeof AIChatPanel>[0]> = {}) {
   return {
     visible: false,
     messages: [] as ChatMessage[],

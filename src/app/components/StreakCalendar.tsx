@@ -16,8 +16,9 @@ function getIntensity(dateStr: string, studyDays: string[]): number {
 }
 
 export default function StreakCalendar({ studyDays }: StreakCalendarProps) {
-  const now = new Date();
   const weeks = useMemo(() => {
+     
+    const now = new Date();
     const result: { date: string; intensity: number }[][] = [];
     for (let w = 0; w < WEEKS; w++) {
       const week: typeof result[0] = [];

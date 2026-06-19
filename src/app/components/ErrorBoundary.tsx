@@ -32,7 +32,7 @@ export class ErrorBoundary extends Component<Props, State> {
       localStorage.clear();
       sessionStorage.clear();
       window.location.href = '/';
-    } catch (e) {
+    } catch {
       window.location.reload();
     }
   };

@@ -352,7 +352,6 @@ export function AnalyticsDashboard({
     
     dates.sort((a, b) => b.getTime() - a.getTime());
     
-    let streakCount = 0;
     const today = new Date();
     today.setHours(0,0,0,0);
     
@@ -370,7 +369,7 @@ export function AnalyticsDashboard({
     }
     
     let current = latest;
-    streakCount = 1;
+    let streakCount = 1;
     for (let i = 1; i < dates.length; i++) {
       const next = dates[i];
       const diff = (current.getTime() - next.getTime()) / (1000 * 60 * 60 * 24);

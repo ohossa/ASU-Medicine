@@ -12,7 +12,24 @@ import { PortalShell } from "./PortalShell";
 
 /* ================================ Theme Resolvers ========================== */
 
-const getT = (themeMode: "light" | "dark") => {
+interface ThemeColors {
+  bg: string;
+  glass: string;
+  glassBorder: string;
+  hairline: string;
+  glassShadow: string;
+  text: string;
+  sub: string;
+  faint: string;
+  teal: string;
+  purple: string;
+  amber: string;
+  red: string;
+  font: string;
+  mono: string;
+}
+
+const getT = (themeMode: "light" | "dark"): ThemeColors => {
   const isDark = themeMode === "dark";
   return {
     bg: "transparent",
@@ -29,7 +46,7 @@ const getT = (themeMode: "light" | "dark") => {
     red: isDark ? "#f87171" : "#dc2626",
     font: `-apple-system, "SF Pro Display", "SF Pro Text", Inter, sans-serif`,
     mono: `"SF Mono", ui-monospace, Menlo, monospace`,
-  } as const;
+  };
 };
 
 /* ============================== Case Data Definitions ======================= */
@@ -209,7 +226,7 @@ const item = {
   animate: { y: 0, opacity: 1, transition: { duration: 0.4, ease: [0.22, 1, 0.36, 1] } },
 };
 
-const sevColor = (s: Severity, T: any) => (s === "critical" ? T.red : s === "warn" ? T.amber : T.teal);
+const sevColor = (s: Severity, T: ThemeColors) => (s === "critical" ? T.red : s === "warn" ? T.amber : T.teal);
 
 /* ============================== Primitives ================================ */
 

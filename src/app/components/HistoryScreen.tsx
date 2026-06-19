@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { ArrowLeft, Clock, Activity, AlertCircle, ArrowRight, RotateCcw, Calendar, CheckCircle2, ChevronRight } from 'lucide-react';
+import { ArrowLeft, Clock, Activity, AlertCircle, ArrowRight, Calendar, CheckCircle2, ChevronRight } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { getQuizHistory } from '../utils/storage';
 import type { QuizResult } from '../utils/storage';
@@ -42,7 +42,7 @@ export function HistoryScreen({ onBack, onSelectHistory, userButton }: HistorySc
 
   // Group history by relative day
   const groupedHistory = history.reduce((groups, item) => {
-    const d = new Date(item.date || item.timestamp || Date.now());
+    const d = new Date(item.date || item.timestamp || 0);
     if (isNaN(d.getTime())) return groups; // skip invalid dates
     const dayName = getRelativeDayName(d, language);
     if (!groups[dayName]) groups[dayName] = [];

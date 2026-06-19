@@ -56,7 +56,11 @@ export function ECGMonitor({ height = 48 }: { height?: number }) {
       for (let px = 0; px <= W; px++) {
         const p = ((px / W) * cycles + phase) % 1;
         const y = beat(p) * height;
-        px === 0 ? ctx.moveTo(px, y) : ctx.lineTo(px, y);
+        if (px === 0) {
+          ctx.moveTo(px, y);
+        } else {
+          ctx.lineTo(px, y);
+        }
       }
       ctx.stroke();
     };

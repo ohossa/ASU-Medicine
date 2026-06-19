@@ -8,9 +8,9 @@
  * Features collapsible panel that starts compact and expands on interaction.
  */
 
-import React, { useCallback, useRef, useEffect, useState } from 'react';
+import React, { useCallback, useRef, useEffect, useLayoutEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { CornerRightUp, Loader2, Sparkles, ChevronDown, ChevronUp, Trash2 } from 'lucide-react';
+import { CornerRightUp, Loader2, Sparkles, ChevronDown, ChevronUp } from 'lucide-react';
 import type { ChatMessage } from '../hooks/useHintSystem';
 
 interface AIChatPanelProps {
@@ -86,8 +86,9 @@ export function AIChatPanel({
 }: AIChatPanelProps) {
   // Detect language - import lazily to avoid circular deps
   const [lang, setLang] = useState<'en' | 'ar'>('en');
-  useEffect(() => {
+  useLayoutEffect(() => {
     const stored = localStorage.getItem('language');
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setLang(stored === 'ar' ? 'ar' : 'en');
     const handler = () => {
       const pref = localStorage.getItem('language');

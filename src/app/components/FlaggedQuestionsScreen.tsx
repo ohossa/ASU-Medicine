@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { ArrowLeft, ChevronRight, Trash2, Flag, Check, X, Eye, EyeOff, AlertCircle } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { getFlaggedQuestions, removeFlaggedQuestion } from '../utils/storage';
@@ -21,11 +21,7 @@ interface FlaggedItem {
 
 export function FlaggedQuestionsScreen({ onBack, onPracticeQuiz, userButton }: FlaggedQuestionsScreenProps) {
   const { language, t } = useLanguage();
-  const [flaggedItems, setFlaggedItems] = useState<FlaggedItem[]>([]);
-  const [revealedAnswers, setRevealedAnswers] = useState<Record<string | number, boolean>>({});
-  const [selectedMcqAnswers, setSelectedMcqAnswers] = useState<Record<string | number, number>>({});
-
-  const loadFlaggedQuestions = () => {
+  const [flaggedItems, setFlaggedItems] = useState<FlaggedItem[]>(() => {
     const ids = getFlaggedQuestions();
     const items: FlaggedItem[] = [];
     ids.forEach((id) => {
@@ -40,14 +36,10 @@ export function FlaggedQuestionsScreen({ onBack, onPracticeQuiz, userButton }: F
         });
       }
     });
-    setFlaggedItems(items);
-  };
-
-  useEffect(() => {
-    loadFlaggedQuestions();
-    window.addEventListener('storage', loadFlaggedQuestions);
-    return () => window.removeEventListener('storage', loadFlaggedQuestions);
-  }, []);
+    return items;
+  });
+  const [revealedAnswers, setRevealedAnswers] = useState<Record<string | number, boolean>>({});
+  const [selectedMcqAnswers, setSelectedMcqAnswers] = useState<Record<string | number, number>>({});
 
   const handleUnflag = (id: string | number) => {
     removeFlaggedQuestion(id);
