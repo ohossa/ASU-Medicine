@@ -1,9 +1,11 @@
 import React, { useState, useEffect, useLayoutEffect, useRef } from 'react';
 import FocusTrap from 'focus-trap-react';
-import TimerSettingsPanel from '../components/TimerSettingsPanel';
+import TimerSettingsPanel, { type TimerMode } from '../components/TimerSettingsPanel';
 import { motion, AnimatePresence } from 'motion/react';
 import { useAuth } from '@clerk/clerk-react';
 import { fx } from '../lib/pulseEngine';
+import type { QuizSessionSave } from '../hooks/useQuizSession';
+import { useQuizSession } from '../hooks/useQuizSession';
 import { useSoundEngine } from '../hooks/useSoundEngine';
 import { checkAnswerCorrect } from '../utils/quiz';
 import {
@@ -127,16 +129,17 @@ const wordCount = (s: string) => (s.trim() ? s.trim().split(/\s+/).length : 0);
 
 /* ------------------------------ Main component ----------------------------- */
 
-export function QuizInterface({ chapter, subject, questions, onBack, onFinish, userButton }: Props) {
+export function QuizInterface({ chapter, subject, questions, onBack, onFinish, userButton, savedSession }: Props & { savedSession?: QuizSessionSave }) {
   const { t, language } = useLanguage();
   const isRTL = language === 'ar';
   const { getToken } = useAuth();
   const { trigger: playSound, muted, toggleMute } = useSoundEngine();
+  const { save: saveQuizSession } = useQuizSession();
 
   const [announcement, setAnnouncement] = useState('');
   const [direction, setDirection] = useState(1);
   const [essayDraft, setEssayDraft] = useState('');
-  const [showEssayAnswer, setShowEssayAnswer] = useState(false);
+  const [showEssayAnswer, setShowEssayAnswer] = useState(() => savedSession?.showEssayAnswer ?? false);
   const [confirmFinish, setConfirmFinish] = useState(false);
   const [timerMode, setTimerMode] = useState<'off' | 'practice' | 'exam'>('practice');
 
@@ -192,6 +195,31 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
       }
     }
   }, [answered, isCorrect, question, playSound, current]);
+
+  /* Auto-save quiz session every 2 seconds */
+  const quizDataRef = useRef({ current: 0, answers: {} as Record<number, unknown>, elapsedSeconds: 0, flagged: [] as number[], finished: false, timerMode: 'practice' as TimerMode, showEssayAnswer: false });
+  useLayoutEffect(() => {
+    quizDataRef.current = { current, answers, elapsedSeconds, flagged: [...flagged], finished, timerMode, showEssayAnswer };
+  });
+  useEffect(() => {
+    const timer = setInterval(() => {
+      const d = quizDataRef.current;
+      if (d.finished) return;
+      saveQuizSession({
+        chapterId: chapter.id,
+        subjectName: subject?.name ?? 'all',
+        current: d.current,
+        answers: d.answers,
+        elapsedSeconds: d.elapsedSeconds,
+        flagged: d.flagged,
+        finished: d.finished,
+        timerMode: d.timerMode,
+        showEssayAnswer: d.showEssayAnswer,
+        essayDrafts: {},
+      });
+    }, 2000);
+    return () => clearInterval(timer);
+  }, [chapter.id, subject?.name, saveQuizSession]);
 
   /* Smooth scroll to essay answer when revealed */
   const essayAnswerRef = useRef<HTMLDivElement | null>(null);

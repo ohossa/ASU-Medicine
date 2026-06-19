@@ -62,6 +62,9 @@ import type { QuizResult } from './utils/storage';
 import { SignedIn, SignedOut, UserButton, useUser } from '@clerk/clerk-react';
 const LoginScreen = lazy(() => import('./components/LoginScreen').then(m => ({ default: m.LoginScreen })));
 import LoadingScreen from './components/LoadingScreen';
+import { useQuizSession } from './hooks/useQuizSession';
+import type { QuizSessionSave } from './hooks/useQuizSession';
+import QuizResumeCard from './components/QuizResumeCard';
 import { useCloudSync } from './hooks/useCloudSync';
 import { YearSelectionModal } from './components/YearSelectionModal';
 import {
@@ -76,6 +79,7 @@ interface QuizPayload {
   chapter: ChapterData;
   subject: SubjectData | null;
   questions: Question[];
+  savedSession?: QuizSessionSave;
 }
 
 interface ResultPayload {
@@ -319,6 +323,7 @@ function MainApp() {
   // Quiz states
   const [selectedChapter, setSelectedChapter] = useState<ChapterData | null>(null);
   const [quizPayload, setQuizPayload] = useState<QuizPayload | null>(null);
+  const [resumePayload, setResumePayload] = useState<QuizSessionSave | null>(null);
   const [resultPayload, setResultPayload] = useState<ResultPayload | null>(null);
   
   // UI States
@@ -327,6 +332,7 @@ function MainApp() {
 
 
   // Navigation history tracker
+  const { load: loadQuizSession, clear: clearQuizSession } = useQuizSession();
   const isRestoringHistoryRef = useRef(false);
 
   // ── 2. Helpers and Data Functions ─────────────────────────────────────────────
@@ -508,6 +514,11 @@ function MainApp() {
   };
 
   const handleSelectSubject = (subject: SubjectData, questions: Question[]) => {
+    const saved = loadQuizSession(selectedChapter!.id, subject.name);
+    if (saved && !saved.finished) {
+      setResumePayload(saved);
+      return;
+    }
     transitionTo(() => {
       setQuizPayload({ chapter: selectedChapter!, subject, questions });
       setScreen('quiz');
@@ -515,6 +526,11 @@ function MainApp() {
   };
 
   const handleQuickStart = (questions: Question[]) => {
+    const saved = loadQuizSession(selectedChapter!.id, 'all');
+    if (saved && !saved.finished) {
+      setResumePayload(saved);
+      return;
+    }
     transitionTo(() => {
       setQuizPayload({ chapter: selectedChapter!, subject: null, questions });
       setScreen('quiz');
@@ -1011,6 +1027,32 @@ function MainApp() {
 
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
+
+        {resumePayload && (
+          <QuizResumeCard
+            open={!!resumePayload}
+            current={resumePayload.current}
+            total={Object.keys(resumePayload.answers).length}
+            elapsedSeconds={resumePayload.elapsedSeconds}
+            answeredCount={Object.values(resumePayload.answers).filter(a => a !== undefined && a !== null).length}
+            onResume={() => {
+              if (!resumePayload || !selectedChapter) return;
+              const subject = selectedChapter.subjects.find(s => s.name === resumePayload.subjectName) || null;
+              const questions = subject ? subject.questions : selectedChapter.subjects.flatMap(s => s.questions);
+              transitionTo(() => {
+                setQuizPayload({ chapter: selectedChapter, subject, questions, savedSession: resumePayload });
+                setResumePayload(null);
+                setScreen('quiz');
+              });
+            }}
+            onRestart={() => {
+              if (!selectedChapter || !resumePayload) return;
+              clearQuizSession(selectedChapter.id, resumePayload.subjectName);
+              setResumePayload(null);
+            }}
+          />
+        )}
+
       </AnimatePresence>
     </main>
 

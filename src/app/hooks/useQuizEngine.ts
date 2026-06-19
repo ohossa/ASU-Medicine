@@ -93,19 +93,32 @@ function getDefaultEstimatedSeconds(q: Question): number {
 export function useQuizEngine(params: {
   questions: Question[];
   onFinish: (session: QuizSession) => void;
-  timerMode?: 'off' | 'practice' | 'exam';
+  timerMode?: 'off' | 'practice';
+  targetQuestionCount?: number;
   initialAnswers?: Record<number, unknown>;
+  initialCurrent?: number;
+  initialElapsedSeconds?: number;
+  initialFlagged?: number[];
+  initialFinished?: boolean;
+  initialConfirmFinish?: boolean;
+  initialShowGrid?: boolean;
+  initialShowShortcuts?: boolean;
 }) {
-  const { questions, onFinish, timerMode = 'practice', initialAnswers } = params;
+  const {
+    questions, onFinish, timerMode = 'practice',
+    initialAnswers, initialCurrent = 0, initialElapsedSeconds = 0,
+    initialFlagged, initialFinished = false, initialConfirmFinish = false,
+    initialShowGrid = false, initialShowShortcuts = false,
+  } = params;
 
-  const [current, setCurrent] = useState(0);
+  const [current, setCurrent] = useState(initialCurrent);
   const [answers, setAnswers] = useState<Record<number, unknown>>(() => initialAnswers ?? {});
-  const [flagged, setFlagged] = useState<Set<number>>(new Set());
-  const [elapsedSeconds, setElapsedSeconds] = useState(0);
-  const [finished, setFinished] = useState(false);
-  const [confirmFinish, setConfirmFinish] = useState(false);
-  const [showGrid, setShowGrid] = useState(false);
-  const [showShortcuts, setShowShortcuts] = useState(false);
+  const [flagged, setFlagged] = useState<Set<number>>(() => new Set(initialFlagged ?? []));
+  const [elapsedSeconds, setElapsedSeconds] = useState(initialElapsedSeconds);
+  const [finished, setFinished] = useState(initialFinished);
+  const [confirmFinish, setConfirmFinish] = useState(initialConfirmFinish);
+  const [showGrid, setShowGrid] = useState(initialShowGrid);
+  const [showShortcuts, setShowShortcuts] = useState(initialShowShortcuts);
   const [revealed, setRevealed] = useState<Set<number>>(new Set());
 
   const answersRef = useRef<Record<number, unknown>>(initialAnswers ?? {});
