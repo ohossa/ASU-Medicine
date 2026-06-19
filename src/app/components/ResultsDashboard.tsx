@@ -3,7 +3,6 @@ import { checkAnswerCorrect } from '../utils/quiz';
 import { norm } from '../utils/string';
 import {
   ArrowLeft,
-  ChevronRight,
   CheckCircle2,
   Check,
   X,
@@ -18,21 +17,20 @@ import {
   ArrowRight,
   LayoutGrid,
 } from 'lucide-react';
-import type { ChapterData, SubjectData, Question, SubjectColor } from '../types';
+import type { ChapterData, SubjectData, Question, SubjectColor, QuizAnswer, SubQuestion } from '../types';
 import { subjectStyles, formatTime } from '../types';
-import { useLanguage } from '../context/LanguageContext';
-import { useTheme } from '../context/ThemeContext';
+import { useLanguage } from '../hooks/useLanguage';
+import { useTheme } from '../hooks/useTheme';
 import { celebrate } from '../lib/celebrate';
 import { pulse } from '../lib/pulseEngine';
-import { getConfettiColors } from '../lib/confettiConfig';
-import { useProgress } from '../store/progress';
+import { useProgress } from '../hooks/useProgress';
 import { MatchingQuestion } from './MatchingQuestion';
 
 interface Props {
   chapter: ChapterData;
   subject: SubjectData | null;
   questions: Question[];
-  answers: Record<number, any>;
+  answers: Record<number, QuizAnswer>;
   elapsedSeconds: number;
   flaggedQuestions: Set<number>;
   onRetake: () => void;
@@ -227,8 +225,7 @@ export function ResultsDashboard({
   onBackToSubjects,
   userButton,
 }: Props) {
-  const { t, language } = useLanguage();
-  const { isDark } = useTheme();
+  const { language } = useLanguage();
   const isRTL = language === 'ar';
 
   const progressStore = useProgress();
@@ -269,12 +266,12 @@ export function ResultsDashboard({
     } else if (percentage >= 75) {
       progressStore.unlock('high_score');
     }
-  }, [correctCount, totalCount, percentage, progressStore]);
+  }, [correctCount, totalCount, percentage, progressStore, subject?.id]);
 
   const toggleSet = (setter: React.Dispatch<React.SetStateAction<Set<number>>>, i: number) =>
     setter(prev => {
       const next = new Set(prev);
-      next.has(i) ? next.delete(i) : next.add(i);
+      if (next.has(i)) { next.delete(i); } else { next.add(i); }
       return next;
     });
 
@@ -289,7 +286,7 @@ export function ResultsDashboard({
 
   /* ------------------------- Per-type review renderers ------------------------- */
 
-  const renderOptions = (q: Question, ans: any) => (
+  const renderOptions = (q: Question, ans: QuizAnswer) => (
     <div className="mt-4 space-y-2">
       {(q.options ?? (q.type === 'truefalse' ? ['True', 'False'] : [])).map((opt: string, oi: number) => {
         const isCorrect = oi === q.correctIndex;
@@ -320,7 +317,7 @@ export function ResultsDashboard({
     </div>
   );
 
-  const renderEssay = (q: Question, ans: any) => {
+  const renderEssay = (q: Question, ans: QuizAnswer) => {
     const selfGrade = ans?.selfGrade;
     return (
       <div className="mt-4 space-y-4">
@@ -355,7 +352,7 @@ export function ResultsDashboard({
     );
   };
 
-  const renderFillBlank = (q: Question, ans: any) => {
+  const renderFillBlank = (q: Question, ans: QuizAnswer) => {
     const inputs: string[] = ans?.inputs ?? [];
     const blanks: string[] = q.blanks ?? [];
     const parts = (q.text ?? '').split('___');
@@ -402,7 +399,7 @@ export function ResultsDashboard({
     );
   };
 
-  const renderMatching = (q: Question, ans: any) => {
+  const renderMatching = (q: Question, ans: QuizAnswer) => {
     return (
       <div className="mt-4">
         <MatchingQuestion
@@ -417,7 +414,7 @@ export function ResultsDashboard({
     );
   };
 
-  const renderCase = (q: Question, ans: any) => (
+  const renderCase = (q: Question, ans: QuizAnswer) => (
     <div className="mt-4 space-y-4">
       {(q.caseText ?? q.description ?? q.text) && (
         <div className="rounded-xl border border-sky-500/20 bg-sky-500/[0.03] dark:bg-sky-500/[0.05] p-4 text-start">
@@ -427,7 +424,7 @@ export function ResultsDashboard({
           <p className="text-sm leading-relaxed text-gray-700 dark:text-white/75">{q.caseText ?? q.description ?? q.text}</p>
         </div>
       )}
-      {(q.subQuestions ?? []).map((sq: any, si: number) => {
+      {(q.subQuestions ?? []).map((sq: SubQuestion, si: number) => {
         const userAns = ans?.[sq.id];
         const isSubMcq = sq.type === 'mcq';
         const isSubFill = sq.type === 'fillblank';
@@ -516,7 +513,7 @@ export function ResultsDashboard({
     </div>
   );
 
-  const renderAnswerReview = (q: Question, ans: any) => {
+  const renderAnswerReview = (q: Question, ans: QuizAnswer) => {
     switch (q.type) {
       case 'mcq':
       case 'truefalse': return renderOptions(q, ans);

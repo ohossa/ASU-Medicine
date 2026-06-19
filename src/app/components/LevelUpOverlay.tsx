@@ -1,6 +1,6 @@
 import { AnimatePresence, motion } from 'motion/react';
-import { useEffect, useState } from 'react';
-import { useProgress } from '../store/progress';
+import { useLayoutEffect, useState } from 'react';
+import { useProgress } from '../hooks/useProgress';
 import { spring } from '../lib/motion';
 import { celebrate } from '../lib/celebrate';
 
@@ -13,8 +13,9 @@ export function LevelUpOverlay({ moduleCode, isPerfect }: LevelUpOverlayProps) {
   const { level, lastLevelUp } = useProgress();
   const [show, setShow] = useState(false);
   
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (!lastLevelUp) return;
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- must set show=true before render to avoid invisible frame
     setShow(true);
     if (isPerfect && moduleCode) {
       celebrate({ perfect: true, moduleCode });

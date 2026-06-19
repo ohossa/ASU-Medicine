@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useLayoutEffect, useMemo } from 'react';
 import {
   ArrowLeft,
   ChevronRight,
@@ -26,7 +26,7 @@ import type { LucideIcon } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import type { ChapterData, SubjectData, SubjectColor, Question } from '../types';
 import { subjectStyles } from '../types';
-import { useLanguage } from '../context/LanguageContext';
+import { useLanguage } from '../hooks/useLanguage';
 import { getQuizHistory } from '../utils/storage';
 import type { QuizResult } from '../utils/storage';
 import { applySubjectTheme } from '../theme/subjectThemes';
@@ -211,9 +211,10 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart, 
   const [trackerData, setTrackerData] = useState<Record<number, ChapterState>>({});
 
   /* Exam history */
-  useEffect(() => {
+  useLayoutEffect(() => {
     try {
       const all = getQuizHistory();
+      // eslint-disable-next-line react-hooks/set-state-in-effect -- data hydration from localStorage must happen before paint
       setHistory((Array.isArray(all) ? all : []).filter((r): r is QuizResult => r !== null && typeof r === 'object'));
     } catch {
       setHistory([]);
@@ -221,7 +222,7 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart, 
   }, []);
 
   /* Syllabus tracker data: scan all asu_study_tracker_* keys, use the first map containing this chapter */
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (typeof window === 'undefined') return;
     try {
       for (let i = 0; i < localStorage.length; i++) {
@@ -242,6 +243,7 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart, 
             const id = Number(k);
             if (Number.isFinite(id) && v && typeof v === 'object') map[id] = v;
           }
+          // eslint-disable-next-line react-hooks/set-state-in-effect -- data hydration from localStorage must happen before paint
           setTrackerData(map);
           return;
         }

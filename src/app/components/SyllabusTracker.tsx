@@ -1,11 +1,11 @@
-import { useState, useEffect, useRef, useCallback } from 'react';
+import { useState, useEffect, useLayoutEffect, useRef, useCallback } from 'react';
 import { Check, Edit3, X, Calendar, ChevronDown, ChevronUp, BookOpen, Layers, Target, GraduationCap } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import type { ChapterData, SubjectData, SubjectColor } from '../types';
 import { subjectStyles } from '../types';
-import { useLanguage } from '../context/LanguageContext';
+import { useLanguage } from '../hooks/useLanguage';
 import { triggerCloudSync } from '../hooks/useCloudSync';
-import { useProgress } from '../store/progress';
+import { useProgress } from '../hooks/useProgress';
 
 /* ------------------------------------------------------------------ */
 /* Types                                                               */
@@ -157,7 +157,8 @@ export function SyllabusTracker({ moduleCode, moduleName, chapters, onClose }: P
   const toastTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   /* Re-hydrate when module or chapter list changes */
-  useEffect(() => {
+  useLayoutEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- data hydration from localStorage must happen before paint
     setData(hydrate(typeof window !== 'undefined' ? localStorage.getItem(storageKey) : null));
   }, [storageKey, hydrate]);
 
@@ -217,7 +218,7 @@ export function SyllabusTracker({ moduleCode, moduleName, chapters, onClose }: P
       const current = data[chapterId] ?? emptyChapterState();
       const nextVal = !current[field];
       
-      let lectures = { ...(current.lectures ?? {}) };
+      const lectures = { ...(current.lectures ?? {}) };
       if (field === 'studied' || field === 'revised') {
         const chapter = chapters.find((c) => c.id === chapterId);
         if (chapter) {

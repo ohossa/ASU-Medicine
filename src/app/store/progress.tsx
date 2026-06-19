@@ -1,13 +1,10 @@
-import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from 'react';
+import { useEffect, useMemo, useState, type ReactNode } from 'react';
 import { pulse } from '../lib/pulseEngine';
 import { FX } from '../lib/fx.config';
 
-export interface ProgressState {
-  xp: number;
-  level: number;
-  bestStreak: number;
-  achievements: string[];
-}
+// Re-export for consumers that import from this file
+export { ProgressContext, type ProgressState } from './ProgressContextValue';
+import { ProgressContext, type ProgressState } from './ProgressContextValue';
 
 const LEVEL_STEP = 500; // xp per level
 const KEY = 'asu.progress.v1';
@@ -16,7 +13,7 @@ function load(): ProgressState {
   try {
     const data = localStorage.getItem(KEY);
     if (data) return JSON.parse(data);
-  } catch {}
+  } catch { /* no-op */ }
   return { xp: 0, level: 1, bestStreak: 0, achievements: [] };
 }
 
@@ -26,8 +23,6 @@ interface Ctx extends ProgressState {
   unlock: (id: string) => void;
   lastLevelUp: number; // timestamp; overlay listens to this
 }
-
-const ProgressContext = createContext<Ctx | null>(null);
 
 export function ProgressProvider({ children, onSync }: { children: ReactNode; onSync?: (s: ProgressState) => void }) {
   const [state, setState] = useState<ProgressState>(load);
@@ -60,8 +55,4 @@ export function ProgressProvider({ children, onSync }: { children: ReactNode; on
   return <ProgressContext.Provider value={api}>{children}</ProgressContext.Provider>;
 }
 
-export const useProgress = () => {
-  const c = useContext(ProgressContext);
-  if (!c) throw new Error('useProgress must be used within ProgressProvider');
-  return c;
-};
+

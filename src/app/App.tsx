@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef, useMemo, Suspense, lazy } from 'react';
+import { useState, useEffect, useRef, useMemo, Suspense, lazy, useLayoutEffect } from 'react';
 import { BrowserRouter, Routes, Route, Navigate, useParams, useNavigate, useLocation } from 'react-router';
 import safeStorage from './utils/safeStorage';
 import { ProgressProvider } from './store/progress';
@@ -33,31 +33,17 @@ import { AnimatePresence } from 'motion/react';
 import {
   GraduationCap,
   BookOpen,
-  Calendar,
-  Lock,
-  Sparkles,
-  ArrowRight,
-  ChevronRight,
   Info,
   Activity,
   Layers,
-  ArrowLeft,
-  Settings,
   Mail,
-  Sun,
-  Moon,
-  Clock,
-  Award,
   ExternalLink,
   Flag,
   Globe,
   Check,
-  Home,
-  Heart,
-  Search,
-  Calculator
+  Home
 } from 'lucide-react';
-import type { ChapterData, SubjectData, Question, Screen, SubjectColor } from './types';
+import type { ChapterData, SubjectData, Question, Screen, QuizAnswer } from './types';
 const ChapterSelect = lazy(() => import('./components/ChapterSelect').then(m => ({ default: m.ChapterSelect })));
 const QuizInterface = lazy(() => import('./components/QuizInterface').then(m => ({ default: m.QuizInterface })));
 const ResultsDashboard = lazy(() => import('./components/ResultsDashboard').then(m => ({ default: m.ResultsDashboard })));
@@ -69,15 +55,12 @@ const QuestionSearch = lazy(() => import('./components/QuestionSearch').then(m =
 const MarksCalculator = lazy(() => import('./components/MarksCalculator').then(m => ({ default: m.MarksCalculator })));
 const SyllabusTrackerPage = lazy(() => import('../pages/SyllabusTrackerPage').then(m => ({ default: m.SyllabusTrackerPage })));
 
-import { ThemeProvider, useTheme } from './context/ThemeContext';
-import { ThemeToggle } from './components/ThemeToggle';
-import { LanguageProvider, useLanguage } from './context/LanguageContext';
-import { LanguageToggle } from './components/LanguageToggle';
-import { StackedCarousel } from './components/ui/StackedCarousel';
+import { ThemeProvider } from './context/ThemeContext';
+import { useTheme } from './hooks/useTheme';
+import { useLanguage } from './hooks/useLanguage';
 import { saveQuizResult, getQuizHistory } from './utils/storage';
 import type { QuizResult } from './utils/storage';
 import { SignedIn, SignedOut, UserButton, useUser } from '@clerk/clerk-react';
-import { dark } from '@clerk/themes';
 const LoginScreen = lazy(() => import('./components/LoginScreen').then(m => ({ default: m.LoginScreen })));
 import LoadingScreen from './components/LoadingScreen';
 import { useCloudSync } from './hooks/useCloudSync';
@@ -85,7 +68,6 @@ import { YearSelectionModal } from './components/YearSelectionModal';
 import {
   ensureDataLoaded,
   getChaptersForModuleAndMode,
-  getModuleQuestionCounts,
   isModuleActive,
   SYLLABUS_MODULES
 } from './data';
@@ -101,7 +83,7 @@ interface ResultPayload {
   chapter: ChapterData;
   subject: SubjectData | null;
   questions: Question[];
-  answers: Record<number, any>;
+  answers: Record<number, QuizAnswer>;
   elapsedSeconds: number;
   flaggedQuestions: Set<number>;
 }
@@ -128,12 +110,9 @@ function QuizFlowWrapper({
   activeChapters,
   studyModeNameMap,
   selectedChapter,
-  setSelectedChapter,
   handleSelectChapter,
   handleSelectHistory,
   customUserButton,
-  selectedYear,
-  selectedSemester,
   handleSelectSubject,
   handleQuickStart,
   quizPayload,
@@ -157,16 +136,13 @@ function QuizFlowWrapper({
   activeChapters: ChapterData[];
   studyModeNameMap: Record<string, string>;
   selectedChapter: ChapterData | null;
-  setSelectedChapter: (c: ChapterData | null) => void;
   handleSelectChapter: (c: ChapterData) => void;
   handleSelectHistory: (res: QuizResult, source: 'chapters' | 'history') => void;
   customUserButton: React.ReactNode;
-  selectedYear: number | null;
-  selectedSemester: number | null;
   handleSelectSubject: (s: SubjectData, q: Question[]) => void;
   handleQuickStart: (q: Question[]) => void;
   quizPayload: QuizPayload | null;
-  handleFinishQuiz: (answers: Record<number, any>, elapsedSeconds: number, flaggedQuestions: Set<number>) => void;
+  handleFinishQuiz: (answers: Record<number, QuizAnswer>, elapsedSeconds: number, flaggedQuestions: Set<number>) => void;
   resultPayload: ResultPayload | null;
   handleRetake: () => void;
   handleBackToChapters: () => void;
@@ -185,7 +161,7 @@ function QuizFlowWrapper({
       }
     }
     if (mode) {
-      setStudyMode(mode as any);
+      setStudyMode(mode as 'mcq' | 'essay' | 'mixed');
     }
     if (screen !== 'chapters' && screen !== 'subjects' && screen !== 'quiz' && screen !== 'results') {
       setScreen('chapters');
@@ -288,7 +264,7 @@ function MainApp() {
   const transitionTo = useViewTransition();
   const { t, language, toggleLanguage } = useLanguage();
   const { user } = useUser();
-  const { isDark } = useTheme();
+  useTheme();
   const navigate = useNavigate();
   const params = useParams();
   const location = useLocation();
@@ -331,12 +307,10 @@ function MainApp() {
     try { const saved = safeStorage.getItem('asu_portal_module'); return saved ? JSON.parse(saved) : null; } catch { return null; }
   });
   const [studyMode, setStudyMode] = useState<'mcq' | 'essay' | 'mixed' | null>(() => {
-    try { const saved = safeStorage.getItem('asu_portal_studyMode'); return saved as any || null; } catch { return null; }
+    try { const saved = safeStorage.getItem('asu_portal_studyMode'); return (saved as 'mcq' | 'essay' | 'mixed') || null; } catch { return null; }
   });
 
-  const [showTracker, setShowTracker] = useState(false);
   const [showTrackerSelector, setShowTrackerSelector] = useState(false);
-  const [trackerModule, setTrackerModule] = useState<ModuleInfo | null>(null);
   const [showSupportModal, setShowSupportModal] = useState(false);
   const [showLanguageModal, setShowLanguageModal] = useState(false);
   const [showPortalsModal, setShowPortalsModal] = useState(false);
@@ -349,9 +323,7 @@ function MainApp() {
   // UI States
   const [modalModule, setModalModule] = useState<ModuleInfo | null>(null);
 
-  // Carousel states
-  const [activeYearCarouselIndex, setActiveYearCarouselIndex] = useState(1); // Default to Year 2
-  const [activeSemesterCarouselIndex, setActiveSemesterCarouselIndex] = useState(0);
+
 
   // Navigation history tracker
   const isRestoringHistoryRef = useRef(false);
@@ -398,20 +370,6 @@ function MainApp() {
     }
   }, [studentYear]);
 
-  const hasActiveModulesForYear = (year: number): boolean => {
-    const semesters = SYLLABUS_MODULES[year];
-    if (!semesters) return false;
-    return Object.values(semesters).some((modules) =>
-      modules.some((mod) => isModuleActive(mod.code))
-    );
-  };
-
-  const hasActiveModulesForSemester = (year: number, sem: number): boolean => {
-    const modules = SYLLABUS_MODULES[year]?.[sem];
-    if (!modules) return false;
-    return modules.some((mod) => isModuleActive(mod.code));
-  };
-
   // ── 3. Life-Cycle Effects ─────────────────────────────────────────────────────
 
   // Listen for storage changes from cloud sync
@@ -454,7 +412,7 @@ function MainApp() {
 
     window.addEventListener('popstate', handlePopState);
     return () => window.removeEventListener('popstate', handlePopState);
-  }, []);
+  }, [transitionTo]);
 
   // Sync state to localStorage
   useEffect(() => {
@@ -504,9 +462,9 @@ function MainApp() {
       ];
       const isChanged = keys.some(k => {
         if (k === 'resultPayload' || k === 'quizPayload' || k === 'selectedModule' || k === 'selectedChapter') {
-          return JSON.stringify(currentHistoryState[k]) !== JSON.stringify((stateRepresentation as any)[k]);
+          return JSON.stringify(currentHistoryState[k]) !== JSON.stringify(stateRepresentation[k as keyof typeof stateRepresentation]);
         }
-        return currentHistoryState[k] !== (stateRepresentation as any)[k];
+        return currentHistoryState[k] !== stateRepresentation[k as keyof typeof stateRepresentation];
       });
 
       if (isChanged) {
@@ -516,84 +474,30 @@ function MainApp() {
   }, [screen, selectedYear, selectedSemester, selectedModule, studyMode, selectedChapter, quizPayload, resultPayload]);
 
   // Auto-routing safety net to prevent black screen (empty layouts) due to inconsistent/missing states on refresh
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (screen === 'chapters' && (!selectedModule || !studyMode)) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setScreen('yearSelect');
     } else if (screen === 'subjects' && !selectedChapter) {
+       
       setScreen('chapters');
     } else if (screen === 'quiz' && !quizPayload) {
+       
       setScreen('chapters');
     } else if (screen === 'results' && !resultPayload) {
+       
       setScreen('chapters');
     } else if (screen === 'semesterSelect' && !selectedYear) {
+       
       setScreen('yearSelect');
     } else if (screen === 'moduleSelect' && (!selectedYear || !selectedSemester)) {
+       
       setScreen('yearSelect');
     } else if (screen === 'studyModeSelect' && !selectedModule) {
+       
       setScreen('yearSelect');
     }
-  }, [screen, selectedYear, selectedSemester, selectedModule, studyMode, selectedChapter, quizPayload, resultPayload]);
-
-  // Navigate back helper for breadcrumbs
-  const navigateTo = (targetScreen: Screen) => {
-    transitionTo(() => {
-      setScreen(targetScreen);
-      if (targetScreen === 'yearSelect') {
-        setSelectedYear(null);
-        setSelectedSemester(null);
-        setSelectedModule(null);
-        setStudyMode(null);
-        setSelectedChapter(null);
-      } else if (targetScreen === 'semesterSelect') {
-        setSelectedSemester(null);
-        setSelectedModule(null);
-        setStudyMode(null);
-        setSelectedChapter(null);
-      } else if (targetScreen === 'moduleSelect') {
-        setSelectedModule(null);
-        setStudyMode(null);
-        setSelectedChapter(null);
-      } else if (targetScreen === 'studyModeSelect') {
-        setStudyMode(null);
-        setSelectedChapter(null);
-      } else if (targetScreen === 'chapters') {
-        setSelectedChapter(null);
-      }
-    });
-  };
-
-  const handleSelectYear = (year: number) => {
-    transitionTo(() => {
-      setSelectedYear(year);
-      setScreen('semesterSelect');
-    });
-  };
-
-  const handleSelectSemester = (sem: number) => {
-    transitionTo(() => {
-      setSelectedSemester(sem);
-      setScreen('moduleSelect');
-    });
-  };
-
-  const handleSelectModule = (mod: ModuleInfo) => {
-    if (isModuleActive(mod.code)) {
-      transitionTo(() => {
-        setSelectedModule(mod);
-        setScreen('studyModeSelect');
-      });
-    } else {
-      // Show "Coming Soon" dialog
-      setModalModule(mod);
-    }
-  };
-
-  const handleSelectMode = (mode: 'mcq' | 'essay' | 'mixed') => {
-    transitionTo(() => {
-      setStudyMode(mode);
-      setScreen('chapters');
-    });
-  };
+  }, [screen, selectedYear, selectedSemester, selectedModule, studyMode, selectedChapter, quizPayload, resultPayload, transitionTo]);
 
   const handleSelectChapter = (chapter: ChapterData) => {
     transitionTo(() => {
@@ -616,7 +520,7 @@ function MainApp() {
     });
   };
 
-  const handleFinishQuiz = (answers: Record<number, any>, elapsedSeconds: number, flaggedQuestions: Set<number>) => {
+  const handleFinishQuiz = (answers: Record<number, QuizAnswer>, elapsedSeconds: number, flaggedQuestions: Set<number>) => {
     const questions = quizPayload!.questions;
     
     let total = 0;
@@ -628,7 +532,7 @@ function MainApp() {
         total += q.subQuestions.length;
         if (ans) {
           q.subQuestions.forEach((subQ) => {
-            const subAns = ans[subQ.id];
+            const subAns = (ans as Record<string, unknown>)[subQ.id];
             if (subAns !== undefined) {
               const isSubCorrect = subQ.type === 'mcq'
                 ? subAns === subQ.correctIndex

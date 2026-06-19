@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ArrowLeft, Clock, Activity, AlertCircle, ArrowRight, Calendar, CheckCircle2, ChevronRight } from 'lucide-react';
-import { useLanguage } from '../context/LanguageContext';
+import { useLanguage } from '../hooks/useLanguage';
 import { getQuizHistory } from '../utils/storage';
 import type { QuizResult } from '../utils/storage';
 

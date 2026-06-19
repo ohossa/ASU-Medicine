@@ -14,10 +14,10 @@
  *  • Screen-reader accessible with aria-live announcements
  */
 
-import React, { useCallback, useEffect, useId, useMemo, useRef, useState } from 'react';
+import React, { useCallback, useId, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { X, Check, GripVertical, Lightbulb } from 'lucide-react';
-import { useLanguage } from '../context/LanguageContext';
+import { X, Check, GripVertical } from 'lucide-react';
+import { useLanguage } from '../hooks/useLanguage';
 
 export interface MatchingProps {
   pairs: { premise: string; target: string }[];
@@ -406,29 +406,36 @@ export function MatchingQuestion({
   };
 
   /* ─── connector lines (SVG overlay) ─── */
-  const connectors = useMemo(() => {
-    if (!containerRef.current) return [];
-    const rects: { x1: number; y1: number; x2: number; y2: number; correct: boolean }[] = [];
-    const containerRect = containerRef.current.getBoundingClientRect();
+  const [connectors, setConnectors] = useState<{ x1: number; y1: number; x2: number; y2: number; correct: boolean }[]>([]);
 
-    for (let i = 0; i < pairs.length; i++) {
-      const targetIdx = matches[i];
-      if (targetIdx === undefined) continue;
-      const pEl = premiseRefs.current[i];
-      const tEl = targetRefs.current[targetIdx];
-      if (!pEl || !tEl) continue;
-      const pr = pEl.getBoundingClientRect();
-      const tr = tEl.getBoundingClientRect();
-      rects.push({
-        x1: pr.right - containerRect.left,
-        y1: pr.top + pr.height / 2 - containerRect.top,
-        x2: tr.left - containerRect.left,
-        y2: tr.top + tr.height / 2 - containerRect.top,
-        correct: submitted ? scrambled.indexOf(pairs[i].target) === targetIdx : true,
-      });
-    }
-    return rects;
-  }, [pairs, matches, scrambled, submitted]);
+  useLayoutEffect(() => {
+    const compute = () => {
+      if (!containerRef.current) return;
+      const rects: { x1: number; y1: number; x2: number; y2: number; correct: boolean }[] = [];
+      const containerRect = containerRef.current.getBoundingClientRect();
+
+      for (let i = 0; i < pairs.length; i++) {
+        const targetIdx = matches[i];
+        if (targetIdx === undefined) continue;
+        const pEl = premiseRefs.current[i];
+        const tEl = targetRefs.current[targetIdx];
+        if (!pEl || !tEl) continue;
+        const pr = pEl.getBoundingClientRect();
+        const tr = tEl.getBoundingClientRect();
+        rects.push({
+          x1: pr.right - containerRect.left,
+          y1: pr.top + pr.height / 2 - containerRect.top,
+          x2: tr.left - containerRect.left,
+          y2: tr.top + tr.height / 2 - containerRect.top,
+          correct: submitted ? scrambled.indexOf(pairs[i].target) === targetIdx : true,
+        });
+      }
+      setConnectors(rects);
+    };
+    compute();
+    window.addEventListener('resize', compute, { passive: true });
+    return () => window.removeEventListener('resize', compute);
+  }, [matches, pairs, scrambled, submitted]);
 
   /* ─── render ─── */
   return (

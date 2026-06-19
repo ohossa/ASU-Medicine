@@ -40,9 +40,12 @@ const Simplex = (() => {
     const x0 = xin - (i - t);
     const y0 = yin - (j - t);
     const z0 = zin - (k - t);
+    // i1, j1, k1, i2, j2, k2 assigned below — used in x1..z3 computation
+    // eslint-disable-next-line no-useless-assignment
     let i1 = 0, j1 = 0, k1 = 0;
+    // eslint-disable-next-line no-useless-assignment
     let i2 = 0, j2 = 0, k2 = 0;
-    
+
     if (x0 >= y0) {
       if (y0 >= z0)      { i1=1;j1=0;k1=0; i2=1;j2=1;k2=0; }
       else if (x0 >= z0) { i1=1;j1=0;k1=0; i2=1;j2=0;k2=1; }
@@ -547,7 +550,8 @@ export function InteractiveBackground() {
       let customGlow = '';
       try {
         customGlow = getComputedStyle(document.documentElement).getPropertyValue('--subject-glow').trim();
-      } catch (e) {}
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
+      } catch (_e) { /* no-op */ }
       const membraneGlowColor = customGlow || currentTheme.membraneGlow;
       const glowAlphaValue = currentTheme.glowAlpha + E * 0.12;
 

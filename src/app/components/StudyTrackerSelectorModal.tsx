@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
-import { GraduationCap, ChevronRight, ChevronLeft, X, Lock, CheckCircle, Info, ArrowRight, BookOpen, Layers, Award, Calendar } from 'lucide-react';
+import { GraduationCap, ChevronRight, ChevronLeft, X, Lock, CheckCircle, Info, ArrowRight, BookOpen } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
-import { useLanguage } from '../context/LanguageContext';
+import { useLanguage } from '../hooks/useLanguage';
 import { SYLLABUS_MODULES, isModuleActive } from '../data';
 import type { ModuleInfo } from '../data';
 
@@ -97,7 +97,7 @@ export function StudyTrackerSelectorModal({ onClose, onSelectModule }: Props) {
   };
 
   const getYearLabel = (y: number) => {
-    return tLocal(`year${y}` as any);
+    return tLocal((`year${y}`) as keyof typeof LOCAL_TRANSLATIONS['en']);
   };
 
   const handleSelectYear = (year: number) => {
@@ -307,7 +307,7 @@ export function StudyTrackerSelectorModal({ onClose, onSelectModule }: Props) {
                         </div>
                         <div>
                           <span className="block font-archivo text-lg font-extrabold tracking-tight">
-                            {tLocal(`semester${sem}` as any)}
+                            {tLocal((`semester${sem}`) as keyof typeof LOCAL_TRANSLATIONS['en'])}
                           </span>
                           <span className="block text-[11px] font-semibold text-gray-400 dark:text-gray-500 uppercase tracking-widest mt-1.5 opacity-90">
                             {labelSem}
@@ -331,7 +331,7 @@ export function StudyTrackerSelectorModal({ onClose, onSelectModule }: Props) {
                     {tLocal('selectModule')}
                   </h2>
                   <p className="text-xs text-gray-500 dark:text-gray-400 font-medium mt-1">
-                    {getYearLabel(selectedYear!)} · {tLocal(`semester${selectedSemester!}` as any)}
+                    {getYearLabel(selectedYear!)} · {tLocal((`semester${selectedSemester!}`) as keyof typeof LOCAL_TRANSLATIONS['en'])}
                   </p>
                 </div>
 

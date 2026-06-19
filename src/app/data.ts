@@ -624,20 +624,14 @@ async function loadAllModules(): Promise<void> {
       filename.includes('written') ||
       filename.includes('short') ||
       filename.includes('paper');
-    let isMcq: boolean;
-    if (isEssay) {
-      isMcq = false;
-    } else {
+    if (!isEssay) {
       const filenameBasedMcq =
         filename.includes('mcq') ||
         filename.includes('practice') ||
         filename.includes('exam');
-      if (filenameBasedMcq) {
-        isMcq = true;
-      } else {
+      if (!filenameBasedMcq) {
         const detectedType = detectDbTypeOfJson(rawData);
         isEssay = detectedType === 'essay';
-        isMcq = detectedType === 'mcq';
       }
     }
 

@@ -1,13 +1,9 @@
-import { createContext, useContext, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { triggerCloudSync } from '../hooks/useCloudSync';
 
-interface ThemeContextType {
-  isDark: boolean;
-  theme: "light" | "dark";
-  toggleTheme: () => void;
-}
-
-const ThemeContext = createContext<ThemeContextType>({ isDark: false, theme: "dark", toggleTheme: () => {} });
+// Re-export for consumers that import from this file
+export { ThemeContext } from './ThemeContextValue';
+import { ThemeContext } from './ThemeContextValue';
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [isDark, setIsDark] = useState(() => {
@@ -52,4 +48,4 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   );
 }
 
-export const useTheme = () => useContext(ThemeContext);
+

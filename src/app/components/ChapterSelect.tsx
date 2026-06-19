@@ -1,11 +1,11 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { useNavigate } from 'react-router';
 import { GraduationCap, Layers, ArrowRight, Palette, Clock, Award, Trash2, ArrowLeft, Calendar, ChevronRight } from 'lucide-react';
-import type { ChapterData, SubjectColor } from '../types';
+import type { ChapterData, SubjectColor, SubjectData, Question } from '../types';
 import { formatTime } from '../types';
 import type { QuizResult } from '../utils/storage';
 import { getQuizHistory, clearQuizHistory } from '../utils/storage';
-import { useLanguage } from '../context/LanguageContext';
+import { useLanguage } from '../hooks/useLanguage';
 
 /* ------------------------------------------------------------------ */
 /* Types                                                               */
@@ -263,7 +263,14 @@ export function ChapterSelect({
   const mixedChapter = useMemo(() => {
     if (chapters.length <= 1) return null;
 
-    const subjectsMap: Record<string, any> = {};
+    const subjectsMap: Record<string, {
+      id: SubjectColor;
+      name: string;
+      iconName?: string;
+      lectures: string;
+      lectureCount: number;
+      questions: Question[];
+    }> = {};
     chapters.forEach(ch => {
       ch.subjects.forEach(sub => {
         if (!subjectsMap[sub.id]) {
@@ -284,7 +291,7 @@ export function ChapterSelect({
       });
     });
 
-    const mergedSubjects = Object.values(subjectsMap).filter((s: any) => s.questions.length > 0);
+    const mergedSubjects = Object.values(subjectsMap).filter((s) => s.questions.length > 0);
     if (mergedSubjects.length === 0) return null;
 
     return {
@@ -297,7 +304,7 @@ export function ChapterSelect({
       page: 1,
       lectureRange: language === 'en' ? 'All Sections' : 'جميع الأقسام',
       accentColor: 'clinical' as SubjectColor,
-      subjects: mergedSubjects,
+      subjects: mergedSubjects as SubjectData[],
     };
   }, [chapters, language]);
 

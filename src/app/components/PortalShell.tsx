@@ -1,7 +1,6 @@
-import { ChevronRight, Sun, Moon, Languages } from 'lucide-react';
+import { ChevronRight } from 'lucide-react';
 import type { ReactNode } from 'react';
-import { useTheme } from '../context/ThemeContext';
-import { useLanguage } from '../context/LanguageContext';
+import { useLanguage } from '../hooks/useLanguage';
 import { useUser } from '@clerk/clerk-react';
 
 export interface Crumb {

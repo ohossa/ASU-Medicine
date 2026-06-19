@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { useProgress } from '../store/progress';
+import { useProgress } from '../hooks/useProgress';
 
 export function SoundManagerComponent() {
   const { lastLevelUp } = useProgress();

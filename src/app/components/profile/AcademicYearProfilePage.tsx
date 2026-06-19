@@ -1,5 +1,5 @@
 import { GraduationCap, Check } from 'lucide-react';
-import { useLanguage } from '../../context/LanguageContext';
+import { useLanguage } from '../../hooks/useLanguage';
 import safeStorage from '../../utils/safeStorage';
 import type { Screen } from '../../types';
 import type { ModuleInfo } from '../../data';

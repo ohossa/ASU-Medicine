@@ -1,5 +1,5 @@
 import { Globe } from 'lucide-react';
-import { useLanguage } from '../../context/LanguageContext';
+import { useLanguage } from '../../hooks/useLanguage';
 
 export function LanguageProfilePage() {
   const { language, toggleLanguage } = useLanguage();

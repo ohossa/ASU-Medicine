@@ -22,7 +22,7 @@ import {
 } from 'lucide-react';
 import type { ChapterData, SubjectData, Question, SubjectColor, QuizAnswer } from '../types';
 import { subjectStyles, formatTime } from '../types';
-import { useLanguage } from '../context/LanguageContext';
+import { useLanguage } from '../hooks/useLanguage';
 
 import { MatchingQuestion } from './MatchingQuestion';
 import { useQuizEngine } from '../hooks/useQuizEngine';
@@ -168,6 +168,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
   /* Detect answer and trigger 3D flip */
   useLayoutEffect(() => {
     if (answered && !flipped) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setFlipped(true);
     }
   }, [answered, flipped]);
@@ -185,12 +186,14 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
     const msg = isCorrect
       ? `${lang === 'ar' ? 'صحيح' : 'Correct'}. ${question.explanation?.slice(0, 80) || ''}`
       : `${lang === 'ar' ? 'خاطئ' : 'Incorrect'}. ${lang === 'ar' ? 'الإجابة الصحيحة كانت' : 'The correct answer was'} ${correctLabel}`;
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setAnnouncement(msg);
-  }, [answered, current, question, answers, language, getQuestionStatus]);
+  }, [answered, current, question, answers, language]);
 
   /* Sync temporary states on index change */
   useLayoutEffect(() => {
     lastFocusedSubQ.current = null;
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     setShowEssayAnswer(false);
     setFlipped(false);
     if (!question) return;
@@ -214,7 +217,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
       setSubEssayDrafts(drafts);
       setRevealedSubEssays(revs);
     }
-  }, [current, question, answers]);
+  }, [current, question, answers, setAnswer]);
 
   /* Keyboard shortcuts */
   useEffect(() => {
@@ -282,6 +285,27 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
     return () => window.removeEventListener('keydown', handler);
   }, [current, question, handleGoTo, toggleFlag, answers, isRTL, showEssayAnswer, revealedSubEssays, setAnswer, toggleGrid]);
 
+  // Compute answered status before any early returns (hooks must always be called)
+  const answered = question ? (answers[current] !== undefined && isAnswered(question, answers[current])) : false;
+  const isCompleted = answered;
+  const isCorrect = question ? (
+    question.type === 'essay'
+      ? answers[current]?.selfGrade === 'correct'
+      : question.type === 'case' || question.type === 'casestudy'
+        ? getQuestionStatus(question, answers[current]) === 'correct'
+        : checkAnswerCorrect(question, answers[current])
+  ) : false;
+
+  // useHintSystem must be called unconditionally (hooks rules)
+  const { messages: chatMessages, loading: chatLoading, error: chatError, sendMessage, clearChat } = useHintSystem({
+    question: question ?? undefined,
+    userAnswer: question ? answers[current] : undefined,
+    correctAnswer: question?.options?.[question.correctIndex ?? -1],
+    studentWrongAnswer: isCompleted && !isCorrect && question?.options ? question.options[answers[current] as number] : undefined,
+    getToken,
+    enabled: isCompleted && !!question,
+  });
+
   if (!question) {
     return (
       <div className="flex min-h-screen items-center justify-center text-muted-foreground">
@@ -289,24 +313,6 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
       </div>
     );
   }
-
-  // Chat-based AI tutor: visible after ANY answer (right or wrong)
-  const isCompleted = answered;
-  const isCorrect = question.type === 'essay'
-    ? answers[current]?.selfGrade === 'correct'
-    : question.type === 'case' || question.type === 'casestudy'
-      ? getQuestionStatus(question, answers[current]) === 'correct'
-      : checkAnswerCorrect(question, answers[current]);
-
-  const answered = answers[current] !== undefined && isAnswered(question, answers[current]);
-  const { messages: chatMessages, loading: chatLoading, error: chatError, sendMessage, clearChat } = useHintSystem({
-    question,
-    userAnswer: answers[current],
-    correctAnswer: question.options?.[question.correctIndex ?? -1],
-    studentWrongAnswer: isCompleted && !isCorrect && question.options ? question.options[answers[current] as number] : undefined,
-    getToken,
-    enabled: isCompleted,
-  });
 
   /* Table rendering parser helper */
   const renderFormattedText = (

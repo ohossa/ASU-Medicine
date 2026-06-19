@@ -1,9 +1,9 @@
 import React from "react";
 import { motion } from "motion/react";
-import { Activity, BookOpen, Search, Heart } from "lucide-react";
+import { BookOpen, Search, Heart } from "lucide-react";
 import { SignIn } from "@clerk/clerk-react";
 import { dark } from "@clerk/themes";
-import { useTheme } from "../context/ThemeContext";
+import { useTheme } from "../hooks/useTheme";
 
 /* ------------------------------ Motion system ----------------------------- */
 

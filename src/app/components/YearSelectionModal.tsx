@@ -4,7 +4,7 @@
 import { useEffect } from 'react';
 import { GraduationCap, ChevronRight } from 'lucide-react';
 import { triggerCloudSync } from '../hooks/useCloudSync';
-import { useLanguage } from '../context/LanguageContext';
+import { useLanguage } from '../hooks/useLanguage';
 
 interface Props { onSelect: (year: number) => void; }
 

@@ -126,10 +126,10 @@ export function useHintSystem({
           throw new Error(errData.message || errData.error || `Server error (${res.status})`);
         }
 
-        let data: any = {};
+        let data: Record<string, unknown> = {};
         try {
           data = await res.json();
-        } catch (_parseErr) {
+        } catch (e) {
           // Server returned HTML or empty body (common in development)
           const bodyText = await res.text().catch(() => '');
           if (import.meta.env.DEV) {
@@ -161,7 +161,9 @@ export function useHintSystem({
               return next;
             });
           } else {
-            throw new Error('Server response was not valid JSON.');
+            const err = new Error('Server response was not valid JSON.');
+            (err as Error & { cause?: unknown }).cause = e;
+            throw err;
           }
           setLoading(false);
           return;
@@ -193,6 +195,7 @@ export function useHintSystem({
       userAnswer,
       correctAnswer,
       studentWrongAnswer,
+      messages,
     ]
   );
 

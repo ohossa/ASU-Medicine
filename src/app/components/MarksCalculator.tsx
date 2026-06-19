@@ -1,4 +1,4 @@
-import React, { useMemo, useState, useEffect } from "react";
+import React, { useMemo, useState, useEffect, useLayoutEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import {
   Award,
@@ -15,7 +15,6 @@ import {
   Settings,
 } from "lucide-react";
 import { SYLLABUS_MODULES } from "../data";
-import { useTheme } from "../context/ThemeContext";
 
 /* ---------------------------------- Types --------------------------------- */
 
@@ -232,7 +231,6 @@ function ProgressRing({ pct, label }: { pct: number; label: string }) {
 /* ------------------------------ Main component ----------------------------- */
 
 export function MarksCalculator({ onBack, userButton }: { onBack: () => void; userButton?: React.ReactNode }) {
-  const { isDark } = useTheme();
 
   // Navigation & Selection state loaded from localStorage for persistent user session
   const [selectedPreset, setSelectedPreset] = useState<ModulePreset | null>(() => {
@@ -321,12 +319,13 @@ export function MarksCalculator({ onBack, userButton }: { onBack: () => void; us
   }, [customSections]);
 
   // Load scores for the selected module preset on preset change
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (selectedPreset) {
       try {
         const savedAll = localStorage.getItem('asu_marks_calculator_scores');
         const all = savedAll ? JSON.parse(savedAll) : {};
         const presetScores = all[selectedPreset.id] || {};
+        // eslint-disable-next-line react-hooks/set-state-in-effect -- data hydration from localStorage must happen before paint
         setScores(presetScores);
       } catch (e) {
         console.error("Failed to load scores:", e);

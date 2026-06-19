@@ -11,7 +11,7 @@ import {
 import { SYLLABUS_MODULES, getChaptersForModuleAndMode, isModuleActive } from "../data";
 import { toggleFlaggedQuestion, getFlaggedQuestions } from "../utils/storage";
 import type { Question } from "../types";
-import { useTheme } from "../context/ThemeContext";
+import { useTheme } from "../hooks/useTheme";
 
 /* ------------------------------------------------------------------ */
 /* Types & data                                                        */
@@ -23,6 +23,12 @@ interface SearchEntry {
   moduleName: string;
   moduleCode: string;
   subjectName: string;
+}
+
+/** Extended Question shape used by the accessor functions below */
+interface QuestionExt extends Question {
+  question?: string;
+  answer?: string;
 }
 
 interface QuestionSearchProps {
@@ -60,28 +66,28 @@ const getSearchableQuestions = (): SearchEntry[] => {
 };
 
 /* Accessors — single place to adapt to your Question shape */
-const qText = (q: Question): string => (q as any).text ?? (q as any).question ?? "";
+const qText = (q: Question): string => (q as QuestionExt).text ?? (q as QuestionExt).question ?? "";
 const qAnswerText = (q: Question): string => {
-  const anyQ = q as any;
-  if (anyQ.type === "truefalse") {
-    if (typeof anyQ.correctIndex === "number") {
-      return anyQ.correctIndex === 0 ? "True" : "False";
+  const eq = q as QuestionExt;
+  if (eq.type === "truefalse") {
+    if (typeof eq.correctIndex === "number") {
+      return eq.correctIndex === 0 ? "True" : "False";
     }
-    return anyQ.correctIndex === true ? "True" : "False";
+    return eq.correctIndex === true ? "True" : "False";
   }
-  if (anyQ.options && typeof anyQ.correctIndex === "number") {
-    return anyQ.options[anyQ.correctIndex] ?? "";
+  if (eq.options && typeof eq.correctIndex === "number") {
+    return eq.options[eq.correctIndex] ?? "";
   }
-  if (anyQ.type === "matching" && anyQ.pairs) {
-    return anyQ.pairs.map((p: any) => `${p.premise} → ${p.target}`).join(", ");
+  if (eq.type === "matching" && eq.pairs) {
+    return eq.pairs.map((p) => `${p.premise} → ${p.target}`).join(", ");
   }
-  if (anyQ.type === "fillblank" && anyQ.blanks) {
-    return anyQ.blanks.join(", ");
+  if (eq.type === "fillblank" && eq.blanks) {
+    return eq.blanks.join(", ");
   }
-  return anyQ.modelAnswer ?? anyQ.answer ?? "";
+  return eq.modelAnswer ?? eq.answer ?? "";
 };
 const isMcq = (q: Question): boolean =>
-  Array.isArray((q as any).options) && (q as any).options.length > 0;
+  Array.isArray(q.options) && q.options.length > 0;
 
 /* ------------------------------------------------------------------ */
 /* Match highlighting                                                  */
@@ -129,9 +135,7 @@ export function QuestionSearch({ onBack, userButton }: QuestionSearchProps) {
     () => new Set(getFlaggedQuestions().map(String))
   );
 
-  const { isDark } = useTheme();
-
-  const allEntries = useMemo(getSearchableQuestions, []);
+  const allEntries = useMemo(() => getSearchableQuestions(), []);
 
   const modules = useMemo(() => {
     const map = new Map<string, string>();
@@ -143,7 +147,7 @@ export function QuestionSearch({ onBack, userButton }: QuestionSearchProps) {
     const q = query.trim().toLowerCase();
     return allEntries.filter((e) => {
       if (moduleFilter !== "all" && e.moduleCode !== moduleFilter) return false;
-      if (flaggedOnly && !flagged.has(String((e.question as any).id))) return false;
+      if (flaggedOnly && !flagged.has(String(e.question.id))) return false;
       if (!q) return true;
       return (
         qText(e.question).toLowerCase().includes(q) ||
@@ -159,7 +163,11 @@ export function QuestionSearch({ onBack, userButton }: QuestionSearchProps) {
     toggleFlaggedQuestion(id);
     setFlagged((prev) => {
       const next = new Set(prev);
-      next.has(id) ? next.delete(id) : next.add(id);
+      if (next.has(id)) {
+        next.delete(id);
+      } else {
+        next.add(id);
+      }
       return next;
     });
   }, []);
@@ -167,7 +175,11 @@ export function QuestionSearch({ onBack, userButton }: QuestionSearchProps) {
   const toggleReveal = (id: string | number) =>
     setRevealed((prev) => {
       const next = new Set(prev);
-      next.has(id) ? next.delete(id) : next.add(id);
+      if (next.has(id)) {
+        next.delete(id);
+      } else {
+        next.add(id);
+      }
       return next;
     });
 
@@ -286,7 +298,7 @@ export function QuestionSearch({ onBack, userButton }: QuestionSearchProps) {
             <AnimatePresence initial={false}>
               {results.slice(0, 100).map((entry) => {
                 const q = entry.question;
-                const id = (q as any).id as string | number;
+                const id = q.id as string | number;
                 const isExpanded = expandedId === id;
                 const isRevealed = revealed.has(id);
                 const isFlagged = flagged.has(String(id));
@@ -341,8 +353,8 @@ export function QuestionSearch({ onBack, userButton }: QuestionSearchProps) {
                             {/* MCQ options */}
                             {isMcq(q) && (
                               <ul className="mt-4 space-y-2">
-                                {(q as any).options.map((opt: string, i: number) => {
-                                  const correct = i === (q as any).correctIndex;
+                                {q.options?.map((opt: string, i: number) => {
+                                  const correct = i === q.correctIndex;
                                   const show = isRevealed && correct;
                                   return (
                                     <li
@@ -381,10 +393,10 @@ export function QuestionSearch({ onBack, userButton }: QuestionSearchProps) {
                             )}
 
                             {/* Explanation */}
-                            {isRevealed && (q as any).explanation && (
+                            {isRevealed && q.explanation && (
                               <div className="mt-3 flex gap-2 rounded-xl bg-gray-50 dark:bg-white/[0.03] border border-gray-200 dark:border-transparent px-4 py-3 text-[13px] leading-relaxed text-gray-600 dark:text-neutral-400">
                                 <HelpCircle size={14} className="mt-0.5 shrink-0 text-gray-400 dark:text-neutral-500" />
-                                <p>{(q as any).explanation}</p>
+                                <p>{q.explanation}</p>
                               </div>
                             )}
 
@@ -494,7 +506,6 @@ const ActionButton: React.FC<{
 };
 
 const EmptyState: React.FC<{ query: string; flaggedOnly: boolean }> = ({ query, flaggedOnly }) => {
-  const { isDark } = useTheme();
   return (
     <motion.div
       initial={{ opacity: 0, y: 10 }}

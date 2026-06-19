@@ -1,19 +1,11 @@
-import { createContext, useContext, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { triggerCloudSync } from '../hooks/useCloudSync';
 
+// Re-export for consumers that import from this file
+export { LanguageContext } from './LanguageContextValue';
+import { LanguageContext } from './LanguageContextValue';
+
 type Language = 'en' | 'ar';
-
-interface LanguageContextType {
-  language: Language;
-  toggleLanguage: () => void;
-  t: (key: string) => string;
-}
-
-const LanguageContext = createContext<LanguageContextType>({
-  language: 'en',
-  toggleLanguage: () => {},
-  t: (key) => key,
-});
 
 const translations: Record<Language, Record<string, string>> = {
   en: {
@@ -368,4 +360,4 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   );
 }
 
-export const useLanguage = () => useContext(LanguageContext);
+

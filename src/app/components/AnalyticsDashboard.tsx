@@ -13,7 +13,7 @@ import {
   AlertTriangle,
 } from "lucide-react";
 import type { QuizResult } from "../utils/storage";
-import { useTheme } from "../context/ThemeContext";
+import { useTheme } from "../hooks/useTheme";
 import { PortalShell } from "./PortalShell";
 
 /* ---------------------------------- Theme ---------------------------------- */

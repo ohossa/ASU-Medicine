@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ArrowLeft, ChevronRight, Trash2, Flag, Check, X, Eye, EyeOff, AlertCircle } from 'lucide-react';
-import { useLanguage } from '../context/LanguageContext';
+import { useLanguage } from '../hooks/useLanguage';
 import { getFlaggedQuestions, removeFlaggedQuestion } from '../utils/storage';
 import { findQuestionById } from '../data';
 import type { Question, ChapterData } from '../types';

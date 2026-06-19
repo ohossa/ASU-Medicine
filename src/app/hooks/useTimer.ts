@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 
 export type TimerMode = 'off' | 'practice' | 'exam';
+export type UrgencyLevel = 'normal' | 'amber' | 'red' | 'critical';
 
 interface UseTimerOptions {
   totalSeconds: number;
@@ -10,11 +11,16 @@ interface UseTimerOptions {
 
 export function useTimer({ totalSeconds, mode, onExpire }: UseTimerOptions) {
   const [remaining, setRemaining] = useState(totalSeconds);
-  const [urgency, setUrgency] = useState<'normal' | 'amber' | 'red' | 'critical'>('normal');
   const [pausedBy, setPausedBy] = useState<'grid' | 'shortcuts' | 'settings' | null>(null);
   const intervalRef = useRef<ReturnType<typeof setInterval>>();
   const isActive = mode !== 'off' && !pausedBy;
   const pct = Math.max(0, (remaining / totalSeconds) * 100);
+
+  const urgency: UrgencyLevel =
+    remaining <= 10 ? 'critical' :
+    pct < 30 ? 'red' :
+    pct < 60 ? 'amber' :
+    'normal';
 
   useEffect(() => {
     if (!isActive) return;
@@ -26,14 +32,6 @@ export function useTimer({ totalSeconds, mode, onExpire }: UseTimerOptions) {
     }, 1000);
     return () => clearInterval(intervalRef.current);
   }, [isActive, onExpire]);
-
-  useEffect(() => {
-    const ratio = remaining / totalSeconds;
-    if (remaining <= 10) setUrgency('critical');
-    else if (ratio < 0.3) setUrgency('red');
-    else if (ratio < 0.6) setUrgency('amber');
-    else setUrgency('normal');
-  }, [remaining, totalSeconds]);
 
   const pause = useCallback((reason: 'grid' | 'shortcuts' | 'settings') => setPausedBy(reason), []);
   const resume = useCallback(() => setPausedBy(null), []);
