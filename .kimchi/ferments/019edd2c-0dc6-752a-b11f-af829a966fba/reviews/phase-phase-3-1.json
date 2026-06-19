@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "fermentId": "019edd2c-0dc6-752a-b11f-af829a966fba",
+  "phaseId": "phase-3",
+  "phaseName": "Phase 3: Timer + Gamification",
+  "attempt": 1,
+  "timestamp": "2026-06-19T02:01:59.779Z",
+  "goal": "Exam timer + gamification engine — retention and pressure training",
+  "summary": "Phase 3 complete. Timer hook with exam/practice/off modes, circular SVG timer ring, settings panel. Gamification Zustand store with XP/streak. XPHUD rendered in quiz. 16-week streak heatmap. TypeScript 0 errors, tests pass. Committed.",
+  "stepSummaries": "  1. Create useTimer hook with exam/practice/off modes + tests [verified]\n  2. Create TimerRingSVG component with urgency color map [verified]\n  3. Create TimerSettingsPanel with mode and question count toggles [verified]\n  4. Create gamificationStore.ts with XP thresholds + streak logic + tests [verified]\n  5. Create XPHUD component and render in QuizInterface [verified]\n  6. Create StreakCalendar heatmap component [verified]",
+  "diffAvailable": true,
+  "diffFilesChanged": "...9edd2c-0dc6-752a-b11f-af829a966fba.events.jsonl |  49 ++\n .../019edd2c-0dc6-752a-b11f-af829a966fba.json      | 658 ++++++++++++++++++++-\n 2 files changed, 702 insertions(+), 5 deletions(-)",
+  "flags": [],
+  "derivedGrade": "A",
+  "reviewerRationale": "All gates pass; project checks validate.",
+  "gateVerdicts": [
+    {
+      "evidence": "Step 6: npx tsc --noEmit clean. Step 5: grep confirms XPHUD in QuizInterface. Step 4: 3 tests pass for gamification store. Step 3: TimerSettingsPanel in QuizInterface. Step 2: TimerRingSVG created. Step 1: 4 tests pass for useTimer.",
+      "id": "F1",
+      "rationale": "All 6 steps verified with real tests/build/file checks",
+      "verdict": "pass"
+    },
+    {
+      "evidence": "Phase 3 produced: timer (consumed by Phase 4+ quiz), gamification store (consumed by Phase 4+ dashboard), XPHUD (consumed by quiz UI), StreakCalendar (consumed by dashboard)",
+      "id": "F2",
+      "rationale": "Timer and gamification outputs feed into Phase 4 design polish and dashboard",
+      "verdict": "pass"
+    },
+    {
+      "evidence": "Nothing deferred. Timer, gamification, HUD, heatmap all shipped.",
+      "id": "F3",
+      "rationale": "Zero deferred items in Phase 3",
+      "verdict": "pass"
+    }
+  ],
+  "projectChecks": {
+    "discovered": true,
+    "anyFailed": false,
+    "commands": [
+      {
+        "kind": "test",
+        "command": "npm test",
+        "exitCode": 0,
+        "durationMs": 0,
+        "timedOut": false
+      }
+    ]
+  }
+}

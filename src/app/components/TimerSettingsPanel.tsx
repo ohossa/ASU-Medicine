@@ -1,4 +1,4 @@
-export type TimerMode = 'off' | 'practice';
+export type TimerMode = 'off' | 'practice' | 'exam';
 
 interface TimerSettingsPanelProps {
   mode: TimerMode;
@@ -30,7 +30,7 @@ export default function TimerSettingsPanel({ mode, urgency = 'normal', muted = f
       </div>
 
       <div className="flex rounded-lg border border-gray-200 dark:border-white/[0.08] p-0.5 bg-white dark:bg-black/20">
-        {(['off','practice'] as TimerMode[]).map(m => (
+        {(['off','practice','exam'] as TimerMode[]).map(m => (
           <button
             key={m}
             onClick={() => onChangeMode(m)}

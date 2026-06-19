@@ -46,7 +46,7 @@ export function useCloudSync() {
       if (typeof window !== 'undefined') {
         for (let i = 0; i < localStorage.length; i++) {
           const key = localStorage.key(i);
-          if (key && key.startsWith('asu_study_tracker_')) {
+          if (key && (key.startsWith('asu_study_tracker_') || key.startsWith('asu_quiz_session:'))) {
             const val = localStorage.getItem(key);
             if (val) {
               try {

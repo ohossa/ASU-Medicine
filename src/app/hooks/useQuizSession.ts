@@ -41,10 +41,9 @@ export function useQuizSession() {
       localStorage.setItem(key, JSON.stringify(session));
       triggerCloudSync();
     } catch { /* no-op */ }
-
-    requestAnimationFrame(() => {
+    finally {
       isSaving.current = false;
-    });
+    }
   }, []);
 
   const load = useCallback((chapterId: number | string, subjectName: string, userId?: string | null): QuizSessionSave | null => {

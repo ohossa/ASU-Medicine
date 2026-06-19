@@ -140,12 +140,18 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
   const [direction, setDirection] = useState(1);
   const [essayDraft, setEssayDraft] = useState('');
   const [showEssayAnswer, setShowEssayAnswer] = useState(() => savedSession?.showEssayAnswer ?? false);
+  const [essayDrafts, setEssayDrafts] = useState<Record<number, string>>(savedSession?.essayDrafts ?? {});
   const [confirmFinish, setConfirmFinish] = useState(false);
   const [timerMode, setTimerMode] = useState<'off' | 'practice' | 'exam'>('practice');
 
   const engine = useQuizEngine({
     questions,
     onFinish: (session) => onFinish(session.answers, session.elapsedSeconds, session.flaggedQuestions),
+    initialAnswers: savedSession?.answers,
+    initialCurrent: savedSession?.current ?? 0,
+    initialElapsedSeconds: savedSession?.elapsedSeconds ?? 0,
+    initialFlagged: savedSession?.flagged,
+    initialFinished: savedSession?.finished ?? false,
   });
   const {
     current, answers, flagged, elapsedSeconds: totalElapsed,
@@ -197,7 +203,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
   }, [answered, isCorrect, question, playSound, current]);
 
   /* Auto-save quiz session every 2 seconds */
-  const quizDataRef = useRef({ current: 0, answers: {} as Record<number, unknown>, elapsedSeconds: 0, flagged: [] as number[], finished: false, timerMode: 'practice' as TimerMode, showEssayAnswer: false });
+  const quizDataRef = useRef({ current: 0, answers: {} as Record<number, QuizAnswer>, elapsedSeconds: 0, flagged: [] as number[], finished: false, timerMode: 'practice' as TimerMode, showEssayAnswer: false });
   useLayoutEffect(() => {
     quizDataRef.current = { current, answers, elapsedSeconds, flagged: [...flagged], finished, timerMode, showEssayAnswer };
   });
@@ -215,11 +221,11 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
         finished: d.finished,
         timerMode: d.timerMode,
         showEssayAnswer: d.showEssayAnswer,
-        essayDrafts: {},
+        essayDrafts: essayDrafts,
       });
     }, 2000);
     return () => clearInterval(timer);
-  }, [chapter.id, subject?.name, saveQuizSession]);
+  }, [chapter.id, subject?.name, saveQuizSession, essayDrafts]);
 
   /* Smooth scroll to essay answer when revealed */
   const essayAnswerRef = useRef<HTMLDivElement | null>(null);
@@ -246,6 +252,15 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
     setAnnouncement(msg);
   }, [answered, current, question, answers, language]);
 
+  /* Sync essay draft with current question index */
+  useEffect(() => {
+    if (!question) return;
+    if (question.type === 'essay') {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      setEssayDraft(essayDrafts[current] ?? answers[current]?.text ?? '');
+    }
+  }, [current, question, answers, essayDrafts]);
+
   /* Sync temporary states on index change */
   useLayoutEffect(() => {
     lastFocusedSubQ.current = null;
@@ -254,7 +269,11 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
     if (!question) return;
 
     if (question.type === 'essay') {
-      setEssayDraft(answers[current]?.text || '');
+      setEssayDraft(essayDrafts[current] ?? answers[current]?.text ?? '');
+      // Sync essay draft to essayDrafts ref when navigating away from essay question
+      if (answers[current]?.text !== undefined) {
+        setEssayDrafts(prev => ({ ...prev, [current]: answers[current].text }));
+      }
     } else if (question.type === 'matching') {
       if (answers[current] === undefined && question.pairs) {
         // Scramble targets on first mount
@@ -519,6 +538,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
           onChange={e => {
             const val = e.target.value;
             setEssayDraft(val);
+            setEssayDrafts(prev => ({ ...prev, [current]: val }));
             onChange({ text: val, selfGrade: value?.selfGrade });
           }}
           rows={7}

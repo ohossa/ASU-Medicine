@@ -50,6 +50,15 @@ if (redisUrl) {
   };
 }
 
+const setWithTTL = async (key: string, value: unknown) => {
+  if (redisUrl) {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    await (tcpClient as any).set(key, typeof value === 'string' ? value : JSON.stringify(value), 'EX', 60 * 60 * 24 * 30);
+  } else if (kvUrl && kvToken) {
+    await restClient.set(key, value, { EX: 60 * 60 * 24 * 30 });
+  }
+};
+
 export default async function handler(req: any, res: any) {
   // Set CORS / security headers
   res.setHeader('Content-Type', 'application/json');
@@ -126,7 +135,7 @@ export default async function handler(req: any, res: any) {
         return res.status(400).json({ error: 'Bad Request: Missing or empty JSON body', bodyType: typeof body });
       }
 
-      await dbClient.set(redisKey, body);
+      await setWithTTL(redisKey, body);
       return res.status(200).json({ success: true });
     }
 

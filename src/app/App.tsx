@@ -583,6 +583,8 @@ function MainApp() {
       flaggedQuestionIds: Array.from(flaggedQuestions)
     });
 
+    clearQuizSession(quizPayload!.chapter.id, quizPayload!.subject?.name ?? 'all');
+
     transitionTo(() => {
       setResultPayload({
         chapter: quizPayload!.chapter,
