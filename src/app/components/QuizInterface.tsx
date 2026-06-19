@@ -165,6 +165,16 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
   const subjectColor: SubjectColor = question?.subjectColor ?? 'clinical';
   const style = subjectStyles[subjectColor];
 
+  const answered = question ? (answers[current] !== undefined && isAnswered(question, answers[current])) : false;
+  const isCompleted = answered;
+  const isCorrect = question ? (
+    question.type === 'essay'
+      ? answers[current]?.selfGrade === 'correct'
+      : question.type === 'case' || question.type === 'casestudy'
+        ? getQuestionStatus(question, answers[current]) === 'correct'
+        : checkAnswerCorrect(question, answers[current])
+  ) : false;
+
   /* Detect answer and trigger 3D flip */
   useLayoutEffect(() => {
     if (answered && !flipped) {
@@ -285,16 +295,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
     return () => window.removeEventListener('keydown', handler);
   }, [current, question, handleGoTo, toggleFlag, answers, isRTL, showEssayAnswer, revealedSubEssays, setAnswer, toggleGrid]);
 
-  // Compute answered status before any early returns (hooks must always be called)
-  const answered = question ? (answers[current] !== undefined && isAnswered(question, answers[current])) : false;
-  const isCompleted = answered;
-  const isCorrect = question ? (
-    question.type === 'essay'
-      ? answers[current]?.selfGrade === 'correct'
-      : question.type === 'case' || question.type === 'casestudy'
-        ? getQuestionStatus(question, answers[current]) === 'correct'
-        : checkAnswerCorrect(question, answers[current])
-  ) : false;
+
 
   // useHintSystem must be called unconditionally (hooks rules)
   const { messages: chatMessages, loading: chatLoading, error: chatError, sendMessage, clearChat } = useHintSystem({
