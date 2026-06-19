@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "fermentId": "019ed85c-2e67-77f2-899b-3e67435e1ad6",
+  "phaseId": "phase-1",
+  "phaseName": "P1: Foundation & Backup",
+  "attempt": 1,
+  "timestamp": "2026-06-18T02:04:17.243Z",
+  "goal": "Create a reversible git backup, set up Vitest, apply build/tooling quick wins, and establish the test harness.",
+  "summary": "Phase 1 completed: created git backup branch, installed Vitest v4.1.9 with happy-dom and testing libraries, applied vite.config.ts build tweaks (reportCompressedSize: false, chunkSizeWarningLimit: 600), added index.html quick wins (defer on script, Amiri Arabic font preloads), and wrote comprehensive checkAnswerCorrect unit tests (28 tests covering 6 question types — all passing). Committed as ee1a496.",
+  "stepSummaries": "  1. Create git backup branch and verify no uncommitted changes exist. [verified]\n  2. Install Vitest, happy-dom, @testing-library/react, jsdom if needed, and configure test scripts in package.json. [verified]\n  3. Apply vite.config.ts build tweaks and index.html quick wins. [verified]\n  4. Write checkAnswerCorrect tests covering MCQ, Matching, FillBlank, TrueFalse, Essay, CaseStudy. [verified]",
+  "diffAvailable": true,
+  "diffFilesChanged": "index.html                 |    4 +-\n package-lock.json          | 1287 ++++++++++++++++++++++++++++++++++++++++++--\n package.json               |   14 +-\n src/app/utils/quiz.test.ts |  222 ++++++++\n vite.config.ts             |   23 +-\n 5 files changed, 1510 insertions(+), 40 deletions(-)",
+  "flags": [],
+  "derivedGrade": "A",
+  "reviewerRationale": "All gates pass; project checks validate.",
+  "gateVerdicts": [
+    {
+      "id": "F1",
+      "verdict": "pass",
+      "rationale": "Steps 1-4 were all verified with real commands or tests. S2 (npm test) is real test execution. S3 (build tweaks) is config validation via grep. No proxy-only steps.",
+      "evidence": "Step 1: git branch listed backup/matching-ai-hints. Step 2: vitest v4.1.9 installed. Step 3: grep confirmed reportCompressedSize, defer, and amiri preloads. Step 4: 28 tests passed."
+    },
+    {
+      "id": "F2",
+      "verdict": "pass",
+      "rationale": "Phase goal was to create reversible backup, set up test harness, and apply build quick wins. All are delivered: backup branch exists, Vitest runs tests, vite.config.ts and index.html are optimized, quiz.test.ts validates core scoring logic.",
+      "evidence": "backup branch, package.json with test scripts, vite.config.ts with test block and build opts, index.html with defer+preloads, src/app/utils/quiz.test.ts with 28 passing tests."
+    },
+    {
+      "id": "F3",
+      "verdict": "pass",
+      "rationale": "Nothing deferred. All planned items in Phase 1 were completed and committed as a single logical commit.",
+      "evidence": "Commit ee1a496 includes all Phase 1 changes."
+    }
+  ],
+  "projectChecks": {
+    "discovered": true,
+    "anyFailed": false,
+    "commands": [
+      {
+        "kind": "test",
+        "command": "npm test",
+        "exitCode": 0,
+        "durationMs": 0,
+        "timedOut": false
+      }
+    ]
+  }
+}

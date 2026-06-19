@@ -185,7 +185,7 @@ export function AIChatPanel({
                       <button
                         type="button"
                         onClick={() => setExpanded(false)}
-                        className="rounded-md p-1 text-gray-400 dark:text-white/30 hover:text-gray-600 dark:hover:text-white/60 hover:bg-gray-100 dark:hover:bg-white/5 transition-colors"
+                        className="rounded-md p-1 text-gray-400 dark:text-white/30 hover:text-gray-600 dark:hover:text-white/60 hover:bg-gray-100 dark:hover:bg-white/5 transition-colors btn-press"
                         aria-label="Collapse"
                       >
                         <ChevronDown size={14} />
@@ -194,7 +194,7 @@ export function AIChatPanel({
                         <button
                           type="button"
                           onClick={onClear}
-                          className="rounded-md px-2 py-1 text-[11px] text-gray-400 dark:text-white/30 hover:text-gray-600 dark:hover:text-white/60 hover:bg-gray-100 dark:hover:bg-white/5 transition-colors"
+                          className="rounded-md px-2 py-1 text-[11px] text-gray-400 dark:text-white/30 hover:text-gray-600 dark:hover:text-white/60 hover:bg-gray-100 dark:hover:bg-white/5 transition-colors btn-press"
                         >
                           {txt.clear}
                         </button>
@@ -321,7 +321,7 @@ export function AIChatPanel({
                 onClick={handleSubmit}
                 disabled={!inputValue.trim() || loading}
                 aria-label={txt.send}
-                className="absolute end-2 bottom-2 flex h-7 w-7 items-center justify-center rounded-full bg-gray-900 dark:bg-white/15 hover:bg-gray-800 dark:hover:bg-white/20 text-white dark:text-white/90 transition-all disabled:cursor-not-allowed disabled:opacity-40 hover:scale-105 active:scale-95"
+                className="absolute end-2 bottom-2 flex h-7 w-7 items-center justify-center rounded-full bg-gray-900 dark:bg-white/15 hover:bg-gray-800 dark:hover:bg-white/20 text-white dark:text-white/90 transition-all disabled:cursor-not-allowed disabled:opacity-40 hover:scale-105 active:scale-95 btn-press"
               >
                 {loading ? (
                   <Loader2 size={14} className="animate-spin" />
@@ -334,7 +334,7 @@ export function AIChatPanel({
                 <button
                   type="button"
                   onClick={() => setExpanded(true)}
-                  className="absolute end-10 bottom-2 rounded-md p-1 text-gray-400 dark:text-white/30 hover:text-gray-600 dark:hover:text-white/60 transition-colors"
+                  className="absolute end-10 bottom-2 rounded-md p-1 text-gray-400 dark:text-white/30 hover:text-gray-600 dark:hover:text-white/60 transition-colors btn-press"
                   aria-label="Expand"
                 >
                   <ChevronUp size={14} />

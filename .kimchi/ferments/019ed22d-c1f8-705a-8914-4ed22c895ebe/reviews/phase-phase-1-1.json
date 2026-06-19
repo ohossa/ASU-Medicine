@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "fermentId": "019ed22d-c1f8-705a-8914-4ed22c895ebe",
+  "phaseId": "phase-1",
+  "phaseName": "Extract TOC & Build Keyword Dictionary",
+  "attempt": 1,
+  "timestamp": "2026-06-16T23:23:52.331Z",
+  "goal": "Parse the book OCR and Anki theory cards to produce a machine-readable chapter/subject taxonomy and keyword-to-mapping dictionaries",
+  "summary": "Phase 1 verified complete: extracted book TOC for 10 chapters with authorized subjects, parsed 3,111 theory Anki cards (skipped 294 practical), merged into unified keyword dictionaries. Deliverables: .kimchi/docs/book-toc.json, .kimchi/docs/anki-keywords.json, .kimchi/docs/keyword-dictionary.json.",
+  "stepSummaries": "  1. Read the book OCR (`CNS part 1 and 2.txt`) and extract the exact Table of Contents for all 10 chapters with their subjects [verified]\n  2. Parse the Anki file, skip practical cards, and extract keywords/tags per Chapter/Subject for dictionary building [verified]\n  3. Combine book TOC topics and Anki keywords into unified keyword dictionaries per (chapter, subject) pair [verified]",
+  "diffAvailable": false,
+  "flags": [],
+  "derivedGrade": "A",
+  "reviewerRationale": "All gates pass; project checks validate.",
+  "gateVerdicts": [
+    {
+      "id": "F1",
+      "verdict": "pass",
+      "rationale": "All 3 steps verified: book TOC extracted with Python assertion (len=10, all have subjects), Anki cards parsed and practical cards excluded, keyword dictionaries merged and validated.",
+      "evidence": "All step statuses show 'verified' in ferment state: step-1, step-2, step-3 of phase-1"
+    },
+    {
+      "id": "F2",
+      "verdict": "pass",
+      "rationale": "Phase output is machine-readable chapter/subject taxonomy and keyword dictionaries that enabled Phase 2 classifier construction.",
+      "evidence": ".kimchi/docs/book-toc.json, .kimchi/docs/anki-keywords.json, .kimchi/docs/keyword-dictionary.json exist and were consumed by classify-hybrid-fix2.py"
+    },
+    {
+      "id": "F3",
+      "verdict": "pass",
+      "rationale": "Nothing deferred in Phase 1. All deliverables produced and verified.",
+      "evidence": "n/a"
+    }
+  ],
+  "projectChecks": {
+    "discovered": false,
+    "anyFailed": false,
+    "commands": []
+  }
+}

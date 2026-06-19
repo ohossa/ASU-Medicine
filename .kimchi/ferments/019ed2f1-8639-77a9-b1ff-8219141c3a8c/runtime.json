@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "stepStartCounts": {},
+  "blockRetries": {},
+  "lastBlockHashes": {},
+  "stepCompleteAttempts": {
+    "phase-1:step-1": 1,
+    "phase-1:step-2": 1,
+    "phase-1:step-3": 1,
+    "phase-2:step-1": 1,
+    "phase-2:step-2": 1,
+    "phase-2:step-3": 1,
+    "phase-2:step-4": 1,
+    "phase-3:step-1": 1,
+    "phase-3:step-2": 1,
+    "phase-3:step-3": 1,
+    "phase-4:step-1": 1,
+    "phase-4:step-2": 1,
+    "phase-4:step-3": 1
+  },
+  "phaseStartRefs": {
+    "phase-1": "0787a8674375bcdd0d4de6cbd783ab428a5a5fbc",
+    "phase-2": "46a9784dc484716229327beb51126526be798635",
+    "phase-3": "46a9784dc484716229327beb51126526be798635",
+    "phase-4": "46a9784dc484716229327beb51126526be798635"
+  },
+  "stepStartRefs": {
+    "phase-1:step-1": "46a9784dc484716229327beb51126526be798635",
+    "phase-1:step-2": "46a9784dc484716229327beb51126526be798635",
+    "phase-1:step-3": "46a9784dc484716229327beb51126526be798635",
+    "phase-2:step-1": "46a9784dc484716229327beb51126526be798635",
+    "phase-2:step-2": "46a9784dc484716229327beb51126526be798635",
+    "phase-2:step-3": "46a9784dc484716229327beb51126526be798635",
+    "phase-2:step-4": "46a9784dc484716229327beb51126526be798635",
+    "phase-3:step-1": "46a9784dc484716229327beb51126526be798635",
+    "phase-3:step-2": "46a9784dc484716229327beb51126526be798635",
+    "phase-3:step-3": "46a9784dc484716229327beb51126526be798635",
+    "phase-4:step-1": "46a9784dc484716229327beb51126526be798635",
+    "phase-4:step-2": "46a9784dc484716229327beb51126526be798635",
+    "phase-4:step-3": "46a9784dc484716229327beb51126526be798635"
+  }
+}

@@ -1,0 +1,36 @@
+.btn-press {
+  transition: transform 150ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn-press:active {
+  transform: scale(0.97);
+}
+
+.option-hover {
+  transition: all 150ms ease;
+  border-left: 3px solid transparent;
+}
+.option-hover:hover {
+  border-left-color: var(--color-accent, rgba(255,255,255,0.3));
+}
+.option-selected {
+  border-left-color: var(--color-accent, rgba(255,255,255,0.5));
+}
+
+.custom-cursor {
+  position: fixed;
+  pointer-events: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.4);
+  backdrop-filter: blur(2px);
+  transform: translate(-50%, -50%);
+  z-index: 99999;
+  transition: width 0.2s, height 0.2s, background 0.2s;
+}
+.custom-cursor.cursor-hover {
+  width: 24px;
+  height: 24px;
+  background: rgba(255,255,255,0.6);
+  border: 1px solid rgba(255,255,255,0.8);
+}

@@ -1,0 +1,3841 @@
+{
+  "chapter": 2,
+  "chapterTitle": "The Sensory System",
+  "chapterSubtitle": "",
+  "totalQuestions": 218,
+  "questions": [
+    {
+      "id": "mcns2-ch7-anatomy-q48",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Which tract is the main alternative (indirect) pathway to the corticospinal tract for motor control?",
+      "options": [
+        "Tectospinal tract",
+        "Lateral vestibulospinal tract",
+        "Medial reticulospinal tract",
+        "Rubrospinal tract",
+        "Olivospinal tract"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "The red nucleus/rubrospinal tract is the principal alternative motor pathway.",
+      "keyConcept": "Rubrospinal tract: main indirect pathway from cerebellum via red nucleus to spinal cord."
+    },
+    {
+      "id": "mcns2-ch1-histology-q41",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "The dorsal tegmental decussation is formed by",
+      "options": [
+        "Tectospinal",
+        "Rubrospinal",
+        "Anterior spinocerebellar",
+        "Posterior spinocerebellar"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "The dorsal tegmental decussation is formed by the TECTOSPINAL tract. Fibers from the superior colliculus cross in the dorsal tegmentum at the inferior colliculus level to descend and control neck muscles.",
+      "keyConcept": "Dorsal tegmental decussation: tectospinal tract crosses at inferior colliculus level."
+    },
+    {
+      "id": "mcns2-ch7-anatomy-q34",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 4,
+      "question": "Tectospinal tract origin is......",
+      "options": [
+        "Red nucleus",
+        "Medial vestibular nucleus",
+        "Lateral vestibular nucleus",
+        "Reticular formation",
+        "Superior colliculus"
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "The tectospinal tract originates from the contralateral superior colliculus and descends to the cervical spinal cord, mediating reflex adjustments of head and neck position in response to visual stimuli.",
+      "keyConcept": "Tectospinal tract originates from superior colliculus for head-neck reflexes to visual inputs."
+    },
+    {
+      "id": "mcns2-ch1-histology-q60",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 2,
+      "question": "Internal arcuate fibers:",
+      "options": [
+        "Arise from gracile and cuneate nuclei.",
+        "Terminate at gracile and cuneate nuclei.",
+        "Form lateral lemniscus.",
+        "Carry proprioceptive impulses from the head."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Internal arcuate fibers arise from the gracile and cuneate nuclei, decussate (cross the midline) in the medulla, and ascend as the medial lemniscus to the thalamus. They are the second-order neurons of the dorsal column-medial lemniscal pathway.",
+      "keyConcept": "Internal arcuate fibers arise from gracile and cuneate nuclei, form medial lemniscus"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q810",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "One of the following tracts carries sensations to subcortical level:",
+      "options": [
+        "Dorsal spinocerebellar tract.",
+        "Gracile tract.",
+        "Lateral spinothalamic.",
+        "Ventral spinothalamic."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Dorsal spinocerebellar tract carries proprioceptive information to the cerebellum (subcortical level); other tracts listed go to thalamus/cortex.",
+      "keyConcept": "Spinocerebellar tract function"
+    },
+    {
+      "id": "mcns2-ch7-anatomy-q20",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "A 45-year-old patient presents with difficulty walking, muscle weakness, and a loss of proprioception (awareness of body position). Imaging reveals a lesion in the spinal cord. Which major ascending tract in the spinal cord is most likely affected, leading to these symptoms?",
+      "options": [
+        "Corticospinal tract",
+        "Spinothalamic tract",
+        "Dorsal column-medial lemniscus pathway",
+        "Spinocerebellar tract",
+        "Anterolateral system"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "The dorsal column-medial lemniscus pathway carries proprioception, vibration sense, and fine discriminative touch from the body to the thalamus and then to the somatosensory cortex. Lesions cause loss of proprioception, vibration sense, and stereognosis. The spinothalamic tract carries pain and temperature; the corticospinal tract carries motor signals; spinocerebellar tracts carry proprioceptive data to the cerebellum.",
+      "keyConcept": "Dorsal column-medial lemniscus pathway = proprioception, vibration, fine touch; its lesion causes sensory ataxia and positive Romberg."
+    },
+    {
+      "id": "mcns2-ch10-anatomy-q12",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "A patient presents with difficulty in walking, a loss of proprioception (awareness of body position), and a positive Romberg sign (swaying or falling when asked to stand with eyes closed). Imaging reveals a lesion in the spinal cord. Which neural tract is most likely affected in this case?",
+      "options": [
+        "Corticospinal tract",
+        "Spinocerebellar tract",
+        "Dorsal column-medial lemniscus pathway",
+        "Spinothalamic tract",
+        "Anterolateral system"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "The dorsal column-medial lemniscus pathway carries proprioception, vibration sense, and fine (discriminative) touch. A lesion causing loss of proprioception and a positive Romberg sign (swaying/falling with eyes closed) indicates dorsal column damage. The spinothalamic tract carries pain and temperature; the corticospinal tract carries motor signals; spinocerebellar tracts carry proprioceptive information to the cerebellum.",
+      "keyConcept": "Loss of proprioception, vibration sense, stereognosis, and positive Romberg sign = dorsal column-medial lemniscus pathway lesion."
+    },
+    {
+      "id": "mcns2-ch1-histology-q55",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 2,
+      "question": "Which of the following tracts DON'T extend to all segment of spinal cord?",
+      "options": [
+        "Lateral vestibulospinal tract.",
+        "Medullary reticulospinal tract.",
+        "Pontine reticulospinal tract.",
+        "Tectospinal tract."
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "The tectospinal tract is present only in upper cervical segments (C1-C6/8), originating from the tectum of midbrain. It does not extend to all spinal cord levels, unlike the vestibulospinal and reticulospinal tracts.",
+      "keyConcept": "Tectospinal tract does NOT extend to all spinal segments (present only in upper cervical)"
+    },
+    {
+      "id": "mcns2-ch1-histology-q42",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "The ventral tegmental decussation is formed by",
+      "options": [
+        "Tectospinal",
+        "Rubrospinal",
+        "Anterior spinocerebellar",
+        "Posterior spinocerebellar"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "The VENTRAL tegmental decussation is formed by the RUBROSPINAL tract. Fibers from the red nucleus cross in the midbrain (at superior colliculus level) to descend and control limb flexor muscles.",
+      "keyConcept": "Ventral tegmental decussation: rubrospinal tract crosses at superior colliculus level."
+    },
+    {
+      "id": "mcns2-ch3-histology-q17",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 2,
+      "question": "The superior colliculus of midbrain is formed of the following EXCEPT:",
+      "options": [
+        "Stratum basale.",
+        "Stratum zonale.",
+        "Stratum opticum.",
+        "Stratum lemnisci."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "The superior colliculus has layers: stratum zonale (superficial), stratum opticum, stratum lemnisci, and stratum basale (deep). The dorsal tegmental tract is a fiber tract, not part of the colliculus structure.",
+      "keyConcept": "Superior colliculus layers: zonale, opticum, lemnisci, basale (NOT dorsal tegmental tract)"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q540",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Dorsal tegmental decussation:",
+      "options": [
+        "Formed of rubrospinal tract",
+        "Its fibers descend in all segments of spinal cord.",
+        "Present in inferior level of midbrain.",
+        "Formed by tectospinal tract."
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "The dorsal tegmental decussation is formed by the TECTOSPINAL tract, which crosses at the level of the inferior colliculus in the midbrain. It descends to control neck muscles in response to visual stimuli. It is not the rubrospinal tract and does not descend in all spinal segments.",
+      "keyConcept": "Dorsal tegmental decussation: tectospinal tract crosses at inferior colliculus level, controls neck muscles."
+    },
+    {
+      "id": "mcns2-ch7-anatomy-q30",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 3,
+      "question": "Which extrapyramidal tract helps adjust the head and neck in response to visual and cutaneous stimuli?",
+      "options": [
+        "Tectospinal",
+        "Rubrospinal",
+        "Reticulospinal",
+        "Vestibulospinal",
+        "Corticospinal"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "The tectospinal tract originates from the superior colliculus and carries reflexes related to head and neck movement in response to visual stimuli, decussating at the midbrain.",
+      "keyConcept": "Tectospinal tract mediates reflex head movements toward visual stimuli, crossing at midbrain level."
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q60",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Proprioceptive sensation from the big toe ascends to the brainstem through which fibers?",
+      "options": [
+        "Spinothalamic tract",
+        "External arcuate fibers",
+        "Cuneate fibers",
+        "Anterior corticospinal tract",
+        "Internal arcuate fibers"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Proprioception from the lower limb ascends via the gracile fasciculus in the posterior columns to the gracile nucleus in the medulla, then decussates as internal arcuate fibers to form the medial lemniscus.",
+      "keyConcept": "Gracile fasciculus carries lower limb proprioception to the medulla before decussation."
+    },
+    {
+      "id": "mcns2-ch7-physiology-q12",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 3,
+      "question": "In a patient with an upper motor neuron lesion, superficial reflexes (e.g., abdominal reflex) are absent. Which tract is most likely intact?",
+      "options": [
+        "Spinothalamic tract",
+        "Dorsal column–medial lemniscal pathway",
+        "Spinocerebellar tract",
+        "Corticospinal tract",
+        "Rubrospinal tract"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Upper motor neuron lesions abolish superficial reflexes (abdominal, cremasteric) due to disruption of descending cortical facilitation to spinal interneurons.",
+      "keyConcept": "UMN lesions eliminate superficial reflexes by removing cortical facilitation to spinal reflex arcs."
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q77",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Which tract is responsible for spino‑visual reflexes (turning the head and eyes toward a cutaneous stimulus)?",
+      "options": [
+        "Cuneocerebellar",
+        "Ventral spinothalamic",
+        "Lateral spinothalamic",
+        "Spinoreticular",
+        "Spinotectal"
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "The spinotectal tract carries pain information to the superior colliculus for reflex head and eye movements toward cutaneous stimuli.",
+      "keyConcept": "Spinotectal reflex"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q107",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Sacral fibers are the most medial fibers in the spinal cord during its ascend through:",
+      "options": [
+        "Lateral spinothalamic tract.",
+        "Ventral spinothalamic tract.",
+        "Gracile tract.",
+        "Cuneate tract.",
+        "Trigeminal lemniscus."
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "In the gracile tract, sacral fibers are located most medially (near the posterior median sulcus) while cervical fibers are most lateral. This somatotopic arrangement is maintained throughout the tract.",
+      "keyConcept": "Sacral fibers most medial in gracile tract"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q858",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Unconscious proprioception from the biceps brachii is carried primarily by which tract?",
+      "options": [
+        "Gracile",
+        "Cuneate",
+        "Posterior spinocerebellar",
+        "Anterior spinocerebellar",
+        "Spino‑olivary"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "The cuneate tract carries proprioception from the upper limb (including biceps brachii) and synapses in the cuneate nucleus of the medulla.",
+      "keyConcept": "Upper limb proprioception tract"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q58",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Regarding Crude Touch sensation:",
+      "options": [
+        "Is perceived at the level of the sensory cortex",
+        "Is transmitted through dorsal column pathway",
+        "Its receptors are Meissner’s corpuscles",
+        "Is better felt in non-hairy skin areas",
+        "It is one of the protopathic sensations"
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "Crude touch is one of the protopathic (primitive) sensations along with pain and temperature. It is transmitted through the anterior spinothalamic tract (not dorsal column), perceived at the level of the thalamus (not cortex), and uses free nerve endings (not Meissner's corpuscles).",
+      "keyConcept": "Protopathic sensations (crude touch, pain, temperature) travel via anterolateral system; epicritic (fine touch, vibration) via dorsal column."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1062",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Unconscious proprioception from the upper limb (elbow/wrist) is carried by the:",
+      "options": [
+        "Anterior spinocerebellar tract",
+        "Posterior spinocerebellar tract",
+        "Gracile fasciculus",
+        "Cuneocerebellar tract",
+        "Lateral spinothalamic tract"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "The cuneocerebellar tract carries unconscious proprioception from the upper limb.",
+      "keyConcept": "Cuneocerebellar tract carries unconscious proprioception from upper limb to cerebellum."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q697",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Hemisection of the spinal cord most likely produces which finding?",
+      "options": [
+        "Loss of all types of sensation of the opposite side at the level of the lesion",
+        "Loss of proprioception of the opposite side below the level of the lesion",
+        "Loss of dorsal column sensations of the same side below the level of the lesion",
+        "Lower motor neuron lesion of the opposite side at the level of the lesion",
+        "Upper motor neuron lesion of the opposite side at the level of the lesion"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Spinal cord hemisection produces the classic Brown-Sequard pattern: ipsilateral upper motor neuron paralysis, loss of proprioception and vibration sense, with contralateral loss of pain and temperature beginning a few segments below.",
+      "keyConcept": "Hemisection causes classic Brown-Sequard syndrome with dissociated sensory loss and UMN signs."
+    },
+    {
+      "id": "mcns2-ch7-anatomy-q4",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "All statements about ventral spinothalamic tract are true Except:",
+      "options": [
+        "Is concerned with crude touch and pressure.",
+        "Its fibers decussate in the medulla oblongata.",
+        "Terminates in ventral posterolateral nucleus of thalamus.",
+        "Shares in formation of spinal lemniscus.",
+        "Lies in the anterior white column."
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "The ventral spinothalamic tract decussates at the spinal cord level (not medulla) before ascending. It carries crude touch and pressure, lies in the anterior white column, and terminates in VPL of thalamus.",
+      "keyConcept": "Ventral spinothalamic decussates at spinal cord level"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q881",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Which of the following inhibits pain sensation?",
+      "options": [
+        "Adaptation of pain receptors",
+        "Increased kinin release",
+        "Naloxone injection",
+        "Stimulation of opioid receptors",
+        "Activation of the lateral spinothalamic tract"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Opioid receptor stimulation activates descending pain inhibition pathways, reducing pain transmission at the spinal cord level.",
+      "keyConcept": "Opioid pain inhibition"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q472",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "The spinal tract involved with the control of trunk muscles is:",
+      "options": [
+        "anterior corticospinal",
+        "anterior spinocerebellar",
+        "spino-olivary",
+        "lateral corticospinal",
+        "vestibulospinal"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "The anterior corticospinal tract descends from the motor cortex in the lateral column but then crosses in the spinal cord (anterior white commissure) and supplies the TRUNK muscles (axial and proximal limb muscles). It is involved in fine control of trunk posture and proximal limb movements. The lateral corticospinal tract controls limb muscles.",
+      "keyConcept": "Anterior corticospinal tract controls axial/trunk muscles; decussates in spinal cord. Lateral corticospinal tract controls limb muscles."
+    },
+    {
+      "id": "mcns2-ch7-anatomy-q28",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Which tract continues as the neospinothalamic pathway carrying pain and temperature sensations to the thalamus?",
+      "options": [
+        "Spinoreticular tract",
+        "Medial lemniscus",
+        "Spinocerebellar tract",
+        "Spinal lemniscus",
+        "Corticospinal tract"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "The neospinothalamic tract carries fast, sharp pain and temperature via lateral spinothalamic fibers. It ascends through the brainstem and terminates in the ventral posterolateral (VPL) thalamic nucleus.",
+      "keyConcept": "Neospinothalamic tract conveys rapid, well-localized pain via direct pathway to thalamus."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q473",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "A 32-year-old male patient presents with a loss of lower extremity motor control on the left side. He exhibits a Babinski sign and has increased deep tendon reflexes in the left lower extremity. He has no loss of sensation. The structure lesioned in the spinal cord is the:",
+      "options": [
+        "left lateral corticospinal tract",
+        "right lateral corticospinal tract",
+        "left sciatic nerve",
+        "right sciatic nerve",
+        "right fasciculus gracilis"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Left lower limb motor weakness with Babinski sign and increased deep tendon reflexes (UMN signs) indicates a lesion of the LEFT lateral corticospinal tract. The corticospinal tract decussates in the medulla (pyramidal decussation), so a lesion below this level affects the IPSILATERAL side below the lesion. Left corticospinal tract lesion causes left-sided weakness.",
+      "keyConcept": "Left corticospinal tract lesion = LEFT lower limb weakness with UMN signs (Babinski, hyperreflexia); tract decussates in medulla."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q93",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Conscious proprioception from right lower limb are carried by:",
+      "options": [
+        "Left lateral spinothalamic tract.",
+        "Right cuneate tract.",
+        "Tracts of left posterior white column.",
+        "Right gracile tract.",
+        "None of the above."
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Conscious proprioception from the right lower limb is carried by the right gracile tract, which ascends ipsilaterally in the posterior column and decussates in the medulla.",
+      "keyConcept": "Gracile tract is ipsilateral for lower limb proprioception"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q89",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "The ability to recognize an unseen familiar object placed in the hand depends on the integrity of which tract?",
+      "options": [
+        "Gracile T.",
+        "Cuneate T.",
+        "Lateral spinothalamic T.",
+        "Anterior spinothalamic T.",
+        "Spinotectal T."
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "Recognizing a familiar object by touch (stereognosis) requires fine touch and proprioception, carried by the cuneate tract from the upper limb. The gracile tract carries these sensations from the lower body.",
+      "keyConcept": "Cuneate tract carries fine touch from upper limb"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q15",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Tegmentum pontis contains all the following structures EXCEPT:",
+      "options": [
+        "V cranial nerve nuclei.",
+        "Spinothalamic tract.",
+        "Medial longitudinal bundle.",
+        "Reticular formation.",
+        "Transverse pontine fibers."
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "The parasympathetic nucleus of the glossopharyngeal nerve is the inferior salivary nucleus. It provides parasympathetic innervation to the parotid gland via the otic ganglion.",
+      "keyConcept": "Inferior salivary nucleus - parasympathetic to parotid"
+    },
+    {
+      "id": "mcns2-ch7-anatomy-q29",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 4,
+      "question": "Which thalamic nuclei receive input from the paleospinothalamic tract?",
+      "options": [
+        "Ventral posterolateral nucleus (VPLN)",
+        "Ventral posteromedial nucleus (VPMN)",
+        "Spinal nucleus of trigeminal",
+        "Lateral geniculate",
+        "Intralaminar nucleus"
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "The paleospinothalamic tract (archispinothalamic) carries slow, dull pain and temperature to the intralaminar nuclei of the thalamus, which project diffusely to association cortex.",
+      "keyConcept": "Paleospinothalamic tract terminates in intralaminar thalamic nuclei for poorly localized pain."
+    },
+    {
+      "id": "mcns2-ch7-anatomy-q36",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 2,
+      "question": "Ventral spinothalamic tract is:",
+      "options": [
+        "on same side",
+        "on opposite side",
+        "ascend in pons then thalamus",
+        "b, c"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "The ventral spinothalamic tract crosses at the spinal cord level and ascends through the brainstem, eventually reaching the thalamus via the spinal lemniscus.",
+      "keyConcept": "Ventral spinothalamic tract"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q872",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "A patient with a spinal cord lesion has loss of vibration and position sense in both legs but normal pain and temperature sensation. Which tract is most likely affected?",
+      "options": [
+        "Lateral spinothalamic",
+        "Anterior spinothalamic",
+        "Gracile",
+        "Cuneate",
+        "Spinocerebellar"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Bilateral loss of vibration and position sense with preserved pain/temperature indicates gracile tract lesion, as it carries proprioception and vibration from the legs.",
+      "keyConcept": "Gracile tract lesion"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q94",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Unconscious proprioception is carried by:",
+      "options": [
+        "Gracile and cuneate tracts.",
+        "Spinocerebellar tracts.",
+        "Ventral spinothalamic tract.",
+        "Lateral spinothalamic tract.",
+        "None of the above."
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "Unconscious proprioception, which does not reach conscious awareness, is carried to the cerebellum by the anterior and posterior spinocerebellar tracts.",
+      "keyConcept": "Spinocerebellar tracts carry unconscious proprioception"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q95",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "The right spinal lemniscus carries sensations of:",
+      "options": [
+        "Pain and temperature from left side of the body.",
+        "Conscious proprioception from left side of the body.",
+        "Muscle tone from right side of body.",
+        "All of the above.",
+        "None of the above."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "The spinal lemniscus is formed by fibers of the spinothalamic tracts after they decussate. Pain and temperature from the left body crosses to the right spinal lemniscus.",
+      "keyConcept": "Spinal lemniscus carries contralateral pain/temperature"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q98",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "The cuneate tract carries which of the following sensations?",
+      "options": [
+        "Crude touch from upper limb.",
+        "Fine touch from upper limb.",
+        "Crude touch from upper & lower limbs.",
+        "Fine touch from upper & lower limbs.",
+        "Unconscious proprioception from upper and lower limbs."
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "The cuneate tract carries fine (discriminative) touch from the upper limb only. Crude touch from upper limb is carried by the ventral spinothalamic tract. Lower limb fine touch uses the gracile tract.",
+      "keyConcept": "Cuneate tract carries fine touch from upper limb only"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q465",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "A 28-year-old patient is involved in a car accident and sustains a traumatic injury to their spinal cord. As a result, they lose motor function below the waist and have no sensation in their lower limbs. Based on the location of the injury, which region of the spinal cord is most likely affected?",
+      "options": [
+        "Cervical",
+        "Thoracic",
+        "Lumbar",
+        "Sacral",
+        "Coccygeal"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Loss of motor function below the waist and no sensation in lower limbs indicates a lesion affecting the lumbar and sacral regions of the spinal cord. The lumbar spinal cord segments (L1-L5) are located around T11-L1 vertebral levels. The cervical region controls the upper limbs; thoracic region controls the trunk. In this adult, the lesion is in the lower spinal cord.",
+      "keyConcept": "Motor and sensory loss in lower limbs = lumbar/sacral spinal cord region; controls lower limb movement and sensation."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q467",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "A 50-year-old female patient presents to the clinic with a chief complaint of right-sided hemiparesis. She reports that she woke up this morning and was unable to move her right arm or leg. Which of the following anatomical areas of the brain is most likely affected in this patient?",
+      "options": [
+        "Post central gyrus",
+        "Angular gyrus",
+        "Precentral gyrus",
+        "The opercular and triangular parts of the inferior frontal gyrus",
+        "Superior lip of posterior ramus of lateral sulcus"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "The precentral gyrus (primary motor cortex) in the frontal lobe is the region responsible for voluntary motor control. Hemiparesis (weakness of right arm and leg) indicates a lesion in the LEFT precentral gyrus (contralateral to the affected side). The postcentral gyrus is somatosensory; the angular gyrus is for reading and language; Broca's area is for speech production.",
+      "keyConcept": "Right-sided hemiparesis = lesion in the LEFT precentral gyrus (primary motor cortex); contralateral motor control."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q659",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Syringomyelia first affects",
+      "options": [
+        "Vibration sense",
+        "Pain and temperature on both sides of the body",
+        "Pain and temperature on one side of the body",
+        "Touch sensation",
+        "Motor activity"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "Syringomyelia (fluid-filled cavity in central spinal cord) first affects crossing spinothalamic fibers in the anterior white commissure, causing bilateral loss of pain and temperature sensation in a cape-like distribution.",
+      "keyConcept": "Syringomyelia sensory loss pattern"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q678",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Loss of pain and temperature sensation from the face, with involvement of the corresponding ascending pathway, indicates a lesion in which of the following?",
+      "options": [
+        "Spinal lemniscus",
+        "Trigeminal lemniscus",
+        "Medial lemniscus",
+        "Lateral lemniscus",
+        "Corticobulbar tract"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "Loss of pain/temperature on the same side of face (trigeminal) with opposite body side indicates a lesion at the junction of medulla and spinal cord affecting the spinal trigeminal nucleus and lateral spinothalamic tract.",
+      "keyConcept": "Alternating sensory loss (ipsilateral face, contralateral body) localizes to the craniocervical junction."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q690",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 5,
+      "question": "Loss of sensation from the left upper limb indicates a lesion in which of the following areas?",
+      "options": [
+        "Right postcentral gyrus",
+        "Left postcentral gyrus",
+        "Right paracentral gyrus",
+        "Left paracentral gyrus",
+        "Left precentral gyrus"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "The left upper limb sensory representation is in the right postcentral gyrus (postcentral gyrus), located in the parietal lobe, specifically the upper part near the central sulcus.",
+      "keyConcept": "Upper limb somatosensory cortex is located in the postcentral gyrus, above the lateral sulcus."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q748",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 2,
+      "question": "Posterior column lies between:",
+      "options": [
+        "posterior median septum, anterior horn",
+        "posterior median septum, posterior horn",
+        "anterior median fissure, posterior horn",
+        "anterior median fissure , anterior horn"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "The posterior (dorsal) column lies between the posterior median septum and the posterior horn, carrying proprioception and fine touch sensation.",
+      "keyConcept": "Posterior column location"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q749",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 2,
+      "question": "Anterior column lies between:",
+      "options": [
+        "posterior median septum, anterior horn",
+        "posterior median septum, posterior horn",
+        "anterior median fissure, posterior horn",
+        "anterior median fissure , anterior horn"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "The anterior column lies between the anterior median fissure and the anterior horn, containing motor neurons for voluntary movement.",
+      "keyConcept": "Anterior column location"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q750",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 2,
+      "question": "Lateral column lies between:",
+      "options": [
+        "posterior median septum , anterior horn",
+        "anterior column, posterior column",
+        "anterior median fissure, posterior horn",
+        "posterior median fissure , anterior horn"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "The lateral column lies between the anterior and posterior columns, containing ascending sensory and descending motor pathways.",
+      "keyConcept": "Lateral column location"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q775",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 2,
+      "question": "Spinal lemniscus made by joining:",
+      "options": [
+        "ventral, dorsal spinothalamic",
+        "ventral , lateral spinothalamic",
+        "dorsal, lateral spinothalamic",
+        "None of above"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "The spinal lemniscus is formed by the union of ventral and lateral spinothalamic tracts, carrying pain and temperature sensation through the brainstem.",
+      "keyConcept": "Spinal lemniscus composition"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q844",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Which of the following can be found in a patient diagnosed with syringomyelia?",
+      "options": [
+        "loss of pain and temperature in the upper limbs and chest.",
+        "loss of touch in the upper limbs and chest",
+        "loss of pain and temperature in the abdomen and lower limbs",
+        "loss of touch in the abdomen and lower limbs"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Syringomyelia damages crossing spinothalamic fibers causing bilateral loss of pain and temperature in a cape-like distribution over upper limbs and chest.",
+      "keyConcept": "Syringomyelia presentation"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q851",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "A female patient has reduced pain and temperature sense in upper limbs and chest but her sense of tactile discrimination is perfectly normal in these areas. State which tract/tracts is/are involved and name the disease.",
+      "options": [
+        "Ventral spinothalamic – syringomyelia.",
+        "Lateral spinothalamic and gracile – Tabes dorsalis.",
+        "Ventral and lateral spinothalamic – syringomyelia.",
+        "Lateral spinothalamic – syringomyelia."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Syringomyelia damages the crossing spinothalamic fibers in the cervical cord, causing bilateral loss of pain and temperature with preserved tactile discrimination.",
+      "keyConcept": "Syringomyelia mechanism"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q863",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Which receptor is specialised for tactile discrimination and two‑point discrimination?",
+      "options": [
+        "Pacinian corpuscle",
+        "Ruffini ending",
+        "Free nerve ending",
+        "Krause end bulb",
+        "Meissner corpuscle"
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "Meissner corpuscles in the dermal papillae detect fine touch, texture, and two-point discrimination; they adapt rapidly and are numerous in fingertips.",
+      "keyConcept": "Meissner corpuscle function"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q870",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Clark’s nucleus (dorsal nucleus) is located in which lamina?",
+      "options": [
+        "Lamina V",
+        "Lamina VI",
+        "Lamina VII",
+        "Lamina VIII",
+        "Lamina IX"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Clarke's nucleus (dorsocentral nucleus) is located in Rexed lamina VII at T1-L2 levels, serving as the origin of the dorsal spinocerebellar tract.",
+      "keyConcept": "Clarke's nucleus lamina"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1056",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Contralateral sensation from the face and body is represented in the:",
+      "options": [
+        "Primary motor cortex (area 4)",
+        "Primary somatosensory area (SI)",
+        "Secondary somatosensory area (SII)",
+        "Premotor cortex (area 6)",
+        "Wernicke area"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "SI (areas 3,1,2) maps the contralateral half of the body and face.",
+      "keyConcept": "Face represented upside down in somatosensory cortex, with larger areas for lips and fingers."
+    },
+    {
+      "id": "mcns2-ch7-anatomy-q2",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "The lateral most fibers of the spinothalamic tract:",
+      "options": [
+        "Cervical fibers.",
+        "Upper thoracic fibers.",
+        "Lower thoracic fibers.",
+        "Lumbar fibers.",
+        "Sacral fibers."
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "The spinothalamic tracts show somatotopic organization where sacral fibers are most lateral (superficial) and cervical fibers are most medial (deep). This arrangement is preserved as fibers ascend through the brainstem.",
+      "keyConcept": "Sacral fibers are most lateral in spinothalamic tract"
+    },
+    {
+      "id": "mcns2-ch7-anatomy-q45",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "The dorsal spinocerebellar tract originates from which nucleus?",
+      "options": [
+        "Nucleus proprius",
+        "Clarke's nucleus",
+        "Substantia gelatinosa",
+        "Posteromarginal nucleus"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "The dorsal spinocerebellar tract originates from Clarke's nucleus (nucleus dorsalis) located in the intermediate grey matter at T1-L2 levels, carrying proprioceptive information to the cerebellum.",
+      "keyConcept": "Dorsal spinocerebellar tract originates from Clarke's nucleus."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q87",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Crude touch is carried on which tract?",
+      "options": [
+        "Lateral spinothalamic T.",
+        "Ventral spinothalamic T.",
+        "Spinocerebellar T.",
+        "Spinotectal T.",
+        "Cuneate T."
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "Crude touch and pressure are carried by the ventral (anterior) spinothalamic tract. Pain and temperature are carried by the lateral spinothalamic tract, while fine touch uses the dorsal columns.",
+      "keyConcept": "Ventral spinothalamic carries crude touch"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q92",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "The right medial lemniscus carries sensations of:",
+      "options": [
+        "Pain from the left side of the body.",
+        "Conscious proprioception from the left side of the body.",
+        "Muscle tone from right side of the body.",
+        "Crude touch from the left side of the body.",
+        "Fine touch from right side of body."
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "The medial lemniscus is formed by second order neurons of the dorsal column pathway (gracile and cuneate). It carries conscious proprioception and fine touch from the contralateral side of the body.",
+      "keyConcept": "Medial lemniscus carries contralateral fine touch/proprioception"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q96",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "The postcentral gyrus receives all the following sensations Except:",
+      "options": [
+        "Tactile discrimination.",
+        "Touch.",
+        "Muscle tone.",
+        "Pain and temperature.",
+        "Form."
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "The postcentral gyrus is the primary somatosensory cortex. It receives pain and temperature via the spinothalamic pathway, but does not receive muscle tone, which is a motor function.",
+      "keyConcept": "Postcentral gyrus processes sensory modalities except motor tone"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q97",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Sense of movement and sense of position are lost after lesion of:",
+      "options": [
+        "Spinorecticular tract.",
+        "Lateral spinothalamic tract.",
+        "Ventral spinothalamic tract.",
+        "Gracile and cuneate tracts.",
+        "Spinotectal tract."
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Sense of movement (kinesthesia) and position sense are carried by the dorsal column tracts (gracile and cuneate). Loss of these sensations indicates damage to the posterior columns.",
+      "keyConcept": "Gracile and cuneate tracts carry position/movement sense"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q101",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Which one of the following sensations has most of its fibers NOT synapsing in the spinal cord?",
+      "options": [
+        "Sensation of pain of left lower limb.",
+        "Sensation of crude touch of right upper limb.",
+        "Sensation of position of left upper limb.",
+        "Sensation of temperature of left big toe.",
+        "Sensation of pain of left shoulder."
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Fine touch and conscious proprioception from the upper limb (position sense) do not synapse in the spinal cord; their first order neurons pass directly to the dorsal column nuclei in the medulla.",
+      "keyConcept": "Dorsal column sensations bypass spinal synapse"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q114",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Syringomyelia first affects:",
+      "options": [
+        "Vibration sense.",
+        "Pain and temperature on both sides of the body.",
+        "Pain and temperature on one side of the body.",
+        "Touch sensation.",
+        "Motor activity."
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "Syringomyelia first affects crossing spinothalamic fibers in the central cord, causing bilateral loss of pain and temperature while preserving dorsal column functions (touch, proprioception).",
+      "keyConcept": "Syringomyelia affects crossing pain/temperature fibers"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q116",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "A patient who has a right hemisection of spinal cord at the level of T6 will suffer from all the following EXCEPT:",
+      "options": [
+        "Paralysis of muscles of 6th right intercostal space.",
+        "Loss of proprioception of right lower limb.",
+        "Loss of fine touch in right upper limb.",
+        "Loss of pain & temperature in left lower limb.",
+        "Paralysis of right lower limb."
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Right hemisection at T6 causes ipsilateral paralysis and proprioception loss in the right lower limb, contralateral pain/temperature loss in the left lower limb. Fine touch from upper limb uses dorsal columns which are unaffected.",
+      "keyConcept": "Hemisection spares ipsilateral upper limb fine touch"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q139",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Persistent pain in big toe is received in:",
+      "options": [
+        "Lower part of post central gyrus.",
+        "Upper part of post central gyrus.",
+        "Anterior part of paracentral lobule.",
+        "Posterior part of paracentral lobule.",
+        "Superior lip of lateral sulcus."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "The big toe is represented in the most medial and inferior part of the postcentral gyrus, which continues onto the paracentral lobule. The representation follows a somatotopic pattern with the foot at the medial surface.",
+      "keyConcept": "Big toe represented at medial postcentral gyrus/paracentral lobule"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q410",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "The layer rich in neuroblasts in the developing spinal cord is:",
+      "options": [
+        "Roof plate.",
+        "Mantle layer.",
+        "Marginal layer.",
+        "Floor plate.",
+        "All of the above."
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "The mantle layer (intermediate zone) of the developing spinal cord is rich in NEUROBLASTS (developing neurons) and is located between the ventricular zone (ependymal layer) and the marginal zone. The alar plate neuroblasts form the dorsal horn (sensory); the basal plate neuroblasts form the ventral horn (motor).",
+      "keyConcept": "Mantle layer (intermediate zone) contains neuroblasts; alar plate forms dorsal horn; basal plate forms ventral horn."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q474",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Which of the following might be the location of lesion in this patient? (referring to Question 31)",
+      "options": [
+        "Right C6 cord",
+        "Right C8 cord",
+        "Left C6 cord",
+        "Left C8 cord"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "In Brown-Sequard syndrome (hemisection of spinal cord), the lesion affects the ipsilateral corticospinal tract (motor paralysis) and ipsilateral dorsal column (loss of proprioception/vibration) below the lesion, while the contralateral spinothalamic tract (pain/temperature) is lost because it crosses within one or two segments. Left motor deficit + right pinprick loss = LEFT cord hemisection. At C8 level, this causes motor weakness in the left lower limb and sensory loss on the right below C8.",
+      "keyConcept": "Left motor + right pain loss = LEFT Brown-Sequard syndrome. Left C8 cord hemisection causes left lower limb weakness and right C8-dermatome pain loss."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q475",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "A patient with a traumatic lesion of the left half of the spinal cord at the level of the eighth cervical segment might present the following sign(s) and symptom(s):",
+      "options": [
+        "Loss of pain and temperature sensations on the left side below the level of the lesion",
+        "Loss of position sense of the right leg",
+        "Right hemiplegia",
+        "Left positive Babinski sign",
+        "Right-sided lower motor paralysis in the segment of the lesion and muscular atrophy"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "In left hemisection (Brown-Sequard syndrome), the corticospinal tract is damaged on the left side, causing ipsilateral UMN signs below the lesion. Option D is correct because the left corticospinal damage produces left-sided positive Babinski sign below C8. Option A is wrong (pain/temp loss is contralateral in spinothalamic tract damage). Option B is wrong (position sense loss is ipsilateral in dorsal column damage). Option C is wrong (hemiplegia would be ipsilateral, not right). Option E is wrong (LMN signs occur at the lesion level, not below).",
+      "keyConcept": "In spinal cord hemisection, ipsilateral UMN paralysis and Babinski sign occur below the lesion due to corticospinal tract damage."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q514",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Hemisection of spinal cord gives the following symptoms on the same side below the level of lesion:",
+      "options": [
+        "Proprioception loss",
+        "Upper motor neuron lesion",
+        "Loss of pain and temperature",
+        "All of the above",
+        "a & B only"
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "Brown-Sequard syndrome (hemisection of spinal cord): ipsilateral motor weakness and proprioception loss (corticospinal and dorsal columns) BELOW lesion; contralateral pain/temperature loss (spinothalamic) 1-2 segments below lesion.选项D正确. The answer is D. This is the classic dissociated sensory loss pattern.",
+      "keyConcept": "Brown-Sequard: ipsilateral motor/ proprioception loss, contralateral pain/temperature loss - below lesion level."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q653",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "The ventral grey column of the spinal cord contains the following groups of nerve cells Except",
+      "options": [
+        "Dorsomedial group",
+        "Ventrolateral group",
+        "Intermediolateral group",
+        "Central group",
+        "Retrodorsolateral group"
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "The ventral grey column contains dorsomedial, ventrolateral, intermediolateral, and central groups; the retrodorsolateral group is found in the dorsal horn (lamina IX), not ventral horn.",
+      "keyConcept": "Ventral horn neuronal groups"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q654",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "The gracile and cuneate tracts of the spinal cord are supplied by",
+      "options": [
+        "Anterior spinal artery",
+        "Posterior spinal artery",
+        "Radicular arteries",
+        "All of the above",
+        "Vertebral artery"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "The gracile and cuneate tracts are supplied by the posterior spinal arteries (branches of vertebral artery) and radicular arteries; the anterior spinal artery supplies anterior cord structures.",
+      "keyConcept": "Dorsal column arterial supply"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q657",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Hemisection of spinal cord gives the following symptoms on the same side below the level of lesion",
+      "options": [
+        "Proprioception loss",
+        "Upper motor neuron lesion",
+        "Loss of pain and temperature",
+        "All of the above",
+        "A & B only"
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "In spinal cord hemisection (Brown-Sequard), ipsilateral loss below lesion includes proprioception (dorsal columns) and upper motor neuron signs (corticospinal tract); pain/temperature loss is contralateral (spinothalamic decussation).",
+      "keyConcept": "Brown-Sequard ipsilateral signs"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q658",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "The following occur in Brown Sequard Syndrome Except",
+      "options": [
+        "Ipsilateral UMN lesion below level of lesion",
+        "Contralateral loss of exteroceptive sensations below level of lesion",
+        "Ipsilateral loss of proprioceptive sensations below level of lesion",
+        "Contralateral L.M.N. lesion at same level of lesion",
+        "Ipsilateral loss of pain and temperature at same level of lesion"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "In Brown-Sequard syndrome, the LMN lesion at the level of lesion is ipsilateral (not contralateral); the lesion involves corticospinal tract (ipsi UMN signs) and dorsal columns (ipsi proprioception).",
+      "keyConcept": "Brown-Sequard LMN lesion side"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q680",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 3,
+      "question": "Which of the following correctly pairs a neural structure with its functional role?",
+      "options": [
+        "Spinothalamic tract – conscious proprioception from lower limb",
+        "Cuneate nucleus – unconscious proprioception from upper limb",
+        "Gracile nucleus – conscious proprioception from lower limb",
+        "Dorsal spinocerebellar tract – unconscious proprioception from upper limb",
+        "Ventral spinocerebellar tract – unconscious proprioception from upper limb"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "The dorsal column-medial lemniscal pathway carries fine touch, vibration, and proprioception. The nucleus cuneatus (not gracilis) receives upper limb proprioception. Gracilis nucleus receives lower limb input.",
+      "keyConcept": "Dorsal column pathways are modality-specific: cuneatus for upper limb, gracilis for lower limb."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q681",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Which tracts carry kinesthetic sensation from the body?",
+      "options": [
+        "Anterior spinocerebellar tract",
+        "Dorsal spinocerebellar tract",
+        "Dorsal spinothalamic tract",
+        "Ventral spinothalamic tract",
+        "Gracile and Cuneate tracts"
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "Kinesthetic sensation (joint position, movement) travels via the dorsal column-medial lemniscal pathway: gracile fasciculus for lower body, cuneate fasciculus for upper body.",
+      "keyConcept": "Dorsal columns are the exclusive pathway for conscious proprioception and kinesthesia."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q683",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Unconscious proprioception from the wrist is carried through which of the following tracts?",
+      "options": [
+        "Cuneocerebellar tract",
+        "Dorsal spinocerebellar tract",
+        "Ventral spinocerebellar tract",
+        "Spinothalamic tract",
+        "Cuneate tract"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Unconscious proprioception from the upper limb is carried by cuneospinocerebellar fibers that travel in the inferior cerebellar peduncle to the cerebellum (not the dorsal columns which carry conscious proprioception).",
+      "keyConcept": "Cuneospinocerebellar tract carries unconscious upper limb proprioception via inferior cerebellar peduncle."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q693",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "A patient presents with sudden onset bilateral paraplegia and loss of pain and temperature sensation below a certain level. The most likely cause is:",
+      "options": [
+        "Anterior spinal artery occlusion",
+        "Posterior spinal artery occlusion",
+        "Adamkiewicz artery occlusion",
+        "Brown-Séquard syndrome",
+        "None of the above"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Anterior spinal artery syndrome causes bilateral motor paralysis (corticospinal tracts) and loss of pain/temperature (spinothalamic tracts) below the lesion, with preserved proprioception (dorsal columns supplied by posterior spinal arteries).",
+      "keyConcept": "Anterior spinal artery occlusion causes bilateral motor and pain/temperature loss with preserved proprioception."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q694",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "30-year-old male suffers a traumatic injury to his spine. He cannot move his legs and has lost all sensation below the level of the injury. Most likely diagnosis:",
+      "options": [
+        "Complete spinal cord transection at C4",
+        "Complete spinal cord transection at T5",
+        "Complete spinal cord transection at T8",
+        "Hemisection of spinal cord at T12",
+        "Brown-Séquard syndrome"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Bilateral leg weakness and loss of pain/temperature suggest anterior cord syndrome from anterior spinal artery occlusion. Posterior column function (proprioception) is preserved because they are supplied by posterior spinal arteries.",
+      "keyConcept": "Anterior cord syndrome spares dorsal columns while affecting lateral corticospinal and spinothalamic tracts."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q695",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Right hemisection of the spinal cord most likely produces which finding?",
+      "options": [
+        "Loss of all types of sensation of the left side at the level of the lesion",
+        "Loss of proprioception of the left side below the level of the lesion",
+        "Loss of pain and temperature sensations of the left side below the level of the lesion",
+        "Left lower motor neuron lesion at the level of the lesion",
+        "Left upper motor neuron lesion at the level of the lesion"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Right spinal cord hemisection (Brown-Sequard syndrome) causes ipsilateral motor paralysis and proprioception loss below the lesion, with contralateral pain/temperature loss starting 1-2 segments below.",
+      "keyConcept": "Brown-Sequard syndrome: ipsilateral UMN paralysis and dorsal column loss, contralateral pain/temperature loss."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q696",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Loss of proprioception on the same side of a lesion with loss of pain and temperature on the opposite side is characteristic of which condition?",
+      "options": [
+        "Complete spinal cord transection at C4",
+        "Complete spinal cord transection at T5",
+        "Complete spinal cord transection at T8",
+        "Complete spinal cord transection at T12",
+        "Brown-Séquard syndrome"
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "This pattern describes Brown-Sequard syndrome where ipsilateral proprioception (dorsal column) is lost with contralateral pain/temperature loss (spinothalamic) due to hemisection of the spinal cord.",
+      "keyConcept": "Ipsilateral proprioception + contralateral pain loss indicates hemisection (Brown-Sequard syndrome)."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q766",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 2,
+      "question": "........... tactile localization, discrimination",
+      "options": [
+        "fine touch",
+        "crude touch",
+        "pain, temperature",
+        "proprioception"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Fine (discriminative) touch enables tactile localization and two-point discrimination, mediated by Meissner corpuscles and Merkel discs traveling via the dorsal column-medial lemniscal pathway.",
+      "keyConcept": "Fine touch function"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q768",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 2,
+      "question": "All receptors of fine touch except:",
+      "options": [
+        "Meissner corpuscle",
+        "Merkel disc",
+        "Ruffini disc",
+        "tendon spindle"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Fine touch receptors include Meissner corpuscles, Merkel discs, and Ruffini endings; tendon spindles are proprioceptive receptors, not tactile.",
+      "keyConcept": "Fine touch receptors"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q771",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 2,
+      "question": "Receptors of crude touch are:",
+      "options": [
+        "Meissner corpuscle",
+        "Merkel disc , free nerve ending",
+        "peritrichial nerve ending",
+        "All the above"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Crude (light) touch receptors include Meissner corpuscles, Merkel discs combined with free nerve endings, and peritrichial (hair follicle) nerve endings.",
+      "keyConcept": "Crude touch receptors"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q776",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 2,
+      "question": "Receptors of pain, temperature are:",
+      "options": [
+        "Merkel disc",
+        "free nerve ending",
+        "Ruffini corpuscle",
+        "muscle spindle"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "Free nerve endings are the receptors for pain and temperature sensation throughout the body; they are the most primitive and widely distributed sensory receptors.",
+      "keyConcept": "Pain temperature receptors"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q777",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 2,
+      "question": "All characters of pain, temperature pathway except:",
+      "options": [
+        "small cell in spinal ganglia",
+        "enter lateral division of posterior root",
+        "medium cell in spinal ganglia that enter medial division of posterior root",
+        "have free nerve ending"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Pain and temperature pathway uses small cells in dorsal root ganglia entering via the lateral division (not medium cells entering medially).",
+      "keyConcept": "Pain pathway characteristics"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q840",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "If a patient cannot recognize an unseen familiar object placed in his hand, the sensory tract that might be affected is:",
+      "options": [
+        "Dorsal spinocerebellar tract",
+        "Cuneate tract",
+        "Spino-olivary tract",
+        "Ventral spinothalamic tract"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "Stereognosis (recognition of objects by touch) requires intact dorsal column-medial lemniscal pathway; cuneate tract carries this from the upper limb.",
+      "keyConcept": "Stereognosis pathway"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q865",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "The plexus of Bonnet is best described as:",
+      "options": [
+        "A capsulated receptor with concentric lamellae",
+        "A mechanoreceptor around hair follicles",
+        "A thermoreceptor in the dermis",
+        "A nociceptor in the epidermis",
+        "A proprioceptor in joint capsules"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "The plexus of Bonnet (hair follicle receptor network) is a mechanoreceptor formed by free nerve endings that wrap around hair follicles to detect hair movement.",
+      "keyConcept": "Plexus of Bonnet"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q866",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Which receptors are located most deeply in the skin (dermis and hypodermis)?",
+      "options": [
+        "Meissner and Merkel",
+        "Pacinian corpuscle and Ruffini endings",
+        "Krause end bulb and free nerve endings",
+        "Meissner and plexus of Bonnet",
+        "Merkel and free nerve endings"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "Pacinian corpuscles and Ruffini endings are the deepest tactile receptors, located in the dermis and hypodermis for vibration and stretch detection.",
+      "keyConcept": "Deep skin receptors"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1040",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "A patient with syringomyelia typically loses pain and temperature sensation in the upper limbs but retains touch and vibration. Which tract is damaged?",
+      "options": [
+        "Dorsal columns",
+        "Lateral spinothalamic tract",
+        "Anterior spinothalamic tract",
+        "Spinocerebellar tract"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "Syringomyelia damages the crossing fibers of the lateral spinothalamic tract in the cervical region, causing bilateral loss of pain and temperature while preserving dorsal column functions like touch and vibration.",
+      "keyConcept": "Syringomyelia: lateral spinothalamic tract damaged, losing pain/temperature but preserving touch/vibration."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1054",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "A patient has loss of pain and temperature on the right side of the body and loss of proprioception on the left side below the level of a spinal cord lesion. This pattern is characteristic of:",
+      "options": [
+        "Anterior cord syndrome",
+        "Brown-Sequard syndrome (hemisection)",
+        "Central cord syndrome",
+        "Posterior cord syndrome"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "This pattern describes Brown-Sequard syndrome: ipsilateral motor and proprioceptive loss (corticospinal and dorsal columns) below the lesion with contralateral pain/temperature loss (lateral spinothalamic crossing fibers).",
+      "keyConcept": "Brown-Sequard: ipsilateral motor and proprioception loss, contralateral pain loss below lesion."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1068",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Choose the correct statement about the sensory homunculus:",
+      "options": [
+        "It is the body representation within the motor cortex.",
+        "Somatosensory cortex corresponds point by point with regions in ipsilateral side of the body.",
+        "The body is represented upside down.",
+        "The body representation depends on the size of the target part."
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "The sensory homunculus represents the body upside-down (inverted) in the postcentral gyrus, with larger representations for areas with higher receptor density like lips and fingertips.",
+      "keyConcept": "Sensory homunculus: body represented upside-down in postcentral gyrus."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1075",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Regarding the development of the spinal cord, choose the incorrect combination:",
+      "options": [
+        "The lumen of the neural tube – the central canal.",
+        "The alar lamina – the ventral horns of the grey matter.",
+        "Neurons opposite the sulcus limitans – lateral horns of the grey matter.",
+        "The marginal layer – the white matter."
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "The alar lamina (sensory) forms the dorsal horns of grey matter, while the basal lamina (motor) forms the ventral horns - the statement incorrectly matches them.",
+      "keyConcept": "Alar lamina: dorsal horns; Basal lamina: ventral horns."
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q78",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "The right spinal lemniscus carries sensations of",
+      "options": [
+        "Pain and temperature from left side of the body",
+        "Conscious proprioception from left side of the body",
+        "Muscle tone from right side of body",
+        "All of the above",
+        "None of the above"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "The right spinal lemniscus carries pain and temperature sensation from the left side of the body (crossed fibers from spinothalamic tract); proprioception is carried in the dorsal column-medial lemniscus pathway.",
+      "keyConcept": "Spinal lemniscus crossed pain/temperature"
+    },
+    {
+      "id": "mcns2-ch7-anatomy-q1",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "The lateral most fibers of the dorsal column tract:",
+      "options": [
+        "Cervical fibers.",
+        "Upper thoracic fibers.",
+        "Lower thoracic fibers.",
+        "Lumbar fibers.",
+        "Sacral fibers."
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "The dorsal column tracts (gracile and cuneate) carry conscious proprioception and fine touch. The lateralmost fibers in the dorsal column represent sacral segments, which ascend most medially in the spinal cord.",
+      "keyConcept": "Sacral fibers are most lateral in dorsal columns"
+    },
+    {
+      "id": "mcns2-ch7-anatomy-q3",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Lateral spinothalamic tract carries the sensations of:",
+      "options": [
+        "Touch.",
+        "Vibration",
+        "Position.",
+        "Pain and temperature.",
+        "None of the above."
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "The lateral spinothalamic tract carries pain and temperature sensations. The ventral spinothalamic carries crude touch, while the dorsal columns carry fine touch, vibration, and proprioception.",
+      "keyConcept": "Lateral spinothalamic carries pain and temperature"
+    },
+    {
+      "id": "mcns2-ch7-anatomy-q35",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 5,
+      "question": "A patient has a lesion affecting the dorsal column tracts. Which artery is most likely affected?",
+      "options": [
+        "Anterior spinal artery",
+        "Posterior spinal artery",
+        "Radicular artery",
+        "Adamkiewicz artery",
+        "Posterior inferior cerebellar artery"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "The dorsal columns (gracile and cuneate fasciculi) are supplied by the posterior spinal arteries, which are branches of the vertebral arteries.",
+      "keyConcept": "Posterior spinal arteries supply the dorsal columns, unlike the anterior spinal artery supplying the cord anteriorly."
+    },
+    {
+      "id": "mcns2-ch9-anatomy-q11",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "A branch from cavernous part of internal carotid artery is:",
+      "options": [
+        "Carotficotympanic artery.",
+        "Pterygoid artery.",
+        "Hypophyseal artery.",
+        "Anterior choroidal artery.",
+        "Ophthalmic artery."
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "The lateral spinothalamic tract carries pain from the right lower limb, which was affected. The ipsilateral loss of vibration sense indicates dorsal column involvement (gracile tract for lower limb). The UMN signs and the pattern of sensory loss indicate a right hemisection (Brown-Sequard) at T6 level.",
+      "keyConcept": "Brown-Sequard syndrome causes ipsilateral motor and contralateral pain loss"
+    },
+    {
+      "id": "mcns2-ch9-anatomy-q33",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Lesion of the anterior spinal artery most likely produces which finding?",
+      "options": [
+        "Intact pain and temperature sensation",
+        "Intact dorsal column sensations",
+        "Intact voluntary motor function",
+        "Impaired conscious proprioception",
+        "Impaired unconscious proprioception"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "Anterior spinal artery syndrome causes bilateral loss of motor function (corticospinal tracts) and pain/temperature sensation (spinothalamic tracts), with dorsal column function (proprioception, vibration) preserved.",
+      "keyConcept": "Anterior spinal artery supplies corticospinal and spinothalamic tracts; dorsal columns are supplied by posterior arteries."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q767",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 2,
+      "question": "All receptors of proprioception except:",
+      "options": [
+        "tendon spindle",
+        "muscle spindle",
+        "Merkel",
+        "Pacinian corpuscle"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Proprioception receptors include muscle spindles, tendon spindles (Golgi tendon organs), and joint receptors; Merkel discs are tactile receptors, not proprioceptive.",
+      "keyConcept": "Proprioception receptors"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q811",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Receptor/s for proprioception is/are:",
+      "options": [
+        "I only.",
+        "II only.",
+        "III only.",
+        "I, II and III."
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Proprioception receptors include muscle spindles, Golgi tendon organs, and joint receptors (Pacinian corpuscles at joints), providing limb position sense.",
+      "keyConcept": "Proprioception receptors"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q871",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Gamma motor neurons are found in which lamina of the spinal cord?",
+      "options": [
+        "Lamina I",
+        "Lamina II",
+        "Lamina V",
+        "Lamina IX",
+        "Lamina X"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Gamma motor neurons are located in Rexed lamina IX of the anterior horn, innervating intrafusal muscle fibers within muscle spindles.",
+      "keyConcept": "Gamma motor neuron location"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1031",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Which of the following is a common microscopic feature between muscle spindle and Golgi tendon organ?",
+      "options": [
+        "They are both present in series with extrafusal fibres.",
+        "They are both unencapsulated.",
+        "They are both encapsulated receptors.",
+        "They both have motor innervation.",
+        "They both respond only to active contraction."
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Both muscle spindles and Golgi tendon organs are encapsulated receptors with connective tissue capsules surrounding their sensory endings, distinguishing them from free nerve endings.",
+      "keyConcept": "Both muscle spindle and Golgi tendon organ are encapsulated receptors."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q103",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "The first order neuron of pain pathway from face is:",
+      "options": [
+        "Trigeminal ganglion.",
+        "Geniculate ganglion.",
+        "Gracile and cuneate nuclei.",
+        "Main sensory nucleus.",
+        "Mesencephalic nucleus."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "The first order neuron for pain from the face is the pseudounipolar neuron in the trigeminal ganglion. Its peripheral process receives pain from the face, and central process enters the brainstem.",
+      "keyConcept": "Trigeminal ganglion is 1st neuron for face pain"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q463",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "A 20-year-old man presents to the clinic with a chief complaint of burning sensation in his forehead for 3 days duration, that lately is developing vesicles. He reported a history of a sever attack of common cold that resolved a week ago. A herpes Zoster infection was diagnosed. What is the most likely nerve involved in his complaint",
+      "options": [
+        "Mandibular",
+        "Trigeminal",
+        "Facial",
+        "Ophthalmic",
+        "Maxillary"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Herpes zoster on the forehead following a common cold (prodromal viral infection) indicates shingles of the ophthalmic division of the trigeminal nerve (CN V1). The forehead is supplied by the supraorbital and supratrochlear nerves (terminal branches of V1). The frontal nerve is the largest branch of the ophthalmic division. Ramsay Hunt syndrome affects CN VII.",
+      "keyConcept": "Herpes zoster on forehead = ophthalmic division of trigeminal nerve (CN V1) involvement (shingles)."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q679",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 5,
+      "question": "Loss of sensation from both the left face and left body indicates a lesion in which of the following areas?",
+      "options": [
+        "Right trigeminal nerve lesion",
+        "Left lateral spinothalamic region",
+        "Right lateral spinothalamic region",
+        "Left thalamic lesion",
+        "Right thalamic lesion"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Loss from both left face and left body indicates a lesion at the left principal sensory nucleus of trigeminal (for face) combined with left medial lemniscus (for body), which is the lateral pontine tegmentum.",
+      "keyConcept": "ipsilateral face and body sensory loss indicates a lesion affecting both trigeminal and spinothalamic pathways."
+    },
+    {
+      "id": "mcns2-ch1-histology-q3",
+      "subject": "histology",
+      "subjectName": "Histology",
+      "lecture": 1,
+      "question": "One of the following is NOT a character of Meissner’s corpuscle:",
+      "options": [
+        "It is an encapsulated nerve ending.",
+        "It is present in dermal papillae.",
+        "The Schwann cells are arranged in two cores.",
+        "The nerve fibers run spirally between the Schwann cells."
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Meissner's corpuscle has Schwann cells arranged in horizontal stacks (not spirally). The nerve fiber runs spirally between the Schwann cell stacks. Merkel's disc has nerve fibers running spirally. Meissner's is encapsulated, in dermal papillae, and responds to light touch.",
+      "keyConcept": "Meissner's corpuscle: Schwann cells in horizontal stacks, nerve fibers spiral; light touch receptor in dermal papillae."
+    },
+    {
+      "id": "mcns2-ch1-histology-q5",
+      "subject": "histology",
+      "subjectName": "Histology",
+      "lecture": 1,
+      "question": "Krause end bulb, all true except:",
+      "options": [
+        "Has gelatinous core",
+        "Is a mechanoreceptor.",
+        "Present in conjunctiva & mouth cavity.",
+        "Has flattened Teloglia cells."
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Krause end bulbs have spherical structures with a gelatinous core, function as cold receptors, and are found in conjunctiva and oral cavity. They are mechanoreceptors. The statement about flattened Teloglia cells is incorrect - they have a different structure.",
+      "keyConcept": "Krause end bulb: cold receptor, mechanoreceptor, gelatinous core, found in conjunctiva and mouth."
+    },
+    {
+      "id": "mcns2-ch1-histology-q7",
+      "subject": "histology",
+      "subjectName": "Histology",
+      "lecture": 1,
+      "question": "Pacinian corpuscle:",
+      "options": [
+        "Lies in dermal papillae of skin.",
+        "Noncapsulated receptor",
+        "Has transversely arranged schwann cells.",
+        "Nerve fibers run in spiral coarse.",
+        "Contain concentric layers of Teloglia."
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "Pacinian corpuscles have concentric layers of Teloglia (not Schwann cells arranged transversely). They are located deep in the dermis (not dermal papillae), are encapsulated (not non-capsulated), and the nerve fiber runs centrally (not in spiral).",
+      "keyConcept": "Pacinian corpuscle: concentric Teloglia layers, deep dermis, vibration receptor, encapsulated."
+    },
+    {
+      "id": "mcns2-ch1-histology-q9",
+      "subject": "histology",
+      "subjectName": "Histology",
+      "lecture": 1,
+      "question": "The sensory nerve enters the Meissner’s corpuscle from:",
+      "options": [
+        "lower part",
+        "Side",
+        "Central core",
+        "Aany site of the corpuscle"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "In Meissner's corpuscle, the sensory nerve enters from the SIDE (laterally), not from the lower part or central core. The nerve fiber then runs spirally between the Schwann cell stacks within the corpuscle.",
+      "keyConcept": "Meissner's corpuscle: sensory nerve enters from side; nerve fibers spiral between Schwann cell stacks."
+    },
+    {
+      "id": "mcns2-ch1-histology-q12",
+      "subject": "histology",
+      "subjectName": "Histology",
+      "lecture": 1,
+      "question": "What is the site of Merkel’s tactile disc?",
+      "options": [
+        "Deep layers of the epidermis of the palmer surfaces of hands and planter surfaces of feet",
+        "Transitional sites between hairy & non-hairy skin",
+        "All of the above",
+        "None of the above"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Merkel's tactile discs are found in BOTH hairy and non-hairy skin, particularly in the deep layers of epidermis of palms, soles, and at transitional zones between hairy and non-hairy skin. They are slowly adapting touch receptors.",
+      "keyConcept": "Merkel's disc: deep epidermis of palms/soles and hairy-non hairy skin transitions; slowly adapting touch receptor."
+    },
+    {
+      "id": "mcns2-ch1-histology-q13",
+      "subject": "histology",
+      "subjectName": "Histology",
+      "lecture": 1,
+      "question": "Pacinian corpuscles are found in",
+      "options": [
+        "Dermis & hypodermis",
+        "Pancreas",
+        "Urinary bladder",
+        "All of the above"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Pacinian corpuscles are found in deep tissues including dermis and hypodermis, as well as mesenteries, pancreas, urinary bladder, and other viscera. They detect deep pressure and vibration. Their wide distribution reflects their role in detecting deep mechanical stimuli.",
+      "keyConcept": "Pacinian corpuscles: deep dermis, hypodermis, mesenteries, pancreas, urinary bladder - deep pressure/vibration."
+    },
+    {
+      "id": "mcns2-ch1-histology-q46",
+      "subject": "histology",
+      "subjectName": "Histology",
+      "lecture": 2,
+      "question": "Nucleus dorsalis (Claris nucleus), all true except:",
+      "options": [
+        "In the medial aspect of the base of the posterior horn, in level from C8-L3.",
+        "Involved in lamina 7 of gray matter.",
+        "Large cells with eccentric nucleus.",
+        "Give rise to ventral spinocerebellar tract."
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Nucleus dorsalis (Clarke's nucleus) gives rise to the dorsal spinocerebellar tract (not ventral), located in lamina VII at C8-L3 levels. It has large cells with central nucleus, not eccentric nucleus.",
+      "keyConcept": "Clarke's nucleus gives rise to DORSAL spinocerebellar tract (not ventral) - FALSE"
+    },
+    {
+      "id": "mcns2-ch1-histology-q85",
+      "subject": "histology",
+      "subjectName": "Histology",
+      "lecture": 4,
+      "question": "Which sensation is primarily detected by Meissner’s corpuscles?",
+      "options": [
+        "Crude touch and tactile discrimination",
+        "Vibration and pressure",
+        "Pain and temperature",
+        "Proprioception",
+        "Pressure and stretch"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Meissner's corpuscles are rapidly adapting receptors in the dermal papillae that detect crude touch and tactile discrimination, particularly in glabrous skin.",
+      "keyConcept": "Meissner corpuscle function"
+    },
+    {
+      "id": "mcns2-ch1-histology-q90",
+      "subject": "histology",
+      "subjectName": "Histology",
+      "lecture": 4,
+      "question": "Which statement about Clarke’s nucleus is correct?",
+      "options": [
+        "Clarke’s nucleus is present at all levels",
+        "Clarke’s nucleus is present at all cervical levels",
+        "Clarke’s nucleus is present at all thoracic levels",
+        "Clarke’s nucleus is present at all lumbar levels",
+        "Clarke’s nucleus is present at all sacral levels"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Clarke's nucleus (dorsocentral nucleus) is present at all thoracic levels (T1-L2) and is the origin of the dorsal spinocerebellar tract.",
+      "keyConcept": "Clarke's nucleus distribution"
+    },
+    {
+      "id": "mcns2-ch1-histology-q10",
+      "subject": "histology",
+      "subjectName": "Histology",
+      "lecture": 1,
+      "question": "Free nerve endings are widely distributed in",
+      "options": [
+        "Epidermis of the skin",
+        "Cornea",
+        "Mucous membrane of visceral organs",
+        "Serous membranes",
+        "All of the above"
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "Free nerve endings are the simplest sensory receptors and are widely distributed throughout the body including epidermis, cornea, mucous membranes of visceral organs, and serous membranes. They detect pain, temperature, and crude touch.",
+      "keyConcept": "Free nerve endings: most widely distributed receptor; detect pain, temperature, crude touch; in epidermis, cornea, viscera."
+    },
+    {
+      "id": "mcns2-ch1-histology-q11",
+      "subject": "histology",
+      "subjectName": "Histology",
+      "lecture": 1,
+      "question": "What do free nerve endings respond to?",
+      "options": [
+        "Noxious(painful) stimuli",
+        "Crude touch",
+        "Thermal stimuli",
+        "All of the above"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Free nerve endings respond to noxious (painful), thermal, and crude touch stimuli. They are polymodal receptors capable of detecting multiple stimulus types. Different fiber types (A-delta for pain/temperature, C for pain) mediate these responses.",
+      "keyConcept": "Free nerve endings: polymodal - respond to painful, thermal, and tactile stimuli via Aδ and C fibers."
+    },
+    {
+      "id": "mcns2-ch1-histology-q44",
+      "subject": "histology",
+      "subjectName": "Histology",
+      "lecture": 1,
+      "question": "Mention the cutaneous encapsulated receptors?",
+      "options": [
+        "Meissner’s corpuscles",
+        "Pacinian corpuscles",
+        "Ruffini corpuscles",
+        "All of the above"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Cutaneous encapsulated receptors include Meissner's corpuscles (light touch), Pacinian corpuscles (vibration), Ruffini endings (stretch), and Merkel's discs are sometimes considered encapsulated; all have a surrounding connective tissue capsule.",
+      "keyConcept": "Encapsulated cutaneous receptors"
+    },
+    {
+      "id": "mcns2-ch1-histology-q82",
+      "subject": "histology",
+      "subjectName": "Histology",
+      "lecture": 4,
+      "question": "Which correctly describes a feature of Pacinian corpuscles compared to Meissner corpuscles?",
+      "options": [
+        "Pacinian detect light touch, Meissner detect vibration",
+        "Pacinian are mainly in non‑hairy skin, Meissner in hairy skin",
+        "Pacinian are in epidermis, Meissner in dermis",
+        "Pacinian detect temperature, Meissner detect pain",
+        "Pacinian have fibers that pass axially through the corpuscle, Meissner fibers are coiled"
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "In Pacinian corpuscles, the afferent fiber passes axially through the center, while in Meissner corpuscles the nerve fiber has a coiled (tortuous) course between lamellar cells.",
+      "keyConcept": "Corpuscle structural differences"
+    },
+    {
+      "id": "mcns2-ch1-histology-q84",
+      "subject": "histology",
+      "subjectName": "Histology",
+      "lecture": 4,
+      "question": "Which feature characterizes the nerve ending in a Meissner’s corpuscle?",
+      "options": [
+        "Myelinated straight course",
+        "Unmyelinated straight course",
+        "Nerve has tortuous course",
+        "Single terminal ending",
+        "Myelinated afferent fiber enters the base of the corpuscle"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "The nerve fiber in Meissner's corpuscle has a characteristic tortuous (coiled) course between the lamellar cells, unlike the straight axial course in Pacinian corpuscles.",
+      "keyConcept": "Meissner corpuscle structure"
+    },
+    {
+      "id": "mcns2-ch1-histology-q86",
+      "subject": "histology",
+      "subjectName": "Histology",
+      "lecture": 4,
+      "question": "Which feature is common to both free nerve endings and Merkel’s discs?",
+      "options": [
+        "They are the most numerous sensory receptors in the body",
+        "Found in the epidermis of the skin",
+        "Respond to noxious stimuli",
+        "Respond to thermal stimuli",
+        "Arise from subepidermal plexus of nerves"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "Both free nerve endings and Merkel's discs are found in the epidermis; free nerve endings detect pain and temperature while Merkel discs detect light touch.",
+      "keyConcept": "Epidermal receptors"
+    },
+    {
+      "id": "mcns2-ch1-histology-q88",
+      "subject": "histology",
+      "subjectName": "Histology",
+      "lecture": 4,
+      "question": "Which sensory receptors penetrate the epidermis?",
+      "options": [
+        "Free nerve endings and Merkel discs",
+        "Meissner and Pacinian corpuscles",
+        "Ruffini endings and Pacinian corpuscles",
+        "Muscle spindles and Golgi tendon organs",
+        "Krause end bulbs and Ruffini endings"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Free nerve endings and Merkel discs both penetrate the epidermis; free nerve endings respond to pain/temperature while Merkel discs mediate light touch.",
+      "keyConcept": "Epidermal nerve endings"
+    },
+    {
+      "id": "mcns2-ch1-histology-q89",
+      "subject": "histology",
+      "subjectName": "Histology",
+      "lecture": 4,
+      "question": "Regarding the cervical spinal cord, which statement is correct?",
+      "options": [
+        "Substantia gelatinosa receives mostly motor input",
+        "Substantia gelatinosa is located in lamina II",
+        "Clarke’s nucleus is located in lamina VI",
+        "Clarke’s nucleus is found in all cervical segments",
+        "Retropostero‑lateral column of cervical segments supplies the distal part of the lower limb"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "Substantia gelatinosa (Roland's substance) is located in lamina II of the spinal cord gray matter and processes pain and temperature sensations.",
+      "keyConcept": "Substantia gelatinosa location"
+    },
+    {
+      "id": "mcns2-ch1-histology-q91",
+      "subject": "histology",
+      "subjectName": "Histology",
+      "lecture": 4,
+      "question": "Which structure is found in the cervical segment (internal structures of spinal cord)?",
+      "options": [
+        "Intermediolateral cell column in lamina VII grey matter",
+        "Intermediolateral cell column in lamina VII white matter",
+        "Clarke’s nucleus in lamina VII grey matter",
+        "Clarke’s nucleus in lamina VII white matter",
+        "Substantia gelatinosa in lamina VII grey matter"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Clarke's nucleus is found in lamina VII (intermediate gray matter) at cervical levels, serving as the origin of the dorsal spinocerebellar tract.",
+      "keyConcept": "Clarke's nucleus location"
+    },
+    {
+      "id": "mcns2-ch1-histology-q56",
+      "subject": "histology",
+      "subjectName": "Histology",
+      "lecture": 2,
+      "question": "Which of the following tracts lie in the dorsal funiculus?",
+      "options": [
+        "Cuneate.",
+        "Rubrospinal.",
+        "Vestibulospinal.",
+        "Red nucleus."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "The dorsal (posterior) funiculus contains the fasciculus gracilis and fasciculus cuneatus. The rubrospinal tract is in the lateral funiculus; vestibulospinal tract is in the ventral funiculus.",
+      "keyConcept": "Cuneate tract (fasciculus cuneatus) lies in the dorsal funiculus"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q882",
+      "subject": "histology",
+      "subjectName": "Histology",
+      "lecture": 1,
+      "question": "Tactile discrimination (two‑point discrimination) is best tested by:",
+      "options": [
+        "Tuning fork",
+        "Cotton wisp",
+        "Two‑point (Weber’s) compass",
+        "Hot and cold tubes",
+        "Reflex hammer"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Weber's two-point compass test assesses tactile discrimination ability, testing the spatial resolution of Meissner and Merkel receptors.",
+      "keyConcept": "Two-point discrimination test"
+    },
+    {
+      "id": "mcns2-ch1-histology-q2",
+      "subject": "histology",
+      "subjectName": "Histology",
+      "lecture": 1,
+      "question": "Receptor/s for proprioception is/are:\nI. Pacinian corpuscle.\nII. Meissner’s corpuscle.\nIII. Ruffini’ corpuscle.",
+      "options": [
+        "I only.",
+        "Il only.",
+        "III only.",
+        "I, II and III."
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Ruffini's corpuscles (type II slowly adapting mechanoreceptors) are proprioceptors in joints and skin. Pacinian corpuscles are vibration/pressure receptors, not proprioceptors.",
+      "keyConcept": "Proprioceptors: muscle spindles, Golgi tendon organs, Ruffini's (joints). Vibration: Pacinian. Light touch: Meissner's."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q812",
+      "subject": "histology",
+      "subjectName": "Histology",
+      "lecture": 1,
+      "question": "Which of the following is a receptor for vibration?",
+      "options": [
+        "Meissner's corpuscle.",
+        "Ruffini's corpuscle.",
+        "Merkel's disc.",
+        "Pacinian corpuscle."
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Pacinian corpuscles are rapidly adapting deep pressure and vibration receptors with a characteristic lamellar structure in the dermis.",
+      "keyConcept": "Vibration receptor"
+    },
+    {
+      "id": "mcns2-ch1-histology-q50",
+      "subject": "histology",
+      "subjectName": "Histology",
+      "lecture": 2,
+      "question": "Destruction of the ventral horn results in one of the following:",
+      "options": [
+        "Loss of crude touch.",
+        "Loss of fine touch.",
+        "Flaccid paralysis.",
+        "Loss of pain sensation."
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Destruction of the ventral horn (lower motor neuron) causes flaccid paralysis with muscle atrophy, loss of reflexes, and fasciculations. Crude touch (dorsal column), fine touch (dorsal column), and pain sensation (spinothalamic) are not affected.",
+      "keyConcept": "Ventral horn destruction causes flaccid paralysis (LMN lesion)"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q804",
+      "subject": "histology",
+      "subjectName": "Histology",
+      "lecture": 1,
+      "question": "The distribution of grey and white matter depends on the distribution of:",
+      "options": [
+        "Blood vessels.",
+        "Myelin.",
+        "Pigments.",
+        "Astrocytes."
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "Grey matter contains neuron cell bodies and unmyelinated fibers; white matter contains myelinated fibers; the distribution depends on myelin location.",
+      "keyConcept": "Myelin and matter distribution"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q528",
+      "subject": "histology",
+      "subjectName": "Histology",
+      "lecture": 1,
+      "question": "Spinal n. of trigeminal, equivalent to:",
+      "options": [
+        "Substantia gelatinosa",
+        "Clarck’s n",
+        "Main sensory n",
+        "Commissural nuclei"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "The spinal nucleus of the trigeminal nerve is equivalent to substantia gelatinosa (Rexed lamina II) of the spinal cord dorsal horn. Both are involved in pain and temperature transmission. The main sensory nucleus handles fine touch; Clarke's nucleus is for proprioception.",
+      "keyConcept": "Spinal nucleus of V = substantia gelatinosa (pain/temp). Main sensory nucleus = epicritic touch."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q532",
+      "subject": "histology",
+      "subjectName": "Histology",
+      "lecture": 1,
+      "question": "Crossing fibers of gracile & cuneate tracts are called:",
+      "options": [
+        "Internal arcuate",
+        "Dorsal external arcuate",
+        "Ventral external arcuate",
+        "Horizontal"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Internal arcuate fibers are the DECUSSATING (crossing) fibers of the dorsal column-medial lemniscal system. They cross in the sensory decussation of the closed medulla and form the medial lemniscus. External arcuate fibers are cerebellar afferents.",
+      "keyConcept": "Internal arcuate fibers: cross in sensory decussation → form medial lemniscus. External arcuate: cerebellar afferents."
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q41",
+      "subject": "histology",
+      "subjectName": "Histology",
+      "lecture": 1,
+      "question": "Which of the following tracts are present in the tegmentum pontis?",
+      "options": [
+        "Medial longitudinal fasciculus",
+        "Spinothalamic tract",
+        "Central tegmental tract",
+        "All of the above"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "The tegmentum pontis (pontine tegmentum) contains all of these: medial longitudinal fasciculus (vestibulo-ocular), spinothalamic tract (pain/temperature), and central tegmental tract (red nucleus to inferior olive).",
+      "keyConcept": "Pontine tegmentum: MLF, spinothalamic, central tegmental tracts. Basis pontis: corticospinal, transverse pontine fibers."
+    },
+    {
+      "id": "mcns2-ch10-anatomy-q31",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "Which opioid antagonist is also used to reduce alcohol craving?",
+      "options": [
+        "Meperidine",
+        "Buprenorphine",
+        "Naltrexone",
+        "Naloxone",
+        "Methadone"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Naltrexone (opioid antagonist) is used in alcohol dependence treatment by blocking opioid receptors involved in the rewarding effects of alcohol.",
+      "keyConcept": "Naltrexone alcohol use"
+    },
+    {
+      "id": "mcns2-ch10-anatomy-q34",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "Which is a cannabinoid drug used for management of hashish (cannabis) dependence?",
+      "options": [
+        "Dronabinol",
+        "Naltrexone",
+        "Naloxone",
+        "Clonidine",
+        "Disulfiram"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Dronabinol (synthetic THC) is used medically for cannabis dependence, providing agonist effects that reduce withdrawal and craving.",
+      "keyConcept": "Cannabinoid dependence treatment"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q228",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "All the following are involved in the mechanism of action of morphine Except",
+      "options": [
+        "Most effects are mediated by activation of kappa receptors",
+        "Inhibition of calcium influx resulting in inhibition of transmitter release",
+        "Increase in K outflux resulting in hyperpolarization of neuronal membrane",
+        "Reduction of emotional response to pain"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Morphine's effects are primarily mediated by mu (not kappa) opioid receptors; it also inhibits calcium influx (reducing transmitter release), increases K+ efflux (causing hyperpolarization), and reduces emotional pain response.",
+      "keyConcept": "Mu vs kappa opioid receptor activation"
+    },
+    {
+      "id": "mcns2-ch10-physiology-q12",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 3,
+      "question": "The pain analgesic system includes which structure?",
+      "options": [
+        "Periaqueductal neurons which secrete serotonin",
+        "Periaqueductal neurons which secrete enkephalin",
+        "Periaqueductal neurons which secrete endorphin",
+        "Local cord neurons which secrete serotonin",
+        "Local cord neurons which secrete endorphin"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "The periaqueductal gray matter in the midbrain is a key component of the descending pain inhibitory system, connecting to nucleus raphe magnus and inhibiting dorsal horn pain transmission.",
+      "keyConcept": "Periaqueductal gray is the central controller of descending pain inhibition to dorsal horn."
+    },
+    {
+      "id": "mcns2-ch1-pharma-q3",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "Addition of the following drugs to L dopa produce all the following except",
+      "options": [
+        "Domperidone / decreases l dopa induced nausea & vomiting",
+        "Benztropine / decreases l dopa absorption",
+        "Apomorphine / decreases off time of on-off phenomena",
+        "Entacapone / Decrease L-dopa bioavailability and duration of action"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Entacapone DECREASES L-dopa bioavailability and duration of action - this is WRONG. Option D is incorrect. Entacapone inhibits COMT, which DECREASES L-dopa metabolism, thereby INCREASING its bioavailability and duration of action. Domperidone decreases nausea (A is correct). Benztropine decreases absorption (B is correct). Apomorphine decreases off time (C is correct).",
+      "keyConcept": "COMT inhibitors like entacapone prolong L-dopa action by preventing its peripheral breakdown."
+    },
+    {
+      "id": "mcns2-ch1-pharma-q6",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "Conscious sedation may be induced by",
+      "options": [
+        "Fentanyl / Midazolam",
+        "Midazolam /Droperidol",
+        "Fentanyl /Domperidone",
+        "None of the above"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Fentanyl with Midazolam induces conscious sedation. Option A is correct. This combination (opioid + benzodiazepine) provides analgesia and amnesia for conscious sedation in minor procedures. Droperidol is used for neuroleptanalgesia (B). Domperidone is antiemetic (C).",
+      "keyConcept": "Conscious sedation combines fentanyl (analgesia) with midazolam (anxiolysis/amnesia) for procedural sedation."
+    },
+    {
+      "id": "mcns2-ch1-pharma-q153",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "The following is not common between pethidine & Buprenorphine:",
+      "options": [
+        "Analgesic effect in severe pain",
+        "Respiratory depression is increased by increasing dose",
+        "Nausea & vomiting",
+        "Constipation"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "Both pethidine and buprenorphine are opioids with similar side effects including analgesia, respiratory depression, nausea/vomiting, and constipation. However, buprenorphine has a ceiling effect on respiratory depression - increasing dose beyond a certain point does not proportionally increase respiratory depression. Pethidine does NOT have this ceiling effect - its respiratory depression increases linearly with dose. This makes buprenorphine safer in overdose. Option B is the correct answer because respiratory depression IS NOT increased proportionally with dose in buprenorphine due to its partial agonist activity at mu receptors, unlike pethidine which shows dose-dependent respiratory depression.",
+      "keyConcept": "Buprenorphine's ceiling effect on respiratory depression distinguishes it from pethidine's linear dose-dependent depression."
+    },
+    {
+      "id": "mcns2-ch1-pharma-q155",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "Conscious sedation may be induced by:",
+      "options": [
+        "Fentanyl / Midazolam",
+        "Midazolam / Droperidol",
+        "Fentanyl / Domperidone",
+        "None of the above"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Conscious sedation is achieved by combining a benzodiazepine (for anxiolysis, amnesia, sedation) with an opioid (for analgesia). Fentanyl (opioid) + Midazolam (benzodiazepine) is the classic combination. Fentanyl provides analgesia while midazolam provides anxiolysis and sedation. Option B (Midazolam/Droperidol) - droperidol is used for neuroleptanalgesia, not conscious sedation. Option C (Fentanyl/Domperidone) - domperidone is an antiemetic, not a sedative. Option D is incorrect. The combination allows reduced doses of each drug while achieving adequate sedation and analgesia for procedures like dental work.",
+      "keyConcept": "Conscious sedation uses fentanyl (analgesic) + midazolam (benzodiazepine) for safe procedural sedation."
+    },
+    {
+      "id": "mcns2-ch1-pharma-q231",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "Constipation associated with the use of morphine may be relieved by",
+      "options": [
+        "Docusate",
+        "Loperamide",
+        "Codeine",
+        "Diphenoxylate"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Morphine-induced constipation is relieved by stool softeners (docusate), stimulant laxatives, and peripherally-acting opioid antagonists (methylnaltrexone) that don't reverse analgesia.",
+      "keyConcept": "Opioid-induced constipation treatment"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q233",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "Neuropathic pain may be managed by",
+      "options": [
+        "Tricyclic antidepressants",
+        "Carbamazepine",
+        "Gabapentin",
+        "Tramadol",
+        "All of the above"
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "Neuropathic pain management includes tricyclic antidepressants (amitriptyline), anticonvulsants (carbamazepine, gabapentin), and atypical opioids (tramadol), all acting on different pain pathways.",
+      "keyConcept": "Neuropathic pain multimodal management"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q278",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "Concerning sensory receptors, all the followings are true, Except:",
+      "options": [
+        "Acts as detectors.",
+        "Acts as transducers.",
+        "They are fatigued easily.",
+        "They vary in sensitivity.",
+        "They are excitable."
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Sensory receptors do not fatigue easily (unlike many other excitable tissues); they maintain responsiveness during sustained stimulation, though they may adapt at different rates.",
+      "keyConcept": "Sensory receptors do not fatigue easily."
+    },
+    {
+      "id": "mcns2-ch1-pharma-q279",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "All the following receptors are phasic receptors Except:",
+      "options": [
+        "Hair end organs.",
+        "Pacinian corpuscles.",
+        "Meissner’s corpuscles.",
+        "Merkel's discs.",
+        "Free nerve endings."
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "Free nerve endings are tonic (slowly adapting) receptors that continue firing during sustained stimulation, unlike phasic receptors like Pacinian corpuscles, Meissner's corpuscles, hair end organs, and Merkel's discs which adapt rapidly.",
+      "keyConcept": "Free nerve endings are tonic receptors; others listed are phasic."
+    },
+    {
+      "id": "mcns2-ch10-pharma-q7",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "One of the following anesthetic protocols is NOT correctly matched:",
+      "options": [
+        "Dissociative anesthesia/ ketamine.",
+        "Conscious sedation/ midazolam & fentanyl.",
+        "Deep sedation/ propofol.",
+        "Neuroleptanalgesia / propofol plus fentanyl."
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Neuroleptanalgesia uses droperidol plus fentanyl, NOT propofol - this is WRONG. Option D is incorrect. Neuroleptanalgesia = droperidol (neuroleptic) + fentanyl (opioid). Propofol is used for deep sedation/anesthesia. Options A, B, C are correctly matched.",
+      "keyConcept": "Neuroleptanalgesia combines droperidol with fentanyl for sedation and analgesia; propofol is a separate anesthetic agent."
+    },
+    {
+      "id": "mcns2-ch10-pharma-q8",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "Which of the following possesses a weak analgesic effect?",
+      "options": [
+        "Nitrous oxide.",
+        "Halothane",
+        "Ketamine",
+        "Fentanyl"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "Halothane has weak analgesic effect. Option B is correct. Volatile anesthetics vary in analgesia: halothane provides minimal analgesia, while ketamine (C) and nitrous oxide (A) provide significant analgesia. Fentanyl (D) is a potent opioid analgesic.",
+      "keyConcept": "Halothane lacks significant analgesic properties, distinguishing it from ketamine and nitrous oxide."
+    },
+    {
+      "id": "mcns2-ch10-pharma-q79",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "One of the following anesthetics protocols is not correctly matched:",
+      "options": [
+        "Dissociative anesthesia / Ketamine",
+        "Conscious sedation / Midazolam & Fentanyl",
+        "Deep sedation / Propofol",
+        "Neuroleptanalgesia / Propofol plus Fentanyl"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Neuroleptanalgesia is the combination of a neuroleptic (droperidol) with an opioid (fentanyl), producing a state of calmness and analgesia without complete unconsciousness. Propofol plus fentanyl is actually IV anesthesia/conscious sedation, not neuroleptanalgesia. The correct combinations: A) Ketamine produces dissociative anesthesia - CORRECT; B) Midazolam + Fentanyl produces conscious sedation - CORRECT; C) Propofol produces deep sedation/anesthesia - CORRECT; D) Propofol + Fentanyl = IV anesthesia, NOT neuroleptanalgesia (which requires droperidol). The answer is D because neuroleptanalgesia specifically refers to droperidol + fentanyl combination.",
+      "keyConcept": "Neuroleptanalgesia specifically refers to droperidol + fentanyl, producing calmness and analgesia."
+    },
+    {
+      "id": "mcns2-ch10-pharma-q80",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "Which of the following possesses a weak analgesic effect:",
+      "options": [
+        "Nitrous oxide",
+        "Halothane",
+        "Ketamine",
+        "Fentanyl"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Analgesic potency comparison: Fentanyl > Ketamine > Halothane > Nitrous oxide. Nitrous oxide has WEAK analgesic effect. While N2O provides some analgesia (used in labor, dentistry), its potency is low. Ketamine provides moderate analgesia through NMDA antagonism. Halothane provides minimal analgesia. Fentanyl is a potent opioid with strong analgesic effects. N2O's weak analgesic effect means it's often combined with other agents for surgical procedures. The correct answer is A - nitrous oxide possesses weak analgesic effect compared to the other options.",
+      "keyConcept": "Nitrous oxide has weak analgesic potency compared to opioids (fentanyl) and ketamine."
+    },
+    {
+      "id": "mcns2-ch10-pharma-q105",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "Name some strong pure agonists opioids.",
+      "options": [
+        "Morphine",
+        "Fentanyl",
+        "Methadone",
+        "All of the above"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Strong pure agonist opioids include: morphine, heroin, fentanyl, methadone, meperidine, hydromorphone, oxymorphone.选项D正确. The answer is D. These have full agonist activity at mu opioid receptors, providing maximum analgesia but also respiratory depression, sedation, and dependence potential.",
+      "keyConcept": "Morphine, fentanyl, methadone are strong pure mu opioid agonists - maximum analgesia with respiratory depression risk."
+    },
+    {
+      "id": "mcns2-ch10-pharma-q106",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "What are the partial agonists opioids?",
+      "options": [
+        "Buprenorphine",
+        "Morphine",
+        "Fentanyl",
+        "Methadone"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Partial agonist opioids include buprenorphine (partial mu agonist) and pentazocine (partial kappa agonist, mixed agonist-antagonist).选项A正确. Buprenorphine is used for opioid dependence (Suboxone) and analgesia. Its ceiling effect on respiratory depression makes it safer. The answer is A. Pentazocine can precipitate withdrawal in opioid-dependent patients.",
+      "keyConcept": "Buprenorphine is a partial mu agonist with ceiling effect on respiratory depression - used in opioid dependence treatment."
+    },
+    {
+      "id": "mcns2-ch1-pharma-q8",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "The following concerning zolpidem is not true",
+      "options": [
+        "It is a short acting hypnotic causing less hang over than benzodiazepines",
+        "It acts on benzodiazepine-1 receptor.",
+        "More liable to induce rebound insomnia & disturbance in REM sleep than benzodiazepines.",
+        "Its use is associated with less tolerance and dependence than benzodiazepines."
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Zolpidem is LESS liable to induce rebound insomnia than benzodiazepines - this is NOT true. Option C is incorrect. Zolpidem actually has more rebound insomnia potential compared to benzodiazepines because of its short half-life and selective BZ1 receptor action. Options A, B, D are true: zolpidem is short-acting with less hangover, acts on BZ1 receptor, and has less tolerance/dependence than BZDs.",
+      "keyConcept": "Zolpidem has a short half-life and less hangover than benzodiazepines, but can cause rebound insomnia due to its short duration of action."
+    },
+    {
+      "id": "mcns2-ch1-pharma-q19",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "The following drug is not matched with its mechanism of action",
+      "options": [
+        "Diazepam increases frequency of opening of chloride channels",
+        "Zolpidem binds with BZD1 subtype → increases GABA activity",
+        "Barbiturates increase duration of opening of chloride channels",
+        "Buspirone is selective 5HT1A antagonist"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Buspirone is a 5HT1A AGONIST, not antagonist - this is WRONG. Option D is incorrect. Buspirone is a selective 5-HT1A partial agonist (not antagonist). Options A, B, C are correct: diazepam increases frequency of chloride channel opening, zolpidem binds BZ1 receptor, barbiturates increase duration of channel opening.",
+      "keyConcept": "Buspirone's anxiolytic effect comes from 5-HT1A receptor partial agonism, not antagonism."
+    },
+    {
+      "id": "mcns2-ch1-pharma-q21",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "The following statement is Wrong regarding pharmacokinetics of Benzodiazepines",
+      "options": [
+        "Absorption of intramuscular injection except lorazepam is slower than oral",
+        "Metabolized in the liver by oxidation followed by glucuronidation except lorazepam",
+        "Clinical duration of action of long acting BDZs is shorter than the actual half life as they form active metabolites",
+        "Lorazepam has no active metabolites"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Clinical duration of long-acting BZDs is longer than actual half-life - this is WRONG. Option C is incorrect. Long-acting BZDs form active metabolites that prolong their effect beyond the parent compound's half-life. Options A, B, D are correct: IM absorption is slower (except lorazepam), lorazepam uses glucuronidation not oxidation, lorazepam has no active metabolites.",
+      "keyConcept": "Long-acting benzodiazepines have prolonged effects due to active metabolites, making actual duration longer than parent half-life."
+    },
+    {
+      "id": "mcns2-ch1-pharma-q28",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "The following about thiopental is WRONG:",
+      "options": [
+        "Has a rapid onset of action due to rapid crossing of BBB.",
+        "Ultra short acting due to rapid metabolism.",
+        "Enzyme inducer and may precipitate porphyria.",
+        "May induce respiratory depression with no available antidote."
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "Thiopental is NOT ultra-short acting due to rapid metabolism - this is WRONG. Option B is incorrect. Thiopental is ultra-short acting due to RAPID DISTRIBUTION out of the brain, not rapid metabolism. It undergoes slow hepatic metabolism but rapid redistribution causes short duration. Options A, C, D are correct: rapid onset, enzyme inducer, no antidote.",
+      "keyConcept": "Thiopental's ultra-short duration is due to rapid redistribution from brain to other tissues, not rapid metabolism."
+    },
+    {
+      "id": "mcns2-ch1-pharma-q36",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "Which of the following is wrong regarding ketamine?",
+      "options": [
+        "Short acting IV agent producing dissociative anesthesia",
+        "Has profound analgesic effect",
+        "Useful in hypertension as it decrease blood pressure",
+        "Hallucination may occur on recovery"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Ketamine INCREASES blood pressure, not decreases - this is WRONG. Option C is incorrect. Ketamine stimulates sympathetic nervous system, causing hypertension and tachycardia. Options A, B, D are correct: short-acting IV dissociative anesthetic, profound analgesia, hallucinations on recovery.",
+      "keyConcept": "Ketamine's sympathomimetic effects cause hypertension and tachycardia, not hypotension."
+    },
+    {
+      "id": "mcns2-ch1-pharma-q72",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "The following drug is characterized by ultra‑short duration of action:",
+      "options": [
+        "Clonazepam",
+        "Lorazepam",
+        "Midazolam",
+        "Alprazolam"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Midazolam has an ultra‑short duration of action due to rapid redistribution from the brain (half‑life ~1–4 hours), making it ideal for procedural sedation.",
+      "keyConcept": "Midazolam's ultra‑short duration is due to rapid redistribution, not rapid metabolism."
+    },
+    {
+      "id": "mcns2-ch1-pharma-q163",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "The following statement is wrong regarding pharmacokinetics of benzodiazepines:",
+      "options": [
+        "Absorption of intramuscular injection except Lorazepam is slower than oral",
+        "Metabolized in the liver by oxidation followed by glucuronidation except Lorazepam",
+        "Clinical duration of action of long acting BZDs is shorter than the actual half-life as they form active metabolites",
+        "Lorazepam has no active metabolites"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Long-acting BZDs (diazepam) form active metabolites (desmethyldiazepam) that have long half-lives. This means their clinical duration of action is LONGER than the actual half-life because active metabolites accumulate and contribute to effects. Option C states 'Clinical duration of action of long acting BZDs is shorter than the actual half-life' which is INCORRECT - it's actually LONGER due to active metabolites. This is why long-acting BZDs can accumulate with repeated dosing and why they have prolonged effects even after the parent drug is cleared.",
+      "keyConcept": "Long-acting BZDs have CLONGER clinical duration than half-life due to active metabolite accumulation."
+    },
+    {
+      "id": "mcns2-ch1-pharma-q274",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "The after discharge in a neuronal pool is based mainly upon the:",
+      "options": [
+        "Converging.",
+        "Divergence.",
+        "Reverberatory.",
+        "Occlusion.",
+        "Subliminal fringe."
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "After discharge occurs through reverberatory circuits that maintain neuron firing through positive feedback loops, extending the response beyond the initial stimulus duration.",
+      "keyConcept": "After discharge: reverberatory circuits maintain firing beyond stimulus."
+    },
+    {
+      "id": "mcns2-ch10-pharma-q13",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "The following statement about halogenated anesthetics is wrong",
+      "options": [
+        "Isoflurane may precipitate ischemia in cardiac patients",
+        "Halothane is strong analgesic with medium rate of induction",
+        "Desflurane suitable for one day surgery",
+        "Sevoflurane is preferred as inhalation agent for children"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "Halothane is a WEAK analgesic, not strong - this is WRONG. Option B is incorrect. Halothane provides poor analgesia (unlike nitrous oxide). Volatile anesthetics vary: halothane has slow induction, isoflurane may cause coronary steal, desflurane is for short surgery, sevoflurane is preferred for children (pleasant induction).",
+      "keyConcept": "Halothane provides minimal analgesia and has slow induction with risk of hepatic toxicity."
+    },
+    {
+      "id": "mcns2-ch10-pharma-q16",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "Which of the following is wrong regarding local anesthetics?",
+      "options": [
+        "Binding to plasma protein affects duration of action",
+        "Lipid solubility affects potency",
+        "Addition of vasoconstrictor shorten duration of action",
+        "Pka affects speed of onset"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Vasoconstrictors PROLONG, not shorten duration - this is WRONG. Option C is incorrect. Epinephrine constricts vessels, decreasing absorption, prolonging duration. Options A, B, D are correct: plasma protein binding affects duration, lipid solubility affects potency, pKa affects onset speed.",
+      "keyConcept": "Vasoconstrictors added to local anesthetics prolong duration by reducing vascular absorption."
+    },
+    {
+      "id": "mcns2-ch10-pharma-q19",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "Addition of epinephrine to local anesthetic do not",
+      "options": [
+        "Decreases absorption",
+        "Increases duration of action",
+        "Decreases systemic adverse effects",
+        "Increases potency"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Epinephrine does NOT increase potency. Option D is correct. Epinephrine causes vasoconstriction, decreasing absorption (A), prolonging duration (B), and decreasing systemic toxicity (C). It does not affect the intrinsic potency of the local anesthetic molecule.",
+      "keyConcept": "Epinephrine reduces local anesthetic systemic absorption and toxicity but does not alter drug potency."
+    },
+    {
+      "id": "mcns2-ch10-pharma-q77",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "The following anesthetic agent is not acting through increase GABA activity:",
+      "options": [
+        "Halothane",
+        "Propofol",
+        "Isoflurane",
+        "Ketamine"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Ketamine produces anesthesia through NMDA receptor antagonism, not GABA enhancement. Mechanism: ketamine is a non-competitive NMDA receptor antagonist that blocks glutamate signaling. Halothane, propofol, and isoflurane all enhance GABA-A receptor activity (though via slightly different mechanisms), leading to increased chloride conductance and neuronal inhibition. Ketamine uniquely preserves cardiovascular function and provides good analgesia, but its NMDA mechanism means it doesn't work through GABA. This makes ketamine useful when GABA-enhancing agents are contraindicated.",
+      "keyConcept": "Ketamine is the only anesthetic listed that acts via NMDA antagonism rather than GABA enhancement."
+    },
+    {
+      "id": "mcns2-ch10-pharma-q81",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "Which of the following is ester local anesthetic:",
+      "options": [
+        "Lidocaine",
+        "Bupivacaine",
+        "Ropivacaine",
+        "Benzocaine"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Ester vs Amide local anesthetics: Esters: procaine, tetracaine, benzocaine, cocaine - metabolized by plasma cholinesterase (short duration). Amides: lidocaine, mepivacaine, bupivacaine, ropivacaine - metabolized in liver (longer duration, longer half-life). Benzocaine is a classic ester local anesthetic used topically. Lidocaine (A), bupivacaine (B), and ropivacaine (C) are all amide-type local anesthetics. The correct answer is D - benzocaine is the ester anesthetic. Esters are more prone to causing allergic reactions (para-aminobenzoic acid metabolite).",
+      "keyConcept": "Benzocaine is an ester local anesthetic, distinguishing it from the amide anesthetics lidocaine, bupivacaine, and ropivacaine."
+    },
+    {
+      "id": "mcns2-ch10-pharma-q84",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "Which of the following is not a characteristic feature of amide local anesthetics:",
+      "options": [
+        "Longer duration of action than ester group",
+        "Metabolized in the liver",
+        "High risk of severe hypersensitivity reaction",
+        "Duration of action is prolonged in patient with heart failure"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Amide local anesthetics (lidocaine, bupivacaine, ropivacaine) have: longer duration than esters (A-true), liver metabolism (B-true), and prolonged action in heart failure due to reduced hepatic blood flow (D-true). However, they have LOW risk of hypersensitivity reactions (esters have high risk due to PABA metabolite). Option C is INCORRECT - amides have LOW risk, not HIGH risk of severe hypersensitivity. This is the NOT characteristic feature, so answer is C. Esters cause more allergic reactions due to para-aminobenzoic acid formation.",
+      "keyConcept": "Amide local anesthetics have LOW hypersensitivity risk compared to esters (which form allergenic PABA)."
+    },
+    {
+      "id": "mcns2-ch10-pharma-q111",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "What are the classifications of local anesthetics?",
+      "options": [
+        "Ester L.A.",
+        "Amide L.A.",
+        "Both A and B",
+        "None of the above"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Local anesthetics classified by: 1) Chemical structure - esters (procaine, tetracaine, benzocaine) and amides (lidocaine, bupivacaine, ropivacaine); 2) Duration of action - short, intermediate, long-acting.选项C正确. The answer is C. Esters are metabolized by plasma cholinesterase; amides are metabolized in liver.",
+      "keyConcept": "Local anesthetics are classified as esters vs amides (metabolism) and by duration of action (short/intermediate/long)."
+    },
+    {
+      "id": "mcns2-ch10-pharma-q112",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "Why are vasoconstrictors added to local anesthetics?",
+      "options": [
+        "To prolong the duration of action",
+        "To reduce systemic adverse effects and bleeding tendency",
+        "Both A and B",
+        "None of the above"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Vasoconstrictors (epinephrine, norepinephrine, felypressin) are added to local anesthetics to: constrict blood vessels, reduce bleeding, decrease systemic absorption, prolong anesthetic duration, and reduce peak plasma levels.选项C正确. The answer is C. Contraindicated in patients with cardiovascular disease, hyperthyroidism, and those on non-selective beta-blockers.",
+      "keyConcept": "Vasoconstrictors prolong local anesthetic duration and reduce toxicity by decreasing systemic absorption and bleeding."
+    },
+    {
+      "id": "mcns2-ch10-pharma-q130",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "Which of the following statements concerning anesthetics is correct ?",
+      "options": [
+        "Thiopental is ultra short acting due to rapid metabolism.",
+        "Ketamine blocks NMDA receptors .",
+        "Propofol possesses a strong analgesic effect.",
+        "Halothane is the least likely inhalation agent to increase intracranial tension.",
+        "Dissociative anesthesia is induced by midazolam."
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "Ketamine is a dissociative anesthetic that blocks NMDA (N-methyl-D-aspartate) glutamate receptors, producing anesthesia with catatonia and analgesia. Thiopental is short-acting due to redistribution, not metabolism; propofol lacks analgesic effect; halothane increases ICP.",
+      "keyConcept": "Ketamine as NMDA receptor antagonist producing dissociative anesthesia"
+    },
+    {
+      "id": "mcns2-ch1-pathology-q13",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 1,
+      "question": "What is a contusion in traumatic head injury? And what is its types?",
+      "options": [
+        "Direct parenchymal injury to the brain",
+        "Coup injury at the point of impact",
+        "Contrecoup injury opposite the point of impact",
+        "All of the above"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Contusion is direct parenchymal brain injury with three types: coup injury at the point of impact, contrecoup injury opposite the impact, and intermediate coup. This includes direct neuronal and glial damage, hemorrhage, and edema. Option D 'All of the above' is correct. Contusions occur from deceleration-acceleration forces causing brain to impact skull. The answer is D. Contusions may evolve into contrecoup injuries due to brain movement within the skull.",
+      "keyConcept": "Contusions are direct brain injuries including coup (impact), contrecoup (rebound), and intermediate injuries."
+    },
+    {
+      "id": "mcns2-ch10-pathology-q20",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 1,
+      "question": "What genetic alterations are associated with pilocytic astrocytomas?",
+      "options": [
+        "Activation of the mitogen-activated protein kinase (MAPK) pathway",
+        "Mutation in IDH1",
+        "Amplification of MDM2",
+        "Deletion of chromosomes 1p and 19q"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Pilocytic astrocytomas are associated with genetic alterations including BRAF fusion (KIAA1549-BRAF) and other MAPK pathway activations. These are low-grade tumors with different genetics from diffuse astrocytomas.选项A正确 - BRAF改变与毛细胞型星形细胞瘤相关. The answer is A. BRAF V600E mutation also occurs but less commonly. These alterations drive MAPK pathway signaling.",
+      "keyConcept": "Pilocytic astrocytomas harbor BRAF alterations (KIAA1549-BRAF fusion) - distinguishing them from diffuse astrocytomas."
+    },
+    {
+      "id": "mcns2-ch10-histology-q1",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 2,
+      "question": "Pilocytic astrocytoma shows the following EXCEPT:",
+      "options": [
+        "Activation of the mitogen-activated protein kinase (MAPK) pathway.",
+        "Activation & alternations of BRAF.",
+        "Inactivation of neurofibromatosis type 1 (NF1).",
+        "Mutations in IDH1 & IDH2."
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Pilocytic astrocytomas show activation of the MAPK pathway and BRAF alterations (especially BRAF-KIAA1549 fusion). NF1 inactivation is seen in optic pathway gliomas. IDH1/IDH2 mutations are seen in adult diffuse astrocytomas, not pilocytic.",
+      "keyConcept": "Pilocytic astrocytoma: BRAF activation, MAPK pathway (NOT IDH1/IDH2 mutations)"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q268",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 1,
+      "question": "Opening of ligand-gated Cl- channels causes:",
+      "options": [
+        "Inhibition of the postsynaptic neuron.",
+        "Depolarization of the postsynaptic neuron.",
+        "Initiation of an action potential.",
+        "Block of ligand-gated cation channels.",
+        "No change in resting membrane potential."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Ligand-gated chloride channels (as in GABA-A receptors) increase Cl- conductance, causing hyperpolarization that makes the neuron less likely to fire, resulting in postsynaptic inhibition.",
+      "keyConcept": "Opening of ligand-gated Cl- channels causes inhibition (hyperpolarization)."
+    },
+    {
+      "id": "mcns2-ch1-pharma-q269",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 1,
+      "question": "The binding of a neurotransmitter to its receptor at an inhibitory synapse can lead to the ______ of ______ channels.",
+      "options": [
+        "Opening: potassium.",
+        "Closure: potassium.",
+        "Opening: sodium.",
+        "Closing: chloride.",
+        "Opening: calcium."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "At inhibitory synapses, neurotransmitter binding opens potassium channels, allowing K+ efflux that hyperpolarizes the neuron and reduces neuronal excitability.",
+      "keyConcept": "Inhibitory synapse: opening of potassium channels."
+    },
+    {
+      "id": "mcns2-ch1-pharma-q277",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 1,
+      "question": "GABA is an inhibitory neurotransmitter that increases the permeability of Postsynaptic neuron to:",
+      "options": [
+        "Cl-.",
+        "Na+.",
+        "Ca++.",
+        "HCO3.",
+        "K+."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "GABA (gamma-aminobutyric acid) is the main inhibitory neurotransmitter in the CNS, acting by increasing chloride ion permeability through GABA-A receptors.",
+      "keyConcept": "GABA increases Cl- permeability causing inhibition."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q887",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 1,
+      "question": "The potency of inhaled anaesthetics is quantitatively defined as the:",
+      "options": [
+        "Blood/gas partition coefficient",
+        "Minimum alveolar concentration (MAC)",
+        "Cerebrovascular resistance",
+        "Volatility index",
+        "Oil/gas partition coefficient"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "MAC (minimum alveolar concentration) defines potency as the alveolar concentration that prevents movement in 50% of patients to a surgical stimulus.",
+      "keyConcept": "Inhalational anesthetic MAC"
+    },
+    {
+      "id": "mcns2-ch10-pathology-q16",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 1,
+      "question": "What is the key genetic finding in oligodendrogliomas?",
+      "options": [
+        "Overexpression of EGFR",
+        "Codeletion of chromosomes 1p and 19q",
+        "Mutation in IDH1",
+        "Amplification of MDM2"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "The key genetic finding in oligodendrogliomas is codeletion of chromosomes 1p and 19q. This occurs through unbalanced translocation t(1;19)(q10;p10). This codeletion is associated with better prognosis and excellent response to PCV chemotherapy (procarbazine, lomustine, vincristine). Option B is CORRECT. EGFR overexpression (A) is seen in glioblastoma. IDH1 mutation (C) is found in many gliomas but not specific. MDM2 amplification (D) is in some glioblastomas. The answer is B.",
+      "keyConcept": "1p/19q codeletion is the hallmark genetic abnormality of oligodendroglioma, predicting better prognosis."
+    },
+    {
+      "id": "mcns2-ch1-histology-q43",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 1,
+      "question": "Mention the cutaneous unencapsulated receptors?",
+      "options": [
+        "Free nerve endings",
+        "Peritrichial nerve endings",
+        "Merkel’s tactile disc",
+        "All of the above"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Cutaneous unencapsulated receptors include free nerve endings (pain, temperature), peritrichial endings around hair follicles (light touch), and Merkel's discs (fine touch); all lack a connective tissue capsule.",
+      "keyConcept": "Unencapsulated cutaneous receptors"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q5",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 1,
+      "question": "Choose the CORRECT matching:",
+      "options": [
+        "Ganglion – a group of cell bodies within CNS.",
+        "Pathway – a chain of successive tracts having different functions.",
+        "Lemniscus – a collection of descending fibers within the brain stem.",
+        "Afferent – an output going away from a certain structure.",
+        "Tract – a bundle of nerve fibers within CNS."
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "A tract is a bundle of nerve fibers within the CNS. A pathway is a chain of successive tracts with the same function. A lemniscus is a collection of ascending fibers in the brain stem. Afferent means input toward a structure. A ganglion is a group of cell bodies outside the CNS.",
+      "keyConcept": "Tract = CNS fiber bundle; pathway = chain of tracts; lemniscus = ascending brainstem fibers"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q152",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 3,
+      "question": "Which statement best describes sensory adaptation?",
+      "options": [
+        "Diminished sensation despite continuous application of the stimulus",
+        "Increased sensation with repeated stimulation",
+        "Complete absence of sensation after brief stimulus",
+        "Activation of additional receptors over time",
+        "Conversion of one type of sensation into another"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Sensory adaptation is the decrease in receptor response during sustained stimulation. Slowly adapting receptors maintain response to prolonged stimuli, while rapidly adapting receptors quickly cease firing.",
+      "keyConcept": "Sensory adaptation reflects receptor capability to maintain (slow) or reduce (rapid) firing during sustained stimuli."
+    },
+    {
+      "id": "mcns2-ch3-physiology-q2",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 2,
+      "question": "Which ion is primarily responsible for rapid depolarization during an action potential?",
+      "options": [
+        "K+",
+        "Ca2+",
+        "Na+",
+        "Cl-"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Sodium (Na+) is primarily responsible for rapid depolarization during the upstroke of the action potential. Na+ channels open rapidly causing an influx of Na+, creating the spike. K+ is responsible for repolarization during the downstroke.",
+      "keyConcept": "Sodium ion influx through voltage-gated Na+ channels is responsible for the rapid depolarization phase of the action potential."
+    },
+    {
+      "id": "mcns2-ch3-physiology-q18",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 3,
+      "question": "Which receptor is primarily responsible for maintaining muscle tone?",
+      "options": [
+        "Golgi tendon organ",
+        "Pacinian corpuscle",
+        "Muscle spindle",
+        "Meissner corpuscle",
+        "Free nerve endings"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Primary endings of muscle spindles (Ia afferents) are primarily responsible for maintaining muscle tone through the stretch reflex arc controlling baseline contraction.",
+      "keyConcept": "Muscle spindle primary endings provide the major sensory input for tonic stretch reflex and tone maintenance."
+    },
+    {
+      "id": "mcns2-ch3-physiology-q11",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 1,
+      "question": "Which of the following is NOT involved in decreasing the activity of the pontine reticular formation?",
+      "options": [
+        "Cortical inhibitory areas.",
+        "Red nucleus.",
+        "Medullary reticular formation.",
+        "Basal ganglia.",
+        "Corticofugal fibers."
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "The red nucleus is a facilitatory center that INCREASES pontine reticular formation activity, not decreases it. Cortical inhibitory areas, medullary RF, basal ganglia, and corticofugal fibers all decrease pontine RF activity.",
+      "keyConcept": "Red nucleus facilitates pontine RF; cortical areas, basal ganglia, medullary RF inhibit it."
+    },
+    {
+      "id": "mcns2-ch3-physiology-q26",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 1,
+      "question": "The phenomenon of decerebrate rigidity can be explained, at least in part, by which of the following?",
+      "options": [
+        "Stimulation of type 1b sensory neurons",
+        "Loss of cerebellar inputs to the red nucleus",
+        "Overactivity of the medullary reticular nuclei involved in motor control",
+        "Unopposed activity of the pontine reticular nuclei",
+        "Degeneration of the nigrostriatal pathway"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Decerebrate rigidity results from loss of pontine reticular nucleus inhibition of medullary reticular nuclei, causing unopposed extensor muscle activity and characteristic rigid posturing.",
+      "keyConcept": "Decerebrate rigidity: unopposed medullary reticular nuclei activity from pontine loss."
+    },
+    {
+      "id": "mcns2-ch1-pharma-q281",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 1,
+      "question": "Pain produced by tissue damage is due to release of:",
+      "options": [
+        "Excess norepinephrine.",
+        "ATP.",
+        "Kinins.",
+        "Heparin.",
+        "Dopamine."
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Tissue damage releases kinins (bradykinin, kallidin) which sensitize nociceptors, causing pain as part of the inflammatory response to injury.",
+      "keyConcept": "Pain from tissue damage: release of kinins (bradykinin)."
+    },
+    {
+      "id": "mcns2-ch1-biochem-q246",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 1,
+      "question": "Which nitric oxide synthase isozyme is inducible?",
+      "options": [
+        "Neuronal.",
+        "Endothelial.",
+        "Phagocytic.",
+        "a and b."
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "The phagocytic (inducible) nitric oxide synthase (iNOS) is calcium-independent and can be induced by cytokines and endotoxin in macrophages during inflammatory responses.",
+      "keyConcept": "iNOS (phagocytic) is the inducible, calcium-independent NOS isozyme"
+    },
+    {
+      "id": "mcns2-ch10-histology-q5",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 2,
+      "question": "The following is not a feature of meningioma:",
+      "options": [
+        "Usually occurs in adults.",
+        "Always a benign tumor.",
+        "Has a whorly cut surface.",
+        "Characterized by Psammoma bodies."
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "Meningiomas typically have a whorled cut surface (not whorly). The other statements about meningioma (adults, benign, psammoma bodies) are true. The question asks for what's NOT a feature.",
+      "keyConcept": "Meningioma has whorled pattern, not whorly surface - minor terminology"
+    },
+    {
+      "id": "mcns2-ch1-histology-q87",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 4,
+      "question": "Which type of receptor is found in the cornea?",
+      "options": [
+        "Pacinian",
+        "Meissner",
+        "Merkel",
+        "Ruffini",
+        "Free nerve endings"
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "The cornea contains abundant free nerve endings (no specific encapsulated receptors) making it extremely sensitive to pain and touch.",
+      "keyConcept": "Corneal innervation"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q486",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 1,
+      "question": "What is the most common position for the appendix?",
+      "options": [
+        "Retrocecal",
+        "Pelvic",
+        "Subcecal",
+        "Preileal"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "The retrocecal position is the most common anatomical position of the appendix, occurring in approximately 65% of individuals. In this position, the appendix lies posterior to the cecum, often tucked behind the ileum. Other less common positions include pelvic (20-30%), subcecal, and preileal. The retrocecal position is clinically significant as it can alter the presentation of appendicitis and may complicate diagnosis.",
+      "keyConcept": "The retrocecal position is the most common appendix location due to embryological rotation of the cecum."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q864",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 1,
+      "question": "Which receptor helps a blind person read Braille by detecting fine texture and edges?",
+      "options": [
+        "Plexus of Bonnet",
+        "Ruffini ending",
+        "Free nerve ending",
+        "Krause end bulb",
+        "Meissner corpuscle"
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "Meissner corpuscles detect fine tactile details and edges, enabling blind individuals to read Braille through subtle texture differences.",
+      "keyConcept": "Braille reading receptors"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q59",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 3,
+      "question": "Which of the following is primarily responsible for rapid depolarization during an action potential?",
+      "options": [
+        "K+",
+        "Ca2+",
+        "Na+",
+        "Cl-"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Sodium (Na+) is the primary ion responsible for rapid depolarization during the upstroke of the action potential. Na+ channels open rapidly causing an influx of Na+, creating the spike. K+ is responsible for repolarization during the downstroke.",
+      "keyConcept": "Voltage-gated sodium channels mediate the rapid depolarization phase of action potentials in most neurons and muscle fibers."
+    },
+    {
+      "id": "mcns2-ch1-histology-q8",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 1,
+      "question": "Which of the following receptors are mechanoreceptors?",
+      "options": [
+        "Plexus of Bounet",
+        "Merkel’s disc",
+        "Meissner’s corpuscle",
+        "All of the above"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "All of these - Merkel's disc, Meissner's corpuscle, and Bounet's plexus (a free nerve ending network) are mechanoreceptors. They transduce mechanical stimuli into neural signals. Merkel's = pressure, Meissner's = light touch, Bounet's = slowly adapting stretch receptor.",
+      "keyConcept": "Mechanoreceptors: Merkel's (pressure), Meissner's (touch), Bounet's plexus (stretch). All detect mechanical stimuli."
+    },
+    {
+      "id": "mcns2-ch1-physiology-q194",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 1,
+      "question": "Which of the following best describes the gate control theory of pain?",
+      "options": [
+        "Pain is transmitted only by large myelinated fibres.",
+        "Activity in large afferent fibres can inhibit pain transmission in the dorsal horn.",
+        "Pain is solely a cortical phenomenon.",
+        "Endorphins are released only from the pituitary."
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "The gate control theory proposes that large myelinated afferent fibers (touch) can inhibit transmission of pain signals in the dorsal horn through interneurons, effectively 'closing the gate' on pain perception.",
+      "keyConcept": "Gate control: large afferent fiber activity inhibits dorsal horn pain transmission."
+    },
+    {
+      "id": "mcns2-ch1-biochem-q218",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 1,
+      "question": "Methyl dopa decreases blood pressure by:",
+      "options": [
+        "Inhibiting the synthesis of catecholamines.",
+        "Antagonizing the action of aldosterone.",
+        "Stimulating the release of renin.",
+        "Inhibiting the breakdown of angiotensin."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Alpha-methyl-dopa (methyldopa) decreases blood pressure by acting as a false neurotransmitter: it is converted to methyl-norepinephrine which displaces norepinephrine from sympathetic nerve terminals, reducing sympathetic outflow.",
+      "keyConcept": "Methyldopa acts as false neurotransmitter displacing norepinephrine to reduce BP"
+    },
+    {
+      "id": "mcns2-ch3-anatomy-q40",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 1,
+      "question": "Which of the following nuclei extend in the midbrain:",
+      "options": [
+        "Vestibular nuclei",
+        "Mesencephalic nuclei",
+        "Motor n of facial",
+        "Superior olive"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "The mesencephalic nucleus of the trigeminal nerve extends through the midbrain (alongside the central gray). It is the only sensory nucleus that contains primary afferent cell bodies. Vestibular nuclei are in the pons/medulla. Motor facial is pontine. Superior olive is pontine.",
+      "keyConcept": "Mesencephalic nucleus of V: only primary afferent neuron in CNS, extends through midbrain."
+    },
+    {
+      "id": "mcns2-ch1-physiology-q1",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 1,
+      "question": "Crude touch sensation is:",
+      "options": [
+        "Carried along Aδ fibers.",
+        "Sharply localized.",
+        "Carried in the lateral spinothalamic tract.",
+        "Perceived at level of sensory cortex.",
+        "Its receptors are tonic."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Crude touch is carried by Aδ fibers (lightly myelinated, 2-5 μm diameter, 5-15 m/s conduction). Option A is correct. Option B is wrong (crude touch is poorly localized, fine touch is sharply localized). Option C is wrong (crude touch is carried in anterior spinothalamic tract, not lateral). Option D is wrong (perceived at thalamic level, not cortex). Option E is wrong (receptors for crude touch are phasic, not tonic).",
+      "keyConcept": "Crude touch uses Aδ fibers and is carried in the anterior spinothalamic tract with poor localization."
+    },
+    {
+      "id": "mcns2-ch1-physiology-q155",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 3,
+      "question": "Discrimination of stimulus intensity depends mainly on:",
+      "options": [
+        "Number of activated receptors",
+        "Type of receptor only",
+        "Length of the receptor",
+        "Location of the receptor",
+        "Presence of myelin only"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Weber-Fechner law states that discrimination of stimulus intensity depends on the ratio of change to initial stimulus, not absolute difference. Just noticeable difference is proportional to the initial stimulus.",
+      "keyConcept": "Intensity discrimination depends on proportional Weber fraction rather than absolute stimulus magnitude."
+    },
+    {
+      "id": "mcns2-ch1-physiology-q159",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 3,
+      "question": "Which type of pain is transmitted by Aδ nerve fibers?",
+      "options": [
+        "Chemical pain",
+        "Visceral pain",
+        "Chronic pain",
+        "Slow pain",
+        "Fast pain"
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "A-delta fibers transmit fast, sharp, well-localized pain (first pain) via the neospinothalamic tract. C fibers transmit slow, dull, poorly localized pain (second pain) via the paleospinothalamic tract.",
+      "keyConcept": "A-delta fibers mediate fast, localized pain; C fibers mediate slow, diffuse pain."
+    },
+    {
+      "id": "mcns2-ch1-physiology-q164",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 3,
+      "question": "Fast pain is characterized by which duration?",
+      "options": [
+        "Long lasting",
+        "Delayed onset",
+        "Recurrent",
+        "Persistent",
+        "Short time"
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "Fast pain (A-delta fibers) has a brief duration (~0.1 seconds), occurring immediately after stimulus and enabling rapid localization of noxious stimuli.",
+      "keyConcept": "Fast pain is brief (~0.1s) and well-localized due to A-delta fiber conduction."
+    },
+    {
+      "id": "mcns2-ch1-physiology-q176",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 3,
+      "question": "Stereognosis sensation is carried by which neural pathway?",
+      "options": [
+        "Ventral spinothalamic tract",
+        "Dorsal spinothalamic tract",
+        "Dorsal spinocerebellar tract",
+        "Dorsal column tract",
+        "Ventral spinocerebellar tract"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Stereognosis (recognition of form and texture) requires intact dorsal column-medial lemniscal pathway for fine touch and proprioception to reach the sensory cortex.",
+      "keyConcept": "Dorsal column-medial lemniscal pathway carries stereognosis, fine touch, and proprioception for object recognition."
+    },
+    {
+      "id": "mcns2-ch1-physiology-q189",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 2,
+      "question": "In syringomyelia, sensory loss typically follows which pattern?",
+      "options": [
+        "Jacket distribution",
+        "Fingers",
+        "Lower limbs",
+        "Feet",
+        "Trunk"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Syringomyelia causes a characteristic 'cape' or 'jacket' distribution sensory loss due to the expansion of the syrinx affecting crossing spinothalamic fibers in the cervical cord.",
+      "keyConcept": "Syringomyelia cord lesion pattern"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q195",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 1,
+      "question": "The following sensation is not perceived by Somatosensory A 1:",
+      "options": [
+        "Crude Touch",
+        "Fast pain",
+        "Vibration sense",
+        "Proprioceptive sensation",
+        "Stereognosis"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Crude touch is transmitted by the anterior spinothalamic tract, not by somatosensory area 1 which processes fine/discriminative touch, vibration, proprioception, and stereognosis.",
+      "keyConcept": "Somatosensory area 1 does not process crude touch (anterior spinothalamic does)."
+    },
+    {
+      "id": "mcns2-ch1-physiology-q20",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 1,
+      "question": "Brown-Sequard syndrome is characterized by:",
+      "options": [
+        "Loss of vibration sense on the same side below level of the lesion",
+        "Loss of voluntary movements on the opposite side below the level of the lesion",
+        "Loss of reflex movements on the opposite side at the level of the lesion",
+        "Loss of pain sensation on the same side below the level of the lesion"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Brown-Sequard syndrome: loss of vibration sense on the same side below lesion. Option A is correct. Hemisection causes ipsilateral dorsal column loss (vibration, proprioception) and corticospinal loss (motor) below; contralateral spinothalamic loss (pain, temperature). Options B, C, D are incorrect (motor loss is ipsilateral, reflex loss at lesion level is LMN, pain loss is contralateral).",
+      "keyConcept": "Brown-Sequard hemisection produces ipsilateral motor and dorsal column loss, contralateral pain/temperature loss below the lesion."
+    },
+    {
+      "id": "mcns2-ch1-physiology-q21",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 1,
+      "question": "43 year old woman is evaluated in the hospital and is found to have multiple neurologic abnormalities from the level T 12 down. She has loss of vibration and proprioception on the left but these senses are present on the right side. She has absent pain and temperature sensation in the right side from T12 down. Motor power was lost in the left leg but normal motor strength in her right leg. What is the most likely cause of her neurologic symptoms?",
+      "options": [
+        "Complete spinal cord transection at upper thoracic segments.",
+        "Complete spinal cord transection at lower thoracic segments.",
+        "Hemisection on the left part of spinal cord",
+        "Hemisection on the right part of spinal cord"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Hemisection on the left part of spinal cord. Option C is correct. Left hemisection explains: left vibration/proprioception loss (dorsal columns), right pain/temperature loss (spinothalamic), left leg paralysis (corticospinal). Complete transection would affect both sides. Right hemisection would cause opposite findings.",
+      "keyConcept": "Ipsilateral dorsal column and motor loss with contralateral spinothalamic loss indicates spinal cord hemisection on the side of motor/dorsal column deficits."
+    },
+    {
+      "id": "mcns2-ch1-physiology-q57",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 1,
+      "question": "Regarding sensory receptors:",
+      "options": [
+        "Receptors are non-specific to stimuli according to Muller’s law",
+        "Stimulation of certain receptors can produces different modalities of sensations",
+        "Receptors are stimulated by adequate stimuli at a low threshold",
+        "Receptor potential is inversely related to the intensity of stimulus according to Weber Fechner law",
+        "The same receptor may be stimulated by different stimuli to produce different sensations"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "According to Müller's law of specific nerve energies, each receptor is specific to its adequate stimulus. Receptors have LOW threshold for their specific stimulus. Receptor potential is directly proportional to stimulus intensity, not inversely.",
+      "keyConcept": "Law of specific nerve energies: each receptor responds only to its adequate stimulus at low threshold."
+    },
+    {
+      "id": "mcns2-ch1-physiology-q72",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 2,
+      "question": "A reflex arc includes:",
+      "options": [
+        "At least two sets of sequential neurons",
+        "At least two sequential sets of central synapses",
+        "At least two types of sensory receptors",
+        "At least two types of efferent neurons"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "A reflex arc requires at minimum a sensory receptor, a sensory neuron, at least one synapse in the CNS, and an efferent motor neuron. This means at least two sets of sequential neurons (afferent and efferent).",
+      "keyConcept": "Reflex arc components: receptor → afferent neuron → CNS integration → efferent neuron → effector."
+    },
+    {
+      "id": "mcns2-ch1-physiology-q138",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 2,
+      "question": "Which of the following does not contain channels that are activated by mechanical distortion?",
+      "options": [
+        "Muscle spindle.",
+        "Pacinian corpuscles.",
+        "Hair cells in cochlea.",
+        "Hair end organs."
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Hair end organs (Ruffini endings) are slowly adapting receptors for skin stretch, not activated by mechanical distortion. Muscle spindles, Pacinian corpuscles, and cochlear hair cells all use mechanically-gated ion channels.",
+      "keyConcept": "Mechanically-gated channels are found in sensory receptors for touch, pressure, and hearing; Ruffini endings detect static skin stretch rather than vibration."
+    },
+    {
+      "id": "mcns2-ch1-physiology-q153",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 3,
+      "question": "Which type of sensory receptors in the skin respond quickly at the onset of a stimulus but stop firing if the stimulus is constant?",
+      "options": [
+        "Temperature receptors (rapidly adapting)",
+        "Temperature receptors (slowly adapting)",
+        "Pain receptors (rapidly adapting)",
+        "Touch receptors (rapidly adapting)",
+        "Touch receptors (slowly adapting)"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Pacinian corpuscles are rapidly adapting receptors that respond quickly at the onset and offset of a stimulus but cease firing during sustained stimulation due to their large, encapsulated structure.",
+      "keyConcept": "Pacinian corpuscles are rapidly adapting mechanoreceptors detecting vibration and rapid changes."
+    },
+    {
+      "id": "mcns2-ch1-physiology-q154",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 3,
+      "question": "Which sensory receptor adapts rapidly to sustained skin stimulation?",
+      "options": [
+        "Touch receptor",
+        "Pain receptor",
+        "Temperature receptor",
+        "Proprioceptor",
+        "Nociceptor"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Meissner's corpuscles are rapidly adapting receptors in the dermal papillae that adapt quickly to sustained skin stimulation, making them ideal for detecting motion and texture.",
+      "keyConcept": "Meissner's corpuscles are rapidly adapting tactile receptors in glabrous skin for motion detection."
+    },
+    {
+      "id": "mcns2-ch1-physiology-q157",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 3,
+      "question": "Which stimulates pain receptors?",
+      "options": [
+        "Local increase of Na+ concentration",
+        "Local decrease of Na+ concentration",
+        "Local increase of K+ concentration",
+        "Local decrease of K+ concentration",
+        "Local increase of Ca2+ concentration"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Pain receptors (nociceptors) respond to noxious stimuli including intense mechanical distortion, heat (>45C), and chemical irritants (bradykinin, substance P, prostaglandins).",
+      "keyConcept": "Nociceptors are polymodal free nerve endings responding to mechanical, thermal, and chemical noxious stimuli."
+    },
+    {
+      "id": "mcns2-ch1-physiology-q166",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 3,
+      "question": "In secondary hyperalgesia, which describes the affected area?",
+      "options": [
+        "Normal skin surrounding non-healthy tissue",
+        "Only the site of injury",
+        "Inflamed tissue directly exposed to noxious stimuli",
+        "All dermatomes sharing the same dorsal root ganglion",
+        "Systemic distribution"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Secondary hyperalgesia occurs in the surrounding undamaged tissue adjacent to the primary injury site, where nociceptors become sensitized by inflammatory mediators released from damaged cells.",
+      "keyConcept": "Secondary hyperalgesia extends beyond the injury site due to central sensitization of dorsal horn neurons."
+    },
+    {
+      "id": "mcns2-ch1-physiology-q167",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 3,
+      "question": "Which explains pain relief when you rub the skin near an injury?",
+      "options": [
+        "Convergence projection theory",
+        "Endogenous opioid system",
+        "Central sensitization theory",
+        "Gate theory",
+        "Convergence facilitation theory"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Rubbing the skin activates A-beta mechanoreceptors that inhibit pain transmission in the dorsal horn through gating mechanisms in the substantia gelatinosa (gate control theory).",
+      "keyConcept": "Gate control theory: tactile stimulation inhibits nociceptive transmission via A-beta fiber activation of inhibitory interneurons in dorsal horn."
+    },
+    {
+      "id": "mcns2-ch1-physiology-q168",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 3,
+      "question": "A woman wore a dress on the beach. Later, wearing a jacket over the same area caused pain. This is an example of:",
+      "options": [
+        "Increase receptor sensitivity by tissue products",
+        "Activity-dependent increase in excitability of dorsal horn neurons",
+        "Increased threshold of peripheral nociceptors due to inflammatory mediators",
+        "Decreased inhibitory interneuron function in the spinal cord",
+        "Impaired saltatory conduction in primary afferent neurons"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Wearing a jacket over tanned skin causes referred pain from sunburned skin, demonstrating referred pain where visceral or deep somatic injury is perceived as cutaneous pain.",
+      "keyConcept": "Referred pain from deep tissue injury can be perceived as cutaneous pain due to convergence of somatic and visceral afferents on dorsal horn neurons."
+    },
+    {
+      "id": "mcns2-ch1-physiology-q169",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 3,
+      "question": "Which receptors inhibit pain sensation in the CNS?",
+      "options": [
+        "Opioid receptors",
+        "Glycine receptors",
+        "Nicotinic receptors",
+        "Dopamine receptors",
+        "GABA receptors"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Endogenous opioid peptides (endorphins and enkephalins) released from periaqueductal gray and nucleus raphe magnus inhibit pain transmission in the dorsal horn.",
+      "keyConcept": "Endogenous opioid peptides from brainstem nuclei inhibit nociceptive transmission in the spinal cord dorsal horn."
+    },
+    {
+      "id": "mcns2-ch1-physiology-q177",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 3,
+      "question": "Which statement is true regarding deep pressure sensation?",
+      "options": [
+        "It is mediated by slowly adapting receptors",
+        "It is transmitted only by free nerve endings",
+        "It adapts rapidly to sustained stimulus",
+        "It is carried exclusively by Aδ fibers",
+        "It is not associated with vibration"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Deep pressure sensation is transmitted by A-beta fibers via dorsal column pathways and by A-delta fibers via spinothalamic tracts. It has a high threshold compared to light touch.",
+      "keyConcept": "Deep pressure uses A-beta fibers in dorsal columns and A-delta fibers in spinothalamic tracts."
+    },
+    {
+      "id": "mcns2-ch1-physiology-q181",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 3,
+      "question": "Which pair correctly matches a reflex with its sensory receptor?",
+      "options": [
+        "Stretch and Golgi tendon organ",
+        "Flexor and muscle spindle",
+        "Crossed extensor and Pacinian corpuscle",
+        "Tendon and Ruffini ending",
+        "Withdrawal and free nerve ending"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "The inverse stretch reflex (autogenic inhibition) uses Golgi tendon organs as receptors that inhibit alpha motor neurons when tension becomes dangerous.",
+      "keyConcept": "Golgi tendon organs mediate inverse stretch reflex to prevent muscle damage from excessive tension."
+    },
+    {
+      "id": "mcns2-ch1-physiology-q188",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 3,
+      "question": "Which accurately describes the pattern of dissociative sensory loss in syringomyelia?",
+      "options": [
+        "Loss of pain and touch with preservation of temperature",
+        "Loss of touch and temperature with preservation of pain",
+        "Loss of pain with preservation of touch and temperature",
+        "Loss of pain and temperature with preservation of touch",
+        "Loss of temperature with preservation of touch and pain"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Syringomyelia causes dissociated sensory loss with loss of pain and temperature but preserved touch and proprioception due to damage to crossing spinothalamic fibers in the central canal.",
+      "keyConcept": "Syringomyelia selectively damages crossing spinothalamic fibers, causing cape-like pain/temperature loss with preserved dorsal column function."
+    },
+    {
+      "id": "mcns2-ch7-physiology-q8",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 2,
+      "question": "In Thermal sensations, all of the following are true EXCEPT:",
+      "options": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e"
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "Thermal sensations are carried by Aδ fibers (cold) and C fibers (hot), not Aβ fibers. Aβ fibers carry touch, pressure, and vibration. Cold receptors adapt slower than hot receptors, and maximal discharge occurs at 25°C (cold) and 45°C (hot).",
+      "keyConcept": "Temperature sensation: Aδ (cold, 10-40°C), C fibers (heat, 30-45°C); transmitted via spinothalamic tract."
+    },
+    {
+      "id": "mcns2-ch7-physiology-q14",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 1,
+      "question": "Regarding somatosensory area 1 all are correct, Except:",
+      "options": [
+        "Lies anterior to central gyrus",
+        "Size of representation depends on number of receptors",
+        "Have columns that is specialized to receive one type of sensation",
+        "Contralateral representation",
+        "Share in pyramidal tract origin"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Somatosensory area 1 lies posterior to the central gyrus (postcentral gyrus), not anterior; it receives contralateral input, has columns specialized for single sensation types, and its representation size reflects receptor density.",
+      "keyConcept": "Somatosensory area 1 lies posterior to central gyrus (postcentral gyrus)."
+    },
+    {
+      "id": "mcns2-ch10-physiology-q13",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 3,
+      "question": "Which is correctly matched regarding the pain analgesic system?",
+      "options": [
+        "Nucleus raphe magnus → Serotonin",
+        "Periaqueductal gray → Dopamine",
+        "Periventricular area → Acetylcholine",
+        "Pain inhibitory complex → Glutamate",
+        "Nucleus reticularis paragigantocellularis → GABA"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "The periaqueductal gray matter is the origin of descending pain inhibitory pathways that project to nucleus raphe magnus and release opioids to inhibit dorsal horn pain transmission.",
+      "keyConcept": "PAG is the key origin of descending analgesic pathways utilizing endogenous opioids."
+    },
+    {
+      "id": "mcns2-ch1-physiology-q30",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 1,
+      "question": "The stretch reflex:",
+      "options": [
+        "Is a polysynaptic reflex.",
+        "Is the fastest body reflex.",
+        "Receptor is the Pacinian corpuscle.",
+        "Has a long central delay.",
+        "Results in relaxation of the stretched muscle."
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "Stretch reflex is the fastest body reflex. Option B is correct. It is a monosynaptic reflex with minimal central delay (0.5-0.8 ms). Options A, C, D, E are incorrect: it is monosynaptic (not polysynaptic), receptor is muscle spindle (not Pacinian), has short (not long) central delay, results in contraction (not relaxation).",
+      "keyConcept": "The monosynaptic stretch reflex has the fastest conduction due to its simple, direct excitatory circuit."
+    },
+    {
+      "id": "mcns2-ch1-physiology-q140",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 3,
+      "question": "Which of the following could NOT be an exteroceptor?",
+      "options": [
+        "Muscle spindle.",
+        "Thermoreceptor.",
+        "Nociceptor.",
+        "Pacinian corpuscle.",
+        "Rods."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Muscle spindles are proprioceptors located within muscles that detect stretch and length changes. Exteroceptors receive stimuli from the external environment (thermoreceptors, nociceptors, Pacinian corpuscles, rods/cones).",
+      "keyConcept": "Proprioceptors like muscle spindles are interoceptors, not exteroceptors which sense external stimuli."
+    },
+    {
+      "id": "mcns2-ch7-physiology-q13",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 3,
+      "question": "Lesion of the spinocerebellar tract typically produces:",
+      "options": [
+        "Hypotonia",
+        "Hyporeflexia",
+        "Kinetic tremor",
+        "Clonus",
+        "Babinski sign"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Spinocerebellar tract lesion causes ipsilateral ataxia and loss of proprioception from the limb, as these tracts carry uncrossed sensory information from muscle spindles and tendon organs.",
+      "keyConcept": "Spinocerebellar tract damage produces ipsilateral limb ataxia and impaired proprioception."
+    },
+    {
+      "id": "mcns2-ch1-histology-q83",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 4,
+      "question": "Which receptors provide the sense of movement and position of the body?",
+      "options": [
+        "Nociceptors",
+        "Thermoreceptors",
+        "Mechanoreceptors",
+        "Proprioception receptors",
+        "Chemoreceptors"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Proprioception receptors (muscle spindles, Golgi tendon organs, joint receptors) provide information about body position, movement, and limb location in space.",
+      "keyConcept": "Proprioceptive receptors"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q288",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 1,
+      "question": "Pain sensation can be inhibited by:",
+      "options": [
+        "Adaptation of pain receptors.",
+        "Increasing the pain threshold by kinin.",
+        "Injection of naloxone.",
+        "Stimulation of opioid receptors.",
+        "Stimulation of lateral spinothalamic tract."
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Opioid receptor stimulation activates descending pain inhibitory pathways from the periaqueductal grey to the dorsal horn, blocking pain signal transmission.",
+      "keyConcept": "Opioid receptor stimulation inhibits pain sensation."
+    },
+    {
+      "id": "mcns2-ch7-anatomy-q38",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 2,
+      "question": "All characters of ventral spinocerebellar tract except:",
+      "options": [
+        "ascend in all level of white matter then brain stem",
+        "carry impulse from trunk on same side only",
+        "carry impulse from lower limb on same or opposite side",
+        "arise from cells in posterior horn (V-VII)"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "The ventral spinocerebellar tract carries impulses from the lower limb on both sides (decussates twice) and trunk on the same side, not only trunk on same side.",
+      "keyConcept": "Ventral spinocerebellar tract"
+    },
+    {
+      "id": "mcns2-ch7-anatomy-q44",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 1,
+      "question": "The lateral spinothalamic tract carries which sensations?",
+      "options": [
+        "Fine touch and vibration",
+        "Pain and temperature",
+        "Proprioception and pressure",
+        "Crude touch only"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "The lateral spinothalamic tract carries pain and temperature sensation after crossing in the spinal cord, while fine touch and vibration are carried by the dorsal columns.",
+      "keyConcept": "Lateral spinothalamic tract: pain and temperature."
+    }
+  ]
+}

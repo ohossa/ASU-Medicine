@@ -543,7 +543,7 @@ export function ResultsDashboard({
             <button
               onClick={onBackToChapters}
               aria-label="Back to chapters"
-              className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.04] text-gray-700 dark:text-white/70 transition-colors hover:bg-gray-100 dark:hover:bg-white/[0.08]"
+              className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.04] text-gray-700 dark:text-white/70 transition-colors hover:bg-gray-100 dark:hover:bg-white/[0.08] btn-press"
             >
               <ArrowLeft size={16} className={`text-current ${isRTL ? 'rotate-180' : ''}`} />
             </button>
@@ -606,19 +606,19 @@ export function ResultsDashboard({
         <div className="mb-12 flex flex-wrap items-center justify-center gap-3">
           <button
             onClick={onRetake}
-            className="flex items-center gap-2 rounded-full bg-physiology px-6 py-3 text-sm font-semibold text-white shadow-lg transition-all hover:bg-physiology-dark hover:scale-[1.03] active:scale-[0.98] cursor-pointer"
+            className="flex items-center gap-2 rounded-full bg-physiology px-6 py-3 text-sm font-semibold text-white shadow-lg transition-all hover:bg-physiology-dark hover:scale-[1.03] active:scale-[0.98] cursor-pointer btn-press"
           >
             <RotateCcw size={15} /> Retake Session
           </button>
           <button
             onClick={onTryAnotherSubject}
-            className="flex items-center gap-2 rounded-full border border-gray-200 dark:border-white/[0.1] bg-gray-50/50 dark:bg-white/[0.03] px-6 py-3 text-sm font-medium text-gray-700 dark:text-white/75 transition-colors hover:bg-gray-100 dark:hover:bg-white/[0.08] cursor-pointer"
+            className="flex items-center gap-2 rounded-full border border-gray-200 dark:border-white/[0.1] bg-gray-50/50 dark:bg-white/[0.03] px-6 py-3 text-sm font-medium text-gray-700 dark:text-white/75 transition-colors hover:bg-gray-100 dark:hover:bg-white/[0.08] cursor-pointer btn-press"
           >
             <LayoutGrid size={15} /> Practice Another Topic
           </button>
           <button
             onClick={onBackToChapters}
-            className="flex items-center gap-2 rounded-full border border-gray-200 dark:border-white/[0.1] bg-gray-50/50 dark:bg-white/[0.03] px-6 py-3 text-sm font-medium text-gray-700 dark:text-white/75 transition-colors hover:bg-gray-100 dark:hover:bg-white/[0.08] cursor-pointer"
+            className="flex items-center gap-2 rounded-full border border-gray-200 dark:border-white/[0.1] bg-gray-50/50 dark:bg-white/[0.03] px-6 py-3 text-sm font-medium text-gray-700 dark:text-white/75 transition-colors hover:bg-gray-100 dark:hover:bg-white/[0.08] cursor-pointer btn-press"
           >
             Back to Chapters <ArrowRight size={15} className={isRTL ? 'rotate-180' : ''} />
           </button>
@@ -640,7 +640,7 @@ export function ResultsDashboard({
                 key={key}
                 onClick={() => setFilter(key)}
                 aria-pressed={isActive}
-                className={`flex items-center gap-2 rounded-full border px-4 py-2 text-sm transition-all cursor-pointer ${
+                className={`flex items-center gap-2 rounded-full border px-4 py-2 text-sm transition-all cursor-pointer btn-press ${
                   isActive
                     ? 'border-gray-300 dark:border-white/30 bg-gray-900 dark:bg-white text-white dark:text-black font-semibold shadow-sm'
                     : 'border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.03] text-gray-600 dark:text-white/60 hover:bg-gray-100 dark:hover:bg-white/[0.07]'
@@ -662,7 +662,7 @@ export function ResultsDashboard({
               const indices = new Set(visible.map(({ i }) => i));
               setOpenExplanations(new Set(indices));
             }}
-            className="flex items-center gap-1.5 rounded-full border border-amber-500/30 bg-amber-500/5 px-3.5 py-1.5 text-xs font-medium text-amber-700 dark:text-amber-300 transition-colors hover:bg-amber-500/10"
+            className="flex items-center gap-1.5 rounded-full border border-amber-500/30 bg-amber-500/5 px-3.5 py-1.5 text-xs font-medium text-amber-700 dark:text-amber-300 transition-colors hover:bg-amber-500/10 btn-press"
           >
             <Lightbulb size={13} /> Expand All Explanations
           </button>
@@ -671,7 +671,7 @@ export function ResultsDashboard({
               const indices = new Set(visible.map(({ i }) => i));
               setOpenConcepts(new Set(indices));
             }}
-            className="flex items-center gap-1.5 rounded-full border border-sky-500/30 bg-sky-500/5 px-3.5 py-1.5 text-xs font-medium text-sky-700 dark:text-sky-300 transition-colors hover:bg-sky-500/10"
+            className="flex items-center gap-1.5 rounded-full border border-sky-500/30 bg-sky-500/5 px-3.5 py-1.5 text-xs font-medium text-sky-700 dark:text-sky-300 transition-colors hover:bg-sky-500/10 btn-press"
           >
             <Bookmark size={13} /> Expand All Concepts
           </button>
@@ -680,7 +680,7 @@ export function ResultsDashboard({
               setOpenExplanations(new Set());
               setOpenConcepts(new Set());
             }}
-            className="flex items-center gap-1.5 rounded-full border border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.03] px-3.5 py-1.5 text-xs font-medium text-gray-500 dark:text-white/50 transition-colors hover:bg-gray-100 dark:hover:bg-white/[0.07]"
+            className="flex items-center gap-1.5 rounded-full border border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.03] px-3.5 py-1.5 text-xs font-medium text-gray-500 dark:text-white/50 transition-colors hover:bg-gray-100 dark:hover:bg-white/[0.07] btn-press"
           >
             Collapse All
           </button>
@@ -731,7 +731,7 @@ export function ResultsDashboard({
                     {q.explanation && (
                       <button
                         onClick={() => toggleSet(setOpenExplanations, i)}
-                        className={`flex items-center gap-1.5 rounded-full border px-3.5 py-1.5 text-xs font-medium transition-colors cursor-pointer ${
+                        className={`flex items-center gap-1.5 rounded-full border px-3.5 py-1.5 text-xs font-medium transition-colors cursor-pointer btn-press ${
                           openExplanations.has(i)
                             ? 'border-amber-500/40 bg-amber-500/10 text-amber-700 dark:text-amber-300'
                             : 'border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.03] text-gray-500 dark:text-white/50 hover:bg-gray-100 dark:hover:bg-white/[0.07]'
@@ -743,7 +743,7 @@ export function ResultsDashboard({
                     {q.keyConcept && (
                       <button
                         onClick={() => toggleSet(setOpenConcepts, i)}
-                        className={`flex items-center gap-1.5 rounded-full border px-3.5 py-1.5 text-xs font-medium transition-colors cursor-pointer ${
+                        className={`flex items-center gap-1.5 rounded-full border px-3.5 py-1.5 text-xs font-medium transition-colors cursor-pointer btn-press ${
                           openConcepts.has(i)
                             ? 'border-sky-500/40 bg-sky-500/10 text-sky-700 dark:text-sky-300'
                             : 'border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.03] text-gray-500 dark:text-white/50 hover:bg-gray-100 dark:hover:bg-white/[0.07]'

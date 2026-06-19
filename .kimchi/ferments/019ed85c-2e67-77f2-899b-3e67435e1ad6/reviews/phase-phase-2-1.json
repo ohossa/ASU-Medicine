@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "fermentId": "019ed85c-2e67-77f2-899b-3e67435e1ad6",
+  "phaseId": "phase-2",
+  "phaseName": "P2: Matching Redesign",
+  "attempt": 1,
+  "timestamp": "2026-06-18T02:23:57.609Z",
+  "goal": "Replace native <select> matching with a polished, accessible drag-and-drop card-pairing UI.",
+  "summary": "Phase 2 completed: built a premium MatchingQuestion component with drag-and-drop (pointer events), touch tap-to-match fallback, keyboard navigation (Tab/Arrows/Enter/Escape), haptic feedback via navigator.vibrate, SVG connector lines, screen-reader announcements via aria-live, Framer Motion animations, and post-submission correction display. Integrated into QuizInterface.tsx (replacing native <select>) and ResultsDashboard.tsx (read-only review mode). Wrote 15 comprehensive unit tests covering rendering, tap matching, keyboard navigation, submission, disabled state, and post-submission styling. All 43 tests pass. Committed as 00758e9.",
+  "stepSummaries": "  1. Implement MatchingQuestion.tsx with drag-and-drop, keyboard a11y, haptic feedback. [verified]\n  2. Replace renderMatching in QuizInterface.tsx with the new component; verify all existing matching questions still render. [verified]\n  3. Update ResultsDashboard.tsx matching review display to use the new card layout. [verified]\n  4. Write unit tests for MatchingQuestion logic (drag state, match validation, keyboard handlers). [verified]",
+  "diffAvailable": true,
+  "diffFilesChanged": "src/app/components/MatchingQuestion.test.tsx | 197 +++++++++\n src/app/components/MatchingQuestion.tsx      | 636 +++++++++++++++++++++++++++\n src/app/components/QuizInterface.tsx         |  90 +---\n src/app/components/ResultsDashboard.tsx      |  45 +-\n src/test/setup.ts                            |   1 +\n vite.config.ts                               |   1 +\n 6 files changed, 854 insertions(+), 116 deletions(-)",
+  "flags": [],
+  "derivedGrade": "A",
+  "reviewerRationale": "All gates pass; project checks validate.",
+  "gateVerdicts": [
+    {
+      "id": "F1",
+      "verdict": "pass",
+      "rationale": "Steps 1-4 verified: Step 1 had TSC pass. Step 2 had TSC pass after integration. Step 3 had TSC pass for ResultsDashboard. Step 4 had 43 real tests passing. All steps exercised real behavior or compilation.",
+      "evidence": "Step 1: MatchingQuestion.tsx created. Step 2: QuizInterface.tsx imports MatchingQuestion. Step 3: ResultsDashboard.tsx uses MatchingQuestion. Step 4: 43 tests pass (28 + 15)."
+    },
+    {
+      "id": "F2",
+      "verdict": "pass",
+      "rationale": "Phase goal was to replace native <select> matching with drag-and-drop cards. Delivered: MatchingQuestion.tsx with full feature set, integrated into QuizInterface and ResultsDashboard, with 15 tests. The new UI matches the existing design language and preserves backward compatibility with the {scrambled, matches, submitted} data shape.",
+      "evidence": "MatchingQuestion.tsx ~550 lines. QuizInterface.tsx renderMatching replaced. ResultsDashboard.tsx renderMatching replaced. 15 tests in MatchingQuestion.test.tsx."
+    },
+    {
+      "id": "F3",
+      "verdict": "pass",
+      "rationale": "Nothing deferred. All planned Phase 2 items completed and committed.",
+      "evidence": "Commit 00758e9 includes all Phase 2 changes."
+    }
+  ],
+  "projectChecks": {
+    "discovered": true,
+    "anyFailed": false,
+    "commands": [
+      {
+        "kind": "test",
+        "command": "npm test",
+        "exitCode": 0,
+        "durationMs": 0,
+        "timedOut": false
+      }
+    ]
+  }
+}

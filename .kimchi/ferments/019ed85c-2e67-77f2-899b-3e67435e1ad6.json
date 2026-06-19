@@ -1,0 +1,494 @@
+{
+  "id": "019ed85c-2e67-77f2-899b-3e67435e1ad6",
+  "name": "Matching + AI hints overhaul",
+  "description": "Implement two large features from the ASU Medical Portal Improvement Plan:\n\n#2.5 — Redesign matching questions with a smooth, fluent drag-and-drop / tappable card-pairing interface that feels native to the existing design language. Replace the current native `<select>` dropdowns. Must include haptic feedback on supported devices, keyboard accessibility, smooth animations, and full integration with the existing QuizInterface scoring and ResultsDashboard.\n\n#6.5 — Add AI-powered tutoring hints. When a student answers incorrectly twice on a question, offer a contextual hint (e.g., \"Think about which cranial nerve is responsible for lateral eye movement\"). Must be architected so the AI provider backend endpoint is pluggable — the user will provide an API key/config when they wake up. The frontend should be fully wired and ready to call the endpoint.\n\nFor both: include tests, documentation, and ensure they blend seamlessly with the existing UI/UX. No half-measures, no placeholders, no TODOs.",
+  "status": "paused",
+  "worktree": {
+    "path": "/Users/omarhossa/Documents/Medcine ASU/ASU-Medical-Portal",
+    "branch": "main",
+    "commit": "2b85110f8eb8ac58c475950a9a30e1eec4f22c8c"
+  },
+  "scoping": {
+    "goal": {
+      "answer": "Implement a complete drag-and-drop matching question interface and an AI-powered tutoring hints system, alongside foundational code architecture improvements, performance quick wins, and comprehensive tests. The result must feel native to the existing ASU Medical Portal design language and be fully reversible via git.",
+      "confirmedAt": "2026-06-18T01:55:47.335Z"
+    },
+    "criteria": {
+      "answer": "Matching questions render a smooth drag-and-drop card-pairing interface replacing native <select> dropdowns, with touch/mouse drag support, snap animations, and visual feedback for correct/incorrect matches.\nAI hint system triggers a contextual hint after a student answers a question incorrectly twice; frontend is fully wired to a pluggable backend endpoint, with graceful degradation when no API key is configured.\nBoth features integrate seamlessly with existing QuizInterface.tsx scoring, answer validation (checkAnswerCorrect), and ResultsDashboard.tsx without breaking any existing question types.\nKeyboard accessibility works for matching (tab navigation, Enter/Space to select/deselect, arrow keys to move between cards) and screen readers announce state changes.\nHaptic feedback fires on mobile devices during drag and drop interactions for matching questions.\nAll new code has Vitest unit tests with at least 80% coverage for matching logic and hint trigger logic.\nNo TODOs, placeholders, or hardcoded secrets in shipped code. Documentation exists for how to configure the AI hint API provider.\nBuild passes (`npm run build`) with zero TypeScript errors and zero new ESLint warnings.\nExisting matching questions in question banks continue to work correctly with the new UI.\nLazy-load module JSON question banks via dynamic import() instead of eager glob, cutting initial bundle size.\nAdd `defer` to the main script tag in index.html for explicit loading intent.\nPreconnect Clerk auth domain and preload Arabic font subset in index.html.\nAdd `reportCompressedSize: false` and chunk-size tuning to vite.config.ts for faster CI builds.\nExtract QuizInterface state machine into a `useQuizEngine` hook, reducing QuizInterface.tsx complexity.\nAdd Vitest + happy-dom test framework with tests for checkAnswerCorrect and score validators.\nAdd route-level error boundaries wrapping `/quiz`, `/marks-calculator`, and `/analytics` routes.\nA complete git backup branch exists before any changes are made, and each major feature is committed separately so the user can roll back to any point.",
+      "confirmedAt": "2026-06-18T01:55:47.335Z"
+    },
+    "constraints": {
+      "answer": "Preserve all existing localStorage keys and cloud-sync contracts., No breaking changes to question bank JSON format., Matching answer data shape ({scrambled, matches, submitted}) must remain backward-compatible., User will provide AI API key after waking up; the architecture must be provider-pluggable with graceful no-op fallback., Maximum 2 fix rounds during review; unresolved failures are reported, not silently worked around., No new runtime dependencies without explicit justification.",
+      "confirmedAt": "2026-06-18T01:55:47.335Z"
+    },
+    "phases": {
+      "answer": "P1: Foundation & Backup, P2: Matching Redesign, P3: Code Architecture, P4: AI Hints, P5: Performance & Integration",
+      "confirmedAt": "2026-06-18T01:55:47.335Z"
+    },
+    "assumptions": {
+      "answer": "React 18+ with Framer Motion for animations; Tailwind CSS for styling.; Vite build system with existing Clerk auth and Redis/Upstash backend pattern.; Matching questions use {pairs: [{premise, target}], scrambled, matches} data shape.; The project uses English/Arabic bilingual support via LanguageContext.; User wants a git backup branch (`backup/matching-ai-hints`) before any file changes.",
+      "confirmedAt": "2026-06-18T01:55:47.335Z"
+    }
+  },
+  "phases": [
+    {
+      "id": "phase-1",
+      "index": 1,
+      "name": "P1: Foundation & Backup",
+      "goal": "Create a reversible git backup, set up Vitest, apply build/tooling quick wins, and establish the test harness.",
+      "description": "1. Create git backup branch `backup/matching-ai-hints`. 2. Install Vitest + happy-dom + @testing-library/react. 3. Configure vite.config.ts with `reportCompressedSize: false` and `chunkSizeWarningLimit: 600`. 4. Update index.html: add `defer` to script tag, preconnect Clerk, preload Arabic Amiri font. 5. Update ESLint config with type-aware rules. 6. Write initial tests for checkAnswerCorrect.",
+      "budget": "100k tokens",
+      "parallel": false,
+      "status": "completed",
+      "steps": [
+        {
+          "id": "step-1",
+          "index": 1,
+          "description": "Create git backup branch and verify no uncommitted changes exist.",
+          "status": "verified",
+          "verification": {
+            "command": "git branch --list | grep backup/matching-ai-hints",
+            "retries": 2,
+            "retryDelayMs": 1000
+          },
+          "parallel": false,
+          "startedAt": "2026-06-18T01:56:07.861Z",
+          "completedAt": "2026-06-18T01:56:39.425Z",
+          "result": {
+            "success": true,
+            "exitCode": 0,
+            "stdout": "",
+            "stderr": "",
+            "completedAt": "2026-06-18T01:56:39.425Z"
+          }
+        },
+        {
+          "id": "step-2",
+          "index": 2,
+          "description": "Install Vitest, happy-dom, @testing-library/react, jsdom if needed, and configure test scripts in package.json.",
+          "status": "verified",
+          "verification": {
+            "command": "cat package.json | grep vitest",
+            "retries": 2,
+            "retryDelayMs": 1000
+          },
+          "parallel": false,
+          "startedAt": "2026-06-18T01:56:54.580Z",
+          "completedAt": "2026-06-18T01:59:11.710Z",
+          "result": {
+            "success": true,
+            "exitCode": 0,
+            "stdout": "",
+            "stderr": "",
+            "completedAt": "2026-06-18T01:59:11.710Z"
+          }
+        },
+        {
+          "id": "step-3",
+          "index": 3,
+          "description": "Apply vite.config.ts build tweaks and index.html quick wins.",
+          "status": "verified",
+          "verification": {
+            "command": "grep -q 'reportCompressedSize' vite.config.ts && grep -q 'defer' index.html",
+            "retries": 2,
+            "retryDelayMs": 1000
+          },
+          "parallel": false,
+          "startedAt": "2026-06-18T01:59:19.634Z",
+          "completedAt": "2026-06-18T02:00:32.429Z",
+          "result": {
+            "success": true,
+            "exitCode": 0,
+            "stdout": "",
+            "stderr": "",
+            "completedAt": "2026-06-18T02:00:32.429Z"
+          }
+        },
+        {
+          "id": "step-4",
+          "index": 4,
+          "description": "Write checkAnswerCorrect tests covering MCQ, Matching, FillBlank, TrueFalse, Essay, CaseStudy.",
+          "status": "verified",
+          "verification": {
+            "command": "npm test -- --run 2>&1 | grep -q 'passing'",
+            "retries": 2,
+            "retryDelayMs": 1000
+          },
+          "parallel": false,
+          "startedAt": "2026-06-18T02:01:03.599Z",
+          "completedAt": "2026-06-18T02:03:10.027Z",
+          "result": {
+            "success": true,
+            "exitCode": 0,
+            "stdout": "",
+            "stderr": "",
+            "completedAt": "2026-06-18T02:03:10.027Z"
+          }
+        }
+      ],
+      "startedAt": "2026-06-18T01:55:55.275Z",
+      "completedAt": "2026-06-18T02:04:17.244Z",
+      "summary": "Phase 1 completed: created git backup branch, installed Vitest v4.1.9 with happy-dom and testing libraries, applied vite.config.ts build tweaks (reportCompressedSize: false, chunkSizeWarningLimit: 600), added index.html quick wins (defer on script, Amiri Arabic font preloads), and wrote comprehensive checkAnswerCorrect unit tests (28 tests covering 6 question types — all passing). Committed as ee1a496.",
+      "grade": {
+        "grade": "A",
+        "rationale": "All gates pass; project checks validate.",
+        "gradedAt": "2026-06-18T02:04:17.243Z"
+      }
+    },
+    {
+      "id": "phase-2",
+      "index": 2,
+      "name": "P2: Matching Redesign",
+      "goal": "Replace native <select> matching with a polished, accessible drag-and-drop card-pairing UI.",
+      "description": "Build a standalone MatchingQuestion component that uses pointer/touch events for drag-and-drop, Framer Motion for snap animations, keyboard navigation for accessibility, and the Navigator.vibrate API for haptic feedback. Integrate into QuizInterface.tsx (replacing renderMatching) and update ResultsDashboard.tsx to render the same card layout for review. Ensure backward compatibility with existing {matches, scrambled, submitted} answer objects.",
+      "budget": "150k tokens",
+      "parallel": false,
+      "status": "completed",
+      "steps": [
+        {
+          "id": "step-1",
+          "index": 1,
+          "description": "Implement MatchingQuestion.tsx with drag-and-drop, keyboard a11y, haptic feedback.",
+          "status": "verified",
+          "verification": {
+            "command": "ls src/app/components/MatchingQuestion.tsx",
+            "retries": 2,
+            "retryDelayMs": 1000
+          },
+          "parallel": false,
+          "startedAt": "2026-06-18T02:04:47.158Z",
+          "completedAt": "2026-06-18T02:11:18.789Z",
+          "result": {
+            "success": true,
+            "exitCode": 0,
+            "stdout": "",
+            "stderr": "",
+            "completedAt": "2026-06-18T02:11:18.789Z"
+          }
+        },
+        {
+          "id": "step-2",
+          "index": 2,
+          "description": "Replace renderMatching in QuizInterface.tsx with the new component; verify all existing matching questions still render.",
+          "status": "verified",
+          "verification": {
+            "command": "grep -q 'MatchingQuestion' src/app/components/QuizInterface.tsx",
+            "retries": 2,
+            "retryDelayMs": 1000
+          },
+          "parallel": false,
+          "startedAt": "2026-06-18T02:11:30.762Z",
+          "completedAt": "2026-06-18T02:13:03.553Z",
+          "result": {
+            "success": true,
+            "exitCode": 0,
+            "stdout": "",
+            "stderr": "",
+            "completedAt": "2026-06-18T02:13:03.553Z"
+          }
+        },
+        {
+          "id": "step-3",
+          "index": 3,
+          "description": "Update ResultsDashboard.tsx matching review display to use the new card layout.",
+          "status": "verified",
+          "verification": {
+            "command": "grep -q 'MatchingQuestion\\|MatchingCard' src/app/components/ResultsDashboard.tsx",
+            "retries": 2,
+            "retryDelayMs": 1000
+          },
+          "parallel": false,
+          "startedAt": "2026-06-18T02:13:14.089Z",
+          "completedAt": "2026-06-18T02:14:21.890Z",
+          "result": {
+            "success": true,
+            "exitCode": 0,
+            "stdout": "",
+            "stderr": "",
+            "completedAt": "2026-06-18T02:14:21.890Z"
+          }
+        },
+        {
+          "id": "step-4",
+          "index": 4,
+          "description": "Write unit tests for MatchingQuestion logic (drag state, match validation, keyboard handlers).",
+          "status": "verified",
+          "verification": {
+            "command": "npm test -- --run 2>&1 | grep -q 'Matching'",
+            "retries": 2,
+            "retryDelayMs": 1000
+          },
+          "parallel": false,
+          "startedAt": "2026-06-18T02:14:36.891Z",
+          "completedAt": "2026-06-18T02:22:36.823Z",
+          "result": {
+            "success": true,
+            "exitCode": 0,
+            "stdout": "",
+            "stderr": "",
+            "completedAt": "2026-06-18T02:22:36.823Z"
+          }
+        }
+      ],
+      "startedAt": "2026-06-18T02:04:35.283Z",
+      "completedAt": "2026-06-18T02:23:57.610Z",
+      "summary": "Phase 2 completed: built a premium MatchingQuestion component with drag-and-drop (pointer events), touch tap-to-match fallback, keyboard navigation (Tab/Arrows/Enter/Escape), haptic feedback via navigator.vibrate, SVG connector lines, screen-reader announcements via aria-live, Framer Motion animations, and post-submission correction display. Integrated into QuizInterface.tsx (replacing native <select>) and ResultsDashboard.tsx (read-only review mode). Wrote 15 comprehensive unit tests covering rendering, tap matching, keyboard navigation, submission, disabled state, and post-submission styling. All 43 tests pass. Committed as 00758e9.",
+      "grade": {
+        "grade": "A",
+        "rationale": "All gates pass; project checks validate.",
+        "gradedAt": "2026-06-18T02:23:57.609Z"
+      }
+    },
+    {
+      "id": "phase-3",
+      "index": 3,
+      "name": "P3: Code Architecture",
+      "goal": "Extract QuizInterface state into a testable useQuizEngine hook and add route-level error boundaries.",
+      "description": "Move timer, navigation, scoring, answer validation, and submission logic out of QuizInterface.tsx into useQuizEngine.ts. Wrap major routes in FeatureErrorBoundary. This decouples UI from state and makes the quiz logic testable.",
+      "budget": "120k tokens",
+      "parallel": false,
+      "status": "active",
+      "steps": [
+        {
+          "id": "step-1",
+          "index": 1,
+          "description": "Extract useQuizEngine hook covering timer, navigation, answer state, scoring.",
+          "status": "verified",
+          "verification": {
+            "command": "ls src/app/hooks/useQuizEngine.ts",
+            "retries": 2,
+            "retryDelayMs": 1000
+          },
+          "parallel": false,
+          "startedAt": "2026-06-18T02:24:35.430Z",
+          "completedAt": "2026-06-18T02:48:14.430Z",
+          "result": {
+            "success": true,
+            "exitCode": 0,
+            "stdout": "",
+            "stderr": "",
+            "completedAt": "2026-06-18T02:48:14.430Z"
+          }
+        },
+        {
+          "id": "step-2",
+          "index": 2,
+          "description": "Refactor QuizInterface.tsx to consume useQuizEngine; verify no regression in any question type.",
+          "status": "verified",
+          "verification": {
+            "command": "grep -q 'useQuizEngine' src/app/components/QuizInterface.tsx",
+            "retries": 2,
+            "retryDelayMs": 1000
+          },
+          "parallel": false,
+          "startedAt": "2026-06-18T02:48:29.835Z",
+          "completedAt": "2026-06-18T03:08:11.199Z",
+          "result": {
+            "success": true,
+            "exitCode": 0,
+            "stdout": "",
+            "stderr": "",
+            "completedAt": "2026-06-18T03:08:11.199Z"
+          }
+        },
+        {
+          "id": "step-3",
+          "index": 3,
+          "description": "Apply FeatureErrorBoundary to /quiz, /marks-calculator, /analytics routes in App.tsx.",
+          "status": "verified",
+          "verification": {
+            "command": "grep -q 'FeatureErrorBoundary' src/app/App.tsx",
+            "retries": 2,
+            "retryDelayMs": 1000
+          },
+          "parallel": false,
+          "startedAt": "2026-06-18T03:08:28.912Z",
+          "completedAt": "2026-06-18T03:13:31.355Z",
+          "result": {
+            "success": true,
+            "exitCode": 0,
+            "stdout": "",
+            "stderr": "",
+            "completedAt": "2026-06-18T03:13:31.355Z"
+          }
+        },
+        {
+          "id": "step-4",
+          "index": 4,
+          "description": "Write unit tests for useQuizEngine covering navigation, scoring, timer.",
+          "status": "verified",
+          "verification": {
+            "command": "npm test -- --run 2>&1 | grep -q 'useQuizEngine'",
+            "retries": 2,
+            "retryDelayMs": 1000
+          },
+          "parallel": false,
+          "startedAt": "2026-06-18T03:14:27.358Z",
+          "completedAt": "2026-06-18T03:14:47.820Z",
+          "result": {
+            "success": true,
+            "exitCode": 0,
+            "stdout": "",
+            "stderr": "",
+            "completedAt": "2026-06-18T03:14:47.820Z"
+          }
+        }
+      ],
+      "startedAt": "2026-06-18T02:24:11.978Z"
+    },
+    {
+      "id": "phase-4",
+      "index": 4,
+      "name": "P4: AI Hints",
+      "goal": "Build frontend hint trigger system and backend endpoint, architected for pluggable AI providers.",
+      "description": "Frontend: track per-question wrong-answer count in the quiz session; show a contextual hint UI after the second consecutive wrong answer. Backend: create api/hint.ts endpoint that accepts {questionText, options, explanation, subject, previousAttempts} and returns {hint, source}. The endpoint uses a configurable provider adapter pattern. Default adapter returns a static/generic hint if no API key is set. Document how to add the real AI provider.",
+      "budget": "120k tokens",
+      "parallel": false,
+      "status": "planned",
+      "steps": [
+        {
+          "id": "step-1",
+          "index": 1,
+          "description": "Create HintSystem types and frontend hook (useHintSystem) that counts wrong attempts and surfaces hints.",
+          "status": "pending",
+          "verification": {
+            "command": "ls src/app/hooks/useHintSystem.ts",
+            "retries": 2,
+            "retryDelayMs": 1000
+          },
+          "parallel": false
+        },
+        {
+          "id": "step-2",
+          "index": 2,
+          "description": "Integrate hint UI into QuizInterface.tsx (appears below question after 2nd wrong answer).",
+          "status": "pending",
+          "verification": {
+            "command": "grep -q 'hint\\|Hint' src/app/components/QuizInterface.tsx",
+            "retries": 2,
+            "retryDelayMs": 1000
+          },
+          "parallel": false
+        },
+        {
+          "id": "step-3",
+          "index": 3,
+          "description": "Create api/hint.ts backend endpoint with adapter pattern and static fallback.",
+          "status": "pending",
+          "verification": {
+            "command": "ls api/hint.ts",
+            "retries": 2,
+            "retryDelayMs": 1000
+          },
+          "parallel": false
+        },
+        {
+          "id": "step-4",
+          "index": 4,
+          "description": "Write tests for hint trigger logic and adapter fallback.",
+          "status": "pending",
+          "verification": {
+            "command": "npm test -- --run 2>&1 | grep -q 'hint'",
+            "retries": 2,
+            "retryDelayMs": 1000
+          },
+          "parallel": false
+        }
+      ]
+    },
+    {
+      "id": "phase-5",
+      "index": 5,
+      "name": "P5: Performance & Integration",
+      "goal": "Lazy-load JSON banks, run full test suite, verify build, and finalize documentation.",
+      "description": "Replace eager glob in data.ts with dynamic import() per module. Run the full Vitest suite with coverage. Verify `npm run build` passes with zero errors. Write AI_HINT_SETUP.md documenting provider configuration. Commit each phase separately.",
+      "budget": "80k tokens",
+      "parallel": false,
+      "status": "planned",
+      "steps": [
+        {
+          "id": "step-1",
+          "index": 1,
+          "description": "Refactor data.ts to use dynamic import() for module JSON banks.",
+          "status": "pending",
+          "verification": {
+            "command": "grep -q 'import()' src/app/data.ts && grep -q 'eager: true' src/app/data.ts; test $? -eq 1",
+            "retries": 2,
+            "retryDelayMs": 1000
+          },
+          "parallel": false
+        },
+        {
+          "id": "step-2",
+          "index": 2,
+          "description": "Run full Vitest suite and verify all tests pass.",
+          "status": "pending",
+          "verification": {
+            "command": "npm test -- --run 2>&1 | tail -20",
+            "retries": 2,
+            "retryDelayMs": 1000
+          },
+          "parallel": false
+        },
+        {
+          "id": "step-3",
+          "index": 3,
+          "description": "Run production build and confirm zero TypeScript/ESLint errors.",
+          "status": "pending",
+          "verification": {
+            "command": "npm run build 2>&1 | tail -5",
+            "retries": 2,
+            "retryDelayMs": 1000
+          },
+          "parallel": false
+        },
+        {
+          "id": "step-4",
+          "index": 4,
+          "description": "Write AI_HINT_SETUP.md and commit each phase as a separate commit.",
+          "status": "pending",
+          "verification": {
+            "command": "ls AI_HINT_SETUP.md && git log --oneline -5",
+            "retries": 2,
+            "retryDelayMs": 1000
+          },
+          "parallel": false
+        }
+      ]
+    }
+  ],
+  "decisions": [],
+  "memories": [],
+  "createdAt": "2026-06-18T01:33:00.391Z",
+  "updatedAt": "2026-06-18T13:57:29.183Z",
+  "goal": "Implement a complete drag-and-drop matching question interface and an AI-powered tutoring hints system, alongside foundational code architecture improvements, performance quick wins, and comprehensive tests. The result must feel native to the existing ASU Medical Portal design language and be fully reversible via git.",
+  "successCriteria": [
+    "Matching questions render a smooth drag-and-drop card-pairing interface replacing native <select> dropdowns, with touch/mouse drag support, snap animations, and visual feedback for correct/incorrect matches.",
+    "AI hint system triggers a contextual hint after a student answers a question incorrectly twice; frontend is fully wired to a pluggable backend endpoint, with graceful degradation when no API key is configured.",
+    "Both features integrate seamlessly with existing QuizInterface.tsx scoring, answer validation (checkAnswerCorrect), and ResultsDashboard.tsx without breaking any existing question types.",
+    "Keyboard accessibility works for matching (tab navigation, Enter/Space to select/deselect, arrow keys to move between cards) and screen readers announce state changes.",
+    "Haptic feedback fires on mobile devices during drag and drop interactions for matching questions.",
+    "All new code has Vitest unit tests with at least 80% coverage for matching logic and hint trigger logic.",
+    "No TODOs, placeholders, or hardcoded secrets in shipped code. Documentation exists for how to configure the AI hint API provider.",
+    "Build passes (`npm run build`) with zero TypeScript errors and zero new ESLint warnings.",
+    "Existing matching questions in question banks continue to work correctly with the new UI.",
+    "Lazy-load module JSON question banks via dynamic import() instead of eager glob, cutting initial bundle size.",
+    "Add `defer` to the main script tag in index.html for explicit loading intent.",
+    "Preconnect Clerk auth domain and preload Arabic font subset in index.html.",
+    "Add `reportCompressedSize: false` and chunk-size tuning to vite.config.ts for faster CI builds.",
+    "Extract QuizInterface state machine into a `useQuizEngine` hook, reducing QuizInterface.tsx complexity.",
+    "Add Vitest + happy-dom test framework with tests for checkAnswerCorrect and score validators.",
+    "Add route-level error boundaries wrapping `/quiz`, `/marks-calculator`, and `/analytics` routes.",
+    "A complete git backup branch exists before any changes are made, and each major feature is committed separately so the user can roll back to any point."
+  ],
+  "constraints": [
+    "Preserve all existing localStorage keys and cloud-sync contracts.",
+    "No breaking changes to question bank JSON format.",
+    "Matching answer data shape ({scrambled, matches, submitted}) must remain backward-compatible.",
+    "User will provide AI API key after waking up; the architecture must be provider-pluggable with graceful no-op fallback.",
+    "Maximum 2 fix rounds during review; unresolved failures are reported, not silently worked around.",
+    "No new runtime dependencies without explicit justification."
+  ],
+  "lastActiveAt": "2026-06-18T02:24:11.978Z",
+  "activePhaseId": "phase-3"
+}

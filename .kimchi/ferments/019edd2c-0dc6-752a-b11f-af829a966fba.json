@@ -1,0 +1,17 @@
+{
+  "id": "019edd2c-0dc6-752a-b11f-af829a966fba",
+  "name": "Full ASU Medical Portal Overhaul",
+  "description": "Build ALL 10 waves of the ASU Medical Portal improvement plan in one overnight session:\n\n1. Install missing dependencies (zustand, zod, vite-plugin-pwa)\n2. Download and normalize 5 Freesound samples\n3. Expand Question types with difficulty, bloomLevel, tags, estimatedTimeSeconds, media\n4. Add Zod runtime validation schemas\n5. Add heuristic difficulty/bloom assignment at data load time\n6. Fix remaining `any` types in data.ts\n7. Build sound engine with 5 samples + mute toggle\n8. Add micro-interactions on all buttons (scale, hover glow, active press)\n9. Add custom cursor for desktop (glowing orb, color shift)\n10. Build countdown timer hook with exam/practice/off modes\n11. Build circular SVG timer ring with urgency colors\n12. Add exam mode settings panel (20/40/60/80 question count)\n13. Build gamification store (XP, level, streak) with Zustand + persist\n14. Add XP/streak/level HUD in quiz interface\n15. Add daily streak heatmap calendar (GitHub-style)\n16. Add \"weakest topics\" auto-recommendation card\n17. Add module-themed confetti (color-coded per module)\n18. Add 3D card flip reveal on answer\n19. Add glassmorphism dashboard cards with hover lift\n20. Add module completion ring charts\n21. Add global prefers-reduced-motion support\n22. Add aria-live quiz announcements for screen readers\n23. Add focus traps in overlays\n24. Expand service worker precache with workbox manifest\n25. Add route prefetching\n26. Add loading skeletons for async content\n\nAfter ALL waves are built, run a full recheck: npm test, npm run build, npx tsc --noEmit, review all new files, verify no dangling threads, no TODOs, no placeholders.\n\nEvery wave must independently build + test + commit. No wave proceeds until its verification gate passes.",
+  "status": "draft",
+  "worktree": {
+    "path": "/Users/omarhossa/Documents/Medcine ASU/ASU-Medical-Portal",
+    "branch": "main",
+    "commit": "6bec27d04024bfcfd6c69d7e753069dc9f34ede4"
+  },
+  "scoping": {},
+  "phases": [],
+  "decisions": [],
+  "memories": [],
+  "createdAt": "2026-06-18T23:58:32.390Z",
+  "updatedAt": "2026-06-18T23:58:32.390Z"
+}

@@ -1,0 +1,977 @@
+{
+  "chapter": 10,
+  "chapterTitle": "Miscellaneous and Embryology",
+  "chapterSubtitle": "",
+  "totalQuestions": 55,
+  "questions": [
+    {
+      "id": "mcns2-ch5-histology-q9",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 2,
+      "question": "A 10-year-old girl develops ataxia & hydrocephalus. CT scan shows a midline partially cystic cerebellar mass. Microscopic examination shows elongated bipolar astrocytes with fibrillar processes and Rosenthal fibers. The diagnosis is:",
+      "options": [
+        "Astrocytoma grade 1.",
+        "Astrocytoma grade 2.",
+        "Anaplastic astrocytoma.",
+        "Astrocytoma grade 4."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Pilocytic astrocytoma (WHO grade I) in children shows elongated bipolar astrocytes with Rosenthal fibers and fibrillary processes. These are benign, often cystic cerebellar tumors with good prognosis.",
+      "keyConcept": "Pilocytic astrocytoma: Rosenthal fibers, bipolar astrocytes, cystic cerebellar tumor in children"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Choose the INCORRECT matching:",
+      "options": [
+        "Diencephalon – 3rd ventricle",
+        "Midbrain – cerebral aqueduct of Sylvius",
+        "Cerebral hemisphere – lateral ventricle",
+        "Hind brain – 4th ventricle",
+        "Mesencephalon – 2nd ventricle"
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "The mesencephalon (midbrain) surrounds the cerebral aqueduct of Sylvius, not a '2nd ventricle.' There is no standard 2nd ventricle; the brain ventricles are the paired lateral ventricles, third, and fourth.",
+      "keyConcept": "Mesencephalon surrounds the cerebral aqueduct, not a 2nd ventricle"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q260",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 2,
+      "question": "If a woman with phenylketonuria who is not on a low-phenylalanine diet becomes pregnant, the newborn is expected to be.",
+      "options": [
+        "Completely normal because the disease is recessive.",
+        "Affected with maternal phenylketonuria syndrome due to the teratogenic effect of phenylalanine.",
+        "Having microcephaly and congenital heart abnormality.",
+        "Bandec."
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Maternal phenylketonuria syndrome occurs when a PKU mother (untreated) has high phenylalanine levels during pregnancy, causing teratogenic effects: microcephaly, intellectual disability, congenital heart defects, and growth retardation in the fetus.",
+      "keyConcept": "Untreated maternal PKU causes fetal teratogenic effects (microcephaly, heart defects)"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q264",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 2,
+      "question": "Folic acid supplementation is recommended for which of the following?",
+      "options": [
+        "All women planning to get pregnant.",
+        "Only pregnant women with megaloblastic anemia.",
+        "All vegetarians, whether pregnant or not.",
+        "Only patients with low blood folic acid, for fear of toxicity."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Folic acid supplementation (400-800 mcg daily) is recommended for ALL women planning pregnancy to reduce neural tube defect risk in the fetus. This should begin at least one month before conception.",
+      "keyConcept": "Folic acid supplementation recommended for all women planning pregnancy"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q36",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "In which of the following layers of scalp does infection tend to spread?",
+      "options": [
+        "Skin.",
+        "Connective tissue.",
+        "Aponeurosis.",
+        "Loose areolar connective tissue.",
+        "Pericranium."
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Infection spreads most readily in the loose areolar connective tissue layer because it contains valveless emissary veins that can transmit infection intracranially.",
+      "keyConcept": "Loose areolar tissue is the dangerous layer of the scalp due to valveless emissary veins"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q408",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "The structure(s) derived from spongioblasts of neural crest is (are):",
+      "options": [
+        "Dura mater.",
+        "Oligodendrocytes.",
+        "Microglia.",
+        "Pia mater.",
+        "Chromaffin cells."
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "Spongioblasts (neural crest cells) give rise to chromaffin cells (adrenal medulla), which secrete epinephrine and norepinephrine. Microglia come from mesoderm ( monocytes), not neural crest. Oligodendrocytes and astrocytes come from neuroepithelial cells (glial precursors). Dura and pia mater are mesodermal.",
+      "keyConcept": "Chromaffin cells (adrenal medulla) derived from neural crest/spongioblasts; microglia from mesoderm, not neural crest."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q411",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Neuroepithelial cells give rise to:",
+      "options": [
+        "Neuroblasts.",
+        "Glioblasts.",
+        "Ependymal cells.",
+        "All of the above.",
+        "None of the above."
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Neuroepithelial cells (radial glial cells) in the ventricular zone of the developing neural tube give rise to all the cellular elements of the CNS: neuroblasts (neurons), glioblasts (astrocytes and oligodendrocytes), and ependymal cells (lining the ventricles and central canal). The marginal zone contains axon tracts.",
+      "keyConcept": "Neuroepithelial cells give rise to neuroblasts (neurons), glioblasts (astrocytes/oligodendrocytes), and ependymal cells."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q488",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Regarding the scalp, the following statements are true Except:",
+      "options": [
+        "Infection from scalp wounds can spread to superior sagittal sinus.",
+        "Its blood vessels run in the loose subaponeurotic space.",
+        "Its skin, superficial fascia, and aponeurosis move as one layer.",
+        "Frontal bellies of occipito-frontalis can corrugate skin of forehead.",
+        "Occipital bellies are supplied by facial nerve."
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "The scalp has 5 layers (SCALP): Skin, Connective tissue, Aponeurosis, Loose areolar tissue, Pericranium. The main blood vessels run in the connective tissue layer.选项E正确. The answer is E. The 'dangerous area' is the loose areolar tissue connecting to intracranial venous sinuses.",
+      "keyConcept": "Scalp layers (SCALP): skin, connective tissue, aponeurosis, loose areolar tissue, pericranium - vessels in layer 2."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q491",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "The plane of movement of the scalp is between:",
+      "options": [
+        "Skin & epicranial aponeurosis",
+        "Epicranial aponeurosis & pericranium.",
+        "Skin & subcutaneous fat",
+        "Pericranium & skull",
+        "Connective tissue layer & aponeurosis."
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "The plane of movement of the scalp is between the aponeurosis and pericranium (the loose areolar tissue layer). This allows scalp movement.选项B正确. The answer is B. Infection can spread in this 'dangerous layer' to intracranial structures.",
+      "keyConcept": "Scalp movement occurs between aponeurosis and pericranium - the loose areolar 'dangerous' layer."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q500",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 2,
+      "question": "The scalp is:",
+      "options": [
+        "Supplied by the great auricular nerve in front of the auricle.",
+        "Supplied by the supratrochlear and supraorbital arteries branches of the facial artery.",
+        "Supplied posteriorly by the greater occipital nerve from the ventral ramus of C2.",
+        "Supplied behind the auricle by the lesser occipital nerve from the ventral ramus of C2.",
+        "Drained by supratrochlear and supraorbital veins, which unite to form the superior ophthalmic vein."
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "The scalp is: 5 layers (SCALP), highly vascular, innervated by multiple nerves, and the danger lies in the loose areolar layer connecting to intracranial sinuses.选项C正确. The answer is C. Infection can spread to meninges via this layer.",
+      "keyConcept": "Scalp has 5 layers - loose areolar tissue is the 'dangerous' layer connecting to intracranial venous sinuses."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q503",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 2,
+      "question": "In which of the following layers of the scalp does infection tend to spread:",
+      "options": [
+        "Skin.",
+        "Connective tissue layer.",
+        "Aponeurotic layer",
+        "Loose areolar tissue layer.",
+        "Periosteal layer."
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Infection tends to spread in the loose areolar connective tissue layer (layer 4) of the scalp - the 'dangerous' layer communicating with intracranial spaces.选项D正确. The answer is D. This layer lacks barriers, allowing spread.",
+      "keyConcept": "Loose areolar layer (layer 4) is the dangerous zone - infections spread easily to intracranial structures."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q506",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 2,
+      "question": "Regarding Scalp, all are true Except:",
+      "options": [
+        "Its wounds bleed profusely.",
+        "Its wounds gape if the aponeurosis is cut.",
+        "It has no sebaceous glands.",
+        "Its veins communicate with the intracranial venous sinuses.",
+        "It contains a muscle of facial expression."
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Regarding scalp: 5 layers, vessels in connective tissue layer, infection spreads in loose areolar layer.选项C正确. The answer is C. The danger lies in layer 4 (loose areolar) connecting to intracranial venous sinuses.",
+      "keyConcept": "Scalp has 5 layers (SCALP) - dangerous layer is loose areolar tissue connecting to intracranial venous sinuses."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q725",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 2,
+      "question": "The deep facial vein connects which two venous structures?",
+      "options": [
+        "Anterior facial vein and pterygoid venous plexus",
+        "Angular vein and cavernous sinus",
+        "Maxillary vein and retromandibular vein",
+        "External jugular vein and internal jugular vein",
+        "Inferior ophthalmic vein and cavernous sinus"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "The deep facial vein connects the pterygoid plexus with the facial vein (anteriorly). It passes through the buccinator muscle and provides a pathway for infection spread between facial and intracranial structures.",
+      "keyConcept": "Deep facial vein links pterygoid plexus to facial vein for venous communications."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q787",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 2,
+      "question": "All the following is single tract except:",
+      "options": [
+        "sulco-marginal tract",
+        "tecto-spinal tract",
+        "rubro-spinal tract",
+        "olivo-spinal tract"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "The tectospinal tract is a single midline tract (decussates in the midbrain); the other tracts (rubro-spinal, olivo-spinal) are also single but have bilateral components.",
+      "keyConcept": "Single vs paired tracts"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q860",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "The median part of the upper lip (philtrum) is derived embryologically from the:",
+      "options": [
+        "Frontal prominence",
+        "Intermaxillary segment",
+        "Lateral nasal prominence",
+        "Mandibular prominence",
+        "Maxillary prominence"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "The intermaxillary segment (from medial nasal prominences) forms the philtrum of the upper lip, the primary palate, and the four incisor teeth.",
+      "keyConcept": "Philtrum embryology"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1101",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Which of the following diploic veins drains extracranially?",
+      "options": [
+        "Frontal.",
+        "Anterior temporal.",
+        "Posterior temporal.",
+        "Occipital."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "The frontal diploic vein drains through the supraorbital notch to the supraorbital vein and eventually the angular vein, providing extracranial drainage.",
+      "keyConcept": "Frontal diploic vein drains extracranially via supraorbital vein."
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q104",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "The optic nerve is a derivative of the:",
+      "options": [
+        "Neural crest",
+        "Diencephalon (outpouching of the forebrain)",
+        "Mesencephalon",
+        "Neural tube"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "The optic nerve develops as an outpouching of the diencephalon (forerain), making it technically a CNS tract rather than a true peripheral nerve, with myelin provided by oligodendrocytes.",
+      "keyConcept": "Optic nerve is a diencephalon derivative, not true peripheral nerve."
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q51",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Concerning the lateral ventricle, choose one correct answer:",
+      "options": [
+        "Its anterior horn lies in the parietal lobe.",
+        "Its posterior horn lies in the temporal lobe.",
+        "Is the only cavity in the telencephalon.",
+        "Has no choroid plexus."
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "The lateral ventricle is the only cavity in the telencephalon, with anterior horn in frontal lobe, body in parietal, and posterior/temporal horns in temporal lobe.",
+      "keyConcept": "Lateral ventricle structure"
+    },
+    {
+      "id": "mcns2-ch9-anatomy-q12",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "As regards intracranial part of internal carotid artery, choose the INCORRECT statement:",
+      "options": [
+        "Its petreous part enters skull through carotid canal.",
+        "Its cavernous part lies medial to abducent nerve.",
+        "It ends opposite posterior perforated substance.",
+        "Its petreous part supplies middle ear.",
+        "Its cerebral part gives ophthalmic artery."
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "The intracranial internal carotid artery has four parts: cervical, petrous, cavernous, and cerebral. The petrous part enters through the carotid canal and supplies the middle ear. The cavernous part lies medial to the abducent nerve. The cerebral part gives ophthalmic artery. However, the internal carotid does NOT end opposite the posterior perforated substance; the posterior perforated substance is related to the posterior cerebral artery, not the ICA terminal bifurcation.",
+      "keyConcept": "Internal carotid artery ends by bifurcating into anterior and middle cerebral arteries, not opposite posterior perforated substance."
+    },
+    {
+      "id": "mcns2-ch10-anatomy-q7",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "A 25-year-old patient sustains a head injury during a bicycle accident. On examination, there is a palpable swelling on the scalp that appears to be filled with blood. The hematoma is located between the periosteum and the galea aponeurotica. Which specific type of scalp hematoma is this most likely indicative of?",
+      "options": [
+        "Epidural hematoma",
+        "Subdural hematoma",
+        "Subperiosteal hematoma",
+        "Subcutaneous hematoma",
+        "Subgaleal hematoma"
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "A hematoma between the periosteum and the galea aponeurotica is called a SUBGALEAL hematoma. The galea aponeurotica (epicranial aponeurosis) connects the frontalis and occipitalis muscles. A subperiosteal hematoma would be between periosteum and bone; subcutaneous hematoma is between skin and galea. Epidural and subdural hematomas are intracranial, not in the scalp layers.",
+      "keyConcept": "Subgaleal hematoma = between periosteum and galea aponeurotica; 'boxer's hematoma' in scalp trauma."
+    },
+    {
+      "id": "mcns2-ch10-anatomy-q38",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Which of the following is true about the intracranial hemorrhage?",
+      "options": [
+        "Extradural bleeding means bleeding between dura and arachnoid maters.",
+        "Extradural bleeding is commonly venous in origin.",
+        "Subdural bleeding is commonly arterial in origin.",
+        "Subdural bleeding crosses the suture line."
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Subdural hemorrhage crosses suture lines because it's venous bleeding with low pressure that accumulates slowly, unlike arterial extradural bleeding which is confined by suture attachments.",
+      "keyConcept": "Subdural bleeding crosses suture lines (venous)."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q412",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Alar plates form:",
+      "options": [
+        "Lateral horns.",
+        "Dorsal horns.",
+        "Ventral horns.",
+        "All of the above.",
+        "None of the above."
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "The alar plates are the dorsal sensory horns of the spinal cord that develop from the alar (sensory) region of the neural tube. They form the dorsal (posterior) horns which receive sensory (afferent) fibers from the dorsal root ganglia. The basal plates form the ventral horns (motor).",
+      "keyConcept": "Alar plates form the DORSAL HORNS of spinal cord (sensory); basal plates form VENTRAL horns (motor)."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q413",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Basal plates form:",
+      "options": [
+        "Ventral horns.",
+        "Dorsal horns.",
+        "Lateral horns.",
+        "All of the above.",
+        "None of the above."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Basal plates are the anterior (ventral) portions of the alar and basal plates in the developing neural tube. The basal plate gives rise to motor neurons that form the VENTRAL (anterior) horns of the spinal cord, which contain lower motor neurons. The alar plates form the dorsal (posterior) horns. Lateral horns appear only at T1-L2 levels (sympathetic neurons).",
+      "keyConcept": "Basal plates form VENTRAL HORNS of spinal cord (motor neurons); alar plates form dorsal horns (sensory neurons)."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q879",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "The endogenous analgesia system includes which brain region?",
+      "options": [
+        "Primary somatosensory cortex",
+        "Raphe magnus nucleus",
+        "Dorsal root ganglion",
+        "Periaqueductal grey",
+        "Supraoptic nucleus"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "The periaqueductal grey (PAG) in the midbrain contains endogenous opioid neurons that activate descending pain inhibition pathways.",
+      "keyConcept": "Endogenous analgesia"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1061",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "The sensory (dorsal) part of the spinal cord develops from the:",
+      "options": [
+        "Basal lamina (plate)",
+        "Floor plate",
+        "Roof plate",
+        "Notochord",
+        "Alar lamina (plate)"
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "The alar plate forms sensory (dorsal) grey matter.",
+      "keyConcept": "Sensory dorsal horn develops from alar lamina of neural tube."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q173",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Basis pontis contains all the following structures EXCEPT:",
+      "options": [
+        "Corticospinal fibers.",
+        "Pontine nuclei.",
+        "Corticonuclear fibers.",
+        "Reticular formation.",
+        "Transverse pontine fibers."
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "The mesencephalic nucleus of the trigeminal nerve receives proprioceptive afferents from muscles of mastication and extraocular muscles. It is unique as a nucleus containing primary sensory neuron cell bodies (neural crest derived).",
+      "keyConcept": "Mesencephalic nucleus receives mastication proprioception"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q459",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "A 50-year-old man presents with a deep laceration to the side of the scalp in front of the ear, following a bicycle accident. Profuse bleeding is noted from the wound. Which artery is most likely the source of this bleeding?",
+      "options": [
+        "Facial artery",
+        "Occipital artery",
+        "Middle meningeal artery",
+        "Superficial temporal artery",
+        "Vertebral artery"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "The superficial temporal artery (branch of external carotid) runs in front of the ear and supplies the lateral scalp. It is the most likely source of profuse bleeding from a laceration in front of the ear. The middle meningeal artery is intracranial; the vertebral artery enters the foramen magnum; the facial artery supplies the face.",
+      "keyConcept": "Superficial temporal artery supplies lateral scalp and is the source of bleeding from wounds in front of the ear."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q713",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 5,
+      "question": "Which anatomical structure serves as the primary pathway for a facial infection to spread into the cranial cavity and cause cavernous sinus thrombosis?",
+      "options": [
+        "Superior ophthalmic vein",
+        "Facial artery",
+        "Maxillary vein",
+        "Pterygoid plexus",
+        "Retromandibular vein"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "The pterygoid plexus of veins in the infratemporal fossa connects with the cavernous sinus via the emissary veins through the foramen ovale and foramen lacerum, providing a pathway for facial infection spread to meninges.",
+      "keyConcept": "Pterygoid plexus connects to cavernous sinus via emissary veins, enabling intracranial spread of facial infections."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q226",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Which one of the following is considered as an emissary vein?",
+      "options": [
+        "Sphenoparietal sinus.",
+        "Superior petrosal sinus.",
+        "Inferior petrosal sinus.",
+        "Transverse sinus.",
+        "Straight sinus."
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Emissary veins are valveless veins that pass through cranial foramina and connect intracranial dural venous sinuses with extracranial veins. The inferior petrosal sinus itself is functionally considered an emissary vein because it connects the cavernous sinus (intracranial) with the internal jugular vein (extracranial). The other sinuses listed are purely intracranial venous structures without direct extracranial connections.",
+      "keyConcept": "Inferior petrosal sinus is functionally an emissary vein connecting cavernous sinus to internal jugular vein."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q227",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Emissary veins of cavernous sinus pass through all the following foramina Except:",
+      "options": [
+        "Foramen lacerum.",
+        "Foramen ovale.",
+        "Carotid canal.",
+        "Mastoid foramen.",
+        "Emissary sphenoidal foramen."
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Emissary veins from the cavernous sinus pass through the foramen lacerum, foramen ovale, and emissary sphenoidal foramen (foramen of Vesalius) to connect with the pterygoid venous plexus. The mastoid foramen, however, transmits an emissary vein connecting the sigmoid sinus to the posterior auricular veins, not the cavernous sinus. Therefore, mastoid foramen is not a route for cavernous sinus emissary veins.",
+      "keyConcept": "Mastoid foramen connects sigmoid sinus to extracranial veins, not cavernous sinus emissary veins."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q406",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Ciliary ganglion is derived from:",
+      "options": [
+        "Neural crest.",
+        "Spongioblasts.",
+        "Local mesoderm.",
+        "Chromaffin cells.",
+        "Schwann cells."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "The ciliary ganglion is derived from neural crest cells that migrate from the optic vesicle region. Neural crest cells also give rise to the spheno-ethmoidal, submandibular, and sublingual ganglia of the parasympathetic system. Schwann cells come from neural crest butpia mater and dura mater have different origins.",
+      "keyConcept": "Ciliary ganglion (parasympathetic) derived from neural crest cells; receives preganglionic parasympathetic fibers from Edinger-Westphal nucleus."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1072",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Which of the following is mesodermal in origin?",
+      "options": [
+        "Spinal cord.",
+        "Autonomic ganglia.",
+        "Dura mater.",
+        "Arachnoid mater."
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Dura mater is derived from mesoderm (specifically the paraxial mesoderm surrounding the neural tube), while arachnoid and pia mater are ectodermal derivatives.",
+      "keyConcept": "Dura mater: mesodermal origin."
+    },
+    {
+      "id": "mcns2-ch4-anatomy-q2",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Which of the following arteries supplies the pituitary gland?",
+      "options": [
+        "Common carotid artery.",
+        "Internal carotid artery.",
+        "External carotid artery.",
+        "Subclavian artery.",
+        "Vertebral artery."
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "The cavernous sinus contains the internal carotid artery, not the maxillary artery. The maxillary artery is an extracranial branch of the external carotid artery.",
+      "keyConcept": "Maxillary artery not in cavernous sinus"
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q13",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Dural venous sinuses have all the following characters Except:",
+      "options": [
+        "They are lined by endothelium.",
+        "They are rich in valves.",
+        "They drain brain & meninges.",
+        "They are connected to extracranial veins.",
+        "They lie between 2 dural layers."
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "Dural venous sinuses are endothelial-lined channels located between two layers of dura mater that drain blood from the brain, meninges, and skull bones. They communicate with extracranial veins via emissary veins and contain arachnoid villi for CSF absorption. However, they do NOT contain valves, unlike systemic veins. This valveless anatomy allows bidirectional blood flow and permits the spread of infection from extracranial sources into the intracranial venous system.",
+      "keyConcept": "Dural venous sinuses are valveless, allowing bidirectional blood flow and potential spread of infection."
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q44",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 2,
+      "question": "Which structure directly connects the dural venous sinuses with the extracranial veins of the scalp?",
+      "options": [
+        "Diploic veins",
+        "Emissary veins",
+        "Meningeal veins",
+        "Cerebral veins",
+        "Superficial temporal veins"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "Emissary veins connect the dural venous sinuses directly to the extracranial venous system through foramina in the skull (e.g., foramen ovale, foramen lacerum), providing alternative drainage pathways.",
+      "keyConcept": "Emissary veins create direct connections between intracranial dural sinuses and extracranial veins."
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q47",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 2,
+      "question": "A 25-year-old patient with a painful swelling on the upper lip and forehead after a pimple infection. The physician is concerned about risk of intracranial spread. Which veins provide a route for infections from the face to reach the superior sagittal sinus?",
+      "options": [
+        "Facial veins",
+        "Emissary veins",
+        "Jugular veins",
+        "External carotid veins",
+        "Coronary veins"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "Dangerous area of face (triangle with apex at nose bridge) infections can spread intracranially via the angular vein and superior ophthalmic vein to the cavernous sinus, causing cavernous sinus thrombosis.",
+      "keyConcept": "Facial vein infections spread to cavernous sinus via angular and superior ophthalmic veins."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q360",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "The ultimobranchial body gives rise to:",
+      "options": [
+        "Tonsil.",
+        "Superior parathyroid.",
+        "Thymus.",
+        "Parafollicular cells.",
+        "Chromaffin cells."
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "The ultimobranchial body (also called the pharyngeal ultimobranchial body or C cells) is derived from the neural crest of the 5th pharyngeal pouch (or 4th in some classifications). It gives rise to the parafollicular cells (C cells) of the thyroid gland, which secrete calcitonin for calcium regulation. The thymus, tonsil, and parathyroids arise from 3rd and 4th pouches.",
+      "keyConcept": "Ultimobranchial body gives rise to parafollicular C cells of thyroid (secrete calcitonin)."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q363",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "The hyoid bone is derived from:",
+      "options": [
+        "Migrating paraxial mesoderm of 1st & 2nd arches.",
+        "Migrating paraxial mesoderm of 2nd & 3rd arches.",
+        "Migrating paraxial mesoderm of 3rd & 4th arches.",
+        "Migrating neural crest cells of 1st & 2nd arches.",
+        "Migrating neural crest cells of 2nd & 3rd arches."
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "The hyoid bone body is derived from migrating neural crest cells of the 2nd and 3rd pharyngeal arches. The lesser horn and upper body come from the 2nd arch; the greater horn and lower body come from the 3rd arch. This embryological origin explains the dual nerve supply (CN VII for 2nd arch structures, CN IX for 3rd arch structures).",
+      "keyConcept": "Hyoid bone body derived from neural crest cells of 2nd and 3rd arches; lesser horn from 2nd, greater horn from 3rd."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q380",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "The parafollicular cells of the thyroid gland:",
+      "options": [
+        "Produce calcitonin.",
+        "Are mesodermal in origin.",
+        "Originate from dorsal part of 3rd pouch.",
+        "All the above is true.",
+        "a and b are true."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Parafollicular cells (C cells) of the thyroid gland are derived from the neural crest of the ultimobranchial body (5th pharyngeal pouch) and produce calcitonin, which lowers blood calcium levels. They are NOT mesodermal in origin—they arise from neuroectoderm. They do NOT originate from the dorsal part of the 3rd pouch (which gives inferior parathyroids). Only the statement that they produce calcitonin is correct.",
+      "keyConcept": "Parafollicular cells produce calcitonin; derived from ultimobranchial body (neural crest), NOT mesoderm."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q407",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Failure of closure of anterior neuropore of the neural tube leads to:",
+      "options": [
+        "Anencephaly.",
+        "Spina bifida.",
+        "Microcephaly.",
+        "Hydrocephalus.",
+        "Scaphocephaly."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Failure of closure of the anterior neuropore of the neural tube leads to anencephaly, a condition where the cranial vault fails to form and the brain is exposed to amniotic fluid. The anterior neuropore closes around day 25. Spina bifida results from failure of closure of the posterior neuropore. Anencephaly is incompatible with life.",
+      "keyConcept": "Anterior neuropore closure failure = ANENCEPHALY (exposed brain); posterior neuropore failure = SPINA BIFIDA."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q416",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "The commonest site of spina bifida is:",
+      "options": [
+        "Cervical.",
+        "Upper thoracic.",
+        "Mid-thoracic.",
+        "Thoraco-lumbar.",
+        "Lumbo-sacral."
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "Spina bifida is most common in the lumbosacral region because the lumbar and sacral vertebrae are the last to close their vertebral arches (sacral arches close last, around puberty). The most common type is spina bifida occulta at L5-S1. The thoraco-lumbar region is also a common site, but lumbosacral is the most common overall.",
+      "keyConcept": "Commonest site of spina bifida = lumbosacral region; vertebrae close from cranial to caudal direction."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1073",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "The anterior neuropore of neural tube closes at ……… day of pregnancy.",
+      "options": [
+        "23rd",
+        "25th",
+        "27th",
+        "29th"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "The anterior neuropore closes at day 25 of embryonic development; failure results in anencephaly. The posterior neuropore closes around day 27.",
+      "keyConcept": "Anterior neuropore closes at day 25 of pregnancy."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1076",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "The neural crest gives all the following EXCEPT:",
+      "options": [
+        "All spinal nerves.",
+        "Dorsal root ganglia.",
+        "Autonomic ganglia.",
+        "Postganglionic autonomic neurons."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Spinal nerves are formed from dorsal and ventral roots which originate from the neural tube (CNS), not from neural crest. Neural crest gives dorsal root ganglia, autonomic ganglia, and postganglionic neurons.",
+      "keyConcept": "Spinal nerves: from neural tube, not neural crest."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1077",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Failure of closure of the neural tube leads to:",
+      "options": [
+        "Acrania.",
+        "Rachischisis.",
+        "Spina bifida occulta.",
+        "Spina bifida cystica."
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "Rachischisis (myeloschisis) results from failure of neural tube closure, causing exposure of neural tissue; spina bifida results from vertebral arch defects.",
+      "keyConcept": "Neural tube closure failure: rachischisis (exposed neural tissue)."
+    },
+    {
+      "id": "mcns2-ch10-anatomy-q27",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "Antipsychotic‑induced akathisia is best treated with:",
+      "options": [
+        "Clozapine",
+        "Propranolol",
+        "Benztropine",
+        "Dantrolene",
+        "Bromocriptine"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "Propranolol (beta-blocker) is first-line treatment for antipsychotic-induced akathisia, likely by blocking beta-2 receptors in the locus coeruleus.",
+      "keyConcept": "Akathisia treatment"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q285",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "Concerning headache:",
+      "options": [
+        "It is an example of referred pain.",
+        "It is only caused by intracranial causes.",
+        "It is only caused by extracranial causes.",
+        "Migraine isn’t elicited by emotions.",
+        "Nausea and vomiting are not symptoms occurring during migraine attack."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Headache is a form of referred pain where intracranial and extracranial structures refer pain to the head through shared sensory innervation from trigeminal and cervical nerves.",
+      "keyConcept": "Headache is referred pain from intracranial/extracranial structures."
+    },
+    {
+      "id": "mcns2-ch1-pharma-q43",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "A mood stabilizer safe in pregnant patients with bipolar depression is",
+      "options": [
+        "Valproate.",
+        "Carbamazepine.",
+        "Phenytoin.",
+        "Ethosuximide."
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "Carbamazepine has a relatively better fetal safety profile than valproate (which causes neural tube defects) and phenytoin.",
+      "keyConcept": "Carbamazepine has relatively better fetal safety profile than valproate or phenytoin."
+    },
+    {
+      "id": "mcns2-ch1-pharma-q45",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "Teratogenic effects are more likely to be induced by",
+      "options": [
+        "Phenytoin.",
+        "Valproate.",
+        "Carbamazepine.",
+        "A and B."
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Teratogenic effects are most likely with valproate AND phenytoin. Option D is correct. Valproate has the HIGHEST teratogenic potential (1-2% neural tube defects). Phenytoin causes fetal hydantoin syndrome. Carbamazepine has lower teratogenic risk. Both A and B are highly teratogenic.",
+      "keyConcept": "Valproate carries the highest risk of neural tube defects among antiepileptics; phenytoin causes fetal hydantoin syndrome."
+    },
+    {
+      "id": "mcns2-ch1-pharma-q176",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "A mood stabilizer safe in pregnant patients with bipolar depression:",
+      "options": [
+        "Carbamazepine",
+        "Valproate",
+        "Phenytoin",
+        "Ethosuximide"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "In pregnancy, lamotrigine is considered the safest mood stabilizer for bipolar disorder. Valproate is contraindicated (teratogenic). Carbamazepine and phenytoin have teratogenic effects but are considered somewhat safer than valproate. Ethosuximide is for absence seizures, not bipolar. The answer is A - lamotrigine is the mood stabilizer safe in pregnant patients with bipolar depression. It's FDA category C but has the best safety profile among mood stabilizers during pregnancy. Valproate causes neural tube defects, carbamazepine may cause neural tube defects but less frequently.",
+      "keyConcept": "Lamotrigine is the preferred mood stabilizer in pregnancy due to better safety profile than valproate or carbamazepine."
+    },
+    {
+      "id": "mcns2-ch1-pharma-q179",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "Teratogenic effects are more likely to be induced by:",
+      "options": [
+        "Phenytoin",
+        "Valproate",
+        "Carbamazepine",
+        "A & B"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "Both phenytoin and valproate are teratogenic. Valproate has the HIGHEST teratogenic potential among antiepileptics, causing neural tube defects (1-2% risk of spina bifida), craniofacial abnormalities, cardiovascular defects, and cognitive impairment. Phenytoin causes fetal hydantoin syndrome (craniofacial abnormalities, nail/digit hypoplasia, growth restriction). The risk with valproate is dose-dependent but present even at low doses. Carbamazepine also has teratogenic potential but lower than valproate. The answer is D (A & B) because both phenytoin and valproate are highly teratogenic, with valproate being worse.",
+      "keyConcept": "Valproate has the highest teratogenic risk among antiepileptics, followed by phenytoin; both should be avoided in pregnancy."
+    },
+    {
+      "id": "mcns2-ch10-pharma-q26",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "An antiepileptic suitable for a pregnant women with tonic clonic epilepsy is",
+      "options": [
+        "Phenytoin.",
+        "Carbamazepine.",
+        "Valproate.",
+        "Ethosuximide."
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "Carbamazepine is suitable for pregnant women with tonic clonic epilepsy. Option B is correct. Among the options, carbamazepine has relatively lower teratogenic risk than valproate (neural tube defects) and phenytoin (fetal hydantoin syndrome). Ethosuximide (D) is for absence seizures only.",
+      "keyConcept": "Carbamazepine is preferred over valproate in pregnancy due to lower neural tube defect risk."
+    },
+    {
+      "id": "mcns2-ch10-pharma-q29",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "The following antiepileptic is not preferred during pregnancy",
+      "options": [
+        "Lamotrigine",
+        "Carbamazepine",
+        "Levetiracetam",
+        "Valproate"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Valproate is NOT preferred during pregnancy. Option D is correct. Valproate has the HIGHEST teratogenic risk (1-2% neural tube defects). Lamotrigine and levetiracetam are considered safer alternatives. Carbamazepine has intermediate risk. All antiepileptics carry some risk, but valproate is most contraindicated.",
+      "keyConcept": "Valproate's high teratogenic potential (neural tube defects) makes it contraindicated in pregnancy."
+    },
+    {
+      "id": "mcns2-ch10-pharma-q85",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "The following antiepileptic is not preferred during pregnancy:",
+      "options": [
+        "Lamotrigine",
+        "Carbamazepine",
+        "Levetiracetam",
+        "Valproate"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Valproate is CONTRAINDICATED in pregnancy due to significant teratogenicity. It causes neural tube defects (spina bifida), craniofacial abnormalities, and developmental delays. FDA pregnancy category X for migraine use. Lamotrigine and levetiracetam are considered safer options during pregnancy (though not ideal). Carbamazepine also has teratogenic potential but less than valproate. Valproate's risks far outweigh benefits in pregnancy - it's absolutely contraindicated especially during first trimester for any indication (epilepsy, migraine, bipolar).",
+      "keyConcept": "Valproate is contraindicated in pregnancy due to neural tube defects and significant teratogenic effects."
+    },
+    {
+      "id": "mcns2-ch10-pharma-q92",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "An antiepileptic suitable for a pregnant woman with tonic clonic epilepsy is:",
+      "options": [
+        "Phenytoin",
+        "Carbamazepine",
+        "Valproate",
+        "Ethosuximide"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "Carbamazepine is the safest antiepileptic option during pregnancy for tonic-clonic epilepsy. Valproate (C) is absolutely contraindicated (neural tube defects). Phenytoin (A) and valproate have teratogenic effects. Ethosuximide (D) is not effective for tonic-clonic seizures. Carbamazepine is FDA category D (positive evidence of risk) but among the available options, it's considered safer than valproate. The answer is B - carbamazepine is suitable for pregnant women with tonic-clonic epilepsy, though ideally lamotrigine would be preferred.",
+      "keyConcept": "Carbamazepine is the least teratogenic among traditional antiepileptics for tonic-clonic epilepsy in pregnancy."
+    },
+    {
+      "id": "mcns2-ch10-pharma-q139",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "The following antiepileptic drug is not preferred in pregnancy:",
+      "options": [
+        "Lamotrigine",
+        "Carbamazepine",
+        "Valproate",
+        "All of the above"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Valproate is teratogenic (neural tube defects) and should be avoided in pregnancy. Lamotrigine and carbamazepine are safer options but still require careful risk-benefit analysis. All AEDs have some risk.",
+      "keyConcept": "Valproate is most teratogenic AED, not preferred in pregnancy"
+    }
+  ]
+}

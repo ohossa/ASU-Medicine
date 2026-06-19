@@ -1,6 +1,7 @@
 @import './fonts.css';
 @import './tailwind.css';
 @import './theme.css';
+@import './micro-interactions.css';
 
 @keyframes grid-in {
   from { opacity: 0; transform: translateY(12px); }

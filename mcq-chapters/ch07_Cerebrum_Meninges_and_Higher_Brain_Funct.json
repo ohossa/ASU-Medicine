@@ -1,0 +1,2458 @@
+{
+  "chapter": 7,
+  "chapterTitle": "Cerebrum, Meninges and Higher Brain Function",
+  "chapterSubtitle": "",
+  "totalQuestions": 138,
+  "questions": [
+    {
+      "id": "mcns2-ch1-anatomy-q711",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 5,
+      "question": "A patient presents with paralysis of the right foot. Which artery is most likely affected?",
+      "options": [
+        "Anterior tibial artery",
+        "Posterior tibial artery",
+        "Fibular (peroneal) artery",
+        "Popliteal artery",
+        "Superior gluteal artery"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Foot drop indicates common fibular (peroneal) nerve injury, which is supplied by the anterior tibial artery. The anterior tibial artery supplies the deep compartment of the leg including the fibularis muscles.",
+      "keyConcept": "Common peroneal nerve injury causes foot drop; nerve supplied by anterior tibial artery."
+    },
+    {
+      "id": "mcns2-ch3-histology-q6",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 2,
+      "question": "All of the followings have choroid plexus EXCEPT:",
+      "options": [
+        "3rd ventricles.",
+        "4th ventricles.",
+        "Lateral ventricle.",
+        "Cerebral aqueduct."
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "The cerebral aqueduct connects the third and fourth ventricles but does not have choroid plexus (it is too narrow). Choroid plexus is present in the lateral ventricles, third ventricle, and fourth ventricle.",
+      "keyConcept": "Cerebral aqueduct lacks choroid plexus (no choroid plexus EXCEPT in aqueduct)"
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q52",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Concerning the cerebrospinal fluid, choose one correct answer:",
+      "options": [
+        "Produced mainly in the subarachnoid space.",
+        "Produced by the arachnoid granulations.",
+        "Third ventricle has a choroid plexus in its roof.",
+        "Fourth ventricle has a choroid plexus in its floor."
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "The third ventricle has choroid plexus in its roof (derived from tela choroidea) producing CSF; lateral ventricles also have choroid plexus.",
+      "keyConcept": "Third ventricle choroid plexus"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1050",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "A patient with a tumour in the left frontal eye field (area 8) will have difficulty:",
+      "options": [
+        "Moving the left eye laterally",
+        "Moving the right eye medially",
+        "Conjugate gaze to the right",
+        "Conjugate gaze to the left"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "The left frontal eye field (area 8) controls conjugate gaze to the right by sending signals that move both eyes rightward; a lesion here causes difficulty gazing to the contralateral (right) side.",
+      "keyConcept": "Left frontal eye field controls gaze to the right (contralateral)."
+    },
+    {
+      "id": "mcns2-ch10-pharma-q124",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "What is the mechanism of action of typical antipsychotics?",
+      "options": [
+        "Blocking D2 receptors in the mesolimbic system improves positive symptoms",
+        "Blocking 5HT2A receptors",
+        "Increasing dopamine release",
+        "None"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Typical antipsychotics (haloperidol, chlorpromazine) work by blocking D2 dopamine receptors, reducing dopaminergic transmission in mesolimbic pathway (treats positive symptoms).选项A正确. The answer is A. Also blocks D2 in nigrostriatal pathway (causes EPS) and tuberoinfundibular pathway (hyperprolactinemia).",
+      "keyConcept": "Typical antipsychotics block D2 receptors - therapeutic for psychosis but cause EPS and hyperprolactinemia."
+    },
+    {
+      "id": "mcns2-ch4-anatomy-q4",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Which of the following thalamic nuclei is related to the limbic system?",
+      "options": [
+        "Ventral postero-medial nucleus.",
+        "Ventral postero-lateral nucleus.",
+        "Pulvinar.",
+        "Anterior nucleus.",
+        "Ventral anterior nucleus."
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "The anterior thalamic nucleus is a key component of the limbic system Papez circuit, which includes the hippocampus, fornix, mammillary bodies, and cingulate gyrus. It receives input from the hippocampus via the fornix and mammillothalamic tract, and projects to the cingulate gyrus, playing a central role in emotion and memory.",
+      "keyConcept": "Anterior thalamic nucleus is part of Papez circuit (limbic system); connected to hippocampus and cingulate gyrus."
+    },
+    {
+      "id": "mcns2-ch1-physiology-q136",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 2,
+      "question": "What is the role of normal limbic system in maternal & sexual behavior?",
+      "options": [
+        "Normal maternal behavior",
+        "Emotional expression during sexual act",
+        "Modulation of maternal behavior",
+        "Modulation of sexual behavior"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Normal limbic system function is essential for maternal behavior (nurturing and bonding) and proper sexual behavior, with the medial preoptic area and limbic circuits coordinating these instinctual behaviors.",
+      "keyConcept": "Limbic system and reproductive behaviors"
+    },
+    {
+      "id": "mcns2-ch4-anatomy-q18",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "The thalamic nucleus that shares in formation of limbic system is:",
+      "options": [
+        "Dorso-medial nucleus.",
+        "Ventral posterolateral nucleus.",
+        "Ventral anterior nucleus.",
+        "Ventral lateral nucleus.",
+        "Lateral dorsal nucleus."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "The dorsomedial (mediodorsal) nucleus of the thalamus is reciprocally connected with the prefrontal cortex and is a key component of the limbic system. It is involved in cognitive functions, emotion, and memory. It receives input from the hypothalamus and limbic structures, and projects to the prefrontal cortex.",
+      "keyConcept": "Dorsomedial nucleus is limbic-related; connects with prefrontal cortex for cognition and emotion."
+    },
+    {
+      "id": "mcns2-ch6-physiology-q11",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Which one of the followings is concerned with motivation?",
+      "options": [
+        "Wernicke’s area",
+        "Piriform cortex",
+        "Prefrontal association area",
+        "Entorhinal cortex",
+        "Amygdala"
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "The amygdala is centrally involved in motivation and emotional processing, particularly fear and reward-related behaviors, through its connections with hypothalamus and brainstem.",
+      "keyConcept": "Amygdala: motivation and emotional processing."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q68",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Which of the following is not present in the sacral canal?",
+      "options": [
+        "Filum terminale.",
+        "Cauda equina.",
+        "Cerebrospinal fluid.",
+        "Ligamentum denticulatum.",
+        "Tube of dura & arachnoid maters."
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "The sacral canal contains the filum terminale, cauda equina, cerebrospinal fluid, and the dural/arachnoid tube extending to S2. The ligamentum denticulatum anchors the spinal cord to the dura and does not extend into the sacral canal.",
+      "keyConcept": "Ligamentum denticulatum is absent in the sacral canal"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q69",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "The spinal dura extends from the level of the foramen magnum to the level of which vertebra?",
+      "options": [
+        "First lumbar.",
+        "Third lumbar.",
+        "Second sacral.",
+        "Fifth sacral.",
+        "First coccygeal."
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "The spinal dura mater extends from the foramen magnum to the level of the second sacral vertebra (S2). Below this, the filum terminale continues as the coccygeal ligament.",
+      "keyConcept": "Spinal dura extends from foramen magnum to S2"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q75",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "As regards the spinal cord; choose the INCORRECT statement:",
+      "options": [
+        "In adults, it ends at lower border of L1.",
+        "It is anchored to the dura mater by denticulate ligaments.",
+        "Its covering dura mater below the level of L1 forms filum terminale.",
+        "It has eight cervical segments.",
+        "Lumbar puncture may be done between L3 and L4."
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "The spinal dura mater does NOT continue below L1 as the filum terminale. The filum terminale is a pial structure extending from the conus medullaris to the coccyx, pierced by the dura and arachnoid at S2. The dura itself ends at S2.",
+      "keyConcept": "Filum terminale is pial, not dural; dura ends at S2"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q150",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "A lesion of frontal cortex in the dominant hemisphere results in all but one of the following:",
+      "options": [
+        "Expressive aphasia.",
+        "Receptive aphasia.",
+        "Contralateral paralysis.",
+        "Apraxia.",
+        "Behavioral & mood changes."
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "Receptive aphasia (Wernicke's aphasia) is caused by lesions of Wernicke's area in the temporal lobe, not the frontal lobe. Frontal lobe lesions cause expressive aphasia, contralateral paralysis, and behavioral changes.",
+      "keyConcept": "Receptive aphasia is temporal, not frontal lobe lesion"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q151",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Regarding motor speech center, all statements are true Except:",
+      "options": [
+        "Found in the inferior frontal gyrus.",
+        "Present in dominant hemisphere only.",
+        "Its lesion leads to receptive aphasia.",
+        "Is connected to Wernicke's area.",
+        "Lies in area of rami of lateral sulcus."
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Receptive aphasia is caused by Wernicke's area lesion, not Broca's area. Broca's area is the motor speech center; its lesion causes expressive/motor aphasia, not receptive aphasia.",
+      "keyConcept": "Broca's lesion causes motor, not receptive aphasia"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q152",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Astereognosis & receptive aphasia characterize lesions in:",
+      "options": [
+        "Dominant parietal lobe.",
+        "Frontal lobe.",
+        "Temporal lobe.",
+        "Occipital lobe.",
+        "Non dominant parietal lobe."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Astereognosis (inability to recognize objects by touch) and receptive aphasia (inability to understand language) are both features of dominant parietal lobe lesions, particularly involving the angular gyrus and supramarginal gyrus.",
+      "keyConcept": "Dominant parietal lobe lesions cause astereognosis"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q155",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "A lawyer suffered a bad fall that resulted in head trauma. His motor, sensory, and language skills were intact after the incident, and he had no visual problems. In the following weeks, he began to lose interest in his work and did not seem to care much about his family. The trauma most likely affected the:",
+      "options": [
+        "Prefrontal area.",
+        "Area 5 and 7.",
+        "Uncus.",
+        "Occipital eye.",
+        "Amygdala."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "The prefrontal cortex controls personality, social behavior, and executive functions. A lawyer losing interest in work and not caring about family indicates damage to the prefrontal area, consistent with frontal lobe trauma.",
+      "keyConcept": "Prefrontal lesion causes personality/behavior changes"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q206",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Infection in the mastoid air cells may spread to which sinus?",
+      "options": [
+        "Inferior sagittal sinus.",
+        "Straight sinus.",
+        "Occipital sinus.",
+        "Sigmoid sinus.",
+        "Superior petrosal sinus."
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "The sphenoparietal sinus is a tributary of the cavernous sinus, running along the lesser wing of sphenoid. It drains the dura of the frontal and parietal lobes.",
+      "keyConcept": "Sphenoparietal sinus tributary of cavernous sinus"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q209",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "The sinus that runs along the junction between the flax cerebri and the tentorium cerebelli is the:",
+      "options": [
+        "Sphenoparietal sinus.",
+        "Superior sagittal sinus.",
+        "Inferior sagittal sinus.",
+        "Straight sinus.",
+        "Sigmoid sinus."
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "The falx cerebri is a fold of dura mater between the cerebral hemispheres. It contains the superior and inferior sagittal sinuses in its upper and lower borders respectively.",
+      "keyConcept": "Falx cerebri between cerebral hemispheres with sagittal sinuses"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q354",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 11,
+      "question": "Occlusion of this artery in dominant hemisphere results in sensory aphasia:",
+      "options": [
+        "Anterior choroidal artery.",
+        "Posterior choroidal artery.",
+        "Anterior cerebral artery.",
+        "Posterior cerebral artery.",
+        "Middle cerebral artery."
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "The posterior cerebral artery supplies the posterior temporal lobe including Wernicke's area (sensory speech area). Occlusion of the PCA in the dominant hemisphere results in sensory aphasia (Wernicke's aphasia), characterized by fluent but meaningless speech and impaired comprehension. Wernicke's area is located in the superior temporal gyrus.",
+      "keyConcept": "Posterior cerebral artery supplies Wernicke's area; PCA occlusion in dominant hemisphere causes sensory aphasia."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q527",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Regarding the motor speech center, all the statements are true Except:",
+      "options": [
+        "Found in the inferior frontal gyrus",
+        "Present in dominant hemisphere only",
+        "Its lesion leads to expressive aphasia",
+        "Is connected to Werneck’s area",
+        "Is supplied by anterior cerebral artery"
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "Broca's area is supplied by the middle cerebral artery, not the anterior cerebral artery. The anterior cerebral artery supplies the medial frontal and parietal lobes. All other statements about motor speech center are true.",
+      "keyConcept": "Broca's area supplied by MCA; damage causes expressive aphasia; connected to Wernicke's area."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q684",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 5,
+      "question": "A patient develops behavioral changes and wears inappropriate clothing after an accident affecting frontal bone. Which cortical area is affected?",
+      "options": [
+        "Primary motor area",
+        "Premotor area",
+        "Supplementary motor area",
+        "Prefrontal area",
+        "Primary sensory area"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "The orbitofrontal cortex (ventromedial prefrontal cortex) is associated with personality, social behavior, and impulse control. Damage causes disinhibition, inappropriate social conduct, and lack of insight.",
+      "keyConcept": "Orbitofrontal lesions cause personality changes and social disinhibition due to impaired impulse control."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q686",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 5,
+      "question": "A 28-year-old man sustains a head injury. After recovery, his family reports marked personality change. Which area is affected?",
+      "options": [
+        "Primary motor cortex",
+        "Supplementary motor area",
+        "Prefrontal cortex",
+        "Primary somatosensory cortex",
+        "Visual association cortex"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Damage to the frontal lobe can cause personality changes, poor judgment, and inappropriate social behavior (pseudopendulous swinging describes cerebellar ataxia, not frontal lobe damage).",
+      "keyConcept": "Frontal lobe damage causes executive dysfunction and behavioral changes rather than primary motor deficits."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q721",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 2,
+      "question": "A young athlete sustains a head injury and later develops a severe headache followed by sudden death. Rupture of an aneurysm in which structure is the most likely cause?",
+      "options": [
+        "Middle meningeal artery",
+        "Internal carotid artery",
+        "Circle of Willis",
+        "Basilar artery",
+        "Vertebral artery"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Post-traumatic headache with meningeal signs suggests subarachnoid hemorrhage. CT may be negative early; lumbar puncture would show xanthochromia (yellowtinged CSF from hemoglobin breakdown).",
+      "keyConcept": "Subarachnoid hemorrhage presents with sudden severe headache; CT may be initially negative requiring LP."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q739",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 2,
+      "question": "Which blood vessel arises as a branch from the third part of the maxillary artery?",
+      "options": [
+        "Deep temporal artery",
+        "Inferior alveolar artery",
+        "Middle meningeal artery",
+        "Infraorbital artery",
+        "Buccal artery"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "The middle meningeal artery arises from the maxillary artery (third part) and enters the middle cranial fossa through the foramen spinosum to supply the meninges.",
+      "keyConcept": "Middle meningeal artery from maxillary artery supplies the cranial meninges via foramen spinosum."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1032",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Which of the following best describes the condition of unilateral inattention (neglect)?",
+      "options": [
+        "Loss of all sensation on one side of the body",
+        "Ignoring stimuli from the opposite side, often with failure to dress or shave that side",
+        "Paralysis of the contralateral limbs",
+        "Loss of proprioception with preserved touch",
+        "Bilateral visual field defects"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "Unilateral neglect syndrome involves ignoring stimuli from the contralateral side, often manifesting as failure to dress or groom that side, typically caused by right parietal lobe lesions.",
+      "keyConcept": "Neglect: ignoring contralateral stimuli, often with dressing/grooming deficits on that side."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1067",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Choose the wrong statement about the speech areas:",
+      "options": [
+        "Motor area lies in the inferior frontal gyrus.",
+        "Sensory area lies in parietal and temporal lobes.",
+        "Sensory area is concerned with understanding visual and auditory information.",
+        "Both areas are present in both cerebral hemispheres."
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Speech areas are typically asymmetric; Broca's and Wernicke's areas are usually dominant in one hemisphere (left in right-handers), not equally present in both.",
+      "keyConcept": "Speech areas are not present equally in both hemispheres."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1095",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "The dural fold which is attached to the skull vault is:",
+      "options": [
+        "Falx cerebri.",
+        "Falx cerebelli.",
+        "Tentorium cerebelli.",
+        "Diaphragm sellae."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "The falx cerebri is the dural fold attached to the skull vault along the midline, lying between the cerebral hemispheres with its anterior attachment at the crista galli.",
+      "keyConcept": "Falx cerebri: dural fold attached to skull vault."
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q31",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Which of the following cranial nerves is not related to cavernous sinus?",
+      "options": [
+        "Oculomotor nerve.",
+        "Trochlear nerve.",
+        "Maxillary nerve.",
+        "Abducent nerve.",
+        "Facial nerve."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "The inferior sagittal sinus runs along the lower free margin of the falx cerebri and drains into the straight sinus. It receives blood from the medial aspects of the cerebral hemispheres.",
+      "keyConcept": "Inferior sagittal sinus in lower falx cerebri"
+    },
+    {
+      "id": "mcns2-ch6-anatomy-q1",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "A lesion in the Broca’s area of the cerebral hemisphere leads to:",
+      "options": [
+        "Motor aphasia.",
+        "Sensory aphasia.",
+        "Hemiplegia.",
+        "Return of grasp reflex.",
+        "Astereognosis."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Broca's area is located in the inferior frontal gyrus of the dominant hemisphere. It coordinates the motor aspects of speech production. Lesions here cause motor aphasia with hesitant, non-fluent speech but preserved comprehension.",
+      "keyConcept": "Broca's area lesion causes motor aphasia"
+    },
+    {
+      "id": "mcns2-ch6-anatomy-q3",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Frontal lobe in dominant hemisphere contains the following areas Except:",
+      "options": [
+        "Primary motor area (4).",
+        "Frontal eye field (8).",
+        "Supplementary motor area (Ms II).",
+        "Premotor area (6).",
+        "Wernicke's speech area."
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "Wernicke's speech area is located in the posterior superior temporal gyrus, not in the frontal lobe. The frontal lobe contains areas 4, 6, 8, and supplementary motor area.",
+      "keyConcept": "Wernicke's area is in temporal lobe, not frontal"
+    },
+    {
+      "id": "mcns2-ch6-anatomy-q4",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Broca’s area:",
+      "options": [
+        "Is the sensory speech center.",
+        "It is located in middle frontal gyrus.",
+        "It is present in the dominant hemisphere.",
+        "All of the above.",
+        "None of the above."
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Broca's area is the motor speech center present in the dominant hemisphere (usually left). It is located in the inferior frontal gyrus and coordinates speech production, not sensory aspects.",
+      "keyConcept": "Broca's area present in dominant hemisphere only"
+    },
+    {
+      "id": "mcns2-ch6-anatomy-q5",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Parietal lobe in the dominant hemisphere is concerned with the following Except:",
+      "options": [
+        "Facial recognition.",
+        "Stereognosis.",
+        "Perception of proprioceptive impulses.",
+        "Perception of exteroceptive impulses.",
+        "Comprehension of received auditory & visual information."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Facial recognition is processed in the inferior temporal lobe (fusiform gyrus), not the parietal lobe. The parietal lobe is concerned with stereognosis, proprioception, and spatial processing.",
+      "keyConcept": "Facial recognition in temporal, not parietal lobe"
+    },
+    {
+      "id": "mcns2-ch6-anatomy-q6",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Cortical areas in temporal lobe include all the following Except:",
+      "options": [
+        "Part of facial recognition area.",
+        "Part of Wernicke's area.",
+        "Primary auditory area.",
+        "Secondary auditory area.",
+        "Area for control of involuntary conjugate lateral movements of eye."
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "Area for control of involuntary conjugate lateral eye movements is the occipital eye field (area 18), not the temporal lobe. The temporal lobe contains auditory areas and parts of Wernicke's area and facial recognition area.",
+      "keyConcept": "Involuntary eye movement control is occipital, not temporal"
+    },
+    {
+      "id": "mcns2-ch6-anatomy-q9",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Regarding Broca’s area, select the correct answer:",
+      "options": [
+        "It is a sensory speech center",
+        "It is located in middle frontal gyrus",
+        "It is present in the dominant hemisphere",
+        "It is supplied by anterior cerebral artery",
+        "None of the above is correct"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Broca's area is located in the inferior frontal gyrus (not middle) and is a motor speech center (not sensory). It is present in the dominant hemisphere (usually left) and is supplied by the middle cerebral artery, not anterior cerebral artery.",
+      "keyConcept": "Broca's area: motor speech center in inferior frontal gyrus of dominant hemisphere, supplied by MCA."
+    },
+    {
+      "id": "mcns2-ch6-anatomy-q10",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Frontal lobe in the dominant hemisphere is concerned with the following functions Except:",
+      "options": [
+        "Production of speech",
+        "Performance of skilled movements",
+        "Initiation of conjugate lateral eye movements",
+        "Understanding of received auditory information",
+        "Control of behavior"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Understanding received auditory information (receptive language) is a function of Wernicke's area in the temporal lobe, not the frontal lobe. The frontal lobe handles speech production, skilled movements, eye movement initiation, and behavior control.",
+      "keyConcept": "Frontal lobe functions: speech production (Broca), skilled movements, conjugate eye movements, behavior control."
+    },
+    {
+      "id": "mcns2-ch6-anatomy-q11",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Frontal lobe in the non-dominant hemisphere contains the following areas Except:",
+      "options": [
+        "Primary motor area (4)",
+        "Frontal eye field (I)",
+        "Supplementary motor area (MS II)",
+        "Premotor area (6)",
+        "Werneck’s speech area"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Wernicke's speech area is located in the temporal lobe (superior temporal gyrus), not in the frontal lobe of the non-dominant hemisphere. The non-dominant hemisphere contains the same motor areas as the dominant but lacks speech areas.",
+      "keyConcept": "Non-dominant hemisphere frontal lobe contains motor areas (4,6,8) but NOT Wernicke's area (temporal lobe)."
+    },
+    {
+      "id": "mcns2-ch6-anatomy-q18",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 5,
+      "question": "Broca’s area is located in......",
+      "options": [
+        "Superior frontal gyrus",
+        "Middle frontal gyrus",
+        "Inferior frontal gyrus",
+        "Precentral gyrus",
+        "Anterior part of paracentral lobule"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Broca's area (expressive speech center) is located in the inferior frontal gyrus of the dominant hemisphere (usually left), Brodmann areas 44 and 45.",
+      "keyConcept": "Broca's area in the inferior frontal gyrus controls motor speech production."
+    },
+    {
+      "id": "mcns2-ch6-anatomy-q20",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "A 52‑year‑old man has had progressive headaches and concentration difficulties for two months. His behaviour becomes odd, and he then suffers a generalised seizure. MRI shows a large, necrotic mass in the left cerebral hemisphere that crosses the corpus callosum into the right hemisphere. Which neoplasm is most likely?",
+      "options": [
+        "Pilocytic astrocytoma",
+        "Meningioma",
+        "Metastatic adenocarcinoma",
+        "Medulloblastoma",
+        "Glioblastoma"
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "Glioblastoma multiforme typically crosses the corpus callosum (butterfly glioma), shows necrosis and ring enhancement, and has poor prognosis.",
+      "keyConcept": "Glioblastoma features"
+    },
+    {
+      "id": "mcns2-ch6-anatomy-q24",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Which of the following is a function of the prefrontal cortex?",
+      "options": [
+        "Primary motor control",
+        "Visual processing",
+        "Executive functions and personality",
+        "Auditory perception"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "The prefrontal cortex mediates executive functions including planning, decision-making, personality expression, and social behavior, distinguishing humans from other primates.",
+      "keyConcept": "Prefrontal cortex: executive functions and personality."
+    },
+    {
+      "id": "mcns2-ch6-anatomy-q25",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "The genu of the corpus callosum is supplied mainly by the:",
+      "options": [
+        "Middle cerebral artery",
+        "Anterior cerebral artery",
+        "Posterior cerebral artery",
+        "Anterior choroidal artery",
+        "Posterior communicating artery"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "The ACA supplies the genu of the corpus callosum.",
+      "keyConcept": "Genu of corpus callosum supplied by anterior cerebral artery."
+    },
+    {
+      "id": "mcns2-ch6-anatomy-q26",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "The supplementary motor area is located in the:",
+      "options": [
+        "Medial frontal gyrus",
+        "Inferior frontal gyrus",
+        "Precentral gyrus",
+        "Postcentral gyrus",
+        "Superior parietal lobule"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "The SMA lies on the medial frontal gyrus, anterior to the leg area.",
+      "keyConcept": "Supplementary motor area located in medial aspect of frontal lobe (medial area 6)."
+    },
+    {
+      "id": "mcns2-ch6-anatomy-q27",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Broca's motor speech area lies in the:",
+      "options": [
+        "Superior temporal gyrus",
+        "Inferior frontal gyrus",
+        "Supramarginal gyrus",
+        "Angular gyrus",
+        "Medial frontal gyrus"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "Broca's area = pars opercularis/triangularis of the inferior frontal gyrus.",
+      "keyConcept": "Brocas motor speech area in inferior frontal gyrus (dominant hemisphere)."
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q1",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "The spinal dura mater ends at the vertebral level of:",
+      "options": [
+        "S1",
+        "S2",
+        "L1",
+        "L2",
+        "L3"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "The spinal dura mater extends from the foramen magnum to the level of the second sacral vertebra (S2), where it fuses with the filum terminale to form the coccygeal ligament.",
+      "keyConcept": "Spinal dura mater ends at S2"
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q2",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Arachnoid mater of spinal cord ends at the level of which vertebra:",
+      "options": [
+        "L1",
+        "L3",
+        "S1",
+        "S2",
+        "Coccygeal 1"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "The spinal arachnoid mater extends to the level of the second sacral vertebra (S2), where it fuses with the filum terminale.",
+      "keyConcept": "Spinal arachnoid mater ends at S2"
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q39",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "The spinal cord is anchored to the dura mater by the",
+      "options": [
+        "Coccygeal ligament",
+        "Ligamentum flavum",
+        "Anterior longitudinal ligament",
+        "Denticulate ligaments",
+        "Cauda equina"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Denticulate ligaments are pial extensions that anchor the spinal cord to the dura mater laterally; the coccygeal ligament (filum terminale externum) attaches the cord terminus to the coccyx.",
+      "keyConcept": "Denticulate ligaments spinal cord anchoring"
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q67",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Protrusion of meninges and brain tissue through a defect in the skull is:",
+      "options": [
+        "Hydrocele.",
+        "Meningocele.",
+        "Meningoencephalocele.",
+        "Meningohydroencephalocele."
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Meningoencephalocele involves protrusion of both meninges and brain tissue through a skull defect; meningocele involves only meninges.",
+      "keyConcept": "Meningoencephalocele: meninges and brain tissue protrude through skull defect."
+    },
+    {
+      "id": "mcns2-ch9-anatomy-q29",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Anterior cerebral artery supply:",
+      "options": [
+        "Paracentral lobule",
+        "Auditory cortex",
+        "Inferior parietal lobule",
+        "Temporal pole",
+        "Visual cortex"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "ACA supplies the paracentral lobule (motor and sensory for lower limb), medial aspect of frontal/parietal lobes; auditory cortex is supplied by MCA, not ACA.",
+      "keyConcept": "ACA supply territories"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q223",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Which of the following is considered as a multiple venous sinus?",
+      "options": [
+        "Basilar plexus of sinuses.",
+        "Cavernous sinus.",
+        "Transverse sinus.",
+        "Straight sinus.",
+        "Occipital sinus."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "The basilar plexus of sinuses is an irregular, intercommunicating venous plexus located on the dorsum sellae and basi-occiput, posterior to the cavernous sinuses. It connects the two inferior petrosal sinuses and communicates with the vertebral venous plexus and internal vertebral venous plexus, forming an important alternative venous drainage pathway from the cranial cavity.",
+      "keyConcept": "Basilar plexus of sinuses is a multiple/intercommunicating venous plexus posterior to cavernous sinuses."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q450",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Greater wing of sphenoid shows:",
+      "options": [
+        "Hypoglossal canal.",
+        "Foramen rotundum.",
+        "Mastoid foramen.",
+        "Sigmoid sinus.",
+        "Carotid canal."
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "The greater wing of the sphenoid bone shows the foramen rotundum (transmitting maxillary nerve from middle cranial fossa to pterygopalatine fossa), as well as the superior orbital fissure, foramen ovale, and foramen spinosum. The hypoglossal canal, mastoid foramen, sigmoid sinus, and carotid canal are features of the occipital and temporal bones, not the greater wing of sphenoid.",
+      "keyConcept": "Foramen rotundum is in the greater wing of sphenoid; transmits maxillary nerve (CN V2) to pterygopalatine fossa."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q716",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 5,
+      "question": "Which structure receives the drainage of the inferior petrosal sinus as it exits the cranial cavity?",
+      "options": [
+        "Sigmoid sinus",
+        "Internal jugular vein",
+        "Subclavian vein",
+        "Cavernous sinus",
+        "Superior sagittal sinus"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "The inferior petrosal sinus drains into the internal jugular vein at the jugular foramen. It receives blood from the cavernous sinus and drains the inferior part of the brain.",
+      "keyConcept": "Inferior petrosal sinus drains directly into the internal jugular vein at the jugular foramen."
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q94",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 2,
+      "question": "Which structure receives its sensory innervation from the trigeminal nerve?",
+      "options": [
+        "Upper eyelid",
+        "Lower lobe of the ear",
+        "Skin over the angle of the mandible",
+        "Posterior one-third of the tongue",
+        "External auditory meatus skin"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "The dura mater receives sensory innervation from all three divisions of the trigeminal nerve. The anterior cranial fossa is innervated by V1, the middle cranial fossa by V2 and V3.",
+      "keyConcept": "Dura mater sensory innervation is provided by all three trigeminal divisions via meningeal branches."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q202",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "The nerve that runs in the floor of the cavernous sinus is:",
+      "options": [
+        "Oculomotor nerve.",
+        "Trochlear nerve.",
+        "Ophthalmic",
+        "Maxillary nerve.",
+        "Abducent nerve."
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "The optic nerve and oculomotor nerve are not related to the cavernous sinus. The optic nerve is in the optic canal; the oculomotor, trochlear, trigeminal (V1, V2), and abducent nerves traverse the cavernous sinus.",
+      "keyConcept": "Optic nerve not related to cavernous sinus"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q203",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "The sinus that runs along the lesser wing of sphenoid is:",
+      "options": [
+        "Sphenoparietal sinus.",
+        "Superior sagittal sinus.",
+        "Inferior sagittal sinus.",
+        "Straight sinus.",
+        "Sigmoid sinus."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "The straight sinus (not cavernous) is enclosed within the tentorium cerebelli at its attachment to the falx cerebri. The cavernous sinus is in the middle cranial fossa, lateral to the sella turcica.",
+      "keyConcept": "Straight sinus enclosed in tentorium cerebelli"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q204",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "The inferior petrosal sinus connects the cavernous sinus to the:",
+      "options": [
+        "Straight sinus.",
+        "Transverse sinus.",
+        "Inferior sagittal sinus.",
+        "Internal jugular vein.",
+        "Sigmoid sinus."
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "The middle meningeal artery runs in a groove on the greater wing of the sphenoid, not through the cavernous sinus. It passes through the foraman spinosum to supply the dura.",
+      "keyConcept": "Middle meningeal artery not in cavernous sinus"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q205",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Which of the following foramina gives passage to emissary veins of the cavernous sinuses?",
+      "options": [
+        "Foramen caecum.",
+        "Jugular foramen.",
+        "Foramen lacerum.",
+        "Mastoid foramen.",
+        "Condylar foramen."
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Rupture of the middle meningeal artery causes extradural hemorrhage. This arterial bleeding creates a biconvex/lens-shaped collection that can cause rapid deterioration due to arterial pressure.",
+      "keyConcept": "Middle meningeal artery causes extradural hematoma"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q208",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "The most superior nerve that runs in lateral wall of cavernous sinus:",
+      "options": [
+        "Occulomotor nerve.",
+        "Trochlear nerve.",
+        "Ophthalmic nerve.",
+        "Maxillary nerve.",
+        "Abducent nerve."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Extradural hematoma occurs due to rupture of the middle meningeal artery, which passes through the foramen spinosum in the greater wing of the sphenoid bone. This creates the classic 'lens-shaped' hemorrhage.",
+      "keyConcept": "Foramen spinosum transmits middle meningeal artery"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q210",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "The sinus that is enclosed within the tentorium cerebelli is:",
+      "options": [
+        "Cavernous sinus.",
+        "Sphenoparietal sinus.",
+        "Transverse sinus.",
+        "Sigmoid sinus.",
+        "Superior petrosal sinus."
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "The cavernous sinus lies between the outer (endosteal) and inner (meningeal) layers of dura, but NOT between the layers of the falx cerebri. The falx contains the sagittal sinuses.",
+      "keyConcept": "Cavernous sinus not between falx cerebri layers"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q211",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Cavernous sinus is related laterally to:",
+      "options": [
+        "Pituitary gland.",
+        "Temporal iobe of brain.",
+        "Foramen lacerum.",
+        "Optic chiasma.",
+        "Sphenoidal air sinus."
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "The middle meningeal artery is NOT a tributary of the cavernous sinus. It is a branch of the maxillary artery that supplies the dura. The cavernous sinus receives the sphenoparietal sinus, superior and inferior ophthalmic veins, and middle cerebral vein.",
+      "keyConcept": "Middle meningeal artery not tributary of cavernous sinus"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q212",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "As regards the cavernous sinus, choose the INCORRECT statement:",
+      "options": [
+        "Internal carotid artery runs in its floor.",
+        "Abducent nerve is embedded in its lateral wall.",
+        "It receives the ophthalmic veins anteriorly.",
+        "It is connected with pterygoid plexus of veins.",
+        "Sphenoidal sinus lies below it."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "The internal jugular vein is not a direct communication of the cavernous sinus. The cavernous sinus communicates with the pterygoid plexus (via foramen ovale), superior and inferior petrosal sinuses, and ultimately the internal jugular via the inferior petrosal sinus.",
+      "keyConcept": "Cavernous sinus communicates via petrosal sinuses, not directly to IJV"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q213",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "A tributary of cavernous sinus is:",
+      "options": [
+        "Central retinal vein.",
+        "Pterygoid plexus of veins.",
+        "Superior petrosal sinus.",
+        "Inferior petrosal sinus.",
+        "Great cerebral vein."
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "The middle meningeal artery supplies the dura of the cranial vault, particularly the lateral parts. It does not supply the dura of the cranial base, which is supplied by other arteries like the occipital and vertebral arteries.",
+      "keyConcept": "Middle meningeal artery supplies dura of vault"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q215",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "The venous sinus enclosed within the lower concave margin of the falx cerebri is:",
+      "options": [
+        "Superior sagittal sinus.",
+        "Inferior sagittal sinus.",
+        "Sigmoid sinus.",
+        "Straight sinus.",
+        "Sphenoparietal sinus."
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "The inferior sagittal sinus runs along the lower free margin of the falx cerebri before draining into the straight sinus. The superior sagittal sinus runs along the upper attached border.",
+      "keyConcept": "Inferior sagittal sinus in lower falx margin"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q216",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "All the following venous sinuses lie between outer (endosteal) & inner (meningeal) layers of dura EXCEPT:",
+      "options": [
+        "Superior sagittal sinus.",
+        "Inferior sagittal sinus.",
+        "Right sigmoid sinus.",
+        "Right transverse sinus.",
+        "Left transverse sinus."
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "The cavernous sinus is located between the meningeal and endosteal layers of dura in the middle cranial fossa. It is NOT between the layers of the falx cerebri, which contains the sagittal sinuses.",
+      "keyConcept": "Cavernous sinus between meningeal layers in middle fossa"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q217",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "All the following are tributaries of cavernous sinus EXCEPT:",
+      "options": [
+        "Sphenoparietal sinus.",
+        "Straight sinus.",
+        "Central retinal vein.",
+        "Superior ophthalmic vein.",
+        "Inferior ophthalmic vein."
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "The middle meningeal artery is NOT a tributary of the cavernous sinus. It is a branch of the maxillary artery (external carotid system) that supplies the dura through the foramen spinosum. Cavernous sinus tributaries include sphenoparietal sinus and ophthalmic veins.",
+      "keyConcept": "Middle meningeal not tributary of cavernous sinus"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q218",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "The cavernous sinus communicates with all the following EXCEPT:",
+      "options": [
+        "Ophthalmic veins.",
+        "Facial vein.",
+        "Pterygoid venous plexus.",
+        "Superior sagittal sinus.",
+        "Inferior petrosal sinus."
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "The cavernous sinus does not communicate directly with the internal jugular vein. It drains indirectly via the superior and inferior petrosal sinuses, which connect to the transverse/sigmoid sinuses and ultimately the jugular bulb.",
+      "keyConcept": "Cavernous sinus drains via petrosal sinuses, not directly to IJV"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q219",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Which of the following structures is embedded in the lateral wall of cavernous sinus?",
+      "options": [
+        "Mandibular nerve.",
+        "Internal carotid artery.",
+        "Ophthalmic nerve.",
+        "Abducent nerve.",
+        "Trigeminal ganglion."
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "The abducent nerve (CN VI) runs within the cavernous sinus, not in its lateral wall. The lateral wall contains the oculomotor, trochlear, ophthalmic (V1), and maxillary (V2) nerves.",
+      "keyConcept": "CN VI inside cavernous sinus, not in lateral wall"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q220",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Middle meningeal artery supplies dura of:",
+      "options": [
+        "Anterior cranial fossa.",
+        "Middle cranial fossa.",
+        "Posterior cranial fossa.",
+        "Anterior & middle cranial fossae.",
+        "Middle & posterior cranial fossae."
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "The middle meningeal artery supplies the dura mater of the cranial vault (convexities), not the cranial base. The base of the skull dura is supplied by branches from the vertebral, ascending pharyngeal, and other arteries.",
+      "keyConcept": "Middle meningeal supplies vault dura, not base"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q222",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "All the following are paired sinuses Except:",
+      "options": [
+        "Sphenoparietal sinus.",
+        "Cavernous sinus.",
+        "Straight sinus.",
+        "Sigmoid sinus.",
+        "Inferior petrosal sinus."
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Most dural venous sinuses are paired, including the cavernous sinuses, transverse sinuses, sigmoid sinuses, superior petrosal sinuses, inferior petrosal sinuses, and occipital sinuses. The straight sinus, however, is an unpaired midline structure formed by the union of the inferior sagittal sinus and the great cerebral vein (vein of Galen) at the junction of the falx cerebri and tentorium cerebelli.",
+      "keyConcept": "Straight sinus is unpaired; most other dural venous sinuses are paired."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q224",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "As regards relations of cavernous sinus, choose the INCORRECT matching:",
+      "options": [
+        "It lies in posterior cranial fossa.",
+        "The endosteal dura forms its roof.",
+        "It lies between inferior orbital fissure & apex of petreous temporal bone.",
+        "It lies on either side of greater wing of sphenoid.",
+        "Expansile pulsation of external carotid artery helps the passing of the blood outside the sinus."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "The cavernous sinus is located in the middle cranial fossa on either side of the sella turcica, not in the posterior cranial fossa. Statement A is incorrect. It lies between the superior orbital fissure anteriorly and the apex of the petrous temporal bone posteriorly, rests on the body and greater wing of the sphenoid bone, receives blood from facial and ophthalmic veins, and transmits pulsations from the internal carotid artery to promote venous outflow.",
+      "keyConcept": "Cavernous sinus is in the middle cranial fossa, NOT the posterior cranial fossa."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q225",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Which one of the following structures is not embedded in lateral wall of cavernous sinus?",
+      "options": [
+        "Ophthalmic nerve.",
+        "Abducent nerve.",
+        "Oculomotor nerve.",
+        "Trochlear nerve.",
+        "Maxillary nerve."
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "The lateral wall of the cavernous sinus contains the oculomotor nerve (CN III), trochlear nerve (CN IV), ophthalmic nerve (V1), and maxillary nerve (V2), arranged from superior to inferior. The abducent nerve (CN VI) is the exception—it runs through the body of the cavernous sinus, lateral to the internal carotid artery, not in the lateral wall.",
+      "keyConcept": "Abducent nerve (CN VI) runs through the body of cavernous sinus, not its lateral wall."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q453",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Which one of the following is a part of the posterior cranial fossa?",
+      "options": [
+        "Body of sphenoid.",
+        "Crista galli.",
+        "Cribriform plate of ethmoid.",
+        "Lesser wing of sphenoid.",
+        "Transverse sulcus."
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "The transverse sulcus (for the transverse sinus) runs across the occipital bone and forms part of the posterior cranial fossa floor. The body of the sphenoid and crista galli are in the middle and anterior cranial fossae respectively. The cribriform plate is in the anterior cranial fossa. The lesser wing of sphenoid forms the posterior limit of the anterior cranial fossa.",
+      "keyConcept": "Transverse sulcus is in posterior cranial fossa (occipital bone); marks the junction with middle cranial fossa."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q502",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 2,
+      "question": "Infection from dangerous area of face may be transmitted to the following venous sinus:",
+      "options": [
+        "Superior petrosal.",
+        "Sigmoid.",
+        "Inferior sagittal.",
+        "Superior sagittal.",
+        "Cavernous."
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "Infection from dangerous area of face (upper lip, nose, orbit) may spread via facial vein → angular vein → superior ophthalmic vein → cavernous sinus.选项E正确. The answer is E. This is why facial infections can cause cavernous sinus thrombosis.",
+      "keyConcept": "Facial vein connects to cavernous sinus via angular and superior ophthalmic veins - spread route for infection."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q655",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "To do lumbar puncture in an adult a needle is introduced",
+      "options": [
+        "Below or above tip of 4th lumbar spine",
+        "Below tip of 1st lumbar spine",
+        "Below tip of 2nd lumbar spine",
+        "Below tip of thoracic 12 spine",
+        "None of the above"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "In adults, lumbar puncture is performed at L3-L4 or L4-L5 interspace (below L2 where spinal cord terminates); the needle passes through skin, subcutaneous tissue, supraspinous ligament, interspinous ligament, ligamentum flavum, epidural space, dura, and arachnoid.",
+      "keyConcept": "Lumbar puncture anatomical levels"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q664",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Which of the following veins end in cavernous sinus:",
+      "options": [
+        "Superior cerebral veins",
+        "Inferior cerebral veins",
+        "Deep middle cerebral vein",
+        "Superficial middle cerebral vein",
+        "None of the above"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "The superficial middle cerebral vein drains into the cavernous sinus; superior and inferior cerebral veins drain into superior sagittal and transverse sinuses respectively.",
+      "keyConcept": "Cavernous sinus drainage"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q712",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 5,
+      "question": "Which structure ends in the internal jugular vein?",
+      "options": [
+        "Superior petrosal sinus",
+        "Cavernous sinus",
+        "Sigmoid sinus",
+        "Transverse sinus",
+        "Inferior petrosal sinus"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "The sigmoid sinus drains into the internal jugular vein (IJV) at the jugular foramen. The IJV carries cerebral venous drainage from the brain to the brachiocephalic vein.",
+      "keyConcept": "Sigmoid sinus terminates at the internal jugular vein, which exits via jugular foramen."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q718",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 2,
+      "question": "Which structure is NOT located in the lateral wall of the cavernous sinus?",
+      "options": [
+        "Oculomotor nerve (CN III)",
+        "Trochlear nerve (CN IV)",
+        "Ophthalmic nerve (CN V1)",
+        "Maxillary nerve (CN V2)",
+        "Mandibular nerve (CN V3)"
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "The abducens nerve (CN VI) runs through the center of the cavernous sinus, not in the lateral wall. CN III, IV, V1, and V2 are located in the lateral wall of the cavernous sinus.",
+      "keyConcept": "CN VI traverses through the cavernous sinus itself, unlike other cranial nerves in its lateral wall."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q719",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 2,
+      "question": "Which venous sinus drains directly into the internal jugular vein (IJV)?",
+      "options": [
+        "Superior sagittal sinus",
+        "Transverse sinus",
+        "Cavernous sinus",
+        "Sigmoid sinus",
+        "Inferior petrosal sinus"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "The sigmoid sinus drains directly into the internal jugular vein (IJV) at the jugular bulb. The inferior petrosal sinus also drains into the IJV, but the sigmoid is the major drainage pathway.",
+      "keyConcept": "Sigmoid sinus is the primary venous sinus draining into the internal jugular vein."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q798",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 2,
+      "question": "One layer of modified fibroblast:",
+      "options": [
+        "pia matter",
+        "dura matter",
+        "arachnoid matter",
+        "Purkinje cell"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "The pia mater consists of a single layer of modified fibroblasts (mesothelial cells) that closely follow the contours of the brain and spinal cord.",
+      "keyConcept": "Pia mater structure"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q799",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 2,
+      "question": "Blood brain barrier formed of all the following except:",
+      "options": [
+        "thick basement membrane",
+        "tight junction between ependymal cell",
+        "non fenestrated endothelium",
+        "end feed of astrocyte"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "The blood-brain barrier consists of thick basement membrane, non-fenestrated endothelium, and astrocyte foot processes; ependymal cells form the CSF barrier, not BBB.",
+      "keyConcept": "Blood-brain barrier components"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q801",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 2,
+      "question": "The blood brain barrier is formed of all the following except:",
+      "options": [
+        "endothelial cells of blood capillaries",
+        "basement membrane of the blood capillaries",
+        "foot processes of the astrocytes",
+        "ependymal cells that are connected by tight junctions"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "The blood-brain barrier consists of endothelial cells, basement membrane, and astrocyte foot processes; ependymal cells with tight junctions form the ventricular lining, not the BBB.",
+      "keyConcept": "BBB vs ependymal barrier"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q835",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Arachnoid barrier is the barrier between:",
+      "options": [
+        "extracerebral capillaries and subarachnoid space.",
+        "blood and CSF.",
+        "blood and brain cells.",
+        "subarachnoid space and CSF."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "The arachnoid barrier cell layer separates extracerebral capillaries from the subarachnoid space, contributing to the blood-CSF barrier.",
+      "keyConcept": "Arachnoid barrier function"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q836",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Blood brain barrier is formed of tight junctions between:",
+      "options": [
+        "fenestrated endothelium.",
+        "end feet of astrocytes.",
+        "non fenestrated endothelium.",
+        "Border cells."
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "The blood-brain barrier uses tight junctions between non-fenestrated (continuous) capillary endothelial cells, unlike fenestrated endothelium elsewhere.",
+      "keyConcept": "BBB tight junctions"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q856",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "All of the following are constituents of the lateral wall of the cavernous sinus except:",
+      "options": [
+        "Oculomotor nerve",
+        "Trochlear nerve",
+        "Ophthalmic nerve",
+        "Maxillary nerve",
+        "Mandibular nerve"
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "The mandibular nerve (V3) runs in the lateral wall of the cavernous sinus floor, not the lateral wall; oculomotor, trochlear, V1, and V2 are in the lateral wall.",
+      "keyConcept": "Cavernous sinus contents"
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1064",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Cavernous sinus thrombosis from a \"danger area\" facial infection spreads via the:",
+      "options": [
+        "Retromandibular vein",
+        "Facial artery",
+        "Inferior petrosal sinus to the IJV",
+        "Great cerebral vein",
+        "Superior ophthalmic vein"
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "Facial vein to superior ophthalmic vein to cavernous sinus.",
+      "keyConcept": "Cavernous sinus thrombosis from facial infection: danger area around nose/upper lip."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1069",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Posterior choroidal artery is a branch from ……… artery.",
+      "options": [
+        "Internal carotid",
+        "Basilar",
+        "Anterior cerebral",
+        "Posterior cerebral"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "The posterior choroidal artery is a branch of the posterior cerebral artery that supplies the choroid plexus of the lateral and third ventricles.",
+      "keyConcept": "Posterior choroidal artery: branch of posterior cerebral artery."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1098",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "It is not a must to test the ……… nerve in case of cavernous sinus thrombosis.",
+      "options": [
+        "Oculomotor",
+        "Trochlear",
+        "Abducent",
+        "Facial"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "The facial nerve (CN VII) does not pass through the cavernous sinus; it exits via stylomastoid foramen, so it wouldn't be affected in cavernous sinus thrombosis.",
+      "keyConcept": "Facial nerve not in cavernous sinus, so not tested in thrombosis."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1099",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "The cavernous sinus is drained to the transverse sinus by ……… sinus.",
+      "options": [
+        "Sphenoparietal",
+        "Superior petrosal",
+        "Inferior petrosal",
+        "Intercavernous"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "The superior petrosal sinus drains the cavernous sinus into the transverse sinus, running along the petrous ridge at the attachment of tentorium cerebelli.",
+      "keyConcept": "Cavernous sinus drains to transverse sinus via superior petrosal sinus."
+    },
+    {
+      "id": "mcns2-ch1-anatomy-q1100",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Choose the wrong statement about the straight sinus:",
+      "options": [
+        "It is formed by union of inferior sagittal sinus and great cerebral vein.",
+        "Runs in the junction between falx cerebri and tentorium cerebelli.",
+        "Deviates to the right to continue as the right transverse sinus.",
+        "It is connected to the confluence of sinuses."
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "The straight sinus deviates to the LEFT to continue as the left transverse sinus (not right); the right transverse sinus typically continues from the superior sagittal sinus.",
+      "keyConcept": "Straight sinus deviates LEFT to become left transverse sinus."
+    },
+    {
+      "id": "mcns2-ch2-anatomy-q93",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 5,
+      "question": "Which of the following cranial nerves passes through the cavernous sinus?",
+      "options": [
+        "Abducent nerve",
+        "Oculomotor nerve",
+        "Trochlear nerve",
+        "Optic nerve",
+        "Olfactory nerve"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "CN III, IV, V1, V2, and VI all pass through the cavernous sinus. CN III and IV are in the lateral wall with V1 and V2; CN VI runs through the sinus itself next to the internal carotid artery.",
+      "keyConcept": "Cavernous sinus contains CN III, IV, V1, V2, VI and the internal carotid artery."
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q3",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Leptomeninges refer to the:",
+      "options": [
+        "Dura mater.",
+        "Dura mater and arachnoid mater.",
+        "Pia and arachnoid mater.",
+        "Superficial glial membrane.",
+        "Periosteum."
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "The leptomeninges consist of the pia mater and arachnoid mater. The dura mater is the outer meningeal layer and is not part of the leptomeninges.",
+      "keyConcept": "Leptomeninges = pia + arachnoid mater"
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q4",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "The spinal cord is anchored to the dura mater by the:",
+      "options": [
+        "Coccygeal ligament.",
+        "Ligamentum flavum.",
+        "Anterior longitudinal ligament.",
+        "Denticulate ligaments.",
+        "Cauda equina."
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "The spinal cord is anchored to the dura mater by the denticulate ligaments (21 pairs), which are extensions of the pia mater located between the dorsal and ventral nerve roots.",
+      "keyConcept": "Denticulate ligaments anchor the spinal cord to the dura"
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q12",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "As regards dural venous sinuses, choose the INCORRECT matching:",
+      "options": [
+        "Inferior petrosal sinus - considered as an emissary vein.",
+        "Superior petrosal sinus - runs in free margin of tentorium cerebelli.",
+        "Straight sinus - lies at line of attachment of falx cerebri & tentorium cerebelli.",
+        "Sigmoid sinus - ends by forming internal jugular vein.",
+        "Transverse sinus - begins at internal occipital protuberance."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "The sigmoid sinus runs in a groove between the temporal and occipital bones. The cavernous sinus is correctly described as being in the middle cranial fossa, between the meningeal and endosteal dural layers. The INCORRECT matching would be placing the sigmoid sinus in the cavernous location.",
+      "keyConcept": "Sigmoid sinus in groove, not in cavernous sinus location"
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q14",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "As regards superior sagittal sinus, choose the INCORRECT statement:",
+      "options": [
+        "Its anterior end communicates with veins of nose.",
+        "Usually it ends by forming left transverse sinus.",
+        "Its posterior end is called confluence of sinuses.",
+        "It receives superior cerebral veins.",
+        "It helps in drainage of CSF through arachnoid villi & granulationsn."
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "The superior sagittal sinus begins at the foramen caecum and runs along the attached superior margin of the falx cerebri to drain into the confluence of sinuses. It receives superior cerebral veins and drains CSF through arachnoid granulations. However, it does NOT usually end as the left transverse sinus; instead, the superior sagittal sinus typically drains into the right transverse sinus, although there is anatomical variability.",
+      "keyConcept": "Superior sagittal sinus typically drains into the right transverse sinus, not the left."
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q40",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Regarding cerebrospinal fluid (C.S.F.) all statements are true Except:",
+      "options": [
+        "Is formed by choroid plexuses of ventricles",
+        "Helps in removal of metabolites",
+        "Finally reaches the blood stream",
+        "Reaches cisternamagna through the aqueduct of Sylvius",
+        "Is filtered through arachnoid granulations"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "CSF reaches the cisterna magna via the foramen of Magendie (fourth ventricle directly to subarachnoid space), NOT through the aqueduct of Sylvius (which connects third and fourth ventricles).",
+      "keyConcept": "CSF pathway to cisternamagna"
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q43",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 2,
+      "question": "Which dural venous sinus is a paired structure?",
+      "options": [
+        "Superior sagittal sinus",
+        "Inferior sagittal sinus",
+        "Straight sinus",
+        "Inferior petrosal sinus",
+        "Occipital sinus"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "The inferior petrosal sinus is a paired structure (one on each side). The superior sagittal, inferior sagittal, and straight sinuses are unpaired midline structures.",
+      "keyConcept": "Transverse and sigmoid sinuses are paired lateral structures; sagittal and straight sinuses are midline unpaired."
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q45",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 2,
+      "question": "The superior cerebral veins primarily drain into which dural venous sinus?",
+      "options": [
+        "Straight sinus",
+        "Transverse sinus",
+        "Superior sagittal sinus",
+        "Sigmoid sinus",
+        "Cavernous sinus"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Superior cerebral veins drain into the superior sagittal sinus (SSS). These veins pierce the arachnoid mater and drain into the SSS at right angles.",
+      "keyConcept": "Superior cerebral veins empty into the superior sagittal sinus on the superior brain surface."
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q46",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 2,
+      "question": "Cerebrospinal fluid (CSF) is primarily drained into the venous system by which structure?",
+      "options": [
+        "Choroid plexus",
+        "Ependymal cells",
+        "Central canal",
+        "Ventricular foramina",
+        "Arachnoid granulations"
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "CSF is primarily drained into the venous system via the arachnoid villi and granulations that project into the dural venous sinuses, especially the superior sagittal sinus, returning CSF to the bloodstream.",
+      "keyConcept": "Arachnoid granulations drain CSF into dural venous sinuses (primarily superior sagittal sinus)."
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q48",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 2,
+      "question": "Leptomeninges is membrane between:",
+      "options": [
+        "dura, arachnoid",
+        "dura, pia",
+        "pia, arachnoid",
+        "All the above"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Leptomeninges refers to the pia mater and arachnoid mater together, which are delicate membranes lying between the dura mater and subarachnoid space.",
+      "keyConcept": "Leptomeninges definition"
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q49",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 2,
+      "question": "-- present between extracerebral capillary, subarachnoid space:",
+      "options": [
+        "blood brain barrier",
+        "arachnoid barrier",
+        "CSF barrier",
+        "All the following"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "The arachnoid barrier cell layer is present between extracerebral capillaries and the subarachnoid space, regulating CSF composition.",
+      "keyConcept": "Arachnoid barrier"
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q50",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 2,
+      "question": "The blood CSF barrier is formed of all the following except:",
+      "options": [
+        "endothelial cells of the blood capillaries",
+        "basement membrane of the blood capillaries",
+        "foot processes of the astrocytes",
+        "ependymal cells that are connected by tight junctions"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "The blood-CSF barrier is formed by endothelial cells, basement membrane, and ependymal cells with tight junctions; astrocyte foot processes are part of the BBB, not blood-CSF barrier.",
+      "keyConcept": "Blood-CSF barrier"
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q58",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "The blood‑CSF barrier is NOT formed by:",
+      "options": [
+        "Foot processes of astrocytes",
+        "Basement membrane of ependymal cells",
+        "Fenestrated endothelial cells",
+        "Ependymal cells connected by tight junctions"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "The blood-CSF barrier uses fenestrated endothelial cells (allowing passage) and is NOT formed by astrocyte foot processes (those form the BBB).",
+      "keyConcept": "Blood-CSF barrier components"
+    },
+    {
+      "id": "mcns2-ch9-anatomy-q40",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Which of the following is a component of the blood-brain barrier?",
+      "options": [
+        "Fenestrated capillaries",
+        "Tight junctions between endothelial cells",
+        "Large pericellular spaces",
+        "Absence of astrocytic end-feet"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "The blood-brain barrier consists of tight junctions between non-fenestrated endothelial cells, a thick basement membrane, and astrocytic end-feet that together restrict molecular passage.",
+      "keyConcept": "Blood-brain barrier: tight junctions between non-fenestrated endothelial cells."
+    },
+    {
+      "id": "mcns2-ch9-anatomy-q44",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "An aneurysm of the cavernous part of the internal carotid artery compresses the ……… nerve.",
+      "options": [
+        "Oculomotor",
+        "Trochlear",
+        "Ophthalmic",
+        "Abducent"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "The abducent nerve (CN VI) runs through the cavernous sinus adjacent to the internal carotid artery; an aneurysm here compresses CN VI causing lateral rectus palsy.",
+      "keyConcept": "Cavernous ICA aneurysm compresses abducent nerve (CN VI)."
+    },
+    {
+      "id": "mcns2-ch10-anatomy-q3",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "In case of fracture of pterion & formation of extradural hemorrhage, which blood vessel is most likely injured?",
+      "options": [
+        "Internal carotid artery.",
+        "Middle meningeal artery.",
+        "Middle cerebral artery.",
+        "Superficial middle cerebral vein.",
+        "Superior cerebral veins."
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "Pterion fractures commonly injure the middle meningeal artery (a branch of the maxillary artery) running in the pterion region, leading to extradural/epidural hemorrhage. The middle meningeal artery enters the cranial cavity through the foramen spinosum.",
+      "keyConcept": "CN VI inside cavernous sinus, not lateral wall"
+    },
+    {
+      "id": "mcns2-ch10-anatomy-q4",
+      "subject": "anatomy",
+      "subjectName": "Anatomy",
+      "lecture": 1,
+      "question": "Rupture of middle meningeal artery causes which type of hemorrhage?",
+      "options": [
+        "Extradural.",
+        "Subdural.",
+        "Subarachnoid.",
+        "Cerebral.",
+        "Ventricular."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "The sigmoid sinus (not cavernous) is correctly matched with its groove. The cavernous sinus is in the middle cranial fossa, lateral to the sella turcica. The sigmoid sinus runs in a groove between the temporal and occipital bones.",
+      "keyConcept": "Sigmoid sinus has groove, cavernous sinus does not"
+    },
+    {
+      "id": "mcns2-ch10-anatomy-q29",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "Which antidepressant is approved for management of chronic neuropathic pain (e.g., diabetic neuropathy)?",
+      "options": [
+        "Tranylcypromine",
+        "Phenelzine",
+        "Venlafaxine",
+        "Lithium",
+        "Bupropion"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Venlafaxine (SNRI) and duloxetine are antidepressants approved for diabetic neuropathy and other chronic pain conditions.",
+      "keyConcept": "Antidepressants for neuropathic pain"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q196",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "Thiamine deficiency occurs most common with abuse of:",
+      "options": [
+        "Heroin",
+        "Alcohol",
+        "Cocaine",
+        "Cannabis"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "Thiamine (Vitamin B1) deficiency most commonly occurs with chronic alcohol abuse. Alcoholics often have poor nutrition and impaired thiamine absorption/utilization. This can lead to Wernicke-Korsakoff syndrome (confusion, ataxia, ophthalmoplegia, memory impairment). Heroin (A), cocaine (C), and cannabis (D) users typically don't develop thiamine deficiency unless they also have poor nutrition. The answer is B - alcohol abuse is the most common cause of thiamine deficiency leading to Wernicke encephalopathy.",
+      "keyConcept": "Chronic alcohol abuse is the most common cause of thiamine deficiency and Wernicke-Korsakoff syndrome."
+    },
+    {
+      "id": "mcns2-ch1-pharma-q236",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "The following is NOT used in alcohol abuse",
+      "options": [
+        "Disulfiram",
+        "Acamprosate",
+        "Flumazenil",
+        "Naltrexone",
+        "Thiamine"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Flumazenil is a benzodiazepine antagonist used for benzodiazepine overdose, not alcohol abuse. Disulfiram, acamprosate, and naltrexone are used for alcohol use disorder; thiamine prevents Wernicke encephalopathy in alcoholics.",
+      "keyConcept": "Flumazenil as benzodiazepine antagonist, not used in alcohol use disorder"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q82",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "Choose from the following pair of antibiotics not crossing BBB even if inflamed:",
+      "options": [
+        "Aminoglycosides and β‑lactam",
+        "Chloramphenicol and Aminoglycosides",
+        "Rifampicin and Monobactam",
+        "Amphotericin and Aminoglycosides"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Amphotericin B (for fungal CNS infections) and aminoglycosides have minimal BBB penetration even when the meninges are inflamed; chloramphenicol and rifampicin cross well.",
+      "keyConcept": "Amphotericin B and aminoglycosides are notable for poor CNS penetration even with meningeal inflammation."
+    },
+    {
+      "id": "mcns2-ch8-pharma-q2",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "Which antibiotics achieve therapeutic CSF level only with meningeal inflammation?",
+      "options": [
+        "Sulfonamides, Trimethoprim, Chloramphenicol, Rifampicin",
+        "β-lactam, Monobactam, Vancomycin, quinolones, Acyclovir",
+        "Aminoglycosides, 1st & 2nd Generation of cephalosporines, Amphotericin B",
+        "None"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "Antibiotics achieving therapeutic CSF levels ONLY with meningeal inflammation: penicillins, cephalosporins, vancomycin, aminoglycosides, and most others.选项B正确. The answer is B. Meningeal inflammation increases BBB permeability, allowing these antibiotics to penetrate.",
+      "keyConcept": "Most antibiotics (penicillins, cephalosporins, vancomycin) require meningeal inflammation for adequate CSF penetration."
+    },
+    {
+      "id": "mcns2-ch8-pharma-q3",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "Which antibiotics do not achieve therapeutic CSF level even with inflammation?",
+      "options": [
+        "Aminoglycosides, 1st & 2nd Generation of cephalosporines, Amphotericin B",
+        "Sulfonamides, Trimethoprim, Chloramphenicol, Rifampicin",
+        "β-lactam, Monobactam, Vancomycin, quinolones, Acyclovir",
+        "None"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Antibiotics NOT achieving therapeutic CSF even with inflammation: aminoglycosides (gentamicin, streptomycin), amphotericin B, and others with poor CNS penetration.选项A正确. Most drugs require meningeal inflammation for penetration, but some never achieve adequate levels. The answer is A. This is why intrathecal administration is needed for some infections.",
+      "keyConcept": "Aminoglycosides and amphotericin B do not achieve therapeutic CSF levels even with meningeal inflammation."
+    },
+    {
+      "id": "mcns2-ch1-pharma-q199",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "What is L-Dopa?",
+      "options": [
+        "A dopamine precursor that can cross the blood-brain barrier (BBB)",
+        "A dopamine agonist",
+        "A MAO-B inhibitor",
+        "A COMT inhibitor"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "L-Dopa is levodopa, the metabolic precursor of dopamine that crosses the blood-brain barrier. It is converted to dopamine by aromatic L-amino acid decarboxylase (DOPA decarboxylase) in the brain and periphery.选项A正确. The answer is A. L-dopa is combined with carbidopa (a peripheral decarboxylase inhibitor) to reduce peripheral side effects and increase CNS delivery.",
+      "keyConcept": "Levodopa is a dopamine precursor that crosses the BBB - converted to dopamine by DOPA decarboxylase in the brain."
+    },
+    {
+      "id": "mcns2-ch8-pharma-q1",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "Which antibiotics achieve therapeutic CSF level even without meningeal inflammation?",
+      "options": [
+        "Sulfonamides, Trimethoprim, Chloramphenicol, Rifampicin",
+        "β-lactam, Monobactam, Vancomycin, quinolones, Acyclovir",
+        "Aminoglycosides, 1st & 2nd Generation of cephalosporines, Amphotericin B",
+        "None"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Antibiotics achieving therapeutic CSF levels WITHOUT meningeal inflammation: sulfonamides, fluoroquinolones, and some others. These can cross normal blood-brain barrier.选项A正确. The answer is A. Most antibiotics require meningeal inflammation for adequate CSF penetration.",
+      "keyConcept": "Sulfonamides and fluoroquinolones achieve CSF levels without meningeal inflammation - unique BBB penetration."
+    },
+    {
+      "id": "mcns2-ch1-physiology-q105",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 1,
+      "question": "Habituation:",
+      "options": [
+        "Is the gradual increase in response in presence of a repeated stimulus.",
+        "Is involved in operant conditioning.",
+        "Explained by gradual inactivation of Ca++ channels in the postsynaptic neuron.",
+        "Leads to the formation of new synapses.",
+        "Is due to gradual decrease in the neurotransmitter release in the involved pathway."
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "Habituation is decreased response to repeated benign stimuli due to decreased neurotransmitter release (not inactivation of postsynaptic Ca++ channels). It does not involve new synapse formation or operant conditioning (that's sensitization).",
+      "keyConcept": "Habituation: decreased transmitter release from sensory neurons → decreased response to benign stimuli."
+    },
+    {
+      "id": "mcns2-ch1-physiology-q106",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 1,
+      "question": "Which sentence is NOT true about sensitization:",
+      "options": [
+        "A prolonged augmented response occurs when a noxious stimulus paired to a benign stimulus.",
+        "It is due to serotonin-induced facilitation.",
+        "Is involved in short-term memory.",
+        "Is involved in long-term memory.",
+        "It continues up to 60 seconds after removal of the stimulus."
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "Sensitization can last much longer than 60 seconds - it can persist for days in long-term sensitization. It does involve serotonergic facilitation, operates in both short and long-term memory, and is associated with noxious stimuli paired to benign ones.",
+      "keyConcept": "Sensitization: enhanced response to stimuli after noxious input; serotonergic facilitation; can be short or long-term."
+    },
+    {
+      "id": "mcns2-ch6-physiology-q4",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 1,
+      "question": "Which sentence is NOT true about the Amygdala:",
+      "options": [
+        "Is involved in processing of the emotional components of memories.",
+        "Is involved in processing of the emotional responses to odors.",
+        "Its lesion leads to hyperphagia and omniphagia.",
+        "Its stimulation leads to rage and aggression.",
+        "Is the area for consolidation of memory."
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "The amygdala is NOT the area for consolidation of memory - that is the hippocampus. The amygdala processes emotional responses and emotional components of memories. Lesion leads to hypoactive emotional response, not hyperphagia. Stimulation causes rage.",
+      "keyConcept": "Amygdala: emotional processing of memories. Hippocampus: memory consolidation. Different structures."
+    },
+    {
+      "id": "mcns2-ch6-physiology-q5",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 2,
+      "question": "What is the role of the amygdala in smell?",
+      "options": [
+        "Perception and discrimination of odor",
+        "Emotional response to odors",
+        "Olfactory memories",
+        "Modulation of taste"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "The amygdala processes emotional aspects of olfactory stimuli, particularly those associated with fear and reward, connecting olfactory information with emotional and behavioral responses.",
+      "keyConcept": "Amygdala olfactory-emotional processing"
+    },
+    {
+      "id": "mcns2-ch6-physiology-q8",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 1,
+      "question": "Elaboration of thoughts is considered one of the functions of which of the following areas?",
+      "options": [
+        "Wernicke’s area",
+        "Parietal cortex",
+        "Visual association area",
+        "Prefrontal association area",
+        "Auditory association area"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "The prefrontal association area is responsible for elaborating thoughts, planning, and integrating information from various cortical regions for complex cognitive tasks.",
+      "keyConcept": "Prefrontal association area: elaboration of thoughts."
+    },
+    {
+      "id": "mcns2-ch3-physiology-q31",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 1,
+      "question": "Which of the following describes learning?",
+      "options": [
+        "Memory is not essential for it",
+        "Sensitization means decreased response to repeated stimuli",
+        "Operant conditioning is a type of associative learning",
+        "Habituation and sensitization are types of conditioning learning",
+        "Habituation means increased response to repeated stimuli"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Operant (instrumental) conditioning is a type of associative learning where behavior is modified by consequences (reward or punishment), distinguishing it from non-associative learning.",
+      "keyConcept": "Operant conditioning: associative learning via consequences."
+    },
+    {
+      "id": "mcns2-ch1-physiology-q134",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 2,
+      "question": "What is the role of the piriform cortex in smell?",
+      "options": [
+        "Perception and discrimination of odor",
+        "Emotional response to odors",
+        "Olfactory memories",
+        "Modulation of taste"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "The piriform cortex is the primary olfactory cortex responsible for perception and discrimination of odor quality, receiving direct input from the olfactory bulb via the lateral olfactory tract.",
+      "keyConcept": "Piriform cortex olfactory function"
+    },
+    {
+      "id": "mcns2-ch1-biochem-q287",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 3,
+      "question": "A 55‑year‑old chronic alcoholic presents with confusion, ataxia, and memory impairment. Most likely condition?",
+      "options": [
+        "Wernicke‑Korsakoff",
+        "Wet beriberi",
+        "Dry beriberi",
+        "Pellagra",
+        "Homocystinemia"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Wernicke-Korsakoff syndrome in chronic alcoholics presents with the classic triad of confusion, ataxia, and memory impairment due to thiamine (B1) deficiency.",
+      "keyConcept": "Wernicke-Korsakoff presentation"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q107",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 1,
+      "question": "Post-tetanic facilitation:",
+      "options": [
+        "Is a gradual loss of response to a repeated benign stimulus.",
+        "The postsynaptic response continues as long as the presynaptic stimulation is maintained.",
+        "Explained by accumulation of Ca++ in the presynaptic neuron upon rapid short-term stimulation.",
+        "Is associated with decrease postsynaptic response after removal of presynaptic stimulation.",
+        "Is the basis of classical conditioning."
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Post-tetanic facilitation is explained by Ca++ accumulation in the presynaptic terminal after rapid stimulation, leading to increased neurotransmitter release. It is not gradual loss (that's habituation), not continuation after stimulus removal (that's post-tetanic potentiation), and not basis of classical conditioning.",
+      "keyConcept": "Post-tetanic facilitation: Ca2+ accumulation → increased transmitter release → enhanced response during tetanus."
+    },
+    {
+      "id": "mcns2-ch1-physiology-q102",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 1,
+      "question": "Mechanisms of long-term memory do NOT include:",
+      "options": [
+        "Transient synaptic modifications.",
+        "Increase presynaptic terminals and vesicles.",
+        "Structural and functional synaptic changes.",
+        "Formation of new synapses.",
+        "Gene activation and protein synthesis"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Transient synaptic modifications are characteristic of SHORT-term memory, not long-term. LTM mechanisms include increased presynaptic terminals, structural/functional synaptic changes, new synapses, and gene activation/protein synthesis.",
+      "keyConcept": "STM: transient changes. LTM: structural changes, new synapses, gene activation."
+    },
+    {
+      "id": "mcns2-ch1-physiology-q60",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 8,
+      "question": "A patient who has had destruction of somatic sensory area I on the left side will show:",
+      "options": [
+        "a",
+        "b",
+        "c",
+        "d"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Destruction of the left somatic sensory area I causes astereognosis (inability to identify objects) in the RIGHT hand because sensory pathways cross. Total loss of sensation would require bilateral lesions. Wernicke's area (temporal) handles auditory comprehension.",
+      "keyConcept": "Contralateral sensory cortex destruction causes astereognosis in opposite hand; object identification requires cortical processing."
+    },
+    {
+      "id": "mcns2-ch1-physiology-q89",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 1,
+      "question": "Which of the following is NOT a function of the prefrontal association area:",
+      "options": [
+        "Operation of working memory.",
+        "Storage of coordinated vocalization programs.",
+        "Decision making and personality traits.",
+        "Thoughts.",
+        "Language comprehension."
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "Language comprehension is a function of Wernicke's area in the temporal lobe, not the prefrontal association area. The prefrontal area handles working memory, decision-making, personality, abstract thinking, and storage of vocalization programs.",
+      "keyConcept": "Prefrontal functions: executive function, working memory, personality, decision-making. Language = temporal/parietal areas."
+    },
+    {
+      "id": "mcns2-ch1-physiology-q90",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 1,
+      "question": "Concerning speech, all are true EXCEPT:",
+      "options": [
+        "Sensory aphasia occurs due to defect in visual association area, auditory association area or Wernicke’s area.",
+        "Expressive aphasia occurs due to lesion in Broca’s area or Exner’s area.",
+        "Anomic aphasia is due to lesion in and around auditory cortex.",
+        "In anomic aphasia, the patient cannot give name for seen pictures and words.",
+        "Aphasia occurs only in case of lesion in the categorical hemisphere."
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Anomic aphasia is due to lesion in the angular gyrus (not auditory cortex), which connects visual, auditory, and tactile information. The patient can comprehend but cannot name objects. Broca's aphasia is characterized by sparse, effortful speech, not excessive speech.",
+      "keyConcept": "Anomic aphasia: angular gyrus lesion; can't name objects despite comprehension."
+    },
+    {
+      "id": "mcns2-ch1-physiology-q91",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 1,
+      "question": "Aphasia:",
+      "options": [
+        "Is an abnormal speech due to defect in articulation.",
+        "Is of fluent type due to lesion in Wernicke’s area.",
+        "May be due to lower motor neuron lesion of vocalization muscles.",
+        "Is expressive in type due to lesion in auditory association cortex.",
+        "Broca’s aphasia characterized by excessive meaningless speech."
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "Aphasia is a language disorder (not articulation), often fluent in Wernicke's aphasia. It is not due to LMN lesions. Broca's aphasia is characterized by non-fluent, effortful, meaningful speech (not meaningless). The key distinction is language vs articulation.",
+      "keyConcept": "Aphasia = language disorder (not motor); Wernicke = fluent aphasia; Broca = non-fluent aphasia."
+    },
+    {
+      "id": "mcns2-ch1-physiology-q92",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 1,
+      "question": "Speech centers do NOT include:",
+      "options": [
+        "Wernicke’s area.",
+        "Broca’s area.",
+        "Somatic sensory association area.",
+        "Auditory association area.",
+        "Visual association area."
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "The somatic sensory association area is NOT a primary speech center. Speech requires Wernicke's area, Broca's area, auditory association area, and visual association area for reading. Broca's is in frontal lobe; Wernicke's and auditory areas in temporal lobe.",
+      "keyConcept": "Speech centers: Broca's (frontal), Wernicke's (temporal), auditory/visual association areas. Somatic sensory association is NOT required for speech."
+    },
+    {
+      "id": "mcns2-ch1-physiology-q93",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 1,
+      "question": "Sensory aphasia occurs with lesion in:",
+      "options": [
+        "Visual pathway.",
+        "Broca’s area.",
+        "Exner’s area.",
+        "Auditory association area.",
+        "Tongue muscles."
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Sensory aphasia occurs with lesion in Wernicke's area or auditory association area, causing poor comprehension and fluent but meaningless speech. Visual pathway lesions cause blindness; Broca's/Exner cause motor aphasia; tongue muscles cause dysarthria.",
+      "keyConcept": "Sensory aphasia: Wernicke's area/auditory association lesion = fluent but meaningless speech, poor comprehension."
+    },
+    {
+      "id": "mcns2-ch1-physiology-q95",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 1,
+      "question": "Motor aphasia occurs with lesion in:",
+      "options": [
+        "Primary motor area.",
+        "Auditory association area.",
+        "Wernicke’s area.",
+        "Angular gyrus.",
+        "Exner’s area."
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "Motor aphasia (Broca's aphasia) occurs with lesion in Exner/Broca's area in the frontal lobe. Primary motor area causes paralysis, not aphasia. Auditory association/Wernicke's areas cause sensory aphasia. Angular gyrus causes conduction aphasia.",
+      "keyConcept": "Broca's/Exner's area: motor aphasia (difficulty producing speech). Wernicke's: sensory aphasia (difficulty understanding)."
+    },
+    {
+      "id": "mcns2-ch1-physiology-q99",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 1,
+      "question": "Short-term memory is:",
+      "options": [
+        "Stored after 2 hours from getting the information.",
+        "Brain capacity for it is unlimited.",
+        "Encoded and stored in the neocortex.",
+        "Due to transient synaptic modifications such as increased release of neurotransmitters.",
+        "Involves gene activation and protein synthesis"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Short-term memory involves transient synaptic modifications like increased neurotransmitter release. It is limited capacity, stored in hippocampal/prefrontal areas initially (not neocortex directly). It requires hours for cortical storage. Gene activation is for long-term memory.",
+      "keyConcept": "Short-term memory: transient synaptic changes, limited capacity (7±2 items), hippocampal. Long-term: structural changes, unlimited."
+    },
+    {
+      "id": "mcns2-ch1-physiology-q100",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 1,
+      "question": "Long-term memory is:",
+      "options": [
+        "Stored immediately after getting the information.",
+        "Brain capacity for it is limited.",
+        "Encoded in hippocampus and stored in the frontal lobe.",
+        "Due to transient synaptic modifications such as increased release of neurotransmitters.",
+        "Involves gene activation and protein synthesis."
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "Long-term memory involves gene activation, protein synthesis, and structural synaptic changes (not transient neurotransmitter release). Capacity is unlimited. Stored in neocortex eventually (not frontal lobe only). Hippocampus is for consolidation, not permanent storage.",
+      "keyConcept": "LTM: gene activation, protein synthesis, new synapses; unlimited capacity; stored in neocortex."
+    },
+    {
+      "id": "mcns2-ch1-physiology-q109",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 1,
+      "question": "Functions of the limbic system do NOT include:",
+      "options": [
+        "Perception and discrimination of olfaction.",
+        "Control of feeding, maternal & sexual behaviors.",
+        "Control of emotions.",
+        "Control of water balance.",
+        "Control of motivations."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Olfactory perception and discrimination is primarily a function of the olfactory bulb and temporal lobe, not the limbic system. The limbic system controls feeding, maternal/sexual behaviors, emotions, water balance, and motivations.",
+      "keyConcept": "Limbic functions: emotions, motivation, feeding, sexual behavior, memory. Olfaction: olfactory bulb/piriform cortex."
+    },
+    {
+      "id": "mcns2-ch1-physiology-q137",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 2,
+      "question": "What factors can modify sexual behavior?",
+      "options": [
+        "Prefrontal cortex",
+        "Social factors",
+        "Psychic factors",
+        "All of the above"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Sexual behavior is modified by multiple factors including prefrontal cortex (executive control), social/cultural influences, psychological state, hormones, and olfactory cues acting through the limbic system.",
+      "keyConcept": "Multifactorial control of sexual behavior"
+    },
+    {
+      "id": "mcns2-ch6-physiology-q2",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 1,
+      "question": "Lesion in frontal lobe speech center produces:",
+      "options": [
+        "Speech muscle paralysis.",
+        "Inability to select appropriate words.",
+        "Inability to process visual languages.",
+        "Sensory aphasia.",
+        "Expressive defect in speech."
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "Lesion in Broca's area (frontal lobe speech center) produces expressive aphasia - difficulty producing speech despite understanding. The patient knows what they want to say but cannot articulate. Sensory aphasia (Wernicke's) affects comprehension; motor aphasia affects speech production.",
+      "keyConcept": "Broca's area lesion: expressive (motor) aphasia - non-fluent, effortful speech with preserved comprehension."
+    },
+    {
+      "id": "mcns2-ch6-physiology-q3",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 1,
+      "question": "The primary role of amygdala in memory is:",
+      "options": [
+        "Storage of semantic memory.",
+        "Consolidation of memory.",
+        "Operation of short-term memory.",
+        "Processing and remembering the emotional component of memories.",
+        "Initiation of synaptic changes needed for memory storage."
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "The amygdala processes the emotional significance of memories (fear conditioning, emotional tagging) but does not store semantic memory, initiate synaptic changes, or handle short-term memory operation. The hippocampus handles consolidation and storage.",
+      "keyConcept": "Amygdala: emotional component of memory (fear, emotional tagging). Hippocampus: consolidation and declarative memory."
+    },
+    {
+      "id": "mcns2-ch6-physiology-q10",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 1,
+      "question": "Anomic aphasia is mostly due to lesion near which of following areas?",
+      "options": [
+        "Angular gyrus",
+        "Arcuate fasiculus",
+        "Broca's area",
+        "Wernicke's area",
+        "Exner's area"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Anomic aphasia (word-finding difficulty) commonly results from lesions near the angular gyrus, disrupting lexical retrieval while preserving other language functions.",
+      "keyConcept": "Anomic aphasia: angular gyrus lesion."
+    },
+    {
+      "id": "mcns2-ch1-physiology-q96",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 1,
+      "question": "Regarding dysarthria, all of the following are true EXCEPT:",
+      "options": [
+        "It is a speech abnormality due to defect in articulation.",
+        "It occurs in UMNL & LMNL affecting speech muscles.",
+        "Is of slow monotonous type in Parkinsonism.",
+        "Is of spastic type due to lesion in Wernicke’s area.",
+        "Is of ataxic staccato type in neocerebellar syndrome"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Dysarthria due to Wernicke's area lesion would cause receptive aphasia, not dysarthria. Wernicke's area controls language comprehension. Dysarthria is a motor speech disorder affecting articulation due to UMN/LMN lesions to speech muscles, not a cortical language area lesion.",
+      "keyConcept": "Dysarthria = motor speech disorder (articulation); Wernicke's area = receptive aphasia (comprehension)."
+    },
+    {
+      "id": "mcns2-ch1-physiology-q149",
+      "subject": "physiology",
+      "subjectName": "Physiology",
+      "lecture": 1,
+      "question": "Which sentence is NOT true regarding consolidation of memory?",
+      "options": [
+        "It is the conversion of short-term memory to a long-term one.",
+        "It is completed in 5 minutes.",
+        "It represents the time needed for the structural and functional synaptic changes to take place.",
+        "It occurs in neocortex.",
+        "It increases and fastens by focusing and rehearsal."
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "Memory consolidation takes hours to days, not minutes. It involves structural and functional synaptic changes in the hippocampus initially, then neocortical storage. Focused attention and rehearsal enhance consolidation efficiency.",
+      "keyConcept": "Consolidation is a gradual process requiring hours to days for stable long-term memory formation."
+    }
+  ]
+}

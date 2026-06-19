@@ -1,0 +1,1093 @@
+{
+  "chapter": 9,
+  "chapterTitle": "Neurodegenerative & Demyelinating Diseases, Trauma, Vascular Disorders & Tumors",
+  "chapterSubtitle": "",
+  "totalQuestions": 63,
+  "questions": [
+    {
+      "id": "mcns2-ch10-pathology-q7",
+      "subject": "clinical",
+      "subjectName": "Clinical",
+      "lecture": 1,
+      "question": "What is the clinical course of Multiple Sclerosis?",
+      "options": [
+        "Relapsing and remitting episodes of neurologic impairment with gradual accumulation of deficits over time.",
+        "Progressive worsening from onset.",
+        "Complete recovery after initial episode.",
+        "Static condition with no progression."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Multiple sclerosis typically follows a relapsing-remitting course: episodes of neurological dysfunction (relapses) followed by partial or complete recovery (remissions). Over time, deficits accumulate. Option A is CORRECT. Primary progressive MS (B) occurs in ~10-15% but the classic course is relapsing-remitting. Complete recovery (C) doesn't occur - there's typically residual deficit. The answer is A. Most patients eventually transition to secondary progressive MS.",
+      "keyConcept": "MS follows a relapsing-remitting course with accumulated deficits over time - distinguishing it from other conditions."
+    },
+    {
+      "id": "mcns2-ch10-pathology-q22",
+      "subject": "pathology",
+      "subjectName": "Pathology",
+      "lecture": 1,
+      "question": "What are the key microscopic features of pilocytic astrocytomas?",
+      "options": [
+        "Low to moderate cellularity often with a biphasic pattern",
+        "High cellularity with marked nuclear atypia",
+        "Presence of Rosenthal fibers and eosinophilic granular bodies",
+        "Presence of endothelial proliferation"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Pilocytic astrocytomas show: biphasic pattern with Rosenthal fibers (eosinophilic, corkscrew fibers) and compact areas alternating with loose, microcystic areas. There are also eosinophilic granular bodies.选项A正确 - Rosenthal纤维和嗜酸性颗粒体是特征. The answer is A. These features distinguish pilocytic astrocytoma from diffuse astrocytoma. Mitotic activity and necrosis are absent or minimal.",
+      "keyConcept": "Pilocytic astrocytoma shows Rosenthal fibers and eosinophilic granular bodies - pathognomonic histological features."
+    },
+    {
+      "id": "mcns2-ch10-pathology-q21",
+      "subject": "pathology",
+      "subjectName": "Pathology",
+      "lecture": 1,
+      "question": "What is the gross appearance of pilocytic astrocytomas?",
+      "options": [
+        "Often cystic, with a mural nodule in the wall of the cyst",
+        "Solid and well-circumscribed",
+        "Highly vascular with necrosis",
+        "Mucinous with myxoid stroma"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Pilocytic astrocytomas have a characteristic gross appearance: well-circumscribed, often cystic with a mural nodule. The cyst contains yellow fluid; the solid portion may be variegated. They are demarcated from surrounding brain.选项A正确. The answer is A. This well-defined border facilitates surgical resection.",
+      "keyConcept": "Pilocytic astrocytomas appear as well-circumscribed, often cystic tumors with mural nodule - distinct from diffuse gliomas."
+    },
+    {
+      "id": "mcns2-ch1-pathology-q3",
+      "subject": "pathology",
+      "subjectName": "Pathology",
+      "lecture": 1,
+      "question": "The following tumor shows whorly pattern of growth:",
+      "options": [
+        "Astrocytoma",
+        "Oligodendroglioma",
+        "Ependymoma",
+        "Meningioma"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Meningioma characteristically shows a whorled pattern of growth (concentric whorls of spindle cells around blood vessels). This histological appearance is distinctive for meningioma. Astrocytoma shows diffuse infiltration with astrocytic cells; oligodendroglioma shows 'fried egg' appearance with clear cytoplasm; ependymoma shows perivascular pseudorosettes and true rosettes. The whorled pattern in meningioma may contain psammoma bodies (calcified concentric laminated structures). Meningiomas arise from arachnoid cap cells and are usually benign (WHO grade I).",
+      "keyConcept": "Meningioma's characteristic whorled growth pattern distinguishes it from other brain tumors."
+    },
+    {
+      "id": "mcns2-ch10-pathology-q17",
+      "subject": "pathology",
+      "subjectName": "Pathology",
+      "lecture": 1,
+      "question": "What are the key microscopic features of oligodendrogliomas WHO grade II?",
+      "options": [
+        "Sheets of regular cells with rounded nuclei containing finely granular rounded chromatin surrounded by a clear halo of cytoplasm and anastomosing capillaries",
+        "Highly cellular with marked nuclear atypia",
+        "Presence of Rosenthal fibers",
+        "Presence of eosinophilic granular bodies"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Oligodendroglioma WHO grade II shows: sheets of regular cells with rounded nuclei containing finely granular rounded chromatin ('fried egg' appearance), surrounded by clear halo (perinuclear halo), and characteristic 'chicken-wire' or anastomosing capillary network. Option A is CORRECT. Highly cellular with marked nuclear atypia (B) suggests higher grade (anaplastic). Rosenthal fibers (C) and eosinophilic granular bodies (D) are seen in pilocytic astrocytoma. The answer is A. The 'fried egg' cells and capillary network are classic histological features.",
+      "keyConcept": "Oligodendrogliomas show 'fried egg' cells with perinuclear halos and 'chicken-wire' capillary network."
+    },
+    {
+      "id": "mcns2-ch1-histology-q72",
+      "subject": "pathology",
+      "subjectName": "Pathology",
+      "lecture": 2,
+      "question": "A female 50-year-old presented with brain tumor with focal erosion of the skull bones. The tumor was excised and examined histologically. It consisted of spindle-shaped & syncytial cells arranged in a whorly pattern. The most possible diagnosis is:",
+      "options": [
+        "Astrocytoma.",
+        "Ependymoma.",
+        "Meningioma.",
+        "Glioblastoma multiforme.",
+        "Schwannoma."
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Meningiomas show spindle-shaped cells arranged in whorled patterns, sometimes with psammoma bodies. They arise from arachnoid cap cells and can erode skull bone.",
+      "keyConcept": "Meningioma: spindle cells in whorled pattern, can erode skull bone"
+    },
+    {
+      "id": "mcns2-ch1-histology-q76",
+      "subject": "pathology",
+      "subjectName": "Pathology",
+      "lecture": 2,
+      "question": "The following histological picture is not characteristic of Glioblastoma multiforme:",
+      "options": [
+        "Highly anaplastic tumor cells.",
+        "Papillary formation.",
+        "Necrosis.",
+        "Tumor giant cells.",
+        "Vascular proliferation."
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "Papillary formation is NOT characteristic of glioblastoma multiforme. GBM shows highly anaplastic cells, necrosis, tumor giant cells, and vascular proliferation. Papillary architecture is seen in papillary ependymomas or papillary meningiomas.",
+      "keyConcept": "Papillary formation is NOT characteristic of glioblastoma - EXCEPTION"
+    },
+    {
+      "id": "mcns2-ch1-histology-q78",
+      "subject": "pathology",
+      "subjectName": "Pathology",
+      "lecture": 2,
+      "question": "Which of the following tumors is malignant:",
+      "options": [
+        "Meningioma.",
+        "Glioblastoma multiforme.",
+        "Schwannoma.",
+        "Neurofibroma."
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "Glioblastoma multiforme is a malignant brain tumor (WHO grade IV). Meningiomas and schwannomas are usually benign; neurofibromas are typically benign.",
+      "keyConcept": "Glioblastoma multiforme is the malignant tumor among the options"
+    },
+    {
+      "id": "mcns2-ch10-histology-q6",
+      "subject": "pathology",
+      "subjectName": "Pathology",
+      "lecture": 2,
+      "question": "The following is not a type of glioma:",
+      "options": [
+        "Ganglioneuroma.",
+        "Astrocytoma.",
+        "Ependymoma.",
+        "Glioblastoma."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Ganglioneuroma is a benign tumor of mature neurons (not a glioma). Astrocytomas, ependymomas, and glioblastomas are all gliomas (tumors of glial cells).",
+      "keyConcept": "Ganglioneuroma is NOT a glioma (it's a neuronal tumor) - EXCEPTION"
+    },
+    {
+      "id": "mcns2-ch1-histology-q70",
+      "subject": "pathology",
+      "subjectName": "Pathology",
+      "lecture": 2,
+      "question": "The following tumor is always benign:",
+      "options": [
+        "Pilocytic astrocytoma.",
+        "Glioblastoma multiforme.",
+        "Ependymoma.",
+        "Medulloblastoma.",
+        "Meningioma."
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "Meningiomas are benign tumors derived from arachnoid cap cells. Pilocytic astrocytoma can occasionally be aggressive; ependymomas and medulloblastomas can be malignant. Meningiomas are almost always benign.",
+      "keyConcept": "Meningioma is the only tumor that is always benign"
+    },
+    {
+      "id": "mcns2-ch1-pathology-q14",
+      "subject": "pathology",
+      "subjectName": "Pathology",
+      "lecture": 1,
+      "question": "What is diffuse axonal injury? And what is its common locations?",
+      "options": [
+        "Injury to white matter with axonal swelling due to acceleration and deceleration",
+        "Commonly occurring in the corpus callosum, periventricular white matter, and hippocampus",
+        "Both A and B",
+        "None of the above"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Diffuse axonal injury (DAI) results from acceleration-deceleration forces causing shearing of axons in white matter. Classic locations: corpus callosum (most common), periventricular white matter, and hippocampus. This is a severe form of traumatic brain injury. Option C 'Both A and B' is correct. DAI is often associated with severe disability and coma. The answer is C. MRI better detects DAI lesions than CT.",
+      "keyConcept": "Diffuse axonal injury occurs in white matter at corpus callosum and periventricular regions due to acceleration-deceleration."
+    },
+    {
+      "id": "mcns2-ch10-pathology-q11",
+      "subject": "pathology",
+      "subjectName": "Pathology",
+      "lecture": 1,
+      "question": "What is the location and symptoms of a subdural hematoma?",
+      "options": [
+        "Between the dura and arachnoid",
+        "Symptoms include slow venous bleeding with delayed onset of headache and confusion.",
+        "Both A and B",
+        "None of the above"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Subdural hematoma is located between dura and arachnoid (A). Symptoms include slow venous bleeding with delayed onset of headache, confusion, and altered consciousness (B). This differs from arterial epidural hematoma which presents acutely. Option C 'Both A and B' is correct. Acute subdural hematoma presents within 72 hours; chronic subdural may present weeks after injury. The answer is C. Subdural hematoma crosses suture lines unlike epidural.",
+      "keyConcept": "Subdural hematoma is venous bleeding between dura and arachnoid with delayed, progressive symptoms."
+    },
+    {
+      "id": "mcns2-ch1-biochem-q149",
+      "subject": "pathology",
+      "subjectName": "Pathology",
+      "lecture": 1,
+      "question": "Which of the following is an absolute requirement for the brain at all times?",
+      "options": [
+        "Glucose and oxygen.",
+        "Glucose and ketone bodies.",
+        "Ketone bodies and oxygen.",
+        "Glucose and fatty acids."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "The brain absolutely requires glucose and oxygen at all times; it cannot use fatty acids as an energy source and depends almost exclusively on glucose oxidation for ATP production.",
+      "keyConcept": "Brain absolute glucose requirement"
+    },
+    {
+      "id": "mcns2-ch10-pathology-q1",
+      "subject": "pathology",
+      "subjectName": "Pathology",
+      "lecture": 1,
+      "question": "Subarachnoid hemorrhage is due to:",
+      "options": [
+        "Trauma of meningeal artery",
+        "Trauma of cortical veins",
+        "Rupture of cerebral aneurysms",
+        "Sudden rise of blood pressure"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Subarachnoid hemorrhage (SAH) most commonly results from rupture of congenital berry aneurysms at the Circle of Willis. These aneurysms form at arterial bifurcation points due to congenital weakness of the media layer. When they rupture, blood enters the subarachnoid space. Option A (trauma to meningeal artery) causes epidural hematoma, not SAH. Option B (cortical veins) causes subdural hematoma. Option D (sudden BP rise) may contribute to rupture but is not the primary cause. Ruptured aneurysms account for ~85% of non-traumatic SAH, making Option C correct.",
+      "keyConcept": "Subarachnoid hemorrhage is most commonly caused by rupture of congenital berry aneurysms at the Circle of Willis."
+    },
+    {
+      "id": "mcns2-ch6-histology-q10",
+      "subject": "pathology",
+      "subjectName": "Pathology",
+      "lecture": 2,
+      "question": "A 50-year-old man has a 3cm diameter left frontal lobe mass with areas of calcification. Microscopically, sheets of regular cells with spherical nuclei surrounded by clear halo of cytoplasm are seen. Which of the following diagnosis is most likely to be made on microscopic examination of this mass?",
+      "options": [
+        "Thrombosed berry aneurysm.",
+        "Oligodendroglioma.",
+        "Meningioma.",
+        "Schwannoma."
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "Oligodendrogliomas have characteristic 'fried egg' cells (spherical nuclei with clear halo cytoplasm), often calcified, in the frontal lobe. They arise from oligodendrocytes and are slow-growing.",
+      "keyConcept": "Oligodendroglioma: 'fried egg' cells with clear halo, calcifications, frontal lobe"
+    },
+    {
+      "id": "mcns2-ch1-physiology-q174",
+      "subject": "pathology",
+      "subjectName": "Pathology",
+      "lecture": 3,
+      "question": "Which is a cause of extracranial headache?",
+      "options": [
+        "Bone inflammation",
+        "Meningeal irritation",
+        "Decreased cerebrospinal fluid pressure",
+        "Otitis media",
+        "Subarachnoid hemorrhage"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Temporomandibular joint dysfunction is a cause of extracranial headache. Intracranial causes include meningitis, tumor, or vascular events.",
+      "keyConcept": "TMJ dysfunction and muscle tension are common extracranial headache causes originating from pericranial structures."
+    },
+    {
+      "id": "mcns2-ch8-anatomy-q55",
+      "subject": "pathology",
+      "subjectName": "Pathology",
+      "lecture": 1,
+      "question": "A 32‑year‑old woman has difficulty writing, right arm weakness, and reduced light touch on the left leg. CSF shows elevated IgG, mononuclear cells, and oligoclonal bands. Which pathologic finding is most likely?",
+      "options": [
+        "Lewy bodies in substantia nigra",
+        "Perivascular lymphocytes with demyelinated axons in white matter",
+        "Neurofibrillary tangles and neuritic plaques",
+        "Multinucleated cells in grey and white matter",
+        "Atrophy of caudate and putamen"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "Multiple sclerosis shows perivascular lymphocytic cuffing with demyelinated axons in white matter and oligoclonal IgG bands in CSF.",
+      "keyConcept": "Multiple sclerosis pathology"
+    },
+    {
+      "id": "mcns2-ch1-pathology-q26",
+      "subject": "pathology",
+      "subjectName": "Pathology",
+      "lecture": 1,
+      "question": "Describe the gross pathology of Ependymomas.",
+      "options": [
+        "Ependymomas are well-circumscribed tumors that are soft and spongy",
+        "Ependymomas are highly vascular with necrosis",
+        "Ependymomas are mucinous with myxoid stroma",
+        "Ependymomas are often cystic with a mural nodule"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Ependymomas appear as: well-demarcated, grayish-red masses that may be solid or cystic. They may have areas of hemorrhage and necrosis. Intracranial ependymomas often fill the ventricle; spinal ependymomas are intramedullary. The answer is A. The well-circumscribed nature allows for surgical resection.",
+      "keyConcept": "Ependymomas are well-demarcated masses - intracranial tumors fill ventricles, spinal tumors are intramedullary."
+    },
+    {
+      "id": "mcns2-ch10-pathology-q10",
+      "subject": "pathology",
+      "subjectName": "Pathology",
+      "lecture": 1,
+      "question": "What is the location and symptoms of an epidural hematoma?",
+      "options": [
+        "Between the skull and dura",
+        "Symptoms include lucid interval before loss of consciousness and possible transtentorial herniation.",
+        "Both A and B",
+        "None of the above"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Epidural hematoma is located between skull and dura (A). Classic presentation: lucid interval (period of consciousness after trauma) followed by rapid neurological deterioration and possible transtentorial herniation (B). This is a neurosurgical emergency. Option C 'Both A and B' is correct. The lucid interval occurs as blood accumulates, raising intracranial pressure. The answer is C. Mortality is high without surgical evacuation.",
+      "keyConcept": "Epidural hematoma presents with lucid interval followed by rapid deterioration - a neurosurgical emergency."
+    },
+    {
+      "id": "mcns2-ch5-pathology-q1",
+      "subject": "pathology",
+      "subjectName": "Pathology",
+      "lecture": 2,
+      "question": "A 58-year-old hypertensive patient presents with sudden onset of hemiplegia followed by symptoms of increased intracranial tension (headache & vomiting). A CT scan shows extensive intracerebral hemorrhage in the region of basal ganglia. The most probable diagnosis is:",
+      "options": [
+        "Ruptured arteriovenous malformation.",
+        "Ruptured congenital berry aneurysm.",
+        "Ruptured multiple microaneurysms (Charcot-Bouchard microaneurysms).",
+        "Thrombotic occlusion of"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Charcot-Bouchard microaneurysms are small aneurysms that form on small penetrating arteries in hypertensive patients, most commonly affecting the basal ganglia (lenticulostriate arteries) and causing hypertensive intracerebral hemorrhage.",
+      "keyConcept": "Hypertensive intracerebral hemorrhage: Charcot-Bouchard microaneurysms in basal ganglia"
+    },
+    {
+      "id": "mcns2-ch1-pathology-q2",
+      "subject": "pathology",
+      "subjectName": "Pathology",
+      "lecture": 1,
+      "question": "Which of the following aneurysms can affect the cerebral vessels:",
+      "options": [
+        "Mycotic aneurysms",
+        "Atherosclerotic aneurysms",
+        "Congenital aneurysms",
+        "All of the above"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Cerebral aneurysms can be of multiple types: 1) Congenital/berry aneurysms - most common, form at arterial bifurcations due to congenital media weakness; 2) Atherosclerotic aneurysms - result from atherosclerotic weakening of vessel wall, usually fusiform; 3) Mycotic aneurysms - due to septic emboli from bacterial endocarditis weakening vessel wall (rare); 4) Traumatic aneurysms - false aneurysms from head trauma. All types can affect cerebral vessels. Option D (All of the above) is correct. The most common are congenital berry aneurysms at the Circle of Willis.",
+      "keyConcept": "Cerebral aneurysms have multiple etiologies including congenital, atherosclerotic, and mycotic types."
+    },
+    {
+      "id": "mcns2-ch1-pathology-q12",
+      "subject": "pathology",
+      "subjectName": "Pathology",
+      "lecture": 1,
+      "question": "What is the clinical syndrome of altered mental status secondary to head injury?",
+      "options": [
+        "Concussion",
+        "Contusion",
+        "Diffuse axonal injury",
+        "Epidural hematoma"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Concussion is the clinical syndrome of altered mental status following head injury. It involves transient neurological dysfunction without structural damage. Contusion (B) is direct parenchymal injury. Diffuse axonal injury (C) involves shearing of axons. Epidural hematoma (D) is bleeding between skull and dura. The answer is A - concussion is the classic mild TBI with altered mental status, often with loss of consciousness, confusion, and amnesia.",
+      "keyConcept": "Concussion is transient altered mental status from head trauma without structural brain damage."
+    },
+    {
+      "id": "mcns2-ch1-pathology-q15",
+      "subject": "pathology",
+      "subjectName": "Pathology",
+      "lecture": 1,
+      "question": "What is the condition called when a patient experiences a lucid interval before losing consciousness?",
+      "options": [
+        "“Talk and die” syndrome",
+        "Delayed herniation",
+        "Secondary brain injury",
+        "Cerebral edema"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "'Talk and die' syndrome refers to the classic epidural hematoma presentation where patients talk after injury, then deteriorate as the hematoma expands. This reflects the lucid interval. Option A is CORRECT. 'Talk and die' describes the sequence: initial consciousness (talking), followed by rapid neurological decline from expanding hematoma and impending herniation. The answer is A. This distinguishes epidural from subdural hematoma which typically presents without lucid interval.",
+      "keyConcept": "'Talk and die' syndrome describes the lucid interval in epidural hematoma before rapid deterioration."
+    },
+    {
+      "id": "mcns2-ch1-pathology-q16",
+      "subject": "pathology",
+      "subjectName": "Pathology",
+      "lecture": 1,
+      "question": "What is the most common cause of cerebral infarction?",
+      "options": [
+        "Arterial occlusion of the cerebral arteries by either thrombi or emboli",
+        "Venous occlusion",
+        "Cerebral vasculitis",
+        "Moyamoya disease"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "The most common cause of cerebral infarction is arterial occlusion from thrombi or emboli. Thrombosis typically occurs at atherosclerotic plaques in large arteries; emboli usually arise from carotid plaque, cardiac sources (atrial fibrillation, valve vegetations), or aortic arch. Option A is CORRECT. Venous occlusion (B) is less common. Cerebral vasculitis (C) and Moyamoya (D) are uncommon causes. The answer is A. Cardioembolic and large vessel atherosclerotic strokes are most common.",
+      "keyConcept": "Arterial thrombi/emboli causing large vessel occlusion are the most common cause of cerebral infarction."
+    },
+    {
+      "id": "mcns2-ch1-pathology-q17",
+      "subject": "pathology",
+      "subjectName": "Pathology",
+      "lecture": 1,
+      "question": "What causes lacunar infarcts?",
+      "options": [
+        "Occlusion of penetrating branches of cerebral arteries",
+        "Occlusion of large cerebral arteries",
+        "Vasculitis",
+        "Emboli"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Lacunar infarcts are caused by occlusion of penetrating branches of cerebral arteries (lenticulostriate arteries, etc.). Small vessel disease from lipohyalinosis and fibrinoid necrosis leads to these occlusions. Option A is CORRECT. Large artery occlusion (B) causes larger cortical strokes. Vasculitis (C) and emboli (D) cause different stroke types. The answer is A. Lacunes are associated with chronic hypertension.",
+      "keyConcept": "Lacunar infarcts result from small penetrating artery occlusion due to lipohyalinosis, commonly from hypertension."
+    },
+    {
+      "id": "mcns2-ch1-pathology-q18",
+      "subject": "pathology",
+      "subjectName": "Pathology",
+      "lecture": 1,
+      "question": "What is the most common cause of thrombotic occlusion of the carotid or cerebral arteries?",
+      "options": [
+        "Atherosclerosis",
+        "Moyamoya disease",
+        "Vasculitis",
+        "Fibromuscular dysplasia"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Atherosclerosis is the most common cause of thrombotic occlusion of carotid/cerebral arteries. Atherosclerotic plaques narrow arteries, promote thrombus formation, and can cause artery-to-artery embolism. Option A is CORRECT. Moyamoya disease (B), vasculitis (C), and fibromuscular dysplasia (D) are uncommon causes. The answer is A. Atherosclerosis risk factors include hypertension, diabetes, smoking, hyperlipidemia.",
+      "keyConcept": "Atherosclerosis is the leading cause of carotid/cerebral artery thrombosis - modifiable risk factors are key."
+    },
+    {
+      "id": "mcns2-ch1-pathology-q30",
+      "subject": "pathology",
+      "subjectName": "Pathology",
+      "lecture": 2,
+      "question": "Myotic cerebral aneurysms are due to:",
+      "options": [
+        "Congenital weakness of the wall of cerebral vessels.",
+        "Septic emboli from subacute bacterial endocarditis.",
+        "Atherosclerosis of the cerebral vessels.",
+        "Increased intracranial tension."
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "Mycotic (septic) aneurysms result from septic emboli lodging in cerebral vessels, typically from subacute bacterial endocarditis. The emboli cause arterial wall weakening and aneurysm formation.",
+      "keyConcept": "Mycotic aneurysms from septic emboli of subacute bacterial endocarditis"
+    },
+    {
+      "id": "mcns2-ch10-pathology-q12",
+      "subject": "pathology",
+      "subjectName": "Pathology",
+      "lecture": 1,
+      "question": "Which vessel is most commonly involved in an epidural hematoma?",
+      "options": [
+        "Middle meningeal artery",
+        "Anterior cerebral artery",
+        "Posterior cerebral artery",
+        "Basilar artery"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "The middle meningeal artery (branch of maxillary artery) is most commonly involved in epidural hematoma, usually from temporal bone fracture. It courses through the middle cranial fossa. The answer is A. Anterior cerebral artery (B), posterior cerebral artery (C), and basilar artery (D) are not typically involved in epidural hematoma. The middle meningeal artery injury causes rapid arterial bleeding and quick progression.",
+      "keyConcept": "Middle meningeal artery injury causes epidural hematoma - the most common arterial source in head trauma."
+    },
+    {
+      "id": "mcns2-ch10-pathology-q14",
+      "subject": "pathology",
+      "subjectName": "Pathology",
+      "lecture": 1,
+      "question": "What is the appearance of an epidural hematoma on a head CT scan?",
+      "options": [
+        "Biconvex-shaped hemorrhage that does not cross suture lines",
+        "Crescent-shaped hemorrhage that crosses suture lines",
+        "Circular hemorrhage that does not cross suture lines",
+        "Irregular hemorrhage that crosses suture lines"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Epidural hematoma appears as a biconvex (lens-shaped or lens-shaped) hyperdensity on CT that does NOT cross suture lines. This is because it's arterial bleeding that stays localized between the skull and dural attachments at sutures. Option A is CORRECT. Crescent-shaped hemorrhage crossing suture lines is subdural hematoma (B). The answer is A. The lens shape reflects the collection being bounded by suture lines.",
+      "keyConcept": "Epidural hematoma appears as biconvex (lens-shaped) collection that does not cross suture lines on CT."
+    },
+    {
+      "id": "mcns2-ch1-pathology-q4",
+      "subject": "pathology",
+      "subjectName": "Pathology",
+      "lecture": 1,
+      "question": "What are neurodegenerative diseases?",
+      "options": [
+        "Disorders characterized by the cellular degeneration of subsets of neurons that are typically related by function, rather than physical location in the brain.",
+        "Disorders characterized by the cellular degeneration of subsets of neurons that are typically related by physical location in the brain.",
+        "Disorders characterized by the cellular degeneration of subsets of neurons that are typically related by function and physical location in the brain.",
+        "Disorders characterized by the cellular degeneration of all neurons."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Neurodegenerative diseases are characterized by cellular degeneration of subsets of neurons that are typically related by FUNCTION, not necessarily physical location. Example: Parkinson's affects dopaminergic neurons in substantia nigra that form a functional circuit. Option A correctly states 'related by function, rather than physical location' - this is the definition. Option B says 'physical location' only - not accurate. Option C says 'function and physical location' - not precise. Option D says 'all neurons' - incorrect (neurodegenerative diseases are selective). The answer is A. Examples: Alzheimer's (cholinergic neurons), Parkinson's (dopaminergic neurons), Huntington's (GABAergic neurons) - all functionally related.",
+      "keyConcept": "Neurodegenerative diseases selectively destroy neurons that share functional characteristics, not necessarily physical proximity."
+    },
+    {
+      "id": "mcns2-ch1-pathology-q5",
+      "subject": "pathology",
+      "subjectName": "Pathology",
+      "lecture": 1,
+      "question": "How are neurodegenerative diseases classified?",
+      "options": [
+        "Clinical presentation",
+        "Type of protein",
+        "Pathological processes",
+        "Genetic abnormalities",
+        "All of the above"
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "Neurodegenerative diseases are classified by multiple methods including clinical presentation, protein type, pathological processes, and genetic abnormalities. Option E (likely meaning all of the above or a combination) is probably correct. A) Clinical presentation - yes (motor, cognitive, psychiatric); B) Type of protein - yes (alpha-synuclein in Parkinson's, tau in Alzheimer's, huntingtin in Huntington's); C) Pathological processes - yes (protein misfolding, aggregation); D) Genetic abnormalities - yes (APP, presenilin mutations in familial AD; LRRK2 in PD). The answer is E - all these classification schemes are used. Modern classification combines clinical, pathological, and genetic features.",
+      "keyConcept": "Neurodegenerative diseases are classified by clinical presentation, protein type (synuclein, tau, huntingtin), pathology, and genetics."
+    },
+    {
+      "id": "mcns2-ch10-pathology-q8",
+      "subject": "pathology",
+      "subjectName": "Pathology",
+      "lecture": 1,
+      "question": "What imaging studies are mandatory for Multiple Sclerosis diagnosis?",
+      "options": [
+        "MRI brain",
+        "CT scan",
+        "PET scan",
+        "Ultrasound"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "MRI of the brain is MANDATORY for MS diagnosis - it shows plaques as hyperintense lesions on T2/FLAIR images. CT scan (B) is not sensitive for MS. PET (C) and ultrasound (D) are not primary diagnostic tools. MRI demonstrates dissemination in space (multiple lesions) and time (gadolinium enhancement of active lesions). The answer is A. McDonald criteria require MRI evidence of CNS lesions.",
+      "keyConcept": "MRI brain is essential for MS diagnosis, demonstrating white matter lesions that fulfill dissemination in space and time."
+    },
+    {
+      "id": "mcns2-ch1-pathology-q6",
+      "subject": "pathology",
+      "subjectName": "Pathology",
+      "lecture": 1,
+      "question": "What is dementia?",
+      "options": [
+        "The development of memory impairment and other cognitive deficits severe enough to decrease the affected person's capacity to function at the previous level despite a normal level of consciousness.",
+        "The development of memory impairment and other cognitive deficits severe enough to decrease the affected person's capacity to function at the previous level with an altered level of consciousness.",
+        "The development of memory impairment and other cognitive deficits severe enough to increase the affected person's capacity to function at the previous level despite a normal level of consciousness.",
+        "The development of memory impairment and other cognitive deficits severe enough to decrease the affected person's capacity to function at the previous level with an altered level of consciousness and hallucinations."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Dementia is defined as the development of memory impairment and other cognitive deficits severe enough to DECREASE the affected person's capacity to function at the previous level, despite a NORMAL level of consciousness. Key points: 1) Memory AND other cognitive deficits; 2) Functional impairment (decreased capacity); 3) NORMAL consciousness (distinguishes from delirium). Option A matches this definition exactly. Option B adds 'altered level of consciousness' - that's delirium, not dementia. Option C says 'increase capacity' - wrong. Option D adds 'hallucinations' and 'altered consciousness' - not the core definition. The answer is A. Delirium differs from dementia by altered consciousness and acute onset.",
+      "keyConcept": "Dementia is cognitive decline with functional impairment but NORMAL consciousness - distinguishing it from delirium."
+    },
+    {
+      "id": "mcns2-ch1-pathology-q7",
+      "subject": "pathology",
+      "subjectName": "Pathology",
+      "lecture": 1,
+      "question": "What is the most common cause of dementia in the elderly population?",
+      "options": [
+        "Alzheimer’s Disease (AD)",
+        "Frontotemporal lobe degeneration",
+        "Huntington Chorea",
+        "Parkinson’s Disease"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Alzheimer's Disease is the MOST COMMON cause of dementia in the elderly, accounting for 60-80% of cases. Frontotemporal lobe degeneration (B) is less common and affects younger patients. Huntington Chorea (C) is a genetic disorder causing chorea and dementia. Parkinson's Disease (D) can cause dementia (Parkinson's disease dementia) but AD is more common. The answer is A - Alzheimer's Disease. Risk increases with age; APOE4 allele is a major risk factor.",
+      "keyConcept": "Alzheimer's Disease is the leading cause of dementia in the elderly, characterized by amyloid plaques and neurofibrillary tangles."
+    },
+    {
+      "id": "mcns2-ch10-pathology-q3",
+      "subject": "pathology",
+      "subjectName": "Pathology",
+      "lecture": 1,
+      "question": "What is the crucial event in the pathogenesis of Alzheimer’s Disease (AD)?",
+      "options": [
+        "The accumulation of Beta Amyloid Peptide (Aß) in the brain over time.",
+        "The accumulation of Tau protein in the brain over time.",
+        "The accumulation of Alpha-synuclein in the brain over time.",
+        "The accumulation of Prion protein in the brain over time."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "The crucial event in AD pathogenesis is accumulation of Beta Amyloid Peptide (Aß) in the brain. Aß is derived from APP (amyloid precursor protein) via proteolytic cleavage by beta-secretase and gamma-secretase. Aß 1-42 is particularly prone to aggregation and forms the amyloid plaques. Option A is CORRECT. B) Tau protein accumulation is also important (forms neurofibrillary tangles) but Aß accumulation is considered the initiating/crucial event. C) Alpha-synuclein is seen in Parkinson's disease (Lewy bodies). D) Prion protein is in prion diseases. The answer is A - Aß accumulation is the key initiating event in AD pathogenesis.",
+      "keyConcept": "Beta-amyloid accumulation is the crucial initiating event in Alzheimer's disease, leading to plaque formation and neuronal dysfunction."
+    },
+    {
+      "id": "mcns2-ch10-pathology-q4",
+      "subject": "pathology",
+      "subjectName": "Pathology",
+      "lecture": 1,
+      "question": "What is the role of Amyloid Precursor Protein (APP) in Alzheimer’s Disease (AD)?",
+      "options": [
+        "APP is sequentially cleaved by enzymes to generate Aß.",
+        "APP is sequentially cleaved by enzymes to generate Tau protein.",
+        "APP is sequentially cleaved by enzymes to generate Alpha-synuclein.",
+        "APP is sequentially cleaved by enzymes to generate Prion protein."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "APP (Amyloid Precursor Protein) is sequentially cleaved by enzymes (secretases) to generate Aß peptide. Alpha-secretase cleaves APP first, then beta-secretase (BACE), then gamma-secretase releases Aß. Option A is CORRECT. B) APP generates Aß, not Tau; C) Not alpha-synuclein; D) Not prion protein. The amyloid cascade hypothesis: APP processing → Aß accumulation → plaques → inflammation → tau pathology → neuronal death. The answer is A - APP is cleaved to generate Aß, the main component of amyloid plaques in AD.",
+      "keyConcept": "APP sequential cleavage by secretases generates Aß peptide, the amyloid plaque component in Alzheimer's disease."
+    },
+    {
+      "id": "mcns2-ch10-pathology-q5",
+      "subject": "pathology",
+      "subjectName": "Pathology",
+      "lecture": 1,
+      "question": "What are the gross characteristics of Multiple Sclerosis lesions?",
+      "options": [
+        "Multiple, well-circumscribed",
+        "Gray-tan plaques near the ventricles and in various areas of the CNS.",
+        "Both A and B",
+        "None of the above"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Multiple sclerosis lesions appear as multiple, well-circumscribed gray-tan plaques near ventricles and throughout CNS white matter. These plaques represent areas of demyelination. Option C 'Both A and B' is correct. The lesions are typically periventricular but can occur anywhere in CNS. The answer is C. MS is characterized by disseminated plaques in time and space.",
+      "keyConcept": "MS lesions appear as gray-tan plaques near ventricles - the classic radiological and pathological finding."
+    },
+    {
+      "id": "mcns2-ch10-pathology-q6",
+      "subject": "pathology",
+      "subjectName": "Pathology",
+      "lecture": 1,
+      "question": "What is the microscopic appearance of active Multiple Sclerosis plaques?",
+      "options": [
+        "Evidence of ongoing myelin breakdown with abundant macrophages containing myelin debris.",
+        "Complete loss of myelin with axonal damage.",
+        "Inflammation with lymphocytic infiltration.",
+        "Gliosis with astrocytosis."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Active MS plaques show ongoing myelin breakdown with abundant macrophages containing myelin debris (lipid-laden macrophages). Option A is CORRECT. Complete loss of myelin with axonal damage (B) is more advanced/stable lesions. Inflammation with lymphocytes (C) is present but not the defining feature. Gliosis (D) is the end result. The answer is A. Active plaques have perivascular inflammation and myelin breakdown; chronic plaques show gliosis with few cells.",
+      "keyConcept": "Active MS plaques are characterized by macrophages containing myelin debris - evidence of ongoing demyelination."
+    },
+    {
+      "id": "mcns2-ch6-histology-q11",
+      "subject": "pathology",
+      "subjectName": "Pathology",
+      "lecture": 2,
+      "question": "The biopsy of a ring-enhancing tumor in the left parietal lobe of a 60-year-old patient reveals an astrocytic tumor that displays marked cellular atypia, mitotic activity, areas of pseudopalisading necrosis & multifocal microvascular hyperplasia. The diagnosis is:",
+      "options": [
+        "Astrocytoma grade 1.",
+        "Astrocytoma grade 2.",
+        "Anaplastic astrocytoma.",
+        "Astrocytoma grade 4 (Glioblastoma multiforme).",
+        "Pilocytic astrocytoma."
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Ring-enhancing tumor with pseudopalisading necrosis and microvascular hyperplasia is diagnostic of glioblastoma multiforme (WHO grade IV). These features distinguish it from lower-grade astrocytomas.",
+      "keyConcept": "Pseudopalisading necrosis and microvascular hyperplasia = glioblastoma multiforme (grade IV)"
+    },
+    {
+      "id": "mcns2-ch10-histology-q2",
+      "subject": "pathology",
+      "subjectName": "Pathology",
+      "lecture": 2,
+      "question": "A 65-year-old man develops new onset of seizures & headaches. A CT scan reveals a 6 cm left-sided intracerebral mass. Which of the following is the most likely diagnosis?",
+      "options": [
+        "Meningioma.",
+        "Ependymoma.",
+        "Schwannoma.",
+        "Glioblastoma multiforme.",
+        "Medulloblastoma."
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Glioblastoma multiforme (WHO grade IV) is the most common and aggressive primary brain tumor in adults, presenting with seizures and headache. It is a diffusely infiltrating astrocytic tumor with necrosis and angiogenesis.",
+      "keyConcept": "Glioblastoma multiforme: most common aggressive adult brain tumor, seizures, headache"
+    },
+    {
+      "id": "mcns2-ch5-histology-q11",
+      "subject": "pathology",
+      "subjectName": "Pathology",
+      "lecture": 2,
+      "question": "A 9-year-old girl is evaluated for headache and ataxia over the last 2 months. A CT scan reveals a midline partially cystic cerebellar mass, microscopic examination shows elongated bipolar astrocytes with fibrillar processes and Rosenthal fibers. The diagnosis is:",
+      "options": [
+        "Astrocytoma grade 1.",
+        "Astrocytoma grade 2.",
+        "Anaplastic astrocytoma.",
+        "Astrocytoma grade 4."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Pilocytic astrocytoma (WHO grade I) shows elongated bipolar astrocytes with Rosenthal fibers and fibrillar processes. It is benign, cystic, midline cerebellar tumor in children with good prognosis.",
+      "keyConcept": "Pilocytic astrocytoma: Rosenthal fibers, bipolar astrocytes, cystic cerebellar tumor"
+    },
+    {
+      "id": "mcns2-ch1-pharma-q217",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "What is the mechanism of action of cholinesterase enzyme inhibitors?",
+      "options": [
+        "Inhibits Acetylcholine esterase > increases cholinergic transmission in the brain",
+        "Blocks NMDA receptors",
+        "Increases reuptake of glutamate",
+        "None"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Cholinesterase inhibitors work by blocking acetylcholinesterase, preventing breakdown of acetylcholine. This increases synaptic ACh levels, compensating for cholinergic neuron loss.选项A正确. The answer is A. They don't cure disease but slow symptom progression.",
+      "keyConcept": "Cholinesterase inhibitors increase brain acetylcholine by blocking its breakdown - compensating for cholinergic loss."
+    },
+    {
+      "id": "mcns2-ch1-pharma-q267",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "Excitatory postsynaptic potential can be mediated by which of the following mechanisms?",
+      "options": [
+        "Opening of Cl- channels.",
+        "Opening of K+ channels.",
+        "Opening of Na+ channels.",
+        "Increase K+ conductance.",
+        "Inhibitory intracellular pathway."
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Excitatory postsynaptic potentials (EPSPs) are generated when sodium channels open, allowing Na+ influx that depolarizes the neuron toward threshold for action potential firing.",
+      "keyConcept": "EPSP mediated by opening of Na+ channels."
+    },
+    {
+      "id": "mcns2-ch1-pharma-q276",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "Receptor potential is characterized by which of the following?",
+      "options": [
+        "Obey all or none law.",
+        "Has refractory period.",
+        "Always propagates to action potential.",
+        "Can be blocked by anesthetics.",
+        "Its intensity is increased by increase intensity of stimulation."
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "explanation": "Receptor potentials are graded potentials whose amplitude increases proportionally with stimulus intensity, unlike action potentials which follow the all-or-none law.",
+      "keyConcept": "Receptor potential intensity increases with stimulus intensity (graded, not all-or-none)."
+    },
+    {
+      "id": "mcns2-ch1-pharma-q188",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "The risk of inducing rigidity, tremors & tardive dyskinesia in schizophrenics is highest with:",
+      "options": [
+        "Haloperidol",
+        "Thioridazine",
+        "Clozapine",
+        "Olanzapine"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Haloperidol (typical antipsychotic, high potency) has the HIGHEST risk of inducing rigidity, tremors, and tardive dyskinesia. This is because haloperidol is a potent D2 receptor blocker in the nigrostriatal pathway. Clozapine (C) and olanzapine (D) are atypicals with significantly lower EPS risk. Thioridazine (B) is a low-potency typical with moderate EPS risk. Haloperidol's high D2 affinity leads to severe extrapyramidal side effects, including tardive dyskinesia (late-onset involuntary movements). The answer is A - haloperidol carries the highest risk for these movement disorders.",
+      "keyConcept": "Haloperidol has the highest EPS and tardive dyskinesia risk due to potent D2 blockade in the nigrostriatal pathway."
+    },
+    {
+      "id": "mcns2-ch1-pharma-q218",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "What is the mechanism of action of memantine?",
+      "options": [
+        "Noncompetitive NMDA receptor antagonist and protects neurons from glutamate induced excitotoxicity",
+        "Inhibits Acetylcholine esterase",
+        "Blocks presynaptic voltage gated Na+ channels",
+        "None"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Memantine is an NMDA receptor antagonist that blocks glutamate excitotoxicity. It provides neuroprotection by preventing calcium-mediated neuronal damage.选项A正确. The answer is A. Used in moderate-severe Alzheimer's, often with cholinesterase inhibitor.",
+      "keyConcept": "Memantine blocks NMDA receptors to prevent glutamate excitotoxicity - neuroprotective in Alzheimer's."
+    },
+    {
+      "id": "mcns2-ch1-pharma-q219",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "What is Namzaric?",
+      "options": [
+        "Combination of Memantine ER + Donepezil",
+        "Combination of Rivastigmine + Galantamine",
+        "Combination of Memantine + Rivastigmine",
+        "None"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Namzaric is a combination of donepezil (cholinesterase inhibitor) and memantine (NMDA antagonist) in a single capsule. It simplifies regimen for moderate-severe Alzheimer's.选项A正确. The answer is A. Combination therapy targets both cholinergic and glutamatergic systems.",
+      "keyConcept": "Namzaric combines donepezil + memantine for dual action in moderate-severe Alzheimer's."
+    },
+    {
+      "id": "mcns2-ch1-pharma-q266",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "For cells that communicate by electrical synapses, the message travels between cells via:",
+      "options": [
+        "Ions moving across the synaptic cleft.",
+        "The diffusion of neurotransmitters.",
+        "Gap junctions.",
+        "Active transport across the synaptic cleft.",
+        "Passive transport across the synaptic cleft."
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Electrical synapses transmit signals through gap junctions (connexons) that allow direct ionic current flow between cells, enabling nearly instantaneous bidirectional communication.",
+      "keyConcept": "Electrical synapses use gap junctions for direct ionic current flow between cells."
+    },
+    {
+      "id": "mcns2-ch1-pharma-q273",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "A prolonged output discharge could be obtained from which of the following processing way?",
+      "options": [
+        "Reverberating circuit.",
+        "Presynaptic inhibition.",
+        "Postsynaptic inhibition.",
+        "Lateral inhibition.",
+        "Feed forward inhibition."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "A reverberating circuit allows signals to persist by feedback loops where outputs circle back through interneurons to the original neurons, producing prolonged discharge even after the stimulus ceases.",
+      "keyConcept": "Reverberating circuit produces prolonged output discharge via feedback loops."
+    },
+    {
+      "id": "mcns2-ch1-pharma-q275",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "Which of the following refers to one presynaptic neuron terminating on many postsynaptic neurons?",
+      "options": [
+        "Divergence.",
+        "Convergence.",
+        "Facilitation.",
+        "Occlusion.",
+        "After discharge."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Divergence occurs when one presynaptic neuron branches to terminate on many postsynaptic neurons, allowing amplification and spread of neural signals throughout the nervous system.",
+      "keyConcept": "Divergence: one presynaptic neuron connects to many postsynaptic neurons."
+    },
+    {
+      "id": "mcns2-ch1-pharma-q282",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "The fast pain sensation that accompanies a painful trauma is carried to C.N.S. by fibers that belong to:",
+      "options": [
+        "A-a fibers.",
+        "A-δ fibers.",
+        "A-β fibers.",
+        "C fibers.",
+        "B fibers."
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "Fast pain (first pain) is carried by A-delta fibers (type II), which are thinly myelinated for rapid conduction of sharp, well-localized pain signals.",
+      "keyConcept": "Fast pain: carried by A-delta fibers."
+    },
+    {
+      "id": "mcns2-ch10-pharma-q37",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "Fampridine drug in treatment of Alzheimer’s disease:",
+      "options": [
+        "Blocks Na⁺ channel",
+        "Causes hyperpolarization",
+        "Blocks K⁺ channel",
+        "Decreases neuronal depolarization"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Fampridine (4‑aminopyridine) is a potassium channel blocker used in MS to improve walking; it blocks K+ channels, enhancing nerve conduction in demyelinated axons.",
+      "keyConcept": "Fampridine is a potassium channel blocker that improves conduction in demyelinated axons."
+    },
+    {
+      "id": "mcns2-ch10-pharma-q89",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "All the following are important guidelines in the management of epilepsy EXCEPT:",
+      "options": [
+        "All antiepileptics should be given after meals",
+        "Pregnant females should discontinue the antiepileptic drug",
+        "Gradual withdrawal of therapy to avoid status epilepticus",
+        "Monotherapy is preferred to avoid drug interactions"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "Guidelines for epilepsy management: A) 'All antiepileptics should be given after meals' - FALSE - most can be taken with or without food, and some (like carbamazepine) are better absorbed with food. This is not a standard guideline. B) 'Pregnant females should discontinue' - FALSE - they should continue with lowest effective dose, not abruptly discontinue (risk of status epilepticus). C) 'Gradual withdrawal' - TRUE - abrupt withdrawal can precipitate status epilepticus. D) 'Monotherapy preferred' - TRUE - reduces drug interactions and side effects. The question asks which is NOT true. Both A and B are false, but typically the emphasis is that pregnant women should NOT abruptly discontinue. However, option A is more clearly wrong as it's not a standard guideline. Actually, standard teaching: pregnant women should continue antiepileptics with folic acid supplementation, not discontinue. So B is clearly false. But A is also not a real guideline. Given exam conventions, B is typically the answer in such questions - the guideline is to continue treatment, not discontinue.",
+      "keyConcept": "Pregnant women with epilepsy should NOT discontinue antiepileptics but continue with dose optimization and folic acid."
+    },
+    {
+      "id": "mcns2-ch10-pharma-q99",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "The following is not true about antipsychotics:",
+      "options": [
+        "Control symptoms of schizophrenia without affecting the basic disorder",
+        "Low potency drugs are preferred in elderly & cardiac patients",
+        "Thioridazine may block cardiac conduction & increase QT interval",
+        "They don’t induce dependence"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "Low potency antipsychotics (like chlorpromazine) are actually preferred in elderly and cardiac patients because they have less EPS, not because of cardiac effects. Option B is incorrect. Let me analyze: A) Control symptoms without affecting basic disorder - TRUE (antipsychotics are symptomatic, not curative); C) Thioridazine may block cardiac conduction and increase QT - TRUE; D) They don't induce dependence - TRUE. Option B states 'low potency drugs are preferred in elderly & cardiac patients' - this is actually TRUE (they have better cardiac profile and fewer EPS). Wait, the question asks which is NOT true. Let me reconsider. Actually, thioridazine has significant cardiac effects (QT prolongation), so it's NOT preferred in cardiac patients. But the statement in B is about low potency drugs being preferred, which is true. The NOT TRUE statement might be about the mechanism or effects. Actually, re-reading: Option A says they 'control symptoms without affecting basic disorder' - this IS true. If all A, C, D are true and B is also true, then maybe the answer relates to what 'low potency' means. Perhaps the statement about low potency being preferred in cardiac patients is considered incorrect because these drugs have other issues (orthostatic hypotension, anticholinergic effects). But standard teaching is that low potency antipsychotics ARE preferred in elderly due to lower EPS. I'll assume there's an error or the answer is related to the cardiac effects of thioridazine making it NOT preferred. Actually, looking at this again, maybe A is wrong - antipsychotics DO affect the basic disorder somewhat (especially atypicals). Or perhaps the answer is B if considering that all antipsychotics have various issues. Given typical exam patterns, I'll go with A being the answer if the question is about whether antipsychotics truly don't affect the underlying disorder. But that's a philosophical point. I'll choose B as the answer if the question implies that cardiac patients should avoid low-potency drugs due to orthostatic hypotension. Actually, let me reconsider - thioridazine (low potency) has QT prolongation, making it dangerous in cardiac patients, contradicting B. So B is the wrong statement.",
+      "keyConcept": "Low potency antipsychotics like thioridazine are NOT preferred in cardiac patients due to QT prolongation and other cardiac effects."
+    },
+    {
+      "id": "mcns2-ch10-pharma-q107",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "Which drugs are classified as opioid antidiarrheals?",
+      "options": [
+        "Loperamide",
+        "Diphenoxylate",
+        "Both A and B",
+        "Neither A nor B"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Opioid antidiarrheals include: loperamide (Imodium), diphenoxylate (with atropine as Lomotil), and opium tincture. These act on mu receptors in the myenteric plexus, decreasing motility and secretion.选项C正确. The answer is C. Loperamide does not cross BBB significantly, avoiding CNS effects.",
+      "keyConcept": "Loperamide and diphenoxylate are opioid antidiarrheals - mu receptor agonists in the gut decreasing motility."
+    },
+    {
+      "id": "mcns2-ch10-pharma-q120",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "What is the aim of management for Alzheimer disease?",
+      "options": [
+        "Increase cholinergic activity in the brain",
+        "Reduce excitotoxicity action of overstimulation of NMDA receptors",
+        "Both A and B",
+        "None"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Alzheimer's management aims to: slow cognitive decline, manage behavioral symptoms, improve quality of life, and support caregivers. Options include cholinesterase inhibitors, memantine, and behavioral interventions.选项C正确. The answer is C. There is no cure - treatment is symptomatic.",
+      "keyConcept": "Alzheimer's treatment aims to slow progression and manage symptoms - cholinesterase inhibitors and memantine are mainstays."
+    },
+    {
+      "id": "mcns2-ch10-pharma-q121",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "What are the cholinesterase enzyme inhibitors used in the treatment of Alzheimer disease?",
+      "options": [
+        "Donepezil",
+        "Rivastigmine",
+        "Galantamine",
+        "All of the above"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Cholinesterase inhibitors for Alzheimer's: donepezil (Aricept), rivastigmine (Exelon), galantamine (Razadyne). These increase acetylcholine in the brain.选项D正确. The answer is D. They provide modest symptomatic benefit.",
+      "keyConcept": "Donepezil, rivastigmine, galantamine are cholinesterase inhibitors - modestly effective in Alzheimer's."
+    },
+    {
+      "id": "mcns2-ch10-pharma-q125",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "What receptors do atypical antipsychotics block in addition to D2 receptors?",
+      "options": [
+        "5HT2A receptors",
+        "D1 receptors",
+        "M1 receptors",
+        "None"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "explanation": "Atypical antipsychotics (clozapine, olanzapine, risperidone) block D2 plus serotonin 5-HT2A receptors. This 5-HT2A blockade allows more dopamine in nigrostriatal pathway, reducing EPS.选项A正确. The answer is A. This dual blockade gives atypicals their improved side effect profile.",
+      "keyConcept": "Atypical antipsychotics block both D2 and 5-HT2A receptors - greater dopamine in motor pathways reduces EPS."
+    },
+    {
+      "id": "mcns2-ch10-pharma-q127",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "What are the atypical antipsychotics?",
+      "options": [
+        "Risperidone",
+        "Aripiprazole",
+        "Clozapine",
+        "All of the above"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Atypical antipsychotics include: clozapine, olanzapine, risperidone, quetiapine, ziprasidone, aripiprazole, paliperidone.选项D正确. The answer is D. They have lower EPS risk but metabolic side effects.",
+      "keyConcept": "Clozapine, olanzapine, risperidone are atypicals - lower EPS but weight gain, metabolic syndrome risk."
+    },
+    {
+      "id": "mcns2-ch1-pharma-q92",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "Riluzole is prescribed in Amyotrophic lateral sclerosis to:",
+      "options": [
+        "Decrease onset of dementia",
+        "Decrease confusion and headache",
+        "Decrease need for ventilator",
+        "All of the above"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "explanation": "Riluzole is a glutamate release inhibitor that modestly extends survival and delays ventilator dependence in ALS by reducing excitotoxic neuronal death.",
+      "keyConcept": "Riluzole reduces glutamate‑mediated excitotoxicity to modestly prolong survival and delay ventilation in ALS."
+    },
+    {
+      "id": "mcns2-ch10-pharma-q2",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "The following drug can be used alone in treatment of Parkinson disease",
+      "options": [
+        "L-dopa",
+        "Pramipexole",
+        "Entacapone",
+        "Carbidopa"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "explanation": "Pramipexole can be used alone in treatment of Parkinson disease. Option B is correct. Pramipexole is a D2/D3 dopamine agonist that can be used as monotherapy in early Parkinson's disease. L-dopa is combined with carbidopa/benserazide (not used alone). Entacapone is a COMT inhibitor added to L-dopa. Carbidopa is a peripheral decarboxylase inhibitor that cannot penetrate BBB.",
+      "keyConcept": "D2 agonists like pramipexole can be used as monotherapy in early Parkinson's disease due to their ability to directly stimulate dopamine receptors."
+    },
+    {
+      "id": "mcns2-ch10-pharma-q102",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "The following drug is 1st choice in treatment of psychosis in Parkinson disease:",
+      "options": [
+        "Haloperidol",
+        "Risperidone",
+        "Aripiprazole",
+        "Quetiapine"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "Quetiapine is the preferred antipsychotic for psychosis in Parkinson's disease because it has the lowest EPS risk among antipsychotics and doesn't worsen parkinsonian symptoms. Haloperidol (A) and risperidone (B) can worsen parkinsonism. Aripiprazole (C) may also worsen motor symptoms in some patients. Quetiapine's low D2 affinity and rapid dissociation from D2 receptors results in minimal motor side effects. Pimavanserin is also FDA-approved for Parkinson's psychosis but wasn't listed. The answer is D - quetiapine is the first choice for psychosis in Parkinson's disease.",
+      "keyConcept": "Quetiapine is preferred in Parkinson's disease psychosis due to its minimal extrapyramidal effects and low propensity to worsen motor symptoms."
+    },
+    {
+      "id": "mcns2-ch10-pharma-q122",
+      "subject": "pharma",
+      "subjectName": "Pharma",
+      "lecture": 1,
+      "question": "What is the management approach for Multiple Sclerosis?",
+      "options": [
+        "Treatment of acute episodes (exacerbations) with corticosteroids",
+        "Disease Modifying Drugs (DMDs)",
+        "Symptomatic treatment",
+        "All of the above"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "explanation": "MS management: disease-modifying therapies (interferon-beta, glatiramer, natalizumab, fingolimod) for relapsing forms; symptom management; rehabilitation.选项D正确. The answer is D. No cure - treatment aims to reduce relapses and disability.",
+      "keyConcept": "MS management uses disease-modifying therapies to reduce relapse rate and slow disability progression."
+    }
+  ]
+}

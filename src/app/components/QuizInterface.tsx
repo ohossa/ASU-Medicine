@@ -344,14 +344,14 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
           const selected = value === i;
           const isCorrect = i === q.correctIndex;
 
-          let btnClass = 'group flex w-full items-center gap-3.5 rounded-xl border px-4 py-3.5 text-start transition-all duration-200 ';
+          let btnClass = 'group flex w-full items-center gap-3.5 rounded-xl border px-4 py-3.5 text-start transition-all duration-200 btn-press option-hover ';
           let badgeClass = 'flex h-7 w-7 shrink-0 items-center justify-center rounded-full border text-xs font-semibold transition-colors ';
 
           if (!hasAnswered) {
             btnClass += 'border-gray-200 dark:border-white/[0.07] bg-gray-50/50 dark:bg-white/[0.025] hover:bg-gray-100 dark:hover:bg-white/[0.06] text-gray-800 dark:text-white';
             badgeClass += 'border-gray-300 dark:border-white/15 text-gray-500 dark:text-white/40 bg-gray-100/50 dark:bg-white/[0.03]';
           } else if (isCorrect) {
-            btnClass += 'border-emerald-500/40 bg-emerald-500/10 text-emerald-600 dark:text-emerald-300';
+            btnClass += 'border-emerald-500/40 bg-emerald-500/10 text-emerald-600 dark:text-emerald-300 option-selected';
             badgeClass += 'border-emerald-500/40 text-emerald-600 dark:text-emerald-300 bg-emerald-500/10';
           } else if (selected && !isCorrect) {
             btnClass += 'border-rose-500/40 bg-rose-500/10 text-rose-600 dark:text-rose-300 wrong-shake';
@@ -397,7 +397,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
           const selected = value === val;
           const isCorrect = val === (question.correctIndex === 0);
 
-          let btnClass = 'flex flex-col items-center gap-2 rounded-2xl border py-6 transition-all duration-200 ';
+          let btnClass = 'flex flex-col items-center gap-2 rounded-2xl border py-6 transition-all duration-200 btn-press ';
 
           if (!hasAnswered) {
             btnClass += 'border-gray-200 dark:border-white/[0.07] bg-gray-50/50 dark:bg-white/[0.025] text-gray-700 dark:text-white/60 hover:bg-gray-100 dark:hover:bg-white/[0.06]';
@@ -461,7 +461,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                   }, 150);
                 });
               }}
-              className="px-6 py-2.5 bg-gray-950 dark:bg-white text-white dark:text-black rounded-full text-xs font-bold tracking-wide hover:scale-[0.98] transition-transform hover:bg-gray-900 dark:hover:bg-gray-100"
+              className="px-6 py-2.5 bg-gray-950 dark:bg-white text-white dark:text-black rounded-full text-xs font-bold tracking-wide hover:scale-[0.98] transition-transform hover:bg-gray-900 dark:hover:bg-gray-100 btn-press"
             >
               {t('revealModelAnswer') || "Reveal Model Answer"}
             </button>
@@ -502,7 +502,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                       onChange({ text: essayDraft, selfGrade: 'correct' });
                       setShowEssayAnswer(false);
                     }}
-                    className="px-5 py-2 bg-emerald-500 hover:bg-emerald-400 dark:bg-emerald-600 dark:hover:bg-emerald-500 text-white dark:text-black rounded-full text-xs font-bold transition-colors"
+                    className="px-5 py-2 bg-emerald-500 hover:bg-emerald-400 dark:bg-emerald-600 dark:hover:bg-emerald-500 text-white dark:text-black rounded-full text-xs font-bold transition-colors btn-press"
                   >
                     {t('correct') || "Correct"}
                   </button>
@@ -511,7 +511,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                       onChange({ text: essayDraft, selfGrade: 'incorrect' });
                       setShowEssayAnswer(false);
                     }}
-                    className="px-5 py-2 border border-rose-200 dark:border-rose-500/30 text-rose-600 dark:text-rose-400 hover:bg-rose-50 dark:hover:bg-rose-500/5 rounded-full text-xs font-bold transition-colors"
+                    className="px-5 py-2 border border-rose-200 dark:border-rose-500/30 text-rose-600 dark:text-rose-400 hover:bg-rose-50 dark:hover:bg-rose-500/5 rounded-full text-xs font-bold transition-colors btn-press"
                   >
                     {t('incorrect') || "Incorrect"}
                   </button>
@@ -579,7 +579,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                 onChange({ inputs: [...blankInputs], submitted: true });
               }}
               disabled={blankInputs.some((v, i) => i < blanks && !v?.trim())}
-              className="px-6 py-2.5 bg-gray-950 dark:bg-white text-white dark:text-black rounded-full text-xs font-bold tracking-wide hover:scale-[0.98] transition-transform hover:bg-gray-900 dark:hover:bg-gray-100 disabled:opacity-35 disabled:cursor-not-allowed"
+              className="px-6 py-2.5 bg-gray-950 dark:bg-white text-white dark:text-black rounded-full text-xs font-bold tracking-wide hover:scale-[0.98] transition-transform hover:bg-gray-900 dark:hover:bg-gray-100 disabled:opacity-35 disabled:cursor-not-allowed btn-press"
             >
               Check Answers
             </button>
@@ -714,7 +714,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                           <button
                             onClick={() => onChange({ ...subAns, [subQ.id]: { inputs: blankInputs, submitted: true } })}
                             disabled={blankInputs.some(b => !b?.trim())}
-                            className="px-6 py-2.5 bg-gray-950 dark:bg-white text-white dark:text-black rounded-full text-xs font-bold tracking-wide hover:scale-[0.98] transition-transform disabled:opacity-35 disabled:cursor-not-allowed"
+                            className="px-6 py-2.5 bg-gray-950 dark:bg-white text-white dark:text-black rounded-full text-xs font-bold tracking-wide hover:scale-[0.98] transition-transform disabled:opacity-35 disabled:cursor-not-allowed btn-press"
                           >
                             Submit Answers
                           </button>
@@ -728,14 +728,14 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                       const selected = subVal === oIdx;
                       const isCorrectOpt = oIdx === subQ.correctIndex;
 
-                      let optClass = 'group flex w-full items-center gap-3.5 rounded-xl border px-4 py-3 text-start transition-all duration-200 ';
+                      let optClass = 'group flex w-full items-center gap-3.5 rounded-xl border px-4 py-3 text-start transition-all duration-200 btn-press option-hover ';
                       let badgeClass = 'flex h-6 w-6 shrink-0 items-center justify-center rounded-full border text-xs font-semibold transition-colors ';
 
                       if (!isCompleted) {
                         optClass += 'border-gray-200 dark:border-white/[0.07] bg-gray-50/50 dark:bg-white/[0.025] hover:bg-gray-100 dark:hover:bg-white/[0.06] text-gray-800 dark:text-white';
                         badgeClass += 'border-gray-300 dark:border-white/15 text-gray-500 dark:text-white/40 bg-gray-100/50 dark:bg-white/[0.03]';
                       } else if (isCorrectOpt) {
-                        optClass += 'border-emerald-500/40 bg-emerald-500/10 text-emerald-600 dark:text-emerald-300';
+                        optClass += 'border-emerald-500/40 bg-emerald-500/10 text-emerald-600 dark:text-emerald-300 option-selected';
                         badgeClass += 'border-emerald-500/40 text-emerald-600 dark:text-emerald-300 bg-emerald-500/10';
                       } else if (selected && !isCorrectOpt) {
                         optClass += 'border-rose-500/40 bg-rose-500/10 text-rose-600 dark:text-rose-300 wrong-shake';
@@ -796,7 +796,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                               }, 150);
                             });
                           }}
-                          className="px-5 py-2 bg-gray-950 dark:bg-white text-white dark:text-black rounded-full text-[10px] font-bold tracking-wide hover:scale-[0.98] transition-transform hover:bg-gray-900 dark:hover:bg-gray-100"
+                          className="px-5 py-2 bg-gray-950 dark:bg-white text-white dark:text-black rounded-full text-[10px] font-bold tracking-wide hover:scale-[0.98] transition-transform hover:bg-gray-900 dark:hover:bg-gray-100 btn-press"
                         >
                           Reveal Answer
                         </button>
@@ -820,7 +820,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                                   });
                                   setRevealedSubEssays(prev => ({ ...prev, [subQ.id]: false }));
                                 }}
-                                className="px-4 py-1.5 bg-emerald-500 hover:bg-emerald-400 dark:bg-emerald-600 dark:hover:bg-emerald-500 text-white dark:text-black rounded-full text-[10px] font-bold transition-colors"
+                                className="px-4 py-1.5 bg-emerald-500 hover:bg-emerald-400 dark:bg-emerald-600 dark:hover:bg-emerald-500 text-white dark:text-black rounded-full text-[10px] font-bold transition-colors btn-press"
                               >
                                 Correct
                               </button>
@@ -832,7 +832,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                                   });
                                   setRevealedSubEssays(prev => ({ ...prev, [subQ.id]: false }));
                                 }}
-                                className="px-4 py-1.5 border border-rose-200 dark:border-rose-500/30 text-rose-600 dark:text-rose-400 hover:bg-rose-50 dark:hover:bg-rose-500/5 rounded-full text-[10px] font-bold transition-colors"
+                                className="px-4 py-1.5 border border-rose-200 dark:border-rose-500/30 text-rose-600 dark:text-rose-400 hover:bg-rose-50 dark:hover:bg-rose-500/5 rounded-full text-[10px] font-bold transition-colors btn-press"
                               >
                                 Incorrect
                               </button>
@@ -898,7 +898,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
             <button
               onClick={onBack}
               aria-label="Back"
-              className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.04] transition-colors hover:bg-gray-100 dark:hover:bg-white/[0.08]"
+              className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.04] transition-colors hover:bg-gray-100 dark:hover:bg-white/[0.08] btn-press"
             >
               <ArrowLeft size={16} className={`text-gray-700 dark:text-white/70 ${isRTL ? 'rotate-180' : ''}`} />
             </button>
@@ -915,14 +915,14 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
             <button
               onClick={toggleShortcuts}
               aria-label="Keyboard shortcuts"
-              className="hidden h-11 w-11 items-center justify-center rounded-full border border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.04] text-gray-500 dark:text-white/50 transition-colors hover:bg-gray-100 dark:hover:bg-white/[0.08] sm:flex"
+              className="hidden h-11 w-11 items-center justify-center rounded-full border border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.04] text-gray-500 dark:text-white/50 transition-colors hover:bg-gray-100 dark:hover:bg-white/[0.08] sm:flex btn-press"
             >
               <Keyboard size={15} />
             </button>
             <button
               onClick={toggleGrid}
               aria-label="Question grid"
-              className={`flex h-11 w-11 items-center justify-center rounded-full border transition-colors ${
+              className={`flex h-11 w-11 items-center justify-center rounded-full border transition-colors btn-press ${
                 showGrid ? `${style.border} ${style.bg} text-white` : 'border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.04] text-gray-550 dark:text-white/50 hover:bg-gray-100 dark:hover:bg-white/[0.08]'
               }`}
             >
@@ -1068,7 +1068,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
               </div>
               <button
                 onClick={toggleFlag}
-                className={`flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-xs transition-colors ${
+                className={`flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-xs transition-colors btn-press ${
                   flagged.has(current)
                     ? 'border-amber-500/40 bg-amber-500/10 text-amber-300'
                     : 'border-gray-200 dark:border-white/[0.08] bg-gray-50 dark:bg-white/[0.03] text-gray-500 dark:text-white/45 hover:bg-gray-100 dark:hover:bg-white/[0.07]'

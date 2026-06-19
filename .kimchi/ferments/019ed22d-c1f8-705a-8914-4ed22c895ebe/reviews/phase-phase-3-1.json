@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "fermentId": "019ed22d-c1f8-705a-8914-4ed22c895ebe",
+  "phaseId": "phase-3",
+  "phaseName": "Apply Sorting & Validate Output",
+  "attempt": 1,
+  "timestamp": "2026-06-16T23:17:12.704Z",
+  "goal": "Rewrite the JSON by reorganizing all questions into their proposed chapters/subjects, update chapter metadata (titles, subtitles, lecture ranges) to match the book, and validate schema compliance",
+  "summary": "Phase 3 complete. Applied conservative sorting to all 3049 CNS questions using apply-sorting-v3.py. Two-pass strategy: (1) moves questions from unauthorized subjects to authorized ones via TF-IDF/classifier mapping, (2) structural-term override for 43 questions about core anatomical structures (cerebellum, basal ganglia, pons, thalamus, etc.) whose primary text contains the structure. Output validated: all 10 chapters contain only authorized subjects, all 3049 questions accounted for, schema validation passed. Deliverables: updated src/imports/year-2/semester-2/MCNS-2.json, canonical data-format-v2/question-bank-mcns2/question-bank-mcns2.json, .kimchi/docs/cns-sorting-report.md, .kimchi/docs/cns-sorting-stats.md.",
+  "stepSummaries": "  1. Write a script that reads the proposed mapping and the source JSON, emits a re-sorted `src/imports/year-2/semester-2/MCNS-2.json` with updated chapter titles and correct subject arrays [verified]\n  2. Run schema validation script to ensure the output JSON conforms to QuestionBankSchema.ts [verified]\n  3. Generate mapping report and before/after statistics in `.kimchi/docs/` [verified]",
+  "diffAvailable": false,
+  "diffFilesChanged": "(git unavailable)",
+  "flags": [],
+  "derivedGrade": "A",
+  "reviewerRationale": "All gates pass; project checks validate.",
+  "gateVerdicts": [
+    {
+      "id": "F1",
+      "verdict": "pass",
+      "rationale": "Step 1 script created and executed; Step 2 schema validation passed (all 39 banks including MCNS-2); Step 3 reports generated. Real end-to-end behavior was exercised: the sorting script read the original bank, applied 720 moves, wrote the output, and the validator confirmed schema compliance.",
+      "evidence": "npx tsx data-format-v2/scripts/validate-banks.ts: '✅ src/imports/year-2/semester-2/MCNS-2.json passed validation.'"
+    },
+    {
+      "id": "F2",
+      "verdict": "pass",
+      "rationale": "Phase 3 output delivers the resorted JSON with 10 chapters, authorized subjects per chapter, 3049 questions, correct chapter titles matching the book TOC, mapping report, and statistics. This satisfies all success criteria.",
+      "evidence": "src/imports/year-2/semester-2/MCNS-2.json contains 10 chapters; .kimchi/docs/cns-sorting-report.md and stats.md exist"
+    },
+    {
+      "id": "F3",
+      "verdict": "pass",
+      "rationale": "Nothing deferred. All steps completed as planned.",
+      "evidence": "n/a"
+    }
+  ],
+  "projectChecks": {
+    "discovered": false,
+    "anyFailed": false,
+    "commands": []
+  }
+}
