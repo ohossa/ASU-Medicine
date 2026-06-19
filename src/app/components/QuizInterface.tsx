@@ -178,9 +178,11 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
         : checkAnswerCorrect(question, answers[current])
   ) : false;
 
-  /* Sound effect + pulse + confetti on answer reveal */
+  /* Sound effect + pulse + confetti on answer reveal (once per question) */
+  const playedForQuestions = useRef<Set<number>>(new Set());
   useEffect(() => {
-    if (answered && question) {
+    if (answered && question && !playedForQuestions.current.has(current)) {
+      playedForQuestions.current.add(current);
       if (isCorrect) {
         fx.correct(0.5, 0.5, 1);
         playSound('correct');
@@ -189,7 +191,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
         playSound('wrong');
       }
     }
-  }, [answered, isCorrect, question, playSound]);
+  }, [answered, isCorrect, question, playSound, current]);
 
   /* aria-live announcement on answer reveal */
   useLayoutEffect(() => {
