@@ -2,17 +2,26 @@ import { AnimatePresence, motion } from 'motion/react';
 import { useEffect, useState } from 'react';
 import { useProgress } from '../store/progress';
 import { spring } from '../lib/motion';
+import { celebrate } from '../lib/celebrate';
 
-export function LevelUpOverlay() {
+interface LevelUpOverlayProps {
+  moduleCode?: string;
+  isPerfect?: boolean;
+}
+
+export function LevelUpOverlay({ moduleCode, isPerfect }: LevelUpOverlayProps) {
   const { level, lastLevelUp } = useProgress();
   const [show, setShow] = useState(false);
   
   useEffect(() => {
     if (!lastLevelUp) return;
     setShow(true);
+    if (isPerfect && moduleCode) {
+      celebrate({ perfect: true, moduleCode });
+    }
     const t = setTimeout(() => setShow(false), 2600);
     return () => clearTimeout(t);
-  }, [lastLevelUp]);
+  }, [lastLevelUp, isPerfect, moduleCode]);
 
   return (
     <AnimatePresence>

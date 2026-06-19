@@ -24,6 +24,7 @@ import { useLanguage } from '../context/LanguageContext';
 import { useTheme } from '../context/ThemeContext';
 import { celebrate } from '../lib/celebrate';
 import { pulse } from '../lib/pulseEngine';
+import { getConfettiColors } from '../lib/confettiConfig';
 import { useProgress } from '../store/progress';
 import { MatchingQuestion } from './MatchingQuestion';
 
@@ -259,7 +260,9 @@ export function ResultsDashboard({
 
   /* Confetti celebration */
   useEffect(() => {
-    celebrate({ perfect: correctCount === totalCount });
+    const moduleCode = subject?.id ?? 'default';
+    const isPerfect = correctCount === totalCount;
+    celebrate({ perfect: isPerfect, moduleCode });
     pulse.setMood('celebrate', 3000);
     if (correctCount === totalCount) {
       progressStore.unlock('perfect_score');

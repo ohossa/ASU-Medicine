@@ -1,10 +1,13 @@
 import confetti from 'canvas-confetti';
 import { FX } from './fx.config';
+import { getConfettiColors } from './confettiConfig';
 
-export function celebrate(opts?: { perfect?: boolean }) {
+export function celebrate(opts?: { perfect?: boolean; moduleCode?: string }) {
   if (!FX.confetti) return;
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  const colors = ['#2dd4bf', '#3b82f6', '#a855f7', '#10b981'];
+  const moduleCode = opts?.moduleCode ?? 'default';
+  const isPerfect = opts?.perfect ?? false;
+  const colors = getConfettiColors(moduleCode, isPerfect);
   const burst = (particleRatio: number, o: confetti.Options) =>
     confetti({ origin: { y: 0.7 }, colors, ...o, particleCount: Math.floor(200 * particleRatio) });
   

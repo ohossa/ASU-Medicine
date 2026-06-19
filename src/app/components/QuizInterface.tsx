@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import '../lib/3dCardFlip.css';
 import { motion, AnimatePresence } from 'motion/react';
 import { useAuth } from '@clerk/clerk-react';
 import { checkAnswerCorrect } from '../utils/quiz';
@@ -132,6 +133,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
   const [essayDraft, setEssayDraft] = useState('');
   const [showEssayAnswer, setShowEssayAnswer] = useState(false);
   const [confirmFinish, setConfirmFinish] = useState(false);
+  const [flipped, setFlipped] = useState(false);
 
   const engine = useQuizEngine({
     questions,
@@ -161,10 +163,18 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
   const subjectColor: SubjectColor = question?.subjectColor ?? 'clinical';
   const style = subjectStyles[subjectColor];
 
+  /* Detect answer and trigger 3D flip */
+  useEffect(() => {
+    if (answered && !flipped) {
+      setFlipped(true);
+    }
+  }, [answered]);
+
   /* Sync temporary states on index change */
   useEffect(() => {
     lastFocusedSubQ.current = null;
     setShowEssayAnswer(false);
+    setFlipped(false);
     if (!question) return;
 
     if (question.type === 'essay') {
@@ -214,11 +224,13 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
         if (question.type === 'mcq' && question.options && idx < question.options.length) {
           if (answers[current] === undefined) {
             setAnswer(idx);
+            setFlipped(true);
           }
         }
         if (question.type === 'truefalse' && idx < 2) {
           if (answers[current] === undefined) {
             setAnswer(idx === 0);
+            setFlipped(true);
           }
         }
         if (question.type === 'essay' && showEssayAnswer) {
@@ -1079,7 +1091,10 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
               </button>
             </div>
 
-            {/* Question card */}
+            {/* Question card with 3D flip */}
+            <div className={`flip-card${flipped ? ' flipped' : ''}`}>
+              <div className="flip-card-inner">
+                <div className="flip-card-front">
             <div className="rounded-2xl border border-gray-200 dark:border-white/[0.07] bg-card p-5 shadow-sm dark:shadow-[0_8px_40px_rgba(0,0,0,0.4)] backdrop-blur-xl sm:p-7">
               {question.type !== 'fillblank' && question.type !== 'case' && question.type !== 'casestudy' && renderFormattedText(
                 question.text,
@@ -1111,6 +1126,9 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                   )}
                 </div>
               )}
+            </div>
+                </div>
+              </div>
             </div>
 
             {/* AI Chat Tutor Panel */}
