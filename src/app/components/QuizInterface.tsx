@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from 'motion/react';
 import { useAuth } from '@clerk/clerk-react';
 import { fx } from '../lib/pulseEngine';
 import type { QuizSessionSave } from '../hooks/useQuizSession';
-import { useQuizSession } from '../hooks/useQuizSession';
+import { useQuizSession, saveLocalDrafts, loadLocalDrafts } from '../hooks/useQuizSession';
 import { useSoundEngine } from '../hooks/useSoundEngine';
 import { checkAnswerCorrect } from '../utils/quiz';
 import {
@@ -140,7 +140,16 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
   const [direction, setDirection] = useState(1);
   const [essayDraft, setEssayDraft] = useState('');
   const [showEssayAnswer, setShowEssayAnswer] = useState(() => savedSession?.showEssayAnswer ?? false);
-  const [essayDrafts, setEssayDrafts] = useState<Record<number, string>>(savedSession?.essayDrafts ?? {});
+  const [essayDrafts, setEssayDrafts] = useState<Record<number, string>>(() => {
+    // Load persisted local drafts on init
+    if (savedSession) {
+      const local = loadLocalDrafts(savedSession.chapterId, savedSession.subjectName);
+      // Merge savedSession.essayDrafts (cloud) with local drafts (local takes precedence)
+      const cloudDrafts = savedSession.essayDrafts ?? {};
+      return { ...cloudDrafts, ...local };
+    }
+    return {};
+  });
   const [confirmFinish, setConfirmFinish] = useState(false);
   const [timerMode, setTimerMode] = useState<'off' | 'practice' | 'exam'>('practice');
 
@@ -202,15 +211,17 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
     }
   }, [answered, isCorrect, question, playSound, current]);
 
-  /* Auto-save quiz session every 2 seconds */
+  /* Auto-save quiz session (debounced 2s after last change) — essayDrafts stored separately via saveLocalDrafts */
   const quizDataRef = useRef({ current: 0, answers: {} as Record<number, QuizAnswer>, elapsedSeconds: 0, flagged: [] as number[], finished: false, timerMode: 'practice' as TimerMode, showEssayAnswer: false });
+  const autoSaveTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   useLayoutEffect(() => {
     quizDataRef.current = { current, answers, elapsedSeconds, flagged: [...flagged], finished, timerMode, showEssayAnswer };
   });
   useEffect(() => {
-    const timer = setInterval(() => {
+    if (quizDataRef.current.finished) return;
+    if (autoSaveTimerRef.current) clearTimeout(autoSaveTimerRef.current);
+    autoSaveTimerRef.current = setTimeout(() => {
       const d = quizDataRef.current;
-      if (d.finished) return;
       saveQuizSession({
         chapterId: chapter.id,
         subjectName: subject?.name ?? 'all',
@@ -221,11 +232,12 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
         finished: d.finished,
         timerMode: d.timerMode,
         showEssayAnswer: d.showEssayAnswer,
-        essayDrafts: essayDrafts,
       });
     }, 2000);
-    return () => clearInterval(timer);
-  }, [chapter.id, subject?.name, saveQuizSession, essayDrafts]);
+    return () => {
+      if (autoSaveTimerRef.current) clearTimeout(autoSaveTimerRef.current);
+    };
+  }, [current, answers, flagged, timerMode, showEssayAnswer, chapter.id, subject?.name, saveQuizSession]);
 
   /* Smooth scroll to essay answer when revealed */
   const essayAnswerRef = useRef<HTMLDivElement | null>(null);
@@ -253,7 +265,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
   }, [answered, current, question, answers, language]);
 
   /* Sync essay draft with current question index */
-  useEffect(() => {
+  useLayoutEffect(() => {
     if (!question) return;
     if (question.type === 'essay') {
       // eslint-disable-next-line react-hooks/set-state-in-effect
@@ -261,20 +273,24 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
     }
   }, [current, question, answers, essayDrafts]);
 
+  /* Navigate: load draft for new question index */
+  useLayoutEffect(() => {
+    const question = questions[current];
+    if (!question) return;
+    if (question.type === 'essay') {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      setEssayDraft(essayDrafts[current] ?? answers[current]?.text ?? '');
+    } else {
+      setShowEssayAnswer(false);
+    }
+  }, [current, questions, answers, essayDrafts]);
+
   /* Sync temporary states on index change */
   useLayoutEffect(() => {
     lastFocusedSubQ.current = null;
-    // eslint-disable-next-line react-hooks/set-state-in-effect
-    setShowEssayAnswer(false);
     if (!question) return;
 
-    if (question.type === 'essay') {
-      setEssayDraft(essayDrafts[current] ?? answers[current]?.text ?? '');
-      // Sync essay draft to essayDrafts ref when navigating away from essay question
-      if (answers[current]?.text !== undefined) {
-        setEssayDrafts(prev => ({ ...prev, [current]: answers[current].text }));
-      }
-    } else if (question.type === 'matching') {
+    if (question.type === 'matching') {
       if (answers[current] === undefined && question.pairs) {
         // Scramble targets on first mount
         const scrambled = [...question.pairs].map(p => p.target).sort(() => Math.random() - 0.5);
@@ -288,6 +304,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
         drafts[subQ.id] = saved[subQ.id]?.text || '';
         revs[subQ.id] = saved[subQ.id] !== undefined;
       });
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setSubEssayDrafts(drafts);
       setRevealedSubEssays(revs);
     }
@@ -538,7 +555,10 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
           onChange={e => {
             const val = e.target.value;
             setEssayDraft(val);
-            setEssayDrafts(prev => ({ ...prev, [current]: val }));
+            const nextDrafts = { ...essayDrafts, [current]: val };
+            setEssayDrafts(nextDrafts);
+            // Immediate local save (no cloud, no debounce)
+            saveLocalDrafts(chapter.id, subject?.name ?? 'all', nextDrafts);
             onChange({ text: val, selfGrade: value?.selfGrade });
           }}
           rows={7}

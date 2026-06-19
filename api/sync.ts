@@ -1,6 +1,7 @@
 import { verifyToken } from '@clerk/backend';
 import { Redis as UpstashRedis } from '@upstash/redis';
 import ioredis from 'ioredis';
+import { compress, decompress } from 'lz-string';
 
 // Support Vercel KV variables, standard Upstash variables, or parse REDIS_URL directly
 const kvUrl = process.env.KV_REST_API_URL || process.env.UPSTASH_REDIS_REST_URL || '';
@@ -50,12 +51,13 @@ if (redisUrl) {
   };
 }
 
-const setWithTTL = async (key: string, value: unknown) => {
+const TTL_SECONDS = 60 * 60 * 24 * 30; // 30 days
+
+const setWithTTL = async (key: string, value: string) => {
   if (redisUrl) {
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    await (tcpClient as any).set(key, typeof value === 'string' ? value : JSON.stringify(value), 'EX', 60 * 60 * 24 * 30);
+    await (tcpClient as unknown as { set: (k: string, v: string, ex: string, ttl: number) => Promise<unknown> }).set(key, value, 'EX', TTL_SECONDS);
   } else if (kvUrl && kvToken) {
-    await restClient.set(key, value, { EX: 60 * 60 * 24 * 30 });
+    await restClient.set(key, value, { EX: TTL_SECONDS });
   }
 };
 
@@ -105,15 +107,43 @@ export default async function handler(req: any, res: any) {
       return res.status(401).json({ error: 'Unauthorized: Invalid token claims' });
     }
 
-    const redisKey = `user_data:${userId}`;
+    const keyPrefix = `asu_data:${userId}:`;
 
     // 3. Handle GET Request
     if (req.method === 'GET') {
       if (!redisUrl && (!kvUrl || !kvToken)) {
         return res.status(200).json({ data: null, message: "Redis/KV not configured yet" });
       }
-      const data = await dbClient.get(redisKey);
-      return res.status(200).json({ data: data || null });
+      try {
+        let keys: string[] = [];
+        if (redisUrl) {
+          keys = await (tcpClient as unknown as { keys: (pattern: string) => Promise<string[]> }).keys(`${keyPrefix}*`);
+        } else {
+          // Upstash does not support KEYS; fall back to a known set of keys from body
+          // For Upstash, GET returns null unless we track keys separately — return null for safety
+          return res.status(200).json({ data: null, message: "Redis/KV not configured for key enumeration" });
+        }
+        const result: Record<string, unknown> = {};
+        for (const fullKey of keys) {
+          const strippedKey = fullKey.slice(keyPrefix.length);
+          const raw = await dbClient.get(fullKey);
+          if (raw != null) {
+            const decompressed = decompress(typeof raw === 'string' ? raw : JSON.stringify(raw));
+            if (decompressed) {
+              try {
+                result[strippedKey] = JSON.parse(decompressed);
+              } catch {
+                result[strippedKey] = decompressed;
+              }
+            }
+          }
+        }
+        return res.status(200).json({ data: result });
+      } catch (err: unknown) {
+        const msg = err instanceof Error ? err.message : String(err);
+        console.error('Redis GET error:', err);
+        return res.status(500).json({ error: 'Failed to retrieve data', details: msg });
+      }
     }
 
     // 4. Handle POST Request
@@ -121,7 +151,7 @@ export default async function handler(req: any, res: any) {
       if (!redisUrl && (!kvUrl || !kvToken)) {
         return res.status(200).json({ success: true, message: "Redis/KV not configured yet, skipped save" });
       }
-      
+
       let body = req.body;
       if (typeof body === 'string') {
         try {
@@ -130,13 +160,52 @@ export default async function handler(req: any, res: any) {
           return res.status(400).json({ error: 'Bad Request: Malformed JSON body string', details: e.message });
         }
       }
-      
+
       if (!body || (typeof body === 'object' && Object.keys(body).length === 0)) {
         return res.status(400).json({ error: 'Bad Request: Missing or empty JSON body', bodyType: typeof body });
       }
 
-      await setWithTTL(redisKey, body);
-      return res.status(200).json({ success: true });
+      // Enforce 2MB limit on total body
+      const bodyStr = JSON.stringify(body);
+      if (bodyStr.length > 1024 * 1024 * 2) {
+        return res.status(413).json({ error: 'Payload Too Large: Maximum size is 2MB' });
+      }
+
+      try {
+        // Collect existing keys for this user
+        let existingKeys: string[] = [];
+        if (redisUrl) {
+          existingKeys = await (tcpClient as unknown as { keys: (pattern: string) => Promise<string[]> }).keys(`${keyPrefix}*`);
+        }
+
+        const incomingKeys = Object.keys(body);
+
+        // Delete keys that exist in Redis but are NOT in the incoming body
+        for (const fullKey of existingKeys) {
+          const strippedKey = fullKey.slice(keyPrefix.length);
+          if (!incomingKeys.includes(strippedKey)) {
+            if (redisUrl) {
+              await tcpClient.del(fullKey);
+            }
+          }
+        }
+
+        // Upsert each incoming key with compression and 30-day TTL
+        for (const [strippedKey, value] of Object.entries(body)) {
+          const fullKey = `${keyPrefix}${strippedKey}`;
+          const jsonStr = JSON.stringify(value);
+          const compressed = compress(jsonStr);
+          if (compressed) {
+            await setWithTTL(fullKey, compressed);
+          }
+        }
+
+        return res.status(200).json({ success: true });
+      } catch (err: unknown) {
+        const msg = err instanceof Error ? err.message : String(err);
+        console.error('Redis POST error:', err);
+        return res.status(500).json({ error: 'Failed to store data', details: msg });
+      }
     }
 
     return res.status(405).json({ error: 'Method Not Allowed' });

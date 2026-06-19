@@ -23,57 +23,99 @@ const STORAGE_KEYS = [
 export function useCloudSync() {
   const { getToken, isSignedIn } = useAuth();
   const isSyncing = useRef(false);
+  // Track the last-synced value of each key to compute deltas
+  const lastSyncedRef = useRef<Record<string, string>>({});
 
   const pushData = useCallback(async () => {
     if (!isSignedIn || isSyncing.current) return;
     isSyncing.current = true;
     try {
       const payload: Record<string, unknown> = {};
-      
+      const currentKeys = new Set<string>();
+
       // Collect standard keys
       STORAGE_KEYS.forEach(key => {
         const val = localStorage.getItem(key);
         if (val) {
-          try {
-            payload[key] = JSON.parse(val);
-          } catch {
-            payload[key] = val;
+          currentKeys.add(key);
+          const serialized = typeof val === 'string' ? val : JSON.stringify(val);
+          // Only include keys that are new or changed
+          if (lastSyncedRef.current[key] !== serialized) {
+            try {
+              payload[key] = JSON.parse(val);
+            } catch {
+              payload[key] = val;
+            }
           }
         }
       });
 
-      // Also dynamically collect any keys starting with asu_study_tracker_
+      // Also dynamically collect any keys starting with asu_study_tracker_ or asu_quiz_session:
       if (typeof window !== 'undefined') {
         for (let i = 0; i < localStorage.length; i++) {
           const key = localStorage.key(i);
           if (key && (key.startsWith('asu_study_tracker_') || key.startsWith('asu_quiz_session:'))) {
             const val = localStorage.getItem(key);
             if (val) {
-              try {
-                payload[key] = JSON.parse(val);
-              } catch {
-                payload[key] = val;
+              currentKeys.add(key);
+              const serialized = typeof val === 'string' ? val : JSON.stringify(val);
+              if (lastSyncedRef.current[key] !== serialized) {
+                try {
+                  payload[key] = JSON.parse(val);
+                } catch {
+                  payload[key] = val;
+                }
               }
             }
           }
         }
       }
 
+      // Detect keys that were in lastSyncedRef but are now absent from localStorage
+      // These should be deleted from cloud (send them as null/undefined markers)
+      for (const prevKey of Object.keys(lastSyncedRef.current)) {
+        if (!currentKeys.has(prevKey)) {
+          // Key was deleted locally — include it with null to signal deletion
+          // (The API will handle deleting it from Redis)
+          payload[prevKey] = null;
+        }
+      }
+
       if (Object.keys(payload).length === 0) return;
+
+      // 2MB limit check per-key for payloads that might be large
+      const payloadStr = JSON.stringify(payload);
+      if (payloadStr.length > 1024 * 1024 * 2) {
+        console.warn('Cloud push payload exceeds 2MB, skipping push');
+        return;
+      }
 
       const token = await getToken();
       const res = await fetch('/api/sync', {
         method: 'POST',
-        headers: { 
+        headers: {
           'Content-Type': 'application/json',
-          Authorization: `Bearer ${token}` 
+          Authorization: `Bearer ${token}`
         },
-        body: JSON.stringify(payload)
+        body: payloadStr
       });
 
       if (!res.ok) {
         const errText = await res.text();
         throw new Error(`API push failed: ${res.status} - ${errText}`);
+      }
+
+      // After successful push, update lastSyncedRef with current values
+      // (but remove entries for deleted keys)
+      for (const key of currentKeys) {
+        const val = localStorage.getItem(key);
+        lastSyncedRef.current[key] = typeof val === 'string' ? val : JSON.stringify(val ?? null);
+      }
+      // Remove entries for deleted keys
+      for (const prevKey of Object.keys(lastSyncedRef.current)) {
+        if (!currentKeys.has(prevKey)) {
+          delete lastSyncedRef.current[prevKey];
+        }
       }
     } catch (err) {
       console.error("Cloud push failed:", err);
@@ -92,30 +134,32 @@ export function useCloudSync() {
         const res = await fetch('/api/sync', {
           headers: { Authorization: `Bearer ${token}` }
         });
-        
+
         if (!res.ok) {
           const errText = await res.text();
           throw new Error(`API sync failed: ${res.status} - ${errText}`);
         }
-        
+
         const { data } = await res.json();
-        
+
         if (data && isMounted) {
           let hasChanges = false;
           Object.keys(data).forEach(key => {
             if (data[key] !== undefined && data[key] !== null) {
               const cloudVal = typeof data[key] === 'string' ? data[key] : JSON.stringify(data[key]);
               const localVal = localStorage.getItem(key);
-              
+
               if (cloudVal !== localVal) {
                 localStorage.setItem(key, cloudVal);
                 hasChanges = true;
               }
+
+              // Populate lastSyncedRef so future pushes know what's in the cloud
+              lastSyncedRef.current[key] = cloudVal;
             }
           });
-          
+
           if (hasChanges) {
-            // Dispatch a generic storage event to update React components
             window.dispatchEvent(new Event('storage'));
           }
         }
@@ -133,11 +177,10 @@ export function useCloudSync() {
 
   useEffect(() => {
     if (!isSignedIn) return;
-    
-    // Listen for custom trigger to push data to cloud
+
     const handleSync = () => pushData();
     window.addEventListener('trigger-cloud-sync', handleSync);
-    
+
     return () => {
       window.removeEventListener('trigger-cloud-sync', handleSync);
     };

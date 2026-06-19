@@ -62,7 +62,7 @@ import type { QuizResult } from './utils/storage';
 import { SignedIn, SignedOut, UserButton, useUser } from '@clerk/clerk-react';
 const LoginScreen = lazy(() => import('./components/LoginScreen').then(m => ({ default: m.LoginScreen })));
 import LoadingScreen from './components/LoadingScreen';
-import { useQuizSession } from './hooks/useQuizSession';
+import { useQuizSession, clearLocalDrafts } from './hooks/useQuizSession';
 import type { QuizSessionSave } from './hooks/useQuizSession';
 import QuizResumeCard from './components/QuizResumeCard';
 import { useCloudSync } from './hooks/useCloudSync';
@@ -276,6 +276,39 @@ function MainApp() {
   
   // Initialize automatic cloud synchronization
   useCloudSync();
+
+  // Startup cleanup: remove stale quiz sessions and local drafts (>7 days old or finished)
+  useEffect(() => {
+    if (!user?.id) return;
+    const SEVEN_DAYS_MS = 7 * 24 * 60 * 60 * 1000;
+    const now = Date.now();
+    const uid = user.id;
+    const prefixes = ['asu_quiz_session:', 'asu_local_drafts:'];
+    const toDelete: string[] = [];
+
+    for (let i = 0; i < localStorage.length; i++) {
+      const key = localStorage.key(i);
+      if (!key) continue;
+      const isMatch = prefixes.some(p => key.startsWith(`${p}${uid}:`));
+      if (!isMatch) continue;
+      try {
+        const raw = localStorage.getItem(key);
+        if (!raw) { toDelete.push(key); continue; }
+        const parsed = JSON.parse(raw);
+        const age = now - (parsed?.timestamp || 0);
+        if (age > SEVEN_DAYS_MS || parsed?.finished === true) {
+          toDelete.push(key);
+        }
+      } catch {
+        toDelete.push(key);
+      }
+    }
+
+    toDelete.forEach(k => localStorage.removeItem(k));
+    if (toDelete.length > 0) {
+      console.info(`[StartupCleanup] Removed ${toDelete.length} stale localStorage entries`);
+    }
+  }, [user?.id]);
 
   // ── 1. State Initializations ──────────────────────────────────────────────────
 
@@ -584,6 +617,7 @@ function MainApp() {
     });
 
     clearQuizSession(quizPayload!.chapter.id, quizPayload!.subject?.name ?? 'all');
+    clearLocalDrafts(quizPayload!.chapter.id, quizPayload!.subject?.name ?? 'all');
 
     transitionTo(() => {
       setResultPayload({
