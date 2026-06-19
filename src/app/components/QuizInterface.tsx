@@ -135,7 +135,6 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
   const [essayDraft, setEssayDraft] = useState('');
   const [showEssayAnswer, setShowEssayAnswer] = useState(false);
   const [confirmFinish, setConfirmFinish] = useState(false);
-  const [flipped, setFlipped] = useState(false);
 
   const engine = useQuizEngine({
     questions,
@@ -175,25 +174,17 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
         : checkAnswerCorrect(question, answers[current])
   ) : false;
 
-  /* Detect answer and trigger 3D flip */
-  useLayoutEffect(() => {
-    if (answered && !flipped) {
-      // eslint-disable-next-line react-hooks/set-state-in-effect
-      setFlipped(true);
-    }
-  }, [answered, flipped]);
-
   /* aria-live announcement on answer reveal */
   useLayoutEffect(() => {
     if (!answered || !question) return;
     const lang = language === 'ar' ? 'ar' : 'en';
-    const isCorrect = question.type === 'essay'
+    const answerIsCorrect = question.type === 'essay'
       ? answers[current]?.selfGrade === 'correct'
       : question.type === 'case' || question.type === 'casestudy'
         ? getQuestionStatus(question, answers[current]) === 'correct'
         : checkAnswerCorrect(question, answers[current]);
     const correctLabel = question.options?.[question.correctIndex ?? -1] ?? '';
-    const msg = isCorrect
+    const msg = answerIsCorrect
       ? `${lang === 'ar' ? 'صحيح' : 'Correct'}. ${question.explanation?.slice(0, 80) || ''}`
       : `${lang === 'ar' ? 'خاطئ' : 'Incorrect'}. ${lang === 'ar' ? 'الإجابة الصحيحة كانت' : 'The correct answer was'} ${correctLabel}`;
     // eslint-disable-next-line react-hooks/set-state-in-effect
@@ -205,7 +196,6 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
     lastFocusedSubQ.current = null;
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setShowEssayAnswer(false);
-    setFlipped(false);
     if (!question) return;
 
     if (question.type === 'essay') {
@@ -255,13 +245,11 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
         if (question.type === 'mcq' && question.options && idx < question.options.length) {
           if (answers[current] === undefined) {
             setAnswer(idx);
-            setFlipped(true);
           }
         }
         if (question.type === 'truefalse' && idx < 2) {
           if (answers[current] === undefined) {
             setAnswer(idx === 0);
-            setFlipped(true);
           }
         }
         if (question.type === 'essay' && showEssayAnswer) {
@@ -1122,10 +1110,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
               </button>
             </div>
 
-            {/* Question card with 3D flip */}
-            <div className={`flip-card${flipped ? ' flipped' : ''}`}>
-              <div className="flip-card-inner">
-                <div className="flip-card-front">
+            {/* Question card */}
             <div className="rounded-2xl border border-gray-200 dark:border-white/[0.07] bg-card p-5 shadow-sm dark:shadow-[0_8px_40px_rgba(0,0,0,0.4)] backdrop-blur-xl sm:p-7">
               {question.type !== 'fillblank' && question.type !== 'case' && question.type !== 'casestudy' && renderFormattedText(
                 question.text,
@@ -1157,9 +1142,6 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                   )}
                 </div>
               )}
-            </div>
-                </div>
-              </div>
             </div>
 
             {/* AI Chat Tutor Panel */}
