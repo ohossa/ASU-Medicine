@@ -1,43 +1,54 @@
 # Verification Report
 
-## Fix Applied
+## Fix Applied: Drag-and-Drop Positioning Bug in MatchingQuestion.tsx
 
-**File:** `src/app/App.tsx`
+### Changes Made
 
-**Change:** Updated the `total` prop in `QuizResumeCard` to compute the correct total question count instead of using answered count.
+**Fix 1 - onPointerDown (line ~248):**
+- Changed `setDragPos({ x: rect.left - containerRect.left, y: rect.top - containerRect.top })` to `setDragPos({ x: rect.left + rect.width / 2, y: rect.top + rect.height / 2 })`
+- Rationale: Initial position now uses viewport-relative coordinates (clientX/Y semantics) with center-point offset
 
-**Before:**
-```tsx
-total={Object.keys(resumePayload.answers).length}
-```
+**Fix 2 - onPointerMove (line ~260):**
+- Changed `const x = e.clientX - containerRect.left - 60` and `const y = e.clientY - containerRect.top - 20` to `const x = e.clientX` and `const y = e.clientY`
+- Rationale: Removed incorrect container-relative offset and hardcoded pixel adjustments that caused the offset bug
 
-**After:**
-```tsx
-total={(() => {
-  const sub = selectedChapter?.subjects.find(s => s.name === resumePayload?.subjectName);
-  if (sub) return sub.questions.length;
-  return selectedChapter?.subjects.flatMap(s => s.questions).length ?? 0;
-})()}
-```
+**Fix 3 - Drag ghost element (line ~629):**
+- Added `transform: 'translate(-50%, -50%)'` to the ghost element's style
+- Rationale: Centers the ghost element on the cursor position, compensating for the fact that `left`/`top` position the element's top-left corner
+
+---
 
 ## Test Output
 
 ```
 Test Files  13 passed (13)
 Tests       163 passed (163)
-Duration    1.80s
+Duration    2.18s
 ```
 
-All 163 tests passed.
+All tests passed including MatchingQuestion.test.tsx (15 tests).
+
+---
 
 ## Lint Output
 
-`npx tsc --noEmit` completed with no errors.
+`npx tsc --noEmit` completed with no errors or warnings.
+
+---
 
 ## Build Output
 
-`npx vite build` completed successfully in 3.07s. Warning about large chunks is pre-existing and unrelated to this fix.
+`npx vite build` completed successfully:
+- 2202 modules transformed
+- Built in 4.35s
+- PWA generated with 138 precache entries
 
-## Verdict
+Note: Build produced a chunk size warning for MCNS-2.js (2.8MB) but this is a pre-existing issue unrelated to the fix.
 
-ALL_PASS
+---
+
+## Verdict: ALL_PASS
+
+- TypeScript compilation: PASS
+- Test suite (163 tests): PASS
+- Vite build: PASS
