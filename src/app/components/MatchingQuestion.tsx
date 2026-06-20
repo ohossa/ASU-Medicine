@@ -353,7 +353,7 @@ export function MatchingQuestion({
       case 'selected':
         return (
           base +
-          'bg-gray-50 dark:bg-white/[0.06] border-gray-950 dark:border-white/40 text-gray-950 dark:text-white shadow-md scale-[1.02] ring-2 ring-gray-950/10 dark:ring-white/10'
+          'bg-transparent dark:bg-transparent border-gray-400 dark:border-white/40 text-gray-950 dark:text-white shadow-sm scale-[1.01] ring-1 ring-gray-400/30 dark:ring-white/20'
         );
       case 'matched':
         return (

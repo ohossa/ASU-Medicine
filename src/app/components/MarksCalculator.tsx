@@ -15,6 +15,7 @@ import {
   Settings,
 } from "lucide-react";
 import { SYLLABUS_MODULES } from "../data";
+import { useTheme } from "../hooks/useTheme";
 
 /* ---------------------------------- Types --------------------------------- */
 
