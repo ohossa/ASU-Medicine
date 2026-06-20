@@ -247,7 +247,7 @@ export function MatchingQuestion({
         clone: el,
       };
       setDragPremise(idx);
-      setDragPos({ x: rect.left - containerRect.left, y: rect.top - containerRect.top });
+      setDragPos({ x: rect.left + rect.width / 2, y: rect.top + rect.height / 2 });
     },
     [submitted, disabled]
   );
@@ -257,8 +257,8 @@ export function MatchingQuestion({
     const containerRect = containerRef.current?.getBoundingClientRect();
     if (!containerRect) return;
 
-    const x = e.clientX - containerRect.left - 60; // centre offset
-    const y = e.clientY - containerRect.top - 20;
+    const x = e.clientX;
+    const y = e.clientY;
     dragRef.current.currentX = x;
     dragRef.current.currentY = y;
     setDragPos({ x, y });
@@ -628,6 +628,7 @@ export function MatchingQuestion({
           style={{
             left: dragPos.x,
             top: dragPos.y,
+            transform: 'translate(-50%, -50%)',
           }}
           initial={{ scale: 1 }}
           animate={{ scale: 1.05, opacity: 0.9 }}
