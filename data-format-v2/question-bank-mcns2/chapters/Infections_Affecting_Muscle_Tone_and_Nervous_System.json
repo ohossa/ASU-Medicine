@@ -29,11 +29,8 @@
           "id": "pharma",
           "name": "Pharmacology",
           "iconName": "Pill",
-          "lectures": "",
-          "lectureCount": 1,
-          "lectureNames": [
-            "Treatment of Meningitis"
-          ],
+          "lectures": "L1-L5",
+          "lectureCount": 5,
           "questions": [
             {
               "id": "mcns2-ch8-pharma-q1",
@@ -503,7 +500,7 @@
             {
               "id": "mcns2-ch8-pharma-q32",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 7,
               "text": "How is Drug Induced Aseptic Meningitis treated?",
               "explanation": "This question asks: How is Drug Induced Aseptic Meningitis treated? Key point: Immediate cessation of suspected drugs.",
               "keyConcept": "Is Drug Induced Aseptic Meningitis treated",
@@ -512,7 +509,7 @@
             {
               "id": "mcns2-ch8-pharma-q33",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 7,
               "text": "Which antibiotics achieve therapeutic CSF level even without meningeal inflammation?",
               "explanation": "This question asks: Which antibiotics achieve therapeutic CSF level even without meningeal inflammation? Key point: Sulfonamides, Trimethoprim, Chloramphenicol, Rifampicin.",
               "keyConcept": "Antibiotics achieve therapeutic CSF level even without meningeal inflammation",
@@ -521,7 +518,7 @@
             {
               "id": "mcns2-ch8-pharma-q34",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 7,
               "text": "Which antibiotics achieve therapeutic CSF level only with meningeal inflammation?",
               "explanation": "This question asks: Which antibiotics achieve therapeutic CSF level only with meningeal inflammation? Key point: β lactam, Monobactam, Vancomycin, quinolones, Acyclovir.",
               "keyConcept": "Antibiotics achieve therapeutic CSF level only with meningeal inflammation",
@@ -530,7 +527,7 @@
             {
               "id": "mcns2-ch8-pharma-q35",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 7,
               "text": "Which antibiotics do not achieve therapeutic CSF level even with inflammation?",
               "explanation": "This question asks: Which antibiotics do not achieve therapeutic CSF level even with inflammation? Key point: Aminoglycosides, 1st & 2nd Generation of cephalosporines, Amphotericin B.",
               "keyConcept": "Antibiotics do not achieve therapeutic CSF level even with inflammation",
@@ -539,7 +536,7 @@
             {
               "id": "mcns2-ch8-pharma-q36",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 7,
               "text": "What is the initial management for bacterial meningitis?",
               "explanation": "This question asks: What is the initial management for bacterial meningitis? Key point: Immediate dexamethasone + Empiric antibiotic.",
               "keyConcept": "Is the initial management for bacterial meningitis",
@@ -548,7 +545,7 @@
             {
               "id": "mcns2-ch8-pharma-q37",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 7,
               "text": "What is the aim of dexamethasone therapy in meningitis?",
               "explanation": "This question asks: What is the aim of dexamethasone therapy in meningitis? Key point: Improve outcome by reducing inflammation induced brain edema and complications.",
               "keyConcept": "Is the aim of dexamethasone therapy in meningitis",
@@ -557,7 +554,7 @@
             {
               "id": "mcns2-ch8-pharma-q38",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 7,
               "text": "What antibiotics are used for empirical therapy in suspected bacterial meningitis in a one month case?",
               "explanation": "This question asks: What antibiotics are used for empirical therapy in suspected bacterial meningitis in a one month case? Key point: Ampicillin + cefotaxime or Ampicillin + Gentamicin.",
               "keyConcept": "Antibiotics are used for empirical therapy in suspected bacterial meningitis in a one month case",
@@ -566,7 +563,7 @@
             {
               "id": "mcns2-ch8-pharma-q39",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 7,
               "text": "When should empirical therapy be continued until?",
               "explanation": "This question asks: When should empirical therapy be continued until? Key point: Definitive diagnosis by lumber puncture (2 3 days).",
               "keyConcept": "Should empirical therapy be continued until",
@@ -575,7 +572,7 @@
             {
               "id": "mcns2-ch8-pharma-q40",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 7,
               "text": "What antibiotics are used in intrathecal injection for nosocomial meningitis?",
               "explanation": "This question asks: What antibiotics are used in intrathecal injection for nosocomial meningitis? Key point: Aminoglycosides, Polymyxin B, and Colistin.",
               "keyConcept": "Antibiotics are used in intrathecal injection for nosocomial meningitis",
@@ -584,7 +581,7 @@
             {
               "id": "mcns2-ch8-pharma-q41",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 7,
               "text": "What antibiotics should be avoided in intrathecal injection for meningitis?",
               "explanation": "This question asks: What antibiotics should be avoided in intrathecal injection for meningitis? Key point: Penicillins & cephalosporins (beta lactams).",
               "keyConcept": "Antibiotics should be avoided in intrathecal injection for meningitis",
@@ -593,7 +590,7 @@
             {
               "id": "mcns2-ch8-pharma-q42",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 7,
               "text": "What is the choice of antibiotic in bacterial meningitis for patients <1 month?",
               "explanation": "This question asks: What is the choice of antibiotic in bacterial meningitis for patients <1 month? Key point: Vancomycin.",
               "keyConcept": "Is the choice of antibiotic in bacterial meningitis for patients <1 month",
@@ -602,7 +599,7 @@
             {
               "id": "mcns2-ch8-pharma-q43",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 7,
               "text": "What is the triple therapy for cases with patients > 50 years or immunocompromised?",
               "explanation": "This question asks: What is the triple therapy for cases with patients > 50 years or immunocompromised? Key point: Vancomycin + Ceftriaxone +Ampicillin.",
               "keyConcept": "Is the triple therapy for cases with patients > 50 years or immunocompromised",
@@ -611,7 +608,7 @@
             {
               "id": "mcns2-ch8-pharma-q44",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 7,
               "text": "What is the alternative therapy for cases except in newborn (< 1 month)?",
               "explanation": "This question asks: What is the alternative therapy for cases except in newborn (< 1 month)? Key point: Vancomycin + Meropenem.",
               "keyConcept": "Is the alternative therapy for cases except in newborn (< 1 month)",
@@ -620,7 +617,7 @@
             {
               "id": "mcns2-ch8-pharma-q45",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 7,
               "text": "Which antibiotic is used in all cases of bacterial meningitis except in children < 1 month?",
               "explanation": "This question asks: Which antibiotic is used in all cases of bacterial meningitis except in children < 1 month? Key point: Vancomycin.",
               "keyConcept": "Antibiotic is used in all cases of bacterial meningitis except in children < 1 month",
@@ -629,7 +626,7 @@
             {
               "id": "mcns2-ch8-pharma-q46",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 7,
               "text": "What is the empirical therapy for bacterial meningitis in children < 1 month?",
               "explanation": "This question asks: What is the empirical therapy for bacterial meningitis in children < 1 month? Key point: Ampicillin + cefotaxime or Ampicillin + Gentamicin.",
               "keyConcept": "Is the empirical therapy for bacterial meningitis in children < 1 month",
@@ -638,7 +635,7 @@
             {
               "id": "mcns2-ch8-pharma-q47",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 7,
               "text": "Which antibiotic is used in all cases of bacterial meningitis except in surgical interference in the brain?",
               "explanation": "This question asks: Which antibiotic is used in all cases of bacterial meningitis except in surgical interference in the brain? Key point: Ceftriaxone (3rd generation cephalosporines).",
               "keyConcept": "Antibiotic is used in all cases of bacterial meningitis except in surgical interference in the brain",
@@ -647,7 +644,7 @@
             {
               "id": "mcns2-ch8-pharma-q48",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 7,
               "text": "Which pathogen-specific antibiotic therapy is used for Neisseria meningitidis?",
               "explanation": "This question asks: Which pathogen-specific antibiotic therapy is used for Neisseria meningitidis? Key point: Penicillin G (or Ampicillin) if MIC is low (< 0.1 ug/ml) Ceftriaxone if MIC is high (> 0.1 ug/ml).",
               "keyConcept": "Pathogen-specific antibiotic therapy is used for Neisseria meningitidis",
@@ -656,7 +653,7 @@
             {
               "id": "mcns2-ch8-pharma-q49",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 7,
               "text": "What are the alternative antibiotics for Neisseria meningitidis?",
               "explanation": "This question asks: What are the alternative antibiotics for Neisseria meningitidis? Key point: Moxifloxacin, Meropenem, Chloramphenicol (LAST choice).",
               "keyConcept": "Are the alternative antibiotics for Neisseria meningitidis",
@@ -665,7 +662,7 @@
             {
               "id": "mcns2-ch8-pharma-q50",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 7,
               "text": "What is the prophylactic antibiotic for close contact with Neisseria meningitidis?",
               "explanation": "This question asks: What is the prophylactic antibiotic for close contact with Neisseria meningitidis? Key point: Rifampicin (for 2 days) or Ceftriaxone (single dose) or Ciprofloxacin (single dose).",
               "keyConcept": "Is the prophylactic antibiotic for close contact with Neisseria meningitidis",
@@ -674,7 +671,7 @@
             {
               "id": "mcns2-ch8-pharma-q51",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 7,
               "text": "Which antibiotic is used for Methicillin susceptible Staphylococcus Aureus?",
               "explanation": "This question asks: Which antibiotic is used for Methicillin susceptible Staphylococcus Aureus? Key point: Nafcillin.",
               "keyConcept": "Antibiotic is used for Methicillin susceptible Staphylococcus Aureus",
@@ -683,7 +680,7 @@
             {
               "id": "mcns2-ch8-pharma-q52",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 7,
               "text": "Which antibiotic is used for Streptococcus Pneuomoniae if MIC is low (<0.1 ug/ml)?",
               "explanation": "This question asks: Which antibiotic is used for Streptococcus Pneuomoniae if MIC is low (<0.1 ug/ml)? Key point: Penicillin G (or Ampicillin).",
               "keyConcept": "Antibiotic is used for Streptococcus Pneuomoniae if MIC is low (<0 1 ug/ml)",
@@ -692,7 +689,7 @@
             {
               "id": "mcns2-ch8-pharma-q53",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 7,
               "text": "Which antibiotic therapy is used for Streptococcus Pneuomoniae with both penicillin and ceftriaxone MIC being very high?",
               "explanation": "This question asks: Which antibiotic therapy is used for Streptococcus Pneuomoniae with both penicillin and ceftriaxone MIC being very high? Key point: Ceftriaxone + Vancomycin (Add Rifampicin in the beginning of therapy).",
               "keyConcept": "Antibiotic therapy is used for Streptococcus Pneuomoniae with both penicillin and ceftriaxone MIC being very high",
@@ -701,7 +698,7 @@
             {
               "id": "mcns2-ch8-pharma-q54",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 7,
               "text": "Which antibiotic is used for Methicillin resistant Staphylococcus Aureus (MRSA)?",
               "explanation": "This question asks: Which antibiotic is used for Methicillin resistant Staphylococcus Aureus (MRSA)? Key point: Vancomycin.",
               "keyConcept": "Antibiotic is used for Methicillin resistant Staphylococcus Aureus (MRSA)",
@@ -710,7 +707,7 @@
             {
               "id": "mcns2-ch8-pharma-q55",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 7,
               "text": "What is the alternative antibiotic for MRSA?",
               "explanation": "This question asks: What is the alternative antibiotic for MRSA? Key point: Daptomycin or Linezolid.",
               "keyConcept": "Is the alternative antibiotic for MRSA",
@@ -719,7 +716,7 @@
             {
               "id": "mcns2-ch8-pharma-q56",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 7,
               "text": "Which antibiotic is used for Haemophiles Influenzae?",
               "explanation": "This question asks: Which antibiotic is used for Haemophiles Influenzae? Key point: Ceftriaxone (if ß lactamase producing) Ampicillin (if ß lactamase ve).",
               "keyConcept": "Antibiotic is used for Haemophiles Influenzae",
@@ -728,7 +725,7 @@
             {
               "id": "mcns2-ch8-pharma-q57",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 7,
               "text": "What is the prophylactic antibiotic for close contact with Haemophiles Influenzae?",
               "explanation": "This question asks: What is the prophylactic antibiotic for close contact with Haemophiles Influenzae? Key point: Rifampicin (for 4 days).",
               "keyConcept": "Is the prophylactic antibiotic for close contact with Haemophiles Influenzae",
@@ -737,7 +734,7 @@
             {
               "id": "mcns2-ch8-pharma-q58",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 7,
               "text": "Which antibiotic is used for Listeria monocytogenes in meningitis?",
               "explanation": "This question asks: Which antibiotic is used for Listeria monocytogenes in meningitis? Key point: Ampicillin + Gentamicin (combination therapy for first 10 days, then monotherapy with ampicillin).",
               "keyConcept": "Antibiotic is used for Listeria monocytogenes in meningitis",
@@ -746,7 +743,7 @@
             {
               "id": "mcns2-ch8-pharma-q59",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 7,
               "text": "What is the treatment for Group ß streptococcus (GBS) meningitis?",
               "explanation": "This question asks: What is the treatment for Group ß streptococcus (GBS) meningitis? Key point: Ampicillin (or Penicillin G).",
               "keyConcept": "Is the treatment for Group ß streptococcus (GBS) meningitis",
@@ -755,7 +752,7 @@
             {
               "id": "mcns2-ch8-pharma-q60",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 7,
               "text": "What are the adverse effects of Ceftriaxone?",
               "explanation": "This question asks: What are the adverse effects of Ceftriaxone? Key point: Pseudo cholelithiasis (drug complexes with calcium and mimics gallstones).",
               "keyConcept": "Are the adverse effects of Ceftriaxone",
@@ -764,7 +761,7 @@
             {
               "id": "mcns2-ch8-pharma-q61",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 7,
               "text": "What are the adverse effects of Moxifloxacin?",
               "explanation": "This question asks: What are the adverse effects of Moxifloxacin? Key point: QT interval prolongation & CNS adverse effects (headache, dizziness).",
               "keyConcept": "Are the adverse effects of Moxifloxacin",
@@ -773,7 +770,7 @@
             {
               "id": "mcns2-ch8-pharma-q62",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 7,
               "text": "What are the adverse effects of Chloramphenicol?",
               "explanation": "This question asks: What are the adverse effects of Chloramphenicol? Key point: Agranulocytosis (bone marrow depression), Neurotoxicity & grey baby syndrome.",
               "keyConcept": "Are the adverse effects of Chloramphenicol",
@@ -782,7 +779,7 @@
             {
               "id": "mcns2-ch8-pharma-q63",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 7,
               "text": "What are the adverse effects of Penicillin?",
               "explanation": "This question asks: What are the adverse effects of Penicillin? Key point: Hypersensitivity reaction.",
               "keyConcept": "Are the adverse effects of Penicillin",
@@ -791,7 +788,7 @@
             {
               "id": "mcns2-ch8-pharma-q64",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 7,
               "text": "What are the adverse effects of Aminoglycosides?",
               "explanation": "This question asks: What are the adverse effects of Aminoglycosides? Key point: Nephrotoxicity & ototoxicity.",
               "keyConcept": "Are the adverse effects of Aminoglycosides",
@@ -800,7 +797,7 @@
             {
               "id": "mcns2-ch8-pharma-q65",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 7,
               "text": "What is the management of Non-Bacterial Meningitis caused by Fungal Infection?",
               "explanation": "This question asks: What is the management of Non-Bacterial Meningitis caused by Fungal Infection? Key point: Candida meningitis: Liposomal Amphotericin B + 5 flucytosine Aspergillus meningitis: Voriconazole.",
               "keyConcept": "Is the management of Non-Bacterial Meningitis caused by Fungal Infection",
@@ -809,7 +806,7 @@
             {
               "id": "mcns2-ch8-pharma-q66",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 7,
               "text": "Which drugs are used in the first line therapy for Tuberculous Meningitis?",
               "explanation": "This question asks: Which drugs are used in the first line therapy for Tuberculous Meningitis? Key point: Rifampicin, Isoniazid, Pyrazinamide, Ethambutol & Streptomycin.",
               "keyConcept": "Drugs are used in the first line therapy for Tuberculous Meningitis",
@@ -818,7 +815,7 @@
             {
               "id": "mcns2-ch8-pharma-q67",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 7,
               "text": "What is the recommended treatment for Herpes Simplex meningitis?",
               "explanation": "This question asks: What is the recommended treatment for Herpes Simplex meningitis? Key point: Acyclovir.",
               "keyConcept": "Is the recommended treatment for Herpes Simplex meningitis",
@@ -827,7 +824,7 @@
             {
               "id": "mcns2-ch8-pharma-q68",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 8,
               "text": "Should dexamethasone be taken before or with antimicrobial therapy in meningitis?",
               "explanation": "This question asks: Should dexamethasone be taken before or with antimicrobial therapy in meningitis? Key point: Before or with antimicrobial therapy.",
               "keyConcept": "Should dexamethasone be taken before or with antimicrobial therapy in meningitis",
@@ -836,7 +833,7 @@
             {
               "id": "mcns2-ch8-pharma-q69",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 8,
               "text": "What should be done if there is a delay in lumber puncture in meningitis?",
               "explanation": "This question asks: What should be done if there is a delay in lumber puncture in meningitis? Key point: Do not postpone the first dose of neurodegenerative and mylene disease.",
               "keyConcept": "Should be done if there is a delay in lumber puncture in meningitis",
@@ -848,16 +845,8 @@
           "id": "microbiology",
           "name": "Microbiology",
           "iconName": "Biohazard",
-          "lectures": "",
-          "lectureCount": 6,
-          "lectureNames": [
-            "Aseptic Meningitis and Poliomyelitis",
-            "Bacterial Meningitis",
-            "Fungal Meningitis",
-            "Infections Affecting Muscle Tone",
-            "Rabies",
-            "Viral Encephalitis"
-          ],
+          "lectures": "L1-L5",
+          "lectureCount": 5,
           "questions": [
             {
               "id": "mcns2-ch8-microbiology-q1",
@@ -4349,12 +4338,8 @@
           "id": "pathology",
           "name": "Pathology",
           "iconName": "ShieldAlert",
-          "lectures": "",
-          "lectureCount": 2,
-          "lectureNames": [
-            "Pathological Aspects of CNS Infections",
-            "Lecture 2"
-          ],
+          "lectures": "L1-L5",
+          "lectureCount": 5,
           "questions": [
             {
               "id": "mcns2-ch8-pathology-q1",
@@ -4995,7 +4980,7 @@
             {
               "id": "mcns2-ch8-pathology-q43",
               "type": "essay",
-              "lecture": 2,
+              "lecture": 5,
               "text": "What are the causes of meningitis?",
               "explanation": "This question asks: What are the causes of meningitis? Key point: Infection (bacterial, viral, tuberculous, spirochetal, or cryptococcal) Certain drugs and chemicals SLE, Meningeal carcinomatosis.",
               "keyConcept": "Are the causes of meningitis",
@@ -5004,7 +4989,7 @@
             {
               "id": "mcns2-ch8-pathology-q44",
               "type": "essay",
-              "lecture": 2,
+              "lecture": 5,
               "text": "What are the clinical features of meningitis?",
               "explanation": "This question asks: What are the clinical features of meningitis? Key point: Fever, headache, neck stiffness, Photophobia Altered mental state Cranial nerve deficit.",
               "keyConcept": "Are the clinical features of meningitis",
@@ -5013,7 +4998,7 @@
             {
               "id": "mcns2-ch8-pathology-q45",
               "type": "essay",
-              "lecture": 2,
+              "lecture": 5,
               "text": "How is acute meningitis characterized?",
               "explanation": "This question asks: How is acute meningitis characterized? Key point: Inflammation of the leptomeninges with cerebrospinal fluid (CSF) in the subarachnoid space.",
               "keyConcept": "Is acute meningitis characterized",
@@ -5022,7 +5007,7 @@
             {
               "id": "mcns2-ch8-pathology-q46",
               "type": "essay",
-              "lecture": 2,
+              "lecture": 5,
               "text": "What is the most common cause of cerebral arterial occlusion?",
               "explanation": "This question asks: What is the most common cause of cerebral arterial occlusion? Key point: Thrombi or emboli.",
               "keyConcept": "Is the most common cause of cerebral arterial occlusion",
@@ -5031,7 +5016,7 @@
             {
               "id": "mcns2-ch8-pathology-q47",
               "type": "essay",
-              "lecture": 2,
+              "lecture": 5,
               "text": "What are the etiologies of acute meningitis?",
               "explanation": "This question asks: What are the etiologies of acute meningitis? Key point: Pyogenic (meningococci, pneumococci, E.",
               "keyConcept": "Are the etiologies of acute meningitis",
@@ -5040,7 +5025,7 @@
             {
               "id": "mcns2-ch8-pathology-q48",
               "type": "essay",
-              "lecture": 2,
+              "lecture": 5,
               "text": "What are the morphological changes in acute meningitis?",
               "explanation": "This question asks: What are the morphological changes in acute meningitis? Key point: Pus and fibrin in subarachnoid space Dilated vessels, neutrophils infiltrate Excess proteins, reduced glucose.",
               "keyConcept": "Are the morphological changes in acute meningitis",
@@ -5049,7 +5034,7 @@
             {
               "id": "mcns2-ch8-pathology-q49",
               "type": "essay",
-              "lecture": 2,
+              "lecture": 5,
               "text": "What are the complications of acute meningitis?",
               "explanation": "This question asks: What are the complications of acute meningitis? Key point: Spread to encephalitis, pyemia & septicemia Adrenal necrosis (Waterhouse Friedrichsen syndrome) Fibrosis leading to cranial nerve compression and hydrocephalus.",
               "keyConcept": "Are the complications of acute meningitis",
@@ -5058,7 +5043,7 @@
             {
               "id": "mcns2-ch8-pathology-q50",
               "type": "essay",
-              "lecture": 2,
+              "lecture": 5,
               "text": "How is aseptic meningitis characterized?",
               "explanation": "This question asks: How is aseptic meningitis characterized? Key point: Normal glucose and protein levels in CSF Usually self limiting with no complications.",
               "keyConcept": "Is aseptic meningitis characterized",
@@ -5067,7 +5052,7 @@
             {
               "id": "mcns2-ch8-pathology-q51",
               "type": "essay",
-              "lecture": 2,
+              "lecture": 5,
               "text": "What are the etiologies of chronic meningitis?",
               "explanation": "This question asks: What are the etiologies of chronic meningitis? Key point: Tuberculosis Syphilis.",
               "keyConcept": "Are the etiologies of chronic meningitis",
@@ -5076,7 +5061,7 @@
             {
               "id": "mcns2-ch8-pathology-q52",
               "type": "essay",
-              "lecture": 2,
+              "lecture": 5,
               "text": "What is a brain abscess?",
               "explanation": "This question asks: What is a brain abscess? Key point: A localized collection of pus within the brain tissue.",
               "keyConcept": "Is a brain abscess",
@@ -5085,7 +5070,7 @@
             {
               "id": "mcns2-ch8-pathology-q53",
               "type": "essay",
-              "lecture": 2,
+              "lecture": 5,
               "text": "What are the etiologies of brain abscess?",
               "explanation": "This question asks: What are the etiologies of brain abscess? Key point: Pyogenic bacterial infections (sinusitis, otitis media, pyemia, suppurative lung diseases).",
               "keyConcept": "Are the etiologies of brain abscess",
@@ -5094,7 +5079,7 @@
             {
               "id": "mcns2-ch8-pathology-q54",
               "type": "essay",
-              "lecture": 2,
+              "lecture": 5,
               "text": "What are the morphological changes in brain abscess?",
               "explanation": "This question asks: What are the morphological changes in brain abscess? Key point: Irregular cavitation (liquefaction) with surrounding edematous brain tissue, ring enhancing lesions on CT/MRI Microscopic presence of liquefied tissue and neutrophils Nec.",
               "keyConcept": "Are the morphological changes in brain abscess",
@@ -5103,7 +5088,7 @@
             {
               "id": "mcns2-ch8-pathology-q55",
               "type": "essay",
-              "lecture": 2,
+              "lecture": 5,
               "text": "What are the complications of brain abscess?",
               "explanation": "This question asks: What are the complications of brain abscess? Key point: Pressure effects according to the site (could be fatal) Spread to other areas.",
               "keyConcept": "Are the complications of brain abscess",
@@ -5112,7 +5097,7 @@
             {
               "id": "mcns2-ch8-pathology-q56",
               "type": "essay",
-              "lecture": 2,
+              "lecture": 5,
               "text": "What is viral encephalitis?",
               "explanation": "This question asks: What is viral encephalitis? Key point: Infection of the brain associated with meningeal inflammation (meningoencephalitis).",
               "keyConcept": "Is viral encephalitis",
@@ -5121,7 +5106,7 @@
             {
               "id": "mcns2-ch8-pathology-q57",
               "type": "essay",
-              "lecture": 2,
+              "lecture": 5,
               "text": "What are the morphological features of viral encephalitis?",
               "explanation": "This question asks: What are the morphological features of viral encephalitis? Key point: Perivascular and parenchymal mononuclear cell infiltrates Microglial nodules Neuronophagia Inclusion bodies in certain viruses (e.g., Negri bodies in rabies).",
               "keyConcept": "Are the morphological features of viral encephalitis",
@@ -5130,7 +5115,7 @@
             {
               "id": "mcns2-ch8-pathology-q58",
               "type": "essay",
-              "lecture": 2,
+              "lecture": 5,
               "text": "What is the direct effect of HIV-1 on the brain?",
               "explanation": "This question asks: What is the direct effect of HIV-1 on the brain? Key point: HIV 1 can cause opportunistic infections or tumors (primary CNS lymphoma) It can also directly injure the brain, leading to aseptic meningitis, meningoencephalitis (AIDS .",
               "keyConcept": "Is the direct effect of HIV-1 on the brain",
@@ -5139,7 +5124,7 @@
             {
               "id": "mcns2-ch8-pathology-q59",
               "type": "essay",
-              "lecture": 2,
+              "lecture": 5,
               "text": "What is the cause and results of progressive multifocal leukoencephalopathy (PML)?",
               "explanation": "This question asks: What is the cause and results of progressive multifocal leukoencephalopathy (PML)? Key point: It is caused by the JC virus Resulting in demyelination of the white matter.",
               "keyConcept": "Is the cause and results of progressive multifocal leukoencephalopathy (PML)",
@@ -5148,7 +5133,7 @@
             {
               "id": "mcns2-ch8-pathology-q60",
               "type": "essay",
-              "lecture": 2,
+              "lecture": 5,
               "text": "Where in the brain does HSV encephalitis commonly affect?",
               "explanation": "This question asks: Where in the brain does HSV encephalitis commonly affect? Key point: Inferior and medial regions of the temporal lobes Orbital gyri of the frontal lobes.",
               "keyConcept": "In the brain does HSV encephalitis commonly affect",
@@ -5157,7 +5142,7 @@
             {
               "id": "mcns2-ch8-pathology-q61",
               "type": "essay",
-              "lecture": 2,
+              "lecture": 5,
               "text": "Which fungi commonly cause encephalitis?",
               "explanation": "This question asks: Which fungi commonly cause encephalitis? Key point: Candida albicans Mucormycosis Aspergillus fumigatus Cryptococcus neoformans.",
               "keyConcept": "Fungi commonly cause encephalitis",
@@ -5166,7 +5151,7 @@
             {
               "id": "mcns2-ch8-pathology-q62",
               "type": "essay",
-              "lecture": 2,
+              "lecture": 5,
               "text": "How do most fungi invade the brain?",
               "explanation": "This question asks: How do most fungi invade the brain? Key point: By hematogenous dissemination By direct extension from sinuses.",
               "keyConcept": "Do most fungi invade the brain",
@@ -5178,12 +5163,8 @@
           "id": "parasitology",
           "name": "Parasitology",
           "iconName": "Bug",
-          "lectures": "",
-          "lectureCount": 2,
-          "lectureNames": [
-            "Amoebic Enecephalitis",
-            "Larvae Affecting The Brain"
-          ],
+          "lectures": "L1-L5",
+          "lectureCount": 5,
           "questions": [
             {
               "id": "mcns2-ch8-parasitology-q1",
@@ -6383,7 +6364,7 @@
             {
               "id": "mcns2-ch8-parasitology-q84",
               "type": "essay",
-              "lecture": 2,
+              "lecture": 3,
               "text": "Name two intermediate hosts of Spirometra mansoni.",
               "explanation": "This question concerns name two intermediate hosts of Spirometra mansoni.. Key point: Cyclops Frogs, snakes, bird Mammals.",
               "keyConcept": "Two intermediate hosts of Spirometra mansoni",
@@ -6392,7 +6373,7 @@
             {
               "id": "mcns2-ch8-parasitology-q85",
               "type": "essay",
-              "lecture": 2,
+              "lecture": 3,
               "text": "What’s the mode of infection of sparganosis?",
               "explanation": "This question asks: What’s the mode of infection of sparganosis? Key point: Drinking contaminated water Eating row or undercooked frogs or birds Applying infected frogs as poultices.",
               "keyConcept": "’s the mode of infection of sparganosis",
@@ -6401,7 +6382,7 @@
             {
               "id": "mcns2-ch8-parasitology-q86",
               "type": "essay",
-              "lecture": 2,
+              "lecture": 3,
               "text": "Sparganosis generally involves…….. and …….. lobes and may extend to .........",
               "explanation": "This question concerns sparganosis generally involves…….. and …….. lobes and may extend to .......... Key point: Frontal Parietal Cerebellum.",
               "keyConcept": "Sparganosis generally involves…… and …… lobes and may extend to",
@@ -6410,7 +6391,7 @@
             {
               "id": "mcns2-ch8-parasitology-q87",
               "type": "essay",
-              "lecture": 2,
+              "lecture": 4,
               "text": "Name modes of infection with Cysticercosis.",
               "explanation": "This question concerns name modes of infection with Cysticercosis.. Key point: Heteroinfection y Autoinfection.",
               "keyConcept": "Modes of infection with Cysticercosis",
@@ -6419,7 +6400,7 @@
             {
               "id": "mcns2-ch8-parasitology-q88",
               "type": "essay",
-              "lecture": 2,
+              "lecture": 4,
               "text": "What’s the types of auto infection of Taenia solium?",
               "explanation": "This question asks: What’s the types of auto infection of Taenia solium? Key point: External autoinfection Internal autoinfection.",
               "keyConcept": "’s the types of auto infection of Taenia solium",
@@ -6428,7 +6409,7 @@
             {
               "id": "mcns2-ch8-parasitology-q89",
               "type": "essay",
-              "lecture": 2,
+              "lecture": 4,
               "text": "Name three organs cysticerci are located in and cause Cysticercosis.",
               "explanation": "This question concerns name three organs cysticerci are located in and cause Cysticercosis.. Key point: Muscles y Eye y CNS.",
               "keyConcept": "Three organs cysticerci are located in and cause Cysticercosis",
@@ -6437,7 +6418,7 @@
             {
               "id": "mcns2-ch8-parasitology-q90",
               "type": "essay",
-              "lecture": 2,
+              "lecture": 4,
               "text": "Name two symptoms of Neurocysticercosis.",
               "explanation": "This question concerns name two symptoms of Neurocysticercosis.. Key point: Headache, vomiting and vertigo Convulsions and epilepsy Disequilibrium, abnormal behavior and meningoencephalitis.",
               "keyConcept": "Two symptoms of Neurocysticercosis",
@@ -6446,7 +6427,7 @@
             {
               "id": "mcns2-ch8-parasitology-q91",
               "type": "essay",
-              "lecture": 2,
+              "lecture": 4,
               "text": "What’s the gold standard to diagnose sparganosis?",
               "explanation": "This question asks: What’s the gold standard to diagnose sparganosis? Key point: Biopsy.",
               "keyConcept": "’s the gold standard to diagnose sparganosis",
@@ -6455,7 +6436,7 @@
             {
               "id": "mcns2-ch8-parasitology-q92",
               "type": "essay",
-              "lecture": 2,
+              "lecture": 4,
               "text": "What’s the treatment of sparganosis?",
               "explanation": "This question asks: What’s the treatment of sparganosis? Key point: Surgical removal.",
               "keyConcept": "’s the treatment of sparganosis",
@@ -6464,7 +6445,7 @@
             {
               "id": "mcns2-ch8-parasitology-q93",
               "type": "essay",
-              "lecture": 2,
+              "lecture": 4,
               "text": "How to prevent infection with sparganum mansoni larvae?",
               "explanation": "This question asks: How to prevent infection with sparganum mansoni larvae? Key point: Destruction of cyclops by filtering and boiling water before drinking Don’t use row frogs as poultices Cook frogs and birds properly.",
               "keyConcept": "To prevent infection with sparganum mansoni larvae",
@@ -6473,7 +6454,7 @@
             {
               "id": "mcns2-ch8-parasitology-q94",
               "type": "essay",
-              "lecture": 2,
+              "lecture": 4,
               "text": "What’s the infective stage of Cysticercosis?",
               "explanation": "This question asks: What’s the infective stage of Cysticercosis? Key point: Procercoid larva Sparganum larva Cysticercosis.",
               "keyConcept": "’s the infective stage of Cysticercosis",
@@ -6482,7 +6463,7 @@
             {
               "id": "mcns2-ch8-parasitology-q95",
               "type": "essay",
-              "lecture": 2,
+              "lecture": 4,
               "text": "Name three ways to diagnose Cysticercosis.",
               "explanation": "This question concerns name three ways to diagnose Cysticercosis.. Key point: Stool examination y ELISA CSF analysis y Biopsy Imaging technique.",
               "keyConcept": "Three ways to diagnose Cysticercosis",
@@ -6491,7 +6472,7 @@
             {
               "id": "mcns2-ch8-parasitology-q96",
               "type": "essay",
-              "lecture": 2,
+              "lecture": 4,
               "text": "List two lines of treatment of Cysticercosis.",
               "explanation": "This question concerns list two lines of treatment of Cysticercosis.. Key point: Albendazole Praziquantel Antiepileptic Surgical treatment.",
               "keyConcept": "Two lines of treatment of Cysticercosis",
@@ -6500,7 +6481,7 @@
             {
               "id": "mcns2-ch8-parasitology-q97",
               "type": "essay",
-              "lecture": 2,
+              "lecture": 4,
               "text": "How to prevent Cysticercosis?",
               "explanation": "This question asks: How to prevent Cysticercosis? Key point: Early detection and treatment of taniae solium Protecting food of contamination with infected human’s feces Personal hygiene Environmental sanitization.",
               "keyConcept": "To prevent Cysticercosis",
@@ -6509,7 +6490,7 @@
             {
               "id": "mcns2-ch8-parasitology-q98",
               "type": "essay",
-              "lecture": 2,
+              "lecture": 5,
               "text": "Name three parasites don’t habitat the brain but have neurological complications.",
               "explanation": "This question concerns name three parasites don’t habitat the brain but have neurological complications.. Key point: Toxoplasma gondii Echinococcus granulosum Plasmodium falciparum African trypanosoma Entamoeba histolytica.",
               "keyConcept": "Three parasites don’t habitat the brain but have neurological complications",
@@ -6518,7 +6499,7 @@
             {
               "id": "mcns2-ch8-parasitology-q99",
               "type": "essay",
-              "lecture": 2,
+              "lecture": 5,
               "text": "What’s the types of toxoplasma gondii infection?",
               "explanation": "This question asks: What’s the types of toxoplasma gondii infection? Key point: Infection in immunocompromised hosts Congenital toxoplasmosis.",
               "keyConcept": "’s the types of toxoplasma gondii infection",
@@ -6527,7 +6508,7 @@
             {
               "id": "mcns2-ch8-parasitology-q100",
               "type": "essay",
-              "lecture": 2,
+              "lecture": 5,
               "text": "List four symptoms and signs of toxoplasma gondii in immunocompromised hosts.",
               "explanation": "This question concerns list four symptoms and signs of toxoplasma gondii in immunocompromised hosts.. Key point: Fever, headache, vomiting Speech difficulty, behavioral changes, seizure Ataxia, visual field defect, altered mental status Focal neurological deficit and cranial nerve d.",
               "keyConcept": "Four symptoms and signs of toxoplasma gondii in immunocompromised hosts",
@@ -6536,7 +6517,7 @@
             {
               "id": "mcns2-ch8-parasitology-q101",
               "type": "essay",
-              "lecture": 2,
+              "lecture": 5,
               "text": "Name two investigations to detect toxoplasma gondii.",
               "explanation": "This question concerns name two investigations to detect toxoplasma gondii.. Key point: CD4+ count CT and MRI Serology PCR Brain biopsy CSF examination.",
               "keyConcept": "Two investigations to detect toxoplasma gondii",

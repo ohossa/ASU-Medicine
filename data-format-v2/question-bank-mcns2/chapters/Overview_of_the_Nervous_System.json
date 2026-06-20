@@ -29,15 +29,8 @@
           "id": "anatomy",
           "name": "Anatomy",
           "iconName": "Bone",
-          "lectures": "",
+          "lectures": "L1-L5",
           "lectureCount": 5,
-          "lectureNames": [
-            "Sensory Cortex",
-            "Spinal Cord External Features",
-            "Lecture 3",
-            "Lecture 4",
-            "Lecture 5"
-          ],
           "questions": [
             {
               "id": "mcns2-ch1-anatomy-q1",
@@ -169,7 +162,7 @@
               "id": "mcns2-ch1-anatomy-q8",
               "type": "mcq",
               "lecture": 1,
-              "text": "Which of the following cells is not a neuroglia?",
+              "text": "ANA: Which of the following cells is not a neuroglia?",
               "explanation": "Purkinje cells are large neurons of the cerebellar cortex, not glial cells. Astrocytes, ependymal cells, oligodendrocytes and microglia are all neuroglia of the CNS.",
               "keyConcept": "Purkinje cells are neurons, not neuroglia.",
               "options": [
@@ -413,14 +406,8 @@
           "id": "physiology",
           "name": "Physiology",
           "iconName": "Activity",
-          "lectures": "",
-          "lectureCount": 4,
-          "lectureNames": [
-            "Processing of Signals in CNS",
-            "Lecture 2",
-            "Lecture 3",
-            "Lecture 4"
-          ],
+          "lectures": "L1-L5",
+          "lectureCount": 5,
           "questions": [
             {
               "id": "mcns2-ch1-physiology-q1",
@@ -730,7 +717,7 @@
               "id": "mcns2-ch1-physiology-q20",
               "type": "mcq",
               "lecture": 1,
-              "text": "GABA is an inhibitory neurotransmitter that increases the permeability of the postsynaptic neuron to:",
+              "text": "PHY: GABA is an inhibitory neurotransmitter that increases the permeability of the postsynaptic neuron to:",
               "explanation": "GABA opens chloride channels, increasing Cl- influx and hyperpolarizing the postsynaptic membrane. This produces inhibitory postsynaptic potentials.",
               "keyConcept": "GABA increases postsynaptic membrane permeability to chloride.",
               "options": [
@@ -746,7 +733,7 @@
               "id": "mcns2-ch1-physiology-q21",
               "type": "mcq",
               "lecture": 1,
-              "text": "Regarding neurotransmitters:",
+              "text": "PHY: Regarding neurotransmitters:",
               "explanation": "Dopamine is a monoamine transmitter strongly linked to mood, reward and motor control. GABA is inhibitory while glutamate is the main excitatory transmitter.",
               "keyConcept": "Dopamine function is related to mood.",
               "options": [
@@ -858,38 +845,6 @@
               "id": "mcns2-ch1-physiology-q28",
               "type": "mcq",
               "lecture": 1,
-              "text": "Regarding neurotransmitters:",
-              "explanation": "The correct answer is (c) The action of a neurotransmitter whether excitatory or inhibitory depends on its receptors. Among the listed options this is the choice that best matches the stem, and the other options are incorrect distractors.",
-              "keyConcept": "Neurotransmitters",
-              "options": [
-                "Neuropeptides are rapidly acting transmitters.",
-                "Rapidly acting transmitters are slowly inactivated.",
-                "The action of a neurotransmitter whether excitatory or inhibitory depends on its receptors.",
-                "Dopamine is an important excitatory transmitter.",
-                "Substance P function to decrease pain transmission."
-              ],
-              "correctIndex": 2
-            },
-            {
-              "id": "mcns2-ch1-physiology-q29",
-              "type": "mcq",
-              "lecture": 1,
-              "text": "Regarding neurotransmitters:",
-              "explanation": "The correct answer is (c) The same neurotransmitter may excite a target organ and inhibit another one. Among the listed options this is the choice that best matches the stem, and the other options are incorrect distractors.",
-              "keyConcept": "Neurotransmitters",
-              "options": [
-                "Neurohormones are secreted at synapses to affect neurons activity.",
-                "Neuromodulator is secreted by neuron into blood.",
-                "The same neurotransmitter may excite a target organ and inhibit another one.",
-                "A neurotransmitter has a specific one type of receptor.",
-                "Neuropeptides mediate acute responses of the nervous system."
-              ],
-              "correctIndex": 2
-            },
-            {
-              "id": "mcns2-ch1-physiology-q30",
-              "type": "mcq",
-              "lecture": 1,
               "text": "Regarding Acetylcholine:",
               "explanation": "The correct answer is (a) Is involved in arousal and motor activities. Among the listed options this is the choice that best matches the stem, and the other options are incorrect distractors.",
               "keyConcept": "Acetylcholine",
@@ -901,22 +856,6 @@
                 "Its action is potentiated by benzodiazepines."
               ],
               "correctIndex": 0
-            },
-            {
-              "id": "mcns2-ch1-physiology-q31",
-              "type": "mcq",
-              "lecture": 1,
-              "text": "Regarding neurotransmitters:",
-              "explanation": "The correct answer is (e) Benzodiazepines potentiate the actions of GABA. 1 Body fluids & Homeostasis Biophysics Sensory. Among the listed options this is the choice that best matches the stem, and the other options are incorrect distractors.",
-              "keyConcept": "Neurotransmitters",
-              "options": [
-                "Glycine causes depolarization of postsynaptic membrane.",
-                "GABA is antagonized by strychnine.",
-                "GABA causes increase Na+ influx to postsynaptic neuron.",
-                "Glycine is a facilitatory transmitter.",
-                "Benzodiazepines potentiate the actions of GABA. 1 Body fluids & Homeostasis Biophysics Sensory"
-              ],
-              "correctIndex": 4
             }
           ]
         },
@@ -924,23 +863,14 @@
           "id": "biochem",
           "name": "Biochemistry",
           "iconName": "FlaskConical",
-          "lectures": "",
-          "lectureCount": 7,
-          "lectureNames": [
-            "Ammonia and Urea Cycle",
-            "Energy Sources of CNS",
-            "Hyperammonaemia",
-            "Inborn Errors of Amino Acid Metabolism",
-            "Neurotransmitters",
-            "One-carbon Unit and Folate Metabolism",
-            "Vitamin Deficiency and Metabolic Disorders"
-          ],
+          "lectures": "L1-L5",
+          "lectureCount": 5,
           "questions": [
             {
               "id": "mcns2-ch1-biochem-q1",
               "type": "mcq",
               "lecture": 1,
-              "text": "Histamine is formed from histidine by which of the following?",
+              "text": "BIO: Histamine is formed from histidine by which of the following?",
               "explanation": "Histamine is produced from histidine by the enzyme histidine decarboxylase, which removes the carboxyl group. This decarboxylation reaction requires pyridoxal phosphate as a coenzyme.",
               "keyConcept": "Histamine is formed from histidine by decarboxylation.",
               "options": [
@@ -956,7 +886,7 @@
               "id": "mcns2-ch1-biochem-q2",
               "type": "mcq",
               "lecture": 1,
-              "text": "Neurons uptake glucose from the circulation through which of the following?",
+              "text": "BIO: Neurons uptake glucose from the circulation through which of the following?",
               "explanation": "Neurons take up glucose mainly through the high-affinity transporter GLUT3, allowing efficient uptake even at low glucose levels. GLUT1 instead serves the blood-brain barrier and glia.",
               "keyConcept": "Neurons take up glucose via GLUT3.",
               "options": [
@@ -972,7 +902,7 @@
               "id": "mcns2-ch1-biochem-q3",
               "type": "mcq",
               "lecture": 1,
-              "text": "What is the inborn error of branched chain amino acids metabolism?",
+              "text": "BIO: What is the inborn error of branched chain amino acids metabolism?",
               "explanation": "Maple syrup urine disease results from a defect in branched-chain alpha-keto acid dehydrogenase, impairing catabolism of leucine, isoleucine and valine. Accumulated keto acids give the urine a characteristic sweet odor.",
               "keyConcept": "Maple syrup urine disease is the inborn error of branched-chain amino acid metabolism.",
               "options": [
@@ -988,7 +918,7 @@
               "id": "mcns2-ch1-biochem-q4",
               "type": "mcq",
               "lecture": 1,
-              "text": "Which of the following is/are allosteric activator(s) of glutamate dehydrogenase?",
+              "text": "BIO: Which of the following is/are allosteric activator(s) of glutamate dehydrogenase?",
               "explanation": "Glutamate dehydrogenase is allosterically activated by ADP and GDP, signalling a low-energy state that favors amino acid oxidation. GTP and ATP act as inhibitors of the enzyme.",
               "keyConcept": "ADP and GDP allosterically activate glutamate dehydrogenase.",
               "options": [
@@ -1004,7 +934,7 @@
               "id": "mcns2-ch1-biochem-q5",
               "type": "mcq",
               "lecture": 1,
-              "text": "Which of the following releases free ammonia?",
+              "text": "BIO: Which of the following releases free ammonia?",
               "explanation": "Catabolism of amino acids releases free ammonia, largely through oxidative deamination of glutamate. The biosynthetic reactions listed instead consume amide or amino nitrogen rather than liberating free ammonia.",
               "keyConcept": "Amino acid catabolism releases free ammonia.",
               "options": [
@@ -1020,7 +950,7 @@
               "id": "mcns2-ch1-biochem-q6",
               "type": "mcq",
               "lecture": 1,
-              "text": "Which of the following results from decrease of Gamma Amino Butyric Acid (GABA) synthesis?",
+              "text": "BIO: Which of the following results from decrease of Gamma Amino Butyric Acid (GABA) synthesis?",
               "explanation": "GABA is the major inhibitory neurotransmitter, so reduced GABA synthesis lowers inhibition and produces convulsions. This is why vitamin B6 deficiency, which impairs GABA formation, can cause seizures.",
               "keyConcept": "Decreased GABA synthesis causes convulsions.",
               "options": [
@@ -1036,7 +966,7 @@
               "id": "mcns2-ch1-biochem-q7",
               "type": "mcq",
               "lecture": 1,
-              "text": "Which one of the following enzymes is stimulated by cortisol in epinephrine synthesis?",
+              "text": "BIO: Which one of the following enzymes is stimulated by cortisol in epinephrine synthesis?",
               "explanation": "Cortisol from the adrenal cortex induces phenylethanolamine N-methyl transferase (PNMT), which converts norepinephrine to epinephrine. This links adrenal medullary and cortical function.",
               "keyConcept": "Cortisol stimulates N-methyl transferase (PNMT) in epinephrine synthesis.",
               "options": [
@@ -1052,7 +982,7 @@
               "id": "mcns2-ch1-biochem-q8",
               "type": "mcq",
               "lecture": 1,
-              "text": "Which one of the following LDH isoenzymes is expressed in neurons?",
+              "text": "BIO: Which one of the following LDH isoenzymes is expressed in neurons?",
               "explanation": "Neurons express LDH1, the isoenzyme composed of four H subunits suited to aerobic tissues. It favors conversion of lactate back to pyruvate for oxidative metabolism.",
               "keyConcept": "Neurons express the LDH1 isoenzyme.",
               "options": [
@@ -1068,7 +998,7 @@
               "id": "mcns2-ch1-biochem-q9",
               "type": "mcq",
               "lecture": 1,
-              "text": "Methyl THF is used in synthesis of which of the following?",
+              "text": "BIO: Methyl THF is used in synthesis of which of the following?",
               "explanation": "Methyl-tetrahydrofolate donates its methyl group, via vitamin B12, to convert homocysteine into methionine. This reaction also regenerates free tetrahydrofolate.",
               "keyConcept": "Methyl-THF supplies the methyl group to form methionine from homocysteine.",
               "options": [
@@ -1084,7 +1014,7 @@
               "id": "mcns2-ch1-biochem-q10",
               "type": "mcq",
               "lecture": 1,
-              "text": "The active form of folate is the carrier of which of the following?",
+              "text": "BIO: The active form of folate is the carrier of which of the following?",
               "explanation": "Tetrahydrofolate, the active form of folate, carries and transfers one-carbon units at various oxidation levels. These units are used in nucleotide and amino acid synthesis.",
               "keyConcept": "Active folate carries one-carbon units.",
               "options": [
@@ -1100,7 +1030,7 @@
               "id": "mcns2-ch1-biochem-q11",
               "type": "mcq",
               "lecture": 1,
-              "text": "Which of the following is caused by niacin deficiency?",
+              "text": "BIO: Which of the following is caused by niacin deficiency?",
               "explanation": "Niacin (vitamin B3) deficiency causes pellagra, classically presenting with dermatitis, diarrhea and dementia. Niacin is a precursor of the coenzymes NAD and NADP.",
               "keyConcept": "Niacin deficiency causes pellagra.",
               "options": [
@@ -1116,7 +1046,7 @@
               "id": "mcns2-ch1-biochem-q12",
               "type": "mcq",
               "lecture": 1,
-              "text": "Which of the following is caused by thiamin deficiency?",
+              "text": "BIO: Which of the following is caused by thiamin deficiency?",
               "explanation": "Thiamin (vitamin B1) deficiency causes beriberi and Wernicke-Korsakoff syndrome. Thiamin pyrophosphate is a coenzyme for oxidative decarboxylation reactions.",
               "keyConcept": "Thiamin deficiency causes beriberi.",
               "options": [
@@ -1132,7 +1062,7 @@
               "id": "mcns2-ch1-biochem-q13",
               "type": "mcq",
               "lecture": 1,
-              "text": "Which of the following is/are the end product(s) of urea cycle?",
+              "text": "BIO: Which of the following is/are the end product(s) of urea cycle?",
               "explanation": "The cleavage of arginine by arginase yields urea and ornithine, while the preceding cleavage of argininosuccinate releases fumarate. The recognized end products of the cycle are therefore urea and fumarate.",
               "keyConcept": "The end products of the urea cycle are urea and fumarate.",
               "options": [
@@ -1148,7 +1078,7 @@
               "id": "mcns2-ch1-biochem-q14",
               "type": "mcq",
               "lecture": 1,
-              "text": "Which one of the following compounds is a link between citric acid cycle and urea cycle?",
+              "text": "BIO: Which one of the following compounds is a link between citric acid cycle and urea cycle?",
               "explanation": "Fumarate produced in the urea cycle can enter the citric acid cycle, linking the two pathways. There it is converted to malate and then oxaloacetate.",
               "keyConcept": "Fumarate links the urea cycle to the citric acid cycle.",
               "options": [
@@ -1164,7 +1094,7 @@
               "id": "mcns2-ch1-biochem-q15",
               "type": "mcq",
               "lecture": 1,
-              "text": "Which one of the following enzymes catalyzes this reaction: CO2 + NH3 + 2ATP yields carbamoyl phosphate?",
+              "text": "BIO: Which one of the following enzymes catalyzes this reaction: CO2 + NH3 + 2ATP yields carbamoyl phosphate?",
               "explanation": "Carbamoyl phosphate synthetase I, a mitochondrial enzyme, combines ammonia, carbon dioxide and two ATP to form carbamoyl phosphate. This is the committed first step of the urea cycle.",
               "keyConcept": "Carbamoyl phosphate synthetase I forms carbamoyl phosphate in the urea cycle.",
               "options": [
@@ -1180,7 +1110,7 @@
               "id": "mcns2-ch1-biochem-q16",
               "type": "mcq",
               "lecture": 1,
-              "text": "Which one of the following is required for the conversion of phenylalanine into tyrosine?",
+              "text": "BIO: Which one of the following is required for the conversion of phenylalanine into tyrosine?",
               "explanation": "Phenylalanine hydroxylase converts phenylalanine to tyrosine using tetrahydrobiopterin as the essential cofactor. Deficiency of this system causes phenylketonuria.",
               "keyConcept": "Tetrahydrobiopterin is required to convert phenylalanine to tyrosine.",
               "options": [
@@ -2014,14 +1944,8 @@
           "id": "histology",
           "name": "Histology",
           "iconName": "Microscope",
-          "lectures": "",
-          "lectureCount": 4,
-          "lectureNames": [
-            "Structure of CNS",
-            "Lecture 2",
-            "Lecture 3",
-            "Lecture 4"
-          ],
+          "lectures": "L1-L5",
+          "lectureCount": 5,
           "questions": [
             {
               "id": "mcns2-ch1-histology-q1",
@@ -2318,6 +2242,446 @@
                 "The multiform layer is the most superficial layer"
               ],
               "correctIndex": 0
+            },
+            {
+              "id": "mcns2-ch1-histology-essay-q23",
+              "type": "essay",
+              "lecture": 0,
+              "text": "Define neuroglia.",
+              "modelAnswer": "Neuroglia are the interstitial supporting cells of the nervous tissue.",
+              "keyConcept": "Neuroglia are the interstitial supporting cells of the nervous tissue.",
+              "explanation": "Neuroglia, also known as glial cells, play a crucial role in supporting and maintaining the structure and function of the nervous system. They provide nutrients, remove waste products, and offer physical support to neurons, allowing them to function optimally. In the context of histology, neuroglia are an essential component of the nervous tissue, and their proper identification and understanding are vital for medical students to comprehend the complex relationships between neurons and their supporting cells.",
+              "tags": []
+            },
+            {
+              "id": "mcns2-ch1-histology-essay-q24",
+              "type": "essay",
+              "lecture": 0,
+              "text": "Mention the histological components of the CNS.",
+              "modelAnswer": "Histologically, CNS is formed of nerve cells (neurons), supporting cells (neuroglia), and blood capillaries.",
+              "keyConcept": "The central nervous system (CNS) is composed of three primary histological components.",
+              "explanation": "The CNS is formed of nerve cells (neurons), which are responsible for transmitting and processing information, while supporting cells (neuroglia) provide structural and functional support to neurons. Blood capillaries are also present, supplying the CNS with oxygen and nutrients. These components work together to enable the complex functions of the CNS, including control of the body's functions and maintenance of homeostasis.",
+              "tags": []
+            },
+            {
+              "id": "mcns2-ch1-histology-essay-q25",
+              "type": "essay",
+              "lecture": 0,
+              "text": "How can neuroglia be seen in ordinary and special stains?",
+              "modelAnswer": "In H&E-stained sections, only the nuclei of neuroglia can be seen.\nNeuroglia can be detected by silver or gold impregnation methods.",
+              "keyConcept": "Neuroglia can be visualized in histological sections using specific staining techniques.",
+              "explanation": "In routine H&E-stained sections, only the nuclei of neuroglia are visible due to the limited staining capabilities of this method. However, specialized staining techniques such as silver or gold impregnation can highlight the entire cell, including the cytoplasm and processes of neuroglia, allowing for their detection and identification. This is particularly useful in diagnosing conditions affecting the central nervous system, where neuroglia play a crucial role in maintaining tissue integrity and function.",
+              "tags": []
+            },
+            {
+              "id": "mcns2-ch1-histology-essay-q26",
+              "type": "essay",
+              "lecture": 0,
+              "text": "Classify neuroglia according to site.",
+              "modelAnswer": "In the CNS, neuroglia include oligodendrocytes, astrocytes, microglia, and ependymal cells.\nIn the PNS, they include Schwann cells and satellite cells.",
+              "keyConcept": "Neuroglia can be classified into two main categories based on their location: central nervous system (CNS) and peripheral nervous system (PNS).",
+              "explanation": "This classification is essential in understanding the distinct roles and functions of different types of neuroglia in the CNS and PNS. In the CNS, oligodendrocytes, astrocytes, microglia, and ependymal cells play crucial roles in myelination, support, immune response, and cerebrospinal fluid production, respectively. In contrast, the PNS contains Schwann cells and satellite cells, which are responsible for myelination and supporting neurons, respectively.",
+              "tags": []
+            },
+            {
+              "id": "mcns2-ch1-histology-essay-q27",
+              "type": "essay",
+              "lecture": 0,
+              "text": "Describe the origin and site of oligodendrocytes.",
+              "modelAnswer": "Oligodendrocytes are ectodermal in origin and are found in the white matter of the CNS.",
+              "keyConcept": "Oligodendrocytes are ectodermal in origin and are found in the white matter of the CNS.",
+              "explanation": "Oligodendrocytes are a type of glial cell in the central nervous system (CNS) that are responsible for myelinating neurons. They originate from the ectoderm, one of the three primary germ layers that form during embryonic development. Specifically, oligodendrocytes are found in the white matter of the CNS, which is composed of myelinated nerve fibers that facilitate rapid transmission of electrical signals.",
+              "tags": []
+            },
+            {
+              "id": "mcns2-ch1-histology-essay-q28",
+              "type": "essay",
+              "lecture": 0,
+              "text": "Describe the shape of oligodendrocytes.",
+              "modelAnswer": "They are small cells with rounded dark nuclei.\nTheir thin cytoplasmic processes are filled with microtubules but lack intermediate filaments and glycogen.",
+              "keyConcept": "Oligodendrocytes have a distinctive shape characterized by thin cytoplasmic processes.",
+              "explanation": "Oligodendrocytes are a type of glial cell in the central nervous system that are responsible for myelinating neurons. Their unique shape, with thin cytoplasmic processes filled with microtubules, allows them to efficiently wrap around axons to form the myelin sheath, facilitating the transmission of electrical signals. This distinct morphology is a key feature that distinguishes oligodendrocytes from other types of glial cells.",
+              "tags": []
+            },
+            {
+              "id": "mcns2-ch1-histology-essay-q29",
+              "type": "essay",
+              "lecture": 0,
+              "text": "Explain how oligodendrocytes form myelin in the CNS.",
+              "modelAnswer": "Each process becomes sheet-like and wraps repeatedly around a portion of a nearby axon, forming the\nmyelin sheath in the CNS. One oligodendrocyte can myelinate up to 60 axons.",
+              "keyConcept": "Oligodendrocytes form myelin sheaths in the CNS by wrapping their processes around axons.",
+              "explanation": "In the central nervous system (CNS), oligodendrocytes play a crucial role in myelination by extending their processes to wrap around axons, forming a compact, insulating sheath known as the myelin sheath. This process allows for the rapid transmission of electrical signals along the axon, facilitating communication between neurons. One oligodendrocyte can myelinate up to 60 axons, making them highly efficient in their role.",
+              "tags": []
+            },
+            {
+              "id": "mcns2-ch1-histology-essay-q30",
+              "type": "essay",
+              "lecture": 0,
+              "text": "Mention the functions of oligodendrocytes.",
+              "modelAnswer": "They myelinate nerve fibers in the CNS, form myelin sheaths of several internodal segments on the same or\ndifferent axons, support neurons, and insulate nerve impulses.",
+              "keyConcept": "Oligodendrocytes play a crucial role in the central nervous system (CNS) by myelinating nerve fibers.",
+              "explanation": "Oligodendrocytes are a type of glial cell in the CNS that are responsible for myelinating nerve fibers, which is essential for the rapid transmission of nerve impulses. By forming myelin sheaths, oligodendrocytes increase the speed of nerve conduction and facilitate the insulation of nerve impulses, allowing for efficient communication between neurons. This process is vital for maintaining proper neural function and is a key feature of oligodendrocyte biology.",
+              "tags": []
+            },
+            {
+              "id": "mcns2-ch1-histology-essay-q31",
+              "type": "essay",
+              "lecture": 0,
+              "text": "Which cells are affected in multiple sclerosis?",
+              "modelAnswer": "Multiple sclerosis is chronic inflammation of the CNS characterized by loss of myelin due to destruction of\nOligodendrocytes.\nDuring active disease, T lymphocytes initiate inflammation with loss of oligodendrocytes and axon\ndemyelination in white matter.",
+              "keyConcept": "Multiple sclerosis is characterized by the destruction of oligodendrocytes, leading to demyelination in the CNS.",
+              "explanation": "In multiple sclerosis, the immune system mistakenly attacks the protective myelin sheath surrounding nerve fibers in the central nervous system (CNS), leading to the destruction of oligodendrocytes, the cells responsible for myelin production. This destruction results in demyelination, where the myelin sheath is lost, disrupting nerve signal transmission. The loss of oligodendrocytes is a critical aspect of the disease pathology, as it leads to the characteristic symptoms of multiple sclerosis, including vision loss, muscle weakness, and cognitive impairment.",
+              "tags": []
+            },
+            {
+              "id": "mcns2-ch1-histology-essay-q32",
+              "type": "essay",
+              "lecture": 0,
+              "text": "Describe the origin and site of astrocytes.",
+              "modelAnswer": "Astrocytes are ectodermal in origin. They are present in white and gray matter and are the most numerous\nglial cells in gray matter.",
+              "keyConcept": "Astrocytes originate from the ectodermal layer of the neural tube.",
+              "explanation": "Astrocytes are a type of glial cell that arises from the ectodermal layer of the neural tube during embryonic development. This ectodermal origin is distinct from other glial cells, such as oligodendrocytes, which have a different developmental lineage. As a result, astrocytes are found in both white and gray matter, with the highest concentration in gray matter, where they play a crucial role in maintaining the extracellular environment and supporting neuronal function.",
+              "tags": []
+            },
+            {
+              "id": "mcns2-ch1-histology-essay-q33",
+              "type": "essay",
+              "lecture": 0,
+              "text": "Describe the general shape of astrocytes.",
+              "modelAnswer": "Astrocytes are star-like cells. Their processes end by expanded parts called astrocyte feet, which contact\nblood capillaries, neurons, or nerve fibers. Astrocytes are connected by gap junctions and have large ovoid\nor rounded nuclei.",
+              "keyConcept": "Astrocytes have a star-like shape with expanded processes called astrocyte feet that contact surrounding cells and blood vessels.",
+              "explanation": "Astrocytes are a type of glial cell in the central nervous system that play a crucial role in maintaining the environment surrounding neurons. Their star-like shape allows them to extend their processes to contact blood capillaries, neurons, and nerve fibers, facilitating the exchange of nutrients and waste products. The expanded parts of their processes, known as astrocyte feet, are particularly important for this function, enabling astrocytes to regulate the local environment and support neuronal health.",
+              "tags": []
+            },
+            {
+              "id": "mcns2-ch1-histology-essay-q34",
+              "type": "essay",
+              "lecture": 0,
+              "text": "List the cytoplasmic contents of astrocytes.",
+              "modelAnswer": "Their cytoplasm contains microtubules, intermediate glial filaments formed of GFAP, thread-like\nmitochondria, and glycogen.",
+              "keyConcept": "Astrocytes contain a unique set of cytoplasmic components that support their role in the central nervous system.",
+              "explanation": "Astrocytes, a type of glial cell in the brain and spinal cord, are characterized by their distinctive cytoplasmic contents. These include microtubules, which provide structural support, intermediate filaments formed of glial fibrillary acidic protein (GFAP), which gives the cell its characteristic appearance, and thread-like mitochondria, which generate energy for the cell. Additionally, astrocytes contain glycogen, a complex carbohydrate that serves as a readily available energy source, highlighting their role in supporting the metabolic needs of neurons.",
+              "tags": []
+            },
+            {
+              "id": "mcns2-ch1-histology-essay-q35",
+              "type": "essay",
+              "lecture": 0,
+              "text": "Classify astrocytes.",
+              "modelAnswer": "Fibrous astrocytes are found in white matter and have long thin processes.\nProtoplasmic astrocytes are found in gray matter and have short extensive processes.\nSpecialized astrocytes include Muller cells in the retina and pituicytes of the posterior pituitary.",
+              "keyConcept": "Astrocytes are a type of glial cell in the central nervous system that can be classified into different subtypes based on their morphology and location.",
+              "explanation": "Astrocytes play a crucial role in maintaining the health and function of neurons in the central nervous system. Fibrous astrocytes, found in white matter, have long thin processes that facilitate the transmission of signals, whereas protoplasmic astrocytes, found in gray matter, have short extensive processes that allow for nutrient and waste exchange. Specialized astrocytes, such as Muller cells in the retina and pituicytes in the posterior pituitary, have unique functions and morphologies that adapt to their specific locations within the nervous system.",
+              "tags": []
+            },
+            {
+              "id": "mcns2-ch1-histology-essay-q36",
+              "type": "essay",
+              "lecture": 0,
+              "text": "Mention 5 functions of astrocytes.",
+              "modelAnswer": "Astrocytes secrete factors regulating neural functions, support neurons, store glycogen that can be broken\ndown to glucose and lactate for neurons, repair by proliferation and glial scar formation, and form part of\nthe blood-brain barrier.",
+              "keyConcept": "Astrocytes play a multifaceted role in the central nervous system, encompassing various functions beyond mere support.",
+              "explanation": "Astrocytes are a type of glial cell that perform a range of critical functions, including the secretion of factors that regulate neural functions, support of neurons through the provision of nutrients and oxygen, and the storage of glycogen that can be broken down to glucose and lactate for the energy needs of neurons. Additionally, astrocytes are involved in the repair of damaged neural tissue through proliferation and the formation of glial scars, and they contribute to the integrity of the blood-brain barrier, which is essential for maintaining the unique environment of the central nervous system.",
+              "tags": []
+            },
+            {
+              "id": "mcns2-ch1-histology-essay-q37",
+              "type": "essay",
+              "lecture": 0,
+              "text": "Describe the origin, site, and shape of microglia.",
+              "modelAnswer": "Microglia originate from blood monocytes. They are found in gray and white matter of the brain and spinal\ncord, retina, and optic nerve. They are small spindle-shaped cells with branching poles, minute surface\nspines, dense elongated nuclei, and scanty cytoplasm.",
+              "keyConcept": "Microglia are small, spindle-shaped cells that originate from blood monocytes.",
+              "explanation": "Microglia are a type of glial cell that play a crucial role in the immune response within the central nervous system. They are derived from circulating blood monocytes that migrate into the brain and spinal cord, where they differentiate into microglia. This unique origin and function allow microglia to act as the first line of defense against pathogens and injury in the central nervous system.",
+              "tags": []
+            },
+            {
+              "id": "mcns2-ch1-histology-essay-q38",
+              "type": "essay",
+              "lecture": 0,
+              "text": "Mention the functions of microglia.",
+              "modelAnswer": "Microglia are the phagocytes of the CNS.\nThey express receptors for neurotransmitters and may influence synaptic transmission.\nDuring development, they remove apoptotic cells.",
+              "keyConcept": "Microglia serve as the primary phagocytic cells in the central nervous system (CNS).",
+              "explanation": "Microglia play a crucial role in maintaining the health of the CNS by acting as phagocytes, engulfing and removing dead cells, foreign substances, and other debris. This function is essential for preventing the accumulation of toxic waste and promoting a healthy environment for neuronal function. Additionally, microglia express receptors for neurotransmitters, which allows them to modulate synaptic transmission and influence the surrounding neural environment.",
+              "tags": []
+            },
+            {
+              "id": "mcns2-ch1-histology-essay-q39",
+              "type": "essay",
+              "lecture": 0,
+              "text": "Describe the origin and site of ependymal cells.",
+              "modelAnswer": "Ependymal cells are ectodermal in origin.\nThey line the ventricles of the brain and the central canal of the spinal cord.",
+              "keyConcept": "Ependymal cells originate from the ectoderm and line the ventricles of the brain and the central canal of the spinal cord.",
+              "explanation": "Ependymal cells are a type of glial cell that arise from the ectoderm, one of the three primary germ layers formed during embryonic development. This ectodermal origin is distinct from other types of glial cells, such as astrocytes and oligodendrocytes, which originate from the neuroectoderm. The unique location of ependymal cells lining the ventricles and central canal allows them to play a crucial role in the production and circulation of cerebrospinal fluid.",
+              "tags": []
+            },
+            {
+              "id": "mcns2-ch1-histology-essay-q40",
+              "type": "essay",
+              "lecture": 0,
+              "text": "Describe the shape of ependymal cells.",
+              "modelAnswer": "They are cuboidal or columnar cells.\nThey do not rest on a basement membrane, and their apical surfaces have numerous microvilli and cilia.",
+              "keyConcept": "Ependymal cells are cuboidal or columnar cells with distinctive apical surface features.",
+              "explanation": "Ependymal cells are a type of glial cell found in the central nervous system, specifically lining the ventricles and central canal of the spinal cord. They are characterized by their cuboidal or columnar shape, which allows them to form a single layer of cells that can move and circulate cerebrospinal fluid. The presence of numerous microvilli and cilia on their apical surfaces further facilitates this function, enabling the efficient exchange of nutrients and waste products.",
+              "tags": []
+            },
+            {
+              "id": "mcns2-ch1-histology-essay-q41",
+              "type": "essay",
+              "lecture": 0,
+              "text": "Classify ependymal cells.",
+              "modelAnswer": "They include ependymal cells lining the third and fourth ventricles, tanycytes (ependymal astrocytes), and\nchoroidal epithelium.",
+              "keyConcept": "Ependymal cells are a heterogeneous group of cells with distinct subtypes.",
+              "explanation": "Ependymal cells are a type of glial cell that line the ventricles and central canal of the spinal cord in the central nervous system. They include ependymal cells lining the third and fourth ventricles, tanycytes (ependymal astrocytes), and choroidal epithelium, each with unique morphological and functional characteristics. Understanding the different subtypes of ependymal cells is essential for medical students to appreciate the complex structure and function of the central nervous system.",
+              "tags": []
+            },
+            {
+              "id": "mcns2-ch1-histology-essay-q42",
+              "type": "essay",
+              "lecture": 0,
+              "text": "Describe ependymal cells lining the third and fourth ventricles.",
+              "modelAnswer": "They are joined by tight junctions and desmosomes.\nTheir apical surfaces have numerous microvilli.\nNumerous mitochondria, basal infoldings, and basal nuclei.",
+              "keyConcept": "Ependymal cells lining the third and fourth ventricles are characterized by their unique ultrastructural features.",
+              "explanation": "Ependymal cells are specialized cells that line the ventricular system of the brain, including the third and fourth ventricles. They are joined by tight junctions and desmosomes, which provide a tight seal and maintain the integrity of the ventricular system. The apical surfaces of these cells have numerous microvilli, which increase the surface area for the absorption of cerebrospinal fluid, while the presence of numerous mitochondria, basal infoldings, and basal nuclei suggests a high metabolic activity and a role in the production and circulation of cerebrospinal fluid.",
+              "tags": []
+            },
+            {
+              "id": "mcns2-ch1-histology-essay-q43",
+              "type": "essay",
+              "lecture": 0,
+              "text": "Mention the functions of ependymal cells.",
+              "modelAnswer": "Ependymal cells help circulation of CSF by their cilia and have absorptive function by their microvilli.\nSome may be stem cells in the adult human brain, but their neural regenerative potential is still under\ninvestigation.",
+              "keyConcept": "Ependymal cells play a crucial role in the circulation and absorption of cerebrospinal fluid (CSF).",
+              "explanation": "Ependymal cells are specialized cells that line the ventricles and central canal of the spinal cord, and they are responsible for the circulation of cerebrospinal fluid (CSF) throughout the central nervous system. The cilia on these cells help to propel CSF, while the microvilli aid in the absorption of CSF, maintaining the delicate balance of fluid within the brain and spinal cord. Additionally, some ependymal cells have been identified as potential stem cells in the adult human brain, although their neural regenerative potential is still being researched.",
+              "tags": []
+            },
+            {
+              "id": "mcns2-ch1-histology-essay-q44",
+              "type": "essay",
+              "lecture": 0,
+              "text": "Describe the histological structure of the choroid plexus.",
+              "modelAnswer": "Each villus has a central core of pia mater with fenestrated blood capillaries and is covered by columnar\nependymal cells lining the brain ventricles.",
+              "keyConcept": "The choroid plexus is composed of villi with a central core of pia mater and fenestrated blood capillaries covered by ependymal cells.",
+              "explanation": "The choroid plexus is a highly specialized structure found in the brain's ventricles, responsible for producing cerebrospinal fluid (CSF). The villi of the choroid plexus contain a central core of pia mater, which is surrounded by fenestrated blood capillaries that allow for the exchange of ions and nutrients. The entire structure is lined by columnar ependymal cells, which play a crucial role in the production and secretion of CSF.",
+              "tags": []
+            },
+            {
+              "id": "mcns2-ch1-histology-essay-q45",
+              "type": "essay",
+              "lecture": 0,
+              "text": "What is the function of the choroid plexus?",
+              "modelAnswer": "The choroid plexus secretes cerebrospinal fluid.",
+              "keyConcept": "The choroid plexus is responsible for the production of cerebrospinal fluid.",
+              "explanation": "The choroid plexus, located in the ventricles of the brain, plays a crucial role in the production of cerebrospinal fluid (CSF). This clear fluid serves as a protective cushion for the brain and spinal cord, providing shock absorption and facilitating the exchange of nutrients and waste products. The choroid plexus secretes CSF through a process involving the active transport of ions and the filtration of blood components, ensuring a stable and healthy environment for the central nervous system.",
+              "tags": []
+            },
+            {
+              "id": "mcns2-ch1-histology-essay-q46",
+              "type": "essay",
+              "lecture": 0,
+              "text": "Define hydrocephalus and mention its causes.",
+              "modelAnswer": "Hydrocephalus is excess CSF in brain cavities, increasing intracranial pressure.\nCauses include decreased absorption of CSF and obstruction of CSF outflow.",
+              "keyConcept": "Hydrocephalus is characterized by an accumulation of excess cerebrospinal fluid (CSF) in the brain's ventricles, leading to increased intracranial pressure.",
+              "explanation": "This condition occurs when the production or absorption of CSF is disrupted, resulting in a buildup of fluid. The causes of hydrocephalus can be attributed to either decreased absorption of CSF by the arachnoid villi or obstruction of the CSF outflow pathways, such as the aqueduct of Sylvius or the foramina of Magendie and Luschka.",
+              "tags": []
+            },
+            {
+              "id": "mcns2-ch1-histology-essay-q47",
+              "type": "essay",
+              "lecture": 0,
+              "text": "List the components of the blood-brain barrier.",
+              "modelAnswer": "The BBB is formed of continuous endothelial cells sealed by tight junctions, continuous basement\nmembrane of endothelial cells, pericytes, and a limiting layer of perivascular astrocytic feet around the\ncapillary basal lamina.",
+              "keyConcept": "The blood-brain barrier is a highly selective permeability barrier that separates the circulating blood from the brain and extracellular fluid in the central nervous system.",
+              "explanation": "The blood-brain barrier is composed of multiple layers, including continuous endothelial cells sealed by tight junctions, a continuous basement membrane of endothelial cells, pericytes, and a limiting layer of perivascular astrocytic feet around the capillary basal lamina. This complex structure allows for the selective passage of nutrients and ions while restricting the entry of pathogens and toxins into the brain. The integrity of the blood-brain barrier is crucial for maintaining the homeostasis of the central nervous system and preventing neurological disorders.",
+              "tags": []
+            },
+            {
+              "id": "mcns2-ch1-histology-essay-q48",
+              "type": "essay",
+              "lecture": 0,
+              "text": "Where is the blood-brain barrier lacking?",
+              "modelAnswer": "It is lacking in endocrine regions such as posterior pituitary and pineal body, in regions of the\nhypothalamus where plasma components are monitored, and in the choroid plexus where CSF is produced.",
+              "keyConcept": "The blood-brain barrier is selectively permeable, lacking in certain regions where the exchange of substances between the blood and the brain is necessary.",
+              "explanation": "The blood-brain barrier is a highly selective permeable barrier that restricts the passage of certain substances from the blood into the brain. It is lacking in endocrine regions such as the posterior pituitary and pineal body, where the release of hormones into the bloodstream is necessary. Additionally, it is also absent in regions of the hypothalamus where plasma components are monitored and in the choroid plexus, where cerebrospinal fluid (CSF) is produced, allowing for the exchange of substances between the blood and the brain in these specific areas.",
+              "tags": []
+            },
+            {
+              "id": "mcns2-ch1-histology-essay-q49",
+              "type": "essay",
+              "lecture": 0,
+              "text": "Mention the function of the blood-brain barrier.",
+              "modelAnswer": "The BBB protects brain tissue against toxic drugs and harmful substances such as bacteria that may be\npresent in the blood.",
+              "keyConcept": "The blood-brain barrier (BBB) functions to protect the brain from harmful substances in the blood.",
+              "explanation": "The BBB is a highly selective permeability barrier that separates the circulating blood from the brain's extracellular fluid in the central nervous system. It is composed of endothelial cells that are tightly joined together by tight junctions, as well as pericytes and astrocytic end-feet, which further restrict the passage of substances. This selective barrier prevents the entry of toxins, pathogens, and other harmful substances into the brain, maintaining a stable and healthy environment for neuronal function.",
+              "tags": []
+            },
+            {
+              "id": "mcns2-ch1-histology-essay-q50",
+              "type": "essay",
+              "lecture": 0,
+              "text": "List the components and function of the blood-CSF barrier.",
+              "modelAnswer": "It is formed of endothelial cells of fenestrated capillaries, their basement membrane, connective tissue on\nwhich ependymal cells rest, and ependymal cells connected apically by junctional complexes.\nIts function is secretion of CSF.",
+              "keyConcept": "The blood-CSF barrier is a specialized structure that separates the cerebrospinal fluid from the bloodstream.",
+              "explanation": "The blood-CSF barrier is composed of endothelial cells of fenestrated capillaries, their basement membrane, connective tissue, and ependymal cells. This unique structure allows for the selective passage of substances, while preventing the free exchange of ions and molecules between the blood and CSF. The blood-CSF barrier plays a crucial role in maintaining the homeostasis of the CSF and protecting the central nervous system from external pathogens and toxins.",
+              "tags": []
+            },
+            {
+              "id": "mcns2-ch1-histology-essay-q51",
+              "type": "essay",
+              "lecture": 0,
+              "text": "Describe the basic structure of the cerebral cortex.",
+              "modelAnswer": "The surface of the cerebrum contains sulci separated by gyri. Gray matter covers gyri and lines sulci and is\nformed of nerve cells, neuroglia, and blood capillaries. White matter lies deep to gray matter and is formed\nof nerve fibers, neuroglia, and blood capillaries.",
+              "keyConcept": "The cerebral cortex is composed of distinct layers of gray and white matter.",
+              "explanation": "The cerebral cortex, the outer layer of the cerebrum, is characterized by its convoluted surface, which is divided into sulci and gyri. The gray matter, located on the surface of the gyri and lining the sulci, contains the cell bodies of neurons and supporting glial cells, as well as blood capillaries that supply them with oxygen and nutrients. In contrast, the white matter, situated beneath the gray matter, is composed of myelinated nerve fibers, glial cells, and blood vessels that facilitate the transmission of neural signals.",
+              "tags": []
+            },
+            {
+              "id": "mcns2-ch1-histology-essay-q52",
+              "type": "essay",
+              "lecture": 0,
+              "text": "Describe pyramidal cells of the cerebral cortex.",
+              "modelAnswer": "Pyramidal cells have pyramidal cell bodies and vary in size from small to giant.\nTheir apex is directed to the cerebral surface.\nDendrites arise from the apex and sides, while axons arise from the base and pass to white matter.",
+              "keyConcept": "Pyramidal cells are a type of neuron in the cerebral cortex characterized by their distinctive pyramidal shape and specific dendritic and axonal projections.",
+              "explanation": "Pyramidal cells are a fundamental component of the cerebral cortex, responsible for processing and integrating sensory information. Their unique shape, with the cell body forming the base and the apex directed towards the cerebral surface, allows for efficient communication between neurons. The dendrites arising from the apex and sides receive synaptic inputs, while the axon arising from the base transmits signals to other neurons in the white matter, enabling the complex neural networks that underlie cognitive functions.",
+              "tags": []
+            },
+            {
+              "id": "mcns2-ch1-histology-essay-q53",
+              "type": "essay",
+              "lecture": 0,
+              "text": "Describe granule cells of the cerebral cortex.",
+              "modelAnswer": "Granule cells are small polygonal cells, 5-7 um. Some give short dendrites in the same layer, others give\nlong dendrites reaching the surface, and their axons terminate in deep cortical layers.",
+              "keyConcept": "Granule cells are small neurons in the cerebral cortex with distinct dendritic and axonal projections.",
+              "explanation": "Granule cells are a type of interneuron found in the molecular layer of the cerebral cortex, playing a crucial role in processing and transmitting sensory information. Their unique morphology, characterized by short or long dendrites and axons terminating in deep cortical layers, allows them to integrate and modulate neural signals. Understanding the histological features of granule cells is essential for grasping the complex neural circuits and functions of the cerebral cortex.",
+              "tags": []
+            },
+            {
+              "id": "mcns2-ch1-histology-essay-q54",
+              "type": "essay",
+              "lecture": 0,
+              "text": "Describe fusiform cells of the cerebral cortex.",
+              "modelAnswer": "Fusiform cells have spindle-shaped cell bodies. Dendrites arise from the two poles, and the axon arises\nfrom the middle part of the cell body to pass to white matter.",
+              "keyConcept": "Fusiform cells of the cerebral cortex have a distinctive spindle-shaped morphology.",
+              "explanation": "Fusiform cells are a type of neuron found in the cerebral cortex, characterized by their elongated, spindle-shaped cell bodies. This unique morphology allows their dendrites to arise from the two poles of the cell body, while the axon emerges from the middle part, enabling efficient communication with other neurons in the white matter. Understanding the structure of fusiform cells is essential for grasping the complex neural circuits and pathways in the brain.",
+              "tags": []
+            },
+            {
+              "id": "mcns2-ch1-histology-essay-q55",
+              "type": "essay",
+              "lecture": 0,
+              "text": "Describe cells of Martinotti and horizontal cells of Cajal.",
+              "modelAnswer": "Cells of Martinotti are ascending axon cells present in all layers, with small triangular cell bodies and axons\nreaching superficial layers.\nHorizontal cells of Cajal have spindle-shaped cell bodies and are present in superficial layers.",
+              "keyConcept": "Cells of Martinotti and horizontal cells of Cajal are distinct types of neurons with unique morphological characteristics.",
+              "explanation": "Cells of Martinotti are a type of ascending axon cell found in all layers of the cerebral cortex, characterized by small triangular cell bodies and axons that extend to the superficial layers. This unique morphology allows them to transmit signals from deeper layers to the surface of the brain. In contrast, horizontal cells of Cajal have spindle-shaped cell bodies and are primarily located in the superficial layers, playing a crucial role in integrating information within these layers.",
+              "tags": []
+            },
+            {
+              "id": "mcns2-ch1-histology-essay-q56",
+              "type": "essay",
+              "lecture": 0,
+              "text": "Classify fibers of the cerebral cortex.",
+              "modelAnswer": "They include radial fibers, such as afferent thalamo-cortical radiation and efferent corticospinal,\ncorticoreticular, and corticopontine fibers; and horizontal fibers, such as tangential fibers and outer and\ninner bands of Baillarger.",
+              "keyConcept": "The cerebral cortex contains two types of fibers: radial and horizontal, which play distinct roles in neural communication.",
+              "explanation": "The cerebral cortex is composed of a complex network of fibers that facilitate neural communication. Radial fibers, such as afferent thalamo-cortical radiation and efferent corticospinal fibers, project from the cortex to subcortical structures or the spinal cord, respectively, and are involved in the transmission of sensory and motor information. In contrast, horizontal fibers, including tangential fibers and the outer and inner bands of Baillarger, are involved in local circuitry and facilitate communication between different regions of the cortex.",
+              "tags": []
+            },
+            {
+              "id": "mcns2-ch1-histology-essay-q57",
+              "type": "essay",
+              "lecture": 0,
+              "text": "List the six layers of the cerebral cortex.",
+              "modelAnswer": "The six layers are molecular layer, external granular layer, external pyramidal layer, internal granular layer, inner\npyramidal layer, and pleomorphic or multiform layer.",
+              "keyConcept": "The cerebral cortex is composed of six distinct layers, each with unique cellular characteristics.",
+              "explanation": "The six layers of the cerebral cortex, as described by the model answer, are a fundamental concept in neuroscience and histology. These layers are characterized by the presence of different types of neurons, glial cells, and synapses, and play distinct roles in processing and transmitting information. Understanding the organization and function of these layers is essential for grasping the complex neural mechanisms underlying various cognitive and motor functions.",
+              "tags": []
+            },
+            {
+              "id": "mcns2-ch1-histology-essay-q58",
+              "type": "essay",
+              "lecture": 0,
+              "text": "Compare motor cortex and sensory cortex.",
+              "modelAnswer": "Motor cortex is the thickest zone and has small and medium pyramidal cells in layer III, giant pyramidal\ncells in layer V, and rare or absent granule cells. Sensory cortex is thinner, has ill-defined pyramidal cells,\nand contains closely packed granule cells.",
+              "keyConcept": "The motor cortex and sensory cortex exhibit distinct histological differences in terms of cell size, layering, and granule cell presence.",
+              "explanation": "The motor cortex is characterized by its thickness, with prominent pyramidal cells in layers III and V, and a relative absence of granule cells. In contrast, the sensory cortex is thinner and contains ill-defined pyramidal cells, with a notable presence of closely packed granule cells. These differences reflect the distinct functional roles of the motor and sensory cortices in the brain, with the motor cortex primarily involved in initiating voluntary movements and the sensory cortex responsible for processing sensory information.",
+              "tags": []
+            },
+            {
+              "id": "mcns2-ch1-histology-essay-q59",
+              "type": "essay",
+              "lecture": 0,
+              "text": "Define meninges and leptomeninges.",
+              "modelAnswer": "The brain and spinal cord are surrounded by three coverings called meninges: dura mater, arachnoid, and\npia mater.\nArachnoid and pia mater together are called leptomeninges.",
+              "keyConcept": "The meninges are a protective layer of tissue surrounding the brain and spinal cord, consisting of three distinct layers: dura mater, arachnoid, and pia mater.",
+              "explanation": "The meninges serve as a vital protective barrier, shielding the central nervous system from external damage and infection. The arachnoid and pia mater, collectively known as the leptomeninges, are the innermost layers of the meninges, closely adhering to the surface of the brain and spinal cord. This intimate relationship allows for the exchange of cerebrospinal fluid and nutrients, while also providing a delicate balance of support and flexibility to the central nervous system.",
+              "tags": []
+            },
+            {
+              "id": "mcns2-ch1-histology-essay-q60",
+              "type": "essay",
+              "lecture": 0,
+              "text": "Describe dura mater.",
+              "modelAnswer": "Dura mater is the outermost layer formed of dense fibro-elastic connective tissue continuous with skull\nperiosteum. Its inner surface is covered by simple squamous epithelium. It is separated from arachnoid by\nthe subdural space, and around the spinal cord it is separated from vertebral periosteum by epidural space.",
+              "keyConcept": "The dura mater is a dense fibro-elastic connective tissue layer that covers the brain and spinal cord.",
+              "explanation": "The dura mater is the outermost meningeal layer that is continuous with the skull periosteum, providing a protective covering for the central nervous system. Its inner surface is lined with simple squamous epithelium, which facilitates the exchange of nutrients and waste products. The dura mater is separated from the arachnoid layer by the subdural space, and from the vertebral periosteum by the epidural space in the spinal cord, allowing for the free movement of the spinal cord within the spinal canal.",
+              "tags": []
+            },
+            {
+              "id": "mcns2-ch1-histology-essay-q61",
+              "type": "essay",
+              "lecture": 0,
+              "text": "Describe arachnoid mater.",
+              "modelAnswer": "Arachnoid is a delicate membrane between dura and pia. It has a flat membrane adjacent to dura and thin\ntrabeculae of collagen fibers and fibroblasts that extend to pia. The trabeculae surround CSF-filled\nsubarachnoid spaces and are covered by simple squamous epithelium.",
+              "keyConcept": "The arachnoid mater is a delicate membrane that separates the dura mater from the pia mater, forming the subarachnoid space.",
+              "explanation": "The arachnoid mater is a crucial component of the meninges, the protective layers surrounding the central nervous system. It consists of a flat membrane adjacent to the dura mater and thin trabeculae of collagen fibers and fibroblasts that extend to the pia mater, creating the subarachnoid space that contains cerebrospinal fluid (CSF). The trabeculae are covered by simple squamous epithelium, allowing for the exchange of nutrients and waste products between the CSF and the surrounding tissues.",
+              "tags": []
+            },
+            {
+              "id": "mcns2-ch1-histology-essay-q62",
+              "type": "essay",
+              "lecture": 0,
+              "text": "Describe arachnoid villi.",
+              "modelAnswer": "In certain areas, arachnoid penetrates dura to form arachnoid villi reaching venous sinuses within the dura.\nThese villi help CSF circulation from subarachnoid spaces into the blood sinuses of dura.",
+              "keyConcept": "Arachnoid villi are small projections of arachnoid mater that facilitate the reabsorption of cerebrospinal fluid into the venous sinuses.",
+              "explanation": "Arachnoid villi are small, finger-like projections of the arachnoid mater that penetrate the dura mater in certain areas. These villi play a crucial role in the reabsorption of cerebrospinal fluid (CSF) from the subarachnoid spaces into the venous sinuses of the dura mater, thereby regulating the pressure and volume of CSF in the central nervous system. This process is essential for maintaining the delicate balance of CSF circulation and preventing conditions such as hydrocephalus.",
+              "tags": []
+            },
+            {
+              "id": "mcns2-ch1-histology-essay-q63",
+              "type": "essay",
+              "lecture": 0,
+              "text": "Describe pia mater.",
+              "modelAnswer": "Pia mater is a delicate vascular connective tissue layer investing brain and spinal cord. It contains a 1-2 cell\nthick layer of leptomeningeal cells joined by desmosomes, gap junctions, and few tight junctions.",
+              "keyConcept": "Pia mater is a delicate vascular connective tissue layer that invests the brain and spinal cord.",
+              "explanation": "The pia mater is a thin, delicate layer of connective tissue that closely adheres to the surface of the brain and spinal cord, providing a rich vascular supply to these structures. Its unique composition of leptomeningeal cells, joined by desmosomes, gap junctions, and tight junctions, allows for efficient exchange of nutrients and waste products between the brain and the bloodstream. This intricate layer plays a crucial role in maintaining the health and function of the central nervous system.",
+              "tags": []
+            },
+            {
+              "id": "mcns2-ch1-histology-essay-q64",
+              "type": "essay",
+              "lecture": 0,
+              "text": "What barrier is formed by pia mater and astrocytic processes?",
+              "modelAnswer": "Pia mater is separated from brain tissue by a thin layer of astrocytic processes. Together they form a\nphysical barrier separating brain tissue from CSF in the subarachnoid space.",
+              "keyConcept": "The pia mater and astrocytic processes form a physical barrier separating brain tissue from cerebrospinal fluid (CSF) in the subarachnoid space.",
+              "explanation": "This barrier is crucial for maintaining the delicate environment of the central nervous system, where the brain and spinal cord are protected from the surrounding CSF. The pia mater, a delicate vascular layer, is supported by astrocytic processes, which are extensions of astrocytes that provide structural support and help to regulate the exchange of substances between the brain and CSF. This physical barrier plays a vital role in maintaining the homeostasis of the central nervous system.",
+              "tags": []
+            },
+            {
+              "id": "mcns2-ch1-histology-essay-q65",
+              "type": "essay",
+              "lecture": 0,
+              "text": "Describe the nerve cells of the dorsal root ganglion.",
+              "modelAnswer": "The dorsal root ganglion contains pseudounipolar nerve cells of variable size.\nEach cell has two processes:\n1. Peripheral process\nActs as a dendrite.\nConnected to receptors.\n2. Central process\nActs as an axon.\nPasses toward the dorsal surface of the spinal cord.",
+              "keyConcept": "The dorsal root ganglion contains pseudounipolar nerve cells with distinct peripheral and central processes.",
+              "explanation": "The dorsal root ganglion is a cluster of nerve cells located outside the spinal cord, and it contains pseudounipolar nerve cells, which are a type of sensory neuron. These cells have two distinct processes: a peripheral process that acts as a dendrite, receiving sensory information from receptors, and a central process that acts as an axon, transmitting this information towards the dorsal surface of the spinal cord. This unique structure allows pseudounipolar nerve cells to efficiently transmit sensory information from the periphery to the central nervous system.",
+              "tags": []
+            },
+            {
+              "id": "mcns2-ch1-histology-essay-q66",
+              "type": "essay",
+              "lecture": 0,
+              "text": "Ennumerate the layers of cerebellar cortex.",
+              "modelAnswer": "The cerebellar cortex has three layers:\n1. Molecular layer (outer)\n2. Purkinje cell layer (middle)\n3. Granular layer (inner)",
+              "keyConcept": "The cerebellar cortex is composed of three distinct layers: molecular, Purkinje cell, and granular.",
+              "explanation": "The cerebellar cortex is the outermost layer of the cerebellum and is responsible for coordinating motor movements. The molecular layer is the outermost layer, containing dendrites of Purkinje cells and various interneurons. The Purkinje cell layer, located in the middle, consists of large, branching neurons that play a crucial role in motor coordination, while the granular layer, the innermost layer, contains small granule cells that synapse with Purkinje cells to facilitate information transmission.",
+              "tags": []
             }
           ]
         }

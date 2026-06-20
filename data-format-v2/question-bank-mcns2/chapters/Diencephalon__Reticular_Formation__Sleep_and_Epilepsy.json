@@ -29,15 +29,8 @@
           "id": "anatomy",
           "name": "Anatomy",
           "iconName": "Bone",
-          "lectures": "",
+          "lectures": "L1-L5",
           "lectureCount": 5,
-          "lectureNames": [
-            "Hypothalamus and Third Ventricle",
-            "Thalamus",
-            "Lecture 3",
-            "Lecture 4",
-            "Lecture 5"
-          ],
           "questions": [
             {
               "id": "mcns2-ch6-anatomy-q1",
@@ -666,16 +659,8 @@
           "id": "physiology",
           "name": "Physiology",
           "iconName": "Activity",
-          "lectures": "",
-          "lectureCount": 6,
-          "lectureNames": [
-            "Functions of Reticular Formation & Electrical activity of the Brain",
-            "Sleep and Arousal",
-            "Lecture 3",
-            "Lecture 4",
-            "Lecture 5",
-            "Lecture 6"
-          ],
+          "lectures": "L1-L5",
+          "lectureCount": 5,
           "questions": [
             {
               "id": "mcns2-ch6-physiology-q1",
@@ -889,22 +874,6 @@
               "id": "mcns2-ch6-physiology-q14",
               "type": "mcq",
               "lecture": 1,
-              "text": "Concerning reticular formation, all are true EXCEPT:",
-              "explanation": "The correct answer is (c) It is responsible for perception and localization of fast pain. This is the option that does not fit the stem (the exception/incorrect statement), while the remaining choices are all true in this context.",
-              "keyConcept": "Reticular formation, all are true EXCEPT",
-              "options": [
-                "It excites all parts of cortex through ARAS.",
-                "It is a link between higher and lower CNS centers.",
-                "It is responsible for perception and localization of fast pain.",
-                "It is responsible for brain electrical activity.",
-                "Its descending motor facilitatory component plays a role in body support. 1 Body fluids & Homeostasis Biophysics Higher Brain Function"
-              ],
-              "correctIndex": 2
-            },
-            {
-              "id": "mcns2-ch6-physiology-q15",
-              "type": "mcq",
-              "lecture": 1,
               "text": "Secondary evoked potential is characterized by:",
               "explanation": "The correct answer is (d) Due to stimulation of non-specific thalamic nuclei. Among the listed options this is the choice that best matches the stem, and the other options are incorrect distractors.",
               "keyConcept": "Secondary evoked potential is characterized by",
@@ -918,7 +887,7 @@
               "correctIndex": 3
             },
             {
-              "id": "mcns2-ch6-physiology-q16",
+              "id": "mcns2-ch6-physiology-q15",
               "type": "mcq",
               "lecture": 1,
               "text": "Electroencephalogram:",
@@ -934,7 +903,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch6-physiology-q17",
+              "id": "mcns2-ch6-physiology-q16",
               "type": "mcq",
               "lecture": 1,
               "text": "EEG:",
@@ -950,7 +919,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch6-physiology-q18",
+              "id": "mcns2-ch6-physiology-q17",
               "type": "mcq",
               "lecture": 1,
               "text": "Brain waves:",
@@ -966,7 +935,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch6-physiology-q19",
+              "id": "mcns2-ch6-physiology-q18",
               "type": "mcq",
               "lecture": 1,
               "text": "The EEG wave recorded in high mental activity, hyperaroused state is:",
@@ -982,7 +951,7 @@
               "correctIndex": 4
             },
             {
-              "id": "mcns2-ch6-physiology-q20",
+              "id": "mcns2-ch6-physiology-q19",
               "type": "mcq",
               "lecture": 1,
               "text": "The EEG wave recorded in children is:",
@@ -998,7 +967,7 @@
               "correctIndex": 2
             },
             {
-              "id": "mcns2-ch6-physiology-q21",
+              "id": "mcns2-ch6-physiology-q20",
               "type": "mcq",
               "lecture": 1,
               "text": "β waves of EEG are:",
@@ -1014,7 +983,7 @@
               "correctIndex": 4
             },
             {
-              "id": "mcns2-ch6-physiology-q22",
+              "id": "mcns2-ch6-physiology-q21",
               "type": "mcq",
               "lecture": 1,
               "text": "Regarding Evoked brain potentials:",
@@ -1030,7 +999,7 @@
               "correctIndex": 0
             },
             {
-              "id": "mcns2-ch6-physiology-q23",
+              "id": "mcns2-ch6-physiology-q22",
               "type": "mcq",
               "lecture": 1,
               "text": "Which of the following sentences about sleep and arousal is true:",
@@ -1046,7 +1015,7 @@
               "correctIndex": 4
             },
             {
-              "id": "mcns2-ch6-physiology-q24",
+              "id": "mcns2-ch6-physiology-q23",
               "type": "mcq",
               "lecture": 1,
               "text": "REM sleep differs from Non-REM sleep in:",
@@ -1062,7 +1031,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch6-physiology-q25",
+              "id": "mcns2-ch6-physiology-q24",
               "type": "mcq",
               "lecture": 1,
               "text": "Sleep, all are true EXCEPT:",
@@ -1078,7 +1047,7 @@
               "correctIndex": 3
             },
             {
-              "id": "mcns2-ch6-physiology-q26",
+              "id": "mcns2-ch6-physiology-q25",
               "type": "mcq",
               "lecture": 1,
               "text": "Compared to REM sleep, Non-REM sleep is characterized by:",
@@ -1094,7 +1063,7 @@
               "correctIndex": 3
             },
             {
-              "id": "mcns2-ch6-physiology-q27",
+              "id": "mcns2-ch6-physiology-q26",
               "type": "mcq",
               "lecture": 1,
               "text": "Paradoxical sleep is characterized by:",
@@ -1110,7 +1079,7 @@
               "correctIndex": 2
             },
             {
-              "id": "mcns2-ch6-physiology-q28",
+              "id": "mcns2-ch6-physiology-q27",
               "type": "mcq",
               "lecture": 1,
               "text": "Which of the following is a REM sleep center:",
@@ -1126,7 +1095,7 @@
               "correctIndex": 2
             },
             {
-              "id": "mcns2-ch6-physiology-q29",
+              "id": "mcns2-ch6-physiology-q28",
               "type": "mcq",
               "lecture": 1,
               "text": "Which of the following is a neurotransmitter for REM sleep:",
@@ -1142,7 +1111,7 @@
               "correctIndex": 0
             },
             {
-              "id": "mcns2-ch6-physiology-q30",
+              "id": "mcns2-ch6-physiology-q29",
               "type": "essay",
               "lecture": 1,
               "text": "What is the reticular formation (RF)?",
@@ -1151,7 +1120,7 @@
               "modelAnswer": "• A complex network of interconnected neurons in the brain stem."
             },
             {
-              "id": "mcns2-ch6-physiology-q31",
+              "id": "mcns2-ch6-physiology-q30",
               "type": "essay",
               "lecture": 1,
               "text": "What are the two parts of the reticular formation (RF)?",
@@ -1160,7 +1129,7 @@
               "modelAnswer": "• Sensory neurons\n• Motor neurons"
             },
             {
-              "id": "mcns2-ch6-physiology-q32",
+              "id": "mcns2-ch6-physiology-q31",
               "type": "essay",
               "lecture": 1,
               "text": "What are the subdivision of motor neurons in the reticular formation (RF)?",
@@ -1169,7 +1138,7 @@
               "modelAnswer": "• They are divided into two antagonistic groups: Pontine (Excitatory) RF & Medullary RF."
             },
             {
-              "id": "mcns2-ch6-physiology-q33",
+              "id": "mcns2-ch6-physiology-q32",
               "type": "essay",
               "lecture": 1,
               "text": "What is the function of the ascending reticular activating system (ARAS)?",
@@ -1178,7 +1147,7 @@
               "modelAnswer": "• It is excitatory to all parts of the cerebral cortex, promoting arousal."
             },
             {
-              "id": "mcns2-ch6-physiology-q34",
+              "id": "mcns2-ch6-physiology-q33",
               "type": "essay",
               "lecture": 1,
               "text": "True or False: The ascending reticular activating system (ARAS) is directly excitatory to motor neurons of antigravity muscles.",
@@ -1187,7 +1156,7 @@
               "modelAnswer": "• True"
             },
             {
-              "id": "mcns2-ch6-physiology-q35",
+              "id": "mcns2-ch6-physiology-q34",
               "type": "essay",
               "lecture": 1,
               "text": "What inhibits the ascending reticular activating system (ARAS)?",
@@ -1196,7 +1165,7 @@
               "modelAnswer": "• Inhibitory reticular formation\n• Inhibitory areas of the cerebral cortex\n• Paleocerebellum\n• Basal ganglia\n• Red nucleus."
             },
             {
-              "id": "mcns2-ch6-physiology-q36",
+              "id": "mcns2-ch6-physiology-q35",
               "type": "essay",
               "lecture": 1,
               "text": "What is the function of the medullary reticular formation (RF)?",
@@ -1205,7 +1174,7 @@
               "modelAnswer": "• It is inhibitory to motor neurons of antigravity muscles, leading to a decrease in muscle tone.\n• Can inhibit the Excitatory RF and decrease brain activity. Higher Brain Function"
             },
             {
-              "id": "mcns2-ch6-physiology-q37",
+              "id": "mcns2-ch6-physiology-q36",
               "type": "essay",
               "lecture": 1,
               "text": "What is the reticulo-thalamo-cortical pathway?",
@@ -1214,7 +1183,7 @@
               "modelAnswer": "• It is a polysynaptic, multineuronal pathway that originates from the excitatory reticular formation (RF)"
             },
             {
-              "id": "mcns2-ch6-physiology-q38",
+              "id": "mcns2-ch6-physiology-q37",
               "type": "essay",
               "lecture": 1,
               "text": "What factors can affect the reticular activating system (RAS)?",
@@ -1223,7 +1192,7 @@
               "modelAnswer": "• Sensory impulses (especially pain)\n• Cortical impulses (emotions, motor, thinking)\n• Damage of RAS\n• Analeptic drugs\n• Sympathomimetics, stress, thyroid hormones, and caffeine."
             },
             {
-              "id": "mcns2-ch6-physiology-q39",
+              "id": "mcns2-ch6-physiology-q38",
               "type": "essay",
               "lecture": 1,
               "text": "What are the functions of the reticular formation (RF)?",
@@ -1232,7 +1201,7 @@
               "modelAnswer": "• Link between higher brain centers and spinal cord centers for integration.\n• Support of body and maintenance of posture during standing.\n• Non-specific activation of the cerebral cortex for wakefulness and alert state.\n• Regulation of vital functions.\n• Pain modulation.\n• Center of rapid eye movement (REM) sleep."
             },
             {
-              "id": "mcns2-ch6-physiology-q40",
+              "id": "mcns2-ch6-physiology-q39",
               "type": "essay",
               "lecture": 1,
               "text": "what are the types of evoked potentials?",
@@ -1241,7 +1210,7 @@
               "modelAnswer": "• Primary (localized) evoked potentials: characterized by a positive wave followed by a negative wave.\n• Secondary (diffuse) evoked potentials: characterized by a large positive wave due to the activation of non-specific thalamic nuclei."
             },
             {
-              "id": "mcns2-ch6-physiology-q41",
+              "id": "mcns2-ch6-physiology-q40",
               "type": "essay",
               "lecture": 1,
               "text": "What is an electroencephalogram (EEG)?",
@@ -1250,7 +1219,7 @@
               "modelAnswer": "• A recording of spontaneous brain electrical activity in a conscious person."
             },
             {
-              "id": "mcns2-ch6-physiology-q42",
+              "id": "mcns2-ch6-physiology-q41",
               "type": "essay",
               "lecture": 1,
               "text": "What is the definition of evoked potentials?",
@@ -1259,7 +1228,7 @@
               "modelAnswer": "• Recording of electrical activity of cerebral cortex after receptor stimulation in an anaesthetized person"
             },
             {
-              "id": "mcns2-ch6-physiology-q43",
+              "id": "mcns2-ch6-physiology-q42",
               "type": "essay",
               "lecture": 1,
               "text": "What are the uses of evoked potentials?",
@@ -1268,7 +1237,7 @@
               "modelAnswer": "• Mapping of brain\n• Diagnosis of disease"
             },
             {
-              "id": "mcns2-ch6-physiology-q44",
+              "id": "mcns2-ch6-physiology-q43",
               "type": "essay",
               "lecture": 1,
               "text": "In what conditions is the alpha (α) brain wave recorded?",
@@ -1277,7 +1246,7 @@
               "modelAnswer": "• Adult, awake, relaxed, closed eyes"
             },
             {
-              "id": "mcns2-ch6-physiology-q45",
+              "id": "mcns2-ch6-physiology-q44",
               "type": "essay",
               "lecture": 1,
               "text": "What is the character of alpha (α) brain wave?",
@@ -1286,7 +1255,7 @@
               "modelAnswer": "• Regular synchronized"
             },
             {
-              "id": "mcns2-ch6-physiology-q46",
+              "id": "mcns2-ch6-physiology-q45",
               "type": "essay",
               "lecture": 1,
               "text": "In what conditions is the beta (β) brain wave recorded?",
@@ -1295,7 +1264,7 @@
               "modelAnswer": "• Awake, mental activity, opened eyes"
             },
             {
-              "id": "mcns2-ch6-physiology-q47",
+              "id": "mcns2-ch6-physiology-q46",
               "type": "essay",
               "lecture": 1,
               "text": "What is the character of beta (β) brain wave?",
@@ -1304,7 +1273,7 @@
               "modelAnswer": "• Irregular desynchronized"
             },
             {
-              "id": "mcns2-ch6-physiology-q48",
+              "id": "mcns2-ch6-physiology-q47",
               "type": "essay",
               "lecture": 1,
               "text": "In what conditions is the theta (ε) brain wave recorded?",
@@ -1313,7 +1282,7 @@
               "modelAnswer": "• Children, light sleep, emotional stress (frustrations)"
             },
             {
-              "id": "mcns2-ch6-physiology-q49",
+              "id": "mcns2-ch6-physiology-q48",
               "type": "essay",
               "lecture": 1,
               "text": "What is the character of theta (ε) brain wave?",
@@ -1322,7 +1291,7 @@
               "modelAnswer": "• Regular synchronized"
             },
             {
-              "id": "mcns2-ch6-physiology-q50",
+              "id": "mcns2-ch6-physiology-q49",
               "type": "essay",
               "lecture": 1,
               "text": "In what conditions is the delta (δ) brain wave recorded?",
@@ -1331,7 +1300,7 @@
               "modelAnswer": "• Infants, deep sleep, deep coma, brain damage"
             },
             {
-              "id": "mcns2-ch6-physiology-q51",
+              "id": "mcns2-ch6-physiology-q50",
               "type": "essay",
               "lecture": 1,
               "text": "What is the character of delta (δ) brain wave?",
@@ -1340,7 +1309,7 @@
               "modelAnswer": "• Regular synchronized"
             },
             {
-              "id": "mcns2-ch6-physiology-q52",
+              "id": "mcns2-ch6-physiology-q51",
               "type": "essay",
               "lecture": 1,
               "text": "In what conditions is the gamma (γ) brain wave recorded?",
@@ -1349,7 +1318,7 @@
               "modelAnswer": "• Hyper-aroused, high mental activity"
             },
             {
-              "id": "mcns2-ch6-physiology-q53",
+              "id": "mcns2-ch6-physiology-q52",
               "type": "essay",
               "lecture": 1,
               "text": "What is the character of gamma (γ) brain wave?",
@@ -1358,7 +1327,7 @@
               "modelAnswer": "• Irregular desynchronized"
             },
             {
-              "id": "mcns2-ch6-physiology-q54",
+              "id": "mcns2-ch6-physiology-q53",
               "type": "essay",
               "lecture": 1,
               "text": "What is alpha block?",
@@ -1367,7 +1336,7 @@
               "modelAnswer": "• When a relaxed person, with closed eyes (with α rhythm recorded from him) is focused on something or open his eyes, so α rhythm is replaced by β rhythm."
             },
             {
-              "id": "mcns2-ch6-physiology-q55",
+              "id": "mcns2-ch6-physiology-q54",
               "type": "essay",
               "lecture": 1,
               "text": "What is the value of EEG?",
@@ -1376,7 +1345,7 @@
               "modelAnswer": "• A non-invasive test to study: • Brain electrical activity • Brain death (→ flat EEG) • Site of brain tumors • Sleep stages & disorders • Epilepsy"
             },
             {
-              "id": "mcns2-ch6-physiology-q56",
+              "id": "mcns2-ch6-physiology-q55",
               "type": "essay",
               "lecture": 1,
               "text": "What is the definition of consciousness?",
@@ -1385,7 +1354,7 @@
               "modelAnswer": "• Awareness of self, surroundings, thoughts & feelings"
             },
             {
-              "id": "mcns2-ch6-physiology-q57",
+              "id": "mcns2-ch6-physiology-q56",
               "type": "essay",
               "lecture": 1,
               "text": "What is the mechanism of consciousness?",
@@ -1394,7 +1363,7 @@
               "modelAnswer": "• Non-specific excitation to the whole cortex by RAS (brainstem) & may be hypothalamus."
             },
             {
-              "id": "mcns2-ch6-physiology-q58",
+              "id": "mcns2-ch6-physiology-q57",
               "type": "essay",
               "lecture": 1,
               "text": "What happens after hours of consciousness?",
@@ -1403,7 +1372,7 @@
               "modelAnswer": "• Fatigue of neurons which decrease positive feedback Activation of sleep centers and so inhibition of RAS"
             },
             {
-              "id": "mcns2-ch6-physiology-q59",
+              "id": "mcns2-ch6-physiology-q58",
               "type": "essay",
               "lecture": 1,
               "text": "What is coma?",
@@ -1412,7 +1381,7 @@
               "modelAnswer": "• Unconsciousness from which the person cannot be aroused"
             },
             {
-              "id": "mcns2-ch6-physiology-q60",
+              "id": "mcns2-ch6-physiology-q59",
               "type": "essay",
               "lecture": 1,
               "text": "What is sleep?",
@@ -1421,7 +1390,7 @@
               "modelAnswer": "• Physiological and spontaneous unconsciousness from which a person can be aroused by stimuli"
             },
             {
-              "id": "mcns2-ch6-physiology-q61",
+              "id": "mcns2-ch6-physiology-q60",
               "type": "essay",
               "lecture": 1,
               "text": "What are the functions of sleep?",
@@ -1430,7 +1399,7 @@
               "modelAnswer": "• Restoration of physiological & biochemical processes (Cognition, metabolic, thermal, caloric & immune processes)\n• Helps learning & memory\n• Neural plasticity (maturation)"
             },
             {
-              "id": "mcns2-ch6-physiology-q62",
+              "id": "mcns2-ch6-physiology-q61",
               "type": "essay",
               "lecture": 1,
               "text": "What are the stages and EEG characteristics of very light sleep?",
@@ -1439,7 +1408,7 @@
               "modelAnswer": "• Theta waves"
             },
             {
-              "id": "mcns2-ch6-physiology-q63",
+              "id": "mcns2-ch6-physiology-q62",
               "type": "essay",
               "lecture": 1,
               "text": "What are the stages and EEG characteristics of light sleep?",
@@ -1448,7 +1417,7 @@
               "modelAnswer": "• Theta waves + sleep spindles (Large α: 12- 14 Hz) & K complexes (Large & slow)"
             },
             {
-              "id": "mcns2-ch6-physiology-q64",
+              "id": "mcns2-ch6-physiology-q63",
               "type": "essay",
               "lecture": 1,
               "text": "What are the stages and EEG characteristics of moderate sleep?",
@@ -1457,7 +1426,7 @@
               "modelAnswer": "• Delta (3-3.5 Hz)"
             },
             {
-              "id": "mcns2-ch6-physiology-q65",
+              "id": "mcns2-ch6-physiology-q64",
               "type": "essay",
               "lecture": 1,
               "text": "What are the stages and EEG characteristics of deep sleep?",
@@ -1466,7 +1435,7 @@
               "modelAnswer": "• Low frequency Delta (0.5-1.5 Hz)"
             },
             {
-              "id": "mcns2-ch6-physiology-q66",
+              "id": "mcns2-ch6-physiology-q65",
               "type": "essay",
               "lecture": 1,
               "text": "What are the characteristics of Non-Rapid Eye Movement (Non-REM) sleep?",
@@ -1475,7 +1444,7 @@
               "modelAnswer": "• Slow wave sleep with absence of dreams and penile erection"
             },
             {
-              "id": "mcns2-ch6-physiology-q67",
+              "id": "mcns2-ch6-physiology-q66",
               "type": "essay",
               "lecture": 1,
               "text": "What are the EEG characteristics of Rapid Eye Movement (REM) sleep?",
@@ -1484,7 +1453,7 @@
               "modelAnswer": "• Rapid, irregular, low voltage, desynchronized β waves with presence of dreams and penile erection"
             },
             {
-              "id": "mcns2-ch6-physiology-q68",
+              "id": "mcns2-ch6-physiology-q67",
               "type": "essay",
               "lecture": 1,
               "text": "What happens to sleep after the first cycle?",
@@ -1493,7 +1462,7 @@
               "modelAnswer": "• Sleep lightens\n• non-REM time decreases\n• stages 3 and 4 decrease\n• REM time increases"
             },
             {
-              "id": "mcns2-ch6-physiology-q69",
+              "id": "mcns2-ch6-physiology-q68",
               "type": "essay",
               "lecture": 1,
               "text": "What are the three theories of sleep?",
@@ -1502,7 +1471,7 @@
               "modelAnswer": "• Passive theory\n• Metabolic theory\n• Active theory"
             },
             {
-              "id": "mcns2-ch6-physiology-q70",
+              "id": "mcns2-ch6-physiology-q69",
               "type": "essay",
               "lecture": 1,
               "text": "What is the passive theory of sleep?",
@@ -1511,7 +1480,7 @@
               "modelAnswer": "• Fatigue and decreased activity of Reticular Activating System (RAS) lead to a decrease in positive feedback of cortical excitation"
             },
             {
-              "id": "mcns2-ch6-physiology-q71",
+              "id": "mcns2-ch6-physiology-q70",
               "type": "essay",
               "lecture": 1,
               "text": "What is the metabolic theory of sleep?",
@@ -1520,7 +1489,7 @@
               "modelAnswer": "• Prolonged wakefulness leads to the accumulation of Sleep Inducing Substances (SIS) in the cerebrospinal fluid or brain stem, resulting in inhibition of RAS"
             },
             {
-              "id": "mcns2-ch6-physiology-q72",
+              "id": "mcns2-ch6-physiology-q71",
               "type": "essay",
               "lecture": 1,
               "text": "What are examples of Sleep Inducing Substances (SIS)?",
@@ -1529,7 +1498,7 @@
               "modelAnswer": "• Lipid and Muramyl peptide"
             },
             {
-              "id": "mcns2-ch6-physiology-q73",
+              "id": "mcns2-ch6-physiology-q72",
               "type": "essay",
               "lecture": 1,
               "text": "What is the active theory of sleep?",
@@ -1538,7 +1507,7 @@
               "modelAnswer": "• The suprachiasmatic nucleus of hypothalamus synchronizes sleep/ wakefulness rhythm with the dark/light cycle, and sleep occurs through stimulation of sleep centers"
             },
             {
-              "id": "mcns2-ch6-physiology-q74",
+              "id": "mcns2-ch6-physiology-q73",
               "type": "essay",
               "lecture": 1,
               "text": "Which brain regions and neurotransmitters are involved in arousal?",
@@ -1547,7 +1516,7 @@
               "modelAnswer": "• Arousal involves the Reticular Activating System (RAS) and posterior hypothalamus\n• norepinephrine, serotonin, histamine"
             },
             {
-              "id": "mcns2-ch6-physiology-q75",
+              "id": "mcns2-ch6-physiology-q74",
               "type": "essay",
               "lecture": 1,
               "text": "What are the neurochemical mechanisms of sleep and arousal?",
@@ -1556,7 +1525,7 @@
               "modelAnswer": "• The sleep/wakefulness circadian rhythm is controlled by brain stem nuclei and hypothalamic nuclei\n• orexin produced in the hypothalamus regulates the activity of brain stem nuclei which lead to switch between sleep and wakefulness"
             },
             {
-              "id": "mcns2-ch6-physiology-q76",
+              "id": "mcns2-ch6-physiology-q75",
               "type": "essay",
               "lecture": 1,
               "text": "Which neurotransmitters are increased in wakefulness?",
@@ -1565,7 +1534,7 @@
               "modelAnswer": "• Norepinephrine, serotonin, histamine"
             },
             {
-              "id": "mcns2-ch6-physiology-q77",
+              "id": "mcns2-ch6-physiology-q76",
               "type": "essay",
               "lecture": 1,
               "text": "Which neurotransmitters are increased in non-REM sleep?",
@@ -1574,7 +1543,7 @@
               "modelAnswer": "• Norepinephrine, serotonin, GABA and acetylcholine"
             },
             {
-              "id": "mcns2-ch6-physiology-q78",
+              "id": "mcns2-ch6-physiology-q77",
               "type": "essay",
               "lecture": 1,
               "text": "Which neurotransmitters are associated with REM sleep?",
@@ -1583,7 +1552,7 @@
               "modelAnswer": "• Acetylcholine"
             },
             {
-              "id": "mcns2-ch6-physiology-q79",
+              "id": "mcns2-ch6-physiology-q78",
               "type": "essay",
               "lecture": 1,
               "text": "Which neurotransmitter is decreased during wakefulness?",
@@ -1592,7 +1561,7 @@
               "modelAnswer": "• Acetylcholine\n• GABA"
             },
             {
-              "id": "mcns2-ch6-physiology-q80",
+              "id": "mcns2-ch6-physiology-q79",
               "type": "essay",
               "lecture": 1,
               "text": "Which neurotransmitter is decreased during non-REM sleep?",
@@ -1601,7 +1570,7 @@
               "modelAnswer": "• Histamine"
             },
             {
-              "id": "mcns2-ch6-physiology-q81",
+              "id": "mcns2-ch6-physiology-q80",
               "type": "essay",
               "lecture": 1,
               "text": "Which neurotransmitter is decreased during REM sleep?",
@@ -1610,7 +1579,7 @@
               "modelAnswer": "• Norepinephrine\n• Serotonin"
             },
             {
-              "id": "mcns2-ch6-physiology-q82",
+              "id": "mcns2-ch6-physiology-q81",
               "type": "essay",
               "lecture": 1,
               "text": "What are the effects of acetylcholine, GABA, norepinephrine, and serotonin in wakefulness?",
@@ -1619,7 +1588,7 @@
               "modelAnswer": "• Acetylcholine and GABA decrease, while norepinephrine and serotonin increase in wakefulness."
             },
             {
-              "id": "mcns2-ch6-physiology-q83",
+              "id": "mcns2-ch6-physiology-q82",
               "type": "essay",
               "lecture": 1,
               "text": "What are the effects of histamine in wakefulness and non-REM sleep?",
@@ -1628,7 +1597,7 @@
               "modelAnswer": "• Histamine increases in wakefulness and decreases in non-REM sleep"
             },
             {
-              "id": "mcns2-ch6-physiology-q84",
+              "id": "mcns2-ch6-physiology-q83",
               "type": "essay",
               "lecture": 1,
               "text": "What is the main function of the hypothalamus?",
@@ -1637,7 +1606,7 @@
               "modelAnswer": "• Control of internal homeostasis: • Control of endocrine functions • Control of Autonomic responses • Regulation of food intake and appetite • Regulation of body temperature • Regulation of H2O balance & ECF volume • Control of sleep & arousal • Control of Circadian rhythm • Role in Learning & motivation • Role in emotion & sexual behavior"
             },
             {
-              "id": "mcns2-ch6-physiology-q85",
+              "id": "mcns2-ch6-physiology-q84",
               "type": "essay",
               "lecture": 1,
               "text": "How does the hypothalamus control endocrine functions Through nervous control?",
@@ -1646,7 +1615,7 @@
               "modelAnswer": "• Control of posterior pituitary gland leads to secret oxytocin & vasopressin\n• Control of Adrenal medulla leads to secret catecholamines"
             },
             {
-              "id": "mcns2-ch6-physiology-q86",
+              "id": "mcns2-ch6-physiology-q85",
               "type": "essay",
               "lecture": 1,
               "text": "How does the hypothalamus control endocrine functions Through hormonal control?",
@@ -1655,7 +1624,7 @@
               "modelAnswer": "• Control of Anterior pituitary gland, which controls most body endocrine glands, through: • arcuate nucleus synthesize dopamine and growth hormone releasing hormone (GHRH) • preoptic nucleus synthesize gonadotropin releasing hormone (GnRH) • paraventricular nucleus synthesizes thyrotropin releasing hormone (TRH), corticotropin releasing hormone (CRH) & somatostatin (SST)"
             },
             {
-              "id": "mcns2-ch6-physiology-q87",
+              "id": "mcns2-ch6-physiology-q86",
               "type": "essay",
               "lecture": 1,
               "text": "Which parts of the hypothalamus control autonomic responses?",
@@ -1664,7 +1633,7 @@
               "modelAnswer": "• Postero-lateral hypothalamus (sympathetic effects)\n• Anterior hypothalamus (parasympathetic effects)"
             },
             {
-              "id": "mcns2-ch6-physiology-q88",
+              "id": "mcns2-ch6-physiology-q87",
               "type": "essay",
               "lecture": 1,
               "text": "Which part of the hypothalamus is the feeding center?",
@@ -1673,7 +1642,7 @@
               "modelAnswer": "• Lateral hypothalamus"
             },
             {
-              "id": "mcns2-ch6-physiology-q89",
+              "id": "mcns2-ch6-physiology-q88",
               "type": "essay",
               "lecture": 1,
               "text": "Which part of the hypothalamus is the satiety center?",
@@ -1682,7 +1651,7 @@
               "modelAnswer": "• VM hypothalamus"
             },
             {
-              "id": "mcns2-ch6-physiology-q90",
+              "id": "mcns2-ch6-physiology-q89",
               "type": "essay",
               "lecture": 1,
               "text": "What’s the characteristics of feeding center?",
@@ -1691,7 +1660,7 @@
               "modelAnswer": "• Located in Lateral hypothalamus\n• Has intrinsic activity\n• Inhibited by satiety center\n• Lesion in it leads to Anorexia"
             },
             {
-              "id": "mcns2-ch6-physiology-q91",
+              "id": "mcns2-ch6-physiology-q90",
               "type": "essay",
               "lecture": 1,
               "text": "What stimulates the satiety center in the VM hypothalamus?",
@@ -1700,7 +1669,7 @@
               "modelAnswer": "• Glucose, in the presence of insulin (insulin- dependent glucostat)"
             },
             {
-              "id": "mcns2-ch6-physiology-q92",
+              "id": "mcns2-ch6-physiology-q91",
               "type": "essay",
               "lecture": 1,
               "text": "What happens when there is a lesion in the VM hypothalamus?",
@@ -1709,7 +1678,7 @@
               "modelAnswer": "• Hyperphagia"
             },
             {
-              "id": "mcns2-ch6-physiology-q93",
+              "id": "mcns2-ch6-physiology-q92",
               "type": "essay",
               "lecture": 1,
               "text": "Which part of the hypothalamus controls heat gain?",
@@ -1718,7 +1687,7 @@
               "modelAnswer": "• Posterior hypothalamus"
             },
             {
-              "id": "mcns2-ch6-physiology-q94",
+              "id": "mcns2-ch6-physiology-q93",
               "type": "essay",
               "lecture": 1,
               "text": "Which part of the hypothalamus controls heat loss?",
@@ -1727,7 +1696,7 @@
               "modelAnswer": "• Anterior hypothalamus"
             },
             {
-              "id": "mcns2-ch6-physiology-q95",
+              "id": "mcns2-ch6-physiology-q94",
               "type": "essay",
               "lecture": 1,
               "text": "Which part of the hypothalamus controls the thirst center?",
@@ -1736,7 +1705,7 @@
               "modelAnswer": "• Lateral hypothalamus"
             },
             {
-              "id": "mcns2-ch6-physiology-q96",
+              "id": "mcns2-ch6-physiology-q95",
               "type": "essay",
               "lecture": 1,
               "text": "Which part of the hypothalamus controls the release of ADH (Vasopressin)?",
@@ -1745,7 +1714,7 @@
               "modelAnswer": "• Supraoptic nucleus"
             },
             {
-              "id": "mcns2-ch6-physiology-q97",
+              "id": "mcns2-ch6-physiology-q96",
               "type": "essay",
               "lecture": 1,
               "text": "What hormone is released from the hypothalamus to switch between sleep and arousal?",
@@ -1754,7 +1723,7 @@
               "modelAnswer": "• Orexin Hormone"
             },
             {
-              "id": "mcns2-ch6-physiology-q98",
+              "id": "mcns2-ch6-physiology-q97",
               "type": "essay",
               "lecture": 1,
               "text": "What part of the brain controls the circadian rhythm?",
@@ -1763,7 +1732,7 @@
               "modelAnswer": "• Suprachiasmatic nucleus"
             },
             {
-              "id": "mcns2-ch6-physiology-q99",
+              "id": "mcns2-ch6-physiology-q98",
               "type": "essay",
               "lecture": 1,
               "text": "What is the role of the suprachiasmatic nucleus in control of circadian rhythm?",
@@ -1772,7 +1741,7 @@
               "modelAnswer": "• Periodic, diurnal changes in many body physiological processes according to Light- Dark cycles"
             },
             {
-              "id": "mcns2-ch6-physiology-q100",
+              "id": "mcns2-ch6-physiology-q99",
               "type": "essay",
               "lecture": 1,
               "text": "What is the role of the hypothalamus in emotion and sexual behavior?",
@@ -1781,7 +1750,7 @@
               "modelAnswer": "• Through its role with the Limbic system, stimulate sexual drive"
             },
             {
-              "id": "mcns2-ch6-physiology-q101",
+              "id": "mcns2-ch6-physiology-q100",
               "type": "essay",
               "lecture": 1,
               "text": "What is the part of hypothalamus associated with Sexual drive?",
@@ -1790,7 +1759,7 @@
               "modelAnswer": "• Most anterior and most posterior parts of the hypothalamus"
             },
             {
-              "id": "mcns2-ch6-physiology-q102",
+              "id": "mcns2-ch6-physiology-q101",
               "type": "essay",
               "lecture": 1,
               "text": "What happens when there is a lesion in the anterior hypothalamus?",
@@ -1799,7 +1768,7 @@
               "modelAnswer": "• Loss of sexual interest"
             },
             {
-              "id": "mcns2-ch6-physiology-q103",
+              "id": "mcns2-ch6-physiology-q102",
               "type": "essay",
               "lecture": 1,
               "text": "What is the Papez Circuit coarse?",
@@ -1808,7 +1777,7 @@
               "modelAnswer": "• Hippocampus → Fornix → Mammillary bodies → Anterior Nuclei of thalamus → Cingulate gyrus → Hippocampus"
             },
             {
-              "id": "mcns2-ch6-physiology-q104",
+              "id": "mcns2-ch6-physiology-q103",
               "type": "essay",
               "lecture": 1,
               "text": "How is the Papez Circuit characterized?",
@@ -1822,13 +1791,8 @@
           "id": "pharma",
           "name": "Pharmacology",
           "iconName": "Pill",
-          "lectures": "",
-          "lectureCount": 3,
-          "lectureNames": [
-            "Anaesthesia",
-            "Epilepsy and Migraines",
-            "sedatives and Hypnotics"
-          ],
+          "lectures": "L1-L5",
+          "lectureCount": 5,
           "questions": [
             {
               "id": "mcns2-ch6-pharma-q1",
@@ -3241,21 +3205,6 @@
               "id": "mcns2-ch6-pharma-q94",
               "type": "mcq",
               "lecture": 1,
-              "text": "Choose the incorrect statement:",
-              "explanation": "The correct answer is “Clonazepam is 2nd line in partial epilepsy”. For the question “Choose the incorrect statement”, this option is the most accurate based on the source material.",
-              "keyConcept": "Clonazepam is 2nd line in partial epilepsy",
-              "options": [
-                "Levetiracetam & valproate are broad spectrum used in all types of epilepsy",
-                "Carbamazepine is 1st choice in partial epilepsy",
-                "Valproate is 1st line in myoclonic epilepsy",
-                "Clonazepam is 2nd line in partial epilepsy"
-              ],
-              "correctIndex": 3
-            },
-            {
-              "id": "mcns2-ch6-pharma-q95",
-              "type": "mcq",
-              "lecture": 1,
               "text": "Gingival hyperplasia is a common side effect of:",
               "explanation": "The correct answer is “Phenytoin”. For the question “Gingival hyperplasia is a common side effect of”, this option is the most accurate based on the source material.",
               "keyConcept": "Phenytoin",
@@ -3268,7 +3217,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch6-pharma-q96",
+              "id": "mcns2-ch6-pharma-q95",
               "type": "mcq",
               "lecture": 1,
               "text": "Teratogenic effects are more likely to be induced by:",
@@ -3283,7 +3232,7 @@
               "correctIndex": 3
             },
             {
-              "id": "mcns2-ch6-pharma-q97",
+              "id": "mcns2-ch6-pharma-q96",
               "type": "mcq",
               "lecture": 1,
               "text": "The following antiepileptic is not used in tonic clonic epilepsy:",
@@ -3298,7 +3247,7 @@
               "correctIndex": 3
             },
             {
-              "id": "mcns2-ch6-pharma-q98",
+              "id": "mcns2-ch6-pharma-q97",
               "type": "mcq",
               "lecture": 1,
               "text": "Gingival hygiene and care is highly recommended when taking which of the following drugs:",
@@ -3313,7 +3262,7 @@
               "correctIndex": 0
             },
             {
-              "id": "mcns2-ch6-pharma-q99",
+              "id": "mcns2-ch6-pharma-q98",
               "type": "mcq",
               "lecture": 1,
               "text": "The following drug(s) can be used in treatment of myoclonic epilepsy:",
@@ -3328,7 +3277,7 @@
               "correctIndex": 3
             },
             {
-              "id": "mcns2-ch6-pharma-q100",
+              "id": "mcns2-ch6-pharma-q99",
               "type": "mcq",
               "lecture": 1,
               "text": "The following antiepileptic drug is not matched with its adverse effect:",
@@ -3343,22 +3292,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch6-pharma-q101",
-              "type": "mcq",
-              "lecture": 1,
-              "text": "The following is not correctly matched to its mechanism of action:",
-              "explanation": "The correct answer is “Clonazepam / Cl- channel blockade”. For the question “The following is not correctly matched to its mechanism of action”, this option is the most accurate based on the source material.",
-              "keyConcept": "Clonazepam / Cl- channel blockade",
-              "options": [
-                "Phenytoin / sodium channel blockade",
-                "Clonazepam / Cl- channel blockade",
-                "Valproate / inhibition of GABA transaminase",
-                "Ethosuximide / Ca++ channel blockade"
-              ],
-              "correctIndex": 1
-            },
-            {
-              "id": "mcns2-ch6-pharma-q102",
+              "id": "mcns2-ch6-pharma-q100",
               "type": "mcq",
               "lecture": 1,
               "text": "Which of the following is incorrect regarding antiepileptic drugs:",
@@ -3373,7 +3307,7 @@
               "correctIndex": 3
             },
             {
-              "id": "mcns2-ch6-pharma-q103",
+              "id": "mcns2-ch6-pharma-q101",
               "type": "mcq",
               "lecture": 1,
               "text": "The following antiepileptic drug acts by binding to VS A to modify glutamate release:",
@@ -3388,7 +3322,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch6-pharma-q104",
+              "id": "mcns2-ch6-pharma-q102",
               "type": "mcq",
               "lecture": 1,
               "text": "Which of the following drugs could rapidly calm a violent patient:",
@@ -3403,29 +3337,7 @@
               "correctIndex": 0
             },
             {
-              "id": "mcns2-ch6-pharma-q105",
-              "type": "matching",
-              "lecture": 1,
-              "text": "Match each item to its correct description.",
-              "explanation": "The correct answer is “Livido reticularis = Amantadine; Fatal hepatotoxicity & hair thinning = Valproate; Chest wall rigidity = Fentanyl”. For the question “Match each item to its correct description. Drug therapy of epilepsy & migraine”, this option is the most accurate based on the source material.",
-              "keyConcept": "Drug therapy of epilepsy & migraine drug matching",
-              "pairs": [
-                {
-                  "premise": "Livido reticularis",
-                  "target": "Amantadine"
-                },
-                {
-                  "premise": "Fatal hepatotoxicity & hair thinning",
-                  "target": "Valproate"
-                },
-                {
-                  "premise": "Chest wall rigidity",
-                  "target": "Fentanyl"
-                }
-              ]
-            },
-            {
-              "id": "mcns2-ch6-pharma-q106",
+              "id": "mcns2-ch6-pharma-q103",
               "type": "essay",
               "lecture": 3,
               "text": "What are the uses of Benzodiazepines? (Just 3)",
@@ -3434,7 +3346,7 @@
               "modelAnswer": "• Generalized anxiety disorders\n• Secondary anxiety due to psychiatric\n• Panic attacks\n• Insomnia, nightmares and night terrors\n• Epilepsy\n• Muscle spasticity\n• Balanced anesthesia\n• Conscious sedation\n• Pre-anesthesia\n• Alcohol withdrawal"
             },
             {
-              "id": "mcns2-ch6-pharma-q107",
+              "id": "mcns2-ch6-pharma-q104",
               "type": "essay",
               "lecture": 3,
               "text": "How do Benzodiazepines affect sleep?",
@@ -3443,7 +3355,7 @@
               "modelAnswer": "• Shorten sleep latency\n• Increase stage 2 NREM sleep\n• Decrease stage 3 & 4 NREM sleep\n• Decrease REM sleep"
             },
             {
-              "id": "mcns2-ch6-pharma-q108",
+              "id": "mcns2-ch6-pharma-q105",
               "type": "essay",
               "lecture": 3,
               "text": "What is the classification of Benzodiazepines based on duration of action?",
@@ -3452,7 +3364,7 @@
               "modelAnswer": "• Ultra-short acting: Midazolam\n• Intermediate acting: Alprazolam, Lorazepam\n• Long acting: Diazepam, Clonazepam"
             },
             {
-              "id": "mcns2-ch6-pharma-q109",
+              "id": "mcns2-ch6-pharma-q106",
               "type": "essay",
               "lecture": 3,
               "text": "What are the pharmacokinetics of Benzodiazepines?",
@@ -3461,7 +3373,7 @@
               "modelAnswer": "• Hepatic oxidation with cytochrome P450 (CYP3A4), except Lorazepam"
             },
             {
-              "id": "mcns2-ch6-pharma-q110",
+              "id": "mcns2-ch6-pharma-q107",
               "type": "essay",
               "lecture": 3,
               "text": "What are the selective drugs for anxiety and insomnia?",
@@ -3470,7 +3382,7 @@
               "modelAnswer": "• Zolpidem\n• Ramelteon\n• Buspirone"
             },
             {
-              "id": "mcns2-ch6-pharma-q111",
+              "id": "mcns2-ch6-pharma-q108",
               "type": "essay",
               "lecture": 3,
               "text": "What are the advantages of zolpidem over Benzodiazepines?",
@@ -3479,7 +3391,7 @@
               "modelAnswer": "• Rapid onset\n• Less tolerance & dependence\n• Less adverse effects on cognitive function, hangover\n• REM sleep suppression"
             },
             {
-              "id": "mcns2-ch6-pharma-q112",
+              "id": "mcns2-ch6-pharma-q109",
               "type": "essay",
               "lecture": 3,
               "text": "What are the disadvantages of buspirone?",
@@ -3488,7 +3400,7 @@
               "modelAnswer": "• Delayed onset (2 weeks)\n• Not effective in insomnia or panic attacks"
             },
             {
-              "id": "mcns2-ch6-pharma-q113",
+              "id": "mcns2-ch6-pharma-q110",
               "type": "essay",
               "lecture": 3,
               "text": "What are the general guidelines for therapy with sedative-hypnotics?",
@@ -3497,7 +3409,7 @@
               "modelAnswer": "• Drug therapy is indicated only in severe acute anxiety or short-term treatment of acute insomnia\n• Start with a small dose for a short time to avoid abuse and dependence\n• Terminate slowly to avoid withdrawal syndrome\n• Adjust dose in hepatic dysfunction\n• Decrease doses in the elderly to avoid risk of falling"
             },
             {
-              "id": "mcns2-ch6-pharma-q114",
+              "id": "mcns2-ch6-pharma-q111",
               "type": "essay",
               "lecture": 3,
               "text": "How do benzodiazepines facilitate the action of GABA?",
@@ -3506,7 +3418,7 @@
               "modelAnswer": "• Binding to the BZD receptor site of GABA-A receptor complex and affinity of GABA to bind to its receptors facilitating the inhibitory effects of GABA"
             },
             {
-              "id": "mcns2-ch6-pharma-q115",
+              "id": "mcns2-ch6-pharma-q112",
               "type": "essay",
               "lecture": 3,
               "text": "What is the mechanism of action of zolpidem?",
@@ -3515,7 +3427,7 @@
               "modelAnswer": "• Binds to the BZD1 receptor subtype (involved in sedation & hypnosis) facilitating the inhibitory effects of GABA"
             },
             {
-              "id": "mcns2-ch6-pharma-q116",
+              "id": "mcns2-ch6-pharma-q113",
               "type": "essay",
               "lecture": 3,
               "text": "What are the uses of benzodiazepines?",
@@ -3524,7 +3436,7 @@
               "modelAnswer": "• GAD (all except ultra-short)\n• 2ry anxiety due to psychiatric disease\n• Panic attack: Alprazolam\n• Insomnia\n• Epilepsy (NOT 1st choice)"
             },
             {
-              "id": "mcns2-ch6-pharma-q117",
+              "id": "mcns2-ch6-pharma-q114",
               "type": "essay",
               "lecture": 3,
               "text": "What are the adverse effects of benzodiazepines when It’s used as anxiolytic?",
@@ -3533,7 +3445,7 @@
               "modelAnswer": "• Abuse, tolerance, dependence\n• paradoxical excitement"
             },
             {
-              "id": "mcns2-ch6-pharma-q118",
+              "id": "mcns2-ch6-pharma-q115",
               "type": "essay",
               "lecture": 3,
               "text": "What are the effects of benzodiazepine withdrawal if it’s used as hypnotic and sedative?",
@@ -3542,7 +3454,7 @@
               "modelAnswer": "• Insomnia, nightmares"
             },
             {
-              "id": "mcns2-ch6-pharma-q119",
+              "id": "mcns2-ch6-pharma-q116",
               "type": "essay",
               "lecture": 3,
               "text": "What are the motor-related side effects of benzodiazepines?",
@@ -3551,7 +3463,7 @@
               "modelAnswer": "• Ataxia and motor incoordination"
             },
             {
-              "id": "mcns2-ch6-pharma-q120",
+              "id": "mcns2-ch6-pharma-q117",
               "type": "essay",
               "lecture": 3,
               "text": "What are the two main effects of benzodiazepines when combined with alcohol or other CNS depressants?",
@@ -3560,7 +3472,7 @@
               "modelAnswer": "• Additive CNS depression"
             },
             {
-              "id": "mcns2-ch6-pharma-q121",
+              "id": "mcns2-ch6-pharma-q118",
               "type": "essay",
               "lecture": 3,
               "text": "What is the primary use of benzodiazepines in panic attacks?",
@@ -3569,7 +3481,7 @@
               "modelAnswer": "• Anxiolytic and has antidepressant effect"
             },
             {
-              "id": "mcns2-ch6-pharma-q122",
+              "id": "mcns2-ch6-pharma-q119",
               "type": "essay",
               "lecture": 3,
               "text": "What is the best benzodiazepine for treating epilepsy?",
@@ -3578,7 +3490,7 @@
               "modelAnswer": "• Clonazepam"
             },
             {
-              "id": "mcns2-ch6-pharma-q123",
+              "id": "mcns2-ch6-pharma-q120",
               "type": "essay",
               "lecture": 3,
               "text": "What is the mechanism of action of Flumazenil?",
@@ -3587,7 +3499,7 @@
               "modelAnswer": "• Competitive antagonist to Benzodiazepine receptors"
             },
             {
-              "id": "mcns2-ch6-pharma-q124",
+              "id": "mcns2-ch6-pharma-q121",
               "type": "essay",
               "lecture": 3,
               "text": "What are the therapeutic uses of Flumazenil?",
@@ -3596,126 +3508,126 @@
               "modelAnswer": "• Benzodiazepine toxicity\n• Termination of Benzodiazepine effect after\n• Hepatic encephalopathy"
             },
             {
-              "id": "mcns2-ch6-pharma-q125",
+              "id": "mcns2-ch6-pharma-q122",
               "type": "essay",
-              "lecture": 3,
+              "lecture": 4,
               "text": "What factors can increase MAC?",
               "explanation": "This question asks: What factors can increase MAC? Key point: Adjuvants (Opioids, sedative hypnotics, clonidine) Elderly Drugs that increase sympathetic activity Alcohol abuse.",
               "keyConcept": "Factors can increase MAC",
               "modelAnswer": "• Adjuvants (Opioids, sedative hypnotics, clonidine)\n• Elderly\n• Drugs that increase sympathetic activity\n• Alcohol abuse"
             },
             {
-              "id": "mcns2-ch6-pharma-q126",
+              "id": "mcns2-ch6-pharma-q123",
               "type": "essay",
-              "lecture": 3,
+              "lecture": 4,
               "text": "What are the classic antiepileptic drugs?",
               "explanation": "This question asks: What are the classic antiepileptic drugs? Key point: Phenytoin y Valproate Carbamazepine y Ethosuximide.",
               "keyConcept": "Are the classic antiepileptic drugs",
               "modelAnswer": "• Phenytoin y Valproate\n• Carbamazepine y Ethosuximide"
             },
             {
-              "id": "mcns2-ch6-pharma-q127",
+              "id": "mcns2-ch6-pharma-q124",
               "type": "essay",
-              "lecture": 3,
+              "lecture": 4,
               "text": "What are the newer antiepileptic drugs?",
               "explanation": "This question asks: What are the newer antiepileptic drugs? Key point: Lamotrigine y Topiramate Levetiracetam y Gabapentin Oxcarbazepine y Pregabalin.",
               "keyConcept": "Are the newer antiepileptic drugs",
               "modelAnswer": "• Lamotrigine y Topiramate\n• Levetiracetam y Gabapentin\n• Oxcarbazepine y Pregabalin"
             },
             {
-              "id": "mcns2-ch6-pharma-q128",
+              "id": "mcns2-ch6-pharma-q125",
               "type": "essay",
-              "lecture": 3,
+              "lecture": 4,
               "text": "What is the antiepileptic drugs that block presynaptic Ca++ channels?",
               "explanation": "This question asks: What is the antiepileptic drugs that block presynaptic Ca++ channels? Key point: Gabapentin Pregabalin Lamotrigine.",
               "keyConcept": "Is the antiepileptic drugs that block presynaptic Ca++ channels",
               "modelAnswer": "• Gabapentin\n• Pregabalin\n• Lamotrigine"
             },
             {
-              "id": "mcns2-ch6-pharma-q129",
+              "id": "mcns2-ch6-pharma-q126",
               "type": "essay",
-              "lecture": 3,
+              "lecture": 4,
               "text": "What is the antiepileptic drugs that block Na+ channels?",
               "explanation": "This question asks: What is the antiepileptic drugs that block Na+ channels? Key point: Classic drugs y Topiramate Lamotrigine y Levetiracetam Oxcarbazepine.",
               "keyConcept": "Is the antiepileptic drugs that block Na+ channels",
               "modelAnswer": "• Classic drugs y Topiramate\n• Lamotrigine y Levetiracetam\n• Oxcarbazepine"
             },
             {
-              "id": "mcns2-ch6-pharma-q130",
+              "id": "mcns2-ch6-pharma-q127",
               "type": "essay",
-              "lecture": 3,
+              "lecture": 4,
               "text": "What is the antiepileptic drugs that block T type of Ca++ channels in thalamus?",
               "explanation": "This question asks: What is the antiepileptic drugs that block T type of Ca++ channels in thalamus? Key point: Ethosuximide Valproate.",
               "keyConcept": "Is the antiepileptic drugs that block T type of Ca++ channels in thalamus",
               "modelAnswer": "• Ethosuximide\n• Valproate"
             },
             {
-              "id": "mcns2-ch6-pharma-q131",
+              "id": "mcns2-ch6-pharma-q128",
               "type": "essay",
-              "lecture": 3,
+              "lecture": 4,
               "text": "What is the effect of antiepileptic drugs on GABA?",
               "explanation": "This question asks: What is the effect of antiepileptic drugs on GABA? Key point: Facilitate GABA action: Benzodiazepines, Topiramate, Barbiturates Increase GABA Level: Valproate Decrease GABA Breakdown: Vigabatrin.",
               "keyConcept": "Is the effect of antiepileptic drugs on GABA",
               "modelAnswer": "• Facilitate GABA action: Benzodiazepines, Topiramate, Barbiturates\n• Increase GABA Level: Valproate - Decrease GABA Breakdown: Vigabatrin"
             },
             {
-              "id": "mcns2-ch6-pharma-q132",
+              "id": "mcns2-ch6-pharma-q129",
               "type": "essay",
-              "lecture": 3,
+              "lecture": 4,
               "text": "Which antiepileptic drugs can act with more than one mechanism?",
               "explanation": "This question asks: Which antiepileptic drugs can act with more than one mechanism? Key point: Valproate Topiramate Lamotrigine.",
               "keyConcept": "Antiepileptic drugs can act with more than one mechanism",
               "modelAnswer": "• Valproate\n• Topiramate\n• Lamotrigine"
             },
             {
-              "id": "mcns2-ch6-pharma-q133",
+              "id": "mcns2-ch6-pharma-q130",
               "type": "essay",
-              "lecture": 3,
+              "lecture": 4,
               "text": "What are the first-line antiepileptic drugs for different types of seizures?",
               "explanation": "This question asks: What are the first-line antiepileptic drugs for different types of seizures? Key point: Partial (Tonic/Clonic): Carbamazepine, Lamotrigine Absence: Ethosuximide Myoclonic: Valproate.",
               "keyConcept": "Are the first-line antiepileptic drugs for different types of seizures",
               "modelAnswer": "• Partial (Tonic/Clonic): Carbamazepine, Lamotrigine\n• Absence: Ethosuximide\n• Myoclonic: Valproate"
             },
             {
-              "id": "mcns2-ch6-pharma-q134",
+              "id": "mcns2-ch6-pharma-q131",
               "type": "essay",
-              "lecture": 3,
+              "lecture": 4,
               "text": "What are the second-line antiepileptic drugs for different types of seizures?",
               "explanation": "This question asks: What are the second-line antiepileptic drugs for different types of seizures? Key point: Partial (Tonic/Clonic): Levetiracetam Absence: Carbamazepine, Levetiracetam, Lamotrigine Myoclonic: Levetiracetam, Topiramate.",
               "keyConcept": "Are the second-line antiepileptic drugs for different types of seizures",
               "modelAnswer": "• Partial (Tonic/Clonic): Levetiracetam\n• Absence: Carbamazepine, Levetiracetam, Lamotrigine\n• Myoclonic: Levetiracetam, Topiramate"
             },
             {
-              "id": "mcns2-ch6-pharma-q135",
+              "id": "mcns2-ch6-pharma-q132",
               "type": "essay",
-              "lecture": 3,
+              "lecture": 4,
               "text": "What are the adverse effects of carbamazepine?",
               "explanation": "This question asks: What are the adverse effects of carbamazepine? Key point: Less learning ability in children Enzyme inducer (Metabolism of antiepileptics, warfarin & other drugs) Agranulocytosis Leukopenia Teratogenicity Water intoxication & Dil.",
               "keyConcept": "Are the adverse effects of carbamazepine",
               "modelAnswer": "• Less learning ability in children\n• Enzyme inducer (Metabolism of antiepileptics, warfarin & other drugs)\n• Agranulocytosis - Leukopenia\n• Teratogenicity\n• Water intoxication & Dilutional hyponatremia (Avoid with vasopressin)"
             },
             {
-              "id": "mcns2-ch6-pharma-q136",
+              "id": "mcns2-ch6-pharma-q133",
               "type": "essay",
-              "lecture": 3,
+              "lecture": 4,
               "text": "What are the adverse effects of valproate?",
               "explanation": "This question asks: What are the adverse effects of valproate? Key point: Hypersensitivity (Skin rash) GIT Disturbances (Start with small doses after meal) Fine hand tremors, Ataxia, Less sedative Enzyme inhibitor (Metabolism of antiepileptics .",
               "keyConcept": "Are the adverse effects of valproate",
               "modelAnswer": "• Hypersensitivity (Skin rash)\n• GIT Disturbances (Start with small doses after meal)\n• Fine hand tremors, Ataxia, Less sedative\n• Enzyme inhibitor (Metabolism of antiepileptics & other drugs)\n• Thrombocytopenia\n• Teratogenicity (Add folic acid supplement)\n• Others (Hair loss, polycystic ovary, increased appetite, weight gain)"
             },
             {
-              "id": "mcns2-ch6-pharma-q137",
+              "id": "mcns2-ch6-pharma-q134",
               "type": "essay",
-              "lecture": 3,
+              "lecture": 4,
               "text": "Which antiepileptic drug is known to cause megaloblastic anemia?",
               "explanation": "This question asks: Which antiepileptic drug is known to cause megaloblastic anemia? Key point: Valproate.",
               "keyConcept": "Antiepileptic drug is known to cause megaloblastic anemia",
               "modelAnswer": "• Valproate"
             },
             {
-              "id": "mcns2-ch6-pharma-q138",
+              "id": "mcns2-ch6-pharma-q135",
               "type": "truefalse",
-              "lecture": 3,
+              "lecture": 4,
               "text": "True or False: Unpredictable serum levels should be monitored for Phenytoin.",
               "explanation": "This question concerns true or False: Unpredictable serum levels should be monitored for Phenytoin.. Key point: True.",
               "keyConcept": "Unpredictable serum levels should be monitored for Phenytoin",
@@ -3726,45 +3638,45 @@
               "correctIndex": 0
             },
             {
-              "id": "mcns2-ch6-pharma-q139",
+              "id": "mcns2-ch6-pharma-q136",
               "type": "essay",
-              "lecture": 3,
+              "lecture": 4,
               "text": "What is a specific adverse effect of Lamotrigine?",
               "explanation": "This question asks: What is a specific adverse effect of Lamotrigine? Key point: Fatal dermatitis (Stevens Johnson Syndrome).",
               "keyConcept": "Is a specific adverse effect of Lamotrigine",
               "modelAnswer": "• Fatal dermatitis (Stevens-Johnson Syndrome)"
             },
             {
-              "id": "mcns2-ch6-pharma-q140",
+              "id": "mcns2-ch6-pharma-q137",
               "type": "essay",
-              "lecture": 3,
+              "lecture": 4,
               "text": "What are the other uses of Antiepileptic drugs?",
               "explanation": "This question asks: What are the other uses of Antiepileptic drugs? Key point: Mood stabilizers in bipolar depression Antiarrhythmic Prophylactic in migraine Neuropathic pain.",
               "keyConcept": "Are the other uses of Antiepileptic drugs",
               "modelAnswer": "• Mood stabilizers in bipolar depression\n• Antiarrhythmic\n• Prophylactic in migraine\n• Neuropathic pain"
             },
             {
-              "id": "mcns2-ch6-pharma-q141",
+              "id": "mcns2-ch6-pharma-q138",
               "type": "essay",
-              "lecture": 3,
+              "lecture": 5,
               "text": "Which drugs are used for rapid control of status epilepticus?",
               "explanation": "This question asks: Which drugs are used for rapid control of status epilepticus? Key point: BZDS (Midazolam or Diazepam).",
               "keyConcept": "Drugs are used for rapid control of status epilepticus",
               "modelAnswer": "• BZDS (Midazolam or Diazepam)"
             },
             {
-              "id": "mcns2-ch6-pharma-q142",
+              "id": "mcns2-ch6-pharma-q139",
               "type": "essay",
-              "lecture": 3,
+              "lecture": 5,
               "text": "What is the first-line treatment for maintaining control in status epilepticus?",
               "explanation": "This question asks: What is the first-line treatment for maintaining control in status epilepticus? Key point: Fosphenytoin.",
               "keyConcept": "Is the first-line treatment for maintaining control in status epilepticus",
               "modelAnswer": "• Fosphenytoin"
             },
             {
-              "id": "mcns2-ch6-pharma-q143",
+              "id": "mcns2-ch6-pharma-q140",
               "type": "essay",
-              "lecture": 3,
+              "lecture": 5,
               "text": "Which antiepileptic drugs are preferred in the elderly?",
               "explanation": "This question asks: Which antiepileptic drugs are preferred in the elderly? Key point: Carbamazepine Lamotrigine Gabapentin.",
               "keyConcept": "Antiepileptic drugs are preferred in the elderly",

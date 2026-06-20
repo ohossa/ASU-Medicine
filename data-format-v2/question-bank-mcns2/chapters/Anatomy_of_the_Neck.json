@@ -29,15 +29,8 @@
           "id": "anatomy",
           "name": "Anatomy",
           "iconName": "Bone",
-          "lectures": "",
+          "lectures": "L1-L5",
           "lectureCount": 5,
-          "lectureNames": [
-            "Fascia",
-            "Last four cranial nerves",
-            "Suprahyoid muscles, cervical plexus and sympathetic chain",
-            "Triangles",
-            "Lecture 5"
-          ],
           "questions": [
             {
               "id": "mcns2-ch5-anatomy-q1",
@@ -264,7 +257,7 @@
                   "type": "essay",
                   "text": "In this patient, which nerves could be involved & led to dysphagia?",
                   "explanation": "This clinical scenario is analysed through 2 guided sub-questions. Model answers are provided for each part based on the source material.",
-                  "modelAnswer": "Cranial accessory nerve which supplies the muscles of the pharynx (responsible for swallowing). (Dysphagia was mentioned in injury of vagus nerve and while cranial accessory is correct it's mostly the vagus nerve via its pharyngeal branch that mostly contains cranial accessory fibers)"
+                  "modelAnswer": "Cranial accessory nerve which supplies the muscles of the pharynx (responsible for swallowing)."
                 },
                 {
                   "id": "mcns2-ch5-anatomy-q8-sq2",
@@ -1254,22 +1247,6 @@
               "id": "mcns2-ch5-anatomy-q69",
               "type": "mcq",
               "lecture": 1,
-              "text": "The hypoglossal nerve",
-              "explanation": "The hypoglossal nerve is motor to all intrinsic muscles of tongue. The correct answer is: Is motor to all intrinsic muscles of the tongue.",
-              "keyConcept": "The hypoglossal nerve is motor to all intrinsic muscles of tongue",
-              "options": [
-                "Supplies sensation to the anterior part of the tongue.",
-                "Carries fibers from the second and third cervical nerves.",
-                "Passes between the internal and external carotid arteries.",
-                "Is motor to all intrinsic muscles of the tongue.",
-                "If injured, the tongue on protrusion deviates away from affected side."
-              ],
-              "correctIndex": 3
-            },
-            {
-              "id": "mcns2-ch5-anatomy-q70",
-              "type": "mcq",
-              "lecture": 1,
               "text": "All the following muscles are supplied by the hypoglossal nerve EXCEPT",
               "explanation": "Hypoglossal nerve supplies muscles of tongue but does not supply Anterior belly of digastric. The correct answer is: Anterior belly of digastric.",
               "keyConcept": "Hypoglossal nerve supplies muscles of tongue but does not supply Anterior belly of digastric",
@@ -1283,7 +1260,7 @@
               "correctIndex": 0
             },
             {
-              "id": "mcns2-ch5-anatomy-q71",
+              "id": "mcns2-ch5-anatomy-q70",
               "type": "mcq",
               "lecture": 1,
               "text": "The following are cutaneous branches of the cervical plexus EXCEPT",
@@ -1299,7 +1276,7 @@
               "correctIndex": 3
             },
             {
-              "id": "mcns2-ch5-anatomy-q72",
+              "id": "mcns2-ch5-anatomy-q71",
               "type": "mcq",
               "lecture": 1,
               "text": "The following are branches of the cervical plexus EXCEPT",
@@ -1315,7 +1292,7 @@
               "correctIndex": 2
             },
             {
-              "id": "mcns2-ch5-anatomy-q73",
+              "id": "mcns2-ch5-anatomy-q72",
               "type": "mcq",
               "lecture": 1,
               "text": "The ansa cervicalis",
@@ -1331,7 +1308,7 @@
               "correctIndex": 3
             },
             {
-              "id": "mcns2-ch5-anatomy-q74",
+              "id": "mcns2-ch5-anatomy-q73",
               "type": "mcq",
               "lecture": 1,
               "text": "The ansa cervicalis supplies one of the following muscles",
@@ -1347,7 +1324,7 @@
               "correctIndex": 3
             },
             {
-              "id": "mcns2-ch5-anatomy-q75",
+              "id": "mcns2-ch5-anatomy-q74",
               "type": "mcq",
               "lecture": 1,
               "text": "Which one of the following is used as a venous manometer?",
@@ -1363,7 +1340,7 @@
               "correctIndex": 2
             },
             {
-              "id": "mcns2-ch5-anatomy-q76",
+              "id": "mcns2-ch5-anatomy-q75",
               "type": "mcq",
               "lecture": 1,
               "text": "As regards anterior jugular vein, choose the INCORRECT statement",
@@ -1379,7 +1356,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch5-anatomy-q77",
+              "id": "mcns2-ch5-anatomy-q76",
               "type": "mcq",
               "lecture": 1,
               "text": "As regards investing layer of deep cervical fascia, choose the INCORRECT statement",
@@ -1395,7 +1372,7 @@
               "correctIndex": 4
             },
             {
-              "id": "mcns2-ch5-anatomy-q78",
+              "id": "mcns2-ch5-anatomy-q77",
               "type": "mcq",
               "lecture": 1,
               "text": "Superiorly, the investing layer of deep cervical fascia has the following attachments EXCEPT",
@@ -1411,7 +1388,7 @@
               "correctIndex": 0
             },
             {
-              "id": "mcns2-ch5-anatomy-q79",
+              "id": "mcns2-ch5-anatomy-q78",
               "type": "mcq",
               "lecture": 1,
               "text": "The investing layer of deep cervical fascia is attached to all the following structures EXCEPT",
@@ -1427,7 +1404,7 @@
               "correctIndex": 3
             },
             {
-              "id": "mcns2-ch5-anatomy-q80",
+              "id": "mcns2-ch5-anatomy-q79",
               "type": "mcq",
               "lecture": 1,
               "text": "As regards the prevertebral fascia, choose the INCORRECT statement",
@@ -1443,7 +1420,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch5-anatomy-q81",
+              "id": "mcns2-ch5-anatomy-q80",
               "type": "mcq",
               "lecture": 1,
               "text": "As regards the carotid sheath, choose the INCORRECT statement",
@@ -1459,7 +1436,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch5-anatomy-q82",
+              "id": "mcns2-ch5-anatomy-q81",
               "type": "mcq",
               "lecture": 1,
               "text": "As regards the boundaries of the posterior triangle of neck, choose the INCORRECT matching",
@@ -1475,7 +1452,7 @@
               "correctIndex": 4
             },
             {
-              "id": "mcns2-ch5-anatomy-q83",
+              "id": "mcns2-ch5-anatomy-q82",
               "type": "mcq",
               "lecture": 1,
               "text": "All the following are contents of posterior triangle of neck EXCEPT",
@@ -1491,7 +1468,7 @@
               "correctIndex": 2
             },
             {
-              "id": "mcns2-ch5-anatomy-q84",
+              "id": "mcns2-ch5-anatomy-q83",
               "type": "mcq",
               "lecture": 1,
               "text": "Which of the following is a tributary of subclavian vein?",
@@ -1507,7 +1484,7 @@
               "correctIndex": 3
             },
             {
-              "id": "mcns2-ch5-anatomy-q85",
+              "id": "mcns2-ch5-anatomy-q84",
               "type": "mcq",
               "lecture": 1,
               "text": "As regards contents of posterior triangle, choose CORRECT statement",
@@ -1523,7 +1500,7 @@
               "correctIndex": 2
             },
             {
-              "id": "mcns2-ch5-anatomy-q86",
+              "id": "mcns2-ch5-anatomy-q85",
               "type": "mcq",
               "lecture": 1,
               "text": "As regards submental triangle, choose the INCORRECT statement",
@@ -1539,7 +1516,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch5-anatomy-q87",
+              "id": "mcns2-ch5-anatomy-q86",
               "type": "mcq",
               "lecture": 1,
               "text": "Anterior part of digastric triangle contains all the following EXCEPT",
@@ -1555,7 +1532,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch5-anatomy-q88",
+              "id": "mcns2-ch5-anatomy-q87",
               "type": "mcq",
               "lecture": 1,
               "text": "As regards boundaries of carotid triangle, choose the INCORRECT matching",
@@ -1571,7 +1548,7 @@
               "correctIndex": 3
             },
             {
-              "id": "mcns2-ch5-anatomy-q89",
+              "id": "mcns2-ch5-anatomy-q88",
               "type": "mcq",
               "lecture": 1,
               "text": "All the following are branches of external carotid artery within the carotid triangle EXCEPT",
@@ -1587,7 +1564,7 @@
               "correctIndex": 0
             },
             {
-              "id": "mcns2-ch5-anatomy-q90",
+              "id": "mcns2-ch5-anatomy-q89",
               "type": "mcq",
               "lecture": 1,
               "text": "Cervical plexus gives muscular branches to all the following muscles EXCEPT",
@@ -1603,7 +1580,7 @@
               "correctIndex": 4
             },
             {
-              "id": "mcns2-ch5-anatomy-q91",
+              "id": "mcns2-ch5-anatomy-q90",
               "type": "mcq",
               "lecture": 1,
               "text": "Superior cervical sympathetic ganglion (SCSG) gives all the following branches EXCEPT",
@@ -1619,7 +1596,7 @@
               "correctIndex": 3
             },
             {
-              "id": "mcns2-ch5-anatomy-q92",
+              "id": "mcns2-ch5-anatomy-q91",
               "type": "mcq",
               "lecture": 1,
               "text": "Middle cervical sympathetic ganglion (MCSG) gives all the following branches EXCEPT",
@@ -1635,7 +1612,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch5-anatomy-q93",
+              "id": "mcns2-ch5-anatomy-q92",
               "type": "mcq",
               "lecture": 1,
               "text": "Inferior cervical sympathetic ganglion (ICSG) gives all the following branches EXCEPT",
@@ -1651,7 +1628,7 @@
               "correctIndex": 3
             },
             {
-              "id": "mcns2-ch5-anatomy-q94",
+              "id": "mcns2-ch5-anatomy-q93",
               "type": "mcq",
               "lecture": 1,
               "text": "As regards types of fibers within glossopharyngeal nerve, choose the INCORRECT matching",
@@ -1667,7 +1644,7 @@
               "correctIndex": 4
             },
             {
-              "id": "mcns2-ch5-anatomy-q95",
+              "id": "mcns2-ch5-anatomy-q94",
               "type": "mcq",
               "lecture": 1,
               "text": "As regards branches of glossopharyngeal nerve, choose the INCORRECT statement",
@@ -1683,7 +1660,7 @@
               "correctIndex": 4
             },
             {
-              "id": "mcns2-ch5-anatomy-q96",
+              "id": "mcns2-ch5-anatomy-q95",
               "type": "mcq",
               "lecture": 1,
               "text": "As regards types of fibers within vagus nerve, choose the INCORRECT matching",
@@ -1699,7 +1676,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch5-anatomy-q97",
+              "id": "mcns2-ch5-anatomy-q96",
               "type": "mcq",
               "lecture": 1,
               "text": "As regards accessory nerve, choose the INCORRECT statement",
@@ -1715,7 +1692,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch5-anatomy-q98",
+              "id": "mcns2-ch5-anatomy-q97",
               "type": "mcq",
               "lecture": 1,
               "text": "The fibers of C1 that join the hypoglossal nerve supply all the following EXCEPT",
@@ -1731,7 +1708,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch5-anatomy-q99",
+              "id": "mcns2-ch5-anatomy-q98",
               "type": "mcq",
               "lecture": 1,
               "text": "The upward extension of the posterior longitudinal ligament is called",
@@ -1747,7 +1724,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch5-anatomy-q100",
+              "id": "mcns2-ch5-anatomy-q99",
               "type": "mcq",
               "lecture": 1,
               "text": "The structure attached to the side of the odontoid process of the axis vertebra is the",
@@ -1763,7 +1740,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch5-anatomy-q101",
+              "id": "mcns2-ch5-anatomy-q100",
               "type": "mcq",
               "lecture": 1,
               "text": "The type of the atlanto-occipital joint is",
@@ -1779,7 +1756,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch5-anatomy-q102",
+              "id": "mcns2-ch5-anatomy-q101",
               "type": "mcq",
               "lecture": 1,
               "text": "The median atlanto-axial joint",
@@ -1795,7 +1772,7 @@
               "correctIndex": 2
             },
             {
-              "id": "mcns2-ch5-anatomy-q103",
+              "id": "mcns2-ch5-anatomy-q102",
               "type": "mcq",
               "lecture": 1,
               "text": "All are true regarding atlanto-occipital joint EXCEPT",
@@ -1811,7 +1788,7 @@
               "correctIndex": 2
             },
             {
-              "id": "mcns2-ch5-anatomy-q104",
+              "id": "mcns2-ch5-anatomy-q103",
               "type": "mcq",
               "lecture": 1,
               "text": "The ramus of mandible shows all the following structures EXCEPT",
@@ -1827,7 +1804,7 @@
               "correctIndex": 4
             },
             {
-              "id": "mcns2-ch5-anatomy-q105",
+              "id": "mcns2-ch5-anatomy-q104",
               "type": "mcq",
               "lecture": 1,
               "text": "A 50-year-old man presents with a deep laceration to the side of the scalp in front of the ear, following a bicycle accident. Profuse bleeding is noted from the wound. Which artery is most likely the source of this bleeding?",
@@ -1843,7 +1820,7 @@
               "correctIndex": 3
             },
             {
-              "id": "mcns2-ch5-anatomy-q106",
+              "id": "mcns2-ch5-anatomy-q105",
               "type": "mcq",
               "lecture": 1,
               "text": "A 35-year-old man presents to the clinic with a chief complaint of food accumulation and dripping from the side of his mouth, after recovering from a parotid surgery involving removal of the benign tumor. What is the most likely nerve involved.",
@@ -1859,7 +1836,7 @@
               "correctIndex": 4
             },
             {
-              "id": "mcns2-ch5-anatomy-q107",
+              "id": "mcns2-ch5-anatomy-q106",
               "type": "mcq",
               "lecture": 1,
               "text": "A 28-year-old patient is involved in a car accident and sustains a traumatic injury to their spinal cord. As a result, they lose motor function below the waist and have no sensation in their lower limbs. Based on the location of the injury, which region of the spinal cord is most likely affected?",
@@ -1875,7 +1852,7 @@
               "correctIndex": 2
             },
             {
-              "id": "mcns2-ch5-anatomy-q108",
+              "id": "mcns2-ch5-anatomy-q107",
               "type": "mcq",
               "lecture": 1,
               "text": "Which part of the spinal cord is responsible for transmitting motor signals to the muscles that control fine movements of the fingers and hands?",
@@ -1891,7 +1868,7 @@
               "correctIndex": 0
             },
             {
-              "id": "mcns2-ch5-anatomy-q109",
+              "id": "mcns2-ch5-anatomy-q108",
               "type": "mcq",
               "lecture": 1,
               "text": "A 5-day-old child has been treated in the intensive care unit since birth. A sample of cerebral spinal fluid is required. Where would be the safest place to perform a lumbar puncture?",
@@ -1907,7 +1884,7 @@
               "correctIndex": 4
             },
             {
-              "id": "mcns2-ch5-anatomy-q110",
+              "id": "mcns2-ch5-anatomy-q109",
               "type": "mcq",
               "lecture": 1,
               "text": "A patient with a traumatic lesion of the left half of the spinal cord at the level of the eighth cervical segment might present the following sign(s) and symptom(s)",
@@ -1923,7 +1900,7 @@
               "correctIndex": 3
             },
             {
-              "id": "mcns2-ch5-anatomy-q111",
+              "id": "mcns2-ch5-anatomy-q110",
               "type": "mcq",
               "lecture": 1,
               "text": "In infants, the spinal cord reaches the level of ……… vertebra.",
@@ -1938,7 +1915,7 @@
               "correctIndex": 2
             },
             {
-              "id": "mcns2-ch5-anatomy-q112",
+              "id": "mcns2-ch5-anatomy-q111",
               "type": "mcq",
               "lecture": 1,
               "text": "The spinal cord has enlargements in ……… segments.",
@@ -1953,7 +1930,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch5-anatomy-q113",
+              "id": "mcns2-ch5-anatomy-q112",
               "type": "mcq",
               "lecture": 1,
               "text": "Choose the wrong statement about meningeal covering of the spinal cord",
@@ -1968,7 +1945,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch5-anatomy-q114",
+              "id": "mcns2-ch5-anatomy-q113",
               "type": "mcq",
               "lecture": 1,
               "text": "Which of the following is wrong about the lumbar puncture?",
@@ -1983,7 +1960,7 @@
               "correctIndex": 0
             },
             {
-              "id": "mcns2-ch5-anatomy-q115",
+              "id": "mcns2-ch5-anatomy-q114",
               "type": "mcq",
               "lecture": 1,
               "text": "The T4 segment of the spinal cord lies at the level of ……… vertebra.",
@@ -1998,7 +1975,7 @@
               "correctIndex": 2
             },
             {
-              "id": "mcns2-ch5-anatomy-q116",
+              "id": "mcns2-ch5-anatomy-q115",
               "type": "mcq",
               "lecture": 1,
               "text": "……… nerve leaves the vertebral canal below C7 vertebra.",
@@ -2013,7 +1990,7 @@
               "correctIndex": 2
             },
             {
-              "id": "mcns2-ch5-anatomy-q117",
+              "id": "mcns2-ch5-anatomy-q116",
               "type": "mcq",
               "lecture": 1,
               "text": "Proprioception and fine touch depend mainly on ……… artery(ies).",
@@ -2028,7 +2005,7 @@
               "correctIndex": 2
             },
             {
-              "id": "mcns2-ch5-anatomy-q118",
+              "id": "mcns2-ch5-anatomy-q117",
               "type": "mcq",
               "lecture": 1,
               "text": "Bilateral loss of pain and temperature over the jacket area is caused by",
@@ -2043,7 +2020,7 @@
               "correctIndex": 2
             },
             {
-              "id": "mcns2-ch5-anatomy-q119",
+              "id": "mcns2-ch5-anatomy-q118",
               "type": "mcq",
               "lecture": 1,
               "text": "Most of the cerebellum is supplied by branches from ……… artery.",
@@ -2058,7 +2035,7 @@
               "correctIndex": 3
             },
             {
-              "id": "mcns2-ch5-anatomy-q120",
+              "id": "mcns2-ch5-anatomy-q119",
               "type": "mcq",
               "lecture": 1,
               "text": "The occipitofrontalis muscle accounts for the ……… layer of the scalp.",
@@ -2073,7 +2050,7 @@
               "correctIndex": 2
             },
             {
-              "id": "mcns2-ch5-anatomy-q121",
+              "id": "mcns2-ch5-anatomy-q120",
               "type": "mcq",
               "lecture": 1,
               "text": "All the following are tributaries of external jugular vein EXCEPT",
@@ -2088,7 +2065,7 @@
               "correctIndex": 2
             },
             {
-              "id": "mcns2-ch5-anatomy-q122",
+              "id": "mcns2-ch5-anatomy-q121",
               "type": "mcq",
               "lecture": 1,
               "text": "The viscera of the neck are surrounded by ……… fascia.",
@@ -2103,7 +2080,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch5-anatomy-q123",
+              "id": "mcns2-ch5-anatomy-q122",
               "type": "mcq",
               "lecture": 1,
               "text": "The retropharyngeal space lies",
@@ -2118,7 +2095,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch5-anatomy-q124",
+              "id": "mcns2-ch5-anatomy-q123",
               "type": "mcq",
               "lecture": 1,
               "text": "The axillary sheath is an extension from ……… fascia.",
@@ -2133,7 +2110,7 @@
               "correctIndex": 2
             },
             {
-              "id": "mcns2-ch5-anatomy-q125",
+              "id": "mcns2-ch5-anatomy-q124",
               "type": "mcq",
               "lecture": 1,
               "text": "An infrahyoid muscle supplied directly by C1 ventral ramus is",
@@ -2148,7 +2125,7 @@
               "correctIndex": 3
             },
             {
-              "id": "mcns2-ch5-anatomy-q126",
+              "id": "mcns2-ch5-anatomy-q125",
               "type": "mcq",
               "lecture": 1,
               "text": "The carotid sheath encloses",
@@ -2163,7 +2140,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch5-anatomy-q127",
+              "id": "mcns2-ch5-anatomy-q126",
               "type": "mcq",
               "lecture": 1,
               "text": "A nerve running along the posterior border of sternomastoid muscle is",
@@ -2178,7 +2155,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch5-anatomy-q128",
+              "id": "mcns2-ch5-anatomy-q127",
               "type": "mcq",
               "lecture": 1,
               "text": "A nerve embedded in the roof of the posterior triangle of the neck and crossing the triangle parallel to levator scapulae is",
@@ -2193,7 +2170,7 @@
               "correctIndex": 2
             },
             {
-              "id": "mcns2-ch5-anatomy-q129",
+              "id": "mcns2-ch5-anatomy-q128",
               "type": "mcq",
               "lecture": 1,
               "text": "Tight scalene muscles can compress",
@@ -2208,7 +2185,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch5-anatomy-q130",
+              "id": "mcns2-ch5-anatomy-q129",
               "type": "mcq",
               "lecture": 1,
               "text": "Fracture of neck of mandible can lead to injury of all the following EXCEPT",
@@ -2223,7 +2200,7 @@
               "correctIndex": 3
             },
             {
-              "id": "mcns2-ch5-anatomy-q131",
+              "id": "mcns2-ch5-anatomy-q130",
               "type": "mcq",
               "lecture": 1,
               "text": "The largest branch of the vertebral artery is",
@@ -2238,7 +2215,7 @@
               "correctIndex": 3
             },
             {
-              "id": "mcns2-ch5-anatomy-q132",
+              "id": "mcns2-ch5-anatomy-q131",
               "type": "mcq",
               "lecture": 1,
               "text": "A branch from the 2nd part of subclavian artery is",
@@ -2253,7 +2230,7 @@
               "correctIndex": 2
             },
             {
-              "id": "mcns2-ch5-anatomy-q133",
+              "id": "mcns2-ch5-anatomy-q132",
               "type": "mcq",
               "lecture": 1,
               "text": "The common carotid artery divides at the level of ……… vertebrae.",
@@ -2268,7 +2245,7 @@
               "correctIndex": 3
             },
             {
-              "id": "mcns2-ch5-anatomy-q134",
+              "id": "mcns2-ch5-anatomy-q133",
               "type": "mcq",
               "lecture": 1,
               "text": "The external carotid artery crosses ……… triangles of the neck.",
@@ -2283,7 +2260,7 @@
               "correctIndex": 2
             },
             {
-              "id": "mcns2-ch5-anatomy-q135",
+              "id": "mcns2-ch5-anatomy-q134",
               "type": "mcq",
               "lecture": 1,
               "text": "The part of the internal carotid artery which DOESN’T give branches is",
@@ -2298,7 +2275,7 @@
               "correctIndex": 0
             },
             {
-              "id": "mcns2-ch5-anatomy-q136",
+              "id": "mcns2-ch5-anatomy-q135",
               "type": "mcq",
               "lecture": 1,
               "text": "Rotation of the head to say “No” occurs at ……… joint.",
@@ -2313,7 +2290,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch5-anatomy-q137",
+              "id": "mcns2-ch5-anatomy-q136",
               "type": "mcq",
               "lecture": 1,
               "text": "A muscle develops from the pharyngeal arch is",
@@ -2328,7 +2305,7 @@
               "correctIndex": 2
             },
             {
-              "id": "mcns2-ch5-anatomy-q138",
+              "id": "mcns2-ch5-anatomy-q137",
               "type": "essay",
               "lecture": 1,
               "text": "Describe formation of external jugular vein & enumerate its tributaries.",
@@ -2337,7 +2314,7 @@
               "modelAnswer": "Formation and tributaries of the external jugular vein: It is formed near the angle of the mandible (within or just below the parotid gland) by the union of the posterior division of the retromandibular vein with the posterior auricular vein. It descends superficial to the sternocleidomastoid, pierces the deep fascia in the posterior triangle, and ends in the subclavian vein. Tributaries: the posterior external jugular vein, the transverse cervical vein, the suprascapular vein and the anterior jugular vein.\n\n(AI model answer), Answers are not in the anatomy department book"
             },
             {
-              "id": "mcns2-ch5-anatomy-q139",
+              "id": "mcns2-ch5-anatomy-q138",
               "type": "essay",
               "lecture": 1,
               "text": "Enumerate superior & inferior attachments of investing layer of deep cervical fascia.",
@@ -2346,7 +2323,7 @@
               "modelAnswer": "Attachments of the investing layer of deep cervical fascia: It encircles the neck and splits to enclose the sternocleidomastoid and trapezius muscles and the parotid and submandibular glands. Superior attachment – the superior nuchal line, the external occipital protuberance, the mastoid process, the lower border of the body of the mandible, the zygomatic arch and the hyoid bone. Inferior attachment – the manubrium sterni, the clavicle, the acromion and the spine of the scapula.\n\n(AI model answer), Answers are not in the anatomy department book"
             },
             {
-              "id": "mcns2-ch5-anatomy-q140",
+              "id": "mcns2-ch5-anatomy-q139",
               "type": "essay",
               "lecture": 1,
               "text": "Describe attachments & relations of prevertebral fascia.",
@@ -2355,7 +2332,7 @@
               "modelAnswer": "Attachments and relations of the prevertebral fascia: It is a tubular sheath in front of the prevertebral muscles and the vertebral column. Above it is attached to the base of the skull (basilar part of the occipital bone); below it extends into the superior mediastinum where it blends with the anterior longitudinal ligament (about T3). Laterally it covers the scalene muscles and extends over the brachial plexus and subclavian artery as the axillary sheath. It forms the floor of the posterior triangle. The cervical sympathetic trunk lies in front of it, and the pharynx (with the retropharyngeal space) lies anterior to it.\n\n(AI model answer), Answers are not in the anatomy department book"
             },
             {
-              "id": "mcns2-ch5-anatomy-q141",
+              "id": "mcns2-ch5-anatomy-q140",
               "type": "essay",
               "lecture": 1,
               "text": "Describe attachments & relations of pretracheal fascia.",
@@ -2364,7 +2341,7 @@
               "modelAnswer": "Attachments and relations of the pretracheal fascia: It lies in front of the trachea, deep to the infrahyoid (strap) muscles. Above it is attached to the hyoid bone and the thyroid and cricoid cartilages; below it extends into the thorax to blend with the fibrous pericardium and the adventitia of the great vessels (arch of the aorta). It splits to enclose the thyroid gland (forming its false capsule) and binds it to the larynx so that the gland moves on swallowing. Laterally it blends with the carotid sheath.\n\n(AI model answer), Answers are not in the anatomy department book"
             },
             {
-              "id": "mcns2-ch5-anatomy-q142",
+              "id": "mcns2-ch5-anatomy-q141",
               "type": "essay",
               "lecture": 1,
               "text": "Describe contents & relations of carotid sheath.",
@@ -2373,7 +2350,7 @@
               "modelAnswer": "Contents and relations of the carotid sheath: It is a tubular condensation of deep cervical fascia. Contents: the common and internal carotid arteries (medially), the internal jugular vein (laterally), the vagus nerve (CN X, between and behind the artery and vein), and the deep cervical lymph nodes; the ansa cervicalis is embedded in its anterior wall and the cervical sympathetic trunk lies behind it. Relations: anterolaterally the sternocleidomastoid and the infrahyoid muscles; posteriorly the prevertebral fascia, the sympathetic trunk and the transverse processes of the cervical vertebrae; medially the pharynx, larynx, trachea, oesophagus and thyroid gland.\n\n(AI model answer), Answers are not in the anatomy department book"
             },
             {
-              "id": "mcns2-ch5-anatomy-q143",
+              "id": "mcns2-ch5-anatomy-q142",
               "type": "essay",
               "lecture": 1,
               "text": "Describe origin, insertion, nerve supply & action of sternocleidomastoid.",
@@ -2382,7 +2359,7 @@
               "modelAnswer": "Sternocleidomastoid – origin, insertion, nerve supply and action: Origin – by two heads: a sternal head from the manubrium sterni and a clavicular head from the medial third of the clavicle. Insertion – the lateral surface of the mastoid process and the lateral half of the superior nuchal line. Nerve supply – the spinal part of the accessory nerve (CN XI) (motor) and branches of C2,3 (proprioceptive). Action – acting alone it tilts the head to the same side and rotates the face to the opposite side; both together flex the neck (and extend the head at the atlanto-occipital joints); they are also accessory muscles of inspiration.\n\n(AI model answer), Answers are not in the anatomy department book"
             },
             {
-              "id": "mcns2-ch5-anatomy-q144",
+              "id": "mcns2-ch5-anatomy-q143",
               "type": "essay",
               "lecture": 1,
               "text": "Describe boundaries of posterior triangle of neck.",
@@ -2391,7 +2368,7 @@
               "modelAnswer": "Boundaries of the posterior triangle of the neck: Anteriorly – the posterior border of the sternocleidomastoid. Posteriorly – the anterior border of the trapezius. Inferiorly (base) – the middle third of the clavicle. Apex – where the sternocleidomastoid and trapezius meet on the superior nuchal line. Roof – the investing layer of deep cervical fascia (and skin/platysma). Floor – the prevertebral fascia covering the splenius capitis, levator scapulae and the scalene muscles.\n\n(AI model answer), Answers are not in the anatomy department book"
             },
             {
-              "id": "mcns2-ch5-anatomy-q145",
+              "id": "mcns2-ch5-anatomy-q144",
               "type": "essay",
               "lecture": 1,
               "text": "Enumerate contents of posterior triangle of neck.",
@@ -2400,7 +2377,7 @@
               "modelAnswer": "Contents of the posterior triangle of the neck: Nerves – the spinal accessory nerve (CN XI), the four cutaneous branches of the cervical plexus (lesser occipital, great auricular, transverse cervical, supraclavicular), the roots and trunks of the brachial plexus, and branches to muscles (e.g. nerve to serratus anterior, dorsal scapular nerve). Vessels – the third part of the subclavian artery, the transverse cervical and suprascapular arteries, and the external jugular vein with the subclavian vein. Also the inferior belly of the omohyoid (crossing the lower part) and lymph nodes.\n\n(AI model answer), Answers are not in the anatomy department book"
             },
             {
-              "id": "mcns2-ch5-anatomy-q146",
+              "id": "mcns2-ch5-anatomy-q145",
               "type": "essay",
               "lecture": 1,
               "text": "Enumerate boundaries of anterior triangle of neck.",
@@ -2409,7 +2386,7 @@
               "modelAnswer": "Boundaries of the anterior triangle of the neck: Anteriorly (medially) – the anterior median line of the neck. Posteriorly – the anterior border of the sternocleidomastoid. Superiorly (base) – the lower border of the body of the mandible (and a line to the mastoid process). Apex – directed downward at the manubrium sterni. Roof – skin, superficial fascia, platysma and investing fascia. It is subdivided by the digastric and omohyoid into the submental, digastric (submandibular), carotid and muscular triangles.\n\n(AI model answer), Answers are not in the anatomy department book"
             },
             {
-              "id": "mcns2-ch5-anatomy-q147",
+              "id": "mcns2-ch5-anatomy-q146",
               "type": "essay",
               "lecture": 1,
               "text": "Enumerate boundaries & contents of submental triangle.",
@@ -2418,7 +2395,7 @@
               "modelAnswer": "Submental triangle – boundaries and contents: Boundaries – laterally on each side the anterior belly of the digastric, the base is the body of the hyoid bone, and the apex is the chin (mandibular symphysis); its floor is the mylohyoid muscle. Contents – the submental lymph nodes and the commencement (beginning tributaries) of the anterior jugular veins.\n\n(AI model answer), Answers are not in the anatomy department book"
             },
             {
-              "id": "mcns2-ch5-anatomy-q148",
+              "id": "mcns2-ch5-anatomy-q147",
               "type": "essay",
               "lecture": 1,
               "text": "Enumerate boundaries & contents of digastric triangle.",
@@ -2427,7 +2404,7 @@
               "modelAnswer": "Digastric (submandibular) triangle – boundaries and contents: Boundaries – above the lower border of the body of the mandible, below (and behind/front) the anterior and posterior bellies of the digastric; floor formed by the mylohyoid and hyoglossus muscles. Contents – the submandibular salivary gland and lymph nodes, the facial artery and vein, the submental vessels, the hypoglossal nerve, the mylohyoid nerve and vessels, and part of the lingual nerve and the carotid sheath structures deep in the posterior part.\n\n(AI model answer), Answers are not in the anatomy department book"
             },
             {
-              "id": "mcns2-ch5-anatomy-q149",
+              "id": "mcns2-ch5-anatomy-q148",
               "type": "essay",
               "lecture": 1,
               "text": "Enumerate boundaries & contents of carotid triangle.",
@@ -2436,7 +2413,7 @@
               "modelAnswer": "Carotid triangle – boundaries and contents: Boundaries – above the posterior belly of the digastric, behind the anterior border of the sternocleidomastoid, in front (below) the superior belly of the omohyoid. Contents – the common carotid artery and its bifurcation into the internal and external carotid arteries (and the first branches of the external carotid – superior thyroid, lingual, facial, ascending pharyngeal, occipital), the internal jugular vein and its tributaries, and the vagus, hypoglossal, accessory nerves and the ansa cervicalis, with the carotid sinus and body.\n\n(AI model answer), Answers are not in the anatomy department book"
             },
             {
-              "id": "mcns2-ch5-anatomy-q150",
+              "id": "mcns2-ch5-anatomy-q149",
               "type": "essay",
               "lecture": 1,
               "text": "Enumerate branches of cervical plexus.",
@@ -2445,7 +2422,7 @@
               "modelAnswer": "Branches of the cervical plexus (C1–C4): (1) Cutaneous (superficial) branches – the lesser occipital (C2), great auricular (C2,3), transverse (anterior) cutaneous nerve of the neck (C2,3) and the supraclavicular nerves (C3,4). (2) Muscular (deep) branches – the phrenic nerve (C3,4,5), the branches to the prevertebral muscles, the ansa cervicalis (superior root C1 via hypoglossal + inferior root C2,3) to the infrahyoid muscles, and communicating branches to the hypoglossal and accessory nerves.\n\n(AI model answer), Answers are not in the anatomy department book"
             },
             {
-              "id": "mcns2-ch5-anatomy-q151",
+              "id": "mcns2-ch5-anatomy-q150",
               "type": "essay",
               "lecture": 1,
               "text": "Give a short account on ansa cervicalis.",
@@ -2454,7 +2431,7 @@
               "modelAnswer": "Ansa cervicalis: It is a nerve loop in front of (or within) the carotid sheath supplying the infrahyoid (strap) muscles. Its superior root (descendens hypoglossi, C1 fibres) travels with the hypoglossal nerve and leaves it to descend; its inferior root (descendens cervicalis, C2,3) descends from the cervical plexus; the two unite to form the loop. It supplies the omohyoid (both bellies), sternohyoid and sternothyroid; the thyrohyoid (and geniohyoid) are supplied directly by C1 fibres travelling with the hypoglossal nerve.\n\n(AI model answer), Answers are not in the anatomy department book"
             },
             {
-              "id": "mcns2-ch5-anatomy-q152",
+              "id": "mcns2-ch5-anatomy-q151",
               "type": "essay",
               "lecture": 1,
               "text": "Enumerate branches of superior cervical sympathetic ganglion (SCSG).",
@@ -2463,7 +2440,7 @@
               "modelAnswer": "Branches of the superior cervical sympathetic ganglion: (1) Grey rami communicantes to the upper four cervical spinal nerves. (2) The internal carotid nerve (forming the internal carotid plexus). (3) External carotid (and common carotid) branches forming plexuses on the arteries. (4) Pharyngeal branches (to the pharyngeal plexus). (5) The superior cervical cardiac (sympathetic) nerve to the cardiac plexus. (6) A communicating branch to the vagus and glossopharyngeal nerves.\n\n(AI model answer), Answers are not in the anatomy department book"
             },
             {
-              "id": "mcns2-ch5-anatomy-q153",
+              "id": "mcns2-ch5-anatomy-q152",
               "type": "essay",
               "lecture": 1,
               "text": "Enumerate branches of middle cervical sympathetic ganglion (MCSG).",
@@ -2472,7 +2449,7 @@
               "modelAnswer": "Branches of the middle cervical sympathetic ganglion: (1) Grey rami communicantes to the fifth and sixth cervical spinal nerves. (2) Thyroid branches (along the inferior thyroid artery). (3) The middle cervical cardiac (sympathetic) nerve – the largest sympathetic cardiac nerve – to the cardiac plexus.\n\n(AI model answer), Answers are not in the anatomy department book"
             },
             {
-              "id": "mcns2-ch5-anatomy-q154",
+              "id": "mcns2-ch5-anatomy-q153",
               "type": "essay",
               "lecture": 1,
               "text": "Enumerate branches of inferior cervical sympathetic ganglion (ICSG).",
@@ -2481,7 +2458,7 @@
               "modelAnswer": "Branches of the inferior cervical sympathetic ganglion: (It is often fused with the first thoracic ganglion to form the cervicothoracic / stellate ganglion.) (1) Grey rami communicantes to the seventh and eighth cervical spinal nerves. (2) Branches forming a plexus on the vertebral and subclavian arteries. (3) The inferior cervical cardiac (sympathetic) nerve to the cardiac plexus.\n\n(AI model answer), Answers are not in the anatomy department book"
             },
             {
-              "id": "mcns2-ch5-anatomy-q155",
+              "id": "mcns2-ch5-anatomy-q154",
               "type": "essay",
               "lecture": 1,
               "text": "Enumerate branches of glossopharyngeal nerve.",
@@ -2490,7 +2467,7 @@
               "modelAnswer": "Branches of the glossopharyngeal nerve: (1) Tympanic branch (nerve of Jacobson) – forming the tympanic plexus and continuing as the lesser petrosal nerve (secretomotor to the parotid via the otic ganglion). (2) Carotid branch – to the carotid sinus and carotid body. (3) Pharyngeal branches – to the pharyngeal plexus. (4) Muscular branch – to the stylopharyngeus. (5) Tonsillar branches. (6) Lingual branches – general sensation and taste to the posterior third of the tongue.\n\n(AI model answer), Answers are not in the anatomy department book"
             },
             {
-              "id": "mcns2-ch5-anatomy-q156",
+              "id": "mcns2-ch5-anatomy-q155",
               "type": "essay",
               "lecture": 1,
               "text": "Enumerate branches of superior & inferior vagal ganglia.",
@@ -2499,7 +2476,7 @@
               "modelAnswer": "Branches of the superior and inferior vagal ganglia: From the superior (jugular) ganglion – the meningeal branch (to the dura of the posterior cranial fossa) and the auricular branch (of Arnold, to the skin of the external acoustic meatus and auricle). From the inferior (nodose) ganglion – the pharyngeal branch (to the pharyngeal plexus), the carotid body branch, and the superior laryngeal nerve (which divides into the internal laryngeal – sensory above the vocal cords – and the external laryngeal – motor to the cricothyroid).\n\n(AI model answer), Answers are not in the anatomy department book"
             },
             {
-              "id": "mcns2-ch5-anatomy-q157",
+              "id": "mcns2-ch5-anatomy-q156",
               "type": "essay",
               "lecture": 1,
               "text": "Enumerate branches of vagus nerve in neck & thorax.",
@@ -2508,7 +2485,7 @@
               "modelAnswer": "Branches of the vagus nerve in the neck and thorax: In the NECK – the meningeal and auricular branches (from the superior ganglion), the pharyngeal branch, the superior laryngeal nerve (internal and external laryngeal), the superior cervical cardiac branches, and (on the right) the recurrent laryngeal nerve looping under the subclavian artery. In the THORAX – the (left) recurrent laryngeal nerve looping under the arch of the aorta, the inferior cervical/thoracic cardiac branches, the pulmonary branches (to the pulmonary plexuses), and the oesophageal branches (forming the oesophageal plexus that continues as the anterior and posterior vagal trunks).\n\n(AI model answer), Answers are not in the anatomy department book"
             },
             {
-              "id": "mcns2-ch5-anatomy-q158",
+              "id": "mcns2-ch5-anatomy-q157",
               "type": "essay",
               "lecture": 1,
               "text": "Describe cranial & spinal parts of accessory nerve.",
@@ -2517,7 +2494,7 @@
               "modelAnswer": "Cranial and spinal parts of the accessory nerve: The CRANIAL root arises from the nucleus ambiguus in the medulla; it joins the vagus nerve and is distributed through it to supply the muscles of the soft palate, pharynx and larynx. The SPINAL root arises from the spinal accessory nucleus in the anterior horn of the upper five cervical segments (C1–C5); it ascends through the foramen magnum, joins the cranial part briefly, then leaves through the jugular foramen and descends through the posterior triangle to supply the sternocleidomastoid and trapezius muscles.\n\n(AI model answer), Answers are not in the anatomy department book"
             },
             {
-              "id": "mcns2-ch5-anatomy-q159",
+              "id": "mcns2-ch5-anatomy-q158",
               "type": "essay",
               "lecture": 1,
               "text": "Enumerate branches of hypoglossal nerve.",
@@ -2526,7 +2503,7 @@
               "modelAnswer": "Branches of the hypoglossal nerve: (1) Meningeal branch (to the dura of the posterior cranial fossa). (2) The descending branch (superior root of the ansa cervicalis, actually C1 fibres). (3) The nerve to the thyrohyoid (C1 fibres). (4) The nerve to the geniohyoid (C1 fibres). (5) Muscular branches to all the intrinsic muscles of the tongue and the extrinsic muscles (styloglossus, hyoglossus and genioglossus) except the palatoglossus.\n\n(AI model answer), Answers are not in the anatomy department book"
             },
             {
-              "id": "mcns2-ch5-anatomy-q160",
+              "id": "mcns2-ch5-anatomy-q159",
               "type": "essay",
               "lecture": 1,
               "text": "Mention the boundaries & the floor of the carotid triangle of the neck.",
@@ -2535,7 +2512,7 @@
               "modelAnswer": "Boundaries and floor of the carotid triangle: Boundaries – superiorly the posterior belly of the digastric (and stylohyoid), anteroinferiorly the superior belly of the omohyoid, and posteriorly the anterior border of the sternocleidomastoid. Floor – formed by parts of the thyrohyoid, hyoglossus and the middle and inferior constrictor muscles of the pharynx. Roof – skin, superficial fascia, platysma and investing fascia.\n\n(AI model answer), Answers are not in the anatomy department book"
             },
             {
-              "id": "mcns2-ch5-anatomy-q161",
+              "id": "mcns2-ch5-anatomy-q160",
               "type": "essay",
               "lecture": 1,
               "text": "List the vessels present in the posterior triangle of the neck.",
@@ -2544,7 +2521,7 @@
               "modelAnswer": "Vessels in the posterior triangle of the neck: Arteries – the third part of the subclavian artery (at the base), the transverse cervical artery, the suprascapular artery, and the occipital artery (at the apex). Veins – the external jugular vein (and its tributaries, the transverse cervical and suprascapular veins) and the lower part of the subclavian vein at the base.\n\n(AI model answer), Answers are not in the anatomy department book"
             },
             {
-              "id": "mcns2-ch5-anatomy-q162",
+              "id": "mcns2-ch5-anatomy-q161",
               "type": "essay",
               "lecture": 1,
               "text": "Enumerate muscles attached to styloid process & nerve supply of each.",
@@ -2553,7 +2530,7 @@
               "modelAnswer": "Muscles attached to the styloid process and their nerve supply: (1) Styloglossus – supplied by the hypoglossal nerve (CN XII). (2) Stylohyoid – supplied by the facial nerve (CN VII). (3) Stylopharyngeus – supplied by the glossopharyngeal nerve (CN IX). (Also attached are the stylohyoid and stylomandibular ligaments.)\n\n(AI model answer), Answers are not in the anatomy department book"
             },
             {
-              "id": "mcns2-ch5-anatomy-q163",
+              "id": "mcns2-ch5-anatomy-q162",
               "type": "essay",
               "lecture": 1,
               "text": "Enumerate the branches of the glossopharyngeal nerve and their distribution. (4 Marks)",
@@ -2562,7 +2539,7 @@
               "modelAnswer": "Lingual branch - taste and general sensation to the posterior one-third of the tongue. Pharyngeal branch - joins the pharyngeal plexus to supply the pharynx. Muscular branch - supplies the stylopharyngeus muscle. Tonsillar branches - supply the palatine tonsil. Carotid branch - supplies the carotid sinus and carotid body. Tympanic branch - forms the tympanic plexus and carries secretomotor fibres (via the lesser petrosal nerve) toward the parotid gland."
             },
             {
-              "id": "mcns2-ch5-anatomy-q164",
+              "id": "mcns2-ch5-anatomy-q163",
               "type": "essay",
               "lecture": 1,
               "text": "Enumerate the branches of the vagus nerve. (2 Marks)",
@@ -2571,7 +2548,7 @@
               "modelAnswer": "Meningeal branch. Auricular branch. Pharyngeal branch. Carotid branch. Recurrent laryngeal nerve."
             },
             {
-              "id": "mcns2-ch5-anatomy-q165",
+              "id": "mcns2-ch5-anatomy-q164",
               "type": "essay",
               "lecture": 1,
               "text": "Enumerate the muscles forming the floor of the posterior triangle of the neck. (2 Marks)",
@@ -2580,7 +2557,7 @@
               "modelAnswer": "Semispinalis capitis. Splenius capitis. Levator scapulae. Scalenus medius. Scalenus anterior."
             },
             {
-              "id": "mcns2-ch5-anatomy-q166",
+              "id": "mcns2-ch5-anatomy-q165",
               "type": "essay",
               "lecture": 1,
               "text": "Enumerate three different nervous structures found in the carotid triangle. (3 Marks)",
@@ -2589,7 +2566,7 @@
               "modelAnswer": "Vagus nerve (CN X). Hypoglossal nerve (CN XII). Ansa cervicalis."
             },
             {
-              "id": "mcns2-ch5-anatomy-q167",
+              "id": "mcns2-ch5-anatomy-q166",
               "type": "essay",
               "lecture": 1,
               "text": "Describe the beginning, end, and tributaries of the external jugular vein. (4 Marks)",
@@ -2598,7 +2575,7 @@
               "modelAnswer": "Beginning: formed by the union of the posterior division of the retromandibular vein and the posterior auricular vein. End: pierces the deep fascia and drains into the subclavian vein. Tributaries: anterior jugular vein, transverse cervical vein, suprascapular vein, and posterior external jugular vein."
             },
             {
-              "id": "mcns2-ch5-anatomy-q168",
+              "id": "mcns2-ch5-anatomy-q167",
               "type": "essay",
               "lecture": 1,
               "text": "Enumerate the muscles sharing in the formation of the floor of the posterior triangle of the neck.",
@@ -2607,7 +2584,7 @@
               "modelAnswer": "(1) Semispinalis capitis, (2) splenius capitis, (3) levator scapulae, (4) scalenus medius, and (5) scalenus anterior."
             },
             {
-              "id": "mcns2-ch5-anatomy-q169",
+              "id": "mcns2-ch5-anatomy-q168",
               "type": "mcq",
               "lecture": 1,
               "text": "Which of the following arteries is located below the posterior belly of the digastric muscle?",
@@ -2623,7 +2600,7 @@
               "correctIndex": 3
             },
             {
-              "id": "mcns2-ch5-anatomy-q170",
+              "id": "mcns2-ch5-anatomy-q169",
               "type": "mcq",
               "lecture": 1,
               "text": "Which of the following structures is located within the carotid sheath?",
@@ -2639,7 +2616,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch5-anatomy-q171",
+              "id": "mcns2-ch5-anatomy-q170",
               "type": "mcq",
               "lecture": 1,
               "text": "Which of the following nerves arises from the union of the vagusand accessory nerves?",
@@ -2655,7 +2632,7 @@
               "correctIndex": 4
             },
             {
-              "id": "mcns2-ch5-anatomy-q172",
+              "id": "mcns2-ch5-anatomy-q171",
               "type": "mcq",
               "lecture": 4,
               "text": "The anterior triangle of the neck, include the following Except one:",
@@ -2671,7 +2648,7 @@
               "correctIndex": 4
             },
             {
-              "id": "mcns2-ch5-anatomy-q173",
+              "id": "mcns2-ch5-anatomy-q172",
               "type": "mcq",
               "lecture": 4,
               "text": "Which of the following muscles subdivides the posterior triangle of the neck:",
@@ -2687,7 +2664,7 @@
               "correctIndex": 2
             },
             {
-              "id": "mcns2-ch5-anatomy-q174",
+              "id": "mcns2-ch5-anatomy-q173",
               "type": "mcq",
               "lecture": 4,
               "text": "The following structures form the floor of the posterior triangle of the neck Except:",
@@ -2703,7 +2680,7 @@
               "correctIndex": 3
             },
             {
-              "id": "mcns2-ch5-anatomy-q175",
+              "id": "mcns2-ch5-anatomy-q174",
               "type": "mcq",
               "lecture": 4,
               "text": "Regarding Infrahyoid muscles, all are true Except:",
@@ -2719,23 +2696,7 @@
               "correctIndex": 2
             },
             {
-              "id": "mcns2-ch5-anatomy-q176",
-              "type": "mcq",
-              "lecture": 4,
-              "text": "The sternocleidomastoid, omohyoid and trapezius bound which of the following triangles?",
-              "explanation": "The correct answer is (c) Occipital. Among the listed options this is the choice that best matches the stem, and the other options are incorrect distractors.",
-              "keyConcept": "The sternocleidomastoid, omohyoid and trapezius bound which of the following triangles",
-              "options": [
-                "Carotid.",
-                "Digastric.",
-                "Occipital.",
-                "Muscular.",
-                "Submental."
-              ],
-              "correctIndex": 2
-            },
-            {
-              "id": "mcns2-ch5-anatomy-q177",
+              "id": "mcns2-ch5-anatomy-q175",
               "type": "mcq",
               "lecture": 4,
               "text": "Regarding digastric triangle. All are true Except:",
@@ -2751,7 +2712,7 @@
               "correctIndex": 2
             },
             {
-              "id": "mcns2-ch5-anatomy-q178",
+              "id": "mcns2-ch5-anatomy-q176",
               "type": "mcq",
               "lecture": 4,
               "text": "The following muscle bounds the carotid triangle posteriorly:",
@@ -2767,7 +2728,7 @@
               "correctIndex": 4
             },
             {
-              "id": "mcns2-ch5-anatomy-q179",
+              "id": "mcns2-ch5-anatomy-q177",
               "type": "mcq",
               "lecture": 4,
               "text": "The cutaneous nerve supply over the anterior triangle of the neck is largely from:",
@@ -2783,7 +2744,7 @@
               "correctIndex": 2
             },
             {
-              "id": "mcns2-ch5-anatomy-q180",
+              "id": "mcns2-ch5-anatomy-q178",
               "type": "mcq",
               "lecture": 4,
               "text": "The following lie in the posterior triangle of the neck Except:",
@@ -2799,7 +2760,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch5-anatomy-q181",
+              "id": "mcns2-ch5-anatomy-q179",
               "type": "mcq",
               "lecture": 4,
               "text": "Regarding anterior triangle of neck all are true Except:",
@@ -2815,7 +2776,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch5-anatomy-q182",
+              "id": "mcns2-ch5-anatomy-q180",
               "type": "mcq",
               "lecture": 4,
               "text": "The roots of the brachial plexus pass between:",
@@ -2831,7 +2792,7 @@
               "correctIndex": 2
             },
             {
-              "id": "mcns2-ch5-anatomy-q183",
+              "id": "mcns2-ch5-anatomy-q181",
               "type": "mcq",
               "lecture": 4,
               "text": "The posterior triangle of the neck:",
@@ -2847,7 +2808,7 @@
               "correctIndex": 4
             },
             {
-              "id": "mcns2-ch5-anatomy-q184",
+              "id": "mcns2-ch5-anatomy-q182",
               "type": "mcq",
               "lecture": 4,
               "text": "One of the following arteries is not a content of the carotid triangle:",
@@ -2863,7 +2824,7 @@
               "correctIndex": 3
             },
             {
-              "id": "mcns2-ch5-anatomy-q185",
+              "id": "mcns2-ch5-anatomy-q183",
               "type": "mcq",
               "lecture": 4,
               "text": "Regarding carotid triangle, select the correct statement:",
@@ -2879,7 +2840,7 @@
               "correctIndex": 4
             },
             {
-              "id": "mcns2-ch5-anatomy-q186",
+              "id": "mcns2-ch5-anatomy-q184",
               "type": "mcq",
               "lecture": 4,
               "text": "Which of the following is correct regarding posterior triangle of the neck?",
@@ -2895,7 +2856,7 @@
               "correctIndex": 3
             },
             {
-              "id": "mcns2-ch5-anatomy-q187",
+              "id": "mcns2-ch5-anatomy-q185",
               "type": "mcq",
               "lecture": 4,
               "text": "Regarding supraclavicular triangle, All are true statements Except:",
@@ -2911,7 +2872,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch5-anatomy-q188",
+              "id": "mcns2-ch5-anatomy-q186",
               "type": "mcq",
               "lecture": 4,
               "text": "One of the following structures pierces the roof of the posterior triangle of neck:",
@@ -2927,7 +2888,7 @@
               "correctIndex": 3
             },
             {
-              "id": "mcns2-ch5-anatomy-q189",
+              "id": "mcns2-ch5-anatomy-q187",
               "type": "mcq",
               "lecture": 4,
               "text": "The following muscles are in the muscular triangle Except:",
@@ -2943,7 +2904,7 @@
               "correctIndex": 3
             },
             {
-              "id": "mcns2-ch5-anatomy-q190",
+              "id": "mcns2-ch5-anatomy-q188",
               "type": "mcq",
               "lecture": 4,
               "text": "The following are contents of the digastric triangle Except:",
@@ -2959,7 +2920,7 @@
               "correctIndex": 3
             },
             {
-              "id": "mcns2-ch5-anatomy-q191",
+              "id": "mcns2-ch5-anatomy-q189",
               "type": "mcq",
               "lecture": 4,
               "text": "All the following are branches of facial nerve Except:",
@@ -2975,7 +2936,7 @@
               "correctIndex": 2
             },
             {
-              "id": "mcns2-ch5-anatomy-q192",
+              "id": "mcns2-ch5-anatomy-q190",
               "type": "mcq",
               "lecture": 4,
               "text": "The ophthalmic nerve:",
@@ -2991,7 +2952,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch5-anatomy-q193",
+              "id": "mcns2-ch5-anatomy-q191",
               "type": "mcq",
               "lecture": 4,
               "text": "A lesion of the mandibular nerve after its exit from foramen ovale may result in:",
@@ -3007,7 +2968,7 @@
               "correctIndex": 4
             },
             {
-              "id": "mcns2-ch5-anatomy-q194",
+              "id": "mcns2-ch5-anatomy-q192",
               "type": "mcq",
               "lecture": 4,
               "text": "One of the following is not given from the superior cervical sympathetic ganglia:",
@@ -3023,7 +2984,7 @@
               "correctIndex": 4
             },
             {
-              "id": "mcns2-ch5-anatomy-q195",
+              "id": "mcns2-ch5-anatomy-q193",
               "type": "mcq",
               "lecture": 4,
               "text": "Choose one correct statement regarding the lingual nerve:",
@@ -3039,7 +3000,7 @@
               "correctIndex": 4
             },
             {
-              "id": "mcns2-ch5-anatomy-q196",
+              "id": "mcns2-ch5-anatomy-q194",
               "type": "mcq",
               "lecture": 4,
               "text": "Concerning the maxillary nerve, one statement is false:",
@@ -3055,55 +3016,7 @@
               "correctIndex": 0
             },
             {
-              "id": "mcns2-ch5-anatomy-q197",
-              "type": "mcq",
-              "lecture": 4,
-              "text": "All is true regarding maxillary nerve Except:",
-              "explanation": "The correct answer is (e) Runs through foramen oval. This is the option that does not fit the stem (the exception/incorrect statement), while the remaining choices are all true in this context.",
-              "keyConcept": "All is true regarding maxillary nerve Except",
-              "options": [
-                "It is entirely sensory.",
-                "Supplies upper lip.",
-                "Supplies lower eyelid.",
-                "Supplies skin over zygomatic bone.",
-                "Runs through foramen oval."
-              ],
-              "correctIndex": 4
-            },
-            {
-              "id": "mcns2-ch5-anatomy-q198",
-              "type": "mcq",
-              "lecture": 4,
-              "text": "The lingual nerve:",
-              "explanation": "The correct answer is (e) Carries sensory fibers from the anterior part of tongue. Among the listed options this is the choice that best matches the stem, and the other options are incorrect distractors.",
-              "keyConcept": "The lingual nerve",
-              "options": [
-                "Leaves the skull through the pterygomaxillary fissure.",
-                "Carries fibers from the first cervical spinal nerve.",
-                "Is closely related to the first molar tooth.",
-                "Joins chorda tympani on hyoglossus muscle.",
-                "Carries sensory fibers from the anterior part of tongue."
-              ],
-              "correctIndex": 4
-            },
-            {
-              "id": "mcns2-ch5-anatomy-q199",
-              "type": "mcq",
-              "lecture": 4,
-              "text": "Regarding the mandibular nerve, All are true Except:",
-              "explanation": "The correct answer is (d) Passes in lateral wall of cavernous sinus. This is the option that does not fit the stem (the exception/incorrect statement), while the remaining choices are all true in this context.",
-              "keyConcept": "The mandibular nerve, All are true Except",
-              "options": [
-                "Supplies all lower jaw teeth.",
-                "Has motor and sensory fibers.",
-                "Passes through foramen oval.",
-                "Passes in lateral wall of cavernous sinus.",
-                "Gives a meningeal branch"
-              ],
-              "correctIndex": 3
-            },
-            {
-              "id": "mcns2-ch5-anatomy-q200",
+              "id": "mcns2-ch5-anatomy-q195",
               "type": "mcq",
               "lecture": 4,
               "text": "Injury to the motor root of the trigeminal nerve would cause paralysis of:",
@@ -3119,7 +3032,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch5-anatomy-q201",
+              "id": "mcns2-ch5-anatomy-q196",
               "type": "mcq",
               "lecture": 4,
               "text": "Regarding chorda tympani; all are correct statements Except:",
@@ -3135,7 +3048,7 @@
               "correctIndex": 3
             },
             {
-              "id": "mcns2-ch5-anatomy-q202",
+              "id": "mcns2-ch5-anatomy-q197",
               "type": "mcq",
               "lecture": 4,
               "text": "The Ansa cervicalis supplies one of the following muscles:",
@@ -3151,7 +3064,7 @@
               "correctIndex": 3
             },
             {
-              "id": "mcns2-ch5-anatomy-q203",
+              "id": "mcns2-ch5-anatomy-q198",
               "type": "mcq",
               "lecture": 4,
               "text": "The following glands receive their parasympathetic innervation from the facial nerves Except:",
@@ -3167,7 +3080,7 @@
               "correctIndex": 2
             },
             {
-              "id": "mcns2-ch5-anatomy-q204",
+              "id": "mcns2-ch5-anatomy-q199",
               "type": "mcq",
               "lecture": 4,
               "text": "The cervical branch of facial nerve supplies:",
@@ -3183,7 +3096,7 @@
               "correctIndex": 3
             },
             {
-              "id": "mcns2-ch5-anatomy-q205",
+              "id": "mcns2-ch5-anatomy-q200",
               "type": "mcq",
               "lecture": 4,
               "text": "The trochlear nerve is peculiar (different) from other cranial nerves because:",
@@ -3199,7 +3112,7 @@
               "correctIndex": 4
             },
             {
-              "id": "mcns2-ch5-anatomy-q206",
+              "id": "mcns2-ch5-anatomy-q201",
               "type": "mcq",
               "lecture": 4,
               "text": "The maxillary nerve supplies all of the following Except:",
@@ -3215,7 +3128,7 @@
               "correctIndex": 4
             },
             {
-              "id": "mcns2-ch5-anatomy-q207",
+              "id": "mcns2-ch5-anatomy-q202",
               "type": "mcq",
               "lecture": 4,
               "text": "The glossopharyngeal nerve supplies the following:",
@@ -3231,7 +3144,7 @@
               "correctIndex": 3
             },
             {
-              "id": "mcns2-ch5-anatomy-q208",
+              "id": "mcns2-ch5-anatomy-q203",
               "type": "mcq",
               "lecture": 4,
               "text": "If you ask a patient to protrude his tongue and it deviates to the left, this indicates injury to which nerve?",
@@ -3247,7 +3160,7 @@
               "correctIndex": 0
             },
             {
-              "id": "mcns2-ch5-anatomy-q209",
+              "id": "mcns2-ch5-anatomy-q204",
               "type": "mcq",
               "lecture": 4,
               "text": "The glossopharyngeal nerve:",
@@ -3263,7 +3176,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch5-anatomy-q210",
+              "id": "mcns2-ch5-anatomy-q205",
               "type": "mcq",
               "lecture": 4,
               "text": "The facial nerve:",
@@ -3279,23 +3192,7 @@
               "correctIndex": 4
             },
             {
-              "id": "mcns2-ch5-anatomy-q211",
-              "type": "mcq",
-              "lecture": 4,
-              "text": "The following are cutaneous branches of the cervical plexus Except",
-              "explanation": "The correct answer is (d) Dorsal scapular. This is the option that does not fit the stem (the exception/incorrect statement), while the remaining choices are all true in this context.",
-              "keyConcept": "The following are cutaneous branches of the cervical plexus Except",
-              "options": [
-                "Transverse cutaneous.",
-                "Great auricular.",
-                "Lesser occipital.",
-                "Dorsal scapular.",
-                "Supraclavicular."
-              ],
-              "correctIndex": 3
-            },
-            {
-              "id": "mcns2-ch5-anatomy-q212",
+              "id": "mcns2-ch5-anatomy-q206",
               "type": "mcq",
               "lecture": 4,
               "text": "The following are branches of the vagus nerve in the neck Except:",
@@ -3311,7 +3208,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch5-anatomy-q213",
+              "id": "mcns2-ch5-anatomy-q207",
               "type": "mcq",
               "lecture": 4,
               "text": "Which branch of the following nerves synapses in the ciliary ganglion?",
@@ -3327,7 +3224,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch5-anatomy-q214",
+              "id": "mcns2-ch5-anatomy-q208",
               "type": "mcq",
               "lecture": 4,
               "text": "Which of the following nerves is a dorsal ramus of the second cervical nerve?",
@@ -3343,7 +3240,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch5-anatomy-q215",
+              "id": "mcns2-ch5-anatomy-q209",
               "type": "mcq",
               "lecture": 4,
               "text": "Regarding vagus nerve; all are true Except:",
@@ -3359,7 +3256,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch5-anatomy-q216",
+              "id": "mcns2-ch5-anatomy-q210",
               "type": "mcq",
               "lecture": 4,
               "text": "Which of the following fibers is contained in nerve of pterygoid canal:",
@@ -3375,7 +3272,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch5-anatomy-q217",
+              "id": "mcns2-ch5-anatomy-q211",
               "type": "mcq",
               "lecture": 4,
               "text": "Regarding pharyngeal branch of vagus, all are true statements Except:",
@@ -3391,7 +3288,7 @@
               "correctIndex": 4
             },
             {
-              "id": "mcns2-ch5-anatomy-q218",
+              "id": "mcns2-ch5-anatomy-q212",
               "type": "mcq",
               "lecture": 4,
               "text": "The hypoglossal nerve supplies the following muscles Except:",
@@ -3407,7 +3304,7 @@
               "correctIndex": 4
             },
             {
-              "id": "mcns2-ch5-anatomy-q219",
+              "id": "mcns2-ch5-anatomy-q213",
               "type": "mcq",
               "lecture": 4,
               "text": "Concerning the chorda tympani nerve; all are true Except:",
@@ -3423,7 +3320,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch5-anatomy-q220",
+              "id": "mcns2-ch5-anatomy-q214",
               "type": "mcq",
               "lecture": 4,
               "text": "Which is the correct statement regarding cervical sympathetic trunk?",
@@ -3439,7 +3336,7 @@
               "correctIndex": 3
             },
             {
-              "id": "mcns2-ch5-anatomy-q221",
+              "id": "mcns2-ch5-anatomy-q215",
               "type": "mcq",
               "lecture": 4,
               "text": "If you ask a patient to say “Ah” and you notice deviation of the uvula to the right side, you suspect injury to which nerve?",
@@ -3455,7 +3352,7 @@
               "correctIndex": 4
             },
             {
-              "id": "mcns2-ch5-anatomy-q222",
+              "id": "mcns2-ch5-anatomy-q216",
               "type": "mcq",
               "lecture": 4,
               "text": "The parasympathetic root of otic ganglion is a branch of which nerve:",
@@ -3471,7 +3368,7 @@
               "correctIndex": 3
             },
             {
-              "id": "mcns2-ch5-anatomy-q223",
+              "id": "mcns2-ch5-anatomy-q217",
               "type": "mcq",
               "lecture": 4,
               "text": "The hypoglossal nerve:",
@@ -3487,7 +3384,7 @@
               "correctIndex": 2
             },
             {
-              "id": "mcns2-ch5-anatomy-q224",
+              "id": "mcns2-ch5-anatomy-q218",
               "type": "mcq",
               "lecture": 4,
               "text": "All are branches of nasociliary nerve Except:",
@@ -3503,7 +3400,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch5-anatomy-q225",
+              "id": "mcns2-ch5-anatomy-q219",
               "type": "mcq",
               "lecture": 4,
               "text": "All the following muscles are supplied by the hypoglossal nerve Except:",
@@ -3519,23 +3416,7 @@
               "correctIndex": 0
             },
             {
-              "id": "mcns2-ch5-anatomy-q226",
-              "type": "mcq",
-              "lecture": 4,
-              "text": "The deep petrosal nerve is composed of nerve fibers whose cell bodies are located in which ganglion?",
-              "explanation": "The correct answer is (c) Pterygopalatine. Among the listed options this is the choice that best matches the stem, and the other options are incorrect distractors.",
-              "keyConcept": "The deep petrosal nerve is composed of nerve fibers whose cell bodies are located in which ganglion",
-              "options": [
-                "Geniculate.",
-                "Trigeminal.",
-                "Pterygopalatine.",
-                "Superior cervical sympathetic.",
-                "Inferior vagal ganglion."
-              ],
-              "correctIndex": 2
-            },
-            {
-              "id": "mcns2-ch5-anatomy-q227",
+              "id": "mcns2-ch5-anatomy-q220",
               "type": "mcq",
               "lecture": 4,
               "text": "Injury of abducent nerve leads to:",
@@ -3551,7 +3432,7 @@
               "correctIndex": 0
             },
             {
-              "id": "mcns2-ch5-anatomy-q228",
+              "id": "mcns2-ch5-anatomy-q221",
               "type": "mcq",
               "lecture": 4,
               "text": "Inability to whistle or suck on a straw may indicate a lesion of which nerve:",
@@ -3567,7 +3448,7 @@
               "correctIndex": 2
             },
             {
-              "id": "mcns2-ch5-anatomy-q229",
+              "id": "mcns2-ch5-anatomy-q222",
               "type": "mcq",
               "lecture": 4,
               "text": "All The following muscles are supplied by facial nerve Except;",
@@ -3583,7 +3464,7 @@
               "correctIndex": 2
             },
             {
-              "id": "mcns2-ch5-anatomy-q230",
+              "id": "mcns2-ch5-anatomy-q223",
               "type": "mcq",
               "lecture": 4,
               "text": "All the following muscles receive motor fibers from the cervical plexus Except:",
@@ -3599,7 +3480,7 @@
               "correctIndex": 3
             },
             {
-              "id": "mcns2-ch5-anatomy-q231",
+              "id": "mcns2-ch5-anatomy-q224",
               "type": "mcq",
               "lecture": 4,
               "text": "Regarding the accessory nerve; All the following statements are true Except:",
@@ -3615,7 +3496,7 @@
               "correctIndex": 2
             },
             {
-              "id": "mcns2-ch5-anatomy-q232",
+              "id": "mcns2-ch5-anatomy-q225",
               "type": "mcq",
               "lecture": 4,
               "text": "The following are branches of the cervical plexus Except:",
@@ -3631,7 +3512,7 @@
               "correctIndex": 2
             },
             {
-              "id": "mcns2-ch5-anatomy-q233",
+              "id": "mcns2-ch5-anatomy-q226",
               "type": "mcq",
               "lecture": 4,
               "text": "The Ansa cervicalis:",
@@ -3647,7 +3528,7 @@
               "correctIndex": 3
             },
             {
-              "id": "mcns2-ch5-anatomy-q234",
+              "id": "mcns2-ch5-anatomy-q227",
               "type": "mcq",
               "lecture": 4,
               "text": "Regarding cervical spinal nerves, All are true statements Except:",
@@ -3663,7 +3544,7 @@
               "correctIndex": 4
             },
             {
-              "id": "mcns2-ch5-anatomy-q235",
+              "id": "mcns2-ch5-anatomy-q228",
               "type": "mcq",
               "lecture": 4,
               "text": "Regarding the superior cervical sympathetic ganglion, all are true Except:",
@@ -3679,23 +3560,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch5-anatomy-q236",
-              "type": "mcq",
-              "lecture": 4,
-              "text": "All the following are branches of the middle cervical sympathetic ganglion Except",
-              "explanation": "The correct answer is (a) Pharyngeal. This is the option that does not fit the stem (the exception/incorrect statement), while the remaining choices are all true in this context.",
-              "keyConcept": "All the following are branches of the middle cervical sympathetic ganglion Except",
-              "options": [
-                "Pharyngeal.",
-                "Cardiac.",
-                "Gray rami communicates to the fifth and sixth cervical nerves.",
-                "Connections with the cervicothoracic ganglion.",
-                "Branches to thyroid gland."
-              ],
-              "correctIndex": 0
-            },
-            {
-              "id": "mcns2-ch5-anatomy-q237",
+              "id": "mcns2-ch5-anatomy-q229",
               "type": "mcq",
               "lecture": 4,
               "text": "Preganglionic parasympathetic fibers to the lacrimal gland run in which nerve?",
@@ -3711,7 +3576,7 @@
               "correctIndex": 2
             },
             {
-              "id": "mcns2-ch5-anatomy-q238",
+              "id": "mcns2-ch5-anatomy-q230",
               "type": "mcq",
               "lecture": 4,
               "text": "One of the following cranial nerves contains parasympathetic fibers:",
@@ -3727,7 +3592,7 @@
               "correctIndex": 0
             },
             {
-              "id": "mcns2-ch5-anatomy-q239",
+              "id": "mcns2-ch5-anatomy-q231",
               "type": "mcq",
               "lecture": 4,
               "text": "The glossopharyngeal nerve supplies the mucous membrane of:",
@@ -3743,7 +3608,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch5-anatomy-q240",
+              "id": "mcns2-ch5-anatomy-q232",
               "type": "mcq",
               "lecture": 4,
               "text": "One of the following cranial nerves does not contain preganglionic parasympathetic fibers:",
@@ -3759,7 +3624,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch5-anatomy-q241",
+              "id": "mcns2-ch5-anatomy-q233",
               "type": "mcq",
               "lecture": 4,
               "text": "Regarding the spinal accessory nerve, all are true Except:",
@@ -3775,7 +3640,7 @@
               "correctIndex": 3
             },
             {
-              "id": "mcns2-ch5-anatomy-q242",
+              "id": "mcns2-ch5-anatomy-q234",
               "type": "essay",
               "lecture": 1,
               "text": "What are the tributaries of external jugular vein?",
@@ -3784,7 +3649,7 @@
               "modelAnswer": "• Anterior jugular vein\n• Transverse cervical vein\n• Suprascapular vein\n• Posterior external jugular vein"
             },
             {
-              "id": "mcns2-ch5-anatomy-q243",
+              "id": "mcns2-ch5-anatomy-q235",
               "type": "essay",
               "lecture": 1,
               "text": "What forms the floor of the posterior triangle?",
@@ -3793,7 +3658,7 @@
               "modelAnswer": "• Semispinalis capitis\n• Splenius capitis\n• Leavator scapulae\n• Scalenus medius\n• Scalenus anterior"
             },
             {
-              "id": "mcns2-ch5-anatomy-q244",
+              "id": "mcns2-ch5-anatomy-q236",
               "type": "essay",
               "lecture": 1,
               "text": "Mention 5 contents of the posterior triangle.",
@@ -3802,7 +3667,7 @@
               "modelAnswer": "• Spinal accessory nerve\n• Roots and trunks of brachial plexus\n• Cutaneous nerves of cervical plexus\n• Subclavian vein\n• External jugular vein"
             },
             {
-              "id": "mcns2-ch5-anatomy-q245",
+              "id": "mcns2-ch5-anatomy-q237",
               "type": "essay",
               "lecture": 1,
               "text": "Mention the cutaneous branches of the cervical plexus.",
@@ -3811,7 +3676,7 @@
               "modelAnswer": "• Great auricular\n• Lesser occipital\n• Trasnverse cervical\n• Supraclavicular"
             },
             {
-              "id": "mcns2-ch5-anatomy-q246",
+              "id": "mcns2-ch5-anatomy-q238",
               "type": "essay",
               "lecture": 1,
               "text": "Mention the boundaries of the anterior triangle.",
@@ -3820,7 +3685,7 @@
               "modelAnswer": "• Anteriorly: Anterior median line of neck\n• Posteriorly: Anterior border of sternomastoid\n• Superiorly: Inferior border of mandible and a line joining angle of mandible to mastoid process"
             },
             {
-              "id": "mcns2-ch5-anatomy-q247",
+              "id": "mcns2-ch5-anatomy-q239",
               "type": "essay",
               "lecture": 1,
               "text": "Mention the boundaries of submental triangle.",
@@ -3829,7 +3694,7 @@
               "modelAnswer": "• Base: Hyoid bone\n• Apex: Symphysis menti\n• On each side: Anterior belly of digastric\n• Floor: Two mylohyoid muscles"
             },
             {
-              "id": "mcns2-ch5-anatomy-q248",
+              "id": "mcns2-ch5-anatomy-q240",
               "type": "essay",
               "lecture": 1,
               "text": "Mention the contents of submental triangle.",
@@ -3838,7 +3703,7 @@
               "modelAnswer": "• Submental lymph nodes, submental artery and vein, small veins that unite to form anterior jugular vein, mylohyoid nerve and vessels"
             },
             {
-              "id": "mcns2-ch5-anatomy-q249",
+              "id": "mcns2-ch5-anatomy-q241",
               "type": "essay",
               "lecture": 1,
               "text": "Mention the boundaries of digastric triangle.",
@@ -3847,7 +3712,7 @@
               "modelAnswer": "• Anteriorly: anterior belly of digastric\n• Posteriorly: posterior belly of digastric and stylohyoid\n• Superiorly: inferior border of mandible and a line drawn from angle of mandible to mastoid process\n• Roof: Skin, superficial fascia, deep fascia\n• Floor: Mylohyoid and hyoglossus"
             },
             {
-              "id": "mcns2-ch5-anatomy-q250",
+              "id": "mcns2-ch5-anatomy-q242",
               "type": "essay",
               "lecture": 1,
               "text": "Mention 5 contents of digastric triangle.",
@@ -3856,7 +3721,7 @@
               "modelAnswer": "• Submandibular gland\n• Submandibular LN\n• Submandibular ganglion\n• Facial artery\n• Facial vein"
             },
             {
-              "id": "mcns2-ch5-anatomy-q251",
+              "id": "mcns2-ch5-anatomy-q243",
               "type": "essay",
               "lecture": 1,
               "text": "Mention the boundaries of carotid triangle.",
@@ -3865,7 +3730,7 @@
               "modelAnswer": "• Superiorly: Posterior belly of digastric\n• Anteriorly: Superior belly of omohyoid\n• Posteriorly: Anterior border of sternomastoid\n• Roof: skin, superficial fascia, investing layer of deep cervical fascia\n• Floor: Hyoglossus, thyrohyoid, middle and inferior constrictors of the pharynx"
             },
             {
-              "id": "mcns2-ch5-anatomy-q252",
+              "id": "mcns2-ch5-anatomy-q244",
               "type": "essay",
               "lecture": 1,
               "text": "Mention 3 contents of carotid triangle.",
@@ -3874,7 +3739,7 @@
               "modelAnswer": "• CCA, ICA, ECA"
             },
             {
-              "id": "mcns2-ch5-anatomy-q253",
+              "id": "mcns2-ch5-anatomy-q245",
               "type": "essay",
               "lecture": 1,
               "text": "Mention the contents of the muscular triangle.",
@@ -3883,7 +3748,7 @@
               "modelAnswer": "• Infrahyoid muscles"
             },
             {
-              "id": "mcns2-ch5-anatomy-q254",
+              "id": "mcns2-ch5-anatomy-q246",
               "type": "essay",
               "lecture": 1,
               "text": "What is the nerve supply of infrahyoid muscles?",
@@ -3892,7 +3757,7 @@
               "modelAnswer": "• All are supplied by ansa cervicalis except thyrohyoid which is supplied by C1 fibers that accompany hypoglossal nerve"
             },
             {
-              "id": "mcns2-ch5-anatomy-q255",
+              "id": "mcns2-ch5-anatomy-q247",
               "type": "essay",
               "lecture": 1,
               "text": "What is the nerve supply of suprahyoid muscles?",
@@ -3901,7 +3766,7 @@
               "modelAnswer": "• Ant belly of digastric and mylohyoid by nerve to mylohyoid\n• Post belly of digastric and stylohyoid by facial nerve\n• Geniohyoid by C1 via hypoglossal nerve"
             },
             {
-              "id": "mcns2-ch5-anatomy-q256",
+              "id": "mcns2-ch5-anatomy-q248",
               "type": "essay",
               "lecture": 1,
               "text": "What is the structure of ansa cervicalis?",
@@ -3910,7 +3775,7 @@
               "modelAnswer": "• It’s formed of 2 limbs: » Superior limb: fibers from C1 that join hypoglossal nerve then leave it and descend infront of carotid sheath » Inferior limb: fibers from C2 and C3"
             },
             {
-              "id": "mcns2-ch5-anatomy-q257",
+              "id": "mcns2-ch5-anatomy-q249",
               "type": "essay",
               "lecture": 1,
               "text": "Compare between the cervical sympathetic ganglion(site)",
@@ -3919,7 +3784,7 @@
               "modelAnswer": "• Superior cervical ganglion: C2,3\n• Middle cervical ganglion: C6,7\n• Inferior cervical ganglion: C7"
             },
             {
-              "id": "mcns2-ch5-anatomy-q258",
+              "id": "mcns2-ch5-anatomy-q250",
               "type": "essay",
               "lecture": 1,
               "text": "Mention the branches of glossopharyngeal nerve.",
@@ -3928,7 +3793,7 @@
               "modelAnswer": "• Tympanic branch\n• Carotid branch\n• Pharyngeal\n• Muscular\n• Tonsillar\n• Lingual"
             },
             {
-              "id": "mcns2-ch5-anatomy-q259",
+              "id": "mcns2-ch5-anatomy-q251",
               "type": "essay",
               "lecture": 1,
               "text": "Mention the branches of the vagal nerve from the superior vagal ganglion.",

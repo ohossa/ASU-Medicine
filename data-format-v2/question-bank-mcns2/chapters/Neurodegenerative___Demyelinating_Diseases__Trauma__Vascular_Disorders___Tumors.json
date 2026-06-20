@@ -29,14 +29,8 @@
           "id": "pathology",
           "name": "Pathology",
           "iconName": "ShieldAlert",
-          "lectures": "",
-          "lectureCount": 4,
-          "lectureNames": [
-            "CNS Trauma",
-            "CNS Tumours",
-            "Cerebrovascular Diseases",
-            "Neurodegenerative and Myelin Diseases"
-          ],
+          "lectures": "L1-L5",
+          "lectureCount": 5,
           "questions": [
             {
               "id": "mcns2-ch9-pathology-q1",
@@ -1147,22 +1141,6 @@
               "id": "mcns2-ch9-pathology-q61",
               "type": "mcq",
               "lecture": 1,
-              "text": "Psammoma bodies are characteristic of",
-              "explanation": "Psammoma bodies are seen in all these tumors. The correct answer is: All of the above.",
-              "keyConcept": "Psammoma bodies are seen in all these tumors",
-              "options": [
-                "Serous cystadenocarcinoma of the ovary",
-                "Meningioma",
-                "Papillary carcinoma of the thyroid",
-                "All of the above",
-                "None of the above"
-              ],
-              "correctIndex": 3
-            },
-            {
-              "id": "mcns2-ch9-pathology-q62",
-              "type": "mcq",
-              "lecture": 1,
               "text": "An adult male patient had multiple skin nodules and skin hyperpigmentation. Biopsy from the nodules showed a benign connective tissue neoplasm. The most possible diagnosis is",
               "explanation": "Multiple skin nodules with hyperpigmentation suggest neurofibromatosis (von Recklinghausen's disease). The correct answer is: Neurofibromatosis.",
               "keyConcept": "Multiple skin nodules with hyperpigmentation suggest neurofibromatosis (von Recklinghausen's disease)",
@@ -1176,7 +1154,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch9-pathology-q63",
+              "id": "mcns2-ch9-pathology-q62",
               "type": "mcq",
               "lecture": 1,
               "text": "A 70 year old male complained of headache and vomiting. Radiologic examination revealed multiple space occupying lesions in the temporal lobe of the brain. Biopsy taken from one of these lesions showed sheets of malignant cells which are large with small central nuclei and abundant granular eosinophilic cytoplasm. The most possible diagnosis is",
@@ -1192,7 +1170,7 @@
               "correctIndex": 3
             },
             {
-              "id": "mcns2-ch9-pathology-q64",
+              "id": "mcns2-ch9-pathology-q63",
               "type": "truefalse",
               "lecture": 1,
               "text": "Atherosclerosis is the commonest cause of cerebral infarction.",
@@ -1205,7 +1183,7 @@
               "correctIndex": 0
             },
             {
-              "id": "mcns2-ch9-pathology-q65",
+              "id": "mcns2-ch9-pathology-q64",
               "type": "truefalse",
               "lecture": 1,
               "text": "Cerebral infarction is usually of the liquefactive type due to digestion of the necrotic tissue by proteolytic enzymes.",
@@ -1218,7 +1196,7 @@
               "correctIndex": 0
             },
             {
-              "id": "mcns2-ch9-pathology-q66",
+              "id": "mcns2-ch9-pathology-q65",
               "type": "truefalse",
               "lecture": 1,
               "text": "Metastatic brain tumors are NOT so common as primary tumors.",
@@ -1231,7 +1209,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch9-pathology-q67",
+              "id": "mcns2-ch9-pathology-q66",
               "type": "truefalse",
               "lecture": 1,
               "text": "Astrocytoma is NOT always a benign tumor.",
@@ -1244,7 +1222,7 @@
               "correctIndex": 0
             },
             {
-              "id": "mcns2-ch9-pathology-q68",
+              "id": "mcns2-ch9-pathology-q67",
               "type": "truefalse",
               "lecture": 1,
               "text": "Most malignant gliomas are locally malignant tumors.",
@@ -1257,7 +1235,7 @@
               "correctIndex": 0
             },
             {
-              "id": "mcns2-ch9-pathology-q69",
+              "id": "mcns2-ch9-pathology-q68",
               "type": "truefalse",
               "lecture": 1,
               "text": "Most gliomas spread by blood.",
@@ -1270,7 +1248,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch9-pathology-q70",
+              "id": "mcns2-ch9-pathology-q69",
               "type": "truefalse",
               "lecture": 1,
               "text": "Most gliomas spread by lymphatics.",
@@ -1283,7 +1261,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch9-pathology-q71",
+              "id": "mcns2-ch9-pathology-q70",
               "type": "truefalse",
               "lecture": 1,
               "text": "Medulloblastoma has the same histologic picture of neuroblastoma.",
@@ -1296,7 +1274,7 @@
               "correctIndex": 0
             },
             {
-              "id": "mcns2-ch9-pathology-q72",
+              "id": "mcns2-ch9-pathology-q71",
               "type": "truefalse",
               "lecture": 1,
               "text": "Schwannoma is NOT always a benign tumor.",
@@ -1309,7 +1287,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch9-pathology-q73",
+              "id": "mcns2-ch9-pathology-q72",
               "type": "truefalse",
               "lecture": 1,
               "text": "The meninges are NOT a site of tumor metastases.",
@@ -1322,7 +1300,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch9-pathology-q74",
+              "id": "mcns2-ch9-pathology-q73",
               "type": "truefalse",
               "lecture": 1,
               "text": "Intracranial haemorrhage means haemorrhage within the brain tissue only.",
@@ -1335,7 +1313,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch9-pathology-q75",
+              "id": "mcns2-ch9-pathology-q74",
               "type": "truefalse",
               "lecture": 1,
               "text": "Hydrocephalus is a disease of children only.",
@@ -1348,7 +1326,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch9-pathology-q76",
+              "id": "mcns2-ch9-pathology-q75",
               "type": "truefalse",
               "lecture": 1,
               "text": "Glioblastoma multiforme is benign astrocytoma with multinucleated giant cells.",
@@ -1361,7 +1339,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch9-pathology-q77",
+              "id": "mcns2-ch9-pathology-q76",
               "type": "truefalse",
               "lecture": 1,
               "text": "Pilocytic astrocytoma is a malignant astrocytoma occurring in children.",
@@ -1374,7 +1352,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch9-pathology-q78",
+              "id": "mcns2-ch9-pathology-q77",
               "type": "truefalse",
               "lecture": 1,
               "text": "Ependymoma may occur outside the ventricles of the brain and the central canal of the spinal cord.",
@@ -1387,7 +1365,7 @@
               "correctIndex": 0
             },
             {
-              "id": "mcns2-ch9-pathology-q79",
+              "id": "mcns2-ch9-pathology-q78",
               "type": "truefalse",
               "lecture": 1,
               "text": "Acoustic neuroma is a neurofibroma of the vestibular branch of the 8th cranial nerve.",
@@ -1400,7 +1378,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch9-pathology-q80",
+              "id": "mcns2-ch9-pathology-q79",
               "type": "truefalse",
               "lecture": 1,
               "text": "Acoustic neuroma is a common cause of deafness.",
@@ -1413,7 +1391,7 @@
               "correctIndex": 0
             },
             {
-              "id": "mcns2-ch9-pathology-q81",
+              "id": "mcns2-ch9-pathology-q80",
               "type": "truefalse",
               "lecture": 1,
               "text": "Antoni A and Antoni B represent benign and malignant types of Schwannoma.",
@@ -1426,7 +1404,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch9-pathology-q82",
+              "id": "mcns2-ch9-pathology-q81",
               "type": "mcq",
               "lecture": 1,
               "text": "Alzheimer’s disease:",
@@ -1442,7 +1420,7 @@
               "correctIndex": 2
             },
             {
-              "id": "mcns2-ch9-pathology-q83",
+              "id": "mcns2-ch9-pathology-q82",
               "type": "mcq",
               "lecture": 1,
               "text": "A 85 year old man resident of a nursing home is found wandering the streets looking for his way to home, the patient’s family tell the doctor that his condition has been worsening progressively over the last several years He doesn’t have a history of head trauma or cardiovascular disease in addition to the disorientation; he has demonstrated significant language impairment Microscopical findings include:",
@@ -1457,7 +1435,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch9-pathology-q84",
+              "id": "mcns2-ch9-pathology-q83",
               "type": "mcq",
               "lecture": 1,
               "text": "Negri bodies are:",
@@ -1473,7 +1451,7 @@
               "correctIndex": 4
             },
             {
-              "id": "mcns2-ch9-pathology-q85",
+              "id": "mcns2-ch9-pathology-q84",
               "type": "mcq",
               "lecture": 1,
               "text": "Multiple sclerosis is:",
@@ -1489,7 +1467,7 @@
               "correctIndex": 3
             },
             {
-              "id": "mcns2-ch9-pathology-q86",
+              "id": "mcns2-ch9-pathology-q85",
               "type": "mcq",
               "lecture": 1,
               "text": "68 year old man suffers from dementia for a long period, he died in a car accident During autopsy silver stain was performed on sections of the frontal, parietal & temporal cortex it reveals intraneuronal inclusions these inclusions are:",
@@ -1504,7 +1482,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch9-pathology-q87",
+              "id": "mcns2-ch9-pathology-q86",
               "type": "mcq",
               "lecture": 1,
               "text": "Which of the following aneurysms can affect the cerebral vessels:",
@@ -1519,7 +1497,7 @@
               "correctIndex": 3
             },
             {
-              "id": "mcns2-ch9-pathology-q88",
+              "id": "mcns2-ch9-pathology-q87",
               "type": "mcq",
               "lecture": 1,
               "text": "A previously healthy 31 year old woman experiences extensive subarachnoid hemorrhage at the base of the brain she is afebrile the CSF protein is slightly increased but the glucose is normal, which of the following is the most likely diagnosis:",
@@ -1535,7 +1513,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch9-pathology-q89",
+              "id": "mcns2-ch9-pathology-q88",
               "type": "mcq",
               "lecture": 1,
               "text": "Mycotic cerebral aneurysms is due to:",
@@ -1550,7 +1528,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch9-pathology-q90",
+              "id": "mcns2-ch9-pathology-q89",
               "type": "mcq",
               "lecture": 1,
               "text": "Subarachnoid hemorrhage is due to:",
@@ -1566,7 +1544,7 @@
               "correctIndex": 2
             },
             {
-              "id": "mcns2-ch9-pathology-q91",
+              "id": "mcns2-ch9-pathology-q90",
               "type": "mcq",
               "lecture": 1,
               "text": "Congenital cerebral aneurysm affects:",
@@ -1581,7 +1559,7 @@
               "correctIndex": 0
             },
             {
-              "id": "mcns2-ch9-pathology-q92",
+              "id": "mcns2-ch9-pathology-q91",
               "type": "mcq",
               "lecture": 1,
               "text": "Hypertensive patients are at high risk of:",
@@ -1596,7 +1574,7 @@
               "correctIndex": 3
             },
             {
-              "id": "mcns2-ch9-pathology-q93",
+              "id": "mcns2-ch9-pathology-q92",
               "type": "mcq",
               "lecture": 1,
               "text": "Subdural hemorrhage occurs:",
@@ -1611,7 +1589,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch9-pathology-q94",
+              "id": "mcns2-ch9-pathology-q93",
               "type": "mcq",
               "lecture": 1,
               "text": "Subdural hemorrhage is commonly related to:",
@@ -1626,7 +1604,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch9-pathology-q95",
+              "id": "mcns2-ch9-pathology-q94",
               "type": "mcq",
               "lecture": 1,
               "text": "A female patient 40 years old presented with sudden onset of loss of memory brain MRI revealed multiple small secular aneurysms in the circle of Willis with rupture of one of them causing subarachnoid hemorrhage. The type of aneurism is due to:",
@@ -1641,7 +1619,7 @@
               "correctIndex": 0
             },
             {
-              "id": "mcns2-ch9-pathology-q96",
+              "id": "mcns2-ch9-pathology-q95",
               "type": "mcq",
               "lecture": 1,
               "text": "A 58 year old hypertensive patient presents with sudden onset of hemiplegia followed by symptoms of increased intracranial tension (headache & vomiting). A CT scan shows extensive intracerebral hemorrhage in the region of basal ganglia, most probable diagnosis is:",
@@ -1656,7 +1634,7 @@
               "correctIndex": 2
             },
             {
-              "id": "mcns2-ch9-pathology-q97",
+              "id": "mcns2-ch9-pathology-q96",
               "type": "mcq",
               "lecture": 1,
               "text": "Which of the following tumors is a WHO grade IV:",
@@ -1671,7 +1649,7 @@
               "correctIndex": 3
             },
             {
-              "id": "mcns2-ch9-pathology-q98",
+              "id": "mcns2-ch9-pathology-q97",
               "type": "mcq",
               "lecture": 1,
               "text": "Pilocytic astrocytoma is characterized by all EXCEPT:",
@@ -1687,7 +1665,7 @@
               "correctIndex": 3
             },
             {
-              "id": "mcns2-ch9-pathology-q99",
+              "id": "mcns2-ch9-pathology-q98",
               "type": "mcq",
               "lecture": 1,
               "text": "Psammoma bodies are characteristic of:",
@@ -1703,7 +1681,7 @@
               "correctIndex": 3
             },
             {
-              "id": "mcns2-ch9-pathology-q100",
+              "id": "mcns2-ch9-pathology-q99",
               "type": "mcq",
               "lecture": 1,
               "text": "Pilocytic astrocytoma show the following EXCEPT:",
@@ -1718,7 +1696,7 @@
               "correctIndex": 3
             },
             {
-              "id": "mcns2-ch9-pathology-q101",
+              "id": "mcns2-ch9-pathology-q100",
               "type": "mcq",
               "lecture": 1,
               "text": "A 50 year old man has a 3cm diameter left frontal lobe mass with areas of calcification. Microscopically sheets of regular cells with spherical nuclei surrounded by clear halo of cytoplasm are seen. Which of the following diagnosis is most likely to be made on microscopic examination of this mass:",
@@ -1734,7 +1712,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch9-pathology-q102",
+              "id": "mcns2-ch9-pathology-q101",
               "type": "mcq",
               "lecture": 1,
               "text": "The following tumor is always benign:",
@@ -1750,7 +1728,7 @@
               "correctIndex": 4
             },
             {
-              "id": "mcns2-ch9-pathology-q103",
+              "id": "mcns2-ch9-pathology-q102",
               "type": "mcq",
               "lecture": 1,
               "text": "The biopsy of a ring enhancing tumor in the left parietal lobe of a 60 year old patient reveals an astrocytic tumor that displays marked cellular atypia, mitotic activity, areas of pseudopalisading necrosis & multifocal microvascular hyperplasia The diagnosis is:",
@@ -1766,7 +1744,7 @@
               "correctIndex": 3
             },
             {
-              "id": "mcns2-ch9-pathology-q104",
+              "id": "mcns2-ch9-pathology-q103",
               "type": "mcq",
               "lecture": 1,
               "text": "Microscopic rosette formation is characteristic feature of:",
@@ -1782,7 +1760,7 @@
               "correctIndex": 2
             },
             {
-              "id": "mcns2-ch9-pathology-q105",
+              "id": "mcns2-ch9-pathology-q104",
               "type": "mcq",
               "lecture": 1,
               "text": "A 10 year old girl develops ataxia & hydrocephalus CT scan shows a midline cerebellar mass Which of the following is the most likely diagnosis:",
@@ -1797,7 +1775,7 @@
               "correctIndex": 3
             },
             {
-              "id": "mcns2-ch9-pathology-q106",
+              "id": "mcns2-ch9-pathology-q105",
               "type": "mcq",
               "lecture": 1,
               "text": "A female 50 year old presented with brain tumor with focal erosion of the skull bones, the tumor was excised and examined histologically It consisted of spindle shaped & syncytical cells arranged in whorly pattern the most possible diagnosis is:",
@@ -1813,7 +1791,7 @@
               "correctIndex": 2
             },
             {
-              "id": "mcns2-ch9-pathology-q107",
+              "id": "mcns2-ch9-pathology-q106",
               "type": "mcq",
               "lecture": 1,
               "text": "A 65 year old man develops new onset of seizures & headaches. A CT scan reveals a 6 cm left sided intracerebral mass which of the following is the most likely diagnosis:",
@@ -1828,7 +1806,7 @@
               "correctIndex": 3
             },
             {
-              "id": "mcns2-ch9-pathology-q108",
+              "id": "mcns2-ch9-pathology-q107",
               "type": "mcq",
               "lecture": 1,
               "text": "Medulloblastoma is a:",
@@ -1844,7 +1822,7 @@
               "correctIndex": 2
             },
             {
-              "id": "mcns2-ch9-pathology-q109",
+              "id": "mcns2-ch9-pathology-q108",
               "type": "mcq",
               "lecture": 1,
               "text": "The following tumor shows whorly pattern of growth:",
@@ -1860,7 +1838,7 @@
               "correctIndex": 4
             },
             {
-              "id": "mcns2-ch9-pathology-q110",
+              "id": "mcns2-ch9-pathology-q109",
               "type": "mcq",
               "lecture": 1,
               "text": "A 5 year old child suffered from headache & blurring of vision, radiological examination showed a cerebellar tumor. Microscopic examination of a biopsy from this tumor revealed diffuse infiltration by malignant small round cells with rosette formation, the most possible diagnosis is:",
@@ -1876,7 +1854,7 @@
               "correctIndex": 4
             },
             {
-              "id": "mcns2-ch9-pathology-q111",
+              "id": "mcns2-ch9-pathology-q110",
               "type": "mcq",
               "lecture": 1,
               "text": "Astrocytoma is:",
@@ -1892,7 +1870,7 @@
               "correctIndex": 0
             },
             {
-              "id": "mcns2-ch9-pathology-q112",
+              "id": "mcns2-ch9-pathology-q111",
               "type": "mcq",
               "lecture": 1,
               "text": "Meningioma shows:",
@@ -1908,7 +1886,7 @@
               "correctIndex": 4
             },
             {
-              "id": "mcns2-ch9-pathology-q113",
+              "id": "mcns2-ch9-pathology-q112",
               "type": "mcq",
               "lecture": 1,
               "text": "A 9 year old child has enlargement of the lateral ventricles with a 4 cm homogenous well circumscribed mass within the 4th ventricle. Microscopically it shows rosettes & pseudo rosettes, which of the following is the most likely diagnosis:",
@@ -1923,7 +1901,7 @@
               "correctIndex": 0
             },
             {
-              "id": "mcns2-ch9-pathology-q114",
+              "id": "mcns2-ch9-pathology-q113",
               "type": "mcq",
               "lecture": 1,
               "text": "Glioblastoma multiforme shows:",
@@ -1939,7 +1917,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch9-pathology-q115",
+              "id": "mcns2-ch9-pathology-q114",
               "type": "mcq",
               "lecture": 1,
               "text": "The following histological picture is not characteristic of Glioblastoma multiforme:",
@@ -1955,7 +1933,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch9-pathology-q116",
+              "id": "mcns2-ch9-pathology-q115",
               "type": "mcq",
               "lecture": 1,
               "text": "The most common brain tumor in children:",
@@ -1971,7 +1949,7 @@
               "correctIndex": 2
             },
             {
-              "id": "mcns2-ch9-pathology-q117",
+              "id": "mcns2-ch9-pathology-q116",
               "type": "mcq",
               "lecture": 1,
               "text": "The following is not a feature of meningioma:",
@@ -1986,7 +1964,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch9-pathology-q118",
+              "id": "mcns2-ch9-pathology-q117",
               "type": "mcq",
               "lecture": 1,
               "text": "Which of the following tumors is malignant:",
@@ -2001,7 +1979,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch9-pathology-q119",
+              "id": "mcns2-ch9-pathology-q118",
               "type": "mcq",
               "lecture": 1,
               "text": "A male patient 40 year old presented with hemiplegia & deafness. Radiological examination showed a tumor at the Cerebellopontine angle, biopsy from this tumor showed a neurogenic tumor formed of hypercellular and hypocellular areas. The most possible diagnosis is:",
@@ -2017,7 +1995,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch9-pathology-q120",
+              "id": "mcns2-ch9-pathology-q119",
               "type": "mcq",
               "lecture": 1,
               "text": "An 18 year old male presents with a well circumscribed mass involving the 4th ventricle Diagnostic microscopical findings in this condition include:",
@@ -2032,7 +2010,7 @@
               "correctIndex": 2
             },
             {
-              "id": "mcns2-ch9-pathology-q121",
+              "id": "mcns2-ch9-pathology-q120",
               "type": "mcq",
               "lecture": 1,
               "text": "The following is not a type of glioma:",
@@ -2047,7 +2025,7 @@
               "correctIndex": 0
             },
             {
-              "id": "mcns2-ch9-pathology-q122",
+              "id": "mcns2-ch9-pathology-q121",
               "type": "mcq",
               "lecture": 1,
               "text": "A 33 year old male presents with seizures, MRI shows an ill-defined area of infiltrative tumor expanding the frontal lobe. Biopsy of this lesion shows glial tissue with slightly increased cellularity and mild nuclear pleomorphism. No mitotic activity, no necrosis &no vascular proliferation What is the most likely diagnosis:",
@@ -2062,7 +2040,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch9-pathology-q123",
+              "id": "mcns2-ch9-pathology-q122",
               "type": "mcq",
               "lecture": 1,
               "text": "A male patient 40 year presented with left sided hemiplegia, brain MRI revealed a space occupying lesion in the right cerebral hemisphere. Biopsy examination showed a highly cellular tumor with malignant cells, areas of necrosis & vascular proliferation. The most possible diagnosis is:",
@@ -2078,7 +2056,7 @@
               "correctIndex": 0
             },
             {
-              "id": "mcns2-ch9-pathology-q124",
+              "id": "mcns2-ch9-pathology-q123",
               "type": "mcq",
               "lecture": 1,
               "text": "Oligodendroglioma is not a:",
@@ -2093,7 +2071,7 @@
               "correctIndex": 2
             },
             {
-              "id": "mcns2-ch9-pathology-q125",
+              "id": "mcns2-ch9-pathology-q124",
               "type": "mcq",
               "lecture": 1,
               "text": "A 9 year old girl is evaluated for headache and ataxia over the last 2 months A CT scan reveals a midline partially cystic cerebellar mass, microscopic examination shows elongated bipolar astrocytes with fibrillar processes and Rosenthal fibers the diagnosis is:",
@@ -2108,7 +2086,7 @@
               "correctIndex": 0
             },
             {
-              "id": "mcns2-ch9-pathology-q126",
+              "id": "mcns2-ch9-pathology-q125",
               "type": "mcq",
               "lecture": 1,
               "text": "The following tumor arises from the lining of the ventricular system:",
@@ -2124,7 +2102,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch9-pathology-q127",
+              "id": "mcns2-ch9-pathology-q126",
               "type": "mcq",
               "lecture": 1,
               "text": "Astrocytoma is a:",
@@ -2140,7 +2118,7 @@
               "correctIndex": 0
             },
             {
-              "id": "mcns2-ch9-pathology-q128",
+              "id": "mcns2-ch9-pathology-q127",
               "type": "mcq",
               "lecture": 1,
               "text": "Oligodendrogliomas are not characterized by:",
@@ -2155,7 +2133,7 @@
               "correctIndex": 2
             },
             {
-              "id": "mcns2-ch9-pathology-q129",
+              "id": "mcns2-ch9-pathology-q128",
               "type": "mcq",
               "lecture": 1,
               "text": "Medulloblastoma shows:",
@@ -2171,7 +2149,7 @@
               "correctIndex": 3
             },
             {
-              "id": "mcns2-ch9-pathology-q130",
+              "id": "mcns2-ch9-pathology-q129",
               "type": "mcq",
               "lecture": 1,
               "text": "Gliomas include all of the following EXCEPT:",
@@ -2187,7 +2165,7 @@
               "correctIndex": 3
             },
             {
-              "id": "mcns2-ch9-pathology-q131",
+              "id": "mcns2-ch9-pathology-q130",
               "type": "mcq",
               "lecture": 1,
               "text": "Pilocytic astrocytoma shows:",
@@ -2203,7 +2181,7 @@
               "correctIndex": 0
             },
             {
-              "id": "mcns2-ch9-pathology-q132",
+              "id": "mcns2-ch9-pathology-q131",
               "type": "mcq",
               "lecture": 1,
               "text": "The following tumor is always malignant:",
@@ -2219,7 +2197,7 @@
               "correctIndex": 2
             },
             {
-              "id": "mcns2-ch9-pathology-q133",
+              "id": "mcns2-ch9-pathology-q132",
               "type": "mcq",
               "lecture": 1,
               "text": "Astrocytoma is not:",
@@ -2234,7 +2212,7 @@
               "correctIndex": 2
             },
             {
-              "id": "mcns2-ch9-pathology-q134",
+              "id": "mcns2-ch9-pathology-q133",
               "type": "essay",
               "lecture": 1,
               "text": "What are neurodegenerative diseases?",
@@ -2243,7 +2221,7 @@
               "modelAnswer": "• Disorders characterized by the cellular degeneration of subsets of neurons that are typically related by function, rather than physical location in the brain."
             },
             {
-              "id": "mcns2-ch9-pathology-q135",
+              "id": "mcns2-ch9-pathology-q134",
               "type": "essay",
               "lecture": 1,
               "text": "How are neurodegenerative diseases classified?",
@@ -2252,7 +2230,7 @@
               "modelAnswer": "• They can be classified based on:\n◦ Clinical presentation\n◦ Type of protein\n◦ Pathological processes\n◦ Genetic abnormalities."
             },
             {
-              "id": "mcns2-ch9-pathology-q136",
+              "id": "mcns2-ch9-pathology-q135",
               "type": "essay",
               "lecture": 1,
               "text": "What is dementia?",
@@ -2261,7 +2239,7 @@
               "modelAnswer": "• The development of memory impairment and other cognitive deficits severe enough to decrease the affected person’s capacity to function at the previous level despite a normal level of consciousness."
             },
             {
-              "id": "mcns2-ch9-pathology-q137",
+              "id": "mcns2-ch9-pathology-q136",
               "type": "essay",
               "lecture": 1,
               "text": "What is the most common cause of dementia in the elderly population?",
@@ -2270,7 +2248,7 @@
               "modelAnswer": "• Alzheimer’s Disease (AD)"
             },
             {
-              "id": "mcns2-ch9-pathology-q138",
+              "id": "mcns2-ch9-pathology-q137",
               "type": "essay",
               "lecture": 1,
               "text": "What is the crucial event in the pathogenesis of Alzheimer’s Disease (AD)?",
@@ -2279,7 +2257,7 @@
               "modelAnswer": "• The accumulation of Beta Amyloid Peptide (Aß) in the brain over time."
             },
             {
-              "id": "mcns2-ch9-pathology-q139",
+              "id": "mcns2-ch9-pathology-q138",
               "type": "essay",
               "lecture": 1,
               "text": "What is the role of Amyloid Precursor Protein (APP) in Alzheimer’s Disease (AD)?",
@@ -2288,7 +2266,7 @@
               "modelAnswer": "• APP is sequentially cleaved by enzymes to generate Aß.\n• Mutations in APP or in enzymes responsible for its degradation can lead to familial AD."
             },
             {
-              "id": "mcns2-ch9-pathology-q140",
+              "id": "mcns2-ch9-pathology-q139",
               "type": "essay",
               "lecture": 1,
               "text": "What is the protein responsible for the creation of Aß in Alzheimer’s Disease?",
@@ -2297,7 +2275,7 @@
               "modelAnswer": "• Amyloid Precursor Protein (APP)"
             },
             {
-              "id": "mcns2-ch9-pathology-q141",
+              "id": "mcns2-ch9-pathology-q140",
               "type": "essay",
               "lecture": 1,
               "text": "What is the major genetic risk factor for Alzheimer’s Disease?",
@@ -2306,7 +2284,7 @@
               "modelAnswer": "• Apolipoprotein E variant e4 (ApoE4)"
             },
             {
-              "id": "mcns2-ch9-pathology-q142",
+              "id": "mcns2-ch9-pathology-q141",
               "type": "essay",
               "lecture": 1,
               "text": "What are the microscopic features of Alzheimer’s Disease?",
@@ -2315,7 +2293,7 @@
               "modelAnswer": "• Neuronal loss & Gliosis\n• Extracellular neuritic plaques\n• Intracellular Neurofibrillary tangles\n• Cerebral amyloid angiopathy"
             },
             {
-              "id": "mcns2-ch9-pathology-q143",
+              "id": "mcns2-ch9-pathology-q142",
               "type": "essay",
               "lecture": 1,
               "text": "What is the common coexisting neuropathology seen with Alzheimer’s Disease?",
@@ -2324,7 +2302,7 @@
               "modelAnswer": "• Cerebral Amyloid Angiopathy"
             },
             {
-              "id": "mcns2-ch9-pathology-q144",
+              "id": "mcns2-ch9-pathology-q143",
               "type": "essay",
               "lecture": 1,
               "text": "What is the clinical feature that can assist in distinguishing Frontotemporal lobe degeneration from Alzheimer’s Disease?",
@@ -2333,7 +2311,7 @@
               "modelAnswer": "• Temporal deterioration of language and frontal lobes degeneration and atrophy"
             },
             {
-              "id": "mcns2-ch9-pathology-q145",
+              "id": "mcns2-ch9-pathology-q144",
               "type": "essay",
               "lecture": 1,
               "text": "What are the causes of Parkinsonism?",
@@ -2342,7 +2320,7 @@
               "modelAnswer": "• Parkinson’s disease, Viral encephalitis, Vascular (post-stroke), Environmental Toxin, Drug-Induced"
             },
             {
-              "id": "mcns2-ch9-pathology-q146",
+              "id": "mcns2-ch9-pathology-q145",
               "type": "essay",
               "lecture": 1,
               "text": "What gene mutations cause autosomal dominant Parkinson’s Disease?",
@@ -2351,7 +2329,7 @@
               "modelAnswer": "• Point mutations and duplications of the gene encoding α-synuclein"
             },
             {
-              "id": "mcns2-ch9-pathology-q147",
+              "id": "mcns2-ch9-pathology-q146",
               "type": "essay",
               "lecture": 1,
               "text": "What are the clinical features of Frontotemporal lobe degeneration (FTLD)?",
@@ -2360,7 +2338,7 @@
               "modelAnswer": "• Temporal deterioration of language and frontal lobe degeneration and atrophy.\n• These symptoms precede memory disturbances."
             },
             {
-              "id": "mcns2-ch9-pathology-q148",
+              "id": "mcns2-ch9-pathology-q147",
               "type": "essay",
               "lecture": 1,
               "text": "Which type of transmission (inheritance) is common in FTLD?",
@@ -2369,7 +2347,7 @@
               "modelAnswer": "• Up to 40% of FTLD cases show autosomal dominant transmission of the disease."
             },
             {
-              "id": "mcns2-ch9-pathology-q149",
+              "id": "mcns2-ch9-pathology-q148",
               "type": "essay",
               "lecture": 1,
               "text": "What genes are associated with FTLD?",
@@ -2378,7 +2356,7 @@
               "modelAnswer": "• FTLD is associated with mutations in genes encoding for microtubule-associated protein tau."
             },
             {
-              "id": "mcns2-ch9-pathology-q150",
+              "id": "mcns2-ch9-pathology-q149",
               "type": "essay",
               "lecture": 1,
               "text": "What are the clinical features of Huntington Chorea?",
@@ -2387,7 +2365,7 @@
               "modelAnswer": "• Movement disorder progression\n• An increased risk of suicide\n• Early cognitive symptoms that may progress to severe dementia."
             },
             {
-              "id": "mcns2-ch9-pathology-q151",
+              "id": "mcns2-ch9-pathology-q150",
               "type": "essay",
               "lecture": 1,
               "text": "Is Huntington Chorea an autosomal dominant disease?",
@@ -2396,7 +2374,7 @@
               "modelAnswer": "• Yes, Huntington Chorea is an autosomal dominant disease."
             },
             {
-              "id": "mcns2-ch9-pathology-q152",
+              "id": "mcns2-ch9-pathology-q151",
               "type": "essay",
               "lecture": 1,
               "text": "What causes Parkinson’s Disease?",
@@ -2405,7 +2383,7 @@
               "modelAnswer": "• Parkinson’s disease itself (85%),\n• Viral encephalitis\n• Vascular factors (post-stroke)\n• Environmental toxins\n• Drug-induced factors (e.g., antipsychotic drugs)."
             },
             {
-              "id": "mcns2-ch9-pathology-q153",
+              "id": "mcns2-ch9-pathology-q152",
               "type": "essay",
               "lecture": 1,
               "text": "Are there different forms of Parkinson’s Disease? And what is it?",
@@ -2414,7 +2392,7 @@
               "modelAnswer": "• Yes\n• besides the sporadic form, there are also autosomal dominant and recessive forms of Parkinson’s Disease."
             },
             {
-              "id": "mcns2-ch9-pathology-q154",
+              "id": "mcns2-ch9-pathology-q153",
               "type": "essay",
               "lecture": 1,
               "text": "What is Multiple Sclerosis?",
@@ -2423,7 +2401,7 @@
               "modelAnswer": "• An autoimmune demyelinating disorder characterized by distinct episodes of neurologic deficits."
             },
             {
-              "id": "mcns2-ch9-pathology-q155",
+              "id": "mcns2-ch9-pathology-q154",
               "type": "truefalse",
               "lecture": 1,
               "text": "True or False: Multiple Sclerosis is more common in men than women.",
@@ -2436,7 +2414,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch9-pathology-q156",
+              "id": "mcns2-ch9-pathology-q155",
               "type": "essay",
               "lecture": 1,
               "text": "What is the main pathology of Multiple Sclerosis?",
@@ -2445,7 +2423,7 @@
               "modelAnswer": "• Autoimmune disease caused by a loss of tolerance to myelin antigens."
             },
             {
-              "id": "mcns2-ch9-pathology-q157",
+              "id": "mcns2-ch9-pathology-q156",
               "type": "essay",
               "lecture": 1,
               "text": "Which cells are involved in the pathogenesis of Multiple Sclerosis?",
@@ -2454,7 +2432,7 @@
               "modelAnswer": "• CD4+ T cells\n• CD8+ T cells\n• B cells."
             },
             {
-              "id": "mcns2-ch9-pathology-q158",
+              "id": "mcns2-ch9-pathology-q157",
               "type": "essay",
               "lecture": 1,
               "text": "What are the gross characteristics of Multiple Sclerosis lesions?",
@@ -2463,7 +2441,7 @@
               "modelAnswer": "• Multiple, well-circumscribed\n• Gray-tan plaques near the ventricles and in various areas of the CNS."
             },
             {
-              "id": "mcns2-ch9-pathology-q159",
+              "id": "mcns2-ch9-pathology-q158",
               "type": "essay",
               "lecture": 1,
               "text": "What is the microscopic appearance of active Multiple Sclerosis plaques?",
@@ -2472,7 +2450,7 @@
               "modelAnswer": "• Evidence of ongoing myelin breakdown with abundant macrophages containing myelin debris."
             },
             {
-              "id": "mcns2-ch9-pathology-q160",
+              "id": "mcns2-ch9-pathology-q159",
               "type": "essay",
               "lecture": 1,
               "text": "What is the clinical course of Multiple Sclerosis?",
@@ -2481,7 +2459,7 @@
               "modelAnswer": "• Relapsing and remitting episodes of neurologic impairment with gradual accumulation of deficits over time."
             },
             {
-              "id": "mcns2-ch9-pathology-q161",
+              "id": "mcns2-ch9-pathology-q160",
               "type": "essay",
               "lecture": 1,
               "text": "What imaging studies are mandatory for Multiple Sclerosis diagnosis?",
@@ -2490,7 +2468,7 @@
               "modelAnswer": "• MRI brain"
             },
             {
-              "id": "mcns2-ch9-pathology-q162",
+              "id": "mcns2-ch9-pathology-q161",
               "type": "truefalse",
               "lecture": 1,
               "text": "True or False: Oligoclonal bands are usually identified in the CSF of patients with Multiple Sclerosis.",
@@ -2503,7 +2481,7 @@
               "correctIndex": 0
             },
             {
-              "id": "mcns2-ch9-pathology-q163",
+              "id": "mcns2-ch9-pathology-q162",
               "type": "essay",
               "lecture": 1,
               "text": "What are the main symptoms of Multiple Sclerosis?",
@@ -2512,7 +2490,7 @@
               "modelAnswer": "• Fatigue, visual impairment, cognitive impairment, weakness, spasms, pain, and bowel and urinary dysfunction."
             },
             {
-              "id": "mcns2-ch9-pathology-q164",
+              "id": "mcns2-ch9-pathology-q163",
               "type": "essay",
               "lecture": 1,
               "text": "What is the primary lipid of myelin?",
@@ -2521,7 +2499,7 @@
               "modelAnswer": "• The primary lipid of myelin is a glycolipid called ‘’galactocerebroside’’."
             },
             {
-              "id": "mcns2-ch9-pathology-q165",
+              "id": "mcns2-ch9-pathology-q164",
               "type": "essay",
               "lecture": 1,
               "text": "What are demyelinating disorders?",
@@ -2530,7 +2508,7 @@
               "modelAnswer": "• Demyelinating disorders are diseases of the nervous system in which the myelin sheath of neurons is damaged, impairing the conduction of signals in the affected nerves."
             },
             {
-              "id": "mcns2-ch9-pathology-q166",
+              "id": "mcns2-ch9-pathology-q165",
               "type": "essay",
               "lecture": 1,
               "text": "What is Krabbe disease?",
@@ -2539,7 +2517,7 @@
               "modelAnswer": "• Krabbe disease is an autosomal recessive disorder characterized by a deficiency of Galactosyl ceramidase, resulting in the accumulation of unmetabolized lipids, leading to demyelination and severe progressive degeneration of motor skills."
             },
             {
-              "id": "mcns2-ch9-pathology-q167",
+              "id": "mcns2-ch9-pathology-q166",
               "type": "essay",
               "lecture": 1,
               "text": "What are primary diseases of myelin?",
@@ -2548,7 +2526,7 @@
               "modelAnswer": "• Primary diseases of myelin refer to diseases within the CNS where axons are tightly ensheathed by myelin, and myelin is not formed properly or has abnormal turnover kinetics."
             },
             {
-              "id": "mcns2-ch9-pathology-q168",
+              "id": "mcns2-ch9-pathology-q167",
               "type": "essay",
               "lecture": 1,
               "text": "What are demyelinating diseases of the CNS?",
@@ -2557,7 +2535,7 @@
               "modelAnswer": "• Multiple sclerosis (MS)\n• Acute disseminated encephalomyelitis (ADEM)\n• Progressive multifocal leukoencephalopathy (PML)"
             },
             {
-              "id": "mcns2-ch9-pathology-q169",
+              "id": "mcns2-ch9-pathology-q168",
               "type": "essay",
               "lecture": 1,
               "text": "What is the pathogenesis of multiple sclerosis (MS)?",
@@ -2566,7 +2544,7 @@
               "modelAnswer": "• Multiple sclerosis (MS) is an autoimmune disease caused by a loss of tolerance to self-proteins (myelin antigens) due to a combination of environmental and genetic factors."
             },
             {
-              "id": "mcns2-ch9-pathology-q170",
+              "id": "mcns2-ch9-pathology-q169",
               "type": "essay",
               "lecture": 3,
               "text": "What is the clinical syndrome of altered mental status secondary to head injury?",
@@ -2575,7 +2553,7 @@
               "modelAnswer": "• Concussion"
             },
             {
-              "id": "mcns2-ch9-pathology-q171",
+              "id": "mcns2-ch9-pathology-q170",
               "type": "essay",
               "lecture": 3,
               "text": "What is a contusion in traumatic head injury? And what is its types?",
@@ -2584,7 +2562,7 @@
               "modelAnswer": "• Direct parenchymal injury to the brain\n• Coup injury at the point of impact\n• Contrecoup injury opposite the point of impact."
             },
             {
-              "id": "mcns2-ch9-pathology-q172",
+              "id": "mcns2-ch9-pathology-q171",
               "type": "essay",
               "lecture": 3,
               "text": "What is diffuse axonal injury? And what is its common locations?",
@@ -2593,7 +2571,7 @@
               "modelAnswer": "• Injury to white matter with axonal swelling due to acceleration and deceleration\n• Commonly occurring in the corpus callosum, periventricular white matter, and hippocampus."
             },
             {
-              "id": "mcns2-ch9-pathology-q173",
+              "id": "mcns2-ch9-pathology-q172",
               "type": "essay",
               "lecture": 3,
               "text": "Which genetic factors are related to multiple sclerosis?",
@@ -2602,7 +2580,7 @@
               "modelAnswer": "• HLA-DR and genes encoding receptors for the cytokines IL-2 and IL-7"
             },
             {
-              "id": "mcns2-ch9-pathology-q174",
+              "id": "mcns2-ch9-pathology-q173",
               "type": "essay",
               "lecture": 3,
               "text": "What is the disease risk if multiple sclerosis is present in a first-degree relative?",
@@ -2611,7 +2589,7 @@
               "modelAnswer": "• 15-fold higher CNS Trauma"
             },
             {
-              "id": "mcns2-ch9-pathology-q175",
+              "id": "mcns2-ch9-pathology-q174",
               "type": "essay",
               "lecture": 3,
               "text": "What is the location and symptoms of an epidural hematoma?",
@@ -2620,7 +2598,7 @@
               "modelAnswer": "• Between the skull and dura\n• Symptoms include lucid interval before loss of consciousness and possible trans- tentorial herniation."
             },
             {
-              "id": "mcns2-ch9-pathology-q176",
+              "id": "mcns2-ch9-pathology-q175",
               "type": "essay",
               "lecture": 3,
               "text": "What is the location and symptoms of a subdural hematoma?",
@@ -2629,7 +2607,7 @@
               "modelAnswer": "• Between the dura and arachnoid\n• Symptoms include slow venous bleeding with delayed onset of headache and confusion."
             },
             {
-              "id": "mcns2-ch9-pathology-q177",
+              "id": "mcns2-ch9-pathology-q176",
               "type": "essay",
               "lecture": 3,
               "text": "Which vessel is most commonly involved in an epidural hematoma?",
@@ -2638,7 +2616,7 @@
               "modelAnswer": "• Middle meningeal artery"
             },
             {
-              "id": "mcns2-ch9-pathology-q178",
+              "id": "mcns2-ch9-pathology-q177",
               "type": "essay",
               "lecture": 3,
               "text": "What is the condition called when a patient experiences a lucid interval before losing consciousness?",
@@ -2647,7 +2625,7 @@
               "modelAnswer": "• “Talk and die” syndrome"
             },
             {
-              "id": "mcns2-ch9-pathology-q179",
+              "id": "mcns2-ch9-pathology-q178",
               "type": "truefalse",
               "lecture": 3,
               "text": "True or False: A trans-tentorial herniation may occur in an epidural hematoma.",
@@ -2660,7 +2638,7 @@
               "correctIndex": 0
             },
             {
-              "id": "mcns2-ch9-pathology-q180",
+              "id": "mcns2-ch9-pathology-q179",
               "type": "essay",
               "lecture": 3,
               "text": "What is the appearance of an epidural hematoma on a head CT scan?",
@@ -2669,7 +2647,7 @@
               "modelAnswer": "• Biconvex-shaped hemorrhage that does not cross suture lines"
             },
             {
-              "id": "mcns2-ch9-pathology-q181",
+              "id": "mcns2-ch9-pathology-q180",
               "type": "essay",
               "lecture": 4,
               "text": "What is the most common cause of cerebral infarction?",
@@ -2678,7 +2656,7 @@
               "modelAnswer": "• Arterial occlusion of the cerebral arteries by either thrombi or emboli"
             },
             {
-              "id": "mcns2-ch9-pathology-q182",
+              "id": "mcns2-ch9-pathology-q181",
               "type": "essay",
               "lecture": 4,
               "text": "What is the term for small infarcts in deep non-cortical white matter or the brainstem that result from the occlusion of penetrating branches of cerebral arteries?",
@@ -2687,7 +2665,7 @@
               "modelAnswer": "• Lacunar Infarcts"
             },
             {
-              "id": "mcns2-ch9-pathology-q183",
+              "id": "mcns2-ch9-pathology-q182",
               "type": "essay",
               "lecture": 4,
               "text": "What causes lacunar infarcts?",
@@ -2696,7 +2674,7 @@
               "modelAnswer": "• Occlusion of penetrating branches of cerebral arteries"
             },
             {
-              "id": "mcns2-ch9-pathology-q184",
+              "id": "mcns2-ch9-pathology-q183",
               "type": "essay",
               "lecture": 4,
               "text": "What is the most common cause of thrombotic occlusion of the carotid or cerebral arteries?",
@@ -2705,7 +2683,7 @@
               "modelAnswer": "• Atherosclerosis"
             },
             {
-              "id": "mcns2-ch9-pathology-q185",
+              "id": "mcns2-ch9-pathology-q184",
               "type": "essay",
               "lecture": 4,
               "text": "What is the term for fluid-filled cavity demarcated by gliotic scar?",
@@ -2714,7 +2692,7 @@
               "modelAnswer": "• Old cyst surrounded by gliotic scar"
             },
             {
-              "id": "mcns2-ch9-pathology-q186",
+              "id": "mcns2-ch9-pathology-q185",
               "type": "essay",
               "lecture": 4,
               "text": "What is the most common cause of a subdural hematoma?",
@@ -2723,7 +2701,7 @@
               "modelAnswer": "• Tear of bridging veins drain the brain to Dural sinuses"
             },
             {
-              "id": "mcns2-ch9-pathology-q187",
+              "id": "mcns2-ch9-pathology-q186",
               "type": "truefalse",
               "lecture": 4,
               "text": "True or False: Brain atrophy is a risk factor for subdural hematoma.",
@@ -2736,7 +2714,7 @@
               "correctIndex": 0
             },
             {
-              "id": "mcns2-ch9-pathology-q188",
+              "id": "mcns2-ch9-pathology-q187",
               "type": "truefalse",
               "lecture": 4,
               "text": "True or False: A subdural hematoma can cross suture lines.",
@@ -2749,7 +2727,7 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch9-pathology-q189",
+              "id": "mcns2-ch9-pathology-q188",
               "type": "essay",
               "lecture": 4,
               "text": "What causes cerebral infarction in herniation?",
@@ -2758,7 +2736,7 @@
               "modelAnswer": "• Compression of cerebral arteries from outside"
             },
             {
-              "id": "mcns2-ch9-pathology-q190",
+              "id": "mcns2-ch9-pathology-q189",
               "type": "essay",
               "lecture": 4,
               "text": "What is the microscopic change seen in cerebral infarction after years?",
@@ -2767,7 +2745,7 @@
               "modelAnswer": "• Astrogliosis surrounding a cyst"
             },
             {
-              "id": "mcns2-ch9-pathology-q191",
+              "id": "mcns2-ch9-pathology-q190",
               "type": "essay",
               "lecture": 4,
               "text": "What are the types of aneurysms?",
@@ -2776,7 +2754,7 @@
               "modelAnswer": "• Congenital (Berry Aneurysm)\n• Mycotic y Atherosclerotic\n• Charcot-Bouchard Microaneurysms"
             },
             {
-              "id": "mcns2-ch9-pathology-q192",
+              "id": "mcns2-ch9-pathology-q191",
               "type": "essay",
               "lecture": 4,
               "text": "What is the most common site for Congenital (Berry) aneurysms?",
@@ -2785,7 +2763,7 @@
               "modelAnswer": "• The blood vessels around the circle of Willis"
             },
             {
-              "id": "mcns2-ch9-pathology-q193",
+              "id": "mcns2-ch9-pathology-q192",
               "type": "essay",
               "lecture": 4,
               "text": "What is the etiology of Congenital (Berry) aneurysms?",
@@ -2794,7 +2772,7 @@
               "modelAnswer": "• Congenital defects of the media at the arterial bifurcations\n• Abnormality in specific collagen subsets\n• Focal destruction of the internal elastic membrane resulting from hemodynamic alterations"
             },
             {
-              "id": "mcns2-ch9-pathology-q194",
+              "id": "mcns2-ch9-pathology-q193",
               "type": "essay",
               "lecture": 4,
               "text": "What is the shape of an Atherosclerotic aneurysm?",
@@ -2803,7 +2781,7 @@
               "modelAnswer": "• Fusiform"
             },
             {
-              "id": "mcns2-ch9-pathology-q195",
+              "id": "mcns2-ch9-pathology-q194",
               "type": "essay",
               "lecture": 4,
               "text": "What causes Charcot-Bouchard Microaneurysms?",
@@ -2812,7 +2790,7 @@
               "modelAnswer": "• Hypertension causes hyaline arteriolar sclerosis of the deep penetrating arteries"
             },
             {
-              "id": "mcns2-ch9-pathology-q196",
+              "id": "mcns2-ch9-pathology-q195",
               "type": "essay",
               "lecture": 4,
               "text": "What are the effects of cerebral aneurysms?",
@@ -2821,7 +2799,7 @@
               "modelAnswer": "• Increased intracranial tension\n• Rupture with subsequent hemorrhage\n• Hydrocephalus\n• Thrombosis and calcification"
             },
             {
-              "id": "mcns2-ch9-pathology-q197",
+              "id": "mcns2-ch9-pathology-q196",
               "type": "essay",
               "lecture": 4,
               "text": "What is the most common site for arteriovenous malformation (AVM)?",
@@ -2830,7 +2808,7 @@
               "modelAnswer": "• Middle cerebral artery distribution"
             },
             {
-              "id": "mcns2-ch9-pathology-q198",
+              "id": "mcns2-ch9-pathology-q197",
               "type": "essay",
               "lecture": 4,
               "text": "What is the most common type of cavernous malformation?",
@@ -2839,7 +2817,7 @@
               "modelAnswer": "• Cavernous angioma"
             },
             {
-              "id": "mcns2-ch9-pathology-q199",
+              "id": "mcns2-ch9-pathology-q198",
               "type": "essay",
               "lecture": 4,
               "text": "What is the type of vascular malformation characterized by capillary-sized vessels separated by normal neural parenchyma?",
@@ -2848,7 +2826,7 @@
               "modelAnswer": "• Capillary telangiectasia"
             },
             {
-              "id": "mcns2-ch9-pathology-q200",
+              "id": "mcns2-ch9-pathology-q199",
               "type": "essay",
               "lecture": 4,
               "text": "What is cerebral edema?",
@@ -2857,7 +2835,7 @@
               "modelAnswer": "• The accumulation of excess fluid within the brain parenchyma"
             },
             {
-              "id": "mcns2-ch9-pathology-q201",
+              "id": "mcns2-ch9-pathology-q200",
               "type": "essay",
               "lecture": 4,
               "text": "What are the two underlying mechanisms for the development of cerebral edema?",
@@ -2866,7 +2844,7 @@
               "modelAnswer": "• Vasogenic edema\n• Cytotoxic edema"
             },
             {
-              "id": "mcns2-ch9-pathology-q202",
+              "id": "mcns2-ch9-pathology-q201",
               "type": "essay",
               "lecture": 4,
               "text": "What is the cause of vasogenic edema?",
@@ -2875,7 +2853,7 @@
               "modelAnswer": "• Disruption of the normal blood-brain barrier"
             },
             {
-              "id": "mcns2-ch9-pathology-q203",
+              "id": "mcns2-ch9-pathology-q202",
               "type": "essay",
               "lecture": 4,
               "text": "What is the cause of cytotoxic edema?",
@@ -2884,7 +2862,7 @@
               "modelAnswer": "• Increase in intracellular fluid due to neuronal and glial cell membrane injury"
             },
             {
-              "id": "mcns2-ch9-pathology-q204",
+              "id": "mcns2-ch9-pathology-q203",
               "type": "truefalse",
               "lecture": 4,
               "text": "True or False: Cerebral edema can be localized or generalized.",
@@ -2897,7 +2875,7 @@
               "correctIndex": 0
             },
             {
-              "id": "mcns2-ch9-pathology-q205",
+              "id": "mcns2-ch9-pathology-q204",
               "type": "essay",
               "lecture": 4,
               "text": "What are the gross morphological features of an edematous brain?",
@@ -2906,7 +2884,7 @@
               "modelAnswer": "• Softer than normal - Appears to “overfill” the cranial vault\n• Flattened gyri\n• Narrowed sulci\n• Compressed ventricular cavities"
             },
             {
-              "id": "mcns2-ch9-pathology-q206",
+              "id": "mcns2-ch9-pathology-q205",
               "type": "essay",
               "lecture": 4,
               "text": "What are the two general mechanisms by which the brain may be deprived of oxygen?",
@@ -2915,7 +2893,7 @@
               "modelAnswer": "• Functional hypoxia\n• Ischemia"
             },
             {
-              "id": "mcns2-ch9-pathology-q207",
+              "id": "mcns2-ch9-pathology-q206",
               "type": "essay",
               "lecture": 4,
               "text": "What is a transient ischemic attack (TIA)?",
@@ -2924,7 +2902,7 @@
               "modelAnswer": "• Ischemia due to tissue hypoperfusion, characterized by symptoms lasting less than 24 hours"
             },
             {
-              "id": "mcns2-ch9-pathology-q208",
+              "id": "mcns2-ch9-pathology-q207",
               "type": "essay",
               "lecture": 4,
               "text": "What is the clinical term for acute- onset neurologic deficits resulting from hemorrhagic or obstructive vascular lesions?",
@@ -2933,7 +2911,7 @@
               "modelAnswer": "• Stroke"
             },
             {
-              "id": "mcns2-ch9-pathology-q209",
+              "id": "mcns2-ch9-pathology-q208",
               "type": "essay",
               "lecture": 4,
               "text": "What is multi-infarct dementia?",
@@ -2942,7 +2920,7 @@
               "modelAnswer": "• A slow, stepwise decrease in mental function caused by cerebral atherosclerosis"
             },
             {
-              "id": "mcns2-ch9-pathology-q210",
+              "id": "mcns2-ch9-pathology-q209",
               "type": "essay",
               "lecture": 4,
               "text": "What causes global cerebral ischemia?",
@@ -2951,7 +2929,7 @@
               "modelAnswer": "• Severe systemic hypotension"
             },
             {
-              "id": "mcns2-ch9-pathology-q211",
+              "id": "mcns2-ch9-pathology-q210",
               "type": "truefalse",
               "lecture": 4,
               "text": "True or False: Neurons are more susceptible to hypoxic injury than glial cells.",
@@ -2964,7 +2942,7 @@
               "correctIndex": 0
             },
             {
-              "id": "mcns2-ch9-pathology-q212",
+              "id": "mcns2-ch9-pathology-q211",
               "type": "essay",
               "lecture": 4,
               "text": "What are the gross morphological changes seen in the brain in the setting of global ischemia?",
@@ -2973,7 +2951,7 @@
               "modelAnswer": "• Swollen brain\n• Wide gyri\n• Narrowed sulci\n• Poor demarcation between gray & white matter\n• Pseudo laminar necrosis\n• Border zone (watershed) infarcts"
             },
             {
-              "id": "mcns2-ch9-pathology-q213",
+              "id": "mcns2-ch9-pathology-q212",
               "type": "essay",
               "lecture": 4,
               "text": "What are border zone infarcts?",
@@ -2982,9 +2960,9 @@
               "modelAnswer": "• Wedge-shaped areas of infarction that occur in regions of the brain that lie at the most distal portions of arterial territories in global cerebral ischemia"
             },
             {
-              "id": "mcns2-ch9-pathology-q214",
+              "id": "mcns2-ch9-pathology-q213",
               "type": "truefalse",
-              "lecture": 4,
+              "lecture": 5,
               "text": "True or False: Focal cerebral ischemia is caused by cerebral arterial occlusion.",
               "explanation": "This question concerns true or False: Focal cerebral ischemia is caused by cerebral arterial occlusion.. Key point: True.",
               "keyConcept": "Focal cerebral ischemia is caused by cerebral arterial occlusion",
@@ -2995,18 +2973,18 @@
               "correctIndex": 0
             },
             {
-              "id": "mcns2-ch9-pathology-q215",
+              "id": "mcns2-ch9-pathology-q214",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 5,
               "text": "What are lacunar infarcts?",
               "explanation": "This question asks: What are lacunar infarcts? Key point: Small infarcts in deep non cortical white matter or the brainstem that result from the occlusion of penetrating branches of cerebral arteries.",
               "keyConcept": "Are lacunar infarcts",
               "modelAnswer": "• Small infarcts in deep non-cortical white matter or the brainstem that result from the occlusion of penetrating branches of cerebral arteries"
             },
             {
-              "id": "mcns2-ch9-pathology-q216",
+              "id": "mcns2-ch9-pathology-q215",
               "type": "truefalse",
-              "lecture": 4,
+              "lecture": 5,
               "text": "True or False: Venous occlusion is a common cause of cerebral infarction.",
               "explanation": "This question concerns true or False: Venous occlusion is a common cause of cerebral infarction.. Key point: False.",
               "keyConcept": "Venous occlusion is a common cause of cerebral infarction",
@@ -3017,72 +2995,72 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch9-pathology-q217",
+              "id": "mcns2-ch9-pathology-q216",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "Which tumors are classified as primary tumors of the CNS?",
               "explanation": "This question asks: Which tumors are classified as primary tumors of the CNS? Key point: Gliomas Neuroepithelial tumors Meningiomas Tumors of the pineal region.",
               "keyConcept": "Tumors are classified as primary tumors of the CNS",
               "modelAnswer": "• Gliomas\n• Neuroepithelial tumors\n• Meningiomas\n• Tumors of the pineal region"
             },
             {
-              "id": "mcns2-ch9-pathology-q218",
+              "id": "mcns2-ch9-pathology-q217",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "Where do approximately 70% of brain tumors occur in adults?",
               "explanation": "This question asks: Where do approximately 70% of brain tumors occur in adults? Key point: Supratentorially (within the cerebral hemispheres or coverings).",
               "keyConcept": "Do approximately 70% of brain tumors occur in adults",
               "modelAnswer": "• Supratentorially (within the cerebral hemispheres or coverings)"
             },
             {
-              "id": "mcns2-ch9-pathology-q219",
+              "id": "mcns2-ch9-pathology-q218",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "Where do approximately 70% of brain tumors occur in children?",
               "explanation": "This question asks: Where do approximately 70% of brain tumors occur in children? Key point: Infratentorially (within the cerebellum or brainstem).",
               "keyConcept": "Do approximately 70% of brain tumors occur in children",
               "modelAnswer": "• Infratentorially (within the cerebellum or brainstem)"
             },
             {
-              "id": "mcns2-ch9-pathology-q220",
+              "id": "mcns2-ch9-pathology-q219",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "What are the three most common neuroepithelial brain tumors in children?",
               "explanation": "This question asks: What are the three most common neuroepithelial brain tumors in children? Key point: Pilocytic astrocytoma Medulloblastoma Ependymoma.",
               "keyConcept": "Are the three most common neuroepithelial brain tumors in children",
               "modelAnswer": "• Pilocytic astrocytoma\n• Medulloblastoma\n• Ependymoma"
             },
             {
-              "id": "mcns2-ch9-pathology-q221",
+              "id": "mcns2-ch9-pathology-q220",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "What are the three most common types of spinal cord tumors in decreasing order of frequency?",
               "explanation": "This question asks: What are the three most common types of spinal cord tumors in decreasing order of frequency? Key point: Schwannomas Meningiomas Gliomas (ependymoma, astrocytoma).",
               "keyConcept": "Are the three most common types of spinal cord tumors in decreasing order of frequency",
               "modelAnswer": "• Schwannomas\n• Meningiomas\n• Gliomas (ependymoma, astrocytoma)"
             },
             {
-              "id": "mcns2-ch9-pathology-q222",
+              "id": "mcns2-ch9-pathology-q221",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "What is the key characteristic of diffuse glioma?",
               "explanation": "This question asks: What is the key characteristic of diffuse glioma? Key point: Single cell infiltration of normal brain tissue by tumor cells.",
               "keyConcept": "Is the key characteristic of diffuse glioma",
               "modelAnswer": "• Single-cell infiltration of normal brain tissue by tumor cells"
             },
             {
-              "id": "mcns2-ch9-pathology-q223",
+              "id": "mcns2-ch9-pathology-q222",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "What is a common acquired mutation associated with diffuse gliomas?",
               "explanation": "This question asks: What is a common acquired mutation associated with diffuse gliomas? Key point: Isocitrate dehydrogenase (IDH1 and IDH2).",
               "keyConcept": "Is a common acquired mutation associated with diffuse gliomas",
               "modelAnswer": "• Isocitrate dehydrogenase (IDH1 and IDH2)"
             },
             {
-              "id": "mcns2-ch9-pathology-q224",
+              "id": "mcns2-ch9-pathology-q223",
               "type": "truefalse",
-              "lecture": 4,
+              "lecture": 6,
               "text": "True or False: Diffuse glioma is resectable.",
               "explanation": "This question concerns true or False: Diffuse glioma is resectable.. Key point: False.",
               "keyConcept": "Diffuse glioma is resectable",
@@ -3093,72 +3071,72 @@
               "correctIndex": 1
             },
             {
-              "id": "mcns2-ch9-pathology-q225",
+              "id": "mcns2-ch9-pathology-q224",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "How diffuse glioma is diagnosed?",
               "explanation": "This question asks: How diffuse glioma is diagnosed? Key point: Immunostaining for the mutated form of IDH1 is positive in diffuse glioma.",
               "keyConcept": "Diffuse glioma is diagnosed",
               "modelAnswer": "• Immunostaining for the mutated form of IDH1 is positive in diffuse glioma."
             },
             {
-              "id": "mcns2-ch9-pathology-q226",
+              "id": "mcns2-ch9-pathology-q225",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "Where are diffuse astrocytic tumors usually found?",
               "explanation": "This question asks: Where are diffuse astrocytic tumors usually found? Key point: Cerebral hemispheres.",
               "keyConcept": "Are diffuse astrocytic tumors usually found",
               "modelAnswer": "• Cerebral hemispheres"
             },
             {
-              "id": "mcns2-ch9-pathology-q227",
+              "id": "mcns2-ch9-pathology-q226",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "What are the three grades of diffuse astrocytic tumors?",
               "explanation": "This question asks: What are the three grades of diffuse astrocytic tumors? Key point: Diffuse Astrocytoma, WHO Grade II Anaplastic Astrocytoma, WHO Grade III Glioblastoma IV.",
               "keyConcept": "Are the three grades of diffuse astrocytic tumors",
               "modelAnswer": "• Diffuse Astrocytoma, WHO Grade II\n• Anaplastic Astrocytoma, WHO Grade III\n• Glioblastoma IV"
             },
             {
-              "id": "mcns2-ch9-pathology-q228",
+              "id": "mcns2-ch9-pathology-q227",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "What are the common clinical manifestations of diffuse astrocytic tumors?",
               "explanation": "This question asks: What are the common clinical manifestations of diffuse astrocytic tumors? Key point: Seizures, headaches, and focal neurologic deficits.",
               "keyConcept": "Are the common clinical manifestations of diffuse astrocytic tumors",
               "modelAnswer": "• Seizures, headaches, and focal neurologic deficits"
             },
             {
-              "id": "mcns2-ch9-pathology-q229",
+              "id": "mcns2-ch9-pathology-q228",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "What is the prognosis of diffuse astrocytic tumors?",
               "explanation": "This question asks: What is the prognosis of diffuse astrocytic tumors? Key point: Can be static for several years But can progress to rapid tumor growth with progression to anaplastic astrocytoma and glioblastoma and its prognosis is poor.",
               "keyConcept": "Is the prognosis of diffuse astrocytic tumors",
               "modelAnswer": "• Can be static for several years\n• But can progress to rapid tumor growth with progression to anaplastic astrocytoma and glioblastoma and its prognosis is poor"
             },
             {
-              "id": "mcns2-ch9-pathology-q230",
+              "id": "mcns2-ch9-pathology-q229",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "What is the gross appearance of diffuse astrocytic tumors?",
               "explanation": "This question asks: What is the gross appearance of diffuse astrocytic tumors? Key point: Poorly defined, gray, infiltrative tumors Firm or soft and gelatinous; cystic degeneration may be seen.",
               "keyConcept": "Is the gross appearance of diffuse astrocytic tumors",
               "modelAnswer": "• Poorly defined, gray, infiltrative tumors\n• Firm or soft and gelatinous; cystic degeneration may be seen.\n• In glioblastoma, variation in the gross appearance of the tumor. some areas are firm and white, others are soft and yellow (the result of tissue necrosis)"
             },
             {
-              "id": "mcns2-ch9-pathology-q231",
+              "id": "mcns2-ch9-pathology-q230",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "What are the key microscopic features of diffuse astrocytic tumors?",
               "explanation": "This question asks: What are the key microscopic features of diffuse astrocytic tumors? Key point: Increase in the number of glial cell nuclei Nuclear pleomorphism Glial fibrillary acidic protein (GFAP) positive astrocytic cell processes.",
               "keyConcept": "Are the key microscopic features of diffuse astrocytic tumors",
               "modelAnswer": "• Increase in the number of glial cell nuclei\n• Nuclear pleomorphism\n• Glial fibrillary acidic protein (GFAP)-positive astrocytic cell processes"
             },
             {
-              "id": "mcns2-ch9-pathology-q232",
+              "id": "mcns2-ch9-pathology-q231",
               "type": "truefalse",
-              "lecture": 4,
+              "lecture": 6,
               "text": "True or False: Anaplastic astrocytoma have regions that are more densely cellular and have greater nuclear pleomorphism.",
               "explanation": "This question concerns true or False: Anaplastic astrocytoma have regions that are more densely cellular and have greater nuclear pleomorphism.. Key point: True.",
               "keyConcept": "Anaplastic astrocytoma have regions that are more densely cellular and have greater nuclear pleomorphism",
@@ -3169,36 +3147,36 @@
               "correctIndex": 0
             },
             {
-              "id": "mcns2-ch9-pathology-q233",
+              "id": "mcns2-ch9-pathology-q232",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "What are the histologic criteria for differentiating grades of diffuse astrocytoma?",
               "explanation": "This question asks: What are the histologic criteria for differentiating grades of diffuse astrocytoma? Key point: Diffuse astrocytoma: No appreciable mitotic activity Anaplastic astrocytoma: Mitoses present Glioblastoma: Necrosis and/or microvascular proliferation.",
               "keyConcept": "Are the histologic criteria for differentiating grades of diffuse astrocytoma",
               "modelAnswer": "• Diffuse astrocytoma: No appreciable mitotic activity\n• Anaplastic astrocytoma: Mitoses present\n• Glioblastoma: Necrosis and/or microvascular proliferation"
             },
             {
-              "id": "mcns2-ch9-pathology-q234",
+              "id": "mcns2-ch9-pathology-q233",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "What are the common clinical manifestations of oligodendrogliomas?",
               "explanation": "This question asks: What are the common clinical manifestations of oligodendrogliomas? Key point: Seizures.",
               "keyConcept": "Are the common clinical manifestations of oligodendrogliomas",
               "modelAnswer": "• Seizures"
             },
             {
-              "id": "mcns2-ch9-pathology-q235",
+              "id": "mcns2-ch9-pathology-q234",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "Where are oligodendrogliomas mostly located?",
               "explanation": "This question asks: Where are oligodendrogliomas mostly located? Key point: Cerebral hemispheres, mainly in the frontal or temporal lobes.",
               "keyConcept": "Are oligodendrogliomas mostly located",
               "modelAnswer": "• Cerebral hemispheres, mainly in the frontal or temporal lobes"
             },
             {
-              "id": "mcns2-ch9-pathology-q236",
+              "id": "mcns2-ch9-pathology-q235",
               "type": "truefalse",
-              "lecture": 4,
+              "lecture": 6,
               "text": "True or False: Oligodendrogliomas have a better prognosis than that of diffuse astrocytic tumors of similar grade.",
               "explanation": "This question concerns true or False: Oligodendrogliomas have a better prognosis than that of diffuse astrocytic tumors of similar grade.. Key point: True.",
               "keyConcept": "Oligodendrogliomas have a better prognosis than that of diffuse astrocytic tumors of similar grade",
@@ -3209,378 +3187,378 @@
               "correctIndex": 0
             },
             {
-              "id": "mcns2-ch9-pathology-q237",
+              "id": "mcns2-ch9-pathology-q236",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "What is the key genetic finding in oligodendrogliomas?",
               "explanation": "This question asks: What is the key genetic finding in oligodendrogliomas? Key point: Codeletion of chromosomes 1p and 19q.",
               "keyConcept": "Is the key genetic finding in oligodendrogliomas",
               "modelAnswer": "• Codeletion of chromosomes 1p and 19q"
             },
             {
-              "id": "mcns2-ch9-pathology-q238",
+              "id": "mcns2-ch9-pathology-q237",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "What are the key microscopic features of oligodendrogliomas WHO grade II?",
               "explanation": "This question asks: What are the key microscopic features of oligodendrogliomas WHO grade II? Key point: Sheets of regular cells with rounded nuclei containing finely granular rounded chromatin surrounded by a clear halo of cytoplasm and anastomosing capillaries.",
               "keyConcept": "Are the key microscopic features of oligodendrogliomas WHO grade II",
               "modelAnswer": "• Sheets of regular cells with rounded nuclei containing finely granular rounded chromatin surrounded by a clear halo of cytoplasm and anastomosing capillaries"
             },
             {
-              "id": "mcns2-ch9-pathology-q239",
+              "id": "mcns2-ch9-pathology-q238",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "What are the key microscopic features of oligodendrogliomas WHO grade III?",
               "explanation": "This question asks: What are the key microscopic features of oligodendrogliomas WHO grade III? Key point: More aggressive with higher cell density, nuclear anaplasia, and prominent mitotic activity.",
               "keyConcept": "Are the key microscopic features of oligodendrogliomas WHO grade III",
               "modelAnswer": "• More aggressive with higher cell density, nuclear anaplasia, and prominent mitotic activity"
             },
             {
-              "id": "mcns2-ch9-pathology-q240",
+              "id": "mcns2-ch9-pathology-q239",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "Where are pilocytic astrocytomas most commonly located?",
               "explanation": "This question asks: Where are pilocytic astrocytomas most commonly located? Key point: Cerebellum They can also involve the third ventricle The optic pathways Spinal cord Occasionally the cerebral hemispheres.",
               "keyConcept": "Are pilocytic astrocytomas most commonly located",
               "modelAnswer": "• Cerebellum\n• They can also involve the third ventricle\n• The optic pathways\n• Spinal cord\n• Occasionally the cerebral hemispheres"
             },
             {
-              "id": "mcns2-ch9-pathology-q241",
+              "id": "mcns2-ch9-pathology-q240",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "What genetic alterations are associated with pilocytic astrocytomas?",
               "explanation": "This question asks: What genetic alterations are associated with pilocytic astrocytomas? Key point: Activation of the mitogen activated protein kinase (MAPK) pathway, including activating alterations of BRAF and inactivation of neurofibromatosis type 1 (NF1).",
               "keyConcept": "Genetic alterations are associated with pilocytic astrocytomas",
               "modelAnswer": "• Activation of the mitogen-activated protein kinase (MAPK) pathway, including activating alterations of BRAF and inactivation of neurofibromatosis type 1 (NF1)"
             },
             {
-              "id": "mcns2-ch9-pathology-q242",
+              "id": "mcns2-ch9-pathology-q241",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "What is the gross appearance of pilocytic astrocytomas?",
               "explanation": "This question asks: What is the gross appearance of pilocytic astrocytomas? Key point: Often cystic, with a mural nodule in the wall of the cyst.",
               "keyConcept": "Is the gross appearance of pilocytic astrocytomas",
               "modelAnswer": "• Often cystic, with a mural nodule in the wall of the cyst"
             },
             {
-              "id": "mcns2-ch9-pathology-q243",
+              "id": "mcns2-ch9-pathology-q242",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "What are the key microscopic features of pilocytic astrocytomas?",
               "explanation": "This question asks: What are the key microscopic features of pilocytic astrocytomas? Key point: Low to moderate cellularity often with a biphasic pattern Bipolar cells with Rosenthal fibers Multipolar cells with microcysts Eosinophilic granular bodies in loose regio.",
               "keyConcept": "Are the key microscopic features of pilocytic astrocytomas",
               "modelAnswer": "• Low to moderate cellularity often with a biphasic pattern\n• Bipolar cells with Rosenthal fibers\n• Multipolar cells with microcysts\n• Eosinophilic granular bodies in loose regions"
             },
             {
-              "id": "mcns2-ch9-pathology-q244",
+              "id": "mcns2-ch9-pathology-q243",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "What is plastic ependymomas?",
               "explanation": "This question asks: What is plastic ependymomas? Key point: Ependymoma In the foramina of Luschka and Magendie to surround cranial nerves and vessels.",
               "keyConcept": "Is plastic ependymomas",
               "modelAnswer": "• Ependymoma In the foramina of Luschka and Magendie to surround cranial nerves and vessels"
             },
             {
-              "id": "mcns2-ch9-pathology-q245",
+              "id": "mcns2-ch9-pathology-q244",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "Where do Ependymomas typically occur in children?",
               "explanation": "This question asks: Where do Ependymomas typically occur in children? Key point: They typically occur near the fourth ventricle.",
               "keyConcept": "Do Ependymomas typically occur in children",
               "modelAnswer": "• They typically occur near the fourth ventricle."
             },
             {
-              "id": "mcns2-ch9-pathology-q246",
+              "id": "mcns2-ch9-pathology-q245",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "What is the most common location for Ependymomas in adults?",
               "explanation": "This question asks: What is the most common location for Ependymomas in adults? Key point: The spinal cord is the most common location for Ependymomas in adults.",
               "keyConcept": "Is the most common location for Ependymomas in adults",
               "modelAnswer": "• The spinal cord is the most common location for Ependymomas in adults."
             },
             {
-              "id": "mcns2-ch9-pathology-q247",
+              "id": "mcns2-ch9-pathology-q246",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "Describe the gross pathology of Ependymomas.",
               "explanation": "This question concerns describe the gross pathology of Ependymomas.. Key point: Ependymomas are well circumscribed tumors that are soft and spongy Occasionally with gritty calcium deposits.",
               "keyConcept": "The gross pathology of Ependymomas",
               "modelAnswer": "• Ependymomas are well-circumscribed tumors that are soft and spongy\n• Occasionally with gritty calcium deposits."
             },
             {
-              "id": "mcns2-ch9-pathology-q248",
+              "id": "mcns2-ch9-pathology-q247",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "What are the microscopic features of Ependymomas?",
               "explanation": "This question asks: What are the microscopic features of Ependymomas? Key point: Uniform small cells, round to oval nuclei with granular chromatin Fibrillary matrix, and perivascular anucleate zones (pseudo rosettes).",
               "keyConcept": "Are the microscopic features of Ependymomas",
               "modelAnswer": "• Uniform small cells, round to oval nuclei with granular chromatin\n• Fibrillary matrix, and perivascular anucleate zones (pseudo rosettes)."
             },
             {
-              "id": "mcns2-ch9-pathology-q249",
+              "id": "mcns2-ch9-pathology-q248",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "What are the characteristics of Embryonal Neoplasms?",
               "explanation": "This question asks: What are the characteristics of Embryonal Neoplasms? Key point: Highly cellular Poorly differentiated Mitotically active.",
               "keyConcept": "Are the characteristics of Embryonal Neoplasms",
               "modelAnswer": "• Highly cellular\n• Poorly differentiated\n• Mitotically active.\n• They tend to disseminate along cerebrospinal fluid."
             },
             {
-              "id": "mcns2-ch9-pathology-q250",
+              "id": "mcns2-ch9-pathology-q249",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "Name some examples of Embryonal Neoplasms.",
               "explanation": "This question concerns name some examples of Embryonal Neoplasms.. Key point: Medulloblastoma Atypical teratoid/ rhabdoid tumor (AT/RT) Embryonal tumor with multilayer rosettes (PNETs).",
               "keyConcept": "Some examples of Embryonal Neoplasms",
               "modelAnswer": "• Medulloblastoma\n• Atypical teratoid/ rhabdoid tumor (AT/RT)\n• Embryonal tumor with multilayer rosettes (PNETs)."
             },
             {
-              "id": "mcns2-ch9-pathology-q251",
+              "id": "mcns2-ch9-pathology-q250",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "What are the different types of meningiomas WHO grade I?",
               "explanation": "This question asks: What are the different types of meningiomas WHO grade I? Key point: Syncytial Fibroblastic Transitional Psammomatous.",
               "keyConcept": "Are the different types of meningiomas WHO grade I",
               "modelAnswer": "• Syncytial\n• Fibroblastic\n• Transitional\n• Psammomatous"
             },
             {
-              "id": "mcns2-ch9-pathology-q252",
+              "id": "mcns2-ch9-pathology-q251",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "What are the features of atypical meningiomas (WHO grade II)?",
               "explanation": "This question asks: What are the features of atypical meningiomas (WHO grade II)? Key point: Increased mitotic activity Brain invasion At least three of the following features: increased cellularity, small cells with an increased nuclear to cytoplasmic ratio, pro.",
               "keyConcept": "Are the features of atypical meningiomas (WHO grade II)",
               "modelAnswer": "• Increased mitotic activity\n• Brain invasion\n• At least three of the following features: increased cellularity, small cells with an increased nuclear- to-cytoplasmic ratio, prominent nucleoli, sheeting and foci of spontaneous necrosis."
             },
             {
-              "id": "mcns2-ch9-pathology-q253",
+              "id": "mcns2-ch9-pathology-q252",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "What are the characteristics of anaplastic (malignant) meningiomas (WHO grade III)?",
               "explanation": "This question asks: What are the characteristics of anaplastic (malignant) meningiomas (WHO grade III)? Key point: Overtly malignant cytology and/or markedly elevated mitotic activity.",
               "keyConcept": "Are the characteristics of anaplastic (malignant) meningiomas (WHO grade III)",
               "modelAnswer": "• Overtly malignant cytology and/or markedly elevated mitotic activity"
             },
             {
-              "id": "mcns2-ch9-pathology-q254",
+              "id": "mcns2-ch9-pathology-q253",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "What is the most common type of primary CNS lymphoma?",
               "explanation": "This question asks: What is the most common type of primary CNS lymphoma? Key point: Diffuse large B cell lymphoma.",
               "keyConcept": "Is the most common type of primary CNS lymphoma",
               "modelAnswer": "• Diffuse large B cell lymphoma"
             },
             {
-              "id": "mcns2-ch9-pathology-q255",
+              "id": "mcns2-ch9-pathology-q254",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "Which population is most commonly affected by primary CNS lymphoma?",
               "explanation": "This question asks: Which population is most commonly affected by primary CNS lymphoma? Key point: Immunosuppressed persons.",
               "keyConcept": "Population is most commonly affected by primary CNS lymphoma",
               "modelAnswer": "• Immunosuppressed persons"
             },
             {
-              "id": "mcns2-ch9-pathology-q256",
+              "id": "mcns2-ch9-pathology-q255",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "What’s the relation between primary CNS lymphoma and Epstein-Barr virus?",
               "explanation": "This question asks: What’s the relation between primary CNS lymphoma and Epstein-Barr virus? Key point: Primary CNS lymphoma is positive for the oncogenic Epstein Barr virus.",
               "keyConcept": "’s the relation between primary CNS lymphoma and Epstein-Barr virus",
               "modelAnswer": "• Primary CNS lymphoma is positive for the oncogenic Epstein-Barr virus"
             },
             {
-              "id": "mcns2-ch9-pathology-q257",
+              "id": "mcns2-ch9-pathology-q256",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "What is the response of primary CNS lymphoma to chemotherapy?",
               "explanation": "This question asks: What is the response of primary CNS lymphoma to chemotherapy? Key point: Relatively poor.",
               "keyConcept": "Is the response of primary CNS lymphoma to chemotherapy",
               "modelAnswer": "• Relatively poor"
             },
             {
-              "id": "mcns2-ch9-pathology-q258",
+              "id": "mcns2-ch9-pathology-q257",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "Where are germ cell tumors most commonly found in the brain?",
               "explanation": "This question asks: Where are germ cell tumors most commonly found in the brain? Key point: Along the midline, particularly in the pineal and suprasellar regions.",
               "keyConcept": "Are germ cell tumors most commonly found in the brain",
               "modelAnswer": "• Along the midline, particularly in the pineal and suprasellar regions"
             },
             {
-              "id": "mcns2-ch9-pathology-q259",
+              "id": "mcns2-ch9-pathology-q258",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "Is there a gender predominance for germ cell tumors in the pineal region?",
               "explanation": "This question asks: Is there a gender predominance for germ cell tumors in the pineal region? Key point: Yes, there is a strong male predominance.",
               "keyConcept": "Is there a gender predominance for germ cell tumors in the pineal region",
               "modelAnswer": "• Yes, there is a strong male predominance"
             },
             {
-              "id": "mcns2-ch9-pathology-q260",
+              "id": "mcns2-ch9-pathology-q259",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "What is the most common primary CNS germ cell tumor?",
               "explanation": "This question asks: What is the most common primary CNS germ cell tumor? Key point: Germinoma.",
               "keyConcept": "Is the most common primary CNS germ cell tumor",
               "modelAnswer": "• Germinoma"
             },
             {
-              "id": "mcns2-ch9-pathology-q261",
+              "id": "mcns2-ch9-pathology-q260",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "How do metastatic tumors reach the CNS?",
               "explanation": "This question asks: How do metastatic tumors reach the CNS? Key point: Via hematogenous route Direct invasion from adjacent anatomical structures.",
               "keyConcept": "Do metastatic tumors reach the CNS",
               "modelAnswer": "• Via hematogenous route\n• Direct invasion from adjacent anatomical structures"
             },
             {
-              "id": "mcns2-ch9-pathology-q262",
+              "id": "mcns2-ch9-pathology-q261",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "Where are the majority of brain metastases located?",
               "explanation": "This question asks: Where are the majority of brain metastases located? Key point: Cerebral hemispheres (80%) Cerebellum (15%) Brainstem (5 9%).",
               "keyConcept": "Are the majority of brain metastases located",
               "modelAnswer": "• Cerebral hemispheres (80%)\n• Cerebellum (15%)\n• Brainstem (5-9%)"
             },
             {
-              "id": "mcns2-ch9-pathology-q263",
+              "id": "mcns2-ch9-pathology-q262",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "Which primary sites are most common for metastatic tumors to the CNS?",
               "explanation": "This question asks: Which primary sites are most common for metastatic tumors to the CNS? Key point: Lung Breast Skin (melanoma) Kidney Gastrointestinal tract.",
               "keyConcept": "Primary sites are most common for metastatic tumors to the CNS",
               "modelAnswer": "• Lung\n• Breast\n• Skin (melanoma)\n• Kidney\n• Gastrointestinal tract"
             },
             {
-              "id": "mcns2-ch9-pathology-q264",
+              "id": "mcns2-ch9-pathology-q263",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "What is the gross appearance of metastatic tumors in the CNS?",
               "explanation": "This question asks: What is the gross appearance of metastatic tumors in the CNS? Key point: Sharply demarcated masses with surrounding edema.",
               "keyConcept": "Is the gross appearance of metastatic tumors in the CNS",
               "modelAnswer": "• Sharply demarcated masses with surrounding edema"
             },
             {
-              "id": "mcns2-ch9-pathology-q265",
+              "id": "mcns2-ch9-pathology-q264",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "What are the two familial tumor syndromes associated with an increased risk of CNS cancers?",
               "explanation": "This question asks: What are the two familial tumor syndromes associated with an increased risk of CNS cancers? Key point: Tuberous Sclerosis Von Hippel Lindau Disease.",
               "keyConcept": "Are the two familial tumor syndromes associated with an increased risk of CNS cancers",
               "modelAnswer": "• Tuberous Sclerosis\n• Von Hippel-Lindau Disease"
             },
             {
-              "id": "mcns2-ch9-pathology-q266",
+              "id": "mcns2-ch9-pathology-q265",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "What is the underlying cause of von Hippel-Lindau Disease?",
               "explanation": "This question asks: What is the underlying cause of von Hippel-Lindau Disease? Key point: Germline mutations of the VHL tumor suppressor gene.",
               "keyConcept": "Is the underlying cause of von Hippel-Lindau Disease",
               "modelAnswer": "• Germline mutations of the VHL tumor suppressor gene"
             },
             {
-              "id": "mcns2-ch9-pathology-q267",
+              "id": "mcns2-ch9-pathology-q266",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "What is the key role of the VHL protein in von Hippel-Lindau Disease?",
               "explanation": "This question asks: What is the key role of the VHL protein in von Hippel-Lindau Disease? Key point: Cellular oxygen sensing.",
               "keyConcept": "Is the key role of the VHL protein in von Hippel-Lindau Disease",
               "modelAnswer": "• Cellular oxygen sensing"
             },
             {
-              "id": "mcns2-ch9-pathology-q268",
+              "id": "mcns2-ch9-pathology-q267",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "What is the most common non-neoplastic lesion associated with von Hippel-Lindau Disease?",
               "explanation": "This question asks: What is the most common non-neoplastic lesion associated with von Hippel-Lindau Disease? Key point: Hemangioblastoma.",
               "keyConcept": "Is the most common non-neoplastic lesion associated with von Hippel-Lindau Disease",
               "modelAnswer": "• Hemangioblastoma"
             },
             {
-              "id": "mcns2-ch9-pathology-q269",
+              "id": "mcns2-ch9-pathology-q268",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "What is the most common embryonal tumor of the CNS?",
               "explanation": "This question asks: What is the most common embryonal tumor of the CNS? Key point: Medulloblastoma.",
               "keyConcept": "Is the most common embryonal tumor of the CNS",
               "modelAnswer": "• Medulloblastoma"
             },
             {
-              "id": "mcns2-ch9-pathology-q270",
+              "id": "mcns2-ch9-pathology-q269",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "Where does medulloblastoma arise in the brain?",
               "explanation": "This question asks: Where does medulloblastoma arise in the brain? Key point: Cerebellum or dorsal brain stem.",
               "keyConcept": "Does medulloblastoma arise in the brain",
               "modelAnswer": "• Cerebellum or dorsal brain stem"
             },
             {
-              "id": "mcns2-ch9-pathology-q271",
+              "id": "mcns2-ch9-pathology-q270",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "What are the morphological variants of medulloblastoma?",
               "explanation": "This question asks: What are the morphological variants of medulloblastoma? Key point: Classic Desmoplastic/nodular Medulloblastoma with extensive nodularity Large cell/anaplastic.",
               "keyConcept": "Are the morphological variants of medulloblastoma",
               "modelAnswer": "• Classic\n• Desmoplastic/nodular\n• Medulloblastoma with extensive nodularity\n• Large cell/anaplastic"
             },
             {
-              "id": "mcns2-ch9-pathology-q272",
+              "id": "mcns2-ch9-pathology-q271",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "What is the most common cytogenetic aberration in medulloblastomas?",
               "explanation": "This question asks: What is the most common cytogenetic aberration in medulloblastomas? Key point: Loss of the short arm of chromosome 17 (17p).",
               "keyConcept": "Is the most common cytogenetic aberration in medulloblastomas",
               "modelAnswer": "• Loss of the short arm of chromosome 17 (17p)"
             },
             {
-              "id": "mcns2-ch9-pathology-q273",
+              "id": "mcns2-ch9-pathology-q272",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "What is the most favorable genetic subtype of medulloblastoma?",
               "explanation": "This question asks: What is the most favorable genetic subtype of medulloblastoma? Key point: WNT activated, recognized by nuclear β catenin.",
               "keyConcept": "Is the most favorable genetic subtype of medulloblastoma",
               "modelAnswer": "• WNT-activated, recognized by nuclear β-catenin"
             },
             {
-              "id": "mcns2-ch9-pathology-q274",
+              "id": "mcns2-ch9-pathology-q273",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "Where do hemangioblastomas commonly occur?",
               "explanation": "This question asks: Where do hemangioblastomas commonly occur? Key point: Cerebellum (most common) Brainstem Spinal cord.",
               "keyConcept": "Do hemangioblastomas commonly occur",
               "modelAnswer": "• Cerebellum (most common)\n• Brainstem\n• Spinal cord"
             },
             {
-              "id": "mcns2-ch9-pathology-q275",
+              "id": "mcns2-ch9-pathology-q274",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "Are hemangioblastomas usually sporadic or associated with von Hippel-Lindau Disease?",
               "explanation": "This question asks: Are hemangioblastomas usually sporadic or associated with von Hippel-Lindau Disease? Key point: Both, with sporadic cases accounting for 70% and VHL associated cases accounting for 30%.",
               "keyConcept": "Are hemangioblastomas usually sporadic or associated with von Hippel-Lindau Disease",
               "modelAnswer": "• Both, with sporadic cases accounting for 70% and VHL-associated cases accounting for 30%"
             },
             {
-              "id": "mcns2-ch9-pathology-q276",
+              "id": "mcns2-ch9-pathology-q275",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "What is the appearance of a hemangioblastoma?",
               "explanation": "This question asks: What is the appearance of a hemangioblastoma? Key point: Well circumscribed, partly cystic and highly vascular lesion or completely solid Occasionally, it’s yellow due to lipid Its classic appearance is Cyst with a solid vascul.",
               "keyConcept": "Is the appearance of a hemangioblastoma",
               "modelAnswer": "• Well circumscribed, partly cystic and highly vascular lesion or completely solid\n• Occasionally, it’s yellow due to lipid\n• Its classic appearance is Cyst with a solid vascular nodule"
             },
             {
-              "id": "mcns2-ch9-pathology-q277",
+              "id": "mcns2-ch9-pathology-q276",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "What is the classic microscopic appearance of a hemangioblastoma?",
               "explanation": "This question asks: What is the classic microscopic appearance of a hemangioblastoma? Key point: Large, vacuolated neoplastic stroma cells with vascular cells Numerous thin walled vessels Hemorrhage may occur.",
               "keyConcept": "Is the classic microscopic appearance of a hemangioblastoma",
               "modelAnswer": "• Large, vacuolated neoplastic stroma cells with vascular cells\n• Numerous thin-walled vessels\n• Hemorrhage may occur"
             },
             {
-              "id": "mcns2-ch9-pathology-q278",
+              "id": "mcns2-ch9-pathology-q277",
               "type": "essay",
-              "lecture": 4,
+              "lecture": 6,
               "text": "What is the origin of hemangioblastoma stromal cells?",
               "explanation": "This question asks: What is the origin of hemangioblastoma stromal cells? Key point: Unknown.",
               "keyConcept": "Is the origin of hemangioblastoma stromal cells",
@@ -3592,11 +3570,8 @@
           "id": "pharma",
           "name": "Pharmacology",
           "iconName": "Pill",
-          "lectures": "",
-          "lectureCount": 1,
-          "lectureNames": [
-            "Treatment of Neurodegenerative and Myelin Diseases"
-          ],
+          "lectures": "L1-L5",
+          "lectureCount": 5,
           "questions": [
             {
               "id": "mcns2-ch9-pharma-q1",
@@ -4409,7 +4384,7 @@
             {
               "id": "mcns2-ch9-pharma-q54",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 2,
               "text": "What is the cause of iatrogenic Parkinson’s disease?",
               "explanation": "This question asks: What is the cause of iatrogenic Parkinson’s disease? Key point: Long term use of D2 antagonists that cross the blood brain barrier such as antipsychotics.",
               "keyConcept": "Is the cause of iatrogenic Parkinson’s disease",
@@ -4418,7 +4393,7 @@
             {
               "id": "mcns2-ch9-pharma-q55",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 2,
               "text": "What is the aim of drug therapy in Parkinson’s disease?",
               "explanation": "This question asks: What is the aim of drug therapy in Parkinson’s disease? Key point: To restore balance between dopamine and acetylcholine activity in the basal ganglia.",
               "keyConcept": "Is the aim of drug therapy in Parkinson’s disease",
@@ -4427,7 +4402,7 @@
             {
               "id": "mcns2-ch9-pharma-q56",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 2,
               "text": "What is L-Dopa?",
               "explanation": "This question asks: What is L-Dopa? Key point: L Dopa is a dopamine precursor that can cross the blood brain barrier (BBB).",
               "keyConcept": "Is L-Dopa",
@@ -4436,7 +4411,7 @@
             {
               "id": "mcns2-ch9-pharma-q57",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 2,
               "text": "How is L-Dopa converted to dopamine?",
               "explanation": "This question asks: How is L-Dopa converted to dopamine? Key point: L Dopa is decarboxylated by the central dopa decarboxylase enzyme to dopamine (DA) in the dopaminergic neurons.",
               "keyConcept": "Is L-Dopa converted to dopamine",
@@ -4445,7 +4420,7 @@
             {
               "id": "mcns2-ch9-pharma-q58",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 2,
               "text": "What is the purpose of carbidopa in L-Dopa therapy?",
               "explanation": "This question asks: What is the purpose of carbidopa in L-Dopa therapy? Key point: Carbidopa, a peripheral decarboxylase enzyme inhibitor, is given with L Dopa to prevent its conversion to dopamine peripherally.",
               "keyConcept": "Is the purpose of carbidopa in L-Dopa therapy",
@@ -4454,7 +4429,7 @@
             {
               "id": "mcns2-ch9-pharma-q59",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 2,
               "text": "What causes fluctuations in response of L-dopa?",
               "explanation": "This question asks: What causes fluctuations in response of L-dopa? Key point: Short half life fluctuation in L dopa level.",
               "keyConcept": "Causes fluctuations in response of L-dopa",
@@ -4463,7 +4438,7 @@
             {
               "id": "mcns2-ch9-pharma-q60",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 2,
               "text": "How can on-off effect be managed?",
               "explanation": "This question asks: How can on-off effect be managed? Key point: Add Entacapone or Use Apomorphine (SC).",
               "keyConcept": "Can on-off effect be managed",
@@ -4472,7 +4447,7 @@
             {
               "id": "mcns2-ch9-pharma-q61",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 2,
               "text": "What is end-of-dose akinesia?",
               "explanation": "This question asks: What is end-of-dose akinesia? Key point: Gradual loss of the useful effect (wearing off) before the time of the next dose.",
               "keyConcept": "Is end-of-dose akinesia",
@@ -4481,7 +4456,7 @@
             {
               "id": "mcns2-ch9-pharma-q62",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 2,
               "text": "How can end-of-dose akinesia be managed?",
               "explanation": "This question asks: How can end-of-dose akinesia be managed? Key point: Add Selegiline Use dopamine agonists.",
               "keyConcept": "Can end-of-dose akinesia be managed",
@@ -4490,7 +4465,7 @@
             {
               "id": "mcns2-ch9-pharma-q63",
               "type": "truefalse",
-              "lecture": 1,
+              "lecture": 2,
               "text": "True or False: L-Dopa can cross the blood- brain barrier (BBB).",
               "explanation": "This question concerns true or False: L-Dopa can cross the blood- brain barrier (BBB).. Key point: False.",
               "keyConcept": "L-Dopa can cross the blood- brain barrier (BBB)",
@@ -4503,7 +4478,7 @@
             {
               "id": "mcns2-ch9-pharma-q64",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 2,
               "text": "What is the mainstay of therapy for Parkinson’s disease?",
               "explanation": "This question asks: What is the mainstay of therapy for Parkinson’s disease? Key point: L Dopa is the most effective antiparkinson’s drug and is considered the mainstay of therapy.",
               "keyConcept": "Is the mainstay of therapy for Parkinson’s disease",
@@ -4512,7 +4487,7 @@
             {
               "id": "mcns2-ch9-pharma-q65",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 2,
               "text": "What are the peripheral adverse effects of L-Dopa?",
               "explanation": "This question asks: What are the peripheral adverse effects of L-Dopa? Key point: Nausea, vomiting, peptic ulcer postural hypotension, and arrhythmias are common adverse effects of L Dopa.",
               "keyConcept": "Are the peripheral adverse effects of L-Dopa",
@@ -4521,7 +4496,7 @@
             {
               "id": "mcns2-ch9-pharma-q66",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 2,
               "text": "What is dyskinesia?",
               "explanation": "This question asks: What is dyskinesia? Key point: Dyskinesia refers to abnormal involuntary head, lip, and tongue movements associated with L Dopa therapy.",
               "keyConcept": "Is dyskinesia",
@@ -4530,7 +4505,7 @@
             {
               "id": "mcns2-ch9-pharma-q67",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 2,
               "text": "What are the management options for fluctuations in response of L-Dopa therapy?",
               "explanation": "This question asks: What are the management options for fluctuations in response of L-Dopa therapy? Key point: adding entacapone or using apomorphine (SC) for on off effect adding selegiline or dopamine agonists for end of dose akinesia.",
               "keyConcept": "Are the management options for fluctuations in response of L-Dopa therapy",
@@ -4539,7 +4514,7 @@
             {
               "id": "mcns2-ch9-pharma-q68",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 2,
               "text": "What is the advantage of using dopamine agonists compared to L-Dopa?",
               "explanation": "This question asks: What is the advantage of using dopamine agonists compared to L-Dopa? Key point: Dopamine agonists have less fluctuation in response, longer half life can be taken transdermally or orally with higher bioavailability.",
               "keyConcept": "Is the advantage of using dopamine agonists compared to L-Dopa",
@@ -4548,7 +4523,7 @@
             {
               "id": "mcns2-ch9-pharma-q69",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 2,
               "text": "What is the alternative drug used in emergency situations for Parkinson’s disease? And why is it used?",
               "explanation": "This question asks: What is the alternative drug used in emergency situations for Parkinson’s disease? And why is it used? Key point: Apomorphine is an alternative drug used in emergency situations to manage off time and akinetic episodes.",
               "keyConcept": "Is the alternative drug used in emergency situations for Parkinson’s disease And why is it used",
@@ -4557,7 +4532,7 @@
             {
               "id": "mcns2-ch9-pharma-q70",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 2,
               "text": "What is the mechanism of action of selegiline?",
               "explanation": "This question asks: What is the mechanism of action of selegiline? Key point: Selegiline is a selective MAO B inhibitor that delays the breakdown of dopaminergic neurons prolongs the action of L Dopa.",
               "keyConcept": "Is the mechanism of action of selegiline",
@@ -4566,7 +4541,7 @@
             {
               "id": "mcns2-ch9-pharma-q71",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 2,
               "text": "What can cause orange urine?",
               "explanation": "This question asks: What can cause orange urine? Key point: Entacapone.",
               "keyConcept": "Can cause orange urine",
@@ -4575,7 +4550,7 @@
             {
               "id": "mcns2-ch9-pharma-q72",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 2,
               "text": "Which drugs belong to the Anticholinergic class?",
               "explanation": "This question asks: Which drugs belong to the Anticholinergic class? Key point: Benztropine Trihexyphenidyl.",
               "keyConcept": "Drugs belong to the Anticholinergic class",
@@ -4584,7 +4559,7 @@
             {
               "id": "mcns2-ch9-pharma-q73",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 2,
               "text": "What is the mechanism of anticholinergic drugs?",
               "explanation": "This question asks: What is the mechanism of anticholinergic drugs? Key point: Block central cholinergic activity and restore DA/Ach balance Improve tremors (mainly) more than rigidity & bradykinesia.",
               "keyConcept": "Is the mechanism of anticholinergic drugs",
@@ -4593,7 +4568,7 @@
             {
               "id": "mcns2-ch9-pharma-q74",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 2,
               "text": "What are the therapeutic uses of anticholinergic drugs?",
               "explanation": "This question asks: What are the therapeutic uses of anticholinergic drugs? Key point: Drug induced Parkinsonism Parkinson’s disease (especially in the young).",
               "keyConcept": "Are the therapeutic uses of anticholinergic drugs",
@@ -4602,7 +4577,7 @@
             {
               "id": "mcns2-ch9-pharma-q75",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 2,
               "text": "What are the side effects of anticholinergic drugs?",
               "explanation": "This question asks: What are the side effects of anticholinergic drugs? Key point: Similar to atropine but less severe (dry mouth, constipation, confusion) Used Cautiously in old patients (avoid in patients over 70).",
               "keyConcept": "Are the side effects of anticholinergic drugs",
@@ -4611,7 +4586,7 @@
             {
               "id": "mcns2-ch9-pharma-q76",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 2,
               "text": "What are the first choice agents in early Parkinson’s disease?",
               "explanation": "This question asks: What are the first choice agents in early Parkinson’s disease? Key point: L dopa/carbidopa Non ergot dopamine agonists (Rotigotine) MAO B inhibitors.",
               "keyConcept": "Are the first choice agents in early Parkinson’s disease",
@@ -4620,7 +4595,7 @@
             {
               "id": "mcns2-ch9-pharma-q77",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 8,
               "text": "What is the aim of management for Alzheimer disease?",
               "explanation": "This question asks: What is the aim of management for Alzheimer disease? Key point: Increase cholinergic activity in the brain (by inhibiting Cholinesterase enzyme) Reduce excitotoxicity action of overstimulation of NMDA receptors (by using NMDA receptor.",
               "keyConcept": "Is the aim of management for Alzheimer disease",
@@ -4629,7 +4604,7 @@
             {
               "id": "mcns2-ch9-pharma-q78",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 8,
               "text": "What are the cholinesterase enzyme inhibitors used in the treatment of Alzheimer disease?",
               "explanation": "This question asks: What are the cholinesterase enzyme inhibitors used in the treatment of Alzheimer disease? Key point: Donepezil Rivastigmine Galantamine.",
               "keyConcept": "Are the cholinesterase enzyme inhibitors used in the treatment of Alzheimer disease",
@@ -4638,7 +4613,7 @@
             {
               "id": "mcns2-ch9-pharma-q79",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 8,
               "text": "What is the mechanism of action of cholinesterase enzyme inhibitors?",
               "explanation": "This question asks: What is the mechanism of action of cholinesterase enzyme inhibitors? Key point: Inhibits Acetylcholine esterase > increases cholinergic transmission in the brain.",
               "keyConcept": "Is the mechanism of action of cholinesterase enzyme inhibitors",
@@ -4647,7 +4622,7 @@
             {
               "id": "mcns2-ch9-pharma-q80",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 8,
               "text": "What is the mechanism of action of memantine?",
               "explanation": "This question asks: What is the mechanism of action of memantine? Key point: Noncompetitive NMDA receptor antagonist and protects neurons from glutamate induced excitotoxicity.",
               "keyConcept": "Is the mechanism of action of memantine",
@@ -4656,7 +4631,7 @@
             {
               "id": "mcns2-ch9-pharma-q81",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 8,
               "text": "What is Namzaric?",
               "explanation": "This question asks: What is Namzaric? Key point: Combination of Memantine ER + Donepezil, taken once daily.",
               "keyConcept": "Is Namzaric",
@@ -4665,7 +4640,7 @@
             {
               "id": "mcns2-ch9-pharma-q82",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 8,
               "text": "What is the management approach for Multiple Sclerosis?",
               "explanation": "This question asks: What is the management approach for Multiple Sclerosis? Key point: Treatment of acute episodes (exacerbations) with corticosteroids Disease Modifying Drugs (DMDs) Symptomatic treatment.",
               "keyConcept": "Is the management approach for Multiple Sclerosis",
@@ -4674,7 +4649,7 @@
             {
               "id": "mcns2-ch9-pharma-q83",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 8,
               "text": "What is the treatment for an acute episode (exacerbation) of MS?",
               "explanation": "This question asks: What is the treatment for an acute episode (exacerbation) of MS? Key point: Methyl prednisolone: 1 gm/day for 5 days IV (Large dose) followed by oral prednisone with gradual decrease.",
               "keyConcept": "Is the treatment for an acute episode (exacerbation) of MS",
@@ -4683,7 +4658,7 @@
             {
               "id": "mcns2-ch9-pharma-q84",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 8,
               "text": "What are the first-line therapy drugs used in the treatment of MS?",
               "explanation": "This question asks: What are the first-line therapy drugs used in the treatment of MS? Key point: Interferon β1a & Interferon β1b.",
               "keyConcept": "Are the first-line therapy drugs used in the treatment of MS",
@@ -4692,7 +4667,7 @@
             {
               "id": "mcns2-ch9-pharma-q85",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 8,
               "text": "What are the adverse effects of Interferon β1a and Interferon β1b?",
               "explanation": "This question asks: What are the adverse effects of Interferon β1a and Interferon β1b? Key point: Flu like syndrome local injection site reaction depression bone marrow depression.",
               "keyConcept": "Are the adverse effects of Interferon β1a and Interferon β1b",
@@ -4701,7 +4676,7 @@
             {
               "id": "mcns2-ch9-pharma-q86",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 8,
               "text": "What is the mechanism of action of interferon in the treatment of MS?",
               "explanation": "This question asks: What is the mechanism of action of interferon in the treatment of MS? Key point: Immunomodulatory effects, reduce inflammation that leads to demyelination of axon sheaths.",
               "keyConcept": "Is the mechanism of action of interferon in the treatment of MS",
@@ -4710,7 +4685,7 @@
             {
               "id": "mcns2-ch9-pharma-q87",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 8,
               "text": "What is the route of administration for Fingolimod?",
               "explanation": "This question asks: What is the route of administration for Fingolimod? Key point: Oral daily.",
               "keyConcept": "Is the route of administration for Fingolimod",
@@ -4719,7 +4694,7 @@
             {
               "id": "mcns2-ch9-pharma-q88",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 8,
               "text": "Which receptor does Fingolimod bind with on the surface of T lymphocytes?",
               "explanation": "This question asks: Which receptor does Fingolimod bind with on the surface of T lymphocytes? Key point: S1P receptors.",
               "keyConcept": "Receptor does Fingolimod bind with on the surface of T lymphocytes",
@@ -4728,7 +4703,7 @@
             {
               "id": "mcns2-ch9-pharma-q89",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 8,
               "text": "What is the mechanism of action of Fingolimod?",
               "explanation": "This question asks: What is the mechanism of action of Fingolimod? Key point: T cell sequestration in lymph nodes Decrease T lymphocyte proliferation and migration to CNS Decrease neural inflammation and demyelination.",
               "keyConcept": "Is the mechanism of action of Fingolimod",
@@ -4737,7 +4712,7 @@
             {
               "id": "mcns2-ch9-pharma-q90",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 8,
               "text": "What is the adverse effect of Fingolimod related to patients with diabetes?",
               "explanation": "This question asks: What is the adverse effect of Fingolimod related to patients with diabetes? Key point: First dose bradycardia Macular edema Increase risk of infarctions.",
               "keyConcept": "Is the adverse effect of Fingolimod related to patients with diabetes",
@@ -4746,7 +4721,7 @@
             {
               "id": "mcns2-ch9-pharma-q91",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 8,
               "text": "Which type of drugs are indicated to reduce relapse rate and accumulation of disability in multiple sclerosis?",
               "explanation": "This question asks: Which type of drugs are indicated to reduce relapse rate and accumulation of disability in multiple sclerosis? Key point: Disease Modifying Drugs (DMDs).",
               "keyConcept": "Type of drugs are indicated to reduce relapse rate and accumulation of disability in multiple sclerosis",
@@ -4755,7 +4730,7 @@
             {
               "id": "mcns2-ch9-pharma-q92",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 8,
               "text": "What is the mechanism of action of Natalizumab?",
               "explanation": "This question asks: What is the mechanism of action of Natalizumab? Key point: Blocks the adhesion of T lymphocytes to endothelial cells of BBB.",
               "keyConcept": "Is the mechanism of action of Natalizumab",
@@ -4764,7 +4739,7 @@
             {
               "id": "mcns2-ch9-pharma-q93",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 8,
               "text": "What are the adverse effects of Natalizumab?",
               "explanation": "This question asks: What are the adverse effects of Natalizumab? Key point: Allergic reaction anti natalizumab antibodies progressive multifocal leukoencephalopathy (PML).",
               "keyConcept": "Are the adverse effects of Natalizumab",
@@ -4773,7 +4748,7 @@
             {
               "id": "mcns2-ch9-pharma-q94",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 8,
               "text": "Which drugs are used in Amyotrophic lateral sclerosis?",
               "explanation": "This question asks: Which drugs are used in Amyotrophic lateral sclerosis? Key point: Riluzole.",
               "keyConcept": "Drugs are used in Amyotrophic lateral sclerosis",
@@ -4782,7 +4757,7 @@
             {
               "id": "mcns2-ch9-pharma-q95",
               "type": "essay",
-              "lecture": 1,
+              "lecture": 8,
               "text": "What is the mechanism of action of Riluzole?",
               "explanation": "This question asks: What is the mechanism of action of Riluzole? Key point: Blocks presynaptic voltage gated Na+ channels and decrease release of glutamate Increase reuptake of glutamate in glial cells Weak NMDA receptor antagonist.",
               "keyConcept": "Is the mechanism of action of Riluzole",
