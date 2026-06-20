@@ -168,6 +168,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
     blankInputs, blankSubmitted,
     goTo, toggleFlag, setAnswer,
     toggleGrid, toggleShortcuts,
+    finished,
   } = engine;
 
   const handleGoTo = React.useCallback((index: number) => {
@@ -215,7 +216,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
   const quizDataRef = useRef({ current: 0, answers: {} as Record<number, QuizAnswer>, elapsedSeconds: 0, flagged: [] as number[], finished: false, timerMode: 'practice' as TimerMode, showEssayAnswer: false });
   const autoSaveTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   useLayoutEffect(() => {
-    quizDataRef.current = { current, answers, elapsedSeconds, flagged: [...flagged], finished, timerMode, showEssayAnswer };
+    quizDataRef.current = { current, answers, elapsedSeconds: totalElapsed, flagged: [...flagged], finished, timerMode, showEssayAnswer };
   });
   useEffect(() => {
     if (quizDataRef.current.finished) return;

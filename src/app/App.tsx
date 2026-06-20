@@ -1068,7 +1068,11 @@ function MainApp() {
           <QuizResumeCard
             open={!!resumePayload}
             current={resumePayload.current}
-            total={Object.keys(resumePayload.answers).length}
+            total={(() => {
+              const sub = selectedChapter?.subjects.find(s => s.name === resumePayload?.subjectName);
+              if (sub) return sub.questions.length;
+              return selectedChapter?.subjects.flatMap(s => s.questions).length ?? 0;
+            })()}
             elapsedSeconds={resumePayload.elapsedSeconds}
             answeredCount={Object.values(resumePayload.answers).filter(a => a !== undefined && a !== null).length}
             onResume={() => {
