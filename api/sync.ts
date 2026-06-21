@@ -8,18 +8,25 @@ const kvUrl = process.env.KV_REST_API_URL || process.env.UPSTASH_REDIS_REST_URL 
 const kvToken = process.env.KV_REST_API_TOKEN || process.env.UPSTASH_REDIS_REST_TOKEN || '';
 const redisUrl = process.env.REDIS_URL || '';
 
-// Initialize connection client dynamically
-let dbClient: {
+// Declare clients at module scope to avoid ReferenceError
+let tcpClient: ioredis | null = null;
+let restClient: UpstashRedis | null = null;
+
+interface DbClient {
   get: (key: string) => Promise<any>;
-  set: (key: string, value: any) => Promise<any>;
-};
+  set: (key: string, value: any, opts?: { EX?: number }) => Promise<any>;
+  scanKeys: (pattern: string) => Promise<string[]>;
+  del: (key: string) => Promise<void>;
+}
+
+let dbClient: DbClient;
 
 if (redisUrl) {
   // Use standard TCP Redis client
-  const tcpClient = new ioredis(redisUrl);
+  tcpClient = new ioredis(redisUrl);
   dbClient = {
     get: async (key: string) => {
-      const val = await tcpClient.get(key);
+      const val = await tcpClient!.get(key);
       if (!val) return null;
       try {
         return JSON.parse(val);
@@ -27,38 +34,70 @@ if (redisUrl) {
         return val;
       }
     },
-    set: async (key: string, value: any) => {
+    set: async (key: string, value: any, opts?: { EX?: number }) => {
       const valStr = typeof value === 'string' ? value : JSON.stringify(value);
-      await tcpClient.set(key, valStr);
+      if (opts?.EX) {
+        await tcpClient!.set(key, valStr, 'EX', opts.EX);
+      } else {
+        await tcpClient!.set(key, valStr);
+      }
+    },
+    scanKeys: async (pattern: string) => {
+      const keys: string[] = [];
+      let cursor = '0';
+      do {
+        const [nextCursor, batch] = await tcpClient!.scan(cursor, 'MATCH', pattern, 'COUNT', 100);
+        cursor = nextCursor;
+        keys.push(...batch);
+      } while (cursor !== '0');
+      return keys;
+    },
+    del: async (key: string) => {
+      await tcpClient!.del(key);
     }
   };
 } else if (kvUrl && kvToken) {
   // Use Upstash REST Redis client
-  const restClient = new UpstashRedis({ url: kvUrl, token: kvToken });
+  restClient = new UpstashRedis({ url: kvUrl, token: kvToken });
   dbClient = {
     get: async (key: string) => {
-      return await restClient.get(key);
+      return await restClient!.get(key);
     },
-    set: async (key: string, value: any) => {
-      await restClient.set(key, value);
+    set: async (key: string, value: any, opts?: { EX?: number }) => {
+      if (opts?.EX) {
+        await restClient!.set(key, value, { EX: opts.EX });
+      } else {
+        await restClient!.set(key, value);
+      }
+    },
+    scanKeys: async (pattern: string) => {
+      const keys: string[] = [];
+      let cursor = 0;
+      do {
+        const result = await restClient!.scan(cursor, { match: pattern, count: 100 });
+        cursor = result[0] as number;
+        keys.push(...(result[1] as string[]));
+      } while (cursor !== 0);
+      return keys;
+    },
+    del: async (key: string) => {
+      await restClient!.del(key);
     }
   };
 } else {
   // Fallback dummy client
   dbClient = {
     get: async () => null,
-    set: async () => {}
+    set: async () => {},
+    scanKeys: async () => [],
+    del: async () => {}
   };
 }
 
 const TTL_SECONDS = 60 * 60 * 24 * 30; // 30 days
 
 const setWithTTL = async (key: string, value: string) => {
-  if (redisUrl) {
-    await (tcpClient as unknown as { set: (k: string, v: string, ex: string, ttl: number) => Promise<unknown> }).set(key, value, 'EX', TTL_SECONDS);
-  } else if (kvUrl && kvToken) {
-    await restClient.set(key, value, { EX: TTL_SECONDS });
-  }
+  await dbClient.set(key, value, { EX: TTL_SECONDS });
 };
 
 export default async function handler(req: any, res: any) {
@@ -115,14 +154,7 @@ export default async function handler(req: any, res: any) {
         return res.status(200).json({ data: null, message: "Redis/KV not configured yet" });
       }
       try {
-        let keys: string[] = [];
-        if (redisUrl) {
-          keys = await (tcpClient as unknown as { keys: (pattern: string) => Promise<string[]> }).keys(`${keyPrefix}*`);
-        } else {
-          // Upstash does not support KEYS; fall back to a known set of keys from body
-          // For Upstash, GET returns null unless we track keys separately — return null for safety
-          return res.status(200).json({ data: null, message: "Redis/KV not configured for key enumeration" });
-        }
+        const keys = await dbClient.scanKeys(`${keyPrefix}*`);
         const result: Record<string, unknown> = {};
         for (const fullKey of keys) {
           const strippedKey = fullKey.slice(keyPrefix.length);
@@ -173,20 +205,14 @@ export default async function handler(req: any, res: any) {
 
       try {
         // Collect existing keys for this user
-        let existingKeys: string[] = [];
-        if (redisUrl) {
-          existingKeys = await (tcpClient as unknown as { keys: (pattern: string) => Promise<string[]> }).keys(`${keyPrefix}*`);
-        }
-
+        const existingKeys = await dbClient.scanKeys(`${keyPrefix}*`);
         const incomingKeys = Object.keys(body);
 
         // Delete keys that exist in Redis but are NOT in the incoming body
         for (const fullKey of existingKeys) {
           const strippedKey = fullKey.slice(keyPrefix.length);
           if (!incomingKeys.includes(strippedKey)) {
-            if (redisUrl) {
-              await tcpClient.del(fullKey);
-            }
+            await dbClient.del(fullKey);
           }
         }
 
