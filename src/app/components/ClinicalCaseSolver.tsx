@@ -123,7 +123,7 @@ const CASES: CaseData[] = [
     ],
     diagnosisName: "Primary Hypothyroidism secondary to Hashimoto's Thyroiditis",
     diagnosisExplanation: "Markedly elevated TSH (18.5 mIU/L) with low Free T4 confirms primary gland failure. The bradycardia, hypothermia, and weight gain resolve with levothyroxine titration; anti-TPO antibodies would confirm the autoimmune etiology.",
-    imageUrl: "/cases/thyroid_ultrasound.png",
+    imageUrl: "/cases/thyroid_ultrasound.webp",
   },
   {
     id: "dka_youssef",
@@ -166,7 +166,7 @@ const CASES: CaseData[] = [
     ],
     diagnosisName: "Diabetic Ketoacidosis (DKA)",
     diagnosisExplanation: "Severe hyperglycemia (420 mg/dL), metabolic acidosis (pH 7.15, Bicarb 10), and ketonuria confirm DKA. The primary triggers are often missed insulin doses or underlying infection. Fluid resuscitation and insulin infusion are vital to clear ketosis; potassium replacement must be started promptly as insulin shifts potassium intracellularly.",
-    imageUrl: "/cases/dka_monitor.png",
+    imageUrl: "/cases/dka_monitor.webp",
   },
   {
     id: "cush_sarah",
@@ -209,7 +209,7 @@ const CASES: CaseData[] = [
     ],
     diagnosisName: "ACTH-Independent Cushing's Syndrome (Adrenal Adenoma)",
     diagnosisExplanation: "Elevated urinary free cortisol and failure to suppress on dexamethasone confirm Cushing's Syndrome. The low/suppressed ACTH level (2.1 pg/mL) indicates an adrenal origin rather than a pituitary source. The adrenal CT scan localized a 3.2 cm right adrenal adenoma. Adrenalectomy is the curative therapy, and potassium correction with spironolactone helps stabilize the patient.",
-    imageUrl: "/cases/cushings_ct.png",
+    imageUrl: "/cases/cushings_ct.webp",
   },
   {
     id: "meningitis_omar",
@@ -871,8 +871,15 @@ function StagePresentation({ currentCase }: { currentCase: CaseData }) {
         <div style={{ flex: 1, position: "relative", minHeight: 280, background: "rgba(0,0,0,0.15)" }}>
           <img
             src={currentCase.imageUrl}
-            alt="Clinical scan mockup"
+            alt={`Clinical scan for ${currentCase.diagnosisName}`}
             loading="lazy"
+            decoding="async"
+            onError={(e) => {
+              const target = e.currentTarget;
+              target.style.display = 'none';
+              const placeholder = target.nextElementSibling as HTMLElement | null;
+              if (placeholder) placeholder.style.display = 'flex';
+            }}
             style={{
               width: "100%",
               height: "100%",
@@ -881,6 +888,29 @@ function StagePresentation({ currentCase }: { currentCase: CaseData }) {
               inset: 0,
             }}
           />
+          <div
+            style={{
+              display: 'none',
+              position: 'absolute',
+              inset: 0,
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: 12,
+              padding: 24,
+              background: theme === "dark" ? 'rgba(18,18,20,0.6)' : 'rgba(255,255,255,0.6)',
+              backdropFilter: 'blur(12px)',
+              WebkitBackdropFilter: 'blur(12px)',
+            }}
+          >
+            <Activity size={40} strokeWidth={1.5} color={T.purple} />
+            <p style={{ color: T.text, fontSize: 14, fontWeight: 600, textAlign: 'center' }}>
+              {currentCase.diagnosisName}
+            </p>
+            <p style={{ color: T.sub, fontSize: 11, textAlign: 'center' }}>
+              Scan reference image unavailable
+            </p>
+          </div>
         </div>
       </motion.div>
     </div>
