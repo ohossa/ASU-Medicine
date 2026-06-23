@@ -1,9 +1,9 @@
 import { useState, useMemo } from 'react';
-import { useNavigate } from 'react-router';
+import { useNavigate, useParams, useLocation } from 'react-router';
 import { Lock, ArrowRight, ArrowLeft } from 'lucide-react';
 import { PortalShell } from '../app/components/PortalShell';
 import { getQuizHistoryForModule } from '../app/utils/storage';
-import { getModuleQuestionCounts, isModuleActive } from '../app/data';
+import { getModuleQuestionCounts, isModuleActive, SYLLABUS_MODULES } from '../app/data';
 import { applySubjectTheme } from '../app/theme/subjectThemes';
 import { CardShell } from '../components/cards/PremiumCards';
 import { motion } from 'motion/react';
@@ -26,28 +26,6 @@ type Semester = {
   modules: Module[];
 };
 
-const SEMESTERS: Semester[] = [
-  {
-    label: "Semester 1",
-    stats: "3 MODULES • 27 CP • 540 MARKS",
-    modules: [
-      { code: "MBL-2",  name: "Blood & Lymphatic System Module", cp: 7.5,  marks: 150, accent: "year2" },
-      { code: "MRS-2",  name: "Respiratory System Module",       cp: 8.5,  marks: 170, accent: "year2" },
-      { code: "MCVS-2", name: "Cardiovascular System Module",    cp: 11,   marks: 220, accent: "year2" },
-    ],
-  },
-  {
-    label: "Semester 2",
-    stats: "5 MODULES • 27 CP • 540 MARKS",
-    modules: [
-      { code: "MCNS-2", name: "Central Nervous System Module",        cp: 13,  marks: 260, accent: "MCNS-2" },
-      { code: "MSS-2",  name: "Special Senses Module",                cp: 4,   marks: 80,  accent: "MSS-2" },
-      { code: "MEM-2",  name: "Endocrine System & Metabolism Module", cp: 5.5, marks: 110, accent: "MEM-2" },
-      { code: "P3-2",   name: "Behavioral science",                   cp: 1.5, marks: 30,  accent: "P3-2" },
-      { code: "R-2",    name: "Fundamentals of Research",             cp: 3,   marks: 60,  accent: "R-2" },
-    ],
-  },
-];
 
 /* ────────────────────────────────────────────────
    CIRCULAR PROGRESS RING — fills green per completion
@@ -82,8 +60,47 @@ interface YearModulesProps {
 
 export default function YearModules({ userButton }: YearModulesProps) {
   const navigate = useNavigate();
+  const location = useLocation();
+  const { yearId } = useParams<{ yearId: string }>();
+
+  const yr = useMemo(() => {
+    const match = location.pathname.match(/\/year-(\d+)/);
+    return match ? Number(match[1]) : (Number(yearId) || 2);
+  }, [location.pathname, yearId]);
+
   const [tab, setTab] = useState(1); // Semester 2 active by default
-  const sem = SEMESTERS[tab];
+
+  const semestersData = useMemo(() => {
+    const yrModules = SYLLABUS_MODULES[yr] || {};
+    return Object.entries(yrModules).map(([semId, mods]) => {
+      const semNum = Number(semId);
+      let totalCp = 0;
+      let totalMarks = 0;
+      const modules = mods.map(m => {
+        totalCp += m.cp;
+        totalMarks += m.marks;
+        return {
+          code: m.code,
+          name: m.name,
+          cp: m.cp,
+          marks: m.marks,
+          accent: `year${yr}`, // dynamic accent for the year
+        };
+      });
+
+      return {
+        label: `Semester ${semNum}`,
+        stats: `${mods.length} MODULES • ${totalCp} CP • ${totalMarks} MARKS`,
+        modules
+      };
+    });
+  }, [yr]);
+
+  const activeTab = useMemo(() => {
+    return tab < semestersData.length ? tab : Math.max(0, semestersData.length - 1);
+  }, [tab, semestersData.length]);
+
+  const sem = semestersData[activeTab] || { label: '', stats: '', modules: [] };
 
   // Helper to calculate progress dynamically using localStorage quiz history
   const getModuleProgress = (moduleCode: string) => {
@@ -107,12 +124,12 @@ export default function YearModules({ userButton }: YearModulesProps) {
     
     // Apply subject theme on click so visual skin updates
     applySubjectTheme(mod.accent);
-    navigate(`/year-2/${mod.code.toLowerCase()}`);
+    navigate(`/year-${yr}/${mod.code.toLowerCase()}`);
   };
 
   return (
     <PortalShell
-      crumbs={[{ label: "Portal", onClick: () => navigate('/') }, { label: "Year 2" }]}
+      crumbs={[{ label: "Portal", onClick: () => navigate('/') }, { label: `Year ${yr}` }]}
       userButton={userButton}
     >
       <motion.div
@@ -126,31 +143,31 @@ export default function YearModules({ userButton }: YearModulesProps) {
         {/* ── PAGE HEADER ─────────────────────────────────────── */}
         <section className="pt-14 pb-8 lg:pt-20">
           <h1 className="font-heading font-black tracking-[-0.03em] text-4xl sm:text-5xl lg:text-[56px]">
-            Year 2 Modules
+            Year {yr} Modules
           </h1>
           <span className="mt-4 inline-block rounded-full px-4 py-1.5 text-[11px] font-semibold tracking-[0.2em]
                            bg-zinc-100/70 dark:bg-white/[0.05] backdrop-blur-md
                            border border-zinc-200/60 dark:border-white/[0.07]
                            text-zinc-500 dark:text-zinc-400">
-            YEAR 2 • PRE-CLERKSHIP
+            YEAR {yr} • PRE-CLERKSHIP
           </span>
         </section>
 
         {/* ── SEMESTER TAB SWITCHER ───────────────────────────── */}
         <div className="relative border-b border-zinc-200/70 dark:border-white/[0.06]">
           <div className="grid grid-cols-2 max-w-md">
-            {SEMESTERS.map((s, i) => (
+            {semestersData.map((s, i) => (
               <button key={s.label} onClick={() => setTab(i)}
                       className="pb-4 pt-2 text-left transition-colors cursor-pointer border-0 bg-transparent">
                 <span className={`font-heading text-[16px] transition-colors duration-300 block ${
-                  tab === i
+                  activeTab === i
                     ? "font-bold text-zinc-900 dark:text-white"
                     : "font-medium text-zinc-400 dark:text-zinc-600"
                 }`}>
                   {s.label}
                 </span>
                 <span className={`mt-1 block text-[10px] font-semibold tracking-[0.15em] transition-colors duration-300 ${
-                  tab === i ? "text-zinc-500 dark:text-zinc-400" : "text-zinc-300 dark:text-zinc-700"
+                  activeTab === i ? "text-zinc-500 dark:text-zinc-400" : "text-zinc-300 dark:text-zinc-700"
                 }`}>
                   {s.stats}
                 </span>
@@ -158,18 +175,20 @@ export default function YearModules({ userButton }: YearModulesProps) {
             ))}
           </div>
           {/* Animated green underline — slides between tabs */}
-          <span
-            className="absolute bottom-0 h-[2.5px] rounded-full bg-[#22c55e]"
-            style={{
-              width: "calc(min(28rem, 100%) / 2)",
-              transform: `translateX(${tab * 100}%)`,
-              transition: "transform 0.45s cubic-bezier(0.22, 1, 0.36, 1)",
-            }}
-          />
+          {semestersData.length > 0 && (
+            <span
+              className="absolute bottom-0 h-[2.5px] rounded-full bg-[#22c55e]"
+              style={{
+                width: `calc(min(28rem, 100%) / ${semestersData.length})`,
+                transform: `translateX(${activeTab * 100}%)`,
+                transition: "transform 0.45s cubic-bezier(0.22, 1, 0.36, 1)",
+              }}
+            />
+          )}
         </div>
 
         {/* ── MODULE CARDS GRID ───────────────────────────────── */}
-        <section key={tab}
+        <section key={activeTab}
                  className="grid grid-cols-1 gap-4 py-10 sm:grid-cols-2 lg:grid-cols-3 animate-grid-in">
           {sem.modules.map(m => {
             const active = isModuleActive(m.code);

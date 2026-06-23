@@ -11,7 +11,7 @@ type QuestionBankFile = {
 };
 
 type Chapter = { id: number; title: string; subtitle: string; emoji: string; page: number; lectureRange: string; subjects: Subject[]; keywords?: string[] };
-type Subject = { id: SubjectColor; name: string; iconName: string; lectures: string; lectureCount: number; questions: Question[] };
+type Subject = { id: SubjectColor; name: string; iconName: string; lectures: string; lectureCount: number; lectureNames?: string[]; questions: Question[] };
 
 type Question = {
   id: string;
@@ -135,16 +135,36 @@ async function main(): Promise<void> {
 
   batch.questions.forEach((incoming, index) => {
     const text = incoming.text ?? incoming.question ?? '';
-    const chapter = resolveChapter(bank, incoming, batch);
-    if (!chapter) {
-      report.needsReview.push({ index, reason: 'No matching chapter. Add chapterId or exact chapterTitle.', text });
-      return;
-    }
 
-    const subjectId = inferSubject(incoming.subject ?? incoming.topic ?? '');
-    if (!subjectId) {
-      report.needsReview.push({ index, reason: 'No matching subject. Add one of the canonical subject names.', text });
-      return;
+    let chapter: Chapter | undefined;
+    let subjectId: SubjectColor | undefined;
+    let resolvedLecture: number | undefined;
+
+    const smartRoute = resolveSmartRouting(bank, incoming);
+    if (smartRoute) {
+      chapter = smartRoute.chapter;
+      subjectId = smartRoute.subjectId;
+      resolvedLecture = smartRoute.lecture;
+    } else {
+      // Try content-based routing: scan question text against lectureNames
+      const contentRoute = resolveContentRouting(bank, incoming);
+      if (contentRoute) {
+        chapter = contentRoute.chapter;
+        subjectId = contentRoute.subjectId;
+        resolvedLecture = contentRoute.lecture;
+      } else {
+        chapter = resolveChapter(bank, incoming, batch);
+        if (!chapter) {
+          report.needsReview.push({ index, reason: 'No matching chapter. Add chapterId or exact chapterTitle.', text });
+          return;
+        }
+
+        subjectId = inferSubject(incoming.subject ?? incoming.topic ?? '');
+        if (!subjectId) {
+          report.needsReview.push({ index, reason: 'No matching subject. Add one of the canonical subject names.', text });
+          return;
+        }
+      }
     }
 
     const cleanedIncomingText = cleanStarText(text);
@@ -160,7 +180,7 @@ async function main(): Promise<void> {
       return;
     }
 
-    const converted = convertQuestion(incoming, bank.meta.moduleCode, chapter, subjectId);
+    const converted = convertQuestion(incoming, bank.meta.moduleCode, chapter, subjectId, resolvedLecture);
     const validationError = validateQuestion(converted);
     if (validationError) {
       report.needsReview.push({ index, reason: validationError, text });
@@ -186,6 +206,123 @@ async function main(): Promise<void> {
   console.log(`Removed ${report.removedExistingDuplicates.length} existing duplicates`);
   console.log(`Needs review ${report.needsReview.length}`);
   console.log(`Report written to ${reportPath}`);
+}
+
+const SUBJECT_KEYWORDS_AND_IDS = [
+  'anatomy', 'histology', 'physiology', 'biochem', 'biochemistry',
+  'microbiology', 'pathology', 'pharma', 'pharmacology', 'clinical',
+  'parasitology', 'psychiatry', 'ophthalmology', 'ent'
+];
+
+export function resolveSmartRouting(bank: QuestionBankFile, incoming: IncomingQuestion): { chapter: Chapter; subjectId: SubjectColor; lecture: number } | null {
+  const topic = incoming.topic?.trim();
+  const subject = incoming.subject?.trim();
+  const chapterTitle = incoming.chapterTitle?.trim();
+
+  // Try matching against lectureNames
+  const candidates = [topic, subject, chapterTitle].filter((c): c is string => typeof c === 'string' && c.length > 0);
+
+  for (const candidate of candidates) {
+    const normalizedCandidate = normalize(candidate);
+    if (!normalizedCandidate) continue;
+
+    for (const chapter of bank.chapters) {
+      for (const subjectObj of chapter.subjects) {
+        if (!subjectObj.lectureNames) continue;
+
+        // 1. Exact match first
+        const exactIndex = subjectObj.lectureNames.findIndex(name => normalize(name) === normalizedCandidate);
+        if (exactIndex !== -1) {
+          return {
+            chapter,
+            subjectId: subjectObj.id,
+            lecture: exactIndex + 1
+          };
+        }
+
+        // 2. Substring match, but only if it's not a generic subject header
+        if (!SUBJECT_KEYWORDS_AND_IDS.includes(normalizedCandidate)) {
+          const subIndex = subjectObj.lectureNames.findIndex(name => {
+            const normalizedName = normalize(name);
+            return normalizedName.includes(normalizedCandidate) || normalizedCandidate.includes(normalizedName);
+          });
+          if (subIndex !== -1) {
+            return {
+              chapter,
+              subjectId: subjectObj.id,
+              lecture: subIndex + 1
+            };
+          }
+        }
+      }
+    }
+  }
+
+  return null;
+}
+
+/**
+ * Content-based routing fallback: scans the question text itself against all
+ * lectureNames in the bank. Used when topic/subject/chapterTitle metadata is
+ * missing or did not match any lectureNames. Tokenizes the question text and
+ * scores each lecture by counting how many of its significant words appear
+ * in the question. Requires a minimum confidence threshold to avoid false positives.
+ */
+export function resolveContentRouting(bank: QuestionBankFile, incoming: IncomingQuestion): { chapter: Chapter; subjectId: SubjectColor; lecture: number } | null {
+  const questionText = normalize(incoming.text ?? incoming.question ?? '');
+  if (!questionText || questionText.length < 10) return null; // Too short to reliably match
+
+  const questionWords = new Set(questionText.split(/\s+/).filter(w => w.length > 2));
+  if (questionWords.size === 0) return null;
+
+  let bestMatch: { chapter: Chapter; subjectId: SubjectColor; lecture: number } | null = null;
+  let bestScore = 0;
+
+  for (const chapter of bank.chapters) {
+    for (const subjectObj of chapter.subjects) {
+      if (!subjectObj.lectureNames) continue;
+
+      for (let i = 0; i < subjectObj.lectureNames.length; i++) {
+        const lectureName = subjectObj.lectureNames[i];
+        const lectureWords = normalize(lectureName).split(/\s+/).filter(w => w.length > 2);
+        if (lectureWords.length === 0) continue;
+
+        // Count how many significant words from the lecture name appear in the question text
+        let hits = 0;
+        for (const lw of lectureWords) {
+          // Skip generic words that would cause false positives
+          if (['the', 'and', 'function', 'introduction', 'physiology', 'anatomy', 'histology', 'biochemistry', 'clinical', 'pathology', 'pharmacology', 'microbiology'].includes(lw)) continue;
+          for (const qw of questionWords) {
+            if (qw === lw || (lw.length >= 5 && (qw.includes(lw) || lw.includes(qw)))) {
+              hits++;
+              break;
+            }
+          }
+        }
+
+        // Score = proportion of lecture name words found in question text
+        // Only count non-generic words for scoring
+        const significantLectureWords = lectureWords.filter(w => !['the', 'and', 'function', 'introduction', 'physiology', 'anatomy', 'histology', 'biochemistry', 'clinical', 'pathology', 'pharmacology', 'microbiology'].includes(w));
+        if (significantLectureWords.length === 0) continue;
+
+        const score = hits / significantLectureWords.length;
+
+        // Require at least 50% of significant lecture words to match AND at least 2 hits
+        // (or 1 hit if the lecture name has only 1 significant word AND that word is 6+ chars)
+        const minHits = significantLectureWords.length === 1 && significantLectureWords[0].length >= 6 ? 1 : 2;
+        if (score >= 0.5 && hits >= minHits && score > bestScore) {
+          bestScore = score;
+          bestMatch = {
+            chapter,
+            subjectId: subjectObj.id,
+            lecture: i + 1
+          };
+        }
+      }
+    }
+  }
+
+  return bestMatch;
 }
 
 function resolveChapter(bank: QuestionBankFile, question: IncomingQuestion, batch: IncomingBatch): Chapter | undefined {
@@ -246,13 +383,13 @@ function getOrCreateSubject(chapter: Chapter, subjectId: SubjectColor): Subject 
   return created;
 }
 
-function convertQuestion(incoming: IncomingQuestion, moduleCode: string, chapter: Chapter, subject: SubjectColor): Question {
+function convertQuestion(incoming: IncomingQuestion, moduleCode: string, chapter: Chapter, subject: SubjectColor, resolvedLecture?: number): Question {
   const type = inferType(incoming);
   const id = nextQuestionId(moduleCode, chapter, subject);
   const base = {
     id,
     type,
-    lecture: incoming.lecture ?? chapter.id,
+    lecture: resolvedLecture ?? incoming.lecture ?? chapter.id,
     text: cleanStarText(incoming.text ?? incoming.question ?? ''),
     explanation: incoming.explanation ?? 'Review the related lecture material for the rationale.',
     keyConcept: incoming.keyConcept
@@ -421,7 +558,7 @@ function validateUniqueIds(bank: QuestionBankFile): void {
   }
 }
 
-function normalize(value: string): string {
+export function normalize(value: string): string {
   return value.toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim().replace(/\s+/g, ' ');
 }
 
@@ -429,7 +566,13 @@ function escapeRegExp(value: string): string {
   return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
-main().catch((error) => {
-  console.error(error);
-  process.exitCode = 1;
-});
+const isMain = typeof process !== 'undefined' && process.argv[1] && (
+  process.argv[1].endsWith('import-batch.ts')
+);
+
+if (isMain) {
+  main().catch((error) => {
+    console.error(error);
+    process.exitCode = 1;
+  });
+}

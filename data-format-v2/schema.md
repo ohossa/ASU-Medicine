@@ -1,4 +1,4 @@
-# MEDARK Question Bank Format v2
+# ASU Portal Question Bank Format v2
 
 Canonical module files live at `src/imports/year-{year}/semester-{semester}/{moduleCode}.json`, for example `src/imports/year-2/semester-2/MEM-2.json`.
 
@@ -37,17 +37,28 @@ Each file contains one complete module question bank across all supported questi
 | `page` | `number` | Yes | 1-based page reference. |
 | `lectureRange` | `string` | Yes | Human-readable lecture range. |
 | `subjects` | `Subject[]` | Yes | Present for every chapter. Use `[]` for locked or inactive chapters. |
+| `keywords` | `string[]` | Optional | Keyword list for keyword-based chapter fallback routing. When smart routing and content routing both fail, the importer matches question text against these keywords to resolve the target chapter. |
 
 ## Subject
 
 | Field | Type | Required | Rules |
 | --- | --- | --- | --- |
-| `id` | `SubjectColor` | Yes | Must be one of `anatomy`, `histology`, `physiology`, `biochem`, `microbiology`, `pathology`, `pharma`, `clinical`. This is the source for `subjectColor`. |
+| `id` | `SubjectColor` | Yes | Must be one of `anatomy`, `histology`, `physiology`, `biochem`, `microbiology`, `pathology`, `pharma`, `clinical`, `parasitology`, `psychiatry`, `ophthalmology`, `ent`. This is the source for `subjectColor`. |
 | `name` | `string` | Yes | Display name. |
 | `iconName` | `string` | Yes | Lucide icon component name used by the UI. |
 | `lectures` | `string` | Yes | Human-readable lecture labels. |
 | `lectureCount` | `number` | Yes | Non-negative integer count. |
+| `lectureNames` | `string[]` | Yes | List of official lecture names in syllabus/textbook order. Used for smart auto-routing. |
 | `questions` | `Question[]` | Yes | Questions for this subject. Use `[]` when none exist yet. |
+
+### Smart Routing with `lectureNames`
+
+The `lectureNames` array serves as the module's official syllabus index. When importing questions, the system automatically checks if the incoming question's `topic` (or `subject` or `chapterTitle`) matches any of the entries in `lectureNames` (performing case-insensitive exact and substring matches, guarded against generic subject titles). If a match is found, the question is routed directly to that chapter and subject, and its `lecture` number is automatically set to the 1-based index of the matching lecture in `lectureNames`. If no match is found, the system falls back to content-based routing.
+
+**Content-Based Routing Fallback**: When `resolveSmartRouting` fails (no `topic`/`subject`/`chapterTitle` metadata matched any lecture name), the importer scans the question text itself against all `lectureNames` in the bank. It tokenizes the question text and each lecture name into significant words (length > 2, excluding generic terms like "anatomy", "physiology", etc.), then scores each lecture by counting how many of its significant words appear in the question. A match requires ≥50% of the lecture's significant words to be found AND at least 2 hits (or 1 hit if the lecture name has only 1 significant word that is ≥6 characters long). The highest-scoring lecture wins. If content-based routing also fails, the importer falls back to `resolveChapter` + `inferSubject`, and finally marks the question as `needsReview`.
+
+The full routing fallback chain is: `resolveSmartRouting` → `resolveContentRouting` → `resolveChapter` + `inferSubject` → `needsReview`.
+
 
 ## Question ID format
 
@@ -71,6 +82,10 @@ Example: `MEM2-CH1-ANAT-0001`.
 | `pathology` | `PATH` |
 | `pharma` | `PHAR` |
 | `clinical` | `CLIN` |
+| `parasitology` | `PARA` |
+| `psychiatry` | `PSYC` |
+| `ophthalmology` | `OPHT` |
+| `ent` | `ENT` |
 
 Question IDs must not duplicate within a file. A validator must reject duplicates.
 
@@ -86,6 +101,7 @@ All top-level question objects include these fields:
 | `text` | `string` | Yes | The question prompt. |
 | `explanation` | `string` | Yes | Always present. Use a concise rationale when no extended explanation exists. |
 | `keyConcept` | `string` | Optional | High-yield learning point. |
+| `repetitionCount` | `number` | Optional | Auto-managed by the importer. Tracks how many times a question has been seen across batches. When a duplicate is detected during import, the existing question's `repetitionCount` is incremented automatically. Do not set manually. |
 
 ## MCQ question
 
@@ -117,16 +133,18 @@ Required fields: `modelAnswer`, `explanation`.
 
 Required field: `subQuestions`.
 
-Case sub-question types can be `mcq` or `essay` only. Each sub-question has:
+Case sub-question types can be `mcq`, `essay`, or `fillblank`. Each sub-question has:
 
 | Field | Type | Required | Rules |
 | --- | --- | --- | --- |
 | `id` | `string` | Yes | Unique within the parent case, commonly `{parentId}-SQ1`. |
-| `type` | `mcq | essay` | Yes | Only these two values. |
+| `type` | `mcq | essay | fillblank` | Yes | Only these three values. |
 | `text` | `string` | Yes | Sub-question prompt. |
 | `options` | `string[]` | Required for `mcq` | MCQ answer options. |
 | `correctIndex` | `number` | Required for `mcq` | 0-indexed answer. |
 | `modelAnswer` | `string` | Required for `essay` | Essay answer. |
+| `blanks` | `string[]` | Required for `fillblank` | Correct answers in order. |
+| `acceptedAnswers` | `string[][]` | Optional | For `fillblank` sub-questions: each inner array holds accepted alternatives for the corresponding blank. |
 | `explanation` | `string` | Yes | Always present. |
 | `keyConcept` | `string` | Optional | High-yield learning point. |
 
@@ -145,12 +163,12 @@ A valid file satisfies all of the following:
 - `meta.semester` is 1 or 2.
 - `chapters` is present.
 - `chapter.id` values are 1-based and sequential within the module.
-- Every subject `id` is one of the eight canonical subject IDs.
+- Every subject `id` is one of the twelve canonical subject IDs.
 - Every top-level question has `lecture` as an integer.
 - Every top-level question has `explanation`.
 - MCQ and true/false questions use numeric `correctIndex` only.
 - Matching questions use `pairs` only.
 - Essay questions always include `modelAnswer`.
-- Case sub-questions are only `mcq` or `essay`.
+- Case sub-questions are only `mcq`, `essay`, or `fillblank`.
 - Fillblank questions include ordered `blanks`.
 - No duplicate top-level question IDs exist in the file.

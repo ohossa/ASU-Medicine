@@ -1,4 +1,4 @@
-// Medark Syllabus-Aware PDF/Doc Question Intake Agent
+// ASU Portal Syllabus-Aware PDF/Doc Question Intake Agent
 //
 // Usage:
 //   npx tsx data-format-v2/scripts/intake-agent.ts <document-path> <module-code>
@@ -157,10 +157,10 @@ function buildSystemPrompt(moduleCode: string, chapters: CanonicalChapter[]): st
     .map((c) => `  - id ${c.id}: ${c.title}${c.subtitle ? ` — ${c.subtitle}` : ""}`)
     .join("\n");
 
-  return `You are a medical education content structuring engine for the MEDARK v2 platform.
+  return `You are a medical education content structuring engine for the ASU Portal v2 platform.
 
 You will receive raw text extracted from an exam paper or question document.
-Convert every distinct question into the MEDARK v2 incoming batch JSON schema.
+Convert every distinct question into the ASU Portal v2 incoming batch JSON schema.
 
 OUTPUT: Respond with ONLY a single valid JSON object. No markdown fences, no commentary.
 
@@ -330,7 +330,7 @@ async function main(): Promise<void> {
     fail("Usage: npx tsx data-format-v2/scripts/intake-agent.ts <document-path> <module-code>");
   }
 
-  console.log(`\n📄 Medark Intake Agent — ${path.basename(docPath)} → ${moduleCode}\n`);
+  console.log(`\n📄 ASU Portal Intake Agent — ${path.basename(docPath)} → ${moduleCode}\n`);
 
   // 1. Extract document text.
   let rawText = await extractText(docPath);

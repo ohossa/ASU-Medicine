@@ -102,8 +102,6 @@ const lookupModule = (mCode: string): ModuleInfo | null => {
 };
 
 function QuizFlowWrapper({
-  code,
-  mode,
   selectedModule,
   setSelectedModule,
   studyMode,
@@ -129,8 +127,6 @@ function QuizFlowWrapper({
   historySource,
   t
 }: {
-  code?: string;
-  mode?: string;
   selectedModule: ModuleInfo | null;
   setSelectedModule: (m: ModuleInfo | null) => void;
   studyMode: 'mcq' | 'essay' | 'mixed' | null;
@@ -157,6 +153,7 @@ function QuizFlowWrapper({
   t: (key: string) => string;
 }) {
   const navigate = useNavigate();
+  const { code, mode } = useParams<{ code: string; mode: string }>();
 
   useEffect(() => {
     if (code) {
@@ -188,11 +185,15 @@ function QuizFlowWrapper({
             moduleCode={selectedModule.code}
             onSelectChapter={handleSelectChapter}
             onSelectHistory={(res) => handleSelectHistory(res, 'chapters')}
-            onBackToModeSelect={() => navigate(`/year-2/${selectedModule.code.toLowerCase()}`)}
+            onBackToModeSelect={() => {
+              const match = location.pathname.match(/\/year-(\d+)/);
+              const yr = match ? match[1] : '2';
+              navigate(`/year-${yr}/${selectedModule.code.toLowerCase()}`);
+            }}
             userButton={customUserButton}
             breadcrumbPath={[
               { label: t('portal') || 'Portal', onClick: () => navigate('/') },
-              { label: t(`year${selectedYear || 2}`) || `Year ${selectedYear || 2}`, onClick: () => navigate('/year-2') },
+              { label: t(`year${selectedYear || 2}`) || `Year ${selectedYear || 2}`, onClick: () => navigate(`/year-${selectedYear || 2}`) },
               { label: selectedModule?.name || '' }
             ]}
           />
@@ -205,8 +206,12 @@ function QuizFlowWrapper({
             chapter={selectedChapter}
             breadcrumbPath={[
               { label: t('portal') || 'Portal', onClick: () => navigate('/') },
-              { label: t(`year${selectedYear || 2}`) || `Year ${selectedYear || 2}`, onClick: () => navigate('/year-2') },
-              { label: selectedModule?.name || '', onClick: () => navigate(`/year-2/${selectedModule.code.toLowerCase()}`) },
+              { label: t(`year${selectedYear || 2}`) || `Year ${selectedYear || 2}`, onClick: () => navigate(`/year-${selectedYear || 2}`) },
+              { label: selectedModule?.name || '', onClick: () => {
+                const match = location.pathname.match(/\/year-(\d+)/);
+                const yr = match ? match[1] : '2';
+                navigate(`/year-${yr}/${selectedModule.code.toLowerCase()}`);
+              }} ,
               { label: selectedChapter.title }
             ]}
             onBack={() => setScreen('chapters')}
@@ -453,6 +458,17 @@ function MainApp() {
     window.addEventListener('popstate', handlePopState);
     return () => window.removeEventListener('popstate', handlePopState);
   }, [transitionTo]);
+
+  // Synchronize yearId with selectedYear dynamically from location.pathname
+  useEffect(() => {
+    const match = location.pathname.match(/\/year-(\d+)/);
+    if (match) {
+      const yr = Number(match[1]);
+      if (selectedYear !== yr) {
+        setSelectedYear(yr);
+      }
+    }
+  }, [location.pathname, selectedYear]);
 
   // Sync state to localStorage
   useEffect(() => {
@@ -918,148 +934,160 @@ function MainApp() {
             } />
 
             {/* Year Modules page */}
-            <Route path="/year-2" element={
-              <Suspense fallback={<div className="fixed inset-0 bg-background pointer-events-none" />}>
-                <YearModules 
-                  userButton={customUserButton} 
-                />
-              </Suspense>
-            } />
+            {['1', '2', '3', '4', '5'].map(yr => (
+              <Route key={`year-${yr}`} path={`/year-${yr}`} element={
+                <Suspense fallback={<div className="fixed inset-0 bg-background pointer-events-none" />}>
+                  <YearModules 
+                    userButton={customUserButton} 
+                  />
+                </Suspense>
+              } />
+            ))}
 
             {/* Study Mode Selector page */}
-            <Route path="/year-2/:code" element={
-              <Suspense fallback={<div className="fixed inset-0 bg-background pointer-events-none" />}>
-                <StudyMode 
-                  userButton={customUserButton} 
-                  onStartStudyMode={(mode, mCode) => {
-                    const targetModule = lookupModule(mCode);
-                    if (targetModule) {
-                      setSelectedModule(targetModule);
-                      setStudyMode(mode);
-                      setScreen('chapters');
-                      navigate(`/year-2/${mCode.toLowerCase()}/${mode}`);
-                    }
-                  }}
-                  onOpenSyllabus={(mCode) => {
-                    navigate(`/year-2/${mCode.toLowerCase()}/tracker`);
-                  }}
+            {['1', '2', '3', '4', '5'].map(yr => (
+              <Route key={`year-mode-${yr}`} path={`/year-${yr}/:code`} element={
+                <Suspense fallback={<div className="fixed inset-0 bg-background pointer-events-none" />}>
+                  <StudyMode 
+                    userButton={customUserButton} 
+                    onStartStudyMode={(mode, mCode) => {
+                      const targetModule = lookupModule(mCode);
+                      if (targetModule) {
+                        setSelectedModule(targetModule);
+                        setStudyMode(mode);
+                        setScreen('chapters');
+                        const match = location.pathname.match(/\/year-(\d+)/);
+                        const yrMatch = match ? match[1] : yr;
+                        navigate(`/year-${yrMatch}/${mCode.toLowerCase()}/${mode}`);
+                      }
+                    }}
+                    onOpenSyllabus={(mCode) => {
+                      const match = location.pathname.match(/\/year-(\d+)/);
+                      const yrMatch = match ? match[1] : yr;
+                      navigate(`/year-${yrMatch}/${mCode.toLowerCase()}/tracker`);
+                    }}
+                  />
+                </Suspense>
+              } />
+            ))}
+
+            {/* Chapters / Quiz sub-flow wrapper */}
+            {['1', '2', '3', '4', '5'].map(yr => (
+              <Route key={`year-quiz-${yr}`} path={`/year-${yr}/:code/:mode`} element={
+                <FeatureErrorBoundary name="QuizFlow">
+                  <QuizFlowWrapper 
+                    selectedModule={selectedModule}
+                    setSelectedModule={setSelectedModule}
+                    studyMode={studyMode}
+                    setStudyMode={setStudyMode}
+                    screen={screen}
+                    setScreen={setScreen}
+                    activeChapters={activeChapters}
+                    studyModeNameMap={studyModeNameMap}
+                    selectedChapter={selectedChapter}
+                    handleSelectChapter={handleSelectChapter}
+                    handleSelectHistory={handleSelectHistory}
+                    customUserButton={customUserButton}
+                    selectedYear={selectedYear}
+                    handleSelectSubject={handleSelectSubject}
+                    handleQuickStart={handleQuickStart}
+                    quizPayload={quizPayload}
+                    handleFinishQuiz={handleFinishQuiz}
+                    resultPayload={resultPayload}
+                    handleRetake={handleRetake}
+                    handleBackToChapters={handleBackToChapters}
+                    isFromHistory={isFromHistory}
+                    setIsFromHistory={setIsFromHistory}
+                    historySource={historySource}
+                    t={t}
+                  />
+                </FeatureErrorBoundary>
+              } />
+            ))}
+
+            {/* Tools pages */}
+            <Route path="/history" element={
+              <Suspense fallback={<div>Loading...</div>}>
+                <HistoryScreen
+                  onBack={() => navigate('/')}
+                  onSelectHistory={(res) => handleSelectHistory(res, 'history')}
+                  userButton={customUserButton}
                 />
               </Suspense>
             } />
 
-          {/* Chapters / Quiz sub-flow wrapper */}
-          <Route path="/year-2/:code/:mode" element={
-            <FeatureErrorBoundary name="QuizFlow">
-              <QuizFlowWrapper 
-              code={params.code} 
-              mode={params.mode}
-              selectedModule={selectedModule}
-              setSelectedModule={setSelectedModule}
-              studyMode={studyMode}
-              setStudyMode={setStudyMode}
-              screen={screen}
-              setScreen={setScreen}
-              activeChapters={activeChapters}
-              studyModeNameMap={studyModeNameMap}
-              selectedChapter={selectedChapter}
-              handleSelectChapter={handleSelectChapter}
-              handleSelectHistory={handleSelectHistory}
-              customUserButton={customUserButton}
-              selectedYear={selectedYear}
-              handleSelectSubject={handleSelectSubject}
-              handleQuickStart={handleQuickStart}
-              quizPayload={quizPayload}
-              handleFinishQuiz={handleFinishQuiz}
-              resultPayload={resultPayload}
-              handleRetake={handleRetake}
-              handleBackToChapters={handleBackToChapters}
-              isFromHistory={isFromHistory}
-              setIsFromHistory={setIsFromHistory}
-              historySource={historySource}
-              t={t}
-            />
-            </FeatureErrorBoundary>
-          } />
-
-          {/* Tools pages */}
-          <Route path="/history" element={
-            <Suspense fallback={<div>Loading...</div>}>
-              <HistoryScreen
-                onBack={() => navigate('/')}
-                onSelectHistory={(res) => handleSelectHistory(res, 'history')}
-                userButton={customUserButton}
-              />
-            </Suspense>
-          } />
-
-          <Route path="/case-solver" element={
-            <Suspense fallback={<div>Loading...</div>}>
-              <ClinicalCaseSolver
-                onBack={() => navigate('/')}
-                userButton={customUserButton}
-              />
-            </Suspense>
-          } />
-
-          <Route path="/marks-calculator" element={
-            <FeatureErrorBoundary name="MarksCalculator">
+            <Route path="/case-solver" element={
               <Suspense fallback={<div>Loading...</div>}>
-                <MarksCalculator
+                <ClinicalCaseSolver
                   onBack={() => navigate('/')}
                   userButton={customUserButton}
                 />
               </Suspense>
-            </FeatureErrorBoundary>
-          } />
+            } />
 
-          <Route path="/question-search" element={
-            <Suspense fallback={<div>Loading...</div>}>
-              <QuestionSearch
-                onBack={() => navigate('/')}
-                userButton={customUserButton}
-              />
-            </Suspense>
-          } />
+            <Route path="/marks-calculator" element={
+              <FeatureErrorBoundary name="MarksCalculator">
+                <Suspense fallback={<div>Loading...</div>}>
+                  <MarksCalculator
+                    onBack={() => navigate('/')}
+                    userButton={customUserButton}
+                  />
+                </Suspense>
+              </FeatureErrorBoundary>
+            } />
 
-          <Route path="/analytics" element={
-            <FeatureErrorBoundary name="AnalyticsDashboard">
+            <Route path="/question-search" element={
               <Suspense fallback={<div>Loading...</div>}>
-                <AnalyticsDashboard
+                <QuestionSearch
                   onBack={() => navigate('/')}
                   userButton={customUserButton}
-                  history={getQuizHistory()}
-                  studentName={user ? (user.fullName || `${user.firstName} ${user.lastName}`.trim() || 'Student') : 'Student'}
-                  studentYear={studentYear}
-                  progress={yearProgress}
                 />
               </Suspense>
-            </FeatureErrorBoundary>
-          } />
+            } />
 
-          <Route path="/flagged-questions" element={
-            <Suspense fallback={<div>Loading...</div>}>
-              <FlaggedQuestionsScreen
-                onBack={() => navigate('/')}
-                onPracticeQuiz={(ch, subName, qs) => {
-                  setSelectedChapter(ch);
-                  setQuizPayload({
-                    chapter: ch,
-                    subject: ch.subjects.find(s => s.name === subName) || null,
-                    questions: qs
-                  });
-                  setScreen('quiz');
-                  navigate(`/year-2/${(code || 'mem-2').toLowerCase()}/mixed`);
-                }}
-                userButton={customUserButton}
-              />
-            </Suspense>
-          } />
-          
-          <Route path="/year-2/:code/tracker" element={
-            <Suspense fallback={<div>Loading...</div>}>
-              <SyllabusTrackerPage userButton={customUserButton} />
-            </Suspense>
-          } />
+            <Route path="/analytics" element={
+              <FeatureErrorBoundary name="AnalyticsDashboard">
+                <Suspense fallback={<div>Loading...</div>}>
+                  <AnalyticsDashboard
+                    onBack={() => navigate('/')}
+                    userButton={customUserButton}
+                    history={getQuizHistory()}
+                    studentName={user ? (user.fullName || `${user.firstName} ${user.lastName}`.trim() || 'Student') : 'Student'}
+                    studentYear={studentYear}
+                    progress={yearProgress}
+                  />
+                </Suspense>
+              </FeatureErrorBoundary>
+            } />
+
+            <Route path="/flagged-questions" element={
+              <Suspense fallback={<div>Loading...</div>}>
+                <FlaggedQuestionsScreen
+                  onBack={() => navigate('/')}
+                  onPracticeQuiz={(ch, subName, qs) => {
+                    setSelectedChapter(ch);
+                    setQuizPayload({
+                      chapter: ch,
+                      subject: ch.subjects.find(s => s.name === subName) || null,
+                      questions: qs
+                    });
+                    setScreen('quiz');
+                    const match = location.pathname.match(/\/year-(\d+)/);
+                    const yr = match ? match[1] : '2';
+                    navigate(`/year-${yr}/${(code || 'mem-2').toLowerCase()}/mixed`);
+                  }}
+                  userButton={customUserButton}
+                />
+              </Suspense>
+            } />
+            
+            {['1', '2', '3', '4', '5'].map(yr => (
+              <Route key={`year-tracker-${yr}`} path={`/year-${yr}/:code/tracker`} element={
+                <Suspense fallback={<div>Loading...</div>}>
+                  <SyllabusTrackerPage userButton={customUserButton} />
+                </Suspense>
+              } />
+            ))}
 
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
@@ -1103,7 +1131,8 @@ function MainApp() {
               onClose={() => setShowTrackerSelector(false)}
               onSelectModule={(mod) => {
                 setShowTrackerSelector(false);
-                navigate(`/year-2/${mod.code.toLowerCase()}/tracker`);
+                const yr = mod.code.endsWith('-1') ? '1' : mod.code.endsWith('-2') ? '2' : mod.code.endsWith('-3') ? '3' : mod.code.endsWith('-4') ? '4' : '5';
+                navigate(`/year-${yr}/${mod.code.toLowerCase()}/tracker`);
               }}
             />
           </Suspense>

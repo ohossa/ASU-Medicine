@@ -1,0 +1,5077 @@
+{
+  "inputPath": "data-format-v2/question-intake/year-1/semester-2/IPHA-1 [Introduction to Clinical Pharmacology]/_ready/IPHA-1_batch_master.json",
+  "targetPath": "src/imports/year-1/semester-2/IPHA-1.json",
+  "moduleCode": "IPHA-1",
+  "added": [
+    {
+      "id": "IPHA1-CH1-PHAR-0001",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "At pH 9.0, in which form would lidocaine (a weak base with pKa 7.9) exist predominantly?"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0002",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Define drug bioavailability."
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0003",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Enumerate the factors affecting drug bioavailability."
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0004",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Explain why bioavailability of the IV route is 100%."
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0005",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "List the routes that bypass first-pass metabolism."
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0006",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Mention two routes of administration that avoid first-pass metabolism."
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0007",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "A main determinant of bioavailability following oral administration is:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0008",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "A main determinant of bioavailability following oral administration is:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0009",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "All of the following are incorrect regarding first-pass elimination except:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0010",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Drug A is acidic with pKa = 3, oral bioavailability = 70%, t½ = 6 hours, Css after 24-30 hours = 5 mg/L and Vd = 5 L/kg. As regards its oral bioavailability, it seems that:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0011",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Drug A is basic and follows first-order kinetics. Its pKa is 9, its Vd is 300 L, and its clearance is hepatic. The following is true about drug A:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0012",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Drugs with variable bioavailability among different dosage forms are:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0013",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Important factor/s which may control diffusion of drugs across cell membranes:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0014",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Important factor(s) which may govern diffusion of drugs across cell membranes:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0015",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Oral bioavailability of drug A is 60%; this means that:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0016",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "The first-pass effect is most likely to occur if the drug is given:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0017",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "The first-pass effect is most likely to occur if the drug is given:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0018",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "The following are true about diffusion of drugs across cell membranes except:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0019",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "The following are true concerning diffusion of drugs across cell membranes EXCEPT:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0020",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "The following can affect drug bioavailability except:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0021",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "The following conditions or drugs can increase the oral bioavailability of a lipophilic drug except:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0022",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "The following increases the rate of absorption of drugs:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0023",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "The following is a suitable route for irritant drugs:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0024",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "The following is a suitable route for irritant drugs:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0025",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "The following is true concerning diffusion of drugs across cell membranes:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0026",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "The following is true concerning drug diffusion across cell membranes EXCEPT:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0027",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "The following route is used only for topical administration:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0028",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "The following route is used only for topical drug administration:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0029",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "The following route(s) of administration is/are suitable for systemic drug administration:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0030",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Which of the following does not affect oral bioavailability:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0031",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Which of the following factors increases absorption of a drug?"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0032",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Which of the following is/are true?"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0033",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Which of the following is true about an acidic drug?"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0034",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Which of the following is true about oral dosage forms?"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0035",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Which of the following routes favors patient compliance the most?"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0036",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Which of the following routes of administration allows for titrating the dose of a drug with the response?"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0037",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Which of the following statements is/are True?"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0038",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Which of the following statements is true?"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0039",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Define volume of distribution."
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0040",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Describe what the volume of distribution indicates about the extent of tissue uptake of drugs."
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0041",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Discuss the clinical significance of binding to plasma protein."
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0042",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Discuss the clinical significance of determining the volume of distribution of drugs."
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0043",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Explain why aspirin may increase the risk of toxicity with warfarin."
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0044",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Explain why dialysis is not used with high Vd drugs."
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0045",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Explain why dialysis is not used with high volume-of-distribution drugs."
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0046",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Explain why tetracyclines are contraindicated in a pregnant woman."
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0047",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "List four factors affecting the volume of distribution."
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0048",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "List the pharmacokinetic characteristics of a drug with high lipid solubility."
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0049",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "List the pharmacokinetic properties of a drug of which more than 90% of the dose is bound to plasma protein."
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0050",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Mention how the loading dose can be calculated."
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0051",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "A 25-year-old woman was admitted after ingesting 50 tablets of drug X (total dose 2000 mg). Investigations revealed a serum drug level of 10 mg/L. The apparent volume of distribution (Vd) of drug X is:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0052",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "A 36-year-old man diagnosed with malaria received 600 mg of hydroxychloroquine (3 tablets) as a loading dose. The peak plasma concentration was 0.05 mg/L. The apparent volume of distribution (Vd) is:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0053",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "A 40-year-old man with a methicillin-resistant S. aureus infection received 2000 mg of vancomycin as an IV loading dose. The peak plasma concentration was 28.5 mg/L. The apparent volume of distribution (Vd) is:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0054",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "A high Vd for a drug indicates which of the following effect:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0055",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "All the following regarding binding of drugs to plasma protein are true EXCEPT:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0056",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Choose the correct answer:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0057",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Choose the correct answer regarding binding to plasma protein:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0058",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Drug distribution is not affected by:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0059",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Drug distribution is not affected by:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0060",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Drug X has Vd = 39 L in a patient weighing 70 kg. The extent of its distribution is nearly:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0061",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Drug X is given in a dose of 500 mg to a woman with a body weight of 100 kg until Cp was 100 mg/dl. The drug is mainly present in:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0062",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Drugs binding to plasma protein have the following features except:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0063",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Drugs with a small volume of distribution are characterized by:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0064",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Drugs with a small volume of distribution (Vd) are characterised by:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0065",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Lipophilicity reduces:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0066",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Regarding pharmacokinetics, all of the following are correct except:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0067",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Significant drug interaction at albumin binding sites occurs mainly with which of the following characters?"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0068",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "The following characteristic of a drug tends to reduce its volume of distribution:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0069",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "The following characteristic of a drug tends to reduce its volume of distribution:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0070",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "The following do not affect drug distribution:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0071",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "The following do not affect drug distribution:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0072",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "The following drug does not readily cross to the CNS except in meningitis:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0073",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "The following drugs do not readily cross into the CNS:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0074",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "The following drugs do not readily cross to the CNS:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0075",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "The following drugs do not readily cross to the CNS in meningitis:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0076",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "The following statements are correct except:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0077",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "The lipophilic part of a drug (non-ionised form) will have reduced:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0078",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "The lipophilic part of a drug will have reduced:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0079",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "The loading dose of a drug is governed by its:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0080",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "The previous drug X has the following properties EXCEPT:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0081",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Vd of drug A is 110 L given to a patient whose body weight is 70 kg. Drug A has the following characters:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0082",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Which of the following is a wrong statement?"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0083",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Which of the following is incorrect regarding lipophilicity:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0084",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Which of the following is Wrong?"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0085",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Which value should also be known to calculate the initial loading dose?"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0086",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Which value should also be known to calculate the initial loading dose?"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0087",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Administration of drugs may affect the metabolism of other drugs. Discuss this statement."
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0088",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Define enzyme induction, give one example, and mention its clinical significance."
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0089",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Define first-pass metabolism and enumerate two drugs that undergo or reduce hepatic first-pass metabolism."
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0090",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Describe the criteria of a drug to induce serious drug interactions."
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0091",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Discuss phenytoin kinetics and its clinical significance."
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0092",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Discuss the factors affecting hepatic first-pass metabolism."
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0093",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Explain why drug X bioavailability is known to be 60% but on oral administration it was found to be 80%."
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0094",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Explain why prodrugs should be given orally."
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0095",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Explain why propranolol oral dose is 40 mg while its IV dose is 1 mg."
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0096",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "List four factors that may affect drug metabolism."
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0097",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Mention one example of drug categories that may cause drug interactions of clinical significance."
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0098",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "1st order kinetic: which of the following is true:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0099",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "A 48-year-old woman on warfarin is prescribed an antibiotic that is a liver microsomal enzyme inducer and may reduce warfarin serum level and action. Which is the prescribed antibiotic?"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0100",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "A main determinant of bioavailability (F) following oral administration is:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0101",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "All following are correct regarding a high hepatic extraction ratio drug except:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0102",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "All of the following is incorrect as regard 1st pass elimination except:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0103",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "All the following are true except:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0104",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "As regard drug interaction: all of the following are true except:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0105",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Conjugation in the body may result in a drug becoming:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0106",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Drug A is basic and follows first order kinetics. Its pKa is 9, Vd is 300 L, and clearance is hepatic. Hepatic clearance is defined as:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0107",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Drug metabolism in humans usually results in a product that is:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0108",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Drug/s reducing hepatic 1st pass metabolism is/are:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0109",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Drug(s) with saturation kinetics and narrow therapeutic index:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0110",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Drug(s) with saturation kinetics & narrow therapeutic index:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0111",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Drugs reducing hepatic first-pass metabolism:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0112",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Enzyme inducers include:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0113",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Enzyme inhibitors include:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0114",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Extraction ratio (E) of a drug is:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0115",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Extraction ratio is:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0116",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "In first-order kinetics, the following statement/s is/are true except:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0117",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "In which organ is the majority of cytochrome P450 most highly expressed?"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0118",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "In zero-order kinetics, the following is incorrect:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0119",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Microsomal enzymes include:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0120",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Microsomal enzymes include:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0121",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Microsomal enzymes liable for induction include is/are:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0122",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Regarding pharmacokinetics, choose the incorrect answer:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0123",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "The addition of glucuronic acid to a drug:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0124",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "The addition of glucuronic acid to drug X - choose the correct:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0125",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "The following conditions or drugs can increase oral bioavailability of a lipophilic drug except:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0126",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "The following does not decrease the hepatic first pass metabolism:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0127",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "The following has increased rate of drug metabolism:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0128",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "The following is a phase II reaction:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0129",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "The following is/are a phase 2 reaction/s of drug metabolism:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0130",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "The following is/are a phase II reaction(s):"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0131",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "The following is/are a phase II reaction(s) of drug metabolism:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0132",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "The following is not true concerning factors affecting drug clearance:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0133",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "The following is not true concerning factors affecting drug clearance:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0134",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "The following is wrong concerning biotransformation phase 1 reactions:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0135",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "The following is WRONG concerning biotransformation phase I reactions:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0136",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "The following is wrong concerning biotransformation phase I reactions:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0137",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "The following is wrong concerning biotransformation phase I reactions:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0138",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "The Vd of drug X is 110 L and it is given to a patient whose body weight is 70 kg. Drug X has the following character(s):"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0139",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "When drug/drug interactions involve inhibition of metabolism, which of the following types of drugs are of the most concern?"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0140",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "When the extraction ratio (E) of a drug is more than 0.6 its clearance is:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0141",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Which of the following best explains the critical event that leads to liver failure following acetaminophen toxicity?"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0142",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Which of the following definition(s) is/are incorrect?"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0143",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Which of the following definition(s) is (are) incorrect:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0144",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Which of the following drugs is/are wrongly matched to the site of first-pass metabolism?"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0145",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Which of the following is a true statement?"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0146",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Which of the following is a true statement?"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0147",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Which of the following is a true statement concerning drug clearance?"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0148",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Which of the following is not an enzyme inducer?"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0149",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Which of the following is not an enzyme inhibitor?"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0150",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Which of the following is/or are microsomal enzyme?"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0151",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Changes in doses cannot be tolerated with ethanol. Explain."
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0152",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Compare between first-order and zero-order kinetic drugs in terms of elimination and amount of drug eliminated per unit time."
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0153",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Compare between first-order and zero-order kinetic drugs in terms of metabolizing enzymes, steady-state concentration and half-life."
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0154",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Define saturation kinetics."
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0155",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Define systemic drug clearance."
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0156",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Define the elimination half-life of a drug."
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0157",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Discuss the factors affecting drug clearance and their relation to clearance."
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0158",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Discuss the significance of determining drug clearance."
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0159",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Enumerate the effect of kidney function on the dose of gentamicin."
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0160",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Enumerate the factors affecting renal elimination and how they affect drug excretion."
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0161",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Mention one example of a drug category that may cause drug interactions of clinical significance."
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0162",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Mention the factors affecting the elimination half-life."
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0163",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Mention the significance of saturation kinetics."
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0164",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Mention two clinical values of the elimination half-life."
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0165",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "What factors might contribute to the elimination of a drug from the blood?"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0166",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Match the pharmacokinetic parameter or term to the appropriate statement."
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0167",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Alkalization of urine by giving bicarbonate is used to treat phenobarbital (weak acid) overdose. Which best describes the rationale for alkalization of urine in this setting?"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0168",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "All of the following are correct regarding a high hepatic extraction ratio drug except:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0169",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Characteristics of first-order kinetics include all of the following except:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0170",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Choose the correct answer:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0171",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Clearance is useful in calculation of:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0172",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Clearance is useful in calculation of:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0173",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Clearance is useful in the calculation of:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0174",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Cross-match each drug to its potential drug interaction - Aspirin:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0175",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Cross-match each drug to its potential drug interaction - Erythromycin:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0176",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Cross-match each drug to its potential drug interaction - Rifampicin:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0177",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Cross-match each drug to its potential drug interaction - Sulfonamides:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0178",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Cross-match each drug to its potential drug interaction - Tetracyclines:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0179",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Drug A (acidic, pKa 3, t½ 6 hours) most probably:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0180",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Drug X has Vd = 100 L, t1/2 = 4 days, clearance = 4 L/h, and a loading dose of 400 mg. The steady-state concentration is:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0181",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Drug X has Vd = 60 L, t1/2 = 4 days, and CL = 4 L/h. The loading dose to reach a steady-state concentration of 10 mg/L is:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0182",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Drugs binding to plasma protein have the following features except:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0183",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Drugs with saturation kinetics and a narrow therapeutic index:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0184",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Extraction ratio (E) of a drug is:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0185",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Hepatic clearance is defined as:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0186",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "In first-order kinetics, the following is WRONG:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0187",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "In first-order kinetics, the following statement(s) is/are true EXCEPT:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0188",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "In first-order kinetics, the following statement(s) is/are true except:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0189",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "In zero-order kinetics, the following is Incorrect:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0190",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Regarding drug interactions, all of the following are true except:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0191",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Regarding drug pharmacokinetics, the following are correct except:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0192",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Regarding drug pharmacokinetics, the following are correct except:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0193",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Regarding first-order kinetics, the following is wrong:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0194",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Regarding first-order kinetics, which of the following is true?"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0195",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Regarding pharmacokinetics, choose the incorrect answer:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0196",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Significant drug interaction at albumin binding sites occurs mainly with which of the following characters?"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0197",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "The following is an incorrect statement:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0198",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "The following is an incorrect statement:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0199",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "The following is not true concerning factors affecting drug clearance:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0200",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "The following is true about drug A (basic, pKa 9):"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0201",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "The following is true concerning factors affecting drug clearance:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0202",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "The following statements are correct except:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0203",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "The maintenance dose of Drug A cannot be calculated since the following parameter is missing:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0204",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "The maintenance dose of the previous drug if F = 50% is:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0205",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "The time needed to reach steady-state concentration of drug A (t1/2 = 6 h) in first-order kinetics is:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0206",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "To prolong the duration of drug action all the following are correct except:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0207",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "When the extraction ratio (E) of a drug is 0.6, its clearance is:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0208",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Which of the following characters does not increase the risk of drug-drug interaction?"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0209",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Which of the following definitions is incorrect?"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0210",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Which of the following definitions is incorrect:"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0211",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Which of the following is a true statement?"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0212",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Which of the following is a True statement?"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0213",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Which of the following is a true statement?"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0214",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Which of the following is a true statement?"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0215",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Which of the following is a true statement concerning drug clearance?"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0216",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Which of the following is a True statement concerning drug clearance?"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0217",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Which of the following statement is false?"
+    },
+    {
+      "id": "IPHA1-CH1-PHAR-0218",
+      "chapterId": 1,
+      "subject": "pharma",
+      "text": "Which of the following statements is false?"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0001",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "A patient is experiencing a severe anaphylactic reaction to an antibiotic. Which is the best drug to use and why?"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0002",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Compare between agonist and antagonist as regards affinity and efficacy."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0003",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Compare between agonist and antagonist with respect to affinity and efficacy."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0004",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Compare between chemical and physiological non-receptor antagonism in terms of characteristics, with examples."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0005",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Compare between competitive and non-competitive antagonists in terms of binding of antagonist and duration dependence."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0006",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Compare between competitive and non-competitive receptor antagonism in terms of characteristics, with examples."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0007",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Compare between full agonist and partial agonist."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0008",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Compare between up-regulation and down-regulation of receptors."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0009",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Define drug tolerance."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0010",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Discuss types of pharmacological antagonism with examples."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0011",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Enumerate 4 differences between competitive and non-competitive antagonists with examples."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0012",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Give an example of an essential drug."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0013",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Mention the difference between tolerance and tachyphylaxis."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0014",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Mention two examples of a competitive antagonist."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0015",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Cross match each type of antagonist to its example or property."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0016",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Match each type of antagonism to its defining feature or example."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0017",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Match the following drugs/drug classes to the most appropriate statement."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0018",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "A drug (X) does not produce any action on the receptor by itself but decreases the slope of the dose-response curve and suppresses the maximal response to another drug. Drug X is:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0019",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "A drug (X) does not produce any action on the receptor by itself but suppresses the maximal response to another drug. Drug X is:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0020",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Chelation is considered a:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0021",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Choose the incorrect statement:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0022",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Cross-match each receptor to its molecular mechanism - Alpha-1, M1 and M3 receptors:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0023",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Cross-match each receptor to its molecular mechanism - Alpha-2 and M2 receptors:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0024",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Cross-match each receptor to its molecular mechanism - Beta receptors:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0025",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Cross-match each receptor to its molecular mechanism - Nitric oxide:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0026",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Cross-match to the most appropriate mechanism - Benzodiazepines:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0027",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Cross-match to the most appropriate mechanism - Insulin:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0028",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Cross-match to the most appropriate mechanism - Nicotinic action of acetylcholine:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0029",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Cross-match to the most appropriate mechanism - Steroid hormones:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0030",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Drug X is an opioid analgesic with partial agonistic activity on opioid receptors. Which is true about drug X?"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0031",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Drug X is an opioid analgesic with partial agonistic activity on opioid receptors. Which is true about drug X?"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0032",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Epinephrine given in anaphylactic shock acts as:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0033",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "If drug A antagonises the effect of another drug by acting on a different receptor to induce the opposite action, drug A is considered:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0034",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "If drug A antagonizes the effect of another drug by acting on a different receptor to induce the opposite action, drug A is considered:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0035",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "In the absence of other drug, Drug X causes increase in the heart rate by activating beta receptors. In the presence of highly effective beta stimulant, however, drug X causes dose dependent reversible decrease in heart rate. Drug X is probably:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0036",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "In the absence of other drugs, Drug X increases heart rate by activating beta receptors; in the presence of a highly effective beta stimulant, Drug X causes a dose-dependent decrease in heart rate. Drug X is probably:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0037",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "In the absence of other drugs, Drug X increases heart rate by activating beta receptors; in the presence of a highly effective beta stimulant, Drug X causes a dose-dependent reversible decrease in heart rate. Drug X is probably:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0038",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "In the absence of other drugs, pindolol causes an increase in heart rate by activating beta adrenoreceptors. In the presence of highly effective beta stimulants, however, pindolol causes a dose-dependent reversible decrease in heart rate. Therefore, pindolol is probably:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0039",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Match to the most appropriate statement - Chemical antagonist:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0040",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Match to the most appropriate statement - Competitive antagonist:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0041",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Match to the most appropriate statement - Non-competitive antagonist:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0042",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Match to the most appropriate statement - Physiological antagonist:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0043",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Regarding a competitive antagonist, which statement is correct?"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0044",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Regarding a competitive antagonist, which statement is correct?"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0045",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Regarding a competitive antagonist, which statement is correct?"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0046",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Regarding a competitive antagonist, which statement is correct?"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0047",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Regarding a competitive antagonist, which statement is correct?"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0048",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Regarding a non-competitive antagonist, which statement is correct?"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0049",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Regarding a non-competitive antagonist, which statement is correct?"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0050",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Regarding a non-competitive antagonist, which statement(s) is/are correct?"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0051",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Regarding a partial agonist, which of the following is/are correct?"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0052",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Regarding a partial agonist, which of the following is/are incorrect?"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0053",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Regarding a partial agonist, which of the following is/are incorrect?"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0054",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Regarding a partial agonist, which of the following is/are incorrect?"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0055",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Regarding a partial agonist, which of the following is correct:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0056",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Regarding competitive antagonist, which statement is correct?"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0057",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Regarding the receptors, the incorrect statement is:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0058",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Regarding the receptors, the incorrect statement is:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0059",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "The receptor that increases cAMP is:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0060",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Which of the following is not a physical mechanism of drug action?"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0061",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Which of the following is not physical mechanism of action of the drug?"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0062",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Which of the following statements is correct?"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0063",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "A patient in shock is given isoprenaline. The nurse expects this drug to increase heart rate. Explain why."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0064",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Compare between ion channel receptors and G-protein linked receptors with examples."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0065",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Compare between receptors linked to tyrosine kinase and receptors regulating transcription, with examples."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0066",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Cross match each drug/mediator to its receptor or channel mechanism."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0067",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Cross match each of the following receptors to its molecular mechanism of action."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0068",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Cross match each receptor or mediator to its signal-transduction type."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0069",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Cross match each receptor to its second messenger system."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0070",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Match each receptor to its molecular mechanism of action."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0071",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Regarding the receptors, the incorrect statement is:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0072",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Regarding the receptors, the incorrect statement is:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0073",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Regarding the receptors, the incorrect statement is:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0074",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Regarding the receptors, the incorrect statement is:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0075",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "The fastest neurotransmitters activate the following type of receptor:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0076",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "The receptor that decreases cAMP is:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0077",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "The receptor that increases cAMP is:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0078",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Which of the following receptor types mediate the slowest action?"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0079",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Which of the following receptor types mediate the slowest transmission of impulses?"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0080",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Compare between competitive and non-competitive antagonists in terms of Emax and EC50."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0081",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Complete: define ED50 in the graded dose-response curve and give an example of an essential drug."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0082",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Define ED50 in a graded dose-response curve."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0083",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Define therapeutic index and mention its significance."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0084",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Define therapeutic index and mention its significance. Enumerate 2 drugs with low therapeutic index."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0085",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Enumerate 4 factors affecting the dose response relationship."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0086",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Enumerate the difference between competitive and non-competitive antagonists in terms of the shift of the dose-response curve."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0087",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Enumerate two drugs with a low therapeutic index."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0088",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "List four factors that could affect drug response."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0089",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "A 55-year-old woman with congestive heart failure is to be treated with a diuretic. Drugs X and Y have the same mechanism of diuretic action. Drug X at 5 mg produces the same magnitude of diuresis as 500 mg of drug Y. This suggests that:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0090",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "A 55 years old woman with congestive heart failure is to be treated with a diuretic drug. Drugs X and Y have the same mechanism of diuretic action. Drug X in a dose of 5 mg produces the same magnitude of diuresis as 500 mg of drug Y. This suggests that:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0091",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Choose the incorrect statement:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0092",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Drug X and Drug Y are antihypertensive agents. Drug X in the maximum prescribing dose reduces blood pressure by 30 mmHg. Drug Y in the maximum prescribing dose reduces blood pressure of the same patient by 20 mmHg. Therefore:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0093",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Drugs X and Y are antihypertensive agents. Drug X at the maximum prescribing dose reduces blood pressure by 30 mmHg. Drug Y at the maximum prescribing dose reduces blood pressure of the same patient by 20 mmHg. Therefore:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0094",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Drugs X and Y are antihypertensives. At the maximum prescribing dose, drug X reduces blood pressure by 30 mmHg and drug Y reduces it by 20 mmHg in the same patient. Therefore:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0095",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Drugs X and Y are oral hypoglycaemic agents. Drug X at 50 mg reduces serum glucose by 50 mg/dl; Drug Y at 5 mg reduces serum glucose by 50 mg/dl. Therefore:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0096",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Drugs X and Y are oral hypoglycemic agents. Drug X at 50 mg reduces serum blood glucose by 50 mg/dl. Drug Y at 5 mg reduces serum blood glucose by 50 mg/dl. Therefore:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0097",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Drugs X and Y are oral hypoglycemic agents. Drug X at a dose of 50 mg reduces the serum blood glucose by 50 mg/dl. Drug Y at a dose of 5 mg reduces the serum blood glucose by 50 mg/dl. Therefore:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0098",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "From the graph comparing methamphetamine, d-amphetamine and caffeine, choose the incorrect statement:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0099",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "From the graph of drugs X, Y and Z (response vs log dose), which of the following is incorrect?"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0100",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "If the therapeutic index (TI) of drug X is 5 and the TI of drug Y is 10, which of the following is correct?"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0101",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Pharmacokinetic tolerance may occur due to all the following except:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0102",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Potent drugs have:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0103",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Regarding potency and efficacy:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0104",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "The following is/are incorrect concerning ED50 of drugs:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0105",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "The following is/are incorrect concerning ED50 of drugs:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0106",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "The following is/are incorrect concerning ED50 of drugs:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0107",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "The following is/are incorrect concerning therapeutic index of drugs:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0108",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "The following is/are incorrect concerning therapeutic index of drugs:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0109",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "The following is correct concerning ED50 of drugs:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0110",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "The following is correct regarding the therapeutic index of drugs:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0111",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "The following is incorrect concerning ED50 of drugs:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0112",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "The following is incorrect concerning ED50 of drugs:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0113",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "The following is incorrect concerning ED50 of drugs:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0114",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "The following is incorrect concerning the ED50 of drugs:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0115",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "The following may be used to assess drug efficacy in the graded dose-response curve:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0116",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "The potent drugs have:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0117",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Which of the following is a wrong statement?"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0118",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Which of the following is a wrong statement?"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0119",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Which of the following is always true about a more potent drug?"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0120",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Which of the following is always true about a more potent drug?"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0121",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Which of the following is the definition of tachyphylaxis?"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0122",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Which of the following is true regarding potency and efficacy:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0123",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Which of the following is true regarding potency and efficacy:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0124",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Which of the following statements is correct?"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0125",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "A 14-year-old female with asthma treated for 4 months with salbutamol no longer responds to it. Explain the likely reason."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0126",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Compare between intolerance and side effect as augmented adverse effects."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0127",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Compare between overdose and toxicity as augmented adverse effects."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0128",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Define drug tolerance and mention its mechanisms."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0129",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Define idiosyncratic drug adverse effects. Mention 2 examples."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0130",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Define idiosyncratic drug adverse effects with two examples."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0131",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Discuss 2 different mechanisms of pharmacodynamic tolerance with examples."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0132",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Discuss the types of augmented adverse effects and their characters."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0133",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Enumerate two causes of a bizarre adverse reaction."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0134",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Enumerate two diseases that can result from continuous use of some drugs."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0135",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "List two examples of pharmacogenetic disorders that could affect drug response."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0136",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Mention two drugs used against drug allergy."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0137",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "State the difference between tolerance and tachyphylaxis."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0138",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Sudden withdrawal of drugs may precipitate adverse effects. Discuss this statement with 2 examples."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0139",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "What are the measures against drug allergy?"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0140",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Cross match each adverse drug reaction type to its example."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0141",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Cross match each drug to its potential drug interaction."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0142",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Cross-match each drug to the adverse effect that may follow its sudden withdrawal."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0143",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Cross match each pharmacogenetic disorder to the drug that might reveal it."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0144",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Cross match each tolerance-related term to its definition."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0145",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Cross match each tolerance term to its definition."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0146",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Cross match each type of adverse drug reaction to its example."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0147",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Cross match the following terms with their corresponding definition."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0148",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Cross-match the following to the corresponding definition."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0149",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Cross match the following tolerance/response terms by their corresponding definition."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0150",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Cross match the type of interaction occurring on co-administration of the following drugs."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0151",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Match the following drug categories to the most appropriate description."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0152",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Match the following drugs/categories to the most appropriate statement."
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0153",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Choose the incorrect statement:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0154",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Choose the incorrect statement:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0155",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Choose the incorrect statement:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0156",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Cross-match each drug to the adverse effect that may follow its sudden withdrawal - Alcohol:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0157",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Cross-match each drug to the adverse effect that may follow its sudden withdrawal - Beta-blockers:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0158",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Cross-match each drug to the adverse effect that may follow its sudden withdrawal - Clonidine:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0159",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Cross-match each drug to the adverse effect that may follow its sudden withdrawal - Corticosteroids:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0160",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Cross-match each drug to the adverse effect that may follow its sudden withdrawal - Warfarin:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0161",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Cross-match each pharmacogenetic disorder to the drug that might reveal it - Increased risk of neuropathy in slow acetylators:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0162",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Cross-match each pharmacogenetic disorder to the drug that might reveal it - Malignant hyperthermia or apnea:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0163",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Cross-match each pharmacogenetic disorder to the drug that might reveal it - Precipitation of porphyria:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0164",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Cross-match each pharmacogenetic disorder to the drug that might reveal it - Raised intraocular pressure:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0165",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Oral thrush that may occur with prolonged use of broad spectrum antibacterial drugs is:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0166",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Oral thrush that may occur with prolonged use of broad-spectrum antibacterial drugs is:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0167",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Pharmacokinetic tolerance may occur due to all the following except:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0168",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Pharmacokinetic tolerance may occur due to all the following EXCEPT:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0169",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Teratogenicity means:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0170",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "The following are possible causes of pharmacodynamic tolerance except:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0171",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "The following are possible causes of pharmacodynamic tolerance EXCEPT:"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0172",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Which of the following is the definition of tachyphylaxis?"
+    },
+    {
+      "id": "IPHA1-CH2-PHAR-0173",
+      "chapterId": 2,
+      "subject": "pharma",
+      "text": "Which of the following means teratogenicity?"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0001",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Alpha methyldopa: mechanism of action and therapeutic use."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0002",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Beta blockers are used as prophylaxis in esophageal varices. Explain."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0003",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Carvedilol is used in chronic heart failure. Explain."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0004",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Clonidine: mention its mechanism of action."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0005",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Clonidine: mention the mechanism of action and three therapeutic uses."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0006",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Compare between lipophilic and hydrophilic beta blockers in terms of absorption, first-pass effect and bioavailability."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0007",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Compare between lipophilic and hydrophilic beta blockers in terms of distribution, elimination and half-life."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0008",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Complete: the main use of alpha blockers, and the uses of prazosin and tamsulosin."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0009",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Enumerate four adverse effects of alpha adrenoceptor blockers."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0010",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Enumerate four therapeutic uses of beta blockers secondary to beta-2 blockade or local action."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0011",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Enumerate four therapeutic uses of beta blockers secondary to blocking beta2."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0012",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Enumerate the adverse effects of beta blockers due to blocking beta2 receptors."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0013",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Enumerate three therapeutic uses of clonidine."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0014",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Enumerate two hypertensive emergencies treated by labetalol."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0015",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "First-dose postural hypotension with alpha-adrenoceptor blockers can be avoided. Explain how."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0016",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Labetalol: mention the mechanism and list two therapeutic uses."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0017",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "List four differences between lipophilic and hydrophilic beta blockers."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0018",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "List four possible adverse effects of long-term use of alpha methyldopa."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0019",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "List four therapeutic uses of beta blockers due to beta-1 blockade."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0020",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "List four therapeutic uses of beta blockers secondary to beta1 blockade."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0021",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "List the vasodilator beta blockers."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0022",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "List three non-cardiovascular adverse effects of beta blockers."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0023",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "List two advantages of nebivolol."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0024",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "List two adverse effects of alpha methyldopa."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0025",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "List two adverse effects of beta blockers due to beta-2 blockade."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0026",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "List two adverse effects of beta blockers due to beta2 blockade."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0027",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "List two cardioselective beta blockers and mention their advantages over non-selective ones."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0028",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "List two centrally acting alpha2 agonist drugs and mention one use for each."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0029",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "List two vasodilator beta blockers."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0030",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "List two vasodilator beta blockers. Discuss their mechanism and one therapeutic use for each."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0031",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Mention one therapeutic use of alpha methyldopa."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0032",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Mention one use of esmolol."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0033",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Mention the advantages of selective beta-1 blockers over non-selective ones."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0034",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Mention the advantages of selective beta blockers over non-selective ones."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0035",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Mention the mechanism of action of alpha methyldopa."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0036",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Mention two types of ischemic heart disease treated by beta blockers."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0037",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Nebivolol: mention its mechanism of action."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0038",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "What is the main use of alpha blockers?"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0039",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "What is the role of beta blockers in thyrotoxicosis?"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0040",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Cross match each beta-blocker to its characteristic statement."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0041",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Cross match each beta-blocker to its therapeutic use."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0042",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Cross match each α blocker to its profile and indication."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0043",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Cross match each β blocker with its use:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0044",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Cross match each drug to its mechanism of action and use."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0045",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Cross match the following beta blockers to the suitable statement:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0046",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Cross match the following α-blockers to their indication:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0047",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Cross-match the following drugs with their possible indication."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0048",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "A patient with severe hypotension is given intravenous noradrenaline. Which of the following drugs antagonises both the vascular and cardiac actions of the drug?"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0049",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "A patient with severe hypotension is given Nor-epinephrine. Which of the following drugs antagonizes both the vascular and cardiac actions of the drug?"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0050",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "A patient with severe hypotension is given norepinephrine. Which of the following drugs antagonizes both its vascular and cardiac actions?"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0051",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "A patient with severe hypotension is given norepinephrine. Which of the following drugs antagonizes both the vascular and cardiac actions of the drug?"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0052",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Adverse reactions of beta blockers do not include:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0053",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "All of the following regarding adrenaline are true except:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0054",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "An alpha-1 receptor agonist is not effective in the treatment of:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0055",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Atenolol is characterized by all of the following except:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0056",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Beta adrenoceptor blockers have the following characters except:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0057",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Beta adrenoceptor blockers have the following characters except:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0058",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Beta blocker is useful in treatment of open angle glaucoma and essential tremors due to:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0059",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Beta blockers are useful in the treatment of open angle glaucoma and essential tremors due to:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0060",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Beta blockers may be used in the treatment of all of the following except:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0061",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Cardio-selective Beta blockers include:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0062",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "CNS therapeutic uses of propranolol include:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0063",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Cross-match the following to its hemodynamic effect - Dobutamine:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0064",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Cross-match the following to its hemodynamic effect - Dopamine:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0065",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Cross-match the following to its hemodynamic effect - Dopexamine:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0066",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Cross-match the following to its hemodynamic effect - Phenylephrine:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0067",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Dopamine is preferred to dobutamine in cardiogenic shock with hypotension or renal impairment because:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0068",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Epinephrine-induced hypokalemia is due to:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0069",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Esmolol has an ultra-short duration of action due to:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0070",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Esmolol is used in:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0071",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Esmolol is used in:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0072",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Hydrophilic beta-blockers have a long duration of action, EXCEPT:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0073",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Hydrophilic ultrashort beta adrenoceptor blocker is:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0074",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "In oesophageal varices, the beta2-blocking effect of non-selective blockers reduces portal blood flow secondary to:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0075",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "In prophylaxis of oesophageal varices, the β2 blocking effect(s) of non-selective β blockers reduce(s) portal blood flow 2° to:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0076",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Labetalol is not:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0077",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Lipophilic beta blockers have a short duration of action Except:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0078",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Metabolic actions of epinephrine include all of the following except:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0079",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Metoprolol is characterized by all of the following except:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0080",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Non-selective βB with vasodilator effect 2° to α blockade:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0081",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Non-selective βB with vasodilator effect 2° to α blockade:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0082",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Non-selective beta-blocker with vasodilator effect secondary to alpha blockade:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0083",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Non-selective beta blockers with a vasodilator effect due to alpha blockade:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0084",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Regarding alpha adrenoceptor blockers, the following is not true:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0085",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Regarding prazosin, the following is not true:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0086",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Regarding prazosin, the following is not true:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0087",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Salbutamol replaced epinephrine in the treatment of bronchial asthma because:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0088",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The beta-mediated antihypertensive effects of bisoprolol (cardio-selective beta blocker) do not include:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0089",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The beta-mediated antihypertensive effects of bisoprolol (cardioselective blocker) do not include:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0090",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following adverse effect of beta blockers is not due to beta-1 blockade:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0091",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following adverse effect of beta blockers is not due to beta-1 blockade:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0092",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following adverse effect of beta blockers is not due to beta-2 blockade:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0093",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following adverse effect of beta-blockers is not mainly due to beta2 blockade:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0094",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following adverse effect of β blockers is not due to β-1 blockade:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0095",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following adverse effect of β blockers is not due to β-1 blockade:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0096",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following adverse effect of β blockers is not due to β2 blockade:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0097",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following adverse effect of β blockers is not due to β2 blockade:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0098",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following adverse effects are seen with both methyldopa and clonidine:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0099",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following agent does not act on α1-receptors:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0100",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following agent does not stimulate beta-1 receptors:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0101",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following agent does not stimulate beta-2 receptors:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0102",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following agent/s is/are a prodrug:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0103",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following difference/s between propranolol and other beta-blockers is/are true:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0104",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following difference/s between propranolol & other β-blockers is/are True:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0105",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following difference/s between propranolol & other β-blockers is/are True:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0106",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following drug induces significant tachycardia:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0107",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following drug is not matched to its adverse effect:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0108",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following drugs increase the effect of noradrenaline except:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0109",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following indication of epinephrine is entirely due to its alpha effect:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0110",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following is a wrong statement about epinephrine:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0111",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following is a wrong statement about sympathomimetics:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0112",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following is/are not true concerning anti-anginal effects of beta-blockers:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0113",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following is/are not true concerning anti-anginal effects of β-blockers:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0114",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following is/are not true concerning anti-anginal effects of β-blockers:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0115",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following is/are true concerning anti-arrhythmic effects of β-blockers:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0116",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following is/are true concerning the anti-arrhythmic effects of beta-blockers:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0117",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following is/are true concerning the anti-arrhythmic effects of beta-blockers:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0118",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following is incorrect regarding beta adrenergic receptor blockers:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0119",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following is incorrect regarding beta adrenergic receptors:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0120",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following is not a pharmacological effect of directly acting beta receptor agonists:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0121",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following is not a shared adverse effect between dopamine and dobutamine:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0122",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following is not a therapeutic use due to blocking of beta1 receptors:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0123",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following is not an adverse effect of alpha blockers:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0124",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following is not an adverse effect of α blockers:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0125",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following is not an adverse effect of salbutamol (beta-2 agonist):"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0126",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following is not an indication for hydrophilic beta blockers:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0127",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following is not an indication for indirect sympathomimetics:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0128",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following is not an indication for propranolol:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0129",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following is not an indication for using labetalol:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0130",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following is not an indication of salbutamol (beta-2 agonist):"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0131",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following is not true concerning the anti-anginal effects of beta-blockers:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0132",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following is not true regarding nebivolol:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0133",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following is wrong about propranolol:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0134",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following is wrong about propranolol:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0135",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following statement about alpha blockers is incorrect:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0136",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The β-mediated antihypertensive effects of bisoprolol do not include:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0137",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Vasodilator Beta blockers include:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0138",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Vasodilator beta blockers include:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0139",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "When a patient is taking an adrenergic drug, the nurse expects to observe which effect?"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0140",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Which of the following is not a shared character between carvedilol and labetalol?"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0141",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Compare and contrast between dopamine and dobutamine (mention 3 differences)."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0142",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Compare between dopamine and dobutamine regarding the adverse effects."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0143",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Compare between dopamine and dobutamine regarding the mechanism of action."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0144",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Compare between dopamine and dobutamine regarding the therapeutic uses."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0145",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Dipivefrine (pro-epinephrine) is used instead of epinephrine in the treatment of open-angle glaucoma. Explain."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0146",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Enumerate the advantages of selective beta-2 agonists over non-selective ones."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0147",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Enumerate the drugs affecting the enzymatic degradation of norepinephrine, mentioning their uses."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0148",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Enumerate the drugs that interfere with the uptake of catecholamines, mentioning their proposed mechanism."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0149",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Enumerate the therapeutic uses of ephedrine."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0150",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Epinephrine is used in anaphylactic shock. Explain."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0151",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Explain the mechanism of the cheese reaction."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0152",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "List four contraindications of sympathomimetics (e.g. adrenaline)."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0153",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "List four therapeutic uses of adrenaline."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0154",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "List the adverse effects of selective beta-2 agonists."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0155",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "List the indications of beta-2 agonists, mentioning two preparations."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0156",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "List the main metabolic effects of adrenaline injection."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0157",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "List the main metabolic effects of an epinephrine injection."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0158",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "List the possible adverse effects of phenylephrine."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0159",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "List the therapeutic uses and adverse effects of beta2 agonists."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0160",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "List the therapeutic uses and possible adverse effects of phenylephrine."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0161",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "List the therapeutic uses of epinephrine."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0162",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "List the therapeutic uses of phenylephrine."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0163",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "List therapeutic uses of adrenaline and the possible receptors involved in each use."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0164",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "List three uses of indirect sympathomimetics (amphetamine)."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0165",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Mention four cardiovascular uses of sympathomimetics with examples."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0166",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Mention the contraindications of sympathomimetics."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0167",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Mention the therapeutic use of dopexamine."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0168",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Mention the therapeutic uses of dopamine and their relation to its dose."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0169",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Mention the therapeutic uses of norepinephrine."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0170",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Mention three cardiovascular uses of sympathomimetics with examples."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0171",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Patients taking MAOIs may have some drug interactions. Explain."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0172",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Phenylephrine is preferred to atropine substitutes as a mydriatic for fundus examination. Explain."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0173",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "What are the adverse effects of indirect sympathomimetics?"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0174",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Cross match each drug to its mechanism of action."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0175",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Cross match each sympathomimetic to its hemodynamic effect."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0176",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Cross match each sympathomimetic to its hemodynamic/pharmacologic profile."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0177",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Cross match each sympathomimetic to its therapeutic use."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0178",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Cross match the following adrenergic drug classes to their indications:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0179",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Cross-match the following adrenergic drugs to their indications."
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0180",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Cross match the following inotrope/vasoactive sympathomimetics to their hemodynamic effects:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0181",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Cross match the following sympathomimetics to their hemodynamic effects:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0182",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Cross match the following sympathomimetics to their uses:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0183",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "All the following drugs induce tachycardia except:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0184",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "All the following regarding adrenaline is true except:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0185",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Alpha1 receptor agonist is not effective in treatment of:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0186",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Alpha1 receptor agonist should not be used in the following condition:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0187",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Dobutamine differs from dopamine in all the following except:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0188",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Dopamine is preferred to dobutamine in cardiogenic shock with hypotension or renal impairment because:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0189",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Dopamine is preferred to dobutamine in cardiogenic shock with hypotension or renal impairment because:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0190",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Epinephrine induced hypokalemia is due to:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0191",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Epinephrine should be avoided in all of the following patients except:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0192",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "In paroxysmal supraventricular tachycardia with hypotension, reflex bradycardia may be induced by:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0193",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Metabolic actions of epinephrine include all of the following except:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0194",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Noradrenaline can be used in all the following types of shock except:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0195",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Pharmacological actions of subcutaneous injection of adrenaline do not include:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0196",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Salbutamol replaced epinephrine in treatment of bronchial asthma because:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0197",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Selective beta2 agonists replaced adrenaline in treatment of bronchial asthma because of all the following except:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0198",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following adverse effect is not encountered with selective beta2 agonist:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0199",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following adverse effects are seen with both methyl dopa & clonidine:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0200",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following agent does not act on dopaminergic receptors:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0201",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following agent does not stimulate β1-receptors:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0202",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following agent does not stimulate β2-receptors:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0203",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following agent does not stimulate beta1 receptors:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0204",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following agent/s is/are a prodrug:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0205",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following are actions mediated by stimulation of alpha1 adrenoceptors except:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0206",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following are actions mediated by stimulation of alpha2 adrenoceptors except:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0207",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following drug does not act on dopaminergic receptors:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0208",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following drugs increase the effect of noradrenaline except:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0209",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following indication(s) of adrenaline is/are entirely due to its alpha effect:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0210",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following indication/s of epinephrine is/are entirely due to its α effect:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0211",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following is a dual acting sympathomimetic drug:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0212",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following is a shared adverse effect between dopamine and dobutamine:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0213",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following is a wrong statement about adrenaline:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0214",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following is a wrong statement about amphetamine (a non-catecholamine indirectly acting sympathomimetic):"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0215",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following is a wrong statement about sympathomimetics:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0216",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following is incorrect about subcutaneous administration of adrenaline:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0217",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following is not a character of ephedrine (non-catecholamine sympathomimetic):"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0218",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following is not a pharmacological effect of direct acting beta receptor agonists:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0219",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following is not a therapeutic use of indirect sympathomimetic (amphetamine):"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0220",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following is not a therapeutic use of phenylephrine (selective alpha1 agonist):"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0221",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following is not an adverse effect of salbutamol (beta2 agonist):"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0222",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following is not an adverse effect of selective alpha1 agonist:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0223",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following is not an expected adverse effect of IV infusion of dopamine:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0224",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following is not an expected adverse effect of pseudoephedrine:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0225",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following is not an indication for indirect sympathomimetics:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0226",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following is not an indication of salbutamol (beta2 agonist):"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0227",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "The following is not correctly matched to its adverse effect:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0228",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Tolerance due to prolonged use of salbutamol is due to:"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0229",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Which of the following can activate dopaminergic as well as adrenergic receptors?"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0230",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Which of the following has beta action and can be used in bronchial asthma?"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0231",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Which of the following is a side effect of dopamine?"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0232",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Which of the following is a wrong statement?"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0233",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Which of the following is a wrong statement?"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0234",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Which of the following is not an indication for indirect sympathomimetics?"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0235",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Which of the following is the mechanism of action of indirect sympathomimetics?"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0236",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Which of the following is the mechanism of action of reserpine?"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0237",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Which of the following is wrong regarding mirabegron (beta3 agonist)?"
+    },
+    {
+      "id": "IPHA1-CH3-PHAR-0238",
+      "chapterId": 3,
+      "subject": "pharma",
+      "text": "Which of the following statement regarding beta adrenergic receptors is not true?"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0001",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Atropine is used in the treatment of organophosphate poisoning. Explain, mentioning its dose."
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0002",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Compare and contrast between neostigmine and physostigmine."
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0003",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Compare between atropine and hyoscine."
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0004",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Complete the following statements about cholinergic and anticholinergic drugs."
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0005",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Discuss the pharmacological effect of atropine on the CNS and eye and their clinical implications."
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0006",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Enumerate 4 adverse effects of cholinomimetics."
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0007",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Enumerate the drugs which block cholinergic actions."
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0008",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Enumerate the pharmacological actions of local eye application of atropine."
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0009",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Enumerate the therapeutic uses of neostigmine."
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0010",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Enumerate the uses of hyoscine."
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0011",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Enumerate two drugs that decrease acetylcholine release."
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0012",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Enumerate two drugs with atropine-like action."
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0013",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Enumerate TWO indications of bethanechol."
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0014",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Explain the mechanism of action of cholinesterase reactivators in the treatment of organophosphate poisoning."
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0015",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Explain why an enzyme reactivator should be used as early as possible during treatment of organophosphate toxicity."
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0016",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Explain why atropine is used as preanesthetic medication."
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0017",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Explain why atropine is used before neostigmine in the treatment of myasthenia gravis."
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0018",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Explain why tropicamide is preferred to atropine in fundus examination of the elderly."
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0019",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "How is myasthenia gravis diagnosed pharmacologically?"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0020",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Hyoscine is used as a preanesthetic in thyrotoxic and cardiac patients. Explain."
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0021",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "List 4 contraindications for using cholinomimetics."
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0022",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "List 4 indications of atropine rather than atropine substitutes."
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0023",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "List the therapeutic uses of physostigmine."
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0024",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "List three indications of pilocarpine."
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0025",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "List two adverse effects of hyoscine."
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0026",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "List two causes of death in organophosphorus toxicity, mentioning the stimulated receptors."
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0027",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Mention the mechanism of action of cevimeline and its use."
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0028",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Mention the pharmacological effects of atropine on (a) the eye and (b) body secretions."
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0029",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Mention the pharmacological effects of atropine on body secretions."
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0030",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Mention the possible adverse effects and toxicity of atropine."
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0031",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Mention two adverse effects of atropine."
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0032",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Mention two causes of toxicity of organophosphorus compounds."
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0033",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Outline the lines of treatment of atropine toxicity."
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0034",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Outline the treatment of atropine toxicity."
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0035",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Outline the treatment of organophosphate poisoning."
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0036",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Pyridostigmine is preferred to neostigmine in myasthenia gravis. Explain."
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0037",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "What are the disadvantages of acetylcholine if it were used as a systemic drug?"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0038",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Cross match each atropine substitute to its use."
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0039",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Cross match each cholinomimetic drug to its therapeutic indication."
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0040",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Cross match each neuromuscular blocker to its elimination-related feature."
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0041",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Cross match each neuromuscular blocker to its most suitable cardiac-related feature."
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0042",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Cross match each spasmolytic drug to its mechanism and use."
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0043",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Match each cholinergic drug with the appropriate description."
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0044",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Match each drug to the statement that best describes it."
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0045",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "A 6-year-old boy became unconscious 2 hours after eating an apple from a local vendor. He was salivating profusely, incontinent of urine and faeces, with pinpoint pupils, moist skin and shallow respiration. Which pair of drugs was most likely given intravenously?"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0046",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "A 61-year-old man with long-standing open-angle glaucoma developed brow ache, difficulty with far vision and trouble seeing in dim light one month after changing his ophthalmic medication. Which was most likely his new drug?"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0047",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "A 62-year-old woman had no bowel movements 4 days after surgery to remove colon cancer. Adynamic ileus was diagnosed and intramuscular neostigmine was given. Activation of which receptor most likely mediated the therapeutic effect?"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0048",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "A 74-year-old man reported worsening memory, difficulty recognising familiar objects and trouble planning daily activities, and was diagnosed with Alzheimer's disease. Which drug would most likely be prescribed?"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0049",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "A clinically useful drug that acts by decreasing acetylcholine release is:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0050",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "A medication that triggers malignant hyperthermia in susceptible individuals is:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0051",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "A patient presents to the ER with rhinorrhea, salivation, confusion, lacrimation, urinary and fecal incontinence, bradycardia, muscle fasciculations and seizures. Which agent is most likely responsible?"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0052",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Activation of muscarinic receptors does not result in:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0053",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Activation of muscarinic receptors does not result in:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0054",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Activation of muscarinic receptors results in:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0055",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "All of the following are effects of a selective M3 agonist except:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0056",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "All of the following drugs are used to counteract mydriatics after fundus examination except:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0057",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "All the following are contraindications to succinylcholine EXCEPT:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0058",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "All the following are effects of Cevimeline (M3 selective agonist) except:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0059",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "All the following drugs have significant nicotinic actions except:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0060",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "An atropine substitute for treatment of urinary incontinence:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0061",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "At the end of an operation, the action of a neuromuscular blocker is reversed by:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0062",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Atropine does not:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0063",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Atropine does not antagonize the following feature of anticholinesterase poisoning:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0064",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Atropine is combined with anticholinesterases in myasthenia gravis to:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0065",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Atropine is used as a pre-anesthetic because of all of the following except:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0066",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Atropine is used as a preanesthetic because of all the following EXCEPT:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0067",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Atropine is used as preanesthetic medication due to all the following except:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0068",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Atropine is used in the treatment of:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0069",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Atropine itself, not its substitutes, can be used in:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0070",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Atropine substitutes used as mydriatic cycloplegic (Homatropine) are preferred to atropine because they are:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0071",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Atropine substitutes used as mydriatic cycloplegics are preferred over atropine because they are:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0072",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Atropine toxicity includes:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0073",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Competitive neuromuscular blocker(s) used for endotracheal intubation is/are:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0074",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Fasciculations produced by succinylcholine do not induce:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0075",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Hyoscine differs from atropine in all the following except:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0076",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Hyoscine differs from atropine in all the following except:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0077",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Hyoscine differs from atropine in that it:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0078",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Hyoscine produces all the following actions except:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0079",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Local administration of cholinomimetics in the eye does not induce:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0080",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Local administration of cholinomimetics in the eye does not induce:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0081",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Neostigmine:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0082",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Neostigmine:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0083",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Neuromuscular blocker(s) used for endotracheal intubation is/are:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0084",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Organophosphorus toxicity is characterised by all the following EXCEPT:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0085",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Organophosphorus toxicity is characterized by all of the following except:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0086",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Pilocarpine:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0087",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Pyridostigmine is the drug of choice in treatment of:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0088",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Regarding neostigmine, which of the following is correct?"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0089",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Regarding neostigmine, which of the following is incorrect?"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0090",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Regarding precautions and contraindications of cholinomimetics:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0091",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Regarding the management of succinylcholine apnea, which is CORRECT?"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0092",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Synthetic mydriatic cycloplegics differ from atropine in the following except:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0093",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Synthetic mydriatic cycloplegics (e.g. Homatropine) differ from atropine in all the following except:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0094",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The cause of death in organophosphorus poisoning is:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0095",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following are therapeutic uses of atropine rather than atropine substitutes except:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0096",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following are therapeutic uses of atropine rather than atropine substitutes except:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0097",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following drugs are matched to their indications except:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0098",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following drugs are used to counteract mydriatics after fundus examination except:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0099",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following is a contraindication to the use of cholinomimetics:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0100",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following is a wrong statement about carbamates:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0101",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following is a wrong statement about carbamates:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0102",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following is a wrong statement about hyoscine:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0103",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following is a wrong statement about pilocarpine:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0104",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following is a wrong statement about pilocarpine:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0105",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following is an incorrect statement about bethanechol:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0106",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following is an incorrect statement about bethanechol:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0107",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following is incorrect about cholinomimetics:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0108",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following is not a contraindication to the use of cholinomimetics:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0109",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following is not an action of cholinomimetics on the heart:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0110",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following is not an adverse effect of atropine:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0111",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following is not an adverse effect of atropine:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0112",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following is not an adverse effect of cholinomimetic eye drops:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0113",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following is not an adverse effect of cholinomimetics:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0114",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following is not an adverse effect of cholinomimetics:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0115",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following is not an adverse effect of cholinomimetics:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0116",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following is not an adverse effect of the cholinomimetic:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0117",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following is not an indication for using neostigmine:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0118",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following is not an indication for using neostigmine:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0119",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following is not an indication of hyoscine:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0120",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following is wrong about hyoscine:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0121",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The fusion of storage vesicles with synaptic membranes and the subsequent release of acetylcholine following an action potential is:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0122",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The nicotinic receptor does not mediate the acetylcholine effect at the following site:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0123",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Treatment of atropine poisoning does not include:"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0124",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Which drug is WRONGLY matched to its action in organophosphorus poisoning?"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0125",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Which of the following adverse effect is not expected with scopolamine (hyoscine)?"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0126",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Which of the following adverse effects is not expected with hyoscine?"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0127",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Which of the following adverse effects would not be expected from scopolamine (hyoscine)?"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0128",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Which of the following adverse effects would not be expected from scopolamine (hyoscine)?"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0129",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Which of the following atropine substitutes is used for renal colic?"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0130",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Which of the following drugs can counteract the mydriatic effect of atropine after fundus examination in children?"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0131",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Which of the following drugs has mixed direct muscarinic and nicotinic effects?"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0132",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Which of the following drugs is not correctly matched to clinical use?"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0133",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Which of the following drugs is not correctly matched to its clinical use?"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0134",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Which of the following drugs is not correctly matched to its use?"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0135",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Which of the following is correctly matched to its indication?"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0136",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Which of the following is NOT a contraindication of cholinergic agonist?"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0137",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Which of the following is true regarding the mechanism of action of atropine?"
+    },
+    {
+      "id": "IPHA1-CH4-PHAR-0138",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Which of the following is WRONGLY matched to its indication?"
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0001",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "A 1-month-old infant needs a medication; the adult dose is 50 mg. Calculate the infant's dose using the percentage method."
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0002",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "A 1-year-old needs a bronchodilator; the adult dose is 10 mg. Calculate the dose."
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0003",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "A 10-year-old child needs a medication whose standard adult dose is 200 mg. (a) Determine the dose by age. (b) If the child weighs 35 kg, calculate the dose by weight."
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0004",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "A 12-year-old child needs a medication; the adult dose is 40 mg. Calculate the dose using the percentage method."
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0005",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "A 2-month-old requires medication; the adult dose is 150 mg. Calculate the dose."
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0006",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "A 5-year-old child needs a painkiller; the adult dose is 500 mg. Calculate the child's dose using the age method."
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0007",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "A 50 kg patient receives a 400 mg IV bolus; the post-distribution plasma concentration is 10 mg/L. (a) Calculate Vd. (b) What does it suggest about distribution? (c) Would haemodialysis be a primary treatment in poisoning?"
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0008",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "A 7-year-old needs an antihistamine; the adult dose is 25 mg. Calculate the dose."
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0009",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "A drug given orally has an AUC of 60 units; given IV its AUC is 75 units. Calculate the oral bioavailability."
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0010",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "A drug has a Cls of 4 L/hour. If the desired Css is 8 mg/L, calculate the maintenance dose per day."
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0011",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "A drug has a hepatic extraction ratio of 0.05. Its clearance is primarily dependent on what factor?"
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0012",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "A drug has a renal clearance of 0.8 L/min and a non-renal clearance of 0.3 L/min. Calculate the total systemic clearance in L/min."
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0013",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "A drug has a systemic clearance of 0.5 L/hour and a desired Css of 20 mg/L. Calculate the maintenance dose per hour."
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0014",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "A drug has a Vd of 30 L and a loading dose of 450 mg is given. What is the expected peak plasma concentration (Cp)?"
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0015",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "A drug has a Vd of 70 L. To achieve a plasma concentration of 20 mg/L, what loading dose is required?"
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0016",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "A drug has an extraction ratio of 0.25 and a hepatic blood flow of 1.2 L/min. Calculate its hepatic clearance."
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0017",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "A drug has an oral bioavailability of 60%. If the desired systemic exposure requires 300 mg (IV equivalent), what oral dose should be given?"
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0018",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "A drug has an oral bioavailability of 90%. If 450 mg reaches the desired systemic exposure, what oral dose was administered?"
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0019",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "A drug has very high tissue binding, giving a Vd of 500 L in a 70 kg patient. Discuss the implication for distribution and the utility of haemodialysis in overdose."
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0020",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "A drug is given 120 mg every 8 hours at a normal CrCl of 120 ml/min. (a) If CrCl falls to 60 ml/min, suggest two dose adjustments. (b) If CrCl falls to 30 ml/min, how do you adjust while keeping the 120 mg dose but changing the interval?"
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0021",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "A drug is normally 500 mg every 12 hours at CrCl 120 ml/min. A patient has CrCl 15 ml/min. (a) Reduce the dose, keeping the original interval. (b) Extend the interval, keeping the original dose."
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0022",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "A drug's systemic clearance is 30 L/hour. If the drug concentration is 5 mg/L, what is the rate of elimination in mg/hour?"
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0023",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "A drug's Vd is 5 L. (a) What does this indicate about its distribution? (b) Would haemodialysis be effective in toxicity?"
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0024",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "A new drug, Mydril, has an oral AUC of 80 units and an intravenous AUC of 100 units. Calculate the oral bioavailability."
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0025",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "A newly developed antibiotic is given intravenously. The total dose is 500 mg and the peak plasma concentration is 20 mg/L. (a) Calculate the volume of distribution (Vd). (b) What does it imply about distribution? (c) Would haemodialysis be useful in toxicity?"
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0026",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "A patient needs a Css of 5 mg/L for a drug with a Cls of 2 L/hour. Calculate the maintenance dose."
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0027",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "A patient needs a loading dose of digoxin to reach a target Css of 1.2 micrograms/L. Digoxin Vd = 640 L. Calculate the loading dose in mg."
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0028",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "A patient needs a loading dose of Drug X to reach a steady-state concentration (Css) of 15 mg/L. Vd = 40 L. Calculate the loading dose."
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0029",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "A patient receives a 300 mg IV dose of Drug A; the post-distribution plasma concentration is 15 mg/L. (a) Calculate Vd. (b) Limited or extensive tissue uptake? (c) Would haemodialysis be useful?"
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0030",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "A patient with liver impairment has a hepatic blood flow reduced to 0.5 L/min. For a drug with an extraction ratio of 0.9, calculate its hepatic clearance."
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0031",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "A patient with normal CrCl of 120 ml/min takes 150 mg of a drug every 6 hours. If CrCl drops to 40 ml/min and you reduce the dose amount, how much should each dose be?"
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0032",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "A patient with normal CrCl of 120 ml/min takes 200 mg of Drug N twice a day. (a) If CrCl drops to 80 ml/min, adjust the dose amount. (b) If CrCl drops to 15 ml/min, adjust the interval keeping the 200 mg dose."
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0033",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "An adult dose is 100 mg. Calculate the dose for a 2-year-old weighing 12 kg using the weight method."
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0034",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "An adult dose is 300 mg. Calculate the dose for a 7-year-old weighing 25 kg using the weight method."
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0035",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "An antiarrhythmic is dosed 100 mg every 8 hours at a normal CrCl of 120 ml/min. (a) How would you adjust the dose if CrCl drops to 40 ml/min? (b) Alternatively, how would you adjust the dosing interval?"
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0036",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "An emergency drug has a Vd of 0.8 L/kg. For a 60 kg patient, what is the total Vd, and what loading dose achieves a Css of 5 mg/L?"
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0037",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "Drug B is highly lipophilic and distributes into fat, giving a Vd of 150 L in a 70 kg patient. What does this indicate about distribution, and would dialysis help in overdose?"
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0038",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "Drug D has a hepatic extraction ratio of 0.15 and a hepatic blood flow (Q) of 1.5 L/min. (a) Calculate the hepatic clearance. (b) What clearance dependency would you expect?"
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0039",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "Drug E is eliminated at 60 mg/hour and its plasma concentration is 5 mg/L. Calculate the systemic clearance (Cls) in L/hour."
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0040",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "Drug G has an oral bioavailability of 75%. If the IV dose is 400 mg, what oral dose gives equivalent systemic exposure?"
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0041",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "Drug I is metabolised at 100 mg/hour and excreted in urine at 20 mg/hour. (a) What is the total rate of elimination? (b) If Css is 2 mg/L, calculate the systemic clearance."
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0042",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "Drug I is metabolised at 100 mg/hour and excreted unchanged in urine at 20 mg/hour. (a) What is the total rate of elimination? (b) If Css is 2 mg/L, calculate its systemic clearance."
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0043",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "Drug K is metabolised by the liver; arterial concentration is 100 mg/L and venous is 20 mg/L. (a) Calculate E. (b) Does it undergo significant first-pass metabolism?"
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0044",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "Drug L is eliminated at a constant 200 mg/day; at steady state its plasma concentration is 5 mg/L. Calculate its systemic clearance in L/day."
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0045",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "Drug M is eliminated by renal excretion with a renal clearance of 0.5 L/min and negligible non-renal clearance. Calculate its systemic clearance in L/hour."
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0046",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "For a drug with an extraction ratio of 0.45, is its clearance primarily flow-dependent, enzyme-dependent, or both?"
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0047",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "For Drug C, the arterial concentration entering the liver is 40 mg/L and venous is 5 mg/L. (a) Calculate E. (b) What does it imply about hepatic clearance?"
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0048",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "For Drug Y, arterial concentration entering the liver is 50 mg/L and venous concentration is 10 mg/L. (a) Calculate the hepatic extraction ratio (E). (b) What is the primary clearance dependency?"
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0049",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "The arterial concentration of Drug H is 80 micrograms/ml and venous is 20 micrograms/ml. (a) Calculate E. (b) Is clearance flow-dependent or enzyme-dependent?"
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0050",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "The arterial concentration of Drug H is 80 micrograms/ml and venous is 20 micrograms/ml. (a) Calculate E. (b) Is its clearance more likely flow-dependent or enzyme-dependent?"
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0051",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "The rate of elimination of Drug J is 120 mg/hour and its plasma concentration is 10 mg/L. Calculate its systemic clearance."
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0052",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "The renal clearance for a drug is 0.6 L/hr and the non-renal clearance is 0.4 L/hr. Calculate its total systemic clearance in L/hour."
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0053",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "A 35-year-old woman ingested a large number of digoxin tablets (0.25 mg per tablet). Serum digoxin was 12.63 ng/ml and digoxin Vd = 640 L. How many tablets did she ingest? (1 L = 1000 ml, 1 mg = 1,000,000 ng)"
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0054",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "A 36-year-old man with Plasmodium vivax malaria received 600 mg of hydroxychloroquine as a loading dose. Peak plasma concentration was 0.05 mg/L. The apparent volume of distribution (Vd) is:"
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0055",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "A 40-year-old male patient (70 kg) received 2000 mg of vancomycin as an IV loading dose. The peak plasma concentration of vancomycin was reported to be 28.5 mg/L. The apparent volume of distribution is:"
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0056",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "A 40-year-old male was diagnosed with MRSA infection. He received 2000 mg of vancomycin as an IV loading dose. The peak plasma concentration was 28.5 mg/L. The apparent volume of distribution (Vd) is:"
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0057",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "A 65-year-old man (80 kg) presents with a ventricular arrhythmia. You wish to load the patient with IV procainamide to quickly establish a target concentration of 5 mg/L. If the average Vd is 140 L/70 kg, the approximate IV loading dose is:"
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0058",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "A drug, given as a 100-mg single dose, results in a peak plasma concentration of 20 μg/mL. The apparent volume of distribution is:"
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0059",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "A drug with a half-life of 10 hours is administered by continuous intravenous infusion. Which of the following best approximates the time for the drug to reach steady state?"
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0060",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "A new drug is in clinical trials for the treatment of asthma. The average clearance and volume of distribution of the new drug are 70 mL/min and 36 L respectively. Based on this information, the predicted half-life of the new drug is:"
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0061",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "A patient on digoxin therapy developed toxicity. The plasma concentration was 4 ng/L with t1/2 = 1.5 days. Which is the time needed to reach a safe plasma concentration of 1 ng/L?"
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0062",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "Drug X has a t½ of 4 hours and is renally eliminated. After loss of one kidney, how long (in hours) would it take for Drug X to reach steady state?"
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0063",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "Drug X with Vd 100 L, t1/2 4 days, Clearance 4 L/h, and loading dose 400 mg. The steady state concentration is:"
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0064",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "Drug X with Vd 60 L, t1/2 = 4 days, and CL of 4 L/h. The loading dose to reach a steady state concentration of 10 ug/ml is:"
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0065",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "If the adult dose is 17 mg, a child aged 5 years should receive:"
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0066",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "If the adult dose of a drug is 10 mg, a child weighing 21 kg should receive:"
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0067",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "If the adult dose of a drug is 140 mg, a child weighing 35 kg should receive:"
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0068",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "If the adult dose of a drug is 173 mg, a child with a body surface area of 1 m2 should receive:"
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0069",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "The areas under the curves (AUCs) after the same dose of drug X given IV and orally equal 50 and 40 mg/L/hour respectively. Which most likely describes the oral bioavailability of drug X?"
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0070",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "The maintenance dose of the previous drug is:"
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0071",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "The steady state concentration of a drug with t1/2 of 35 h can be reached after about:"
+    },
+    {
+      "id": "IPHA1-CH5-PHAR-0072",
+      "chapterId": 5,
+      "subject": "pharma",
+      "text": "Which of the following is the suitable dose of gentamicin in a patient with impaired kidney function with creatinine clearance = 30 mL/min, given that the usual dose of gentamicin is 80 mg three times/day and normal creatinine clearance = 120 mL/min?"
+    }
+  ],
+  "skippedDuplicates": [
+    {
+      "matchedId": "IPHA1-CH2-PHAR-0141",
+      "text": "Cross match each drug to its potential drug interaction."
+    },
+    {
+      "matchedId": "IPHA1-CH2-PHAR-0143",
+      "text": "Cross match each pharmacogenetic disorder to the drug that might reveal it."
+    },
+    {
+      "matchedId": "IPHA1-CH2-PHAR-0143",
+      "text": "Cross-match each pharmacogenetic disorder to the drug that might reveal it."
+    },
+    {
+      "matchedId": "IPHA1-CH2-PHAR-0150",
+      "text": "Cross match the type of interaction occurring on co-administration of the following drugs."
+    },
+    {
+      "matchedId": "IPHA1-CH3-PHAR-0174",
+      "text": "Cross match each drug to its mechanism of action:"
+    },
+    {
+      "matchedId": "IPHA1-CH3-PHAR-0044",
+      "text": "Cross match each drug to its mechanism of action and use:"
+    },
+    {
+      "matchedId": "IPHA1-CH3-PHAR-0047",
+      "text": "Cross-match the following drugs with their possible indication."
+    },
+    {
+      "matchedId": "IPHA1-CH4-PHAR-0044",
+      "text": "Match each drug to the statement that best describes it."
+    }
+  ],
+  "removedExistingDuplicates": [],
+  "needsReview": []
+}

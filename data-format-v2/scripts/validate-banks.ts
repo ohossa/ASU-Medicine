@@ -32,13 +32,15 @@ interface Question {
 
 interface SubQuestion {
   id: string;
-  type: 'mcq' | 'essay';
+  type: 'mcq' | 'essay' | 'fillblank';
   text: string;
   options?: string[];
   correctIndex?: number;
   modelAnswer?: string;
   explanation: string;
   keyConcept?: string;
+  blanks?: string[];
+  acceptedAnswers?: string[][];
 }
 
 interface Subject {
@@ -47,6 +49,7 @@ interface Subject {
   iconName: string;
   lectures: string;
   lectureCount: number;
+  lectureNames?: string[];
   questions: Question[];
 }
 
@@ -58,6 +61,7 @@ interface Chapter {
   page: number;
   lectureRange: string;
   subjects: Subject[];
+  keywords?: string[];
 }
 
 interface QuestionBankFile {
@@ -152,6 +156,22 @@ export function validateModuleFile(bank: QuestionBankFile): string[] {
         errors.push(`${subPrefix}: "name" must be a non-empty string.`);
       }
 
+      // lectureNames validation
+      if (subject.lectureNames) {
+        if (!Array.isArray(subject.lectureNames)) {
+          errors.push(`${subPrefix}: "lectureNames" must be an array of strings.`);
+        } else {
+          if (subject.lectureNames.length !== subject.lectureCount) {
+            errors.push(`${subPrefix}: "lectureNames" length (${subject.lectureNames.length}) does not match "lectureCount" (${subject.lectureCount}).`);
+          }
+          subject.lectureNames.forEach((name, idx) => {
+            if (typeof name !== 'string' || !name.trim()) {
+              errors.push(`${subPrefix}: lectureNames[${idx}] must be a non-empty string.`);
+            }
+          });
+        }
+      }
+
       if (!Array.isArray(subject.questions)) {
         errors.push(`${subPrefix}: "questions" must be an array.`);
         return;
@@ -241,8 +261,8 @@ export function validateModuleFile(bank: QuestionBankFile): string[] {
                 errors.push(`${sqLoc}: "text" must be a non-empty string.`);
               }
 
-              if (sq.type !== 'mcq' && sq.type !== 'essay') {
-                errors.push(`${sqLoc}: sub-question type must be "mcq" or "essay", got "${sq.type}".`);
+              if (sq.type !== 'mcq' && sq.type !== 'essay' && sq.type !== 'fillblank') {
+                errors.push(`${sqLoc}: sub-question type must be "mcq", "essay", or "fillblank", got "${sq.type}".`);
                 return;
               }
 
@@ -254,9 +274,13 @@ export function validateModuleFile(bank: QuestionBankFile): string[] {
                     errors.push(`${sqLoc}: "correctIndex" (${sq.correctIndex}) is out of bounds for ${sq.options.length} options.`);
                   }
                 }
-              } else {
+              } else if (sq.type === 'essay') {
                 if (typeof sq.modelAnswer !== 'string' || !sq.modelAnswer.trim()) {
                   errors.push(`${sqLoc}: essay sub-question must have a non-empty "modelAnswer".`);
+                }
+              } else if (sq.type === 'fillblank') {
+                if (!Array.isArray(sq.blanks) || sq.blanks.length === 0) {
+                  errors.push(`${sqLoc}: fillblank sub-question must have a non-empty "blanks" array.`);
                 }
               }
             });

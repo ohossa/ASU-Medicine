@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "comingSoon": true,
+  "comingSoon": false,
   "meta": {
     "moduleCode": "MBMG-1",
     "moduleName": "Molecular Biology & Medical Genetics",
@@ -19,21 +19,65 @@
       "id": 1,
       "title": "Molecular Biology & DNA",
       "subtitle": "Molecular Biology & DNA",
-      "emoji": "🧬",
+      "emoji": "\ud83e\uddec",
       "page": 1,
-      "lectureRange": "Lectures 1",
-      "subjects": [],
-      "keywords": []
+      "lectureRange": "Lectures 1-10",
+      "subjects": [
+        {
+          "id": "biochem",
+          "name": "Biochemistry",
+          "iconName": "FlaskConical",
+          "lectures": "Lecture 1&2, Lecture 10&11, Lecture 12, Lecture 13, Lecture 14, Lecture 15, Lecture 17&18, Lecture 21&22, Lecture 25, Lecture 3&4",
+          "lectureCount": 10,
+          "lectureNames": [
+            "Lecture 1&2",
+            "Lecture 10&11",
+            "Lecture 12",
+            "Lecture 13",
+            "Lecture 14",
+            "Lecture 15",
+            "Lecture 17&18",
+            "Lecture 21&22",
+            "Lecture 25",
+            "Lecture 3&4"
+          ],
+          "questions": []
+        }
+      ],
+      "keywords": [
+        "10&11",
+        "17&18",
+        "21&22"
+      ]
     },
     {
       "id": 2,
       "title": "Genetics & Hereditary Disorders",
       "subtitle": "Genetics & Hereditary Disorders",
-      "emoji": "📊",
+      "emoji": "\ud83d\udcca",
       "page": 2,
-      "lectureRange": "Lectures 2",
-      "subjects": [],
-      "keywords": []
+      "lectureRange": "Lectures 1-5",
+      "subjects": [
+        {
+          "id": "biochem",
+          "name": "Biochemistry",
+          "iconName": "FlaskConical",
+          "lectures": "Lecture 16, Lecture 19&20, Lecture 23&24, Lecture 5&6, Lecture 7&8",
+          "lectureCount": 5,
+          "lectureNames": [
+            "Lecture 16",
+            "Lecture 19&20",
+            "Lecture 23&24",
+            "Lecture 5&6",
+            "Lecture 7&8"
+          ],
+          "questions": []
+        }
+      ],
+      "keywords": [
+        "19&20",
+        "23&24"
+      ]
     }
   ]
 }

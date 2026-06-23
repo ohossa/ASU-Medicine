@@ -74,19 +74,31 @@ This is the format produced by the master conversion prompt:
 ### Canonical Subject Names
 
 Use exactly one of:
-`Anatomy`, `Histology`, `Physiology`, `Biochemistry`, `Microbiology`, `Pathology`, `Pharmacology`, `Clinical`
+`Anatomy`, `Histology`, `Physiology`, `Biochemistry`, `Microbiology`, `Pathology`, `Pharmacology`, `Clinical`, `Parasitology` (Bug), `Psychiatry` (Brain), `Ophthalmology` (Eye), `ENT` (Ear)
+
+### The `topic` Field
+
+The `topic` field in the incoming question structure is strongly recommended. It represents the specific lecture or topic name from the syllabus (e.g., `"Bony Orbit"`, `"Lacrimal Apparatus"`, `"Visual Pathway"`). This field acts as the primary signal for smart auto-routing. By providing the exact lecture topic name, the importer can route the question to the correct chapter and subject and assign the correct lecture number without manual intervention.
 
 ---
 
-## What the Importer Does Automatically
+## How the Importer Routes Questions Automatically
 
-- ✅ Routes questions to the correct chapter (by `chapterId` or fuzzy `chapterTitle` match)
-- ✅ Routes questions to the correct subject
-- ✅ Creates missing subjects inside existing chapters
+The importer uses a structured fallback pipeline to route each incoming question:
+
+1. **Smart Auto-Routing**: Matches the question's `topic` field against the target module's `lectureNames` index (exact match first, then substring match). If a match is found, it automatically assigns the correct chapter, subject, and 1-based lecture number.
+2. **Content-Based Routing**: If the `topic` field is missing or does not match, the importer scans the question text itself. It tokenizes the text and scores it against all `lectureNames` in the bank, requiring a ≥50% match of significant words and a minimum hit count to avoid false positives.
+3. **Chapter Keywords Fallback**: If content routing fails, it attempts to resolve the chapter using fuzzy matching on `chapterTitle`/`chapterId`, then infers the subject (using the `subject` field, falling back to matching against keywords defined on each chapter).
+4. **Needs Review**: If no routing method matches, the question is flagged for manual review and is not imported.
+
+**Routing Priority Chain:** `topic` field → question text scan → chapter keywords → needsReview
+
+- ✅ Creates missing subjects inside existing chapters when needed
 - ✅ Converts `correctAnswer` letters (A/B/C/D) to `correctIndex` (0-based)
 - ✅ Generates canonical IDs (e.g. `MCNS2-CH4-ANAT-0501`)
 - ✅ Deduplicates by normalized question text + options
 - ✅ Writes a JSON import report
+
 
 ---
 

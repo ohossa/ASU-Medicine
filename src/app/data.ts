@@ -742,7 +742,9 @@ function mergeChapters(
 
 export function isModuleActive(moduleCode: string): boolean {
   const db = moduleDatabases[moduleCode];
-  return !!(db && (db.v2Raw || db.mcqRaw || db.essayRaw));
+  if (!db) return false;
+  const counts = getModuleQuestionCounts(moduleCode);
+  return counts.totalCount > 0;
 }
 
 export function getModuleQuestionCounts(moduleCode: string) {

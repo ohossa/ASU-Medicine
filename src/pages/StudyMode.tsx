@@ -56,8 +56,14 @@ interface StudyModeProps {
 
 export default function StudyMode({ userButton, onStartStudyMode, onOpenSyllabus }: StudyModeProps) {
   const navigate = useNavigate();
-  const { code } = useParams<{ code: string }>();
+  const { code, yearId } = useParams<{ code: string; yearId: string }>();
   const moduleCode = (code || 'MEM-2').toUpperCase();
+
+  const parsedYear = useMemo(() => {
+    if (yearId) return yearId;
+    const match = moduleCode.match(/-(\d+)/);
+    return match ? match[1] : '2';
+  }, [yearId, moduleCode]);
 
   // Find module details dynamically from database
   const selectedModule = useMemo(() => {
@@ -85,7 +91,7 @@ export default function StudyMode({ userButton, onStartStudyMode, onOpenSyllabus
     if (onStartStudyMode) {
       onStartStudyMode(type, moduleCode);
     } else {
-      navigate(`/year-2/${moduleCode.toLowerCase()}/${type}`);
+      navigate(`/year-${parsedYear}/${moduleCode.toLowerCase()}/${type}`);
     }
   };
 
@@ -94,13 +100,13 @@ export default function StudyMode({ userButton, onStartStudyMode, onOpenSyllabus
     if (onOpenSyllabus) {
       onOpenSyllabus(moduleCode);
     } else {
-      navigate(`/year-2/${moduleCode.toLowerCase()}/tracker`);
+      navigate(`/year-${parsedYear}/${moduleCode.toLowerCase()}/tracker`);
     }
   };
 
   const CRUMBS = [
     { label: "Portal", onClick: () => navigate('/') },
-    { label: "Year 2", onClick: () => navigate('/year-2') },
+    { label: `Year ${parsedYear}`, onClick: () => navigate(`/year-${parsedYear}`) },
     { label: moduleCode },
   ];
 
@@ -238,7 +244,7 @@ export default function StudyMode({ userButton, onStartStudyMode, onOpenSyllabus
           <motion.button
             whileHover="hover"
             whileTap={{ scale: 0.96 }}
-            onClick={() => navigate('/year-2')}
+            onClick={() => navigate(`/year-${parsedYear}`)}
             className="flex items-center gap-2.5 rounded-full border px-6 py-3 text-[14px] font-bold cursor-pointer
                        border-zinc-200/80 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.02]
                        text-zinc-700 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white

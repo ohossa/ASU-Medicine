@@ -9,5 +9,16 @@
     "removedExistingDuplicatesCount": 0,
     "needsReviewCount": 0,
     "reportPath": "data-format-v2/question-intake/year-2/semester-2/P3-2 [Behavioral science]/_reports/P3-2_report_20260612145433.import-report.json"
+  },
+  {
+    "timestamp": "2026-06-23T12:43:24.501Z",
+    "moduleCode": "IPHA-1",
+    "sourceFile": "data-format-v2/question-intake/year-1/semester-2/IPHA-1 [Introduction to Clinical Pharmacology]/_ready/IPHA-1_batch_master.json",
+    "status": "SUCCESS",
+    "addedCount": 839,
+    "skippedDuplicatesCount": 8,
+    "removedExistingDuplicatesCount": 0,
+    "needsReviewCount": 0,
+    "reportPath": "data-format-v2/question-intake/year-1/semester-2/IPHA-1 [Introduction to Clinical Pharmacology]/_reports/IPHA-1_report_20260623124324.import-report.json"
   }
 ]

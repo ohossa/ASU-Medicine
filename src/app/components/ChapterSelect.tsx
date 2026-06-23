@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { useNavigate } from 'react-router';
+import { useNavigate, useParams } from 'react-router';
 import { GraduationCap, Layers, ArrowRight, Palette, Clock, Award, Trash2, ArrowLeft, Calendar, ChevronRight } from 'lucide-react';
 import type { ChapterData, SubjectColor, SubjectData, Question } from '../types';
 import { formatTime } from '../types';
@@ -223,6 +223,16 @@ export function ChapterSelect({
   const { t, language } = useLanguage();
   const isRTL = language === 'ar';
   const navigate = useNavigate();
+  const { yearId } = useParams<{ yearId: string }>();
+
+  const parsedYear = useMemo(() => {
+    if (yearId) return yearId;
+    if (moduleCode) {
+      const match = moduleCode.match(/-(\d+)/);
+      if (match) return match[1];
+    }
+    return '2';
+  }, [yearId, moduleCode]);
 
   const label = (key: string): string => {
     const translated = typeof t === 'function' ? t(key) : undefined;
@@ -511,7 +521,7 @@ export function ChapterSelect({
               </div>
               <button
                 type="button"
-                onClick={() => navigate(`/year-2/${moduleCode.toLowerCase()}/tracker`)}
+                onClick={() => navigate(`/year-${parsedYear}/${moduleCode.toLowerCase()}/tracker`)}
                 className="inline-flex items-center gap-2 rounded-2xl border border-border bg-secondary px-4 py-2.5 text-sm font-semibold text-gray-800 dark:text-white transition-all hover:bg-muted active:scale-95 cursor-pointer"
               >
                 <Calendar size={16} className="text-physiology" />

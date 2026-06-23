@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "comingSoon": true,
+  "comingSoon": false,
   "meta": {
     "moduleCode": "MLS-1",
     "moduleName": "Locomotor Module",
@@ -19,31 +19,393 @@
       "id": 1,
       "title": "Upper Limb Anatomy & Injuries",
       "subtitle": "Upper Limb Anatomy & Injuries",
-      "emoji": "💪",
+      "emoji": "\ud83d\udcaa",
       "page": 1,
-      "lectureRange": "Lectures 1",
-      "subjects": [],
-      "keywords": []
+      "lectureRange": "Lectures 1-20",
+      "subjects": [
+        {
+          "id": "anatomy",
+          "name": "Anatomy",
+          "iconName": "Bone",
+          "lectures": "Axilla&brachial Plexus, Pectoral Region, The Back, Shoulder Region, Arm&cubital Fossa, Front of Forearm&wrist, Back of Forearm&hand, Nerves of Upper Limb, Shoulder Girdle, Elbow&radioulnar Joints, Wrist&hand Joints",
+          "lectureCount": 11,
+          "lectureNames": [
+            "Axilla&brachial Plexus",
+            "Pectoral Region",
+            "The Back",
+            "Shoulder Region",
+            "Arm&cubital Fossa",
+            "Front of Forearm&wrist",
+            "Back of Forearm&hand",
+            "Nerves of Upper Limb",
+            "Shoulder Girdle",
+            "Elbow&radioulnar Joints",
+            "Wrist&hand Joints"
+          ],
+          "questions": []
+        },
+        {
+          "id": "biochem",
+          "name": "Biochemistry",
+          "iconName": "FlaskConical",
+          "lectures": "Collagen, Calcium&vit D, Purine Catabolism, Muscle Metabolism",
+          "lectureCount": 4,
+          "lectureNames": [
+            "Collagen",
+            "Calcium&vit D",
+            "Purine Catabolism",
+            "Muscle Metabolism"
+          ],
+          "questions": []
+        },
+        {
+          "id": "histology",
+          "name": "Histology",
+          "iconName": "Microscope",
+          "lectures": "Cartilage, Bone, Muscles",
+          "lectureCount": 3,
+          "lectureNames": [
+            "Cartilage",
+            "Bone",
+            "Muscles"
+          ],
+          "questions": []
+        },
+        {
+          "id": "pharma",
+          "name": "Pharmacology",
+          "iconName": "Pill",
+          "lectures": "Muscle Relaxants",
+          "lectureCount": 1,
+          "lectureNames": [
+            "Muscle Relaxants"
+          ],
+          "questions": []
+        },
+        {
+          "id": "physiology",
+          "name": "Physiology",
+          "iconName": "Activity",
+          "lectures": "Muscle&nerves",
+          "lectureCount": 1,
+          "lectureNames": [
+            "Muscle&nerves"
+          ],
+          "questions": []
+        }
+      ],
+      "keywords": [
+        "arm&cubital",
+        "axilla&brachial",
+        "back",
+        "bone",
+        "calcium&vit",
+        "cartilage",
+        "catabolism",
+        "collagen",
+        "elbow&radioulnar",
+        "forearm&hand",
+        "forearm&wrist",
+        "fossa",
+        "front",
+        "girdle",
+        "joints",
+        "limb",
+        "metabolism",
+        "muscle",
+        "muscle&nerves",
+        "muscles",
+        "nerves",
+        "pectoral",
+        "plexus",
+        "purine",
+        "region",
+        "relaxants",
+        "shoulder",
+        "upper",
+        "wrist&hand"
+      ]
     },
     {
       "id": 2,
       "title": "Lower Limb Anatomy & Injuries",
       "subtitle": "Lower Limb Anatomy & Injuries",
-      "emoji": "🦵",
+      "emoji": "\ud83e\uddb5",
       "page": 2,
-      "lectureRange": "Lectures 2",
-      "subjects": [],
-      "keywords": []
+      "lectureRange": "Lectures 1-28",
+      "subjects": [
+        {
+          "id": "anatomy",
+          "name": "Anatomy",
+          "iconName": "Bone",
+          "lectures": "Front of Thigh, Medial Side of Thigh, Gluteal Region, Back of Thigh, Popliteal Fossa, Anterior of Leg&dorsum of Foot, Lateral Compartment of Leg, Posterior Compartment of Leg, Sole of Foot, Hip, Knee, Tibio-fibular, Ankle, Intertarsal Joints, Vertebral Column",
+          "lectureCount": 15,
+          "lectureNames": [
+            "Front of Thigh",
+            "Medial Side of Thigh",
+            "Gluteal Region",
+            "Back of Thigh",
+            "Popliteal Fossa",
+            "Anterior of Leg&dorsum of Foot",
+            "Lateral Compartment of Leg",
+            "Posterior Compartment of Leg",
+            "Sole of Foot",
+            "Hip",
+            "Knee",
+            "Tibio-fibular",
+            "Ankle",
+            "Intertarsal Joints",
+            "Vertebral Column"
+          ],
+          "questions": []
+        },
+        {
+          "id": "biochem",
+          "name": "Biochemistry",
+          "iconName": "FlaskConical",
+          "lectures": "Muscle Metabolism, Oxidative System",
+          "lectureCount": 2,
+          "lectureNames": [
+            "Muscle Metabolism",
+            "Oxidative System"
+          ],
+          "questions": []
+        },
+        {
+          "id": "histology",
+          "name": "Histology",
+          "iconName": "Microscope",
+          "lectures": "Neuron",
+          "lectureCount": 1,
+          "lectureNames": [
+            "Neuron"
+          ],
+          "questions": []
+        },
+        {
+          "id": "parasitology",
+          "name": "Parasitology",
+          "iconName": "Bug",
+          "lectures": "Trichinellosis",
+          "lectureCount": 1,
+          "lectureNames": [
+            "Trichinellosis"
+          ],
+          "questions": []
+        },
+        {
+          "id": "pathology",
+          "name": "Pathology",
+          "iconName": "ShieldAlert",
+          "lectures": "Adipose Tumor, Fibrous Tumors, Smooth Muscle Tumors, Synovial Sarcoma, Nerve Sheath Tumors, Skeletal Muscle Tumors, Muscle Disorders",
+          "lectureCount": 7,
+          "lectureNames": [
+            "Adipose Tumor",
+            "Fibrous Tumors",
+            "Smooth Muscle Tumors",
+            "Synovial Sarcoma",
+            "Nerve Sheath Tumors",
+            "Skeletal Muscle Tumors",
+            "Muscle Disorders"
+          ],
+          "questions": []
+        },
+        {
+          "id": "pharma",
+          "name": "Pharmacology",
+          "iconName": "Pill",
+          "lectures": "Nsaids, Gout",
+          "lectureCount": 2,
+          "lectureNames": [
+            "Nsaids",
+            "Gout"
+          ],
+          "questions": []
+        }
+      ],
+      "keywords": [
+        "adipose",
+        "ankle",
+        "anterior",
+        "back",
+        "column",
+        "compartment",
+        "disorders",
+        "fibrous",
+        "foot",
+        "fossa",
+        "front",
+        "gluteal",
+        "gout",
+        "intertarsal",
+        "joints",
+        "knee",
+        "lateral",
+        "leg&dorsum",
+        "medial",
+        "metabolism",
+        "muscle",
+        "nerve",
+        "neuron",
+        "nsaids",
+        "oxidative",
+        "popliteal",
+        "posterior",
+        "region",
+        "sarcoma",
+        "sheath",
+        "side",
+        "skeletal",
+        "smooth",
+        "sole",
+        "synovial",
+        "system",
+        "thigh",
+        "tibio-fibular",
+        "trichinellosis",
+        "tumor",
+        "tumors",
+        "vertebral"
+      ]
     },
     {
       "id": 3,
       "title": "Spine & Musculoskeletal Pathologies",
       "subtitle": "Spine & Musculoskeletal Pathologies",
-      "emoji": "🦴",
+      "emoji": "\ud83e\uddb4",
       "page": 3,
-      "lectureRange": "Lectures 3",
-      "subjects": [],
-      "keywords": []
+      "lectureRange": "Lectures 1-26",
+      "subjects": [
+        {
+          "id": "anatomy",
+          "name": "Anatomy",
+          "iconName": "Bone",
+          "lectures": "Dermatome",
+          "lectureCount": 1,
+          "lectureNames": [
+            "Dermatome"
+          ],
+          "questions": []
+        },
+        {
+          "id": "biochem",
+          "name": "Biochemistry",
+          "iconName": "FlaskConical",
+          "lectures": "Collagen, Calcium&vit D, Purine Catabolism",
+          "lectureCount": 3,
+          "lectureNames": [
+            "Collagen",
+            "Calcium&vit D",
+            "Purine Catabolism"
+          ],
+          "questions": []
+        },
+        {
+          "id": "histology",
+          "name": "Histology",
+          "iconName": "Microscope",
+          "lectures": "Cartilage, Bone, Skin",
+          "lectureCount": 3,
+          "lectureNames": [
+            "Cartilage",
+            "Bone",
+            "Skin"
+          ],
+          "questions": []
+        },
+        {
+          "id": "microbiology",
+          "name": "Microbiology",
+          "iconName": "Biohazard",
+          "lectures": "Bone&joint Infections, Bacteria, Bacterial Skin Infections, Fungal Infection, Viral Infections",
+          "lectureCount": 5,
+          "lectureNames": [
+            "Bone&joint Infections",
+            "Bacteria",
+            "Bacterial Skin Infections",
+            "Fungal Infection",
+            "Viral Infections"
+          ],
+          "questions": []
+        },
+        {
+          "id": "parasitology",
+          "name": "Parasitology",
+          "iconName": "Bug",
+          "lectures": "Protozoal Skin Infections, Onchocerciasis, Loiasis, Flies, Lice, Fleas, Cimex Lectularius, Ticks, Mites",
+          "lectureCount": 9,
+          "lectureNames": [
+            "Protozoal Skin Infections",
+            "Onchocerciasis",
+            "Loiasis",
+            "Flies",
+            "Lice",
+            "Fleas",
+            "Cimex Lectularius",
+            "Ticks",
+            "Mites"
+          ],
+          "questions": []
+        },
+        {
+          "id": "pathology",
+          "name": "Pathology",
+          "iconName": "ShieldAlert",
+          "lectures": "Non-tumor Diseases of Bone, Tumors, Joint Diseases, Diseases of Skin",
+          "lectureCount": 4,
+          "lectureNames": [
+            "Non-tumor Diseases of Bone",
+            "Tumors",
+            "Joint Diseases",
+            "Diseases of Skin"
+          ],
+          "questions": []
+        },
+        {
+          "id": "pharma",
+          "name": "Pharmacology",
+          "iconName": "Pill",
+          "lectures": "Antifungal Drugs",
+          "lectureCount": 1,
+          "lectureNames": [
+            "Antifungal Drugs"
+          ],
+          "questions": []
+        }
+      ],
+      "keywords": [
+        "antifungal",
+        "bacteria",
+        "bacterial",
+        "bone",
+        "bone&joint",
+        "calcium&vit",
+        "cartilage",
+        "catabolism",
+        "cimex",
+        "collagen",
+        "dermatome",
+        "diseases",
+        "drugs",
+        "fleas",
+        "flies",
+        "fungal",
+        "infection",
+        "infections",
+        "joint",
+        "lectularius",
+        "lice",
+        "loiasis",
+        "mites",
+        "non-tumor",
+        "onchocerciasis",
+        "protozoal",
+        "purine",
+        "skin",
+        "ticks",
+        "tumors",
+        "viral"
+      ]
     }
   ]
 }

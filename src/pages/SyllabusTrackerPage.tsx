@@ -114,7 +114,7 @@ const emptyChapterState = (): ChapterState => ({
 });
 
 export function SyllabusTrackerPage({ userButton }: { userButton?: React.ReactNode }) {
-  const { code } = useParams<{ code: string }>();
+  const { code, yearId } = useParams<{ code: string; yearId: string }>();
   const navigate = useNavigate();
   const { t, language, toggleLanguage } = useLanguage();
   const { isDark, toggleTheme } = useTheme();
@@ -124,6 +124,12 @@ export function SyllabusTrackerPage({ userButton }: { userButton?: React.ReactNo
   const isRTL = language === 'ar';
   const moduleCode = (code || 'MEM-2').toUpperCase();
   const storageKey = `asu_study_tracker_${moduleCode}`;
+
+  const parsedYear = useMemo(() => {
+    if (yearId) return yearId;
+    const match = moduleCode.match(/-(\d+)/);
+    return match ? match[1] : '2';
+  }, [yearId, moduleCode]);
 
   const moduleInfo = useMemo(() => lookupModule(moduleCode), [moduleCode]);
   const moduleName = moduleInfo ? moduleInfo.name : 'Endocrine Module';
@@ -390,8 +396,8 @@ export function SyllabusTrackerPage({ userButton }: { userButton?: React.ReactNo
 
   const crumbs = [
     { label: 'Portal', onClick: () => navigate('/') },
-    { label: 'Year 2', onClick: () => navigate('/year-2') },
-    { label: moduleCode, onClick: () => navigate(`/year-2/${moduleCode.toLowerCase()}`) },
+    { label: `Year ${parsedYear}`, onClick: () => navigate(`/year-${parsedYear}`) },
+    { label: moduleCode, onClick: () => navigate(`/year-${parsedYear}/${moduleCode.toLowerCase()}`) },
     { label: label('syllabusTracker') }
   ];
 
@@ -770,7 +776,7 @@ export function SyllabusTrackerPage({ userButton }: { userButton?: React.ReactNo
       <motion.button
         whileHover="hover"
         whileTap={{ scale: 0.95 }}
-        onClick={() => navigate(`/year-2/${moduleCode.toLowerCase()}`)}
+        onClick={() => navigate(`/year-${parsedYear}/${moduleCode.toLowerCase()}`)}
         className="fixed bottom-[86px] sm:bottom-[56px] left-1/2 -translate-x-1/2 z-50 flex items-center gap-2.5 px-6 py-3 rounded-full border border-zinc-200/80 dark:border-white/[0.08] bg-white/90 dark:bg-zinc-950/80 text-sm font-bold text-zinc-700 dark:text-zinc-300 hover:text-zinc-950 dark:hover:text-white shadow-[0_8px_32px_rgba(0,0,0,0.12)] dark:shadow-[0_8px_32px_rgba(0,0,0,0.35)] backdrop-blur-md transition-all duration-200 cursor-pointer"
       >
         <motion.div

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "comingSoon": true,
+  "comingSoon": false,
   "meta": {
     "moduleCode": "IPAT-1",
     "moduleName": "Introduction to Pathology",
@@ -18,31 +18,137 @@
       "id": 1,
       "title": "Cellular Injury & Adaptations",
       "subtitle": "Cellular Injury & Adaptations",
-      "emoji": "🦠",
+      "emoji": "\ud83e\udda0",
       "page": 1,
-      "lectureRange": "Lectures 1",
-      "subjects": [],
-      "keywords": []
+      "lectureRange": "Lectures 1-7",
+      "subjects": [
+        {
+          "id": "pathology",
+          "name": "Pathology",
+          "iconName": "ShieldAlert",
+          "lectures": "Adaptation, Cell Injury, Gangrene, Apoptosis, Accumulation, Pigments, Pathological Calcification",
+          "lectureCount": 7,
+          "lectureNames": [
+            "Adaptation",
+            "Cell Injury",
+            "Gangrene",
+            "Apoptosis",
+            "Accumulation",
+            "Pigments",
+            "Pathological Calcification"
+          ],
+          "questions": []
+        }
+      ],
+      "keywords": [
+        "accumulation",
+        "adaptation",
+        "apoptosis",
+        "calcification",
+        "cell",
+        "gangrene",
+        "injury",
+        "pathological",
+        "pigments"
+      ]
     },
     {
       "id": 2,
       "title": "Inflammation & Repair",
       "subtitle": "Inflammation & Repair",
-      "emoji": "🔥",
+      "emoji": "\ud83d\udd25",
       "page": 2,
-      "lectureRange": "Lectures 2",
-      "subjects": [],
-      "keywords": []
+      "lectureRange": "Lectures 1-3",
+      "subjects": [
+        {
+          "id": "pathology",
+          "name": "Pathology",
+          "iconName": "ShieldAlert",
+          "lectures": "Acute Inflammation, Chronic Inflammation, Healing&repair",
+          "lectureCount": 3,
+          "lectureNames": [
+            "Acute Inflammation",
+            "Chronic Inflammation",
+            "Healing&repair"
+          ],
+          "questions": []
+        }
+      ],
+      "keywords": [
+        "acute",
+        "chronic",
+        "healing&repair",
+        "inflammation"
+      ]
     },
     {
       "id": 3,
       "title": "Hemodynamics & Neoplasia",
       "subtitle": "Hemodynamics & Neoplasia",
-      "emoji": "❤️",
+      "emoji": "\u2764\ufe0f",
       "page": 3,
-      "lectureRange": "Lectures 3",
-      "subjects": [],
-      "keywords": []
+      "lectureRange": "Lectures 1-20",
+      "subjects": [
+        {
+          "id": "pathology",
+          "name": "Pathology",
+          "iconName": "ShieldAlert",
+          "lectures": "Classification of Tumors, Characteristics of Tumors, Benign Tumors, Malignant Tumors, Grading and Staging, Methods of Metastasize, Epidemiology&predispostion, Carcinogenesis, Cancer Etiology, Clinical Features of Neoplasm, Diagnosis, Edema, Hyperemia&congestion, Thrombosis, Embolism, Ischemia, Infarcts, Hemorrhage, Autoimmune Diseases, Amyloidosis",
+          "lectureCount": 20,
+          "lectureNames": [
+            "Classification of Tumors",
+            "Characteristics of Tumors",
+            "Benign Tumors",
+            "Malignant Tumors",
+            "Grading and Staging",
+            "Methods of Metastasize",
+            "Epidemiology&predispostion",
+            "Carcinogenesis",
+            "Cancer Etiology",
+            "Clinical Features of Neoplasm",
+            "Diagnosis",
+            "Edema",
+            "Hyperemia&congestion",
+            "Thrombosis",
+            "Embolism",
+            "Ischemia",
+            "Infarcts",
+            "Hemorrhage",
+            "Autoimmune Diseases",
+            "Amyloidosis"
+          ],
+          "questions": []
+        }
+      ],
+      "keywords": [
+        "amyloidosis",
+        "autoimmune",
+        "benign",
+        "cancer",
+        "carcinogenesis",
+        "characteristics",
+        "classification",
+        "clinical",
+        "diagnosis",
+        "diseases",
+        "edema",
+        "embolism",
+        "epidemiology&predispostion",
+        "etiology",
+        "features",
+        "grading",
+        "hemorrhage",
+        "hyperemia&congestion",
+        "infarcts",
+        "ischemia",
+        "malignant",
+        "metastasize",
+        "methods",
+        "neoplasm",
+        "staging",
+        "thrombosis",
+        "tumors"
+      ]
     }
   ]
 }
