@@ -64,18 +64,8 @@ const isAnswered = (q: Question, a: QuizAnswer | undefined): boolean => {
     case 'matching':
       return typeof a === 'object' && a.submitted === true;
     case 'casestudy':
-    case 'case': {
-      if (!Array.isArray(q.subQuestions) || q.subQuestions.length === 0) return false;
-      const ansObj = a as Record<string, unknown>;
-      return q.subQuestions.every((sq) => {
-        const subA = ansObj[sq.id];
-        if (subA === undefined || subA === null) return false;
-        if (sq.type === 'mcq') return typeof subA === 'number';
-        if (sq.type === 'fillblank') return typeof subA === 'object' && (subA as Record<string, unknown>).submitted === true;
-        if (sq.type === 'essay') return typeof subA === 'object' && (subA as Record<string, unknown>).selfGrade !== undefined;
-        return true;
-      });
-    }
+    case 'case':
+      return typeof a === 'object' && Object.keys(a).length > 0;
     default:
       return true;
   }
@@ -211,10 +201,8 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
   const playedForQuestions = useRef<Set<number>>(new Set());
   useEffect(() => {
     if (answered && question && !playedForQuestions.current.has(current)) {
-      // Case study: skip feedback until all sub-questions are graded
-      if ((question.type === 'case' || question.type === 'casestudy') && getQuestionStatus(question, answers[current]) === 'pending') {
-        return;
-      }
+      // Case/casestudy: handled by per-sub-question effect below — skip main
+      if (question.type === 'case' || question.type === 'casestudy') return;
       playedForQuestions.current.add(current);
       if (isCorrect) {
         fx.correct(0.5, 0.5, 1);
@@ -344,11 +332,12 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
       const revs: Record<string, boolean> = {};
       question.subQuestions.forEach(subQ => {
         drafts[subQ.id] = saved[subQ.id]?.text || '';
-        // Essay sub-questions: only reveal if self-graded; others: reveal if answered
-        if (subQ.type === 'essay') {
-          revs[subQ.id] = saved[subQ.id]?.selfGrade !== undefined;
-        } else {
+        if (subQ.type === 'fillblank') {
+          revs[subQ.id] = (saved[subQ.id] as Record<string, unknown>)?.submitted === true;
+        } else if (subQ.type === 'mcq') {
           revs[subQ.id] = saved[subQ.id] !== undefined;
+        } else {
+          revs[subQ.id] = saved[subQ.id]?.selfGrade !== undefined;
         }
       });
       // eslint-disable-next-line react-hooks/set-state-in-effect
@@ -821,7 +810,11 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
         <div className="space-y-6">
           {(q.subQuestions ?? []).map((subQ) => {
             const subVal = subAns[subQ.id];
-            const isCompleted = subVal !== undefined;
+            const isCompleted = subQ.type === 'fillblank'
+            ? subVal?.submitted === true
+            : subQ.type === 'mcq'
+              ? subVal !== undefined
+              : subVal?.selfGrade !== undefined;
 
             return (
               <div key={subQ.id} className="border-t border-gray-200 dark:border-white/[0.06] pt-5 text-start">
