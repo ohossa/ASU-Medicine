@@ -201,6 +201,10 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
   const playedForQuestions = useRef<Set<number>>(new Set());
   useEffect(() => {
     if (answered && question && !playedForQuestions.current.has(current)) {
+      // Case study: skip feedback until all sub-questions are graded
+      if ((question.type === 'case' || question.type === 'casestudy') && getQuestionStatus(question, answers[current]) === 'pending') {
+        return;
+      }
       playedForQuestions.current.add(current);
       if (isCorrect) {
         fx.correct(0.5, 0.5, 1);
@@ -211,6 +215,30 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
       }
     }
   }, [answered, isCorrect, question, playSound, current]);
+
+  /* Case sub-question self-grading feedback */
+  const lastCaseSubGrades = useRef<Record<string, string>>({});
+  useEffect(() => {
+    if (!question || (question.type !== 'case' && question.type !== 'casestudy')) return;
+    const curr = answers[current] as Record<string, unknown> | undefined;
+    if (!curr) return;
+    for (const sq of (question.subQuestions ?? [])) {
+      const sub = curr[sq.id] as Record<string, unknown> | undefined;
+      const key = `${current}-${sq.id}`;
+      const prevGrade = lastCaseSubGrades.current[key];
+      const currGrade = sub?.selfGrade as string | undefined;
+      if (currGrade !== undefined && currGrade !== prevGrade) {
+        lastCaseSubGrades.current[key] = currGrade;
+        if (currGrade === 'correct') {
+          fx.correct(0.5, 0.5, 0.5);
+          playSound('correct');
+        } else {
+          fx.wrong(0.5, 0.5);
+          playSound('wrong');
+        }
+      }
+    }
+  }, [answers, current, question, playSound]);
 
   /* Auto-save quiz session (debounced 2s after last change) — essayDrafts stored separately via saveLocalDrafts */
   const quizDataRef = useRef({ current: 0, answers: {} as Record<number, QuizAnswer>, elapsedSeconds: 0, flagged: [] as number[], finished: false, timerMode: 'practice' as TimerMode, showEssayAnswer: false });
@@ -281,6 +309,9 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
     if (question.type === 'essay') {
       // eslint-disable-next-line react-hooks/set-state-in-effect
       setEssayDraft(essayDrafts[current] ?? answers[current]?.text ?? '');
+      // Reset reveal state for new essay — only show if already graded
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      setShowEssayAnswer(answers[current]?.selfGrade !== undefined);
     } else {
       setShowEssayAnswer(false);
     }
