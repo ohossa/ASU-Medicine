@@ -334,7 +334,12 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
       const revs: Record<string, boolean> = {};
       question.subQuestions.forEach(subQ => {
         drafts[subQ.id] = saved[subQ.id]?.text || '';
-        revs[subQ.id] = saved[subQ.id] !== undefined;
+        // Essay sub-questions: only reveal if self-graded; others: reveal if answered
+        if (subQ.type === 'essay') {
+          revs[subQ.id] = saved[subQ.id]?.selfGrade !== undefined;
+        } else {
+          revs[subQ.id] = saved[subQ.id] !== undefined;
+        }
       });
       // eslint-disable-next-line react-hooks/set-state-in-effect
       setSubEssayDrafts(drafts);
