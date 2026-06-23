@@ -64,8 +64,18 @@ const isAnswered = (q: Question, a: QuizAnswer | undefined): boolean => {
     case 'matching':
       return typeof a === 'object' && a.submitted === true;
     case 'casestudy':
-    case 'case':
-      return typeof a === 'object' && Object.keys(a).length > 0;
+    case 'case': {
+      if (!Array.isArray(q.subQuestions) || q.subQuestions.length === 0) return false;
+      const ansObj = a as Record<string, unknown>;
+      return q.subQuestions.every((sq) => {
+        const subA = ansObj[sq.id];
+        if (subA === undefined || subA === null) return false;
+        if (sq.type === 'mcq') return typeof subA === 'number';
+        if (sq.type === 'fillblank') return typeof subA === 'object' && (subA as Record<string, unknown>).submitted === true;
+        if (sq.type === 'essay') return typeof subA === 'object' && (subA as Record<string, unknown>).selfGrade !== undefined;
+        return true;
+      });
+    }
     default:
       return true;
   }
