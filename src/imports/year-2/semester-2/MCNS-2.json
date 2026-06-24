@@ -62405,6 +62405,72 @@
           ]
         }
       ]
+    },
+    {
+      "id": 11,
+      "title": "CNS2 Past Exams",
+      "subtitle": "",
+      "emoji": "📝",
+      "page": 11,
+      "lectureRange": "L1-L5",
+      "subjects": [
+        {
+          "id": "physiology",
+          "name": "Physiology",
+          "iconName": "Activity",
+          "lectures": "L1-L5",
+          "lectureCount": 5,
+          "questions": []
+        },
+        {
+          "id": "pathology",
+          "name": "Pathology",
+          "iconName": "ShieldAlert",
+          "lectures": "L1-L5",
+          "lectureCount": 5,
+          "questions": []
+        },
+        {
+          "id": "anatomy",
+          "name": "Anatomy",
+          "iconName": "Bone",
+          "lectures": "L1-L5",
+          "lectureCount": 5,
+          "questions": []
+        },
+        {
+          "id": "microbiology",
+          "name": "Microbiology",
+          "iconName": "Biohazard",
+          "lectures": "L1-L5",
+          "lectureCount": 5,
+          "questions": []
+        },
+        {
+          "id": "pharma",
+          "name": "Pharmacology",
+          "iconName": "Pill",
+          "lectures": "L1-L5",
+          "lectureCount": 5,
+          "questions": []
+        },
+        {
+          "id": "parasitology",
+          "name": "Parasitology",
+          "iconName": "Bug",
+          "lectures": "L1-L5",
+          "lectureCount": 5,
+          "questions": []
+        },
+        {
+          "id": "clinical",
+          "name": "Clinical",
+          "iconName": "Stethoscope",
+          "lectures": "L1-L5",
+          "lectureCount": 5,
+          "questions": []
+        }
+      ]
     }
   ]
 }

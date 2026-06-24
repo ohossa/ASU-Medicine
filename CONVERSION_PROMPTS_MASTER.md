@@ -607,15 +607,16 @@ Use these EXACT chapter titles in `chapterTitle`. Do not invent new chapter name
 
 **MCNS-2** — Central Nervous System:
 1. "Introduction to CNS"
-2. "Cerebrum & Cortical Functions"
-3. "Thalamus & Hypothalamus"
-4. "Brain Stem"
-5. "Cerebellum & Basal Ganglia"
-6. "Spinal Cord Tracts"
-7. "Cranial Nerves"
-8. "Meninges, Ventricles & CSF"
-9. "Blood Supply of the CNS"
-10. "CNS Pathology & Neuropharmacology"
+2. "Sensory System"
+3. "Motor System & Spinal Cord"
+4. "Brain Stem & Cranial Region"
+5. "Anatomy of the Neck"
+6. "Diencephalon, Reticular Formation, Sleep & Epilepsy"
+7. "Cerebrum, Meninges & Higher Brain Function"
+8. "CNS Infections"
+9. "Neurodegenerative, Vascular, Trauma & Tumours"
+10. "Miscellaneous & Embryology"
+11. "CNS2 Past Exams"
 
 **MSS-2** — Special Senses:
 1. "The Eye & Visual System"
