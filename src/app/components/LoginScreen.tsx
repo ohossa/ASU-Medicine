@@ -172,8 +172,8 @@ export function LoginScreen() {
           <div
             className="rounded-3xl border border-slate-200/80 bg-white/70 shadow-xl dark:border-white/10 dark:bg-slate-900/60 dark:shadow-[0_24px_80px_rgba(0,0,0,0.45)] backdrop-blur-xl overflow-hidden"
           >
-            <div className={`${isDark ? "clerk-dark-theme-container" : "clerk-light-theme-container"} lg:h-[480px] flex items-center justify-center`}>
-              <SignIn routing="hash" appearance={clerkAppearance} />
+            <div className={`${isDark ? "clerk-dark-theme-container" : "clerk-light-theme-container"} py-8 flex items-center justify-center`}>
+              <SignIn routing="virtual" appearance={clerkAppearance} />
             </div>
           </div>
         </motion.section>
