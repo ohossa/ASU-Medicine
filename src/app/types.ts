@@ -92,6 +92,7 @@ export interface SubjectData {
   lectureCount: number;
   lectureNames?: string[];
   questions: Question[];
+  lectureNum?: number; // Added for virtual subjects in Infection Module
 }
 
 export interface ChapterData {

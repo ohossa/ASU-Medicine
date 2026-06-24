@@ -204,6 +204,7 @@ function QuizFlowWrapper({
         <Suspense fallback={<div>Loading...</div>}>
           <SubjectSelect
             chapter={selectedChapter}
+            moduleCode={selectedModule.code}
             breadcrumbPath={[
               { label: t('portal') || 'Portal', onClick: () => navigate('/') },
               { label: t(`year${selectedYear || 2}`) || `Year ${selectedYear || 2}`, onClick: () => navigate(`/year-${selectedYear || 2}`) },
@@ -363,6 +364,36 @@ function MainApp() {
   const [quizPayload, setQuizPayload] = useState<QuizPayload | null>(null);
   const [resumePayload, setResumePayload] = useState<QuizSessionSave | null>(null);
   const [resultPayload, setResultPayload] = useState<ResultPayload | null>(null);
+
+  const transformedChapter = useMemo(() => {
+    if (!selectedChapter || selectedModule?.code !== 'MINF-1') {
+      return selectedChapter;
+    }
+    const parentSubject = selectedChapter.subjects[0];
+    if (!parentSubject || !parentSubject.lectureNames) {
+      return selectedChapter;
+    }
+    const virtualSubjects: SubjectData[] = parentSubject.lectureNames.map((lectureName, index) => {
+      const lectureNum = index + 1;
+      const questionsForLecture = parentSubject.questions.filter(
+        (q) => q.lecture === lectureNum
+      );
+      return {
+        id: parentSubject.id,
+        name: lectureName,
+        iconName: parentSubject.iconName,
+        lectures: lectureName,
+        lectureCount: 1,
+        lectureNames: [lectureName],
+        questions: questionsForLecture,
+        lectureNum,
+      };
+    });
+    return {
+      ...selectedChapter,
+      subjects: virtualSubjects,
+    };
+  }, [selectedChapter, selectedModule]);
   
   // UI States
   const [modalModule, setModalModule] = useState<ModuleInfo | null>(null);
@@ -563,25 +594,25 @@ function MainApp() {
   };
 
   const handleSelectSubject = (subject: SubjectData, questions: Question[]) => {
-    const saved = loadQuizSession(selectedChapter!.id, subject.name);
+    const saved = loadQuizSession(transformedChapter!.id, subject.name);
     if (saved && !saved.finished) {
       setResumePayload(saved);
       return;
     }
     transitionTo(() => {
-      setQuizPayload({ chapter: selectedChapter!, subject, questions });
+      setQuizPayload({ chapter: transformedChapter!, subject, questions });
       setScreen('quiz');
     });
   };
 
   const handleQuickStart = (questions: Question[]) => {
-    const saved = loadQuizSession(selectedChapter!.id, 'all');
+    const saved = loadQuizSession(transformedChapter!.id, 'all');
     if (saved && !saved.finished) {
       setResumePayload(saved);
       return;
     }
     transitionTo(() => {
-      setQuizPayload({ chapter: selectedChapter!, subject: null, questions });
+      setQuizPayload({ chapter: transformedChapter!, subject: null, questions });
       setScreen('quiz');
     });
   };
@@ -984,7 +1015,7 @@ function MainApp() {
                     setScreen={setScreen}
                     activeChapters={activeChapters}
                     studyModeNameMap={studyModeNameMap}
-                    selectedChapter={selectedChapter}
+                    selectedChapter={selectedModule?.code === 'MINF-1' ? transformedChapter : selectedChapter}
                     handleSelectChapter={handleSelectChapter}
                     handleSelectHistory={handleSelectHistory}
                     customUserButton={customUserButton}
@@ -1097,25 +1128,25 @@ function MainApp() {
             open={!!resumePayload}
             current={resumePayload.current}
             total={(() => {
-              const sub = selectedChapter?.subjects.find(s => s.name === resumePayload?.subjectName);
+              const sub = transformedChapter?.subjects.find(s => s.name === resumePayload?.subjectName);
               if (sub) return sub.questions.length;
-              return selectedChapter?.subjects.flatMap(s => s.questions).length ?? 0;
+              return transformedChapter?.subjects.flatMap(s => s.questions).length ?? 0;
             })()}
             elapsedSeconds={resumePayload.elapsedSeconds}
             answeredCount={Object.values(resumePayload.answers).filter(a => a !== undefined && a !== null).length}
             onResume={() => {
-              if (!resumePayload || !selectedChapter) return;
-              const subject = selectedChapter.subjects.find(s => s.name === resumePayload.subjectName) || null;
-              const questions = subject ? subject.questions : selectedChapter.subjects.flatMap(s => s.questions);
+              if (!resumePayload || !transformedChapter) return;
+              const subject = transformedChapter.subjects.find(s => s.name === resumePayload.subjectName) || null;
+              const questions = subject ? subject.questions : transformedChapter.subjects.flatMap(s => s.questions);
               transitionTo(() => {
-                setQuizPayload({ chapter: selectedChapter, subject, questions, savedSession: resumePayload });
+                setQuizPayload({ chapter: transformedChapter, subject, questions, savedSession: resumePayload });
                 setResumePayload(null);
                 setScreen('quiz');
               });
             }}
             onRestart={() => {
-              if (!selectedChapter || !resumePayload) return;
-              clearQuizSession(selectedChapter.id, resumePayload.subjectName);
+              if (!transformedChapter || !resumePayload) return;
+              clearQuizSession(transformedChapter.id, resumePayload.subjectName);
               setResumePayload(null);
             }}
           />

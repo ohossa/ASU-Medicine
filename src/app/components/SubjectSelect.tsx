@@ -61,6 +61,7 @@ interface Props {
   onQuickStart: (questions: Question[]) => void;
   breadcrumbPath?: BreadcrumbItem[];
   userButton?: React.ReactNode;
+  moduleCode?: string;
 }
 
 interface LatestResult {
@@ -196,11 +197,17 @@ const matchLatestResult = (history: QuizResult[], chapterId: number, subjectName
 /* Component                                                           */
 /* ------------------------------------------------------------------ */
 
-export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart, breadcrumbPath, userButton }: Props) {
+export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart, breadcrumbPath, userButton, moduleCode }: Props) {
   const { t, language } = useLanguage();
   const isRTL = language === 'ar';
 
   const label = (key: string): string => {
+    if (moduleCode === 'MINF-1') {
+      if (key === 'subjects') return isRTL ? 'المحاضرات' : 'Lectures';
+      if (key === 'startAll') return isRTL ? 'ابدأ كل المحاضرات' : 'Start All Lectures';
+      if (key === 'quickStartDesc') return isRTL ? 'اختبر كل محاضرات هذا القسم في جلسة واحدة مجمعة.' : 'Take on every lecture in this chapter in one combined session.';
+      if (key === 'available') return isRTL ? 'محاضرة متاحة' : 'lectures available';
+    }
     const translated = typeof t === 'function' ? t(key) : undefined;
     if (translated && translated !== key) return translated;
     const f = FALLBACK[key];
@@ -259,31 +266,41 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart, 
     const lectures = trackerData[chapter.id]?.lectures ?? {};
     const result: Record<string, number> = {};
     for (const subject of chapter.subjects) {
-      const total = Math.max(0, subject.lectureCount) * 2;
-      if (total === 0) {
-        result[subject.id] = 0;
-        continue;
-      }
-      let done = 0;
-      const prefix = `${subject.id}_L`;
-      for (const [key, ls] of Object.entries(lectures)) {
-        if (!key.startsWith(prefix)) continue;
+      if (moduleCode === 'MINF-1' && subject.lectureNum !== undefined) {
+        const key = `${subject.id}_L${subject.lectureNum}`;
+        const ls = lectures[key];
+        let done = 0;
         if (ls?.studied) done++;
         if (ls?.revised) done++;
+        result[subject.name] = Math.round((done / 2) * 100);
+      } else {
+        const total = Math.max(0, subject.lectureCount) * 2;
+        if (total === 0) {
+          result[subject.id] = 0;
+          continue;
+        }
+        let done = 0;
+        const prefix = `${subject.id}_L`;
+        for (const [key, ls] of Object.entries(lectures)) {
+          if (!key.startsWith(prefix)) continue;
+          if (ls?.studied) done++;
+          if (ls?.revised) done++;
+        }
+        result[subject.id] = Math.min(100, Math.round((done / total) * 100));
       }
-      result[subject.id] = Math.min(100, Math.round((done / total) * 100));
     }
     return result;
-  }, [trackerData, chapter]);
+  }, [trackerData, chapter, moduleCode]);
 
   /* Per-subject latest exam result */
   const latestResults = useMemo(() => {
     const result: Record<string, LatestResult | null> = {};
     for (const subject of chapter.subjects) {
-      result[subject.id] = matchLatestResult(history, chapter.id, subject.name);
+      const key = moduleCode === 'MINF-1' ? subject.name : subject.id;
+      result[key] = matchLatestResult(history, chapter.id, subject.name);
     }
     return result;
-  }, [history, chapter]);
+  }, [history, chapter, moduleCode]);
 
   const allQuestions = useMemo(() => chapter.subjects.flatMap((s) => s.questions), [chapter]);
   const activeSubjects = chapter.subjects.filter((s) => s.questions.length > 0).length;
@@ -403,13 +420,13 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart, 
               const Icon = iconFor(subject);
               const subAccent = ACCENT[subject.id];
               const isActive = subject.questions.length > 0;
-              const progress = syllabusProgress[subject.id] ?? 0;
-              const latest = latestResults[subject.id] ?? null;
+              const progress = syllabusProgress[moduleCode === 'MINF-1' ? subject.name : subject.id] ?? 0;
+              const latest = latestResults[moduleCode === 'MINF-1' ? subject.name : subject.id] ?? null;
               const isCompleted = latest !== null;
 
               return (
                 <motion.button
-                  key={subject.id}
+                  key={moduleCode === 'MINF-1' ? `${subject.id}_L${subject.lectureNum}` : subject.id}
                   type="button"
                   variants={{
                     hidden: { opacity: 0, y: 20 },
