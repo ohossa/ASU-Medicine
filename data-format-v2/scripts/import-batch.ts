@@ -116,9 +116,13 @@ const SUBJECT_DISPLAY: Record<SubjectColor, { name: string; iconName: string; ke
 };
 
 async function main(): Promise<void> {
-  const [inputPath, targetPath] = process.argv.slice(2);
+  const args = process.argv.slice(2);
+  const allowCrossChapter = args.includes('--allow-cross-chapter-duplicates');
+  const positionalArgs = args.filter((arg) => !arg.startsWith('--'));
+  const [inputPath, targetPath] = positionalArgs;
+
   if (!inputPath || !targetPath) {
-    throw new Error('Usage: npx tsx data-format-v2/scripts/import-batch.ts <incoming-batch.json> <target-module.json>');
+    throw new Error('Usage: npx tsx data-format-v2/scripts/import-batch.ts [--allow-cross-chapter-duplicates] <incoming-batch.json> <target-module.json>');
   }
 
   const batch = JSON.parse(await readFile(inputPath, 'utf8')) as IncomingBatch;
@@ -130,8 +134,8 @@ async function main(): Promise<void> {
   }
 
   const report: ImportReport = { inputPath, targetPath, moduleCode: bank.meta.moduleCode, added: [], skippedDuplicates: [], removedExistingDuplicates: [], needsReview: [] };
-  removeExistingDuplicates(bank, report);
-  const duplicateIndex = buildDuplicateIndex(bank);
+  removeExistingDuplicates(bank, report, allowCrossChapter);
+  const duplicateIndex = buildDuplicateIndex(bank, allowCrossChapter);
 
   batch.questions.forEach((incoming, index) => {
     const text = incoming.text ?? incoming.question ?? '';
@@ -168,7 +172,8 @@ async function main(): Promise<void> {
     }
 
     const cleanedIncomingText = cleanStarText(text);
-    const duplicateKey = makeDuplicateKey({ ...incoming, text: cleanedIncomingText });
+    const baseKey = makeDuplicateKey({ ...incoming, text: cleanedIncomingText });
+    const duplicateKey = allowCrossChapter ? `${chapter.id}:${baseKey}` : baseKey;
     const matchedDuplicateId = duplicateIndex.get(duplicateKey);
     if (matchedDuplicateId) {
       // Increment repetitionCount on the existing question
@@ -193,7 +198,7 @@ async function main(): Promise<void> {
     report.added.push({ id: converted.id, chapterId: chapter.id, subject: subjectId, text: converted.text });
   });
 
-  removeExistingDuplicates(bank, report);
+  removeExistingDuplicates(bank, report, allowCrossChapter);
   validateUniqueIds(bank);
   await writeFile(targetPath, `${JSON.stringify(bank, null, 2)}\n`, 'utf8');
 
@@ -486,12 +491,14 @@ function cleanStarText(text: string): string {
   return text.replace(/(?:\s*\*+)?\s*★+\s*$/g, '').trim();
 }
 
-function buildDuplicateIndex(bank: QuestionBankFile): Map<string, string> {
+function buildDuplicateIndex(bank: QuestionBankFile, allowCrossChapter: boolean): Map<string, string> {
   const index = new Map<string, string>();
   for (const chapter of bank.chapters) {
     for (const subject of chapter.subjects) {
       for (const question of subject.questions) {
-        index.set(makeDuplicateKey({ ...question, text: cleanStarText(question.text) }), question.id);
+        const baseKey = makeDuplicateKey({ ...question, text: cleanStarText(question.text) });
+        const key = allowCrossChapter ? `${chapter.id}:${baseKey}` : baseKey;
+        index.set(key, question.id);
       }
     }
   }
@@ -508,7 +515,7 @@ function findQuestionById(bank: QuestionBankFile, id: string): Question | undefi
   return undefined;
 }
 
-function removeExistingDuplicates(bank: QuestionBankFile, report: ImportReport): void {
+function removeExistingDuplicates(bank: QuestionBankFile, report: ImportReport, allowCrossChapter: boolean = false): void {
   const seen = new Map<string, string>();
 
   for (const chapter of bank.chapters) {
@@ -517,7 +524,8 @@ function removeExistingDuplicates(bank: QuestionBankFile, report: ImportReport):
 
       for (const question of subject.questions) {
         const cleanText = cleanStarText(question.text);
-        const key = makeDuplicateKey({ ...question, text: cleanText });
+        const baseKey = makeDuplicateKey({ ...question, text: cleanText });
+        const key = allowCrossChapter ? `${chapter.id}:${baseKey}` : baseKey;
         const keptId = seen.get(key);
 
         if (keptId) {

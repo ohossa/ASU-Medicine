@@ -1,0 +1,1465 @@
+{
+  "inputPath": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_ready/MCNS-2_past_exams_batch.json",
+  "targetPath": "src/imports/year-2/semester-2/MCNS-2.json",
+  "moduleCode": "MCNS-2",
+  "added": [
+    {
+      "id": "MCNS2-CH11-PHYS-0001",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "During the process of reading a sentence, the first two words are temporarily held in which type of memory system that allows you to manipulate and use information in real time?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0002",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "During reading, the first two words are primarily processed by which of the following?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0003",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A lesion involving the upper midbrain would most likely present with which of the following postural abnormalities?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0004",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Basic knowledge, such as facts and concepts about the world, belongs to which type of memory?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0005",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A teenager vividly remembers her 10th birthday party, including the people and events. Which of the following types of memory does this represent?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0006",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "The Globus Pallidus sends major inhibitory projections to which nucleus of the Thalamus?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0007",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A young athlete sustains a head injury and later develops a severe headache followed by sudden death. Rupture of an aneurysm in which of the following structures is the most likely cause?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0008",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "The Great cerebral vein (of Galen) is formed by the union of which of the following veins?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0009",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "The ansa cervicalis, a key motor component of the cervical plexus, is formed by contributions from which roots?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0010",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which artery primarily supplies the genu of the internal capsule?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0011",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Failure of closure of the rostral neuropore during the neurulation results in which of the following congenital anomalies?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0012",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "The Stria Medullaris of the Thalamus is a fiber bundle that primarily carries afferent fibers from which of the following structures to the Habenular Nuclei?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0013",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following parts are present in both the ansa cervicalis and the cervical plexus?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0014",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "The carotid triangle and the muscular triangle are separated by which of the following muscles?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0015",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following white matter tracts connects different cortical areas within the same hemisphere?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0016",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following bones forms the medial wall of the pterygopalatine fossa?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0017",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A patient presents with anterograde amnesia following a stroke affecting the anterior thalamic nucleus. Damage to which part of the Papez circuit is responsible for this memory deficit?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0018",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "The mammillothalamic tract primarily sends fibers to which of the following thalamic nuclei?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0019",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Through which of the following do auditory radiations pass?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0020",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following structures is connected by the fornix?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0021",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "The ventral posteromedial nucleus (VPM) of the thalamus receives afferent fibers from which of the following pathways?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0022",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "What is the primary function of the Papez circuit?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0023",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "The inferior parathyroid glands and thymus are derived from which of the following pharyngeal pouches?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0024",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following structures is formed from the rhombic lip of the metencephalon?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0025",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "The corticonuclear (corticobulbar) fibers primarily pass through which part of the internal capsule?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0026",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following structures primarily connects the amygdala with the hypothalamus?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0027",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following structures forms the anterior wall of the third ventricle?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0028",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "During embryological development, which of the following structures is derived from the fourth pharyngeal pouch?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0029",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "In the developing hindbrain, the sensory nuclei are derived from which embryological structure?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0030",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following fiber tracts passes through the sublenticular part of the internal capsule?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0031",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following structures provides the primary input to the lateral geniculate body (LGB)?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0032",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "The Ventral posteromedial nucleus (VPM) of thalamus primarily receives sensory input from which of the following pathways?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0033",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following veins is located in the cisterna ambiens?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0034",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following fiber tracts is a commissural fiber connecting the two cerebral hemispheres?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0035",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following structures lies deep to the hypoglossus muscle in the floor of the mouth?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0036",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following structures forms the lateral wall of the third ventricle?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0037",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Fibers reaching the Lateral Geniculate Body are carried mainly by which of the following structures?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0038",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which artery primarily supplies the genu of the internal capsule?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0039",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which part of the brain surrounds the third ventricle?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0040",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following structures is connected by the fornix?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0041",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which structure connects the amygdala to the hypothalamus?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0042",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following fibers pass through the genu of the internal capsule?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0043",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A patient with severe brain injury is observed to have flexion of the upper limbs and extension of the lower limbs in response to painful stimuli. This posture is most consistent with a lesion involving the:"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0044",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following investigations records the spontaneous electrical activity of the brain?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0045",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "The Reticular Activating System plays an important role in maintaining wakefulness and consciousness. Which of the following properties best characterizes this system?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0046",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following best describes an electroencephalogram (EEG)?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0047",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following best describes the characteristic of the reticular excitatory area?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0048",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Decerebrate rigidity is caused by which of the following mechanisms?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0049",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which type of brain wave is primarily produced during deep (slow-wave) sleep?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0050",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following is a characteristic of slow-wave sleep (NREM sleep)?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0051",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following happens in NREM?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0052",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following phenomena is characteristic of NREM Sleep?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0053",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following hormones shows a decrease in secretion during REM sleep?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0054",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "The categorical hemisphere is primarily responsible for which of the following functions?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0055",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which hemisphere of the brain is primarily responsible for solving mathematical problems and analytical reasoning?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0056",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following functions is primarily associated with the left cerebral hemisphere?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0057",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Recognition of faces is primarily a function of which of the following?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0058",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following best describes the primary function of the left cerebral hemisphere?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0059",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following functions is primarily associated with the categorical (usually left) cerebral hemisphere?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0060",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A right-handed patient suffers a stroke and subsequently develops impaired analytical thinking, difficulty with detailed processing, and language dysfunction. Which cerebral hemisphere is most likely affected?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0061",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following brain regions is primarily responsible for word production?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0062",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "primarily involved in language comprehension and the processing of thoughts into meaningful speech?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0063",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following statements about the neural control of speech is FALSE?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0064",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Lesions of the parieto-occipitotemporal region are most likely to produce which of the following clinical findings?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0065",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following brain regions is primarily responsible for word production?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0066",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A patient presents with flaccid dysarthria. Which of the following is the most characteristic feature?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0067",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following sequences correctly represents the pathway for seeing an object and then speaking about it?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0068",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following brain regions is primarily involved in the formulation of thoughts and language comprehension?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0069",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A patient is unable to repeat words despite relatively preserved comprehension and fluent speech. This language disorder is most consistent with:"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0070",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following functions is performed by the neocortex?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0071",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Stimulation of the Amygdala is most commonly associated with which of the following emotional responses?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0072",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A patient develops persistent fever after a head injury. Which of the following sites is most likely affected?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0073",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following is the primary function of the limbic lobe?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0074",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A boy falls off his bike and later develops mild fever without signs of infection or inflammation. Which part of the limbic system is most likely involved in regulating this autonomic response?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0075",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following functions is not primarily associated with the limbic system?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0076",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following functions is primarily associated with the periventricular nucleus of the hypothalamus?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0077",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following fiber tracts is an important component of the Papez circuit, connecting the cingulate gyrus to the hippocampal formation?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0078",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following functions is primarily associated with the amygdaloid nucleus?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0079",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following terms describes the process by which the nervous system ignores or reduces responses to repetitive, non-threatening stimuli? (ignore the unwanted)"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0080",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which neurotransmitter is primarily involved in the brain's pleasure and reward pathways?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0081",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which part of the brain is primarily responsible for temperature homeostasis?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0082",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following functions is primarily involved in the limbic system?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0083",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following is the primary function of the limbic lobe?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0084",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which type of memory is responsible for storing general knowledge, facts, and basic concepts (e.g., meanings of words and world knowledge)?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0085",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A 28-year-old pregnant woman at 39 weeks' gestation is found to be colonized with Streptococcus agalactiae (Group B Streptococcus). She is admitted in active labor. To prevent neonatal infection, which of the following interventions is most appropriate?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0086",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A 67-year-old patient presents with acute bacterial meningitis. Empiric therapy is started before culture results are available. Which of the following regimens is the recommended first-line empiric treatment for adults in this age group?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0087",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following drugs is primarily used for the treatment of cognitive symptoms in Alzheimer's disease?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0088",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following is considered a second-line screening tool at the community level for early detection of cardiovascular risk?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0089",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following is the specific antitoxin used in tetanus management?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0090",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following is considered the first-line disease-modifying therapy for multiple sclerosis (MS)?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0091",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "For children under 5 years of age exposed to rabies, the minimum post-exposure prophylaxis regimen consists of how many doses of rabies vaccine?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0092",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following drugs is used in the treatment of chronic alcoholism and causes nausea and vomiting when alcohol is consumed?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0093",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following antipsychotic drugs is preferred for treating psychosis in patients with Parkinson's disease because it has minimal extrapyramidal side effects?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0094",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following drugs is administered immediately with antibiotics to reduce inflammation and neurological complications in bacterial meningitis?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0095",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following antibiotics is commonly administered intrathecally to treat central nervous system infections?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0096",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following drugs is primarily used to slow disease progression in patients with Amyotrophic lateral sclerosis?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0097",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following is the most common adverse effect of Rivastigmine?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0098",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following is considered a social risk factor in the elderly?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0099",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following is the recommended chemoprophylaxis for close contacts of a patient with Neisseria meningitidis infection?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0100",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "What is the primary mechanism of action of memantine?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0101",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "What is the main mechanism of action of riluzole in the treatment of amyotrophic lateral sclerosis (ALS)?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0102",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "In the management of a patient with penicillin-resistant Streptococcus pneumoniae, which of the following antibiotics is most appropriate to add?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0103",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A 67-year-old woman presents with fever, neck stiffness, and altered mental status. Suspected bacterial meningitis is considered. Which of the following is the most appropriate empirical treatment?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0104",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following drugs facilitates GABAergic neurotransmission, has no significant anxiolytic effect, and whose action can be reversed by flumazenil?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0105",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following non-benzodiazepine hypnotics is used for insomnia, acts selectively on BZ1 receptors, and lacks significant muscle relaxant effects?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0106",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following is the specific antidote for midazolam toxicity?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0107",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following drugs is used for migraine prophylaxis and can also help improve insomnia?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0108",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following drugs is commonly used for the management of panic attacks?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0109",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following drugs acts as a GABA agonist with anticonvulsant properties?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0110",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following sedative–hypnotic drugs used for insomnia can have its effects reversed by flumazenil?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0111",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A patient undergoing an endoscopic procedure becomes excessively sedated after receiving midazolam. He develops respiratory depression and decreased responsiveness. Which of the following is the most appropriate antidote?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0112",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following local anesthetic agents uniquely provides both local anesthesia and a vasoconstrictive effect?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0113",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following anesthetic agents is contraindicated in a patient with ischemic heart disease (IHD)?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0114",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following anesthetic agents is preferred in a patient with hypotension"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0115",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following intravenous anesthetic agents is particularly useful in patients with Bronchial Asthma and Hypotension?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0116",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A 35-year-old patient with bronchial asthma requires general anesthesia. Which of the following anesthetic agents is preferred due to its bronchodilatory effects and hemodynamic stability?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0117",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A patient with hypotension is scheduled to undergo surgery. Which of the following anesthetic agents is most appropriate?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0118",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following anesthetic agents is preferred in patients with bronchial asthma and hypotension due to its bronchodilatory and cardiovascular properties?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0119",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following anesthetic agents can be used to treat cardiac arrhythmias due to its antiarrhythmic properties?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0120",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A patient with ischemic heart disease is scheduled for surgery under general anesthesia. Which of the following inhalational anesthetic agents is relatively contraindicated because it may precipitate coronary steal phenomenon?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0121",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following antiepileptic drugs is most commonly associated with Stevens-Johnson syndrome?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0122",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following antiepileptic drugs is considered the drug of choice for Trigeminal Neuralgia?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0123",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following drugs is commonly used for the prophylaxis of Migraine?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0124",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following drugs is commonly used for chronic migraine prophylaxis?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0125",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following drugs is considered the safest for treating absence seizures in children, with minimal impact on cognition and learning?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0126",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following drugs is first-line for the acute treatment of moderate to severe migraine attacks?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0127",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following Benzodiazepines is commonly used for the management of Status Epilepticus due to its rapid onset of action and reliable anticonvulsant effect?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0128",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following drugs is most commonly associated with gingival hyperplasia as a side effect?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0129",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following drugs is commonly used for prophylaxis of migraine?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0130",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following drugs is associated with gingival hyperplasia and may be less suitable for certain patients, including females?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0131",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following drugs is commonly associated with dilutional hyponatremia as an adverse effect?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0132",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A patient on long-term treatment for trigeminal neuralgia develops hyponatremia with low serum osmolality and symptoms of water intoxication. Which of the following drugs is most likely responsible?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0133",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "What is the primary mechanism of action of sumatriptan?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0134",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A 35-year-old woman reports frequent, recurrent headache attacks occurring more than 10 days per month, associated with nausea and photophobia. Her physician decides to start a medication to reduce the frequency of future attacks rather than treat acute pain episodes. Which of the following drugs is most appropriate for prophylaxis of Chronic migraine?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0135",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following antidepressant drugs is associated with a low incidence of sexual dysfunction?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0136",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which antidepressant is associated with minimal sexual dysfunction compared to SSRIs?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0137",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following antidepressants is least likely to cause sexual dysfunction?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0138",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following antidepressants is least likely to cause sexual dysfunction in patients?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0139",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following drugs is used both as an antidepressant and for smoking cessation?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0140",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following drugs is an antidepressant that is not an SSRI?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0141",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A 30-year-old woman with relapsing–remitting multiple sclerosis continues to have relapses despite first-line disease-modifying therapy. Her neurologist decides to escalate treatment and starts a monthly intravenous therapy. Which of the following is the most likely drug?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0142",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A 74-year-old patient with moderate Alzheimer disease is already receiving donepezil but shows progressive cognitive decline. The physician adds a drug that acts as an NMDA receptor antagonist to further improve symptoms. Which of the following drugs was most likely added?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0143",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A 74-year-old woman with Alzheimer's disease is started on therapy to improve her cognitive symptoms. After a few days, she develops abdominal cramps and frequent loose stools. Which of the following drugs is most likely responsible for this adverse effect?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0144",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A patient presents with progressive muscle weakness, muscle wasting, fasciculations, and both upper and lower motor neuron signs, while sensory function remains intact. Which of the following drugs is used to slow disease progression in this condition?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0145",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following antipsychotic medications is most associated with the potentially life-threatening side effect of agranulocytosis, requiring mandatory hematologic monitoring?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0146",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following antipsychotic drugs is most commonly associated with agranulocytosis and therefore requires regular blood count monitoring?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0147",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A patient who has been receiving long-term antipsychotic therapy develops repetitive involuntary orofacial movements suggestive of tardive dyskinesia, an extrapyramidal side effect. Which of the following drugs is the most likely cause?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0148",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A patient experiencing severe nausea and vomiting after consuming alcohol while being treated for substance abuse is likely experiencing a reaction caused by which medication?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0149",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A man who recently decided to quit smoking is prescribed a medication to reduce nicotine craving and decrease relapse rates during smoking cessation therapy. Which of the following drugs was most likely prescribed?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0150",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "In unimmunized children infected with Poliovirus, which of the following is the most common clinical outcome?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0151",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A 4-year-old child presents with fever, vesicular lesions on the hands, feet, and inside the mouth, and mild malaise. Lumbar puncture shows CSF with normal glucose and normal opening pressure. Which of the following viruses is the most likely cause?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0152",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A 7-year-old boy presents with fever, headache, and neck stiffness. Lumbar puncture reveals elevated intracranial pressure, but cerebrospinal fluid protein and glucose levels are within normal limits. Question: Which of the following pathogens is the most likely cause?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0153",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Rabies virus reaches the central nervous system and spinal cord primarily through:"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0154",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Negri bodies are intracytoplasmic inclusions characteristic of which of the following infections?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0155",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following best describes the Sabin vaccine?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0156",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A patient is scheduled for corneal transplantation. Which of the following infectious agents is a recognized risk for transmission through this procedure?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0157",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following is a key public health advantage of the Sabin vaccine?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0158",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following statements about the Sabin vaccine is correct?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0159",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Coxsackie virus is best characterized by which of the following structural features?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0160",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which areas of the brain are classically affected in herpes simplex virus (HSV) encephalitis?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0161",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A 35-year-old man comes to the emergency department after stepping on a rusty nail while gardening. He complains of lockjaw, difficulty opening his mouth, and muscle spasms in his neck. He reports feeling generally unwell and has mild fever. Vital signs show mild tachycardia and normal blood pressure. What is the first intervention?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0162",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following is the most common mode of infection in botulism?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0163",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following best describes the mechanism of action of Clostridium tetani toxin?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0164",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following is the major capsular component of Haemophilus influenzae type b?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0165",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A microbiologist isolates Gram-positive bacilli from a clinical specimen. The organism is Catalase Test positive. Which of the following laboratory findings would most strongly support identification of this organism?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0166",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A child presents with acute epiglottitis. Laboratory culture of a throat swab grows Gram-negative bacilli on chocolate agar. Which of the following organisms is the most likely cause?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0167",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which population is primarily affected by Streptococcus agalactiae (Group B Streptococcus)?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0168",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following pathogens is most commonly associated with epidemic meningitis?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0169",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following bacteria is most likely associated with a polyribitol phosphate capsule?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0170",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A patient presents with fever, headache, neck stiffness, and photophobia. Gram stain of cerebrospinal fluid shows Gram-negative diplococci. The most likely mode of transmission of this organism is:"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0171",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following best describes a key virulence factor of Listeria monocytogenes?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0172",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following organisms expresses Factor H binding protein, allowing it to evade complement-mediated killing?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0173",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following organisms is a Gram-negative diplococcus commonly associated with meningitis?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0174",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following is the most important virulence factor of Streptococcus pneumoniae?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0175",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "In which of the following conditions is cerebrospinal fluid (CSF) glucose typically unaltered?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0176",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "What is the mode of transmission of Cryptococcus neoformans infection?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0177",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "The live attenuated vaccine used for prevention of Poliomyelitis is:"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0178",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A 6-month-old infant is brought to the clinic due to an exaggerated startle response to loud noises and a noticeable regression in motor milestones. Physical examination reveals a \"cherry-red\" spot on the macula. This condition is primarily caused by the abnormal accumulation of which of the following substances?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0179",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A 25-year-old patient presents with chronic fatigue, bone pain, and significant enlargement of the spleen. Bone marrow biopsy reveals \"wrinkled paper\" appearing cells (macrophages laden with lipid). This clinical presentation is most consistent with a deficiency in an enzyme responsible for the breakdown of which of the following substances?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0180",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A 52-year-old woman presents with gradually progressive headaches and focal neurological deficits. Brain imaging reveals a well-circumscribed extra-axial mass attached to the dura mater. Histological examination shows tumor cells arranged in whorled patterns with occasional calcified Psammoma Bodies. Which of the following is the most likely diagnosis?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0181",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A 30-year-old patient presents with headache, fever, and focal neurological deficits. Brain imaging with contrast shows a ring-enhancing lesion in the cerebral hemisphere with surrounding edema. Which of the following is the most likely diagnosis?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0182",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A 65-year-old patient presents with slowness of movement, difficulty initiating voluntary movements, and bradykinesia. Neuropathological examination reveals intracytoplasmic eosinophilic inclusions in the Substantia Nigra. Which of the following clinical features is most characteristic of this condition?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0183",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "28-year-old woman presents with intermittent episodes of muscle weakness, numbness in her limbs, and visual disturbances over the past several months. MRI shows lesions in the white matter of the brain and spinal cord. Laboratory studies reveal no evidence of infection. Which of the following best describes the characteristics of this disease?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0184",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A 22-year-old professional basketball player suddenly collapses during a game after complaining of a severe headache. He becomes disoriented and shows signs of neurological deficit. Brain imaging reveals bleeding within the brain. Which of the following is the most likely site affected in this condition?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0185",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Deletion of chromosomes 1p and 19q is most commonly associated with which of the following brain tumors?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0186",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A patient presents with hypotonia. Imaging shows a lesion affecting the left occipital lobe. Histological examination reveals changes in the basal ganglia. Which of the following microscopic findings is most likely in this patient?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0187",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Cerebral infarction is an example of which type of necrosis?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0188",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A patient presents with rapidly progressive neurological deficits. MRI shows a heterogeneous brain mass with central necrosis and surrounding edema. Histopathology reveals areas of necrosis and microvascular proliferation. Which of the following is the most likely diagnosis?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0189",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A patient presents with fever and signs of encephalitis. Imaging shows temporal lobe affection. Which of the following is the most likely mechanism of this condition?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0190",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A 28-year-old woman experiences recurrent episodes of paresthesia that resolve partially between attacks. The most likely diagnosis is:"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0191",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A 7-year-old child presents with progressive headache, nausea, and unsteady gait over several months. On neurological examination, there is truncal ataxia and difficulty with coordination. MRI of the brain reveals a well-circumscribed cerebellar mass with cystic and solid components. Histological examination shows Rosenthal fibers within the lesion. The most likely diagnosis is:"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0192",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following are characteristic pathological features of Alzheimer's disease?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0193",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following cerebrospinal fluid (CSF) findings is most characteristic of bacterial meningitis?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0194",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A patient presents with a frontal lobe mass on imaging. Histological examination shows cells with a clear halo around the nucleus (\"fried-egg\" appearance) and a delicate network of capillaries. The most likely diagnosis is:"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0195",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A 5-year-old child presents with headache, vomiting, and gait instability. Imaging reveals a midline posterior fossa mass. Histology shows sheets of small, round, primitive cells with high nuclear-to-cytoplasmic ratio, consistent with an embryonal tumor. The most likely diagnosis is:"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0196",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Chronic hypertension is most commonly associated with the formation of which type of cerebral aneurysm?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0197",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following cells is primarily affected in a demyelinating disease that presents with muscle weakness and loss of sensation?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0198",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following functions is not related to sleep?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0199",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A 28-year-old woman presents with intermittent episodes of blurred vision, weakness of the limbs, and numbness over the past two years. The symptoms improve partially but recur after several months. MRI of the brain shows multiple demyelinating plaques in the white matter of the CNS. Which of the following is the most likely diagnosis?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0200",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A 2-week-old neonate presents with flaccid paralysis, hypotonia, and poor feeding. The mother reports a recent upper respiratory infection during the third trimester. Cerebrospinal fluid analysis shows elevated protein with normal cell count. Which of the following is the most likely diagnosis?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0201",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Subarachnoid hemorrhage most commonly results from which of the following conditions?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0202",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Deficiency of which enzyme is responsible for Gaucher disease?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0203",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which histopathological features are characteristic of glioblastoma multiforme (GBM)?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0204",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A 40 year old man presents with progressive involuntary movements, personality changes, and memory decline. Family history shows a similar disorder affecting multiple generations. Brain histopathology shows marked neuronal loss and gliosis in the caudate nucleus and putamen with cortical atrophy. Which genetic abnormality explains this disease?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0205",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A 65-year-old patient presents with difficulty initiating walking, and a shuffling gait. Examination shows a resting tremor and muscle stiffness. Brain histology reveals intracytoplasmic Lewy bodies and loss of neurons in the substantia nigra. What is the most prominent clinical feature?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0206",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A 28-year-old woman presents with recurrent episodes of paresthesia and weakness that improve and then recur over time. Her symptoms have followed a relapsing-remitting pattern over the past two years. Which of the following is the most likely diagnosis?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0207",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A 72-year-old man is brought by his family because of progressive memory loss, difficulty recognizing familiar people, and impaired daily functioning over the past 3 years. Neuropathological examination of his brain is most likely to reveal which of the following findings?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0208",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following statements about Alzheimer's disease is correct?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0209",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A 22-year-old basketball player suddenly develops a severe headache during a game. Imaging reveals a subarachnoid hemorrhage. Rupture of which of the following structures is the most likely cause?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0210",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A 32-year-old patient presents for a screening evaluation due to a family history of retinal hemangioblastomas and cerebellar tumors. Imaging reveals bilateral cystic renal masses suspicious for renal cell carcinoma. Which of the following genetic conditions is the most likely diagnosis?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0211",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A pediatric patient presents with signs of cerebellar dysfunction such as ataxia and headache. Imaging suggests a slow-growing tumor of the cerebellum. Histopathological examination reveals biphasic patterns with Rosenthal fibers. Which of the following is the most likely diagnosis?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0212",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "12-year-old child develops sudden-onset headache, fever, stiff neck, and rapidly progressing coma after swimming in a warm freshwater lake. Cerebrospinal fluid examination shows motile trophozoites. Which of the following best describes the prognosis of Naegleria Acute Primary Amoebic Meningoencephalitis?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0213",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A 10-year-old boy is brought to the emergency department with high fever, severe headache, and vomiting. His parents report that his condition rapidly worsened over the past day, and he is now confused and irritable. On examination, he has neck stiffness and altered level of consciousness. Three days earlier, he had been swimming and diving in a warm freshwater lake. Which of the following is the most likely causative organism?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0214",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A patient who wears contact lenses presents with painful left eye keratitis. Microscopic examination of corneal scrapings reveals trophozoites and cysts. Which of the following represents the diagnostic stage of the causative organism?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0215",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A patient develops rapidly progressive meningoencephalitis and dies after swimming in warm freshwater. Which of the following is the infective/diagnostic form of the causative organism?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0216",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following statements is true about granulomatous amoebic infections caused by Acanthamoeba?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0217",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following free-living amoebae is a flagellated protozoan that can cause primary amoebic meningoencephalitis (PAM)?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0218",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A 35-year-old Japanese man presents to the clinic with swelling around both eyes and complaints of redness and irritation in his eyes. He also notices small, firm nodules on the conjunctiva that have been slowly enlarging over the past few weeks. He reports mild itching but no significant pain. On further questioning, he mentions that he frequently catches and handles frogs while working in ponds in rural areas. Laboratory tests show mild eosinophilia, and imaging of the orbits reveals subcutaneous nodular lesions near the eyes. Which of the following is the most likely diagnosis?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0219",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A 40-year-old Chinese patient presents with visual disturbances. Imaging reveals a 20 cm elongated, glistening mass in the left occipital lobe. The patient reported that he drinks clean water. Histopathology confirms a parasitic etiology. Which of the following is the most likely diagnosis the source of infection?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0220",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A patient is found to have cystic lesions containing a scolex and calcification on CT imaging. The infection is most likely acquired through which of the following?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0221",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following measures is most effective in preventing infection with Taenia solium?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0222",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Which of the following parasitic infections can involve autoinfection, leading to cysticercosis?"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0223",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A 30-year-old man presents with recurrent seizures and headaches. Brain imaging reveals multiple cystic lesions containing calcifications. He reports poor hygiene and exposure to contaminated food and water. The condition is most likely caused by ingestion of:"
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0224",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "A 12-year-old child develops sudden-onset headache, fever, stiff neck, and rapidly progressing coma after swimming in a warm freshwater lake. Cerebrospinal fluid examination shows motile trophozoites. Which of the following best describes the prognosis of Naegleria acute primary amoebic meningoencephalitis?"
+    }
+  ],
+  "skippedDuplicates": [
+    {
+      "matchedId": "MCNS2-CH11-PHYS-0039",
+      "text": "Which part of the brain surrounds the third ventricle?"
+    },
+    {
+      "matchedId": "MCNS2-CH11-PHYS-0017",
+      "text": "A patient presents with anterograde amnesia following a stroke affecting the anterior thalamic nucleus. Damage to which part of the Papez circuit is responsible for this memory deficit?"
+    },
+    {
+      "matchedId": "MCNS2-CH11-PHYS-0018",
+      "text": "The mammillothalamic tract primarily sends fibers to which of the following thalamic nuclei?"
+    },
+    {
+      "matchedId": "MCNS2-CH11-PHYS-0020",
+      "text": "Which of the following structures is connected by the fornix?"
+    },
+    {
+      "matchedId": "MCNS2-CH11-PHYS-0022",
+      "text": "What is the primary function of the Papez circuit?"
+    },
+    {
+      "matchedId": "MCNS2-CH11-PHYS-0084",
+      "text": "Which type of memory is responsible for storing general knowledge, facts, and basic concepts (e.g., meanings of words and world knowledge)?"
+    },
+    {
+      "matchedId": "MCNS2-CH11-PHYS-0195",
+      "text": "A 5-year-old child presents with headache, vomiting, and gait instability. Imaging reveals a midline posterior fossa mass. Histology shows sheets of small, round, primitive cells with high nuclear-to-cytoplasmic ratio, consistent with an embryonal tumor. The most likely diagnosis is:"
+    },
+    {
+      "matchedId": "MCNS2-CH11-PHYS-0181",
+      "text": "A 30-year-old patient presents with headache, fever, and focal neurological deficits. Brain imaging with contrast shows a ring-enhancing lesion in the cerebral hemisphere with surrounding edema. Which of the following is the most likely diagnosis?"
+    },
+    {
+      "matchedId": "MCNS2-CH11-PHYS-0187",
+      "text": "Cerebral infarction is an example of which type of necrosis?"
+    },
+    {
+      "matchedId": "MCNS2-CH11-PHYS-0189",
+      "text": "A patient presents with fever and signs of encephalitis. Imaging shows temporal lobe affection. Which of the following is the most likely mechanism of this condition?"
+    },
+    {
+      "matchedId": "MCNS2-CH11-PHYS-0193",
+      "text": "Which of the following cerebrospinal fluid (CSF) findings is most characteristic of bacterial meningitis?"
+    },
+    {
+      "matchedId": "MCNS2-CH11-PHYS-0183",
+      "text": "28-year-old woman presents with intermittent episodes of muscle weakness, numbness in her limbs, and visual disturbances over the past several months. MRI shows lesions in the white matter of the brain and spinal cord. Laboratory studies reveal no evidence of infection. Which of the following best describes the characteristics of this disease?"
+    },
+    {
+      "matchedId": "MCNS2-CH11-PHYS-0190",
+      "text": "A 28-year-old woman experiences recurrent episodes of paresthesia that resolve partially between attacks. The most likely diagnosis is:"
+    },
+    {
+      "matchedId": "MCNS2-CH11-PHYS-0192",
+      "text": "Which of the following are characteristic pathological features of Alzheimer's disease?"
+    },
+    {
+      "matchedId": "MCNS2-CH11-PHYS-0197",
+      "text": "Which of the following cells is primarily affected in a demyelinating disease that presents with muscle weakness and loss of sensation?"
+    },
+    {
+      "matchedId": "MCNS2-CH11-PHYS-0199",
+      "text": "A 28-year-old woman presents with intermittent episodes of blurred vision, weakness of the limbs, and numbness over the past two years. The symptoms improve partially but recur after several months. MRI of the brain shows multiple demyelinating plaques in the white matter of the CNS. Which of the following is the most likely diagnosis?"
+    }
+  ],
+  "removedExistingDuplicates": [
+    {
+      "keptId": "MCNS2-CH2-ANAT-0023",
+      "removedId": "MCNS2-CH2-ANAT-0079",
+      "text": "The medial most fibers of the gracile tract are:"
+    },
+    {
+      "keptId": "MCNS2-CH3-ANAT-0049",
+      "removedId": "MCNS2-CH3-ANAT-0189",
+      "text": "Regarding the anterior spinal artery select the correct answer:"
+    },
+    {
+      "keptId": "MCNS2-CH3-ANAT-0083",
+      "removedId": "MCNS2-CH3-ANAT-0201",
+      "text": "As regards the lentiform nucleus, choose the CORRECT statement:"
+    },
+    {
+      "keptId": "MCNS2-CH4-ANAT-0047",
+      "removedId": "MCNS2-CH4-ANAT-0577",
+      "text": "The 2 frontal bellies:"
+    },
+    {
+      "keptId": "MCNS2-CH6-PHAR-0044",
+      "removedId": "MCNS2-CH6-PHAR-0064",
+      "text": "All of the following drugs have slower onset when taken intra muscular EXCEPT:"
+    },
+    {
+      "keptId": "MCNS2-CH7-ANAT-0020",
+      "removedId": "MCNS2-CH7-ANAT-0191",
+      "text": "Persistent pain in big toe is received in:"
+    },
+    {
+      "keptId": "MCNS2-CH7-ANAT-0040",
+      "removedId": "MCNS2-CH7-ANAT-0193",
+      "text": "Pain in right thumb is received in:"
+    },
+    {
+      "keptId": "MCNS2-CH9-PATH-0046",
+      "removedId": "MCNS2-CH9-PATH-0099",
+      "text": "The following tumor is always benign:"
+    },
+    {
+      "keptId": "MCNS2-CH9-PHAR-0017",
+      "removedId": "MCNS2-CH9-PHAR-0035",
+      "text": "Increased risk of infection is mainly associated with:"
+    }
+  ],
+  "needsReview": []
+}
