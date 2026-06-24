@@ -63,7 +63,9 @@ The batch can contain mixed question types. It does not need canonical IDs.
 ## What the importer does automatically
 
 - **Smart Auto-Routing**: If the target module JSON file includes a `lectureNames` array under its subjects (e.g. `MSS-2.json` for Special Senses), the importer automatically matches the incoming question's `topic` field against it (exact match first, then substring match). It places the question in the correct chapter and subject, and assigns the correct 1-based lecture number.
+  - *Note: If an explicit `subject` is specified in the question, routing logic restricts the search to that subject ID to avoid cross-subject misrouting.*
 - **Content-Based Routing Fallback**: If the `topic` is missing or doesn't match, the importer scans the question text itself against all `lectureNames`. It tokenizes the question, scores each lecture by significant word matches, and requires ≥50% match with ≥2 hits (or 1 hit for single-word lecture names ≥6 characters).
+  - *Note: Like smart routing, content routing respects the explicit `subject` constraint if provided.*
 - **Chapter & Subject Fallback**: If content-based routing fails, the system falls back to matching by explicit `chapterId` or fuzzy `chapterTitle`, then infers the subject (e.g. from the `subject` field, falling back to chapter keywords matching).
 - **Review Needed**: If all of the above fail, the question is routed to a `needsReview` queue in the import report and is not imported.
 

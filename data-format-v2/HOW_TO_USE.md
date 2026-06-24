@@ -286,10 +286,11 @@ The importer includes a smart, lecture-name-based auto-routing algorithm. When q
 
 1. **Exact-Match-First**: It normalizes and compares the incoming value to each entry in `lectureNames` of all subjects.
 2. **Substring Match**: If no exact match is found, it looks for substring matches, provided that the matched value is not a generic subject name (like "Anatomy" or "Physiology").
-3. **Automatic Lecture-Numbering**: If routed via smart routing, the question's `lecture` property is automatically assigned to the 1-based index of the matching lecture in the `lectureNames` array.
-4. **Content-Based Routing Fallback**: If metadata matching fails (no `topic`/`subject`/`chapterTitle` matched any lecture name), the importer scans the question text itself against all `lectureNames`. It tokenizes the question text and each lecture name into significant words, scores each lecture by counting word matches, and requires ≥50% match with ≥2 hits (or 1 hit for single-word lecture names ≥6 chars). The highest-scoring lecture wins.
-5. **Legacy Fallback**: If content-based routing also fails, the system falls back to chapter resolution (`chapterId` / fuzzy `chapterTitle` match) and subject inference.
-6. **Review Flag**: If no routing method succeeds, the question is marked as `needsReview`.
+3. **Explicit Subject Constraint**: Both smart routing and content-based routing respect the incoming question's explicit `subject` field, if specified. If a subject is provided (e.g., "Anatomy"), the routing logic will only match against `lectureNames` under subjects matching that specific subject ID, preventing cross-subject misrouting (such as routing an anatomy question to a physiology lecture of the same name).
+4. **Automatic Lecture-Numbering**: If routed via smart routing, the question's `lecture` property is automatically assigned to the 1-based index of the matching lecture in the `lectureNames` array.
+5. **Content-Based Routing Fallback**: If metadata matching fails (no `topic`/`subject`/`chapterTitle` matched any lecture name), the importer scans the question text itself against all `lectureNames`. It tokenizes the question text and each lecture name into significant words, scores each lecture by counting word matches, and requires ≥50% match with ≥2 hits (or 1 hit for single-word lecture names ≥6 chars). The highest-scoring lecture wins.
+6. **Legacy Fallback**: If content-based routing also fails, the system falls back to chapter resolution (`chapterId` / fuzzy `chapterTitle` match) and subject inference.
+7. **Review Flag**: If no routing method succeeds, the question is marked as `needsReview`.
 
 **Full routing fallback chain**: `resolveSmartRouting` → `resolveContentRouting` → `resolveChapter` + `inferSubject` → `needsReview`
 

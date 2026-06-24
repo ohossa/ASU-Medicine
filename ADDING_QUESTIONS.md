@@ -87,11 +87,13 @@ The `topic` field in the incoming question structure is strongly recommended. It
 The importer uses a structured fallback pipeline to route each incoming question:
 
 1. **Smart Auto-Routing**: Matches the question's `topic` field against the target module's `lectureNames` index (exact match first, then substring match). If a match is found, it automatically assigns the correct chapter, subject, and 1-based lecture number.
+   - *Note: If an explicit `subject` is specified in the question, routing logic restricts the search to that subject ID to avoid cross-subject misrouting.*
 2. **Content-Based Routing**: If the `topic` field is missing or does not match, the importer scans the question text itself. It tokenizes the text and scores it against all `lectureNames` in the bank, requiring a ≥50% match of significant words and a minimum hit count to avoid false positives.
+   - *Note: Content routing also respects the explicit `subject` constraint if provided.*
 3. **Chapter Keywords Fallback**: If content routing fails, it attempts to resolve the chapter using fuzzy matching on `chapterTitle`/`chapterId`, then infers the subject (using the `subject` field, falling back to matching against keywords defined on each chapter).
 4. **Needs Review**: If no routing method matches, the question is flagged for manual review and is not imported.
 
-**Routing Priority Chain:** `topic` field → question text scan → chapter keywords → needsReview
+**Routing Priority Chain:** `topic` field (subject-constrained) → question text scan (subject-constrained) → chapter keywords → needsReview
 
 - ✅ Creates missing subjects inside existing chapters when needed
 - ✅ Converts `correctAnswer` letters (A/B/C/D) to `correctIndex` (0-based)

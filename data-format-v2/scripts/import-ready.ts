@@ -279,6 +279,8 @@ export function resolveSmartRouting(bank: QuestionBankFile, incoming: IncomingQu
   const subject = incoming.subject?.trim();
   const chapterTitle = incoming.chapterTitle?.trim();
 
+  const explicitSubjectId = subject ? inferSubject(subject) : null;
+
   // Try matching against lectureNames
   const candidates = [topic, subject, chapterTitle].filter((c): c is string => typeof c === 'string' && c.length > 0);
 
@@ -288,6 +290,7 @@ export function resolveSmartRouting(bank: QuestionBankFile, incoming: IncomingQu
 
     for (const chapter of bank.chapters) {
       for (const subjectObj of chapter.subjects) {
+        if (explicitSubjectId && subjectObj.id !== explicitSubjectId) continue;
         if (!subjectObj.lectureNames) continue;
 
         // 1. Exact match first
@@ -335,11 +338,15 @@ function resolveContentRouting(bank: QuestionBankFile, incoming: IncomingQuestio
   const questionWords = new Set(questionText.split(/\s+/).filter(w => w.length > 2));
   if (questionWords.size === 0) return null;
 
+  const subject = incoming.subject?.trim();
+  const explicitSubjectId = subject ? inferSubject(subject) : null;
+
   let bestMatch: { chapter: Chapter; subjectId: SubjectColor; lecture: number } | null = null;
   let bestScore = 0;
 
   for (const chapter of bank.chapters) {
     for (const subjectObj of chapter.subjects) {
+      if (explicitSubjectId && subjectObj.id !== explicitSubjectId) continue;
       if (!subjectObj.lectureNames) continue;
 
       for (let i = 0; i < subjectObj.lectureNames.length; i++) {
