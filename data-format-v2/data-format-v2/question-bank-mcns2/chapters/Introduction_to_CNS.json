@@ -6337,8 +6337,8 @@
               "type": "mcq",
               "lecture": 1,
               "text": "Incomplete fusion of maxillary & mandibular processes gives rise to:",
-              "explanation": "Incomplete fusion of maxillary and mandibular processes results in cleft lower lip. The lower lip is derived from the mandibular prominences (first arch), which fuse in the midline. Failure of this fusion results in cleft lower lip. Macrostomia results from failure of fusion of maxillary and mandibular prominences at the corner of the mouth.",
-              "keyConcept": "Cleft lower lip from failure of fusion of maxillary and mandibular processes (mandibular prominences).",
+              "explanation": "Incomplete fusion of maxillary and mandibular processes results in failure of normal fusion at the corners of the mouth, giving rise to Macrostomia (an abnormally large mouth). Cleft lower lip results from failure of midline fusion of the mandibular prominences.",
+              "keyConcept": "Macrostomia",
               "options": [
                 "Microstomia.",
                 "Macrostomia.",
@@ -6346,7 +6346,7 @@
                 "Oblique facial cleft.",
                 "Median cleft of upper lip."
               ],
-              "correctIndex": 0
+              "correctIndex": 1
             },
             {
               "id": "mcns2-ch1-anatomy-q406",

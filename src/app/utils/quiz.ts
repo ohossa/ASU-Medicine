@@ -15,8 +15,10 @@ export function checkAnswerCorrect(q: Question, ans: unknown): boolean {
       const matches: Record<number, number> = (ansObj?.matches as Record<number, number>) ?? {};
       if (!pairs.length || !scrambled.length) return false;
       return pairs.every((p, i) => {
-        const correctScrambledIndex = scrambled.indexOf(p.target ?? '');
-        return matches[i] === correctScrambledIndex && correctScrambledIndex !== -1;
+        const matchedIndex = matches[i];
+        if (matchedIndex === undefined) return false;
+        const matchedText = scrambled[matchedIndex];
+        return matchedText === p.target;
       });
     }
 

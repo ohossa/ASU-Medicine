@@ -328,8 +328,8 @@ export function MatchingQuestion({
   const getPremiseState = (idx: number): 'idle' | 'selected' | 'matched' | 'correct' | 'wrong' => {
     if (matches[idx] === undefined) return selectedPremise === idx ? 'selected' : 'idle';
     if (!submitted) return 'matched';
-    const correctIdx = scrambled.indexOf(pairs[idx].target);
-    return matches[idx] === correctIdx ? 'correct' : 'wrong';
+    const matchedText = scrambled[matches[idx]];
+    return matchedText === pairs[idx].target ? 'correct' : 'wrong';
   };
 
   const getTargetState = (idx: number): 'idle' | 'matched' | 'correct' | 'wrong' | 'hovered' => {
@@ -337,8 +337,8 @@ export function MatchingQuestion({
     if (!matchedBy) return hoverTarget === idx ? 'hovered' : 'idle';
     if (!submitted) return 'matched';
     const premiseIdx = Number(matchedBy);
-    const correctIdx = scrambled.indexOf(pairs[premiseIdx].target);
-    return matches[premiseIdx] === correctIdx ? 'correct' : 'wrong';
+    const matchedText = scrambled[idx];
+    return matchedText === pairs[premiseIdx].target ? 'correct' : 'wrong';
   };
 
   const premiseClasses = (state: ReturnType<typeof getPremiseState>) => {
@@ -427,7 +427,7 @@ export function MatchingQuestion({
           y1: pr.top + pr.height / 2 - containerRect.top,
           x2: tr.left - containerRect.left,
           y2: tr.top + tr.height / 2 - containerRect.top,
-          correct: submitted ? scrambled.indexOf(pairs[i].target) === targetIdx : true,
+          correct: submitted ? scrambled[targetIdx] === pairs[i].target : true,
         });
       }
       setConnectors(rects);
@@ -601,8 +601,8 @@ export function MatchingQuestion({
             className="mt-5 space-y-2 text-start"
           >
             {pairs.map((p, i) => {
-              const correctIdx = scrambled.indexOf(p.target);
-              const isCorrect = matches[i] === correctIdx;
+              const matchedText = scrambled[matches[i]];
+              const isCorrect = matchedText === p.target;
               if (isCorrect) return null;
               return (
                 <div

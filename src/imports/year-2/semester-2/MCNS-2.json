@@ -56484,8 +56484,8 @@
               "type": "mcq",
               "lecture": 1,
               "text": "Incomplete fusion of maxillary & mandibular processes gives rise to",
-              "explanation": "The correct answer is: Cleft lower lip. This option is the one indicated as correct by the source answer key.",
-              "keyConcept": "Cleft lower lip",
+              "explanation": "Incomplete fusion of maxillary and mandibular processes results in failure of normal fusion at the corners of the mouth, giving rise to Macrostomia (an abnormally large mouth). Cleft lower lip results from failure of midline fusion of the mandibular prominences.",
+              "keyConcept": "Macrostomia",
               "options": [
                 "Microstomia.",
                 "Macrostomia.",
@@ -56493,7 +56493,7 @@
                 "Oblique facial cleft.",
                 "Median cleft of upper lip."
               ],
-              "correctIndex": 2
+              "correctIndex": 1
             },
             {
               "id": "MCNS2-CH10-ANAT-0051",
