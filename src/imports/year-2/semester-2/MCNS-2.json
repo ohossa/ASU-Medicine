@@ -62412,62 +62412,83 @@
       "subtitle": "",
       "emoji": "📝",
       "page": 11,
-      "lectureRange": "L1-L5",
+      "lectureRange": "Past Exams",
       "subjects": [
         {
           "id": "physiology",
           "name": "Physiology",
           "iconName": "Activity",
-          "lectures": "L1-L5",
-          "lectureCount": 5,
+          "lectures": "Past Exams",
+          "lectureCount": 1,
+          "lectureNames": [
+            "Past Exams"
+          ],
           "questions": []
         },
         {
           "id": "pathology",
           "name": "Pathology",
           "iconName": "ShieldAlert",
-          "lectures": "L1-L5",
-          "lectureCount": 5,
+          "lectures": "Past Exams",
+          "lectureCount": 1,
+          "lectureNames": [
+            "Past Exams"
+          ],
           "questions": []
         },
         {
           "id": "anatomy",
           "name": "Anatomy",
           "iconName": "Bone",
-          "lectures": "L1-L5",
-          "lectureCount": 5,
+          "lectures": "Past Exams",
+          "lectureCount": 1,
+          "lectureNames": [
+            "Past Exams"
+          ],
           "questions": []
         },
         {
           "id": "microbiology",
           "name": "Microbiology",
           "iconName": "Biohazard",
-          "lectures": "L1-L5",
-          "lectureCount": 5,
+          "lectures": "Past Exams",
+          "lectureCount": 1,
+          "lectureNames": [
+            "Past Exams"
+          ],
           "questions": []
         },
         {
           "id": "pharma",
           "name": "Pharmacology",
           "iconName": "Pill",
-          "lectures": "L1-L5",
-          "lectureCount": 5,
+          "lectures": "Past Exams",
+          "lectureCount": 1,
+          "lectureNames": [
+            "Past Exams"
+          ],
           "questions": []
         },
         {
           "id": "parasitology",
           "name": "Parasitology",
           "iconName": "Bug",
-          "lectures": "L1-L5",
-          "lectureCount": 5,
+          "lectures": "Past Exams",
+          "lectureCount": 1,
+          "lectureNames": [
+            "Past Exams"
+          ],
           "questions": []
         },
         {
           "id": "clinical",
           "name": "Clinical",
           "iconName": "Stethoscope",
-          "lectures": "L1-L5",
-          "lectureCount": 5,
+          "lectures": "Past Exams",
+          "lectureCount": 1,
+          "lectureNames": [
+            "Past Exams"
+          ],
           "questions": []
         }
       ]
