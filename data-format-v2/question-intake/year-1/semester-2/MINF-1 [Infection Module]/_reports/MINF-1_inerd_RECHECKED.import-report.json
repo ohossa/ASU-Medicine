@@ -1,0 +1,4963 @@
+{
+  "inputPath": "data-format-v2/question-intake/year-1/semester-2/MINF-1 [Infection Module]/_ready/MINF-1_inerd_RECHECKED.json",
+  "targetPath": "src/imports/year-1/semester-2/MINF-1.json",
+  "moduleCode": "MINF-1",
+  "added": [
+    {
+      "id": "MINF1-CH3-PATH-0081",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Risk factors of TB infection includes all the following EXCEPT:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0082",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Mutation of following genes can be associated with TB infection:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0083",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Methods of infection in T.B include all Except:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0084",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Which of the following mediators involved in the pathogenesis of TB:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0085",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Which of the following microscopic findings is pathognomonic (diagnostic) of TB granuloma?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0086",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "The following cell is the main cell of granuloma:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0087",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Caseation necrosis in TB is mainly due to activation of:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0088",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "The macrophage activation in tuberculous reaction occurs when CD4 helper cell secretes:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0089",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Langhan's Giant cells result from fusion of:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0090",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Features of the tuberculous reaction include all Except:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0091",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Pathogenicity of the tubercle bacilli is due to:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0092",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Delayed Hypersensitivity reaction in case of Tuberculosis is beneficial because:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0093",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Epithelioid cells are modified:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0094",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Sensitization in TB results in:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0095",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Mycobacterium TB is characterized by:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0096",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "A large aggregate of epithelioid cells, diagnosis is:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0097",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "An inflammatory process that has continued for several months includes the transformation of tissue macrophages to epithelioid cells. There are also lymphocytes present. Two weeks later, a special type of necrosis appear in the center of the lesion. Lastly, fibroblasts lay down collagen as the focus of inflammation heals. What is the causative organism?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0098",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Which of the following is a site of primary TB?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0099",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "The primary Tuberculous complex consists of all Except:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0100",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Types of primary tuberculous complex include all Except:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0101",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Exudative TB reaction is commonly seen in:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0102",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Mode of infection in primary pulmonary T.B is:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0103",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Which of the following is true about secondary T.B.?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0104",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Features of secondary TB includes:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0105",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "The following lesion is seen in primary pulmonary T.B.:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0106",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Primary tuberculosis means:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0107",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Which of the following applies to Miliary TB?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0108",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Which of the following is true about secondary pulmonary TB?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0109",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Tabes mesentrica is associated with:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0110",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Granulomas occurs in all Except:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0111",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "The commonest site in the cardiovascular system affected by syphilis is:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0112",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Most commonly tertiary syphilis involves:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0113",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "All of the following are characteristic for chancre EXCEPT:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0114",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Syphilitic affection of the liver occurs mainly in the form of:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0115",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "The syphilitic reaction is characterized by all Except:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0116",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "The following are all syphilitic lesions EXCEPT:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0117",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Syphilitic affection of the liver occurs in:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0118",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "A 25 year old man who had multiple sexual partners complained of a non-tender ulcer on penis that has been present for 1 week. On physical examination, the ulcer was round and had a sharp outline, with firm erythematous indurated base and clean floor. Laboratory investigations revealed spirochetes consistent with Treponema pallidum. Which of the following is most likely to be seen on microscopic examination of the biopsy specimen?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0119",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "An 80 year-old man who is thought to have senile dementia developed ataxia and partial paresis. Then he dies. An autopsy reveals severe atherosclerosis of cerebral arteries and the ascending aorta with aneurysm formation. He had a small liver, with deep fibrous scars and lobulation. Microscopic examination of all organs reveals perivascular plasma cells with lymphocytes."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0120",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "A 24-year-old Primigravida is late in the 2nd trimester of pregnancy. She experiences the sudden onset of some cramping lower abdominal pain. This is immediately followed by passage of some fluid per vagina along with a foul-smelling discharge. The fetus is stillborn two days later. Examination of the placenta demonstrates extensive neutrophilic infiltrates in the chorion and amnion. Which of the following organisms is most likely to be responsible for these findings?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0121",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Which of the following diseases is associated with peripheral neuropathy?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0122",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "A female patient presented with airway obstruction, anosmia and speech difficulties. Initially she reported that she had common-cold-like symptoms. On clinical examination, destruction of nasal bone and soft tissue with replacement by waxy nodular mass were observed. The following is a pathological finding Except:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0123",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Lepra cells are modified:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0124",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "A 38 years old patient with hypopigmented anesthetic arm lesion. Biopsy revealed epithelioid non caseating granuloma, probable diagnosis is:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0125",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "A 56 years old patient presented with facial disfiguring nodules, loss of eye lashes & eye brows, the following true Except:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0126",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Bilharzial polypi are:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0127",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Sandy patches are caused by:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0128",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Gumma Gandy nodules could be detected in which of the following?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0129",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Gandy gamma bodies are induced by:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0130",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Granuloma is not commonly seen in:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0131",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Cystitis glandularis are due to:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0132",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "All are the features of portal hypertension EXCEPT:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0133",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "All the following are features of intestinal Bilharziasis EXCEPT:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0134",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "All the following are features of Pulmonary Bilharziasis EXCEPT:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0135",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Renal failure secondary to urinary bilharziasis is attributed to:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0136",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Verminous pneumonia is caused by:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0137",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "A patient with advanced bilharzial periportal fibrosis, all the following changes are seen EXCEPT:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0138",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "The commonest cause of death in hepatic schistosomiasis is induced by:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0139",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Renal failure in cases of urinary bilharziasis is due to:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0140",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Complications of filariasis include all of the following EXCEPT:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0141",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "A 50 year old male with history of urinary bilharziasis. He has an attack of haematuria after which cystoscopic examination was done. A fungating bladder mass was seen and a biopsy was taken from this mass. All of the following is suspected in the pathology report EXCEPT:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0142",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "An Egyptian farmer complains of terminal haematuria. Cystoscopic biopsy reveal urinary Bilharziasis together with another lesion. Upon seeing the pathologic report, the surgeon decided to remove the bladder. What's the other lesion?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0143",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Portal hypertension leads to:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0144",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Which of the following urothelial changes is precancerous?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0145",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Sulfur granules are characteristically present in infection with:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0146",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Shaumanns bodies could be characteristically seen within lymph node with:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0147",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Abdominal actinomycosis commonly affects:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0148",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "A 40 year old male came with enlarged hilar lymph nodes. Biopsy showed a non caseating granuloma with asteroid and Schumann bodies the most likely diagnosis"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0149",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "An adult patient presented with dry cough, shortness of breath and chest pain. He always complains of repeated inflammation and dryness of eyes. Chest X-ray revealed bilateral diffuse nodules of lungs with enlarged hilar lymph nodes. A transbronchial lung biopsy reveals non caseating epithelioid granulomas. No viral inclusions, no fungi, no acid fast bacilli and no atypical cells. Also complained of skin nodules. The following is true except:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0150",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "A 36 year old patient suffered from severe persistent pain in his left jaw following extraction of left lower wisdom tooth. 3 weeks later he started to notice oozing of dark creamy material from multiple opening in his left cheek. The expected microscopic features of biopsy taken from this lesion would be"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0151",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "A patient presented with a diffuse painless area of suppuration in the region of mandible and upper part of neck. It opens on the skin by multiple sinuses discharging pus containing sulphur granules."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0152",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Inhalation is the mode of transmission in the following diseases Except:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0153",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Russel bodies are modified:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0154",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Which of the following is suppurative granuloma?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0155",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "A 30 year old farmer develops swollen foot with multiple skin sinuses discharging yellowish granules and have areas of bone destruction. The possible diagnosis is:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0156",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Mickulicz cells are modified:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0157",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "All the following statements about Hydatid are true, EXCEPT:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0158",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Aspirate from hydatid cyst consists of:"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0159",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Aspiration cytology from contents of cystic lesion of the liver reveals multiple calcified scolices. The most serious complication of this cystic lesion results from"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0160",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "A 40 years old patient with progressive enlargement of the right leg for the past 6 years with thickening and fissures. On physical examination, he is afebrile. He has inguinal lymphadenopathy and scrotal edema. Infection with which of the following organisms is most likely to be present in this man?"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0164",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Regarding concentration-dependent antibiotics, which is WRONG?"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0165",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Which of the following statements is wrong?"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0166",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Concentration Dependent Antibiotic is"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0167",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following is not a concentration-dependent antibiotic:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0168",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Concentration dependent antibiotics is"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0169",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Which of the following groups preparation is better administrated in large infrequent doses because they are concentration dependent with post antibiotic effect (PAE):"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0170",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following drugs are correctly matched to their mechanism of action except:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0171",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following is not a time-dependent antibiotic:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0172",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Regarding time-dependent antibiotics, which is WRONG?"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0173",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Which of the drug following is not a time-dependent antibiotic?"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0174",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Each of the following antibacterial agents is paired with an appropriate mechanism of action EXCEPT:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0175",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The mechanism of antibacterial action of penicillin includes all the following EXCEPT:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0176",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Which of the following is an advantage of benzyl penicillin use:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0177",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The long-acting penicillin applied for chemoprophylaxis of rheumatic fever as a monthly injection is:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0178",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following is a broad spectrum penicillin:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0179",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The duration of penicillin action can be prolonged by co-administration of:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0180",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following penicillin preparation can be given orally because it is acid stable:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0181",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following antimicrobials act by inhibiting transpeptidation or cross linkage during bacterial cell wall synthesis:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0182",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "An advantage of amoxicillin over ampicillin is that it:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0183",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Concomitant therapy of probenecid with penicillin leads to:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0184",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Compared with other penicillin, piperacillin poses a greater risk of which of the following?"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0185",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following is given in combination with ampicillin to broaden its spectrum."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0186",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following penicillin preparation is not suitable for oral route:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0187",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "All of the following are effective in treatment of MRSA Except"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0188",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Which for the following penicillin preparation resist beta lactamase producing organisms:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0189",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following is not effective against pseudomonas infections"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0190",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The principle mechanism of action of penicillin on microorganisms:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0191",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Which of the following is a wrong statement?"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0192",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Which of the following antibacterial drugs suitable for systemic treatment of Pseudomonas infection and taken orally?"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0193",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The addition of all the following prolong duration of action of penicillin Except:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0194",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "All the following are true about penicillin EXCEPT:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0195",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "ORSA is mainly treated with:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0196",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "A 10-year-old boy with glucose-6-phosphate dehydrogenase deficiency has typhoid fever, the best drug for treatment orally is:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0197",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Which of the following drugs is a penicillinase-resistant and given orally?"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0198",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following is a wrong statement about pharmacokinetics of Penicillin:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0199",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following is incorrect statement about penicillin combination"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0200",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Third generation cephalosporins has the following characteristic EXCEPT:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0201",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The CORRECT statement regarding 1st generation cephalosporins:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0202",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Cephalosporin drug that enters to the CNS:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0203",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Which of the following is true about Cephalosporins?"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0204",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Which of the following cephalosporins is more effective against anaerobic infection?"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0205",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Which of following cephalosporin preparations are highly concentrated in bone?"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0206",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following antimicrobials should be avoided in penicillin resistant infections, share cross resistance with penicillin:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0207",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following cephalosporin preparations can cross BBB Except:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0208",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following is a correct statement about pharmacokinetics of cephalosporins except:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0209",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following is wrong as regard cephalosporins:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0210",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Biliary infection could be treated with"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0211",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Community acquired pneumonia is best treated with"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0212",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Which Cephalosporins would have increased activity against anaerobic bacteria such as Bacteroides fragilis inducing mixed infection?"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0213",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Which of the following is the best drug for biliary infection?"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0214",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Cefoperazone is associated with a high risk of:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0215",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following antibacterial drug is not cell wall synthesis inhibitor:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0216",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Which of the following antimicrobials can cause red man syndrome (shock) with rapid infusion?"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0217",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Augmentin has the following specifications EXCEPT:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0218",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Ampicillin is combined with drug B to inhibit enzymatic inactivation of ampicillin. Drug B is:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0219",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Clostridium difficile infection is treated by which of the following:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0220",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "A man with a history of multiple antibiotic resistance is given a prophylactic IV dose of antibiotic before surgery. As the antibiotic is being infused, the patient becomes flushed over most of his body. Which of the following is most likely responsible?"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0221",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Clavulanic acid is combined with amoxicillin because"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0222",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "In the previous case (rapid infusion flushing), this adverse effect can be avoided by:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0223",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Antibiotics against MRSA resistant to vancomycin acting on cell membrane is:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0224",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "A 12 year old boy suffering from skin infection and the physician suspected beta-lactamase producing staph infection and prescribed him an antimicrobial (A) to be taken orally. Drug (A) is probably:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0225",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "A patient receiving antimicrobial therapy develops pseudomembranous colitis, which of the following drugs is most likely to have caused it?"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0226",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "A patient develops severe watery diarrhea, fever and abdominal pain. Clostridium difficile infection in the gut is confirmed. Preferred antimicrobial therapy for this antibiotic associated-pseudomembranous colitis is:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0227",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Patient allergic to penicillin with renal impairment, has mixed G -ve aerobic bacilli and beta lactamase producing H. influenza infections"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0228",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Select the antibiotic whose dose must be reduced in patients with renal insufficiency:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0229",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Which of the following statements is incorrect?"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0230",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following is NOT an adverse effect of vancomycin:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0231",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Which of the following is incorrect statement?"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0232",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Which of the following is a cell wall synthesis inhibitor useful against anaerobes:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0233",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Regarding imipenem, which of the following is INCORRECT?"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0234",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Intramuscular antibiotic effective against MRSA resistant to vancomycin is:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0235",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "A 46-old female is admitted into the ICU for treatment of vancomycin resistant strain of enterococcus faecium caused bacteremia. You want to limit the risk of drug interaction in this woman, who is receiving five other medications for treatment of DVT. Which one of the following antibiotics would you choose:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0236",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following drug is INCORRECTLY matched to its mechanism of action:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0237",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "36-year-old female allergic to penicillin with leukemia has fever. Her blood smear revealed Gram -ve bacilli. Which of the following drugs is the best for her?"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0238",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Antibiotic associated-pseudomembranous colitis is most likely to be due to"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0239",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "A patient develops severe, watery diarrhea, fever & abdominal pain. clostridium difficile infection in the gut is confirmed. The antimicrobial therapy for this antibiotic-associated pseudomembranous colitis is:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0240",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following are used in treatment of pseudomembranous Colitis EXCEPT:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0241",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following antibiotic is NOT effective in treatment of MRSA induced infections:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0242",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Regarding Aztreonam, which of the following is INCORRECT?"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0243",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "VRSA is best treated with"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0244",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "All the following drugs are sensitive to beta lactamase enzyme Except:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0245",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following antibiotics are highly hydrophilic and not used orally for systemic effect:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0246",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following drug is INCORRECTLY matched to its adverse effect:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0247",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following is/are excreted renally:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0248",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following antibiotics are nephrotoxic:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0249",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "A patient had endocarditis. Blood culture confirm the presence of Oxacillin resistant staphylococcus. Which of the following drug you prefer to start with"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0250",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "During IV infusion of the selected drug (for oxacillin resistant staphylococcus endocarditis) which of the following may occur:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0251",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Which of the following is an indication for the drug chosen orally?"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0252",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Fluoxetine (SSRI) should be avoided with:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0253",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Clavulanic acid is combined with amoxicillin because:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0254",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Chloramphenicol is used to control the following clinical conditions EXCEPT:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0255",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The side effect of chloramphenicol is:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0256",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The specific side effect of chloramphenicol in neonates is:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0257",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Grey baby syndrome is a reported complication of:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0258",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The main reason for the limited use of chloramphenicol is high incidence of:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0259",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following is a wrong statement about chloramphenicol:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0260",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Which of the following sulfonamide preparation is not matched to its use:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0261",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Which of the following antimicrobials may cause photosensitivity?"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0262",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following precautions about tetracycline use are true EXCEPT:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0263",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Which of the following drugs is a tetracycline antibiotic:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0264",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Minocycline is a member of which class of anti-infective agents:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0265",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Permanent dental staining in children can be produced by:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0266",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Which of the following is the most effective agent in the treatment of Rickettsia and Mycoplasma?"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0267",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following statements are true about tetracycline EXCEPT:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0268",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following is wrong about pharmacokinetics of tetracyclines:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0269",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Avoided with dairy products or antacids:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0270",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following are shared between vancomycin & aminoglycosides Except:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0271",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following drug is not matched with its adverse effect:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0272",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Clarithromycin is classified as:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0273",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following is not attached to 50S bacterial ribosome:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0274",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "All the following antibiotics should be avoided in pregnancy Except:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0275",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following is a wrong statement about Azithromycin"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0276",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "GIT motility is mainly increased with:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0277",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following is a wrong statement:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0278",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Concerning clindamycin, the following are true EXCEPT:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0279",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following are aminoglycoside antibiotics EXCEPT:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0280",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Each of the following antimicrobial agents is paired with relevant adverse effect EXCEPT:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0281",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Streptomycin is an aminoglycoside antibiotic indicated for the treatment of:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0282",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "An antimicrobial that is better to be avoided in patients with myasthenia gravis:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0283",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "A patient on antibacterial therapy has to do an operation in which a skeletal muscle relaxant may be used. He will be at risk if this antimicrobial is:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0284",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "A patient with a Pseudomonas infection is receiving IV gentamycin, but the clinical response is not satisfactory. If penicillin is administered in a separate IV line to avoid physical interaction, which of the following will occur?"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0285",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Which of the following is untrue about aminoglycosides?"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0286",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following is not therapeutic use of aminoglycosides:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0287",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "All the following are effective in anaerobic infection Except:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0288",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Gentamycin may produce which of the following adverse effect:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0289",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following is NOT excreted through Bile:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0290",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Antimicrobials that inhibit nucleic acid synthesis include:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0291",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The mechanism of action of quinolones antimicrobials is:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0292",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Regarding Rifampicin, the following statement is WRONG:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0293",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Ofloxacin is classified as:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0294",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following is (are) best treated by the matched quinolone member:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0295",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Currently the drug of choice for empiric treatment of typhoid fever is:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0296",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Which of the following statements concerning quinolones is WRONG?"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0297",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "A drug used in resistant staph, TB and of choice in brucellosis:"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0401",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "A 40-year-old male comes to the medical OPD with symptoms of cough and fever for the last few days. Sputum culture shows presence of gram positive cocci. Which one of the following Fluoroquinolones is most likely to be administered to this patient"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0298",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Respiratory Quinolone is:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0299",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Phototoxicity is mainly associated with:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0300",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Mg antacid interferes with absorption of:"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0402",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "A female patient is diagnosed with TB. A careful medical history should be taken because one of the drugs commonly used in TB therapy may lead to serious decrease in plasma level of concomitantly used drugs. Which drug is it?"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0301",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following is wrong about Quinolones:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0302",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following is NOT indication for Rifampicin:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0303",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following is a wrong statement:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0304",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Which of the following is a correct match between an antibiotic and its mechanism of action?"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0305",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Which of the following drugs combination can be used in the treatment of tuberculosis?"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0306",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following statements about rifampicin are true Except:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0307",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following combination is of first choice in treatment of Brucellosis:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0308",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Concerning antibiotics contraindicated in infants & children, the following are correctly matched Except:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0309",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Which of the following drugs is a folic acid antagonist:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0310",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The false statement concerning co-trimoxazole is:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0311",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "All the following are adverse effects to cotrimoxazole EXCEPT:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0312",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "A patient on warfarin therapy developed a chest infection for which he took antibacterial therapy. He suffered from bleeding. The antimicrobial taken most probably was:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0313",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following is wrong about Co-trimoxazole:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0314",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following is not therapeutic uses for co-trimoxazole:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0315",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Precautions to reduce crystalluria during sulfonamides use is:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0316",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Sulphonamides are used in the following conditions EXCEPT:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0317",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The most serious side effect of sulphonamides in neonates is:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0318",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The antibiotic drugs known to produce crystalluria as a side effect is:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0319",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Hypersensitivity reaction is a common and serious complication to:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0320",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "All the following are adverse effects to sulfonamides EXCEPT:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0321",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "All the following antibacterial drugs may interfere with plasma level of other drugs Except:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0322",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following is not indication for antimicrobial drug combination:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0323",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following antimicrobial is contraindicated in infant because it causes grey baby syndrome:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0324",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Which of the following is the safest antimicrobial to be used during pregnancy?"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0325",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following drugs increase risk of bleeding if taken with warfarin Except:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0326",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "An inhibitor of nucleic acid synthesis useful against anaerobes:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0327",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Urinary antiseptics include the following EXCEPT:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0328",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Antiviral drugs include which of the following:"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0403",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "A structural component that is found in all viruses is:"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0404",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "The intact virus particle is called:"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0405",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Which of the following is true regarding viral capsid subunits?"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0406",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "How do most viruses acquire envelopes?"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0407",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Which one of the following would be the difference between viruses & bacteria?"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0408",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Which of the followings is not true about viruses?"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0409",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "What is a nucleocapsid?"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0410",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Which of the following isn’t true about viral envelope?"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0411",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "A defective virus is:"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0412",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Which of the following best characterizes viroid?"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0413",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "What are Prions?"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0414",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "All the following criteria are correct for viral genome except:"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0415",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "All of the following criteria are correct for a -ve stranded RNA virus, except:"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0416",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Penetration of the virus across host cell membrane requires:"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0417",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Tropism of rhino viruses depends on:"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0418",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Persistence of the virus after clinical recovery may be due to:"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0419",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Latent infection means:"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0420",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Which statement is the most accurate about +ve sense RNA viruses?"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0421",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Systemic viral infection is characterized by all the following except:"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0422",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Which of the following isn’t true about localized viral infection?"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0423",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "All of the following substances affect nucleic acid of viruses, except:"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0424",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Viral adsorption to host cell occurs by:"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0425",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Which test is not used for detection of viral antibodies?"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0426",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "How can you use RBCs in detection of viral growth in tissue culture?"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0427",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Diagnosis of acute virus infection can be diagnosed by:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0329",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The following antimicrobials act by inhibiting transpeptidation or cross linkage during bacterial cell wall synthesis?"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0330",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Alteration in 30S ribosomal subunit leads to bacterial resistance against:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0331",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Antimicrobials that directly inhibit nucleic acid synthesis include:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0332",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Change in the permeability of the drug is mechanism of resistance for which of the following drugs?"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0333",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The mechanism of resistance of staph aureus to methicillin (MRSA) is"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0334",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Resistance to which of the following drugs is chromosomal mediated?"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0335",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Beta-lactamase confer antibiotic resistance by which of the following?"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0336",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Bacterial antibiotic resistance is frequently mediated by which of the following?"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0337",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Which of the following explains the penicillin resistance of mycoplasma?"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0338",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Pseudomembranous colitis occurs due to which of the following?"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0339",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Which of the following about superinfection isn’t true?"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0340",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Bypassing the reaction inhibited by the drug is the mechanism of resistance for which of the following drugs?"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0341",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Acetyl transferase destroys which of the following drugs?"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0342",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Resistance to sulphonamides is mediated by which mechanism?"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0343",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "A 10-week-old infant is diagnosed with meningitis. She is admitted to the hospital and started on intravenous beta-lactams. Which of the following targets would most likely play a role in the development of resistance to these antibiotics?"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0344",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Which of the following resistances is acquired genetically by bacteria?"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0345",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Inherent resistance of Klebsiella to vancomycin is due to which of the following?"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0346",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "What is the origin of resistance of dormant T.B bacilli?"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0347",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "What are the complications mostly associated with tetracycline?"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0348",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Antibiotic associated colitis is caused by which of the following?"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0349",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Surgical antimicrobial prophylaxis should be given:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0350",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Change of antibiotic is considered if no clinical response occurs after:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0351",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "The duration of antibiotic treatment is reviewed after:"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0428",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "What is the 1st appropriate measure after needle stick injury?"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0429",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "What is the primary measure to reduce the risk of transmitting organisms to patients and health care personnel?"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0430",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "What is the best way to prevent nosocomial infection?"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0431",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Health care workers need to wear personal protective equipment (PPE) for"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0432",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Which personal protective equipment (PPE) should be worn during starting IV lines or phlebotomy?"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0433",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "For preparing patient’s skin before IV injection, we can use:"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0434",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Which of the following isn’t included in aseptic techniques?"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0435",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Clean latex gloves are used in all of the followings except"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0436",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Infections are most commonly spread in health care settings by"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0437",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Contact precautions are applied to which of the following patients?"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0438",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Which type of isolation should be applied to a person with meningococcal meningitis?"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0439",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Which type of isolation should be applied to a person infected with MRSA?"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0440",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Which of the following nosocomial infections is endogenous?"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0441",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Which of the following doesn’t belong to semi-critical items?"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0442",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Which type of isolation should be applied to a person suffering from lung tuberculosis?"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0443",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Air borne isolation precautions doesn’t include which of the following?"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0444",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Immediate cleaning of blood spills is performed by which of the following?"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0445",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "What is the type of gloves that should be worn for cleaning contaminated instruments, handling waste, cleaning contaminated surfaces?"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0446",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Which of the following is categorized as patient care items of low risk?"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0447",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Which of the following about endoscopes is true?"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0448",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Which of the following about GIT endoscope is true?"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0449",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "What is the appropriate post exposure prophylaxis for an unvaccinated health care workers exposed to hepatitis B virus?"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0450",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "What is the appropriate measure for health care workers exposed to Hepatitis C virus?"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0352",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Which of the following is true about bacterial cultures?"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0451",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Hemadsorption produced by a virus in an infected cell means:"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0452",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Which of the following produce intracytoplasmic Negri inclusion bodies?"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0453",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Inclusion bodies:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0120",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Definitive host is the host that carries:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0121",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Monoxenous parasite:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0122",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "In mechanical transmission of parasitic diseases in vector there is:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0123",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Obligatory parasite:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0124",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Low host specific parasite is:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0125",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Temporary parasite is a parasite that:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0126",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Zoonosis is:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0127",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Accidental parasite is:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0128",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Temporary parasites:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0129",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Facultative parasite:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0130",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Endoparasite is:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0131",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Ectoparasite is:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0132",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Obligatory parasites:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0133",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Heteroxenous parasite:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0134",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Intermediate host is the host that carries:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0135",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Accidental host:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0136",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Opportunistic parasite is:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0137",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "High host specific parasite is:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0138",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "An opportunistic parasitic infection is related to:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0139",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Regarding the life cycles of which of the following is correct?"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0140",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Vector:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0141",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "In parasitism:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0142",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Permanent parasite is:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0143",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "External autoinfection means:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0144",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Habitat is:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0145",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Infective stage is"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0146",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Diagnostic stage is"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0147",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Occupational parasite is"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0148",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Reservoir host carries:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0149",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Internal autoinfection means:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0150",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Soil transmission of a parasitic infection is through:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0151",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "All the following are systemic pathogenic effects of the parasite except:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0152",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Dermatitis is:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0153",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "All the following are local pathogenic effects of the parasite except:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0154",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Anaphylaxis may be due to:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0155",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Choose the correct blend:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0156",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Choose the correct blend:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0157",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "In Trematoda life cycle, the stage that arises from the snail is:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0158",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "All these worms are hermaphrodites, except:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0159",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "All trematode eggs must complete the life cycle in:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0160",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Hermaphrodites can do:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0161",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Regarding Platyhelminths, choose the correct character:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0162",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Trematodes have mostly:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0163",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Flukes is the other name of:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0164",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "The stage which is NOT always present in the life cycle of trematodes is:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0165",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "All trematodes need an intermediate:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0166",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Cercaria of family Schistosomatidae is:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0167",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Leptocercus cercaria has:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0168",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Choose the correct blend:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0169",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Schistosomes can do:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0170",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "The ciliated larva of trematodes is:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0171",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Eggs of trematodes are operculated except:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0172",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "All Platyhelminthes are flat except:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0173",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "All the following are larval stages of cestodes Except:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0174",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Cyclophyllidea eggs characterized by"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0175",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Cestodes which have almond-shape scolex are:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0176",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Cestodes differ from nematodes in:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0177",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Cystic cestoda larva is"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0178",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Choose the correct statement:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0179",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "All these are the larvae of the Pseudophyllidae except:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0180",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Cestodes which have compact vitelline glands are:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0181",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Cestodes which have 4 suckers:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0182",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Common genital pore in the ventral surface of:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0183",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "The Order Pseudophyllidea have"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0184",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "The operculated eggs are the eggs of:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0185",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Cestodes are characterized by being:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0186",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Cestodes which have no gravid segment are:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0187",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Hydatid cyst is a cestode larva of:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0188",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Common genital pore in the lateral border in:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0189",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Cestodes are characterized by:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0190",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Neck of a cestode worm is responsible for:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0191",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Solid cestode larva:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0192",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "The larval stages of cyclophyllidae are:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0193",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Cestodes which have blind uterus:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0194",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Choose the correct blend:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0195",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Choose the correct blend:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0196",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Nematodes are characterized by:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0197",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "The posterior end of the male Nematoda may be"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0198",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Concerning the general characters of nematodes all are true Except:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0199",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Nematodes are:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0200",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Nematode male:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0201",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "The life cycle of all Nematodes is characterized by:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0202",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Nematodes have:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0203",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Nematodes are:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0204",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "The muscular esophagus with triradiate (three-part) lumen is:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0205",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Nematode male is:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0206",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "The 1st larva in life cycle of nematodes has:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0207",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Viviparous nematode female:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0208",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Ovoviviparous nematode female:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0209",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "The 4th larva in life cycle of nematodes has:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0210",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Body of nematodes is formed of:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0211",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Which of the following is INCORRECT about the general characters of Nematodes?"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0212",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "A 5-year-old child was diagnosed with a parasitic infection. On examination of his stool, rhabditiform larvae were found. This child is infected with a:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0213",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "The phylum that includes cylindrical unsegmented round worms whose alimentary canal ends by an anus is:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0214",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Choose the incorrect blend:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0215",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Protozoa phylum with no apparent organ of locomotion are:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0216",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Choose the correct answer concerning the cyst stage of protozoa it is:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0217",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Protozoa can actively engulf solids using:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0218",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Rhizopodes are protozoa that move by:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0219",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Locomotion of protozoa is by:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0220",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Nutrition of protozoa is by:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0221",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Axoneme is:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0222",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Sexual reproduction of protozoa:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0223",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Endodyogony in protozoa is:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0224",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Schizogony in protozoa is:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0225",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Which of the following blends are sexual reproduction?"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0226",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Class Zoomastigophora move by:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0227",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Subphylum Sarcodina moves by:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0228",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Sporozoa moves by:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0229",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "In Cyclopropagative transmission inside vector there is:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0230",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Type of transmission inside Stomoxys fly is:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0231",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Type of transmission in Musca fly is:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0232",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Transovarian transmission is found in:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0233",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Choose the correct character of Arthropods:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0234",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Type of transmission of filarial worms inside mosquitoes is:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0235",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Type of transmission of malaria inside anopheles is:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0236",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Incomplete metamorphosis is done by:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0237",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Choose the correct blend:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0238",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Choose the correct blend:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0239",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Choose the correct blend:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0240",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Thin blood film:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0241",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Thick blood film:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0242",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Advantage of direct diagnosis of parasitic diseases is:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0243",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Pre-patent period in parasitic infection is the time:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0244",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Incubation period:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0245",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Zinc-Sulfate Flotation method:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0246",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "All about zinc-sulfate flotation method is true except:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0247",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Preventive measures are:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0248",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Sedimentation & hatching method is used to detect the viability of:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0249",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Saline in stool examination is used to:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0250",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "All about direct wet smear are true except:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0251",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "All are true about direct methods of diagnosis except:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0252",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Iodine in stool examination is used to:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0253",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Antibody detection, choose the correct:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0254",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "All about molecular diagnosis (DNA detection) are true except:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0255",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Antigenic masking is:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0256",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Antigenic mimicry is:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0257",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "All the following are immune evasion mechanism of Schistosoma except:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0258",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Adaptive immune response to protozoa includes:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0259",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "What is the main immunity against tissue helminths?"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0260",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "What is the main immunity against luminal helminthes?"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0261",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Adaptive immune response to luminal helminthic infection is through:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0262",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "The immune response against adult helminths in the intestine is through:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0263",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Which of the following pair of cells is important in immunity against helminths?"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0264",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "One of the following agents is responsible for the immune mechanism against tissue helminths:"
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0353",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Which of the following antigens inhibit insertion of MAC into Leishmania?"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0265",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Leishmania promastigote is resistant to complement lysis due to:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0266",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Which of the following Ags makes Leishmania resistant to enzymatic hydrolysis?"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0267",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Leishmania amastigote is resistant to acid pH & lytic enzymes due to:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0268",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Toxoplasma gondii persist for the life of the host due to:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0269",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Toxoplasma avoid oxidative burst by:"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0270",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "What is the main immunity against Toxoplasma infection?"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0271",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Why Toxoplasma resides in parasitophorus vacuole?"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0272",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Protector glycol-conjugates are present in which of the following immune evasion mechanisms?"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0273",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Which of the following pair of cells is important in immunity against protozoa?"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0274",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "What is the main immunity against protozoa?"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0275",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Intracellular protozoal infection is associated with?"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0276",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Trypanosoma produces multiple waves of parasitemia due to antigenic variation in which of the following antigens?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0161",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "What are the predisposing factors of tuberculosis?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0162",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Enumerate modes of transmission of TB."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0163",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "What is the fate of TB granuloma?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0164",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Mention the characteristic microscopic appearance of tuberculosis granuloma."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0165",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "What are the routes of spread of tuberculosis?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0166",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "What are the natural passages of TB spread?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0167",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Describe briefly the blood spread of mycobacterium TB."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0168",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Describe the characteristic gross appearance of miliary TB."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0169",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Mention the characteristic microscopic appearance of miliary TB."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0170",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Compare between primary TB and secondary TB regarding sensitized host, mode of infection, LNs affection, caseation, blood spread, and characters."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0171",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Enumerate 3 characters of primary TB complex."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0172",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "List types of primary tuberculous complexes."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0173",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "What are the components of primary cervical complex?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0174",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "What are the components of primary pulmonary complex?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0175",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "What are the components of primary intestinal complex?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0176",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "A child complains of cough with expectoration. Chest X-ray shows a small area of subpleural consolidation at the base of the upper lobe of the lung. Hilar lymph nodes are markedly enlarged. What is the most possible diagnosis, the mode of infection, and why are hilar lymph nodes enlarged?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0177",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "A young man complains of cough with expectoration. Chest X-ray shows an apical lung cavity. Lung biopsy reveals multiple granulomas with epithelioid cells and central caseation necrosis. What is the diagnosis and mode of infection? How are epithelioid cells formed?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0178",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Mention the modes of infection of syphilis."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0179",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Briefly describe the syphilitic reaction."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0180",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "What is the microscopic appearance of congenital syphilis?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0181",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "What are the complications of congenital syphilis?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0182",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "List 4 characteristic clinical manifestations of secondary syphilis."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0183",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Mention the gross appearance of primary syphilis."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0184",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "What is the microscopic appearance of primary syphilis?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0185",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Mention the fate of primary syphilis (chancre)."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0186",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "What is the fate of secondary syphilis?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0187",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Define the syphilitic gumma and mention 3 possible sites."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0188",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "What is the gross appearance of syphilitic gumma?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0189",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Describe the microscopic appearance of syphilitic gumma."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0190",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "What are the common sites of diffuse lesions of tertiary syphilis?"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0277",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "What are the characters of cardiovascular syphilis?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0191",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Mention 3 characters of neurosyphilis."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0192",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "List 4 of the characteristic gross features of urinary bilharziasis."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0193",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Describe the gross appearance of bilharzial polyp."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0194",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Describe the characteristic microscopic appearance of bilharzial polyp."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0195",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Mention the epithelial changes in the urinary bladder in urinary bilharziasis."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0196",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Compare between cystitis cystica and cystitis glandularis."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0197",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Explain why the patient of urinary bilharziasis may develop renal failure."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0198",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "If the patient of urinary bilharziasis develops carcinoma of the urinary bladder, what are the possible types?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0199",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "What are Brunn’s nests?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0200",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Explain the cause of sandy patches in mucosa of urinary bladder infected by bilharziasis."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0201",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "What are the complications of bilharziasis of urinary bladder?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0202",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Explain the cause of portal hypertension in bilharzial hepatic fibrosis."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0203",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Describe the gross features of bilharziasis of the liver."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0204",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Describe the histopathologic features of bilharziasis of the liver seen in liver biopsy."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0205",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Enumerate 3 complications of bilharziasis of the liver."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0206",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Mention 3 effects of portal hypertension."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0207",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Mention the cause of ascites in hepatic bilharziasis."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0208",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "What are gross features of bilharziasis of large intestine?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0209",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "What are the complications of bilharziasis of large intestine?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0210",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Mention three characteristic gross features of bilharzial splenomegaly."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0211",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "List four characteristic microscopic features of bilharzial splenomegaly."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0212",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Mention the complications of bilharzial splenomegaly."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0213",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "What are the complications of the bilharziasis of the lung?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0214",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "A male patient complains of hematuria and cystoscopic examination shows sandy patches. What is the diagnosis?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0215",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "A male patient complains of hematemesis. Radiologic examination shows shrunken liver with irregular outer surface and pipe-stem fibrosis of the portal tracts. What is the most possible diagnosis?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0216",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "A farmer suffers from dysentery. Blood examination reveals hypochromic microcytic anemia. Stool examination shows schistosoma ova. If colonoscopy was done, describe the most important endoscopic findings and mention the direction of spread of schistosoma ova in this case."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0278",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "A male patient suffers from generalized fatigue. Clinical examination shows hepatosplenomegaly. Blood examination shows pancytopenia. Liver biopsy reveals fibrosis of the portal tracts and schistosoma ova. Why does this patient have splenomegaly and discuss the pathogenesis of liver schistosomiasis."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0217",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Enumerate the most common sites affected in sarcoidosis."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0218",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "What is the effect of sarcoidosis on the lung?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0219",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "What is the effect of sarcoidosis on the hilar and para-tracheal lymph nodes?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0220",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "What is the effect of sarcoidosis on the parotid?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0221",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "What is the effect of sarcoidosis on the skin?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0222",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Define the Mickulicz syndrome."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0223",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "What are Asteroid bodies?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0224",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "What are Schumann bodies?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0225",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Describe four characteristic microscopic appearances of sarcoidosis."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0226",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Give reason for hypercalcaemia in sarcoidosis."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0227",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "What is the fate of sarcoidosis?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0228",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "What is the mode of infection of leprosy?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0229",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Describe two characteristic microscopic features of lepromatous leprosy."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0230",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Describe two characteristic microscopic features of tuberculoid leprosy."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0231",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Define borderline leprosy."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0232",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Compare between lepromatous leprosy and tuberculoid leprosy."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0233",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "A patient presented with multiple nodules on the skin of face, hands, and feet with distortion of face and eyebrows with leonine facies. What is your diagnosis and describe the microscopic picture of nodules."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0234",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "A male patient presented with skin nodules of the face. Later, there was distortion of his face and loss of sensation in his right forearm. Skin biopsy from the skin nodules shows accumulation of foamy histiocytes. What is the most possible diagnosis and what are the confirmatory tests?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0235",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "What is the microscopic appearance of actinomycosis?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0236",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "What is the gross appearance of cervicofacial actinomycosis?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0237",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Enumerate the types of actinomycosis."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0238",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "What is the fate of abdominal actinomycosis?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0239",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "What is the fate of thoracic actinomycosis?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0240",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "A male patient presents with an abscess in the neck with formation of sinuses which discharge pus containing sulphur granules. What is the definition of sinus, the diagnosis, and the causative organism?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0241",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "What is the mode of infection of mycetoma?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0242",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Describe two characteristic gross appearances of mycetoma."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0243",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "A male patient presents with swollen foot with multiple sinuses discharging pus containing sulphur granules. X-ray shows marked destruction of bones. What is the diagnosis and what are these sulphur granules?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0244",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Name the two characteristic cells of rhinoscleroma and their nature."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0245",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "What is the microscopic picture of rhinoscleroma?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0246",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Mention two clinical manifestations of rhinoscleroma."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0247",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Describe the characteristic gross appearance of rhinoscleroma."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0354",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Enumerate 2 different penicillin preparations."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0355",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Enumerate 2 types of natural penicillin."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0356",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Mention 2 characteristics of Penicillin G."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0357",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Mention 2 characteristics of anti-staph penicillin with one example."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0358",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Antipseudomonal penicillin has two opposite characteristics with two different routes. Explain."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0359",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "List 2 different groups of beta-lactam antibiotics."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0360",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Mention 3 adverse effects of penicillin."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0361",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Compare between ampicillin and amoxicillin in terms of absorption."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0362",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Amoxicillin is almost completely absorbed after oral administration. Enumerate 2 consequences."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0363",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Enumerate prophylactic uses of penicillin."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0364",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Oxacillin- or methicillin-resistant Staph aureus (ORSA or MRSA) do not respond to other beta-lactams. Explain."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0365",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Compare between 1st, 2nd, and 3rd generation cephalosporins in terms of spectrum."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0366",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Compare between 1st, 2nd, and 3rd generation cephalosporins in terms of crossing blood-brain barrier."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0367",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Compare between 4th and 5th generation cephalosporins in terms of spectrum."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0368",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Enumerate three adverse effects of cephalosporins."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0369",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Compare between carbapenems and monobactam in terms of spectrum."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0370",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Compare between carbapenems and monobactam in terms of cross-allergy and risk of toxicity."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0371",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Enumerate the therapeutic uses of vancomycin."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0372",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Mention adverse effects of vancomycin."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0373",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "List two antibiotics that induce pseudomembranous colitis and two drugs used in its treatment."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0374",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "List three drugs used in treatment of vancomycin-resistant strains with an adverse effect of each."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0375",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Mention one contraindication of daptomycin with the reason."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0376",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Complete: benzathine penicillin, ampicillin, and cefazolin uses."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0377",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "List two adverse effects of tetracycline."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0378",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Mention the antibacterial spectrum of tetracycline."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0379",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Enumerate 2 contraindications of tetracycline."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0380",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Mention the antibacterial spectrum of tigecycline."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0381",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Compare between vancomycin and gentamycin as regards spectrum."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0382",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Enumerate two therapeutic uses of aminoglycosides."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0383",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "List two members of aminoglycosides."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0384",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Explain the mechanism of action of aminoglycosides."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0385",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Mention two adverse effects of aminoglycosides."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0386",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Mention the therapeutic uses of spectinomycin."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0387",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Enumerate the therapeutic uses of macrolides."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0388",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Azithromycin has one special use. Mention it."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0389",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Enumerate advantages of new-generation macrolides over erythromycin."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0390",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Mention two adverse effects of macrolides."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0391",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "List two adverse effects of chloramphenicol."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0392",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Mention the spectrum of chloramphenicol."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0393",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Mention two indications for clindamycin."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0394",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Mention the spectrum of 2nd-generation fluoroquinolone with one drug example."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0395",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "List two adverse effects of fluoroquinolones."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0396",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Explain the mechanism of action of quinolones."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0397",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Enumerate the classification of quinolones with examples."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0398",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "List two uses of quinolones."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0399",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Enumerate one contraindication of quinolones."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0400",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Explain the mechanism of action of rifampicin."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0401",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Mention two uses of rifampicin."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0402",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Enumerate two adverse effects of rifampicin."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0403",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Mention the mechanism of action of cotrimoxazole."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0404",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Enumerate two uses of cotrimoxazole."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0405",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Mention two adverse effects of cotrimoxazole."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0406",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Explain how to avoid crystalluria and nephrotoxicity caused by sulfonamides."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0407",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Compare between nitrofurantoin and methenamine in terms of mechanism of action and uses."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0408",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Enumerate two adverse effects of nitrofurantoin."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0409",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Mention two adverse effects of methenamine."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0410",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Enumerate two indications of antimicrobial drug combinations."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0411",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "List two disadvantages of unnecessary antimicrobial combinations."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0412",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "List three drugs used in MRSA."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0413",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Mention two drugs used against penicillinase-producing Staph."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0414",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "List two drugs used for treatment of bacterial meningitis."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0415",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Mention two drugs used for treatment of biliary tract infection."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0416",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "List two antibacterial drugs whose absorption is affected by antacids."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0417",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "List four drugs that should be avoided during pregnancy and in neonates, mentioning the cause."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0418",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Mention the mechanism of action of two antibacterial drugs safe in pregnancy."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0419",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Enumerate two nephrotoxic antibacterial drugs."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0420",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Explain the mechanism of action of dapsone."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0421",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Enumerate three adverse effects of dapsone."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0422",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "List three useful antibacterial combinations."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0423",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "List three drugs used in treatment of anaerobic infection."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0424",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Mention the pros and cons of aminoglycoside and penicillin combination in bacterial endocarditis."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0425",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Mention two benefits of trimethoprim and sulfamethoxazole combination."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0426",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Mention two contraindications for cotrimoxazole."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0427",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "List two antibacterial drugs that prolong QT interval and mention a contraindication of one."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0428",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Complete key antimicrobial statements."
+    },
+    {
+      "id": "MINF1-CH1-MICR-0454",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Compare between acyclovir and ganciclovir in terms of mechanism of action and indications."
+    },
+    {
+      "id": "MINF1-CH1-MICR-0455",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Enumerate two adverse effects of acyclovir."
+    },
+    {
+      "id": "MINF1-CH1-MICR-0456",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "List two indications of amantadine."
+    },
+    {
+      "id": "MINF1-CH1-MICR-0457",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Explain the mechanism of action of ribavirin."
+    },
+    {
+      "id": "MINF1-CH1-MICR-0458",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Mention two indications of ribavirin."
+    },
+    {
+      "id": "MINF1-CH1-MICR-0459",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Explain the mechanism of action of zidovudine with two adverse effects."
+    },
+    {
+      "id": "MINF1-CH1-MICR-0460",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Complete antiviral statements."
+    },
+    {
+      "id": "MINF1-CH1-MICR-0461",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Describe the structure of virus capsid."
+    },
+    {
+      "id": "MINF1-CH1-MICR-0462",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Mention virus capsid functions."
+    },
+    {
+      "id": "MINF1-CH1-MICR-0463",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Compare between localized and systemic viral diseases."
+    },
+    {
+      "id": "MINF1-CH1-MICR-0464",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Viruses can cause tumor by inducing host cell transformation. Explain."
+    },
+    {
+      "id": "MINF1-CH1-MICR-0465",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Give a short account on the structure of viral envelope."
+    },
+    {
+      "id": "MINF1-CH1-MICR-0466",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Mention the mechanism of cell tropism."
+    },
+    {
+      "id": "MINF1-CH1-MICR-0467",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Mention the effect of the virus on the host cell."
+    },
+    {
+      "id": "MINF1-CH1-MICR-0468",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Mention atypical virus particles."
+    },
+    {
+      "id": "MINF1-CH1-MICR-0469",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Differentiate between enveloped and non-enveloped viruses regarding entry and release."
+    },
+    {
+      "id": "MINF1-CH1-MICR-0470",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Mention the effects of virus when isolated on tissue culture."
+    },
+    {
+      "id": "MINF1-CH1-MICR-0471",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Give a short note on direct demonstration of the virus in clinical specimens."
+    },
+    {
+      "id": "MINF1-CH1-MICR-0472",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Complete key virology statements."
+    },
+    {
+      "id": "MINF1-CH1-MICR-0473",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Resistance of Mycobacterium tuberculosis to antibiotic is non-genetic. Discuss."
+    },
+    {
+      "id": "MINF1-CH1-MICR-0474",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Resistance of L-form and protoplasts to antibiotics is non-genetic. Discuss."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0429",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "What is the mechanism of bacterial resistance to sulphonamides?"
+    },
+    {
+      "id": "MINF1-CH1-MICR-0475",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Mention three plasmid-mediated mechanisms of antibiotic resistance."
+    },
+    {
+      "id": "MINF1-CH1-MICR-0476",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Mycoplasma is an example for inherited antibiotic resistance. Discuss."
+    },
+    {
+      "id": "MINF1-CH1-MICR-0477",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Enumerate the importance of antibiotic stewardship programs."
+    },
+    {
+      "id": "MINF1-CH1-MICR-0478",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Enumerate an example of toxicity caused by antimicrobial agents."
+    },
+    {
+      "id": "MINF1-CH1-MICR-0479",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Enumerate examples of allergy caused by antimicrobial agents."
+    },
+    {
+      "id": "MINF1-CH1-MICR-0480",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Enumerate examples of superinfection caused by antimicrobial agents."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0279",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Enumerate modes of transmission of infection inside hospitals."
+    },
+    {
+      "id": "MINF1-CH1-MICR-0481",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Mention the five moments for hand hygiene."
+    },
+    {
+      "id": "MINF1-CH1-MICR-0482",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Mention the requirements of airborne transmission precautions."
+    },
+    {
+      "id": "MINF1-CH1-MICR-0483",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Enumerate the indications of airborne transmission precautions."
+    },
+    {
+      "id": "MINF1-CH1-MICR-0484",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Enumerate the indications of droplet transmission precautions."
+    },
+    {
+      "id": "MINF1-CH1-MICR-0485",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Mention the requirements for healthcare workers and patients in droplet transmission precautions."
+    },
+    {
+      "id": "MINF1-CH1-MICR-0486",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Mention three elements of aseptic technique."
+    },
+    {
+      "id": "MINF1-CH1-MICR-0487",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Mention the indications of aseptic technique."
+    },
+    {
+      "id": "MINF1-CH1-MICR-0488",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Enumerate the infectious hazardous waste."
+    },
+    {
+      "id": "MINF1-CH1-MICR-0489",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "List the standard precautions of respiratory hygiene and cough etiquette."
+    },
+    {
+      "id": "MINF1-CH1-MICR-0490",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Enumerate the items of healthcare personnel safety."
+    },
+    {
+      "id": "MINF1-CH1-MICR-0491",
+      "chapterId": 1,
+      "subject": "microbiology",
+      "text": "Exposure prevention is one component of healthcare personnel safety. Explain."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0248",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "A female patient presented with chronic obstructive pneumonia and sputum discharge. On clinical examination, the mucosa of nose and larynx shows submucosal widening under intact mucous membrane. What is your diagnosis?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0249",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "A young lady suffers from macular chorioretinitis shown as intraretinal edema with bone destruction. Discuss this case according to granulomatous lesions."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0250",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Describe the diagnostic cells seen in scleroma."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0251",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "What is the differential diagnosis of skin nodules?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0252",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "List two possible pathological effects of suppurative infection in schistosomiasis."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0253",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "What is the mode of infection of toxoplasmosis?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0254",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "What are the pathological effects of toxoplasma infection in pregnancy?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0255",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "What are the abdominal manifestations of hydatid disease?"
+    },
+    {
+      "id": "MINF1-CH3-PATH-0256",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Mention two causes of filariasis pathology."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0257",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Mention the pathological effects of filariasis."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0258",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Mention four causes of hydatid cyst rupture."
+    },
+    {
+      "id": "MINF1-CH3-PATH-0259",
+      "chapterId": 3,
+      "subject": "pathology",
+      "text": "Mention four complications of hydatid disease."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0280",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Classify the parasite according to the habitat."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0281",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Compare between temporary and permanent parasites."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0282",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Compare between obligatory and facultative parasites."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0283",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Compare between monoxenous and heteroxenous parasites."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0284",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Define the vector."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0285",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Define autoinfection."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0286",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Compare between external and internal autoinfection."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0287",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Define parasitism."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0288",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Enumerate examples of parasitic adaptations."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0289",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Enumerate the factors involved in pathogenesis and clinical picture of parasites."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0290",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Enumerate the local effects of parasites."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0291",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Enumerate the systemic effects of parasites."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0292",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Enumerate components of parasitic lifestyle."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0293",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Compare between direct and indirect life cycle."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0294",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Enumerate five modes of transmission in parasitic infections."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0295",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Complete key terms about hosts, vectors, and specificity."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0296",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Compare between trematodes and cestodes regarding shape and sex."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0297",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Compare between nematodes and trematodes regarding shape, sex, suckers, and alimentary canal."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0298",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "According to the type of cercaria, discuss the shape of its tail with examples."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0299",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Enumerate two general characters of trematodes."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0300",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Define sporocyst."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0301",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Classify cestodes based on their habitat in the human host."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0302",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Enumerate examples of intestinal cestodes."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0303",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Enumerate examples of tissue cestodes."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0304",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Mention four general characters of cestodes."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0305",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Compare between Pseudophyllidea and Cyclophyllidea regarding adult worms."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0306",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Compare between Pseudophyllidea and Cyclophyllidea regarding eggs."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0307",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Compare between Pseudophyllidea and Cyclophyllidea regarding larval stage."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0308",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Complete key statements about trematodes and cestodes."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0309",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Enumerate the modes of infection of nematodes."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0310",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Compare between oviparous, viviparous, and ovoviviparous nematodes."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0311",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Enumerate four general characters of nematodes."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0312",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "List the content and function of pseudocoelom."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0313",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Explain why the nematode worm cannot shorten or lengthen."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0314",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Enumerate the subtypes of muscular esophagus."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0315",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Enumerate the stages of nematode life cycle."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0316",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Enumerate adult nematodes in tissue, four filarial worms."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0317",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Nematodes undergo four molts; what does each molt involve?"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0318",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Compare between male and female nematodes regarding the reproductive system."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0319",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Compare between male and female nematodes regarding hind gut."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0320",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Complete key statements about nematodes."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0321",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Define protozoa."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0322",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Enumerate methods of locomotion of protozoa."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0323",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Describe the cytoplasm of protozoa."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0324",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "The cytoplasm of protozoa is differentiated into two parts; mention them."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0325",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Describe the nucleus of protozoa."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0326",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Mention the organ of locomotion in Sporozoa."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0327",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Compare between pseudopodia and flagella."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0328",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Discuss the nutrition of protozoa."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0329",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Mention the methods of excretion of protozoa."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0330",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Enumerate the forms of secretions in protozoa."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0331",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Define encystation of protozoa."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0332",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Mention the types of reproduction of protozoa."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0333",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Enumerate the subtypes of asexual reproduction with examples."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0334",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Define sporogony."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0335",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Identify schizogony."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0336",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Define endodyogony and endopolygeny."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0337",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Define conjugation."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0338",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Define gametogony."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0339",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Compare between conjugation and gametogony."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0340",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Complete key protozoa statements."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0341",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Enumerate three general characters of Arthropoda."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0342",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Compare between complete and incomplete metamorphosis."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0343",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Enumerate four direct harmful effects of arthropods."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0344",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Allergic reaction is one direct harmful effect of arthropods; illustrate it."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0345",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Mention local reactions and systemic effects resulting from direct poisoning."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0346",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Arthropods use different methods to convey disease agents; mention these methods."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0347",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Compare between mechanical transmission and biological transmission."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0348",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Mention methods of transmission of disease agents by arthropods."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0349",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Compare between propagative, cyclodevelopmental, and cyclopropagative transmissions."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0350",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Compare between direct mechanical and indirect mechanical transmission."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0351",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Compare between class Insecta and class Arachnida regarding body, antennae, wings, legs, and metamorphosis."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0352",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Compare between class Insecta and class Arachnida regarding examples."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0353",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Compare between class Crustacea and class Arachnida regarding antennae, legs, and examples."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0354",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Complete key arthropod statements."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0355",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Enumerate the direct methods for diagnosis of parasitic infection."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0356",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Why is accurate diagnosis needed for parasitic diseases?"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0357",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Mention the advantages of direct detection techniques."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0358",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Mention the disadvantages of direct detection techniques."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0359",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Mention the advantages of direct wet smear."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0360",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Compare between saline wet smear and iodine wet smear."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0361",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Differentiate between advantages and disadvantages of thick and thin blood films."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0362",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Give a short account on concentration procedure in stool examination technique."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0363",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Mention the advantages of antibody-based methods."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0364",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Mention the disadvantages of antibody-based methods."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0365",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Explain why antibody-based methods do not differentiate between current and past infections."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0366",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Mention the advantages of antigen detection."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0367",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "What are the advantages of molecular techniques such as PCR?"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0368",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "What are the disadvantages of molecular techniques such as PCR?"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0369",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Enumerate the preventive measures of parasitic diseases."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0370",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Complete key management statements."
+    },
+    {
+      "id": "MINF1-CH4-PHAR-0430",
+      "chapterId": 4,
+      "subject": "pharma",
+      "text": "Illustrate the effect of IgE-induced mast cell degranulation."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0371",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Define antigenic masking."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0372",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Define antigen mimicry."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0373",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Define antigen shedding."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0374",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Enumerate immune evasion mechanisms by parasites."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0375",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "What is the immune evasion mechanism of Toxoplasma gondii bradyzoite?"
+    },
+    {
+      "id": "MINF1-CH2-PARA-0376",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Give a reason why Toxoplasma gondii evades digestion by macrophages."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0377",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Give a reason why Leishmania evades digestion by macrophages."
+    },
+    {
+      "id": "MINF1-CH2-PARA-0378",
+      "chapterId": 2,
+      "subject": "parasitology",
+      "text": "Complete key immunity statement."
+    }
+  ],
+  "skippedDuplicates": [
+    {
+      "matchedId": "MINF1-CH3-PATH-0022",
+      "text": "Sites of primary Tuberculosis include all Except:"
+    },
+    {
+      "matchedId": "MINF1-CH3-PATH-0050",
+      "text": "Modes of syphilitic infection include all Except:"
+    },
+    {
+      "matchedId": "MINF1-CH3-PATH-0043",
+      "text": "Concerning condyloma lata:"
+    },
+    {
+      "matchedId": "MINF1-CH3-PATH-0044",
+      "text": "Congenital syphilis may result in:"
+    },
+    {
+      "matchedId": "MINF1-CH3-PATH-0080",
+      "text": "Urinary bladder bilharziasis can predispose to:"
+    },
+    {
+      "matchedId": "MINF1-CH3-PATH-0068",
+      "text": "All are pathological lesions of filariasis EXCEPT:"
+    },
+    {
+      "matchedId": "MINF1-CH3-PATH-0045",
+      "text": "Epithelioid granulomas are seen in all of the following EXCEPT:"
+    },
+    {
+      "matchedId": "MINF1-CH3-PATH-0062",
+      "text": "Concerning madura foot, it is:"
+    },
+    {
+      "matchedId": "MINF1-CH4-PHAR-0020",
+      "text": "Which of the following is not a semisynthetic penicillin?"
+    },
+    {
+      "matchedId": "MINF1-CH4-PHAR-0046",
+      "text": "The penicillin G preparation with the longest duration of action is:"
+    },
+    {
+      "matchedId": "MINF1-CH4-PHAR-0155",
+      "text": "Oral antibiotic effective against MRSA resistant to vancomycin is:"
+    },
+    {
+      "matchedId": "MINF1-CH4-PHAR-0072",
+      "text": "All the following drugs are used in vancomycin resistant enterococci Except:"
+    },
+    {
+      "matchedId": "MINF1-CH4-PHAR-0062",
+      "text": "Which of the following is a cell wall inhibitor useful against anaerobes:"
+    },
+    {
+      "matchedId": "MINF1-CH4-PHAR-0030",
+      "text": "All the following drugs are sensitive to beta lactamase enzyme Except:"
+    },
+    {
+      "matchedId": "MINF1-CH4-PHAR-0147",
+      "text": "Antibacterial associated colitis is NOT likely to occur with:"
+    },
+    {
+      "matchedId": "MINF1-CH4-PHAR-0011",
+      "text": "The following antibiotic is not a protein synthesis inhibitor"
+    },
+    {
+      "matchedId": "MINF1-CH4-PHAR-0228",
+      "text": "Select the antibiotic whose dose must be reduced in patients with renal insufficiency:"
+    },
+    {
+      "matchedId": "MINF1-CH4-PHAR-0074",
+      "text": "Aplastic anemia and optic neuritis are adverse effects of"
+    },
+    {
+      "matchedId": "MINF1-CH4-PHAR-0038",
+      "text": "The drug of choice in patients allergic to penicillin is:"
+    },
+    {
+      "matchedId": "MINF1-CH4-PHAR-0004",
+      "text": "All the following antibiotics are ototoxic EXCEPT:"
+    },
+    {
+      "matchedId": "MINF1-CH4-PHAR-0215",
+      "text": "The following antibacterial drug is not cell wall synthesis inhibitor:"
+    },
+    {
+      "matchedId": "MINF1-CH4-PHAR-0007",
+      "text": "Nephrotoxic antibiotics do NOT include:"
+    },
+    {
+      "matchedId": "MINF1-CH4-PHAR-0082",
+      "text": "The antibiotic of choice in hepatic coma or portal-systemic encephalopathy is:"
+    },
+    {
+      "matchedId": "MINF1-CH1-MICR-0401",
+      "text": "A 40 year old male comes to the medical OPD with symptoms of cough and fever for the last few days. Sputum culture shows presence of gram positive cocci. Which one of the following Fluoroquinolones is most likely to be administered to this patient?"
+    },
+    {
+      "matchedId": "MINF1-CH4-PHAR-0159",
+      "text": "The following is NOT effective in treatment of subacute bacterial endocarditis:"
+    },
+    {
+      "matchedId": "MINF1-CH4-PHAR-0106",
+      "text": "All the following can treat infections with atypical organisms Except:"
+    },
+    {
+      "matchedId": "MINF1-CH1-MICR-0191",
+      "text": "Which of the following isn’t a function of viral capsid?"
+    },
+    {
+      "matchedId": "MINF1-CH1-MICR-0200",
+      "text": "What is a Pseudovirus?"
+    },
+    {
+      "matchedId": "MINF1-CH1-MICR-0241",
+      "text": "Ether & Alcohol inactivate viruses which have:"
+    },
+    {
+      "matchedId": "MINF1-CH1-MICR-0233",
+      "text": "Diagnosis of recent virus infection can be diagnosed by:"
+    },
+    {
+      "matchedId": "MINF1-CH2-PARA-0074",
+      "text": "The following are trematode larval stages except:"
+    },
+    {
+      "matchedId": "MINF1-CH2-PARA-0076",
+      "text": "The larval stage that comes out from snail in life cycle of trematodes is:"
+    },
+    {
+      "matchedId": "MINF1-CH2-PARA-0073",
+      "text": "All trematodes are hermaphrodite except:"
+    },
+    {
+      "matchedId": "MINF1-CH2-PARA-0083",
+      "text": "Larval stage of trematodes which is NOT found in schistosomes is:"
+    },
+    {
+      "matchedId": "MINF1-CH2-PARA-0088",
+      "text": "Cestodes are:"
+    },
+    {
+      "matchedId": "MINF1-CH2-PARA-0035",
+      "text": "The following larval stage are the larval stages of Pseudophyllidae Except:"
+    },
+    {
+      "matchedId": "MINF1-CH2-PARA-0106",
+      "text": "Egg of order Pseudophyllidea is:"
+    },
+    {
+      "matchedId": "MINF1-CH2-PARA-0107",
+      "text": "Egg of Order Cyclophyllidea is:"
+    },
+    {
+      "matchedId": "MINF1-CH2-PARA-0084",
+      "text": "Cercaria with membranous tail is:"
+    },
+    {
+      "matchedId": "MINF1-CH2-PARA-0104",
+      "text": "All the following are cystic cestode larvae except:"
+    },
+    {
+      "matchedId": "MINF1-CH2-PARA-0103",
+      "text": "Cuticle of nematodes is secreted from:"
+    },
+    {
+      "matchedId": "MINF1-CH2-PARA-0041",
+      "text": "Body of nematodes is formed of:"
+    },
+    {
+      "matchedId": "MINF1-CH2-PARA-0122",
+      "text": "In mechanical transmission of parasitic diseases in vector there is:"
+    },
+    {
+      "matchedId": "MINF1-CH2-PARA-0071",
+      "text": "Type of transmission of viruses & bacteria inside arthropods is:"
+    }
+  ],
+  "removedExistingDuplicates": [],
+  "needsReview": []
+}
