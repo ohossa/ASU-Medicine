@@ -18321,7 +18321,7 @@
               "keyConcept": "Clinical antimicrobial cases must preserve the case stem and validated sub-questions.",
               "subQuestions": [
                 {
-                  "id": "MINF1-CH4-PHAR-0162-SQ1",
+                  "id": "MINF1-CH4-PHAR-0143-sq1",
                   "type": "mcq",
                   "text": "What is the most common causative organism of acute hematogenous osteomyelitis in children?",
                   "explanation": "Staphylococcus aureus is the most frequent cause of acute hematogenous osteomyelitis in children because of its ability to adhere to bone matrix. The other organisms are far less common in this setting.",
@@ -18335,7 +18335,7 @@
                   "correctIndex": 0
                 },
                 {
-                  "id": "MINF1-CH4-PHAR-0162-SQ2",
+                  "id": "MINF1-CH4-PHAR-0143-sq2",
                   "type": "mcq",
                   "text": "Which antibiotic property is most important for treating osteomyelitis effectively?",
                   "explanation": "Effective osteomyelitis therapy requires an agent that penetrates and concentrates in bone, such as cefazolin, clindamycin or fluoroquinolones. Without adequate bone levels the deep-seated infection cannot be cleared.",
@@ -18349,7 +18349,7 @@
                   "correctIndex": 0
                 },
                 {
-                  "id": "MINF1-CH4-PHAR-0162-SQ3",
+                  "id": "MINF1-CH4-PHAR-0143-sq3",
                   "type": "mcq",
                   "text": "For this MSSA osteomyelitis, an appropriate parenteral antistaphylococcal agent with good bone penetration is:",
                   "explanation": "Cefazolin is an antistaphylococcal first-generation cephalosporin that concentrates well in bone, making it appropriate for MSSA osteomyelitis. Aztreonam lacks gram-positive cover, metronidazole covers only anaerobes, and nitrofurantoin reaches therapeutic levels only in urine.",
@@ -18373,7 +18373,7 @@
               "keyConcept": "Clinical antimicrobial cases must preserve the case stem and validated sub-questions.",
               "subQuestions": [
                 {
-                  "id": "MINF1-CH4-PHAR-0163-SQ1",
+                  "id": "MINF1-CH4-PHAR-0144-sq1",
                   "type": "mcq",
                   "text": "Which drug was most likely prescribed first?",
                   "explanation": "Clindamycin is an oral anti-anaerobic drug useful in dental anaerobic infections, but it is a classic cause of severe antibiotic-associated diarrhea due to C. difficile. Gentamicin lacks anaerobic activity and vancomycin is not used orally for systemic dental infection.",
@@ -18387,7 +18387,7 @@
                   "correctIndex": 0
                 },
                 {
-                  "id": "MINF1-CH4-PHAR-0163-SQ2",
+                  "id": "MINF1-CH4-PHAR-0144-sq2",
                   "type": "mcq",
                   "text": "Which drug was most likely prescribed second for the diarrhea?",
                   "explanation": "Metronidazole treats C. difficile-associated diarrhea and has anaerobic activity. Ampicillin, penicillin G and carbenicillin do not treat antibiotic-associated pseudomembranous colitis.",
@@ -18401,7 +18401,7 @@
                   "correctIndex": 1
                 },
                 {
-                  "id": "MINF1-CH4-PHAR-0163-SQ3",
+                  "id": "MINF1-CH4-PHAR-0144-sq3",
                   "type": "mcq",
                   "text": "Which antimicrobial could also be of value in treating this type of diarrhea?",
                   "explanation": "Oral vancomycin is effective for C. difficile colitis because it remains in the gut lumen. Tetracycline, ampicillin and chloramphenicol are not preferred treatments for this diarrhea.",
