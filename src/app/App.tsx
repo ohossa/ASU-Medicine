@@ -232,6 +232,7 @@ function QuizFlowWrapper({
             onBack={() => setScreen('subjects')}
             onFinish={handleFinishQuiz}
             userButton={customUserButton}
+            savedSession={quizPayload.savedSession}
           />
         </Suspense>
       )}
@@ -363,6 +364,7 @@ function MainApp() {
   const [selectedChapter, setSelectedChapter] = useState<ChapterData | null>(null);
   const [quizPayload, setQuizPayload] = useState<QuizPayload | null>(null);
   const [resumePayload, setResumePayload] = useState<QuizSessionSave | null>(null);
+  const [promptedChapterId, setPromptedChapterId] = useState<number | null>(null);
   const [resultPayload, setResultPayload] = useState<ResultPayload | null>(null);
 
   const transformedChapter = useMemo(() => {
@@ -400,8 +402,8 @@ function MainApp() {
 
 
 
-  // Navigation history tracker
-  const { load: loadQuizSession, clear: clearQuizSession } = useQuizSession();
+  // Cloud sync/session hooks
+  const { load: loadQuizSession, clear: clearQuizSession, loadAnyForChapter } = useQuizSession();
   const isRestoringHistoryRef = useRef(false);
 
   // ── 2. Helpers and Data Functions ─────────────────────────────────────────────
@@ -463,6 +465,21 @@ function MainApp() {
     window.addEventListener('storage', handleStorage);
     return () => window.removeEventListener('storage', handleStorage);
   }, []);
+
+  // Automatically check for an active saved session when landing on the subjects screen
+  useEffect(() => {
+    if (screen === 'subjects' && transformedChapter) {
+      if (promptedChapterId !== transformedChapter.id) {
+        const saved = loadAnyForChapter(transformedChapter.id);
+        if (saved && !saved.finished) {
+          setResumePayload(saved);
+        }
+        setPromptedChapterId(transformedChapter.id);
+      }
+    } else if (screen !== 'subjects') {
+      setPromptedChapterId(null);
+    }
+  }, [screen, transformedChapter, promptedChapterId, loadAnyForChapter]);
 
   // Listen for history popstate events (back/forward browser buttons)
   useEffect(() => {
@@ -1149,6 +1166,7 @@ function MainApp() {
               clearQuizSession(transformedChapter.id, resumePayload.subjectName);
               setResumePayload(null);
             }}
+            onCancel={() => setResumePayload(null)}
           />
         )}
 

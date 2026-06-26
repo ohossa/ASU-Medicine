@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from 'motion/react';
-import { Play, RotateCcw, Clock, CheckCircle } from 'lucide-react';
+import { Play, RotateCcw, Clock, CheckCircle, X } from 'lucide-react';
 import { formatTime } from '../types';
 
 interface QuizResumeCardProps {
@@ -10,6 +10,7 @@ interface QuizResumeCardProps {
   answeredCount: number;
   onResume: () => void;
   onRestart: () => void;
+  onCancel?: () => void;
 }
 
 export default function QuizResumeCard({
@@ -20,6 +21,7 @@ export default function QuizResumeCard({
   answeredCount,
   onResume,
   onRestart,
+  onCancel,
 }: QuizResumeCardProps) {
   const remaining = total - answeredCount;
 
@@ -32,7 +34,10 @@ export default function QuizResumeCard({
           exit={{ opacity: 0 }}
           className="fixed inset-0 z-50 flex items-center justify-center bg-black/40 backdrop-blur-sm p-4"
           onClick={(e) => {
-            if (e.target === e.currentTarget) onRestart();
+            if (e.target === e.currentTarget) {
+              if (onCancel) onCancel();
+              else onRestart();
+            }
           }}
         >
           <motion.div
@@ -40,8 +45,19 @@ export default function QuizResumeCard({
             animate={{ scale: 1, opacity: 1, y: 0 }}
             exit={{ scale: 0.92, opacity: 0, y: 16 }}
             transition={{ type: 'spring', stiffness: 350, damping: 25 }}
-            className="w-full max-w-sm rounded-[28px] border border-white/[0.08] bg-white/90 dark:bg-[#161618]/95 p-6 shadow-2xl backdrop-blur-2xl"
+            className="relative w-full max-w-sm rounded-[28px] border border-white/[0.08] bg-white/90 dark:bg-[#161618]/95 p-6 shadow-2xl backdrop-blur-2xl"
           >
+            {onCancel && (
+              <button
+                type="button"
+                onClick={onCancel}
+                className="absolute top-4 right-4 p-1.5 rounded-full hover:bg-gray-100 dark:hover:bg-white/[0.06] text-gray-400 dark:text-white/40 transition-colors"
+                aria-label="Close resume dialog"
+              >
+                <X size={16} />
+              </button>
+            )}
+
             <div className="mb-5 flex items-center gap-3">
               <div className="flex h-10 w-10 items-center justify-center rounded-2xl bg-emerald-500/10 border border-emerald-500/20">
                 <CheckCircle size={18} className="text-emerald-500 dark:text-emerald-400" />

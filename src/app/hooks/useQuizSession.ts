@@ -1,4 +1,5 @@
 import { useCallback, useRef } from 'react';
+import { useUser } from '@clerk/clerk-react';
 import { triggerCloudSync } from './useCloudSync';
 import type { QuizAnswer } from '../types';
 import type { TimerMode } from '../components/TimerSettingsPanel';
@@ -14,6 +15,7 @@ export interface QuizSessionSave {
   timerMode: TimerMode;
   showEssayAnswer: boolean;
   timestamp: number;
+  essayDrafts?: Record<number, string>; // Kept for backwards compatibility / types
 }
 
 function getKey(chapterId: number | string, subjectName: string, userId?: string | null) {
@@ -26,19 +28,58 @@ function getDraftsKey(chapterId: number | string, subjectName: string, userId?: 
   return `asu_local_drafts:${uid}:${chapterId}:${subjectName || 'all'}`;
 }
 
+/** Helper to strip the actual typed text from essay responses to save cloud storage */
+function cleanAnswers(answers: Record<number, QuizAnswer>): Record<number, QuizAnswer> {
+  const cleaned: Record<number, QuizAnswer> = {};
+  for (const [index, val] of Object.entries(answers)) {
+    const idx = Number(index);
+    if (val && typeof val === 'object') {
+      if ('text' in val && 'selfGrade' in val) {
+        cleaned[idx] = {
+          ...val,
+          text: '' // Strip actual essay content to optimize cloud sync storage
+        } as QuizAnswer;
+      } else {
+        // Check if it's a case study answer record containing sub-answers
+        const cleanedSub: Record<string, any> = {};
+        let isCase = false;
+        for (const [subKey, subVal] of Object.entries(val)) {
+          if (subVal && typeof subVal === 'object' && 'text' in subVal && 'selfGrade' in subVal) {
+            isCase = true;
+            cleanedSub[subKey] = {
+              ...subVal,
+              text: '' // Strip actual essay content inside case studies
+            };
+          } else {
+            cleanedSub[subKey] = subVal;
+          }
+        }
+        cleaned[idx] = (isCase ? cleanedSub : val) as QuizAnswer;
+      }
+    } else {
+      cleaned[idx] = val;
+    }
+  }
+  return cleaned;
+}
+
 export function useQuizSession() {
+  const { user } = useUser();
+  const userId = user?.id || null;
   const isSaving = useRef(false);
 
   const save = useCallback((
-    payload: Omit<QuizSessionSave, 'timestamp'> & { timestamp?: number },
-    userId?: string | null
+    payload: Omit<QuizSessionSave, 'timestamp'> & { timestamp?: number }
   ) => {
     if (isSaving.current) return;
     isSaving.current = true;
 
     try {
+      // Clean essay texts to prevent large payload sizes in cloud sync
+      const cleanedAnswers = cleanAnswers(payload.answers);
       const session: QuizSessionSave = {
         ...payload,
+        answers: cleanedAnswers,
         timestamp: Date.now(),
       };
       const key = getKey(payload.chapterId, payload.subjectName, userId);
@@ -48,9 +89,9 @@ export function useQuizSession() {
     finally {
       isSaving.current = false;
     }
-  }, []);
+  }, [userId]);
 
-  const load = useCallback((chapterId: number | string, subjectName: string, userId?: string | null): QuizSessionSave | null => {
+  const load = useCallback((chapterId: number | string, subjectName: string): QuizSessionSave | null => {
     try {
       const key = getKey(chapterId, subjectName, userId);
       const raw = localStorage.getItem(key);
@@ -59,18 +100,18 @@ export function useQuizSession() {
     } catch {
       return null;
     }
-  }, []);
+  }, [userId]);
 
-  const hasSession = useCallback((chapterId: number | string, subjectName: string, userId?: string | null): boolean => {
+  const hasSession = useCallback((chapterId: number | string, subjectName: string): boolean => {
     try {
       const key = getKey(chapterId, subjectName, userId);
       return localStorage.getItem(key) !== null;
     } catch {
       return false;
     }
-  }, []);
+  }, [userId]);
 
-  const clear = useCallback((chapterId: number | string, subjectName: string, userId?: string | null) => {
+  const clear = useCallback((chapterId: number | string, subjectName: string) => {
     try {
       const key = getKey(chapterId, subjectName, userId);
       localStorage.removeItem(key);
@@ -79,9 +120,31 @@ export function useQuizSession() {
       localStorage.removeItem(draftsKey);
       triggerCloudSync();
     } catch { /* no-op */ }
-  }, []);
+  }, [userId]);
 
-  return { save, load, hasSession, clear };
+  const loadAnyForChapter = useCallback((chapterId: number | string): QuizSessionSave | null => {
+    try {
+      const prefix = `asu_quiz_session:${userId || 'guest'}:${chapterId}:`;
+      if (typeof window === 'undefined') return null;
+      for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+        if (key && key.startsWith(prefix)) {
+          const raw = localStorage.getItem(key);
+          if (raw) {
+            const parsed = JSON.parse(raw) as QuizSessionSave;
+            if (parsed && !parsed.finished) {
+              return parsed;
+            }
+          }
+        }
+      }
+      return null;
+    } catch {
+      return null;
+    }
+  }, [userId]);
+
+  return { save, load, hasSession, clear, loadAnyForChapter };
 }
 
 /** Persist essay drafts to a separate localStorage key (not synced to cloud) */
