@@ -23,11 +23,21 @@ const STORAGE_KEYS = [
 export function useCloudSync() {
   const { getToken, isSignedIn } = useAuth();
   const isSyncing = useRef(false);
+  const isDirtyRef = useRef(false);
   // Track the last-synced value of each key to compute deltas
   const lastSyncedRef = useRef<Record<string, string>>({});
+  const getTokenRef = useRef(getToken);
+
+  useEffect(() => {
+    getTokenRef.current = getToken;
+  }, [getToken]);
 
   const pushData = useCallback(async () => {
-    if (!isSignedIn || isSyncing.current) return;
+    if (!isSignedIn) return;
+    if (isSyncing.current) {
+      isDirtyRef.current = true;
+      return;
+    }
     isSyncing.current = true;
     try {
       const payload: Record<string, unknown> = {};
@@ -90,7 +100,7 @@ export function useCloudSync() {
         return;
       }
 
-      const token = await getToken();
+      const token = await getTokenRef.current();
       const res = await fetch('/api/sync', {
         method: 'POST',
         headers: {
@@ -105,24 +115,24 @@ export function useCloudSync() {
         throw new Error(`API push failed: ${res.status} - ${errText}`);
       }
 
-      // After successful push, update lastSyncedRef with current values
-      // (but remove entries for deleted keys)
-      for (const key of currentKeys) {
-        const val = localStorage.getItem(key);
-        lastSyncedRef.current[key] = typeof val === 'string' ? val : JSON.stringify(val ?? null);
-      }
-      // Remove entries for deleted keys
-      for (const prevKey of Object.keys(lastSyncedRef.current)) {
-        if (!currentKeys.has(prevKey)) {
-          delete lastSyncedRef.current[prevKey];
+      // After successful push, update lastSyncedRef with the values that were actually pushed (from payload)
+      Object.entries(payload).forEach(([key, val]) => {
+        if (val === null) {
+          delete lastSyncedRef.current[key];
+        } else {
+          lastSyncedRef.current[key] = typeof val === 'string' ? val : JSON.stringify(val);
         }
-      }
+      });
     } catch (err) {
       console.error("Cloud push failed:", err);
     } finally {
       isSyncing.current = false;
+      if (isDirtyRef.current) {
+        isDirtyRef.current = false;
+        pushData();
+      }
     }
-  }, [isSignedIn, getToken]);
+  }, [isSignedIn]);
 
   useEffect(() => {
     if (!isSignedIn) return;
@@ -130,7 +140,7 @@ export function useCloudSync() {
     let isMounted = true;
     const pullData = async () => {
       try {
-        const token = await getToken();
+        const token = await getTokenRef.current();
         const res = await fetch('/api/sync', {
           headers: { Authorization: `Bearer ${token}` }
         });
@@ -144,12 +154,29 @@ export function useCloudSync() {
 
         if (data && isMounted) {
           let hasChanges = false;
-          Object.keys(data).forEach(key => {
-            if (data[key] !== undefined && data[key] !== null) {
-              const cloudVal = typeof data[key] === 'string' ? data[key] : JSON.stringify(data[key]);
+          Object.entries(data).forEach(([key, cloudValAny]) => {
+            if (cloudValAny !== undefined && cloudValAny !== null) {
+              const cloudVal = typeof cloudValAny === 'string' ? cloudValAny : JSON.stringify(cloudValAny);
               const localVal = localStorage.getItem(key);
 
-              if (cloudVal !== localVal) {
+              let shouldOverwrite = false;
+              if (key.startsWith('asu_quiz_session:')) {
+                try {
+                  const cloudObj = typeof cloudValAny === 'string' ? JSON.parse(cloudValAny) : cloudValAny;
+                  const localObj = localVal ? JSON.parse(localVal) : null;
+                  const cloudTime = cloudObj?.timestamp ?? 0;
+                  const localTime = localObj?.timestamp ?? 0;
+                  if (cloudTime > localTime) {
+                    shouldOverwrite = true;
+                  }
+                } catch {
+                  shouldOverwrite = true;
+                }
+              } else {
+                shouldOverwrite = true;
+              }
+
+              if (shouldOverwrite && cloudVal !== localVal) {
                 localStorage.setItem(key, cloudVal);
                 hasChanges = true;
               }
@@ -173,7 +200,7 @@ export function useCloudSync() {
     return () => {
       isMounted = false;
     };
-  }, [isSignedIn, getToken]);
+  }, [isSignedIn]);
 
   useEffect(() => {
     if (!isSignedIn) return;

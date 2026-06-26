@@ -289,9 +289,47 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
       });
     }, 2000);
     return () => {
-      if (autoSaveTimerRef.current) clearTimeout(autoSaveTimerRef.current);
+      if (autoSaveTimerRef.current) {
+        clearTimeout(autoSaveTimerRef.current);
+        const d = quizDataRef.current;
+        if (!d.finished) {
+          saveQuizSession({
+            chapterId: chapter.id,
+            subjectName: subject?.name ?? 'all',
+            current: d.current,
+            answers: d.answers,
+            elapsedSeconds: d.elapsedSeconds,
+            flagged: d.flagged,
+            finished: d.finished,
+            timerMode: d.timerMode,
+            showEssayAnswer: d.showEssayAnswer,
+          });
+        }
+      }
     };
   }, [current, answers, flagged, timerMode, showEssayAnswer, chapter.id, subject?.name, saveQuizSession]);
+
+  const handleBack = React.useCallback(() => {
+    if (autoSaveTimerRef.current) {
+      clearTimeout(autoSaveTimerRef.current);
+      autoSaveTimerRef.current = null;
+    }
+    const d = quizDataRef.current;
+    if (!d.finished) {
+      saveQuizSession({
+        chapterId: chapter.id,
+        subjectName: subject?.name ?? 'all',
+        current: d.current,
+        answers: d.answers,
+        elapsedSeconds: d.elapsedSeconds,
+        flagged: d.flagged,
+        finished: d.finished,
+        timerMode: d.timerMode,
+        showEssayAnswer: d.showEssayAnswer,
+      });
+    }
+    onBack();
+  }, [chapter.id, subject?.name, saveQuizSession, onBack]);
 
   /* Smooth scroll to essay answer when revealed */
   const essayAnswerRef = useRef<HTMLDivElement | null>(null);
@@ -1099,7 +1137,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
         <div className="mx-auto flex max-w-4xl items-center justify-between gap-3 px-4 py-3 sm:px-6">
           <div className="flex min-w-0 items-center gap-3">
             <button
-              onClick={onBack}
+              onClick={handleBack}
               aria-label="Back"
               className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.04] transition-colors hover:bg-gray-100 dark:hover:bg-white/[0.08] btn-press"
             >
