@@ -1,0 +1,118 @@
+{
+  "inputPath": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_ready/MCNS-2_batch_2026-06-26_eeg-sleep_18.json",
+  "targetPath": "src/imports/year-2/semester-2/MCNS-2.json",
+  "moduleCode": "MCNS-2",
+  "added": [
+    {
+      "id": "MCNS2-CH6-PHYS-0104",
+      "chapterId": 6,
+      "subject": "physiology",
+      "text": "Mention the difference between Primary and Secondary Evoked potential?"
+    },
+    {
+      "id": "MCNS2-CH6-PHYS-0105",
+      "chapterId": 6,
+      "subject": "physiology",
+      "text": "Mention the significance of EEG recorded from the scalp?"
+    },
+    {
+      "id": "MCNS2-CH6-PHYS-0106",
+      "chapterId": 6,
+      "subject": "physiology",
+      "text": "Detect EEG wave of adult awake relaxed person with eye closed, Mention it's cause?"
+    },
+    {
+      "id": "MCNS2-CH6-PHYS-0107",
+      "chapterId": 6,
+      "subject": "physiology",
+      "text": "Mention site of recording of Beta wave and it's significance?"
+    },
+    {
+      "id": "MCNS2-CH6-PHYS-0108",
+      "chapterId": 6,
+      "subject": "physiology",
+      "text": "Mention the wave of Hyper arousal and it's site?"
+    },
+    {
+      "id": "MCNS2-CH6-PHYS-0109",
+      "chapterId": 6,
+      "subject": "physiology",
+      "text": "Which EEG wave recorded in light sleep/Deep sleep?"
+    },
+    {
+      "id": "MCNS2-CH6-PHYS-0110",
+      "chapterId": 6,
+      "subject": "physiology",
+      "text": "Define Desynchronization?"
+    },
+    {
+      "id": "MCNS2-CH6-PHYS-0111",
+      "chapterId": 6,
+      "subject": "physiology",
+      "text": "Compare between REM and NREM?"
+    },
+    {
+      "id": "MCNS2-CH6-PHYS-0112",
+      "chapterId": 6,
+      "subject": "physiology",
+      "text": "Mention type of sleep in which person is difficult to be aroused and why?"
+    },
+    {
+      "id": "MCNS2-CH6-PHYS-0113",
+      "chapterId": 6,
+      "subject": "physiology",
+      "text": "What is EEG change recorded in REM ?"
+    },
+    {
+      "id": "MCNS2-CH6-PHYS-0114",
+      "chapterId": 6,
+      "subject": "physiology",
+      "text": "Mention Significance of Paradoxical sleep?"
+    },
+    {
+      "id": "MCNS2-CH6-PHYS-0115",
+      "chapterId": 6,
+      "subject": "physiology",
+      "text": "Mention centers of REM, NREM?"
+    },
+    {
+      "id": "MCNS2-CH6-PHYS-0116",
+      "chapterId": 6,
+      "subject": "physiology",
+      "text": "Mention the site which synchronizes sleep/wakefulness rhythm with dark light cycle?"
+    },
+    {
+      "id": "MCNS2-CH6-PHYS-0117",
+      "chapterId": 6,
+      "subject": "physiology",
+      "text": "Mention the chemical transmitter which is switch between sleep and wakefulness?"
+    },
+    {
+      "id": "MCNS2-CH6-PHYS-0118",
+      "chapterId": 6,
+      "subject": "physiology",
+      "text": "Mention 3 chemical substances increase in wakefulness?"
+    },
+    {
+      "id": "MCNS2-CH6-PHYS-0119",
+      "chapterId": 6,
+      "subject": "physiology",
+      "text": "Mention the chemical transmitter which increases in REM ?"
+    },
+    {
+      "id": "MCNS2-CH6-PHYS-0120",
+      "chapterId": 6,
+      "subject": "physiology",
+      "text": "Mention 2 chemical transmitters decreased in Wakefulness?"
+    },
+    {
+      "id": "MCNS2-CH6-PHYS-0121",
+      "chapterId": 6,
+      "subject": "physiology",
+      "text": "Mention one transmitter increased and the other decreased in NREM?"
+    }
+  ],
+  "skippedDuplicates": [],
+  "removedExistingDuplicates": [],
+  "needsReview": []
+}
