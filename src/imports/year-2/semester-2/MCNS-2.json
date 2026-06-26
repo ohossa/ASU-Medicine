@@ -17953,16 +17953,6 @@
               "tags": []
             },
             {
-              "id": "MCNS2-CH3-HIST-0091",
-              "type": "essay",
-              "lecture": 0,
-              "text": "Enumerate the nuclei of the posterior horn.",
-              "modelAnswer": "The posterior horn contains sensory nuclei:\n1. Posteromarginal nucleus\n2. Substantia gelatinosa\n3. Main sensory nucleus / nucleus proprius\n4. Reticular nucleus\n5. Dorsal nucleus of Clarke\n6. Intermediomedial nucleus\n7. Posterior commissural nucleus\n8. Anterior commissural nucleus\nAll are found at all spinal cord levels except Clarke’s nucleus, which extends from C8 to L3.",
-              "keyConcept": "The posterior horn of the spinal cord contains various sensory nuclei that play crucial roles in processing sensory information.",
-              "explanation": "The posterior horn is a critical region in the spinal cord where sensory information is processed. It contains several distinct nuclei, including the posteromarginal nucleus, substantia gelatinosa, and the main sensory nucleus, among others. These nuclei are responsible for receiving and processing sensory information from various sources, including proprioception, touch, and pain, and are essential for maintaining motor control and sensory perception.",
-              "tags": []
-            },
-            {
               "id": "MCNS2-CH3-HIST-0092",
               "type": "essay",
               "lecture": 0,
@@ -33606,22 +33596,6 @@
               "correctIndex": 2
             },
             {
-              "id": "MCNS2-CH5-ANAT-0211",
-              "type": "mcq",
-              "lecture": 4,
-              "text": "All The following muscles are supplied by facial nerve Except;",
-              "explanation": "The correct answer is “Posterior belly of digastric”. For the question “All The following muscles are supplied by facial nerve Except;”, this option is the most accurate based on the source material.",
-              "keyConcept": "Posterior belly of digastric",
-              "options": [
-                "Buccinator.",
-                "Tensor tympani.",
-                "Posterior belly of digastric.",
-                "Auricular muscles.",
-                "Stylohyoid."
-              ],
-              "correctIndex": 2
-            },
-            {
               "id": "MCNS2-CH5-ANAT-0212",
               "type": "mcq",
               "lecture": 4,
@@ -38637,38 +38611,6 @@
               "correctIndex": 1
             },
             {
-              "id": "MCNS2-CH7-ANAT-0063",
-              "type": "mcq",
-              "lecture": 1,
-              "text": "Middle meningeal artery supplies dura of",
-              "explanation": "The correct answer is: Anterior & middle cranial fossae. This option is the one indicated as correct by the source answer key.",
-              "keyConcept": "Anterior & middle cranial fossae",
-              "options": [
-                "Anterior cranial fossa.",
-                "Middle cranial fossa.",
-                "Posterior cranial fossa.",
-                "Anterior & middle cranial fossae.",
-                "Middle & posterior cranial fossae."
-              ],
-              "correctIndex": 3
-            },
-            {
-              "id": "MCNS2-CH7-ANAT-0064",
-              "type": "mcq",
-              "lecture": 1,
-              "text": "Cranial dura is supplied by all the following EXCEPT",
-              "explanation": "The correct answer is: Glossopharyngeal nerve. This option is the one indicated as correct by the source answer key.",
-              "keyConcept": "Cranial dura is supplied by all the following EXCEPT",
-              "options": [
-                "Maxillary nerve.",
-                "Mandibular nerve.",
-                "C1-C3 spinal nerves.",
-                "Vagus nerve.",
-                "Glossopharyngeal nerve."
-              ],
-              "correctIndex": 4
-            },
-            {
               "id": "MCNS2-CH7-ANAT-0065",
               "type": "mcq",
               "lecture": 1,
@@ -40473,22 +40415,6 @@
               "correctIndex": 2
             },
             {
-              "id": "MCNS2-CH7-ANAT-0194",
-              "type": "mcq",
-              "lecture": 1,
-              "text": "The medial surface of thalamus:",
-              "explanation": "The correct answer is (d) All of the above. Among the listed options this is the choice that best matches the stem, and the other options are incorrect distractors.",
-              "keyConcept": "The medial surface of thalamus",
-              "options": [
-                "Forms lateral wall of 3rd ventricle",
-                "Is limited inferiorly by hypothalamic sulcus",
-                "Is connected to the opposite surface by interthalamic adhesions",
-                "All of the above",
-                "A & B only"
-              ],
-              "correctIndex": 3
-            },
-            {
               "id": "MCNS2-CH7-ANAT-0195",
               "type": "mcq",
               "lecture": 1,
@@ -40599,22 +40525,6 @@
                 "Lateral surface"
               ],
               "correctIndex": 1
-            },
-            {
-              "id": "MCNS2-CH7-ANAT-0202",
-              "type": "mcq",
-              "lecture": 1,
-              "text": "The lateral wall of the third ventricle is formed by:",
-              "explanation": "The correct answer is (e) A & B only. Among the listed options this is the choice that best matches the stem, and the other options are incorrect distractors.",
-              "keyConcept": "The lateral wall of the third ventricle is formed by",
-              "options": [
-                "Thalamus",
-                "Hypothalamus",
-                "Lamina terminalis",
-                "All of the above",
-                "A & B only"
-              ],
-              "correctIndex": 4
             },
             {
               "id": "MCNS2-CH7-ANAT-0203",
@@ -42967,6 +42877,186 @@
               "explanation": "Model answer (from the iNerd book): Gives the sensation of wellbeing by increasing dopaminergic neurons. See the full answer for the complete points expected.",
               "keyConcept": "What does cocaine do to the reward system",
               "modelAnswer": "• Gives the sensation of wellbeing by increasing dopaminergic neurons"
+            },
+            {
+              "id": "MCNS2-CH7-PHYS-0123",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Mention the effects of lesions in Representational Hemisphere?",
+              "explanation": "Lesions in the representational hemisphere lead to agnosia and contralateral neglect.",
+              "keyConcept": "Effects of lesions in Representational Hemisphere",
+              "modelAnswer": "• Agnosia and contralateral neglect."
+            },
+            {
+              "id": "MCNS2-CH7-PHYS-0124",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Detect site of Area for naming object ?",
+              "explanation": "The area for naming objects is located between the anterior part of the occipital lobe and the posterior part of the temporal lobe.",
+              "keyConcept": "Site of Area for naming object",
+              "modelAnswer": "• Between the anterior part of the occipital lobe and the posterior part of the Temporal lobe."
+            },
+            {
+              "id": "MCNS2-CH7-PHYS-0125",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Explain Prefrontal Association area initiates and executes plans and motor patterns for expressing individual words?",
+              "explanation": "The prefrontal association area contains Broca's area, which is responsible for initiating and executing plans and motor patterns for expressing individual words.",
+              "keyConcept": "Prefrontal Association area role in expressing words",
+              "modelAnswer": "• Because it contains Broca's area."
+            },
+            {
+              "id": "MCNS2-CH7-PHYS-0126",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Mention site concerned with motivation?",
+              "explanation": "The limbic association area is concerned with motivation.",
+              "keyConcept": "Site concerned with motivation",
+              "modelAnswer": "• Limbic association area."
+            },
+            {
+              "id": "MCNS2-CH7-PHYS-0127",
+              "type": "essay",
+              "lecture": 1,
+              "text": "What is Amorphosynthesis?",
+              "explanation": "Amorphosynthesis is the failure of recognition of the contralateral side of the body, leading to unilateral inattention and neglect.",
+              "keyConcept": "Definition of Amorphosynthesis",
+              "modelAnswer": "• Failure of recognition of contralateral side of body leading to unilateral inattention and neglect."
+            },
+            {
+              "id": "MCNS2-CH7-PHYS-0128",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Mention site of operation of working memory ?",
+              "explanation": "The prefrontal association area is the site of operation of working memory.",
+              "keyConcept": "Site of operation of working memory",
+              "modelAnswer": "• Prefrontal Association area."
+            },
+            {
+              "id": "MCNS2-CH7-PHYS-0129",
+              "type": "essay",
+              "lecture": 1,
+              "text": "What are Functions of Wernicke area? Detect it's disorder?",
+              "explanation": "Wernicke's area is responsible for comprehension of thoughts from visual and auditory information, determination of thoughts to be expressed, and choice of proper words. Its disorder is Sensory (Fluent) aphasia.",
+              "keyConcept": "Functions and disorder of Wernicke area",
+              "modelAnswer": "Functions:\n• Comprehension of thoughts of visual and Auditory information.\n• Determination of thoughts to be expressed.\n• Choice of proper words to be used.\n\nDisorder:\n• Sensory (Fluent) aphasia."
+            },
+            {
+              "id": "MCNS2-CH7-PHYS-0130",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Patient can speak well and has good auditory comprehension but cannot put parts of words together, What is the disorder and it's cause ?",
+              "explanation": "A patient who speaks well and has good comprehension but cannot put parts of words together has conductive aphasia, caused by a lesion in the arcuate fasciculus (or near the auditory cortex).",
+              "keyConcept": "Conductive aphasia presentation and cause",
+              "modelAnswer": "Disorder:\n• Conductive aphasia\n\nCause:\n• Lesion in arcuate fasciculus (or near the auditory cortex)."
+            },
+            {
+              "id": "MCNS2-CH7-PHYS-0131",
+              "type": "essay",
+              "lecture": 1,
+              "text": "What and Where is Anomic aphasia?",
+              "explanation": "Anomic aphasia is characterized by difficulty in naming seen objects only, caused by damage in the angular gyrus in the categorical hemisphere without affecting Wernicke's or Broca's area.",
+              "keyConcept": "Definition and site of Anomic aphasia",
+              "modelAnswer": "Definition:\n• Patient finds difficulty in naming seen objects only.\n\nSite / Location:\n• Damage in angular gyrus in categorical hemisphere without affecting Wernicke's or Broca's area."
+            },
+            {
+              "id": "MCNS2-CH7-PHYS-0132",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Differentiate between Broca's and Global aphasia regarding Speech?",
+              "explanation": "In Broca's aphasia, speech is slow, difficult, and limited to a few words, whereas in Global aphasia, speech is scant and non-fluent.",
+              "keyConcept": "Difference between Broca's and Global aphasia",
+              "modelAnswer": "• Broca's aphasia: Speech is slow, hard to come, and limited to 2 or 3 words only.\n• Global aphasia: Speech is scant and non-fluent."
+            },
+            {
+              "id": "MCNS2-CH7-PHYS-0133",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Mention Sites of Non fluent Aphasia?",
+              "explanation": "Non-fluent aphasia is associated with lesions in Broca's area and Exner's area (hand skill area).",
+              "keyConcept": "Sites of Non-fluent Aphasia",
+              "modelAnswer": "• Broca's area\n• Exner area (Hand skill area)"
+            },
+            {
+              "id": "MCNS2-CH7-PHYS-0134",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Mention cause of Speech disorders in which Speech is:\nA) Slow stiff\nB) Slow monotonous\nC) Stacatto\nD) weak breathy nasal",
+              "explanation": "Causes of different types of speech/articulation disorders: slow stiff (UMNL), slow monotonous (Parkinsonism), staccato (neocerebellar lesion), and weak breathy nasal (LMNL).",
+              "keyConcept": "Causes of different speech disorders",
+              "modelAnswer": "A) Slow stiff:\n• Upper Motor Neuron Lesion (UMNL)\n\nB) Slow monotonous:\n• Parkinsonism\n\nC) Staccato:\n• Neocerebellar lesion\n\nD) Weak breathy nasal:\n• Lower Motor Neuron Lesion (LMNL)"
+            },
+            {
+              "id": "MCNS2-CH7-PHYS-0135",
+              "type": "essay",
+              "lecture": 1,
+              "text": "What is the most common cause of Aphasia ?",
+              "explanation": "The most common cause of aphasia is embolism or thrombosis of a cerebral blood vessel.",
+              "keyConcept": "Most common cause of Aphasia",
+              "modelAnswer": "• Embolism or Thrombosis of cerebral blood vessel."
+            },
+            {
+              "id": "MCNS2-CH7-PHYS-0136",
+              "type": "essay",
+              "lecture": 1,
+              "text": "What is Bursting speech ?",
+              "explanation": "Bursting speech is hyperkinetic dysarthria caused by damage to the basal ganglia leading to quick involuntary movements.",
+              "keyConcept": "Definition of Bursting speech",
+              "modelAnswer": "• Hyperkinetic dysarthria due to damage of basal ganglia causing quick involuntary movement."
+            },
+            {
+              "id": "MCNS2-CH7-PHYS-0137",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Mention 4 functions of Representational Hemisphere?",
+              "explanation": "Four functions of the representational hemisphere are: recognition of faces, recognition of musical themes, perception of body orientation in space, and identification of objects by their forms.",
+              "keyConcept": "Functions of Representational Hemisphere",
+              "modelAnswer": "• Recognition of faces.\n• Recognition of musical themes.\n• Perception of body orientation in space.\n• Identification of objects by their forms."
+            },
+            {
+              "id": "MCNS2-CH7-PHYS-0138",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Explain Hemisphere specialization is related to handedness ?",
+              "explanation": "Categorical hemisphere localization is related to handedness: 96% of right-handed and 70% of left-handed individuals have the left hemisphere as their dominant (categorical) hemisphere.",
+              "keyConcept": "Hemisphere specialization and handedness",
+              "modelAnswer": "• 96% of Right-handed and 70% of Left-handed individuals have their categorical hemisphere in the Left hemisphere."
+            },
+            {
+              "id": "MCNS2-CH7-PHYS-0139",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Mention the name of Association area concerned with Creativity, Elaboration of thoughts and Working memory ?",
+              "explanation": "The prefrontal association area is concerned with creativity, elaboration of thoughts, and working memory.",
+              "keyConcept": "Association area for creativity, thoughts, and working memory",
+              "modelAnswer": "• Prefrontal Association area."
+            },
+            {
+              "id": "MCNS2-CH7-PHYS-0140",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Mention Functions of Categorical hemisphere?",
+              "explanation": "Functions of the categorical hemisphere include language, logical, analytic, sequential, and verbal tasks.",
+              "keyConcept": "Functions of Categorical hemisphere",
+              "modelAnswer": "• Language\n• Logical tasks\n• Analytic tasks\n• Sequential tasks\n• Verbal tasks"
+            },
+            {
+              "id": "MCNS2-CH7-PHYS-0141",
+              "type": "essay",
+              "lecture": 1,
+              "text": "How Prefrontal Association area shares in control of Emotional behaviour?",
+              "explanation": "The prefrontal association area shares in control of emotional behavior through its connections with the limbic system.",
+              "keyConcept": "Prefrontal Association area control of emotional behaviour",
+              "modelAnswer": "• Through its connections with the limbic system."
+            },
+            {
+              "id": "MCNS2-CH7-PHYS-0142",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Where is the lesion if the person can still have excellent language comprehension through hearing but not through reading?",
+              "explanation": "A lesion in the angular gyrus causes a loss of language comprehension through reading (alexia) while preserving auditory language comprehension.",
+              "keyConcept": "Lesion site for loss of reading comprehension with preserved hearing comprehension",
+              "modelAnswer": "• Angular gyrus."
             }
           ]
         },
@@ -63698,40 +63788,6 @@
                 "Ventral Anterior Nucleus",
                 "Medial Geniculate Nucleus",
                 "Pulvinar Nucleus"
-              ],
-              "correctIndex": 2,
-              "modelAnswer": null
-            },
-            {
-              "id": "MCNS2-CH11-ANAT-0007",
-              "type": "mcq",
-              "lecture": 1,
-              "text": "A young athlete sustains a head injury and later develops a severe headache followed by sudden death. Rupture of an aneurysm in which of the following structures is the most likely cause?",
-              "explanation": "The correct answer is the Circle of Willis. Saccular (berry) aneurysms form at branch points of the Circle of Willis; rupture causes subarachnoid hemorrhage with thunderclap headache and can be rapidly fatal. Middle meningeal artery injury instead causes an epidural hematoma after temporal bone fracture.",
-              "keyConcept": "Berry aneurysms of the Circle of Willis rupture -> subarachnoid hemorrhage.",
-              "options": [
-                "Middle meningeal artery",
-                "Internal carotid artery",
-                "Circle of Willis",
-                "Basilar artery",
-                "Vertebral artery"
-              ],
-              "correctIndex": 2,
-              "modelAnswer": null
-            },
-            {
-              "id": "MCNS2-CH11-ANAT-0008",
-              "type": "mcq",
-              "lecture": 1,
-              "text": "The Great cerebral vein (of Galen) is formed by the union of which of the following veins?",
-              "explanation": "The correct answer is the right and left internal cerebral veins. The great cerebral vein of Galen is formed by union of the two internal cerebral veins and drains into the straight sinus. The basal veins of Rosenthal join it but do not form it.",
-              "keyConcept": "Great cerebral vein (of Galen) = union of the two internal cerebral veins -> straight sinus.",
-              "options": [
-                "Superior sagittal veins",
-                "Basal veins of Rosenthal",
-                "Right and left internal cerebral veins",
-                "Veins of Trolard",
-                "Superficial middle cerebral veins"
               ],
               "correctIndex": 2,
               "modelAnswer": null

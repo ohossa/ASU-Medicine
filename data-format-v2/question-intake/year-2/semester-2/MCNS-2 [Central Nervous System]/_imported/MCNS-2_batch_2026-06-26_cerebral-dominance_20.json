@@ -1,0 +1,225 @@
+{
+  "moduleCode": "MCNS-2",
+  "questions": [
+    {
+      "chapterId": 7,
+      "subject": "Physiology",
+      "topic": "Cerebral Dominance and Speech",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Mention the effects of lesions in Representational Hemisphere?",
+      "modelAnswer": "• Agnosia and contralateral neglect.",
+      "explanation": "Lesions in the representational hemisphere lead to agnosia and contralateral neglect.",
+      "keyConcept": "Effects of lesions in Representational Hemisphere"
+    },
+    {
+      "chapterId": 7,
+      "subject": "Physiology",
+      "topic": "Cerebral Dominance and Speech",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Detect site of Area for naming object ?",
+      "modelAnswer": "• Between the anterior part of the occipital lobe and the posterior part of the Temporal lobe.",
+      "explanation": "The area for naming objects is located between the anterior part of the occipital lobe and the posterior part of the temporal lobe.",
+      "keyConcept": "Site of Area for naming object"
+    },
+    {
+      "chapterId": 7,
+      "subject": "Physiology",
+      "topic": "Cerebral Dominance and Speech",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Explain Prefrontal Association area initiates and executes plans and motor patterns for expressing individual words?",
+      "modelAnswer": "• Because it contains Broca's area.",
+      "explanation": "The prefrontal association area contains Broca's area, which is responsible for initiating and executing plans and motor patterns for expressing individual words.",
+      "keyConcept": "Prefrontal Association area role in expressing words"
+    },
+    {
+      "chapterId": 7,
+      "subject": "Physiology",
+      "topic": "Cerebral Dominance and Speech",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Mention site concerned with motivation?",
+      "modelAnswer": "• Limbic association area.",
+      "explanation": "The limbic association area is concerned with motivation.",
+      "keyConcept": "Site concerned with motivation"
+    },
+    {
+      "chapterId": 7,
+      "subject": "Physiology",
+      "topic": "Cerebral Dominance and Speech",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is Amorphosynthesis?",
+      "modelAnswer": "• Failure of recognition of contralateral side of body leading to unilateral inattention and neglect.",
+      "explanation": "Amorphosynthesis is the failure of recognition of the contralateral side of the body, leading to unilateral inattention and neglect.",
+      "keyConcept": "Definition of Amorphosynthesis"
+    },
+    {
+      "chapterId": 7,
+      "subject": "Physiology",
+      "topic": "Cerebral Dominance and Speech",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Mention site of operation of working memory ?",
+      "modelAnswer": "• Prefrontal Association area.",
+      "explanation": "The prefrontal association area is the site of operation of working memory.",
+      "keyConcept": "Site of operation of working memory"
+    },
+    {
+      "chapterId": 7,
+      "subject": "Physiology",
+      "topic": "Cerebral Dominance and Speech",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What are Functions of Wernicke area? Detect it's disorder?",
+      "modelAnswer": "Functions:\n• Comprehension of thoughts of visual and Auditory information.\n• Determination of thoughts to be expressed.\n• Choice of proper words to be used.\n\nDisorder:\n• Sensory (Fluent) aphasia.",
+      "explanation": "Wernicke's area is responsible for comprehension of thoughts from visual and auditory information, determination of thoughts to be expressed, and choice of proper words. Its disorder is Sensory (Fluent) aphasia.",
+      "keyConcept": "Functions and disorder of Wernicke area"
+    },
+    {
+      "chapterId": 7,
+      "subject": "Physiology",
+      "topic": "Cerebral Dominance and Speech",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Patient can speak well and has good auditory comprehension but cannot put parts of words together, What is the disorder and it's cause ?",
+      "modelAnswer": "Disorder:\n• Conductive aphasia\n\nCause:\n• Lesion in arcuate fasciculus (or near the auditory cortex).",
+      "explanation": "A patient who speaks well and has good comprehension but cannot put parts of words together has conductive aphasia, caused by a lesion in the arcuate fasciculus (or near the auditory cortex).",
+      "keyConcept": "Conductive aphasia presentation and cause"
+    },
+    {
+      "chapterId": 7,
+      "subject": "Physiology",
+      "topic": "Cerebral Dominance and Speech",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What and Where is Anomic aphasia?",
+      "modelAnswer": "Definition:\n• Patient finds difficulty in naming seen objects only.\n\nSite / Location:\n• Damage in angular gyrus in categorical hemisphere without affecting Wernicke's or Broca's area.",
+      "explanation": "Anomic aphasia is characterized by difficulty in naming seen objects only, caused by damage in the angular gyrus in the categorical hemisphere without affecting Wernicke's or Broca's area.",
+      "keyConcept": "Definition and site of Anomic aphasia"
+    },
+    {
+      "chapterId": 7,
+      "subject": "Physiology",
+      "topic": "Cerebral Dominance and Speech",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Differentiate between Broca's and Global aphasia regarding Speech?",
+      "modelAnswer": "• Broca's aphasia: Speech is slow, hard to come, and limited to 2 or 3 words only.\n• Global aphasia: Speech is scant and non-fluent.",
+      "explanation": "In Broca's aphasia, speech is slow, difficult, and limited to a few words, whereas in Global aphasia, speech is scant and non-fluent.",
+      "keyConcept": "Difference between Broca's and Global aphasia"
+    },
+    {
+      "chapterId": 7,
+      "subject": "Physiology",
+      "topic": "Cerebral Dominance and Speech",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Mention Sites of Non fluent Aphasia?",
+      "modelAnswer": "• Broca's area\n• Exner area (Hand skill area)",
+      "explanation": "Non-fluent aphasia is associated with lesions in Broca's area and Exner's area (hand skill area).",
+      "keyConcept": "Sites of Non-fluent Aphasia"
+    },
+    {
+      "chapterId": 7,
+      "subject": "Physiology",
+      "topic": "Cerebral Dominance and Speech",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Mention cause of Speech disorders in which Speech is:\nA) Slow stiff\nB) Slow monotonous\nC) Stacatto\nD) weak breathy nasal",
+      "modelAnswer": "A) Slow stiff:\n• Upper Motor Neuron Lesion (UMNL)\n\nB) Slow monotonous:\n• Parkinsonism\n\nC) Staccato:\n• Neocerebellar lesion\n\nD) Weak breathy nasal:\n• Lower Motor Neuron Lesion (LMNL)",
+      "explanation": "Causes of different types of speech/articulation disorders: slow stiff (UMNL), slow monotonous (Parkinsonism), staccato (neocerebellar lesion), and weak breathy nasal (LMNL).",
+      "keyConcept": "Causes of different speech disorders"
+    },
+    {
+      "chapterId": 7,
+      "subject": "Physiology",
+      "topic": "Cerebral Dominance and Speech",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is the most common cause of Aphasia ?",
+      "modelAnswer": "• Embolism or Thrombosis of cerebral blood vessel.",
+      "explanation": "The most common cause of aphasia is embolism or thrombosis of a cerebral blood vessel.",
+      "keyConcept": "Most common cause of Aphasia"
+    },
+    {
+      "chapterId": 7,
+      "subject": "Physiology",
+      "topic": "Cerebral Dominance and Speech",
+      "lecture": 1,
+      "type": "essay",
+      "text": "What is Bursting speech ?",
+      "modelAnswer": "• Hyperkinetic dysarthria due to damage of basal ganglia causing quick involuntary movement.",
+      "explanation": "Bursting speech is hyperkinetic dysarthria caused by damage to the basal ganglia leading to quick involuntary movements.",
+      "keyConcept": "Definition of Bursting speech"
+    },
+    {
+      "chapterId": 7,
+      "subject": "Physiology",
+      "topic": "Cerebral Dominance and Speech",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Mention 4 functions of Representational Hemisphere?",
+      "modelAnswer": "• Recognition of faces.\n• Recognition of musical themes.\n• Perception of body orientation in space.\n• Identification of objects by their forms.",
+      "explanation": "Four functions of the representational hemisphere are: recognition of faces, recognition of musical themes, perception of body orientation in space, and identification of objects by their forms.",
+      "keyConcept": "Functions of Representational Hemisphere"
+    },
+    {
+      "chapterId": 7,
+      "subject": "Physiology",
+      "topic": "Cerebral Dominance and Speech",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Explain Hemisphere specialization is related to handedness ?",
+      "modelAnswer": "• 96% of Right-handed and 70% of Left-handed individuals have their categorical hemisphere in the Left hemisphere.",
+      "explanation": "Categorical hemisphere localization is related to handedness: 96% of right-handed and 70% of left-handed individuals have the left hemisphere as their dominant (categorical) hemisphere.",
+      "keyConcept": "Hemisphere specialization and handedness"
+    },
+    {
+      "chapterId": 7,
+      "subject": "Physiology",
+      "topic": "Cerebral Dominance and Speech",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Mention the name of Association area concerned with Creativity, Elaboration of thoughts and Working memory ?",
+      "modelAnswer": "• Prefrontal Association area.",
+      "explanation": "The prefrontal association area is concerned with creativity, elaboration of thoughts, and working memory.",
+      "keyConcept": "Association area for creativity, thoughts, and working memory"
+    },
+    {
+      "chapterId": 7,
+      "subject": "Physiology",
+      "topic": "Cerebral Dominance and Speech",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Mention Functions of Categorical hemisphere?",
+      "modelAnswer": "• Language\n• Logical tasks\n• Analytic tasks\n• Sequential tasks\n• Verbal tasks",
+      "explanation": "Functions of the categorical hemisphere include language, logical, analytic, sequential, and verbal tasks.",
+      "keyConcept": "Functions of Categorical hemisphere"
+    },
+    {
+      "chapterId": 7,
+      "subject": "Physiology",
+      "topic": "Cerebral Dominance and Speech",
+      "lecture": 1,
+      "type": "essay",
+      "text": "How Prefrontal Association area shares in control of Emotional behaviour?",
+      "modelAnswer": "• Through its connections with the limbic system.",
+      "explanation": "The prefrontal association area shares in control of emotional behavior through its connections with the limbic system.",
+      "keyConcept": "Prefrontal Association area control of emotional behaviour"
+    },
+    {
+      "chapterId": 7,
+      "subject": "Physiology",
+      "topic": "Cerebral Dominance and Speech",
+      "lecture": 1,
+      "type": "essay",
+      "text": "Where is the lesion if the person can still have excellent language comprehension through hearing but not through reading?",
+      "modelAnswer": "• Angular gyrus.",
+      "explanation": "A lesion in the angular gyrus causes a loss of language comprehension through reading (alexia) while preserving auditory language comprehension.",
+      "keyConcept": "Lesion site for loss of reading comprehension with preserved hearing comprehension"
+    }
+  ]
+}

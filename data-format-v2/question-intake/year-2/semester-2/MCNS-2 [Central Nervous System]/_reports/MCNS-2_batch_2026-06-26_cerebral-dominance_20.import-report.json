@@ -1,0 +1,171 @@
+{
+  "inputPath": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_ready/MCNS-2_batch_2026-06-26_cerebral-dominance_20.json",
+  "targetPath": "src/imports/year-2/semester-2/MCNS-2.json",
+  "moduleCode": "MCNS-2",
+  "added": [
+    {
+      "id": "MCNS2-CH7-PHYS-0123",
+      "chapterId": 7,
+      "subject": "physiology",
+      "text": "Mention the effects of lesions in Representational Hemisphere?"
+    },
+    {
+      "id": "MCNS2-CH7-PHYS-0124",
+      "chapterId": 7,
+      "subject": "physiology",
+      "text": "Detect site of Area for naming object ?"
+    },
+    {
+      "id": "MCNS2-CH7-PHYS-0125",
+      "chapterId": 7,
+      "subject": "physiology",
+      "text": "Explain Prefrontal Association area initiates and executes plans and motor patterns for expressing individual words?"
+    },
+    {
+      "id": "MCNS2-CH7-PHYS-0126",
+      "chapterId": 7,
+      "subject": "physiology",
+      "text": "Mention site concerned with motivation?"
+    },
+    {
+      "id": "MCNS2-CH7-PHYS-0127",
+      "chapterId": 7,
+      "subject": "physiology",
+      "text": "What is Amorphosynthesis?"
+    },
+    {
+      "id": "MCNS2-CH7-PHYS-0128",
+      "chapterId": 7,
+      "subject": "physiology",
+      "text": "Mention site of operation of working memory ?"
+    },
+    {
+      "id": "MCNS2-CH7-PHYS-0129",
+      "chapterId": 7,
+      "subject": "physiology",
+      "text": "What are Functions of Wernicke area? Detect it's disorder?"
+    },
+    {
+      "id": "MCNS2-CH7-PHYS-0130",
+      "chapterId": 7,
+      "subject": "physiology",
+      "text": "Patient can speak well and has good auditory comprehension but cannot put parts of words together, What is the disorder and it's cause ?"
+    },
+    {
+      "id": "MCNS2-CH7-PHYS-0131",
+      "chapterId": 7,
+      "subject": "physiology",
+      "text": "What and Where is Anomic aphasia?"
+    },
+    {
+      "id": "MCNS2-CH7-PHYS-0132",
+      "chapterId": 7,
+      "subject": "physiology",
+      "text": "Differentiate between Broca's and Global aphasia regarding Speech?"
+    },
+    {
+      "id": "MCNS2-CH7-PHYS-0133",
+      "chapterId": 7,
+      "subject": "physiology",
+      "text": "Mention Sites of Non fluent Aphasia?"
+    },
+    {
+      "id": "MCNS2-CH7-PHYS-0134",
+      "chapterId": 7,
+      "subject": "physiology",
+      "text": "Mention cause of Speech disorders in which Speech is:\nA) Slow stiff\nB) Slow monotonous\nC) Stacatto\nD) weak breathy nasal"
+    },
+    {
+      "id": "MCNS2-CH7-PHYS-0135",
+      "chapterId": 7,
+      "subject": "physiology",
+      "text": "What is the most common cause of Aphasia ?"
+    },
+    {
+      "id": "MCNS2-CH7-PHYS-0136",
+      "chapterId": 7,
+      "subject": "physiology",
+      "text": "What is Bursting speech ?"
+    },
+    {
+      "id": "MCNS2-CH7-PHYS-0137",
+      "chapterId": 7,
+      "subject": "physiology",
+      "text": "Mention 4 functions of Representational Hemisphere?"
+    },
+    {
+      "id": "MCNS2-CH7-PHYS-0138",
+      "chapterId": 7,
+      "subject": "physiology",
+      "text": "Explain Hemisphere specialization is related to handedness ?"
+    },
+    {
+      "id": "MCNS2-CH7-PHYS-0139",
+      "chapterId": 7,
+      "subject": "physiology",
+      "text": "Mention the name of Association area concerned with Creativity, Elaboration of thoughts and Working memory ?"
+    },
+    {
+      "id": "MCNS2-CH7-PHYS-0140",
+      "chapterId": 7,
+      "subject": "physiology",
+      "text": "Mention Functions of Categorical hemisphere?"
+    },
+    {
+      "id": "MCNS2-CH7-PHYS-0141",
+      "chapterId": 7,
+      "subject": "physiology",
+      "text": "How Prefrontal Association area shares in control of Emotional behaviour?"
+    },
+    {
+      "id": "MCNS2-CH7-PHYS-0142",
+      "chapterId": 7,
+      "subject": "physiology",
+      "text": "Where is the lesion if the person can still have excellent language comprehension through hearing but not through reading?"
+    }
+  ],
+  "skippedDuplicates": [],
+  "removedExistingDuplicates": [
+    {
+      "keptId": "MCNS2-CH2-HIST-0021",
+      "removedId": "MCNS2-CH3-HIST-0091",
+      "text": "Enumerate the nuclei of the posterior horn."
+    },
+    {
+      "keptId": "MCNS2-CH4-ANAT-0193",
+      "removedId": "MCNS2-CH5-ANAT-0211",
+      "text": "All The following muscles are supplied by facial nerve Except;"
+    },
+    {
+      "keptId": "MCNS2-CH4-ANAT-0621",
+      "removedId": "MCNS2-CH7-ANAT-0063",
+      "text": "Middle meningeal artery supplies dura of"
+    },
+    {
+      "keptId": "MCNS2-CH4-ANAT-0622",
+      "removedId": "MCNS2-CH7-ANAT-0064",
+      "text": "Cranial dura is supplied by all the following EXCEPT"
+    },
+    {
+      "keptId": "MCNS2-CH6-ANAT-0012",
+      "removedId": "MCNS2-CH7-ANAT-0194",
+      "text": "The medial surface of thalamus:"
+    },
+    {
+      "keptId": "MCNS2-CH6-ANAT-0014",
+      "removedId": "MCNS2-CH7-ANAT-0202",
+      "text": "The lateral wall of the third ventricle is formed by:"
+    },
+    {
+      "keptId": "MCNS2-CH4-ANAT-0527",
+      "removedId": "MCNS2-CH11-ANAT-0007",
+      "text": "A young athlete sustains a head injury and later develops a severe headache followed by sudden death. Rupture of an aneurysm in which of the following structures is the most likely cause?"
+    },
+    {
+      "keptId": "MCNS2-CH4-ANAT-0528",
+      "removedId": "MCNS2-CH11-ANAT-0008",
+      "text": "The Great cerebral vein (of Galen) is formed by the union of which of the following veins?"
+    }
+  ],
+  "needsReview": []
+}
