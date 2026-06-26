@@ -364,7 +364,6 @@ function MainApp() {
   const [selectedChapter, setSelectedChapter] = useState<ChapterData | null>(null);
   const [quizPayload, setQuizPayload] = useState<QuizPayload | null>(null);
   const [resumePayload, setResumePayload] = useState<QuizSessionSave | null>(null);
-  const [promptedChapterId, setPromptedChapterId] = useState<number | null>(null);
   const [resultPayload, setResultPayload] = useState<ResultPayload | null>(null);
 
   const transformedChapter = useMemo(() => {
@@ -465,21 +464,6 @@ function MainApp() {
     window.addEventListener('storage', handleStorage);
     return () => window.removeEventListener('storage', handleStorage);
   }, []);
-
-  // Automatically check for an active saved session when landing on the subjects screen
-  useEffect(() => {
-    if (screen === 'subjects' && transformedChapter) {
-      if (promptedChapterId !== transformedChapter.id) {
-        const saved = loadAnyForChapter(transformedChapter.id);
-        if (saved && !saved.finished) {
-          setResumePayload(saved);
-        }
-        setPromptedChapterId(transformedChapter.id);
-      }
-    } else if (screen !== 'subjects') {
-      setPromptedChapterId(null);
-    }
-  }, [screen, transformedChapter, promptedChapterId, loadAnyForChapter]);
 
   // Listen for history popstate events (back/forward browser buttons)
   useEffect(() => {
@@ -1164,7 +1148,13 @@ function MainApp() {
             onRestart={() => {
               if (!transformedChapter || !resumePayload) return;
               clearQuizSession(transformedChapter.id, resumePayload.subjectName);
+              const subject = transformedChapter.subjects.find(s => s.name === resumePayload.subjectName) || null;
+              const questions = subject ? subject.questions : transformedChapter.subjects.flatMap(s => s.questions);
               setResumePayload(null);
+              transitionTo(() => {
+                setQuizPayload({ chapter: transformedChapter, subject, questions });
+                setScreen('quiz');
+              });
             }}
             onCancel={() => setResumePayload(null)}
           />

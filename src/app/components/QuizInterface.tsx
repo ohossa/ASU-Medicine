@@ -198,7 +198,15 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
   ) : false;
 
   /* Sound effect + pulse + confetti on answer reveal (once per question) */
-  const playedForQuestions = useRef<Set<number>>(new Set());
+  const playedForQuestions = useRef<Set<number>>(() => {
+    const set = new Set<number>();
+    if (savedSession?.answers) {
+      Object.keys(savedSession.answers).forEach(key => {
+        set.add(Number(key));
+      });
+    }
+    return set;
+  });
   useEffect(() => {
     if (answered && question && !playedForQuestions.current.has(current)) {
       // Case/casestudy: handled by per-sub-question effect below — skip main
@@ -215,7 +223,22 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
   }, [answered, isCorrect, question, playSound, current]);
 
   /* Case sub-question self-grading feedback */
-  const lastCaseSubGrades = useRef<Record<string, string>>({});
+  const lastCaseSubGrades = useRef<Record<string, string>>(() => {
+    const grades: Record<string, string> = {};
+    if (savedSession?.answers) {
+      Object.entries(savedSession.answers).forEach(([indexStr, val]) => {
+        const index = Number(indexStr);
+        if (val && typeof val === 'object') {
+          Object.entries(val).forEach(([subKey, subVal]) => {
+            if (subVal && typeof subVal === 'object' && 'selfGrade' in subVal) {
+              grades[`${index}-${subKey}`] = subVal.selfGrade as string;
+            }
+          });
+        }
+      });
+    }
+    return grades;
+  });
   useEffect(() => {
     if (!question || (question.type !== 'case' && question.type !== 'casestudy')) return;
     const curr = answers[current] as Record<string, unknown> | undefined;
