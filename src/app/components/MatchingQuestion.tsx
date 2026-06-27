@@ -406,12 +406,28 @@ export function MatchingQuestion({
   };
 
   /* ─── connector lines (SVG overlay) ─── */
-  const [connectors, setConnectors] = useState<{ x1: number; y1: number; x2: number; y2: number; correct: boolean }[]>([]);
+  const [connectors, setConnectors] = useState<{
+    x1: number;
+    y1: number;
+    x2: number;
+    y2: number;
+    correct: boolean;
+    sideBySide: boolean;
+    key: string;
+  }[]>([]);
 
   useLayoutEffect(() => {
     const compute = () => {
       if (!containerRef.current) return;
-      const rects: { x1: number; y1: number; x2: number; y2: number; correct: boolean }[] = [];
+      const rects: {
+        x1: number;
+        y1: number;
+        x2: number;
+        y2: number;
+        correct: boolean;
+        sideBySide: boolean;
+        key: string;
+      }[] = [];
       const containerRect = containerRef.current.getBoundingClientRect();
 
       for (let i = 0; i < pairs.length; i++) {
@@ -422,12 +438,17 @@ export function MatchingQuestion({
         if (!pEl || !tEl) continue;
         const pr = pEl.getBoundingClientRect();
         const tr = tEl.getBoundingClientRect();
+
+        const sideBySide = tr.left > pr.right;
+
         rects.push({
-          x1: pr.right - containerRect.left,
-          y1: pr.top + pr.height / 2 - containerRect.top,
-          x2: tr.left - containerRect.left,
-          y2: tr.top + tr.height / 2 - containerRect.top,
+          x1: sideBySide ? pr.right - containerRect.left : pr.left + pr.width / 2 - containerRect.left,
+          y1: sideBySide ? pr.top + pr.height / 2 - containerRect.top : pr.bottom - containerRect.top,
+          x2: sideBySide ? tr.left - containerRect.left : tr.left + tr.width / 2 - containerRect.left,
+          y2: sideBySide ? tr.top + tr.height / 2 - containerRect.top : tr.top - containerRect.top,
           correct: submitted ? scrambled[targetIdx] === pairs[i].target : true,
+          sideBySide,
+          key: `${i}-${targetIdx}`,
         });
       }
       setConnectors(rects);
@@ -461,19 +482,76 @@ export function MatchingQuestion({
         className="absolute inset-0 pointer-events-none z-0"
         style={{ width: '100%', height: '100%' }}
       >
-        {connectors.map((c, i) => (
-          <line
-            key={i}
-            x1={c.x1}
-            y1={c.y1}
-            x2={c.x2}
-            y2={c.y2}
-            stroke={c.correct ? '#10b981' : '#f43f5e'}
-            strokeWidth={2}
-            strokeDasharray={submitted && !c.correct ? '6 4' : undefined}
-            opacity={0.6}
-          />
-        ))}
+        <defs>
+          <linearGradient id="active-line-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stopColor="var(--subject-accent, #3b82f6)" />
+            <stop offset="100%" stopColor="var(--subject-glow, #8b5cf6)" />
+          </linearGradient>
+          <linearGradient id="correct-line-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stopColor="#10b981" />
+            <stop offset="100%" stopColor="#059669" />
+          </linearGradient>
+          <linearGradient id="wrong-line-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stopColor="#f43f5e" />
+            <stop offset="100%" stopColor="#dc2626" />
+          </linearGradient>
+        </defs>
+        {connectors.map((c) => {
+          const dx = Math.abs(c.x2 - c.x1) * 0.45;
+          const dy = Math.abs(c.y2 - c.y1) * 0.45;
+          const pathD = c.sideBySide
+            ? `M ${c.x1} ${c.y1} C ${c.x1 + dx} ${c.y1}, ${c.x2 - dx} ${c.y2}, ${c.x2} ${c.y2}`
+            : `M ${c.x1} ${c.y1} C ${c.x1} ${c.y1 + dy}, ${c.x2} ${c.y2 - dy}, ${c.x2} ${c.y2}`;
+
+          const strokeGrad = submitted
+            ? (c.correct ? 'url(#correct-line-grad)' : 'url(#wrong-line-grad)')
+            : 'url(#active-line-grad)';
+
+          return (
+            <g key={c.key}>
+              {/* Glow backdrop path */}
+              <motion.path
+                d={pathD}
+                stroke={strokeGrad}
+                strokeWidth={6}
+                fill="none"
+                opacity={0.12}
+                initial={{ pathLength: 0 }}
+                animate={{ pathLength: 1 }}
+                transition={{ duration: 0.45, ease: 'easeOut' }}
+              />
+              {/* Sharp foreground path */}
+              <motion.path
+                d={pathD}
+                stroke={strokeGrad}
+                strokeWidth={2}
+                fill="none"
+                opacity={0.7}
+                strokeDasharray={submitted && !c.correct ? '6 4' : undefined}
+                initial={{ pathLength: 0 }}
+                animate={{ pathLength: 1 }}
+                transition={{ duration: 0.45, ease: 'easeOut' }}
+              />
+              {/* Subtle animated flow overlay for active, unsubmitted state */}
+              {!submitted && (
+                <motion.path
+                  d={pathD}
+                  stroke={strokeGrad}
+                  strokeWidth={2}
+                  fill="none"
+                  opacity={0.35}
+                  strokeDasharray="6 10"
+                  animate={{ strokeDashoffset: [-16, 0] }}
+                  transition={{
+                    ease: 'linear',
+                    duration: 1.6,
+                    repeat: Infinity,
+                  }}
+                />
+              )}
+            </g>
+          );
+        })}
       </svg>
 
       {/* hint text */}
