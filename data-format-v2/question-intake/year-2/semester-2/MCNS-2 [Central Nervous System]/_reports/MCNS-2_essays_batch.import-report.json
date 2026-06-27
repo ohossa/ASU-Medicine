@@ -1,0 +1,334 @@
+{
+  "inputPath": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_ready/MCNS-2_essays_batch.json",
+  "targetPath": "src/imports/year-2/semester-2/MCNS-2.json",
+  "moduleCode": "MCNS-2",
+  "added": [
+    {
+      "id": "MCNS2-CH11-ANAT-0044",
+      "chapterId": 11,
+      "subject": "anatomy",
+      "text": "Mention the musculature derivatives of the first pharyngeal arch and their nerve supply."
+    },
+    {
+      "id": "MCNS2-CH11-ANAT-0045",
+      "chapterId": 11,
+      "subject": "anatomy",
+      "text": "Mention the musculature derivatives of the second pharyngeal arch and their nerve supply."
+    },
+    {
+      "id": "MCNS2-CH11-ANAT-0046",
+      "chapterId": 11,
+      "subject": "anatomy",
+      "text": "Describe the distribution of the Anterior Cerebral Artery."
+    },
+    {
+      "id": "MCNS2-CH11-ANAT-0047",
+      "chapterId": 11,
+      "subject": "anatomy",
+      "text": "List the cortical areas supplied by the Anterior Cerebral Artery (ACA)."
+    },
+    {
+      "id": "MCNS2-CH11-ANAT-0048",
+      "chapterId": 11,
+      "subject": "anatomy",
+      "text": "Mention the blood supply of the Thalamus."
+    },
+    {
+      "id": "MCNS2-CH11-ANAT-0049",
+      "chapterId": 11,
+      "subject": "anatomy",
+      "text": "Enumerate the secondary brain vesicles and their adult derivatives."
+    },
+    {
+      "id": "MCNS2-CH11-ANAT-0050",
+      "chapterId": 11,
+      "subject": "anatomy",
+      "text": "List the important association areas of the cerebral cortex."
+    },
+    {
+      "id": "MCNS2-CH11-ANAT-0051",
+      "chapterId": 11,
+      "subject": "anatomy",
+      "text": "List two anatomical connections carried out by the Fornix."
+    },
+    {
+      "id": "MCNS2-CH11-ANAT-0052",
+      "chapterId": 11,
+      "subject": "anatomy",
+      "text": "Enumerate the components of the Diencephalon."
+    },
+    {
+      "id": "MCNS2-CH11-ANAT-0053",
+      "chapterId": 11,
+      "subject": "anatomy",
+      "text": "Mention the nerve supply of the third and fourth/sixth pharyngeal arches."
+    },
+    {
+      "id": "MCNS2-CH11-ANAT-0054",
+      "chapterId": 11,
+      "subject": "anatomy",
+      "text": "Mention the muscular derivative and nerve of the third pharyngeal arch."
+    },
+    {
+      "id": "MCNS2-CH11-PATH-0034",
+      "chapterId": 11,
+      "subject": "pathology",
+      "text": "List neurodegenerative diseases according to the specific brain regions they affect."
+    },
+    {
+      "id": "MCNS2-CH11-PATH-0035",
+      "chapterId": 11,
+      "subject": "pathology",
+      "text": "Describe the pathogenesis and microscopic features of Parkinson's Disease."
+    },
+    {
+      "id": "MCNS2-CH11-PATH-0036",
+      "chapterId": 11,
+      "subject": "pathology",
+      "text": "Mention the clinical picture (symptoms) of Parkinson's Disease."
+    },
+    {
+      "id": "MCNS2-CH11-PATH-0037",
+      "chapterId": 11,
+      "subject": "pathology",
+      "text": "Describe the pathogenesis and gross features of Huntington's Disease."
+    },
+    {
+      "id": "MCNS2-CH11-PATH-0038",
+      "chapterId": 11,
+      "subject": "pathology",
+      "text": "Mention the microscopic features of Huntington's Disease."
+    },
+    {
+      "id": "MCNS2-CH11-PATH-0039",
+      "chapterId": 11,
+      "subject": "pathology",
+      "text": "What are the characteristics and microscopic features of Medulloblastoma?"
+    },
+    {
+      "id": "MCNS2-CH11-PATH-0040",
+      "chapterId": 11,
+      "subject": "pathology",
+      "text": "Mention the characteristics of Hemangioblastoma."
+    },
+    {
+      "id": "MCNS2-CH11-MICR-0029",
+      "chapterId": 11,
+      "subject": "microbiology",
+      "text": "Mention the main causative organisms and CSF findings in Acute Bacterial Meningitis."
+    },
+    {
+      "id": "MCNS2-CH11-MICR-0030",
+      "chapterId": 11,
+      "subject": "microbiology",
+      "text": "Transmission, Pathogenesis and clinical stages of Rabies."
+    },
+    {
+      "id": "MCNS2-CH11-MICR-0031",
+      "chapterId": 11,
+      "subject": "microbiology",
+      "text": "Mechanism of Tetanus and Botulism toxins."
+    },
+    {
+      "id": "MCNS2-CH11-PHAR-0066",
+      "chapterId": 11,
+      "subject": "pharma",
+      "text": "Explain why local anesthesia is less effective in infected tissues."
+    },
+    {
+      "id": "MCNS2-CH11-PHAR-0067",
+      "chapterId": 11,
+      "subject": "pharma",
+      "text": "How to manage Neuroleptic Malignant Syndrome (NMS)?"
+    },
+    {
+      "id": "MCNS2-CH11-PHAR-0068",
+      "chapterId": 11,
+      "subject": "pharma",
+      "text": "Rationalize the addition of vasoconstrictors (e.g., Epinephrine) to local anesthesia."
+    },
+    {
+      "id": "MCNS2-CH11-PHAR-0069",
+      "chapterId": 11,
+      "subject": "pharma",
+      "text": "List the drugs used to prevent Alcohol Abuse relapse and their MOA."
+    },
+    {
+      "id": "MCNS2-CH11-PHAR-0070",
+      "chapterId": 11,
+      "subject": "pharma",
+      "text": "Why is antiepileptic monotherapy preferred over combination (poly) therapy?"
+    },
+    {
+      "id": "MCNS2-CH11-PHAR-0071",
+      "chapterId": 11,
+      "subject": "pharma",
+      "text": "Mention the clinical uses of Sodium Bicarbonate (NaHCO3) in CNS emergencies."
+    },
+    {
+      "id": "MCNS2-CH11-PHAR-0072",
+      "chapterId": 11,
+      "subject": "pharma",
+      "text": "Complete the following pharmacological statements regarding drug choices:\n1. Antidepressant used for Nocturnal Enuresis\n2. Antidepressant used for Urinary Incontinence\n3. Oral drug to improve walking speed in Multiple Sclerosis and its mechanism"
+    },
+    {
+      "id": "MCNS2-CH11-PHAR-0073",
+      "chapterId": 11,
+      "subject": "pharma",
+      "text": "Compare Typical and Atypical Antipsychotics regarding side effects and efficacy."
+    },
+    {
+      "id": "MCNS2-CH11-PHAR-0074",
+      "chapterId": 11,
+      "subject": "pharma",
+      "text": "Advantages of Atypical over Typical Antipsychotics."
+    },
+    {
+      "id": "MCNS2-CH11-PHAR-0075",
+      "chapterId": 11,
+      "subject": "pharma",
+      "text": "Mention the specific pharmacotherapy for Multiple Sclerosis walking impairment and its mechanism."
+    },
+    {
+      "id": "MCNS2-CH11-PHAR-0076",
+      "chapterId": 11,
+      "subject": "pharma",
+      "text": "Mention clinical uses of antidepressants other than for depression."
+    },
+    {
+      "id": "MCNS2-CH11-PHAR-0077",
+      "chapterId": 11,
+      "subject": "pharma",
+      "text": "Explain the management protocol for Lithium (Li) toxicity."
+    },
+    {
+      "id": "MCNS2-CH11-PHAR-0078",
+      "chapterId": 11,
+      "subject": "pharma",
+      "text": "Why are Valproate and Phenytoin particularly avoided in female patients?"
+    },
+    {
+      "id": "MCNS2-CH11-PHAR-0079",
+      "chapterId": 11,
+      "subject": "pharma",
+      "text": "Rationalize why Gentamicin is only used in the first line for 7-10 days."
+    },
+    {
+      "id": "MCNS2-CH11-PHAR-0080",
+      "chapterId": 11,
+      "subject": "pharma",
+      "text": "Rationalize the preference for Liposomal Amphotericin B over ordinary Amphotericin B in Candida Meningitis."
+    },
+    {
+      "id": "MCNS2-CH11-PHAR-0081",
+      "chapterId": 11,
+      "subject": "pharma",
+      "text": "List antibiotics that poorly cross the blood-brain barrier (BBB) and must be injected intrathecally."
+    },
+    {
+      "id": "MCNS2-CH11-PHAR-0082",
+      "chapterId": 11,
+      "subject": "pharma",
+      "text": "Explain the drug choices for Amyotrophic Lateral Sclerosis (ALS) and Multiple Sclerosis (MS) walking improvement."
+    },
+    {
+      "id": "MCNS2-CH11-PHAR-0083",
+      "chapterId": 11,
+      "subject": "pharma",
+      "text": "Why is Sevoflurane preferred for inhalation anesthesia induction in children?"
+    },
+    {
+      "id": "MCNS2-CH11-PHAR-0084",
+      "chapterId": 11,
+      "subject": "pharma",
+      "text": "Mention the first-line therapy for Mucormycosis."
+    },
+    {
+      "id": "MCNS2-CH11-PHAR-0085",
+      "chapterId": 11,
+      "subject": "pharma",
+      "text": "Complete the following pharmacological statements regarding drug mechanisms:\n1. a4b2 partial agonist used for smoking cessation.\n2. Inhibitor of aldehyde dehydrogenase used for alcohol management.\n3. Substance added to local anesthesia to decrease ECF acidity.\n4. Factor that increases ECF acidity and decreases local anesthetic activity."
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0043",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Define Motivation and mention the role of the limbic system."
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0044",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Compare REM and Non-REM sleep."
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0045",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Enumerate types of Implicit (Non-declarative) Memory with brain centers."
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0046",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Compare Short-Term and Long-Term Memory."
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0047",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Mention neurotransmitters involved in arousal with their origin."
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0048",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Mention factors that activate and inhibit the Reticular Activating System (RAS)."
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0049",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Mention types of Dysarthria with causes."
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0050",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Mention three functions of the prefrontal association area."
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0051",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Mention the clinical value of the Electroencephalogram (EEG)."
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0052",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Mention the functions of the Limbic Association Area."
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0053",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Define 'Positive Reinforcement' and the clinical result of damage to Exner's Area."
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0054",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "List the functions of the Hypothalamus regarding visceral control."
+    },
+    {
+      "id": "MCNS2-CH11-PHYS-0055",
+      "chapterId": 11,
+      "subject": "physiology",
+      "text": "Define Positive Reinforcement and explain its physiological basis."
+    }
+  ],
+  "skippedDuplicates": [],
+  "removedExistingDuplicates": [],
+  "needsReview": []
+}

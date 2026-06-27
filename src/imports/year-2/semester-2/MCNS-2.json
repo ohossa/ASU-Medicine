@@ -63256,6 +63256,123 @@
               ],
               "correctIndex": 2,
               "modelAnswer": null
+            },
+            {
+              "id": "MCNS2-CH11-PHYS-0043",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Define Motivation and mention the role of the limbic system.",
+              "explanation": "Motivation is the psychological and physiological drive that initiates and guides goal-oriented behaviors. The limbic system plays a central role via two opposing networks: the reward (pleasure) system, primarily located in the nucleus accumbens and medial forebrain bundle and mediated by dopamine, and the punishment (aversion) system, located in the periaqueductal gray and hypothalamus, which drives avoidance and protective behaviors.",
+              "keyConcept": "Motivation limbic control = dopamine-driven reward system (nucleus accumbens) + aversion punishment system (periaqueductal gray).",
+              "modelAnswer": "• Motivation: Motivation is the internal force or drive that activates, directs, or inhibits certain behaviors in order to achieve a specific goal.\nRole of Limbic System:\n• Reward system\nLocated in nucleus accumbens and medial forebrain bundle. Produces pleasure and satisfaction. Neurotransmitter involved: Dopamine.\n• Punishment system\nLocated in periaqueductal gray and hypothalamus. Causes avoidance behavior and inhibition of actions."
+            },
+            {
+              "id": "MCNS2-CH11-PHYS-0044",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Compare REM and Non-REM sleep.",
+              "explanation": "Sleep is divided into Non-REM and REM stages. Non-REM sleep is a quiet state where muscle tone is maintained, skeletal motor activity like sleepwalking can occur, dreaming is simple, and the arousal threshold is low. REM sleep is an active state characterized by rapid eye movements, high brain metabolic activity, vivid and frequent dreams, a high arousal threshold, and skeletal muscle flaccidity (muscle atonia) due to active inhibition of motor neurons.",
+              "keyConcept": "Non-REM (muscle tone present, simple dreams, low arousal threshold) vs REM (muscle atonia, vivid dreams, high arousal threshold).",
+              "modelAnswer": "• Non-REM Sleep :\nDreams are rare, simple and fragmented.\nMuscle tone is present.\nSleep walking and sleep talking occur.\nArousal threshold is low. (Eaiser to wake )\n• REM Sleep :\nDreams are vivid and frequent.\nCharacterized by Muscle atonia. \nNo sleep walking.\nArousal threshold is high. ( Difficult to wake)"
+            },
+            {
+              "id": "MCNS2-CH11-PHYS-0045",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Enumerate types of Implicit (Non-declarative) Memory with brain centers.",
+              "explanation": "Implicit (non-declarative) memory is unconscious memory that does not require conscious recall. It includes procedural memory (motor skills, managed by the striatum and cerebellum), priming (improved processing of a stimulus due to recent exposure, mediated by the neocortex), associative learning (classical conditioning, involving the amygdala for emotional responses and cerebellum for motor responses), and non-associative learning (habituation/sensitization, occurring in reflex pathways).",
+              "keyConcept": "Implicit memory types: procedural (striatum/cerebellum), priming (neocortex), associative (amygdala/cerebellum), non-associative (reflex pathways).",
+              "modelAnswer": "• Procedural Memory\nConcerned with skills and habits.\nBrain centers: Striatum and Cerebellum.\n• Priming\nPrevious exposure improves recognition or performance.\nBrain center: Neocortex.\n• Associative Learning\nLearning by association between stimuli.\nBrain centers:\nAmygdala for emotional responses.\nCerebellum for motor responses.\n• Non-associative Learning\nIncludes habituation and sensitization.\nAssociated Brain centers: Reflex pathways."
+            },
+            {
+              "id": "MCNS2-CH11-PHYS-0046",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Compare Short-Term and Long-Term Memory.",
+              "explanation": "Memory is classified by its capacity, duration, and access time. Short-term memory serves as a transient working space, holding about 7-10 distinct items for seconds to minutes, with immediate recall. Long-term memory is a permanent storage system with an infinite capacity that holds information for years or a lifetime, requiring search and retrieval processes to bring the information back to conscious awareness.",
+              "keyConcept": "Short-term (limited capacity, lasts seconds/minutes, immediate recall) vs Long-term (unlimited capacity, lasts years, requires retrieval).",
+              "modelAnswer": "Capacity of Storage :\n• Short-term memory has a limited capacity and can store about 7-10 items.\n• Long-term memory has a virtually unlimited capacity.\nDuration:\n• Short-term memory lasts for seconds to minutes.\n• Long-term memory lasts for days, years, or a lifetime.\nRemembering Time :\nRecall from short-term memory is immediate.\nRecall from long-term memory requires search and retrieval."
+            },
+            {
+              "id": "MCNS2-CH11-PHYS-0047",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Mention neurotransmitters involved in arousal with their origin.",
+              "explanation": "Physiological arousal and maintenance of wakefulness are regulated by ascending neuromodulatory projections. Norepinephrine, originating from the locus coeruleus, enhances sensory attention. Serotonin, originating from the Raphe nuclei of the brainstem reticular formation, coordinates sleep-wake transitions. Histamine, produced by tuberomammillary nucleus (TMN) neurons in the posterior hypothalamus, acts as a primary stimulant of wakefulness.",
+              "keyConcept": "Arousal transmitters: Norepinephrine (Locus Coeruleus), Serotonin (Raphe nuclei), Histamine (Tuberomammillary nucleus).",
+              "modelAnswer": "• Norepinephrine: Originates from the Locus Coeruleus.\n• Serotonin: Originates from the Raphe nuclei located within the Reticular formation.\n• Histamine: Originates from the Tuberomamillary neurons in the Posterior Hypothalamus."
+            },
+            {
+              "id": "MCNS2-CH11-PHYS-0048",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Mention factors that activate and inhibit the Reticular Activating System (RAS).",
+              "explanation": "The Reticular Activating System (RAS) is a network of neurons in the brainstem that regulates cortical arousal and wakefulness. It is strongly activated by sensory inputs, particularly pain signals arriving via the spinoreticular tract, and by visual, auditory, and proprioceptive inputs. The RAS is inhibited by sleep-promoting centers, serotonin released during slow-wave sleep from the Raphe nuclei, and by pharmacological agents such as general anesthetics.",
+              "keyConcept": "RAS: Activated by pain/proprioception; Inhibited by serotonin (Raphe nuclei) and general anesthetics.",
+              "modelAnswer": "• Activators: These include pain signals traveling via the Spinoreticular tract and various proprioceptive impulses.\n• Inhibitors: These include general anesthetics and the neurotransmitter Serotonin, which is released from the Raphe nuclei."
+            },
+            {
+              "id": "MCNS2-CH11-PHYS-0049",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Mention types of Dysarthria with causes.",
+              "explanation": "Dysarthria is a motor speech disorder resulting from neurological injury to the muscles or pathways controlling vocalization. Ataxic dysarthria causes scanning, poorly coordinated speech due to cerebellar damage. Spastic dysarthria is characterized by a harsh, strained voice caused by bilateral upper motor neuron (UMN) lesions. Flaccid dysarthria presents as breathy, nasal speech caused by lower motor neuron (LMN) damage to the cranial nerves innervating the speech musculature.",
+              "keyConcept": "Dysarthria types: Ataxic (cerebellar lesion), Spastic (UMN lesion), Flaccid (LMN lesion).",
+              "modelAnswer": "• Ataxic Dysarthria: Lesions in the Cerebellum.\n• Spastic Dysarthria: Upper Motor Neuron (UMN) lesions.\n• Flaccid Dysarthria: Lower Motor Neuron (LMN) lesions."
+            },
+            {
+              "id": "MCNS2-CH11-PHYS-0050",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Mention three functions of the prefrontal association area.",
+              "explanation": "The prefrontal association area, located in the anterior frontal lobe, controls executive function and cognitive behavior. Its main functions include motor planning (coordinating sequential movements with the motor cortex), working memory (retaining and manipulating information in real time), and regulating higher cognitive functions, including social conduct, personality expression, and decision-making.",
+              "keyConcept": "Prefrontal association area functions = motor planning + working memory + executive control of personality/social behavior.",
+              "modelAnswer": "• Motor Planning: Planning of complex sequences of motor movements.\n• Working Memory: Temporary storage of information during intellectual tasks.\n• Higher Functions: Execution of personality, moral judgment, social behavior, and decision-making."
+            },
+            {
+              "id": "MCNS2-CH11-PHYS-0051",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Mention the clinical value of the Electroencephalogram (EEG).",
+              "explanation": "The electroencephalogram (EEG) registers postsynaptic potentials from the cortical surface. Clinically, it is crucial for diagnosing epilepsy by showing paroxysmal spikes and wave patterns during or between seizures. It is also used in polysomnography to evaluate sleep architecture (diagnosing sleep apnea and narcolepsy) and to establish brain death by demonstrating a persistent flat-line (isoelectric) recording.",
+              "keyConcept": "EEG clinical value = epilepsy diagnosis + sleep monitoring + brain death confirmation.",
+              "modelAnswer": "• Diagnosis of Epilepsy: Identifies abnormal electrical activity and helps classify seizure types.\n• Sleep Disorders: Assesses sleep stages and aids in diagnosing conditions like narcolepsy or sleep apnea.\n• Brain Death: Confirms complete absence of cerebral electrical activity."
+            },
+            {
+              "id": "MCNS2-CH11-PHYS-0052",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Mention the functions of the Limbic Association Area.",
+              "explanation": "The limbic association area, located in the orbitofrontal cortex, cingulate gyrus, and anterior temporal lobe, connects the cerebral cortex to the limbic system. It functions to regulate emotional behavior, provide the motivational drive behind actions, and facilitate memory integration by associating emotional valence with long-term memory formation.",
+              "keyConcept": "Limbic association area functions = emotional regulation + motivational drive + emotional memory integration.",
+              "modelAnswer": "• Behavior and Emotion: Regulates emotional responses and social behavior.\n• Motivation: Provides the internal drive to perform tasks.\n• Memory Integration: Links emotions to long-term memory storage."
+            },
+            {
+              "id": "MCNS2-CH11-PHYS-0053",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Define 'Positive Reinforcement' and the clinical result of damage to Exner's Area.",
+              "explanation": "Positive reinforcement is an operant conditioning mechanism where a behavior is strengthened by presenting a rewarding stimulus immediately after the action. Exner's writing area, located in the frontal lobe superior to Broca's area, is responsible for converting linguistic concepts into motor commands for writing. Damage to this area causes agraphia, which is the selective loss of the ability to write while retaining normal motor control of the hand.",
+              "keyConcept": "Definitions: Positive reinforcement (rewarding behavior); Exner's area damage (agraphia/writing loss).",
+              "modelAnswer": "• Positive Reinforcement: The process of encouraging or establishing a behavior by offering a reward when the behavior is performed.\n• Exner's Area Damage: Leads to Agraphia, the inability to write despite normal hand motor function."
+            },
+            {
+              "id": "MCNS2-CH11-PHYS-0054",
+              "type": "essay",
+              "lecture": 1,
+              "text": "List the functions of the Hypothalamus regarding visceral control.",
+              "explanation": "The hypothalamus is the primary integrator of autonomic and endocrine homeostasis. It coordinates core body temperature regulation (via preoptic nuclei), fluid balance and osmolarity (via thirst pathways and antidiuretic hormone release from the supraoptic and paraventricular nuclei), endocrine function (via release of hypophysiotropic hormones into the portal system), and circadian rhythm timing (via the suprachiasmatic nucleus).",
+              "keyConcept": "Hypothalamus homeostatic functions = thermoregulation + osmolarity control + endocrine regulation + circadian rhythms.",
+              "modelAnswer": "• Temperature regulation: Maintains core body temperature.\n• Thirst and water balance: Controls water intake and ADH-mediated water retention.\n• Endocrine control: Regulates anterior pituitary hormone release.\n• Circadian rhythms: Controls sleep-wake cycles via the suprachiasmatic nucleus."
+            },
+            {
+              "id": "MCNS2-CH11-PHYS-0055",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Define Positive Reinforcement and explain its physiological basis.",
+              "explanation": "Positive reinforcement is the process of reinforcing a target behavior by presenting a favorable or rewarding stimulus. The physiological basis of this response is mediated by the mesolimbic dopamine pathway. Dopaminergic projection neurons originating in the ventral tegmental area (VTA) release dopamine into the nucleus accumbens, creating a sense of pleasure and reinforcing the preceding behavior.",
+              "keyConcept": "Positive reinforcement physiology = mesolimbic pathway activation (dopamine release in the nucleus accumbens).",
+              "modelAnswer": "• Definition: Strengthening of a behavior by presenting a rewarding stimulus.\n• Physiological basis: Mediated by the limbic reward system, primarily through dopamine release in the nucleus accumbens."
             }
           ]
         },
@@ -63839,6 +63956,69 @@
               ],
               "correctIndex": 2,
               "modelAnswer": null
+            },
+            {
+              "id": "MCNS2-CH11-PATH-0034",
+              "type": "essay",
+              "lecture": 1,
+              "text": "List neurodegenerative diseases according to the specific brain regions they affect.",
+              "explanation": "Neurodegenerative disorders are characterized by progressive loss of specific subsets of neurons. Alzheimer's and frontotemporal dementia target cortical neurons, causing cognitive decline. Parkinson's and Huntington's affect the basal ganglia, leading to movement disorders. Cerebellar ataxias cause incoordination, and ALS selectively destroys motor neurons in the spinal cord and cortex.",
+              "keyConcept": "Neurodegenerative targeting: Cortex (Alzheimer), Basal ganglia (Parkinson/Huntington), Motor neurons (ALS).",
+              "modelAnswer": "• Cerebral Cortex: Alzheimer's disease and Frontotemporal dementia.\n• Basal Ganglia: Parkinson's disease, Huntington's disease, and Chorea.\n• Cerebellum: Motor ataxia and Spinocerebellar ataxia.\n• Motor Neurons: Amyotrophic lateral sclerosis (ALS)."
+            },
+            {
+              "id": "MCNS2-CH11-PATH-0035",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Describe the pathogenesis and microscopic features of Parkinson's Disease.",
+              "explanation": "Parkinson's disease involves the degeneration of dopamine-producing neurons in the substantia nigra pars compacta, disrupting basal ganglia motor control. Microscopically, affected regions show neuronal depletion, reactive gliosis, and pigment-laden macrophages. The pathognomonic hallmark is the Lewy body, a round, eosinophilic, intracytoplasmic inclusion composed chiefly of aggregated alpha-synuclein.",
+              "keyConcept": "Parkinson pathogenesis = loss of dopaminergic neurons in substantia nigra + alpha-synuclein Lewy bodies.",
+              "modelAnswer": "• Pathogenesis: It is caused by the progressive loss of dopaminergic neurons in the substantia nigra.\n• Microscopic Features: It is characterized by the loss of dopaminergic neurons and gliosis.\n• Key Finding: The presence of Lewy bodies, which are intracytoplasmic eosinophilic inclusions containing alpha-synuclein accumulation."
+            },
+            {
+              "id": "MCNS2-CH11-PATH-0036",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Mention the clinical picture (symptoms) of Parkinson's Disease.",
+              "explanation": "Parkinson's disease presents clinically with a classic triad of resting pill-rolling tremor, cogwheel or lead-pipe rigidity, and bradykinesia (slowness of movement). Patients develop a characteristic stooped posture (flexion attitude) with a shuffling gait, difficulty initiating movements, a mask-like expressionless face, and monotone speech. Tendon reflexes remain normal (normoreflexia).",
+              "keyConcept": "Parkinson signs = resting tremor (pill-rolling) + rigidity + stooped posture/shuffling gait.",
+              "modelAnswer": "• Tremors: Characteristic pill-rolling tremors.\n• Posture and Gait: A flexion attitude (stooped posture) and a shuffling gait.\n• Other Signs: Monotone speech, generalized rigidity, and normoreflexia."
+            },
+            {
+              "id": "MCNS2-CH11-PATH-0037",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Describe the pathogenesis and gross features of Huntington's Disease.",
+              "explanation": "Huntington's disease is an autosomal dominant neurodegenerative disease marked by CAG trinucleotide repeat expansion in the HTT gene, leading to an abnormal polyglutamine tract in the huntingtin protein. This mutant protein aggregates, causing cellular toxicity. Grossly, the brain shows striking, bilateral atrophy of the caudate nucleus and putamen, which causes the lateral ventricles to appear enlarged (hydrocephalus ex vacuo). Frontal lobe cortical atrophy is also common.",
+              "keyConcept": "Huntington pathogenesis = CAG repeats in HTT gene + gross atrophy of caudate/putamen.",
+              "modelAnswer": "• Pathogenesis: It is an autosomal dominant disorder caused by a CAG trinucleotide repeat mutation in the HTT gene on chromosome 4p.\n• Gross Features: The brain is shrunken with marked atrophy of the caudate nucleus and putamen.\n• Cortical Change: Atrophy is also commonly seen in the frontal lobe."
+            },
+            {
+              "id": "MCNS2-CH11-PATH-0038",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Mention the microscopic features of Huntington's Disease.",
+              "explanation": "Microscopically, Huntington's disease is characterized by severe loss of medium spiny projection neurons (which release GABA and substance P) in the caudate and putamen. This neuronal loss is accompanied by marked fibrillary astrogliosis. The diagnostic histopathological finding is the presence of intranuclear inclusions containing aggregated, ubiquitinated huntingtin protein.",
+              "keyConcept": "Huntington histology = loss of striatal GABAergic neurons + ubiquitinated huntingtin intranuclear inclusions.",
+              "modelAnswer": "• Cell Loss: Severe loss of GABA-releasing neurons and associated gliosis.\n• Inclusions: The presence of intranuclear inclusions containing ubiquitinated Huntington protein is diagnostic."
+            },
+            {
+              "id": "MCNS2-CH11-PATH-0039",
+              "type": "essay",
+              "lecture": 1,
+              "text": "What are the characteristics and microscopic features of Medulloblastoma?",
+              "explanation": "Medulloblastoma is a Grade 4 malignant embryonal tumor of the posterior fossa, primarily arising in the cerebellar vermis in children. It is highly cellular and prone to CSF dissemination, but is highly radiosensitive. Microscopically, it consists of small, round, hyperchromatic blue cells with high mitotic activity. The cells characteristically form Homer Wright rosettes, where tumor cells are arranged in a circle around a central core of primitive neuritic processes.",
+              "keyConcept": "Medulloblastoma = Grade 4 pediatric cerebellar tumor + small round blue cells in Homer Wright rosettes.",
+              "modelAnswer": "• Characteristics: It is a highly malignant (Grade 4) embryonal neuroepithelial tumor that is most common in children and is notably radiosensitive.\n• Microscopic Features: It presents with malignant blue cells arranged in Homer Wright rosettes (cells surrounding a central fibrillar space or blood vessels)."
+            },
+            {
+              "id": "MCNS2-CH11-PATH-0040",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Mention the characteristics of Hemangioblastoma.",
+              "explanation": "Hemangioblastoma is a benign, slow-growing Grade 1 vascular neoplasm that typically occurs in the cerebellum or spinal cord. It consists of lipid-rich stromal cells intermingled with a dense network of thin-walled capillaries. Approximately 25-30% of cases are associated with Von Hippel-Lindau (VHL) disease, an autosomal dominant disorder caused by mutations in the VHL tumor suppressor gene on chromosome 3.",
+              "keyConcept": "Hemangioblastoma = Grade 1 vascular tumor associated with Von Hippel-Lindau (VHL) disease.",
+              "modelAnswer": "• Nature: It is a Grade 1, highly vascular tumor of unknown cellular origin.\n• Associations: It is frequently associated with Von Hippel-Lindau (VHL) disease."
             }
           ]
         },
@@ -64553,6 +64733,105 @@
               ],
               "correctIndex": 2,
               "modelAnswer": null
+            },
+            {
+              "id": "MCNS2-CH11-ANAT-0044",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Mention the musculature derivatives of the first pharyngeal arch and their nerve supply.",
+              "explanation": "The first pharyngeal (mandibular) arch gives rise to the muscles of mastication (masseter, temporalis, medial and lateral pterygoid) as well as the mylohyoid, anterior belly of the digastric, tensor tympani, and tensor veli palatini. Because these muscles derive from the first arch, they are all innervated by the mandibular division of the trigeminal nerve (CN V3), which is the nerve of the first arch.",
+              "keyConcept": "First pharyngeal arch derivatives = muscles of mastication + CN V3 innervation.",
+              "modelAnswer": "Muscles of Mastication:\n• Masseter\n• Temporalis\n• Medial pterygoid\n• Lateral pterygoid\nOther Muscles:\n• Tensor tympani\n• Tensor veli palatini\n• Mylohyoid\n• Anterior belly of digastric\nNerve Supply:\n• Mandibular branch of the Trigeminal nerve (V3)"
+            },
+            {
+              "id": "MCNS2-CH11-ANAT-0045",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Mention the musculature derivatives of the second pharyngeal arch and their nerve supply.",
+              "explanation": "The second pharyngeal (hyoid) arch develops into the muscles of facial expression, the stapedius, the stylohyoid, and the posterior belly of the digastric muscle. The facial nerve (CN VII) is the cranial nerve associated with the second pharyngeal arch and thus supplies all of its muscular derivatives.",
+              "keyConcept": "Second pharyngeal arch derivatives = muscles of facial expression + CN VII innervation.",
+              "modelAnswer": "Muscles: Muscles of facial expression :\n• Stapedius, Stylohyoid, and Post. belly of Digastric.\n• Nerve: Facial nerve (CN VII)."
+            },
+            {
+              "id": "MCNS2-CH11-ANAT-0046",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Describe the distribution of the Anterior Cerebral Artery.",
+              "explanation": "The anterior cerebral artery (ACA) is one of the terminal branches of the internal carotid artery. Its cortical branches supply the medial surface of the frontal and parietal lobes (including the motor and sensory cortices for the lower limb), a narrow one-inch strip of the lateral surface along the superior border, and the medial orbital surface of the frontal lobe. Its central (penetrating) branches supply deep structures, including the anterior parts of the basal ganglia and internal capsule.",
+              "keyConcept": "ACA distribution = medial cerebral surface (except occipital lobe) + anterior limb/genu of internal capsule.",
+              "modelAnswer": "Central Branches:\n• Anteromedial set supplying the anterior caudate, lentiform nucleus, and internal capsule (genu and anterior limb).\nCortical Branches:\n• Medial Surface: Supplies the entire medial surface of the cerebral hemisphere except the occipital lobe.\n• Lateral Surface: Supplies a one-inch strip along the superior border.\n• Inferior Surface: Supplies the medial part of the orbital surface."
+            },
+            {
+              "id": "MCNS2-CH11-ANAT-0047",
+              "type": "essay",
+              "lecture": 1,
+              "text": "List the cortical areas supplied by the Anterior Cerebral Artery (ACA).",
+              "explanation": "The cortical distribution of the anterior cerebral artery (ACA) is concentrated on the medial surface of the cerebral hemispheres, running as far back as the parieto-occipital fissure. It also curves over the superior border to supply a thin strip of the dorsolateral hemisphere and runs along the medial orbital surface of the frontal lobe inferiorly.",
+              "keyConcept": "ACA cortical territory = medial hemisphere up to parieto-occipital fissure + superior border strip.",
+              "modelAnswer": "• Medial surface: Supplies the medial surface of the cerebral hemisphere up to the parieto-occipital fissure, (excluding the occipital lobe)\n• Lateral surface: Supplies a narrow strip along the superior border of the lateral surface.\n• Inferior surface: Supplies the medial part of the orbital surface of the frontal lobe."
+            },
+            {
+              "id": "MCNS2-CH11-ANAT-0048",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Mention the blood supply of the Thalamus.",
+              "explanation": "The thalamus receives its arterial supply primarily from branches of the posterior cerebral artery (PCA) and the posterior communicating artery. The posteromedial thalamic territory is supplied by the paramedian branches, while the lateral and posterior territories (including the geniculate bodies) are supplied by the thalamogeniculate arteries. Venous blood from the thalamus drains into the internal cerebral veins via the thalamostriate vein.",
+              "keyConcept": "Thalamic blood supply = PCA branches (posteromedial/posterolateral) + thalamostriate venous drainage.",
+              "modelAnswer": "Arterial Supply:\n• Medial and Anterior Regions: Posteromedial group of the Posterior Cerebral Artery (PCA).\n• Lateral and Posterior Regions: Posterolateral group of the PCA (specifically the Thalamogeniculate artery).\nVenous Drainage:\n• Thalamostriate vein."
+            },
+            {
+              "id": "MCNS2-CH11-ANAT-0049",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Enumerate the secondary brain vesicles and their adult derivatives.",
+              "explanation": "During early embryonic development, the three primary brain vesicles differentiate into five secondary brain vesicles: the telencephalon (becomes the cerebrum/cerebral hemispheres), the diencephalon (becomes the thalamic structures), the mesencephalon (remains the midbrain), the metencephalon (develops into the pons and cerebellum), and the myelencephalon (becomes the medulla oblongata).",
+              "keyConcept": "Secondary brain vesicles = telencephalon, diencephalon, mesencephalon, metencephalon, myelencephalon.",
+              "modelAnswer": "• Telencephalon: Cerebral hemispheres.\n• Diencephalon: Thalamus, Hypothalamus, Epithalamus, and Subthalamus.\n• Mesencephalon: Midbrain.\n• Metencephalon: Pons and Cerebellum.\n• Myelencephalon: Medulla oblongata."
+            },
+            {
+              "id": "MCNS2-CH11-ANAT-0050",
+              "type": "essay",
+              "lecture": 1,
+              "text": "List the important association areas of the cerebral cortex.",
+              "explanation": "Association areas integrate information from multiple sensory and motor modalities to plan complex actions and support cognitive tasks. The prefrontal association area controls planning and working memory, the parieto-occipito-temporal area integrates somatic, visual, and auditory signals for spatial and language functions, and the limbic area regulates emotion, memory, and motivation.",
+              "keyConcept": "Three main association areas = prefrontal (cognition), parieto-occipito-temporal (integration), limbic (emotion).",
+              "modelAnswer": "• Prefrontal Association Area: Located in the anterior part of the frontal lobe.\n• Parieto-Occipito-Temporal Association Area: Located at the junction of the parietal, occipital, and temporal lobes.\n• Limbic Association Area: Located in the anterior temporal pole, ventral frontal lobe, and cingulate gyrus."
+            },
+            {
+              "id": "MCNS2-CH11-ANAT-0051",
+              "type": "essay",
+              "lecture": 1,
+              "text": "List two anatomical connections carried out by the Fornix.",
+              "explanation": "The fornix is the major white matter output pathway of the hippocampal formation and is a key component of the Papez circuit. Its primary projection targets include the mammillary bodies of the hypothalamus (via the postcommissural fornix) and the septal nuclei plus anterior thalamic nuclei (via the precommissural fornix).",
+              "keyConcept": "Fornix connections = hippocampus to mammillary bodies and septal/anterior thalamic nuclei.",
+              "modelAnswer": "• Connects the Hippocampus to the Mammillary bodies of the hypothalamus.\n• Connects the hippocampus to the septal nuclei and anterior thalamic nucleus."
+            },
+            {
+              "id": "MCNS2-CH11-ANAT-0052",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Enumerate the components of the Diencephalon.",
+              "explanation": "The diencephalon is the caudal part of the forebrain, situated between the telencephalon and the midbrain. It surrounds the third ventricle and comprises four anatomical subdivisions: the thalamus (sensory and motor relay), the hypothalamus (visceral and endocrine control), the epithalamus (pineal gland and habenular nuclei), and the subthalamus (associated with basal ganglia motor pathways).",
+              "keyConcept": "Diencephalon divisions = thalamus, hypothalamus, epithalamus, and subthalamus.",
+              "modelAnswer": "The diencephalon consists of four main parts surrounding the third ventricle:\n• Thalamus\n• Hypothalamus\n• Epithalamus\n• Subthalamus"
+            },
+            {
+              "id": "MCNS2-CH11-ANAT-0053",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Mention the nerve supply of the third and fourth/sixth pharyngeal arches.",
+              "explanation": "Each pharyngeal arch develops with its own cranial nerve. The nerve of the third arch is the glossopharyngeal nerve (CN IX), which supplies the stylopharyngeus muscle. The superior laryngeal branch of the vagus nerve (CN X) supplies the fourth arch structures, and the recurrent laryngeal branch of the vagus nerve (CN X) supplies the sixth arch structures.",
+              "keyConcept": "Nerves of 3rd arch = CN IX; 4th and 6th arches = CN X (Vagus).",
+              "modelAnswer": "• 3rd Arch: Glossopharyngeal nerve (CN IX).\n• 4th & 6th Arches: Vagus nerve (CN X)."
+            },
+            {
+              "id": "MCNS2-CH11-ANAT-0054",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Mention the muscular derivative and nerve of the third pharyngeal arch.",
+              "explanation": "The third pharyngeal arch develops a single muscle derivative, the stylopharyngeus, which is responsible for elevating the pharynx during swallowing. The nerve of the third pharyngeal arch is the glossopharyngeal nerve (CN IX), which provides motor innervation to this muscle.",
+              "keyConcept": "3rd pharyngeal arch derivatives = stylopharyngeus muscle + CN IX innervation.",
+              "modelAnswer": "• Muscle: Stylopharyngeus.\n• Nerve: Glossopharyngeal nerve (CN IX)."
             }
           ]
         },
@@ -65041,6 +65320,33 @@
               ],
               "correctIndex": 2,
               "modelAnswer": null
+            },
+            {
+              "id": "MCNS2-CH11-MICR-0029",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Mention the main causative organisms and CSF findings in Acute Bacterial Meningitis.",
+              "explanation": "Acute bacterial meningitis is typically caused by Neisseria meningitidis, Streptococcus pneumoniae, or Haemophilus influenzae (particularly in unvaccinated populations). CSF analysis is diagnostic: the fluid appears turbid/purulent, glucose is low (consumed by bacteria and neutrophils), protein is elevated (blood-brain barrier disruption), and a high count of polymorphonuclear neutrophils (PMNs) is present.",
+              "keyConcept": "Bacterial meningitis CSF = turbid appearance + low glucose + high protein + PMN leukocytosis.",
+              "modelAnswer": "Causative Organisms:\n• Neisseria meningitidis,\n• Streptococcus pneumoniae,\n• Haemophilus influenzae type b.\nCSF Appearance: Turbid or purulent.\n• Markedly decreased Glucose.\n• Highly Elevated Protein,\n• High neutrophil count (Leukocytosis)."
+            },
+            {
+              "id": "MCNS2-CH11-MICR-0030",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Transmission, Pathogenesis and clinical stages of Rabies.",
+              "explanation": "Rabies is a zoonotic rhabdovirus infection transmitted via saliva from animal bites. The virus binds to acetylcholine receptors, replicates in muscle tissue, and ascends retrogradely along peripheral sensory/motor axons to the spinal cord and brain. Once in the CNS, it causes devastating encephalitis. The clinical course progresses through prodromal symptoms (fever, malaise), excitative phase (agitation, hydrophobia, spasms), and a terminal paralytic phase leading to coma and death.",
+              "keyConcept": "Rabies = bite transmission + retrograde axonal transport to CNS + prodromal/excitative (hydrophobia)/paralytic stages.",
+              "modelAnswer": "Transmission:\n• Usually transmitted through the bite of a rabid animal; virus present in saliva.\nPathogenesis:\n• Rabies virus replicates locally and travels along peripheral nerves to the CNS, causing encephalitis.\nStages:\n• Prodromal (fever), Excitative (hydrophobia), and Paralytic (coma)."
+            },
+            {
+              "id": "MCNS2-CH11-MICR-0031",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Mechanism of Tetanus and Botulism toxins.",
+              "explanation": "Tetanospasmin (tetanus toxin) and botulinum toxin are metalloproteases that cleave SNARE proteins (like synaptobrevin), disrupting vesicular neurotransmitter release. Tetanus toxin undergoes retrograde transport to inhibitory interneurons in the spinal cord, blocking GABA and glycine release; this removes inhibition of lower motor neurons, causing spastic paralysis. Botulinum toxin acts locally at the neuromuscular junction, blocking stimulatory acetylcholine release and causing flaccid paralysis.",
+              "keyConcept": "Tetanus = blocks GABA/glycine (spastic paralysis); Botulism = blocks acetylcholine (flaccid paralysis).",
+              "modelAnswer": "• Tetanus: Blocks inhibitory neurotransmitters (GABA/Glycine) leading to spastic paralysis and muscle rigidity.\n• Botulism: Blocks Acetylcholine release leading to flaccid paralysis."
             }
           ]
         },
@@ -66156,6 +66462,186 @@
               ],
               "correctIndex": 3,
               "modelAnswer": null
+            },
+            {
+              "id": "MCNS2-CH11-PHAR-0066",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Explain why local anesthesia is less effective in infected tissues.",
+              "explanation": "Local anesthetics are weak bases (pKa 7.7-9.0) that exist in equilibrium between uncharged (lipid-soluble) and charged (water-soluble) forms. Normal extracellular pH is 7.4, allowing sufficient uncharged drug to cross cell membranes. Infected tissues are acidic (lower pH) due to anaerobic metabolism and inflammatory mediators. This acidity shifts the equilibrium toward the ionized, charged form, which cannot cross the lipid membrane of the nerve axon, dramatically reducing anesthetic efficacy.",
+              "keyConcept": "Acidity of infected tissue (low pH) ionizes local anesthetics, preventing membrane penetration.",
+              "modelAnswer": "• pH Change: Infection/inflammation increases ECF acidity (lower pH).\n• Effect on Drug: Anesthetics (weak bases) become ionized in acidic environments, preventing them from penetrating the nerve membrane.\nOR\n• Repeated infections increase the acidity of the extracellular fluid, which decreases the activity of local anesthetics (e.g., Lidocaine HCL)."
+            },
+            {
+              "id": "MCNS2-CH11-PHAR-0067",
+              "type": "essay",
+              "lecture": 1,
+              "text": "How to manage Neuroleptic Malignant Syndrome (NMS)?",
+              "explanation": "Neuroleptic Malignant Syndrome (NMS) is a life-threatening reaction to dopamine antagonists (antipsychotics). Initial management requires immediate discontinuation of the offending drug. Pharmacotherapy includes dantrolene (a skeletal muscle relaxant acting on ryanodine receptors) or benzodiazepines, alongside dopamine agonists like bromocriptine to restore dopaminergic activity. General supportive measures include intensive physical cooling and IV fluids to prevent acute renal failure from rhabdomyolysis.",
+              "keyConcept": "NMS treatment = stop antipsychotic + dantrolene/bromocriptine + cooling/IV hydration.",
+              "modelAnswer": "• Discontinue the antipsychotic.\n• Administer muscle relaxants (Dantrolene or Diazepam).\n• Dopamine agonists (Bromocriptine).\n• Provide intensive cooling and IV hydration to prevent renal failure."
+            },
+            {
+              "id": "MCNS2-CH11-PHAR-0068",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Rationalize the addition of vasoconstrictors (e.g., Epinephrine) to local anesthesia.",
+              "explanation": "Co-administering a vasoconstrictor like epinephrine with a local anesthetic serves three primary functions: first, it narrows blood vessels, reducing local clearance of the anesthetic and thereby prolonging its duration of action; second, it slows systemic absorption, preventing toxic spikes in plasma concentrations; and third, it induces local hemostasis, reducing bleeding in the surgical field.",
+              "keyConcept": "Vasoconstrictors in local anesthesia = prolonged action + reduced systemic toxicity + localized hemostasis.",
+              "modelAnswer": "• Prolong Duration: Decreases local blood flow, slowing drug removal and increasing the duration of action.\n• Reduce Toxicity: Slower systemic absorption prevents high peak plasma levels, reducing toxicity risk.\n• Hemostasis: Causes local vasoconstriction, which minimizes bleeding at the procedure site.\nOR\n• To Decreases absorption which increases the duration of action\n• To reduces systemic toxicity.\n• To decrease tendency bleeding at the site ."
+            },
+            {
+              "id": "MCNS2-CH11-PHAR-0069",
+              "type": "essay",
+              "lecture": 1,
+              "text": "List the drugs used to prevent Alcohol Abuse relapse and their MOA.",
+              "explanation": "Three primary drugs are used to maintain sobriety in alcohol-dependent patients. Disulfiram is an aldehyde dehydrogenase inhibitor that causes accumulation of toxic acetaldehyde if alcohol is consumed, producing a severe, unpleasant reaction (flushing, nausea). Naltrexone is a mu-opioid receptor antagonist that blocks the endogenous opioid reward loop triggered by alcohol, reducing cravings and pleasure. Acamprosate is a structural analog of GABA that stabilizes glutamate and GABA transmission to reduce withdrawal cravings.",
+              "keyConcept": "Alcohol relapse drugs = disulfiram (aldehyde dehydrogenase inhibitor), naltrexone (opioid antagonist), acamprosate (glutamate/GABA stabilizer).",
+              "modelAnswer": "• Disulfiram: Inhibits aldehyde dehydrogenase, Causes unpleasant reactions\n• Naltrexone: An opioid receptor antagonist that reduces the rewarding effects of alcohol.\n• Acamprosate: Balance glutamate/GABA to decrease alcohol cravings."
+            },
+            {
+              "id": "MCNS2-CH11-PHAR-0070",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Why is antiepileptic monotherapy preferred over combination (poly) therapy?",
+              "explanation": "Antiepileptic monotherapy is preferred to minimize drug-drug interactions, as many antiepileptics are potent hepatic cytochrome P450 enzyme inducers (e.g., carbamazepine, phenytoin, phenobarbital) or inhibitors (e.g., valproate). Monotherapy also simplifies the dosing regimen, enhances patient compliance, reduces cumulative dose-related side effects, and avoids additive pharmacodynamic toxicity.",
+              "keyConcept": "Antiepileptic monotherapy = minimal drug interactions + simplified dosing + less toxicity.",
+              "modelAnswer": "• Drug Interactions:\n• To avoid complex drug-drug interactions, as antiepileptics are often enzyme inducers or inhibitors."
+            },
+            {
+              "id": "MCNS2-CH11-PHAR-0071",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Mention the clinical uses of Sodium Bicarbonate (NaHCO3) in CNS emergencies.",
+              "explanation": "In tricyclic antidepressant (TCA) overdose, sodium bicarbonate is administered to alkalinize the blood (target pH 7.45-7.55). This increases extracellular sodium concentrations and reduces TCA binding to cardiac voltage-gated sodium channels, reversing life-threatening ventricular arrhythmias. For local anesthetics, sodium bicarbonate raises the pH of the anesthetic solution, shifting the equilibrium to increase the non-ionized lipid-soluble drug fraction, enabling faster nerve membrane penetration and quicker onset.",
+              "keyConcept": "Sodium bicarbonate uses = reverses TCA cardiotoxicity + accelerates local anesthetic onset.",
+              "modelAnswer": "• TCA Toxicity: Alkalinizes blood to prevent cardiac arrhythmias by stabilizing sodium channels.\n• Local Anesthesia: Increases non-ionized fraction of the drug for faster onset and better efficacy."
+            },
+            {
+              "id": "MCNS2-CH11-PHAR-0072",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Complete the following pharmacological statements regarding drug choices:\n1. Antidepressant used for Nocturnal Enuresis\n2. Antidepressant used for Urinary Incontinence\n3. Oral drug to improve walking speed in Multiple Sclerosis and its mechanism",
+              "explanation": "Imipramine, a tricyclic antidepressant (TCA), is used off-label for nocturnal enuresis in children due to its anticholinergic and norepinephrine reuptake inhibitor effects, which contract the bladder detrusor. Duloxetine, a serotonin-norepinephrine reuptake inhibitor (SNRI), is used for stress urinary incontinence because it increases pudendal motor nerve activity to tighten the external urethral sphincter. Fampridine is a potassium channel blocker that improves walking speed in Multiple Sclerosis by restoring action potential conduction in demyelinated axons.",
+              "keyConcept": "Clinical uses: Imipramine (nocturnal enuresis), Duloxetine (stress incontinence), Fampridine (MS walking; K+ channel blocker).",
+              "modelAnswer": "1. Antidepressant used for Nocturnal Enuresis: Imipramine.\n2. Antidepressant used for Urinary Incontinence: Duloxetine.\n3. Oral drug to improve walking speed in Multiple Sclerosis: Fampridine (dalfampridine), which acts through Potassium (K+) channel inhibition."
+            },
+            {
+              "id": "MCNS2-CH11-PHAR-0073",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Compare Typical and Atypical Antipsychotics regarding side effects and efficacy.",
+              "explanation": "Typical antipsychotics (e.g., haloperidol) are high-affinity dopamine D2 receptor antagonists, making them highly effective for positive symptoms (hallucinations, delusions) but associated with a high risk of extrapyramidal side effects (EPS) like dystonia, akathisia, parkinsonism, and tardive dyskinesia. Atypical antipsychotics (e.g., clozapine, olanzapine) block D2 and serotonin 5-HT2A receptors, show superior efficacy in treating negative symptoms (apathy, flat affect), and have a lower EPS risk, though they carry a significant risk of metabolic syndrome (weight gain, dyslipidemia, diabetes).",
+              "keyConcept": "Antipsychotics: Typical = positive symptoms + high EPS; Atypical = negative symptoms + lower EPS + metabolic syndrome risk.",
+              "modelAnswer": "(A) Side effects:\n• Typical antipsychotics have a high risk of extrapyramidal side effects (EPS).\n• Atypical antipsychotics (e.g. Clozapine) have a lower risk of EPS but are associated with metabolic side effects (weight gain, diabetes).\n(B) Efficacy:\n• Typical antipsychotics are more effective for positive symptoms of schizophrenia.\n• Atypical antipsychotics are more effective for negative symptoms (social withdrawal, apathy)."
+            },
+            {
+              "id": "MCNS2-CH11-PHAR-0074",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Advantages of Atypical over Typical Antipsychotics.",
+              "explanation": "Atypical antipsychotics are generally preferred over typical first-generation antipsychotics due to their broader therapeutic profile. By acting as weak D2 antagonists and strong 5-HT2A antagonists, they significantly decrease the occurrence of motor side effects (extrapyramidal symptoms) and hyperprolactinemia, while showing improved efficacy against the cognitive and negative symptoms of schizophrenia.",
+              "keyConcept": "Atypical antipsychotics benefit = reduced EPS risk + better negative/cognitive symptom control.",
+              "modelAnswer": "• Less extrapyramidal side effects and more efficacy in treating negative symptoms."
+            },
+            {
+              "id": "MCNS2-CH11-PHAR-0075",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Mention the specific pharmacotherapy for Multiple Sclerosis walking impairment and its mechanism.",
+              "explanation": "Walking impairment in Multiple Sclerosis is caused by demyelination, which exposes voltage-gated potassium channels and causes leakage of potassium ions, preventing proper action potential propagation. Fampridine (4-aminopyridine) is a broad-spectrum blocker of these potassium channels. By inhibiting potassium efflux, it restores action potential amplitude and conduction velocity in demyelinated axons, improving motor function and walking speed.",
+              "keyConcept": "MS walking treatment = Fampridine (blocks potassium channels to restore action potential propagation).",
+              "modelAnswer": "• Drug: Fampridine (Dalfampridine)\n• Mechanism: Blocks potassium (K+) channels, improving nerve conduction in demyelinated axons and enhancing walking ability."
+            },
+            {
+              "id": "MCNS2-CH11-PHAR-0076",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Mention clinical uses of antidepressants other than for depression.",
+              "explanation": "Antidepressants have multiple clinical indications outside of depressive disorders. Tricyclic antidepressants (TCAs like imipramine) are used for pediatric nocturnal enuresis (bedwetting) and chronic neuropathic pain (diabetic neuropathy, postherpetic neuralgia). SNRIs like duloxetine are approved for stress urinary incontinence (contracting the urethral sphincter) and for treating fibromyalgia and musculoskeletal pain.",
+              "keyConcept": "Non-depression antidepressant uses = nocturnal enuresis (imipramine), stress incontinence (duloxetine), neuropathic pain (TCAs).",
+              "modelAnswer": "• Nocturnal Enuresis: Managed with Imipramine (TCA).\n• Urinary Incontinence: Managed with Duloxetine (SNRI).\n• Neuropathic Pain: Managed with TCAs or NDRIs."
+            },
+            {
+              "id": "MCNS2-CH11-PHAR-0077",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Explain the management protocol for Lithium (Li) toxicity.",
+              "explanation": "Lithium has a narrow therapeutic index (0.6-1.2 mEq/L) and is primarily cleared by the kidneys. If toxicity occurs, the drug must be discontinued immediately. Supportive therapy includes aggressive IV hydration with normal saline to restore glomerular filtration and enhance lithium excretion. For severe toxicity (levels >4.0 mEq/L, or >2.5 mEq/L in the presence of severe neurological symptoms or renal failure), hemodialysis is the definitive method of clearance.",
+              "keyConcept": "Lithium toxicity protocol = stop lithium + saline IV hydration + hemodialysis for severe cases.",
+              "modelAnswer": "• Stop Lithium administration immediately.\n• Increase fluid intake.\n• Perform Hemodialysis for severe cases."
+            },
+            {
+              "id": "MCNS2-CH11-PHAR-0078",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Why are Valproate and Phenytoin particularly avoided in female patients?",
+              "explanation": "Valproate and phenytoin are antiepileptic drugs with side effect profiles that make them problematic for female patients. Valproate can cause endocrine dysfunction, notably polycystic ovary syndrome (PCOS), insulin resistance, weight gain, hirsutism, alopecia, and is highly teratogenic (causing neural tube defects). Phenytoin produces cosmetically undesirable side effects including gingival hyperplasia, hirsutism, acne, and coarse facial features.",
+              "keyConcept": "Avoid in females: Valproate (PCOS, teratogenicity, weight gain); Phenytoin (gingival hyperplasia, hirsutism, acne).",
+              "modelAnswer": "Avoided due to there effects-\n• Valproate: Associated with Polycystic Ovary Syndrome (PCOS), hair loss (alopecia), and weight gain.\n• Phenytoin: Causes cosmetic side effects like Hirsutism, acne, and Gingival Hyperplasia (gum overgrowth)."
+            },
+            {
+              "id": "MCNS2-CH11-PHAR-0079",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Rationalize why Gentamicin is only used in the first line for 7-10 days.",
+              "explanation": "Gentamicin is an aminoglycoside antibiotic with a narrow therapeutic range. It accumulates in the renal cortex and endolymph of the inner ear, leading to nephrotoxicity (acute tubular necrosis) and ototoxicity (vestibular and cochlear damage). To minimize these severe, cumulative toxicities, its first-line use is strictly limited to 7-10 days under therapeutic drug monitoring.",
+              "keyConcept": "Gentamicin restriction (7-10 days) = avoids cumulative nephrotoxicity and ototoxicity.",
+              "modelAnswer": "• Gentamicin is highly nephrotoxic and ototoxic; prolonged use beyond 7-10 days significantly increases the risk of irreversible kidney damage and permanent hearing loss."
+            },
+            {
+              "id": "MCNS2-CH11-PHAR-0080",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Rationalize the preference for Liposomal Amphotericin B over ordinary Amphotericin B in Candida Meningitis.",
+              "explanation": "Amphotericin B deoxycholate (ordinary formulation) is highly nephrotoxic and causes severe infusion-related reactions (fever, chills). Liposomal amphotericin B encapsulates the drug in lipid vesicles, which limits kidney uptake and reduces systemic toxicity. In Candida meningitis, the liposomal formulation is preferred because it penetrates the blood-brain barrier and achieves higher therapeutic concentrations in the brain parenchyma and cerebrospinal fluid.",
+              "keyConcept": "Liposomal Amphotericin B advantages = lower nephrotoxicity + enhanced CNS/CSF penetration.",
+              "modelAnswer": "• Reduced Toxicity: Liposomal formulation decreases infusion-related reactions and nephrotoxicity.\n• Better CNS Penetration: Achieves higher concentrations in the CNS with fewer systemic side effects."
+            },
+            {
+              "id": "MCNS2-CH11-PHAR-0081",
+              "type": "essay",
+              "lecture": 1,
+              "text": "List antibiotics that poorly cross the blood-brain barrier (BBB) and must be injected intrathecally.",
+              "explanation": "Polar, hydrophilic antibiotics like aminoglycosides (gentamicin) and glycopeptides (vancomycin) have poor lipid solubility and do not cross the intact blood-brain barrier in therapeutic concentrations. To treat ventricular or meningeal infections caused by resistant organisms, these drugs must be administered intrathecally or intraventricularly. Penicillins are strictly contraindicated for intrathecal injection as they can cause severe, fatal neurotoxicity (seizures).",
+              "keyConcept": "Intrathecal injection = aminoglycosides (gentamicin) and vancomycin; Penicillins are neurotoxic and contraindicated.",
+              "modelAnswer": "Injectable Intrathecally:\n• Aminoglycosides (e.g., Gentamicin)\n• Vancomycin when the BBB is intact.\n• Contraindicated Intrathecally: Penicillins."
+            },
+            {
+              "id": "MCNS2-CH11-PHAR-0082",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Explain the drug choices for Amyotrophic Lateral Sclerosis (ALS) and Multiple Sclerosis (MS) walking improvement.",
+              "explanation": "Riluzole is used in ALS to slow disease progression and extend survival. Its mechanism involves blocking voltage-gated sodium channels, which decreases presynaptic glutamate release and protects motor neurons from excitotoxicity. Fampridine is used in MS to improve walking ability; it blocks voltage-gated potassium channels, which stops potassium leakage in demyelinated fibers and enhances action potential conduction.",
+              "keyConcept": "Neurodegenerative drugs: Riluzole (ALS, Na+ channel blocker, slows progression); Fampridine (MS, K+ channel blocker, improves walking).",
+              "modelAnswer": "• ALS: Riluzole - Sodium (Na+) channel blocker that slows disease progression.\n• MS: Fampridine (Dalfampridine) - Potassium (K+) channel blocker used to improve walking speed."
+            },
+            {
+              "id": "MCNS2-CH11-PHAR-0083",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Why is Sevoflurane preferred for inhalation anesthesia induction in children?",
+              "explanation": "Sevoflurane is an inhalational anesthetic with a low blood-gas partition coefficient (0.65), which allows for rapid induction and recovery. In children, it is preferred for mask induction because it lacks a pungent odor and is completely non-irritating to the respiratory tract, avoiding laryngospasm, coughing, breath-holding, or excessive secretions.",
+              "keyConcept": "Sevoflurane in children = rapid, smooth mask induction due to non-irritant respiratory profile.",
+              "modelAnswer": "• Sevoflurane is non-irritating, allowing for smooth, rapid induction without causing breath-holding or coughing."
+            },
+            {
+              "id": "MCNS2-CH11-PHAR-0084",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Mention the first-line therapy for Mucormycosis.",
+              "explanation": "Mucormycosis is a highly aggressive, angioinvasive fungal infection. The first-line medical therapy is high-dose liposomal amphotericin B, which has strong fungicidal activity against Mucorales. Successful treatment also mandates prompt, aggressive surgical debridement of all necrotic tissues, alongside control of predisposing risk factors (such as diabetic ketoacidosis or immunosuppression).",
+              "keyConcept": "Mucormycosis treatment = Liposomal Amphotericin B + urgent surgical debridement.",
+              "modelAnswer": "• Liposomal Amphotericin B is the treatment of choice, often combined with surgical debridement of infected tissue."
+            },
+            {
+              "id": "MCNS2-CH11-PHAR-0085",
+              "type": "essay",
+              "lecture": 1,
+              "text": "Complete the following pharmacological statements regarding drug mechanisms:\n1. a4b2 partial agonist used for smoking cessation.\n2. Inhibitor of aldehyde dehydrogenase used for alcohol management.\n3. Substance added to local anesthesia to decrease ECF acidity.\n4. Factor that increases ECF acidity and decreases local anesthetic activity.",
+              "explanation": "Varenicline acts as a partial agonist at alpha-4-beta-2 nicotinic acetylcholine receptors, reducing nicotine withdrawal and rewarding effects. Disulfiram deters alcohol consumption by inhibiting aldehyde dehydrogenase, which causes unpleasant acetaldehyde accumulation. Sodium bicarbonate alkalinizes local anesthetic solutions to increase the non-ionized fraction. In contrast, local tissue infection and inflammation increase acidity (lower pH), increasing the ionized fraction of the anesthetic and reducing its efficacy.",
+              "keyConcept": "Key mechanisms: Varenicline (nicotinic partial agonist), Disulfiram (aldehyde dehydrogenase inhibitor), NaHCO3 (increases pH), Infection (decreases pH).",
+              "modelAnswer": "A) Varenicline is an a4b2 partial agonist used for smoking cessation.\nB) Disulfiram inhibits the aldehyde dehydrogenase enzyme, increasing acetaldehyde levels for alcohol management.\nC) Sodium Bicarbonate (NaHCO3) is added to local anesthesia to decrease ECF acidity and increase drug activity.\nD) Infection (Inflammation) increases EC acidity, which decreases the activity of local anesthetics like Lidocaine HCl."
             }
           ]
         },
