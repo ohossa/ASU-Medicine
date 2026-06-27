@@ -441,11 +441,20 @@ export function MatchingQuestion({
 
         const sideBySide = tr.left > pr.right;
 
+        // Apply a small 1.5px overlap offset to prevent rendering gaps at the card borders
         rects.push({
-          x1: sideBySide ? pr.right - containerRect.left : pr.left + pr.width / 2 - containerRect.left,
-          y1: sideBySide ? pr.top + pr.height / 2 - containerRect.top : pr.bottom - containerRect.top,
-          x2: sideBySide ? tr.left - containerRect.left : tr.left + tr.width / 2 - containerRect.left,
-          y2: sideBySide ? tr.top + tr.height / 2 - containerRect.top : tr.top - containerRect.top,
+          x1: sideBySide
+            ? pr.right - containerRect.left - 1.5
+            : pr.left + pr.width / 2 - containerRect.left,
+          y1: sideBySide
+            ? pr.top + pr.height / 2 - containerRect.top
+            : pr.bottom - containerRect.top - 1.5,
+          x2: sideBySide
+            ? tr.left - containerRect.left + 1.5
+            : tr.left + tr.width / 2 - containerRect.left,
+          y2: sideBySide
+            ? tr.top + tr.height / 2 - containerRect.top
+            : tr.top - containerRect.top + 1.5,
           correct: submitted ? scrambled[targetIdx] === pairs[i].target : true,
           sideBySide,
           key: `${i}-${targetIdx}`,
@@ -453,9 +462,26 @@ export function MatchingQuestion({
       }
       setConnectors(rects);
     };
+
     compute();
+
+    // Recalculate coordinates during transitions/animations to ensure paths align perfectly with the centers of moving cards
+    const timer50 = setTimeout(compute, 50);
+    const timer150 = setTimeout(compute, 150);
+    const timer300 = setTimeout(compute, 300);
+    const timer500 = setTimeout(compute, 500);
+
     window.addEventListener('resize', compute, { passive: true });
-    return () => window.removeEventListener('resize', compute);
+    window.addEventListener('scroll', compute, { capture: true, passive: true });
+
+    return () => {
+      clearTimeout(timer50);
+      clearTimeout(timer150);
+      clearTimeout(timer300);
+      clearTimeout(timer500);
+      window.removeEventListener('resize', compute);
+      window.removeEventListener('scroll', compute);
+    };
   }, [matches, pairs, scrambled, submitted]);
 
   /* ─── render ─── */
