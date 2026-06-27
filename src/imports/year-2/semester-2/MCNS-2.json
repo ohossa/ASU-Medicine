@@ -55762,7 +55762,7 @@
               "type": "matching",
               "lecture": 1,
               "text": "Match each structure in left column with its appropriate pharyngeal arch in right column",
-              "explanation": "Sphenomandibular ligament - 1st pharyngeal arch. Facial nerve - 2nd pharyngeal arch. Buccinator muscle - 2nd pharyngeal arch. Stylohyoid ligament - 2nd pharyngeal arch. Stapedius muscle - 4th pharyngeal arch.",
+              "explanation": "Sphenomandibular ligament - 1st pharyngeal arch. Facial nerve - 2nd pharyngeal arch. Buccinator muscle - 2nd pharyngeal arch. Stylohyoid ligament - 2nd pharyngeal arch. Stapedius muscle - 2nd pharyngeal arch.",
               "keyConcept": "Matching Match each structure in left column with its appropriate pharyngeal arch in right column",
               "pairs": [
                 {
@@ -55783,7 +55783,7 @@
                 },
                 {
                   "premise": "Stapedius muscle.",
-                  "target": "4th pharyngeal arch."
+                  "target": "2nd pharyngeal arch."
                 }
               ]
             },
