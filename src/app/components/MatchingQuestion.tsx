@@ -483,15 +483,15 @@ export function MatchingQuestion({
         style={{ width: '100%', height: '100%' }}
       >
         <defs>
-          <linearGradient id="active-line-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+          <linearGradient id="active-line-grad" gradientUnits="userSpaceOnUse" x1="0%" y1="0%" x2="100%" y2="0%">
             <stop offset="0%" stopColor="var(--subject-accent, #3b82f6)" />
             <stop offset="100%" stopColor="var(--subject-glow, #8b5cf6)" />
           </linearGradient>
-          <linearGradient id="correct-line-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+          <linearGradient id="correct-line-grad" gradientUnits="userSpaceOnUse" x1="0%" y1="0%" x2="100%" y2="0%">
             <stop offset="0%" stopColor="#10b981" />
             <stop offset="100%" stopColor="#059669" />
           </linearGradient>
-          <linearGradient id="wrong-line-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+          <linearGradient id="wrong-line-grad" gradientUnits="userSpaceOnUse" x1="0%" y1="0%" x2="100%" y2="0%">
             <stop offset="0%" stopColor="#f43f5e" />
             <stop offset="100%" stopColor="#dc2626" />
           </linearGradient>
