@@ -26,3 +26,10 @@
   - Vitest routing tests: `npx vitest run src/app/import-routing.test.ts`
   - Special Senses module tests: `npx vitest run src/app/special-senses.test.ts`
   - Bank JSON schema validator: `npx tsx data-format-v2/scripts/validate-banks.ts`
+
+---
+
+## Git & Release Rules
+
+- **Git Push Constraint**: Do **NOT** push commits to GitHub (e.g., via `git push`) unless the user explicitly tells you to do so. You may commit changes locally, but pushing must be requested or approved by the user first.
+
