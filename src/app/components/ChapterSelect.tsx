@@ -323,7 +323,7 @@ export function ChapterSelect({
     return (
       <article
         onClick={() => onSelectChapter(mCh)}
-        className="cs-enter group relative overflow-hidden bg-gradient-to-r from-card to-secondary/30 border border-border dark:border-white/[0.06] backdrop-blur-xl rounded-[28px] p-6 sm:p-8 transition-all duration-300 hover:scale-[1.01] hover:-translate-y-1 hover:border-gray-300 dark:hover:border-white/[0.14] mb-6 cursor-pointer"
+        className="cs-enter group relative overflow-hidden bg-gradient-to-r from-card to-secondary/30 border border-border dark:border-white/[0.06] glass-panel rounded-[28px] p-6 sm:p-8 transition-all duration-300 hover:scale-[1.01] hover:-translate-y-1 hover:border-gray-300 dark:hover:border-white/[0.14] mb-6 cursor-pointer"
         style={{ animationDelay: '100ms' }}
       >
         <div
@@ -390,7 +390,7 @@ export function ChapterSelect({
       <article
         key={chapter.id}
         onClick={() => onSelectChapter(chapter)}
-        className="cs-enter group relative overflow-hidden bg-card border border-border dark:border-white/[0.06] backdrop-blur-xl rounded-[28px] p-6 transition-all duration-300 hover:scale-[1.015] hover:-translate-y-2 hover:border-gray-300 dark:hover:border-white/[0.14] cursor-pointer"
+        className="cs-enter group relative overflow-hidden bg-card border border-border dark:border-white/[0.06] glass-panel rounded-[28px] p-6 transition-all duration-300 hover:scale-[1.015] hover:-translate-y-2 hover:border-gray-300 dark:hover:border-white/[0.14] cursor-pointer"
         style={{ animationDelay: `${120 + index * 70}ms` }}
       >
         {/* Corner gradient accent */}
@@ -586,7 +586,7 @@ export function ChapterSelect({
 
             {/* Legend */}
             <section
-              className="cs-enter mt-8 rounded-[28px] border border-border dark:border-white/[0.06] bg-card p-5 backdrop-blur-xl"
+              className="cs-enter mt-8 rounded-[28px] border border-border dark:border-white/[0.06] bg-card p-5 glass-panel"
               style={{ animationDelay: `${160 + chapters.length * 70}ms` }}
             >
               <h4 className="mb-3 flex items-center gap-1.5 text-xs font-semibold text-muted-foreground dark:text-white/60">
@@ -606,7 +606,7 @@ export function ChapterSelect({
 
           {/* ---------------- History sidebar ---------------- */}
           <aside className="cs-enter" style={{ animationDelay: '200ms' }}>
-            <div className="rounded-[28px] border border-border dark:border-white/[0.06] bg-card p-5 backdrop-blur-xl lg:sticky lg:top-6">
+            <div className="rounded-[28px] border border-border dark:border-white/[0.06] bg-card p-5 glass-panel lg:sticky lg:top-6">
               <div className="mb-4 flex items-center justify-between">
                 <h4 className="flex items-center gap-1.5 text-xs font-semibold text-muted-foreground dark:text-white/60">
                   <Award size={14} className="text-biochem" />

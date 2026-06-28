@@ -336,7 +336,7 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart, 
           initial={{ opacity: 0, y: -12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ type: 'spring', stiffness: 260, damping: 26 }}
-          className={`sticky top-3 z-20 mb-8 flex items-center gap-3 rounded-2xl border bg-card/85 px-3 py-2.5 backdrop-blur-xl border-border dark:${accent.border}`}
+          className={`sticky top-3 z-20 mb-8 flex items-center gap-3 rounded-2xl border bg-card/85 px-3 py-2.5 glass-panel border-border dark:${accent.border}`}
         >
           <button
             type="button"
@@ -391,7 +391,7 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart, 
             </div>
           </div>
 
-          <div className={`flex items-center gap-5 rounded-2xl border px-5 py-3 border-border dark:${accent.border} bg-card dark:bg-white/[0.02] backdrop-blur-xl`}>
+          <div className={`flex items-center gap-5 rounded-2xl border px-5 py-3 border-border dark:${accent.border} bg-card dark:bg-white/[0.02] glass-panel`}>
             <div className="text-center">
               <p className={`text-lg font-bold tabular-nums ${accent.text}`}>{chapter.subjects.length}</p>
               <p className="text-[10px] text-muted-foreground dark:text-white/45">{label('subjects')}</p>
@@ -441,7 +441,7 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart, 
                       onSelectSubject(subject, subject.questions);
                     }
                   }}
-                  className={`group relative flex flex-col text-start bg-card dark:bg-white/[0.02] border border-border dark:border-white/[0.06] backdrop-blur-xl rounded-[28px] p-6 transition-colors ${
+                  className={`group relative flex flex-col text-start bg-card dark:bg-white/[0.02] border border-border dark:border-white/[0.06] glass-panel rounded-[28px] p-6 transition-colors ${
                     isActive ? 'hover:border-gray-300 dark:hover:border-white/20 cursor-pointer' : 'cursor-not-allowed opacity-50 saturate-50'
                   }`}
                 >
@@ -532,7 +532,7 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart, 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ type: 'spring', stiffness: 220, damping: 26, delay: 0.25 }}
-            className="mt-8 flex flex-wrap items-center justify-between gap-4 bg-card dark:bg-white/[0.02] border border-border dark:border-white/[0.06] backdrop-blur-xl rounded-3xl p-6"
+            className="mt-8 flex flex-wrap items-center justify-between gap-4 bg-card dark:bg-white/[0.02] border border-border dark:border-white/[0.06] glass-panel rounded-3xl p-6"
           >
             <div className="flex items-center gap-3.5">
               <span className={`flex h-11 w-11 items-center justify-center rounded-2xl ${accent.softBg}`}>
