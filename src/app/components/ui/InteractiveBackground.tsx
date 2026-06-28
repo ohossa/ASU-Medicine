@@ -147,6 +147,7 @@ const MOOD_TINT: Record<string, string> = {
    ============================================================ */
 // Global layout configurations adjusted dynamically inside InteractiveBackground
 let isMobile = false;
+let disablePointerFX = false;
 let currentMaxNodes = 38;
 let currentBlobPoints = 8;
 let currentLayerDef = [
@@ -274,8 +275,14 @@ export function InteractiveBackground() {
     const canvas = canvasRef.current;
     if (!canvas) return;
 
-    // Detect mobile screen state at mount
-    isMobile = window.innerWidth < 768;
+    // Detect mobile/touch-only screen state at mount
+    const isTouch = typeof window !== 'undefined' && (
+      'ontouchstart' in window ||
+      navigator.maxTouchPoints > 0 ||
+      window.matchMedia('(pointer: coarse)').matches
+    );
+    isMobile = window.innerWidth < 768 || isTouch;
+    disablePointerFX = isTouch;
     currentBlobPoints = isMobile ? 6 : 8;
     currentLayerDef = isMobile
       ? [
@@ -396,9 +403,11 @@ export function InteractiveBackground() {
       }
     };
 
-    window.addEventListener('pointermove', handlePointerMove, { passive: true });
-    window.addEventListener('pointerleave', handlePointerLeave, { passive: true });
-    window.addEventListener('pointerdown', handlePointerDown, { passive: true });
+    if (!disablePointerFX) {
+      window.addEventListener('pointermove', handlePointerMove, { passive: true });
+      window.addEventListener('pointerleave', handlePointerLeave, { passive: true });
+      window.addEventListener('pointerdown', handlePointerDown, { passive: true });
+    }
 
     /* ============================================================
        DENDRITES & BIO-ELECTRIC PULSES
@@ -607,9 +616,11 @@ export function InteractiveBackground() {
 
     return () => {
       window.removeEventListener('resize', resize);
-      window.removeEventListener('pointermove', handlePointerMove);
-      window.removeEventListener('pointerleave', handlePointerLeave);
-      window.removeEventListener('pointerdown', handlePointerDown);
+      if (!disablePointerFX) {
+        window.removeEventListener('pointermove', handlePointerMove);
+        window.removeEventListener('pointerleave', handlePointerLeave);
+        window.removeEventListener('pointerdown', handlePointerDown);
+      }
       rmQuery.removeEventListener('change', handleReducedMotionChange);
       cancelAnimationFrame(animationFrameId);
     };
