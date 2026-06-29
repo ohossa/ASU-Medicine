@@ -23,6 +23,7 @@ import { useLanguage } from '../hooks/useLanguage';
 import { useTheme } from '../hooks/useTheme';
 import { celebrate } from '../lib/celebrate';
 import { pulse } from '../lib/pulseEngine';
+import { FormattedAnswer } from './FormattedAnswer';
 import { useProgress } from '../hooks/useProgress';
 import { MatchingQuestion } from './MatchingQuestion';
 
@@ -335,7 +336,7 @@ export function ResultsDashboard({
             <p className="mb-2 flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-emerald-600 dark:text-emerald-400">
               <CheckCircle2 size={14} /> Reference Model Answer
             </p>
-            <p className="text-sm leading-relaxed text-gray-700 dark:text-white/75">{q.modelAnswer}</p>
+            <FormattedAnswer text={q.modelAnswer} />
           </div>
         )}
         <span
@@ -502,7 +503,7 @@ export function ResultsDashboard({
                 {sq.modelAnswer && (
                   <div className="rounded-lg border border-emerald-500/15 bg-emerald-500/[0.01] dark:bg-emerald-500/[0.02] p-3 text-xs leading-relaxed text-gray-600 dark:text-white/70">
                     <span className="font-semibold text-emerald-600 dark:text-emerald-400 block mb-1">Reference Answer:</span>
-                    {sq.modelAnswer}
+                    <FormattedAnswer text={sq.modelAnswer} />
                   </div>
                 )}
               </div>

@@ -12,6 +12,7 @@ import { SYLLABUS_MODULES, getChaptersForModuleAndMode, isModuleActive } from ".
 import { toggleFlaggedQuestion, getFlaggedQuestions } from "../utils/storage";
 import type { Question } from "../types";
 import { useTheme } from "../hooks/useTheme";
+import { FormattedAnswer } from "./FormattedAnswer";
 
 /* ------------------------------------------------------------------ */
 /* Types & data                                                        */
@@ -388,7 +389,7 @@ export function QuestionSearch({ onBack, userButton }: QuestionSearchProps) {
                                 animate={{ opacity: 1 }}
                                 className="mt-4 rounded-xl px-4 py-3 text-[14px] leading-relaxed text-emerald-800 dark:text-emerald-100 border border-emerald-500/30 bg-emerald-500/[0.05] dark:bg-emerald-500/[0.07]"
                               >
-                                <Highlight text={qAnswerText(q)} query={query} />
+                                <FormattedAnswer text={qAnswerText(q)} query={query} />
                               </motion.div>
                             )}
 
@@ -396,7 +397,9 @@ export function QuestionSearch({ onBack, userButton }: QuestionSearchProps) {
                             {isRevealed && q.explanation && (
                               <div className="mt-3 flex gap-2 rounded-xl bg-gray-50 dark:bg-white/[0.03] border border-gray-200 dark:border-transparent px-4 py-3 text-[13px] leading-relaxed text-gray-600 dark:text-neutral-400">
                                 <HelpCircle size={14} className="mt-0.5 shrink-0 text-gray-400 dark:text-neutral-500" />
-                                <p>{q.explanation}</p>
+                                <div className="flex-1">
+                                  <FormattedAnswer text={q.explanation} query={query} />
+                                </div>
                               </div>
                             )}
 

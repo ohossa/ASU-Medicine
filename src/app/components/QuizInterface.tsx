@@ -32,6 +32,7 @@ import { MatchingQuestion } from './MatchingQuestion';
 import { useQuizEngine } from '../hooks/useQuizEngine';
 import { useHintSystem } from '../hooks/useHintSystem';
 import { AIChatPanel } from './AIChatPanel';
+import { FormattedAnswer } from './FormattedAnswer';
 
 interface Props {
   chapter: ChapterData;
@@ -705,7 +706,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                 {t('modelAnswerReference') || "Reference Answer"}
               </span>
             </div>
-            <p className="text-xs text-gray-700 dark:text-white/80 leading-relaxed whitespace-pre-wrap">{question.modelAnswer}</p>
+            <FormattedAnswer text={question.modelAnswer} />
 
             {question.keyConcept && (
               <div className="rounded-lg border border-sky-500/15 bg-sky-50/50 dark:bg-sky-500/[0.03] p-3 flex items-start gap-2.5">
@@ -1042,7 +1043,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                     {(revealedSubEssays[subQ.id] || isCompleted) && (
                       <div data-sub-essay={subQ.id} className="space-y-3 rounded-lg border border-emerald-500/20 bg-emerald-50/50 dark:bg-emerald-500/[0.02] p-3 text-xs">
                         <p className="font-semibold text-emerald-600 dark:text-emerald-400">Reference Answer:</p>
-                        <p className="text-gray-800 dark:text-white/85 leading-relaxed whitespace-pre-wrap">{subQ.modelAnswer}</p>
+                        <FormattedAnswer text={subQ.modelAnswer} />
                         
                         {!isCompleted && (
                           <div className="pt-3 border-t border-gray-200 dark:border-emerald-500/10">

@@ -4,6 +4,7 @@ import { useLanguage } from '../hooks/useLanguage';
 import { getFlaggedQuestions, removeFlaggedQuestion } from '../utils/storage';
 import { findQuestionById } from '../data';
 import type { Question, ChapterData } from '../types';
+import { FormattedAnswer } from './FormattedAnswer';
 
 interface FlaggedQuestionsScreenProps {
   onBack: () => void;
@@ -207,7 +208,7 @@ export function FlaggedQuestionsScreen({ onBack, onPracticeQuiz, userButton }: F
                       {q.type === 'essay' && q.modelAnswer && (
                         <div>
                           <div className="font-bold text-xs uppercase tracking-wider text-gray-400 dark:text-gray-500 mb-1">Model Answer</div>
-                          <p className="text-gray-800 dark:text-gray-200 leading-relaxed whitespace-pre-wrap">{q.modelAnswer}</p>
+                          <FormattedAnswer text={q.modelAnswer} />
                         </div>
                       )}
 
@@ -263,8 +264,9 @@ export function FlaggedQuestionsScreen({ onBack, onPracticeQuiz, userButton }: F
                                     </div>
                                   )}
                                   {sq.type === 'essay' && sq.modelAnswer && (
-                                    <div className="text-xs text-gray-500 dark:text-gray-400">
-                                      <span className="font-bold">Model Answer: </span> {sq.modelAnswer}
+                                    <div className="text-xs text-gray-500 dark:text-gray-400 mt-1">
+                                      <span className="font-bold block mb-1">Model Answer: </span>
+                                      <FormattedAnswer text={sq.modelAnswer} />
                                     </div>
                                   )}
                                 </div>
