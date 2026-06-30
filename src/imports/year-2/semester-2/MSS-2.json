@@ -16328,21 +16328,123 @@
               ]
             },
             {
-              "id": "MSS2-CH6-PATH-0015",
-              "type": "essay",
+              "id": "MSS2-CH6-PATH-0015-1",
+              "type": "truefalse",
               "lecture": 1,
-              "text": "Regarding INFLAMMATORY PSEUDOTUMOURS, state whether each statement is true or false:",
-              "explanation": "",
-              "keyConcept": "Inflammatory pseudotumour: non-neoplastic, mimics tumor clinically, biopsy IS indicated; TB/parasitic/foreign-body gran…",
-              "modelAnswer": "**Answers:**\n\n- Usually spread by lymphatics — **False**\n- May be capsulated — **Uncertain (not determinable from the material)**\n- Pathologic examination is not indicated — **False**\n- Clinically look like a tumor — **True**\n- TB, parasitic and foreign-body granuloma are examples — **True**\n- May show non-specific features (fibrous tissue and inflammatory cells) — **True**\n\n*Ai Generated Model Answer*",
+              "text": "True or False: Regarding inflammatory pseudotumours, they usually spread by lymphatics.",
+              "explanation": "Inflammatory pseudotumours are non-neoplastic, inflammatory lesions that do not spread via lymphatics.",
+              "keyConcept": "Inflammatory pseudotumours do not spread via lymphatics.",
+              "options": [
+                "True",
+                "False"
+              ],
+              "correctIndex": 1,
+              "modelAnswer": null,
               "difficulty": "medium",
               "tags": [
                 "inflammatory pseudotumour",
                 "orbit",
-                "true-false",
-                "granuloma",
-                "answer-inferred",
-                "partial-answer"
+                "true-false"
+              ]
+            },
+            {
+              "id": "MSS2-CH6-PATH-0015-2",
+              "type": "truefalse",
+              "lecture": 1,
+              "text": "True or False: Regarding inflammatory pseudotumours, they may be capsulated.",
+              "explanation": "Inflammatory pseudotumours are non-encapsulated (not capsulated), infiltrative inflammatory lesions.",
+              "keyConcept": "Inflammatory pseudotumours are not capsulated.",
+              "options": [
+                "True",
+                "False"
+              ],
+              "correctIndex": 1,
+              "modelAnswer": null,
+              "difficulty": "medium",
+              "tags": [
+                "inflammatory pseudotumour",
+                "orbit",
+                "true-false"
+              ]
+            },
+            {
+              "id": "MSS2-CH6-PATH-0015-3",
+              "type": "truefalse",
+              "lecture": 1,
+              "text": "True or False: Regarding inflammatory pseudotumours, pathologic examination is not indicated.",
+              "explanation": "Biopsy and pathologic examination are indicated for inflammatory pseudotumours to differentiate them from true malignant orbital tumors.",
+              "keyConcept": "Pathologic examination/biopsy is indicated.",
+              "options": [
+                "True",
+                "False"
+              ],
+              "correctIndex": 1,
+              "modelAnswer": null,
+              "difficulty": "medium",
+              "tags": [
+                "inflammatory pseudotumour",
+                "orbit",
+                "true-false"
+              ]
+            },
+            {
+              "id": "MSS2-CH6-PATH-0015-4",
+              "type": "truefalse",
+              "lecture": 1,
+              "text": "True or False: Regarding inflammatory pseudotumours, they clinically look like a tumor.",
+              "explanation": "Clinically, inflammatory pseudotumours mimic a tumor (e.g. producing proptosis and pain), which is why they are called pseudotumours.",
+              "keyConcept": "Clinically mimic a tumor.",
+              "options": [
+                "True",
+                "False"
+              ],
+              "correctIndex": 0,
+              "modelAnswer": null,
+              "difficulty": "medium",
+              "tags": [
+                "inflammatory pseudotumour",
+                "orbit",
+                "true-false"
+              ]
+            },
+            {
+              "id": "MSS2-CH6-PATH-0015-5",
+              "type": "truefalse",
+              "lecture": 1,
+              "text": "True or False: Regarding inflammatory pseudotumours, TB, parasitic and foreign-body granulomas are examples.",
+              "explanation": "TB, parasitic, and foreign-body granulomas are examples of specific granulomatous pseudotumours of the orbit.",
+              "keyConcept": "Examples include TB, parasitic, and foreign-body granulomas.",
+              "options": [
+                "True",
+                "False"
+              ],
+              "correctIndex": 0,
+              "modelAnswer": null,
+              "difficulty": "medium",
+              "tags": [
+                "inflammatory pseudotumour",
+                "orbit",
+                "true-false"
+              ]
+            },
+            {
+              "id": "MSS2-CH6-PATH-0015-6",
+              "type": "truefalse",
+              "lecture": 1,
+              "text": "True or False: Regarding inflammatory pseudotumours, they may show non-specific features (fibrous tissue and inflammatory cells).",
+              "explanation": "Inflammatory pseudotumours may show non-specific inflammatory features, consisting of fibrous tissue and mixed inflammatory cell infiltrates.",
+              "keyConcept": "May show non-specific fibrous/inflammatory features.",
+              "options": [
+                "True",
+                "False"
+              ],
+              "correctIndex": 0,
+              "modelAnswer": null,
+              "difficulty": "medium",
+              "tags": [
+                "inflammatory pseudotumour",
+                "orbit",
+                "true-false"
               ]
             },
             {
