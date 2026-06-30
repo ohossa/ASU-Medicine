@@ -62,7 +62,7 @@ export function FlaggedQuestionsScreen({ onBack, onPracticeQuiz, userButton }: F
       case 'essay': return language === 'en' ? 'Written Essay' : 'سؤال مقالي';
       case 'matching': return language === 'en' ? 'Matching' : 'توصيل';
       case 'fillblank': return language === 'en' ? 'Fill in the Blank' : 'إكمال الفراغ';
-      case 'case': return language === 'en' ? 'Clinical Case' : 'حالة سريرية';
+      case 'case': return language === 'en' ? 'Case Study' : 'دراسة حالة';
       default: return type.toUpperCase();
     }
   };

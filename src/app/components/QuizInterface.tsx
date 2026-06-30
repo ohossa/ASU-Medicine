@@ -862,13 +862,32 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
     );
   };
 
+  const getSubjectCaseLabel = (subjectId?: string): string => {
+    if (!subjectId) return 'Case Study';
+    const map: Record<string, string> = {
+      anatomy: 'Anatomy Case',
+      histology: 'Histology Case',
+      physiology: 'Physiology Case',
+      biochem: 'Biochemistry Case',
+      microbiology: 'Microbiology Case',
+      pathology: 'Pathology Case',
+      pharma: 'Pharmacology Case',
+      clinical: 'Clinical Case',
+      parasitology: 'Parasitology Case',
+      psychiatry: 'Psychiatry Case',
+      ophthalmology: 'Ophthalmology Case',
+      ent: 'ENT Case',
+    };
+    return map[subjectId.toLowerCase()] || 'Case Study';
+  };
+
   const renderCaseStudy = (q: Question, value: QuizAnswer | undefined, onChange: (v: QuizAnswer) => void) => {
     const subAns = value ?? {};
     return (
       <div className="space-y-5">
         <div className="rounded-xl border border-sky-500/30 bg-sky-50/70 dark:bg-sky-500/[0.05] p-4 text-start">
           <p className="mb-2 flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-sky-600 dark:text-sky-300">
-            <Activity size={14} /> Clinical Case
+            <Activity size={14} /> {getSubjectCaseLabel(q.subjectColor)}
           </p>
           <p className="text-sm leading-relaxed text-gray-800 dark:text-white/75">{q.text}</p>
         </div>
