@@ -578,6 +578,26 @@ export function ChapterSelect({
                   </div>
                 </div>
               </div>
+            ) : moduleCode === 'MSS-2' ? (
+              <div className="space-y-8">
+                <div>
+                  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                    {chapters.filter(c => c.id <= 8).map((chapter, i) => renderChapterCard(chapter, i))}
+                  </div>
+                </div>
+
+                {/* Past Exams Section/Block */}
+                {chapters.find(c => c.id === 9) && (
+                  <div className="pt-6 border-t border-border/50 dark:border-white/[0.06]">
+                    <h3 className="mb-4 text-sm font-bold tracking-wider uppercase text-muted-foreground border-l-4 border-clinical pl-3">
+                      {isRTL ? 'الامتحانات السابقة' : 'Past Exams'}
+                    </h3>
+                    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                      {chapters.filter(c => c.id === 9).map((chapter, i) => renderChapterCard(chapter, i + 8))}
+                    </div>
+                  </div>
+                )}
+              </div>
             ) : (
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                 {chapters.map((chapter, i) => renderChapterCard(chapter, i))}

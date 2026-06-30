@@ -340,7 +340,12 @@ export function SyllabusTracker({ moduleCode, moduleName, chapters, onClose }: P
 
   let overallTotal = 0;
   let overallDone = 0;
-  for (const ch of chapters) {
+  const trackedChapters = moduleCode === 'MCNS-2'
+    ? chapters.slice(0, 10)
+    : moduleCode === 'MSS-2'
+      ? chapters.slice(0, 8)
+      : chapters;
+  for (const ch of trackedChapters) {
     const { done, total } = chapterCounts(ch);
     overallTotal += total;
     overallDone += done;
@@ -467,7 +472,7 @@ export function SyllabusTracker({ moduleCode, moduleName, chapters, onClose }: P
 
           {/* Chapter accordion cards */}
           <div className="space-y-3">
-            {chapters.map((chapter) => {
+            {trackedChapters.map((chapter) => {
               const st = data[chapter.id] ?? emptyChapterState();
               const isOpen = expandedChapters.has(chapter.id);
               const { done, total } = chapterCounts(chapter);

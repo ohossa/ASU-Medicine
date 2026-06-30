@@ -362,14 +362,19 @@ export function SyllabusTrackerPage({ userButton }: { userButton?: React.ReactNo
   const overallStats = useMemo(() => {
     let overallTotal = 0;
     let overallDone = 0;
-    for (const ch of chapters) {
+    const trackedChapters = moduleCode === 'MCNS-2'
+      ? chapters.slice(0, 10)
+      : moduleCode === 'MSS-2'
+        ? chapters.slice(0, 8)
+        : chapters;
+    for (const ch of trackedChapters) {
       const { done, total } = chapterCounts(ch);
       overallTotal += total;
       overallDone += done;
     }
     const overallPct = overallTotal === 0 ? 0 : Math.round((overallDone / overallTotal) * 100);
     return { total: overallTotal, done: overallDone, pct: overallPct };
-  }, [chapters, chapterCounts]);
+  }, [chapters, chapterCounts, moduleCode]);
 
   const getLectureTitle = (subject: SubjectData, index: number): string => {
     if (subject.lectureNames && subject.lectureNames[index]) {
@@ -435,7 +440,7 @@ export function SyllabusTrackerPage({ userButton }: { userButton?: React.ReactNo
           <div className="pane-head">
             <h2>{label('syllabusOutline')}</h2>
             <span className="pill frost">
-              {chapters.length} {label('chapters')}
+              {moduleCode === 'MCNS-2' ? 10 : moduleCode === 'MSS-2' ? 8 : chapters.length} {label('chapters')}
             </span>
           </div>
 
@@ -552,7 +557,7 @@ export function SyllabusTrackerPage({ userButton }: { userButton?: React.ReactNo
                 </div>
               </div>
             ) : (
-              chapters.map((ch, idx) => {
+              (moduleCode === 'MSS-2' ? chapters.slice(0, 8) : chapters).map((ch, idx) => {
                 const isActive = idx === activeChapterIndex;
                 const counts = chapterCounts(ch);
                 const pct = counts.total === 0 ? 0 : Math.round((counts.done / counts.total) * 100);
