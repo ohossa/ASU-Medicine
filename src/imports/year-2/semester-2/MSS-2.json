@@ -16508,20 +16508,75 @@
               ]
             },
             {
-              "id": "MSS2-CH6-PATH-0019",
-              "type": "essay",
+              "id": "MSS2-CH6-PATH-0019-1",
+              "type": "fillblank",
               "lecture": 1,
-              "text": "Complete the following: (a) The most common ocular metastatic tumour in males is from ______; what about females? (b) The most common eyelid tumours are ______ and the commonest sites are ______. (c) Familial cases of retinoblastoma represent ______; the others are ______ and represent ______. (d) The origin of retinoblastoma is ______, sebaceous carcinoma is ______, and malignant melanoma is ______.",
-              "explanation": "",
-              "keyConcept": "Ocular metastasis: lung(men)/breast(women); eyelid=BCC(lower lid); RB ~40% familial; RB origin=neuroectoderm; melanoma=…",
-              "modelAnswer": "- **Most common ocular metastatic tumour — males:** lung (bronchogenic) carcinoma.\n- **Females:** breast carcinoma.\n- **Most common eyelid tumour & site:** basal cell carcinoma; most common on the **lower eyelid** (and inner canthus). (Sebaceous carcinoma favours the upper lid.)\n- **Familial retinoblastoma:** ~40% are hereditary (germline RB1, bilateral/multifocal); the remaining ~60% are sporadic and unilateral.\n- **Origin of retinoblastoma:** neuroectoderm (primitive retinal neuroblasts).\n- **Sebaceous carcinoma:** arises from the Meibomian glands (and glands of Zeis).\n- **Malignant melanoma:** arises from melanocytes (of the uvea).\n\n*Ai Generated Model Answer*",
+              "text": "The most common ocular metastatic tumour in males is from ___ (bronchogenic) carcinoma, whereas in females the most common is from ___ carcinoma.",
+              "explanation": "Metastatic tumors are the most common intraocular malignancy. The primary source is usually the lung in males and the breast in females.",
+              "keyConcept": "Ocular metastatic tumours: lung (males), breast (females).",
+              "blanks": [
+                "lung",
+                "breast"
+              ],
+              "difficulty": "medium",
+              "tags": [
+                "fill-blank",
+                "ocular tumours",
+                "metastasis"
+              ]
+            },
+            {
+              "id": "MSS2-CH6-PATH-0019-2",
+              "type": "fillblank",
+              "lecture": 1,
+              "text": "The most common eyelid tumours are ___ cell carcinomas, and their most common site of occurrence is on the ___ eyelid.",
+              "explanation": "Basal cell carcinoma is the most common eyelid tumor, classically presenting on the lower eyelid.",
+              "keyConcept": "Basal cell carcinoma is the most common eyelid tumor and favors the lower lid.",
+              "blanks": [
+                "basal",
+                "lower"
+              ],
+              "difficulty": "medium",
+              "tags": [
+                "fill-blank",
+                "ocular tumours",
+                "eyelid"
+              ]
+            },
+            {
+              "id": "MSS2-CH6-PATH-0019-3",
+              "type": "fillblank",
+              "lecture": 1,
+              "text": "Hereditary (familial) cases of retinoblastoma represent about ___% of cases, while the remaining ___% are sporadic cases.",
+              "explanation": "Approximately 40% of retinoblastoma cases are hereditary (germline mutation), while 60% are sporadic (somatic mutation).",
+              "keyConcept": "Retinoblastoma: 40% hereditary, 60% sporadic.",
+              "blanks": [
+                "40",
+                "60"
+              ],
+              "difficulty": "medium",
+              "tags": [
+                "fill-blank",
+                "retinoblastoma"
+              ]
+            },
+            {
+              "id": "MSS2-CH6-PATH-0019-4",
+              "type": "fillblank",
+              "lecture": 1,
+              "text": "Fill in the cellular origins: Retinoblastoma originates from the ___, sebaceous carcinoma originates from the ___ glands, and malignant melanoma originates from ___.",
+              "explanation": "Retinoblastoma arises from primitive retinal neuroblasts (neuroectoderm). Sebaceous carcinoma arises from Meibomian glands. Melanomas arise from uveal melanocytes.",
+              "keyConcept": "Retinoblastoma = neuroectoderm, Sebaceous carcinoma = Meibomian glands, Melanoma = melanocytes.",
+              "blanks": [
+                "neuroectoderm",
+                "meibomian",
+                "melanocytes"
+              ],
               "difficulty": "hard",
               "tags": [
                 "fill-blank",
                 "ocular tumours",
-                "retinoblastoma",
-                "metastasis",
-                "answer-inferred"
+                "origins"
               ]
             },
             {
