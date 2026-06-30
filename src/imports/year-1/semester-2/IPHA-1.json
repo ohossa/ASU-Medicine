@@ -12004,12 +12004,34 @@
             },
             {
               "id": "IPHA1-CH5-PHAR-0003",
-              "type": "essay",
+              "type": "case",
               "lecture": 1,
-              "text": "A 10-year-old child needs a medication whose standard adult dose is 200 mg. (a) Determine the dose by age. (b) If the child weighs 35 kg, calculate the dose by weight.",
+              "text": "A 10-year-old child needs a medication whose standard adult dose is 200 mg.",
               "explanation": "Young's age formula and the weight formula give the paediatric dose.",
               "keyConcept": "Child dose by age = adult x age/(age+12); by weight = adult x kg/70.",
-              "modelAnswer": "(a) Age method: Child dose = Adult dose x Age / (Age + 12) = 200 x 10 / (10 + 12) = approximately 91 mg. (b) Weight method: Child dose = Adult dose x Weight / 70 = 200 x 35 / 70 = 100 mg."
+              "options": [],
+              "correctIndex": null,
+              "modelAnswer": null,
+              "difficulty": "medium",
+              "tags": [],
+              "subQuestions": [
+                {
+                  "id": "IPHA1-CH5-PHAR-0003-SQ1",
+                  "type": "essay",
+                  "text": "Determine the dose by age.",
+                  "modelAnswer": "Age method: Child dose = Adult dose x Age / (Age + 12) = 200 x 10 / (10 + 12) = approximately 91 mg.",
+                  "explanation": "Young's age formula and the weight formula give the paediatric dose.",
+                  "keyConcept": ""
+                },
+                {
+                  "id": "IPHA1-CH5-PHAR-0003-SQ2",
+                  "type": "essay",
+                  "text": "If the child weighs 35 kg, calculate the dose by weight.",
+                  "modelAnswer": "Weight method: Child dose = Adult dose x Weight / 70 = 200 x 35 / 70 = 100 mg.",
+                  "explanation": "Young's age formula and the weight formula give the paediatric dose.",
+                  "keyConcept": ""
+                }
+              ]
             },
             {
               "id": "IPHA1-CH5-PHAR-0004",
@@ -12040,12 +12062,42 @@
             },
             {
               "id": "IPHA1-CH5-PHAR-0007",
-              "type": "essay",
+              "type": "case",
               "lecture": 1,
-              "text": "A 50 kg patient receives a 400 mg IV bolus; the post-distribution plasma concentration is 10 mg/L. (a) Calculate Vd. (b) What does it suggest about distribution? (c) Would haemodialysis be a primary treatment in poisoning?",
+              "text": "A 50 kg patient receives a 400 mg IV bolus; the post-distribution plasma concentration is 10 mg/L.",
               "explanation": "A Vd near total body water means the drug is not confined to plasma.",
               "keyConcept": "Vd ~ total body water = dialysis not primary.",
-              "modelAnswer": "(a) Vd = 400 mg / 10 mg/L = 40 L. (b) This Vd suggests distribution throughout total body water with some tissue penetration. (c) Haemodialysis would likely not be a primary option because the drug is distributed beyond plasma."
+              "options": [],
+              "correctIndex": null,
+              "modelAnswer": null,
+              "difficulty": "medium",
+              "tags": [],
+              "subQuestions": [
+                {
+                  "id": "IPHA1-CH5-PHAR-0007-SQ1",
+                  "type": "essay",
+                  "text": "Calculate Vd.",
+                  "modelAnswer": "Vd = 400 mg / 10 mg/L = 40 L.",
+                  "explanation": "A Vd near total body water means the drug is not confined to plasma.",
+                  "keyConcept": ""
+                },
+                {
+                  "id": "IPHA1-CH5-PHAR-0007-SQ2",
+                  "type": "essay",
+                  "text": "What does it suggest about distribution?",
+                  "modelAnswer": "This Vd suggests distribution throughout total body water with some tissue penetration.",
+                  "explanation": "A Vd near total body water means the drug is not confined to plasma.",
+                  "keyConcept": ""
+                },
+                {
+                  "id": "IPHA1-CH5-PHAR-0007-SQ3",
+                  "type": "essay",
+                  "text": "Would haemodialysis be a primary treatment in poisoning?",
+                  "modelAnswer": "Haemodialysis would likely not be a primary option because the drug is distributed beyond plasma.",
+                  "explanation": "A Vd near total body water means the drug is not confined to plasma.",
+                  "keyConcept": ""
+                }
+              ]
             },
             {
               "id": "IPHA1-CH5-PHAR-0008",
@@ -12157,21 +12209,65 @@
             },
             {
               "id": "IPHA1-CH5-PHAR-0020",
-              "type": "essay",
+              "type": "case",
               "lecture": 1,
-              "text": "A drug is given 120 mg every 8 hours at a normal CrCl of 120 ml/min. (a) If CrCl falls to 60 ml/min, suggest two dose adjustments. (b) If CrCl falls to 30 ml/min, how do you adjust while keeping the 120 mg dose but changing the interval?",
+              "text": "A drug is given 120 mg every 8 hours at a normal CrCl of 120 ml/min.",
               "explanation": "Dose or interval is scaled in proportion to the fall in creatinine clearance.",
               "keyConcept": "Adjust dose or interval proportionally to CrCl reduction.",
-              "modelAnswer": "(a) CrCl 60 ml/min is half of normal, so either reduce the dose to 60 mg every 8 hours, or keep 120 mg but extend the interval to every 16 hours. (b) CrCl 30 ml/min is one quarter of normal, so keep 120 mg and extend the interval to every 32 hours (8 x 4)."
+              "options": [],
+              "correctIndex": null,
+              "modelAnswer": null,
+              "difficulty": "medium",
+              "tags": [],
+              "subQuestions": [
+                {
+                  "id": "IPHA1-CH5-PHAR-0020-SQ1",
+                  "type": "essay",
+                  "text": "If CrCl falls to 60 ml/min, suggest two dose adjustments.",
+                  "modelAnswer": "CrCl 60 ml/min is half of normal, so either reduce the dose to 60 mg every 8 hours, or keep 120 mg but extend the interval to every 16 hours.",
+                  "explanation": "Dose or interval is scaled in proportion to the fall in creatinine clearance.",
+                  "keyConcept": ""
+                },
+                {
+                  "id": "IPHA1-CH5-PHAR-0020-SQ2",
+                  "type": "essay",
+                  "text": "If CrCl falls to 30 ml/min, how do you adjust while keeping the 120 mg dose but changing the interval?",
+                  "modelAnswer": "CrCl 30 ml/min is one quarter of normal, so keep 120 mg and extend the interval to every 32 hours (8 x 4).",
+                  "explanation": "Dose or interval is scaled in proportion to the fall in creatinine clearance.",
+                  "keyConcept": ""
+                }
+              ]
             },
             {
               "id": "IPHA1-CH5-PHAR-0021",
-              "type": "essay",
+              "type": "case",
               "lecture": 1,
-              "text": "A drug is normally 500 mg every 12 hours at CrCl 120 ml/min. A patient has CrCl 15 ml/min. (a) Reduce the dose, keeping the original interval. (b) Extend the interval, keeping the original dose.",
+              "text": "A drug is normally 500 mg every 12 hours at CrCl 120 ml/min. A patient has CrCl 15 ml/min.",
               "explanation": "A one-eighth clearance is matched by a one-eighth dose or an eight-fold interval.",
               "keyConcept": "Scale dose or interval by the CrCl fraction (here 1/8).",
-              "modelAnswer": "CrCl 15 ml/min is one eighth of normal. (a) Reduce the dose to 500/8 = 62.5 mg every 12 hours. (b) Keep 500 mg and extend the interval to every 96 hours (12 x 8)."
+              "options": [],
+              "correctIndex": null,
+              "modelAnswer": null,
+              "difficulty": "medium",
+              "tags": [],
+              "subQuestions": [
+                {
+                  "id": "IPHA1-CH5-PHAR-0021-SQ1",
+                  "type": "essay",
+                  "text": "Reduce the dose, keeping the original interval.",
+                  "modelAnswer": "CrCl 15 ml/min is one eighth of normal. Reduce the dose to 500/8 = 62.5 mg every 12 hours.",
+                  "explanation": "A one-eighth clearance is matched by a one-eighth dose or an eight-fold interval.",
+                  "keyConcept": ""
+                },
+                {
+                  "id": "IPHA1-CH5-PHAR-0021-SQ2",
+                  "type": "essay",
+                  "text": "Extend the interval, keeping the original dose.",
+                  "modelAnswer": "Keep 500 mg and extend the interval to every 96 hours (12 x 8).",
+                  "explanation": "A one-eighth clearance is matched by a one-eighth dose or an eight-fold interval.",
+                  "keyConcept": ""
+                }
+              ]
             },
             {
               "id": "IPHA1-CH5-PHAR-0022",
@@ -12184,12 +12280,34 @@
             },
             {
               "id": "IPHA1-CH5-PHAR-0023",
-              "type": "essay",
+              "type": "case",
               "lecture": 1,
-              "text": "A drug's Vd is 5 L. (a) What does this indicate about its distribution? (b) Would haemodialysis be effective in toxicity?",
+              "text": "A drug's Vd is 5 L.",
               "explanation": "A very small Vd keeps the drug in plasma, where dialysis works well.",
               "keyConcept": "Vd near plasma volume = dialysis effective.",
-              "modelAnswer": "(a) A Vd of 5 L indicates the drug is largely confined to the plasma compartment. (b) Yes, haemodialysis would be effective."
+              "options": [],
+              "correctIndex": null,
+              "modelAnswer": null,
+              "difficulty": "medium",
+              "tags": [],
+              "subQuestions": [
+                {
+                  "id": "IPHA1-CH5-PHAR-0023-SQ1",
+                  "type": "essay",
+                  "text": "What does this indicate about its distribution?",
+                  "modelAnswer": "A Vd of 5 L indicates the drug is largely confined to the plasma compartment.",
+                  "explanation": "A very small Vd keeps the drug in plasma, where dialysis works well.",
+                  "keyConcept": ""
+                },
+                {
+                  "id": "IPHA1-CH5-PHAR-0023-SQ2",
+                  "type": "essay",
+                  "text": "Would haemodialysis be effective in toxicity?",
+                  "modelAnswer": "Yes, haemodialysis would be effective.",
+                  "explanation": "A very small Vd keeps the drug in plasma, where dialysis works well.",
+                  "keyConcept": ""
+                }
+              ]
             },
             {
               "id": "IPHA1-CH5-PHAR-0024",
@@ -12202,12 +12320,42 @@
             },
             {
               "id": "IPHA1-CH5-PHAR-0025",
-              "type": "essay",
+              "type": "case",
               "lecture": 1,
-              "text": "A newly developed antibiotic is given intravenously. The total dose is 500 mg and the peak plasma concentration is 20 mg/L. (a) Calculate the volume of distribution (Vd). (b) What does it imply about distribution? (c) Would haemodialysis be useful in toxicity?",
+              "text": "A newly developed antibiotic is given intravenously. The total dose is 500 mg and the peak plasma concentration is 20 mg/L.",
               "explanation": "Vd = dose/plasma concentration; a small Vd means the drug is accessible to dialysis.",
               "keyConcept": "Vd = dose/plasma concentration; small Vd favours dialysis.",
-              "modelAnswer": "(a) Vd = Dose / Plasma concentration = 500 mg / 20 mg/L = 25 L. (b) This relatively small Vd suggests limited tissue uptake, with the drug largely in plasma/extracellular fluid. (c) Yes, haemodialysis would be useful because the drug is largely confined to plasma/extracellular fluid."
+              "options": [],
+              "correctIndex": null,
+              "modelAnswer": null,
+              "difficulty": "medium",
+              "tags": [],
+              "subQuestions": [
+                {
+                  "id": "IPHA1-CH5-PHAR-0025-SQ1",
+                  "type": "essay",
+                  "text": "Calculate the volume of distribution (Vd).",
+                  "modelAnswer": "Vd = Dose / Plasma concentration = 500 mg / 20 mg/L = 25 L.",
+                  "explanation": "Vd = dose/plasma concentration; a small Vd means the drug is accessible to dialysis.",
+                  "keyConcept": ""
+                },
+                {
+                  "id": "IPHA1-CH5-PHAR-0025-SQ2",
+                  "type": "essay",
+                  "text": "What does it imply about distribution?",
+                  "modelAnswer": "This relatively small Vd suggests limited tissue uptake, with the drug largely in plasma/extracellular fluid.",
+                  "explanation": "Vd = dose/plasma concentration; a small Vd means the drug is accessible to dialysis.",
+                  "keyConcept": ""
+                },
+                {
+                  "id": "IPHA1-CH5-PHAR-0025-SQ3",
+                  "type": "essay",
+                  "text": "Would haemodialysis be useful in toxicity?",
+                  "modelAnswer": "Yes, haemodialysis would be useful because the drug is largely confined to plasma/extracellular fluid.",
+                  "explanation": "Vd = dose/plasma concentration; a small Vd means the drug is accessible to dialysis.",
+                  "keyConcept": ""
+                }
+              ]
             },
             {
               "id": "IPHA1-CH5-PHAR-0026",
@@ -12238,12 +12386,42 @@
             },
             {
               "id": "IPHA1-CH5-PHAR-0029",
-              "type": "essay",
+              "type": "case",
               "lecture": 1,
-              "text": "A patient receives a 300 mg IV dose of Drug A; the post-distribution plasma concentration is 15 mg/L. (a) Calculate Vd. (b) Limited or extensive tissue uptake? (c) Would haemodialysis be useful?",
+              "text": "A patient receives a 300 mg IV dose of Drug A; the post-distribution plasma concentration is 15 mg/L.",
               "explanation": "A small Vd keeps the drug in plasma where dialysis can remove it.",
               "keyConcept": "Small Vd = limited uptake and effective dialysis.",
-              "modelAnswer": "(a) Vd = 300 mg / 15 mg/L = 20 L. (b) This small Vd indicates limited tissue uptake. (c) Yes, haemodialysis would likely be effective because the drug is largely in accessible compartments."
+              "options": [],
+              "correctIndex": null,
+              "modelAnswer": null,
+              "difficulty": "medium",
+              "tags": [],
+              "subQuestions": [
+                {
+                  "id": "IPHA1-CH5-PHAR-0029-SQ1",
+                  "type": "essay",
+                  "text": "Calculate Vd.",
+                  "modelAnswer": "Vd = 300 mg / 15 mg/L = 20 L.",
+                  "explanation": "A small Vd keeps the drug in plasma where dialysis can remove it.",
+                  "keyConcept": ""
+                },
+                {
+                  "id": "IPHA1-CH5-PHAR-0029-SQ2",
+                  "type": "essay",
+                  "text": "Limited or extensive tissue uptake?",
+                  "modelAnswer": "This small Vd indicates limited tissue uptake.",
+                  "explanation": "A small Vd keeps the drug in plasma where dialysis can remove it.",
+                  "keyConcept": ""
+                },
+                {
+                  "id": "IPHA1-CH5-PHAR-0029-SQ3",
+                  "type": "essay",
+                  "text": "Would haemodialysis be useful?",
+                  "modelAnswer": "Yes, haemodialysis would likely be effective because the drug is largely in accessible compartments.",
+                  "explanation": "A small Vd keeps the drug in plasma where dialysis can remove it.",
+                  "keyConcept": ""
+                }
+              ]
             },
             {
               "id": "IPHA1-CH5-PHAR-0030",
@@ -12265,12 +12443,34 @@
             },
             {
               "id": "IPHA1-CH5-PHAR-0032",
-              "type": "essay",
+              "type": "case",
               "lecture": 1,
-              "text": "A patient with normal CrCl of 120 ml/min takes 200 mg of Drug N twice a day. (a) If CrCl drops to 80 ml/min, adjust the dose amount. (b) If CrCl drops to 15 ml/min, adjust the interval keeping the 200 mg dose.",
+              "text": "A patient with normal CrCl of 120 ml/min takes 200 mg of Drug N twice a day.",
               "explanation": "Dose or interval is scaled by the fraction of remaining clearance.",
               "keyConcept": "Scale dose/interval by the CrCl fraction.",
-              "modelAnswer": "(a) CrCl 80 ml/min is two thirds of normal, so reduce the dose to 200 x (2/3) = approximately 133 mg every 12 hours. (b) CrCl 15 ml/min is one eighth of normal, so keep 200 mg and extend the interval to every 96 hours (12 x 8)."
+              "options": [],
+              "correctIndex": null,
+              "modelAnswer": null,
+              "difficulty": "medium",
+              "tags": [],
+              "subQuestions": [
+                {
+                  "id": "IPHA1-CH5-PHAR-0032-SQ1",
+                  "type": "essay",
+                  "text": "If CrCl drops to 80 ml/min, adjust the dose amount.",
+                  "modelAnswer": "CrCl 80 ml/min is two thirds of normal, so reduce the dose to 200 x (2/3) = approximately 133 mg every 12 hours.",
+                  "explanation": "Dose or interval is scaled by the fraction of remaining clearance.",
+                  "keyConcept": ""
+                },
+                {
+                  "id": "IPHA1-CH5-PHAR-0032-SQ2",
+                  "type": "essay",
+                  "text": "If CrCl drops to 15 ml/min, adjust the interval keeping the 200 mg dose.",
+                  "modelAnswer": "CrCl 15 ml/min is one eighth of normal, so keep 200 mg and extend the interval to every 96 hours (12 x 8).",
+                  "explanation": "Dose or interval is scaled by the fraction of remaining clearance.",
+                  "keyConcept": ""
+                }
+              ]
             },
             {
               "id": "IPHA1-CH5-PHAR-0033",
@@ -12292,12 +12492,34 @@
             },
             {
               "id": "IPHA1-CH5-PHAR-0035",
-              "type": "essay",
+              "type": "case",
               "lecture": 1,
-              "text": "An antiarrhythmic is dosed 100 mg every 8 hours at a normal CrCl of 120 ml/min. (a) How would you adjust the dose if CrCl drops to 40 ml/min? (b) Alternatively, how would you adjust the dosing interval?",
+              "text": "An antiarrhythmic is dosed 100 mg every 8 hours at a normal CrCl of 120 ml/min.",
               "explanation": "A one-third clearance is matched by a one-third dose or a tripled interval.",
               "keyConcept": "Scale dose down or interval up by the CrCl fraction.",
-              "modelAnswer": "CrCl 40 ml/min is one third of normal. (a) Reduce the dose to 100/3 = approximately 33 mg every 8 hours. (b) Alternatively keep 100 mg but extend the interval to every 24 hours (8 x 3)."
+              "options": [],
+              "correctIndex": null,
+              "modelAnswer": null,
+              "difficulty": "medium",
+              "tags": [],
+              "subQuestions": [
+                {
+                  "id": "IPHA1-CH5-PHAR-0035-SQ1",
+                  "type": "essay",
+                  "text": "How would you adjust the dose if CrCl drops to 40 ml/min?",
+                  "modelAnswer": "CrCl 40 ml/min is one third of normal. Reduce the dose to 100/3 = approximately 33 mg every 8 hours.",
+                  "explanation": "A one-third clearance is matched by a one-third dose or a tripled interval.",
+                  "keyConcept": ""
+                },
+                {
+                  "id": "IPHA1-CH5-PHAR-0035-SQ2",
+                  "type": "essay",
+                  "text": "Alternatively, how would you adjust the dosing interval?",
+                  "modelAnswer": "Alternatively keep 100 mg but extend the interval to every 24 hours (8 x 3).",
+                  "explanation": "A one-third clearance is matched by a one-third dose or a tripled interval.",
+                  "keyConcept": ""
+                }
+              ]
             },
             {
               "id": "IPHA1-CH5-PHAR-0036",
@@ -12319,12 +12541,34 @@
             },
             {
               "id": "IPHA1-CH5-PHAR-0038",
-              "type": "essay",
+              "type": "case",
               "lecture": 1,
-              "text": "Drug D has a hepatic extraction ratio of 0.15 and a hepatic blood flow (Q) of 1.5 L/min. (a) Calculate the hepatic clearance. (b) What clearance dependency would you expect?",
+              "text": "Drug D has a hepatic extraction ratio of 0.15 and a hepatic blood flow (Q) of 1.5 L/min.",
               "explanation": "Hepatic clearance is E x Q; low E means enzyme-dependent clearance.",
               "keyConcept": "Cl(liver) = E x Q; E < 0.2 = enzyme-dependent.",
-              "modelAnswer": "(a) Cl(liver) = E x Q = 0.15 x 1.5 L/min = 0.225 L/min. (b) Since E = 0.15 (less than 0.2), clearance is primarily enzyme-dependent."
+              "options": [],
+              "correctIndex": null,
+              "modelAnswer": null,
+              "difficulty": "medium",
+              "tags": [],
+              "subQuestions": [
+                {
+                  "id": "IPHA1-CH5-PHAR-0038-SQ1",
+                  "type": "essay",
+                  "text": "Calculate the hepatic clearance.",
+                  "modelAnswer": "Cl(liver) = E x Q = 0.15 x 1.5 L/min = 0.225 L/min.",
+                  "explanation": "Hepatic clearance is E x Q; low E means enzyme-dependent clearance.",
+                  "keyConcept": ""
+                },
+                {
+                  "id": "IPHA1-CH5-PHAR-0038-SQ2",
+                  "type": "essay",
+                  "text": "What clearance dependency would you expect?",
+                  "modelAnswer": "Since E = 0.15 (less than 0.2), clearance is primarily enzyme-dependent.",
+                  "explanation": "Hepatic clearance is E x Q; low E means enzyme-dependent clearance.",
+                  "keyConcept": ""
+                }
+              ]
             },
             {
               "id": "IPHA1-CH5-PHAR-0039",
@@ -12346,30 +12590,96 @@
             },
             {
               "id": "IPHA1-CH5-PHAR-0041",
-              "type": "essay",
+              "type": "case",
               "lecture": 1,
-              "text": "Drug I is metabolised at 100 mg/hour and excreted in urine at 20 mg/hour. (a) What is the total rate of elimination? (b) If Css is 2 mg/L, calculate the systemic clearance.",
+              "text": "Drug I is metabolised at 100 mg/hour and excreted in urine at 20 mg/hour.",
               "explanation": "Add elimination routes, then divide by concentration for clearance.",
               "keyConcept": "Total elimination = sum of routes; Cls = rate/concentration.",
-              "modelAnswer": "(a) Total rate of elimination = 100 + 20 = 120 mg/hour. (b) Cls = 120 mg/hour / 2 mg/L = 60 L/hour."
+              "options": [],
+              "correctIndex": null,
+              "modelAnswer": null,
+              "difficulty": "medium",
+              "tags": [],
+              "subQuestions": [
+                {
+                  "id": "IPHA1-CH5-PHAR-0041-SQ1",
+                  "type": "essay",
+                  "text": "What is the total rate of elimination?",
+                  "modelAnswer": "Total rate of elimination = 100 + 20 = 120 mg/hour.",
+                  "explanation": "Add elimination routes, then divide by concentration for clearance.",
+                  "keyConcept": ""
+                },
+                {
+                  "id": "IPHA1-CH5-PHAR-0041-SQ2",
+                  "type": "essay",
+                  "text": "If Css is 2 mg/L, calculate the systemic clearance.",
+                  "modelAnswer": "Cls = 120 mg/hour / 2 mg/L = 60 L/hour.",
+                  "explanation": "Add elimination routes, then divide by concentration for clearance.",
+                  "keyConcept": ""
+                }
+              ]
             },
             {
               "id": "IPHA1-CH5-PHAR-0042",
-              "type": "essay",
+              "type": "case",
               "lecture": 1,
-              "text": "Drug I is metabolised at 100 mg/hour and excreted unchanged in urine at 20 mg/hour. (a) What is the total rate of elimination? (b) If Css is 2 mg/L, calculate its systemic clearance.",
+              "text": "Drug I is metabolised at 100 mg/hour and excreted unchanged in urine at 20 mg/hour.",
               "explanation": "Sum the elimination routes, then divide by concentration.",
               "keyConcept": "Total elimination = sum of routes; Cls = rate/concentration.",
-              "modelAnswer": "(a) Total rate of elimination = 100 + 20 = 120 mg/hour. (b) Cls = 120 mg/hour / 2 mg/L = 60 L/hour."
+              "options": [],
+              "correctIndex": null,
+              "modelAnswer": null,
+              "difficulty": "medium",
+              "tags": [],
+              "subQuestions": [
+                {
+                  "id": "IPHA1-CH5-PHAR-0042-SQ1",
+                  "type": "essay",
+                  "text": "What is the total rate of elimination?",
+                  "modelAnswer": "Total rate of elimination = 100 + 20 = 120 mg/hour.",
+                  "explanation": "Sum the elimination routes, then divide by concentration.",
+                  "keyConcept": ""
+                },
+                {
+                  "id": "IPHA1-CH5-PHAR-0042-SQ2",
+                  "type": "essay",
+                  "text": "If Css is 2 mg/L, calculate its systemic clearance.",
+                  "modelAnswer": "Cls = 120 mg/hour / 2 mg/L = 60 L/hour.",
+                  "explanation": "Sum the elimination routes, then divide by concentration.",
+                  "keyConcept": ""
+                }
+              ]
             },
             {
               "id": "IPHA1-CH5-PHAR-0043",
-              "type": "essay",
+              "type": "case",
               "lecture": 1,
-              "text": "Drug K is metabolised by the liver; arterial concentration is 100 mg/L and venous is 20 mg/L. (a) Calculate E. (b) Does it undergo significant first-pass metabolism?",
+              "text": "Drug K is metabolised by the liver; arterial concentration is 100 mg/L and venous is 20 mg/L.",
               "explanation": "A high extraction ratio predicts extensive first-pass metabolism.",
               "keyConcept": "High E (>0.7) predicts high first-pass metabolism.",
-              "modelAnswer": "(a) E = (100 - 20) / 100 = 0.8. (b) Yes, it likely undergoes significant first-pass metabolism because E = 0.8 (greater than 0.7)."
+              "options": [],
+              "correctIndex": null,
+              "modelAnswer": null,
+              "difficulty": "medium",
+              "tags": [],
+              "subQuestions": [
+                {
+                  "id": "IPHA1-CH5-PHAR-0043-SQ1",
+                  "type": "essay",
+                  "text": "Calculate E.",
+                  "modelAnswer": "E = (100 - 20) / 100 = 0.8.",
+                  "explanation": "A high extraction ratio predicts extensive first-pass metabolism.",
+                  "keyConcept": ""
+                },
+                {
+                  "id": "IPHA1-CH5-PHAR-0043-SQ2",
+                  "type": "essay",
+                  "text": "Does it undergo significant first-pass metabolism?",
+                  "modelAnswer": "Yes, it likely undergoes significant first-pass metabolism because E = 0.8 (greater than 0.7).",
+                  "explanation": "A high extraction ratio predicts extensive first-pass metabolism.",
+                  "keyConcept": ""
+                }
+              ]
             },
             {
               "id": "IPHA1-CH5-PHAR-0044",
@@ -12400,39 +12710,127 @@
             },
             {
               "id": "IPHA1-CH5-PHAR-0047",
-              "type": "essay",
+              "type": "case",
               "lecture": 1,
-              "text": "For Drug C, the arterial concentration entering the liver is 40 mg/L and venous is 5 mg/L. (a) Calculate E. (b) What does it imply about hepatic clearance?",
+              "text": "For Drug C, the arterial concentration entering the liver is 40 mg/L and venous is 5 mg/L.",
               "explanation": "A high extraction ratio means clearance depends on hepatic blood flow.",
               "keyConcept": "High E (>0.7) = flow-dependent hepatic clearance.",
-              "modelAnswer": "(a) E = (40 - 5) / 40 = 0.875. (b) Since E = 0.875 (greater than 0.7), hepatic clearance is primarily flow-dependent."
+              "options": [],
+              "correctIndex": null,
+              "modelAnswer": null,
+              "difficulty": "medium",
+              "tags": [],
+              "subQuestions": [
+                {
+                  "id": "IPHA1-CH5-PHAR-0047-SQ1",
+                  "type": "essay",
+                  "text": "Calculate E.",
+                  "modelAnswer": "E = (40 - 5) / 40 = 0.875.",
+                  "explanation": "A high extraction ratio means clearance depends on hepatic blood flow.",
+                  "keyConcept": ""
+                },
+                {
+                  "id": "IPHA1-CH5-PHAR-0047-SQ2",
+                  "type": "essay",
+                  "text": "What does it imply about hepatic clearance?",
+                  "modelAnswer": "Since E = 0.875 (greater than 0.7), hepatic clearance is primarily flow-dependent.",
+                  "explanation": "A high extraction ratio means clearance depends on hepatic blood flow.",
+                  "keyConcept": ""
+                }
+              ]
             },
             {
               "id": "IPHA1-CH5-PHAR-0048",
-              "type": "essay",
+              "type": "case",
               "lecture": 1,
-              "text": "For Drug Y, arterial concentration entering the liver is 50 mg/L and venous concentration is 10 mg/L. (a) Calculate the hepatic extraction ratio (E). (b) What is the primary clearance dependency?",
+              "text": "For Drug Y, arterial concentration entering the liver is 50 mg/L and venous concentration is 10 mg/L.",
               "explanation": "E above 0.7 indicates flow-dependent (high-extraction) clearance.",
               "keyConcept": "E > 0.7 means flow-dependent clearance.",
-              "modelAnswer": "(a) E = (Arterial - Venous) / Arterial = (50 - 10) / 50 = 0.8. (b) Since E = 0.8 (greater than 0.7), clearance is primarily flow-dependent."
+              "options": [],
+              "correctIndex": null,
+              "modelAnswer": null,
+              "difficulty": "medium",
+              "tags": [],
+              "subQuestions": [
+                {
+                  "id": "IPHA1-CH5-PHAR-0048-SQ1",
+                  "type": "essay",
+                  "text": "Calculate the hepatic extraction ratio (E).",
+                  "modelAnswer": "E = (Arterial - Venous) / Arterial = (50 - 10) / 50 = 0.8.",
+                  "explanation": "E above 0.7 indicates flow-dependent (high-extraction) clearance.",
+                  "keyConcept": ""
+                },
+                {
+                  "id": "IPHA1-CH5-PHAR-0048-SQ2",
+                  "type": "essay",
+                  "text": "What is the primary clearance dependency?",
+                  "modelAnswer": "Since E = 0.8 (greater than 0.7), clearance is primarily flow-dependent.",
+                  "explanation": "E above 0.7 indicates flow-dependent (high-extraction) clearance.",
+                  "keyConcept": ""
+                }
+              ]
             },
             {
               "id": "IPHA1-CH5-PHAR-0049",
-              "type": "essay",
+              "type": "case",
               "lecture": 1,
-              "text": "The arterial concentration of Drug H is 80 micrograms/ml and venous is 20 micrograms/ml. (a) Calculate E. (b) Is clearance flow-dependent or enzyme-dependent?",
+              "text": "The arterial concentration of Drug H is 80 micrograms/ml and venous is 20 micrograms/ml.",
               "explanation": "A high extraction ratio indicates flow-dependent clearance.",
               "keyConcept": "E > 0.7 = flow-dependent clearance.",
-              "modelAnswer": "(a) E = (80 - 20) / 80 = 0.75. (b) Since E = 0.75 (greater than 0.7), clearance is primarily flow-dependent."
+              "options": [],
+              "correctIndex": null,
+              "modelAnswer": null,
+              "difficulty": "medium",
+              "tags": [],
+              "subQuestions": [
+                {
+                  "id": "IPHA1-CH5-PHAR-0049-SQ1",
+                  "type": "essay",
+                  "text": "Calculate E.",
+                  "modelAnswer": "E = (80 - 20) / 80 = 0.75.",
+                  "explanation": "A high extraction ratio indicates flow-dependent clearance.",
+                  "keyConcept": ""
+                },
+                {
+                  "id": "IPHA1-CH5-PHAR-0049-SQ2",
+                  "type": "essay",
+                  "text": "Is clearance flow-dependent or enzyme-dependent?",
+                  "modelAnswer": "Since E = 0.75 (greater than 0.7), clearance is primarily flow-dependent.",
+                  "explanation": "A high extraction ratio indicates flow-dependent clearance.",
+                  "keyConcept": ""
+                }
+              ]
             },
             {
               "id": "IPHA1-CH5-PHAR-0050",
-              "type": "essay",
+              "type": "case",
               "lecture": 1,
-              "text": "The arterial concentration of Drug H is 80 micrograms/ml and venous is 20 micrograms/ml. (a) Calculate E. (b) Is its clearance more likely flow-dependent or enzyme-dependent?",
+              "text": "The arterial concentration of Drug H is 80 micrograms/ml and venous is 20 micrograms/ml.",
               "explanation": "A high extraction ratio indicates flow-dependent clearance.",
               "keyConcept": "E > 0.7 = flow-dependent clearance.",
-              "modelAnswer": "(a) E = (80 - 20) / 80 = 0.75. (b) Since E = 0.75 (greater than 0.7), its clearance is primarily flow-dependent."
+              "options": [],
+              "correctIndex": null,
+              "modelAnswer": null,
+              "difficulty": "medium",
+              "tags": [],
+              "subQuestions": [
+                {
+                  "id": "IPHA1-CH5-PHAR-0050-SQ1",
+                  "type": "essay",
+                  "text": "Calculate E.",
+                  "modelAnswer": "E = (80 - 20) / 80 = 0.75.",
+                  "explanation": "A high extraction ratio indicates flow-dependent clearance.",
+                  "keyConcept": ""
+                },
+                {
+                  "id": "IPHA1-CH5-PHAR-0050-SQ2",
+                  "type": "essay",
+                  "text": "Is its clearance more likely flow-dependent or enzyme-dependent?",
+                  "modelAnswer": "Since E = 0.75 (greater than 0.7), its clearance is primarily flow-dependent.",
+                  "explanation": "A high extraction ratio indicates flow-dependent clearance.",
+                  "keyConcept": ""
+                }
+              ]
             },
             {
               "id": "IPHA1-CH5-PHAR-0051",

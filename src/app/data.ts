@@ -458,28 +458,33 @@ function assertUniqueQuestionIds(rawData: V2RawData, filename: string): void {
   }
 }
 
+function cleanCircledC(str: string): string {
+  if (!str) return '';
+  return str.replace(/©/g, '(c)').replace(/Ⓒ/g, '(c)').replace(/ⓒ/g, '(c)');
+}
+
 function transformV2Question(q: V2RawQuestion, subjectColor: SubjectColor): Question {
   const base = {
     id: q.id,
     type: q.type,
-    text: q.text || q.question || '',
+    text: cleanCircledC(q.text || q.question || ''),
     lecture: q.lecture ?? 1,
     subjectColor,
     options: q.options,
     correctIndex: q.correctIndex,
     pairs: q.pairs,
-    modelAnswer: q.modelAnswer || undefined,
-    explanation: q.explanation || '',
-    keyConcept: q.keyConcept,
+    modelAnswer: q.modelAnswer ? cleanCircledC(q.modelAnswer) : undefined,
+    explanation: cleanCircledC(q.explanation || ''),
+    keyConcept: q.keyConcept ? cleanCircledC(q.keyConcept) : undefined,
     subQuestions: q.subQuestions ? q.subQuestions.map((sq) => ({
       id: sq.id,
       type: sq.type,
-      text: sq.text || sq.question || '',
+      text: cleanCircledC(sq.text || sq.question || ''),
       options: sq.options,
       correctIndex: sq.correctIndex,
-      modelAnswer: sq.modelAnswer,
-      explanation: sq.explanation || '',
-      keyConcept: sq.keyConcept
+      modelAnswer: sq.modelAnswer ? cleanCircledC(sq.modelAnswer) : undefined,
+      explanation: cleanCircledC(sq.explanation || ''),
+      keyConcept: sq.keyConcept ? cleanCircledC(sq.keyConcept) : undefined
     })) : undefined,
     blanks: q.blanks,
     acceptedAnswers: q.acceptedAnswers,

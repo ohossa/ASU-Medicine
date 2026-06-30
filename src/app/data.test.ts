@@ -73,4 +73,34 @@ describe('data module exports', () => {
     expect(hasCase).toBe(true);
     expect(hasMcq).toBe(true);
   });
+
+  it('normalizes circled C characters (copyright ©/Ⓒ/ⓒ) into standard (c)', async () => {
+    const { getChaptersForModuleAndMode, ensureDataLoaded } = await import('./data');
+    await ensureDataLoaded();
+
+    // Since our normalizer runs inside transformV2Question, let's verify on a module
+    // that had circled c characters.
+    const chapters = getChaptersForModuleAndMode('IPHA-1', 'mixed');
+    for (const ch of chapters) {
+      for (const sub of ch.subjects) {
+        for (const q of sub.questions) {
+          expect(q.text).not.toContain('©');
+          expect(q.text).not.toContain('Ⓒ');
+          expect(q.text).not.toContain('ⓒ');
+          if (q.explanation) {
+            expect(q.explanation).not.toContain('©');
+            expect(q.explanation).not.toContain('Ⓒ');
+            expect(q.explanation).not.toContain('ⓒ');
+          }
+          if (q.subQuestions) {
+            for (const sq of q.subQuestions) {
+              expect(sq.text).not.toContain('©');
+              expect(sq.text).not.toContain('Ⓒ');
+              expect(sq.text).not.toContain('ⓒ');
+            }
+          }
+        }
+      }
+    }
+  });
 });
