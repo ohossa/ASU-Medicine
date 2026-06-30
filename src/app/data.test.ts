@@ -25,4 +25,52 @@ describe('data module exports', () => {
     const { findQuestionById } = await import('./data');
     expect(typeof findQuestionById).toBe('function');
   });
+
+  it('routes case and casestudy questions to essay mode and counts them under essayCount', async () => {
+    const { getChaptersForModuleAndMode, getModuleQuestionCounts, ensureDataLoaded } = await import('./data');
+    await ensureDataLoaded();
+
+    // Verify for a module that has case questions, e.g., P6-3 or P7-4 (or MCNS-2)
+    // Let's test with MCNS-2 or MEM-2 if active, or just verify generally
+    const counts = getModuleQuestionCounts('MCNS-2');
+    
+    // MCNS-2 should have essay questions and case questions included in the essay count
+    expect(counts.essayCount).toBeGreaterThan(0);
+
+    const mcqChapters = getChaptersForModuleAndMode('MCNS-2', 'mcq');
+    const essayChapters = getChaptersForModuleAndMode('MCNS-2', 'essay');
+    const mixedChapters = getChaptersForModuleAndMode('MCNS-2', 'mixed');
+
+    // MCQ mode should have NO questions of type 'case', 'casestudy', or 'essay'
+    for (const ch of mcqChapters) {
+      for (const sub of ch.subjects) {
+        for (const q of sub.questions) {
+          expect(['essay', 'case', 'casestudy']).not.toContain(q.type);
+        }
+      }
+    }
+
+    // Essay mode should ONLY have questions of type 'essay', 'case', or 'casestudy'
+    for (const ch of essayChapters) {
+      for (const sub of ch.subjects) {
+        for (const q of sub.questions) {
+          expect(['essay', 'case', 'casestudy']).toContain(q.type);
+        }
+      }
+    }
+
+    // Mixed mode should contain everything
+    let hasCase = false;
+    let hasMcq = false;
+    for (const ch of mixedChapters) {
+      for (const sub of ch.subjects) {
+        for (const q of sub.questions) {
+          if (q.type === 'case' || q.type === 'casestudy') hasCase = true;
+          if (q.type === 'mcq') hasMcq = true;
+        }
+      }
+    }
+    expect(hasCase).toBe(true);
+    expect(hasMcq).toBe(true);
+  });
 });

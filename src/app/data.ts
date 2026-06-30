@@ -756,7 +756,7 @@ export function getModuleQuestionCounts(moduleCode: string) {
     db.v2Raw.chapters?.forEach((ch: V2RawChapter) => {
       ch.subjects?.forEach((subj: V2RawSubject) => {
         subj.questions?.forEach((q: V2RawQuestion) => {
-          if (q.type === 'essay') {
+          if (q.type === 'essay' || q.type === 'case' || q.type === 'casestudy') {
             essayCount++;
           } else {
             mcqCount++;
@@ -808,8 +808,12 @@ export function getChaptersForModuleAndMode(
         .map((subj: V2RawSubject) => {
           const questions = (subj.questions || [])
             .filter((q: V2RawQuestion) => {
-              if (mode === 'mcq') return q.type !== 'essay';
-              if (mode === 'essay') return q.type === 'essay';
+              if (mode === 'mcq') {
+                return q.type !== 'essay' && q.type !== 'case' && q.type !== 'casestudy';
+              }
+              if (mode === 'essay') {
+                return q.type === 'essay' || q.type === 'case' || q.type === 'casestudy';
+              }
               return true;
             })
             .map((q: V2RawQuestion) => transformV2Question(q, subj.id));
