@@ -1,84 +1,154 @@
 import { describe, it, expect, beforeAll } from 'vitest';
 import { ensureDataLoaded, getChaptersForModuleAndMode, getModuleQuestionCounts } from './data';
 
-describe('Special Senses (MSS-2) restructured database validation', () => {
+describe('Special Senses (MSS-2) subject-centric database validation', () => {
   beforeAll(async () => {
     await ensureDataLoaded();
   });
 
-  it('verifies that the module is active and loaded with zero questions (as a skeleton foundation)', () => {
+  it('verifies that the module is active and loaded with zero questions (skeleton foundation)', () => {
     const counts = getModuleQuestionCounts('MSS-2');
     expect(counts.totalCount).toBe(0);
     expect(counts.essayCount).toBe(0);
     expect(counts.mcqCount).toBe(0);
   });
 
-  it('contains exactly 3 chapters for eye, ear, and chemical senses', () => {
+  it('contains exactly 8 subject-centric chapters', () => {
     const chapters = getChaptersForModuleAndMode('MSS-2', 'mixed');
-    expect(chapters.length).toBe(3);
-
-    // Verify Chapter 1: Eye
-    const ch1 = chapters[0];
-    expect(ch1.id).toBe(1);
-    expect(ch1.title).toBe('The Eye & Visual System');
-    expect(ch1.emoji).toBe('👁️');
-    expect(ch1.page).toBe(4);
-    expect(ch1.lectureRange).toBe('Lectures 1-20');
-
-    // Verify Chapter 2: Ear
-    const ch2 = chapters[1];
-    expect(ch2.id).toBe(2);
-    expect(ch2.title).toBe('The Ear & Auditory/Vestibular Systems');
-    expect(ch2.emoji).toBe('👂');
-    expect(ch2.page).toBe(35);
-    expect(ch2.lectureRange).toBe('Lectures 21-27');
-
-    // Verify Chapter 3: Chemical Senses
-    const ch3 = chapters[2];
-    expect(ch3.id).toBe(3);
-    expect(ch3.title).toBe('Chemical Senses (Smell & Taste)');
-    expect(ch3.emoji).toBe('👅');
-    expect(ch3.page).toBe(56);
-    expect(ch3.lectureRange).toBe('Lectures 28-30');
+    expect(chapters.length).toBe(8);
   });
 
-  it('contains correct subject definitions inside chapters', () => {
+  it('chapter 1 is Anatomy with correct metadata and 17 lectures', () => {
     const chapters = getChaptersForModuleAndMode('MSS-2', 'mixed');
-    
-    // Chapter 1 should have subjects like anatomy, histology, biochem, physiology, microbiology, pathology, pharma, clinical
-    const ch1Subjects = chapters[0].subjects.map(s => s.id);
-    expect(ch1Subjects).toContain('anatomy');
-    expect(ch1Subjects).toContain('histology');
-    expect(ch1Subjects).toContain('biochem');
-    expect(ch1Subjects).toContain('physiology');
-    expect(ch1Subjects).toContain('microbiology');
-    expect(ch1Subjects).toContain('pathology');
-    expect(ch1Subjects).toContain('pharma');
-    expect(ch1Subjects).toContain('clinical'); // Ophthalmology clinical mapped to clinical
-
-    // Chapter 2 should have subjects like anatomy, histology, physiology, microbiology, pathology, clinical
-    const ch2Subjects = chapters[1].subjects.map(s => s.id);
-    expect(ch2Subjects).toContain('anatomy');
-    expect(ch2Subjects).toContain('histology');
-    expect(ch2Subjects).toContain('physiology');
-    expect(ch2Subjects).toContain('microbiology');
-    expect(ch2Subjects).toContain('pathology');
-    expect(ch2Subjects).toContain('clinical'); // ENT clinical mapped to clinical
-
-    // Chapter 3 should have subjects like anatomy, physiology, clinical
-    const ch3Subjects = chapters[2].subjects.map(s => s.id);
-    expect(ch3Subjects).toContain('anatomy');
-    expect(ch3Subjects).toContain('physiology');
-    expect(ch3Subjects).toContain('clinical'); // ENT clinical mapped to clinical
+    const ch = chapters[0];
+    expect(ch.id).toBe(1);
+    expect(ch.title).toBe('Anatomy');
+    expect(ch.emoji).toBe('🦴');
+    expect(ch.page).toBe(4);
+    expect(ch.subjects.length).toBe(1);
+    expect(ch.subjects[0].id).toBe('anatomy');
+    expect(ch.subjects[0].lectureCount).toBe(17);
+    expect(ch.subjects[0].lectureNames).toHaveLength(17);
+    expect(ch.subjects[0].lectureNames).toContain('Bony Orbit');
+    expect(ch.subjects[0].lectureNames).toContain('Visual Pathway');
+    expect(ch.subjects[0].lectureNames).toContain('Anatomy of the ear');
+    expect(ch.subjects[0].lectureNames).toContain('Anatomy of the Facial Nerve');
+    expect(ch.subjects[0].lectureNames).toContain('Olfactory & Taste Pathways');
+    expect(ch.subjects[0].questions.length).toBe(0);
   });
 
-  it('ensures that lectureName list is correctly populated and questions are empty', () => {
+  it('chapter 2 is Histology with 3 lectures', () => {
+    const chapters = getChaptersForModuleAndMode('MSS-2', 'mixed');
+    const ch = chapters[1];
+    expect(ch.id).toBe(2);
+    expect(ch.title).toBe('Histology');
+    expect(ch.emoji).toBe('🔬');
+    expect(ch.subjects.length).toBe(1);
+    expect(ch.subjects[0].id).toBe('histology');
+    expect(ch.subjects[0].lectureCount).toBe(3);
+    expect(ch.subjects[0].lectureNames).toHaveLength(3);
+    expect(ch.subjects[0].lectureNames).toContain('The Eye');
+    expect(ch.subjects[0].lectureNames).toContain('The Ear');
+    expect(ch.subjects[0].lectureNames).toContain('Structure of the Ear');
+    expect(ch.subjects[0].questions.length).toBe(0);
+  });
+
+  it('chapter 3 is Biochemistry with 2 lectures', () => {
+    const chapters = getChaptersForModuleAndMode('MSS-2', 'mixed');
+    const ch = chapters[2];
+    expect(ch.id).toBe(3);
+    expect(ch.title).toBe('Biochemistry');
+    expect(ch.emoji).toBe('⚗️');
+    expect(ch.subjects.length).toBe(1);
+    expect(ch.subjects[0].id).toBe('biochem');
+    expect(ch.subjects[0].lectureCount).toBe(2);
+    expect(ch.subjects[0].lectureNames).toHaveLength(2);
+    expect(ch.subjects[0].lectureNames).toContain('Visual cycle and vitamin A');
+    expect(ch.subjects[0].lectureNames).toContain('Deficiency of vitamin A');
+    expect(ch.subjects[0].questions.length).toBe(0);
+  });
+
+  it('chapter 4 is Physiology with 12 lectures spanning vision, hearing, and chemical senses', () => {
+    const chapters = getChaptersForModuleAndMode('MSS-2', 'mixed');
+    const ch = chapters[3];
+    expect(ch.id).toBe(4);
+    expect(ch.title).toBe('Physiology');
+    expect(ch.emoji).toBe('⚡');
+    expect(ch.subjects.length).toBe(1);
+    expect(ch.subjects[0].id).toBe('physiology');
+    expect(ch.subjects[0].lectureCount).toBe(12);
+    expect(ch.subjects[0].lectureNames).toHaveLength(12);
+    expect(ch.subjects[0].lectureNames).toContain('Introduction to Vision Physiology and Vision Optics');
+    expect(ch.subjects[0].lectureNames).toContain('Accommodation, Errors of refraction, and Iris');
+    expect(ch.subjects[0].lectureNames).toContain('Physiology & Physics of Sound & Function of External and Middle Ear');
+    expect(ch.subjects[0].lectureNames).toContain('Physiology of Smell and Taste (Chemical Senses)');
+    expect(ch.subjects[0].lectureNames).toContain('Posture and equilibrium');
+    expect(ch.subjects[0].questions.length).toBe(0);
+  });
+
+  it('chapter 5 is Microbiology with 2 lectures', () => {
+    const chapters = getChaptersForModuleAndMode('MSS-2', 'mixed');
+    const ch = chapters[4];
+    expect(ch.id).toBe(5);
+    expect(ch.title).toBe('Microbiology');
+    expect(ch.emoji).toBe('🦠');
+    expect(ch.subjects.length).toBe(1);
+    expect(ch.subjects[0].id).toBe('microbiology');
+    expect(ch.subjects[0].lectureCount).toBe(2);
+    expect(ch.subjects[0].lectureNames).toContain('Infections of The Eye');
+    expect(ch.subjects[0].lectureNames).toContain('Infections of The Ear');
+    expect(ch.subjects[0].questions.length).toBe(0);
+  });
+
+  it('chapter 6 is Pathology with 2 lectures', () => {
+    const chapters = getChaptersForModuleAndMode('MSS-2', 'mixed');
+    const ch = chapters[5];
+    expect(ch.id).toBe(6);
+    expect(ch.title).toBe('Pathology');
+    expect(ch.emoji).toBe('🛡️');
+    expect(ch.subjects.length).toBe(1);
+    expect(ch.subjects[0].id).toBe('pathology');
+    expect(ch.subjects[0].lectureCount).toBe(2);
+    expect(ch.subjects[0].lectureNames).toContain('Diseases of The Eye');
+    expect(ch.subjects[0].lectureNames).toContain('Diseases of The Ear');
+    expect(ch.subjects[0].questions.length).toBe(0);
+  });
+
+  it('chapter 7 is Pharmacology with 1 lecture', () => {
+    const chapters = getChaptersForModuleAndMode('MSS-2', 'mixed');
+    const ch = chapters[6];
+    expect(ch.id).toBe(7);
+    expect(ch.title).toBe('Pharmacology');
+    expect(ch.emoji).toBe('💊');
+    expect(ch.subjects.length).toBe(1);
+    expect(ch.subjects[0].id).toBe('pharma');
+    expect(ch.subjects[0].lectureCount).toBe(1);
+    expect(ch.subjects[0].lectureNames).toContain('Drug Therapy of Glaucoma');
+    expect(ch.subjects[0].questions.length).toBe(0);
+  });
+
+  it('chapter 8 is Clinical (merged Ophthalmology + ENT) with 3 lectures', () => {
+    const chapters = getChaptersForModuleAndMode('MSS-2', 'mixed');
+    const ch = chapters[7];
+    expect(ch.id).toBe(8);
+    expect(ch.title).toBe('Clinical');
+    expect(ch.emoji).toBe('🩺');
+    expect(ch.subjects.length).toBe(1);
+    expect(ch.subjects[0].id).toBe('clinical');
+    expect(ch.subjects[0].lectureCount).toBe(3);
+    expect(ch.subjects[0].lectureNames).toContain('Basic Neuro-ophthalmic Examination');
+    expect(ch.subjects[0].lectureNames).toContain('Hearing Loss');
+    expect(ch.subjects[0].lectureNames).toContain('Taste and Smell Disorders');
+    expect(ch.subjects[0].questions.length).toBe(0);
+  });
+
+  it('all subjects have lectureNames length matching lectureCount and zero questions', () => {
     const chapters = getChaptersForModuleAndMode('MSS-2', 'mixed');
     for (const ch of chapters) {
       for (const subj of ch.subjects) {
         expect(subj.lectureNames).toBeDefined();
         expect(subj.lectureNames!.length).toBe(subj.lectureCount);
-        expect(subj.questions.length).toBe(0); // No questions right now, ready for future imports
+        expect(subj.questions.length).toBe(0);
       }
     }
   });

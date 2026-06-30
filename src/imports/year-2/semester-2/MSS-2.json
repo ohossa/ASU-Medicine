@@ -1,5 +1,6 @@
 {
   "schemaVersion": 1,
+  "comingSoon": false,
   "meta": {
     "moduleCode": "MSS-2",
     "moduleName": "Special Senses Module",
@@ -13,41 +14,67 @@
       "mss",
       "eye",
       "ear",
-      "ophthalmology",
-      "ent",
       "vision",
       "hearing",
       "smell",
-      "taste"
+      "taste",
+      "olfaction",
+      "olfactory",
+      "ophthalmology",
+      "ent",
+      "otorhinolaryngology",
+      "orbit",
+      "retina",
+      "cochlea",
+      "vestibular",
+      "glaucoma",
+      "visual cycle"
     ]
   },
   "chapters": [
     {
       "id": 1,
-      "title": "The Eye & Visual System",
-      "subtitle": "Anatomy, Histology, Biochemistry, Physiology, Pathology, Pharmacology, and Clinical Ophthalmology of the Eye",
-      "emoji": "👁️",
+      "title": "Anatomy",
+      "subtitle": "Anatomy of the Eye, Ear, and Chemical Senses",
+      "emoji": "🦴",
       "page": 4,
-      "lectureRange": "Lectures 1-20",
+      "lectureRange": "Lectures 1-17",
       "keywords": [
-        "eye",
-        "vision",
+        "bony orbit",
+        "orbital fascia",
+        "extra-ocular muscles",
+        "lacrimal apparatus",
+        "nerves of the orbit",
+        "vessels of the orbit",
+        "eyelids",
+        "palpebrae",
+        "development of the eye",
+        "visual pathway",
+        "visual reflexes",
+        "anatomy of the ear",
+        "auditory pathway",
+        "development of the ear",
+        "facial nerve",
+        "medial longitudinal fasciculus",
+        "vestibular pathway",
+        "olfactory",
+        "taste pathways",
         "orbit",
-        "extra-ocular",
-        "lacrimal",
-        "retina",
-        "photoreceptors",
-        "glaucoma",
-        "visual cycle",
-        "accommodation"
+        "optic",
+        "cochlea",
+        "tympanic",
+        "ossicles",
+        "labyrinth",
+        "nasal",
+        "gustatory"
       ],
       "subjects": [
         {
           "id": "anatomy",
           "name": "Anatomy",
           "iconName": "Bone",
-          "lectures": "Bony Orbit, Orbital Fascia, Extra-ocular Muscles, Lacrimal Apparatus, Nerves of the Orbit, Vessels of the Orbit, Anatomy of the Eyelids (palpebrae), Development of the eye, Visual Pathway, Visual Reflexes",
-          "lectureCount": 10,
+          "lectures": "Bony Orbit, Orbital Fascia, Extra-ocular Muscles, Lacrimal Apparatus, Nerves of the Orbit, Vessels of the Orbit, Anatomy of the Eyelids (palpebrae), Development of the eye, Visual Pathway, Visual Reflexes, Anatomy of the ear, Auditory Pathway, Development of the Ear, Anatomy of the Facial Nerve, Medial Longitudinal Fasciculus (Bundle), Vestibular Pathway, Olfactory & Taste Pathways",
+          "lectureCount": 17,
           "lectureNames": [
             "Bony Orbit",
             "Orbital Fascia",
@@ -58,38 +85,76 @@
             "Anatomy of the Eyelids (palpebrae)",
             "Development of the eye",
             "Visual Pathway",
-            "Visual Reflexes"
+            "Visual Reflexes",
+            "Anatomy of the ear",
+            "Auditory Pathway",
+            "Development of the Ear",
+            "Anatomy of the Facial Nerve",
+            "Medial Longitudinal Fasciculus (Bundle)",
+            "Vestibular Pathway",
+            "Olfactory & Taste Pathways"
           ],
           "questions": []
-        },
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Histology",
+      "subtitle": "Histology of the Eye and Ear",
+      "emoji": "🔬",
+      "page": 58,
+      "lectureRange": "Lectures 1-3",
+      "keywords": [
+        "histology",
+        "histology of the eye",
+        "histology of the ear",
+        "structure of the ear",
+        "microscopy",
+        "retina layers",
+        "cornea histology",
+        "lens histology",
+        "cochlea histology",
+        "organ of corti",
+        "slide"
+      ],
+      "subjects": [
         {
           "id": "histology",
           "name": "Histology",
           "iconName": "Microscope",
-          "lectures": "The Eye",
-          "lectureCount": 1,
+          "lectures": "The Eye, The Ear, Structure of the Ear",
+          "lectureCount": 3,
           "lectureNames": [
-            "The Eye"
+            "The Eye",
+            "The Ear",
+            "Structure of the Ear"
           ],
           "questions": []
-        },
-        {
-          "id": "physiology",
-          "name": "Physiology",
-          "iconName": "Activity",
-          "lectures": "Introduction to Vision Physiology and Vision Optics, Light path through cornea, Aqueous humor and Lens, Accommodation, Errors of refraction, and Iris, Organization and Functions of Retinal Neurons, Photoreceptors, Dark and light adaptation, and visual cortex, Color Vision, Binocular Vision, and Eye Movements",
-          "lectureCount": 7,
-          "lectureNames": [
-            "Introduction to Vision Physiology and Vision Optics",
-            "Light path through cornea, Aqueous humor and Lens",
-            "Accommodation, Errors of refraction, and Iris",
-            "Organization and Functions of Retinal Neurons",
-            "Photoreceptors",
-            "Dark and light adaptation, and visual cortex",
-            "Color Vision, Binocular Vision, and Eye Movements"
-          ],
-          "questions": []
-        },
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Biochemistry",
+      "subtitle": "Visual Cycle and Vitamin A Biochemistry",
+      "emoji": "⚗️",
+      "page": 82,
+      "lectureRange": "Lectures 1-2",
+      "keywords": [
+        "visual cycle",
+        "vitamin a",
+        "retinol",
+        "retinal",
+        "rhodopsin",
+        "deficiency of vitamin a",
+        "night blindness",
+        "xerophthalmia",
+        "biochemistry",
+        "photopigment",
+        "isomerization"
+      ],
+      "subjects": [
         {
           "id": "biochem",
           "name": "Biochemistry",
@@ -101,29 +166,166 @@
             "Deficiency of vitamin A"
           ],
           "questions": []
-        },
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "Physiology",
+      "subtitle": "Physiology of Vision, Hearing, Vestibular, and Chemical Senses",
+      "emoji": "⚡",
+      "page": 87,
+      "lectureRange": "Lectures 1-12",
+      "keywords": [
+        "vision physiology",
+        "vision optics",
+        "aqueous humor",
+        "lens",
+        "accommodation",
+        "refraction",
+        "iris",
+        "retinal neurons",
+        "photoreceptors",
+        "dark adaptation",
+        "light adaptation",
+        "color vision",
+        "binocular vision",
+        "eye movements",
+        "physics of sound",
+        "middle ear physiology",
+        "inner ear physiology",
+        "hearing impairment",
+        "hearing tests",
+        "smell physiology",
+        "taste physiology",
+        "posture",
+        "equilibrium",
+        "vestibular function",
+        "cornea",
+        "retina physiology",
+        "olfaction physiology",
+        "gustatory physiology"
+      ],
+      "subjects": [
+        {
+          "id": "physiology",
+          "name": "Physiology",
+          "iconName": "Activity",
+          "lectures": "Introduction to Vision Physiology and Vision Optics, Light path through cornea Aqueous humor and Lens, Accommodation Errors of refraction and Iris, Organization and Functions of Retinal Neurons, Photoreceptors, Dark and light adaptation and visual cortex, Color Vision Binocular Vision and Eye Movements, Physiology & Physics of Sound & Function of External and Middle Ear, Physiology Function of Inner Ear, Discrimination of Sounds and Hearing Impairment and Hearing Tests, Physiology of Smell and Taste (Chemical Senses), Posture and equilibrium",
+          "lectureCount": 12,
+          "lectureNames": [
+            "Introduction to Vision Physiology and Vision Optics",
+            "Light path through cornea, Aqueous humor and Lens",
+            "Accommodation, Errors of refraction, and Iris",
+            "Organization and Functions of Retinal Neurons",
+            "Photoreceptors",
+            "Dark and light adaptation, and visual cortex",
+            "Color Vision, Binocular Vision, and Eye Movements",
+            "Physiology & Physics of Sound & Function of External and Middle Ear",
+            "Physiology Function of Inner Ear",
+            "Discrimination of Sounds and Hearing Impairment and Hearing Tests",
+            "Physiology of Smell and Taste (Chemical Senses)",
+            "Posture and equilibrium"
+          ],
+          "questions": []
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Microbiology",
+      "subtitle": "Infections of the Eye and Ear",
+      "emoji": "🦠",
+      "page": 173,
+      "lectureRange": "Lectures 1-2",
+      "keywords": [
+        "infections of the eye",
+        "infections of the ear",
+        "eye infection",
+        "ear infection",
+        "conjunctivitis",
+        "trachoma",
+        "keratitis",
+        "otitis media",
+        "otitis externa",
+        "microbiology",
+        "bacteria eye",
+        "bacteria ear",
+        "virus eye"
+      ],
+      "subjects": [
         {
           "id": "microbiology",
           "name": "Microbiology",
           "iconName": "Biohazard",
-          "lectures": "Infections of The Eye",
-          "lectureCount": 1,
+          "lectures": "Infections of The Eye, Infections of The Ear",
+          "lectureCount": 2,
           "lectureNames": [
-            "Infections of The Eye"
+            "Infections of The Eye",
+            "Infections of The Ear"
           ],
           "questions": []
-        },
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "Pathology",
+      "subtitle": "Diseases of the Eye and Ear",
+      "emoji": "🛡️",
+      "page": 185,
+      "lectureRange": "Lectures 1-2",
+      "keywords": [
+        "diseases of the eye",
+        "diseases of the ear",
+        "glaucoma pathology",
+        "cataract pathology",
+        "retinoblastoma",
+        "macular degeneration",
+        "uveitis",
+        "otosclerosis",
+        "cholesteatoma",
+        "acoustic neuroma",
+        "pathology slide"
+      ],
+      "subjects": [
         {
           "id": "pathology",
           "name": "Pathology",
           "iconName": "ShieldAlert",
-          "lectures": "Diseases of The Eye",
-          "lectureCount": 1,
+          "lectures": "Diseases of The Eye, Diseases of The Ear",
+          "lectureCount": 2,
           "lectureNames": [
-            "Diseases of The Eye"
+            "Diseases of The Eye",
+            "Diseases of The Ear"
           ],
           "questions": []
-        },
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Pharmacology",
+      "subtitle": "Drug Therapy of Glaucoma",
+      "emoji": "💊",
+      "page": 200,
+      "lectureRange": "Lecture 1",
+      "keywords": [
+        "drug therapy of glaucoma",
+        "antiglaucoma",
+        "pharmacology",
+        "glaucoma drugs",
+        "beta blockers eye",
+        "prostaglandin analogs",
+        "carbonic anhydrase inhibitors",
+        "pilocarpine",
+        "timolol",
+        "latanoprost",
+        "miotics",
+        "intraocular pressure",
+        "iop"
+      ],
+      "subjects": [
         {
           "id": "pharma",
           "name": "Pharmacology",
@@ -134,162 +336,47 @@
             "Drug Therapy of Glaucoma"
           ],
           "questions": []
-        },
-        {
-          "id": "clinical",
-          "name": "Clinical",
-          "iconName": "Stethoscope",
-          "lectures": "Basic Neuro-ophthalmic Examination",
-          "lectureCount": 1,
-          "lectureNames": [
-            "Basic Neuro-ophthalmic Examination"
-          ],
-          "questions": []
         }
       ]
     },
     {
-      "id": 2,
-      "title": "The Ear & Auditory/Vestibular Systems",
-      "subtitle": "Anatomy, Histology, Physiology, Pathology, Microbiology, and Clinical Otorhinolaryngology of the Ear",
-      "emoji": "👂",
-      "page": 35,
-      "lectureRange": "Lectures 21-27",
+      "id": 8,
+      "title": "Clinical",
+      "subtitle": "Clinical Ophthalmology and ENT (Otorhinolaryngology)",
+      "emoji": "🩺",
+      "page": 205,
+      "lectureRange": "Lectures 1-3",
       "keywords": [
-        "ear",
-        "hearing",
-        "cochlea",
-        "auditory",
-        "vestibular",
-        "balance",
-        "facial nerve",
-        "tympanic",
-        "hearing loss"
+        "ophthalmology",
+        "ent",
+        "otorhinolaryngology",
+        "neuro-ophthalmic examination",
+        "basic neuro-ophthalmic examination",
+        "hearing loss",
+        "taste disorders",
+        "smell disorders",
+        "anosmia",
+        "ageusia",
+        "conductive hearing loss",
+        "sensorineural hearing loss",
+        "diplopia",
+        "ptosis",
+        "nystagmus",
+        "pupil reflex",
+        "rinne test",
+        "weber test",
+        "clinical"
       ],
       "subjects": [
-        {
-          "id": "anatomy",
-          "name": "Anatomy",
-          "iconName": "Bone",
-          "lectures": "Anatomy of the ear, Auditory Pathway, Development of the Ear, Anatomy of the Facial Nerve, Medial Longitudinal Fasciculus (Bundle), Vestibular Pathway",
-          "lectureCount": 6,
-          "lectureNames": [
-            "Anatomy of the ear",
-            "Auditory Pathway",
-            "Development of the Ear",
-            "Anatomy of the Facial Nerve",
-            "Medial Longitudinal Fasciculus (Bundle)",
-            "Vestibular Pathway"
-          ],
-          "questions": []
-        },
-        {
-          "id": "histology",
-          "name": "Histology",
-          "iconName": "Microscope",
-          "lectures": "The Ear, Structure of the Ear",
-          "lectureCount": 2,
-          "lectureNames": [
-            "The Ear",
-            "Structure of the Ear"
-          ],
-          "questions": []
-        },
-        {
-          "id": "physiology",
-          "name": "Physiology",
-          "iconName": "Activity",
-          "lectures": "Physiology & Physics of Sound & Function of External and Middle Ear, Physiology Function of Inner Ear, Discrimination of Sounds and Hearing Impairment and Hearing Tests, Posture and equilibrium",
-          "lectureCount": 4,
-          "lectureNames": [
-            "Physiology & Physics of Sound & Function of External and Middle Ear",
-            "Physiology Function of Inner Ear",
-            "Discrimination of Sounds and Hearing Impairment and Hearing Tests",
-            "Posture and equilibrium"
-          ],
-          "questions": []
-        },
-        {
-          "id": "microbiology",
-          "name": "Microbiology",
-          "iconName": "Biohazard",
-          "lectures": "Infections of The Ear",
-          "lectureCount": 1,
-          "lectureNames": [
-            "Infections of The Ear"
-          ],
-          "questions": []
-        },
-        {
-          "id": "pathology",
-          "name": "Pathology",
-          "iconName": "ShieldAlert",
-          "lectures": "Diseases of The Ear",
-          "lectureCount": 1,
-          "lectureNames": [
-            "Diseases of The Ear"
-          ],
-          "questions": []
-        },
         {
           "id": "clinical",
           "name": "Clinical",
           "iconName": "Stethoscope",
-          "lectures": "Hearing Loss",
-          "lectureCount": 1,
+          "lectures": "Basic Neuro-ophthalmic Examination, Hearing Loss, Taste and Smell Disorders",
+          "lectureCount": 3,
           "lectureNames": [
-            "Hearing Loss"
-          ],
-          "questions": []
-        }
-      ]
-    },
-    {
-      "id": 3,
-      "title": "Chemical Senses (Smell & Taste)",
-      "subtitle": "Olfactory & Gustatory Anatomy, Physiology, and Clinical Disorders",
-      "emoji": "👅",
-      "page": 56,
-      "lectureRange": "Lectures 28-30",
-      "keywords": [
-        "smell",
-        "taste",
-        "olfactory",
-        "gustatory",
-        "chemical senses",
-        "olfaction",
-        "taste buds"
-      ],
-      "subjects": [
-        {
-          "id": "anatomy",
-          "name": "Anatomy",
-          "iconName": "Bone",
-          "lectures": "Olfactory & Taste Pathways",
-          "lectureCount": 1,
-          "lectureNames": [
-            "Olfactory & Taste Pathways"
-          ],
-          "questions": []
-        },
-        {
-          "id": "physiology",
-          "name": "Physiology",
-          "iconName": "Activity",
-          "lectures": "Physiology of Smell and Taste (Chemical Senses)",
-          "lectureCount": 1,
-          "lectureNames": [
-            "Physiology of Smell and Taste (Chemical Senses)"
-          ],
-          "questions": []
-        },
-        {
-          "id": "clinical",
-          "name": "Clinical",
-          "iconName": "Stethoscope",
-          "lectures": "Taste and Smell Disorders",
-          "lectureCount": 1,
-          "lectureNames": [
+            "Basic Neuro-ophthalmic Examination",
+            "Hearing Loss",
             "Taste and Smell Disorders"
           ],
           "questions": []

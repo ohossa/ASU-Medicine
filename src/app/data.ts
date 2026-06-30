@@ -384,7 +384,7 @@ export const SYLLABUS_MODULES: Record<number, Record<number, ModuleInfo[]>> = {
     ],
     2: [
       { code: 'MCNS-2', name: 'Central Nervous System Module', cp: 13, marks: 260, keywords: ['cns', 'central nervous', 'mcns', 'neuro', 'neurology', 'brain', 'spinal cord', 'cerebrum', 'cerebellum', 'sensory', 'motor', 'nerves'] },
-      { code: 'MSS-2', name: 'Special Senses Module', cp: 4, marks: 80, keywords: ['special senses', 'senses', 'mss', 'eye', 'ear', 'ophthalmology', 'vision', 'hearing', 'olfaction', 'taste'] },
+      { code: 'MSS-2', name: 'Special Senses Module', cp: 4, marks: 80, keywords: ['special senses', 'senses', 'mss', 'eye', 'ear', 'ophthalmology', 'ent', 'otorhinolaryngology', 'vision', 'hearing', 'smell', 'taste', 'olfaction', 'olfactory', 'orbit', 'retina', 'cochlea', 'vestibular', 'glaucoma', 'visual cycle'] },
       { code: 'MEM-2', name: 'Endocrine System & Metabolism Module', cp: 5.5, marks: 110, keywords: ['endocrine', 'metabolism', 'mem', 'hormone', 'hormones', 'pituitary', 'thyroid', 'adrenal', 'pancreas', 'diabetes'] },
       { code: 'P3-2', name: 'Behavioral science', cp: 1.5, marks: 30, keywords: ['behavioral', 'science', 'psychology', 'psychiatry', 'behavioral science'] },
       { code: 'R-2', name: 'Fundamentals of Research', cp: 3, marks: 60, keywords: ['research', 'fundamentals', 'research methodology', 'biostatistics', 'fundamentals of research'] },
