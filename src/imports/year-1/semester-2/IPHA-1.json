@@ -6108,6 +6108,39 @@
               ],
               "correctIndex": 1,
               "modelAnswer": null
+            },
+            {
+              "id": "IPHA1-CH2-PHAR-0174",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "Intrinsic activity is a drug's ability to elicit:",
+              "explanation": "Intrinsic activity (efficacy) is the ability of a drug, once bound to its receptor, to activate it and produce a biological response. Binding affinity is a separate property; a drug can bind strongly yet have no intrinsic activity (a pure antagonist).",
+              "keyConcept": "Intrinsic activity (efficacy) = ability to produce a response after binding.",
+              "options": [
+                "Strong receptor binding",
+                "Weak receptor binding",
+                "Response",
+                "Distribution"
+              ],
+              "correctIndex": 2,
+              "modelAnswer": null
+            },
+            {
+              "id": "IPHA1-CH2-PHAR-0175",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "Regarding an inverse agonist, which of the following is correct?",
+              "explanation": "An inverse agonist has affinity for the receptor and possesses (negative) intrinsic efficacy, producing an effect opposite to that of the agonist by reducing constitutive receptor activity. In tissues lacking constitutive activity it behaves like a competitive antagonist, so both B and C are correct.",
+              "keyConcept": "Inverse agonists have affinity and negative efficacy; act as antagonists when there is no constitutive activity.",
+              "options": [
+                "In the absence of the agonist, it blocks the empty receptor",
+                "Has both affinity and efficacy",
+                "It is considered pharmacologically as an antagonist",
+                "Has no effect by itself",
+                "B and C"
+              ],
+              "correctIndex": 4,
+              "modelAnswer": null
             }
           ]
         }
@@ -11774,6 +11807,154 @@
                 "Bethanechol / Paralytic ileus"
               ],
               "correctIndex": 2,
+              "modelAnswer": null
+            },
+            {
+              "id": "IPHA1-CH4-PHAR-0139",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "All of the following decrease intraocular pressure (IOP) EXCEPT:",
+              "explanation": "Pilocarpine (miotic), timolol (beta-blocker) and dipivefrin (epinephrine prodrug) all lower IOP. Tropicamide is an antimuscarinic mydriatic/cycloplegic that raises IOP and can precipitate angle-closure glaucoma.",
+              "keyConcept": "Antimuscarinic mydriatics such as tropicamide raise IOP, unlike miotics and beta-blockers.",
+              "options": [
+                "Pilocarpine",
+                "Tropicamide",
+                "Timolol",
+                "Dipivefrin (epinephrine)"
+              ],
+              "correctIndex": 1,
+              "modelAnswer": null
+            },
+            {
+              "id": "IPHA1-CH4-PHAR-0140",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Pilocarpine does NOT lower IOP in open-angle glaucoma by:",
+              "explanation": "Pilocarpine contracts the ciliary muscle and sphincter pupillae, opening the trabecular meshwork and increasing aqueous humour outflow (drainage). It does not reduce aqueous humour formation, which is the mechanism of beta-blockers and carbonic anhydrase inhibitors.",
+              "keyConcept": "Pilocarpine lowers IOP by increasing outflow, not by decreasing aqueous humour formation.",
+              "options": [
+                "Increasing tone of the ciliary muscle",
+                "Contracting the sphincter pupillae muscle",
+                "Increasing aqueous humour drainage",
+                "Decreasing aqueous humour formation"
+              ],
+              "correctIndex": 3,
+              "modelAnswer": null
+            },
+            {
+              "id": "IPHA1-CH4-PHAR-0141",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "All of the following drugs can block the action of acetylcholine on muscarinic receptors EXCEPT:",
+              "explanation": "Atropine, scopolamine, tropicamide and ipratropium are antimuscarinic (muscarinic-blocking) drugs. Edrophonium is a short-acting acetylcholinesterase inhibitor that increases acetylcholine, so it does not block muscarinic receptors.",
+              "keyConcept": "Edrophonium is an anticholinesterase, not a muscarinic blocker.",
+              "options": [
+                "Atropine",
+                "Scopolamine",
+                "Tropicamide",
+                "Edrophonium",
+                "Ipratropium"
+              ],
+              "correctIndex": 3,
+              "modelAnswer": null
+            },
+            {
+              "id": "IPHA1-CH4-PHAR-0142",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The following is NOT correct about organophosphate toxicity:",
+              "explanation": "Neostigmine is itself a cholinesterase inhibitor and is contraindicated in organophosphate poisoning because it would worsen cholinergic excess. Correct management is atropine titrated to dryness of secretions, early oxime (enzyme reactivator) administration, and diazepam for central/convulsive effects.",
+              "keyConcept": "Neostigmine is contraindicated in organophosphate poisoning; treat with atropine, early oximes, and diazepam.",
+              "options": [
+                "Atropine should be repeated till dryness of secretions",
+                "Enzyme reactivators should be used as early as possible",
+                "Neostigmine is added to avoid respiratory complications",
+                "Diazepam is used to counteract central effects"
+              ],
+              "correctIndex": 2,
+              "modelAnswer": null
+            },
+            {
+              "id": "IPHA1-CH4-PHAR-0143",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "A patient presents with organophosphate (malathion) poisoning. Which of the following is true about malathion?",
+              "explanation": "Malathion is an organophosphate that irreversibly inhibits both true (acetyl-) and pseudo- (butyryl-) cholinesterase, raising acetylcholine levels. It is highly lipophilic and is readily absorbed through the skin, so option C is false; A and B are both correct.",
+              "keyConcept": "Organophosphates inhibit true and pseudo-cholinesterase, raising ACh, and are absorbed transdermally.",
+              "options": [
+                "It increases the level of acetylcholine in the body",
+                "It inhibits true and pseudo-cholinesterase enzymes",
+                "It cannot be absorbed from the skin",
+                "A and B"
+              ],
+              "correctIndex": 3,
+              "modelAnswer": null
+            },
+            {
+              "id": "IPHA1-CH4-PHAR-0144",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "In a patient with organophosphate (malathion) poisoning, the cause of respiratory failure is:",
+              "explanation": "Respiratory failure in organophosphate poisoning results from bronchoconstriction and excessive secretions (muscarinic M3 effects) combined with paralysis of the respiratory muscles due to depolarising block at the neuromuscular (Nm) receptors. Thus both A and C contribute.",
+              "keyConcept": "OP respiratory failure = M3 bronchoconstriction/secretions plus Nm respiratory-muscle paralysis.",
+              "options": [
+                "Stimulation of bronchial M3 receptors",
+                "Stimulation of M2 receptors of the respiratory centre",
+                "Stimulation of Nm receptors of respiratory muscles",
+                "A and C",
+                "All of the above"
+              ],
+              "correctIndex": 3,
+              "modelAnswer": null
+            },
+            {
+              "id": "IPHA1-CH4-PHAR-0145",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "In a patient with organophosphate (malathion) poisoning, clinical examination of the pupils would reveal:",
+              "explanation": "Excess acetylcholine stimulates muscarinic receptors of the sphincter pupillae, producing pinpoint pupils (miosis), a hallmark of organophosphate (cholinergic) poisoning.",
+              "keyConcept": "Organophosphate poisoning causes miosis (pinpoint pupils).",
+              "options": [
+                "Miosis",
+                "Dilated reactive pupil",
+                "Dilated non-reactive pupil",
+                "No change in pupil size"
+              ],
+              "correctIndex": 0,
+              "modelAnswer": null
+            },
+            {
+              "id": "IPHA1-CH4-PHAR-0146",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following is a relevant sign of full atropinisation?",
+              "explanation": "In organophosphate poisoning the therapeutic end-point of atropine dosing (atropinisation) is the drying of bronchial/respiratory secretions. Although tachycardia, mydriasis and bronchodilatation also occur, dryness of secretions is the key clinical sign used to judge adequate atropinisation.",
+              "keyConcept": "Adequate atropinisation is judged by drying of respiratory secretions.",
+              "options": [
+                "Tachycardia",
+                "Mydriasis",
+                "Bronchodilatation",
+                "Dryness of respiratory secretions",
+                "None of the above"
+              ],
+              "correctIndex": 3,
+              "modelAnswer": null
+            },
+            {
+              "id": "IPHA1-CH4-PHAR-0147",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "All of the following drugs can be useful in the treatment of organophosphate (malathion) poisoning EXCEPT:",
+              "explanation": "Atropine and diazepam (plus oxime reactivators) are used in management, and sodium hypochlorite is used for surface/skin decontamination. Cevimeline is a muscarinic (M3) agonist that would aggravate the cholinergic crisis and is therefore not useful/contraindicated.",
+              "keyConcept": "Cholinomimetics such as cevimeline are contraindicated in organophosphate poisoning.",
+              "options": [
+                "Atropine",
+                "Diazepam",
+                "Sodium hypochlorite",
+                "Cevimeline",
+                "A and B"
+              ],
+              "correctIndex": 3,
               "modelAnswer": null
             }
           ]
