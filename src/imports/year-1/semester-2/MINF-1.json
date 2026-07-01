@@ -2688,11 +2688,11 @@
               "id": "MINF1-CH1-MICR-0162",
               "type": "mcq",
               "lecture": 5,
-              "text": "Which of the following DNA • Bacterial can not autonomously replicate? chromosome",
+              "text": "Which of the following bacterial DNA cannot autonomously replicate?",
               "explanation": "The correct answer is Transposons. This is a bacterial genetics item, so the key is distinguishing mutation from transformation, transduction, conjugation, lysogeny, plasmids, and transposons. The wrong answers generally use the wrong route of DNA transfer or the wrong genetic vehicle.",
-              "keyConcept": "Bacterial genetics high-yield: Which of the following DNA • Bacterial can not autonomously replicate? chromosome → Transposons.",
+              "keyConcept": "Bacterial genetics: Which of the following bacterial DNA cannot autonomously replicate? → Transposons.",
               "options": [
-                "Chromosome Transposon can be transferred by conjucation",
+                "Bacterial chromosome",
                 "Plasmid",
                 "Lytic phage",
                 "Transposons"
@@ -3945,9 +3945,9 @@
               "id": "MINF1-CH1-MICR-0239",
               "type": "mcq",
               "lecture": 7,
-              "text": "Which one of the following Statements concerning Mycobacterium tuberculosis is correct 8:13 PMSun 25 Jun •.. •100% C • asu2learn.asu.edu.eg QUESTION 8 Which one of the following Salmonella species can be a cause of food poisoning",
+              "text": "Which one of the following Salmonella species can be a cause of food poisoning?",
               "explanation": "The correct answer is Salmonella enteritidis. The item depends on identifying medically important bacteria by Gram reaction, shape, culture requirement, biochemical test, virulence factor, disease syndrome, or specimen. The distractors overlap clinically but fail the specific laboratory or pathogenic clue.",
-              "keyConcept": "Medically important bacteria high-yield: Which one of the following Statements concerning Mycobacterium tuberculosis is correct 8:13 PMSun 25 Jun •.. •100% C • asu2learn.asu.edu.eg QUESTION 8 Which one of the following Salmonella species can be a cause of food poisoning → Salmonella enteritidis.",
+              "keyConcept": "Medically important bacteria: Which one of the following Salmonella species can be a cause of food poisoning? → Salmonella enteritidis.",
               "options": [
                 "Salmonella enteritidis",
                 "Salmonella para typhi C",
@@ -3962,15 +3962,15 @@
               "id": "MINF1-CH1-MICR-0240",
               "type": "mcq",
               "lecture": 9,
-              "text": "Enumerate ve examples of toxicity caused by antimicrobial agent",
+              "text": "The protein coat that surrounds the nucleic acid of a virus is called the:",
               "explanation": "The correct answer is Capsid. The item tests general virology, including capsid/envelope/genome structure, replication, cytopathic effect, inclusion bodies, and diagnostic methods. The distractors commonly confuse antibody, antigen, nucleic-acid detection, and intact-virus detection or mix structural terms.",
-              "keyConcept": "Medical virology high-yield: Enumerate ve examples of toxicity caused by antimicrobial agent → Capsid.",
+              "keyConcept": "Medical virology: The protein coat that surrounds the nucleic acid of a virus is called the: → Capsid.",
               "options": [
                 "DNA",
                 "The envelope",
                 "Capsid",
                 "RNA",
-                "Tail bers"
+                "Tail fibers"
               ],
               "correctIndex": 2,
               "modelAnswer": null
@@ -5881,15 +5881,14 @@
               "id": "MINF1-CH1-MICR-0359",
               "type": "mcq",
               "lecture": 4,
-              "text": "concerning septic shock, which of the following is correct:",
-              "explanation": "The correct answer is it's caused by an AB toxin. The clinical or mechanistic clue points to host-microbe interaction, including normal flora, colonization, virulence factors, endotoxin, exotoxin, and inflammatory injury. The distractors describe nearby concepts but not the precise mechanism or outcome in the question.",
-              "keyConcept": "Host-microbe relationship high-yield: concerning septic shock, which of the following is correct: → it's caused by an AB toxin.",
+              "text": "Concerning septic shock, which of the following is correct?",
+              "explanation": "The correct answer is (a) It is caused by the lipid A of Gram-negative bacteria. Endotoxin (LPS) activates macrophages, leading to massive cytokine release (TNF-alpha, IL-1, IL-6), which triggers vasodilation and septic shock.",
+              "keyConcept": "Host-microbe relationship: Concerning septic shock, which of the following is correct? → It is caused by the lipid A of Gram-negative bacteria.",
               "options": [
-                "it's caused by an AB toxin",
-                "caused by a super Ag © considered as Type 3 Hypersensitivity dD lipid A layer of G-ve bacteria is the cause behind this case I- hemolysins are considered as",
-                "endotoxins",
-                "structural toxins",
-                "membrane disturbing \"cytolytic toxins\" dD A-B toxins"
+                "It is caused by the lipid A of Gram-negative bacteria",
+                "It is caused by an A-B toxin",
+                "It is caused by superantigens",
+                "It is mediated by Type III hypersensitivity"
               ],
               "correctIndex": 0,
               "modelAnswer": null
