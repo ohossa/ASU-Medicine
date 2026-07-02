@@ -23,7 +23,10 @@ export default function QuizResumeCard({
   onRestart,
   onCancel,
 }: QuizResumeCardProps) {
-  const remaining = total - answeredCount;
+  const sanitizedTotal = Math.max(0, total);
+  const displayCurrent = sanitizedTotal > 0 ? Math.min(current, sanitizedTotal - 1) : 0;
+  const displayAnswered = Math.min(sanitizedTotal, Math.max(0, answeredCount));
+  const remaining = Math.max(0, sanitizedTotal - displayAnswered);
 
   return (
     <AnimatePresence>
@@ -70,11 +73,11 @@ export default function QuizResumeCard({
 
             <div className="mb-5 grid grid-cols-3 gap-2">
               <div className="rounded-2xl border border-gray-200 dark:border-white/[0.06] bg-gray-50/50 dark:bg-white/[0.03] p-3 text-center">
-                <div className="text-lg font-bold tabular-nums text-gray-900 dark:text-white">{current + 1}</div>
+                <div className="text-lg font-bold tabular-nums text-gray-900 dark:text-white">{displayCurrent + 1}</div>
                 <div className="text-[10px] font-semibold text-gray-500 dark:text-white/40 uppercase tracking-wider">Question</div>
               </div>
               <div className="rounded-2xl border border-gray-200 dark:border-white/[0.06] bg-gray-50/50 dark:bg-white/[0.03] p-3 text-center">
-                <div className="text-lg font-bold tabular-nums text-gray-900 dark:text-white">{answeredCount}</div>
+                <div className="text-lg font-bold tabular-nums text-gray-900 dark:text-white">{displayAnswered}</div>
                 <div className="text-[10px] font-semibold text-gray-500 dark:text-white/40 uppercase tracking-wider">Answered</div>
               </div>
               <div className="rounded-2xl border border-gray-200 dark:border-white/[0.06] bg-gray-50/50 dark:bg-white/[0.03] p-3 text-center">
@@ -93,7 +96,7 @@ export default function QuizResumeCard({
                 onClick={onResume}
                 className="flex items-center justify-center gap-2 rounded-2xl bg-gray-950 dark:bg-white px-5 py-3 text-sm font-bold text-white dark:text-black hover:bg-gray-900 dark:hover:bg-gray-100 transition-colors active:scale-[0.98]"
               >
-                <Play size={16} /> Resume from Q{current + 1}
+                <Play size={16} /> Resume from Q{displayCurrent + 1}
               </button>
               <button
                 onClick={onRestart}

@@ -367,7 +367,10 @@ function MainApp() {
   const [resultPayload, setResultPayload] = useState<ResultPayload | null>(null);
 
   const transformedChapter = useMemo(() => {
-    if (!selectedChapter || selectedModule?.code !== 'MINF-1') {
+    if (!selectedChapter) return null;
+    const isMINF = selectedModule?.code === 'MINF-1';
+    const isMSS = selectedModule?.code === 'MSS-2' && selectedChapter.id >= 1 && selectedChapter.id <= 8;
+    if (!isMINF && !isMSS) {
       return selectedChapter;
     }
     const parentSubject = selectedChapter.subjects[0];
@@ -1016,7 +1019,7 @@ function MainApp() {
                     setScreen={setScreen}
                     activeChapters={activeChapters}
                     studyModeNameMap={studyModeNameMap}
-                    selectedChapter={selectedModule?.code === 'MINF-1' ? transformedChapter : selectedChapter}
+                    selectedChapter={transformedChapter}
                     handleSelectChapter={handleSelectChapter}
                     handleSelectHistory={handleSelectHistory}
                     customUserButton={customUserButton}

@@ -122,7 +122,12 @@ export function useQuizEngine(params: {
     initialShowGrid = false, initialShowShortcuts = false,
   } = params;
 
-  const [current, setCurrent] = useState(initialCurrent);
+  const [current, setCurrent] = useState(() => {
+    if (initialCurrent < 0 || initialCurrent >= questions.length) {
+      return Math.max(0, questions.length - 1);
+    }
+    return initialCurrent;
+  });
   const [answers, setAnswers] = useState<Record<number, unknown>>(() => initialAnswers ?? {});
   const [flagged, setFlagged] = useState<Set<number>>(() => new Set(initialFlagged ?? []));
   const [elapsedSeconds, setElapsedSeconds] = useState(initialElapsedSeconds);

@@ -201,8 +201,10 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart, 
   const { t, language } = useLanguage();
   const isRTL = language === 'ar';
 
+  const isLectureBased = moduleCode === 'MINF-1' || (moduleCode === 'MSS-2' && chapter.id >= 1 && chapter.id <= 8);
+
   const label = (key: string): string => {
-    if (moduleCode === 'MINF-1') {
+    if (isLectureBased) {
       if (key === 'subjects') return isRTL ? 'المحاضرات' : 'Lectures';
       if (key === 'startAll') return isRTL ? 'ابدأ كل المحاضرات' : 'Start All Lectures';
       if (key === 'quickStartDesc') return isRTL ? 'اختبر كل محاضرات هذا القسم في جلسة واحدة مجمعة.' : 'Take on every lecture in this chapter in one combined session.';
@@ -266,7 +268,7 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart, 
     const lectures = trackerData[chapter.id]?.lectures ?? {};
     const result: Record<string, number> = {};
     for (const subject of chapter.subjects) {
-      if (moduleCode === 'MINF-1' && subject.lectureNum !== undefined) {
+      if (isLectureBased && subject.lectureNum !== undefined) {
         const key = `${subject.id}_L${subject.lectureNum}`;
         const ls = lectures[key];
         let done = 0;
@@ -290,17 +292,17 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart, 
       }
     }
     return result;
-  }, [trackerData, chapter, moduleCode]);
+  }, [trackerData, chapter, isLectureBased]);
 
   /* Per-subject latest exam result */
   const latestResults = useMemo(() => {
     const result: Record<string, LatestResult | null> = {};
     for (const subject of chapter.subjects) {
-      const key = moduleCode === 'MINF-1' ? subject.name : subject.id;
+      const key = isLectureBased ? subject.name : subject.id;
       result[key] = matchLatestResult(history, chapter.id, subject.name);
     }
     return result;
-  }, [history, chapter, moduleCode]);
+  }, [history, chapter, isLectureBased]);
 
   const allQuestions = useMemo(() => chapter.subjects.flatMap((s) => s.questions), [chapter]);
   const activeSubjects = chapter.subjects.filter((s) => s.questions.length > 0).length;
@@ -420,13 +422,13 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart, 
               const Icon = iconFor(subject);
               const subAccent = ACCENT[subject.id];
               const isActive = subject.questions.length > 0;
-              const progress = syllabusProgress[moduleCode === 'MINF-1' ? subject.name : subject.id] ?? 0;
-              const latest = latestResults[moduleCode === 'MINF-1' ? subject.name : subject.id] ?? null;
+              const progress = syllabusProgress[isLectureBased ? subject.name : subject.id] ?? 0;
+              const latest = latestResults[isLectureBased ? subject.name : subject.id] ?? null;
               const isCompleted = latest !== null;
 
               return (
                 <motion.button
-                  key={moduleCode === 'MINF-1' ? `${subject.id}_L${subject.lectureNum}` : subject.id}
+                  key={isLectureBased ? `${subject.id}_L${subject.lectureNum}` : subject.id}
                   type="button"
                   variants={{
                     hidden: { opacity: 0, y: 20 },
