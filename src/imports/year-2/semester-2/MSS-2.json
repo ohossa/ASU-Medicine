@@ -29844,7 +29844,7 @@
               "lecture": 1,
               "text": "Lateral squint (external strabismus) is caused by a lesion of which of the following?",
               "explanation": "The medial rectus, supplied by the oculomotor nerve (CN III), adducts the eye; its paralysis leaves the lateral rectus unopposed, producing a lateral (external) squint.",
-              "keyConcept": "The medial rectus, supplied by the oculomotor nerve (CN III), adducts the eye; its paralysis leaves the lateral rectus unopposed, producing a lateral (external) squint.",
+              "keyConcept": "Losing the medial rectus (CN III) leaves the lateral rectus (CN VI) unopposed, so the eye drifts outward — an external (lateral) squint.",
               "options": [
                 "Oculomotor nerve",
                 "Trochlear nerve",
@@ -29867,7 +29867,7 @@
               "lecture": 1,
               "text": "Which of the following structures receives sympathetic supply from the superior cervical ganglion via the internal carotid plexus, accompanying the superior division of the oculomotor nerve?",
               "explanation": "The superior tarsal (Muller) muscle within levator palpebrae superioris receives sympathetic fibres from the superior cervical ganglion via the internal carotid plexus, travelling with the superior division of the oculomotor nerve.",
-              "keyConcept": "The superior tarsal (Muller) muscle within levator palpebrae superioris receives sympathetic fibres from the superior cervical ganglion via the internal carotid plexus, travelling with the superior division of the oculomotor nerve.",
+              "keyConcept": "Sympathetic fibres from the superior cervical ganglion ride the internal carotid plexus to supply the superior tarsal (Muller) muscle of the upper lid.",
               "options": [
                 "Levator palpebrae superioris",
                 "Superior rectus muscle",
@@ -29890,7 +29890,7 @@
               "lecture": 1,
               "text": "Which of the following structures does NOT pass through the common tendinous ring (annulus of Zinn) and supplies superior oblique muscle?",
               "explanation": "The trochlear nerve enters the orbit outside the common tendinous ring (annulus of Zinn) and supplies the superior oblique muscle.",
-              "keyConcept": "The trochlear nerve enters the orbit outside the common tendinous ring (annulus of Zinn) and supplies the superior oblique muscle.",
+              "keyConcept": "The trochlear nerve (CN IV) is the only orbital motor nerve entering outside the annulus of Zinn, and it supplies the superior oblique.",
               "options": [
                 "Oculomotor nerve (superior division)",
                 "Oculomotor nerve (inferior division)",
@@ -29913,7 +29913,7 @@
               "lecture": 1,
               "text": "What are the primary actions of the superior rectus muscle?",
               "explanation": "The superior rectus elevates the eye and secondarily adducts and intorts it.",
-              "keyConcept": "Elevation, adduction, intorsion — The superior rectus elevates the eye and secondarily adducts and intorts it.",
+              "keyConcept": "Superior rectus is primarily an elevator, but because it pulls from behind and medially its secondary actions are adduction and intorsion.",
               "options": [
                 "Elevation, adduction, intorsion",
                 "Elevation, abduction, extorsion",
@@ -29936,7 +29936,7 @@
               "lecture": 1,
               "text": "Which of the following correctly describes the primary actions of the superior oblique muscle?",
               "explanation": "The superior oblique depresses and intorts the eye (and abducts it); depression and intorsion are its primary actions.",
-              "keyConcept": "The superior oblique depresses and intorts the eye (and abducts it); depression and intorsion are its primary actions.",
+              "keyConcept": "Passing through the trochlea reverses the superior oblique's pull, giving primary depression and intorsion (with abduction).",
               "options": [
                 "Elevation and extorsion",
                 "Depression and intorsion",
@@ -29959,7 +29959,7 @@
               "lecture": 1,
               "text": "Which of the following structures passes between the superior and inferior divisions of the oculomotor nerve in the orbit?",
               "explanation": "The nasociliary nerve passes between the superior and inferior divisions of the oculomotor nerve within the annulus of Zinn as it crosses the optic nerve.",
-              "keyConcept": "The nasociliary nerve passes between the superior and inferior divisions of the oculomotor nerve within the annulus of Zinn as it crosses the optic nerve.",
+              "keyConcept": "The nasociliary nerve crosses the optic nerve while passing between the superior and inferior divisions of CN III inside the annulus of Zinn.",
               "options": [
                 "Lacrimal nerve",
                 "Nasociliary nerve",
@@ -29982,7 +29982,7 @@
               "lecture": 1,
               "text": "Which of the following structures of the eye is NOT derived from neuroectoderm?",
               "explanation": "The retina, optic nerve and the epithelia of the iris and ciliary body derive from neuroectoderm (optic cup); the cornea arises from surface ectoderm and neural-crest mesenchyme.",
-              "keyConcept": "The retina, optic nerve and the epithelia of the iris and ciliary body derive from neuroectoderm (optic cup); the cornea arises from surface ectoderm and neural-crest mesenchyme.",
+              "keyConcept": "Only the cornea (surface ectoderm + neural crest) is non-neuroectodermal; retina, optic nerve and the iris/ciliary epithelia all arise from the optic cup.",
               "options": [
                 "Retina",
                 "Optic nerve",
@@ -30005,7 +30005,7 @@
               "lecture": 1,
               "text": "Mydriasis (pupillary dilation) is most commonly caused by a lesion of which of the following?",
               "explanation": "Parasympathetic constrictor fibres travel with the oculomotor nerve, so an oculomotor lesion produces a dilated pupil (mydriasis).",
-              "keyConcept": "Parasympathetic constrictor fibres travel with the oculomotor nerve, so an oculomotor lesion produces a dilated pupil (mydriasis).",
+              "keyConcept": "Parasympathetic constrictor fibres travel with CN III, so a CN III lesion removes constriction and the pupil dilates (mydriasis).",
               "options": [
                 "Optic nerve",
                 "Trochlear nerve",
@@ -30028,7 +30028,7 @@
               "lecture": 1,
               "text": "Parasympathetic fibers to the ciliary ganglion are carried specifically by which of the following?",
               "explanation": "The parasympathetic (motor) root of the ciliary ganglion is carried by the branch of the oculomotor nerve to the inferior oblique muscle.",
-              "keyConcept": "Nerve to inferior oblique — The parasympathetic (motor) root of the ciliary ganglion is carried by the branch of the oculomotor nerve to the inferior oblique muscle.",
+              "keyConcept": "The parasympathetic (motor) root of the ciliary ganglion is delivered by the CN III branch to the inferior oblique.",
               "options": [
                 "Nasociliary nerve",
                 "Short ciliary nerves",
@@ -30074,7 +30074,7 @@
               "lecture": 1,
               "text": "The pupillary light reflex is mediated at which of the following brain regions?",
               "explanation": "Afferents for the pupillary light reflex synapse in the pretectal area, which projects bilaterally to the Edinger-Westphal nuclei.",
-              "keyConcept": "Afferents for the pupillary light reflex synapse in the pretectal area, which projects bilaterally to the Edinger-Westphal nuclei.",
+              "keyConcept": "Light-reflex afferents relay in the pretectal nucleus, which drives BOTH Edinger-Westphal nuclei, explaining the consensual response.",
               "options": [
                 "Superior colliculus",
                 "Lateral geniculate nucleus",
@@ -30097,7 +30097,7 @@
               "lecture": 1,
               "text": "Loss of accommodation is most likely due to a lesion of which of the following?",
               "explanation": "Accommodation depends on the ciliary muscle, innervated by parasympathetic fibres of the oculomotor nerve; an oculomotor lesion impairs accommodation.",
-              "keyConcept": "Accommodation depends on the ciliary muscle, innervated by parasympathetic fibres of the oculomotor nerve; an oculomotor lesion impairs accommodation.",
+              "keyConcept": "Accommodation is powered by the ciliary muscle (parasympathetic, CN III), so a CN III lesion blurs near vision.",
               "options": [
                 "Optic nerve",
                 "Oculomotor nerve",
@@ -30120,7 +30120,7 @@
               "lecture": 1,
               "text": "Which of the following conditions is most likely to cause mydriasis?",
               "explanation": "Loss of parasympathetic constrictor tone from an oculomotor nerve lesion causes mydriasis, whereas a sympathetic lesion (Horner syndrome) causes miosis.",
-              "keyConcept": "Lesion of the oculomotor nerve — Loss of parasympathetic constrictor tone from an oculomotor nerve lesion causes mydriasis, whereas a sympathetic lesion (Horner syndrome) causes miosis.",
+              "keyConcept": "A CN III (parasympathetic) lesion removes constrictor tone and dilates the pupil; sympathetic lesions (Horner) instead cause miosis.",
               "options": [
                 "Lesion of the oculomotor nerve",
                 "Horner syndrome",
@@ -30143,7 +30143,7 @@
               "lecture": 1,
               "text": "The inner surface of the tympanic membrane is innervated by which of the following nerves?",
               "explanation": "The inner (mucosal) surface of the tympanic membrane is supplied by the tympanic branch of the glossopharyngeal nerve.",
-              "keyConcept": "The inner (mucosal) surface of the tympanic membrane is supplied by the tympanic branch of the glossopharyngeal nerve.",
+              "keyConcept": "The inner (mucosal) eardrum surface is glossopharyngeal (CN IX, tympanic branch); its outer surface is trigeminal/vagal.",
               "options": [
                 "Facial nerve",
                 "Vagus nerve",
@@ -30166,7 +30166,7 @@
               "lecture": 1,
               "text": "The upper two-thirds of the lateral surface of the auricle is supplied by which of the following nerves?",
               "explanation": "The auriculotemporal nerve supplies the upper two-thirds of the lateral (outer) surface of the auricle.",
-              "keyConcept": "The auriculotemporal nerve supplies the upper two-thirds of the lateral (outer) surface of the auricle.",
+              "keyConcept": "The auriculotemporal nerve (a branch of CN V3) supplies the upper two-thirds of the lateral surface of the auricle.",
               "options": [
                 "Greater auricular nerve",
                 "Lesser occipital nerve",
@@ -30184,35 +30184,12 @@
               ]
             },
             {
-              "id": "MSS2-CH9-ANAT-0016",
-              "type": "mcq",
-              "lecture": 1,
-              "text": "The stereocilia of hair cells in the macula are embedded in which of the following structures?",
-              "explanation": "In the maculae of the utricle and saccule, the stereocilia of hair cells are embedded in the gelatinous otolithic membrane.",
-              "keyConcept": "In the maculae of the utricle and saccule, the stereocilia of hair cells are embedded in the gelatinous otolithic membrane.",
-              "options": [
-                "Cupula",
-                "Basilar membrane",
-                "Tectorial membrane",
-                "Otolithic membrane",
-                "Reissner’s membrane"
-              ],
-              "correctIndex": 3,
-              "modelAnswer": null,
-              "difficulty": "medium",
-              "tags": [
-                "anatomy",
-                "macula",
-                "past-exam-set"
-              ]
-            },
-            {
               "id": "MSS2-CH9-ANAT-0017",
               "type": "mcq",
               "lecture": 1,
               "text": "Perilymph is found in which of the following structures of the inner ear?",
               "explanation": "Perilymph fills the scala vestibuli and scala tympani; the scala media (cochlear duct) contains endolymph.",
-              "keyConcept": "Perilymph fills the scala vestibuli and scala tympani; the scala media (cochlear duct) contains endolymph.",
+              "keyConcept": "Perilymph fills scala vestibuli and scala tympani; the scala media (cochlear duct) holds K+-rich endolymph instead.",
               "options": [
                 "Scala media",
                 "Scala tympani",
@@ -30249,6 +30226,206 @@
                 "past-exam-set",
                 "essay-exam-2023"
               ]
+            },
+            {
+              "id": "MSS2-CH9-ANAT-0018",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following findings is most characteristic of an oculomotor nerve lesion?",
+              "explanation": "CN III supplies all extraocular muscles except the lateral rectus (CN VI) and superior oblique (CN IV), plus levator palpebrae superioris and the parasympathetic pupillary constrictors. A complete palsy leaves the lateral rectus and superior oblique unopposed, so the eye rests \"down and out,\" with ptosis and a fixed, dilated pupil from loss of parasympathetic tone.",
+              "keyConcept": "In CN III palsy the unopposed lateral rectus and superior oblique pull the eye down-and-out, while lost parasympathetic fibres give ptosis and a dilated, unreactive pupil.",
+              "options": [
+                "Eye deviated upward and medially with a constricted pupil",
+                "Eye deviated downward and outward with a dilated pupil",
+                "Eye deviated inward with ptosis and miosis",
+                "Eye deviated outward with normal pupillary reaction only",
+                "Eye deviated downward with a constricted pupil"
+              ],
+              "correctIndex": 1,
+              "modelAnswer": null,
+              "difficulty": "medium",
+              "tags": [
+                "anatomy",
+                "oculomotor-nerve",
+                "cranial-nerves",
+                "past-exam-set",
+                "past-exam-2019-2025"
+              ]
+            },
+            {
+              "id": "MSS2-CH9-ANAT-0019",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following is NOT a correct cause-and-effect relationship in the visual pathway?",
+              "explanation": "A midline chiasmal lesion destroys the crossing nasal-retinal fibres of both eyes, producing bitemporal hemianopia — not a \"contralateral nasal hemianopia,\" which is anatomically impossible from a single chiasmal lesion. The other pairings are correct: optic tract → contralateral homonymous hemianopia, optic nerve → ipsilateral monocular blindness, and Meyer’s loop (temporal radiation) → contralateral superior quadrantanopia.",
+              "keyConcept": "Midline chiasmal lesions knock out both nasal retinae → bitemporal hemianopia; a chiasmal \"contralateral nasal hemianopia\" cannot occur, so it is the false statement.",
+              "options": [
+                "Lesion of the right optic tract → left homonymous hemianopia",
+                "Lesion of the optic chiasm → bitemporal hemianopia",
+                "Lesion of the left optic nerve → left monocular blindness",
+                "Lesion of the temporal optic radiation → contralateral superior quadrantanopia",
+                "Lesion of the optic chiasm → contralateral nasal hemianopia"
+              ],
+              "correctIndex": 4,
+              "modelAnswer": null,
+              "difficulty": "hard",
+              "tags": [
+                "anatomy",
+                "visual-pathway",
+                "field-defects",
+                "past-exam-set",
+                "past-exam-2019-2025"
+              ]
+            },
+            {
+              "id": "MSS2-CH9-ANAT-0020",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "In the development of the human ear, which embryonic germ layer forms the epithelial lining of the auditory (Eustachian) tube and the middle ear cavity?",
+              "explanation": "The tubotympanic recess, derived from the endoderm of the first pharyngeal pouch, forms the epithelial lining of the pharyngotympanic (Eustachian) tube and middle-ear (tympanic) cavity. Ectoderm forms the external acoustic meatus and outer eardrum layer, while the ossicles and connective tissue arise from arch mesenchyme/neural crest.",
+              "keyConcept": "Endoderm of the first pharyngeal pouch (tubotympanic recess) lines the Eustachian tube and middle-ear cavity; the external meatus is ectodermal.",
+              "options": [
+                "Ectoderm",
+                "Endoderm",
+                "Mesoderm",
+                "Neural crest",
+                "Neuroectoderm"
+              ],
+              "correctIndex": 1,
+              "modelAnswer": null,
+              "difficulty": "medium",
+              "tags": [
+                "anatomy",
+                "embryology",
+                "ear-development",
+                "past-exam-set",
+                "past-exam-2019-2025"
+              ]
+            },
+            {
+              "id": "MSS2-CH9-ANAT-0021",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The endoderm of the first pharyngeal pouch gives rise to which of the following structures?",
+              "explanation": "The first pharyngeal pouch expands into the tubotympanic recess, whose endoderm lines the tympanic cavity, the inner surface of the tympanic membrane, and the auditory tube. Auricular cartilage, ossicles and the fibrous eardrum layer come from arch mesenchyme/neural crest, and the membranous labyrinth from the otic (ectodermal) placode.",
+              "keyConcept": "The first pharyngeal pouch (endoderm) becomes the tubotympanic recess — lining of the tympanic cavity, inner eardrum surface, and pharyngotympanic tube.",
+              "options": [
+                "Epithelium of the external auditory meatus and auricle",
+                "Fibrous layer of the tympanic membrane and the ossicles",
+                "Endodermal lining of the tympanic membrane, tympanic cavity, and auditory (pharyngotympanic) tube",
+                "Cartilage of the auricle and the stapedius muscle",
+                "Cochlea and vestibular apparatus"
+              ],
+              "correctIndex": 2,
+              "modelAnswer": null,
+              "difficulty": "medium",
+              "tags": [
+                "anatomy",
+                "embryology",
+                "pharyngeal-pouch",
+                "past-exam-set",
+                "past-exam-2019-2025"
+              ]
+            },
+            {
+              "id": "MSS2-CH9-ANAT-0022",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which structure is located within the epitympanic recess?",
+              "explanation": "The epitympanic recess (attic) is the part of the tympanic cavity above the level of the tympanic membrane; it houses the head of the malleus and the body/short process of the incus. The handle of the malleus and long process of the incus lie in the mesotympanum, and the stapes footplate sits at the oval window.",
+              "keyConcept": "The epitympanic recess (attic) contains the head of the malleus and the body of the incus, above the level of the eardrum.",
+              "options": [
+                "Handle of the malleus",
+                "Long process of the incus",
+                "Head of the malleus",
+                "Stapes footplate",
+                "Tensor tympani tendon"
+              ],
+              "correctIndex": 2,
+              "modelAnswer": null,
+              "difficulty": "medium",
+              "tags": [
+                "anatomy",
+                "middle-ear",
+                "ossicles",
+                "past-exam-set",
+                "past-exam-2019-2025"
+              ]
+            },
+            {
+              "id": "MSS2-CH9-ANAT-0023",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Loss of taste sensation from the anterior two-thirds of the tongue indicates injury to which cranial nerve?",
+              "explanation": "Taste from the anterior two-thirds of the tongue is carried by the chorda tympani, a branch of the facial nerve (CN VII); general (touch) sensation of the same area travels in the lingual nerve (CN V3). The posterior third’s taste and general sensation are supplied by the glossopharyngeal nerve (CN IX).",
+              "keyConcept": "Anterior two-thirds taste = chorda tympani of CN VII; general sensation there is CN V3, and the posterior third is CN IX.",
+              "options": [
+                "Glossopharyngeal nerve (CN IX)",
+                "Trigeminal nerve (CN V)",
+                "Hypoglossal nerve (CN XII)",
+                "Facial nerve (CN VII)",
+                "Vagus nerve (CN X)"
+              ],
+              "correctIndex": 3,
+              "modelAnswer": null,
+              "difficulty": "medium",
+              "tags": [
+                "anatomy",
+                "taste",
+                "facial-nerve",
+                "past-exam-set",
+                "past-exam-2019-2025"
+              ]
+            },
+            {
+              "id": "MSS2-CH9-ANAT-0024",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Repeated attacks of the common cold may predispose to middle ear infection due to obstruction of which of the following structures?",
+              "explanation": "The Eustachian tube ventilates the middle ear and drains it into the nasopharynx. Upper-respiratory infection causes mucosal oedema that blocks the tube, trapping secretions and allowing nasopharyngeal organisms to ascend, producing otitis media. This is common in children because their tubes are shorter and more horizontal.",
+              "keyConcept": "Nasopharyngeal inflammation blocks the pharyngotympanic (Eustachian) tube, impairing middle-ear drainage/ventilation and predisposing to otitis media.",
+              "options": [
+                "External acoustic meatus",
+                "Cochlear aqueduct",
+                "Eustachian (pharyngotympanic) tube",
+                "Oval window",
+                "Round window"
+              ],
+              "correctIndex": 2,
+              "modelAnswer": null,
+              "difficulty": "easy",
+              "tags": [
+                "anatomy",
+                "eustachian-tube",
+                "otitis-media",
+                "past-exam-set",
+                "past-exam-2019-2025"
+              ]
+            },
+            {
+              "id": "MSS2-CH9-ANAT-0025",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "General and taste sensations from the epiglottis are transmitted to the nucleus solitarius through which of the following cranial nerves?",
+              "explanation": "Taste and general visceral sensation from the epiglottis and epiglottic region travel via the internal laryngeal branch of the vagus (CN X) to the nucleus of the solitary tract. (Posterior-third tongue taste is CN IX; anterior two-thirds is CN VII.)",
+              "keyConcept": "Epiglottic taste and general sensation are carried by the vagus (CN X, internal laryngeal branch) to the nucleus solitarius.",
+              "options": [
+                "Glossopharyngeal nerve (CN IX)",
+                "Trigeminal nerve (CN V)",
+                "Facial nerve (CN VII)",
+                "Hypoglossal nerve (CN XII)",
+                "Vagus nerve (CN X)"
+              ],
+              "correctIndex": 4,
+              "modelAnswer": null,
+              "difficulty": "medium",
+              "tags": [
+                "anatomy",
+                "taste",
+                "vagus-nerve",
+                "past-exam-set",
+                "past-exam-2019-2025"
+              ]
             }
           ]
         },
@@ -30267,8 +30444,8 @@
               "type": "mcq",
               "lecture": 1,
               "text": "Corneal transparency is mainly maintained by which of the following mechanisms?",
-              "explanation": "Corneal transparency depends on its avascularity, absence of lymphatic vessels and regular stromal collagen, all of which minimise light scattering.",
-              "keyConcept": "Avascularity and absence of lymphatics",
+              "explanation": "Corneal transparency has several requirements: avascularity with absence of lymphatics, a highly regular lattice of stromal collagen, and stromal deturgescence (relative dehydration by the endothelial pump). Among the options offered here, only avascularity and the absence of lymphatic vessels minimise light scattering; new-vessel ingrowth (as in chronic hypoxia) causes scarring and opacity.",
+              "keyConcept": "The cornea stays clear partly by being avascular and free of lymphatics; vessel ingrowth (chronic hypoxia/inflammation) scatters light and causes scarring.",
               "options": [
                 "Absence of nerve supply minimizing light scattering",
                 "Dense melanocyte distribution preventing light scattering",
@@ -30291,7 +30468,7 @@
               "lecture": 1,
               "text": "The stereocilia of the macula are embedded in which of the following structures?",
               "explanation": "The stereocilia of the macular hair cells are embedded in the otolithic (otoconial) membrane.",
-              "keyConcept": "Otolithic membrane — The stereocilia of the macular hair cells are embedded in the otolithic (otoconial) membrane.",
+              "keyConcept": "Macular hair-cell stereocilia are embedded in the otolithic membrane, whose otoconia add the inertia needed to sense linear acceleration and gravity.",
               "options": [
                 "Basilar membrane",
                 "Tectorial membrane",
@@ -30314,7 +30491,7 @@
               "lecture": 1,
               "text": "The anterior surface of the iris contains which of the following cell types?",
               "explanation": "The anterior border layer of the iris is formed mainly by fibroblasts and melanocytes rather than a continuous epithelium.",
-              "keyConcept": "Melanocytes and fibroblasts — The anterior border layer of the iris is formed mainly by fibroblasts and melanocytes rather than a continuous epithelium.",
+              "keyConcept": "The iris anterior border layer is an incomplete sheet of fibroblasts and melanocytes (not a true epithelium); its melanin content sets eye colour.",
               "options": [
                 "Pigmented epithelial cells and photoreceptors",
                 "Melanocytes and fibroblasts",
@@ -30337,7 +30514,7 @@
               "lecture": 1,
               "text": "What is the most characteristic optic disc finding indicating glaucoma?",
               "explanation": "Glaucomatous optic neuropathy characteristically produces progressive cupping (an enlarged cup-to-disc ratio) of the optic disc.",
-              "keyConcept": "Progressive optic disc cupping — Glaucomatous optic neuropathy characteristically produces progressive cupping (an enlarged cup-to-disc ratio) of the optic disc.",
+              "keyConcept": "The hallmark glaucomatous disc change is progressive cupping (rising cup-to-disc ratio); swelling/exudates point to other diseases.",
               "options": [
                 "Optic disc swelling (papilledema)",
                 "Retinal hemorrhages",
@@ -30358,9 +30535,9 @@
               "id": "MSS2-CH9-HIST-0005",
               "type": "mcq",
               "lecture": 1,
-              "text": "Corneal transparency is mainly maintained by which of the following mechanisms?",
-              "explanation": "Corneal transparency is maintained by the highly regular, uniformly spaced arrangement of stromal collagen fibres, minimising light scattering.",
-              "keyConcept": "Regularity of corneal collagen fibres",
+              "text": "The transparency of the corneal stroma specifically depends on which of the following?",
+              "explanation": "Within the corneal stroma, transparency depends on the uniform, tightly regulated spacing of small-diameter collagen fibrils arranged in orthogonal lamellae; this near-crystalline lattice makes scattered light cancel by destructive interference. Oedema that disrupts fibril spacing (e.g., endothelial pump failure) scatters light and clouds the cornea.",
+              "keyConcept": "Uniform, tightly spaced stromal collagen fibrils form a lattice that cancels scattered light by interference; oedema disrupting the spacing clouds the cornea.",
               "options": [
                 "Absence of nerve supply minimizing light scattering",
                 "Dense melanocyte distribution preventing light scattering",
@@ -30383,7 +30560,7 @@
               "lecture": 1,
               "text": "Lateral inhibition of adjacent rods and cones in the retina is mediated by which of the following cells?",
               "explanation": "Horizontal cells mediate lateral inhibition between photoreceptors, enhancing visual contrast.",
-              "keyConcept": "Horizontal cells mediate lateral inhibition between photoreceptors, enhancing visual contrast.",
+              "keyConcept": "Horizontal cells provide lateral inhibition across photoreceptors, sharpening contrast at light-dark borders.",
               "options": [
                 "Bipolar cells",
                 "Ganglion cells",
@@ -30406,7 +30583,7 @@
               "lecture": 1,
               "text": "Which of the following structures is found in the outer nuclear layer of the retina?",
               "explanation": "The outer nuclear layer of the retina contains the cell bodies (nuclei) of the rod and cone photoreceptors.",
-              "keyConcept": "Cell bodies of rods and cones",
+              "keyConcept": "The OUTER nuclear layer holds photoreceptor cell bodies, whereas the INNER nuclear layer holds bipolar, horizontal and amacrine nuclei.",
               "options": [
                 "Axons of ganglion cells",
                 "Cell bodies (nuclei) of rods and cones",
@@ -30420,29 +30597,6 @@
               "tags": [
                 "histology",
                 "retina",
-                "past-exam-set"
-              ]
-            },
-            {
-              "id": "MSS2-CH9-HIST-0008",
-              "type": "mcq",
-              "lecture": 1,
-              "text": "Which of the following cell types is found on the anterior surface of the iris?",
-              "explanation": "The anterior surface (border layer) of the iris consists mainly of melanocytes and fibroblasts.",
-              "keyConcept": "The anterior surface (border layer) of the iris consists mainly of melanocytes and fibroblasts.",
-              "options": [
-                "Rods and cones",
-                "Ganglion cells and bipolar cells",
-                "Melanocytes and fibroblasts",
-                "Keratinocytes and chondrocytes",
-                "Schwann cells and astrocytes"
-              ],
-              "correctIndex": 2,
-              "modelAnswer": null,
-              "difficulty": "medium",
-              "tags": [
-                "histology",
-                "iris",
                 "past-exam-set"
               ]
             },
@@ -30466,6 +30620,31 @@
                 "past-exam-set",
                 "essay-exam-2023"
               ]
+            },
+            {
+              "id": "MSS2-CH9-HIST-0008",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "In the inner ear, the mechanosensitive hair bundle that transduces sound or balance signals into electrical impulses is composed of which structures?",
+              "explanation": "The apical hair bundle of an inner-ear hair cell consists of rows of actin-filled stereocilia arranged by height alongside a single true cilium, the kinocilium. Deflection toward the kinocilium tenses the tip links and opens mechanotransduction channels; in the mature cochlea the kinocilium regresses, leaving only stereocilia.",
+              "keyConcept": "The mechanosensory hair bundle = graded rows of stereocilia plus a single kinocilium; tip-link–gated channels convert deflection into receptor potentials.",
+              "options": [
+                "Microvilli and flagella",
+                "Kinocilium and stereocilia",
+                "Basal bodies and axonemes",
+                "Lamellipodia and filopodia",
+                "Otoliths and cupula"
+              ],
+              "correctIndex": 1,
+              "modelAnswer": null,
+              "difficulty": "medium",
+              "tags": [
+                "histology",
+                "inner-ear",
+                "hair-cells",
+                "past-exam-set",
+                "past-exam-2019-2025"
+              ]
             }
           ]
         },
@@ -30485,7 +30664,7 @@
               "lecture": 1,
               "text": "Which of the following acts as both a hormone precursor and a visual pigment component?",
               "explanation": "Retinol is a precursor of retinoic acid (a hormone-like regulator of gene expression) and of 11-cis retinal, the visual pigment chromophore.",
-              "keyConcept": "Retinol is a precursor of retinoic acid (a hormone-like regulator of gene expression) and of 11-cis retinal, the visual pigment chromophore.",
+              "keyConcept": "Retinol is the hub of vitamin-A metabolism: oxidised to retinoic acid (a gene-regulating hormone) and isomerised to 11-cis retinal for vision.",
               "options": [
                 "Retinol",
                 "Retinal",
@@ -30508,7 +30687,7 @@
               "lecture": 1,
               "text": "The non-protein component of rhodopsin is which of the following?",
               "explanation": "The non-protein chromophore of rhodopsin is 11-cis retinal, bound to the protein opsin.",
-              "keyConcept": "The non-protein chromophore of rhodopsin is 11-cis retinal, bound to the protein opsin.",
+              "keyConcept": "Rhodopsin = opsin (protein) + 11-cis retinal, the non-protein chromophore that isomerises to all-trans on absorbing light.",
               "options": [
                 "Retinol",
                 "All-trans retinal",
@@ -30531,7 +30710,7 @@
               "lecture": 1,
               "text": "Which of the following is a key function of vitamin A in the body?",
               "explanation": "A key role of vitamin A is maintaining epithelial integrity; deficiency causes xerophthalmia and epithelial keratinisation.",
-              "keyConcept": "Maintenance of epithelial integrity — A key role of vitamin A is maintaining epithelial integrity; deficiency causes xerophthalmia and epithelial keratinisation.",
+              "keyConcept": "Through retinoic acid, vitamin A maintains epithelial differentiation; deficiency drives squamous keratinisation and xerophthalmia.",
               "options": [
                 "Collagen synthesis in connective tissue",
                 "Maintenance of epithelial integrity",
@@ -30554,7 +30733,7 @@
               "lecture": 1,
               "text": "Vitamin A plays an essential role in which of the following physiological processes?",
               "explanation": "Through retinoic acid, vitamin A maintains epithelial integrity and regulates gene transcription and protein synthesis.",
-              "keyConcept": "Epithelial integrity and protein synthesis",
+              "keyConcept": "Retinoic acid behaves like a nuclear-receptor hormone, regulating gene transcription and protein synthesis as well as epithelial integrity.",
               "options": [
                 "DNA replication and repair",
                 "Maintenance of epithelial integrity and regulation of protein synthesis",
@@ -30577,7 +30756,7 @@
               "lecture": 1,
               "text": "Which of the following is the correct relationship between β-carotene and retinol?",
               "explanation": "One molecule of beta-carotene is cleaved to yield two molecules of retinal, which are reduced to retinol.",
-              "keyConcept": "One beta-carotene yields two retinol",
+              "keyConcept": "Central cleavage of symmetric beta-carotene yields two retinal (then two retinol), though real dietary bioconversion is far less efficient.",
               "options": [
                 "1 retinol → 2 β-carotene",
                 "β-carotene is the active form of vitamin A with no conversion needed",
@@ -30592,6 +30771,31 @@
                 "biochemistry",
                 "beta-carotene",
                 "past-exam-set"
+              ]
+            },
+            {
+              "id": "MSS2-CH9-BIOC-0006",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Vitamin A toxicity during pregnancy is most strongly associated with which outcome?",
+              "explanation": "Retinoids are teratogenic. High-dose vitamin A in pregnancy, especially in the first trimester, causes a spectrum of congenital malformations (craniofacial, cardiac, thymic and CNS, including neural-tube defects) known as retinoic-acid embryopathy — so “birth defects” is the best answer rather than neural-tube defects alone.",
+              "keyConcept": "Retinoids are teratogens: excess vitamin A in pregnancy causes a spectrum of congenital malformations (retinoic-acid embryopathy), not only neural-tube defects.",
+              "options": [
+                "Cataract formation",
+                "Neural tube defects only",
+                "Birth defects",
+                "Preterm labor",
+                "Gestational diabetes"
+              ],
+              "correctIndex": 2,
+              "modelAnswer": null,
+              "difficulty": "medium",
+              "tags": [
+                "biochemistry",
+                "vitamin-a",
+                "teratogen",
+                "past-exam-set",
+                "past-exam-2019-2025"
               ]
             }
           ]
@@ -30612,7 +30816,7 @@
               "lecture": 1,
               "text": "Which of the following statements about the human lens of the eye is TRUE?",
               "explanation": "Refractive power in dioptres is the reciprocal of the focal length in metres, so power is inversely related to focal length.",
-              "keyConcept": "Lens power is inversely related to focal length — Refractive power in dioptres is the reciprocal of the focal length in metres, so power is inversely related to focal length.",
+              "keyConcept": "Dioptric power equals 1/focal length (metres), so a shorter focal length means a stronger lens — power and focal length are inversely related.",
               "options": [
                 "Lens power is directly proportional to focal length",
                 "Lens power is inversely related to focal length",
@@ -30635,7 +30839,7 @@
               "lecture": 1,
               "text": "Accommodation for near vision in the eye is primarily mediated by which of the following parts?",
               "explanation": "Contraction of the ciliary muscle relaxes zonular tension, allowing the lens to thicken for near vision (accommodation).",
-              "keyConcept": "Ciliary muscles — Contraction of the ciliary muscle relaxes zonular tension, allowing the lens to thicken for near vision (accommodation).",
+              "keyConcept": "Ciliary-muscle contraction slackens the zonules, letting the elastic lens round up and gain power for near focus.",
               "options": [
                 "Retina",
                 "Cornea",
@@ -30658,7 +30862,7 @@
               "lecture": 1,
               "text": "Regarding simple regular myopic astigmatism, which of the following is TRUE?",
               "explanation": "In simple myopic astigmatism, one principal meridian focuses light on the retina while the other focuses in front of it.",
-              "keyConcept": "One meridian focuses in front of the retina, the other on it",
+              "keyConcept": "In simple myopic astigmatism one principal meridian focuses on the retina while the other focuses in front of it.",
               "options": [
                 "All parallel rays focus behind the retina",
                 "One set of parallel rays focuses in front of the retina, while the other focuses on the retina",
@@ -30681,7 +30885,7 @@
               "lecture": 1,
               "text": "Which of the following is a component of the near response of the eye?",
               "explanation": "The near response comprises convergence of the visual axes, accommodation (lens thickening) and pupillary constriction.",
-              "keyConcept": "Convergence of visual axes — The near response comprises convergence of the visual axes, accommodation (lens thickening) and pupillary constriction.",
+              "keyConcept": "The near triad is convergence + accommodation (lens thickening) + pupillary constriction — all increase together.",
               "options": [
                 "Pupillary dilation",
                 "Divergence of visual axes",
@@ -30704,7 +30908,7 @@
               "lecture": 1,
               "text": "The parvocellular pathway of the visual system is primarily responsible for which of the following?",
               "explanation": "The parvocellular (P) pathway carries colour and fine spatial detail, whereas the magnocellular pathway handles motion.",
-              "keyConcept": "Color perception — The parvocellular (P) pathway carries colour and fine spatial detail, whereas the magnocellular pathway handles motion.",
+              "keyConcept": "Parvocellular (P) neurons carry colour and fine detail; the magnocellular (M) stream handles motion and gross form.",
               "options": [
                 "Motion detection",
                 "Color perception",
@@ -30727,7 +30931,7 @@
               "lecture": 1,
               "text": "Which of the following best explains color vision according to the color theory?",
               "explanation": "The trichromatic (Young-Helmholtz) theory holds that colour depends on the relative frequency of stimulation of three cone types.",
-              "keyConcept": "Stimulation of three cone types",
+              "keyConcept": "Trichromatic (Young-Helmholtz) theory: colour is encoded by the relative activity of three cone types (S, M, L).",
               "options": [
                 "Color is determined by stimulation frequency of rods only",
                 "Color is determined by inhibition of ganglion cells",
@@ -30746,14 +30950,15 @@
             },
             {
               "id": "MSS2-CH9-PHYS-E0001",
-              "type": "case",
+              "type": "essay",
               "lecture": 1,
-              "text": "A 50-year-old female presented with mild ocular pain and headache. She also complained of reading difficulties and frequent changes in her reading glasses. On examination, a considerable increase in intraocular pressure was detected.",
+              "text": "A 50-year-old female presented with mild ocular pain and headache. She also complained of reading difficulties and frequent changes in her reading glasses. On examination, a considerable increase in intraocular pressure was detected. (A) Summarize the aqueous humor drainage pathways. (B) What is the pathological effect of glaucoma that leads to serious impairment of visual function?",
               "explanation": "Tests aqueous humour dynamics and the pathophysiology of glaucoma. Aqueous is secreted by the ciliary processes into the posterior chamber and must leave the eye through the iridocorneal angle; obstruction of outflow raises intraocular pressure, which is the key modifiable risk factor in this glaucoma case.",
               "keyConcept": "Aqueous drains mainly through the trabecular (conventional) pathway into the canal of Schlemm (~80-90%) and the uveoscleral pathway (~10-20%); sustained high IOP in glaucoma damages retinal ganglion-cell axons at the optic disc, causing optic-disc cupping and optic atrophy with irreversible visual-field loss.",
               "options": [],
               "correctIndex": null,
               "difficulty": "hard",
+              "modelAnswer": "### (A) Aqueous humor drainage pathways (3 marks)\n\nAqueous humour is secreted by the **non-pigmented epithelium of the ciliary processes** into the **posterior chamber**, flows through the **pupil** into the **anterior chamber**, and reaches the **iridocorneal (filtration) angle**, where it leaves the eye by two routes:\n\n1. **Conventional (trabecular) pathway — ~80-90%, pressure-dependent:**\n\t- Anterior chamber angle -> **trabecular meshwork** -> **canal of Schlemm** -> collector channels -> **aqueous (episcleral) veins** -> systemic venous circulation.\n2. **Unconventional (uveoscleral) pathway — ~10-20%, largely pressure-independent:**\n\t- Aqueous passes across the face of the ciliary body/ciliary muscle into the **suprachoroidal space** and is absorbed by the choroidal and scleral venous circulation.\n\n_(A minor amount is also absorbed across the iris surface.)_ A balance between ciliary secretion and this outflow keeps the normal intraocular pressure at ~10-21 mmHg; obstruction of the trabecular outflow is what raises the pressure in this patient.\n\n### (B) Pathological effect of glaucoma causing serious visual impairment (1 mark)\n\nThe sustained rise in intraocular pressure is transmitted to the **optic nerve head**, where it mechanically compresses and ischaemically injures the axons of the **retinal ganglion cells** as they pass through the lamina cribrosa. This causes **progressive optic-disc cupping (increased cup-to-disc ratio) and optic atrophy**, with loss of the retinal nerve-fibre layer. The result is **irreversible, progressive visual-field loss** — typically beginning in the periphery/arcuate region and advancing to tunnel vision and, if untreated, blindness.\n\n*Ai Generated Model Answer*",
               "tags": [
                 "physiology",
                 "aqueous humor",
@@ -30761,22 +30966,570 @@
                 "intraocular pressure",
                 "past-exam-set",
                 "essay-exam-2023"
+              ]
+            },
+            {
+              "id": "MSS2-CH9-PHYS-0007",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The aqueous (watery) layer of the tear film mainly functions to:",
+              "explanation": "The tear film has three layers: an outer lipid layer (meibomian glands) that retards evaporation, a thick middle aqueous layer (lacrimal glands) that delivers oxygen, nutrients and antibacterial proteins to the avascular cornea, and an inner mucin layer that lets tears wet the epithelium. Preventing evaporation is the lipid layer’s role.",
+              "keyConcept": "The aqueous (lacrimal) layer nourishes and oxygenates the avascular cornea and carries antibacterial proteins; the lipid layer prevents evaporation.",
+              "options": [
+                "Prevent tear evaporation",
+                "Lubricate the eyelids only",
+                "Provide oxygen and nutrients to the cornea",
+                "Produce lysozyme only",
+                "Form the optical surface of the lens"
               ],
-              "subQuestions": [
-                {
-                  "id": "MSS2-CH9-PHYS-E0001-SQ1",
-                  "type": "essay",
-                  "text": "Summarize the aqueous humor drainage pathways.",
-                  "modelAnswer": "Aqueous humour is secreted by the **non-pigmented epithelium of the ciliary processes** into the **posterior chamber**, flows through the **pupil** into the **anterior chamber**, and reaches the **iridocorneal (filtration) angle**, where it leaves the eye by two routes:\n\n1. **Conventional (trabecular) pathway — ~80-90%, pressure-dependent:**\n\t- Anterior chamber angle -> **trabecular meshwork** -> **canal of Schlemm** -> collector channels -> **aqueous (episcleral) veins** -> systemic venous circulation.\n2. **Unconventional (uveoscleral) pathway — ~10-20%, largely pressure-independent:**\n\t- Aqueous passes across the face of the ciliary body/ciliary muscle into the **suprachoroidal space** and is absorbed by the choroidal and scleral venous circulation.\n\n_(A minor amount is also absorbed across the iris surface.)_ A balance between ciliary secretion and this outflow keeps the normal intraocular pressure at ~10-21 mmHg; obstruction of the trabecular outflow is what raises the pressure in this patient.",
-                  "explanation": "Tests aqueous humour dynamics. Aqueous is secreted by the ciliary processes into the posterior chamber and must leave the eye through the iridocorneal angle; obstruction of outflow raises intraocular pressure, which is the key modifiable risk factor in this glaucoma case."
-                },
-                {
-                  "id": "MSS2-CH9-PHYS-E0001-SQ2",
-                  "type": "essay",
-                  "text": "What is the pathological effect of glaucoma that leads to serious impairment of visual function?",
-                  "modelAnswer": "The sustained rise in intraocular pressure is transmitted to the **optic nerve head**, where it mechanically compresses and ischaemically injures the axons of the **retinal ganglion cells** as they pass through the lamina cribrosa. This causes **progressive optic-disc cupping (increased cup-to-disc ratio) and optic atrophy**, with loss of the retinal nerve-fibre layer. The result is **irreversible, progressive visual-field loss** — typically beginning in the periphery/arcuate region and advancing to tunnel vision and, if untreated, blindness.",
-                  "explanation": "Tests the pathophysiology of glaucoma."
-                }
+              "correctIndex": 2,
+              "modelAnswer": null,
+              "difficulty": "medium",
+              "tags": [
+                "physiology",
+                "tear-film",
+                "cornea",
+                "past-exam-set",
+                "past-exam-2019-2025"
+              ]
+            },
+            {
+              "id": "MSS2-CH9-PHYS-0008",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "After the olfactory bulb and tract, to which region do the second-order neurons project directly without a relay in the thalamus?",
+              "explanation": "Olfaction is the only sensory system that reaches the cortex without an obligatory thalamic relay: mitral and tufted cells of the olfactory bulb project through the olfactory tract straight to the primary olfactory (piriform) cortex. Thalamic (mediodorsal nucleus) involvement is added later for conscious discrimination.",
+              "keyConcept": "Smell bypasses the thalamus — olfactory bulb output projects directly to the primary (piriform) olfactory cortex.",
+              "options": [
+                "Medial geniculate nucleus",
+                "Primary olfactory cortex",
+                "Postcentral gyrus",
+                "Posterior parietal cortex",
+                "Calcarine sulcus"
+              ],
+              "correctIndex": 1,
+              "modelAnswer": null,
+              "difficulty": "hard",
+              "tags": [
+                "physiology",
+                "olfaction",
+                "sensory-pathway",
+                "past-exam-set",
+                "past-exam-2019-2025"
+              ]
+            },
+            {
+              "id": "MSS2-CH9-PHYS-0009",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following is true about the travelling wave theory of hearing?",
+              "explanation": "Von Békésy’s travelling-wave theory explains pitch (frequency) discrimination: each frequency produces peak vibration at a specific place on the basilar membrane — high frequencies near the base, low frequencies near the apex — so the place of maximal displacement encodes pitch.",
+              "keyConcept": "The travelling wave peaks at a frequency-specific place on the basilar membrane (base = high pitch, apex = low), encoding sound frequency.",
+              "options": [
+                "It follows the Weber–Fechner law",
+                "It is based on the place theory (Helmholtz theory)",
+                "It discriminates the locality of sound",
+                "It discriminates sound frequency (pitch)",
+                "It discriminates the time of sound arrival and intensity differences"
+              ],
+              "correctIndex": 3,
+              "modelAnswer": null,
+              "difficulty": "hard",
+              "tags": [
+                "physiology",
+                "hearing",
+                "basilar-membrane",
+                "past-exam-set",
+                "past-exam-2019-2025"
+              ]
+            },
+            {
+              "id": "MSS2-CH9-PHYS-0010",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The superior (anterior) semicircular canal is primarily stimulated by which of the following head movements?",
+              "explanation": "The semicircular canals detect angular acceleration in orthogonal planes. The anterior (superior) canal lies in a vertical/sagittal plane and is maximally stimulated by pitch — nodding the head “yes-yes.” The lateral canal senses horizontal “no-no” rotation and the posterior canal senses shoulder-to-shoulder tilting.",
+              "keyConcept": "The anterior (superior) semicircular canal detects pitch — sagittal-plane “yes-yes” nodding of the head.",
+              "options": [
+                "Rotation in the horizontal plane (shaking the head “no-no”)",
+                "Linear acceleration in the vertical plane",
+                "Rotation in the vertical plane from shoulder to shoulder",
+                "Rotation in the anteroposterior plane (nodding the head “yes-yes”)",
+                "Horizontal linear acceleration during forward movement"
+              ],
+              "correctIndex": 3,
+              "modelAnswer": null,
+              "difficulty": "medium",
+              "tags": [
+                "physiology",
+                "vestibular",
+                "semicircular-canals",
+                "past-exam-set",
+                "past-exam-2019-2025"
+              ]
+            },
+            {
+              "id": "MSS2-CH9-PHYS-0011",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Depolarization of cochlear hair cells occurs due to increased permeability to which of the following ions?",
+              "explanation": "Deflection of the stereocilia toward the tallest row opens non-selective mechanotransduction cation channels at the tips; the resulting cation influx (sodium and calcium, and in the cochlea potassium from the K⁺-rich endolymph) depolarizes the hair cell and opens basal voltage-gated Ca²⁺ channels that trigger glutamate release. [Note: many texts emphasise K⁺ influx from endolymph as the main depolarizing current.]",
+              "keyConcept": "Tip-link–gated cation channels admit cations that depolarize the hair cell, driving Ca²⁺-dependent transmitter release.",
+              "options": [
+                "Potassium and chloride",
+                "Sodium and calcium",
+                "Chloride and bicarbonate",
+                "Potassium and magnesium",
+                "Sodium and chloride"
+              ],
+              "correctIndex": 1,
+              "modelAnswer": null,
+              "difficulty": "hard",
+              "tags": [
+                "physiology",
+                "hearing",
+                "hair-cells",
+                "past-exam-set",
+                "past-exam-2019-2025"
+              ]
+            },
+            {
+              "id": "MSS2-CH9-PHYS-0012",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following is responsible for the amplification (magnification) of sound waves in the middle ear?",
+              "explanation": "The middle ear matches air-to-fluid impedance mainly by two mechanisms: the large tympanic-membrane area focusing force onto the much smaller oval window (~17–20×) and the lever action of the ossicular chain (~1.3×). Together they raise sound pressure enough to overcome the inertia of the cochlear fluid.",
+              "keyConcept": "Impedance matching = (large eardrum area ÷ small oval-window area) × ossicular lever action, amplifying sound pressure into the cochlear fluid.",
+              "options": [
+                "Vibration of the round window membrane",
+                "Lever action of the auditory ossicles and the larger area of the tympanic membrane compared with the oval window",
+                "Contraction of the stapedius muscle alone",
+                "Movement of endolymph within the cochlea",
+                "Pressure equalization by the Eustachian tube"
+              ],
+              "correctIndex": 1,
+              "modelAnswer": null,
+              "difficulty": "medium",
+              "tags": [
+                "physiology",
+                "hearing",
+                "middle-ear",
+                "past-exam-set",
+                "past-exam-2019-2025"
+              ]
+            },
+            {
+              "id": "MSS2-CH9-PHYS-0013",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "A positive Rinne test indicates that:",
+              "explanation": "In the Rinne test a vibrating tuning fork is held on the mastoid (bone conduction) then beside the ear (air conduction). Normally, and in sensorineural loss, air conduction is heard longer and louder than bone — a “positive” Rinne. A negative Rinne (bone > air) indicates conductive hearing loss.",
+              "keyConcept": "Positive Rinne = air conduction > bone conduction (normal or sensorineural); a negative Rinne (bone > air) signals conductive loss.",
+              "options": [
+                "Bone conduction is better than air conduction",
+                "Air conduction is better than bone conduction",
+                "Bone and air conduction are equal",
+                "There is complete hearing loss",
+                "Sensorineural hearing loss is excluded"
+              ],
+              "correctIndex": 1,
+              "modelAnswer": null,
+              "difficulty": "easy",
+              "tags": [
+                "physiology",
+                "hearing-tests",
+                "rinne",
+                "past-exam-set",
+                "past-exam-2019-2025"
+              ]
+            },
+            {
+              "id": "MSS2-CH9-PHYS-0014",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The cochlear microphonic potential is primarily produced because:",
+              "explanation": "The cochlear microphonic is an AC receptor potential that follows the sound waveform. Stereocilia deflection opens apical transduction channels, letting K⁺ flow from the K⁺-rich endolymph into the hair cell and depolarize it (less negative membrane potential). It mirrors basilar-membrane movement rather than being an all-or-none spike.",
+              "keyConcept": "The cochlear microphonic is the hair-cell receptor potential from K⁺ influx (from endolymph) that depolarizes the cell in step with the sound wave.",
+              "options": [
+                "Na⁺ influx depolarizes the inner hair cells",
+                "Ca²⁺ efflux hyperpolarizes the outer hair cells",
+                "K⁺ efflux makes the membrane potential more negative than −70 mV",
+                "K⁺ influx makes the membrane potential less negative than −70 mV",
+                "Cl⁻ influx causes hair-cell hyperpolarization"
+              ],
+              "correctIndex": 3,
+              "modelAnswer": null,
+              "difficulty": "hard",
+              "tags": [
+                "physiology",
+                "hearing",
+                "cochlear-microphonic",
+                "past-exam-set",
+                "past-exam-2019-2025"
+              ]
+            },
+            {
+              "id": "MSS2-CH9-PHYS-0015",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following best describes how the cochlea detects loud sounds?",
+              "explanation": "Louder sounds produce larger-amplitude basilar-membrane vibrations, deflecting hair-cell stereocilia more and recruiting additional hair cells. This raises receptor-potential size and afferent firing, so loudness is coded by vibration amplitude (and fibre number/rate), not by fewer hair cells.",
+              "keyConcept": "Loudness is encoded by the amplitude of basilar-membrane vibration — bigger deflections → greater hair-cell depolarization and firing.",
+              "options": [
+                "Activation of fewer hair cells",
+                "Decreased displacement of the basilar membrane",
+                "A large increase in movement of the basilar membrane",
+                "Reduced endolymph production",
+                "Increased stiffness of the oval window"
+              ],
+              "correctIndex": 2,
+              "modelAnswer": null,
+              "difficulty": "medium",
+              "tags": [
+                "physiology",
+                "hearing",
+                "loudness-coding",
+                "past-exam-set",
+                "past-exam-2019-2025"
+              ]
+            },
+            {
+              "id": "MSS2-CH9-PHYS-0016",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "After rotation of the body, what is the characteristic change in muscle tone produced by the vestibulospinal reflex?",
+              "explanation": "The lateral vestibulospinal tract facilitates ipsilateral antigravity (extensor) muscles. Vestibular stimulation during rotation raises extensor tone on the same side while reducing it on the opposite side, helping maintain balance and posture against the movement.",
+              "keyConcept": "The (lateral) vestibulospinal reflex increases ipsilateral extensor tone and decreases contralateral extensor tone to preserve postural balance.",
+              "options": [
+                "Decreased extensor tone on the same side and increased extensor tone on the opposite side",
+                "Increased flexor tone on the same side and decreased extensor tone on the opposite side",
+                "Increased extensor tone on the same side and decreased extensor tone on the opposite side",
+                "Increased flexor tone on both sides",
+                "No significant change in muscle tone"
+              ],
+              "correctIndex": 2,
+              "modelAnswer": null,
+              "difficulty": "hard",
+              "tags": [
+                "physiology",
+                "vestibular",
+                "vestibulospinal-reflex",
+                "past-exam-set",
+                "past-exam-2019-2025"
+              ]
+            },
+            {
+              "id": "MSS2-CH9-PHYS-0017",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Nystagmus is primarily mediated by which of the following reflexes?",
+              "explanation": "Nystagmus is a rhythmic to-and-fro eye movement generated by the vestibulo-ocular reflex: a slow phase driven by vestibular (endolymph) input moves the eyes opposite to head rotation, followed by a fast central corrective phase. This keeps the retinal image stable during head movement.",
+              "keyConcept": "Nystagmus is a manifestation of the vestibulo-ocular reflex — a slow vestibular-driven phase plus a fast central corrective phase.",
+              "options": [
+                "Vestibulospinal reflex",
+                "Vestibulo-ocular reflex",
+                "Pupillary light reflex",
+                "Corneal reflex",
+                "Acoustic reflex"
+              ],
+              "correctIndex": 1,
+              "modelAnswer": null,
+              "difficulty": "medium",
+              "tags": [
+                "physiology",
+                "vestibular",
+                "vestibulo-ocular-reflex",
+                "past-exam-set",
+                "past-exam-2019-2025"
+              ]
+            },
+            {
+              "id": "MSS2-CH9-PHYS-0018",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following occurs during the acoustic (attenuation) reflex?",
+              "explanation": "A loud sound triggers reflex contraction of the tensor tympani (CN V3) and stapedius (CN VII), which stiffens the ossicular chain and tympanic membrane. This attenuates transmission of low-frequency loud sounds to the cochlea, protecting it and reducing masking of speech.",
+              "keyConcept": "The attenuation (acoustic) reflex contracts stapedius and tensor tympani, stiffening the ossicular chain to dampen loud-sound transmission.",
+              "options": [
+                "The tympanic membrane becomes lax to increase sound transmission",
+                "The rigidity of the ossicular chain increases, reducing transmission of loud sounds to the inner ear",
+                "The mobility of the stapes increases to amplify loud sounds",
+                "The ossicular chain becomes more compliant, enhancing vibration",
+                "It primarily improves hearing sensitivity to faint sounds"
+              ],
+              "correctIndex": 1,
+              "modelAnswer": null,
+              "difficulty": "medium",
+              "tags": [
+                "physiology",
+                "hearing",
+                "acoustic-reflex",
+                "past-exam-set",
+                "past-exam-2019-2025"
+              ]
+            },
+            {
+              "id": "MSS2-CH9-PHYS-0019",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "A high sound intensity is primarily encoded by which of the following?",
+              "explanation": "Sound intensity (loudness) is coded by an increased firing rate in individual cochlear-nerve fibres together with recruitment of additional fibres as louder sounds deflect the basilar membrane more strongly. Frequency (pitch) is coded by which fibres/place are activated, not the rate.",
+              "keyConcept": "Loudness = higher afferent firing rate plus recruitment of more cochlear-nerve fibres; pitch is coded by place, not rate.",
+              "options": [
+                "Decreased frequency of impulse discharge in the cochlear nerve",
+                "Increased frequency of impulse discharge in the cochlear nerve",
+                "Activation of fewer cochlear nerve fibres",
+                "Decreased vibration of the basilar membrane",
+                "Reduced neurotransmitter release from inner hair cells"
+              ],
+              "correctIndex": 1,
+              "modelAnswer": null,
+              "difficulty": "medium",
+              "tags": [
+                "physiology",
+                "hearing",
+                "intensity-coding",
+                "past-exam-set",
+                "past-exam-2019-2025"
+              ]
+            },
+            {
+              "id": "MSS2-CH9-PHYS-0020",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The crista ampullaris of the semicircular canals is stimulated when:",
+              "explanation": "Each crista’s hair cells bear stereocilia plus a single tall kinocilium and are embedded in the gelatinous cupula. Angular acceleration moves endolymph, deflecting the cupula; bending the stereocilia toward the kinocilium opens transduction channels and depolarizes (excites) the cell, whereas bending away hyperpolarizes it.",
+              "keyConcept": "Bending stereocilia toward the kinocilium depolarizes/excites the crista hair cell; bending away hyperpolarizes it.",
+              "options": [
+                "The stereocilia bend away from the kinocilium",
+                "The cupula remains stationary despite head rotation",
+                "The stereocilia bend toward the kinocilium",
+                "Endolymph movement ceases completely",
+                "The hair cells become hyperpolarized"
+              ],
+              "correctIndex": 2,
+              "modelAnswer": null,
+              "difficulty": "medium",
+              "tags": [
+                "physiology",
+                "vestibular",
+                "crista-ampullaris",
+                "past-exam-set",
+                "past-exam-2019-2025"
+              ]
+            },
+            {
+              "id": "MSS2-CH9-PHYS-0021",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following statements about taste transduction is TRUE?",
+              "explanation": "Sweet compounds bind G-protein-coupled T1R2/T1R3 receptors, activating a cascade that raises cAMP and depolarizes the cell (classically described as opening Na⁺ channels). Salt is sensed by direct Na⁺ entry, sour by H⁺ (which blocks K⁺ channels), and bitter/umami through other GPCR (T2R and T1R1–T1R3) pathways; umami’s ligand is glutamate, not glutamine.",
+              "keyConcept": "Sweet taste works through a GPCR–cAMP second-messenger cascade that depolarizes the cell, unlike the direct ionic mechanisms of salt (Na⁺) and sour (H⁺).",
+              "options": [
+                "In sour taste, H⁺ depolarizes the cell and K⁺ channels open",
+                "Salt taste stimulates closure of Na⁺ channels",
+                "Bitter taste increases intracellular Na⁺",
+                "Sweet taste increases cAMP and opens Na⁺ channels",
+                "Umami taste stimulates glutamine receptors"
+              ],
+              "correctIndex": 3,
+              "modelAnswer": null,
+              "difficulty": "hard",
+              "tags": [
+                "physiology",
+                "taste",
+                "signal-transduction",
+                "past-exam-set",
+                "past-exam-2019-2025"
+              ]
+            },
+            {
+              "id": "MSS2-CH9-PHYS-0022",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Dysosmia refers to:",
+              "explanation": "“Osmia” refers to smell and the prefix dys- means disordered, so dysosmia is any distortion of the sense of smell (for example parosmia). Anosmia is complete loss of smell, hyposmia is reduced smell, and ageusia is loss of taste.",
+              "keyConcept": "Dysosmia = a distorted sense of smell; contrast anosmia (absent smell), hyposmia (reduced smell) and ageusia (absent taste).",
+              "options": [
+                "Complete loss of smell",
+                "Loss of taste",
+                "Disturbance of smell",
+                "Increased sensitivity to sound",
+                "Disturbance of vision"
+              ],
+              "correctIndex": 2,
+              "modelAnswer": null,
+              "difficulty": "easy",
+              "tags": [
+                "physiology",
+                "olfaction",
+                "dysosmia",
+                "past-exam-set",
+                "past-exam-2019-2025"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "microbiology",
+          "name": "Microbiology",
+          "iconName": "Biohazard",
+          "lectures": [],
+          "lectureCount": 1,
+          "lectureNames": [
+            "Past Exams"
+          ],
+          "questions": [
+            {
+              "id": "MSS2-CH9-MICR-0001",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which surface component of Staphylococcus aureus prevents phagocytosis by binding the Fc region of host immunoglobulins in an inverted orientation?",
+              "explanation": "Protein A on the S. aureus cell wall binds the Fc portion of IgG “upside-down,” so the bound antibody cannot engage phagocyte Fc receptors or fix complement efficiently. This antiphagocytic disguise is a key immune-evasion virulence factor.",
+              "keyConcept": "Staphylococcal protein A binds IgG by its Fc region (inverted), blocking opsonophagocytosis and complement activation.",
+              "options": [
+                "Polysaccharide capsule",
+                "Lipoteichoic acid",
+                "Protein A",
+                "Clumping factor A",
+                "Panton–Valentine leukocidin"
+              ],
+              "correctIndex": 2,
+              "modelAnswer": null,
+              "difficulty": "medium",
+              "tags": [
+                "microbiology",
+                "staphylococcus-aureus",
+                "virulence",
+                "protein-a",
+                "past-exam-set",
+                "past-exam-2019-2025"
+              ]
+            },
+            {
+              "id": "MSS2-CH9-MICR-0002",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following characteristics is true of a Gram-negative, oxidase-positive rod?",
+              "explanation": "A Gram-negative, oxidase-positive rod points to Pseudomonas aeruginosa, which secretes diffusible exopigments into agar — blue-green pyocyanin and fluorescent pyoverdine. It is a non-fermenter, is not inhibited by optochin (that identifies pneumococcus), and is not obligately intracellular.",
+              "keyConcept": "Pseudomonas aeruginosa is an oxidase-positive Gram-negative non-fermenter that produces diffusible pigments (pyocyanin/pyoverdine) on agar.",
+              "options": [
+                "It has double-stranded RNA",
+                "It produces a diffusible exopigment on nutrient agar",
+                "It is inhibited by optochin",
+                "It ferments mannitol",
+                "It has a rigid cell wall and is obligately intracellular"
+              ],
+              "correctIndex": 1,
+              "modelAnswer": null,
+              "difficulty": "medium",
+              "tags": [
+                "microbiology",
+                "pseudomonas",
+                "oxidase",
+                "past-exam-set",
+                "past-exam-2019-2025"
+              ]
+            },
+            {
+              "id": "MSS2-CH9-MICR-0003",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Necrotizing otitis media is most commonly caused by which of the following organisms?",
+              "explanation": "Pseudomonas aeruginosa is the classic cause of necrotizing (“malignant”) otitis, an aggressive infection that spreads to the temporal bone and skull base, typically in elderly diabetics or the immunocompromised. Ordinary acute otitis media is usually pneumococcus, H. influenzae or Moraxella.",
+              "keyConcept": "Necrotizing (“malignant”) otitis is caused by Pseudomonas aeruginosa, especially in elderly diabetics/immunocompromised, threatening the skull base.",
+              "options": [
+                "Staphylococcus aureus",
+                "Streptococcus pneumoniae",
+                "Haemophilus influenzae",
+                "Pseudomonas aeruginosa",
+                "Moraxella catarrhalis"
+              ],
+              "correctIndex": 3,
+              "modelAnswer": null,
+              "difficulty": "medium",
+              "tags": [
+                "microbiology",
+                "pseudomonas",
+                "otitis",
+                "past-exam-set",
+                "past-exam-2019-2025"
+              ]
+            },
+            {
+              "id": "MSS2-CH9-MICR-0004",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Pharyngoconjunctival fever — fever, pharyngitis, and conjunctivitis following exposure to inadequately chlorinated swimming pools — is most commonly caused by which of the following?",
+              "explanation": "Adenoviruses (especially serotypes 3, 4 and 7) cause pharyngoconjunctival fever — the triad of fever, pharyngitis and follicular conjunctivitis — classically in outbreaks linked to poorly chlorinated swimming pools. It is highly contagious but self-limiting.",
+              "keyConcept": "Adenovirus causes pharyngoconjunctival fever (fever + pharyngitis + conjunctivitis), classically from under-chlorinated swimming pools.",
+              "options": [
+                "Enterovirus D68",
+                "Respiratory syncytial virus (RSV)",
+                "Human adenovirus",
+                "Human herpesvirus 6 (HHV-6)",
+                "Human metapneumovirus"
+              ],
+              "correctIndex": 2,
+              "modelAnswer": null,
+              "difficulty": "medium",
+              "tags": [
+                "microbiology",
+                "adenovirus",
+                "conjunctivitis",
+                "past-exam-set",
+                "past-exam-2019-2025"
+              ]
+            },
+            {
+              "id": "MSS2-CH9-MICR-0005",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "An oxidase-positive, Gram-negative bacillus is most likely which of the following?",
+              "explanation": "Among these choices, Pseudomonas aeruginosa is the oxidase-positive Gram-negative bacillus. Haemophilus needs X and V factors, Moraxella is a diplococcus, Chlamydia is obligately intracellular, and S. pneumoniae is a Gram-positive coccus. The oxidase (cytochrome c oxidase) test is a rapid key discriminator.",
+              "keyConcept": "A positive oxidase test on a Gram-negative rod strongly suggests Pseudomonas aeruginosa.",
+              "options": [
+                "Haemophilus influenzae",
+                "Moraxella catarrhalis",
+                "Pseudomonas aeruginosa",
+                "Chlamydia trachomatis",
+                "Streptococcus pneumoniae"
+              ],
+              "correctIndex": 2,
+              "modelAnswer": null,
+              "difficulty": "easy",
+              "tags": [
+                "microbiology",
+                "pseudomonas",
+                "oxidase",
+                "identification",
+                "past-exam-set",
+                "past-exam-2019-2025"
+              ]
+            },
+            {
+              "id": "MSS2-CH9-MICR-0006",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following organisms is a common cause of both neonatal conjunctivitis and otitis media?",
+              "explanation": "Chlamydia trachomatis (serotypes D–K) is acquired during vaginal delivery and causes neonatal inclusion conjunctivitis (ophthalmia neonatorum) around days 5–14; it can also cause neonatal pneumonia and otitis media. Treatment is systemic (oral) erythromycin, not topical therapy alone.",
+              "keyConcept": "Chlamydia trachomatis (D–K) causes neonatal inclusion conjunctivitis and can also cause otitis media/pneumonia; treat with systemic erythromycin.",
+              "options": [
+                "Staphylococcus aureus",
+                "Chlamydia trachomatis",
+                "Moraxella catarrhalis",
+                "Pseudomonas aeruginosa",
+                "Corynebacterium diphtheriae"
+              ],
+              "correctIndex": 1,
+              "modelAnswer": null,
+              "difficulty": "medium",
+              "tags": [
+                "microbiology",
+                "chlamydia",
+                "neonatal-conjunctivitis",
+                "past-exam-set",
+                "past-exam-2019-2025"
               ]
             }
           ]
@@ -30797,7 +31550,7 @@
               "lecture": 1,
               "text": "Loss of central vision is most commonly associated with which of the following conditions?",
               "explanation": "Age-related macular degeneration affects the macula and characteristically causes loss of central vision.",
-              "keyConcept": "Age-related macular degeneration affects the macula and characteristically causes loss of central vision.",
+              "keyConcept": "The macula subserves central/fine vision, so macular degeneration attacks central vision first while sparing the periphery.",
               "options": [
                 "Glaucoma",
                 "Retinal detachment",
@@ -30820,7 +31573,7 @@
               "lecture": 1,
               "text": "A female patient with Sjögren syndrome presents with dry eyes and irritation. Which of the following is the most likely diagnosis?",
               "explanation": "Sjogren syndrome reduces tear secretion, producing keratoconjunctivitis sicca (dry eye).",
-              "keyConcept": "Sjogren syndrome reduces tear secretion, producing keratoconjunctivitis sicca (dry eye).",
+              "keyConcept": "Autoimmune destruction of lacrimal glands in Sjogren syndrome cuts aqueous tears, producing keratoconjunctivitis sicca (dry eye).",
               "options": [
                 "Bacterial conjunctivitis",
                 "Viral keratitis",
@@ -30843,7 +31596,7 @@
               "lecture": 1,
               "text": "A woman with a history of hypertension and congestive heart failure presents with retinal findings of arteriolar narrowing, flame-shaped hemorrhages, and both soft and hard exudates. What is the most likely diagnosis?",
               "explanation": "Arteriolar narrowing, flame-shaped haemorrhages and soft and hard exudates in a hypertensive patient indicate hypertensive retinopathy.",
-              "keyConcept": "Arteriolar narrowing, flame-shaped haemorrhages and soft and hard exudates in a hypertensive patient indicate hypertensive retinopathy.",
+              "keyConcept": "Hypertensive retinopathy = arteriolar narrowing + flame haemorrhages + cotton-wool (soft) and hard exudates.",
               "options": [
                 "Diabetic retinopathy",
                 "Hypertensive retinopathy",
@@ -30866,7 +31619,7 @@
               "lecture": 1,
               "text": "Acute suppurative inflammation of a sebaceous gland of the eyelid is known as which of the following?",
               "explanation": "A stye (external hordeolum) is an acute suppurative infection of a sebaceous gland of the eyelid margin; a chalazion is a chronic Meibomian granuloma.",
-              "keyConcept": "A stye (external hordeolum) is an acute suppurative infection of a sebaceous gland of the eyelid margin; a chalazion is a chronic Meibomian granuloma.",
+              "keyConcept": "A stye (external hordeolum) is an acute suppurative infection of a lid-margin gland; a chalazion is a painless chronic Meibomian granuloma.",
               "options": [
                 "Chalazion",
                 "Stye",
@@ -30889,7 +31642,7 @@
               "lecture": 1,
               "text": "A Flexner–Wintersteiner rosette is classically associated with which of the following conditions?",
               "explanation": "Flexner-Wintersteiner rosettes are characteristic of retinoblastoma.",
-              "keyConcept": "Flexner-Wintersteiner rosettes are characteristic of retinoblastoma.",
+              "keyConcept": "Flexner-Wintersteiner rosettes (cells around a central lumen) are the histological signature of retinoblastoma.",
               "options": [
                 "Retinoblastoma",
                 "Glioblastoma",
@@ -30904,6 +31657,108 @@
                 "pathology",
                 "retinoblastoma",
                 "past-exam-set"
+              ]
+            },
+            {
+              "id": "MSS2-CH9-PATH-0006",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Corneal scarring is a characteristic complication of which condition?",
+              "explanation": "Trachoma (Chlamydia trachomatis serotypes A–C) causes chronic follicular conjunctivitis; repeated infection scars the tarsal conjunctiva, producing entropion and trichiasis whose in-turned lashes abrade the cornea, leading to corneal scarring and blindness. It is the world’s leading infectious cause of blindness.",
+              "keyConcept": "Recurrent trachoma scars the conjunctiva → entropion/trichiasis → corneal abrasion, scarring and blindness.",
+              "options": [
+                "Viral keratitis",
+                "Bacterial conjunctivitis",
+                "Trachoma caused by Chlamydia trachomatis",
+                "Allergic conjunctivitis",
+                "Fungal keratitis"
+              ],
+              "correctIndex": 2,
+              "modelAnswer": null,
+              "difficulty": "medium",
+              "tags": [
+                "pathology",
+                "trachoma",
+                "chlamydia",
+                "cornea",
+                "past-exam-set",
+                "past-exam-2019-2025"
+              ]
+            },
+            {
+              "id": "MSS2-CH9-PATH-0007",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "A “white eye” (leukocoria) is classically associated with which condition?",
+              "explanation": "Leukocoria — a white pupillary reflex replacing the normal red reflex — is the classic presenting sign of retinoblastoma, the commonest intraocular malignancy of childhood. Although congenital cataract and retinopathy of prematurity can also cause it, retinoblastoma must be excluded urgently in a child.",
+              "keyConcept": "Leukocoria (a white pupillary reflex) in a child is retinoblastoma until proven otherwise.",
+              "options": [
+                "Glaucoma",
+                "Retinoblastoma",
+                "Cataract",
+                "Uveitis",
+                "Retinal detachment"
+              ],
+              "correctIndex": 1,
+              "modelAnswer": null,
+              "difficulty": "medium",
+              "tags": [
+                "pathology",
+                "retinoblastoma",
+                "leukocoria",
+                "pediatric",
+                "past-exam-set",
+                "past-exam-2019-2025"
+              ]
+            },
+            {
+              "id": "MSS2-CH9-PATH-0008",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Rapid deterioration of vision is most characteristic of which condition?",
+              "explanation": "Optic neuritis (often demyelinating and associated with multiple sclerosis) typically causes rapid, subacute monocular visual loss over hours to days, with painful eye movements and a relative afferent pupillary defect. Cataract, open-angle glaucoma and macular degeneration instead cause gradual, progressive decline.",
+              "keyConcept": "Optic neuritis causes rapid (hours–days) monocular visual loss with painful eye movements, unlike the slow decline of cataract/glaucoma/AMD.",
+              "options": [
+                "Cataract",
+                "Open-angle glaucoma",
+                "Macular degeneration",
+                "Optic neuritis",
+                "Diabetic retinopathy"
+              ],
+              "correctIndex": 3,
+              "modelAnswer": null,
+              "difficulty": "medium",
+              "tags": [
+                "pathology",
+                "optic-neuritis",
+                "vision-loss",
+                "past-exam-set",
+                "past-exam-2019-2025"
+              ]
+            },
+            {
+              "id": "MSS2-CH9-PATH-0009",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following does NOT cause conductive hearing loss?",
+              "explanation": "Conductive loss arises from outer/middle-ear problems — otitis media, impacted wax, otosclerosis (stapes fixation) and tympanic-membrane perforation. An acoustic neuroma (vestibular schwannoma) compresses cranial nerve VIII and therefore causes sensorineural, not conductive, hearing loss.",
+              "keyConcept": "Acoustic neuroma causes sensorineural loss (CN VIII); conductive loss comes from outer/middle-ear pathology (wax, otitis media, otosclerosis, perforation).",
+              "options": [
+                "Otitis media",
+                "Impacted ear wax",
+                "Otosclerosis",
+                "Tympanic membrane perforation",
+                "Acoustic neuroma"
+              ],
+              "correctIndex": 4,
+              "modelAnswer": null,
+              "difficulty": "medium",
+              "tags": [
+                "pathology",
+                "hearing-loss",
+                "acoustic-neuroma",
+                "past-exam-set",
+                "past-exam-2019-2025"
               ]
             }
           ]
@@ -30924,7 +31779,7 @@
               "lecture": 1,
               "text": "Which of the following drugs is used in the emergency management of acute angle-closure glaucoma?",
               "explanation": "Pilocarpine, a muscarinic agonist, contracts the ciliary muscle and sphincter pupillae to open the drainage angle in acute angle-closure glaucoma.",
-              "keyConcept": "Pilocarpine, a muscarinic agonist, contracts the ciliary muscle and sphincter pupillae to open the drainage angle in acute angle-closure glaucoma.",
+              "keyConcept": "Acute angle-closure is broken with a miotic: pilocarpine contracts the sphincter pupillae/ciliary muscle to reopen the drainage angle.",
               "options": [
                 "Atropine",
                 "Pilocarpine",
@@ -30947,7 +31802,7 @@
               "lecture": 1,
               "text": "Which of the following topical drugs is preferred for treating chronic open-angle glaucoma in a patient with COPD?",
               "explanation": "Dipivefrine (a prodrug of adrenaline) avoids the bronchoconstriction risk of topical beta-blockers such as timolol, making it preferable in COPD.",
-              "keyConcept": "Dipivefrine (a prodrug of adrenaline) avoids the bronchoconstriction risk of topical beta-blockers such as timolol, making it preferable in COPD.",
+              "keyConcept": "Avoid topical beta-blockers (timolol) in COPD/asthma; dipivefrine (an adrenaline prodrug) lowers pressure without bronchospasm.",
               "options": [
                 "Timolol",
                 "Dipivefrine",
@@ -30970,7 +31825,7 @@
               "lecture": 1,
               "text": "A 62-year-old man presents to the emergency room with severe ocular pain, redness, decreased vision, colored halos around lights, and nausea with vomiting. Ophthalmoscopy suggests an acute attack of glaucoma. Which of the following topical anti-glaucoma drugs is the drug of choice for emergency reduction of intraocular pressure?",
               "explanation": "Topical pilocarpine rapidly constricts the pupil and opens the drainage angle, making it the drug of choice in an acute glaucoma attack.",
-              "keyConcept": "Topical pilocarpine rapidly constricts the pupil and opens the drainage angle, making it the drug of choice in an acute glaucoma attack.",
+              "keyConcept": "The emergency drug of choice to drop IOP in acute angle-closure is topical pilocarpine, whose miosis reopens the angle.",
               "options": [
                 "Atropine",
                 "Timolol",
@@ -30993,7 +31848,7 @@
               "lecture": 1,
               "text": "In an open-angle glaucoma patient treated with topical timolol and apraclonidine, which of the following is the primary site of action responsible for lowering intraocular pressure?",
               "explanation": "Timolol (beta-blocker) and apraclonidine (alpha-2 agonist) lower intraocular pressure by reducing aqueous humour production at the ciliary epithelium.",
-              "keyConcept": "Timolol (beta-blocker) and apraclonidine (alpha-2 agonist) lower intraocular pressure by reducing aqueous humour production at the ciliary epithelium.",
+              "keyConcept": "Timolol (beta-blocker) and apraclonidine (alpha-2 agonist) both act on the ciliary epithelium to REDUCE aqueous secretion.",
               "options": [
                 "Trabecular meshwork",
                 "Ciliary epithelium",
@@ -31008,6 +31863,32 @@
                 "pharmacology",
                 "ciliary-epithelium",
                 "past-exam-set"
+              ]
+            },
+            {
+              "id": "MSS2-CH9-PHAR-0005",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Overgrowth of the eyelashes (hypertrichosis) is a known side effect of which medication?",
+              "explanation": "Latanoprost is a topical prostaglandin F2α analogue for glaucoma. Besides lowering intraocular pressure by increasing uveoscleral outflow, it causes cosmetic effects: lengthening and thickening of eyelashes (hypertrichosis) and increased iris and periocular pigmentation.",
+              "keyConcept": "Prostaglandin analogues (latanoprost) increase uveoscleral outflow and characteristically cause eyelash growth and iris/periocular hyperpigmentation.",
+              "options": [
+                "Timolol",
+                "Acetazolamide",
+                "Atropine",
+                "Pilocarpine",
+                "Latanoprost"
+              ],
+              "correctIndex": 4,
+              "modelAnswer": null,
+              "difficulty": "medium",
+              "tags": [
+                "pharmacology",
+                "glaucoma",
+                "prostaglandin-analogue",
+                "latanoprost",
+                "past-exam-set",
+                "past-exam-2019-2025"
               ]
             }
           ]
@@ -31028,7 +31909,7 @@
               "lecture": 1,
               "text": "Jaw claudication is a classic symptom of which of the following conditions?",
               "explanation": "Jaw claudication (masseteric pain on chewing) is a classic feature of giant cell (temporal) arteritis.",
-              "keyConcept": "Giant cell arteritis — Jaw claudication (masseteric pain on chewing) is a classic feature of giant cell (temporal) arteritis.",
+              "keyConcept": "Jaw claudication with headache in an older patient signals giant cell (temporal) arteritis — treat urgently to prevent blindness.",
               "options": [
                 "Takayasu arteritis",
                 "Polyarteritis nodosa",
@@ -31051,11 +31932,11 @@
               "lecture": 1,
               "text": "Which of the following conditions is most commonly associated with Horner syndrome?",
               "explanation": "Horner syndrome is classically associated with an apical lung (Pancoast) tumour compressing the cervical sympathetic chain.",
-              "keyConcept": "Apical lung (Pancoast) tumour",
+              "keyConcept": "An apical lung (Pancoast) tumour invades the cervical sympathetic chain, causing Horner syndrome (miosis, ptosis, anhidrosis).",
               "options": [
                 "Middle ear infection",
                 "Diabetic retinopathy",
-                "Horner lung apex",
+                "Tumour at the apex of the lung (Pancoast tumour)",
                 "Optic neuritis",
                 "Retinal detachment"
               ],
@@ -31066,6 +31947,57 @@
                 "clinical",
                 "horner-syndrome",
                 "past-exam-set"
+              ]
+            },
+            {
+              "id": "MSS2-CH9-CLIN-0003",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Miosis is a characteristic feature of which of the following conditions?",
+              "explanation": "Horner syndrome results from interruption of the sympathetic supply to the eye, giving the triad of miosis (unopposed parasympathetic constriction), partial ptosis (loss of the Muller superior tarsal muscle) and anhidrosis. Oculomotor palsy and the Adie tonic pupil instead cause a dilated pupil, and the Argyll Robertson pupil is also small but shows light-near dissociation.",
+              "keyConcept": "Horner syndrome (sympathetic denervation) causes the triad of miosis, partial ptosis and anhidrosis.",
+              "options": [
+                "Oculomotor nerve palsy",
+                "Argyll Robertson pupil",
+                "Horner syndrome",
+                "Adie tonic pupil",
+                "Optic neuritis"
+              ],
+              "correctIndex": 2,
+              "modelAnswer": null,
+              "difficulty": "medium",
+              "tags": [
+                "clinical",
+                "horner-syndrome",
+                "miosis",
+                "pupil",
+                "past-exam-set",
+                "past-exam-2019-2025"
+              ]
+            },
+            {
+              "id": "MSS2-CH9-CLIN-0004",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Otosclerosis is a disease primarily affecting which of the following structures?",
+              "explanation": "Otosclerosis is a primary disorder of the bony labyrinth (otic capsule), in which normal bone is replaced by spongy vascular bone (otospongiosis). The focus characteristically involves the region of the oval window and fixes the stapes footplate, producing conductive hearing loss; spread into the cochlear capsule can add a sensorineural component.",
+              "keyConcept": "Otosclerosis is abnormal remodeling of the bony labyrinth/otic capsule (otospongiosis) that typically fixes the stapes footplate, causing conductive hearing loss.",
+              "options": [
+                "External auditory canal",
+                "Tympanic membrane",
+                "Ossicles of the middle ear",
+                "Labyrinth of the inner ear",
+                "Cochlear nerve"
+              ],
+              "correctIndex": 3,
+              "modelAnswer": null,
+              "difficulty": "hard",
+              "tags": [
+                "clinical",
+                "otosclerosis",
+                "ear",
+                "past-exam-set",
+                "past-exam-2019-2025"
               ]
             }
           ]

@@ -142,18 +142,19 @@ describe('Special Senses (MSS-2) subject-centric database validation', () => {
     expect(ch.subjects[0].questions.length).toBeGreaterThan(0);
   });
 
-  it('chapter 9 is Past Exams with 7 subjects', () => {
+  it('chapter 9 is Past Exams with 8 subjects', () => {
     const chapters = getChaptersForModuleAndMode('MSS-2', 'mixed');
     const ch = chapters[8];
     expect(ch.id).toBe(9);
     expect(ch.title).toBe('Past Exams');
     expect(['📝', '📌']).toContain(ch.emoji);
-    expect(ch.subjects.length).toBe(7);
+    expect(ch.subjects.length).toBe(8);
     const subjectIds = ch.subjects.map(s => s.id);
     expect(subjectIds).toContain('anatomy');
     expect(subjectIds).toContain('histology');
     expect(subjectIds).toContain('biochem');
     expect(subjectIds).toContain('physiology');
+    expect(subjectIds).toContain('microbiology');
     expect(subjectIds).toContain('pathology');
     expect(subjectIds).toContain('pharma');
     expect(subjectIds).toContain('clinical');
