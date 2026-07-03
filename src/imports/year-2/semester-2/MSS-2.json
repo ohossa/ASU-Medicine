@@ -30426,6 +30426,132 @@
                 "past-exam-set",
                 "past-exam-2019-2025"
               ]
+            },
+            {
+              "id": "MSS2-CH9-ANAT-E0002",
+              "type": "essay",
+              "lecture": 1,
+              "difficulty": "easy",
+              "text": "Define coloboma iridis and mention its cause.",
+              "explanation": "Tests a developmental eye anomaly and links it to the embryology of the choroid (optic) fissure, whose failure of closure produces the typical inferonasal cleft of the iris and, if extensive, of the ciliary body, choroid, retina and optic disc.",
+              "keyConcept": "Coloboma iridis is a congenital cleft in the lower (inferonasal) part of the iris caused by failure of closure of the choroid (optic) fissure during development.",
+              "modelAnswer": "**Coloboma iridis**\n\n**Definition:** A congenital **cleft (gap/notch) in the lower part of the iris**, which gives the pupil a characteristic \"keyhole\" appearance.\n\n**Cause:** **Failure of closure of the choroid (optic) fissure** during development of the eye. The fissure normally closes around the 6th–7th week; if it fails to close inferonasally, a coloboma results.\n\n**Note:** Because the defect follows the line of the fissure, a coloboma may also involve the ciliary body, choroid, retina and optic disc.\n\n*Ai Generated Model Answer*",
+              "options": [],
+              "correctIndex": null,
+              "tags": [
+                "anatomy",
+                "coloboma",
+                "iris",
+                "embryology",
+                "choroid fissure",
+                "past-exam-set",
+                "essay-exam-2025"
+              ]
+            },
+            {
+              "id": "MSS2-CH9-ANAT-E0003",
+              "type": "essay",
+              "lecture": 1,
+              "difficulty": "hard",
+              "text": "A person loses taste sensation on the right side. Describe the affected taste pathway.",
+              "explanation": "Tests the three-neuron gustatory pathway and the cranial nerves that carry taste from the different regions of the tongue, and highlights that taste (like smell) projects to the ipsilateral cortex, so a right-sided lesion impairs taste on the right.",
+              "keyConcept": "Taste uses a 3-neuron pathway: first-order neurons in the geniculate (CN VII, anterior 2/3), inferior glossopharyngeal (CN IX, posterior 1/3) and inferior vagal (CN X, epiglottis) ganglia; second-order in the nucleus of the solitary tract ascending in the ipsilateral solitariothalamic tract to the VPM of the thalamus; third-order to the insula/opercular taste cortex — taste is ipsilateral.",
+              "modelAnswer": "Taste is carried by a **three-neuron pathway** that, unlike most sensations, projects to the **ipsilateral** cortex — so a right-sided lesion causes loss of taste on the right side.\n\n**First-order neurons** (peripheral ganglia, by tongue region):\n- **Geniculate ganglion of the facial nerve (CN VII):** anterior two-thirds of the tongue and soft palate.\n- **Inferior (petrosal) ganglion of the glossopharyngeal nerve (CN IX):** posterior one-third of the tongue.\n- **Inferior (nodose) ganglion of the vagus nerve (CN X):** most posterior part of the tongue and the epiglottis.\n\n**Second-order neurons:** central processes end in the **upper (gustatory) part of the nucleus of the solitary tract**; their axons ascend in the **solitariothalamic tract of the same side**.\n\n**Third-order neurons:** in the **ventral posteromedial (VPM) nucleus of the thalamus**, projecting to the **taste cortex of the insula and frontal operculum**.\n\n**Note:** Taste and smell terminate in the **ipsilateral** cortex, so a lesion on the right impairs taste on the right side.\n\n*Ai Generated Model Answer*",
+              "options": [],
+              "correctIndex": null,
+              "tags": [
+                "anatomy",
+                "taste pathway",
+                "gustatory",
+                "cranial nerves",
+                "nucleus solitarius",
+                "past-exam-set",
+                "essay-exam-2025"
+              ]
+            },
+            {
+              "id": "MSS2-CH9-ANAT-E0004",
+              "type": "essay",
+              "lecture": 1,
+              "difficulty": "easy",
+              "text": "Enumerate three branches of the ophthalmic artery.",
+              "explanation": "Tests the branches of the ophthalmic artery, the first branch of the internal carotid artery within the cranial cavity; the central retinal artery is clinically the most important because it is an end artery supplying the inner retina.",
+              "keyConcept": "Branches of the ophthalmic artery include the central retinal artery, lacrimal artery, posterior and anterior ciliary arteries, muscular branches, supraorbital, supratrochlear, anterior and posterior ethmoidal, medial palpebral and dorsal nasal arteries; the central retinal artery is an end artery.",
+              "modelAnswer": "The **ophthalmic artery** (the first branch of the internal carotid artery in the cranial cavity) supplies the orbit. **Any three** of its branches are acceptable, for example:\n\n1. **Central retinal artery** — an end artery supplying the inner layers of the retina.\n2. **Lacrimal artery** — to the lacrimal gland (gives the lateral palpebral arteries).\n3. **Posterior ciliary arteries** — supply the choroid and, via short branches, the optic disc.\n\n**Other branches** (for completeness): anterior ciliary (from muscular branches), muscular branches, supraorbital, supratrochlear, anterior and posterior ethmoidal, medial (internal) palpebral, and dorsal nasal arteries.\n\n*Ai Generated Model Answer*",
+              "options": [],
+              "correctIndex": null,
+              "tags": [
+                "anatomy",
+                "ophthalmic artery",
+                "orbit",
+                "blood supply",
+                "central retinal artery",
+                "past-exam-set",
+                "essay-exam-2024"
+              ]
+            },
+            {
+              "id": "MSS2-CH9-ANAT-E0005",
+              "type": "essay",
+              "lecture": 1,
+              "difficulty": "medium",
+              "text": "Enumerate the branches of the facial nerve that arise within the petrous temporal bone.",
+              "explanation": "Tests the intrapetrous (intratemporal) course of the facial nerve and its three branches, which carry parasympathetic secretomotor fibres, motor fibres to stapedius, and taste plus secretomotor fibres respectively.",
+              "keyConcept": "Within the petrous temporal bone the facial nerve gives three branches: the greater petrosal nerve (from the geniculate ganglion; parasympathetic to lacrimal, nasal and palatine glands), the nerve to stapedius (motor), and the chorda tympani (taste from anterior 2/3 tongue plus secretomotor to submandibular and sublingual glands).",
+              "modelAnswer": "Within the **petrous temporal bone**, the facial nerve (CN VII) gives **three branches**:\n\n| Branch | Origin | Fibres carried | Destination |\n|---|---|---|---|\n| **Greater petrosal nerve** | Geniculate ganglion | Secretomotor (parasympathetic) | Lacrimal, nasal and palatine glands (via the pterygopalatine ganglion) |\n| **Nerve to stapedius** | Facial nerve as it descends behind the middle-ear cavity | Motor | Stapedius muscle |\n| **Chorda tympani** | Facial nerve ~6 mm above the stylomastoid foramen | Taste + secretomotor (parasympathetic) | Taste from the anterior two-thirds of the tongue (except vallate papillae); secretomotor to the submandibular and sublingual salivary glands |\n\n*Ai Generated Model Answer*",
+              "options": [],
+              "correctIndex": null,
+              "tags": [
+                "anatomy",
+                "facial nerve",
+                "petrous temporal bone",
+                "chorda tympani",
+                "greater petrosal",
+                "past-exam-set",
+                "essay-exam-2024"
+              ]
+            },
+            {
+              "id": "MSS2-CH9-ANAT-E0006",
+              "type": "essay",
+              "lecture": 1,
+              "difficulty": "medium",
+              "text": "Explain why oculomotor nerve palsy leads to a downward and lateral (\"down and out\") position of the affected eye.",
+              "explanation": "Tests the motor supply of the extraocular muscles: the oculomotor nerve supplies all of them except the lateral rectus (CN VI) and superior oblique (CN IV), so its palsy leaves these two muscles unopposed.",
+              "keyConcept": "In CN III palsy most extraocular muscles are paralysed but the lateral rectus (CN VI) and superior oblique (CN IV) still act; their unopposed pull abducts (lateral) and depresses/intorts (downward) the eye, giving the classic down-and-out position, with ptosis and a fixed dilated pupil.",
+              "modelAnswer": "The **oculomotor nerve (CN III)** supplies **all** the extraocular muscles **except** the **lateral rectus** (supplied by CN VI, abducent) and the **superior oblique** (supplied by CN IV, trochlear).\n\nIn a complete **oculomotor palsy** the superior, inferior and medial recti and the inferior oblique are paralysed, but the **lateral rectus and superior oblique remain active and unopposed**:\n\n- **Unopposed lateral rectus** → pulls the eye **laterally (abduction)** = \"out\".\n- **Unopposed superior oblique** → pulls the eye **downward (depression, with intorsion)** = \"down\".\n\nThe combined force fixes the eye in the classic **\"down and out\" (lateral and downward)** position. It is usually accompanied by **ptosis** (paralysis of levator palpebrae superioris) and a **fixed, dilated pupil** (loss of parasympathetic supply to sphincter pupillae).\n\n*Ai Generated Model Answer*",
+              "options": [],
+              "correctIndex": null,
+              "tags": [
+                "anatomy",
+                "oculomotor nerve",
+                "extraocular muscles",
+                "ophthalmoplegia",
+                "down and out",
+                "past-exam-set",
+                "essay-exam-2024"
+              ]
+            },
+            {
+              "id": "MSS2-CH9-ANAT-E0007",
+              "type": "essay",
+              "lecture": 1,
+              "difficulty": "easy",
+              "text": "Mention the fibres of the chorda tympani nerve and their type.",
+              "explanation": "Tests the two functional components carried by the chorda tympani, a branch of the facial nerve: special sensory (taste) afferents and preganglionic parasympathetic (secretomotor) efferents.",
+              "keyConcept": "The chorda tympani carries two fibre types: special sensory (taste) afferents from the anterior two-thirds of the tongue, and preganglionic parasympathetic (secretomotor) fibres to the submandibular and sublingual salivary glands (relay in the submandibular ganglion).",
+              "modelAnswer": "The **chorda tympani** (a branch of the facial nerve, CN VII) carries **two types of fibres**:\n\n1. **Afferent taste (special sensory) fibres** — carrying taste sensation from the **anterior two-thirds of the tongue**.\n2. **Preganglionic parasympathetic (secretomotor) fibres** — to the **submandibular and sublingual salivary glands** (relaying in the submandibular ganglion).\n\n*Ai Generated Model Answer*",
+              "options": [],
+              "correctIndex": null,
+              "tags": [
+                "anatomy",
+                "chorda tympani",
+                "facial nerve",
+                "taste",
+                "parasympathetic",
+                "past-exam-set",
+                "essay-exam-2024"
+              ]
             }
           ]
         },
@@ -30644,6 +30770,27 @@
                 "hair-cells",
                 "past-exam-set",
                 "past-exam-2019-2025"
+              ]
+            },
+            {
+              "id": "MSS2-CH9-HIST-E0002",
+              "type": "essay",
+              "lecture": 1,
+              "difficulty": "medium",
+              "text": "Describe the structure of the blood-retinal barrier.",
+              "explanation": "Tests the two structural components of the blood-retinal barrier, which maintains the specialised microenvironment of the neural retina; breakdown of the inner barrier underlies conditions such as diabetic macular oedema.",
+              "keyConcept": "The blood-retinal barrier has two parts: an outer barrier formed by tight junctions between retinal pigment epithelial cells, and an inner barrier formed by tight junctions between the endothelial cells of the retinal capillaries.",
+              "modelAnswer": "The **blood-retinal barrier (BRB)** has **two structural components**:\n\n1. **Outer blood-retinal barrier:** formed by **tight junctions (zonulae occludentes) between the lateral borders of the retinal pigment epithelial (RPE) cells**.\n2. **Inner blood-retinal barrier:** formed by **tight junctions between the endothelial cells of the retinal blood capillaries**.\n\nTogether these barriers regulate exchange between the blood and the neural retina, maintaining its microenvironment.\n\n**Clinical note:** In **retinal detachment** the neural (nervous) retina separates from the RPE, whereas the RPE itself remains firmly attached to Bruch's membrane of the choroid.\n\n*Ai Generated Model Answer*",
+              "options": [],
+              "correctIndex": null,
+              "tags": [
+                "histology",
+                "blood-retinal barrier",
+                "retina",
+                "pigment epithelium",
+                "tight junctions",
+                "past-exam-set",
+                "essay-exam-2025"
               ]
             }
           ]
@@ -31366,6 +31513,111 @@
                 "dysosmia",
                 "past-exam-set",
                 "past-exam-2019-2025"
+              ]
+            },
+            {
+              "id": "MSS2-CH9-PHYS-E0002",
+              "type": "essay",
+              "lecture": 1,
+              "difficulty": "medium",
+              "text": "Compare between dark and light adaptation with respect to threshold, sensitivity and visual pigment.",
+              "explanation": "Tests the retinal mechanisms that adjust visual sensitivity to ambient light: dark adaptation regenerates rhodopsin to raise sensitivity in dim light, whereas light adaptation bleaches photopigment to reduce sensitivity in bright light.",
+              "keyConcept": "Dark adaptation lowers the threshold, raises sensitivity and regenerates (accumulates) rhodopsin; light adaptation is the reverse — it raises the threshold, lowers sensitivity and bleaches (breaks down) the visual pigment.",
+              "modelAnswer": "| Feature | **Dark adaptation** (bright → dim light) | **Light adaptation** (dim → bright light) |\n|---|---|---|\n| **Threshold** | **Decreases** (less light needed to see) | **Increases** (more light needed to see) |\n| **Sensitivity** | **Increases** (retina becomes highly sensitive) | **Decreases** (retina becomes less sensitive) |\n| **Visual pigment** | **Rhodopsin is regenerated / accumulates** | **Rhodopsin is bleached / broken down** |\n| **Time course** | Slow (rods take ~20–30 min for full adaptation) | Rapid (seconds to a few minutes) |\n\n**In brief:** dark adaptation increases retinal sensitivity by lowering the threshold and rebuilding photopigment, while light adaptation does the opposite — raising the threshold and bleaching pigment to protect the retina in bright light.\n\n*Ai Generated Model Answer*",
+              "options": [],
+              "correctIndex": null,
+              "tags": [
+                "physiology",
+                "dark adaptation",
+                "light adaptation",
+                "rhodopsin",
+                "retina",
+                "past-exam-set",
+                "essay-exam-2025"
+              ]
+            },
+            {
+              "id": "MSS2-CH9-PHYS-E0003",
+              "type": "essay",
+              "lecture": 1,
+              "difficulty": "medium",
+              "text": "Describe two mechanisms of sound magnification (amplification) in the middle ear.",
+              "explanation": "Tests the impedance-matching function of the middle ear, which overcomes the energy loss that occurs when airborne sound meets inner-ear fluid, by concentrating force from the tympanic membrane onto the smaller oval window and by ossicular leverage.",
+              "keyConcept": "The middle ear magnifies sound about 20–22x by two mechanisms: the surface-area ratio between the large tympanic membrane and the small oval window (~16–17x) and the lever action of the ossicles (malleus longer than incus, ~1.3x).",
+              "modelAnswer": "The middle ear provides about **20–22 times magnification** of sound (impedance matching between air and inner-ear fluid) by **two mechanisms**:\n\n1. **Difference in surface area (hydraulic mechanism):** the **tympanic membrane** has a surface area about **16–17 times larger** than that of the **oval window**, so force collected over the large membrane is concentrated onto the small oval window, greatly increasing pressure.\n2. **Lever action of the ossicles:** the **malleus is longer than the incus**, so the ossicular chain acts as a lever that increases the force transmitted to the stapes by about **1.3 times**.\n\nTogether these compensate for the energy that would otherwise be lost as sound passes from air into the fluid of the inner ear.\n\n*Ai Generated Model Answer*",
+              "options": [],
+              "correctIndex": null,
+              "tags": [
+                "physiology",
+                "middle ear",
+                "impedance matching",
+                "ossicles",
+                "hearing",
+                "past-exam-set",
+                "essay-exam-2025"
+              ]
+            },
+            {
+              "id": "MSS2-CH9-PHYS-E0004",
+              "type": "essay",
+              "lecture": 1,
+              "difficulty": "hard",
+              "text": "Describe the taste transduction of sweet and sour sensations.",
+              "explanation": "Tests the molecular mechanisms of gustatory transduction, contrasting receptor-mediated (metabotropic) detection of sweet with the direct ionic effect of hydrogen ions for sour, both of which ultimately depolarize the taste receptor cell.",
+              "keyConcept": "Sweet is detected mainly at the tip of the tongue via metabotropic (G-protein-coupled) receptors that raise cAMP, opening Na+ channels and/or closing K+ channels; sour is detected at the tongue edges when H+ ions depolarize the cell by entering Na+ channels or blocking K+ channels.",
+              "modelAnswer": "**Sweet sensation**\n- Best detected at the **tip of the tongue**.\n- Sweet substances act on **metabotropic (G-protein-coupled) receptors**.\n- This **increases intracellular cAMP**, which **opens Na⁺ channels and/or closes K⁺ channels**.\n- The result is **depolarization** of the taste receptor cell.\n\n**Sour sensation**\n- Best detected at the **edges (sides) of the tongue**.\n- Sour substances (e.g. citric acid) release **H⁺ ions**.\n- H⁺ **depolarizes** the taste cell either by **entering through Na⁺ channels** or by **blocking K⁺ channels**.\n\nIn both cases depolarization triggers neurotransmitter release and firing of the gustatory afferent fibre.\n\n*Ai Generated Model Answer*",
+              "options": [],
+              "correctIndex": null,
+              "tags": [
+                "physiology",
+                "taste transduction",
+                "sweet",
+                "sour",
+                "chemical senses",
+                "past-exam-set",
+                "essay-exam-2025"
+              ]
+            },
+            {
+              "id": "MSS2-CH9-PHYS-E0005",
+              "type": "essay",
+              "lecture": 1,
+              "difficulty": "hard",
+              "text": "An 80-year-old woman has one month of central blurring of vision, wavy distortion of straight lines and blind spots; field testing shows a bilateral central visual field defect. (A) What is the most likely diagnosis and its types? (B) Explain why the fovea centralis has the greatest degree of distinct (acute) vision.",
+              "explanation": "An integrated case linking the clinical picture of age-related macular degeneration (central metamorphopsia and scotoma) with the retinal specialisations of the fovea that give it maximal visual acuity.",
+              "keyConcept": "Diagnosis is age-related macular degeneration (dry/atrophic with drusen; wet/neovascular, most severe). The fovea has peak acuity because it has only densely packed cones with a 1:1 (private-line) cone-bipolar-ganglion ratio, lateral displacement of inner retinal layers, an avascular zone, and a well-developed pigment epithelium.",
+              "modelAnswer": "**(A) Most likely diagnosis: Age-Related Macular Degeneration (AMD / ARMD).**\n\n**Types:**\n- **Dry (atrophic) AMD** — *most common*; progressive atrophy of photoreceptors with yellow extracellular deposits called **drusen**.\n- **Wet (exudative / neovascular) AMD** — *most severe*; **choroidal neovascularization** (abnormal new vessels) that leak fluid and blood.\n\n**(B) Why the fovea centralis has the greatest distinct vision** — five direct factors:\n1. **Exclusive cones:** contains **only cones** (no rods), which are long, thin and packed at maximum density.\n2. **No convergence (1:1 ratio):** each cone connects to one bipolar cell and one ganglion cell — a \"private line\" to the cortex for maximum resolution.\n3. **Displacement of inner retinal layers:** the inner layers are deflected laterally, so light strikes the photoreceptors directly without scattering.\n4. **Foveal avascular zone:** free of retinal blood vessels, so nothing shadows the photoreceptors.\n5. **Well-developed pigment epithelium:** rich in melanin and macular pigment (xanthophyll) that absorbs scattered light and limits phototoxic damage.\n\n*Ai Generated Model Answer*",
+              "options": [],
+              "correctIndex": null,
+              "tags": [
+                "physiology",
+                "fovea centralis",
+                "visual acuity",
+                "macular degeneration",
+                "retina",
+                "past-exam-set",
+                "essay-exam-2024"
+              ]
+            },
+            {
+              "id": "MSS2-CH9-PHYS-E0006",
+              "type": "essay",
+              "lecture": 1,
+              "difficulty": "medium",
+              "text": "A 78-year-old woman has two years of gradual, painless blurring of vision in both eyes with dull colours and night-time glare; examination shows a cloudy grayish-white opacity behind the pupil. (1) Which structure is affected? (2) Explain the role of the lens in light refraction. (3) Enumerate the causes of cataract.",
+              "explanation": "An integrated case on cataract linking the clinical picture (painless progressive opacity behind the pupil) with the normal refractive and accommodative role of the lens and the main aetiological categories of cataract.",
+              "keyConcept": "The affected structure is the crystalline lens (denaturation/clouding of crystallin proteins). The lens is a refractive medium (~one-third of the eye's refractive power) and mediates accommodation by changing its curvature. Causes of cataract: senile (most common), congenital, traumatic, metabolic, and drug/lifestyle-related.",
+              "modelAnswer": "**(1) Structure affected: the crystalline lens.** There is **denaturation and clouding of the lens proteins (crystallins) and lens fibres**, leading to loss of transparency (cataract).\n\n**(2) Role of the lens in light refraction:**\n- It is an important **refractive medium**, contributing about **one-third of the total refractive power** of the eye.\n- It mediates **accommodation:** by contraction of the ciliary muscle the lens **increases its curvature and thickness** to focus light from near objects onto the retina.\n\n**(3) Causes of cataract:**\n1. **Senile** — *most common*; age-related degradation of central lens protein.\n2. **Congenital** — e.g. Down syndrome, rubella, galactosaemia.\n3. **Traumatic** — e.g. penetrating or electrical injury.\n4. **Metabolic** — e.g. diabetes mellitus, hypoparathyroidism.\n5. **Drugs / lifestyle** — long-term corticosteroids, smoking, heavy alcohol.\n\n*Ai Generated Model Answer*",
+              "options": [],
+              "correctIndex": null,
+              "tags": [
+                "physiology",
+                "lens",
+                "cataract",
+                "refraction",
+                "accommodation",
+                "past-exam-set",
+                "essay-exam-2024"
               ]
             }
           ]
