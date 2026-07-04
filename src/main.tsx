@@ -37,6 +37,8 @@ if (import.meta.env.PROD && 'serviceWorker' in navigator) {
     navigator.serviceWorker.register('/sw.js')
       .then((registration) => {
         console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        // Proactively check for service worker updates on page load
+        registration.update().catch(err => console.warn('Failed to check for sw update:', err));
       })
       .catch((err) => {
         console.error('ServiceWorker registration failed: ', err);

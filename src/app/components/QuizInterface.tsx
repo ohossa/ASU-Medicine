@@ -295,7 +295,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
         const d = quizDataRef.current;
         if (!d.finished) {
           saveQuizSession({
-            chapterId: chapter.id,
+            chapterId: chapter?.id ?? -1,
             subjectName: subject?.name ?? 'all',
             current: d.current,
             answers: d.answers,
@@ -308,7 +308,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
         }
       }
     };
-  }, [current, answers, flagged, timerMode, showEssayAnswer, chapter.id, subject?.name, saveQuizSession]);
+  }, [current, answers, flagged, timerMode, showEssayAnswer, chapter?.id, subject?.name, saveQuizSession]);
 
   const handleBack = React.useCallback(() => {
     if (autoSaveTimerRef.current) {
@@ -318,7 +318,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
     const d = quizDataRef.current;
     if (!d.finished) {
       saveQuizSession({
-        chapterId: chapter.id,
+        chapterId: chapter?.id ?? -1,
         subjectName: subject?.name ?? 'all',
         current: d.current,
         answers: d.answers,
@@ -330,7 +330,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
       });
     }
     onBack();
-  }, [chapter.id, subject?.name, saveQuizSession, onBack]);
+  }, [chapter?.id, subject?.name, saveQuizSession, onBack]);
 
   /* Smooth scroll to essay answer when revealed */
   const essayAnswerRef = useRef<HTMLDivElement | null>(null);
@@ -660,7 +660,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
             const nextDrafts = { ...essayDrafts, [current]: val };
             setEssayDrafts(nextDrafts);
             // Immediate local save (no cloud, no debounce)
-            saveLocalDrafts(chapter.id, subject?.name ?? 'all', nextDrafts);
+            saveLocalDrafts(chapter?.id ?? -1, subject?.name ?? 'all', nextDrafts);
             onChange({ text: val, selfGrade: value?.selfGrade });
           }}
           rows={7}
