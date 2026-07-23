@@ -76,11 +76,11 @@ const LOCAL_TRANSLATIONS = {
 };
 
 const YEAR_METADATA: Record<number, { cp: number; active: boolean }> = {
-  1: { cp: 54, active: false },
+  1: { cp: 57, active: true },
   2: { cp: 54, active: true },
-  3: { cp: 60, active: false },
-  4: { cp: 64, active: false },
-  5: { cp: 64, active: false }
+  3: { cp: 52.5, active: false },
+  4: { cp: 64.5, active: false },
+  5: { cp: 70, active: false }
 };
 
 export function StudyTrackerSelectorModal({ onClose, onSelectModule }: Props) {
