@@ -12,11 +12,19 @@ import { pageVariants } from '../app/lib/motion';
 /* ────────────────────────────────────────────────
    DATA
    ──────────────────────────────────────────────── */
+const YEAR_PHASES: Record<number, string> = {
+  1: 'Foundations',
+  2: 'Foundations',
+  3: 'Transitional Phase',
+  4: 'Clinical Phase',
+  5: 'Clinical Phase',
+};
+
 type Module = {
   code: string;
   name: string;
   cp: number;
-  marks: number;
+  marks: number | null;
   accent: string; // Theme mapping key
 };
 
@@ -78,7 +86,7 @@ export default function YearModules({ userButton }: YearModulesProps) {
       let totalMarks = 0;
       const modules = mods.map(m => {
         totalCp += m.cp;
-        totalMarks += m.marks;
+        totalMarks += typeof m.marks === 'number' ? m.marks : 0;
         return {
           code: m.code,
           name: m.name,
@@ -149,7 +157,7 @@ export default function YearModules({ userButton }: YearModulesProps) {
                            bg-zinc-100/70 dark:bg-white/[0.05] backdrop-blur-md
                            border border-zinc-200/60 dark:border-white/[0.07]
                            text-zinc-500 dark:text-zinc-400">
-            YEAR {yr} • PRE-CLERKSHIP
+            YEAR {yr} • {yr <= 2 ? 'PRE-CLERKSHIP' : (yr === 3 ? 'PARACLINICAL' : 'CLERKSHIP')}
           </span>
         </section>
 

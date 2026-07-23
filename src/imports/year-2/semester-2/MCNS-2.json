@@ -26576,7 +26576,8 @@
                 "Basilar artery",
                 "Vertebral artery"
               ],
-              "correctIndex": 2
+              "correctIndex": 2,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH4-ANAT-0528",
@@ -26592,7 +26593,8 @@
                 "Veins of Trolard",
                 "Superficial middle cerebral veins"
               ],
-              "correctIndex": 2
+              "correctIndex": 2,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH4-ANAT-0529",
@@ -54747,15 +54749,6 @@
               "modelAnswer": "Brain is often reduced in weight.\nVariable degree of cortical atrophy of frontal, temporal and parietal\nlobes resulting in widening of the sulci.\nCompensatory ventricular dilatation in severe cases (hydrocephalus\nex vacuo)."
             },
             {
-              "id": "MCNS2-CH9-PATH-0276",
-              "type": "essay",
-              "lecture": 1,
-              "text": "Complete the following:",
-              "explanation": "This question asks: Complete the following: Key point: In Alzheimer disease there’s extracellular ........., associated with accumulation of intracellular ....... that are easily demonstrated on ..... stain Answer: Neuritic plaques Neurofibrillary tangles Silver",
-              "keyConcept": "In Alzheimer disease there’s extracellular ........., associated with",
-              "modelAnswer": "In Alzheimer disease there’s extracellular ........., associated with\naccumulation of intracellular ....... that are easily demonstrated on .....\nstain\nAnswer:\n• Neuritic plaques\n• Neurofibrillary tangles\n• Silver"
-            },
-            {
               "id": "MCNS2-CH9-PATH-0277",
               "type": "essay",
               "lecture": 1,
@@ -63007,7 +63000,8 @@
                 "Electroencephalography"
               ],
               "correctIndex": 4,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHYS-0002",
@@ -63024,7 +63018,8 @@
                 "Activity limited only during deep sleep"
               ],
               "correctIndex": 0,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHYS-0003",
@@ -63041,7 +63036,8 @@
                 "Record of evoked potentials"
               ],
               "correctIndex": 1,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHYS-0004",
@@ -63058,7 +63054,8 @@
                 "Processes visual information"
               ],
               "correctIndex": 1,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHYS-0005",
@@ -63075,7 +63072,8 @@
                 "Lesion of the spinal cord causing flaccid paralysis"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHYS-0006",
@@ -63092,7 +63090,8 @@
                 "Gamma waves"
               ],
               "correctIndex": 3,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHYS-0007",
@@ -63109,7 +63108,8 @@
                 "Irregular heart rate and respiration"
               ],
               "correctIndex": 0,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHYS-0008",
@@ -63126,7 +63126,8 @@
                 "Irregular heart rate and respiration"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHYS-0009",
@@ -63143,7 +63144,8 @@
                 "Irregular heart rate and respiration"
               ],
               "correctIndex": 3,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHYS-0010",
@@ -63160,7 +63162,8 @@
                 "Melatonin"
               ],
               "correctIndex": 1,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHYS-0011",
@@ -63177,7 +63180,8 @@
                 "Emotional expression"
               ],
               "correctIndex": 0,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHYS-0012",
@@ -63194,7 +63198,8 @@
                 "Limbic hemisphere"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHYS-0013",
@@ -63211,7 +63216,8 @@
                 "Information processing"
               ],
               "correctIndex": 4,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHYS-0014",
@@ -63228,7 +63234,8 @@
                 "Limbic system"
               ],
               "correctIndex": 1,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHYS-0015",
@@ -63245,7 +63252,8 @@
                 "Balance and posture regulation"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHYS-0016",
@@ -63262,7 +63270,8 @@
                 "Emotion recognition"
               ],
               "correctIndex": 3,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHYS-0017",
@@ -63279,7 +63288,8 @@
                 "Limbic hemisphere"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHYS-0018",
@@ -63296,7 +63306,8 @@
                 "Primary Auditory Cortex"
               ],
               "correctIndex": 3,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHYS-0019",
@@ -63313,7 +63324,8 @@
                 "Prefrontal cortex"
               ],
               "correctIndex": 3,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHYS-0020",
@@ -63330,7 +63342,8 @@
                 "Arcuate fasciculus connects Broca's and Wernicke's areas"
               ],
               "correctIndex": 3,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHYS-0021",
@@ -63347,7 +63360,8 @@
                 "Resting tremor with bradykinesia"
               ],
               "correctIndex": 1,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHYS-0022",
@@ -63364,7 +63378,8 @@
                 "Prefrontal cortex"
               ],
               "correctIndex": 1,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHYS-0023",
@@ -63381,7 +63396,8 @@
                 "Involuntary voice interruptions"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHYS-0024",
@@ -63398,7 +63414,8 @@
                 "Broca's area → Visual cortex → Wernicke's area → Primary motor cortex"
               ],
               "correctIndex": 1,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHYS-0025",
@@ -63415,7 +63432,8 @@
                 "Angular gyrus"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHYS-0026",
@@ -63432,7 +63450,8 @@
                 "Transcortical motor aphasia"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHYS-0027",
@@ -63449,7 +63468,8 @@
                 "Reflex coordination"
               ],
               "correctIndex": 0,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHYS-0028",
@@ -63466,7 +63486,8 @@
                 "Fear"
               ],
               "correctIndex": 4,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHYS-0029",
@@ -63483,7 +63504,8 @@
                 "Thalamus"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHYS-0030",
@@ -63500,7 +63522,8 @@
                 "Regulation of respiration"
               ],
               "correctIndex": 1,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHYS-0031",
@@ -63517,7 +63540,8 @@
                 "Septal nucleus"
               ],
               "correctIndex": 3,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHYS-0032",
@@ -63534,7 +63558,8 @@
                 "Temperature regulation"
               ],
               "correctIndex": 4,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHYS-0033",
@@ -63551,7 +63576,8 @@
                 "Reproductive hormone release"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHYS-0034",
@@ -63568,7 +63594,8 @@
                 "Superior longitudinal fasciculus"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHYS-0035",
@@ -63585,7 +63612,8 @@
                 "Visual processing"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHYS-0036",
@@ -63602,7 +63630,8 @@
                 "Classical conditioning"
               ],
               "correctIndex": 3,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHYS-0037",
@@ -63619,7 +63648,8 @@
                 "GABA"
               ],
               "correctIndex": 3,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHYS-0038",
@@ -63636,7 +63666,8 @@
                 "Pineal gland"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHYS-0039",
@@ -63653,7 +63684,8 @@
                 "Visual processing"
               ],
               "correctIndex": 1,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHYS-0040",
@@ -63670,7 +63702,8 @@
                 "Control of respiration"
               ],
               "correctIndex": 1,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHYS-0041",
@@ -63688,7 +63721,7 @@
               ],
               "correctIndex": 2,
               "modelAnswer": null,
-              "repetitionCount": 2
+              "repetitionCount": 4
             },
             {
               "id": "MCNS2-CH11-PHYS-0042",
@@ -63705,7 +63738,8 @@
                 "Brain plasticity"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHYS-0043",
@@ -63851,7 +63885,8 @@
                 "Ceramide trihexoside"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PATH-0002",
@@ -63868,7 +63903,8 @@
                 "Globotriaosylceramide"
               ],
               "correctIndex": 0,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PATH-0003",
@@ -63885,7 +63921,8 @@
                 "Medulloblastoma"
               ],
               "correctIndex": 0,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PATH-0004",
@@ -63903,7 +63940,7 @@
               ],
               "correctIndex": 2,
               "modelAnswer": null,
-              "repetitionCount": 2
+              "repetitionCount": 4
             },
             {
               "id": "MCNS2-CH11-PATH-0005",
@@ -63920,7 +63957,8 @@
                 "Bradykinesia and slow movements"
               ],
               "correctIndex": 4,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PATH-0006",
@@ -63938,7 +63976,7 @@
               ],
               "correctIndex": 0,
               "modelAnswer": null,
-              "repetitionCount": 2
+              "repetitionCount": 4
             },
             {
               "id": "MCNS2-CH11-PATH-0007",
@@ -63955,7 +63993,8 @@
                 "Frontal cortex"
               ],
               "correctIndex": 1,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PATH-0008",
@@ -63972,7 +64011,8 @@
                 "Ependymoma"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PATH-0009",
@@ -63989,7 +64029,8 @@
                 "Microglial nodules in cerebral cortex"
               ],
               "correctIndex": 3,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PATH-0010",
@@ -64007,7 +64048,7 @@
               ],
               "correctIndex": 2,
               "modelAnswer": null,
-              "repetitionCount": 2
+              "repetitionCount": 4
             },
             {
               "id": "MCNS2-CH11-PATH-0011",
@@ -64024,7 +64065,8 @@
                 "Meningioma"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PATH-0012",
@@ -64042,7 +64084,7 @@
               ],
               "correctIndex": 1,
               "modelAnswer": null,
-              "repetitionCount": 2
+              "repetitionCount": 4
             },
             {
               "id": "MCNS2-CH11-PATH-0013",
@@ -64060,7 +64102,7 @@
               ],
               "correctIndex": 2,
               "modelAnswer": null,
-              "repetitionCount": 2
+              "repetitionCount": 4
             },
             {
               "id": "MCNS2-CH11-PATH-0014",
@@ -64077,7 +64119,8 @@
                 "Hemangioblastoma"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PATH-0015",
@@ -64095,7 +64138,7 @@
               ],
               "correctIndex": 1,
               "modelAnswer": null,
-              "repetitionCount": 2
+              "repetitionCount": 4
             },
             {
               "id": "MCNS2-CH11-PATH-0016",
@@ -64113,7 +64156,7 @@
               ],
               "correctIndex": 2,
               "modelAnswer": null,
-              "repetitionCount": 2
+              "repetitionCount": 4
             },
             {
               "id": "MCNS2-CH11-PATH-0017",
@@ -64130,7 +64173,8 @@
                 "Meningioma"
               ],
               "correctIndex": 1,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PATH-0018",
@@ -64148,7 +64192,7 @@
               ],
               "correctIndex": 0,
               "modelAnswer": null,
-              "repetitionCount": 2
+              "repetitionCount": 4
             },
             {
               "id": "MCNS2-CH11-PATH-0019",
@@ -64165,7 +64209,8 @@
                 "Dissecting aneurysm"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PATH-0020",
@@ -64183,7 +64228,7 @@
               ],
               "correctIndex": 4,
               "modelAnswer": null,
-              "repetitionCount": 2
+              "repetitionCount": 4
             },
             {
               "id": "MCNS2-CH11-PATH-0021",
@@ -64201,7 +64246,7 @@
               ],
               "correctIndex": 3,
               "modelAnswer": null,
-              "repetitionCount": 2
+              "repetitionCount": 4
             },
             {
               "id": "MCNS2-CH11-PATH-0022",
@@ -64218,7 +64263,8 @@
                 "Poliomyelitis"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PATH-0023",
@@ -64235,7 +64281,8 @@
                 "Hemorrhage from fragile vessels in the germinal matrix"
               ],
               "correctIndex": 3,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PATH-0024",
@@ -64252,7 +64299,8 @@
                 "Sphingomyelinase – Niemann-Pick disease"
               ],
               "correctIndex": 3,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PATH-0025",
@@ -64269,7 +64317,8 @@
                 "Ependymal rosettes – ependymoma"
               ],
               "correctIndex": 3,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PATH-0026",
@@ -64286,7 +64335,8 @@
                 "Duplication mutation of gene encoding α-synuclein"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PATH-0027",
@@ -64303,7 +64353,8 @@
                 "Cognitive decline"
               ],
               "correctIndex": 3,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PATH-0028",
@@ -64320,7 +64371,8 @@
                 "Parkinson disease"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PATH-0029",
@@ -64337,7 +64389,8 @@
                 "Presence of Reed–Sternberg cells"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PATH-0030",
@@ -64354,7 +64407,8 @@
                 "It is associated with Fragile X syndrome"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PATH-0031",
@@ -64371,7 +64425,8 @@
                 "Middle meningeal artery rupture"
               ],
               "correctIndex": 1,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PATH-0032",
@@ -64388,7 +64443,8 @@
                 "Neurofibromatosis type 1"
               ],
               "correctIndex": 1,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PATH-0033",
@@ -64405,7 +64461,8 @@
                 "Glioblastoma multiforme"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PATH-0034",
@@ -64497,7 +64554,8 @@
                 "Semantic Memory"
               ],
               "correctIndex": 0,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-ANAT-0002",
@@ -64514,7 +64572,8 @@
                 "Procedural memory"
               ],
               "correctIndex": 3,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-ANAT-0003",
@@ -64531,7 +64590,8 @@
                 "Loss of coordination and intention tremor"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-ANAT-0004",
@@ -64548,7 +64608,8 @@
                 "Emotional memory"
               ],
               "correctIndex": 1,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-ANAT-0005",
@@ -64565,7 +64626,8 @@
                 "Working memory (short-term processing)"
               ],
               "correctIndex": 1,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-ANAT-0006",
@@ -64582,7 +64644,8 @@
                 "Pulvinar Nucleus"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-ANAT-0009",
@@ -64599,7 +64662,8 @@
                 "Both anterior and posterior roots"
               ],
               "correctIndex": 4,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-ANAT-0010",
@@ -64616,7 +64680,8 @@
                 "Anterior Cerebral Artery"
               ],
               "correctIndex": 4,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-ANAT-0011",
@@ -64633,7 +64698,8 @@
                 "Anencephaly"
               ],
               "correctIndex": 4,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-ANAT-0012",
@@ -64650,7 +64716,8 @@
                 "Septal Area"
               ],
               "correctIndex": 4,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-ANAT-0013",
@@ -64667,7 +64734,8 @@
                 "Deep and superficial parts"
               ],
               "correctIndex": 1,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-ANAT-0014",
@@ -64684,7 +64752,8 @@
                 "Thyrohyoid Muscle"
               ],
               "correctIndex": 1,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-ANAT-0015",
@@ -64701,7 +64770,8 @@
                 "Optic Radiation"
               ],
               "correctIndex": 3,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-ANAT-0016",
@@ -64718,7 +64788,8 @@
                 "Lacrimal Bone"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-ANAT-0017",
@@ -64736,7 +64807,7 @@
               ],
               "correctIndex": 4,
               "modelAnswer": null,
-              "repetitionCount": 2
+              "repetitionCount": 4
             },
             {
               "id": "MCNS2-CH11-ANAT-0018",
@@ -64754,7 +64825,7 @@
               ],
               "correctIndex": 3,
               "modelAnswer": null,
-              "repetitionCount": 2
+              "repetitionCount": 4
             },
             {
               "id": "MCNS2-CH11-ANAT-0019",
@@ -64771,7 +64842,8 @@
                 "Sublentiform part of Internal Capsule"
               ],
               "correctIndex": 4,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-ANAT-0020",
@@ -64789,7 +64861,7 @@
               ],
               "correctIndex": 1,
               "modelAnswer": null,
-              "repetitionCount": 2
+              "repetitionCount": 4
             },
             {
               "id": "MCNS2-CH11-ANAT-0021",
@@ -64806,7 +64878,8 @@
                 "Spinocerebellar tract"
               ],
               "correctIndex": 3,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-ANAT-0022",
@@ -64824,7 +64897,7 @@
               ],
               "correctIndex": 1,
               "modelAnswer": null,
-              "repetitionCount": 2
+              "repetitionCount": 4
             },
             {
               "id": "MCNS2-CH11-ANAT-0023",
@@ -64841,7 +64914,8 @@
                 "Fifth pharyngeal pouch"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-ANAT-0024",
@@ -64858,7 +64932,8 @@
                 "Thalamus"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-ANAT-0025",
@@ -64875,7 +64950,8 @@
                 "Anterior limb"
               ],
               "correctIndex": 3,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-ANAT-0026",
@@ -64892,7 +64968,8 @@
                 "Corpus callosum"
               ],
               "correctIndex": 3,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-ANAT-0027",
@@ -64909,7 +64986,8 @@
                 "Pineal gland"
               ],
               "correctIndex": 3,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-ANAT-0028",
@@ -64926,7 +65004,8 @@
                 "Ultimobranchial body"
               ],
               "correctIndex": 3,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-ANAT-0029",
@@ -64943,7 +65022,8 @@
                 "Sulcus limitans"
               ],
               "correctIndex": 3,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-ANAT-0030",
@@ -64960,7 +65040,8 @@
                 "Thalamocortical somatosensory fibers"
               ],
               "correctIndex": 3,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-ANAT-0031",
@@ -64977,7 +65058,8 @@
                 "Pretectal area"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-ANAT-0032",
@@ -64994,7 +65076,8 @@
                 "Vestibulospinal tract"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-ANAT-0033",
@@ -65011,7 +65094,8 @@
                 "Inferior sagittal sinus"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-ANAT-0034",
@@ -65028,7 +65112,8 @@
                 "Superior longitudinal fasciculus"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-ANAT-0035",
@@ -65045,7 +65130,8 @@
                 "Hypoglossal nerve"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-ANAT-0036",
@@ -65062,7 +65148,8 @@
                 "Epithalamus"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-ANAT-0037",
@@ -65079,7 +65166,8 @@
                 "Superior Colliculus"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-ANAT-0038",
@@ -65096,7 +65184,8 @@
                 "Basilar artery – pons"
               ],
               "correctIndex": 3,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-ANAT-0039",
@@ -65114,7 +65203,7 @@
               ],
               "correctIndex": 3,
               "modelAnswer": null,
-              "repetitionCount": 2
+              "repetitionCount": 4
             },
             {
               "id": "MCNS2-CH11-ANAT-0040",
@@ -65131,7 +65220,8 @@
                 "Anterior commissure – connects temporal lobes"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-ANAT-0041",
@@ -65148,7 +65238,8 @@
                 "Medial lemniscus"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-ANAT-0042",
@@ -65165,7 +65256,8 @@
                 "Frontopontine fibers"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-ANAT-0043",
@@ -65182,7 +65274,8 @@
                 "Lumbar spinal cord"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-ANAT-0044",
@@ -65310,7 +65403,8 @@
                 "Asymptomatic infection"
               ],
               "correctIndex": 4,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-MICR-0002",
@@ -65327,7 +65421,8 @@
                 "Influenza virus"
               ],
               "correctIndex": 3,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-MICR-0003",
@@ -65344,7 +65439,8 @@
                 "Streptococcus pneumoniae"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-MICR-0004",
@@ -65361,7 +65457,8 @@
                 "Respiratory droplets"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-MICR-0005",
@@ -65378,7 +65475,8 @@
                 "Measles"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-MICR-0006",
@@ -65395,7 +65493,8 @@
                 "Toxoid vaccine (e.g., tetanus)"
               ],
               "correctIndex": 1,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-MICR-0007",
@@ -65412,7 +65511,8 @@
                 "Prions"
               ],
               "correctIndex": 4,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-MICR-0008",
@@ -65429,7 +65529,8 @@
                 "Completely eliminates need for booster doses"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-MICR-0009",
@@ -65446,7 +65547,8 @@
                 "Is an inactivated (killed) vaccine"
               ],
               "correctIndex": 3,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-MICR-0010",
@@ -65463,7 +65565,8 @@
                 "Enveloped double-stranded DNA virus with latent infection potential"
               ],
               "correctIndex": 3,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-MICR-0011",
@@ -65480,7 +65583,8 @@
                 "Cerebellum"
               ],
               "correctIndex": 3,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-MICR-0012",
@@ -65497,7 +65601,8 @@
                 "Administration of muscle relaxants"
               ],
               "correctIndex": 1,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-MICR-0013",
@@ -65514,7 +65619,8 @@
                 "Ingestion of improperly washed vegetables contaminated with Salmonella"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-MICR-0014",
@@ -65531,7 +65637,8 @@
                 "Causes demyelination of peripheral nerves"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-MICR-0015",
@@ -65548,7 +65655,8 @@
                 "Lipopolysaccharide"
               ],
               "correctIndex": 1,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-MICR-0016",
@@ -65565,7 +65673,8 @@
                 "Tumbling Motility on microscopic examination"
               ],
               "correctIndex": 4,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-MICR-0017",
@@ -65582,7 +65691,8 @@
                 "Haemophilus influenzae"
               ],
               "correctIndex": 4,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-MICR-0018",
@@ -65599,7 +65709,8 @@
                 "Immunocompetent adults"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-MICR-0019",
@@ -65616,7 +65727,8 @@
                 "Escherichia coli"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-MICR-0020",
@@ -65633,7 +65745,8 @@
                 "Listeria monocytogenes"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-MICR-0021",
@@ -65650,7 +65763,8 @@
                 "Contaminated water ingestion"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-MICR-0022",
@@ -65667,7 +65781,8 @@
                 "Biofilm production"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-MICR-0023",
@@ -65684,7 +65799,8 @@
                 "Staphylococcus aureus"
               ],
               "correctIndex": 3,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-MICR-0024",
@@ -65701,7 +65817,8 @@
                 "Escherichia coli"
               ],
               "correctIndex": 0,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-MICR-0025",
@@ -65718,7 +65835,8 @@
                 "M protein"
               ],
               "correctIndex": 1,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-MICR-0026",
@@ -65735,7 +65853,8 @@
                 "Brain abscess with meningeal involvement"
               ],
               "correctIndex": 3,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-MICR-0027",
@@ -65752,7 +65871,8 @@
                 "Vector-borne transmission through insect bites"
               ],
               "correctIndex": 3,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-MICR-0028",
@@ -65769,7 +65889,8 @@
                 "Hepatitis B vaccine"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-MICR-0029",
@@ -65825,7 +65946,8 @@
                 "Administer a single oral dose of penicillin to the mother at 38 weeks"
               ],
               "correctIndex": 1,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0002",
@@ -65842,7 +65964,8 @@
                 "Penicillin G + Ciprofloxacin"
               ],
               "correctIndex": 3,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0003",
@@ -65859,7 +65982,8 @@
                 "Selegiline"
               ],
               "correctIndex": 3,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0004",
@@ -65876,7 +66000,8 @@
                 "Electrocardiogram – diagnostic, not screening"
               ],
               "correctIndex": 3,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0005",
@@ -65893,7 +66018,8 @@
                 "Diazepam – muscle relaxant"
               ],
               "correctIndex": 3,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0006",
@@ -65910,7 +66036,8 @@
                 "Mitoxantrone – reserved for aggressive MS"
               ],
               "correctIndex": 3,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0007",
@@ -65927,7 +66054,8 @@
                 "5 doses"
               ],
               "correctIndex": 1,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0008",
@@ -65944,7 +66072,8 @@
                 "Diazepam"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0009",
@@ -65961,7 +66090,8 @@
                 "Chlorpromazine"
               ],
               "correctIndex": 3,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0010",
@@ -65978,7 +66108,8 @@
                 "Ibuprofen"
               ],
               "correctIndex": 3,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0011",
@@ -65995,7 +66126,8 @@
                 "Ceftriaxone"
               ],
               "correctIndex": 1,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0012",
@@ -66012,7 +66144,8 @@
                 "Prednisone"
               ],
               "correctIndex": 1,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0013",
@@ -66029,7 +66162,8 @@
                 "Insomnia"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0014",
@@ -66046,7 +66180,8 @@
                 "Visual and hearing impairment"
               ],
               "correctIndex": 0,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0015",
@@ -66063,7 +66198,8 @@
                 "Doxycycline for 7 days"
               ],
               "correctIndex": 1,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0016",
@@ -66080,7 +66216,8 @@
                 "Serotonin reuptake inhibition"
               ],
               "correctIndex": 1,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0017",
@@ -66097,7 +66234,8 @@
                 "GABA receptor agonist"
               ],
               "correctIndex": 1,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0018",
@@ -66114,7 +66252,8 @@
                 "Metronidazole"
               ],
               "correctIndex": 1,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0019",
@@ -66131,7 +66270,8 @@
                 "Vancomycin + piperacillin-tazobactam"
               ],
               "correctIndex": 1,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0020",
@@ -66148,7 +66288,8 @@
                 "Zolpidem"
               ],
               "correctIndex": 4,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0021",
@@ -66165,7 +66306,8 @@
                 "Eszopiclone"
               ],
               "correctIndex": 4,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0022",
@@ -66182,7 +66324,8 @@
                 "N-acetylcysteine"
               ],
               "correctIndex": 1,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0023",
@@ -66199,7 +66342,8 @@
                 "Ergotamine"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0024",
@@ -66216,7 +66360,8 @@
                 "Propranolol"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0025",
@@ -66233,7 +66378,8 @@
                 "Ethosuximide"
               ],
               "correctIndex": 0,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0026",
@@ -66250,7 +66396,8 @@
                 "Chloral hydrate"
               ],
               "correctIndex": 1,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0027",
@@ -66267,7 +66414,8 @@
                 "N-acetylcysteine"
               ],
               "correctIndex": 3,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0028",
@@ -66284,7 +66432,8 @@
                 "Tetracaine"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0029",
@@ -66301,7 +66450,8 @@
                 "Fentanyl"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0030",
@@ -66318,7 +66468,8 @@
                 "Midazolam"
               ],
               "correctIndex": 3,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0031",
@@ -66335,7 +66486,8 @@
                 "Midazolam"
               ],
               "correctIndex": 1,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0032",
@@ -66352,7 +66504,8 @@
                 "Ketamine"
               ],
               "correctIndex": 4,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0033",
@@ -66369,7 +66522,8 @@
                 "Midazolam"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0034",
@@ -66386,7 +66540,8 @@
                 "Halothane"
               ],
               "correctIndex": 3,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0035",
@@ -66403,7 +66558,8 @@
                 "Sevoflurane"
               ],
               "correctIndex": 0,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0036",
@@ -66420,7 +66576,8 @@
                 "Halothane"
               ],
               "correctIndex": 3,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0037",
@@ -66437,7 +66594,8 @@
                 "Gabapentin"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0038",
@@ -66454,7 +66612,8 @@
                 "Carbamazepine"
               ],
               "correctIndex": 4,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0039",
@@ -66471,7 +66630,8 @@
                 "Ibuprofen"
               ],
               "correctIndex": 1,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0040",
@@ -66488,7 +66648,8 @@
                 "Ibuprofen"
               ],
               "correctIndex": 3,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0041",
@@ -66505,7 +66666,8 @@
                 "Ethosuximide"
               ],
               "correctIndex": 4,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0042",
@@ -66522,7 +66684,8 @@
                 "Topiramate"
               ],
               "correctIndex": 3,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0043",
@@ -66539,7 +66702,8 @@
                 "Lorazepam"
               ],
               "correctIndex": 4,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0044",
@@ -66556,7 +66720,8 @@
                 "Phenobarbital"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0045",
@@ -66573,7 +66738,8 @@
                 "Ibuprofen"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0046",
@@ -66590,7 +66756,8 @@
                 "Ethosuximide"
               ],
               "correctIndex": 3,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0047",
@@ -66607,7 +66774,8 @@
                 "Lamotrigine"
               ],
               "correctIndex": 1,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0048",
@@ -66624,7 +66792,8 @@
                 "Carbamazepine"
               ],
               "correctIndex": 4,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0049",
@@ -66641,7 +66810,8 @@
                 "CGRP receptor antagonism"
               ],
               "correctIndex": 3,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0050",
@@ -66658,7 +66828,8 @@
                 "Aspirin"
               ],
               "correctIndex": 1,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0051",
@@ -66675,7 +66846,8 @@
                 "Bupropion"
               ],
               "correctIndex": 4,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0052",
@@ -66692,7 +66864,8 @@
                 "Venlafaxine"
               ],
               "correctIndex": 3,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0053",
@@ -66709,7 +66882,8 @@
                 "Venlafaxine"
               ],
               "correctIndex": 3,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0054",
@@ -66726,7 +66900,8 @@
                 "Venlafaxine"
               ],
               "correctIndex": 1,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0055",
@@ -66743,7 +66918,8 @@
                 "Amitriptyline"
               ],
               "correctIndex": 0,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0056",
@@ -66760,7 +66936,8 @@
                 "Paroxetine"
               ],
               "correctIndex": 1,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0057",
@@ -66777,7 +66954,8 @@
                 "Teriflunomide"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0058",
@@ -66794,7 +66972,8 @@
                 "Fluoxetine"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0059",
@@ -66810,7 +66989,8 @@
                 "Fluoxetine"
               ],
               "correctIndex": 1,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0060",
@@ -66826,7 +67006,8 @@
                 "Diazepam"
               ],
               "correctIndex": 1,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0061",
@@ -66843,7 +67024,8 @@
                 "Aripiprazole"
               ],
               "correctIndex": 3,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0062",
@@ -66860,7 +67042,8 @@
                 "Clozapine"
               ],
               "correctIndex": 4,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0063",
@@ -66877,7 +67060,8 @@
                 "Lithium"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0064",
@@ -66894,7 +67078,8 @@
                 "Buprenorphine"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0065",
@@ -66911,7 +67096,8 @@
                 "Bupropion"
               ],
               "correctIndex": 3,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PHAR-0066",
@@ -67120,7 +67306,8 @@
                 "Usually fatal"
               ],
               "correctIndex": 4,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PARA-0002",
@@ -67137,7 +67324,8 @@
                 "Cryptococcus neoformans"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PARA-0003",
@@ -67154,7 +67342,8 @@
                 "Oocyst"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PARA-0004",
@@ -67171,7 +67360,8 @@
                 "Cyst of Giardia lamblia"
               ],
               "correctIndex": 1,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PARA-0005",
@@ -67188,7 +67378,8 @@
                 "They only cause pulmonary infections"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PARA-0006",
@@ -67205,7 +67396,8 @@
                 "Giardia lamblia – intestinal flagellate, non-CNS"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PARA-0007",
@@ -67222,7 +67414,8 @@
                 "Toxoplasmosis"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PARA-0008",
@@ -67239,7 +67432,8 @@
                 "Frogs"
               ],
               "correctIndex": 4,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PARA-0009",
@@ -67256,7 +67450,8 @@
                 "Ingestion of freshwater fish contaminated with cyclops"
               ],
               "correctIndex": 1,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PARA-0010",
@@ -67273,7 +67468,8 @@
                 "Boiling water before drinking"
               ],
               "correctIndex": 3,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PARA-0011",
@@ -67290,7 +67486,8 @@
                 "Toxoplasma gondii"
               ],
               "correctIndex": 1,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PARA-0012",
@@ -67307,7 +67504,8 @@
                 "Amoebic trophozoites"
               ],
               "correctIndex": 2,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             },
             {
               "id": "MCNS2-CH11-PARA-0013",
@@ -67324,7 +67522,8 @@
                 "Usually fatal"
               ],
               "correctIndex": 4,
-              "modelAnswer": null
+              "modelAnswer": null,
+              "repetitionCount": 2
             }
           ]
         }

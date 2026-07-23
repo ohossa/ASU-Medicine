@@ -27,11 +27,11 @@ type Year = {
 };
 
 const YEARS: Year[] = [
-  { id: 1, label: "Year 1", phase: "Foundations",        subtitle: "PRE-CLERKSHIP", cp: 27, marks: 540, active: true,  accent: "#22c55e", glow: "rgba(34,197,94,0.18)" },
-  { id: 2, label: "Year 2", phase: "Foundations",        subtitle: "PRE-CLERKSHIP", cp: 27, marks: 540, active: true,  accent: "#3b82f6", glow: "rgba(59,130,246,0.18)" },
-  { id: 3, label: "Year 3", phase: "Transitional Phase", subtitle: "PRE-CLERKSHIP", cp: 30, marks: 600, active: false, accent: "#a855f7", glow: "rgba(168,85,247,0.18)" },
-  { id: 4, label: "Year 4", phase: "Clinical Phase",     subtitle: "CLERKSHIP",     cp: 32, marks: 640, active: false, accent: "#f97316", glow: "rgba(249,115,22,0.18)" },
-  { id: 5, label: "Year 5", phase: "Clinical Phase",     subtitle: "CLERKSHIP",     cp: 32, marks: 640, active: false, accent: "#f43f5e", glow: "rgba(244,63,94,0.18)" },
+  { id: 1, label: "Year 1", phase: "Foundations",        subtitle: "PRE-CLERKSHIP", cp: 57, marks: 1020, active: true,  accent: "#22c55e", glow: "rgba(34,197,94,0.18)" },
+  { id: 2, label: "Year 2", phase: "Foundations",        subtitle: "PRE-CLERKSHIP", cp: 54, marks: 1080, active: true,  accent: "#3b82f6", glow: "rgba(59,130,246,0.18)" },
+  { id: 3, label: "Year 3", phase: "Transitional Phase", subtitle: "PARACLINICAL",    cp: 52.5, marks: 1050, active: false, accent: "#a855f7", glow: "rgba(168,85,247,0.18)" },
+  { id: 4, label: "Year 4", phase: "Clinical Phase",     subtitle: "CLERKSHIP",     cp: 64.5, marks: 1290, active: false, accent: "#f97316", glow: "rgba(249,115,22,0.18)" },
+  { id: 5, label: "Year 5", phase: "Clinical Phase",     subtitle: "CLERKSHIP",     cp: 70, marks: 1400, active: false, accent: "#f43f5e", glow: "rgba(244,63,94,0.18)" },
 ];
 
 const TOOLS = [

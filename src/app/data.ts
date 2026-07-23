@@ -352,7 +352,7 @@ export interface ModuleInfo {
   code: string;
   name: string;
   cp: number;
-  marks: number;
+  marks?: number | null;
   keywords: string[];
 }
 
@@ -366,14 +366,16 @@ export const SYLLABUS_MODULES: Record<number, Record<number, ModuleInfo[]>> = {
       { code: 'MIM-1', name: 'Immunology Module', cp: 3, marks: 60, keywords: ['immunology', 'immuno', 'mim', 'immune', 'lymphoid', 'antibodies', 'antigens'] },
       { code: 'MBMG-1', name: 'Molecular Biology and Medical Genetics Module', cp: 3, marks: 60, keywords: ['molecular', 'genetics', 'mbmg', 'genetics module', 'molecular biology', 'medical genetics', 'dna', 'rna', 'gene'] },
       { code: 'P1-1', name: 'Introduction to Information & Communication Technology (ICT) and Medical Terminology', cp: 1.5, marks: 30, keywords: ['ict', 'terminology', 'medical terminology', 'information technology', 'communication technology'] },
+      { code: 'P2-1', name: 'Presentation Skills - Learning Skills - Time Management', cp: 1.5, marks: 30, keywords: ['presentation', 'skills', 'time management', 'learning skills', 'presentation skills'] },
+      { code: 'ASU101', name: 'Societal Issues', cp: 3, marks: null, keywords: ['asu101', 'societal', 'issues', 'university requirement'] },
     ],
     2: [
       { code: 'IPAT-1', name: 'Introduction to Pathology', cp: 5, marks: 100, keywords: ['pathology', 'ipat', 'patho', 'intro pathology', 'general pathology', 'cell injury', 'inflammation'] },
       { code: 'IPHA-1', name: 'Introduction to Clinical Pharmacology', cp: 4, marks: 80, keywords: ['pharmacology', 'pharma', 'ipha', 'pharmacology module', 'intro pharma', 'clinical pharmacology', 'pharmacokinetics', 'pharmacodynamics'] },
       { code: 'MINF-1', name: 'Infection Module', cp: 4.5, marks: 90, keywords: ['infection', 'infect', 'minf', 'microbiology', 'parasitology', 'micro', 'parasite', 'bacteria', 'viruses', 'fungi', 'mycology', 'virology', 'bacteriology'] },
       { code: 'MLS-1', name: 'Locomotor Module', cp: 12, marks: 240, keywords: ['locomotor', 'mls', 'loco', 'musculoskeletal', 'ortho', 'orthopedics', 'bone', 'bones', 'joint', 'joints', 'muscle', 'muscles', 'skeletal'] },
-      { code: 'BLS-HE-1', name: 'Basic life support + History taking & clinical examination', cp: 1.5, marks: 30, keywords: ['bls', 'history', 'examination', 'clinical examination', 'life support', 'bls-he', 'history taking', 'cardiopulmonary resuscitation', 'cpr'] },
-      { code: 'P2-1', name: 'Presentation skills - Learning skills - Time management', cp: 1.5, marks: 30, keywords: ['presentation', 'skills', 'time management', 'learning skills', 'presentation skills'] },
+      { code: 'BLS-HE-1', name: 'Basic Life Support + History Taking & Clinical Examination', cp: 1.5, marks: 30, keywords: ['bls', 'history', 'examination', 'clinical examination', 'life support', 'bls-he', 'history taking', 'cardiopulmonary resuscitation', 'cpr'] },
+      { code: 'As chosen', name: 'Student Selected Component/Elective', cp: 3, marks: null, keywords: ['elective', 'sse', 'student selected component'] },
     ],
   },
   2: {

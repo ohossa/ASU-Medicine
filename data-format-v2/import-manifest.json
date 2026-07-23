@@ -20,5 +20,73 @@
     "removedExistingDuplicatesCount": 0,
     "needsReviewCount": 0,
     "reportPath": "data-format-v2/question-intake/year-1/semester-2/IPHA-1 [Introduction to Clinical Pharmacology]/_reports/IPHA-1_report_20260623124324.import-report.json"
+  },
+  {
+    "timestamp": "2026-07-22T13:30:39.367Z",
+    "moduleCode": "MCVS-2",
+    "sourceFile": "data-format-v2/question-intake/year-2/semester-1/MCVS-2 [Cardiovascular System]/_ready/MCVS-2_batch_2026-07-22_cvs-final.json",
+    "status": "SUCCESS",
+    "addedCount": 1636,
+    "skippedDuplicatesCount": 0,
+    "removedExistingDuplicatesCount": 0,
+    "needsReviewCount": 0,
+    "reportPath": "data-format-v2/question-intake/year-2/semester-1/MCVS-2 [Cardiovascular System]/_reports/MCVS-2_report_20260722133039.import-report.json"
+  },
+  {
+    "timestamp": "2026-07-22T13:30:39.502Z",
+    "moduleCode": "MCNS-2",
+    "sourceFile": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_ready/MCNS-2_past_exams_batch.json",
+    "status": "SUCCESS",
+    "addedCount": 0,
+    "skippedDuplicatesCount": 240,
+    "removedExistingDuplicatesCount": 1,
+    "needsReviewCount": 0,
+    "reportPath": "data-format-v2/question-intake/year-2/semester-2/MCNS-2 [Central Nervous System]/_reports/MCNS-2_report_20260722133039.import-report.json"
+  },
+  {
+    "timestamp": "2026-07-23T12:15:08.324Z",
+    "moduleCode": "MBL-2",
+    "sourceFile": "data-format-v2/question-intake/year-2/semester-1/MBL-2 [Blood and Lymphatic System]/_ready/MBL-2_batch_2026-07-23_blood-final.json",
+    "status": "SUCCESS",
+    "addedCount": 1219,
+    "skippedDuplicatesCount": 0,
+    "removedExistingDuplicatesCount": 0,
+    "needsReviewCount": 0,
+    "reportPath": "data-format-v2/question-intake/year-2/semester-1/MBL-2 [Blood and Lymphatic System]/_reports/MBL-2_report_20260723121508.import-report.json"
+  },
+  {
+    "timestamp": "2026-07-23T12:15:08.623Z",
+    "moduleCode": "MRS-2",
+    "sourceFile": "data-format-v2/question-intake/year-2/semester-1/MRS-2 [Respiratory System]/_ready/MRS-2_batch_2026-07-23_full_bank_40967.json",
+    "status": "FAILED",
+    "addedCount": 2363,
+    "skippedDuplicatesCount": 0,
+    "removedExistingDuplicatesCount": 0,
+    "needsReviewCount": 27,
+    "errors": [
+      "Chapter 1 -> Subject \"anatomy\" -> Question index 454 (MRS2-CH1-ANAT-0454) -> SubQuestion index 1 (MRS2-CH1-ANAT-0454-SQ1): MCQ sub-question must have a non-empty \"options\" array.",
+      "Chapter 1 -> Subject \"anatomy\" -> Question index 454 (MRS2-CH1-ANAT-0454) -> SubQuestion index 2 (MRS2-CH1-ANAT-0454-SQ2): MCQ sub-question must have a non-empty \"options\" array.",
+      "Chapter 1 -> Subject \"anatomy\" -> Question index 454 (MRS2-CH1-ANAT-0454) -> SubQuestion index 3 (MRS2-CH1-ANAT-0454-SQ3): MCQ sub-question must have a non-empty \"options\" array.",
+      "Chapter 1 -> Subject \"anatomy\" -> Question index 455 (MRS2-CH1-ANAT-0455) -> SubQuestion index 1 (MRS2-CH1-ANAT-0455-SQ1): MCQ sub-question must have a non-empty \"options\" array.",
+      "Chapter 1 -> Subject \"anatomy\" -> Question index 455 (MRS2-CH1-ANAT-0455) -> SubQuestion index 2 (MRS2-CH1-ANAT-0455-SQ2): MCQ sub-question must have a non-empty \"options\" array.",
+      "Chapter 1 -> Subject \"anatomy\" -> Question index 455 (MRS2-CH1-ANAT-0455) -> SubQuestion index 3 (MRS2-CH1-ANAT-0455-SQ3): MCQ sub-question must have a non-empty \"options\" array.",
+      "Chapter 1 -> Subject \"anatomy\" -> Question index 456 (MRS2-CH1-ANAT-0456) -> SubQuestion index 1 (MRS2-CH1-ANAT-0456-SQ1): MCQ sub-question must have a non-empty \"options\" array.",
+      "Chapter 1 -> Subject \"anatomy\" -> Question index 456 (MRS2-CH1-ANAT-0456) -> SubQuestion index 2 (MRS2-CH1-ANAT-0456-SQ2): MCQ sub-question must have a non-empty \"options\" array.",
+      "Chapter 1 -> Subject \"anatomy\" -> Question index 456 (MRS2-CH1-ANAT-0456) -> SubQuestion index 3 (MRS2-CH1-ANAT-0456-SQ3): MCQ sub-question must have a non-empty \"options\" array.",
+      "Chapter 1 -> Subject \"anatomy\" -> Question index 457 (MRS2-CH1-ANAT-0457) -> SubQuestion index 1 (MRS2-CH1-ANAT-0457-SQ1): MCQ sub-question must have a non-empty \"options\" array.",
+      "Chapter 1 -> Subject \"anatomy\" -> Question index 457 (MRS2-CH1-ANAT-0457) -> SubQuestion index 2 (MRS2-CH1-ANAT-0457-SQ2): MCQ sub-question must have a non-empty \"options\" array.",
+      "Chapter 1 -> Subject \"anatomy\" -> Question index 457 (MRS2-CH1-ANAT-0457) -> SubQuestion index 3 (MRS2-CH1-ANAT-0457-SQ3): MCQ sub-question must have a non-empty \"options\" array.",
+      "Chapter 1 -> Subject \"anatomy\" -> Question index 457 (MRS2-CH1-ANAT-0457) -> SubQuestion index 4 (MRS2-CH1-ANAT-0457-SQ4): MCQ sub-question must have a non-empty \"options\" array.",
+      "Chapter 1 -> Subject \"anatomy\" -> Question index 458 (MRS2-CH1-ANAT-0458) -> SubQuestion index 1 (MRS2-CH1-ANAT-0458-SQ1): MCQ sub-question must have a non-empty \"options\" array.",
+      "Chapter 1 -> Subject \"anatomy\" -> Question index 458 (MRS2-CH1-ANAT-0458) -> SubQuestion index 2 (MRS2-CH1-ANAT-0458-SQ2): MCQ sub-question must have a non-empty \"options\" array.",
+      "Chapter 1 -> Subject \"anatomy\" -> Question index 459 (MRS2-CH1-ANAT-0459) -> SubQuestion index 1 (MRS2-CH1-ANAT-0459-SQ1): MCQ sub-question must have a non-empty \"options\" array.",
+      "Chapter 1 -> Subject \"anatomy\" -> Question index 459 (MRS2-CH1-ANAT-0459) -> SubQuestion index 2 (MRS2-CH1-ANAT-0459-SQ2): MCQ sub-question must have a non-empty \"options\" array.",
+      "Chapter 1 -> Subject \"anatomy\" -> Question index 459 (MRS2-CH1-ANAT-0459) -> SubQuestion index 3 (MRS2-CH1-ANAT-0459-SQ3): MCQ sub-question must have a non-empty \"options\" array.",
+      "Chapter 1 -> Subject \"anatomy\" -> Question index 459 (MRS2-CH1-ANAT-0459) -> SubQuestion index 4 (MRS2-CH1-ANAT-0459-SQ4): MCQ sub-question must have a non-empty \"options\" array.",
+      "Chapter 1 -> Subject \"anatomy\" -> Question index 459 (MRS2-CH1-ANAT-0459) -> SubQuestion index 5 (MRS2-CH1-ANAT-0459-SQ5): MCQ sub-question must have a non-empty \"options\" array.",
+      "Chapter 1 -> Subject \"anatomy\" -> Question index 526 (MRS2-CH1-ANAT-0526) -> SubQuestion index 1 (MRS2-CH1-ANAT-0526-SQ1): MCQ sub-question must have a non-empty \"options\" array.",
+      "Chapter 1 -> Subject \"anatomy\" -> Question index 527 (MRS2-CH1-ANAT-0527) -> SubQuestion index 1 (MRS2-CH1-ANAT-0527-SQ1): MCQ sub-question must have a non-empty \"options\" array."
+    ],
+    "reportPath": "data-format-v2/question-intake/year-2/semester-1/MRS-2 [Respiratory System]/_reports/MRS-2_report_20260723121508.import-report.json"
   }
 ]

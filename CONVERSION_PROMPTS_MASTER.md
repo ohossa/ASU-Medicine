@@ -600,10 +600,18 @@ Use these EXACT chapter titles in `chapterTitle`. Do not invent new chapter name
 3. "Respiratory Pathologies & Pharmacology"
 
 **MCVS-2** — Cardiovascular System:
-1. "Cardiac Anatomy & Histology"
-2. "Electrophysiology & ECG"
-3. "Hemodynamics & Blood Pressure"
-4. "Cardiovascular Pathologies & Pharmacology"
+1. "Development of the Heart"
+2. "Structure of the Heart"
+3. "Functional Characteristics of the CVS"
+4. "Electrical Activity of the Heart"
+5. "Contractile Activity of the Cardiac Muscle"
+6. "Cardiac Diseases"
+7. "Development of the Vessels"
+8. "Anatomy and Structure of Blood Vessels"
+9. "Ischemic Heart Disease"
+10. "Blood Pressure: Regulation and Pathophysiology"
+11. "Special Circulations and Diseases of Blood Vessels"
+
 
 **MCNS-2** — Central Nervous System:
 1. "Introduction to CNS"

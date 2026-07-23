@@ -127,7 +127,7 @@ export function YearCard() {
           </div>
         </div>
         <p className="text-center text-[12px] text-zinc-500 dark:text-zinc-400 -mt-3">
-          Total Marks: <strong className="text-zinc-900 dark:text-zinc-100">540</strong>
+          Total Marks: <strong className="text-zinc-900 dark:text-zinc-100">1080</strong>
         </p>
 
         <div>
