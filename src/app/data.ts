@@ -810,9 +810,41 @@ export function getChaptersForModuleAndMode(
 
   if (db.v2Raw) {
     const chaptersList = db.v2Raw.chapters || [];
+    const toSubjectColor = (subject: V2RawSubject): SubjectColor => {
+      const name = (subject.name || '').toLowerCase();
+      if (name.includes('anatomy')) return 'anatomy';
+      if (name.includes('histology')) return 'histology';
+      if (name.includes('physiology')) return 'physiology';
+      if (name.includes('biochem')) return 'biochem';
+      if (name.includes('micro')) return 'microbiology';
+      if (name.includes('pathology')) return 'pathology';
+      if (name.includes('pharma') || name.includes('pharmacology')) return 'pharma';
+      if (
+        name.includes('clinical') ||
+        name.includes('case') ||
+        name.includes('casestudy')
+      ) {
+        return 'clinical';
+      }
+      if (name.includes('parasit')) return 'parasitology';
+      if (name.includes('psych')) return 'psychiatry';
+      if (name.includes('ophthalm')) return 'ophthalmology';
+      if (name.includes('ent') || name.includes('ear') || name.includes('nose') || name.includes('throat')) return 'ent';
+      return 'physiology';
+    };
+    const normalize = (subject: V2RawSubject): V2RawSubject => ({
+      ...subject,
+      id: toSubjectColor(subject),
+    });
+
     return chaptersList.map((ch: V2RawChapter) => {
-      const subjects: SubjectData[] = (ch.subjects || [])
+      const normalizedChapter = {
+        ...ch,
+        subjects: (ch.subjects || []).map((subject) => normalize(subject)),
+      };
+      const subjects: SubjectData[] = (normalizedChapter.subjects || [])
         .map((subj: V2RawSubject) => {
+          const subjectColor = toSubjectColor(subj);
           const questions = (subj.questions || [])
             .filter((q: V2RawQuestion) => {
               if (mode === 'mcq') {
@@ -823,10 +855,10 @@ export function getChaptersForModuleAndMode(
               }
               return true;
             })
-            .map((q: V2RawQuestion) => transformV2Question(q, subj.id));
+            .map((q: V2RawQuestion) => transformV2Question(q, subjectColor));
 
           return {
-            id: subj.id,
+            id: subjectColor,
             name: subj.name,
             iconName: subj.iconName,
             lectures: subj.lectures || '',
@@ -835,9 +867,14 @@ export function getChaptersForModuleAndMode(
             questions,
           };
         })
-        .filter((subj: SubjectData) => subj.questions.length > 0 || (subj.lectureNames && subj.lectureNames.length > 0));
+        .filter(
+          (subj: SubjectData) =>
+            subj.questions.length > 0 ||
+            (subj.lectureNames && subj.lectureNames.length > 0)
+        );
 
-      const accentColor: SubjectColor = subjects[0]?.id || 'physiology';
+      const accentColor: SubjectColor =
+        normalizedChapter.accentColor || subjects[0]?.id || 'physiology';
 
       return {
         id: ch.id ?? 0,
