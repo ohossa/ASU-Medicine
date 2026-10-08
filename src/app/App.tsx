@@ -1567,6 +1567,8 @@ function MainApp() {
 }
 
 export default function App() {
+  // Start account preference loading alongside the bank and vitals animation.
+  const bootYear = useAcademicYear();
   const [showApp, setShowApp] = useState(false);
   const [dataReady, setDataReady] = useState(false);
   const [progress, setProgress] = useState(0);
@@ -1575,6 +1577,9 @@ export default function App() {
   // Start data loading immediately
   useEffect(() => {
     ensureDataLoaded().then(() => setDataReady(true)).catch(() => setDataReady(true));
+    // Warm the first navigation views while the vitals screen is visible.
+    void import('../pages/Dashboard').catch(() => {});
+    void import('../pages/YearModules').catch(() => {});
   }, []);
 
   // Animate progress bar (0→100 over 2400ms)
@@ -1594,18 +1599,18 @@ export default function App() {
 
   // When both visual timer AND data are ready, show app
   useEffect(() => {
-    if (dataReady && progress >= 99) {
+    if (dataReady && !bootYear.loading && progress >= 99) {
       // Wait a tiny beat so the bar is visually at 100%, then fade out
       const t = setTimeout(() => setShowApp(true), 300);
       return () => clearTimeout(t);
     }
-  }, [dataReady, progress]);
+  }, [dataReady, progress, bootYear.loading]);
 
   return (
     <ThemeProvider>
       {/* Single smooth loading screen — stays visible until everything is ready */}
       <LoadingScreen
-        isLoading={!showApp}
+        isLoading={!showApp || bootYear.loading}
         progress={dataReady ? 100 : progress}
       />
       {showApp && (

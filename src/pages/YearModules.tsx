@@ -66,12 +66,12 @@ export default function YearModules({ userButton }: YearModulesProps) {
 
   const initialSemester = () => {
     const requested = new URLSearchParams(location.search).get('semester');
-    return requested === '1' ? 0 : requested === '2' ? 1 : yr === 3 ? 0 : 1;
+    return requested === '1' ? 0 : requested === '2' ? 1 : 0;
   };
   const [tab, setTab] = useState(initialSemester);
   useEffect(() => {
     const semester = new URLSearchParams(location.search).get('semester');
-    setTab(semester === '1' ? 0 : semester === '2' ? 1 : yr === 3 ? 0 : 1);
+    setTab(semester === '1' ? 0 : semester === '2' ? 1 : 0);
   }, [location.search, yr]);
 
   const semestersData = useMemo(() => {

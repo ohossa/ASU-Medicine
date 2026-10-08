@@ -11,28 +11,48 @@ function parsePreference(value:unknown):YearPreference|null {
 }
 function cached(key:string){try{return parsePreference(localStorage.getItem(key));}catch{return null;}}
 
+const pendingReads=new Map<string,Promise<YearPreference|null>>();
+const recentReads=new Map<string,{at:number;value:string}>();
+function hasFreshRead(key:string,saved:YearPreference|null){const recent=recentReads.get(key);return !!recent&&Date.now()-recent.at<60_000&&recent.value===JSON.stringify(saved);}
+async function readCloudYear(key:string,getToken:()=>Promise<string|null>){
+ const pending=pendingReads.get(key);if(pending)return pending;
+ const job=(async()=>{
+  const token=await getToken();
+  if(!token)throw new Error('Sign in to load your year.');
+  const response=await fetch('/api/sync',{headers:{Authorization:`Bearer ${token}`},signal:AbortSignal.timeout(15_000)});
+  if(!response.ok)throw new Error('Cloud preference could not be loaded. Please retry.');
+  const payload=await response.json();return parsePreference(payload.data?.[key]);
+ })();
+ pendingReads.set(key,job);
+ try{return await job;}finally{if(pendingReads.get(key)===job)pendingReads.delete(key);}
+}
+
 /** Account scoped, cloud-confirmed year. Legacy shared years require reconfirmation. */
 export function useAcademicYear(){
  const {userId,isLoaded,getToken}=useAuth();
  const id=userId??'guest';const currentId=useRef(id);currentId.current=id;
  const tokenRef=useRef(getToken);tokenRef.current=getToken;
- const [state,setState]=useState<{id:string;year:number|null;loading:boolean;error:string|null}>({id:'',year:null,loading:true,error:null});
+ const [state,setState]=useState<{id:string;year:number|null;loading:boolean;error:string|null}>(()=>{const saved=isLoaded?cached(academicYearKey(id)):null;return {id,year:saved?.year??null,loading:!isLoaded||(!saved&&!hasFreshRead(academicYearKey(id),saved)),error:null};});
  const [reload,setReload]=useState(0);
  useEffect(()=>{
   if(!isLoaded)return;
   let active=true;const key=academicYearKey(id);
-  setState({id,year:null,loading:true,error:null});
+  const saved=cached(key);
+  setState({id,year:saved?.year??null,loading:!saved&&!hasFreshRead(key,saved),error:null});
   const load=async()=>{
    try {
-    let preference:YearPreference|null;
+    let preference:YearPreference|null;let didRead=false;
     if(!userId)preference=cached(key);
     else {
-     const token=await tokenRef.current();
-     const response=await fetch('/api/sync',{headers:{Authorization:`Bearer ${token}`},signal:AbortSignal.timeout(15_000)});
-     if(!response.ok)throw new Error('Cloud preference could not be loaded. Please retry.');
-     const payload=await response.json();preference=parsePreference(payload.data?.[key]);
+     const reuse=reload===0&&hasFreshRead(key,saved);didRead=!reuse;
+     preference=reuse?saved:await readCloudYear(key,()=>tokenRef.current());
     }
     if(!active)return;
+    // A year saved while this read was in flight must not be overwritten.
+    const latest=cached(key);
+    if(latest && latest.timestamp>(saved?.timestamp??0) && latest.timestamp>(preference?.timestamp??0))preference=latest;
+    if(didRead)recentReads.set(key,{at:Date.now(),value:JSON.stringify(preference)});
+    if(!preference){try{localStorage.removeItem(key);}catch{/* Storage may be unavailable. */}}
     if(preference){try{localStorage.setItem(key,JSON.stringify(preference));localStorage.setItem('asu_medical_student_year',String(preference.year));}catch{/* Cloud remains authoritative. */}}
     setState({id,year:preference?.year??null,loading:false,error:null});
    }catch{
@@ -49,6 +69,7 @@ export function useAcademicYear(){
    if(!response.ok)throw new Error('Your year could not be saved to the cloud. Please try again.');
   }
   if(currentId.current!==id)return;
+  recentReads.set(key,{at:Date.now(),value:JSON.stringify(preference)});
   try{localStorage.setItem(key,JSON.stringify(preference));localStorage.setItem('asu_medical_student_year',String(year));}catch{/* Cloud save has already succeeded. */}
   setState({id,year,loading:false,error:null});
  },[id,userId]);

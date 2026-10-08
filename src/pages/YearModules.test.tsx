@@ -48,3 +48,14 @@ describe('YearModules rendering with explicit paths', () => {
     expect(screen.getByText(/Year 2 Modules/i)).toBeInTheDocument();
   });
 });
+describe('Semester defaults',()=>{
+ for(const year of [1,2,3])it(`Year ${year} starts on Semester 1`,()=>{
+  const {unmount}=render(<MemoryRouter initialEntries={[`/year-${year}`]}><YearModules/></MemoryRouter>);
+  const button=screen.getByRole('button',{name:/Semester 1/i});
+  expect(button.querySelector('span')).toHaveClass('font-bold');unmount();
+ });
+ it('keeps explicitly requested Semester 2 links working',()=>{
+  render(<MemoryRouter initialEntries={['/year-2?semester=2']}><YearModules/></MemoryRouter>);
+  expect(screen.getByRole('button',{name:/Semester 2/i}).querySelector('span')).toHaveClass('font-bold');
+ });
+});
