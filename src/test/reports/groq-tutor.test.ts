@@ -1,6 +1,8 @@
 import {afterEach,it,expect,vi} from 'vitest';
+const metrics=vi.hoisted(()=>({recordTutorUsage:vi.fn().mockResolvedValue(undefined)}));
+vi.mock('../../../server/tutor-metrics',()=>metrics);
 import {GroqAdapter,getAdapter} from '../../../api/hint';
-afterEach(()=>{vi.unstubAllEnvs();vi.unstubAllGlobals();});
+afterEach(()=>{vi.clearAllMocks();vi.unstubAllEnvs();vi.unstubAllGlobals();});
 it('uses Groq with conversation context and returns only the final answer',async()=>{
  vi.stubEnv('GROQ_API_KEY','test-groq-key');vi.stubEnv('GROQ_HINT_MODEL','');
  const fetchMock=vi.fn().mockResolvedValue(new Response(JSON.stringify({choices:[{message:{content:' Useful explanation ',reasoning:'private reasoning'}}]})));vi.stubGlobal('fetch',fetchMock);
@@ -14,6 +16,6 @@ it('selects Groq when configured',()=>{vi.stubEnv('HINT_AI_PROVIDER','groq');exp
 it('fails before making a request without a key',async()=>{vi.stubEnv('GROQ_API_KEY','');const f=vi.fn();vi.stubGlobal('fetch',f);await expect(new GroqAdapter().generateHint({questionText:'Question',previousAttempts:2})).rejects.toThrow('503');expect(f).not.toHaveBeenCalled();});
 it.each([401,403,404,429,500])('reports safe errors without retrying on %s',async status=>{
  vi.stubEnv('GROQ_API_KEY','test');const f=vi.fn().mockResolvedValue(new Response('private provider error',{status}));vi.stubGlobal('fetch',f);
- const request=new GroqAdapter().generateHint({questionText:'Question',previousAttempts:2});await expect(request).rejects.toThrow(String(status));await expect(request).rejects.not.toThrow('private provider error');expect(f).toHaveBeenCalledTimes(1);
+ const request=new GroqAdapter().generateHint({questionText:'Question',previousAttempts:2});await expect(request).rejects.toThrow(String(status));await expect(request).rejects.not.toThrow('private provider error');expect(f).toHaveBeenCalledTimes(1);expect(metrics.recordTutorUsage).toHaveBeenCalledWith(status,undefined,expect.any(Headers));
 });
 it('rejects empty output instead of exposing reasoning',async()=>{vi.stubEnv('GROQ_API_KEY','test');vi.stubGlobal('fetch',vi.fn().mockResolvedValue(new Response(JSON.stringify({choices:[{message:{content:'',reasoning:'reasoning'}}]}))));await expect(new GroqAdapter().generateHint({questionText:'Question',previousAttempts:2})).rejects.toThrow('502');});

@@ -1,3 +1,4 @@
+import { readTutorUsage } from "../server/tutor-metrics.js";
 import { createReportService, ReportError } from "../server/report-service.js";
 import { authenticateReportUser } from "../server/report-auth.js";
 import { resolveReportQuestion } from "../server/report-question.js";
@@ -33,6 +34,11 @@ export default async function handler(req: Request, res: Response) {
         : "";
     const action = req.query?.action || "";
     if (req.method === "GET") {
+      if (action === "overview") {
+        const reports = await service.overview(token); // Owner authorization precedes every data read.
+        try { return res.status(200).json({ reports, tutor: await readTutorUsage() }); }
+        catch { return res.status(200).json({ reports, tutor: null, tutorError: 'Tutor usage is temporarily unavailable. Report counts are available.' }); }
+      }
       if (action === "access")
         return res.status(200).json(await service.access(token));
       if (action === "detail") {

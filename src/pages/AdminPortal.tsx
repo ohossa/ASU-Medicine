@@ -27,6 +27,7 @@ import {
   type ReportStatus,
 } from "../app/reports/contracts";
 import "../app/reports/reports.css";
+import AdminOverviewPanel from "./AdminOverviewPanel";
 const AdminQuestionEditor = lazy(() => import('./AdminQuestionEditor'));
 const statusLabels: Record<ReportStatus, string> = {
   new: "New",
@@ -116,6 +117,7 @@ function AdminWorkspace() {
   const isInbox = location.pathname.includes("/reports");
   const isEditor = location.pathname.includes("/questions");
   const selectedId = params.get("report");
+  const requestedStatus = params.get("status");
   const [status, setStatus] = useState("all");
   const [searchDraft, setSearchDraft] = useState("");
   const [search, setSearch] = useState("");
@@ -131,8 +133,9 @@ function AdminWorkspace() {
   const [refresh, setRefresh] = useState(0);
   const [selected, setSelected] = useState<QuestionReport | null>(null);
   const [detailError, setDetailError] = useState("");
+  useEffect(()=>{if(isInbox && requestedStatus && ["all","unresolved",...REPORT_STATUSES].includes(requestedStatus)){setStatus(requestedStatus);setOffset(0);}},[isInbox,requestedStatus]);
   useEffect(() => {
-    if (isEditor) return;
+    if (!isInbox) {setLoading(false);setError("");return;}
     const controller = new AbortController();
     setLoading(true);
     setError("");
@@ -237,34 +240,7 @@ function AdminWorkspace() {
               {error}
             </p>
           )}
-          {!isInbox && (
-            <>
-              <div className="admin-stat-grid">
-                {REPORT_STATUSES.map((s) => (
-                  <div key={s} className="admin-surface admin-stat">
-                    <strong>{data ? data.counts[s] : "—"}</strong>
-                    <span>{statusLabels[s]} reports</span>
-                  </div>
-                ))}
-              </div>
-              <div className="admin-surface admin-detail">
-                <Inbox size={24} className="text-teal-600" />
-                <h2>Student feedback, in one place</h2>
-                <p className="report-muted">
-                  Read the question, review the student’s explanation, and
-                  record your decision. Reports never change a question
-                  automatically.
-                </p>
-                <Link to="/admin/reports" className="report-primary mt-5">
-                  Open reports inbox
-                </Link>
-              </div>
-              <p className="report-muted mt-6">
-                This private workspace can be extended with more management
-                tools as your website grows.
-              </p>
-            </>
-          )}
+          {!isInbox && <AdminOverviewPanel refresh={refresh}/>}
           {isInbox && (
             <>
               <form className="admin-surface admin-filters" onSubmit={e=>{e.preventDefault();setSearch(searchDraft.trim());setOffset(0);}}>

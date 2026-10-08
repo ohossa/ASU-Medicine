@@ -17,6 +17,7 @@
  *  3. Set the appropriate env vars
  */
 
+import { recordTutorUsage } from '../server/tutor-metrics.js';
 import { verifyToken } from '@clerk/backend';
 import { Redis as UpstashRedis } from '@upstash/redis';
 import { Redis as ioredis } from 'ioredis';
@@ -261,7 +262,8 @@ export class GroqAdapter implements AIAdapter {
       ...(req.messages ?? []).map(message => ({ role: message.role, content: message.content })),
       { role: 'user', content: buildUserPrompt(req) },
     ];
-    const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+    let response: Response;
+    try { response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
       method: 'POST',
       headers: { Authorization: `Bearer ${apiKey}`, 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -270,7 +272,12 @@ export class GroqAdapter implements AIAdapter {
       }),
       signal: AbortSignal.timeout(25_000),
     });
+    } catch {
+      await recordTutorUsage(502, undefined, new Headers());
+      throw new Error('AI tutor is temporarily unavailable (502). Please try again later.');
+    }
     if (!response.ok) {
+      await recordTutorUsage(response.status, undefined, response.headers);
       const message = response.status === 429
         ? 'AI tutor free quota or rate limit reached. Please try again later'
         : response.status === 401 || response.status === 403
@@ -278,8 +285,11 @@ export class GroqAdapter implements AIAdapter {
         : 'AI tutor is temporarily unavailable. Please try again later';
       throw new Error(`${message} (${response.status}).`);
     }
-    const text = providerText(await response.json(), ['choices', 0, 'message', 'content']);
-    if (!text) throw new Error('AI tutor returned an empty response (502). Please try again.');
+    const data: unknown = await response.json().catch(() => null);
+    const text = providerText(data, ['choices', 0, 'message', 'content']);
+    if (!text) { await recordTutorUsage(502, undefined, response.headers); throw new Error('AI tutor returned an empty response (502). Please try again.'); }
+    const usage = data && typeof data === 'object' && 'usage' in data ? data.usage : undefined;
+    await recordTutorUsage(200, usage, response.headers);
     return { text, source: 'groq' };
   }
 }

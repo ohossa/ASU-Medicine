@@ -1,3 +1,4 @@
+import { summarizeReports } from './report-overview.js';
 import { queryReportInbox } from './report-inbox.js';
 import { createHash } from "node:crypto";
 import { z } from "zod";
@@ -96,10 +97,26 @@ export function createReportService(deps: Dependencies) {
     await deps.store.notification(report.id, state);
     return state;
   }
+  async function allReports() {
+    const reports: QuestionReport[] = [];
+    let offset = 0, total = 1;
+    while (offset < total) {
+      const page = await deps.store.list('all', offset, 500);
+      total = page.total;
+      if (total > 10000) throw new ReportError(503, 'The inbox needs an index for more than 10,000 reports.');
+      if (!page.reports.length && offset < total) throw new ReportError(503, 'The inbox changed while loading. Refresh and try again.');
+      reports.push(...page.reports); offset += page.reports.length;
+    }
+    return reports;
+  }
   return {
     async access(token: string) {
       const identity = await owner(token);
       return { isAdmin: true, userId: identity.id };
+    },
+    async overview(token: string) {
+      await owner(token);
+      return summarizeReports(await allReports());
     },
     async submit(token: string, body: unknown) {
       const identity = await deps.authenticate(token);
@@ -169,18 +186,7 @@ export function createReportService(deps: Dependencies) {
       if (!advanced) return deps.store.list(input.status, input.offset);
       // Read in bounded batches so filtering/grouping covers the whole inbox,
       // including old reports that precede this feature. Never silently truncate.
-      const reports: QuestionReport[] = [];
-      let offset = 0;
-      let total = 1;
-      while (offset < total) {
-        const page = await deps.store.list('all', offset, 500);
-        total = page.total;
-        if (total > 10000) throw new ReportError(503, 'Advanced filtering needs an index for inboxes larger than 10,000 reports.');
-        if (!page.reports.length && offset < total) throw new ReportError(503, 'The inbox changed while loading. Refresh and try again.');
-        reports.push(...page.reports);
-        offset += page.reports.length;
-      }
-      return queryReportInbox(reports, input);
+      return queryReportInbox(await allReports(), input);
     },
     async update(token: string, body: unknown) {
       const identity = await owner(token);

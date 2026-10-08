@@ -153,3 +153,11 @@ describe("Question report service", () => {
     });
   });
 });
+
+it('denies overview reads to students before touching storage',async()=>{const {service,deps}=setup(false);await expect(service.overview('token')).rejects.toMatchObject({status:403});expect(deps.store.list).not.toHaveBeenCalled();});
+it('loads all overview pages instead of just the newest 25 reports',async()=>{
+ const {service,deps}=setup(true);await service.submit('token',input);const sample=(await deps.store.get())!;
+ const rows=Array.from({length:510},(_,i)=>({...sample,id:`r${i}`,reporterId:`s${i}`}));
+ deps.store.list.mockImplementation(async(_s,offset,limit=25)=>({reports:rows.slice(offset,offset+limit),total:510,counts:{new:510,reviewing:0,fixed:0,dismissed:0}}));
+ expect((await service.overview('token')).unresolved).toBe(510);expect(deps.store.list).toHaveBeenCalledWith('all',500,500);
+});
