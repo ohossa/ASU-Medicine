@@ -43,7 +43,7 @@ export interface HintRequest {
 
 export interface HintResponse {
   text: string;
-  source: 'static' | 'openai' | 'google' | 'nvidia';
+  source: 'static' | 'openai' | 'google' | 'nvidia' | 'groq';
   cached?: boolean;
 }
 
@@ -247,6 +247,40 @@ class GoogleGenAIAdapter implements AIAdapter {
     const data: unknown = await res.json();
     const text = providerText(data, ['candidates', 0, 'content', 'parts', 0, 'text']);
     return { text, source: 'google' };
+  }
+}
+
+/** Groq free-plan compatible tutor, configured exclusively with server-side credentials. */
+export class GroqAdapter implements AIAdapter {
+  async generateHint(req: HintRequest): Promise<HintResponse> {
+    const apiKey = process.env.GROQ_API_KEY;
+    if (!apiKey) throw new Error('AI tutor access is not configured (503).');
+    const model = process.env.GROQ_HINT_MODEL?.trim() || 'openai/gpt-oss-120b';
+    const messages = [
+      { role: 'system', content: buildSystemPrompt(req) },
+      ...(req.messages ?? []).map(message => ({ role: message.role, content: message.content })),
+      { role: 'user', content: buildUserPrompt(req) },
+    ];
+    const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+      method: 'POST',
+      headers: { Authorization: `Bearer ${apiKey}`, 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        model, messages, max_completion_tokens: 1024, temperature: 0.6,
+        ...(model.startsWith('openai/gpt-oss-') ? { reasoning_effort: 'low', include_reasoning: false } : {}),
+      }),
+      signal: AbortSignal.timeout(25_000),
+    });
+    if (!response.ok) {
+      const message = response.status === 429
+        ? 'AI tutor free quota or rate limit reached. Please try again later'
+        : response.status === 401 || response.status === 403
+        ? 'AI tutor access needs administrator attention'
+        : 'AI tutor is temporarily unavailable. Please try again later';
+      throw new Error(`${message} (${response.status}).`);
+    }
+    const text = providerText(await response.json(), ['choices', 0, 'message', 'content']);
+    if (!text) throw new Error('AI tutor returned an empty response (502). Please try again.');
+    return { text, source: 'groq' };
   }
 }
 
@@ -456,9 +490,11 @@ function buildInitialMessage(req: HintRequest): string {
   return `I answered ${selectedText} for this question, but I see that's wrong — the correct answer is ${correctText}. Can you help me understand where my reasoning went wrong?`;
 }
 
-function getAdapter(): AIAdapter {
+export function getAdapter(): AIAdapter {
   const provider = (process.env.HINT_AI_PROVIDER ?? detectProvider()).toLowerCase();
   switch (provider) {
+    case 'groq':
+      return new GroqAdapter();
     case 'openai':
       return new OpenAIAdapter();
     case 'google':
@@ -475,6 +511,7 @@ function getAdapter(): AIAdapter {
 
 function detectProvider(): string {
   // Auto-detect which AI provider to use based on available API keys
+  if (process.env.GROQ_API_KEY) return 'groq';
   if (process.env.OPENAI_API_KEY) return 'openai';
   if (process.env.GOOGLE_GENAI_API_KEY) return 'google';
   if (process.env.NVIDIA_API_KEY) return 'nvidia';
