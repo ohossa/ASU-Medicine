@@ -12,7 +12,7 @@ export function ConfettiManager() {
         });
       }
     });
-    return unsubscribe;
+    return () => { unsubscribe(); };
   }, []);
 
   return null;

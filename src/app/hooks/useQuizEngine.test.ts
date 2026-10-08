@@ -2,6 +2,7 @@ import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import { renderHook, act, waitFor } from '@testing-library/react';
 import { useQuizEngine } from './useQuizEngine';
 import type { Question } from '../types';
+import { asFillBlankAnswer, asMatchingAnswer } from '../types';
 
 function makeQ(partial: Partial<Question> & { type: Question['type']; estimatedTimeSeconds?: number }): Question {
   return {
@@ -22,7 +23,7 @@ describe('useQuizEngine', () => {
     vi.useRealTimers();
   });
 
-  const createHook = (overrides?: { questions?: Question[]; initialAnswers?: Record<number, string | number | boolean | { selfGrade: string }> }) => {
+  const createHook = (overrides?: { questions?: Question[]; initialAnswers?: Record<number, unknown> }) => {
     const questions = overrides?.questions ?? [
       makeQ({ type: 'mcq', correctIndex: 1, options: ['A', 'B', 'C'] }),
       makeQ({ type: 'truefalse', correctIndex: 0 }),
@@ -267,7 +268,7 @@ describe('useQuizEngine', () => {
       act(() => result.current.goTo(2));
       act(() => result.current.setAnswer({ inputs: ['heart', 'left atrium'], submitted: false }));
       act(() => result.current.submitAnswer());
-      expect(result.current.answers[2].submitted).toBe(true);
+      expect(asFillBlankAnswer(result.current.answers[2])?.submitted).toBe(true);
     });
 
     it('advances for already-submitted fillblank', () => {
@@ -421,9 +422,9 @@ describe('useQuizEngine', () => {
       ];
       const { result } = createHook({ questions });
       expect(result.current.answers[0]).toBeDefined();
-      expect(result.current.answers[0].scrambled).toHaveLength(2);
-      expect(result.current.answers[0].matches).toEqual({});
-      expect(result.current.answers[0].submitted).toBe(false);
+      expect(asMatchingAnswer(result.current.answers[0])?.scrambled).toHaveLength(2);
+      expect(asMatchingAnswer(result.current.answers[0])?.matches).toEqual({});
+      expect(asMatchingAnswer(result.current.answers[0])?.submitted).toBe(false);
     });
 
     it('does not re-scramble when revisiting', () => {
@@ -438,10 +439,44 @@ describe('useQuizEngine', () => {
         makeQ({ type: 'mcq', correctIndex: 0 }),
       ];
       const { result } = createHook({ questions });
-      const firstScrambled = result.current.answers[0].scrambled;
+      const firstScrambled = asMatchingAnswer(result.current.answers[0])?.scrambled;
       act(() => result.current.goNext());
       act(() => result.current.goPrev());
-      expect(result.current.answers[0].scrambled).toEqual(firstScrambled);
+      expect(asMatchingAnswer(result.current.answers[0])?.scrambled).toEqual(firstScrambled);
+    });
+  });
+
+  describe('stored answer validation', () => {
+    it('drops malformed fillblank values before rendering or scoring', () => {
+      const { result } = createHook({ initialAnswers: { 2: { inputs: [42, null], submitted: true } } });
+      act(() => result.current.goTo(2));
+      expect(result.current.blankInputs).toEqual(['', '']);
+      expect(result.current.blankSubmitted).toBe(false);
+      expect(result.current.answerState).toBe('unanswered');
+      expect(result.current.score).toBe(0);
+    });
+
+    it('retains valid case subanswers and drops malformed restored entries', () => {
+      const questions = [makeQ({ type: 'casestudy', subQuestions: [
+        { id: 'choice', type: 'mcq', text: '', explanation: '', correctIndex: 1 },
+        { id: 'blank', type: 'fillblank', text: '', explanation: '', blanks: ['heart'] },
+        { id: 'essay', type: 'essay', text: '', explanation: '' },
+      ] })];
+      const { result } = createHook({ questions, initialAnswers: { 0: {
+        choice: 1, blank: { inputs: [false], submitted: true }, essay: null,
+      } } });
+      expect(result.current.answers[0]).toEqual({ choice: 1 });
+      expect(result.current.answeredCount).toBe(0);
+      expect(result.current.score).toBe(0);
+    });
+
+    it('retains valid numeric matching indices and legacy essay strings', () => {
+      const questions = [makeQ({ type: 'matching', pairs: [{ premise: 'A', target: 'B' }] }), makeQ({ type: 'essay' })];
+      const matching = { scrambled: ['B'], matches: { 0: 0 }, submitted: true };
+      const { result } = createHook({ questions, initialAnswers: { 0: matching, 1: 'legacy draft' } });
+      expect(result.current.answers[0]).toEqual(matching);
+      expect(result.current.answers[1]).toBe('legacy draft');
+      expect(result.current.answeredCount).toBe(2);
     });
   });
 

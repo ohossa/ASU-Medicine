@@ -1,9 +1,6 @@
 import { useState, useEffect } from 'react';
 
-interface IdleWindow extends Window {
-  requestIdleCallback?: (callback: () => void, options?: { timeout?: number }) => number;
-  cancelIdleCallback?: (handle: number) => void;
-}
+type IdleWindow = Partial<Pick<Window, 'requestIdleCallback' | 'cancelIdleCallback'>>;
 
 export function useDeferredMount(timeoutMs = 2000): boolean {
   const [mounted, setMounted] = useState(false);
@@ -12,7 +9,7 @@ export function useDeferredMount(timeoutMs = 2000): boolean {
     let active = true;
     let timeoutId: ReturnType<typeof setTimeout> | null = null;
     let idleId: number | null = null;
-    const w = window as unknown as IdleWindow;
+    const w = window as IdleWindow;
 
     const trigger = () => {
       if (active) {

@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "motion/react";
 import { BookOpen, Search, Heart } from "lucide-react";
 import { SignIn } from "@clerk/clerk-react";
@@ -7,7 +6,7 @@ import { useTheme } from "../hooks/useTheme";
 
 /* ------------------------------ Motion system ----------------------------- */
 
-const EASE = [0.16, 1, 0.3, 1]; // Apple-like elastic deceleration
+const EASE: [number, number, number, number] = [0.16, 1, 0.3, 1]; // Apple-like elastic deceleration
 
 const fadeUp = (delay = 0) => ({
   initial: { opacity: 0, y: 16 },

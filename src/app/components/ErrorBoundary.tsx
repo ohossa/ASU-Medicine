@@ -1,8 +1,9 @@
-import React, { Component, ErrorInfo, ReactNode } from 'react';
+import { Component, type ErrorInfo, type ReactNode } from 'react';
 import { AlertTriangle, RefreshCw, Trash2 } from 'lucide-react';
 
 interface Props {
   children: ReactNode;
+  fallback?: ReactNode;
 }
 
 interface State {
@@ -43,6 +44,7 @@ export class ErrorBoundary extends Component<Props, State> {
 
   public render() {
     if (this.state.hasError) {
+      if (this.props.fallback !== undefined) return this.props.fallback;
       return (
         <div className="min-h-screen bg-gray-950 text-gray-100 flex flex-col items-center justify-center p-6 font-manrope">
           <div className="w-full max-w-2xl bg-gray-900/80 backdrop-blur-xl border border-gray-800/80 rounded-[32px] p-8 shadow-2xl relative overflow-hidden">

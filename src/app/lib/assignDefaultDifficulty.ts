@@ -6,7 +6,7 @@ export function assignDefaultDifficulty(q: Question): 1 | 2 | 3 | 4 | 5 {
   if (q.type === 'truefalse') score = 1;
   if (q.type === 'matching') score = 3;
   if (q.type === 'essay') score = 4;
-  if (q.type === 'case_study') score = 5;
+  if (q.type === 'case' || q.type === 'casestudy') score = 5;
   
   const complexTerms = /(?:metabolism|pathophysiology|pharmacokinetics|immunohistochemistry|cerebellopontine|electroencephalographic|neurotransmitters|immunofluorescence)/i;
   if (complexTerms.test(q.text)) score += 1;
@@ -32,7 +32,7 @@ export function assignDefaultBloomLevel(q: Question): NonNullable<Question['bloo
   if (/best|most appropriate|most likely|prioritize|justify/i.test(q.text)) return 'evaluate';
   if (/design|create|formulate|synthesize/i.test(q.text)) return 'create';
   if (q.type === 'truefalse') return 'remember';
-  if (q.type === 'case_study') return 'evaluate';
+  if (q.type === 'case' || q.type === 'casestudy') return 'evaluate';
   if (q.type === 'essay') return 'analyze';
   return 'apply';
 }

@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import { useParams, useNavigate } from 'react-router';
-import { Check, Edit3, Calendar, ChevronDown, BookOpen, Layers, Target, GraduationCap, Globe, Sun, Moon, ArrowLeft } from 'lucide-react';
+import { Check, Edit3, Calendar, ChevronDown, BookOpen, Layers, Target, GraduationCap, ArrowLeft } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import type { ChapterData, SubjectData, SubjectColor } from '../app/types';
 import { useLanguage } from '../app/hooks/useLanguage';
@@ -9,7 +9,6 @@ import { triggerCloudSync } from '../app/hooks/useCloudSync';
 import { useProgress } from '../app/hooks/useProgress';
 import { SYLLABUS_MODULES, getChaptersForModuleAndMode } from '../app/data';
 import type { ModuleInfo } from '../app/data';
-import { useUser } from '@clerk/clerk-react';
 import { PortalShell } from '../app/components/PortalShell';
 import { pageVariants } from '../app/lib/motion';
 import './syllabus-tracker-page.css';
@@ -116,9 +115,8 @@ const emptyChapterState = (): ChapterState => ({
 export function SyllabusTrackerPage({ userButton }: { userButton?: React.ReactNode }) {
   const { code, yearId } = useParams<{ code: string; yearId: string }>();
   const navigate = useNavigate();
-  const { t, language, toggleLanguage } = useLanguage();
-  const { isDark, toggleTheme } = useTheme();
-  const { user } = useUser();
+  const { t, language } = useLanguage();
+  const { isDark } = useTheme();
   const progressStore = useProgress();
 
   const isRTL = language === 'ar';
@@ -135,7 +133,8 @@ export function SyllabusTrackerPage({ userButton }: { userButton?: React.ReactNo
   const moduleName = moduleInfo ? moduleInfo.name : 'Endocrine Module';
 
   const chapters = useMemo(() => {
-    return getChaptersForModuleAndMode(moduleCode, 'mixed');
+    const chapters = getChaptersForModuleAndMode(moduleCode, 'mixed');
+    return moduleCode === 'MGL-3' ? chapters.filter(chapter => chapter.bankSection !== 'past-exams') : chapters;
   }, [moduleCode]);
 
   /** Translation with graceful local fallback if a key is missing. */
@@ -389,15 +388,6 @@ export function SyllabusTrackerPage({ userButton }: { userButton?: React.ReactNo
     }
     return isRTL ? `محاضرة ${index + 1}` : `Lecture ${index + 1}`;
   };
-
-  // User details
-  const displayName = user?.fullName || `${user?.firstName || ''} ${user?.lastName || ''}`.trim() || 'Student';
-  const displayInitials = displayName
-    .split(' ')
-    .map((n) => n[0])
-    .join('')
-    .slice(0, 2)
-    .toUpperCase() || 'OH';
 
   const crumbs = [
     { label: 'Portal', onClick: () => navigate('/') },

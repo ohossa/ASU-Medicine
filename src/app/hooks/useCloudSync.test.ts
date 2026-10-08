@@ -7,7 +7,8 @@ const mockGetToken = vi.fn().mockResolvedValue('test-token-123');
 vi.mock('@clerk/clerk-react', () => ({
   useAuth: () => ({
     getToken: mockGetToken,
-    isSignedIn: true
+    isSignedIn: true,
+    userId: 'test-user'
   })
 }));
 
@@ -127,7 +128,7 @@ describe('useCloudSync hook', () => {
       resolveFirstPush = resolve;
     });
 
-    fetchMock.mockImplementation((url: string, init?: RequestInit) => {
+    fetchMock.mockImplementation((_url: string, init?: RequestInit) => {
       if (init?.method === 'POST') {
         return firstPushPromise.then(() => ({
           ok: true,
@@ -180,4 +181,17 @@ describe('useCloudSync hook', () => {
     // Now the second push should automatically execute because of the dirty flag queueing
     expect(fetchMock).toHaveBeenCalledTimes(3);
   });
+  it('syncs only the current account shuffle setting and quiz sessions', async()=>{
+    localStorage.setItem('asu_preferences:test-user:shuffle',JSON.stringify({enabled:true,timestamp:200}));
+    localStorage.setItem('asu_preferences:other:shuffle',JSON.stringify({enabled:false,timestamp:100}));
+    localStorage.setItem('asu_quiz_session:other:1:all',JSON.stringify({current:9}));
+    const {unmount}=renderHook(()=>useCloudSync());
+    await act(async()=>{await new Promise(resolve=>setTimeout(resolve,10));});
+    window.dispatchEvent(new Event('trigger-cloud-sync'));
+    await act(async()=>{await new Promise(resolve=>setTimeout(resolve,10));});
+    const push=fetchMock.mock.calls.find(([,init]:any[])=>init?.method==='POST');
+    expect(JSON.parse(push[1].body)).toEqual({'asu_preferences:test-user:shuffle':{enabled:true,timestamp:200}});
+    unmount();
+  });
+
 });

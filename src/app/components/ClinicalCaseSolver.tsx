@@ -2,7 +2,7 @@
 // ASU Medical Portal — Interactive clinical case simulator.
 
 import React, { useMemo, useState } from "react";
-import { motion, AnimatePresence } from "motion/react";
+import { motion, AnimatePresence, type Variants } from "motion/react";
 import {
   Activity, Clock, Heart, Check, X,
   ArrowRight, ArrowLeft, Award, FileText,
@@ -54,7 +54,7 @@ const getT = (themeMode: "light" | "dark"): ThemeColors => {
 type Severity = "normal" | "warn" | "critical";
 
 interface Vital { label: string; value: string; unit: string; severity: Severity }
-interface Differential { id: string; name: string; hint: string }
+interface Differential { id: string; name: string; hint: string; correct?: boolean }
 interface LabTest {
   id: string; name: string; cost: number; delayMin: number;
   result: string; range: string; flag: Severity; trend: "up" | "down" | "flat";
@@ -254,7 +254,7 @@ const CASES: CaseData[] = [
     ],
     diagnosisName: "Acute Bacterial Meningitis (Streptococcus pneumoniae)",
     diagnosisExplanation: "CSF analysis reveals elevated WBC count (2,800/µL) with neutrophil predominance, markedly low glucose (18 mg/dL), and high protein (280 mg/dL) — classic bacterial meningitis pattern. Gram stain shows gram-positive cocci, and blood culture confirms Streptococcus pneumoniae. Ceftriaxone + vancomycin provides empiric coverage for the most common bacterial pathogens. Dexamethasone administered before antibiotics reduces inflammatory complications and improves outcomes.",
-    imageUrl: "/cases/meningitis_lp.png",
+    imageUrl: "/cases/meningitis_lp.svg",
   },
   {
     id: "stroke_fatima",
@@ -298,7 +298,7 @@ const CASES: CaseData[] = [
     ],
     diagnosisName: "Acute Left Middle Cerebral Artery (MCA) Ischemic Stroke",
     diagnosisExplanation: "CT brain shows no hemorrhage but early subtle hypodensity in the left MCA territory. MRI DWI confirms acute infarct. NIHSS score of 8 indicates moderate stroke severity with right arm/face weakness and speech involvement. Patient presented within the 4.5-hour window and received IV tPA. Aspirin was given for secondary prevention. Carotid stenosis (40%) is a contributing factor requiring ongoing management.",
-    imageUrl: "/cases/stroke_mri.png",
+    imageUrl: "/cases/stroke_mri.svg",
   },
   {
     id: "ms_layla",
@@ -342,7 +342,7 @@ const CASES: CaseData[] = [
     ],
     diagnosisName: "Relapsing-Remitting Multiple Sclerosis",
     diagnosisExplanation: "MRI demonstrates periventricular and juxtacortical T2 hyperintense lesions with Dawson's finger appearance and gadolinium enhancement, fulfilling McDonald criteria for dissemination in space. Previous episode of optic neuritis (resolving blurry vision) establishes dissemination in time. CSF oligoclonal bands are positive, supporting intrathecal inflammation. VEP shows prolonged latency indicating prior left optic neuritis. High-dose steroids accelerate recovery from acute relapse; disease-modifying therapy prevents future relapses.",
-    imageUrl: "/cases/ms_mri.png",
+    imageUrl: "/cases/ms_mri.svg",
   },
   {
     id: "parkinson_hassan",
@@ -386,7 +386,7 @@ const CASES: CaseData[] = [
     ],
     diagnosisName: "Idiopathic Parkinson's Disease (Hoehn & Yahr Stage 2)",
     diagnosisExplanation: "Classic presentation with resting tremor (asymmetric, starting unilaterally), rigidity, bradykinesia, and postural instability (TRAP). DaTSCAN demonstrates asymmetric dopaminergic deficit in the putamina, supporting the diagnosis. Dramatic response to levodopa challenge confirms idiopathic Parkinson's disease. MRI excludes structural causes and Wilson's disease (normal ceruloplasmin and copper). UPDRS score of 38 indicates moderate disease. Levodopa/carbidopa remains the most effective treatment, with dopamine agonists as alternatives in early disease.",
-    imageUrl: "/cases/parkinson_dat.png",
+    imageUrl: "/cases/parkinson_dat.svg",
   },
   {
     id: "status_khaled",
@@ -431,7 +431,7 @@ const CASES: CaseData[] = [
     ],
     diagnosisName: "Generalized Convulsive Status Epilepticus",
     diagnosisExplanation: "Generalized tonic-clonic seizure persisting >10 minutes meets criteria for status epilepticus, a neurological emergency requiring immediate intervention. Hypoglycemia has been excluded as a reversible cause (glucose 118 mg/dL). EEG confirms ongoing ictal activity. IV lorazepam is the first-line treatment to terminate seizure activity; if unsuccessful, phenytoin loading prevents seizure recurrence. Severe hypertension and tachycardia are sympathetic responses to continuous seizure activity. Elevated lactate reflects tissue hypoxia from sustained motor activity. Underlying etiology requires investigation once the patient is stabilized.",
-    imageUrl: "/cases/status_eeg.png",
+    imageUrl: "/cases/status_eeg.svg",
   },
   {
     id: "glaucoma_samira",
@@ -476,7 +476,7 @@ const CASES: CaseData[] = [
     ],
     diagnosisName: "Acute Primary Angle-Closure Glaucoma",
     diagnosisExplanation: "IOP of 52 mmHg (normal <21) confirms acute glaucoma. Slit lamp reveals a shallow anterior chamber with a mid-dilated fixed pupil and corneal edema producing the characteristic halos around lights. Gonioscopy confirms a closed angle in 270 degrees of the right eye. The acute attack occurs when the iris physically blocks the trabecular meshwork, preventing aqueous humor drainage. Pilocarpine constricts the pupil, pulling the iris away from the trabecular meshwork. Acetazolamide and timolol reduce aqueous production. Mannitol may be needed for refractory cases. Definitive treatment is laser peripheral iridotomy once inflammation subsides.",
-    imageUrl: "/cases/glaucoma_gonioscopy.png",
+    imageUrl: "/cases/glaucoma_gonioscopy.svg",
   },
   {
     id: "retinal_det_youssef",
@@ -521,7 +521,7 @@ const CASES: CaseData[] = [
     ],
     diagnosisName: "Rhegmatogenous Retinal Detachment Left Eye",
     diagnosisExplanation: "Fundus examination reveals a horseshoe tear at the 2 o'clock position with bullous retinal detachment extending to threaten the macula. OCT confirms subretinal fluid accumulation. Rhegmatogenous detachment occurs when liquid vitreous passes through a retinal break, accumulating between the neurosensory retina and retinal pigment epithelium. Urgent surgical intervention within 24 hours is critical to preserve central vision. Scleral buckling remains the gold standard for simple rhegmatogenous detachments; pars plana vitrectomy is preferred for cases with proliferative vitreoretinopathy or giant retinal tears.",
-    imageUrl: "/cases/retinal_detachment.png",
+    imageUrl: "/cases/retinal_detachment.svg",
   },
   {
     id: "amd_naglaa",
@@ -566,7 +566,7 @@ const CASES: CaseData[] = [
     ],
     diagnosisName: "Wet Age-Related Macular Degeneration (AMD) Both Eyes",
     diagnosisExplanation: "OCT reveals subretinal fluid and intraretinal cysts with pigment epithelial detachment — hallmarks of wet AMD. FFA confirms choroidal neovascularization with classic leakage pattern. Amsler grid demonstrates metamorphopsia (distorted straight lines) and central scotoma. Wet AMD occurs when abnormal choroidal blood vessels grow beneath the retina (choroidal neovascularization), leaking fluid and blood that damage the macula. Anti-VEGF therapy (ranibizumab, bevacizumab, or aflibercept) is the first-line treatment, reducing neovascularization and often improving visual acuity. AREDS vitamin supplementation slows progression in dry AMD and provides protection for the contralateral eye.",
-    imageUrl: "/cases/amd_oct.png",
+    imageUrl: "/cases/amd_oct.svg",
   },
   {
     id: "aom_mariam",
@@ -611,7 +611,7 @@ const CASES: CaseData[] = [
     ],
     diagnosisName: "Acute Bacterial Otitis Media Right Ear",
     diagnosisExplanation: "Otoscopy reveals a bulging, erythematous tympanic membrane with loss of landmarks — the hallmark of acute otitis media. Tympanometry shows Type B (flat) curve, confirming middle ear effusion and poor mobility. Pneumatic otoscopy demonstrates decreased tympanic membrane mobility. Viral prodrome often precedes bacterial superinfection; common pathogens include Streptococcus pneumoniae, Haemophilus influenzae, and Moraxella catarrhalis. Amoxicillin 80-90mg/kg/day provides appropriate coverage. Myringotomy with tube insertion is reserved for recurrent episodes or treatment failure. Pain control with analgesics and antipyretics is essential.",
-    imageUrl: "/cases/aom_otoscopy.png",
+    imageUrl: "/cases/aom_otoscopy.svg",
   },
   {
     id: "ssnhl_tariq",
@@ -656,19 +656,19 @@ const CASES: CaseData[] = [
     ],
     diagnosisName: "Idiopathic Sudden Sensorineural Hearing Loss (SSNHL) Left Ear",
     diagnosisExplanation: "Audiometry confirms >30 dB sensorineural hearing loss across 3 contiguous frequencies in the left ear — meeting criteria for SSNHL. Weber test lateralizes to the right (better ear), and Rinne test shows AC>BC bilaterally, confirming sensorineural rather than conductive loss. MRI of the internal auditory canals rules out acoustic neuroma and stroke. SSNHL is an ENT emergency; high-dose oral prednisone initiated within 72 hours significantly improves recovery rates. Intratympanic dexamethasone serves as salvage therapy when systemic steroids fail. Hyperbaric oxygen is an evidence-based adjunct. Recovery is inversely related to time to treatment.",
-    imageUrl: "/cases/ssnhl_audiometry.png",
+    imageUrl: "/cases/ssnhl_audiometry.svg",
   },
 ];
 
 /* ============================ Motion variants ============================= */
 
-const stageMotion = {
+const stageMotion: Variants = {
   initial: { x: 20, opacity: 0 },
   animate: { x: 0, opacity: 1, transition: { duration: 0.45, ease: [0.22, 1, 0.36, 1], staggerChildren: 0.06 } },
   exit: { x: -20, opacity: 0, transition: { duration: 0.25 } },
 };
 
-const item = {
+const item: Variants = {
   initial: { y: 14, opacity: 0 },
   animate: { y: 0, opacity: 1, transition: { duration: 0.4, ease: [0.22, 1, 0.36, 1] } },
 };
@@ -807,7 +807,7 @@ function VitalsMonitor({ currentCase }: { currentCase: CaseData }) {
     <div style={{ ...glassCard, padding: 24 }}>
       <SectionTitle icon={Activity} color={T.teal}>Vitals Monitor</SectionTitle>
       <EcgWaveform />
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(120px,1fr))", gap: 12, marginTop: 18 }}>
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 140px),1fr))", gap: 12, marginTop: 18 }}>
         {currentCase.vitals.map((v) => (
           <motion.div key={v.label} variants={item}
             style={{ padding: "12px 14px", borderRadius: 14, background: isDark ? "rgba(255,255,255,0.025)" : "rgba(24,24,27,0.035)", border: T.hairline }}>
@@ -866,12 +866,13 @@ function StagePresentation({ currentCase }: { currentCase: CaseData }) {
         }}
       >
         <div style={{ padding: "20px 24px 12px" }}>
-          <SectionTitle icon={Activity} color={T.purple}>Case Scan Reference</SectionTitle>
+          <SectionTitle icon={Activity} color={T.purple}>Case Reference</SectionTitle>
         </div>
         <div style={{ flex: 1, position: "relative", minHeight: 280, background: "rgba(0,0,0,0.15)" }}>
           <img
+            key={currentCase.imageUrl}
             src={currentCase.imageUrl}
-            alt={`Clinical scan for ${currentCase.diagnosisName}`}
+            alt={`Educational reference illustration for ${currentCase.code}`}
             loading="lazy"
             decoding="async"
             onError={(e) => {
@@ -883,12 +884,13 @@ function StagePresentation({ currentCase }: { currentCase: CaseData }) {
             style={{
               width: "100%",
               height: "100%",
-              objectFit: "cover",
+              objectFit: "contain",
               position: "absolute",
               inset: 0,
             }}
           />
           <div
+            key={`fallback-${currentCase.imageUrl}`}
             style={{
               display: 'none',
               position: 'absolute',
@@ -905,13 +907,14 @@ function StagePresentation({ currentCase }: { currentCase: CaseData }) {
           >
             <Activity size={40} strokeWidth={1.5} color={T.purple} />
             <p style={{ color: T.text, fontSize: 14, fontWeight: 600, textAlign: 'center' }}>
-              {currentCase.diagnosisName}
+              Reference image
             </p>
             <p style={{ color: T.sub, fontSize: 11, textAlign: 'center' }}>
-              Scan reference image unavailable
+              Reference image could not be loaded
             </p>
           </div>
         </div>
+        <p style={{padding: '12px 24px', margin: 0, color: T.sub, fontSize: 12}}>Educational illustration · not a patient image or a diagnostic test result.</p>
       </motion.div>
     </div>
   );
@@ -938,9 +941,9 @@ function StageDifferentials({ currentCase, ranked, setRanked }: {
   const ordinal = ["1st", "2nd", "3rd"];
 
   return (
-    <div style={{ ...glassCard, padding: 28 }}>
+    <div className="case-stage-card" style={{ ...glassCard, padding: 28 }}>
       <SectionTitle icon={Heart} color={T.purple}>Differential Diagnosis — pin your top 3 in order</SectionTitle>
-      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px,1fr))", gap: 14 }}>
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 220px),1fr))", gap: 14 }}>
         {currentCase.differentials.map((d) => {
           const rank = ranked.indexOf(d.id);
           const selected = rank !== -1;
@@ -1018,10 +1021,10 @@ function StageInvestigations({ currentCase, ordered, setOrdered, ran, setRan }: 
   const results = currentCase.tests.filter((t) => ordered.includes(t.id));
 
   return (
-    <div style={{ ...glassCard, padding: 28 }}>
+    <div className="case-stage-card" style={{ ...glassCard, padding: 28 }}>
       <SectionTitle icon={Clock} color={T.purple}>Investigations Panel</SectionTitle>
 
-      <div style={{ display: "grid", gridTemplateColumns: ran ? "repeat(auto-fit, minmax(280px, 1fr))" : "1fr", gap: 24 }}>
+      <div style={{ display: "grid", gridTemplateColumns: ran ? "repeat(auto-fit, minmax(min(100%, 280px), 1fr))" : "1fr", gap: 24 }}>
         {/* Left: checklist / tests run */}
         <div style={{ display: "grid", gap: 10, alignContent: "start" }}>
           {(ran ? results : currentCase.tests).map((t) => {
@@ -1082,31 +1085,32 @@ function StageInvestigations({ currentCase, ordered, setOrdered, ran, setRan }: 
             <motion.div
               initial={{ x: 20, opacity: 0 }} animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
-              style={{ borderLeft: T.hairline, paddingLeft: 24 }}
+              className="case-lab-report" style={{borderColor: isDark ? "rgba(255,255,255,0.06)" : "rgba(24,24,27,0.06)"}}
             >
               <p style={{ margin: "0 0 14px", fontSize: 11.5, letterSpacing: 1.2, textTransform: "uppercase", color: T.faint }}>
                 Laboratory Report
               </p>
               <div style={{ display: "grid", gap: 2 }}>
-                <div style={{ display: "grid", gridTemplateColumns: "1.3fr 1fr 1fr auto", gap: 10, padding: "8px 12px", fontSize: 10.5, letterSpacing: 0.6, textTransform: "uppercase", color: T.faint }}>
+                <div className="case-lab-heading" style={{ gap: 10, padding: "8px 12px", fontSize: 10.5, letterSpacing: 0.6, textTransform: "uppercase", color: T.faint }}>
                   <span>Test</span><span>Result</span><span>Reference</span><span />
                 </div>
                 {results.map((t, i) => (
                   <motion.div
                     key={t.id}
+                    className="case-lab-row"
                     initial={{ opacity: 0, y: 8 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.15 + i * 0.08 }}
                     style={{
-                      display: "grid", gridTemplateColumns: "1.3fr 1fr 1fr auto", gap: 10,
+                      gap: 10,
                       alignItems: "center", padding: "12px", borderRadius: 11,
                       background: t.flag !== "normal" ? `${sevColor(t.flag, T)}0d` : (isDark ? "rgba(255,255,255,0.02)" : "rgba(24,24,27,0.02)"),
                       border: `1px solid ${t.flag !== "normal" ? `${sevColor(t.flag, T)}33` : (isDark ? "rgba(255,255,255,0.05)" : "rgba(24,24,27,0.05)")}`,
                     }}
                   >
                     <span style={{ fontSize: 13, fontWeight: 600 }}>{t.name}</span>
-                    <span style={{ fontFamily: T.mono, fontSize: 12.5, color: sevColor(t.flag, T), fontWeight: 600 }}>{t.result}</span>
-                    <span style={{ fontFamily: T.mono, fontSize: 11.5, color: T.faint }}>{t.range}</span>
+                    <span style={{ fontFamily: T.mono, fontSize: 12.5, color: sevColor(t.flag, T), fontWeight: 600 }}><span className="case-mobile-label">Result: </span>{t.result}</span>
+                    <span style={{ fontFamily: T.mono, fontSize: 11.5, color: T.faint }}><span className="case-mobile-label">Reference: </span>{t.range}</span>
                     <TrendArrow trend={t.trend} color={sevColor(t.flag, T)} />
                   </motion.div>
                 ))}
@@ -1197,7 +1201,7 @@ function StageOutcome({ currentCase, ranked, ordered, prescribed, setPrescribed,
       {/* Prescription picker */}
       <motion.div variants={item} style={{ ...glassCard, padding: 28 }}>
         <SectionTitle icon={Heart} color={T.teal}>Treatment Plan</SectionTitle>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px,1fr))", gap: 12 }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 220px),1fr))", gap: 12 }}>
           {currentCase.treatments.map((tx) => {
             const on = prescribed.includes(tx.id);
             const verdict = submitted ? (tx.correct ? T.teal : on ? T.red : (isDark ? "rgba(255,255,255,0.10)" : "rgba(24,24,27,0.12)")) : on ? T.teal : (isDark ? "rgba(255,255,255,0.10)" : "rgba(24,24,27,0.12)");
@@ -1273,7 +1277,7 @@ function StageOutcome({ currentCase, ranked, ordered, prescribed, setPrescribed,
               <Ring percent={scores.gradePct} color={T.amber} label="Critical Thinking" display={scores.grade} delay={0.4} />
             </div>
 
-            <div style={{ display: "flex", gap: 12, justifyContent: "center" }}>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: 12, justifyContent: "center" }}>
               <PillButton onClick={onRestart}>Solve Another Case</PillButton>
               {onBack && <PillButton variant="solid" onClick={onBack}>Back to Dashboard <ArrowRight size={14} /></PillButton>}
             </div>
@@ -1331,7 +1335,7 @@ export function ClinicalCaseSolver({ onBack, userButton }: { onBack?: () => void
 
   return (
     <PortalShell crumbs={crumbs} userButton={userButton}>
-      <main style={{
+      <main className="case-solver-panel" style={{
         minHeight: "100vh", background: T.bg, fontFamily: T.font, color: T.text,
         padding: "clamp(24px, 4vw, 56px)", WebkitFontSmoothing: "antialiased", overflowX: "hidden",
       }}>

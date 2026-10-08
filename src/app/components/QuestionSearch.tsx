@@ -1,3 +1,4 @@
+import { ReportQuestionButton } from '../reports/ReportQuestion';
 // src/app/components/QuestionSearch.tsx
 // ASU Medical Portal — Ain Shams University
 // Search engine across all database questions and answers.
@@ -21,6 +22,7 @@ import { FormattedAnswer } from "./FormattedAnswer";
 interface SearchEntry {
   question: Question;
   chapterTitle: string;
+  chapterId: number;
   moduleName: string;
   moduleCode: string;
   subjectName: string;
@@ -52,6 +54,7 @@ const getSearchableQuestions = (): SearchEntry[] => {
                 list.push({
                   question: q,
                   chapterTitle: chapter.title,
+                  chapterId: chapter.id,
                   moduleName: mod.name,
                   moduleCode: mod.code,
                   subjectName: subject.name,
@@ -341,6 +344,7 @@ export function QuestionSearch({ onBack, userButton }: QuestionSearchProps) {
                       </div>
                     </button>
 
+                    <div className="flex justify-end px-4 pb-2"><ReportQuestionButton question={q} chapterId={entry.chapterId} moduleCode={entry.moduleCode}/></div>
                     {/* Expanded body */}
                     <AnimatePresence initial={false}>
                       {isExpanded && (

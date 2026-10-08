@@ -1,0 +1,45 @@
+[
+  {
+    "path": "/",
+    "exit_code": 0,
+    "http_status": "200",
+    "response_sha256": "9aa0071300c035cdb42968ea1d6de27afcfc9909fb749011c46215500c38cfa1",
+    "summary": "HTML received: True"
+  },
+  {
+    "path": "/api/question-bank?action=published",
+    "exit_code": 0,
+    "http_status": "200",
+    "response_sha256": "d4455a0831bada2fd4f8c650736d210e98ce297b08225a642ac000e3dfa4b649",
+    "summary": {
+      "edits_count": 0
+    }
+  },
+  {
+    "path": "/api/question-bank?action=published&moduleCode=MGL-3",
+    "exit_code": 0,
+    "http_status": "200",
+    "response_sha256": "d4455a0831bada2fd4f8c650736d210e98ce297b08225a642ac000e3dfa4b649",
+    "summary": {
+      "edits_count": 0
+    }
+  },
+  {
+    "path": "/api/question-bank?action=modules",
+    "exit_code": 0,
+    "http_status": "401",
+    "response_sha256": "196957612d2b0ebd5863ede9cb5c4806c4541c78dc6ab3aeccdfbcbcbcaa50ac",
+    "summary": {
+      "error": "Please sign in to continue."
+    }
+  },
+  {
+    "path": "/api/question-reports?action=access",
+    "exit_code": 0,
+    "http_status": "401",
+    "response_sha256": "196957612d2b0ebd5863ede9cb5c4806c4541c78dc6ab3aeccdfbcbcbcaa50ac",
+    "summary": {
+      "error": "Please sign in to continue."
+    }
+  }
+]

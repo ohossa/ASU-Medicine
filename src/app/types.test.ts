@@ -4,6 +4,7 @@ import type { Question } from './types';
 describe('Question type extensions', () => {
   it('accepts fully populated question with all new fields', () => {
     const q: Question = {
+      lecture: 1, subjectColor: 'clinical', explanation: '',
       id: '1', text: 'Test', type: 'mcq',
       difficulty: 3, bloomLevel: 'apply', tags: ['tag-a'],
       estimatedTimeSeconds: 60,
@@ -13,7 +14,7 @@ describe('Question type extensions', () => {
   });
 
   it('accepts minimal question with no new fields', () => {
-    const q: Question = { id: '1', text: 'Test', type: 'mcq' };
+    const q: Question = { lecture: 1, subjectColor: 'clinical', explanation: '', id: '1', text: 'Test', type: 'mcq' };
     expect(q.difficulty).toBeUndefined();
   });
 });

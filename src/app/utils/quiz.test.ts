@@ -6,11 +6,11 @@ function makeQ(partial: Partial<Question> & { type: Question['type'] }): Questio
   return {
     id: 1,
     text: 'Test question',
-    type: partial.type,
+    lecture: 1,
     subjectColor: 'clinical',
     explanation: '',
     ...partial,
-  } as Question;
+  };
 }
 
 describe('checkAnswerCorrect — MCQ', () => {
@@ -164,9 +164,9 @@ describe('checkAnswerCorrect — Case Study', () => {
   const q = makeQ({
     type: 'casestudy',
     subQuestions: [
-      { id: 's1', type: 'mcq', text: 'Q1', correctIndex: 1, options: ['A', 'B'] },
-      { id: 's2', type: 'essay', text: 'Q2' },
-      { id: 's3', type: 'fillblank', text: 'Q3', blanks: ['answer'], acceptedAnswers: [] },
+      { id: 's1', type: 'mcq', text: 'Q1', explanation: '', correctIndex: 1, options: ['A', 'B'] },
+      { id: 's2', type: 'essay', text: 'Q2', explanation: '' },
+      { id: 's3', type: 'fillblank', text: 'Q3', explanation: '', blanks: ['answer'], acceptedAnswers: [] },
     ],
   });
 

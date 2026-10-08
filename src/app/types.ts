@@ -41,16 +41,74 @@ export interface SubQuestion {
   acceptedAnswers?: string[][];
 }
 
-/** Union of all possible answer shapes stored in answers map */
-export type QuizAnswer =
-  | number                                          // MCQ / truefalse selection
-  | boolean                                         // truefalse (legacy)
-  | { text: string; selfGrade?: 'correct' | 'incorrect' }  // essay
-  | { inputs: string[]; submitted: boolean }        // fillblank
-  | { scrambled: string[]; matches: Record<string, string>; submitted: boolean } // matching
-  | Record<string, number | { text?: string; inputs?: string[]; selfGrade?: string; submitted?: boolean }>; // case/casestudy sub-answers
+export interface EssayAnswer {
+  text?: string;
+  selfGrade?: 'correct' | 'incorrect';
+}
+export interface FillBlankAnswer { inputs: string[]; submitted: boolean }
+export interface MatchingAnswer { scrambled: string[]; matches: Record<number, number>; submitted: boolean }
+export type SubAnswer = number | EssayAnswer | FillBlankAnswer;
+export type CaseAnswer = Record<string, SubAnswer>;
+/** Stored formats include legacy essay strings and boolean true/false answers. */
+export type QuizAnswer = number | boolean | string | EssayAnswer | FillBlankAnswer | MatchingAnswer | CaseAnswer;
+
+export function isAnswerRecord(value: unknown): value is Record<string, unknown> {
+  return value !== null && typeof value === 'object' && !Array.isArray(value);
+}
+export function asEssayAnswer(value: unknown): EssayAnswer | undefined {
+  if (!isAnswerRecord(value)) return undefined;
+  if (value.text !== undefined && typeof value.text !== 'string') return undefined;
+  if (value.selfGrade !== undefined && value.selfGrade !== 'correct' && value.selfGrade !== 'incorrect') return undefined;
+  return ('text' in value || 'selfGrade' in value) ? value as EssayAnswer : undefined;
+}
+export function asFillBlankAnswer(value: unknown): FillBlankAnswer | undefined {
+  return isAnswerRecord(value) && Array.isArray(value.inputs) && value.inputs.every((v) => typeof v === 'string') && typeof value.submitted === 'boolean'
+    ? value as unknown as FillBlankAnswer : undefined;
+}
+export function asMatchingAnswer(value: unknown): MatchingAnswer | undefined {
+  return isAnswerRecord(value) && Array.isArray(value.scrambled) && value.scrambled.every((v) => typeof v === 'string') &&
+    isAnswerRecord(value.matches) && Object.values(value.matches).every((v) => typeof v === 'number' && Number.isInteger(v) && v >= 0) && typeof value.submitted === 'boolean'
+    ? value as unknown as MatchingAnswer : undefined;
+}
+export function asCaseAnswer(value: unknown): CaseAnswer | undefined {
+  return isAnswerRecord(value) && Object.values(value).every((v) =>
+    (typeof v === 'number' && Number.isFinite(v)) || asEssayAnswer(v) !== undefined || asFillBlankAnswer(v) !== undefined)
+    ? value as CaseAnswer : undefined;
+}
+/** Validate the format before persisted data enters quiz rendering and grading. */
+export function parseQuizAnswer(question: Question, value: unknown): QuizAnswer | undefined {
+  switch (question.type) {
+    case 'mcq': return typeof value === 'number' && Number.isInteger(value) && value >= 0 ? value : undefined;
+    case 'truefalse': return typeof value === 'boolean' || (typeof value === 'number' && Number.isInteger(value) && value >= 0) ? value : undefined;
+    case 'essay': return typeof value === 'string' ? value : asEssayAnswer(value);
+    case 'fillblank': return asFillBlankAnswer(value);
+    case 'matching': return asMatchingAnswer(value);
+    case 'case':
+    case 'casestudy': {
+      if (!isAnswerRecord(value)) return undefined;
+      const answer: CaseAnswer = {};
+      for (const sub of question.subQuestions ?? []) {
+        const parsed = parseQuizAnswer({ ...question, ...sub }, value[sub.id]);
+        if (typeof parsed === 'number' || asEssayAnswer(parsed) || asFillBlankAnswer(parsed)) answer[sub.id] = parsed as SubAnswer;
+      }
+      return answer;
+    }
+  }
+}
+
+export function normalizeQuizAnswers(questions: Question[], values: unknown): Record<number, QuizAnswer> {
+  if (!isAnswerRecord(values)) return {};
+  const parsed: Record<number, QuizAnswer> = {};
+  questions.forEach((question, index) => {
+    const answer = parseQuizAnswer(question, values[index]);
+    if (answer !== undefined) parsed[index] = answer;
+  });
+  return parsed;
+}
 
 export interface Question {
+  contentVersion?: string;
+  chapterTitle?: string;
   id: string | number;
   type: 'mcq' | 'truefalse' | 'matching' | 'essay' | 'case' | 'casestudy' | 'fillblank';
   text: string;
@@ -95,7 +153,10 @@ export interface SubjectData {
   lectureNum?: number; // Added for virtual subjects in Infection Module
 }
 
+export type QuestionCollection = 'practice' | 'past-exams';
+
 export interface ChapterData {
+  bankSection?: QuestionCollection;
   id: number;
   title: string;
   subtitle: string;

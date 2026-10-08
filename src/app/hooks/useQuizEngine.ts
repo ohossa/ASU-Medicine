@@ -1,10 +1,11 @@
 import { useState, useEffect, useCallback, useMemo, useRef, useLayoutEffect } from 'react';
 import { checkAnswerCorrect } from '../utils/quiz';
-import type { Question } from '../types';
+import type { Question, QuizAnswer } from '../types';
+import { asEssayAnswer, asFillBlankAnswer, asMatchingAnswer, asCaseAnswer, normalizeQuizAnswers } from '../types';
 
 export interface QuizSession {
   questions: Question[];
-  answers: Record<number, unknown>;
+  answers: Record<number, QuizAnswer>;
   elapsedSeconds: number;
   flaggedQuestions: Set<number>;
 }
@@ -14,22 +15,23 @@ function isAnswered(q: Question, a: unknown): boolean {
   switch (q.type) {
     case 'essay':
       return typeof a === 'object'
-        ? a.selfGrade !== undefined
+        ? asEssayAnswer(a)?.selfGrade !== undefined
         : typeof a === 'string' && a.trim().length > 0;
     case 'fillblank':
-      return typeof a === 'object' && a.submitted === true;
+      return asFillBlankAnswer(a)?.submitted === true;
     case 'matching':
-      return typeof a === 'object' && a.submitted === true;
+      return asMatchingAnswer(a)?.submitted === true;
     case 'case':
     case 'casestudy': {
       if (!Array.isArray(q.subQuestions) || q.subQuestions.length === 0) return false;
-      const ansObj = a as Record<string, unknown>;
+      const ansObj = asCaseAnswer(a);
+      if (!ansObj) return false;
       return q.subQuestions.every((sq) => {
         const subA = ansObj[sq.id];
         if (subA === undefined || subA === null) return false;
         if (sq.type === 'mcq') return typeof subA === 'number';
-        if (sq.type === 'fillblank') return typeof subA === 'object' && (subA as Record<string, unknown>).submitted === true;
-        if (sq.type === 'essay') return typeof subA === 'object' && (subA as Record<string, unknown>).selfGrade !== undefined;
+        if (sq.type === 'fillblank') return asFillBlankAnswer(subA)?.submitted === true;
+        if (sq.type === 'essay') return asEssayAnswer(subA)?.selfGrade !== undefined;
         return true;
       });
     }
@@ -45,16 +47,18 @@ function getAnswerState(
   if (ans === undefined || ans === null) return 'unanswered';
 
   if (q.type === 'fillblank') {
-    if (typeof ans !== 'object') return 'unanswered';
-    const hasInputs = Array.isArray(ans.inputs) && ans.inputs.some((s: string) => s?.trim().length > 0);
+    const blank = asFillBlankAnswer(ans);
+    if (!blank) return 'unanswered';
+    const hasInputs = blank.inputs.some((s) => s.trim().length > 0);
     if (!hasInputs) return 'unanswered';
-    if (!ans.submitted) return 'answered';
+    if (!blank.submitted) return 'answered';
     return checkAnswerCorrect(q, ans) ? 'correct' : 'incorrect';
   }
 
   if (q.type === 'matching') {
-    if (typeof ans !== 'object') return 'unanswered';
-    if (!ans.submitted) return 'answered';
+    const matching = asMatchingAnswer(ans);
+    if (!matching) return 'unanswered';
+    if (!matching.submitted) return 'answered';
     return checkAnswerCorrect(q, ans) ? 'correct' : 'incorrect';
   }
 
@@ -62,19 +66,20 @@ function getAnswerState(
   if (checkAnswerCorrect(q, ans)) return 'correct';
 
   if (q.type === 'essay') {
-    if (ans?.selfGrade === 'incorrect') return 'incorrect';
+    if (asEssayAnswer(ans)?.selfGrade === 'incorrect') return 'incorrect';
     return 'submitted';
   }
 
   if (q.type === 'case') {
     const subs = q.subQuestions ?? [];
+    const caseAnswer = asCaseAnswer(ans) ?? {};
     if (!subs.length) return 'submitted';
-    const hasAny = subs.some((sq) => ans?.[sq.id] !== undefined);
+    const hasAny = subs.some((sq) => caseAnswer[sq.id] !== undefined);
     if (!hasAny) return 'submitted';
     const allDone = subs.every((sq) => {
-      if (ans?.[sq.id] === undefined) return false;
-      if (sq.type === 'essay') return ans[sq.id].selfGrade !== undefined;
-      if (sq.type === 'fillblank') return ans[sq.id]?.submitted === true;
+      if (caseAnswer[sq.id] === undefined) return false;
+      if (sq.type === 'essay') return asEssayAnswer(caseAnswer[sq.id])?.selfGrade !== undefined;
+      if (sq.type === 'fillblank') return asFillBlankAnswer(caseAnswer[sq.id])?.submitted === true;
       return true;
     });
     if (!allDone) return 'submitted';
@@ -128,7 +133,7 @@ export function useQuizEngine(params: {
     }
     return initialCurrent;
   });
-  const [answers, setAnswers] = useState<Record<number, unknown>>(() => initialAnswers ?? {});
+  const [answers, setAnswers] = useState<Record<number, QuizAnswer>>(() => normalizeQuizAnswers(questions, initialAnswers));
   const [flagged, setFlagged] = useState<Set<number>>(() => new Set(initialFlagged ?? []));
   const [elapsedSeconds, setElapsedSeconds] = useState(initialElapsedSeconds);
   const [finished, setFinished] = useState(initialFinished);
@@ -137,7 +142,7 @@ export function useQuizEngine(params: {
   const [showShortcuts, setShowShortcuts] = useState(initialShowShortcuts);
   const [revealed, setRevealed] = useState<Set<number>>(new Set());
 
-  const answersRef = useRef<Record<number, unknown>>(initialAnswers ?? {});
+  const answersRef = useRef<Record<number, QuizAnswer>>(answers);
   useLayoutEffect(() => { answersRef.current = answers; }, [answers]);
 
   const currentQuestion = questions[current] ?? questions[0];
@@ -167,7 +172,7 @@ export function useQuizEngine(params: {
 
   const totalEstimatedSeconds = useMemo(() => {
     return questions.reduce((sum, q) => {
-      const explicit = ((q as unknown) as Record<string, unknown>).estimatedTimeSeconds;
+      const explicit = q.estimatedTimeSeconds;
       if (typeof explicit === 'number') return sum + explicit;
       return sum + getDefaultEstimatedSeconds(q);
     }, 0);
@@ -199,14 +204,14 @@ export function useQuizEngine(params: {
     const q = currentQuestion;
     const ans = answers[current];
     if (q?.type === 'fillblank') {
-      return (ans?.inputs as string[] | undefined) ?? Array((q.blanks ?? []).length).fill('');
+      return asFillBlankAnswer(ans)?.inputs ?? Array((q.blanks ?? []).length).fill('');
     }
     return [];
   }, [currentQuestion, answers, current]);
 
   const blankSubmitted = useMemo(() => {
     const ans = answers[current];
-    return (ans?.submitted as boolean | undefined) === true;
+    return asFillBlankAnswer(ans)?.submitted === true;
   }, [answers, current]);
 
   /* Navigation */
@@ -240,7 +245,7 @@ export function useQuizEngine(params: {
   }, [current]);
 
   const setAnswer = useCallback(
-    (value: unknown) => {
+    (value: QuizAnswer) => {
       setAnswers((prev) => ({ ...prev, [current]: value }));
     },
     [current]
@@ -249,12 +254,14 @@ export function useQuizEngine(params: {
   const submitAnswer = useCallback(() => {
     const q = questions[current];
     const ans = answers[current];
-    if (q?.type === 'fillblank' && ans && !ans.submitted) {
-      setAnswers((prev) => ({ ...prev, [current]: { ...ans, submitted: true } }));
+    const blank = asFillBlankAnswer(ans);
+    const matching = asMatchingAnswer(ans);
+    if (q?.type === 'fillblank' && blank && !blank.submitted) {
+      setAnswers((prev) => ({ ...prev, [current]: { ...blank, submitted: true } }));
       return;
     }
-    if (q?.type === 'matching' && ans && !ans.submitted) {
-      setAnswers((prev) => ({ ...prev, [current]: { ...ans, submitted: true } }));
+    if (q?.type === 'matching' && matching && !matching.submitted) {
+      setAnswers((prev) => ({ ...prev, [current]: { ...matching, submitted: true } }));
       return;
     }
     goNext();

@@ -1,0 +1,32 @@
+[
+  {
+    "path": "/",
+    "exit_code": 0,
+    "http_status": "200",
+    "summary": "HTML received: True"
+  },
+  {
+    "path": "/year-3/mgl-3/mcq",
+    "exit_code": 0,
+    "http_status": "200",
+    "summary": "HTML received: True"
+  },
+  {
+    "path": "/api/question-bank?action=published",
+    "exit_code": 0,
+    "http_status": "503",
+    "summary": "{\"error\":\"Question management is unavailable. Check server configuration and try again.\"}"
+  },
+  {
+    "path": "/api/question-bank?action=modules",
+    "exit_code": 0,
+    "http_status": "401",
+    "summary": "{\"error\":\"Please sign in to continue.\"}"
+  },
+  {
+    "path": "/api/question-reports?action=access",
+    "exit_code": 0,
+    "http_status": "401",
+    "summary": "{\"error\":\"Please sign in to continue.\"}"
+  }
+]

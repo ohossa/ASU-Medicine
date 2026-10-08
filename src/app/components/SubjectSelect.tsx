@@ -1,3 +1,4 @@
+import { ShuffleSwitch } from '../preferences/ShuffleSwitch';
 import React, { useState, useLayoutEffect, useMemo } from 'react';
 import {
   ArrowLeft,
@@ -29,6 +30,7 @@ import { subjectStyles } from '../types';
 import { useLanguage } from '../hooks/useLanguage';
 import { getQuizHistory } from '../utils/storage';
 import type { QuizResult } from '../utils/storage';
+import { FlowBreadcrumbs } from './FlowBreadcrumbs';
 import { applySubjectTheme } from '../theme/subjectThemes';
 
 /* ------------------------------------------------------------------ */
@@ -201,9 +203,18 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart, 
   const { t, language } = useLanguage();
   const isRTL = language === 'ar';
 
-  const isLectureBased = moduleCode === 'MINF-1' || (moduleCode === 'MSS-2' && chapter.id >= 1 && chapter.id <= 8);
+  const isGit = moduleCode === 'MGL-3';
+  const isLectureBased = isGit || moduleCode === 'MINF-1' || (moduleCode === 'MSS-2' && chapter.id >= 1 && chapter.id <= 8);
 
   const label = (key: string): string => {
+    if (isGit) {
+      if (key === 'comingSoon') return isRTL ? 'لا توجد أسئلة في هذا النمط' : 'No questions in this mode';
+      if (key === 'subjects') return isRTL ? 'الفصول / الموضوعات' : 'Chapters / topics';
+      if (key === 'startAll') return isRTL ? 'ابدأ كل الموضوعات' : 'Start all topics';
+      if (key === 'quickStartDesc') return isRTL ? 'تدرب على كل موضوعات هذه المادة في هذه المجموعة.' : 'Practice every topic in this subject and collection.';
+      if (key === 'available') return isRTL ? 'موضوع متاح' : 'topics available';
+      if (key === 'noSubjects') return isRTL ? 'لا توجد موضوعات متاحة في هذا النمط.' : 'No topics available in this mode.';
+    }
     if (isLectureBased) {
       if (key === 'subjects') return isRTL ? 'المحاضرات' : 'Lectures';
       if (key === 'startAll') return isRTL ? 'ابدأ كل المحاضرات' : 'Start All Lectures';
@@ -338,6 +349,7 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart, 
           initial={{ opacity: 0, y: -12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ type: 'spring', stiffness: 260, damping: 26 }}
+          aria-label={isRTL ? 'مسار التنقل' : 'Breadcrumb'}
           className={`sticky top-3 z-20 mb-8 flex items-center gap-3 rounded-2xl border bg-card/85 px-3 py-2.5 glass-panel border-border dark:${accent.border}`}
         >
           <button
@@ -349,7 +361,7 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart, 
             <BackArrow size={16} />
           </button>
 
-          <ol className="flex min-w-0 flex-1 items-center gap-1 overflow-x-auto text-xs text-muted-foreground dark:text-white/45">
+          {isGit ? <FlowBreadcrumbs crumbs={crumbs} rtl={isRTL} /> : <ol className="flex min-w-0 flex-1 items-center gap-1 overflow-x-auto text-xs text-muted-foreground dark:text-white/45">
             {crumbs.map((crumb, i) => (
               <li key={`${crumb.label}_${i}`} className="flex shrink-0 items-center gap-1">
                 {i > 0 && <ChevronRight size={13} className={`text-white/25 ${isRTL ? 'rotate-180' : ''}`} />}
@@ -362,13 +374,14 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart, 
                 )}
               </li>
             ))}
-          </ol>
+          </ol>}
 
           <span className={`hidden shrink-0 items-center gap-1.5 rounded-full px-2.5 py-1 text-[10px] font-medium sm:inline-flex ${accent.softBg} ${accent.text}`}>
             <Layers size={11} />
             {activeSubjects}/{chapter.subjects.length} {label('available')}
           </span>
 
+          <ShuffleSwitch />
           {userButton && <div className="shrink-0">{userButton}</div>}
         </motion.nav>
 
@@ -461,7 +474,6 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart, 
                   </div>
 
                   <h3 className="text-sm font-semibold text-foreground dark:text-white">{subject.name}</h3>
-                  <p className="mt-0.5 text-[11px] text-muted-foreground dark:text-white/40">{subject.questions.length} {label('questions')}</p>
 
                   {/* Questions badge */}
                   <span
@@ -474,7 +486,7 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart, 
                   </span>
 
                   {/* Syllabus progress */}
-                  <div className="mt-4 w-full">
+                  {chapter.bankSection !== 'past-exams' && <div className="mt-4 w-full">
                     <div className="mb-1.5 flex items-center justify-between text-[10px]">
                       <span className="text-muted-foreground dark:text-white/45">{label('syllabus')}</span>
                       <span className={`font-semibold tabular-nums ${progress > 0 ? subAccent.text : 'text-muted-foreground dark:text-white/35'}`}>{progress}%</span>
@@ -487,7 +499,7 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart, 
                         className={`h-full rounded-full ${subAccent.solidBg}`}
                       />
                     </div>
-                  </div>
+                  </div>}
 
                   {/* Past results footer */}
                   <AnimatePresence initial={false}>

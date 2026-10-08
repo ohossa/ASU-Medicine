@@ -1,0 +1,43 @@
+{
+  "node": "24.16.0",
+  "vercel_project_node": "24.x",
+  "fresh_npm_ci_passed": true,
+  "strict_app_and_server_typecheck_passed": true,
+  "test_files_passed": 48,
+  "tests_passed": 324,
+  "production_build_passed": true,
+  "production_audit_vulnerabilities": 0,
+  "development_audit_remaining": "3 moderate: mammoth CLI -> argparse -> sprintf-js; no nonbreaking fix reported",
+  "git_question_bank_unchanged_during_cleanup": true,
+  "bank_sha256": "e0e773df78ba3c191b5d1a9cf65aa5c75e00ba5ab6210669ec55beb29ce9ca1c",
+  "owner_id_configured_in_vercel": [
+    "Production",
+    "Preview"
+  ],
+  "server_secrets_downloaded": false,
+  "git_push_performed": false,
+  "production_deployment_performed": false,
+  "pending": [
+    "Authenticated owner report/editor persistence round trip",
+    "Authenticated ordinary-student denial test",
+    "Physical iPhone/iPad Safari check",
+    "Final release approval and GitHub push"
+  ],
+  "strict_nodenext_api_typecheck_passed": true,
+  "native_node24_api_imports_passed": [
+    "hint",
+    "sync",
+    "question-bank",
+    "question-reports"
+  ],
+  "preview_origin_configured": "https://asu-medicine-git-release-preview-omarhossa-ms-projects.vercel.app",
+  "preview_url": "https://asu-medicine-git-release-preview-omarhossa-ms-projects.vercel.app",
+  "deployment_id": "dpl_5axCXR2oQzwJYxHn3CWMiVWuJtbZ",
+  "hosted_build_without_type_errors": true,
+  "hosted_pages_http": 200,
+  "hosted_unauthenticated_private_api_http": 401,
+  "hosted_public_corrections_http": 200,
+  "blocker": null,
+  "hosted_git_corrections_http": 200,
+  "redis_read_connection_verified": true
+}

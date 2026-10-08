@@ -14,7 +14,7 @@ export const QuestionSchema = z.object({
     s => !s.toLowerCase().includes('review the related lecture material'),
     { message: 'Placeholder explanation rejected' }
   ),
-  correctAnswer: z.union([z.string(), z.number(), z.array(z.any()), z.record(z.any())]).optional(),
+  correctAnswer: z.union([z.string(), z.number(), z.array(z.unknown()), z.record(z.string(), z.unknown())]).optional(),
   options: z.array(z.string()).optional(),
   difficulty: z.number().min(1).max(5).optional(),
   bloomLevel: z.enum(['remember', 'understand', 'apply', 'analyze', 'evaluate', 'create']).optional(),

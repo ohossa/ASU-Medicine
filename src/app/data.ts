@@ -1,3 +1,4 @@
+import { applyPublishedEdits } from './lib/publishedEdits';
 import type { ChapterData, Question, SubjectColor, SubjectData, SubQuestion } from './types';
 import { assignDefaultDifficulty, assignDefaultBloomLevel } from './lib/assignDefaultDifficulty';
 
@@ -19,6 +20,7 @@ type RawSubQuestion = {
 };
 
 type RawQuestion = {
+  repetitionCount?: number;
   id: number;
   type?: 'mcq' | 'truefalse' | 'matching' | 'essay' | 'case' | 'fillblank';
   question?: string;
@@ -47,6 +49,7 @@ type RawChapter = {
 // ── V2 JSON Raw Types ─────────────────────────────────────────────────────────
 
 type V2RawQuestion = {
+  contentVersion?: string;
   id: string | number;
   type: Question['type'];
   text?: string;
@@ -62,6 +65,7 @@ type V2RawQuestion = {
   subQuestions?: Array<{
     id: string;
     type: 'mcq' | 'essay';
+    question?: string;
     text?: string;
     options?: string[];
     correctIndex?: number;
@@ -92,6 +96,8 @@ type V2RawSubject = {
 };
 
 type V2RawChapter = {
+  bankSection?: ChapterData['bankSection'];
+  accentColor?: SubjectColor;
   id?: number;
   title?: string;
   subtitle?: string;
@@ -468,6 +474,7 @@ function cleanCircledC(str: string): string {
 function transformV2Question(q: V2RawQuestion, subjectColor: SubjectColor): Question {
   const base = {
     id: q.id,
+    contentVersion: q.contentVersion,
     type: q.type,
     text: cleanCircledC(q.text || q.question || ''),
     lecture: q.lecture ?? 1,
@@ -553,23 +560,23 @@ function detectDbTypeOfJson(rawData: unknown): 'mcq' | 'essay' {
 let loadPromise: Promise<void> | null = null;
 
 async function loadAllModules(): Promise<void> {
-  for (const path in globbedFiles) {
-    const loader = globbedFiles[path];
-    const fileModule = await loader();
+  const loadedFiles = await Promise.all(Object.entries(globbedFiles).map(async ([path,loader]) => [path,await loader()] as const));
+  for (const [path,fileModule] of loadedFiles) {
     const rawData = (fileModule as Record<string, unknown>).default ?? fileModule;
 
   if (rawData && typeof rawData === 'object' && 'schemaVersion' in rawData) {
-    const sv = rawData.schemaVersion;
+    const v2Data = rawData as V2RawData;
+    const sv = v2Data.schemaVersion;
     if (sv !== 1) {
       console.warn(`Unexpected schema version ${sv} in ${path}`);
     }
-    if (rawData.meta && rawData.meta.moduleCode) {
-      const code = rawData.meta.moduleCode;
+    if (v2Data.meta && v2Data.meta.moduleCode) {
+      const code = v2Data.meta.moduleCode;
       if (!moduleDatabases[code]) {
         moduleDatabases[code] = { mcqRaw: null, essayRaw: null };
       }
-      assertUniqueQuestionIds(rawData, path);
-      moduleDatabases[code].v2Raw = rawData;
+      assertUniqueQuestionIds(v2Data, path);
+      moduleDatabases[code].v2Raw = v2Data;
     } else {
       console.warn(`Missing meta or moduleCode in v2 JSON: ${path}`);
     }
@@ -651,10 +658,24 @@ async function loadAllModules(): Promise<void> {
 }
 }
 
+const correctionSourceVersions = new Map<string,string>();
+export let correctionRevision = 0;
+export let correctionStatus: 'loading'|'ready'|'unavailable' = 'loading';
+export async function refreshQuestionCorrections() {
+  if(import.meta.env.MODE === 'test') { correctionStatus='ready'; return; }
+  try {
+    const response=await fetch('/api/question-bank?action=published',{signal:AbortSignal.timeout(8000),cache:'no-store'});
+    if(!response.ok)throw new Error('Corrections unavailable');
+    const data=await response.json();if(!Array.isArray(data.edits))throw new Error('Invalid corrections');
+    await applyPublishedEdits(moduleDatabases,data.edits,correctionSourceVersions);correctionRevision++;correctionStatus='ready';
+  }catch { correctionStatus='unavailable'; }
+  window.dispatchEvent(new Event('asu-corrections-status'));
+}
+
 export async function ensureDataLoaded(): Promise<void> {
   if (Object.keys(moduleDatabases).length > 0) return Promise.resolve();
   if (!loadPromise) {
-    loadPromise = loadAllModules();
+    loadPromise = loadAllModules().then(refreshQuestionCorrections);
   }
   return loadPromise;
 }
@@ -878,6 +899,7 @@ export function getChaptersForModuleAndMode(
 
       return {
         id: ch.id ?? 0,
+        bankSection: ch.bankSection,
         title: ch.title || '',
         subtitle: ch.subtitle || ch.title || '',
         emoji: ch.emoji || '🧠',

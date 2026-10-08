@@ -21,12 +21,17 @@ const STORAGE_KEYS = [
 ];
 
 export function useCloudSync() {
-  const { getToken, isSignedIn } = useAuth();
+  const { getToken, isSignedIn, userId } = useAuth();
   const isSyncing = useRef(false);
   const isDirtyRef = useRef(false);
   // Track the last-synced value of each key to compute deltas
   const lastSyncedRef = useRef<Record<string, string>>({});
   const getTokenRef = useRef(getToken);
+
+  useEffect(() => {
+    lastSyncedRef.current = {};
+    isDirtyRef.current = false;
+  }, [userId]);
 
   useEffect(() => {
     getTokenRef.current = getToken;
@@ -64,7 +69,7 @@ export function useCloudSync() {
       if (typeof window !== 'undefined') {
         for (let i = 0; i < localStorage.length; i++) {
           const key = localStorage.key(i);
-          if (key && (key.startsWith('asu_study_tracker_') || key.startsWith('asu_quiz_session:'))) {
+          if (key && (key.startsWith('asu_study_tracker_') || (userId ? key.startsWith(`asu_quiz_session:${userId}:`) : key.startsWith('asu_quiz_session:')) || (userId && key === `asu_preferences:${userId}:shuffle`))) {
             const val = localStorage.getItem(key);
             if (val) {
               currentKeys.add(key);
@@ -132,7 +137,7 @@ export function useCloudSync() {
         pushData();
       }
     }
-  }, [isSignedIn]);
+  }, [isSignedIn, userId]);
 
   useEffect(() => {
     if (!isSignedIn) return;
@@ -155,12 +160,14 @@ export function useCloudSync() {
         if (data && isMounted) {
           let hasChanges = false;
           Object.entries(data).forEach(([key, cloudValAny]) => {
+            if (key.startsWith('asu_preferences:') && key !== `asu_preferences:${userId}:shuffle`) return;
+            if (userId && key.startsWith('asu_quiz_session:') && !key.startsWith(`asu_quiz_session:${userId}:`)) return;
             if (cloudValAny !== undefined && cloudValAny !== null) {
               const cloudVal = typeof cloudValAny === 'string' ? cloudValAny : JSON.stringify(cloudValAny);
               const localVal = localStorage.getItem(key);
 
               let shouldOverwrite = false;
-              if (key.startsWith('asu_quiz_session:')) {
+              if (key.startsWith('asu_quiz_session:') || key === `asu_preferences:${userId}:shuffle`) {
                 try {
                   const cloudObj = typeof cloudValAny === 'string' ? JSON.parse(cloudValAny) : cloudValAny;
                   const localObj = localVal ? JSON.parse(localVal) : null;
@@ -200,7 +207,7 @@ export function useCloudSync() {
     return () => {
       isMounted = false;
     };
-  }, [isSignedIn]);
+  }, [isSignedIn, userId]);
 
   useEffect(() => {
     if (!isSignedIn) return;

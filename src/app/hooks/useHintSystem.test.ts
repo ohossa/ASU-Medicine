@@ -1,4 +1,4 @@
-import { describe, it, expect, vi, beforeEach } from 'vitest';
+import { describe, it, expect, vi, beforeEach, afterEach } from 'vitest';
 import { renderHook, act, waitFor } from '@testing-library/react';
 import { useHintSystem } from './useHintSystem';
 
@@ -7,7 +7,11 @@ describe('useHintSystem (chat interface)', () => {
 
   beforeEach(() => {
     fetchMock = vi.fn();
-    global.fetch = fetchMock;
+    vi.stubGlobal('fetch', fetchMock);
+  });
+
+  afterEach(() => {
+    vi.unstubAllGlobals();
   });
 
   interface MakeProps {
@@ -19,8 +23,9 @@ describe('useHintSystem (chat interface)', () => {
     enabled?: boolean;
   }
 
-  const makeProps = (overrides: Partial<MakeProps> = {}) => ({
+  const makeProps = (overrides: Partial<MakeProps> = {}): MakeProps => ({
     question: {
+      lecture: 1,
       id: 1,
       text: 'What is CN VI?',
       type: 'mcq',
@@ -55,6 +60,18 @@ describe('useHintSystem (chat interface)', () => {
     expect(result.current.messages[0].content).toBe('What hint can you give me?');
     expect(result.current.messages[1].role).toBe('assistant');
     expect(result.current.messages[1].content).toBe('Think about eye abduction.');
+  });
+
+  it('uses a text fallback when the API text is not a string', async () => {
+    fetchMock.mockResolvedValueOnce({
+      ok: true,
+      json: async () => ({ text: { unexpected: true } }),
+    });
+    const { result } = renderHook(() => useHintSystem(makeProps()));
+    await act(async () => {
+      await result.current.sendMessage('Hello');
+    });
+    expect(result.current.messages[1].content).toBe('No response.');
   });
 
   it('does nothing when sending empty message', async () => {
@@ -203,6 +220,7 @@ describe('useHintSystem (chat interface)', () => {
       useHintSystem(
         makeProps({
           question: {
+            lecture: 1,
             id: 'q1',
             text: 'Test question',
             type: 'mcq',
@@ -258,7 +276,7 @@ describe('useHintSystem (chat interface)', () => {
 
     const { result } = renderHook(() =>
       useHintSystem({
-        question: { id: 1, text: 'Simple question', type: 'mcq' },
+        question: { id: 1, text: 'Simple question', type: 'mcq', lecture: 1, subjectColor: 'clinical', explanation: '' },
         getToken: async () => 'token',
         enabled: true,
       })

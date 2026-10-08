@@ -1,0 +1,20 @@
+import {describe,it,expect,vi,afterEach} from 'vitest';
+import {render,screen,fireEvent,cleanup} from '@testing-library/react';
+import {celebrate} from '../lib/celebrate';
+import {ResultsDashboard} from './ResultsDashboard';
+import type {Question,ChapterData} from '../types';
+vi.mock('../hooks/useLanguage',()=>({useLanguage:()=>({language:'en'})}));
+vi.mock('../hooks/useTheme',()=>({useTheme:()=>({theme:'dark'})}));
+vi.mock('../hooks/useProgress',()=>({useProgress:()=>({unlock:vi.fn()})}));
+vi.mock('../lib/celebrate',()=>({celebrate:vi.fn()}));
+vi.mock('../lib/pulseEngine',()=>({pulse:{setMood:vi.fn()}}));
+vi.mock('../reports/ReportQuestion',()=>({ReportQuestionButton:()=>null}));
+const q:Question={id:'q',lecture:1,type:'mcq',text:'Question?',options:['A','B'],correctIndex:0,explanation:'',subjectColor:'anatomy'};
+const chapter:ChapterData={id:1,title:'Anatomy',subtitle:'',emoji:'',page:1,lectureRange:'',accentColor:'anatomy',subjects:[]};
+const props={chapter,subject:null,questions:[q],answers:{0:1},elapsedSeconds:10,flaggedQuestions:new Set<number>(),onRetake:vi.fn(),onTryAnotherSubject:vi.fn(),onBackToChapters:vi.fn(),onBackToSubjects:vi.fn()};
+afterEach(()=>{cleanup();vi.clearAllMocks();});
+describe('results missed-question action',()=>{
+ it('does not celebrate a history whose questions were all withdrawn',()=>{render(<ResultsDashboard {...props} questions={[]} answers={{}}/>);expect(celebrate).not.toHaveBeenCalled();});
+ it('passes only missed questions to a fresh practice callback',()=>{const retry=vi.fn();render(<ResultsDashboard {...props} onRetryMissed={retry}/>);fireEvent.click(screen.getByRole('button',{name:/Retry missed questions.*1/i}));expect(retry).toHaveBeenCalledExactlyOnceWith([q]);});
+ it('does not offer an empty retry when all answers are correct',()=>{render(<ResultsDashboard {...props} answers={{0:0}} onRetryMissed={vi.fn()}/>);expect(screen.queryByRole('button',{name:/Retry missed questions/i})).not.toBeInTheDocument();});
+});

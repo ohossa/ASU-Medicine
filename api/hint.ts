@@ -19,7 +19,7 @@
 
 import { verifyToken } from '@clerk/backend';
 import { Redis as UpstashRedis } from '@upstash/redis';
-import ioredis from 'ioredis';
+import { Redis as ioredis } from 'ioredis';
 
 /* ─── types ─── */
 
@@ -49,6 +49,16 @@ export interface HintResponse {
 
 interface AIAdapter {
   generateHint(req: HintRequest): Promise<HintResponse>;
+}
+
+/** Provider responses are external data; only a string at the expected path is usable. */
+export function providerText(data: unknown, path: readonly (string | number)[]): string {
+  let value = data;
+  for (const key of path) {
+    if (value === null || typeof value !== 'object') return '';
+    value = (value as Record<string | number, unknown>)[key];
+  }
+  return typeof value === 'string' ? value.trim() : '';
 }
 
 /* ─── adapters ─── */
@@ -180,8 +190,8 @@ class OpenAIAdapter implements AIAdapter {
       throw new Error(`OpenAI-compatible API error: ${res.status} ${err}`);
     }
 
-    const data = await res.json();
-    const text = data.choices?.[0]?.message?.content?.trim() ?? '';
+    const data: unknown = await res.json();
+    const text = providerText(data, ['choices', 0, 'message', 'content']);
     return { text, source: 'openai' };
   }
 }
@@ -234,8 +244,8 @@ class GoogleGenAIAdapter implements AIAdapter {
       throw new Error(`Google GenAI error: ${res.status} ${err}`);
     }
 
-    const data = await res.json();
-    const text = data.candidates?.[0]?.content?.parts?.[0]?.text?.trim() ?? '';
+    const data: unknown = await res.json();
+    const text = providerText(data, ['candidates', 0, 'content', 'parts', 0, 'text']);
     return { text, source: 'google' };
   }
 }
@@ -285,8 +295,8 @@ class NVIDIAAdapter implements AIAdapter {
       throw new Error(`NVIDIA API error: ${res.status} ${err}`);
     }
 
-    const data = await res.json();
-    const text = data.choices?.[0]?.message?.content?.trim() ?? '';
+    const data: unknown = await res.json();
+    const text = providerText(data, ['choices', 0, 'message', 'content']);
     return { text, source: 'nvidia' };
   }
 }

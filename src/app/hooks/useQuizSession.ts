@@ -5,6 +5,8 @@ import type { QuizAnswer } from '../types';
 import type { TimerMode } from '../components/TimerSettingsPanel';
 
 export interface QuizSessionSave {
+  questionVersions?: string[];
+  questionIds?: Array<string | number>;
   chapterId: number;
   subjectName: string;
   current: number;
@@ -41,7 +43,7 @@ function cleanAnswers(answers: Record<number, QuizAnswer>): Record<number, QuizA
         } as QuizAnswer;
       } else {
         // Check if it's a case study answer record containing sub-answers
-        const cleanedSub: Record<string, any> = {};
+        const cleanedSub: Record<string, unknown> = {};
         let isCase = false;
         for (const [subKey, subVal] of Object.entries(val)) {
           if (subVal && typeof subVal === 'object' && 'text' in subVal && 'selfGrade' in subVal) {

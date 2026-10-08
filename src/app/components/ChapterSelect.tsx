@@ -1,3 +1,4 @@
+import { ShuffleSwitch } from '../preferences/ShuffleSwitch';
 import React, { useState, useEffect, useMemo } from 'react';
 import { useNavigate, useParams } from 'react-router';
 import { GraduationCap, Layers, ArrowRight, Palette, Clock, Award, Trash2, ArrowLeft, Calendar, ChevronRight } from 'lucide-react';
@@ -507,6 +508,7 @@ export function ChapterSelect({
               ))}
             </ol>
 
+            <ShuffleSwitch />
             {userButton && <div className="shrink-0">{userButton}</div>}
           </nav>
 

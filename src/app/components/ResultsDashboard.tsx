@@ -1,5 +1,8 @@
+import { ReportQuestionButton } from '../reports/ReportQuestion';
 import React, { useState, useEffect } from 'react';
+import { getMissedQuestions } from '../utils/missedQuestions';
 import { checkAnswerCorrect } from '../utils/quiz';
+import { FlowBreadcrumbs, type FlowCrumb } from './FlowBreadcrumbs';
 import { norm } from '../utils/string';
 import {
   ArrowLeft,
@@ -18,7 +21,7 @@ import {
   LayoutGrid,
 } from 'lucide-react';
 import type { ChapterData, SubjectData, Question, SubjectColor, QuizAnswer, SubQuestion } from '../types';
-import { subjectStyles, formatTime } from '../types';
+import { subjectStyles, formatTime, asEssayAnswer, asFillBlankAnswer, asMatchingAnswer, asCaseAnswer, isAnswerRecord } from '../types';
 import { useLanguage } from '../hooks/useLanguage';
 import { useTheme } from '../hooks/useTheme';
 import { celebrate } from '../lib/celebrate';
@@ -26,6 +29,10 @@ import { pulse } from '../lib/pulseEngine';
 import { FormattedAnswer } from './FormattedAnswer';
 import { useProgress } from '../hooks/useProgress';
 import { MatchingQuestion } from './MatchingQuestion';
+
+function legacyText(question: Question, key: string): string | undefined {
+  return isAnswerRecord(question) && typeof question[key] === 'string' ? question[key] : undefined;
+}
 
 interface Props {
   chapter: ChapterData;
@@ -35,10 +42,12 @@ interface Props {
   elapsedSeconds: number;
   flaggedQuestions: Set<number>;
   onRetake: () => void;
+  onRetryMissed?: (questions: Question[]) => void;
   onTryAnotherSubject: () => void;
   onBackToChapters: () => void;
   onBackToSubjects: () => void;
   userButton?: React.ReactNode;
+  breadcrumbPath?: FlowCrumb[];
 }
 
 /* ------------------------------ Helper logic ------------------------------ */
@@ -61,7 +70,7 @@ function getPerformanceBadge(pct: number): string {
 }
 
 /* Checks a single fill-blank slot */
-function isBlankCorrect(q: Question, inputs: string[], i: number): boolean {
+function isBlankCorrect(q: Pick<Question, 'blanks' | 'acceptedAnswers'>, inputs: string[], i: number): boolean {
   const user = norm(inputs[i]);
   if (!user) return false;
   const alternatives = ((q.acceptedAnswers ?? [])[i] ?? []).map(norm);
@@ -221,10 +230,12 @@ export function ResultsDashboard({
   elapsedSeconds,
   flaggedQuestions,
   onRetake,
+  onRetryMissed,
   onTryAnotherSubject,
   onBackToChapters,
   onBackToSubjects,
   userButton,
+  breadcrumbPath,
 }: Props) {
   const { language } = useLanguage();
   const isRTL = language === 'ar';
@@ -242,6 +253,7 @@ export function ResultsDashboard({
   const totalCount = questions.length;
   const percentage = totalCount > 0 ? Math.round((correctCount / totalCount) * 100) : 0;
   const wrongCount = totalCount - correctCount;
+  const missedQuestions = getMissedQuestions(questions, answers);
   const flaggedCount = flaggedQuestions.size;
   const avgSeconds = totalCount > 0 ? Math.round(elapsedSeconds / totalCount) : 0;
 
@@ -258,6 +270,7 @@ export function ResultsDashboard({
 
   /* Confetti celebration */
   useEffect(() => {
+    if (totalCount === 0) return;
     const moduleCode = subject?.id ?? 'default';
     const isPerfect = correctCount === totalCount;
     celebrate({ perfect: isPerfect, moduleCode });
@@ -319,14 +332,16 @@ export function ResultsDashboard({
   );
 
   const renderEssay = (q: Question, ans: QuizAnswer) => {
-    const selfGrade = ans?.selfGrade;
+    const essay = asEssayAnswer(ans);
+    const selfGrade = essay?.selfGrade;
+    const draft = isAnswerRecord(ans) && typeof ans.draft === 'string' ? ans.draft : '';
     return (
       <div className="mt-4 space-y-4">
         <div>
           <p className="mb-1.5 text-xs font-semibold uppercase tracking-widest text-gray-400 dark:text-white/40">Your Answer</p>
           <textarea
             readOnly
-            value={ans?.text ?? ans?.draft ?? ''}
+            value={essay?.text ?? (typeof ans === 'string' ? ans : draft)}
             rows={5}
             className="w-full resize-none rounded-xl border border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-black/30 p-4 text-sm leading-relaxed text-gray-800 dark:text-white/80 outline-none"
           />
@@ -354,7 +369,7 @@ export function ResultsDashboard({
   };
 
   const renderFillBlank = (q: Question, ans: QuizAnswer) => {
-    const inputs: string[] = ans?.inputs ?? [];
+    const inputs: string[] = asFillBlankAnswer(ans)?.inputs ?? [];
     const blanks: string[] = q.blanks ?? [];
     const parts = (q.text ?? '').split('___');
 
@@ -405,8 +420,8 @@ export function ResultsDashboard({
       <div className="mt-4">
         <MatchingQuestion
           pairs={q.pairs ?? []}
-          scrambled={ans?.scrambled ?? []}
-          matches={ans?.matches ?? {}}
+          scrambled={asMatchingAnswer(ans)?.scrambled ?? []}
+          matches={asMatchingAnswer(ans)?.matches ?? {}}
           submitted
           disabled
           onChange={() => {}}
@@ -436,23 +451,25 @@ export function ResultsDashboard({
 
   const renderCase = (q: Question, ans: QuizAnswer) => (
     <div className="mt-4 space-y-4">
-      {(q.caseText ?? q.description ?? q.text) && (
+      {(legacyText(q, 'caseText') ?? legacyText(q, 'description') ?? q.text) && (
         <div className="rounded-xl border border-sky-500/20 bg-sky-500/[0.03] dark:bg-sky-500/[0.05] p-4 text-start">
           <p className="mb-2 flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-sky-600 dark:text-sky-300">
             <Activity size={14} /> {getSubjectCaseLabel(q.subjectColor)}
           </p>
-          <p className="text-sm leading-relaxed text-gray-700 dark:text-white/75">{q.caseText ?? q.description ?? q.text}</p>
+          <p className="text-sm leading-relaxed text-gray-700 dark:text-white/75">{legacyText(q, 'caseText') ?? legacyText(q, 'description') ?? q.text}</p>
         </div>
       )}
       {(q.subQuestions ?? []).map((sq: SubQuestion, si: number) => {
-        const userAns = ans?.[sq.id];
+        const userAns = asCaseAnswer(ans)?.[sq.id];
+        const subEssay = asEssayAnswer(userAns);
+        const subInputs = asFillBlankAnswer(userAns)?.inputs ?? [];
         const isSubMcq = sq.type === 'mcq';
         const isSubFill = sq.type === 'fillblank';
         const subCorrect = isSubFill
           ? checkAnswerCorrect(sq, userAns)
           : isSubMcq
             ? userAns === sq.correctIndex
-            : userAns?.selfGrade === 'correct';
+            : subEssay?.selfGrade === 'correct';
         return (
           <div key={si} className="rounded-xl border border-gray-200 dark:border-white/[0.07] bg-gray-50/30 dark:bg-white/[0.02] p-4 text-start">
             <div className="mb-3 flex items-start justify-between gap-3">
@@ -477,12 +494,12 @@ export function ResultsDashboard({
                     {pi < (sq.blanks ?? []).length && (
                       <span
                         className={`mx-1 inline-block rounded-lg border px-2.5 py-0.5 text-sm font-medium ${
-                          isBlankCorrect(sq, userAns?.inputs ?? [], pi)
+                          isBlankCorrect(sq, subInputs, pi)
                             ? 'border-emerald-500/50 bg-emerald-500/10 text-emerald-600 dark:text-emerald-400'
                             : 'border-rose-500/50 bg-rose-500/10 text-rose-600 dark:text-rose-400 line-through'
                         }`}
                       >
-                        {(userAns?.inputs ?? [])[pi]?.trim() || '—'}
+                        {(subInputs)[pi]?.trim() || '—'}
                       </span>
                     )}
                   </React.Fragment>
@@ -516,7 +533,7 @@ export function ResultsDashboard({
                 <div>
                   <p className="mb-1 text-[10px] font-bold uppercase tracking-wider text-gray-400 dark:text-white/40">Your Answer</p>
                   <p className="text-sm bg-gray-100/50 dark:bg-black/20 rounded-lg p-3 border border-gray-200 dark:border-white/[0.05] text-gray-800 dark:text-white/85 leading-relaxed whitespace-pre-wrap">
-                    {userAns?.text || 'No answer submitted'}
+                    {subEssay?.text || 'No answer submitted'}
                   </p>
                 </div>
                 {sq.modelAnswer && (
@@ -579,6 +596,9 @@ export function ResultsDashboard({
           </div>
           {userButton}
         </div>
+        {breadcrumbPath && <nav aria-label={isRTL ? 'مسار التنقل' : 'Breadcrumb'} className="mx-auto flex max-w-5xl px-4 pb-2 sm:px-6">
+          <FlowBreadcrumbs crumbs={breadcrumbPath} rtl={isRTL} />
+        </nav>}
       </header>
 
       <main className="relative mx-auto max-w-5xl px-4 py-10 sm:px-6">
@@ -624,6 +644,15 @@ export function ResultsDashboard({
 
         {/* ── Section C: Control Action Links ──────────────────────────────── */}
         <div className="mb-12 flex flex-wrap items-center justify-center gap-3">
+          {onRetryMissed && missedQuestions.length > 0 && <button
+            type="button"
+            onClick={() => onRetryMissed(missedQuestions)}
+            className="flex items-center gap-2 rounded-full border border-amber-400/30 bg-amber-500/10 px-6 py-3 text-sm font-semibold text-amber-700 dark:text-amber-300 shadow-lg shadow-amber-500/5 transition-all hover:bg-amber-500/20 hover:scale-[1.03] active:scale-[0.98] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-amber-400 cursor-pointer btn-press"
+          >
+            <RotateCcw size={15} aria-hidden="true"/>
+            {isRTL ? 'تدرب على الأسئلة الفائتة' : 'Retry missed questions'}
+            <span className="rounded-full bg-amber-500/15 px-2 py-0.5 tabular-nums">{missedQuestions.length}</span>
+          </button>}
           <button
             onClick={onRetake}
             className="flex items-center gap-2 rounded-full bg-physiology px-6 py-3 text-sm font-semibold text-white shadow-lg transition-all hover:bg-physiology-dark hover:scale-[1.03] active:scale-[0.98] cursor-pointer btn-press"
@@ -721,6 +750,7 @@ export function ResultsDashboard({
                 {/* Card header */}
                 <div className="mb-4 flex flex-wrap items-center gap-2.5">
                   <span className="text-sm font-semibold text-gray-900 dark:text-white/85">Question {i + 1}</span>
+                  <ReportQuestionButton question={q} chapterId={chapter.id}/>
                   <span className={`rounded-full border px-2.5 py-0.5 text-[11px] font-medium ${style.borderOp15} ${style.bgOp10} ${style.text}`}>
                     {subject?.name ?? 'General'}
                   </span>
@@ -740,7 +770,7 @@ export function ResultsDashboard({
                 </div>
 
                 {/* Question statement (with markdown table support) */}
-                {q.type !== 'fillblank' && <QuestionText text={q.text ?? q.question ?? ''} />}
+                {q.type !== 'fillblank' && <QuestionText text={q.text ?? legacyText(q, 'question') ?? ''} />}
 
                 {/* Answer review */}
                 {renderAnswerReview(q, ans)}

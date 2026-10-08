@@ -825,3 +825,31 @@
   }
 }
 
+
+/* Responsive study tools: let content fit rather than conceal clipping. */
+.case-solver-panel { overflow-wrap: anywhere; }
+.case-solver-panel :is(div, button, span) { min-width: 0; }
+.case-lab-heading, .case-lab-row { display: grid; grid-template-columns: minmax(0,1.3fr) minmax(0,1fr) minmax(0,1fr) auto; }
+.case-lab-report { border-left: 1px solid; padding-left: 24px; }
+.case-mobile-label { display: none; }
+@media (max-width: 639px) {
+  .quiz-header-actions .question-report-trigger { min-height: 44px; }
+  .quiz-header-actions { min-width: 0; }
+  .case-solver-panel .case-stage-card { padding: 18px !important; }
+  .case-lab-heading { display: none; }
+  .case-lab-row { grid-template-columns: minmax(0,1fr) auto; }
+  .case-lab-row > :first-child { grid-column: 1 / -1; }
+  .case-lab-row > :nth-child(2), .case-lab-row > :nth-child(3) { grid-column: 1; }
+  .case-lab-row > svg { grid-column: 2; grid-row: 2; }
+  .case-lab-report { border-left: 0; border-top: 1px solid; padding: 18px 0 0; }
+  .case-mobile-label { display: inline; font-weight: 600; }
+  /* Prevent Safari from zooming the whole page when a small field gets focus. */
+  :is(input, textarea, select):not([type="radio"]):not([type="checkbox"]) { font-size: 16px; max-width: 100%; }
+}
+@media (max-width: 639px) {
+  .quiz-header-actions .question-report-trigger { width: 44px; padding: 8px; }
+  .quiz-header-actions .question-report-trigger > span { display: none; }
+  .quiz-header-actions [role="switch"] { padding-inline: 8px; gap: 6px; }
+  .quiz-timer { min-height: 44px; padding-inline: 8px; }
+  .quiz-timer > svg { display: none; }
+}

@@ -98,7 +98,7 @@ describe('useQuizSession hook', () => {
       answers: {
         0: {
           'subq-1': 1, // MCQ sub-answer
-          'subq-2': { text: 'Some long essay answer in a case study...', selfGrade: 'incorrect' } // Case essay answer
+          'subq-2': { text: 'Some long essay answer in a case study...', selfGrade: 'incorrect' as const } // Case essay answer
         }
       },
       elapsedSeconds: 15,

@@ -3,7 +3,7 @@
 // Premium analytics dashboard (Light/Dark Mode responsive).
 
 import React, { useState } from "react";
-import { motion } from "motion/react";
+import { motion, type Variants } from "motion/react";
 import {
   Activity,
   Flame,
@@ -43,7 +43,7 @@ const container = {
   show: { transition: { staggerChildren: 0.08, delayChildren: 0.1 } },
 };
 
-const rise = {
+const rise: Variants = {
   hidden: { opacity: 0, y: 24 },
   show: {
     opacity: 1,
@@ -325,7 +325,7 @@ export function AnalyticsDashboard({
 
   const WEAK_AREAS = Object.entries(subjectMap).map(([name, data]) => {
     const accuracy = data.total > 0 ? Math.round((data.correct / data.total) * 100) : 0;
-    let tone = theme.green;
+    let tone: string = theme.green;
     let label = "Mastered";
     if (accuracy < 50) {
       tone = theme.red;

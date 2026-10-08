@@ -1,4 +1,4 @@
-import { ChevronRight } from 'lucide-react';
+import { ChevronRight, ArrowLeft } from 'lucide-react';
 import type { ReactNode } from 'react';
 import { useLanguage } from '../hooks/useLanguage';
 import { useUser } from '@clerk/clerk-react';
@@ -17,8 +17,10 @@ export function PortalShell({ crumbs, children, userButton, hideFooter }: { crum
     <div className="min-h-screen font-body bg-transparent text-zinc-900 dark:text-zinc-100 transition-colors duration-500 overflow-x-hidden">
       <header className="sticky top-0 z-50 border-b border-zinc-200/60 dark:border-white/[0.06] bg-white/70 dark:bg-[#0a0a0a]/70 backdrop-blur-xl">
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 lg:px-8 relative">
-          <div className="flex flex-col items-center justify-center text-center">
-            <span className="font-heading font-black tracking-tight text-[15px] leading-tight">
+          <div className="flex min-w-0 items-center gap-2">
+            {crumbs[0]?.onClick && <button type="button" onClick={crumbs[0].onClick} aria-label={`Back to ${crumbs[0].label}`} className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-border md:hidden"><ArrowLeft size={18}/></button>}
+            <div className="flex min-w-0 flex-col items-center justify-center text-center">
+            <span className="font-heading font-black tracking-tight text-[13px] sm:text-[15px] leading-tight">
               ASU Medical Portal
             </span>
             <div className="h-[14px] flex items-center justify-center mt-0.5">
@@ -30,6 +32,7 @@ export function PortalShell({ crumbs, children, userButton, hideFooter }: { crum
             </div>
           </div>
           
+          </div>
           <nav className="hidden md:flex items-center gap-1.5 text-[13px] text-zinc-500 dark:text-zinc-400 rounded-full px-4 py-1.5 bg-zinc-100/60 dark:bg-white/[0.04] border border-zinc-200/50 dark:border-white/[0.05] backdrop-blur-md absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
             {crumbs.map((c, i) => (
               <span key={c.label} className="flex items-center gap-1.5">

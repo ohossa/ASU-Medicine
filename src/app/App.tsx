@@ -1,3 +1,11 @@
+import { restoreHistoryQuestions } from './utils/historyQuestions';
+import { useBankRevision } from './components/CorrectionStatus';
+import { useOwnerAccess } from './reports/useOwnerAccess';
+import { missedPracticeSubject } from './utils/missedQuestions';
+import { CorrectionStatus } from './components/CorrectionStatus';
+import { useShufflePreference } from './preferences/useShufflePreference';
+import { shuffledCopy, restoreQuestionOrder, sessionMatchesQuestions } from './preferences/shuffle';
+import { ReportProvider } from './reports/ReportQuestion';
 import { useState, useEffect, useRef, useMemo, Suspense, lazy, useLayoutEffect } from 'react';
 import { BrowserRouter, Routes, Route, Navigate, useParams, useNavigate, useLocation } from 'react-router';
 import safeStorage from './utils/safeStorage';
@@ -12,6 +20,7 @@ import { LanguageProfilePage } from './components/profile/LanguageProfilePage';
 import { AcademicYearProfilePage } from './components/profile/AcademicYearProfilePage';
 
 // Lazy-loaded components for routing/modals
+const AdminPortal = lazy(() => import('../pages/AdminPortal'));
 const Dashboard = lazy(() => import('../pages/Dashboard'));
 const YearModules = lazy(() => import('../pages/YearModules'));
 const StudyMode = lazy(() => import('../pages/StudyMode'));
@@ -42,7 +51,10 @@ import {
   Check,
   Home
 } from 'lucide-react';
-import type { ChapterData, SubjectData, Question, Screen, QuizAnswer } from './types';
+import { toGitTopicChapter } from './lib/gitBank';
+import type { ChapterData, SubjectData, Question, Screen, QuizAnswer, QuestionCollection } from './types';
+import { normalizeQuizAnswers } from './types';
+const GitBankSelect = lazy(() => import('./components/GitBankSelect').then(m => ({ default: m.GitBankSelect })));
 const ChapterSelect = lazy(() => import('./components/ChapterSelect').then(m => ({ default: m.ChapterSelect })));
 const QuizInterface = lazy(() => import('./components/QuizInterface').then(m => ({ default: m.QuizInterface })));
 const ResultsDashboard = lazy(() => import('./components/ResultsDashboard').then(m => ({ default: m.ResultsDashboard })));
@@ -70,6 +82,7 @@ import { YearSelectionModal } from './components/YearSelectionModal';
 import {
   ensureDataLoaded,
   getChaptersForModuleAndMode,
+  findQuestionById,
   isModuleActive,
   SYLLABUS_MODULES
 } from './data';
@@ -121,6 +134,7 @@ function QuizFlowWrapper({
   handleFinishQuiz,
   resultPayload,
   handleRetake,
+  handleRetryMissed,
   handleBackToChapters,
   isFromHistory,
   setIsFromHistory,
@@ -146,6 +160,7 @@ function QuizFlowWrapper({
   handleFinishQuiz: (answers: Record<number, QuizAnswer>, elapsedSeconds: number, flaggedQuestions: Set<number>) => void;
   resultPayload: ResultPayload | null;
   handleRetake: () => void;
+  handleRetryMissed: (questions: Question[]) => void;
   handleBackToChapters: () => void;
   isFromHistory: boolean;
   setIsFromHistory: (b: boolean) => void;
@@ -154,6 +169,11 @@ function QuizFlowWrapper({
 }) {
   const navigate = useNavigate();
   const { code, mode } = useParams<{ code: string; mode: string }>();
+  const [gitCollection, setGitCollection] = useState<QuestionCollection>('practice');
+  useEffect(() => { setGitCollection('practice'); }, [code, mode]);
+  useEffect(() => {
+    if (selectedModule?.code === 'MGL-3' && screen !== 'chapters' && selectedChapter?.bankSection) setGitCollection(selectedChapter.bankSection);
+  }, [selectedModule?.code, selectedChapter, screen]);
 
   useEffect(() => {
     if (code) {
@@ -174,11 +194,33 @@ function QuizFlowWrapper({
     return <div>Loading module...</div>;
   }
 
+  const gitBaseCrumbs = [
+    { label: 'Portal', onClick: () => navigate('/') },
+    { label: 'Year 3', onClick: () => navigate('/year-3') },
+    { label: 'Semester 1', onClick: () => navigate('/year-3?semester=1') },
+    { label: 'GIT & Liver', onClick: () => navigate('/year-3/mgl-3') },
+    { label: studyModeNameMap[studyMode], onClick: () => { setGitCollection('practice'); setScreen('chapters'); } },
+  ];
+  const gitCollectionCrumbs = [
+    ...gitBaseCrumbs,
+    { label: 'Question bank', onClick: () => { setGitCollection('practice'); setScreen('chapters'); } },
+    ...(gitCollection === 'past-exams' ? [{ label: 'Past exams & recalls', onClick: () => { setGitCollection('past-exams'); setScreen('chapters'); } }] : []),
+  ];
+
   return (
     <>
       {screen === 'chapters' && (
         <Suspense fallback={<div>Loading...</div>}>
-          <ChapterSelect
+          {selectedModule.code === 'MGL-3' ? <GitBankSelect
+            chapters={activeChapters}
+            collection={gitCollection}
+            breadcrumbPath={gitBaseCrumbs}
+            onCollectionChange={setGitCollection}
+            studyModeName={studyModeNameMap[studyMode]}
+            onSelectChapter={handleSelectChapter}
+            userButton={customUserButton}
+            onBackToModeSelect={() => navigate('/year-3/mgl-3')}
+          /> : <ChapterSelect
             chapters={activeChapters}
             studyModeName={studyModeNameMap[studyMode]}
             moduleName={selectedModule.name}
@@ -196,7 +238,7 @@ function QuizFlowWrapper({
               { label: t(`year${selectedYear || 2}`) || `Year ${selectedYear || 2}`, onClick: () => navigate(`/year-${selectedYear || 2}`) },
               { label: selectedModule?.name || '' }
             ]}
-          />
+          />}
         </Suspense>
       )}
 
@@ -205,7 +247,7 @@ function QuizFlowWrapper({
           <SubjectSelect
             chapter={selectedChapter}
             moduleCode={selectedModule.code}
-            breadcrumbPath={[
+            breadcrumbPath={selectedModule.code === 'MGL-3' ? [...gitCollectionCrumbs, { label: selectedChapter.subjects[0]?.id ? selectedChapter.title.replace(/^Past exams — /, '') : selectedChapter.title }] : [
               { label: t('portal') || 'Portal', onClick: () => navigate('/') },
               { label: t(`year${selectedYear || 2}`) || `Year ${selectedYear || 2}`, onClick: () => navigate(`/year-${selectedYear || 2}`) },
               { label: selectedModule?.name || '', onClick: () => {
@@ -233,6 +275,11 @@ function QuizFlowWrapper({
             onFinish={handleFinishQuiz}
             userButton={customUserButton}
             savedSession={quizPayload.savedSession}
+            breadcrumbPath={selectedModule.code === 'MGL-3' ? [
+              ...gitCollectionCrumbs,
+              { label: quizPayload.chapter.title.replace(/^Past exams — /, ''), onClick: () => setScreen('subjects') },
+              { label: quizPayload.subject?.name ?? 'All topics' },
+            ] : undefined}
           />
         </Suspense>
       )}
@@ -247,10 +294,12 @@ function QuizFlowWrapper({
             elapsedSeconds={resultPayload.elapsedSeconds}
             flaggedQuestions={resultPayload.flaggedQuestions}
             onRetake={handleRetake}
+            onRetryMissed={handleRetryMissed}
             onTryAnotherSubject={() => {
               if (isFromHistory) {
                 setIsFromHistory(false);
                 setScreen(historySource === 'chapters' ? 'chapters' : 'history');
+                if (historySource !== 'chapters') navigate('/history');
               } else {
                 setScreen('subjects');
               }
@@ -260,11 +309,18 @@ function QuizFlowWrapper({
               if (isFromHistory) {
                 setIsFromHistory(false);
                 setScreen(historySource === 'chapters' ? 'chapters' : 'history');
+                if (historySource !== 'chapters') navigate('/history');
               } else {
                 setScreen('subjects');
               }
             }}
             userButton={customUserButton}
+            breadcrumbPath={selectedModule.code === 'MGL-3' ? [
+              ...gitCollectionCrumbs,
+              { label: resultPayload.chapter.title.replace(/^Past exams — /, ''), onClick: () => setScreen('subjects') },
+              { label: resultPayload.subject?.name ?? 'All topics', onClick: () => setScreen('subjects') },
+              { label: 'Results' },
+            ] : undefined}
           />
         </Suspense>
       )}
@@ -273,12 +329,15 @@ function QuizFlowWrapper({
 }
 
 function MainApp() {
+  const hasOwnerAccess = useOwnerAccess();
+  const bankRevision = useBankRevision();
   const transitionTo = useViewTransition();
   const { t, language, toggleLanguage } = useLanguage();
   const { user } = useUser();
+  const { enabled: shuffleEnabled } = useShufflePreference();
+  const prepareQuestions = (questions: Question[]) => shuffleEnabled ? shuffledCopy(questions) : [...questions];
   useTheme();
   const navigate = useNavigate();
-  const params = useParams();
   const location = useLocation();
   
   // Initialize automatic cloud synchronization
@@ -322,7 +381,7 @@ function MainApp() {
   // Student Year tracking
   const [studentYear, setStudentYear] = useState<number | null>(() => {
     try {
-      const saved = safeStorage.getItem('asu_medical_student_year');
+      const saved = safeStorage.getItem<string | null>('asu_medical_student_year', null);
       return saved ? parseInt(saved, 10) : null;
     } catch {
       return null;
@@ -332,7 +391,7 @@ function MainApp() {
   // Navigation states
   const [screen, setScreen] = useState<Screen>(() => {
     try {
-      const saved = safeStorage.getItem('asu_portal_screen');
+      const saved = safeStorage.getItem<string | null>('asu_portal_screen', null);
       if (saved) {
         if (saved === 'quiz' || saved === 'results') return 'chapters';
         return saved as Screen;
@@ -343,16 +402,16 @@ function MainApp() {
   const [isFromHistory, setIsFromHistory] = useState(false);
   const [historySource, setHistorySource] = useState<'chapters' | 'history' | null>(null);
   const [selectedYear, setSelectedYear] = useState<number | null>(() => {
-    try { const saved = safeStorage.getItem('asu_portal_year'); return saved ? Number(saved) : null; } catch { return null; }
+    try { const saved = safeStorage.getItem<string | null>('asu_portal_year', null); return saved ? Number(saved) : null; } catch { return null; }
   });
   const [selectedSemester, setSelectedSemester] = useState<number | null>(() => {
-    try { const saved = safeStorage.getItem('asu_portal_semester'); return saved ? Number(saved) : null; } catch { return null; }
+    try { const saved = safeStorage.getItem<string | null>('asu_portal_semester', null); return saved ? Number(saved) : null; } catch { return null; }
   });
   const [selectedModule, setSelectedModule] = useState<ModuleInfo | null>(() => {
-    try { const saved = safeStorage.getItem('asu_portal_module'); return saved ? JSON.parse(saved) : null; } catch { return null; }
+    try { const saved = safeStorage.getItem<string | null>('asu_portal_module', null); return saved ? JSON.parse(saved) : null; } catch { return null; }
   });
   const [studyMode, setStudyMode] = useState<'mcq' | 'essay' | 'mixed' | null>(() => {
-    try { const saved = safeStorage.getItem('asu_portal_studyMode'); return (saved as 'mcq' | 'essay' | 'mixed') || null; } catch { return null; }
+    try { const saved = safeStorage.getItem<string | null>('asu_portal_studyMode', null); return (saved as 'mcq' | 'essay' | 'mixed') || null; } catch { return null; }
   });
 
   const [showTrackerSelector, setShowTrackerSelector] = useState(false);
@@ -368,6 +427,7 @@ function MainApp() {
 
   const transformedChapter = useMemo(() => {
     if (!selectedChapter) return null;
+    if (selectedModule?.code === 'MGL-3') return toGitTopicChapter(selectedChapter);
     const isMINF = selectedModule?.code === 'MINF-1';
     const isMSS = selectedModule?.code === 'MSS-2' && selectedChapter.id >= 1 && selectedChapter.id <= 8;
     if (!isMINF && !isMSS) {
@@ -405,7 +465,7 @@ function MainApp() {
 
 
   // Cloud sync/session hooks
-  const { load: loadQuizSession, clear: clearQuizSession, loadAnyForChapter } = useQuizSession();
+  const { load: loadQuizSession, clear: clearQuizSession } = useQuizSession();
   const isRestoringHistoryRef = useRef(false);
 
   // ── 2. Helpers and Data Functions ─────────────────────────────────────────────
@@ -456,7 +516,7 @@ function MainApp() {
   useEffect(() => {
     const handleStorage = () => {
       try {
-        const saved = safeStorage.getItem('asu_medical_student_year');
+        const saved = safeStorage.getItem<string | null>('asu_medical_student_year', null);
         if (saved) {
           setStudentYear(parseInt(saved, 10));
         }
@@ -599,24 +659,24 @@ function MainApp() {
 
   const handleSelectSubject = (subject: SubjectData, questions: Question[]) => {
     const saved = loadQuizSession(transformedChapter!.id, subject.name);
-    if (saved && !saved.finished) {
+    if (saved && !saved.finished && (saved.questionIds ? sessionMatchesQuestions(questions, saved) : selectedModule?.code !== 'MGL-3')) {
       setResumePayload(saved);
       return;
     }
     transitionTo(() => {
-      setQuizPayload({ chapter: transformedChapter!, subject, questions });
+      setQuizPayload({ chapter: transformedChapter!, subject, questions: prepareQuestions(questions) });
       setScreen('quiz');
     });
   };
 
   const handleQuickStart = (questions: Question[]) => {
     const saved = loadQuizSession(transformedChapter!.id, 'all');
-    if (saved && !saved.finished) {
+    if (saved && !saved.finished && (saved.questionIds ? sessionMatchesQuestions(questions, saved) : selectedModule?.code !== 'MGL-3')) {
       setResumePayload(saved);
       return;
     }
     transitionTo(() => {
-      setQuizPayload({ chapter: transformedChapter!, subject: null, questions });
+      setQuizPayload({ chapter: transformedChapter!, subject: null, questions: prepareQuestions(questions) });
       setScreen('quiz');
     });
   };
@@ -635,9 +695,7 @@ function MainApp() {
           q.subQuestions.forEach((subQ) => {
             const subAns = (ans as Record<string, unknown>)[subQ.id];
             if (subAns !== undefined) {
-              const isSubCorrect = subQ.type === 'mcq'
-                ? subAns === subQ.correctIndex
-                : subAns?.selfGrade === 'correct';
+              const isSubCorrect = checkAnswerCorrect(subQ, subAns);
               if (isSubCorrect) correct++;
             }
           });
@@ -653,8 +711,8 @@ function MainApp() {
     setIsFromHistory(false);
     saveQuizResult({
       moduleCode: selectedModule?.code,
-      year: selectedYear,
-      semester: selectedSemester,
+      year: selectedYear ?? undefined,
+      semester: selectedSemester ?? undefined,
       chapterId: quizPayload!.chapter.id,
       chapterTitle: quizPayload!.chapter.title,
       subjectName: quizPayload!.subject?.name ?? 'All Subjects',
@@ -689,32 +747,30 @@ function MainApp() {
     const sem = result.semester || 2;
 
     const moduleChapters = getChaptersForModuleAndMode(modCode, 'mixed');
-    const chapter = moduleChapters.find((c) => String(c.id) === String(result.chapterId));
-    if (!chapter) return;
+    const storedChapter = moduleChapters.find((c) => String(c.id) === String(result.chapterId));
+    if (!storedChapter) return;
+    const chapter = result.moduleCode === 'MGL-3' ? toGitTopicChapter(storedChapter) : storedChapter;
 
-    const subject = chapter.subjects.find((s) => s.name === result.subjectName) || null;
+    let subject = chapter.subjects.find((s) => s.name === result.subjectName) || null;
 
     let questionsList: Question[] = [];
+    let answersRecord = result.answers || {};
+    let flaggedSet = new Set<number>((result.flaggedQuestionIds || []).map(Number));
     if (result.questionIds && Array.isArray(result.questionIds)) {
-      const allChapterQuestions = chapter.subjects.flatMap((s) => s.questions);
-      result.questionIds.forEach((id: string | number) => {
-        const found = allChapterQuestions.find((q) => String(q.id) === String(id));
-        if (found) {
-          questionsList.push(found);
-        }
-      });
+      const restored = restoreHistoryQuestions(result.questionIds,
+        chapter.subjects.flatMap(s => s.questions), answersRecord, result.flaggedQuestionIds || []);
+      questionsList = restored.questions;
+      answersRecord = restored.answers;
+      flaggedSet = restored.flags;
+    } else {
+      questionsList = subject ? subject.questions : chapter.subjects.flatMap(s => s.questions);
     }
 
-    if (questionsList.length === 0) {
-      if (subject) {
-        questionsList = subject.questions;
-      } else {
-        questionsList = chapter.subjects.flatMap((s) => s.questions);
-      }
+    if (result.subjectName.endsWith(' · Missed questions')) {
+      const originalName = result.subjectName.slice(0, -' · Missed questions'.length);
+      subject = missedPracticeSubject(chapter.subjects.find(s => s.name === originalName) ?? null, questionsList, chapter.accentColor);
     }
 
-    const answersRecord = result.answers || {};
-    const flaggedSet = new Set<number>(result.flaggedQuestionIds || []);
 
     // Try to locate the module definition
     let targetModule = SYLLABUS_MODULES[yr]?.[sem]?.find((m: ModuleInfo) => m.code === modCode) || null;
@@ -741,20 +797,37 @@ function MainApp() {
         chapter,
         subject,
         questions: questionsList,
-        answers: answersRecord,
+        answers: normalizeQuizAnswers(questionsList, answersRecord),
         elapsedSeconds: result.elapsedSeconds,
         flaggedQuestions: flaggedSet,
       });
       setIsFromHistory(true);
       setHistorySource(source);
       setScreen('results');
+      navigate(`/year-${yr}/${modCode.toLowerCase()}/mixed`);
+    });
+  };
+
+  const handleRetryMissed = (missed: Question[]) => {
+    if (!resultPayload || !missed.length) return;
+    const questions = prepareQuestions(missed);
+    const subject = missedPracticeSubject(resultPayload.subject, questions, resultPayload.chapter.accentColor);
+    clearQuizSession(resultPayload.chapter.id, subject.name);
+    clearLocalDrafts(resultPayload.chapter.id, subject.name);
+    transitionTo(() => {
+      setIsFromHistory(false);
+      setQuizPayload({chapter: resultPayload.chapter, subject, questions, savedSession: undefined});
+      setResultPayload(null);
+      setScreen('quiz');
     });
   };
 
   const handleRetake = () => {
     if (!quizPayload) return;
     transitionTo(() => {
-      setQuizPayload({ ...quizPayload, questions: quizPayload.questions });
+      clearQuizSession(quizPayload.chapter.id, quizPayload.subject?.name ?? 'all');
+      clearLocalDrafts(quizPayload.chapter.id, quizPayload.subject?.name ?? 'all');
+      setQuizPayload({ ...quizPayload, savedSession: undefined, questions: prepareQuestions(quizPayload.questions) });
       setScreen('quiz');
     });
   };
@@ -769,6 +842,7 @@ function MainApp() {
           setScreen('chapters');
         } else {
           setScreen('history');
+          navigate('/history');
         }
       } else {
         setSelectedChapter(null);
@@ -796,6 +870,11 @@ function MainApp() {
   };
 
   // Retrieve dynamically loaded chapters
+  useEffect(() => {
+    if (!bankRevision || !selectedModule || !studyMode) return;
+    setSelectedChapter(previous => previous ? getChaptersForModuleAndMode(selectedModule.code, studyMode).find(chapter => chapter.id === previous.id) ?? previous : null);
+  }, [bankRevision, selectedModule, studyMode]);
+
   const activeChapters = selectedModule && studyMode
     ? getChaptersForModuleAndMode(selectedModule.code, studyMode)
     : [];
@@ -844,6 +923,9 @@ function MainApp() {
       </UserButton.UserProfilePage>
 
       <UserButton.MenuItems>
+        {hasOwnerAccess && (
+          <UserButton.Action label="Admin portal" labelIcon={<Layers size={16}/>} onClick={() => navigate('/admin')}/>
+        )}
         <UserButton.Action
           label={language === 'en' ? "Dashboard" : "اللوحة الرئيسية"}
           labelIcon={<Home size={16} className="text-physiology" />}
@@ -889,7 +971,7 @@ function MainApp() {
         />
       </UserButton.MenuItems>
     </UserButton>
-  ), [language, transitionTo, navigate, setQuizPayload, setResultPayload, setShowPortalsModal, setShowSupportModal, studentYear, setStudentYear, setScreen, setSelectedYear, setSelectedSemester, setSelectedModule, setStudyMode, setSelectedChapter]);
+  ), [user, hasOwnerAccess, language, transitionTo, navigate, setQuizPayload, setResultPayload, setShowPortalsModal, setShowSupportModal, studentYear, setStudentYear, setScreen, setSelectedYear, setSelectedSemester, setSelectedModule, setStudyMode, setSelectedChapter]);
 
   return (
     <div className="min-h-screen text-gray-900 dark:text-gray-100 font-manrope selection:bg-physiology/20 selection:text-physiology-dark overflow-x-hidden">
@@ -957,6 +1039,7 @@ function MainApp() {
         </div>
 
         <AnimatePresence mode="wait">
+          <CorrectionStatus />
           <Routes location={location}>
             {/* Main Dashboard page */}
             <Route path="/" element={
@@ -990,6 +1073,7 @@ function MainApp() {
                       if (targetModule) {
                         setSelectedModule(targetModule);
                         setStudyMode(mode);
+                        if (targetModule.code === 'MGL-3') setSelectedChapter(null);
                         setScreen('chapters');
                         const match = location.pathname.match(/\/year-(\d+)/);
                         const yrMatch = match ? match[1] : yr;
@@ -1030,6 +1114,7 @@ function MainApp() {
                     handleFinishQuiz={handleFinishQuiz}
                     resultPayload={resultPayload}
                     handleRetake={handleRetake}
+                    handleRetryMissed={handleRetryMissed}
                     handleBackToChapters={handleBackToChapters}
                     isFromHistory={isFromHistory}
                     setIsFromHistory={setIsFromHistory}
@@ -1040,6 +1125,7 @@ function MainApp() {
               } />
             ))}
 
+            <Route path="/admin/*" element={<FeatureErrorBoundary name="AdminPortal"><Suspense fallback={<div role="status">Loading admin portal…</div>}><AdminPortal userButton={customUserButton}/></Suspense></FeatureErrorBoundary>} />
             {/* Tools pages */}
             <Route path="/history" element={
               <Suspense fallback={<div>Loading...</div>}>
@@ -1107,9 +1193,20 @@ function MainApp() {
                       questions: qs
                     });
                     setScreen('quiz');
-                    const match = location.pathname.match(/\/year-(\d+)/);
-                    const yr = match ? match[1] : '2';
-                    navigate(`/year-${yr}/${(code || 'mem-2').toLowerCase()}/mixed`);
+                    const found = qs[0] ? findQuestionById(qs[0].id) : null;
+                    if (!found) return;
+                    for (const [year, semesters] of Object.entries(SYLLABUS_MODULES)) {
+                      for (const [semester, modules] of Object.entries(semesters)) {
+                        const module = modules.find(m => m.code === found.moduleCode);
+                        if (!module) continue;
+                        setSelectedYear(Number(year));
+                        setSelectedSemester(Number(semester));
+                        setSelectedModule(module);
+                        setStudyMode('mixed');
+                        navigate(`/year-${year}/${module.code.toLowerCase()}/mixed`);
+                        return;
+                      }
+                    }
                   }}
                   userButton={customUserButton}
                 />
@@ -1143,7 +1240,7 @@ function MainApp() {
               const subject = transformedChapter.subjects.find(s => s.name === resumePayload.subjectName) || null;
               const questions = subject ? subject.questions : transformedChapter.subjects.flatMap(s => s.questions);
               transitionTo(() => {
-                setQuizPayload({ chapter: transformedChapter, subject, questions, savedSession: resumePayload });
+                setQuizPayload({ chapter: transformedChapter, subject, questions: resumePayload.questionIds ? restoreQuestionOrder(questions, resumePayload.questionIds)! : questions, savedSession: resumePayload });
                 setResumePayload(null);
                 setScreen('quiz');
               });
@@ -1155,7 +1252,7 @@ function MainApp() {
               const questions = subject ? subject.questions : transformedChapter.subjects.flatMap(s => s.questions);
               setResumePayload(null);
               transitionTo(() => {
-                setQuizPayload({ chapter: transformedChapter, subject, questions });
+                setQuizPayload({ chapter: transformedChapter, subject, questions: prepareQuestions(questions) });
                 setScreen('quiz');
               });
             }}
@@ -1557,7 +1654,7 @@ export default function App() {
 
           <SignedIn>
             <BrowserRouter>
-              <ProgressProvider>
+              <ReportProvider><ProgressProvider>
                 <MainApp />
                 {FX.DEFERRED_FX ? (
                   deferredMounted && (
@@ -1574,7 +1671,7 @@ export default function App() {
                     </Suspense>
                   )
                 )}
-              </ProgressProvider>
+              </ProgressProvider></ReportProvider>
             </BrowserRouter>
           </SignedIn>
           <SignedOut>

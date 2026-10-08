@@ -1,5 +1,7 @@
 {
-  "regions": ["iad1"],
+  "regions": [
+    "iad1"
+  ],
   "rewrites": [
     {
       "source": "/((?!api/).*)",
@@ -34,5 +36,15 @@
         }
       ]
     }
-  ]
+  ],
+  "functions": {
+    "api/question-reports.ts": {
+      "includeFiles": "src/imports/**/*.json",
+      "maxDuration": 30
+    },
+    "api/question-bank.ts": {
+      "includeFiles": "src/imports/**/*.json",
+      "maxDuration": 30
+    }
+  }
 }

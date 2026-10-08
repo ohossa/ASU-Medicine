@@ -10,6 +10,16 @@ interface HistoryScreenProps {
   userButton?: React.ReactNode;
 }
 
+export function getHistoryDate(result: QuizResult): Date | null {
+  const legacyTimestamp = 'timestamp' in result ? result.timestamp : undefined;
+  for (const value of [result.date, legacyTimestamp]) {
+    if ((typeof value !== 'string' && typeof value !== 'number') || value === '') continue;
+    const date = new Date(value);
+    if (Number.isFinite(date.getTime())) return date;
+  }
+  return null;
+}
+
 const isSameDay = (d1: Date, d2: Date) => 
   d1.getFullYear() === d2.getFullYear() &&
   d1.getMonth() === d2.getMonth() &&
@@ -42,9 +52,8 @@ export function HistoryScreen({ onBack, onSelectHistory, userButton }: HistorySc
 
   // Group history by relative day
   const groupedHistory = history.reduce((groups, item) => {
-    const d = new Date(item.date || item.timestamp || 0);
-    if (isNaN(d.getTime())) return groups; // skip invalid dates
-    const dayName = getRelativeDayName(d, language);
+    const d = getHistoryDate(item);
+    const dayName = d ? getRelativeDayName(d, language) : language === 'en' ? 'Unknown date' : 'تاريخ غير معروف';
     if (!groups[dayName]) groups[dayName] = [];
     groups[dayName].push(item);
     return groups;
@@ -120,8 +129,8 @@ export function HistoryScreen({ onBack, onSelectHistory, userButton }: HistorySc
                     const correct = r.correct || 0;
                     const total = r.total || 0;
                     const elapsed = r.elapsedSeconds || 0;
-                    const dateObj = new Date(r.date || r.timestamp || Date.now());
-                    const timeStr = isNaN(dateObj.getTime()) ? '' : dateObj.toLocaleTimeString(language === 'en' ? 'en-US' : 'ar-EG', { hour: 'numeric', minute: '2-digit' });
+                    const dateObj = getHistoryDate(r);
+                    const timeStr = dateObj === null ? '' : dateObj.toLocaleTimeString(language === 'en' ? 'en-US' : 'ar-EG', { hour: 'numeric', minute: '2-digit' });
 
                     const colorTheme = pct >= 80 ? 'physiology' : pct >= 50 ? 'biochem' : 'pathology';
                     const colorClasses = {

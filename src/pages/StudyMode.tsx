@@ -1,10 +1,10 @@
 import { useMemo } from 'react';
 import { useNavigate, useParams } from 'react-router';
 import {
-  ArrowRight, ArrowLeft, Activity, BookOpen, Layers, CalendarDays, ChevronRight,
+ ArrowLeft, Activity, BookOpen, Layers, CalendarDays, ChevronRight,
 } from 'lucide-react';
 import { PortalShell } from '../app/components/PortalShell';
-import { getModuleQuestionCounts, SYLLABUS_MODULES } from '../app/data';
+import { getModuleQuestionCounts } from '../app/data';
 import { CardShell, IconBadge } from '../components/cards/PremiumCards';
 import { motion } from 'motion/react';
 import { pageVariants } from '../app/lib/motion';
@@ -64,17 +64,6 @@ export default function StudyMode({ userButton, onStartStudyMode, onOpenSyllabus
     const match = moduleCode.match(/-(\d+)/);
     return match ? match[1] : '2';
   }, [yearId, moduleCode]);
-
-  // Find module details dynamically from database
-  const selectedModule = useMemo(() => {
-    for (const year of Object.values(SYLLABUS_MODULES)) {
-      for (const sem of Object.values(year)) {
-        const found = sem.find(m => m.code.toLowerCase() === moduleCode.toLowerCase());
-        if (found) return found;
-      }
-    }
-    return null;
-  }, [moduleCode]);
 
   const counts = useMemo(() => {
     return getModuleQuestionCounts(moduleCode);

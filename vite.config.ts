@@ -1,5 +1,7 @@
+import { localApi } from './server/local-api';
 import { VitePWA } from 'vite-plugin-pwa';
-import { defineConfig } from 'vite'
+import { defineConfig, type UserConfig, type Plugin } from 'vite'
+import type { InlineConfig } from 'vitest/node'
 import path from 'path'
 import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react'
@@ -7,7 +9,7 @@ import { visualizer } from 'rollup-plugin-visualizer'
 
 /// <reference types="vitest" />
 
-function figmaAssetResolver() {
+function figmaAssetResolver(): Plugin {
   return {
     name: 'figma-asset-resolver',
     resolveId(id) {
@@ -19,18 +21,13 @@ function figmaAssetResolver() {
   }
 }
 
-export default defineConfig({
+const config: UserConfig & { test: InlineConfig } = {
   base: process.env.VITE_BASE_PATH || '/',
-  server: {
-    proxy: {
-      '/api': {
-        target: 'http://localhost:3000',
-        changeOrigin: true,
-        ws: true,
-      },
-    },
+  esbuild: {
+    drop: process.env.NODE_ENV === 'production' ? ['console', 'debugger'] : [],
   },
   plugins: [
+    localApi(),
     figmaAssetResolver(),
     react(),
     tailwindcss(),
@@ -95,4 +92,6 @@ export default defineConfig({
       exclude: ['src/app/**/*.d.ts', 'node_modules/'],
     },
   },
-})
+}
+
+export default defineConfig(config)

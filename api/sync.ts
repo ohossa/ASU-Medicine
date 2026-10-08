@@ -1,7 +1,8 @@
 import { verifyToken } from '@clerk/backend';
 import { Redis as UpstashRedis } from '@upstash/redis';
-import ioredis from 'ioredis';
-import { compress, decompress } from 'lz-string';
+import { Redis as ioredis } from 'ioredis';
+import LZString from 'lz-string';
+const { compress, decompress } = LZString;
 
 // Support Vercel KV variables, standard Upstash variables, or parse REDIS_URL directly
 const kvUrl = process.env.KV_REST_API_URL || process.env.UPSTASH_REDIS_REST_URL || '';
@@ -65,7 +66,7 @@ if (redisUrl) {
     },
     set: async (key: string, value: any, opts?: { EX?: number }) => {
       if (opts?.EX) {
-        await restClient!.set(key, value, { EX: opts.EX });
+        await restClient!.set(key, value, { ex: opts.EX });
       } else {
         await restClient!.set(key, value);
       }
@@ -75,7 +76,7 @@ if (redisUrl) {
       let cursor = 0;
       do {
         const result = await restClient!.scan(cursor, { match: pattern, count: 100 });
-        cursor = result[0] as number;
+        cursor = Number(result[0]);
         keys.push(...(result[1] as string[]));
       } while (cursor !== 0);
       return keys;
@@ -105,6 +106,7 @@ export default async function handler(req: any, res: any) {
   res.setHeader('Content-Type', 'application/json');
   res.setHeader('X-Content-Type-Options', 'nosniff');
   res.setHeader('X-Frame-Options', 'DENY');
+  res.setHeader('Cache-Control', 'no-store');
 
   // Diagnostic Status Check
   const url = req.url || '';
@@ -136,6 +138,7 @@ export default async function handler(req: any, res: any) {
     try {
       verified = await verifyToken(token, {
         secretKey: process.env.CLERK_SECRET_KEY,
+        authorizedParties: (process.env.REPORT_ALLOWED_ORIGINS || 'https://asu.codes,https://www.asu.codes').split(',').map(s=>s.trim()).filter(Boolean),
       });
     } catch (err: any) {
       return res.status(401).json({ error: 'Unauthorized: Clerk verification failed', details: err.message });
@@ -146,6 +149,7 @@ export default async function handler(req: any, res: any) {
       return res.status(401).json({ error: 'Unauthorized: Invalid token claims' });
     }
 
+    if (!redisUrl && !(kvUrl && kvToken)) return res.status(503).json({error:'Cloud sync storage is not configured.'});
     const keyPrefix = `asu_data:${userId}:`;
 
     // 3. Handle GET Request
@@ -193,7 +197,7 @@ export default async function handler(req: any, res: any) {
         }
       }
 
-      if (!body || (typeof body === 'object' && Object.keys(body).length === 0)) {
+      if (!body || typeof body !== 'object' || Array.isArray(body) || Object.keys(body).length === 0) {
         return res.status(400).json({ error: 'Bad Request: Missing or empty JSON body', bodyType: typeof body });
       }
 
@@ -204,25 +208,20 @@ export default async function handler(req: any, res: any) {
       }
 
       try {
-        // Collect existing keys for this user
-        const existingKeys = await dbClient.scanKeys(`${keyPrefix}*`);
-        const incomingKeys = Object.keys(body);
-
-        // Delete keys that exist in Redis but are NOT in the incoming body
-        for (const fullKey of existingKeys) {
-          const strippedKey = fullKey.slice(keyPrefix.length);
-          if (!incomingKeys.includes(strippedKey)) {
-            await dbClient.del(fullKey);
-          }
-        }
-
-        // Upsert each incoming key with compression and 30-day TTL
+        // The browser sends a delta, not a complete account snapshot.
+        // Only explicit null values delete data; omitted keys stay untouched.
         for (const [strippedKey, value] of Object.entries(body)) {
+          if (strippedKey.startsWith('asu_preferences:') && strippedKey !== `asu_preferences:${userId}:shuffle`) continue;
+          if (strippedKey.startsWith('asu_quiz_session:') && !strippedKey.startsWith(`asu_quiz_session:${userId}:`)) continue;
           const fullKey = `${keyPrefix}${strippedKey}`;
-          const jsonStr = JSON.stringify(value);
-          const compressed = compress(jsonStr);
+          if (value === null) {
+            await dbClient.del(fullKey);
+            continue;
+          }
+          const compressed = compress(JSON.stringify(value));
           if (compressed) {
-            await setWithTTL(fullKey, compressed);
+            if (strippedKey === `asu_preferences:${userId}:shuffle`) await dbClient.set(fullKey, compressed);
+            else await setWithTTL(fullKey, compressed);
           }
         }
 
@@ -237,6 +236,6 @@ export default async function handler(req: any, res: any) {
     return res.status(405).json({ error: 'Method Not Allowed' });
   } catch (error: any) {
     console.error('API Error:', error);
-    return res.status(500).json({ error: 'Internal Server Error', message: error.message, stack: error.stack });
+    return res.status(500).json({ error: 'Internal Server Error', message: 'Please try again later.' });
   }
 }

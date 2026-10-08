@@ -1,5 +1,7 @@
+import { ShuffleSwitch } from '../preferences/ShuffleSwitch';
+import { ReportQuestionButton } from '../reports/ReportQuestion';
 import React, { useState, useEffect, useLayoutEffect, useRef } from 'react';
-import FocusTrap from 'focus-trap-react';
+import { FocusTrap } from 'focus-trap-react';
 import TimerSettingsPanel, { type TimerMode } from '../components/TimerSettingsPanel';
 import { motion, AnimatePresence } from 'motion/react';
 import { useAuth } from '@clerk/clerk-react';
@@ -25,9 +27,10 @@ import {
   Star
 } from 'lucide-react';
 import type { ChapterData, SubjectData, Question, SubjectColor, QuizAnswer } from '../types';
-import { subjectStyles, formatTime } from '../types';
+import { asEssayAnswer, asFillBlankAnswer, asMatchingAnswer, asCaseAnswer, subjectStyles, formatTime } from '../types';
 import { useLanguage } from '../hooks/useLanguage';
 
+import { type FlowCrumb } from './FlowBreadcrumbs';
 import { MatchingQuestion } from './MatchingQuestion';
 import { useQuizEngine } from '../hooks/useQuizEngine';
 import { useHintSystem } from '../hooks/useHintSystem';
@@ -41,6 +44,7 @@ interface Props {
   onBack: () => void;
   onFinish: (answers: Record<number, QuizAnswer>, elapsedSeconds: number, flaggedQuestions: Set<number>) => void;
   userButton?: React.ReactNode;
+  breadcrumbPath?: FlowCrumb[];
 }
 
 /* ----------------------------- Motion variants ----------------------------- */
@@ -58,12 +62,12 @@ const isAnswered = (q: Question, a: QuizAnswer | undefined): boolean => {
   switch (q.type) {
   case 'essay':
       return typeof a === 'object'
-        ? a.selfGrade !== undefined
+        ? asEssayAnswer(a)?.selfGrade !== undefined
         : typeof a === 'string' && a.trim().length > 0;
     case 'fillblank':
-      return typeof a === 'object' && a.submitted === true;
+      return asFillBlankAnswer(a)?.submitted === true;
     case 'matching':
-      return typeof a === 'object' && a.submitted === true;
+      return asMatchingAnswer(a)?.submitted === true;
     case 'casestudy':
     case 'case':
       return typeof a === 'object' && Object.keys(a).length > 0;
@@ -77,8 +81,8 @@ function getQuestionStatus(q: Question, ans: QuizAnswer | undefined): 'correct' 
   if (!answered) return 'unanswered';
 
   if (q.type === 'essay') {
-    if (ans?.selfGrade === 'correct') return 'correct';
-    if (ans?.selfGrade === 'incorrect') return 'incorrect';
+    if (asEssayAnswer(ans)?.selfGrade === 'correct') return 'correct';
+    if (asEssayAnswer(ans)?.selfGrade === 'incorrect') return 'incorrect';
     return 'pending';
   }
 
@@ -91,7 +95,7 @@ function getQuestionStatus(q: Question, ans: QuizAnswer | undefined): 'correct' 
     let hasAnsweredAny = false;
 
     for (const sq of subs) {
-      const subAns = ans?.[sq.id];
+      const subAns = asCaseAnswer(ans)?.[sq.id];
       if (subAns === undefined) {
         hasPending = true;
         continue;
@@ -102,13 +106,13 @@ function getQuestionStatus(q: Question, ans: QuizAnswer | undefined): 'correct' 
           hasIncorrect = true;
         }
       } else if (sq.type === 'fillblank') {
-        if (subAns?.submitted !== true) {
+        if (asFillBlankAnswer(subAns)?.submitted !== true) {
           hasPending = true;
         }
       } else {
-        const graded = typeof subAns === 'object' && subAns.selfGrade !== undefined;
+        const graded = asEssayAnswer(subAns)?.selfGrade !== undefined;
         if (graded) {
-          if (subAns.selfGrade === 'incorrect') {
+          if (asEssayAnswer(subAns)?.selfGrade === 'incorrect') {
             hasIncorrect = true;
           }
         } else {
@@ -192,7 +196,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
   const isCompleted = answered;
   const isCorrect = question ? (
     question.type === 'essay'
-      ? answers[current]?.selfGrade === 'correct'
+      ? asEssayAnswer(answers[current])?.selfGrade === 'correct'
       : question.type === 'case' || question.type === 'casestudy'
         ? getQuestionStatus(question, answers[current]) === 'correct'
         : checkAnswerCorrect(question, answers[current])
@@ -269,6 +273,8 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
   /* Auto-save quiz session (debounced 2s after last change) — essayDrafts stored separately via saveLocalDrafts */
   const quizDataRef = useRef({ current: 0, answers: {} as Record<number, QuizAnswer>, elapsedSeconds: 0, flagged: [] as number[], finished: false, timerMode: 'practice' as TimerMode, showEssayAnswer: false });
   const autoSaveTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const questionIds = React.useMemo(() => questions.map(question => question.id), [questions]);
+  const questionVersions = React.useMemo(() => questions.map(q => q.contentVersion ?? 'source'), [questions]);
   useLayoutEffect(() => {
     quizDataRef.current = { current, answers, elapsedSeconds: totalElapsed, flagged: [...flagged], finished, timerMode, showEssayAnswer };
   });
@@ -287,6 +293,8 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
         finished: d.finished,
         timerMode: d.timerMode,
         showEssayAnswer: d.showEssayAnswer,
+        questionIds,
+        questionVersions,
       });
     }, 2000);
     return () => {
@@ -304,13 +312,15 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
             finished: d.finished,
             timerMode: d.timerMode,
             showEssayAnswer: d.showEssayAnswer,
+            questionIds,
+            questionVersions,
           });
         }
       }
     };
-  }, [current, answers, flagged, timerMode, showEssayAnswer, chapter?.id, subject?.name, saveQuizSession]);
+  }, [current, answers, flagged, timerMode, showEssayAnswer, chapter?.id, subject?.name, saveQuizSession, questionIds, questionVersions]);
 
-  const handleBack = React.useCallback(() => {
+  const saveAndNavigate = React.useCallback((destination: () => void) => {
     if (autoSaveTimerRef.current) {
       clearTimeout(autoSaveTimerRef.current);
       autoSaveTimerRef.current = null;
@@ -327,10 +337,13 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
         finished: d.finished,
         timerMode: d.timerMode,
         showEssayAnswer: d.showEssayAnswer,
+        questionIds,
+        questionVersions,
       });
     }
-    onBack();
-  }, [chapter?.id, subject?.name, saveQuizSession, onBack]);
+    destination();
+  }, [chapter?.id, subject?.name, saveQuizSession, questionIds, questionVersions]);
+  const handleBack = React.useCallback(() => saveAndNavigate(onBack), [saveAndNavigate, onBack]);
 
   /* Smooth scroll to essay answer when revealed */
   const essayAnswerRef = useRef<HTMLDivElement | null>(null);
@@ -345,7 +358,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
     if (!answered || !question) return;
     const lang = language === 'ar' ? 'ar' : 'en';
     const answerIsCorrect = question.type === 'essay'
-      ? answers[current]?.selfGrade === 'correct'
+      ? asEssayAnswer(answers[current])?.selfGrade === 'correct'
       : question.type === 'case' || question.type === 'casestudy'
         ? getQuestionStatus(question, answers[current]) === 'correct'
         : checkAnswerCorrect(question, answers[current]);
@@ -362,7 +375,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
     if (!question) return;
     if (question.type === 'essay') {
       // eslint-disable-next-line react-hooks/set-state-in-effect
-      setEssayDraft(essayDrafts[current] ?? answers[current]?.text ?? '');
+      setEssayDraft(essayDrafts[current] ?? asEssayAnswer(answers[current])?.text ?? '');
     }
   }, [current, question, answers, essayDrafts]);
 
@@ -372,10 +385,10 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
     if (!question) return;
     if (question.type === 'essay') {
       // eslint-disable-next-line react-hooks/set-state-in-effect
-      setEssayDraft(essayDrafts[current] ?? answers[current]?.text ?? '');
+      setEssayDraft(essayDrafts[current] ?? asEssayAnswer(answers[current])?.text ?? '');
       // Reset reveal state for new essay — only show if already graded
       // eslint-disable-next-line react-hooks/set-state-in-effect
-      setShowEssayAnswer(answers[current]?.selfGrade !== undefined);
+      setShowEssayAnswer(asEssayAnswer(answers[current])?.selfGrade !== undefined);
     } else {
       setShowEssayAnswer(false);
     }
@@ -393,17 +406,17 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
         setAnswer({ scrambled, matches: {}, submitted: false });
       }
     } else if ((question.type === 'case' || question.type === 'casestudy') && question.subQuestions) {
-      const saved = answers[current] || {};
+      const saved = asCaseAnswer(answers[current]) ?? {};
       const drafts: Record<string, string> = {};
       const revs: Record<string, boolean> = {};
       question.subQuestions.forEach(subQ => {
-        drafts[subQ.id] = saved[subQ.id]?.text || '';
+        drafts[subQ.id] = asEssayAnswer(saved[subQ.id])?.text || '';
         if (subQ.type === 'fillblank') {
-          revs[subQ.id] = (saved[subQ.id] as Record<string, unknown>)?.submitted === true;
+          revs[subQ.id] = asFillBlankAnswer(saved[subQ.id])?.submitted === true;
         } else if (subQ.type === 'mcq') {
           revs[subQ.id] = saved[subQ.id] !== undefined;
         } else {
-          revs[subQ.id] = saved[subQ.id]?.selfGrade !== undefined;
+          revs[subQ.id] = asEssayAnswer(saved[subQ.id])?.selfGrade !== undefined;
         }
       });
       // eslint-disable-next-line react-hooks/set-state-in-effect
@@ -423,12 +436,12 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
       else if (e.key.toLowerCase() === 'f') toggleFlag();
       else if (e.key.toLowerCase() === 'g') toggleGrid();
       else if (e.key === 'Enter' && question) {
-        if (question.type === 'essay' && answers[current]?.selfGrade === undefined && !showEssayAnswer) {
+        if (question.type === 'essay' && asEssayAnswer(answers[current])?.selfGrade === undefined && !showEssayAnswer) {
           setShowEssayAnswer(true);
         }
         if ((question.type === 'case' || question.type === 'casestudy') && lastFocusedSubQ.current) {
           const subId = lastFocusedSubQ.current;
-          if ((answers[current] ?? {})[subId]?.selfGrade === undefined && !revealedSubEssays[subId]) {
+          if (asEssayAnswer(asCaseAnswer(answers[current])?.[subId])?.selfGrade === undefined && !revealedSubEssays[subId]) {
             setRevealedSubEssays(prev => ({ ...prev, [subId]: true }));
           }
         }
@@ -447,25 +460,25 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
         }
         if (question.type === 'essay' && showEssayAnswer) {
           const ans = answers[current];
-          if (ans?.selfGrade === undefined) {
+          if (asEssayAnswer(ans)?.selfGrade === undefined) {
             if (idx === 0) {
-              setAnswer({ text: answers[current]?.text || '', selfGrade: 'correct' });
+              setAnswer({ text: asEssayAnswer(answers[current])?.text || '', selfGrade: 'correct' });
               setShowEssayAnswer(false);
             } else if (idx === 1) {
-              setAnswer({ text: answers[current]?.text || '', selfGrade: 'incorrect' });
+              setAnswer({ text: asEssayAnswer(answers[current])?.text || '', selfGrade: 'incorrect' });
               setShowEssayAnswer(false);
             }
           }
         }
         if ((question.type === 'case' || question.type === 'casestudy') && lastFocusedSubQ.current) {
           const subId = lastFocusedSubQ.current;
-          const subVal = (answers[current] ?? {})[subId];
-          if (subVal?.selfGrade === undefined && revealedSubEssays[subId]) {
+          const subVal = (asCaseAnswer(answers[current]) ?? {})[subId];
+          if (asEssayAnswer(subVal)?.selfGrade === undefined && revealedSubEssays[subId]) {
             if (idx === 0) {
-              setAnswer({ ...answers[current], [subId]: { text: subVal?.text || '', selfGrade: 'correct' } });
+              setAnswer({ ...asCaseAnswer(answers[current]), [subId]: { text: asEssayAnswer(subVal)?.text || '', selfGrade: 'correct' } });
               setRevealedSubEssays(prev => ({ ...prev, [subId]: false }));
             } else if (idx === 1) {
-              setAnswer({ ...answers[current], [subId]: { text: subVal?.text || '', selfGrade: 'incorrect' } });
+              setAnswer({ ...asCaseAnswer(answers[current]), [subId]: { text: asEssayAnswer(subVal)?.text || '', selfGrade: 'incorrect' } });
               setRevealedSubEssays(prev => ({ ...prev, [subId]: false }));
             }
           }
@@ -647,8 +660,8 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
     );
   };
 
-  const renderEssay = (value: QuizAnswer | undefined, onChange: (v: { text: string; selfGrade?: string }) => void) => {
-    const isCompleted = value?.selfGrade !== undefined;
+  const renderEssay = (value: QuizAnswer | undefined, onChange: (v: { text: string; selfGrade?: 'correct' | 'incorrect' }) => void) => {
+    const isCompleted = asEssayAnswer(value)?.selfGrade !== undefined;
     return (
       <div className="space-y-4">
         <textarea
@@ -661,7 +674,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
             setEssayDrafts(nextDrafts);
             // Immediate local save (no cloud, no debounce)
             saveLocalDrafts(chapter?.id ?? -1, subject?.name ?? 'all', nextDrafts);
-            onChange({ text: val, selfGrade: value?.selfGrade });
+            onChange({ text: val, selfGrade: asEssayAnswer(value)?.selfGrade });
           }}
           rows={7}
           placeholder={t('essayPlaceholder') || "Type your answer…"}
@@ -706,7 +719,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                 {t('modelAnswerReference') || "Reference Answer"}
               </span>
             </div>
-            <FormattedAnswer text={question.modelAnswer} />
+            <FormattedAnswer text={question.modelAnswer ?? ''} />
 
             {question.keyConcept && (
               <div className="rounded-lg border border-sky-500/15 bg-sky-50/50 dark:bg-sky-500/[0.03] p-3 flex items-start gap-2.5">
@@ -770,7 +783,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
             <React.Fragment key={i}>
               <span className="whitespace-pre-wrap">{part}</span>
               {i < blanks && (
-                <span className={`inline-block mx-1.5 align-middle rounded-lg transition-all ${
+                <span className={`inline-block max-w-[calc(100%_-_0.75rem)] mx-1.5 align-middle rounded-lg transition-all ${
                   blankSubmitted
                     ? checkBlank(i, blankInputs[i] || '')
                       ? 'ring-2 ring-emerald-500/40'
@@ -794,7 +807,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                           : 'text-rose-600 dark:text-rose-400 bg-rose-500/5 line-through'
                         : 'text-gray-900 dark:text-white'
                     }`}
-                    style={{ width: `${Math.max(120, (blankInputs[i]?.length || 8) * 9 + 40)}px` }}
+                    style={{ maxWidth: '100%', width: `${Math.max(120, (blankInputs[i]?.length || 8) * 9 + 40)}px` }}
                   />
                 </span>
               )}
@@ -849,13 +862,13 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
     );
   };
 
-  const renderMatching = (q: Question, _value: QuizAnswer | undefined, onChange: (v: { scrambled: string[]; matches: Record<string, string>; submitted: boolean }) => void) => {
+  const renderMatching = (q: Question, _value: QuizAnswer | undefined, onChange: (v: { scrambled: string[]; matches: Record<number, number>; submitted: boolean }) => void) => {
     return (
       <MatchingQuestion
         pairs={q.pairs ?? []}
-        scrambled={_value?.scrambled ?? []}
-        matches={_value?.matches ?? {}}
-        submitted={_value?.submitted === true}
+        scrambled={asMatchingAnswer(_value)?.scrambled ?? []}
+        matches={asMatchingAnswer(_value)?.matches ?? {}}
+        submitted={asMatchingAnswer(_value)?.submitted === true}
         disabled={false}
         onChange={onChange}
       />
@@ -882,7 +895,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
   };
 
   const renderCaseStudy = (q: Question, value: QuizAnswer | undefined, onChange: (v: QuizAnswer) => void) => {
-    const subAns = value ?? {};
+    const subAns = asCaseAnswer(value) ?? {};
     return (
       <div className="space-y-5">
         <div className="rounded-xl border border-sky-500/30 bg-sky-50/70 dark:bg-sky-500/[0.05] p-4 text-start">
@@ -896,10 +909,10 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
           {(q.subQuestions ?? []).map((subQ) => {
             const subVal = subAns[subQ.id];
             const isCompleted = subQ.type === 'fillblank'
-            ? subVal?.submitted === true
+            ? asFillBlankAnswer(subVal)?.submitted === true
             : subQ.type === 'mcq'
               ? subVal !== undefined
-              : subVal?.selfGrade !== undefined;
+              : asEssayAnswer(subVal)?.selfGrade !== undefined;
 
             return (
               <div key={subQ.id} className="border-t border-gray-200 dark:border-white/[0.06] pt-5 text-start">
@@ -917,8 +930,8 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                 {subQ.type === 'fillblank' ? (() => {
                   const parts = subQ.text.split('___');
                   const blanksCount = Math.max(parts.length - 1, 1);
-                  const blankInputs: string[] = (subVal?.inputs as string[] | undefined) || Array(blanksCount).fill('');
-                  const submitted = subVal?.submitted === true;
+                  const blankInputs: string[] = asFillBlankAnswer(subVal)?.inputs || Array(blanksCount).fill('');
+                  const submitted = asFillBlankAnswer(subVal)?.submitted === true;
                   const checkSubBlank = (i: number, val: string) => {
                     const primary = (subQ.blanks || [])[i]?.trim().toLowerCase() || '';
                     const alts = ((subQ.acceptedAnswers || [])[i] || []).map(a => a.trim().toLowerCase());
@@ -931,7 +944,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                           <React.Fragment key={i}>
                             <span className="whitespace-pre-wrap">{part}</span>
                             {i < blanksCount && (
-                              <span className={`inline-block mx-1 align-middle rounded-lg transition-all ${
+                              <span className={`inline-block max-w-[calc(100%_-_0.5rem)] mx-1 align-middle rounded-lg transition-all ${
                                 submitted
                                   ? checkSubBlank(i, blankInputs[i] || '')
                                     ? 'ring-2 ring-emerald-500/40'
@@ -955,7 +968,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                                         : 'text-rose-600 dark:text-rose-400 bg-rose-500/5 line-through'
                                       : 'text-gray-900 dark:text-white'
                                   }`}
-                                  style={{ width: `${Math.max(120, (blankInputs[i]?.length || 8) * 9 + 40)}px` }}
+                                  style={{ maxWidth: '100%', width: `${Math.max(120, (blankInputs[i]?.length || 8) * 9 + 40)}px` }}
                                 />
                               </span>
                             )}
@@ -1032,7 +1045,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                         setSubEssayDrafts(prev => ({ ...prev, [subQ.id]: val }));
                         onChange({
                           ...subAns,
-                          [subQ.id]: { text: val, selfGrade: subVal?.selfGrade }
+                          [subQ.id]: { text: val, selfGrade: asEssayAnswer(subVal)?.selfGrade }
                         });
                       }}
                       onFocus={() => { lastFocusedSubQ.current = subQ.id; }}
@@ -1062,7 +1075,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                     {(revealedSubEssays[subQ.id] || isCompleted) && (
                       <div data-sub-essay={subQ.id} className="space-y-3 rounded-lg border border-emerald-500/20 bg-emerald-50/50 dark:bg-emerald-500/[0.02] p-3 text-xs">
                         <p className="font-semibold text-emerald-600 dark:text-emerald-400">Reference Answer:</p>
-                        <FormattedAnswer text={subQ.modelAnswer} />
+                        <FormattedAnswer text={subQ.modelAnswer ?? ''} />
                         
                         {!isCompleted && (
                           <div className="pt-3 border-t border-gray-200 dark:border-emerald-500/10">
@@ -1097,6 +1110,15 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                         )}
                       </div>
                     )}
+                  </div>
+                )}
+                {(isCompleted || revealedSubEssays[subQ.id]) && subQ.explanation && (
+                  <div className="mt-3 flex items-start gap-2 rounded-xl border border-emerald-500/20 bg-emerald-50/50 dark:bg-emerald-500/[0.03] p-3">
+                    <Lightbulb size={14} className="mt-0.5 shrink-0 text-emerald-500 dark:text-emerald-400" />
+                    <div className="min-w-0">
+                      <p className="mb-1 text-[10px] font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">Explanation</p>
+                      <p className="text-xs leading-relaxed text-gray-700 dark:text-white/70">{subQ.explanation}</p>
+                    </div>
                   </div>
                 )}
               </div>
@@ -1154,8 +1176,8 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
 
       {/* Header */}
       <header className="sticky top-0 z-30 border-b border-border bg-background/80 backdrop-blur-xl transition-colors duration-300">
-        <div className="mx-auto flex max-w-4xl items-center justify-between gap-3 px-4 py-3 sm:px-6">
-          <div className="flex min-w-0 items-center gap-3">
+        <div className="mx-auto flex max-w-4xl flex-wrap items-center justify-between gap-3 px-4 py-3 sm:flex-nowrap sm:px-6">
+          <div className="flex min-w-0 flex-1 items-center gap-3">
             <button
               onClick={handleBack}
               aria-label="Back"
@@ -1169,9 +1191,10 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
             </div>
           </div>
 
-          <div className="flex items-center gap-2">
+          <div className="quiz-header-actions flex w-full flex-wrap items-center justify-between gap-2 sm:w-auto sm:justify-end">
+            <ReportQuestionButton key={String(question.id)} question={question} chapterId={chapter.id}/>
             {timerMode !== 'off' && (
-              <span className={`flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-xs tabular-nums transition-colors ${
+              <span className={`quiz-timer flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-xs tabular-nums transition-colors ${
                 timerUrgency === 'critical'
                   ? "border-red-400/50 bg-red-50/50 dark:bg-red-500/10 text-red-600 dark:text-red-400 animate-pulse"
                   : timerUrgency === 'warning'
@@ -1197,6 +1220,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
             >
               <Grid3X3 size={15} />
             </button>
+            <ShuffleSwitch />
             {userButton}
           </div>
         </div>

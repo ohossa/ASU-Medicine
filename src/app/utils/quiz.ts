@@ -1,6 +1,8 @@
 import type { Question } from '../types';
 
-export function checkAnswerCorrect(q: Question, ans: unknown): boolean {
+type GradableQuestion = Pick<Question, 'type' | 'correctIndex' | 'pairs' | 'blanks' | 'acceptedAnswers' | 'subQuestions'>;
+
+export function checkAnswerCorrect(q: GradableQuestion, ans: unknown): boolean {
   if (ans === undefined || ans === null) return false;
 
   switch (q.type) {

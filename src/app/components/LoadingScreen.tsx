@@ -1,4 +1,4 @@
-import React, { useEffect, useState, Suspense, lazy } from "react";
+import { useEffect, useState, Suspense, lazy } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FX } from "../lib/fx.config";
 import { useDeferredMount } from "../hooks/useDeferredMount";

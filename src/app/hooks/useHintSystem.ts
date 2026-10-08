@@ -61,7 +61,7 @@ export function useHintSystem({
         content: text.trim(),
       };
       setMessages((prev) => {
-        const next = [...prev, userMsg];
+        const next: ChatMessage[] = [...prev, userMsg];
         messagesStore.current.set(question.id, next);
         return next;
       });
@@ -83,7 +83,7 @@ export function useHintSystem({
             'Content-Type': 'application/json',
           },
           body: JSON.stringify({
-            questionText: question.text ?? question.question ?? '',
+            questionText: question.text,
             options: question.options,
             correctIndex: question.correctIndex,
             explanation: question.explanation,
@@ -105,7 +105,7 @@ export function useHintSystem({
 
         if (res.status === 429) {
           setMessages((prev) => {
-            const next = [
+            const next: ChatMessage[] = [
               ...prev,
               {
                 id: Date.now().toString() + '-ai',
@@ -134,7 +134,7 @@ export function useHintSystem({
           const bodyText = await res.text().catch(() => '');
           if (import.meta.env.DEV) {
             setMessages((prev) => {
-              const next = [
+              const next: ChatMessage[] = [
                 ...prev,
                 {
                   id: Date.now().toString() + '-ai',
@@ -148,7 +148,7 @@ export function useHintSystem({
             });
           } else if (bodyText.includes('<!DOCTYPE') || bodyText.includes('<html')) {
             setMessages((prev) => {
-              const next = [
+              const next: ChatMessage[] = [
                 ...prev,
                 {
                   id: Date.now().toString() + '-ai',
@@ -170,12 +170,12 @@ export function useHintSystem({
         }
 
         setMessages((prev) => {
-          const next = [
+          const next: ChatMessage[] = [
             ...prev,
             {
               id: Date.now().toString() + '-ai',
               role: 'assistant',
-              content: data.text ?? 'No response.',
+              content: typeof data.text === 'string' ? data.text : 'No response.',
             },
           ];
           messagesStore.current.set(question.id, next);

@@ -17,6 +17,8 @@ import {
 import { SYLLABUS_MODULES } from "../data";
 import { useTheme } from "../hooks/useTheme";
 
+import {GIT_MARKS_PRESET, evaluateFinalGate, gradeFromScore} from '../lib/marksRules';
+
 /* ---------------------------------- Types --------------------------------- */
 
 interface Section {
@@ -33,6 +35,7 @@ interface ModulePreset {
   sections: Section[];
   /** Minimum marks required for each grade */
   boundaries: Record<GradeKey, number>;
+  finalPass?: {sectionIds: string[]; minimum: number};
 }
 
 interface CustomSection {
@@ -49,6 +52,7 @@ type GradeStatus =
 /* ----------------------------- Year 2 Presets ----------------------------- */
 
 const OFFICIAL_PRESETS: Record<string, ModulePreset> = {
+  "MGL-3": GIT_MARKS_PRESET,
   "MCNS-2": {
     id: "MCNS-2",
     name: "CNS Module",
@@ -118,11 +122,6 @@ const GRADE_COLORS: Record<GradeKey | "Fail", string> = {
 
 let uid = 0;
 const nextId = () => `custom-${++uid}-${Date.now()}`;
-
-function gradeFromScore(score: number, boundaries: Record<GradeKey, number>): GradeKey | "Fail" {
-  for (const g of GRADES) if (score >= boundaries[g]) return g;
-  return "Fail";
-}
 
 function parseScore(raw: string): number | null {
   if (raw.trim() === "") return null;
@@ -416,7 +415,7 @@ export function MarksCalculator({ onBack, userButton }: { onBack: () => void; us
     }
 
     if (selectedPreset.id !== CUSTOM_ID) {
-      return selectedPreset;
+      return OFFICIAL_PRESETS[selectedPreset.id] ?? selectedPreset;
     }
 
     const sections: Section[] = customSections
@@ -467,24 +466,29 @@ export function MarksCalculator({ onBack, userButton }: { onBack: () => void; us
       }
     }
 
-    const guaranteed = gradeFromScore(entered, activeModule.boundaries);
-    const potential = gradeFromScore(entered + remainingMax, activeModule.boundaries);
+    const finalGate = evaluateFinalGate(activeModule, scores);
+    const finalRequired = Boolean(activeModule.finalPass);
+    const guaranteed = finalRequired && finalGate.status !== 'passed' ? 'Fail' : gradeFromScore(entered, activeModule.boundaries);
+    const finalPossible = !finalRequired || finalGate.earned + finalGate.remaining >= finalGate.minimum;
+    const potential = finalPossible ? gradeFromScore(entered + remainingMax, activeModule.boundaries) : 'Fail';
 
     const gradeStatuses: Record<GradeKey, GradeStatus> = {} as Record<GradeKey, GradeStatus>;
     for (const g of GRADES) {
       const min = activeModule.boundaries[g];
-      if (entered >= min) {
+      if (!finalPossible) {
+        gradeStatuses[g] = {kind: 'out-of-reach'};
+      } else if (entered >= min && (!finalRequired || finalGate.status === 'passed')) {
         gradeStatuses[g] = { kind: "achieved" };
       } else if (min > entered + remainingMax) {
         gradeStatuses[g] = { kind: "out-of-reach" };
       } else {
-        const marksNeeded = min - entered;
+        const marksNeeded = Math.max(0, min - entered);
         const pctNeeded = remainingMax > 0 ? (marksNeeded / remainingMax) * 100 : 0;
         gradeStatuses[g] = { kind: "possible", marksNeeded, pctNeeded };
       }
     }
 
-    return { entered, remainingMax, errors, guaranteed, potential, gradeStatuses };
+    return { entered, remainingMax, errors, guaranteed, potential, gradeStatuses, finalGate };
   }, [activeModule, scores]);
 
   /* Handlers */
@@ -555,11 +559,11 @@ export function MarksCalculator({ onBack, userButton }: { onBack: () => void; us
           <div>
             {/* Header */}
             <header className="mb-10 flex items-center justify-between gap-4">
-              <div className="flex items-center gap-4">
+              <div className="flex min-w-0 flex-1 items-center gap-3">
                 <button
                   onClick={onBack}
                   aria-label="Go back to dashboard"
-                  className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.04] backdrop-blur-xl transition-colors hover:bg-gray-100 dark:hover:bg-white/[0.08] cursor-pointer text-gray-700 dark:text-white"
+                  className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.04] backdrop-blur-xl transition-colors hover:bg-gray-100 dark:hover:bg-white/[0.08] cursor-pointer text-gray-700 dark:text-white"
                 >
                   <ArrowLeft size={18} className="text-current" />
                 </button>
@@ -650,7 +654,12 @@ export function MarksCalculator({ onBack, userButton }: { onBack: () => void; us
                 return (
                   <button
                     key={m.code}
-                    onClick={() => selectModulePreset(getModulePreset(m.code, m.name, m.marks))}
+                    disabled={!isOfficialPreset && m.marks == null}
+                    onClick={() => {
+                      const preset = OFFICIAL_PRESETS[m.code];
+                      if (preset) selectModulePreset(preset);
+                      else if (m.marks != null) selectModulePreset(getModulePreset(m.code, m.name, m.marks));
+                    }}
                     className="portal-card text-left bg-card hover:bg-gray-100/50 dark:hover:bg-white/[0.05] rounded-2xl p-5 border border-gray-200 dark:border-white/[0.06] hover:border-gray-300 dark:hover:border-white/[0.12] transition-all flex justify-between items-center group cursor-pointer"
                   >
                     <div className="space-y-1.5">
@@ -694,12 +703,12 @@ export function MarksCalculator({ onBack, userButton }: { onBack: () => void; us
           /* VIEW 2: Calculator Screen */
           <div>
             {/* Header */}
-            <header className="mb-8 flex items-center justify-between gap-4">
-              <div className="flex items-center gap-4">
+            <header className="mb-8 flex flex-wrap items-center justify-between gap-4">
+              <div className="flex w-full min-w-0 items-center gap-3 sm:w-auto sm:flex-1">
                 <button
                   onClick={() => setSelectedPreset(null)}
                   aria-label="Go back to selection screen"
-                  className="flex h-10 w-10 items-center justify-center rounded-full border border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.04] backdrop-blur-xl transition-colors hover:bg-gray-100 dark:hover:bg-white/[0.08] cursor-pointer text-gray-700 dark:text-white"
+                  className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.04] backdrop-blur-xl transition-colors hover:bg-gray-100 dark:hover:bg-white/[0.08] cursor-pointer text-gray-700 dark:text-white"
                 >
                   <ArrowLeft size={18} className="text-current" />
                 </button>
@@ -713,10 +722,10 @@ export function MarksCalculator({ onBack, userButton }: { onBack: () => void; us
                   </p>
                 </div>
               </div>
-              <div className="flex items-center gap-3">
+              <div className="ml-auto flex shrink-0 items-center gap-3">
                 <button
                   onClick={resetScores}
-                  className="flex items-center gap-2 rounded-full border border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.04] px-4 py-2 text-sm text-gray-700 dark:text-white/70 backdrop-blur-xl transition-colors hover:bg-gray-100 dark:hover:bg-white/[0.08] cursor-pointer"
+                  className="flex items-center gap-2 rounded-full border border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.04] min-h-11 px-4 py-2 text-sm text-gray-700 dark:text-white/70 backdrop-blur-xl transition-colors hover:bg-gray-100 dark:hover:bg-white/[0.08] cursor-pointer"
                 >
                   <RefreshCw size={14} />
                   Reset
@@ -857,6 +866,14 @@ export function MarksCalculator({ onBack, userButton }: { onBack: () => void; us
 
               {/* ------------------------------ RIGHT: Results ----------------------------- */}
               <div className="space-y-6">
+                {activeModule.finalPass && <GlassCard className="p-5">
+                  <h2 className="font-semibold text-gray-900 dark:text-white">GIT passing requirements</h2>
+                  <p className="mt-2 text-sm text-gray-600 dark:text-white/60">13 credit points · 260 marks. Pass requires both ≥156 overall and ≥41.6/104 across the two final papers.</p>
+                  <p role="status" className="mt-3 text-sm font-semibold text-gray-900 dark:text-white">
+                    Final: {calc.finalGate.earned.toFixed(2).replace(/0+$/, '').replace(/\.$/, '')}/104 · {calc.finalGate.status === 'passed' ? 'Final requirement met' : calc.finalGate.status === 'failed' ? 'Final requirement not met' : calc.finalGate.status === 'invalid' ? 'Fix invalid final marks' : `Pending — ${Math.max(0,41.6-calc.finalGate.earned).toFixed(2)} more final marks needed`}
+                  </p>
+                  {Object.keys(calc.errors).length > 0 && <p className="mt-2 text-sm text-rose-500">Correct invalid inputs before relying on predictions.</p>}
+                </GlassCard>}
                 {/* Progress ring */}
                 <GlassCard className="flex flex-col items-center gap-4 p-6 sm:flex-row sm:justify-around">
                   <ProgressRing pct={pctAchieved} label="Achieved" />
@@ -934,10 +951,10 @@ export function MarksCalculator({ onBack, userButton }: { onBack: () => void; us
                             {status.kind === "possible" && (
                               <div className="text-sm">
                                 <span className="font-semibold text-amber-600 dark:text-amber-400 tabular-nums">
-                                  +{status.marksNeeded} marks needed
+                                  +{Number(status.marksNeeded.toFixed(2))} marks needed
                                 </span>
                                 <p className="text-xs text-gray-500 dark:text-white/40 tabular-nums">
-                                  Need {status.pctNeeded.toFixed(0)}% on remaining
+                                  Need {status.pctNeeded.toFixed(0)}% on remaining{activeModule.finalPass && calc.finalGate.status !== 'passed' ? ' · Final requirement also needed' : ''}
                                 </p>
                               </div>
                             )}

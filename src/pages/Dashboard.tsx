@@ -29,7 +29,7 @@ type Year = {
 const YEARS: Year[] = [
   { id: 1, label: "Year 1", phase: "Foundations",        subtitle: "PRE-CLERKSHIP", cp: 57, marks: 1020, active: true,  accent: "#22c55e", glow: "rgba(34,197,94,0.18)" },
   { id: 2, label: "Year 2", phase: "Foundations",        subtitle: "PRE-CLERKSHIP", cp: 54, marks: 1080, active: true,  accent: "#3b82f6", glow: "rgba(59,130,246,0.18)" },
-  { id: 3, label: "Year 3", phase: "Transitional Phase", subtitle: "PARACLINICAL",    cp: 52.5, marks: 1050, active: false, accent: "#a855f7", glow: "rgba(168,85,247,0.18)" },
+  { id: 3, label: "Year 3", phase: "Transitional Phase", subtitle: "PARACLINICAL",    cp: 52.5, marks: 1050, active: true, accent: "#a855f7", glow: "rgba(168,85,247,0.18)" },
   { id: 4, label: "Year 4", phase: "Clinical Phase",     subtitle: "CLERKSHIP",     cp: 64.5, marks: 1290, active: false, accent: "#f97316", glow: "rgba(249,115,22,0.18)" },
   { id: 5, label: "Year 5", phase: "Clinical Phase",     subtitle: "CLERKSHIP",     cp: 70, marks: 1400, active: false, accent: "#f43f5e", glow: "rgba(244,63,94,0.18)" },
 ];
@@ -52,7 +52,7 @@ interface DashboardProps {
 
 export default function Dashboard({ userButton, onOpenTrackerSelector }: DashboardProps) {
   const navigate = useNavigate();
-  const [activeIdx, setActiveIdx] = useState(1); // Year 2 centered
+  const [activeIdx, setActiveIdx] = useState(2); // Year 3 centered
   const dragX = useRef<number | null>(null);
 
   useEffect(() => {
@@ -62,7 +62,7 @@ export default function Dashboard({ userButton, onOpenTrackerSelector }: Dashboa
 
   /* Route prefetching for faster navigation */
   useEffect(() => {
-    const links = ['/year-2', '/marks-calculator'];
+    const links = ['/year-3', '/marks-calculator'];
     links.forEach(path => {
       const link = document.createElement('link');
       link.rel = 'prefetch';
@@ -209,7 +209,7 @@ export default function Dashboard({ userButton, onOpenTrackerSelector }: Dashboa
                         </span>
                         <button
                           onClick={(e) => handleEnterYear(e, year)}
-                          className="flex items-center gap-1.5 text-[14px] font-heading font-bold
+                          className="flex min-h-11 items-center gap-1.5 text-[14px] font-heading font-bold
                                      text-zinc-900 dark:text-white group border-0 bg-transparent cursor-pointer"
                         >
                           Enter <ArrowRight size={15} className="transition-transform group-hover:translate-x-0.5" />
@@ -230,12 +230,14 @@ export default function Dashboard({ userButton, onOpenTrackerSelector }: Dashboa
               key={y.id}
               onClick={() => setActiveIdx(i)}
               aria-label={`Go to ${y.label}`}
-              className="h-2 rounded-full transition-all duration-500 border-0 cursor-pointer"
-              style={{
+              aria-pressed={i === activeIdx}
+              className="grid h-11 w-11 shrink-0 place-items-center border-0 bg-transparent cursor-pointer"
+            >
+              <span aria-hidden="true" className="block h-2 rounded-full transition-all duration-500" style={{
                 width: i === activeIdx ? 24 : 8,
                 backgroundColor: i === activeIdx ? y.accent : "rgba(128,128,128,0.3)",
-              }}
-            />
+              }} />
+            </button>
           ))}
         </div>
 

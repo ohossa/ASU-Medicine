@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { useNavigate, useParams, useLocation } from 'react-router';
 import { Lock, ArrowRight, ArrowLeft } from 'lucide-react';
 import { PortalShell } from '../app/components/PortalShell';
@@ -12,27 +12,15 @@ import { pageVariants } from '../app/lib/motion';
 /* ────────────────────────────────────────────────
    DATA
    ──────────────────────────────────────────────── */
-const YEAR_PHASES: Record<number, string> = {
-  1: 'Foundations',
-  2: 'Foundations',
-  3: 'Transitional Phase',
-  4: 'Clinical Phase',
-  5: 'Clinical Phase',
-};
 
 type Module = {
   code: string;
   name: string;
   cp: number;
-  marks: number | null;
+  marks: number | null | undefined;
   accent: string; // Theme mapping key
 };
 
-type Semester = {
-  label: string;
-  stats: string;
-  modules: Module[];
-};
 
 
 /* ────────────────────────────────────────────────
@@ -76,7 +64,15 @@ export default function YearModules({ userButton }: YearModulesProps) {
     return match ? Number(match[1]) : (Number(yearId) || 2);
   }, [location.pathname, yearId]);
 
-  const [tab, setTab] = useState(1); // Semester 2 active by default
+  const initialSemester = () => {
+    const requested = new URLSearchParams(location.search).get('semester');
+    return requested === '1' ? 0 : requested === '2' ? 1 : yr === 3 ? 0 : 1;
+  };
+  const [tab, setTab] = useState(initialSemester);
+  useEffect(() => {
+    const semester = new URLSearchParams(location.search).get('semester');
+    setTab(semester === '1' ? 0 : semester === '2' ? 1 : yr === 3 ? 0 : 1);
+  }, [location.search, yr]);
 
   const semestersData = useMemo(() => {
     const yrModules = SYLLABUS_MODULES[yr] || {};
@@ -257,7 +253,7 @@ export default function YearModules({ userButton }: YearModulesProps) {
                       {active ? (
                         <button
                           onClick={(e) => handleStartModule(e, m)}
-                          className="flex items-center gap-1.5 font-heading font-bold text-[14px] text-[#22c55e] border-0 bg-transparent cursor-pointer pl-0 text-left"
+                          className="flex min-h-11 items-center gap-1.5 font-heading font-bold text-[14px] text-[#22c55e] border-0 bg-transparent cursor-pointer pl-0 text-left"
                         >
                           Start <ArrowRight size={15} className="transition-transform group-hover:translate-x-0.5" />
                         </button>

@@ -1,3 +1,4 @@
+import { ReportQuestionButton } from '../reports/ReportQuestion';
 import React, { useState } from 'react';
 import { ArrowLeft, ChevronRight, Trash2, Flag, Check, X, Eye, EyeOff, AlertCircle } from 'lucide-react';
 import { useLanguage } from '../hooks/useLanguage';
@@ -161,6 +162,7 @@ export function FlaggedQuestionsScreen({ onBack, onPracticeQuiz, userButton }: F
                     </span>
                   </div>
 
+                  <div className="flex justify-end mb-2"><ReportQuestionButton question={q} chapterId={item.chapter.id} moduleCode={item.moduleCode}/></div>
                   {/* Question Text */}
                   <div className="text-gray-900 dark:text-gray-100 font-medium text-base mb-6 leading-relaxed whitespace-pre-wrap">
                     {q.text}
@@ -219,7 +221,7 @@ export function FlaggedQuestionsScreen({ onBack, onPracticeQuiz, userButton }: F
                           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                             {q.pairs.map((pair, idx) => (
                               <div key={idx} className="flex items-center gap-2 p-2.5 bg-white dark:bg-gray-900 border border-gray-105 dark:border-gray-800 rounded-xl">
-                                <span className="font-bold text-clinical">{pair.source}</span>
+                                <span className="font-bold text-clinical">{pair.premise}</span>
                                 <ChevronRight size={12} className="text-gray-300" />
                                 <span className="font-bold text-physiology">{pair.target}</span>
                               </div>
@@ -246,10 +248,10 @@ export function FlaggedQuestionsScreen({ onBack, onPracticeQuiz, userButton }: F
                       {/* Case Study text and Subquestions */}
                       {q.type === 'case' && (
                         <div className="space-y-4">
-                          {q.caseStudyText && (
+                          {('caseStudyText' in q && typeof q.caseStudyText === 'string' ? q.caseStudyText : undefined) && (
                             <div>
                               <div className="font-bold text-xs uppercase tracking-wider text-gray-400 dark:text-gray-500 mb-1">Case Study</div>
-                              <p className="text-gray-800 dark:text-gray-300 italic leading-relaxed">{q.caseStudyText}</p>
+                              <p className="text-gray-800 dark:text-gray-300 italic leading-relaxed">{('caseStudyText' in q && typeof q.caseStudyText === 'string' ? q.caseStudyText : undefined)}</p>
                             </div>
                           )}
                           {q.subQuestions && (

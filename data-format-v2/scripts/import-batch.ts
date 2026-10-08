@@ -1,5 +1,5 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises';
-import { dirname, extname, join } from 'node:path';
+import { dirname, extname } from 'node:path';
 
 type SubjectColor = 'anatomy' | 'histology' | 'physiology' | 'biochem' | 'microbiology' | 'pathology' | 'pharma' | 'clinical' | 'parasitology' | 'psychiatry' | 'ophthalmology' | 'ent';
 type QuestionType = 'mcq' | 'truefalse' | 'matching' | 'essay' | 'case' | 'fillblank';
@@ -163,7 +163,7 @@ async function main(): Promise<void> {
           return;
         }
 
-        subjectId = inferSubject(incoming.subject ?? incoming.topic ?? '');
+        subjectId = inferSubject(incoming.subject ?? incoming.topic ?? '') ?? undefined;
         if (!subjectId) {
           report.needsReview.push({ index, reason: 'No matching subject. Add one of the canonical subject names.', text });
           return;
@@ -557,7 +557,7 @@ function removeExistingDuplicates(bank: QuestionBankFile, report: ImportReport, 
   }
 }
 
-function makeDuplicateKey(question: Pick<Question | IncomingQuestion, 'text' | 'question' | 'options'>): string {
+function makeDuplicateKey(question: { text?: string; question?: string; options?: string[] }): string {
   return normalize(`${question.text ?? question.question ?? ''} ${(question.options ?? []).join(' ')}`);
 }
 
