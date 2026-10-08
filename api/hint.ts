@@ -256,9 +256,9 @@ export class NVIDIAAdapter implements AIAdapter {
   constructor() {
     this.apiKey = process.env.NVIDIA_API_KEY ?? '';
     const configuredModel = process.env.NVIDIA_HINT_MODEL?.trim();
-    // NVIDIA retired this model on 2026-08-26; also migrate old hosted overrides.
-    this.model = !configuredModel || configuredModel === 'meta/llama-3.1-8b-instruct'
-      ? 'meta/llama-3.3-70b-instruct'
+    // Both Llama endpoints return 410; migrate existing hosted overrides too.
+    this.model = !configuredModel || ['meta/llama-3.1-8b-instruct', 'meta/llama-3.3-70b-instruct'].includes(configuredModel)
+      ? 'writer/palmyra-med-70b'
       : configuredModel;
   }
 
@@ -279,28 +279,39 @@ export class NVIDIAAdapter implements AIAdapter {
 
     messages.push({ role: 'user', content: userPrompt });
 
-    const res = await fetch('https://integrate.api.nvidia.com/v1/chat/completions', {
+    const complete = (model: string) => fetch('https://integrate.api.nvidia.com/v1/chat/completions', {
       method: 'POST',
-      headers: {
-        Authorization: `Bearer ${this.apiKey}`,
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        model: this.model,
-        messages,
-        max_tokens: 200,
-        temperature: 0.7,
-        top_p: 0.9,
-      }),
+      headers: { Authorization: `Bearer ${this.apiKey}`, 'Content-Type': 'application/json' },
+      body: JSON.stringify({ model, messages, max_tokens: 200, temperature: 0.7, top_p: 0.9 }),
+      signal: AbortSignal.timeout(20_000),
     });
-
-    if (!res.ok) {
-      const err = await res.text();
-      throw new Error(`NVIDIA API error: ${res.status} ${err}`);
+    let res = await complete(this.model);
+    if (res.status === 410) {
+      // Retry only retirement errors, with a known text model currently listed by NVIDIA.
+      // Never retry authentication/quota errors or route to an arbitrary catalog model.
+      const catalog = await fetch('https://integrate.api.nvidia.com/v1/models', {
+        signal: AbortSignal.timeout(5_000),
+      });
+      if (!catalog.ok) throw new Error('AI tutor unavailable (503). Please try again later.');
+      const payload: unknown = await catalog.json();
+      const data = payload && typeof payload === 'object' && 'data' in payload ? payload.data : undefined;
+      const available = new Set(Array.isArray(data) ? data.flatMap(row =>
+        row && typeof row === 'object' && typeof row.id === 'string' ? [row.id] : []) : []);
+      const fallback = ['writer/palmyra-med-70b', 'writer/palmyra-med-70b-32k', 'mistralai/mistral-large-2-instruct']
+        .find(model => model !== this.model && available.has(model));
+      if (!fallback) throw new Error('AI tutor unavailable (503). No supported replacement is available.');
+      res = await complete(fallback);
     }
-
+    if (!res.ok) {
+      const message = res.status === 401 || res.status === 403
+        ? 'AI tutor access needs administrator attention'
+        : res.status === 429 ? 'AI tutor is busy or its provider quota has been reached. Please try again later'
+        : 'AI tutor is temporarily unavailable. Please try again later';
+      throw new Error(`${message} (${res.status}).`);
+    }
     const data: unknown = await res.json();
     const text = providerText(data, ['choices', 0, 'message', 'content']);
+    if (!text) throw new Error('AI tutor returned an empty response (502). Please try again.');
     return { text, source: 'nvidia' };
   }
 }

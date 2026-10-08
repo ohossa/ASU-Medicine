@@ -1,11 +1,11 @@
 # AI tutor model migration (2026-10-08)
 
-NVIDIA returned HTTP 410 because `meta/llama-3.1-8b-instruct` was retired. This is a model lifecycle error, not evidence of an invalid API key.
+Both `meta/llama-3.1-8b-instruct` and `meta/llama-3.3-70b-instruct` returned HTTP 410 on production. Documentation pages persisted after retirement; the live `https://integrate.api.nvidia.com/v1/models` catalog excludes both endpoints.
 
-The NVIDIA adapter now defaults to `meta/llama-3.3-70b-instruct`. Missing, blank, or explicitly retired model overrides use this replacement; other explicit models remain configurable. The NVIDIA endpoint, tutor prompt, response contract, authentication and rate limits are unchanged.
+The default and existing retired overrides now use `writer/palmyra-med-70b`, listed in the live catalog on 2026-10-08. Production/preview model settings were updated. The secret API key remains exclusively in Vercel.
 
-Official provider reference: https://docs.api.nvidia.com/nim/reference/meta-llama-3_3-70b-instruct
+For a future 410, the adapter reads the live catalog and retries once with an approved listed text model (Palmyra-Med, Palmyra-Med 32k, or Mistral Large 2), excluding the failed model. It never retries authentication, quota or general server failures. Requests have bounded timeouts; empty content fails explicitly. Upstream raw error bodies are no longer exposed to students.
 
-Production and preview `NVIDIA_HINT_MODEL` must use the replacement. Existing `NVIDIA_API_KEY` stays exclusively in Vercel. A new deployment is required for environment changes to take effect.
+Regression tests cover default/retired/alternative settings, successful catalog recovery, missing fallback, no retries on 401/403/429/500, and empty responses. Full suite/build are release gates. These are mocked provider-boundary tests, not proof of production credentials or quota. Live catalog availability alone does not prove successful inference; a signed-in tutor conversation must confirm it.
 
-Regression tests mock the provider HTTP boundary and cover absent, blank, retired and alternative model settings. These tests verify request construction and response parsing; they do not verify the production key or available provider quota. After deployment, test a signed-in tutor conversation. If NVIDIA then returns 401/403, investigate key permissions; 429 means provider quota/rate limits.
+Free alternatives: Groq offers a quota-limited free plan (https://console.groq.com/docs/rate-limits); Gemini has model-dependent free tiers (https://ai.google.dev/gemini-api/docs/pricing). Switching providers requires provisioning a key directly in Vercel. Do not paste keys into chat or store them in Git.
