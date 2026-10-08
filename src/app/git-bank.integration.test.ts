@@ -13,6 +13,17 @@ const stableJSON=(v:any):string=>JSON.stringify(v,(_key,value)=>value && typeof 
 const rawQuestions=bank.chapters.flatMap(c=>c.subjects.flatMap(s=>s.questions));
 
 describe('Integrated GIT question bank',()=>{
+  it('grades every GIT true/false item correctly for boolean and indexed selections',async()=>{
+    await ensureDataLoaded();
+    const questions=getChaptersForModuleAndMode('MGL-3','mixed').flatMap(c=>c.subjects.flatMap(s=>s.questions)).filter(q=>q.type==='truefalse');
+    expect(questions).toHaveLength(325);
+    for(const q of questions){
+      expect([0,1]).toContain(q.correctIndex);
+      expect(checkAnswerCorrect(q,q.correctIndex===0),q.id+' boolean key').toBe(true);
+      expect(checkAnswerCorrect(q,q.correctIndex!==0),q.id+' opposite').toBe(false);
+      expect(checkAnswerCorrect(q,q.correctIndex),q.id+' index').toBe(true);
+    }
+  });
   it('provides concise explanations for every parent and every case child',()=>{
     const items=rawQuestions.flatMap(q=>[q,...(q.subQuestions??[])]);
     for(const q of items){

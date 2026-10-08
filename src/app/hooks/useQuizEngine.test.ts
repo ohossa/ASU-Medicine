@@ -363,6 +363,12 @@ describe('useQuizEngine', () => {
   });
 
   describe('derived counts', () => {
+    it('counts and marks boolean true/false selections correctly',()=>{
+      const {result}=createHook({questions:[makeQ({type:'truefalse',correctIndex:0})]});
+      act(()=>result.current.setAnswer(true));
+      expect(result.current.score).toBe(1);
+      expect(result.current.answerState).toBe('correct');
+    });
     it('answeredCount counts only fully answered', () => {
       const { result } = createHook();
       act(() => result.current.setAnswer(1)); // mcq answered

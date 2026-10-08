@@ -17,6 +17,11 @@ function review(question: Question, answer: QuizAnswer) {
 }
 afterEach(cleanup);
 describe('typed result answer review', () => {
+  it.each([[true,0,'True'],[false,1,'False'],[0,0,'True'],[1,1,'False']] as const)('shows true/false selection %s as correct in results', (answer,correctIndex,label)=>{
+    review({...baseQuestion,type:'truefalse',text:'Statement',options:['True','False'],correctIndex},answer);
+    expect(screen.getByText('Your answer').parentElement).toHaveTextContent(label);
+    expect(screen.getAllByText('Correct').length).toBeGreaterThan(0);
+  });
   it('keeps essay text and grading visible', () => {
     review(baseQuestion, { text: 'Essay response', selfGrade: 'correct' });
     expect(screen.getByRole('textbox')).toHaveValue('Essay response');

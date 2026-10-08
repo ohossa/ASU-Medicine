@@ -2,13 +2,24 @@ import type { Question } from '../types';
 
 type GradableQuestion = Pick<Question, 'type' | 'correctIndex' | 'pairs' | 'blanks' | 'acceptedAnswers' | 'subQuestions'>;
 
+/** True/false selections may be saved as booleans or legacy option indexes. */
+export function choiceAnswerIndex(q: Pick<Question, 'type'>, answer: unknown): number | undefined {
+  if (q.type === 'truefalse') {
+    if (typeof answer === 'boolean') return answer ? 0 : 1;
+    return answer === 0 || answer === 1 ? answer : undefined;
+  }
+  return typeof answer === 'number' && Number.isInteger(answer) && answer >= 0 ? answer : undefined;
+}
+
 export function checkAnswerCorrect(q: GradableQuestion, ans: unknown): boolean {
   if (ans === undefined || ans === null) return false;
 
   switch (q.type) {
     case 'mcq':
-    case 'truefalse':
-      return ans === q.correctIndex;
+    case 'truefalse': {
+      const index = choiceAnswerIndex(q, ans);
+      return index !== undefined && index === q.correctIndex;
+    }
 
     case 'matching': {
       const pairs = q.pairs ?? [];

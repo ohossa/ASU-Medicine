@@ -3,6 +3,10 @@ import {getMissedQuestions,missedPracticeSubject} from './missedQuestions';
 import type {Question,SubjectData} from '../types';
 const q=(id:string,type:Question['type']='mcq',extra:Partial<Question>={}):Question=>({id,type,lecture:1,text:id,options:['A','B'],correctIndex:0,subjectColor:'anatomy',explanation:'',...extra});
 describe('missed-question practice',()=>{
+ it('excludes correct true/false selections from retry practice',()=>{
+  const questions=[q('true','truefalse'),q('false','truefalse',{correctIndex:1}),q('wrong','truefalse')];
+  expect(getMissedQuestions(questions,{0:true,1:false,2:false})).toEqual([questions[2]]);
+ });
  it('retains wrong and skipped questions in order, without mutating IDs/options',()=>{
   const questions=[q('correct'),q('wrong'),q('skipped')];
   expect(getMissedQuestions(questions,{0:0,1:1})).toEqual([questions[1],questions[2]]);

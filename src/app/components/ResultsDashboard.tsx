@@ -1,7 +1,7 @@
 import { ReportQuestionButton } from '../reports/ReportQuestion';
 import React, { useState, useEffect } from 'react';
 import { getMissedQuestions } from '../utils/missedQuestions';
-import { checkAnswerCorrect } from '../utils/quiz';
+import { checkAnswerCorrect, choiceAnswerIndex } from '../utils/quiz';
 import { FlowBreadcrumbs, type FlowCrumb } from './FlowBreadcrumbs';
 import { norm } from '../utils/string';
 import {
@@ -304,7 +304,7 @@ export function ResultsDashboard({
     <div className="mt-4 space-y-2">
       {(q.options ?? (q.type === 'truefalse' ? ['True', 'False'] : [])).map((opt: string, oi: number) => {
         const isCorrect = oi === q.correctIndex;
-        const isUserWrong = ans === oi && !isCorrect;
+        const isUserWrong = choiceAnswerIndex(q, ans) === oi && !isCorrect;
         return (
           <div
             key={oi}
@@ -320,7 +320,7 @@ export function ResultsDashboard({
               {isCorrect ? <Check size={13} /> : isUserWrong ? <X size={13} /> : String.fromCharCode(65 + oi)}
             </span>
             <span className="leading-relaxed">{opt}</span>
-            {ans === oi && (
+            {choiceAnswerIndex(q, ans) === oi && (
               <span className="ms-auto shrink-0 rounded-full border border-current/30 px-2 py-0.5 text-[10px] font-medium uppercase tracking-wide">
                 Your answer
               </span>

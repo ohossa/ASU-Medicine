@@ -98,13 +98,13 @@ export const reportStore: ReportStore = {
     ]);
     return raw ? decodeStoredReport(String(raw)) : null;
   },
-  async list(status, offset) {
+  async list(status, offset, limit = 25) {
     const index =
       status === "all" ? PREFIX + "all" : PREFIX + "status:" + status;
     const result = (await evalRedis(
       `local ids=redis.call('ZREVRANGE',KEYS[1],ARGV[1],ARGV[2]);local rows={};for _,id in ipairs(ids) do local raw=redis.call('GET',ARGV[3]..id);if raw then table.insert(rows,raw) end end;local counts={};for i=2,5 do table.insert(counts,redis.call('ZCARD',KEYS[i])) end;return {rows,redis.call('ZCARD',KEYS[1]),counts}`,
       [index, ...REPORT_STATUSES.map((s) => PREFIX + "status:" + s)],
-      [String(offset), String(offset + 24), PREFIX + "record:"],
+      [String(offset), String(offset + Math.min(500, Math.max(1, limit)) - 1), PREFIX + "record:"],
     )) as [string[], number, number[]];
     return {
       reports: result[0].map((raw) => decodeStoredReport(raw)),

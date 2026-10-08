@@ -13,10 +13,12 @@ vi.mock("node:fs/promises", () => {
             {
               id: "anatomy",
               name: "Anatomy",
+              lectureNames: ["Oral cavity"],
               questions: [
                 {
                   id: "Q1",
                   text: "Canonical source",
+                  lecture: 1,
                   type: "case",
                   subQuestions: [{ id: "S1", text: "Part one", type: "essay" }],
                 },
@@ -42,6 +44,7 @@ describe("Canonical question snapshots", () => {
     expect(a.version).toHaveLength(64);
     expect(a.version).toBe(b.version);
     expect(a.subjectName).toBe("Anatomy");
+    expect(a.topicName).toBe("Oral cavity");
   });
   it("rejects a missing question or forged case part", async () => {
     await expect(

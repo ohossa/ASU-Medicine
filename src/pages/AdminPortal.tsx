@@ -17,6 +17,7 @@ import {
   Mail,
 } from "lucide-react";
 import { PortalShell } from "../app/components/PortalShell";
+import { cleanQuestionStem } from "../app/utils/questionStem";
 import { reportRequest } from "../app/reports/client";
 import {
   REPORT_CATEGORIES,
@@ -116,6 +117,13 @@ function AdminWorkspace() {
   const isEditor = location.pathname.includes("/questions");
   const selectedId = params.get("report");
   const [status, setStatus] = useState("all");
+  const [searchDraft, setSearchDraft] = useState("");
+  const [search, setSearch] = useState("");
+  const [moduleCode, setModuleCode] = useState("");
+  const [subjectName, setSubjectName] = useState("");
+  const [chapterId, setChapterId] = useState("");
+  const [topicName, setTopicName] = useState("");
+  const [groupBy, setGroupBy] = useState("question");
   const [offset, setOffset] = useState(0);
   const [data, setData] = useState<ReportList | null>(null);
   const [loading, setLoading] = useState(true);
@@ -128,22 +136,31 @@ function AdminWorkspace() {
     const controller = new AbortController();
     setLoading(true);
     setError("");
+    const query = new URLSearchParams({status, offset:String(offset)});
+    if (isInbox) {
+      query.set('groupBy',groupBy);
+      if (search) query.set('search',search);
+      if (moduleCode) query.set('moduleCode',moduleCode);
+      if (subjectName) query.set('subjectName',subjectName);
+      if (chapterId) query.set('chapterId',chapterId);
+      if (topicName) query.set('topicName',topicName);
+    }
     reportRequest<ReportList>(
       tokenRef.current,
-      `?status=${status}&offset=${offset}`,
+      `?${query.toString()}`,
       { signal: controller.signal },
     )
       .then((value) => {
         if (!controller.signal.aborted) setData(value);
       })
       .catch((e) => {
-        if (!controller.signal.aborted) setError(e.message);
+        if (!controller.signal.aborted) { setError(e.message); setData(null); }
       })
       .finally(() => {
         if (!controller.signal.aborted) setLoading(false);
       });
     return () => controller.abort();
-  }, [status, offset, refresh, isEditor]);
+  }, [status, offset, refresh, isEditor, isInbox, search, moduleCode, subjectName, chapterId, topicName, groupBy]);
   useEffect(() => {
     setSelected(null);
     setDetailError("");
@@ -162,6 +179,18 @@ function AdminWorkspace() {
       });
     return () => controller.abort();
   }, [selectedId, refresh]);
+  const activeFilters = Boolean(search || moduleCode || subjectName || chapterId || topicName || status !== 'all');
+  const renderReportRow = (report: QuestionReport) => (
+    <button key={report.id} className="admin-report-row" aria-current={selectedId === report.id}
+      onClick={() => setParams({ report: report.id })}>
+      <span className="admin-badge">{statusLabels[report.status]}</span>
+      <strong>{REPORT_CATEGORIES[report.category].en}</strong>
+      <p>{cleanQuestionStem(report.snapshot.question.text || report.snapshot.question.question || '')}</p>
+      <div className="admin-meta mt-2">
+        {report.snapshot.moduleCode} · {report.reporter?.name || report.reporter?.username || 'Student'} · {new Date(report.createdAt).toLocaleDateString()}
+      </div>
+    </button>
+  );
   return (
     <div className="admin-portal">
       <div className="admin-layout">
@@ -238,66 +267,83 @@ function AdminWorkspace() {
           )}
           {isInbox && (
             <>
-              <label className="report-field mb-5 max-w-xs">
-                Report status
-                <select
-                  value={status}
-                  onChange={(e) => {
-                    setStatus(e.target.value);
-                    setOffset(0);
-                  }}
-                >
-                  <option value="all">All reports</option>
-                  {REPORT_STATUSES.map((s) => (
-                    <option key={s} value={s}>
-                      {statusLabels[s]}
-                    </option>
-                  ))}
-                </select>
-              </label>
+              <form className="admin-surface admin-filters" onSubmit={e=>{e.preventDefault();setSearch(searchDraft.trim());setOffset(0);}}>
+                <div className="admin-search-row">
+                  <label className="report-field">Search reports
+                    <input type="search" maxLength={200} value={searchDraft} placeholder="Question, note, name, email or account ID"
+                      onChange={e=>setSearchDraft(e.target.value)}/>
+                  </label>
+                  <button type="submit" className="report-primary">Search</button>
+                </div>
+                <div className="admin-filter-grid">
+                  <label className="report-field">Report status
+                    <select value={status} onChange={e=>{setStatus(e.target.value);setOffset(0);}}>
+                      <option value="all">All reports</option><option value="unresolved">Unresolved</option>
+                      {REPORT_STATUSES.map(s=><option key={s} value={s}>{statusLabels[s]}</option>)}
+                    </select>
+                  </label>
+                  <label className="report-field">Module
+                    <select value={moduleCode} onChange={e=>{setModuleCode(e.target.value);setSubjectName('');setChapterId('');setTopicName('');setOffset(0);}}>
+                      <option value="">All modules</option>{data?.facets?.modules.map(m=><option key={m} value={m}>{m}</option>)}
+                    </select>
+                  </label>
+                  <label className="report-field">Subject
+                    <select value={subjectName} onChange={e=>{setSubjectName(e.target.value);setChapterId('');setTopicName('');setOffset(0);}}>
+                      <option value="">All subjects</option>{data?.facets?.subjects.map(name=><option key={name} value={name}>{name}</option>)}
+                    </select>
+                  </label>
+                  <label className="report-field">Chapter
+                    <select value={chapterId} disabled={!moduleCode} onChange={e=>{setChapterId(e.target.value);setTopicName('');setOffset(0);}}>
+                      <option value="">{moduleCode?'All chapters':'Choose a module first'}</option>{moduleCode&&data?.facets?.chapters.map(c=><option key={c.id} value={c.id}>{c.title}</option>)}
+                    </select>
+                  </label>
+                  <label className="report-field">Topic / lecture
+                    <select value={topicName} disabled={!moduleCode} onChange={e=>{setTopicName(e.target.value);setOffset(0);}}>
+                      <option value="">{moduleCode?'All topics':'Choose a module first'}</option>{moduleCode&&data?.facets?.topics?.map(t=><option key={t} value={t}>{t}</option>)}
+                    </select>
+                  </label>
+                  <label className="report-field">View
+                    <select value={groupBy} onChange={e=>{setGroupBy(e.target.value);setOffset(0);}}>
+                      <option value="question">Grouped by question</option><option value="report">Individual reports</option>
+                    </select>
+                  </label>
+                </div>
+                {activeFilters&&<button type="button" className="report-secondary mt-4" onClick={()=>{
+                  setSearchDraft('');setSearch('');setStatus('all');setModuleCode('');setSubjectName('');setChapterId('');setTopicName('');setOffset(0);
+                }}>Clear filters</button>}
+              </form>
+              {!loading&&data&&<p className="report-muted mb-4" role="status">
+                {data.filteredReportCount??data.total} matching reports{data.groups ? ` across ${data.total} questions` : ''}. Newest first.
+              </p>}
               {loading ? (
                 <div role="status" className="admin-surface admin-empty">
                   <Loader2 size={22} className="animate-spin mx-auto mb-3" />
                   Loading reports…
                 </div>
-              ) : (
+              ) : error ? null : (
                 <div className="admin-inbox">
                   <div>
                     <div className="admin-surface admin-list">
                       {data?.reports.length ? (
-                        data.reports.map((report) => (
-                          <button
-                            key={report.id}
-                            className="admin-report-row"
-                            aria-current={selectedId === report.id}
-                            onClick={() => setParams({ report: report.id })}
-                          >
-                            <span className="admin-badge">
-                              {statusLabels[report.status]}
-                            </span>
-                            <strong>
-                              {REPORT_CATEGORIES[report.category].en}
-                            </strong>
-                            <p>
-                              {report.snapshot.question.text ||
-                                report.snapshot.question.question}
-                            </p>
-                            <div className="admin-meta mt-2">
-                              {report.snapshot.moduleCode} ·{" "}
-                              {new Date(report.createdAt).toLocaleDateString()}
-                            </div>
-                          </button>
-                        ))
+                        data.groups ? data.groups.map(group => (
+                          <details key={group.key} className="admin-report-group" open={group.reports.some(r=>r.id===selectedId)||undefined}>
+                            <summary>
+                              <strong>{cleanQuestionStem(group.reports[0].snapshot.question.text || group.reports[0].snapshot.question.question || '')}</strong>
+                              <span className="admin-meta block mt-2">{group.reports[0].snapshot.moduleCode} · {group.reports[0].snapshot.subjectName}{group.reports[0].snapshot.topicName ? ` · ${group.reports[0].snapshot.topicName}` : ''}</span>
+                              <span className="admin-group-counts">{group.reportCount} matching {group.reportCount===1?'report':'reports'} · {group.reporterCount} {group.reporterCount===1?'reporter':'reporters'} · {group.unresolvedCount} unresolved</span>
+                            </summary>
+                            {group.reports.map(renderReportRow)}
+                          </details>
+                        )) : data.reports.map(renderReportRow)
                       ) : (
                         <div className="admin-empty">
                           <Inbox
                             size={25}
                             className="mx-auto mb-3 text-teal-600"
                           />
-                          <h2>No reports here yet</h2>
+                          <h2>{activeFilters ? "No matching reports" : "No reports here yet"}</h2>
                           <p className="report-muted mt-2">
-                            Student reports will appear here after they are
-                            submitted.
+                            {activeFilters ? "Try another search or clear the filters." : "Student reports will appear here after they are submitted."}
                           </p>
                         </div>
                       )}
@@ -312,7 +358,7 @@ function AdminWorkspace() {
                       </button>
                       <span>
                         {data?.total
-                          ? `${offset + 1}–${Math.min(offset + 25, data.total)} of ${data.total}`
+                          ? `${offset + 1}–${Math.min(offset + 25, data.total)} of ${data.total} ${data.groups ? "questions" : "reports"}`
                           : "0 reports"}
                       </span>
                       <button
@@ -425,6 +471,7 @@ function ReportDetail({
         {new Date(report.createdAt).toLocaleString()} · Question{" "}
         {String(snapshot.question.id)}
       </p>
+      {snapshot.topicName && <p className="admin-meta mt-2">Topic: {snapshot.topicName}</p>}
       {report.subQuestionId && (
         <p className="admin-meta mt-2">Reported part: {report.subQuestionId}</p>
       )}

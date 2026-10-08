@@ -15,6 +15,7 @@ export const REPORT_STATUSES = [
 ] as const;
 export type ReportStatus = (typeof REPORT_STATUSES)[number];
 export interface QuestionSnapshot {
+  topicName?: string;
   moduleCode: string;
   chapterId: number;
   chapterTitle: string;
@@ -59,7 +60,22 @@ export interface QuestionReport {
     providerId?: string;
   };
 }
+export interface ReportGroup {
+  key: string;
+  reports: QuestionReport[];
+  reportCount: number;
+  reporterCount: number;
+  unresolvedCount: number;
+}
 export interface ReportList {
+  groups?: ReportGroup[];
+  filteredReportCount?: number;
+  facets?: {
+    modules: string[];
+    topics: string[];
+    subjects: string[];
+    chapters: Array<{id: number; title: string}>;
+  };
   reports: QuestionReport[];
   total: number;
   counts: Record<ReportStatus, number>;

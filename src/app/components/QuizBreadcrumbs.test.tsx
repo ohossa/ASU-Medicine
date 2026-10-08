@@ -10,6 +10,16 @@ const question: Question = { id: 'git-nav-q', lecture: 1, type: 'mcq', text: 'Te
 const chapter: ChapterData = { id: 101, title: 'Past exams — Anatomy', bankSection: 'past-exams', subtitle: 'Anatomy', emoji: '📚', page: 3, lectureRange: '', accentColor: 'anatomy', subjects: [] };
 beforeEach(() => localStorage.clear());
 describe('Minimal quiz navigation', () => {
+  it('announces a correct true/false selection and saves its boolean value', () => {
+    const tf: Question={...question,id:'tf',type:'truefalse',text:'Statement',options:['True','False'],correctIndex:0,explanation:'The attachment is correct.'};
+    const back=vi.fn();
+    render(<QuizInterface chapter={chapter} subject={{id:'anatomy',iconName:'Bone',name:'TF topic',lectures:'',lectureCount:1,questions:[tf]}} questions={[tf]} onBack={back} onFinish={vi.fn()}/>);
+    fireEvent.click(screen.getByRole('button',{name:'True'}));
+    expect(screen.getByText('Correct. The attachment is correct.')).toBeInTheDocument();
+    fireEvent.click(screen.getByRole('button',{name:/^Back$/}));
+    const saved=JSON.parse(localStorage.getItem('asu_quiz_session:guest:101:TF topic')!);
+    expect(saved.answers).toEqual({0:true});
+  });
   it('reveals each case explanation only after its answer is revealed or submitted', () => {
     const caseQuestion: Question = { ...question, id: 'case-explanations', type: 'case', text: 'Case stem', subQuestions: [
       { id: 'case-choice', type: 'mcq', text: 'Choose the structure', options: ['One', 'Two'], correctIndex: 1, explanation: 'The muscular wall propels the bolus.' },

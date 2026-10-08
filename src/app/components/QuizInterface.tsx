@@ -9,7 +9,7 @@ import { fx } from '../lib/pulseEngine';
 import type { QuizSessionSave } from '../hooks/useQuizSession';
 import { useQuizSession, saveLocalDrafts, loadLocalDrafts } from '../hooks/useQuizSession';
 import { useSoundEngine } from '../hooks/useSoundEngine';
-import { checkAnswerCorrect } from '../utils/quiz';
+import { checkAnswerCorrect, choiceAnswerIndex } from '../utils/quiz';
 import {
   ArrowLeft,
   ArrowRight,
@@ -621,14 +621,15 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
   };
 
   const renderTrueFalse = (value: QuizAnswer | undefined, onChange: (v: boolean) => void) => {
-    const hasAnswered = value !== undefined;
+    const selectedIndex = choiceAnswerIndex(question, value);
+    const hasAnswered = selectedIndex !== undefined;
     return (
       <div className="grid grid-cols-2 gap-3">
         {[
           { label: 'True', val: true, icon: <Check size={20} /> },
           { label: 'False', val: false, icon: <X size={20} /> }
         ].map(({ label, val, icon }) => {
-          const selected = value === val;
+          const selected = selectedIndex === (val ? 0 : 1);
           const isCorrect = val === (question.correctIndex === 0);
 
           let btnClass = 'flex flex-col items-center gap-2 rounded-2xl border py-6 transition-all duration-200 btn-press ';

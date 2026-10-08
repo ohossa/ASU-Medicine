@@ -1,3 +1,4 @@
+import { queryReportInbox } from './report-inbox.js';
 import { createHash } from "node:crypto";
 import { z } from "zod";
 import {
@@ -52,7 +53,7 @@ export interface ReportStore {
     report: QuestionReport,
   ): Promise<{ report: QuestionReport; created: boolean }>;
   get(id: string): Promise<QuestionReport | null>;
-  list(status: string, offset: number): Promise<ReportList>;
+  list(status: string, offset: number, limit?: number): Promise<ReportList>;
   update(
     id: string,
     revision: number,
@@ -151,18 +152,35 @@ export function createReportService(deps: Dependencies) {
       }
       return { id: result.report.id, saved: true };
     },
-    async list(token: string, query: { status?: unknown; offset?: unknown }) {
+    async list(token: string, query: Record<string, unknown>) {
       await owner(token);
-      const status = String(query.status || "all");
-      const offset = Number(query.offset || 0);
-      if (
-        !["all", ...REPORT_STATUSES].includes(status) ||
-        !Number.isSafeInteger(offset) ||
-        offset < 0 ||
-        offset > 100000
-      )
-        throw new ReportError(400, "Invalid inbox filter.");
-      return deps.store.list(status, offset);
+      const input = parse(z.object({
+        status: z.enum(['all', 'unresolved', ...REPORT_STATUSES]).default('all'),
+        offset: z.coerce.number().int().min(0).max(100000).default(0),
+        search: z.string().trim().max(200).default(''),
+        moduleCode: z.string().max(80).optional(),
+        subjectName: z.string().max(200).optional(),
+        topicName: z.string().max(300).optional(),
+        chapterId: z.coerce.number().int().min(0).optional(),
+        groupBy: z.enum(['report', 'question']).default('report'),
+      }), query);
+      const advanced = query.groupBy !== undefined || input.groupBy === 'question' || input.status === 'unresolved' ||
+        Boolean(input.search || input.moduleCode || input.subjectName || input.topicName || input.chapterId !== undefined);
+      if (!advanced) return deps.store.list(input.status, input.offset);
+      // Read in bounded batches so filtering/grouping covers the whole inbox,
+      // including old reports that precede this feature. Never silently truncate.
+      const reports: QuestionReport[] = [];
+      let offset = 0;
+      let total = 1;
+      while (offset < total) {
+        const page = await deps.store.list('all', offset, 500);
+        total = page.total;
+        if (total > 10000) throw new ReportError(503, 'Advanced filtering needs an index for inboxes larger than 10,000 reports.');
+        if (!page.reports.length && offset < total) throw new ReportError(503, 'The inbox changed while loading. Refresh and try again.');
+        reports.push(...page.reports);
+        offset += page.reports.length;
+      }
+      return queryReportInbox(reports, input);
     },
     async update(token: string, body: unknown) {
       const identity = await owner(token);

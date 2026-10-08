@@ -31,6 +31,17 @@ describe('checkAnswerCorrect — MCQ', () => {
 });
 
 describe('checkAnswerCorrect — True/False', () => {
+  it.each([
+    [0, true, true], [0, false, false], [1, false, true], [1, true, false],
+    [0, 0, true], [0, 1, false], [1, 1, true], [1, 0, false],
+  ])('grades key %s and selection %s consistently', (correctIndex, answer, expected) => {
+    expect(checkAnswerCorrect(makeQ({type:'truefalse',correctIndex}),answer)).toBe(expected);
+  });
+  it('rejects malformed answers instead of coercing them', () => {
+    const question=makeQ({type:'truefalse',correctIndex:0});
+    for(const answer of ['true','false','0',2,-1,{},null,undefined]) expect(checkAnswerCorrect(question,answer)).toBe(false);
+    expect(checkAnswerCorrect(makeQ({type:'truefalse'}),true)).toBe(false);
+  });
   const q = makeQ({ type: 'truefalse', correctIndex: 1 });
 
   it('returns true for correct bool index', () => {

@@ -1,5 +1,5 @@
 import { describe, it, expect, vi, afterEach } from "vitest";
-import { render, screen, cleanup } from "@testing-library/react";
+import { render, screen, cleanup, fireEvent, waitFor } from "@testing-library/react";
 import { MemoryRouter } from "react-router";
 import type { QuestionReport } from "../../app/reports/contracts";
 import AdminPortal from "../../pages/AdminPortal";
@@ -35,6 +35,29 @@ function showReport(extra: object = {}) {
   render(<MemoryRouter initialEntries={["/admin/reports?report=r_123"]}><AdminPortal /></MemoryRouter>);
 }
 describe("Private admin portal", () => {
+  it("shows repeat counts and keeps each grouped report selectable", async () => {
+    const second={...report,id:'r_456',reporterId:'student2'};
+    vi.stubGlobal('fetch',vi.fn(async (url:string)=>({ok:true,json:async()=>url.includes('action=access')?{isAdmin:true}:url.includes('action=detail')?{report}:{reports:[report,second],total:1,filteredReportCount:2,counts:{new:2,reviewing:0,fixed:0,dismissed:0},groups:[{key:'Q1',reports:[report,second],reportCount:2,reporterCount:2,unresolvedCount:2}]}})));
+    render(<MemoryRouter initialEntries={['/admin/reports']}><AdminPortal/></MemoryRouter>);
+    await screen.findByText('2 matching reports · 2 reporters · 2 unresolved');
+    const buttons=screen.getAllByRole('button',{name:/Wrong answer/});
+    expect(buttons).toHaveLength(2);
+    fireEvent.click(buttons[1]);
+    await screen.findByRole('heading',{name:'Reporter'});
+  });
+  it("submits encoded inbox filters and allows switching the grouping", async () => {
+    const fetch=vi.fn(async (url: string)=>({ok:true,json:async()=>url.includes('action=access')?{isAdmin:true}:{reports:[],total:0,counts:{new:0,reviewing:0,fixed:0,dismissed:0},groups:[],facets:{modules:['MGL-3'],subjects:['Tongue'],chapters:[{id:1,title:'Anatomy'}]}}}));
+    vi.stubGlobal('fetch',fetch);
+    render(<MemoryRouter initialEntries={['/admin/reports']}><AdminPortal/></MemoryRouter>);
+    const search=await screen.findByRole('searchbox',{name:'Search reports'});
+    fireEvent.change(search,{target:{value:'Sara & tongue'}});
+    fireEvent.click(screen.getByRole('button',{name:'Search'}));
+    await waitFor(()=>expect(fetch.mock.calls.some(([url])=>url.includes('search=Sara+%26+tongue'))).toBe(true));
+    fireEvent.change(screen.getByLabelText('Module'),{target:{value:'MGL-3'}});
+    await waitFor(()=>expect(fetch.mock.calls.some(([url])=>url.includes('moduleCode=MGL-3'))).toBe(true));
+    fireEvent.change(screen.getByLabelText('View'),{target:{value:'report'}});
+    await waitFor(()=>expect(fetch.mock.calls.some(([url])=>url.includes('groupBy=report'))).toBe(true));
+  });
   it("shows private reporter details and a contact link", async () => {
     showReport({reporter: {name: "Sara Ali", username: "sara", email: "sara@example.com", emailVerified: true}});
     await screen.findByRole("heading", {name: "Reporter"});

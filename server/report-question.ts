@@ -60,6 +60,7 @@ export async function resolveReportQuestion(
         chapterId: chapter.id,
         chapterTitle: chapter.title,
         subjectName: subject.name,
+        topicName: typeof question.lecture === 'number' ? subject.lectureNames?.[question.lecture - 1] : undefined,
         version: createHash("sha256")
           .update(JSON.stringify(question))
           .digest("hex"),

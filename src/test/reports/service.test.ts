@@ -33,7 +33,7 @@ function setup(admin = false) {
         return { report, created: true };
       }),
       get: vi.fn(async () => saved),
-      list: vi.fn(async () => ({
+      list: vi.fn(async (_status: string, _offset: number, _limit = 25) => ({
         reports: saved ? [saved] : [],
         total: saved ? 1 : 0,
         counts: { new: saved ? 1 : 0, reviewing: 0, fixed: 0, dismissed: 0 },
@@ -109,6 +109,22 @@ describe("Question report service", () => {
       ).rejects.toMatchObject({ status: 400 });
       expect(deps.store.create).not.toHaveBeenCalled();
     }
+  });
+  it("searches the entire inbox in batches before pagination and requires owner access", async () => {
+    const {service, deps, saved} = setup(true);
+    await service.submit('token', input);
+    const base=saved();
+    const records=Array.from({length: 520},(_,i)=>({...base,id:`r${i}`, reporterId:`student${i}`, explanation:i===519?'Unique review marker':'Other note'}));
+    deps.store.list.mockImplementation(async (_status: string, offset: number, limit = 25) => ({
+      reports:records.slice(offset,offset+limit),total:records.length,counts:{new:520,reviewing:0,fixed:0,dismissed:0},
+    }));
+    const result=await service.list('token',{search:'Unique review marker',groupBy:'question'});
+    expect(result.reports.map(r=>r.id)).toEqual(['r519']);
+    expect(deps.store.list).toHaveBeenCalledWith('all',500,500);
+    await expect(service.list('token',{groupBy:'invalid'})).rejects.toMatchObject({status:400});
+    const student=setup();
+    await expect(student.service.list('token',{search:'student',groupBy:'question'})).rejects.toMatchObject({status:403});
+    expect(student.deps.store.list).not.toHaveBeenCalled();
   });
   it("requires explanation for other and rejects unknown question references", async () => {
     const { service, deps } = setup();
