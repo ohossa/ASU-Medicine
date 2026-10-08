@@ -56,12 +56,16 @@ describe('Integrated GIT question bank',()=>{
     const loaded=new Map(cs.flatMap(c=>c.subjects.flatMap(s=>s.questions)).map(q=>[String(q.id),q]));
     for(const q of rawQuestions){
       const actual=loaded.get(q.id)!;expect(actual,q.id).toBeDefined();
-      for(const key of ['type','lecture','text','explanation','options','correctIndex','pairs','modelAnswer','blanks','acceptedAnswers']){
+      // Display may drop only a leading source label; the canonical file is hash-checked above.
+      expect(q.text.endsWith(actual.text),q.id+' stem remainder').toBe(true);
+      expect(actual.text.length,q.id+' nonempty stem').toBeGreaterThan(0);
+      for(const key of ['type','lecture','explanation','options','correctIndex','pairs','modelAnswer','blanks','acceptedAnswers']){
         if(key in q)expect((actual as any)[key],q.id+' '+key).toEqual((q as any)[key]);
       }
       if(q.type==='case')for(let i=0;i<(q as any).subQuestions.length;i++){
         const child=(q as any).subQuestions[i];
-        for(const key of ['id','type','text','explanation','options','correctIndex','modelAnswer','blanks','acceptedAnswers'])if(key in child)expect((actual.subQuestions![i] as any)[key],q.id+' '+key).toEqual(child[key]);
+        expect(child.text.endsWith(actual.subQuestions![i].text),child.id+' stem remainder').toBe(true);
+        for(const key of ['id','type','explanation','options','correctIndex','modelAnswer','blanks','acceptedAnswers'])if(key in child)expect((actual.subQuestions![i] as any)[key],q.id+' '+key).toEqual(child[key]);
       }
     }
   });

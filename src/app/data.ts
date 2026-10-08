@@ -1,3 +1,4 @@
+import { cleanQuestionStem } from './utils/questionStem';
 import { applyPublishedEdits } from './lib/publishedEdits';
 import type { ChapterData, Question, SubjectColor, SubjectData, SubQuestion } from './types';
 import { assignDefaultDifficulty, assignDefaultBloomLevel } from './lib/assignDefaultDifficulty';
@@ -186,7 +187,7 @@ const SUBJECT_ORDER: SubjectColor[] = [
 ];
 
 function transformSubQuestion(sq: RawSubQuestion, parentId: number): SubQuestion {
-  const textVal = sq.question || sq.text || '';
+  const textVal = cleanQuestionStem(sq.question || sq.text || '');
   const parts = sq.id.split('_');
   const suffix = parts.length > 1 ? parts[1] : sq.id;
   const newSubId = `${parentId}_${suffix}`;
@@ -225,7 +226,7 @@ function extractStarRepetitionCount(text: string): { text: string; count?: numbe
 function transformQuestion(q: RawQuestion, color: SubjectColor, idOffset: number): Question {
   const rawType = q.type || 'essay'; // default to essay if not specified
   const textVal = q.question || q.text || '';
-  const { text: cleanText, count: starCount } = extractStarRepetitionCount(textVal);
+  const { text: cleanText, count: starCount } = extractStarRepetitionCount(cleanQuestionStem(textVal));
   const uniqueId = q.id + idOffset;
 
   if (rawType === 'case') {
@@ -476,7 +477,7 @@ function transformV2Question(q: V2RawQuestion, subjectColor: SubjectColor): Ques
     id: q.id,
     contentVersion: q.contentVersion,
     type: q.type,
-    text: cleanCircledC(q.text || q.question || ''),
+    text: cleanQuestionStem(cleanCircledC(q.text || q.question || '')),
     lecture: q.lecture ?? 1,
     subjectColor,
     options: q.options,
@@ -488,7 +489,7 @@ function transformV2Question(q: V2RawQuestion, subjectColor: SubjectColor): Ques
     subQuestions: q.subQuestions ? q.subQuestions.map((sq) => ({
       id: sq.id,
       type: sq.type,
-      text: cleanCircledC(sq.text || sq.question || ''),
+      text: cleanQuestionStem(cleanCircledC(sq.text || sq.question || '')),
       options: sq.options,
       correctIndex: sq.correctIndex,
       modelAnswer: sq.modelAnswer ? cleanCircledC(sq.modelAnswer) : undefined,
