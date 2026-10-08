@@ -34,9 +34,19 @@ export async function authenticateReportUser(token: string): Promise<Identity> {
       e.emailAddress.toLowerCase() === OWNER_EMAIL &&
       e.verification?.status === "verified",
   );
+  const primaryEmail = user.emailAddresses.find(e => e.id === user.primaryEmailAddressId)
+    ?? user.emailAddresses.find(e => e.verification?.status === 'verified')
+    ?? user.emailAddresses[0];
+  const name = [user.firstName, user.lastName].filter(Boolean).join(' ').trim();
   const pinnedId = process.env.REPORT_ADMIN_USER_ID;
   return {
     id: user.id,
+    reporter: {
+      name: name || null,
+      username: user.username || null,
+      email: primaryEmail?.emailAddress || null,
+      emailVerified: primaryEmail?.verification?.status === 'verified',
+    },
     isAdmin: ownsEmail && (!pinnedId || pinnedId === user.id) && (process.env.VERCEL_ENV !== 'production' || Boolean(pinnedId)),
   };
 }

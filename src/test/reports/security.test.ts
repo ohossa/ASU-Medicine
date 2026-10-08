@@ -27,6 +27,32 @@ afterEach(() => {
   vi.clearAllMocks();
 });
 describe("Report authentication", () => {
+  it("captures the authenticated primary email and name without using a secondary address", async () => {
+    clerk.getUser.mockResolvedValue({
+      id: "student1", firstName: "Sara", lastName: "Ali", username: "sara",
+      primaryEmailAddressId: "primary",
+      emailAddresses: [
+        { id: "secondary", emailAddress: "secondary@example.com", verification: { status: "verified" } },
+        { id: "primary", emailAddress: "sara@example.com", verification: { status: "verified" } },
+      ],
+    });
+    const identity = await authenticateReportUser("token");
+    expect(identity).toMatchObject({ id: "student1", isAdmin: false, reporter: {
+      name: "Sara Ali", username: "sara", email: "sara@example.com", emailVerified: true,
+    } });
+  });
+  it("handles missing profile details and preserves unverified email status", async () => {
+    clerk.getUser.mockResolvedValue({ id: "student1", emailAddresses: [] });
+    expect((await authenticateReportUser("token"))).toMatchObject({reporter: {
+      name: null, username: null, email: null, emailVerified: false,
+    }});
+    clerk.getUser.mockResolvedValue({ id: "student1", username: "student", emailAddresses: [
+      { emailAddress: "student@example.com", verification: { status: "unverified" } },
+    ] });
+    expect((await authenticateReportUser("token"))).toMatchObject({reporter: {
+      name: null, username: "student", email: "student@example.com", emailVerified: false,
+    }});
+  });
   it("requires a verified owner email and honors a pinned user ID", async () => {
     expect((await authenticateReportUser("token")).isAdmin).toBe(true);
     vi.stubEnv("REPORT_ADMIN_USER_ID", "someone-else");

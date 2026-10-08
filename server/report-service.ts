@@ -6,6 +6,7 @@ import {
   type QuestionSnapshot,
   type ReportList,
   type ReportSubmission,
+  type ReporterProfile,
 } from "../src/app/reports/contracts.js";
 export class ReportError extends Error {
   status: number;
@@ -42,6 +43,7 @@ const updateInput = z
   })
   .strict();
 export interface Identity {
+  reporter?: ReporterProfile;
   id: string;
   isAdmin: boolean;
 }
@@ -125,6 +127,7 @@ export function createReportService(deps: Dependencies) {
         id,
         requestHash,
         reporterId: identity.id,
+        reporter: identity.reporter ? { ...identity.reporter } : undefined,
         category: input.category,
         explanation: input.explanation,
         subQuestionId: input.subQuestionId,

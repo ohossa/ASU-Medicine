@@ -11,7 +11,7 @@ const input = {
 function setup(admin = false) {
   let saved: any;
   const deps = {
-    authenticate: vi.fn(async () => ({ id: "student1", isAdmin: admin })),
+    authenticate: vi.fn(async () => ({ id: "student1", isAdmin: admin, reporter: { name: "Sara Ali", username: "sara", email: "sara@example.com", emailVerified: true } })),
     resolveQuestion: vi.fn(async () => ({
       moduleCode: "MEM-2",
       chapterId: 1,
@@ -61,6 +61,7 @@ describe("Question report service", () => {
     expect(deps.sendEmail).toHaveBeenCalledTimes(1);
     expect(saved().snapshot.version).toBe("hash");
     expect(saved().reporterId).toBe("student1");
+    expect(saved().reporter).toEqual({name: "Sara Ali", username: "sara", email: "sara@example.com", emailVerified: true});
     expect(saved().status).toBe("new");
   });
   it("keeps a saved report when email fails and exposes no private data to the student", async () => {
@@ -72,6 +73,8 @@ describe("Question report service", () => {
       state: "failed",
     });
     expect(result).not.toHaveProperty("reporterId");
+    expect(result).not.toHaveProperty("reporter");
+    expect(JSON.stringify(result)).not.toContain("sara@example.com");
     expect(JSON.stringify(result)).not.toContain("secret");
   });
   it("blocks students from the inbox, updates and notification retries", async () => {
@@ -98,6 +101,7 @@ describe("Question report service", () => {
       { category: "anything" },
       { explanation: "x".repeat(2001) },
       { reporterId: "owner" },
+      { reporter: { name: "Owner", email: "owner@example.com" } },
     ]) {
       const { service, deps } = setup();
       await expect(

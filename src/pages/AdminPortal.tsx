@@ -428,6 +428,21 @@ function ReportDetail({
       {report.subQuestionId && (
         <p className="admin-meta mt-2">Reported part: {report.subQuestionId}</p>
       )}
+      <section className="admin-reporter" aria-labelledby="reporter-heading">
+        <h3 id="reporter-heading">Reporter</h3>
+        <dl>
+          <div><dt>Name</dt><dd>{report.reporter?.name || "Not recorded"}</dd></div>
+          {report.reporter?.username && <div><dt>Username</dt><dd>{report.reporter.username}</dd></div>}
+          <div><dt>Email</dt><dd>
+            {report.reporter?.email ? <>
+              <a href={`mailto:${report.reporter.email}`}>{report.reporter.email}</a>
+              <span className="admin-meta block mt-1">{report.reporter.emailVerified ? "Verified email" : "Email not verified"}</span>
+            </> : "Not recorded"}
+          </dd></div>
+          <div><dt>Account ID</dt><dd>{report.reporterId}</dd></div>
+        </dl>
+        <p className="admin-meta mt-3">Account details recorded when this report was submitted.</p>
+      </section>
       <div className="admin-note">
         {report.explanation || "No explanation was added."}
       </div>
@@ -523,8 +538,6 @@ function ReportDetail({
       )}
       <p className="admin-meta mt-5">
         Report ID: {report.id}
-        <br />
-        Reporter: {report.reporterId}
         {report.updatedBy && (
           <>
             <br />

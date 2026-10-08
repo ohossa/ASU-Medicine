@@ -32,10 +32,18 @@ export interface QuestionSnapshot {
     [key: string]: unknown;
   };
 }
+/** Identity captured from Clerk on the server at report submission time. */
+export interface ReporterProfile {
+  name: string | null;
+  username: string | null;
+  email: string | null;
+  emailVerified: boolean;
+}
 export interface QuestionReport {
   id: string;
   requestHash: string;
   reporterId: string;
+  reporter?: ReporterProfile; // Older stored reports may lack this snapshot.
   category: ReportCategory;
   explanation: string;
   subQuestionId?: string;
