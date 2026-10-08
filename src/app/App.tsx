@@ -78,6 +78,7 @@ import { useQuizSession, clearLocalDrafts } from './hooks/useQuizSession';
 import type { QuizSessionSave } from './hooks/useQuizSession';
 import QuizResumeCard from './components/QuizResumeCard';
 import { useCloudSync } from './hooks/useCloudSync';
+import { useAcademicYear } from './preferences/useAcademicYear';
 import { YearSelectionModal } from './components/YearSelectionModal';
 import {
   ensureDataLoaded,
@@ -379,14 +380,7 @@ function MainApp() {
   // ── 1. State Initializations ──────────────────────────────────────────────────
 
   // Student Year tracking
-  const [studentYear, setStudentYear] = useState<number | null>(() => {
-    try {
-      const saved = safeStorage.getItem<string | null>('asu_medical_student_year', null);
-      return saved ? parseInt(saved, 10) : null;
-    } catch {
-      return null;
-    }
-  });
+  const {year: studentYear, saveYear: setStudentYear, loading: yearLoading, error: yearError, retry: retryYear} = useAcademicYear();
 
   // Navigation states
   const [screen, setScreen] = useState<Screen>(() => {
@@ -511,22 +505,6 @@ function MainApp() {
   }, [studentYear]);
 
   // ── 3. Life-Cycle Effects ─────────────────────────────────────────────────────
-
-  // Listen for storage changes from cloud sync
-  useEffect(() => {
-    const handleStorage = () => {
-      try {
-        const saved = safeStorage.getItem<string | null>('asu_medical_student_year', null);
-        if (saved) {
-          setStudentYear(parseInt(saved, 10));
-        }
-      } catch (e) {
-        console.error(e);
-      }
-    };
-    window.addEventListener('storage', handleStorage);
-    return () => window.removeEventListener('storage', handleStorage);
-  }, []);
 
   // Listen for history popstate events (back/forward browser buttons)
   useEffect(() => {
@@ -1044,10 +1022,10 @@ function MainApp() {
             {/* Main Dashboard page */}
             <Route path="/" element={
               <Suspense fallback={<div className="fixed inset-0 bg-background pointer-events-none" />}>
-                <Dashboard 
+                {yearLoading ? <div role="status" className="p-8 text-center text-muted-foreground">Loading your saved year…</div> : <Dashboard studentYear={studentYear}
                   userButton={customUserButton} 
                   onOpenTrackerSelector={() => setShowTrackerSelector(true)} 
-                />
+                />}
               </Suspense>
             } />
 
@@ -1149,10 +1127,10 @@ function MainApp() {
             <Route path="/marks-calculator" element={
               <FeatureErrorBoundary name="MarksCalculator">
                 <Suspense fallback={<div>Loading...</div>}>
-                  <MarksCalculator
+                  {yearLoading ? <div role="status" className="p-8 text-center text-muted-foreground">Loading your saved year…</div> : <MarksCalculator studentYear={studentYear}
                     onBack={() => navigate('/')}
                     userButton={customUserButton}
-                  />
+                  />}
                 </Suspense>
               </FeatureErrorBoundary>
             } />
@@ -1318,8 +1296,8 @@ function MainApp() {
       )}
 
       {/* YEAR SELECTION ONBOARDING MODAL */}
-      {!studentYear && (
-        <YearSelectionModal onSelect={setStudentYear} />
+      {!yearLoading && !studentYear && (
+        <YearSelectionModal onSelect={setStudentYear} loadError={yearError} onRetry={retryYear} />
       )}
 
       {/* SUPPORT & BUG REPORT MODAL */}

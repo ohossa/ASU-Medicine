@@ -21,3 +21,16 @@ describe('GIT calculator integration',()=>{
  expect(screen.getByRole('status')).toHaveTextContent('Final requirement met');
  });
 });
+
+it('opens the saved academic year instead of the last browsed year',()=>{
+ localStorage.removeItem('asu_marks_calculator_selected_preset');localStorage.setItem('asu_marks_calculator_year_tab','1');
+ render(<MarksCalculator onBack={()=>{}} studentYear={3}/>);
+ expect(screen.getByRole('button',{name:/MGL-3.*GIT/i})).toBeInTheDocument();
+});
+
+it('retains stored module scores when opening the account year selector',()=>{
+ const saved=JSON.stringify({'MGL-3':{'git-assessment-1':'25'}});
+ localStorage.setItem('asu_marks_calculator_scores',saved);
+ render(<MarksCalculator onBack={()=>{}} studentYear={2}/>);
+ expect(localStorage.getItem('asu_marks_calculator_scores')).toBe(saved);
+});

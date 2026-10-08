@@ -23,3 +23,13 @@ describe('account cloud sync delta contract',()=>{
  });
  it('rejects array bodies rather than treating them as a snapshot',async()=>{const res=await call(['bad']);expect(res.status).toHaveBeenCalledWith(400);expect(mocks.set).not.toHaveBeenCalled();});
 });
+
+it('stores the owner academic year permanently and ignores another account year',async()=>{
+ const res=await call({'asu_preferences:owner:academic-year':{year:3,version:1,timestamp:1},'asu_preferences:other:academic-year':{year:2,version:1,timestamp:1}});
+ expect(res.status).toHaveBeenCalledWith(200);expect(mocks.set).toHaveBeenCalledTimes(1);
+ expect(mocks.set.mock.calls[0][0]).toBe('asu_data:owner:asu_preferences:owner:academic-year');expect(mocks.set.mock.calls[0][2]).toBeUndefined();
+});
+it('rejects invalid academic year data before writing any keys',async()=>{
+ const res=await call({theme:'dark','asu_preferences:owner:academic-year':{year:9,version:1,timestamp:1}});
+ expect(res.status).toHaveBeenCalledWith(400);expect(mocks.set).not.toHaveBeenCalled();
+});

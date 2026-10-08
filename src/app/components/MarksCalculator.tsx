@@ -230,10 +230,11 @@ function ProgressRing({ pct, label }: { pct: number; label: string }) {
 
 /* ------------------------------ Main component ----------------------------- */
 
-export function MarksCalculator({ onBack, userButton }: { onBack: () => void; userButton?: React.ReactNode }) {
+export function MarksCalculator({ onBack, userButton, studentYear }: { onBack: () => void; userButton?: React.ReactNode; studentYear?: number | null }) {
 
   // Navigation & Selection state loaded from localStorage for persistent user session
   const [selectedPreset, setSelectedPreset] = useState<ModulePreset | null>(() => {
+    if (studentYear) return null;
     try {
       const saved = localStorage.getItem('asu_marks_calculator_selected_preset');
       return saved ? JSON.parse(saved) : null;
@@ -244,6 +245,7 @@ export function MarksCalculator({ onBack, userButton }: { onBack: () => void; us
 
   const [selectedYearTab, setSelectedYearTab] = useState<number>(() => {
     try {
+      if (studentYear) return studentYear;
       const saved = localStorage.getItem('asu_marks_calculator_year_tab');
       return saved ? Number(saved) : 2;
     } catch {
@@ -253,12 +255,21 @@ export function MarksCalculator({ onBack, userButton }: { onBack: () => void; us
 
   const [selectedSemesterTab, setSelectedSemesterTab] = useState<number>(() => {
     try {
+      if (studentYear) return 1;
       const saved = localStorage.getItem('asu_marks_calculator_semester_tab');
       return saved ? Number(saved) : 2;
     } catch {
       return 2;
     }
   });
+
+  useEffect(() => {
+    if (!studentYear) return;
+    setSelectedYearTab(studentYear);
+    setSelectedSemesterTab(1);
+    // Open the year selector, retaining saved scores for every module.
+    setSelectedPreset(null);
+  }, [studentYear]);
 
   // Scores inputs mapping
   const [scores, setScores] = useState<Record<string, string>>({});
@@ -357,20 +368,20 @@ export function MarksCalculator({ onBack, userButton }: { onBack: () => void; us
     const handleStorage = () => {
       try {
         const savedPreset = localStorage.getItem('asu_marks_calculator_selected_preset');
-        if (savedPreset) {
+        if (!studentYear && savedPreset) {
           const parsedPreset = JSON.parse(savedPreset);
           setSelectedPreset(prev => JSON.stringify(prev) !== JSON.stringify(parsedPreset) ? parsedPreset : prev);
-        } else {
+        } else if (!studentYear) {
           setSelectedPreset(null);
         }
         
         const savedYear = localStorage.getItem('asu_marks_calculator_year_tab');
-        if (savedYear) {
+        if (!studentYear && savedYear) {
           setSelectedYearTab(Number(savedYear));
         }
 
         const savedSem = localStorage.getItem('asu_marks_calculator_semester_tab');
-        if (savedSem) {
+        if (!studentYear && savedSem) {
           setSelectedSemesterTab(Number(savedSem));
         }
 
@@ -399,7 +410,7 @@ export function MarksCalculator({ onBack, userButton }: { onBack: () => void; us
 
     window.addEventListener('storage', handleStorage);
     return () => window.removeEventListener('storage', handleStorage);
-  }, []);
+  }, [studentYear]);
 
   const isCustom = selectedPreset?.id === CUSTOM_ID;
 

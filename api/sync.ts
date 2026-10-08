@@ -208,10 +208,17 @@ export default async function handler(req: any, res: any) {
       }
 
       try {
+        const yearKey = `asu_preferences:${userId}:academic-year`;
+        const yearValue = body[yearKey];
+        if (yearValue !== undefined && yearValue !== null && (
+          typeof yearValue !== 'object' || yearValue.version !== 1 ||
+          !Number.isInteger(yearValue.year) || yearValue.year < 1 || yearValue.year > 5 ||
+          !Number.isFinite(yearValue.timestamp)
+        )) return res.status(400).json({ error: 'Invalid academic year preference.' });
         // The browser sends a delta, not a complete account snapshot.
         // Only explicit null values delete data; omitted keys stay untouched.
         for (const [strippedKey, value] of Object.entries(body)) {
-          if (strippedKey.startsWith('asu_preferences:') && strippedKey !== `asu_preferences:${userId}:shuffle`) continue;
+          if (strippedKey.startsWith('asu_preferences:') && strippedKey !== `asu_preferences:${userId}:shuffle` && strippedKey !== yearKey) continue;
           if (strippedKey.startsWith('asu_quiz_session:') && !strippedKey.startsWith(`asu_quiz_session:${userId}:`)) continue;
           const fullKey = `${keyPrefix}${strippedKey}`;
           if (value === null) {
@@ -220,7 +227,7 @@ export default async function handler(req: any, res: any) {
           }
           const compressed = compress(JSON.stringify(value));
           if (compressed) {
-            if (strippedKey === `asu_preferences:${userId}:shuffle`) await dbClient.set(fullKey, compressed);
+            if (strippedKey === `asu_preferences:${userId}:shuffle` || strippedKey === yearKey) await dbClient.set(fullKey, compressed);
             else await setWithTTL(fullKey, compressed);
           }
         }

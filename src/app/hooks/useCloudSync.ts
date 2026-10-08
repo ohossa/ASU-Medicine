@@ -5,7 +5,6 @@ const STORAGE_KEYS = [
   'theme',
   'language',
   'endocrine_essay_quiz_history',
-  'asu_medical_student_year',
   'asu_portal_screen',
   'asu_portal_year',
   'asu_portal_semester',
@@ -160,6 +159,7 @@ export function useCloudSync() {
         if (data && isMounted) {
           let hasChanges = false;
           Object.entries(data).forEach(([key, cloudValAny]) => {
+            if (key === 'asu_medical_student_year') return; // Academic year now has its own account-scoped cloud preference.
             if (key.startsWith('asu_preferences:') && key !== `asu_preferences:${userId}:shuffle`) return;
             if (userId && key.startsWith('asu_quiz_session:') && !key.startsWith(`asu_quiz_session:${userId}:`)) return;
             if (cloudValAny !== undefined && cloudValAny !== null) {

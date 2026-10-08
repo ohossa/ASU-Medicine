@@ -12,6 +12,13 @@ vi.mock('../app/theme/subjectThemes', () => ({ applySubjectTheme: vi.fn(() => ({
 vi.mock('../app/lib/pulseEngine', () => ({ pulse: { burst: vi.fn() } }));
 vi.mock('../app/utils/storage', () => ({ getQuizHistoryForModule: () => [] }));
 
+it('centers the saved year and responds to a changed account year',()=>{
+ const {rerender}=render(<MemoryRouter><Dashboard studentYear={2}/></MemoryRouter>);
+ expect(screen.getByRole('button',{name:'Go to Year 2'})).toHaveAttribute('aria-pressed','true');
+ rerender(<MemoryRouter><Dashboard studentYear={1}/></MemoryRouter>);
+ expect(screen.getByRole('button',{name:'Go to Year 1'})).toHaveAttribute('aria-pressed','true');
+});
+
 describe('GIT entry from the home page', () => {
   it('Semester 1 breadcrumbs land on GIT directly', () => {
     render(<MemoryRouter initialEntries={['/year-3?semester=1']}><Routes><Route path='/year-3' element={<YearModules/>}/></Routes></MemoryRouter>);

@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { GraduationCap, Check } from 'lucide-react';
 import { useLanguage } from '../../hooks/useLanguage';
 import safeStorage from '../../utils/safeStorage';
@@ -7,7 +8,7 @@ import type { ChapterData } from '../../types';
 
 interface AcademicYearProfilePageProps {
   studentYear: number | null;
-  setStudentYear: (y: number | null) => void;
+  setStudentYear: (y: number) => Promise<void>;
   setScreen: React.Dispatch<React.SetStateAction<Screen>>;
   setSelectedYear: React.Dispatch<React.SetStateAction<number | null>>;
   setSelectedSemester: React.Dispatch<React.SetStateAction<number | null>>;
@@ -28,7 +29,14 @@ export function AcademicYearProfilePage({
 }: AcademicYearProfilePageProps) {
   const { language } = useLanguage();
 
-  const handleSelectYear = (year: number) => {
+  const [saving,setSaving] = useState(false);
+  const [error,setError] = useState<string | null>(null);
+  const handleSelectYear = async (year: number) => {
+    if (saving) return;
+    setSaving(true);setError(null);
+    try { await setStudentYear(year); }
+    catch {setError(language === 'en' ? 'Your year could not be saved. Please try again.' : 'تعذر حفظ السنة. حاول مرة أخرى.');return;}
+    finally {setSaving(false);}
     safeStorage.setItem('asu_medical_student_year', year.toString());
     safeStorage.removeItem('asu_portal_year');
     safeStorage.removeItem('asu_portal_semester');
@@ -36,7 +44,6 @@ export function AcademicYearProfilePage({
     safeStorage.removeItem('asu_portal_studyMode');
     safeStorage.removeItem('asu_portal_screen');
 
-    setStudentYear(year);
     setSelectedYear(null);
     setSelectedSemester(null);
     setSelectedModule(null);
@@ -82,12 +89,14 @@ export function AcademicYearProfilePage({
         </div>
       </div>
 
+      {error && <p role="alert" className="text-red-500 mb-3">{error}</p>}
       <div className="space-y-2">
         {([1, 2, 3, 4, 5] as const).map((yr) => {
           const isCurrent = studentYear === yr;
           return (
             <button
               key={yr}
+              disabled={saving}
               onClick={() => handleSelectYear(yr)}
               className={`w-full p-4 rounded-xl flex items-center justify-between border transition-all duration-200 text-left rtl:text-right ${
                 isCurrent

@@ -46,13 +46,15 @@ const TOOLS = [
 const SPRING = "cubic-bezier(0.34, 1.45, 0.45, 1)";
 
 interface DashboardProps {
+  studentYear?: number | null;
   userButton?: React.ReactNode;
   onOpenTrackerSelector?: () => void;
 }
 
-export default function Dashboard({ userButton, onOpenTrackerSelector }: DashboardProps) {
+export default function Dashboard({ userButton, onOpenTrackerSelector, studentYear }: DashboardProps) {
   const navigate = useNavigate();
-  const [activeIdx, setActiveIdx] = useState(2); // Year 3 centered
+  const [activeIdx, setActiveIdx] = useState((studentYear ?? 3) - 1);
+  useEffect(() => { setActiveIdx((studentYear ?? 3) - 1); }, [studentYear]);
   const dragX = useRef<number | null>(null);
 
   useEffect(() => {
