@@ -344,6 +344,11 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
     destination();
   }, [chapter?.id, subject?.name, saveQuizSession, questionIds, questionVersions]);
   const handleBack = React.useCallback(() => saveAndNavigate(onBack), [saveAndNavigate, onBack]);
+  useEffect(() => {
+    const saveBeforeRefresh = () => saveAndNavigate(() => {});
+    window.addEventListener('asu:save-before-refresh', saveBeforeRefresh);
+    return () => window.removeEventListener('asu:save-before-refresh', saveBeforeRefresh);
+  }, [saveAndNavigate]);
 
   /* Smooth scroll to essay answer when revealed */
   const essayAnswerRef = useRef<HTMLDivElement | null>(null);

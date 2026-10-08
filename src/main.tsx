@@ -1,3 +1,4 @@
+import { SiteUpdateNotice } from './app/components/SiteUpdateNotice';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { ClerkProvider } from '@clerk/clerk-react';
@@ -22,6 +23,7 @@ createRoot(document.getElementById('root')!).render(
         <ThemeProvider>
           <LanguageProvider>
             <App />
+            <SiteUpdateNotice />
             <Analytics />
             <SpeedInsights />
           </LanguageProvider>
@@ -39,6 +41,7 @@ if (import.meta.env.PROD && 'serviceWorker' in navigator) {
         console.log('ServiceWorker registration successful with scope: ', registration.scope);
         // Proactively check for service worker updates on page load
         registration.update().catch(err => console.warn('Failed to check for sw update:', err));
+        window.addEventListener('focus', () => { registration.update().catch(() => {}); });
       })
       .catch((err) => {
         console.error('ServiceWorker registration failed: ', err);
