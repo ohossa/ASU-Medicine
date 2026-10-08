@@ -1,0 +1,675 @@
+[
+  {
+    "number": 1,
+    "text": "All of the following items are included in the history taking (sheet) except",
+    "answerLabel": "c",
+    "pages": [
+      1
+    ],
+    "options": [
+      {
+        "label": "a",
+        "text": "Family history"
+      },
+      {
+        "label": "b",
+        "text": "Past history"
+      },
+      {
+        "label": "c",
+        "text": "Pulse examination"
+      },
+      {
+        "label": "d",
+        "text": "Presenting complaint"
+      }
+    ],
+    "correctIndex": 2
+  },
+  {
+    "number": 2,
+    "text": "All of the following items are included in the history taking (sheet) except",
+    "answerLabel": "h",
+    "pages": [
+      1
+    ],
+    "options": [
+      {
+        "label": "e",
+        "text": "Family history"
+      },
+      {
+        "label": "f",
+        "text": "Past history"
+      },
+      {
+        "label": "g",
+        "text": "Personal history"
+      },
+      {
+        "label": "h",
+        "text": "Lymph nodes examination"
+      }
+    ],
+    "correctIndex": 3
+  },
+  {
+    "number": 3,
+    "text": "All of the following items are included in the history taking (sheet) except",
+    "answerLabel": "d",
+    "pages": [
+      1
+    ],
+    "options": [
+      {
+        "label": "a",
+        "text": "social history"
+      },
+      {
+        "label": "b",
+        "text": "drug history"
+      },
+      {
+        "label": "c",
+        "text": "Presenting complaint"
+      },
+      {
+        "label": "d",
+        "text": "Body weight"
+      }
+    ],
+    "correctIndex": 3
+  },
+  {
+    "number": 4,
+    "text": "All of the following items are included in the history taking (sheet) except",
+    "answerLabel": "a",
+    "pages": [
+      1
+    ],
+    "options": [
+      {
+        "label": "a",
+        "text": "Facial expression"
+      },
+      {
+        "label": "b",
+        "text": "History of present illness"
+      },
+      {
+        "label": "c",
+        "text": "Past history"
+      },
+      {
+        "label": "d",
+        "text": "Presenting complaint"
+      }
+    ],
+    "correctIndex": 0
+  },
+  {
+    "number": 5,
+    "text": "All of the following items are included in the general examination except",
+    "answerLabel": "a",
+    "pages": [
+      1
+    ],
+    "options": [
+      {
+        "label": "a",
+        "text": "Family history"
+      },
+      {
+        "label": "b",
+        "text": "Pulse examination"
+      },
+      {
+        "label": "c",
+        "text": "Blood pressure"
+      },
+      {
+        "label": "d",
+        "text": "complexions"
+      }
+    ],
+    "correctIndex": 0
+  },
+  {
+    "number": 6,
+    "text": "All of the following items are included in the general examination except",
+    "answerLabel": "a",
+    "pages": [
+      1
+    ],
+    "options": [
+      {
+        "label": "a",
+        "text": "Family history"
+      },
+      {
+        "label": "b",
+        "text": "Pulse examination"
+      },
+      {
+        "label": "c",
+        "text": "Blood pressure"
+      },
+      {
+        "label": "d",
+        "text": "complexions"
+      }
+    ],
+    "correctIndex": 0
+  },
+  {
+    "number": 7,
+    "text": "All of the following items are included in the general examination except",
+    "answerLabel": "a",
+    "pages": [
+      1
+    ],
+    "options": [
+      {
+        "label": "a",
+        "text": "complaint"
+      },
+      {
+        "label": "b",
+        "text": "Pulse examination"
+      },
+      {
+        "label": "c",
+        "text": "Blood pressure"
+      },
+      {
+        "label": "d",
+        "text": "complexions"
+      }
+    ],
+    "correctIndex": 0
+  },
+  {
+    "number": 8,
+    "text": "All of the following items are included in the general examination except",
+    "answerLabel": "b",
+    "pages": [
+      2
+    ],
+    "options": [
+      {
+        "label": "a",
+        "text": "Lymph node examination"
+      },
+      {
+        "label": "b",
+        "text": "Blood transfusion"
+      },
+      {
+        "label": "c",
+        "text": "Blood pressure"
+      },
+      {
+        "label": "d",
+        "text": "Complexions"
+      }
+    ],
+    "correctIndex": 1
+  },
+  {
+    "number": 9,
+    "text": "All of the following items are superficial LN groups except",
+    "answerLabel": "a",
+    "pages": [
+      2
+    ],
+    "options": [
+      {
+        "label": "a",
+        "text": "mediastinal"
+      },
+      {
+        "label": "b",
+        "text": "cervical"
+      },
+      {
+        "label": "c",
+        "text": "epitrochlear"
+      },
+      {
+        "label": "d",
+        "text": "inguinal"
+      }
+    ],
+    "correctIndex": 0
+  },
+  {
+    "number": 10,
+    "text": "All of the following items are included in personal history except",
+    "answerLabel": "a",
+    "pages": [
+      2
+    ],
+    "options": [
+      {
+        "label": "a",
+        "text": "complaint"
+      },
+      {
+        "label": "b",
+        "text": "name"
+      },
+      {
+        "label": "c",
+        "text": "sex"
+      },
+      {
+        "label": "d",
+        "text": "occupation"
+      }
+    ],
+    "correctIndex": 0
+  },
+  {
+    "number": 11,
+    "text": "To examine for pulse we use:",
+    "answerLabel": "c",
+    "pages": [
+      2
+    ],
+    "options": [
+      {
+        "label": "a",
+        "text": "One finger"
+      },
+      {
+        "label": "b",
+        "text": "B- two fingers"
+      },
+      {
+        "label": "c",
+        "text": "3 fingers"
+      }
+    ],
+    "correctIndex": 2
+  },
+  {
+    "number": 12,
+    "text": "Normal pulse is",
+    "answerLabel": "b",
+    "pages": [
+      2
+    ],
+    "options": [
+      {
+        "label": "a",
+        "text": "60-90"
+      },
+      {
+        "label": "b",
+        "text": "60-100"
+      },
+      {
+        "label": "c",
+        "text": "50-80"
+      },
+      {
+        "label": "d",
+        "text": "50-200"
+      }
+    ],
+    "correctIndex": 1
+  },
+  {
+    "number": 13,
+    "text": "All of the following items are included in personal history except",
+    "answerLabel": "g",
+    "pages": [
+      2
+    ],
+    "options": [
+      {
+        "label": "e",
+        "text": "name"
+      },
+      {
+        "label": "f",
+        "text": "occupation"
+      },
+      {
+        "label": "g",
+        "text": "facies"
+      },
+      {
+        "label": "h",
+        "text": "age"
+      }
+    ],
+    "correctIndex": 2
+  },
+  {
+    "number": 14,
+    "text": "All of the following items are included in personal history except",
+    "answerLabel": "i",
+    "pages": [
+      2,
+      3
+    ],
+    "options": [
+      {
+        "label": "i",
+        "text": "Similar conditions"
+      },
+      {
+        "label": "j",
+        "text": "name"
+      },
+      {
+        "label": "k",
+        "text": "sex"
+      },
+      {
+        "label": "l",
+        "text": "occupation"
+      }
+    ],
+    "correctIndex": 0
+  },
+  {
+    "number": 15,
+    "text": "We ask about age in",
+    "answerLabel": "b",
+    "pages": [
+      3
+    ],
+    "options": [
+      {
+        "label": "a",
+        "text": "Complaint"
+      },
+      {
+        "label": "b",
+        "text": "Personal history"
+      },
+      {
+        "label": "c",
+        "text": "Past history"
+      },
+      {
+        "label": "d",
+        "text": "HPI"
+      }
+    ],
+    "correctIndex": 1
+  },
+  {
+    "number": 16,
+    "text": "We ask about residence in",
+    "answerLabel": "b",
+    "pages": [
+      3
+    ],
+    "options": [
+      {
+        "label": "a",
+        "text": "Complaint"
+      },
+      {
+        "label": "b",
+        "text": "Personal history"
+      },
+      {
+        "label": "c",
+        "text": "Past history"
+      },
+      {
+        "label": "d",
+        "text": "HPI"
+      }
+    ],
+    "correctIndex": 1
+  },
+  {
+    "number": 17,
+    "text": "We ask about special habits in",
+    "answerLabel": "b",
+    "pages": [
+      3
+    ],
+    "options": [
+      {
+        "label": "a",
+        "text": "Complaint"
+      },
+      {
+        "label": "b",
+        "text": "Personal history"
+      },
+      {
+        "label": "c",
+        "text": "Past history"
+      },
+      {
+        "label": "d",
+        "text": "HPI"
+      }
+    ],
+    "correctIndex": 1
+  },
+  {
+    "number": 18,
+    "text": "We ask about operations in",
+    "answerLabel": "c",
+    "pages": [
+      3
+    ],
+    "options": [
+      {
+        "label": "a",
+        "text": "Complaint"
+      },
+      {
+        "label": "b",
+        "text": "Personal history"
+      },
+      {
+        "label": "c",
+        "text": "Past history"
+      },
+      {
+        "label": "d",
+        "text": "HPI"
+      }
+    ],
+    "correctIndex": 2
+  },
+  {
+    "number": 19,
+    "text": "We ask about blood transfusion/ allergy in",
+    "answerLabel": "g",
+    "pages": [
+      3
+    ],
+    "options": [
+      {
+        "label": "e",
+        "text": "Complaint"
+      },
+      {
+        "label": "f",
+        "text": "Personal history"
+      },
+      {
+        "label": "g",
+        "text": "Past history"
+      },
+      {
+        "label": "h",
+        "text": "HPI"
+      }
+    ],
+    "correctIndex": 2
+  },
+  {
+    "number": 20,
+    "text": "We ask about hereditary diseases in",
+    "answerLabel": "d",
+    "pages": [
+      3
+    ],
+    "options": [
+      {
+        "label": "a",
+        "text": "Complaint"
+      },
+      {
+        "label": "b",
+        "text": "Personal history"
+      },
+      {
+        "label": "c",
+        "text": "Past history"
+      },
+      {
+        "label": "d",
+        "text": "Family history"
+      }
+    ],
+    "correctIndex": 3
+  },
+  {
+    "number": 21,
+    "text": "We ask about marital status in",
+    "answerLabel": "b",
+    "pages": [
+      3,
+      4
+    ],
+    "options": [
+      {
+        "label": "a",
+        "text": "Complaint"
+      },
+      {
+        "label": "b",
+        "text": "Personal history"
+      },
+      {
+        "label": "c",
+        "text": "Past history"
+      },
+      {
+        "label": "d",
+        "text": "HPI"
+      }
+    ],
+    "correctIndex": 1
+  },
+  {
+    "number": 22,
+    "text": "We check for height and weight in",
+    "answerLabel": "l",
+    "pages": [
+      4
+    ],
+    "options": [
+      {
+        "label": "i",
+        "text": "Complaint"
+      },
+      {
+        "label": "j",
+        "text": "Personal history"
+      },
+      {
+        "label": "k",
+        "text": "Past history"
+      },
+      {
+        "label": "l",
+        "text": "General examination"
+      }
+    ],
+    "correctIndex": 3
+  },
+  {
+    "number": 23,
+    "text": "We check for facial expression in",
+    "answerLabel": "p",
+    "pages": [
+      4
+    ],
+    "options": [
+      {
+        "label": "m",
+        "text": "Complaint"
+      },
+      {
+        "label": "n",
+        "text": "Personal history"
+      },
+      {
+        "label": "o",
+        "text": "Past history"
+      },
+      {
+        "label": "p",
+        "text": "General examination"
+      }
+    ],
+    "correctIndex": 3
+  },
+  {
+    "number": 24,
+    "text": "The following are superficial LN group except",
+    "answerLabel": "c",
+    "pages": [
+      4
+    ],
+    "options": [
+      {
+        "label": "a",
+        "text": "Cervical"
+      },
+      {
+        "label": "b",
+        "text": "Axillary"
+      },
+      {
+        "label": "c",
+        "text": "Mediastinal"
+      },
+      {
+        "label": "d",
+        "text": "inguinal"
+      }
+    ],
+    "correctIndex": 2
+  },
+  {
+    "number": 25,
+    "text": "The following are cervical LN group except",
+    "answerLabel": "b",
+    "pages": [
+      4
+    ],
+    "options": [
+      {
+        "label": "a",
+        "text": "tonsillar"
+      },
+      {
+        "label": "b",
+        "text": "Axillary"
+      },
+      {
+        "label": "c",
+        "text": "Supraclavicular"
+      },
+      {
+        "label": "d",
+        "text": "submental"
+      }
+    ],
+    "correctIndex": 1
+  }
+]

@@ -1,0 +1,255 @@
+{
+  "sourceFile": "History MCQ.pdf",
+  "sourceSha256": "3babf897ca83b0b7de868c99041d8a76e928abf062a977d8e7334c916712374d",
+  "pagesReviewed": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "sourceOccurrences": 25,
+  "newQuestions": 24,
+  "duplicates": [
+    {
+      "sourceQuestionNumber": 6,
+      "keptId": "BLS-HE-1-HISTORY-005"
+    }
+  ],
+  "sourceMapping": [
+    {
+      "sourceQuestionNumber": 1,
+      "id": "BLS-HE-1-HISTORY-001",
+      "chapterId": 2,
+      "correctIndex": 2,
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "sourceQuestionNumber": 2,
+      "id": "BLS-HE-1-HISTORY-002",
+      "chapterId": 2,
+      "correctIndex": 3,
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "sourceQuestionNumber": 3,
+      "id": "BLS-HE-1-HISTORY-003",
+      "chapterId": 2,
+      "correctIndex": 3,
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "sourceQuestionNumber": 4,
+      "id": "BLS-HE-1-HISTORY-004",
+      "chapterId": 2,
+      "correctIndex": 0,
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "sourceQuestionNumber": 5,
+      "id": "BLS-HE-1-HISTORY-005",
+      "chapterId": 3,
+      "correctIndex": 0,
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "sourceQuestionNumber": 6,
+      "id": "BLS-HE-1-HISTORY-005",
+      "chapterId": 3,
+      "correctIndex": 0,
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "sourceQuestionNumber": 7,
+      "id": "BLS-HE-1-HISTORY-007",
+      "chapterId": 3,
+      "correctIndex": 0,
+      "sourcePages": [
+        1
+      ]
+    },
+    {
+      "sourceQuestionNumber": 8,
+      "id": "BLS-HE-1-HISTORY-008",
+      "chapterId": 3,
+      "correctIndex": 1,
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "sourceQuestionNumber": 9,
+      "id": "BLS-HE-1-HISTORY-009",
+      "chapterId": 3,
+      "correctIndex": 0,
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "sourceQuestionNumber": 10,
+      "id": "BLS-HE-1-HISTORY-010",
+      "chapterId": 2,
+      "correctIndex": 0,
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "sourceQuestionNumber": 11,
+      "id": "BLS-HE-1-HISTORY-011",
+      "chapterId": 3,
+      "correctIndex": 2,
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "sourceQuestionNumber": 12,
+      "id": "BLS-HE-1-HISTORY-012",
+      "chapterId": 3,
+      "correctIndex": 1,
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "sourceQuestionNumber": 13,
+      "id": "BLS-HE-1-HISTORY-013",
+      "chapterId": 2,
+      "correctIndex": 2,
+      "sourcePages": [
+        2
+      ]
+    },
+    {
+      "sourceQuestionNumber": 14,
+      "id": "BLS-HE-1-HISTORY-014",
+      "chapterId": 2,
+      "correctIndex": 0,
+      "sourcePages": [
+        2,
+        3
+      ]
+    },
+    {
+      "sourceQuestionNumber": 15,
+      "id": "BLS-HE-1-HISTORY-015",
+      "chapterId": 2,
+      "correctIndex": 1,
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "sourceQuestionNumber": 16,
+      "id": "BLS-HE-1-HISTORY-016",
+      "chapterId": 2,
+      "correctIndex": 1,
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "sourceQuestionNumber": 17,
+      "id": "BLS-HE-1-HISTORY-017",
+      "chapterId": 2,
+      "correctIndex": 1,
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "sourceQuestionNumber": 18,
+      "id": "BLS-HE-1-HISTORY-018",
+      "chapterId": 2,
+      "correctIndex": 2,
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "sourceQuestionNumber": 19,
+      "id": "BLS-HE-1-HISTORY-019",
+      "chapterId": 2,
+      "correctIndex": 2,
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "sourceQuestionNumber": 20,
+      "id": "BLS-HE-1-HISTORY-020",
+      "chapterId": 2,
+      "correctIndex": 3,
+      "sourcePages": [
+        3
+      ]
+    },
+    {
+      "sourceQuestionNumber": 21,
+      "id": "BLS-HE-1-HISTORY-021",
+      "chapterId": 2,
+      "correctIndex": 1,
+      "sourcePages": [
+        3,
+        4
+      ]
+    },
+    {
+      "sourceQuestionNumber": 22,
+      "id": "BLS-HE-1-HISTORY-022",
+      "chapterId": 3,
+      "correctIndex": 3,
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "sourceQuestionNumber": 23,
+      "id": "BLS-HE-1-HISTORY-023",
+      "chapterId": 3,
+      "correctIndex": 3,
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "sourceQuestionNumber": 24,
+      "id": "BLS-HE-1-HISTORY-024",
+      "chapterId": 3,
+      "correctIndex": 2,
+      "sourcePages": [
+        4
+      ]
+    },
+    {
+      "sourceQuestionNumber": 25,
+      "id": "BLS-HE-1-HISTORY-025",
+      "chapterId": 3,
+      "correctIndex": 1,
+      "sourcePages": [
+        4
+      ]
+    }
+  ],
+  "normalizations": [
+    {
+      "number": 11,
+      "original": "B- two fingers",
+      "display": "two fingers",
+      "reason": "Repeated option label removed; meaning unchanged."
+    }
+  ]
+}
