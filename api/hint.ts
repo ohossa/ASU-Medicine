@@ -250,12 +250,16 @@ class GoogleGenAIAdapter implements AIAdapter {
   }
 }
 
-class NVIDIAAdapter implements AIAdapter {
+export class NVIDIAAdapter implements AIAdapter {
   private apiKey: string;
   private model: string;
   constructor() {
     this.apiKey = process.env.NVIDIA_API_KEY ?? '';
-    this.model = process.env.NVIDIA_HINT_MODEL ?? 'meta/llama-3.1-8b-instruct';
+    const configuredModel = process.env.NVIDIA_HINT_MODEL?.trim();
+    // NVIDIA retired this model on 2026-08-26; also migrate old hosted overrides.
+    this.model = !configuredModel || configuredModel === 'meta/llama-3.1-8b-instruct'
+      ? 'meta/llama-3.3-70b-instruct'
+      : configuredModel;
   }
 
   async generateHint(req: HintRequest): Promise<HintResponse> {
