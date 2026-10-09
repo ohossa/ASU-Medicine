@@ -1,4 +1,4 @@
-import { restoreHistoryQuestions } from './utils/historyQuestions';
+import { restoreHistoryQuestions, resolveHistoryChapter } from './utils/historyQuestions';
 import { useBankRevision } from './components/CorrectionStatus';
 import { useOwnerAccess } from './reports/useOwnerAccess';
 import { missedPracticeSubject } from './utils/missedQuestions';
@@ -725,7 +725,7 @@ function MainApp() {
     const sem = result.semester || 2;
 
     const moduleChapters = getChaptersForModuleAndMode(modCode, 'mixed');
-    const storedChapter = moduleChapters.find((c) => String(c.id) === String(result.chapterId));
+    const storedChapter = resolveHistoryChapter(moduleChapters, result.chapterId, result.chapterTitle, result.questionIds);
     if (!storedChapter) return;
     const chapter = result.moduleCode === 'MGL-3' ? toGitTopicChapter(storedChapter) : storedChapter;
 

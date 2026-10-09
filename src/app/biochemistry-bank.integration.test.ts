@@ -69,3 +69,17 @@ describe('Full biochemistry TXT intake',()=>{
  });
 
 });
+
+describe('Book-aligned IBM-1 organization',()=>{
+ it('exposes 16 ordered book lectures and 14 labelled additional topics',()=>{
+  expect(bank.chapters).toHaveLength(30);
+  expect(bank.chapters.slice(0,16).map(c=>c.id)).toEqual(Array.from({length:16},(_,i)=>101+i));
+  expect(bank.chapters.slice(16).every(c=>c.subtitle.startsWith('Additional topic'))).toBe(true);
+  expect(bank.chapters[0].title).toContain('Protein Chemistry');expect(bank.chapters[15].title).toBe('Glycolysis');
+  expect(Math.max(...bank.chapters.map(c=>c.subjects.flatMap(s=>s.questions).length))).toBeLessThan(200);
+ });
+ it('places known source-group exceptions by the tested concept',()=>{
+  const find=(suffix:string)=>bank.chapters.find(c=>c.subjects.some(s=>s.questions.some(q=>q.id==='IBM1-BIO-DRV-20260921-'+suffix)))?.title;
+  expect(find('00899')).toBe('Carbohydrate Chemistry');expect(find('01404')).toBe('Glycolysis');expect(find('01620')).toBe('Introduction to Metabolism');
+ });
+});

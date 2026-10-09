@@ -404,13 +404,18 @@ export function ChapterSelect({
           <div className="mb-3 flex items-start justify-between gap-3">
             <span className="text-2xl">{chapter.emoji}</span>
             <span className="rounded-full border border-border dark:border-white/[0.08] bg-secondary/80 dark:bg-white/[0.04] px-2 py-0.5 text-[10px] font-semibold tabular-nums text-muted-foreground dark:text-white/50">
-              #{chapter.id}
+              #{moduleCode === 'IBM-1' ? index + 1 : chapter.id}
             </span>
           </div>
 
           <h3 className={`text-base font-semibold text-foreground dark:text-white transition-colors ${hoverText[accent]}`}>
             {chapter.title}
           </h3>
+          {moduleCode === 'IBM-1' && chapter.subtitle && (
+            <p className="mt-2 text-xs leading-relaxed text-muted-foreground dark:text-white/50">
+              {chapter.subtitle}
+            </p>
+          )}
 
 
           {/* Subject badges */}

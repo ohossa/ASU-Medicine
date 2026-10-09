@@ -19,97 +19,277 @@
   },
   "chapterTopics": [
     {
-      "chapter": "Cell Chemistry & Biophysics",
+      "chapter": "Introduction to Medical Biochemistry & Protein Chemistry",
       "topics": [
         {
-          "topic": "Amino acids and protein structure",
-          "questions": 461
-        },
-        {
-          "topic": "Hemoglobin and heme",
-          "questions": 13
-        },
-        {
-          "topic": "Iron metabolism",
-          "questions": 4
-        },
-        {
-          "topic": "Carbohydrate chemistry",
-          "questions": 128
-        },
-        {
-          "topic": "Lipid chemistry and membranes",
-          "questions": 146
-        },
-        {
-          "topic": "Vitamins and coenzymes",
-          "questions": 72
-        },
-        {
-          "topic": "Nucleotides and nucleic acids",
-          "questions": 53
-        },
-        {
-          "topic": "DNA replication",
-          "questions": 26
-        },
-        {
-          "topic": "Transcription",
-          "questions": 34
-        },
-        {
-          "topic": "Translation",
-          "questions": 55
-        },
-        {
-          "topic": "Regulation of gene expression",
-          "questions": 21
+          "topic": "Introduction to Medical Biochemistry & Protein Chemistry",
+          "questions": 56
         }
       ]
     },
     {
-      "chapter": "Enzymes, Bioenergetics & Metabolism",
+      "chapter": "Classification of Amino Acids",
       "topics": [
         {
-          "topic": "Enzymes and regulation",
-          "questions": 240
-        },
+          "topic": "Classification of Amino Acids",
+          "questions": 163
+        }
+      ]
+    },
+    {
+      "chapter": "Basic Protein Structure",
+      "topics": [
         {
-          "topic": "Clinical enzyme markers",
-          "questions": 21
-        },
+          "topic": "Basic Protein Structure",
+          "questions": 79
+        }
+      ]
+    },
+    {
+      "chapter": "Protein Conformation",
+      "topics": [
         {
-          "topic": "Glycolysis and pyruvate metabolism",
-          "questions": 32
-        },
+          "topic": "Protein Conformation",
+          "questions": 89
+        }
+      ]
+    },
+    {
+      "chapter": "Protein Folding & Misfolding",
+      "topics": [
         {
-          "topic": "Carbohydrate metabolism and glucose homeostasis",
-          "questions": 106
-        },
+          "topic": "Protein Folding & Misfolding",
+          "questions": 20
+        }
+      ]
+    },
+    {
+      "chapter": "Protein Classification & Denaturation",
+      "topics": [
         {
-          "topic": "Glycogen metabolism",
-          "questions": 7
-        },
+          "topic": "Protein Classification & Denaturation",
+          "questions": 58
+        }
+      ]
+    },
+    {
+      "chapter": "Carbohydrate Chemistry",
+      "topics": [
         {
-          "topic": "Pentose phosphate pathway",
+          "topic": "Carbohydrate Chemistry",
+          "questions": 131
+        }
+      ]
+    },
+    {
+      "chapter": "Lipid Chemistry",
+      "topics": [
+        {
+          "topic": "Lipid Chemistry",
+          "questions": 121
+        }
+      ]
+    },
+    {
+      "chapter": "Chemistry of Biological Membrane",
+      "topics": [
+        {
+          "topic": "Chemistry of Biological Membrane",
+          "questions": 18
+        }
+      ]
+    },
+    {
+      "chapter": "Introduction to Medical Enzymology",
+      "topics": [
+        {
+          "topic": "Introduction to Medical Enzymology",
+          "questions": 58
+        }
+      ]
+    },
+    {
+      "chapter": "Enzyme Kinetics",
+      "topics": [
+        {
+          "topic": "Enzyme Kinetics",
+          "questions": 36
+        }
+      ]
+    },
+    {
+      "chapter": "Enzyme Inhibition",
+      "topics": [
+        {
+          "topic": "Enzyme Inhibition",
+          "questions": 57
+        }
+      ]
+    },
+    {
+      "chapter": "Regulation of Enzyme Activity",
+      "topics": [
+        {
+          "topic": "Regulation of Enzyme Activity",
+          "questions": 77
+        }
+      ]
+    },
+    {
+      "chapter": "Clinical Importance of Enzymes and Isozymes",
+      "topics": [
+        {
+          "topic": "Clinical Importance of Enzymes and Isozymes",
+          "questions": 46
+        }
+      ]
+    },
+    {
+      "chapter": "Introduction to Metabolism",
+      "topics": [
+        {
+          "topic": "Introduction to Metabolism",
+          "questions": 10
+        }
+      ]
+    },
+    {
+      "chapter": "Glycolysis",
+      "topics": [
+        {
+          "topic": "Glycolysis",
+          "questions": 69
+        }
+      ]
+    },
+    {
+      "chapter": "Hemoglobin and Heme",
+      "topics": [
+        {
+          "topic": "Hemoglobin and Heme",
+          "questions": 12
+        }
+      ]
+    },
+    {
+      "chapter": "Iron Metabolism",
+      "topics": [
+        {
+          "topic": "Iron Metabolism",
           "questions": 4
-        },
+        }
+      ]
+    },
+    {
+      "chapter": "Vitamins and Coenzymes",
+      "topics": [
         {
-          "topic": "TCA cycle and bioenergetics",
-          "questions": 90
-        },
+          "topic": "Vitamins and Coenzymes",
+          "questions": 76
+        }
+      ]
+    },
+    {
+      "chapter": "Nucleotides and Nucleic Acids",
+      "topics": [
         {
-          "topic": "Amino acid and nitrogen metabolism",
-          "questions": 107
-        },
+          "topic": "Nucleotides and Nucleic Acids",
+          "questions": 49
+        }
+      ]
+    },
+    {
+      "chapter": "DNA Replication",
+      "topics": [
         {
-          "topic": "Lipid metabolism",
-          "questions": 51
+          "topic": "DNA Replication",
+          "questions": 45
+        }
+      ]
+    },
+    {
+      "chapter": "Transcription",
+      "topics": [
+        {
+          "topic": "Transcription",
+          "questions": 35
+        }
+      ]
+    },
+    {
+      "chapter": "Translation",
+      "topics": [
+        {
+          "topic": "Translation",
+          "questions": 36
+        }
+      ]
+    },
+    {
+      "chapter": "Regulation of Gene Expression",
+      "topics": [
+        {
+          "topic": "Regulation of Gene Expression",
+          "questions": 22
+        }
+      ]
+    },
+    {
+      "chapter": "Carbohydrate Metabolism and Glucose Homeostasis",
+      "topics": [
+        {
+          "topic": "Carbohydrate Metabolism and Glucose Homeostasis",
+          "questions": 29
+        }
+      ]
+    },
+    {
+      "chapter": "Glycogen Metabolism",
+      "topics": [
+        {
+          "topic": "Glycogen Metabolism",
+          "questions": 16
+        }
+      ]
+    },
+    {
+      "chapter": "Pentose Phosphate Pathway",
+      "topics": [
+        {
+          "topic": "Pentose Phosphate Pathway",
+          "questions": 14
+        }
+      ]
+    },
+    {
+      "chapter": "TCA Cycle and Bioenergetics",
+      "topics": [
+        {
+          "topic": "TCA Cycle and Bioenergetics",
+          "questions": 86
+        }
+      ]
+    },
+    {
+      "chapter": "Amino Acid and Nitrogen Metabolism",
+      "topics": [
+        {
+          "topic": "Amino Acid and Nitrogen Metabolism",
+          "questions": 102
+        }
+      ]
+    },
+    {
+      "chapter": "Lipid Metabolism",
+      "topics": [
+        {
+          "topic": "Lipid Metabolism",
+          "questions": 57
         }
       ]
     }
   ],
-  "bankSha256": "14d2214d7dda4e2feac521cbb14d616ba48bcc33938220924b57e2ad630453ef",
+  "bankSha256": "a37f35d73669ab9625adaa9d903312dfc80188896e0734a6554a2c624300dc27",
   "limitations": [
     "Nonblind AI review using opened sources; no independent clinician certification.",
     "Original PDFs were not inspected; repairs use the designated TXT and its page transcripts.",
@@ -153,5 +333,12 @@
     "afterSha256": "14d2214d7dda4e2feac521cbb14d616ba48bcc33938220924b57e2ad630453ef",
     "method": "Read every released stem, alternatives, explanation and model answer for a focused nonblind consistency recheck; reused prior opened evidence and opened targeted sources for uncertainty. Not a new independent clinical review.",
     "publication": "Local only; no push or deployment."
+  },
+  "organization": {
+    "sections": 30,
+    "bookTopics": 16,
+    "additionalTopics": 14,
+    "ledger": "organization/placements.jsonl",
+    "protectedContentUnchanged": true
   }
 }

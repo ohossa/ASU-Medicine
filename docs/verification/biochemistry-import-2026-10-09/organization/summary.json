@@ -1,0 +1,267 @@
+{
+  "questions": 1671,
+  "types": {
+    "mcq": 1208,
+    "essay": 463
+  },
+  "bookTopics": 16,
+  "additionalTopics": 14,
+  "sections": [
+    {
+      "id": 101,
+      "title": "Introduction to Medical Biochemistry & Protein Chemistry",
+      "group": "book",
+      "mcq": 51,
+      "essay": 5,
+      "total": 56
+    },
+    {
+      "id": 102,
+      "title": "Classification of Amino Acids",
+      "group": "book",
+      "mcq": 138,
+      "essay": 25,
+      "total": 163
+    },
+    {
+      "id": 103,
+      "title": "Basic Protein Structure",
+      "group": "book",
+      "mcq": 71,
+      "essay": 8,
+      "total": 79
+    },
+    {
+      "id": 104,
+      "title": "Protein Conformation",
+      "group": "book",
+      "mcq": 77,
+      "essay": 12,
+      "total": 89
+    },
+    {
+      "id": 105,
+      "title": "Protein Folding & Misfolding",
+      "group": "book",
+      "mcq": 17,
+      "essay": 3,
+      "total": 20
+    },
+    {
+      "id": 106,
+      "title": "Protein Classification & Denaturation",
+      "group": "book",
+      "mcq": 39,
+      "essay": 19,
+      "total": 58
+    },
+    {
+      "id": 107,
+      "title": "Carbohydrate Chemistry",
+      "group": "book",
+      "mcq": 102,
+      "essay": 29,
+      "total": 131
+    },
+    {
+      "id": 108,
+      "title": "Lipid Chemistry",
+      "group": "book",
+      "mcq": 88,
+      "essay": 33,
+      "total": 121
+    },
+    {
+      "id": 109,
+      "title": "Chemistry of Biological Membrane",
+      "group": "book",
+      "mcq": 15,
+      "essay": 3,
+      "total": 18
+    },
+    {
+      "id": 110,
+      "title": "Introduction to Medical Enzymology",
+      "group": "book",
+      "mcq": 53,
+      "essay": 5,
+      "total": 58
+    },
+    {
+      "id": 111,
+      "title": "Enzyme Kinetics",
+      "group": "book",
+      "mcq": 31,
+      "essay": 5,
+      "total": 36
+    },
+    {
+      "id": 112,
+      "title": "Enzyme Inhibition",
+      "group": "book",
+      "mcq": 44,
+      "essay": 13,
+      "total": 57
+    },
+    {
+      "id": 113,
+      "title": "Regulation of Enzyme Activity",
+      "group": "book",
+      "mcq": 70,
+      "essay": 7,
+      "total": 77
+    },
+    {
+      "id": 114,
+      "title": "Clinical Importance of Enzymes and Isozymes",
+      "group": "book",
+      "mcq": 37,
+      "essay": 9,
+      "total": 46
+    },
+    {
+      "id": 115,
+      "title": "Introduction to Metabolism",
+      "group": "book",
+      "mcq": 10,
+      "essay": 0,
+      "total": 10
+    },
+    {
+      "id": 116,
+      "title": "Glycolysis",
+      "group": "book",
+      "mcq": 62,
+      "essay": 7,
+      "total": 69
+    },
+    {
+      "id": 201,
+      "title": "Hemoglobin and Heme",
+      "group": "additional",
+      "mcq": 4,
+      "essay": 8,
+      "total": 12
+    },
+    {
+      "id": 202,
+      "title": "Iron Metabolism",
+      "group": "additional",
+      "mcq": 2,
+      "essay": 2,
+      "total": 4
+    },
+    {
+      "id": 203,
+      "title": "Vitamins and Coenzymes",
+      "group": "additional",
+      "mcq": 33,
+      "essay": 43,
+      "total": 76
+    },
+    {
+      "id": 204,
+      "title": "Nucleotides and Nucleic Acids",
+      "group": "additional",
+      "mcq": 35,
+      "essay": 14,
+      "total": 49
+    },
+    {
+      "id": 205,
+      "title": "DNA Replication",
+      "group": "additional",
+      "mcq": 23,
+      "essay": 22,
+      "total": 45
+    },
+    {
+      "id": 206,
+      "title": "Transcription",
+      "group": "additional",
+      "mcq": 21,
+      "essay": 14,
+      "total": 35
+    },
+    {
+      "id": 207,
+      "title": "Translation",
+      "group": "additional",
+      "mcq": 23,
+      "essay": 13,
+      "total": 36
+    },
+    {
+      "id": 208,
+      "title": "Regulation of Gene Expression",
+      "group": "additional",
+      "mcq": 4,
+      "essay": 18,
+      "total": 22
+    },
+    {
+      "id": 209,
+      "title": "Carbohydrate Metabolism and Glucose Homeostasis",
+      "group": "additional",
+      "mcq": 16,
+      "essay": 13,
+      "total": 29
+    },
+    {
+      "id": 210,
+      "title": "Glycogen Metabolism",
+      "group": "additional",
+      "mcq": 10,
+      "essay": 6,
+      "total": 16
+    },
+    {
+      "id": 211,
+      "title": "Pentose Phosphate Pathway",
+      "group": "additional",
+      "mcq": 6,
+      "essay": 8,
+      "total": 14
+    },
+    {
+      "id": 212,
+      "title": "TCA Cycle and Bioenergetics",
+      "group": "additional",
+      "mcq": 61,
+      "essay": 25,
+      "total": 86
+    },
+    {
+      "id": 213,
+      "title": "Amino Acid and Nitrogen Metabolism",
+      "group": "additional",
+      "mcq": 42,
+      "essay": 60,
+      "total": 102
+    },
+    {
+      "id": 214,
+      "title": "Lipid Metabolism",
+      "group": "additional",
+      "mcq": 23,
+      "essay": 34,
+      "total": 57
+    }
+  ],
+  "protectedContentUnchanged": true,
+  "beforeSha256": "14d2214d7dda4e2feac521cbb14d616ba48bcc33938220924b57e2ad630453ef",
+  "afterSha256": "a37f35d73669ab9625adaa9d903312dfc80188896e0734a6554a2c624300dc27",
+  "limitations": [
+    "Supplied PDF contains 59 pages and ends during enzyme regulation. Later clinical enzymology, metabolism and glycolysis headings are supported by its table of contents, not absent body pages.",
+    "This is topic organization, not a new medical answer review. Existing review provenance is preserved."
+  ],
+  "publication": "Authorized; release pending deployment verification.",
+  "verification": {
+    "vitestFiles": 64,
+    "vitestTests": 456,
+    "pythonTests": 20,
+    "typecheck": "passed",
+    "productionBuild": "passed",
+    "protectedPayloadEquality": "passed"
+  }
+}

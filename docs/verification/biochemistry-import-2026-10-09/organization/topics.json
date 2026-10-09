@@ -1,0 +1,258 @@
+[
+  {
+    "key": "protein_intro",
+    "id": 101,
+    "title": "Introduction to Medical Biochemistry & Protein Chemistry",
+    "page": 1,
+    "bookChapter": 1,
+    "subtitle": "Book chapter 1 · Biomolecules, Amino Acids and Protein Chemistry",
+    "sourceCoverage": "body and contents"
+  },
+  {
+    "key": "aa_classification",
+    "id": 102,
+    "title": "Classification of Amino Acids",
+    "page": 6,
+    "bookChapter": 1,
+    "subtitle": "Book chapter 1 · Biomolecules, Amino Acids and Protein Chemistry",
+    "sourceCoverage": "body and contents"
+  },
+  {
+    "key": "basic_structure",
+    "id": 103,
+    "title": "Basic Protein Structure",
+    "page": 9,
+    "bookChapter": 1,
+    "subtitle": "Book chapter 1 · Biomolecules, Amino Acids and Protein Chemistry",
+    "sourceCoverage": "body and contents"
+  },
+  {
+    "key": "protein_conformation",
+    "id": 104,
+    "title": "Protein Conformation",
+    "page": 14,
+    "bookChapter": 1,
+    "subtitle": "Book chapter 1 · Biomolecules, Amino Acids and Protein Chemistry",
+    "sourceCoverage": "body and contents"
+  },
+  {
+    "key": "folding",
+    "id": 105,
+    "title": "Protein Folding & Misfolding",
+    "page": 19,
+    "bookChapter": 1,
+    "subtitle": "Book chapter 1 · Biomolecules, Amino Acids and Protein Chemistry",
+    "sourceCoverage": "body and contents"
+  },
+  {
+    "key": "protein_classification",
+    "id": 106,
+    "title": "Protein Classification & Denaturation",
+    "page": 22,
+    "bookChapter": 1,
+    "subtitle": "Book chapter 1 · Biomolecules, Amino Acids and Protein Chemistry",
+    "sourceCoverage": "body and contents"
+  },
+  {
+    "key": "carbohydrate",
+    "id": 107,
+    "title": "Carbohydrate Chemistry",
+    "page": 25,
+    "bookChapter": 2,
+    "subtitle": "Book chapter 2 · Chemistry of Carbohydrates, Lipids and Membranes",
+    "sourceCoverage": "body and contents"
+  },
+  {
+    "key": "lipid",
+    "id": 108,
+    "title": "Lipid Chemistry",
+    "page": 32,
+    "bookChapter": 2,
+    "subtitle": "Book chapter 2 · Chemistry of Carbohydrates, Lipids and Membranes",
+    "sourceCoverage": "body and contents"
+  },
+  {
+    "key": "membrane",
+    "id": 109,
+    "title": "Chemistry of Biological Membrane",
+    "page": 38,
+    "bookChapter": 2,
+    "subtitle": "Book chapter 2 · Chemistry of Carbohydrates, Lipids and Membranes",
+    "sourceCoverage": "body and contents"
+  },
+  {
+    "key": "enzyme_intro",
+    "id": 110,
+    "title": "Introduction to Medical Enzymology",
+    "page": 41,
+    "bookChapter": 3,
+    "subtitle": "Book chapter 3 · Medical Enzymology",
+    "sourceCoverage": "body and contents"
+  },
+  {
+    "key": "kinetics",
+    "id": 111,
+    "title": "Enzyme Kinetics",
+    "page": 45,
+    "bookChapter": 3,
+    "subtitle": "Book chapter 3 · Medical Enzymology",
+    "sourceCoverage": "body and contents"
+  },
+  {
+    "key": "inhibition",
+    "id": 112,
+    "title": "Enzyme Inhibition",
+    "page": 49,
+    "bookChapter": 3,
+    "subtitle": "Book chapter 3 · Medical Enzymology",
+    "sourceCoverage": "body and contents"
+  },
+  {
+    "key": "regulation",
+    "id": 113,
+    "title": "Regulation of Enzyme Activity",
+    "page": 53,
+    "bookChapter": 3,
+    "subtitle": "Book chapter 3 · Medical Enzymology",
+    "sourceCoverage": "body and contents"
+  },
+  {
+    "key": "clinical_enzymes",
+    "id": 114,
+    "title": "Clinical Importance of Enzymes and Isozymes",
+    "page": 57,
+    "bookChapter": 3,
+    "subtitle": "Book chapter 3 · Medical Enzymology",
+    "sourceCoverage": "contents only; body absent from supplied PDF"
+  },
+  {
+    "key": "metabolism_intro",
+    "id": 115,
+    "title": "Introduction to Metabolism",
+    "page": 59,
+    "bookChapter": 4,
+    "subtitle": "Book chapter 4 · An Introduction to Metabolism",
+    "sourceCoverage": "contents only; body absent from supplied PDF"
+  },
+  {
+    "key": "glycolysis",
+    "id": 116,
+    "title": "Glycolysis",
+    "page": 67,
+    "bookChapter": 5,
+    "subtitle": "Book chapter 5 · Glucose Oxidation: Glycolysis",
+    "sourceCoverage": "contents only; body absent from supplied PDF"
+  },
+  {
+    "key": "extra_heme",
+    "id": 201,
+    "title": "Hemoglobin and Heme",
+    "page": 0,
+    "subtitle": "Additional topic · Beyond the study guide contents",
+    "sourceCoverage": "additional bank content"
+  },
+  {
+    "key": "extra_iron",
+    "id": 202,
+    "title": "Iron Metabolism",
+    "page": 0,
+    "subtitle": "Additional topic · Beyond the study guide contents",
+    "sourceCoverage": "additional bank content"
+  },
+  {
+    "key": "extra_vitamins",
+    "id": 203,
+    "title": "Vitamins and Coenzymes",
+    "page": 0,
+    "subtitle": "Additional topic · Beyond the study guide contents",
+    "sourceCoverage": "additional bank content"
+  },
+  {
+    "key": "extra_nucleotides",
+    "id": 204,
+    "title": "Nucleotides and Nucleic Acids",
+    "page": 0,
+    "subtitle": "Additional topic · Beyond the study guide contents",
+    "sourceCoverage": "additional bank content"
+  },
+  {
+    "key": "extra_dna",
+    "id": 205,
+    "title": "DNA Replication",
+    "page": 0,
+    "subtitle": "Additional topic · Beyond the study guide contents",
+    "sourceCoverage": "additional bank content"
+  },
+  {
+    "key": "extra_transcription",
+    "id": 206,
+    "title": "Transcription",
+    "page": 0,
+    "subtitle": "Additional topic · Beyond the study guide contents",
+    "sourceCoverage": "additional bank content"
+  },
+  {
+    "key": "extra_translation",
+    "id": 207,
+    "title": "Translation",
+    "page": 0,
+    "subtitle": "Additional topic · Beyond the study guide contents",
+    "sourceCoverage": "additional bank content"
+  },
+  {
+    "key": "extra_gene_expression",
+    "id": 208,
+    "title": "Regulation of Gene Expression",
+    "page": 0,
+    "subtitle": "Additional topic · Beyond the study guide contents",
+    "sourceCoverage": "additional bank content"
+  },
+  {
+    "key": "extra_glucose",
+    "id": 209,
+    "title": "Carbohydrate Metabolism and Glucose Homeostasis",
+    "page": 0,
+    "subtitle": "Additional topic · Beyond the study guide contents",
+    "sourceCoverage": "additional bank content"
+  },
+  {
+    "key": "extra_glycogen",
+    "id": 210,
+    "title": "Glycogen Metabolism",
+    "page": 0,
+    "subtitle": "Additional topic · Beyond the study guide contents",
+    "sourceCoverage": "additional bank content"
+  },
+  {
+    "key": "extra_ppp",
+    "id": 211,
+    "title": "Pentose Phosphate Pathway",
+    "page": 0,
+    "subtitle": "Additional topic · Beyond the study guide contents",
+    "sourceCoverage": "additional bank content"
+  },
+  {
+    "key": "extra_bioenergetics",
+    "id": 212,
+    "title": "TCA Cycle and Bioenergetics",
+    "page": 0,
+    "subtitle": "Additional topic · Beyond the study guide contents",
+    "sourceCoverage": "additional bank content"
+  },
+  {
+    "key": "extra_nitrogen",
+    "id": 213,
+    "title": "Amino Acid and Nitrogen Metabolism",
+    "page": 0,
+    "subtitle": "Additional topic · Beyond the study guide contents",
+    "sourceCoverage": "additional bank content"
+  },
+  {
+    "key": "extra_lipid",
+    "id": 214,
+    "title": "Lipid Metabolism",
+    "page": 0,
+    "subtitle": "Additional topic · Beyond the study guide contents",
+    "sourceCoverage": "additional bank content"
+  }
+]
