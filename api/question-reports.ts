@@ -1,15 +1,18 @@
 import { readTutorUsage } from "../server/tutor-metrics.js";
 import { createReportService, ReportError } from "../server/report-service.js";
-import { authenticateReportUser } from "../server/report-auth.js";
+import { authenticateReportUser, verifiedReporterEmail } from "../server/report-auth.js";
 import { resolveReportQuestion } from "../server/report-question.js";
 import { reportStore } from "../server/report-store.js";
 import { editStore } from "../server/question-edit-store.js";
-import { sendReportEmail } from "../server/report-email.js";
+import { sendReportEmail, sendReportReply, reportReplyConfigured } from "../server/report-email.js";
 import { createTriageService, reviewGroup } from "../server/triage-worker.js";
 import { triageStore } from "../server/triage-store.js";
 import { callTriageModel } from "../server/triage-provider.js";
 import { fetchEvidence } from "../server/triage-evidence.js";
 import { z } from "zod";
+import {createReplyService} from '../server/report-replies.js';
+import {replyStore} from '../server/report-reply-store.js';
+const replies = createReplyService({authenticate:authenticateReportUser,getReport:id=>reportStore.get(id),recipient:verifiedReporterEmail,store:replyStore,send:sendReportReply,configured:reportReplyConfigured,sender:()=>process.env.REPORT_EMAIL_FROM || ''});
 interface Request {
   method?: string;
   headers: Record<string, string | string[] | undefined>;
@@ -52,6 +55,7 @@ export default async function handler(req: Request, res: Response) {
         : "";
     const action = req.query?.action || "";
     if (req.method === "GET") {
+      if (action === "replies") return res.status(200).json(await replies.conversation(token,req.query?.id));
       if (action === "triage") return res.status(200).json(await triage.view(token));
       if (action === "overview") {
         const reports = await service.overview(token); // Owner authorization precedes every data read.
@@ -79,7 +83,7 @@ export default async function handler(req: Request, res: Response) {
       typeof req.body === "string"
         ? req.body
         : JSON.stringify(req.body ?? null);
-    if (Buffer.byteLength(serialized, "utf8") > 16000)
+    if (Buffer.byteLength(serialized, "utf8") > (action === 'reply-send' || action === 'reply-draft' ? 28000 : 16000))
       throw new ReportError(413, "Report is too large.");
     let body: unknown;
     try {
@@ -104,6 +108,8 @@ export default async function handler(req: Request, res: Response) {
       if (action === "triage-mode") return res.status(200).json(await triage.mode(token,(input.data as {mode:"shadow"|"prioritized"}).mode));
       return res.status(200).json(await triage.label(token,input.data as {key:string;fingerprint:string;label:"actionable"|"uncertain"|"low";critical:boolean;notes:string}));
     }
+    if (req.method === "POST" && action === "reply-draft") return res.status(200).json({draft:await replies.saveDraft(token,body)});
+    if (req.method === "POST" && action === "reply-send") return res.status(200).json({reply:await replies.send(token,body)});
     if (req.method === "PATCH")
       return res
         .status(200)

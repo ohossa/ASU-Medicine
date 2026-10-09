@@ -50,3 +50,17 @@ export async function authenticateReportUser(token: string): Promise<Identity> {
     isAdmin: ownsEmail && (!pinnedId || pinnedId === user.id) && (process.env.VERCEL_ENV !== 'production' || Boolean(pinnedId)),
   };
 }
+
+// Resolve the current account on the server, including reports submitted before profile capture existed.
+export async function verifiedReporterEmail(userId: string): Promise<string> {
+  const secretKey = process.env.CLERK_SECRET_KEY;
+  if (!secretKey) throw new ReportError(503, 'Reporter email lookup is unavailable.');
+  try {
+    const user = await createClerkClient({secretKey}).users.getUser(userId);
+    const verified = user.emailAddresses.filter(e => e.verification?.status === 'verified');
+    return (verified.find(e => e.id === user.primaryEmailAddressId) || verified[0])?.emailAddress || '';
+  } catch (error) {
+    if (error && typeof error === 'object' && 'status' in error && error.status === 404) return '';
+    throw new ReportError(503, 'The student email could not be checked. Please try again.');
+  }
+}

@@ -9,12 +9,12 @@ vi.mock("../../../server/tutor-metrics", () => ({
 vi.mock("../../../server/report-store", () => ({ reportStore: {} }));
 vi.mock("../../../server/question-edit-store", () => ({ editStore: {} }));
 vi.mock("../../../server/report-auth", () => ({
-  authenticateReportUser: vi.fn(),
+  authenticateReportUser: vi.fn(),verifiedReporterEmail:vi.fn(),
 }));
 vi.mock("../../../server/report-question", () => ({
   resolveReportQuestion: vi.fn(),
 }));
-vi.mock("../../../server/report-email", () => ({ sendReportEmail: vi.fn() }));
+vi.mock("../../../server/report-email", () => ({ sendReportEmail: vi.fn(),sendReportReply:vi.fn(),reportReplyConfigured:()=>false }));
 vi.mock("../../../server/report-service", async (importOriginal) => ({
   ...(await importOriginal<typeof import("../../../server/report-service")>()),
   createReportService: () => ({ overview: mocks.overview }),

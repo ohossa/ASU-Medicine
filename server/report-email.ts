@@ -53,3 +53,20 @@ export async function sendReportEmail(
     throw new Error("Missing email acknowledgment");
   return { state: "sent", providerId: data.id };
 }
+
+export function reportReplyConfigured(): boolean {
+  return Boolean(process.env.RESEND_API_KEY && process.env.REPORT_EMAIL_FROM);
+}
+export async function sendReportReply(reply: import('../src/app/reports/reply-contracts.js').ReportReply): Promise<{providerId:string}> {
+  if (!reportReplyConfigured()) throw new Error('Reply delivery is not configured');
+  const response = await fetch('https://api.resend.com/emails', {
+    method: 'POST',
+    headers: {Authorization:`Bearer ${process.env.RESEND_API_KEY}`, 'Content-Type':'application/json', 'Idempotency-Key':`report-reply/${reply.id}`},
+    body: JSON.stringify({from:reply.from || process.env.REPORT_EMAIL_FROM, to:[reply.to], reply_to:OWNER_EMAIL, subject:reply.subject, text:reply.body}),
+    signal: AbortSignal.timeout(8000),
+  });
+  if (!response.ok) throw new Error('Reply delivery was not acknowledged');
+  const data = await response.json();
+  if (!data || typeof data !== 'object' || !('id' in data) || typeof data.id !== 'string' || !data.id) throw new Error('Reply acknowledgment is missing');
+  return {providerId:data.id};
+}

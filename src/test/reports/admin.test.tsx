@@ -45,6 +45,22 @@ describe("Private admin portal", () => {
     fireEvent.click(buttons[1]);
     await screen.findByRole('heading',{name:'Reporter'});
   });
+  it("keeps the original student message beside a visible question without an accordion",async()=>{
+    showReport({category:'other',explanation:'Please review this wording.\nOption B seems ambiguous.'});
+    await screen.findByRole('heading',{name:'Student’s message'});
+    expect(screen.getByRole('heading',{name:'Question snapshot'}).closest('details')).toBeNull();
+    expect(screen.getByRole('heading',{name:'Student’s message'}).closest('section')?.querySelector('blockquote')?.textContent).toBe('Please review this wording.\nOption B seems ambiguous.');
+    expect(screen.getByRole('button',{name:'Copy review context'})).toBeInTheDocument();
+    expect(screen.getByRole('button',{name:'Copy student message'})).toBeInTheDocument();
+  });
+  it("keeps an unsent email draft when saving the report decision refreshes the inbox",async()=>{
+    showReport();
+    const textarea=await screen.findByLabelText('Email message');
+    fireEvent.change(textarea,{target:{value:'My unsent review explanation must stay here.'}});
+    fireEvent.click(screen.getByRole('button',{name:'Save changes'}));
+    await waitFor(()=>expect(vi.mocked(fetch).mock.calls.filter(([url])=>String(url).includes('action=detail')).length).toBeGreaterThan(1));
+    expect(screen.getByLabelText('Email message')).toHaveValue('My unsent review explanation must stay here.');
+  });
   it("submits encoded inbox filters and allows switching the grouping", async () => {
     const fetch=vi.fn(async (url: string)=>({ok:true,json:async()=>url.includes('action=access')?{isAdmin:true}:{reports:[],total:0,counts:{new:0,reviewing:0,fixed:0,dismissed:0},groups:[],facets:{modules:['MGL-3'],subjects:['Tongue'],chapters:[{id:1,title:'Anatomy'}]}}}));
     vi.stubGlobal('fetch',fetch);

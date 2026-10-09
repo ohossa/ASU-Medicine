@@ -1,3 +1,7 @@
+import type {SubQuestion} from '../app/types';
+import {Copy, MessageSquare, BookOpen} from 'lucide-react';
+import {ReplyComposer} from './ReportReplyComposer';
+import {reviewContext} from '../app/reports/review-context';
 import { lazy, Suspense, useEffect, useRef, useState, type ReactNode } from "react";
 import { useAuth, useUser } from "@clerk/clerk-react";
 import {
@@ -163,7 +167,7 @@ function AdminWorkspace() {
         if (!controller.signal.aborted) setData(value);
       })
       .catch((e) => {
-        if (!controller.signal.aborted) { setError(e.message); setData(null); }
+        if (!controller.signal.aborted) { setError(e.message); }
       })
       .finally(() => {
         if (!controller.signal.aborted) setLoading(false);
@@ -171,7 +175,7 @@ function AdminWorkspace() {
     return () => controller.abort();
   }, [status, offset, refresh, isEditor, isInbox, search, moduleCode, subjectName, chapterId, topicName, groupBy, triageBucket]);
   useEffect(() => {
-    setSelected(null);
+    setSelected(value=>value?.id===selectedId?value:null);
     setDetailError("");
     if (!selectedId) return;
     const controller = new AbortController();
@@ -194,7 +198,8 @@ function AdminWorkspace() {
       onClick={() => setParams({ report: report.id })}>
       <span className="admin-badge">{statusLabels[report.status]}</span>
       <strong>{REPORT_CATEGORIES[report.category].en}</strong>
-      <p>{cleanQuestionStem(report.snapshot.question.text || report.snapshot.question.question || '')}</p>
+      {groupBy==='report'&&<p>{cleanQuestionStem(report.snapshot.question.text || report.snapshot.question.question || '')}</p>}
+      {report.explanation&&<p className="admin-row-message">{report.explanation}</p>}
       <div className="admin-meta mt-2">
         {report.snapshot.moduleCode} · {report.reporter?.name || report.reporter?.username || 'Student'} · {new Date(report.createdAt).toLocaleDateString()}
       </div>
@@ -297,27 +302,28 @@ function AdminWorkspace() {
                 }}>Clear filters</button>}
               </form>
               {!loading&&data&&<p className="report-muted mb-4" role="status">
-                {data.filteredReportCount??data.total} matching reports{data.groups ? ` across ${data.total} questions` : ''}. Newest first.
+                {data.filteredReportCount??data.total} matching {(data.filteredReportCount??data.total)===1?'report':'reports'}{data.groups ? ` across ${data.total} ${data.total===1?'question':'questions'}` : ''}. Newest first.
               </p>}
-              {loading ? (
+              {loading&&data&&<p role="status" className="report-muted mb-4">Updating inbox… Previously loaded reports remain visible.</p>}
+              {loading && !data ? (
                 <div role="status" className="admin-surface admin-empty">
                   <Loader2 size={22} className="animate-spin mx-auto mb-3" />
                   Loading reports…
                 </div>
-              ) : error ? null : (
-                <div className="admin-inbox">
+              ) : error && !data ? null : (
+                <div className="admin-inbox" data-review-open={Boolean(selectedId)} aria-busy={loading}>
                   <div>
                     <div className="admin-surface admin-list">
                       {data?.reports.length ? (
                         data.groups ? data.groups.map(group => (
-                          <details key={group.key} className="admin-report-group" open={group.reports.some(r=>r.id===selectedId)||undefined}>
-                            <summary>
+                          <section key={group.key} className="admin-question-group">
+                            <button className="admin-question-open" aria-label={`Review question: ${cleanQuestionStem(group.reports[0].snapshot.question.text || group.reports[0].snapshot.question.question || '')}`} aria-current={group.reports.some(r=>r.id===selectedId)} onClick={()=>setParams({report:group.reports[0].id})}>
                               <strong>{cleanQuestionStem(group.reports[0].snapshot.question.text || group.reports[0].snapshot.question.question || '')}</strong>
                               <span className="admin-meta block mt-2">{group.reports[0].snapshot.moduleCode} · {group.reports[0].snapshot.subjectName}{group.reports[0].snapshot.topicName ? ` · ${group.reports[0].snapshot.topicName}` : ''}</span>
                               <span className="admin-group-counts">{group.reportCount} matching {group.reportCount===1?'report':'reports'} · {group.reporterCount} {group.reporterCount===1?'reporter':'reporters'} · {group.unresolvedCount} unresolved</span>
-                            </summary>
-                            {group.reports.map(renderReportRow)}
-                          </details>
+                            </button>
+                            <div className="admin-related-reports" aria-label="Student reports for this question">{group.reports.map(renderReportRow)}</div>
+                          </section>
                         )) : data.reports.map(renderReportRow)
                       ) : (
                         <div className="admin-empty">
@@ -355,14 +361,16 @@ function AdminWorkspace() {
                     </div>
                   </div>
                   {selected ? (
+                    <div className="admin-review-content"><button className="report-secondary admin-mobile-back" onClick={()=>setParams({})}><ArrowLeft size={15}/>Back to reports</button>
                     <ReportDetail
-                      key={selected.id + ":" + selected.revision}
+                      key={selected.id}
                       report={selected}
                       assessment={triageData?.assessments.find(a=>a.fingerprint===triageData.reportAssessments?.[selected.id])}
                       onUpdate={() => setRefresh((v) => v + 1)}
-                    />
+                    /></div>
                   ) : (
                     <div className="admin-surface admin-empty">
+                      {selectedId&&<button className="report-secondary admin-mobile-back" onClick={()=>setParams({})}><ArrowLeft size={15}/>Back to reports</button>}
                       {detailError ? (
                         <p role="alert" className="report-error">
                           {detailError}
@@ -386,7 +394,7 @@ function AdminWorkspace() {
     </div>
   );
 }
-function ReportDetail({
+export function ReportDetail({
   report,
   assessment,
   onUpdate,
@@ -396,12 +404,14 @@ function ReportDetail({
   onUpdate: () => void;
 }) {
   const { getToken } = useAuth();
+  const [copied,setCopied]=useState('');
   const [notification, setNotification] = useState(report.notification);
   const [status, setStatus] = useState(report.status);
   const [notes, setNotes] = useState(report.notes);
   const [busy, setBusy] = useState(false);
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
+  useEffect(()=>{setStatus(report.status);setNotes(report.notes);setNotification(report.notification);},[report.revision]);
   async function save() {
     setBusy(true);
     setError("");
@@ -446,6 +456,7 @@ function ReportDetail({
       setBusy(false);
     }
   }
+  async function copy(value:string){try{await navigator.clipboard.writeText(value);setCopied('Copied to clipboard.');}catch{setError('Clipboard access is unavailable. Select and copy the text below.');}}
   const snapshot = report.snapshot;
   return (
     <article className="admin-surface admin-detail">
@@ -462,54 +473,33 @@ function ReportDetail({
       {report.subQuestionId && (
         <p className="admin-meta mt-2">Reported part: {report.subQuestionId}</p>
       )}
-      <TriageAssessmentCard assessment={assessment} onRefresh={onUpdate}/>
-      <section className="admin-reporter" aria-labelledby="reporter-heading">
-        <h3 id="reporter-heading">Reporter</h3>
-        <dl>
-          <div><dt>Name</dt><dd>{report.reporter?.name || "Not recorded"}</dd></div>
-          {report.reporter?.username && <div><dt>Username</dt><dd>{report.reporter.username}</dd></div>}
-          <div><dt>Email</dt><dd>
-            {report.reporter?.email ? <>
-              <a href={`mailto:${report.reporter.email}`}>{report.reporter.email}</a>
-              <span className="admin-meta block mt-1">{report.reporter.emailVerified ? "Verified email" : "Email not verified"}</span>
-            </> : "Not recorded"}
-          </dd></div>
-          <div><dt>Account ID</dt><dd>{report.reporterId}</dd></div>
-        </dl>
-        <p className="admin-meta mt-3">Account details recorded when this report was submitted.</p>
-      </section>
-      <div className="admin-note">
-        {report.explanation || "No explanation was added."}
+      <div className="admin-review-toolbar"><button className="report-secondary" onClick={()=>copy(reviewContext(report))}><Copy size={15}/>Copy review context</button><span className="admin-meta">Question + original student message. Profile details and internal notes excluded.</span>{copied&&<p role="status" className="admin-meta">{copied}</p>}</div>
+      <div className="admin-evidence-grid">
+        <section className="admin-question-evidence" aria-labelledby="question-heading">
+          <span className="admin-eyebrow"><BookOpen size={15}/>QUESTION AT SUBMISSION</span><h3 id="question-heading">Question snapshot</h3>
+          <p className="admin-question-stem">{snapshot.question.text || snapshot.question.question}</p>
+          {Array.isArray(snapshot.question.options)&&<ol className="admin-answer-list">{snapshot.question.options.map((option,index)=><li key={index} className={index===snapshot.question.correctIndex?'is-correct':''}><span>{String.fromCharCode(65+index)}</span><p>{option}</p>{index===snapshot.question.correctIndex&&<strong>Correct answer</strong>}</li>)}</ol>}
+          {snapshot.question.explanation&&<div className="admin-answer-explanation"><h4>Explanation</h4><pre>{snapshot.question.explanation}</pre></div>}
+          {snapshot.question.modelAnswer&&<div className="admin-answer-explanation"><h4>Model answer</h4><pre>{snapshot.question.modelAnswer}</pre></div>}
+          {Array.isArray(snapshot.question.subQuestions)&&(snapshot.question.subQuestions as SubQuestion[]).map(part=><section key={part.id} className={`admin-question-part ${report.subQuestionId===part.id?'is-reported':''}`}><h4>{report.subQuestionId===part.id?'Reported part':'Question part'} · {part.id}</h4><p>{part.text}</p>{part.options&&<ol className="admin-answer-list">{part.options.map((option,index)=><li key={index} className={index===part.correctIndex?'is-correct':''}><span>{String.fromCharCode(65+index)}</span><p>{option}</p>{index===part.correctIndex&&<strong>Correct answer</strong>}</li>)}</ol>}{(part.modelAnswer||part.explanation)&&<pre>{part.modelAnswer||part.explanation}</pre>}{part.blanks&&<pre>Blank answers: {part.blanks.join(' · ')}</pre>}</section>)}
+          {['pairs','blanks','acceptedAnswers','media'].filter(key=>snapshot.question[key]!==undefined).map(key=><section className="admin-answer-explanation" key={key}><h4>{({pairs:'Matching key',blanks:'Blank answers',acceptedAnswers:'Accepted alternatives',media:'Question media'} as Record<string,string>)[key]}</h4><pre>{JSON.stringify(snapshot.question[key],null,2)}</pre></section>)}
+          <details className="admin-source-details"><summary>Full snapshot and source version</summary><pre>{JSON.stringify(snapshot,null,2)}</pre></details>
+        </section>
+        <section className="admin-student-evidence" aria-labelledby="student-message-heading">
+          <span className="admin-eyebrow"><MessageSquare size={15}/>STUDENT FEEDBACK</span><h3 id="student-message-heading">Student’s message</h3>
+          <p className="admin-meta">{REPORT_CATEGORIES[report.category].en} · As submitted</p>
+          <blockquote className="admin-original-message">{report.explanation || 'No explanation was added.'}</blockquote>
+          <button className="report-secondary" disabled={!report.explanation} onClick={()=>copy(report.explanation)}><Copy size={14}/>Copy student message</button>
+          <section className="admin-reporter" aria-labelledby="reporter-heading"><h3 id="reporter-heading">Reporter</h3><dl>
+            <div><dt>Name</dt><dd>{report.reporter?.name||'Not recorded'}</dd></div>
+            {report.reporter?.username&&<div><dt>Username</dt><dd>{report.reporter.username}</dd></div>}
+            <div><dt>Email</dt><dd>{report.reporter?.email?<><a href={`mailto:${report.reporter.email}`}>{report.reporter.email}</a><span className="admin-meta block mt-1">{report.reporter.emailVerified?'Verified email':'Email not verified'}</span></>:'Not recorded'}</dd></div>
+            <div><dt>Account ID</dt><dd>{report.reporterId}</dd></div>
+          </dl><p className="admin-meta mt-3">Profile recorded at submission. Replies use the account’s current verified email.</p></section>
+        </section>
       </div>
-      <details open>
-        <summary className="text-sm font-semibold cursor-pointer">
-          Question snapshot
-        </summary>
-        <pre className="mt-3">
-          {snapshot.question.text || snapshot.question.question}
-        </pre>
-        {Array.isArray(snapshot.question.options) && (
-          <ol className="text-xs space-y-2 my-4">
-            {snapshot.question.options.map((option, index) => (
-              <li key={index}>
-                {String.fromCharCode(65 + index)}. {option}
-                {index === snapshot.question.correctIndex ? " ✓" : ""}
-              </li>
-            ))}
-          </ol>
-        )}
-        {(snapshot.question.modelAnswer || snapshot.question.explanation) && (
-          <pre>
-            {snapshot.question.modelAnswer || snapshot.question.explanation}
-          </pre>
-        )}
-        <details className="mt-4">
-          <summary className="admin-meta cursor-pointer">
-            Full snapshot and source version
-          </summary>
-          <pre className="mt-3">{JSON.stringify(snapshot, null, 2)}</pre>
-        </details>
-      </details>
+      <TriageAssessmentCard assessment={assessment} onRefresh={onUpdate}/>
+      <div className="admin-management-panel"><h3>Review decision</h3>
       <Link className="report-primary mb-5 inline-flex" to={`/admin/questions?module=${encodeURIComponent(report.snapshot.moduleCode)}&question=${encodeURIComponent(String(report.snapshot.question.id))}`}>Edit this question</Link>
       <label className="report-field">
         Status
@@ -555,9 +545,11 @@ function ReportDetail({
           changes
         </button>
       </div>
+      </div>
+      <ReplyComposer report={report}/>
       <div className="admin-meta mt-6 flex items-center gap-2">
         <Mail size={13} />
-        Email:{" "}
+        Admin alert email:{" "}
         {notification.state === "sent"
           ? "Accepted by provider"
           : notification.state}
