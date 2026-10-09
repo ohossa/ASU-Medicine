@@ -65,15 +65,7 @@
                 "is the newly added graphics and charts.",
                 "is the new colors and themes in PowerPoint."
               ],
-              "correctIndex": 1,
-              "duplicateAliases": [
-                {
-                  "module": "P1-1",
-                  "chapterId": 1,
-                  "id": "P1-1-CH1-CLIN-0015"
-                }
-              ],
-              "contentVersion": "cce2285a912459ef2b8f9922732a65b68debabdb9933a2ba1546d0ff2fbb9555"
+              "correctIndex": 1
             },
             {
               "id": "P1-1-CH1-CLIN-0002",
@@ -86,8 +78,7 @@
                 "True",
                 "False"
               ],
-              "correctIndex": 1,
-              "contentVersion": "2abc7a9cc4dadd0edeeb3f1636e3ed423110711bf1ebc889add3aa80defe9ae0"
+              "correctIndex": 1
             },
             {
               "id": "P1-1-CH1-CLIN-0003",
@@ -100,8 +91,7 @@
                 "True",
                 "False"
               ],
-              "correctIndex": 0,
-              "contentVersion": "faf8889492e3595094524595428dfd1772081a52ee8f58536d1d764dc1a49cf3"
+              "correctIndex": 0
             },
             {
               "id": "P1-1-CH1-CLIN-0004",
@@ -114,31 +104,22 @@
                 "True",
                 "False"
               ],
-              "correctIndex": 1,
-              "contentVersion": "5061c9dc1039d17354fc4648f772ab5205796112803a015d099800aa219634af"
+              "correctIndex": 1
             },
             {
               "id": "P1-1-CH1-CLIN-0005",
               "type": "mcq",
               "lecture": 5,
-              "text": "In Office 2016, what is the purpose of the “Tell me what you want to do” box?",
+              "text": "Office-2016, tells me what you want to do:",
               "explanation": "The correct answer is C. The Tell Me box sits on the ribbon and lets the user type what they want to do; it then lists the matching commands and runs them directly, acting as a built-in search and guide. Page layout, picture insertion and spell check are individual commands that Tell Me can find, not what Tell Me itself is.",
               "keyConcept": "Tell Me = ribbon search box that finds and runs Office commands by description",
               "options": [
                 "A tool to adjust your page layout",
-                "A tool to insert picture in your document",
+                "A tool to insert picture in you document",
                 "A built-in search which helps and guides the user in using Office-2016 features.",
                 "A tool to check spelling and grammar"
               ],
-              "correctIndex": 2,
-              "duplicateAliases": [
-                {
-                  "module": "P1-1",
-                  "chapterId": 1,
-                  "id": "P1-1-CH1-CLIN-0017"
-                }
-              ],
-              "contentVersion": "ff792159edb8d35b921581bd2f00f691dd67b20c8b86bdb7a3ffcea4c14be777"
+              "correctIndex": 2
             },
             {
               "id": "P1-1-CH1-CLIN-0006",
@@ -153,8 +134,7 @@
                 "Text highlighter",
                 "Object background"
               ],
-              "correctIndex": 2,
-              "contentVersion": "b613f8a937adf71bf41b6d150fce565745313ba2f345c6d7094bffa6211d073d"
+              "correctIndex": 2
             },
             {
               "id": "P1-1-CH1-CLIN-0007",
@@ -167,22 +147,20 @@
                 "True",
                 "False"
               ],
-              "correctIndex": 0,
-              "contentVersion": "31fd37cb9116228876fbca530c8b2479262fb9ddb09c95b6b027dd834a0b7b39"
+              "correctIndex": 0
             },
             {
               "id": "P1-1-CH1-CLIN-0008",
               "type": "truefalse",
               "lecture": 8,
               "text": "In office-2016, new modern charts and graphs are added to word and excel, but not to PowerPoint.",
-              "explanation": "Office 2016 added chart types that were available across Word, Excel and PowerPoint. The statement incorrectly excludes PowerPoint; individual chart availability may depend on the exact application build.",
+              "explanation": "False. The new chart types introduced in Office 2016 (Treemap, Sunburst, Histogram, Box & Whisker, Waterfall, Funnel) are available in Word, Excel AND PowerPoint. Excluding PowerPoint makes the statement false.",
               "keyConcept": "Office 2016 modern charts are available in Word, Excel and PowerPoint alike",
               "options": [
                 "True",
                 "False"
               ],
-              "correctIndex": 1,
-              "contentVersion": "c75459e8928296bc8a9e6e569b6c1a34d9d330757f4308bf8faafcd211e7d726"
+              "correctIndex": 1
             },
             {
               "id": "P1-1-CH1-CLIN-0009",
@@ -197,8 +175,7 @@
                 "Microsoft account",
                 "Scroll bar"
               ],
-              "correctIndex": 2,
-              "contentVersion": "1bc68b072f5971628af8f14f68f7b020406fc6271b6a3a1d8ab66ee9af66af1c"
+              "correctIndex": 2
             },
             {
               "id": "P1-1-CH1-CLIN-0010",
@@ -211,8 +188,7 @@
                 "True",
                 "False"
               ],
-              "correctIndex": 0,
-              "contentVersion": "c2312f927f173db5d4466070ebc80ef3fc54dfdba3ccfdf2703af34e8ed69c0e"
+              "correctIndex": 0
             },
             {
               "id": "P1-1-CH1-CLIN-0011",
@@ -227,15 +203,14 @@
                 "Commands",
                 "Groups"
               ],
-              "correctIndex": 3,
-              "contentVersion": "a4963edd6dfa95a83cd2e4af774540bcde8be2c5535488b46e3363485162b859"
+              "correctIndex": 3
             },
             {
               "id": "P1-1-CH1-CLIN-0012",
               "type": "mcq",
               "lecture": 12,
               "text": "In office 2013, the functions used to open, save, and close a Word document are located in",
-              "explanation": "The File tab opens Backstage view with file-level commands such as Open, Save and Close. The round Office button was replaced by the File tab beginning with Office 2010.",
+              "explanation": "The correct answer is C. Office 2013 replaced the round Microsoft Office Button of 2007 with the File tab, which opens Backstage view containing New, Open, Save, Save As, Print and Close. The status bar and title bar only display information about the document.",
               "keyConcept": "Office 2010 onwards: File menu (Backstage) replaced the Office Button for New/Open/Save/Print",
               "options": [
                 "Status bar",
@@ -243,8 +218,7 @@
                 "File menu",
                 "Title bar"
               ],
-              "correctIndex": 2,
-              "contentVersion": "d197d43f5943e471df76ece51bf031cd35c62dffe6247490fdbe3f689fea373a"
+              "correctIndex": 2
             },
             {
               "id": "P1-1-CH1-CLIN-0013",
@@ -259,22 +233,35 @@
                 "Status bar",
                 "Zoom control menu"
               ],
-              "correctIndex": 0,
-              "contentVersion": "c2a2e8105330632f9ea2d331edb9876d9985b54f32e7c6d8fa3038efc6bb401d"
+              "correctIndex": 0
             },
             {
               "id": "P1-1-CH1-CLIN-0014",
               "type": "truefalse",
               "lecture": 12,
-              "text": "The File tab provides commands such as New, Open, Save, Save As and Print.",
+              "text": "When you click file menu, the following commands appear (new, open, save, save as and print) appear.",
               "explanation": "True. Clicking the File tab opens Backstage view, whose left-hand pane lists exactly these file-level commands: New, Open, Save, Save As, Print, Share, Export and Close.",
               "keyConcept": "Backstage view holds all file-level commands: New, Open, Save, Save As, Print",
               "options": [
                 "True",
                 "False"
               ],
-              "correctIndex": 0,
-              "contentVersion": "982e5c726d151398f8c5f1db3c4f358e4e840f1da5ef8c0f6e536ec67a4658f1"
+              "correctIndex": 0
+            },
+            {
+              "id": "P1-1-CH1-CLIN-0015",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "In Office-2016 and above, Smart Lookup",
+              "explanation": "The correct answer is A. Smart Lookup searches the web for the selected term and shows definitions, articles and images in the Insights pane inside the application. The remaining options describe charts and theme colours, which are formatting features rather than research tools.",
+              "keyConcept": "Smart Lookup acts on the SELECTED word or phrase - select first, then look up",
+              "options": [
+                "Helps you find information you need quickly without even leaving your document.",
+                "is the newly added graphics and charts.",
+                "is the new colors and themes in word.",
+                "is the new colors and themes in PowerPoint."
+              ],
+              "correctIndex": 0
             },
             {
               "id": "P1-1-CH1-CLIN-0016",
@@ -289,8 +276,22 @@
                 "Groups",
                 "Commands"
               ],
-              "correctIndex": 0,
-              "contentVersion": "4b3a00c9a795885d60679dda84dfb1f8848057e871f6efe888efdc0ac02fe103"
+              "correctIndex": 0
+            },
+            {
+              "id": "P1-1-CH1-CLIN-0017",
+              "type": "mcq",
+              "lecture": 5,
+              "text": "In Office-2016 and above, (tell me what you want to do) is",
+              "explanation": "The correct answer is B. Tell Me is the search box on the ribbon into which the user types a task in plain language; it returns the relevant commands and can run them or offer help. Inserting pictures, checking spelling and adjusting layout are commands Tell Me can locate, not definitions of Tell Me.",
+              "keyConcept": "Tell Me finds and runs a command even when you don't know which tab holds it",
+              "options": [
+                "A tool to insert picture in you document",
+                "A built-in search which helps and guides the user in using Office-2016 features.",
+                "A tool to check spelling and grammar",
+                "A tool to adjust your page layout"
+              ],
+              "correctIndex": 1
             },
             {
               "id": "P1-1-CH1-CLIN-0018",
@@ -305,8 +306,7 @@
                 "Edit command",
                 "Paste command"
               ],
-              "correctIndex": 0,
-              "contentVersion": "670ea659c0056b6f67a5cb1a6d09e01b27d199a12ef4e459920bc94cff3d4a8d"
+              "correctIndex": 0
             },
             {
               "id": "P1-1-CH1-CLIN-0019",
@@ -321,8 +321,22 @@
                 "Numbers",
                 "Text"
               ],
-              "correctIndex": 0,
-              "contentVersion": "68a7aa1ff24f80703d62b7b01a4c73d9c9a46b6c84a9485064bc9a59f66f01ab"
+              "correctIndex": 0
+            },
+            {
+              "id": "P1-1-CH1-CLIN-0020",
+              "type": "mcq",
+              "lecture": 15,
+              "text": "When the CPU detects an interrupt, then Excel saves its",
+              "explanation": "The correct answer is D. When an interrupt occurs, the currently running program has its current state (program counter and register contents) saved to the stack so that execution can resume from exactly that point after the interrupt service routine finishes. A future state does not yet exist, and older states are not what is preserved at that moment.",
+              "keyConcept": "On an interrupt, the CPU saves the program's CURRENT state so it can resume afterwards",
+              "options": [
+                "Next state",
+                "Previous state",
+                "All of the above",
+                "Current state"
+              ],
+              "correctIndex": 3
             },
             {
               "id": "P1-1-CH1-CLIN-0021",
@@ -337,8 +351,7 @@
                 "Add cells",
                 "Align Cells"
               ],
-              "correctIndex": 0,
-              "contentVersion": "37dab2f1a19370b445d0f2865ac043b05dfaf290689e083fe62d5b4c6a770edd"
+              "correctIndex": 0
             },
             {
               "id": "P1-1-CH1-CLIN-0022",
@@ -353,14 +366,13 @@
                 "Send backward",
                 "Send to back"
               ],
-              "correctIndex": 1,
-              "contentVersion": "1fb09ed9fc6ee63477c7cb48315a03786a1f57a2e2eb67de4c34cf27793f2436"
+              "correctIndex": 1
             },
             {
               "id": "P1-1-CH1-CLIN-0023",
               "type": "mcq",
               "lecture": 18,
-              "text": "In Microsoft Word 2013, which command creates a custom bullet symbol?",
+              "text": "How do you create your own list design?",
               "explanation": "The correct answer is C. Opening the drop-down arrow next to the Bullets button shows the Bullets Library, where Define New Bullet lets you choose a symbol, picture or font for a custom bullet. There is no new list command on the Insert tab, the Font group does not control list design, and custom designs are certainly possible.",
               "keyConcept": "Custom bullets: Bullets drop-down > Bullets Library > Define New Bullet",
               "options": [
@@ -369,8 +381,7 @@
                 "In the bullets library, click define new bullet",
                 "You can't. You can only use the built-in designs."
               ],
-              "correctIndex": 2,
-              "contentVersion": "ff512d5d06ef10d33d174bc696a5aab58f500122f77748f24c491bf898f490ec"
+              "correctIndex": 2
             }
           ]
         }
@@ -424,8 +435,7 @@
                 "Font, Paragraph, Styles",
                 "Clipboard, Font, Zoom"
               ],
-              "correctIndex": 2,
-              "contentVersion": "584698da41178fb3c34a416177bbf8e4855a85f1bf1d413029c906fb16b80599"
+              "correctIndex": 2
             },
             {
               "id": "P1-1-CH2-CLIN-0025",
@@ -440,14 +450,13 @@
                 "Word art",
                 "Text effects"
               ],
-              "correctIndex": 0,
-              "contentVersion": "7dfe0a90c6afba9b3d725a27a92c70d5568bdefc27a62091da1e4edba30af3f8"
+              "correctIndex": 0
             },
             {
               "id": "P1-1-CH2-CLIN-0026",
               "type": "mcq",
               "lecture": 3,
-              "text": "Beginning a paragraph with a large dropped initial capital letter is called:",
+              "text": "Beginning a paragraph with a large dropped initial capital latter, is called",
               "explanation": "The correct answer is D. A Drop Cap (Insert tab > Text group) enlarges the first letter of a paragraph so that it drops down over several lines. Subscript and superscript shift small characters below or above the baseline, and word wrapping controls how text flows around objects or onto the next line.",
               "keyConcept": "Drop Cap = enlarged first letter of a paragraph (Insert tab > Text group)",
               "options": [
@@ -456,15 +465,7 @@
                 "Word wrapping",
                 "Drop Cap"
               ],
-              "correctIndex": 3,
-              "duplicateAliases": [
-                {
-                  "module": "P1-1",
-                  "chapterId": 2,
-                  "id": "P1-1-CH2-CLIN-0041"
-                }
-              ],
-              "contentVersion": "439fb30fe1557bbb1f96f2ab84e301672a7ab8c84e3ae4e57a43e52c1381bc13"
+              "correctIndex": 3
             },
             {
               "id": "P1-1-CH2-CLIN-0027",
@@ -479,8 +480,7 @@
                 "Click Bold on the Mini toolbar",
                 "Click Text highlight color on the Font group of the Home tab"
               ],
-              "correctIndex": 1,
-              "contentVersion": "de90577aa258bc602d4693a5ac07008c1ccff9fae0faea35921a0a5d1ae05861"
+              "correctIndex": 1
             },
             {
               "id": "P1-1-CH2-CLIN-0028",
@@ -493,8 +493,7 @@
                 "True",
                 "False"
               ],
-              "correctIndex": 0,
-              "contentVersion": "57f454c65a4d3fd560f65f71d044df694ef4436b9c4c9dfb87d2ae09cd50647e"
+              "correctIndex": 0
             },
             {
               "id": "P1-1-CH2-CLIN-0029",
@@ -509,8 +508,7 @@
                 "Quick access toolbar",
                 "Status bar"
               ],
-              "correctIndex": 3,
-              "contentVersion": "781f32cd8a13a4dbafbf9702285cb139e297e014302c683812fe2c51ec61e7ca"
+              "correctIndex": 3
             },
             {
               "id": "P1-1-CH2-CLIN-0030",
@@ -525,8 +523,7 @@
                 "It is a typing tool",
                 "It is a database tool"
               ],
-              "correctIndex": 2,
-              "contentVersion": "748c30e902d9d500273d33d8084d50227c462792a17761cab5f17c1fcaa43389"
+              "correctIndex": 2
             },
             {
               "id": "P1-1-CH2-CLIN-0031",
@@ -539,14 +536,13 @@
                 "True",
                 "False"
               ],
-              "correctIndex": 0,
-              "contentVersion": "082f03fb2deb852c82b47648d7ca4dd98cf7a982925f45a6700549e07b9d4218"
+              "correctIndex": 0
             },
             {
               "id": "P1-1-CH2-CLIN-0032",
               "type": "mcq",
               "lecture": 9,
-              "text": "To add a table to your Word document, you should start from:",
+              "text": "To add a table to you word document, you should start from:",
               "explanation": "The correct answer is B. Tables are created from Insert tab > Tables group, as are all other inserted objects (pictures, shapes, charts, symbols). The Table Design and Layout tabs only appear afterwards, once the table exists and is selected.",
               "keyConcept": "Insert tab creates tables; Table Design/Layout tabs appear only after insertion",
               "options": [
@@ -555,8 +551,7 @@
                 "the Home tab",
                 "the design tab"
               ],
-              "correctIndex": 1,
-              "contentVersion": "448d120d2c67aeed87d57210ca196a4b387fd3ad2907d4a1d4c1eb1c9420d820"
+              "correctIndex": 1
             },
             {
               "id": "P1-1-CH2-CLIN-0033",
@@ -569,8 +564,7 @@
                 "True",
                 "False"
               ],
-              "correctIndex": 0,
-              "contentVersion": "c83cc8fd5a3f340747091babc8f9b55812e5464589b125579ba027b4d071e3b5"
+              "correctIndex": 0
             },
             {
               "id": "P1-1-CH2-CLIN-0034",
@@ -585,8 +579,7 @@
                 "Home tab",
                 "Insert tab"
               ],
-              "correctIndex": 2,
-              "contentVersion": "f5020be3a0c0f9fef2efeec0f8410b50689ef2ec2c5a503d2ed47322aa8a82fd"
+              "correctIndex": 2
             },
             {
               "id": "P1-1-CH2-CLIN-0035",
@@ -600,8 +593,7 @@
                 "Page Layout tab: Text group",
                 "Insert tab: Symbols group"
               ],
-              "correctIndex": 0,
-              "contentVersion": "2fd04d1e976b01607d31b98c3f5e8998397544a3019c23b51df6931eeceb27e1"
+              "correctIndex": 0
             },
             {
               "id": "P1-1-CH2-CLIN-0036",
@@ -616,14 +608,13 @@
                 "Superscript",
                 "Regular"
               ],
-              "correctIndex": 2,
-              "contentVersion": "5b7b48195cdd0a7136e79ad6a84839284c5f346b648290deb6aa0946594af45d"
+              "correctIndex": 2
             },
             {
               "id": "P1-1-CH2-CLIN-0037",
               "type": "mcq",
               "lecture": 13,
-              "text": "Which Insert-tab command opens the gallery of individual special characters, such as Greek letters?",
+              "text": "To add special characters like (α, β or ₁) -in your text- you can find them in:",
               "explanation": "The correct answer is B. Insert tab > Symbols group > Symbol opens the character map containing Greek letters and other special characters. The Equation tool builds mathematical expressions rather than inserting single characters, and drawings and clipart are graphics.",
               "keyConcept": "Insert > Symbol inserts Greek letters and special characters",
               "options": [
@@ -632,8 +623,7 @@
                 "Drawing",
                 "Clipart"
               ],
-              "correctIndex": 1,
-              "contentVersion": "7cd2ccf4e89d8d3828326a967c501c9762362e965d2257575f24bd8c559bae4e"
+              "correctIndex": 1
             },
             {
               "id": "P1-1-CH2-CLIN-0038",
@@ -648,8 +638,7 @@
                 "A green wavy line below the text containing errors",
                 "A red wavy line below the text containing errors"
               ],
-              "correctIndex": 3,
-              "contentVersion": "79084527f3fa5c28403641dab0430d1ad7e5bb7cb82621060a052d7866f11cd0"
+              "correctIndex": 3
             },
             {
               "id": "P1-1-CH2-CLIN-0039",
@@ -662,8 +651,7 @@
                 "True",
                 "False"
               ],
-              "correctIndex": 0,
-              "contentVersion": "b84b0e1d3de5e9d5a9d613aee1673a25c70dfc920a88f92ebc8222c95a27fdf4"
+              "correctIndex": 0
             },
             {
               "id": "P1-1-CH2-CLIN-0040",
@@ -678,8 +666,22 @@
                 "Watermark",
                 "Hyperlink"
               ],
-              "correctIndex": 2,
-              "contentVersion": "999a8c2e837a7d509f10f5c5f014a8859bf59b6c36d942f232fda22c46031961"
+              "correctIndex": 2
+            },
+            {
+              "id": "P1-1-CH2-CLIN-0041",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "Beginning a paragraph with a large dropped initial capital latter, is called",
+              "explanation": "The correct answer is B. The Drop Cap command enlarges the opening letter of a paragraph so it hangs down over two or more lines, a decorative device used in books and magazines. The distractors all describe how characters sit on the line rather than an enlarged initial.",
+              "keyConcept": "Drop Cap lives on the INSERT tab (Text group), not the Home tab - a common exam slip",
+              "options": [
+                "Word wrapping",
+                "Drop Cap",
+                "Superscript",
+                "Subscript"
+              ],
+              "correctIndex": 1
             },
             {
               "id": "P1-1-CH2-CLIN-0042",
@@ -694,14 +696,13 @@
                 "A link between a word document and another file in a different location",
                 "A very quick way of creating a drawing"
               ],
-              "correctIndex": 2,
-              "contentVersion": "af68034a93cbc0f13e921980c5d8e7503d37942267cca111ea38d50d5517a3f6"
+              "correctIndex": 2
             },
             {
               "id": "P1-1-CH2-CLIN-0043",
               "type": "mcq",
               "lecture": 18,
-              "text": "By pressing F7, Microsoft word will (in the Windows desktop application)?",
+              "text": "By pressing F7, Microsoft word will",
               "explanation": "The correct answer is C. F7 launches the Spelling & Grammar checker. Pasting is Ctrl+V, printing is Ctrl+P, and Help is F1.",
               "keyConcept": "F7 = Spelling & Grammar check (F1 = Help, Ctrl+P = Print, Ctrl+V = Paste)",
               "options": [
@@ -710,8 +711,7 @@
                 "Check spelling and grammar",
                 "Open help"
               ],
-              "correctIndex": 2,
-              "contentVersion": "a9338f3e4644799ca23dcbf71cbab0cfd235479386d79cdf4a4cb62f8b2177e9"
+              "correctIndex": 2
             },
             {
               "id": "P1-1-CH2-CLIN-0044",
@@ -726,8 +726,7 @@
                 "spreadsheet tool",
                 "typing tool"
               ],
-              "correctIndex": 3,
-              "contentVersion": "14f4ad399c76d99431e95993855820353a3da7c0bacb169835caca24d083ca68"
+              "correctIndex": 3
             }
           ]
         }
@@ -792,14 +791,13 @@
                 "Databases",
                 "Text documents"
               ],
-              "correctIndex": 1,
-              "contentVersion": "6334f991a078b7aab3a70eb21f7d1dc359cd815c3235d4f1485126c00ea857bd"
+              "correctIndex": 1
             },
             {
               "id": "P1-1-CH3-CLIN-0046",
               "type": "mcq",
               "lecture": 2,
-              "text": "What is the default file extension for a standard PowerPoint 2013 presentation?",
+              "text": "What is the extension of a saved PowerPoint 2013 file?",
               "explanation": "The correct answer is A. From PowerPoint 2007 onward the default presentation format is the XML-based .pptx. The .ppt extension is the legacy 97-2003 format, .pps is a slide show that opens straight into presentation mode, and .pptm is a macro-enabled presentation.",
               "keyConcept": "PowerPoint 2007+ default extension is .pptx (.ppt = legacy, .pps = slide show)",
               "options": [
@@ -808,14 +806,13 @@
                 ".pps",
                 ".pptm"
               ],
-              "correctIndex": 0,
-              "contentVersion": "b2ea2a28245fdd871a60fa88db7b1d2c49d4aa741bc8ea44a349011220b07539"
+              "correctIndex": 0
             },
             {
               "id": "P1-1-CH3-CLIN-0047",
               "type": "mcq",
               "lecture": 3,
-              "text": "To start the slide show from the beginning, press (in the Windows desktop application)?",
+              "text": "To start the slide show from the beginning, press",
               "explanation": "The correct answer is A. F5 launches the presentation from slide 1 regardless of which slide is currently displayed. Shift+F5 starts from the current slide, F7 runs the spell checker, and Esc ends the running show.",
               "keyConcept": "F5 = start show from the beginning; Shift+F5 = start from the current slide",
               "options": [
@@ -824,14 +821,13 @@
                 "F7",
                 "Esc"
               ],
-              "correctIndex": 0,
-              "contentVersion": "0cb92fab6ec4bcc59d391b10f550200d7a7c1787506816899a25ed11a0d7708c"
+              "correctIndex": 0
             },
             {
               "id": "P1-1-CH3-CLIN-0048",
               "type": "mcq",
               "lecture": 3,
-              "text": "To start the slide show from the current slide, press (in the Windows desktop application)?",
+              "text": "To start the slide show from the current slide, press",
               "explanation": "The correct answer is B. Shift+F5 begins the show at the slide you are editing, which is useful when rehearsing a single slide. Plain F5 would jump back to the first slide, and the other combinations are not assigned to starting a show.",
               "keyConcept": "Shift+F5 resumes the show from the slide currently on screen",
               "options": [
@@ -840,14 +836,13 @@
                 "Ctrl + F5",
                 "Alt + F5"
               ],
-              "correctIndex": 1,
-              "contentVersion": "798c510bd6368b18da16822d9923efeb6c34c84c3547ae908c1465728e5ae725"
+              "correctIndex": 1
             },
             {
               "id": "P1-1-CH3-CLIN-0049",
               "type": "mcq",
               "lecture": 3,
-              "text": "To end a running slide show and return to the editing window, press (in the Windows desktop application)?",
+              "text": "To end a running slide show and return to the editing window, press",
               "explanation": "The correct answer is B. Esc immediately exits presentation mode and returns to Normal view. Enter advances to the next slide, Backspace moves back one slide, and Ctrl+E centres text rather than ending the show.",
               "keyConcept": "Esc ends a slide show; Enter advances and Backspace goes back",
               "options": [
@@ -856,8 +851,7 @@
                 "Backspace",
                 "Ctrl + E"
               ],
-              "correctIndex": 1,
-              "contentVersion": "d56b3f2c323f8098edc37465964d5027236cc560646497939eeec4d7e63eff7a"
+              "correctIndex": 1
             },
             {
               "id": "P1-1-CH3-CLIN-0050",
@@ -872,8 +866,7 @@
                 "Action",
                 "Design"
               ],
-              "correctIndex": 1,
-              "contentVersion": "7adf268ec0ea7c05b03d83fee4c06c242122f713715ea76c49d29683f747d9b3"
+              "correctIndex": 1
             },
             {
               "id": "P1-1-CH3-CLIN-0051",
@@ -888,8 +881,7 @@
                 "Theme",
                 "Layout"
               ],
-              "correctIndex": 1,
-              "contentVersion": "eeff3f2610e7c882eb7e7b67a891f5cb698b9098c5df6e0bc9916c57e66356d1"
+              "correctIndex": 1
             },
             {
               "id": "P1-1-CH3-CLIN-0052",
@@ -902,8 +894,7 @@
                 "True",
                 "False"
               ],
-              "correctIndex": 1,
-              "contentVersion": "d8bfb97ee548cb7ff0477567536ac7437df98b50193729547ff71fb43a688f93"
+              "correctIndex": 1
             },
             {
               "id": "P1-1-CH3-CLIN-0053",
@@ -918,8 +909,7 @@
                 "Slide Show tab",
                 "Design tab"
               ],
-              "correctIndex": 1,
-              "contentVersion": "bfffbb8e8101901343ba70478a92098f4e5cd6748d4085a2dd0a9630f9460260"
+              "correctIndex": 1
             },
             {
               "id": "P1-1-CH3-CLIN-0054",
@@ -934,8 +924,7 @@
                 "Reading view",
                 "Notes Page view"
               ],
-              "correctIndex": 1,
-              "contentVersion": "6bffb9614d7cb8e1e13e127a793ac9958bb1e74319f7a03197c30a684b16cf96"
+              "correctIndex": 1
             },
             {
               "id": "P1-1-CH3-CLIN-0055",
@@ -950,8 +939,7 @@
                 "Slide Show view",
                 "Outline view"
               ],
-              "correctIndex": 0,
-              "contentVersion": "b990da17f6d6c3ad0d579582bb25a60a7e5d566654dc8dee09fe4467780f7b48"
+              "correctIndex": 0
             },
             {
               "id": "P1-1-CH3-CLIN-0056",
@@ -966,8 +954,7 @@
                 "In a text box on the slide",
                 "In the status bar"
               ],
-              "correctIndex": 1,
-              "contentVersion": "5429c70096dbfcfce5e17efca78bccd2171d723dd9876ebc772a1636daca2a97"
+              "correctIndex": 1
             },
             {
               "id": "P1-1-CH3-CLIN-0057",
@@ -982,8 +969,7 @@
                 "Template",
                 "Transition"
               ],
-              "correctIndex": 1,
-              "contentVersion": "136bab5deabeccf7d6dc9ac66630a5cae728bc0a3365f131a45c379a978cbc6f"
+              "correctIndex": 1
             },
             {
               "id": "P1-1-CH3-CLIN-0058",
@@ -996,8 +982,7 @@
                 "True",
                 "False"
               ],
-              "correctIndex": 0,
-              "contentVersion": "0199ee9de9f7ac1b81771205383fdb3000fed6c08a1620e2bcc476a19150b0b6"
+              "correctIndex": 0
             },
             {
               "id": "P1-1-CH3-CLIN-0059",
@@ -1012,8 +997,7 @@
                 "Animation",
                 "Placeholder"
               ],
-              "correctIndex": 1,
-              "contentVersion": "4ba63ca267afbeced0abc6c8b877e3433207af67e6531e161e73ee8658db1fdd"
+              "correctIndex": 1
             },
             {
               "id": "P1-1-CH3-CLIN-0060",
@@ -1028,8 +1012,7 @@
                 "Design tab",
                 "Review tab"
               ],
-              "correctIndex": 1,
-              "contentVersion": "a02def9820c2d7b8930c658e96d667def62dea0cb49f8bfa478e7a2ae1bdb21d"
+              "correctIndex": 1
             },
             {
               "id": "P1-1-CH3-CLIN-0061",
@@ -1042,8 +1025,7 @@
                 "True",
                 "False"
               ],
-              "correctIndex": 0,
-              "contentVersion": "1bce46d21fd3404b7294056bcd5799ef6f3189293c632cbc654f9668eb68fc74"
+              "correctIndex": 0
             },
             {
               "id": "P1-1-CH3-CLIN-0062",
@@ -1058,8 +1040,7 @@
                 "WordArt",
                 "Charts"
               ],
-              "correctIndex": 0,
-              "contentVersion": "b15a6216ea8c61d06744eceb808492dadc0d4bd698c06d95fc5f95b1733a3f77"
+              "correctIndex": 0
             },
             {
               "id": "P1-1-CH3-CLIN-0063",
@@ -1074,8 +1055,7 @@
                 "Comment",
                 "Hyperlink"
               ],
-              "correctIndex": 0,
-              "contentVersion": "5036ce37cb32365fb003a5033a2d4e59df7262c7a7d5f0bd0e817d4eaf4b49f8"
+              "correctIndex": 0
             },
             {
               "id": "P1-1-CH3-CLIN-0064",
@@ -1090,8 +1070,7 @@
                 "Rotating",
                 "Compressing"
               ],
-              "correctIndex": 1,
-              "contentVersion": "1d92167ab22649a91131a5c9ccbd2e1398e86110cb2473c532a71190b82e035c"
+              "correctIndex": 1
             },
             {
               "id": "P1-1-CH3-CLIN-0065",
@@ -1106,8 +1085,7 @@
                 "Align",
                 "Rotate"
               ],
-              "correctIndex": 1,
-              "contentVersion": "767627a707463dfc2d96b7de9e1d76f7a3b1f8f3c1c81964e017e7d5a97bfea1"
+              "correctIndex": 1
             },
             {
               "id": "P1-1-CH3-CLIN-0066",
@@ -1122,8 +1100,7 @@
                 "Insert Object",
                 "Add Layout"
               ],
-              "correctIndex": 0,
-              "contentVersion": "476d4c4a9fa625f07a9d782e32830c2b3b8289626d90f33636ab3fd463df23c3"
+              "correctIndex": 0
             },
             {
               "id": "P1-1-CH3-CLIN-0067",
@@ -1138,8 +1115,7 @@
                 "TXT",
                 "RTF"
               ],
-              "correctIndex": 0,
-              "contentVersion": "6036408228682b45766dea7c70d0901e7a475216ee011dc04c822f6a60649e1f"
+              "correctIndex": 0
             },
             {
               "id": "P1-1-CH3-CLIN-0068",
@@ -1154,8 +1130,7 @@
                 "An outline",
                 "A slide show"
               ],
-              "correctIndex": 1,
-              "contentVersion": "94a8ee8a14d3e76dc7612576b69e8bac368ee3a0597c25ac3946cb83b55a0408"
+              "correctIndex": 1
             },
             {
               "id": "P1-1-CH3-CLIN-0069",
@@ -1170,8 +1145,7 @@
                 "Underlined",
                 "Bigger"
               ],
-              "correctIndex": 0,
-              "contentVersion": "12ec7a63e2b762f7278254d2af0006997f307aa118bdc791ad139e4dd8bf6d31"
+              "correctIndex": 0
             },
             {
               "id": "P1-1-CH3-CLIN-0070",
@@ -1186,8 +1160,7 @@
                 "Shapes",
                 "Frames"
               ],
-              "correctIndex": 1,
-              "contentVersion": "6d463533ebdbf2ee1f2ef19dcbb5216b8c26ef3ca139a7de1f3be1ad31519607"
+              "correctIndex": 1
             },
             {
               "id": "P1-1-CH3-CLIN-0071",
@@ -1202,8 +1175,7 @@
                 "New Slide",
                 "Reset Slide"
               ],
-              "correctIndex": 0,
-              "contentVersion": "15258720a5c7cdd6949c1bbaa9ee83497b301e42f0fb159ee82d9db528cd25f0"
+              "correctIndex": 0
             },
             {
               "id": "P1-1-CH3-CLIN-0072",
@@ -1216,8 +1188,7 @@
                 "True",
                 "False"
               ],
-              "correctIndex": 0,
-              "contentVersion": "703029438fe1fbc87a2ec2ca4a7d6503502c0ae221b2fad5795f712d34276a04"
+              "correctIndex": 0
             },
             {
               "id": "P1-1-CH3-CLIN-0073",
@@ -1232,8 +1203,7 @@
                 "Clipart",
                 "Chart"
               ],
-              "correctIndex": 1,
-              "contentVersion": "151a013206116af6d954f526dea726391de6d379b0aa72de60bd740067abd5dd"
+              "correctIndex": 1
             },
             {
               "id": "P1-1-CH3-CLIN-0074",
@@ -1248,8 +1218,7 @@
                 "Clipart",
                 "Text box"
               ],
-              "correctIndex": 1,
-              "contentVersion": "3ad966eef7cca81c10e1ab6f218eba845d3174bc5f14659a24d629c5eca6beb3"
+              "correctIndex": 1
             },
             {
               "id": "P1-1-CH3-CLIN-0075",
@@ -1262,8 +1231,7 @@
                 "True",
                 "False"
               ],
-              "correctIndex": 0,
-              "contentVersion": "797d910118f5d3a288ef069e9dd1f04604136b3cf777340be1cc162abe3659f0"
+              "correctIndex": 0
             },
             {
               "id": "P1-1-CH3-CLIN-0076",
@@ -1278,8 +1246,7 @@
                 "Design tab: Themes group",
                 "Review tab: Comments group"
               ],
-              "correctIndex": 0,
-              "contentVersion": "19a4e3c5e06a101312e65fba464c2fbbbb15fb8b4bef4e0d4b178d7fdca4b860"
+              "correctIndex": 0
             },
             {
               "id": "P1-1-CH3-CLIN-0077",
@@ -1294,8 +1261,7 @@
                 "Insert tab",
                 "View tab"
               ],
-              "correctIndex": 0,
-              "contentVersion": "1a676577ded3fbe13d960848b2d8f7a4a58c210a0ade7263cbc796a1fecd9b54"
+              "correctIndex": 0
             },
             {
               "id": "P1-1-CH3-CLIN-0078",
@@ -1308,8 +1274,7 @@
                 "True",
                 "False"
               ],
-              "correctIndex": 0,
-              "contentVersion": "910d39a24c7fc4f2bebb53a5ab20a9716fe95fa2e26c9e72841d90fc1c115119"
+              "correctIndex": 0
             }
           ]
         }
@@ -1351,14 +1316,13 @@
                 "Text document",
                 "Slide presentation"
               ],
-              "correctIndex": 1,
-              "contentVersion": "a3772d9b256d31724bfd8e809b5f6fc4258e4b86397866ee2d4a3329408398bf"
+              "correctIndex": 1
             },
             {
               "id": "P1-1-CH4-CLIN-0080",
               "type": "mcq",
               "lecture": 2,
-              "text": "Which term is used to join the selected Excel cells into one cell?",
+              "text": "Which term is used to join the selected Excel cells in to one cell?",
               "explanation": "The correct answer is C. Merge (Merge & Center, in the Alignment group of the Home tab) combines the selected cells into a single cell. Wrap Text only makes long text display on several lines inside one cell, a Pivot table summarises data, and Filter hides rows that do not match a condition.",
               "keyConcept": "Merge joins several cells into one; Wrap keeps one cell but shows text on multiple lines",
               "options": [
@@ -1367,8 +1331,7 @@
                 "Merge",
                 "Filter"
               ],
-              "correctIndex": 2,
-              "contentVersion": "1c2e658897a00da7622f8d01627d1c148a5220bc8ee26caa4b075e87922cd165"
+              "correctIndex": 2
             },
             {
               "id": "P1-1-CH4-CLIN-0081",
@@ -1383,14 +1346,13 @@
                 "Graph",
                 "Cell"
               ],
-              "correctIndex": 0,
-              "contentVersion": "86e34f155ea981c79f4dc76eca1282c5b02642f1c8fd356ee862fbb4f26dc1cb"
+              "correctIndex": 0
             },
             {
               "id": "P1-1-CH4-CLIN-0082",
               "type": "mcq",
               "lecture": 4,
-              "text": "What is the default file extension for a standard Excel workbook in Excel 2013?",
+              "text": "What is the extension of saved file in MS Excel 2013 and above?",
               "explanation": "The correct answer is C. Since Excel 2007 the default workbook format has been the XML-based .xlsx. The older binary format .xls belongs to Excel 97-2003 and is only used for backward compatibility; .xbs and .xos are not Excel extensions at all.",
               "keyConcept": "Excel 2007+ default extension is .xlsx (.xls = legacy 97-2003 format)",
               "options": [
@@ -1399,8 +1361,7 @@
                 ".xlsx",
                 ".xls"
               ],
-              "correctIndex": 2,
-              "contentVersion": "7369c2f70d106e6c182dc887c0d406a321da6fe8648df15a8741f861a2e70312"
+              "correctIndex": 2
             },
             {
               "id": "P1-1-CH4-CLIN-0083",
@@ -1415,8 +1376,7 @@
                 "Merge",
                 "Filter"
               ],
-              "correctIndex": 0,
-              "contentVersion": "26f1b5215382f7864437a4188b5aadc7ad9ca49920e8738e3acce595e8d6a8ae"
+              "correctIndex": 0
             },
             {
               "id": "P1-1-CH4-CLIN-0084",
@@ -1431,14 +1391,13 @@
                 "Help button",
                 "Cells"
               ],
-              "correctIndex": 3,
-              "contentVersion": "a156da79526df863cf2d62c57c1784a3efe1e0a809eeb645ec2a34181e725647"
+              "correctIndex": 3
             },
             {
               "id": "P1-1-CH4-CLIN-0085",
               "type": "mcq",
               "lecture": 6,
-              "text": "Which shortcut closes the active Excel application window in Windows?",
+              "text": "Which command is used to close the window of Excel?",
               "explanation": "The correct answer is C. Alt+F4 is the Windows shortcut that closes the active application window, including Excel. Ctrl+R fills right, Ctrl+C copies, and Ctrl+W closes only the current workbook while leaving Excel itself running.",
               "keyConcept": "Alt+F4 closes the application window; Ctrl+W closes only the current workbook",
               "options": [
@@ -1447,8 +1406,7 @@
                 "Alt+ F4",
                 "Ctrl+ C"
               ],
-              "correctIndex": 2,
-              "contentVersion": "f8db37f02d44c9cf5ebc984c8fa349850dc46b6b8e8e4d99f3e717b364648376"
+              "correctIndex": 2
             },
             {
               "id": "P1-1-CH4-CLIN-0086",
@@ -1463,8 +1421,7 @@
                 "Formula",
                 "Address"
               ],
-              "correctIndex": 3,
-              "contentVersion": "dc2bd80cf3bae80a4120a5aa3174dc1873ea9a2efc1a73e2d6ffebb94721d4d5"
+              "correctIndex": 3
             }
           ]
         }

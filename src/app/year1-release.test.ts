@@ -6,6 +6,7 @@ import anatomy from '../imports/year-1/semester-1/IAE-1.json';
 import physiology from '../imports/year-1/semester-1/IPHY-1.json';
 import ict from '../imports/year-1/semester-1/P1-1.json';
 import mapping from '../../docs/verification/year1-import-2026-10-08/source-mapping.json';
+import quality from '../../docs/verification/year1-quality-2026-10-09/summary.json';
 import { checkAnswerCorrect } from './utils/quiz';
 
 type Bank = Parameters<typeof validateModuleFile>[0] & {comingSoon: boolean};
@@ -18,13 +19,15 @@ describe('Year 1 Semester 1 designated source release', () => {
       const code = bank.meta.moduleCode;
       const report = mapping[code as keyof typeof mapping];
       const raw = bank.chapters.flatMap(ch => ch.subjects.flatMap(s => s.questions));
-      expect(raw).toHaveLength(report.sourceRows);
+      const release = quality.modules[code as keyof typeof quality.modules];
+      expect(release.before).toBe(report.sourceRows);
+      expect(raw).toHaveLength(release.after);
       expect(new Set(raw.map(q => q.id)).size).toBe(raw.length);
       expect(bank.comingSoon).toBe(false);
       expect(bank.meta.year).toBe(1);
       expect(bank.meta.semester).toBe(1);
       expect(isModuleActive(code)).toBe(true);
-      expect(getModuleQuestionCounts(code).totalCount).toBe(report.sourceRows);
+      expect(getModuleQuestionCounts(code).totalCount).toBe(release.after);
       const mixed = getChaptersForModuleAndMode(code, 'mixed').flatMap(ch => ch.subjects.flatMap(s => s.questions));
       expect(mixed).toHaveLength(raw.length);
       const mcq = getChaptersForModuleAndMode(code, 'mcq').flatMap(ch => ch.subjects.flatMap(s => s.questions));

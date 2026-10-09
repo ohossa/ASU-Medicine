@@ -1,0 +1,20 @@
+{
+  "scope": "Year 1 Semester 1",
+  "originalParents": 4635,
+  "originalChildren": 25,
+  "retainedParents": 4122,
+  "correctionRecords": 1436,
+  "excludedParents": 219,
+  "duplicatesRemoved": 294,
+  "releaseErrors": 0,
+  "pythonBehaviorTests": 11,
+  "isolatedVitestFiles": 68,
+  "isolatedVitestTests": 470,
+  "isolatedTestsExitCode": 0,
+  "isolatedBuildExitCode": 0,
+  "canonicalApplyIdempotent": true,
+  "semester2Unchanged": true,
+  "workingTreeFullTests": "510 pass,3 fail,1 unresolved suite in concurrent unrelated Learning Hub work at inspection time",
+  "workingTreeBuild": "Blocked by concurrent App.tsx references not yet defined at inspection time; isolated requested-release build passes",
+  "publication": "Local only; no Git push or deployment"
+}

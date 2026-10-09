@@ -1,0 +1,407 @@
+[
+  {
+    "module": "IBM-1",
+    "groupIndex": 0,
+    "ids": [
+      "IBM1-BIO-BGFORM-PRO-Q03",
+      "IBM1-BIO-MARKED-P09",
+      "IBM1-BIO-DRV-20260921-02226"
+    ],
+    "disposition": "retain_distinct_full_questions",
+    "reason": "Generic choose-correct-answer stems hide different amino-acid/protein alternative sets and different keyed propositions; preserve all.",
+    "reviewedPayloads": [
+      {
+        "id": "IBM1-BIO-BGFORM-PRO-Q03",
+        "type": "mcq",
+        "text": "Choose the correct answer:",
+        "options": [
+          "All dietary proteins are of high biological value.",
+          "Proteins are not polymers.",
+          "Only covalent bonds can stabilize protein structure.",
+          "During denaturation, a protein loses only its secondary structure.",
+          "Standard chiral amino-acid residues incorporated by ribosomes have the L configuration."
+        ],
+        "correctIndex": 4,
+        "modelAnswer": null,
+        "requiredPoints": null
+      },
+      {
+        "id": "IBM1-BIO-MARKED-P09",
+        "type": "mcq",
+        "text": "Choose the correct answer:",
+        "options": [
+          "The amino acids that enter protein synthesis are in the D-form",
+          "All dietary proteins are of high biological value",
+          "Only covalent bonds can stabilize protein structure",
+          "In protein denaturation, the protein loses its secondary structure only",
+          "Proteins are polymers"
+        ],
+        "correctIndex": 4,
+        "modelAnswer": null,
+        "requiredPoints": null
+      },
+      {
+        "id": "IBM1-BIO-DRV-20260921-02226",
+        "type": "mcq",
+        "text": "Choose the correct answer",
+        "options": [
+          "Glutamine is an aliphatic amino acid with negatively charged side chain",
+          "Glutamine is an aliphatic amino acid with positively charged side chain",
+          "Glutamine is an aliphatic indispensable amino acid",
+          "Glutamine is an aliphatic amino acid with polar uncharged side chain",
+          "Glutamine has an imino group"
+        ],
+        "correctIndex": 3,
+        "modelAnswer": null,
+        "requiredPoints": null
+      }
+    ]
+  },
+  {
+    "module": "IBM-1",
+    "groupIndex": 1,
+    "ids": [
+      "IBM1-BIO-DRV-20260921-01862",
+      "IBM1-BIO-DRV-20260921-02119"
+    ],
+    "disposition": "merge_semantically_equivalent",
+    "reason": "Identical glycine backbone-flexibility question. All alternatives are semantically identical, including singular/plural hydrophobic-amino-acid distractor; glycine answer agrees.",
+    "reviewedPayloads": [
+      {
+        "id": "IBM1-BIO-DRV-20260921-01862",
+        "type": "mcq",
+        "text": "Which amino acid has the greatest backbone conformational flexibility because its side chain is hydrogen?",
+        "options": [
+          "Glycine",
+          "Proline",
+          "Isoleucine",
+          "Tyrosine",
+          "Any amino acids with hydrophobic chains"
+        ],
+        "correctIndex": 0,
+        "modelAnswer": null,
+        "requiredPoints": null
+      },
+      {
+        "id": "IBM1-BIO-DRV-20260921-02119",
+        "type": "mcq",
+        "text": "Which amino acid has the greatest backbone conformational flexibility because its side chain is hydrogen?",
+        "options": [
+          "Glycine",
+          "Proline",
+          "Isoleucine",
+          "Tyrosine",
+          "Any amino acid with hydrophobic chain"
+        ],
+        "correctIndex": 0,
+        "modelAnswer": null,
+        "requiredPoints": null
+      }
+    ]
+  },
+  {
+    "module": "IBM-1",
+    "groupIndex": 2,
+    "ids": [
+      "IBM1-BIO-DRV-20260921-00021",
+      "IBM1-BIO-DRV-20260921-00059"
+    ],
+    "disposition": "retain_distinct_full_questions",
+    "reason": "Different full alternatives and different sugar-alcohol answers: mannitol versus ribitol.",
+    "reviewedPayloads": [
+      {
+        "id": "IBM1-BIO-DRV-20260921-00021",
+        "type": "mcq",
+        "text": "A sugar alcohol is",
+        "options": [
+          "Mannitol.",
+          "Fructose.",
+          "Galactose",
+          "L- ascorbic acid."
+        ],
+        "correctIndex": 0,
+        "modelAnswer": null,
+        "requiredPoints": null
+      },
+      {
+        "id": "IBM1-BIO-DRV-20260921-00059",
+        "type": "mcq",
+        "text": "A sugar alcohol is",
+        "options": [
+          "Ribose",
+          "Ribitol",
+          "Ribulose",
+          "Deoxy ribose"
+        ],
+        "correctIndex": 1,
+        "modelAnswer": null,
+        "requiredPoints": null
+      }
+    ]
+  },
+  {
+    "module": "IBM-1",
+    "groupIndex": 3,
+    "ids": [
+      "IBM1-BIO-DRV-20260921-00033",
+      "IBM1-BIO-DRV-20260921-01391"
+    ],
+    "disposition": "retain_distinct_full_questions",
+    "reason": "Different full alternatives and different pentose answers: ribulose versus ribose.",
+    "reviewedPayloads": [
+      {
+        "id": "IBM1-BIO-DRV-20260921-00033",
+        "type": "mcq",
+        "text": "A pentose sugar is",
+        "options": [
+          "Dihydroxyacetone",
+          "Ribulose",
+          "Fructose",
+          "Glucose"
+        ],
+        "correctIndex": 1,
+        "modelAnswer": null,
+        "requiredPoints": null
+      },
+      {
+        "id": "IBM1-BIO-DRV-20260921-01391",
+        "type": "mcq",
+        "text": "A pentose sugar is",
+        "options": [
+          "Dihydroxyacetone",
+          "Ribose",
+          "Erythrose",
+          "Glucose"
+        ],
+        "correctIndex": 1,
+        "modelAnswer": null,
+        "requiredPoints": null
+      }
+    ]
+  },
+  {
+    "module": "IBM-1",
+    "groupIndex": 4,
+    "ids": [
+      "IBM1-BIO-DRV-20260921-01336",
+      "IBM1-BIO-DRV-20260921-01884"
+    ],
+    "disposition": "retain_distinct_full_questions",
+    "reason": "Preserve: correct alternatives explicitly differ—hypoxanthine to uric acid versus hypoxanthine to xanthine. These assess the overall oxidation versus its first step.",
+    "reviewedPayloads": [
+      {
+        "id": "IBM1-BIO-DRV-20260921-01336",
+        "type": "mcq",
+        "text": "Allopurinol inhibit conversion of",
+        "options": [
+          "Hypoxanthine to IMP",
+          "Uric acid to Xanthine",
+          "Adenine to Hypoxanthine",
+          "Hypoxanthine to uric acid",
+          "Adenine to guanine."
+        ],
+        "correctIndex": 3,
+        "modelAnswer": null,
+        "requiredPoints": null
+      },
+      {
+        "id": "IBM1-BIO-DRV-20260921-01884",
+        "type": "mcq",
+        "text": "Allopurinol inhibit conversion of",
+        "options": [
+          "Hypoxanthine to IMP",
+          "Uric acid to Xanthine",
+          "Adenine to Hypoxanthine",
+          "Hypoxanthine to Xanthine",
+          "Adenine to guanine."
+        ],
+        "correctIndex": 3,
+        "modelAnswer": null,
+        "requiredPoints": null
+      }
+    ]
+  },
+  {
+    "module": "IBM-1",
+    "groupIndex": 5,
+    "ids": [
+      "IBM1-BIO-DRV-20260921-01410",
+      "IBM1-BIO-DRV-20260921-01214"
+    ],
+    "disposition": "retain_distinct_full_questions",
+    "reason": "One has both pyruvate and alpha-ketoglutarate dehydrogenases and a combined key; the other has only alpha-ketoglutarate as its keyed alternative. Preserve.",
+    "reviewedPayloads": [
+      {
+        "id": "IBM1-BIO-DRV-20260921-01410",
+        "type": "mcq",
+        "text": "Arsenite inhibits which of the following enzymes",
+        "options": [
+          "Isocitrate dehydrogenase",
+          "Pyruvate dehydrogenase",
+          "Succinate thiokinase",
+          "Alpha-ketoglutarate dehydrogenase",
+          "Both B and D"
+        ],
+        "correctIndex": 4,
+        "modelAnswer": null,
+        "requiredPoints": null
+      },
+      {
+        "id": "IBM1-BIO-DRV-20260921-01214",
+        "type": "mcq",
+        "text": "Arsenite inhibits which of the following enzymes",
+        "options": [
+          "Enolase",
+          "Succinate dehydrogenase",
+          "Isocitrate dehydrogenase",
+          "α-Ketoglutarate dehydrogenase",
+          "Succinate thiokinase"
+        ],
+        "correctIndex": 3,
+        "modelAnswer": null,
+        "requiredPoints": null
+      }
+    ]
+  },
+  {
+    "module": "IBM-1",
+    "groupIndex": 6,
+    "ids": [
+      "IBM1-BIO-DRV-20260921-01247",
+      "IBM1-BIO-DRV-20260921-01360",
+      "IBM1-BIO-DRV-20260921-01267"
+    ],
+    "disposition": "retain_distinct_full_questions",
+    "reason": "The three isoenzyme questions assess separate definition, diagnostic role and LDH-example-plus-diagnostic propositions through distinct alternatives.",
+    "reviewedPayloads": [
+      {
+        "id": "IBM1-BIO-DRV-20260921-01247",
+        "type": "mcq",
+        "text": "Isoenzymes:",
+        "options": [
+          "Are factors required for enzyme activity",
+          "Are functional plasma enzymes",
+          "Show similar responses to inhibitor molecules",
+          "Are important tools in the diagnosis & prognosis of disease",
+          "Catalyze oxidation-reduction reactions"
+        ],
+        "correctIndex": 3,
+        "modelAnswer": null,
+        "requiredPoints": null
+      },
+      {
+        "id": "IBM1-BIO-DRV-20260921-01360",
+        "type": "mcq",
+        "text": "Isoenzymes :",
+        "options": [
+          "Present in the same tissue.",
+          "Have the same Km.",
+          "Catalyze different reactions.",
+          "Different forms of the same enzyme."
+        ],
+        "correctIndex": 3,
+        "modelAnswer": null,
+        "requiredPoints": null
+      },
+      {
+        "id": "IBM1-BIO-DRV-20260921-01267",
+        "type": "mcq",
+        "text": "Isoenzymes:",
+        "options": [
+          "Are differentiated by dialysis",
+          "Show the same electrophoretic mobility",
+          "Include lactate dehydrogenase",
+          "Are used as diagnostic tools",
+          "Both C and D are correct"
+        ],
+        "correctIndex": 4,
+        "modelAnswer": null,
+        "requiredPoints": null
+      }
+    ]
+  },
+  {
+    "module": "IBM-1",
+    "groupIndex": 7,
+    "ids": [
+      "IBM1-BIO-DRV-20260921-01199",
+      "IBM1-BIO-DRV-20260921-01200"
+    ],
+    "disposition": "retain_distinct_full_questions",
+    "reason": "Preserve: the answer option is pyruvate kinase in one record and phosphoglycerate kinase in the other; these are distinct valid substrate-level phosphorylation reactions.",
+    "reviewedPayloads": [
+      {
+        "id": "IBM1-BIO-DRV-20260921-01199",
+        "type": "mcq",
+        "text": "One of the following is Substrate level phosphorylation reaction in glycolysis",
+        "options": [
+          "Phosphofructokinase-1",
+          "Glucokinase",
+          "Succinate thiokinase",
+          "Hexokinase",
+          "Pyruvate kinase"
+        ],
+        "correctIndex": 4,
+        "modelAnswer": null,
+        "requiredPoints": null
+      },
+      {
+        "id": "IBM1-BIO-DRV-20260921-01200",
+        "type": "mcq",
+        "text": "One of the following is Substrate level phosphorylation reaction in glycolysis",
+        "options": [
+          "Phosphofructokinase-1",
+          "Glucokinase",
+          "Succinate thiokinase",
+          "Hexokinase",
+          "Phosphoglycerate kinase"
+        ],
+        "correctIndex": 4,
+        "modelAnswer": null,
+        "requiredPoints": null
+      }
+    ]
+  },
+  {
+    "module": "IBM-1",
+    "groupIndex": 8,
+    "ids": [
+      "IBM1-BIO-DRV-20260921-01207",
+      "IBM1-BIO-DRV-20260921-01208"
+    ],
+    "disposition": "retain_distinct_full_questions",
+    "reason": "Distinct false claims and keys: low glucokinase Vmax versus glucokinase glucose-6-phosphate inhibition. Preserve.",
+    "reviewedPayloads": [
+      {
+        "id": "IBM1-BIO-DRV-20260921-01207",
+        "type": "mcq",
+        "text": "All the following statements are true except",
+        "options": [
+          "Glucokinase is induced by insulin during well-fed state",
+          "Hexokinase is Constitutive enzyme",
+          "Glucokinase has low affinity to glucose",
+          "Hexokinase is inhibited by glucose 6- P",
+          "Glucokinase has low Vmax."
+        ],
+        "correctIndex": 4,
+        "modelAnswer": null,
+        "requiredPoints": null
+      },
+      {
+        "id": "IBM1-BIO-DRV-20260921-01208",
+        "type": "mcq",
+        "text": "All the following statements are true except",
+        "options": [
+          "Glucokinase is induced by insulin during well-fed state",
+          "Hexokinase is Constitutive enzyme",
+          "Hexokinase has high affinity to glucose",
+          "Glucokinase is inhibited by glucose 6- P",
+          "Glucokinase has High Vmax."
+        ],
+        "correctIndex": 3,
+        "modelAnswer": null,
+        "requiredPoints": null
+      }
+    ]
+  }
+]

@@ -1,3 +1,4 @@
+import { parseQuestionTable } from '../utils/questionTable';
 import { ShuffleSwitch } from '../preferences/ShuffleSwitch';
 import { ReportQuestionButton } from '../reports/ReportQuestion';
 import React, { useState, useEffect, useLayoutEffect, useRef } from 'react';
@@ -520,22 +521,12 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
     fallbackClassName: string = "text-sm font-medium text-gray-700 dark:text-gray-200 leading-relaxed mb-4 whitespace-pre-wrap text-left"
   ) => {
     if (!text) return null;
-    if (text.includes('|')) {
-      const lines = text.split('\n').map((l) => l.trim()).filter(Boolean);
-      const rows = lines
-        .filter((line) => !line.includes('---') && line.includes('|'))
-        .map((line) => {
-          const parts = line.split('|');
-          if (parts[0] === '') parts.shift();
-          if (parts[parts.length - 1] === '') parts.pop();
-          return parts.map((cell) => cell.trim());
-        });
-
-      if (rows.length > 0) {
-        const headers = rows[0];
-        const bodyRows = rows.slice(1);
-
+    const table = parseQuestionTable(text);
+    if (table) {
+        const { headers, rows: bodyRows } = table;
         return (
+          <>
+          {table.before && <div className={`${fallbackClassName} min-w-0 [overflow-wrap:anywhere]`}>{table.before}</div>}
           <div className="overflow-x-auto my-4 rounded-2xl border border-white/[0.08] bg-white/[0.02] text-left">
             <table className="w-full text-left border-collapse text-xs sm:text-sm">
               <thead>
@@ -560,11 +551,12 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
               </tbody>
             </table>
           </div>
+          {table.after && <div className={`${fallbackClassName} min-w-0 [overflow-wrap:anywhere]`}>{table.after}</div>}
+          </>
         );
-      }
     }
     return (
-      <div className={fallbackClassName}>
+      <div className={`${fallbackClassName} min-w-0 [overflow-wrap:anywhere]`}>
         {text}
       </div>
     );
@@ -617,7 +609,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                   String.fromCharCode(65 + i)
                 )}
               </span>
-              <span className="text-sm leading-relaxed">{opt}</span>
+              <span className="min-w-0 whitespace-pre-wrap text-sm leading-relaxed [overflow-wrap:anywhere]">{opt}</span>
             </motion.button>
           );
         })}

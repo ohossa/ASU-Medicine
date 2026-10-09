@@ -1,0 +1,1580 @@
+[
+  {
+    "module": "IBM-1",
+    "candidateFile": "duplicate-candidates-proteins.json",
+    "groupIndex": 0,
+    "ids": [
+      "IBM1-BIO-DRV-20260921-00927",
+      "IBM1-BIO-DRV-20260921-00981"
+    ],
+    "disposition": "merge_semantically_equivalent",
+    "canonicalId": "IBM1-BIO-DRV-20260921-00927",
+    "reason": "Same twenty-common-amino-acid completion and identical 10/18/20/22 alternatives; only number of underscore characters differs.",
+    "absentIds": [],
+    "reviewedPayloads": [
+      {
+        "id": "IBM1-BIO-DRV-20260921-00927",
+        "type": "mcq",
+        "text": "There are _ common amino acids derived from human proteins?",
+        "options": [
+          "10",
+          "18",
+          "20",
+          "22"
+        ],
+        "correctIndex": 2,
+        "modelAnswer": null,
+        "requiredPoints": null,
+        "explanation": "The standard universal genetic code specifies twenty common amino acids; rare selenocysteine incorporation is a separate recoding mechanism.",
+        "hash": "e7a8423778d8e39b27c5a96415ed575543979e07a42baa3205bb991d2367f2ec"
+      },
+      {
+        "id": "IBM1-BIO-DRV-20260921-00981",
+        "type": "mcq",
+        "text": "There are ____ common amino acids derived from human proteins?",
+        "options": [
+          "10",
+          "18",
+          "20",
+          "22"
+        ],
+        "correctIndex": 2,
+        "modelAnswer": null,
+        "requiredPoints": null,
+        "explanation": "Twenty common amino acids are encoded by the universal genetic code; unusual selenocysteine uses a special recoding mechanism.",
+        "hash": "0af4c32fe8904f4a65b0a0b77360ca1696abe9d2336d49675d5f6d9852353e9b"
+      }
+    ]
+  },
+  {
+    "module": "IBM-1",
+    "candidateFile": "duplicate-candidates-proteins.json",
+    "groupIndex": 1,
+    "ids": [
+      "IBM1-BIO-DRV-20260921-01724",
+      "IBM1-BIO-DRV-20260921-01923"
+    ],
+    "disposition": "already_absent_after_exclusion_or_automatic_dedup",
+    "canonicalId": null,
+    "reason": "No new deletion: at least one candidate ID is absent from the post-correction review snapshot.",
+    "absentIds": [
+      "IBM1-BIO-DRV-20260921-01724",
+      "IBM1-BIO-DRV-20260921-01923"
+    ],
+    "reviewedPayloads": []
+  },
+  {
+    "module": "IBM-1",
+    "candidateFile": "duplicate-candidates-proteins.json",
+    "groupIndex": 2,
+    "ids": [
+      "IBM1-BIO-DRV-20260921-01867",
+      "IBM1-BIO-DRV-20260921-02125"
+    ],
+    "disposition": "merge_semantically_equivalent",
+    "canonicalId": "IBM1-BIO-DRV-20260921-01867",
+    "reason": "Same nitrogen-containing-compound question. Alanine is the same answer and all five molecules are identical; option order and grammar differ.",
+    "absentIds": [],
+    "reviewedPayloads": [
+      {
+        "id": "IBM1-BIO-DRV-20260921-01867",
+        "type": "mcq",
+        "text": "Which of the following is a Nitrogen containing compounds",
+        "options": [
+          "Alanine",
+          "Glucose",
+          "Glycerol",
+          "Palmitate",
+          "Phosphatidic acid."
+        ],
+        "correctIndex": 0,
+        "modelAnswer": null,
+        "requiredPoints": null,
+        "explanation": "Alanine contains an amino nitrogen; glucose, glycerol, palmitate and phosphatidic acid do not contain nitrogen in their basic structures.",
+        "hash": "9969d6cba8303a859b00540fae8504cf73def4bb52eeeefee42e34ed9d334ee5"
+      },
+      {
+        "id": "IBM1-BIO-DRV-20260921-02125",
+        "type": "mcq",
+        "text": "Which of the following is a nitrogen-containing compound ?",
+        "options": [
+          "Phosphatidic acid",
+          "Glucose",
+          "Palmitate",
+          "Glycerol",
+          "Alanine"
+        ],
+        "correctIndex": 4,
+        "modelAnswer": null,
+        "requiredPoints": null,
+        "explanation": "Alanine contains an alpha-amino nitrogen; the other listed basic molecular structures contain carbon, oxygen and hydrogen without nitrogen.",
+        "hash": "a3a0f0b5860815c5c3e18febdc647a14641ec5dcc3c2a90232f36c9ed8122f83"
+      }
+    ]
+  },
+  {
+    "module": "IBM-1",
+    "candidateFile": "duplicate-candidates-proteins.json",
+    "groupIndex": 3,
+    "ids": [
+      "IBM1-BIO-COMP-P2-Q09",
+      "IBM1-BIO-COMP-2025-Q15"
+    ],
+    "disposition": "merge_semantically_equivalent",
+    "canonicalId": "IBM1-BIO-COMP-P2-Q09",
+    "reason": "Both request the aromatic amino acids with the identical three named residues and identical three required points; wording is a paraphrase.",
+    "absentIds": [],
+    "reviewedPayloads": [
+      {
+        "id": "IBM1-BIO-COMP-P2-Q09",
+        "type": "essay",
+        "text": "Aromatic amino acids:",
+        "options": null,
+        "correctIndex": null,
+        "modelAnswer": "Phenylalanine, tyrosine and tryptophan.",
+        "requiredPoints": [
+          "Phenylalanine",
+          "Tyrosine",
+          "Tryptophan"
+        ],
+        "explanation": "Each has an aromatic ring; tyrosine also has a polar hydroxyl group.",
+        "hash": "054b6724417a6d9c636345b3a922769ca1ace8b4178d9f9c5a2dec2b7a91cfa8"
+      },
+      {
+        "id": "IBM1-BIO-COMP-2025-Q15",
+        "type": "essay",
+        "text": "Which amino acids are aromatic?",
+        "options": null,
+        "correctIndex": null,
+        "modelAnswer": "Phenylalanine, tyrosine and tryptophan.",
+        "requiredPoints": [
+          "Phenylalanine",
+          "Tyrosine",
+          "Tryptophan"
+        ],
+        "explanation": "Aromatic rings distinguish these residues; polarity differs because tyrosine contains a hydroxyl group.",
+        "hash": "2692b680eb41c1a9a56ae348e7524b50df6dac8319b725cf9dcfbdfb11f8a39e"
+      }
+    ]
+  },
+  {
+    "module": "IBM-1",
+    "candidateFile": "duplicate-candidates-proteins.json",
+    "groupIndex": 4,
+    "ids": [
+      "IBM1-BIO-DRV-20260921-00933",
+      "IBM1-BIO-DRV-20260921-00987"
+    ],
+    "disposition": "already_absent_after_exclusion_or_automatic_dedup",
+    "canonicalId": null,
+    "reason": "No new deletion: at least one candidate ID is absent from the post-correction review snapshot.",
+    "absentIds": [
+      "IBM1-BIO-DRV-20260921-00987"
+    ],
+    "reviewedPayloads": [
+      {
+        "id": "IBM1-BIO-DRV-20260921-00933",
+        "type": "mcq",
+        "text": "Which of the amino acids below is the uncharged derivative of an acidic amino acid?",
+        "options": [
+          "Cystine",
+          "Tyrosine",
+          "Glutamine",
+          "Serine"
+        ],
+        "correctIndex": 2,
+        "modelAnswer": null,
+        "requiredPoints": null,
+        "explanation": "Glutamine is the uncharged carboxamide derivative of glutamate; converting the side-chain carboxylate to an amide removes its negative charge.",
+        "hash": "3ef66b0fd978ecebeb5717a89603104f72ac70ec888b14389c5e8d8d13b21579"
+      }
+    ]
+  },
+  {
+    "module": "IBM-1",
+    "candidateFile": "duplicate-candidates-proteins.json",
+    "groupIndex": 5,
+    "ids": [
+      "IBM1-BIO-DRV-20260921-00942",
+      "IBM1-BIO-DRV-20260921-00997"
+    ],
+    "disposition": "merge_semantically_equivalent",
+    "canonicalId": "IBM1-BIO-DRV-20260921-00942",
+    "reason": "Both identify the nonpolar aliphatic R-group set; all four amino-acid groups and the glycine/alanine/leucine answer agree.",
+    "absentIds": [],
+    "reviewedPayloads": [
+      {
+        "id": "IBM1-BIO-DRV-20260921-00942",
+        "type": "mcq",
+        "text": "Identify the amino acids containing nonpolar, aliphatic R groups.",
+        "options": [
+          "Phenylalanine, tyrosine, and tryptophan",
+          "Glycine, alanine, leucine",
+          "Lysine, arginine, histidine",
+          "Serine, threonine, cysteine"
+        ],
+        "correctIndex": 1,
+        "modelAnswer": null,
+        "requiredPoints": null,
+        "explanation": "Glycine, alanine and leucine have nonpolar aliphatic side chains; aromatic, basic and hydroxyl-bearing groups belong to other categories.",
+        "hash": "b2f9b574cd40016e253dc84a040426ffcee874e53360fb0d18093c459ccc8a56"
+      },
+      {
+        "id": "IBM1-BIO-DRV-20260921-00997",
+        "type": "mcq",
+        "text": "Identify the amino acids containing nonpolar, aliphatic R group",
+        "options": [
+          "Phenylalanine, tyrosine, and tryptophan",
+          "Glycine, alanine, leucine",
+          "Lysine, arginine, histidine",
+          "Serine, threonine, cysteine"
+        ],
+        "correctIndex": 1,
+        "modelAnswer": null,
+        "requiredPoints": null,
+        "explanation": "Glycine, alanine and leucine have nonpolar aliphatic R groups; the other groups are aromatic, basic or polar.",
+        "hash": "f85860e4a378fc6fca94cd6cc497b24d788a1d32d1b8a9ab1cdf26c3e935469e"
+      }
+    ]
+  },
+  {
+    "module": "IBM-1",
+    "candidateFile": "duplicate-candidates-proteins.json",
+    "groupIndex": 6,
+    "ids": [
+      "IBM1-BIO-DRV-20260921-02110",
+      "IBM1-BIO-DRV-20260921-02163"
+    ],
+    "disposition": "already_absent_after_exclusion_or_automatic_dedup",
+    "canonicalId": null,
+    "reason": "No new deletion: at least one candidate ID is absent from the post-correction review snapshot.",
+    "absentIds": [
+      "IBM1-BIO-DRV-20260921-02163"
+    ],
+    "reviewedPayloads": [
+      {
+        "id": "IBM1-BIO-DRV-20260921-02110",
+        "type": "mcq",
+        "text": "Organic imidazole compounds (containing an imidazole ring) found in the urine are probably derived from which amino acid?",
+        "options": [
+          "Histidine",
+          "Proline",
+          "Glutamine",
+          "Tyrosine",
+          "Tryptophan"
+        ],
+        "correctIndex": 0,
+        "modelAnswer": null,
+        "requiredPoints": null,
+        "explanation": "Histidine's side chain is an imidazole ring, making it the structural precursor among the listed choices.",
+        "hash": "4636f59e58c60e09a418124e671fc058331cba6e17bb806bc547ee3ecca33d80"
+      }
+    ]
+  },
+  {
+    "module": "IBM-1",
+    "candidateFile": "duplicate-candidates-proteins.json",
+    "groupIndex": 7,
+    "ids": [
+      "IBM1-BIO-BGFORM-PRO-Q13",
+      "IBM1-BIO-DRV-20260921-02212"
+    ],
+    "disposition": "merge_semantically_equivalent",
+    "canonicalId": "IBM1-BIO-BGFORM-PRO-Q13",
+    "reason": "Both identify proline as the nonpolar residue among the same five amino acids; singular/plural wording and option order differ.",
+    "absentIds": [],
+    "reviewedPayloads": [
+      {
+        "id": "IBM1-BIO-BGFORM-PRO-Q13",
+        "type": "mcq",
+        "text": "Which one of the following amino acids has a non-polar side chain?",
+        "options": [
+          "Proline.",
+          "Histidine.",
+          "Tyrosine.",
+          "Aspartic.",
+          "Serine."
+        ],
+        "correctIndex": 0,
+        "modelAnswer": null,
+        "requiredPoints": null,
+        "explanation": "Proline has a nonpolar cyclic side chain; the other options contain charged or polar side-chain groups.",
+        "hash": "faf0e1c4073e987e74a2cc5a3af90b66d751d7ae0c30e24e5cc6b46c2f52b750"
+      },
+      {
+        "id": "IBM1-BIO-DRV-20260921-02212",
+        "type": "mcq",
+        "text": "Which one of the following amino acids has non-polar side chains",
+        "options": [
+          "Aspartic",
+          "Tyrosine",
+          "Histidine",
+          "Serine",
+          "Proline"
+        ],
+        "correctIndex": 4,
+        "modelAnswer": null,
+        "requiredPoints": null,
+        "explanation": "Proline is categorized as nonpolar; serine and tyrosine are polar, aspartate acidic and histidine basic.",
+        "hash": "fdeb0fff5a19fe47908dded07289007c7a8fb0580b2d3b1fbd4d8b75f78f6ebd"
+      }
+    ]
+  },
+  {
+    "module": "IBM-1",
+    "candidateFile": "duplicate-candidates-proteins.json",
+    "groupIndex": 8,
+    "ids": [
+      "IBM1-BIO-DRV-20260921-02218",
+      "IBM1-BIO-DRV-20260921-02268"
+    ],
+    "disposition": "merge_semantically_equivalent",
+    "canonicalId": "IBM1-BIO-DRV-20260921-02218",
+    "reason": "Both ask the cyclic nonpolar amino acid among the same five choices; tryptophan is the answer. More explicit aromatic wording adds no competing alternative or new task.",
+    "absentIds": [],
+    "reviewedPayloads": [
+      {
+        "id": "IBM1-BIO-DRV-20260921-02218",
+        "type": "mcq",
+        "text": "Which cyclic amino acid has a predominantly nonpolar aromatic side chain?",
+        "options": [
+          "Histidine",
+          "Tyrosine",
+          "Tryptophan",
+          "Leucine",
+          "Glycine"
+        ],
+        "correctIndex": 2,
+        "modelAnswer": null,
+        "requiredPoints": null,
+        "explanation": "Tryptophan has a predominantly nonpolar aromatic indole side chain; tyrosine is hydroxyl-bearing and histidine basic.",
+        "hash": "8ca186f19ab3c547efe7ea99132bf1974f296f35695cccea8fdd8bffc760e9cc"
+      },
+      {
+        "id": "IBM1-BIO-DRV-20260921-02268",
+        "type": "mcq",
+        "text": "... is a cyclic amino acid with a nonpolar side chain.",
+        "options": [
+          "Histidine",
+          "Tyrosine",
+          "Tryptophan",
+          "Leucine",
+          "Glycine"
+        ],
+        "correctIndex": 2,
+        "modelAnswer": null,
+        "requiredPoints": null,
+        "explanation": "Tryptophan has a cyclic indole side chain ordinarily classified as nonpolar; tyrosine and histidine are more polar.",
+        "hash": "57f1f6f74d5c55e78680de30ef867c489db06d08cf2e27132f9c850fa9b0d113"
+      }
+    ]
+  },
+  {
+    "module": "IBM-1",
+    "candidateFile": "duplicate-candidates-proteins.json",
+    "groupIndex": 9,
+    "ids": [
+      "IBM1-BIO-DRV-20260921-02103",
+      "IBM1-BIO-DRV-20260921-02111"
+    ],
+    "disposition": "merge_semantically_equivalent",
+    "canonicalId": "IBM1-BIO-DRV-20260921-02103",
+    "reason": "Same leucine24/phenylalanine125 folded-protein interaction scenario, same five interaction types and hydrophobic answer; disulfide bridge/bond are synonyms.",
+    "absentIds": [],
+    "reviewedPayloads": [
+      {
+        "id": "IBM1-BIO-DRV-20260921-02103",
+        "type": "mcq",
+        "text": "Leucine residue in position 24 and a phenyl alanine residue in position 125 ofa protein may be brought together by:",
+        "options": [
+          "Peptide bond",
+          "Disulfide bond",
+          "Salt bridge",
+          "Hydrophobic interaction",
+          "Hydrogen bond"
+        ],
+        "correctIndex": 3,
+        "modelAnswer": null,
+        "requiredPoints": null,
+        "explanation": "Nonpolar leucine and phenylalanine side chains can associate in the hydrophobic core even when far apart in the primary sequence.",
+        "hash": "28b1b98da37dacb060b10832d0897c30470446c4939d450472995ce8587abde2"
+      },
+      {
+        "id": "IBM1-BIO-DRV-20260921-02111",
+        "type": "mcq",
+        "text": "A leucine residue in position 24 and a phenylalanine residue in position 125 of a protein may be brought together by:",
+        "options": [
+          "Peptide bond",
+          "Disulfide bridge",
+          "Salt bridge",
+          "Hydrophobic interaction",
+          "Hydrogen bond"
+        ],
+        "correctIndex": 3,
+        "modelAnswer": null,
+        "requiredPoints": null,
+        "explanation": "Leucine and phenylalanine have nonpolar side chains. Hydrophobic packing can bring residues distant in primary sequence together in the folded protein.",
+        "hash": "5215a2f189d65dc78956bacc86cfca635f3576d9fc3cfe9ecbbef319e37dbf74"
+      }
+    ]
+  },
+  {
+    "module": "IBM-1",
+    "candidateFile": "duplicate-candidates-proteins.json",
+    "groupIndex": 10,
+    "ids": [
+      "IBM1-BIO-DRV-20260921-00220",
+      "IBM1-BIO-DRV-20260921-01835"
+    ],
+    "disposition": "merge_semantically_equivalent",
+    "canonicalId": "IBM1-BIO-DRV-20260921-00220",
+    "reason": "Both enumerate exactly three tertiary-structure stabilizing forces. Required concepts are hydrophobic, hydrogen-bond and ionic interactions; specifying charged side chains only explains the same ionic interaction.",
+    "absentIds": [],
+    "reviewedPayloads": [
+      {
+        "id": "IBM1-BIO-DRV-20260921-00220",
+        "type": "essay",
+        "text": "Three types of forces that hold the tertiary structure of proteins.",
+        "options": null,
+        "correctIndex": null,
+        "modelAnswer": "Hydrophobic interactions; Hydrogen bonds; Ionic interactions.",
+        "requiredPoints": [
+          "Hydrophobic interactions",
+          "Hydrogen bonds",
+          "Ionic interactions."
+        ],
+        "explanation": "Nonpolar residues associate away from water, polar donors and acceptors hydrogen-bond, and oppositely charged side chains form salt bridges.",
+        "hash": "22a7b64a343603c77631880706f2ad303e8e50d24b8a7a30c572a751eff54947"
+      },
+      {
+        "id": "IBM1-BIO-DRV-20260921-01835",
+        "type": "essay",
+        "text": "Enumerate: Three types of forces that hold the tertiary structure of proteins.",
+        "options": null,
+        "correctIndex": null,
+        "modelAnswer": "Hydrophobic interactions; Hydrogen bonds; Ionic interactions between charged side chains",
+        "requiredPoints": [
+          "Hydrophobic interactions",
+          "Hydrogen bonds",
+          "Ionic interactions between charged side chains"
+        ],
+        "explanation": "These forces stabilize the overall folding of a polypeptide by burying nonpolar groups and forming favorable polar and electrostatic contacts.",
+        "hash": "03a119581caf33e12dfcd4f32a1ade0dea58c07c986542aa2cb533d8963d0d8d"
+      }
+    ]
+  },
+  {
+    "module": "IBM-1",
+    "candidateFile": "duplicate-candidates-proteins.json",
+    "groupIndex": 11,
+    "ids": [
+      "IBM1-BIO-DRV-20260921-00906",
+      "IBM1-BIO-DRV-20260921-02238"
+    ],
+    "disposition": "merge_semantically_equivalent",
+    "canonicalId": "IBM1-BIO-DRV-20260921-00906",
+    "reason": "Same folded-subunit homo/heterodimer question with all four alternatives and quaternary-structure answer identical. Added opening clause describes proteins and creates no distinct assessment.",
+    "absentIds": [],
+    "reviewedPayloads": [
+      {
+        "id": "IBM1-BIO-DRV-20260921-00906",
+        "type": "mcq",
+        "text": "Proteins fold into compact structures. Sometimes, these folded structures associate to form homo or hetero- dimers. Which one of the following refers to this associated form?",
+        "options": [
+          "Denatured state",
+          "Molecular aggregation",
+          "Precipitation",
+          "Quaternary structure"
+        ],
+        "correctIndex": 3,
+        "modelAnswer": null,
+        "requiredPoints": null,
+        "explanation": "Association of two separately folded polypeptides into a dimer is quaternary structure, whether their sequences are identical or different.",
+        "hash": "f7e05df7b2814b6d2eb4b11b13e28ae437127c4da1326838b0957c80b6378132"
+      },
+      {
+        "id": "IBM1-BIO-DRV-20260921-02238",
+        "type": "mcq",
+        "text": "Proteins are linear polymers of amino acids, they fold into compact structures, and sometimes these folded structures associate to form homo- or heterodimers. Which one of the following refers to this associated form?",
+        "options": [
+          "Denatured state",
+          "Molecular aggregation",
+          "Precipitation",
+          "Quaternary structure"
+        ],
+        "correctIndex": 3,
+        "modelAnswer": null,
+        "requiredPoints": null,
+        "explanation": "Association of folded polypeptide subunits into homo- or heterodimers creates quaternary structure; tertiary structure describes the fold within one chain.",
+        "hash": "cfc1bbb0600f215024f9fdb7b8876d23ee2ff14adfd5a90ec2c776d6973e9705"
+      }
+    ]
+  },
+  {
+    "module": "IBM-1",
+    "candidateFile": "duplicate-candidates-proteins.json",
+    "groupIndex": 12,
+    "ids": [
+      "IBM1-BIO-DRV-20260921-01862",
+      "IBM1-BIO-DRV-20260921-02119"
+    ],
+    "disposition": "merge_semantically_equivalent",
+    "canonicalId": "IBM1-BIO-DRV-20260921-01862",
+    "reason": "Identical glycine backbone-flexibility question. All alternatives are semantically identical, including singular/plural hydrophobic-amino-acid distractor; glycine answer agrees.",
+    "absentIds": [],
+    "reviewedPayloads": [
+      {
+        "id": "IBM1-BIO-DRV-20260921-01862",
+        "type": "mcq",
+        "text": "Which amino acid has the greatest backbone conformational flexibility because its side chain is hydrogen?",
+        "options": [
+          "Glycine",
+          "Proline",
+          "Isoleucine",
+          "Tyrosine",
+          "Any amino acids with hydrophobic chains"
+        ],
+        "correctIndex": 0,
+        "modelAnswer": null,
+        "requiredPoints": null,
+        "explanation": "Glycine's very small hydrogen side chain permits unusually broad backbone conformations and fits tightly curved turns.",
+        "hash": "f0e9342ab078a6530550f485d36608be260c1c25b2dc3f795bd6e6a90b57b8ac"
+      },
+      {
+        "id": "IBM1-BIO-DRV-20260921-02119",
+        "type": "mcq",
+        "text": "Which amino acid has the greatest backbone conformational flexibility because its side chain is hydrogen?",
+        "options": [
+          "Glycine",
+          "Proline",
+          "Isoleucine",
+          "Tyrosine",
+          "Any amino acid with hydrophobic chain"
+        ],
+        "correctIndex": 0,
+        "modelAnswer": null,
+        "requiredPoints": null,
+        "explanation": "Glycine has only hydrogen as its side chain and therefore the greatest backbone conformational flexibility for tight turns.",
+        "hash": "2c0ce9393d625fe2944aaf1e823372546b07341c0ac359be7b8d1df56d50efed"
+      }
+    ]
+  },
+  {
+    "module": "IBM-1",
+    "candidateFile": "duplicate-candidates-proteins.json",
+    "groupIndex": 13,
+    "ids": [
+      "IBM1-BIO-DRV-20260921-00914",
+      "IBM1-BIO-DRV-20260921-02245"
+    ],
+    "disposition": "merge_semantically_equivalent",
+    "canonicalId": "IBM1-BIO-DRV-20260921-00914",
+    "reason": "Same protein-misfolding clinical-disease question and same four diseases; Alzheimer versus Alzheimer disease names the same answer.",
+    "absentIds": [],
+    "reviewedPayloads": [
+      {
+        "id": "IBM1-BIO-DRV-20260921-00914",
+        "type": "mcq",
+        "text": "Defect in folding of the protein result in which of the following clinical disease",
+        "options": [
+          "Alzheimer",
+          "Migraine",
+          "Hypothyroidism",
+          "Myopia"
+        ],
+        "correctIndex": 0,
+        "modelAnswer": null,
+        "requiredPoints": null,
+        "explanation": "Alzheimer disease involves protein misfolding and amyloid aggregation, unlike the other listed conditions as general folding examples.",
+        "hash": "59b0a81e30d6e6398b019d671f50f962bc56fa339ad2c1a1f1267bdca16ed7d0"
+      },
+      {
+        "id": "IBM1-BIO-DRV-20260921-02245",
+        "type": "mcq",
+        "text": "Defect in folding of the protein results in which of the following clinical diseases?",
+        "options": [
+          "Alzheimer disease",
+          "Migraine",
+          "Hypothyroidism",
+          "Myopia"
+        ],
+        "correctIndex": 0,
+        "modelAnswer": null,
+        "requiredPoints": null,
+        "explanation": "Misfolding and aggregation of amyloid-beta and tau contribute to Alzheimer disease pathology.",
+        "hash": "cd0bd4c4d42978ac861b124adbd9e098bb290cceb56ad2a858abd1b20a3e8fe2"
+      }
+    ]
+  },
+  {
+    "module": "IBM-1",
+    "candidateFile": "duplicate-candidates-proteins.json",
+    "groupIndex": 14,
+    "ids": [
+      "IBM1-BIO-DRV-20260921-00582",
+      "IBM1-BIO-DRV-20260921-00594"
+    ],
+    "disposition": "merge_semantically_equivalent",
+    "canonicalId": "IBM1-BIO-DRV-20260921-00582",
+    "reason": "Same alkaptonuria cause-and-manifestations prompt. Both rubrics require homogentisate dioxygenase deficiency, dark urine on exposure and ochronosis/arthritis; phrasing alone differs.",
+    "absentIds": [],
+    "reviewedPayloads": [
+      {
+        "id": "IBM1-BIO-DRV-20260921-00582",
+        "type": "essay",
+        "text": "Mention the enzyme deficient and the manifestations of alkaptonuria.",
+        "options": null,
+        "correctIndex": null,
+        "modelAnswer": "Homogentisate dioxygenase deficiency; Homogentisate accumulation causes urine to darken on standing; Oxidized pigment deposits cause ochronosis and later arthritis.",
+        "requiredPoints": [
+          "Homogentisate dioxygenase deficiency",
+          "Homogentisate accumulation causes urine to darken on standing",
+          "Oxidized pigment deposits cause ochronosis and later arthritis."
+        ],
+        "explanation": "Failure to degrade homogentisate diverts it into oxidation and polymerization products that discolor urine and accumulate in connective tissue.",
+        "hash": "68f328d5050991c6c41a1e245030135f1b705d15d825f72ed7f55aaaa04d0915"
+      },
+      {
+        "id": "IBM1-BIO-DRV-20260921-00594",
+        "type": "essay",
+        "text": "Alkaptonuria (Cause and manifestations)",
+        "options": null,
+        "correctIndex": null,
+        "modelAnswer": "Homogentisate dioxygenase deficiency; Darkening urine after air exposure; Ochronosis and degenerative arthritis.",
+        "requiredPoints": [
+          "Homogentisate dioxygenase deficiency",
+          "Darkening urine after air exposure",
+          "Ochronosis and degenerative arthritis."
+        ],
+        "explanation": "Accumulated homogentisate oxidizes and polymerizes into pigment, which can deposit in connective tissues.",
+        "hash": "7941c884f24fed50f3a2b0ea55c707ac021c0db6aa09a6e53c0e88fd10cffa2f"
+      }
+    ]
+  },
+  {
+    "module": "IBM-1",
+    "candidateFile": "duplicate-candidates-proteins.json",
+    "groupIndex": 15,
+    "ids": [
+      "IBM1-BIO-DRV-20260921-00581",
+      "IBM1-BIO-DRV-20260921-00595"
+    ],
+    "disposition": "merge_semantically_equivalent",
+    "canonicalId": "IBM1-BIO-DRV-20260921-00581",
+    "reason": "Same albinism cause-and-manifestations prompt; both answers qualify tyrosinase deficiency as one form and include hypopigmentation, photosensitivity and skin-cancer risk. Four versus three rubric entries only splits the same content.",
+    "absentIds": [],
+    "reviewedPayloads": [
+      {
+        "id": "IBM1-BIO-DRV-20260921-00581",
+        "type": "essay",
+        "text": "Mention the enzyme deficient and the manifestations of albinism.",
+        "options": null,
+        "correctIndex": null,
+        "modelAnswer": "One form of albinism results from deficient tyrosinase activity; Reduced melanin causes hypopigmentation of skin, hair and iris; Ocular involvement causes photosensitivity; Reduced skin pigmentation raises skin-cancer risk.",
+        "requiredPoints": [
+          "One form of albinism results from deficient tyrosinase activity",
+          "Reduced melanin causes hypopigmentation of skin, hair and iris",
+          "Ocular involvement causes photosensitivity",
+          "Reduced skin pigmentation raises skin-cancer risk."
+        ],
+        "explanation": "Tyrosinase catalyzes early melanin-synthesis steps; albinism is genetically heterogeneous, so this mechanism describes the tyrosinase-deficient form.",
+        "hash": "e900d2c50486f055a32cdd51082091d96fc7b3f8197d74c8ce57b42357d70210"
+      },
+      {
+        "id": "IBM1-BIO-DRV-20260921-00595",
+        "type": "essay",
+        "text": "Albinism (Cause and manifestations)",
+        "options": null,
+        "correctIndex": null,
+        "modelAnswer": "Tyrosinase deficiency causes one form of albinism; Skin, hair and iris pigmentation is reduced; Photosensitivity and increased skin-cancer risk occur.",
+        "requiredPoints": [
+          "Tyrosinase deficiency causes one form of albinism",
+          "Skin, hair and iris pigmentation is reduced",
+          "Photosensitivity and increased skin-cancer risk occur."
+        ],
+        "explanation": "Reduced melanin impairs protection from light; several other genetic forms affect pigment production through different mechanisms.",
+        "hash": "ed3077d64d523b64a4f1f6134e7b73a1056c9b6bf9b0bdbda97b3c464ef4c08a"
+      }
+    ]
+  },
+  {
+    "module": "IBM-1",
+    "candidateFile": "duplicate-candidates-enzymes_genes.json",
+    "groupIndex": 0,
+    "ids": [
+      "IBM1-BIO-DRV-20260921-01041",
+      "IBM1-BIO-DRV-20260921-01080"
+    ],
+    "disposition": "already_absent_after_exclusion_or_automatic_dedup",
+    "canonicalId": null,
+    "reason": "No new deletion: at least one candidate ID is absent from the post-correction review snapshot.",
+    "absentIds": [
+      "IBM1-BIO-DRV-20260921-01080"
+    ],
+    "reviewedPayloads": [
+      {
+        "id": "IBM1-BIO-DRV-20260921-01041",
+        "type": "mcq",
+        "text": "An allosterically regulated enzyme is usually characterized by:",
+        "options": [
+          "low Km & high Vmax",
+          "hyperbolic plot of reaction velocity V versus substrate concentration S.",
+          "catalyze the fastest reaction in a metabolic pathway.",
+          "multiple binding sites for substrates and regulatory modifiers"
+        ],
+        "correctIndex": 3,
+        "modelAnswer": null,
+        "requiredPoints": null,
+        "explanation": "Binding at a regulatory site distinct from the catalytic site changes enzyme conformation and activity. An allosteric effector may activate or inhibit; it need not have the kinetic pattern of pure noncompetitive inhibition.",
+        "hash": "a820cfd959292941b5ac39dc20048bbff0cedb3a75119066cfbee18b7a96e6d1"
+      }
+    ]
+  },
+  {
+    "module": "IBM-1",
+    "candidateFile": "duplicate-candidates-enzymes_genes.json",
+    "groupIndex": 1,
+    "ids": [
+      "IBM1-BIO-DRV-20260921-01244",
+      "IBM1-BIO-DRV-20260921-01322"
+    ],
+    "disposition": "retain_distinct_full_questions",
+    "canonicalId": null,
+    "reason": "Preserve: coenzyme alternative sets differ (nonprotein/needed-for-activity versus heat stability/NAD loose attachment); identical all-of-the-above labels do not make full questions equivalent.",
+    "absentIds": [],
+    "reviewedPayloads": [
+      {
+        "id": "IBM1-BIO-DRV-20260921-01244",
+        "type": "mcq",
+        "text": "Coenzymes",
+        "options": [
+          "The non-protein part of enzymes",
+          "Needed for enzyme activity",
+          "Usually vitamin derivatives",
+          "Termed prosthetic group if bonded tight to their enzymes",
+          "All of the above are correct"
+        ],
+        "correctIndex": 4,
+        "modelAnswer": null,
+        "requiredPoints": null,
+        "explanation": "Coenzymes are organic nonprotein cofactors, often derived from B vitamins; NAD illustrates a loosely bound coenzyme. A tightly bound cofactor is a prosthetic group, and these small cofactors are generally more heat-stable than the protein enzyme.",
+        "hash": "429835950a414d51a407c40e8cbdb6a77b57ea781b3a25bfcfc7e4d62f914981"
+      },
+      {
+        "id": "IBM1-BIO-DRV-20260921-01322",
+        "type": "mcq",
+        "text": "Coenzymes:",
+        "options": [
+          "Heat stable organic compounds.",
+          "Called prosthetic groups when tightly bounded to enzyme",
+          "Usually synthesized from vitamin B complex.",
+          "May be loosely attached to enzyme as NAD.",
+          "All of the above."
+        ],
+        "correctIndex": 4,
+        "modelAnswer": null,
+        "requiredPoints": null,
+        "explanation": "Coenzymes are organic nonprotein cofactors, often derived from B vitamins; NAD illustrates a loosely bound coenzyme. A tightly bound cofactor is a prosthetic group, and these small cofactors are generally more heat-stable than the protein enzyme.",
+        "hash": "65675130920899be4ea62a806c096b756f1ebc01cfd9addc4fa76805387b02c6"
+      }
+    ]
+  },
+  {
+    "module": "IBM-1",
+    "candidateFile": "duplicate-candidates-enzymes_genes.json",
+    "groupIndex": 2,
+    "ids": [
+      "IBM1-BIO-DRV-20260921-01336",
+      "IBM1-BIO-DRV-20260921-01884"
+    ],
+    "disposition": "retain_distinct_full_questions",
+    "canonicalId": null,
+    "reason": "Preserve: correct alternatives explicitly differ—hypoxanthine to uric acid versus hypoxanthine to xanthine. These assess the overall oxidation versus its first step.",
+    "absentIds": [],
+    "reviewedPayloads": [
+      {
+        "id": "IBM1-BIO-DRV-20260921-01336",
+        "type": "mcq",
+        "text": "Allopurinol inhibit conversion of",
+        "options": [
+          "Hypoxanthine to IMP",
+          "Uric acid to Xanthine",
+          "Adenine to Hypoxanthine",
+          "Hypoxanthine to uric acid",
+          "Adenine to guanine."
+        ],
+        "correctIndex": 3,
+        "modelAnswer": null,
+        "requiredPoints": null,
+        "explanation": "Xanthine oxidoreductase converts hypoxanthine to xanthine and then to urate; allopurinol inhibits these oxidation steps. Conversion of hypoxanthine to IMP is a separate salvage reaction.",
+        "hash": "ad2d7ed72c01ba95362e3401e468654b96012de305cb6e8b98b5c0469cbda4d3"
+      },
+      {
+        "id": "IBM1-BIO-DRV-20260921-01884",
+        "type": "mcq",
+        "text": "Allopurinol inhibit conversion of",
+        "options": [
+          "Hypoxanthine to IMP",
+          "Uric acid to Xanthine",
+          "Adenine to Hypoxanthine",
+          "Hypoxanthine to Xanthine",
+          "Adenine to guanine."
+        ],
+        "correctIndex": 3,
+        "modelAnswer": null,
+        "requiredPoints": null,
+        "explanation": "Xanthine oxidoreductase converts hypoxanthine to xanthine and then to urate; allopurinol inhibits these oxidation steps. Conversion of hypoxanthine to IMP is a separate salvage reaction.",
+        "hash": "5eab34a24b9b29d70244b547a425227595f82630d4c9070bd54de45817de1fd3"
+      }
+    ]
+  },
+  {
+    "module": "IBM-1",
+    "candidateFile": "duplicate-candidates-enzymes_genes.json",
+    "groupIndex": 3,
+    "ids": [
+      "IBM1-BIO-DRV-20260921-01247",
+      "IBM1-BIO-DRV-20260921-01267"
+    ],
+    "disposition": "retain_distinct_full_questions",
+    "canonicalId": null,
+    "reason": "Preserve: one assesses diagnostic importance among five properties; the other assesses LDH example plus diagnostic use and a combined C/D key. Full alternatives and keyed content differ.",
+    "absentIds": [],
+    "reviewedPayloads": [
+      {
+        "id": "IBM1-BIO-DRV-20260921-01247",
+        "type": "mcq",
+        "text": "Isoenzymes:",
+        "options": [
+          "Are factors required for enzyme activity",
+          "Are functional plasma enzymes",
+          "Show similar responses to inhibitor molecules",
+          "Are important tools in the diagnosis & prognosis of disease",
+          "Catalyze oxidation-reduction reactions"
+        ],
+        "correctIndex": 3,
+        "modelAnswer": null,
+        "requiredPoints": null,
+        "explanation": "Different tissues express different isoenzyme proportions. Injury can therefore produce a characteristic serum isoenzyme pattern that helps localize the source, although interpretation also requires clinical context.",
+        "hash": "4be644bbbb069e5f039fd8396daa0c8b9d35b830e127c940e5a7a3a3d193ada6"
+      },
+      {
+        "id": "IBM1-BIO-DRV-20260921-01267",
+        "type": "mcq",
+        "text": "Isoenzymes:",
+        "options": [
+          "Are differentiated by dialysis",
+          "Show the same electrophoretic mobility",
+          "Include lactate dehydrogenase",
+          "Are used as diagnostic tools",
+          "Both C and D are correct"
+        ],
+        "correctIndex": 4,
+        "modelAnswer": null,
+        "requiredPoints": null,
+        "explanation": "LDH occurs as several molecular forms with different tissue distributions, making isoenzyme patterns useful as historical diagnostic tools. Their different electrophoretic mobility, rather than dialysis, permits separation.",
+        "hash": "e39f9218f0275b07497a33742c5947b486b486369ce82f166e5212ed4c19f0e8"
+      }
+    ]
+  },
+  {
+    "module": "IBM-1",
+    "candidateFile": "duplicate-candidates-enzymes_genes.json",
+    "groupIndex": 4,
+    "ids": [
+      "IBM1-BIO-DRV-20260921-01345",
+      "IBM1-BIO-DRV-20260921-02347"
+    ],
+    "disposition": "merge_semantically_equivalent",
+    "canonicalId": "IBM1-BIO-DRV-20260921-01345",
+    "reason": "Same enzyme-activation-energy completion, same stopping/raising/lowering/bonding alternatives and lowering answer; punctuation of the completion gap differs.",
+    "absentIds": [],
+    "reviewedPayloads": [
+      {
+        "id": "IBM1-BIO-DRV-20260921-01345",
+        "type": "mcq",
+        "text": "Enzymes accelerate reactions by . ..... the free energy of activation needed for the reaction.",
+        "options": [
+          "Stopping.",
+          "Raising.",
+          "Lowering.",
+          "Bonding."
+        ],
+        "correctIndex": 2,
+        "modelAnswer": null,
+        "requiredPoints": null,
+        "explanation": "Enzyme catalysis lowers the activation-energy barrier and therefore increases reaction rate. It does not change the overall reaction free-energy difference or the equilibrium constant.",
+        "hash": "0b6cb98e628fe4969c85fc55701f86a46cb0b7aa02e59e64d9b24be35671d7ab"
+      },
+      {
+        "id": "IBM1-BIO-DRV-20260921-02347",
+        "type": "mcq",
+        "text": "Enzymes accelerate reactions by ........... the free energy of activation needed for the reaction.",
+        "options": [
+          "Stopping.",
+          "Raising.",
+          "Lowering.",
+          "Bonding."
+        ],
+        "correctIndex": 2,
+        "modelAnswer": null,
+        "requiredPoints": null,
+        "explanation": "Enzyme catalysis lowers the activation-energy barrier and therefore increases reaction rate. It does not change the overall reaction free-energy difference or the equilibrium constant.",
+        "hash": "76179c3a119e1cbd0b482cf69b9423a1ce4f01b52bc8d871973b1fc97a60af92"
+      }
+    ]
+  },
+  {
+    "module": "IBM-1",
+    "candidateFile": "duplicate-candidates-enzymes_genes.json",
+    "groupIndex": 5,
+    "ids": [
+      "IBM1-BIO-DRV-20260921-01322",
+      "IBM1-BIO-DRV-20260921-01870"
+    ],
+    "disposition": "merge_semantically_equivalent",
+    "canonicalId": "IBM1-BIO-DRV-20260921-01322",
+    "reason": "Same four coenzyme properties plus all-of-the-above alternative and answer; tightly bounded/bound is grammatical variation without biochemical difference.",
+    "absentIds": [],
+    "reviewedPayloads": [
+      {
+        "id": "IBM1-BIO-DRV-20260921-01322",
+        "type": "mcq",
+        "text": "Coenzymes:",
+        "options": [
+          "Heat stable organic compounds.",
+          "Called prosthetic groups when tightly bounded to enzyme",
+          "Usually synthesized from vitamin B complex.",
+          "May be loosely attached to enzyme as NAD.",
+          "All of the above."
+        ],
+        "correctIndex": 4,
+        "modelAnswer": null,
+        "requiredPoints": null,
+        "explanation": "Coenzymes are organic nonprotein cofactors, often derived from B vitamins; NAD illustrates a loosely bound coenzyme. A tightly bound cofactor is a prosthetic group, and these small cofactors are generally more heat-stable than the protein enzyme.",
+        "hash": "65675130920899be4ea62a806c096b756f1ebc01cfd9addc4fa76805387b02c6"
+      },
+      {
+        "id": "IBM1-BIO-DRV-20260921-01870",
+        "type": "mcq",
+        "text": "A Coenzymes :-",
+        "options": [
+          "Heat stable organic compounds",
+          "Called prosthetic groups when tightly bound to enzyme",
+          "Usually synthesized from vitamin B complex",
+          "May be loosely attached to enzyme as NAD",
+          "All of the above"
+        ],
+        "correctIndex": 4,
+        "modelAnswer": null,
+        "requiredPoints": null,
+        "explanation": "Coenzymes are organic nonprotein cofactors, often derived from B vitamins; NAD illustrates a loosely bound coenzyme. A tightly bound cofactor is a prosthetic group, and these small cofactors are generally more heat-stable than the protein enzyme.",
+        "hash": "28b8d73e57780fcbe7ac67b0b77680dd87529f69611a52a59bebda0cc4ded630"
+      }
+    ]
+  },
+  {
+    "module": "IBM-1",
+    "candidateFile": "duplicate-candidates-enzymes_genes.json",
+    "groupIndex": 6,
+    "ids": [
+      "IBM1-BIO-DRV-20260921-01334",
+      "IBM1-BIO-DRV-20260921-01882"
+    ],
+    "disposition": "merge_semantically_equivalent",
+    "canonicalId": "IBM1-BIO-DRV-20260921-01334",
+    "reason": "Same initial enzyme-reaction velocity definition and five alternatives; before product accumulation is the identical answer.",
+    "absentIds": [],
+    "reviewedPayloads": [
+      {
+        "id": "IBM1-BIO-DRV-20260921-01334",
+        "type": "mcq",
+        "text": "Which statement best describes the initial velocity of an enzyme-catalyzed reaction?",
+        "options": [
+          "Velocity before adding the enzyme",
+          "The lowest velocity",
+          "Velocity before accumulation of products",
+          "Velocity at zero substrate concentration",
+          "Velocity at substrate concentration equal to Km."
+        ],
+        "correctIndex": 2,
+        "modelAnswer": null,
+        "requiredPoints": null,
+        "explanation": "Initial velocity is measured early, before product accumulation and substrate depletion materially alter the rate. It therefore reflects the starting substrate concentration rather than a reaction already approaching equilibrium.",
+        "hash": "f5eed356c3a73bf8198006ed56503dd62f2e3eb77cf92f80c966ef2f6ef1fa69"
+      },
+      {
+        "id": "IBM1-BIO-DRV-20260921-01882",
+        "type": "mcq",
+        "text": "Initial velocity of the enzyme catalyze reaction in which of the followings :-",
+        "options": [
+          "Velocity before adding the enzyme",
+          "The lowest velocity",
+          "Velocity before accumulation of products",
+          "Velocity at zero substrate concentration",
+          "Velocity at substrate concentration equal to Km"
+        ],
+        "correctIndex": 2,
+        "modelAnswer": null,
+        "requiredPoints": null,
+        "explanation": "Initial velocity is measured early, before product accumulation and substrate depletion materially alter the rate. It therefore reflects the starting substrate concentration rather than a reaction already approaching equilibrium.",
+        "hash": "aa4e7819006e7bf8c18a6db74f4570cc43fe3eaac79eb26574d11a03ef2678a1"
+      }
+    ]
+  },
+  {
+    "module": "IBM-1",
+    "candidateFile": "duplicate-candidates-enzymes_genes.json",
+    "groupIndex": 7,
+    "ids": [
+      "IBM1-BIO-FINAL22-Q40",
+      "IBM1-BIO-DRV-20260921-02131"
+    ],
+    "disposition": "merge_semantically_equivalent",
+    "canonicalId": "IBM1-BIO-FINAL22-Q40",
+    "reason": "Same permanent aspirin/cyclooxygenase inhibition trigger and all five Vmax/Km alternatives; decreased Vmax answer agrees.",
+    "absentIds": [],
+    "reviewedPayloads": [
+      {
+        "id": "IBM1-BIO-FINAL22-Q40",
+        "type": "mcq",
+        "text": "Aspirin permanently inhibits cyclooxygenase, leading to which of the following?",
+        "options": [
+          "Decrease of Vmax",
+          "Increase of Vmax",
+          "Increase of Km with no change in Vmax",
+          "Decrease of Km and decrease of Vmax",
+          "Increase of Km and increase of Vmax"
+        ],
+        "correctIndex": 0,
+        "modelAnswer": null,
+        "requiredPoints": null,
+        "explanation": "Aspirin irreversibly acetylates cyclooxygenase, removing enzyme molecules from the active pool. Fewer functional molecules lower Vmax, and adding substrate cannot restore the inhibited enzyme.",
+        "hash": "27820c20e804a57ecc9855907a2cea70bcb0584bdc196398641853d7326c35ff"
+      },
+      {
+        "id": "IBM1-BIO-DRV-20260921-02131",
+        "type": "mcq",
+        "text": "Aspirin permanently inhibits cyclooxygenase enzyme, causing",
+        "options": [
+          "decrease of Vmax",
+          "increase of Vmax",
+          "increase of Km with no change in Vmax",
+          "decrease of Km and decrease of Vmax",
+          "increase of Km and increase of Vmax"
+        ],
+        "correctIndex": 0,
+        "modelAnswer": null,
+        "requiredPoints": null,
+        "explanation": "Aspirin irreversibly acetylates cyclooxygenase, removing enzyme molecules from the active pool. Fewer functional molecules lower Vmax, and adding substrate cannot restore the inhibited enzyme.",
+        "hash": "53956adfeff84de742dc10b137fe71cb1a69be2e7ea376200da35f1dcc1a5535"
+      }
+    ]
+  },
+  {
+    "module": "IBM-1",
+    "candidateFile": "duplicate-candidates-enzymes_genes.json",
+    "groupIndex": 8,
+    "ids": [
+      "IBM1-BIO-DRV-20260921-01332",
+      "IBM1-BIO-DRV-20260921-01880"
+    ],
+    "disposition": "merge_semantically_equivalent",
+    "canonicalId": "IBM1-BIO-DRV-20260921-01332",
+    "reason": "Same constitutive-expression definition and all four alternative enzyme categories; wording and singular/plural agreement differ.",
+    "absentIds": [],
+    "reviewedPayloads": [
+      {
+        "id": "IBM1-BIO-DRV-20260921-01332",
+        "type": "mcq",
+        "text": "An enzyme expressed under most conditions without a specific inducing signal is called:",
+        "options": [
+          "An inducible enzymes",
+          "A constitutive enzyme",
+          "A key enzymes",
+          "Any of the above.."
+        ],
+        "correctIndex": 1,
+        "modelAnswer": null,
+        "requiredPoints": null,
+        "explanation": "Constitutive expression occurs without requiring a specific inducing signal. This describes an expression pattern, rather than guaranteeing that the enzyme concentration never changes.",
+        "hash": "1cfe8ce1e8d0b6e004479727354f423f01c7299e682750d12c6111f3939a5cd0"
+      },
+      {
+        "id": "IBM1-BIO-DRV-20260921-01880",
+        "type": "mcq",
+        "text": "An enzyme expressed under most conditions without requiring a specific inducing signal is called:",
+        "options": [
+          "An inducible enzyme.",
+          "A constitutive enzyme.",
+          "A key enzyme.",
+          "Any of the above."
+        ],
+        "correctIndex": 1,
+        "modelAnswer": null,
+        "requiredPoints": null,
+        "explanation": "A constitutive enzyme is expressed under most conditions without requiring a specific inducing signal. Its concentration is not necessarily literally fixed; inducible expression rises in response to a signal, and key enzyme describes pathway control rather than this expression pattern.",
+        "hash": "e15ad61578ea7bbb7aa9dcd705c83e1aea14891150ef89a00f283c2636307aa3"
+      }
+    ]
+  },
+  {
+    "module": "IBM-1",
+    "candidateFile": "duplicate-candidates-enzymes_genes.json",
+    "groupIndex": 9,
+    "ids": [
+      "IBM1-BIO-DRV-20260921-01611",
+      "IBM1-BIO-DRV-20260921-01167"
+    ],
+    "disposition": "merge_semantically_equivalent",
+    "canonicalId": "IBM1-BIO-DRV-20260921-01611",
+    "reason": "Same cAMP-producing-enzyme question with PKA/PDE/adenylate cyclase/phosphatase choices and adenylate cyclase answer.",
+    "absentIds": [],
+    "reviewedPayloads": [
+      {
+        "id": "IBM1-BIO-DRV-20260921-01611",
+        "type": "mcq",
+        "text": "cAMP is produced by which enzyme?",
+        "options": [
+          "Protein kinase A",
+          "Phosphodiesterase",
+          "Adenylate cyclase",
+          "Phosphatase"
+        ],
+        "correctIndex": 2,
+        "modelAnswer": null,
+        "requiredPoints": null,
+        "explanation": "Adenylyl cyclase forms cAMP from ATP. PDE hydrolyzes cAMP; PKA is activated by it.",
+        "hash": "1303d1bef669dfa4b53152b7623b86d38c0c9914171181163f2433a31abaad12"
+      },
+      {
+        "id": "IBM1-BIO-DRV-20260921-01167",
+        "type": "mcq",
+        "text": "cAMP is produced by which of the following enzymes?",
+        "options": [
+          "Protein Kinase A",
+          "Phosphodiesterase",
+          "Adenylate Cyclase",
+          "Phosphatase."
+        ],
+        "correctIndex": 2,
+        "modelAnswer": null,
+        "requiredPoints": null,
+        "explanation": "Adenylyl cyclase converts ATP to cAMP. cAMP activates protein kinase A, whereas phosphodiesterase hydrolyzes cAMP to terminate the signal.",
+        "hash": "0578d689ea17906f7848fec8ea1e72b4f6421bda2337eb249fb754e291b5965d"
+      }
+    ]
+  },
+  {
+    "module": "IBM-1",
+    "candidateFile": "duplicate-candidates-enzymes_genes.json",
+    "groupIndex": 10,
+    "ids": [
+      "IBM1-BIO-DRV-20260921-01615",
+      "IBM1-BIO-DRV-20260921-01171"
+    ],
+    "disposition": "merge_semantically_equivalent",
+    "canonicalId": "IBM1-BIO-DRV-20260921-01615",
+    "reason": "Same adenylyl-cyclase cAMP substrate completion and 5-prime AMP/3-prime AMP/ADP/ATP alternatives. Typographic prime/spacing differs; ATP answer agrees.",
+    "absentIds": [],
+    "reviewedPayloads": [
+      {
+        "id": "IBM1-BIO-DRV-20260921-01615",
+        "type": "mcq",
+        "text": "cAMP is synthesized by adenylyl cyclase from ...... ?",
+        "options": [
+          "5′AMP",
+          "3′AMP",
+          "ADP",
+          "ATP"
+        ],
+        "correctIndex": 3,
+        "modelAnswer": null,
+        "requiredPoints": null,
+        "explanation": "ATP is cyclized to cAMP with pyrophosphate release. AMP and ADP are not the cyclase substrate.",
+        "hash": "a1b110c9e5e1d5b903a999693ab987dd98dfddf32a07f2963e901a1ba72910b3"
+      },
+      {
+        "id": "IBM1-BIO-DRV-20260921-01171",
+        "type": "mcq",
+        "text": "cAMP is synthesized by adenylyl cyclase from .......?",
+        "options": [
+          "5' AMP",
+          "3'AMP",
+          "ADP",
+          "ATP."
+        ],
+        "correctIndex": 3,
+        "modelAnswer": null,
+        "requiredPoints": null,
+        "explanation": "Adenylyl cyclase cyclizes ATP to cAMP with release of pyrophosphate. Phosphodiesterase performs the opposite signaling role by hydrolyzing cAMP to AMP.",
+        "hash": "b9f4f3d6ab2d1d197eaa51683bcb049c6a9963c0efe1cd19ac5aedde2cbf8324"
+      }
+    ]
+  },
+  {
+    "module": "IBM-1",
+    "candidateFile": "duplicate-candidates-enzymes_genes.json",
+    "groupIndex": 11,
+    "ids": [
+      "IBM1-BIO-DRV-20260921-01335",
+      "IBM1-BIO-DRV-20260921-02128"
+    ],
+    "disposition": "retain_distinct_full_questions",
+    "canonicalId": null,
+    "reason": "Preserve: distractor a substrate needed for enzyme action versus a substance needed for enzyme action has materially different biochemical scope. Same zymogen answer alone is insufficient to discard distinct alternatives.",
+    "absentIds": [],
+    "reviewedPayloads": [
+      {
+        "id": "IBM1-BIO-DRV-20260921-01335",
+        "type": "mcq",
+        "text": "A Pro-enzyme is which of the followings :-",
+        "options": [
+          "An inorganic cofactor",
+          "A substrate need for enzyme action",
+          "The protein part of the enzyme",
+          "Enzyme with different electrophoretic pattern",
+          "An inactive enzyme."
+        ],
+        "correctIndex": 4,
+        "modelAnswer": null,
+        "requiredPoints": null,
+        "explanation": "A zymogen is an inactive enzyme precursor; limited proteolysis produces the active catalytic structure. This differs from an apoenzyme, which specifically lacks a required nonprotein cofactor.",
+        "hash": "6d6f89b3072038a901c85014ab79c97e1f9d53160e52d2a0901fdef13a5b5853"
+      },
+      {
+        "id": "IBM1-BIO-DRV-20260921-02128",
+        "type": "mcq",
+        "text": "A pro-enzyme is which of the following?",
+        "options": [
+          "An inorganic cofactor.",
+          "A substance needed for the enzyme action.",
+          "The protein part of an enzyme.",
+          "An enzyme of a different electrophoretic pattern.",
+          "An inactive enzyme."
+        ],
+        "correctIndex": 4,
+        "modelAnswer": null,
+        "requiredPoints": null,
+        "explanation": "A zymogen is an inactive enzyme precursor; limited proteolysis produces the active catalytic structure. This differs from an apoenzyme, which specifically lacks a required nonprotein cofactor.",
+        "hash": "f2e05ca794c9d25c342c57bbf41683ef9beb338945fbb55b635d79aa20483eb3"
+      }
+    ]
+  },
+  {
+    "module": "IBM-1",
+    "candidateFile": "duplicate-variants-carbs_lipids.json",
+    "groupIndex": 0,
+    "ids": [
+      "IBM1-BIO-DRV-20260921-00125",
+      "IBM1-BIO-DRV-20260921-00130"
+    ],
+    "disposition": "merge_semantically_equivalent",
+    "canonicalId": "IBM1-BIO-DRV-20260921-00125",
+    "reason": "Both request exactly two choline-containing phospholipids; phosphatidylcholine and sphingomyelin model answer and required points are identical.",
+    "absentIds": [],
+    "reviewedPayloads": [
+      {
+        "id": "IBM1-BIO-DRV-20260921-00125",
+        "type": "essay",
+        "text": "Two choline containing phospholipids.",
+        "options": null,
+        "correctIndex": null,
+        "modelAnswer": "Phosphatidylcholine (lecithin); Sphingomyelin (ceramide phosphocholine).",
+        "requiredPoints": [
+          "Phosphatidylcholine (lecithin)",
+          "Sphingomyelin (ceramide phosphocholine)"
+        ],
+        "explanation": "Phosphatidylcholine (lecithin); Sphingomyelin (ceramide phosphocholine).",
+        "hash": "e2ada281e9a8200e527f19df07a12cdcf49aa7da85131a8b232e8be080a53ac9"
+      },
+      {
+        "id": "IBM1-BIO-DRV-20260921-00130",
+        "type": "essay",
+        "text": "Two phospholipids containing choline",
+        "options": null,
+        "correctIndex": null,
+        "modelAnswer": "Phosphatidylcholine (lecithin); Sphingomyelin (ceramide phosphocholine).",
+        "requiredPoints": [
+          "Phosphatidylcholine (lecithin)",
+          "Sphingomyelin (ceramide phosphocholine)"
+        ],
+        "explanation": "Phosphatidylcholine (lecithin); Sphingomyelin (ceramide phosphocholine).",
+        "hash": "aea9bedc38d9a14ed39e559341484db42d7c985ce323e0709d1d13651fdeb266"
+      }
+    ]
+  },
+  {
+    "module": "IBM-1",
+    "candidateFile": "duplicate-variants-carbs_lipids.json",
+    "groupIndex": 1,
+    "ids": [
+      "IBM1-BIO-DRV-20260921-00451",
+      "IBM1-BIO-DRV-20260921-00473"
+    ],
+    "disposition": "merge_semantically_equivalent",
+    "canonicalId": "IBM1-BIO-DRV-20260921-00451",
+    "reason": "Same depot-versus-tissue fat comparison with the identical three composition/site/function dimensions and exactly identical model answer and three-point rubric. General versus three-difference phrasing has no actual rubric breadth difference.",
+    "absentIds": [],
+    "reviewedPayloads": [
+      {
+        "id": "IBM1-BIO-DRV-20260921-00451",
+        "type": "essay",
+        "text": "Enumerate three differences between depot fat and tissue fat.",
+        "options": null,
+        "correctIndex": null,
+        "modelAnswer": "Composition: depot fat is mainly TAG; tissue structural lipids include phospholipids and cholesterol; Site: depot fat is stored in adipocyte lipid droplets; structural lipids form cell and organelle membranes; Function: depot fat stores energy and provides insulation/cushioning; structural lipids maintain membrane organization and function.",
+        "requiredPoints": [
+          "Composition: depot fat is mainly TAG; tissue structural lipids include phospholipids and cholesterol",
+          "Site: depot fat is stored in adipocyte lipid droplets; structural lipids form cell and organelle membranes",
+          "Function: depot fat stores energy and provides insulation/cushioning; structural lipids maintain membrane organization and function"
+        ],
+        "explanation": "Composition: depot fat is mainly TAG; tissue structural lipids include phospholipids and cholesterol; Site: depot fat is stored in adipocyte lipid droplets; structural lipids form cell and organelle membranes; Function: depot fat stores energy and provides insulation/cushioning; structural lipids maintain membrane organization and function.",
+        "hash": "997630d0a3615b86b22a75856b7f176aa982ec55a50ac04c4192717068ae2368"
+      },
+      {
+        "id": "IBM1-BIO-DRV-20260921-00473",
+        "type": "essay",
+        "text": "Compare tissue fat and depot fat.",
+        "options": null,
+        "correctIndex": null,
+        "modelAnswer": "Composition: depot fat is mainly TAG; tissue structural lipids include phospholipids and cholesterol; Site: depot fat is stored in adipocyte lipid droplets; structural lipids form cell and organelle membranes; Function: depot fat stores energy and provides insulation/cushioning; structural lipids maintain membrane organization and function.",
+        "requiredPoints": [
+          "Composition: depot fat is mainly TAG; tissue structural lipids include phospholipids and cholesterol",
+          "Site: depot fat is stored in adipocyte lipid droplets; structural lipids form cell and organelle membranes",
+          "Function: depot fat stores energy and provides insulation/cushioning; structural lipids maintain membrane organization and function"
+        ],
+        "explanation": "Composition: depot fat is mainly TAG; tissue structural lipids include phospholipids and cholesterol; Site: depot fat is stored in adipocyte lipid droplets; structural lipids form cell and organelle membranes; Function: depot fat stores energy and provides insulation/cushioning; structural lipids maintain membrane organization and function.",
+        "hash": "97e5eed6e118bac28050d5e48d097548cd99e75c0b365090e6bd867f00cbab70"
+      }
+    ]
+  },
+  {
+    "module": "IBM-1",
+    "candidateFile": "duplicate-variants-carbs_lipids.json",
+    "groupIndex": 2,
+    "ids": [
+      "IBM1-BIO-DRV-20260921-01120",
+      "IBM1-BIO-DRV-20260921-01400"
+    ],
+    "disposition": "already_absent_after_exclusion_or_automatic_dedup",
+    "canonicalId": null,
+    "reason": "No new deletion: at least one candidate ID is absent from the post-correction review snapshot.",
+    "absentIds": [
+      "IBM1-BIO-DRV-20260921-01400"
+    ],
+    "reviewedPayloads": [
+      {
+        "id": "IBM1-BIO-DRV-20260921-01120",
+        "type": "mcq",
+        "text": "ω-3 fatty acids have significant effects on brain cognitive function; which of the following foods is rich in them?",
+        "options": [
+          "cow milk melted fat",
+          "tropical plant oil.",
+          "Corn oil.",
+          "Buffalo meat",
+          "Salmon fish."
+        ],
+        "correctIndex": 4,
+        "modelAnswer": null,
+        "requiredPoints": null,
+        "explanation": "Salmon supplies the long-chain omega-3 fatty acids EPA and DHA. The listed dairy fat, meat and corn or tropical oils are not comparably rich sources of these fats.",
+        "hash": "02d3c155d0db8baae58358b5ce2094734a6fff7533bcc67310d68716f0b97cc6"
+      }
+    ]
+  },
+  {
+    "module": "IBM-1",
+    "candidateFile": "duplicate-variants-carbs_lipids.json",
+    "groupIndex": 3,
+    "ids": [
+      "IBM1-BIO-DRV-20260921-01132",
+      "IBM1-BIO-DRV-20260921-01565"
+    ],
+    "disposition": "merge_semantically_equivalent",
+    "canonicalId": "IBM1-BIO-DRV-20260921-01132",
+    "reason": "Same glycerophospholipid-precursor question and all four cholesterol/sphingosine/arachidonate/phosphatidate options; phosphatidate answer agrees.",
+    "absentIds": [],
+    "reviewedPayloads": [
+      {
+        "id": "IBM1-BIO-DRV-20260921-01132",
+        "type": "mcq",
+        "text": "Which lipid acts as a precursor for glycerophospholipids?",
+        "options": [
+          "Cholesterol",
+          "Sphingosine",
+          "Arachidonic acid",
+          "Phosphatidic acid"
+        ],
+        "correctIndex": 3,
+        "modelAnswer": null,
+        "requiredPoints": null,
+        "explanation": "Phosphatidic acid already contains glycerol, two fatty acyl groups and phosphate, providing a precursor for glycerophospholipids. Sphingosine supplies a different backbone for sphingolipids.",
+        "hash": "6b96e5dc76dde6ce86bda253899085f58c365699a4179f4f8940966e3d4e277e"
+      },
+      {
+        "id": "IBM1-BIO-DRV-20260921-01565",
+        "type": "mcq",
+        "text": "Choose a lipid that acts as a precursor for Glycerophospholipids",
+        "options": [
+          "Cholesterol",
+          "Sphingosine",
+          "Arachidonic acid",
+          "Phosphatidic acid"
+        ],
+        "correctIndex": 3,
+        "modelAnswer": null,
+        "requiredPoints": null,
+        "explanation": "Phosphatidic acid is a central glycerophospholipid precursor. Sphingosine supplies sphingolipid backbones, not glycerol backbones.",
+        "hash": "b85e4dd2f8ed738fa61e9d91d8ea6dad543eff7d2cd0f0630fa7282dc25c0b6c"
+      }
+    ]
+  },
+  {
+    "module": "IBM-1",
+    "candidateFile": "duplicate-variants-carbs_lipids.json",
+    "groupIndex": 4,
+    "ids": [
+      "IBM1-BIO-BGFORM-LIP-Q03",
+      "IBM1-BIO-DRV-20260921-01592"
+    ],
+    "disposition": "merge_semantically_equivalent",
+    "canonicalId": "IBM1-BIO-BGFORM-LIP-Q03",
+    "reason": "Same membrane-suitability question; all five alternatives are equivalent including long-chain fatty acids, charge, molecular weight, phosphorus and amphipathicity. Same amphipathic answer; options are permuted.",
+    "absentIds": [],
+    "reviewedPayloads": [
+      {
+        "id": "IBM1-BIO-BGFORM-LIP-Q03",
+        "type": "mcq",
+        "text": "Phospholipid molecules suit the membrane structure because they:",
+        "options": [
+          "Contain long chain fatty acids.",
+          "Are high molecular weight molecules.",
+          "Are amphipathic.",
+          "Contain phosphorus.",
+          "Contain positive and negative charges."
+        ],
+        "correctIndex": 2,
+        "modelAnswer": null,
+        "requiredPoints": null,
+        "explanation": "A polar head and hydrophobic tails let phospholipids form a stable bilayer in water.",
+        "hash": "9f5e438e107af83c9d3f73bfd2b80a5b70a77b33746785e0feb5eb4cb5c1e9e3"
+      },
+      {
+        "id": "IBM1-BIO-DRV-20260921-01592",
+        "type": "mcq",
+        "text": "Phospholipid molecules are suited to membrane structure because they:",
+        "options": [
+          "Contain positive and negative charges",
+          "Are amphipathic",
+          "Have long chain fatty acids",
+          "Are high molecular weight molecules",
+          "Contain phosphorus"
+        ],
+        "correctIndex": 1,
+        "modelAnswer": null,
+        "requiredPoints": null,
+        "explanation": "Phospholipids have water-compatible heads and hydrophobic tails. This amphipathic structure allows them to assemble into membrane bilayers.",
+        "hash": "317a4d8b9ae5ffb247c1acdb850e95fb226605bd0d2cf02b02563404e6aa9400"
+      }
+    ]
+  },
+  {
+    "module": "IBM-1",
+    "candidateFile": "duplicate-variants-carbs_lipids.json",
+    "groupIndex": 5,
+    "ids": [
+      "IBM1-BIO-BGFORM-MET-Q07",
+      "IBM1-BIO-F2-Q09"
+    ],
+    "disposition": "merge_semantically_equivalent",
+    "canonicalId": "IBM1-BIO-BGFORM-MET-Q07",
+    "reason": "Same false signal-transduction statement among the identical five propositions. Both key the phosphorylated-glycogen-synthase-active assertion; options permuted.",
+    "absentIds": [],
+    "reviewedPayloads": [
+      {
+        "id": "IBM1-BIO-BGFORM-MET-Q07",
+        "type": "mcq",
+        "text": "Which of the following is false as regards signaling transduction?",
+        "options": [
+          "Phosphorylated form of glycogen synthase enzyme is the active form.",
+          "Adenylate cyclase is one of the signaling pathways.",
+          "This is the process by which extracellular signals can be transduced into intracellular chemical changes.",
+          "Dephosphorylated form of glycogen synthase enzyme is the active form.",
+          "Phosphorylated form of glycogen phosphorylase enzyme is the active form."
+        ],
+        "correctIndex": 0,
+        "modelAnswer": null,
+        "requiredPoints": null,
+        "explanation": "Phosphorylation suppresses glycogen synthase, whereas dephosphorylation favors glycogen synthesis. Glycogen phosphorylase has the opposite phosphorylation response, allowing reciprocal control of synthesis and breakdown.",
+        "hash": "cb1003589c17db461a6a4852102f4d3da35dc7e1c3e5d089d5661a874d7467ca"
+      },
+      {
+        "id": "IBM1-BIO-F2-Q09",
+        "type": "mcq",
+        "text": "Which of the following is false as regards signal transduction?",
+        "options": [
+          "This is the process by which extracellular signals can be transduced into intracellular chemical changes",
+          "Adenylate cyclase is one of the signaling pathways",
+          "The phosphorylated form of glycogen synthase is the active form",
+          "The dephosphorylated form of glycogen synthase is the active form",
+          "The phosphorylated form of glycogen phosphorylase is the active form"
+        ],
+        "correctIndex": 2,
+        "modelAnswer": null,
+        "requiredPoints": null,
+        "explanation": "Phosphorylation suppresses glycogen synthase, whereas dephosphorylation favors glycogen synthesis. Glycogen phosphorylase has the opposite phosphorylation response, allowing reciprocal control of synthesis and breakdown.",
+        "hash": "af904fe2863217415cd61b405f60d2e6d3a9654beba542984bced01ca60762dd"
+      }
+    ]
+  },
+  {
+    "module": "IBM-1",
+    "candidateFile": "duplicate-variants-carbs_lipids.json",
+    "groupIndex": 6,
+    "ids": [
+      "IBM1-BIO-DRV-20260921-01199",
+      "IBM1-BIO-DRV-20260921-01200"
+    ],
+    "disposition": "retain_distinct_full_questions",
+    "canonicalId": null,
+    "reason": "Preserve: the answer option is pyruvate kinase in one record and phosphoglycerate kinase in the other; these are distinct valid substrate-level phosphorylation reactions.",
+    "absentIds": [],
+    "reviewedPayloads": [
+      {
+        "id": "IBM1-BIO-DRV-20260921-01199",
+        "type": "mcq",
+        "text": "One of the following is Substrate level phosphorylation reaction in glycolysis",
+        "options": [
+          "Phosphofructokinase-1",
+          "Glucokinase",
+          "Succinate thiokinase",
+          "Hexokinase",
+          "Pyruvate kinase"
+        ],
+        "correctIndex": 4,
+        "modelAnswer": null,
+        "requiredPoints": null,
+        "explanation": "Substrate-level phosphorylation transfers phosphate directly from a high-energy glycolytic intermediate to ADP. Pyruvate kinase uses PEP and phosphoglycerate kinase uses 1,3-bisphosphoglycerate; succinate thiokinase belongs to the TCA cycle.",
+        "hash": "f89f1a41be7fbdef078fe6ce73b65eaa074acab2ec7704fe516dd0baf61c0317"
+      },
+      {
+        "id": "IBM1-BIO-DRV-20260921-01200",
+        "type": "mcq",
+        "text": "One of the following is Substrate level phosphorylation reaction in glycolysis",
+        "options": [
+          "Phosphofructokinase-1",
+          "Glucokinase",
+          "Succinate thiokinase",
+          "Hexokinase",
+          "Phosphoglycerate kinase"
+        ],
+        "correctIndex": 4,
+        "modelAnswer": null,
+        "requiredPoints": null,
+        "explanation": "Substrate-level phosphorylation transfers phosphate directly from a high-energy glycolytic intermediate to ADP. Pyruvate kinase uses PEP and phosphoglycerate kinase uses 1,3-bisphosphoglycerate; succinate thiokinase belongs to the TCA cycle.",
+        "hash": "9c4a08dcac2228105b9405328d8b4d826e5407893bdc051e440147444c2f0fb3"
+      }
+    ]
+  }
+]
