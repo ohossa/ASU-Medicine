@@ -1,7 +1,7 @@
 # OCR Medical Text Cleaner — Two-Step Pipeline (Step 1)
 
 > **Mission:** Take raw OCR text from gImageReader / PDF24 and output perfectly clean, structured question blocks that are ready for the **Step 2 converter** (ASU Portal v2 JSON importer).
-> 
+>
 > **Critical rule:** Accuracy beats completeness. When you cannot confidently reconstruct something, **FLAG it** — never hallucinate or guess.
 
 ---
@@ -206,7 +206,7 @@ PAIRS:
 
 [Only for case]
 CASE_TEXT:
-<full case description>  
+<full case description>
 SUB_QUESTIONS:
 1) [TYPE: mcq/essay/fillblank] <sub-question text>
    [OPTIONS: ...]

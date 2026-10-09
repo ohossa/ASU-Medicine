@@ -1,4 +1,3 @@
 
 > replicated-quiz-app@0.0.1 typecheck
 > tsc --noEmit -p tsconfig.app.json && tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.api.json
-

@@ -88,4 +88,3 @@ AssertionError: expected 'In the following peptide chain glutam…' to match /Wh
       Tests  3 failed | 3 passed (6)
    Start at  16:34:39
    Duration  544ms (transform 205ms, setup 183ms, import 113ms, tests 31ms, environment 395ms)
-
