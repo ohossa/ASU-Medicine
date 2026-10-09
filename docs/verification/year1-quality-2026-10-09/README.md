@@ -33,3 +33,7 @@ Reviewed all **4,635 original Semester 1 questions and 25 case children**. The r
 The shared working tree contains concurrent unfinished Learning Hub and loading changes. Its full run had 510 passing tests with three Clerk-provider failures and a missing continuation module; its build was blocked by new App.tsx references. Those unrelated files were preserved. `isolated-verification.json` lists the baseline commit and exact reviewed file overlay; `isolated-full-tests.txt`, `isolated-build.txt` and `verification.json` record the release result. A one-line cache-initialization fix in the shared runtime was also verified by its existing loading tests; it is separate from the clean baseline overlay.
 
 > Follow-up: IBM-1 was subsequently audited against original PDF pages in `../biochemistry-quality-2026-10-09/README.md`. This document records the earlier broad pass; the dedicated Biochemistry report records the latest IBM count and verification. Do not replay this older release over the newer IBM bank.
+
+## Authorized publication follow-up
+
+The user authorized pushing and deployment after the local review. The isolated release combines the two audited passes, retains **4,078 Semester 1 parent questions** (including **1,416 IBM-1 questions**), and excludes unrelated workspace development. Historical test results above refer to their respective review stages. Fresh isolated-release verification is recorded in `../question-quality-release-2026-10-09/`; deployment must be verified for the exact pushed commit.

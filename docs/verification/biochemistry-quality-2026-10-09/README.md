@@ -32,3 +32,7 @@ Run `python3 -m unittest discover -s scripts -p 'test_*quality.py'`, `python3 sc
 The review was AI-assisted and nonblind: saved keys were visible. The 109-page visual review was targeted, not complete visual reconciliation of every occurrence in all PDFs. Unchanged answers were screened for plausibility and contradictions, not all freshly sourced or independently adjudicated. References and actual page-inspection methods are recorded per decision; no structural test is called medical certification.
 
 **Applied and tested locally. No Git push or production deployment occurred.** Unrelated workspace development was preserved.
+
+## Authorized publication follow-up
+
+The user authorized pushing and deployment after the local review. The isolated release combines the two audited passes, retains **4,078 Semester 1 parent questions** (including **1,416 IBM-1 questions**), and excludes unrelated workspace development. Historical test results above refer to their respective review stages. Fresh isolated-release verification is recorded in `../question-quality-release-2026-10-09/`; deployment must be verified for the exact pushed commit.
