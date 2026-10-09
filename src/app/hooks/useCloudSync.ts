@@ -1,5 +1,6 @@
 import { useEffect, useCallback, useRef } from 'react';
 import {setHistoryAccount,historyStorageKey,HISTORY_WIRE_KEY} from '../learning/historyScope';
+import {mergeHistory} from '../../../shared/cloud-merge';
 import { useAuth } from '@clerk/clerk-react';
 
 const STORAGE_KEYS = [
@@ -39,7 +40,9 @@ export function useCloudSync() {
     getTokenRef.current = getToken;
   }, [getToken]);
 
-  const pushData = useCallback(async () => {
+  const isAccountKey = (key:string) => key===HISTORY_WIRE_KEY ||
+    key.startsWith(`asu_study_tracker:${userId}:`) || key.startsWith(`asu_quiz_session:${userId}:`) || key===`asu_preferences:${userId}:shuffle`;
+  const pushData = useCallback(async (accountOnly=false) => {
     if (!isSignedIn) return;
     if (isSyncing.current) {
       isDirtyRef.current = true;
@@ -52,6 +55,7 @@ export function useCloudSync() {
 
       // Collect standard keys
       STORAGE_KEYS.forEach(key => {
+        if(accountOnly && !isAccountKey(key)) return;
         const val = localStorage.getItem(key===HISTORY_WIRE_KEY?historyStorageKey(userId):key);
         if (val) {
           currentKeys.add(key);
@@ -91,6 +95,7 @@ export function useCloudSync() {
       // Detect keys that were in lastSyncedRef but are now absent from localStorage
       // These should be deleted from cloud (send them as null/undefined markers)
       for (const prevKey of Object.keys(lastSyncedRef.current)) {
+        if(accountOnly && !isAccountKey(prevKey)) continue;
         if (!currentKeys.has(prevKey)) {
           // Key was deleted locally — include it with null to signal deletion
           // (The API will handle deleting it from Redis)
@@ -115,7 +120,8 @@ export function useCloudSync() {
           'Content-Type': 'application/json',
           Authorization: `Bearer ${token}`
         },
-        body: payloadStr
+        body: payloadStr,
+        signal: AbortSignal.timeout(30000)
       });
 
       if (!res.ok) {
@@ -147,11 +153,17 @@ export function useCloudSync() {
     if (!isSignedIn) return;
 
     let isMounted = true;
+    let pulling = false;
     const pullData = async () => {
+      if (pulling || isSyncing.current || document.hidden) return;
+      pulling = true;
+      const before = new Map<string,string|null>();
+      for(let i=0;i<localStorage.length;i++) { const key=localStorage.key(i);if(key)before.set(key,localStorage.getItem(key)); }
       try {
         const token = await getTokenRef.current();
         const res = await fetch('/api/sync', {
-          headers: { Authorization: `Bearer ${token}` }
+          headers: { Authorization: `Bearer ${token}` },
+          signal: AbortSignal.timeout(30000)
         });
 
         if (!res.ok) {
@@ -161,7 +173,7 @@ export function useCloudSync() {
 
         const { data } = await res.json();
 
-        if (data && isMounted) {
+        if (data && isMounted && activeUser.current===userId) {
           let hasChanges = false;
           Object.entries(data).forEach(([key, cloudValAny]) => {
             if (key.startsWith('asu_study_tracker:') && !key.startsWith(`asu_study_tracker:${userId}:`)) return;
@@ -169,11 +181,18 @@ export function useCloudSync() {
             if (key.startsWith('asu_preferences:') && key !== `asu_preferences:${userId}:shuffle`) return;
             if (userId && key.startsWith('asu_quiz_session:') && !key.startsWith(`asu_quiz_session:${userId}:`)) return;
             if (cloudValAny !== undefined && cloudValAny !== null) {
-              const cloudVal = typeof cloudValAny === 'string' ? cloudValAny : JSON.stringify(cloudValAny);
+              let cloudVal = typeof cloudValAny === 'string' ? cloudValAny : JSON.stringify(cloudValAny);
               const localKey=key===HISTORY_WIRE_KEY?historyStorageKey(userId):key;
               const localVal = localStorage.getItem(localKey);
 
               let shouldOverwrite = false;
+              if (key===HISTORY_WIRE_KEY && localVal===null && lastSyncedRef.current[key]!==undefined) {
+                // Keep an explicit pending history clear until its deletion is sent.
+                shouldOverwrite=false;
+              } else if (key===HISTORY_WIRE_KEY) {
+                cloudVal = JSON.stringify(mergeHistory(cloudValAny, localVal??[]));
+                shouldOverwrite = true;
+              } else
               if (key.startsWith('asu_quiz_session:') || key === `asu_preferences:${userId}:shuffle`) {
                 try {
                   const cloudObj = typeof cloudValAny === 'string' ? JSON.parse(cloudValAny) : cloudValAny;
@@ -187,7 +206,10 @@ export function useCloudSync() {
                   shouldOverwrite = true;
                 }
               } else {
-                shouldOverwrite = true;
+                // A pending local edit must survive a background pull.
+                shouldOverwrite = lastSyncedRef.current[key]===undefined
+                  ? localVal===(before.get(localKey)??null)
+                  : localVal===lastSyncedRef.current[key];
               }
 
               if (shouldOverwrite && cloudVal !== localVal) {
@@ -196,25 +218,36 @@ export function useCloudSync() {
               }
 
               // Populate lastSyncedRef so future pushes know what's in the cloud
-              lastSyncedRef.current[key] = cloudVal;
+              lastSyncedRef.current[key] = typeof cloudValAny==='string'?cloudValAny:JSON.stringify(cloudValAny);
             }
           });
 
           if (hasChanges) {
             window.dispatchEvent(new Event('storage'));
+            window.dispatchEvent(new Event('asu-history-updated'));
           }
+          // Reconcile only this account's history/drafts, including failed offline saves.
+          await pushData(true);
         }
       } catch (err) {
         console.error("Cloud pull failed:", err);
-      }
+      } finally { pulling = false; }
     };
 
-    pullData();
-
+    void pullData();
+    const resume = () => { void pullData(); };
+    window.addEventListener('focus', resume);
+    window.addEventListener('online', resume);
+    document.addEventListener('visibilitychange', resume);
+    const interval = setInterval(resume,60000);
     return () => {
       isMounted = false;
+      clearInterval(interval);
+      window.removeEventListener('focus',resume);
+      window.removeEventListener('online',resume);
+      document.removeEventListener('visibilitychange',resume);
     };
-  }, [isSignedIn, userId]);
+  }, [isSignedIn, userId, pushData]);
 
   useEffect(() => {
     if (!isSignedIn) return;

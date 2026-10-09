@@ -401,59 +401,16 @@
   padding: 30px 34px;
   min-width: 0;
 }
-.support-amounts {
-  border: 0;
-  padding: 0;
-  margin: 0 0 26px;
-  min-width: 0;
-}
-.support-amounts legend {
-  font-size: 14px;
-  color: var(--sp-muted);
-  margin-bottom: 12px;
-}
-.support-amounts > div {
+.support-payment-note {
   display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-.support-amounts button {
-  padding: 9px 17px;
-  min-height: 44px;
-  border: 1px solid var(--sp-border);
-  border-radius: 11px;
-  background: var(--sp-panel);
-  color: var(--sp-text);
-  font-size: 14px;
-}
-.support-amounts button[aria-pressed="true"] {
-  background: var(--sp-action);
-  color: var(--sp-action-text);
-  border-color: var(--sp-action);
-}
-.support-amounts > p {
-  font-size: 13px;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 0 0 26px;
   color: var(--sp-muted);
-  margin: 12px 0 0;
-}
-.support-custom-label {
-  display: block;
   font-size: 14px;
-  margin-top: 16px;
+  line-height: 1.6;
 }
-.support-custom-label input {
-  display: block;
-  margin-top: 6px;
-  padding: 10px 12px;
-  min-height: 44px;
-  max-width: 100%;
-  width: 180px;
-  border: 1px solid var(--sp-border);
-  background: var(--sp-bg);
-  color: var(--sp-text);
-  border-radius: 10px;
-  font: inherit;
-}
+.support-payment-note svg { flex-shrink: 0; margin-top: 2px; color: var(--sp-accent); }
 .support-recipient {
   margin-bottom: 20px;
 }
@@ -879,8 +836,7 @@
   }
 }
 @media (forced-colors: active) {
-  .support-method.is-selected,
-  .support-amounts button[aria-pressed="true"] {
+  .support-method.is-selected {
     border: 2px solid Highlight;
   }
   .support-primary,

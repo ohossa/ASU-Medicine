@@ -1,11 +1,12 @@
+import {useSyncedHistory} from '../hooks/useSyncedHistory';
 import { ShuffleSwitch } from '../preferences/ShuffleSwitch';
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useMemo } from 'react';
 import { useNavigate, useParams } from 'react-router';
 import { GraduationCap, Layers, ArrowRight, Palette, Clock, Award, Trash2, ArrowLeft, Calendar, ChevronRight } from 'lucide-react';
 import type { ChapterData, SubjectColor, SubjectData, Question } from '../types';
 import { formatTime } from '../types';
 import type { QuizResult } from '../utils/storage';
-import { getQuizHistory, clearQuizHistory } from '../utils/storage';
+import { clearQuizHistory } from '../utils/storage';
 import { useLanguage } from '../hooks/useLanguage';
 
 /* ------------------------------------------------------------------ */
@@ -242,25 +243,9 @@ export function ChapterSelect({
     return f ? (isRTL ? f.ar : f.en) : key;
   };
 
-  const [history, setHistory] = useState<QuizResult[]>([]);
+  const history = useSyncedHistory().slice(0,6);
 
-  /* History retrieval on mount */
-  useEffect(() => {
-    try {
-      const all = getQuizHistory();
-      const cleaned = (Array.isArray(all) ? all : []).filter(
-        (r): r is QuizResult => r !== null && typeof r === 'object',
-      );
-      setHistory(cleaned.slice(0, 6));
-    } catch {
-      setHistory([]);
-    }
-  }, []);
-
-  const handleClearHistory = () => {
-    clearQuizHistory();
-    setHistory([]);
-  };
+  const handleClearHistory = () => { clearQuizHistory(); };
 
   /* Academic stats */
   const distinctSubjects = chapters.length > 0

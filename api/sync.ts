@@ -1,6 +1,7 @@
 import { verifyToken } from '@clerk/backend';
 import { Redis as UpstashRedis } from '@upstash/redis';
 import { Redis as ioredis } from 'ioredis';
+import {mergeHistory,newerValue,SYNC_CAS_LUA} from '../shared/cloud-merge.js';
 import LZString from 'lz-string';
 const { compress, decompress } = LZString;
 
@@ -100,6 +101,24 @@ const TTL_SECONDS = 60 * 60 * 24 * 30; // 30 days
 const setWithTTL = async (key: string, value: string) => {
   await dbClient.set(key, value, { EX: TTL_SECONDS });
 };
+
+// Compare-and-set the compressed legacy value: concurrent devices retry against
+// the latest value rather than performing a read/merge/write that loses updates.
+async function mergeAccountValue(key: string, incoming: unknown, history: boolean) {
+  for (let attempt=0;attempt<12;attempt++) {
+    const raw = await dbClient.get(key);
+    const previous = typeof raw==='string' ? raw : raw==null ? '' : JSON.stringify(raw);
+    const text = previous ? decompress(previous) : null;
+    const current = text ? JSON.parse(text) : null;
+    const value = history ? mergeHistory(incoming,current) : newerValue(current,incoming);
+    const next = compress(JSON.stringify(value));
+    const saved = tcpClient
+      ? await tcpClient.eval(SYNC_CAS_LUA,1,key,previous,next)
+      : await restClient!.eval(SYNC_CAS_LUA,[key],[previous,next]);
+    if (Number(saved)===1) return;
+  }
+  throw new Error('Cloud data changed repeatedly. Please retry sync.');
+}
 
 export default async function handler(req: any, res: any) {
   // Set CORS / security headers
@@ -224,6 +243,10 @@ export default async function handler(req: any, res: any) {
           const fullKey = `${keyPrefix}${strippedKey}`;
           if (value === null) {
             await dbClient.del(fullKey);
+            continue;
+          }
+          if (strippedKey==='endocrine_essay_quiz_history' || strippedKey.startsWith(`asu_quiz_session:${userId}:`)) {
+            await mergeAccountValue(fullKey,value,strippedKey==='endocrine_essay_quiz_history');
             continue;
           }
           const compressed = compress(JSON.stringify(value));

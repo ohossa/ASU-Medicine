@@ -3,6 +3,7 @@ Install test-only dependencies with: python3 -m pip install 'fakeredis[lua]'
 This script never connects to hosted Redis or reads credentials.
 """
 import json,re,unittest
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 import fakeredis
 SCRIPT=re.search(r'export const AWARD_LUA\s*=\s*`(.*?)`;',Path('server/learning-store.ts').read_text(),re.S).group(1)
@@ -15,6 +16,14 @@ class LedgerTests(unittest.TestCase):
   return json.loads(self.r.eval(SCRIPT,8,*self.keys,json.dumps([row]),day+'T10:00:00Z',day,json.dumps(self.profile),yesterday,'3','student'))
  def test_retries_never_duplicate_rewards(self):
   self.assertEqual(self.award(),{'personal':10,'competitive':10});self.assertEqual(self.award(),{'personal':0,'competitive':0});self.assertEqual(json.loads(self.r.get('profile'))['xp'],10)
+ def test_phone_and_computer_race_awards_once(self):
+  with ThreadPoolExecutor(max_workers=8) as pool:
+   results=list(pool.map(lambda _:self.award('same-account-question'),range(16)))
+  self.assertEqual(sum(r['personal'] for r in results),10)
+  self.assertEqual(sum(r['competitive'] for r in results),10)
+  self.assertEqual(json.loads(self.r.get('profile'))['xp'],10)
+  self.assertEqual(self.r.scard('awarded'),1)
+  self.assertEqual(self.r.hlen('entries'),1)
  def test_essays_only_personal(self):
   self.award('essay',15,0);self.assertEqual(self.r.zscore('year-rank','student'),0);self.assertEqual(json.loads(self.r.get('profile'))['xp'],15)
  def test_wrong_then_correct_receives_reward_once(self):

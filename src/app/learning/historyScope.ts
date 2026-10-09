@@ -7,3 +7,5 @@ export function setHistoryAccount(id: string | null) {
 export function historyStorageKey(id: string | null | undefined = account) {
   return id === undefined ? HISTORY_WIRE_KEY : `asu_history:${id ?? "guest"}`;
 }
+
+export function historyAccount() { return account; }

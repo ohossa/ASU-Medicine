@@ -1,8 +1,9 @@
+import {useOptionalLearning} from '../app/learning/LearningProvider';
+import {useSyncedHistory} from '../app/hooks/useSyncedHistory';
 import { useState, useMemo, useEffect } from 'react';
 import { useNavigate, useParams, useLocation } from 'react-router';
 import { Lock, ArrowRight, ArrowLeft } from 'lucide-react';
 import { PortalShell } from '../app/components/PortalShell';
-import { getQuizHistoryForModule } from '../app/utils/storage';
 import { getModuleQuestionCounts, isModuleActive, SYLLABUS_MODULES } from '../app/data';
 import { applySubjectTheme } from '../app/theme/subjectThemes';
 import { CardShell } from '../components/cards/PremiumCards';
@@ -106,15 +107,20 @@ export default function YearModules({ userButton }: YearModulesProps) {
 
   const sem = semestersData[activeTab] || { label: '', stats: '', modules: [] };
 
+  const history = useSyncedHistory();
+  const learning = useOptionalLearning();
   // Helper to calculate progress dynamically using localStorage quiz history
   const getModuleProgress = (moduleCode: string) => {
-    const history = getQuizHistoryForModule(moduleCode);
+    const moduleHistory = history.filter(h=>h.moduleCode===moduleCode);
     const attemptedIds = new Set<string | number>();
-    history.forEach(h => {
+    moduleHistory.forEach(h => {
       if (h.questionIds) {
         h.questionIds.forEach(id => attemptedIds.add(id));
       }
     });
+    for (const entry of learning?.data?.entries??[]) {
+      if (entry.moduleCode===moduleCode) attemptedIds.add(entry.questionId.split('/')[0]);
+    }
     const counts = getModuleQuestionCounts(moduleCode);
     return {
       answered: Math.min(attemptedIds.size, counts.totalCount),

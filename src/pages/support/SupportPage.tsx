@@ -56,8 +56,6 @@ const FAQs = [
 export default function SupportPage() {
   const [ar, setAr] = useState(false),
     [method, setMethod] = useState<Method>("instapay"),
-    [amount, setAmount] = useState<number | "custom" | null>(null),
-    [custom, setCustom] = useState(""),
     [status, setStatus] = useState("");
   const t = (en: string, arabic: string) => (ar ? arabic : en);
   async function copy(value: string, label: string) {
@@ -252,54 +250,11 @@ export default function SupportPage() {
             <div className="support-payment-content">
               {method !== "card" && (
                 <>
-                  <fieldset className="support-amounts">
-                    <legend>
-                      {t(
-                        "Suggested contribution (EGP)",
-                        "مبلغ مقترح (بالجنيه المصري)",
-                      )}
-                    </legend>
-                    <div>
-                      {[25, 50, 100].map((n) => (
-                        <button
-                          type="button"
-                          key={n}
-                          aria-label={`${n} EGP`}
-                          aria-pressed={amount === n}
-                          onClick={() => setAmount(n)}
-                        >
-                          {n}
-                        </button>
-                      ))}
-                      <button
-                        type="button"
-                        aria-pressed={amount === "custom"}
-                        onClick={() => setAmount("custom")}
-                      >
-                        {t("Other amount", "مبلغ آخر")}
-                      </button>
-                    </div>
-                    {amount === "custom" && (
-                      <label className="support-custom-label">
-                        {t("Suggested amount in EGP", "المبلغ المقترح بالجنيه")}
-                        <input
-                          type="number"
-                          inputMode="decimal"
-                          min="1"
-                          step="1"
-                          value={custom}
-                          onChange={(e) => setCustom(e.target.value)}
-                          placeholder="75"
-                        />
-                      </label>
-                    )}
-                    <p>
-                      {t(
-                        "These are suggestions only. Enter your chosen amount in the payment app.",
-                        "هذه اقتراحات فقط. أدخل المبلغ الذي تختاره في تطبيق الدفع.",
-                      )}
-                    </p>
-                  </fieldset>
+                  <p className="support-payment-note">
+                    <HeartHandshake size={18} aria-hidden="true" />
+                    {t("Choose any amount in your payment app. Every contribution helps.",
+                       "اختر أي مبلغ في تطبيق الدفع. كل مساهمة تساعد.")}
+                  </p>
                   <div className="support-recipient">
                     <span>{t("Recipient", "المستفيد")}</span>
                     <strong>{SUPPORT.recipient}</strong>

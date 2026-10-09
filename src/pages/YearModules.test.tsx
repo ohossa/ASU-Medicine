@@ -5,7 +5,7 @@ import YearModules from './YearModules';
 
 // Mock storage
 vi.mock('../app/utils/storage', () => ({
-  getQuizHistoryForModule: () => [],
+  getQuizHistory: () => [],
 }));
 
 // Mock Clerk

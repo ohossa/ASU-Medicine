@@ -147,10 +147,19 @@ export function LearningProvider({ children }: { children: ReactNode }) {
     }
   }, [userId, isLoaded, refresh, retry]);
   useEffect(() => {
-    const online = () => void retry();
-    window.addEventListener("online", online);
-    return () => window.removeEventListener("online", online);
-  }, [retry]);
+    if (!isLoaded || !userId) return;
+    const sync = () => { if (!document.hidden) void retry(); };
+    window.addEventListener("online", sync);
+    window.addEventListener("focus", sync);
+    document.addEventListener("visibilitychange", sync);
+    const interval = setInterval(sync, 60000);
+    return () => {
+      window.removeEventListener("online", sync);
+      window.removeEventListener("focus", sync);
+      document.removeEventListener("visibilitychange", sync);
+      clearInterval(interval);
+    };
+  }, [retry, isLoaded, userId]);
   const submit = useCallback(
     (submission: LearningSubmission) => {
       if (!userId) return;
@@ -216,3 +225,5 @@ export function useLearning() {
   if (!c) throw new Error("LearningProvider missing");
   return c;
 }
+
+export function useOptionalLearning() { return useContext(LearningContext); }

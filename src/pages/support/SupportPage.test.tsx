@@ -40,21 +40,16 @@ describe("Support ASUCodes", () => {
     fireEvent.click(screen.getByRole("button", { name: "العربية" }));
     expect(screen.getByRole("table", { name: "تكاليف التشغيل الشهرية" })).toHaveTextContent("$50.83");
   });
-  it("does not preselect an amount or pretend to prefill the payment link", () => {
+  it("leaves the amount to the payment app for every method", () => {
     render(<SupportPage />);
-    for (const b of screen.getAllByRole("button", {
-      name: /^(25|50|100) EGP$/,
-    }))
-      expect(b).toHaveAttribute("aria-pressed", "false");
-    fireEvent.click(screen.getByRole("button", { name: "50 EGP" }));
-    expect(screen.getByRole("button", { name: "50 EGP" })).toHaveAttribute(
-      "aria-pressed",
-      "true",
-    );
-    expect(screen.getByRole("link", { name: /Open InstaPay/ })).toHaveAttribute(
-      "href",
-      SUPPORT.instapayUrl,
-    );
+    expect(screen.queryByRole("button", {name:"50 EGP"})).toBeNull();
+    expect(screen.getByText("Choose any amount in your payment app. Every contribution helps.")).toBeInTheDocument();
+    fireEvent.click(screen.getByRole("button", {name:/Vodafone Cash/}));
+    expect(screen.queryByRole("spinbutton")).toBeNull();
+    expect(screen.getByText("Choose any amount in your payment app. Every contribution helps.")).toBeInTheDocument();
+    fireEvent.click(screen.getByRole("button", {name:/Card & Apple Pay/}));
+    expect(screen.queryByRole("spinbutton")).toBeNull();
+    expect(screen.queryByText(/Suggested contribution/)).toBeNull();
   });
   it("copies the IPA with accessible feedback and handles denied clipboard access", async () => {
     const writeText = vi.fn().mockResolvedValue(undefined);
@@ -92,17 +87,5 @@ describe("Support ASUCodes", () => {
     fireEvent.click(screen.getByRole("button", { name: "العربية" }));
     expect(container.querySelector("main")).toHaveAttribute("dir", "rtl");
     expect(screen.getByText(SUPPORT.ipa)).toHaveAttribute("dir", "ltr");
-  });
-  it("allows a custom amount but treats it as guidance only", () => {
-    render(<SupportPage />);
-    fireEvent.click(screen.getByRole("button", { name: "Other amount" }));
-    fireEvent.change(screen.getByLabelText("Suggested amount in EGP"), {
-      target: { value: "75" },
-    });
-    expect(screen.getByLabelText("Suggested amount in EGP")).toHaveValue(75);
-    expect(screen.getByRole("link", { name: /Open InstaPay/ })).toHaveAttribute(
-      "href",
-      SUPPORT.instapayUrl,
-    );
   });
 });

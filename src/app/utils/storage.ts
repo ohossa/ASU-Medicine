@@ -68,6 +68,7 @@ export function saveQuizResult(result: Omit<QuizResult, 'id' | 'date'>): QuizRes
 export function clearQuizHistory(): void {
   localStorage.removeItem(historyStorageKey());
   triggerCloudSync();
+  window.dispatchEvent(new Event("asu-history-updated"));
 }
 
 const FLAGGED_KEY = 'asu_flagged_questions';

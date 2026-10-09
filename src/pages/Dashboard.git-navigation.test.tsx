@@ -10,7 +10,7 @@ vi.mock('../app/components/PortalShell', () => ({ PortalShell: ({ children }: an
 vi.mock('../components/cards/PremiumCards', () => ({ CardShell: ({ children, onClick }: any) => <article onClick={onClick}>{children}</article> }));
 vi.mock('../app/theme/subjectThemes', () => ({ applySubjectTheme: vi.fn(() => ({ accent: '#a855f7' })) }));
 vi.mock('../app/lib/pulseEngine', () => ({ pulse: { burst: vi.fn() } }));
-vi.mock('../app/utils/storage', () => ({ getQuizHistoryForModule: () => [] }));
+vi.mock('../app/utils/storage', () => ({ getQuizHistory: () => [] }));
 
 it('centers the saved year and responds to a changed account year',()=>{
  const {rerender}=render(<MemoryRouter><Dashboard studentYear={2}/></MemoryRouter>);

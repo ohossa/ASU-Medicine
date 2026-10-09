@@ -1,3 +1,7 @@
+import {useSyncedHistory} from '../hooks/useSyncedHistory';
+import {useOptionalLearning} from '../learning/LearningProvider';
+import {moduleProgress} from '../learning/progress';
+import {historyAccount} from '../learning/historyScope';
 import {TopicPracticePicker} from './TopicPracticePicker';
 import {latestTopicResult} from '../learning/customPractice';
 import { ShuffleSwitch } from '../preferences/ShuffleSwitch';
@@ -29,8 +33,6 @@ import { motion, AnimatePresence } from 'motion/react';
 import type { ChapterData, SubjectData, SubjectColor, Question } from '../types';
 import { subjectStyles } from '../types';
 import { useLanguage } from '../hooks/useLanguage';
-import { getQuizHistory } from '../utils/storage';
-import type { QuizResult } from '../utils/storage';
 import { FlowBreadcrumbs } from './FlowBreadcrumbs';
 import { applySubjectTheme } from '../theme/subjectThemes';
 
@@ -203,52 +205,22 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, breadcrumbPath
     return f ? (isRTL ? f.ar : f.en) : key;
   };
 
-  const [history, setHistory] = useState<QuizResult[]>([]);
+  const history = useSyncedHistory();
+  const learning = useOptionalLearning();
   const [trackerData, setTrackerData] = useState<Record<number, ChapterState>>({});
 
-  /* Exam history */
+  // Read this account and module only; cloud hydration may arrive after mount.
+  const trackerAccount=historyAccount();
   useLayoutEffect(() => {
-    try {
-      const all = getQuizHistory();
-      // eslint-disable-next-line react-hooks/set-state-in-effect -- data hydration from localStorage must happen before paint
-      setHistory((Array.isArray(all) ? all : []).filter((r): r is QuizResult => r !== null && typeof r === 'object'));
-    } catch {
-      setHistory([]);
-    }
-  }, []);
-
-  /* Syllabus tracker data: scan all asu_study_tracker_* keys, use the first map containing this chapter */
-  useLayoutEffect(() => {
-    if (typeof window === 'undefined') return;
-    try {
-      for (let i = 0; i < localStorage.length; i++) {
-        const key = localStorage.key(i);
-        if (!key || !key.startsWith('asu_study_tracker_')) continue;
-        const raw = localStorage.getItem(key);
-        if (!raw) continue;
-        let parsed: Record<string, ChapterState>;
-        try {
-          parsed = JSON.parse(raw) as Record<string, ChapterState>;
-        } catch {
-          continue;
-        }
-        const entry = parsed?.[String(chapter.id)];
-        if (entry && typeof entry === 'object') {
-          const map: Record<number, ChapterState> = {};
-          for (const [k, v] of Object.entries(parsed)) {
-            const id = Number(k);
-            if (Number.isFinite(id) && v && typeof v === 'object') map[id] = v;
-          }
-          // eslint-disable-next-line react-hooks/set-state-in-effect -- data hydration from localStorage must happen before paint
-          setTrackerData(map);
-          return;
-        }
-      }
-      setTrackerData({});
-    } catch {
-      setTrackerData({});
-    }
-  }, [chapter.id]);
+    const update=()=>{
+      try {
+        setTrackerData(JSON.parse(localStorage.getItem(`asu_study_tracker:${trackerAccount??'guest'}:${moduleCode}`)??'{}'));
+      } catch { setTrackerData({}); }
+    };
+    update();
+    window.addEventListener('storage',update);
+    return()=>window.removeEventListener('storage',update);
+  },[trackerAccount,moduleCode,chapter.id]);
 
   /* Per-subject syllabus progress % */
   const syllabusProgress = useMemo(() => {
@@ -413,7 +385,9 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, breadcrumbPath
               const isActive = subject.questions.length > 0;
               const progress = syllabusProgress[isLectureBased ? subject.name : subject.id] ?? 0;
               const latest = latestResults[isLectureBased ? subject.name : subject.id] ?? null;
-              const isCompleted = latest !== null;
+              const cloudProgress = moduleProgress(moduleCode??'',subject.questions,learning?.data?.entries??[]);
+              const isCompleted = cloudProgress.attempted===subject.questions.length && subject.questions.length>0;
+              const hasPractice = isCompleted || latest!==null;
 
               return (
                 <motion.button
@@ -441,10 +415,10 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, breadcrumbPath
                     <span className={`flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br ${subAccent.gradient} border ${subAccent.border}`}>
                       <Icon size={22} className={subAccent.text} />
                     </span>
-                    {isCompleted && (
+                    {hasPractice && (
                       <span className="inline-flex items-center gap-1 rounded-full bg-physiology/10 px-2 py-0.5 text-[10px] font-medium text-physiology">
                         <CheckCircle size={11} />
-                        {latest?.isCustom ? (isRTL?'تم التدريب':'Practiced') : label('completed')}
+                        {isCompleted ? label('completed') : (isRTL?'تم التدريب':'Practiced')}
                       </span>
                     )}
                   </div>
@@ -460,6 +434,11 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, breadcrumbPath
                     <HelpCircle size={11} />
                     {isActive ? `${subject.questions.length} ${label('questions')}` : label('comingSoon')}
                   </span>
+
+                  {cloudProgress.attempted>0 && <div className="mt-3 text-xs text-muted-foreground">
+                    <span className="tabular-nums">{cloudProgress.attempted}/{cloudProgress.total} {isRTL?'تمت الإجابة':'answered'}</span>
+                    <progress className="mt-2 block h-1 w-full accent-emerald-500" value={cloudProgress.attempted} max={cloudProgress.total} aria-label={isRTL?'الأسئلة المُجاب عنها':'Questions answered'} />
+                  </div>}
 
                   {/* Syllabus progress */}
                   {chapter.bankSection !== 'past-exams' && <div className="mt-4 w-full">

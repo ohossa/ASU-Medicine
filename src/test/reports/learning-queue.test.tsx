@@ -116,3 +116,12 @@ it('shows only server-confirmed positive XP and never invents points for duplica
   await waitFor(() => expect(screen.getByText('0 pending')).toBeInTheDocument());
   expect(screen.queryByText('+0 XP')).not.toBeInTheDocument();
 });
+it('refreshes server progress when returning to an already-open tab', async()=>{
+ let xp=0;
+ vi.stubGlobal('fetch',vi.fn(async()=>({ok:true,json:async()=>({profile:{xp},entries:[],leaderboard:[]})})));
+ render(<LearningProvider><Harness/></LearningProvider>);
+ await screen.findByText('0');xp=10;
+ fireEvent(window,new Event('focus'));
+ await screen.findByText('10');
+ expect(screen.queryByText('+10 XP')).not.toBeInTheDocument();
+});
