@@ -1,0 +1,119 @@
+{
+  "sourceRecords": 2152,
+  "sourceQuestions": 2137,
+  "unlinkedHistoricalAnswers": 15,
+  "decisionCounts": {
+    "accept": 1501,
+    "correct": 223,
+    "exclude": 428,
+    "needs_review": 0
+  },
+  "recordedKeyMismatches": 17,
+  "derivedMissingAnswerOccurrences": 1243,
+  "releasedOccurrences": 1724,
+  "uniqueQuestions": 1678,
+  "duplicatesConsolidated": 46,
+  "questionTypes": {
+    "mcq": 1215,
+    "essay": 463
+  },
+  "chapterTopics": [
+    {
+      "chapter": "Cell Chemistry & Biophysics",
+      "topics": [
+        {
+          "topic": "Amino acids and protein structure",
+          "questions": 463
+        },
+        {
+          "topic": "Hemoglobin and heme",
+          "questions": 13
+        },
+        {
+          "topic": "Iron metabolism",
+          "questions": 4
+        },
+        {
+          "topic": "Carbohydrate chemistry",
+          "questions": 129
+        },
+        {
+          "topic": "Lipid chemistry and membranes",
+          "questions": 146
+        },
+        {
+          "topic": "Vitamins and coenzymes",
+          "questions": 72
+        },
+        {
+          "topic": "Nucleotides and nucleic acids",
+          "questions": 53
+        },
+        {
+          "topic": "DNA replication",
+          "questions": 26
+        },
+        {
+          "topic": "Transcription",
+          "questions": 34
+        },
+        {
+          "topic": "Translation",
+          "questions": 55
+        },
+        {
+          "topic": "Regulation of gene expression",
+          "questions": 21
+        }
+      ]
+    },
+    {
+      "chapter": "Enzymes, Bioenergetics & Metabolism",
+      "topics": [
+        {
+          "topic": "Enzymes and regulation",
+          "questions": 242
+        },
+        {
+          "topic": "Clinical enzyme markers",
+          "questions": 21
+        },
+        {
+          "topic": "Glycolysis and pyruvate metabolism",
+          "questions": 32
+        },
+        {
+          "topic": "Carbohydrate metabolism and glucose homeostasis",
+          "questions": 106
+        },
+        {
+          "topic": "Glycogen metabolism",
+          "questions": 7
+        },
+        {
+          "topic": "Pentose phosphate pathway",
+          "questions": 4
+        },
+        {
+          "topic": "TCA cycle and bioenergetics",
+          "questions": 90
+        },
+        {
+          "topic": "Amino acid and nitrogen metabolism",
+          "questions": 108
+        },
+        {
+          "topic": "Lipid metabolism",
+          "questions": 52
+        }
+      ]
+    }
+  ],
+  "bankSha256": "196ed7d62d7ae703f81cee61731e677d569e3c779baeca94c33fed2e15acbe2e",
+  "limitations": [
+    "Nonblind AI review using opened sources; no independent clinician certification.",
+    "Original PDFs were not inspected; repairs use the designated TXT and its page transcripts.",
+    "No current course textbook was designated, so complete source scope is retained, including advanced metabolism."
+  ],
+  "publication": "Local candidate; no push or deployment."
+}

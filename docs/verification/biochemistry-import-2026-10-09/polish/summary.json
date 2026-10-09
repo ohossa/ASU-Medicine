@@ -1,0 +1,38 @@
+{
+  "reviewed": 1678,
+  "counts": {
+    "polished": 425,
+    "unchanged": 1242,
+    "exclude": 7,
+    "correct": 4
+  },
+  "explanationsChanged": 428,
+  "explanationsChangedByType": {
+    "mcq": 427,
+    "essay": 1
+  },
+  "finalQuestions": 1671,
+  "finalTypes": {
+    "mcq": 1208,
+    "essay": 463
+  },
+  "excludedIds": [
+    "IBM1-BIO-DRV-20260921-00028",
+    "IBM1-BIO-DRV-20260921-01346",
+    "IBM1-BIO-DRV-20260921-02066",
+    "IBM1-BIO-DRV-20260921-00478",
+    "IBM1-BIO-DRV-20260921-00429",
+    "IBM1-BIO-DRV-20260921-00158",
+    "IBM1-BIO-DRV-20260921-01437"
+  ],
+  "correctedIds": [
+    "IBM1-BIO-DRV-20260921-01592",
+    "IBM1-BIO-DRV-20260921-01242",
+    "IBM1-BIO-DRV-20260921-00271",
+    "IBM1-BIO-W1-Q08"
+  ],
+  "beforeSha256": "196ed7d62d7ae703f81cee61731e677d569e3c779baeca94c33fed2e15acbe2e",
+  "afterSha256": "14d2214d7dda4e2feac521cbb14d616ba48bcc33938220924b57e2ad630453ef",
+  "method": "Read every released stem, alternatives, explanation and model answer for a focused nonblind consistency recheck; reused prior opened evidence and opened targeted sources for uncertainty. Not a new independent clinical review.",
+  "publication": "Local only; no push or deployment."
+}

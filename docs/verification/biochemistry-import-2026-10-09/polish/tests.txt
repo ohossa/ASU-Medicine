@@ -1,0 +1,12 @@
+
+> replicated-quiz-app@0.0.1 test
+> vitest run
+
+
+ RUN  v4.1.11 /private/tmp/asu-ibm-2026-10-09-release
+
+
+ Test Files  63 passed (63)
+      Tests  451 passed (451)
+   Start at  11:46:42
+   Duration  8.06s (transform 48.28s, setup 3.73s, import 12.08s, tests 15.02s, environment 15.79s)
