@@ -1,3 +1,5 @@
+import { committedAnswerValue } from '../learning/committedAnswer';
+import { parseQuestionTable } from '../utils/questionTable';
 import { ShuffleSwitch } from '../preferences/ShuffleSwitch';
 import { ReportQuestionButton } from '../reports/ReportQuestion';
 import React, { useState, useEffect, useLayoutEffect, useRef } from 'react';
@@ -38,6 +40,8 @@ import { AIChatPanel } from './AIChatPanel';
 import { FormattedAnswer } from './FormattedAnswer';
 
 interface Props {
+  childAnchor?:string;
+  onAnswer?: (question: Question, answer: QuizAnswer) => void;
   chapter: ChapterData;
   subject: SubjectData | null;
   questions: Question[];
@@ -134,7 +138,7 @@ const wordCount = (s: string) => (s.trim() ? s.trim().split(/\s+/).length : 0);
 
 /* ------------------------------ Main component ----------------------------- */
 
-export function QuizInterface({ chapter, subject, questions, onBack, onFinish, userButton, savedSession }: Props & { savedSession?: QuizSessionSave }) {
+export function QuizInterface({ chapter, subject, questions, onBack, onFinish, userButton, savedSession,childAnchor,onAnswer }: Props & { savedSession?: QuizSessionSave }) {
   const { t, language } = useLanguage();
   const isRTL = language === 'ar';
   const { getToken } = useAuth();
@@ -188,6 +192,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
   const lastFocusedSubQ = useRef<string | null>(null);
   const question = questions[current];
   const total = questions.length;
+  useEffect(()=>{if(!childAnchor)return;const node=[...document.querySelectorAll<HTMLElement>('[data-case-child]')].find(n=>n.dataset.caseChild===childAnchor);node?.focus({preventScroll:true});node?.scrollIntoView({block:'center',behavior:'instant'});},[childAnchor,current]);
   
   const subjectColor: SubjectColor = question?.subjectColor ?? 'clinical';
   const style = subjectStyles[subjectColor];
@@ -202,7 +207,19 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
         : checkAnswerCorrect(question, answers[current])
   ) : false;
 
-  /* Sound effect + pulse + confetti on answer reveal (once per question) */
+  // Submit committed answer changes early; the server owns grading and repeat-award checks.
+  const submittedAnswers = useRef(new Map(Object.entries(savedSession?.answers ?? {}).map(([index,value])=>[Number(index),JSON.stringify(questions[Number(index)] ? committedAnswerValue(questions[Number(index)],value) : value)])));
+  useEffect(()=>{
+    if(!question || !onAnswer)return;
+    const value=committedAnswerValue(question,answers[current]) as QuizAnswer | undefined;
+    if(value===undefined)return;
+    const signature=JSON.stringify(value);
+    if(submittedAnswers.current.get(current)===signature)return;
+    submittedAnswers.current.set(current,signature);
+    onAnswer(question,value);
+  },[answers,current,question,onAnswer]);
+
+  /* Sound effect + pulse on answer reveal (once per question) */
   const playedForQuestions = useRef<Set<number>>(
     (() => {
       const set = new Set<number>();
@@ -285,7 +302,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
       const d = quizDataRef.current;
       saveQuizSession({
         chapterId: chapter.id,
-        subjectName: subject?.name ?? 'all',
+        subjectName: subject?.sessionKey ?? subject?.name ?? 'all',
         current: d.current,
         answers: d.answers,
         elapsedSeconds: d.elapsedSeconds,
@@ -304,7 +321,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
         if (!d.finished) {
           saveQuizSession({
             chapterId: chapter?.id ?? -1,
-            subjectName: subject?.name ?? 'all',
+            subjectName: subject?.sessionKey ?? subject?.name ?? 'all',
             current: d.current,
             answers: d.answers,
             elapsedSeconds: d.elapsedSeconds,
@@ -318,7 +335,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
         }
       }
     };
-  }, [current, answers, flagged, timerMode, showEssayAnswer, chapter?.id, subject?.name, saveQuizSession, questionIds, questionVersions]);
+  }, [current, answers, flagged, timerMode, showEssayAnswer, chapter?.id, subject?.name, subject?.sessionKey, saveQuizSession, questionIds, questionVersions]);
 
   const saveAndNavigate = React.useCallback((destination: () => void) => {
     if (autoSaveTimerRef.current) {
@@ -329,7 +346,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
     if (!d.finished) {
       saveQuizSession({
         chapterId: chapter?.id ?? -1,
-        subjectName: subject?.name ?? 'all',
+        subjectName: subject?.sessionKey ?? subject?.name ?? 'all',
         current: d.current,
         answers: d.answers,
         elapsedSeconds: d.elapsedSeconds,
@@ -342,7 +359,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
       });
     }
     destination();
-  }, [chapter?.id, subject?.name, saveQuizSession, questionIds, questionVersions]);
+  }, [chapter?.id, subject?.name, subject?.sessionKey, saveQuizSession, questionIds, questionVersions]);
   const handleBack = React.useCallback(() => saveAndNavigate(onBack), [saveAndNavigate, onBack]);
   useEffect(() => {
     const saveBeforeRefresh = () => saveAndNavigate(() => {});
@@ -520,22 +537,12 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
     fallbackClassName: string = "text-sm font-medium text-gray-700 dark:text-gray-200 leading-relaxed mb-4 whitespace-pre-wrap text-left"
   ) => {
     if (!text) return null;
-    if (text.includes('|')) {
-      const lines = text.split('\n').map((l) => l.trim()).filter(Boolean);
-      const rows = lines
-        .filter((line) => !line.includes('---') && line.includes('|'))
-        .map((line) => {
-          const parts = line.split('|');
-          if (parts[0] === '') parts.shift();
-          if (parts[parts.length - 1] === '') parts.pop();
-          return parts.map((cell) => cell.trim());
-        });
-
-      if (rows.length > 0) {
-        const headers = rows[0];
-        const bodyRows = rows.slice(1);
-
+    const table = parseQuestionTable(text);
+    if (table) {
+        const { headers, rows: bodyRows } = table;
         return (
+          <>
+          {table.before && <div className={`${fallbackClassName} min-w-0 [overflow-wrap:anywhere]`}>{table.before}</div>}
           <div className="overflow-x-auto my-4 rounded-2xl border border-white/[0.08] bg-white/[0.02] text-left">
             <table className="w-full text-left border-collapse text-xs sm:text-sm">
               <thead>
@@ -560,11 +567,12 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
               </tbody>
             </table>
           </div>
+          {table.after && <div className={`${fallbackClassName} min-w-0 [overflow-wrap:anywhere]`}>{table.after}</div>}
+          </>
         );
-      }
     }
     return (
-      <div className={fallbackClassName}>
+      <div className={`${fallbackClassName} min-w-0 [overflow-wrap:anywhere]`}>
         {text}
       </div>
     );
@@ -617,7 +625,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                   String.fromCharCode(65 + i)
                 )}
               </span>
-              <span className="text-sm leading-relaxed">{opt}</span>
+              <span className="min-w-0 whitespace-pre-wrap text-sm leading-relaxed [overflow-wrap:anywhere]">{opt}</span>
             </motion.button>
           );
         })}
@@ -679,7 +687,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
             const nextDrafts = { ...essayDrafts, [current]: val };
             setEssayDrafts(nextDrafts);
             // Immediate local save (no cloud, no debounce)
-            saveLocalDrafts(chapter?.id ?? -1, subject?.name ?? 'all', nextDrafts);
+            saveLocalDrafts(chapter?.id ?? -1, subject?.sessionKey ?? subject?.name ?? 'all', nextDrafts);
             onChange({ text: val, selfGrade: asEssayAnswer(value)?.selfGrade });
           }}
           rows={7}
@@ -921,7 +929,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
               : asEssayAnswer(subVal)?.selfGrade !== undefined;
 
             return (
-              <div key={subQ.id} className="border-t border-gray-200 dark:border-white/[0.06] pt-5 text-start">
+              <div key={subQ.id} data-case-child={subQ.id} tabIndex={-1} className="border-t border-gray-200 dark:border-white/[0.06] pt-5 text-start">
                 {(() => {
                   const cleanText = (subQ.text ?? '')
                     .replace(/^\[TYPE:\s*\w+\]\s*/i, '')
@@ -1193,7 +1201,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
             </button>
             <div className="min-w-0">
               <p className="truncate text-sm font-semibold text-gray-900 dark:text-white">{chapter.title}</p>
-              <p className={`truncate text-xs ${style.text} opacity-80`}>{subject?.name ?? 'General'}</p>
+              <p className={`truncate text-xs ${style.text} opacity-80`}>{question?.practiceTopic?.title ?? subject?.name ?? 'General'}</p>
             </div>
           </div>
 
@@ -1266,21 +1274,6 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                 onChangeMode={setTimerMode}
                 onToggleMute={toggleMute}
               />
-              <div className="mt-3 border-t border-gray-200 dark:border-white/[0.08] pt-3">
-                <p className="mb-1.5 font-semibold text-gray-900 dark:text-white/80">Star Legend</p>
-                <div className="flex items-center gap-3 py-0.5 text-gray-500 dark:text-white/50">
-                  <span className="text-amber-500 dark:text-amber-400 font-bold">★</span>
-                  <span>Repeated 2-3 times</span>
-                </div>
-                <div className="flex items-center gap-3 py-0.5 text-gray-500 dark:text-white/50">
-                  <span className="text-amber-500 dark:text-amber-400 font-bold">★★</span>
-                  <span>Repeated 4-5 times</span>
-                </div>
-                <div className="flex items-center gap-3 py-0.5 text-gray-500 dark:text-white/50">
-                  <span className="text-amber-500 dark:text-amber-400 font-bold">★★★</span>
-                  <span>Repeated 6+ times</span>
-                </div>
-              </div>
             </motion.div>
         )}
       </AnimatePresence>

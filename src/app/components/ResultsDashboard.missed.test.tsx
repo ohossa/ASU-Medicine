@@ -18,3 +18,8 @@ describe('results missed-question action',()=>{
  it('passes only missed questions to a fresh practice callback',()=>{const retry=vi.fn();render(<ResultsDashboard {...props} onRetryMissed={retry}/>);fireEvent.click(screen.getByRole('button',{name:/Retry missed questions.*1/i}));expect(retry).toHaveBeenCalledExactlyOnceWith([q]);});
  it('does not offer an empty retry when all answers are correct',()=>{render(<ResultsDashboard {...props} answers={{0:0}} onRetryMissed={vi.fn()}/>);expect(screen.queryByRole('button',{name:/Retry missed questions/i})).not.toBeInTheDocument();});
 });
+it('shows a frozen per-topic breakdown and counts case parts consistently',()=>{
+ const oral={...q,practiceTopic:{key:'oral',title:'Oral cavity',subjectName:'Anatomy'}};
+ render(<ResultsDashboard {...props} questions={[oral]} answers={{0:0}} topicResults={[{key:'oral',title:'Oral cavity',subjectName:'Anatomy',correct:9,total:11,pct:82}]} originalScore={{correct:9,total:11,pct:82}}/>);
+ expect(screen.getByRole('region',{name:'Results by topic'})).toHaveTextContent('Oral cavity');expect(screen.getByRole('region',{name:'Results by topic'})).toHaveTextContent('9 / 11');
+});

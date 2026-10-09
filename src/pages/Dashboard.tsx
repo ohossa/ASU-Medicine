@@ -1,7 +1,8 @@
 import { useCallback, useRef, useState, useEffect } from 'react';
 import { useNavigate } from 'react-router';
+import { useLanguage } from '../app/hooks/useLanguage';
 import {
-  Activity, Heart, Calculator, Search, GraduationCap,
+  Activity, HeartHandshake, Calculator, Search, GraduationCap,
   Lock, ArrowRight,
 } from 'lucide-react';
 import { PortalShell } from '../app/components/PortalShell';
@@ -36,10 +37,9 @@ const YEARS: Year[] = [
 
 const TOOLS = [
   { title: "Full History",     icon: Activity,      accent: "#22c55e", badge: null,        sub: "View all your past quiz sessions and results", route: "/history" },
-  { title: "Case Solver",      icon: Heart,         accent: "#a855f7", badge: "New Game",  sub: "Solve randomized clinical cases for fun", route: "/case-solver" },
   { title: "Marks Calculator", icon: Calculator,    accent: "#f87171", badge: "Predictor", sub: "Calculate requirements and target scores", route: "/marks-calculator" },
   { title: "Question Search",  icon: Search,        accent: "#2dd4bf", badge: "Search",    sub: "Search text in all database questions and answers", route: "/question-search" },
-  { title: "Study Tracker",    icon: GraduationCap, accent: "#22c55e", badge: "Syllabus",  sub: "Track syllabus and lecture study progress", route: "/study-tracker" },
+  { title: "My Progress",    icon: GraduationCap, accent: "#22c55e", badge: "Syllabus",  sub: "Progress, performance, activity and rewards", route: "/learning" },
 ];
 
 /* Spring-feel curve for carousel transitions */
@@ -53,6 +53,7 @@ interface DashboardProps {
 
 export default function Dashboard({ userButton, onOpenTrackerSelector, studentYear }: DashboardProps) {
   const navigate = useNavigate();
+  const { language } = useLanguage();
   const [activeIdx, setActiveIdx] = useState((studentYear ?? 3) - 1);
   useEffect(() => { setActiveIdx((studentYear ?? 3) - 1); }, [studentYear]);
   const dragX = useRef<number | null>(null);
@@ -285,10 +286,15 @@ export default function Dashboard({ userButton, onOpenTrackerSelector, studentYe
                     )}
                   </div>
                   <h4 className="mt-4 font-heading font-bold text-[15px]">{tool.title}</h4>
-                  <p className="mt-1 text-[12.5px] leading-relaxed text-zinc-500 dark:text-zinc-400">{tool.sub}</p>
+                  <p className="mt-1 text-[13px] leading-relaxed text-zinc-600 dark:text-zinc-400">{tool.sub}</p>
                 </button>
               );
             })}
+            <a href="/support" className="group flex items-center gap-4 sm:col-span-2 lg:col-span-4 rounded-3xl border border-zinc-200 bg-white p-5 text-left transition-colors hover:border-emerald-500/40 dark:border-white/10 dark:bg-[#141414]">
+              <span className="grid h-11 w-11 place-items-center rounded-xl bg-emerald-500/10 text-emerald-700 dark:text-emerald-300"><HeartHandshake size={20}/></span>
+              <div className="min-w-0 flex-1"><h4 className="font-heading text-[15px] font-bold">{language === 'en' ? 'Support ASUCodes' : 'دعم ASUCodes'}</h4>
+              <p className="mt-1 text-[13px] leading-relaxed text-zinc-600 dark:text-zinc-400">{language === 'en' ? 'Optional support. Help keep every question free for everyone.' : 'دعم اختياري يساعد في بقاء كل الأسئلة مجانية للجميع.'}</p></div><ArrowRight size={18} aria-hidden="true" className="shrink-0 text-zinc-500"/>
+            </a>
           </div>
         </section>
       </main>

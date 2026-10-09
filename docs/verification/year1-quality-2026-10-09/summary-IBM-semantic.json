@@ -1,0 +1,9 @@
+{
+  "original_count": 1671,
+  "candidate_questions_read": 1603,
+  "already_removed_before_this_pass": 68,
+  "corrections": 45,
+  "exclusions": 8,
+  "root_overlaps": 9,
+  "method": "Every current candidate read in bounded batches, including complete options, key, explanation and essay model; exact repeated explanation text referenced after first full reading. Nonblind AI review. Existing initial full-text evidence preserved with explicit origin; some relevant sources freshly reopened. No original PDFs re-rendered. No blanket external verification claim for unchanged questions."
+}

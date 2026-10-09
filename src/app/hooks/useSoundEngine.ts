@@ -1,31 +1,13 @@
-import { useState, useCallback, useEffect, useRef } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { play, preloadSounds } from '../lib/soundEngine';
+import { feedbackSoundEnabled, setFeedbackSoundEnabled } from '../lib/audioPolicy';
 
 export type SoundKey = 'correct' | 'wrong' | 'combo' | 'timer' | 'perfect';
 
-function getInitialMuted(): boolean {
-  try {
-    const stored = localStorage.getItem('asu_sound_muted');
-    return stored === 'true';
-  } catch { /* no-op */ }
-  return false;
-}
-
 export function useSoundEngine() {
-  const [muted, setMuted] = useState(getInitialMuted);
-  const isFirstRender = useRef(true);
+  const [muted, setMuted] = useState(() => !feedbackSoundEnabled());
 
-  useEffect(() => {
-    preloadSounds();
-  }, []);
-
-  useEffect(() => {
-    if (isFirstRender.current) {
-      isFirstRender.current = false;
-      return;
-    }
-    try { localStorage.setItem('asu_sound_muted', String(muted)); } catch { /* no-op */ }
-  }, [muted]);
+  useEffect(() => { if (!muted) preloadSounds(); }, [muted]);
 
   const trigger = useCallback(
     (key: SoundKey, volume = 0.35) => {
@@ -35,7 +17,11 @@ export function useSoundEngine() {
     [muted]
   );
 
-  const toggleMute = useCallback(() => setMuted(m => !m), []);
+  const toggleMute = useCallback(() => {
+    const next = !feedbackSoundEnabled();
+    setFeedbackSoundEnabled(next);
+    setMuted(!next);
+  }, []);
 
   return { trigger, muted, toggleMute };
 }

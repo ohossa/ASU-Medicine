@@ -1,0 +1,292 @@
+[
+  {
+    "module": "IBM-1",
+    "id": "IBM1-BIO-DRV-20260921-00981",
+    "canonicalModule": "IBM-1",
+    "canonicalId": "IBM1-BIO-DRV-20260921-00927",
+    "question_hash": "0af4c32fe8904f4a65b0a0b77360ca1696abe9d2336d49675d5f6d9852353e9b",
+    "canonical_hash": "e7a8423778d8e39b27c5a96415ed575543979e07a42baa3205bb991d2367f2ec",
+    "reason": "Same twenty-common-amino-acid completion and identical 10/18/20/22 alternatives; only number of underscore characters differs.",
+    "method": "Nonblind semantic comparison of complete candidate stems, every alternative and keyed answer, or full essay model answer and required-point rubric. Exact candidate hashes include existing contentVersion."
+  },
+  {
+    "module": "IBM-1",
+    "id": "IBM1-BIO-DRV-20260921-02125",
+    "canonicalModule": "IBM-1",
+    "canonicalId": "IBM1-BIO-DRV-20260921-01867",
+    "question_hash": "a3a0f0b5860815c5c3e18febdc647a14641ec5dcc3c2a90232f36c9ed8122f83",
+    "canonical_hash": "9969d6cba8303a859b00540fae8504cf73def4bb52eeeefee42e34ed9d334ee5",
+    "reason": "Same nitrogen-containing-compound question. Alanine is the same answer and all five molecules are identical; option order and grammar differ.",
+    "method": "Nonblind semantic comparison of complete candidate stems, every alternative and keyed answer, or full essay model answer and required-point rubric. Exact candidate hashes include existing contentVersion."
+  },
+  {
+    "module": "IBM-1",
+    "id": "IBM1-BIO-COMP-2025-Q15",
+    "canonicalModule": "IBM-1",
+    "canonicalId": "IBM1-BIO-COMP-P2-Q09",
+    "question_hash": "2692b680eb41c1a9a56ae348e7524b50df6dac8319b725cf9dcfbdfb11f8a39e",
+    "canonical_hash": "054b6724417a6d9c636345b3a922769ca1ace8b4178d9f9c5a2dec2b7a91cfa8",
+    "reason": "Both request the aromatic amino acids with the identical three named residues and identical three required points; wording is a paraphrase.",
+    "method": "Nonblind semantic comparison of complete candidate stems, every alternative and keyed answer, or full essay model answer and required-point rubric. Exact candidate hashes include existing contentVersion."
+  },
+  {
+    "module": "IBM-1",
+    "id": "IBM1-BIO-DRV-20260921-00997",
+    "canonicalModule": "IBM-1",
+    "canonicalId": "IBM1-BIO-DRV-20260921-00942",
+    "question_hash": "f85860e4a378fc6fca94cd6cc497b24d788a1d32d1b8a9ab1cdf26c3e935469e",
+    "canonical_hash": "b2f9b574cd40016e253dc84a040426ffcee874e53360fb0d18093c459ccc8a56",
+    "reason": "Both identify the nonpolar aliphatic R-group set; all four amino-acid groups and the glycine/alanine/leucine answer agree.",
+    "method": "Nonblind semantic comparison of complete candidate stems, every alternative and keyed answer, or full essay model answer and required-point rubric. Exact candidate hashes include existing contentVersion."
+  },
+  {
+    "module": "IBM-1",
+    "id": "IBM1-BIO-DRV-20260921-02212",
+    "canonicalModule": "IBM-1",
+    "canonicalId": "IBM1-BIO-BGFORM-PRO-Q13",
+    "question_hash": "fdeb0fff5a19fe47908dded07289007c7a8fb0580b2d3b1fbd4d8b75f78f6ebd",
+    "canonical_hash": "faf0e1c4073e987e74a2cc5a3af90b66d751d7ae0c30e24e5cc6b46c2f52b750",
+    "reason": "Both identify proline as the nonpolar residue among the same five amino acids; singular/plural wording and option order differ.",
+    "method": "Nonblind semantic comparison of complete candidate stems, every alternative and keyed answer, or full essay model answer and required-point rubric. Exact candidate hashes include existing contentVersion."
+  },
+  {
+    "module": "IBM-1",
+    "id": "IBM1-BIO-DRV-20260921-02268",
+    "canonicalModule": "IBM-1",
+    "canonicalId": "IBM1-BIO-DRV-20260921-02218",
+    "question_hash": "57f1f6f74d5c55e78680de30ef867c489db06d08cf2e27132f9c850fa9b0d113",
+    "canonical_hash": "8ca186f19ab3c547efe7ea99132bf1974f296f35695cccea8fdd8bffc760e9cc",
+    "reason": "Both ask the cyclic nonpolar amino acid among the same five choices; tryptophan is the answer. More explicit aromatic wording adds no competing alternative or new task.",
+    "method": "Nonblind semantic comparison of complete candidate stems, every alternative and keyed answer, or full essay model answer and required-point rubric. Exact candidate hashes include existing contentVersion."
+  },
+  {
+    "module": "IBM-1",
+    "id": "IBM1-BIO-DRV-20260921-02111",
+    "canonicalModule": "IBM-1",
+    "canonicalId": "IBM1-BIO-DRV-20260921-02103",
+    "question_hash": "5215a2f189d65dc78956bacc86cfca635f3576d9fc3cfe9ecbbef319e37dbf74",
+    "canonical_hash": "28b1b98da37dacb060b10832d0897c30470446c4939d450472995ce8587abde2",
+    "reason": "Same leucine24/phenylalanine125 folded-protein interaction scenario, same five interaction types and hydrophobic answer; disulfide bridge/bond are synonyms.",
+    "method": "Nonblind semantic comparison of complete candidate stems, every alternative and keyed answer, or full essay model answer and required-point rubric. Exact candidate hashes include existing contentVersion."
+  },
+  {
+    "module": "IBM-1",
+    "id": "IBM1-BIO-DRV-20260921-01835",
+    "canonicalModule": "IBM-1",
+    "canonicalId": "IBM1-BIO-DRV-20260921-00220",
+    "question_hash": "03a119581caf33e12dfcd4f32a1ade0dea58c07c986542aa2cb533d8963d0d8d",
+    "canonical_hash": "22a7b64a343603c77631880706f2ad303e8e50d24b8a7a30c572a751eff54947",
+    "reason": "Both enumerate exactly three tertiary-structure stabilizing forces. Required concepts are hydrophobic, hydrogen-bond and ionic interactions; specifying charged side chains only explains the same ionic interaction.",
+    "method": "Nonblind semantic comparison of complete candidate stems, every alternative and keyed answer, or full essay model answer and required-point rubric. Exact candidate hashes include existing contentVersion."
+  },
+  {
+    "module": "IBM-1",
+    "id": "IBM1-BIO-DRV-20260921-02238",
+    "canonicalModule": "IBM-1",
+    "canonicalId": "IBM1-BIO-DRV-20260921-00906",
+    "question_hash": "cfc1bbb0600f215024f9fdb7b8876d23ee2ff14adfd5a90ec2c776d6973e9705",
+    "canonical_hash": "f7e05df7b2814b6d2eb4b11b13e28ae437127c4da1326838b0957c80b6378132",
+    "reason": "Same folded-subunit homo/heterodimer question with all four alternatives and quaternary-structure answer identical. Added opening clause describes proteins and creates no distinct assessment.",
+    "method": "Nonblind semantic comparison of complete candidate stems, every alternative and keyed answer, or full essay model answer and required-point rubric. Exact candidate hashes include existing contentVersion."
+  },
+  {
+    "module": "IBM-1",
+    "id": "IBM1-BIO-DRV-20260921-02119",
+    "canonicalModule": "IBM-1",
+    "canonicalId": "IBM1-BIO-DRV-20260921-01862",
+    "question_hash": "2c0ce9393d625fe2944aaf1e823372546b07341c0ac359be7b8d1df56d50efed",
+    "canonical_hash": "f0e9342ab078a6530550f485d36608be260c1c25b2dc3f795bd6e6a90b57b8ac",
+    "reason": "Identical glycine backbone-flexibility question. All alternatives are semantically identical, including singular/plural hydrophobic-amino-acid distractor; glycine answer agrees.",
+    "method": "Nonblind semantic comparison of complete candidate stems, every alternative and keyed answer, or full essay model answer and required-point rubric. Exact candidate hashes include existing contentVersion."
+  },
+  {
+    "module": "IBM-1",
+    "id": "IBM1-BIO-DRV-20260921-02245",
+    "canonicalModule": "IBM-1",
+    "canonicalId": "IBM1-BIO-DRV-20260921-00914",
+    "question_hash": "cd0bd4c4d42978ac861b124adbd9e098bb290cceb56ad2a858abd1b20a3e8fe2",
+    "canonical_hash": "59b0a81e30d6e6398b019d671f50f962bc56fa339ad2c1a1f1267bdca16ed7d0",
+    "reason": "Same protein-misfolding clinical-disease question and same four diseases; Alzheimer versus Alzheimer disease names the same answer.",
+    "method": "Nonblind semantic comparison of complete candidate stems, every alternative and keyed answer, or full essay model answer and required-point rubric. Exact candidate hashes include existing contentVersion."
+  },
+  {
+    "module": "IBM-1",
+    "id": "IBM1-BIO-DRV-20260921-00594",
+    "canonicalModule": "IBM-1",
+    "canonicalId": "IBM1-BIO-DRV-20260921-00582",
+    "question_hash": "7941c884f24fed50f3a2b0ea55c707ac021c0db6aa09a6e53c0e88fd10cffa2f",
+    "canonical_hash": "68f328d5050991c6c41a1e245030135f1b705d15d825f72ed7f55aaaa04d0915",
+    "reason": "Same alkaptonuria cause-and-manifestations prompt. Both rubrics require homogentisate dioxygenase deficiency, dark urine on exposure and ochronosis/arthritis; phrasing alone differs.",
+    "method": "Nonblind semantic comparison of complete candidate stems, every alternative and keyed answer, or full essay model answer and required-point rubric. Exact candidate hashes include existing contentVersion."
+  },
+  {
+    "module": "IBM-1",
+    "id": "IBM1-BIO-DRV-20260921-00595",
+    "canonicalModule": "IBM-1",
+    "canonicalId": "IBM1-BIO-DRV-20260921-00581",
+    "question_hash": "ed3077d64d523b64a4f1f6134e7b73a1056c9b6bf9b0bdbda97b3c464ef4c08a",
+    "canonical_hash": "e900d2c50486f055a32cdd51082091d96fc7b3f8197d74c8ce57b42357d70210",
+    "reason": "Same albinism cause-and-manifestations prompt; both answers qualify tyrosinase deficiency as one form and include hypopigmentation, photosensitivity and skin-cancer risk. Four versus three rubric entries only splits the same content.",
+    "method": "Nonblind semantic comparison of complete candidate stems, every alternative and keyed answer, or full essay model answer and required-point rubric. Exact candidate hashes include existing contentVersion."
+  },
+  {
+    "module": "IBM-1",
+    "id": "IBM1-BIO-DRV-20260921-02347",
+    "canonicalModule": "IBM-1",
+    "canonicalId": "IBM1-BIO-DRV-20260921-01345",
+    "question_hash": "76179c3a119e1cbd0b482cf69b9423a1ce4f01b52bc8d871973b1fc97a60af92",
+    "canonical_hash": "0b6cb98e628fe4969c85fc55701f86a46cb0b7aa02e59e64d9b24be35671d7ab",
+    "reason": "Same enzyme-activation-energy completion, same stopping/raising/lowering/bonding alternatives and lowering answer; punctuation of the completion gap differs.",
+    "method": "Nonblind semantic comparison of complete candidate stems, every alternative and keyed answer, or full essay model answer and required-point rubric. Exact candidate hashes include existing contentVersion."
+  },
+  {
+    "module": "IBM-1",
+    "id": "IBM1-BIO-DRV-20260921-01870",
+    "canonicalModule": "IBM-1",
+    "canonicalId": "IBM1-BIO-DRV-20260921-01322",
+    "question_hash": "28b8d73e57780fcbe7ac67b0b77680dd87529f69611a52a59bebda0cc4ded630",
+    "canonical_hash": "65675130920899be4ea62a806c096b756f1ebc01cfd9addc4fa76805387b02c6",
+    "reason": "Same four coenzyme properties plus all-of-the-above alternative and answer; tightly bounded/bound is grammatical variation without biochemical difference.",
+    "method": "Nonblind semantic comparison of complete candidate stems, every alternative and keyed answer, or full essay model answer and required-point rubric. Exact candidate hashes include existing contentVersion."
+  },
+  {
+    "module": "IBM-1",
+    "id": "IBM1-BIO-DRV-20260921-01882",
+    "canonicalModule": "IBM-1",
+    "canonicalId": "IBM1-BIO-DRV-20260921-01334",
+    "question_hash": "aa4e7819006e7bf8c18a6db74f4570cc43fe3eaac79eb26574d11a03ef2678a1",
+    "canonical_hash": "f5eed356c3a73bf8198006ed56503dd62f2e3eb77cf92f80c966ef2f6ef1fa69",
+    "reason": "Same initial enzyme-reaction velocity definition and five alternatives; before product accumulation is the identical answer.",
+    "method": "Nonblind semantic comparison of complete candidate stems, every alternative and keyed answer, or full essay model answer and required-point rubric. Exact candidate hashes include existing contentVersion."
+  },
+  {
+    "module": "IBM-1",
+    "id": "IBM1-BIO-DRV-20260921-02131",
+    "canonicalModule": "IBM-1",
+    "canonicalId": "IBM1-BIO-FINAL22-Q40",
+    "question_hash": "53956adfeff84de742dc10b137fe71cb1a69be2e7ea376200da35f1dcc1a5535",
+    "canonical_hash": "27820c20e804a57ecc9855907a2cea70bcb0584bdc196398641853d7326c35ff",
+    "reason": "Same permanent aspirin/cyclooxygenase inhibition trigger and all five Vmax/Km alternatives; decreased Vmax answer agrees.",
+    "method": "Nonblind semantic comparison of complete candidate stems, every alternative and keyed answer, or full essay model answer and required-point rubric. Exact candidate hashes include existing contentVersion."
+  },
+  {
+    "module": "IBM-1",
+    "id": "IBM1-BIO-DRV-20260921-01880",
+    "canonicalModule": "IBM-1",
+    "canonicalId": "IBM1-BIO-DRV-20260921-01332",
+    "question_hash": "e15ad61578ea7bbb7aa9dcd705c83e1aea14891150ef89a00f283c2636307aa3",
+    "canonical_hash": "1cfe8ce1e8d0b6e004479727354f423f01c7299e682750d12c6111f3939a5cd0",
+    "reason": "Same constitutive-expression definition and all four alternative enzyme categories; wording and singular/plural agreement differ.",
+    "method": "Nonblind semantic comparison of complete candidate stems, every alternative and keyed answer, or full essay model answer and required-point rubric. Exact candidate hashes include existing contentVersion."
+  },
+  {
+    "module": "IBM-1",
+    "id": "IBM1-BIO-DRV-20260921-01167",
+    "canonicalModule": "IBM-1",
+    "canonicalId": "IBM1-BIO-DRV-20260921-01611",
+    "question_hash": "0578d689ea17906f7848fec8ea1e72b4f6421bda2337eb249fb754e291b5965d",
+    "canonical_hash": "1303d1bef669dfa4b53152b7623b86d38c0c9914171181163f2433a31abaad12",
+    "reason": "Same cAMP-producing-enzyme question with PKA/PDE/adenylate cyclase/phosphatase choices and adenylate cyclase answer.",
+    "method": "Nonblind semantic comparison of complete candidate stems, every alternative and keyed answer, or full essay model answer and required-point rubric. Exact candidate hashes include existing contentVersion."
+  },
+  {
+    "module": "IBM-1",
+    "id": "IBM1-BIO-DRV-20260921-01171",
+    "canonicalModule": "IBM-1",
+    "canonicalId": "IBM1-BIO-DRV-20260921-01615",
+    "question_hash": "b9f4f3d6ab2d1d197eaa51683bcb049c6a9963c0efe1cd19ac5aedde2cbf8324",
+    "canonical_hash": "a1b110c9e5e1d5b903a999693ab987dd98dfddf32a07f2963e901a1ba72910b3",
+    "reason": "Same adenylyl-cyclase cAMP substrate completion and 5-prime AMP/3-prime AMP/ADP/ATP alternatives. Typographic prime/spacing differs; ATP answer agrees.",
+    "method": "Nonblind semantic comparison of complete candidate stems, every alternative and keyed answer, or full essay model answer and required-point rubric. Exact candidate hashes include existing contentVersion."
+  },
+  {
+    "module": "IBM-1",
+    "id": "IBM1-BIO-DRV-20260921-00130",
+    "canonicalModule": "IBM-1",
+    "canonicalId": "IBM1-BIO-DRV-20260921-00125",
+    "question_hash": "aea9bedc38d9a14ed39e559341484db42d7c985ce323e0709d1d13651fdeb266",
+    "canonical_hash": "e2ada281e9a8200e527f19df07a12cdcf49aa7da85131a8b232e8be080a53ac9",
+    "reason": "Both request exactly two choline-containing phospholipids; phosphatidylcholine and sphingomyelin model answer and required points are identical.",
+    "method": "Nonblind semantic comparison of complete candidate stems, every alternative and keyed answer, or full essay model answer and required-point rubric. Exact candidate hashes include existing contentVersion."
+  },
+  {
+    "module": "IBM-1",
+    "id": "IBM1-BIO-DRV-20260921-00473",
+    "canonicalModule": "IBM-1",
+    "canonicalId": "IBM1-BIO-DRV-20260921-00451",
+    "question_hash": "97e5eed6e118bac28050d5e48d097548cd99e75c0b365090e6bd867f00cbab70",
+    "canonical_hash": "997630d0a3615b86b22a75856b7f176aa982ec55a50ac04c4192717068ae2368",
+    "reason": "Same depot-versus-tissue fat comparison with the identical three composition/site/function dimensions and exactly identical model answer and three-point rubric. General versus three-difference phrasing has no actual rubric breadth difference.",
+    "method": "Nonblind semantic comparison of complete candidate stems, every alternative and keyed answer, or full essay model answer and required-point rubric. Exact candidate hashes include existing contentVersion."
+  },
+  {
+    "module": "IBM-1",
+    "id": "IBM1-BIO-DRV-20260921-01565",
+    "canonicalModule": "IBM-1",
+    "canonicalId": "IBM1-BIO-DRV-20260921-01132",
+    "question_hash": "b85e4dd2f8ed738fa61e9d91d8ea6dad543eff7d2cd0f0630fa7282dc25c0b6c",
+    "canonical_hash": "6b96e5dc76dde6ce86bda253899085f58c365699a4179f4f8940966e3d4e277e",
+    "reason": "Same glycerophospholipid-precursor question and all four cholesterol/sphingosine/arachidonate/phosphatidate options; phosphatidate answer agrees.",
+    "method": "Nonblind semantic comparison of complete candidate stems, every alternative and keyed answer, or full essay model answer and required-point rubric. Exact candidate hashes include existing contentVersion."
+  },
+  {
+    "module": "IBM-1",
+    "id": "IBM1-BIO-DRV-20260921-01592",
+    "canonicalModule": "IBM-1",
+    "canonicalId": "IBM1-BIO-BGFORM-LIP-Q03",
+    "question_hash": "317a4d8b9ae5ffb247c1acdb850e95fb226605bd0d2cf02b02563404e6aa9400",
+    "canonical_hash": "9f5e438e107af83c9d3f73bfd2b80a5b70a77b33746785e0feb5eb4cb5c1e9e3",
+    "reason": "Same membrane-suitability question; all five alternatives are equivalent including long-chain fatty acids, charge, molecular weight, phosphorus and amphipathicity. Same amphipathic answer; options are permuted.",
+    "method": "Nonblind semantic comparison of complete candidate stems, every alternative and keyed answer, or full essay model answer and required-point rubric. Exact candidate hashes include existing contentVersion."
+  },
+  {
+    "module": "IBM-1",
+    "id": "IBM1-BIO-F2-Q09",
+    "canonicalModule": "IBM-1",
+    "canonicalId": "IBM1-BIO-BGFORM-MET-Q07",
+    "question_hash": "af904fe2863217415cd61b405f60d2e6d3a9654beba542984bced01ca60762dd",
+    "canonical_hash": "cb1003589c17db461a6a4852102f4d3da35dc7e1c3e5d089d5661a874d7467ca",
+    "reason": "Same false signal-transduction statement among the identical five propositions. Both key the phosphorylated-glycogen-synthase-active assertion; options permuted.",
+    "method": "Nonblind semantic comparison of complete candidate stems, every alternative and keyed answer, or full essay model answer and required-point rubric. Exact candidate hashes include existing contentVersion."
+  },
+  {
+    "module": "IBM-1",
+    "id": "IBM1-BIO-DRV-20260921-01848",
+    "canonicalModule": "IBM-1",
+    "canonicalId": "IBM1-BIO-DRV-20260921-00234",
+    "question_hash": "5ce131367a6e88b0f237ae5c42a78874334c1b73a7279499f565d7a2718172a3",
+    "canonical_hash": "8ff693d0da43bf4bf152e4dbfd993bb8bde8d462d2f1fffb21c6159fd3b55792",
+    "reason": "Same explain-uncharged-polar-side-chain prompt: electronegative O/N and hydrogen bonding to water without net ionization are the same two required concepts; hydroxyl/amide examples explain rather than change the rubric.",
+    "method": "Nonblind semantic comparison of complete candidate stems, every alternative and keyed answer, or full essay model answer and required-point rubric. Exact candidate hashes include existing contentVersion."
+  },
+  {
+    "module": "IBM-1",
+    "id": "IBM1-BIO-DRV-20260921-00658",
+    "canonicalModule": "IBM-1",
+    "canonicalId": "IBM1-BIO-DRV-20260921-00640",
+    "question_hash": "811dfe70ec17c17ca5e5598e7052da9036447837e64e2196d87e8381b77d2c23",
+    "canonical_hash": "8de40fcb86ed1fa24852243109d3960413320138b6c7894ae53ac1719f782269",
+    "reason": "Same causes of vitamin A deficiency; both three-point rubrics require inadequate dietary vitamin A/carotenoids, pancreatic fat malabsorption and gastrointestinal malabsorption. All three causes match semantically.",
+    "method": "Nonblind semantic comparison of complete candidate stems, every alternative and keyed answer, or full essay model answer and required-point rubric. Exact candidate hashes include existing contentVersion."
+  },
+  {
+    "module": "IBM-1",
+    "id": "IBM1-BIO-DRV-20260921-00850",
+    "canonicalModule": "IBM-1",
+    "canonicalId": "IBM1-BIO-DRV-20260921-00845",
+    "question_hash": "457f4dd1cf5323a96badd5625f733393e3f3df64356f44ec2f7d7b0d082a30e3",
+    "canonical_hash": "da1d5d7264a1d52743aee6bbf86709f5e1cd447a6e72c4a71ec0ac51066529f4",
+    "reason": "Both enumerate four mutation causes: replication errors, spontaneous base damage, radiation and chemical mutagens. Cytosine deamination/benzopyrene are examples of the same categories, not additional required topics.",
+    "method": "Nonblind semantic comparison of complete candidate stems, every alternative and keyed answer, or full essay model answer and required-point rubric. Exact candidate hashes include existing contentVersion."
+  },
+  {
+    "module": "IBM-1",
+    "id": "IBM1-BIO-DRV-20260921-00864",
+    "canonicalModule": "IBM-1",
+    "canonicalId": "IBM1-BIO-DRV-20260921-00848",
+    "question_hash": "59fa4536e1f69e837178e39527a62d2363b5356fa89ecd8712a149b25996f8a2",
+    "canonical_hash": "ffe91e078e0fbea110f101bfead5cdf70ac0d2437aedc68e8f81178ec47406a5",
+    "reason": "Same prokaryotic/eukaryotic translation comparison: identical three rubric dimensions (70S/80S ribosomes, fMet/Met initiator, Shine-Dalgarno versus cap/scanning). General comparison and exactly-three wording have the same actual expected answer breadth.",
+    "method": "Nonblind semantic comparison of complete candidate stems, every alternative and keyed answer, or full essay model answer and required-point rubric. Exact candidate hashes include existing contentVersion."
+  }
+]

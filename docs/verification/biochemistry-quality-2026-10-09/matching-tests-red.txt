@@ -1,0 +1,17 @@
+.........E..
+======================================================================
+ERROR: test_restores_source_matching_format_without_essay_artifacts (test_year1_quality.QualityTests.test_restores_source_matching_format_without_essay_artifacts)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/omarhossa/Documents/Medcine ASU/ASU-Medical-Portal/scripts/test_year1_quality.py", line 47, in test_restores_source_matching_format_without_essay_artifacts
+    item=apply_decisions({'TEST':bank([original])},[row])['TEST']['chapters'][0]['subjects'][0]['questions'][0]
+         ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/omarhossa/Documents/Medcine ASU/ASU-Medical-Portal/scripts/year1_quality.py", line 81, in apply_decisions
+    if (not changes and not remove) or set(changes)-allowed or set(remove)-{'examTip','keyConcept'}:raise ValueError(f'Invalid patch: {key}')
+                                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: Invalid patch: ('TEST', 'm')
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.002s
+
+FAILED (errors=1)

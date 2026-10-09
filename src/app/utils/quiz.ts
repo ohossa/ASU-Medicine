@@ -1,4 +1,4 @@
-import type { Question } from '../types';
+import type { Question } from '../types.js';
 
 type GradableQuestion = Pick<Question, 'type' | 'correctIndex' | 'pairs' | 'blanks' | 'acceptedAnswers' | 'subQuestions'>;
 

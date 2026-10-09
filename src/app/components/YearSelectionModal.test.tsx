@@ -15,3 +15,8 @@ it('traps focus within the modal rather than other page buttons',()=>{
  const first=screen.getByRole('button',{name:/year1 yearDesc1/});expect(first).toHaveFocus();
  fireEvent.keyDown(window,{key:'Tab',shiftKey:true});expect(screen.getByRole('button',{name:/year5 yearDesc5/})).toHaveFocus();
 });
+it('describes browser-only saving in local preview',()=>{
+ render(<YearSelectionModal onSelect={vi.fn()} localPreview/>);
+ expect(screen.getByText(/Local preview.*this browser/i)).toBeInTheDocument();
+ expect(screen.queryByText(/across devices/)).toBeNull();
+});

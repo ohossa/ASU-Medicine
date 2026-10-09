@@ -1,0 +1,2810 @@
+[
+  {
+    "id": "IBM1-BIO-DRV-20260921-02107",
+    "type": "mcq",
+    "text": "At PH greater than Pl of protein, it will have:",
+    "lecture": 1,
+    "explanation": "At pH above its isoelectric point a protein becomes net negatively charged because deprotonation predominates.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-02107",
+        "source": "proteins MCQ- marwa hamdy.pdf",
+        "page": "2",
+        "sourceQuestionNumber": "6"
+      }
+    ],
+    "options": [
+      "Net negative charge",
+      "Net positive charge",
+      "Net zero charge PULSE E “Al i] 2 Dr Marwa Hamdy Biochemistry"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-02122",
+    "type": "mcq",
+    "text": "Which of the following is common property of amino acids of protein 2",
+    "lecture": 1,
+    "explanation": "Protein amino acids are alpha amino acids; glycine is achiral, so all-L or all-optically-active claims are not strictly true.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-02122",
+        "source": "proteins MCQ- marwa hamdy.pdf",
+        "page": "5",
+        "sourceQuestionNumber": "22"
+      }
+    ],
+    "options": [
+      "All are L-amino acids",
+      "All are optically active",
+      "All are levorotatory",
+      "All are alpha amino acids . PULSE Ca \"ey / / Dr Marwa Hamdy Biochemistry i",
+      "All are D-amino acids"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-02187",
+    "type": "mcq",
+    "text": "Atneutral PH a mixture of amino acids in solution would be predominantly:",
+    "lecture": 1,
+    "explanation": "Free amino acids commonly carry a protonated alpha-amino group and deprotonated alpha-carboxyl group at neutral pH, giving a dipolar zwitterionic form.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-02187",
+        "source": "proteins MCQ- marwa hamdy.pdf",
+        "page": "19",
+        "sourceQuestionNumber": "95"
+      }
+    ],
+    "options": [
+      "Positive and monovalent",
+      "Non-polar molecules",
+      "Dipolar ions",
+      "Hydrophobic |",
+      "Uncharged molecule"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-02196",
+    "type": "mcq",
+    "text": "Mammalian Proteins contain |",
+    "lecture": 1,
+    "explanation": "Chiral standard residues in mammalian ribosomally synthesized proteins have L configuration. Glycine is achiral and has no D/L designation.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-02196",
+        "source": "proteins MCQ- marwa hamdy.pdf",
+        "page": "20",
+        "sourceQuestionNumber": "105"
+      }
+    ],
+    "options": [
+      "Only L-alpha-amino acids",
+      "Only D-amino acids",
+      "DL-amino acids",
+      "Both A and B"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-02224",
+    "type": "mcq",
+    "text": "Ata low H+ ion concentration, amino acids will Carry... and migrate to......",
+    "lecture": 1,
+    "explanation": "Low hydrogen-ion concentration means high pH; above pI amino acids are net negative and migrate toward the anode.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-02224",
+        "source": "proteins MCQ- marwa hamdy.pdf",
+        "page": "25",
+        "sourceQuestionNumber": "135"
+      }
+    ],
+    "options": [
+      "Negative, Cathode",
+      "Negative, Anode",
+      "Positive, Cathode 7 PULSE ee %», Sey Dr Marwa Hamdy Biochemistry",
+      "Positive, Anode"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-02241",
+    "type": "mcq",
+    "text": "The repeating units of protein?",
+    "lecture": 1,
+    "explanation": "Proteins are polymers of amino-acid residues; nucleotides form nucleic acids and glucose units form polysaccharides.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-02241",
+        "source": "proteins MCQ- marwa hamdy.pdf",
+        "page": "28",
+        "sourceQuestionNumber": "153"
+      }
+    ],
+    "options": [
+      "Amino acids",
+      "Nucleotides WwW , < Biochemistry Dr Marwa Hamdy",
+      "Glucose units",
+      "Fatty acid units \\"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-00155",
+    "type": "mcq",
+    "text": "Which of the following is an a-imino acid?",
+    "lecture": 1,
+    "explanation": "Proline has a secondary alpha amine within a ring and is traditionally classified as an imino acid.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-00155",
+        "source": "all Bio questions.pdf",
+        "page": "16",
+        "sourceQuestionNumber": "7"
+      }
+    ],
+    "options": [
+      "Serine.",
+      "Threonine.",
+      "Valine.",
+      "Proline. Scanned by CamScanner Protein Chemistry 16"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-00179",
+    "type": "mcq",
+    "text": "Acidic amino acids include:",
+    "lecture": 1,
+    "explanation": "Aspartate and glutamate each contain a side-chain carboxylate, making them acidic amino acids.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-00179",
+        "source": "all Bio questions.pdf",
+        "page": "19",
+        "sourceQuestionNumber": "39"
+      }
+    ],
+    "options": [
+      "Arginine and glutamate",
+      "Aspartate and glutamate.",
+      "Aspartate and lysine",
+      "Aspartate and asparagines Scanned by CamScanner ) Protein Chemistry"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-00187",
+    "type": "mcq",
+    "text": "Acidic amino acids include:",
+    "lecture": 1,
+    "explanation": "Aspartate and glutamate carry negatively charged side-chain carboxylates at physiological pH.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-00187",
+        "source": "all Bio questions.pdf",
+        "page": "20",
+        "sourceQuestionNumber": "39"
+      }
+    ],
+    "options": [
+      "Arginine and glutamate",
+      "Aspartate and glutamate.",
+      "Aspartate and lysine",
+      "Aspartate and asparagines Scanned by CamScanner 18 Protein Chemistry"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-00203",
+    "type": "mcq",
+    "text": "Acidic amino acids include:",
+    "lecture": 1,
+    "explanation": "Aspartate and glutamate contain side-chain carboxylates; asparagine is an uncharged amide and lysine is basic.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-00203",
+        "source": "all Bio questions.pdf",
+        "page": "22",
+        "sourceQuestionNumber": "39"
+      }
+    ],
+    "options": [
+      "Arginine and glutamate",
+      "Aspartate and glutamate.",
+      "Aspartate and lysine",
+      "Aspartate and asparagines Scanned by CamScanner Protein Chemistr 20"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-01712",
+    "type": "mcq",
+    "text": "An imino acid is :",
+    "lecture": 1,
+    "explanation": "Proline's cyclic secondary alpha amine is traditionally termed an imino group.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-01712",
+        "source": "protein MCQ.pdf",
+        "page": "5",
+        "sourceQuestionNumber": "21"
+      }
+    ],
+    "options": [
+      "Proline",
+      "Tryptophan",
+      "Alanine",
+      "Glycine BIOCHEMISTRY ACADEMY 5 BIOCHEMISTAY ACADEMY"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-01737",
+    "type": "mcq",
+    "text": "Which of the following is NOT an essential amino acid?",
+    "lecture": 1,
+    "explanation": "Serine is ordinarily synthesized in humans; tryptophan, methionine and lysine require dietary supply.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-01737",
+        "source": "protein MCQ.pdf",
+        "page": "9",
+        "sourceQuestionNumber": "46"
+      }
+    ],
+    "options": [
+      "Tryptophan.",
+      "Methionine. BIOCHEMISTRY ACADEMY",
+      "Lysine.",
+      "Serine"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-01772",
+    "type": "mcq",
+    "text": "Which of the following is an a-imino acid?",
+    "lecture": 1,
+    "explanation": "Proline's alpha nitrogen is part of a ring and is a secondary amine, traditionally called an imino acid.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-01772",
+        "source": "protein MCQ2.pdf",
+        "page": "1",
+        "sourceQuestionNumber": "7"
+      }
+    ],
+    "options": [
+      "Serine.",
+      "Threonine.",
+      "Valine.",
+      "Proline. Scanned by CamScanner —Prorcin Chemistry"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-01797",
+    "type": "mcq",
+    "text": "Acidie amino acids include:",
+    "lecture": 1,
+    "explanation": "Aspartate and glutamate contain side-chain carboxylates and are classified as acidic amino acids.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-01797",
+        "source": "protein MCQ2.pdf",
+        "page": "4",
+        "sourceQuestionNumber": "39"
+      }
+    ],
+    "options": [
+      "Arginine and glutamate",
+      "Aspartate and glutamate.",
+      "Aspartate and lysine",
+      "Aspartate and asparagines Scanned by CamScanne 10= Protein Chemistry"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-01911",
+    "type": "mcq",
+    "text": "An imino acid is :",
+    "lecture": 1,
+    "explanation": "Proline has a cyclic secondary alpha amine, traditionally termed an imino group.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-01911",
+        "source": "protein MCQs Dr.omar.pdf",
+        "page": "5",
+        "sourceQuestionNumber": "21"
+      }
+    ],
+    "options": [
+      "Proline",
+      "Tryptophan",
+      "Alanine",
+      "Glycine 5 BIOCHEMISTRY ACABEMY"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-01936",
+    "type": "mcq",
+    "text": "Which of the following is NOT an essential amino acid? BIOCHEMISTRY ACADEMY",
+    "lecture": 1,
+    "explanation": "Serine can ordinarily be synthesized by humans, whereas tryptophan, methionine and lysine are essential.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-01936",
+        "source": "protein MCQs Dr.omar.pdf",
+        "page": "9",
+        "sourceQuestionNumber": "46"
+      }
+    ],
+    "options": [
+      "Tryptophan.",
+      "Methionine.",
+      "Lysine.",
+      "Serine"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-01986",
+    "type": "mcq",
+    "text": "An imino acid is :",
+    "lecture": 1,
+    "explanation": "Proline’s side chain joins its alpha nitrogen, creating a cyclic secondary amine traditionally termed an imino acid.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-01986",
+        "source": "protein-enzymes mcq omar.pdf",
+        "page": "5",
+        "sourceQuestionNumber": "21"
+      }
+    ],
+    "options": [
+      "Proline",
+      "Tryptophan",
+      "Alanine",
+      "Glycine BIOCHEMISTRY ACADEMY 5"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-02145",
+    "type": "mcq",
+    "text": "Indole compounds (containing an indole ring) found in the urine are probably derived from which amino acid ?",
+    "lecture": 1,
+    "explanation": "Tryptophan has an indole ring; histidine contains imidazole and methionine a thioether.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-02145",
+        "source": "proteins MCQ- marwa hamdy.pdf",
+        "page": "10",
+        "sourceQuestionNumber": "49"
+      }
+    ],
+    "options": [
+      "Proline.",
+      "Tryptophan.",
+      "Glutamine |",
+      "Methionine.",
+      "Histidine."
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-02172",
+    "type": "mcq",
+    "text": "Which of the amino acids below is the polar uncharged derivative of an acidic amino acid?",
+    "lecture": 1,
+    "explanation": "Glutamine is the polar uncharged carboxamide of glutamate; amidation removes the side-chain carboxylate charge.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-02172",
+        "source": "proteins MCQ- marwa hamdy.pdf",
+        "page": "16",
+        "sourceQuestionNumber": "79"
+      }
+    ],
+    "options": [
+      "Cystine. ;",
+      "Tyrosine. 4 |",
+      "Glutamine. ‘ ‘",
+      "Serine. ; |",
+      "Glutamic acid"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-02197",
+    "type": "mcq",
+    "text": "All the following are sulphur containing amino acids found in proteins except",
+    "lecture": 1,
+    "explanation": "Threonine contains a hydroxyl-bearing side chain without sulfur; cysteine, cystine and methionine contain sulfur.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-02197",
+        "source": "proteins MCQ- marwa hamdy.pdf",
+        "page": "21",
+        "sourceQuestionNumber": "107"
+      }
+    ],
+    "options": [
+      "Cysteine",
+      "Cystine",
+      "Methionine",
+      "Threonine \\"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-02216",
+    "type": "mcq",
+    "text": "Which one of the following is aliphatic branched amino acid?",
+    "lecture": 1,
+    "explanation": "Isoleucine has a branched aliphatic hydrocarbon side chain; threonine is hydroxyl-containing and not classed with branched-chain amino acids.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-02216",
+        "source": "proteins MCQ- marwa hamdy.pdf",
+        "page": "24",
+        "sourceQuestionNumber": "127"
+      }
+    ],
+    "options": [
+      "Alanine",
+      "Glycine ;",
+      "Serine \"",
+      "Threonine . ‘.",
+      "Isoleucine \\"
+    ],
+    "correctIndex": 4
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-02218",
+    "type": "mcq",
+    "text": "— sesssssessseseeeeiS CYCliC amino acid with non polar side chain",
+    "lecture": 1,
+    "explanation": "Tryptophan has a predominantly nonpolar aromatic indole side chain; tyrosine is hydroxyl-bearing and histidine basic.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-02218",
+        "source": "proteins MCQ- marwa hamdy.pdf",
+        "page": "24",
+        "sourceQuestionNumber": "129"
+      }
+    ],
+    "options": [
+      "Histidine",
+      "Tyrosine",
+      "Tryptophan",
+      "Leucine",
+      "Glycine \\ Biochemistn, o Dr Marwa Hamdy . a"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-02221",
+    "type": "mcq",
+    "text": "Ssssuueu: iS an amino acid with polar uncharged side chain",
+    "lecture": 1,
+    "explanation": "Cysteine's sulfhydryl side chain is ordinarily uncharged but polar at physiological pH; methionine and phenylalanine are nonpolar.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-02221",
+        "source": "proteins MCQ- marwa hamdy.pdf",
+        "page": "25",
+        "sourceQuestionNumber": "132"
+      }
+    ],
+    "options": [
+      "Aspartic",
+      "Methionine",
+      "Cysteine",
+      "Phenylalanine",
+      "Lysine"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-02227",
+    "type": "mcq",
+    "text": "— sssusse. iS aN aromatic amino acid with hydroxyl containing side chain",
+    "lecture": 1,
+    "explanation": "Tyrosine combines an aromatic benzene ring with a phenolic hydroxyl; phenylalanine lacks that hydroxyl, and tryptophan instead contains indole.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-02227",
+        "source": "proteins MCQ- marwa hamdy.pdf",
+        "page": "26",
+        "sourceQuestionNumber": "438"
+      }
+    ],
+    "options": [
+      "Phenylalanine",
+      "Tryptophan",
+      "Histidine",
+      "Tyrosine",
+      "Proline"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-02257",
+    "type": "mcq",
+    "text": "The following are essential amino acids except: PULSE Pa hh: My : 7 Dr Marwa Hamdy Biochemistry",
+    "lecture": 1,
+    "explanation": "Asparagine is ordinarily synthesized by humans; tryptophan, methionine, histidine and threonine require dietary supply.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-02257",
+        "source": "proteins MCQ- marwa hamdy.pdf",
+        "page": "31",
+        "sourceQuestionNumber": "171"
+      }
+    ],
+    "options": [
+      "tryptophan",
+      "Methionine",
+      "Histidine",
+      "Asparagine",
+      "Threonine"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-02260",
+    "type": "mcq",
+    "text": "Which of the following amino acid is essential aliphatic a.a |",
+    "lecture": 1,
+    "explanation": "Isoleucine is an essential branched aliphatic amino acid; alanine and glycine are nonessential.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-02260",
+        "source": "proteins MCQ- marwa hamdy.pdf",
+        "page": "32",
+        "sourceQuestionNumber": "174"
+      }
+    ],
+    "options": [
+      "Alanine 3 Ne",
+      "Glycine Ne",
+      "Isoleucine",
+      "Serine ‘",
+      "Cystine x ;"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-02263",
+    "type": "mcq",
+    "text": "Non-essential amino acids are . ee = oe Biochemistry Yo Dr Marwa Hamdy",
+    "lecture": 1,
+    "explanation": "Nonessential amino acids still participate in protein synthesis, but humans ordinarily synthesize enough of them rather than requiring dietary supply.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-02263",
+        "source": "proteins MCQ- marwa hamdy.pdf",
+        "page": "32",
+        "sourceQuestionNumber": "177"
+      }
+    ],
+    "options": [
+      "Involved in protein synthesis",
+      "Can be synthesized in the body and so no need to be taken in diet",
+      "They are deficient in diet and the body can synthesize them",
+      "Both A and B",
+      "Both B and C"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-00163",
+    "type": "mcq",
+    "text": "When a peptide bond is formed there is removal of:",
+    "lecture": 1,
+    "explanation": "Condensation between amino and carboxyl groups releases water as the covalent peptide linkage forms.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-00163",
+        "source": "all Bio questions.pdf",
+        "page": "17",
+        "sourceQuestionNumber": "15"
+      }
+    ],
+    "options": [
+      "CO2",
+      "H20",
+      "NH,",
+      "H* U Scanned by CamScanner Protein Chemistry"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-02147",
+    "type": "mcq",
+    "text": "Which of the following is a part of the backbone of a polypeptide chain?",
+    "lecture": 1,
+    "explanation": "The backbone repeats N-C-C, so C-N-C-C is a contiguous portion of that repeating sequence; the other listed sequences interrupt it.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-02147",
+        "source": "proteins MCQ- marwa hamdy.pdf",
+        "page": "10",
+        "sourceQuestionNumber": "51"
+      }
+    ],
+    "options": [
+      "-C -N-C-C- j",
+      "-N-N-C-C-",
+      "-C-N-C-N-",
+      "-N-C-N-C- .",
+      "-N-N-C-N- PULSE 4 | — = eo\" Biochem Ag Dr Marwa Hamdy ¥ 4 , ing? 2"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-02153",
+    "type": "mcq",
+    "text": "Which of the following is a part of the backbone of a polypeptide chain? |",
+    "lecture": 1,
+    "explanation": "The backbone repeats nitrogen–alpha-carbon–carbonyl-carbon. The C–N–C–C segment follows that repeated sequence.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-02153",
+        "source": "proteins MCQ- marwa hamdy.pdf",
+        "page": "12",
+        "sourceQuestionNumber": "60"
+      }
+    ],
+    "options": [
+      "-C-N-C-C-",
+      "-N-N-C-C-",
+      "-C-N-C-N-",
+      "-N-C-N-C-",
+      "-N-N-C-N-"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-02176",
+    "type": "mcq",
+    "text": "Glutathione is formed from",
+    "lecture": 1,
+    "explanation": "Glutathione is formed from glutamate, cysteine and glycine; cysteine contributes the redox-active thiol.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-02176",
+        "source": "proteins MCQ- marwa hamdy.pdf",
+        "page": "17",
+        "sourceQuestionNumber": "84"
+      }
+    ],
+    "options": [
+      "Glutamic acid and cysteine.",
+      "Glutamine and cysteine, |",
+      "Glutamine, cysteine, and glycine.",
+      "Glutamic acid, cysteine, and glycine."
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-02180",
+    "type": "mcq",
+    "text": "Which of the followin airs of amino acids in a rotein can be linked b an ionic",
+    "lecture": 1,
+    "explanation": "Aspartate's negative carboxylate and lysine's positive amine can form an ionic salt bridge; cysteine pairs form disulfides instead.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-02180",
+        "source": "proteins MCQ- marwa hamdy.pdf",
+        "page": "17",
+        "sourceQuestionNumber": "88"
+      }
+    ],
+    "options": [
+      "Aspartic acid and lysine",
+      "Glutamic acid and valine",
+      "Cysteine and cysteine",
+      "Histidine and proline row ) PULSE al ty Dr Marwa Hamdy Biochemistry",
+      "Serine and glutamine"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-02240",
+    "type": "mcq",
+    "text": "Amino acids are joined by",
+    "lecture": 1,
+    "explanation": "Peptide bonds are the covalent amide linkages connecting amino-acid residues into a polypeptide chain.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-02240",
+        "source": "proteins MCQ- marwa hamdy.pdf",
+        "page": "28",
+        "sourceQuestionNumber": "152"
+      }
+    ],
+    "options": [
+      "Peptide bond |",
+      "Hydrogen bond",
+      "Glycosidic bond",
+      "lonic bond"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-01698",
+    "type": "mcq",
+    "text": "The most important covalent bond that stabilize tertiary structure is",
+    "lecture": 1,
+    "explanation": "Disulfide bridges between cysteine side chains are covalent crosslinks that stabilize tertiary structure; peptide bonds primarily establish sequence.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-01698",
+        "source": "protein MCQ.pdf",
+        "page": "3",
+        "sourceQuestionNumber": "7"
+      }
+    ],
+    "options": [
+      "peptide bond",
+      "disulfide bond",
+      "Hydrophobic structure.",
+      "Hydrogen bond. BIOCHEMISTRY ACADEMY 3 BIOCHEMISTAN ACADEMY"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-01728",
+    "type": "mcq",
+    "text": "Alpha helix is stabilized by",
+    "lecture": 1,
+    "explanation": "Alpha helices are stabilized by intrachain hydrogen bonds between backbone groups four residues apart.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-01728",
+        "source": "protein MCQ.pdf",
+        "page": "7",
+        "sourceQuestionNumber": "37"
+      }
+    ],
+    "options": [
+      "Interchain Hydrogen bond",
+      "Intrachain Hydrogen bond",
+      "Hydrophobic interaction",
+      "Electrostatic interaction. BIOCHEMISTRY ACADEMY 7"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-01752",
+    "type": "mcq",
+    "text": "a-helices, B-pleated sheets and ß-bends are examples of protein's:",
+    "lecture": 1,
+    "explanation": "Helices, sheets and turns are local repeating backbone configurations classified as secondary protein structure.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-01752",
+        "source": "protein MCQ.pdf",
+        "page": "10",
+        "sourceQuestionNumber": "61"
+      }
+    ],
+    "options": [
+      "Primary structure.",
+      "Secondary structure.",
+      "Tertiary structure.",
+      "Quaternary structure. BIOCHEMISTRY ACADEMY 10 ₴"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-01753",
+    "type": "mcq",
+    "text": "The tertiary structure of proteins is stabilized by the followin BIOCHEMISTRY except:",
+    "lecture": 1,
+    "explanation": "Peptide bonds determine the primary chain sequence; hydrogen bonds, hydrophobic interactions and disulfides stabilize tertiary folding.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-01753",
+        "source": "protein MCQ.pdf",
+        "page": "11",
+        "sourceQuestionNumber": "62"
+      }
+    ],
+    "options": [
+      "Hydrogen bonds.",
+      "Hydrophobic interactions.",
+      "Peptide bonds.",
+      "Disulfide bonds."
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-01766",
+    "type": "mcq",
+    "text": "The two-subunit (Dimmer) structure of the Creatine kinase represents protein's:",
+    "lecture": 1,
+    "explanation": "Association of two polypeptide chains is quaternary structure, regardless of each individual chain's tertiary fold.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-01766",
+        "source": "protein MCQ.pdf",
+        "page": "12",
+        "sourceQuestionNumber": "75"
+      }
+    ],
+    "options": [
+      "Primary structure.",
+      "Secondary structure.",
+      "Tertiary structure.",
+      "Quaternary structure. Answers of Protein 2 a 17 b 32 d 47 b 62 C 3 b 18 b 33 a 48 a 63 d 4 b 19 d 34 b 49 5 d 20 d 35 C 50 6 7 8 9 10 d b b e e 21 22 23 24 25 a a b C d 36 37 38 39 40 a b b b C 51 52 53 54 55 11 e 26 a 41 C 56 a d d a C 64 b 65 a 66 67 68 69 70 d a C C d 71 a 12 e 27 a 42 C 57 a 72 b 13 a 28 a 43 b 58 b 73 b 14 d 29 d 44 C 59 a 74 BIOCHEMISTRY ACADEMY 15 a 30 b 45 b 60 75 d"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-01854",
+    "type": "essay",
+    "text": "Primary & Secondary protein structure (definition, bonds stabilizing). 22 Scanned by CamScanne - 23 |",
+    "lecture": 1,
+    "explanation": "Primary sequence specifies the polypeptide composition and order, whereas secondary structure describes recurring local backbone folds.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-01854",
+        "source": "protein MCQ2.pdf",
+        "page": "10",
+        "sourceQuestionNumber": "3"
+      }
+    ],
+    "modelAnswer": "Primary structure is the linear residue sequence linked by covalent peptide bonds; Secondary structure is local alpha-helical, beta-sheet or turn geometry stabilized by backbone hydrogen bonds.",
+    "requiredPoints": [
+      "Primary structure is the linear residue sequence linked by covalent peptide bonds",
+      "Secondary structure is local alpha-helical, beta-sheet or turn geometry stabilized by backbone hydrogen bonds."
+    ]
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-01897",
+    "type": "mcq",
+    "text": "The most important covalent bond that stabilize tertiary structure is",
+    "lecture": 1,
+    "explanation": "Cysteine disulfide bridges are covalent crosslinks stabilizing tertiary folding; hydrogen bonds and hydrophobic effects are noncovalent.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-01897",
+        "source": "protein MCQs Dr.omar.pdf",
+        "page": "3",
+        "sourceQuestionNumber": "7"
+      }
+    ],
+    "options": [
+      "peptide bond",
+      "disulfide bond",
+      "Hydrophobic structure.",
+      "Hydrogen bond. BIOCHEMISTRY ACADEMY 3 BIOCHEMISTRY ACADEMY"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-01952",
+    "type": "mcq",
+    "text": "The tertiary structure of proteins is stabilized by the followin BIOCHEMISTRY ACADEMY except:",
+    "lecture": 1,
+    "explanation": "Peptide bonds determine primary sequence; tertiary stabilization instead includes hydrogen bonds, hydrophobic effects and disulfide crosslinks.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-01952",
+        "source": "protein MCQs Dr.omar.pdf",
+        "page": "11",
+        "sourceQuestionNumber": "62"
+      }
+    ],
+    "options": [
+      "Hydrogen bonds.",
+      "Hydrophobic interactions.",
+      "Peptide bonds.",
+      "Disulfide bonds."
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-02117",
+    "type": "mcq",
+    "text": "Aparticular point mutation result in disruption of a a-helical structure, the most likely change is:",
+    "lecture": 1,
+    "explanation": "Replacing methionine with proline introduces a rigid cyclic residue without a standard backbone NH donor, strongly disrupting an alpha helix.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-02117",
+        "source": "proteins MCQ- marwa hamdy.pdf",
+        "page": "4",
+        "sourceQuestionNumber": "11"
+      }
+    ],
+    "options": [
+      "Glutamate to Aspartate",
+      "Lysine to Arginine",
+      "Methionine to Proline",
+      "Valine to Alanine _ puise | E| $n > A Or Marwa Hamdy v 9 e"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-02237",
+    "type": "mcq",
+    "text": "Which of the following is not true for an alpha helix?",
+    "lecture": 1,
+    "explanation": "Human alpha helices are predominantly right-handed; long left-handed stretches are not the normal secondary structural pattern.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-02237",
+        "source": "proteins MCQ- marwa hamdy.pdf",
+        "page": "28",
+        "sourceQuestionNumber": "149"
+      }
+    ],
+    "options": [
+      "It is one of the most important secondary structure",
+      "R groups protrude outside alpha helix |",
+      "All hydrogen bonds are aligned in the same direction",
+      "Long stretches of left handed-helices occur in proteins |"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-01736",
+    "type": "mcq",
+    "text": "Alzheimer disease is due to",
+    "lecture": 1,
+    "explanation": "Abnormal folding and aggregation of neural proteins contribute to Alzheimer disease; chaperones usually assist correct folding rather than produce amyloid as their normal function.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-01736",
+        "source": "protein MCQ.pdf",
+        "page": "8",
+        "sourceQuestionNumber": "45"
+      }
+    ],
+    "options": [
+      "Beta-amyloid formed by action of chaperone proteins",
+      "Improper folding of critical neural proteins.",
+      "The primary structure of neural protein is normal",
+      "Protein that degraded by heat. BIOCHEMISTAY ACADEMY 8"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-01935",
+    "type": "mcq",
+    "text": "Alzheimer disease is due to",
+    "lecture": 1,
+    "explanation": "Abnormal folding and aggregation of neural proteins contribute to Alzheimer disease; chaperones normally promote appropriate folding.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-01935",
+        "source": "protein MCQs Dr.omar.pdf",
+        "page": "8",
+        "sourceQuestionNumber": "45"
+      }
+    ],
+    "options": [
+      "Beta-amyloid formed by action of chaperone proteins",
+      "Improper folding of critical neural proteins.",
+      "The primary structure of neural protein is normal",
+      "Protein that degraded by heat. BIOCHEMISTRY ACADEMY 8"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-02142",
+    "type": "mcq",
+    "text": "Molecular chaperones are important for which of the following?",
+    "lecture": 1,
+    "explanation": "Chaperones help newly made or misfolded polypeptides reach an appropriate conformation and avoid aggregation.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-02142",
+        "source": "proteins MCQ- marwa hamdy.pdf",
+        "page": "9",
+        "sourceQuestionNumber": "45"
+      }
+    ],
+    "options": [
+      "Folding of DNA in the cell nucleus.",
+      "Degrading the incorrectly folded proteins.",
+      "Correct folding and repair of incorrectly folded proteins.",
+      "Preventing over-heating of the cells.",
+      "Denaturing the proteins at high temperature. PULSE Ta ey | Dr Marwa Hamdy Biochemistry f"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-02262",
+    "type": "mcq",
+    "text": "Which of the following group of proteins assist in the folding of other proteins",
+    "lecture": 1,
+    "explanation": "Molecular chaperones assist proper polypeptide folding and help prevent inappropriate aggregation.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-02262",
+        "source": "proteins MCQ- marwa hamdy.pdf",
+        "page": "32",
+        "sourceQuestionNumber": "176"
+      }
+    ],
+    "options": [
+      "Proteases",
+      "Proteosomes",
+      "Chaperons",
+      "Peptidases |"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-01903",
+    "type": "mcq",
+    "text": "Disulfide bond can be disrupted by",
+    "lecture": 1,
+    "explanation": "Reducing agents convert disulfide bridges into cysteine thiols; oxidation instead favors bridge formation.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-01903",
+        "source": "protein MCQs Dr.omar.pdf",
+        "page": "4",
+        "sourceQuestionNumber": "13"
+      }
+    ],
+    "options": [
+      "High reducing agent",
+      "High oxidizing agent",
+      "temperature",
+      "strong acid",
+      "all of the above 4 BIOCHEMISTRY ACADEMY"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-01993",
+    "type": "mcq",
+    "text": "All the following are high biological value proteins except",
+    "lecture": 1,
+    "explanation": "Gelatin is incomplete as a dietary protein and has poor nutritional quality; meat, eggs and soy provide complete protein sources.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-01993",
+        "source": "protein-enzymes mcq omar.pdf",
+        "page": "6",
+        "sourceQuestionNumber": "29"
+      }
+    ],
+    "options": [
+      "Meat",
+      "Soya beans",
+      "Egg",
+      "Gelatin BIOCHEMISTRY ACADEMY 6"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-02244",
+    "type": "mcq",
+    "text": "The structural proteins are involved in maintaining the shape of a cell, the shape of these proteins is",
+    "lecture": 1,
+    "explanation": "Fibrous proteins form elongated supporting structures such as collagen and keratin, matching a structural role.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-02244",
+        "source": "proteins MCQ- marwa hamdy.pdf",
+        "page": "29",
+        "sourceQuestionNumber": "158"
+      }
+    ],
+    "options": [
+      "Globular",
+      "Fibrous",
+      "Stretch of beads PULSE 3 Gr Marwe Hamdy Biochemistry",
+      "Planar"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-02266",
+    "type": "mcq",
+    "text": "Protein denaturation is | a) Breaking of the peptide and ionic bonds.",
+    "lecture": 1,
+    "explanation": "Denaturation changes higher protein organization while ordinarily preserving covalent primary sequence.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-02266",
+        "source": "proteins MCQ- marwa hamdy.pdf",
+        "page": "33",
+        "sourceQuestionNumber": "180"
+      }
+    ],
+    "options": [
+      "Breaking of covalent bonds only.",
+      "Disturbed Primary, secondary and tertiary structure.",
+      "Disturbed protein organization while the primary structure is Preserved",
+      "The process to increase Protein solubility"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-00018",
+    "type": "mcq",
+    "text": "The sugar found in DNA is:",
+    "lecture": 1,
+    "explanation": "DNA contains 2-deoxyribose; RNA contains ribose, whereas xylose and ribulose are different pentoses.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-00018",
+        "source": "all Bio questions.pdf",
+        "page": "2",
+        "sourceQuestionNumber": "7"
+      }
+    ],
+    "options": [
+      "Xylose.",
+      "Ribose.",
+      "Deoxyribose.",
+      "Ribulose. Scanned by CamScanner Carbohydrate Chemistry"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-00026",
+    "type": "mcq",
+    "text": "A polysacchharide which is stored in animals is",
+    "lecture": 1,
+    "explanation": "Glycogen is the principal animal storage polysaccharide; starch is the plant counterpart.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-00026",
+        "source": "all Bio questions.pdf",
+        "page": "3",
+        "sourceQuestionNumber": "15"
+      }
+    ],
+    "options": [
+      "Glycogen",
+      "Starch",
+      "Inulin",
+      "Dextrin Scanned by CamScanner Carbohydrate Chemistry 3"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-00034",
+    "type": "mcq",
+    "text": "The following is not a monosaccharide derivative:",
+    "lecture": 1,
+    "explanation": "Dihydroxyacetone is an unmodified ketotriose; sorbitol, glucuronate and glycerol can be obtained by sugar modification.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-00034",
+        "source": "all Bio questions.pdf",
+        "page": "4",
+        "sourceQuestionNumber": "23"
+      }
+    ],
+    "options": [
+      "Sorbitol.",
+      "Glucuronic acid.",
+      "Dihydroxyacetone.",
+      "Glycerol. Scanned by CamScanner Carbohydrate Chemistry"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-00042",
+    "type": "mcq",
+    "text": "The polysaccharide which is used as anticoagulant is:",
+    "lecture": 1,
+    "explanation": "Heparin accelerates antithrombin-mediated inhibition of clotting proteases and is used as an anticoagulant.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-00042",
+        "source": "all Bio questions.pdf",
+        "page": "5",
+        "sourceQuestionNumber": "31"
+      }
+    ],
+    "options": [
+      "Heparin.",
+      "Glycogen.",
+      "Cellulose.",
+      "Heparan sulfate. Scanned by CamScanner Carbohydrate Chemistry"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-00050",
+    "type": "mcq",
+    "text": "A carbohydrate found only in milk:",
+    "lecture": 1,
+    "explanation": "Lactose is synthesized in mammary glands and is the characteristic milk disaccharide.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-00050",
+        "source": "all Bio questions.pdf",
+        "page": "6",
+        "sourceQuestionNumber": "39"
+      }
+    ],
+    "options": [
+      "Glucose",
+      "Galactose",
+      "Lactose",
+      "Maltose 5 Scanned by CamScanner Carbohydrate Chemistry"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-01094",
+    "type": "mcq",
+    "text": "Which of the following is Highly branched Homopolysaccharides?",
+    "lecture": 1,
+    "explanation": "Glycogen is more densely branched than amylopectin and is the conventional highly branched glucose homopolysaccharide.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-01094",
+        "source": "CHO- Krebs mcq omar.pdf",
+        "page": "4",
+        "sourceQuestionNumber": "14"
+      }
+    ],
+    "options": [
+      "Lactose",
+      "Glycogen",
+      "Cellulose",
+      "Starch",
+      "Mucopolysaccharides BIOCHEMISTRY ACADEMY 4"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-01531",
+    "type": "mcq",
+    "text": "The monosaccharide units are linked by glycosidic linkage in ฿ 1-4:",
+    "lecture": 1,
+    "explanation": "Lactose joins galactose C1 to glucose C4 through a beta-glycosidic linkage.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-01531",
+        "source": "omar mcq 2022.pdf",
+        "page": "16",
+        "sourceQuestionNumber": "23"
+      }
+    ],
+    "options": [
+      "Maltose",
+      "Sucrose",
+      "Lactose",
+      "Starch"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-00092",
+    "type": "mcq",
+    "text": "Essential fatty acids are:",
+    "lecture": 1,
+    "explanation": "Linoleate and α-linolenate cannot be synthesized by human desaturases; arachidonate and EPA can be made from these precursors.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-00092",
+        "source": "all Bio questions.pdf",
+        "page": "10",
+        "sourceQuestionNumber": "7"
+      }
+    ],
+    "options": [
+      "Linoleic and arachidonic acids.",
+      "a-linolenic and timnodonic acids.",
+      "Linoleic and a-linolenic acids.",
+      "Oleic and linoleic acids Scanned by CamScanner Lipid Chemistry 10"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-00108",
+    "type": "mcq",
+    "text": "Saturated FA which contains 18C is:",
+    "lecture": 1,
+    "explanation": "Stearate is 18:0. Oleate is 18:1, palmitoleate is 16:1, and lignocerate is 24:0.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-00108",
+        "source": "all Bio questions.pdf",
+        "page": "12",
+        "sourceQuestionNumber": "23"
+      }
+    ],
+    "options": [
+      "Palmitoleic acid.",
+      "Oleic acid.",
+      "Lignoceric acid.",
+      "Stearic acid. Scanned by CamScanner 12 Lipid Chemising"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-01119",
+    "type": "mcq",
+    "text": "Infantile Respiratory Distress Syndrome occur due to deficiency of:",
+    "lecture": 1,
+    "explanation": "Neonatal respiratory distress syndrome is caused by deficient pulmonary surfactant, whose major surface-active phospholipid is dipalmitoylphosphatidylcholine (dipalmitoyl lecithin).",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-01119",
+        "source": "CHO- Krebs mcq omar.pdf",
+        "page": "8",
+        "sourceQuestionNumber": "6"
+      }
+    ],
+    "options": [
+      "Cardiolipin",
+      "Dipalmitoyl Lecithin",
+      "Phosphatidyl glycerol",
+      "Plasmalogen",
+      "cephalin. BIOCHEMISTRY ACADEMY • . 8"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-01122",
+    "type": "mcq",
+    "text": "Acidic phospholipids don't include :",
+    "lecture": 1,
+    "explanation": "Phosphatidylcholine and phosphatidylethanolamine are zwitterionic rather than net acidic phospholipids.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-01122",
+        "source": "CHO- Krebs mcq omar.pdf",
+        "page": "9",
+        "sourceQuestionNumber": "9"
+      }
+    ],
+    "options": [
+      "Phosphatidic acid.",
+      "Phosphatidyl serine & phosphatidy| inositol.",
+      "Phosphatidyl choline & phosphatidyl ethanolamine.",
+      "Phosphatidyl glycerol & cardiolipin."
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-01131",
+    "type": "mcq",
+    "text": "Which out of the following lipid is a charged lipid?",
+    "lecture": 1,
+    "explanation": "Phospholipids contain charged polar headgroups; some have zero net charge through zwitterionic groups.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-01131",
+        "source": "CHO- Krebs mcq omar.pdf",
+        "page": "10",
+        "sourceQuestionNumber": "18"
+      }
+    ],
+    "options": [
+      "Phospholipid",
+      "Cholesterol",
+      "Triacylglycerol",
+      "Wax BIOCHEMISTRY ACADEMY 10"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-01145",
+    "type": "mcq",
+    "text": "Choose the monoenoic fatty acid out of the following",
+    "lecture": 1,
+    "explanation": "Monoenoic means one double bond, as in oleic acid (18:1). The other listed acids are polyunsaturated.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-01145",
+        "source": "CHO- Krebs mcq omar.pdf",
+        "page": "12",
+        "sourceQuestionNumber": "32"
+      }
+    ],
+    "options": [
+      "Arachidonic acid",
+      "Oleic acid",
+      "Linoleic acid",
+      "Linolenic acid BIOCHEMISTRY ACADEMY 12"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-01597",
+    "type": "mcq",
+    "text": "What are the fatty acid components of the main glycerol- phospholipid of lung surfactant?",
+    "lecture": 1,
+    "explanation": "DPPC contains two palmitoyl chains and is the major surface-active phospholipid of lung surfactant.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-01597",
+        "source": "omar mcq 2022.pdf",
+        "page": "26",
+        "sourceQuestionNumber": "52"
+      }
+    ],
+    "options": [
+      "Palmitic and oleic",
+      "Two palmitic",
+      "Linolenic and linoleic",
+      "Palmitic and arachidonic",
+      "Oleic and linoleic. Scanned with CamScanner"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-01125",
+    "type": "mcq",
+    "text": "Phospholipid molecules suit the membrane structure because they",
+    "lecture": 1,
+    "explanation": "A polar head and hydrophobic tails allow phospholipids to orient into a bilayer in water. Phosphorus content or molecular size alone does not explain membrane assembly.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-01125",
+        "source": "CHO- Krebs mcq omar.pdf",
+        "page": "9",
+        "sourceQuestionNumber": "12"
+      }
+    ],
+    "options": [
+      "Contain phosphorus",
+      "Contain long chain fatty acids",
+      "Contain positive and negative charges",
+      "Are high molecular weight molecules",
+      "Are Amphipathic BIOCHEMISTRY ACADEMY 9"
+    ],
+    "correctIndex": 4
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-02129",
+    "type": "mcq",
+    "text": "Angiotensin converting enzyme converts the decapeptide angiotensin | to the octapeptide angiotensin II. This enzyme is considered a (an",
+    "lecture": 1,
+    "explanation": "ACE hydrolyzes a terminal dipeptide from ten-residue angiotensin I, producing eight-residue angiotensin II. Removing amino-acid residues by peptide-bond hydrolysis makes it a peptidase.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-02129",
+        "source": "proteins MCQ- marwa hamdy.pdf",
+        "page": "7",
+        "sourceQuestionNumber": "31"
+      }
+    ],
+    "options": [
+      "Peptidase.",
+      "Dehydrogenase,",
+      "Ligase.",
+      "Sulfhydryl oxidase.",
+      "Isomerase"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-00257",
+    "type": "mcq",
+    "text": "In enzyme kinetics Km is:",
+    "lecture": 1,
+    "explanation": "Km is the substrate concentration giving v = Vmax/2 under Michaelis-Menten conditions. It is not generally the ES dissociation constant, because it also depends on catalytic turnover.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-00257",
+        "source": "all Bio questions.pdf",
+        "page": "28",
+        "sourceQuestionNumber": "20"
+      }
+    ],
+    "options": [
+      "The substrate concentration that gives one half Vmax",
+      "The dissocation constant for the enzyme substrate comples",
+      "Concentration of enzyme",
+      "Half of the substrate concentration required to achieve Vmax Scanned by CamScanner Enzymes 26"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-01334",
+    "type": "mcq",
+    "text": "Initial velocity of the enzyme catalyze reaction in which of the followings",
+    "lecture": 1,
+    "explanation": "Initial velocity is measured early, before product accumulation and substrate depletion materially alter the rate. It therefore reflects the starting substrate concentration rather than a reaction already approaching equilibrium.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-01334",
+        "source": "enzymes MCQs Dr.omar.pdf",
+        "page": "2",
+        "sourceQuestionNumber": "13"
+      }
+    ],
+    "options": [
+      "Velocity before adding the enzyme",
+      "The lowest velocity",
+      "Velocity before accumulation of products",
+      "Velocity at zero substrate concentration",
+      "Velocity at substrate concentration equal to Km. BIOCHEMISTAN ACARSON is tl • P cer n ir 14 Bo BIOCHEMISTRY ACADEMY"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-01361",
+    "type": "mcq",
+    "text": "In lineweaver-Buek plot",
+    "lecture": 1,
+    "explanation": "Reciprocating the Michaelis-Menten equation gives 1/v = (Km/Vmax)(1/[S]) + 1/Vmax. Thus the axes are 1/v and 1/[S], the slope is Km/Vmax and the y-intercept is 1/Vmax.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-01361",
+        "source": "enzymes MCQs Dr.omar.pdf",
+        "page": "7",
+        "sourceQuestionNumber": "43"
+      }
+    ],
+    "options": [
+      "1/v is plotted againse 1/s",
+      "Km is numericaly equal to intersept on Y axis BIOCHEMISTRY ACADEMY",
+      "Vamx is numerically equal to intersept on X axis",
+      "Km is equal to slope."
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-02052",
+    "type": "mcq",
+    "text": "Initial velocity of the enzyme catalyze reaction in which of the followings",
+    "lecture": 1,
+    "explanation": "Initial velocity is measured early, before product accumulation and substrate depletion materially alter the rate. It therefore reflects the starting substrate concentration rather than a reaction already approaching equilibrium.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-02052",
+        "source": "protein-enzymes mcq omar.pdf",
+        "page": "14",
+        "sourceQuestionNumber": "13"
+      }
+    ],
+    "options": [
+      "Velocity before adding the enzyme",
+      "The lowest velocity",
+      "Velocity before accumulation of products",
+      "Velocity at zero substrate concentration",
+      "Velocity at substrate concentration equal to Km. BIOCHEMISTRY ACADEMY 14"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-02082",
+    "type": "mcq",
+    "text": "In lineweaver-Buek plot",
+    "lecture": 1,
+    "explanation": "Reciprocating the Michaelis-Menten equation gives 1/v = (Km/Vmax)(1/[S]) + 1/Vmax. Thus the axes are 1/v and 1/[S], the slope is Km/Vmax and the y-intercept is 1/Vmax.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-02082",
+        "source": "protein-enzymes mcq omar.pdf",
+        "page": "19",
+        "sourceQuestionNumber": "43"
+      }
+    ],
+    "options": [
+      "1/v is plotted againse 1/s BIOCHEMISTRY ACADEMY",
+      "Km is numericaly equal to intersept on Y axis",
+      "Vamx is numerically equal to intersept on X axis",
+      "Km is equal to slope."
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-00247",
+    "type": "mcq",
+    "text": "What type of enzyme inhibitor would have the following effects: Vmax unchanged Km increased Higher |S] needed to reach V max/2",
+    "lecture": 1,
+    "explanation": "Reversible competition makes more substrate necessary to reach a given rate, increasing apparent Km. At sufficiently high substrate concentration the inhibitor is outcompeted, so Vmax remains unchanged.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-00247",
+        "source": "all Bio questions.pdf",
+        "page": "27",
+        "sourceQuestionNumber": "10"
+      }
+    ],
+    "options": [
+      "Competitive reversible inhibition",
+      "Allosteric inhibition",
+      "Irreversible inhibition",
+      "All of the above"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-01281",
+    "type": "mcq",
+    "text": "What type of enzyme inhibitor would have the following effects: Vma› unchanged Km increased Higher |S] needed to reach Vmax/2",
+    "lecture": 1,
+    "explanation": "Reversible competition makes more substrate necessary to reach a given rate, increasing apparent Km. At sufficiently high substrate concentration the inhibitor is outcompeted, so Vmax remains unchanged.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-01281",
+        "source": "Enzymes MCQ.pdf",
+        "page": "2",
+        "sourceQuestionNumber": "10"
+      }
+    ],
+    "options": [
+      "Competitive reversible inhibition",
+      "Allosteric inhibition",
+      "Irreversible inhibition",
+      "All of the above"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-00244",
+    "type": "mcq",
+    "text": "Activation or inactivation of certain enzymes is accomplished by covalent modification of the amino acid:",
+    "lecture": 1,
+    "explanation": "The side-chain hydroxyl of serine or threonine can accept a covalently attached phosphate. Kinases add it and phosphatases remove it, allowing reversible changes in enzyme activity.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-00244",
+        "source": "all Bio questions.pdf",
+        "page": "26",
+        "sourceQuestionNumber": "7"
+      }
+    ],
+    "options": [
+      "Hydroxy lysine",
+      "Phenylalanine",
+      "Lysine",
+      "Serine Scanned by CamScanner Enzymes 24"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-00251",
+    "type": "mcq",
+    "text": "Allosteric inhibition of an enzyme involves which of the following?",
+    "lecture": 1,
+    "explanation": "Binding at a regulatory site distinct from the catalytic site changes enzyme conformation and activity. An allosteric effector may activate or inhibit; it need not have the kinetic pattern of pure noncompetitive inhibition.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-00251",
+        "source": "all Bio questions.pdf",
+        "page": "27",
+        "sourceQuestionNumber": "14"
+      }
+    ],
+    "options": [
+      "Binding of an inhibitor to a site other than the substrate binding site.",
+      "Binding of an inhibitor competitively to the substrate binding site.",
+      "Binding of an inhibitor noncompetitively to the substrate binding site.",
+      "Allosteric inhibitors increase the affinity of the enzyme to its substrate. C (C Scanned by CamScanner Enzymes 25"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-01278",
+    "type": "mcq",
+    "text": "Activation or inactivation of certain enzymes is accomplished by covalent modification of the amino acid:",
+    "lecture": 1,
+    "explanation": "The side-chain hydroxyl of serine or threonine can accept a covalently attached phosphate. Kinases add it and phosphatases remove it, allowing reversible changes in enzyme activity.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-01278",
+        "source": "Enzymes MCQ.pdf",
+        "page": "1",
+        "sourceQuestionNumber": "7"
+      }
+    ],
+    "options": [
+      "Hydroxy lysine",
+      "Phenylalanine",
+      "Lysine",
+      "Serine Scanned by CamScanne Engimes"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-01609",
+    "type": "mcq",
+    "text": "Which of the Following is false as regards signaling transduction BIOCHEMISTRY",
+    "lecture": 1,
+    "explanation": "Glycogen synthase is active when dephosphorylated and inhibited by phosphorylation; phosphorylase activation has the opposite pattern.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-01609",
+        "source": "omar mcq 2022.pdf",
+        "page": "29",
+        "sourceQuestionNumber": "1"
+      }
+    ],
+    "options": [
+      "Extracellular signals are transduced into intracellular chemical changes",
+      "Adenylate cyclase is one signaling pathway",
+      "Phosphorylated glycogen synthase is active",
+      "Dephosphorylated glycogen synthase is active",
+      "Phosphorylated glycogen phosphorylase is active"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-02053",
+    "type": "mcq",
+    "text": "A Pro-enzyme is which of the followings :-",
+    "lecture": 1,
+    "explanation": "A zymogen is an inactive enzyme precursor; limited proteolysis produces the active catalytic structure. This differs from an apoenzyme, which specifically lacks a required nonprotein cofactor.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-02053",
+        "source": "protein-enzymes mcq omar.pdf",
+        "page": "15",
+        "sourceQuestionNumber": "14"
+      }
+    ],
+    "options": [
+      "An inorganic cofactor BIOCHEMISTRY ACADEMY",
+      "A substrate need for enzyme action",
+      "The protein part of the enzyme",
+      "Enzyme with different electrophoretic pattern",
+      "An inactive enzyme."
+    ],
+    "correctIndex": 4
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-02090",
+    "type": "mcq",
+    "text": "Activation or inactivation of certain enzymes is accomplished by covalent modification of the amino acid: BIOCHEMISTRY ACADEMY",
+    "lecture": 1,
+    "explanation": "The side-chain hydroxyl of serine or threonine can accept a covalently attached phosphate. Kinases add it and phosphatases remove it, allowing reversible changes in enzyme activity.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-02090",
+        "source": "protein-enzymes mcq omar.pdf",
+        "page": "20",
+        "sourceQuestionNumber": "51"
+      }
+    ],
+    "options": [
+      "Hydroxy lysine",
+      "Phenylalanine",
+      "Lysine",
+      "Serine"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-01164",
+    "type": "mcq",
+    "text": "Under the effect of Glucagon, enzymes regulated by covalent modification become",
+    "lecture": 1,
+    "explanation": "Hepatic glucagon signaling activates cAMP-dependent PKA and favors phosphorylation. This activates the glycogen-breakdown cascade while inhibiting glycogen synthase, helping increase blood glucose.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-01164",
+        "source": "CHO- Krebs mcq omar.pdf",
+        "page": "15",
+        "sourceQuestionNumber": "6"
+      }
+    ],
+    "options": [
+      "Dephosphorylated and inactive",
+      "Phosphorylated and active if they increase glucose",
+      "Dephosphorylated and active if they lower glucose",
+      "Phosphorylated and active if they lower glucose. BIOCHEMISTRY ACADEMY 15"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-01360",
+    "type": "mcq",
+    "text": "Isoenzymes :",
+    "lecture": 1,
+    "explanation": "Isoenzymes catalyze the same reaction but differ in molecular structure, so their kinetic properties, tissue distribution or electrophoretic mobility can differ. They are distinct active enzyme forms rather than zymogens awaiting activation.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-01360",
+        "source": "enzymes MCQs Dr.omar.pdf",
+        "page": "6",
+        "sourceQuestionNumber": "42"
+      }
+    ],
+    "options": [
+      "Present in the same tissue.",
+      "Have the same Km.",
+      "Catalyze different reactions.",
+      "Different forms of the same enzyme. With incre BIOCHEMISTR ACQUELA 18"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-02081",
+    "type": "mcq",
+    "text": "Isoenzymes :",
+    "lecture": 1,
+    "explanation": "Isoenzymes catalyze the same reaction but differ in molecular structure, so their kinetic properties, tissue distribution or electrophoretic mobility can differ. They are distinct active enzyme forms rather than zymogens awaiting activation.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-02081",
+        "source": "protein-enzymes mcq omar.pdf",
+        "page": "18",
+        "sourceQuestionNumber": "42"
+      }
+    ],
+    "options": [
+      "Present in the same tissue.",
+      "Have the same Km.",
+      "Catalyze different reactions.",
+      "Different forms of the same enzyme. BIOCHEMISTRY ACADEMY 18"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-02174",
+    "type": "mcq",
+    "text": "An enzyme is formed of four subunits, each belonging to either M or H types. | How many isozymes exist for this enzyme?",
+    "lecture": 1,
+    "explanation": "A tetramer of H and M subunits has five compositions: H4, H3M, H2M2, HM3 and M4. Count compositions rather than ordering identical subunits.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-02174",
+        "source": "proteins MCQ- marwa hamdy.pdf",
+        "page": "16",
+        "sourceQuestionNumber": "81"
+      }
+    ],
+    "options": [
+      "2",
+      "4",
+      "5",
+      "6",
+      "8"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-02059",
+    "type": "mcq",
+    "text": "The type of CK that increases in myocardial infarction :",
+    "lecture": 1,
+    "explanation": "CK-MB, traditionally called CK2, is enriched in cardiac muscle and can rise after myocardial injury. It is a historical marker and is not completely specific for myocardial infarction.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-02059",
+        "source": "protein-enzymes mcq omar.pdf",
+        "page": "16",
+        "sourceQuestionNumber": "20"
+      }
+    ],
+    "options": [
+      "CK BB. BIOCHEMISTRY ACADEMY",
+      "CK MM.",
+      "CK MB.",
+      "Non of the following."
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-01621",
+    "type": "mcq",
+    "text": "Which of the following is a characteristic of the catabolic pathways! BIOCHEMISTRY ACADEMY",
+    "lecture": 1,
+    "explanation": "Catabolic routes converge on common intermediates while releasing usable energy. NADPH-dependent biosynthetic reductions are anabolic.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-01621",
+        "source": "omar mcq 2022.pdf",
+        "page": "31",
+        "sourceQuestionNumber": "20"
+      }
+    ],
+    "options": [
+      "They are typically synthetic pathways",
+      "They covert small molecules into larger ones",
+      "They are energy consuming pathways",
+      "They involve NADPH-dependent reductions reaction",
+      "They are convergent pathways"
+    ],
+    "correctIndex": 4
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-00379",
+    "type": "mcq",
+    "text": "Whenever the cell's AMP supply is increased, which of the following enzyme's activity is increased?",
+    "lecture": 1,
+    "explanation": "AMP signals low energy and allosterically activates PFK-1, increasing glycolytic flux.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-00379",
+        "source": "all Bio questions.pdf",
+        "page": "44",
+        "sourceQuestionNumber": "42"
+      }
+    ],
+    "options": [
+      "Hexokinase",
+      "Pyruvate kinase",
+      "Glucokinase",
+      "Phosphofructokinase-1 Scanned by CamScanner Carbohydrate Metabolism 42 IlI- Define :"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-01189",
+    "type": "mcq",
+    "text": "Glycolysis is regulated by",
+    "lecture": 1,
+    "explanation": "Hexokinase or glucokinase, PFK-1 and pyruvate kinase catalyze the three effectively irreversible glycolytic steps. These are control points that gluconeogenesis bypasses using different enzymes; PGK and GAPDH are reversible.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-01189",
+        "source": "CHO- Krebs mcq omar.pdf",
+        "page": "19",
+        "sourceQuestionNumber": "14"
+      }
+    ],
+    "options": [
+      "Glucokinase",
+      "Phosphofructokinase I",
+      "Pyruvate Kinase",
+      "All of the above BIOCHEMISTRY ACADEMY 19"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-01209",
+    "type": "mcq",
+    "text": "All the following statements are true except",
+    "lecture": 1,
+    "explanation": "Glucagon-driven phosphorylation inhibits hepatic pyruvate kinase, conserving substrates for glucose production. Insulin favors the active dephosphorylated form, while fructose-1,6-bisphosphate provides feed-forward activation.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-01209",
+        "source": "CHO- Krebs mcq omar.pdf",
+        "page": "22",
+        "sourceQuestionNumber": "34"
+      }
+    ],
+    "options": [
+      "Pyruvate kinase is active in phosphorylated form",
+      "Pyruvate kinase is inhibited by high ATP",
+      "Pyruvate kinase is activated by fructose 1,6 Bis-P",
+      "Pyruvate kinase is induced by insulin BIOCHEMISTRY ACADEMY 22"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-00609",
+    "type": "mcq",
+    "text": "Which of the following vitamins acts as coenzyme for transamination reaction?",
+    "lecture": 1,
+    "explanation": "PLP is the B6 coenzyme used by aminotransferases; niacin supplies NAD, biotin serves carboxylases, and TPP supports other carbon-transfer reactions.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-00609",
+        "source": "all Bio questions.pdf",
+        "page": "67",
+        "sourceQuestionNumber": "7"
+      }
+    ],
+    "options": [
+      "nicotinamide.",
+      "biotin.",
+      "thiamine pyrophosphate.",
+      "pyridoxal phosphate. Scanned by CamScanner Vitamins 65"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-00617",
+    "type": "mcq",
+    "text": "A fat-soluble vitamin that regulates blood clotting is",
+    "lecture": 1,
+    "explanation": "Vitamin K is a fat-soluble cofactor needed for gamma-carboxylation of coagulation proteins. Deficiency reduces their functional activity and can cause bleeding.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-00617",
+        "source": "all Bio questions.pdf",
+        "page": "68",
+        "sourceQuestionNumber": "15"
+      }
+    ],
+    "options": [
+      "Vitamin A",
+      "Vitamin K",
+      "Vitamin C",
+      "Niacin Scanned by CamScanner 66 Vitamins"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-00625",
+    "type": "mcq",
+    "text": "Pellagra preventing factor is:",
+    "lecture": 1,
+    "explanation": "Niacin supplies NAD/NADP and prevents the deficiency syndrome pellagra.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-00625",
+        "source": "all Bio questions.pdf",
+        "page": "69",
+        "sourceQuestionNumber": "23"
+      }
+    ],
+    "options": [
+      "Thiamin",
+      "Riboflavin",
+      "Niacin",
+      "Pyridoxine Scanned by CamScanner Vitamins 67"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-00633",
+    "type": "mcq",
+    "text": "Which one of these vitamins has antioxidant effect:",
+    "lecture": 1,
+    "explanation": "Vitamin E is a lipid-soluble antioxidant that interrupts oxidative damage to lipids; the other three are chiefly metabolic coenzyme precursors.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-00633",
+        "source": "all Bio questions.pdf",
+        "page": "70",
+        "sourceQuestionNumber": "31"
+      }
+    ],
+    "options": [
+      "Biotin",
+      "Folate",
+      "Thiamine",
+      "Vitamin E Scanned by CamScanner 68 Vitamins"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-00698",
+    "type": "mcq",
+    "text": "The \"backbone\" of a nucleic acid molecule consists of an alternating sequence of:",
+    "lecture": 1,
+    "explanation": "The nucleic-acid backbone alternates pentose sugars and phosphate groups, with bases attached to the sugars.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-00698",
+        "source": "all Bio questions.pdf",
+        "page": "76",
+        "sourceQuestionNumber": "15"
+      }
+    ],
+    "options": [
+      "Sugar and phosphate groups.",
+      "Sugar and base groups.",
+      "Phosphate and base groups.",
+      "Sugar, phosphate, and base groups Scanned by CamScanner 74 Nucleotides & Nucleic Acid Chemistry"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-00706",
+    "type": "mcq",
+    "text": "As regards histones of chromatid:",
+    "lecture": 1,
+    "explanation": "Histones are basic proteins enriched in positively charged lysine and arginine, favoring association with negatively charged DNA.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-00706",
+        "source": "all Bio questions.pdf",
+        "page": "77",
+        "sourceQuestionNumber": "23"
+      }
+    ],
+    "options": [
+      "They are acidic proteins.",
+      "They are negatively charged.",
+      "They are basic proteins rich in lysine and arginine.",
+      "There are 4 types of histones. Scanned by CamScanner Nucleotides & Nucleic Acid Chemistry 75"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-00714",
+    "type": "mcq",
+    "text": "In tRNA molecule D arm is named for the presence of the base:",
+    "lecture": 1,
+    "explanation": "Dihydrouracil is the base component of dihydrouridine, the modified residue that gives the D arm its name. It is distinct from the anticodon sequence and the T-loop modifications.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-00714",
+        "source": "all Bio questions.pdf",
+        "page": "78",
+        "sourceQuestionNumber": "31"
+      }
+    ],
+    "options": [
+      "Uracil",
+      "Pseudouracil",
+      "Dihydrouracil",
+      "Thymine Scanned by CamScanner 76 Nucleotides & Nucleic Acid Chemistry"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-00745",
+    "type": "mcq",
+    "text": "What is the role of topoisomerases in eukaryotic DNA replication?",
+    "lecture": 1,
+    "explanation": "Topoisomerases relieve torsional strain through transient cleavage and resealing; DNA ligase seals persistent nicks between fragments.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-00745",
+        "source": "all Bio questions.pdf",
+        "page": "81",
+        "sourceQuestionNumber": "6"
+      }
+    ],
+    "options": [
+      "Topoisomerase enzymes cut, uncoil and reseal the double stranded DNA",
+      "Topoisomerase enzymes bind to the origin of replication sites within double stranded DNA.",
+      "Topoisomerase enzymes open up the double stranded DNA at the replication fork.",
+      "Topoisomerase enzymes join the Okazaki fragments together with phosphodiester bonds. Scanned by CamScanner Replication"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-00753",
+    "type": "mcq",
+    "text": "In prokaryotes, DNA polymerase Ill is responsible for:",
+    "lecture": 1,
+    "explanation": "Bacterial DNA polymerase III elongates both leading and lagging strands. The difference between those strands is continuous versus fragment-by-fragment synthesis, not use of separate principal polymerases.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-00753",
+        "source": "all Bio questions.pdf",
+        "page": "82",
+        "sourceQuestionNumber": "14"
+      }
+    ],
+    "options": [
+      "Leading DNA strand synthesis.",
+      "Lagging DNA strand synthesis.",
+      "DNA repair.",
+      "a and b. 79 Scanned by CamScanner C 80 Replication"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-00760",
+    "type": "mcq",
+    "text": "Given that DNA polymerases are unable to synthesize DNA without a primer, what molecule serves as the primer for these enzymes during DNA replication?",
+    "lecture": 1,
+    "explanation": "Primase supplies a short RNA primer with a free 3′-OH, allowing DNA polymerase to begin elongation.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-00760",
+        "source": "all Bio questions.pdf",
+        "page": "83",
+        "sourceQuestionNumber": "21"
+      }
+    ],
+    "options": [
+      "Five carbon sugars",
+      "Deoxyribose alone",
+      "A short RNA molecule",
+      "Proteins with free hydroxyl groups Scanned by CamScanner Replication 81"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-00776",
+    "type": "mcq",
+    "text": "The role of the sigma factor in bacterial RNA polymerase is:",
+    "lecture": 1,
+    "explanation": "Sigma supplies promoter specificity and positions the bacterial polymerase to initiate transcription at an appropriate site.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-00776",
+        "source": "all Bio questions.pdf",
+        "page": "86",
+        "sourceQuestionNumber": "7"
+      }
+    ],
+    "options": [
+      "to catalyze RNA synthesis:",
+      "to position RNA polymerase correctly on the template DNA.",
+      "to terminate RNA synthesis.",
+      "to unwind the DNA template Scanned by CamScanner 84 Transcription"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-00784",
+    "type": "mcq",
+    "text": "Mature mammalian mRNA would be LEAST likely to contain:",
+    "lecture": 1,
+    "explanation": "Introns are removed during processing, while exons, 5′ cap and usually a poly-A tail remain in mature mammalian mRNA.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-00784",
+        "source": "all Bio questions.pdf",
+        "page": "87",
+        "sourceQuestionNumber": "15"
+      }
+    ],
+    "options": [
+      "a 5' cap structure.",
+      "a 3' poly A tail structure.",
+      "an exon.",
+      "an intron. Scanned by CamScanner I T Transcription 85"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-00790",
+    "type": "mcq",
+    "text": "What is the macromolecular complex that associates with introns during mRNA splicing?",
+    "lecture": 1,
+    "explanation": "Spliceosomes are ribonucleoprotein complexes that recognize intron boundaries and catalyze exon joining.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-00790",
+        "source": "all Bio questions.pdf",
+        "page": "88",
+        "sourceQuestionNumber": "22"
+      }
+    ],
+    "options": [
+      "Splicer",
+      "Ribosomes",
+      "Nuclear body",
+      "Spliceosomes Scanned by CamScanner Transcription 86"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-00816",
+    "type": "mcq",
+    "text": "Transfer RNA transfers",
+    "lecture": 1,
+    "explanation": "Charged tRNA delivers an amino acid to the ribosome and pairs its anticodon with an mRNA codon.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-00816",
+        "source": "all Bio questions.pdf",
+        "page": "91",
+        "sourceQuestionNumber": "7"
+      }
+    ],
+    "options": [
+      "Information from DNA to ribosomes",
+      "Information from mRNA to cytosol",
+      "Amino acids from cytosol to ribosomes",
+      "Proteins from ribosomes to cytosol Scanned by CamScanner Translation 89"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-00817",
+    "type": "mcq",
+    "text": "The first amino acyl transfer RNA which initiates translation in eukaryotes is:",
+    "lecture": 1,
+    "explanation": "Eukaryotic initiator tRNA carries methionine without formylation; bacterial initiation uses N-formylmethionine.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-00817",
+        "source": "all Bio questions.pdf",
+        "page": "92",
+        "sourceQuestionNumber": "8"
+      }
+    ],
+    "options": [
+      "MethionyltRNA",
+      "Formylmethiony| tRNA",
+      "Tyrosinyl tRNA",
+      "Alanyl tRNA"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-00824",
+    "type": "mcq",
+    "text": "Nonsense codons lead to:",
+    "lecture": 1,
+    "explanation": "Nonsense codons are termination signals, recognized by release factors that release the polypeptide.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-00824",
+        "source": "all Bio questions.pdf",
+        "page": "92",
+        "sourceQuestionNumber": "15"
+      }
+    ],
+    "options": [
+      "Amino acid activation",
+      "Initiation of protein synthesis",
+      "Termination of protein synthesis",
+      "Elongation of polypeptide chains Scanned by CamScanner Translation 90"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-00831",
+    "type": "mcq",
+    "text": "Which one of the following changes in the coding region of an mRNA (caused by point mutation) would result in translation of a protein identical to the normal protein",
+    "lecture": 1,
+    "explanation": "UCA and UCU both encode serine. UAA is stop, CCA encodes proline, and ACA encodes threonine.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-00831",
+        "source": "all Bio questions.pdf",
+        "page": "93",
+        "sourceQuestionNumber": "22"
+      }
+    ],
+    "options": [
+      "UCA: UAA",
+      "UCA: CCA",
+      "UCA: UCU",
+      "UCA: ACA Scanned by CamScanner Translation 91"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-00838",
+    "type": "mcq",
+    "text": "While the genetic code has 64 codons, there are only 20 naturally occurring amino acids. Consequently, some amino acids are encoded by more than one codon. This feature of the genetic code is an illustration of the genetic code being",
+    "lecture": 1,
+    "explanation": "Degeneracy is the assignment of multiple codons to one amino acid, allowing 61 sense codons to encode twenty standard amino acids.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-00838",
+        "source": "all Bio questions.pdf",
+        "page": "94",
+        "sourceQuestionNumber": "29"
+      }
+    ],
+    "options": [
+      "Degenerate",
+      "Duplicative",
+      "Nonoverlapping",
+      "Overlapping Scanned by CamScanner Translation 92 Translation III-Define:"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-00349",
+    "type": "mcq",
+    "text": "What type of transport that glucose utilize for gastrointestinal absorption?",
+    "lecture": 1,
+    "explanation": "Glucose enters enterocytes through Na+-coupled secondary active transport by SGLT1 and exits through GLUT2-mediated facilitated diffusion.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-00349",
+        "source": "all Bio questions.pdf",
+        "page": "40",
+        "sourceQuestionNumber": "12"
+      }
+    ],
+    "options": [
+      "Facilitated diffusion against conc.gradient",
+      "Active transport and facilitated diffusion",
+      "Passive transport and facilitated diffusion",
+      "Passive down the concentration gradient Scanned by CamScanner Carbohydrate Metabolis 38"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-00356",
+    "type": "mcq",
+    "text": "Which of the following is most likely to occur in a normal individual after «C ingesting a high-carbohydrate meal?",
+    "lecture": 1,
+    "explanation": "A carbohydrate-rich meal increases insulin secretion and favors uptake and storage of glucose; glucagon does not rise as the fed-state signal.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-00356",
+        "source": "all Bio questions.pdf",
+        "page": "41",
+        "sourceQuestionNumber": "19"
+      }
+    ],
+    "options": [
+      "Only insulin levels decrease.",
+      "Only insulin levels increase.",
+      "Only glucagon levels increase.",
+      "Both insulin and glucagon levels decrease. 61 61 IlI Scanned by CamScanner Carbohydrate Metabolise 39"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-00371",
+    "type": "mcq",
+    "text": "A type 1 diabetic neglects to take his insulin injections while on a weekend vacation. Cells of which tissue will be most greatly affected by this mistakes",
+    "lecture": 1,
+    "explanation": "Muscle uses insulin-regulated GLUT4, unlike basal transport in brain and erythrocytes; insulin omission most directly impairs muscle glucose uptake among these choices.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-00371",
+        "source": "all Bio questions.pdf",
+        "page": "43",
+        "sourceQuestionNumber": "34"
+      }
+    ],
+    "options": [
+      "Brain",
+      "Liver",
+      "Muscle",
+      "Red blood cells Scanned by CamScanner Carbohydrate Metabollsm 41"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-00290",
+    "type": "mcq",
+    "text": "Coupling sites in ETC are associated with:",
+    "lecture": 1,
+    "explanation": "Complexes I, III and IV pump protons; complex II passes electrons without proton pumping.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-00290",
+        "source": "all Bio questions.pdf",
+        "page": "32",
+        "sourceQuestionNumber": "6"
+      }
+    ],
+    "options": [
+      "Complex I, II, III.",
+      "Complex II, II, IV.",
+      "Complex I, II, IV.",
+      "Complex I, III, IV. Scanned by CamScanner Bioenergeties & TCA eycle 30"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-00297",
+    "type": "mcq",
+    "text": "All the enzymes of the TCA cycle are found free in the mitochondrial matrix except which is tightly bound to the inner mitochondrial membrane:",
+    "lecture": 1,
+    "explanation": "Succinate dehydrogenase is respiratory complex II embedded in the inner membrane; other TCA enzymes are in the matrix.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-00297",
+        "source": "all Bio questions.pdf",
+        "page": "33",
+        "sourceQuestionNumber": "13"
+      }
+    ],
+    "options": [
+      "Isocitrate dehydrogenase",
+      "Succinate dehydrogenase",
+      "Malate dehydrogenase",
+      "Citrate synthase Scanned by CamScanner Bioenergetics & TCA cycle 31"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-00304",
+    "type": "mcq",
+    "text": "The energy yield of complete oxidation of one mole of acetyl CoA through Krebs' cycle is:",
+    "lecture": 1,
+    "explanation": "One turn yields three NADH, one FADH2 and one GTP; modern 2.5/1.5 P/O values give 10 ATP equivalents, whereas 12 is the older convention.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-00304",
+        "source": "all Bio questions.pdf",
+        "page": "34",
+        "sourceQuestionNumber": "20"
+      }
+    ],
+    "options": [
+      "9 ATP",
+      "10 ATP",
+      "7.5 ATP",
+      "12 ATP Scanned by CamScanner 32 Bioenergetics & TCA cycle"
+    ],
+    "correctIndex": 1
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-00311",
+    "type": "mcq",
+    "text": "The following TCA intermediate is used for heme synthesis:",
+    "lecture": 1,
+    "explanation": "Succinyl-CoA combines with glycine at the first step of heme synthesis. The other listed TCA intermediates have different precursor roles, such as oxaloacetate in aspartate formation.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-00311",
+        "source": "all Bio questions.pdf",
+        "page": "35",
+        "sourceQuestionNumber": "27"
+      }
+    ],
+    "options": [
+      "Succinyl CoA",
+      "Malate",
+      "Citrate",
+      "a-ketoglutarate (C Scanned by CamScanner Blocnergetics & TCA cycle 33"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-01237",
+    "type": "mcq",
+    "text": "In TCA cycle, Acetyl CoA oxidation produces",
+    "lecture": 1,
+    "explanation": "Each TCA turn yields three NADH, one FADH2, two CO2 and one GTP or ATP equivalent. The nucleotide triphosphate comes directly from succinyl-CoA conversion to succinate rather than from the respiratory chain.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-01237",
+        "source": "CHO- Krebs mcq omar.pdf",
+        "page": "27",
+        "sourceQuestionNumber": "25"
+      }
+    ],
+    "options": [
+      "3 COz",
+      "2 NADH",
+      "2 ATP",
+      "2 FADH2",
+      "1 GTP BIOCHEMISTRY ACADEMY Answers of Krebs Cycle 3 3 1 5 6 789101112 13 14 15 16 17 18 19 20 21 22 25 b"
+    ],
+    "correctIndex": 4
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-00480",
+    "type": "mcq",
+    "text": "Celiac disease is immune mediated damage to small intestine in response to ingestion of",
+    "lecture": 1,
+    "explanation": "Gluten triggers an abnormal immune response that damages the small intestine in celiac disease; a gluten-free diet permits healing.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-00480",
+        "source": "all Bio questions.pdf",
+        "page": "54",
+        "sourceQuestionNumber": "6"
+      }
+    ],
+    "options": [
+      "Keratin",
+      "Collagen",
+      "Gluten",
+      "Albumin Scanned by CamScanner General Protein Metabolism 52"
+    ],
+    "correctIndex": 2
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-00541",
+    "type": "mcq",
+    "text": "Which out of the following amino acids is not needed for the synthesis of Glutathione?",
+    "lecture": 1,
+    "explanation": "Glutathione is the tripeptide glutamate-cysteine-glycine. The cysteine thiol supplies its reducing function, while the other two residues complete the peptide scaffold.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-00541",
+        "source": "all Bio questions.pdf",
+        "page": "59",
+        "sourceQuestionNumber": "6"
+      }
+    ],
+    "options": [
+      "Serine",
+      "Cysteine",
+      "Glutamic acid",
+      "Glycine Scanned by CamScanner Amino acld Metabollsm $7"
+    ],
+    "correctIndex": 0
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-00549",
+    "type": "mcq",
+    "text": "Melanin synthesis is decreased in",
+    "lecture": 1,
+    "explanation": "Classic PKU reduces phenylalanine-to-tyrosine conversion, limiting availability of the tyrosine precursor used for melanin.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-00549",
+        "source": "all Bio questions.pdf",
+        "page": "60",
+        "sourceQuestionNumber": "14"
+      }
+    ],
+    "options": [
+      "exposure to sun",
+      "alkaptonuria",
+      "vitamin B6 deficiency",
+      "phenylketonuria Scanned by CamScanner Amino acid Metabolism 58"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-00425",
+    "type": "mcq",
+    "text": "One of the following is not correct as regards acetyl-CoA carboxylase:",
+    "lecture": 1,
+    "explanation": "Insulin favors ACC dephosphorylation and activation, whereas glucagon-associated phosphorylation suppresses synthesis. Insulin inhibition is the false statement.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-00425",
+        "source": "all Bio questions.pdf",
+        "page": "48",
+        "sourceQuestionNumber": "7"
+      }
+    ],
+    "options": [
+      "It is stimulated by insulin",
+      "It is required for de novo synthesis of fatty acids",
+      "It is inhibited by glucagon",
+      "It is inhibited by insulin Scanned by CamScanner Lipid Metabolisms 46"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-00433",
+    "type": "mcq",
+    "text": "Carnitine is required for the transport of:",
+    "lecture": 1,
+    "explanation": "Carnitine carries long-chain acyl groups across the inner mitochondrial membrane; short-chain acids do not need this shuttle.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-00433",
+        "source": "all Bio questions.pdf",
+        "page": "49",
+        "sourceQuestionNumber": "15"
+      }
+    ],
+    "options": [
+      "Short chain fatty acids into the mitochondria",
+      "Triglycerides out of the liver",
+      "Triglycerides into the mitochondria",
+      "Long chain fatty acids into the mitochondria Scanned by CamScanner Lipid Metabolism 47"
+    ],
+    "correctIndex": 3
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-00439",
+    "type": "mcq",
+    "text": "A 5-year-old boy presents with altered mental status, heart failure, and muscle weakness. His serum level of ketones and glucose are abnormally low. He is diagnosed with primary carnitine deficiency. In which of the following is carnitine directly involved?",
+    "lecture": 1,
+    "explanation": "Carnitine participates in transport of long-chain fatty acyl groups into the mitochondrial matrix, rather than the activation reaction or ω-oxidation.",
+    "reviewStatus": "source_grounded_nonblind_ai_review",
+    "sourceOccurrences": [
+      {
+        "sourceId": "BIO-DRV-20260921-00439",
+        "source": "all Bio questions.pdf",
+        "page": "50",
+        "sourceQuestionNumber": "21"
+      }
+    ],
+    "options": [
+      "Activation of fatty acids",
+      "Transport of fatty acyl CoA",
+      "P-Oxidation",
+      "w- Oxidation Scanned by CamScanner Lipid Metabolism 48"
+    ],
+    "correctIndex": 1
+  }
+]

@@ -1,0 +1,959 @@
+{
+  "parents": 6973,
+  "parentsAndChildren": 7041,
+  "flags": [
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-02107",
+      "issues": [
+        "options.2: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-02122",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-02224",
+      "issues": [
+        "options.2: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-02241",
+      "issues": [
+        "options.1: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-00155",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-00179",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-00187",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-00203",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-01712",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-01737",
+      "issues": [
+        "options.1: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-01772",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-01797",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-01911",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-01936",
+      "issues": [
+        "text: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-01986",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-02218",
+      "issues": [
+        "text: OCR/footer/script corruption",
+        "options.4: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-02221",
+      "issues": [
+        "text: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-02227",
+      "issues": [
+        "text: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-02257",
+      "issues": [
+        "text: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-02263",
+      "issues": [
+        "text: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-00163",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-01453",
+      "issues": [
+        "text: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-02147",
+      "issues": [
+        "options.4: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-02180",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-01698",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-01728",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-01752",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-01753",
+      "issues": [
+        "text: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-01766",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-01854",
+      "issues": [
+        "text: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-01897",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-01952",
+      "issues": [
+        "text: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-01736",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-01935",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-02142",
+      "issues": [
+        "options.4: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-01903",
+      "issues": [
+        "options.4: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-01993",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-02244",
+      "issues": [
+        "options.2: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-00018",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-00026",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-00034",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-00042",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-00050",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-01094",
+      "issues": [
+        "options.4: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-01531",
+      "issues": [
+        "text: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-00092",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-00108",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-01119",
+      "issues": [
+        "options.4: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-01131",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-01145",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-01597",
+      "issues": [
+        "options.4: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-01125",
+      "issues": [
+        "options.4: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-00257",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-01334",
+      "issues": [
+        "options.4: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-01361",
+      "issues": [
+        "options.1: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-02052",
+      "issues": [
+        "options.4: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-02082",
+      "issues": [
+        "options.0: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-00244",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-00251",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-01278",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-01609",
+      "issues": [
+        "text: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-02053",
+      "issues": [
+        "options.0: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-02090",
+      "issues": [
+        "text: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-01164",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-02081",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-02059",
+      "issues": [
+        "options.0: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-01621",
+      "issues": [
+        "text: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-00379",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-01189",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-01209",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-00609",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-00617",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-00625",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-00633",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-00698",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-00706",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-00714",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-00745",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-00753",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-00760",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-00776",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-00784",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-00790",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-00816",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-00824",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-00831",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-00838",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-00349",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-00356",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-00371",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-00290",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-00297",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-00304",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-00311",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-01237",
+      "issues": [
+        "options.4: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-00480",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-00541",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-00549",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-00425",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-00433",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-00439",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "MBMG-1",
+      "id": "MBMG1-FINAL-0149",
+      "issues": [
+        "explanation: OCR/footer/script corruption",
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "MBMG-1",
+      "id": "MBMG1-FINAL-0208",
+      "issues": [
+        "options.0: OCR/footer/script corruption",
+        "options.2: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "MBMG-1",
+      "id": "MBMG1-FINAL-0214",
+      "issues": [
+        "explanation: OCR/footer/script corruption",
+        "options.4: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "MINF-1",
+      "id": "MINF1-CH1-MICR-0269",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "MINF-1",
+      "id": "MINF1-CH1-MICR-0276",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    },
+    {
+      "module": "MINF-1",
+      "id": "MINF1-CH1-MICR-0336",
+      "issues": [
+        "options.3: OCR/footer/script corruption"
+      ]
+    }
+  ],
+  "duplicates": [
+    {
+      "module": "IAE-1",
+      "chapterId": 8,
+      "id": "IAE-1-SRC-0849",
+      "canonicalModule": "IAE-1",
+      "canonicalChapterId": 2,
+      "canonicalId": "IAE-1-SRC-0118",
+      "reason": "Equivalent complete stem, alternatives and answer (or special-format payload).",
+      "original": {
+        "id": "IAE-1-SRC-0849",
+        "type": "mcq",
+        "lecture": 26,
+        "text": "Which one of the following structures has no lymphatics?",
+        "explanation": "Brain parenchyma has no conventional lymphatic vessels; interstitial fluid drains through perivascular and cerebrospinal-fluid pathways. The liver, skin, intestine, and pleura all have lymphatic vessels.",
+        "keyConcept": "The brain has no conventional intraparenchymal lymphatics.",
+        "options": [
+          "Liver",
+          "Skin",
+          "Intestine",
+          "Brain",
+          "Pleura"
+        ],
+        "correctIndex": 3
+      }
+    },
+    {
+      "module": "IAE-1",
+      "chapterId": 8,
+      "id": "IAE-1-SRC-0850",
+      "canonicalModule": "IAE-1",
+      "canonicalChapterId": 8,
+      "canonicalId": "IAE-1-SRC-0636",
+      "reason": "Equivalent complete stem, alternatives and answer (or special-format payload).",
+      "original": {
+        "id": "IAE-1-SRC-0850",
+        "type": "mcq",
+        "lecture": 26,
+        "text": "If the lymphatics of the upper limb become obstructed, the arm on that side is likely to:",
+        "explanation": "Lymphatic obstruction prevents return of protein-rich interstitial fluid to the circulation, producing lymphoedema. It does not directly obstruct arterial inflow or cause tissue-fluid loss.",
+        "keyConcept": "Lymphatic obstruction causes lymphoedema.",
+        "options": [
+          "Become ischemic",
+          "Become oedematous",
+          "Become hyperemic",
+          "Lose tissue fluid",
+          "Remain unchanged"
+        ],
+        "correctIndex": 1
+      }
+    },
+    {
+      "module": "IBM-1",
+      "chapterId": 107,
+      "id": "IBM1-BIO-DRV-20260921-02124",
+      "canonicalModule": "IBM-1",
+      "canonicalChapterId": 107,
+      "canonicalId": "IBM1-BIO-DRV-20260921-01865",
+      "reason": "Equivalent complete stem, alternatives and answer (or special-format payload).",
+      "original": {
+        "id": "IBM1-BIO-DRV-20260921-02124",
+        "type": "mcq",
+        "text": "Which of the following is the largest molecule ?",
+        "lecture": 1,
+        "explanation": "Glycogen is a many-unit glucose polymer. Glucose, amino acids and the glutathione tripeptide are much smaller molecules.",
+        "reviewStatus": "source_grounded_nonblind_ai_review",
+        "sourceOccurrences": [
+          {
+            "sourceId": "BIO-DRV-20260921-02124",
+            "source": "proteins MCQ- marwa hamdy.pdf",
+            "page": "6",
+            "sourceQuestionNumber": "24"
+          }
+        ],
+        "options": [
+          "Glycine",
+          "Glucose",
+          "Glutamic acid",
+          "Glutathione",
+          "Glycogen"
+        ],
+        "correctIndex": 4
+      }
+    },
+    {
+      "module": "IBM-1",
+      "chapterId": 108,
+      "id": "IBM1-BIO-DRV-20260921-01577",
+      "canonicalModule": "IBM-1",
+      "canonicalChapterId": 108,
+      "canonicalId": "IBM1-BIO-DRV-20260921-01144",
+      "reason": "Equivalent complete stem, alternatives and answer (or special-format payload).",
+      "original": {
+        "id": "IBM1-BIO-DRV-20260921-01577",
+        "type": "mcq",
+        "text": "Choose the Tetra-enoic fatty acid out of the following",
+        "lecture": 1,
+        "explanation": "Arachidonic acid has four double bonds; linoleic has two, oleic one and linolenic three.",
+        "reviewStatus": "source_grounded_nonblind_ai_review",
+        "sourceOccurrences": [
+          {
+            "sourceId": "BIO-DRV-20260921-01577",
+            "source": "omar mcq 2022.pdf",
+            "page": "23",
+            "sourceQuestionNumber": "31"
+          }
+        ],
+        "options": [
+          "Arachidonic acid",
+          "Oleic acid",
+          "Linoleic acid",
+          "Linolenic acid"
+        ],
+        "correctIndex": 0
+      }
+    },
+    {
+      "module": "IBM-1",
+      "chapterId": 109,
+      "id": "IBM1-BIO-DRV-20260921-01559",
+      "canonicalModule": "IBM-1",
+      "canonicalChapterId": 109,
+      "canonicalId": "IBM1-BIO-BGFORM-LIP-Q08",
+      "reason": "Equivalent complete stem, alternatives and answer (or special-format payload).",
+      "original": {
+        "id": "IBM1-BIO-DRV-20260921-01559",
+        "type": "mcq",
+        "text": "Which of the following lipids is not a constituent of biological membranes",
+        "lecture": 1,
+        "explanation": "Free cholesterol participates in bilayers; cholesteryl esters are neutral storage/transport lipids. The other listed lipids are membrane constituents.",
+        "reviewStatus": "source_grounded_nonblind_ai_review",
+        "sourceOccurrences": [
+          {
+            "sourceId": "BIO-DRV-20260921-01559",
+            "source": "omar mcq 2022.pdf",
+            "page": "21",
+            "sourceQuestionNumber": "13"
+          }
+        ],
+        "options": [
+          "Cardiolipin",
+          "Cholesterol ester",
+          "Gangliosides",
+          "Sphingomyelin",
+          "Plasmalogen"
+        ],
+        "correctIndex": 1
+      }
+    },
+    {
+      "module": "P1-1",
+      "chapterId": 2,
+      "id": "P1-1-CH2-CLIN-0041",
+      "canonicalModule": "P1-1",
+      "canonicalChapterId": 2,
+      "canonicalId": "P1-1-CH2-CLIN-0026",
+      "reason": "Equivalent complete stem, alternatives and answer (or special-format payload).",
+      "original": {
+        "id": "P1-1-CH2-CLIN-0041",
+        "type": "mcq",
+        "lecture": 3,
+        "text": "Beginning a paragraph with a large dropped initial capital latter, is called",
+        "explanation": "The correct answer is B. The Drop Cap command enlarges the opening letter of a paragraph so it hangs down over two or more lines, a decorative device used in books and magazines. The distractors all describe how characters sit on the line rather than an enlarged initial.",
+        "keyConcept": "Drop Cap lives on the INSERT tab (Text group), not the Home tab - a common exam slip",
+        "options": [
+          "Word wrapping",
+          "Drop Cap",
+          "Superscript",
+          "Subscript"
+        ],
+        "correctIndex": 1
+      }
+    },
+    {
+      "module": "MINF-1",
+      "chapterId": 1,
+      "id": "MINF1-CH1-MICR-0239",
+      "canonicalModule": "MINF-1",
+      "canonicalChapterId": 1,
+      "canonicalId": "MINF1-CH1-MICR-0238",
+      "reason": "Equivalent complete stem, alternatives and answer (or special-format payload).",
+      "original": {
+        "id": "MINF1-CH1-MICR-0239",
+        "type": "mcq",
+        "lecture": 7,
+        "text": "Which one of the following Salmonella species can be a cause of food poisoning?",
+        "explanation": "The correct answer is Salmonella enteritidis. The item depends on identifying medically important bacteria by Gram reaction, shape, culture requirement, biochemical test, virulence factor, disease syndrome, or specimen. The distractors overlap clinically but fail the specific laboratory or pathogenic clue.",
+        "keyConcept": "Medically important bacteria: Which one of the following Salmonella species can be a cause of food poisoning? → Salmonella enteritidis.",
+        "options": [
+          "Salmonella enteritidis",
+          "Salmonella para typhi C",
+          "Salmonella cholerasuis",
+          "Salmonella para typhi A",
+          "Salmonella typhi"
+        ],
+        "correctIndex": 0,
+        "modelAnswer": null
+      }
+    }
+  ]
+}

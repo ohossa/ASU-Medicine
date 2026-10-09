@@ -1,0 +1,13 @@
+
+> replicated-quiz-app@0.0.1 test
+> vitest run src/app/utils/questionTable.test.ts src/app/lib/publishedEdits.test.ts
+
+
+ RUN  v4.1.11 /Users/omarhossa/Documents/Medcine ASU/ASU-Medical-Portal
+
+
+ Test Files  2 passed (2)
+      Tests  6 passed (6)
+   Start at  16:32:51
+   Duration  371ms (transform 68ms, setup 115ms, import 54ms, tests 6ms, environment 378ms)
+

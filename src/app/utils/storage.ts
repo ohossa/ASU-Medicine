@@ -5,9 +5,13 @@
 //  - getQuizHistory properly typed — no `as QuizResult[]` cast on untrusted JSON
 //  - Added `getQuizHistoryForModule` helper to filter by module code
 
+import {historyStorageKey} from '../learning/historyScope';
 import { triggerCloudSync } from '../hooks/useCloudSync';
 
 export interface QuizResult {
+  topicResults?: import("../learning/customPractice").TopicScore[];
+  questionSnapshot?:string;
+  scoreKind?:          "objective" | "self-reviewed" | "mixed";
   id:                  string;
   date:                string;
   chapterId:           number;
@@ -34,7 +38,7 @@ function isQuizResult(v: unknown): v is QuizResult {
 
 export function getQuizHistory(): QuizResult[] {
   try {
-    const raw = localStorage.getItem(HISTORY_KEY);
+    const raw = localStorage.getItem(historyStorageKey());
     if (!raw) return [];
     const parsed = JSON.parse(raw);
     if (!Array.isArray(parsed)) return [];
@@ -55,13 +59,14 @@ export function saveQuizResult(result: Omit<QuizResult, 'id' | 'date'>): QuizRes
     date: new Date().toISOString(),
   };
   const history = getQuizHistory();
-  localStorage.setItem(HISTORY_KEY, JSON.stringify([entry, ...history].slice(0, MAX_RESULTS)));
+  localStorage.setItem(historyStorageKey(), JSON.stringify([entry, ...history].slice(0, MAX_RESULTS)));
   triggerCloudSync();
+  window.dispatchEvent(new Event("asu-history-updated"));
   return entry;
 }
 
 export function clearQuizHistory(): void {
-  localStorage.removeItem(HISTORY_KEY);
+  localStorage.removeItem(historyStorageKey());
   triggerCloudSync();
 }
 

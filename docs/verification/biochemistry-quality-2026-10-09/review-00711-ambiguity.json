@@ -1,0 +1,31 @@
+{
+  "module": "IBM-1",
+  "id": "IBM1-BIO-DRV-20260921-00711",
+  "question_hash": "c8d4282e92e38cc8f963188bf5ad030d5ec9ef4408d1a55f1d44abdb078acdc8",
+  "decision": "exclude",
+  "changes": {},
+  "reason": "Unqualified high-energy-intermediate wording does not distinguish UTP from UDP-glucose. UTP contains high-energy phosphoanhydride bonds, and UDP-glucose is a biologically activated sugar nucleotide donor. Original options and wording confirmed visually; exclude the single-answer item rather than invent a narrower stem.",
+  "evidence": [
+    {
+      "title": "Using Simple Donors to Drive the Equilibria of Glycosyltransferase-Catalyzed Reactions",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3177962/",
+      "locator": "Abstract and Introduction, NDP-sugar donors in their traditional biological context; Results, UDP-Glc",
+      "proposition": "NDP-sugars such as UDP-glucose are conventionally high-energy sugar donors in biological context, although energy is relative to the acceptor and the paper tests other contexts.",
+      "accessMethod": "Opened original-research full text via web tool; Abstract, Introduction, Results and thermodynamic figure description actually returned."
+    },
+    {
+      "title": "Designated original PDF visual comparison",
+      "source": "all Bio questions.pdf",
+      "page": "78",
+      "proposition": "Stem uses high energy intermediate without specifying a triphosphate, and alternatives include both UTP and UDP-Glc.",
+      "accessMethod": "Rendered original PDF and inspected actual image."
+    }
+  ],
+  "sourcePageReview": [
+    {
+      "source": "all Bio questions.pdf",
+      "page": "78",
+      "method": "Original PDF rendered at 1.5x and image actually visually inspected; selected suspicious-page review, not complete source occurrence reconciliation."
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+
+> replicated-quiz-app@0.0.1 typecheck
+> tsc --noEmit -p tsconfig.app.json && tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.api.json
+
+src/app/App.tsx(90,3): error TS6133: 'isModuleActive' is declared but its value is never read.
+src/app/search/engine.test.ts(2,74): error TS2307: Cannot find module './engine' or its corresponding type declarations.
+src/app/search/engine.test.ts(8,48): error TS7006: Parameter 'e' implicitly has an 'any' type.
+src/app/search/engine.test.ts(12,29): error TS7006: Parameter 'e' implicitly has an 'any' type.
+src/app/search/engine.test.ts(13,57): error TS7006: Parameter 'e' implicitly has an 'any' type.
+src/app/search/engine.test.ts(14,58): error TS7006: Parameter 'e' implicitly has an 'any' type.
+src/app/search/engine.test.ts(24,57): error TS7006: Parameter 'p' implicitly has an 'any' type.
+src/app/search/engine.test.ts(25,55): error TS7006: Parameter 'p' implicitly has an 'any' type.
+src/app/search/engine.test.ts(25,71): error TS7006: Parameter 'p' implicitly has an 'any' type.

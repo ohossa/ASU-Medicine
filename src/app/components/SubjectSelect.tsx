@@ -1,3 +1,5 @@
+import {TopicPracticePicker} from './TopicPracticePicker';
+import {latestTopicResult} from '../learning/customPractice';
 import { ShuffleSwitch } from '../preferences/ShuffleSwitch';
 import React, { useState, useLayoutEffect, useMemo } from 'react';
 import {
@@ -11,7 +13,6 @@ import {
   Pill,
   Stethoscope,
   Biohazard,
-  Zap,
   HelpCircle,
   ArrowRight,
   CheckCircle,
@@ -67,6 +68,7 @@ interface Props {
 }
 
 interface LatestResult {
+  isCustom?:boolean;
   correct: number;
   total: number;
   pct: number;
@@ -161,7 +163,7 @@ const FALLBACK: Record<string, { en: string; ar: string }> = {
   syllabus:       { en: 'Syllabus', ar: 'المنهج' },
   latestResult:   { en: 'Latest Result', ar: 'آخر نتيجة' },
   elapsed:        { en: 'elapsed', ar: 'مستغرق' },
-  quickStartTitle:{ en: 'Feeling confident?', ar: 'هل تشعر بالثقة؟' },
+
   quickStartDesc: { en: 'Take on every subject in this chapter in one combined session.', ar: 'اختبر كل مواد هذا الفصل في جلسة واحدة مجمعة.' },
   startAll:       { en: 'Start All Subjects', ar: 'ابدأ كل المواد' },
   completed:      { en: 'Completed', ar: 'مكتمل' },
@@ -169,37 +171,11 @@ const FALLBACK: Record<string, { en: string; ar: string }> = {
 };
 
 /** Defensive view over QuizResult without depending on its exact shape. */
-const matchLatestResult = (history: QuizResult[], chapterId: number, subjectName: string): LatestResult | null => {
-  for (const result of history) {
-    const r = result as unknown as Record<string, unknown>;
-    if (r['chapterId'] !== chapterId || r['subjectName'] !== subjectName) continue;
-
-    const num = (...keys: string[]): number | null => {
-      for (const k of keys) {
-        const v = r[k];
-        if (typeof v === 'number' && Number.isFinite(v)) return v;
-      }
-      return null;
-    };
-
-    const correct = num('correct', 'score', 'correctCount') ?? 0;
-    const total = num('total', 'totalQuestions', 'questionCount') ?? 0;
-    const explicitPct = num('pct', 'percentage');
-    const pct = total > 0
-      ? Math.round((correct / total) * 100)
-      : Math.max(0, Math.min(100, Math.round(explicitPct ?? 0)));
-    const elapsedSeconds = num('elapsedSeconds', 'timeElapsed', 'elapsed', 'duration', 'time') ?? 0;
-
-    return { correct, total, pct, elapsedSeconds };
-  }
-  return null;
-};
-
 /* ------------------------------------------------------------------ */
 /* Component                                                           */
 /* ------------------------------------------------------------------ */
 
-export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart, breadcrumbPath, userButton, moduleCode }: Props) {
+export function SubjectSelect({ chapter, onBack, onSelectSubject, breadcrumbPath, userButton, moduleCode }: Props) {
   const { t, language } = useLanguage();
   const isRTL = language === 'ar';
 
@@ -310,10 +286,10 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart, 
     const result: Record<string, LatestResult | null> = {};
     for (const subject of chapter.subjects) {
       const key = isLectureBased ? subject.name : subject.id;
-      result[key] = matchLatestResult(history, chapter.id, subject.name);
+      result[key] = latestTopicResult(history, chapter.id, subject.name, moduleCode);
     }
     return result;
-  }, [history, chapter, isLectureBased]);
+  }, [history, chapter, isLectureBased, moduleCode]);
 
   const allQuestions = useMemo(() => chapter.subjects.flatMap((s) => s.questions), [chapter]);
   const activeSubjects = chapter.subjects.filter((s) => s.questions.length > 0).length;
@@ -468,7 +444,7 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart, 
                     {isCompleted && (
                       <span className="inline-flex items-center gap-1 rounded-full bg-physiology/10 px-2 py-0.5 text-[10px] font-medium text-physiology">
                         <CheckCircle size={11} />
-                        {label('completed')}
+                        {latest?.isCustom ? (isRTL?'تم التدريب':'Practiced') : label('completed')}
                       </span>
                     )}
                   </div>
@@ -519,10 +495,10 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart, 
                               {latest.pct}% ({latest.correct}/{latest.total})
                             </span>
                           </span>
-                          <span className="inline-flex items-center gap-1 tabular-nums text-muted-foreground dark:text-white/40">
+                          {!latest.isCustom&&<span className="inline-flex items-center gap-1 tabular-nums text-muted-foreground dark:text-white/40">
                             <Clock size={11} />
                             {fmtElapsed(latest.elapsedSeconds)} {label('elapsed')}
-                          </span>
+                          </span>}
                         </div>
                       </motion.div>
                     )}
@@ -540,35 +516,7 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, onQuickStart, 
           </motion.div>
         )}
 
-        {/* ---------------- Quick start banner ---------------- */}
-        {allQuestions.length > 0 && (
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ type: 'spring', stiffness: 220, damping: 26, delay: 0.25 }}
-            className="mt-8 flex flex-wrap items-center justify-between gap-4 bg-card dark:bg-white/[0.02] border border-border dark:border-white/[0.06] glass-panel rounded-3xl p-6"
-          >
-            <div className="flex items-center gap-3.5">
-              <span className={`flex h-11 w-11 items-center justify-center rounded-2xl ${accent.softBg}`}>
-                <Zap size={20} className={accent.text} />
-              </span>
-              <div>
-                <p className="text-sm font-semibold text-foreground dark:text-white">{label('quickStartTitle')}</p>
-                <p className="text-xs text-muted-foreground dark:text-white/45">{label('quickStartDesc')}</p>
-              </div>
-            </div>
-            <motion.button
-              type="button"
-              whileHover={{ scale: 1.04, transition: { type: 'spring', stiffness: 400, damping: 18 } }}
-              whileTap={{ scale: 0.97 }}
-              onClick={() => onQuickStart(allQuestions)}
-              className={`inline-flex items-center gap-2 rounded-2xl px-5 py-2.5 text-sm font-semibold text-white dark:text-black shadow-lg ${accent.solidBg}`}
-            >
-              {label('startAll')}
-              <ForwardArrow size={16} strokeWidth={2.5} />
-            </motion.button>
-          </motion.div>
-        )}
+        {allQuestions.length > 0 && <TopicPracticePicker chapter={chapter} moduleCode={moduleCode} onStart={onSelectSubject}/>}
       </div>
     </div>
   );

@@ -1,0 +1,24 @@
+{
+  "original_parents": 6302,
+  "original_children": 306,
+  "retained_parents": 6179,
+  "retained_children": 301,
+  "explanations": 6480,
+  "excluded_parents": 123,
+  "types": {
+    "mcq": 4758,
+    "case": 87,
+    "essay": 904,
+    "matching": 8,
+    "truefalse": 325,
+    "fillblank": 97
+  },
+  "collections": {
+    "practice": 5508,
+    "past-exams": 671
+  },
+  "median_explanation_words": 18,
+  "max_explanation_words": 54,
+  "keys_changed": 0,
+  "medical_certification_added": false
+}

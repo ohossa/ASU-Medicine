@@ -1,3 +1,9 @@
+import {topicScores,questionScore,resumeCustomPractice,selectedPractice,practiceTopics,type TopicScore} from './learning/customPractice';
+import {RouteDataGate} from './loading/RouteDataGate';
+import {resolveStudyLink} from './utils/studyLinks';
+import {LearningProvider,useLearning} from './learning/LearningProvider';
+import {TITLES} from './learning/contracts';
+import '../pages/learning-hub.css';
 import { restoreHistoryQuestions, resolveHistoryChapter } from './utils/historyQuestions';
 import { useBankRevision } from './components/CorrectionStatus';
 import { useOwnerAccess } from './reports/useOwnerAccess';
@@ -12,7 +18,6 @@ import safeStorage from './utils/safeStorage';
 import { ProgressProvider } from './store/progress';
 import { FX } from './lib/fx.config';
 import { useDeferredMount } from './hooks/useDeferredMount';
-import { checkAnswerCorrect } from './utils/quiz';
 import { FeatureErrorBoundary } from './components/FeatureErrorBoundary';
 import { useViewTransition } from './hooks/useViewTransition';
 import { ClerkThemeTogglePortal } from './components/ClerkThemeTogglePortal';
@@ -21,6 +26,7 @@ import { AcademicYearProfilePage } from './components/profile/AcademicYearProfil
 
 // Lazy-loaded components for routing/modals
 const AdminPortal = lazy(() => import('../pages/AdminPortal'));
+const LearningHub = lazy(() => import('../pages/LearningHub'));
 const Dashboard = lazy(() => import('../pages/Dashboard'));
 const YearModules = lazy(() => import('../pages/YearModules'));
 const StudyMode = lazy(() => import('../pages/StudyMode'));
@@ -49,7 +55,7 @@ import {
   Flag,
   Globe,
   Check,
-  Home
+  HeartHandshake
 } from 'lucide-react';
 import { toGitTopicChapter } from './lib/gitBank';
 import type { ChapterData, SubjectData, Question, Screen, QuizAnswer, QuestionCollection } from './types';
@@ -58,10 +64,8 @@ const GitBankSelect = lazy(() => import('./components/GitBankSelect').then(m => 
 const ChapterSelect = lazy(() => import('./components/ChapterSelect').then(m => ({ default: m.ChapterSelect })));
 const QuizInterface = lazy(() => import('./components/QuizInterface').then(m => ({ default: m.QuizInterface })));
 const ResultsDashboard = lazy(() => import('./components/ResultsDashboard').then(m => ({ default: m.ResultsDashboard })));
-const HistoryScreen = lazy(() => import('./components/HistoryScreen').then(m => ({ default: m.HistoryScreen })));
 const FlaggedQuestionsScreen = lazy(() => import('./components/FlaggedQuestionsScreen').then(m => ({ default: m.FlaggedQuestionsScreen })));
-const AnalyticsDashboard = lazy(() => import('./components/AnalyticsDashboard').then(m => ({ default: m.AnalyticsDashboard })));
-const ClinicalCaseSolver = lazy(() => import('./components/ClinicalCaseSolver').then(m => ({ default: m.ClinicalCaseSolver })));
+
 const QuestionSearch = lazy(() => import('./components/QuestionSearch').then(m => ({ default: m.QuestionSearch })));
 const MarksCalculator = lazy(() => import('./components/MarksCalculator').then(m => ({ default: m.MarksCalculator })));
 const SyllabusTrackerPage = lazy(() => import('../pages/SyllabusTrackerPage').then(m => ({ default: m.SyllabusTrackerPage })));
@@ -69,9 +73,9 @@ const SyllabusTrackerPage = lazy(() => import('../pages/SyllabusTrackerPage').th
 import { ThemeProvider } from './context/ThemeContext';
 import { useTheme } from './hooks/useTheme';
 import { useLanguage } from './hooks/useLanguage';
-import { saveQuizResult, getQuizHistory } from './utils/storage';
+import { saveQuizResult } from './utils/storage';
 import type { QuizResult } from './utils/storage';
-import { SignedIn, SignedOut, UserButton, useUser } from '@clerk/clerk-react';
+import { SignedIn, SignedOut, UserButton, useUser, useAuth } from '@clerk/clerk-react';
 const LoginScreen = lazy(() => import('./components/LoginScreen').then(m => ({ default: m.LoginScreen })));
 import LoadingScreen from './components/LoadingScreen';
 import { useQuizSession, clearLocalDrafts } from './hooks/useQuizSession';
@@ -81,15 +85,20 @@ import { useCloudSync } from './hooks/useCloudSync';
 import { useAcademicYear } from './preferences/useAcademicYear';
 import { YearSelectionModal } from './components/YearSelectionModal';
 import {
-  ensureDataLoaded,
+  ensureModuleDataLoaded,
+  isModuleDataLoaded,
+  startCorrectionsRefresh,
   getChaptersForModuleAndMode,
   findQuestionById,
-  isModuleActive,
   SYLLABUS_MODULES
 } from './data';
 import type { ModuleInfo } from './data';
 
+import {currentPractice} from './learning/currentPractice';
+import {continuationQuestions} from './learning/continuation';
+import {freezeAttempt,restoreAttempt} from './learning/attemptSnapshot';
 interface QuizPayload {
+  childAnchor?:string;
   chapter: ChapterData;
   subject: SubjectData | null;
   questions: Question[];
@@ -97,6 +106,9 @@ interface QuizPayload {
 }
 
 interface ResultPayload {
+  topicResults?:TopicScore[];
+  originalScore?:{correct:number;total:number;pct:number};
+  historyNotice?:string;
   chapter: ChapterData;
   subject: SubjectData | null;
   questions: Question[];
@@ -133,6 +145,7 @@ function QuizFlowWrapper({
   handleQuickStart,
   quizPayload,
   handleFinishQuiz,
+  handleAnswerXP,
   resultPayload,
   handleRetake,
   handleRetryMissed,
@@ -158,6 +171,7 @@ function QuizFlowWrapper({
   handleSelectSubject: (s: SubjectData, q: Question[]) => void;
   handleQuickStart: (q: Question[]) => void;
   quizPayload: QuizPayload | null;
+  handleAnswerXP: (question: Question, answer: QuizAnswer) => void;
   handleFinishQuiz: (answers: Record<number, QuizAnswer>, elapsedSeconds: number, flaggedQuestions: Set<number>) => void;
   resultPayload: ResultPayload | null;
   handleRetake: () => void;
@@ -211,7 +225,7 @@ function QuizFlowWrapper({
   return (
     <>
       {screen === 'chapters' && (
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<LoadingScreen compact label="Opening this view…"/>}>
           {selectedModule.code === 'MGL-3' ? <GitBankSelect
             chapters={activeChapters}
             collection={gitCollection}
@@ -244,7 +258,7 @@ function QuizFlowWrapper({
       )}
 
       {screen === 'subjects' && selectedChapter && (
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<LoadingScreen compact label="Opening this view…"/>}>
           <SubjectSelect
             chapter={selectedChapter}
             moduleCode={selectedModule.code}
@@ -267,15 +281,17 @@ function QuizFlowWrapper({
       )}
 
       {screen === 'quiz' && quizPayload && (
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<LoadingScreen compact label="Opening this view…"/>}>
           <QuizInterface
             chapter={quizPayload.chapter}
             subject={quizPayload.subject}
             questions={quizPayload.questions}
             onBack={() => setScreen('subjects')}
             onFinish={handleFinishQuiz}
+            onAnswer={handleAnswerXP}
             userButton={customUserButton}
             savedSession={quizPayload.savedSession}
+            childAnchor={quizPayload.childAnchor}
             breadcrumbPath={selectedModule.code === 'MGL-3' ? [
               ...gitCollectionCrumbs,
               { label: quizPayload.chapter.title.replace(/^Past exams — /, ''), onClick: () => setScreen('subjects') },
@@ -286,7 +302,7 @@ function QuizFlowWrapper({
       )}
 
       {screen === 'results' && resultPayload && (
-        <Suspense fallback={<div>Loading...</div>}>
+        <Suspense fallback={<LoadingScreen compact label="Opening this view…"/>}>
           <ResultsDashboard
             chapter={resultPayload.chapter}
             subject={resultPayload.subject}
@@ -294,6 +310,9 @@ function QuizFlowWrapper({
             answers={resultPayload.answers}
             elapsedSeconds={resultPayload.elapsedSeconds}
             flaggedQuestions={resultPayload.flaggedQuestions}
+            originalScore={resultPayload.originalScore}
+            historyNotice={resultPayload.historyNotice}
+            topicResults={resultPayload.topicResults}
             onRetake={handleRetake}
             onRetryMissed={handleRetryMissed}
             onTryAnotherSubject={() => {
@@ -380,7 +399,7 @@ function MainApp() {
   // ── 1. State Initializations ──────────────────────────────────────────────────
 
   // Student Year tracking
-  const {year: studentYear, saveYear: setStudentYear, loading: yearLoading, error: yearError, retry: retryYear} = useAcademicYear();
+  const {year: studentYear, saveYear: setStudentYear, loading: yearLoading, error: yearError, retry: retryYear, localPreview} = useAcademicYear();
 
   // Navigation states
   const [screen, setScreen] = useState<Screen>(() => {
@@ -463,46 +482,6 @@ function MainApp() {
   const isRestoringHistoryRef = useRef(false);
 
   // ── 2. Helpers and Data Functions ─────────────────────────────────────────────
-
-  const yearProgress = useMemo(() => {
-    try {
-      if (!studentYear) return { completed: 0, total: 0, pct: 0 };
-
-      const historyList = getQuizHistory().filter(r => r && typeof r === 'object');
-      let totalSubjects = 0;
-      let completedSubjects = 0;
-
-      const semesters = SYLLABUS_MODULES[studentYear];
-      if (semesters) {
-        Object.values(semesters).forEach((modules) => {
-          modules.forEach((mod) => {
-            if (isModuleActive(mod.code)) {
-              const chapters = getChaptersForModuleAndMode(mod.code, 'mixed');
-              chapters.forEach((chapter) => {
-                chapter.subjects.forEach((subject) => {
-                  totalSubjects++;
-                  const isSolved = historyList.some(
-                    (r) => r.moduleCode === mod.code &&
-                           String(r.chapterId) === String(chapter.id) &&
-                           r.subjectName === subject.name
-                  );
-                  if (isSolved) {
-                    completedSubjects++;
-                  }
-                });
-              });
-            }
-          });
-        });
-      }
-
-      const pct = totalSubjects > 0 ? Math.round((completedSubjects / totalSubjects) * 100) : 0;
-      return { completed: completedSubjects, total: totalSubjects, pct };
-    } catch (e) {
-      console.error(e);
-      return { completed: 0, total: 0, pct: 0 };
-    }
-  }, [studentYear]);
 
   // ── 3. Life-Cycle Effects ─────────────────────────────────────────────────────
 
@@ -636,7 +615,7 @@ function MainApp() {
   };
 
   const handleSelectSubject = (subject: SubjectData, questions: Question[]) => {
-    const saved = loadQuizSession(transformedChapter!.id, subject.name);
+    const saved = loadQuizSession(transformedChapter!.id, subject.sessionKey ?? subject.name);
     if (saved && !saved.finished && (saved.questionIds ? sessionMatchesQuestions(questions, saved) : selectedModule?.code !== 'MGL-3')) {
       setResumePayload(saved);
       return;
@@ -659,41 +638,56 @@ function MainApp() {
     });
   };
 
+  const learning = useLearning();
+  const openedStudyLink=useRef('');
+  const [studyLinkError,setStudyLinkError]=useState('');
+  useEffect(()=>{
+    const params=new URLSearchParams(location.search);
+    if(!params.has('question')&&!params.has('chapter')) { openedStudyLink.current='';return; }
+    const match=location.pathname.match(/^\/year-(\d+)\/([^/]+)\/(mcq|essay|mixed)$/);
+    if(!match)return;
+    const signature=location.pathname+location.search;
+    if(openedStudyLink.current===signature)return;
+    if(params.has('missed')&&!learning.data){setStudyLinkError('Sync your learning records to open missed-question practice.');return;}
+    const module=lookupModule(match[2]);if(!module)return;
+    if(!isModuleDataLoaded(module.code))return;
+    const chapters=getChaptersForModuleAndMode(module.code,match[3] as 'mcq'|'essay'|'mixed');
+    const target=resolveStudyLink(chapters,params);
+    openedStudyLink.current=signature;
+    if(!target){setStudyLinkError('This question or chapter is no longer available in the published bank. Choose another chapter.');setScreen('chapters');return;}
+    setStudyLinkError('');setSelectedYear(Number(match[1]));setSelectedModule(module);setStudyMode(match[3] as 'mcq'|'essay'|'mixed');
+    const chapter=module.code==='MGL-3'?toGitTopicChapter(target.chapter):target.chapter;
+    const subject=params.has('question')?{...(target.subject??chapter.subjects[0]),name:(target.subject?.name??'All subjects')+' · Search result',questions:target.questions}:target.subject;
+    setSelectedChapter(chapter);
+    let questions=params.has('question')?target.questions:prepareQuestions(target.questions);
+    if(params.has('missed')){const missed=new Set(learning.data?.entries.filter(e=>e.moduleCode===module.code&&e.type!=='essay'&&!e.correct).map(e=>e.questionId)??[]);questions=questions.filter(q=>[...missed].some(id=>id===String(q.id)||id.startsWith(String(q.id)+'/')));if(!questions.length){setStudyLinkError('No latest missed questions remain in this topic.');setScreen('chapters');return;}}
+    const resume=params.get('resume');const saved=resume?loadQuizSession(chapter.id,resume):null;
+    const restored=saved?continuationQuestions(chapter,saved):null;
+    if(resume&&!restored){setStudyLinkError('Your saved attempt has changed or is no longer on this device. The original draft is preserved; choose a chapter to start a new attempt.');setScreen('chapters');return;}
+    const validSaved=saved??undefined;const custom=saved?resumeCustomPractice(chapter,saved,module.code):null;if(restored)questions=custom?.questions??restored;
+    setQuizPayload({chapter,childAnchor:params.get('child')??undefined,subject:resume?(custom?.subject??{...(target.subject??chapter.subjects[0]),name:resume,questions}):params.has('missed')?missedPracticeSubject(subject,questions,chapter.accentColor):subject,questions:validSaved?(validSaved.questionIds?restoreQuestionOrder(questions,validSaved.questionIds)!:questions):questions,savedSession:validSaved});setScreen('quiz');
+  },[location.pathname,location.search,bankRevision,learning.data]);
+
   const handleFinishQuiz = (answers: Record<number, QuizAnswer>, elapsedSeconds: number, flaggedQuestions: Set<number>) => {
     const questions = quizPayload!.questions;
     
-    let total = 0;
-    let correct = 0;
+    const scoreParts=questions.map((q,i)=>questionScore(q,answers[i]));
+    const total=scoreParts.reduce((n,s)=>n+s.total,0);
+    const correct=scoreParts.reduce((n,s)=>n+s.correct,0);
+    const topicResults=topicScores(questions,answers);
 
-    questions.forEach((q, i) => {
-      const ans = answers[i];
-      if (q.type === 'case' && q.subQuestions) {
-        total += q.subQuestions.length;
-        if (ans) {
-          q.subQuestions.forEach((subQ) => {
-            const subAns = (ans as Record<string, unknown>)[subQ.id];
-            if (subAns !== undefined) {
-              const isSubCorrect = checkAnswerCorrect(subQ, subAns);
-              if (isSubCorrect) correct++;
-            }
-          });
-        }
-      } else {
-        total += 1;
-        if (ans !== undefined && checkAnswerCorrect(q, ans)) {
-          correct++;
-        }
-      }
-    });
-
+    if(selectedModule && selectedYear===studentYear) learning.submit({moduleCode:selectedModule.code,items:questions.flatMap((q,i)=>answers[i]===undefined?[]:[{questionId:String(q.id),answer:answers[i]}])});
     setIsFromHistory(false);
     saveQuizResult({
+      questionSnapshot:freezeAttempt(questions),
+      topicResults,
       moduleCode: selectedModule?.code,
       year: selectedYear ?? undefined,
       semester: selectedSemester ?? undefined,
       chapterId: quizPayload!.chapter.id,
       chapterTitle: quizPayload!.chapter.title,
       subjectName: quizPayload!.subject?.name ?? 'All Subjects',
+      scoreKind: questions.every(q=>q.type==='essay')?'self-reviewed':questions.some(q=>q.type==='essay'||q.type==='case'||q.type==='casestudy')?'mixed':'objective',
       correct,
       total,
       pct: total > 0 ? Math.round((correct / total) * 100) : 0,
@@ -703,8 +697,8 @@ function MainApp() {
       flaggedQuestionIds: Array.from(flaggedQuestions)
     });
 
-    clearQuizSession(quizPayload!.chapter.id, quizPayload!.subject?.name ?? 'all');
-    clearLocalDrafts(quizPayload!.chapter.id, quizPayload!.subject?.name ?? 'all');
+    clearQuizSession(quizPayload!.chapter.id, quizPayload!.subject?.sessionKey ?? quizPayload!.subject?.name ?? 'all');
+    clearLocalDrafts(quizPayload!.chapter.id, quizPayload!.subject?.sessionKey ?? quizPayload!.subject?.name ?? 'all');
 
     transitionTo(() => {
       setResultPayload({
@@ -712,6 +706,7 @@ function MainApp() {
         subject: quizPayload!.subject,
         questions,
         answers,
+        topicResults,
         elapsedSeconds,
         flaggedQuestions
       });
@@ -719,15 +714,20 @@ function MainApp() {
     });
   };
 
-  const handleSelectHistory = (result: QuizResult, source: 'chapters' | 'history' = 'history') => {
-    const modCode = result.moduleCode || 'MEM-2';
-    const yr = result.year || 2;
-    const sem = result.semester || 2;
+  const handleSelectHistory = async (result: QuizResult, source: 'chapters' | 'history' = 'history') => {
+    const modCode = result.moduleCode;
+    if (!modCode) { window.alert('This historical session has no module metadata and cannot be restored safely. Its saved score is preserved in My Progress activity.'); return; }
+    const scope=Object.entries(SYLLABUS_MODULES).flatMap(([year,sems])=>Object.entries(sems).flatMap(([semester,list])=>list.filter(m=>m.code===modCode).map(()=>({year:Number(year),semester:Number(semester)}))))[0];
+    if (!scope) return;
+    const yr=scope.year,sem=scope.semester;
 
+    try{await ensureModuleDataLoaded(modCode);}catch{window.alert('This bank could not be loaded. Your saved result is preserved. Please retry.');return;}
+    const originalQuestions=restoreAttempt(result.questionSnapshot);
     const moduleChapters = getChaptersForModuleAndMode(modCode, 'mixed');
     const storedChapter = resolveHistoryChapter(moduleChapters, result.chapterId, result.chapterTitle, result.questionIds);
-    if (!storedChapter) return;
-    const chapter = result.moduleCode === 'MGL-3' ? toGitTopicChapter(storedChapter) : storedChapter;
+    if (!storedChapter&&!originalQuestions) {window.alert('These questions are no longer published. Your original score remains in Activity.');return;}
+    const fallback:ChapterData={id:result.chapterId,title:result.chapterTitle,subtitle:'Saved attempt',emoji:'',page:0,lectureRange:'',accentColor:'clinical' as const,subjects:[{id:'clinical',name:result.subjectName,iconName:'BookOpen',lectures:'Saved attempt',lectureCount:1,questions:originalQuestions??[]}]};
+    const chapter = result.moduleCode === 'MGL-3' ? toGitTopicChapter(storedChapter??fallback) : storedChapter??fallback;
 
     let subject = chapter.subjects.find((s) => s.name === result.subjectName) || null;
 
@@ -736,13 +736,15 @@ function MainApp() {
     let flaggedSet = new Set<number>((result.flaggedQuestionIds || []).map(Number));
     if (result.questionIds && Array.isArray(result.questionIds)) {
       const restored = restoreHistoryQuestions(result.questionIds,
-        chapter.subjects.flatMap(s => s.questions), answersRecord, result.flaggedQuestionIds || []);
+        originalQuestions??chapter.subjects.flatMap(s => s.questions), answersRecord, result.flaggedQuestionIds || []);
       questionsList = restored.questions;
       answersRecord = restored.answers;
       flaggedSet = restored.flags;
     } else {
       questionsList = subject ? subject.questions : chapter.subjects.flatMap(s => s.questions);
     }
+
+    if (result.topicResults?.length) subject={...(chapter.subjects[0]??fallback.subjects[0]),name:result.subjectName,questions:questionsList};
 
     if (result.subjectName.endsWith(' · Missed questions')) {
       const originalName = result.subjectName.slice(0, -' · Missed questions'.length);
@@ -752,15 +754,6 @@ function MainApp() {
 
     // Try to locate the module definition
     let targetModule = SYLLABUS_MODULES[yr]?.[sem]?.find((m: ModuleInfo) => m.code === modCode) || null;
-    if (!targetModule && modCode === 'MEM-2') {
-      targetModule = {
-        code: 'MEM-2',
-        name: 'Endocrine System & Metabolism Module',
-        cp: 5.5,
-        marks: 110,
-        keywords: ['endocrine', 'metabolism', 'mem']
-      };
-    }
 
     transitionTo(() => {
       setSelectedYear(yr);
@@ -776,6 +769,9 @@ function MainApp() {
         subject,
         questions: questionsList,
         answers: normalizeQuizAnswers(questionsList, answersRecord),
+        originalScore:{correct:result.correct,total:result.total,pct:result.pct},
+        topicResults:result.topicResults,
+        historyNotice:originalQuestions?'Reviewing the question content and key saved with this attempt.':'Historical score preserved. Questions below use today’s bank; withdrawn items may be absent and current keys may differ.',
         elapsedSeconds: result.elapsedSeconds,
         flaggedQuestions: flaggedSet,
       });
@@ -786,12 +782,20 @@ function MainApp() {
     });
   };
 
+  const publishedPractice=(old:Question[])=>{
+    if(!selectedModule)return [];
+    const current=currentPractice(old,getChaptersForModuleAndMode(selectedModule.code,'mixed').flatMap(c=>c.subjects.flatMap(s=>s.questions)));
+    if(current.length!==old.length)setStudyLinkError(`${old.length-current.length} withdrawn questions were omitted. New practice always uses the current published key.`);
+    return current;
+  };
   const handleRetryMissed = (missed: Question[]) => {
     if (!resultPayload || !missed.length) return;
-    const questions = prepareQuestions(missed);
+    const current=publishedPractice(missed);if(!current.length){window.alert('These missed questions are no longer published. Your historical score is preserved.');return;}
+    const questions = prepareQuestions(current);
     const subject = missedPracticeSubject(resultPayload.subject, questions, resultPayload.chapter.accentColor);
-    clearQuizSession(resultPayload.chapter.id, subject.name);
-    clearLocalDrafts(resultPayload.chapter.id, subject.name);
+    if(questions.some(q=>q.practiceTopic))subject.sessionKey=selectedPractice(resultPayload.chapter,practiceTopics(resultPayload.chapter,selectedModule?.code),new Set(questions.map(q=>String(q.id)))).subject.sessionKey;
+    clearQuizSession(resultPayload.chapter.id, subject.sessionKey??subject.name);
+    clearLocalDrafts(resultPayload.chapter.id, subject.sessionKey??subject.name);
     transitionTo(() => {
       setIsFromHistory(false);
       setQuizPayload({chapter: resultPayload.chapter, subject, questions, savedSession: undefined});
@@ -802,10 +806,12 @@ function MainApp() {
 
   const handleRetake = () => {
     if (!quizPayload) return;
+    const current=publishedPractice(quizPayload.questions);if(!current.length){window.alert('These questions are no longer published. Your historical score is preserved.');return;}
     transitionTo(() => {
-      clearQuizSession(quizPayload.chapter.id, quizPayload.subject?.name ?? 'all');
-      clearLocalDrafts(quizPayload.chapter.id, quizPayload.subject?.name ?? 'all');
-      setQuizPayload({ ...quizPayload, savedSession: undefined, questions: prepareQuestions(quizPayload.questions) });
+      clearQuizSession(quizPayload.chapter.id, quizPayload.subject?.sessionKey ?? quizPayload.subject?.name ?? 'all');
+      clearLocalDrafts(quizPayload.chapter.id, quizPayload.subject?.sessionKey ?? quizPayload.subject?.name ?? 'all');
+      const custom=current.some(q=>q.practiceTopic)?selectedPractice(quizPayload.chapter,practiceTopics(quizPayload.chapter,selectedModule?.code),new Set(current.map(q=>String(q.id)))):null;
+      setQuizPayload({ ...quizPayload, subject:custom?.subject??quizPayload.subject, savedSession: undefined, questions: prepareQuestions(custom?.questions??current) });
       setScreen('quiz');
     });
   };
@@ -900,27 +906,20 @@ function MainApp() {
         <LanguageProfilePage />
       </UserButton.UserProfilePage>
 
+      <UserButton.UserProfilePage label="Learning profile" labelIcon={<GraduationCap size={16}/>} url="learning-profile">
+        <div className={`learning-hero reward-banner-${learning.data?.profile.banner??'default'}`}><div><h2>{user?.firstName??'Your learning profile'}</h2><p>{learning.data?`Level ${learning.data.profile.level} · ${learning.data.profile.xp} personal XP`:'Your learning profile will appear after cloud sync.'}</p><p>{TITLES.find(t=>t.id===learning.data?.profile.title)?.name??'Medical Student'}</p><button className="learning-primary mt-4" onClick={()=>navigate('/learning')}>Open progress and rewards</button></div></div>
+      </UserButton.UserProfilePage>
       <UserButton.MenuItems>
+        <UserButton.Action label={language === "en" ? "Support ASUCodes" : "دعم ASUCodes"} labelIcon={<HeartHandshake size={16}/>} onClick={() => window.location.assign("/support")}/>
         {hasOwnerAccess && (
           <UserButton.Action label="Admin portal" labelIcon={<Layers size={16}/>} onClick={() => navigate('/admin')}/>
         )}
-        <UserButton.Action
-          label={language === 'en' ? "Dashboard" : "اللوحة الرئيسية"}
-          labelIcon={<Home size={16} className="text-physiology" />}
-          onClick={() => {
-            transitionTo(() => {
-              setQuizPayload(null);
-              setResultPayload(null);
-              navigate('/');
-            });
-          }}
-        />
 
         <UserButton.Action
-          label={language === 'en' ? "Performance Dashboard" : "لوحة تحليلات الأداء"}
+          label={language === 'en' ? "My Progress" : "تقدمي"}
           labelIcon={<Activity size={16} className="text-[#2dd4bf]" />}
           onClick={() => {
-            transitionTo(() => navigate('/analytics'));
+            transitionTo(() => navigate('/learning'));
           }}
         />
 
@@ -941,7 +940,7 @@ function MainApp() {
         />
 
         <UserButton.Action
-          label="Report Bug / Support"
+          label="Report a website issue"
           labelIcon={<Mail size={16} className="text-gray-500" />}
           onClick={() => {
             setShowSupportModal(true);
@@ -949,7 +948,7 @@ function MainApp() {
         />
       </UserButton.MenuItems>
     </UserButton>
-  ), [user, hasOwnerAccess, language, transitionTo, navigate, setQuizPayload, setResultPayload, setShowPortalsModal, setShowSupportModal, studentYear, setStudentYear, setScreen, setSelectedYear, setSelectedSemester, setSelectedModule, setStudyMode, setSelectedChapter]);
+  ), [user, hasOwnerAccess, language, transitionTo, navigate, setQuizPayload, setResultPayload, setShowPortalsModal, setShowSupportModal, studentYear, setStudentYear, setScreen, setSelectedYear, setSelectedSemester, setSelectedModule, setStudyMode, setSelectedChapter, learning.data?.profile]);
 
   return (
     <div className="min-h-screen text-gray-900 dark:text-gray-100 font-manrope selection:bg-physiology/20 selection:text-physiology-dark overflow-x-hidden">
@@ -1016,15 +1015,15 @@ function MainApp() {
           <div className="absolute bottom-[-20%] right-[-10%] w-[50%] h-[50%] bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-clinical/10 to-transparent dark:from-clinical/5 rounded-full mix-blend-multiply dark:mix-blend-screen animate-pulse duration-10000 will-change-transform transform-gpu" style={{ animationDelay: '2s' }}></div>
         </div>
 
-        <AnimatePresence mode="wait">
-          <CorrectionStatus />
-          <Routes location={location}>
+        <>
+          <CorrectionStatus />{studyLinkError&&<p role="alert" className="p-4 text-center">{studyLinkError}</p>}
+          <RouteDataGate year={studentYear}><Routes location={location}>
             {/* Main Dashboard page */}
             <Route path="/" element={
               <Suspense fallback={<div className="fixed inset-0 bg-background pointer-events-none" />}>
                 {yearLoading ? <div role="status" className="p-8 text-center text-muted-foreground">Loading your saved year…</div> : <Dashboard studentYear={studentYear}
                   userButton={customUserButton} 
-                  onOpenTrackerSelector={() => setShowTrackerSelector(true)} 
+                  onOpenTrackerSelector={() => navigate('/learning')}
                 />}
               </Suspense>
             } />
@@ -1089,6 +1088,7 @@ function MainApp() {
                     handleSelectSubject={handleSelectSubject}
                     handleQuickStart={handleQuickStart}
                     quizPayload={quizPayload}
+                    handleAnswerXP={(q,answer)=>{if(selectedModule && selectedYear===studentYear)learning.submit({moduleCode:selectedModule.code,items:[{questionId:String(q.id),answer}]});}}
                     handleFinishQuiz={handleFinishQuiz}
                     resultPayload={resultPayload}
                     handleRetake={handleRetake}
@@ -1105,62 +1105,36 @@ function MainApp() {
 
             <Route path="/admin/*" element={<FeatureErrorBoundary name="AdminPortal"><Suspense fallback={<div role="status">Loading admin portal…</div>}><AdminPortal userButton={customUserButton}/></Suspense></FeatureErrorBoundary>} />
             {/* Tools pages */}
-            <Route path="/history" element={
-              <Suspense fallback={<div>Loading...</div>}>
-                <HistoryScreen
-                  onBack={() => navigate('/')}
-                  onSelectHistory={(res) => handleSelectHistory(res, 'history')}
-                  userButton={customUserButton}
-                />
-              </Suspense>
-            } />
+            <Route path="/learning" element={<Suspense fallback={<div role="status">Loading your learning…</div>}><LearningHub key={user?.id} userButton={customUserButton} onSelectHistory={res=>handleSelectHistory(res,'history')}/></Suspense>}/>
+            <Route path="/study-tracker" element={<Navigate to="/learning?view=progress" replace/>}/>
+            <Route path="/history" element={<Navigate to="/learning?view=activity" replace/>}/>
 
-            <Route path="/case-solver" element={
-              <Suspense fallback={<div>Loading...</div>}>
-                <ClinicalCaseSolver
-                  onBack={() => navigate('/')}
-                  userButton={customUserButton}
-                />
-              </Suspense>
-            } />
+            <Route path="/case-solver" element={<Navigate to="/" replace/>}/>
 
             <Route path="/marks-calculator" element={
               <FeatureErrorBoundary name="MarksCalculator">
-                <Suspense fallback={<div>Loading...</div>}>
-                  {yearLoading ? <div role="status" className="p-8 text-center text-muted-foreground">Loading your saved year…</div> : <MarksCalculator studentYear={studentYear}
+                <Suspense fallback={<LoadingScreen compact label="Opening this view…"/>}>
+                  <MarksCalculator studentYear={studentYear??selectedYear??1}
                     onBack={() => navigate('/')}
                     userButton={customUserButton}
-                  />}
-                </Suspense>
-              </FeatureErrorBoundary>
-            } />
-
-            <Route path="/question-search" element={
-              <Suspense fallback={<div>Loading...</div>}>
-                <QuestionSearch
-                  onBack={() => navigate('/')}
-                  userButton={customUserButton}
-                />
-              </Suspense>
-            } />
-
-            <Route path="/analytics" element={
-              <FeatureErrorBoundary name="AnalyticsDashboard">
-                <Suspense fallback={<div>Loading...</div>}>
-                  <AnalyticsDashboard
-                    onBack={() => navigate('/')}
-                    userButton={customUserButton}
-                    history={getQuizHistory()}
-                    studentName={user ? (user.fullName || `${user.firstName} ${user.lastName}`.trim() || 'Student') : 'Student'}
-                    studentYear={studentYear}
-                    progress={yearProgress}
                   />
                 </Suspense>
               </FeatureErrorBoundary>
             } />
 
+            <Route path="/question-search" element={
+              <Suspense fallback={<LoadingScreen compact label="Opening this view…"/>}>
+                <QuestionSearch key={user?.id}
+                  onBack={() => navigate('/')}
+                  userButton={customUserButton}
+                />
+              </Suspense>
+            } />
+
+            <Route path="/analytics" element={<Navigate to="/learning?view=overview" replace/>}/>
+
             <Route path="/flagged-questions" element={
-              <Suspense fallback={<div>Loading...</div>}>
+              <Suspense fallback={<LoadingScreen compact label="Opening this view…"/>}>
                 <FlaggedQuestionsScreen
                   onBack={() => navigate('/')}
                   onPracticeQuiz={(ch, subName, qs) => {
@@ -1193,20 +1167,21 @@ function MainApp() {
             
             {['1', '2', '3', '4', '5'].map(yr => (
               <Route key={`year-tracker-${yr}`} path={`/year-${yr}/:code/tracker`} element={
-                <Suspense fallback={<div>Loading...</div>}>
-                  <SyllabusTrackerPage userButton={customUserButton} />
+                <Suspense fallback={<LoadingScreen compact label="Opening this view…"/>}>
+                  {yearLoading ? <div role="status">Loading your year…</div> : studentYear===Number(yr) ? <SyllabusTrackerPage key={user?.id} userButton={customUserButton} /> : <Navigate to="/learning" replace/>}
                 </Suspense>
               } />
             ))}
 
           <Route path="*" element={<Navigate to="/" replace />} />
-        </Routes>
+        </Routes></RouteDataGate>
 
         {resumePayload && (
           <QuizResumeCard
             open={!!resumePayload}
             current={resumePayload.current}
             total={(() => {
+              if(resumePayload.questionIds)return resumePayload.questionIds.length;
               const sub = transformedChapter?.subjects.find(s => s.name === resumePayload?.subjectName);
               if (sub) return sub.questions.length;
               return transformedChapter?.subjects.flatMap(s => s.questions).length ?? 0;
@@ -1215,8 +1190,9 @@ function MainApp() {
             answeredCount={Object.values(resumePayload.answers).filter(a => a !== undefined && a !== null).length}
             onResume={() => {
               if (!resumePayload || !transformedChapter) return;
-              const subject = transformedChapter.subjects.find(s => s.name === resumePayload.subjectName) || null;
-              const questions = subject ? subject.questions : transformedChapter.subjects.flatMap(s => s.questions);
+              const custom=resumeCustomPractice(transformedChapter,resumePayload,selectedModule?.code);
+              const subject = custom?.subject??transformedChapter.subjects.find(s => s.name === resumePayload.subjectName) ?? null;
+              const questions = custom?.questions??(subject ? subject.questions : transformedChapter.subjects.flatMap(s => s.questions));
               transitionTo(() => {
                 setQuizPayload({ chapter: transformedChapter, subject, questions: resumePayload.questionIds ? restoreQuestionOrder(questions, resumePayload.questionIds)! : questions, savedSession: resumePayload });
                 setResumePayload(null);
@@ -1226,8 +1202,9 @@ function MainApp() {
             onRestart={() => {
               if (!transformedChapter || !resumePayload) return;
               clearQuizSession(transformedChapter.id, resumePayload.subjectName);
-              const subject = transformedChapter.subjects.find(s => s.name === resumePayload.subjectName) || null;
-              const questions = subject ? subject.questions : transformedChapter.subjects.flatMap(s => s.questions);
+              const custom=resumeCustomPractice(transformedChapter,resumePayload,selectedModule?.code);
+              const subject = custom?.subject??transformedChapter.subjects.find(s => s.name === resumePayload.subjectName) ?? null;
+              const questions = custom?.questions??(subject ? subject.questions : transformedChapter.subjects.flatMap(s => s.questions));
               setResumePayload(null);
               transitionTo(() => {
                 setQuizPayload({ chapter: transformedChapter, subject, questions: prepareQuestions(questions) });
@@ -1238,7 +1215,7 @@ function MainApp() {
           />
         )}
 
-      </AnimatePresence>
+      </>
     </main>
 
       <AnimatePresence>
@@ -1297,7 +1274,7 @@ function MainApp() {
 
       {/* YEAR SELECTION ONBOARDING MODAL */}
       {!yearLoading && !studentYear && (
-        <YearSelectionModal onSelect={setStudentYear} loadError={yearError} onRetry={retryYear} />
+        <YearSelectionModal localPreview={localPreview} onSelect={setStudentYear} loadError={yearError} onRetry={retryYear} />
       )}
 
       {/* SUPPORT & BUG REPORT MODAL */}
@@ -1318,7 +1295,7 @@ function MainApp() {
                 <Mail size={20} />
               </div>
               <h3 className="font-archivo text-xl font-bold tracking-tight">
-                Report Bug / Support
+                Report a website issue
               </h3>
             </div>
 
@@ -1567,53 +1544,15 @@ function MainApp() {
 }
 
 export default function App() {
-  // Start account preference loading alongside the bank and vitals animation.
-  const bootYear = useAcademicYear();
-  const [showApp, setShowApp] = useState(false);
-  const [dataReady, setDataReady] = useState(false);
-  const [progress, setProgress] = useState(0);
-  const deferredMounted = useDeferredMount();
-
-  // Start data loading immediately
-  useEffect(() => {
-    ensureDataLoaded().then(() => setDataReady(true)).catch(() => setDataReady(true));
-    // Warm the first navigation views while the vitals screen is visible.
-    void import('../pages/Dashboard').catch(() => {});
-    void import('../pages/YearModules').catch(() => {});
-  }, []);
-
-  // Animate progress bar (0→100 over 2400ms)
-  useEffect(() => {
-    const start = performance.now();
-    let raf: number;
-    const tick = (now: number) => {
-      const t = Math.min((now - start) / 2400, 1);
-      setProgress((1 - Math.pow(1 - t, 3)) * 100);
-      if (t < 1) {
-        raf = requestAnimationFrame(tick);
-      }
-    };
-    raf = requestAnimationFrame(tick);
-    return () => cancelAnimationFrame(raf);
-  }, []);
-
-  // When both visual timer AND data are ready, show app
-  useEffect(() => {
-    if (dataReady && !bootYear.loading && progress >= 99) {
-      // Wait a tiny beat so the bar is visually at 100%, then fade out
-      const t = setTimeout(() => setShowApp(true), 300);
-      return () => clearTimeout(t);
-    }
-  }, [dataReady, progress, bootYear.loading]);
+  const {isLoaded,isSignedIn}=useAuth();
+  const deferredMounted=useDeferredMount();
+  useEffect(()=>{void import('../pages/Dashboard');void import('../pages/YearModules');},[]);
+  useEffect(()=>{if(isLoaded&&isSignedIn){performance.mark('asu:shell-ready');void startCorrectionsRefresh();}},[isLoaded,isSignedIn]);
 
   return (
     <ThemeProvider>
-      {/* Single smooth loading screen — stays visible until everything is ready */}
-      <LoadingScreen
-        isLoading={!showApp || bootYear.loading}
-        progress={dataReady ? 100 : progress}
-      />
-      {showApp && (
+      {!isLoaded&&<LoadingScreen/>}
+      {isLoaded && (
         <>
 
           {/* Dynamic Floating Background Blobs & Interactive Dots */}
@@ -1637,7 +1576,7 @@ export default function App() {
 
           <SignedIn>
             <BrowserRouter>
-              <ReportProvider><ProgressProvider>
+              <ReportProvider><LearningProvider><ProgressProvider>
                 <MainApp />
                 {FX.DEFERRED_FX ? (
                   deferredMounted && (
@@ -1654,7 +1593,7 @@ export default function App() {
                     </Suspense>
                   )
                 )}
-              </ProgressProvider></ReportProvider>
+              </ProgressProvider></LearningProvider></ReportProvider>
             </BrowserRouter>
           </SignedIn>
           <SignedOut>

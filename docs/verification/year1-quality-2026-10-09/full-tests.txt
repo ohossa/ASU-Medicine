@@ -1,0 +1,103 @@
+
+> replicated-quiz-app@0.0.1 test
+> vitest run
+
+
+ RUN  v4.1.11 /Users/omarhossa/Documents/Medcine ASU/ASU-Medical-Portal
+
+ ❯ src/test/reports/learning-completeness.test.ts (0 test)
+stderr | src/test/reports/learning-hub.test.tsx > shows only the selected year and labels unavailable content honestly
+The above error occurred in the <LearningHub> component:
+
+    at LearningHub (/Users/omarhossa/Documents/Medcine ASU/ASU-Medical-Portal/src/pages/LearningHub.tsx:26:3)
+    at Router (/Users/omarhossa/Documents/Medcine ASU/ASU-Medical-Portal/node_modules/react-router/dist/development/chunk-GR4NQCSD.js:9996:13)
+    at MemoryRouter (/Users/omarhossa/Documents/Medcine ASU/ASU-Medical-Portal/node_modules/react-router/dist/development/chunk-GR4NQCSD.js:9906:3)
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+
+stderr | src/test/reports/learning-hub.test.tsx > keeps high-level cosmetics locked and makes public rankings opt-in
+The above error occurred in the <LearningHub> component:
+
+    at LearningHub (/Users/omarhossa/Documents/Medcine ASU/ASU-Medical-Portal/src/pages/LearningHub.tsx:26:3)
+    at Router (/Users/omarhossa/Documents/Medcine ASU/ASU-Medical-Portal/node_modules/react-router/dist/development/chunk-GR4NQCSD.js:9996:13)
+    at MemoryRouter (/Users/omarhossa/Documents/Medcine ASU/ASU-Medical-Portal/node_modules/react-router/dist/development/chunk-GR4NQCSD.js:9906:3)
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+
+stderr | src/test/reports/learning-hub.test.tsx > unifies overview, progress, activity and rewards with labelled semester scope
+The above error occurred in the <LearningHub> component:
+
+    at LearningHub (/Users/omarhossa/Documents/Medcine ASU/ASU-Medical-Portal/src/pages/LearningHub.tsx:26:3)
+    at Router (/Users/omarhossa/Documents/Medcine ASU/ASU-Medical-Portal/node_modules/react-router/dist/development/chunk-GR4NQCSD.js:9996:13)
+    at MemoryRouter (/Users/omarhossa/Documents/Medcine ASU/ASU-Medical-Portal/node_modules/react-router/dist/development/chunk-GR4NQCSD.js:9906:3)
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries.
+
+ ❯ src/test/reports/learning-hub.test.tsx (3 tests | 3 failed) 76ms
+   × shows only the selected year and labels unavailable content honestly 60ms
+   × keeps high-level cosmetics locked and makes public rankings opt-in 9ms
+   × unifies overview, progress, activity and rewards with labelled semester scope 3ms
+
+⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/test/reports/learning-completeness.test.ts [ src/test/reports/learning-completeness.test.ts ]
+Error: Failed to resolve import "../../app/learning/continuation" from "src/test/reports/learning-completeness.test.ts". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /Users/omarhossa/Documents/Medcine ASU/ASU-Medical-Portal/src/test/reports/learning-completeness.test.ts:3:31
+  1  |  import { it, expect } from "vitest";
+  2  |  import { moduleProgress } from "../../app/learning/progress";
+  3  |  import { findContinuation } from "../../app/learning/continuation";
+     |                                    ^
+  4  |  const q = { id: "parent/with/slash", type: "mcq", lectureName: "Moved topic", subjectName: "Histology" };
+  5  |  it("uses current presentation mapping, full stable IDs and explicit first/ever accuracy", () => {
+ ❯ TransformPluginContext._formatLog ../../Medcine%20ASU/ASU-Medical-Portal/node_modules/vite/dist/node/chunks/dep-3O3b9SCF.js:42846:41
+ ❯ TransformPluginContext.error ../../Medcine%20ASU/ASU-Medical-Portal/node_modules/vite/dist/node/chunks/dep-3O3b9SCF.js:42843:16
+ ❯ normalizeUrl ../../Medcine%20ASU/ASU-Medical-Portal/node_modules/vite/dist/node/chunks/dep-3O3b9SCF.js:40820:23
+ ❯ ../../Medcine%20ASU/ASU-Medical-Portal/node_modules/vite/dist/node/chunks/dep-3O3b9SCF.js:40939:37
+ ❯ TransformPluginContext.transform ../../Medcine%20ASU/ASU-Medical-Portal/node_modules/vite/dist/node/chunks/dep-3O3b9SCF.js:40866:7
+ ❯ EnvironmentPluginContainer.transform ../../Medcine%20ASU/ASU-Medical-Portal/node_modules/vite/dist/node/chunks/dep-3O3b9SCF.js:42641:18
+ ❯ loadAndTransform ../../Medcine%20ASU/ASU-Medical-Portal/node_modules/vite/dist/node/chunks/dep-3O3b9SCF.js:36053:27
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/4]⎯
+
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 3 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/test/reports/learning-hub.test.tsx > shows only the selected year and labels unavailable content honestly
+ FAIL  src/test/reports/learning-hub.test.tsx > keeps high-level cosmetics locked and makes public rankings opt-in
+ FAIL  src/test/reports/learning-hub.test.tsx > unifies overview, progress, activity and rewards with labelled semester scope
+Error: useUser can only be used within the <ClerkProvider /> component.
+
+Possible fixes:
+1. Ensure that the <ClerkProvider /> is correctly wrapping your application where this component is used.
+2. Check for multiple versions of the `@clerk/shared` package in your project. Use a tool like `npm ls @clerk/shared` to identify multiple versions, and update your dependencies to only rely on one.
+
+Learn more: https://clerk.com/docs/components/clerk-provider
+ ❯ useAssertWrappedByClerkProvider ../../Medcine%20ASU/ASU-Medical-Portal/node_modules/@clerk/shared/dist/runtime/react/index.mjs:98:9
+ ❯ useUser ../../Medcine%20ASU/ASU-Medical-Portal/node_modules/@clerk/shared/dist/runtime/react/index.mjs:1472:2
+ ❯ LearningHub src/pages/LearningHub.tsx:30:16
+     28|   onSelectHistory?: (r:QuizResult)=>void;
+     29| }) {
+     30|   const {user}=useUser();
+       |                ^
+     31|   const yearPref = useAcademicYear(),
+     32|     learning = useLearning(),
+ ❯ renderWithHooks node_modules/react-dom/cjs/react-dom.development.js:15486:18
+ ❯ mountIndeterminateComponent node_modules/react-dom/cjs/react-dom.development.js:20103:13
+ ❯ beginWork node_modules/react-dom/cjs/react-dom.development.js:21626:16
+ ❯ HTMLUnknownElement.callCallback node_modules/react-dom/cjs/react-dom.development.js:4164:14
+ ❯ HTMLUnknownElement.#callDispatchEventListeners ../../Medcine%20ASU/ASU-Medical-Portal/node_modules/happy-dom/lib/event/EventTarget.js:241:34
+ ❯ HTMLUnknownElement.dispatchEvent ../../Medcine%20ASU/ASU-Medical-Portal/node_modules/happy-dom/lib/event/EventTarget.js:104:41
+ ❯ HTMLUnknownElement.#goThroughDispatchEventPhases ../../Medcine%20ASU/ASU-Medical-Portal/node_modules/happy-dom/lib/event/EventTarget.js:164:38
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/4]⎯
+
+
+ Test Files  2 failed | 81 passed (83)
+      Tests  3 failed | 510 passed (513)
+   Start at  16:52:20
+   Duration  16.40s (transform 41.10s, setup 8.36s, import 28.22s, tests 22.98s, environment 36.58s)
+

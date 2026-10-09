@@ -1,0 +1,14 @@
+....F.......
+======================================================================
+FAIL: test_corruption_and_invalid_options_are_blocked (test_year1_quality.QualityTests.test_corruption_and_invalid_options_are_blocked)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/omarhossa/Documents/Medcine ASU/ASU-Medical-Portal/scripts/test_year1_quality.py", line 51, in test_corruption_and_invalid_options_are_blocked
+    a=q();a['options'][1]='Covalent BIOCHEM ACADEMY';self.assertTrue(issues(a))
+                                                     ~~~~~~~~~~~~~~~^^^^^^^^^^^
+AssertionError: [] is not true
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.002s
+
+FAILED (failures=1)

@@ -1,0 +1,2254 @@
+[
+  {
+    "module": "IAE-1",
+    "chapter": "Brain",
+    "subject": "Anatomy",
+    "question": {
+      "id": "IAE-1-SRC-0115",
+      "type": "mcq",
+      "lecture": 18,
+      "text": "Which of the following brain fibers is considered as best example of commissural fibers?",
+      "explanation": "The correct answer is (B) because the corpus callosum is the largest commissure of the brain, connecting corresponding areas of the two cerebral hemispheres. Descending tracts and the internal capsule are projection fibers, carrying impulses between the cortex and lower centres.",
+      "keyConcept": "The corpus callosum is the largest commissural bundle of the brain.",
+      "options": [
+        "Descending tracts.",
+        "Corpus callosum.",
+        "Internal capsules.",
+        "None of the above."
+      ],
+      "correctIndex": 1
+    },
+    "field": "explanation",
+    "reason": "corruption"
+  },
+  {
+    "module": "IAE-1",
+    "chapter": "Upper Limb",
+    "subject": "Anatomy",
+    "question": {
+      "id": "IAE-1-SRC-0421",
+      "type": "mcq",
+      "lecture": 21,
+      "text": "The artery used in measurement of blood pressure is the:",
+      "explanation": "The correct answer is (A) because the brachial artery in the cubital fossa is compressed by the cuff and auscultated to measure arterial blood pressure, as it is large, superficial and lies against the humerus. The radial artery (b) is used for feeling the pulse rather than for cuff measurement, and the ulnar, axillary and subclavian arteries are less accessible for routine measurement.",
+      "keyConcept": "Blood pressure is measured over the brachial artery in the cubital fossa.",
+      "options": [
+        "Brachial artery.",
+        "Radial artery.",
+        "Ulnar artery.",
+        "Axillary artery.",
+        "Subclavian artery."
+      ],
+      "correctIndex": 0
+    },
+    "field": "explanation",
+    "reason": "corruption"
+  },
+  {
+    "module": "IAE-1",
+    "chapter": "Upper Limb",
+    "subject": "Anatomy",
+    "question": {
+      "id": "IAE-1-SRC-0443",
+      "type": "mcq",
+      "lecture": 33,
+      "text": "Pulsation of which artery could be felt at the snuff box:",
+      "explanation": "The correct answer is (B) because the radial artery crosses the floor of the anatomical snuff box on the scaphoid and trapezium, where its pulsation can be felt. The ulnar and anterior interosseous arteries remain on the flexor side of the wrist, and the brachial artery ends in the cubital fossa.",
+      "keyConcept": "The radial artery crosses the floor of the snuff box and its pulse can be felt there.",
+      "options": [
+        "Brachial.",
+        "Radial.",
+        "Ulnar.",
+        "Ant. Interosseus."
+      ],
+      "correctIndex": 1
+    },
+    "field": "keyConcept",
+    "reason": "corruption"
+  },
+  {
+    "module": "IAE-1",
+    "chapter": "Lower Limb",
+    "subject": "Anatomy",
+    "question": {
+      "id": "IAE-1-SRC-0517",
+      "type": "mcq",
+      "lecture": 23,
+      "text": "As regards popliteal vessels, choose the CORRECT statement:",
+      "explanation": "The correct answer is (B) because the popliteal artery lies on the floor of the fossa and is therefore its deepest structure, which is why its pulse is difficult to feel. Option (a) is wrong because the artery begins at the opening in adductor magnus, and (c) is wrong because it ends by dividing into the anterior and posterior tibial arteries. Option (d) is wrong because the popliteal vein lies superficial to the artery, and (e) is wrong because the vein becomes the femoral vein.",
+      "keyConcept": "The popliteal artery is the deepest structure in the popliteal fossa and divides into anterior and posterior tibial arteries.",
+      "options": [
+        "Popliteal artery begins at distal border of Popliteus.",
+        "Popliteal artery is the deepest structure in popliteal fossa.",
+        "Popliteal artery ends by dividing into anterior & posterior peroneal arteries.",
+        "Popliteal vein runs deep to popliteal artery.",
+        "Popliteal vein ends by forming anterior tibial vein."
+      ],
+      "correctIndex": 1
+    },
+    "field": "explanation",
+    "reason": "corruption"
+  },
+  {
+    "module": "IAE-1",
+    "chapter": "General & Cross-Region",
+    "subject": "Anatomy",
+    "question": {
+      "id": "IAE-1-SRC-0637",
+      "type": "matching",
+      "lecture": 25,
+      "text": "Match each description in the left column with its appropriate vessel in the right column:",
+      "explanation": "Veins, especially in the limbs, contain numerous valves that ensure one-way flow against gravity. Sinusoids are the wide exchange channels of the liver, while ordinary capillaries perform exchange throughout the body. Large arteries near the heart are rich in elastic tissue to smooth the pulse, and arteriovenous anastomoses in the skin regulate heat loss.",
+      "keyConcept": "Veins have valves, arteries are elastic, capillaries and hepatic sinusoids exchange, and A-V shunts control temperature.",
+      "pairs": [
+        {
+          "premise": "Has numerous valves",
+          "target": "Veins"
+        },
+        {
+          "premise": "The abundant exchange vessels in liver",
+          "target": "Sinusoids"
+        },
+        {
+          "premise": "Exchange vessels in all tissues",
+          "target": "Capillaries"
+        },
+        {
+          "premise": "Is rich in elastic fibers",
+          "target": "Arteries"
+        },
+        {
+          "premise": "Plays role in control of body temperature",
+          "target": "A-V anastomosis"
+        }
+      ]
+    },
+    "field": "explanation",
+    "reason": "corruption"
+  },
+  {
+    "module": "IAE-1",
+    "chapter": "General & Cross-Region",
+    "subject": "Anatomy",
+    "question": {
+      "id": "IAE-1-SRC-0679",
+      "type": "fillblank",
+      "lecture": 23,
+      "text": "Impulse can pass from a neuron to the other by meeting of ___ of one neuron with ___ of the other neuron, and this is called ___.",
+      "explanation": "The correct answers are the axon terminals of one neuron, the dendrites or cell body of the next, and the synapse. Transmission at the synapse is chemical and one-way, which determines the direction of conduction in a nerve pathway.",
+      "keyConcept": "Synapse = site of contact between the axon of one neuron and the dendrites or cell body of another.",
+      "blanks": [
+        "the axon terminals",
+        "the dendrites or the cell body",
+        "a synapse"
+      ]
+    },
+    "field": "text",
+    "reason": "corruption"
+  },
+  {
+    "module": "IAE-1",
+    "chapter": "General & Cross-Region",
+    "subject": "Anatomy",
+    "question": {
+      "id": "IAE-1-SRC-0715",
+      "type": "mcq",
+      "lecture": 43,
+      "text": "Regarding the nerve cell, all the following statements are true EXCEPT:",
+      "explanation": "An axon transmits impulses away from the cell body, whereas dendrites transmit impulses toward it.",
+      "keyConcept": "Axons conduct away from the soma; dendrites conduct toward it.",
+      "options": [
+        "The cell body contains the nucleus.",
+        "The axon is a single long process.",
+        "The junction between two cells is called a synapse.",
+        "The axon transmits impulses towards the cell body."
+      ],
+      "correctIndex": 3
+    },
+    "field": "explanation",
+    "reason": "corruption"
+  },
+  {
+    "module": "IAE-1",
+    "chapter": "General & Cross-Region",
+    "subject": "Anatomy",
+    "question": {
+      "id": "IAE-1-SRC-0715",
+      "type": "mcq",
+      "lecture": 43,
+      "text": "Regarding the nerve cell, all the following statements are true EXCEPT:",
+      "explanation": "An axon transmits impulses away from the cell body, whereas dendrites transmit impulses toward it.",
+      "keyConcept": "Axons conduct away from the soma; dendrites conduct toward it.",
+      "options": [
+        "The cell body contains the nucleus.",
+        "The axon is a single long process.",
+        "The junction between two cells is called a synapse.",
+        "The axon transmits impulses towards the cell body."
+      ],
+      "correctIndex": 3
+    },
+    "field": "options.3",
+    "reason": "corruption"
+  },
+  {
+    "module": "IAE-1",
+    "chapter": "General & Cross-Region",
+    "subject": "Anatomy",
+    "question": {
+      "id": "IAE-1-SRC-0753",
+      "type": "mcq",
+      "lecture": 23,
+      "text": "As regards the neurons, choose the CORRECT statement:",
+      "explanation": "Bundles of axons in the peripheral nervous system are called nerves. A neuron's nucleus is in its cell body, dendrites generally conduct toward the cell body and the usually single axon conducts away.",
+      "keyConcept": "Axon bundles are nerves in the PNS and tracts in the CNS.",
+      "options": [
+        "Its axon contains its nucleus.",
+        "Axons are short multiple processes.",
+        "Axons carry nerve impulses towards cell bodies.",
+        "Dendrites carry nerve impulses away from cell bodies.",
+        "Bundles of axons outside CNS form nerves."
+      ],
+      "correctIndex": 4
+    },
+    "field": "options.2",
+    "reason": "corruption"
+  },
+  {
+    "module": "IAE-1",
+    "chapter": "General & Cross-Region",
+    "subject": "Anatomy",
+    "question": {
+      "id": "IAE-1-SRC-0753",
+      "type": "mcq",
+      "lecture": 23,
+      "text": "As regards the neurons, choose the CORRECT statement:",
+      "explanation": "Bundles of axons in the peripheral nervous system are called nerves. A neuron's nucleus is in its cell body, dendrites generally conduct toward the cell body and the usually single axon conducts away.",
+      "keyConcept": "Axon bundles are nerves in the PNS and tracts in the CNS.",
+      "options": [
+        "Its axon contains its nucleus.",
+        "Axons are short multiple processes.",
+        "Axons carry nerve impulses towards cell bodies.",
+        "Dendrites carry nerve impulses away from cell bodies.",
+        "Bundles of axons outside CNS form nerves."
+      ],
+      "correctIndex": 4
+    },
+    "field": "options.3",
+    "reason": "corruption"
+  },
+  {
+    "module": "IBM-1",
+    "chapter": "Introduction to Medical Biochemistry & Protein Chemistry",
+    "subject": "Biochemistry",
+    "question": {
+      "id": "IBM1-BIO-DRV-20260921-02107",
+      "type": "mcq",
+      "text": "At PH greater than Pl of protein, it will have:",
+      "lecture": 1,
+      "explanation": "At pH above its isoelectric point a protein becomes net negatively charged because deprotonation predominates.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-02107",
+          "source": "proteins MCQ- marwa hamdy.pdf",
+          "page": "2",
+          "sourceQuestionNumber": "6"
+        }
+      ],
+      "options": [
+        "Net negative charge",
+        "Net positive charge",
+        "Net zero charge PULSE E “Al i] 2 Dr Marwa Hamdy Biochemistry"
+      ],
+      "correctIndex": 0
+    },
+    "field": "options.2",
+    "reason": "corruption"
+  },
+  {
+    "module": "IBM-1",
+    "chapter": "Introduction to Medical Biochemistry & Protein Chemistry",
+    "subject": "Biochemistry",
+    "question": {
+      "id": "IBM1-BIO-DRV-20260921-02122",
+      "type": "mcq",
+      "text": "Which of the following is common property of amino acids of protein 2",
+      "lecture": 1,
+      "explanation": "Protein amino acids are alpha amino acids; glycine is achiral, so all-L or all-optically-active claims are not strictly true.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-02122",
+          "source": "proteins MCQ- marwa hamdy.pdf",
+          "page": "5",
+          "sourceQuestionNumber": "22"
+        }
+      ],
+      "options": [
+        "All are L-amino acids",
+        "All are optically active",
+        "All are levorotatory",
+        "All are alpha amino acids . PULSE Ca \"ey / / Dr Marwa Hamdy Biochemistry i",
+        "All are D-amino acids"
+      ],
+      "correctIndex": 3
+    },
+    "field": "options.3",
+    "reason": "corruption"
+  },
+  {
+    "module": "IBM-1",
+    "chapter": "Introduction to Medical Biochemistry & Protein Chemistry",
+    "subject": "Biochemistry",
+    "question": {
+      "id": "IBM1-BIO-DRV-20260921-02224",
+      "type": "mcq",
+      "text": "Ata low H+ ion concentration, amino acids will Carry... and migrate to......",
+      "lecture": 1,
+      "explanation": "Low hydrogen-ion concentration means high pH; above pI amino acids are net negative and migrate toward the anode.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-02224",
+          "source": "proteins MCQ- marwa hamdy.pdf",
+          "page": "25",
+          "sourceQuestionNumber": "135"
+        }
+      ],
+      "options": [
+        "Negative, Cathode",
+        "Negative, Anode",
+        "Positive, Cathode 7 PULSE ee %», Sey Dr Marwa Hamdy Biochemistry",
+        "Positive, Anode"
+      ],
+      "correctIndex": 1
+    },
+    "field": "options.2",
+    "reason": "corruption"
+  },
+  {
+    "module": "IBM-1",
+    "chapter": "Introduction to Medical Biochemistry & Protein Chemistry",
+    "subject": "Biochemistry",
+    "question": {
+      "id": "IBM1-BIO-DRV-20260921-02241",
+      "type": "mcq",
+      "text": "The repeating units of protein?",
+      "lecture": 1,
+      "explanation": "Proteins are polymers of amino-acid residues; nucleotides form nucleic acids and glucose units form polysaccharides.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-02241",
+          "source": "proteins MCQ- marwa hamdy.pdf",
+          "page": "28",
+          "sourceQuestionNumber": "153"
+        }
+      ],
+      "options": [
+        "Amino acids",
+        "Nucleotides WwW , < Biochemistry Dr Marwa Hamdy",
+        "Glucose units",
+        "Fatty acid units \\"
+      ],
+      "correctIndex": 0
+    },
+    "field": "options.1",
+    "reason": "corruption"
+  },
+  {
+    "module": "IBM-1",
+    "chapter": "Classification of Amino Acids",
+    "subject": "Biochemistry",
+    "question": {
+      "id": "IBM1-BIO-DRV-20260921-02218",
+      "type": "mcq",
+      "text": "— sesssssessseseeeeiS CYCliC amino acid with non polar side chain",
+      "lecture": 1,
+      "explanation": "Tryptophan has a predominantly nonpolar aromatic indole side chain; tyrosine is hydroxyl-bearing and histidine basic.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-02218",
+          "source": "proteins MCQ- marwa hamdy.pdf",
+          "page": "24",
+          "sourceQuestionNumber": "129"
+        }
+      ],
+      "options": [
+        "Histidine",
+        "Tyrosine",
+        "Tryptophan",
+        "Leucine",
+        "Glycine \\ Biochemistn, o Dr Marwa Hamdy . a"
+      ],
+      "correctIndex": 2
+    },
+    "field": "options.4",
+    "reason": "corruption"
+  },
+  {
+    "module": "IBM-1",
+    "chapter": "Classification of Amino Acids",
+    "subject": "Biochemistry",
+    "question": {
+      "id": "IBM1-BIO-DRV-20260921-02257",
+      "type": "mcq",
+      "text": "The following are essential amino acids except: PULSE Pa hh: My : 7 Dr Marwa Hamdy Biochemistry",
+      "lecture": 1,
+      "explanation": "Asparagine is ordinarily synthesized by humans; tryptophan, methionine, histidine and threonine require dietary supply.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-02257",
+          "source": "proteins MCQ- marwa hamdy.pdf",
+          "page": "31",
+          "sourceQuestionNumber": "171"
+        }
+      ],
+      "options": [
+        "tryptophan",
+        "Methionine",
+        "Histidine",
+        "Asparagine",
+        "Threonine"
+      ],
+      "correctIndex": 3
+    },
+    "field": "text",
+    "reason": "corruption"
+  },
+  {
+    "module": "IBM-1",
+    "chapter": "Classification of Amino Acids",
+    "subject": "Biochemistry",
+    "question": {
+      "id": "IBM1-BIO-DRV-20260921-02263",
+      "type": "mcq",
+      "text": "Non-essential amino acids are . ee = oe Biochemistry Yo Dr Marwa Hamdy",
+      "lecture": 1,
+      "explanation": "Nonessential amino acids still participate in protein synthesis, but humans ordinarily synthesize enough of them rather than requiring dietary supply.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-02263",
+          "source": "proteins MCQ- marwa hamdy.pdf",
+          "page": "32",
+          "sourceQuestionNumber": "177"
+        }
+      ],
+      "options": [
+        "Involved in protein synthesis",
+        "Can be synthesized in the body and so no need to be taken in diet",
+        "They are deficient in diet and the body can synthesize them",
+        "Both A and B",
+        "Both B and C"
+      ],
+      "correctIndex": 3
+    },
+    "field": "text",
+    "reason": "corruption"
+  },
+  {
+    "module": "IBM-1",
+    "chapter": "Basic Protein Structure",
+    "subject": "Biochemistry",
+    "question": {
+      "id": "IBM1-BIO-DRV-20260921-01453",
+      "type": "mcq",
+      "text": "Protamine is a protein rich in arginine. This prutein is added t insulin preparations. This is done 5 make nun covalent bunds between insulin molecules, sothat the injection of insulin becomes slovely absorped. The nature of the nun covalent bonds is best descriped by which of the followings? санд?",
+      "lecture": 1,
+      "explanation": "Positively charged arginine guanidinium groups in protamine interact electrostatically with negatively charged acidic residues of insulin, supporting the slowly dissolving formulation.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-01453",
+          "source": "MSQ protein and enzyme Dr Ayman Basheer ❤️.pdf",
+          "page": "5",
+          "sourceQuestionNumber": "20"
+        }
+      ],
+      "options": [
+        "Arginine binds by innic bonds to tue charged anisacids ofierulin.",
+        "Arglaire binds by ionic bonds t -ve charged aminocride of insulin.",
+        "Arginine binds by ionic bond to amino terminus of insulis.",
+        "Argline bind by hydrophobic interaction with insulin.",
+        "Arginine binds by disulfide bonds with insalia."
+      ],
+      "correctIndex": 1
+    },
+    "field": "text",
+    "reason": "corruption"
+  },
+  {
+    "module": "IBM-1",
+    "chapter": "Basic Protein Structure",
+    "subject": "Biochemistry",
+    "question": {
+      "id": "IBM1-BIO-DRV-20260921-01453",
+      "type": "mcq",
+      "text": "Protamine is a protein rich in arginine. This prutein is added t insulin preparations. This is done 5 make nun covalent bunds between insulin molecules, sothat the injection of insulin becomes slovely absorped. The nature of the nun covalent bonds is best descriped by which of the followings? санд?",
+      "lecture": 1,
+      "explanation": "Positively charged arginine guanidinium groups in protamine interact electrostatically with negatively charged acidic residues of insulin, supporting the slowly dissolving formulation.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-01453",
+          "source": "MSQ protein and enzyme Dr Ayman Basheer ❤️.pdf",
+          "page": "5",
+          "sourceQuestionNumber": "20"
+        }
+      ],
+      "options": [
+        "Arginine binds by innic bonds to tue charged anisacids ofierulin.",
+        "Arglaire binds by ionic bonds t -ve charged aminocride of insulin.",
+        "Arginine binds by ionic bond to amino terminus of insulis.",
+        "Argline bind by hydrophobic interaction with insulin.",
+        "Arginine binds by disulfide bonds with insalia."
+      ],
+      "correctIndex": 1
+    },
+    "field": "options.0",
+    "reason": "corruption"
+  },
+  {
+    "module": "IBM-1",
+    "chapter": "Basic Protein Structure",
+    "subject": "Biochemistry",
+    "question": {
+      "id": "IBM1-BIO-DRV-20260921-02147",
+      "type": "mcq",
+      "text": "Which of the following is a part of the backbone of a polypeptide chain?",
+      "lecture": 1,
+      "explanation": "The backbone repeats N-C-C, so C-N-C-C is a contiguous portion of that repeating sequence; the other listed sequences interrupt it.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-02147",
+          "source": "proteins MCQ- marwa hamdy.pdf",
+          "page": "10",
+          "sourceQuestionNumber": "51"
+        }
+      ],
+      "options": [
+        "-C -N-C-C- j",
+        "-N-N-C-C-",
+        "-C-N-C-N-",
+        "-N-C-N-C- .",
+        "-N-N-C-N- PULSE 4 | — = eo\" Biochem Ag Dr Marwa Hamdy ¥ 4 , ing? 2"
+      ],
+      "correctIndex": 0
+    },
+    "field": "options.4",
+    "reason": "corruption"
+  },
+  {
+    "module": "IBM-1",
+    "chapter": "Basic Protein Structure",
+    "subject": "Biochemistry",
+    "question": {
+      "id": "IBM1-BIO-DRV-20260921-02180",
+      "type": "mcq",
+      "text": "Which of the followin airs of amino acids in a rotein can be linked b an ionic",
+      "lecture": 1,
+      "explanation": "Aspartate's negative carboxylate and lysine's positive amine can form an ionic salt bridge; cysteine pairs form disulfides instead.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-02180",
+          "source": "proteins MCQ- marwa hamdy.pdf",
+          "page": "17",
+          "sourceQuestionNumber": "88"
+        }
+      ],
+      "options": [
+        "Aspartic acid and lysine",
+        "Glutamic acid and valine",
+        "Cysteine and cysteine",
+        "Histidine and proline row ) PULSE al ty Dr Marwa Hamdy Biochemistry",
+        "Serine and glutamine"
+      ],
+      "correctIndex": 0
+    },
+    "field": "options.3",
+    "reason": "corruption"
+  },
+  {
+    "module": "IBM-1",
+    "chapter": "Protein Conformation",
+    "subject": "Biochemistry",
+    "question": {
+      "id": "IBM1-BIO-DRV-20260921-02117",
+      "type": "mcq",
+      "text": "Aparticular point mutation result in disruption of a a-helical structure, the most likely change is:",
+      "lecture": 1,
+      "explanation": "Replacing methionine with proline introduces a rigid cyclic residue without a standard backbone NH donor, strongly disrupting an alpha helix.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-02117",
+          "source": "proteins MCQ- marwa hamdy.pdf",
+          "page": "4",
+          "sourceQuestionNumber": "11"
+        }
+      ],
+      "options": [
+        "Glutamate to Aspartate",
+        "Lysine to Arginine",
+        "Methionine to Proline",
+        "Valine to Alanine _ puise | E| $n > A Or Marwa Hamdy v 9 e"
+      ],
+      "correctIndex": 2
+    },
+    "field": "options.3",
+    "reason": "corruption"
+  },
+  {
+    "module": "IBM-1",
+    "chapter": "Protein Folding & Misfolding",
+    "subject": "Biochemistry",
+    "question": {
+      "id": "IBM1-BIO-DRV-20260921-02142",
+      "type": "mcq",
+      "text": "Molecular chaperones are important for which of the following?",
+      "lecture": 1,
+      "explanation": "Chaperones help newly made or misfolded polypeptides reach an appropriate conformation and avoid aggregation.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-02142",
+          "source": "proteins MCQ- marwa hamdy.pdf",
+          "page": "9",
+          "sourceQuestionNumber": "45"
+        }
+      ],
+      "options": [
+        "Folding of DNA in the cell nucleus.",
+        "Degrading the incorrectly folded proteins.",
+        "Correct folding and repair of incorrectly folded proteins.",
+        "Preventing over-heating of the cells.",
+        "Denaturing the proteins at high temperature. PULSE Ta ey | Dr Marwa Hamdy Biochemistry f"
+      ],
+      "correctIndex": 2
+    },
+    "field": "options.4",
+    "reason": "corruption"
+  },
+  {
+    "module": "IBM-1",
+    "chapter": "Protein Classification & Denaturation",
+    "subject": "Biochemistry",
+    "question": {
+      "id": "IBM1-BIO-DRV-20260921-02244",
+      "type": "mcq",
+      "text": "The structural proteins are involved in maintaining the shape of a cell, the shape of these proteins is",
+      "lecture": 1,
+      "explanation": "Fibrous proteins form elongated supporting structures such as collagen and keratin, matching a structural role.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-02244",
+          "source": "proteins MCQ- marwa hamdy.pdf",
+          "page": "29",
+          "sourceQuestionNumber": "158"
+        }
+      ],
+      "options": [
+        "Globular",
+        "Fibrous",
+        "Stretch of beads PULSE 3 Gr Marwe Hamdy Biochemistry",
+        "Planar"
+      ],
+      "correctIndex": 1
+    },
+    "field": "options.2",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Physical Laws of Blood Flow, Pressure & Resistance",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0626",
+      "type": "mcq",
+      "lecture": 3,
+      "text": "Which of the following is not increased during exercise",
+      "explanation": "Total peripheral resistance falls during exercise, because metabolic vasodilator accumulation in active muscle opens an enormous vascular bed and that effect outweighs sympathetic vasoconstriction elsewhere. Everything else rises, including heart rate, stroke volume, cardiac output, systolic pressure and pulse pressure. The fall in resistance is exactly why mean arterial pressure climbs only modestly despite a fourfold or greater increase in cardiac output.",
+      "keyConcept": "Muscle vasodilation lowers total peripheral resistance in exercise, limiting the rise in mean pressure.",
+      "options": [
+        "Stroke volume",
+        "total peripheral resistance"
+      ],
+      "correctIndex": 1
+    },
+    "field": "explanation",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Excitable Tissues: Resting Membrane Potential & Action Potential",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0162",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The action potential of a neuron",
+      "explanation": "Repolarization is produced by the efflux of K+ through voltage-gated potassium channels, which terminates the action potential. The upstroke is caused by Na+ influx rather than efflux, the impulse is propagated without any decline in amplitude, and only a minute number of ions actually cross the membrane, so the concentration gradients are not reversed.",
+      "keyConcept": "K+ efflux repolarizes and terminates the action potential.",
+      "options": [
+        "Is initiated by efflux of Na",
+        "Is terminated by efflux of K",
+        "Declines in amplitude as it moves along the axon",
+        "Results in transient reversal of the concentration gradient of Na across the cell membrane",
+        "Is not associated with any net movement of Na or K across the cell membrane"
+      ],
+      "correctIndex": 1
+    },
+    "field": "explanation",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Excitable Tissues: Resting Membrane Potential & Action Potential",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0175",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Regarding the absolute refractory period",
+      "explanation": "During the absolute refractory period essentially all voltage-gated sodium channels are in the inactivated state, and inactivation can only be removed by repolarising the membrane, not by a bigger stimulus. Excitability is therefore truly zero and no second action potential can be produced however strong the stimulus. This period sets the upper limit on firing frequency and prevents the impulse from travelling backwards.",
+      "keyConcept": "Sodium-channel inactivation is voltage-dependent, so no stimulus strength can overcome the absolute refractory period.",
+      "options": [
+        "it occurs during Afterdepolarization",
+        "membrane excitability equals zero",
+        "membrane can respond only to suprathreshold stimulus",
+        "it corresponds to the period of depolarization"
+      ],
+      "correctIndex": 1
+    },
+    "field": "explanation",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Excitable Tissues: Resting Membrane Potential & Action Potential",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0225",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "When a membrane is stimulated due to opening of chemically gated Na+ channels:",
+      "explanation": "Graded potentials are local, variable signals such as receptor, end-plate, and postsynaptic potentials. Chemically gated sodium channels typically produce graded depolarization, while both excitable and non-excitable cells share a resting membrane potential.",
+      "keyConcept": "Graded potentials are local variable signals; action potentials are not graded.",
+      "options": [
+        "An impulse is propagated",
+        "A graded potential is established",
+        "An action potential is established",
+        "The voltage becomes more negative"
+      ],
+      "correctIndex": 1
+    },
+    "field": "options.0",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Excitable Tissues: Resting Membrane Potential & Action Potential",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0240",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The absolute refractory period of a nerve is the period during which:",
+      "explanation": "During the absolute refractory period, a second action potential cannot be generated because sufficient sodium channels have not recovered from inactivation. This phase mainly overlaps depolarization and early repolarization.",
+      "keyConcept": "During the absolute refractory period, no second impulse can be generated.",
+      "options": [
+        "A weaker stimulus will excite",
+        "A second stimulus of any type is completely ineffective",
+        "A second stimulus of increased threshold intensity will excite",
+        "A strong stimulus will excite"
+      ],
+      "correctIndex": 1
+    },
+    "field": "keyConcept",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Excitable Tissues: Resting Membrane Potential & Action Potential",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0397",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The all-or-none law states that a threshold stimulus produces an impulse which:",
+      "explanation": "The all-or-none law states that once threshold is reached the action potential produced has a fixed amplitude and configuration for that fiber. Increasing stimulus strength beyond threshold does not enlarge the impulse; it only increases firing frequency and recruits more fibers.",
+      "keyConcept": "Above threshold, action potential amplitude is fixed regardless of stimulus strength.",
+      "options": [
+        "doesn’t need any energy",
+        "is weaker than that produced by a stronger stimulus",
+        "isn’t different from that produced by a stronger stimulus",
+        "is propagated only partially along the cell membrane"
+      ],
+      "correctIndex": 2
+    },
+    "field": "text",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Excitable Tissues: Resting Membrane Potential & Action Potential",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0397",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The all-or-none law states that a threshold stimulus produces an impulse which:",
+      "explanation": "The all-or-none law states that once threshold is reached the action potential produced has a fixed amplitude and configuration for that fiber. Increasing stimulus strength beyond threshold does not enlarge the impulse; it only increases firing frequency and recruits more fibers.",
+      "keyConcept": "Above threshold, action potential amplitude is fixed regardless of stimulus strength.",
+      "options": [
+        "doesn’t need any energy",
+        "is weaker than that produced by a stronger stimulus",
+        "isn’t different from that produced by a stronger stimulus",
+        "is propagated only partially along the cell membrane"
+      ],
+      "correctIndex": 2
+    },
+    "field": "explanation",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Excitable Tissues: Resting Membrane Potential & Action Potential",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0530",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Biphasic action potential is obtained if we apply a stimulus by two electrodes put on:",
+      "explanation": "A biphasic record needs both electrodes on the external surface. The impulse sweeping past the first electrode deflects the trace one way, and passing the second electrode deflects it the other way, producing two opposite phases. If one electrode is inside the fibre, or on a crushed permanently depolarised region, only one site ever registers the change and the record is monophasic.",
+      "keyConcept": "Both electrodes external gives a biphasic record; one electrode internal or on injured tissue gives a monophasic record.",
+      "options": [
+        "Outside cell membrane",
+        "One is outside and the other is inside cell membrane",
+        "Inside cell membrane",
+        "None of the above"
+      ],
+      "correctIndex": 0
+    },
+    "field": "explanation",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Excitable Tissues: Resting Membrane Potential & Action Potential",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0600",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The cells responsible for the transmission of the nerve impulse are?",
+      "explanation": "Excitable tissues generate action potentials through voltage-gated ion channels. The resting membrane potential (~-70 mV) is maintained by K+ leak channels and the Na+/K+ pump, while depolarization is driven by Na+ influx.",
+      "keyConcept": "Neurons transmit nerve impulses.",
+      "options": [
+        "neurons",
+        "oligodendrocytes",
+        "astrocytes",
+        "microglia"
+      ],
+      "correctIndex": 0
+    },
+    "field": "text",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Excitable Tissues: Resting Membrane Potential & Action Potential",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0600",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The cells responsible for the transmission of the nerve impulse are?",
+      "explanation": "Excitable tissues generate action potentials through voltage-gated ion channels. The resting membrane potential (~-70 mV) is maintained by K+ leak channels and the Na+/K+ pump, while depolarization is driven by Na+ influx.",
+      "keyConcept": "Neurons transmit nerve impulses.",
+      "options": [
+        "neurons",
+        "oligodendrocytes",
+        "astrocytes",
+        "microglia"
+      ],
+      "correctIndex": 0
+    },
+    "field": "keyConcept",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Excitable Tissues: Resting Membrane Potential & Action Potential",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0630",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The 's' wave in ECG is below isoelectric line because of",
+      "explanation": "The QRS complex records the sequence of ventricular depolarisation. Excitation begins at the apex and septum and finishes at the base of the ventricles, and as the wavefront reverses direction toward the base it travels away from the recording axis, so the deflection becomes negative and appears as the S wave. Every ECG deflection is a vector, pointing up when depolarisation moves toward the electrode and down when it moves away.",
+      "keyConcept": "ECG deflections are directional: toward the electrode is upward, away from it is downward.",
+      "options": [
+        "repolarization of ventricles",
+        "change in direction of the impulse when the base of the ventricles are getting depolarised",
+        "depolarization of apex of heart",
+        "repolarization of apex of heart"
+      ],
+      "correctIndex": 1
+    },
+    "field": "options.1",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Excitable Tissues: Resting Membrane Potential & Action Potential",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0691",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Secondary amenorrhoea can most commonly be caused in the following conditions EXCEPT",
+      "explanation": "Secondary amenorrhoea means that periods have stopped in a woman who previously menstruated, and by definition it is a departure from the expected pattern. At 60 the absence of periods is physiological menopause rather than a disorder, so it is the exception here. Pregnancy is the commonest genuine cause, and both severe stress and competitive athletic training suppress hypothalamic GnRH pulses and so stop ovulation.",
+      "keyConcept": "Menopause is physiological, while pathological secondary amenorrhoea reflects pregnancy or suppressed GnRH pulsatility.",
+      "options": [
+        "age above 60 years",
+        "stress",
+        "pregnancy",
+        "competitive athletes"
+      ],
+      "correctIndex": 0
+    },
+    "field": "explanation",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Nerve Fibre Types, Conduction & Neuromuscular Junction",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0182",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "The conductive region of the neuron is:",
+      "explanation": "The axon is the main conductive region of the neuron because it propagates action potentials away from the cell body toward the terminal. Dendrites are mainly receptive and the soma is mainly integrative.",
+      "keyConcept": "The axon conducts the nerve impulse.",
+      "options": [
+        "Cell body (soma)",
+        "Nerve terminal",
+        "Axon",
+        "Dendrites"
+      ],
+      "correctIndex": 2
+    },
+    "field": "keyConcept",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Nerve Fibre Types, Conduction & Neuromuscular Junction",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0195",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Which of the following statements is true:",
+      "explanation": "During depolarization, sodium influx continues until sodium-channel inactivation gates close, helping stop further rise near the overshoot around +30 to +35 mV. Selective permeability is central to the resting state, and the gating statements in the other options are incorrect.",
+      "keyConcept": "Na+ channel inactivation helps terminate the depolarizing spike.",
+      "options": [
+        "The selective permeability of the membrane plays no role in the polarized state",
+        "After stimulation, depolarization stops at +35 mv because the Na+ inactivation gates close to prevent further Na+ influx",
+        "The resting membrane potential includes all changes in the membrane potential during conduction of the nerve impulse passively",
+        "There are Na+ activation gates inside the nerve membrane and inactivation gates outside it"
+      ],
+      "correctIndex": 1
+    },
+    "field": "options.2",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Nerve Fibre Types, Conduction & Neuromuscular Junction",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0197",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Unmyelinated nerves differ from myelinated nerves in that they:",
+      "explanation": "Unmyelinated fibers lack nodes of Ranvier and therefore do not conduct by saltation. They still can regenerate and are commonly associated with slower conduction.",
+      "keyConcept": "Unmyelinated fibers lack nodes of Ranvier and do not conduct saltatorily.",
+      "options": [
+        "Have no nodes of Ranvier",
+        "Are more excitable",
+        "Are not capable of regeneration",
+        "Conduct impulses by saltatory conduction",
+        "Have neurolemma (Schwann cells)"
+      ],
+      "correctIndex": 0
+    },
+    "field": "options.3",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Nerve Fibre Types, Conduction & Neuromuscular Junction",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0203",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "The nerve impulse:",
+      "explanation": "A nerve impulse is an active propagated action potential that indirectly requires energy to maintain ionic gradients. It can travel in both directions if an axon is stimulated in the middle, but across synapses and motor end plates transmission is physiologically one-way.",
+      "keyConcept": "Nerve impulses are active propagated signals that obey all-or-none behavior.",
+      "options": [
+        "Requires energy",
+        "Can travel in one direction only",
+        "Is conducted by the same speed in differs axons",
+        "Is not delayed at the synapses before transmission"
+      ],
+      "correctIndex": 0
+    },
+    "field": "text",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Nerve Fibre Types, Conduction & Neuromuscular Junction",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0203",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "The nerve impulse:",
+      "explanation": "A nerve impulse is an active propagated action potential that indirectly requires energy to maintain ionic gradients. It can travel in both directions if an axon is stimulated in the middle, but across synapses and motor end plates transmission is physiologically one-way.",
+      "keyConcept": "Nerve impulses are active propagated signals that obey all-or-none behavior.",
+      "options": [
+        "Requires energy",
+        "Can travel in one direction only",
+        "Is conducted by the same speed in differs axons",
+        "Is not delayed at the synapses before transmission"
+      ],
+      "correctIndex": 0
+    },
+    "field": "explanation",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Nerve Fibre Types, Conduction & Neuromuscular Junction",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0203",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "The nerve impulse:",
+      "explanation": "A nerve impulse is an active propagated action potential that indirectly requires energy to maintain ionic gradients. It can travel in both directions if an axon is stimulated in the middle, but across synapses and motor end plates transmission is physiologically one-way.",
+      "keyConcept": "Nerve impulses are active propagated signals that obey all-or-none behavior.",
+      "options": [
+        "Requires energy",
+        "Can travel in one direction only",
+        "Is conducted by the same speed in differs axons",
+        "Is not delayed at the synapses before transmission"
+      ],
+      "correctIndex": 0
+    },
+    "field": "keyConcept",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Nerve Fibre Types, Conduction & Neuromuscular Junction",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0204",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "About nerve impulse, all the following is true except:",
+      "explanation": "Type B fibers are myelinated preganglionic autonomic fibers conducting at roughly 3-15 m/s, whereas type C fibers are unmyelinated and the slowest in the body at about 0.5-2 m/s. Conduction is therefore slower, not faster, in C fibers, which makes that statement the exception. The others are true: impulse duration approximates the absolute refractory period, an axon stimulated at its middle conducts in both directions, and transmission is one-way across synapses and the motor end plate.",
+      "keyConcept": "Unmyelinated C fibers are the slowest conductors; B fibers are faster.",
+      "options": [
+        "They have a duration which corresponds approximately to the ARP of the nerve",
+        "They can travel in both directions when the axon is stimulated at its middle",
+        "They are conducted at a faster rate in type C nerve fibers than in type B fibers",
+        "They travel in one direction only across a synapse and in the M.E.P"
+      ],
+      "correctIndex": 2
+    },
+    "field": "text",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Nerve Fibre Types, Conduction & Neuromuscular Junction",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0204",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "About nerve impulse, all the following is true except:",
+      "explanation": "Type B fibers are myelinated preganglionic autonomic fibers conducting at roughly 3-15 m/s, whereas type C fibers are unmyelinated and the slowest in the body at about 0.5-2 m/s. Conduction is therefore slower, not faster, in C fibers, which makes that statement the exception. The others are true: impulse duration approximates the absolute refractory period, an axon stimulated at its middle conducts in both directions, and transmission is one-way across synapses and the motor end plate.",
+      "keyConcept": "Unmyelinated C fibers are the slowest conductors; B fibers are faster.",
+      "options": [
+        "They have a duration which corresponds approximately to the ARP of the nerve",
+        "They can travel in both directions when the axon is stimulated at its middle",
+        "They are conducted at a faster rate in type C nerve fibers than in type B fibers",
+        "They travel in one direction only across a synapse and in the M.E.P"
+      ],
+      "correctIndex": 2
+    },
+    "field": "explanation",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Nerve Fibre Types, Conduction & Neuromuscular Junction",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0214",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "About the nerve impulses, all the following is true except",
+      "explanation": "Nerve impulses are conducted actively: the action potential is regenerated at every point along the membrane by voltage-gated sodium and potassium channels, so conduction is not a passive process. The remaining statements are correct, since amplitude and velocity are constant for a given fiber, an axon stimulated at its middle conducts in both directions, and myelinated fibers conduct saltatorily.",
+      "keyConcept": "Impulse conduction is active regeneration, not passive electrotonic spread.",
+      "options": [
+        "They are characterized by being constant in amplitude and velocity for a certain nerve fiber",
+        "They are conducted passively",
+        "They can be conducted in both directions",
+        "There’s saltatory conduction in myelinated nerve"
+      ],
+      "correctIndex": 1
+    },
+    "field": "text",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Nerve Fibre Types, Conduction & Neuromuscular Junction",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0214",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "About the nerve impulses, all the following is true except",
+      "explanation": "Nerve impulses are conducted actively: the action potential is regenerated at every point along the membrane by voltage-gated sodium and potassium channels, so conduction is not a passive process. The remaining statements are correct, since amplitude and velocity are constant for a given fiber, an axon stimulated at its middle conducts in both directions, and myelinated fibers conduct saltatorily.",
+      "keyConcept": "Impulse conduction is active regeneration, not passive electrotonic spread.",
+      "options": [
+        "They are characterized by being constant in amplitude and velocity for a certain nerve fiber",
+        "They are conducted passively",
+        "They can be conducted in both directions",
+        "There’s saltatory conduction in myelinated nerve"
+      ],
+      "correctIndex": 1
+    },
+    "field": "explanation",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Nerve Fibre Types, Conduction & Neuromuscular Junction",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0214",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "About the nerve impulses, all the following is true except",
+      "explanation": "Nerve impulses are conducted actively: the action potential is regenerated at every point along the membrane by voltage-gated sodium and potassium channels, so conduction is not a passive process. The remaining statements are correct, since amplitude and velocity are constant for a given fiber, an axon stimulated at its middle conducts in both directions, and myelinated fibers conduct saltatorily.",
+      "keyConcept": "Impulse conduction is active regeneration, not passive electrotonic spread.",
+      "options": [
+        "They are characterized by being constant in amplitude and velocity for a certain nerve fiber",
+        "They are conducted passively",
+        "They can be conducted in both directions",
+        "There’s saltatory conduction in myelinated nerve"
+      ],
+      "correctIndex": 1
+    },
+    "field": "keyConcept",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Nerve Fibre Types, Conduction & Neuromuscular Junction",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0217",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Conduction of an impulse in the nerve:",
+      "explanation": "Nerve conduction is an active self-propagating process. Larger diameter and myelination increase conduction velocity, while strong electrotonic conditions or cooling can block conduction in some contexts.",
+      "keyConcept": "Conduction is active and depends strongly on diameter and myelination.",
+      "options": [
+        "Is called orthodromic when the impulse passes in the nerve from anterior horn cells to skeletal muscle",
+        "Can be blocked by strong anelectrotonus",
+        "Is an active self propagating-process",
+        "All of the above"
+      ],
+      "correctIndex": 3
+    },
+    "field": "text",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Nerve Fibre Types, Conduction & Neuromuscular Junction",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0217",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Conduction of an impulse in the nerve:",
+      "explanation": "Nerve conduction is an active self-propagating process. Larger diameter and myelination increase conduction velocity, while strong electrotonic conditions or cooling can block conduction in some contexts.",
+      "keyConcept": "Conduction is active and depends strongly on diameter and myelination.",
+      "options": [
+        "Is called orthodromic when the impulse passes in the nerve from anterior horn cells to skeletal muscle",
+        "Can be blocked by strong anelectrotonus",
+        "Is an active self propagating-process",
+        "All of the above"
+      ],
+      "correctIndex": 3
+    },
+    "field": "options.0",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Nerve Fibre Types, Conduction & Neuromuscular Junction",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0244",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "nerve conduction velocity depressed by all except",
+      "explanation": "Conduction velocity is increased, not depressed, by myelination, because saltatory conduction lets the impulse jump between nodes of Ranvier. Cooling, pressure, local anesthetics and reduced fiber diameter all slow or block conduction, so myelination is the exception.",
+      "keyConcept": "Myelination speeds conduction; it is the one factor that does not depress velocity.",
+      "options": [
+        "Anaesthesia",
+        "myelination",
+        "hypoxia",
+        "pressure"
+      ],
+      "correctIndex": 1
+    },
+    "field": "explanation",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Nerve Fibre Types, Conduction & Neuromuscular Junction",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0249",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Regarding nerve fibers",
+      "explanation": "B fibres are the moderately myelinated preganglionic autonomic axons, conducting at roughly 3 to 15 m/s. Every other option contains a contradiction in its own wording, since it labels A-alpha, A-beta and A-gamma fibres as unmyelinated when all A fibres are myelinated, and labels C fibres as myelinated when they are not.",
+      "keyConcept": "All A fibres are myelinated, B fibres lightly so, and C fibres not at all.",
+      "options": [
+        "Type C myelinated fibers in the dorsal root conduct impulses concerning pain and temperature",
+        "Type A alpha unmyelinated fibers conduct impulses concerning proprioception",
+        "Type A beta unmyelinated fibers conduct impulses concerning light touch",
+        "Type A gamma unmyelinated fibers conduct impulses to muscle spindles",
+        "Type B moderately myelinated fibers are located in preganglionic autonomic region"
+      ],
+      "correctIndex": 4
+    },
+    "field": "options.0",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Nerve Fibre Types, Conduction & Neuromuscular Junction",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0249",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Regarding nerve fibers",
+      "explanation": "B fibres are the moderately myelinated preganglionic autonomic axons, conducting at roughly 3 to 15 m/s. Every other option contains a contradiction in its own wording, since it labels A-alpha, A-beta and A-gamma fibres as unmyelinated when all A fibres are myelinated, and labels C fibres as myelinated when they are not.",
+      "keyConcept": "All A fibres are myelinated, B fibres lightly so, and C fibres not at all.",
+      "options": [
+        "Type C myelinated fibers in the dorsal root conduct impulses concerning pain and temperature",
+        "Type A alpha unmyelinated fibers conduct impulses concerning proprioception",
+        "Type A beta unmyelinated fibers conduct impulses concerning light touch",
+        "Type A gamma unmyelinated fibers conduct impulses to muscle spindles",
+        "Type B moderately myelinated fibers are located in preganglionic autonomic region"
+      ],
+      "correctIndex": 4
+    },
+    "field": "options.1",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Nerve Fibre Types, Conduction & Neuromuscular Junction",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0249",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Regarding nerve fibers",
+      "explanation": "B fibres are the moderately myelinated preganglionic autonomic axons, conducting at roughly 3 to 15 m/s. Every other option contains a contradiction in its own wording, since it labels A-alpha, A-beta and A-gamma fibres as unmyelinated when all A fibres are myelinated, and labels C fibres as myelinated when they are not.",
+      "keyConcept": "All A fibres are myelinated, B fibres lightly so, and C fibres not at all.",
+      "options": [
+        "Type C myelinated fibers in the dorsal root conduct impulses concerning pain and temperature",
+        "Type A alpha unmyelinated fibers conduct impulses concerning proprioception",
+        "Type A beta unmyelinated fibers conduct impulses concerning light touch",
+        "Type A gamma unmyelinated fibers conduct impulses to muscle spindles",
+        "Type B moderately myelinated fibers are located in preganglionic autonomic region"
+      ],
+      "correctIndex": 4
+    },
+    "field": "options.2",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Nerve Fibre Types, Conduction & Neuromuscular Junction",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0249",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Regarding nerve fibers",
+      "explanation": "B fibres are the moderately myelinated preganglionic autonomic axons, conducting at roughly 3 to 15 m/s. Every other option contains a contradiction in its own wording, since it labels A-alpha, A-beta and A-gamma fibres as unmyelinated when all A fibres are myelinated, and labels C fibres as myelinated when they are not.",
+      "keyConcept": "All A fibres are myelinated, B fibres lightly so, and C fibres not at all.",
+      "options": [
+        "Type C myelinated fibers in the dorsal root conduct impulses concerning pain and temperature",
+        "Type A alpha unmyelinated fibers conduct impulses concerning proprioception",
+        "Type A beta unmyelinated fibers conduct impulses concerning light touch",
+        "Type A gamma unmyelinated fibers conduct impulses to muscle spindles",
+        "Type B moderately myelinated fibers are located in preganglionic autonomic region"
+      ],
+      "correctIndex": 4
+    },
+    "field": "options.3",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Nerve Fibre Types, Conduction & Neuromuscular Junction",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0252",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Which of the following is true about B nerve fibers?",
+      "explanation": "B fibres are the lightly myelinated preganglionic autonomic axons of both sympathetic and parasympathetic outflows, with a moderate conduction velocity of about 3 to 15 m/s. They are intermediate in every respect, being smaller and slower than A fibres but larger and faster than unmyelinated C fibres, and pain is carried by A-delta and C fibres rather than by B.",
+      "keyConcept": "B fibres are the preganglionic autonomic class, intermediate between A and C in size and speed.",
+      "options": [
+        "Conduct Pain",
+        "Are unmyelinated",
+        "Have the largest diameter of all nerves",
+        "Have a slow conduction velocity",
+        "Conduct preganglionic impulses"
+      ],
+      "correctIndex": 4
+    },
+    "field": "options.4",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Nerve Fibre Types, Conduction & Neuromuscular Junction",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0443",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Nerve conduction velocity depressed by all except:",
+      "explanation": "Conduction velocity is increased, not depressed, by myelination, because saltatory conduction lets the impulse jump between nodes of Ranvier. Cooling, pressure, local anesthetics and reduced fiber diameter all slow or block conduction, so myelination is the exception.",
+      "keyConcept": "Myelination speeds conduction; it is the one factor that does not depress velocity.",
+      "options": [
+        "Anaesthesia.",
+        "Pressure.",
+        "Hypoxia.",
+        "Myelinated nerve more than in non myelinated."
+      ],
+      "correctIndex": 3
+    },
+    "field": "explanation",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Nerve Fibre Types, Conduction & Neuromuscular Junction",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0449",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Regarding the action potential in nerve membrane all are true EXCEPT;",
+      "explanation": "Propagation of the action potential is non-decremental, because each segment of membrane regenerates the full spike rather than passively passing on a fading voltage. The local currents that flow ahead of the impulse do decay with distance, but their only job is to bring the next patch of membrane to threshold, after which that patch produces a full-sized response of its own.",
+      "keyConcept": "Local current spread decays, but the regenerated spike does not, so amplitude stays constant.",
+      "options": [
+        "It is all or none in character.",
+        "A threshold stimulus is required for its initiation.",
+        "The current is spread by decremental conduction.",
+        "It has a refractory period."
+      ],
+      "correctIndex": 2
+    },
+    "field": "explanation",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Nerve Fibre Types, Conduction & Neuromuscular Junction",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0452",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Impulse conduction:",
+      "explanation": "Impulse conduction is non-decremental: the action potential is actively regenerated at each point along the fiber, so its amplitude does not fall with distance. It is an active energy-requiring process, and node-to-node saltatory transmission occurs in myelinated rather than unmyelinated fibers.",
+      "keyConcept": "Action potentials propagate without decrement, unlike graded potentials.",
+      "options": [
+        "Is Passive process.",
+        "Node to node transmission in unmyelinated.",
+        "Point to point transmission in myelinated.",
+        "Non decremental."
+      ],
+      "correctIndex": 3
+    },
+    "field": "text",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Nerve Fibre Types, Conduction & Neuromuscular Junction",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0452",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Impulse conduction:",
+      "explanation": "Impulse conduction is non-decremental: the action potential is actively regenerated at each point along the fiber, so its amplitude does not fall with distance. It is an active energy-requiring process, and node-to-node saltatory transmission occurs in myelinated rather than unmyelinated fibers.",
+      "keyConcept": "Action potentials propagate without decrement, unlike graded potentials.",
+      "options": [
+        "Is Passive process.",
+        "Node to node transmission in unmyelinated.",
+        "Point to point transmission in myelinated.",
+        "Non decremental."
+      ],
+      "correctIndex": 3
+    },
+    "field": "explanation",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Nerve Fibre Types, Conduction & Neuromuscular Junction",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0455",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "The nerve impulse has the following characteristics EXCEPT:",
+      "explanation": "On an isolated fiber stimulated in the middle, the impulse spreads in both directions, so unidirectional propagation is not an intrinsic property of the nerve impulse and is the exception here. In the intact body conduction appears one-way only because the region just passed is refractory. The impulse is otherwise an active, propagated wave of reversed polarity that carries information.",
+      "keyConcept": "Conduction is bidirectional on an isolated fiber; refractoriness makes it one-way in vivo.",
+      "options": [
+        "Is an active electric response.",
+        "Is a wave of reversed polarity.",
+        "Is propagated in one direction along the nerve fiber.",
+        "Transmits information through the nervous system in the body."
+      ],
+      "correctIndex": 2
+    },
+    "field": "text",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Nerve Fibre Types, Conduction & Neuromuscular Junction",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0455",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "The nerve impulse has the following characteristics EXCEPT:",
+      "explanation": "On an isolated fiber stimulated in the middle, the impulse spreads in both directions, so unidirectional propagation is not an intrinsic property of the nerve impulse and is the exception here. In the intact body conduction appears one-way only because the region just passed is refractory. The impulse is otherwise an active, propagated wave of reversed polarity that carries information.",
+      "keyConcept": "Conduction is bidirectional on an isolated fiber; refractoriness makes it one-way in vivo.",
+      "options": [
+        "Is an active electric response.",
+        "Is a wave of reversed polarity.",
+        "Is propagated in one direction along the nerve fiber.",
+        "Transmits information through the nervous system in the body."
+      ],
+      "correctIndex": 2
+    },
+    "field": "explanation",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Nerve Fibre Types, Conduction & Neuromuscular Junction",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0458",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "The resting membrane potential of a nerve fiber:",
+      "explanation": "The resting membrane potential depends mainly on K+ leak through leakage channels, which makes the membrane more permeable to K+ than Na+ at rest.",
+      "keyConcept": "Membrane potential is a voltage measured inside relative to outside.",
+      "options": [
+        "Is the potential difference between the outside and inside of the resting membrane.",
+        "Is always around – 45 mv.",
+        "Is caused by increased permeability to Na+.",
+        "Involves the changes in the membrane potential during propagation of nerve impulse."
+      ],
+      "correctIndex": 0
+    },
+    "field": "options.3",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Nerve Fibre Types, Conduction & Neuromuscular Junction",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0493",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "The highest number of voltage gated Na+ channels are found in:",
+      "explanation": "Nodes of Ranvier carry by far the densest population of voltage-gated sodium channels, of the order of a thousand or more per square micrometre, because saltatory conduction depends on fully regenerating the impulse at these short bare segments. The axon initial segment is also channel-rich and has the lowest threshold, which is why the spike is normally initiated there, but its density is well below nodal density. Myelin itself is an insulator and is essentially free of channels.",
+      "keyConcept": "Highest sodium-channel density is at the nodes; lowest threshold is at the initial segment. These are two different facts.",
+      "options": [
+        "initial segment of axon",
+        "nodes of Ranvier",
+        "cell body",
+        "terminal buttons",
+        "myelin sheath"
+      ],
+      "correctIndex": 1
+    },
+    "field": "explanation",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Nerve Fibre Types, Conduction & Neuromuscular Junction",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0503",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "As regard conduction of action potential in a nerve:",
+      "explanation": "The thickest myelinated A-alpha fibres conduct at up to about 120 m/s, because myelin forces the impulse to jump between nodes of Ranvier. The alternatives are all reversed: cooling slows conduction rather than speeding it, raised calcium stabilises the membrane and reduces excitability, and conduction is non-decremental because the impulse is fully regenerated at each excitable patch, so amplitude does not fall with distance.",
+      "keyConcept": "Velocity rises with diameter and myelination to about 120 m/s, and conduction never decrements.",
+      "options": [
+        "in thick myelinated nerve fibers can reach up to 120 meter / second.",
+        "can be increased by increase calcium.",
+        "can be increased by cooling.",
+        "is conducted with decrement."
+      ],
+      "correctIndex": 0
+    },
+    "field": "explanation",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Nerve Fibre Types, Conduction & Neuromuscular Junction",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0504",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Continuous conduction:",
+      "explanation": "Continuous conduction is the point-to-point regeneration of the impulse along an unmyelinated axon. Because every segment of membrane must be depolarised in turn, it is relatively slow. Saltatory conduction is the myelinated alternative in which current jumps from node to node, and it is both faster and more economical, since far less membrane has to be depolarised and then pumped back.",
+      "keyConcept": "Unmyelinated axons conduct continuously and slowly; myelin converts this into fast saltatory conduction.",
+      "options": [
+        "occurs in myelinated nerve fibers.",
+        "occurs by jumping of charges from one node of Ranvier to another.",
+        "is relatively slow.",
+        "occurs in the neuro-muscular junction."
+      ],
+      "correctIndex": 2
+    },
+    "field": "explanation",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Nerve Fibre Types, Conduction & Neuromuscular Junction",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0505",
+      "type": "mcq",
+      "lecture": 4,
+      "text": "About A fibers all are true except:",
+      "explanation": "A fibres are the largest and fastest, conducting at roughly 10 to 120 m/s, and they include the somatic motor fibres. Sensitivity to local anaesthetics runs opposite to conduction speed, because the small unmyelinated C fibres are blocked first and the thick A fibres last. That gradient is why a local anaesthetic abolishes pain before it abolishes touch, pressure and motor power.",
+      "keyConcept": "Local anaesthetics block small fibres before large ones, the reverse of the pressure-block order.",
+      "options": [
+        "They have the greatest diameter.",
+        "They conduct impulses with the greatest velocity (10-120 met./sec)",
+        "They include motor fibers.",
+        "They are very sensitive to local anesthetic drugs."
+      ],
+      "correctIndex": 3
+    },
+    "field": "options.1",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Nerve Fibre Types, Conduction & Neuromuscular Junction",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0506",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Nerve block is produced by all the following except:",
+      "explanation": "Local anaesthetics, severe cooling and sustained deep pressure all interrupt conduction, by blocking sodium channels, slowing gating almost to a standstill, and causing ischaemic and mechanical injury respectively. Myelination does the opposite, since it is precisely what makes rapid saltatory conduction possible, so it facilitates the impulse instead of blocking it.",
+      "keyConcept": "Myelin speeds conduction; anaesthetics, cold and pressure are the classic causes of block.",
+      "options": [
+        "local anesthetics.",
+        "excessive cooling.",
+        "deep pressure.",
+        "myelination of nerves."
+      ],
+      "correctIndex": 3
+    },
+    "field": "explanation",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Nerve Fibre Types, Conduction & Neuromuscular Junction",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0514",
+      "type": "mcq",
+      "lecture": 4,
+      "text": "Which of the following statements concerning the velocity of action potential propagation is correct?",
+      "explanation": "Conduction velocity rises with both axon diameter and the thickness of the myelin sheath. Thicker myelin means better insulation and lower membrane capacitance, so local currents spread further ahead of the impulse and the distance jumped between nodes is greater. This is precisely why demyelinating disease slows conduction so dramatically even though the axon itself remains intact.",
+      "keyConcept": "Velocity increases with diameter and myelin thickness because both improve passive current spread.",
+      "options": [
+        "Is independent of an axon's diameter",
+        "Depends on the thickness of the myelin around the axon",
+        "Will be unaffected if the axon becomes demyelinated",
+        "Is fastest in unmyelinated axons"
+      ],
+      "correctIndex": 1
+    },
+    "field": "explanation",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Nerve Fibre Types, Conduction & Neuromuscular Junction",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0517",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Which of the following characteristics of an axon is most dependant on its diameter?",
+      "explanation": "Diameter is the single strongest determinant of conduction velocity, because a wider axon has lower internal resistance and lets local current spread further ahead of the impulse. That is why nerve fibres are classified by diameter in the first place, and why the thick A-alpha fibres carrying proprioception and motor commands are the fastest in the body.",
+      "keyConcept": "Wider axons have lower internal resistance, making diameter the chief determinant of velocity.",
+      "options": [
+        "The magnitude of its resting potential",
+        "The duration of its refractory period",
+        "The conduction velocity of its action potential",
+        "The activity of its sodium-potassium pump"
+      ],
+      "correctIndex": 2
+    },
+    "field": "explanation",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Nerve Fibre Types, Conduction & Neuromuscular Junction",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0521",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Which part of a neuron has the highest concentration of Na+ channels?",
+      "explanation": "Sodium channels are concentrated at the nodes of Ranvier, the short bare gaps where the axon membrane is exposed between myelin segments. The impulse is fully regenerated at each node while current jumps the insulated internode, which makes saltatory conduction both fast and metabolically cheap, because far less membrane has to be depolarised and then pumped back.",
+      "keyConcept": "Nodal clustering of sodium channels makes saltatory conduction fast and energy-efficient.",
+      "options": [
+        "Dendrites",
+        "Cell body near dendrites",
+        "Axonal membrane under myelin",
+        "Node of Ranvier"
+      ],
+      "correctIndex": 3
+    },
+    "field": "explanation",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Nerve Fibre Types, Conduction & Neuromuscular Junction",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0526",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Nerve fibers continue to conduct impulses when:",
+      "explanation": "Cooling from 37 to 30 degrees slows the gating kinetics of the sodium and potassium channels, so conduction velocity falls, but the channels still open and impulses still arrive. Replacing extracellular sodium with a cation that cannot cross removes the inward current that generates the upstroke, so no action potential can be produced at all, and cooling toward freezing blocks conduction completely.",
+      "keyConcept": "Mild cooling slows conduction; losing the sodium gradient or severe cooling abolishes it.",
+      "options": [
+        "Extra cellular sodium is replaced by potassium",
+        "Extra cellular sodium is replaced by non-diffusible cation",
+        "Temperature is lowered from 37 to 30 C",
+        "Temperature is lowered below 0C provided freezing does not occur"
+      ],
+      "correctIndex": 2
+    },
+    "field": "text",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Nerve Fibre Types, Conduction & Neuromuscular Junction",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0526",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Nerve fibers continue to conduct impulses when:",
+      "explanation": "Cooling from 37 to 30 degrees slows the gating kinetics of the sodium and potassium channels, so conduction velocity falls, but the channels still open and impulses still arrive. Replacing extracellular sodium with a cation that cannot cross removes the inward current that generates the upstroke, so no action potential can be produced at all, and cooling toward freezing blocks conduction completely.",
+      "keyConcept": "Mild cooling slows conduction; losing the sodium gradient or severe cooling abolishes it.",
+      "options": [
+        "Extra cellular sodium is replaced by potassium",
+        "Extra cellular sodium is replaced by non-diffusible cation",
+        "Temperature is lowered from 37 to 30 C",
+        "Temperature is lowered below 0C provided freezing does not occur"
+      ],
+      "correctIndex": 2
+    },
+    "field": "explanation",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Nerve Fibre Types, Conduction & Neuromuscular Junction",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0529",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Saltatory conduction in neuron is characterized by:",
+      "explanation": "In a myelinated fibre the impulse is regenerated only at the nodes of Ranvier while current jumps the insulated internodes, so the impulse advances in leaps instead of creeping along every patch of membrane. This is faster than continuous conduction and also cheaper, because much less membrane is depolarised and therefore less ion pumping is needed afterwards, making it more rather than less economical.",
+      "keyConcept": "Saltatory conduction is both faster and more energy-efficient than continuous conduction.",
+      "options": [
+        "Less economic conduction",
+        "Multiple local current sinks",
+        "More rapid rate of conduction",
+        "None of the above"
+      ],
+      "correctIndex": 2
+    },
+    "field": "explanation",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Nerve Fibre Types, Conduction & Neuromuscular Junction",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0532",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "The site of conduction of impulses in myelinated nerve is:",
+      "explanation": "In a myelinated nerve, excitation occurs only at the nodes of Ranvier, the short bare gaps between myelin segments, where sodium channels are densely clustered. The myelin covering each internode acts as an insulator, so current flows through the axoplasm and jumps from node to node in saltatory fashion.",
+      "keyConcept": "Myelin insulates the internode, so excitation is restricted to the sodium-channel-rich nodes.",
+      "options": [
+        "Dendritic zone",
+        "Axon hillock",
+        "Terminal buttons",
+        "Node of Ranvier"
+      ],
+      "correctIndex": 3
+    },
+    "field": "text",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Synapse, Receptors & Reflexes",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0261",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which of the following statements about synapse is correct?",
+      "explanation": "Electrical synapses can conduct bidirectionally, unlike typical chemical synapses. Most CNS synapses are chemical rather than electrical, and chemical transmission is not the normal mode between cardiac muscle cells.",
+      "keyConcept": "Electrical synapses can be bidirectional.",
+      "options": [
+        "Transmit impulses chemically between cardiac muscle cells.",
+        "Most of CNS synapses transmit impulses electrically.",
+        "The presynaptic neuron contains specific enzyme for destruction of the transmitter.",
+        "In some types, synapses can transmit impulses bidirectional.",
+        "CNS synapses are rapidly conducting than smooth muscle synapses."
+      ],
+      "correctIndex": 3
+    },
+    "field": "options.0",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Synapse, Receptors & Reflexes",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0261",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which of the following statements about synapse is correct?",
+      "explanation": "Electrical synapses can conduct bidirectionally, unlike typical chemical synapses. Most CNS synapses are chemical rather than electrical, and chemical transmission is not the normal mode between cardiac muscle cells.",
+      "keyConcept": "Electrical synapses can be bidirectional.",
+      "options": [
+        "Transmit impulses chemically between cardiac muscle cells.",
+        "Most of CNS synapses transmit impulses electrically.",
+        "The presynaptic neuron contains specific enzyme for destruction of the transmitter.",
+        "In some types, synapses can transmit impulses bidirectional.",
+        "CNS synapses are rapidly conducting than smooth muscle synapses."
+      ],
+      "correctIndex": 3
+    },
+    "field": "options.1",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Synapse, Receptors & Reflexes",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0261",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which of the following statements about synapse is correct?",
+      "explanation": "Electrical synapses can conduct bidirectionally, unlike typical chemical synapses. Most CNS synapses are chemical rather than electrical, and chemical transmission is not the normal mode between cardiac muscle cells.",
+      "keyConcept": "Electrical synapses can be bidirectional.",
+      "options": [
+        "Transmit impulses chemically between cardiac muscle cells.",
+        "Most of CNS synapses transmit impulses electrically.",
+        "The presynaptic neuron contains specific enzyme for destruction of the transmitter.",
+        "In some types, synapses can transmit impulses bidirectional.",
+        "CNS synapses are rapidly conducting than smooth muscle synapses."
+      ],
+      "correctIndex": 3
+    },
+    "field": "options.3",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Synapse, Receptors & Reflexes",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0263",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Compared to electrical synapses, Chemical synapses are:",
+      "explanation": "Chemical synapses are slower and can fatigue more easily because they depend on transmitter synthesis, vesicle release, diffusion, receptor activation, and clearance. Electrical synapses transmit more rapidly through gap junctions.",
+      "keyConcept": "Chemical synapses are slower and more easily fatigued than electrical synapses.",
+      "options": [
+        "Less numerous in CNS.",
+        "Easily fatigued.",
+        "Are always excitatory.",
+        "Transmit impulses rapidly.",
+        "Contain connexon that allow the passage of ions."
+      ],
+      "correctIndex": 1
+    },
+    "field": "options.3",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Synapse, Receptors & Reflexes",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0265",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Regarding sensory receptors:",
+      "explanation": "Most sensory receptors are most sensitive to one adequate stimulus modality, meaning they are activated best by a specific form of energy. This specificity is a basic feature of receptor physiology.",
+      "keyConcept": "Sensory receptors are usually modality-specific.",
+      "options": [
+        "They can only detect changes in external environment.",
+        "They respond to stimuli by local non propagated potential changes in receptor membrane.",
+        "All receptors adapt to constant stimulation.",
+        "They can produce action potential in receptor membrane.",
+        "All receptors release transmitters to conduct impulses to afferent neurons."
+      ],
+      "correctIndex": 1
+    },
+    "field": "options.4",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Synapse, Receptors & Reflexes",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0303",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The following is not a feature of chemical synapses:",
+      "explanation": "Typical chemical synapses conduct in one direction from presynaptic to postsynaptic cell. Bidirectional transmission is instead a feature of many electrical synapses.",
+      "keyConcept": "Chemical synapses are usually unidirectional.",
+      "options": [
+        "Convergence",
+        "Divergence",
+        "Synaptic Delay",
+        "Transmission of impulse in both directions",
+        "Postsynaptic inhibitory potential"
+      ],
+      "correctIndex": 3
+    },
+    "field": "options.3",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Synapse, Receptors & Reflexes",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0306",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The transmission of impulses across chemical synapses may occur without the need for:",
+      "explanation": "In immediate synaptic transmission, transmitter release, receptors, calcium, and a presynaptic action potential are essential. The Na+/K+ pump is crucial for long-term ionic homeostasis but is not the immediate special requirement for a single transmission event in this item.",
+      "keyConcept": "A single synaptic event depends directly on release machinery more than on immediate pump action.",
+      "options": [
+        "Ca2+",
+        "Receptors",
+        "A neurotransmitter",
+        "Na-K pump",
+        "An action potential"
+      ],
+      "correctIndex": 3
+    },
+    "field": "text",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Autonomic Nervous System",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0334",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "All are true about acetylcholine except:",
+      "explanation": "Atropine blocks muscarinic actions of acetylcholine but does not block nicotinic transmission at the neuromuscular junction. Acetylcholine is rapidly hydrolyzed by cholinesterase and also functions widely in the CNS.",
+      "keyConcept": "Atropine does not block nicotinic neuromuscular transmission.",
+      "options": [
+        "Can be blocked by atropine at the neuromuscular junction",
+        "Accumulates in the body after injection of eserine (physostigmine)",
+        "Is rapidly hydrolysed by acetylcholine esterase enzyme",
+        "Can play role in transmission of impulses in the synapses of CNS"
+      ],
+      "correctIndex": 0
+    },
+    "field": "options.3",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Autonomic Nervous System",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0363",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The efferent impulse that stimulate salivary secretion proceed along all the following nerves except:",
+      "explanation": "Parasympathetic salivary fibers travel with the facial nerve via chorda tympani and with the glossopharyngeal nerve, while sympathetic fibers can also influence salivary glands. The oculomotor nerve is not part of salivary secretomotor outflow.",
+      "keyConcept": "Salivary secretomotor fibers do not travel in the oculomotor nerve.",
+      "options": [
+        "Chorda tympani",
+        "Sympathetic nerves",
+        "Oculomotor nerve",
+        "Glossopharyngeal nerve"
+      ],
+      "correctIndex": 2
+    },
+    "field": "text",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Metabolism, Energy Balance & Body Temperature",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0631",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which of the following is least likely to cause hypertension",
+      "explanation": "Thyroid hormone excess raises heart rate, contractility and cardiac output, but it simultaneously dilates peripheral vessels to dissipate the extra heat, so systolic pressure rises while diastolic pressure falls. The result is a wide pulse pressure rather than sustained hypertension. The other three raise pressure durably: adrenal medullary excess through catecholamines, oral contraceptives through the renin-angiotensin system, and zona glomerulosa excess through aldosterone-driven salt retention.",
+      "keyConcept": "Hyperthyroidism widens pulse pressure rather than producing sustained hypertension.",
+      "options": [
+        "chronically increased secretion of adrenal medulla",
+        "treatment with OCP",
+        "chronically increased secretion of thyroid gland",
+        "chronically increased secretion by zona glomerulosa of adrenal cortex"
+      ],
+      "correctIndex": 2
+    },
+    "field": "explanation",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHY-1",
+    "chapter": "Metabolism, Energy Balance & Body Temperature",
+    "subject": "Physiology",
+    "question": {
+      "id": "IPHY-1-SRC-0631",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which of the following is least likely to cause hypertension",
+      "explanation": "Thyroid hormone excess raises heart rate, contractility and cardiac output, but it simultaneously dilates peripheral vessels to dissipate the extra heat, so systolic pressure rises while diastolic pressure falls. The result is a wide pulse pressure rather than sustained hypertension. The other three raise pressure durably: adrenal medullary excess through catecholamines, oral contraceptives through the renin-angiotensin system, and zona glomerulosa excess through aldosterone-driven salt retention.",
+      "keyConcept": "Hyperthyroidism widens pulse pressure rather than producing sustained hypertension.",
+      "options": [
+        "chronically increased secretion of adrenal medulla",
+        "treatment with OCP",
+        "chronically increased secretion of thyroid gland",
+        "chronically increased secretion by zona glomerulosa of adrenal cortex"
+      ],
+      "correctIndex": 2
+    },
+    "field": "keyConcept",
+    "reason": "corruption"
+  },
+  {
+    "module": "BLS-HE-1",
+    "chapter": "Medical History Taking",
+    "subject": "Clinical",
+    "question": {
+      "id": "BLS-HE-1-HISTORY-001",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "All of the following items are included in the history taking (sheet) except",
+      "options": [
+        "Family history",
+        "Past history",
+        "Pulse examination",
+        "Presenting complaint"
+      ],
+      "correctIndex": 2,
+      "explanation": "",
+      "sourceOccurrences": [
+        {
+          "sourceFile": "History MCQ.pdf",
+          "sourceSha256": "3babf897ca83b0b7de868c99041d8a76e928abf062a977d8e7334c916712374d",
+          "sourceQuestionNumber": 1,
+          "sourcePages": [
+            1
+          ],
+          "optionLabels": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "printedAnswerLabel": "c",
+          "answerProvenance": "Printed PDF answer column; verified visually against the rendered page."
+        }
+      ]
+    },
+    "field": "options.2",
+    "reason": "corruption"
+  },
+  {
+    "module": "BLS-HE-1",
+    "chapter": "General Clinical Examination",
+    "subject": "Clinical",
+    "question": {
+      "id": "BLS-HE-1-HISTORY-005",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "All of the following items are included in the general examination except",
+      "options": [
+        "Family history",
+        "Pulse examination",
+        "Blood pressure",
+        "complexions"
+      ],
+      "correctIndex": 0,
+      "explanation": "",
+      "sourceOccurrences": [
+        {
+          "sourceFile": "History MCQ.pdf",
+          "sourceSha256": "3babf897ca83b0b7de868c99041d8a76e928abf062a977d8e7334c916712374d",
+          "sourceQuestionNumber": 5,
+          "sourcePages": [
+            1
+          ],
+          "optionLabels": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "printedAnswerLabel": "a",
+          "answerProvenance": "Printed PDF answer column; verified visually against the rendered page."
+        },
+        {
+          "sourceFile": "History MCQ.pdf",
+          "sourceSha256": "3babf897ca83b0b7de868c99041d8a76e928abf062a977d8e7334c916712374d",
+          "sourceQuestionNumber": 6,
+          "sourcePages": [
+            1
+          ],
+          "optionLabels": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "printedAnswerLabel": "a",
+          "answerProvenance": "Printed PDF answer column; verified visually against the rendered page."
+        }
+      ]
+    },
+    "field": "options.1",
+    "reason": "corruption"
+  },
+  {
+    "module": "BLS-HE-1",
+    "chapter": "General Clinical Examination",
+    "subject": "Clinical",
+    "question": {
+      "id": "BLS-HE-1-HISTORY-007",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "All of the following items are included in the general examination except",
+      "options": [
+        "complaint",
+        "Pulse examination",
+        "Blood pressure",
+        "complexions"
+      ],
+      "correctIndex": 0,
+      "explanation": "",
+      "sourceOccurrences": [
+        {
+          "sourceFile": "History MCQ.pdf",
+          "sourceSha256": "3babf897ca83b0b7de868c99041d8a76e928abf062a977d8e7334c916712374d",
+          "sourceQuestionNumber": 7,
+          "sourcePages": [
+            1
+          ],
+          "optionLabels": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "printedAnswerLabel": "a",
+          "answerProvenance": "Printed PDF answer column; verified visually against the rendered page."
+        }
+      ]
+    },
+    "field": "options.1",
+    "reason": "corruption"
+  },
+  {
+    "module": "BLS-HE-1",
+    "chapter": "General Clinical Examination",
+    "subject": "Clinical",
+    "question": {
+      "id": "BLS-HE-1-HISTORY-011",
+      "type": "mcq",
+      "lecture": 3,
+      "text": "To examine for pulse we use:",
+      "options": [
+        "One finger",
+        "two fingers",
+        "3 fingers"
+      ],
+      "correctIndex": 2,
+      "explanation": "",
+      "sourceOccurrences": [
+        {
+          "sourceFile": "History MCQ.pdf",
+          "sourceSha256": "3babf897ca83b0b7de868c99041d8a76e928abf062a977d8e7334c916712374d",
+          "sourceQuestionNumber": 11,
+          "sourcePages": [
+            2
+          ],
+          "optionLabels": [
+            "a",
+            "b",
+            "c"
+          ],
+          "printedAnswerLabel": "c",
+          "answerProvenance": "Printed PDF answer column; verified visually against the rendered page."
+        }
+      ]
+    },
+    "field": "text",
+    "reason": "corruption"
+  },
+  {
+    "module": "BLS-HE-1",
+    "chapter": "General Clinical Examination",
+    "subject": "Clinical",
+    "question": {
+      "id": "BLS-HE-1-HISTORY-012",
+      "type": "mcq",
+      "lecture": 3,
+      "text": "Normal pulse is",
+      "options": [
+        "60-90",
+        "60-100",
+        "50-80",
+        "50-200"
+      ],
+      "correctIndex": 1,
+      "explanation": "",
+      "sourceOccurrences": [
+        {
+          "sourceFile": "History MCQ.pdf",
+          "sourceSha256": "3babf897ca83b0b7de868c99041d8a76e928abf062a977d8e7334c916712374d",
+          "sourceQuestionNumber": 12,
+          "sourcePages": [
+            2
+          ],
+          "optionLabels": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "printedAnswerLabel": "b",
+          "answerProvenance": "Printed PDF answer column; verified visually against the rendered page."
+        }
+      ]
+    },
+    "field": "text",
+    "reason": "corruption"
+  },
+  {
+    "module": "IPHA-1",
+    "chapter": "Pharmacodynamics",
+    "subject": "Pharmacology",
+    "question": {
+      "id": "IPHA1-CH2-PHAR-0079",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Which of the following receptor types mediate the slowest transmission of impulses?",
+      "explanation": "Intracellular receptors that regulate gene transcription act over hours — the slowest signalling; ion channels are the fastest.",
+      "keyConcept": "Transcription-regulating receptors are the slowest.",
+      "options": [
+        "Ion Channels",
+        "Receptors linked to Tyrosine Kinase",
+        "G protein-Coupled Receptors",
+        "Receptors regulating transcription"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null
+    },
+    "field": "text",
+    "reason": "corruption"
+  }
+]

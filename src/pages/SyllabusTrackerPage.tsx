@@ -1,3 +1,9 @@
+function readTrackerStorage(key: string): string | null {
+  try { return typeof window === 'undefined' ? null : localStorage.getItem(key); }
+  catch { return null; }
+}
+
+import {useUser} from '@clerk/clerk-react';
 import { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import { useParams, useNavigate } from 'react-router';
 import { Check, Edit3, Calendar, ChevronDown, BookOpen, Layers, Target, GraduationCap, ArrowLeft } from 'lucide-react';
@@ -121,7 +127,8 @@ export function SyllabusTrackerPage({ userButton }: { userButton?: React.ReactNo
 
   const isRTL = language === 'ar';
   const moduleCode = (code || 'MEM-2').toUpperCase();
-  const storageKey = `asu_study_tracker_${moduleCode}`;
+  const {user}=useUser();
+  const storageKey = `asu_study_tracker:${user?.id??'guest'}:${moduleCode}`;
 
   const parsedYear = useMemo(() => {
     if (yearId) return yearId;
@@ -177,7 +184,7 @@ export function SyllabusTrackerPage({ userButton }: { userButton?: React.ReactNo
   );
 
   const [data, setData] = useState<Record<number, ChapterState>>(() =>
-    hydrate(typeof window !== 'undefined' ? localStorage.getItem(storageKey) : null),
+    hydrate(readTrackerStorage(storageKey)),
   );
 
   const [activeChapterIndex, setActiveChapterIndex] = useState(0);
@@ -201,7 +208,7 @@ export function SyllabusTrackerPage({ userButton }: { userButton?: React.ReactNo
 
   /* Re-hydrate when module or chapter list changes */
   useEffect(() => {
-    setData(hydrate(typeof window !== 'undefined' ? localStorage.getItem(storageKey) : null));
+    setData(hydrate(readTrackerStorage(storageKey)));
     setActiveChapterIndex(0);
     setOpenSubjectIndex(0);
   }, [storageKey, hydrate]);
@@ -215,7 +222,7 @@ export function SyllabusTrackerPage({ userButton }: { userButton?: React.ReactNo
           setData(hydrate(se.newValue));
         }
       } else {
-        setData(hydrate(localStorage.getItem(storageKey)));
+        setData(hydrate(readTrackerStorage(storageKey)));
       }
     };
     window.addEventListener('storage', onStorage);
@@ -267,9 +274,7 @@ export function SyllabusTrackerPage({ userButton }: { userButton?: React.ReactNo
         }
       }
 
-      if (nextVal) {
-        progressStore.addXp(15);
-      }
+
 
       persist({
         ...data,
@@ -290,9 +295,7 @@ export function SyllabusTrackerPage({ userButton }: { userButton?: React.ReactNo
       const lecture = current.lectures?.[key] ?? { studied: false, revised: false };
       const nextVal = !lecture[field];
       
-      if (nextVal) {
-        progressStore.addXp(5);
-      }
+
 
       persist({
         ...data,
@@ -314,9 +317,7 @@ export function SyllabusTrackerPage({ userButton }: { userButton?: React.ReactNo
       const allOn = keys.every((k) => lectures[k]?.[field]);
       const nextVal = !allOn;
 
-      if (nextVal) {
-        progressStore.addXp(10);
-      }
+
 
       for (const k of keys) {
         const existing = lectures[k] ?? { studied: false, revised: false };
@@ -404,6 +405,7 @@ export function SyllabusTrackerPage({ userButton }: { userButton?: React.ReactNo
 
   return (
     <PortalShell crumbs={crumbs} userButton={customUserButton} hideFooter={true}>
+      {readTrackerStorage(`asu_study_tracker_${moduleCode}`) && <div className="mx-auto max-w-5xl px-5 py-4 text-sm"><p>A previous checklist exists on this device. Import it only if it belongs to you.</p><button className="mt-2 rounded-full border px-4 py-2" onClick={()=>{if(window.confirm("Import the old checklist on this device into your account? It may have been saved by another user.")){persist(hydrate(readTrackerStorage(`asu_study_tracker_${moduleCode}`)));}}}>Import my previous checklist</button></div>}
       <motion.div 
         dir={isRTL ? 'rtl' : 'ltr'} 
         variants={pageVariants}

@@ -219,6 +219,7 @@ export default async function handler(req: any, res: any) {
         // Only explicit null values delete data; omitted keys stay untouched.
         for (const [strippedKey, value] of Object.entries(body)) {
           if (strippedKey.startsWith('asu_preferences:') && strippedKey !== `asu_preferences:${userId}:shuffle` && strippedKey !== yearKey) continue;
+          if (strippedKey.startsWith('asu_study_tracker:') && !strippedKey.startsWith(`asu_study_tracker:${userId}:`)) continue;
           if (strippedKey.startsWith('asu_quiz_session:') && !strippedKey.startsWith(`asu_quiz_session:${userId}:`)) continue;
           const fullKey = `${keyPrefix}${strippedKey}`;
           if (value === null) {
@@ -227,7 +228,7 @@ export default async function handler(req: any, res: any) {
           }
           const compressed = compress(JSON.stringify(value));
           if (compressed) {
-            if (strippedKey === `asu_preferences:${userId}:shuffle` || strippedKey === yearKey) await dbClient.set(fullKey, compressed);
+            if (strippedKey === `asu_preferences:${userId}:shuffle` || strippedKey === yearKey || strippedKey.startsWith(`asu_study_tracker:${userId}:`)) await dbClient.set(fullKey, compressed);
             else await setWithTTL(fullKey, compressed);
           }
         }

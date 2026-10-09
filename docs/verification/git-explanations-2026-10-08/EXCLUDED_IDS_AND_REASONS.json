@@ -1,0 +1,1113 @@
+[
+  {
+    "id": "MGL3-CH1-ANAT-0086",
+    "flags": [
+      {
+        "id": "MGL3-CH1-ANAT-0086",
+        "reason": "Question asks whole esophageal extent but recorded C6–T10 describes its diaphragmatic crossing; standard termination is at the gastric cardia near T11 and that option is absent. NCBI NBK557452 Introduction retrieved via web search full content."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH1-ANAT-0286",
+    "flags": [
+      {
+        "id": "MGL3-CH1-ANAT-0286",
+        "reason": "Keyed answer appears incorrect: musculophrenic artery contributes to upper anterior abdominal wall supply."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH1-ANAT-0298",
+    "flags": [
+      {
+        "id": "MGL3-CH1-ANAT-0298",
+        "reason": "The case asks lymph-node enlargement for an abscess “just below the umbilicus” without specifying superficial versus deep wall drainage; its case answer lists both deep pelvic and para-aortic pathways, so the intended group cannot be resolved from the stated depth."
+      },
+      {
+        "id": "MGL3-CH1-ANAT-0298-SQ2",
+        "reason": "The described superficial abscess below the umbilicus would usually drain toward superficial inguinal nodes, but the provided model answer lists deep pelvic and para-aortic channels and omits them. The case/key context is unreliable."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH1-ANAT-0335",
+    "flags": [
+      {
+        "id": "MGL3-CH1-ANAT-0335",
+        "reason": "Keyed answer appears incorrect: conjoint tendon is not formed by transversalis fascia."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH1-ANAT-0342",
+    "flags": [
+      {
+        "id": "MGL3-CH1-ANAT-0342",
+        "reason": "The deep ring is classically related to the midpoint of the inguinal ligament; “mid-inguinal point” is a different landmark. The keyed option appears to conflate these landmarks."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH1-ANAT-0370",
+    "flags": [
+      {
+        "id": "MGL3-CH1-ANAT-0370",
+        "reason": "All five statements appear to describe accepted mechanisms or features of the inguinal canal; no uniquely false choice is clear from the stem, so the keyed exception needs source review."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH1-ANAT-0374",
+    "flags": [
+      {
+        "id": "MGL3-CH1-ANAT-0374",
+        "reason": "The keyed boundary list gives the conjoint tendon as roof and the deep ring at the mid-inguinal point; standard anatomy describes the roof as arching IO/TA fibers and the deep ring lateral to inferior epigastric vessels, so the supplied model answer needs review."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH1-ANAT-0469",
+    "flags": [
+      {
+        "id": "MGL3-CH1-ANAT-0469",
+        "reason": "The key says the greater omentum extends between stomach and pancreas, but its major attachments are the stomach’s greater curvature and transverse colon; pancreas is a posterior stomach-bed relation."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH1-ANAT-0598",
+    "flags": [
+      {
+        "id": "MGL3-CH1-ANAT-0598",
+        "reason": "Model answer gives an unsupported and misleading cause for macroglossia; the keyed explanation combines distinct conditions."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH1-ANAT-0648",
+    "flags": [
+      {
+        "id": "MGL3-CH1-ANAT-0648",
+        "reason": "The stem asks for the false liver statement, but the key selects the true four-anatomical-lobes statement; venous drainage via the portal vein is the false option. The existing output appropriately flags the key."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH1-ANAT-0720",
+    "flags": [
+      {
+        "id": "MGL3-CH1-ANAT-0720",
+        "reason": "The keyed “except” choice (middle and inferior rectal veins) is actually the systemic side of the classic portal-superior rectal to systemic middle/inferior rectal anastomosis; the answer key contradicts the stem."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH1-ANAT-0752",
+    "flags": [
+      {
+        "id": "MGL3-CH1-ANAT-0752",
+        "reason": "The “EXCEPT” key selects a generally true statement: the cystic artery is usually in the hepatocystic triangle. The false option says Hartmann pouch lies near the fundus, although it is near the neck."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH1-ANAT-0791",
+    "flags": [
+      {
+        "id": "MGL3-CH1-ANAT-0791",
+        "reason": "The stem asks which artery is not an SMA branch, but the keyed middle colic artery is a standard SMA branch; the left colic artery is the listed IMA branch. Existing output correctly flags the key."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH1-ANAT-0797",
+    "flags": [
+      {
+        "id": "MGL3-CH1-ANAT-0797",
+        "reason": "The key treats the left colic flexure as not supplied by SMA, but the splenic flexure is a watershed with contribution from the SMA middle colic branch as well as IMA left colic. The stem/key may be using a simplified territory convention."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH1-ANAT-0801",
+    "flags": [
+      {
+        "id": "MGL3-CH1-ANAT-0801",
+        "reason": "Possible invalid key: both ascending and descending ileocolic divisions plus the named cecal/appendicular vessels are branches under common descriptions."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH2-PHYS-0055",
+    "flags": [
+      {
+        "id": "MGL3-CH2-PHYS-0055",
+        "reason": "The keyed calcium option is physiologically opposite: intracellular Ca2+ initiates smooth-muscle contraction via calmodulin/MLCK."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH2-PHYS-0060",
+    "flags": [
+      {
+        "id": "MGL3-CH2-PHYS-0060",
+        "reason": "The keyed option says secretory juices are reabsorbed back to plasma, which is not a valid definition of digestive secretion; the other choices are also ill-formed/implausible. Existing output correctly flags the item."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH2-PHYS-0164",
+    "flags": [
+      {
+        "id": "MGL3-CH2-PHYS-0164",
+        "reason": "Output is blank because the key is flagged, but this key is indeed problematic: the epiglottis tilts downward over the airway rather than elevating."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH2-PHYS-0176",
+    "flags": [
+      {
+        "id": "MGL3-CH2-PHYS-0176",
+        "reason": "The textbook evidence says the gastroileal reflex is initiated by gastric food and mediated by gastrin plus parasympathetic nerves; the key marks “long reflex” false, while the output asserts a short enteric reflex. The neural-route terminology/key needs review."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH2-PHYS-0205",
+    "flags": [
+      {
+        "id": "MGL3-CH2-PHYS-0205",
+        "reason": "Several options are false: LES is normally tonically contracted between meals, the lower esophagus is smooth muscle, and UES is striated; the keyed single exception is ambiguous."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH2-PHYS-0235",
+    "flags": [
+      {
+        "id": "MGL3-CH2-PHYS-0235",
+        "reason": "The keyed option says the stomach stores food for 24 hours, which is not normal physiology; limited protein digestion is the valid function among these choices. The item/key is unreliable."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH2-PHYS-0316",
+    "flags": [
+      {
+        "id": "MGL3-CH2-PHYS-0316",
+        "reason": "The selected key says gastric juice antibacterial action comes from mucus, but “pH is always less than 3” is also false because meals buffer gastric contents. More than one option is incorrect."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH2-PHYS-0345",
+    "flags": [
+      {
+        "id": "MGL3-CH2-PHYS-0345",
+        "reason": "The keyed mucus-antibacterial claim is false, but gastric pH is not always below 3.5, especially after meals; the single-exception item has multiple false options."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH2-PHYS-0416",
+    "flags": [
+      {
+        "id": "MGL3-CH2-PHYS-0416",
+        "reason": "The key identifies acetylcholine, but secretin is the main hormonal stimulus for bicarbonate-rich pancreatic fluid that neutralizes chyme."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH2-PHYS-0451",
+    "flags": [
+      {
+        "id": "MGL3-CH2-PHYS-0451",
+        "reason": "The key attributes dark urine to urobilinogen; conjugated bilirubin in urine causes dark color in hepatocellular/cholestatic jaundice."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH2-PHYS-0476",
+    "flags": [
+      {
+        "id": "MGL3-CH2-PHYS-0476",
+        "reason": "Multiple options are physiologically true after common bile duct obstruction: steatorrhea can result from reduced bile in the gut, and intestinal bile salts also fall. The single-best item is ambiguous; existing output flags it."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH2-PHYS-0477",
+    "flags": [
+      {
+        "id": "MGL3-CH2-PHYS-0477",
+        "reason": "The key selects CCK, which is a cholagogue; the source identifies bile salts, secretin, and vagal input as hepatic bile-secretory stimulants."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH2-PHYS-0499",
+    "flags": [
+      {
+        "id": "MGL3-CH2-PHYS-0499",
+        "reason": "Multiple options are physiologically true after common bile duct obstruction: steatorrhea can result from reduced bile in the gut, and intestinal bile salts also fall. The single-best item is ambiguous; existing output flags it."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH2-PHYS-0511",
+    "flags": [
+      {
+        "id": "MGL3-CH2-PHYS-0511",
+        "reason": "Both “activation of pancreatic lipase” and “high lipolytic activity” are questionable: bile salts aid emulsification/colipase-dependent digestion but are not lipases, so the keyed exception is not uniquely discriminating."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH2-PHYS-0519",
+    "flags": [
+      {
+        "id": "MGL3-CH2-PHYS-0519",
+        "reason": "The keyed answer says bile enters the jejunum; bile empties from gallbladder into the duodenum, leaving no correct option."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH2-PHYS-0773",
+    "flags": [
+      {
+        "id": "MGL3-CH2-PHYS-0773",
+        "reason": "The keyed option assigns primary-to-secondary bile-acid conversion to colonic mucosal cells, but this is bacterial metabolism; sodium absorption is the true epithelial function. Existing output correctly flags the key."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH2-PHYS-0797",
+    "flags": [
+      {
+        "id": "MGL3-CH2-PHYS-0797",
+        "reason": "Secretin primarily stimulates bicarbonate-rich secretion from ductal/centroacinar cells, not acinar cells; the keyed option appears incorrect."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH2-PHYS-0798",
+    "flags": [
+      {
+        "id": "MGL3-CH2-PHYS-0798",
+        "reason": "Secretin question has multiple false statements: it is not secreted from pancreatic acini, does not inhibit pancreatic secretion, and does not stimulate acini; the marked choleretic option is also false. Existing output correctly flags the item."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH2-PHYS-0850",
+    "flags": [
+      {
+        "id": "MGL3-CH2-PHYS-0850",
+        "reason": "GIP is an incretin that enhances glucose-dependent insulin secretion; the keyed hyperglycemia result conflicts with its known glucose-lowering action."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH3-HIST-0117",
+    "flags": [
+      {
+        "id": "MGL3-CH3-HIST-0117",
+        "reason": "Two options are both accurate at different levels: fungiform papillae occur in the oral tongue generally and are concentrated at tip/edges specifically. The wording “most numerous in” does not clearly distinguish the keyed broad region from the more specific option; existing output flags this ambiguity."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH3-HIST-0598",
+    "flags": [
+      {
+        "id": "MGL3-CH3-HIST-0598",
+        "reason": "Brunner glands are submucosal and secrete alkaline mucus; “urogastrone” (EGF) has also been attributed to them. Thus several listed properties are true and “all of the above” is likely the intended key, not the keyed location-only answer. Existing output correctly flags."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH3-HIST-0775",
+    "flags": [
+      {
+        "id": "MGL3-CH3-HIST-0775",
+        "reason": "The anal canal has multiple epithelial zones, including stratified columnar and nonkeratinized and keratinized squamous regions. The stem does not specify a level, so no single lining option describes the whole canal."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH3-HIST-0781",
+    "flags": [
+      {
+        "id": "MGL3-CH3-HIST-0781",
+        "reason": "Taeniae coli are characteristic of the colon, but “colon” is absent from the choices. Rectum and appendix both lack taeniae, so the keyed rectum is not a uniquely correct answer."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH3-HIST-0787",
+    "flags": [
+      {
+        "id": "MGL3-CH3-HIST-0787",
+        "reason": "The rectum has a continuous outer longitudinal muscle layer, and solitary lymphoid nodules can also occur in its submucosa. The keyed statement is not uniquely correct."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH3-HIST-0863",
+    "flags": [
+      {
+        "id": "MGL3-CH3-HIST-0863",
+        "reason": "Portal spaces contain portal-vein and hepatic-artery branches, bile ducts, and lymphatics; bile canaliculi lie between hepatocytes, so the keyed “all above” is false and “none” is also false."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH4-BIOC-0056",
+    "flags": [
+      {
+        "id": "MGL3-CH4-BIOC-0056",
+        "reason": "The keyed option says RDA is a safety margin, but RDA is defined as intake meeting the needs of nearly all healthy people; that definition appears in another option."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH4-BIOC-0069",
+    "flags": [
+      {
+        "id": "MGL3-CH4-BIOC-0069",
+        "reason": "“Totally omit carbohydrate” is underspecified: dietary carbohydrate is not strictly essential because glucose can be synthesized, but usual nutrition teaching discourages complete omission. The key’s False depends on an unstated nutritional framing; existing output flags this ambiguity."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH4-BIOC-0283",
+    "flags": [
+      {
+        "id": "MGL3-CH4-BIOC-0283",
+        "reason": "The item’s categorical link between chromium deficiency and diabetes reflects older teaching, but current NIH ODS guidance says chromium deficiency has not been established in healthy people and evidence does not support this claim as a general cause. Coordinator review advised."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH4-BIOC-0463",
+    "flags": [
+      {
+        "id": "MGL3-CH4-BIOC-0463",
+        "reason": "Both biotin and vitamins A/C/E (as antioxidants) are not standard lipotropic agents, while the question requests a single “not lipotropic” choice. The keyed answer is not unique."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH4-BIOC-0479",
+    "flags": [
+      {
+        "id": "MGL3-CH4-BIOC-0479",
+        "reason": "Histamine is mainly inactivated by methylation or oxidative deamination; acetylation is not the standard principal conjugation route, so the keyed answer appears unsupported."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH5-PATH-0038",
+    "flags": [
+      {
+        "id": "MGL3-CH5-PATH-0038",
+        "reason": "The stem only says “Mumps” and has no explicit task. The keyed viral-genome statement is false, but other options are also inaccurate (asymptomatic disease is common; mumps is not zoonotic; vaccine is live attenuated), so the key is not uniquely supported."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH5-PATH-0049",
+    "flags": [
+      {
+        "id": "MGL3-CH5-PATH-0049",
+        "reason": "The “all of the above” key includes the claim that two doses provide lifetime immunity, which is too absolute because vaccine protection can wane and outbreaks occur."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH5-PATH-0246",
+    "flags": [
+      {
+        "id": "MGL3-CH5-PATH-0246",
+        "reason": "The case is chronic antral gastritis, most commonly H. pylori; pernicious anemia is associated with autoimmune fundic/body gastritis and is a poor fit. The keyed answer needs review."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH5-PATH-0247",
+    "flags": [
+      {
+        "id": "MGL3-CH5-PATH-0247",
+        "reason": "The vignette describes antral chronic gastritis, usually associated with H. pylori, but the keyed choice is pernicious anemia, typically linked to autoimmune body/fundus gastritis. A duplicate version keys H. pylori."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH5-PATH-0362",
+    "flags": [
+      {
+        "id": "MGL3-CH5-PATH-0362",
+        "reason": "Peptic ulcer disease has no single “commonest cause” among the listed options; H. pylori and NSAIDs account for major causes, and acid is a required factor rather than a sufficient etiologic diagnosis."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH5-PATH-0365",
+    "flags": [
+      {
+        "id": "MGL3-CH5-PATH-0365",
+        "reason": "A benign gastric peptic ulcer is generally not considered to transform into carcinoma; gastric cancer can ulcerate and mimic a benign ulcer, so the keyed “True” is misleading."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH5-PATH-0574",
+    "flags": [
+      {
+        "id": "MGL3-CH5-PATH-0574",
+        "reason": "Several listed findings support ulcerative colitis, including diffuse inflammation, crypt abscesses, goblet-cell loss, and mucosal ulceration; the single keyed answer is not uniquely correct."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH5-PATH-0648",
+    "flags": [
+      {
+        "id": "MGL3-CH5-PATH-0648",
+        "reason": "Carcinoid syndrome is not restricted to metastatic tumors: some primary tumors outside portal drainage, such as bronchial or ovarian neuroendocrine tumors, can release mediators systemically."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH5-PATH-0658",
+    "flags": [
+      {
+        "id": "MGL3-CH5-PATH-0658",
+        "reason": "The standard urinary marker for carcinoid syndrome is 5-HIAA, but it is not among the options; the key selects serotonin itself. The best answer is absent, so the item should be reviewed."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH5-PATH-0733",
+    "flags": [
+      {
+        "id": "MGL3-CH5-PATH-0733",
+        "reason": "“Most common” cause of intestinal obstruction varies by age, setting, and whether small or large bowel obstruction is meant; no context supports one unique choice."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH5-PATH-0763",
+    "flags": [
+      {
+        "id": "MGL3-CH5-PATH-0763",
+        "reason": "The same serosa-only appendix inflammation vignette is keyed to peritonitis elsewhere, while this version keys polyarteritis nodosa; the finding alone does not establish either cause."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH5-PATH-0803",
+    "flags": [
+      {
+        "id": "MGL3-CH5-PATH-0803",
+        "reason": "The global “commonest cause/type” claim depends on population and date. The supplied output notes 2024 WHO estimates show more chronic HBV infections globally than HCV viremia, so keyed HCV is not universally correct."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH5-PATH-0815",
+    "flags": [
+      {
+        "id": "MGL3-CH5-PATH-0815",
+        "reason": "The global “commonest cause/type” claim depends on population and date. The supplied output notes 2024 WHO estimates show more chronic HBV infections globally than HCV viremia, so keyed HCV is not universally correct."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH5-PATH-0818",
+    "flags": [
+      {
+        "id": "MGL3-CH5-PATH-0818",
+        "reason": "The global “commonest cause/type” claim depends on population and date. The supplied output notes 2024 WHO estimates show more chronic HBV infections globally than HCV viremia, so keyed HCV is not universally correct."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH5-PATH-0921",
+    "flags": [
+      {
+        "id": "MGL3-CH5-PATH-0921",
+        "reason": "The stem describes long-term alcohol use with hematemesis, which suggests cirrhosis/portal hypertension, while the keyed diagnosis is alcoholic hepatitis; the options omit alcoholic cirrhosis, so the intended diagnosis is unclear."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH5-PATH-0937",
+    "flags": [
+      {
+        "id": "MGL3-CH5-PATH-0937-SQ2",
+        "reason": "The item context is missing, and “liver cirrhosis” is not a precise expected consequence of schistosomiasis; hepatosplenic disease typically causes periportal fibrosis and portal hypertension without true cirrhosis."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH5-PATH-0954",
+    "flags": [
+      {
+        "id": "MGL3-CH5-PATH-0954",
+        "reason": "Wilson disease can produce variable cirrhotic architecture, and micronodular morphology is not a reliable exclusion; the stem/key distinction is uncertain."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH5-PATH-1022",
+    "flags": [
+      {
+        "id": "MGL3-CH5-PATH-1022",
+        "reason": "Schistosomal hepatic fibrosis has been discussed as a possible HCC risk in some endemic populations, often with viral coinfection; the blanket “except” key is context-dependent."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH5-PATH-1026",
+    "flags": [
+      {
+        "id": "MGL3-CH5-PATH-1026",
+        "reason": "The claim that schistosomal hepatic fibrosis does not predispose to HCC is not an unambiguous universal distinction across populations and co-risk factors."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH5-PATH-1077",
+    "flags": [
+      {
+        "id": "MGL3-CH5-PATH-1077",
+        "reason": "Hydrops follows cystic-duct obstruction and the retained bile may be replaced by clear mucus. The item says “mucinous material,” which can describe mucus, so the keyed False answer is not clearly justified."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH5-PATH-1085",
+    "flags": [
+      {
+        "id": "MGL3-CH5-PATH-1085",
+        "reason": "The authorized current textbook states that brown pigment-stone cut surfaces are laminated, contradicting the keyed False."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH5-PATH-1157",
+    "flags": [
+      {
+        "id": "MGL3-CH5-PATH-1157",
+        "reason": "The key names ketoacidosis despite a vignette pointing to chronic diabetic neuropathy and peripheral arterial disease; the selected outcome is not justified by those findings."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH5-PATH-1189",
+    "flags": [
+      {
+        "id": "MGL3-CH5-PATH-1189",
+        "reason": "The stem asks why chronic pancreatitis can mimic malignancy, but hard consistency, distortion/shrinkage, and mass formation can all contribute; the single keyed option does not distinguish among multiple true choices."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH5-PATH-1198",
+    "flags": [
+      {
+        "id": "MGL3-CH5-PATH-1198",
+        "reason": "Chronic pancreatitis is associated with increased pancreatic ductal adenocarcinoma risk, so “tumor transformation” may be a complication; the intended distinction between transformation and increased risk is not stated."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH6-PHAR-0011",
+    "flags": [
+      {
+        "id": "MGL3-CH6-PHAR-0011",
+        "reason": "The key marks “domperidone induces extrapyramidal effects” true, but domperidone poorly crosses the blood-brain barrier and rarely causes these effects; as written, the expected answer should be False."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH6-PHAR-0181",
+    "flags": [
+      {
+        "id": "MGL3-CH6-PHAR-0181",
+        "reason": "The statement about famotidine acid stability depends on the pharmacology source and formulation; the keyed False is not secure enough to explain without source context."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH6-PHAR-0263",
+    "flags": [
+      {
+        "id": "MGL3-CH6-PHAR-0263",
+        "reason": "The key claims acid suppression is given to “allow the growth and multiplication” of H. pylori. Although pH changes can affect bacterial growth and antibiotic activity, this wording is ambiguous and does not clearly explain the therapeutic purpose."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH6-PHAR-0280",
+    "flags": [
+      {
+        "id": "MGL3-CH6-PHAR-0280",
+        "reason": "The key attributes renal risk to hyperphosphatemia, but aluminum antacids more characteristically cause phosphate depletion and renal accumulation can cause osteomalacia or encephalopathy; the keyed mechanism is not supported."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH6-PHAR-0292",
+    "flags": [
+      {
+        "id": "MGL3-CH6-PHAR-0292",
+        "reason": "The statement that antibiotics, “and not acid suppressant,” are essential is ambiguous: antibiotics eradicate H. pylori, but an acid suppressant is also a standard component of eradication regimens."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH6-PHAR-0405",
+    "flags": [
+      {
+        "id": "MGL3-CH6-PHAR-0405",
+        "reason": "Cyclosporine is usually administered in divided doses; the “all of the above” key relies on a once-daily schedule that is not generally standard and needs source-specific context."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH6-PHAR-0427",
+    "flags": [
+      {
+        "id": "MGL3-CH6-PHAR-0427",
+        "reason": "Purple urine is not a well-established adverse effect of bisacodyl, so the keyed drug-effect pairing cannot be safely explained."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH6-PHAR-0448",
+    "flags": [
+      {
+        "id": "MGL3-CH6-PHAR-0448",
+        "reason": "The claim that senna is mutagenic is controversial and not a reliable established adverse effect; the keyed pairing needs source-specific support."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH6-PHAR-0468",
+    "flags": [
+      {
+        "id": "MGL3-CH6-PHAR-0468",
+        "reason": "Paraffin oil can cause oily stools and interfere with fat absorption, but bran is not a clear established cause of steatorrhea; the keyed A+B combination is uncertain."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH6-PHAR-0523",
+    "flags": [
+      {
+        "id": "MGL3-CH6-PHAR-0523",
+        "reason": "Iodoquinol is a luminal amebicide, but the statement that it is preferred to diloxanide is source-dependent and conflicts with common first-line teaching; the keyed choice is uncertain."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH6-PHAR-0525",
+    "flags": [
+      {
+        "id": "MGL3-CH6-PHAR-0525",
+        "reason": "The keyed exception is uncertain: arrhythmia is not a typical metronidazole adverse effect, while teratogenicity is also not an established routine human adverse effect; the options do not yield a reliable single exception."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH6-PHAR-0581",
+    "flags": [
+      {
+        "id": "MGL3-CH6-PHAR-0581",
+        "reason": "Mutagenicity is not a well-established routine adverse effect of senna; the keyed pairing is uncertain and should not be rationalized without source-specific evidence."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH7-MICR-0086",
+    "flags": [
+      {
+        "id": "MGL3-CH7-MICR-0086",
+        "reason": "The prophylaxis is vaccine plus hepatitis B immune globulin, but the keyed choice specifies IV immunoglobulin; neonatal HBIG is administered IM, not IV. The answer wording therefore names the wrong route/preparation and needs correction."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH7-MICR-0095",
+    "flags": [
+      {
+        "id": "MGL3-CH7-MICR-0095",
+        "reason": "HBV markers indicate vaccine immunity, but HAV IgG alone cannot distinguish vaccination from past infection; the combined keyed interpretation overstates the serology."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH7-MICR-0235",
+    "flags": [
+      {
+        "id": "MGL3-CH7-MICR-0235",
+        "reason": "The stem only reports coleslaw-associated abdominal pain and diarrhea. Listeriolysin O is a Listeria virulence factor, but no feature establishes Listeria over common foodborne diarrheal causes."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH7-MICR-0314",
+    "flags": [
+      {
+        "id": "MGL3-CH7-MICR-0314",
+        "reason": "The keyed metronidazole is outdated as first choice. Current IDSA/SHEA guidance prefers fidaxomicin for initial adult CDI, with oral vancomycin an acceptable alternative; metronidazole is less preferred."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH7-MICR-0330",
+    "flags": [
+      {
+        "id": "MGL3-CH7-MICR-0330",
+        "reason": "The keyed C. difficile does respond to antimicrobial treatment; several other listed toxin-mediated infections may not benefit from prompt antibiotics, so the key is not uniquely supported."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH7-MICR-0346",
+    "flags": [
+      {
+        "id": "MGL3-CH7-MICR-0346",
+        "reason": "The keyed rotavirus description calls the capsid double-shelled, whereas standard morphology describes a triple-layered capsid. The genome clue is correct but the option as written is technically inaccurate."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH7-MICR-0363",
+    "flags": [
+      {
+        "id": "MGL3-CH7-MICR-0363",
+        "reason": "Astrovirus is not reliably the “most important” neonatal gastroenteritis cause across settings; this ranking depends on population and surveillance context."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH7-MICR-0373",
+    "flags": [
+      {
+        "id": "MGL3-CH7-MICR-0373",
+        "reason": "The keyed seasonal prevalence is a local epidemiologic claim that depends on place and surveillance period; the explanation does not provide evidence establishing that summer is currently the correct answer for Egypt."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH7-MICR-0400",
+    "flags": [
+      {
+        "id": "MGL3-CH7-MICR-0400",
+        "reason": "The keyed ampicillin regimen for Salmonella carriers is historical and treatment depends on susceptibility; the item lacks enough source context to certify it as the best current choice."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH8-PARA-0002",
+    "flags": [
+      {
+        "id": "MGL3-CH8-PARA-0002",
+        "reason": "Spurious fascioliasis is usually caused by passing eggs after eating infected liver that contains eggs; the stem’s “dead adult flukes” does not clearly describe that mechanism, so the keyed route is ambiguous."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH8-PARA-0055",
+    "flags": [
+      {
+        "id": "MGL3-CH8-PARA-0055",
+        "reason": "The explanation acknowledges adult Fasciola may consume blood, while the question offers “blood consumption” and “blood loss from liver injury” separately and includes a combined option. The keyed single mechanism may omit a true cause."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH8-PARA-0059",
+    "flags": [
+      {
+        "id": "MGL3-CH8-PARA-0059",
+        "reason": "The keyed claim about Clonorchis secreting proline is niche and not adequately supported; the listed statements do not permit a reliable explanation without a source."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH8-PARA-0183",
+    "flags": [
+      {
+        "id": "MGL3-CH8-PARA-0183",
+        "reason": "The key names rodents and humans, but these are intermediate hosts; definitive hosts of Echinococcus multilocularis are foxes and other canids."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH8-PARA-0383",
+    "flags": [
+      {
+        "id": "MGL3-CH8-PARA-0383",
+        "reason": "The key is “all of the above,” but the listed Trichuris species is not a recognized cause of vitamin B12 deficiency. The explanation correctly mentions only Diphyllobothrium and Fasciolopsis, so it conflicts with the keyed option."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH8-PARA-0422",
+    "flags": [
+      {
+        "id": "MGL3-CH8-PARA-0422",
+        "reason": "“Reservoir host” is not defined consistently here; humans, livestock, pets, and rodents can maintain different Taenia/cestode cycles, so the keyed pair is not uniquely interpretable."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH8-PARA-0430",
+    "flags": [
+      {
+        "id": "MGL3-CH8-PARA-0430",
+        "reason": "Motile gravid proglottids with perianal migration and pruritus are more characteristic of Taenia saginata, but the key selects T. solium."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH8-PARA-0454",
+    "flags": [
+      {
+        "id": "MGL3-CH8-PARA-0454",
+        "reason": "Current CDC treatment guidance lists niclosamide as an alternative for taeniasis and does not support a blanket contraindication for Taenia solium; the keyed contraindication appears outdated."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH8-PARA-0513",
+    "flags": [
+      {
+        "id": "MGL3-CH8-PARA-0513",
+        "reason": "Routine saline purgative after Taenia treatment is not part of current CDC care; the item’s rationale about preventing cysticercosis is not supported by current guidance."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH8-PARA-0528",
+    "flags": [
+      {
+        "id": "MGL3-CH8-PARA-0528",
+        "reason": "The stated mechanism attributing anemia in Hymenolepis nana infection to toxic metabolites is not a well-established standard mechanism; the explanation merely repeats the source claim without clarifying evidence or uncertainty."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH8-PARA-0598",
+    "flags": [
+      {
+        "id": "MGL3-CH8-PARA-0598",
+        "reason": "Ascaris, Strongyloides, and hookworm larvae can all cause pulmonary eosinophilic inflammation with Charcot-Leyden crystals; the keyed b&c combination omits hookworm."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH8-PARA-0645",
+    "flags": [
+      {
+        "id": "MGL3-CH8-PARA-0645",
+        "reason": "Three listed nematodes (Ascaris, Enterobius, Toxocara) are infective as embryonated eggs, but Trichostrongylus infects via L3 larvae; no single option captures the correct set."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH8-PARA-0698",
+    "flags": [
+      {
+        "id": "MGL3-CH8-PARA-0698",
+        "reason": "Hookworm eggs in fresh stool are typically morulated, but the key selects “all of the above,” including an egg containing a larva. The explanation does not substantiate that larval-egg option as a diagnostic stage for A. duodenale."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH8-PARA-0845",
+    "flags": [
+      {
+        "id": "MGL3-CH8-PARA-0845",
+        "reason": "Capillaria philippinensis has fish-eating bird reservoirs and is zoonotic; calling it anthroponotic conflicts with that transmission cycle, so the keyed statement is uncertain."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH8-PARA-0867",
+    "flags": [
+      {
+        "id": "MGL3-CH8-PARA-0867",
+        "reason": "Stool culture can also be used to grow hookworm larvae from eggs (for example, Harada–Mori culture), so the keyed contrast “Strongyloides but not Ancylostoma” is not reliably unique."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH8-PARA-0924",
+    "flags": [
+      {
+        "id": "MGL3-CH8-PARA-0924",
+        "reason": "Both “ovoviviparous” and “female embedded in intestinal mucosa where eggs hatch” describe Strongyloides parasitic females; the single-best-answer stem is not unique."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH8-PARA-0960",
+    "flags": [
+      {
+        "id": "MGL3-CH8-PARA-0960",
+        "reason": "More than one option is defensible: duodenal aspiration can diagnose Giardia, and nitazoxanide is also an accepted treatment."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH8-PARA-0973",
+    "flags": [
+      {
+        "id": "MGL3-CH8-PARA-0973",
+        "reason": "The stem has more than one true statement: Giardia can be diagnosed by duodenal aspiration, and infection is acquired by ingesting a binucleate cyst; the keyed option is not uniquely correct."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH8-PARA-1058",
+    "flags": [
+      {
+        "id": "MGL3-CH8-PARA-1058",
+        "reason": "Giardia is not classically transmitted by autoinfection; the key “all of the above” overincludes it, making the single-best answer unreliable."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH8-PARA-1071",
+    "flags": [
+      {
+        "id": "MGL3-CH8-PARA-1071",
+        "reason": "The keyed option says a disporocystic disporozoite oocyst, but Cystoisospora infectivity is classically from a sporulated oocyst with two sporocysts, each containing four sporozoites; the key appears wrong."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH8-PARA-1197",
+    "flags": [
+      {
+        "id": "MGL3-CH8-PARA-1197",
+        "reason": "The item endorses topical mercury ointment as necessary treatment; this historical toxic remedy is not medically defensible as a required treatment."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH8-PARA-1249",
+    "flags": [
+      {
+        "id": "MGL3-CH8-PARA-1249",
+        "reason": "Several listed intestinal parasites can rarely cause peritonitis through perforation or ectopic migration; the stem does not establish a unique exception."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH8-PARA-1276",
+    "flags": [
+      {
+        "id": "MGL3-CH8-PARA-1276",
+        "reason": "The key includes Taenia solium, but perianal pruritus is classically caused by Enterobius; Taenia solium is not a standard cause, so the keyed combination is unsupported."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH8-PARA-1287",
+    "flags": [
+      {
+        "id": "MGL3-CH8-PARA-1287",
+        "reason": "This repeats the historical claim that topical mercury ointment is important for enterobiasis; mercury is toxic and not a medically defensible required treatment."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH8-PARA-1326",
+    "flags": [
+      {
+        "id": "MGL3-CH8-PARA-1326",
+        "reason": "The keyed Trichuris–peritonitis association is uncommon and not clearly supported by the stem; the listed causal link may be a source-specific or erroneous key."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH1-ANAT-0195",
+    "flags": [
+      {
+        "id": "MGL3-CH1-ANAT-0195",
+        "reason": "The parotid duct normally pierces the buccinator opposite the upper second molar, but the key marks upper third molar; the keyed landmark is incorrect."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH1-ANAT-0198",
+    "flags": [
+      {
+        "id": "MGL3-CH1-ANAT-0198",
+        "reason": "The parotid duct opens into the oral vestibule opposite the upper second molar, not the upper third molar as keyed."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH1-ANAT-0394",
+    "flags": [
+      {
+        "id": "MGL3-CH1-ANAT-0394",
+        "reason": "No single listed muscle forms both walls: internal oblique contributes to the roof, while transversalis fascia forms the posterior wall and conjoint tendon reinforces it medially."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH1-ANAT-0398",
+    "flags": [
+      {
+        "id": "MGL3-CH1-ANAT-0398",
+        "reason": "Both internal oblique and transversus abdominis contribute arching roof fibers and the conjoint tendon reinforcing the medial posterior wall. The stem does not distinguish these listed contributors; single answer is uncertain."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH2-PHYS-0285",
+    "flags": [
+      {
+        "id": "MGL3-CH2-PHYS-0285",
+        "reason": "The keyed option is CCK, which inhibits gastric emptying; gastrin is the hormone that promotes motility, as reflected by the duplicate item at row 2043."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH2-PHYS-0289",
+    "flags": [
+      {
+        "id": "MGL3-CH2-PHYS-0289",
+        "reason": "Vomiting requires coordinated diaphragm and abdominal-wall contraction; multiple listed muscles participate, so the single keyed muscle is not unique."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH6-PHAR-0252",
+    "flags": [
+      {
+        "id": "MGL3-CH6-PHAR-0252",
+        "reason": "The keyed option is PGE2, but misoprostol is a PGE1 analogue; the output explanation also says PGE1, so it contradicts the selected answer. This appears to be a key error requiring source review."
+      }
+    ]
+  },
+  {
+    "id": "MGL3-CH7-MICR-0044",
+    "flags": [
+      {
+        "id": "MGL3-CH7-MICR-0044",
+        "reason": "Skirrow media is classically associated with Campylobacter and may refer to a selective H. pylori formulation; the exact formulation/key needs source confirmation."
+      }
+    ]
+  }
+]

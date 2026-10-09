@@ -1,0 +1,110 @@
+[
+  {
+    "id": "IBM1-BIO-DRV-20260921-02196",
+    "semantic_decision": "correct",
+    "semantic_fields": [
+      "text"
+    ],
+    "root_fields": [
+      "text"
+    ],
+    "common_fields": [
+      "text"
+    ],
+    "merge_rule": "Exclusion wins; otherwise semantic changes replace overlapping root fields, retaining other root changes and removeFields."
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-02216",
+    "semantic_decision": "correct",
+    "semantic_fields": [
+      "text"
+    ],
+    "root_fields": [
+      "options"
+    ],
+    "common_fields": [],
+    "merge_rule": "Exclusion wins; otherwise semantic changes replace overlapping root fields, retaining other root changes and removeFields."
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-00013",
+    "semantic_decision": "correct",
+    "semantic_fields": [
+      "text"
+    ],
+    "root_fields": [
+      "options"
+    ],
+    "common_fields": [],
+    "merge_rule": "Exclusion wins; otherwise semantic changes replace overlapping root fields, retaining other root changes and removeFields."
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-02188",
+    "semantic_decision": "correct",
+    "semantic_fields": [
+      "text"
+    ],
+    "root_fields": [
+      "text"
+    ],
+    "common_fields": [
+      "text"
+    ],
+    "merge_rule": "Exclusion wins; otherwise semantic changes replace overlapping root fields, retaining other root changes and removeFields."
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-02371",
+    "semantic_decision": "exclude",
+    "semantic_fields": [],
+    "root_fields": [
+      "options"
+    ],
+    "common_fields": [],
+    "merge_rule": "Exclusion wins; otherwise semantic changes replace overlapping root fields, retaining other root changes and removeFields."
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-01028",
+    "semantic_decision": "correct",
+    "semantic_fields": [
+      "text"
+    ],
+    "root_fields": [
+      "options"
+    ],
+    "common_fields": [],
+    "merge_rule": "Exclusion wins; otherwise semantic changes replace overlapping root fields, retaining other root changes and removeFields."
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-01209",
+    "semantic_decision": "correct",
+    "semantic_fields": [
+      "text"
+    ],
+    "root_fields": [
+      "options"
+    ],
+    "common_fields": [],
+    "merge_rule": "Exclusion wins; otherwise semantic changes replace overlapping root fields, retaining other root changes and removeFields."
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-00362",
+    "semantic_decision": "correct",
+    "semantic_fields": [
+      "options"
+    ],
+    "root_fields": [
+      "text"
+    ],
+    "common_fields": [],
+    "merge_rule": "Exclusion wins; otherwise semantic changes replace overlapping root fields, retaining other root changes and removeFields."
+  },
+  {
+    "id": "IBM1-BIO-DRV-20260921-00538",
+    "semantic_decision": "exclude",
+    "semantic_fields": [],
+    "root_fields": [
+      "text"
+    ],
+    "common_fields": [],
+    "merge_rule": "Exclusion wins; otherwise semantic changes replace overlapping root fields, retaining other root changes and removeFields."
+  }
+]

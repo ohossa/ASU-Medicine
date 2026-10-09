@@ -1,3 +1,4 @@
+import {createVisibleAnimation} from './visibleAnimation';
 import { useEffect, useRef } from 'react';
 import { pulse } from '../../lib/pulseEngine';
 
@@ -443,10 +444,10 @@ export function InteractiveBackground() {
        ============================================================ */
     let last = performance.now();
     let targets: { c: Cell; d: number }[] = [];
-    let animationFrameId: number;
+    let animationLoop:ReturnType<typeof createVisibleAnimation>;
 
     const frame = (now: number) => {
-      animationFrameId = requestAnimationFrame(frame);
+
       const dt = Math.min(now - last, 50);
       last = now;
       updateMotion(now);
@@ -612,7 +613,14 @@ export function InteractiveBackground() {
       }
     };
 
-    animationFrameId = requestAnimationFrame(frame);
+    animationLoop=createVisibleAnimation(frame,{request:cb=>requestAnimationFrame(cb),cancel:id=>cancelAnimationFrame(id),hidden:()=>document.hidden,reduced:()=>rmQuery.matches});
+    const refreshAnimation=()=>animationLoop.refresh();
+    document.addEventListener('visibilitychange',refreshAnimation);
+    rmQuery.addEventListener('change',refreshAnimation);
+    window.addEventListener('resize',refreshAnimation);
+    animationLoop.refresh();
+    const themeObserver=new MutationObserver(refreshAnimation);
+    themeObserver.observe(document.documentElement,{attributes:true,attributeFilter:['class','data-theme']});
 
     return () => {
       window.removeEventListener('resize', resize);
@@ -622,7 +630,11 @@ export function InteractiveBackground() {
         window.removeEventListener('pointerdown', handlePointerDown);
       }
       rmQuery.removeEventListener('change', handleReducedMotionChange);
-      cancelAnimationFrame(animationFrameId);
+      themeObserver.disconnect();
+      animationLoop.stop();
+      document.removeEventListener('visibilitychange',refreshAnimation);
+      rmQuery.removeEventListener('change',refreshAnimation);
+      window.removeEventListener('resize',refreshAnimation);
     };
   }, []);
 

@@ -1,0 +1,77 @@
+{
+  "scope": "Year 1 Semester 1 only",
+  "modules": {
+    "IAE-1": {
+      "before": 1107,
+      "after": 1013,
+      "beforeHash": "44c2914d90390ce7e59e74f0d456e9a7d64d7a040d9d064751826a4d444c6c9b",
+      "afterHash": "014eba5ec80383eff4c270bf00d255a3588c8aefd230fea4388d56877093ec81",
+      "types": {
+        "mcq": 854,
+        "matching": 52,
+        "fillblank": 66,
+        "essay": 38,
+        "case": 3
+      }
+    },
+    "IBM-1": {
+      "before": 1671,
+      "after": 1460,
+      "beforeHash": "639b7648be3f667dcaddcf16c71410b9666658d32183f381148a07f277610657",
+      "afterHash": "0745bb373f4631d99eeb06b8f673c0f8906d4aed9dbb21e7e72c85ff23660c8e",
+      "types": {
+        "mcq": 1000,
+        "essay": 460
+      }
+    },
+    "IHC-1": {
+      "before": 0,
+      "after": 0,
+      "beforeHash": "1d722e5239b261cd1d27f7a3a8ec21c9117c556ba9ca635fff7702ebdf7e8b50",
+      "afterHash": "1d722e5239b261cd1d27f7a3a8ec21c9117c556ba9ca635fff7702ebdf7e8b50",
+      "types": {}
+    },
+    "IPHY-1": {
+      "before": 769,
+      "after": 705,
+      "beforeHash": "8cb31f6a728be6f471b5701c46ff79b67a7ee41c698d52f4f45425e9e79f8fae",
+      "afterHash": "c49217d0541a041e8f7345533e15ea35770058bbecc59480eb3bc27dba847bf3",
+      "types": {
+        "mcq": 699,
+        "truefalse": 6
+      }
+    },
+    "MBMG-1": {
+      "before": 1002,
+      "after": 862,
+      "beforeHash": "1dd9a2067fbb6202691d7ea6ef2b1adeb139c6a2bc1b87cd0e79015806bf985e",
+      "afterHash": "4ed8f214969db6e342b6780de92565eab255ed45aaf5999cd5c2fcf65cb3608e",
+      "types": {
+        "mcq": 859,
+        "essay": 3
+      }
+    },
+    "MIM-1": {
+      "before": 0,
+      "after": 0,
+      "beforeHash": "3a9e70263c1850e6db53e9bbd1affe6e893dd96f87164956ecfc699d8326a13b",
+      "afterHash": "3a9e70263c1850e6db53e9bbd1affe6e893dd96f87164956ecfc699d8326a13b",
+      "types": {}
+    },
+    "P1-1": {
+      "before": 86,
+      "after": 82,
+      "beforeHash": "5c6c21a04f50f537332a94baaa5e7d0705e82d1cd31f6116fa3270e15b055cfd",
+      "afterHash": "21900afdf425355282a5178e1ba21f79390172012a691d48d6a96ecb8150a27d",
+      "types": {
+        "mcq": 65,
+        "truefalse": 17
+      }
+    }
+  },
+  "corrections": 1436,
+  "exclusions": 219,
+  "duplicatesRemoved": 294,
+  "errors": 0,
+  "publication": "Prepared locally; not published."
+}

@@ -1,0 +1,4802 @@
+{
+  "packet_type": "ASU_WEBSITE_DESTINATIONS",
+  "version": 1,
+  "snapshot_date": "2026-09-12",
+  "source": "Local canonical bank files; not a live deployment verification",
+  "protocol": "ASU-PORTABLE-3",
+  "purpose": "Offline exact-destination crosswalk; teaching sources and existing-question deduplication are separate inputs",
+  "refresh_rule": "Compare bank_sha256 with current target files immediately before import; regenerate or reconcile stale mappings",
+  "limitations": [
+    "Contains no question text or answer keys; cannot establish medical correctness or uniqueness against existing questions.",
+    "Canonical metadata can differ from runtime syllabus/activation; verify route availability in the integrating environment.",
+    "Field preservation depends on current chosen importer and runtime; verify media, acceptedAnswers, case blanks and metadata on staged results.",
+    "Do not interpret existing lecture metadata inconsistencies as authorization for automatic structural edits."
+  ],
+  "incoming_format": {
+    "root_fields": [
+      "moduleCode",
+      "questions"
+    ],
+    "canonical_schema_version": 1,
+    "types": [
+      "mcq",
+      "truefalse",
+      "matching",
+      "essay",
+      "case",
+      "fillblank"
+    ],
+    "preferred_mcq_key": "correctIndex: integer, zero-based"
+  },
+  "modules": [
+    {
+      "canonical_path": "src/imports/year-1/semester-1/IAE-1.json",
+      "bank_sha256": "4cd3a1361021c2ff6106eb8e25c2f465d5765cb8958a91773c9858530b54eae7",
+      "schema_version": 1,
+      "meta": {
+        "moduleCode": "IAE-1",
+        "moduleName": "Introduction to Anatomy & Embryology",
+        "year": 1,
+        "semester": 1,
+        "creditPoints": 3,
+        "totalMarks": 60,
+        "keywords": [
+          "anatomy",
+          "embryology",
+          "iae"
+        ]
+      },
+      "chapters": [
+        {
+          "id": 1,
+          "title": "Introduction to Anatomy",
+          "subtitle": "Introduction to Anatomy",
+          "lectureRange": "Lectures 1-24",
+          "subjects": [
+            {
+              "id": "anatomy",
+              "name": "Anatomy",
+              "iconName": "Bone",
+              "lectures": "Lecture 1, Lecture 2, Lecture 20, Lecture 21, Lecture 22, Lecture 23 & 24, Lecture 25, Lecture 26, Lecture 27, Lecture 28, Lecture 29, Lecture 3, Lecture 30&31, Lecture 32&33, Lecture 34&35, Lecture 36, Lecture 37&38, Lecture 39&40, Lecture 4, Lecture 41, Lecture 42&43, Lecture 5, Lecture 6, Lecture 7",
+              "lectureCount": 24,
+              "lectureNames": [
+                "Lecture 1",
+                "Lecture 2",
+                "Lecture 20",
+                "Lecture 21",
+                "Lecture 22",
+                "Lecture 23 & 24",
+                "Lecture 25",
+                "Lecture 26",
+                "Lecture 27",
+                "Lecture 28",
+                "Lecture 29",
+                "Lecture 3",
+                "Lecture 30&31",
+                "Lecture 32&33",
+                "Lecture 34&35",
+                "Lecture 36",
+                "Lecture 37&38",
+                "Lecture 39&40",
+                "Lecture 4",
+                "Lecture 41",
+                "Lecture 42&43",
+                "Lecture 5",
+                "Lecture 6",
+                "Lecture 7"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "General Embryology",
+          "subtitle": "General Embryology",
+          "lectureRange": "Lectures 1-9",
+          "subjects": [
+            {
+              "id": "anatomy",
+              "name": "Anatomy",
+              "iconName": "Bone",
+              "lectures": "Lecture 10, Lecture 11, Lecture 12, Lecture 13, Lecture 17, Lecture 18, Lecture 19, Lecture 8, Lecture 9",
+              "lectureCount": 9,
+              "lectureNames": [
+                "Lecture 10",
+                "Lecture 11",
+                "Lecture 12",
+                "Lecture 13",
+                "Lecture 17",
+                "Lecture 18",
+                "Lecture 19",
+                "Lecture 8",
+                "Lecture 9"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "canonical_path": "src/imports/year-1/semester-1/IBM-1.json",
+      "bank_sha256": "ef7a2d0d0132666854bdbb654570e3e1b741d56073ba9ff3190f3c41fb098d6c",
+      "schema_version": 1,
+      "meta": {
+        "moduleCode": "IBM-1",
+        "moduleName": "Introduction to Medical Biochemistry",
+        "year": 1,
+        "semester": 1,
+        "creditPoints": 3,
+        "totalMarks": 60,
+        "keywords": [
+          "biochemistry",
+          "ibm"
+        ]
+      },
+      "chapters": [
+        {
+          "id": 1,
+          "title": "Cell Chemistry & Biophysics",
+          "subtitle": "Cell Chemistry & Biophysics",
+          "lectureRange": "Lectures 1-13",
+          "subjects": [
+            {
+              "id": "biochem",
+              "name": "Biochemistry",
+              "iconName": "FlaskConical",
+              "lectures": "Amino Acids, Lecture 1, Lecture 13 & 14, Lecture 15, Lecture 2, Lecture 20, Lecture 3, Lecture 4, Lecture 5, Lecture 6, Lecture 7, Lecture 8, Lecture 9",
+              "lectureCount": 13,
+              "lectureNames": [
+                "Amino Acids",
+                "Lecture 1",
+                "Lecture 13 & 14",
+                "Lecture 15",
+                "Lecture 2",
+                "Lecture 20",
+                "Lecture 3",
+                "Lecture 4",
+                "Lecture 5",
+                "Lecture 6",
+                "Lecture 7",
+                "Lecture 8",
+                "Lecture 9"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Enzymes & Bioenergetics",
+          "subtitle": "Enzymes & Bioenergetics",
+          "lectureRange": "Lectures 1-3",
+          "subjects": [
+            {
+              "id": "biochem",
+              "name": "Biochemistry",
+              "iconName": "FlaskConical",
+              "lectures": "Lecture 10, Lecture 11, Lecture 12",
+              "lectureCount": 3,
+              "lectureNames": [
+                "Lecture 10",
+                "Lecture 11",
+                "Lecture 12"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "canonical_path": "src/imports/year-1/semester-1/IHC-1.json",
+      "bank_sha256": "716d67151408b9cd08639f7455a1857c27758c9587a1162873c2fe4cf7c93deb",
+      "schema_version": 1,
+      "meta": {
+        "moduleCode": "IHC-1",
+        "moduleName": "Introduction to Histology & Cell Biology",
+        "year": 1,
+        "semester": 1,
+        "creditPoints": 3,
+        "totalMarks": 60,
+        "keywords": [
+          "histology",
+          "cell biology",
+          "ihc"
+        ]
+      },
+      "chapters": [
+        {
+          "id": 1,
+          "title": "Cytology & Cell Cytoplasm",
+          "subtitle": "Cytology & Cell Cytoplasm",
+          "lectureRange": "Lectures 1-9",
+          "subjects": [
+            {
+              "id": "histology",
+              "name": "Histology",
+              "iconName": "Microscope",
+              "lectures": "Lecture 1, Lecture 10, Lecture 11, Lecture 2, Lecture 3, Lecture 4, Lecture 5, Lecture 6, Lecture 9",
+              "lectureCount": 9,
+              "lectureNames": [
+                "Lecture 1",
+                "Lecture 10",
+                "Lecture 11",
+                "Lecture 2",
+                "Lecture 3",
+                "Lecture 4",
+                "Lecture 5",
+                "Lecture 6",
+                "Lecture 9"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Epithelial & Connective Tissues",
+          "subtitle": "Epithelial & Connective Tissues",
+          "lectureRange": "Lectures 1-8",
+          "subjects": [
+            {
+              "id": "histology",
+              "name": "Histology",
+              "iconName": "Microscope",
+              "lectures": "Lecture 12 & 13, Lecture 14 & 15, Lecture 16 & 17, Lecture 19, Lecture 20, Lecture 21, Lecture 22&23, Lecture 18",
+              "lectureCount": 8,
+              "lectureNames": [
+                "Lecture 12 & 13",
+                "Lecture 14 & 15",
+                "Lecture 16 & 17",
+                "Lecture 19",
+                "Lecture 20",
+                "Lecture 21",
+                "Lecture 22&23",
+                "Lecture 18"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "canonical_path": "src/imports/year-1/semester-1/IPHY-1.json",
+      "bank_sha256": "4c47b3279444836886dc25778f9d9d7323c7c82f065658051d210f144e173c83",
+      "schema_version": 1,
+      "meta": {
+        "moduleCode": "IPHY-1",
+        "moduleName": "Introduction to Physiology",
+        "year": 1,
+        "semester": 1,
+        "creditPoints": 3,
+        "totalMarks": 60,
+        "keywords": [
+          "physiology",
+          "iphy"
+        ]
+      },
+      "chapters": [
+        {
+          "id": 1,
+          "title": "Homeostasis & Membrane Transport",
+          "subtitle": "Homeostasis & Membrane Transport",
+          "lectureRange": "Lectures 1-8",
+          "subjects": [
+            {
+              "id": "physiology",
+              "name": "Physiology",
+              "iconName": "Activity",
+              "lectures": "Lecture 1, Lecture 2, Lecture 3, Lecture 31, Lecture 32&33, Lecture 34, Lecture 4, Lecture 5",
+              "lectureCount": 8,
+              "lectureNames": [
+                "Lecture 1",
+                "Lecture 2",
+                "Lecture 3",
+                "Lecture 31",
+                "Lecture 32&33",
+                "Lecture 34",
+                "Lecture 4",
+                "Lecture 5"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Autonomic Nervous System",
+          "subtitle": "Autonomic Nervous System",
+          "lectureRange": "Lectures 1-6",
+          "subjects": [
+            {
+              "id": "physiology",
+              "name": "Physiology",
+              "iconName": "Activity",
+              "lectures": "Lecture 19 & 20, Lecture 21 & 22, Lecture 23, Lecture 24 & 25, Lecture 26 & 27, Extra",
+              "lectureCount": 6,
+              "lectureNames": [
+                "Lecture 19 & 20",
+                "Lecture 21 & 22",
+                "Lecture 23",
+                "Lecture 24 & 25",
+                "Lecture 26 & 27",
+                "Extra"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Excitable Tissues",
+          "subtitle": "Excitable Tissues",
+          "lectureRange": "Lectures 1-7",
+          "subjects": [
+            {
+              "id": "physiology",
+              "name": "Physiology",
+              "iconName": "Activity",
+              "lectures": "Lecture 13&14, Lecture 15, Lecture 17 & 18, Lecture 28 & 29, Lecture 6, Lecture 7 & 8, Lecture 9",
+              "lectureCount": 7,
+              "lectureNames": [
+                "Lecture 13&14",
+                "Lecture 15",
+                "Lecture 17 & 18",
+                "Lecture 28 & 29",
+                "Lecture 6",
+                "Lecture 7 & 8",
+                "Lecture 9"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "canonical_path": "src/imports/year-1/semester-1/MBMG-1.json",
+      "bank_sha256": "1f7ea902aaf507caa9810d49cb852d418db7c3cf73b40eb9aa58855046829b8a",
+      "schema_version": 1,
+      "meta": {
+        "moduleCode": "MBMG-1",
+        "moduleName": "Molecular Biology & Medical Genetics",
+        "year": 1,
+        "semester": 1,
+        "creditPoints": 3,
+        "totalMarks": 60,
+        "keywords": [
+          "molecular biology",
+          "genetics",
+          "mbmg"
+        ]
+      },
+      "chapters": [
+        {
+          "id": 1,
+          "title": "Molecular Biology & DNA",
+          "subtitle": "Molecular Biology & DNA",
+          "lectureRange": "Lectures 1-10",
+          "subjects": [
+            {
+              "id": "biochem",
+              "name": "Biochemistry",
+              "iconName": "FlaskConical",
+              "lectures": "Lecture 1&2, Lecture 10&11, Lecture 12, Lecture 13, Lecture 14, Lecture 15, Lecture 17&18, Lecture 21&22, Lecture 25, Lecture 3&4",
+              "lectureCount": 10,
+              "lectureNames": [
+                "Lecture 1&2",
+                "Lecture 10&11",
+                "Lecture 12",
+                "Lecture 13",
+                "Lecture 14",
+                "Lecture 15",
+                "Lecture 17&18",
+                "Lecture 21&22",
+                "Lecture 25",
+                "Lecture 3&4"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Genetics & Hereditary Disorders",
+          "subtitle": "Genetics & Hereditary Disorders",
+          "lectureRange": "Lectures 1-5",
+          "subjects": [
+            {
+              "id": "biochem",
+              "name": "Biochemistry",
+              "iconName": "FlaskConical",
+              "lectures": "Lecture 16, Lecture 19&20, Lecture 23&24, Lecture 5&6, Lecture 7&8",
+              "lectureCount": 5,
+              "lectureNames": [
+                "Lecture 16",
+                "Lecture 19&20",
+                "Lecture 23&24",
+                "Lecture 5&6",
+                "Lecture 7&8"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "canonical_path": "src/imports/year-1/semester-1/MIM-1.json",
+      "bank_sha256": "fe474ad8880a60d7240fb2c6fd2d91b7a4c7550ee0b3a9b22c41ee831b5e15a1",
+      "schema_version": 1,
+      "meta": {
+        "moduleCode": "MIM-1",
+        "moduleName": "Immunology Module",
+        "year": 1,
+        "semester": 1,
+        "creditPoints": 3,
+        "totalMarks": 60,
+        "keywords": [
+          "immunology",
+          "mim"
+        ]
+      },
+      "chapters": [
+        {
+          "id": 1,
+          "title": "Innate Immunity",
+          "subtitle": "Innate Immunity",
+          "lectureRange": "Lectures 1-6",
+          "subjects": [
+            {
+              "id": "microbiology",
+              "name": "Microbiology",
+              "iconName": "Biohazard",
+              "lectures": "Lecture 1, Lecture 13, Lecture 14, Lecture 2, Lecture 3, Lecture 4",
+              "lectureCount": 6,
+              "lectureNames": [
+                "Lecture 1",
+                "Lecture 13",
+                "Lecture 14",
+                "Lecture 2",
+                "Lecture 3",
+                "Lecture 4"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Adaptive Immunity",
+          "subtitle": "Adaptive Immunity",
+          "lectureRange": "Lectures 1-4",
+          "subjects": [
+            {
+              "id": "microbiology",
+              "name": "Microbiology",
+              "iconName": "Biohazard",
+              "lectures": "Lecture 10&11, Lecture 5, Lecture 6, Lecture 7",
+              "lectureCount": 4,
+              "lectureNames": [
+                "Lecture 10&11",
+                "Lecture 5",
+                "Lecture 6",
+                "Lecture 7"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Clinical Immunology",
+          "subtitle": "Clinical Immunology",
+          "lectureRange": "Lectures 1-8",
+          "subjects": [
+            {
+              "id": "microbiology",
+              "name": "Microbiology",
+              "iconName": "Biohazard",
+              "lectures": "Lecture 15, Lecture 16, Lecture 17, Lecture 18, Lecture 19, Lecture 20, Lecture 21 & 22, Lecture 23 & 24",
+              "lectureCount": 8,
+              "lectureNames": [
+                "Lecture 15",
+                "Lecture 16",
+                "Lecture 17",
+                "Lecture 18",
+                "Lecture 19",
+                "Lecture 20",
+                "Lecture 21 & 22",
+                "Lecture 23 & 24"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "canonical_path": "src/imports/year-1/semester-1/P1-1.json",
+      "bank_sha256": "943bb07ff4cb900dfd5ec8b200ffc64254be1b5e11a194127d13842c5da43538",
+      "schema_version": 1,
+      "meta": {
+        "moduleCode": "P1-1",
+        "moduleName": "Introduction to Information & Communication Technology (ICT) and Medical Terminology",
+        "year": 1,
+        "semester": 1,
+        "creditPoints": 1.5,
+        "totalMarks": 30,
+        "keywords": [
+          "ict",
+          "terminology",
+          "medical terminology",
+          "information technology",
+          "communication technology"
+        ]
+      },
+      "chapters": [
+        {
+          "id": 1,
+          "title": "Office Suite Fundamentals & Shared Interface",
+          "subtitle": "",
+          "lectureRange": "Section 1",
+          "subjects": [
+            {
+              "id": "clinical",
+              "name": "Clinical",
+              "iconName": "Stethoscope",
+              "lectures": "Office Suite Fundamentals & Shared Interface",
+              "lectureCount": 1,
+              "lectureNames": [
+                "Section 1"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Microsoft Word",
+          "subtitle": "",
+          "lectureRange": "Section 2",
+          "subjects": [
+            {
+              "id": "clinical",
+              "name": "Clinical",
+              "iconName": "Stethoscope",
+              "lectures": "Microsoft Word",
+              "lectureCount": 2,
+              "lectureNames": [
+                "Section 2"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Microsoft PowerPoint",
+          "subtitle": "",
+          "lectureRange": "Section 3",
+          "subjects": [
+            {
+              "id": "clinical",
+              "name": "Clinical",
+              "iconName": "Stethoscope",
+              "lectures": "Microsoft PowerPoint",
+              "lectureCount": 3,
+              "lectureNames": [
+                "Section 3"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Microsoft Excel",
+          "subtitle": "",
+          "lectureRange": "Section 4",
+          "subjects": [
+            {
+              "id": "clinical",
+              "name": "Clinical",
+              "iconName": "Stethoscope",
+              "lectures": "Microsoft Excel",
+              "lectureCount": 4,
+              "lectureNames": [
+                "Section 4"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "canonical_path": "src/imports/year-1/semester-2/BLS-HE-1.json",
+      "bank_sha256": "ac7d604c050182e9dfce828c7b85ec442a394b8503e4ee884e31fbd8bf7de8b1",
+      "schema_version": 1,
+      "meta": {
+        "moduleCode": "BLS-HE-1",
+        "moduleName": "Basic Life Support & Clinical Examination",
+        "year": 1,
+        "semester": 2,
+        "creditPoints": 2,
+        "totalMarks": 40,
+        "keywords": [
+          "bls",
+          "cpr",
+          "clinical examination",
+          "bls-he"
+        ]
+      },
+      "chapters": [
+        {
+          "id": 1,
+          "title": "Basic Life Support (BLS) & CPR",
+          "subtitle": "Basic Life Support (BLS) & CPR",
+          "lectureRange": "Lectures 1",
+          "subjects": []
+        },
+        {
+          "id": 2,
+          "title": "Medical History Taking",
+          "subtitle": "Medical History Taking",
+          "lectureRange": "Lectures 2",
+          "subjects": []
+        },
+        {
+          "id": 3,
+          "title": "General Clinical Examination",
+          "subtitle": "General Clinical Examination",
+          "lectureRange": "Lectures 3",
+          "subjects": []
+        }
+      ]
+    },
+    {
+      "canonical_path": "src/imports/year-1/semester-2/IPAT-1.json",
+      "bank_sha256": "b209aeee100e1f4c41c7122ab632013f7a7c971e3508208083b782b60735c20b",
+      "schema_version": 1,
+      "meta": {
+        "moduleCode": "IPAT-1",
+        "moduleName": "Introduction to Pathology",
+        "year": 1,
+        "semester": 2,
+        "creditPoints": 3,
+        "totalMarks": 60,
+        "keywords": [
+          "pathology",
+          "ipat"
+        ]
+      },
+      "chapters": [
+        {
+          "id": 1,
+          "title": "Cellular Injury & Adaptations",
+          "subtitle": "Cellular Injury & Adaptations",
+          "lectureRange": "Lectures 1-7",
+          "subjects": [
+            {
+              "id": "pathology",
+              "name": "Pathology",
+              "iconName": "ShieldAlert",
+              "lectures": "Adaptation, Cell Injury, Gangrene, Apoptosis, Accumulation, Pigments, Pathological Calcification",
+              "lectureCount": 7,
+              "lectureNames": [
+                "Adaptation",
+                "Cell Injury",
+                "Gangrene",
+                "Apoptosis",
+                "Accumulation",
+                "Pigments",
+                "Pathological Calcification"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Inflammation & Repair",
+          "subtitle": "Inflammation & Repair",
+          "lectureRange": "Lectures 1-3",
+          "subjects": [
+            {
+              "id": "pathology",
+              "name": "Pathology",
+              "iconName": "ShieldAlert",
+              "lectures": "Acute Inflammation, Chronic Inflammation, Healing&repair",
+              "lectureCount": 3,
+              "lectureNames": [
+                "Acute Inflammation",
+                "Chronic Inflammation",
+                "Healing&repair"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Hemodynamics & Neoplasia",
+          "subtitle": "Hemodynamics & Neoplasia",
+          "lectureRange": "Lectures 1-20",
+          "subjects": [
+            {
+              "id": "pathology",
+              "name": "Pathology",
+              "iconName": "ShieldAlert",
+              "lectures": "Classification of Tumors, Characteristics of Tumors, Benign Tumors, Malignant Tumors, Grading and Staging, Methods of Metastasize, Epidemiology&predispostion, Carcinogenesis, Cancer Etiology, Clinical Features of Neoplasm, Diagnosis, Edema, Hyperemia&congestion, Thrombosis, Embolism, Ischemia, Infarcts, Hemorrhage, Autoimmune Diseases, Amyloidosis",
+              "lectureCount": 20,
+              "lectureNames": [
+                "Classification of Tumors",
+                "Characteristics of Tumors",
+                "Benign Tumors",
+                "Malignant Tumors",
+                "Grading and Staging",
+                "Methods of Metastasize",
+                "Epidemiology&predispostion",
+                "Carcinogenesis",
+                "Cancer Etiology",
+                "Clinical Features of Neoplasm",
+                "Diagnosis",
+                "Edema",
+                "Hyperemia&congestion",
+                "Thrombosis",
+                "Embolism",
+                "Ischemia",
+                "Infarcts",
+                "Hemorrhage",
+                "Autoimmune Diseases",
+                "Amyloidosis"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "canonical_path": "src/imports/year-1/semester-2/IPHA-1.json",
+      "bank_sha256": "a7a9817ba43e9307e4fe61d23db4f805be3a1194b8531a5624710ac6893f408c",
+      "schema_version": 1,
+      "meta": {
+        "moduleCode": "IPHA-1",
+        "moduleName": "Introduction to Clinical Pharmacology",
+        "year": 1,
+        "semester": 2,
+        "creditPoints": 3,
+        "totalMarks": 60,
+        "keywords": [
+          "pharmacology",
+          "ipha"
+        ]
+      },
+      "chapters": [
+        {
+          "id": 1,
+          "title": "Pharmacokinetics",
+          "subtitle": "Pharmacokinetics",
+          "lectureRange": "Lectures 1-4",
+          "subjects": [
+            {
+              "id": "pharma",
+              "name": "Pharmacology",
+              "iconName": "Pill",
+              "lectures": "Absorption, Distribution, Metabolism, Excretion",
+              "lectureCount": 4,
+              "lectureNames": [
+                "Absorption",
+                "Distribution",
+                "Metabolism",
+                "Excretion"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Pharmacodynamics",
+          "subtitle": "Pharmacodynamics",
+          "lectureRange": "Lectures 5-9",
+          "subjects": [
+            {
+              "id": "pharma",
+              "name": "Pharmacology",
+              "iconName": "Pill",
+              "lectures": "Mechanisms of Drugs, Signaling Mechanisms, Dose Response Relationship, Adverse Drug Interactions, Drug Interactions",
+              "lectureCount": 5,
+              "lectureNames": [
+                "Mechanisms of Drugs",
+                "Signaling Mechanisms",
+                "Dose Response Relationship",
+                "Adverse Drug Interactions",
+                "Drug Interactions"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Adrenergic System",
+          "subtitle": "Adrenergic System",
+          "lectureRange": "Lectures 10-11",
+          "subjects": [
+            {
+              "id": "pharma",
+              "name": "Pharmacology",
+              "iconName": "Pill",
+              "lectures": "Adrenergic Pharmacology, Sympathomimetic Drugs",
+              "lectureCount": 2,
+              "lectureNames": [
+                "Adrenergic Pharmacology",
+                "Sympathomimetic Drugs"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Cholinergic System",
+          "subtitle": "Cholinergic System",
+          "lectureRange": "Lectures 12-13",
+          "subjects": [
+            {
+              "id": "pharma",
+              "name": "Pharmacology",
+              "iconName": "Pill",
+              "lectures": "Cholinergic Pharmacology, Autocoids",
+              "lectureCount": 2,
+              "lectureNames": [
+                "Cholinergic Pharmacology",
+                "Autocoids"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Calculations",
+          "subtitle": "Calculations",
+          "lectureRange": "Lecture 14",
+          "subjects": [
+            {
+              "id": "pharma",
+              "name": "Pharmacology",
+              "iconName": "Pill",
+              "lectures": "Pharmacokinetic Calculations",
+              "lectureCount": 1,
+              "lectureNames": [
+                "Pharmacokinetic Calculations"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "canonical_path": "src/imports/year-1/semester-2/MINF-1.json",
+      "bank_sha256": "2635343cea201e0d19164fcfd197ad33a8cc018771c1ebedb7160fa7ad612ad0",
+      "schema_version": 1,
+      "meta": {
+        "moduleCode": "MINF-1",
+        "moduleName": "Infection Module",
+        "year": 1,
+        "semester": 2,
+        "creditPoints": 4.5,
+        "totalMarks": 90,
+        "keywords": [
+          "infection",
+          "microbiology",
+          "minf"
+        ]
+      },
+      "chapters": [
+        {
+          "id": 1,
+          "title": "Microbiology",
+          "subtitle": "Microbiology",
+          "lectureRange": "Lectures 1-10",
+          "subjects": [
+            {
+              "id": "microbiology",
+              "name": "Microbiology",
+              "iconName": "Biohazard",
+              "lectures": "Introduction to Medical Microbiology, Bacterial Cell Structure, Bacterial Physiology and Growth Curve, Host Microbe Relationship, Basics of Bacterial Genetics and Gene Transfer, Antibiotic Complications, Resistance and Stewardship Programs, Classification and Characterization of Medically Relevant Bacteria, Basics of Medical Mycology, Basic Medical Virology - General Properties of Viruses, Basics of Prevention and Control of HCAI",
+              "lectureCount": 10,
+              "lectureNames": [
+                "Introduction to Medical Microbiology",
+                "Bacterial Cell Structure",
+                "Bacterial Physiology and Growth Curve",
+                "Host Microbe Relationship",
+                "Basics of Bacterial Genetics and Gene Transfer",
+                "Antibiotic Complications, Resistance and Stewardship Programs",
+                "Classification and Characterization of Medically Relevant Bacteria",
+                "Basics of Medical Mycology",
+                "Basic Medical Virology - General Properties of Viruses",
+                "Basics of Prevention and Control of HCAI"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Parasitology",
+          "subtitle": "Parasitology",
+          "lectureRange": "Lectures 1-7",
+          "subjects": [
+            {
+              "id": "parasitology",
+              "name": "Parasitology",
+              "iconName": "Bug",
+              "lectures": "Terminology and Transmission of Parasitic Infections, Pathogenesis of Parasitic Infections, General Characters of Platyhelminthes, General Characters of Nemathelminths, General Characters of Protozoa, General Characters of Arthropods, Management of Parasitic Diseases",
+              "lectureCount": 7,
+              "lectureNames": [
+                "Terminology and Transmission of Parasitic Infections",
+                "Pathogenesis of Parasitic Infections",
+                "General Characters of Platyhelminthes",
+                "General Characters of Nemathelminths",
+                "General Characters of Protozoa",
+                "General Characters of Arthropods",
+                "Management of Parasitic Diseases"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Pathology",
+          "subtitle": "Pathology",
+          "lectureRange": "Lectures 1-4",
+          "subjects": [
+            {
+              "id": "pathology",
+              "name": "Pathology",
+              "iconName": "ShieldAlert",
+              "lectures": "General Pathological Features of Tuberculosis, General Pathological Features of Sarcoidosis / Scleroma, General Pathological Features of Actinomyces and Mycetoma, General Pathological Features of Parasitic Diseases",
+              "lectureCount": 4,
+              "lectureNames": [
+                "General Pathological Features of Tuberculosis",
+                "General Pathological Features of Sarcoidosis / Scleroma",
+                "General Pathological Features of Actinomyces and Mycetoma",
+                "General Pathological Features of Parasitic Diseases"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Pharmacology",
+          "subtitle": "Pharmacology",
+          "lectureRange": "Lectures 1-7",
+          "subjects": [
+            {
+              "id": "pharma",
+              "name": "Pharmacology",
+              "iconName": "Pill",
+              "lectures": "Chemotherapy: Classification of Antibacterial Drugs, Inhibitors of Cell Wall Synthesis, Cephalosporins and Other B Lactams, Inhibitors of Protein Synthesis, Inhibitors of Nucleic Acids, Inhibitors of Folates, Clinical Aspects of Antimicrobials",
+              "lectureCount": 7,
+              "lectureNames": [
+                "Chemotherapy: Classification of Antibacterial Drugs",
+                "Inhibitors of Cell Wall Synthesis",
+                "Cephalosporins and Other B Lactams",
+                "Inhibitors of Protein Synthesis",
+                "Inhibitors of Nucleic Acids",
+                "Inhibitors of Folates",
+                "Clinical Aspects of Antimicrobials"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "canonical_path": "src/imports/year-1/semester-2/MLS-1.json",
+      "bank_sha256": "fc856593e389e62073d2a375fd43769b3a61a2b94abd2863edd7ba56f77880e5",
+      "schema_version": 1,
+      "meta": {
+        "moduleCode": "MLS-1",
+        "moduleName": "Locomotor Module",
+        "year": 1,
+        "semester": 2,
+        "creditPoints": 3,
+        "totalMarks": 60,
+        "keywords": [
+          "locomotor",
+          "anatomy",
+          "mls"
+        ]
+      },
+      "chapters": [
+        {
+          "id": 1,
+          "title": "Upper Limb Anatomy & Injuries",
+          "subtitle": "Upper Limb Anatomy & Injuries",
+          "lectureRange": "Lectures 1-20",
+          "subjects": [
+            {
+              "id": "anatomy",
+              "name": "Anatomy",
+              "iconName": "Bone",
+              "lectures": "Axilla&brachial Plexus, Pectoral Region, The Back, Shoulder Region, Arm&cubital Fossa, Front of Forearm&wrist, Back of Forearm&hand, Nerves of Upper Limb, Shoulder Girdle, Elbow&radioulnar Joints, Wrist&hand Joints",
+              "lectureCount": 11,
+              "lectureNames": [
+                "Axilla&brachial Plexus",
+                "Pectoral Region",
+                "The Back",
+                "Shoulder Region",
+                "Arm&cubital Fossa",
+                "Front of Forearm&wrist",
+                "Back of Forearm&hand",
+                "Nerves of Upper Limb",
+                "Shoulder Girdle",
+                "Elbow&radioulnar Joints",
+                "Wrist&hand Joints"
+              ]
+            },
+            {
+              "id": "biochem",
+              "name": "Biochemistry",
+              "iconName": "FlaskConical",
+              "lectures": "Collagen, Calcium&vit D, Purine Catabolism, Muscle Metabolism",
+              "lectureCount": 4,
+              "lectureNames": [
+                "Collagen",
+                "Calcium&vit D",
+                "Purine Catabolism",
+                "Muscle Metabolism"
+              ]
+            },
+            {
+              "id": "histology",
+              "name": "Histology",
+              "iconName": "Microscope",
+              "lectures": "Cartilage, Bone, Muscles",
+              "lectureCount": 3,
+              "lectureNames": [
+                "Cartilage",
+                "Bone",
+                "Muscles"
+              ]
+            },
+            {
+              "id": "pharma",
+              "name": "Pharmacology",
+              "iconName": "Pill",
+              "lectures": "Muscle Relaxants",
+              "lectureCount": 1,
+              "lectureNames": [
+                "Muscle Relaxants"
+              ]
+            },
+            {
+              "id": "physiology",
+              "name": "Physiology",
+              "iconName": "Activity",
+              "lectures": "Muscle&nerves",
+              "lectureCount": 1,
+              "lectureNames": [
+                "Muscle&nerves"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Lower Limb Anatomy & Injuries",
+          "subtitle": "Lower Limb Anatomy & Injuries",
+          "lectureRange": "Lectures 1-28",
+          "subjects": [
+            {
+              "id": "anatomy",
+              "name": "Anatomy",
+              "iconName": "Bone",
+              "lectures": "Front of Thigh, Medial Side of Thigh, Gluteal Region, Back of Thigh, Popliteal Fossa, Anterior of Leg&dorsum of Foot, Lateral Compartment of Leg, Posterior Compartment of Leg, Sole of Foot, Hip, Knee, Tibio-fibular, Ankle, Intertarsal Joints, Vertebral Column",
+              "lectureCount": 15,
+              "lectureNames": [
+                "Front of Thigh",
+                "Medial Side of Thigh",
+                "Gluteal Region",
+                "Back of Thigh",
+                "Popliteal Fossa",
+                "Anterior of Leg&dorsum of Foot",
+                "Lateral Compartment of Leg",
+                "Posterior Compartment of Leg",
+                "Sole of Foot",
+                "Hip",
+                "Knee",
+                "Tibio-fibular",
+                "Ankle",
+                "Intertarsal Joints",
+                "Vertebral Column"
+              ]
+            },
+            {
+              "id": "biochem",
+              "name": "Biochemistry",
+              "iconName": "FlaskConical",
+              "lectures": "Muscle Metabolism, Oxidative System",
+              "lectureCount": 2,
+              "lectureNames": [
+                "Muscle Metabolism",
+                "Oxidative System"
+              ]
+            },
+            {
+              "id": "histology",
+              "name": "Histology",
+              "iconName": "Microscope",
+              "lectures": "Neuron",
+              "lectureCount": 1,
+              "lectureNames": [
+                "Neuron"
+              ]
+            },
+            {
+              "id": "parasitology",
+              "name": "Parasitology",
+              "iconName": "Bug",
+              "lectures": "Trichinellosis",
+              "lectureCount": 1,
+              "lectureNames": [
+                "Trichinellosis"
+              ]
+            },
+            {
+              "id": "pathology",
+              "name": "Pathology",
+              "iconName": "ShieldAlert",
+              "lectures": "Adipose Tumor, Fibrous Tumors, Smooth Muscle Tumors, Synovial Sarcoma, Nerve Sheath Tumors, Skeletal Muscle Tumors, Muscle Disorders",
+              "lectureCount": 7,
+              "lectureNames": [
+                "Adipose Tumor",
+                "Fibrous Tumors",
+                "Smooth Muscle Tumors",
+                "Synovial Sarcoma",
+                "Nerve Sheath Tumors",
+                "Skeletal Muscle Tumors",
+                "Muscle Disorders"
+              ]
+            },
+            {
+              "id": "pharma",
+              "name": "Pharmacology",
+              "iconName": "Pill",
+              "lectures": "Nsaids, Gout",
+              "lectureCount": 2,
+              "lectureNames": [
+                "Nsaids",
+                "Gout"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Spine & Musculoskeletal Pathologies",
+          "subtitle": "Spine & Musculoskeletal Pathologies",
+          "lectureRange": "Lectures 1-26",
+          "subjects": [
+            {
+              "id": "anatomy",
+              "name": "Anatomy",
+              "iconName": "Bone",
+              "lectures": "Dermatome",
+              "lectureCount": 1,
+              "lectureNames": [
+                "Dermatome"
+              ]
+            },
+            {
+              "id": "biochem",
+              "name": "Biochemistry",
+              "iconName": "FlaskConical",
+              "lectures": "Collagen, Calcium&vit D, Purine Catabolism",
+              "lectureCount": 3,
+              "lectureNames": [
+                "Collagen",
+                "Calcium&vit D",
+                "Purine Catabolism"
+              ]
+            },
+            {
+              "id": "histology",
+              "name": "Histology",
+              "iconName": "Microscope",
+              "lectures": "Cartilage, Bone, Skin",
+              "lectureCount": 3,
+              "lectureNames": [
+                "Cartilage",
+                "Bone",
+                "Skin"
+              ]
+            },
+            {
+              "id": "microbiology",
+              "name": "Microbiology",
+              "iconName": "Biohazard",
+              "lectures": "Bone&joint Infections, Bacteria, Bacterial Skin Infections, Fungal Infection, Viral Infections",
+              "lectureCount": 5,
+              "lectureNames": [
+                "Bone&joint Infections",
+                "Bacteria",
+                "Bacterial Skin Infections",
+                "Fungal Infection",
+                "Viral Infections"
+              ]
+            },
+            {
+              "id": "parasitology",
+              "name": "Parasitology",
+              "iconName": "Bug",
+              "lectures": "Protozoal Skin Infections, Onchocerciasis, Loiasis, Flies, Lice, Fleas, Cimex Lectularius, Ticks, Mites",
+              "lectureCount": 9,
+              "lectureNames": [
+                "Protozoal Skin Infections",
+                "Onchocerciasis",
+                "Loiasis",
+                "Flies",
+                "Lice",
+                "Fleas",
+                "Cimex Lectularius",
+                "Ticks",
+                "Mites"
+              ]
+            },
+            {
+              "id": "pathology",
+              "name": "Pathology",
+              "iconName": "ShieldAlert",
+              "lectures": "Non-tumor Diseases of Bone, Tumors, Joint Diseases, Diseases of Skin",
+              "lectureCount": 4,
+              "lectureNames": [
+                "Non-tumor Diseases of Bone",
+                "Tumors",
+                "Joint Diseases",
+                "Diseases of Skin"
+              ]
+            },
+            {
+              "id": "pharma",
+              "name": "Pharmacology",
+              "iconName": "Pill",
+              "lectures": "Antifungal Drugs",
+              "lectureCount": 1,
+              "lectureNames": [
+                "Antifungal Drugs"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "canonical_path": "src/imports/year-1/semester-2/P2-1.json",
+      "bank_sha256": "46cecfd787aa671a83792da0fc6e7e2cdfd1a2e56a2f6cd60296051831136147",
+      "schema_version": 1,
+      "meta": {
+        "moduleCode": "P2-1",
+        "moduleName": "Presentation, Learning & Time Management Skills",
+        "year": 1,
+        "semester": 2,
+        "creditPoints": 1,
+        "totalMarks": 20,
+        "keywords": [
+          "presentation",
+          "learning",
+          "p2"
+        ]
+      },
+      "chapters": [
+        {
+          "id": 1,
+          "title": "Learning Strategies & Memory Techniques",
+          "subtitle": "Learning Strategies & Memory Techniques",
+          "lectureRange": "Lectures 1",
+          "subjects": []
+        },
+        {
+          "id": 2,
+          "title": "Effective Presentation & Communication Skills",
+          "subtitle": "Effective Presentation & Communication Skills",
+          "lectureRange": "Lectures 2",
+          "subjects": []
+        },
+        {
+          "id": 3,
+          "title": "Time Management & Goal Setting",
+          "subtitle": "Time Management & Goal Setting",
+          "lectureRange": "Lectures 3",
+          "subjects": []
+        }
+      ]
+    },
+    {
+      "canonical_path": "src/imports/year-2/semester-1/MBL-2.json",
+      "bank_sha256": "bae14c646e6fa40634dde9bd83129de375bd23925c0ea97d81f106fa0343e7ae",
+      "schema_version": 1,
+      "meta": {
+        "moduleCode": "MBL-2",
+        "moduleName": "Blood & Lymphatic System",
+        "year": 2,
+        "semester": 1,
+        "creditPoints": 4,
+        "totalMarks": 80,
+        "keywords": [
+          "blood",
+          "lymphatic",
+          "hematology",
+          "mbl"
+        ]
+      },
+      "chapters": [
+        {
+          "id": 1,
+          "title": "Erythrocytes & Anemias",
+          "subtitle": "Erythrocytes & Anemias",
+          "lectureRange": "Lectures 1",
+          "subjects": [
+            {
+              "id": "physiology",
+              "name": "Physiology",
+              "iconName": "Activity",
+              "lectures": "Lectures 1-5",
+              "lectureCount": 5,
+              "lectureNames": [
+                "Anemia",
+                "Blood Groups & Blood Transfusion",
+                "Blood Properties & Components",
+                "Erythrocytes & Erythropoiesis",
+                "Plasma and Plasma Proteins"
+              ]
+            },
+            {
+              "id": "biochem",
+              "name": "Biochemistry",
+              "iconName": "FlaskConical",
+              "lectures": "Lectures 1-15",
+              "lectureCount": 15,
+              "lectureNames": [
+                "2,3-Bisphosphoglycerate",
+                "Chemistry of Hemoproteins",
+                "Folic Acid & Vitamin B12",
+                "Free Radicals & Antioxidants",
+                "Glycolysis in RBCs",
+                "HMP Pathway",
+                "Heme Catabolism & Bilirubin Metabolism",
+                "Heme Synthesis & Regulation",
+                "Hemoglobin Structure and Function",
+                "Hemoglobinopathies & Electrophoresis",
+                "Iron Metabolism",
+                "Methemoglobin Metabolism",
+                "Molecular Biology of Hb Synthesis",
+                "Molecular Biology of Hb Synthesis & Hemoglobinopathies",
+                "WBCs Metabolism"
+              ]
+            },
+            {
+              "id": "pathology",
+              "name": "Pathology",
+              "iconName": "ShieldAlert",
+              "lectures": "Lectures 1-1",
+              "lectureCount": 1,
+              "lectureNames": [
+                "Anemia & Polycythemia"
+              ]
+            },
+            {
+              "id": "pharma",
+              "name": "Pharmacology",
+              "iconName": "Pill",
+              "lectures": "Lectures 1-2",
+              "lectureCount": 2,
+              "lectureNames": [
+                "Anti-malarial Drugs",
+                "Pharmacology of Anemia"
+              ]
+            },
+            {
+              "id": "microbiology",
+              "name": "Microbiology",
+              "iconName": "Biohazard",
+              "lectures": "Lectures 1-1",
+              "lectureCount": 1,
+              "lectureNames": [
+                "Viral Infections of RBCs (Parvovirus B19)"
+              ]
+            },
+            {
+              "id": "parasitology",
+              "name": "Parasitology",
+              "iconName": "Bug",
+              "lectures": "Lectures 1-4",
+              "lectureCount": 4,
+              "lectureNames": [
+                "Babesiosis",
+                "Malaria & Plasmodium Species",
+                "Mosquitoes",
+                "Trypanosomiasis"
+              ]
+            },
+            {
+              "id": "histology",
+              "name": "Histology",
+              "iconName": "Microscope",
+              "lectures": "Lectures 1-3",
+              "lectureCount": 3,
+              "lectureNames": [
+                "Bone Marrow & Erythropoiesis",
+                "Erythrocytes & Anemias",
+                "RBC Histology"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Leukocytes & Lymphatics",
+          "subtitle": "Leukocytes & Lymphatics",
+          "lectureRange": "Lectures 2",
+          "subjects": [
+            {
+              "id": "anatomy",
+              "name": "Anatomy",
+              "iconName": "Bone",
+              "lectures": "Lectures 1-1",
+              "lectureCount": 1,
+              "lectureNames": [
+                "Lymphatics"
+              ]
+            },
+            {
+              "id": "physiology",
+              "name": "Physiology",
+              "iconName": "Activity",
+              "lectures": "Lectures 1-1",
+              "lectureCount": 1,
+              "lectureNames": [
+                "White Blood Cells"
+              ]
+            },
+            {
+              "id": "pathology",
+              "name": "Pathology",
+              "iconName": "ShieldAlert",
+              "lectures": "Lectures 1-3",
+              "lectureCount": 3,
+              "lectureNames": [
+                "Pathology of Leukemia",
+                "Pathology of Lymph Nodes, Spleen & Thymus",
+                "Pathology of Lymphomas"
+              ]
+            },
+            {
+              "id": "microbiology",
+              "name": "Microbiology",
+              "iconName": "Biohazard",
+              "lectures": "Lectures 1-5",
+              "lectureCount": 5,
+              "lectureNames": [
+                "Bacteremia, Septicemia & Sepsis",
+                "Brucellosis, Tularemia & Plague",
+                "Systemic Mycoses & Bacterial Infections",
+                "Vector-Borne Bacterial Diseases",
+                "Viral Infections of WBCs"
+              ]
+            },
+            {
+              "id": "parasitology",
+              "name": "Parasitology",
+              "iconName": "Bug",
+              "lectures": "Lectures 1-5",
+              "lectureCount": 5,
+              "lectureNames": [
+                "Leishmania",
+                "Lymphatic Filariasis",
+                "Mosquitoes",
+                "Toxoplasma gondii",
+                "Trypanosomiasis"
+              ]
+            },
+            {
+              "id": "histology",
+              "name": "Histology",
+              "iconName": "Microscope",
+              "lectures": "Lectures 1-1",
+              "lectureCount": 1,
+              "lectureNames": [
+                "Leukocyte Histology"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Hemostasis & Bleeding Disorders",
+          "subtitle": "Hemostasis & Bleeding Disorders",
+          "lectureRange": "Lectures 3",
+          "subjects": [
+            {
+              "id": "physiology",
+              "name": "Physiology",
+              "iconName": "Activity",
+              "lectures": "Lectures 1-2",
+              "lectureCount": 2,
+              "lectureNames": [
+                "Bleeding Disorders",
+                "Hemostasis (Clotting & Anti-clotting Mechanisms)"
+              ]
+            },
+            {
+              "id": "pathology",
+              "name": "Pathology",
+              "iconName": "ShieldAlert",
+              "lectures": "Lectures 1-1",
+              "lectureCount": 1,
+              "lectureNames": [
+                "Bleeding Disorders"
+              ]
+            },
+            {
+              "id": "pharma",
+              "name": "Pharmacology",
+              "iconName": "Pill",
+              "lectures": "Lectures 1-3",
+              "lectureCount": 3,
+              "lectureNames": [
+                "Antiplatelet, Fibrinolytic & Bleeding Drugs",
+                "Indirect & Direct Thrombin Inhibitors",
+                "Oral Anticoagulant Drugs"
+              ]
+            },
+            {
+              "id": "microbiology",
+              "name": "Microbiology",
+              "iconName": "Biohazard",
+              "lectures": "Lectures 1-1",
+              "lectureCount": 1,
+              "lectureNames": [
+                "Viral Hemorrhagic Fevers"
+              ]
+            },
+            {
+              "id": "histology",
+              "name": "Histology",
+              "iconName": "Microscope",
+              "lectures": "Lectures 1-1",
+              "lectureCount": 1,
+              "lectureNames": [
+                "Platelet Histology"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "canonical_path": "src/imports/year-2/semester-1/MCVS-2.json",
+      "bank_sha256": "5b21c9c622ee95211b407f6e6e61a26e77f74a514cd92de4bdfab6e648cb4e25",
+      "schema_version": 1,
+      "meta": {
+        "moduleCode": "MCVS-2",
+        "moduleName": "Cardiovascular System",
+        "year": 2,
+        "semester": 1,
+        "creditPoints": 4.5,
+        "totalMarks": 90,
+        "keywords": [
+          "cardiovascular",
+          "cardiology",
+          "mcvs"
+        ]
+      },
+      "chapters": [
+        {
+          "id": 1,
+          "title": "Development of the Heart",
+          "subtitle": "Development of the Heart",
+          "lectureRange": "Lecture 1",
+          "subjects": [
+            {
+              "id": "anatomy",
+              "name": "Anatomy",
+              "iconName": "Bone",
+              "lectures": "Lecture 1",
+              "lectureCount": 1,
+              "lectureNames": null
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Structure of the Heart",
+          "subtitle": "Structure of the Heart",
+          "lectureRange": "Lecture 2",
+          "subjects": [
+            {
+              "id": "anatomy",
+              "name": "Anatomy",
+              "iconName": "Bone",
+              "lectures": "Lecture 2",
+              "lectureCount": 1,
+              "lectureNames": null
+            },
+            {
+              "id": "histology",
+              "name": "Histology",
+              "iconName": "Microscope",
+              "lectures": "Lecture 2",
+              "lectureCount": 1,
+              "lectureNames": null
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Functional Characteristics of the CVS",
+          "subtitle": "Functional Characteristics of the CVS",
+          "lectureRange": "Lecture 3",
+          "subjects": [
+            {
+              "id": "physiology",
+              "name": "Physiology",
+              "iconName": "Activity",
+              "lectures": "Lecture 3",
+              "lectureCount": 1,
+              "lectureNames": null
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Electrical Activity of the Heart",
+          "subtitle": "Electrical Activity of the Heart",
+          "lectureRange": "Lecture 4",
+          "subjects": [
+            {
+              "id": "physiology",
+              "name": "Physiology",
+              "iconName": "Activity",
+              "lectures": "Lecture 4",
+              "lectureCount": 1,
+              "lectureNames": null
+            },
+            {
+              "id": "pharma",
+              "name": "Pharmacology",
+              "iconName": "Pill",
+              "lectures": "Lecture 4",
+              "lectureCount": 1,
+              "lectureNames": null
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Contractile Activity of the Cardiac Muscle",
+          "subtitle": "Contractile Activity of the Cardiac Muscle",
+          "lectureRange": "Lecture 5",
+          "subjects": [
+            {
+              "id": "physiology",
+              "name": "Physiology",
+              "iconName": "Activity",
+              "lectures": "Lecture 5",
+              "lectureCount": 1,
+              "lectureNames": null
+            },
+            {
+              "id": "biochem",
+              "name": "Biochemistry",
+              "iconName": "FlaskConical",
+              "lectures": "Lecture 5",
+              "lectureCount": 1,
+              "lectureNames": null
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Cardiac Diseases",
+          "subtitle": "Cardiac Diseases",
+          "lectureRange": "Lecture 6",
+          "subjects": [
+            {
+              "id": "microbiology",
+              "name": "Microbiology",
+              "iconName": "Biohazard",
+              "lectures": "Lecture 6",
+              "lectureCount": 1,
+              "lectureNames": null
+            },
+            {
+              "id": "pathology",
+              "name": "Pathology",
+              "iconName": "ShieldAlert",
+              "lectures": "Lecture 6",
+              "lectureCount": 1,
+              "lectureNames": null
+            },
+            {
+              "id": "pharma",
+              "name": "Pharmacology",
+              "iconName": "Pill",
+              "lectures": "Lecture 6",
+              "lectureCount": 1,
+              "lectureNames": null
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Development of the Vessels",
+          "subtitle": "Development of the Vessels",
+          "lectureRange": "Lecture 7",
+          "subjects": [
+            {
+              "id": "anatomy",
+              "name": "Anatomy",
+              "iconName": "Bone",
+              "lectures": "Lecture 7",
+              "lectureCount": 1,
+              "lectureNames": null
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Anatomy and Structure of Blood Vessels",
+          "subtitle": "Anatomy and Structure of Blood Vessels",
+          "lectureRange": "Lecture 8",
+          "subjects": [
+            {
+              "id": "anatomy",
+              "name": "Anatomy",
+              "iconName": "Bone",
+              "lectures": "Lecture 8",
+              "lectureCount": 1,
+              "lectureNames": null
+            },
+            {
+              "id": "histology",
+              "name": "Histology",
+              "iconName": "Microscope",
+              "lectures": "Lecture 8",
+              "lectureCount": 1,
+              "lectureNames": null
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "title": "Ischemic Heart Disease",
+          "subtitle": "Ischemic Heart Disease",
+          "lectureRange": "Lecture 9",
+          "subjects": [
+            {
+              "id": "anatomy",
+              "name": "Anatomy",
+              "iconName": "Bone",
+              "lectures": "Lecture 9",
+              "lectureCount": 1,
+              "lectureNames": null
+            },
+            {
+              "id": "physiology",
+              "name": "Physiology",
+              "iconName": "Activity",
+              "lectures": "Lecture 9",
+              "lectureCount": 1,
+              "lectureNames": null
+            },
+            {
+              "id": "biochem",
+              "name": "Biochemistry",
+              "iconName": "FlaskConical",
+              "lectures": "Lecture 9",
+              "lectureCount": 1,
+              "lectureNames": null
+            },
+            {
+              "id": "pathology",
+              "name": "Pathology",
+              "iconName": "ShieldAlert",
+              "lectures": "Lecture 9",
+              "lectureCount": 1,
+              "lectureNames": null
+            },
+            {
+              "id": "pharma",
+              "name": "Pharmacology",
+              "iconName": "Pill",
+              "lectures": "Lecture 9",
+              "lectureCount": 1,
+              "lectureNames": null
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "title": "Blood Pressure: Regulation and Pathophysiology",
+          "subtitle": "Blood Pressure: Regulation and Pathophysiology",
+          "lectureRange": "Lecture 10",
+          "subjects": [
+            {
+              "id": "physiology",
+              "name": "Physiology",
+              "iconName": "Activity",
+              "lectures": "Lecture 10",
+              "lectureCount": 1,
+              "lectureNames": null
+            },
+            {
+              "id": "pathology",
+              "name": "Pathology",
+              "iconName": "ShieldAlert",
+              "lectures": "Lecture 10",
+              "lectureCount": 1,
+              "lectureNames": null
+            },
+            {
+              "id": "pharma",
+              "name": "Pharmacology",
+              "iconName": "Pill",
+              "lectures": "Lecture 10",
+              "lectureCount": 1,
+              "lectureNames": null
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "title": "Special Circulations and Diseases of Blood Vessels",
+          "subtitle": "Special Circulations and Diseases of Blood Vessels",
+          "lectureRange": "Lecture 11",
+          "subjects": [
+            {
+              "id": "anatomy",
+              "name": "Anatomy",
+              "iconName": "Bone",
+              "lectures": "Lecture 11",
+              "lectureCount": 1,
+              "lectureNames": null
+            },
+            {
+              "id": "histology",
+              "name": "Histology",
+              "iconName": "Microscope",
+              "lectures": "Lecture 11",
+              "lectureCount": 1,
+              "lectureNames": null
+            },
+            {
+              "id": "physiology",
+              "name": "Physiology",
+              "iconName": "Activity",
+              "lectures": "Lecture 11",
+              "lectureCount": 1,
+              "lectureNames": null
+            },
+            {
+              "id": "pathology",
+              "name": "Pathology",
+              "iconName": "ShieldAlert",
+              "lectures": "Lecture 11",
+              "lectureCount": 1,
+              "lectureNames": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "canonical_path": "src/imports/year-2/semester-1/MRS-2.json",
+      "bank_sha256": "1689704746e16248cec40b30903f0cd65fc6fc71776d3a27e2abe57f1a96b919",
+      "schema_version": 1,
+      "meta": {
+        "moduleCode": "MRS-2",
+        "moduleName": "Respiratory System",
+        "year": 2,
+        "semester": 1,
+        "creditPoints": 4,
+        "totalMarks": 80,
+        "keywords": [
+          "respiratory",
+          "pulmonology",
+          "mrs"
+        ]
+      },
+      "chapters": [
+        {
+          "id": 1,
+          "title": "Respiratory Tract Anatomy & Histology",
+          "subtitle": "Respiratory Tract Anatomy & Histology",
+          "lectureRange": "Lectures 1",
+          "subjects": [
+            {
+              "id": "anatomy",
+              "name": "Anatomy",
+              "iconName": "Bone",
+              "lectures": "Lectures 1",
+              "lectureCount": 1,
+              "lectureNames": null
+            },
+            {
+              "id": "histology",
+              "name": "Histology",
+              "iconName": "Microscope",
+              "lectures": "Lectures 1",
+              "lectureCount": 1,
+              "lectureNames": null
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Pulmonary Physiology",
+          "subtitle": "Pulmonary Physiology",
+          "lectureRange": "Lectures 2",
+          "subjects": [
+            {
+              "id": "physiology",
+              "name": "Physiology",
+              "iconName": "Activity",
+              "lectures": "Lectures 2",
+              "lectureCount": 1,
+              "lectureNames": null
+            },
+            {
+              "id": "biochem",
+              "name": "Biochemistry",
+              "iconName": "FlaskConical",
+              "lectures": "Lectures 2",
+              "lectureCount": 1,
+              "lectureNames": null
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Respiratory Pathologies & Pharmacology",
+          "subtitle": "Respiratory Pathologies & Pharmacology",
+          "lectureRange": "Lectures 3",
+          "subjects": [
+            {
+              "id": "pathology",
+              "name": "Pathology",
+              "iconName": "ShieldAlert",
+              "lectures": "Lectures 3",
+              "lectureCount": 1,
+              "lectureNames": null
+            },
+            {
+              "id": "pharma",
+              "name": "Pharmacology",
+              "iconName": "Pill",
+              "lectures": "Lectures 3",
+              "lectureCount": 1,
+              "lectureNames": null
+            },
+            {
+              "id": "microbiology",
+              "name": "Microbiology",
+              "iconName": "Biohazard",
+              "lectures": "Lectures 3",
+              "lectureCount": 1,
+              "lectureNames": null
+            },
+            {
+              "id": "parasitology",
+              "name": "Parasitology",
+              "iconName": "Bug",
+              "lectures": "Lectures 3",
+              "lectureCount": 1,
+              "lectureNames": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "canonical_path": "src/imports/year-2/semester-2/MCNS-2.json",
+      "bank_sha256": "6c22f1f727947f842de58bf211e85e0b641217b5cd797f2927dacee1903df42d",
+      "schema_version": 1,
+      "meta": {
+        "moduleCode": "MCNS-2",
+        "moduleName": "Central Nervous System Module",
+        "year": 2,
+        "semester": 2,
+        "creditPoints": 13,
+        "totalMarks": 4596,
+        "keywords": [
+          "cns",
+          "central nervous",
+          "mcns",
+          "neuro",
+          "brain",
+          "spinal cord"
+        ]
+      },
+      "chapters": [
+        {
+          "id": 1,
+          "title": "Introduction to CNS",
+          "subtitle": "",
+          "lectureRange": "L1-L5",
+          "subjects": [
+            {
+              "id": "anatomy",
+              "name": "Anatomy",
+              "iconName": "Bone",
+              "lectures": "L1-L5",
+              "lectureCount": 5,
+              "lectureNames": null
+            },
+            {
+              "id": "physiology",
+              "name": "Physiology",
+              "iconName": "Activity",
+              "lectures": "L1-L5",
+              "lectureCount": 5,
+              "lectureNames": null
+            },
+            {
+              "id": "biochem",
+              "name": "Biochemistry",
+              "iconName": "FlaskConical",
+              "lectures": "L1-L5",
+              "lectureCount": 5,
+              "lectureNames": null
+            },
+            {
+              "id": "histology",
+              "name": "Histology",
+              "iconName": "Microscope",
+              "lectures": "L1-L5",
+              "lectureCount": 5,
+              "lectureNames": null
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Sensory System",
+          "subtitle": "",
+          "lectureRange": "L1-L5",
+          "subjects": [
+            {
+              "id": "anatomy",
+              "name": "Anatomy",
+              "iconName": "Bone",
+              "lectures": "L1-L5",
+              "lectureCount": 5,
+              "lectureNames": null
+            },
+            {
+              "id": "physiology",
+              "name": "Physiology",
+              "iconName": "Activity",
+              "lectures": "L1-L5",
+              "lectureCount": 5,
+              "lectureNames": null
+            },
+            {
+              "id": "pharma",
+              "name": "Pharmacology",
+              "iconName": "Pill",
+              "lectures": "L1-L5",
+              "lectureCount": 5,
+              "lectureNames": null
+            },
+            {
+              "id": "histology",
+              "name": "Histology",
+              "iconName": "Microscope",
+              "lectures": "L1-L5",
+              "lectureCount": 5,
+              "lectureNames": null
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Motor System & Spinal Cord",
+          "subtitle": "",
+          "lectureRange": "L1-L5",
+          "subjects": [
+            {
+              "id": "anatomy",
+              "name": "Anatomy",
+              "iconName": "Bone",
+              "lectures": "L1-L5",
+              "lectureCount": 5,
+              "lectureNames": null
+            },
+            {
+              "id": "physiology",
+              "name": "Physiology",
+              "iconName": "Activity",
+              "lectures": "L1-L5",
+              "lectureCount": 5,
+              "lectureNames": null
+            },
+            {
+              "id": "histology",
+              "name": "Histology",
+              "iconName": "Microscope",
+              "lectures": "L1-L5",
+              "lectureCount": 5,
+              "lectureNames": null
+            },
+            {
+              "id": "clinical",
+              "name": "Clinical",
+              "iconName": "Stethoscope",
+              "lectures": "L1-L5",
+              "lectureCount": 5,
+              "lectureNames": null
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Brain Stem & Cranial Region",
+          "subtitle": "",
+          "lectureRange": "L1-L5",
+          "subjects": [
+            {
+              "id": "anatomy",
+              "name": "Anatomy",
+              "iconName": "Bone",
+              "lectures": "L1-L5",
+              "lectureCount": 5,
+              "lectureNames": null
+            },
+            {
+              "id": "histology",
+              "name": "Histology",
+              "iconName": "Microscope",
+              "lectures": "L1-L5",
+              "lectureCount": 5,
+              "lectureNames": null
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Anatomy of the Neck",
+          "subtitle": "",
+          "lectureRange": "L1-L5",
+          "subjects": [
+            {
+              "id": "anatomy",
+              "name": "Anatomy",
+              "iconName": "Bone",
+              "lectures": "L1-L5",
+              "lectureCount": 5,
+              "lectureNames": null
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Diencephalon, Reticular Formation, Sleep & Epilepsy",
+          "subtitle": "",
+          "lectureRange": "L1-L5",
+          "subjects": [
+            {
+              "id": "anatomy",
+              "name": "Anatomy",
+              "iconName": "Bone",
+              "lectures": "L1-L5",
+              "lectureCount": 5,
+              "lectureNames": null
+            },
+            {
+              "id": "physiology",
+              "name": "Physiology",
+              "iconName": "Activity",
+              "lectures": "L1-L5",
+              "lectureCount": 5,
+              "lectureNames": null
+            },
+            {
+              "id": "pharma",
+              "name": "Pharmacology",
+              "iconName": "Pill",
+              "lectures": "L1-L5",
+              "lectureCount": 5,
+              "lectureNames": null
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Cerebrum, Meninges & Higher Brain Function",
+          "subtitle": "",
+          "lectureRange": "L1-L5",
+          "subjects": [
+            {
+              "id": "anatomy",
+              "name": "Anatomy",
+              "iconName": "Bone",
+              "lectures": "L1-L5",
+              "lectureCount": 5,
+              "lectureNames": null
+            },
+            {
+              "id": "physiology",
+              "name": "Physiology",
+              "iconName": "Activity",
+              "lectures": "L1-L5",
+              "lectureCount": 5,
+              "lectureNames": null
+            },
+            {
+              "id": "pharma",
+              "name": "Pharmacology",
+              "iconName": "Pill",
+              "lectures": "L1-L5",
+              "lectureCount": 5,
+              "lectureNames": null
+            },
+            {
+              "id": "histology",
+              "name": "Histology",
+              "iconName": "Microscope",
+              "lectures": "L1-L5",
+              "lectureCount": 5,
+              "lectureNames": null
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "CNS Infections",
+          "subtitle": "",
+          "lectureRange": "L1-L5",
+          "subjects": [
+            {
+              "id": "pharma",
+              "name": "Pharmacology",
+              "iconName": "Pill",
+              "lectures": "L1-L5",
+              "lectureCount": 5,
+              "lectureNames": null
+            },
+            {
+              "id": "microbiology",
+              "name": "Microbiology",
+              "iconName": "Biohazard",
+              "lectures": "L1-L5",
+              "lectureCount": 5,
+              "lectureNames": null
+            },
+            {
+              "id": "pathology",
+              "name": "Pathology",
+              "iconName": "ShieldAlert",
+              "lectures": "L1-L5",
+              "lectureCount": 5,
+              "lectureNames": null
+            },
+            {
+              "id": "parasitology",
+              "name": "Parasitology",
+              "iconName": "Bug",
+              "lectures": "L1-L5",
+              "lectureCount": 5,
+              "lectureNames": null
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "title": "Neurodegenerative, Vascular, Trauma & Tumours",
+          "subtitle": "",
+          "lectureRange": "L1-L5",
+          "subjects": [
+            {
+              "id": "pathology",
+              "name": "Pathology",
+              "iconName": "ShieldAlert",
+              "lectures": "L1-L5",
+              "lectureCount": 5,
+              "lectureNames": null
+            },
+            {
+              "id": "pharma",
+              "name": "Pharmacology",
+              "iconName": "Pill",
+              "lectures": "L1-L5",
+              "lectureCount": 5,
+              "lectureNames": null
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "title": "Miscellaneous & Embryology",
+          "subtitle": "",
+          "lectureRange": "L1-L5",
+          "subjects": [
+            {
+              "id": "anatomy",
+              "name": "Anatomy",
+              "iconName": "Bone",
+              "lectures": "L1-L5",
+              "lectureCount": 5,
+              "lectureNames": null
+            },
+            {
+              "id": "pharma",
+              "name": "Pharmacology",
+              "iconName": "Pill",
+              "lectures": "L1-L5",
+              "lectureCount": 5,
+              "lectureNames": null
+            },
+            {
+              "id": "biochem",
+              "name": "Biochemistry",
+              "iconName": "FlaskConical",
+              "lectures": "L1-L5",
+              "lectureCount": 5,
+              "lectureNames": null
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "title": "CNS2 Past Exams",
+          "subtitle": "",
+          "lectureRange": "Past Exams",
+          "subjects": [
+            {
+              "id": "physiology",
+              "name": "Physiology",
+              "iconName": "Activity",
+              "lectures": "Past Exams",
+              "lectureCount": 1,
+              "lectureNames": [
+                "Past Exams"
+              ]
+            },
+            {
+              "id": "pathology",
+              "name": "Pathology",
+              "iconName": "ShieldAlert",
+              "lectures": "Past Exams",
+              "lectureCount": 1,
+              "lectureNames": [
+                "Past Exams"
+              ]
+            },
+            {
+              "id": "anatomy",
+              "name": "Anatomy",
+              "iconName": "Bone",
+              "lectures": "Past Exams",
+              "lectureCount": 1,
+              "lectureNames": [
+                "Past Exams"
+              ]
+            },
+            {
+              "id": "microbiology",
+              "name": "Microbiology",
+              "iconName": "Biohazard",
+              "lectures": "Past Exams",
+              "lectureCount": 1,
+              "lectureNames": [
+                "Past Exams"
+              ]
+            },
+            {
+              "id": "pharma",
+              "name": "Pharmacology",
+              "iconName": "Pill",
+              "lectures": "Past Exams",
+              "lectureCount": 1,
+              "lectureNames": [
+                "Past Exams"
+              ]
+            },
+            {
+              "id": "parasitology",
+              "name": "Parasitology",
+              "iconName": "Bug",
+              "lectures": "Past Exams",
+              "lectureCount": 1,
+              "lectureNames": [
+                "Past Exams"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "canonical_path": "src/imports/year-2/semester-2/MEM-2.json",
+      "bank_sha256": "886acba508e8440a806c24320ab21fd46d723413d1333c1702a5703e6184aa10",
+      "schema_version": 1,
+      "meta": {
+        "moduleCode": "MEM-2",
+        "moduleName": "Endocrine System & Metabolism",
+        "year": 2,
+        "semester": 2,
+        "creditPoints": 5.5,
+        "totalMarks": 110,
+        "keywords": [
+          "endocrine",
+          "metabolism",
+          "mem",
+          "hormone",
+          "pituitary",
+          "thyroid",
+          "adrenal",
+          "pancreas",
+          "diabetes"
+        ]
+      },
+      "chapters": [
+        {
+          "id": 1,
+          "title": "Pituitary Gland",
+          "subtitle": "Pituitary Gland",
+          "lectureRange": "Lectures 1",
+          "subjects": [
+            {
+              "id": "anatomy",
+              "name": "Anatomy",
+              "iconName": "Bone",
+              "lectures": "Lecture 1",
+              "lectureCount": 1,
+              "lectureNames": null
+            },
+            {
+              "id": "histology",
+              "name": "Histology",
+              "iconName": "Microscope",
+              "lectures": "Lecture 1",
+              "lectureCount": 1,
+              "lectureNames": null
+            },
+            {
+              "id": "physiology",
+              "name": "Physiology",
+              "iconName": "Activity",
+              "lectures": "Lecture 1",
+              "lectureCount": 1,
+              "lectureNames": null
+            },
+            {
+              "id": "biochem",
+              "name": "Biochemistry",
+              "iconName": "FlaskConical",
+              "lectures": "Lecture 1",
+              "lectureCount": 1,
+              "lectureNames": null
+            },
+            {
+              "id": "pathology",
+              "name": "Pathology",
+              "iconName": "ShieldAlert",
+              "lectures": "Lecture 1",
+              "lectureCount": 1,
+              "lectureNames": null
+            },
+            {
+              "id": "pharma",
+              "name": "Pharmacology",
+              "iconName": "Pill",
+              "lectures": "Lecture 1",
+              "lectureCount": 1,
+              "lectureNames": null
+            },
+            {
+              "id": "clinical",
+              "name": "Clinical",
+              "iconName": "Stethoscope",
+              "lectures": "Lecture 1",
+              "lectureCount": 1,
+              "lectureNames": null
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Thyroid & Parathyroid Glands",
+          "subtitle": "Thyroid & Parathyroid Glands",
+          "lectureRange": "Lectures 2",
+          "subjects": [
+            {
+              "id": "anatomy",
+              "name": "Anatomy",
+              "iconName": "Bone",
+              "lectures": "Lecture 2",
+              "lectureCount": 1,
+              "lectureNames": null
+            },
+            {
+              "id": "histology",
+              "name": "Histology",
+              "iconName": "Microscope",
+              "lectures": "Lecture 2",
+              "lectureCount": 1,
+              "lectureNames": null
+            },
+            {
+              "id": "physiology",
+              "name": "Physiology",
+              "iconName": "Activity",
+              "lectures": "Lecture 2",
+              "lectureCount": 1,
+              "lectureNames": null
+            },
+            {
+              "id": "pathology",
+              "name": "Pathology",
+              "iconName": "ShieldAlert",
+              "lectures": "Lecture 2",
+              "lectureCount": 1,
+              "lectureNames": null
+            },
+            {
+              "id": "pharma",
+              "name": "Pharmacology",
+              "iconName": "Pill",
+              "lectures": "Lecture 2",
+              "lectureCount": 1,
+              "lectureNames": null
+            },
+            {
+              "id": "clinical",
+              "name": "Clinical",
+              "iconName": "Stethoscope",
+              "lectures": "Lecture 2",
+              "lectureCount": 1,
+              "lectureNames": null
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Adrenal (Suprarenal) Gland",
+          "subtitle": "Adrenal (Suprarenal) Gland",
+          "lectureRange": "Lectures 3",
+          "subjects": [
+            {
+              "id": "anatomy",
+              "name": "Anatomy",
+              "iconName": "Bone",
+              "lectures": "Lecture 3",
+              "lectureCount": 1,
+              "lectureNames": null
+            },
+            {
+              "id": "histology",
+              "name": "Histology",
+              "iconName": "Microscope",
+              "lectures": "Lecture 3",
+              "lectureCount": 1,
+              "lectureNames": null
+            },
+            {
+              "id": "physiology",
+              "name": "Physiology",
+              "iconName": "Activity",
+              "lectures": "Lecture 3",
+              "lectureCount": 1,
+              "lectureNames": null
+            },
+            {
+              "id": "pathology",
+              "name": "Pathology",
+              "iconName": "ShieldAlert",
+              "lectures": "Lecture 3",
+              "lectureCount": 1,
+              "lectureNames": null
+            },
+            {
+              "id": "pharma",
+              "name": "Pharmacology",
+              "iconName": "Pill",
+              "lectures": "Lecture 3",
+              "lectureCount": 1,
+              "lectureNames": null
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Endocrine Pancreas",
+          "subtitle": "Endocrine Pancreas",
+          "lectureRange": "Lectures 4",
+          "subjects": [
+            {
+              "id": "histology",
+              "name": "Histology",
+              "iconName": "Microscope",
+              "lectures": "Lecture 4",
+              "lectureCount": 1,
+              "lectureNames": null
+            },
+            {
+              "id": "physiology",
+              "name": "Physiology",
+              "iconName": "Activity",
+              "lectures": "Lecture 4",
+              "lectureCount": 1,
+              "lectureNames": null
+            },
+            {
+              "id": "biochem",
+              "name": "Biochemistry",
+              "iconName": "FlaskConical",
+              "lectures": "Lecture 4",
+              "lectureCount": 1,
+              "lectureNames": null
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Diabetes Mellitus & Metabolic Disorders",
+          "subtitle": "Diabetes Mellitus & Metabolic Disorders",
+          "lectureRange": "Lectures 5",
+          "subjects": [
+            {
+              "id": "biochem",
+              "name": "Biochemistry",
+              "iconName": "FlaskConical",
+              "lectures": "Lecture 5",
+              "lectureCount": 1,
+              "lectureNames": null
+            },
+            {
+              "id": "pathology",
+              "name": "Pathology",
+              "iconName": "ShieldAlert",
+              "lectures": "Lecture 5",
+              "lectureCount": 1,
+              "lectureNames": null
+            },
+            {
+              "id": "pharma",
+              "name": "Pharmacology",
+              "iconName": "Pill",
+              "lectures": "Lecture 5",
+              "lectureCount": 1,
+              "lectureNames": null
+            },
+            {
+              "id": "clinical",
+              "name": "Clinical",
+              "iconName": "Stethoscope",
+              "lectures": "Lecture 5",
+              "lectureCount": 1,
+              "lectureNames": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "canonical_path": "src/imports/year-2/semester-2/MSS-2.json",
+      "bank_sha256": "9c257d3986b5320539fb830be30cdff571a1f81f7c9743523db7b9f0aaa61fe8",
+      "schema_version": 1,
+      "meta": {
+        "moduleCode": "MSS-2",
+        "moduleName": "Special Senses Module",
+        "year": 2,
+        "semester": 2,
+        "creditPoints": 4,
+        "totalMarks": 80,
+        "keywords": [
+          "special senses",
+          "senses",
+          "mss",
+          "eye",
+          "ear",
+          "ophthalmology",
+          "ent",
+          "otorhinolaryngology",
+          "vision",
+          "hearing",
+          "smell",
+          "taste",
+          "olfaction",
+          "olfactory",
+          "orbit",
+          "retina",
+          "cochlea",
+          "vestibular",
+          "glaucoma",
+          "visual cycle"
+        ]
+      },
+      "chapters": [
+        {
+          "id": 1,
+          "title": "Anatomy",
+          "subtitle": "Anatomy of the Eye, Ear, and Chemical Senses",
+          "lectureRange": "Lectures 1-17",
+          "subjects": [
+            {
+              "id": "anatomy",
+              "name": "Anatomy",
+              "iconName": "Bone",
+              "lectures": "Bony Orbit, Orbital Fascia, Extra-ocular Muscles, Lacrimal Apparatus, Nerves of the Orbit, Vessels of the Orbit, Anatomy of the Eyelids (palpebrae), Development of the eye, Visual Pathway, Visual Reflexes, Anatomy of the ear, Auditory Pathway, Development of the Ear, Anatomy of the Facial Nerve, Medial Longitudinal Fasciculus (Bundle), Vestibular Pathway, Olfactory & Taste Pathways",
+              "lectureCount": 17,
+              "lectureNames": [
+                "Bony Orbit",
+                "Orbital Fascia",
+                "Extra-ocular Muscles",
+                "Lacrimal Apparatus",
+                "Nerves of the Orbit",
+                "Vessels of the Orbit",
+                "Anatomy of the Eyelids (palpebrae)",
+                "Development of the eye",
+                "Visual Pathway",
+                "Visual Reflexes",
+                "Anatomy of the ear",
+                "Auditory Pathway",
+                "Development of the Ear",
+                "Anatomy of the Facial Nerve",
+                "Medial Longitudinal Fasciculus (Bundle)",
+                "Vestibular Pathway",
+                "Olfactory & Taste Pathways"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Histology",
+          "subtitle": "Histology of the Eye and Ear",
+          "lectureRange": "Lectures 1-3",
+          "subjects": [
+            {
+              "id": "histology",
+              "name": "Histology",
+              "iconName": "Microscope",
+              "lectures": "The Eye, The Ear, Structure of the Ear",
+              "lectureCount": 3,
+              "lectureNames": [
+                "The Eye",
+                "The Ear",
+                "Structure of the Ear"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Biochemistry",
+          "subtitle": "Visual Cycle and Vitamin A Biochemistry",
+          "lectureRange": "Lectures 1-2",
+          "subjects": [
+            {
+              "id": "biochem",
+              "name": "Biochemistry",
+              "iconName": "FlaskConical",
+              "lectures": "Visual cycle and vitamin A, Deficiency of vitamin A",
+              "lectureCount": 2,
+              "lectureNames": [
+                "Visual cycle and vitamin A",
+                "Deficiency of vitamin A"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Physiology",
+          "subtitle": "Physiology of Vision, Hearing, Vestibular, and Chemical Senses",
+          "lectureRange": "Lectures 1-12",
+          "subjects": [
+            {
+              "id": "physiology",
+              "name": "Physiology",
+              "iconName": "Activity",
+              "lectures": "Introduction to Vision Physiology and Vision Optics, Light path through cornea Aqueous humor and Lens, Accommodation Errors of refraction and Iris, Organization and Functions of Retinal Neurons, Photoreceptors, Dark and light adaptation and visual cortex, Color Vision Binocular Vision and Eye Movements, Physiology & Physics of Sound & Function of External and Middle Ear, Physiology Function of Inner Ear, Discrimination of Sounds and Hearing Impairment and Hearing Tests, Physiology of Smell and Taste (Chemical Senses), Posture and equilibrium",
+              "lectureCount": 12,
+              "lectureNames": [
+                "Introduction to Vision Physiology and Vision Optics",
+                "Light path through cornea, Aqueous humor and Lens",
+                "Accommodation, Errors of refraction, and Iris",
+                "Organization and Functions of Retinal Neurons",
+                "Photoreceptors",
+                "Dark and light adaptation, and visual cortex",
+                "Color Vision, Binocular Vision, and Eye Movements",
+                "Physiology & Physics of Sound & Function of External and Middle Ear",
+                "Physiology Function of Inner Ear",
+                "Discrimination of Sounds and Hearing Impairment and Hearing Tests",
+                "Physiology of Smell and Taste (Chemical Senses)",
+                "Posture and equilibrium"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Microbiology",
+          "subtitle": "Infections of the Eye and Ear",
+          "lectureRange": "Lectures 1-2",
+          "subjects": [
+            {
+              "id": "microbiology",
+              "name": "Microbiology",
+              "iconName": "Biohazard",
+              "lectures": "Infections of The Eye, Infections of The Ear",
+              "lectureCount": 2,
+              "lectureNames": [
+                "Infections of The Eye",
+                "Infections of The Ear"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Pathology",
+          "subtitle": "Diseases of the Eye and Ear",
+          "lectureRange": "Lectures 1-2",
+          "subjects": [
+            {
+              "id": "pathology",
+              "name": "Pathology",
+              "iconName": "ShieldAlert",
+              "lectures": "Diseases of The Eye, Diseases of The Ear",
+              "lectureCount": 2,
+              "lectureNames": [
+                "Diseases of The Eye",
+                "Diseases of The Ear"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Pharmacology",
+          "subtitle": "Drug Therapy of Glaucoma",
+          "lectureRange": "Lecture 1",
+          "subjects": [
+            {
+              "id": "pharma",
+              "name": "Pharmacology",
+              "iconName": "Pill",
+              "lectures": "Drug Therapy of Glaucoma",
+              "lectureCount": 1,
+              "lectureNames": [
+                "Drug Therapy of Glaucoma"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Clinical",
+          "subtitle": "Clinical Ophthalmology and ENT (Otorhinolaryngology)",
+          "lectureRange": "Lectures 1-3",
+          "subjects": [
+            {
+              "id": "clinical",
+              "name": "Clinical",
+              "iconName": "Stethoscope",
+              "lectures": "Basic Neuro-ophthalmic Examination, Hearing Loss, Taste and Smell Disorders",
+              "lectureCount": 3,
+              "lectureNames": [
+                "Basic Neuro-ophthalmic Examination",
+                "Hearing Loss",
+                "Taste and Smell Disorders"
+              ]
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "title": "Past Exams",
+          "subtitle": "Answer-keyed questions from previous Special Senses exam papers, sorted by subject",
+          "lectureRange": "Past exam papers",
+          "subjects": [
+            {
+              "id": "anatomy",
+              "name": "Anatomy",
+              "iconName": "Bone",
+              "lectures": "Past Exams",
+              "lectureCount": 1,
+              "lectureNames": [
+                "Past Exams"
+              ]
+            },
+            {
+              "id": "histology",
+              "name": "Histology",
+              "iconName": "Microscope",
+              "lectures": "Past Exams",
+              "lectureCount": 1,
+              "lectureNames": [
+                "Past Exams"
+              ]
+            },
+            {
+              "id": "biochem",
+              "name": "Biochemistry",
+              "iconName": "FlaskConical",
+              "lectures": "Past Exams",
+              "lectureCount": 1,
+              "lectureNames": [
+                "Past Exams"
+              ]
+            },
+            {
+              "id": "physiology",
+              "name": "Physiology",
+              "iconName": "Activity",
+              "lectures": "Past Exams",
+              "lectureCount": 1,
+              "lectureNames": [
+                "Past Exams"
+              ]
+            },
+            {
+              "id": "microbiology",
+              "name": "Microbiology",
+              "iconName": "Biohazard",
+              "lectures": [],
+              "lectureCount": 1,
+              "lectureNames": [
+                "Past Exams"
+              ]
+            },
+            {
+              "id": "pathology",
+              "name": "Pathology",
+              "iconName": "ShieldAlert",
+              "lectures": "Past Exams",
+              "lectureCount": 1,
+              "lectureNames": [
+                "Past Exams"
+              ]
+            },
+            {
+              "id": "pharma",
+              "name": "Pharmacology",
+              "iconName": "Pill",
+              "lectures": "Past Exams",
+              "lectureCount": 1,
+              "lectureNames": [
+                "Past Exams"
+              ]
+            },
+            {
+              "id": "clinical",
+              "name": "Clinical",
+              "iconName": "Stethoscope",
+              "lectures": "Past Exams",
+              "lectureCount": 1,
+              "lectureNames": [
+                "Past Exams"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "canonical_path": "src/imports/year-2/semester-2/P3-2.json",
+      "bank_sha256": "4405c8aad1d2d3d909720875f1ec6ddd36ed33268702668f068e406961b1230f",
+      "schema_version": 1,
+      "meta": {
+        "moduleCode": "P3-2",
+        "moduleName": "Behavioral science",
+        "year": 2,
+        "semester": 2,
+        "creditPoints": 1.5,
+        "totalMarks": 30,
+        "keywords": [
+          "behavioral",
+          "science",
+          "psychology",
+          "psychiatry",
+          "behavioral science"
+        ]
+      },
+      "chapters": [
+        {
+          "id": 1,
+          "title": "Introduction to Psychology",
+          "subtitle": "Foundations, schools of thought, and methods of psychological study",
+          "lectureRange": "Lecture 1",
+          "subjects": []
+        },
+        {
+          "id": 2,
+          "title": "Basics of research methodology",
+          "subtitle": "Principles of scientific investigation and research design",
+          "lectureRange": "Lecture 2",
+          "subjects": []
+        },
+        {
+          "id": 3,
+          "title": "Brain Structures and their Functions",
+          "subtitle": "Neurobiological basis of behavior and neuroanatomy",
+          "lectureRange": "Lecture 3",
+          "subjects": []
+        },
+        {
+          "id": 4,
+          "title": "Developmental Psychology",
+          "subtitle": "Psychological growth and development across the lifespan",
+          "lectureRange": "Lecture 4",
+          "subjects": [
+            {
+              "id": "clinical",
+              "name": "Clinical",
+              "iconName": "Stethoscope",
+              "lectures": "Lecture 4",
+              "lectureCount": 1,
+              "lectureNames": null
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Personality",
+          "subtitle": "Theories of personality development, traits, and assessments",
+          "lectureRange": "Lecture 5",
+          "subjects": [
+            {
+              "id": "clinical",
+              "name": "Clinical",
+              "iconName": "Stethoscope",
+              "lectures": "Lecture 5",
+              "lectureCount": 1,
+              "lectureNames": null
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Psychology of Learning",
+          "subtitle": "Classical, operant conditioning, and cognitive learning theories",
+          "lectureRange": "Lecture 6",
+          "subjects": [
+            {
+              "id": "clinical",
+              "name": "Clinical",
+              "iconName": "Stethoscope",
+              "lectures": "Lecture 6",
+              "lectureCount": 1,
+              "lectureNames": null
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Attention & Perception",
+          "subtitle": "Cognitive processing of sensory information and focus",
+          "lectureRange": "Lecture 7",
+          "subjects": [
+            {
+              "id": "clinical",
+              "name": "Clinical",
+              "iconName": "Stethoscope",
+              "lectures": "Lecture 7",
+              "lectureCount": 1,
+              "lectureNames": null
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Psychology of Memory",
+          "subtitle": "Encoding, storage, retrieval, and forgetting mechanisms",
+          "lectureRange": "Lecture 8",
+          "subjects": [
+            {
+              "id": "clinical",
+              "name": "Clinical",
+              "iconName": "Stethoscope",
+              "lectures": "Lecture 8",
+              "lectureCount": 1,
+              "lectureNames": null
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "title": "Psychology of Thinking",
+          "subtitle": "Cognitive processes, problem-solving, and decision-making",
+          "lectureRange": "Lecture 9",
+          "subjects": []
+        },
+        {
+          "id": 10,
+          "title": "Intelligence",
+          "subtitle": "Concepts, theories, and measurement of intellectual abilities",
+          "lectureRange": "Lecture 10",
+          "subjects": [
+            {
+              "id": "clinical",
+              "name": "Clinical",
+              "iconName": "Stethoscope",
+              "lectures": "Lecture 10",
+              "lectureCount": 1,
+              "lectureNames": null
+            }
+          ]
+        },
+        {
+          "id": 11,
+          "title": "Psychology of Language",
+          "subtitle": "Development, structures, and cognitive aspects of communication",
+          "lectureRange": "Lecture 11",
+          "subjects": [
+            {
+              "id": "clinical",
+              "name": "Clinical",
+              "iconName": "Stethoscope",
+              "lectures": "Lecture 11",
+              "lectureCount": 1,
+              "lectureNames": null
+            }
+          ]
+        },
+        {
+          "id": 12,
+          "title": "Psychology of Sleep",
+          "subtitle": "Physiological stages, functions of sleep, and sleep disorders",
+          "lectureRange": "Lecture 12",
+          "subjects": [
+            {
+              "id": "clinical",
+              "name": "Clinical",
+              "iconName": "Stethoscope",
+              "lectures": "Lecture 12",
+              "lectureCount": 1,
+              "lectureNames": null
+            }
+          ]
+        },
+        {
+          "id": 13,
+          "title": "Circadian Rhythms",
+          "subtitle": "Biological clocks, sleep-wake cycles, and physiological timing",
+          "lectureRange": "Lecture 13",
+          "subjects": []
+        },
+        {
+          "id": 14,
+          "title": "Psychology of Motivation",
+          "subtitle": "Internal and external factors driving human behavior",
+          "lectureRange": "Lecture 14",
+          "subjects": []
+        },
+        {
+          "id": 15,
+          "title": "Psychology of Emotions",
+          "subtitle": "Physiological, cognitive, and expressive components of emotion",
+          "lectureRange": "Lecture 15",
+          "subjects": [
+            {
+              "id": "clinical",
+              "name": "Clinical",
+              "iconName": "Stethoscope",
+              "lectures": "Lecture 15",
+              "lectureCount": 1,
+              "lectureNames": null
+            }
+          ]
+        },
+        {
+          "id": 16,
+          "title": "Psychology of Stress",
+          "subtitle": "Causes, physiological responses, and psychological effects of stress",
+          "lectureRange": "Lecture 16",
+          "subjects": [
+            {
+              "id": "clinical",
+              "name": "Clinical",
+              "iconName": "Stethoscope",
+              "lectures": "Lecture 16",
+              "lectureCount": 1,
+              "lectureNames": null
+            }
+          ]
+        },
+        {
+          "id": 17,
+          "title": "Frustration & Defensive Mechanisms",
+          "subtitle": "Coping strategies, conflict, and ego defense mechanisms",
+          "lectureRange": "Lecture 17",
+          "subjects": [
+            {
+              "id": "clinical",
+              "name": "Clinical",
+              "iconName": "Stethoscope",
+              "lectures": "Lecture 17",
+              "lectureCount": 1,
+              "lectureNames": null
+            }
+          ]
+        },
+        {
+          "id": 18,
+          "title": "Sensory Deprivation",
+          "subtitle": "Effects of reduced sensory input on cognition and mental state",
+          "lectureRange": "Lecture 18",
+          "subjects": []
+        },
+        {
+          "id": 19,
+          "title": "Social Psychology",
+          "subtitle": "Group dynamics, social influence, attitudes, and relationships",
+          "lectureRange": "Lecture 19",
+          "subjects": [
+            {
+              "id": "clinical",
+              "name": "Clinical",
+              "iconName": "Stethoscope",
+              "lectures": "Lecture 19",
+              "lectureCount": 1,
+              "lectureNames": null
+            }
+          ]
+        },
+        {
+          "id": 20,
+          "title": "Psychology of Aggression and Violence",
+          "subtitle": "Theories, causes, and prevention of aggressive behaviors",
+          "lectureRange": "Lecture 20",
+          "subjects": [
+            {
+              "id": "clinical",
+              "name": "Clinical",
+              "iconName": "Stethoscope",
+              "lectures": "Lecture 20",
+              "lectureCount": 1,
+              "lectureNames": null
+            }
+          ]
+        },
+        {
+          "id": 21,
+          "title": "Psychology in Relation to Medicine",
+          "subtitle": "Applications of behavioral science to clinical practice",
+          "lectureRange": "Lecture 21",
+          "subjects": []
+        },
+        {
+          "id": 22,
+          "title": "Doctor Patient Relationship",
+          "subtitle": "Communication, trust, compliance, and clinical interaction",
+          "lectureRange": "Lecture 22",
+          "subjects": []
+        }
+      ]
+    },
+    {
+      "canonical_path": "src/imports/year-2/semester-2/R-2.json",
+      "bank_sha256": "a7e48859beacfdd249f6cb9d24977087e03e156f57bdae5ff4ee9f0a0e63407f",
+      "schema_version": 1,
+      "meta": {
+        "moduleCode": "R-2",
+        "moduleName": "Fundamentals of Research",
+        "year": 2,
+        "semester": 2,
+        "creditPoints": 3,
+        "totalMarks": 60,
+        "keywords": [
+          "research",
+          "fundamentals",
+          "research methodology",
+          "biostatistics",
+          "fundamentals of research"
+        ]
+      },
+      "chapters": [
+        {
+          "id": 1,
+          "title": "Introduction",
+          "subtitle": "Overview of research principles, types of medical research, and scope",
+          "lectureRange": "Lecture 1",
+          "subjects": []
+        },
+        {
+          "id": 2,
+          "title": "Research question and hypothesis",
+          "subtitle": "Formulating research questions, objectives, and testable hypotheses",
+          "lectureRange": "Lecture 2",
+          "subjects": []
+        },
+        {
+          "id": 3,
+          "title": "Epidemiological studies and causality",
+          "subtitle": "Observational and experimental study designs, cohort, case-control, and causality",
+          "lectureRange": "Lecture 3",
+          "subjects": []
+        },
+        {
+          "id": 4,
+          "title": "Sampling",
+          "subtitle": "Sampling techniques, probability vs. non-probability sampling, and sample size selection",
+          "lectureRange": "Lecture 4",
+          "subjects": []
+        },
+        {
+          "id": 5,
+          "title": "Sources of data and questionnaire",
+          "subtitle": "Primary and secondary data sources, questionnaire design, and data collection methods",
+          "lectureRange": "Lecture 5",
+          "subjects": []
+        },
+        {
+          "id": 6,
+          "title": "Bias and confounding",
+          "subtitle": "Identifying and controlling selection bias, information bias, and confounding factors",
+          "lectureRange": "Lecture 6",
+          "subjects": []
+        },
+        {
+          "id": 7,
+          "title": "Research ethics",
+          "subtitle": "Ethical codes, informed consent, institutional review boards (IRBs), and patient rights",
+          "lectureRange": "Lecture 7",
+          "subjects": []
+        },
+        {
+          "id": 8,
+          "title": "Citation and plagiarism",
+          "subtitle": "Referencing styles, academic integrity, and avoiding plagiarism in scientific writing",
+          "lectureRange": "Lecture 8",
+          "subjects": []
+        },
+        {
+          "id": 9,
+          "title": "Protocol writing",
+          "subtitle": "Structure and components of a research protocol and proposal writing",
+          "lectureRange": "Lecture 9",
+          "subjects": []
+        },
+        {
+          "id": 10,
+          "title": "Descriptive statistics",
+          "subtitle": "Measures of central tendency, dispersion, normal distribution, and descriptive data summary",
+          "lectureRange": "Lecture 10",
+          "subjects": []
+        },
+        {
+          "id": 11,
+          "title": "Data presentation",
+          "subtitle": "Methods of presenting data using tables, charts, graphs, and frequency distributions",
+          "lectureRange": "Lecture 11",
+          "subjects": []
+        }
+      ]
+    },
+    {
+      "canonical_path": "src/imports/year-3/semester-1/MGL-3.json",
+      "bank_sha256": "59381925b83a1ae2cab5024b2466054cf7590eb70d207c27fe8a4db7c67c99d0",
+      "schema_version": 1,
+      "meta": {
+        "moduleCode": "MGL-3",
+        "moduleName": "GIT & Liver",
+        "year": 3,
+        "semester": 1,
+        "creditPoints": 5.5,
+        "totalMarks": 110,
+        "keywords": [
+          "git",
+          "liver",
+          "gastroenterology",
+          "mgl"
+        ]
+      },
+      "chapters": [
+        {
+          "id": 1,
+          "title": "Upper GI Tract (Oral to Stomach)",
+          "subtitle": "Upper GI Tract (Oral to Stomach)",
+          "lectureRange": "Lectures 1",
+          "subjects": []
+        },
+        {
+          "id": 2,
+          "title": "Lower GI Tract (Intestines)",
+          "subtitle": "Lower GI Tract (Intestines)",
+          "lectureRange": "Lectures 2",
+          "subjects": []
+        },
+        {
+          "id": 3,
+          "title": "Hepatobiliary System & Pancreas",
+          "subtitle": "Hepatobiliary System & Pancreas",
+          "lectureRange": "Lectures 3",
+          "subjects": []
+        },
+        {
+          "id": 4,
+          "title": "Gastrointestinal Pathologies & Drugs",
+          "subtitle": "Gastrointestinal Pathologies & Drugs",
+          "lectureRange": "Lectures 4",
+          "subjects": []
+        }
+      ]
+    },
+    {
+      "canonical_path": "src/imports/year-3/semester-1/MUG-3.json",
+      "bank_sha256": "ba212766f5a818f65348b8f22315767a497120f27e645ee090b1f8af44d0a222",
+      "schema_version": 1,
+      "meta": {
+        "moduleCode": "MUG-3",
+        "moduleName": "Urogenital System",
+        "year": 3,
+        "semester": 1,
+        "creditPoints": 5,
+        "totalMarks": 100,
+        "keywords": [
+          "urogenital",
+          "renal",
+          "mug"
+        ]
+      },
+      "chapters": [
+        {
+          "id": 1,
+          "title": "Renal System & Electrolytes",
+          "subtitle": "Renal System & Electrolytes",
+          "lectureRange": "Lectures 1",
+          "subjects": []
+        },
+        {
+          "id": 2,
+          "title": "Male Reproductive System",
+          "subtitle": "Male Reproductive System",
+          "lectureRange": "Lectures 2",
+          "subjects": []
+        },
+        {
+          "id": 3,
+          "title": "Female Reproductive System",
+          "subtitle": "Female Reproductive System",
+          "lectureRange": "Lectures 3",
+          "subjects": []
+        },
+        {
+          "id": 4,
+          "title": "Urogenital Pathologies & Drugs",
+          "subtitle": "Urogenital Pathologies & Drugs",
+          "lectureRange": "Lectures 4",
+          "subjects": []
+        }
+      ]
+    },
+    {
+      "canonical_path": "src/imports/year-3/semester-1/P4-3.json",
+      "bank_sha256": "7d9c7d20276a6b65710fc6bb797c039dd88f2e387d5dcf0ea53bab52d0606394",
+      "schema_version": 1,
+      "meta": {
+        "moduleCode": "P4-3",
+        "moduleName": "Medical Ethics",
+        "year": 3,
+        "semester": 1,
+        "creditPoints": 1,
+        "totalMarks": 20,
+        "keywords": [
+          "ethics",
+          "bioethics",
+          "p4"
+        ]
+      },
+      "chapters": [
+        {
+          "id": 1,
+          "title": "Principles of Bioethics & Autonomy",
+          "subtitle": "Principles of Bioethics & Autonomy",
+          "lectureRange": "Lectures 1",
+          "subjects": []
+        },
+        {
+          "id": 2,
+          "title": "Informed Consent, Confidentiality & Professionalism",
+          "subtitle": "Informed Consent, Confidentiality & Professionalism",
+          "lectureRange": "Lectures 2",
+          "subjects": []
+        },
+        {
+          "id": 3,
+          "title": "Ethical Dilemmas in Clinical Practice",
+          "subtitle": "Ethical Dilemmas in Clinical Practice",
+          "lectureRange": "Lectures 3",
+          "subjects": []
+        }
+      ]
+    },
+    {
+      "canonical_path": "src/imports/year-3/semester-1/P5-3.json",
+      "bank_sha256": "f2d9ed2ce34d19010f57f6e6f3e2c74ee5d086237527e8eae6cd4aa71f3d1631",
+      "schema_version": 1,
+      "meta": {
+        "moduleCode": "P5-3",
+        "moduleName": "Doctor-Patient Communication",
+        "year": 3,
+        "semester": 1,
+        "creditPoints": 1,
+        "totalMarks": 20,
+        "keywords": [
+          "communication",
+          "doctor-patient",
+          "p5"
+        ]
+      },
+      "chapters": [
+        {
+          "id": 1,
+          "title": "Active Listening & Verbal/Non-Verbal Communication",
+          "subtitle": "Active Listening & Verbal/Non-Verbal Communication",
+          "lectureRange": "Lectures 1",
+          "subjects": []
+        },
+        {
+          "id": 2,
+          "title": "Breaking Bad News & Handling Difficult Patients",
+          "subtitle": "Breaking Bad News & Handling Difficult Patients",
+          "lectureRange": "Lectures 2",
+          "subjects": []
+        }
+      ]
+    },
+    {
+      "canonical_path": "src/imports/year-3/semester-2/CEO-3.json",
+      "bank_sha256": "e1cdb8fecb48d320f56a038801348a6af526325957abe11e696f5c6f6f0806e1",
+      "schema_version": 1,
+      "meta": {
+        "moduleCode": "CEO-3",
+        "moduleName": "Community, Environmental & Occupational Medicine",
+        "year": 3,
+        "semester": 2,
+        "creditPoints": 2,
+        "totalMarks": 40,
+        "keywords": [
+          "community medicine",
+          "epidemiology",
+          "ceo"
+        ]
+      },
+      "chapters": [
+        {
+          "id": 1,
+          "title": "Public Health & Epidemiology",
+          "subtitle": "Public Health & Epidemiology",
+          "lectureRange": "Lectures 1",
+          "subjects": []
+        },
+        {
+          "id": 2,
+          "title": "Environmental & Occupational Hazards",
+          "subtitle": "Environmental & Occupational Hazards",
+          "lectureRange": "Lectures 2",
+          "subjects": []
+        }
+      ]
+    },
+    {
+      "canonical_path": "src/imports/year-3/semester-2/FT-3.json",
+      "bank_sha256": "1fdb4dc138d7fd580889ca730fe90c99a1eeea2ea3e2dd6960870f80755f7125",
+      "schema_version": 1,
+      "meta": {
+        "moduleCode": "FT-3",
+        "moduleName": "Forensic Medicine & Clinical Toxicology",
+        "year": 3,
+        "semester": 2,
+        "creditPoints": 2,
+        "totalMarks": 40,
+        "keywords": [
+          "forensic",
+          "toxicology",
+          "ft"
+        ]
+      },
+      "chapters": [
+        {
+          "id": 1,
+          "title": "Forensic Thanatology & Traumatology",
+          "subtitle": "Forensic Thanatology & Traumatology",
+          "lectureRange": "Lectures 1",
+          "subjects": []
+        },
+        {
+          "id": 2,
+          "title": "Clinical Toxicology",
+          "subtitle": "Clinical Toxicology",
+          "lectureRange": "Lectures 2",
+          "subjects": []
+        }
+      ]
+    },
+    {
+      "canonical_path": "src/imports/year-3/semester-2/MED1-3.json",
+      "bank_sha256": "d88c1427453f20790e1ea9ab69ecd2e74ab43ea7924615b5047fbbd013a97e8e",
+      "schema_version": 1,
+      "meta": {
+        "moduleCode": "MED1-3",
+        "moduleName": "Foundation of Internal Medicine",
+        "year": 3,
+        "semester": 2,
+        "creditPoints": 2,
+        "totalMarks": 40,
+        "keywords": [
+          "internal medicine",
+          "med1"
+        ]
+      },
+      "chapters": [
+        {
+          "id": 1,
+          "title": "Clinical History & Communication",
+          "subtitle": "Clinical History & Communication",
+          "lectureRange": "Lectures 1",
+          "subjects": []
+        },
+        {
+          "id": 2,
+          "title": "Physical Examination Skills",
+          "subtitle": "Physical Examination Skills",
+          "lectureRange": "Lectures 2",
+          "subjects": []
+        }
+      ]
+    },
+    {
+      "canonical_path": "src/imports/year-3/semester-2/ORL-3.json",
+      "bank_sha256": "d9270c4f1199532bdbad506ffbddaa89dfc2a723c49b978396a3a32d348681e6",
+      "schema_version": 1,
+      "meta": {
+        "moduleCode": "ORL-3",
+        "moduleName": "Otorhinolaryngology",
+        "year": 3,
+        "semester": 2,
+        "creditPoints": 2,
+        "totalMarks": 40,
+        "keywords": [
+          "ent",
+          "orl",
+          "otorhinolaryngology"
+        ]
+      },
+      "chapters": [
+        {
+          "id": 1,
+          "title": "Otology & Rhinology",
+          "subtitle": "Otology & Rhinology",
+          "lectureRange": "Lectures 1",
+          "subjects": []
+        },
+        {
+          "id": 2,
+          "title": "Laryngology & Head/Neck Diseases",
+          "subtitle": "Laryngology & Head/Neck Diseases",
+          "lectureRange": "Lectures 2",
+          "subjects": []
+        }
+      ]
+    },
+    {
+      "canonical_path": "src/imports/year-3/semester-2/P6-3.json",
+      "bank_sha256": "d4601f008e183b9588fb8e5b0af47c7b462f29b49c5b6803a868732318dbdddf",
+      "schema_version": 1,
+      "meta": {
+        "moduleCode": "P6-3",
+        "moduleName": "Leadership & Management Skills",
+        "year": 3,
+        "semester": 2,
+        "creditPoints": 1,
+        "totalMarks": 20,
+        "keywords": [
+          "leadership",
+          "management",
+          "p6"
+        ]
+      },
+      "chapters": [
+        {
+          "id": 1,
+          "title": "Leadership Styles & Team Dynamics",
+          "subtitle": "Leadership Styles & Team Dynamics",
+          "lectureRange": "Lectures 1",
+          "subjects": []
+        },
+        {
+          "id": 2,
+          "title": "Healthcare Management, Quality & Conflict Resolution",
+          "subtitle": "Healthcare Management, Quality & Conflict Resolution",
+          "lectureRange": "Lectures 2",
+          "subjects": []
+        }
+      ]
+    },
+    {
+      "canonical_path": "src/imports/year-3/semester-2/R-3.json",
+      "bank_sha256": "d1c7ba5f71775d72e265b5548d072d1883b6bd7fe2ea7c4c77ad2664fa340259",
+      "schema_version": 1,
+      "meta": {
+        "moduleCode": "R-3",
+        "moduleName": "Scientific Research",
+        "year": 3,
+        "semester": 2,
+        "creditPoints": 1,
+        "totalMarks": 20,
+        "keywords": [
+          "research",
+          "r3"
+        ]
+      },
+      "chapters": [
+        {
+          "id": 1,
+          "title": "Designing a Scientific Research Proposal",
+          "subtitle": "Designing a Scientific Research Proposal",
+          "lectureRange": "Lectures 1",
+          "subjects": []
+        },
+        {
+          "id": 2,
+          "title": "Scientific Writing, Citation & Publication Ethics",
+          "subtitle": "Scientific Writing, Citation & Publication Ethics",
+          "lectureRange": "Lectures 2",
+          "subjects": []
+        }
+      ]
+    },
+    {
+      "canonical_path": "src/imports/year-4/semester-1/FAM-4.json",
+      "bank_sha256": "4fa09875af69d18d956fa35d0ba4e5172258fca4da620f92172d8ac32f7906de",
+      "schema_version": 1,
+      "meta": {
+        "moduleCode": "FAM-4",
+        "moduleName": "Family Medicine",
+        "year": 4,
+        "semester": 1,
+        "creditPoints": 2,
+        "totalMarks": 40,
+        "keywords": [
+          "family medicine",
+          "primary care",
+          "fam"
+        ]
+      },
+      "chapters": [
+        {
+          "id": 1,
+          "title": "Primary Care & Disease Prevention",
+          "subtitle": "Primary Care & Disease Prevention",
+          "lectureRange": "Lectures 1",
+          "subjects": []
+        }
+      ]
+    },
+    {
+      "canonical_path": "src/imports/year-4/semester-1/MED2-4.json",
+      "bank_sha256": "cf87f07a0b6a43657d063229aa3f0fba92b152f9de80937904385082206c370f",
+      "schema_version": 1,
+      "meta": {
+        "moduleCode": "MED2-4",
+        "moduleName": "General & Special Internal Medicine 1",
+        "year": 4,
+        "semester": 1,
+        "creditPoints": 5.5,
+        "totalMarks": 110,
+        "keywords": [
+          "internal medicine",
+          "med2"
+        ]
+      },
+      "chapters": [
+        {
+          "id": 1,
+          "title": "Cardiology",
+          "subtitle": "Cardiology",
+          "lectureRange": "Lectures 1",
+          "subjects": []
+        },
+        {
+          "id": 2,
+          "title": "Pulmonology",
+          "subtitle": "Pulmonology",
+          "lectureRange": "Lectures 2",
+          "subjects": []
+        },
+        {
+          "id": 3,
+          "title": "Gastroenterology & Hepatology",
+          "subtitle": "Gastroenterology & Hepatology",
+          "lectureRange": "Lectures 3",
+          "subjects": []
+        },
+        {
+          "id": 4,
+          "title": "Nephrology",
+          "subtitle": "Nephrology",
+          "lectureRange": "Lectures 4",
+          "subjects": []
+        }
+      ]
+    },
+    {
+      "canonical_path": "src/imports/year-4/semester-1/P7-4.json",
+      "bank_sha256": "78402ae804231dab90a323cdf90a3dea790a777610c1bc7b16dabb01972aa4f4",
+      "schema_version": 1,
+      "meta": {
+        "moduleCode": "P7-4",
+        "moduleName": "Communication within a Medical Team",
+        "year": 4,
+        "semester": 1,
+        "creditPoints": 1,
+        "totalMarks": 20,
+        "keywords": [
+          "communication",
+          "team",
+          "p7"
+        ]
+      },
+      "chapters": [
+        {
+          "id": 1,
+          "title": "Interprofessional Communication & Collaboration",
+          "subtitle": "Interprofessional Communication & Collaboration",
+          "lectureRange": "Lectures 1",
+          "subjects": []
+        },
+        {
+          "id": 2,
+          "title": "Handover Protocols, SBAR & Team Safety",
+          "subtitle": "Handover Protocols, SBAR & Team Safety",
+          "lectureRange": "Lectures 2",
+          "subjects": []
+        }
+      ]
+    },
+    {
+      "canonical_path": "src/imports/year-4/semester-2/MED3-4.json",
+      "bank_sha256": "7ae43d1152a92f395ef79b99fe4251a699b6c79cbf2ddc589eb28ac409e5e342",
+      "schema_version": 1,
+      "meta": {
+        "moduleCode": "MED3-4",
+        "moduleName": "General & Special Internal Medicine 2",
+        "year": 4,
+        "semester": 2,
+        "creditPoints": 5.5,
+        "totalMarks": 110,
+        "keywords": [
+          "internal medicine",
+          "med3"
+        ]
+      },
+      "chapters": [
+        {
+          "id": 1,
+          "title": "Neurology",
+          "subtitle": "Neurology",
+          "lectureRange": "Lectures 1",
+          "subjects": []
+        },
+        {
+          "id": 2,
+          "title": "Endocrinology & Diabetes",
+          "subtitle": "Endocrinology & Diabetes",
+          "lectureRange": "Lectures 2",
+          "subjects": []
+        },
+        {
+          "id": 3,
+          "title": "Hematology & Oncology",
+          "subtitle": "Hematology & Oncology",
+          "lectureRange": "Lectures 3",
+          "subjects": []
+        },
+        {
+          "id": 4,
+          "title": "Rheumatology & Clinical Immunology",
+          "subtitle": "Rheumatology & Clinical Immunology",
+          "lectureRange": "Lectures 4",
+          "subjects": []
+        },
+        {
+          "id": 5,
+          "title": "Geriatrics & Psychiatry",
+          "subtitle": "Geriatrics & Psychiatry",
+          "lectureRange": "Lectures 5",
+          "subjects": []
+        }
+      ]
+    },
+    {
+      "canonical_path": "src/imports/year-4/semester-2/PED-4.json",
+      "bank_sha256": "0ab7e5e1dc6ac3fd890c1347621f306c0c414c96605ffdc19f6778de66e609e7",
+      "schema_version": 1,
+      "meta": {
+        "moduleCode": "PED-4",
+        "moduleName": "Pediatrics",
+        "year": 4,
+        "semester": 2,
+        "creditPoints": 3.5,
+        "totalMarks": 70,
+        "keywords": [
+          "pediatrics",
+          "ped"
+        ]
+      },
+      "chapters": [
+        {
+          "id": 1,
+          "title": "Growth, Development & Nutrition",
+          "subtitle": "Growth, Development & Nutrition",
+          "lectureRange": "Lectures 1",
+          "subjects": []
+        },
+        {
+          "id": 2,
+          "title": "Neonatology",
+          "subtitle": "Neonatology",
+          "lectureRange": "Lectures 2",
+          "subjects": []
+        },
+        {
+          "id": 3,
+          "title": "Pediatric Infectious Diseases & Systemic Pathology",
+          "subtitle": "Pediatric Infectious Diseases & Systemic Pathology",
+          "lectureRange": "Lectures 3",
+          "subjects": []
+        }
+      ]
+    },
+    {
+      "canonical_path": "src/imports/year-5/semester-1/EM1-5.json",
+      "bank_sha256": "535cebd31bec71d248224a82f2f41f833ca19d6d7711c5c1db93c8380f8a12f5",
+      "schema_version": 1,
+      "meta": {
+        "moduleCode": "EM1-5",
+        "moduleName": "Emergency Medicine & Trauma 1",
+        "year": 5,
+        "semester": 1,
+        "creditPoints": 2,
+        "totalMarks": 40,
+        "keywords": [
+          "emergency",
+          "trauma",
+          "em1"
+        ]
+      },
+      "chapters": [
+        {
+          "id": 1,
+          "title": "Resuscitation & Critical Care",
+          "subtitle": "Resuscitation & Critical Care",
+          "lectureRange": "Lectures 1",
+          "subjects": []
+        },
+        {
+          "id": 2,
+          "title": "Advanced Trauma Life Support",
+          "subtitle": "Advanced Trauma Life Support",
+          "lectureRange": "Lectures 2",
+          "subjects": []
+        }
+      ]
+    },
+    {
+      "canonical_path": "src/imports/year-5/semester-1/OO-5.json",
+      "bank_sha256": "58351b905a9e595ceb7ecad895669502674d9fdbe9e19fd67f3b3f54dd9b9dfc",
+      "schema_version": 1,
+      "meta": {
+        "moduleCode": "OO-5",
+        "moduleName": "Ophthalmology",
+        "year": 5,
+        "semester": 1,
+        "creditPoints": 2,
+        "totalMarks": 40,
+        "keywords": [
+          "ophthalmology",
+          "eye",
+          "oo"
+        ]
+      },
+      "chapters": [
+        {
+          "id": 1,
+          "title": "Optics & Refraction",
+          "subtitle": "Optics & Refraction",
+          "lectureRange": "Lectures 1",
+          "subjects": []
+        },
+        {
+          "id": 2,
+          "title": "Anterior & Posterior Segment Diseases",
+          "subtitle": "Anterior & Posterior Segment Diseases",
+          "lectureRange": "Lectures 2",
+          "subjects": []
+        },
+        {
+          "id": 3,
+          "title": "Neuro-ophthalmology & Eye Injuries",
+          "subtitle": "Neuro-ophthalmology & Eye Injuries",
+          "lectureRange": "Lectures 3",
+          "subjects": []
+        }
+      ]
+    },
+    {
+      "canonical_path": "src/imports/year-5/semester-1/SUR1-5.json",
+      "bank_sha256": "febe7c84009591e7982a684a0807cee94cbee2d09be5e80951a9d0200b82d294",
+      "schema_version": 1,
+      "meta": {
+        "moduleCode": "SUR1-5",
+        "moduleName": "General & Special Surgery 1",
+        "year": 5,
+        "semester": 1,
+        "creditPoints": 4,
+        "totalMarks": 80,
+        "keywords": [
+          "surgery",
+          "sur1"
+        ]
+      },
+      "chapters": [
+        {
+          "id": 1,
+          "title": "Perioperative Care & General Surgery",
+          "subtitle": "Perioperative Care & General Surgery",
+          "lectureRange": "Lectures 1",
+          "subjects": []
+        },
+        {
+          "id": 2,
+          "title": "Abdominal & Hernia Surgery",
+          "subtitle": "Abdominal & Hernia Surgery",
+          "lectureRange": "Lectures 2",
+          "subjects": []
+        },
+        {
+          "id": 3,
+          "title": "Endocrine & Breast Surgery",
+          "subtitle": "Endocrine & Breast Surgery",
+          "lectureRange": "Lectures 3",
+          "subjects": []
+        }
+      ]
+    },
+    {
+      "canonical_path": "src/imports/year-5/semester-2/EM2-5.json",
+      "bank_sha256": "3cac7460d67e2ffc73771c18e9dcb57f7ef85209e1068c91eebfb6666d277e34",
+      "schema_version": 1,
+      "meta": {
+        "moduleCode": "EM2-5",
+        "moduleName": "Emergency Medicine & Trauma 2",
+        "year": 5,
+        "semester": 2,
+        "creditPoints": 2,
+        "totalMarks": 40,
+        "keywords": [
+          "emergency",
+          "trauma",
+          "em2"
+        ]
+      },
+      "chapters": [
+        {
+          "id": 1,
+          "title": "Environmental & Toxicological Emergencies",
+          "subtitle": "Environmental & Toxicological Emergencies",
+          "lectureRange": "Lectures 1",
+          "subjects": []
+        }
+      ]
+    },
+    {
+      "canonical_path": "src/imports/year-5/semester-2/OG-5.json",
+      "bank_sha256": "3d8a8f692c055e84bd528598f2439c0330cb71cf54e4128e9a4558e0942d0268",
+      "schema_version": 1,
+      "meta": {
+        "moduleCode": "OG-5",
+        "moduleName": "Obstetrics & Gynecology",
+        "year": 5,
+        "semester": 2,
+        "creditPoints": 3.5,
+        "totalMarks": 70,
+        "keywords": [
+          "obstetrics",
+          "gynecology",
+          "og"
+        ]
+      },
+      "chapters": [
+        {
+          "id": 1,
+          "title": "Antenatal Care & Pregnancy Complications",
+          "subtitle": "Antenatal Care & Pregnancy Complications",
+          "lectureRange": "Lectures 1",
+          "subjects": []
+        },
+        {
+          "id": 2,
+          "title": "Labor & Obstetric Emergencies",
+          "subtitle": "Labor & Obstetric Emergencies",
+          "lectureRange": "Lectures 2",
+          "subjects": []
+        },
+        {
+          "id": 3,
+          "title": "General Gynecology & Gynecologic Oncology",
+          "subtitle": "General Gynecology & Gynecologic Oncology",
+          "lectureRange": "Lectures 3",
+          "subjects": []
+        }
+      ]
+    },
+    {
+      "canonical_path": "src/imports/year-5/semester-2/SUR2-5.json",
+      "bank_sha256": "879135acdc7f9a89260f14e1b914e564d3e9ff28ed0dc66506a8a2a1bcbb8faf",
+      "schema_version": 1,
+      "meta": {
+        "moduleCode": "SUR2-5",
+        "moduleName": "General & Special Surgery 2",
+        "year": 5,
+        "semester": 2,
+        "creditPoints": 4,
+        "totalMarks": 80,
+        "keywords": [
+          "surgery",
+          "sur2"
+        ]
+      },
+      "chapters": [
+        {
+          "id": 1,
+          "title": "Orthopedics & Musculoskeletal Trauma",
+          "subtitle": "Orthopedics & Musculoskeletal Trauma",
+          "lectureRange": "Lectures 1",
+          "subjects": []
+        },
+        {
+          "id": 2,
+          "title": "Urology & Male Genital Surgery",
+          "subtitle": "Urology & Male Genital Surgery",
+          "lectureRange": "Lectures 2",
+          "subjects": []
+        },
+        {
+          "id": 3,
+          "title": "Neurosurgery & Specialty Surgery",
+          "subtitle": "Neurosurgery & Specialty Surgery",
+          "lectureRange": "Lectures 3",
+          "subjects": []
+        }
+      ]
+    }
+  ],
+  "metadata_review_flags": [
+    {
+      "module": "P1-1",
+      "chapter_id": 2,
+      "subject": "clinical",
+      "issue": "lectureNames length does not match lectureCount; inspect before mapping affected items."
+    },
+    {
+      "module": "P1-1",
+      "chapter_id": 3,
+      "subject": "clinical",
+      "issue": "lectureNames length does not match lectureCount; inspect before mapping affected items."
+    },
+    {
+      "module": "P1-1",
+      "chapter_id": 4,
+      "subject": "clinical",
+      "issue": "lectureNames length does not match lectureCount; inspect before mapping affected items."
+    },
+    {
+      "module": "MCVS-2",
+      "chapter_id": 1,
+      "subject": "anatomy",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCVS-2",
+      "chapter_id": 2,
+      "subject": "anatomy",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCVS-2",
+      "chapter_id": 2,
+      "subject": "histology",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCVS-2",
+      "chapter_id": 3,
+      "subject": "physiology",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCVS-2",
+      "chapter_id": 4,
+      "subject": "physiology",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCVS-2",
+      "chapter_id": 4,
+      "subject": "pharma",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCVS-2",
+      "chapter_id": 5,
+      "subject": "physiology",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCVS-2",
+      "chapter_id": 5,
+      "subject": "biochem",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCVS-2",
+      "chapter_id": 6,
+      "subject": "microbiology",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCVS-2",
+      "chapter_id": 6,
+      "subject": "pathology",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCVS-2",
+      "chapter_id": 6,
+      "subject": "pharma",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCVS-2",
+      "chapter_id": 7,
+      "subject": "anatomy",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCVS-2",
+      "chapter_id": 8,
+      "subject": "anatomy",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCVS-2",
+      "chapter_id": 8,
+      "subject": "histology",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCVS-2",
+      "chapter_id": 9,
+      "subject": "anatomy",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCVS-2",
+      "chapter_id": 9,
+      "subject": "physiology",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCVS-2",
+      "chapter_id": 9,
+      "subject": "biochem",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCVS-2",
+      "chapter_id": 9,
+      "subject": "pathology",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCVS-2",
+      "chapter_id": 9,
+      "subject": "pharma",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCVS-2",
+      "chapter_id": 10,
+      "subject": "physiology",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCVS-2",
+      "chapter_id": 10,
+      "subject": "pathology",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCVS-2",
+      "chapter_id": 10,
+      "subject": "pharma",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCVS-2",
+      "chapter_id": 11,
+      "subject": "anatomy",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCVS-2",
+      "chapter_id": 11,
+      "subject": "histology",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCVS-2",
+      "chapter_id": 11,
+      "subject": "physiology",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCVS-2",
+      "chapter_id": 11,
+      "subject": "pathology",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MRS-2",
+      "chapter_id": 1,
+      "subject": "anatomy",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MRS-2",
+      "chapter_id": 1,
+      "subject": "histology",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MRS-2",
+      "chapter_id": 2,
+      "subject": "physiology",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MRS-2",
+      "chapter_id": 2,
+      "subject": "biochem",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MRS-2",
+      "chapter_id": 3,
+      "subject": "pathology",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MRS-2",
+      "chapter_id": 3,
+      "subject": "pharma",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MRS-2",
+      "chapter_id": 3,
+      "subject": "microbiology",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MRS-2",
+      "chapter_id": 3,
+      "subject": "parasitology",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCNS-2",
+      "chapter_id": 1,
+      "subject": "anatomy",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCNS-2",
+      "chapter_id": 1,
+      "subject": "physiology",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCNS-2",
+      "chapter_id": 1,
+      "subject": "biochem",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCNS-2",
+      "chapter_id": 1,
+      "subject": "histology",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCNS-2",
+      "chapter_id": 2,
+      "subject": "anatomy",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCNS-2",
+      "chapter_id": 2,
+      "subject": "physiology",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCNS-2",
+      "chapter_id": 2,
+      "subject": "pharma",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCNS-2",
+      "chapter_id": 2,
+      "subject": "histology",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCNS-2",
+      "chapter_id": 3,
+      "subject": "anatomy",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCNS-2",
+      "chapter_id": 3,
+      "subject": "physiology",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCNS-2",
+      "chapter_id": 3,
+      "subject": "histology",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCNS-2",
+      "chapter_id": 3,
+      "subject": "clinical",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCNS-2",
+      "chapter_id": 4,
+      "subject": "anatomy",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCNS-2",
+      "chapter_id": 4,
+      "subject": "histology",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCNS-2",
+      "chapter_id": 5,
+      "subject": "anatomy",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCNS-2",
+      "chapter_id": 6,
+      "subject": "anatomy",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCNS-2",
+      "chapter_id": 6,
+      "subject": "physiology",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCNS-2",
+      "chapter_id": 6,
+      "subject": "pharma",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCNS-2",
+      "chapter_id": 7,
+      "subject": "anatomy",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCNS-2",
+      "chapter_id": 7,
+      "subject": "physiology",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCNS-2",
+      "chapter_id": 7,
+      "subject": "pharma",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCNS-2",
+      "chapter_id": 7,
+      "subject": "histology",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCNS-2",
+      "chapter_id": 8,
+      "subject": "pharma",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCNS-2",
+      "chapter_id": 8,
+      "subject": "microbiology",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCNS-2",
+      "chapter_id": 8,
+      "subject": "pathology",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCNS-2",
+      "chapter_id": 8,
+      "subject": "parasitology",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCNS-2",
+      "chapter_id": 9,
+      "subject": "pathology",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCNS-2",
+      "chapter_id": 9,
+      "subject": "pharma",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCNS-2",
+      "chapter_id": 10,
+      "subject": "anatomy",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCNS-2",
+      "chapter_id": 10,
+      "subject": "pharma",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MCNS-2",
+      "chapter_id": 10,
+      "subject": "biochem",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MEM-2",
+      "chapter_id": 1,
+      "subject": "anatomy",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MEM-2",
+      "chapter_id": 1,
+      "subject": "histology",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MEM-2",
+      "chapter_id": 1,
+      "subject": "physiology",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MEM-2",
+      "chapter_id": 1,
+      "subject": "biochem",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MEM-2",
+      "chapter_id": 1,
+      "subject": "pathology",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MEM-2",
+      "chapter_id": 1,
+      "subject": "pharma",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MEM-2",
+      "chapter_id": 1,
+      "subject": "clinical",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MEM-2",
+      "chapter_id": 2,
+      "subject": "anatomy",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MEM-2",
+      "chapter_id": 2,
+      "subject": "histology",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MEM-2",
+      "chapter_id": 2,
+      "subject": "physiology",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MEM-2",
+      "chapter_id": 2,
+      "subject": "pathology",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MEM-2",
+      "chapter_id": 2,
+      "subject": "pharma",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MEM-2",
+      "chapter_id": 2,
+      "subject": "clinical",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MEM-2",
+      "chapter_id": 3,
+      "subject": "anatomy",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MEM-2",
+      "chapter_id": 3,
+      "subject": "histology",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MEM-2",
+      "chapter_id": 3,
+      "subject": "physiology",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MEM-2",
+      "chapter_id": 3,
+      "subject": "pathology",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MEM-2",
+      "chapter_id": 3,
+      "subject": "pharma",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MEM-2",
+      "chapter_id": 4,
+      "subject": "histology",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MEM-2",
+      "chapter_id": 4,
+      "subject": "physiology",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MEM-2",
+      "chapter_id": 4,
+      "subject": "biochem",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MEM-2",
+      "chapter_id": 5,
+      "subject": "biochem",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MEM-2",
+      "chapter_id": 5,
+      "subject": "pathology",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MEM-2",
+      "chapter_id": 5,
+      "subject": "pharma",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "MEM-2",
+      "chapter_id": 5,
+      "subject": "clinical",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "P3-2",
+      "chapter_id": 4,
+      "subject": "clinical",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "P3-2",
+      "chapter_id": 5,
+      "subject": "clinical",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "P3-2",
+      "chapter_id": 6,
+      "subject": "clinical",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "P3-2",
+      "chapter_id": 7,
+      "subject": "clinical",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "P3-2",
+      "chapter_id": 8,
+      "subject": "clinical",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "P3-2",
+      "chapter_id": 10,
+      "subject": "clinical",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "P3-2",
+      "chapter_id": 11,
+      "subject": "clinical",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "P3-2",
+      "chapter_id": 12,
+      "subject": "clinical",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "P3-2",
+      "chapter_id": 15,
+      "subject": "clinical",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "P3-2",
+      "chapter_id": 16,
+      "subject": "clinical",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "P3-2",
+      "chapter_id": 17,
+      "subject": "clinical",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "P3-2",
+      "chapter_id": 19,
+      "subject": "clinical",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    },
+    {
+      "module": "P3-2",
+      "chapter_id": 20,
+      "subject": "clinical",
+      "issue": "No lectureNames supplied in this subject; explicit lecture mapping convention needed before export."
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+[
+  {
+    "module": "IBM-1",
+    "id": "IBM1-BIO-DRV-20260921-00209",
+    "canonicalModule": "IBM-1",
+    "canonicalId": "IBM1-BIO-DRV-20260921-00208",
+    "question_hash": "f558c3f7dafeff44ce5472cb28b8ff1fef309828c5ae6a00c3ac8a23a11d2a58",
+    "canonical_hash": "f02f3c17fb270df6c68decc568030cd8b4486198eb67beb59cc53d525daac8a2",
+    "kind": "matching_fragment_consolidation",
+    "reason": "This essay was one row of the visually inspected original six-pair C matching table on all Bio questions.pdf PDF page24. Its exact target/answer is now a pair in the single matching question. This is a format consolidation, not deletion of its tested content.",
+    "chapterId": 106,
+    "canonicalChapterId": 106,
+    "original": {
+      "id": "IBM1-BIO-DRV-20260921-00209",
+      "type": "essay",
+      "text": "Match each protein with the suitable description (use the supplied descriptions across collagen, hemoglobin, plasma proteins, chaperones, zein of maize and milk proteins). a) Promote efficient protein folding; b) High biological value protein; c) Globular protein; d) Low biological value protein; e) Fibrous protein; f) Responsible for effective osmotic pressure of the blood. Target: Hemoglobin.",
+      "lecture": 1,
+      "explanation": "Hemoglobin is a compact oxygen-transport protein assembled from folded subunits.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-00209",
+          "source": "all Bio questions.pdf",
+          "page": "24",
+          "sourceQuestionNumber": "2"
+        },
+        {
+          "sourceId": "BIO-DRV-20260921-01828",
+          "source": "protein MCQ2.pdf",
+          "page": "9",
+          "sourceQuestionNumber": "2"
+        }
+      ],
+      "modelAnswer": "c) Globular protein",
+      "requiredPoints": [
+        "c) Globular protein"
+      ],
+      "contentVersion": "10f24cd313b65114a41e90e994aa9a240a55f090dee488f1cc7d0f5003c99eea"
+    }
+  },
+  {
+    "module": "IBM-1",
+    "id": "IBM1-BIO-DRV-20260921-00210",
+    "canonicalModule": "IBM-1",
+    "canonicalId": "IBM1-BIO-DRV-20260921-00208",
+    "question_hash": "ba73368e87b0dbb25ce9907d173a2798a6a0cb061347a089d7e78781f7200675",
+    "canonical_hash": "f02f3c17fb270df6c68decc568030cd8b4486198eb67beb59cc53d525daac8a2",
+    "kind": "matching_fragment_consolidation",
+    "reason": "This essay was one row of the visually inspected original six-pair C matching table on all Bio questions.pdf PDF page24. Its exact target/answer is now a pair in the single matching question. This is a format consolidation, not deletion of its tested content.",
+    "chapterId": 106,
+    "canonicalChapterId": 106,
+    "original": {
+      "id": "IBM1-BIO-DRV-20260921-00210",
+      "type": "essay",
+      "text": "Match each protein with the suitable description (use the supplied descriptions across collagen, hemoglobin, plasma proteins, chaperones, zein of maize and milk proteins). a) Promote efficient protein folding; b) High biological value protein; c) Globular protein; d) Low biological value protein; e) Fibrous protein; f) Responsible for effective osmotic pressure of the blood. Target: Plasma proteins.",
+      "lecture": 1,
+      "explanation": "Plasma proteins help retain water in the blood compartment by maintaining colloid osmotic pressure.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-00210",
+          "source": "all Bio questions.pdf",
+          "page": "24",
+          "sourceQuestionNumber": "3"
+        },
+        {
+          "sourceId": "BIO-DRV-20260921-01829",
+          "source": "protein MCQ2.pdf",
+          "page": "9",
+          "sourceQuestionNumber": "3"
+        }
+      ],
+      "modelAnswer": "f) Responsible for effective osmotic pressure of the blood",
+      "requiredPoints": [
+        "f) Responsible for effective osmotic pressure of the blood"
+      ],
+      "contentVersion": "f2217e7648a68205c447f4020e62161e21115201ece216703b09da0e93a7b3f1"
+    }
+  },
+  {
+    "module": "IBM-1",
+    "id": "IBM1-BIO-DRV-20260921-00211",
+    "canonicalModule": "IBM-1",
+    "canonicalId": "IBM1-BIO-DRV-20260921-00208",
+    "question_hash": "6a22350c65ca791b57c1e98da7b687852e5eab35e37dc081a630cf541b65bf85",
+    "canonical_hash": "f02f3c17fb270df6c68decc568030cd8b4486198eb67beb59cc53d525daac8a2",
+    "kind": "matching_fragment_consolidation",
+    "reason": "This essay was one row of the visually inspected original six-pair C matching table on all Bio questions.pdf PDF page24. Its exact target/answer is now a pair in the single matching question. This is a format consolidation, not deletion of its tested content.",
+    "chapterId": 105,
+    "canonicalChapterId": 106,
+    "original": {
+      "id": "IBM1-BIO-DRV-20260921-00211",
+      "type": "essay",
+      "text": "Match each protein with the suitable description (use the supplied descriptions across collagen, hemoglobin, plasma proteins, chaperones, zein of maize and milk proteins). a) Promote efficient protein folding; b) High biological value protein; c) Globular protein; d) Low biological value protein; e) Fibrous protein; f) Responsible for effective osmotic pressure of the blood. Target: Chaperones.",
+      "lecture": 1,
+      "explanation": "Chaperones assist productive folding and suppress inappropriate aggregation.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-00211",
+          "source": "all Bio questions.pdf",
+          "page": "24",
+          "sourceQuestionNumber": "4"
+        },
+        {
+          "sourceId": "BIO-DRV-20260921-01830",
+          "source": "protein MCQ2.pdf",
+          "page": "9",
+          "sourceQuestionNumber": "4"
+        }
+      ],
+      "modelAnswer": "a) Promote efficient protein folding",
+      "requiredPoints": [
+        "a) Promote efficient protein folding"
+      ],
+      "contentVersion": "9bfb4a5e9f3ee81873d9a78a8f99ead71a1a41ca749b9f15d9ec334f0bd3de56"
+    }
+  },
+  {
+    "module": "IBM-1",
+    "id": "IBM1-BIO-DRV-20260921-00212",
+    "canonicalModule": "IBM-1",
+    "canonicalId": "IBM1-BIO-DRV-20260921-00208",
+    "question_hash": "d415e806fd8aae0887aee7ca1c9156c708795ada983bb04b2e082ffb2d01fe63",
+    "canonical_hash": "f02f3c17fb270df6c68decc568030cd8b4486198eb67beb59cc53d525daac8a2",
+    "kind": "matching_fragment_consolidation",
+    "reason": "This essay was one row of the visually inspected original six-pair C matching table on all Bio questions.pdf PDF page24. Its exact target/answer is now a pair in the single matching question. This is a format consolidation, not deletion of its tested content.",
+    "chapterId": 106,
+    "canonicalChapterId": 106,
+    "original": {
+      "id": "IBM1-BIO-DRV-20260921-00212",
+      "type": "essay",
+      "text": "Match Zein of maize with the suitable description.",
+      "lecture": 1,
+      "explanation": "Low biological value protein; Zein is deficient in essential lysine and tryptophan, limiting its value as the sole dietary protein.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-00212",
+          "source": "all Bio questions.pdf",
+          "page": "24",
+          "sourceQuestionNumber": "5"
+        },
+        {
+          "sourceId": "BIO-DRV-20260921-01831",
+          "source": "protein MCQ2.pdf",
+          "page": "9",
+          "sourceQuestionNumber": "5"
+        }
+      ],
+      "modelAnswer": "Low biological value protein; Zein is deficient in essential lysine and tryptophan, limiting its value as the sole dietary protein.",
+      "requiredPoints": [
+        "Low biological value protein",
+        "Zein is deficient in essential lysine and tryptophan, limiting its value as the sole dietary protein"
+      ],
+      "contentVersion": "a65e39c5ee3bfbe0cd7576bab41d0e60b6139d83d2c1731b8a114bf7558e6983"
+    }
+  },
+  {
+    "module": "IBM-1",
+    "id": "IBM1-BIO-DRV-20260921-00213",
+    "canonicalModule": "IBM-1",
+    "canonicalId": "IBM1-BIO-DRV-20260921-00208",
+    "question_hash": "c1ca508f7e7ed0ec5f2a51824dea9f7f8c36dd077e3c35ec190db52f0ac0cccc",
+    "canonical_hash": "f02f3c17fb270df6c68decc568030cd8b4486198eb67beb59cc53d525daac8a2",
+    "kind": "matching_fragment_consolidation",
+    "reason": "This essay was one row of the visually inspected original six-pair C matching table on all Bio questions.pdf PDF page24. Its exact target/answer is now a pair in the single matching question. This is a format consolidation, not deletion of its tested content.",
+    "chapterId": 106,
+    "canonicalChapterId": 106,
+    "original": {
+      "id": "IBM1-BIO-DRV-20260921-00213",
+      "type": "essay",
+      "text": "Match each protein with the suitable description (use the supplied descriptions across collagen, hemoglobin, plasma proteins, chaperones, zein of maize and milk proteins). a) Promote efficient protein folding; b) High biological value protein; c) Globular protein; d) Low biological value protein; e) Fibrous protein; f) Responsible for effective osmotic pressure of the blood. Target: Milk proteins.",
+      "lecture": 1,
+      "explanation": "Milk protein supplies a balanced set of essential amino acids.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-00213",
+          "source": "all Bio questions.pdf",
+          "page": "24",
+          "sourceQuestionNumber": "6"
+        }
+      ],
+      "modelAnswer": "b) High biological value protein",
+      "requiredPoints": [
+        "b) High biological value protein"
+      ],
+      "contentVersion": "8af2d711ff5d865c49dd0335fa8a953f2c4435033addf126d9b1b79f11b6cf1c"
+    }
+  }
+]

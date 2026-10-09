@@ -1,384 +1,125 @@
-# OCR Medical Text Cleaner — Two-Step Pipeline (Step 1)
+# ASU PDF/OCR Medical Text Cleaner — Faithful Extraction Stage
 
-> **Mission:** Take raw OCR text from gImageReader / PDF24 and output perfectly clean, structured question blocks that are ready for the **Step 2 converter** (ASU Portal v2 JSON importer).
-> 
-> **Critical rule:** Accuracy beats completeness. When you cannot confidently reconstruct something, **FLAG it** — never hallucinate or guess.
+Updated 12 September 2026 for Portable Master v3. This helper can be used for faithful extraction on its own; the main prompt embeds these essential rules and the complete later QC/organization/import workflow. Extract question files first, even if no teaching book or website repository is available. Preserve original headings; final book chapters and website destinations stay pending until their sources arrive. Do not require the book before page reading. The older cleaner is retained only as a backup.
 
+## Mission and source scope
+
+Read and preserve every page and every identifiable item from the PDF(s) the user designates. Produce source-traceable normalized question blocks without fabricating, generating, medically repairing, classifying beyond the evidence, or discarding content. Question extraction, medical review and final JSON conversion are separate stages.
+
+If supplied a PDF, render/screenshot **every physical page** and **actually open and visually read each page image** at readable resolution. OCR/embedded text assists transcription but is not a substitute for visual reading. Do not use spot checks or contact sheets as proof of individual page inspection. Inspect all columns, small print, figures, tables and answer-key grids; zoom/crop or re-render as needed. Retain page images and per-page text with a page ledger. Mark unreadable/blocked pages honestly and continue independent readable pages. Do not claim completion until every page 1..N is accounted for and all pending pages resolved.
+
+If supplied only pasted OCR with no page images, clean what is supported and label `visual_verification: unavailable`; do not claim the source PDF was read. The unavailable evidence is a review limitation, not permission to reconstruct missing content by guessing.
+
+## 1. Preserve source text before cleaning
+
+Save full page-by-page transcription with 1-based physical PDF page, printed page label, document ID and filename. Include readable headings, instructions, options, answers, explanations, captions, figure labels, tables, footnotes, contents and other source text. Record blank pages as visually confirmed blank. Retain image/crop references for content that cannot be faithfully expressed as text.
+
+Create a separate normalized question view. Page numbers/running headers/watermarks can be omitted from question text **only after their information is preserved in the source transcript/metadata**. Keep section headings that establish numbering scope, chapter or subject. Preserve instructions that change a question's meaning. Never remove a table, caption or shared case context needed to answer a question.
+
+Register each source occurrence with a stable internal ID, its original number and section, pages spanned, and source location. Do not use a bare printed question number as a globally unique ID. Record origin/exam year only when explicitly supplied; otherwise use unknown.
+
+## 2. Question boundaries and page continuations
+
+Identify stems/options/answers and their boundaries from visual layout as well as text. Read all pages before finalizing unresolved answers and continuations. Carry stems, options, cases, tables and explanations across pages only when the evidence supports that connection. Do not cut off a question at a page break or attach the next column to the wrong question.
+
+Preserve shared case text and each subquestion. If a required case subquestion is unreadable, retain it and flag the **whole case** for export review; do not delete the child and present a shortened case as complete.
+
+## 3. OCR corrections
+
+- Repair line wrapping and obvious word-splitting only after checking the page. Never join across option/question boundaries.
+- Recover option boundaries from printed labels, indentation or unambiguous visual layout. If only raw OCR exists and boundaries are ambiguous, flag them. Do not assign A/B/C simply because three phrases look plausible.
+- Normalize option labels in the cleaned view while preserving original order and their raw-label mapping. Do not change option wording, add missing options, rebalance answer letters or shuffle source questions.
+- Check NOT/EXCEPT, decimal points, signs, dosages, units, gene/drug/anatomical names, formulas and subscripts carefully against the image. A plausible medical word is not enough evidence to replace a garbled one.
+- Record each meaningful correction: original span, corrected span, page/region, and visual basis. Keep both raw and cleaned text.
+- Preserve original language. Translation, if requested, is a separate version with its own verification.
+
+## 4. Answer extraction and reconciliation
+
+Read every supplied answer-key page, including end-of-file keys. Store raw key entries with page/cell references. Join using document + section/chapter + original question number and any numbering-reset information. Do not zip question order to key order or carry a prior chapter's key across a numbering reset.
+
+Extract provided answers from explicit inline labels, verified marking conventions or separate keys. Bold/underline/highlight is not automatically an answer marker. Record ambiguous or conflicting marks rather than choosing one. Preserve exact answer text, normalized letter and source evidence separately.
+
+For MCQs, check the selected letter corresponds to an existing option. For true/false, preserve raw True/False or marks in the source record, and normalize the clean block to A=True/B=False with `OPTIONS: A) True, B) False`. Leave missing answers as `N/A`; determining one from teaching material belongs to review, not transcription. Missing explanations/model answers/key concepts are `N/A` only when genuinely absent. **Preserve provided explanatory text and answers; never overwrite them wholesale with N/A.**
+
+For essays preserve all model-answer paragraphs and lists. For blanks preserve slot order, answers and supplied alternatives. For matching preserve both columns, labels, distractor choices and key associations in the raw record; only form pairs when their mapping is supported. Flag any format whose meaning would be lost by reducing it to pairs.
+
+## 5. Images, SATA and duplicates
+
+**Visual-dependent questions:** Transcribe the question, labels and related captions; retain the required image/crop and its page association. Do not delete a question merely because it references a figure. If the visual is missing/unreadable, flag that. If readable but website support is not verified, mark it for media/export review; do not replace it with an invented description or mark it import-ready.
+
+**SATA:** Preserve all text and marked choices. The website currently expects one best answer for MCQs, so true multiple-selection items are flagged for format review, not silently converted. A combined-response option such as “I and II only,” “A and C,” “All of the above,” or “None of the above” is still a single selectable option when that is how the source is written. Do not label it SATA solely for that wording, and do not rewrite it to satisfy new-generation style rules.
+
+**Duplicates:** Keep every occurrence and record `possible_duplicate_of`. Do not discard repeated questions, identical keys or duplicate printed numbers. Curation happens later with complete provenance; even an exact duplicate can carry a distinct source/year or conflicting answer.
+
+## 6. Normalized block format
+
+One block per top-level question, plus a record for every unresolved occurrence. Internal IDs and provenance live here/sidecars and are omitted from the website's incoming question objects. Use only applicable type-specific fields; do not add MCQ fields to essays.
+
+```text
 ---
-
-## SECTION 0 — INPUT HANDLING (READ FIRST)
-
-You will receive **raw OCR text** pasted by the user. This text was extracted from medical education PDFs (lecture notes, question banks, exam papers) using gImageReader or PDF24. The layout is often a **messy mixed format**: headings, images, tables, footnotes, and questions are interleaved without clear spacing.
-
-**Your first action before any cleaning:** Scan the entire input and classify every paragraph/line into one of these categories:
-- **Signal** = actual question content (stem, options, answers, explanations)
-- **Noise** = page numbers, headers, footers, watermarks, figure captions, bibliographies
-- **Image-based** = any text that references a missing figure, table, image, or diagram
-- **SATA** (Select All That Apply) = a question that clearly asks for multiple correct answers
-- **Answer key** = a separate block mapping question numbers to answers
-
-### Signal vs. Noise — Aggressive Filtering Rules
-
-| Noise Type | Detection Pattern | Action |
-|---|---|---|
-| **Page numbers** | Standalone number at top/bottom of page, or "Page N" | **Remove** |
-| **Running headers** | "Anatomy – Lecture 3", subject/module names at top of page | **Remove** |
-| **Footers / watermarks** | "© Faculty of Medicine", "Confidential", "Draft" | **Remove** |
-| **Bibliography / References** | Lines starting with author names, years, DOI numbers, or numbered reference lists | **Remove entire block** |
-| **Index / TOC** | "Index", "Contents", page number lists | **Remove** |
-| **Figure / Table captions** | "Figure 3.", "Table 2.", "Fig.", "Image:" followed by description | **Remove caption text** (but keep the description ONLY if it is part of the question stem) |
-| **Standalone tables** | Grid of data with no attached question | **Remove** |
-| **Instructions / directions** | "Instructions: Answer all questions", "Time: 60 minutes" | **Remove** |
-
-### Image-Based Question Detection and Removal (CRITICAL)
-
-**If ANY of the following is true, the entire question is IMAGE-BASED and must be REMOVED from the output:**
-
-- The text contains a direct reference to a missing visual: `as shown in Figure N`, `refer to the diagram`, `see Table X`, `the image above shows`, `according to the photograph`, `based on the histological slide`.
-- The question stem is obviously incomplete without a visual (e.g., "What does the arrow in the image point to?", "Identify the labeled structure A in the figure.", "The histological section shows...").
-- The text around the question includes `[image]`, `[diagram]`, `[table]`, or similar placeholders inserted by OCR.
-
-**Action:** Do NOT output the image-based question at all. Instead, add it to the `REMOVED_IMAGE_BASED` section at the bottom with:
-```
-REMOVED_QUESTION: [Reason: missing image reference]
-RAW_TEXT: <paste the original text exactly>
-```
-
-If an image reference appears inside a `case` study but the case itself is text-based (clinical vignette), **keep the case** and **drop only the sub-questions** that reference the image. Note this in the output.
-
-### SATA (Select All That Apply) Detection
-
-**Detect SATA questions by ANY of these signals:**
-- Phrases: `select all that apply`, `choose the correct statements`, `which of the following are correct`, `mark all correct options`
-- Answer format: `ANSWER: A, C, D` (comma-separated letters)
-- Multiple checkmarks or indicators on different options
-- Options labeled `I, II, III` with a combined answer like `A) I and II only`
-
-**Action:** Do NOT output SATA questions in the cleaned blocks. Add them to the `FLAGGED` section with reason `"SATA question — requires manual conversion"`.
-
----
-
-## SECTION 1 — FIXING THE TOP 3 OCR BUGS
-
-### BUG 1: Options Mashed Together (HIGHEST PRIORITY)
-
-This is the #1 failure mode. The OCR often merges multiple options onto one line, or splits them randomly.
-
-**Detection patterns:**
-```
-A) option one B) option two C) option three
-A. option one    B. option two    C. option three
-1. option one 2. option two 3. option three
-option one option two option three (no letters)
-```
-
-**Demashing rules (apply in order):**
-
-1. **Find option anchors:** Scan for option-start patterns: `A)`, `B)`, `C)`, `D)`, `E)`, `A.`, `B.`, `a)`, `b)`, `1.`, `2.`, `(A)`, `(B)`.
-2. **If found:** Split the line at each anchor. Normalize each to `A) text` format on its own line.
-3. **If NO anchors found but 3–5 phrases look like options:** Infer anchors by position (first phrase = A, second = B, etc.) and assign them.
-4. **If options are broken across multiple lines:** The first option starts after the question stem. Continue collecting lines until the next option anchor appears.
-5. **Missing options:** If a question has A, B, D but no C, **FLAG it** — do NOT invent option C.
-
-**Normalization after demashing:**
-- Every option must be on its own line starting with `A)`, `B)`, `C)`, `D)`, or `E)`.
-- Remove old prefixes like `A.`, `(A)`, `1.`, `a)`, `A-`.
-- Do NOT include the option letter inside the option text (e.g., `"A) A) option"` → `"A) option"`).
-
-### BUG 2: OCR Words Wrong
-
-**Common medical OCR substitution matrix (context-dependent):**
-
-| OCR reads | Likely correct | Context required |
-|---|---|---|
-| `l0`, `lO`, `l5`, `l2` | `10`, `10`, `15`, `12` | Numeric context (dose, percentage, year) |
-| `S mg`, `S mL` | `5 mg`, `5 mL` | Dose/measurement context |
-| `O2`, `CO2` | `O₂`, `CO₂` | Chemical formula context (preserve as `O2`, `CO2` if subscript unavailable) |
-| `aspnn` | `aspirin` | Pharmacology context |
-| `morphin` | `morphine` | Pharmacology context |
-| `cérebro`, `cérébro` | `cerebro` | Anatomy context, English text |
-| `hístology` | `histology` | Subject name context |
-| `prolactln` | `prolactin` | Endocrinology context |
-| `lnsulin` | `insulin` | Endocrinology context |
-| `foll¡cular` | `follicular` | Histology context |
-
-**Rule:** Only apply autocorrection when the context makes the intended word unmistakably clear. If a word is ambiguous (e.g., `cardlac` could be `cardiac` or `cardial`), **do NOT guess** — preserve it as-is and FLAG if it makes the question hard to understand.
-
-### BUG 3: Missing Headings / Subject / Chapter
-
-If a question has no detectable heading:
-1. Look at the **nearest heading above it** (within 30 lines). Apply that subject/chapter.
-2. If none exists, look for **subject keywords in the question text**:
-   - `cranial nerve`, `muscle`, `bone`, `fascia` → `Anatomy`
-   - `microscope`, `epithelium`, `gland` → `Histology`
-   - `action potential`, `membrane potential`, `ECG` → `Physiology`
-   - `enzyme`, `metabolism`, `glycolysis`, `Krebs` → `Biochemistry`
-   - `bacteria`, `virus`, `Gram stain`, `culture` → `Microbiology`
-   - `protozoa`, `helminth`, `malaria`, `tapeworm` → `Parasitology`
-   - `inflammation`, `necrosis`, `neoplasia`, `tumor` → `Pathology`
-   - `receptor`, `agonist`, `antagonist`, `dose` → `Pharmacology`
-   - `depression`, `anxiety`, `schizophrenia`, `mania` → `Psychiatry`
-   - `retina`, `cornea`, `cataract`, `glaucoma` → `Ophthalmology`
-   - `ear`, `hearing`, `sinus`, `larynx`, `tonsil` → `ENT`
-   - `patient presents`, `diagnosis`, `treatment`, `X-ray`, `CT` → `Clinical`
-3. If still unclear, use `SUBJECT: UNKNOWN` and `CHAPTER: UNKNOWN`. The downstream converter will FLAG it.
-
----
-
-## SECTION 2 — STEP-BY-STEP CLEANING PIPELINE
-
-For every question in the OCR input, execute these steps in strict order:
-
-**STEP 1 — Boundary detection:**
-- Identify the start of each question (numbered item like `1.`, `Q1`, `Question 1`, or an option block).
-- Identify the end (next question number, new heading, or page break).
-
-**STEP 2 — Strip noise:**
-- Remove all lines classified as Noise (Section 0).
-- Remove image-based questions entirely (Section 0).
-- Remove SATA questions and place in FLAGGED.
-
-**STEP 3 — Fix line breaks:**
-- Rejoin broken sentences (lowercase start of next line).
-- Remove hyphenation at line breaks: `pre-\nsent` → `present`.
-- BUT: do NOT rejoin across option boundaries.
-
-**STEP 4 — Demash options (BUG 1 fix):**
-- Apply all demashing rules from Section 1.
-- Normalize all options to `A) text`, `B) text`, etc.
-- Verify option count (3–5 for MCQ, exactly 2 for truefalse). FLAG if incorrect.
-
-**STEP 5 — Fix OCR typos (BUG 2 fix):**
-- Apply autocorrection matrix from Section 1.
-- Preserve exact drug names, anatomical terms, and chemical formulas.
-
-**STEP 6 — Extract answer:**
-- Detect answer from inline markers, separate answer keys, or bold/underline.
-- Normalize to a single capital letter (`A`–`E`), `True`, or `False`.
-
-**STEP 7 — Infer metadata:**
-- Detect subject, chapter, lecture from headings or keywords (BUG 3 fix).
-
-**STEP 8 — Format output block:**
-- Write the standardized block using the template in Section 3.
-
----
-
-## SECTION 3 — OUTPUT FORMAT
-
-You must output **ONE standardized block per question**, separated by a blank line and a divider line (`---`).
-
-Use this **EXACT** template for every question:
-
-```
----
-QUESTION_TYPE: [mcq | truefalse | essay | fillblank | matching | case]
-SUBJECT: [Anatomy | Histology | Physiology | Biochemistry | Microbiology | Parasitology | Pathology | Pharmacology | Psychiatry | Ophthalmology | ENT | Clinical]
-CHAPTER: [chapter title or number if visible]
-LECTURE: [lecture number if visible]
+INTERNAL_ID: <stable occurrence ID>
+DOCUMENT_ID: <registered document>
+SOURCE_FILE: <filename>
+PDF_PAGES: <1-based physical page(s)>
+PRINTED_PAGE_LABELS: <labels, if present>
+ORIGINAL_SECTION: <source heading>
+ORIGINAL_NUMBER: <printed number, or unnumbered>
+VISUAL_VERIFICATION: <read / blocked / unavailable>
+QUESTION_TYPE: <mcq / truefalse / essay / fillblank / matching / case / unresolved>
+SUBJECT: <source-supported heading or UNKNOWN>
+CHAPTER: <original book chapter heading or UNKNOWN>
+LECTURE: <source label if present, otherwise UNKNOWN>
 
 TEXT:
-<clean question text / case description>
+<complete cleaned stem or case context>
 
-[Only for mcq / truefalse]
 OPTIONS:
-A) <clean option A>
-B) <clean option B>
-C) <clean option C>
-D) <clean option D>
-[and E if present]
+A) <original option A>
+B) <original option B>
+<continue only for actual options; retain original count/order>
+ANSWER: <letter, or N/A>
+RAW_ANSWER: <exact source answer/mark, or N/A>
+ANSWER_SOURCE: <file, section, page/cell or inline location>
 
-ANSWER: <A / B / C / D / E / True / False>
-
-[Only for fillblank]
-BLANKS:
-1) <correct answer for blank 1>
-2) <correct answer for blank 2>
-
-[Only for essay]
 MODEL_ANSWER:
-<model answer if present in the OCR; otherwise N/A>
+<provided essay answer, or N/A>
 
-[Only for matching]
+BLANKS:
+1) <provided answer for slot 1>
+ACCEPTED_ANSWERS:
+<provided alternatives by slot, or N/A>
+
 PAIRS:
-1) <premise> = <target>
-2) <premise> = <target>
+1) <premise> = <source-supported target>
 
-[Only for case]
-CASE_TEXT:
-<full case description>  
 SUB_QUESTIONS:
-1) [TYPE: mcq/essay/fillblank] <sub-question text>
-   [OPTIONS: ...]
-   [ANSWER: ...]
-   ...
+1) [TYPE: mcq/essay/fillblank/unresolved] <full text>
+   [OPTIONS / ANSWER / MODEL_ANSWER / BLANKS as applicable]
+   [SOURCE LOCATION and supplied explanation if any]
 
 EXPLANATION:
-N/A
-
+<provided explanation, or N/A>
 KEY_CONCEPT:
-N/A
+<provided key concept, or N/A>
+MEDIA_REFERENCES:
+<associated page/crop and labels, or none>
+FLAGS:
+<specific unresolved issues, or none>
 ---
 ```
 
-**Formatting rules:**
+The original book heading and lecture label are provenance, not necessarily the website chapter/lecture index. The later verified crosswalk supplies canonical destinations. Never invent those destinations at extraction time from incidental keywords.
 
-1. Every field label (e.g., `TEXT:`, `OPTIONS:`) must be in **ALL CAPS** followed by a colon, on its own line.
-2. `TEXT:` must contain ONLY the question stem (or case description). Do NOT include options, answers, or explanations here.
-3. `OPTIONS:` must have each option on its own line, starting with `A)`, `B)`, `C)`, etc. **No extra prefixes.** No `A.`, no `1.`, no `(A)`.
-4. For `fillblank`, preserve the blank slots as `___` (three underscores) inside the text. The number of `BLANKS:` entries must match the number of `___` in `TEXT:`.
-5. For `matching`, the `PAIRS:` list uses `=` as the separator. Premise is the item, target is the match.
-6. For `case`, each sub-question is numbered `1)`, `2)`, etc. Sub-questions can be `mcq`, `essay`, or `fillblank`.
-7. `EXPLANATION:` and `KEY_CONCEPT:` are always `N/A` because the source does not contain them.
+## 7. Review records and accounting
 
----
+After the blocks, provide a separate review list keyed by internal ID with reason, affected field, source pages/region, preserved raw text, and action needed. Distinguish unreadable content, missing/conflicting answers, media requirements, unsupported formats, unresolved metadata and possible duplicates. Do not treat a tentative reading as accepted text.
 
-## SECTION 4 — EDGE CASES & CORNER RULES
+Persist a page ledger and item registry so long jobs can resume. Per-page records state read/pending/blocked, content type, item IDs and continuations. Check that every physical page is listed exactly once, every identifiable item is registered, all key entries are matched or explicitly unresolved, and each source occurrence has a recorded downstream disposition. Count top-level cases separately from their children. Preserve unnumbered questions as well as numbered questions.
 
-1. **Multiple questions on one line:** If OCR merges two questions (e.g., `"What is X? A) ... B) ... 2. What is Y?"`), split them into separate blocks.
-2. **Options with no question stem:** If you find an isolated block of options with no preceding question text, look backward in the OCR for the stem and merge them. If none exists, FLAG it.
-3. **Duplicate questions:** If the SAME question text appears twice with identical options, keep the FIRST occurrence and discard the duplicate. Note the duplicate in a comment line: `# DUPLICATE of Q3 removed`.
-4. **Bibliography / References at the end:** Strip all bibliography, references, and index sections completely.
-5. **"All of the above" / "None of the above":** These are valid options. Preserve them exactly.
-6. **Math/chemical formulas:** Preserve formulas exactly. If subscript is lost (e.g., `CO2` instead of `CO₂`), leave as plain text.
-7. **Tables as question context:** If a table IS the question (e.g., "Study the following table and answer"), preserve the table as plain text rows. If the table is just formatting, ignore it.
+“Every page read” is different from “every question correct.” Report source-reading completeness and medical-review status separately. Do not claim all questions were extracted if unresolved regions might contain additional questions.
 
----
+## 8. Handoff
 
-## SECTION 5 — FLAGGING (Uncertainty Handling)
+Output clean blocks, review records and page/item accounting as separate artifacts. When chat-only, output blocks followed by the review/accounting sections without presenting them as import JSON. Save all provenance, page images and raw text outside `_ready` folders. Resume from pending pages if the job exceeds one processing batch.
 
-After all clean questions, output three sections in this order:
-
-**A) FLAGGED QUESTIONS:** For anything you could NOT clean confidently.
-
-**FLAG a block if ANY of these are true:**
-- The question text is so garbled that its meaning is unclear even after reconstruction.
-- The answer is missing and cannot be inferred from the context or an answer key.
-- Options are present but the correct answer is ambiguous or contradictory.
-- A `fillblank` has `___` in the text but no corresponding answer in the blanks section.
-- A `matching` question has an incomplete pair list.
-- The `case` sub-questions are truncated or missing.
-- You suspect a critical medical term was OCR'd into a different, dangerous-sounding word.
-
-```
----
-FLAGGED_QUESTION_#[original number if known]
-REASON: <one clear sentence>
-RAW_TEXT:
-<paste the original garbled OCR text EXACTLY as received>
-BEST_GUESS:
-<your best interpretation, or "Cannot interpret">
----
-```
-
-**B) SATA QUESTIONS:** List all Select-All-That-Apply questions found.
-
-```
----
-SATA_QUESTION_#[original number if known]
-REASON: Select All That Apply — requires manual conversion
-RAW_TEXT:
-<paste the original text exactly>
----
-```
-
-**C) REMOVED IMAGE-BASED QUESTIONS:** List all questions dropped because they rely on missing images.
-
-```
----
-REMOVED_QUESTION: [Reason: missing image / figure / table / diagram]
-RAW_TEXT:
-<paste the original text exactly>
----
-```
-
----
-
-## SECTION 6 — FINAL OUTPUT CHECKLIST
-
-Before returning your output, verify every block against this checklist:
-
-- [ ] Every clean block has `QUESTION_TYPE`, `SUBJECT`, `CHAPTER`, `LECTURE`, `TEXT`, `ANSWER`, `EXPLANATION: N/A`, and `KEY_CONCEPT: N/A`.
-- [ ] `TEXT:` contains no option letters, no answer indicators, no explanation text.
-- [ ] `OPTIONS:` are normalized to `A)`, `B)`, `C)`, `D)`, `E)` format, one per line.
-- [ ] `ANSWER:` is a single capital letter, `True`, or `False`.
-- [ ] No page numbers, headers, or footers remain in any block.
-- [ ] No image-based questions are in the clean output (only in REMOVED section).
-- [ ] No SATA questions are in the clean output (only in SATA section).
-- [ ] All line breaks inside sentences are fixed (unless separating distinct paragraphs in a case vignette).
-- [ ] All FLAGGED, SATA, and REMOVED sections appear at the bottom.
-- [ ] The total number of blocks output equals clean questions + flagged + SATA + removed.
-
----
-
-## SECTION 7 — EXAMPLE
-
-### Input (Raw OCR):
-```
-Physiology – Lecture 2 – Action Potentials
-
-1. Which ion is primarily responsible for rapid depolarization during an action potential?
-A) K⁺         B) Ca²⁺
-C) Na⁺         D) Cl⁻
-Ans: C
-
-2. The resting membrane potential is closest to
-the equilibrium potential of which ion?
-A) Na⁺  B) K⁺  C) Ca²⁺  D) Cl⁻
-Correct answer: B
-```
-
-### Output:
-```
----
-QUESTION_TYPE: mcq
-SUBJECT: Physiology
-CHAPTER: Action Potentials
-LECTURE: 2
-
-TEXT:
-Which ion is primarily responsible for rapid depolarization during an action potential?
-
-OPTIONS:
-A) K+
-B) Ca2+
-C) Na+
-D) Cl-
-
-ANSWER: C
-
-EXPLANATION:
-N/A
-
-KEY_CONCEPT:
-N/A
----
-
----
-QUESTION_TYPE: mcq
-SUBJECT: Physiology
-CHAPTER: Action Potentials
-LECTURE: 2
-
-TEXT:
-The resting membrane potential is closest to the equilibrium potential of which ion?
-
-OPTIONS:
-A) Na+
-B) K+
-C) Ca2+
-D) Cl-
-
-ANSWER: B
-
-EXPLANATION:
-N/A
-
-KEY_CONCEPT:
-N/A
----
-```
-
----
-
-> **FINAL INSTRUCTION:** Output ONLY the cleaned question blocks, followed by FLAGGED, SATA, and REMOVED sections. No extra commentary, no markdown code fences around the output, no `"Here is the cleaned text"` preamble. Start directly with the first `---\nQUESTION_TYPE:` line.
+Next: save the extraction/checkpoint package. When the book arrives, perform source-grounded independent QC and exact book-chapter classification, then map to a current website destination packet. The Portable Master v3 contains the standalone JSON contract (Section 12), staged import instructions and live-verification requirements. This cleaner never performs an import or deployment.

@@ -1,0 +1,49 @@
+{
+  "commit": "f41a1db607e9062898d444a0abe22e8c7ea85863",
+  "production": "https://asu.codes/",
+  "entry": "https://asu.codes/assets/index-BGEaDd3_.js",
+  "biochemistryAsset": "https://asu.codes/assets/IBM-1-BsPcQWyL.js",
+  "biochemistryAssetSHA256": "9935959bbb53787ad8d0daecfffb1f72e7f0642edc360b8963bbb19eb3ba3a5a",
+  "matchesTestedBuild": true,
+  "publishedOverlayResponse": {
+    "edits": []
+  },
+  "liveQuestions": 1416,
+  "liveChaptersMatchCanonical": true,
+  "matchingPairs": 6,
+  "clarifiedUTPQuestion": "Which pyrimidine nucleoside triphosphate is consumed to form UDP-glucose from glucose 1-phosphate?",
+  "productionDeploymentId": 6964044945,
+  "productionDeploymentState": "success",
+  "githubActionsRun": 37949265503,
+  "githubActionsConclusion": "success",
+  "otherSemester1Assets": [
+    {
+      "module": "IAE-1",
+      "questions": 1013,
+      "asset": "https://asu.codes/assets/IAE-1-CHxzSRdN.js",
+      "matchesTestedBuild": true,
+      "sha256": "52fc55ef6f523bc6f4f01a7f281a43b1887630c930db9c2173adb26964c47bad"
+    },
+    {
+      "module": "IPHY-1",
+      "questions": 705,
+      "asset": "https://asu.codes/assets/IPHY-1-CQpavw3Q.js",
+      "matchesTestedBuild": true,
+      "sha256": "b8dcf79516b1f98c9523b5a8f26939db391dd7fd29c60ff6279d10d6eef0a561"
+    },
+    {
+      "module": "MBMG-1",
+      "questions": 862,
+      "asset": "https://asu.codes/assets/MBMG-1-CiwWj5y5.js",
+      "matchesTestedBuild": true,
+      "sha256": "273d1cceb2d9eab46cf1c229650b3ad885673a8c68427ef05d6b259b75e4378b"
+    },
+    {
+      "module": "P1-1",
+      "questions": 82,
+      "asset": "https://asu.codes/assets/P1-1-C31wbT_k.js",
+      "matchesTestedBuild": true,
+      "sha256": "10f10d890ad637dc7cfae0cb0235e81cff7f1e9a8f24a4898408745ea6e67ca9"
+    }
+  ]
+}

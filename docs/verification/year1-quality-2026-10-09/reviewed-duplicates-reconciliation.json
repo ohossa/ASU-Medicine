@@ -1,0 +1,140 @@
+{
+  "reviewed_same_stem_groups": 193,
+  "reviewed_fuzzy_pairs": 62,
+  "pre_refresh_proposals": 221,
+  "final_replay_rows": 211,
+  "rows_by_module": {
+    "IAE-1": 21,
+    "IBM-1": 126,
+    "IPHY-1": 10,
+    "MBMG-1": 54
+  },
+  "dropped_absent_rows": [
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-00956",
+      "canonicalModule": "IBM-1",
+      "canonicalId": "IBM1-BIO-DRV-20260921-00902",
+      "disposition": "not_replayed",
+      "reason": "Proposed removed question is absent from final semantic/automatic-dedup candidate; no further removal needed."
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-00957",
+      "canonicalModule": "IBM-1",
+      "canonicalId": "IBM1-BIO-DRV-20260921-00903",
+      "disposition": "not_replayed",
+      "reason": "Proposed removed question is absent from final semantic/automatic-dedup candidate; no further removal needed."
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-00968",
+      "canonicalModule": "IBM-1",
+      "canonicalId": "IBM1-BIO-DRV-20260921-00914",
+      "disposition": "not_replayed",
+      "reason": "Proposed removed question is absent from final semantic/automatic-dedup candidate; no further removal needed."
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-00986",
+      "canonicalModule": "IBM-1",
+      "canonicalId": "IBM1-BIO-DRV-20260921-00932",
+      "disposition": "not_replayed",
+      "reason": "Proposed removed question is absent from final semantic/automatic-dedup candidate; no further removal needed."
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-01000",
+      "canonicalModule": "IBM-1",
+      "canonicalId": "IBM1-BIO-DRV-20260921-00945",
+      "disposition": "not_replayed",
+      "reason": "Proposed removed question is absent from final semantic/automatic-dedup candidate; no further removal needed."
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-01004",
+      "canonicalModule": "IBM-1",
+      "canonicalId": "IBM1-BIO-DRV-20260921-00949",
+      "disposition": "not_replayed",
+      "reason": "Proposed removed question is absent from final semantic/automatic-dedup candidate; no further removal needed."
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-01049",
+      "canonicalModule": "IBM-1",
+      "canonicalId": "IBM1-BIO-DRV-20260921-01010",
+      "disposition": "not_replayed",
+      "reason": "Proposed removed question is absent from final semantic/automatic-dedup candidate; no further removal needed."
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-01054",
+      "canonicalModule": "IBM-1",
+      "canonicalId": "IBM1-BIO-DRV-20260921-01015",
+      "disposition": "not_replayed",
+      "reason": "Proposed removed question is absent from final semantic/automatic-dedup candidate; no further removal needed."
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-01060",
+      "canonicalModule": "IBM-1",
+      "canonicalId": "IBM1-BIO-DRV-20260921-01022",
+      "disposition": "not_replayed",
+      "reason": "Proposed removed question is absent from final semantic/automatic-dedup candidate; no further removal needed."
+    },
+    {
+      "module": "IBM-1",
+      "id": "IBM1-BIO-DRV-20260921-01903",
+      "canonicalModule": "IBM-1",
+      "canonicalId": "IBM1-BIO-DRV-20260921-01704",
+      "disposition": "not_replayed",
+      "reason": "Proposed removed question is absent from final semantic/automatic-dedup candidate; no further removal needed."
+    }
+  ],
+  "canonical_redirects": [],
+  "hash_method": "SHA256 of Python json.dumps(question,sort_keys=True,ensure_ascii=False) after recursively removing contentVersion only. All other content and provenance fields retained.",
+  "re_adjudicated_changes": [
+    {
+      "ids": [
+        "IBM1-BIO-DRV-20260921-01006",
+        "IBM1-BIO-DRV-20260921-00902",
+        "IBM1-BIO-DRV-20260921-00914",
+        "IBM1-BIO-DRV-20260921-00932",
+        "IBM1-BIO-DRV-20260921-00993",
+        "IBM1-BIO-DRV-20260921-00949",
+        "IBM1-BIO-DRV-20260921-01022",
+        "IBM1-BIO-DRV-20260921-01704"
+      ],
+      "result": "Manually compared option changes: isolated page-number suffix removal only; amino acid names, disease names, interventions, protein properties and correct answer content remain equivalent to reviewed duplicate partners."
+    },
+    {
+      "ids": [
+        "IBM1-BIO-DRV-20260921-01010",
+        "IBM1-BIO-DRV-20260921-01049"
+      ],
+      "result": "Inactive digestive protease activation scope preserved; Ca²⁺ and proteolysis/footer corrections unify options.01049 absent through automatic exact dedup; proposed additional removal omitted."
+    },
+    {
+      "ids": [
+        "IBM1-BIO-DRV-20260921-01209",
+        "IBM1-BIO-DRV-20260921-01655"
+      ],
+      "result": "Both stems scoped to hepatic pyruvate kinase; same false phosphorylation statement; duplicate equivalence preserved."
+    }
+  ],
+  "checks": {
+    "in_scope_only": true,
+    "all_replay_ids_and_targets_exist": true,
+    "all_hashes_match_current_candidate_without_contentVersion": true,
+    "unique_removed_ids": true,
+    "no_self_targets": true,
+    "no_chained_or_removed_targets": true
+  },
+  "limitations": "Medical truth was reviewed by assigned content agents; this ledger certifies manually assessed duplicate equivalence for the enumerated candidates, not independent evidence certification of every question.",
+  "initial_reviewed_proposals": 224,
+  "previous_reconciliation_absent_ids": [
+    "IAE-1-SRC-0632",
+    "IAE-1-SRC-0790",
+    "IAE-1-SRC-0848"
+  ]
+}

@@ -1,0 +1,74 @@
+
+> replicated-quiz-app@0.0.1 test
+> vitest run src/app/year1-quality.test.ts
+
+
+ RUN  v4.1.11 /Users/omarhossa/Documents/Medcine ASU/ASU-Medical-Portal
+
+ ❯ src/app/year1-quality.test.ts (6 tests | 3 failed) 31ms
+     × displays a readable, unambiguous protamine question with the negative-residue answer 3ms
+     × preserves the protein backbone sequence without footer text or stray letters 1ms
+     × provides a complete glutathione stem and grammatically clear options 0ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 3 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/app/year1-quality.test.ts > Student screenshot regressions > displays a readable, unambiguous protamine question with the negative-residue answer
+AssertionError: expected 'Protamine is a protein rich in argini…' not to match /prutein|nun covalent|санд/
+
+- Expected:
+/prutein|nun covalent|санд/
+
++ Received:
+"Protamine is a protein rich in arginine. This prutein is added t insulin preparations. This is done 5 make nun covalent bunds between insulin molecules, sothat the injection of insulin becomes slovely absorped. The nature of the nun covalent bonds is best descriped by which of the followings? санд?"
+
+ ❯ src/app/year1-quality.test.ts:31:22
+     29|  it('displays a readable, unambiguous protamine question with the nega…
+     30|   const q=all.find(q=>q.id==='IBM1-BIO-DRV-20260921-01453')!;
+     31|   expect(q.text).not.toMatch(/prutein|nun covalent|санд/);expect(q.opt…
+       |                      ^
+     32|  });
+     33|  it('preserves the protein backbone sequence without footer text or st…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/3]⎯
+
+ FAIL  src/app/year1-quality.test.ts > Student screenshot regressions > preserves the protein backbone sequence without footer text or stray letters
+AssertionError: expected '-C -N-C-C- j' to be '-C-N-C-C-' // Object.is equality
+
+Expected: "-C-N-C-C-"
+Received: "-C -N-C-C- j"
+
+ ❯ src/app/year1-quality.test.ts:35:40
+     33|  it('preserves the protein backbone sequence without footer text or st…
+     34|   const q=all.find(q=>q.id==='IBM1-BIO-DRV-20260921-02147')!;
+     35|   expect(q.options?.[q.correctIndex!]).toBe('-C-N-C-C-');expect(q.opti…
+       |                                        ^
+     36|  });
+     37|  it('provides a complete glutathione stem and grammatically clear opti…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/3]⎯
+
+ FAIL  src/app/year1-quality.test.ts > Student screenshot regressions > provides a complete glutathione stem and grammatically clear options
+AssertionError: expected 'In the following peptide chain glutam…' to match /Which statements.*glutathione/
+
+- Expected:
+/Which statements.*glutathione/
+
++ Received:
+"In the following peptide chain glutamylcysteinylglycine?"
+
+ ❯ src/app/year1-quality.test.ts:39:18
+     37|  it('provides a complete glutathione stem and grammatically clear opti…
+     38|   const q=all.find(q=>q.id==='IBM1-BIO-DRV-20260921-02286')!;
+     39|   expect(q.text).toMatch(/Which statements.*glutathione/);expect(q.opt…
+       |                  ^
+     40|  });
+     41| });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/3]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  3 failed | 3 passed (6)
+   Start at  16:21:02
+   Duration  436ms (transform 83ms, setup 65ms, import 81ms, tests 31ms, environment 172ms)
+

@@ -1,0 +1,12 @@
+{
+  "baseline": "c00c492e2d7a9762b4e0c9637f7124bcbbfe58bd",
+  "scope": "Year 1 Semester 1 quality cleanup and dedicated IBM-1 OCR follow-up; unrelated features excluded",
+  "parentQuestions": 4078,
+  "biochemistryQuestions": 1416,
+  "applicationTestFiles": 69,
+  "applicationTests": 475,
+  "pythonTests": 15,
+  "publicationAuthorization": "User explicitly requested push and deployment",
+  "typecheck": "passed: app, node, api",
+  "productionBuild": "passed"
+}

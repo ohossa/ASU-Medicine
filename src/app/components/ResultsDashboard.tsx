@@ -1,3 +1,5 @@
+import {topicScores,questionScore,type TopicScore} from '../learning/customPractice';
+import './topic-practice.css';
 import { ReportQuestionButton } from '../reports/ReportQuestion';
 import React, { useState, useEffect } from 'react';
 import { getMissedQuestions } from '../utils/missedQuestions';
@@ -24,8 +26,6 @@ import type { ChapterData, SubjectData, Question, SubjectColor, QuizAnswer, SubQ
 import { subjectStyles, formatTime, asEssayAnswer, asFillBlankAnswer, asMatchingAnswer, asCaseAnswer, isAnswerRecord } from '../types';
 import { useLanguage } from '../hooks/useLanguage';
 import { useTheme } from '../hooks/useTheme';
-import { celebrate } from '../lib/celebrate';
-import { pulse } from '../lib/pulseEngine';
 import { FormattedAnswer } from './FormattedAnswer';
 import { useProgress } from '../hooks/useProgress';
 import { MatchingQuestion } from './MatchingQuestion';
@@ -35,6 +35,9 @@ function legacyText(question: Question, key: string): string | undefined {
 }
 
 interface Props {
+  topicResults?:TopicScore[];
+  originalScore?:{correct:number;total:number;pct:number};
+  historyNotice?:string;
   chapter: ChapterData;
   subject: SubjectData | null;
   questions: Question[];
@@ -236,6 +239,8 @@ export function ResultsDashboard({
   onBackToSubjects,
   userButton,
   breadcrumbPath,
+  topicResults: savedTopicResults,
+  originalScore,historyNotice,
 }: Props) {
   const { language } = useLanguage();
   const isRTL = language === 'ar';
@@ -249,10 +254,11 @@ export function ResultsDashboard({
 
   /* Score math */
   const correctness = questions.map((q, i) => checkAnswerCorrect(q, answers[i]));
-  const correctCount = correctness.filter(Boolean).length;
-  const totalCount = questions.length;
-  const percentage = totalCount > 0 ? Math.round((correctCount / totalCount) * 100) : 0;
-  const wrongCount = totalCount - correctCount;
+  const scoreParts=questions.map((q,i)=>questionScore(q,answers[i]));
+  const breakdown=savedTopicResults??topicScores(questions,answers);
+  const correctCount = originalScore?.correct??scoreParts.reduce((n,s)=>n+s.correct,0);
+  const totalCount = originalScore?.total??scoreParts.reduce((n,s)=>n+s.total,0);
+  const percentage = originalScore?.pct??(totalCount > 0 ? Math.round((correctCount / totalCount) * 100) : 0);
   const missedQuestions = getMissedQuestions(questions, answers);
   const flaggedCount = flaggedQuestions.size;
   const avgSeconds = totalCount > 0 ? Math.round(elapsedSeconds / totalCount) : 0;
@@ -268,13 +274,10 @@ export function ResultsDashboard({
           ? 'text-amber-600 dark:text-amber-400'
           : 'text-rose-600 dark:text-rose-400';
 
-  /* Confetti celebration */
+  /* Record achievements without a results-page animation. */
   useEffect(() => {
     if (totalCount === 0) return;
-    const moduleCode = subject?.id ?? 'default';
-    const isPerfect = correctCount === totalCount;
-    celebrate({ perfect: isPerfect, moduleCode });
-    pulse.setMood('celebrate', 3000);
+
     if (correctCount === totalCount) {
       progressStore.unlock('perfect_score');
     } else if (percentage >= 75) {
@@ -573,6 +576,7 @@ export function ResultsDashboard({
         <div className="absolute bottom-0 end-1/4 h-96 w-96 rounded-full bg-sky-500/[0.04] dark:bg-sky-500/[0.07] blur-[130px]" />
       </div>
 
+      {historyNotice&&<p role="status" className="mx-auto max-w-5xl px-6 py-4 text-sm text-gray-600 dark:text-gray-300">{historyNotice}</p>}
       {/* ── Section A: Header Banner ───────────────────────────────────────── */}
       <header className="sticky top-0 z-30 border-b border-border bg-background/85 backdrop-blur-xl transition-colors duration-300">
         <div className="mx-auto flex max-w-5xl items-center justify-between gap-3 px-4 py-3.5 sm:px-6">
@@ -673,12 +677,18 @@ export function ResultsDashboard({
           </button>
         </div>
 
+        {breakdown.length>0&&<section className="mb-8" aria-label={isRTL?'نتائج الموضوعات':'Results by topic'}>
+          <h2 className="mb-3 text-lg font-semibold">{isRTL?'نتائج الموضوعات':'Results by topic'}</h2>
+          <p className="mb-4 text-sm text-muted-foreground">{isRTL?'كل نتيجة تخص الأسئلة المحددة في هذا الموضوع.':'Each score covers the questions you selected in that topic. Essay scores are self-reviewed.'}</p>
+          <div className="topic-score-grid">{breakdown.map(topic=><article className="topic-score-card" key={topic.key}><h3>{topic.title}</h3><p>{topic.correct} / {topic.total} <small>· {topic.pct}%</small></p></article>)}</div>
+        </section>}
+
         {/* ── Section D: Questions Filter Toggle Bar ───────────────────────── */}
         <div className="mb-6 flex flex-wrap gap-2">
           {(
             [
-              { key: 'all', label: 'All Questions', count: totalCount },
-              { key: 'wrong', label: 'Incorrect', count: wrongCount },
+              { key: 'all', label: 'All Questions', count: questions.length },
+              { key: 'wrong', label: 'Incorrect', count: correctness.filter(value=>!value).length },
               { key: 'flagged', label: 'Flagged', count: flaggedCount },
             ] as const
           ).map(({ key, label, count }) => {
@@ -752,7 +762,7 @@ export function ResultsDashboard({
                   <span className="text-sm font-semibold text-gray-900 dark:text-white/85">Question {i + 1}</span>
                   <ReportQuestionButton question={q} chapterId={chapter.id}/>
                   <span className={`rounded-full border px-2.5 py-0.5 text-[11px] font-medium ${style.borderOp15} ${style.bgOp10} ${style.text}`}>
-                    {subject?.name ?? 'General'}
+                    {q.practiceTopic?.title ?? subject?.name ?? 'General'}
                   </span>
                   {isFlagged && (
                     <span className="flex items-center gap-1 rounded-full border border-amber-500/40 bg-amber-500/10 px-2.5 py-0.5 text-[11px] font-medium text-amber-600 dark:text-amber-400">

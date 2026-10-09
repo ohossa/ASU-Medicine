@@ -107,6 +107,8 @@ export function normalizeQuizAnswers(questions: Question[], values: unknown): Re
 }
 
 export interface Question {
+  /** Session-only grouping; canonical IDs and grading keys remain unchanged. */
+  practiceTopic?: {key:string;title:string;subjectName:string};
   contentVersion?: string;
   chapterTitle?: string;
   id: string | number;
@@ -143,6 +145,7 @@ export interface Question {
 }
 
 export interface SubjectData {
+  sessionKey?: string;
   id: SubjectColor;
   name: string;
   iconName: string;

@@ -1,0 +1,13 @@
+
+> replicated-quiz-app@0.0.1 test
+> vitest run src/app/components/QuizQuestionFormatting.test.tsx src/app/biochemistry-quality.test.ts
+
+
+ RUN  v4.1.11 /Users/omarhossa/Documents/Medcine ASU/ASU-Medical-Portal
+
+
+ Test Files  2 passed (2)
+      Tests  7 passed (7)
+   Start at  17:23:36
+   Duration  2.15s (transform 17.51s, setup 426ms, import 1.55s, tests 956ms, environment 738ms)
+

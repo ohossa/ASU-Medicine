@@ -5,9 +5,9 @@ import { useEffect, useState, useRef } from 'react';
 import { GraduationCap, ChevronRight } from 'lucide-react';
 import { useLanguage } from '../hooks/useLanguage';
 
-interface Props { onSelect: (year: number) => Promise<void>; loadError?: string | null; onRetry?: () => void; }
+interface Props { onSelect: (year: number) => Promise<void>; loadError?: string | null; onRetry?: () => void; localPreview?: boolean; }
 
-export function YearSelectionModal({ onSelect, loadError, onRetry }: Props) {
+export function YearSelectionModal({ onSelect, loadError, onRetry, localPreview=false }: Props) {
   const { t, language } = useLanguage();
 
   const dialogRef = useRef<HTMLDivElement>(null);
@@ -23,6 +23,8 @@ export function YearSelectionModal({ onSelect, loadError, onRetry }: Props) {
 
   // Trap keyboard focus inside modal and focus first element on mount
   useEffect(() => {
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
     const buttons = dialogRef.current?.querySelectorAll<HTMLButtonElement>('button:not(:disabled)') ?? [];
     if (buttons.length > 0) {
       buttons[0].focus();
@@ -51,7 +53,7 @@ export function YearSelectionModal({ onSelect, loadError, onRetry }: Props) {
     };
 
     window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
+    return () => { document.body.style.overflow = previousOverflow; window.removeEventListener('keydown', handleKeyDown); };
   }, []);
 
   return (
@@ -64,9 +66,10 @@ export function YearSelectionModal({ onSelect, loadError, onRetry }: Props) {
       aria-label={t('selectYear')}
     >
       <div
-        className="w-full max-w-md max-h-[90dvh] overflow-y-auto bg-card border border-border rounded-[36px] p-8
+        className="w-full max-w-md max-h-[90dvh] overflow-hidden bg-card border border-border rounded-[28px] p-2
                    shadow-2xl animate-slide-up relative"
       >
+        <div className="max-h-[calc(90dvh-1rem)] overflow-y-auto overscroll-contain rounded-[22px] p-4 sm:p-6">
         {/* Decorative corner */}
         <div className="absolute top-0 right-0 w-28 h-28 bg-gradient-to-bl
                         from-physiology/8 to-transparent rounded-bl-[90px] pointer-events-none" />
@@ -81,7 +84,7 @@ export function YearSelectionModal({ onSelect, loadError, onRetry }: Props) {
               {t('welcomePortal')}
             </h2>
             <p className="text-sm text-muted-foreground font-medium mt-2 leading-relaxed max-w-xs mx-auto">
-              {language === 'en' ? 'Confirm your academic year. We will remember it for your home page and marks calculator across devices.' : 'أكد سنتك الدراسية لحفظها لحسابك وفتح الصفحة الرئيسية وحاسبة الدرجات على سنتك تلقائياً.'}
+              {localPreview ? (language === 'en' ? 'Local preview: your year is saved for this account in this browser. Cloud sync remains active on the published website.' : 'معاينة محلية: تُحفظ سنتك لهذا الحساب في هذا المتصفح. المزامنة السحابية متاحة على الموقع المنشور.') : language === 'en' ? 'Confirm your academic year. We will remember it for your home page and marks calculator across devices.' : 'أكد سنتك الدراسية لحفظها لحسابك وفتح الصفحة الرئيسية وحاسبة الدرجات على سنتك تلقائياً.'}
             </p>
           </div>
         </div>
@@ -120,6 +123,7 @@ export function YearSelectionModal({ onSelect, loadError, onRetry }: Props) {
               />
             </button>
           ))}
+        </div>
         </div>
       </div>
     </div>

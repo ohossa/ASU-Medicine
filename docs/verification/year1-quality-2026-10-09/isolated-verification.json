@@ -1,0 +1,20 @@
+{
+  "path": "/var/folders/zd/84rk5l2n2s78nw84j5k8t7rm0000gn/T/year1-quality-verify-01ibejxc",
+  "baseCommit": "c00c492e2d7a9762b4e0c9637f7124bcbbfe58bd",
+  "files": [
+    "scripts/year1_quality.py",
+    "scripts/test_year1_quality.py",
+    "data-format-v2/scripts/import-ready.ts",
+    "data-format-v2/scripts/validate-banks.ts",
+    "data-format-v2/scripts/question-quality.ts",
+    "src/app/utils/questionTable.ts",
+    "src/app/utils/questionTable.test.ts",
+    "src/app/components/QuizInterface.tsx",
+    "src/app/components/QuizQuestionFormatting.test.tsx",
+    "src/app/year1-quality.test.ts",
+    "src/app/year1-quality-release.test.ts",
+    "src/app/year1-release.test.ts",
+    "src/app/biochemistry-bank.integration.test.ts"
+  ],
+  "reason": "Verify the requested release independently of concurrent unfinished workspace features."
+}

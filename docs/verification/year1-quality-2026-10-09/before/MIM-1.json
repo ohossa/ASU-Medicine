@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 1,
+  "comingSoon": false,
+  "meta": {
+    "moduleCode": "MIM-1",
+    "moduleName": "Immunology Module",
+    "year": 1,
+    "semester": 1,
+    "creditPoints": 3,
+    "totalMarks": 60,
+    "keywords": [
+      "immunology",
+      "mim"
+    ]
+  },
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Innate Immunity",
+      "subtitle": "Innate Immunity",
+      "emoji": "🛡️",
+      "page": 1,
+      "lectureRange": "Lectures 1-6",
+      "subjects": [
+        {
+          "id": "microbiology",
+          "name": "Microbiology",
+          "iconName": "Biohazard",
+          "lectures": "Lecture 1, Lecture 13, Lecture 14, Lecture 2, Lecture 3, Lecture 4",
+          "lectureCount": 6,
+          "lectureNames": [
+            "Lecture 1",
+            "Lecture 13",
+            "Lecture 14",
+            "Lecture 2",
+            "Lecture 3",
+            "Lecture 4"
+          ],
+          "questions": []
+        }
+      ],
+      "keywords": []
+    },
+    {
+      "id": 2,
+      "title": "Adaptive Immunity",
+      "subtitle": "Adaptive Immunity",
+      "emoji": "🦠",
+      "page": 2,
+      "lectureRange": "Lectures 1-4",
+      "subjects": [
+        {
+          "id": "microbiology",
+          "name": "Microbiology",
+          "iconName": "Biohazard",
+          "lectures": "Lecture 10&11, Lecture 5, Lecture 6, Lecture 7",
+          "lectureCount": 4,
+          "lectureNames": [
+            "Lecture 10&11",
+            "Lecture 5",
+            "Lecture 6",
+            "Lecture 7"
+          ],
+          "questions": []
+        }
+      ],
+      "keywords": [
+        "10&11"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Clinical Immunology",
+      "subtitle": "Clinical Immunology",
+      "emoji": "🧪",
+      "page": 3,
+      "lectureRange": "Lectures 1-8",
+      "subjects": [
+        {
+          "id": "microbiology",
+          "name": "Microbiology",
+          "iconName": "Biohazard",
+          "lectures": "Lecture 15, Lecture 16, Lecture 17, Lecture 18, Lecture 19, Lecture 20, Lecture 21 & 22, Lecture 23 & 24",
+          "lectureCount": 8,
+          "lectureNames": [
+            "Lecture 15",
+            "Lecture 16",
+            "Lecture 17",
+            "Lecture 18",
+            "Lecture 19",
+            "Lecture 20",
+            "Lecture 21 & 22",
+            "Lecture 23 & 24"
+          ],
+          "questions": []
+        }
+      ],
+      "keywords": []
+    }
+  ]
+}

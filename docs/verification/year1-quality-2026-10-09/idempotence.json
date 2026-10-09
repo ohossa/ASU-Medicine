@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "allYear1CanonicalBytesUnchangedOnSecondApply": true,
+  "sha256": {
+    "src/imports/year-1/semester-1/MBMG-1.json": "04fe22a56c9e36e6c40326c55052c87452f21d41bfa1c44a8d1bef6ac04ec15e",
+    "src/imports/year-1/semester-1/IHC-1.json": "716d67151408b9cd08639f7455a1857c27758c9587a1162873c2fe4cf7c93deb",
+    "src/imports/year-1/semester-1/IPHY-1.json": "85912a652c432c991a4ab7640b2ddabbe156f7e913d1cf2251d51fb1aea37f7a",
+    "src/imports/year-1/semester-1/IBM-1.json": "6ef3ca010d8062af14f1f41a8aae387162d4f99eb495106010e8a558b8613edb",
+    "src/imports/year-1/semester-1/IAE-1.json": "6f0285b76a2a7ab59aa2adcf96b400d8b9142f29962229b91afabc9556202f3f",
+    "src/imports/year-1/semester-1/P1-1.json": "d1effbe47b55c2e2fbb1fec77fcc35116afdd39a3cd21914fa0904a1cae027e9",
+    "src/imports/year-1/semester-1/MIM-1.json": "fe474ad8880a60d7240fb2c6fd2d91b7a4c7550ee0b3a9b22c41ee831b5e15a1",
+    "src/imports/year-1/semester-2/IPHA-1.json": "a7a9817ba43e9307e4fe61d23db4f805be3a1194b8531a5624710ac6893f408c",
+    "src/imports/year-1/semester-2/MLS-1.json": "fc856593e389e62073d2a375fd43769b3a61a2b94abd2863edd7ba56f77880e5",
+    "src/imports/year-1/semester-2/BLS-HE-1.json": "02c9020d982942dfa87ace350683c367105a45686eb5045153858c9c32ae209b",
+    "src/imports/year-1/semester-2/P2-1.json": "46cecfd787aa671a83792da0fc6e7e2cdfd1a2e56a2f6cd60296051831136147",
+    "src/imports/year-1/semester-2/IPAT-1.json": "b209aeee100e1f4c41c7122ab632013f7a7c971e3508208083b782b60735c20b",
+    "src/imports/year-1/semester-2/MINF-1.json": "2635343cea201e0d19164fcfd197ad33a8cc018771c1ebedb7160fa7ad612ad0"
+  }
+}

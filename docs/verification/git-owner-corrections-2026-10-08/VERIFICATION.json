@@ -1,0 +1,32 @@
+{
+  "parent_questions": 6178,
+  "past_exam_questions": 670,
+  "types": {
+    "mcq": 4757,
+    "case": 87,
+    "essay": 904,
+    "matching": 8,
+    "truefalse": 325,
+    "fillblank": 97
+  },
+  "removed_ids": [
+    "MGL3-CH1-ANAT-0396",
+    "MGL3-CH2-PHYS-0132"
+  ],
+  "restored_ids": [
+    "MGL3-CH3-HIST-0583"
+  ],
+  "changed_existing_ids": [
+    "MGL3-CH2-PHYS-0299",
+    "MGL3-CH5-PATH-0095"
+  ],
+  "other_questions_unchanged": true,
+  "retained_order_unchanged": true,
+  "tests_passed": 308,
+  "test_files_passed": 45,
+  "production_build_passed": true,
+  "strict_typecheck_baseline_diagnostics": 120,
+  "strict_typecheck_current_diagnostics": 120,
+  "new_typecheck_diagnostics": [],
+  "website_bank_sha256": "e0e773df78ba3c191b5d1a9cf65aa5c75e00ba5ab6210669ec55beb29ce9ca1c"
+}

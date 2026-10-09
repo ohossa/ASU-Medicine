@@ -1,3 +1,4 @@
+import bankManifest from './src/app/generated/bankManifest.json';
 import { localApi } from './server/local-api';
 import { VitePWA } from 'vite-plugin-pwa';
 import { defineConfig, type UserConfig, type Plugin } from 'vite'
@@ -35,7 +36,9 @@ const config: UserConfig & { test: InlineConfig } = {
       registerType: 'autoUpdate',
       workbox: {
         globPatterns: ['**/*.{js,css,html,png,svg,ico,woff2,mp3}'],
-        maximumFileSizeToCacheInBytes: 5 * 1024 * 1024, // 5MB to handle large quiz bank chunks
+        maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
+        globIgnores: Object.keys(bankManifest).map(code=>`**/${code}-*.js`),
+        runtimeCaching:[{urlPattern:new RegExp('/assets/(?:'+Object.keys(bankManifest).join('|')+')-[^/]+\\.js$'),handler:'CacheFirst',options:{cacheName:'asu-visited-banks-v1',cacheableResponse:{statuses:[200]},expiration:{maxEntries:60,maxAgeSeconds:90*24*60*60}}}],
       },
     }),
     ...(process.env.ANALYZE ? [visualizer({ open: true, gzipSize: true, brotliSize: true, filename: 'stats.html' })] : []),
@@ -82,6 +85,8 @@ const config: UserConfig & { test: InlineConfig } = {
   },
   test: {
     globals: true,
+    // Bound concurrent full-bank fixtures to avoid CPU/JSON-import contention.
+    maxWorkers: 4,
     environment: 'happy-dom',
     setupFiles: ['./src/test/setup.ts'],
     include: ['src/**/*.{test,spec}.{ts,tsx}'],

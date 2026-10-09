@@ -1,5 +1,5 @@
-import { motion } from "motion/react";
-import { BookOpen, Search, Heart } from "lucide-react";
+import { motion, useReducedMotion } from "motion/react";
+import { BookOpen, Search, GraduationCap } from "lucide-react";
 import { SignIn } from "@clerk/clerk-react";
 import { dark } from "@clerk/themes";
 import { useTheme } from "../hooks/useTheme";
@@ -8,23 +8,23 @@ import { useTheme } from "../hooks/useTheme";
 
 const EASE: [number, number, number, number] = [0.16, 1, 0.3, 1]; // Apple-like elastic deceleration
 
-const fadeUp = (delay = 0) => ({
-  initial: { opacity: 0, y: 16 },
+const fadeUp = (delay = 0, reduced = false) => ({
+  initial: { opacity: reduced ? 1 : 0, y: reduced ? 0 : 16 },
   animate: { opacity: 1, y: 0 },
-  transition: { duration: 0.8, ease: EASE, delay },
+  transition: { duration: reduced ? 0 : 0.8, ease: EASE, delay: reduced ? 0 : delay },
 });
 
 /* ------------------------------ Feature data ------------------------------ */
 
 const FEATURES = [
   {
-    icon: Heart,
-    title: "Clinical Case Solver",
-    desc: "Solve randomized clinical cases with vital monitors, history sheets, and diagnostic tests.",
+    icon: GraduationCap,
+    title: "Practice & Review",
+    desc: "Practice MCQs and essays by module, review your answers, and retry missed questions.",
   },
   {
     icon: BookOpen,
-    title: "Syllabus & Study Tracker",
+    title: "Your Progress",
     desc: "Track syllabus progress, lecture completion checklists, and store notes for every chapter.",
   },
   {
@@ -37,6 +37,7 @@ const FEATURES = [
 /* --------------------------------- Page ----------------------------------- */
 
 export function LoginScreen() {
+  const reduced = Boolean(useReducedMotion());
   const { isDark } = useTheme();
 
   const clerkAppearance = {
@@ -63,16 +64,16 @@ export function LoginScreen() {
       socialButtonsBlockButtonBadge:
         "!absolute !top-0 !right-4 !-translate-y-1/2 " +
         "!bg-teal-500/15 !border !border-teal-500/30 !text-teal-400 " +
-        "!text-[8.5px] !font-extrabold !uppercase !tracking-widest !px-2.5 !py-0.5 !rounded-full " +
+        "!text-[11px] !font-extrabold !uppercase !tracking-widest !px-2.5 !py-0.5 !rounded-full " +
         "!leading-none !shadow-md",
       dividerLine: isDark ? "bg-white/[0.08]" : "bg-slate-200",
       dividerText: isDark ? "text-[#8e8e93]" : "text-slate-400",
       formFieldLabel: isDark ? "text-slate-300" : "text-slate-700",
       formFieldInput:
         `border ${isDark ? "bg-white/[0.04] border-white/[0.08] text-white focus:border-[#2dd4bf]/50 focus:ring-[#2dd4bf]/25" : "bg-white border-slate-200 text-slate-900 focus:border-[#10B981]/50 focus:ring-[#10B981]/25"} ` +
-        "focus:ring-1 transition-colors duration-200",
+        "min-h-11 text-base focus:ring-1 transition-colors duration-200",
       formButtonPrimary:
-        `${isDark ? "bg-white text-[#0b0b0c] hover:bg-white" : "bg-slate-900 text-white hover:bg-slate-800"} font-semibold shadow-none ` +
+        `${isDark ? "bg-white text-[#0b0b0c] hover:bg-white" : "bg-slate-900 text-white hover:bg-slate-800"} min-h-11 font-semibold shadow-none ` +
         "transition-opacity duration-200 hover:opacity-90",
       footerActionText: isDark ? "text-[#8e8e93]" : "text-slate-500",
       footerActionLink: `text-${isDark ? "[#2dd4bf]" : "emerald-600"} hover:text-${isDark ? "[#2dd4bf]/80" : "emerald-700"}`,
@@ -108,7 +109,7 @@ export function LoginScreen() {
           <div>
             {/* Headline */}
             <motion.h1
-              {...fadeUp(0.1)}
+              {...fadeUp(0.1, reduced)}
               className="text-4xl font-semibold leading-[1.15] tracking-tight
                          text-slate-900 dark:text-white sm:text-5xl"
             >
@@ -117,7 +118,7 @@ export function LoginScreen() {
 
             {/* Intro */}
             <motion.p
-              {...fadeUp(0.2)}
+              {...fadeUp(0.2, reduced)}
               className="mt-4 text-[14.5px] leading-relaxed text-slate-600 dark:text-slate-400"
             >
               Practice every question format, track your syllabus, and study
@@ -132,7 +133,7 @@ export function LoginScreen() {
               return (
                 <motion.div
                   key={f.title}
-                  {...fadeUp(0.3 + i * 0.1)}
+                  {...fadeUp(0.3 + i * 0.1, reduced)}
                   className="group flex items-start gap-4"
                 >
                   <div

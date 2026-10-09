@@ -1,0 +1,226 @@
+[
+  {
+    "module": "IBM-1",
+    "ids": [
+      "IBM1-BIO-DRV-20260921-00927",
+      "IBM1-BIO-DRV-20260921-00981"
+    ],
+    "candidate": "semantic_repeat",
+    "answers": [
+      "20",
+      "20"
+    ],
+    "recommendation": "Review consolidation preserving all source occurrences; do not merge automatically if option content or required-point rubrics differ.",
+    "canonicalBankEdited": false
+  },
+  {
+    "module": "IBM-1",
+    "ids": [
+      "IBM1-BIO-DRV-20260921-01724",
+      "IBM1-BIO-DRV-20260921-01923"
+    ],
+    "candidate": "semantic_repeat",
+    "answers": [
+      "Net -ve charge",
+      "Net-ve charge"
+    ],
+    "recommendation": "Review consolidation preserving all source occurrences; do not merge automatically if option content or required-point rubrics differ.",
+    "canonicalBankEdited": false
+  },
+  {
+    "module": "IBM-1",
+    "ids": [
+      "IBM1-BIO-DRV-20260921-01867",
+      "IBM1-BIO-DRV-20260921-02125"
+    ],
+    "candidate": "semantic_repeat",
+    "answers": [
+      "Alanine",
+      "Alanine"
+    ],
+    "recommendation": "Review consolidation preserving all source occurrences; do not merge automatically if option content or required-point rubrics differ.",
+    "canonicalBankEdited": false
+  },
+  {
+    "module": "IBM-1",
+    "ids": [
+      "IBM1-BIO-COMP-P2-Q09",
+      "IBM1-BIO-COMP-2025-Q15"
+    ],
+    "candidate": "semantic_repeat",
+    "answers": [
+      "Phenylalanine, tyrosine and tryptophan.",
+      "Phenylalanine, tyrosine and tryptophan."
+    ],
+    "recommendation": "Review consolidation preserving all source occurrences; do not merge automatically if option content or required-point rubrics differ.",
+    "canonicalBankEdited": false
+  },
+  {
+    "module": "IBM-1",
+    "ids": [
+      "IBM1-BIO-DRV-20260921-00933",
+      "IBM1-BIO-DRV-20260921-00987"
+    ],
+    "candidate": "semantic_repeat",
+    "answers": [
+      "Glutamine",
+      "Glutamine"
+    ],
+    "recommendation": "Review consolidation preserving all source occurrences; do not merge automatically if option content or required-point rubrics differ.",
+    "canonicalBankEdited": false
+  },
+  {
+    "module": "IBM-1",
+    "ids": [
+      "IBM1-BIO-DRV-20260921-00942",
+      "IBM1-BIO-DRV-20260921-00997"
+    ],
+    "candidate": "semantic_repeat",
+    "answers": [
+      "Glycine, alanine, leucine",
+      "Glycine, alanine, leucine"
+    ],
+    "recommendation": "Review consolidation preserving all source occurrences; do not merge automatically if option content or required-point rubrics differ.",
+    "canonicalBankEdited": false
+  },
+  {
+    "module": "IBM-1",
+    "ids": [
+      "IBM1-BIO-DRV-20260921-02110",
+      "IBM1-BIO-DRV-20260921-02163"
+    ],
+    "candidate": "semantic_repeat",
+    "answers": [
+      "Histidine",
+      "Histidine"
+    ],
+    "recommendation": "Review consolidation preserving all source occurrences; do not merge automatically if option content or required-point rubrics differ.",
+    "canonicalBankEdited": false
+  },
+  {
+    "module": "IBM-1",
+    "ids": [
+      "IBM1-BIO-BGFORM-PRO-Q13",
+      "IBM1-BIO-DRV-20260921-02212"
+    ],
+    "candidate": "semantic_repeat",
+    "answers": [
+      "Proline.",
+      "Proline"
+    ],
+    "recommendation": "Review consolidation preserving all source occurrences; do not merge automatically if option content or required-point rubrics differ.",
+    "canonicalBankEdited": false
+  },
+  {
+    "module": "IBM-1",
+    "ids": [
+      "IBM1-BIO-DRV-20260921-02218",
+      "IBM1-BIO-DRV-20260921-02268"
+    ],
+    "candidate": "semantic_repeat",
+    "answers": [
+      "Tryptophan",
+      "Tryptophan"
+    ],
+    "recommendation": "Review consolidation preserving all source occurrences; do not merge automatically if option content or required-point rubrics differ.",
+    "canonicalBankEdited": false
+  },
+  {
+    "module": "IBM-1",
+    "ids": [
+      "IBM1-BIO-DRV-20260921-02103",
+      "IBM1-BIO-DRV-20260921-02111"
+    ],
+    "candidate": "semantic_repeat",
+    "answers": [
+      "Hydrophobic interaction",
+      "Hydrophobic interaction"
+    ],
+    "recommendation": "Review consolidation preserving all source occurrences; do not merge automatically if option content or required-point rubrics differ.",
+    "canonicalBankEdited": false
+  },
+  {
+    "module": "IBM-1",
+    "ids": [
+      "IBM1-BIO-DRV-20260921-00220",
+      "IBM1-BIO-DRV-20260921-01835"
+    ],
+    "candidate": "semantic_repeat",
+    "answers": [
+      "Hydrophobic interactions; Hydrogen bonds; Ionic interactions.",
+      "Hydrophobic interactions; Hydrogen bonds; Ionic interactions between charged side chains"
+    ],
+    "recommendation": "Review consolidation preserving all source occurrences; do not merge automatically if option content or required-point rubrics differ.",
+    "canonicalBankEdited": false
+  },
+  {
+    "module": "IBM-1",
+    "ids": [
+      "IBM1-BIO-DRV-20260921-00906",
+      "IBM1-BIO-DRV-20260921-02238"
+    ],
+    "candidate": "semantic_repeat",
+    "answers": [
+      "Quaternary structure",
+      "Quaternary structure"
+    ],
+    "recommendation": "Review consolidation preserving all source occurrences; do not merge automatically if option content or required-point rubrics differ.",
+    "canonicalBankEdited": false
+  },
+  {
+    "module": "IBM-1",
+    "ids": [
+      "IBM1-BIO-DRV-20260921-01862",
+      "IBM1-BIO-DRV-20260921-02119"
+    ],
+    "candidate": "semantic_repeat",
+    "answers": [
+      "Glycine",
+      "Glycine"
+    ],
+    "recommendation": "Review consolidation preserving all source occurrences; do not merge automatically if option content or required-point rubrics differ.",
+    "canonicalBankEdited": false
+  },
+  {
+    "module": "IBM-1",
+    "ids": [
+      "IBM1-BIO-DRV-20260921-00914",
+      "IBM1-BIO-DRV-20260921-02245"
+    ],
+    "candidate": "semantic_repeat",
+    "answers": [
+      "Alzheimer",
+      "Alzheimer disease"
+    ],
+    "recommendation": "Review consolidation preserving all source occurrences; do not merge automatically if option content or required-point rubrics differ.",
+    "canonicalBankEdited": false
+  },
+  {
+    "module": "IBM-1",
+    "ids": [
+      "IBM1-BIO-DRV-20260921-00582",
+      "IBM1-BIO-DRV-20260921-00594"
+    ],
+    "candidate": "semantic_repeat",
+    "answers": [
+      "Homogentisate dioxygenase deficiency; Homogentisate accumulation causes urine to darken on standing; Oxidized pigment deposits cause ochronosis and later arthritis.",
+      "Homogentisate dioxygenase deficiency; Darkening urine after air exposure; Ochronosis and degenerative arthritis."
+    ],
+    "recommendation": "Review consolidation preserving all source occurrences; do not merge automatically if option content or required-point rubrics differ.",
+    "canonicalBankEdited": false
+  },
+  {
+    "module": "IBM-1",
+    "ids": [
+      "IBM1-BIO-DRV-20260921-00581",
+      "IBM1-BIO-DRV-20260921-00595"
+    ],
+    "candidate": "semantic_repeat",
+    "answers": [
+      "One form of albinism results from deficient tyrosinase activity; Reduced melanin causes hypopigmentation of skin, hair and iris; Ocular involvement causes photosensitivity; Reduced skin pigmentation raises skin-cancer risk.",
+      "Tyrosinase deficiency causes one form of albinism; Skin, hair and iris pigmentation is reduced; Photosensitivity and increased skin-cancer risk occur."
+    ],
+    "recommendation": "Review consolidation preserving all source occurrences; do not merge automatically if option content or required-point rubrics differ.",
+    "canonicalBankEdited": false
+  }
+]

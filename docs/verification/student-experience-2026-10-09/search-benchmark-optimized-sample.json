@@ -1,0 +1,36 @@
+{
+  "entries": 25948,
+  "indexMs": 450,
+  "measurements": [
+    {
+      "query": "lipase",
+      "matches": 134,
+      "ms": 25.5
+    },
+    {
+      "query": "stomach",
+      "matches": 519,
+      "ms": 22.2
+    },
+    {
+      "query": "esophagus",
+      "matches": 314,
+      "ms": 22.5
+    },
+    {
+      "query": "calcium",
+      "matches": 440,
+      "ms": 19.4
+    },
+    {
+      "query": "انزيم",
+      "matches": 0,
+      "ms": 8.5
+    },
+    {
+      "query": "",
+      "matches": 25948,
+      "ms": 14.2
+    }
+  ]
+}

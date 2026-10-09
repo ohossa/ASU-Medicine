@@ -74,16 +74,16 @@ export function AcademicYearProfilePage({
   };
 
   return (
-    <div className="p-6 text-gray-900 font-manrope">
+    <div className="profile-settings p-6 text-foreground font-manrope">
       <div className="flex items-center gap-3 mb-6">
         <div className="w-10 h-10 rounded-xl bg-physiology/10 flex items-center justify-center text-physiology shrink-0">
           <GraduationCap size={22} />
         </div>
         <div className="text-left rtl:text-right">
-          <h3 className="font-archivo text-lg font-bold tracking-tight text-gray-900">
+          <h3 className="font-archivo text-lg font-bold tracking-tight text-foreground">
             {language === 'en' ? "Change Academic Year" : "تغيير السنة الدراسية"}
           </h3>
-          <p className="text-xs text-gray-505 font-medium mt-0.5">
+          <p className="text-sm text-gray-505 font-medium mt-0.5">
             {language === 'en' ? `Current: ${getYearName(studentYear || 1)}` : `الحالي: ${getYearName(studentYear || 1)}`}
           </p>
         </div>
@@ -101,14 +101,14 @@ export function AcademicYearProfilePage({
               className={`w-full p-4 rounded-xl flex items-center justify-between border transition-all duration-200 text-left rtl:text-right ${
                 isCurrent
                   ? "bg-physiology/10 border-physiology/30 text-physiology-dark"
-                  : "bg-gray-50 border-gray-100 hover:bg-physiology/5 text-gray-700"
+                  : "bg-secondary border-border hover:bg-physiology/5 text-foreground"
               }`}
             >
               <div className="text-left rtl:text-right">
                 <span className="block text-sm font-bold">
                   {language === 'en' ? `Year ${yr}` : `السنة ${yr}`}
                 </span>
-                <span className="block text-[11px] text-gray-400 mt-0.5">
+                <span className="block text-[13px] text-muted-foreground mt-0.5">
                   {language === 'en'
                     ? `Switch to Year ${yr} syllabus and courses`
                     : `الانتقال إلى منهج ومقررات السنة ${yr}`}

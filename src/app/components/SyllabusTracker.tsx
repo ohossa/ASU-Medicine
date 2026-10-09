@@ -1,3 +1,4 @@
+import {useUser} from '@clerk/clerk-react';
 import { useState, useEffect, useLayoutEffect, useRef, useCallback } from 'react';
 import { Check, Edit3, X, Calendar, ChevronDown, ChevronUp, BookOpen, Layers, Target, GraduationCap } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
@@ -106,7 +107,8 @@ const FALLBACK: Record<string, { en: string; ar: string }> = {
 export function SyllabusTracker({ moduleCode, moduleName, chapters, onClose }: Props) {
   const { t, language } = useLanguage();
   const isRTL = language === 'ar';
-  const storageKey = `asu_study_tracker_${moduleCode}`;
+  const {user}=useUser();
+  const storageKey = `asu_study_tracker:${user?.id??'guest'}:${moduleCode}`;
   const progressStore = useProgress();
 
   /** Translation with graceful local fallback if a key is missing. */
@@ -232,9 +234,7 @@ export function SyllabusTracker({ moduleCode, moduleName, chapters, onClose }: P
         }
       }
 
-      if (nextVal) {
-        progressStore.addXp(15);
-      }
+
 
       persist({
         ...data,
@@ -255,9 +255,7 @@ export function SyllabusTracker({ moduleCode, moduleName, chapters, onClose }: P
       const lecture = current.lectures?.[key] ?? { studied: false, revised: false };
       const nextVal = !lecture[field];
       
-      if (nextVal) {
-        progressStore.addXp(5);
-      }
+
 
       persist({
         ...data,
@@ -279,9 +277,7 @@ export function SyllabusTracker({ moduleCode, moduleName, chapters, onClose }: P
       const allOn = keys.every((k) => lectures[k]?.[field]);
       const nextVal = !allOn;
 
-      if (nextVal) {
-        progressStore.addXp(10);
-      }
+
 
       for (const k of keys) {
         const existing = lectures[k] ?? { studied: false, revised: false };

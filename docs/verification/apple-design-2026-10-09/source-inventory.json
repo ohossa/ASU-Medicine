@@ -1,0 +1,425 @@
+[
+  {
+    "file": "src/app/components/AIChatPanel.tsx",
+    "lines": 350,
+    "small_text_utilities": 4,
+    "blur_utilities": 1,
+    "dialog": false,
+    "labels": 3,
+    "scroll_containers": 1
+  },
+  {
+    "file": "src/app/components/AnalyticsDashboard.tsx",
+    "lines": 605,
+    "small_text_utilities": 0,
+    "blur_utilities": 0,
+    "dialog": false,
+    "labels": 0,
+    "scroll_containers": 0
+  },
+  {
+    "file": "src/app/components/ChapterSelect.tsx",
+    "lines": 695,
+    "small_text_utilities": 9,
+    "blur_utilities": 0,
+    "dialog": false,
+    "labels": 4,
+    "scroll_containers": 0
+  },
+  {
+    "file": "src/app/components/ClerkThemeTogglePortal.tsx",
+    "lines": 48,
+    "small_text_utilities": 0,
+    "blur_utilities": 0,
+    "dialog": false,
+    "labels": 0,
+    "scroll_containers": 0
+  },
+  {
+    "file": "src/app/components/ClinicalCaseSolver.tsx",
+    "lines": 1402,
+    "small_text_utilities": 0,
+    "blur_utilities": 0,
+    "dialog": false,
+    "labels": 0,
+    "scroll_containers": 0
+  },
+  {
+    "file": "src/app/components/ConfettiManager.tsx",
+    "lines": 19,
+    "small_text_utilities": 0,
+    "blur_utilities": 0,
+    "dialog": false,
+    "labels": 0,
+    "scroll_containers": 0
+  },
+  {
+    "file": "src/app/components/CorrectionStatus.tsx",
+    "lines": 6,
+    "small_text_utilities": 0,
+    "blur_utilities": 0,
+    "dialog": false,
+    "labels": 0,
+    "scroll_containers": 0
+  },
+  {
+    "file": "src/app/components/DashboardCard.tsx",
+    "lines": 17,
+    "small_text_utilities": 0,
+    "blur_utilities": 1,
+    "dialog": false,
+    "labels": 0,
+    "scroll_containers": 0
+  },
+  {
+    "file": "src/app/components/ECGMonitor.tsx",
+    "lines": 75,
+    "small_text_utilities": 0,
+    "blur_utilities": 0,
+    "dialog": false,
+    "labels": 0,
+    "scroll_containers": 0
+  },
+  {
+    "file": "src/app/components/ErrorBoundary.tsx",
+    "lines": 102,
+    "small_text_utilities": 0,
+    "blur_utilities": 1,
+    "dialog": false,
+    "labels": 0,
+    "scroll_containers": 0
+  },
+  {
+    "file": "src/app/components/FeatureErrorBoundary.tsx",
+    "lines": 18,
+    "small_text_utilities": 0,
+    "blur_utilities": 0,
+    "dialog": false,
+    "labels": 0,
+    "scroll_containers": 0
+  },
+  {
+    "file": "src/app/components/FlaggedQuestionsScreen.tsx",
+    "lines": 339,
+    "small_text_utilities": 1,
+    "blur_utilities": 1,
+    "dialog": false,
+    "labels": 0,
+    "scroll_containers": 0
+  },
+  {
+    "file": "src/app/components/FlowBreadcrumbs.tsx",
+    "lines": 21,
+    "small_text_utilities": 0,
+    "blur_utilities": 0,
+    "dialog": false,
+    "labels": 0,
+    "scroll_containers": 0
+  },
+  {
+    "file": "src/app/components/FormattedAnswer.tsx",
+    "lines": 153,
+    "small_text_utilities": 0,
+    "blur_utilities": 0,
+    "dialog": false,
+    "labels": 0,
+    "scroll_containers": 0
+  },
+  {
+    "file": "src/app/components/GitBankSelect.tsx",
+    "lines": 104,
+    "small_text_utilities": 0,
+    "blur_utilities": 0,
+    "dialog": false,
+    "labels": 4,
+    "scroll_containers": 0
+  },
+  {
+    "file": "src/app/components/HistoryScreen.tsx",
+    "lines": 205,
+    "small_text_utilities": 0,
+    "blur_utilities": 1,
+    "dialog": false,
+    "labels": 0,
+    "scroll_containers": 0
+  },
+  {
+    "file": "src/app/components/LanguageToggle.tsx",
+    "lines": 77,
+    "small_text_utilities": 0,
+    "blur_utilities": 0,
+    "dialog": false,
+    "labels": 1,
+    "scroll_containers": 0
+  },
+  {
+    "file": "src/app/components/LevelUpOverlay.tsx",
+    "lines": 50,
+    "small_text_utilities": 0,
+    "blur_utilities": 1,
+    "dialog": false,
+    "labels": 0,
+    "scroll_containers": 0
+  },
+  {
+    "file": "src/app/components/LoadingScreen.tsx",
+    "lines": 117,
+    "small_text_utilities": 1,
+    "blur_utilities": 0,
+    "dialog": false,
+    "labels": 1,
+    "scroll_containers": 0
+  },
+  {
+    "file": "src/app/components/LoginScreen.tsx",
+    "lines": 182,
+    "small_text_utilities": 1,
+    "blur_utilities": 1,
+    "dialog": false,
+    "labels": 0,
+    "scroll_containers": 0
+  },
+  {
+    "file": "src/app/components/MarksCalculator.tsx",
+    "lines": 985,
+    "small_text_utilities": 6,
+    "blur_utilities": 4,
+    "dialog": false,
+    "labels": 3,
+    "scroll_containers": 0
+  },
+  {
+    "file": "src/app/components/MatchingQuestion.tsx",
+    "lines": 748,
+    "small_text_utilities": 0,
+    "blur_utilities": 0,
+    "dialog": false,
+    "labels": 6,
+    "scroll_containers": 0
+  },
+  {
+    "file": "src/app/components/PortalFooter.tsx",
+    "lines": 19,
+    "small_text_utilities": 1,
+    "blur_utilities": 0,
+    "dialog": false,
+    "labels": 0,
+    "scroll_containers": 0
+  },
+  {
+    "file": "src/app/components/PortalShell.tsx",
+    "lines": 75,
+    "small_text_utilities": 2,
+    "blur_utilities": 2,
+    "dialog": false,
+    "labels": 1,
+    "scroll_containers": 0
+  },
+  {
+    "file": "src/app/components/QuestionSearch.tsx",
+    "lines": 538,
+    "small_text_utilities": 7,
+    "blur_utilities": 3,
+    "dialog": false,
+    "labels": 4,
+    "scroll_containers": 0
+  },
+  {
+    "file": "src/app/components/QuizInterface.tsx",
+    "lines": 1515,
+    "small_text_utilities": 12,
+    "blur_utilities": 5,
+    "dialog": true,
+    "labels": 3,
+    "scroll_containers": 0
+  },
+  {
+    "file": "src/app/components/QuizResumeCard.tsx",
+    "lines": 117,
+    "small_text_utilities": 5,
+    "blur_utilities": 2,
+    "dialog": false,
+    "labels": 1,
+    "scroll_containers": 0
+  },
+  {
+    "file": "src/app/components/ResultsDashboard.tsx",
+    "lines": 833,
+    "small_text_utilities": 9,
+    "blur_utilities": 6,
+    "dialog": false,
+    "labels": 2,
+    "scroll_containers": 0
+  },
+  {
+    "file": "src/app/components/SiteUpdateNotice.tsx",
+    "lines": 38,
+    "small_text_utilities": 0,
+    "blur_utilities": 0,
+    "dialog": false,
+    "labels": 0,
+    "scroll_containers": 0
+  },
+  {
+    "file": "src/app/components/SoundManagerComponent.tsx",
+    "lines": 18,
+    "small_text_utilities": 0,
+    "blur_utilities": 0,
+    "dialog": false,
+    "labels": 0,
+    "scroll_containers": 0
+  },
+  {
+    "file": "src/app/components/StreakCalendar.tsx",
+    "lines": 52,
+    "small_text_utilities": 1,
+    "blur_utilities": 1,
+    "dialog": false,
+    "labels": 0,
+    "scroll_containers": 0
+  },
+  {
+    "file": "src/app/components/StudyTrackerSelectorModal.tsx",
+    "lines": 403,
+    "small_text_utilities": 7,
+    "blur_utilities": 1,
+    "dialog": true,
+    "labels": 1,
+    "scroll_containers": 1
+  },
+  {
+    "file": "src/app/components/SubjectSelect.tsx",
+    "lines": 577,
+    "small_text_utilities": 7,
+    "blur_utilities": 0,
+    "dialog": false,
+    "labels": 2,
+    "scroll_containers": 0
+  },
+  {
+    "file": "src/app/components/SyllabusTracker.tsx",
+    "lines": 721,
+    "small_text_utilities": 7,
+    "blur_utilities": 5,
+    "dialog": true,
+    "labels": 2,
+    "scroll_containers": 1
+  },
+  {
+    "file": "src/app/components/ThemeToggle.tsx",
+    "lines": 76,
+    "small_text_utilities": 0,
+    "blur_utilities": 0,
+    "dialog": false,
+    "labels": 1,
+    "scroll_containers": 0
+  },
+  {
+    "file": "src/app/components/TimerSettingsPanel.tsx",
+    "lines": 79,
+    "small_text_utilities": 5,
+    "blur_utilities": 0,
+    "dialog": false,
+    "labels": 0,
+    "scroll_containers": 0
+  },
+  {
+    "file": "src/app/components/WeakestTopicsCard.tsx",
+    "lines": 37,
+    "small_text_utilities": 0,
+    "blur_utilities": 0,
+    "dialog": false,
+    "labels": 0,
+    "scroll_containers": 0
+  },
+  {
+    "file": "src/app/components/XPHUD.tsx",
+    "lines": 24,
+    "small_text_utilities": 0,
+    "blur_utilities": 1,
+    "dialog": false,
+    "labels": 0,
+    "scroll_containers": 0
+  },
+  {
+    "file": "src/app/components/YearSelectionModal.tsx",
+    "lines": 131,
+    "small_text_utilities": 1,
+    "blur_utilities": 1,
+    "dialog": true,
+    "labels": 1,
+    "scroll_containers": 1
+  },
+  {
+    "file": "src/pages/AdminOverviewPanel.tsx",
+    "lines": 206,
+    "small_text_utilities": 0,
+    "blur_utilities": 0,
+    "dialog": false,
+    "labels": 0,
+    "scroll_containers": 0
+  },
+  {
+    "file": "src/pages/AdminPortal.tsx",
+    "lines": 573,
+    "small_text_utilities": 0,
+    "blur_utilities": 0,
+    "dialog": false,
+    "labels": 3,
+    "scroll_containers": 0
+  },
+  {
+    "file": "src/pages/AdminQuestionEditor.tsx",
+    "lines": 70,
+    "small_text_utilities": 0,
+    "blur_utilities": 0,
+    "dialog": false,
+    "labels": 2,
+    "scroll_containers": 0
+  },
+  {
+    "file": "src/pages/Dashboard.tsx",
+    "lines": 304,
+    "small_text_utilities": 5,
+    "blur_utilities": 2,
+    "dialog": false,
+    "labels": 1,
+    "scroll_containers": 0
+  },
+  {
+    "file": "src/pages/LearningHub.tsx",
+    "lines": 424,
+    "small_text_utilities": 0,
+    "blur_utilities": 0,
+    "dialog": false,
+    "labels": 4,
+    "scroll_containers": 0
+  },
+  {
+    "file": "src/pages/StudyMode.tsx",
+    "lines": 262,
+    "small_text_utilities": 4,
+    "blur_utilities": 3,
+    "dialog": false,
+    "labels": 0,
+    "scroll_containers": 0
+  },
+  {
+    "file": "src/pages/SyllabusTrackerPage.tsx",
+    "lines": 815,
+    "small_text_utilities": 2,
+    "blur_utilities": 3,
+    "dialog": false,
+    "labels": 0,
+    "scroll_containers": 0
+  },
+  {
+    "file": "src/pages/YearModules.tsx",
+    "lines": 291,
+    "small_text_utilities": 7,
+    "blur_utilities": 2,
+    "dialog": false,
+    "labels": 0,
+    "scroll_containers": 0
+  }
+]

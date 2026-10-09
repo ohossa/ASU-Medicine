@@ -1,3 +1,4 @@
+import { PortalFooter } from './PortalFooter';
 import { ChevronRight, ArrowLeft } from 'lucide-react';
 import type { ReactNode } from 'react';
 import { useLanguage } from '../hooks/useLanguage';
@@ -15,7 +16,7 @@ export function PortalShell({ crumbs, children, userButton, hideFooter }: { crum
   
   return (
     <div className="min-h-screen font-body bg-transparent text-zinc-900 dark:text-zinc-100 transition-colors duration-500 overflow-x-hidden">
-      <header className="sticky top-0 z-50 border-b border-zinc-200/60 dark:border-white/[0.06] bg-white/70 dark:bg-[#0a0a0a]/70 backdrop-blur-xl">
+      <header data-portal-toolbar className="sticky top-0 z-50 border-b border-zinc-200/60 dark:border-white/[0.06] bg-white/70 dark:bg-[#0a0a0a]/70 backdrop-blur-xl">
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 lg:px-8 relative">
           <div className="flex min-w-0 items-center gap-2">
             {crumbs[0]?.onClick && <button type="button" onClick={crumbs[0].onClick} aria-label={`Back to ${crumbs[0].label}`} className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-border md:hidden"><ArrowLeft size={18}/></button>}
@@ -63,12 +64,8 @@ export function PortalShell({ crumbs, children, userButton, hideFooter }: { crum
 
       {children}
 
-      {!hideFooter && (
-        <footer className="border-t border-zinc-200/70 dark:border-white/[0.06] py-10 text-center">
-          <p className="text-[13px] text-zinc-500 dark:text-zinc-400">Ain Shams University <span className="mx-1.5 opacity-40">•</span> ASU Medical Portal</p>
-          <a href="mailto:omarhmaged@gmail.com" className="mt-1.5 inline-block text-[12px] text-zinc-400 dark:text-zinc-500 hover:text-[#22c55e] transition-colors">omarhmaged@gmail.com</a>
-        </footer>
-      )}
+      {!hideFooter && <PortalFooter />}
+
     </div>
   );
 }

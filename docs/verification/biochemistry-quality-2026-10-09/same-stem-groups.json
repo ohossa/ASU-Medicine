@@ -1,0 +1,644 @@
+[
+  [
+    {
+      "chapter": "Introduction to Medical Biochemistry & Protein Chemistry",
+      "question": {
+        "id": "IBM1-BIO-BGFORM-PRO-Q03",
+        "type": "mcq",
+        "text": "Choose the correct answer:",
+        "lecture": 1,
+        "explanation": "Ribosomal proteins use L amino acids; glycine is achiral. Proteins are polymers and their higher structures also use noncovalent interactions.",
+        "reviewStatus": "source_grounded_nonblind_ai_review",
+        "sourceOccurrences": [
+          {
+            "sourceId": "BIO-BGFORM-PRO-Q03",
+            "source": "Bg All Formative Bio in Moodle..pdf",
+            "page": "2",
+            "sourceQuestionNumber": "3"
+          }
+        ],
+        "options": [
+          "All dietary proteins are of high biological value.",
+          "Proteins are not polymers.",
+          "Only covalent bonds can stabilize protein structure.",
+          "During denaturation, a protein loses only its secondary structure.",
+          "Standard chiral amino-acid residues incorporated by ribosomes have the L configuration."
+        ],
+        "correctIndex": 4,
+        "contentVersion": "3c5c10f078dce62d7bbbbdf5799bdbaa772d6b396862c91728b87cce0106851c"
+      }
+    },
+    {
+      "chapter": "Introduction to Medical Biochemistry & Protein Chemistry",
+      "question": {
+        "id": "IBM1-BIO-MARKED-P09",
+        "type": "mcq",
+        "text": "Choose the correct answer:",
+        "lecture": 1,
+        "explanation": "Proteins are polymers of amino-acid residues joined by peptide bonds; their folded structures are stabilized by both covalent and noncovalent interactions.",
+        "reviewStatus": "source_grounded_nonblind_ai_review",
+        "sourceOccurrences": [
+          {
+            "sourceId": "BIO-MARKED-P09",
+            "source": "test quiz with answers.pdf",
+            "page": "9",
+            "sourceQuestionNumber": "3"
+          }
+        ],
+        "options": [
+          "The amino acids that enter protein synthesis are in the D-form",
+          "All dietary proteins are of high biological value",
+          "Only covalent bonds can stabilize protein structure",
+          "In protein denaturation, the protein loses its secondary structure only",
+          "Proteins are polymers"
+        ],
+        "correctIndex": 4,
+        "contentVersion": "3c755b5895b19b8a11078c7d06e54c3abd728ed9df3836bfe906c84fdf64408e"
+      }
+    },
+    {
+      "chapter": "Classification of Amino Acids",
+      "question": {
+        "id": "IBM1-BIO-DRV-20260921-02226",
+        "type": "mcq",
+        "text": "Choose the correct answer",
+        "lecture": 1,
+        "explanation": "Glutamine's carboxamide side chain is polar but uncharged at physiological pH and the amino acid is ordinarily nonessential.",
+        "reviewStatus": "source_grounded_nonblind_ai_review",
+        "sourceOccurrences": [
+          {
+            "sourceId": "BIO-DRV-20260921-02226",
+            "source": "proteins MCQ- marwa hamdy.pdf",
+            "page": "26",
+            "sourceQuestionNumber": "137"
+          }
+        ],
+        "options": [
+          "Glutamine is an aliphatic amino acid with negatively charged side chain",
+          "Glutamine is an aliphatic amino acid with positively charged side chain",
+          "Glutamine is an aliphatic indispensable amino acid",
+          "Glutamine is an aliphatic amino acid with polar un-charged side chain",
+          "Glutamine has a imino group Multiple choice questions for protein chemistry"
+        ],
+        "correctIndex": 3,
+        "contentVersion": "4e9a1397c0c46bfb1e984ad793766cebde9fa094cd459c52875146792a9efb1c"
+      }
+    }
+  ],
+  [
+    {
+      "chapter": "Protein Conformation",
+      "question": {
+        "id": "IBM1-BIO-DRV-20260921-01862",
+        "type": "mcq",
+        "text": "Which amino acid has the greatest backbone conformational flexibility because its side chain is hydrogen?",
+        "lecture": 1,
+        "explanation": "Glycine's very small hydrogen side chain permits unusually broad backbone conformations and fits tightly curved turns.",
+        "reviewStatus": "source_grounded_nonblind_ai_review",
+        "sourceOccurrences": [
+          {
+            "sourceId": "BIO-DRV-20260921-01862",
+            "source": "protein MCQ3.pdf",
+            "page": "1",
+            "sourceQuestionNumber": "8"
+          }
+        ],
+        "options": [
+          "Glycine",
+          "Proline",
+          "Isoleucine",
+          "Tyrosine",
+          "Any amino acids with hydrophobic chains 1 Important MCQS 2018"
+        ],
+        "correctIndex": 0,
+        "contentVersion": "c4db0b0e7c2572334f1c62bbb12977d3be274b97efb338afb17e3f86c24eb57a"
+      }
+    },
+    {
+      "chapter": "Protein Conformation",
+      "question": {
+        "id": "IBM1-BIO-DRV-20260921-02119",
+        "type": "mcq",
+        "text": "Which amino acid has the greatest backbone conformational flexibility because its side chain is hydrogen?",
+        "lecture": 1,
+        "explanation": "Glycine has only hydrogen as its side chain and therefore the greatest backbone conformational flexibility for tight turns.",
+        "reviewStatus": "source_grounded_nonblind_ai_review",
+        "sourceOccurrences": [
+          {
+            "sourceId": "BIO-DRV-20260921-02119",
+            "source": "proteins MCQ- marwa hamdy.pdf",
+            "page": "5",
+            "sourceQuestionNumber": "18"
+          }
+        ],
+        "options": [
+          "Glycine",
+          "Proline",
+          "Isoleucine",
+          "Tyrosine",
+          "Any amino acid with hydrophobic chain"
+        ],
+        "correctIndex": 0,
+        "contentVersion": "f14bde15493deae44ef539a9298e27183fe764140cdd79d8a6fba8cca5d1468f"
+      }
+    }
+  ],
+  [
+    {
+      "chapter": "Carbohydrate Chemistry",
+      "question": {
+        "id": "IBM1-BIO-DRV-20260921-00021",
+        "type": "mcq",
+        "text": "A sugar alcohol is",
+        "lecture": 1,
+        "explanation": "Mannitol is a sugar alcohol (alditol), in which the sugar carbonyl has been reduced to an alcohol. Fructose and galactose retain their sugar carbonyl chemistry.",
+        "reviewStatus": "source_grounded_nonblind_ai_review",
+        "sourceOccurrences": [
+          {
+            "sourceId": "BIO-DRV-20260921-00021",
+            "source": "all Bio questions.pdf",
+            "page": "3",
+            "sourceQuestionNumber": "10"
+          }
+        ],
+        "options": [
+          "Mannitol.",
+          "Fructose.",
+          "Galactose",
+          "L- ascorbic acid."
+        ],
+        "correctIndex": 0,
+        "contentVersion": "e6702d3b15962b6006efac9860dce8198d365811753df54926dd245fa91aff67"
+      }
+    },
+    {
+      "chapter": "Carbohydrate Chemistry",
+      "question": {
+        "id": "IBM1-BIO-DRV-20260921-00059",
+        "type": "mcq",
+        "text": "A sugar alcohol is",
+        "lecture": 1,
+        "explanation": "Ribitol is the reduced pentose alcohol; ribose, ribulose and deoxyribose remain sugars.",
+        "reviewStatus": "source_grounded_nonblind_ai_review",
+        "sourceOccurrences": [
+          {
+            "sourceId": "BIO-DRV-20260921-00059",
+            "source": "all Bio questions.pdf",
+            "page": "8",
+            "sourceQuestionNumber": "48"
+          }
+        ],
+        "options": [
+          "Ribose",
+          "Ribitol",
+          "Ribulose",
+          "Deoxy ribose"
+        ],
+        "correctIndex": 1,
+        "contentVersion": "8232fbef3b1bb8093de5da2de52a255e35a38db4391bc11f44e0e83733ca96ee"
+      }
+    }
+  ],
+  [
+    {
+      "chapter": "Carbohydrate Chemistry",
+      "question": {
+        "id": "IBM1-BIO-DRV-20260921-00033",
+        "type": "mcq",
+        "text": "A pentose sugar is",
+        "lecture": 1,
+        "explanation": "Ribulose has five carbons; dihydroxyacetone has three and fructose/glucose have six.",
+        "reviewStatus": "source_grounded_nonblind_ai_review",
+        "sourceOccurrences": [
+          {
+            "sourceId": "BIO-DRV-20260921-00033",
+            "source": "all Bio questions.pdf",
+            "page": "4",
+            "sourceQuestionNumber": "22"
+          }
+        ],
+        "options": [
+          "Dihydroxyacetone",
+          "Ribulose",
+          "Fructose",
+          "Glucose"
+        ],
+        "correctIndex": 1,
+        "contentVersion": "4e124077e2b32dcbd1badaf6eff62050f3c23fff42949a641b1a368f898b4938"
+      }
+    },
+    {
+      "chapter": "Carbohydrate Chemistry",
+      "question": {
+        "id": "IBM1-BIO-DRV-20260921-01391",
+        "type": "mcq",
+        "text": "A pentose sugar is",
+        "lecture": 1,
+        "explanation": "A pentose contains five carbon atoms, as ribose does. Dihydroxyacetone has three, erythrose four and glucose six.",
+        "reviewStatus": "source_grounded_nonblind_ai_review",
+        "sourceOccurrences": [
+          {
+            "sourceId": "BIO-DRV-20260921-01391",
+            "source": "MCQ revision last year.pdf",
+            "page": "2",
+            "sourceQuestionNumber": "11"
+          }
+        ],
+        "options": [
+          "Dihydroxyacetone",
+          "Ribose",
+          "Erythrose",
+          "Glucose"
+        ],
+        "correctIndex": 1,
+        "contentVersion": "635b3700ba672be91e09917932323cb822d7eb0547d55e86dca16d4416a079ff"
+      }
+    }
+  ],
+  [
+    {
+      "chapter": "Enzyme Inhibition",
+      "question": {
+        "id": "IBM1-BIO-DRV-20260921-01336",
+        "type": "mcq",
+        "text": "Allopurinol inhibit conversion of",
+        "lecture": 1,
+        "explanation": "Xanthine oxidoreductase converts hypoxanthine to xanthine and then to urate; allopurinol inhibits these oxidation steps. Conversion of hypoxanthine to IMP is a separate salvage reaction.",
+        "reviewStatus": "source_grounded_nonblind_ai_review",
+        "sourceOccurrences": [
+          {
+            "sourceId": "BIO-DRV-20260921-01336",
+            "source": "enzymes MCQs Dr.omar.pdf",
+            "page": "3",
+            "sourceQuestionNumber": "15"
+          },
+          {
+            "sourceId": "BIO-DRV-20260921-02336",
+            "source": "revision ptotein and enzymes MCQ.pdf",
+            "page": "11",
+            "sourceQuestionNumber": "15"
+          }
+        ],
+        "options": [
+          "Hypoxanthine to IMP",
+          "Uric acid to Xanthine",
+          "Adenine to Hypoxanthine",
+          "Hypoxanthine to uric acid",
+          "Adenine to guanine."
+        ],
+        "correctIndex": 3,
+        "duplicateAliases": [
+          {
+            "module": "IBM-1",
+            "chapterId": 112,
+            "id": "IBM1-BIO-DRV-20260921-02336"
+          }
+        ],
+        "contentVersion": "67b27c78409e4bd8da56837ab98ec46ed4b5958b3a1d10023a0f1eec7a321770"
+      }
+    },
+    {
+      "chapter": "Enzyme Inhibition",
+      "question": {
+        "id": "IBM1-BIO-DRV-20260921-01884",
+        "type": "mcq",
+        "text": "Allopurinol inhibit conversion of",
+        "lecture": 1,
+        "explanation": "Xanthine oxidoreductase converts hypoxanthine to xanthine and then to urate; allopurinol inhibits these oxidation steps. Conversion of hypoxanthine to IMP is a separate salvage reaction.",
+        "reviewStatus": "source_grounded_nonblind_ai_review",
+        "sourceOccurrences": [
+          {
+            "sourceId": "BIO-DRV-20260921-01884",
+            "source": "protein MCQ3.pdf",
+            "page": "4",
+            "sourceQuestionNumber": "15"
+          }
+        ],
+        "options": [
+          "Hypoxanthine to IMP",
+          "Uric acid to Xanthine",
+          "Adenine to Hypoxanthine",
+          "Hypoxanthine to Xanthine",
+          "Adenine to guanine."
+        ],
+        "correctIndex": 3,
+        "contentVersion": "b56d343cb48a3b59b336825f21022d09a95685877f707c01334f3e32c7e7d248"
+      }
+    }
+  ],
+  [
+    {
+      "chapter": "Enzyme Inhibition",
+      "question": {
+        "id": "IBM1-BIO-DRV-20260921-01410",
+        "type": "mcq",
+        "text": "Arsenite inhibits which of the following enzymes",
+        "lecture": 1,
+        "explanation": "Arsenite interferes with thiol-dependent components of both pyruvate and alpha-ketoglutarate dehydrogenase complexes.",
+        "reviewStatus": "source_grounded_nonblind_ai_review",
+        "sourceOccurrences": [
+          {
+            "sourceId": "BIO-DRV-20260921-01410",
+            "source": "MCQ revision last year.pdf",
+            "page": "6",
+            "sourceQuestionNumber": "8"
+          }
+        ],
+        "options": [
+          "Isocitrate dehydrogenase",
+          "Pyruvate dehydrogenase",
+          "Succinate thiokinase",
+          "Alpha-ketoglutarate dehydrogenase",
+          "Both B and D"
+        ],
+        "correctIndex": 4,
+        "contentVersion": "835ff1762227c138c127300c657debc79c93b828d53886404fe0760814d65f5a"
+      }
+    },
+    {
+      "chapter": "TCA Cycle and Bioenergetics",
+      "question": {
+        "id": "IBM1-BIO-DRV-20260921-01214",
+        "type": "mcq",
+        "text": "Arsenite inhibits which of the following enzymes",
+        "lecture": 1,
+        "explanation": "Arsenite binds the adjacent sulfhydryl groups of reduced lipoamide in alpha-ketoglutarate dehydrogenase. Fluoroacetate acts through fluorocitrate at aconitase, while fluoride targets glycolytic enolase.",
+        "reviewStatus": "source_grounded_nonblind_ai_review",
+        "sourceOccurrences": [
+          {
+            "sourceId": "BIO-DRV-20260921-01214",
+            "source": "CHO- Krebs mcq omar.pdf",
+            "page": "24",
+            "sourceQuestionNumber": "2"
+          },
+          {
+            "sourceId": "BIO-DRV-20260921-01667",
+            "source": "omar mcq 2022.pdf",
+            "page": "39",
+            "sourceQuestionNumber": "2"
+          }
+        ],
+        "options": [
+          "Enolase",
+          "Succinate dehydrogenase",
+          "Isocitrate dehydrogenase",
+          "a-ketoglutarate dehydrogenase",
+          "Succinate thiokinase"
+        ],
+        "correctIndex": 3,
+        "duplicateAliases": [
+          {
+            "module": "IBM-1",
+            "chapterId": 212,
+            "id": "IBM1-BIO-DRV-20260921-01667"
+          }
+        ],
+        "contentVersion": "a99419c33b6c5679f34f6a9b825f5097690d16771c695bf83bcaa3cb63bbc360"
+      }
+    }
+  ],
+  [
+    {
+      "chapter": "Clinical Importance of Enzymes and Isozymes",
+      "question": {
+        "id": "IBM1-BIO-DRV-20260921-01247",
+        "type": "mcq",
+        "text": "Isoenzymes:",
+        "lecture": 1,
+        "explanation": "Different tissues express different isoenzyme proportions. Injury can therefore produce a characteristic serum isoenzyme pattern that helps localize the source, although interpretation also requires clinical context.",
+        "reviewStatus": "source_grounded_nonblind_ai_review",
+        "sourceOccurrences": [
+          {
+            "sourceId": "BIO-DRV-20260921-01247",
+            "source": "Enzymes  MCQs 2.pdf",
+            "page": "3",
+            "sourceQuestionNumber": "10"
+          }
+        ],
+        "options": [
+          "Are factors required for enzyme activity",
+          "Are functional plasma enzymes",
+          "Show similar responses to inhibitor molecules",
+          "Are important tools in the diagnosis & prognosis of disease",
+          "Catalyze oxidation-reduction reactions"
+        ],
+        "correctIndex": 3,
+        "contentVersion": "89b8ec47f33d22888481358bf71c52693431e32a203307bb5d2b205e4a60150b"
+      }
+    },
+    {
+      "chapter": "Clinical Importance of Enzymes and Isozymes",
+      "question": {
+        "id": "IBM1-BIO-DRV-20260921-01360",
+        "type": "mcq",
+        "text": "Isoenzymes :",
+        "lecture": 1,
+        "explanation": "Isoenzymes catalyze the same reaction but differ in molecular structure, so their kinetic properties, tissue distribution or electrophoretic mobility can differ. They are distinct active enzyme forms rather than zymogens awaiting activation.",
+        "reviewStatus": "source_grounded_nonblind_ai_review",
+        "sourceOccurrences": [
+          {
+            "sourceId": "BIO-DRV-20260921-01360",
+            "source": "enzymes MCQs Dr.omar.pdf",
+            "page": "6",
+            "sourceQuestionNumber": "42"
+          },
+          {
+            "sourceId": "BIO-DRV-20260921-01490",
+            "source": "omar mcq 2022.pdf",
+            "page": "9",
+            "sourceQuestionNumber": "22"
+          },
+          {
+            "sourceId": "BIO-DRV-20260921-02081",
+            "source": "protein-enzymes mcq omar.pdf",
+            "page": "18",
+            "sourceQuestionNumber": "42"
+          }
+        ],
+        "options": [
+          "Present in the same tissue.",
+          "Have the same Km.",
+          "Catalyze different reactions.",
+          "Different forms of the same enzyme."
+        ],
+        "correctIndex": 3,
+        "duplicateAliases": [
+          {
+            "module": "IBM-1",
+            "chapterId": 114,
+            "id": "IBM1-BIO-DRV-20260921-01490"
+          },
+          {
+            "module": "IBM-1",
+            "chapterId": 114,
+            "id": "IBM1-BIO-DRV-20260921-02081"
+          }
+        ],
+        "contentVersion": "441210b8e0e766bd9e4d3fd5ca9fb6ea1385075474934aa691b80b9806db575e"
+      }
+    },
+    {
+      "chapter": "Clinical Importance of Enzymes and Isozymes",
+      "question": {
+        "id": "IBM1-BIO-DRV-20260921-01267",
+        "type": "mcq",
+        "text": "Isoenzymes:",
+        "lecture": 1,
+        "explanation": "LDH occurs as several molecular forms with different tissue distributions, making isoenzyme patterns useful as historical diagnostic tools. Their different electrophoretic mobility, rather than dialysis, permits separation.",
+        "reviewStatus": "source_grounded_nonblind_ai_review",
+        "sourceOccurrences": [
+          {
+            "sourceId": "BIO-DRV-20260921-01267",
+            "source": "Enzymes  MCQs 2.pdf",
+            "page": "8",
+            "sourceQuestionNumber": "30"
+          }
+        ],
+        "options": [
+          "Are differentiated by dialysis",
+          "Show the same electrophoretic mobility",
+          "Include lactate dehydrogenase",
+          "Are used as diagnostic tools",
+          "Both C and D are correct"
+        ],
+        "correctIndex": 4,
+        "contentVersion": "1a65ba4420a535da781b72ed4de04fb2920e52fbee8339e7120215a2587ea4ee"
+      }
+    }
+  ],
+  [
+    {
+      "chapter": "Glycolysis",
+      "question": {
+        "id": "IBM1-BIO-DRV-20260921-01199",
+        "type": "mcq",
+        "text": "One of the following is Substrate level phosphorylation reaction in glycolysis",
+        "lecture": 1,
+        "explanation": "Substrate-level phosphorylation transfers phosphate directly from a high-energy glycolytic intermediate to ADP. Pyruvate kinase uses PEP and phosphoglycerate kinase uses 1,3-bisphosphoglycerate; succinate thiokinase belongs to the TCA cycle.",
+        "reviewStatus": "source_grounded_nonblind_ai_review",
+        "sourceOccurrences": [
+          {
+            "sourceId": "BIO-DRV-20260921-01199",
+            "source": "CHO- Krebs mcq omar.pdf",
+            "page": "21",
+            "sourceQuestionNumber": "24"
+          }
+        ],
+        "options": [
+          "Phosphofructokinase-1",
+          "Glucokinase",
+          "Succinate thiokinase",
+          "Hexokinase",
+          "Pyruvate kinase"
+        ],
+        "correctIndex": 4,
+        "contentVersion": "0537916c2ed1498d37fef4cfd8a96eedeab72c51f6f03b0ff38e72626a34cb03"
+      }
+    },
+    {
+      "chapter": "Glycolysis",
+      "question": {
+        "id": "IBM1-BIO-DRV-20260921-01200",
+        "type": "mcq",
+        "text": "One of the following is Substrate level phosphorylation reaction in glycolysis",
+        "lecture": 1,
+        "explanation": "Substrate-level phosphorylation transfers phosphate directly from a high-energy glycolytic intermediate to ADP. Pyruvate kinase uses PEP and phosphoglycerate kinase uses 1,3-bisphosphoglycerate; succinate thiokinase belongs to the TCA cycle.",
+        "reviewStatus": "source_grounded_nonblind_ai_review",
+        "sourceOccurrences": [
+          {
+            "sourceId": "BIO-DRV-20260921-01200",
+            "source": "CHO- Krebs mcq omar.pdf",
+            "page": "21",
+            "sourceQuestionNumber": "25"
+          },
+          {
+            "sourceId": "BIO-DRV-20260921-01646",
+            "source": "omar mcq 2022.pdf",
+            "page": "35",
+            "sourceQuestionNumber": "25"
+          }
+        ],
+        "options": [
+          "Phosphofructokinase-1",
+          "Glucokinase",
+          "Succinate thiokinase",
+          "Hexokinase",
+          "Phosphoglycerate kinase"
+        ],
+        "correctIndex": 4,
+        "contentVersion": "1f5daaf97d0a73eb896eaa1def769d944ba6a95b2f667ef9d5b755f2502ddbc1"
+      }
+    }
+  ],
+  [
+    {
+      "chapter": "Glycolysis",
+      "question": {
+        "id": "IBM1-BIO-DRV-20260921-01207",
+        "type": "mcq",
+        "text": "All the following statements are true except",
+        "lecture": 1,
+        "explanation": "Glucokinase has a relatively high capacity/Vmax and high Km, unlike low-Km hexokinase.",
+        "reviewStatus": "source_grounded_nonblind_ai_review",
+        "sourceOccurrences": [
+          {
+            "sourceId": "BIO-DRV-20260921-01207",
+            "source": "CHO- Krebs mcq omar.pdf",
+            "page": "22",
+            "sourceQuestionNumber": "32"
+          }
+        ],
+        "options": [
+          "Glucokinase is induced by insulin during well-fed state",
+          "Hexokinase is Constitutive enzyme",
+          "Glucokinase has low affinity to glucose",
+          "Hexokinase is inhibited by glucose 6- P",
+          "Glucokinase has low Vmax."
+        ],
+        "correctIndex": 4,
+        "contentVersion": "51cbcb0060db8290c243f991352812f6db794bdec78a063213cb05806b3362de"
+      }
+    },
+    {
+      "chapter": "Glycolysis",
+      "question": {
+        "id": "IBM1-BIO-DRV-20260921-01208",
+        "type": "mcq",
+        "text": "All the following statements are true except",
+        "lecture": 1,
+        "explanation": "Glucose-6-phosphate product inhibition restrains hexokinase but not glucokinase. This allows hepatic glucokinase to keep trapping abundant fed-state glucose for storage and metabolism.",
+        "reviewStatus": "source_grounded_nonblind_ai_review",
+        "sourceOccurrences": [
+          {
+            "sourceId": "BIO-DRV-20260921-01208",
+            "source": "CHO- Krebs mcq omar.pdf",
+            "page": "22",
+            "sourceQuestionNumber": "33"
+          },
+          {
+            "sourceId": "BIO-DRV-20260921-01654",
+            "source": "omar mcq 2022.pdf",
+            "page": "36",
+            "sourceQuestionNumber": "33"
+          }
+        ],
+        "options": [
+          "Glucokinase is induced by insulin during well-fed state",
+          "Hexokinase is Constitutive enzyme",
+          "Hexokinase has high affinity to glucose",
+          "Glucokinase is inhibited by glucose 6- P",
+          "Glucokinase has High Vmax."
+        ],
+        "correctIndex": 3,
+        "duplicateAliases": [
+          {
+            "module": "IBM-1",
+            "chapterId": 116,
+            "id": "IBM1-BIO-DRV-20260921-01654"
+          }
+        ],
+        "contentVersion": "9eec9a32f7e81f83aa149c29fe78348c0b526deb29ac2058ede0f13d422f1b6d"
+      }
+    }
+  ]
+]

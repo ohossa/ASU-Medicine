@@ -1,0 +1,13 @@
+
+> replicated-quiz-app@0.0.1 test
+> vitest run
+
+
+ RUN  v4.1.9 /Users/omarhossa/Documents/Medcine ASU/ASU-Medical-Portal
+
+
+ Test Files  39 passed (39)
+      Tests  281 passed (281)
+   Start at  12:16:59
+   Duration  13.70s (transform 61.32s, setup 8.95s, import 24.48s, tests 17.02s, environment 30.23s)
+

@@ -1,0 +1,11 @@
+.study-loading{display:grid;place-items:center;color:var(--foreground);background:var(--background);padding:32px;}
+.study-loading--entry{position:fixed;inset:0;z-index:9999;}
+.study-loading--route{min-height:240px;background:transparent;}
+.study-loading-content{display:flex;flex-direction:column;align-items:center;gap:18px;max-width:340px;text-align:center;}
+.study-loading-brand{display:flex;align-items:center;gap:10px;font-size:22px;font-weight:700;letter-spacing:-.045em;}
+.study-loading-mark{display:grid;place-items:center;width:38px;height:38px;border:1px solid var(--border);border-radius:12px;background:var(--card);font-size:12px;letter-spacing:-.03em;}
+.study-loading-content p{font-size:14px;line-height:1.6;color:var(--muted-foreground);margin:0;}
+.study-loading-spinner{width:18px;height:18px;border-radius:50%;border:2px solid var(--border);border-top-color:var(--muted-foreground);animation:study-loading-turn 1s linear infinite;}
+.study-loading-content progress{width:140px;height:3px;accent-color:var(--foreground);}
+@keyframes study-loading-turn{to{transform:rotate(360deg);}}
+@media(prefers-reduced-motion:reduce){.study-loading-spinner{animation:none;border-style:dotted;}}

@@ -1,0 +1,21 @@
+{
+  "module": "IBM-1",
+  "scope": "Year 1 Semester 1 Introduction to Medical Biochemistry only",
+  "questionsReviewed": 1460,
+  "retained": 1416,
+  "additionalCorrectionRecords": 169,
+  "additionalDuplicatesRemoved": 33,
+  "additionalExclusions": 6,
+  "matchingFragmentsConsolidated": 5,
+  "sourcePDFNamesResolved": 27,
+  "uniqueSourcePagesVisuallyInspected": 109,
+  "pythonTestsPassed": 15,
+  "vitestFilesPassed": 86,
+  "vitestTestsPassed": 525,
+  "focusedBankTestsPassed": 4,
+  "productionBuild": "passed",
+  "allOtherCanonicalFilesUnchanged": true,
+  "repeatApplyChangesNoCanonicalBytes": true,
+  "ownerIBMOverlays": 0,
+  "publication": "Local only; not deployed"
+}

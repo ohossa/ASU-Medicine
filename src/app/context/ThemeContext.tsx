@@ -1,51 +1,30 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useLayoutEffect, useState } from 'react';
 import { triggerCloudSync } from '../hooks/useCloudSync';
-
-// Re-export for consumers that import from this file
 export { ThemeContext } from './ThemeContextValue';
 import { ThemeContext } from './ThemeContextValue';
 
-export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [isDark, setIsDark] = useState(() => {
-    try {
-      const pref = localStorage.getItem('theme');
-      // Default to dark mode unless pref is explicitly 'light'
-      const dark = pref !== 'light';
-      if (dark) document.documentElement.classList.add('dark');
-      return dark;
-    } catch {
-      return true;
-    }
-  });
-
-  useEffect(() => {
-    const prev = localStorage.getItem('theme');
-    const next = isDark ? 'dark' : 'light';
-    if (isDark) {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
-    }
-    localStorage.setItem('theme', next);
-    if (prev !== next) {
-      triggerCloudSync();
-    }
-  }, [isDark]);
-
-  useEffect(() => {
-    const handleStorageChange = () => {
-      const pref = localStorage.getItem('theme');
-      setIsDark(pref !== 'light');
-    };
-    window.addEventListener('storage', handleStorageChange);
-    return () => window.removeEventListener('storage', handleStorageChange);
-  }, []);
-
-  return (
-    <ThemeContext.Provider value={{ isDark, theme: isDark ? "dark" : "light", toggleTheme: () => setIsDark((d) => !d) }}>
-      {children}
-    </ThemeContext.Provider>
-  );
+function readTheme() {
+  try { return localStorage.getItem('theme') !== 'light'; }
+  catch { return true; }
 }
-
-
+function applyTheme(dark:boolean) {
+  document.documentElement.classList.toggle('dark',dark);
+  document.documentElement.style.colorScheme=dark?'dark':'light';
+  document.querySelector('meta[name="theme-color"]')?.setAttribute('content',dark?'#0c0e16':'#f8f9fc');
+}
+export function ThemeProvider({ children }: { children: React.ReactNode }) {
+  const [isDark,setIsDark]=useState(()=>{const dark=readTheme();applyTheme(dark);return dark;});
+  useLayoutEffect(()=>{
+    applyTheme(isDark);
+    try {
+      const previous=localStorage.getItem('theme'),next=isDark?'dark':'light';
+      localStorage.setItem('theme',next);
+      if(previous!==next)triggerCloudSync();
+    } catch { /* Private/storage-restricted browsers can still change appearance. */ }
+  },[isDark]);
+  useEffect(()=>{
+    const update=(event:StorageEvent)=>{if(event.key==='theme'||event.key===null)setIsDark(readTheme());};
+    window.addEventListener('storage',update);return()=>window.removeEventListener('storage',update);
+  },[]);
+  return <ThemeContext.Provider value={{isDark,theme:isDark?'dark':'light',toggleTheme:()=>setIsDark(d=>!d)}}>{children}</ThemeContext.Provider>;
+}

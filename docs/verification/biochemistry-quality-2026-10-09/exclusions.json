@@ -1,0 +1,367 @@
+[
+  {
+    "module": "IBM-1",
+    "id": "IBM1-BIO-DRV-20260921-00244",
+    "question_hash": "3c3062e953a925b317a3ac0d73f5dc5d23940b8235badcf173323e59b47532b0",
+    "decision": "exclude",
+    "changes": {},
+    "reason": "Single-answer ambiguity: stem says covalent modification broadly, not phosphorylation. Lysine acetylation/deacetylation also regulates enzyme activity, so serine/phosphate is not uniquely implied by the actual wording. Preserve in audit; do not silently rewrite to force the intended key.",
+    "evidence": [
+      {
+        "title": "Sir2-dependent activation of acetyl-CoA synthetase by deacetylation of active lysine",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/12493915/",
+        "locator": "Abstract, lysine-609 acetylation blocks activity; CobB deacetylation activates Acs",
+        "proposition": "Enzyme activity can be regulated by covalent lysine acetylation/deacetylation, as well as serine phosphorylation.",
+        "accessMethod": "Opened PubMed abstract via web tool; full abstract actually returned."
+      },
+      {
+        "title": "Designated original question PDF visual comparison",
+        "source": "all Bio questions.pdf",
+        "page": "26",
+        "proposition": "Single-answer ambiguity: stem says covalent modification broadly, not phosphorylation. Lysine acetylation/deacetylation also regulates enzyme activity, so serine/phosphate is not uniquely implied by the actual wording. Preserve in audit; do not silently rewrite to force the intended key.",
+        "accessMethod": "Rendered original PDF and inspected actual image."
+      }
+    ],
+    "sourcePageReview": [
+      {
+        "source": "all Bio questions.pdf",
+        "page": "26",
+        "method": "Original PDF rendered at 1.5x and image actually visually inspected; selected suspicious-page review, not complete source occurrence reconciliation."
+      }
+    ],
+    "original": {
+      "id": "IBM1-BIO-DRV-20260921-00244",
+      "type": "mcq",
+      "text": "Activation or inactivation of certain enzymes is accomplished by covalent modification of the amino acid:",
+      "lecture": 1,
+      "explanation": "The side-chain hydroxyl of serine or threonine can accept a covalently attached phosphate. Kinases add it and phosphatases remove it, allowing reversible changes in enzyme activity.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-00244",
+          "source": "all Bio questions.pdf",
+          "page": "26",
+          "sourceQuestionNumber": "7"
+        },
+        {
+          "sourceId": "BIO-DRV-20260921-01278",
+          "source": "Enzymes MCQ.pdf",
+          "page": "1",
+          "sourceQuestionNumber": "7"
+        },
+        {
+          "sourceId": "BIO-DRV-20260921-01493",
+          "source": "omar mcq 2022.pdf",
+          "page": "10",
+          "sourceQuestionNumber": "25"
+        },
+        {
+          "sourceId": "BIO-DRV-20260921-02090",
+          "source": "protein-enzymes mcq omar.pdf",
+          "page": "20",
+          "sourceQuestionNumber": "51"
+        }
+      ],
+      "options": [
+        "Hydroxy lysine",
+        "Phenylalanine",
+        "Lysine",
+        "Serine"
+      ],
+      "correctIndex": 3,
+      "duplicateAliases": [
+        {
+          "module": "IBM-1",
+          "chapterId": 113,
+          "id": "IBM1-BIO-DRV-20260921-01278"
+        },
+        {
+          "module": "IBM-1",
+          "chapterId": 113,
+          "id": "IBM1-BIO-DRV-20260921-01493"
+        },
+        {
+          "module": "IBM-1",
+          "chapterId": 113,
+          "id": "IBM1-BIO-DRV-20260921-02090"
+        }
+      ],
+      "contentVersion": "d54cfce2bac2cd7d6bd8b6c11b39884afc981b534383eb9c97f3bf1cd609abfc"
+    }
+  },
+  {
+    "module": "IBM-1",
+    "id": "IBM1-BIO-DRV-20260921-00259",
+    "question_hash": "e18bf268db400845d91cd1759de4bec373e57981fc107707ae7be62414df0b7d",
+    "decision": "exclude",
+    "changes": {},
+    "reason": "Single-answer ambiguity: stem says covalent modification broadly, not phosphorylation. Lysine acetylation/deacetylation also regulates enzyme activity, so serine/phosphate is not uniquely implied by the actual wording. Preserve in audit; do not silently rewrite to force the intended key.",
+    "evidence": [
+      {
+        "title": "Sir2-dependent activation of acetyl-CoA synthetase by deacetylation of active lysine",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/12493915/",
+        "locator": "Abstract, lysine-609 acetylation blocks activity; CobB deacetylation activates Acs",
+        "proposition": "Enzyme activity can be regulated by covalent lysine acetylation/deacetylation, as well as serine phosphorylation.",
+        "accessMethod": "Opened PubMed abstract via web tool; full abstract actually returned."
+      },
+      {
+        "title": "Designated original question PDF visual comparison",
+        "source": "all Bio questions.pdf",
+        "page": "29",
+        "proposition": "Single-answer ambiguity: stem says covalent modification broadly, not phosphorylation. Lysine acetylation/deacetylation also regulates enzyme activity, so serine/phosphate is not uniquely implied by the actual wording. Preserve in audit; do not silently rewrite to force the intended key.",
+        "accessMethod": "Rendered original PDF and inspected actual image."
+      }
+    ],
+    "sourcePageReview": [
+      {
+        "source": "all Bio questions.pdf",
+        "page": "29",
+        "method": "Original PDF rendered at 1.5x and image actually visually inspected; selected suspicious-page review, not complete source occurrence reconciliation."
+      }
+    ],
+    "original": {
+      "id": "IBM1-BIO-DRV-20260921-00259",
+      "type": "mcq",
+      "text": "Regulation of some enzymes by covalent modification involves addition or removal of",
+      "lecture": 1,
+      "explanation": "Kinases add covalent phosphate groups and phosphatases remove them, making phosphorylation a reversible regulatory mechanism. Depending on the enzyme, phosphorylation can increase or decrease activity.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-00259",
+          "source": "all Bio questions.pdf",
+          "page": "29",
+          "sourceQuestionNumber": "22"
+        },
+        {
+          "sourceId": "BIO-DRV-20260921-01292",
+          "source": "Enzymes MCQ.pdf",
+          "page": "4",
+          "sourceQuestionNumber": "22"
+        }
+      ],
+      "options": [
+        "Acetate",
+        "Sulphate",
+        "Phosphate",
+        "Coenzyme"
+      ],
+      "correctIndex": 2,
+      "duplicateAliases": [
+        {
+          "module": "IBM-1",
+          "chapterId": 113,
+          "id": "IBM1-BIO-DRV-20260921-01292"
+        }
+      ],
+      "contentVersion": "11871e0bf4f3b3a3a60e2a31f0a217c41e5f80698e5d6c0907a6223541335575"
+    }
+  },
+  {
+    "module": "IBM-1",
+    "id": "IBM1-BIO-DRV-20260921-00619",
+    "question_hash": "e1fc0ae47b842ad7dc033af14b5939ceba1ed401e8bdda3fab817f702164c180",
+    "decision": "exclude",
+    "changes": {},
+    "reason": "Single-answer ambiguity: collagen is correct but hormone is an unconstrained alternative. Ascorbate also supports adrenal norepinephrine biosynthesis, so the unqualified stem does not make collagen uniquely correct. Preserve source and exclude rather than invent a narrower distractor.",
+    "evidence": [
+      {
+        "title": "Vitamin C - Health Professional Fact Sheet",
+        "url": "https://ods.od.nih.gov/factsheets/VitaminC-HealthProfessional/",
+        "locator": "Introduction",
+        "proposition": "Vitamin C is required for collagen biosynthesis and certain neurotransmitters.",
+        "accessMethod": "Opened official NIH ODS page, introduction returned."
+      },
+      {
+        "title": "Ascorbic Acid Efficiently Enhances Neuronal Synthesis of Norepinephrine from Dopamine",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3527656/",
+        "locator": "Abstract and Introduction, adrenal chromaffin DβH/ascorbate",
+        "proposition": "Ascorbate supports norepinephrine synthesis in adrenal chromaffin cells and neuronal cells.",
+        "accessMethod": "Opened original-research full text, abstract/introduction actually returned."
+      },
+      {
+        "title": "Designated original question PDF visual comparison",
+        "source": "all Bio questions.pdf",
+        "page": "69",
+        "proposition": "Single-answer ambiguity: collagen is correct but hormone is an unconstrained alternative. Ascorbate also supports adrenal norepinephrine biosynthesis, so the unqualified stem does not make collagen uniquely correct. Preserve source and exclude rather than invent a narrower distractor.",
+        "accessMethod": "Rendered original PDF and inspected actual image."
+      }
+    ],
+    "sourcePageReview": [
+      {
+        "source": "all Bio questions.pdf",
+        "page": "69",
+        "method": "Original PDF rendered at 1.5x and image actually visually inspected; selected suspicious-page review, not complete source occurrence reconciliation."
+      }
+    ],
+    "original": {
+      "id": "IBM1-BIO-DRV-20260921-00619",
+      "type": "mcq",
+      "text": "Vitamin C is required for the production and maintenance of:",
+      "lecture": 1,
+      "explanation": "Vitamin C supports the collagen biosynthetic reactions required for connective-tissue integrity. Deficiency weakens vessels and impairs wound healing, explaining the characteristic scurvy manifestations.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-00619",
+          "source": "all Bio questions.pdf",
+          "page": "69",
+          "sourceQuestionNumber": "17"
+        }
+      ],
+      "options": [
+        "Collagen",
+        "Hormone",
+        "Ascorbic Acid",
+        "Red Blood Cells"
+      ],
+      "correctIndex": 0,
+      "contentVersion": "f8976ac291a1b388e018a37cd248b987533e7695a93b56322f090674f99ed4e7"
+    }
+  },
+  {
+    "module": "IBM-1",
+    "id": "IBM1-BIO-DRV-20260921-01724",
+    "question_hash": "9e1dbca992a9041981f6141ed83c7c590002e676799b82a36120517c37f8a542",
+    "decision": "exclude",
+    "changes": {},
+    "reason": "The original page itself gives the nonsensical distractor “Maximum perceptibility.” This cannot be confidently reconstructed as a source option without substituting an inferred alternative. Hold the malformed item; preserve the unchanged charged-state answer and source occurrence in the audit.",
+    "evidence": [
+      {
+        "kind": "source_page",
+        "source": "protein MCQ.pdf",
+        "page": 7,
+        "sha256": "e7995617f515de22e9485012c49c8d8d8454f8d559ebe91a0271bb1cd0207dc5",
+        "fullPageRenderedAndViewed": true
+      }
+    ],
+    "sourcePageReview": [
+      {
+        "source": "protein MCQ.pdf",
+        "page": 7,
+        "sourceSha256": "e7995617f515de22e9485012c49c8d8d8454f8d559ebe91a0271bb1cd0207dc5",
+        "render": "/Users/omarhossa/Documents/Medcine ASU/ASU-Medical-Portal/docs/verification/biochemistry-quality-2026-10-09/protein-page-renders/02.png",
+        "visuallyInspected": true
+      }
+    ],
+    "reviewMethod": "Full-content nonblind AI audit: stem and choices were inspected with the existing key/explanation visible; not an independent or blinded medical adjudication. Source-page review was targeted to suspected corruption.",
+    "historicalComparison": "No medical key change.",
+    "original": {
+      "id": "IBM1-BIO-DRV-20260921-01724",
+      "type": "mcq",
+      "text": "at pii above isoelectric point, amino acids show",
+      "lecture": 1,
+      "explanation": "Above its isoelectric point an amino acid has net negative charge and moves toward the positive anode.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-01724",
+          "source": "protein MCQ.pdf",
+          "page": "7",
+          "sourceQuestionNumber": "33"
+        }
+      ],
+      "options": [
+        "Net -ve charge",
+        "Net +ve charge",
+        "Migrate toward cathode",
+        "Maximum perceptibility"
+      ],
+      "correctIndex": 0,
+      "contentVersion": "903352d39f72743f51e26013610affc05004bcce93a9b89ca1edbbdf9cf9dd6d"
+    }
+  },
+  {
+    "module": "IBM-1",
+    "id": "IBM1-BIO-DRV-20260921-01725",
+    "question_hash": "5a7dbeaa8406e1bc743fa54537bb1be42d1c8ac51bbe573b5ca9f8c17f94802c",
+    "decision": "exclude",
+    "changes": {},
+    "reason": "The original page itself gives the nonsensical distractor “Maximum perceptibility.” This cannot be confidently reconstructed as a source option without substituting an inferred alternative. Hold the malformed item; preserve the unchanged charged-state answer and source occurrence in the audit.",
+    "evidence": [
+      {
+        "kind": "source_page",
+        "source": "protein MCQ.pdf",
+        "page": 7,
+        "sha256": "e7995617f515de22e9485012c49c8d8d8454f8d559ebe91a0271bb1cd0207dc5",
+        "fullPageRenderedAndViewed": true
+      }
+    ],
+    "sourcePageReview": [
+      {
+        "source": "protein MCQ.pdf",
+        "page": 7,
+        "sourceSha256": "e7995617f515de22e9485012c49c8d8d8454f8d559ebe91a0271bb1cd0207dc5",
+        "render": "/Users/omarhossa/Documents/Medcine ASU/ASU-Medical-Portal/docs/verification/biochemistry-quality-2026-10-09/protein-page-renders/02.png",
+        "visuallyInspected": true
+      }
+    ],
+    "reviewMethod": "Full-content nonblind AI audit: stem and choices were inspected with the existing key/explanation visible; not an independent or blinded medical adjudication. Source-page review was targeted to suspected corruption.",
+    "historicalComparison": "No medical key change.",
+    "original": {
+      "id": "IBM1-BIO-DRV-20260921-01725",
+      "type": "mcq",
+      "text": "at pH below isoelectric point, amino acids show",
+      "lecture": 1,
+      "explanation": "Below its isoelectric point an amino acid is more protonated, carries net positive charge and moves toward the negative cathode.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-01725",
+          "source": "protein MCQ.pdf",
+          "page": "7",
+          "sourceQuestionNumber": "34"
+        }
+      ],
+      "options": [
+        "Net -ve charge",
+        "Net +ve charge",
+        "Migrate toward anode",
+        "Maximum perceptibility."
+      ],
+      "correctIndex": 1,
+      "contentVersion": "855bc881560ccfbbb623e35b0a87f8b8ec0ede7ce3e712516600730b096b1b97"
+    }
+  },
+  {
+    "module": "IBM-1",
+    "id": "IBM1-BIO-DRV-20260921-01923",
+    "question_hash": "b7ccbdb4187d77abd8069b351659b0fa748db965657e17af1336b3f7d12ea8fe",
+    "decision": "exclude",
+    "changes": {},
+    "reason": "The original page itself gives the nonsensical distractor “Maximum perceptibility.” This cannot be confidently reconstructed as a source option without substituting an inferred alternative. Hold the malformed item; preserve the unchanged charged-state answer and source occurrence in the audit.",
+    "evidence": [
+      {
+        "kind": "current_content",
+        "claim": "Formatting-only changes in existing generated answer fields; no source wording or medical values are reconstructed."
+      }
+    ],
+    "sourcePageReview": [],
+    "reviewMethod": "Full-content nonblind AI audit: stem and choices were inspected with the existing key/explanation visible; not an independent or blinded medical adjudication. Source-page review was targeted to suspected corruption.",
+    "historicalComparison": "No medical key change.",
+    "original": {
+      "id": "IBM1-BIO-DRV-20260921-01923",
+      "type": "mcq",
+      "text": "at pH above isoelectric point, amino acids show",
+      "lecture": 1,
+      "explanation": "At a pH above pI the molecule is more deprotonated, giving a net negative charge and anodal migration.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-01923",
+          "source": "protein MCQs Dr.omar.pdf",
+          "page": "7",
+          "sourceQuestionNumber": "33"
+        }
+      ],
+      "options": [
+        "Net-ve charge",
+        "Net +ve charge",
+        "Migrate toward cathode",
+        "Maximum perceptibility"
+      ],
+      "correctIndex": 0,
+      "contentVersion": "a7b0709aea248946374206be580a98725ee2835e64368cfcb73c9f22e83ef6c1"
+    }
+  }
+]

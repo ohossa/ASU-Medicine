@@ -562,3 +562,47 @@
 .admin-quota dt {font-size:.85rem;color:var(--muted-foreground);}
 .admin-quota dd {margin:.3rem 0 0;font-weight:600;}
 @media(max-width:480px){.admin-priority-link {align-items:flex-start;flex-direction:column;gap:.5rem;}.admin-priority-count {text-align:left;}.admin-overview-heading .report-primary {width:100%;justify-content:center;}}
+/* Shared reading-first controls and inset scrolling: Apple principles adapted to web. */
+.study-control,.report-primary,.report-secondary,.report-close,.question-report-trigger{min-height:44px;min-width:44px;}
+.study-control{display:inline-flex;align-items:center;justify-content:center;gap:10px;line-height:1.4;white-space:normal;}
+.study-control:disabled{cursor:not-allowed;opacity:.55;}
+.study-spinner{width:14px;height:14px;border-radius:50%;border:2px solid currentColor;border-inline-start-color:transparent;animation:study-loading-turn 1s linear infinite;flex-shrink:0;}
+.study-status{margin-block:12px;line-height:1.65;overflow-wrap:anywhere;}
+.study-surface{border:1px solid var(--border);border-radius:24px;background:var(--card);padding:24px;}
+.report-dialog{overflow:hidden;padding:10px;display:flex;flex-direction:column;border-radius:26px;}
+.report-dialog-scroll{min-height:0;max-height:calc(100dvh - 64px);overflow:auto;overscroll-behavior:contain;scrollbar-gutter:stable;padding:18px;}
+.report-dialog .report-close{position:sticky;float:inline-end;top:0;z-index:1;background:var(--card);}
+.report-dialog h2{margin-inline-end:42px;}
+.report-dialog .report-options label{min-height:48px;font-size:14px;}
+.report-field input,.report-field select,.report-field textarea{min-height:44px;font-size:16px;line-height:1.5;}
+.report-muted,.admin-meta,.admin-detail pre,.admin-detail ol,.admin-reporter dt{font-size:13px;line-height:1.65;}
+.admin-detail pre{white-space:pre-wrap;overflow-wrap:anywhere;}
+.admin-detail h2{font-size:22px;line-height:1.35;}
+.admin-reporter dd,.admin-report-row p{font-size:14px;line-height:1.65;}
+.admin-sidebar a{min-height:44px;display:flex;align-items:center;}
+.admin-layout>main,.admin-inbox>*,.admin-filter-grid>*{min-width:0;}
+.admin-detail summary,.admin-report-group summary{min-height:44px;}
+.triage-panel{padding:24px;margin-block-end:20px;}
+.triage-panel header{display:flex;align-items:flex-start;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-block-end:20px;}
+.triage-panel h2{font-size:clamp(20px,3vw,26px);letter-spacing:-.035em;line-height:1.25;margin-block:6px 10px;}
+.triage-eyebrow{font-size:12px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted-foreground);}
+.triage-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin-block:20px;}
+.triage-stats>div{border:1px solid var(--border);border-radius:16px;padding:16px;display:flex;flex-direction:column;gap:8px;}
+.triage-stats strong{font-size:24px;font-weight:650;letter-spacing:-.04em;}
+.triage-stats span{font-size:13px;color:var(--muted-foreground);line-height:1.5;}
+.triage-explainer,.triage-assessment details{margin-block:16px;}
+.triage-explainer summary,.triage-assessment summary{min-height:44px;cursor:pointer;font-size:14px;line-height:1.6;}
+.triage-explainer p,.triage-assessment p{margin-block:10px;font-size:14px;line-height:1.7;overflow-wrap:anywhere;}
+.triage-buckets{display:flex;gap:8px;flex-wrap:wrap;margin-block:16px;}
+.triage-buckets button[aria-pressed=true]{border-color:#0f766e;background:#0f766e;color:white;}
+.triage-assessment{padding:20px;border:1px solid var(--border);border-radius:20px;background:var(--secondary);margin-block:20px;}
+.triage-assessment h3{font-size:16px;font-weight:700;line-height:1.5;}
+.triage-assessment blockquote{margin-block:16px;padding-inline-start:16px;border-inline-start:2px solid #0f766e;}
+.triage-assessment a{color:#0f766e;text-decoration:underline;overflow-wrap:anywhere;}
+.dark .triage-assessment a{color:#5eead4;}
+.triage-assessment small{display:block;margin-block-start:8px;color:var(--muted-foreground);}
+.triage-check{display:flex;align-items:center;gap:10px;min-height:44px;font-size:14px;}
+.triage-check input{width:20px;height:20px;}
+.triage-version{overflow-wrap:anywhere;font-family:monospace;font-size:12px!important;}
+@media(max-width:700px){.triage-stats{grid-template-columns:repeat(2,minmax(0,1fr));}.triage-panel{padding:18px;}.admin-filter-grid{grid-template-columns:1fr!important;}.admin-search-row{flex-wrap:wrap;}.admin-search-row .report-field{width:100%;}}
+@media(prefers-reduced-motion:reduce){.study-spinner{animation:none;}}

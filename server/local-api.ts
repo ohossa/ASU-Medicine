@@ -7,7 +7,7 @@ export function localApi():Plugin{return {name:'asu-local-api',apply:'serve',con
  const origins=['http://127.0.0.1:'+server.config.server.port,'http://localhost:'+server.config.server.port];
  process.env.REPORT_ALLOWED_ORIGINS=[...(process.env.REPORT_ALLOWED_ORIGINS??'https://asu.codes,https://www.asu.codes').split(','),...origins].join(',');
  server.middlewares.use(async(req,res,next)=>{
-  const url=new URL(req.url??'/', 'http://localhost');const routes:Record<string,string>={'/api/question-reports':'/api/question-reports.ts','/api/question-bank':'/api/question-bank.ts','/api/sync':'/api/sync.ts'};
+  const url=new URL(req.url??'/', 'http://localhost');const routes:Record<string,string>={'/api/question-reports':'/api/question-reports.ts','/api/question-bank':'/api/question-bank.ts','/api/sync':'/api/sync.ts','/api/learning':'/api/learning.ts'};
   const route=routes[url.pathname];if(!route)return next();
   try{let body='';for await(const chunk of req){body+=chunk;if(Buffer.byteLength(body)>2*1024*1024){res.statusCode=413;res.end(JSON.stringify({error:'Request too large.'}));return;}}
    const module=await server.ssrLoadModule(route);

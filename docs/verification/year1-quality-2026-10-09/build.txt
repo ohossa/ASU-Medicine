@@ -1,0 +1,15 @@
+
+> replicated-quiz-app@0.0.1 prebuild
+> node scripts/generate-bank-manifest.mjs
+
+Catalogued 42 banks without embedding questions.
+
+> replicated-quiz-app@0.0.1 build
+> npm run typecheck && vite build
+
+
+> replicated-quiz-app@0.0.1 typecheck
+> tsc --noEmit -p tsconfig.app.json && tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.api.json
+
+src/app/App.tsx(650,29): error TS2552: Cannot find name 'canResumeQuizSession'. Did you mean 'clearQuizSession'?
+src/app/App.tsx(651,220): error TS2552: Cannot find name 'restoreSessionQuestionOrder'. Did you mean 'restoreQuestionOrder'?

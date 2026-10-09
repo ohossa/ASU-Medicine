@@ -1,0 +1,3883 @@
+[
+  {
+    "module": "IAE-1",
+    "a": {
+      "id": "IAE-1-SRC-0191",
+      "type": "mcq",
+      "lecture": 25,
+      "text": "Which part of the thoracic spinal nerve contains preganglionic sympathetic fibers?",
+      "explanation": "Preganglionic sympathetic fibers leave the spinal cord through ventral roots.",
+      "keyConcept": "Thoracic Spinal Nerves: Preganglionic sympathetic fibers leave the spinal cord through ventral roots",
+      "options": [
+        "Dorsal root.",
+        "Dorsal root ganglion.",
+        "Ventral root.",
+        "Dorsal ramus.",
+        "Grey ramus communicans."
+      ],
+      "correctIndex": 2
+    },
+    "b": {
+      "id": "IAE-1-SRC-0622",
+      "type": "mcq",
+      "lecture": 24,
+      "text": "Which part of the thoracic spinal nerve that contains preganglionic sympathetic fibers?",
+      "explanation": "The correct answer is the Ventral root because preganglionic sympathetic axons leave the lateral horn with the somatic motor fibres and then pass to the sympathetic chain through the white ramus communicans. The grey ramus carries postganglionic, not preganglionic, fibres back to the spinal nerve. The dorsal root and its ganglion are sensory.",
+      "keyConcept": "Preganglionic sympathetic fibres exit in the ventral root and reach the chain via the white ramus communicans.",
+      "options": [
+        "Dorsal root",
+        "Dorsal root ganglion",
+        "Ventral root",
+        "Dorsal ramus",
+        "Grey ramus communicans"
+      ],
+      "correctIndex": 2
+    }
+  },
+  {
+    "module": "IAE-1",
+    "a": {
+      "id": "IAE-1-SRC-0318",
+      "type": "mcq",
+      "lecture": 54,
+      "text": "The circulation that begins from capillaries and ends into capillaries:",
+      "explanation": "A portal system connects two capillary beds in series.",
+      "keyConcept": "Portal Circulation: A portal system connects two capillary beds in series",
+      "options": [
+        "Coronary.",
+        "Cerebral.",
+        "Portal.",
+        "Systemic.",
+        "Pulmonary."
+      ],
+      "correctIndex": 2
+    },
+    "b": {
+      "id": "IAE-1-SRC-0635",
+      "type": "mcq",
+      "lecture": 25,
+      "text": "The circulation that begins from capillaries & ends into capillaries is called:",
+      "explanation": "The correct answer is Portal because a portal system starts in one capillary bed and ends in a second capillary or sinusoidal bed without passing through the heart in between. The hepatic portal vein and the hypophyseal portal system are the two classic examples. The systemic and pulmonary circuits both begin and end at the heart.",
+      "keyConcept": "A portal system links two capillary beds in series.",
+      "options": [
+        "Coronary",
+        "Cerebral",
+        "Portal",
+        "Systemic",
+        "Pulmonary"
+      ],
+      "correctIndex": 2
+    }
+  },
+  {
+    "module": "IAE-1",
+    "a": {
+      "id": "IAE-1-SRC-0563",
+      "type": "mcq",
+      "lecture": 18,
+      "text": "The parasagittal plane divides the body into:",
+      "explanation": "The correct answer is right & left unequal halves because a parasagittal plane is any vertical antero-posterior plane parallel to, but not through, the midline. Only the median (mid-sagittal) plane gives equal right and left halves. Anterior/posterior division is the coronal plane and upper/lower division is the transverse plane.",
+      "keyConcept": "Median plane = equal halves; parasagittal = unequal right and left parts.",
+      "options": [
+        "Right & left equal halves",
+        "Right & left unequal halves",
+        "Anterior & posterior parts",
+        "Upper & lower equal parts",
+        "Upper & lower unequal parts"
+      ],
+      "correctIndex": 1
+    },
+    "b": {
+      "id": "IAE-1-SRC-0757",
+      "type": "mcq",
+      "lecture": 18,
+      "text": "A parasagittal plane divides the body into:",
+      "explanation": "A parasagittal plane runs parallel to the median plane but away from the midline, producing unequal right and left portions.",
+      "keyConcept": "Median plane gives equal halves; parasagittal planes give unequal portions.",
+      "options": [
+        "Right & left equal halves.",
+        "Right & left unequal halves.",
+        "Anterior & posterior parts.",
+        "Upper & lower equal parts.",
+        "Upper & lower unequal parts."
+      ],
+      "correctIndex": 1
+    }
+  },
+  {
+    "module": "IAE-1",
+    "a": {
+      "id": "IAE-1-SRC-0610",
+      "type": "mcq",
+      "lecture": 21,
+      "text": "Most of the joints that lie in the median plane of the body are:",
+      "explanation": "The correct answer is Secondary cartilaginous joint because symphyses are characteristically midline structures: the symphysis pubis, the intervertebral discs and the manubriosternal joint. Primary cartilaginous joints such as epiphyseal plates are not confined to the midline. Syndesmoses and gomphoses are fibrous joints found elsewhere.",
+      "keyConcept": "Midline joints are typically secondary cartilaginous (symphyses).",
+      "options": [
+        "Syndesmosis",
+        "Primary cartilaginous joint",
+        "Gomphosis",
+        "Secondary cartilaginous joint",
+        "Plane synovial"
+      ],
+      "correctIndex": 3
+    },
+    "b": {
+      "id": "IAE-1-SRC-0853",
+      "type": "mcq",
+      "lecture": 21,
+      "text": "Most joints that lie in the median plane of the body are:",
+      "explanation": "Secondary cartilaginous joints, or symphyses, characteristically lie in the midline, as at the symphysis pubis, intervertebral discs, and manubriosternal joint.",
+      "keyConcept": "Midline joints are commonly secondary cartilaginous symphyses.",
+      "options": [
+        "Syndesmosis",
+        "Primary cartilaginous joint",
+        "Plane synovial",
+        "Gomphosis",
+        "Secondary cartilaginous joint"
+      ],
+      "correctIndex": 4
+    }
+  },
+  {
+    "module": "IAE-1",
+    "a": {
+      "id": "IAE-1-SRC-0620",
+      "type": "mcq",
+      "lecture": 23,
+      "text": "Which part of the spinal nerve is formed of purely motor fibers?",
+      "explanation": "The correct answer is the Ventral root because it contains the axons of the anterior horn cells, together with preganglionic autonomic fibres in the appropriate segments. The dorsal root is purely sensory, and the nerve trunk and both rami are mixed after the roots join.",
+      "keyConcept": "The ventral root carries motor axons from anterior horn cells out of the cord.",
+      "options": [
+        "Ventral ramus",
+        "Dorsal root",
+        "Ventral root",
+        "Dorsal ramus",
+        "Nerve trunk"
+      ],
+      "correctIndex": 2
+    },
+    "b": {
+      "id": "IAE-1-SRC-0847",
+      "type": "mcq",
+      "lecture": 23,
+      "text": "Which part of a spinal nerve is formed of purely motor fibers?",
+      "explanation": "The ventral root carries motor axons away from the spinal cord. The dorsal root is sensory, while the spinal nerve trunk and both rami are mixed.",
+      "keyConcept": "Ventral root = motor; dorsal root = sensory; rami = mixed.",
+      "options": [
+        "Ventral ramus",
+        "Dorsal root",
+        "Ventral root",
+        "Dorsal ramus",
+        "Nerve trunk"
+      ],
+      "correctIndex": 2
+    }
+  },
+  {
+    "module": "IAE-1",
+    "a": {
+      "id": "IAE-1-SRC-0624",
+      "type": "mcq",
+      "lecture": 23,
+      "text": "Which ventral rami that do not form nerve plexuses?",
+      "explanation": "The correct answer is the Thoracic rami because the ventral rami of T2 to T11 run independently as intercostal nerves and retain a strictly segmental distribution. The cervical, lumbar and sacral rami interlace to form the cervical, brachial, lumbar and sacral plexuses, and the coccygeal ramus joins the small coccygeal plexus.",
+      "keyConcept": "Thoracic ventral rami stay segmental as intercostal nerves and form no plexus.",
+      "options": [
+        "Cervical",
+        "Thoracic",
+        "Lumbar",
+        "Sacral",
+        "Coccygeal"
+      ],
+      "correctIndex": 1
+    },
+    "b": {
+      "id": "IAE-1-SRC-0761",
+      "type": "mcq",
+      "lecture": 23,
+      "text": "Which ventral rami do not form nerve plexuses?",
+      "explanation": "Thoracic ventral rami remain segmental as intercostal and subcostal nerves rather than interlacing to form a plexus.",
+      "keyConcept": "Thoracic ventral rami generally do not form plexuses.",
+      "options": [
+        "Cervical",
+        "Thoracic",
+        "Lumbar",
+        "Sacral",
+        "Coccygeal"
+      ],
+      "correctIndex": 1
+    }
+  },
+  {
+    "module": "IAE-1",
+    "a": {
+      "id": "IAE-1-SRC-0630",
+      "type": "mcq",
+      "lecture": 25,
+      "text": "An example of an anatomical end artery:",
+      "explanation": "The correct answer is the Central retinal artery because it has no anastomosis whatsoever with neighbouring arteries, so its occlusion causes immediate and total blindness of that eye. The coronary and cerebral arteries are functional end arteries, having anastomoses that are too small to be effective. The mesenteric and renal arteries have richer connections.",
+      "keyConcept": "Anatomical end artery = no anastomosis at all: central artery of the retina.",
+      "options": [
+        "Coronary",
+        "Mesenteric",
+        "Cerebral",
+        "Central retinal",
+        "Renal"
+      ],
+      "correctIndex": 3
+    },
+    "b": {
+      "id": "IAE-1-SRC-0848",
+      "type": "mcq",
+      "lecture": 25,
+      "text": "An example of an anatomical end artery is:",
+      "explanation": "The central retinal artery has no effective anastomosis and is a true anatomical end artery. Coronary and cerebral arteries are generally described as functional end arteries because their anastomoses are inadequate.",
+      "keyConcept": "The central retinal artery is an anatomical end artery.",
+      "options": [
+        "Coronary",
+        "Mesenteric",
+        "Cerebral",
+        "Renal",
+        "Central retinal"
+      ],
+      "correctIndex": 4
+    }
+  },
+  {
+    "module": "IBM-1",
+    "a": {
+      "id": "IBM1-BIO-DRV-20260921-00154",
+      "type": "mcq",
+      "text": "Amino acids are ampholytes because they can function as either a(n):",
+      "lecture": 1,
+      "explanation": "Amino acids contain proton-accepting amino groups and proton-donating carboxyl groups, enabling acid and base behavior.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-00154",
+          "source": "all Bio questions.pdf",
+          "page": "16",
+          "sourceQuestionNumber": "6"
+        }
+      ],
+      "options": [
+        "Acid or base.",
+        "Neutral molecule or ion.",
+        "Polar or nonpolar.",
+        "Strand (chain) or branched molecule."
+      ],
+      "correctIndex": 0
+    },
+    "b": {
+      "id": "IBM1-BIO-DRV-20260921-01742",
+      "type": "mcq",
+      "text": "Amino acids are ampholytes because they can function as either an):",
+      "lecture": 1,
+      "explanation": "Amino and carboxyl groups permit amino acids to accept or donate protons, so they function as bases or acids.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-01742",
+          "source": "protein MCQ.pdf",
+          "page": "9",
+          "sourceQuestionNumber": "51"
+        }
+      ],
+      "options": [
+        "Acid or base.",
+        "Neutral molecule or ion.",
+        "Polar or nonpolar.",
+        "Strand (chain) or branched molecule."
+      ],
+      "correctIndex": 0
+    }
+  },
+  {
+    "module": "IBM-1",
+    "a": {
+      "id": "IBM1-BIO-DRV-20260921-00926",
+      "type": "mcq",
+      "text": "There are four parts to each amino acid. A carbon atom is bonded to a hydrogen atom, R group, and functional groups are : 6",
+      "lecture": 1,
+      "explanation": "The alpha carbon of a typical amino acid bears an amino group, a carboxyl group, hydrogen and an R group.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-00926",
+          "source": "bio mcq chapter protein.pdf",
+          "page": "6",
+          "sourceQuestionNumber": "29"
+        }
+      ],
+      "options": [
+        "hydroxy and amino group.",
+        "imino group and carboxyl group.",
+        "amino group and carboxyl group.",
+        "Amino group and sulfur group"
+      ],
+      "correctIndex": 2
+    },
+    "b": {
+      "id": "IBM1-BIO-DRV-20260921-00980",
+      "type": "mcq",
+      "text": "There are four parts to each amino acid. A carbon atom is bonded to a hydrogen atom, R group, and functional groups are :",
+      "lecture": 1,
+      "explanation": "A typical alpha carbon is attached to amino and carboxyl functional groups plus hydrogen and the variable R group.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-00980",
+          "source": "bio mcq chapter protein.pdf",
+          "page": "16",
+          "sourceQuestionNumber": "29"
+        }
+      ],
+      "options": [
+        "hydroxy and amino group.",
+        "imino group and carboxyl group.",
+        "amino group and carboxyl group.",
+        "Amino group and sulfur group"
+      ],
+      "correctIndex": 2
+    }
+  },
+  {
+    "module": "IBM-1",
+    "a": {
+      "id": "IBM1-BIO-DRV-20260921-00178",
+      "type": "mcq",
+      "text": "All of the following are polar amino acids Except:",
+      "lecture": 1,
+      "explanation": "Alanine has a methyl side chain; glutamate and arginine are charged and serine is polar through its hydroxyl group.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-00178",
+          "source": "all Bio questions.pdf",
+          "page": "19",
+          "sourceQuestionNumber": "38"
+        }
+      ],
+      "options": [
+        "Alanine",
+        "Glutamate",
+        "Arginine",
+        "Serine"
+      ],
+      "correctIndex": 0
+    },
+    "b": {
+      "id": "IBM1-BIO-DRV-20260921-01805",
+      "type": "mcq",
+      "text": "AlI of the following are polar amino acids Except:",
+      "lecture": 1,
+      "explanation": "Alanine's methyl side chain is nonpolar; glutamate and arginine are charged and serine is hydroxyl-bearing and polar.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-01805",
+          "source": "protein MCQ2.pdf",
+          "page": "5",
+          "sourceQuestionNumber": "38"
+        }
+      ],
+      "options": [
+        "Alanine",
+        "Glutamate",
+        "Arginine",
+        "Serine"
+      ],
+      "correctIndex": 0
+    }
+  },
+  {
+    "module": "IBM-1",
+    "a": {
+      "id": "IBM1-BIO-DRV-20260921-01703",
+      "type": "mcq",
+      "text": "Serine is important in the structure of some proteins as it provide which of the following groups?",
+      "lecture": 1,
+      "explanation": "Serine's side-chain hydroxyl supports hydrogen bonding and can serve as a phosphorylation site.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-01703",
+          "source": "protein MCQ.pdf",
+          "page": "4",
+          "sourceQuestionNumber": "12"
+        }
+      ],
+      "options": [
+        "Amino",
+        "Sulfhydryl",
+        "Carboxyl",
+        "Guanido",
+        "Hydroxyl."
+      ],
+      "correctIndex": 4
+    },
+    "b": {
+      "id": "IBM1-BIO-DRV-20260921-02112",
+      "type": "mcq",
+      "text": "Serine is important for the function of some proteins since it provides which of these groups?",
+      "lecture": 1,
+      "explanation": "Serine has a side-chain hydroxyl that can participate in catalysis and phosphorylation.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-02112",
+          "source": "proteins MCQ- marwa hamdy.pdf",
+          "page": "3",
+          "sourceQuestionNumber": "16"
+        },
+        {
+          "sourceId": "BIO-DRV-20260921-02165",
+          "source": "proteins MCQ- marwa hamdy.pdf",
+          "page": "14",
+          "sourceQuestionNumber": "72"
+        }
+      ],
+      "options": [
+        "Amino",
+        "Guanido",
+        "Sulfhydryl",
+        "Carboxyl",
+        "Hydroxyl"
+      ],
+      "correctIndex": 4
+    }
+  },
+  {
+    "module": "IBM-1",
+    "a": {
+      "id": "IBM1-BIO-DRV-20260921-00176",
+      "type": "mcq",
+      "text": "Which amino acid can form disulphide bonds?",
+      "lecture": 1,
+      "explanation": "Oxidation of two cysteine thiols creates a disulfide crosslink; the other listed residues lack thiols.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-00176",
+          "source": "all Bio questions.pdf",
+          "page": "19",
+          "sourceQuestionNumber": "36"
+        },
+        {
+          "sourceId": "BIO-DRV-20260921-01803",
+          "source": "protein MCQ2.pdf",
+          "page": "5",
+          "sourceQuestionNumber": "36"
+        }
+      ],
+      "options": [
+        "Glycine",
+        "Proline.",
+        "Glutamate.",
+        "Cysteine."
+      ],
+      "correctIndex": 3,
+      "duplicateAliases": [
+        {
+          "module": "IBM-1",
+          "chapterId": 103,
+          "id": "IBM1-BIO-DRV-20260921-01803"
+        }
+      ]
+    },
+    "b": {
+      "id": "IBM1-BIO-DRV-20260921-01794",
+      "type": "mcq",
+      "text": "Which amine acid can form disulphide bonds",
+      "lecture": 1,
+      "explanation": "Cysteine thiols oxidize in pairs to produce disulfide bridges; the other listed side chains lack thiols.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-01794",
+          "source": "protein MCQ2.pdf",
+          "page": "4",
+          "sourceQuestionNumber": "36"
+        }
+      ],
+      "options": [
+        "Glycine",
+        "Proline.",
+        "Glutamate.",
+        "Cysteine."
+      ],
+      "correctIndex": 3
+    }
+  },
+  {
+    "module": "IBM-1",
+    "a": {
+      "id": "IBM1-BIO-DRV-20260921-00166",
+      "type": "mcq",
+      "text": "a-helices, B-pleated sheets and B-bends are examples of protein's:",
+      "lecture": 1,
+      "explanation": "Helices, sheets and turns describe local backbone conformations, so they belong to secondary structure; tertiary structure is the overall fold of one chain.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-00166",
+          "source": "all Bio questions.pdf",
+          "page": "18",
+          "sourceQuestionNumber": "18"
+        }
+      ],
+      "options": [
+        "Primary structure.",
+        "Secondary structure.",
+        "Tertiary structure.",
+        "Quaternary structure."
+      ],
+      "correctIndex": 1
+    },
+    "b": {
+      "id": "IBM1-BIO-DRV-20260921-01752",
+      "type": "mcq",
+      "text": "a-helices, B-pleated sheets and ß-bends are examples of protein's:",
+      "lecture": 1,
+      "explanation": "Helices, sheets and turns are local repeating backbone configurations classified as secondary protein structure.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-01752",
+          "source": "protein MCQ.pdf",
+          "page": "10",
+          "sourceQuestionNumber": "61"
+        }
+      ],
+      "options": [
+        "Primary structure.",
+        "Secondary structure.",
+        "Tertiary structure.",
+        "Quaternary structure."
+      ],
+      "correctIndex": 1
+    }
+  },
+  {
+    "module": "IBM-1",
+    "a": {
+      "id": "IBM1-BIO-DRV-20260921-00166",
+      "type": "mcq",
+      "text": "a-helices, B-pleated sheets and B-bends are examples of protein's:",
+      "lecture": 1,
+      "explanation": "Helices, sheets and turns describe local backbone conformations, so they belong to secondary structure; tertiary structure is the overall fold of one chain.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-00166",
+          "source": "all Bio questions.pdf",
+          "page": "18",
+          "sourceQuestionNumber": "18"
+        }
+      ],
+      "options": [
+        "Primary structure.",
+        "Secondary structure.",
+        "Tertiary structure.",
+        "Quaternary structure."
+      ],
+      "correctIndex": 1
+    },
+    "b": {
+      "id": "IBM1-BIO-DRV-20260921-01783",
+      "type": "mcq",
+      "text": "a-helices, P-pleated sheets and ß-bends are examples of protein's:",
+      "lecture": 1,
+      "explanation": "Helices, sheets and turns describe local backbone folding and therefore secondary structure, stabilized chiefly by backbone hydrogen bonds.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-01783",
+          "source": "protein MCQ2.pdf",
+          "page": "3",
+          "sourceQuestionNumber": "18"
+        }
+      ],
+      "options": [
+        "Primary structure",
+        "Secondary structure",
+        "Tertiary structure",
+        "Quaternary structure"
+      ],
+      "correctIndex": 1
+    }
+  },
+  {
+    "module": "IBM-1",
+    "a": {
+      "id": "IBM1-BIO-DRV-20260921-01752",
+      "type": "mcq",
+      "text": "a-helices, B-pleated sheets and ß-bends are examples of protein's:",
+      "lecture": 1,
+      "explanation": "Helices, sheets and turns are local repeating backbone configurations classified as secondary protein structure.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-01752",
+          "source": "protein MCQ.pdf",
+          "page": "10",
+          "sourceQuestionNumber": "61"
+        }
+      ],
+      "options": [
+        "Primary structure.",
+        "Secondary structure.",
+        "Tertiary structure.",
+        "Quaternary structure."
+      ],
+      "correctIndex": 1
+    },
+    "b": {
+      "id": "IBM1-BIO-DRV-20260921-01783",
+      "type": "mcq",
+      "text": "a-helices, P-pleated sheets and ß-bends are examples of protein's:",
+      "lecture": 1,
+      "explanation": "Helices, sheets and turns describe local backbone folding and therefore secondary structure, stabilized chiefly by backbone hydrogen bonds.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-01783",
+          "source": "protein MCQ2.pdf",
+          "page": "3",
+          "sourceQuestionNumber": "18"
+        }
+      ],
+      "options": [
+        "Primary structure",
+        "Secondary structure",
+        "Tertiary structure",
+        "Quaternary structure"
+      ],
+      "correctIndex": 1
+    }
+  },
+  {
+    "module": "IBM-1",
+    "a": {
+      "id": "IBM1-BIO-DRV-20260921-00167",
+      "type": "mcq",
+      "text": "The tertiary structure of proteins is stabilized by the following, except:",
+      "lecture": 1,
+      "explanation": "Peptide bonds establish the primary backbone; tertiary folding is stabilized by side-chain interactions including hydrogen bonds, hydrophobic effects and disulfides.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-00167",
+          "source": "all Bio questions.pdf",
+          "page": "18",
+          "sourceQuestionNumber": "19"
+        },
+        {
+          "sourceId": "BIO-DRV-20260921-01784",
+          "source": "protein MCQ2.pdf",
+          "page": "3",
+          "sourceQuestionNumber": "19"
+        }
+      ],
+      "options": [
+        "Hydrogen bonds.",
+        "Hydrophobic interactions.",
+        "Peptide bonds.",
+        "Disulfide bonds."
+      ],
+      "correctIndex": 2,
+      "duplicateAliases": [
+        {
+          "module": "IBM-1",
+          "chapterId": 104,
+          "id": "IBM1-BIO-DRV-20260921-01784"
+        }
+      ]
+    },
+    "b": {
+      "id": "IBM1-BIO-DRV-20260921-01753",
+      "type": "mcq",
+      "text": "The tertiary structure of proteins is stabilized by all the following EXCEPT:",
+      "lecture": 1,
+      "explanation": "Peptide bonds determine the primary chain sequence; hydrogen bonds, hydrophobic interactions and disulfides stabilize tertiary folding.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-01753",
+          "source": "protein MCQ.pdf",
+          "page": "11",
+          "sourceQuestionNumber": "62"
+        },
+        {
+          "sourceId": "BIO-DRV-20260921-01952",
+          "source": "protein MCQs Dr.omar.pdf",
+          "page": "11",
+          "sourceQuestionNumber": "62"
+        }
+      ],
+      "options": [
+        "Hydrogen bonds.",
+        "Hydrophobic interactions.",
+        "Peptide bonds.",
+        "Disulfide bonds."
+      ],
+      "correctIndex": 2,
+      "duplicateAliases": [
+        {
+          "module": "IBM-1",
+          "chapterId": 104,
+          "id": "IBM1-BIO-DRV-20260921-01952"
+        }
+      ]
+    }
+  },
+  {
+    "module": "IBM-1",
+    "a": {
+      "id": "IBM1-BIO-DRV-20260921-01766",
+      "type": "mcq",
+      "text": "The two-subunit (dimer) structure of creatine kinase represents which level of protein structure?",
+      "lecture": 1,
+      "explanation": "Association of two polypeptide chains is quaternary structure, regardless of each individual chain's tertiary fold.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-01766",
+          "source": "protein MCQ.pdf",
+          "page": "12",
+          "sourceQuestionNumber": "75"
+        }
+      ],
+      "options": [
+        "Primary structure.",
+        "Secondary structure.",
+        "Tertiary structure.",
+        "Quaternary structure."
+      ],
+      "correctIndex": 3
+    },
+    "b": {
+      "id": "IBM1-BIO-DRV-20260921-01965",
+      "type": "mcq",
+      "text": "The two-subunit (Dimmer) structure of the Creatine kinase represents protein's:",
+      "lecture": 1,
+      "explanation": "Association of two polypeptide subunits is quaternary structure; tertiary structure describes each chain individually.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-01965",
+          "source": "protein MCQs Dr.omar.pdf",
+          "page": "12",
+          "sourceQuestionNumber": "75"
+        },
+        {
+          "sourceId": "BIO-DRV-20260921-02039",
+          "source": "protein-enzymes mcq omar.pdf",
+          "page": "12",
+          "sourceQuestionNumber": "75"
+        }
+      ],
+      "options": [
+        "Primary structure",
+        "Secondary structure",
+        "Tertiary structure",
+        "Quaternary structure"
+      ],
+      "correctIndex": 3
+    }
+  },
+  {
+    "module": "IBM-1",
+    "a": {
+      "id": "IBM1-BIO-DRV-20260921-00937",
+      "type": "mcq",
+      "text": "One of the following is true concerning fibrous protein: 8",
+      "lecture": 1,
+      "explanation": "Fibrous proteins form elongated structural elements such as collagen and keratin rather than compact soluble globules.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-00937",
+          "source": "bio mcq chapter protein.pdf",
+          "page": "8",
+          "sourceQuestionNumber": "41"
+        }
+      ],
+      "options": [
+        "Spherical in shape",
+        "Soluble in water",
+        "Have axial ratio less than 10",
+        "Provide structural support"
+      ],
+      "correctIndex": 3
+    },
+    "b": {
+      "id": "IBM1-BIO-DRV-20260921-00992",
+      "type": "mcq",
+      "text": "One of the following is true concerning fibrous protein:",
+      "lecture": 1,
+      "explanation": "Fibrous proteins form elongated supporting structures such as collagen and keratin; their shape contrasts with compact globular proteins.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-00992",
+          "source": "bio mcq chapter protein.pdf",
+          "page": "18",
+          "sourceQuestionNumber": "41"
+        }
+      ],
+      "options": [
+        "Spherical in shape",
+        "Soluble in water",
+        "Have axial ratio less than 10",
+        "Provide structural support"
+      ],
+      "correctIndex": 3
+    }
+  },
+  {
+    "module": "IBM-1",
+    "a": {
+      "id": "IBM1-BIO-DRV-20260921-01381",
+      "type": "mcq",
+      "text": "Sucrose :-",
+      "lecture": 1,
+      "explanation": "Both sucrose anomeric carbons participate in its glycosidic bond, so neither is free to open to a reducing carbonyl.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-01381",
+          "source": "MCQ revision last year.pdf",
+          "page": "1",
+          "sourceQuestionNumber": "1"
+        }
+      ],
+      "options": [
+        "Is a non-reducing sugar",
+        "Has a free anomeric carbon",
+        "Results from partial hydrolysis of carbohydrates",
+        "None of the above"
+      ],
+      "correctIndex": 0
+    },
+    "b": {
+      "id": "IBM1-BIO-DRV-20260921-01509",
+      "type": "mcq",
+      "text": "Sucrose:",
+      "lecture": 1,
+      "explanation": "Sucrose locks both anomeric carbons in its glycosidic bond and is nonreducing.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-01509",
+          "source": "omar mcq 2022.pdf",
+          "page": "13",
+          "sourceQuestionNumber": "1"
+        }
+      ],
+      "options": [
+        "Is a non-reducing sugar",
+        "Has a free anomeric carbon",
+        "Results from partial hydrolysis of carbohydrates",
+        "None of the above"
+      ],
+      "correctIndex": 0
+    }
+  },
+  {
+    "module": "IBM-1",
+    "a": {
+      "id": "IBM1-BIO-DRV-20260921-01118",
+      "type": "mcq",
+      "text": "Which of the following is the parent compound of ω-6 family:",
+      "lecture": 1,
+      "explanation": "Linoleic acid is the essential n-6 parent fatty acid from which longer n-6 fatty acids can be formed. Omega numbering identifies the first double bond from the methyl end.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-01118",
+          "source": "CHO- Krebs mcq omar.pdf",
+          "page": "8",
+          "sourceQuestionNumber": "5"
+        }
+      ],
+      "options": [
+        "Oleic acid.",
+        "Elaidic acid",
+        "Linoleic acid.",
+        "Linolenic acid",
+        "Palmitic acid."
+      ],
+      "correctIndex": 2
+    },
+    "b": {
+      "id": "IBM1-BIO-DRV-20260921-01398",
+      "type": "mcq",
+      "text": "Which of the following is the parent compound of ω-6 family :-",
+      "lecture": 1,
+      "explanation": "Linoleic acid is the essential n-6 fatty acid from which longer n-6 members can be formed.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-01398",
+          "source": "MCQ revision last year.pdf",
+          "page": "3",
+          "sourceQuestionNumber": "5"
+        }
+      ],
+      "options": [
+        "Oleic acid",
+        "Elaidic acid",
+        "Linoleic acid",
+        "Linolenic acid",
+        "Palmitic acid"
+      ],
+      "correctIndex": 2
+    }
+  },
+  {
+    "module": "IBM-1",
+    "a": {
+      "id": "IBM1-BIO-DRV-20260921-01118",
+      "type": "mcq",
+      "text": "Which of the following is the parent compound of ω-6 family:",
+      "lecture": 1,
+      "explanation": "Linoleic acid is the essential n-6 parent fatty acid from which longer n-6 fatty acids can be formed. Omega numbering identifies the first double bond from the methyl end.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-01118",
+          "source": "CHO- Krebs mcq omar.pdf",
+          "page": "8",
+          "sourceQuestionNumber": "5"
+        }
+      ],
+      "options": [
+        "Oleic acid.",
+        "Elaidic acid",
+        "Linoleic acid.",
+        "Linolenic acid",
+        "Palmitic acid."
+      ],
+      "correctIndex": 2
+    },
+    "b": {
+      "id": "IBM1-BIO-DRV-20260921-01551",
+      "type": "mcq",
+      "text": "Which of the following is the parent compound of the ω-6 family:",
+      "lecture": 1,
+      "explanation": "Linoleic acid is the essential n-6 parent fatty acid and can supply longer n-6 members. Omega numbering locates the first double bond from the methyl end.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-01551",
+          "source": "omar mcq 2022.pdf",
+          "page": "19",
+          "sourceQuestionNumber": "5"
+        }
+      ],
+      "options": [
+        "Oleic acid",
+        "Elaidic acid",
+        "Linoleic acid",
+        "Linolenic acid",
+        "Palmitic acid"
+      ],
+      "correctIndex": 2
+    }
+  },
+  {
+    "module": "IBM-1",
+    "a": {
+      "id": "IBM1-BIO-DRV-20260921-01398",
+      "type": "mcq",
+      "text": "Which of the following is the parent compound of ω-6 family :-",
+      "lecture": 1,
+      "explanation": "Linoleic acid is the essential n-6 fatty acid from which longer n-6 members can be formed.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-01398",
+          "source": "MCQ revision last year.pdf",
+          "page": "3",
+          "sourceQuestionNumber": "5"
+        }
+      ],
+      "options": [
+        "Oleic acid",
+        "Elaidic acid",
+        "Linoleic acid",
+        "Linolenic acid",
+        "Palmitic acid"
+      ],
+      "correctIndex": 2
+    },
+    "b": {
+      "id": "IBM1-BIO-DRV-20260921-01551",
+      "type": "mcq",
+      "text": "Which of the following is the parent compound of the ω-6 family:",
+      "lecture": 1,
+      "explanation": "Linoleic acid is the essential n-6 parent fatty acid and can supply longer n-6 members. Omega numbering locates the first double bond from the methyl end.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-01551",
+          "source": "omar mcq 2022.pdf",
+          "page": "19",
+          "sourceQuestionNumber": "5"
+        }
+      ],
+      "options": [
+        "Oleic acid",
+        "Elaidic acid",
+        "Linoleic acid",
+        "Linolenic acid",
+        "Palmitic acid"
+      ],
+      "correctIndex": 2
+    }
+  },
+  {
+    "module": "IBM-1",
+    "a": {
+      "id": "IBM1-BIO-DRV-20260921-01119",
+      "type": "mcq",
+      "text": "Infantile Respiratory Distress Syndrome occur due to deficiency of:",
+      "lecture": 1,
+      "explanation": "Neonatal respiratory distress syndrome is caused by deficient pulmonary surfactant, whose major surface-active phospholipid is dipalmitoylphosphatidylcholine (dipalmitoyl lecithin).",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-01119",
+          "source": "CHO- Krebs mcq omar.pdf",
+          "page": "8",
+          "sourceQuestionNumber": "6"
+        }
+      ],
+      "options": [
+        "Cardiolipin",
+        "Dipalmitoyl Lecithin",
+        "Phosphatidyl glycerol",
+        "Plasmalogen",
+        "cephalin."
+      ],
+      "correctIndex": 1
+    },
+    "b": {
+      "id": "IBM1-BIO-DRV-20260921-01399",
+      "type": "mcq",
+      "text": "Infantile Respiratory Distress Syndrome occur due to deficiency of :-",
+      "lecture": 1,
+      "explanation": "Deficient dipalmitoylphosphatidylcholine reduces surfactant function, increasing alveolar surface tension and collapse risk in premature infants.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-01399",
+          "source": "MCQ revision last year.pdf",
+          "page": "3",
+          "sourceQuestionNumber": "6"
+        }
+      ],
+      "options": [
+        "Cardiolipin",
+        "Dipalmitoyl Lecithin",
+        "Phosphatidyl glycerol",
+        "Plasmalogen",
+        "cephalin."
+      ],
+      "correctIndex": 1
+    }
+  },
+  {
+    "module": "IBM-1",
+    "a": {
+      "id": "IBM1-BIO-DRV-20260921-01120",
+      "type": "mcq",
+      "text": "0-3 fatty acids have significant effects of brain cognitive function, which one of the following food is rich on them",
+      "lecture": 1,
+      "explanation": "Salmon supplies the long-chain omega-3 fatty acids EPA and DHA. The listed dairy fat, meat and corn or tropical oils are not comparably rich sources of these fats.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-01120",
+          "source": "CHO- Krebs mcq omar.pdf",
+          "page": "9",
+          "sourceQuestionNumber": "7"
+        }
+      ],
+      "options": [
+        "cow milk melted fat",
+        "tropical plant oil.",
+        "Corn oil.",
+        "Buffalo meat",
+        "Salmon fish."
+      ],
+      "correctIndex": 4
+    },
+    "b": {
+      "id": "IBM1-BIO-DRV-20260921-01553",
+      "type": "mcq",
+      "text": "∞-3 fatty acids have significant effects of brain cognitive function, which one of the following food is rich on them",
+      "lecture": 1,
+      "explanation": "Salmon supplies substantial EPA and DHA. The listed meats, dairy fat and corn/tropical oils are not comparably rich sources of these long-chain omega-3 fats.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-01553",
+          "source": "omar mcq 2022.pdf",
+          "page": "20",
+          "sourceQuestionNumber": "7"
+        }
+      ],
+      "options": [
+        "cow milk melted fat",
+        "tropical plant oil.",
+        "Corn oil.",
+        "Buffalo meat",
+        "Salmon fish."
+      ],
+      "correctIndex": 4
+    }
+  },
+  {
+    "module": "IBM-1",
+    "a": {
+      "id": "IBM1-BIO-DRV-20260921-01141",
+      "type": "mcq",
+      "text": "Which out of the following alcohols is used for waxes:",
+      "lecture": 1,
+      "explanation": "Waxes are esters of long-chain fatty acids and long-chain monohydric alcohols.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-01141",
+          "source": "CHO- Krebs mcq omar.pdf",
+          "page": "12",
+          "sourceQuestionNumber": "28"
+        }
+      ],
+      "options": [
+        "Cholesterol",
+        "Glycerol",
+        "Monohydric large alcohol",
+        "Sphingosine"
+      ],
+      "correctIndex": 2
+    },
+    "b": {
+      "id": "IBM1-BIO-DRV-20260921-01574",
+      "type": "mcq",
+      "text": "Which out of the following alcohols is ised for waxes:",
+      "lecture": 1,
+      "explanation": "Waxes are esters of long-chain fatty acids with long-chain monohydric alcohols, unlike glycerol-based TAG.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-01574",
+          "source": "omar mcq 2022.pdf",
+          "page": "23",
+          "sourceQuestionNumber": "28"
+        }
+      ],
+      "options": [
+        "Cholesterol",
+        "Glycerol",
+        "Monohydric large alcohol",
+        "Sphingosine"
+      ],
+      "correctIndex": 2
+    }
+  },
+  {
+    "module": "IBM-1",
+    "a": {
+      "id": "IBM1-BIO-DRV-20260921-01145",
+      "type": "mcq",
+      "text": "Choose the monoenoic fatty acid out of the following",
+      "lecture": 1,
+      "explanation": "Monoenoic means one double bond, as in oleic acid (18:1). The other listed acids are polyunsaturated.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-01145",
+          "source": "CHO- Krebs mcq omar.pdf",
+          "page": "12",
+          "sourceQuestionNumber": "32"
+        }
+      ],
+      "options": [
+        "Arachidonic acid",
+        "Oleic acid",
+        "Linoleic acid",
+        "Linolenic acid"
+      ],
+      "correctIndex": 1
+    },
+    "b": {
+      "id": "IBM1-BIO-DRV-20260921-01150",
+      "type": "mcq",
+      "text": "Choose the monounsaturated fatty acid out of the following•",
+      "lecture": 1,
+      "explanation": "Oleic acid is monounsaturated; the other named unsaturated fatty acids have multiple double bonds.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-01150",
+          "source": "CHO- Krebs mcq omar.pdf",
+          "page": "13",
+          "sourceQuestionNumber": "37"
+        }
+      ],
+      "options": [
+        "Arachidonic acid",
+        "Oleic acid",
+        "Linoleic acid",
+        "Linolenic acid"
+      ],
+      "correctIndex": 1
+    }
+  },
+  {
+    "module": "IBM-1",
+    "a": {
+      "id": "IBM1-BIO-DRV-20260921-01145",
+      "type": "mcq",
+      "text": "Choose the monoenoic fatty acid out of the following",
+      "lecture": 1,
+      "explanation": "Monoenoic means one double bond, as in oleic acid (18:1). The other listed acids are polyunsaturated.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-01145",
+          "source": "CHO- Krebs mcq omar.pdf",
+          "page": "12",
+          "sourceQuestionNumber": "32"
+        }
+      ],
+      "options": [
+        "Arachidonic acid",
+        "Oleic acid",
+        "Linoleic acid",
+        "Linolenic acid"
+      ],
+      "correctIndex": 1
+    },
+    "b": {
+      "id": "IBM1-BIO-DRV-20260921-01578",
+      "type": "mcq",
+      "text": "Choose the monoenoic fatty acid out of the following•",
+      "lecture": 1,
+      "explanation": "Oleic acid is monoenoic (one double bond). The other listed unsaturated acids have more than one.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-01578",
+          "source": "omar mcq 2022.pdf",
+          "page": "23",
+          "sourceQuestionNumber": "32"
+        }
+      ],
+      "options": [
+        "Arachidonic acid",
+        "Oleic acid",
+        "Linoleic acid",
+        "Linolenic acid"
+      ],
+      "correctIndex": 1
+    }
+  },
+  {
+    "module": "IBM-1",
+    "a": {
+      "id": "IBM1-BIO-DRV-20260921-01150",
+      "type": "mcq",
+      "text": "Choose the monounsaturated fatty acid out of the following•",
+      "lecture": 1,
+      "explanation": "Oleic acid is monounsaturated; the other named unsaturated fatty acids have multiple double bonds.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-01150",
+          "source": "CHO- Krebs mcq omar.pdf",
+          "page": "13",
+          "sourceQuestionNumber": "37"
+        }
+      ],
+      "options": [
+        "Arachidonic acid",
+        "Oleic acid",
+        "Linoleic acid",
+        "Linolenic acid"
+      ],
+      "correctIndex": 1
+    },
+    "b": {
+      "id": "IBM1-BIO-DRV-20260921-01578",
+      "type": "mcq",
+      "text": "Choose the monoenoic fatty acid out of the following•",
+      "lecture": 1,
+      "explanation": "Oleic acid is monoenoic (one double bond). The other listed unsaturated acids have more than one.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-01578",
+          "source": "omar mcq 2022.pdf",
+          "page": "23",
+          "sourceQuestionNumber": "32"
+        }
+      ],
+      "options": [
+        "Arachidonic acid",
+        "Oleic acid",
+        "Linoleic acid",
+        "Linolenic acid"
+      ],
+      "correctIndex": 1
+    }
+  },
+  {
+    "module": "IBM-1",
+    "a": {
+      "id": "IBM1-BIO-DRV-20260921-00257",
+      "type": "mcq",
+      "text": "In enzyme kinetics Km is:",
+      "lecture": 1,
+      "explanation": "Km is the substrate concentration giving v = Vmax/2 under Michaelis-Menten conditions. It is not generally the ES dissociation constant, because it also depends on catalytic turnover.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-00257",
+          "source": "all Bio questions.pdf",
+          "page": "28",
+          "sourceQuestionNumber": "20"
+        }
+      ],
+      "options": [
+        "The substrate concentration that gives one half Vmax",
+        "The dissociation constant for the enzyme substrate complex",
+        "Concentration of enzyme",
+        "Half of the substrate concentration required to achieve Vmax"
+      ],
+      "correctIndex": 0
+    },
+    "b": {
+      "id": "IBM1-BIO-DRV-20260921-01043",
+      "type": "mcq",
+      "text": "In enzyme kinetics Km implies:",
+      "lecture": 1,
+      "explanation": "Km is the substrate concentration giving v = Vmax/2 under Michaelis-Menten conditions. It is not generally the ES dissociation constant, because it also depends on catalytic turnover.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-01043",
+          "source": "bio mcq chpter enzeym.pdf",
+          "page": "10",
+          "sourceQuestionNumber": "38"
+        }
+      ],
+      "options": [
+        "The substrate concentration that gives one half Vmax",
+        "The dissociation constant for the enzyme substrate complex",
+        "Concentration of enzyme",
+        "Half of the substrate concentration required to achieve Vmax"
+      ],
+      "correctIndex": 0
+    }
+  },
+  {
+    "module": "IBM-1",
+    "a": {
+      "id": "IBM1-BIO-DRV-20260921-01882",
+      "type": "mcq",
+      "text": "Initial velocity of the enzyme catalyze reaction in which of the followings :-",
+      "lecture": 1,
+      "explanation": "Initial velocity is measured early, before product accumulation and substrate depletion materially alter the rate. It therefore reflects the starting substrate concentration rather than a reaction already approaching equilibrium.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-01882",
+          "source": "protein MCQ3.pdf",
+          "page": "4",
+          "sourceQuestionNumber": "13"
+        }
+      ],
+      "options": [
+        "Velocity before adding the enzyme",
+        "The lowest velocity",
+        "Velocity before accumulation of products",
+        "Velocity at zero substrate concentration",
+        "Velocity at substrate concentration equal to Km"
+      ],
+      "correctIndex": 2
+    },
+    "b": {
+      "id": "IBM1-BIO-DRV-20260921-02052",
+      "type": "mcq",
+      "text": "Initial velocity of the enzyme catalyze reaction in which of the followings",
+      "lecture": 1,
+      "explanation": "Initial velocity is measured early, before product accumulation and substrate depletion materially alter the rate. It therefore reflects the starting substrate concentration rather than a reaction already approaching equilibrium.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-02052",
+          "source": "protein-enzymes mcq omar.pdf",
+          "page": "14",
+          "sourceQuestionNumber": "13"
+        },
+        {
+          "sourceId": "BIO-DRV-20260921-02334",
+          "source": "revision ptotein and enzymes MCQ.pdf",
+          "page": "10",
+          "sourceQuestionNumber": "13"
+        }
+      ],
+      "options": [
+        "Velocity before adding the enzyme",
+        "The lowest velocity",
+        "Velocity before accumulation of products",
+        "Velocity at zero substrate concentration",
+        "Velocity at substrate concentration equal to Km."
+      ],
+      "correctIndex": 2,
+      "duplicateAliases": [
+        {
+          "module": "IBM-1",
+          "chapterId": 111,
+          "id": "IBM1-BIO-DRV-20260921-02334"
+        }
+      ]
+    }
+  },
+  {
+    "module": "IBM-1",
+    "a": {
+      "id": "IBM1-BIO-DRV-20260921-01361",
+      "type": "mcq",
+      "text": "In lineweaver-Burk plot",
+      "lecture": 1,
+      "explanation": "Reciprocating the Michaelis-Menten equation gives 1/v = (Km/Vmax)(1/[S]) + 1/Vmax. Thus the axes are 1/v and 1/[S], the slope is Km/Vmax and the y-intercept is 1/Vmax.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-01361",
+          "source": "enzymes MCQs Dr.omar.pdf",
+          "page": "7",
+          "sourceQuestionNumber": "43"
+        },
+        {
+          "sourceId": "BIO-DRV-20260921-02082",
+          "source": "protein-enzymes mcq omar.pdf",
+          "page": "19",
+          "sourceQuestionNumber": "43"
+        }
+      ],
+      "options": [
+        "1/v is plotted against 1/s",
+        "Km is numerically equal to intercept on Y axis",
+        "Vmax is numerically equal to intercept on X axis",
+        "Km is equal to slope."
+      ],
+      "correctIndex": 0,
+      "duplicateAliases": [
+        {
+          "module": "IBM-1",
+          "chapterId": 111,
+          "id": "IBM1-BIO-DRV-20260921-02082"
+        }
+      ]
+    },
+    "b": {
+      "id": "IBM1-BIO-DRV-20260921-02364",
+      "type": "mcq",
+      "text": "In lineweaver -Burk plot",
+      "lecture": 1,
+      "explanation": "Reciprocating the Michaelis-Menten equation gives 1/v = (Km/Vmax)(1/[S]) + 1/Vmax. Thus the axes are 1/v and 1/[S], the slope is Km/Vmax and the y-intercept is 1/Vmax.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-02364",
+          "source": "revision ptotein and enzymes MCQ.pdf",
+          "page": "14",
+          "sourceQuestionNumber": "43"
+        }
+      ],
+      "options": [
+        "1/v is plotted against 1/s",
+        "Km is numerically equal to intercept on Y axis",
+        "Vmax is numerically equal to intercept on X axis",
+        "Km is equal to slope."
+      ],
+      "correctIndex": 0
+    }
+  },
+  {
+    "module": "IBM-1",
+    "a": {
+      "id": "IBM1-BIO-DRV-20260921-01078",
+      "type": "mcq",
+      "text": "Sulfonamides act as antibacterial drugs because:",
+      "lecture": 1,
+      "explanation": "Sulfonamides are PABA analogues that inhibit bacterial folate synthesis; DHFR inhibition instead describes trimethoprim.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-01078",
+          "source": "bio mcq chpter enzeym.pdf",
+          "page": "18",
+          "sourceQuestionNumber": "34"
+        }
+      ],
+      "options": [
+        "They inhibit transpeptidase enzyme of bacteria.",
+        "They resemble PABA in structure",
+        "They bind covalently to folic acid essential for bacterial growth",
+        "They inhibit dihydrofolate reductase enzyme"
+      ],
+      "correctIndex": 1
+    },
+    "b": {
+      "id": "IBM1-BIO-DRV-20260921-01487",
+      "type": "mcq",
+      "text": "Sulfonamides acts as antibacterial drugs because:",
+      "lecture": 1,
+      "explanation": "Sulfonamides mimic PABA and interfere with bacterial folate synthesis; dihydrofolate reductase is the trimethoprim target.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-01487",
+          "source": "omar mcq 2022.pdf",
+          "page": "9",
+          "sourceQuestionNumber": "19"
+        }
+      ],
+      "options": [
+        "They inhibit transpeptidase enzyme of bacteria.",
+        "They resemble PABA in structure.",
+        "They bind covalently to folic acid essential for bacterial growth.",
+        "They inhibit dihydrofolate reductase enzyme."
+      ],
+      "correctIndex": 1
+    }
+  },
+  {
+    "module": "IBM-1",
+    "a": {
+      "id": "IBM1-BIO-DRV-20260921-01336",
+      "type": "mcq",
+      "text": "Allopurinol inhibit conversion of",
+      "lecture": 1,
+      "explanation": "Xanthine oxidoreductase converts hypoxanthine to xanthine and then to urate; allopurinol inhibits these oxidation steps. Conversion of hypoxanthine to IMP is a separate salvage reaction.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-01336",
+          "source": "enzymes MCQs Dr.omar.pdf",
+          "page": "3",
+          "sourceQuestionNumber": "15"
+        }
+      ],
+      "options": [
+        "Hypoxanthine to IMP",
+        "Uric acid to Xanthine",
+        "Adenine to Hypoxanthine",
+        "Hypoxanthine to uric acid",
+        "Adenine to guanine."
+      ],
+      "correctIndex": 3
+    },
+    "b": {
+      "id": "IBM1-BIO-DRV-20260921-02336",
+      "type": "mcq",
+      "text": "Allopurinol inhibit con version of",
+      "lecture": 1,
+      "explanation": "Xanthine oxidoreductase converts hypoxanthine to xanthine and then to urate; allopurinol inhibits these oxidation steps. Conversion of hypoxanthine to IMP is a separate salvage reaction.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-02336",
+          "source": "revision ptotein and enzymes MCQ.pdf",
+          "page": "11",
+          "sourceQuestionNumber": "15"
+        }
+      ],
+      "options": [
+        "Hypoxanthine to IMP",
+        "Uric acid to Xanthine",
+        "Adenine to Hypoxanthine",
+        "Hypoxanthine to uric acid",
+        "Adenine to guanine."
+      ],
+      "correctIndex": 3
+    }
+  },
+  {
+    "module": "IBM-1",
+    "a": {
+      "id": "IBM1-BIO-DRV-20260921-01406",
+      "type": "mcq",
+      "text": "Under the effect of insulin, enzymes regulated by covalent become",
+      "lecture": 1,
+      "explanation": "Insulin favors dephosphorylation of enzymes such as glycogen synthase, promoting fed-state glucose storage. The effect on activity depends on the target enzyme; dephosphorylation suppresses glycogen phosphorylase.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-01406",
+          "source": "MCQ revision last year.pdf",
+          "page": "6",
+          "sourceQuestionNumber": "4"
+        }
+      ],
+      "options": [
+        "Phosphorylated and inactive",
+        "Dephosphorylated and active if they increase glucose",
+        "Dephosphorylated and active if they lower glucose",
+        "Dephosphorylated and inactive if they lower glucose."
+      ],
+      "correctIndex": 2
+    },
+    "b": {
+      "id": "IBM1-BIO-DRV-20260921-01163",
+      "type": "mcq",
+      "text": "Under the effect of insulin, enzymes regulated by covalent modification become",
+      "lecture": 1,
+      "explanation": "Insulin favors dephosphorylation of enzymes such as glycogen synthase, promoting fed-state glucose storage. The effect on activity depends on the target enzyme; dephosphorylation suppresses glycogen phosphorylase.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-01163",
+          "source": "CHO- Krebs mcq omar.pdf",
+          "page": "15",
+          "sourceQuestionNumber": "5"
+        }
+      ],
+      "options": [
+        "Phosphorylated and inactive",
+        "Dephosphorylated and active if they increase glucose",
+        "Dephosphorylated and active if they lower glucose",
+        "Dephosphorylated and inactive if they lower glucose."
+      ],
+      "correctIndex": 2
+    }
+  },
+  {
+    "module": "IBM-1",
+    "a": {
+      "id": "IBM1-BIO-BGFORM-MET-Q02",
+      "type": "mcq",
+      "text": "An example of substrate level phosphorylation in glycolytic pathway is the reaction catalyzed by:",
+      "lecture": 1,
+      "explanation": "Pyruvate kinase transfers phosphate directly from phosphoenolpyruvate to ADP, forming ATP without the respiratory chain.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-BGFORM-MET-Q02",
+          "source": "Bg All Formative Bio in Moodle..pdf",
+          "page": "28",
+          "sourceQuestionNumber": "2"
+        }
+      ],
+      "options": [
+        "Aldolase A.",
+        "Glyceraldehyde-3-phosphate dehydrogenase.",
+        "Pyruvate kinase.",
+        "Phosphofructokinase-1.",
+        "Enolase."
+      ],
+      "correctIndex": 2
+    },
+    "b": {
+      "id": "IBM1-BIO-F2-Q10",
+      "type": "mcq",
+      "text": "An example of substrate-level phosphorylation in glycolysis is the reaction catalyzed by:",
+      "lecture": 1,
+      "explanation": "Pyruvate kinase transfers phosphate directly from phosphoenolpyruvate to ADP, forming ATP without the respiratory chain.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-F2-Q10",
+          "source": "formative 2 Biochemistry.pdf",
+          "page": "7",
+          "sourceQuestionNumber": "10"
+        }
+      ],
+      "options": [
+        "Aldolase A",
+        "Enolase",
+        "Pyruvate kinase",
+        "Glyceraldehyde-3-phosphate dehydrogenase",
+        "Phosphofructokinase-1"
+      ],
+      "correctIndex": 2
+    }
+  },
+  {
+    "module": "IBM-1",
+    "a": {
+      "id": "IBM1-BIO-BGFORM-MET-Q04",
+      "type": "mcq",
+      "text": "How many ATP are produced in glycolysis by substrate level phosphorylation?",
+      "lecture": 1,
+      "explanation": "The two ATP-producing steps each occur twice per glucose: four ATP are formed, but two invested ATP leave a net yield of two.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-BGFORM-MET-Q04",
+          "source": "Bg All Formative Bio in Moodle..pdf",
+          "page": "29",
+          "sourceQuestionNumber": "4"
+        }
+      ],
+      "options": [
+        "4 ATP",
+        "3 ATP",
+        "2 ATP",
+        "6 ATP",
+        "1 ATP"
+      ],
+      "correctIndex": 0
+    },
+    "b": {
+      "id": "IBM1-BIO-F2-Q12",
+      "type": "mcq",
+      "text": "How many ATP molecules are produced in glycolysis by substrate-level phosphorylation?",
+      "lecture": 1,
+      "explanation": "The two ATP-producing steps each occur twice per glucose: four ATP are formed, but two invested ATP leave a net yield of two.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-F2-Q12",
+          "source": "formative 2 Biochemistry.pdf",
+          "page": "8",
+          "sourceQuestionNumber": "12"
+        }
+      ],
+      "options": [
+        "2 ATP",
+        "3 ATP",
+        "4 ATP",
+        "6 ATP",
+        "1 ATP"
+      ],
+      "correctIndex": 2
+    }
+  },
+  {
+    "module": "IBM-1",
+    "a": {
+      "id": "IBM1-BIO-DRV-20260921-00299",
+      "type": "mcq",
+      "text": "Arsenic inhibits the a Ketoglutarate dehydrogenase by forming a stable complex with:",
+      "lecture": 1,
+      "explanation": "Arsenite complexes the adjacent sulfhydryl groups of reduced lipoamide, inhibiting alpha-ketoglutarate dehydrogenase.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-00299",
+          "source": "all Bio questions.pdf",
+          "page": "34",
+          "sourceQuestionNumber": "15"
+        }
+      ],
+      "options": [
+        "Lipoic acid",
+        "NAD",
+        "COASH",
+        "TPP"
+      ],
+      "correctIndex": 0
+    },
+    "b": {
+      "id": "IBM1-BIO-DRV-20260921-01229",
+      "type": "mcq",
+      "text": "Arsenite inhibits the a Ketoglutarate dehydrogenase by forming a stable complex with:",
+      "lecture": 1,
+      "explanation": "Arsenite forms a complex with the reduced lipoamide sulfhydryls, disabling alpha-ketoglutarate dehydrogenase.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-01229",
+          "source": "CHO- Krebs mcq omar.pdf",
+          "page": "26",
+          "sourceQuestionNumber": "17"
+        }
+      ],
+      "options": [
+        "Lipoic acid",
+        "NAD",
+        "COASH",
+        "TPP"
+      ],
+      "correctIndex": 0
+    }
+  },
+  {
+    "module": "IBM-1",
+    "a": {
+      "id": "IBM1-BIO-DRV-20260921-00299",
+      "type": "mcq",
+      "text": "Arsenic inhibits the a Ketoglutarate dehydrogenase by forming a stable complex with:",
+      "lecture": 1,
+      "explanation": "Arsenite complexes the adjacent sulfhydryl groups of reduced lipoamide, inhibiting alpha-ketoglutarate dehydrogenase.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-00299",
+          "source": "all Bio questions.pdf",
+          "page": "34",
+          "sourceQuestionNumber": "15"
+        }
+      ],
+      "options": [
+        "Lipoic acid",
+        "NAD",
+        "COASH",
+        "TPP"
+      ],
+      "correctIndex": 0
+    },
+    "b": {
+      "id": "IBM1-BIO-DRV-20260921-01681",
+      "type": "mcq",
+      "text": "Arsenite inhibits alpha-ketoglutarate dehydrogenase by forming a stable complex with:",
+      "lecture": 1,
+      "explanation": "Arsenite forms a complex with the two sulfhydryls of reduced lipoamide. NAD, CoA and TPP are other complex cofactors but not this classic arsenite target.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-01681",
+          "source": "omar mcq 2022.pdf",
+          "page": "41",
+          "sourceQuestionNumber": "17"
+        }
+      ],
+      "options": [
+        "Lipoic acid",
+        "NAD",
+        "CoASH",
+        "TPP"
+      ],
+      "correctIndex": 0
+    }
+  },
+  {
+    "module": "IBM-1",
+    "a": {
+      "id": "IBM1-BIO-DRV-20260921-01229",
+      "type": "mcq",
+      "text": "Arsenite inhibits the a Ketoglutarate dehydrogenase by forming a stable complex with:",
+      "lecture": 1,
+      "explanation": "Arsenite forms a complex with the reduced lipoamide sulfhydryls, disabling alpha-ketoglutarate dehydrogenase.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-01229",
+          "source": "CHO- Krebs mcq omar.pdf",
+          "page": "26",
+          "sourceQuestionNumber": "17"
+        }
+      ],
+      "options": [
+        "Lipoic acid",
+        "NAD",
+        "COASH",
+        "TPP"
+      ],
+      "correctIndex": 0
+    },
+    "b": {
+      "id": "IBM1-BIO-DRV-20260921-01681",
+      "type": "mcq",
+      "text": "Arsenite inhibits alpha-ketoglutarate dehydrogenase by forming a stable complex with:",
+      "lecture": 1,
+      "explanation": "Arsenite forms a complex with the two sulfhydryls of reduced lipoamide. NAD, CoA and TPP are other complex cofactors but not this classic arsenite target.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-01681",
+          "source": "omar mcq 2022.pdf",
+          "page": "41",
+          "sourceQuestionNumber": "17"
+        }
+      ],
+      "options": [
+        "Lipoic acid",
+        "NAD",
+        "CoASH",
+        "TPP"
+      ],
+      "correctIndex": 0
+    }
+  },
+  {
+    "module": "IBM-1",
+    "a": {
+      "id": "IBM1-BIO-DRV-20260921-01234",
+      "type": "mcq",
+      "text": "Which of the following is not formed during the Krebs cycle?",
+      "lecture": 1,
+      "explanation": "Lactate is formed by reduction of pyruvate outside the TCA cycle. Isocitrate, succinate and oxaloacetate are intermediates of the cycle itself.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-01234",
+          "source": "CHO- Krebs mcq omar.pdf",
+          "page": "27",
+          "sourceQuestionNumber": "22"
+        }
+      ],
+      "options": [
+        "Lactate.",
+        "Isocitrate.",
+        "Succinate.",
+        "Oxaloacetate."
+      ],
+      "correctIndex": 0
+    },
+    "b": {
+      "id": "IBM1-BIO-DRV-20260921-01686",
+      "type": "mcq",
+      "text": "Which is not formed during the Krebs cycle?",
+      "lecture": 1,
+      "explanation": "Lactate is a glycolytic/fermentation product, whereas isocitrate, succinate and oxaloacetate are TCA intermediates.",
+      "reviewStatus": "source_grounded_nonblind_ai_review",
+      "sourceOccurrences": [
+        {
+          "sourceId": "BIO-DRV-20260921-01686",
+          "source": "omar mcq 2022.pdf",
+          "page": "42",
+          "sourceQuestionNumber": "22"
+        }
+      ],
+      "options": [
+        "Lactate",
+        "Isocitrate",
+        "Succinate",
+        "Oxaloacetate"
+      ],
+      "correctIndex": 0
+    }
+  },
+  {
+    "module": "IPHY-1",
+    "a": {
+      "id": "IPHY-1-SRC-0002",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Characters of homeostasis control mechanism are:",
+      "explanation": "A homeostatic control system classically includes sensors that detect change, an integrating center that compares the value with the set point, and effectors that produce the corrective response. Therefore all of the listed components are part of the mechanism.",
+      "keyConcept": "Homeostatic loops require sensors, a control center, and effectors.",
+      "options": [
+        "Sensors",
+        "Integrating center",
+        "Effectors",
+        "All of the above"
+      ],
+      "correctIndex": 3
+    },
+    "b": {
+      "id": "IPHY-1-SRC-0015",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "characters of homestasis control mechanism are:",
+      "explanation": "Homeostatic control mechanisms require a detector, a controller, and a responder. Sensors detect the change, the integrating center interprets it, and effectors carry out the corrective action, so all are included.",
+      "keyConcept": "Homeostatic control needs sensing, integration, and action.",
+      "options": [
+        "sensors",
+        "integrating center",
+        "effectors",
+        "all of the above"
+      ],
+      "correctIndex": 3
+    }
+  },
+  {
+    "module": "IPHY-1",
+    "a": {
+      "id": "IPHY-1-SRC-0112",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Number of osmoles/liter of solution is called:",
+      "explanation": "Osmolarity is defined as the number of osmoles per liter of solution. Osmolality is per kilogram of solvent, and tonicity refers to the effect on cell volume.",
+      "keyConcept": "Osmoles per liter defines osmolarity.",
+      "options": [
+        "Osmolarity",
+        "Osmolality",
+        "Tonicity",
+        "None of the above"
+      ],
+      "correctIndex": 0
+    },
+    "b": {
+      "id": "IPHY-1-SRC-0715",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Number of Osmoles/ liters of solution is called:",
+      "explanation": "Osmoles per litre of solution defines osmolarity, while osmoles per kilogram of solvent defines osmolality. Tonicity is a different idea again, describing only the effective osmoles, those that cannot cross the membrane and can therefore actually shift water. Urea illustrates the distinction, since it adds to measured osmolarity but, because it penetrates cells, contributes almost nothing to tonicity.",
+      "keyConcept": "Osmolarity counts all solute per litre, while tonicity counts only the impermeant solute that can move water.",
+      "options": [
+        "Osmolarity.",
+        "Osmolality.",
+        "Tonicity.",
+        "None of the above."
+      ],
+      "correctIndex": 0
+    }
+  },
+  {
+    "module": "IPHY-1",
+    "a": {
+      "id": "IPHY-1-SRC-0142",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Turbulence becomes evident if Reynold number exceeds:",
+      "explanation": "Reynolds number expresses the ratio of inertial to viscous forces in a flowing fluid. Small values such as 100 or 200 are firmly laminar, and although instability can begin around 2000, turbulence becomes clearly evident once the number exceeds about 3000.",
+      "keyConcept": "Turbulence becomes clearly evident above a Reynolds number of about 3000.",
+      "options": [
+        "200",
+        "100",
+        "2000",
+        "3000"
+      ],
+      "correctIndex": 3
+    },
+    "b": {
+      "id": "IPHY-1-SRC-0711",
+      "type": "mcq",
+      "lecture": 4,
+      "text": "Turbulence becomes evident if Raynald’s number exceeds",
+      "explanation": "Reynolds number weighs inertial against viscous forces, Re = density x velocity x diameter / viscosity. Below about 2000 flow is reliably laminar, between 2000 and 3000 it is transitional, and above 3000 turbulence is frankly established. Turbulence matters clinically twice over: it wastes energy, so a much larger pressure gradient is needed for the same flow, and it generates the vibrations heard as bruits and murmurs.",
+      "keyConcept": "Laminar below about 2000, transitional between 2000 and 3000, clearly turbulent above 3000.",
+      "options": [
+        "200",
+        "100",
+        "2000",
+        "3000"
+      ],
+      "correctIndex": 3
+    }
+  },
+  {
+    "module": "MBMG-1",
+    "a": {
+      "id": "MBMG1-FINAL-0139",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which option best matches this description: UMP?",
+      "explanation": "The “-osine” or “-idine” name denotes a nucleoside; “-ylate” or “-ylic acid” denotes its phosphate-containing nucleotide. AMP is adenylate, GMP is guanylate, CMP is cytidylate, UMP is uridylate, and TMP is thymidylate.",
+      "provenance": {
+        "sourceTitle": "McQs(1)",
+        "sourceQuestionId": "McQs(1) | Q55",
+        "sourceQuestionNumber": 55,
+        "sourcePage": null,
+        "sourcePages": "merged PDF pages 308-309",
+        "answerProvenance": "Visible printed answer list on merged PDF page 318.",
+        "sourceOccurrences": [
+          {
+            "sourceTitle": "McQs(1)",
+            "sourceQuestionNumber": 55,
+            "sourceQuestionId": "McQs(1) | Q55",
+            "sourceFile": "mcqs1_complete_160_checkpoint.json",
+            "sourcePage": null,
+            "sourcePages": "merged PDF pages 308-309",
+            "statusRaw": "answer_supported_by_visible_printed_key",
+            "statusCategory": "answer_supported"
+          },
+          {
+            "sourceTitle": "McQs(1)",
+            "sourceQuestionNumber": 56,
+            "sourceQuestionId": "McQs(1) | Q56",
+            "sourceFile": "mcqs1_complete_160_checkpoint.json",
+            "sourcePage": null,
+            "sourcePages": "merged PDF pages 308-309",
+            "statusRaw": "answer_supported_by_visible_printed_key",
+            "statusCategory": "answer_supported"
+          },
+          {
+            "sourceTitle": "McQs(1)",
+            "sourceQuestionNumber": 57,
+            "sourceQuestionId": "McQs(1) | Q57",
+            "sourceFile": "mcqs1_complete_160_checkpoint.json",
+            "sourcePage": null,
+            "sourcePages": "merged PDF pages 308-309",
+            "statusRaw": "answer_supported_by_visible_printed_key",
+            "statusCategory": "answer_supported"
+          }
+        ],
+        "mergedLegacyQuestionIds": [
+          "MBMG1-0113",
+          "MBMG1-0114",
+          "MBMG1-0115"
+        ]
+      },
+      "quality": {
+        "publicationStatus": "approved",
+        "sourceKeySupported": true,
+        "formatValidated": true,
+        "dedupeValidated": true
+      },
+      "options": [
+        "Uridylate",
+        "Thymidylate",
+        "Cytidylate",
+        "None of these"
+      ],
+      "correctIndex": 0
+    },
+    "b": {
+      "id": "MBMG1-FINAL-0140",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which option best matches this description: Uridine phosphate?",
+      "explanation": "The “-osine” or “-idine” name denotes a nucleoside; “-ylate” or “-ylic acid” denotes its phosphate-containing nucleotide. AMP is adenylate, GMP is guanylate, CMP is cytidylate, UMP is uridylate, and TMP is thymidylate.",
+      "provenance": {
+        "sourceTitle": "McQs(1)",
+        "sourceQuestionId": "McQs(1) | Q49",
+        "sourceQuestionNumber": 49,
+        "sourcePage": null,
+        "sourcePages": "merged PDF pages 308-309",
+        "answerProvenance": "Visible printed answer list on merged PDF page 318.",
+        "sourceOccurrences": [
+          {
+            "sourceTitle": "McQs(1)",
+            "sourceQuestionNumber": 49,
+            "sourceQuestionId": "McQs(1) | Q49",
+            "sourceFile": "mcqs1_complete_160_checkpoint.json",
+            "sourcePage": null,
+            "sourcePages": "merged PDF pages 308-309",
+            "statusRaw": "answer_supported_by_visible_printed_key",
+            "statusCategory": "answer_supported"
+          },
+          {
+            "sourceTitle": "McQs(1)",
+            "sourceQuestionNumber": 50,
+            "sourceQuestionId": "McQs(1) | Q50",
+            "sourceFile": "mcqs1_complete_160_checkpoint.json",
+            "sourcePage": null,
+            "sourcePages": "merged PDF pages 308-309",
+            "statusRaw": "answer_supported_by_visible_printed_key",
+            "statusCategory": "answer_supported"
+          },
+          {
+            "sourceTitle": "McQs(1)",
+            "sourceQuestionNumber": 51,
+            "sourceQuestionId": "McQs(1) | Q51",
+            "sourceFile": "mcqs1_complete_160_checkpoint.json",
+            "sourcePage": null,
+            "sourcePages": "merged PDF pages 308-309",
+            "statusRaw": "answer_supported_by_visible_printed_key",
+            "statusCategory": "answer_supported"
+          },
+          {
+            "sourceTitle": "McQs(1)",
+            "sourceQuestionNumber": 54,
+            "sourceQuestionId": "McQs(1) | Q54",
+            "sourceFile": "mcqs1_complete_160_checkpoint.json",
+            "sourcePage": null,
+            "sourcePages": "merged PDF pages 308-309",
+            "statusRaw": "answer_supported_by_visible_printed_key",
+            "statusCategory": "answer_supported"
+          }
+        ],
+        "mergedLegacyQuestionIds": [
+          "MBMG1-0106",
+          "MBMG1-0108",
+          "MBMG1-0109",
+          "MBMG1-0112"
+        ]
+      },
+      "quality": {
+        "publicationStatus": "approved",
+        "sourceKeySupported": true,
+        "formatValidated": true,
+        "dedupeValidated": true
+      },
+      "options": [
+        "Uridylate",
+        "Thymidylate",
+        "Cytidylate",
+        "None of these"
+      ],
+      "correctIndex": 0
+    }
+  },
+  {
+    "module": "MBMG-1",
+    "a": {
+      "id": "MBMG1-FINAL-0101",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which of the following bases shares in nucleic acid structure?",
+      "explanation": "Adenine and guanine are purines with two fused rings; cytosine, thymine, and uracil are single-ring pyrimidines. Cytosine occurs in both standard DNA and RNA; thymine is characteristic of DNA and uracil of RNA.",
+      "provenance": {
+        "sourceTitle": "McQs(1)",
+        "sourceQuestionId": "McQs(1) | Q14",
+        "sourceQuestionNumber": 14,
+        "sourcePage": null,
+        "sourcePages": "merged PDF pages 308-309",
+        "answerProvenance": "Visible printed answer list on merged PDF page 318.",
+        "sourceOccurrences": [
+          {
+            "sourceTitle": "McQs(1)",
+            "sourceQuestionNumber": 14,
+            "sourceQuestionId": "McQs(1) | Q14",
+            "sourceFile": "mcqs1_complete_160_checkpoint.json",
+            "sourcePage": null,
+            "sourcePages": "merged PDF pages 308-309",
+            "statusRaw": "answer_supported_by_visible_printed_key",
+            "statusCategory": "answer_supported"
+          }
+        ],
+        "mergedLegacyQuestionIds": [
+          "MBMG1-0068"
+        ]
+      },
+      "quality": {
+        "publicationStatus": "approved",
+        "sourceKeySupported": true,
+        "formatValidated": true,
+        "dedupeValidated": true
+      },
+      "options": [
+        "Xanthine",
+        "Cytosine",
+        "Nicotinamide",
+        "Flavin"
+      ],
+      "correctIndex": 1
+    },
+    "b": {
+      "id": "MBMG1-FINAL-0109",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which of the following shares is nucleic acid structure:",
+      "explanation": "Adenine and guanine are purines with two fused rings; cytosine, thymine, and uracil are single-ring pyrimidines. Cytosine occurs in both standard DNA and RNA; thymine is characteristic of DNA and uracil of RNA.",
+      "provenance": {
+        "sourceTitle": "DNA mcq.pdf",
+        "sourceQuestionId": "DNA mcq.pdf|12",
+        "sourceQuestionNumber": null,
+        "sourcePage": null,
+        "sourcePages": null,
+        "answerProvenance": null,
+        "sourceOccurrences": [
+          {
+            "sourceTitle": "DNA mcq.pdf",
+            "sourceQuestionNumber": null,
+            "sourceQuestionId": "DNA mcq.pdf|12",
+            "sourceFile": "dna_ch1_confirmed.json",
+            "sourcePage": null,
+            "sourcePages": null,
+            "statusRaw": "confirmed",
+            "statusCategory": "answer_supported"
+          }
+        ],
+        "mergedLegacyQuestionIds": [
+          "MBMG1-0037"
+        ]
+      },
+      "quality": {
+        "publicationStatus": "approved",
+        "sourceKeySupported": true,
+        "formatValidated": true,
+        "dedupeValidated": true
+      },
+      "options": [
+        "Xanthine.",
+        "Cytosine.",
+        "Nicotinamide.",
+        "Flavin."
+      ],
+      "correctIndex": 1
+    }
+  },
+  {
+    "module": "MBMG-1",
+    "a": {
+      "id": "MBMG1-FINAL-0122",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which option best matches this description: A purine nucleotide?",
+      "explanation": "The “-osine” or “-idine” name denotes a nucleoside; “-ylate” or “-ylic acid” denotes its phosphate-containing nucleotide. AMP is adenylate, GMP is guanylate, CMP is cytidylate, UMP is uridylate, and TMP is thymidylate.",
+      "provenance": {
+        "sourceTitle": "McQs(1)",
+        "sourceQuestionId": "McQs(1) | Q48",
+        "sourceQuestionNumber": 48,
+        "sourcePage": null,
+        "sourcePages": "merged PDF pages 308-309",
+        "answerProvenance": "Visible printed answer list on merged PDF page 318.",
+        "sourceOccurrences": [
+          {
+            "sourceTitle": "McQs(1)",
+            "sourceQuestionNumber": 48,
+            "sourceQuestionId": "McQs(1) | Q48",
+            "sourceFile": "mcqs1_complete_160_checkpoint.json",
+            "sourcePage": null,
+            "sourcePages": "merged PDF pages 308-309",
+            "statusRaw": "answer_supported_by_visible_printed_key",
+            "statusCategory": "answer_supported"
+          }
+        ],
+        "mergedLegacyQuestionIds": [
+          "MBMG1-0105"
+        ]
+      },
+      "quality": {
+        "publicationStatus": "approved",
+        "sourceKeySupported": true,
+        "formatValidated": true,
+        "dedupeValidated": true
+      },
+      "options": [
+        "Uridylate",
+        "Thymidylate",
+        "Cytidylate",
+        "None of these"
+      ],
+      "correctIndex": 3
+    },
+    "b": {
+      "id": "MBMG1-FINAL-0123",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which option best matches this description: A pyrimidine nucleoside?",
+      "explanation": "The “-osine” or “-idine” name denotes a nucleoside; “-ylate” or “-ylic acid” denotes its phosphate-containing nucleotide. AMP is adenylate, GMP is guanylate, CMP is cytidylate, UMP is uridylate, and TMP is thymidylate.",
+      "provenance": {
+        "sourceTitle": "McQs(1)",
+        "sourceQuestionId": "McQs(1) | Q52",
+        "sourceQuestionNumber": 52,
+        "sourcePage": null,
+        "sourcePages": "merged PDF pages 308-309",
+        "answerProvenance": "Visible printed answer list on merged PDF page 318.",
+        "sourceOccurrences": [
+          {
+            "sourceTitle": "McQs(1)",
+            "sourceQuestionNumber": 52,
+            "sourceQuestionId": "McQs(1) | Q52",
+            "sourceFile": "mcqs1_complete_160_checkpoint.json",
+            "sourcePage": null,
+            "sourcePages": "merged PDF pages 308-309",
+            "statusRaw": "answer_supported_by_visible_printed_key",
+            "statusCategory": "answer_supported"
+          }
+        ],
+        "mergedLegacyQuestionIds": [
+          "MBMG1-0110"
+        ]
+      },
+      "quality": {
+        "publicationStatus": "approved",
+        "sourceKeySupported": true,
+        "formatValidated": true,
+        "dedupeValidated": true
+      },
+      "options": [
+        "Uridylate",
+        "Thymidylate",
+        "Cytidylate",
+        "None of these"
+      ],
+      "correctIndex": 3
+    }
+  },
+  {
+    "module": "MBMG-1",
+    "a": {
+      "id": "MBMG1-FINAL-0125",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which option best matches this description: Adenylate?",
+      "explanation": "The “-osine” or “-idine” name denotes a nucleoside; “-ylate” or “-ylic acid” denotes its phosphate-containing nucleotide. AMP is adenylate, GMP is guanylate, CMP is cytidylate, UMP is uridylate, and TMP is thymidylate.",
+      "provenance": {
+        "sourceTitle": "McQs(1)",
+        "sourceQuestionId": "McQs(1) | Q34",
+        "sourceQuestionNumber": 34,
+        "sourcePage": null,
+        "sourcePages": "merged PDF pages 308-309",
+        "answerProvenance": "Visible printed answer list on merged PDF page 318.",
+        "sourceOccurrences": [
+          {
+            "sourceTitle": "McQs(1)",
+            "sourceQuestionNumber": 34,
+            "sourceQuestionId": "McQs(1) | Q34",
+            "sourceFile": "mcqs1_complete_160_checkpoint.json",
+            "sourcePage": null,
+            "sourcePages": "merged PDF pages 308-309",
+            "statusRaw": "answer_supported_by_visible_printed_key",
+            "statusCategory": "answer_supported"
+          },
+          {
+            "sourceTitle": "McQs(1)",
+            "sourceQuestionNumber": 35,
+            "sourceQuestionId": "McQs(1) | Q35",
+            "sourceFile": "mcqs1_complete_160_checkpoint.json",
+            "sourcePage": null,
+            "sourcePages": "merged PDF pages 308-309",
+            "statusRaw": "answer_supported_by_visible_printed_key",
+            "statusCategory": "answer_supported"
+          }
+        ],
+        "mergedLegacyQuestionIds": [
+          "MBMG1-0090",
+          "MBMG1-0091"
+        ]
+      },
+      "quality": {
+        "publicationStatus": "approved",
+        "sourceKeySupported": true,
+        "formatValidated": true,
+        "dedupeValidated": true
+      },
+      "options": [
+        "Adenosine",
+        "Guanosine",
+        "Adenylic acid",
+        "Guanylic acid"
+      ],
+      "correctIndex": 2
+    },
+    "b": {
+      "id": "MBMG1-FINAL-0126",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which option best matches this description: AMP?",
+      "explanation": "The “-osine” or “-idine” name denotes a nucleoside; “-ylate” or “-ylic acid” denotes its phosphate-containing nucleotide. AMP is adenylate, GMP is guanylate, CMP is cytidylate, UMP is uridylate, and TMP is thymidylate.",
+      "provenance": {
+        "sourceTitle": "McQs(1)",
+        "sourceQuestionId": "McQs(1) | Q40",
+        "sourceQuestionNumber": 40,
+        "sourcePage": null,
+        "sourcePages": "merged PDF pages 308-309",
+        "answerProvenance": "Visible printed answer list on merged PDF page 318.",
+        "sourceOccurrences": [
+          {
+            "sourceTitle": "McQs(1)",
+            "sourceQuestionNumber": 40,
+            "sourceQuestionId": "McQs(1) | Q40",
+            "sourceFile": "mcqs1_complete_160_checkpoint.json",
+            "sourcePage": null,
+            "sourcePages": "merged PDF pages 308-309",
+            "statusRaw": "answer_supported_by_visible_printed_key",
+            "statusCategory": "answer_supported"
+          },
+          {
+            "sourceTitle": "McQs(1)",
+            "sourceQuestionNumber": 41,
+            "sourceQuestionId": "McQs(1) | Q41",
+            "sourceFile": "mcqs1_complete_160_checkpoint.json",
+            "sourcePage": null,
+            "sourcePages": "merged PDF pages 308-309",
+            "statusRaw": "answer_supported_by_visible_printed_key",
+            "statusCategory": "answer_supported"
+          }
+        ],
+        "mergedLegacyQuestionIds": [
+          "MBMG1-0097",
+          "MBMG1-0098"
+        ]
+      },
+      "quality": {
+        "publicationStatus": "approved",
+        "sourceKeySupported": true,
+        "formatValidated": true,
+        "dedupeValidated": true
+      },
+      "options": [
+        "Adenosine",
+        "Guanosine",
+        "Adenylic acid",
+        "Guanylic acid"
+      ],
+      "correctIndex": 2
+    }
+  },
+  {
+    "module": "MBMG-1",
+    "a": {
+      "id": "MBMG1-FINAL-0239",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which option best matches this description: Cell division?",
+      "explanation": "Interphase comprises G1, S, and G2. G1 supports growth and preparation for replication, S duplicates DNA, G2 prepares for division, and M includes mitosis and cytokinesis; G0 is entered from G1.",
+      "provenance": {
+        "sourceTitle": "McQs(1)",
+        "sourceQuestionId": "McQs(1) | Q105",
+        "sourceQuestionNumber": 105,
+        "sourcePage": null,
+        "sourcePages": "merged PDF pages 312-313",
+        "answerProvenance": "Visible printed answer list on merged PDF page 318.",
+        "sourceOccurrences": [
+          {
+            "sourceTitle": "McQs(1)",
+            "sourceQuestionNumber": 105,
+            "sourceQuestionId": "McQs(1) | Q105",
+            "sourceFile": "mcqs1_complete_160_checkpoint.json",
+            "sourcePage": null,
+            "sourcePages": "merged PDF pages 312-313",
+            "statusRaw": "answer_supported_by_visible_printed_key",
+            "statusCategory": "answer_supported"
+          }
+        ],
+        "mergedLegacyQuestionIds": [
+          "MBMG1-0224"
+        ]
+      },
+      "quality": {
+        "publicationStatus": "approved",
+        "sourceKeySupported": true,
+        "formatValidated": true,
+        "dedupeValidated": true
+      },
+      "options": [
+        "G1 phase",
+        "G2 phase",
+        "S phase",
+        "M phase"
+      ],
+      "correctIndex": 3
+    },
+    "b": {
+      "id": "MBMG1-FINAL-0253",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which option best matches this description: Mitosis?",
+      "explanation": "Interphase comprises G1, S, and G2. G1 supports growth and preparation for replication, S duplicates DNA, G2 prepares for division, and M includes mitosis and cytokinesis; G0 is entered from G1.",
+      "provenance": {
+        "sourceTitle": "McQs(1)",
+        "sourceQuestionId": "McQs(1) | Q99",
+        "sourceQuestionNumber": 99,
+        "sourcePage": null,
+        "sourcePages": "merged PDF pages 312-313",
+        "answerProvenance": "Visible printed answer list on merged PDF page 318.",
+        "sourceOccurrences": [
+          {
+            "sourceTitle": "McQs(1)",
+            "sourceQuestionNumber": 99,
+            "sourceQuestionId": "McQs(1) | Q99",
+            "sourceFile": "mcqs1_complete_160_checkpoint.json",
+            "sourcePage": null,
+            "sourcePages": "merged PDF pages 312-313",
+            "statusRaw": "answer_supported_by_visible_printed_key",
+            "statusCategory": "answer_supported"
+          }
+        ],
+        "mergedLegacyQuestionIds": [
+          "MBMG1-0233"
+        ]
+      },
+      "quality": {
+        "publicationStatus": "approved",
+        "sourceKeySupported": true,
+        "formatValidated": true,
+        "dedupeValidated": true
+      },
+      "options": [
+        "G1 phase",
+        "G2 phase",
+        "S phase",
+        "M phase"
+      ],
+      "correctIndex": 3
+    }
+  },
+  {
+    "module": "MBMG-1",
+    "a": {
+      "id": "MBMG1-FINAL-0253",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which option best matches this description: Mitosis?",
+      "explanation": "Interphase comprises G1, S, and G2. G1 supports growth and preparation for replication, S duplicates DNA, G2 prepares for division, and M includes mitosis and cytokinesis; G0 is entered from G1.",
+      "provenance": {
+        "sourceTitle": "McQs(1)",
+        "sourceQuestionId": "McQs(1) | Q99",
+        "sourceQuestionNumber": 99,
+        "sourcePage": null,
+        "sourcePages": "merged PDF pages 312-313",
+        "answerProvenance": "Visible printed answer list on merged PDF page 318.",
+        "sourceOccurrences": [
+          {
+            "sourceTitle": "McQs(1)",
+            "sourceQuestionNumber": 99,
+            "sourceQuestionId": "McQs(1) | Q99",
+            "sourceFile": "mcqs1_complete_160_checkpoint.json",
+            "sourcePage": null,
+            "sourcePages": "merged PDF pages 312-313",
+            "statusRaw": "answer_supported_by_visible_printed_key",
+            "statusCategory": "answer_supported"
+          }
+        ],
+        "mergedLegacyQuestionIds": [
+          "MBMG1-0233"
+        ]
+      },
+      "quality": {
+        "publicationStatus": "approved",
+        "sourceKeySupported": true,
+        "formatValidated": true,
+        "dedupeValidated": true
+      },
+      "options": [
+        "G1 phase",
+        "G2 phase",
+        "S phase",
+        "M phase"
+      ],
+      "correctIndex": 3
+    },
+    "b": {
+      "id": "MBMG1-FINAL-0256",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which option best matches this description: Not in interphase?",
+      "explanation": "Interphase comprises G1, S, and G2. G1 supports growth and preparation for replication, S duplicates DNA, G2 prepares for division, and M includes mitosis and cytokinesis; G0 is entered from G1.",
+      "provenance": {
+        "sourceTitle": "McQs(1)",
+        "sourceQuestionId": "McQs(1) | Q111",
+        "sourceQuestionNumber": 111,
+        "sourcePage": null,
+        "sourcePages": "merged PDF pages 312-313",
+        "answerProvenance": "Visible printed answer list on merged PDF page 318.",
+        "sourceOccurrences": [
+          {
+            "sourceTitle": "McQs(1)",
+            "sourceQuestionNumber": 111,
+            "sourceQuestionId": "McQs(1) | Q111",
+            "sourceFile": "mcqs1_complete_160_checkpoint.json",
+            "sourcePage": null,
+            "sourcePages": "merged PDF pages 312-313",
+            "statusRaw": "answer_supported_by_visible_printed_key",
+            "statusCategory": "answer_supported"
+          }
+        ],
+        "mergedLegacyQuestionIds": [
+          "MBMG1-0230"
+        ]
+      },
+      "quality": {
+        "publicationStatus": "approved",
+        "sourceKeySupported": true,
+        "formatValidated": true,
+        "dedupeValidated": true
+      },
+      "options": [
+        "G1 phase",
+        "G2 phase",
+        "S phase",
+        "M phase"
+      ],
+      "correctIndex": 3
+    }
+  },
+  {
+    "module": "MBMG-1",
+    "a": {
+      "id": "MBMG1-FINAL-0253",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which option best matches this description: Mitosis?",
+      "explanation": "Interphase comprises G1, S, and G2. G1 supports growth and preparation for replication, S duplicates DNA, G2 prepares for division, and M includes mitosis and cytokinesis; G0 is entered from G1.",
+      "provenance": {
+        "sourceTitle": "McQs(1)",
+        "sourceQuestionId": "McQs(1) | Q99",
+        "sourceQuestionNumber": 99,
+        "sourcePage": null,
+        "sourcePages": "merged PDF pages 312-313",
+        "answerProvenance": "Visible printed answer list on merged PDF page 318.",
+        "sourceOccurrences": [
+          {
+            "sourceTitle": "McQs(1)",
+            "sourceQuestionNumber": 99,
+            "sourceQuestionId": "McQs(1) | Q99",
+            "sourceFile": "mcqs1_complete_160_checkpoint.json",
+            "sourcePage": null,
+            "sourcePages": "merged PDF pages 312-313",
+            "statusRaw": "answer_supported_by_visible_printed_key",
+            "statusCategory": "answer_supported"
+          }
+        ],
+        "mergedLegacyQuestionIds": [
+          "MBMG1-0233"
+        ]
+      },
+      "quality": {
+        "publicationStatus": "approved",
+        "sourceKeySupported": true,
+        "formatValidated": true,
+        "dedupeValidated": true
+      },
+      "options": [
+        "G1 phase",
+        "G2 phase",
+        "S phase",
+        "M phase"
+      ],
+      "correctIndex": 3
+    },
+    "b": {
+      "id": "MBMG1-FINAL-0263",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which option best matches this description: The shortest phase?",
+      "explanation": "Interphase comprises G1, S, and G2. G1 supports growth and preparation for replication, S duplicates DNA, G2 prepares for division, and M includes mitosis and cytokinesis; G0 is entered from G1.",
+      "provenance": {
+        "sourceTitle": "McQs(1)",
+        "sourceQuestionId": "McQs(1) | Q102",
+        "sourceQuestionNumber": 102,
+        "sourcePage": null,
+        "sourcePages": "merged PDF pages 312-313",
+        "answerProvenance": "Visible printed answer list on merged PDF page 318.",
+        "sourceOccurrences": [
+          {
+            "sourceTitle": "McQs(1)",
+            "sourceQuestionNumber": 102,
+            "sourceQuestionId": "McQs(1) | Q102",
+            "sourceFile": "mcqs1_complete_160_checkpoint.json",
+            "sourcePage": null,
+            "sourcePages": "merged PDF pages 312-313",
+            "statusRaw": "answer_supported_by_visible_printed_key",
+            "statusCategory": "answer_supported"
+          }
+        ],
+        "mergedLegacyQuestionIds": [
+          "MBMG1-0221"
+        ]
+      },
+      "quality": {
+        "publicationStatus": "approved",
+        "sourceKeySupported": true,
+        "formatValidated": true,
+        "dedupeValidated": true
+      },
+      "options": [
+        "G1 phase",
+        "G2 phase",
+        "S phase",
+        "M phase"
+      ],
+      "correctIndex": 3
+    }
+  },
+  {
+    "module": "MBMG-1",
+    "a": {
+      "id": "MBMG1-FINAL-0256",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which option best matches this description: Not in interphase?",
+      "explanation": "Interphase comprises G1, S, and G2. G1 supports growth and preparation for replication, S duplicates DNA, G2 prepares for division, and M includes mitosis and cytokinesis; G0 is entered from G1.",
+      "provenance": {
+        "sourceTitle": "McQs(1)",
+        "sourceQuestionId": "McQs(1) | Q111",
+        "sourceQuestionNumber": 111,
+        "sourcePage": null,
+        "sourcePages": "merged PDF pages 312-313",
+        "answerProvenance": "Visible printed answer list on merged PDF page 318.",
+        "sourceOccurrences": [
+          {
+            "sourceTitle": "McQs(1)",
+            "sourceQuestionNumber": 111,
+            "sourceQuestionId": "McQs(1) | Q111",
+            "sourceFile": "mcqs1_complete_160_checkpoint.json",
+            "sourcePage": null,
+            "sourcePages": "merged PDF pages 312-313",
+            "statusRaw": "answer_supported_by_visible_printed_key",
+            "statusCategory": "answer_supported"
+          }
+        ],
+        "mergedLegacyQuestionIds": [
+          "MBMG1-0230"
+        ]
+      },
+      "quality": {
+        "publicationStatus": "approved",
+        "sourceKeySupported": true,
+        "formatValidated": true,
+        "dedupeValidated": true
+      },
+      "options": [
+        "G1 phase",
+        "G2 phase",
+        "S phase",
+        "M phase"
+      ],
+      "correctIndex": 3
+    },
+    "b": {
+      "id": "MBMG1-FINAL-0263",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which option best matches this description: The shortest phase?",
+      "explanation": "Interphase comprises G1, S, and G2. G1 supports growth and preparation for replication, S duplicates DNA, G2 prepares for division, and M includes mitosis and cytokinesis; G0 is entered from G1.",
+      "provenance": {
+        "sourceTitle": "McQs(1)",
+        "sourceQuestionId": "McQs(1) | Q102",
+        "sourceQuestionNumber": 102,
+        "sourcePage": null,
+        "sourcePages": "merged PDF pages 312-313",
+        "answerProvenance": "Visible printed answer list on merged PDF page 318.",
+        "sourceOccurrences": [
+          {
+            "sourceTitle": "McQs(1)",
+            "sourceQuestionNumber": 102,
+            "sourceQuestionId": "McQs(1) | Q102",
+            "sourceFile": "mcqs1_complete_160_checkpoint.json",
+            "sourcePage": null,
+            "sourcePages": "merged PDF pages 312-313",
+            "statusRaw": "answer_supported_by_visible_printed_key",
+            "statusCategory": "answer_supported"
+          }
+        ],
+        "mergedLegacyQuestionIds": [
+          "MBMG1-0221"
+        ]
+      },
+      "quality": {
+        "publicationStatus": "approved",
+        "sourceKeySupported": true,
+        "formatValidated": true,
+        "dedupeValidated": true
+      },
+      "options": [
+        "G1 phase",
+        "G2 phase",
+        "S phase",
+        "M phase"
+      ],
+      "correctIndex": 3
+    }
+  },
+  {
+    "module": "MBMG-1",
+    "a": {
+      "id": "MBMG1-FINAL-0247",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which option best matches this description: Following M phase?",
+      "explanation": "Interphase comprises G1, S, and G2. G1 supports growth and preparation for replication, S duplicates DNA, G2 prepares for division, and M includes mitosis and cytokinesis; G0 is entered from G1.",
+      "provenance": {
+        "sourceTitle": "McQs(1)",
+        "sourceQuestionId": "McQs(1) | Q107",
+        "sourceQuestionNumber": 107,
+        "sourcePage": null,
+        "sourcePages": "merged PDF pages 312-313",
+        "answerProvenance": "Visible printed answer list on merged PDF page 318.",
+        "sourceOccurrences": [
+          {
+            "sourceTitle": "McQs(1)",
+            "sourceQuestionNumber": 107,
+            "sourceQuestionId": "McQs(1) | Q107",
+            "sourceFile": "mcqs1_complete_160_checkpoint.json",
+            "sourcePage": null,
+            "sourcePages": "merged PDF pages 312-313",
+            "statusRaw": "answer_supported_by_visible_printed_key",
+            "statusCategory": "answer_supported"
+          },
+          {
+            "sourceTitle": "McQs(1)",
+            "sourceQuestionNumber": 110,
+            "sourceQuestionId": "McQs(1) | Q110",
+            "sourceFile": "mcqs1_complete_160_checkpoint.json",
+            "sourcePage": null,
+            "sourcePages": "merged PDF pages 312-313",
+            "statusRaw": "answer_supported_by_visible_printed_key",
+            "statusCategory": "answer_supported"
+          }
+        ],
+        "mergedLegacyQuestionIds": [
+          "MBMG1-0226",
+          "MBMG1-0229"
+        ]
+      },
+      "quality": {
+        "publicationStatus": "approved",
+        "sourceKeySupported": true,
+        "formatValidated": true,
+        "dedupeValidated": true
+      },
+      "options": [
+        "G1 phase",
+        "G2 phase",
+        "S phase",
+        "M phase"
+      ],
+      "correctIndex": 0
+    },
+    "b": {
+      "id": "MBMG1-FINAL-0248",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which option best matches this description: Gap 1 phase?",
+      "explanation": "Interphase comprises G1, S, and G2. G1 supports growth and preparation for replication, S duplicates DNA, G2 prepares for division, and M includes mitosis and cytokinesis; G0 is entered from G1.",
+      "provenance": {
+        "sourceTitle": "McQs(1)",
+        "sourceQuestionId": "McQs(1) | Q101",
+        "sourceQuestionNumber": 101,
+        "sourcePage": null,
+        "sourcePages": "merged PDF pages 312-313",
+        "answerProvenance": "Visible printed answer list on merged PDF page 318.",
+        "sourceOccurrences": [
+          {
+            "sourceTitle": "McQs(1)",
+            "sourceQuestionNumber": 101,
+            "sourceQuestionId": "McQs(1) | Q101",
+            "sourceFile": "mcqs1_complete_160_checkpoint.json",
+            "sourcePage": null,
+            "sourcePages": "merged PDF pages 312-313",
+            "statusRaw": "answer_supported_by_visible_printed_key",
+            "statusCategory": "answer_supported"
+          }
+        ],
+        "mergedLegacyQuestionIds": [
+          "MBMG1-0220"
+        ]
+      },
+      "quality": {
+        "publicationStatus": "approved",
+        "sourceKeySupported": true,
+        "formatValidated": true,
+        "dedupeValidated": true
+      },
+      "options": [
+        "G1 phase",
+        "G2 phase",
+        "S phase",
+        "M phase"
+      ],
+      "correctIndex": 0
+    }
+  },
+  {
+    "module": "MBMG-1",
+    "a": {
+      "id": "MBMG1-FINAL-0247",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which option best matches this description: Following M phase?",
+      "explanation": "Interphase comprises G1, S, and G2. G1 supports growth and preparation for replication, S duplicates DNA, G2 prepares for division, and M includes mitosis and cytokinesis; G0 is entered from G1.",
+      "provenance": {
+        "sourceTitle": "McQs(1)",
+        "sourceQuestionId": "McQs(1) | Q107",
+        "sourceQuestionNumber": 107,
+        "sourcePage": null,
+        "sourcePages": "merged PDF pages 312-313",
+        "answerProvenance": "Visible printed answer list on merged PDF page 318.",
+        "sourceOccurrences": [
+          {
+            "sourceTitle": "McQs(1)",
+            "sourceQuestionNumber": 107,
+            "sourceQuestionId": "McQs(1) | Q107",
+            "sourceFile": "mcqs1_complete_160_checkpoint.json",
+            "sourcePage": null,
+            "sourcePages": "merged PDF pages 312-313",
+            "statusRaw": "answer_supported_by_visible_printed_key",
+            "statusCategory": "answer_supported"
+          },
+          {
+            "sourceTitle": "McQs(1)",
+            "sourceQuestionNumber": 110,
+            "sourceQuestionId": "McQs(1) | Q110",
+            "sourceFile": "mcqs1_complete_160_checkpoint.json",
+            "sourcePage": null,
+            "sourcePages": "merged PDF pages 312-313",
+            "statusRaw": "answer_supported_by_visible_printed_key",
+            "statusCategory": "answer_supported"
+          }
+        ],
+        "mergedLegacyQuestionIds": [
+          "MBMG1-0226",
+          "MBMG1-0229"
+        ]
+      },
+      "quality": {
+        "publicationStatus": "approved",
+        "sourceKeySupported": true,
+        "formatValidated": true,
+        "dedupeValidated": true
+      },
+      "options": [
+        "G1 phase",
+        "G2 phase",
+        "S phase",
+        "M phase"
+      ],
+      "correctIndex": 0
+    },
+    "b": {
+      "id": "MBMG1-FINAL-0251",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which option best matches this description: May become G0 phase?",
+      "explanation": "Interphase comprises G1, S, and G2. G1 supports growth and preparation for replication, S duplicates DNA, G2 prepares for division, and M includes mitosis and cytokinesis; G0 is entered from G1.",
+      "provenance": {
+        "sourceTitle": "McQs(1)",
+        "sourceQuestionId": "McQs(1) | Q106",
+        "sourceQuestionNumber": 106,
+        "sourcePage": null,
+        "sourcePages": "merged PDF pages 312-313",
+        "answerProvenance": "Visible printed answer list on merged PDF page 318.",
+        "sourceOccurrences": [
+          {
+            "sourceTitle": "McQs(1)",
+            "sourceQuestionNumber": 106,
+            "sourceQuestionId": "McQs(1) | Q106",
+            "sourceFile": "mcqs1_complete_160_checkpoint.json",
+            "sourcePage": null,
+            "sourcePages": "merged PDF pages 312-313",
+            "statusRaw": "answer_supported_by_visible_printed_key",
+            "statusCategory": "answer_supported"
+          }
+        ],
+        "mergedLegacyQuestionIds": [
+          "MBMG1-0225"
+        ]
+      },
+      "quality": {
+        "publicationStatus": "approved",
+        "sourceKeySupported": true,
+        "formatValidated": true,
+        "dedupeValidated": true
+      },
+      "options": [
+        "G1 phase",
+        "G2 phase",
+        "S phase",
+        "M phase"
+      ],
+      "correctIndex": 0
+    }
+  },
+  {
+    "module": "MBMG-1",
+    "a": {
+      "id": "MBMG1-FINAL-0248",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which option best matches this description: Gap 1 phase?",
+      "explanation": "Interphase comprises G1, S, and G2. G1 supports growth and preparation for replication, S duplicates DNA, G2 prepares for division, and M includes mitosis and cytokinesis; G0 is entered from G1.",
+      "provenance": {
+        "sourceTitle": "McQs(1)",
+        "sourceQuestionId": "McQs(1) | Q101",
+        "sourceQuestionNumber": 101,
+        "sourcePage": null,
+        "sourcePages": "merged PDF pages 312-313",
+        "answerProvenance": "Visible printed answer list on merged PDF page 318.",
+        "sourceOccurrences": [
+          {
+            "sourceTitle": "McQs(1)",
+            "sourceQuestionNumber": 101,
+            "sourceQuestionId": "McQs(1) | Q101",
+            "sourceFile": "mcqs1_complete_160_checkpoint.json",
+            "sourcePage": null,
+            "sourcePages": "merged PDF pages 312-313",
+            "statusRaw": "answer_supported_by_visible_printed_key",
+            "statusCategory": "answer_supported"
+          }
+        ],
+        "mergedLegacyQuestionIds": [
+          "MBMG1-0220"
+        ]
+      },
+      "quality": {
+        "publicationStatus": "approved",
+        "sourceKeySupported": true,
+        "formatValidated": true,
+        "dedupeValidated": true
+      },
+      "options": [
+        "G1 phase",
+        "G2 phase",
+        "S phase",
+        "M phase"
+      ],
+      "correctIndex": 0
+    },
+    "b": {
+      "id": "MBMG1-FINAL-0251",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Which option best matches this description: May become G0 phase?",
+      "explanation": "Interphase comprises G1, S, and G2. G1 supports growth and preparation for replication, S duplicates DNA, G2 prepares for division, and M includes mitosis and cytokinesis; G0 is entered from G1.",
+      "provenance": {
+        "sourceTitle": "McQs(1)",
+        "sourceQuestionId": "McQs(1) | Q106",
+        "sourceQuestionNumber": 106,
+        "sourcePage": null,
+        "sourcePages": "merged PDF pages 312-313",
+        "answerProvenance": "Visible printed answer list on merged PDF page 318.",
+        "sourceOccurrences": [
+          {
+            "sourceTitle": "McQs(1)",
+            "sourceQuestionNumber": 106,
+            "sourceQuestionId": "McQs(1) | Q106",
+            "sourceFile": "mcqs1_complete_160_checkpoint.json",
+            "sourcePage": null,
+            "sourcePages": "merged PDF pages 312-313",
+            "statusRaw": "answer_supported_by_visible_printed_key",
+            "statusCategory": "answer_supported"
+          }
+        ],
+        "mergedLegacyQuestionIds": [
+          "MBMG1-0225"
+        ]
+      },
+      "quality": {
+        "publicationStatus": "approved",
+        "sourceKeySupported": true,
+        "formatValidated": true,
+        "dedupeValidated": true
+      },
+      "options": [
+        "G1 phase",
+        "G2 phase",
+        "S phase",
+        "M phase"
+      ],
+      "correctIndex": 0
+    }
+  },
+  {
+    "module": "MBMG-1",
+    "a": {
+      "id": "MBMG1-FINAL-0288",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "What diagnostic tool will you use to diagnose Down Syndrome?",
+      "explanation": "Karyotyping evaluates chromosome number and large structural changes in dividing nucleated cells. Earlier mitotic arrest improves banding resolution. Microarray detects copy-number imbalance but generally misses balanced translocations.",
+      "provenance": {
+        "sourceTitle": "mcq genetics 2022",
+        "sourceQuestionId": "mcq genetics 2022|5",
+        "sourceQuestionNumber": 5,
+        "sourcePage": null,
+        "sourcePages": null,
+        "answerProvenance": null,
+        "sourceOccurrences": [
+          {
+            "sourceTitle": "mcq genetics 2022",
+            "sourceQuestionNumber": 5,
+            "sourceQuestionId": "mcq genetics 2022|5",
+            "sourceFile": "genetics2022_confirmed.json",
+            "sourcePage": null,
+            "sourcePages": null,
+            "statusRaw": "confirmed",
+            "statusCategory": "answer_supported"
+          }
+        ],
+        "mergedLegacyQuestionIds": [
+          "MBMG1-0336"
+        ]
+      },
+      "quality": {
+        "publicationStatus": "approved",
+        "sourceKeySupported": true,
+        "formatValidated": true,
+        "dedupeValidated": true
+      },
+      "options": [
+        "Conventional karyotyping",
+        "High resolution karyotyping",
+        "Fluorescence in situ hybridization",
+        "Microarray"
+      ],
+      "correctIndex": 0
+    },
+    "b": {
+      "id": "MBMG1-FINAL-0289",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "What diagnostic tool will you use to diagnose Turner Syndrome?",
+      "explanation": "Karyotyping evaluates chromosome number and large structural changes in dividing nucleated cells. Earlier mitotic arrest improves banding resolution. Microarray detects copy-number imbalance but generally misses balanced translocations.",
+      "provenance": {
+        "sourceTitle": "mcq genetics 2022",
+        "sourceQuestionId": "mcq genetics 2022|6",
+        "sourceQuestionNumber": 6,
+        "sourcePage": null,
+        "sourcePages": null,
+        "answerProvenance": null,
+        "sourceOccurrences": [
+          {
+            "sourceTitle": "mcq genetics 2022",
+            "sourceQuestionNumber": 6,
+            "sourceQuestionId": "mcq genetics 2022|6",
+            "sourceFile": "genetics2022_confirmed.json",
+            "sourcePage": null,
+            "sourcePages": null,
+            "statusRaw": "confirmed",
+            "statusCategory": "answer_supported"
+          }
+        ],
+        "mergedLegacyQuestionIds": [
+          "MBMG1-0337"
+        ]
+      },
+      "quality": {
+        "publicationStatus": "approved",
+        "sourceKeySupported": true,
+        "formatValidated": true,
+        "dedupeValidated": true
+      },
+      "options": [
+        "Conventional karyotyping",
+        "High resolution karyotyping",
+        "Fluorescence in situ hybridization",
+        "Microarray"
+      ],
+      "correctIndex": 0
+    }
+  },
+  {
+    "module": "MBMG-1",
+    "a": {
+      "id": "MBMG1-FINAL-0371",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "the pre-priming complex is produced by joining of-:",
+      "explanation": "A primosome contains machinery for primer synthesis; the replisome is the broader replication apparatus. Primase synthesizes RNA from a DNA template and does not need a pre-existing primer.",
+      "provenance": {
+        "sourceTitle": "DNA mcq.pdf",
+        "sourceQuestionId": "DNA mcq.pdf|31",
+        "sourceQuestionNumber": null,
+        "sourcePage": null,
+        "sourcePages": null,
+        "answerProvenance": null,
+        "sourceOccurrences": [
+          {
+            "sourceTitle": "DNA mcq.pdf",
+            "sourceQuestionNumber": null,
+            "sourceQuestionId": "DNA mcq.pdf|31",
+            "sourceFile": "dna_ch5_confirmed.json",
+            "sourcePage": null,
+            "sourcePages": null,
+            "statusRaw": "confirmed",
+            "statusCategory": "answer_supported"
+          }
+        ],
+        "mergedLegacyQuestionIds": [
+          "MBMG1-0376"
+        ]
+      },
+      "quality": {
+        "publicationStatus": "approved",
+        "sourceKeySupported": true,
+        "formatValidated": true,
+        "dedupeValidated": true
+      },
+      "options": [
+        "DnaA, SSB Pts...",
+        "SSB Pts., DNA helicases.",
+        "DnaA, SSB Pts &. DNA helicases.",
+        "DnaA Pts &.DNA helicases."
+      ],
+      "correctIndex": 2
+    },
+    "b": {
+      "id": "MBMG1-FINAL-0372",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The pre-priming (preprimosome) complex is produced by joining of-:",
+      "explanation": "A primosome contains machinery for primer synthesis; the replisome is the broader replication apparatus. Primase synthesizes RNA from a DNA template and does not need a pre-existing primer.",
+      "provenance": {
+        "sourceTitle": "assessment 1",
+        "sourceQuestionId": "assessment 1|44",
+        "sourceQuestionNumber": 44,
+        "sourcePage": null,
+        "sourcePages": "1-9",
+        "answerProvenance": null,
+        "sourceOccurrences": [
+          {
+            "sourceTitle": "assessment 1",
+            "sourceQuestionNumber": 44,
+            "sourceQuestionId": "assessment 1|44",
+            "sourceFile": "all1_routed_checkpoint_batch1_2026-07-29.json",
+            "sourcePage": null,
+            "sourcePages": "1-9",
+            "statusRaw": "confirmed",
+            "statusCategory": "answer_supported"
+          },
+          {
+            "sourceTitle": "genetics omar questions",
+            "sourceQuestionNumber": 44,
+            "sourceQuestionId": "genetics omar questions|44",
+            "sourceFile": "all1_routed_checkpoint_batch5_omar_partial_2026-07-29.json",
+            "sourcePage": null,
+            "sourcePages": "79-95",
+            "statusRaw": "answer_filled_from_exact_duplicate_assessment1",
+            "statusCategory": "answer_supported"
+          }
+        ],
+        "mergedLegacyQuestionIds": [
+          "MBMG1-0488"
+        ]
+      },
+      "quality": {
+        "publicationStatus": "approved",
+        "sourceKeySupported": true,
+        "formatValidated": true,
+        "dedupeValidated": true
+      },
+      "options": [
+        "DnaA, SSB Pts...",
+        "SSB Pts., DNA helicases.",
+        "DnaA, SSB Pts &. DNA helicases.",
+        "DnaA Pts &.DNA helicases."
+      ],
+      "correctIndex": 2
+    }
+  },
+  {
+    "module": "MBMG-1",
+    "a": {
+      "id": "MBMG1-FINAL-0424",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "A DNA sequence that inhibits initiation of transcription is:",
+      "explanation": "Promoters, enhancers, silencers, and response elements are cis-acting DNA sequences. Activators and repressors are trans-acting proteins that bind regulatory elements and influence transcription.",
+      "provenance": {
+        "sourceTitle": "Omar MCQ",
+        "sourceQuestionId": "Omar MCQ | Transcription | Q6",
+        "sourceQuestionNumber": 6,
+        "sourcePage": null,
+        "sourcePages": "merged PDF pages 321-324",
+        "answerProvenance": "Visible printed answer grid on merged PDF page 324.",
+        "sourceOccurrences": [
+          {
+            "sourceTitle": "Omar MCQ",
+            "sourceQuestionNumber": 6,
+            "sourceQuestionId": "Omar MCQ | Transcription | Q6",
+            "sourceFile": "omar_mcq_complete_pages319_334_checkpoint.json",
+            "sourcePage": null,
+            "sourcePages": "merged PDF pages 321-324",
+            "statusRaw": "answer_supported_by_visible_source_key",
+            "statusCategory": "answer_supported"
+          }
+        ],
+        "mergedLegacyQuestionIds": [
+          "MBMG1-0576"
+        ]
+      },
+      "quality": {
+        "publicationStatus": "approved",
+        "sourceKeySupported": true,
+        "formatValidated": true,
+        "dedupeValidated": true
+      },
+      "options": [
+        "Promoter",
+        "Enhancer",
+        "Repressor",
+        "Silencer"
+      ],
+      "correctIndex": 3
+    },
+    "b": {
+      "id": "MBMG1-FINAL-0884",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "A DNA sequence that inhibit initiation of transcription:",
+      "explanation": "Promoters, enhancers, silencers, and response elements are cis-acting DNA sequences. Activators and repressors are trans-acting proteins that bind regulatory elements and influence transcription.",
+      "provenance": {
+        "sourceTitle": "mcq genetics 2022",
+        "sourceQuestionId": "mcq genetics 2022|5",
+        "sourceQuestionNumber": 5,
+        "sourcePage": null,
+        "sourcePages": null,
+        "answerProvenance": null,
+        "sourceOccurrences": [
+          {
+            "sourceTitle": "mcq genetics 2022",
+            "sourceQuestionNumber": 5,
+            "sourceQuestionId": "mcq genetics 2022|5",
+            "sourceFile": "genetics2022_confirmed.json",
+            "sourcePage": null,
+            "sourcePages": null,
+            "statusRaw": "confirmed",
+            "statusCategory": "answer_supported"
+          }
+        ],
+        "mergedLegacyQuestionIds": [
+          "MBMG1-1101"
+        ]
+      },
+      "quality": {
+        "publicationStatus": "approved",
+        "sourceKeySupported": true,
+        "formatValidated": true,
+        "dedupeValidated": true
+      },
+      "options": [
+        "promoter.",
+        "Enhancer.",
+        "Repressor.",
+        "Silencer."
+      ],
+      "correctIndex": 3
+    }
+  },
+  {
+    "module": "MBMG-1",
+    "a": {
+      "id": "MBMG1-FINAL-0428",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "A promoter site on DNA",
+      "explanation": "Promoter DNA recruits the transcription-initiation machinery. For typical polymerase II promoters, basal transcription factors including TFIID help recruit the polymerase; the transcription start is +1 and upstream positions are negative.",
+      "provenance": {
+        "sourceTitle": "mcq genetics 2022",
+        "sourceQuestionId": "mcq genetics 2022|70",
+        "sourceQuestionNumber": 70,
+        "sourcePage": null,
+        "sourcePages": null,
+        "answerProvenance": null,
+        "sourceOccurrences": [
+          {
+            "sourceTitle": "mcq genetics 2022",
+            "sourceQuestionNumber": 70,
+            "sourceQuestionId": "mcq genetics 2022|70",
+            "sourceFile": "genetics2022_confirmed.json",
+            "sourcePage": null,
+            "sourcePages": null,
+            "statusRaw": "confirmed",
+            "statusCategory": "answer_supported"
+          }
+        ],
+        "mergedLegacyQuestionIds": [
+          "MBMG1-0709"
+        ]
+      },
+      "quality": {
+        "publicationStatus": "approved",
+        "sourceKeySupported": true,
+        "formatValidated": true,
+        "dedupeValidated": true
+      },
+      "options": [
+        "Transcribes repressor",
+        "Initiates transcription",
+        "Codes for RNA polymerase",
+        "Regulates termination",
+        "Translates specific proteins"
+      ],
+      "correctIndex": 1
+    },
+    "b": {
+      "id": "MBMG1-FINAL-0548",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The promoter site on DNA:",
+      "explanation": "Promoter DNA recruits the transcription-initiation machinery. For typical polymerase II promoters, basal transcription factors including TFIID help recruit the polymerase; the transcription start is +1 and upstream positions are negative.",
+      "provenance": {
+        "sourceTitle": "Omar MCQ",
+        "sourceQuestionId": "Omar MCQ | Transcription | Q5",
+        "sourceQuestionNumber": 5,
+        "sourcePage": null,
+        "sourcePages": "merged PDF pages 321-324",
+        "answerProvenance": "Visible printed answer grid on merged PDF page 324.",
+        "sourceOccurrences": [
+          {
+            "sourceTitle": "Omar MCQ",
+            "sourceQuestionNumber": 5,
+            "sourceQuestionId": "Omar MCQ | Transcription | Q5",
+            "sourceFile": "omar_mcq_complete_pages319_334_checkpoint.json",
+            "sourcePage": null,
+            "sourcePages": "merged PDF pages 321-324",
+            "statusRaw": "answer_supported_by_visible_source_key",
+            "statusCategory": "answer_supported"
+          }
+        ],
+        "mergedLegacyQuestionIds": [
+          "MBMG1-0575"
+        ]
+      },
+      "quality": {
+        "publicationStatus": "approved",
+        "sourceKeySupported": true,
+        "formatValidated": true,
+        "dedupeValidated": true
+      },
+      "options": [
+        "Transcribes repressor",
+        "Initiates transcription",
+        "Codes for RNA polymerase",
+        "Regulates termination",
+        "Translates specific proteins"
+      ],
+      "correctIndex": 1
+    }
+  },
+  {
+    "module": "MBMG-1",
+    "a": {
+      "id": "MBMG1-FINAL-0555",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The RNA with a high percentage of modified nucleotides is:",
+      "explanation": "tRNA is the amino-acid adaptor: its anticodon pairs with an mRNA codon, while the amino acid is ester-linked to the terminal adenosine of its 3′-CCA end. Its folded structure contains internal base pairs and numerous modified bases.",
+      "provenance": {
+        "sourceTitle": "Omar MCQ",
+        "sourceQuestionId": "Omar MCQ | RNA Structure | Q1",
+        "sourceQuestionNumber": 1,
+        "sourcePage": null,
+        "sourcePages": "merged PDF pages 320",
+        "answerProvenance": "Visible printed answer grid on merged PDF page 320.",
+        "sourceOccurrences": [
+          {
+            "sourceTitle": "Omar MCQ",
+            "sourceQuestionNumber": 1,
+            "sourceQuestionId": "Omar MCQ | RNA Structure | Q1",
+            "sourceFile": "omar_mcq_complete_pages319_334_checkpoint.json",
+            "sourcePage": null,
+            "sourcePages": "merged PDF pages 320",
+            "statusRaw": "answer_supported_by_visible_source_key",
+            "statusCategory": "answer_supported"
+          }
+        ],
+        "mergedLegacyQuestionIds": [
+          "MBMG1-0554"
+        ]
+      },
+      "quality": {
+        "publicationStatus": "approved",
+        "sourceKeySupported": true,
+        "formatValidated": true,
+        "dedupeValidated": true
+      },
+      "options": [
+        "tRNA",
+        "rRNA",
+        "mRNA",
+        "hnRNA"
+      ],
+      "correctIndex": 0
+    },
+    "b": {
+      "id": "MBMG1-FINAL-0556",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The RNA with high percent of modified nucleotides:",
+      "explanation": "tRNA is the amino-acid adaptor: its anticodon pairs with an mRNA codon, while the amino acid is ester-linked to the terminal adenosine of its 3′-CCA end. Its folded structure contains internal base pairs and numerous modified bases.",
+      "provenance": {
+        "sourceTitle": "mcq genetics 2022",
+        "sourceQuestionId": "mcq genetics 2022|1",
+        "sourceQuestionNumber": 1,
+        "sourcePage": null,
+        "sourcePages": null,
+        "answerProvenance": null,
+        "sourceOccurrences": [
+          {
+            "sourceTitle": "mcq genetics 2022",
+            "sourceQuestionNumber": 1,
+            "sourceQuestionId": "mcq genetics 2022|1",
+            "sourceFile": "genetics2022_confirmed.json",
+            "sourcePage": null,
+            "sourcePages": null,
+            "statusRaw": "confirmed",
+            "statusCategory": "answer_supported"
+          },
+          {
+            "sourceTitle": "DNA mcq.pdf",
+            "sourceQuestionNumber": null,
+            "sourceQuestionId": "DNA mcq.pdf|3",
+            "sourceFile": "dna_ch6_confirmed.json",
+            "sourcePage": null,
+            "sourcePages": null,
+            "statusRaw": "confirmed",
+            "statusCategory": "answer_supported"
+          }
+        ],
+        "mergedLegacyQuestionIds": [
+          "MBMG1-0636"
+        ]
+      },
+      "quality": {
+        "publicationStatus": "approved",
+        "sourceKeySupported": true,
+        "formatValidated": true,
+        "dedupeValidated": true
+      },
+      "options": [
+        "tRNA",
+        "rRNA",
+        "mRNA",
+        "hnRNA"
+      ],
+      "correctIndex": 0
+    }
+  },
+  {
+    "module": "MBMG-1",
+    "a": {
+      "id": "MBMG1-FINAL-0560",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The trans acting factor that control initiation of transcription is",
+      "explanation": "Promoters, enhancers, silencers, and response elements are cis-acting DNA sequences. Activators and repressors are trans-acting proteins that bind regulatory elements and influence transcription.",
+      "provenance": {
+        "sourceTitle": "DNA mcq.pdf",
+        "sourceQuestionId": "DNA mcq.pdf|27",
+        "sourceQuestionNumber": null,
+        "sourcePage": null,
+        "sourcePages": null,
+        "answerProvenance": null,
+        "sourceOccurrences": [
+          {
+            "sourceTitle": "DNA mcq.pdf",
+            "sourceQuestionNumber": null,
+            "sourceQuestionId": "DNA mcq.pdf|27",
+            "sourceFile": "dna_ch6_confirmed.json",
+            "sourcePage": null,
+            "sourcePages": null,
+            "statusRaw": "confirmed",
+            "statusCategory": "answer_supported"
+          },
+          {
+            "sourceTitle": "Omar MCQ",
+            "sourceQuestionNumber": 7,
+            "sourceQuestionId": "Omar MCQ | Transcription | Q7",
+            "sourceFile": "omar_mcq_complete_pages319_334_checkpoint.json",
+            "sourcePage": null,
+            "sourcePages": "merged PDF pages 321-324",
+            "statusRaw": "answer_supported_by_visible_source_key",
+            "statusCategory": "answer_supported"
+          }
+        ],
+        "mergedLegacyQuestionIds": [
+          "MBMG1-0543",
+          "MBMG1-0577"
+        ]
+      },
+      "quality": {
+        "publicationStatus": "approved",
+        "sourceKeySupported": true,
+        "formatValidated": true,
+        "dedupeValidated": true
+      },
+      "options": [
+        "Activator.",
+        "Enhancer.",
+        "promoter.",
+        "Silencer."
+      ],
+      "correctIndex": 0
+    },
+    "b": {
+      "id": "MBMG1-FINAL-0906",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The trans acting factor that activate initiation of transcription is:",
+      "explanation": "Promoters, enhancers, silencers, and response elements are cis-acting DNA sequences. Activators and repressors are trans-acting proteins that bind regulatory elements and influence transcription.",
+      "provenance": {
+        "sourceTitle": "mcq genetics 2022",
+        "sourceQuestionId": "mcq genetics 2022|6",
+        "sourceQuestionNumber": 6,
+        "sourcePage": null,
+        "sourcePages": null,
+        "answerProvenance": null,
+        "sourceOccurrences": [
+          {
+            "sourceTitle": "mcq genetics 2022",
+            "sourceQuestionNumber": 6,
+            "sourceQuestionId": "mcq genetics 2022|6",
+            "sourceFile": "genetics2022_confirmed.json",
+            "sourcePage": null,
+            "sourcePages": null,
+            "statusRaw": "confirmed",
+            "statusCategory": "answer_supported"
+          }
+        ],
+        "mergedLegacyQuestionIds": [
+          "MBMG1-1102"
+        ]
+      },
+      "quality": {
+        "publicationStatus": "approved",
+        "sourceKeySupported": true,
+        "formatValidated": true,
+        "dedupeValidated": true
+      },
+      "options": [
+        "Activator.",
+        "Enhancer.",
+        "promoter.",
+        "Silencer."
+      ],
+      "correctIndex": 0
+    }
+  },
+  {
+    "module": "MBMG-1",
+    "a": {
+      "id": "MBMG1-FINAL-0805",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "When a charged tRNA approaches the ribosome during elongation, it enters the large ribosomal subunit at the:",
+      "explanation": "Initiator tRNA occupies the P site. During elongation, incoming charged tRNA enters A, peptide transfer leaves the growing chain on A-site tRNA, and translocation moves it to P while empty tRNA moves to E. A stop codon in A recruits a release factor that hydrolyzes the P-site peptidyl-tRNA bond.",
+      "provenance": {
+        "sourceTitle": "omar mcq translation",
+        "sourceQuestionId": "omar mcq translation Q4",
+        "sourceQuestionNumber": 4,
+        "sourcePage": null,
+        "sourcePages": "328-330",
+        "answerProvenance": null,
+        "sourceOccurrences": [
+          {
+            "sourceTitle": "omar mcq translation",
+            "sourceQuestionNumber": 4,
+            "sourceQuestionId": "omar mcq translation Q4",
+            "sourceFile": "omar_mcq_complete_pages319_334_checkpoint.json",
+            "sourcePage": null,
+            "sourcePages": "328-330",
+            "statusRaw": "answer_supported_by_visible_source_key",
+            "statusCategory": "answer_supported"
+          }
+        ],
+        "mergedLegacyQuestionIds": [
+          "MBMG1-0987"
+        ]
+      },
+      "quality": {
+        "publicationStatus": "approved",
+        "sourceKeySupported": true,
+        "formatValidated": true,
+        "dedupeValidated": true
+      },
+      "options": [
+        "P site",
+        "A site",
+        "R site",
+        "E site"
+      ],
+      "correctIndex": 1
+    },
+    "b": {
+      "id": "MBMG1-FINAL-0806",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "When a charged tRNA molecule approaches the ribosome during the elongation stage, it enters the large ribosomal subunit at the:",
+      "explanation": "Initiator tRNA occupies the P site. During elongation, incoming charged tRNA enters A, peptide transfer leaves the growing chain on A-site tRNA, and translocation moves it to P while empty tRNA moves to E. A stop codon in A recruits a release factor that hydrolyzes the P-site peptidyl-tRNA bond.",
+      "provenance": {
+        "sourceTitle": "mcq genetics 2022",
+        "sourceQuestionId": "mcq genetics 2022|3",
+        "sourceQuestionNumber": 3,
+        "sourcePage": null,
+        "sourcePages": null,
+        "answerProvenance": null,
+        "sourceOccurrences": [
+          {
+            "sourceTitle": "mcq genetics 2022",
+            "sourceQuestionNumber": 3,
+            "sourceQuestionId": "mcq genetics 2022|3",
+            "sourceFile": "genetics2022_confirmed.json",
+            "sourcePage": null,
+            "sourcePages": null,
+            "statusRaw": "confirmed",
+            "statusCategory": "answer_supported"
+          }
+        ],
+        "mergedLegacyQuestionIds": [
+          "MBMG1-0940"
+        ]
+      },
+      "quality": {
+        "publicationStatus": "approved",
+        "sourceKeySupported": true,
+        "formatValidated": true,
+        "dedupeValidated": true
+      },
+      "options": [
+        "P site",
+        "A site",
+        "R site",
+        "E site"
+      ],
+      "correctIndex": 1
+    }
+  },
+  {
+    "module": "MBMG-1",
+    "a": {
+      "id": "MBMG1-FINAL-0863",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The alternate forms of a gene are called:",
+      "explanation": "Homozygous means identical alleles at a locus; heterozygous means different alleles. A compound heterozygote has two different pathogenic alleles of the same gene.",
+      "provenance": {
+        "sourceTitle": "omar mcq mode of inheritance",
+        "sourceQuestionId": "omar mcq mode of inheritance | Q3",
+        "sourceQuestionNumber": 3,
+        "sourcePage": 334,
+        "sourcePages": null,
+        "answerProvenance": "Visible green checkmark or printed answer grid on the source page.",
+        "sourceOccurrences": [
+          {
+            "sourceTitle": "omar mcq mode of inheritance",
+            "sourceQuestionNumber": 3,
+            "sourceQuestionId": "omar mcq mode of inheritance | Q3",
+            "sourceFile": "omar_mcq_complete_pages319_334_checkpoint.json",
+            "sourcePage": 334,
+            "sourcePages": null,
+            "statusRaw": "answer_supported_by_visible_source_key",
+            "statusCategory": "answer_supported"
+          }
+        ],
+        "mergedLegacyQuestionIds": [
+          "MBMG1-1045"
+        ]
+      },
+      "quality": {
+        "publicationStatus": "approved",
+        "sourceKeySupported": true,
+        "formatValidated": true,
+        "dedupeValidated": true
+      },
+      "options": [
+        "Recessive character",
+        "Dominant character",
+        "Alleles",
+        "Alternative gene"
+      ],
+      "correctIndex": 2
+    },
+    "b": {
+      "id": "MBMG1-FINAL-0864",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The alternate forms of a gene is called",
+      "explanation": "Homozygous means identical alleles at a locus; heterozygous means different alleles. A compound heterozygote has two different pathogenic alleles of the same gene.",
+      "provenance": {
+        "sourceTitle": "mcq genetics 2022",
+        "sourceQuestionId": "mcq genetics 2022|7",
+        "sourceQuestionNumber": 7,
+        "sourcePage": null,
+        "sourcePages": null,
+        "answerProvenance": null,
+        "sourceOccurrences": [
+          {
+            "sourceTitle": "mcq genetics 2022",
+            "sourceQuestionNumber": 7,
+            "sourceQuestionId": "mcq genetics 2022|7",
+            "sourceFile": "genetics2022_confirmed.json",
+            "sourcePage": null,
+            "sourcePages": null,
+            "statusRaw": "confirmed",
+            "statusCategory": "answer_supported"
+          }
+        ],
+        "mergedLegacyQuestionIds": [
+          "MBMG1-1040"
+        ]
+      },
+      "quality": {
+        "publicationStatus": "approved",
+        "sourceKeySupported": true,
+        "formatValidated": true,
+        "dedupeValidated": true
+      },
+      "options": [
+        "recessive character",
+        "dominant character",
+        "alleles",
+        "alternative gene"
+      ],
+      "correctIndex": 2
+    }
+  }
+]

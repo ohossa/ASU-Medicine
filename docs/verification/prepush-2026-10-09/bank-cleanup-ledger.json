@@ -1,0 +1,679 @@
+[
+  {
+    "module": "MINF-1",
+    "id": "MINF1-CH1-MICR-0269",
+    "action": "display-cleanup",
+    "reason": "Remove directional controls, scanner watermark or appended neighboring-source heading; answer key and option order preserved",
+    "original": {
+      "id": "MINF1-CH1-MICR-0269",
+      "type": "mcq",
+      "lecture": 8,
+      "text": "Figure (1) a bacterial growth curve divided into phases A, B, C, and D. In which one of the phases are antibiotics such as penicillin most likely to kill bacteria? Fig (1) C Log CFUml Time",
+      "explanation": "The correct answer is Phase B. This mycology item tests the defining fungal morphology or biology, such as yeast, mold, hyphae, spores, dimorphism, or fungal culture behavior. The other options confuse fungal forms with bacteria, parasites, or non-defining fungal traits.",
+      "keyConcept": "Medical mycology high-yield: Figure (1) a bacterial growth curve divided into phases A, B, C, and D. In which one of the phases are antibiotics such as penicillin most likely to kill bacteria? Fig (1) C Log CFUml Time → Phase B.",
+      "options": [
+        "Phase A",
+        "Phase B",
+        "Phase C",
+        "Phase D C CamScanne"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MINF1-CH1-MICR-0269",
+      "type": "mcq",
+      "lecture": 8,
+      "text": "Figure (1) a bacterial growth curve divided into phases A, B, C, and D. In which one of the phases are antibiotics such as penicillin most likely to kill bacteria? Fig (1) C Log CFUml Time",
+      "explanation": "The correct answer is Phase B. This mycology item tests the defining fungal morphology or biology, such as yeast, mold, hyphae, spores, dimorphism, or fungal culture behavior. The other options confuse fungal forms with bacteria, parasites, or non-defining fungal traits.",
+      "keyConcept": "Medical mycology high-yield: Figure (1) a bacterial growth curve divided into phases A, B, C, and D. In which one of the phases are antibiotics such as penicillin most likely to kill bacteria? Fig (1) C Log CFUml Time → Phase B.",
+      "options": [
+        "Phase A",
+        "Phase B",
+        "Phase C",
+        "Phase D"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    }
+  },
+  {
+    "module": "MINF-1",
+    "id": "MINF1-CH1-MICR-0276",
+    "action": "display-cleanup",
+    "reason": "Remove directional controls, scanner watermark or appended neighboring-source heading; answer key and option order preserved",
+    "original": {
+      "id": "MINF1-CH1-MICR-0276",
+      "type": "mcq",
+      "lecture": 3,
+      "text": "Bacterial cell death is balanced by the formation of new cells occurs in:",
+      "explanation": "The correct answer is stationary phase. The stem is testing bacterial physiology: oxygen tolerance, nutrition, temperature range, growth-curve phase, or survival under environmental stress. The incorrect options mismatch the physiologic class or confuse growth phase with metabolic requirement.",
+      "keyConcept": "Bacterial physiology high-yield: Bacterial cell death is balanced by the formation of new cells occurs in: → stationary phase.",
+      "options": [
+        "Lag phase",
+        "stationary phase",
+        "Logarithmic phase",
+        "Decline phase. C CamScanne"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MINF1-CH1-MICR-0276",
+      "type": "mcq",
+      "lecture": 3,
+      "text": "Bacterial cell death is balanced by the formation of new cells occurs in:",
+      "explanation": "The correct answer is stationary phase. The stem is testing bacterial physiology: oxygen tolerance, nutrition, temperature range, growth-curve phase, or survival under environmental stress. The incorrect options mismatch the physiologic class or confuse growth phase with metabolic requirement.",
+      "keyConcept": "Bacterial physiology high-yield: Bacterial cell death is balanced by the formation of new cells occurs in: → stationary phase.",
+      "options": [
+        "Lag phase",
+        "stationary phase",
+        "Logarithmic phase",
+        "Decline phase."
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    }
+  },
+  {
+    "module": "MINF-1",
+    "id": "MINF1-CH1-MICR-0336",
+    "action": "display-cleanup",
+    "reason": "Remove directional controls, scanner watermark or appended neighboring-source heading; answer key and option order preserved",
+    "original": {
+      "id": "MINF1-CH1-MICR-0336",
+      "type": "mcq",
+      "lecture": 10,
+      "text": "Mflfloraxella catarrhalis differs from commensal Neisseriae by the following:",
+      "explanation": "The correct answer is Morphology. Infection-control choices are driven by route of transmission, required PPE, room ventilation, and whether the patient is infectious or immunocompromised. The distractors use real precautions but apply to a different transmission route or clinical context.",
+      "keyConcept": "HCAI prevention high-yield: Mflfloraxella catarrhalis differs from commensal Neisseriae by the following: → Morphology.",
+      "options": [
+        "Morphology",
+        "DNA base content",
+        "Isolated from upper respiratory tract",
+        "Oxidase positive. ( CamScanne"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MINF1-CH1-MICR-0336",
+      "type": "mcq",
+      "lecture": 10,
+      "text": "Mflfloraxella catarrhalis differs from commensal Neisseriae by the following:",
+      "explanation": "The correct answer is Morphology. Infection-control choices are driven by route of transmission, required PPE, room ventilation, and whether the patient is infectious or immunocompromised. The distractors use real precautions but apply to a different transmission route or clinical context.",
+      "keyConcept": "HCAI prevention high-yield: Mflfloraxella catarrhalis differs from commensal Neisseriae by the following: → Morphology.",
+      "options": [
+        "Morphology",
+        "DNA base content",
+        "Isolated from upper respiratory tract",
+        "Oxidase positive."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null
+    }
+  },
+  {
+    "module": "MBL-2",
+    "id": "MBL2-CH1-PARA-0017",
+    "action": "display-cleanup",
+    "reason": "Remove directional controls, scanner watermark or appended neighboring-source heading; answer key and option order preserved",
+    "original": {
+      "id": "MBL2-CH1-PARA-0017",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "-In case of P.vivax & P.ovale prophylaxis in situation of long stay we used ‫ ‬",
+      "explanation": "**Why it is correct:** Quinine. Separate parasites by host, vector, infective stage, diagnostic stage, and characteristic clinical manifestation. Applied to “-In case of P.vivax & P.ovale prophylaxis in situation of long stay we used ‫ ‬”: the discriminating answer is “Quinine”.",
+      "keyConcept": "Separate parasites by host, vector, infective stage, diagnostic stage, and characteristic clinical manifestation; for “-In case of P.vivax & P.ovale prophylaxis in situation of long stay we used ‫ ‬”, the defining choice is “Quinine”.",
+      "options": [
+        "Mefloquine",
+        "Primaquine",
+        "Quinine",
+        "Mefloquine or Doxycycline"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MBL2-CH1-PARA-0017",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "-In case of P.vivax & P.ovale prophylaxis in situation of long stay we used",
+      "explanation": "**Why it is correct:** Quinine. Separate parasites by host, vector, infective stage, diagnostic stage, and characteristic clinical manifestation. Applied to “-In case of P.vivax & P.ovale prophylaxis in situation of long stay we used  ”: the discriminating answer is “Quinine”.",
+      "keyConcept": "Separate parasites by host, vector, infective stage, diagnostic stage, and characteristic clinical manifestation; for “-In case of P.vivax & P.ovale prophylaxis in situation of long stay we used  ”, the defining choice is “Quinine”.",
+      "options": [
+        "Mefloquine",
+        "Primaquine",
+        "Quinine",
+        "Mefloquine or Doxycycline"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null
+    }
+  },
+  {
+    "module": "MBL-2",
+    "id": "MBL2-CH1-PARA-0066",
+    "action": "display-cleanup",
+    "reason": "Remove directional controls, scanner watermark or appended neighboring-source heading; answer key and option order preserved",
+    "original": {
+      "id": "MBL2-CH1-PARA-0066",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Pregancy ‫ ‬",
+      "explanation": "**Why it is correct:** resist infection with P.falciparum. P. malariae–associated nephrotic syndrome is linked to immune-complex deposition in glomeruli.",
+      "keyConcept": "P. malariae–associated nephrotic syndrome is linked to immune-complex deposition in glomeruli; for “Pregancy ‫ ‬”, the defining choice is “resist infection with P.falciparum”.",
+      "options": [
+        "increase risk of malaria infection",
+        "resist infection with P.falciparum",
+        "resist infection with P.ovale",
+        "resist infection with Plasmodium malariae 28—Malaria when infect PREGNANT female may lead to ‫ ‬"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MBL2-CH1-PARA-0066",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Pregancy",
+      "explanation": "**Why it is correct:** resist infection with P.falciparum. P. malariae–associated nephrotic syndrome is linked to immune-complex deposition in glomeruli.",
+      "keyConcept": "P. malariae–associated nephrotic syndrome is linked to immune-complex deposition in glomeruli; for “Pregancy  ”, the defining choice is “resist infection with P.falciparum”.",
+      "options": [
+        "increase risk of malaria infection",
+        "resist infection with P.falciparum",
+        "resist infection with P.ovale",
+        "resist infection with Plasmodium malariae"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    }
+  },
+  {
+    "module": "MBL-2",
+    "id": "MBL2-CH1-PARA-0068",
+    "action": "display-cleanup",
+    "reason": "Remove directional controls, scanner watermark or appended neighboring-source heading; answer key and option order preserved",
+    "original": {
+      "id": "MBL2-CH1-PARA-0068",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Prophylaxis drugs in malaris Travellers to chloroquine resistant area we used ‫ ‬",
+      "explanation": "**Why it is correct:** Mefloquine. Separate parasites by host, vector, infective stage, diagnostic stage, and characteristic clinical manifestation.",
+      "keyConcept": "Separate parasites by host, vector, infective stage, diagnostic stage, and characteristic clinical manifestation; for “Prophylaxis drugs in malaris Travellers to chloroquine resistant area we used ‫ ‬”, the defining choice is “Mefloquine”.",
+      "options": [
+        "Mefloquine",
+        "Primaquine",
+        "Quinine",
+        "Mefloquine or Doxycycline"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MBL2-CH1-PARA-0068",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Prophylaxis drugs in malaris Travellers to chloroquine resistant area we used",
+      "explanation": "**Why it is correct:** Mefloquine. Separate parasites by host, vector, infective stage, diagnostic stage, and characteristic clinical manifestation.",
+      "keyConcept": "Separate parasites by host, vector, infective stage, diagnostic stage, and characteristic clinical manifestation; for “Prophylaxis drugs in malaris Travellers to chloroquine resistant area we used  ”, the defining choice is “Mefloquine”.",
+      "options": [
+        "Mefloquine",
+        "Primaquine",
+        "Quinine",
+        "Mefloquine or Doxycycline"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null
+    }
+  },
+  {
+    "module": "MBL-2",
+    "id": "MBL2-CH1-PARA-0105",
+    "action": "display-cleanup",
+    "reason": "Remove directional controls, scanner watermark or appended neighboring-source heading; answer key and option order preserved",
+    "original": {
+      "id": "MBL2-CH1-PARA-0105",
+      "type": "mcq",
+      "lecture": 3,
+      "text": "Deet is used in control of mosquitoes as ‫ ‬",
+      "explanation": "**Why it is correct:** Residual insecticides. Separate parasites by host, vector, infective stage, diagnostic stage, and characteristic clinical manifestation.",
+      "keyConcept": "Separate parasites by host, vector, infective stage, diagnostic stage, and characteristic clinical manifestation; for “Deet is used in control of mosquitoes as ‫ ‬”, the defining choice is “Residual insecticides”.",
+      "options": [
+        "Repallents",
+        "Residual insecticides",
+        "Non residual insecticides",
+        "insects growtg regulaters"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MBL2-CH1-PARA-0105",
+      "type": "mcq",
+      "lecture": 3,
+      "text": "Deet is used in control of mosquitoes as",
+      "explanation": "**Why it is correct:** Residual insecticides. Separate parasites by host, vector, infective stage, diagnostic stage, and characteristic clinical manifestation.",
+      "keyConcept": "Separate parasites by host, vector, infective stage, diagnostic stage, and characteristic clinical manifestation; for “Deet is used in control of mosquitoes as  ”, the defining choice is “Residual insecticides”.",
+      "options": [
+        "Repallents",
+        "Residual insecticides",
+        "Non residual insecticides",
+        "insects growtg regulaters"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH1-ANAT-0082",
+    "action": "exclude",
+    "reason": "Corrupted content requires source reconciliation; no reconstruction or medical answer inference",
+    "original": {
+      "id": "MRS2-CH1-ANAT-0082",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The trachea starts at the vertebral level of:",
+      "explanation": "Option A (C4) is the standard vertebral or surface landmark for this structure. C6. с. СВ places the structure at a different level and would misidentify the relevant thoracic relationship.",
+      "keyConcept": "“C4” — the key fact tested by: “The trachea starts at the vertebral level of”.",
+      "options": [
+        "C4.",
+        "C6.",
+        "T2.",
+        "T4."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH1-ANAT-0220",
+    "action": "display-cleanup",
+    "reason": "Remove directional controls, scanner watermark or appended neighboring-source heading; answer key and option order preserved",
+    "original": {
+      "id": "MRS2-CH1-ANAT-0220",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The oblique fissure of the lung begins posteriorly at the level of:",
+      "explanation": "Option D (Inferior angle of scapula) is the standard vertebral or surface landmark for this structure. 1s thoracic spine places the structure at a different level and would misidentify the relevant thoracic relationship.",
+      "keyConcept": "“Inferior angle of scapula” — the key fact tested by: “The oblique fissure of the lung begins posteriorly at the level of”.",
+      "options": [
+        "1s thoracic spine.",
+        "2d thoracic spine.",
+        "3d thoracic spine.",
+        "Inferior angle of scapula.",
+        "Superior angle of scapula. Section - мсо"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MRS2-CH1-ANAT-0220",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The oblique fissure of the lung begins posteriorly at the level of:",
+      "explanation": "Option D (Inferior angle of scapula) is the standard vertebral or surface landmark for this structure. 1s thoracic spine places the structure at a different level and would misidentify the relevant thoracic relationship.",
+      "keyConcept": "“Inferior angle of scapula” — the key fact tested by: “The oblique fissure of the lung begins posteriorly at the level of”.",
+      "options": [
+        "1s thoracic spine.",
+        "2d thoracic spine.",
+        "3d thoracic spine.",
+        "Inferior angle of scapula.",
+        "Superior angle of scapula."
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH1-ANAT-0454",
+    "action": "exclude",
+    "reason": "Missing MCQ choices in case children",
+    "original": {
+      "id": "MRS2-CH1-ANAT-0454",
+      "type": "case",
+      "lecture": 1,
+      "text": "A 60-year-old man had shortness of breath & chest pain referring to tip of shoulder. The doctor examined his chest and found diminished breath sounds. He recommended an urgent chest X-ray. The X-ray showed an obliteration of the costo-diaphragmatic angle. The doctor ordered a thoracocentesis.",
+      "explanation": "This vignette illustrates a pleural effusion with a blunted costophrenic angle, managed by thoracocentesis, and demonstrates referred shoulder pain from phrenic nerve irritation of the mediastinal/diaphragmatic parietal pleura.",
+      "keyConcept": "Thoracocentesis technique and phrenic-nerve referred pleural pain",
+      "subQuestions": [
+        {
+          "id": "MRS2-CH1-ANAT-0454-SQ1",
+          "type": "mcq",
+          "text": "What is thoracocentesis?",
+          "explanation": "The decisive point is “Thoracocentesis is the aspiration of pleural fluid by inserting a needle into the pleural cavity, performed in cases of pleural effusion.” This directly resolves thoracocentesis and prevents confusion with nearby structures or related diagnoses.",
+          "keyConcept": "Thoracocentesis is the aspiration of pleural fluid by inserting a needle into the pleural cavity, performed in cases of pleural effusion — the central fact needed for thoracocentesis.",
+          "options": [],
+          "correctIndex": 0
+        },
+        {
+          "id": "MRS2-CH1-ANAT-0454-SQ2",
+          "type": "mcq",
+          "text": "Where is the best site for thoracocentesis?",
+          "explanation": "The answer links “The needle is inserted in the 9th intercostal space in the midaxillary line, just a little above the upper edge of the rib below…” with “The 9th intercostal space is chosen to ensure the needle enters the pleural cavity between the lung (which cuts the 8th rib in the….” Together they supply the anatomical or clinical relationship the subquestion asks you to justify.",
+          "keyConcept": "The needle is inserted in the 9th intercostal space in the midaxillary line, just a little above the upper edge of the rib below… — the central fact needed for is the best site for thoracocentesis.",
+          "options": [],
+          "correctIndex": 0
+        },
+        {
+          "id": "MRS2-CH1-ANAT-0454-SQ3",
+          "type": "mcq",
+          "text": "Explain the referred pain in this case.",
+          "explanation": "The answer links “The shoulder pain results from irritation of the mediastinal and central diaphragmatic parietal pleura, which is supplied by the phrenic nerve (root value C3,…” with “The skin over the shoulder is supplied by the same C3-C5 spinal segments (via the supraclavicular nerves), so pain arising from phrenic-innervated pleura is….” Together they supply the anatomical or clinical relationship the subquestion asks you to justify.",
+          "keyConcept": "The shoulder pain results from irritation of the mediastinal and central diaphragmatic parietal pleura, which is supplied by the phrenic nerve (root value C3,… — the central fact needed for the referred pain in this case.",
+          "options": [],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH1-ANAT-0455",
+    "action": "exclude",
+    "reason": "Missing MCQ choices in case children",
+    "original": {
+      "id": "MRS2-CH1-ANAT-0455",
+      "type": "case",
+      "lecture": 1,
+      "text": "A twenty eight-year-old man was driving home when he experienced sudden stabbing pain in his right pectoral and right lateral axillary regions. He began to feel out of breath and both his respiratory and heart rates increased dramatically. On examination, the doctor noted that the patient had no history of respiratory problems, but was a heavy smoker. After viewing the chest radiograph, the doctor informed the patient that he had a spontaneous pneumothorax.",
+      "explanation": "This is a classic presentation of spontaneous pneumothorax in a young smoker, testing knowledge of pleural anatomy, its nerve supply, and the surface relations of the lung borders to the pleural recesses.",
+      "keyConcept": "Spontaneous pneumothorax and pleural nerve supply/recesses",
+      "subQuestions": [
+        {
+          "id": "MRS2-CH1-ANAT-0455-SQ1",
+          "type": "mcq",
+          "text": "Define pneumothorax.",
+          "explanation": "The decisive point is “Pneumothorax is the presence of air filling the pleural cavity.” This directly resolves pneumothorax and prevents confusion with nearby structures or related diagnoses.",
+          "keyConcept": "Pneumothorax is the presence of air filling the pleural cavity — the central fact needed for pneumothorax.",
+          "options": [],
+          "correctIndex": 0
+        },
+        {
+          "id": "MRS2-CH1-ANAT-0455-SQ2",
+          "type": "mcq",
+          "text": "What is the nerve supply of the pleura?",
+          "explanation": "The answer links “Parietal pleura (pain-sensitive): costal pleura and the peripheral part of the diaphragmatic pleura are supplied by intercostal nerves” with “mediastinal pleura and the central part of the diaphragmatic pleura are supplied by the phrenic nerve.” Together they supply the anatomical or clinical relationship the subquestion asks you to justify.",
+          "keyConcept": "Parietal pleura (pain-sensitive): costal pleura and the peripheral part of the diaphragmatic pleura are supplied by intercostal nerves — the central fact needed for the nerve supply of the pleura.",
+          "options": [],
+          "correctIndex": 0
+        },
+        {
+          "id": "MRS2-CH1-ANAT-0455-SQ3",
+          "type": "mcq",
+          "text": "Mention the lung border(s) related to the pleural recesses.",
+          "explanation": "The answer links “The anterior border of the lung is related to the costomediastinal recess, and the inferior border of the lung is related to the costodiaphragmatic…” with “This patient's sharp pain in the pectoral (anterior) and lateral axillary regions corresponds to irritation of the costal parietal pleura near these lung border/recess….” Together they supply the anatomical or clinical relationship the subquestion asks you to justify.",
+          "keyConcept": "The anterior border of the lung is related to the costomediastinal recess, and the inferior border of the lung is related to the costodiaphragmatic… — the central fact needed for the lung border(s) related to the pleural recesses.",
+          "options": [],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH1-ANAT-0456",
+    "action": "exclude",
+    "reason": "Missing MCQ choices in case children",
+    "original": {
+      "id": "MRS2-CH1-ANAT-0456",
+      "type": "case",
+      "lecture": 1,
+      "text": "A 40-year-old man suffering from cough and left shoulder pain was sent to have a chest x-ray. The radiograph showed left pleural effusion & he was told that a thoracocentesis should be done.",
+      "explanation": "This case combines referred shoulder pain from pleural effusion (via the phrenic nerve) with the technique of thoracocentesis, including the layers pierced by the needle from skin to parietal pleura.",
+      "keyConcept": "Pleural effusion, referred pain, and thoracocentesis needle path",
+      "subQuestions": [
+        {
+          "id": "MRS2-CH1-ANAT-0456-SQ1",
+          "type": "mcq",
+          "text": "Explain the shoulder pain.",
+          "explanation": "The answer links “The shoulder pain is present because the phrenic nerve shares in the nerve supply of the pleura (mediastinal and central diaphragmatic parietal pleura)” with “The root value of the phrenic nerve is C3, C4, C5, and the skin of the shoulder is supplied by the same nerve roots.” Together they supply the anatomical or clinical relationship the subquestion asks you to justify.",
+          "keyConcept": "The shoulder pain is present because the phrenic nerve shares in the nerve supply of the pleura (mediastinal and central diaphragmatic parietal pleura) — the central fact needed for the shoulder pain.",
+          "options": [],
+          "correctIndex": 0
+        },
+        {
+          "id": "MRS2-CH1-ANAT-0456-SQ2",
+          "type": "mcq",
+          "text": "Where would the doctor introduce the thoracocentesis needle?",
+          "explanation": "The decisive point is “In the 9th intercostal space in the midaxillary line, just above the upper border of the 10th rib (see Case 1 answer for full….” This directly resolves would the doctor introduce the thoracocentesis needle and prevents confusion with nearby structures or related diagnoses.",
+          "keyConcept": "In the 9th intercostal space in the midaxillary line, just above the upper border of the 10th rib (see Case 1 answer for full… — the central fact needed for would the doctor introduce the thoracocentesis needle.",
+          "options": [],
+          "correctIndex": 0
+        },
+        {
+          "id": "MRS2-CH1-ANAT-0456-SQ3",
+          "type": "mcq",
+          "text": "List the structures that will be pierced by the needle from superficial to deep.",
+          "explanation": "The decisive point is “Skin, superficial fascia, deep fascia, external intercostal muscle, internal intercostal muscle, innermost intercostal muscle, endothoracic fascia, and parietal pleura.” This directly resolves the structures that will be pierced by the needle from superficial to deep and prevents confusion with nearby structures or related diagnoses.",
+          "keyConcept": "Skin, superficial fascia, deep fascia, external intercostal muscle, internal intercostal muscle, innermost intercostal muscle, endothoracic fascia, and parietal pleura — the central fact needed for the structures that will be pierced by the needle from superficial to deep.",
+          "options": [],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH1-ANAT-0457",
+    "action": "exclude",
+    "reason": "Missing MCQ choices in case children",
+    "original": {
+      "id": "MRS2-CH1-ANAT-0457",
+      "type": "case",
+      "lecture": 1,
+      "text": "A four-year-old girl was brought into the emergency room with severe cough & dyspnea after accidentally swallowing a small object while playing. The X-ray confirmed the aspiration of the object into the airway.",
+      "explanation": "This vignette tests knowledge of foreign body aspiration, which most commonly lodges in the right lung (wider, shorter, more vertical main bronchus) and typically the lower lobe, along with its bronchopulmonary segments.",
+      "keyConcept": "Foreign body aspiration and right lung/lobe bronchopulmonary anatomy",
+      "subQuestions": [
+        {
+          "id": "MRS2-CH1-ANAT-0457-SQ1",
+          "type": "mcq",
+          "text": "To which lung would the object likely go?",
+          "explanation": "The decisive point is “The right lung.” This directly resolves To which lung would the object likely go and prevents confusion with nearby structures or related diagnoses.",
+          "keyConcept": "The right lung — the central fact needed for To which lung would the object likely go.",
+          "options": [],
+          "correctIndex": 0
+        },
+        {
+          "id": "MRS2-CH1-ANAT-0457-SQ2",
+          "type": "mcq",
+          "text": "Explain why.",
+          "explanation": "The decisive point is “Because the right main bronchus is shorter, wider, and more in line with (vertical continuation of) the trachea when compared with the left main….” This directly resolves why and prevents confusion with nearby structures or related diagnoses.",
+          "keyConcept": "Because the right main bronchus is shorter, wider, and more in line with (vertical continuation of) the trachea when compared with the left main… — the central fact needed for why.",
+          "options": [],
+          "correctIndex": 0
+        },
+        {
+          "id": "MRS2-CH1-ANAT-0457-SQ3",
+          "type": "mcq",
+          "text": "In which lobe would the object settle?",
+          "explanation": "The decisive point is “The lower lobe (due to gravity and the more direct, wider trajectory of the right lower lobar bronchus).” This directly resolves In which lobe would the object settle and prevents confusion with nearby structures or related diagnoses.",
+          "keyConcept": "The lower lobe (due to gravity and the more direct, wider trajectory of the right lower lobar bronchus) — the central fact needed for In which lobe would the object settle.",
+          "options": [],
+          "correctIndex": 0
+        },
+        {
+          "id": "MRS2-CH1-ANAT-0457-SQ4",
+          "type": "mcq",
+          "text": "List the bronchopulmonary segments of that lobe.",
+          "explanation": "The decisive point is “The segments of the right lower lobe are: apical, anterior basal, medial basal, posterior basal, and lateral basal.” This directly resolves the bronchopulmonary segments of that lobe and prevents confusion with nearby structures or related diagnoses.",
+          "keyConcept": "The segments of the right lower lobe are: apical, anterior basal, medial basal, posterior basal, and lateral basal — the central fact needed for the bronchopulmonary segments of that lobe.",
+          "options": [],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH1-ANAT-0458",
+    "action": "exclude",
+    "reason": "Missing MCQ choices in case children",
+    "original": {
+      "id": "MRS2-CH1-ANAT-0458",
+      "type": "case",
+      "lecture": 1,
+      "text": "After a street fight, one victim was carried to the hospital with a stab wound in the lower part of his neck. He was diagnosed to have pneumothorax.",
+      "explanation": "This case tests knowledge that the cervical pleura extends above the clavicle into the root of the neck, making it vulnerable to penetrating neck trauma and explaining pneumothorax from a low neck wound, plus the differing nerve supply of parietal versus visceral pleura.",
+      "keyConcept": "Cervical pleura extension into the neck and parietal vs visceral pleural nerve supply",
+      "subQuestions": [
+        {
+          "id": "MRS2-CH1-ANAT-0458-SQ1",
+          "type": "mcq",
+          "text": "Explain the occurrence of pneumothorax although the wound was in the neck.",
+          "explanation": "The answer links “Although the wound was located in the neck, pneumothorax occurred because the cervical pleura (the cupola/apex of the parietal pleura) extends up above the…” with “A stab wound in the lower neck can therefore penetrate the cervical pleura and pleural cavity, allowing air to enter and causing a pneumothorax.” Together they supply the anatomical or clinical relationship the subquestion asks you to justify.",
+          "keyConcept": "Although the wound was located in the neck, pneumothorax occurred because the cervical pleura (the cupola/apex of the parietal pleura) extends up above the… — the central fact needed for the occurrence of pneumothorax although the wound was in the neck.",
+          "options": [],
+          "correctIndex": 0
+        },
+        {
+          "id": "MRS2-CH1-ANAT-0458-SQ2",
+          "type": "mcq",
+          "text": "Compare the nerve supply of parietal & visceral pleura.",
+          "explanation": "The answer links “Parietal pleura is pain-sensitive and supplied by somatic nerves: intercostal nerves supply the costal pleura and the peripheral part of the diaphragmatic pleura, while…” with “Visceral pleura, in contrast, is pain-insensitive and supplied by autonomic nerves via the anterior and posterior pulmonary plexuses (sympathetic and parasympathetic/vagal fibers).” Together they supply the anatomical or clinical relationship the subquestion asks you to justify.",
+          "keyConcept": "Parietal pleura is pain-sensitive and supplied by somatic nerves: intercostal nerves supply the costal pleura and the peripheral part of the diaphragmatic pleura, while… — the central fact needed for Compare the nerve supply of parietal & visceral pleura.",
+          "options": [],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH1-ANAT-0459",
+    "action": "exclude",
+    "reason": "Missing MCQ choices in case children",
+    "original": {
+      "id": "MRS2-CH1-ANAT-0459",
+      "type": "case",
+      "lecture": 1,
+      "text": "A fifteen-year-old boy was rescued after falling in a frozen lake. The next day, he developed severe cold & 3 days later, his general condition deteriorated. He became febrile & started to cough blood-stained sputum. At first, he had no chest pain but later when he started coughing, he experienced severe chest pain over his right 5th intercostal space in the midclavicular line. A diagnosis of lobar pneumonia was made.",
+      "explanation": "This vignette on lobar pneumonia tests the distinction between pain-insensitive visceral pleura and pain-sensitive parietal pleura, the combined nerve supply of the lung and pleura, and localizing the affected lobe/segments from the site of chest pain.",
+      "keyConcept": "Lobar pneumonia, pleural pain sensitivity, and lobar localization by nerve supply",
+      "subQuestions": [
+        {
+          "id": "MRS2-CH1-ANAT-0459-SQ1",
+          "type": "mcq",
+          "text": "Why did he not experience chest pain early in the disease?",
+          "explanation": "The answer links “Early in the disease, only the lung parenchyma and visceral pleura were affected” with “the visceral pleura is insensitive to pain (being supplied only by the autonomic pulmonary plexuses), so no pain was felt.” Together they supply the anatomical or clinical relationship the subquestion asks you to justify.",
+          "keyConcept": "Early in the disease, only the lung parenchyma and visceral pleura were affected — the central fact needed for did he not experience chest pain early in the disease.",
+          "options": [],
+          "correctIndex": 0
+        },
+        {
+          "id": "MRS2-CH1-ANAT-0459-SQ2",
+          "type": "mcq",
+          "text": "What is the nerve supply of the lung & the pleura?",
+          "explanation": "The answer links “Lung and visceral pleura: supplied by the anterior and posterior pulmonary plexuses, formed by sympathetic fibers (from the 2nd-5th sympathetic ganglia) and parasympathetic fibers…” with “Parietal pleura: costal and peripheral diaphragmatic parts are supplied by intercostal nerves.” Together they supply the anatomical or clinical relationship the subquestion asks you to justify.",
+          "keyConcept": "Lung and visceral pleura: supplied by the anterior and posterior pulmonary plexuses, formed by sympathetic fibers (from the 2nd-5th sympathetic ganglia) and parasympathetic fibers… — the central fact needed for the nerve supply of the lung & the pleura.",
+          "options": [],
+          "correctIndex": 0
+        },
+        {
+          "id": "MRS2-CH1-ANAT-0459-SQ3",
+          "type": "mcq",
+          "text": "How can you explain the cause of the pain? Why did it used to be worse on coughing?",
+          "explanation": "The answer links “The pain is due to pleurisy (inflammation of the pleura) once the pathology extends to involve and stretch the parietal pleura, stimulating the related…” with “It worsens on coughing because coughing causes forceful, rapid movement and increased friction/stretching of the already-inflamed parietal pleura against the chest wall, further stimulating….” Together they supply the anatomical or clinical relationship the subquestion asks you to justify.",
+          "keyConcept": "The pain is due to pleurisy (inflammation of the pleura) once the pathology extends to involve and stretch the parietal pleura, stimulating the related… — the central fact needed for can you explain the cause of the pain? Why did it used to be worse on coughing.",
+          "options": [],
+          "correctIndex": 0
+        },
+        {
+          "id": "MRS2-CH1-ANAT-0459-SQ4",
+          "type": "mcq",
+          "text": "Which lobe of lung is most likely affected?",
+          "explanation": "The answer links “The middle lobe of the right lung” with “The horizontal fissure of the right lung starts at the level of the 4th costal cartilage and ends at the oblique fissure in the….” Together they supply the anatomical or clinical relationship the subquestion asks you to justify.",
+          "keyConcept": "The middle lobe of the right lung — the central fact needed for lobe of lung is most likely affected.",
+          "options": [],
+          "correctIndex": 0
+        },
+        {
+          "id": "MRS2-CH1-ANAT-0459-SQ5",
+          "type": "mcq",
+          "text": "What are the segments of the affected lobe?",
+          "explanation": "The decisive point is “The middle lobe of the right lung has two bronchopulmonary segments: medial and lateral.” This directly resolves the segments of the affected lobe and prevents confusion with nearby structures or related diagnoses.",
+          "keyConcept": "The middle lobe of the right lung has two bronchopulmonary segments: medial and lateral — the central fact needed for the segments of the affected lobe.",
+          "options": [],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH1-ANAT-0526",
+    "action": "exclude",
+    "reason": "Missing MCQ choices in case children",
+    "original": {
+      "id": "MRS2-CH1-ANAT-0526",
+      "type": "case",
+      "lecture": 1,
+      "text": "A 31-year-old soldier received a shrapnel wound in the neck. During a physical examination, it was noticed that when he blew his nose or sneezed, the skin above the right clavicle bulged upward.",
+      "explanation": "This case tests knowledge of the suprapleural membrane (Sibson's fascia), which normally reinforces the thoracic inlet and prevents the cervical pleura/lung apex from bulging upward during raised intrathoracic pressure maneuvers like sneezing.",
+      "keyConcept": "Suprapleural membrane (Sibson's fascia) and thoracic inlet reinforcement",
+      "subQuestions": [
+        {
+          "id": "MRS2-CH1-ANAT-0526-SQ1",
+          "type": "mcq",
+          "text": "The upward bulging of the skin could be explained by which of the following: injury to the cervical pleura, damage to the suprapleural membrane, damage to the deep fascia in the root of the neck, or an ununited fracture of the first rib?",
+          "explanation": "The answer links “Damage to the suprapleural membrane” with “This membrane normally spans and reinforces the thoracic inlet, resisting the piston-like upward protrusion of the underlying cervical (cupola of) pleura and lung apex….” Together they supply the anatomical or clinical relationship the subquestion asks you to justify.",
+          "keyConcept": "Damage to the suprapleural membrane — the central fact needed for The upward bulging of the skin could be explained by which of the following: injury to the cervical pleura, damage to the suprapleural membrane, damage to the deep fascia in the root of the neck, or an ununited fracture of the first rib.",
+          "options": [],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH1-ANAT-0527",
+    "action": "exclude",
+    "reason": "Missing MCQ choices in case children",
+    "original": {
+      "id": "MRS2-CH1-ANAT-0527",
+      "type": "case",
+      "lecture": 1,
+      "text": "A 52-year-old woman was admitted to the hospital with a diagnosis of right-sided pleurisy with pneumonia. It was decided to remove a sample of pleural fluid from her pleural cavity. The resident inserted the needle close to the lower border of the eighth rib in the anterior axillary line. The next morning he was surprised to hear that the patient had complained of altered skin sensation extending from the point where the needle was inserted downward and forward to the midline of the abdominal wall above the umbilicus.",
+      "explanation": "This case tests the course of the intercostal neurovascular bundle in the costal groove along the lower border of each rib, and the consequence of nerve injury when a thoracocentesis needle is placed too close to the rib's lower border.",
+      "keyConcept": "Intercostal neurovascular bundle position and thoracocentesis nerve injury",
+      "subQuestions": [
+        {
+          "id": "MRS2-CH1-ANAT-0527-SQ1",
+          "type": "mcq",
+          "text": "The altered skin sensation in this patient after the needle thoracostomy could be explained by which of the following: the needle inserted too low, the needle inserted too close to the lower border of the eighth rib and damaging the eighth intercostal nerve, the needle impaling the eighth rib, or the needle penetrating too deeply and piercing the lung?",
+          "explanation": "The answer links “The needle was inserted too close to the lower border of the eighth rib and damaged the eighth intercostal nerve” with “The intercostal neurovascular bundle (vein, artery, nerve, from superior to inferior) runs in the costal groove along the lower border of the rib above….” Together they supply the anatomical or clinical relationship the subquestion asks you to justify.",
+          "keyConcept": "The needle was inserted too close to the lower border of the eighth rib and damaged the eighth intercostal nerve — the central fact needed for The altered skin sensation in this patient after the needle thoracostomy could be explained by which of the following: the needle inserted too low, the needle inserted too close to the lower border of the eighth rib and damaging the eighth intercostal nerve, the needle impaling the eighth rib, or the needle penetrating too deeply and piercing the lung.",
+          "options": [],
+          "correctIndex": 0
+        }
+      ]
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH2-PHYS-0165",
+    "action": "exclude",
+    "reason": "Corrupted content requires source reconciliation; no reconstruction or medical answer inference",
+    "original": {
+      "id": "MRS2-CH2-PHYS-0165",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "The most important factor that determines how much oxygen combines with hemoglobin is",
+      "explanation": "Shifts in the oxygen-hemoglobin dissociation curve determine how readily oxygen is picked up in the lungs versus released to the tissues. In “The most important factor that determines how much oxygen combines with hemoglobin is,” this principle specifically identifies “РОг.”",
+      "keyConcept": "The correct answer is “РОг”.",
+      "options": [
+        "DPG",
+        "РОг",
+        "Temperature",
+        "PCO₂",
+        "All of the above"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    }
+  }
+]

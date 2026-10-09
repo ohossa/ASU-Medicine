@@ -1,3 +1,4 @@
+import { contentFingerprint, resolveAnswerIndex, questionQualityIssues } from './question-quality';
 import { mkdir, readdir, readFile, writeFile, rename, copyFile } from 'node:fs/promises';
 import { basename, dirname, join, extname } from 'node:path';
 import { validateModuleFile } from './validate-banks';
@@ -210,8 +211,8 @@ function cleanStarText(text: string): string {
   return text.replace(/(?:\s*\*+)?\s*★+\s*$/g, '').trim();
 }
 
-function makeDuplicateKey(question: Pick<Question | IncomingQuestion, 'text' | 'question' | 'options'>): string {
-  return normalize(`${question.text ?? question.question ?? ''} ${(question.options ?? []).join(' ')}`);
+function makeDuplicateKey(question: Question | IncomingQuestion): string {
+  return contentFingerprint(question);
 }
 
 export function normalize(value: string): string {
@@ -453,14 +454,7 @@ function inferType(question: IncomingQuestion): QuestionType {
 }
 
 function normalizeCorrectIndex(question: Pick<IncomingQuestion | IncomingSubQuestion, 'correctAnswer' | 'correctIndex'>, options: string[]): number {
-  if (typeof question.correctIndex === 'number') return clamp(question.correctIndex, options.length);
-  if (question.correctAnswer) return clamp(question.correctAnswer.trim().toUpperCase().charCodeAt(0) - 65, options.length);
-  return 0;
-}
-
-function clamp(index: number, optionCount: number): number {
-  if (optionCount <= 0) return 0;
-  return Math.min(Math.max(index, 0), optionCount - 1);
+  return resolveAnswerIndex(question, options);
 }
 
 function nextQuestionId(moduleCode: string, chapter: Chapter, subject: SubjectColor): string {
@@ -515,6 +509,8 @@ function convertSubQuestion(incoming: IncomingSubQuestion, id: string): SubQuest
 }
 
 function validateQuestion(question: Question): string | null {
+  const qualityErrors = questionQualityIssues(question);
+  if (qualityErrors.length) return qualityErrors.join(' ');
   if (!question.text.trim()) return 'Question text is missing.';
   if (!Number.isInteger(question.lecture)) return 'Lecture must be an integer.';
   if ((question.type === 'mcq' || question.type === 'truefalse') && (!question.options?.length || question.correctIndex === undefined)) return 'Options or correctIndex missing.';
@@ -673,7 +669,9 @@ async function main() {
       }
 
       const cleanedIncomingText = cleanStarText(text);
-      const duplicateKey = makeDuplicateKey({ ...incoming, text: cleanedIncomingText });
+      let duplicateKey: string;
+      try { duplicateKey = makeDuplicateKey({ ...incoming, text: cleanedIncomingText }); }
+      catch (error) { report.needsReview.push({ index, reason: (error as Error).message, text }); return; }
       const matchedDuplicateId = duplicateIndex.get(duplicateKey);
       if (matchedDuplicateId) {
         const existingQuestion = findQuestionById(bank, matchedDuplicateId);
@@ -684,7 +682,9 @@ async function main() {
         return;
       }
 
-      const converted = convertQuestion(incoming, moduleCode, chapter, subjectId, resolvedLecture);
+      let converted: Question;
+      try { converted = convertQuestion(incoming, moduleCode, chapter, subjectId, resolvedLecture); }
+      catch (error) { report.needsReview.push({ index, reason: (error as Error).message, text }); return; }
       const validationError = validateQuestion(converted);
       if (validationError) {
         report.needsReview.push({ index, reason: validationError, text });
@@ -709,6 +709,7 @@ async function main() {
 
     // Decide fate of import
     let finalStatus: 'SUCCESS' | 'FAILED' | 'SKIPPED' = 'SUCCESS';
+    if (strict && report.needsReview.length) proposedValidationErrors.push(`${report.needsReview.length} unresolved incoming questions; strict import refuses partial release.`);
     if (proposedValidationErrors.length > 0) {
       finalStatus = 'FAILED';
       console.error(`  ❌ Proposed merge failed validation:`);

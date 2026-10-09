@@ -1,3 +1,4 @@
+import { questionQualityIssues } from './question-quality';
 import { readdir, readFile } from 'node:fs/promises';
 import { join } from 'node:path';
 
@@ -190,6 +191,8 @@ export function validateModuleFile(bank: QuestionBankFile): string[] {
           ids.add(q.id);
         }
 
+        for (const issue of questionQualityIssues(q)) errors.push(`${qLoc}: ${issue}`);
+
         // Text check
         if (typeof q.text !== 'string' || !q.text.trim()) {
           errors.push(`${qLoc}: "text" must be a non-empty string.`);
@@ -212,7 +215,7 @@ export function validateModuleFile(bank: QuestionBankFile): string[] {
           if (!Array.isArray(q.options) || q.options.length === 0) {
             errors.push(`${qLoc}: MCQ/TrueFalse question must have a non-empty "options" array.`);
           } else {
-            if (typeof q.correctIndex !== 'number' || q.correctIndex < 0 || q.correctIndex >= q.options.length) {
+            if (!Number.isInteger(q.correctIndex) || typeof q.correctIndex !== 'number' || q.correctIndex < 0 || q.correctIndex >= q.options.length) {
               errors.push(`${qLoc}: "correctIndex" (${q.correctIndex}) is out of bounds for ${q.options.length} options.`);
             }
           }
@@ -270,7 +273,7 @@ export function validateModuleFile(bank: QuestionBankFile): string[] {
                 if (!Array.isArray(sq.options) || sq.options.length === 0) {
                   errors.push(`${sqLoc}: MCQ sub-question must have a non-empty "options" array.`);
                 } else {
-                  if (typeof sq.correctIndex !== 'number' || sq.correctIndex < 0 || sq.correctIndex >= sq.options.length) {
+                  if (!Number.isInteger(sq.correctIndex) || typeof sq.correctIndex !== 'number' || sq.correctIndex < 0 || sq.correctIndex >= sq.options.length) {
                     errors.push(`${sqLoc}: "correctIndex" (${sq.correctIndex}) is out of bounds for ${sq.options.length} options.`);
                   }
                 }

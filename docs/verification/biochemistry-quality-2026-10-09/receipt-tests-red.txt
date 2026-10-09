@@ -1,0 +1,17 @@
+.E.
+======================================================================
+ERROR: test_recovers_when_bank_write_succeeds_but_receipt_write_fails (test_ibm_quality.BiochemistryReplayTests.test_recovers_when_bank_write_succeeds_but_receipt_write_fails)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/Users/omarhossa/Documents/Medcine ASU/ASU-Medical-Portal/scripts/test_ibm_quality.py", line 28, in test_recovers_when_bank_write_succeeds_but_receipt_write_fails
+    written=target.read_bytes();self.assertFalse((base/'applied-hash.json').exists());ibm_quality.main();self.assertEqual(target.read_bytes(),written);self.assertTrue((base/'applied-hash.json').exists())
+                                                                                      ~~~~~~~~~~~~~~~~^^
+  File "/Users/omarhossa/Documents/Medcine ASU/ASU-Medical-Portal/scripts/ibm_quality.py", line 62, in main
+    if digest(live) not in (digest(before),known):raise ValueError('IBM-1 changed outside this reviewed release')
+                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: IBM-1 changed outside this reviewed release
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.007s
+
+FAILED (errors=1)

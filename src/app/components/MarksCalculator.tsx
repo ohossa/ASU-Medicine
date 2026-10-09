@@ -783,7 +783,7 @@ export function MarksCalculator({ onBack, userButton, studentYear }: { onBack: (
                             <button
                               onClick={() => removeCustomSection(s.id)}
                               aria-label="Remove section"
-                              className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-gray-200 dark:border-white/[0.06] text-gray-400 dark:text-white/40 transition-colors hover:bg-rose-500/10 hover:text-rose-500 dark:hover:text-rose-400 cursor-pointer"
+                              className="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg border border-gray-200 dark:border-white/[0.06] text-gray-400 dark:text-white/40 transition-colors hover:bg-rose-500/10 hover:text-rose-500 dark:hover:text-rose-400 cursor-pointer"
                             >
                               <Trash2 size={15} />
                             </button>

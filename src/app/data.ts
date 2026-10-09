@@ -1,3 +1,6 @@
+import {contentRevision} from './loading/contentRevision';
+import manifestJson from './generated/bankManifest.json';
+import {createResourceLoader} from './loading/resources';
 import { cleanQuestionStem } from './utils/questionStem';
 import { applyPublishedEdits } from './lib/publishedEdits';
 import type { ChapterData, Question, SubjectColor, SubjectData, SubQuestion } from './types';
@@ -558,10 +561,17 @@ function detectDbTypeOfJson(rawData: unknown): 'mcq' | 'essay' {
   return 'mcq'; // fallback default
 }
 
-let loadPromise: Promise<void> | null = null;
+interface BankManifest {year:number;semester:number;paths:string[];mcqCount:number;essayCount:number;totalCount:number;revision:string;bytes:number}
+export const bankManifest=manifestJson as Record<string,BankManifest>;
+const sourceContentVersions=new Map<string,string>();
+let latestPublishedEdits:unknown[]=[];
+let overlayQueue:Promise<unknown>=Promise.resolve();
+function serializeOverlay<T>(operation:()=>Promise<T>):Promise<T>{const next=overlayQueue.then(operation);overlayQueue=next.catch(()=>undefined);return next;}
+let correctionsPromise:Promise<void>|null=null;
 
-async function loadAllModules(): Promise<void> {
-  const loadedFiles = await Promise.all(Object.entries(globbedFiles).map(async ([path,loader]) => [path,await loader()] as const));
+async function loadModuleFiles(paths:string[]): Promise<void> {
+  const loadedFiles = await Promise.all(paths.map(async path => { const loader=globbedFiles[path];if(!loader)throw new Error('Question bank file missing.');return [path,await loader()] as const; }));
+  const staged:Record<string,LoadedDatabases>={};
   for (const [path,fileModule] of loadedFiles) {
     const rawData = (fileModule as Record<string, unknown>).default ?? fileModule;
 
@@ -573,11 +583,11 @@ async function loadAllModules(): Promise<void> {
     }
     if (v2Data.meta && v2Data.meta.moduleCode) {
       const code = v2Data.meta.moduleCode;
-      if (!moduleDatabases[code]) {
-        moduleDatabases[code] = { mcqRaw: null, essayRaw: null };
+      if (!staged[code]) {
+        staged[code] = { mcqRaw: null, essayRaw: null };
       }
       assertUniqueQuestionIds(v2Data, path);
-      moduleDatabases[code].v2Raw = v2Data;
+      staged[code].v2Raw = v2Data;
     } else {
       console.warn(`Missing meta or moduleCode in v2 JSON: ${path}`);
     }
@@ -629,8 +639,8 @@ async function loadAllModules(): Promise<void> {
     }
 
     const code = matchedModule.code;
-    if (!moduleDatabases[code]) {
-      moduleDatabases[code] = { mcqRaw: null, essayRaw: null };
+    if (!staged[code]) {
+      staged[code] = { mcqRaw: null, essayRaw: null };
     }
 
     // Determine whether it's MCQ or Essay
@@ -651,12 +661,16 @@ async function loadAllModules(): Promise<void> {
     }
 
     if (isEssay) {
-      moduleDatabases[code].essayRaw = rawData;
+      staged[code].essayRaw = rawData;
     } else {
-      moduleDatabases[code].mcqRaw = rawData;
+      staged[code].mcqRaw = rawData;
     }
   }
 }
+  await Promise.all(Object.entries(staged).flatMap(([code,db])=>(db.v2Raw?.chapters??[]).flatMap(c=>(c.subjects??[]).flatMap(s=>s.questions.map(async q=>{const revision=await contentRevision(q as unknown as Record<string,unknown>);sourceContentVersions.set(code+':'+q.id,revision);})))));
+  await serializeOverlay(async()=>{await applyPublishedEdits(staged,latestPublishedEdits,correctionSourceVersions);Object.assign(moduleDatabases,staged);});
+  correctionRevision++;
+  window.dispatchEvent(new Event('asu-corrections-status'));
 }
 
 const correctionSourceVersions = new Map<string,string>();
@@ -668,18 +682,18 @@ export async function refreshQuestionCorrections() {
     const response=await fetch('/api/question-bank?action=published',{signal:AbortSignal.timeout(8000),cache:'no-store'});
     if(!response.ok)throw new Error('Corrections unavailable');
     const data=await response.json();if(!Array.isArray(data.edits))throw new Error('Invalid corrections');
-    await applyPublishedEdits(moduleDatabases,data.edits,correctionSourceVersions);correctionRevision++;correctionStatus='ready';
+    await serializeOverlay(async()=>{latestPublishedEdits=data.edits;await applyPublishedEdits(moduleDatabases,data.edits,correctionSourceVersions);});correctionRevision++;correctionStatus='ready';
   }catch { correctionStatus='unavailable'; }
   window.dispatchEvent(new Event('asu-corrections-status'));
 }
 
-export async function ensureDataLoaded(): Promise<void> {
-  if (Object.keys(moduleDatabases).length > 0) return Promise.resolve();
-  if (!loadPromise) {
-    loadPromise = loadAllModules().then(refreshQuestionCorrections);
-  }
-  return loadPromise;
-}
+const bankLoader=createResourceLoader(async code=>{const bank=bankManifest[code];if(!bank)return;await loadModuleFiles(bank.paths);});
+export const isModuleDataLoaded=(code:string)=>Boolean(moduleDatabases[code.toUpperCase()]);
+export async function ensureModuleDataLoaded(code:string):Promise<void>{await bankLoader.ensure(code.toUpperCase());}
+export async function ensureYearDataLoaded(year:number):Promise<void>{await Promise.all(Object.entries(bankManifest).filter(([,b])=>b.year===year).map(([code])=>ensureModuleDataLoaded(code)));}
+/** Kept for validators and explicit all-year search; home never calls this. */
+export async function ensureDataLoaded():Promise<void>{await Promise.all(Object.keys(bankManifest).map(ensureModuleDataLoaded));}
+export function startCorrectionsRefresh(){if(!correctionsPromise)correctionsPromise=refreshQuestionCorrections().finally(()=>{correctionsPromise=null;});return correctionsPromise;}
 
 // ── Builders ───────────────────────────────────────────────────────────────────
 
@@ -770,14 +784,13 @@ function mergeChapters(
 // ── Query Interfaces for the UI ────────────────────────────────────────────────
 
 export function isModuleActive(moduleCode: string): boolean {
-  const db = moduleDatabases[moduleCode];
-  if (!db) return false;
   const counts = getModuleQuestionCounts(moduleCode);
   return counts.totalCount > 0;
 }
 
 export function getModuleQuestionCounts(moduleCode: string) {
   const db = moduleDatabases[moduleCode];
+  if(!db){const bank=bankManifest[moduleCode];return {mcqCount:bank?.mcqCount??0,essayCount:bank?.essayCount??0,totalCount:bank?.totalCount??0};}
   let mcqCount = 0;
   let essayCount = 0;
 
@@ -823,7 +836,7 @@ export function getModuleQuestionCounts(moduleCode: string) {
   return { mcqCount, essayCount, totalCount: mcqCount + essayCount };
 }
 
-export function getChaptersForModuleAndMode(
+function buildChaptersForModuleAndMode(
   moduleCode: string,
   mode: 'mcq' | 'essay' | 'mixed'
 ): ChapterData[] {
@@ -960,6 +973,8 @@ export function getChaptersForModuleAndMode(
   return resultChapters;
 }
 
+const chapterCache=new Map<string,{revision:number;chapters:ChapterData[]}>();
+
 // Default export/fallback for backward compatibility (matches Endocrine Mixed mode)
 export const chapters = getChaptersForModuleAndMode('MEM-2', 'mixed');
 
@@ -989,4 +1004,9 @@ export function findQuestionById(id: string | number): { question: Question; cha
     }
   }
   return null;
+}
+
+export function getChaptersForModuleAndMode(code:string,mode:'mcq'|'essay'|'mixed'):ChapterData[]{
+ const key=code+':'+mode;const old=chapterCache.get(key);if(old?.revision===correctionRevision)return old.chapters;
+ const chapters=buildChaptersForModuleAndMode(code,mode);for(const c of chapters)for(const s of c.subjects)for(const q of s.questions)q.contentVersion??=sourceContentVersions.get(code+':'+q.id)??bankManifest[code]?.revision;chapterCache.set(key,{revision:correctionRevision,chapters});return chapters;
 }

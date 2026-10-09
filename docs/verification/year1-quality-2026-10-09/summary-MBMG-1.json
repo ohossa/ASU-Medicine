@@ -1,0 +1,15 @@
+{
+  "original_questions": 1002,
+  "reviewed_questions": 1002,
+  "retained_before_dedup": 917,
+  "excluded": 85,
+  "corrected_keys": 18,
+  "explanation_replacements": 917,
+  "limitations": [
+    "Nonblind self-review; no independent adjudication claimed.",
+    "No original PDF re-render or source occurrence reconciliation.",
+    "References reused for genuinely shared biological mechanisms; citations do not imply each original source key was independently verified.",
+    "342 and 711 excluded because correction source full text was blocked.",
+    "Canonical bank untouched; root applies patches and dedup."
+  ]
+}

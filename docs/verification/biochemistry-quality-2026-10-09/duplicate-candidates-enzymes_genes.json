@@ -1,0 +1,106 @@
+[
+  {
+    "kind": "candidate_true_duplicate_after_reviewed_text_cleanup",
+    "ids": [
+      "IBM1-BIO-DRV-20260921-01041",
+      "IBM1-BIO-DRV-20260921-01080"
+    ],
+    "method": "Full normalized stem, complete option-content multiset and answer content agree (or full essay model answer agrees); only lower-case, whitespace and terminal punctuation normalized. No merging performed."
+  },
+  {
+    "kind": "same_stem_distinct_choices_or_answer",
+    "ids": [
+      "IBM1-BIO-DRV-20260921-01244",
+      "IBM1-BIO-DRV-20260921-01322"
+    ],
+    "instruction": "Do not merge by stem alone; distinct choices/answer order/content require separate assessment."
+  },
+  {
+    "kind": "same_stem_distinct_choices_or_answer",
+    "ids": [
+      "IBM1-BIO-DRV-20260921-01336",
+      "IBM1-BIO-DRV-20260921-01884"
+    ],
+    "instruction": "Do not merge by stem alone; distinct choices/answer order/content require separate assessment."
+  },
+  {
+    "kind": "same_stem_distinct_choices_or_answer",
+    "ids": [
+      "IBM1-BIO-DRV-20260921-01247",
+      "IBM1-BIO-DRV-20260921-01267"
+    ],
+    "instruction": "Do not merge by stem alone; distinct choices/answer order/content require separate assessment."
+  },
+  {
+    "kind": "candidate_true_duplicate_semantic_paraphrase",
+    "ids": [
+      "IBM1-BIO-DRV-20260921-01345",
+      "IBM1-BIO-DRV-20260921-02347"
+    ],
+    "reason": "Same activation-energy completion question and same stopping/raising/lowering/bonding choices; first occurrence additionally contained a page-number leak.",
+    "method": "Both full questions, all alternatives and keyed answer reviewed directly; no merging performed. Parent must preserve distinct source placement/provenance."
+  },
+  {
+    "kind": "candidate_true_duplicate_semantic_paraphrase",
+    "ids": [
+      "IBM1-BIO-DRV-20260921-01322",
+      "IBM1-BIO-DRV-20260921-01870"
+    ],
+    "reason": "Same coenzyme properties and all-of-the-above answer; source wording tightly bounded versus tightly bound differs only grammatically.",
+    "method": "Both full questions, all alternatives and keyed answer reviewed directly; no merging performed. Parent must preserve distinct source placement/provenance."
+  },
+  {
+    "kind": "candidate_true_duplicate_semantic_paraphrase",
+    "ids": [
+      "IBM1-BIO-DRV-20260921-01334",
+      "IBM1-BIO-DRV-20260921-01882"
+    ],
+    "reason": "Same initial-velocity definition and five equivalent alternatives; grammatical paraphrase in stem.",
+    "method": "Both full questions, all alternatives and keyed answer reviewed directly; no merging performed. Parent must preserve distinct source placement/provenance."
+  },
+  {
+    "kind": "candidate_true_duplicate_semantic_paraphrase",
+    "ids": [
+      "IBM1-BIO-FINAL22-Q40",
+      "IBM1-BIO-DRV-20260921-02131"
+    ],
+    "reason": "Same aspirin irreversible-cyclooxygenase question and five kinetic alternatives; one from final exam and one topical source. Preserve occurrence/category provenance if consolidated.",
+    "method": "Both full questions, all alternatives and keyed answer reviewed directly; no merging performed. Parent must preserve distinct source placement/provenance."
+  },
+  {
+    "kind": "candidate_true_duplicate_semantic_paraphrase",
+    "ids": [
+      "IBM1-BIO-DRV-20260921-01332",
+      "IBM1-BIO-DRV-20260921-01880"
+    ],
+    "reason": "Same constitutive-expression definition and four equivalent alternatives after previous scientific qualification; stem/grammar paraphrase.",
+    "method": "Both full questions, all alternatives and keyed answer reviewed directly; no merging performed. Parent must preserve distinct source placement/provenance."
+  },
+  {
+    "kind": "candidate_true_duplicate_semantic_paraphrase",
+    "ids": [
+      "IBM1-BIO-DRV-20260921-01611",
+      "IBM1-BIO-DRV-20260921-01167"
+    ],
+    "reason": "Same cAMP-generating-enzyme question and same four enzyme alternatives; capitalization differs.",
+    "method": "Both full questions, all alternatives and keyed answer reviewed directly; no merging performed. Parent must preserve distinct source placement/provenance."
+  },
+  {
+    "kind": "candidate_true_duplicate_semantic_paraphrase",
+    "ids": [
+      "IBM1-BIO-DRV-20260921-01615",
+      "IBM1-BIO-DRV-20260921-01171"
+    ],
+    "reason": "Same ATP-to-cAMP precursor question with 5′AMP/3′AMP/ADP/ATP alternatives; prime punctuation and terminal source page-number differ.",
+    "method": "Both full questions, all alternatives and keyed answer reviewed directly; no merging performed. Parent must preserve distinct source placement/provenance."
+  },
+  {
+    "kind": "candidate_true_duplicate_semantic_paraphrase",
+    "ids": [
+      "IBM1-BIO-DRV-20260921-01335",
+      "IBM1-BIO-DRV-20260921-02128"
+    ],
+    "reason": "Same proenzyme-definition question and same five alternatives; minor grammatical paraphrase.",
+    "method": "Both full questions, all alternatives and keyed answer reviewed directly; no merging performed. Parent must preserve distinct source placement/provenance."
+  }
+]

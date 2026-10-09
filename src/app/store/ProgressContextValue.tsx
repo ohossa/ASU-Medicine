@@ -8,7 +8,6 @@ export interface ProgressState {
 }
 
 interface Ctx extends ProgressState {
-  addXp: (amount: number) => void;
   recordStreak: (s: number) => void;
   unlock: (id: string) => void;
   lastLevelUp: number;

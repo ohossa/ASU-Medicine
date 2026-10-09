@@ -27,6 +27,8 @@ import {
   type ReportStatus,
 } from "../app/reports/contracts";
 import "../app/reports/reports.css";
+import {TriagePanel,TriageAssessmentCard} from './TriagePanel';
+import type {TriageView} from '../app/reports/triage-contracts';
 import AdminOverviewPanel from "./AdminOverviewPanel";
 const AdminQuestionEditor = lazy(() => import('./AdminQuestionEditor'));
 const statusLabels: Record<ReportStatus, string> = {
@@ -133,6 +135,9 @@ function AdminWorkspace() {
   const [refresh, setRefresh] = useState(0);
   const [selected, setSelected] = useState<QuestionReport | null>(null);
   const [detailError, setDetailError] = useState("");
+  const [triageData,setTriageData]=useState<TriageView|null>(null);
+  const [triageBucket,setTriageBucket]=useState("all");
+  useEffect(()=>{setTriageBucket(triageData?.mode==='prioritized'?'priority':'all');setOffset(0);},[triageData?.mode]);
   useEffect(()=>{if(isInbox && requestedStatus && ["all","unresolved",...REPORT_STATUSES].includes(requestedStatus)){setStatus(requestedStatus);setOffset(0);}},[isInbox,requestedStatus]);
   useEffect(() => {
     if (!isInbox) {setLoading(false);setError("");return;}
@@ -142,6 +147,7 @@ function AdminWorkspace() {
     const query = new URLSearchParams({status, offset:String(offset)});
     if (isInbox) {
       query.set('groupBy',groupBy);
+      query.set('triage',triageBucket);
       if (search) query.set('search',search);
       if (moduleCode) query.set('moduleCode',moduleCode);
       if (subjectName) query.set('subjectName',subjectName);
@@ -163,7 +169,7 @@ function AdminWorkspace() {
         if (!controller.signal.aborted) setLoading(false);
       });
     return () => controller.abort();
-  }, [status, offset, refresh, isEditor, isInbox, search, moduleCode, subjectName, chapterId, topicName, groupBy]);
+  }, [status, offset, refresh, isEditor, isInbox, search, moduleCode, subjectName, chapterId, topicName, groupBy, triageBucket]);
   useEffect(() => {
     setSelected(null);
     setDetailError("");
@@ -243,6 +249,8 @@ function AdminWorkspace() {
           {!isInbox && <AdminOverviewPanel refresh={refresh}/>}
           {isInbox && (
             <>
+              <TriagePanel refresh={refresh} onRefresh={()=>setRefresh(v=>v+1)} onData={setTriageData}/>
+              <nav className="triage-buckets" aria-label="Inbox priority"><button className="report-secondary" aria-pressed={triageBucket==='priority'} onClick={()=>{setTriageBucket('priority');setOffset(0);}}>Needs attention</button><button className="report-secondary" aria-pressed={triageBucket==='low'} onClick={()=>{setTriageBucket('low');setOffset(0);}}>Low priority ({triageData?.counts.low??0})</button><button className="report-secondary" aria-pressed={triageBucket==='all'} onClick={()=>{setTriageBucket('all');setOffset(0);}}>All reports</button></nav>
               <form className="admin-surface admin-filters" onSubmit={e=>{e.preventDefault();setSearch(searchDraft.trim());setOffset(0);}}>
                 <div className="admin-search-row">
                   <label className="report-field">Search reports
@@ -350,6 +358,7 @@ function AdminWorkspace() {
                     <ReportDetail
                       key={selected.id + ":" + selected.revision}
                       report={selected}
+                      assessment={triageData?.assessments.find(a=>a.fingerprint===triageData.reportAssessments?.[selected.id])}
                       onUpdate={() => setRefresh((v) => v + 1)}
                     />
                   ) : (
@@ -379,8 +388,10 @@ function AdminWorkspace() {
 }
 function ReportDetail({
   report,
+  assessment,
   onUpdate,
 }: {
+  assessment?:import("../app/reports/triage-contracts").TriageAssessment;
   report: QuestionReport;
   onUpdate: () => void;
 }) {
@@ -451,6 +462,7 @@ function ReportDetail({
       {report.subQuestionId && (
         <p className="admin-meta mt-2">Reported part: {report.subQuestionId}</p>
       )}
+      <TriageAssessmentCard assessment={assessment} onRefresh={onUpdate}/>
       <section className="admin-reporter" aria-labelledby="reporter-heading">
         <h3 id="reporter-heading">Reporter</h3>
         <dl>

@@ -1,5 +1,7 @@
 import { beforeAll, describe, expect, it } from 'vitest';
 import bank from '../imports/year-1/semester-1/IBM-1.json';
+import original from '../../docs/verification/year1-quality-2026-10-09/before/IBM-1.json';
+import biochemistryQuality from '../../docs/verification/biochemistry-quality-2026-10-09/summary.json';
 import report from '../../docs/verification/biochemistry-import-2026-10-09/import-report.json';
 import decisions from '../../docs/verification/biochemistry-import-2026-10-09/medical-decisions.json';
 import accounting from '../../docs/verification/biochemistry-import-2026-10-09/source-accounting.json';
@@ -13,10 +15,11 @@ describe('Full biochemistry TXT intake',()=>{
   expect(accounting).toHaveLength(2152);expect(new Set(accounting.map(r=>r.sourceId)).size).toBe(2152);
   expect(report.sourceQuestions).toBe(2137);expect(report.unlinkedHistoricalAnswers).toBe(15);
   expect(report.decisionCounts.needs_review??0).toBe(0);
-  expect(raw.length).toBe(report.uniqueQuestions);expect(raw.length).toBeGreaterThan(1500);
+  const historical=original.chapters.flatMap(c=>c.subjects.flatMap(s=>s.questions));
+  expect(historical.length).toBe(report.uniqueQuestions);expect(raw.length).toBe(biochemistryQuality.after);
   expect(new Set(raw.map(q=>q.id)).size).toBe(raw.length);
-  expect(raw.flatMap(q=>q.sourceOccurrences)).toHaveLength(report.releasedOccurrences);
-  const ids=new Set(raw.map(q=>q.id));
+  expect(historical.flatMap(q=>q.sourceOccurrences)).toHaveLength(report.releasedOccurrences);
+  const ids=new Set(historical.map(q=>q.id));
   for(const row of accounting){
    expect(row.releaseErrors).toEqual([]);
    if(row.canonicalId)expect(ids.has(row.canonicalId)).toBe(true);
@@ -35,8 +38,8 @@ describe('Full biochemistry TXT intake',()=>{
  });
  it('grades the actual imported answer positions, including repaired source labels',()=>{
   const mcqs=getChaptersForModuleAndMode('IBM-1','mcq').flatMap(c=>c.subjects.flatMap(s=>s.questions));
-  expect(mcqs.length).toBe(report.questionTypes.mcq);
-  for(const q of mcqs){
+  expect(mcqs.length).toBe(biochemistryQuality.types.mcq + biochemistryQuality.types.matching);
+  for(const q of mcqs.filter(q=>q.type==='mcq')){
    expect(q.options!.length).toBeGreaterThanOrEqual(2);
    expect(checkAnswerCorrect(q,q.correctIndex),String(q.id)).toBe(true);
    expect(checkAnswerCorrect(q,((q.correctIndex??0)+1)%q.options!.length),String(q.id)).toBe(false);
@@ -47,7 +50,7 @@ describe('Full biochemistry TXT intake',()=>{
  });
  it('provides substantive explanations and model answers in the essay route',()=>{
   const essays=getChaptersForModuleAndMode('IBM-1','essay').flatMap(c=>c.subjects.flatMap(s=>s.questions));
-  expect(essays.length).toBe(report.questionTypes.essay);
+  expect(essays.length).toBe(biochemistryQuality.types.essay);
   for(const q of essays){expect(q.type).toBe('essay');expect(q.modelAnswer?.trim().length).toBeGreaterThan(0);}
   for(const q of raw){
    expect(q.explanation.trim().length).toBeGreaterThan(15);expect(q.explanation).not.toMatch(/see above|review the related lecture/i);

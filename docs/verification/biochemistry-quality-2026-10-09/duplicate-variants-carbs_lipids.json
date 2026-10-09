@@ -1,0 +1,70 @@
+[
+  {
+    "ids": [
+      "IBM1-BIO-DRV-20260921-00125",
+      "IBM1-BIO-DRV-20260921-00130"
+    ],
+    "reason": "same requested two choline-containing phospholipids, identical answer and points",
+    "status": "true_duplicate_variant_for_parent_adjudication",
+    "optionsAndAnswerReviewed": true,
+    "preserveContradictoryKeys": true
+  },
+  {
+    "ids": [
+      "IBM1-BIO-DRV-20260921-00451",
+      "IBM1-BIO-DRV-20260921-00473"
+    ],
+    "reason": "same tissue/depot comparison; identical model answer, one asks for three differences",
+    "status": "true_duplicate_variant_for_parent_adjudication",
+    "optionsAndAnswerReviewed": true,
+    "preserveContradictoryKeys": true
+  },
+  {
+    "ids": [
+      "IBM1-BIO-DRV-20260921-01120",
+      "IBM1-BIO-DRV-20260921-01400"
+    ],
+    "reason": "same full alternative set and answer, after Greek/salmon spelling cleanup",
+    "status": "true_duplicate_variant_for_parent_adjudication",
+    "optionsAndAnswerReviewed": true,
+    "preserveContradictoryKeys": true
+  },
+  {
+    "ids": [
+      "IBM1-BIO-DRV-20260921-01132",
+      "IBM1-BIO-DRV-20260921-01565"
+    ],
+    "reason": "same full alternative set and phosphatidic-acid answer, after logo cleanup",
+    "status": "true_duplicate_variant_for_parent_adjudication",
+    "optionsAndAnswerReviewed": true,
+    "preserveContradictoryKeys": true
+  },
+  {
+    "ids": [
+      "IBM1-BIO-BGFORM-LIP-Q03",
+      "IBM1-BIO-DRV-20260921-01592"
+    ],
+    "reason": "same full alternative set and amphipathic answer; options permuted",
+    "status": "true_duplicate_variant_for_parent_adjudication",
+    "optionsAndAnswerReviewed": true,
+    "preserveContradictoryKeys": true
+  },
+  {
+    "ids": [
+      "IBM1-BIO-BGFORM-MET-Q07",
+      "IBM1-BIO-F2-Q09"
+    ],
+    "reason": "same complete signal-transduction alternatives and answer; options permuted",
+    "status": "true_duplicate_variant_for_parent_adjudication",
+    "optionsAndAnswerReviewed": true,
+    "preserveContradictoryKeys": true
+  },
+  {
+    "ids": [
+      "IBM1-BIO-DRV-20260921-01199",
+      "IBM1-BIO-DRV-20260921-01200"
+    ],
+    "reason": "Same stem but different correct option: pyruvate kinase vs phosphoglycerate kinase; preserve both distinct alternatives.",
+    "status": "not_a_duplicate"
+  }
+]

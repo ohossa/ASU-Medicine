@@ -1,0 +1,36 @@
+
+> replicated-quiz-app@0.0.1 test
+> vitest run src/app/utils/questionTable.test.ts
+
+
+ RUN  v4.1.11 /Users/omarhossa/Documents/Medcine ASU/ASU-Medical-Portal
+
+ ❯ src/app/utils/questionTable.test.ts (0 test)
+
+⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/app/utils/questionTable.test.ts [ src/app/utils/questionTable.test.ts ]
+Error: Failed to resolve import "./questionTable" from "src/app/utils/questionTable.test.ts". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /Users/omarhossa/Documents/Medcine ASU/ASU-Medical-Portal/src/app/utils/questionTable.test.ts:2:33
+  1  |  import { it, expect } from "vitest";
+  2  |  import { parseQuestionTable } from "./questionTable";
+     |                                      ^
+  3  |  it("does not discard prose containing an incidental pipe or concentration notation", () => {
+  4  |    expect(parseQuestionTable("ACE converts angiotensin | to angiotensin II. Which enzyme?")).toBeNull();
+ ❯ TransformPluginContext._formatLog ../../Medcine%20ASU/ASU-Medical-Portal/node_modules/vite/dist/node/chunks/dep-3O3b9SCF.js:42846:41
+ ❯ TransformPluginContext.error ../../Medcine%20ASU/ASU-Medical-Portal/node_modules/vite/dist/node/chunks/dep-3O3b9SCF.js:42843:16
+ ❯ normalizeUrl ../../Medcine%20ASU/ASU-Medical-Portal/node_modules/vite/dist/node/chunks/dep-3O3b9SCF.js:40820:23
+ ❯ ../../Medcine%20ASU/ASU-Medical-Portal/node_modules/vite/dist/node/chunks/dep-3O3b9SCF.js:40939:37
+ ❯ TransformPluginContext.transform ../../Medcine%20ASU/ASU-Medical-Portal/node_modules/vite/dist/node/chunks/dep-3O3b9SCF.js:40866:7
+ ❯ EnvironmentPluginContainer.transform ../../Medcine%20ASU/ASU-Medical-Portal/node_modules/vite/dist/node/chunks/dep-3O3b9SCF.js:42641:18
+ ❯ loadAndTransform ../../Medcine%20ASU/ASU-Medical-Portal/node_modules/vite/dist/node/chunks/dep-3O3b9SCF.js:36053:27
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  no tests
+   Start at  16:22:38
+   Duration  316ms (transform 12ms, setup 56ms, import 0ms, tests 0ms, environment 171ms)
+

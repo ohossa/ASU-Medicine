@@ -40,9 +40,13 @@
   "functions": {
     "api/question-reports.ts": {
       "includeFiles": "src/imports/**/*.json",
-      "maxDuration": 30
+      "maxDuration": 60
     },
     "api/question-bank.ts": {
+      "includeFiles": "src/imports/**/*.json",
+      "maxDuration": 30
+    },
+    "api/learning.ts": {
       "includeFiles": "src/imports/**/*.json",
       "maxDuration": 30
     }

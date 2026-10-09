@@ -1,0 +1,131 @@
+{
+  "modules": {
+    "BLS-HE-1": {
+      "before": 24,
+      "after": 24,
+      "beforeHash": "7d30b9e4bf322a303ccc9eb4a3cdf9a098e5f99c9df2b5debd39026b882d33ca",
+      "afterHash": "7d30b9e4bf322a303ccc9eb4a3cdf9a098e5f99c9df2b5debd39026b882d33ca",
+      "types": {
+        "mcq": 24
+      }
+    },
+    "IAE-1": {
+      "before": 1107,
+      "after": 1105,
+      "beforeHash": "44c2914d90390ce7e59e74f0d456e9a7d64d7a040d9d064751826a4d444c6c9b",
+      "afterHash": "9346e52ff0e79e0a8f0630a4a83e9c2546fd381536559fc924d636b6343e2138",
+      "types": {
+        "mcq": 937,
+        "matching": 52,
+        "fillblank": 70,
+        "essay": 40,
+        "case": 6
+      }
+    },
+    "IBM-1": {
+      "before": 1671,
+      "after": 1668,
+      "beforeHash": "639b7648be3f667dcaddcf16c71410b9666658d32183f381148a07f277610657",
+      "afterHash": "a72be4d45d103e75133987ededf0b1637fb0c8855701996dfffcf0259e808961",
+      "types": {
+        "mcq": 1205,
+        "essay": 463
+      }
+    },
+    "IHC-1": {
+      "before": 0,
+      "after": 0,
+      "beforeHash": "1d722e5239b261cd1d27f7a3a8ec21c9117c556ba9ca635fff7702ebdf7e8b50",
+      "afterHash": "1d722e5239b261cd1d27f7a3a8ec21c9117c556ba9ca635fff7702ebdf7e8b50",
+      "types": {}
+    },
+    "IPAT-1": {
+      "before": 0,
+      "after": 0,
+      "beforeHash": "820058ac21e30d3bf2a4db5c020dfbe9067c06ce6f258b53a379b4db4e70bd62",
+      "afterHash": "820058ac21e30d3bf2a4db5c020dfbe9067c06ce6f258b53a379b4db4e70bd62",
+      "types": {}
+    },
+    "IPHA-1": {
+      "before": 850,
+      "after": 850,
+      "beforeHash": "1d197cae42971efdb09a4a444d9add44eb5d784d69057ba0f3671ecff889d700",
+      "afterHash": "1d197cae42971efdb09a4a444d9add44eb5d784d69057ba0f3671ecff889d700",
+      "types": {
+        "essay": 229,
+        "mcq": 558,
+        "matching": 46,
+        "case": 17
+      }
+    },
+    "IPHY-1": {
+      "before": 769,
+      "after": 754,
+      "beforeHash": "8cb31f6a728be6f471b5701c46ff79b67a7ee41c698d52f4f45425e9e79f8fae",
+      "afterHash": "5c8c8d8383477d06eacbfa596967654570bfbf4089c593e42ed4382e2509e85a",
+      "types": {
+        "mcq": 748,
+        "truefalse": 6
+      }
+    },
+    "MBMG-1": {
+      "before": 1002,
+      "after": 1002,
+      "beforeHash": "1dd9a2067fbb6202691d7ea6ef2b1adeb139c6a2bc1b87cd0e79015806bf985e",
+      "afterHash": "1dd9a2067fbb6202691d7ea6ef2b1adeb139c6a2bc1b87cd0e79015806bf985e",
+      "types": {
+        "mcq": 999,
+        "essay": 3
+      }
+    },
+    "MIM-1": {
+      "before": 0,
+      "after": 0,
+      "beforeHash": "3a9e70263c1850e6db53e9bbd1affe6e893dd96f87164956ecfc699d8326a13b",
+      "afterHash": "3a9e70263c1850e6db53e9bbd1affe6e893dd96f87164956ecfc699d8326a13b",
+      "types": {}
+    },
+    "MINF-1": {
+      "before": 1464,
+      "after": 1463,
+      "beforeHash": "3f2def3c8c64d22c1d6d444009048a89be7e93e4e48273f516603574eb479c44",
+      "afterHash": "83b5cbe860c98ea6564594c2938293a45a883a0ec098f1302af85e6b543a4e6d",
+      "types": {
+        "mcq": 1128,
+        "matching": 14,
+        "essay": 316,
+        "fillblank": 3,
+        "case": 2
+      }
+    },
+    "MLS-1": {
+      "before": 0,
+      "after": 0,
+      "beforeHash": "4ac7b702ec2539a8103b63d798c423d32b0480f97af0637d6611dbbb4938bc9f",
+      "afterHash": "4ac7b702ec2539a8103b63d798c423d32b0480f97af0637d6611dbbb4938bc9f",
+      "types": {}
+    },
+    "P1-1": {
+      "before": 86,
+      "after": 85,
+      "beforeHash": "5c6c21a04f50f537332a94baaa5e7d0705e82d1cd31f6116fa3270e15b055cfd",
+      "afterHash": "835602989ac3db907288b9cc16995f6019f75d46b03f86651b91d66a19920e85",
+      "types": {
+        "mcq": 68,
+        "truefalse": 17
+      }
+    },
+    "P2-1": {
+      "before": 0,
+      "after": 0,
+      "beforeHash": "20adf9ad0c5eb24ee1cb7b52cc56c238559379ee6e6d0c986869ff40c7cf9289",
+      "afterHash": "20adf9ad0c5eb24ee1cb7b52cc56c238559379ee6e6d0c986869ff40c7cf9289",
+      "types": {}
+    }
+  },
+  "corrections": 17,
+  "exclusions": 15,
+  "duplicatesRemoved": 7,
+  "errors": 107,
+  "publication": "Prepared locally; not published."
+}

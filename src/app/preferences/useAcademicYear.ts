@@ -29,6 +29,7 @@ async function readCloudYear(key:string,getToken:()=>Promise<string|null>){
 
 /** Account scoped, cloud-confirmed year. Legacy shared years require reconfirmation. */
 export function useAcademicYear(){
+ const localPreview=import.meta.env.DEV && import.meta.env.MODE!=='test' && ['localhost','127.0.0.1','[::1]'].includes(window.location.hostname);
  const {userId,isLoaded,getToken}=useAuth();
  const id=userId??'guest';const currentId=useRef(id);currentId.current=id;
  const tokenRef=useRef(getToken);tokenRef.current=getToken;
@@ -42,7 +43,7 @@ export function useAcademicYear(){
   const load=async()=>{
    try {
     let preference:YearPreference|null;let didRead=false;
-    if(!userId)preference=cached(key);
+    if(localPreview || !userId)preference=cached(key);
     else {
      const reuse=reload===0&&hasFreshRead(key,saved);didRead=!reuse;
      preference=reuse?saved:await readCloudYear(key,()=>tokenRef.current());
@@ -59,11 +60,11 @@ export function useAcademicYear(){
     if(active)setState({id,year:cached(key)?.year??null,loading:false,error:'Could not load your cloud year. Choose your year to save it, or retry.'});
    }
   };void load();return()=>{active=false;};
- },[id,isLoaded,userId,reload]);
+ },[id,isLoaded,userId,reload,localPreview]);
  const saveYear=useCallback(async(year:number)=>{
   if(!Number.isInteger(year)||year<1||year>5)throw new Error('Choose a valid academic year.');
   const key=academicYearKey(id);const preference:YearPreference={year,version:1,timestamp:Date.now()};
-  if(userId){
+  if(userId && !localPreview){
    const token=await tokenRef.current();
    const response=await fetch('/api/sync',{method:'POST',headers:{'Content-Type':'application/json',Authorization:`Bearer ${token}`},body:JSON.stringify({[key]:preference}),signal:AbortSignal.timeout(15_000)});
    if(!response.ok)throw new Error('Your year could not be saved to the cloud. Please try again.');
@@ -72,6 +73,6 @@ export function useAcademicYear(){
   recentReads.set(key,{at:Date.now(),value:JSON.stringify(preference)});
   try{localStorage.setItem(key,JSON.stringify(preference));localStorage.setItem('asu_medical_student_year',String(year));}catch{/* Cloud save has already succeeded. */}
   setState({id,year,loading:false,error:null});
- },[id,userId]);
- return {year:state.id===id?state.year:null,loading:!isLoaded||state.id!==id||state.loading,error:state.id===id?state.error:null,saveYear,retry:()=>setReload(n=>n+1)};
+ },[id,userId,localPreview]);
+ return {localPreview,year:state.id===id?state.year:null,loading:!isLoaded||state.id!==id||state.loading,error:state.id===id?state.error:null,saveYear,retry:()=>setReload(n=>n+1)};
 }

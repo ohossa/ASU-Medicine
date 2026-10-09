@@ -1,4 +1,5 @@
 import { useEffect, useCallback, useRef } from 'react';
+import {setHistoryAccount,historyStorageKey,HISTORY_WIRE_KEY} from '../learning/historyScope';
 import { useAuth } from '@clerk/clerk-react';
 
 const STORAGE_KEYS = [
@@ -21,6 +22,8 @@ const STORAGE_KEYS = [
 
 export function useCloudSync() {
   const { getToken, isSignedIn, userId } = useAuth();
+  const activeUser=useRef(userId);activeUser.current=userId;
+  setHistoryAccount(userId??null);
   const isSyncing = useRef(false);
   const isDirtyRef = useRef(false);
   // Track the last-synced value of each key to compute deltas
@@ -49,7 +52,7 @@ export function useCloudSync() {
 
       // Collect standard keys
       STORAGE_KEYS.forEach(key => {
-        const val = localStorage.getItem(key);
+        const val = localStorage.getItem(key===HISTORY_WIRE_KEY?historyStorageKey(userId):key);
         if (val) {
           currentKeys.add(key);
           const serialized = typeof val === 'string' ? val : JSON.stringify(val);
@@ -68,7 +71,7 @@ export function useCloudSync() {
       if (typeof window !== 'undefined') {
         for (let i = 0; i < localStorage.length; i++) {
           const key = localStorage.key(i);
-          if (key && (key.startsWith('asu_study_tracker_') || (userId ? key.startsWith(`asu_quiz_session:${userId}:`) : key.startsWith('asu_quiz_session:')) || (userId && key === `asu_preferences:${userId}:shuffle`))) {
+          if (key && ((userId && key.startsWith(`asu_study_tracker:${userId}:`)) || (userId ? key.startsWith(`asu_quiz_session:${userId}:`) : key.startsWith('asu_quiz_session:')) || (userId && key === `asu_preferences:${userId}:shuffle`))) {
             const val = localStorage.getItem(key);
             if (val) {
               currentKeys.add(key);
@@ -105,6 +108,7 @@ export function useCloudSync() {
       }
 
       const token = await getTokenRef.current();
+      if(activeUser.current!==userId)return;
       const res = await fetch('/api/sync', {
         method: 'POST',
         headers: {
@@ -119,6 +123,7 @@ export function useCloudSync() {
         throw new Error(`API push failed: ${res.status} - ${errText}`);
       }
 
+      if(activeUser.current!==userId)return;
       // After successful push, update lastSyncedRef with the values that were actually pushed (from payload)
       Object.entries(payload).forEach(([key, val]) => {
         if (val === null) {
@@ -159,12 +164,14 @@ export function useCloudSync() {
         if (data && isMounted) {
           let hasChanges = false;
           Object.entries(data).forEach(([key, cloudValAny]) => {
+            if (key.startsWith('asu_study_tracker:') && !key.startsWith(`asu_study_tracker:${userId}:`)) return;
             if (key === 'asu_medical_student_year') return; // Academic year now has its own account-scoped cloud preference.
             if (key.startsWith('asu_preferences:') && key !== `asu_preferences:${userId}:shuffle`) return;
             if (userId && key.startsWith('asu_quiz_session:') && !key.startsWith(`asu_quiz_session:${userId}:`)) return;
             if (cloudValAny !== undefined && cloudValAny !== null) {
               const cloudVal = typeof cloudValAny === 'string' ? cloudValAny : JSON.stringify(cloudValAny);
-              const localVal = localStorage.getItem(key);
+              const localKey=key===HISTORY_WIRE_KEY?historyStorageKey(userId):key;
+              const localVal = localStorage.getItem(localKey);
 
               let shouldOverwrite = false;
               if (key.startsWith('asu_quiz_session:') || key === `asu_preferences:${userId}:shuffle`) {
@@ -184,7 +191,7 @@ export function useCloudSync() {
               }
 
               if (shouldOverwrite && cloudVal !== localVal) {
-                localStorage.setItem(key, cloudVal);
+                localStorage.setItem(localKey, cloudVal);
                 hasChanges = true;
               }
 

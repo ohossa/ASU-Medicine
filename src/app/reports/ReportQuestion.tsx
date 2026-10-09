@@ -1,3 +1,4 @@
+import {StudyButton} from '../components/ui/StudyControls';
 import {
   createContext,
   useContext,
@@ -179,6 +180,7 @@ function ReportDialog({
             }
           }}
         >
+          <div className="report-dialog-scroll">
           <button
             className="report-close"
             onClick={close}
@@ -200,9 +202,9 @@ function ReportDialog({
                   ? "شكراً لمساعدتنا في تحسين الأسئلة. تم حفظ بلاغك للمراجعة."
                   : "Thank you for helping improve the question bank. Your report has been saved for review."}
               </p>
-              <button className="report-primary" onClick={onClose}>
+              <StudyButton onClick={onClose}>
                 {ar ? "العودة للسؤال" : "Back to question"}
-              </button>
+              </StudyButton>
             </div>
           ) : (
             <form onSubmit={submit}>
@@ -278,6 +280,7 @@ function ReportDialog({
                   }
                 />
               </label>
+              <p className="report-muted mt-3">{ar ? "قد تساعدنا أدوات الذكاء الاصطناعي في مراجعة البلاغ. لا تضف بيانات شخصية؛ تبقى بيانات حسابك في لوحة الإدارة الخاصة." : "AI may assist our review. Keep personal details out of your note; recorded account details stay in the private admin inbox."}</p>
               <div className="report-field-hint">
                 <span>
                   {ar
@@ -325,6 +328,7 @@ function ReportDialog({
               </footer>
             </form>
           )}
+          </div>
         </section>
       </FocusTrap>
     </div>,

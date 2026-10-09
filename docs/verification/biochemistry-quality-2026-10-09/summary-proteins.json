@@ -1,0 +1,22 @@
+{
+  "assigned": 488,
+  "contentInspected": 488,
+  "corrections": 51,
+  "exclusions": 3,
+  "changedMedicalKeys": 0,
+  "restoredOptionIndexShifts": 2,
+  "visuallyInspectedOriginalPages": 33,
+  "questionsWithTargetedVisualReconciliation": 59,
+  "semanticDuplicateCandidatePairs": 16,
+  "freshAuthoritativeMedicalEvidenceQuestions": [
+    "IBM1-BIO-DRV-20260921-01735",
+    "IBM1-BIO-DRV-20260921-02184"
+  ],
+  "scope": "Only assigned IBM-1 proteins/amino acids; no canonical edits or publication.",
+  "limitations": [
+    "Nonblind content review; no independent adjudication.",
+    "33 targeted rendered source pages; not every original occurrence/page was reconciled.",
+    "Unchanged existing medical claims were inspected but not all reopened against fresh authoritative sources.",
+    "Source distractor “Maximum perceptibility” was not guessed into a new alternative; three malformed records recommended for exclusion."
+  ]
+}

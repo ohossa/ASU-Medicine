@@ -1,0 +1,94 @@
+
+> replicated-quiz-app@0.0.1 test
+> vitest run src/app/biochemistry-quality.test.ts
+
+
+ RUN  v4.1.11 /Users/omarhossa/Documents/Medcine ASU/ASU-Medical-Portal
+
+ ❯ src/app/biochemistry-quality.test.ts (4 tests | 4 failed) 675ms
+     × accounts for every reviewed original and preserves complete removal archives 42ms
+     × restores swallowed first alternatives and retains the answer by content 1ms
+     × restores the original six-pair matching exercise and grades every pair 7ms
+     × makes the UTP reactant question unique and resets sessions after corrected content 0ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 4 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/app/biochemistry-quality.test.ts > Dedicated Biochemistry OCR release > accounts for every reviewed original and preserves complete removal archives
+AssertionError: expected [ { …(10) }, { …(10) }, …(1458) ] to have a length of 1445 but got 1460
+
+- Expected
++ Received
+
+- 1445
++ 1460
+
+ ❯ src/app/biochemistry-quality.test.ts:18:68
+     16|  it('accounts for every reviewed original and preserves complete remov…
+     17|   const report=read('summary.json'),before=all(read('before.json')),du…
+     18|   expect(validateModuleFile(bank as any)).toEqual([]);expect(live).toH…
+       |                                                                    ^
+     19|   expect(report.before-report.exclusions-report.duplicatesRemoved-repo…
+     20|   for(const q of before){
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/4]⎯
+
+ FAIL  src/app/biochemistry-quality.test.ts > Dedicated Biochemistry OCR release > restores swallowed first alternatives and retains the answer by content
+AssertionError: expected 'Mannose & Galactose are not epimers.' to match /Phosphatidylinositol/i
+
+- Expected:
+/Phosphatidylinositol/i
+
++ Received:
+"Mannose & Galactose are not epimers."
+
+ ❯ src/app/biochemistry-quality.test.ts:28:93
+     26|  it('restores swallowed first alternatives and retains the answer by c…
+     27|   for(const [suffix,answer] of [['00933','Glutamine'],['00942','Glycin…
+     28|    const q=resolve(suffix)!;expect(q,q?.id).toBeDefined();expect(q.opt…
+       |                                                                                             ^
+     29|   }
+     30|  });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[2/4]⎯
+
+ FAIL  src/app/biochemistry-quality.test.ts > Dedicated Biochemistry OCR release > restores the original six-pair matching exercise and grades every pair
+AssertionError: expected 'essay' to be 'matching' // Object.is equality
+
+Expected: "matching"
+Received: "essay"
+
+ ❯ src/app/biochemistry-quality.test.ts:33:18
+     31|  it('restores the original six-pair matching exercise and grades every…
+     32|   const q=getChaptersForModuleAndMode('IBM-1','mixed').flatMap(c=>c.su…
+     33|   expect(q.type).toBe('matching');expect(q.pairs).toHaveLength(6);
+       |                  ^
+     34|   const scrambled=q.pairs!.map(p=>p.target).reverse(),matches=Object.f…
+     35|   expect(checkAnswerCorrect(q,{scrambled,matches})).toBe(true);expect(…
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[3/4]⎯
+
+ FAIL  src/app/biochemistry-quality.test.ts > Dedicated Biochemistry OCR release > makes the UTP reactant question unique and resets sessions after corrected content
+AssertionError: expected 'The pyrimidine nucleotide acting as t…' to match /consumed to form UDP-glucose/
+
+- Expected:
+/consumed to form UDP-glucose/
+
++ Received:
+"The pyrimidine nucleotide acting as the high energy intermediate is"
+
+ ❯ src/app/biochemistry-quality.test.ts:39:44
+     37|  });
+     38|  it('makes the UTP reactant question unique and resets sessions after …
+     39|   const q=resolve('00711')!;expect(q.text).toMatch(/consumed to form U…
+       |                                            ^
+     40|   const original=all(read('before.json')).find(old=>old.id===q.id)!;ex…
+     41|  });
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[4/4]⎯
+
+
+ Test Files  1 failed (1)
+      Tests  4 failed (4)
+   Start at  17:15:56
+   Duration  1.27s (transform 12.52s, setup 83ms, import 204ms, tests 675ms, environment 206ms)
+

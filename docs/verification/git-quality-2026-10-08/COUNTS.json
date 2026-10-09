@@ -1,0 +1,22 @@
+{
+  "original": 6663,
+  "retained": 6302,
+  "excluded": 361,
+  "annotation_patches": 129,
+  "historical_screened": 4948,
+  "model_review_rows": 4987,
+  "type_counts": {
+    "mcq": 4863,
+    "case": 89,
+    "essay": 911,
+    "matching": 8,
+    "truefalse": 334,
+    "fillblank": 97
+  },
+  "collections": {
+    "practice": 5623,
+    "past-exams": 679
+  },
+  "historical_answers_retained": 4587,
+  "medical_verification_added": false
+}

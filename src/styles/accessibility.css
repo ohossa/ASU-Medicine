@@ -1,0 +1,27 @@
+/* Shared web accessibility layer. Keep brand and subject palettes intact. */
+#root :where(button, a, input, select, textarea, summary, [role="button"]):focus-visible {
+  outline: 3px solid #047857 !important;
+  outline-offset: 3px;
+}
+.dark #root :where(button, a, input, select, textarea, summary, [role="button"]):focus-visible {
+  outline-color: #5eead4 !important;
+}
+@media (pointer: coarse) {
+  #main-content :where(input, select, textarea) { font-size: max(1rem, 16px); }
+}
+@media (prefers-reduced-transparency: reduce) {
+  #root [class*="backdrop-blur"], #root .glass-panel, #root [data-portal-toolbar] {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    background-color: var(--card) !important;
+  }
+}
+@media (prefers-contrast: more) {
+  :root { --muted-foreground: #374151 !important; --border: #6b7280 !important; }
+  .dark { --muted-foreground: #d1d5db !important; --border: #9ca3af !important; }
+}
+@media (forced-colors: active) {
+  #root :where(button, a, input, select, textarea, summary, [role="button"]):focus-visible {
+    outline-color: Highlight !important;
+  }
+}

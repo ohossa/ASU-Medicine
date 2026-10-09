@@ -48,3 +48,10 @@ describe('GIT entry from the home page', () => {
     expect(screen.getByRole('heading', { name: 'GIT study modes' })).toBeInTheDocument();
   });
 });
+it('keeps four study tools and a separate optional support card, with no Case Solver',()=>{
+ render(<MemoryRouter><Dashboard/></MemoryRouter>);
+ for(const name of ['Full History','Marks Calculator','Question Search','My Progress'])expect(screen.getByRole('button',{name:new RegExp(name)})).toBeInTheDocument();
+ expect(screen.queryByText('Case Solver')).toBeNull();
+ expect(screen.getByRole('link',{name:/Support ASUCodes/})).toHaveAttribute('href','/support');
+ expect(screen.queryByText('Help keep ASUCodes running')).toBeNull();
+});

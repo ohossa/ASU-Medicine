@@ -66,6 +66,7 @@ export interface ReportStore {
   ): Promise<void>;
 }
 interface Dependencies {
+  triageFilter?: (reports: QuestionReport[], bucket: string) => Promise<QuestionReport[]>;
   authenticate(token: string): Promise<Identity>;
   resolveQuestion(input: ReportSubmission): Promise<QuestionSnapshot>;
   store: ReportStore;
@@ -183,10 +184,12 @@ export function createReportService(deps: Dependencies) {
       }), query);
       const advanced = query.groupBy !== undefined || input.groupBy === 'question' || input.status === 'unresolved' ||
         Boolean(input.search || input.moduleCode || input.subjectName || input.topicName || input.chapterId !== undefined);
-      if (!advanced) return deps.store.list(input.status, input.offset);
+      if (!advanced && !query.triage) return deps.store.list(input.status, input.offset);
       // Read in bounded batches so filtering/grouping covers the whole inbox,
       // including old reports that precede this feature. Never silently truncate.
-      return queryReportInbox(await allReports(), input);
+      const records = await allReports();
+      if (query.triage && !['priority','low','all'].includes(String(query.triage))) throw new ReportError(400,'Invalid triage filter.');
+      return queryReportInbox(deps.triageFilter && query.triage ? await deps.triageFilter(records, String(query.triage)) : records, input);
     },
     async update(token: string, body: unknown) {
       const identity = await owner(token);

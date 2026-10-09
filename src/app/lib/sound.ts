@@ -1,22 +1,24 @@
 import { FX } from './fx.config';
+import { feedbackSoundEnabled, setFeedbackSoundEnabled, prepareMixableAudio } from './audioPolicy';
 
 // Tiny WebAudio synth — no asset files. Respects a persisted mute pref.
 class SoundManager {
   private ctx: AudioContext | null = null;
-  muted = localStorage.getItem('fx.muted') === '1';
+  private idleTimer: ReturnType<typeof setTimeout> | undefined;
+  get muted() { return !feedbackSoundEnabled(); }
 
   private ac() {
     if (!this.ctx) this.ctx = new (window.AudioContext || (window as unknown as { webkitAudioContext?: typeof AudioContext }).webkitAudioContext)();
     return this.ctx;
   }
-  setMuted(m: boolean) { this.muted = m; localStorage.setItem('fx.muted', m ? '1' : '0'); }
+  setMuted(m: boolean) { setFeedbackSoundEnabled(!m); }
 
   private tone(freq: number, dur: number, type: OscillatorType = 'sine', gain = 0.06) {
-    if (!FX.sound || this.muted) return;
+    if (!FX.sound || this.muted || !prepareMixableAudio()) return;
     try {
       const ac = this.ac();
       if (ac.state === 'suspended') {
-        ac.resume();
+        void ac.resume().catch(() => {});
       }
       const osc = ac.createOscillator();
       const g = ac.createGain();
@@ -26,6 +28,13 @@ class SoundManager {
       g.gain.exponentialRampToValueAtTime(0.0001, ac.currentTime + dur);
       osc.connect(g).connect(ac.destination);
       osc.start();
+      osc.onended = () => {
+        osc.disconnect(); g.disconnect();
+        // Release the session once the short reward sequence is finished.
+        clearTimeout(this.idleTimer);
+        this.idleTimer = setTimeout(() => { void ac.suspend().catch(() => {}); }, 350);
+      };
+      clearTimeout(this.idleTimer);
       osc.stop(ac.currentTime + dur);
     } catch (e) {
       console.warn("Audio Context error:", e);
