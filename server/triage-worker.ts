@@ -49,17 +49,17 @@ export function createTriageService(deps:ServiceDeps){
   for(const g of groups){const a=assessments[g.fingerprint];if(a&&a.priority==='low'&&g.reporters>=3)assessments[g.fingerprint]={...a,priority:'uncertain',rationale:a.rationale+' Multiple students reported this issue; owner review is required.'};}
   const labels=(await deps.store.labels()).filter(l=>groups.some(g=>g.key===l.key&&g.fingerprint===l.fingerprint)&&assessments[l.fingerprint]?.state==='complete'&&l.assessmentAt===assessments[l.fingerprint]?.checkedAt);
   const metrics=pilotMetrics(labels);const storedMode=await deps.store.mode(),mode=storedMode==='prioritized'&&metrics.ready?'prioritized':'shadow';
-  const counts={decision:0,uncertain:0,low:0},lowReportIds:string[]=[];let pending=0;
-  for(const g of groups){const a=assessments[g.fingerprint];counts[a?.priority??'uncertain']++;if(!a||a.state==='unreviewed')pending++;if(a?.state==='complete'&&a.priority==='low')lowReportIds.push(...g.reports.map(r=>r.id));}
-  const view:TriageView={mode,metrics,assessments:Object.values(assessments),counts,pending,lowReportIds,reportAssessments:Object.fromEntries(groups.flatMap(g=>g.reports.map(r=>[r.id,g.fingerprint]))),labels,config:{provider:Boolean(process.env.GROQ_API_KEY),dailyLimit:dailyLimit()}};
+  const counts={decision:0,uncertain:0,low:0},lowReportIds:string[]=[];let pending=0,pilotPending=0;
+  for(const g of groups){const a=assessments[g.fingerprint];counts[a?.priority??'uncertain']++;if(!a||a.state==='unreviewed'){if(g.reports.some(r=>r.status==='new'||r.status==='reviewing'))pending++;else pilotPending++;}if(a?.state==='complete'&&a.priority==='low')lowReportIds.push(...g.reports.map(r=>r.id));}
+  const view:TriageView={mode,metrics,assessments:Object.values(assessments),counts,pending,pilotPending,lowReportIds,reportAssessments:Object.fromEntries(groups.flatMap(g=>g.reports.map(r=>[r.id,g.fingerprint]))),labels,config:{provider:Boolean(process.env.GROQ_API_KEY),dailyLimit:dailyLimit()}};
   return {groups,assessments,view};
  }
  return {
   /** Internal use after the report-service owner gate. Never route this directly. */
   async viewInternal(){return (await state()).view;},
   async view(token:string){await deps.owner(token);return (await state()).view;},
-  async run(token:string){await deps.owner(token);const lease=await deps.store.lease();if(!lease)return {processed:false,reason:'Another review is in progress.'};
-   try{const {groups,assessments}=await state();const now=Date.now();const group=groups.filter(g=>g.reports.some(r=>r.status==='new'||r.status==='reviewing')).sort((a,b)=>b.reporters-a.reporters).find(g=>{const a=assessments[g.fingerprint];return !a||(a.state==='unreviewed'&&(!a.retryAt||Date.parse(a.retryAt)<=now)&&a.attempts<5);});
+  async run(token:string,options:{includeClosed?:boolean}={}){await deps.owner(token);const lease=await deps.store.lease();if(!lease)return {processed:false,reason:'Another review is in progress.'};
+   try{const {groups,assessments}=await state();const now=Date.now();const group=groups.filter(g=>options.includeClosed||g.reports.some(r=>r.status==='new'||r.status==='reviewing')).sort((a,b)=>b.reporters-a.reporters).find(g=>{const a=assessments[g.fingerprint];return !a||(a.state==='unreviewed'&&(!a.retryAt||Date.parse(a.retryAt)<=now)&&a.attempts<5);});
     if(!group)return {processed:false,reason:'No eligible queued groups. Retry delays or completed reviews are preserved.'};
     const a=await deps.review(group);a.attempts=(assessments[group.fingerprint]?.attempts??0)+1;
     if(!await deps.store.save(a,lease))return {processed:false,reason:'Review lease expired. The group remains recoverable.'};

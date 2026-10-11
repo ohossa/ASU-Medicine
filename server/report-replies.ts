@@ -1,3 +1,4 @@
+import { replyContext, renderReplyEmail, type ContextReport } from "../src/app/reports/reply-context.js";
 import { createHash } from "node:crypto";
 import { z } from "zod";
 import { ReportError } from "./report-service.js";
@@ -18,7 +19,7 @@ export interface ReplyStore {
 }
 interface Dependencies {
   authenticate(token: string): Promise<{ id: string; isAdmin: boolean }>;
-  getReport(id: string): Promise<{ id: string; reporterId: string } | null>;
+  getReport(id: string): Promise<ContextReport | null>;
   recipient(userId: string): Promise<string>;
   store: ReplyStore;
   configured(): boolean;
@@ -62,6 +63,7 @@ export function createReplyService(d: Dependencies) {
         replies: await d.store.list(r.id),
         recipient: recipient || null,
         configured: d.configured(),
+        context: replyContext(r),
       };
     },
     async saveDraft(token: string, body: unknown) {
@@ -123,6 +125,8 @@ export function createReplyService(d: Dependencies) {
           422,
           "This student has no verified email address available.",
         );
+      const context = existing ? existing.context : replyContext(r);
+      const rendered = !existing && context ? renderReplyEmail(input.body, context) : undefined;
       const reserved = await d.store.reserve({
         id: replyId,
         requestId: input.requestId,
@@ -134,6 +138,9 @@ export function createReplyService(d: Dependencies) {
         createdBy: identity.id,
         from: d.sender?.(),
         state: "pending",
+        context,
+        emailText: existing ? existing.emailText : rendered?.text,
+        emailHtml: existing ? existing.emailHtml : rendered?.html,
       });
       const reply = reserved.reply;
       if (reply.subject !== input.subject || reply.body !== input.body)

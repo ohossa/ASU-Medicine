@@ -184,7 +184,7 @@ export default function LearningHub({
         { label: ar ? "تقدمي" : "My Progress" },
       ]}
     >
-      <main className="learning-hub" dir={ar ? "rtl" : "ltr"}>
+      <section aria-label={ar ? "تقدّمي" : "My Progress"} className="learning-hub" dir={ar ? "rtl" : "ltr"}>
         {bankWarning && (
           <p role="status" className="learning-notice">
             {bankWarning}
@@ -676,7 +676,7 @@ export default function LearningHub({
             </p>
           </section>
         )}
-      </main>
+      </section>
     </PortalShell>
   );
 }

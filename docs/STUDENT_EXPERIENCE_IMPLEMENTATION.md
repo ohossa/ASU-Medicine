@@ -1,6 +1,6 @@
 # Student experience implementation
 
-Completed locally on 9 October 2026. Branch: `local/student-experience-hub-search-loading`. No commit or push was made. The existing support-page and question-bank work in this checkout was preserved.
+Implemented 9 October 2026 and deployed in `ecf2579`. Cloud progress follow-up deployed in `e55a7fe`; admin replies in `39d2ff4`. Historical verification below records the original local pass. See [current release status](RELEASE_STATUS.md).
 
 ## 1. Unified Learning Hub
 
@@ -77,4 +77,4 @@ Responsive emulation does not prove every physical Safari/iPad/browser configura
 4. Check `/learning`, `/learning?view=progress`, `/learning?view=activity`, `/learning?view=rewards` and `/question-search` with the intended account/year.
 5. Keep historical review separate from a new scored attempt. Never replay a withdrawn snapshot to claim new XP.
 6. Preserve account keys and server award guards when extending offline support.
-7. Publish only when the user approves this local release. The support-page publication hold remains in force.
+7. Publish future changes only with user authorization. The user authorized and deployed this release; its former support-page publication hold is no longer active.

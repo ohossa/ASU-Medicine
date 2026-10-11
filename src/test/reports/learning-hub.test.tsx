@@ -86,3 +86,9 @@ it('unifies overview, progress, activity and rewards with labelled semester scop
  fireEvent.click(screen.getByRole('button',{name:'Progress'}));
  expect(screen.getByRole('button',{name:'Semester 1'})).toHaveAttribute('aria-pressed','true');
 });
+
+it("uses a named learning region inside the portal main landmark",()=>{
+ render(<MemoryRouter><main><LearningHub/></main></MemoryRouter>);
+ expect(screen.getAllByRole("main")).toHaveLength(1);
+ expect(screen.getByRole("region",{name:"My Progress"})).toBeInTheDocument();
+});

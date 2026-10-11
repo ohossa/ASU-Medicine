@@ -12,7 +12,7 @@ Implemented 10 October 2026. Scope: the private admin panel and its authenticate
 6. Save your decision and private notes separately.
 7. In **Reply to the student**, choose a template or write a custom reply. Templates cover a correct existing answer, a published correction, and a clarification request. Replace bracketed instructions with your own explanation. They cannot be sent unfinished.
 8. **Save draft** stores the draft in Redis. Another tab cannot overwrite it with a stale revision. A matching draft clears after its reply is accepted; a different follow-up draft on another device is preserved. Reload conversation to fetch the latest draft; this deliberately replaces unsaved composer text.
-9. Select **Preview email**, review the recipient, subject and exact body, then **Send reply**. Sending never happens automatically from selecting a template, changing a status, saving notes or running AI triage.
+9. Select **Preview email**, review the recipient, subject and reply and the **About your report** card, then **Send reply**. Sending never happens automatically from selecting a template, changing a status, saving notes or running AI triage.
 10. The reply history stores the exact message, frozen recipient, sender, creator, timestamp and provider reference. “Email accepted by provider” confirms provider acknowledgment, not delivery, inbox placement or reading. The student can reply to Omar's email address. Their inbound email goes to that mailbox; it is not imported into this admin panel.
 
 ## Email configuration
@@ -37,8 +37,10 @@ Official provider references: [sending email](https://resend.com/docs/api-refere
 - Subject, body, recipient and sender freeze at reservation. Changing environment configuration never changes an already reserved sender payload.
 - The browser retains its pending send reference under an owner-and-report-scoped key, and the server retains pending/uncertain outbox entries. Reopening recovers the pending message rather than silently creating another send.
 - A timeout is **delivery not confirmed**. Retry the exact same reply. The provider's idempotency protection lasts 24 hours; automatic retries are blocked after 23 hours. For an older uncertain send, inspect Resend's log and resolve its actual outcome before initiating another email. Do not remove Redis records to force a resend.
-- Internal notes, authentication tokens, account IDs, original report explanations and medical answer snapshots are not automatically appended to email bodies.
-- All email bodies are plain text. Student content cannot inject HTML into the outgoing email or admin view.
+- New replies include a compact, single-column **About your report** card below the owner message: module, subject, chapter/topic, question ID, report reference, original question/options, original answer/explanation and student category/message. Cases include the parent stem and the reported part; essays, matching and blanks include their model/key answers. Missing keys are identified rather than guessed. The original snapshot is labelled explicitly; published corrections belong in the owner reply.
+- The conversation API supplies the same context used for the preview. Context and rendered plaintext/HTML freeze at outbox reservation. Legacy pending replies retain their original plaintext payload on retry.
+- Internal notes, authentication tokens, account IDs and captured student profile details are excluded. The student’s own message remains as submitted.
+- HTML escapes all owner and student content and uses inline styles with no scripts, tracking images or external assets. A complete plaintext alternative is sent too.
 - Stored report and reply records do not expire. No learning/progress keys are modified.
 
 ## API and storage

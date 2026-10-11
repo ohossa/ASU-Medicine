@@ -20,3 +20,19 @@ it('revalidates low assessments when the owner changed the question',async()=>{c
 it('retrieves bounded PubMed abstracts with exact provenance',async()=>{const fetcher=vi.fn(async(u:RequestInfo|URL)=>String(u).includes('esearch')?new Response(JSON.stringify({esearchresult:{idlist:['123']}})):new Response('<PubmedArticle><PMID Version="1">123</PMID><ArticleTitle>Anatomy evidence</ArticleTitle><AbstractText>The glossopharyngeal nerve supplies the stylopharyngeus muscle, which elevates the pharynx.</AbstractText></PubmedArticle>'));const sources=await fetchEvidence(['stylopharyngeus innervation'],fetcher);expect(sources).toHaveLength(1);expect(sources[0].url).toBe('https://pubmed.ncbi.nlm.nih.gov/123/');expect(sources[0].text).toContain('glossopharyngeal');});
 
 it('evidence review receives the reported explanation after uncued derivation',async()=>{const bad={...r,category:'other' as const,snapshot:{...r.snapshot,question:{...r.snapshot.question,explanation:'A false explanation needs checking.'}}};let evidenceInput:any,blindInput:any;const model=vi.fn(async(p:string,input:any)=>{if(p==='classify')return {...classify,issue:'explanation'};if(p==='blind'){blindInput=input;return {answerIndex:0,unique:true,optionReasons:['x','y'],rationale:'x',queries:['nerve']};}evidenceInput=input;return {supported:false,citations:[]};});const a=await reviewGroup(groupForTriage([bad])[0],{model,evidence:async()=>[{id:'1',url:'https://pubmed.ncbi.nlm.nih.gov/1/',title:'Evidence',text:'The nerve supplies this muscle according to the anatomy study.',retrievedAt:'now'}],current:async()=>bad.snapshot});expect(model).toHaveBeenCalledTimes(3);expect(JSON.stringify(blindInput)).not.toContain('false explanation');expect(JSON.stringify(evidenceInput)).toContain('A false explanation needs checking.');expect(evidenceInput.concern.issue).toBe('explanation');expect(a.state).toBe('complete');expect(a.priority).toBe('uncertain');});
+
+it('allows explicit historical pilot assessment without reopening dismissed reports',async()=>{
+ const closed={...r,status:'dismissed' as const},before=JSON.stringify(closed),store=memoryStore();
+ const review=vi.fn(async(g:any)=>reviewGroup(g,{model:async()=>({...classify,medical:false,issue:'irrelevant'}),evidence:async()=>[],current:async()=>closed.snapshot}));
+ const svc=createTriageService({owner:async()=>({id:'owner'}),records:async()=>[closed],store,review});
+ const view=await svc.view('token');expect(view.pending).toBe(0);expect(view.pilotPending).toBe(1);
+ expect((await svc.run('token')).processed).toBe(false);
+ expect((await svc.run('token',{includeClosed:true})).processed).toBe(true);
+ expect(JSON.stringify(closed)).toBe(before);expect(review).toHaveBeenCalledTimes(1);
+ expect((await svc.run('token',{includeClosed:true})).processed).toBe(false);
+ expect((await svc.view('token')).metrics.labelled).toBe(0);
+});
+it('historical pilot mode still denies students before reading any reports',async()=>{
+ const records=vi.fn(),svc=createTriageService({owner:async()=>{throw new Error('denied');},records,store:memoryStore(),review:vi.fn()});
+ await expect(svc.run('student',{includeClosed:true})).rejects.toThrow('denied');expect(records).not.toHaveBeenCalled();
+});

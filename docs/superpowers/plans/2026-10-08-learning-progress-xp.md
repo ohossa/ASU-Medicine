@@ -1,6 +1,6 @@
 # Learning Progress and XP Implementation Plan
 
-**Goal:** Build a current-year study hub, account-scoped syllabus tracking, server-recorded XP, opt-in same-year rankings, and earned profile cosmetics; keep this work local and unpublished.
+**Goal:** Build a current-year study hub, account-scoped syllabus tracking, server-recorded XP, opt-in same-year rankings, and earned profile cosmetics; originally develop locally; publication subsequently authorized and completed in `ecf2579`. See [current release status](../../RELEASE_STATUS.md).
 
 **Architecture:** An authenticated learning endpoint stores atomic rewards and question progress separately from general cloud sync. Canonical questions and current academic-year preferences determine valid submissions. A shared client context handles pending submissions, cloud state, and local failure/retry indicators. The learning hub uses the existing portal design and year preference.
 

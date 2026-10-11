@@ -1,6 +1,6 @@
 # ASUCodes: website design and experience master plan
 
-Status: local review, 9 October 2026. No publication authorized for this work. This is a practical implementation specification, not a claim that every proposed improvement is already shipped.
+Status: the reviewed student experience and design changes are deployed in `ecf2579`; admin reply workspace deployed in `39d2ff4`. See [current release status](RELEASE_STATUS.md). Physical-device and screen-reader checks remain separately documented; this is not a universal accessibility certification.
 
 ## Direction
 
@@ -77,4 +77,4 @@ Evidence and remaining scope: [Audit record](verification/apple-design-2026-10-0
 
 Admin/report/account/authentication polish and shared controls are implemented locally. Report scrolling is inset; account settings use readable semantic colors; login respects reduced motion; decorative canvas work pauses in hidden tabs. The rejected ECG loader is replaced with a minimal wordmark and real readiness indicator. See [implementation and evidence](REPORT_TRIAGE_IMPLEMENTATION.md).
 
-The source/test/build review is complete for this pass. Fresh browser selection was blocked by browser security policy, so no new screenshot or physical-device certification is claimed. Live owner/provider pilot and actual phone/iPad checks remain release gates. No push or commit was made.
+The source/test/build review is complete for this pass. Fresh browser selection was blocked by browser security policy, so no new screenshot or physical-device certification is claimed. Live owner/provider pilot and actual phone/iPad checks remain release gates. This paragraph records the 9 October local pass; that work was subsequently deployed in `ecf2579`.

@@ -1,6 +1,6 @@
 # Admin and student experience implementation
 
-Requested scope: complete owner-only admin access, reports, editable questions, account shuffle preferences, and practical performance/UX improvements. Keep changes local for user testing before publishing.
+Requested scope: complete owner-only admin access, reports, editable questions, account shuffle preferences, and practical performance/UX improvements. Implemented and published with user authorization. See [current release status](RELEASE_STATUS.md).
 
 - Reuse verified-owner authentication (omarhmaged@gmail.com); authenticate every administrative request on the server. Optional Clerk user-ID pin binds ownership to one account.
 - Retain the existing private report inbox and student reason/free-text form.

@@ -394,7 +394,7 @@ export function QuestionSearch({
           </section>
         )}
       </header>
-      <main>
+      <section aria-label="Question Search">
         <h1>{ar ? "بحث الأسئلة" : "Question Search"}</h1>
         {error || indexError ? (
           <div role="alert">
@@ -527,7 +527,7 @@ export function QuestionSearch({
             )}
           </>
         )}
-      </main>
+      </section>
     </div>
   );
 }

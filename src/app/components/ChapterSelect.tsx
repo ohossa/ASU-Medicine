@@ -1,3 +1,4 @@
+import { isPastExamSection } from "../lib/practiceOrder";
 import {useSyncedHistory} from '../hooks/useSyncedHistory';
 import { ShuffleSwitch } from '../preferences/ShuffleSwitch';
 import React, { useMemo } from 'react';
@@ -242,6 +243,9 @@ export function ChapterSelect({
     const f = FALLBACK[key];
     return f ? (isRTL ? f.ar : f.en) : key;
   };
+
+  const pastChapters = chapters.filter(isPastExamSection);
+  const regularChapters = chapters.filter(c => !isPastExamSection(c));
 
   const history = useSyncedHistory().slice(0,6);
 
@@ -542,7 +546,11 @@ export function ChapterSelect({
         {/* ---------------- Main layout: grid + sidebar ---------------- */}
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-[1fr_320px]">
           {/* Chapter grid */}
-          <main>
+          <section aria-label={isRTL ? "الفصول" : "Chapters"}>
+            {pastChapters.length > 0 && <section aria-label={isRTL ? 'الامتحانات السابقة' : 'Past Exams'} className="mb-8">
+              <h3 className="mb-4 text-sm font-bold tracking-wider uppercase text-muted-foreground border-s-4 border-clinical ps-3">{isRTL ? 'الامتحانات السابقة' : 'Past Exams'}</h3>
+              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">{pastChapters.map(chapter=>renderChapterCard(chapter,chapters.indexOf(chapter)))}</div>
+            </section>}
             {chapters.length > 0 && mixedChapter && renderMixedCard(mixedChapter)}
             {chapters.length === 0 ? (
               <div className="cs-enter rounded-[28px] border border-dashed border-border dark:border-white/[0.1] py-16 text-center text-sm text-muted-foreground dark:text-white/40">
@@ -556,7 +564,7 @@ export function ChapterSelect({
                     {isRTL ? 'الجهاز العصبي المركزي 1: المقدمة، الأنظمة الحسية والحركية' : 'CNS 1: Introduction, Sensory & Motor Systems'}
                   </h3>
                   <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                    {chapters.filter(c => c.id <= 5).map((chapter, i) => renderChapterCard(chapter, i))}
+                    {regularChapters.filter(c => c.id <= 5).map((chapter, i) => renderChapterCard(chapter, i))}
                   </div>
                 </div>
 
@@ -566,33 +574,13 @@ export function ChapterSelect({
                     {isRTL ? 'الجهاز العصبي المركزي 2: المخ، الدماغ البيني، الالتهابات والضمور' : 'CNS 2: Cerebrum, Diencephalon, Infections & Degeneration'}
                   </h3>
                   <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                    {chapters.filter(c => c.id > 5).map((chapter, i) => renderChapterCard(chapter, i + 5))}
+                    {regularChapters.filter(c => c.id > 5).map((chapter, i) => renderChapterCard(chapter, i + 5))}
                   </div>
                 </div>
-              </div>
-            ) : moduleCode === 'MSS-2' ? (
-              <div className="space-y-8">
-                <div>
-                  <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                    {chapters.filter(c => c.id <= 8).map((chapter, i) => renderChapterCard(chapter, i))}
-                  </div>
-                </div>
-
-                {/* Past Exams Section/Block */}
-                {chapters.find(c => c.id === 9) && (
-                  <div className="pt-6 border-t border-border/50 dark:border-white/[0.06]">
-                    <h3 className="mb-4 text-sm font-bold tracking-wider uppercase text-muted-foreground border-l-4 border-clinical pl-3">
-                      {isRTL ? 'الامتحانات السابقة' : 'Past Exams'}
-                    </h3>
-                    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                      {chapters.filter(c => c.id === 9).map((chapter, i) => renderChapterCard(chapter, i + 8))}
-                    </div>
-                  </div>
-                )}
               </div>
             ) : (
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                {chapters.map((chapter, i) => renderChapterCard(chapter, i))}
+                {regularChapters.map(chapter => renderChapterCard(chapter, chapters.indexOf(chapter)))}
               </div>
             )}
 
@@ -614,7 +602,7 @@ export function ChapterSelect({
                 ))}
               </div>
             </section>
-          </main>
+          </section>
 
           {/* ---------------- History sidebar ---------------- */}
           <aside className="cs-enter" style={{ animationDelay: '200ms' }}>

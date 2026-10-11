@@ -680,3 +680,7 @@
 @media(min-width:1001px){.admin-inbox>div:first-child{position:sticky;top:88px}.admin-inbox .admin-list{max-height:calc(100svh - 200px);overflow-y:auto;scrollbar-gutter:stable}}
 .admin-mobile-back {display:none}
 @media(max-width:1000px){.admin-inbox[data-review-open=true]>div:first-child{display:none}.admin-mobile-back{display:inline-flex;margin-bottom:16px}}
+
+.admin-email-preview pre {white-space:pre-wrap;overflow-wrap:anywhere;font:inherit;line-height:1.6}
+.admin-email-context {margin-top:20px;padding:16px;border:1px solid #dce1e8;border-radius:12px;font-size:13px;background:#fff;color:#374151}
+.dark .admin-email-context {background:#1e2029;border-color:#363949;color:#d1d5db}

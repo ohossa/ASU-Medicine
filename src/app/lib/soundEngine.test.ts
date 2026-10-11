@@ -4,7 +4,8 @@ import { sound } from './sound';
 import { play, preloadSounds } from './soundEngine';
 beforeEach(() => localStorage.clear());
 afterEach(() => vi.unstubAllGlobals());
-it('quiz and level-up create no audio or requests by default', () => {
+it('quiz and level-up create no audio or requests on default-muted iPhone Safari', () => {
+  vi.stubGlobal('navigator',{userAgent:'iPhone Version/18 Safari'});
   const audio = vi.fn(); const fetcher = vi.fn();
   vi.stubGlobal('AudioContext', audio); vi.stubGlobal('Audio', audio); vi.stubGlobal('fetch', fetcher);
   play('correct'); preloadSounds(); sound.wrong();

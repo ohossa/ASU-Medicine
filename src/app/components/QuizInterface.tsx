@@ -10,6 +10,7 @@ import { useAuth } from '@clerk/clerk-react';
 import { fx } from '../lib/pulseEngine';
 import type { QuizSessionSave } from '../hooks/useQuizSession';
 import { useQuizSession, saveLocalDrafts, loadLocalDrafts } from '../hooks/useQuizSession';
+import { SoundToggle } from './SoundToggle';
 import { useSoundEngine } from '../hooks/useSoundEngine';
 import { checkAnswerCorrect, choiceAnswerIndex } from '../utils/quiz';
 import {
@@ -447,10 +448,24 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
     }
   }, [current, question, answers, setAnswer]);
 
+  const shortcutsTriggerRef = useRef<HTMLButtonElement>(null);
+  const shortcutsCloseRef = useRef<HTMLButtonElement>(null);
+  const shortcutsWereOpen = useRef(false);
+  useEffect(() => {
+    if (showShortcuts) shortcutsCloseRef.current?.focus();
+    else if (shortcutsWereOpen.current) shortcutsTriggerRef.current?.focus();
+    shortcutsWereOpen.current = showShortcuts;
+  }, [showShortcuts]);
+
   /* Keyboard shortcuts */
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
+      if (showShortcuts) {
+        if (e.key === 'Escape') { e.preventDefault(); toggleShortcuts(); }
+        return;
+      }
       const tag = (e.target as HTMLElement)?.tagName;
+      if ((tag === 'BUTTON' || tag === 'A') && (e.key === 'Enter' || e.key === ' ')) return;
       if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return;
 
       if (e.key === 'ArrowRight') handleGoTo(isRTL ? current - 1 : current + 1);
@@ -509,7 +524,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
     };
     window.addEventListener('keydown', handler);
     return () => window.removeEventListener('keydown', handler);
-  }, [current, question, handleGoTo, toggleFlag, answers, isRTL, showEssayAnswer, revealedSubEssays, setAnswer, toggleGrid]);
+  }, [current, question, handleGoTo, toggleFlag, answers, isRTL, showEssayAnswer, revealedSubEssays, setAnswer, toggleGrid, showShortcuts, toggleShortcuts]);
 
 
 
@@ -1219,7 +1234,10 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
               </span>
             )}
             <button
+              ref={shortcutsTriggerRef}
               onClick={toggleShortcuts}
+              aria-expanded={showShortcuts}
+              aria-controls="quiz-shortcuts"
               aria-label="Keyboard shortcuts"
               className="hidden h-11 w-11 items-center justify-center rounded-full border border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.04] text-gray-500 dark:text-white/50 transition-colors hover:bg-gray-100 dark:hover:bg-white/[0.08] sm:flex btn-press"
             >
@@ -1234,6 +1252,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
             >
               <Grid3X3 size={15} />
             </button>
+            <SoundToggle muted={muted} onToggle={toggleMute} />
             <ShuffleSwitch />
             {userButton}
           </div>
@@ -1256,11 +1275,13 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
               initial={{ opacity: 0, y: -8 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -8 }}
+              id="quiz-shortcuts"
               role="dialog"
-              aria-modal="true"
+              aria-labelledby="quiz-shortcuts-title"
+              aria-modal="false"
               className="fixed end-4 top-16 z-40 w-64 rounded-xl border border-gray-200 dark:border-white/[0.08] bg-white/95 dark:bg-[#161618]/95 p-4 text-xs shadow-2xl backdrop-blur-xl text-gray-800 dark:text-white"
             >
-              <p className="mb-2 font-semibold text-gray-900 dark:text-white/80">Keyboard shortcuts</p>
+              <div className="mb-2 flex items-center justify-between gap-2"><p id="quiz-shortcuts-title" className="font-semibold text-gray-900 dark:text-white/80">Keyboard shortcuts</p><button ref={shortcutsCloseRef} type="button" onClick={toggleShortcuts} aria-label="Close keyboard shortcuts" className="flex h-11 w-11 items-center justify-center rounded-full hover:bg-secondary"><X size={16} aria-hidden="true"/></button></div>
               {[['← →', 'Navigate questions'], ['1–9', 'Select MCQ / True-False option'], ['Enter', 'Reveal essay answer'], ['1 / 2', 'Correct / Wrong (essay)'], ['F', 'Flag question'], ['G', 'Toggle grid']].map(([k, d]) => (
                 <div key={k} className="flex items-center justify-between py-1 text-gray-500 dark:text-white/50">
                   <span>{d}</span>
@@ -1329,7 +1350,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
       </AnimatePresence>
 
       {/* Main */}
-      <main className="relative mx-auto max-w-4xl px-4 py-8 sm:px-6">
+      <section aria-label={isRTL ? "التدريب على الأسئلة" : "Question practice"} className="relative mx-auto max-w-4xl px-4 py-8 sm:px-6">
         <AnimatePresence mode="wait" custom={direction}>
           <motion.div
             key={current}
@@ -1449,7 +1470,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
             </button>
           )}
         </div>
-      </main>
+      </section>
 
       {/* Finish confirmation */}
       <AnimatePresence>

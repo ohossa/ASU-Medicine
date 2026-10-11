@@ -95,7 +95,7 @@ export default async function handler(req: Request, res: Response) {
       await service.access(token);
       const key = z.string().regex(/^[a-f0-9]{64}$/);
       const schemas = {
-        "triage-run": z.object({}).strict(),
+        "triage-run": z.object({includeClosed:z.boolean().optional()}).strict(),
         "triage-reassess": z.object({key}).strict(),
         "triage-mode": z.object({mode:z.enum(["shadow","prioritized"])}).strict(),
         "triage-label": z.object({key,fingerprint:key,label:z.enum(["actionable","uncertain","low"]),critical:z.boolean(),notes:z.string().trim().max(2000)}).strict(),
@@ -103,7 +103,7 @@ export default async function handler(req: Request, res: Response) {
       if (!(action in schemas)) throw new ReportError(400,"Unknown triage action.");
       const input = schemas[action as keyof typeof schemas].safeParse(body);
       if (!input.success) throw new ReportError(400,"Check the triage action details.");
-      if (action === "triage-run") return res.status(200).json(await triage.run(token));
+      if (action === "triage-run") return res.status(200).json(await triage.run(token,input.data as {includeClosed?:boolean}));
       if (action === "triage-reassess") return res.status(200).json(await triage.reassess(token,(input.data as {key:string}).key));
       if (action === "triage-mode") return res.status(200).json(await triage.mode(token,(input.data as {mode:"shadow"|"prioritized"}).mode));
       return res.status(200).json(await triage.label(token,input.data as {key:string;fingerprint:string;label:"actionable"|"uncertain"|"low";critical:boolean;notes:string}));

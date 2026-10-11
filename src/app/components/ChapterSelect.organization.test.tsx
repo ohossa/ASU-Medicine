@@ -11,3 +11,11 @@ describe('IBM chapter provenance labels',()=>{
   expect(screen.getByText(chapter.subtitle)).toBeInTheDocument();expect(screen.getByText('#1')).toBeInTheDocument();expect(screen.queryByText('#201')).toBeNull();
  });
 });
+
+it('keeps past exams above the mixed card and syllabus in every module',()=>{
+ const past={...chapter,id:9,title:'Past Exams'};
+ render(<MemoryRouter><ChapterSelect chapters={[chapter,past]} moduleCode="FUTURE-1" moduleName="Future module" studyModeName="MCQ" onSelectChapter={()=>{}} onBackToModeSelect={()=>{}}/></MemoryRouter>);
+ const region=screen.getByRole('region',{name:'Past Exams'}), syllabus=screen.getByText('DNA Replication');
+ expect(region.compareDocumentPosition(syllabus) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
+ expect(screen.getAllByText('Past Exams')).toHaveLength(2);
+});

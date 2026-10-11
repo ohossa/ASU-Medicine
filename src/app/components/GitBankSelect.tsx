@@ -67,6 +67,17 @@ export function GitBankSelect({ chapters, collection, onCollectionChange, studyM
           <span className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary px-3 py-1.5 tabular-nums"><Award size={14} className="text-physiology" />{questionLabel(total)}</span>
         </div>
       </motion.header>
+      {!isPast && <section className="mb-8" aria-label={pastLabel}>
+        <motion.button type="button" disabled={pastCount === 0} onClick={() => onCollectionChange('past-exams')}
+          whileHover={pastCount ? { scale: 1.01, y: -3 } : undefined} whileTap={pastCount ? { scale: 0.98 } : undefined}
+          className={`${panel} group flex w-full items-center gap-5 bg-gradient-to-r from-biochem/5 to-secondary/30 p-6 sm:p-8 text-start transition-colors hover:border-biochem/40 focus-visible:outline-2 focus-visible:outline-biochem disabled:opacity-50`}>
+          <span className="grid h-14 w-14 shrink-0 place-items-center rounded-2xl border border-biochem/20 bg-biochem/10"><GraduationCap size={28} className="text-biochem" /></span>
+          <span className="flex-1"><span className="block text-xl font-semibold">{pastLabel}</span>
+            <span className="mt-2 block text-sm text-muted-foreground">{pastCount === 0 ? (ar ? 'لا توجد أسئلة امتحانات سابقة في هذا النمط.' : 'No past-exam questions in this study mode.') : (ar ? 'مجموعة مستقلة مرتبة حسب المادة ثم الموضوع.' : 'A separate collection, organized by subject and topic.')}</span>
+            <span className="mt-3 block text-sm font-semibold tabular-nums text-biochem">{questionLabel(pastCount)}</span></span>
+          <span aria-hidden className="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-biochem text-white shadow-lg transition-transform group-hover:scale-110"><ArrowRight size={20} className={ar ? 'rotate-180' : ''} /></span>
+        </motion.button>
+      </section>}
       <motion.section key={collection} aria-label={ar ? 'المواد' : 'Subjects'} initial="hidden" animate="show" transition={{ staggerChildren: 0.05 }}
         className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {subjects.map(chapter => {
@@ -88,17 +99,7 @@ export function GitBankSelect({ chapters, collection, onCollectionChange, studyM
           </motion.button>;
         })}
       </motion.section>
-      {!isPast && <section className="mt-8" aria-label={pastLabel}>
-        <motion.button type="button" disabled={pastCount === 0} onClick={() => onCollectionChange('past-exams')}
-          whileHover={pastCount ? { scale: 1.01, y: -3 } : undefined} whileTap={pastCount ? { scale: 0.98 } : undefined}
-          className={`${panel} group flex w-full items-center gap-5 bg-gradient-to-r from-biochem/5 to-secondary/30 p-6 sm:p-8 text-start transition-colors hover:border-biochem/40 focus-visible:outline-2 focus-visible:outline-biochem disabled:opacity-50`}>
-          <span className="grid h-14 w-14 shrink-0 place-items-center rounded-2xl border border-biochem/20 bg-biochem/10"><GraduationCap size={28} className="text-biochem" /></span>
-          <span className="flex-1"><span className="block text-xl font-semibold">{pastLabel}</span>
-            <span className="mt-2 block text-sm text-muted-foreground">{pastCount === 0 ? (ar ? 'لا توجد أسئلة امتحانات سابقة في هذا النمط.' : 'No past-exam questions in this study mode.') : (ar ? 'مجموعة مستقلة مرتبة حسب المادة ثم الموضوع.' : 'A separate collection, organized by subject and topic.')}</span>
-            <span className="mt-3 block text-sm font-semibold tabular-nums text-biochem">{questionLabel(pastCount)}</span></span>
-          <span aria-hidden className="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-biochem text-white shadow-lg transition-transform group-hover:scale-110"><ArrowRight size={20} className={ar ? 'rotate-180' : ''} /></span>
-        </motion.button>
-      </section>}
+
     </div>
   </div>;
 }

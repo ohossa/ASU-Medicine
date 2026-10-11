@@ -49,7 +49,7 @@ function setup() {
     },
   };
   const authenticate = vi.fn(async () => ({ id: "owner", isAdmin: true }));
-  const getReport = vi.fn(async () => ({ id, reporterId: "student" }));
+  const getReport = vi.fn(async () => ({ id, reporterId: "student", category: "wrong_answer" as const, explanation: "Why is B wrong?", snapshot: {moduleCode:"MGL-3",chapterId:1,chapterTitle:"Oral cavity",subjectName:"Anatomy",version:"v1",question:{id:"q1",type:"mcq",text:"Original question",options:["A","B"],correctIndex:0,explanation:"Original explanation"}} }));
   const recipient = vi.fn(async () => "student@example.com");
   const send = vi.fn(async (_reply: ReportReply) => ({
     providerId: "email_1",
@@ -170,4 +170,22 @@ describe("Owner report replies", () => {
     });
     expect(s.send).not.toHaveBeenCalled();
   });
+});
+
+it("freezes question context and both email representations across uncertain retries", async () => {
+ const s=setup(); s.send.mockRejectedValueOnce(new Error("timeout"));
+ const first=await s.service.send("token",input);
+ expect(first.emailText).toContain("Original explanation");
+ expect(first.emailHtml).toContain("About your report");
+ s.getReport.mockResolvedValue({...await s.getReport(), explanation:"Changed message", snapshot:{...(await s.getReport()).snapshot,question:{id:"q1",type:"mcq",text:"Changed question",options:[],correctIndex:0,explanation:"Changed explanation"}}});
+ const second=await s.service.send("token",input);
+ expect(second.emailText).toBe(first.emailText); expect(second.emailHtml).toBe(first.emailHtml);
+ expect(second.context).toEqual(first.context);
+});
+it("does not append context to a previously reserved legacy reply",async()=>{
+ const s=setup(); s.send.mockRejectedValueOnce(new Error("timeout"));
+ const first=await s.service.send("token",input);
+ const {context,emailText,emailHtml,...legacy}=first; s.rows.set(first.id,legacy);
+ const retried=await s.service.send("token",input);
+ expect(retried.emailText).toBeUndefined(); expect(retried.emailHtml).toBeUndefined(); expect(retried.context).toBeUndefined();
 });

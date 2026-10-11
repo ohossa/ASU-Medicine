@@ -1,6 +1,6 @@
 # ASUCodes voluntary support page plan
 
-**Status:** Local support-page design and master plan, updated 2026-10-09. Payment details were supplied by Omar for the page. Do not commit, push or deploy the support page until explicitly approved. Do not transact, register a merchant or accept provider terms on the owner’s behalf. Biochemistry was released separately as c00c492.
+**Status:** Public support page deployed in `ecf2579` with owner authorization. InstaPay and Vodafone Cash are available; card/Apple Pay and the optional accounting ledger remain unimplemented extensions. No payment provider account or financial transaction was created on the owner’s behalf. See [current release status](RELEASE_STATUS.md).
 
 ASUCodes is a free, independently maintained student project. The support page should explain its real operating costs, make voluntary contributions easy, and give supporters a clear route to recover a mistaken payment. Success means students can find the page, understand where their money goes, and continue studying with the same access whether they contribute or not.
 
@@ -292,4 +292,4 @@ One support area: reconciliation queue, refund requests, confirmed contributions
 
 ## Current status
 
-Biochemistry is separately live at commit `c00c492`. Support design/plan and newly installed Apple design skill remain local. The approved public support page is implemented locally at `/support`, including InstaPay, Vodafone Cash, bilingual copy, appearance controls, and WhatsApp refund assistance. Card onboarding and actual cost accounting remain owner inputs. No provider account, card API, financial transaction or automatic payment confirmation has been created.
+Biochemistry is separately live at commit `c00c492`. The approved public support page is deployed at `/support`, including InstaPay, Vodafone Cash, bilingual copy, appearance controls, and WhatsApp refund assistance. Card onboarding and actual cost accounting remain owner inputs. No provider account, card API, financial transaction or automatic payment confirmation has been created.

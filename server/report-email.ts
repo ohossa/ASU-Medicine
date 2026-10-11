@@ -62,7 +62,7 @@ export async function sendReportReply(reply: import('../src/app/reports/reply-co
   const response = await fetch('https://api.resend.com/emails', {
     method: 'POST',
     headers: {Authorization:`Bearer ${process.env.RESEND_API_KEY}`, 'Content-Type':'application/json', 'Idempotency-Key':`report-reply/${reply.id}`},
-    body: JSON.stringify({from:reply.from || process.env.REPORT_EMAIL_FROM, to:[reply.to], reply_to:OWNER_EMAIL, subject:reply.subject, text:reply.body}),
+    body: JSON.stringify({from:reply.from || process.env.REPORT_EMAIL_FROM, to:[reply.to], reply_to:OWNER_EMAIL, subject:reply.subject, text:reply.emailText ?? reply.body, ...(reply.emailHtml ? {html:reply.emailHtml} : {})}),
     signal: AbortSignal.timeout(8000),
   });
   if (!response.ok) throw new Error('Reply delivery was not acknowledged');

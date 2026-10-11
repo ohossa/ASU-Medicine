@@ -1,6 +1,6 @@
 # Report triage and design implementation
 
-Status: implemented locally on 9 October 2026; not published. The first operating mode is **shadow**. No real owner-labelled pilot is claimed.
+Status: deployed in `ecf2579`; production inspected 11 October 2026. Operating mode remains **shadow**. Nine report groups exist, all closed, with zero owner labels. No completed owner-labelled pilot is claimed. See [current release status](RELEASE_STATUS.md).
 
 ## What students and the owner get
 
@@ -28,7 +28,7 @@ PubMed abstract retrieval is not a comprehensive textbook verification service. 
 
 Redis `asu_triage:v1` holds sidecars, mode, current labels, an append-only label audit, leases and anonymous daily call counts. Assessment rules currently use `triage-2`. A new rule version creates new fingerprints; old pilot labels do not activate the new rules.
 
-The 90-second global lease covers the 55-second bounded job. Save/release operations check the lease token. Retries honor provider timing, remain unreviewed, and stop after five automatic failures; explicit owner reassessment resets that attempt count. Original reports are the durable queue. Processing currently runs through owner controls, not an unattended cron service.
+The 90-second global lease covers the 55-second bounded job. Save/release operations check the lease token. Retries honor provider timing, remain unreviewed, and stop after five automatic failures; explicit owner reassessment resets that attempt count. Original reports are the durable queue. Processing runs through owner controls, not an unattended cron service. The default queue includes open reports only. The explicit **Include closed reports for the pilot** option also assesses historical closed reports, without reopening them, changing their decision, or treating their status as a pilot label. The open pending count and historical pending count are separate. Closed reports still use current-version, retry, provider-budget and owner authorization guards.
 
 ## Configuration and budget
 
@@ -45,7 +45,7 @@ Official provider references checked 9 October 2026: [Groq models](https://conso
 
 ## Owner pilot and release
 
-1. Publish only after the user's existing local-review hold is lifted. Verify owner-only access and the configured provider on the actual deployment; keep shadow mode.
+1. The system is deployed. Keep shadow mode, verify the live provider by processing an eligible group, and inspect its stored assessment. For historical groups, explicitly select **Include closed reports for the pilot**.
 2. Review real groups and record independent owner labels/notes. Required: at least 50 current completed groups, at least 10 actionable groups, no false-low classifications and no critical misses. Recall must be at least 95%.
 3. Inspect uncertainties and all low-priority decisions. Do not manufacture labels or treat mocked tests as pilot evidence.
 4. Enable prioritization only when the server gate passes. The server re-evaluates current versions and labels on every view; insufficient current pilot coverage falls back to shadow.

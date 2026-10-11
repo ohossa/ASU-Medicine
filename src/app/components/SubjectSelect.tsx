@@ -1,3 +1,4 @@
+import { pastExamsFirst } from "../lib/practiceOrder";
 import {useSyncedHistory} from '../hooks/useSyncedHistory';
 import {useOptionalLearning} from '../learning/LearningProvider';
 import {moduleProgress} from '../learning/progress';
@@ -379,7 +380,7 @@ export function SubjectSelect({ chapter, onBack, onSelectSubject, breadcrumbPath
             variants={{ hidden: {}, show: { transition: { staggerChildren: 0.07, delayChildren: 0.1 } } }}
             className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3"
           >
-            {chapter.subjects.map((subject) => {
+            {pastExamsFirst(chapter.subjects).map((subject) => {
               const Icon = iconFor(subject);
               const subAccent = ACCENT[subject.id];
               const isActive = subject.questions.length > 0;

@@ -18,6 +18,8 @@ describe('GIT collection and subject navigation',()=>{
  it('starts with regular subjects and a separate past-exams block',()=>{
   const select=vi.fn();render(<Flow select={select}/>);
   expect(screen.getByRole('heading',{name:'Question bank'})).toBeInTheDocument();
+  const past=screen.getByRole('region',{name:'Past exams & recalls'}), subjects=screen.getByRole('region',{name:'Subjects'});
+  expect(past.compareDocumentPosition(subjects) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
   fireEvent.click(screen.getByRole('button',{name:/Anatomy.*1 question/i}));
   expect(select).toHaveBeenCalledWith(chapters[0]);
  });

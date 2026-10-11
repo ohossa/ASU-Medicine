@@ -44,9 +44,11 @@ vi.mock("../data", () => ({
 it("starts in the saved year, conceals answers and makes all results reachable", async () => {
   render(
     <MemoryRouter>
-      <QuestionSearch onBack={() => {}} />
+      <main><QuestionSearch onBack={() => {}} /></main>
     </MemoryRouter>,
   );
+  expect(screen.getAllByRole("main")).toHaveLength(1);
+  expect(screen.getByRole("region", {name:"Question Search"})).toBeInTheDocument();
   await waitFor(() =>
     expect(screen.getByText(/105 questions/)).toBeInTheDocument(),
   );

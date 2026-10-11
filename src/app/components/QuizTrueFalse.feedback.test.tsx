@@ -1,5 +1,5 @@
 import { it, expect, vi, beforeEach } from "vitest";
-import { render, screen, fireEvent, cleanup } from "@testing-library/react";
+import { render, screen, fireEvent, cleanup, waitFor } from "@testing-library/react";
 import { QuizInterface } from "./QuizInterface";
 import { ResultsDashboard } from "./ResultsDashboard";
 import { ensureDataLoaded, getChaptersForModuleAndMode } from "../data";
@@ -131,4 +131,33 @@ it("uses correct feedback for the exact reported vermilion-border item from the 
   fireEvent.click(screen.getByRole("button", { name: "True" }));
   expect(feedback.sound).toHaveBeenCalledWith("correct");
   expect(feedback.wrong).not.toHaveBeenCalled();
+});
+
+it('exposes a labelled 44px sound control outside keyboard shortcuts',()=>{
+ const q:Question={id:'sound-control',type:'mcq',text:'Question',options:['A','B'],correctIndex:0,lecture:1,explanation:'Test explanation.',subjectColor:'histology'};
+ render(<QuizInterface chapter={chapter} subject={null} questions={[q]} onBack={vi.fn()} onFinish={vi.fn()}/>);
+ const control=screen.getByRole('button',{name:'Mute sounds'});
+ expect(control).toHaveAttribute('aria-pressed','true');
+ expect(control.className).not.toContain('hidden');
+ expect(control).toHaveTextContent('Sound on');
+});
+
+it('names the shortcuts panel, pauses answer shortcuts and returns focus on Escape',async()=>{
+ const q:Question={id:'shortcut-a11y',type:'mcq',text:'Question',options:['A','B'],correctIndex:0,lecture:1,explanation:'Test explanation.',subjectColor:'histology'};
+ render(<QuizInterface chapter={chapter} subject={null} questions={[q]} onBack={vi.fn()} onFinish={vi.fn()}/>);
+ const trigger=screen.getByRole('button',{name:'Keyboard shortcuts'});
+ fireEvent.click(trigger);
+ expect(screen.getByRole('dialog',{name:'Keyboard shortcuts'})).toBeInTheDocument();
+ expect(screen.getByRole('button',{name:'Close keyboard shortcuts'})).toHaveFocus();
+ fireEvent.keyDown(window,{key:'1'});expect(feedback.sound).not.toHaveBeenCalled();
+ fireEvent.keyDown(window,{key:'Escape'});
+ await waitFor(()=>expect(screen.queryByRole('dialog',{name:'Keyboard shortcuts'})).not.toBeInTheDocument());
+ expect(trigger).toHaveFocus();
+});
+
+it('uses a named question region inside the portal main landmark',()=>{
+ const q:Question={id:'landmark',type:'mcq',text:'Question',options:['A','B'],correctIndex:0,lecture:1,explanation:'Test explanation.',subjectColor:'histology'};
+ render(<main><QuizInterface chapter={chapter} subject={null} questions={[q]} onBack={vi.fn()} onFinish={vi.fn()}/></main>);
+ expect(screen.getAllByRole('main')).toHaveLength(1);
+ expect(screen.getByRole('region',{name:'Question practice'})).toBeInTheDocument();
 });

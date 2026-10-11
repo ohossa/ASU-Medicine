@@ -1,3 +1,4 @@
+import type { ReplyContext } from "./reply-context.js";
 export interface ReplyDraft {
   reportId: string;
   subject: string;
@@ -16,6 +17,9 @@ export interface ReportReply {
   createdAt: string;
   createdBy: string;
   from?: string;
+  context?: ReplyContext;
+  emailText?: string;
+  emailHtml?: string;
   state: "pending" | "accepted" | "uncertain";
   providerId?: string;
 }
@@ -24,4 +28,5 @@ export interface ReplyConversation {
   replies: ReportReply[];
   recipient: string | null;
   configured: boolean;
+  context?: ReplyContext;
 }

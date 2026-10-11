@@ -19,6 +19,7 @@ const report = {
 } as QuestionReport;
 afterEach(() => {
   cleanup();
+  localStorage.clear();
   vi.unstubAllGlobals();
 });
 it("requires preview before sending and never sends a template placeholder", async () => {
@@ -93,4 +94,15 @@ it("preserves the same request ID after an ambiguous browser timeout", async () 
   fireEvent.click(screen.getByRole("button", { name: "Retry same reply" }));
   await waitFor(() => expect(payloads).toHaveLength(2));
   expect(payloads[1].requestId).toBe(payloads[0].requestId);
+});
+
+it("previews the server-provided original question and student message before sending",async()=>{
+ const request=vi.fn(async()=>({replies:[],recipient:"student@example.com",configured:true,context:{reportId:report.id,location:"MGL-3 · Anatomy · Question q1",question:"Original question\nAnswer shown when reported: A",category:"Wrong answer",message:"Student original concern"}}));
+ render(<ReplyComposer report={report} request={request as any}/>);
+ await screen.findByText("student@example.com");
+ fireEvent.change(screen.getByLabelText("Email message"),{target:{value:"Thank you. The question has now been corrected."}});
+ fireEvent.click(screen.getByRole("button",{name:"Preview email"}));
+ expect(screen.getByRole("region",{name:"About your report"})).toHaveTextContent("Student original concern");
+ expect(screen.getByRole("region",{name:"About your report"})).toHaveTextContent("Original question");
+ expect(request.mock.calls).toHaveLength(1);
 });

@@ -1,3 +1,4 @@
+import {pastExamsFirst} from "../lib/practiceOrder";
 import {useEffect,useMemo,useRef,useState} from 'react';
 import {ListChecks,Search,X,ChevronDown} from 'lucide-react';
 import type {ChapterData,SubjectData,Question} from '../types';
@@ -14,7 +15,7 @@ export function TopicPracticePicker({chapter,moduleCode,onStart}:{chapter:Chapte
  const dialog=useRef<HTMLDialogElement>(null),trigger=useRef<HTMLButtonElement>(null);
  const topics=useMemo(()=>practiceTopics(chapter,moduleCode),[chapter,moduleCode]);
  const run=useMemo(()=>selectedPractice(chapter,topics,selected),[chapter,topics,selected]);
- const visible=topics.filter(t=>t.title.toLowerCase().includes(search.toLowerCase())||t.questions.some(q=>q.text.toLowerCase().includes(search.toLowerCase())));
+ const visible=pastExamsFirst(topics).filter(t=>t.title.toLowerCase().includes(search.toLowerCase())||t.questions.some(q=>q.text.toLowerCase().includes(search.toLowerCase())));
  useEffect(()=>{if(!open||!dialog.current)return;const element=dialog.current;const before=document.body.style.overflow;document.body.style.overflow='hidden';element.showModal();return()=>{element.close();document.body.style.overflow=before;trigger.current?.focus();};},[open]);
  const toggle=(ids:string[])=>setSelected(prev=>{const next=new Set(prev);const remove=ids.every(id=>next.has(id));ids.forEach(id=>remove?next.delete(id):next.add(id));return next;});
  return <>

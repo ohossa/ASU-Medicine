@@ -9,6 +9,7 @@ import type {
   ReportReply,
 } from "../app/reports/reply-contracts";
 import { replyTemplate } from "../app/reports/review-context";
+import { replyContextText } from "../app/reports/reply-context";
 import safeStorage from "../app/utils/safeStorage";
 type Pending = { id: string; requestId: string; subject: string; body: string };
 export function ReplyComposer({
@@ -99,6 +100,8 @@ export function ReplyComposer({
       });
     return () => controller.abort();
   }, [report.id, cacheKey, request, reload]);
+  const frozenReply = pending ? conversation?.replies.find(r => r.requestId === pending.requestId) : undefined;
+  const emailContext = frozenReply ? frozenReply.context : conversation?.context;
   const placeholders = /\[(?:Explain|Describe|Ask)[^\]\n]*\]/i.test(body);
   const duplicate = conversation?.replies.some(
     (r) =>
@@ -269,8 +272,8 @@ export function ReplyComposer({
         />
       </label>
       <p className="admin-meta">
-        Only this message is emailed. Internal notes and student account details
-        stay private. Students can reply to your email address.
+        Your reply includes the question as reported and the student’s original message.
+        Internal notes and account details stay private. Students can reply to your email address.
       </p>
       {placeholders && (
         <p className="admin-meta">
@@ -308,6 +311,7 @@ export function ReplyComposer({
           <strong>{subject}</strong>
           <p>To: {conversation?.recipient}</p>
           <pre>{body}</pre>
+          {emailContext && <section aria-label="About your report" className="admin-email-context"><pre>{replyContextText(emailContext)}</pre></section>}
         </section>
       )}
       <div className="admin-actions">

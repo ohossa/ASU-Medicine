@@ -9,4 +9,4 @@ export interface TriageAssessment {
 }
 export interface TriageLabel {key:string;fingerprint:string;label:'actionable'|'uncertain'|'low';critical:boolean;notes:string;priority:TriagePriority;assessmentAt:string;at:string;by:string}
 export interface TriageMetrics {labelled:number;actionable:number;criticalMisses:number;falseLow:number;recall:number|null;ready:boolean}
-export interface TriageView {mode:'shadow'|'prioritized';metrics:TriageMetrics;assessments:TriageAssessment[];counts:Record<TriagePriority,number>;pending:number;lowReportIds:string[];reportAssessments:Record<string,string>;config:{provider:boolean;dailyLimit:number};labels:TriageLabel[]}
+export interface TriageView {mode:'shadow'|'prioritized';metrics:TriageMetrics;assessments:TriageAssessment[];counts:Record<TriagePriority,number>;pending:number;pilotPending?:number;lowReportIds:string[];reportAssessments:Record<string,string>;config:{provider:boolean;dailyLimit:number};labels:TriageLabel[]}

@@ -1,6 +1,6 @@
 # AI Report Triage: Proposed Design
 
-Status: implemented locally in shadow mode on 9 October 2026; not deployed. Real owner-labelled pilot and live provider/device verification remain release gates. See [implementation and operation](REPORT_TRIAGE_IMPLEMENTATION.md).
+Status: deployed in `ecf2579`, running in shadow mode. Production owner access and configured-provider availability checked 11 October 2026. The real owner-labelled pilot remains incomplete: the live inbox currently contains nine closed report groups and zero labels. See [current release status](RELEASE_STATUS.md) and [operation guide](REPORT_TRIAGE_IMPLEMENTATION.md).
 
 ## Goal and decisions
 

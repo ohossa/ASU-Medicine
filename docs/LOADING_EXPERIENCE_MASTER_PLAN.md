@@ -1,6 +1,6 @@
 # Startup and loading: implementation master plan
 
-Status: implemented and verified locally, 9 October 2026. No publication. See [implementation and verification report](STUDENT_EXPERIENCE_IMPLEMENTATION.md). The original design and acceptance plan follows.
+Status: implemented and deployed in `ecf2579` (9 October 2026). See [current release status](RELEASE_STATUS.md) and [implementation and verification report](STUDENT_EXPERIENCE_IMPLEMENTATION.md). The original design and acceptance plan follows.
 
 ## Objective
 

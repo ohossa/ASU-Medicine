@@ -1,11 +1,12 @@
-import { useState, useCallback, useEffect } from 'react';
+import { useSyncExternalStore, useCallback, useEffect } from 'react';
 import { play, preloadSounds } from '../lib/soundEngine';
-import { feedbackSoundEnabled, setFeedbackSoundEnabled } from '../lib/audioPolicy';
+import { feedbackSoundEnabled, setFeedbackSoundEnabled, subscribeFeedbackSound } from '../lib/audioPolicy';
 
 export type SoundKey = 'correct' | 'wrong' | 'combo' | 'timer' | 'perfect';
 
 export function useSoundEngine() {
-  const [muted, setMuted] = useState(() => !feedbackSoundEnabled());
+  const enabled = useSyncExternalStore(subscribeFeedbackSound, feedbackSoundEnabled, () => false);
+  const muted = !enabled;
 
   useEffect(() => { if (!muted) preloadSounds(); }, [muted]);
 
@@ -20,7 +21,6 @@ export function useSoundEngine() {
   const toggleMute = useCallback(() => {
     const next = !feedbackSoundEnabled();
     setFeedbackSoundEnabled(next);
-    setMuted(!next);
   }, []);
 
   return { trigger, muted, toggleMute };
