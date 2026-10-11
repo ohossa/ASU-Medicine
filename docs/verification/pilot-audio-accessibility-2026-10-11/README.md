@@ -38,3 +38,9 @@ Owner confirmed an iPhone Safari is available for testing. Actual iPhone feedbac
 - Email context regression: escaped HTML plus plaintext; original key clearly labelled; case parent/reported part preserved; owner notes and profile metadata excluded; payload frozen across ambiguous retries; legacy pending messages remain plain text; preview includes server-provided context. No real student email sent during verification.
 - Past-exam ordering regression: stable presentation partition with explicit metadata / English and Arabic labels; no mutation of source arrays or identifiers; generic future module and GIT layout order tested.
 - Physical audio, assistive-technology and email-client rendering remain distinct from these automated and DOM checks. No claim of complete device certification.
+
+## Production release verification
+
+Implementation `044308d` pushed to main. GitHub commit status reports successful Vercel deployment. Production `/admin/reports` displays the historical-pilot checkbox and retrieves its counts. The live email preview includes the original question/options, answer, explanation and student note; the temporary preview body was cleared without sending or saving a draft. The public reporting API returns 401 without authentication. Published GIT navigation visibly puts Past Exams before Subjects (production screenshot). Physical iPhone feedback remains pending.
+
+Historical pilot assessment began in shadow mode. Seven of nine groups received stored assessments during the initial batches; two remain pending after provider/evidence interruption and a timed-out request. All reports remain dismissed and visible, with zero owner labels and prioritization disabled. Timeouts are not approvals or owner labels. This is an initial live pilot, not a completed 50-group validation.

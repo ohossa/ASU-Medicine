@@ -17,6 +17,8 @@ Updated 11 October 2026. This is the current status index. Older dated verificat
 
 ## 11 October follow-up
 
+Published implementation: `044308d`. Vercel deployment confirmed successful; production admin controls and email-context preview verified. Unauthenticated reporting API access returns 401.
+
 The current update restores default-on sound outside iPhone Safari, keeps iPhone Safari default-muted, honours explicit choices, and adds an always-visible bilingual sound control. Sound preferences synchronize between mounted controls and browser tabs. Both feedback engines share the policy and request ambient mixing when supported. Older Safari may pause other audio after an explicit unmute; the control explains that limitation. No browser-width test can prove actual iOS audio mixing.
 
 The historical-pilot checkbox allows the owner to assess closed reports without reopening them. The default queue processes open reports only. Counts distinguish open and historical pending groups. Running AI assessment never records an owner label or changes report status.
