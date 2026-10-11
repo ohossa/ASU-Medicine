@@ -1,0 +1,292 @@
+{
+  "inputPath": "data-format-v2/question-intake/year-3/semester-1/P4-3/_ready/P4-3-ethics-20261011.json",
+  "targetPath": "src/imports/year-3/semester-1/P4-3.json",
+  "moduleCode": "P4-3",
+  "added": [
+    {
+      "id": "P43-CH2-CLIN-0001",
+      "chapterId": 2,
+      "subject": "clinical",
+      "text": "All of these are true about confidentiality EXCEPT:"
+    },
+    {
+      "id": "P43-CH2-CLIN-0002",
+      "chapterId": 2,
+      "subject": "clinical",
+      "text": "Dr. X is a senior physician in an academic hospital. His drug addiction is affecting his performance at work. His treating physician advised him to stop working until treatment is completed, but he refused. What should the treating physician do?"
+    },
+    {
+      "id": "P43-CH1-CLIN-0001",
+      "chapterId": 1,
+      "subject": "clinical",
+      "text": "Advance care planning includes:"
+    },
+    {
+      "id": "P43-CH2-CLIN-0003",
+      "chapterId": 2,
+      "subject": "clinical",
+      "text": "Under Egyptian medical ethics rules, regarding consent of medical research participants, all are true EXCEPT:"
+    },
+    {
+      "id": "P43-CH3-CLIN-0001",
+      "chapterId": 3,
+      "subject": "clinical",
+      "text": "Which of the following is true of genetic screening?"
+    },
+    {
+      "id": "P43-CH1-CLIN-0002",
+      "chapterId": 1,
+      "subject": "clinical",
+      "text": "Withdrawal of a medication after intolerable adverse effects primarily respects which principle?"
+    },
+    {
+      "id": "P43-CH2-CLIN-0004",
+      "chapterId": 2,
+      "subject": "clinical",
+      "text": "Breach of confidentiality is justified in the following condition:"
+    },
+    {
+      "id": "P43-CH2-CLIN-0005",
+      "chapterId": 2,
+      "subject": "clinical",
+      "text": "During a clinical session, you see a patient with a painful skin lesion. You take a photograph with your smartphone after obtaining the patient’s consent. Your colleague later asks you to forward the image. What should you do?"
+    },
+    {
+      "id": "P43-CH2-CLIN-0006",
+      "chapterId": 2,
+      "subject": "clinical",
+      "text": "Dr. X is a surgeon in an academic hospital. His drug addiction is affecting his performance at work. His treating physician advised him to stop working until treatment is completed, but he refused. What should the treating physician do?"
+    },
+    {
+      "id": "P43-CH2-CLIN-0007",
+      "chapterId": 2,
+      "subject": "clinical",
+      "text": "In the teaching hospital, you see a colleague putting medical equipment from the stockroom into his bag. He says he wants to practise his skills and asks you not to tell anyone. What would you do?"
+    },
+    {
+      "id": "P43-CH1-CLIN-0003",
+      "chapterId": 1,
+      "subject": "clinical",
+      "text": "Which one of the following is to be avoided in the treatment of a patient by the physician?"
+    },
+    {
+      "id": "P43-CH2-CLIN-0008",
+      "chapterId": 2,
+      "subject": "clinical",
+      "text": "If a doctor acts as a promoter for a pharmaceutical company, this is considered:"
+    },
+    {
+      "id": "P43-CH2-CLIN-0009",
+      "chapterId": 2,
+      "subject": "clinical",
+      "text": "Keeping patients’ information confidential is called:"
+    },
+    {
+      "id": "P43-CH2-CLIN-0010",
+      "chapterId": 2,
+      "subject": "clinical",
+      "text": "For valid consent, the person should be:"
+    },
+    {
+      "id": "P43-CH2-CLIN-0011",
+      "chapterId": 2,
+      "subject": "clinical",
+      "text": "Which characteristic makes a person’s consent invalid?"
+    },
+    {
+      "id": "P43-CH2-CLIN-0012",
+      "chapterId": 2,
+      "subject": "clinical",
+      "text": "A physician cannot terminate the relationship with a patient if:"
+    },
+    {
+      "id": "P43-CH3-CLIN-0002",
+      "chapterId": 3,
+      "subject": "clinical",
+      "text": "According to Egyptian law, abortion is legal and ethical in which of the following conditions?"
+    },
+    {
+      "id": "P43-CH3-CLIN-0003",
+      "chapterId": 3,
+      "subject": "clinical",
+      "text": "Somatic cell gene therapy:"
+    },
+    {
+      "id": "P43-CH3-CLIN-0004",
+      "chapterId": 3,
+      "subject": "clinical",
+      "text": "A doctor changes laboratory results of his research to make the findings more impressive and significant. This is termed:"
+    },
+    {
+      "id": "P43-CH3-CLIN-0005",
+      "chapterId": 3,
+      "subject": "clinical",
+      "text": "A terminally ill cancer patient begged you to end his life by using a large dose of opioids, what should you do?"
+    },
+    {
+      "id": "P43-CH2-CLIN-0013",
+      "chapterId": 2,
+      "subject": "clinical",
+      "text": "A valid consent is obtained from a person who is:"
+    },
+    {
+      "id": "P43-CH1-CLIN-0004",
+      "chapterId": 1,
+      "subject": "clinical",
+      "text": "When a doctor hides facial features in a patient’s photograph presented at a medical conference, which ethical principle is being respected?"
+    },
+    {
+      "id": "P43-CH2-CLIN-0014",
+      "chapterId": 2,
+      "subject": "clinical",
+      "text": "A medical student during clinical training sessions:"
+    },
+    {
+      "id": "P43-CH2-CLIN-0015",
+      "chapterId": 2,
+      "subject": "clinical",
+      "text": "As a medical student, you can:"
+    },
+    {
+      "id": "P43-CH1-CLIN-0005",
+      "chapterId": 1,
+      "subject": "clinical",
+      "text": "When a doctor stops medication because severe adverse effects occur, which principle is primarily being respected?"
+    },
+    {
+      "id": "P43-CH2-CLIN-0016",
+      "chapterId": 2,
+      "subject": "clinical",
+      "text": "When a doctor saw one of his colleagues making a medical mistake with his patient, what is the appropriate response to take?"
+    },
+    {
+      "id": "P43-CH1-CLIN-0006",
+      "chapterId": 1,
+      "subject": "clinical",
+      "text": "When the doctor accepts patient's refusal of treatment, he respects the ethical principle of:"
+    },
+    {
+      "id": "P43-CH1-CLIN-0007",
+      "chapterId": 1,
+      "subject": "clinical",
+      "text": "Which term refers to rules that govern society and are enforced by punishments for violations?"
+    },
+    {
+      "id": "P43-CH3-CLIN-0006",
+      "chapterId": 3,
+      "subject": "clinical",
+      "text": "According to Egyptian laws, which of the following is ethically permissible during IVF?"
+    },
+    {
+      "id": "P43-CH3-CLIN-0007",
+      "chapterId": 3,
+      "subject": "clinical",
+      "text": "Living wills are documents which are meant to guide decision making when:"
+    },
+    {
+      "id": "P43-CH2-CLIN-0017",
+      "chapterId": 2,
+      "subject": "clinical",
+      "text": "You are working at the desk in your hospital when another employee of the hospital asks for information about a patient who was admitted last night with cancer colon. You know the details of the case. The person requesting the information states that he is a close friend and co-worker of your patient. He shows you proper identification proving he really is a co-worker of your patient who also works in the hospital. Which of the following is the most appropriate response to this request?"
+    },
+    {
+      "id": "P43-CH2-CLIN-0018",
+      "chapterId": 2,
+      "subject": "clinical",
+      "text": "Which of the following situations does NOT support a civil medical malpractice claim against the doctor?"
+    },
+    {
+      "id": "P43-CH3-CLIN-0008",
+      "chapterId": 3,
+      "subject": "clinical",
+      "text": "Transplantation of fetal stem cells to a diseased person is termed as:"
+    },
+    {
+      "id": "P43-CH3-CLIN-0009",
+      "chapterId": 3,
+      "subject": "clinical",
+      "text": "Which of the following is considered as an advantage of living donor transplantation?"
+    },
+    {
+      "id": "P43-CH2-CLIN-0019",
+      "chapterId": 2,
+      "subject": "clinical",
+      "text": "If a participant of medical research wants to withdraw from the study, he can withdraw:"
+    },
+    {
+      "id": "P43-CH2-CLIN-0020",
+      "chapterId": 2,
+      "subject": "clinical",
+      "text": "The professional yardstick for a medical mistake is ordinarily established by:"
+    },
+    {
+      "id": "P43-CH2-CLIN-0021",
+      "chapterId": 2,
+      "subject": "clinical",
+      "text": "You are a psychiatrist, in a session with a schizophrenic patient who asks you if you can keep a secret and then tells you that he is planning to kill his boss. You say, “Of course, everything you tell me during the session will always be confidential”. What should you do?"
+    },
+    {
+      "id": "P43-CH2-CLIN-0022",
+      "chapterId": 2,
+      "subject": "clinical",
+      "text": "When a doctor noticed tremors in his colleague's hand while performing surgical procedure, what should he do?"
+    },
+    {
+      "id": "P43-CH2-CLIN-0023",
+      "chapterId": 2,
+      "subject": "clinical",
+      "text": "Which of the followings is considered as violation of ethical principles in medical research?"
+    },
+    {
+      "id": "P43-CH2-CLIN-0024",
+      "chapterId": 2,
+      "subject": "clinical",
+      "text": "Which of the following conducts IS NOT acceptable from the physician?"
+    },
+    {
+      "id": "P43-CH3-CLIN-0010",
+      "chapterId": 3,
+      "subject": "clinical",
+      "text": "Germline gene therapy involves:"
+    },
+    {
+      "id": "P43-CH3-CLIN-0011",
+      "chapterId": 3,
+      "subject": "clinical",
+      "text": "Transplantation of pig's heart to a man is termed as:"
+    },
+    {
+      "id": "P43-CH2-CLIN-0025",
+      "chapterId": 2,
+      "subject": "clinical",
+      "text": "Which type of consent permits a physician to perform a major surgical operation?"
+    },
+    {
+      "id": "P43-CH1-CLIN-0008",
+      "chapterId": 1,
+      "subject": "clinical",
+      "text": "The main effect of advance care planning on end-of-life care is:"
+    },
+    {
+      "id": "P43-CH3-CLIN-0012",
+      "chapterId": 3,
+      "subject": "clinical",
+      "text": "Determining whether a treatment is futile depends on:"
+    },
+    {
+      "id": "P43-CH3-CLIN-0013",
+      "chapterId": 3,
+      "subject": "clinical",
+      "text": "Genetic testing of the embryos prior to their implantation in the IVF procedure is:"
+    },
+    {
+      "id": "P43-CH3-CLIN-0014",
+      "chapterId": 3,
+      "subject": "clinical",
+      "text": "Which of the following is considered as a disadvantage of cadaver donor transplantation?"
+    }
+  ],
+  "skippedDuplicates": [],
+  "removedExistingDuplicates": [],
+  "needsReview": []
+}

@@ -1291,9 +1291,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
               <TimerSettingsPanel
                 mode={timerMode}
                 urgency={timerUrgency}
-                muted={muted}
                 onChangeMode={setTimerMode}
-                onToggleMute={toggleMute}
               />
             </motion.div>
         )}

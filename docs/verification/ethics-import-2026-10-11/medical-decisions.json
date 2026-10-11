@@ -1,0 +1,3827 @@
+[
+  {
+    "group": "rape",
+    "representative_occurrence": "ETH-D01-Q01",
+    "occurrence_ids": [
+      "ETH-D01-Q01"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.118948+00:00",
+    "source_question_hash": "b2c232d91fc7372da05cf3c6a46a568f8fa9cc067877fb597c4c6443bbf59c55",
+    "decision": "exclude_ambiguous",
+    "reason": "Other groups may also require consent unless a specific compulsory-examination law applies; that exception is not stated or verified for all options.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Current course clarification or authoritative context followed by renewed exact-content review"
+  },
+  {
+    "group": "head",
+    "representative_occurrence": "ETH-D01-Q02",
+    "occurrence_ids": [
+      "ETH-D01-Q02",
+      "ETH-D02-Q03",
+      "ETH-D02-Q17",
+      "ETH-D04-Q03",
+      "ETH-D05-Q11"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.122446+00:00",
+    "source_question_hash": "d999193a14468940842327ff93d8b7af71e2adcc64ebbf3a2cf07f9b69b9811b",
+    "decision": "exclude_ambiguous",
+    "reason": "Urgency and absent relatives do not establish that the patient cannot consent; the emergency exception needs capacity/known-refusal conditions absent from the stem.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Current course clarification or authoritative context followed by renewed exact-content review"
+  },
+  {
+    "group": "conf-except",
+    "representative_occurrence": "ETH-D01-Q03",
+    "occurrence_ids": [
+      "ETH-D01-Q03",
+      "ETH-D02-Q14"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.122553+00:00",
+    "source_question_hash": "a45694d51dfe4202d67170141264d6c492ea37ab717529838321d93cf86135f3",
+    "canonical_id": "P43-CH2-CLIN-0001",
+    "decision": "accept_recorded",
+    "final_question": {
+      "type": "mcq",
+      "text": "All of these are true about confidentiality EXCEPT:",
+      "options": [
+        "Based on mutual trust between doctor and patient.",
+        "It is maintained to medical information only",
+        "Applied to conversations between doctors and patients",
+        "Sometimes keeping of it would cause harm"
+      ],
+      "correctIndex": 1,
+      "explanation": "Confidentiality protects all personal information learned through the professional relationship, not just medical details. Exceptional disclosure may be justified to prevent serious harm."
+    },
+    "final_answer": "It is maintained to medical information only",
+    "reviewed_content_hash": "4e8a095d381c0e19af499dd43b42a122cae59f20a6c803e33064094d42fc99b2",
+    "option_assessment": [
+      "Trust supports confidentiality.",
+      "False: protection is not restricted to medical information.",
+      "Clinical conversations are protected.",
+      "Secrecy can sometimes expose others to serious harm."
+    ],
+    "evidence": [
+      {
+        "title": "WMA International Code of Medical Ethics",
+        "url": "https://www.wma.net/policies-post/wma-international-code-of-medical-ethics/",
+        "publication_or_update_date": "2022-10",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "paragraph 22",
+        "claim": "Personal information is confidential; exceptional overriding disclosure is possible."
+      }
+    ],
+    "historical_comparison": [
+      {
+        "occurrence_id": "ETH-D01-Q03",
+        "historical_index": 1,
+        "reviewed_source_index": 1,
+        "historical_comparison": "MATCH"
+      },
+      {
+        "occurrence_id": "ETH-D02-Q14",
+        "historical_index": 2,
+        "reviewed_source_index": 2,
+        "historical_comparison": "MATCH"
+      }
+    ],
+    "normalization_edits": {
+      "text": {
+        "before": "All of these are true about Confidentiality EXCEPT:",
+        "after": "All of these are true about confidentiality EXCEPT:"
+      }
+    },
+    "reason": "All alternatives assessed for the final version; Editorial and contextual clarifications are declared in normalization_edits. The research-consent stem explicitly names the Egyptian rule; civil-malpractice and expert-evidence wording clarify scope; combined option labels are expanded to words.",
+    "uncertainty": "No independent adjudication; legal explanations use stated source scope, not a claim about every jurisdiction."
+  },
+  {
+    "group": "impaired",
+    "representative_occurrence": "ETH-D01-Q04",
+    "occurrence_ids": [
+      "ETH-D01-Q04"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.122783+00:00",
+    "source_question_hash": "e4ebb4e718d5cc1728201fe19c4cc3c51dc3a04b33c2e8d05b8e607c0656030e",
+    "canonical_id": "P43-CH2-CLIN-0002",
+    "decision": "accept_recorded",
+    "final_question": {
+      "type": "mcq",
+      "text": "Dr. X is a senior physician in an academic hospital. His drug addiction is affecting his performance at work. His treating physician advised him to stop working until treatment is completed, but he refused. What should the treating physician do?",
+      "options": [
+        "Respect the confidentiality of his colleague",
+        "Report to the healthcare institution or regulatory authorities",
+        "Terminate the doctor–patient relationship to avoid embarrassing situations",
+        "Warn the patients who are dealing with this physician"
+      ],
+      "correctIndex": 1,
+      "explanation": "When impairment threatens patients and the colleague refuses to stop unsafe practice, patient protection justifies escalation to the appropriate institution or regulator, with only necessary information disclosed."
+    },
+    "final_answer": "Report to the healthcare institution or regulatory authorities",
+    "reviewed_content_hash": "065d8d72b32766066050c86bd107cc86d9368cad725d7219f99e8041646dd73b",
+    "option_assessment": [
+      "Absolute secrecy leaves patients exposed.",
+      "Appropriate safety escalation after advice was refused.",
+      "Ending treatment does not remove the patient-safety threat.",
+      "Publicly warning individual patients is not the appropriate initial reporting channel."
+    ],
+    "evidence": [
+      {
+        "title": "WMA Medical Ethics Manual, third edition",
+        "url": "https://www.wma.net/what-we-do/education/medical-ethics-manual/ethics_manual_3rd_nov2015_en_1x1/",
+        "publication_or_update_date": "2015",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "printed pp. 91–92, reporting unsafe colleagues",
+        "claim": "Approach colleague, then supervisor or disciplinary authority when unresolved."
+      },
+      {
+        "title": "GMC: Disclosing patients’ personal information: a framework",
+        "url": "https://www.gmc-uk.org/professional-standards/the-professional-standards/confidentiality/disclosing-patients-personal-information-a-framework",
+        "publication_or_update_date": null,
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "paragraphs 63–70",
+        "claim": "Serious risks from an unfit worker can justify limited disclosure."
+      }
+    ],
+    "historical_comparison": [
+      {
+        "occurrence_id": "ETH-D01-Q04",
+        "historical_index": 1,
+        "reviewed_source_index": 1,
+        "historical_comparison": "MATCH"
+      }
+    ],
+    "normalization_edits": {
+      "text": {
+        "before": "Dr. X is a senior physician in an academic hospital, he suffers drug addiction which starts to affect his performance at work, his treating physician advised him to stop working until his treatment is completed but he refused. The treating physician should:",
+        "after": "Dr. X is a senior physician in an academic hospital. His drug addiction is affecting his performance at work. His treating physician advised him to stop working until treatment is completed, but he refused. What should the treating physician do?"
+      },
+      "options": {
+        "before": [
+          "Respect the confidentiality of his colleague",
+          "Report to heath care institution or regulatory authorities",
+          "Terminate this doctor patient relation to avoid impressing situations",
+          "Warn the patients who is dealing with this physician"
+        ],
+        "after": [
+          "Respect the confidentiality of his colleague",
+          "Report to the healthcare institution or regulatory authorities",
+          "Terminate the doctor–patient relationship to avoid embarrassing situations",
+          "Warn the patients who are dealing with this physician"
+        ]
+      }
+    },
+    "reason": "All alternatives assessed for the final version; Editorial and contextual clarifications are declared in normalization_edits. The research-consent stem explicitly names the Egyptian rule; civil-malpractice and expert-evidence wording clarify scope; combined option labels are expanded to words.",
+    "uncertainty": "No independent adjudication; legal explanations use stated source scope, not a claim about every jurisdiction."
+  },
+  {
+    "group": "acp",
+    "representative_occurrence": "ETH-D01-Q05",
+    "occurrence_ids": [
+      "ETH-D01-Q05"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.122909+00:00",
+    "source_question_hash": "7105cd18f6e37237f21886bb50a588abd6516efcf189257dbd9bbc346609384a",
+    "canonical_id": "P43-CH1-CLIN-0001",
+    "decision": "accept_recorded",
+    "final_question": {
+      "type": "mcq",
+      "text": "Advance care planning includes:",
+      "options": [
+        "Oral statement",
+        "Surrogate proxy decision maker",
+        "Instructive directive",
+        "All of the above"
+      ],
+      "correctIndex": 3,
+      "explanation": "Advance care planning can include spoken preferences, a nominated proxy and written treatment instructions. These communicate the person’s wishes if they later cannot decide; legal formalities vary by jurisdiction."
+    },
+    "final_answer": "All of the above",
+    "reviewed_content_hash": "29ddbe62f8b625a60e0a5ca60f3210ab84844cda05d755cb31c44f4254a46bb2",
+    "option_assessment": [
+      "Spoken preferences are part of planning.",
+      "A proxy is part of planning.",
+      "Treatment instructions are part of planning.",
+      "All three approaches can contribute."
+    ],
+    "evidence": [
+      {
+        "title": "NHS: Why plan ahead for end of life care?",
+        "url": "https://www.nhs.uk/tests-and-treatments/end-of-life-care/planning-ahead/why-plan-ahead/",
+        "publication_or_update_date": "2023-08-03",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "How can I plan ahead?",
+        "claim": "Planning includes conversations, advance treatment decisions and appointment of a proxy."
+      }
+    ],
+    "historical_comparison": [
+      {
+        "occurrence_id": "ETH-D01-Q05",
+        "historical_index": 3,
+        "reviewed_source_index": 3,
+        "historical_comparison": "MATCH"
+      }
+    ],
+    "normalization_edits": {
+      "text": {
+        "before": "Advance care planning include:",
+        "after": "Advance care planning includes:"
+      }
+    },
+    "reason": "All alternatives assessed for the final version; Editorial and contextual clarifications are declared in normalization_edits. The research-consent stem explicitly names the Egyptian rule; civil-malpractice and expert-evidence wording clarify scope; combined option labels are expanded to words.",
+    "uncertainty": "No independent adjudication; legal explanations use stated source scope, not a claim about every jurisdiction."
+  },
+  {
+    "group": "malfalse",
+    "representative_occurrence": "ETH-D01-Q06",
+    "occurrence_ids": [
+      "ETH-D01-Q06"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.123026+00:00",
+    "source_question_hash": "b5a610505130f36853e048d3400000758961cbb90b95b0dd03e5db2c56cd01a7",
+    "decision": "exclude_ambiguous",
+    "reason": "An injury can be nonpreventable in one respect while a negligent breach causes compensable harm in another; the purported false option is not unambiguously false.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Current course clarification or authoritative context followed by renewed exact-content review"
+  },
+  {
+    "group": "research-consent",
+    "representative_occurrence": "ETH-D01-Q07",
+    "occurrence_ids": [
+      "ETH-D01-Q07"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.123040+00:00",
+    "source_question_hash": "22073c34b840fce9a3e0b8712a9c045b941a4e70b877a0f3228e4b0707f7c346",
+    "canonical_id": "P43-CH2-CLIN-0003",
+    "decision": "accept_recorded",
+    "final_question": {
+      "type": "mcq",
+      "text": "Under Egyptian medical ethics rules, regarding consent of medical research participants, all are true EXCEPT:",
+      "options": [
+        "It must be voluntarily given",
+        "It must be written consent",
+        "It cannot be withdrawn once the research has begun",
+        "It must be at a level understood by the participants"
+      ],
+      "correctIndex": 2,
+      "explanation": "Participants may withdraw from research without penalty. Egyptian medical ethics rules require written informed consent and understandable information; starting the study does not remove the right to leave."
+    },
+    "final_answer": "It cannot be withdrawn once the research has begun",
+    "reviewed_content_hash": "111051907f37c8e34c9ea2b219630e8e671566cd80af3ca0620acdbc025f12ba",
+    "option_assessment": [
+      "Research participation must be voluntary.",
+      "Written consent is required under the Egyptian rules used here.",
+      "False: withdrawal remains possible.",
+      "Information must be comprehensible."
+    ],
+    "evidence": [
+      {
+        "title": "Egyptian Health Council: الميثاق الأخلاقي للطب البشري",
+        "url": "https://www.ehc.gov.eg/ar/ethics-medicine",
+        "publication_or_update_date": "Ministerial Decision 238/2003; current official webpage inspected",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "Articles 55–56",
+        "claim": "Voluntary participation, understandable information, written consent and withdrawal without adverse consequences."
+      },
+      {
+        "title": "WMA Declaration of Helsinki",
+        "url": "https://www.wma.net/policies-post/wma-declaration-of-helsinki/",
+        "publication_or_update_date": "2024-10",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "paragraphs 25–26 and 31",
+        "claim": "Participation and withdrawal remain voluntary; withdrawal must not adversely affect care."
+      }
+    ],
+    "historical_comparison": [
+      {
+        "occurrence_id": "ETH-D01-Q07",
+        "historical_index": 2,
+        "reviewed_source_index": 2,
+        "historical_comparison": "MATCH"
+      }
+    ],
+    "normalization_edits": {
+      "text": {
+        "before": "As regard consent of the medical research participants all are true expect:",
+        "after": "Under Egyptian medical ethics rules, regarding consent of medical research participants, all are true EXCEPT:"
+      },
+      "options": {
+        "before": [
+          "It must be voluntary given.",
+          "It must be a written consent.",
+          "It cannot be withdrawn once the research began.",
+          "It must be at a level understood by all the participants"
+        ],
+        "after": [
+          "It must be voluntarily given",
+          "It must be written consent",
+          "It cannot be withdrawn once the research has begun",
+          "It must be at a level understood by the participants"
+        ]
+      }
+    },
+    "reason": "All alternatives assessed for the final version; Editorial and contextual clarifications are declared in normalization_edits. The research-consent stem explicitly names the Egyptian rule; civil-malpractice and expert-evidence wording clarify scope; combined option labels are expanded to words.",
+    "uncertainty": "No independent adjudication; legal explanations use stated source scope, not a claim about every jurisdiction."
+  },
+  {
+    "group": "death-a",
+    "representative_occurrence": "ETH-D01-Q08",
+    "occurrence_ids": [
+      "ETH-D01-Q08"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.123076+00:00",
+    "source_question_hash": "d54083ab1a51b780aba3fb10fb11f114222280713db3223f82d28b9fdab6157a",
+    "decision": "exclude_ambiguous",
+    "reason": "Egypt-specific legal death criteria require a verified controlling statute and irreversibility/context; the historical all-vital-functions key cannot be safely accepted as a general rule.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Current course clarification or authoritative context followed by renewed exact-content review"
+  },
+  {
+    "group": "screen",
+    "representative_occurrence": "ETH-D01-Q09",
+    "occurrence_ids": [
+      "ETH-D01-Q09"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.123085+00:00",
+    "source_question_hash": "2e908d6a5ce5d5eefa084143c2bc47959b8af750c09f2dbd34991f97397cc7a0",
+    "canonical_id": "P43-CH3-CLIN-0001",
+    "decision": "accept_recorded",
+    "final_question": {
+      "type": "mcq",
+      "text": "Which of the following is true of genetic screening?",
+      "options": [
+        "It involves testing entire groups at risk for a specific genetic disease.",
+        "It refers to the act of acquiring the genetic material of another human being without his or her permission.",
+        "It is an expensive process that is considered to be medically unnecessary.",
+        "It strives to improve the genetic constitution of an individual by removing bad genes."
+      ],
+      "correctIndex": 0,
+      "explanation": "Genetic screening tests a population or an at-risk group to identify people with a condition or increased inherited risk. It does not remove genes or acquire another person’s DNA without permission."
+    },
+    "final_answer": "It involves testing entire groups at risk for a specific genetic disease.",
+    "reviewed_content_hash": "d6bca665a40bc50903295ba47c433bdf0d9b8631b50e63e60e685e9918cc2f42",
+    "option_assessment": [
+      "Describes population screening.",
+      "Describes unauthorized acquisition, not screening.",
+      "Screening is not inherently unnecessary.",
+      "Removing genes is not screening."
+    ],
+    "evidence": [
+      {
+        "title": "NHGRI: Genetic Screening",
+        "url": "https://www.genome.gov/genetics-glossary/Genetic-Screening",
+        "publication_or_update_date": "2026-10-09",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "Definition and Narration",
+        "claim": "Screening concerns populations and identifies affected or at-risk subgroups."
+      }
+    ],
+    "historical_comparison": [
+      {
+        "occurrence_id": "ETH-D01-Q09",
+        "historical_index": 0,
+        "reviewed_source_index": 0,
+        "historical_comparison": "MATCH"
+      }
+    ],
+    "normalization_edits": {},
+    "reason": "All alternatives assessed for the final version; Editorial and contextual clarifications are declared in normalization_edits. The research-consent stem explicitly names the Egyptian rule; civil-malpractice and expert-evidence wording clarify scope; combined option labels are expanded to words.",
+    "uncertainty": "No independent adjudication; legal explanations use stated source scope, not a claim about every jurisdiction."
+  },
+  {
+    "group": "bio",
+    "representative_occurrence": "ETH-D02-Q01",
+    "occurrence_ids": [
+      "ETH-D02-Q01",
+      "ETH-D04-Q01",
+      "ETH-D05-Q09"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.123293+00:00",
+    "source_question_hash": "25fde839620fb033d456bfe190063465af891f68370d0f24e949b5e093014aaa",
+    "decision": "exclude_ambiguous",
+    "reason": "Bioethics is broader than professional interactions; variation by religion/society and the narrow professional-interaction definition make the offered single best answer unsafe.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Current course clarification or authoritative context followed by renewed exact-content review"
+  },
+  {
+    "group": "side-a",
+    "representative_occurrence": "ETH-D02-Q02",
+    "occurrence_ids": [
+      "ETH-D02-Q02",
+      "ETH-D04-Q02",
+      "ETH-D05-Q10"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.123446+00:00",
+    "source_question_hash": "07d64b169dd63f77f2ab171d64933c426dc527f034eaab7d55bb88cba7ba5f50",
+    "canonical_id": "P43-CH1-CLIN-0002",
+    "decision": "accept_recorded",
+    "final_question": {
+      "type": "mcq",
+      "text": "Withdrawal of a medication after intolerable adverse effects primarily respects which principle?",
+      "options": [
+        "Autonomy",
+        "Beneficence",
+        "Nonmaleficence",
+        "Justice"
+      ],
+      "correctIndex": 2,
+      "explanation": "Stopping a drug because its adverse effects are intolerable primarily illustrates nonmaleficence: avoiding further treatment-related harm."
+    },
+    "final_answer": "Nonmaleficence",
+    "reviewed_content_hash": "f2eb89a578a272c372f2fef1c9052b392a10a0e8a2f936440aef8047f28f6269",
+    "option_assessment": [
+      "No patient choice is described.",
+      "Promoting benefit is related, but preventing harm is the decisive feature.",
+      "Avoiding iatrogenic harm fits the scenario.",
+      "Resource fairness is not the issue."
+    ],
+    "evidence": [
+      {
+        "title": "WMA International Code of Medical Ethics",
+        "url": "https://www.wma.net/policies-post/wma-international-code-of-medical-ethics/",
+        "publication_or_update_date": "2022-10",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "paragraph 14",
+        "claim": "Minimize harm and balance benefits against adverse consequences."
+      },
+      {
+        "title": "WMA Medical Ethics Manual, third edition",
+        "url": "https://www.wma.net/what-we-do/education/medical-ethics-manual/ethics_manual_3rd_nov2015_en_1x1/",
+        "publication_or_update_date": "2015",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "Appendix A: Glossary, Non-maleficence entry",
+        "claim": "Nonmaleficence is avoidance of harmful actions."
+      }
+    ],
+    "historical_comparison": [
+      {
+        "occurrence_id": "ETH-D02-Q02",
+        "historical_index": 2,
+        "reviewed_source_index": 2,
+        "historical_comparison": "MATCH"
+      },
+      {
+        "occurrence_id": "ETH-D04-Q02",
+        "historical_index": 2,
+        "reviewed_source_index": 2,
+        "historical_comparison": "MATCH"
+      },
+      {
+        "occurrence_id": "ETH-D05-Q10",
+        "historical_index": null,
+        "reviewed_source_index": 2,
+        "historical_comparison": "NO_HISTORICAL_ANSWER"
+      }
+    ],
+    "normalization_edits": {
+      "text": {
+        "before": "Withdrawal of a medication after occurrence of intolerable side effects. Is a mandatory action in respect for the principle of:",
+        "after": "Withdrawal of a medication after intolerable adverse effects primarily respects which principle?"
+      }
+    },
+    "reason": "All alternatives assessed for the final version; Editorial and contextual clarifications are declared in normalization_edits. The research-consent stem explicitly names the Egyptian rule; civil-malpractice and expert-evidence wording clarify scope; combined option labels are expanded to words.",
+    "uncertainty": "No independent adjudication; legal explanations use stated source scope, not a claim about every jurisdiction."
+  },
+  {
+    "group": "meningitis",
+    "representative_occurrence": "ETH-D02-Q04",
+    "occurrence_ids": [
+      "ETH-D02-Q04",
+      "ETH-D04-Q04",
+      "ETH-D05-Q12"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.131940+00:00",
+    "source_question_hash": "ec300f8e8010bc85b0f42fcaa6bd3e56433b9364ad0dd06514b41e4b38a2d2f3",
+    "canonical_id": "P43-CH2-CLIN-0004",
+    "decision": "accept_recorded",
+    "final_question": {
+      "type": "mcq",
+      "text": "Breach of confidentiality is justified in the following condition:",
+      "options": [
+        "The doctor wants to disclose information about a patient after his death.",
+        "The doctor wants to disclose personal medical information of a famous actor to the media.",
+        "The doctor wants to report a case of meningitis to health authority.",
+        "The doctor wants to inform the patient's family that he has cancer despite of his wish to keep confidential."
+      ],
+      "correctIndex": 2,
+      "explanation": "Reporting a suspected epidemic infection to the health authority is an Egyptian professional duty. Celebrity status, death or a family’s interest does not by itself authorize disclosure."
+    },
+    "final_answer": "The doctor wants to report a case of meningitis to health authority.",
+    "reviewed_content_hash": "f66758256c22540a7624933a218dcbb2b9001768f27e5ef52f441d360527108b",
+    "option_assessment": [
+      "Confidentiality does not disappear after death.",
+      "Media interest does not justify disclosure.",
+      "Public-health reporting is a recognized exception.",
+      "A patient’s refusal ordinarily prevents family disclosure absent serious risk."
+    ],
+    "evidence": [
+      {
+        "title": "Egyptian Health Council: الميثاق الأخلاقي للطب البشري",
+        "url": "https://www.ehc.gov.eg/ar/ethics-medicine",
+        "publication_or_update_date": "Ministerial Decision 238/2003; current official webpage inspected",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "Articles 5, 21 and 30",
+        "claim": "Report suspected epidemic disease; respect restricted family disclosure; legal and serious-harm exceptions."
+      },
+      {
+        "title": "WMA International Code of Medical Ethics",
+        "url": "https://www.wma.net/policies-post/wma-international-code-of-medical-ethics/",
+        "publication_or_update_date": "2022-10",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "paragraph 22",
+        "claim": "Confidentiality continues after death."
+      }
+    ],
+    "historical_comparison": [
+      {
+        "occurrence_id": "ETH-D02-Q04",
+        "historical_index": 2,
+        "reviewed_source_index": 2,
+        "historical_comparison": "MATCH"
+      },
+      {
+        "occurrence_id": "ETH-D04-Q04",
+        "historical_index": 2,
+        "reviewed_source_index": 2,
+        "historical_comparison": "MATCH"
+      },
+      {
+        "occurrence_id": "ETH-D05-Q12",
+        "historical_index": null,
+        "reviewed_source_index": 2,
+        "historical_comparison": "NO_HISTORICAL_ANSWER"
+      }
+    ],
+    "normalization_edits": {},
+    "reason": "All alternatives assessed for the final version; Editorial and contextual clarifications are declared in normalization_edits. The research-consent stem explicitly names the Egyptian rule; civil-malpractice and expert-evidence wording clarify scope; combined option labels are expanded to words.",
+    "uncertainty": "No independent adjudication; legal explanations use stated source scope, not a claim about every jurisdiction."
+  },
+  {
+    "group": "students-exam",
+    "representative_occurrence": "ETH-D02-Q05",
+    "occurrence_ids": [
+      "ETH-D02-Q05",
+      "ETH-D04-Q05",
+      "ETH-D05-Q13"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.132037+00:00",
+    "source_question_hash": "ec9d3db82ad2a9807313f96062e5ff345da4ea6c2d0c9ff63099cf6ecb61b536",
+    "decision": "exclude_ambiguous",
+    "reason": "Student examination requires agreement, but the other groups are not automatically exempt from consent; missing jurisdiction-specific compulsory-examination conditions.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Current course clarification or authoritative context followed by renewed exact-content review"
+  },
+  {
+    "group": "photo",
+    "representative_occurrence": "ETH-D02-Q06",
+    "occurrence_ids": [
+      "ETH-D02-Q06",
+      "ETH-D04-Q06",
+      "ETH-D05-Q14"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.132053+00:00",
+    "source_question_hash": "5921018ee2352111b35731feec75282173ee0f7a54e4d145fc15cdb9ef708d1b",
+    "canonical_id": "P43-CH2-CLIN-0005",
+    "decision": "accept_recorded",
+    "final_question": {
+      "type": "mcq",
+      "text": "During a clinical session, you see a patient with a painful skin lesion. You take a photograph with your smartphone after obtaining the patient’s consent. Your colleague later asks you to forward the image. What should you do?",
+      "options": [
+        "Send the image to your colleague and ask him not to forward it",
+        "Send the image with all relevant case details",
+        "Explain that you cannot do this without the patient’s consent",
+        "Send the image to the students’ Facebook page so everyone can access it"
+      ],
+      "correctIndex": 2,
+      "explanation": "Permission to take a clinical photograph does not automatically include permission to share it for teaching. Obtain consent covering the proposed disclosure and protect identifying information."
+    },
+    "final_answer": "Explain that you cannot do this without the patient’s consent",
+    "reviewed_content_hash": "aa8c695572bf8728c3691b30274507f63ca0990b4f91cd7d89638862a5e79a99",
+    "option_assessment": [
+      "A request not to forward does not authorize this disclosure.",
+      "Case details add confidentiality risk.",
+      "Consent must cover the proposed teaching disclosure.",
+      "Social media posting greatly exceeds the stated permission."
+    ],
+    "evidence": [
+      {
+        "title": "GMC: Disclosing for education and training purposes",
+        "url": "https://www.gmc-uk.org/professional-standards/the-professional-standards/confidentiality---disclosing-for-education-and-training-purposes/disclosing-for-education-and-training-purposes",
+        "publication_or_update_date": null,
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "paragraphs 1–6",
+        "claim": "Identifiable educational disclosure outside care ordinarily requires explicit consent."
+      }
+    ],
+    "historical_comparison": [
+      {
+        "occurrence_id": "ETH-D02-Q06",
+        "historical_index": 2,
+        "reviewed_source_index": 2,
+        "historical_comparison": "MATCH"
+      },
+      {
+        "occurrence_id": "ETH-D04-Q06",
+        "historical_index": 2,
+        "reviewed_source_index": 2,
+        "historical_comparison": "MATCH"
+      },
+      {
+        "occurrence_id": "ETH-D05-Q14",
+        "historical_index": null,
+        "reviewed_source_index": 2,
+        "historical_comparison": "NO_HISTORICAL_ANSWER"
+      }
+    ],
+    "normalization_edits": {
+      "text": {
+        "before": "During a clinical session, you see a patient with painful skin lesion. You took a picture of the lesion with your smart phone after obtaining patient's consent. Your colleague later asks you forward the image. What should you do?",
+        "after": "During a clinical session, you see a patient with a painful skin lesion. You take a photograph with your smartphone after obtaining the patient’s consent. Your colleague later asks you to forward the image. What should you do?"
+      },
+      "options": {
+        "before": [
+          "Send the image to your colleague and asking him not to forward it to anyone.",
+          "Send the image to him with all relevant details about the case.",
+          "Explain that you cannot do this without the patient's consent.",
+          "Send the image to the student's page on the Facebook to be available for everyone."
+        ],
+        "after": [
+          "Send the image to your colleague and ask him not to forward it",
+          "Send the image with all relevant case details",
+          "Explain that you cannot do this without the patient’s consent",
+          "Send the image to the students’ Facebook page so everyone can access it"
+        ]
+      }
+    },
+    "reason": "All alternatives assessed for the final version; Editorial and contextual clarifications are declared in normalization_edits. The research-consent stem explicitly names the Egyptian rule; civil-malpractice and expert-evidence wording clarify scope; combined option labels are expanded to words.",
+    "uncertainty": "No independent adjudication; legal explanations use stated source scope, not a claim about every jurisdiction."
+  },
+  {
+    "group": "redacted-7",
+    "representative_occurrence": "ETH-D02-Q07",
+    "occurrence_ids": [
+      "ETH-D02-Q07"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.132107+00:00",
+    "source_question_hash": "9cd0683d144f9e8997b55401636a613ac7ff788e9783540813dd1b7dc3825607",
+    "decision": "exclude_incomplete",
+    "reason": "Essential question and options are obscured by an opaque rectangle. No reconstruction or guessed key.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Unredacted source"
+  },
+  {
+    "group": "impaired-hospital",
+    "representative_occurrence": "ETH-D02-Q08",
+    "occurrence_ids": [
+      "ETH-D02-Q08",
+      "ETH-D04-Q09",
+      "ETH-D05-Q17"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.132116+00:00",
+    "source_question_hash": "78e1f49b1d0d2aaacf3bdadb5fff2aa3dde2eef37afd8c73eb6674134a1486fc",
+    "canonical_id": "P43-CH2-CLIN-0006",
+    "decision": "accept_recorded",
+    "final_question": {
+      "type": "mcq",
+      "text": "Dr. X is a surgeon in an academic hospital. His drug addiction is affecting his performance at work. His treating physician advised him to stop working until treatment is completed, but he refused. What should the treating physician do?",
+      "options": [
+        "Respect the confidentiality of his colleague",
+        "Report to the hospital’s director",
+        "Terminate the doctor–patient relationship to avoid embarrassing situations",
+        "Warn the patients who are dealing with this physician"
+      ],
+      "correctIndex": 1,
+      "explanation": "A surgeon whose addiction is affecting practice and who refuses to stop creates a patient-safety risk. Escalate through the hospital’s responsible authority rather than keeping the risk secret."
+    },
+    "final_answer": "Report to the hospital’s director",
+    "reviewed_content_hash": "5e267623e142ca7ec623eb4f310ad112bad287820221f144a774ab18b7ef3c56",
+    "option_assessment": [
+      "Secrecy is not absolute where serious harm is threatened.",
+      "The director is the offered institutional escalation route.",
+      "Terminating the treating relationship leaves unsafe practice unresolved.",
+      "Direct patient warnings bypass the appropriate institutional route."
+    ],
+    "evidence": [
+      {
+        "title": "WMA Medical Ethics Manual, third edition",
+        "url": "https://www.wma.net/what-we-do/education/medical-ethics-manual/ethics_manual_3rd_nov2015_en_1x1/",
+        "publication_or_update_date": "2015",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "printed pp. 91–92",
+        "claim": "Unresolved unsafe practice should be escalated to a supervisor or authority."
+      },
+      {
+        "title": "GMC: Disclosing patients’ personal information: a framework",
+        "url": "https://www.gmc-uk.org/professional-standards/the-professional-standards/confidentiality/disclosing-patients-personal-information-a-framework",
+        "publication_or_update_date": null,
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "paragraphs 63–70",
+        "claim": "Disclosure can be justified to protect others from serious harm caused by unfit work."
+      }
+    ],
+    "historical_comparison": [
+      {
+        "occurrence_id": "ETH-D02-Q08",
+        "historical_index": 1,
+        "reviewed_source_index": 1,
+        "historical_comparison": "MATCH"
+      },
+      {
+        "occurrence_id": "ETH-D04-Q09",
+        "historical_index": 1,
+        "reviewed_source_index": 1,
+        "historical_comparison": "MATCH"
+      },
+      {
+        "occurrence_id": "ETH-D05-Q17",
+        "historical_index": null,
+        "reviewed_source_index": 1,
+        "historical_comparison": "NO_HISTORICAL_ANSWER"
+      }
+    ],
+    "normalization_edits": {
+      "text": {
+        "before": "Dr. X is a surgeon in an academic hospital, he suffers drug addiction which starts to affect his performance at work. His treating physician advised him to stop working until his treatment is completed but he refused. The treating physician should:",
+        "after": "Dr. X is a surgeon in an academic hospital. His drug addiction is affecting his performance at work. His treating physician advised him to stop working until treatment is completed, but he refused. What should the treating physician do?"
+      },
+      "options": {
+        "before": [
+          "Respect the confidentiality of his colleague.",
+          "Report to the hospital's director.",
+          "Terminate this doctor patient relationship to avoid impressing situations.",
+          "Warn the patients who are dealing with this physician."
+        ],
+        "after": [
+          "Respect the confidentiality of his colleague",
+          "Report to the hospital’s director",
+          "Terminate the doctor–patient relationship to avoid embarrassing situations",
+          "Warn the patients who are dealing with this physician"
+        ]
+      }
+    },
+    "reason": "All alternatives assessed for the final version; Editorial and contextual clarifications are declared in normalization_edits. The research-consent stem explicitly names the Egyptian rule; civil-malpractice and expert-evidence wording clarify scope; combined option labels are expanded to words.",
+    "uncertainty": "No independent adjudication; legal explanations use stated source scope, not a claim about every jurisdiction."
+  },
+  {
+    "group": "polio",
+    "representative_occurrence": "ETH-D02-Q09",
+    "occurrence_ids": [
+      "ETH-D02-Q09",
+      "ETH-D04-Q12",
+      "ETH-D05-Q20"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.132155+00:00",
+    "source_question_hash": "d75042468f6067ee1f5a69ee12f5fb726a33deb8923ba03ff4365698ffdcaeee",
+    "decision": "exclude_ambiguous",
+    "reason": "The historical key overrides parental refusal. Counseling and public-health enforcement depend on applicable Egyptian vaccination duties; the stem does not specify a lawful override process.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Current course clarification or authoritative context followed by renewed exact-content review"
+  },
+  {
+    "group": "redacted-10",
+    "representative_occurrence": "ETH-D02-Q10",
+    "occurrence_ids": [
+      "ETH-D02-Q10"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.132166+00:00",
+    "source_question_hash": "9cd0683d144f9e8997b55401636a613ac7ff788e9783540813dd1b7dc3825607",
+    "decision": "exclude_incomplete",
+    "reason": "Essential question and options are obscured by an opaque rectangle. No reconstruction or guessed key.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Unredacted source"
+  },
+  {
+    "group": "pharmbad",
+    "representative_occurrence": "ETH-D02-Q11",
+    "occurrence_ids": [
+      "ETH-D02-Q11",
+      "ETH-D04-Q15",
+      "ETH-D05-Q23"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.132172+00:00",
+    "source_question_hash": "d09869b8fd365da711fc48ec4c48b7bc46b0774d4c4ad5dd7baac700f7546fda",
+    "decision": "exclude_ambiguous",
+    "reason": "Recruitment-only payments differ from reasonable payment for actual research work; the unqualified payment option is not necessarily unethical.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Current course clarification or authoritative context followed by renewed exact-content review"
+  },
+  {
+    "group": "redacted-12",
+    "representative_occurrence": "ETH-D02-Q12",
+    "occurrence_ids": [
+      "ETH-D02-Q12"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.132200+00:00",
+    "source_question_hash": "9cd0683d144f9e8997b55401636a613ac7ff788e9783540813dd1b7dc3825607",
+    "decision": "exclude_incomplete",
+    "reason": "Essential question and options are obscured by an opaque rectangle. No reconstruction or guessed key.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Unredacted source"
+  },
+  {
+    "group": "stock",
+    "representative_occurrence": "ETH-D02-Q13",
+    "occurrence_ids": [
+      "ETH-D02-Q13"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.132286+00:00",
+    "source_question_hash": "43f8373f87b3172f43f711cd09aa2e8d80fc398f9d8aeaecb3a87ce509b2b6c6",
+    "canonical_id": "P43-CH2-CLIN-0007",
+    "decision": "accept_recorded",
+    "final_question": {
+      "type": "mcq",
+      "text": "In the teaching hospital, you see a colleague putting medical equipment from the stockroom into his bag. He says he wants to practise his skills and asks you not to tell anyone. What would you do?",
+      "options": [
+        "Do not report him to preserve your relationship",
+        "Do not report him to preserve the hospital’s reputation",
+        "Support him as consistent with professional standards",
+        "Explain to him the risks of this situation"
+      ],
+      "correctIndex": 3,
+      "explanation": "First address the colleague privately and explain the professional risks of taking hospital equipment without authorization. If the conduct is not resolved, escalate through the appropriate supervisor."
+    },
+    "final_answer": "Explain to him the risks of this situation",
+    "reviewed_content_hash": "5789e68c033f8dbdba99eba07f28d272bef94a6ee5ab0814881b66fc3a0268db",
+    "option_assessment": [
+      "Friendship does not excuse misconduct.",
+      "Protecting reputation does not excuse misconduct.",
+      "Supporting unauthorized removal conflicts with professional duties.",
+      "A private discussion is the appropriate first step among these choices."
+    ],
+    "evidence": [
+      {
+        "title": "WMA Medical Ethics Manual, third edition",
+        "url": "https://www.wma.net/what-we-do/education/medical-ethics-manual/ethics_manual_3rd_nov2015_en_1x1/",
+        "publication_or_update_date": "2015",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "printed pp. 91–92",
+        "claim": "Try direct discussion; escalate unresolved unsafe or unethical conduct."
+      }
+    ],
+    "historical_comparison": [
+      {
+        "occurrence_id": "ETH-D02-Q13",
+        "historical_index": 3,
+        "reviewed_source_index": 3,
+        "historical_comparison": "MATCH"
+      }
+    ],
+    "normalization_edits": {
+      "text": {
+        "before": "One day in the teaching hospital, you see one of your fellow colleagues putting medical equipment from the stock room into his bag. When you ask him about it, he said he only wants to practice his skills and not to tell anyone. What would you do?",
+        "after": "In the teaching hospital, you see a colleague putting medical equipment from the stockroom into his bag. He says he wants to practise his skills and asks you not to tell anyone. What would you do?"
+      },
+      "options": {
+        "before": [
+          "You should not report him to keep your colleague relationship.",
+          "You should not report him to keep the reputation of the hospital.",
+          "Support him keeping with the professional standards of a doctor.",
+          "You should explain for him the risks of this situation."
+        ],
+        "after": [
+          "Do not report him to preserve your relationship",
+          "Do not report him to preserve the hospital’s reputation",
+          "Support him as consistent with professional standards",
+          "Explain to him the risks of this situation"
+        ]
+      }
+    },
+    "reason": "All alternatives assessed for the final version; Editorial and contextual clarifications are declared in normalization_edits. The research-consent stem explicitly names the Egyptian rule; civil-malpractice and expert-evidence wording clarify scope; combined option labels are expanded to words.",
+    "uncertainty": "No independent adjudication; legal explanations use stated source scope, not a claim about every jurisdiction."
+  },
+  {
+    "group": "bedrock",
+    "representative_occurrence": "ETH-D02-Q15",
+    "occurrence_ids": [
+      "ETH-D02-Q15",
+      "ETH-D03-Q04"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.132585+00:00",
+    "source_question_hash": "19722fadbed5c52a5c76fa6ecf4456a9dbba5eca5116c111209f5f6ecb02e220",
+    "decision": "exclude_ambiguous",
+    "reason": "Bedrock is an undefined course slogan. The four principles have no universal ranking; supplied course material is insufficient to validate a unique answer.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Current course clarification or authoritative context followed by renewed exact-content review"
+  },
+  {
+    "group": "capacity",
+    "representative_occurrence": "ETH-D02-Q16",
+    "occurrence_ids": [
+      "ETH-D02-Q16"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.132637+00:00",
+    "source_question_hash": "766e0d54daaeb098e63782f5b214af9ce676dc8f9c618288519a35da8d106e0c",
+    "decision": "exclude_ambiguous",
+    "reason": "Voluntariness and decision-making capacity are different. Free choice is a consent requirement, not a determinant of cognitive capacity, creating more than one defensible exception.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Current course clarification or authoritative context followed by renewed exact-content review"
+  },
+  {
+    "group": "care",
+    "representative_occurrence": "ETH-D02-Q18",
+    "occurrence_ids": [
+      "ETH-D02-Q18"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.132657+00:00",
+    "source_question_hash": "253de1999005821d0c68e0c6b60572781b696a6fc1a6cda1e697d269f7cafd3b",
+    "canonical_id": "P43-CH1-CLIN-0003",
+    "decision": "accept_recorded",
+    "final_question": {
+      "type": "mcq",
+      "text": "Which one of the following is to be avoided in the treatment of a patient by the physician?",
+      "options": [
+        "Care for the patient in accordance with an objective standard of excellence.",
+        "Care for the patient to the best of his ability.",
+        "Act with the same degree of care as other physician of his status within scientific knowledge.",
+        "Act with a degree of care proportionate with the ability of the patient to pay."
+      ],
+      "correctIndex": 3,
+      "explanation": "Clinical care must meet professional standards without discrimination. A patient’s ability to pay may affect practical arrangements, but it must not determine how carefully the physician treats that patient."
+    },
+    "final_answer": "Act with a degree of care proportionate with the ability of the patient to pay.",
+    "reviewed_content_hash": "0a29d3ad3b73d5d561ec9a5d37e3d85777b71d6380fe6cabfbc21aefdb728322",
+    "option_assessment": [
+      "An objective professional standard is appropriate.",
+      "The physician should use their best ability.",
+      "The applicable professional standard is relevant.",
+      "Reducing care according to wealth violates equal treatment."
+    ],
+    "evidence": [
+      {
+        "title": "Egyptian Health Council: الميثاق الأخلاقي للطب البشري",
+        "url": "https://www.ehc.gov.eg/ar/ethics-medicine",
+        "publication_or_update_date": "Ministerial Decision 238/2003; current official webpage inspected",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "Articles 20 and 23",
+        "claim": "Equal care without discrimination; financial circumstances can inform fees and economical prescribing."
+      }
+    ],
+    "historical_comparison": [
+      {
+        "occurrence_id": "ETH-D02-Q18",
+        "historical_index": 3,
+        "reviewed_source_index": 3,
+        "historical_comparison": "MATCH"
+      }
+    ],
+    "normalization_edits": {},
+    "reason": "All alternatives assessed for the final version; Editorial and contextual clarifications are declared in normalization_edits. The research-consent stem explicitly names the Egyptian rule; civil-malpractice and expert-evidence wording clarify scope; combined option labels are expanded to words.",
+    "uncertainty": "No independent adjudication; legal explanations use stated source scope, not a claim about every jurisdiction."
+  },
+  {
+    "group": "conflict",
+    "representative_occurrence": "ETH-D02-Q19",
+    "occurrence_ids": [
+      "ETH-D02-Q19"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.132711+00:00",
+    "source_question_hash": "ec0c6f639bd369e169e69adb8661139ebb3f70ddbda58e38d97d8e6faddfd2e2",
+    "canonical_id": "P43-CH2-CLIN-0008",
+    "decision": "accept_recorded",
+    "final_question": {
+      "type": "mcq",
+      "text": "If a doctor acts as a promoter for a pharmaceutical company, this is considered:",
+      "options": [
+        "Conflict of interest.",
+        "Autonomy.",
+        "Beneficence.",
+        "Non-Maleficence."
+      ],
+      "correctIndex": 0,
+      "explanation": "Promoting a company’s products can place commercial interests in conflict with duties to patients. Egyptian medical ethics rules prohibit allowing a doctor’s name to be used to promote medicines commercially."
+    },
+    "final_answer": "Conflict of interest.",
+    "reviewed_content_hash": "368d7b49db606b095b0eae0cce0296409d6c86503bd74edb66e0de16fd61c5af",
+    "option_assessment": [
+      "Commercial promotion creates competing interests.",
+      "Patient self-determination is not commercial promotion.",
+      "Promotion does not establish patient benefit.",
+      "Avoidance of harm is not the name for competing commercial duties."
+    ],
+    "evidence": [
+      {
+        "title": "Egyptian Health Council: الميثاق الأخلاقي للطب البشري",
+        "url": "https://www.ehc.gov.eg/ar/ethics-medicine",
+        "publication_or_update_date": "Ministerial Decision 238/2003; current official webpage inspected",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "Article 8(b) and Article 18",
+        "claim": "Commercial drug promotion using a doctor’s name and personal financial conflicts are prohibited."
+      }
+    ],
+    "historical_comparison": [
+      {
+        "occurrence_id": "ETH-D02-Q19",
+        "historical_index": 0,
+        "reviewed_source_index": 0,
+        "historical_comparison": "MATCH"
+      }
+    ],
+    "normalization_edits": {
+      "text": {
+        "before": "If the doctor acts as promotor for a pharmaceutical company, this is considered as:",
+        "after": "If a doctor acts as a promoter for a pharmaceutical company, this is considered:"
+      }
+    },
+    "reason": "All alternatives assessed for the final version; Editorial and contextual clarifications are declared in normalization_edits. The research-consent stem explicitly names the Egyptian rule; civil-malpractice and expert-evidence wording clarify scope; combined option labels are expanded to words.",
+    "uncertainty": "No independent adjudication; legal explanations use stated source scope, not a claim about every jurisdiction."
+  },
+  {
+    "group": "keeping",
+    "representative_occurrence": "ETH-D02-Q20",
+    "occurrence_ids": [
+      "ETH-D02-Q20",
+      "ETH-D03-Q02"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.132743+00:00",
+    "source_question_hash": "eb2bd8b03c5971bcba4e1917df37e976263a1a5f94ad0e76ccd6dd46ad7f4200",
+    "canonical_id": "P43-CH2-CLIN-0009",
+    "decision": "accept_recorded",
+    "final_question": {
+      "type": "mcq",
+      "text": "Keeping patients’ information confidential is called:",
+      "options": [
+        "Beneficence",
+        "Confidentiality",
+        "Maleficence",
+        "autonomy"
+      ],
+      "correctIndex": 1,
+      "explanation": "Confidentiality is the duty to safeguard information entrusted to a healthcare professional and disclose it only with appropriate consent or a justified exception."
+    },
+    "final_answer": "Confidentiality",
+    "reviewed_content_hash": "c79d7bedea27bc124410f130f7f8ab3347836773053a9f5d842a242211fb6027",
+    "option_assessment": [
+      "Beneficence concerns promoting welfare.",
+      "Safeguarding entrusted information is confidentiality.",
+      "Maleficence concerns harm.",
+      "Autonomy concerns self-determination."
+    ],
+    "evidence": [
+      {
+        "title": "WMA International Code of Medical Ethics",
+        "url": "https://www.wma.net/policies-post/wma-international-code-of-medical-ethics/",
+        "publication_or_update_date": "2022-10",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "paragraphs 13–14 and 22",
+        "claim": "Distinguishes patient choice, avoiding harm and protection of personal information."
+      }
+    ],
+    "historical_comparison": [
+      {
+        "occurrence_id": "ETH-D02-Q20",
+        "historical_index": 1,
+        "reviewed_source_index": 1,
+        "historical_comparison": "MATCH"
+      },
+      {
+        "occurrence_id": "ETH-D03-Q02",
+        "historical_index": 1,
+        "reviewed_source_index": 1,
+        "historical_comparison": "MATCH"
+      }
+    ],
+    "normalization_edits": {
+      "text": {
+        "before": "Keeping the patient's information is called",
+        "after": "Keeping patients’ information confidential is called:"
+      }
+    },
+    "reason": "All alternatives assessed for the final version; Editorial and contextual clarifications are declared in normalization_edits. The research-consent stem explicitly names the Egyptian rule; civil-malpractice and expert-evidence wording clarify scope; combined option labels are expanded to words.",
+    "uncertainty": "No independent adjudication; legal explanations use stated source scope, not a claim about every jurisdiction."
+  },
+  {
+    "group": "adult",
+    "representative_occurrence": "ETH-D02-Q21",
+    "occurrence_ids": [
+      "ETH-D02-Q21",
+      "ETH-D03-Q01"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.132956+00:00",
+    "source_question_hash": "3bb4ca18efbd1a97813536052ad951ef12f5ad3392534c2845fe2b54647fe2f6",
+    "canonical_id": "P43-CH2-CLIN-0010",
+    "decision": "accept_recorded",
+    "final_question": {
+      "type": "mcq",
+      "text": "For valid consent, the person should be:",
+      "options": [
+        "Adult",
+        "Forced",
+        "Competent",
+        "Both adult and competent"
+      ],
+      "correctIndex": 3,
+      "explanation": "For an adult giving their own consent, both legal adulthood and decision-making competence are relevant; consent must also be voluntary and informed. Being forced is incompatible with valid consent."
+    },
+    "final_answer": "Both adult and competent",
+    "reviewed_content_hash": "6ab0394460f8fc9d68a1358d65d0f13f53f925c0527c767da8937ad35014cfb7",
+    "option_assessment": [
+      "Adulthood alone does not establish competence.",
+      "Coercion undermines voluntary consent.",
+      "Competence is necessary, but adulthood is also relevant to the ordinary adult rule.",
+      "Both A and C give the intended adult-consent requirements."
+    ],
+    "evidence": [
+      {
+        "title": "WMA Declaration of Lisbon on the Rights of the Patient",
+        "url": "https://www.wma.net/policies-post/wma-declaration-of-lisbon-on-the-rights-of-the-patient/",
+        "publication_or_update_date": null,
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "Principle 3: Right to self-determination",
+        "claim": "A mentally competent adult gives or withholds consent."
+      },
+      {
+        "title": "WMA International Code of Medical Ethics",
+        "url": "https://www.wma.net/policies-post/wma-international-code-of-medical-ethics/",
+        "publication_or_update_date": "2022-10",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "paragraphs 15–16",
+        "claim": "Informed voluntary consent; representatives where capacity is limited."
+      }
+    ],
+    "historical_comparison": [
+      {
+        "occurrence_id": "ETH-D02-Q21",
+        "historical_index": 3,
+        "reviewed_source_index": 3,
+        "historical_comparison": "MATCH"
+      },
+      {
+        "occurrence_id": "ETH-D03-Q01",
+        "historical_index": 3,
+        "reviewed_source_index": 3,
+        "historical_comparison": "MATCH"
+      }
+    ],
+    "normalization_edits": {
+      "text": {
+        "before": "According to valid consent, the person should be",
+        "after": "For valid consent, the person should be:"
+      },
+      "options": {
+        "before": [
+          "Adult",
+          "Forced",
+          "Competent",
+          "A&C"
+        ],
+        "after": [
+          "Adult",
+          "Forced",
+          "Competent",
+          "Both adult and competent"
+        ]
+      }
+    },
+    "reason": "All alternatives assessed for the final version; Editorial and contextual clarifications are declared in normalization_edits. The research-consent stem explicitly names the Egyptian rule; civil-malpractice and expert-evidence wording clarify scope; combined option labels are expanded to words.",
+    "uncertainty": "No independent adjudication; legal explanations use stated source scope, not a claim about every jurisdiction."
+  },
+  {
+    "group": "invalid",
+    "representative_occurrence": "ETH-D03-Q03",
+    "occurrence_ids": [
+      "ETH-D03-Q03"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.132995+00:00",
+    "source_question_hash": "da060e708e9703c8f5bb434ea9b7ae3aed3c8e9d1c7afe6e8ab0f0590c2c73b6",
+    "canonical_id": "P43-CH2-CLIN-0011",
+    "decision": "correct_answer",
+    "final_question": {
+      "type": "mcq",
+      "text": "Which characteristic makes a person’s consent invalid?",
+      "options": [
+        "Cannot read or write",
+        "Is under threat",
+        "Is competent",
+        "Both inability to read or write and being under threat"
+      ],
+      "correctIndex": 1,
+      "explanation": "Consent obtained under threat is not voluntary. Illiteracy alone does not invalidate consent: explain the information in an accessible way and check understanding."
+    },
+    "final_answer": "Is under threat",
+    "reviewed_content_hash": "517eb75f33cb19dce7d362b8db5a0f332acead249458a7b5067a310a93f86daf",
+    "option_assessment": [
+      "Inability to read or write does not establish incapacity.",
+      "Threat compromises voluntariness.",
+      "Competence supports valid consent.",
+      "The combination is wrong because A is not inherently invalid."
+    ],
+    "evidence": [
+      {
+        "title": "GMC: Supporting patients’ decision making",
+        "url": "https://www.gmc-uk.org/professional-standards/the-professional-standards/decision-making-and-consent/the-dialogue-leading-to-a-decision-continued-1",
+        "publication_or_update_date": null,
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "paragraphs 27–30",
+        "claim": "Use accessible formats and check understanding."
+      },
+      {
+        "title": "WMA International Code of Medical Ethics",
+        "url": "https://www.wma.net/policies-post/wma-international-code-of-medical-ethics/",
+        "publication_or_update_date": "2022-10",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "paragraph 15",
+        "claim": "Consent must be voluntary."
+      }
+    ],
+    "historical_comparison": [
+      {
+        "occurrence_id": "ETH-D03-Q03",
+        "historical_index": 3,
+        "reviewed_source_index": 1,
+        "historical_comparison": "MISMATCH"
+      }
+    ],
+    "normalization_edits": {
+      "text": {
+        "before": "Which of the following consents are invalid, if people:",
+        "after": "Which characteristic makes a person’s consent invalid?"
+      },
+      "options": {
+        "before": [
+          "Can't write or read",
+          "Are under threat",
+          "Competent",
+          "A&B"
+        ],
+        "after": [
+          "Cannot read or write",
+          "Is under threat",
+          "Is competent",
+          "Both inability to read or write and being under threat"
+        ]
+      }
+    },
+    "reason": "All alternatives assessed for the final version; Editorial and contextual clarifications are declared in normalization_edits. The research-consent stem explicitly names the Egyptian rule; civil-malpractice and expert-evidence wording clarify scope; combined option labels are expanded to words.",
+    "uncertainty": "No independent adjudication; legal explanations use stated source scope, not a claim about every jurisdiction."
+  },
+  {
+    "group": "terminate",
+    "representative_occurrence": "ETH-D04-Q07",
+    "occurrence_ids": [
+      "ETH-D04-Q07",
+      "ETH-D05-Q15"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.133026+00:00",
+    "source_question_hash": "6241e134ccec2a24b13bcb11bf686b7d559498c5f502974f37c98986befec7d2",
+    "canonical_id": "P43-CH2-CLIN-0012",
+    "decision": "accept_recorded",
+    "final_question": {
+      "type": "mcq",
+      "text": "A physician cannot terminate the relationship with a patient if:",
+      "options": [
+        "The patient refused to pay for the physician's service",
+        "The patient refused to comply to physician's instructions",
+        "The patient needs emergency treatment.",
+        "The physician is moving or stopping practice"
+      ],
+      "correctIndex": 2,
+      "explanation": "A physician must provide urgent care and must not abandon a patient who needs emergency treatment. When ending nonurgent care, continuity arrangements remain necessary."
+    },
+    "final_answer": "The patient needs emergency treatment.",
+    "reviewed_content_hash": "b9d46d13308a7c1e73ec6eb5739f1e74e54d152a6c960294adb1c52fa01b17f0",
+    "option_assessment": [
+      "Nonpayment does not override an emergency duty, but can be addressed outside urgent care.",
+      "Noncompliance may lead to a managed nonurgent termination.",
+      "Emergency need prevents abandonment.",
+      "Stopping practice requires proper continuity arrangements."
+    ],
+    "evidence": [
+      {
+        "title": "Egyptian Health Council: الميثاق الأخلاقي للطب البشري",
+        "url": "https://www.ehc.gov.eg/ar/ethics-medicine",
+        "publication_or_update_date": "Ministerial Decision 238/2003; current official webpage inspected",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "Articles 24, 26 and 28",
+        "claim": "Urgent care cannot be refused; provide handover when ceasing care."
+      }
+    ],
+    "historical_comparison": [
+      {
+        "occurrence_id": "ETH-D04-Q07",
+        "historical_index": 2,
+        "reviewed_source_index": 2,
+        "historical_comparison": "MATCH"
+      },
+      {
+        "occurrence_id": "ETH-D05-Q15",
+        "historical_index": null,
+        "reviewed_source_index": 2,
+        "historical_comparison": "NO_HISTORICAL_ANSWER"
+      }
+    ],
+    "normalization_edits": {
+      "text": {
+        "before": "Physician cannot terminate the relationship with his patients if:",
+        "after": "A physician cannot terminate the relationship with a patient if:"
+      }
+    },
+    "reason": "All alternatives assessed for the final version; Editorial and contextual clarifications are declared in normalization_edits. The research-consent stem explicitly names the Egyptian rule; civil-malpractice and expert-evidence wording clarify scope; combined option labels are expanded to words.",
+    "uncertainty": "No independent adjudication; legal explanations use stated source scope, not a claim about every jurisdiction."
+  },
+  {
+    "group": "death-b",
+    "representative_occurrence": "ETH-D04-Q08",
+    "occurrence_ids": [
+      "ETH-D04-Q08",
+      "ETH-D05-Q16"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.133068+00:00",
+    "source_question_hash": "2245e51be7b6466b4b467b7d5b659c0c46f45bf2987f4340abde3255c553fde6",
+    "decision": "exclude_ambiguous",
+    "reason": "The stem omits irreversibility and the applicable Egyptian death determination context; no controlling statute verified for its historical key.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Current course clarification or authoritative context followed by renewed exact-content review"
+  },
+  {
+    "group": "abortion",
+    "representative_occurrence": "ETH-D04-Q10",
+    "occurrence_ids": [
+      "ETH-D04-Q10",
+      "ETH-D05-Q18"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.133078+00:00",
+    "source_question_hash": "382ef2f5fd3c51814fef26235fccfd67b2b81bb74f7ed53b1057765838a9e067",
+    "canonical_id": "P43-CH3-CLIN-0002",
+    "decision": "accept_recorded",
+    "final_question": {
+      "type": "mcq",
+      "text": "According to Egyptian law, abortion is legal and ethical in which of the following conditions?",
+      "options": [
+        "If there is a high risk that the child will be born with cleft lip and palate",
+        "If there is a high risk that the child will be born with mental retardation.",
+        "If there is high risk for the mother to have severe complications with late pregnancy.",
+        "If the mother wish to do an abortion procedure for financial and social reasons."
+      ],
+      "correctIndex": 2,
+      "explanation": "Egyptian medical ethics rules permit abortion for medical indications threatening the mother’s health, with the required specialist certification or an emergency lifesaving report. The other listed reasons alone do not meet that rule."
+    },
+    "final_answer": "If there is high risk for the mother to have severe complications with late pregnancy.",
+    "reviewed_content_hash": "430e64795543a19b6aee76323f6ea16fe454d8dfb6f16cae8ff1361b7b044157",
+    "option_assessment": [
+      "A fetal cleft alone is not the stated maternal-health indication.",
+      "Fetal disability alone is not the stated maternal-health indication.",
+      "Severe maternal complications can meet the medical indication.",
+      "Social or financial preference alone is not the stated exception."
+    ],
+    "evidence": [
+      {
+        "title": "Egyptian Health Council: الميثاق الأخلاقي للطب البشري",
+        "url": "https://www.ehc.gov.eg/ar/ethics-medicine",
+        "publication_or_update_date": "Ministerial Decision 238/2003; current official webpage inspected",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "Article 29",
+        "claim": "Maternal-health threat requires two specialists’ written certification; lifesaving emergencies require a detailed report."
+      }
+    ],
+    "historical_comparison": [
+      {
+        "occurrence_id": "ETH-D04-Q10",
+        "historical_index": 2,
+        "reviewed_source_index": 2,
+        "historical_comparison": "MATCH"
+      },
+      {
+        "occurrence_id": "ETH-D05-Q18",
+        "historical_index": null,
+        "reviewed_source_index": 2,
+        "historical_comparison": "NO_HISTORICAL_ANSWER"
+      }
+    ],
+    "normalization_edits": {
+      "text": {
+        "before": "According to the Egyptian law, abortion is legal and ethical in the following condition:",
+        "after": "According to Egyptian law, abortion is legal and ethical in which of the following conditions?"
+      }
+    },
+    "reason": "All alternatives assessed for the final version; Editorial and contextual clarifications are declared in normalization_edits. The research-consent stem explicitly names the Egyptian rule; civil-malpractice and expert-evidence wording clarify scope; combined option labels are expanded to words.",
+    "uncertainty": "No independent adjudication; legal explanations use stated source scope, not a claim about every jurisdiction."
+  },
+  {
+    "group": "somatic",
+    "representative_occurrence": "ETH-D04-Q11",
+    "occurrence_ids": [
+      "ETH-D04-Q11",
+      "ETH-D05-Q19"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.133114+00:00",
+    "source_question_hash": "bc4e3eac131c8be4312928c438d9f17cfc48409b7b2a837ea517782161ca5f65",
+    "canonical_id": "P43-CH3-CLIN-0003",
+    "decision": "accept_recorded",
+    "final_question": {
+      "type": "mcq",
+      "text": "Somatic cell gene therapy:",
+      "options": [
+        "Aims at eventually making asexual reproduction of an organism.",
+        "Faces greater moral and legal limitations compared to germ-line gene therapy.",
+        "Is potentially less risky than germ-line gene therapy.",
+        "Affects future generations."
+      ],
+      "correctIndex": 2,
+      "explanation": "Somatic gene therapy targets the recipient’s nonreproductive cells. Unlike germline changes, its intended genetic alteration is not inherited by future generations, reducing the intergenerational concern."
+    },
+    "final_answer": "Is potentially less risky than germ-line gene therapy.",
+    "reviewed_content_hash": "c9b2a236ca542e3982027fd7c9972c6db09655551b61c5b8f9460be05563e16e",
+    "option_assessment": [
+      "Asexual reproduction is cloning, not somatic therapy.",
+      "Germline editing raises greater inherited-risk concerns.",
+      "Potentially less risky refers to avoiding heritable changes.",
+      "Somatic changes are not intended to pass to descendants."
+    ],
+    "evidence": [
+      {
+        "title": "NHGRI: How is genome editing used?",
+        "url": "https://www.genome.gov/about-genomics/policy-issues/Genome-Editing/How-genome-editing-is-used",
+        "publication_or_update_date": "2017-08-03",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "Types of Gene Therapy; Safety",
+        "claim": "Somatic therapy targets nonreproductive cells, while germline changes can affect descendants."
+      }
+    ],
+    "historical_comparison": [
+      {
+        "occurrence_id": "ETH-D04-Q11",
+        "historical_index": 2,
+        "reviewed_source_index": 2,
+        "historical_comparison": "MATCH"
+      },
+      {
+        "occurrence_id": "ETH-D05-Q19",
+        "historical_index": null,
+        "reviewed_source_index": 2,
+        "historical_comparison": "NO_HISTORICAL_ANSWER"
+      }
+    ],
+    "normalization_edits": {},
+    "reason": "All alternatives assessed for the final version; Editorial and contextual clarifications are declared in normalization_edits. The research-consent stem explicitly names the Egyptian rule; civil-malpractice and expert-evidence wording clarify scope; combined option labels are expanded to words.",
+    "uncertainty": "No independent adjudication; legal explanations use stated source scope, not a claim about every jurisdiction."
+  },
+  {
+    "group": "falsify",
+    "representative_occurrence": "ETH-D04-Q13",
+    "occurrence_ids": [
+      "ETH-D04-Q13",
+      "ETH-D05-Q21"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.133140+00:00",
+    "source_question_hash": "f7031883b0548a8df6d9305b2ca369c2f96971be552c69beee3ab653f36d0869",
+    "canonical_id": "P43-CH3-CLIN-0004",
+    "decision": "accept_recorded",
+    "final_question": {
+      "type": "mcq",
+      "text": "A doctor changes laboratory results of his research to make the findings more impressive and significant. This is termed:",
+      "options": [
+        "Plagiarism",
+        "Fabrication",
+        "Falsification",
+        "Sabotage"
+      ],
+      "correctIndex": 2,
+      "explanation": "Changing real laboratory results so that the research record misrepresents the findings is falsification. Fabrication means inventing data, while plagiarism means appropriating another person’s work."
+    },
+    "final_answer": "Falsification",
+    "reviewed_content_hash": "1e0ec277f321aeebecc7e5c675c273e3d1d95e01b1a8f8572677f8678eae2843",
+    "option_assessment": [
+      "No appropriation of another person’s work is described.",
+      "The stem describes alteration of existing results, not invented data.",
+      "Changing data to misrepresent research is falsification.",
+      "Sabotage is not the defined data-alteration category."
+    ],
+    "evidence": [
+      {
+        "title": "ORI: Definition of Research Misconduct",
+        "url": "https://ori.hhs.gov/definition-research-misconduct",
+        "publication_or_update_date": null,
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "Definitions: Fabrication, Falsification and Plagiarism",
+        "claim": "Falsification includes changing data or results so the research record is inaccurate."
+      }
+    ],
+    "historical_comparison": [
+      {
+        "occurrence_id": "ETH-D04-Q13",
+        "historical_index": 2,
+        "reviewed_source_index": 2,
+        "historical_comparison": "MATCH"
+      },
+      {
+        "occurrence_id": "ETH-D05-Q21",
+        "historical_index": null,
+        "reviewed_source_index": 2,
+        "historical_comparison": "NO_HISTORICAL_ANSWER"
+      }
+    ],
+    "normalization_edits": {
+      "text": {
+        "before": "A doctor changed lab results of his research work to make it more impressive and significant, this is can be termed as:",
+        "after": "A doctor changes laboratory results of his research to make the findings more impressive and significant. This is termed:"
+      }
+    },
+    "reason": "All alternatives assessed for the final version; Editorial and contextual clarifications are declared in normalization_edits. The research-consent stem explicitly names the Egyptian rule; civil-malpractice and expert-evidence wording clarify scope; combined option labels are expanded to words.",
+    "uncertainty": "No independent adjudication; legal explanations use stated source scope, not a claim about every jurisdiction."
+  },
+  {
+    "group": "opioid",
+    "representative_occurrence": "ETH-D04-Q14",
+    "occurrence_ids": [
+      "ETH-D04-Q14",
+      "ETH-D05-Q22"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.133165+00:00",
+    "source_question_hash": "3681c8c078ff5f64703a84e9ec3edc30d9fd227acca735280bc220d9a5f4ea51",
+    "canonical_id": "P43-CH3-CLIN-0005",
+    "decision": "accept_recorded",
+    "final_question": {
+      "type": "mcq",
+      "text": "A terminally ill cancer patient begged you to end his life by using a large dose of opioids, what should you do?",
+      "options": [
+        "I should help him to die in peace.",
+        "I can advise him to the lethal dose that will end his life shortly.",
+        "I should respect patient's autonomy.",
+        "It's not ethical or legal to help him to die."
+      ],
+      "correctIndex": 3,
+      "explanation": "Intentionally giving a lethal opioid dose to cause death is prohibited under Egyptian medical ethics rules. Respect for autonomy does not authorize intentional killing."
+    },
+    "final_answer": "It's not ethical or legal to help him to die.",
+    "reviewed_content_hash": "56d093122239284458d352d708bc49be5507cbc790cca9d5edfdf1e9651c6ae9",
+    "option_assessment": [
+      "In the context of the requested lethal dose, this would intentionally end life.",
+      "Giving lethal-dose advice would facilitate the requested death.",
+      "Autonomy does not override the prohibition.",
+      "Declining the intentional killing is the appropriate answer."
+    ],
+    "evidence": [
+      {
+        "title": "Egyptian Health Council: الميثاق الأخلاقي للطب البشري",
+        "url": "https://www.ehc.gov.eg/ar/ethics-medicine",
+        "publication_or_update_date": "Ministerial Decision 238/2003; current official webpage inspected",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "Article 36",
+        "claim": "Intentional destruction of life on grounds of mercy is prohibited."
+      }
+    ],
+    "historical_comparison": [
+      {
+        "occurrence_id": "ETH-D04-Q14",
+        "historical_index": 3,
+        "reviewed_source_index": 3,
+        "historical_comparison": "MATCH"
+      },
+      {
+        "occurrence_id": "ETH-D05-Q22",
+        "historical_index": null,
+        "reviewed_source_index": 3,
+        "historical_comparison": "NO_HISTORICAL_ANSWER"
+      }
+    ],
+    "normalization_edits": {},
+    "reason": "All alternatives assessed for the final version; Editorial and contextual clarifications are declared in normalization_edits. The research-consent stem explicitly names the Egyptian rule; civil-malpractice and expert-evidence wording clarify scope; combined option labels are expanded to words.",
+    "uncertainty": "No independent adjudication; legal explanations use stated source scope, not a claim about every jurisdiction."
+  },
+  {
+    "group": "valid",
+    "representative_occurrence": "ETH-D05-Q01",
+    "occurrence_ids": [
+      "ETH-D05-Q01"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.133317+00:00",
+    "source_question_hash": "6689d3e9ef688a34320db22dca909aaa750abce706279b555f1cc466520a0ad2",
+    "canonical_id": "P43-CH2-CLIN-0013",
+    "decision": "accept_derived",
+    "final_question": {
+      "type": "mcq",
+      "text": "A valid consent is obtained from a person who is:",
+      "options": [
+        "Under threat",
+        "14-year-old",
+        "Competent",
+        "Coerced"
+      ],
+      "correctIndex": 2,
+      "explanation": "The person giving consent must be able to understand and decide, and the decision must be voluntary. Threats and coercion undermine consent; a minor’s legal authority cannot be assumed from age alone."
+    },
+    "final_answer": "Competent",
+    "reviewed_content_hash": "f655168bfe9043425316d348d13d48950efdadd85c7d52623e36e49c7cd00864",
+    "option_assessment": [
+      "Threat undermines voluntary choice.",
+      "Age 14 alone does not establish independent legal authority.",
+      "Competence is the valid characteristic offered.",
+      "Coercion undermines voluntary choice."
+    ],
+    "evidence": [
+      {
+        "title": "WMA International Code of Medical Ethics",
+        "url": "https://www.wma.net/policies-post/wma-international-code-of-medical-ethics/",
+        "publication_or_update_date": "2022-10",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "paragraphs 15–16",
+        "claim": "Informed voluntary consent and appropriate representatives for minors or limited capacity."
+      },
+      {
+        "title": "Egyptian Health Council: الميثاق الأخلاقي للطب البشري",
+        "url": "https://www.ehc.gov.eg/ar/ethics-medicine",
+        "publication_or_update_date": "Ministerial Decision 238/2003; current official webpage inspected",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "Article 28",
+        "claim": "Consent from the patient or a legal representative if not legally capable."
+      }
+    ],
+    "historical_comparison": [
+      {
+        "occurrence_id": "ETH-D05-Q01",
+        "historical_index": null,
+        "reviewed_source_index": 2,
+        "historical_comparison": "NO_HISTORICAL_ANSWER"
+      }
+    ],
+    "normalization_edits": {
+      "text": {
+        "before": "A valid consent is obtained from a person who is:",
+        "after": "A valid consent is obtained from a person who is:"
+      }
+    },
+    "reason": "All alternatives assessed for the final version; Editorial and contextual clarifications are declared in normalization_edits. The research-consent stem explicitly names the Egyptian rule; civil-malpractice and expert-evidence wording clarify scope; combined option labels are expanded to words.",
+    "uncertainty": "No independent adjudication; legal explanations use stated source scope, not a claim about every jurisdiction."
+  },
+  {
+    "group": "privacy",
+    "representative_occurrence": "ETH-D05-Q02",
+    "occurrence_ids": [
+      "ETH-D05-Q02"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.133347+00:00",
+    "source_question_hash": "ed73d18ea0a6b7660d149aa8cdc8702575413c005b9964806a29300c264c9e3c",
+    "canonical_id": "P43-CH1-CLIN-0004",
+    "decision": "accept_derived",
+    "final_question": {
+      "type": "mcq",
+      "text": "When a doctor hides facial features in a patient’s photograph presented at a medical conference, which ethical principle is being respected?",
+      "options": [
+        "Beneficence",
+        "Privacy",
+        "Nonmaleficence.",
+        "Autonomy"
+      ],
+      "correctIndex": 1,
+      "explanation": "Concealing identifying facial features aims to protect the patient’s privacy. Other details may still identify the patient, so hiding the face alone does not guarantee anonymity."
+    },
+    "final_answer": "Privacy",
+    "reviewed_content_hash": "8a5eb422c0e0bff16d3e91949e69a85d58cf73f13dbca46d0715fb44af1e91f2",
+    "option_assessment": [
+      "Promoting welfare is not the specific purpose described.",
+      "Protecting identity expresses privacy.",
+      "Avoiding harm is broader than the identifying-feature issue.",
+      "No treatment choice is described."
+    ],
+    "evidence": [
+      {
+        "title": "GMC: Working on the ward, student scenarios",
+        "url": "https://www.gmc-uk.org/education/standards-guidance-and-curricula/guidance/student-professionalism-and-ftp/working-on-the-ward",
+        "publication_or_update_date": null,
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "Sharing reflections: anonymisation",
+        "claim": "Identity can be inferred from combinations of details even without a name or face."
+      },
+      {
+        "title": "GMC: Disclosing for education and training purposes",
+        "url": "https://www.gmc-uk.org/professional-standards/the-professional-standards/confidentiality---disclosing-for-education-and-training-purposes/disclosing-for-education-and-training-purposes",
+        "publication_or_update_date": null,
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "paragraph 1",
+        "claim": "Use anonymised information wherever practicable for education."
+      }
+    ],
+    "historical_comparison": [
+      {
+        "occurrence_id": "ETH-D05-Q02",
+        "historical_index": null,
+        "reviewed_source_index": 1,
+        "historical_comparison": "NO_HISTORICAL_ANSWER"
+      }
+    ],
+    "normalization_edits": {
+      "text": {
+        "before": "When the doctor hides facial features in a patient's photo when he presented it in a medical conference, he respects the ethical principle of:",
+        "after": "When a doctor hides facial features in a patient’s photograph presented at a medical conference, which ethical principle is being respected?"
+      }
+    },
+    "reason": "All alternatives assessed for the final version; Editorial and contextual clarifications are declared in normalization_edits. The research-consent stem explicitly names the Egyptian rule; civil-malpractice and expert-evidence wording clarify scope; combined option labels are expanded to words.",
+    "uncertainty": "No independent adjudication; legal explanations use stated source scope, not a claim about every jurisdiction."
+  },
+  {
+    "group": "studentconf",
+    "representative_occurrence": "ETH-D05-Q03",
+    "occurrence_ids": [
+      "ETH-D05-Q03"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.133373+00:00",
+    "source_question_hash": "49e381125e72c399d792a3f92a6c97dd899354fe66bb9fdd545208af0949971a",
+    "canonical_id": "P43-CH2-CLIN-0014",
+    "decision": "accept_derived",
+    "final_question": {
+      "type": "mcq",
+      "text": "A medical student during clinical training sessions:",
+      "options": [
+        "Can present himself to the patients as a doctor",
+        "Can do any procedure without supervision from the senior staff.",
+        "Has no obligations toward the patients as he is still a learner.",
+        "Has no right to reveal the patient's information without his consent"
+      ],
+      "correctIndex": 3,
+      "explanation": "Students share professional confidentiality duties. They must identify themselves honestly and work within appropriate supervision; learner status does not remove obligations to patients."
+    },
+    "final_answer": "Has no right to reveal the patient's information without his consent",
+    "reviewed_content_hash": "a8cfebe60df84a648f18f1f06870657f9aa90dc880d19ae536eff2be98ea5fd7",
+    "option_assessment": [
+      "A student must not misrepresent their status.",
+      "Competence and appropriate supervision are required.",
+      "Learner status does not remove professional duties.",
+      "Patient information must remain confidential absent consent or a justified exception."
+    ],
+    "evidence": [
+      {
+        "title": "GMC: Working on the ward, student scenarios",
+        "url": "https://www.gmc-uk.org/education/standards-guidance-and-curricula/guidance/student-professionalism-and-ftp/working-on-the-ward",
+        "publication_or_update_date": null,
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "Carrying out procedures",
+        "claim": "Identify as a student, use appropriate experience and supervision."
+      },
+      {
+        "title": "GMC: Disclosing for education and training purposes",
+        "url": "https://www.gmc-uk.org/professional-standards/the-professional-standards/confidentiality---disclosing-for-education-and-training-purposes/disclosing-for-education-and-training-purposes",
+        "publication_or_update_date": null,
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "paragraphs 1–6",
+        "claim": "Confidentiality safeguards apply to education and trainees."
+      }
+    ],
+    "historical_comparison": [
+      {
+        "occurrence_id": "ETH-D05-Q03",
+        "historical_index": null,
+        "reviewed_source_index": 3,
+        "historical_comparison": "NO_HISTORICAL_ANSWER"
+      }
+    ],
+    "normalization_edits": {
+      "text": {
+        "before": "A medical student during clinical training sessions:",
+        "after": "A medical student during clinical training sessions:"
+      }
+    },
+    "reason": "All alternatives assessed for the final version; Editorial and contextual clarifications are declared in normalization_edits. The research-consent stem explicitly names the Egyptian rule; civil-malpractice and expert-evidence wording clarify scope; combined option labels are expanded to words.",
+    "uncertainty": "No independent adjudication; legal explanations use stated source scope, not a claim about every jurisdiction."
+  },
+  {
+    "group": "breachallowed",
+    "representative_occurrence": "ETH-D05-Q04",
+    "occurrence_ids": [
+      "ETH-D05-Q04"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.133482+00:00",
+    "source_question_hash": "9d94fc9ceb7f61b97ee5e73328a93f8f67d766fee9c42f916b76e08efd0c9d88",
+    "decision": "exclude_ambiguous",
+    "reason": "HIV disclosure to a fiancée requires serious-risk, consent and proportionality conditions; neither a positive test nor relationship status alone justifies an unconditional answer.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Current course clarification or authoritative context followed by renewed exact-content review"
+  },
+  {
+    "group": "studentexam",
+    "representative_occurrence": "ETH-D05-Q05",
+    "occurrence_ids": [
+      "ETH-D05-Q05"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.133510+00:00",
+    "source_question_hash": "c035561bd6fb98f001c78d992e256941070dd4c34a3960c569e500440f48d054",
+    "canonical_id": "P43-CH2-CLIN-0015",
+    "decision": "accept_derived",
+    "final_question": {
+      "type": "mcq",
+      "text": "As a medical student, you can:",
+      "options": [
+        "Reveal the patient's information without his consent.",
+        "Present yourself to the patients as a doctor",
+        "Prescribe medications to the patients in the hospital's clinic independently.",
+        "Do medical examination under supervision from a senior staff."
+      ],
+      "correctIndex": 3,
+      "explanation": "A medical student may examine a patient with the patient’s agreement and appropriate supervision. The student must disclose their status and cannot prescribe independently as a qualified physician."
+    },
+    "final_answer": "Do medical examination under supervision from a senior staff.",
+    "reviewed_content_hash": "c971669fe2bab962925507e0344cbf23c570ed6c2c6a0df4b22224f934a3d9d4",
+    "option_assessment": [
+      "Disclosure needs consent or an appropriate exception.",
+      "Misrepresenting qualification is unacceptable.",
+      "Independent prescribing exceeds the student role.",
+      "Supervised examination is appropriate with consent."
+    ],
+    "evidence": [
+      {
+        "title": "GMC: Working on the ward, student scenarios",
+        "url": "https://www.gmc-uk.org/education/standards-guidance-and-curricula/guidance/student-professionalism-and-ftp/working-on-the-ward",
+        "publication_or_update_date": null,
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "Carrying out procedures, paragraphs citing AGMP 7",
+        "claim": "Students should identify their role and treat or advise only with appropriate supervision."
+      }
+    ],
+    "historical_comparison": [
+      {
+        "occurrence_id": "ETH-D05-Q05",
+        "historical_index": null,
+        "reviewed_source_index": 3,
+        "historical_comparison": "NO_HISTORICAL_ANSWER"
+      }
+    ],
+    "normalization_edits": {},
+    "reason": "All alternatives assessed for the final version; Editorial and contextual clarifications are declared in normalization_edits. The research-consent stem explicitly names the Egyptian rule; civil-malpractice and expert-evidence wording clarify scope; combined option labels are expanded to words.",
+    "uncertainty": "No independent adjudication; legal explanations use stated source scope, not a claim about every jurisdiction."
+  },
+  {
+    "group": "breachnot",
+    "representative_occurrence": "ETH-D05-Q06",
+    "occurrence_ids": [
+      "ETH-D05-Q06"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.133703+00:00",
+    "source_question_hash": "6133b84e680772e29ff35a79c0d674d1654d12388bfffc9ac951f7d4b0e75c73",
+    "decision": "exclude_ambiguous",
+    "reason": "Several disclosures depend on consent and threat conditions. A positive HIV test alone and a blanket employer disclosure can both be impermissible.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Current course clarification or authoritative context followed by renewed exact-content review"
+  },
+  {
+    "group": "labour",
+    "representative_occurrence": "ETH-D05-Q07",
+    "occurrence_ids": [
+      "ETH-D05-Q07"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.133749+00:00",
+    "source_question_hash": "f53b3b1def3f674810675c7ae5ac8ed95284653d4f299e0383790290e722f604",
+    "decision": "exclude_ambiguous",
+    "reason": "Consent is needed for the patient at labor, but employers and other listed groups may also need consent absent stated lawful compulsory-examination exceptions.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Current course clarification or authoritative context followed by renewed exact-content review"
+  },
+  {
+    "group": "side-b",
+    "representative_occurrence": "ETH-D05-Q08",
+    "occurrence_ids": [
+      "ETH-D05-Q08"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.133760+00:00",
+    "source_question_hash": "12e9fa35d6524c0463544b8a316f9fc485a49ae930f14f71fbe386e873d422e6",
+    "canonical_id": "P43-CH1-CLIN-0005",
+    "decision": "accept_derived",
+    "final_question": {
+      "type": "mcq",
+      "text": "When a doctor stops medication because severe adverse effects occur, which principle is primarily being respected?",
+      "options": [
+        "Privacy",
+        "Nonmaleficence.",
+        "Autonomy",
+        "Beneficence"
+      ],
+      "correctIndex": 1,
+      "explanation": "Severe adverse effects make continued treatment harmful. Stopping the medication primarily applies nonmaleficence, the obligation to avoid further treatment-related harm."
+    },
+    "final_answer": "Nonmaleficence.",
+    "reviewed_content_hash": "1434b968613870e8be118008e4d790262a11913adc525bf33d55fe5cde77c684",
+    "option_assessment": [
+      "No personal-information issue is described.",
+      "Avoiding harm is the decisive principle.",
+      "No treatment preference is described.",
+      "Beneficence is related, but this stem emphasizes preventing harm."
+    ],
+    "evidence": [
+      {
+        "title": "WMA International Code of Medical Ethics",
+        "url": "https://www.wma.net/policies-post/wma-international-code-of-medical-ethics/",
+        "publication_or_update_date": "2022-10",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "paragraph 14",
+        "claim": "Minimize harm and weigh potential benefit against adverse consequences."
+      },
+      {
+        "title": "WMA Medical Ethics Manual, third edition",
+        "url": "https://www.wma.net/what-we-do/education/medical-ethics-manual/ethics_manual_3rd_nov2015_en_1x1/",
+        "publication_or_update_date": "2015",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "Appendix A: Glossary, Non-maleficence entry",
+        "claim": "Nonmaleficence means avoiding harmful actions."
+      }
+    ],
+    "historical_comparison": [
+      {
+        "occurrence_id": "ETH-D05-Q08",
+        "historical_index": null,
+        "reviewed_source_index": 1,
+        "historical_comparison": "NO_HISTORICAL_ANSWER"
+      }
+    ],
+    "normalization_edits": {
+      "text": {
+        "before": "When the doctor stops medication due to occurrence of severe side effects, he respects the ethical principle of:",
+        "after": "When a doctor stops medication because severe adverse effects occur, which principle is primarily being respected?"
+      }
+    },
+    "reason": "All alternatives assessed for the final version; Editorial and contextual clarifications are declared in normalization_edits. The research-consent stem explicitly names the Egyptian rule; civil-malpractice and expert-evidence wording clarify scope; combined option labels are expanded to words.",
+    "uncertainty": "No independent adjudication; legal explanations use stated source scope, not a claim about every jurisdiction."
+  },
+  {
+    "group": "report",
+    "representative_occurrence": "ETH-D05-Q24",
+    "occurrence_ids": [
+      "ETH-D05-Q24"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.133786+00:00",
+    "source_question_hash": "60e5cdbd784a235a6e5f4056164ef0809f0fe181b5b57dbe1b5b97079bde42c0",
+    "canonical_id": "P43-CH2-CLIN-0016",
+    "decision": "accept_derived",
+    "final_question": {
+      "type": "mcq",
+      "text": "When a doctor saw one of his colleagues making a medical mistake with his patient, what is the appropriate response to take?",
+      "options": [
+        "He has a duty to report him to the senior doctor",
+        "His relationship with this colleague should be priority",
+        "He should confront him in front of the working team",
+        "He is obligated to report him to the court"
+      ],
+      "correctIndex": 0,
+      "explanation": "Patient safety takes priority when a colleague’s mistake needs attention. Escalate to the responsible senior clinician so the error can be assessed and addressed through the appropriate process."
+    },
+    "final_answer": "He has a duty to report him to the senior doctor",
+    "reviewed_content_hash": "e59ed43bedbd65e00e205693ff05d20245b20fda4440953c15adcb55696bf4b6",
+    "option_assessment": [
+      "A senior clinician is the appropriate offered professional channel.",
+      "Collegial loyalty does not outweigh patient protection.",
+      "Public confrontation does not provide a constructive reporting process.",
+      "Court reporting is not automatically required for every error."
+    ],
+    "evidence": [
+      {
+        "title": "WMA International Code of Medical Ethics",
+        "url": "https://www.wma.net/policies-post/wma-international-code-of-medical-ethics/",
+        "publication_or_update_date": "2022-10",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "paragraphs 31–32 and 37",
+        "claim": "Protect patient safety, report circumstances preventing safe care and relevant misconduct."
+      },
+      {
+        "title": "WMA Medical Ethics Manual, third edition",
+        "url": "https://www.wma.net/what-we-do/education/medical-ethics-manual/ethics_manual_3rd_nov2015_en_1x1/",
+        "publication_or_update_date": "2015",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "printed pp. 91–92",
+        "claim": "Escalate unresolved unsafe conduct to the supervisor."
+      }
+    ],
+    "historical_comparison": [
+      {
+        "occurrence_id": "ETH-D05-Q24",
+        "historical_index": null,
+        "reviewed_source_index": 0,
+        "historical_comparison": "NO_HISTORICAL_ANSWER"
+      }
+    ],
+    "normalization_edits": {},
+    "reason": "All alternatives assessed for the final version; Editorial and contextual clarifications are declared in normalization_edits. The research-consent stem explicitly names the Egyptian rule; civil-malpractice and expert-evidence wording clarify scope; combined option labels are expanded to words.",
+    "uncertainty": "No independent adjudication; legal explanations use stated source scope, not a claim about every jurisdiction."
+  },
+  {
+    "group": "refusal",
+    "representative_occurrence": "ETH-D05-Q25",
+    "occurrence_ids": [
+      "ETH-D05-Q25"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.133816+00:00",
+    "source_question_hash": "50189cddf43a9a4f0bac4443d43494aef6fe885def8d95d7742a208f2c288399",
+    "canonical_id": "P43-CH1-CLIN-0006",
+    "decision": "accept_derived",
+    "final_question": {
+      "type": "mcq",
+      "text": "When the doctor accepts patient's refusal of treatment, he respects the ethical principle of:",
+      "options": [
+        "Non maleficence",
+        "Beneficence",
+        "Justice",
+        "Autonomy"
+      ],
+      "correctIndex": 3,
+      "explanation": "Respecting an informed treatment refusal recognizes the patient’s autonomy: the right of a person with decision-making capacity to accept or decline care."
+    },
+    "final_answer": "Autonomy",
+    "reviewed_content_hash": "4e0871df16826a9f20665af7f70b53eed636a6e958bdf947981ff458bceeaf65",
+    "option_assessment": [
+      "Avoiding harm is not the specific right tested.",
+      "Promoting benefit does not authorize overriding valid refusal.",
+      "Fair allocation is not the issue.",
+      "Treatment choice and refusal express autonomy."
+    ],
+    "evidence": [
+      {
+        "title": "WMA International Code of Medical Ethics",
+        "url": "https://www.wma.net/policies-post/wma-international-code-of-medical-ethics/",
+        "publication_or_update_date": "2022-10",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "paragraph 13",
+        "claim": "Respect the patient’s right to accept or refuse care."
+      }
+    ],
+    "historical_comparison": [
+      {
+        "occurrence_id": "ETH-D05-Q25",
+        "historical_index": null,
+        "reviewed_source_index": 3,
+        "historical_comparison": "NO_HISTORICAL_ANSWER"
+      }
+    ],
+    "normalization_edits": {},
+    "reason": "All alternatives assessed for the final version; Editorial and contextual clarifications are declared in normalization_edits. The research-consent stem explicitly names the Egyptian rule; civil-malpractice and expert-evidence wording clarify scope; combined option labels are expanded to words.",
+    "uncertainty": "No independent adjudication; legal explanations use stated source scope, not a claim about every jurisdiction."
+  },
+  {
+    "group": "laws",
+    "representative_occurrence": "ETH-D05-Q26",
+    "occurrence_ids": [
+      "ETH-D05-Q26"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.133871+00:00",
+    "source_question_hash": "ed60009ba8485e2690cbf2b8ffbaf704dc781857ea4868790f3a3ff1245f6782",
+    "canonical_id": "P43-CH1-CLIN-0007",
+    "decision": "accept_derived",
+    "final_question": {
+      "type": "mcq",
+      "text": "Which term refers to rules that govern society and are enforced by punishments for violations?",
+      "options": [
+        "Beliefs",
+        "Ethics",
+        "Laws",
+        "Morals"
+      ],
+      "correctIndex": 2,
+      "explanation": "Laws are enforceable societal rules. Ethics and morality guide judgments about right conduct, but they are not identical to the legal system."
+    },
+    "final_answer": "Laws",
+    "reviewed_content_hash": "b9feb0f2067559108ddebcfb1b480f571ef8730905a900297a756af525380ed0",
+    "option_assessment": [
+      "Beliefs are not necessarily enforceable rules.",
+      "Ethical standards are distinct from law.",
+      "Enforceable societal rules are laws.",
+      "Moral commitments are not necessarily law."
+    ],
+    "evidence": [
+      {
+        "title": "WMA Medical Ethics Manual, third edition",
+        "url": "https://www.wma.net/what-we-do/education/medical-ethics-manual/ethics_manual_3rd_nov2015_en_1x1/",
+        "publication_or_update_date": "2015",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "Introduction: Medical ethics, medical professionalism, human rights and law, printed p. 12",
+        "claim": "Ethics and law differ; law specifies requirements and regulatory punishment."
+      }
+    ],
+    "historical_comparison": [
+      {
+        "occurrence_id": "ETH-D05-Q26",
+        "historical_index": null,
+        "reviewed_source_index": 2,
+        "historical_comparison": "NO_HISTORICAL_ANSWER"
+      }
+    ],
+    "normalization_edits": {
+      "text": {
+        "before": "......... refers to the rules that govern society and enforced by punishments to persons who violate it.",
+        "after": "Which term refers to rules that govern society and are enforced by punishments for violations?"
+      }
+    },
+    "reason": "All alternatives assessed for the final version; Editorial and contextual clarifications are declared in normalization_edits. The research-consent stem explicitly names the Egyptian rule; civil-malpractice and expert-evidence wording clarify scope; combined option labels are expanded to words.",
+    "uncertainty": "No independent adjudication; legal explanations use stated source scope, not a claim about every jurisdiction."
+  },
+  {
+    "group": "sex",
+    "representative_occurrence": "ETH-D05-Q27",
+    "occurrence_ids": [
+      "ETH-D05-Q27"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.133898+00:00",
+    "source_question_hash": "9a17efbbd195ce4e2290e85a6cfa85735a93d04a05293c74991d76ed05cb9969",
+    "decision": "exclude_ambiguous",
+    "reason": "Family balancing, population policy and legal permissibility vary across jurisdictions. Egyptian religious permission does not by itself establish a general ethical/legal single answer.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Current course clarification or authoritative context followed by renewed exact-content review"
+  },
+  {
+    "group": "ivf-a",
+    "representative_occurrence": "ETH-D05-Q28",
+    "occurrence_ids": [
+      "ETH-D05-Q28"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.133906+00:00",
+    "source_question_hash": "7784243392e5df2924b20c65df1605bcea70c34ea0826bb78a0cd9c79fbd02b7",
+    "canonical_id": "P43-CH3-CLIN-0006",
+    "decision": "accept_derived",
+    "final_question": {
+      "type": "mcq",
+      "text": "According to Egyptian laws, which of the following is ethically permissible during IVF?",
+      "options": [
+        "Storage of embryos till usage for the same valid couple.",
+        "Implantation of the preserved embryos in a woman after death of her husband",
+        "Surrogate motherhood.",
+        "IVF may involve a third-party donation."
+      ],
+      "correctIndex": 0,
+      "explanation": "Embryos may be stored for later use by the same married couple under appropriate safeguards. Egyptian rules require the husband’s sperm and wife’s ovum during a valid marriage and exclude third-party reproduction."
+    },
+    "final_answer": "Storage of embryos till usage for the same valid couple.",
+    "reviewed_content_hash": "d8a2ca61ea5c26f6dcbe9b29c3dcf7f330ad842e32d1efc43f4283034115e928",
+    "option_assessment": [
+      "Same-couple storage is permissible with safeguards and an ongoing marriage.",
+      "Use after the husband’s death is outside the valid-marriage condition.",
+      "Transfer into another woman’s uterus is prohibited.",
+      "Third-party gametes are outside the permitted couple."
+    ],
+    "evidence": [
+      {
+        "title": "Egyptian Health Council: الميثاق الأخلاقي للطب البشري",
+        "url": "https://www.ehc.gov.eg/ar/ethics-medicine",
+        "publication_or_update_date": "Ministerial Decision 238/2003; current official webpage inspected",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "Articles 44–48",
+        "claim": "Assisted reproduction preserves lineage and uses the married couple’s gametes; third-party gestation is prohibited."
+      },
+      {
+        "title": "Dar al-Ifta Egypt: حكم احتفاظ الزوجين بالأجنة المجمدة, Fatwa 8828",
+        "url": "https://dar-alifta.org/ar/fatwa/details/24255/حكم-احتفاظ-الزوجين-بالأجنة-المجمدة",
+        "publication_or_update_date": "2025-12-01",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "Ruling and legal controls",
+        "claim": "Same-couple embryo storage is permissible with safeguards; use requires an existing marriage. This fatwa interprets, rather than enacts, law."
+      }
+    ],
+    "historical_comparison": [
+      {
+        "occurrence_id": "ETH-D05-Q28",
+        "historical_index": null,
+        "reviewed_source_index": 0,
+        "historical_comparison": "NO_HISTORICAL_ANSWER"
+      }
+    ],
+    "normalization_edits": {
+      "text": {
+        "before": "According to Egyptian laws, which of followings is ethically permissible during the IVF procedure?",
+        "after": "According to Egyptian laws, which of the following is ethically permissible during IVF?"
+      }
+    },
+    "reason": "All alternatives assessed for the final version; Editorial and contextual clarifications are declared in normalization_edits. The research-consent stem explicitly names the Egyptian rule; civil-malpractice and expert-evidence wording clarify scope; combined option labels are expanded to words.",
+    "uncertainty": "No independent adjudication; legal explanations use stated source scope, not a claim about every jurisdiction."
+  },
+  {
+    "group": "living",
+    "representative_occurrence": "ETH-D05-Q29",
+    "occurrence_ids": [
+      "ETH-D05-Q29"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.133934+00:00",
+    "source_question_hash": "b1f913c20246ecdf951bf7e4a855d81fc28adb45be7c05e0718fec31c3173b2c",
+    "canonical_id": "P43-CH3-CLIN-0007",
+    "decision": "accept_derived",
+    "final_question": {
+      "type": "mcq",
+      "text": "Living wills are documents which are meant to guide decision making when:",
+      "options": [
+        "Multiple attempts at resuscitation have failed",
+        "The patient's family cannot be contacted",
+        "The patient's family disagrees with the course of treatment",
+        "The patient is rendered incompetent or unresponsive by an illness judged to be terminal"
+      ],
+      "correctIndex": 3,
+      "explanation": "A living will records treatment wishes for a time when the patient cannot make or communicate the relevant decision. Family absence or disagreement alone does not activate it; terminal illness is not its only possible setting."
+    },
+    "final_answer": "The patient is rendered incompetent or unresponsive by an illness judged to be terminal",
+    "reviewed_content_hash": "2a8dbc623d8aacf6fd5d8ef218df278864b2d5c7512d349e0cb37acac2321b39",
+    "option_assessment": [
+      "Failed resuscitation alone is not its defining activation condition.",
+      "Family absence is not the defining condition.",
+      "Family disagreement is not the defining condition.",
+      "The patient’s inability to decide or communicate is the relevant feature."
+    ],
+    "evidence": [
+      {
+        "title": "NHS: Advance decision to refuse treatment (living will)",
+        "url": "https://www.nhs.uk/tests-and-treatments/end-of-life-care/planning-ahead/advance-decision-to-refuse-treatment/",
+        "publication_or_update_date": "2023-09-19",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "What is an advance decision?; How does an advance decision help?",
+        "claim": "Advance decisions apply when the person cannot make their own decisions and the directive is valid and applicable."
+      }
+    ],
+    "historical_comparison": [
+      {
+        "occurrence_id": "ETH-D05-Q29",
+        "historical_index": null,
+        "reviewed_source_index": 3,
+        "historical_comparison": "NO_HISTORICAL_ANSWER"
+      }
+    ],
+    "normalization_edits": {},
+    "reason": "All alternatives assessed for the final version; Editorial and contextual clarifications are declared in normalization_edits. The research-consent stem explicitly names the Egyptian rule; civil-malpractice and expert-evidence wording clarify scope; combined option labels are expanded to words.",
+    "uncertainty": "No independent adjudication; legal explanations use stated source scope, not a claim about every jurisdiction."
+  },
+  {
+    "group": "desk",
+    "representative_occurrence": "ETH-D05-Q30",
+    "occurrence_ids": [
+      "ETH-D05-Q30"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.133961+00:00",
+    "source_question_hash": "0360e37c39004934147fc9bb75ed2d0818df12dec031573ab70cd947310ebc35",
+    "canonical_id": "P43-CH2-CLIN-0017",
+    "decision": "accept_derived",
+    "final_question": {
+      "type": "mcq",
+      "text": "You are working at the desk in your hospital when another employee of the hospital asks for information about a patient who was admitted last night with cancer colon. You know the details of the case. The person requesting the information states that he is a close friend and co-worker of your patient. He shows you proper identification proving he really is a co-worker of your patient who also works in the hospital. Which of the following is the most appropriate response to this request?",
+      "options": [
+        "Let him sign a release form before revealing the information",
+        "Give him the information on the patient.",
+        "Inform him that you are not at liberty to give details regarding the patient without the patient's permission.",
+        "Give him the information only if he is a relative of the patient."
+      ],
+      "correctIndex": 2,
+      "explanation": "Being a hospital employee, friend or relative does not create permission to access another patient’s information. Without a care-related or other justified basis, obtain the patient’s authorization before disclosure."
+    },
+    "final_answer": "Inform him that you are not at liberty to give details regarding the patient without the patient's permission.",
+    "reviewed_content_hash": "21b227b8954735a501d510c11a292ea63de6bef0539c22fbc3258fbd7ef4cbc4",
+    "option_assessment": [
+      "The requester cannot authorize disclosure on the patient’s behalf merely by signing.",
+      "Coworker status is not a care-related authorization.",
+      "Patient authorization is required in the situation described.",
+      "Family relationship alone does not confer unrestricted access."
+    ],
+    "evidence": [
+      {
+        "title": "WMA International Code of Medical Ethics",
+        "url": "https://www.wma.net/policies-post/wma-international-code-of-medical-ethics/",
+        "publication_or_update_date": "2022-10",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "paragraph 22",
+        "claim": "Protect personal information and disclose only with consent or an exceptional overriding obligation."
+      },
+      {
+        "title": "Egyptian Health Council: الميثاق الأخلاقي للطب البشري",
+        "url": "https://www.ehc.gov.eg/ar/ethics-medicine",
+        "publication_or_update_date": "Ministerial Decision 238/2003; current official webpage inspected",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "Article 30",
+        "claim": "Confidentiality exceptions require legal grounds or serious certain harm to others."
+      }
+    ],
+    "historical_comparison": [
+      {
+        "occurrence_id": "ETH-D05-Q30",
+        "historical_index": null,
+        "reviewed_source_index": 2,
+        "historical_comparison": "NO_HISTORICAL_ANSWER"
+      }
+    ],
+    "normalization_edits": {},
+    "reason": "All alternatives assessed for the final version; Editorial and contextual clarifications are declared in normalization_edits. The research-consent stem explicitly names the Egyptian rule; civil-malpractice and expert-evidence wording clarify scope; combined option labels are expanded to words.",
+    "uncertainty": "No independent adjudication; legal explanations use stated source scope, not a claim about every jurisdiction."
+  },
+  {
+    "group": "malnoharm",
+    "representative_occurrence": "ETH-D05-Q31",
+    "occurrence_ids": [
+      "ETH-D05-Q31"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.134491+00:00",
+    "source_question_hash": "2a4e31bd69eba75741fbc4333b1776aaf61dc2492551a316a21801c500687149",
+    "canonical_id": "P43-CH2-CLIN-0018",
+    "decision": "accept_derived",
+    "final_question": {
+      "type": "mcq",
+      "text": "Which of the following situations does NOT support a civil medical malpractice claim against the doctor?",
+      "options": [
+        "The act of commission passed without harm.",
+        "The act of omission resulted into financial costs.",
+        "The act of commission resulted into patient's infirmity.",
+        "The act of omission resulted into physical damage"
+      ],
+      "correctIndex": 0,
+      "explanation": "A civil negligence claim ordinarily requires an injury or compensable loss caused by a breach of duty. A mistake without resulting harm lacks that damages element, although it may still warrant professional review."
+    },
+    "final_answer": "The act of commission passed without harm.",
+    "reviewed_content_hash": "63034a1d09c65900d7b1e0ea725e72df9b98c2bf6554f6054c8a65e3706491be",
+    "option_assessment": [
+      "No harm means the damages element is absent.",
+      "Financial loss can be compensable harm if causally linked to a breach.",
+      "Resulting infirmity can constitute harm.",
+      "Resulting physical damage can constitute harm."
+    ],
+    "evidence": [
+      {
+        "title": "Supreme Court of Maryland: opinion No. 22, September Term 2024",
+        "url": "https://www.courts.state.md.us/data/opinions/coa/2025/22a24.pdf",
+        "publication_or_update_date": "2025",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "Concurrence printed pp. 10–11 (physical PDF pp. 71–72)",
+        "claim": "Ordinary negligence requires duty, breach, causation and damages; this supports the general civil principle, not an Egypt-specific filing rule."
+      }
+    ],
+    "historical_comparison": [
+      {
+        "occurrence_id": "ETH-D05-Q31",
+        "historical_index": null,
+        "reviewed_source_index": 0,
+        "historical_comparison": "NO_HISTORICAL_ANSWER"
+      }
+    ],
+    "normalization_edits": {
+      "text": {
+        "before": "Which of the following situations DID NOT deserve to file a case of malpractice against the doctor:",
+        "after": "Which of the following situations does NOT support a civil medical malpractice claim against the doctor?"
+      }
+    },
+    "reason": "All alternatives assessed for the final version; Editorial and contextual clarifications are declared in normalization_edits. The research-consent stem explicitly names the Egyptian rule; civil-malpractice and expert-evidence wording clarify scope; combined option labels are expanded to words.",
+    "uncertainty": "No independent adjudication; legal explanations use stated source scope, not a claim about every jurisdiction."
+  },
+  {
+    "group": "fetal",
+    "representative_occurrence": "ETH-D05-Q32",
+    "occurrence_ids": [
+      "ETH-D05-Q32"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.134540+00:00",
+    "source_question_hash": "4672d0ab97f534f3df178af8899b0d7e9e61bda6d30cf7de8f9f544f24b80180",
+    "canonical_id": "P43-CH3-CLIN-0008",
+    "decision": "accept_derived",
+    "final_question": {
+      "type": "mcq",
+      "text": "Transplantation of fetal stem cells to a diseased person is termed as:",
+      "options": [
+        "Xenotransplantation",
+        "Isograft",
+        "Allotransplantation",
+        "Auto transplantation"
+      ],
+      "correctIndex": 2,
+      "explanation": "In the ordinary human-to-human context of this question, cells from a genetically different human donor form an allograft. An autograft comes from the recipient, an isograft from a genetically identical donor and a xenograft from another species."
+    },
+    "final_answer": "Allotransplantation",
+    "reviewed_content_hash": "c1a5267756b74a5ca4d401c6d9444f1da541d738544e8b2ccf83b93ff70dbde3",
+    "option_assessment": [
+      "No different animal species is specified.",
+      "No genetically identical donor is specified.",
+      "Human fetal donor cells to another person are an allograft.",
+      "The donor is not the recipient."
+    ],
+    "evidence": [
+      {
+        "title": "HRSA OPTN: Glossary",
+        "url": "https://www.hrsa.gov/optn/patients/glossary",
+        "publication_or_update_date": "2026-03",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "Allograft, Autograft and Xenograft entries",
+        "claim": "Allograft and autograft distinguish another human donor from the same individual; xenograft crosses species."
+      },
+      {
+        "title": "NLM MeSH: Isografts",
+        "url": "https://www.ncbi.nlm.nih.gov/mesh/68064596",
+        "publication_or_update_date": "Introduced 2014",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "Scope definition",
+        "claim": "An isograft comes from a genetically identical donor."
+      }
+    ],
+    "historical_comparison": [
+      {
+        "occurrence_id": "ETH-D05-Q32",
+        "historical_index": null,
+        "reviewed_source_index": 2,
+        "historical_comparison": "NO_HISTORICAL_ANSWER"
+      }
+    ],
+    "normalization_edits": {},
+    "reason": "All alternatives assessed for the final version; Editorial and contextual clarifications are declared in normalization_edits. The research-consent stem explicitly names the Egyptian rule; civil-malpractice and expert-evidence wording clarify scope; combined option labels are expanded to words.",
+    "uncertainty": "No independent adjudication; legal explanations use stated source scope, not a claim about every jurisdiction."
+  },
+  {
+    "group": "somatic-b",
+    "representative_occurrence": "ETH-D05-Q33",
+    "occurrence_ids": [
+      "ETH-D05-Q33"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.134577+00:00",
+    "source_question_hash": "5028e4f39b7d8afacb67e64550fac025c30483aec4a4b8052427c7f065b97a0a",
+    "decision": "exclude_ambiguous",
+    "reason": "Unqualified stem cells include different lineages; no option expressly identifies nonreproductive somatic cells. The intended B needs a specification not present in the source.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Current course clarification or authoritative context followed by renewed exact-content review"
+  },
+  {
+    "group": "passive",
+    "representative_occurrence": "ETH-D05-Q34",
+    "occurrence_ids": [
+      "ETH-D05-Q34"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.134587+00:00",
+    "source_question_hash": "e3f1e5638537034af0badf1f366e486a1e809aeef6ba21ad6c960612c66a4619",
+    "decision": "exclude_ambiguous",
+    "reason": "The source uses older passive-euthanasia terminology without intention, consent or benefit context. Withholding treatment alone does not establish euthanasia under modern guidance.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Current course clarification or authoritative context followed by renewed exact-content review"
+  },
+  {
+    "group": "livingdonor",
+    "representative_occurrence": "ETH-D05-Q35",
+    "occurrence_ids": [
+      "ETH-D05-Q35"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.134603+00:00",
+    "source_question_hash": "4b0405f76e2e46e11780db7fc17d8b21dd446da8154ea3ab46e07ce360e79dec",
+    "canonical_id": "P43-CH3-CLIN-0009",
+    "decision": "accept_derived",
+    "final_question": {
+      "type": "mcq",
+      "text": "Which of the following is considered as an advantage of living donor transplantation?",
+      "options": [
+        "Increase the emotional pressure on the donor",
+        "Increase the immune response of the recipient",
+        "Increase the chance of preparedness for the procedure",
+        "Increase the waiting list for transplantation"
+      ],
+      "correctIndex": 2,
+      "explanation": "A living-donor transplant can be arranged in advance, allowing time to prepare the donor and recipient. Increased pressure on the donor or stronger immune rejection would be disadvantages, not benefits."
+    },
+    "final_answer": "Increase the chance of preparedness for the procedure",
+    "reviewed_content_hash": "75cc3a4416a6ca8094a1081fd490e6ed16c3da306d9dc8b6342dfcf4ef16559f",
+    "option_assessment": [
+      "Pressure on the donor is a concern, not an advantage.",
+      "Increased immune response would be undesirable.",
+      "Scheduling enables preparation.",
+      "A larger waiting list is not an advantage."
+    ],
+    "evidence": [
+      {
+        "title": "NHS Blood and Transplant: Living kidney donation",
+        "url": "https://nhsbtdbe.blob.core.windows.net/umbraco-assets-corp/37225/2526-0790-living-kidney-donation-leafletv1.pdf",
+        "publication_or_update_date": null,
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "printed pp. 4–5, planning the operation",
+        "claim": "Living donation permits planned surgery with coordinated donor and recipient procedures."
+      }
+    ],
+    "historical_comparison": [
+      {
+        "occurrence_id": "ETH-D05-Q35",
+        "historical_index": null,
+        "reviewed_source_index": 2,
+        "historical_comparison": "NO_HISTORICAL_ANSWER"
+      }
+    ],
+    "normalization_edits": {},
+    "reason": "All alternatives assessed for the final version; Editorial and contextual clarifications are declared in normalization_edits. The research-consent stem explicitly names the Egyptian rule; civil-malpractice and expert-evidence wording clarify scope; combined option labels are expanded to words.",
+    "uncertainty": "No independent adjudication; legal explanations use stated source scope, not a claim about every jurisdiction."
+  },
+  {
+    "group": "studentconsent",
+    "representative_occurrence": "ETH-D05-Q36",
+    "occurrence_ids": [
+      "ETH-D05-Q36"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.134633+00:00",
+    "source_question_hash": "1da827a118c569a8bdd14cd05a3517f0cc9cb130c711f31276a59ed76b3daad3",
+    "decision": "exclude_ambiguous",
+    "reason": "Both oral and written explicit consent can permit student examination. The stem does not ask for a minimum or distinguish a particular setting.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Current course clarification or authoritative context followed by renewed exact-content review"
+  },
+  {
+    "group": "withdraw",
+    "representative_occurrence": "ETH-D05-Q37",
+    "occurrence_ids": [
+      "ETH-D05-Q37"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.134641+00:00",
+    "source_question_hash": "d7ee3f78f1ed2d495489074001adb5dc11dac06922f68c734c7b0c3e9a151c32",
+    "canonical_id": "P43-CH2-CLIN-0019",
+    "decision": "accept_derived",
+    "final_question": {
+      "type": "mcq",
+      "text": "If a participant of medical research wants to withdraw from the study, he can withdraw:",
+      "options": [
+        "If the researcher gives permission to withdraw.",
+        "At any time without any explanation.",
+        "After explaining reason of withdrawal to the researcher.",
+        "Not before data collection"
+      ],
+      "correctIndex": 1,
+      "explanation": "Research participation is voluntary throughout the study. A participant may withdraw without giving a reason or obtaining the investigator’s permission, and withdrawal must not prejudice clinical care."
+    },
+    "final_answer": "At any time without any explanation.",
+    "reviewed_content_hash": "760b07b180da294cff688b0f40e92e8f29df0f51ad81a0a9963fdc9101a17089",
+    "option_assessment": [
+      "Investigator permission is not required.",
+      "Withdrawal is permitted without a reason.",
+      "A mandatory explanation undermines unconditional withdrawal.",
+      "Data collection is not a prerequisite for leaving."
+    ],
+    "evidence": [
+      {
+        "title": "WMA Declaration of Helsinki",
+        "url": "https://www.wma.net/policies-post/wma-declaration-of-helsinki/",
+        "publication_or_update_date": "2024-10",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "paragraphs 26 and 31",
+        "claim": "Participants can withdraw without reprisal and without adverse effects on care."
+      },
+      {
+        "title": "Egyptian Health Council: الميثاق الأخلاقي للطب البشري",
+        "url": "https://www.ehc.gov.eg/ar/ethics-medicine",
+        "publication_or_update_date": "Ministerial Decision 238/2003; current official webpage inspected",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "Article 55",
+        "claim": "Withdrawal is allowed without adverse consequences."
+      }
+    ],
+    "historical_comparison": [
+      {
+        "occurrence_id": "ETH-D05-Q37",
+        "historical_index": null,
+        "reviewed_source_index": 1,
+        "historical_comparison": "NO_HISTORICAL_ANSWER"
+      }
+    ],
+    "normalization_edits": {},
+    "reason": "All alternatives assessed for the final version; Editorial and contextual clarifications are declared in normalization_edits. The research-consent stem explicitly names the Egyptian rule; civil-malpractice and expert-evidence wording clarify scope; combined option labels are expanded to words.",
+    "uncertainty": "No independent adjudication; legal explanations use stated source scope, not a claim about every jurisdiction."
+  },
+  {
+    "group": "hiv",
+    "representative_occurrence": "ETH-D05-Q38",
+    "occurrence_ids": [
+      "ETH-D05-Q38"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.134678+00:00",
+    "source_question_hash": "a3b5bc4a99e21e43fc9524b365ba3093ad7d5e64837a5c8a3694f521104ef4d6",
+    "decision": "exclude_ambiguous",
+    "reason": "The legally obligated recipient depends on jurisdiction, notifiable-disease rules and occupational exposure risks; these are not specified.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Current course clarification or authoritative context followed by renewed exact-content review"
+  },
+  {
+    "group": "pharmgood",
+    "representative_occurrence": "ETH-D05-Q39",
+    "occurrence_ids": [
+      "ETH-D05-Q39"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.134690+00:00",
+    "source_question_hash": "5626f77a5cb717f7a591f7642d28c93fdd22390dc9ab927bb692ddd29e4d838b",
+    "decision": "exclude_ambiguous",
+    "reason": "Meeting representatives may be acceptable, but reasonable compensation for real research work may also be acceptable; payment purpose is unspecified.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Current course clarification or authoritative context followed by renewed exact-content review"
+  },
+  {
+    "group": "expert",
+    "representative_occurrence": "ETH-D05-Q40",
+    "occurrence_ids": [
+      "ETH-D05-Q40"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.134698+00:00",
+    "source_question_hash": "52eebeacfe9bb3761b546b3a8d405e7a4ab57352e7543718e191a1434af3af5f",
+    "canonical_id": "P43-CH2-CLIN-0020",
+    "decision": "accept_derived",
+    "final_question": {
+      "type": "mcq",
+      "text": "The professional yardstick for a medical mistake is ordinarily established by:",
+      "options": [
+        "The patient' attorney.",
+        "An expert testimony.",
+        "The prosecutor.",
+        "The judge."
+      ],
+      "correctIndex": 1,
+      "explanation": "Expert testimony ordinarily explains the applicable professional standard of care and whether the clinical conduct met it. Lawyers argue the case and courts decide it, but expert clinical evidence supplies the professional comparison."
+    },
+    "final_answer": "An expert testimony.",
+    "reviewed_content_hash": "e07b2146d3faf68f0e2b47307540cce0f601f03679435a10f9a0f68a9736e37d",
+    "option_assessment": [
+      "Counsel does not supply clinical expertise by virtue of being counsel.",
+      "Expert clinical evidence establishes the professional yardstick.",
+      "A prosecutor’s role is not to supply the clinical standard.",
+      "The judge decides the case rather than supplying medical expertise."
+    ],
+    "evidence": [
+      {
+        "title": "Supreme Court of Maryland: opinion No. 22, September Term 2024",
+        "url": "https://www.courts.state.md.us/data/opinions/coa/2025/22a24.pdf",
+        "publication_or_update_date": "2025",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "Concurrence printed pp. 10–11 (physical PDF pp. 71–72)",
+        "claim": "Medical negligence generally requires expert evidence for clinical standards and causation, with recognized exceptions."
+      }
+    ],
+    "historical_comparison": [
+      {
+        "occurrence_id": "ETH-D05-Q40",
+        "historical_index": null,
+        "reviewed_source_index": 1,
+        "historical_comparison": "NO_HISTORICAL_ANSWER"
+      }
+    ],
+    "normalization_edits": {
+      "text": {
+        "before": "Yardstick of a medical mistake is established by.........",
+        "after": "The professional yardstick for a medical mistake is ordinarily established by:"
+      }
+    },
+    "reason": "All alternatives assessed for the final version; Editorial and contextual clarifications are declared in normalization_edits. The research-consent stem explicitly names the Egyptian rule; civil-malpractice and expert-evidence wording clarify scope; combined option labels are expanded to words.",
+    "uncertainty": "No independent adjudication; legal explanations use stated source scope, not a claim about every jurisdiction."
+  },
+  {
+    "group": "exceptdisclose",
+    "representative_occurrence": "ETH-D05-Q41",
+    "occurrence_ids": [
+      "ETH-D05-Q41"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.134734+00:00",
+    "source_question_hash": "b334fbfe4f3d96b425340e7ca5adb1d736818f399b30738da7453484f98ecb8b",
+    "decision": "exclude_ambiguous",
+    "reason": "Public-safety risk and acting as an expert do not automatically oblige every disclosure; statutory and court-order conditions are missing.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Current course clarification or authoritative context followed by renewed exact-content review"
+  },
+  {
+    "group": "threat",
+    "representative_occurrence": "ETH-D05-Q42",
+    "occurrence_ids": [
+      "ETH-D05-Q42"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.134826+00:00",
+    "source_question_hash": "2e73c48728d860f230115d15e4f7832a2ddc106034b366e07054acbecaec551b",
+    "canonical_id": "P43-CH2-CLIN-0021",
+    "decision": "accept_derived",
+    "final_question": {
+      "type": "mcq",
+      "text": "You are a psychiatrist, in a session with a schizophrenic patient who asks you if you can keep a secret and then tells you that he is planning to kill his boss. You say, “Of course, everything you tell me during the session will always be confidential”. What should you do?",
+      "options": [
+        "Keep the patient's session confidential but make attempts to discourage the patient from his plan.",
+        "Inform your medical director and let him handle it.",
+        "Inform the patient's family and let them manage the situation.",
+        "Inform both the patient's boss as well as law enforcement of the threat."
+      ],
+      "correctIndex": 3,
+      "explanation": "A credible serious threat against an identifiable person can justify breaching confidentiality to protect them. Escalate urgently, disclose only necessary information and involve the threatened person and appropriate law enforcement when required for protection."
+    },
+    "final_answer": "Inform both the patient's boss as well as law enforcement of the threat.",
+    "reviewed_content_hash": "c45128830de9a8e92fca22cf5a2f9ea6f1cfe9963f59623bbe48acbcaa0a02bb",
+    "option_assessment": [
+      "Trying to discourage the threat alone does not ensure protection.",
+      "Handing the problem to the director alone may leave the threatened person unprotected.",
+      "Family involvement alone does not reliably protect the intended victim.",
+      "Targeted warning and law-enforcement involvement address the serious threat."
+    ],
+    "evidence": [
+      {
+        "title": "GMC: Disclosing patients’ personal information: a framework",
+        "url": "https://www.gmc-uk.org/professional-standards/the-professional-standards/confidentiality/disclosing-patients-personal-information-a-framework",
+        "publication_or_update_date": null,
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "paragraphs 63–70",
+        "claim": "Disclosure to appropriate persons can be justified to prevent serious harm, including targeted violence."
+      },
+      {
+        "title": "Egyptian Health Council: الميثاق الأخلاقي للطب البشري",
+        "url": "https://www.ehc.gov.eg/ar/ethics-medicine",
+        "publication_or_update_date": "Ministerial Decision 238/2003; current official webpage inspected",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "Article 30",
+        "claim": "Serious certain harm to others is a confidentiality exception."
+      }
+    ],
+    "historical_comparison": [
+      {
+        "occurrence_id": "ETH-D05-Q42",
+        "historical_index": null,
+        "reviewed_source_index": 3,
+        "historical_comparison": "NO_HISTORICAL_ANSWER"
+      }
+    ],
+    "normalization_edits": {},
+    "reason": "All alternatives assessed for the final version; Editorial and contextual clarifications are declared in normalization_edits. The research-consent stem explicitly names the Egyptian rule; civil-malpractice and expert-evidence wording clarify scope; combined option labels are expanded to words.",
+    "uncertainty": "No independent adjudication; legal explanations use stated source scope, not a claim about every jurisdiction."
+  },
+  {
+    "group": "tremor",
+    "representative_occurrence": "ETH-D05-Q43",
+    "occurrence_ids": [
+      "ETH-D05-Q43"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.134923+00:00",
+    "source_question_hash": "425c9282848ee3b1a19c8912afd110f4bc65d3cfc2972d141c2070f4997c7087",
+    "canonical_id": "P43-CH2-CLIN-0022",
+    "decision": "accept_derived",
+    "final_question": {
+      "type": "mcq",
+      "text": "When a doctor noticed tremors in his colleague's hand while performing surgical procedure, what should he do?",
+      "options": [
+        "He should inform his colleague's patients for their protection.",
+        "He should ask his colleague to seek medical advice, or he will report him",
+        "There is no action to do as this is colleague's personal issue",
+        "He should not interfere to keep good relationship with his colleague."
+      ],
+      "correctIndex": 1,
+      "explanation": "Possible impairment affecting surgical safety should be addressed with the colleague and appropriate medical assessment. If unsafe practice is not resolved, escalate rather than ignore the risk."
+    },
+    "final_answer": "He should ask his colleague to seek medical advice, or he will report him",
+    "reviewed_content_hash": "b014e1dd78d76bedc937aec9c96f7ea7cb8b527d8245d0e8bb8bce6802fe24c0",
+    "option_assessment": [
+      "Broad patient disclosure is not the appropriate first channel.",
+      "Seeking assessment with escalation if unresolved is the best offered response.",
+      "Potential patient harm makes this more than a private issue.",
+      "Preserving friendship does not justify leaving a safety risk unresolved."
+    ],
+    "evidence": [
+      {
+        "title": "WMA Medical Ethics Manual, third edition",
+        "url": "https://www.wma.net/what-we-do/education/medical-ethics-manual/ethics_manual_3rd_nov2015_en_1x1/",
+        "publication_or_update_date": "2015",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "printed pp. 91–92",
+        "claim": "Address suspected unsafe practice with the colleague and escalate if necessary."
+      },
+      {
+        "title": "WMA International Code of Medical Ethics",
+        "url": "https://www.wma.net/policies-post/wma-international-code-of-medical-ethics/",
+        "publication_or_update_date": "2022-10",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "paragraphs 28 and 31",
+        "claim": "Attend to personal fitness and protect patients from harm."
+      }
+    ],
+    "historical_comparison": [
+      {
+        "occurrence_id": "ETH-D05-Q43",
+        "historical_index": null,
+        "reviewed_source_index": 1,
+        "historical_comparison": "NO_HISTORICAL_ANSWER"
+      }
+    ],
+    "normalization_edits": {},
+    "reason": "All alternatives assessed for the final version; Editorial and contextual clarifications are declared in normalization_edits. The research-consent stem explicitly names the Egyptian rule; civil-malpractice and expert-evidence wording clarify scope; combined option labels are expanded to words.",
+    "uncertainty": "No independent adjudication; legal explanations use stated source scope, not a claim about every jurisdiction."
+  },
+  {
+    "group": "researchrisk",
+    "representative_occurrence": "ETH-D05-Q44",
+    "occurrence_ids": [
+      "ETH-D05-Q44"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.135001+00:00",
+    "source_question_hash": "aaed44c25c235ab2e6efc49708614892219839aec1e771b87037a508fda3cd46",
+    "canonical_id": "P43-CH2-CLIN-0023",
+    "decision": "accept_derived",
+    "final_question": {
+      "type": "mcq",
+      "text": "Which of the followings is considered as violation of ethical principles in medical research?",
+      "options": [
+        "Use of placebo control in clinical trials.",
+        "Use of codes to refers to the participants in the recorded data",
+        "Not informing the proposed participant with the predicted risks of the research.",
+        "Use randomization to select control group"
+      ],
+      "correctIndex": 2,
+      "explanation": "Informed research consent requires disclosure of foreseeable risks and burdens. Coding participant data protects confidentiality; placebo use and randomization are not inherently unethical when their safeguards are met."
+    },
+    "final_answer": "Not informing the proposed participant with the predicted risks of the research.",
+    "reviewed_content_hash": "d628b32c4a567571625252cf4b68fd7451e3e8b4b135f6248e9e1d0a994abb2d",
+    "option_assessment": [
+      "Placebo may be permissible under defined safeguards.",
+      "Codes can protect participant identity.",
+      "Omitting predicted risks prevents properly informed consent.",
+      "Randomization is not inherently unethical."
+    ],
+    "evidence": [
+      {
+        "title": "WMA Declaration of Helsinki",
+        "url": "https://www.wma.net/policies-post/wma-declaration-of-helsinki/",
+        "publication_or_update_date": "2024-10",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "paragraphs 24, 26 and 33",
+        "claim": "Protect confidentiality, inform participants of risks, and use placebo only under defined conditions."
+      }
+    ],
+    "historical_comparison": [
+      {
+        "occurrence_id": "ETH-D05-Q44",
+        "historical_index": null,
+        "reviewed_source_index": 2,
+        "historical_comparison": "NO_HISTORICAL_ANSWER"
+      }
+    ],
+    "normalization_edits": {},
+    "reason": "All alternatives assessed for the final version; Editorial and contextual clarifications are declared in normalization_edits. The research-consent stem explicitly names the Egyptian rule; civil-malpractice and expert-evidence wording clarify scope; combined option labels are expanded to words.",
+    "uncertainty": "No independent adjudication; legal explanations use stated source scope, not a claim about every jurisdiction."
+  },
+  {
+    "group": "labcommission",
+    "representative_occurrence": "ETH-D05-Q45",
+    "occurrence_ids": [
+      "ETH-D05-Q45"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.135032+00:00",
+    "source_question_hash": "55d6d0a9702f6951caf6378d4c56d31067692b7f4c985f7c19a4dbcdefabceb4",
+    "canonical_id": "P43-CH2-CLIN-0024",
+    "decision": "accept_derived",
+    "final_question": {
+      "type": "mcq",
+      "text": "Which of the following conducts IS NOT acceptable from the physician?",
+      "options": [
+        "To receive free samples of new drug from medical representatives",
+        "To share in campaign to present medical care to people in distant and remote areas.",
+        "To meet representatives who are promoting their latest drugs.",
+        "To receive payments (commission) to refer patients to certain labs"
+      ],
+      "correctIndex": 3,
+      "explanation": "Payments for referring patients to a laboratory create a financial incentive unrelated to the patient’s best interests. Egyptian medical ethics rules prohibit such referral commissions."
+    },
+    "final_answer": "To receive payments (commission) to refer patients to certain labs",
+    "reviewed_content_hash": "bae6866291986367b037a6574561d1bec0033568f98d110fd1a52c2edd3c1dad",
+    "option_assessment": [
+      "Samples are not inherently prohibited by the supplied scenario.",
+      "Outreach medical care can serve patients.",
+      "Meeting representatives is not itself a referral commission.",
+      "Referral commissions are expressly prohibited."
+    ],
+    "evidence": [
+      {
+        "title": "Egyptian Health Council: الميثاق الأخلاقي للطب البشري",
+        "url": "https://www.ehc.gov.eg/ar/ethics-medicine",
+        "publication_or_update_date": "Ministerial Decision 238/2003; current official webpage inspected",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "Article 8(c)",
+        "claim": "Payments for sending patients to specified testing facilities are prohibited."
+      },
+      {
+        "title": "WMA Statement on Conflict of Interest",
+        "url": "https://www.wma.net/policies-post/wma-statement-on-conflict-of-interest/",
+        "publication_or_update_date": "2025-10",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "paragraphs 16–18, fee splitting",
+        "claim": "Financial benefits for referrals create conflicts; fee splitting is prohibited."
+      }
+    ],
+    "historical_comparison": [
+      {
+        "occurrence_id": "ETH-D05-Q45",
+        "historical_index": null,
+        "reviewed_source_index": 3,
+        "historical_comparison": "NO_HISTORICAL_ANSWER"
+      }
+    ],
+    "normalization_edits": {},
+    "reason": "All alternatives assessed for the final version; Editorial and contextual clarifications are declared in normalization_edits. The research-consent stem explicitly names the Egyptian rule; civil-malpractice and expert-evidence wording clarify scope; combined option labels are expanded to words.",
+    "uncertainty": "No independent adjudication; legal explanations use stated source scope, not a claim about every jurisdiction."
+  },
+  {
+    "group": "germline",
+    "representative_occurrence": "ETH-D05-Q46",
+    "occurrence_ids": [
+      "ETH-D05-Q46"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.135064+00:00",
+    "source_question_hash": "8429f18c4b759ed8839ea0d7ddc831e153d232d51b0eb8d724fddc376d5e5343",
+    "canonical_id": "P43-CH3-CLIN-0010",
+    "decision": "accept_derived",
+    "final_question": {
+      "type": "mcq",
+      "text": "Germline gene therapy involves:",
+      "options": [
+        "Selection of characteristics to change the genetics of a population",
+        "DNA transfer to reproductive cells (ova or sperms)",
+        "DNA transfer to stem cells",
+        "Genetic alteration to bring people beyond normalcy"
+      ],
+      "correctIndex": 1,
+      "explanation": "Germline gene therapy changes reproductive cells or their precursors so that a genetic alteration can be inherited. The defining distinction is heritability, not population selection or enhancement."
+    },
+    "final_answer": "DNA transfer to reproductive cells (ova or sperms)",
+    "reviewed_content_hash": "0f896a71932ee5fe6cac754c68af7faa96da4abb84bce4f5f0e05bbdde22290e",
+    "option_assessment": [
+      "Population selection is not the definition of germline therapy.",
+      "Reproductive cells are the defining target offered.",
+      "Unspecified stem cells do not distinguish germline from somatic targets.",
+      "Enhancement is a possible purpose, not the defining target."
+    ],
+    "evidence": [
+      {
+        "title": "NHGRI: How is genome editing used?",
+        "url": "https://www.genome.gov/about-genomics/policy-issues/Genome-Editing/How-genome-editing-is-used",
+        "publication_or_update_date": "2017-08-03",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "Types of Gene Therapy",
+        "claim": "Germline targets reproductive cells and can pass changes to descendants."
+      }
+    ],
+    "historical_comparison": [
+      {
+        "occurrence_id": "ETH-D05-Q46",
+        "historical_index": null,
+        "reviewed_source_index": 1,
+        "historical_comparison": "NO_HISTORICAL_ANSWER"
+      }
+    ],
+    "normalization_edits": {
+      "text": {
+        "before": "Germ line gene therapy involves:",
+        "after": "Germline gene therapy involves:"
+      }
+    },
+    "reason": "All alternatives assessed for the final version; Editorial and contextual clarifications are declared in normalization_edits. The research-consent stem explicitly names the Egyptian rule; civil-malpractice and expert-evidence wording clarify scope; combined option labels are expanded to words.",
+    "uncertainty": "No independent adjudication; legal explanations use stated source scope, not a claim about every jurisdiction."
+  },
+  {
+    "group": "pig",
+    "representative_occurrence": "ETH-D05-Q47",
+    "occurrence_ids": [
+      "ETH-D05-Q47"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.135089+00:00",
+    "source_question_hash": "203cd5663987514c171e1d8f45c445cfb3faccd9c9d2068f6248d78e8d38e8d4",
+    "canonical_id": "P43-CH3-CLIN-0011",
+    "decision": "accept_derived",
+    "final_question": {
+      "type": "mcq",
+      "text": "Transplantation of pig's heart to a man is termed as:",
+      "options": [
+        "Allotransplantation",
+        "Auto transplantation",
+        "Isograft",
+        "Xenotransplantation"
+      ],
+      "correctIndex": 3,
+      "explanation": "A pig-to-human heart transplant crosses a species boundary and is therefore xenotransplantation. Allografts are between individuals of the same species."
+    },
+    "final_answer": "Xenotransplantation",
+    "reviewed_content_hash": "f47a6d94cf0b6329e6d0e3e3db1e2d7acb48f16e15d4a131ca5544a8321a1ac3",
+    "option_assessment": [
+      "An allograft is within one species.",
+      "An autograft uses the same individual.",
+      "An isograft uses a genetically identical donor.",
+      "Pig-to-human crosses species."
+    ],
+    "evidence": [
+      {
+        "title": "HRSA OPTN: Glossary",
+        "url": "https://www.hrsa.gov/optn/patients/glossary",
+        "publication_or_update_date": "2026-03",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "Xenograft and Xenotransplantation entries",
+        "claim": "Different-species grafts are xenografts; animal-to-human transplantation is xenotransplantation."
+      }
+    ],
+    "historical_comparison": [
+      {
+        "occurrence_id": "ETH-D05-Q47",
+        "historical_index": null,
+        "reviewed_source_index": 3,
+        "historical_comparison": "NO_HISTORICAL_ANSWER"
+      }
+    ],
+    "normalization_edits": {},
+    "reason": "All alternatives assessed for the final version; Editorial and contextual clarifications are declared in normalization_edits. The research-consent stem explicitly names the Egyptian rule; civil-malpractice and expert-evidence wording clarify scope; combined option labels are expanded to words.",
+    "uncertainty": "No independent adjudication; legal explanations use stated source scope, not a claim about every jurisdiction."
+  },
+  {
+    "group": "morals",
+    "representative_occurrence": "ETH-D05-Q48",
+    "occurrence_ids": [
+      "ETH-D05-Q48"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.135109+00:00",
+    "source_question_hash": "c8fb25116632741a06ea5c8fdd98261572c0aeba770886cda327fcf2eae9ff01",
+    "decision": "exclude_ambiguous",
+    "reason": "The private-personal versus professional-ethics distinction is a course convention; ethics and morals overlap and the source supplies no authoritative unique definition.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Current course clarification or authoritative context followed by renewed exact-content review"
+  },
+  {
+    "group": "ivf-b",
+    "representative_occurrence": "ETH-D05-Q49",
+    "occurrence_ids": [
+      "ETH-D05-Q49"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.135117+00:00",
+    "source_question_hash": "9d58193eb0dc617eb688a79c313549959f0107b991591ef5ab0b4ab91dc89b24",
+    "decision": "exclude_ambiguous",
+    "reason": "Sex testing may be religiously permitted under safeguards, but that does not establish the unqualified Egyptian statutory permission in the stem.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Current course clarification or authoritative context followed by renewed exact-content review"
+  },
+  {
+    "group": "obligatory",
+    "representative_occurrence": "ETH-D05-Q50",
+    "occurrence_ids": [
+      "ETH-D05-Q50"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.135125+00:00",
+    "source_question_hash": "187ee0a493b7c8181794b8a4d07f0c4548a75ca040b0c72b7c05df1bdfa72acf",
+    "decision": "exclude_ambiguous",
+    "reason": "The other examination categories are not universally lawful compulsory examinations; specific statutory criteria and consent safeguards are absent.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Current course clarification or authoritative context followed by renewed exact-content review"
+  },
+  {
+    "group": "surgery",
+    "representative_occurrence": "ETH-D05-Q51",
+    "occurrence_ids": [
+      "ETH-D05-Q51"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.135143+00:00",
+    "source_question_hash": "62ab5f1b24de602bf3875b8c53eec7a9acd644028cbc1000ba13797e16213f2d",
+    "canonical_id": "P43-CH2-CLIN-0025",
+    "decision": "accept_derived",
+    "final_question": {
+      "type": "mcq",
+      "text": "Which type of consent permits a physician to perform a major surgical operation?",
+      "options": [
+        "Blanket.",
+        "Implied.",
+        "Written.",
+        "Oral."
+      ],
+      "correctIndex": 2,
+      "explanation": "For a planned major operation, Egyptian medical ethics rules require written informed consent from the patient or legal representative. Emergency lifesaving care has a specified exception."
+    },
+    "final_answer": "Written.",
+    "reviewed_content_hash": "ef21a2e810864535db527e15c09e09c4e1e49383fa71059a21325af293e152c2",
+    "option_assessment": [
+      "A general blanket permission is not procedure-specific informed consent.",
+      "Attendance may imply consent for examination, not a planned major operation.",
+      "Written informed consent is required for operative intervention.",
+      "Oral consent alone does not satisfy the planned surgical requirement."
+    ],
+    "evidence": [
+      {
+        "title": "Egyptian Health Council: الميثاق الأخلاقي للطب البشري",
+        "url": "https://www.ehc.gov.eg/ar/ethics-medicine",
+        "publication_or_update_date": "Ministerial Decision 238/2003; current official webpage inspected",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "Article 28",
+        "claim": "Surgical or quasi-surgical intervention requires written informed consent except lifesaving situations."
+      }
+    ],
+    "historical_comparison": [
+      {
+        "occurrence_id": "ETH-D05-Q51",
+        "historical_index": null,
+        "reviewed_source_index": 2,
+        "historical_comparison": "NO_HISTORICAL_ANSWER"
+      }
+    ],
+    "normalization_edits": {
+      "text": {
+        "before": "Which type of consent can permit physician to perform a major surgical operation to the patient?",
+        "after": "Which type of consent permits a physician to perform a major surgical operation?"
+      }
+    },
+    "reason": "All alternatives assessed for the final version; Editorial and contextual clarifications are declared in normalization_edits. The research-consent stem explicitly names the Egyptian rule; civil-malpractice and expert-evidence wording clarify scope; combined option labels are expanded to words.",
+    "uncertainty": "No independent adjudication; legal explanations use stated source scope, not a claim about every jurisdiction."
+  },
+  {
+    "group": "acpeffect",
+    "representative_occurrence": "ETH-D05-Q52",
+    "occurrence_ids": [
+      "ETH-D05-Q52"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.135165+00:00",
+    "source_question_hash": "03266e8af2fe9215763bbea213ae1181db2322a077c25347b38252807df31d19",
+    "canonical_id": "P43-CH1-CLIN-0008",
+    "decision": "accept_derived",
+    "final_question": {
+      "type": "mcq",
+      "text": "The main effect of advance care planning on end-of-life care is:",
+      "options": [
+        "Increased net costs of care",
+        "Decreased quality of care",
+        "Increased hope for family",
+        "Strengthened patient autonomy"
+      ],
+      "correctIndex": 3,
+      "explanation": "Advance care planning helps future treatment reflect the person’s own values and preferences when they cannot decide. This preserves autonomy beyond loss of decision-making capacity."
+    },
+    "final_answer": "Strengthened patient autonomy",
+    "reviewed_content_hash": "5ec8c8032e8d3882aa7dff29f04b5b33eec467930556bd48640768ce1a9d9054",
+    "option_assessment": [
+      "Increased costs are not its primary ethical purpose.",
+      "Reduced quality is not its intended effect.",
+      "Family reassurance may occur but is not the central autonomy mechanism.",
+      "Recording wishes strengthens self-determination."
+    ],
+    "evidence": [
+      {
+        "title": "NHS: Why plan ahead for end of life care?",
+        "url": "https://www.nhs.uk/tests-and-treatments/end-of-life-care/planning-ahead/why-plan-ahead/",
+        "publication_or_update_date": "2023-08-03",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "Why should I plan ahead?; How can I plan ahead?",
+        "claim": "Planning helps deliver care matching the person’s wishes and informs later decisions."
+      }
+    ],
+    "historical_comparison": [
+      {
+        "occurrence_id": "ETH-D05-Q52",
+        "historical_index": null,
+        "reviewed_source_index": 3,
+        "historical_comparison": "NO_HISTORICAL_ANSWER"
+      }
+    ],
+    "normalization_edits": {
+      "text": {
+        "before": "The main effect of advance care planning on end-of-life care is:",
+        "after": "The main effect of advance care planning on end-of-life care is:"
+      }
+    },
+    "reason": "All alternatives assessed for the final version; Editorial and contextual clarifications are declared in normalization_edits. The research-consent stem explicitly names the Egyptian rule; civil-malpractice and expert-evidence wording clarify scope; combined option labels are expanded to words.",
+    "uncertainty": "No independent adjudication; legal explanations use stated source scope, not a claim about every jurisdiction."
+  },
+  {
+    "group": "futile",
+    "representative_occurrence": "ETH-D05-Q53",
+    "occurrence_ids": [
+      "ETH-D05-Q53"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.135654+00:00",
+    "source_question_hash": "90e64fc50d4fcd3144c898615bdcacd44719beecf7f0ffb263e764337ff2d3b9",
+    "canonical_id": "P43-CH3-CLIN-0012",
+    "decision": "accept_derived",
+    "final_question": {
+      "type": "mcq",
+      "text": "Determining whether a treatment is futile depends on:",
+      "options": [
+        "Whether the treatment can keep the patient alive a bit longer.",
+        "What the family recommends",
+        "What the patient wants.",
+        "Whether the treatment can be of overall benefit to the patient's medical condition."
+      ],
+      "correctIndex": 3,
+      "explanation": "A treatment’s expected overall benefit determines whether it is medically futile. Merely prolonging biological life, or a request from the patient or family, does not establish a reasonable therapeutic benefit."
+    },
+    "final_answer": "Whether the treatment can be of overall benefit to the patient's medical condition.",
+    "reviewed_content_hash": "b8a1fec300fcacdf927f41fbbd464bcc86b486cf9209d4dfe7f2e82d594ed15c",
+    "option_assessment": [
+      "A small extension of life does not establish overall benefit.",
+      "Family preferences alone do not establish medical effectiveness.",
+      "Patient wishes matter but do not make an ineffective treatment effective.",
+      "Expected overall medical benefit is the relevant assessment."
+    ],
+    "evidence": [
+      {
+        "title": "WMA Medical Ethics Manual, third edition",
+        "url": "https://www.wma.net/what-we-do/education/medical-ethics-manual/ethics_manual_3rd_nov2015_en_1x1/",
+        "publication_or_update_date": "2015",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "printed pp. 46–47, futile or non-beneficial treatment",
+        "claim": "Futility concerns lack of reasonable recovery, improvement or benefit; benefit also needs discussion with the patient."
+      }
+    ],
+    "historical_comparison": [
+      {
+        "occurrence_id": "ETH-D05-Q53",
+        "historical_index": null,
+        "reviewed_source_index": 3,
+        "historical_comparison": "NO_HISTORICAL_ANSWER"
+      }
+    ],
+    "normalization_edits": {
+      "text": {
+        "before": "To determine which treatment can be considered as futile treatment, this depends on:",
+        "after": "Determining whether a treatment is futile depends on:"
+      }
+    },
+    "reason": "All alternatives assessed for the final version; Editorial and contextual clarifications are declared in normalization_edits. The research-consent stem explicitly names the Egyptian rule; civil-malpractice and expert-evidence wording clarify scope; combined option labels are expanded to words.",
+    "uncertainty": "No independent adjudication; legal explanations use stated source scope, not a claim about every jurisdiction."
+  },
+  {
+    "group": "embryotest",
+    "representative_occurrence": "ETH-D05-Q54",
+    "occurrence_ids": [
+      "ETH-D05-Q54"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.135849+00:00",
+    "source_question_hash": "2d93bf4ab7f93f5e254a71a95c9a1e5ca47a79fdb8df149071d784f109d7a54a",
+    "canonical_id": "P43-CH3-CLIN-0013",
+    "decision": "accept_derived",
+    "final_question": {
+      "type": "mcq",
+      "text": "Genetic testing of the embryos prior to their implantation in the IVF procedure is:",
+      "options": [
+        "Not allowed as it is unethical.",
+        "Allowed for screening of inherited disease",
+        "Allowed to increase male population",
+        "Not allowed by laws."
+      ],
+      "correctIndex": 1,
+      "explanation": "Preimplantation genetic testing can identify a specific inherited disorder in embryos before transfer. Disease testing is distinct from selecting embryos to increase the male population."
+    },
+    "final_answer": "Allowed for screening of inherited disease",
+    "reviewed_content_hash": "f26c7d7fcc41dd2b8abf6c2a2c6a3a6d4303be698f8a5a4bb14c1a372af10034",
+    "option_assessment": [
+      "Disease testing is not categorically unethical.",
+      "Testing inherited disease is an established indication.",
+      "Population sex manipulation is not the disease-testing indication.",
+      "There is no universal prohibition on disease testing."
+    ],
+    "evidence": [
+      {
+        "title": "HFEA: PGT-M and PGT-SR",
+        "url": "https://www.hfea.gov.uk/treatments/embryo-testing-and-treatments-for-disease/pre-implantation-genetic-testing-for-monogenic-disorders-pgt-m-and-pre-implantation-genetic-testing-for-chromosomal-structural-rearrangements-pgt-sr",
+        "publication_or_update_date": "2026-07-30",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "What is PGT-M?; Which genetic conditions can be tested?",
+        "claim": "PGT-M tests embryos for a known inherited condition; HFEA authorization is a UK framework and not evidence of Egyptian statute."
+      }
+    ],
+    "historical_comparison": [
+      {
+        "occurrence_id": "ETH-D05-Q54",
+        "historical_index": null,
+        "reviewed_source_index": 1,
+        "historical_comparison": "NO_HISTORICAL_ANSWER"
+      }
+    ],
+    "normalization_edits": {},
+    "reason": "All alternatives assessed for the final version; Editorial and contextual clarifications are declared in normalization_edits. The research-consent stem explicitly names the Egyptian rule; civil-malpractice and expert-evidence wording clarify scope; combined option labels are expanded to words.",
+    "uncertainty": "No independent adjudication; legal explanations use stated source scope, not a claim about every jurisdiction."
+  },
+  {
+    "group": "cadaverdonor",
+    "representative_occurrence": "ETH-D05-Q55",
+    "occurrence_ids": [
+      "ETH-D05-Q55"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.136057+00:00",
+    "source_question_hash": "02ed9668e3696d636351a1d7706553f99ba05891d6f15e1eef388942e4869bdf",
+    "canonical_id": "P43-CH3-CLIN-0014",
+    "decision": "accept_derived",
+    "final_question": {
+      "type": "mcq",
+      "text": "Which of the following is considered as a disadvantage of cadaver donor transplantation?",
+      "options": [
+        "Increase the emotional pressure on the donor",
+        "Increase the waiting time for transplantation",
+        "No respect for principle of justice as the donors are mainly poor people",
+        "Increase the chance of preparedness for the procedure"
+      ],
+      "correctIndex": 1,
+      "explanation": "Recipients awaiting a deceased-donor organ depend on suitable organ availability and allocation, so waiting can be prolonged. Living donation offers more opportunity to schedule the operation."
+    },
+    "final_answer": "Increase the waiting time for transplantation",
+    "reviewed_content_hash": "041e7f4f09936015334d3aed1d2e557741f9e41236613b51e54c68ff630657fa",
+    "option_assessment": [
+      "Pressure on a living person is not a characteristic disadvantage of deceased donation.",
+      "Waiting for a suitable available organ is a disadvantage.",
+      "The categorical claim about poor donors and justice is unsupported.",
+      "Deceased donation generally affords less scheduling opportunity."
+    ],
+    "evidence": [
+      {
+        "title": "HRSA OPTN: Glossary",
+        "url": "https://www.hrsa.gov/optn/patients/glossary",
+        "publication_or_update_date": "2026-03",
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "Wait List and Waiting Time entries",
+        "claim": "Waiting depends on donor availability and matching factors."
+      },
+      {
+        "title": "NHS Blood and Transplant: Living kidney donation",
+        "url": "https://nhsbtdbe.blob.core.windows.net/umbraco-assets-corp/37225/2526-0790-living-kidney-donation-leafletv1.pdf",
+        "publication_or_update_date": null,
+        "access_date": "2026-10-11",
+        "opened_full_text": true,
+        "limitation": "Only relevant sections inspected; not an independent review.",
+        "locator": "printed pp. 4–5",
+        "claim": "Living-donor surgery can be planned."
+      }
+    ],
+    "historical_comparison": [
+      {
+        "occurrence_id": "ETH-D05-Q55",
+        "historical_index": null,
+        "reviewed_source_index": 1,
+        "historical_comparison": "NO_HISTORICAL_ANSWER"
+      }
+    ],
+    "normalization_edits": {},
+    "reason": "All alternatives assessed for the final version; Editorial and contextual clarifications are declared in normalization_edits. The research-consent stem explicitly names the Egyptian rule; civil-malpractice and expert-evidence wording clarify scope; combined option labels are expanded to words.",
+    "uncertainty": "No independent adjudication; legal explanations use stated source scope, not a claim about every jurisdiction."
+  }
+]

@@ -1,0 +1,727 @@
+[
+  {
+    "canonical_id": "P43-CH2-CLIN-0001",
+    "group": "conf-except",
+    "chapter_id": 2,
+    "subject": "clinical",
+    "topic": "Informed Consent, Confidentiality & Professionalism",
+    "lecture": 1,
+    "source_occurrences": [
+      "ETH-D01-Q03",
+      "ETH-D02-Q14"
+    ],
+    "source_sections": [
+      "BG questions"
+    ],
+    "classification_reason": "Primary concept tested; existing three-chapter taxonomy retained."
+  },
+  {
+    "canonical_id": "P43-CH2-CLIN-0002",
+    "group": "impaired",
+    "chapter_id": 2,
+    "subject": "clinical",
+    "topic": "Informed Consent, Confidentiality & Professionalism",
+    "lecture": 1,
+    "source_occurrences": [
+      "ETH-D01-Q04"
+    ],
+    "source_sections": [
+      "BG questions"
+    ],
+    "classification_reason": "Primary concept tested; existing three-chapter taxonomy retained."
+  },
+  {
+    "canonical_id": "P43-CH1-CLIN-0001",
+    "group": "acp",
+    "chapter_id": 1,
+    "subject": "clinical",
+    "topic": "Principles of Bioethics & Autonomy",
+    "lecture": 1,
+    "source_occurrences": [
+      "ETH-D01-Q05"
+    ],
+    "source_sections": [
+      "BG questions"
+    ],
+    "classification_reason": "Primary concept tested; existing three-chapter taxonomy retained."
+  },
+  {
+    "canonical_id": "P43-CH2-CLIN-0003",
+    "group": "research-consent",
+    "chapter_id": 2,
+    "subject": "clinical",
+    "topic": "Informed Consent, Confidentiality & Professionalism",
+    "lecture": 1,
+    "source_occurrences": [
+      "ETH-D01-Q07"
+    ],
+    "source_sections": [
+      "BG questions"
+    ],
+    "classification_reason": "Primary concept tested; existing three-chapter taxonomy retained."
+  },
+  {
+    "canonical_id": "P43-CH3-CLIN-0001",
+    "group": "screen",
+    "chapter_id": 3,
+    "subject": "clinical",
+    "topic": "Ethical Dilemmas in Clinical Practice",
+    "lecture": 1,
+    "source_occurrences": [
+      "ETH-D01-Q09"
+    ],
+    "source_sections": [
+      "BG questions"
+    ],
+    "classification_reason": "Primary concept tested; existing three-chapter taxonomy retained."
+  },
+  {
+    "canonical_id": "P43-CH1-CLIN-0002",
+    "group": "side-a",
+    "chapter_id": 1,
+    "subject": "clinical",
+    "topic": "Principles of Bioethics & Autonomy",
+    "lecture": 1,
+    "source_occurrences": [
+      "ETH-D02-Q02",
+      "ETH-D04-Q02",
+      "ETH-D05-Q10"
+    ],
+    "source_sections": [
+      "13 January 2020 end examination",
+      "BG questions"
+    ],
+    "classification_reason": "Primary concept tested; existing three-chapter taxonomy retained."
+  },
+  {
+    "canonical_id": "P43-CH2-CLIN-0004",
+    "group": "meningitis",
+    "chapter_id": 2,
+    "subject": "clinical",
+    "topic": "Informed Consent, Confidentiality & Professionalism",
+    "lecture": 1,
+    "source_occurrences": [
+      "ETH-D02-Q04",
+      "ETH-D04-Q04",
+      "ETH-D05-Q12"
+    ],
+    "source_sections": [
+      "13 January 2020 end examination",
+      "BG questions"
+    ],
+    "classification_reason": "Primary concept tested; existing three-chapter taxonomy retained."
+  },
+  {
+    "canonical_id": "P43-CH2-CLIN-0005",
+    "group": "photo",
+    "chapter_id": 2,
+    "subject": "clinical",
+    "topic": "Informed Consent, Confidentiality & Professionalism",
+    "lecture": 1,
+    "source_occurrences": [
+      "ETH-D02-Q06",
+      "ETH-D04-Q06",
+      "ETH-D05-Q14"
+    ],
+    "source_sections": [
+      "13 January 2020 end examination",
+      "BG questions"
+    ],
+    "classification_reason": "Primary concept tested; existing three-chapter taxonomy retained."
+  },
+  {
+    "canonical_id": "P43-CH2-CLIN-0006",
+    "group": "impaired-hospital",
+    "chapter_id": 2,
+    "subject": "clinical",
+    "topic": "Informed Consent, Confidentiality & Professionalism",
+    "lecture": 1,
+    "source_occurrences": [
+      "ETH-D02-Q08",
+      "ETH-D04-Q09",
+      "ETH-D05-Q17"
+    ],
+    "source_sections": [
+      "13 January 2020 end examination",
+      "BG questions"
+    ],
+    "classification_reason": "Primary concept tested; existing three-chapter taxonomy retained."
+  },
+  {
+    "canonical_id": "P43-CH2-CLIN-0007",
+    "group": "stock",
+    "chapter_id": 2,
+    "subject": "clinical",
+    "topic": "Informed Consent, Confidentiality & Professionalism",
+    "lecture": 1,
+    "source_occurrences": [
+      "ETH-D02-Q13"
+    ],
+    "source_sections": [
+      "BG questions"
+    ],
+    "classification_reason": "Primary concept tested; existing three-chapter taxonomy retained."
+  },
+  {
+    "canonical_id": "P43-CH1-CLIN-0003",
+    "group": "care",
+    "chapter_id": 1,
+    "subject": "clinical",
+    "topic": "Principles of Bioethics & Autonomy",
+    "lecture": 1,
+    "source_occurrences": [
+      "ETH-D02-Q18"
+    ],
+    "source_sections": [
+      "BG questions"
+    ],
+    "classification_reason": "Primary concept tested; existing three-chapter taxonomy retained."
+  },
+  {
+    "canonical_id": "P43-CH2-CLIN-0008",
+    "group": "conflict",
+    "chapter_id": 2,
+    "subject": "clinical",
+    "topic": "Informed Consent, Confidentiality & Professionalism",
+    "lecture": 1,
+    "source_occurrences": [
+      "ETH-D02-Q19"
+    ],
+    "source_sections": [
+      "BG questions"
+    ],
+    "classification_reason": "Primary concept tested; existing three-chapter taxonomy retained."
+  },
+  {
+    "canonical_id": "P43-CH2-CLIN-0009",
+    "group": "keeping",
+    "chapter_id": 2,
+    "subject": "clinical",
+    "topic": "Informed Consent, Confidentiality & Professionalism",
+    "lecture": 1,
+    "source_occurrences": [
+      "ETH-D02-Q20",
+      "ETH-D03-Q02"
+    ],
+    "source_sections": [
+      "BG questions"
+    ],
+    "classification_reason": "Primary concept tested; existing three-chapter taxonomy retained."
+  },
+  {
+    "canonical_id": "P43-CH2-CLIN-0010",
+    "group": "adult",
+    "chapter_id": 2,
+    "subject": "clinical",
+    "topic": "Informed Consent, Confidentiality & Professionalism",
+    "lecture": 1,
+    "source_occurrences": [
+      "ETH-D02-Q21",
+      "ETH-D03-Q01"
+    ],
+    "source_sections": [
+      "BG questions"
+    ],
+    "classification_reason": "Primary concept tested; existing three-chapter taxonomy retained."
+  },
+  {
+    "canonical_id": "P43-CH2-CLIN-0011",
+    "group": "invalid",
+    "chapter_id": 2,
+    "subject": "clinical",
+    "topic": "Informed Consent, Confidentiality & Professionalism",
+    "lecture": 1,
+    "source_occurrences": [
+      "ETH-D03-Q03"
+    ],
+    "source_sections": [
+      "BG questions"
+    ],
+    "classification_reason": "Primary concept tested; existing three-chapter taxonomy retained."
+  },
+  {
+    "canonical_id": "P43-CH2-CLIN-0012",
+    "group": "terminate",
+    "chapter_id": 2,
+    "subject": "clinical",
+    "topic": "Informed Consent, Confidentiality & Professionalism",
+    "lecture": 1,
+    "source_occurrences": [
+      "ETH-D04-Q07",
+      "ETH-D05-Q15"
+    ],
+    "source_sections": [
+      "13 January 2020 end examination"
+    ],
+    "classification_reason": "Primary concept tested; existing three-chapter taxonomy retained."
+  },
+  {
+    "canonical_id": "P43-CH3-CLIN-0002",
+    "group": "abortion",
+    "chapter_id": 3,
+    "subject": "clinical",
+    "topic": "Ethical Dilemmas in Clinical Practice",
+    "lecture": 1,
+    "source_occurrences": [
+      "ETH-D04-Q10",
+      "ETH-D05-Q18"
+    ],
+    "source_sections": [
+      "13 January 2020 end examination"
+    ],
+    "classification_reason": "Primary concept tested; existing three-chapter taxonomy retained."
+  },
+  {
+    "canonical_id": "P43-CH3-CLIN-0003",
+    "group": "somatic",
+    "chapter_id": 3,
+    "subject": "clinical",
+    "topic": "Ethical Dilemmas in Clinical Practice",
+    "lecture": 1,
+    "source_occurrences": [
+      "ETH-D04-Q11",
+      "ETH-D05-Q19"
+    ],
+    "source_sections": [
+      "13 January 2020 end examination"
+    ],
+    "classification_reason": "Primary concept tested; existing three-chapter taxonomy retained."
+  },
+  {
+    "canonical_id": "P43-CH3-CLIN-0004",
+    "group": "falsify",
+    "chapter_id": 3,
+    "subject": "clinical",
+    "topic": "Ethical Dilemmas in Clinical Practice",
+    "lecture": 1,
+    "source_occurrences": [
+      "ETH-D04-Q13",
+      "ETH-D05-Q21"
+    ],
+    "source_sections": [
+      "13 January 2020 end examination"
+    ],
+    "classification_reason": "Primary concept tested; existing three-chapter taxonomy retained."
+  },
+  {
+    "canonical_id": "P43-CH3-CLIN-0005",
+    "group": "opioid",
+    "chapter_id": 3,
+    "subject": "clinical",
+    "topic": "Ethical Dilemmas in Clinical Practice",
+    "lecture": 1,
+    "source_occurrences": [
+      "ETH-D04-Q14",
+      "ETH-D05-Q22"
+    ],
+    "source_sections": [
+      "13 January 2020 end examination"
+    ],
+    "classification_reason": "Primary concept tested; existing three-chapter taxonomy retained."
+  },
+  {
+    "canonical_id": "P43-CH2-CLIN-0013",
+    "group": "valid",
+    "chapter_id": 2,
+    "subject": "clinical",
+    "topic": "Informed Consent, Confidentiality & Professionalism",
+    "lecture": 1,
+    "source_occurrences": [
+      "ETH-D05-Q01"
+    ],
+    "source_sections": [
+      "10 December 2022 continuous assessment, Form A"
+    ],
+    "classification_reason": "Primary concept tested; existing three-chapter taxonomy retained."
+  },
+  {
+    "canonical_id": "P43-CH1-CLIN-0004",
+    "group": "privacy",
+    "chapter_id": 1,
+    "subject": "clinical",
+    "topic": "Principles of Bioethics & Autonomy",
+    "lecture": 1,
+    "source_occurrences": [
+      "ETH-D05-Q02"
+    ],
+    "source_sections": [
+      "10 December 2022 continuous assessment, Form A"
+    ],
+    "classification_reason": "Primary concept tested; existing three-chapter taxonomy retained."
+  },
+  {
+    "canonical_id": "P43-CH2-CLIN-0014",
+    "group": "studentconf",
+    "chapter_id": 2,
+    "subject": "clinical",
+    "topic": "Informed Consent, Confidentiality & Professionalism",
+    "lecture": 1,
+    "source_occurrences": [
+      "ETH-D05-Q03"
+    ],
+    "source_sections": [
+      "10 December 2022 continuous assessment, Form A"
+    ],
+    "classification_reason": "Primary concept tested; existing three-chapter taxonomy retained."
+  },
+  {
+    "canonical_id": "P43-CH2-CLIN-0015",
+    "group": "studentexam",
+    "chapter_id": 2,
+    "subject": "clinical",
+    "topic": "Informed Consent, Confidentiality & Professionalism",
+    "lecture": 1,
+    "source_occurrences": [
+      "ETH-D05-Q05"
+    ],
+    "source_sections": [
+      "10 December 2022 continuous assessment, Form C"
+    ],
+    "classification_reason": "Primary concept tested; existing three-chapter taxonomy retained."
+  },
+  {
+    "canonical_id": "P43-CH1-CLIN-0005",
+    "group": "side-b",
+    "chapter_id": 1,
+    "subject": "clinical",
+    "topic": "Principles of Bioethics & Autonomy",
+    "lecture": 1,
+    "source_occurrences": [
+      "ETH-D05-Q08"
+    ],
+    "source_sections": [
+      "10 December 2022 continuous assessment, Form C"
+    ],
+    "classification_reason": "Primary concept tested; existing three-chapter taxonomy retained."
+  },
+  {
+    "canonical_id": "P43-CH2-CLIN-0016",
+    "group": "report",
+    "chapter_id": 2,
+    "subject": "clinical",
+    "topic": "Informed Consent, Confidentiality & Professionalism",
+    "lecture": 1,
+    "source_occurrences": [
+      "ETH-D05-Q24"
+    ],
+    "source_sections": [
+      "18 January 2023 end examination, Form B"
+    ],
+    "classification_reason": "Primary concept tested; existing three-chapter taxonomy retained."
+  },
+  {
+    "canonical_id": "P43-CH1-CLIN-0006",
+    "group": "refusal",
+    "chapter_id": 1,
+    "subject": "clinical",
+    "topic": "Principles of Bioethics & Autonomy",
+    "lecture": 1,
+    "source_occurrences": [
+      "ETH-D05-Q25"
+    ],
+    "source_sections": [
+      "18 January 2023 end examination, Form B"
+    ],
+    "classification_reason": "Primary concept tested; existing three-chapter taxonomy retained."
+  },
+  {
+    "canonical_id": "P43-CH1-CLIN-0007",
+    "group": "laws",
+    "chapter_id": 1,
+    "subject": "clinical",
+    "topic": "Principles of Bioethics & Autonomy",
+    "lecture": 1,
+    "source_occurrences": [
+      "ETH-D05-Q26"
+    ],
+    "source_sections": [
+      "18 January 2023 end examination, Form B"
+    ],
+    "classification_reason": "Primary concept tested; existing three-chapter taxonomy retained."
+  },
+  {
+    "canonical_id": "P43-CH3-CLIN-0006",
+    "group": "ivf-a",
+    "chapter_id": 3,
+    "subject": "clinical",
+    "topic": "Ethical Dilemmas in Clinical Practice",
+    "lecture": 1,
+    "source_occurrences": [
+      "ETH-D05-Q28"
+    ],
+    "source_sections": [
+      "18 January 2023 end examination, Form B"
+    ],
+    "classification_reason": "Primary concept tested; existing three-chapter taxonomy retained."
+  },
+  {
+    "canonical_id": "P43-CH3-CLIN-0007",
+    "group": "living",
+    "chapter_id": 3,
+    "subject": "clinical",
+    "topic": "Ethical Dilemmas in Clinical Practice",
+    "lecture": 1,
+    "source_occurrences": [
+      "ETH-D05-Q29"
+    ],
+    "source_sections": [
+      "18 January 2023 end examination, Form B"
+    ],
+    "classification_reason": "Primary concept tested; existing three-chapter taxonomy retained."
+  },
+  {
+    "canonical_id": "P43-CH2-CLIN-0017",
+    "group": "desk",
+    "chapter_id": 2,
+    "subject": "clinical",
+    "topic": "Informed Consent, Confidentiality & Professionalism",
+    "lecture": 1,
+    "source_occurrences": [
+      "ETH-D05-Q30"
+    ],
+    "source_sections": [
+      "18 January 2023 end examination, Form B"
+    ],
+    "classification_reason": "Primary concept tested; existing three-chapter taxonomy retained."
+  },
+  {
+    "canonical_id": "P43-CH2-CLIN-0018",
+    "group": "malnoharm",
+    "chapter_id": 2,
+    "subject": "clinical",
+    "topic": "Informed Consent, Confidentiality & Professionalism",
+    "lecture": 1,
+    "source_occurrences": [
+      "ETH-D05-Q31"
+    ],
+    "source_sections": [
+      "18 January 2023 end examination, Form B"
+    ],
+    "classification_reason": "Primary concept tested; existing three-chapter taxonomy retained."
+  },
+  {
+    "canonical_id": "P43-CH3-CLIN-0008",
+    "group": "fetal",
+    "chapter_id": 3,
+    "subject": "clinical",
+    "topic": "Ethical Dilemmas in Clinical Practice",
+    "lecture": 1,
+    "source_occurrences": [
+      "ETH-D05-Q32"
+    ],
+    "source_sections": [
+      "18 January 2023 end examination, Form B"
+    ],
+    "classification_reason": "Primary concept tested; existing three-chapter taxonomy retained."
+  },
+  {
+    "canonical_id": "P43-CH3-CLIN-0009",
+    "group": "livingdonor",
+    "chapter_id": 3,
+    "subject": "clinical",
+    "topic": "Ethical Dilemmas in Clinical Practice",
+    "lecture": 1,
+    "source_occurrences": [
+      "ETH-D05-Q35"
+    ],
+    "source_sections": [
+      "18 January 2023 end examination, Form B"
+    ],
+    "classification_reason": "Primary concept tested; existing three-chapter taxonomy retained."
+  },
+  {
+    "canonical_id": "P43-CH2-CLIN-0019",
+    "group": "withdraw",
+    "chapter_id": 2,
+    "subject": "clinical",
+    "topic": "Informed Consent, Confidentiality & Professionalism",
+    "lecture": 1,
+    "source_occurrences": [
+      "ETH-D05-Q37"
+    ],
+    "source_sections": [
+      "18 January 2023 end examination, Form B"
+    ],
+    "classification_reason": "Primary concept tested; existing three-chapter taxonomy retained."
+  },
+  {
+    "canonical_id": "P43-CH2-CLIN-0020",
+    "group": "expert",
+    "chapter_id": 2,
+    "subject": "clinical",
+    "topic": "Informed Consent, Confidentiality & Professionalism",
+    "lecture": 1,
+    "source_occurrences": [
+      "ETH-D05-Q40"
+    ],
+    "source_sections": [
+      "18 January 2023 end examination, Form C"
+    ],
+    "classification_reason": "Primary concept tested; existing three-chapter taxonomy retained."
+  },
+  {
+    "canonical_id": "P43-CH2-CLIN-0021",
+    "group": "threat",
+    "chapter_id": 2,
+    "subject": "clinical",
+    "topic": "Informed Consent, Confidentiality & Professionalism",
+    "lecture": 1,
+    "source_occurrences": [
+      "ETH-D05-Q42"
+    ],
+    "source_sections": [
+      "18 January 2023 end examination, Form C"
+    ],
+    "classification_reason": "Primary concept tested; existing three-chapter taxonomy retained."
+  },
+  {
+    "canonical_id": "P43-CH2-CLIN-0022",
+    "group": "tremor",
+    "chapter_id": 2,
+    "subject": "clinical",
+    "topic": "Informed Consent, Confidentiality & Professionalism",
+    "lecture": 1,
+    "source_occurrences": [
+      "ETH-D05-Q43"
+    ],
+    "source_sections": [
+      "18 January 2023 end examination, Form C"
+    ],
+    "classification_reason": "Primary concept tested; existing three-chapter taxonomy retained."
+  },
+  {
+    "canonical_id": "P43-CH2-CLIN-0023",
+    "group": "researchrisk",
+    "chapter_id": 2,
+    "subject": "clinical",
+    "topic": "Informed Consent, Confidentiality & Professionalism",
+    "lecture": 1,
+    "source_occurrences": [
+      "ETH-D05-Q44"
+    ],
+    "source_sections": [
+      "18 January 2023 end examination, Form C"
+    ],
+    "classification_reason": "Primary concept tested; existing three-chapter taxonomy retained."
+  },
+  {
+    "canonical_id": "P43-CH2-CLIN-0024",
+    "group": "labcommission",
+    "chapter_id": 2,
+    "subject": "clinical",
+    "topic": "Informed Consent, Confidentiality & Professionalism",
+    "lecture": 1,
+    "source_occurrences": [
+      "ETH-D05-Q45"
+    ],
+    "source_sections": [
+      "18 January 2023 end examination, Form C"
+    ],
+    "classification_reason": "Primary concept tested; existing three-chapter taxonomy retained."
+  },
+  {
+    "canonical_id": "P43-CH3-CLIN-0010",
+    "group": "germline",
+    "chapter_id": 3,
+    "subject": "clinical",
+    "topic": "Ethical Dilemmas in Clinical Practice",
+    "lecture": 1,
+    "source_occurrences": [
+      "ETH-D05-Q46"
+    ],
+    "source_sections": [
+      "18 January 2023 end examination, Form C"
+    ],
+    "classification_reason": "Primary concept tested; existing three-chapter taxonomy retained."
+  },
+  {
+    "canonical_id": "P43-CH3-CLIN-0011",
+    "group": "pig",
+    "chapter_id": 3,
+    "subject": "clinical",
+    "topic": "Ethical Dilemmas in Clinical Practice",
+    "lecture": 1,
+    "source_occurrences": [
+      "ETH-D05-Q47"
+    ],
+    "source_sections": [
+      "18 January 2023 end examination, Form C"
+    ],
+    "classification_reason": "Primary concept tested; existing three-chapter taxonomy retained."
+  },
+  {
+    "canonical_id": "P43-CH2-CLIN-0025",
+    "group": "surgery",
+    "chapter_id": 2,
+    "subject": "clinical",
+    "topic": "Informed Consent, Confidentiality & Professionalism",
+    "lecture": 1,
+    "source_occurrences": [
+      "ETH-D05-Q51"
+    ],
+    "source_sections": [
+      "18 January 2023 end examination, Form C"
+    ],
+    "classification_reason": "Primary concept tested; existing three-chapter taxonomy retained."
+  },
+  {
+    "canonical_id": "P43-CH1-CLIN-0008",
+    "group": "acpeffect",
+    "chapter_id": 1,
+    "subject": "clinical",
+    "topic": "Principles of Bioethics & Autonomy",
+    "lecture": 1,
+    "source_occurrences": [
+      "ETH-D05-Q52"
+    ],
+    "source_sections": [
+      "18 January 2023 end examination, Form C"
+    ],
+    "classification_reason": "Primary concept tested; existing three-chapter taxonomy retained."
+  },
+  {
+    "canonical_id": "P43-CH3-CLIN-0012",
+    "group": "futile",
+    "chapter_id": 3,
+    "subject": "clinical",
+    "topic": "Ethical Dilemmas in Clinical Practice",
+    "lecture": 1,
+    "source_occurrences": [
+      "ETH-D05-Q53"
+    ],
+    "source_sections": [
+      "18 January 2023 end examination, Form C"
+    ],
+    "classification_reason": "Primary concept tested; existing three-chapter taxonomy retained."
+  },
+  {
+    "canonical_id": "P43-CH3-CLIN-0013",
+    "group": "embryotest",
+    "chapter_id": 3,
+    "subject": "clinical",
+    "topic": "Ethical Dilemmas in Clinical Practice",
+    "lecture": 1,
+    "source_occurrences": [
+      "ETH-D05-Q54"
+    ],
+    "source_sections": [
+      "18 January 2023 end examination, Form C"
+    ],
+    "classification_reason": "Primary concept tested; existing three-chapter taxonomy retained."
+  },
+  {
+    "canonical_id": "P43-CH3-CLIN-0014",
+    "group": "cadaverdonor",
+    "chapter_id": 3,
+    "subject": "clinical",
+    "topic": "Ethical Dilemmas in Clinical Practice",
+    "lecture": 1,
+    "source_occurrences": [
+      "ETH-D05-Q55"
+    ],
+    "source_sections": [
+      "18 January 2023 end examination, Form C"
+    ],
+    "classification_reason": "Primary concept tested; existing three-chapter taxonomy retained."
+  }
+]

@@ -1,0 +1,86 @@
+{
+  "sources": [
+    {
+      "document_id": "ETH-D01",
+      "filename": "Bg MCQ-1 Ethics .pdf",
+      "path": "designated-inputs/Bg MCQ-1 Ethics .pdf",
+      "sha256": "5d98caa940baa7015da91f5bf7c9876752eb9ddeff409a2b733b9b3a47492ca0",
+      "bytes": 199173,
+      "pages": 2,
+      "page_text_lengths": [
+        1183,
+        960
+      ]
+    },
+    {
+      "document_id": "ETH-D02",
+      "filename": "Bg MCQ-2 Ethics .pdf",
+      "path": "designated-inputs/Bg MCQ-2 Ethics .pdf",
+      "sha256": "92ffd5b5432dd7f86cb1f933fc446e14e6f0f9c98b02b1dd89883914c3a11120",
+      "bytes": 2245610,
+      "pages": 5,
+      "page_text_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "document_id": "ETH-D03",
+      "filename": "Bg MCQ-3 Ethics .pdf",
+      "path": "designated-inputs/Bg MCQ-3 Ethics .pdf",
+      "sha256": "af3d8fce26e2a29c826d7c9029abdbf018c0fb32db43309aae56f333850b9fa2",
+      "bytes": 139478,
+      "pages": 1,
+      "page_text_lengths": [
+        517
+      ]
+    },
+    {
+      "document_id": "ETH-D04",
+      "filename": "Bg MCQ-4 Ethics .pdf",
+      "path": "designated-inputs/Bg MCQ-4 Ethics .pdf",
+      "sha256": "a0b537398c1be83e232ba272b3108972cff633ca5f23b5f225c7397fa9317d82",
+      "bytes": 302257,
+      "pages": 2,
+      "page_text_lengths": [
+        0,
+        0
+      ]
+    },
+    {
+      "document_id": "ETH-D05",
+      "filename": "‎⁨اسئلة امتحانات سابقه ethics⁩.pdf",
+      "path": "designated-inputs/‎⁨اسئلة امتحانات سابقه ethics⁩.pdf",
+      "sha256": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842",
+      "bytes": 4788316,
+      "pages": 14,
+      "page_text_lengths": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "destination": {
+    "year": 3,
+    "semester": 1,
+    "moduleCode": "P4-3"
+  },
+  "publication": "not explicitly requested; local import and verification",
+  "answer_policy": "evidence-grounded review",
+  "taxonomy": "existing bank"
+}

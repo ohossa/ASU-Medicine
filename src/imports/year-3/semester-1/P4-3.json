@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "comingSoon": true,
+  "comingSoon": false,
   "meta": {
     "moduleCode": "P4-3",
     "moduleName": "Medical Ethics",
     "year": 3,
     "semester": 1,
-    "creditPoints": 1,
-    "totalMarks": 20,
+    "creditPoints": 1.5,
+    "totalMarks": 30,
     "keywords": [
       "ethics",
       "bioethics",
@@ -21,8 +21,141 @@
       "subtitle": "Principles of Bioethics & Autonomy",
       "emoji": "⚖️",
       "page": 1,
-      "lectureRange": "Lectures 1",
-      "subjects": [],
+      "lectureRange": "Topic 1",
+      "subjects": [
+        {
+          "id": "clinical",
+          "name": "Medical Ethics",
+          "iconName": "Scale",
+          "lectures": "Topic 1",
+          "lectureCount": 1,
+          "lectureNames": [
+            "Principles of Bioethics & Autonomy"
+          ],
+          "questions": [
+            {
+              "id": "P43-CH1-CLIN-0001",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Advance care planning includes:",
+              "explanation": "Advance care planning can include spoken preferences, a nominated proxy and written treatment instructions. These communicate the person’s wishes if they later cannot decide; legal formalities vary by jurisdiction.",
+              "options": [
+                "Oral statement",
+                "Surrogate proxy decision maker",
+                "Instructive directive",
+                "All of the above"
+              ],
+              "correctIndex": 3,
+              "modelAnswer": null
+            },
+            {
+              "id": "P43-CH1-CLIN-0002",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Withdrawal of a medication after intolerable adverse effects primarily respects which principle?",
+              "explanation": "Stopping a drug because its adverse effects are intolerable primarily illustrates nonmaleficence: avoiding further treatment-related harm.",
+              "options": [
+                "Autonomy",
+                "Beneficence",
+                "Nonmaleficence",
+                "Justice"
+              ],
+              "correctIndex": 2,
+              "modelAnswer": null
+            },
+            {
+              "id": "P43-CH1-CLIN-0003",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which one of the following is to be avoided in the treatment of a patient by the physician?",
+              "explanation": "Clinical care must meet professional standards without discrimination. A patient’s ability to pay may affect practical arrangements, but it must not determine how carefully the physician treats that patient.",
+              "options": [
+                "Care for the patient in accordance with an objective standard of excellence.",
+                "Care for the patient to the best of his ability.",
+                "Act with the same degree of care as other physician of his status within scientific knowledge.",
+                "Act with a degree of care proportionate with the ability of the patient to pay."
+              ],
+              "correctIndex": 3,
+              "modelAnswer": null
+            },
+            {
+              "id": "P43-CH1-CLIN-0004",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "When a doctor hides facial features in a patient’s photograph presented at a medical conference, which ethical principle is being respected?",
+              "explanation": "Concealing identifying facial features aims to protect the patient’s privacy. Other details may still identify the patient, so hiding the face alone does not guarantee anonymity.",
+              "options": [
+                "Beneficence",
+                "Privacy",
+                "Nonmaleficence.",
+                "Autonomy"
+              ],
+              "correctIndex": 1,
+              "modelAnswer": null
+            },
+            {
+              "id": "P43-CH1-CLIN-0005",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "When a doctor stops medication because severe adverse effects occur, which principle is primarily being respected?",
+              "explanation": "Severe adverse effects make continued treatment harmful. Stopping the medication primarily applies nonmaleficence, the obligation to avoid further treatment-related harm.",
+              "options": [
+                "Privacy",
+                "Nonmaleficence.",
+                "Autonomy",
+                "Beneficence"
+              ],
+              "correctIndex": 1,
+              "modelAnswer": null
+            },
+            {
+              "id": "P43-CH1-CLIN-0006",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "When the doctor accepts patient's refusal of treatment, he respects the ethical principle of:",
+              "explanation": "Respecting an informed treatment refusal recognizes the patient’s autonomy: the right of a person with decision-making capacity to accept or decline care.",
+              "options": [
+                "Non maleficence",
+                "Beneficence",
+                "Justice",
+                "Autonomy"
+              ],
+              "correctIndex": 3,
+              "modelAnswer": null
+            },
+            {
+              "id": "P43-CH1-CLIN-0007",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which term refers to rules that govern society and are enforced by punishments for violations?",
+              "explanation": "Laws are enforceable societal rules. Ethics and morality guide judgments about right conduct, but they are not identical to the legal system.",
+              "options": [
+                "Beliefs",
+                "Ethics",
+                "Laws",
+                "Morals"
+              ],
+              "correctIndex": 2,
+              "modelAnswer": null
+            },
+            {
+              "id": "P43-CH1-CLIN-0008",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The main effect of advance care planning on end-of-life care is:",
+              "explanation": "Advance care planning helps future treatment reflect the person’s own values and preferences when they cannot decide. This preserves autonomy beyond loss of decision-making capacity.",
+              "options": [
+                "Increased net costs of care",
+                "Decreased quality of care",
+                "Increased hope for family",
+                "Strengthened patient autonomy"
+              ],
+              "correctIndex": 3,
+              "modelAnswer": null
+            }
+          ]
+        }
+      ],
       "keywords": []
     },
     {
@@ -31,8 +164,396 @@
       "subtitle": "Informed Consent, Confidentiality & Professionalism",
       "emoji": "📄",
       "page": 2,
-      "lectureRange": "Lectures 2",
-      "subjects": [],
+      "lectureRange": "Topic 1",
+      "subjects": [
+        {
+          "id": "clinical",
+          "name": "Medical Ethics",
+          "iconName": "Scale",
+          "lectures": "Topic 1",
+          "lectureCount": 1,
+          "lectureNames": [
+            "Informed Consent, Confidentiality & Professionalism"
+          ],
+          "questions": [
+            {
+              "id": "P43-CH2-CLIN-0001",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "All of these are true about confidentiality EXCEPT:",
+              "explanation": "Confidentiality protects all personal information learned through the professional relationship, not just medical details. Exceptional disclosure may be justified to prevent serious harm.",
+              "options": [
+                "Based on mutual trust between doctor and patient.",
+                "It is maintained to medical information only",
+                "Applied to conversations between doctors and patients",
+                "Sometimes keeping of it would cause harm"
+              ],
+              "correctIndex": 1,
+              "modelAnswer": null
+            },
+            {
+              "id": "P43-CH2-CLIN-0002",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Dr. X is a senior physician in an academic hospital. His drug addiction is affecting his performance at work. His treating physician advised him to stop working until treatment is completed, but he refused. What should the treating physician do?",
+              "explanation": "When impairment threatens patients and the colleague refuses to stop unsafe practice, patient protection justifies escalation to the appropriate institution or regulator, with only necessary information disclosed.",
+              "options": [
+                "Respect the confidentiality of his colleague",
+                "Report to the healthcare institution or regulatory authorities",
+                "Terminate the doctor–patient relationship to avoid embarrassing situations",
+                "Warn the patients who are dealing with this physician"
+              ],
+              "correctIndex": 1,
+              "modelAnswer": null
+            },
+            {
+              "id": "P43-CH2-CLIN-0003",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Under Egyptian medical ethics rules, regarding consent of medical research participants, all are true EXCEPT:",
+              "explanation": "Participants may withdraw from research without penalty. Egyptian medical ethics rules require written informed consent and understandable information; starting the study does not remove the right to leave.",
+              "options": [
+                "It must be voluntarily given",
+                "It must be written consent",
+                "It cannot be withdrawn once the research has begun",
+                "It must be at a level understood by the participants"
+              ],
+              "correctIndex": 2,
+              "modelAnswer": null
+            },
+            {
+              "id": "P43-CH2-CLIN-0004",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Breach of confidentiality is justified in the following condition:",
+              "explanation": "Reporting a suspected epidemic infection to the health authority is an Egyptian professional duty. Celebrity status, death or a family’s interest does not by itself authorize disclosure.",
+              "options": [
+                "The doctor wants to disclose information about a patient after his death.",
+                "The doctor wants to disclose personal medical information of a famous actor to the media.",
+                "The doctor wants to report a case of meningitis to health authority.",
+                "The doctor wants to inform the patient's family that he has cancer despite of his wish to keep confidential."
+              ],
+              "correctIndex": 2,
+              "modelAnswer": null
+            },
+            {
+              "id": "P43-CH2-CLIN-0005",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "During a clinical session, you see a patient with a painful skin lesion. You take a photograph with your smartphone after obtaining the patient’s consent. Your colleague later asks you to forward the image. What should you do?",
+              "explanation": "Permission to take a clinical photograph does not automatically include permission to share it for teaching. Obtain consent covering the proposed disclosure and protect identifying information.",
+              "options": [
+                "Send the image to your colleague and ask him not to forward it",
+                "Send the image with all relevant case details",
+                "Explain that you cannot do this without the patient’s consent",
+                "Send the image to the students’ Facebook page so everyone can access it"
+              ],
+              "correctIndex": 2,
+              "modelAnswer": null
+            },
+            {
+              "id": "P43-CH2-CLIN-0006",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Dr. X is a surgeon in an academic hospital. His drug addiction is affecting his performance at work. His treating physician advised him to stop working until treatment is completed, but he refused. What should the treating physician do?",
+              "explanation": "A surgeon whose addiction is affecting practice and who refuses to stop creates a patient-safety risk. Escalate through the hospital’s responsible authority rather than keeping the risk secret.",
+              "options": [
+                "Respect the confidentiality of his colleague",
+                "Report to the hospital’s director",
+                "Terminate the doctor–patient relationship to avoid embarrassing situations",
+                "Warn the patients who are dealing with this physician"
+              ],
+              "correctIndex": 1,
+              "modelAnswer": null
+            },
+            {
+              "id": "P43-CH2-CLIN-0007",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "In the teaching hospital, you see a colleague putting medical equipment from the stockroom into his bag. He says he wants to practise his skills and asks you not to tell anyone. What would you do?",
+              "explanation": "First address the colleague privately and explain the professional risks of taking hospital equipment without authorization. If the conduct is not resolved, escalate through the appropriate supervisor.",
+              "options": [
+                "Do not report him to preserve your relationship",
+                "Do not report him to preserve the hospital’s reputation",
+                "Support him as consistent with professional standards",
+                "Explain to him the risks of this situation"
+              ],
+              "correctIndex": 3,
+              "modelAnswer": null
+            },
+            {
+              "id": "P43-CH2-CLIN-0008",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "If a doctor acts as a promoter for a pharmaceutical company, this is considered:",
+              "explanation": "Promoting a company’s products can place commercial interests in conflict with duties to patients. Egyptian medical ethics rules prohibit allowing a doctor’s name to be used to promote medicines commercially.",
+              "options": [
+                "Conflict of interest.",
+                "Autonomy.",
+                "Beneficence.",
+                "Non-Maleficence."
+              ],
+              "correctIndex": 0,
+              "modelAnswer": null
+            },
+            {
+              "id": "P43-CH2-CLIN-0009",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Keeping patients’ information confidential is called:",
+              "explanation": "Confidentiality is the duty to safeguard information entrusted to a healthcare professional and disclose it only with appropriate consent or a justified exception.",
+              "options": [
+                "Beneficence",
+                "Confidentiality",
+                "Maleficence",
+                "autonomy"
+              ],
+              "correctIndex": 1,
+              "modelAnswer": null
+            },
+            {
+              "id": "P43-CH2-CLIN-0010",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "For valid consent, the person should be:",
+              "explanation": "For an adult giving their own consent, both legal adulthood and decision-making competence are relevant; consent must also be voluntary and informed. Being forced is incompatible with valid consent.",
+              "options": [
+                "Adult",
+                "Forced",
+                "Competent",
+                "Both adult and competent"
+              ],
+              "correctIndex": 3,
+              "modelAnswer": null
+            },
+            {
+              "id": "P43-CH2-CLIN-0011",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which characteristic makes a person’s consent invalid?",
+              "explanation": "Consent obtained under threat is not voluntary. Illiteracy alone does not invalidate consent: explain the information in an accessible way and check understanding.",
+              "options": [
+                "Cannot read or write",
+                "Is under threat",
+                "Is competent",
+                "Both inability to read or write and being under threat"
+              ],
+              "correctIndex": 1,
+              "modelAnswer": null
+            },
+            {
+              "id": "P43-CH2-CLIN-0012",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "A physician cannot terminate the relationship with a patient if:",
+              "explanation": "A physician must provide urgent care and must not abandon a patient who needs emergency treatment. When ending nonurgent care, continuity arrangements remain necessary.",
+              "options": [
+                "The patient refused to pay for the physician's service",
+                "The patient refused to comply to physician's instructions",
+                "The patient needs emergency treatment.",
+                "The physician is moving or stopping practice"
+              ],
+              "correctIndex": 2,
+              "modelAnswer": null
+            },
+            {
+              "id": "P43-CH2-CLIN-0013",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "A valid consent is obtained from a person who is:",
+              "explanation": "The person giving consent must be able to understand and decide, and the decision must be voluntary. Threats and coercion undermine consent; a minor’s legal authority cannot be assumed from age alone.",
+              "options": [
+                "Under threat",
+                "14-year-old",
+                "Competent",
+                "Coerced"
+              ],
+              "correctIndex": 2,
+              "modelAnswer": null
+            },
+            {
+              "id": "P43-CH2-CLIN-0014",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "A medical student during clinical training sessions:",
+              "explanation": "Students share professional confidentiality duties. They must identify themselves honestly and work within appropriate supervision; learner status does not remove obligations to patients.",
+              "options": [
+                "Can present himself to the patients as a doctor",
+                "Can do any procedure without supervision from the senior staff.",
+                "Has no obligations toward the patients as he is still a learner.",
+                "Has no right to reveal the patient's information without his consent"
+              ],
+              "correctIndex": 3,
+              "modelAnswer": null
+            },
+            {
+              "id": "P43-CH2-CLIN-0015",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "As a medical student, you can:",
+              "explanation": "A medical student may examine a patient with the patient’s agreement and appropriate supervision. The student must disclose their status and cannot prescribe independently as a qualified physician.",
+              "options": [
+                "Reveal the patient's information without his consent.",
+                "Present yourself to the patients as a doctor",
+                "Prescribe medications to the patients in the hospital's clinic independently.",
+                "Do medical examination under supervision from a senior staff."
+              ],
+              "correctIndex": 3,
+              "modelAnswer": null
+            },
+            {
+              "id": "P43-CH2-CLIN-0016",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "When a doctor saw one of his colleagues making a medical mistake with his patient, what is the appropriate response to take?",
+              "explanation": "Patient safety takes priority when a colleague’s mistake needs attention. Escalate to the responsible senior clinician so the error can be assessed and addressed through the appropriate process.",
+              "options": [
+                "He has a duty to report him to the senior doctor",
+                "His relationship with this colleague should be priority",
+                "He should confront him in front of the working team",
+                "He is obligated to report him to the court"
+              ],
+              "correctIndex": 0,
+              "modelAnswer": null
+            },
+            {
+              "id": "P43-CH2-CLIN-0017",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "You are working at the desk in your hospital when another employee of the hospital asks for information about a patient who was admitted last night with cancer colon. You know the details of the case. The person requesting the information states that he is a close friend and co-worker of your patient. He shows you proper identification proving he really is a co-worker of your patient who also works in the hospital. Which of the following is the most appropriate response to this request?",
+              "explanation": "Being a hospital employee, friend or relative does not create permission to access another patient’s information. Without a care-related or other justified basis, obtain the patient’s authorization before disclosure.",
+              "options": [
+                "Let him sign a release form before revealing the information",
+                "Give him the information on the patient.",
+                "Inform him that you are not at liberty to give details regarding the patient without the patient's permission.",
+                "Give him the information only if he is a relative of the patient."
+              ],
+              "correctIndex": 2,
+              "modelAnswer": null
+            },
+            {
+              "id": "P43-CH2-CLIN-0018",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following situations does NOT support a civil medical malpractice claim against the doctor?",
+              "explanation": "A civil negligence claim ordinarily requires an injury or compensable loss caused by a breach of duty. A mistake without resulting harm lacks that damages element, although it may still warrant professional review.",
+              "options": [
+                "The act of commission passed without harm.",
+                "The act of omission resulted into financial costs.",
+                "The act of commission resulted into patient's infirmity.",
+                "The act of omission resulted into physical damage"
+              ],
+              "correctIndex": 0,
+              "modelAnswer": null
+            },
+            {
+              "id": "P43-CH2-CLIN-0019",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "If a participant of medical research wants to withdraw from the study, he can withdraw:",
+              "explanation": "Research participation is voluntary throughout the study. A participant may withdraw without giving a reason or obtaining the investigator’s permission, and withdrawal must not prejudice clinical care.",
+              "options": [
+                "If the researcher gives permission to withdraw.",
+                "At any time without any explanation.",
+                "After explaining reason of withdrawal to the researcher.",
+                "Not before data collection"
+              ],
+              "correctIndex": 1,
+              "modelAnswer": null
+            },
+            {
+              "id": "P43-CH2-CLIN-0020",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The professional yardstick for a medical mistake is ordinarily established by:",
+              "explanation": "Expert testimony ordinarily explains the applicable professional standard of care and whether the clinical conduct met it. Lawyers argue the case and courts decide it, but expert clinical evidence supplies the professional comparison.",
+              "options": [
+                "The patient' attorney.",
+                "An expert testimony.",
+                "The prosecutor.",
+                "The judge."
+              ],
+              "correctIndex": 1,
+              "modelAnswer": null
+            },
+            {
+              "id": "P43-CH2-CLIN-0021",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "You are a psychiatrist, in a session with a schizophrenic patient who asks you if you can keep a secret and then tells you that he is planning to kill his boss. You say, “Of course, everything you tell me during the session will always be confidential”. What should you do?",
+              "explanation": "A credible serious threat against an identifiable person can justify breaching confidentiality to protect them. Escalate urgently, disclose only necessary information and involve the threatened person and appropriate law enforcement when required for protection.",
+              "options": [
+                "Keep the patient's session confidential but make attempts to discourage the patient from his plan.",
+                "Inform your medical director and let him handle it.",
+                "Inform the patient's family and let them manage the situation.",
+                "Inform both the patient's boss as well as law enforcement of the threat."
+              ],
+              "correctIndex": 3,
+              "modelAnswer": null
+            },
+            {
+              "id": "P43-CH2-CLIN-0022",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "When a doctor noticed tremors in his colleague's hand while performing surgical procedure, what should he do?",
+              "explanation": "Possible impairment affecting surgical safety should be addressed with the colleague and appropriate medical assessment. If unsafe practice is not resolved, escalate rather than ignore the risk.",
+              "options": [
+                "He should inform his colleague's patients for their protection.",
+                "He should ask his colleague to seek medical advice, or he will report him",
+                "There is no action to do as this is colleague's personal issue",
+                "He should not interfere to keep good relationship with his colleague."
+              ],
+              "correctIndex": 1,
+              "modelAnswer": null
+            },
+            {
+              "id": "P43-CH2-CLIN-0023",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the followings is considered as violation of ethical principles in medical research?",
+              "explanation": "Informed research consent requires disclosure of foreseeable risks and burdens. Coding participant data protects confidentiality; placebo use and randomization are not inherently unethical when their safeguards are met.",
+              "options": [
+                "Use of placebo control in clinical trials.",
+                "Use of codes to refers to the participants in the recorded data",
+                "Not informing the proposed participant with the predicted risks of the research.",
+                "Use randomization to select control group"
+              ],
+              "correctIndex": 2,
+              "modelAnswer": null
+            },
+            {
+              "id": "P43-CH2-CLIN-0024",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following conducts IS NOT acceptable from the physician?",
+              "explanation": "Payments for referring patients to a laboratory create a financial incentive unrelated to the patient’s best interests. Egyptian medical ethics rules prohibit such referral commissions.",
+              "options": [
+                "To receive free samples of new drug from medical representatives",
+                "To share in campaign to present medical care to people in distant and remote areas.",
+                "To meet representatives who are promoting their latest drugs.",
+                "To receive payments (commission) to refer patients to certain labs"
+              ],
+              "correctIndex": 3,
+              "modelAnswer": null
+            },
+            {
+              "id": "P43-CH2-CLIN-0025",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which type of consent permits a physician to perform a major surgical operation?",
+              "explanation": "For a planned major operation, Egyptian medical ethics rules require written informed consent from the patient or legal representative. Emergency lifesaving care has a specified exception.",
+              "options": [
+                "Blanket.",
+                "Implied.",
+                "Written.",
+                "Oral."
+              ],
+              "correctIndex": 2,
+              "modelAnswer": null
+            }
+          ]
+        }
+      ],
       "keywords": []
     },
     {
@@ -41,8 +562,231 @@
       "subtitle": "Ethical Dilemmas in Clinical Practice",
       "emoji": "🏥",
       "page": 3,
-      "lectureRange": "Lectures 3",
-      "subjects": [],
+      "lectureRange": "Topic 1",
+      "subjects": [
+        {
+          "id": "clinical",
+          "name": "Medical Ethics",
+          "iconName": "Scale",
+          "lectures": "Topic 1",
+          "lectureCount": 1,
+          "lectureNames": [
+            "Ethical Dilemmas in Clinical Practice"
+          ],
+          "questions": [
+            {
+              "id": "P43-CH3-CLIN-0001",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following is true of genetic screening?",
+              "explanation": "Genetic screening tests a population or an at-risk group to identify people with a condition or increased inherited risk. It does not remove genes or acquire another person’s DNA without permission.",
+              "options": [
+                "It involves testing entire groups at risk for a specific genetic disease.",
+                "It refers to the act of acquiring the genetic material of another human being without his or her permission.",
+                "It is an expensive process that is considered to be medically unnecessary.",
+                "It strives to improve the genetic constitution of an individual by removing bad genes."
+              ],
+              "correctIndex": 0,
+              "modelAnswer": null
+            },
+            {
+              "id": "P43-CH3-CLIN-0002",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "According to Egyptian law, abortion is legal and ethical in which of the following conditions?",
+              "explanation": "Egyptian medical ethics rules permit abortion for medical indications threatening the mother’s health, with the required specialist certification or an emergency lifesaving report. The other listed reasons alone do not meet that rule.",
+              "options": [
+                "If there is a high risk that the child will be born with cleft lip and palate",
+                "If there is a high risk that the child will be born with mental retardation.",
+                "If there is high risk for the mother to have severe complications with late pregnancy.",
+                "If the mother wish to do an abortion procedure for financial and social reasons."
+              ],
+              "correctIndex": 2,
+              "modelAnswer": null
+            },
+            {
+              "id": "P43-CH3-CLIN-0003",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Somatic cell gene therapy:",
+              "explanation": "Somatic gene therapy targets the recipient’s nonreproductive cells. Unlike germline changes, its intended genetic alteration is not inherited by future generations, reducing the intergenerational concern.",
+              "options": [
+                "Aims at eventually making asexual reproduction of an organism.",
+                "Faces greater moral and legal limitations compared to germ-line gene therapy.",
+                "Is potentially less risky than germ-line gene therapy.",
+                "Affects future generations."
+              ],
+              "correctIndex": 2,
+              "modelAnswer": null
+            },
+            {
+              "id": "P43-CH3-CLIN-0004",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "A doctor changes laboratory results of his research to make the findings more impressive and significant. This is termed:",
+              "explanation": "Changing real laboratory results so that the research record misrepresents the findings is falsification. Fabrication means inventing data, while plagiarism means appropriating another person’s work.",
+              "options": [
+                "Plagiarism",
+                "Fabrication",
+                "Falsification",
+                "Sabotage"
+              ],
+              "correctIndex": 2,
+              "modelAnswer": null
+            },
+            {
+              "id": "P43-CH3-CLIN-0005",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "A terminally ill cancer patient begged you to end his life by using a large dose of opioids, what should you do?",
+              "explanation": "Intentionally giving a lethal opioid dose to cause death is prohibited under Egyptian medical ethics rules. Respect for autonomy does not authorize intentional killing.",
+              "options": [
+                "I should help him to die in peace.",
+                "I can advise him to the lethal dose that will end his life shortly.",
+                "I should respect patient's autonomy.",
+                "It's not ethical or legal to help him to die."
+              ],
+              "correctIndex": 3,
+              "modelAnswer": null
+            },
+            {
+              "id": "P43-CH3-CLIN-0006",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "According to Egyptian laws, which of the following is ethically permissible during IVF?",
+              "explanation": "Embryos may be stored for later use by the same married couple under appropriate safeguards. Egyptian rules require the husband’s sperm and wife’s ovum during a valid marriage and exclude third-party reproduction.",
+              "options": [
+                "Storage of embryos till usage for the same valid couple.",
+                "Implantation of the preserved embryos in a woman after death of her husband",
+                "Surrogate motherhood.",
+                "IVF may involve a third-party donation."
+              ],
+              "correctIndex": 0,
+              "modelAnswer": null
+            },
+            {
+              "id": "P43-CH3-CLIN-0007",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Living wills are documents which are meant to guide decision making when:",
+              "explanation": "A living will records treatment wishes for a time when the patient cannot make or communicate the relevant decision. Family absence or disagreement alone does not activate it; terminal illness is not its only possible setting.",
+              "options": [
+                "Multiple attempts at resuscitation have failed",
+                "The patient's family cannot be contacted",
+                "The patient's family disagrees with the course of treatment",
+                "The patient is rendered incompetent or unresponsive by an illness judged to be terminal"
+              ],
+              "correctIndex": 3,
+              "modelAnswer": null
+            },
+            {
+              "id": "P43-CH3-CLIN-0008",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Transplantation of fetal stem cells to a diseased person is termed as:",
+              "explanation": "In the ordinary human-to-human context of this question, cells from a genetically different human donor form an allograft. An autograft comes from the recipient, an isograft from a genetically identical donor and a xenograft from another species.",
+              "options": [
+                "Xenotransplantation",
+                "Isograft",
+                "Allotransplantation",
+                "Auto transplantation"
+              ],
+              "correctIndex": 2,
+              "modelAnswer": null
+            },
+            {
+              "id": "P43-CH3-CLIN-0009",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following is considered as an advantage of living donor transplantation?",
+              "explanation": "A living-donor transplant can be arranged in advance, allowing time to prepare the donor and recipient. Increased pressure on the donor or stronger immune rejection would be disadvantages, not benefits.",
+              "options": [
+                "Increase the emotional pressure on the donor",
+                "Increase the immune response of the recipient",
+                "Increase the chance of preparedness for the procedure",
+                "Increase the waiting list for transplantation"
+              ],
+              "correctIndex": 2,
+              "modelAnswer": null
+            },
+            {
+              "id": "P43-CH3-CLIN-0010",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Germline gene therapy involves:",
+              "explanation": "Germline gene therapy changes reproductive cells or their precursors so that a genetic alteration can be inherited. The defining distinction is heritability, not population selection or enhancement.",
+              "options": [
+                "Selection of characteristics to change the genetics of a population",
+                "DNA transfer to reproductive cells (ova or sperms)",
+                "DNA transfer to stem cells",
+                "Genetic alteration to bring people beyond normalcy"
+              ],
+              "correctIndex": 1,
+              "modelAnswer": null
+            },
+            {
+              "id": "P43-CH3-CLIN-0011",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Transplantation of pig's heart to a man is termed as:",
+              "explanation": "A pig-to-human heart transplant crosses a species boundary and is therefore xenotransplantation. Allografts are between individuals of the same species.",
+              "options": [
+                "Allotransplantation",
+                "Auto transplantation",
+                "Isograft",
+                "Xenotransplantation"
+              ],
+              "correctIndex": 3,
+              "modelAnswer": null
+            },
+            {
+              "id": "P43-CH3-CLIN-0012",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Determining whether a treatment is futile depends on:",
+              "explanation": "A treatment’s expected overall benefit determines whether it is medically futile. Merely prolonging biological life, or a request from the patient or family, does not establish a reasonable therapeutic benefit.",
+              "options": [
+                "Whether the treatment can keep the patient alive a bit longer.",
+                "What the family recommends",
+                "What the patient wants.",
+                "Whether the treatment can be of overall benefit to the patient's medical condition."
+              ],
+              "correctIndex": 3,
+              "modelAnswer": null
+            },
+            {
+              "id": "P43-CH3-CLIN-0013",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Genetic testing of the embryos prior to their implantation in the IVF procedure is:",
+              "explanation": "Preimplantation genetic testing can identify a specific inherited disorder in embryos before transfer. Disease testing is distinct from selecting embryos to increase the male population.",
+              "options": [
+                "Not allowed as it is unethical.",
+                "Allowed for screening of inherited disease",
+                "Allowed to increase male population",
+                "Not allowed by laws."
+              ],
+              "correctIndex": 1,
+              "modelAnswer": null
+            },
+            {
+              "id": "P43-CH3-CLIN-0014",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following is considered as a disadvantage of cadaver donor transplantation?",
+              "explanation": "Recipients awaiting a deceased-donor organ depend on suitable organ availability and allocation, so waiting can be prolonged. Living donation offers more opportunity to schedule the operation.",
+              "options": [
+                "Increase the emotional pressure on the donor",
+                "Increase the waiting time for transplantation",
+                "No respect for principle of justice as the donors are mainly poor people",
+                "Increase the chance of preparedness for the procedure"
+              ],
+              "correctIndex": 1,
+              "modelAnswer": null
+            }
+          ]
+        }
+      ],
       "keywords": []
     }
   ]

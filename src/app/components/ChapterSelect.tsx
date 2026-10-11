@@ -3,7 +3,7 @@ import {useSyncedHistory} from '../hooks/useSyncedHistory';
 import { ShuffleSwitch } from '../preferences/ShuffleSwitch';
 import React, { useMemo } from 'react';
 import { useNavigate, useParams } from 'react-router';
-import { GraduationCap, Layers, ArrowRight, Palette, Clock, Award, Trash2, ArrowLeft, Calendar, ChevronRight } from 'lucide-react';
+import { GraduationCap, Layers, ArrowRight, Clock, Award, Trash2, ArrowLeft, Calendar, ChevronRight } from 'lucide-react';
 import type { ChapterData, SubjectColor, SubjectData, Question } from '../types';
 import { formatTime } from '../types';
 import type { QuizResult } from '../utils/storage';
@@ -48,21 +48,6 @@ const badgeColors: Record<SubjectColor, string> = {
   psychiatry: 'bg-psychiatry/10 text-psychiatry',
   ophthalmology: 'bg-ophthalmology/10 text-ophthalmology',
   ent: 'bg-ent/10 text-ent',
-};
-
-const dotColors: Record<SubjectColor, string> = {
-  anatomy: 'bg-anatomy',
-  histology: 'bg-histology',
-  physiology: 'bg-physiology',
-  biochem: 'bg-biochem',
-  microbiology: 'bg-microbiology',
-  pathology: 'bg-pathology',
-  pharma: 'bg-pharma',
-  clinical: 'bg-clinical',
-  parasitology: 'bg-parasitology',
-  psychiatry: 'bg-psychiatry',
-  ophthalmology: 'bg-ophthalmology',
-  ent: 'bg-ent',
 };
 
 const cornerGradient: Record<SubjectColor, string> = {
@@ -110,21 +95,6 @@ const startButtonBg: Record<SubjectColor, string> = {
   ent: 'bg-ent',
 };
 
-const LEGEND: { id: SubjectColor; en: string; ar: string }[] = [
-  { id: 'anatomy', en: 'Anatomy', ar: 'التشريح' },
-  { id: 'histology', en: 'Histology', ar: 'الأنسجة' },
-  { id: 'physiology', en: 'Physiology', ar: 'الفسيولوجيا' },
-  { id: 'biochem', en: 'Biochemistry', ar: 'الكيمياء الحيوية' },
-  { id: 'microbiology', en: 'Microbiology', ar: 'الأحياء الدقيقة' },
-  { id: 'parasitology', en: 'Parasitology', ar: 'الطفيليات' },
-  { id: 'pathology', en: 'Pathology', ar: 'الباثولوجيا' },
-  { id: 'pharma', en: 'Pharmacology', ar: 'الأدوية' },
-  { id: 'psychiatry', en: 'Psychiatry', ar: 'الطب النفسي' },
-  { id: 'ophthalmology', en: 'Ophthalmology', ar: 'الرمد' },
-  { id: 'ent', en: 'E.N.T.', ar: 'الأنف والأذن والحنجرة' },
-  { id: 'clinical', en: 'Clinical', ar: 'الإكلينيكي' },
-];
-
 /* ------------------------------------------------------------------ */
 /* Helpers                                                             */
 /* ------------------------------------------------------------------ */
@@ -145,7 +115,6 @@ const FALLBACK: Record<string, { en: string; ar: string }> = {
   questions: { en: 'Questions', ar: 'الأسئلة' },
   start: { en: 'Start', ar: 'ابدأ' },
   page: { en: 'Page', ar: 'صفحة' },
-  legend: { en: 'Subject Color Guide', ar: 'دليل ألوان المواد' },
   recentResults: { en: 'Recent Results', ar: 'النتائج الأخيرة' },
   clearHistory: { en: 'Clear history', ar: 'مسح السجل' },
   noHistory: { en: 'No quiz attempts yet. Your recent results will appear here.', ar: 'لا توجد محاولات بعد. ستظهر نتائجك الأخيرة هنا.' },
@@ -583,25 +552,6 @@ export function ChapterSelect({
                 {regularChapters.map(chapter => renderChapterCard(chapter, chapters.indexOf(chapter)))}
               </div>
             )}
-
-            {/* Legend */}
-            <section
-              className="cs-enter mt-8 rounded-[28px] border border-border dark:border-white/[0.06] bg-card p-5 glass-panel"
-              style={{ animationDelay: `${160 + chapters.length * 70}ms` }}
-            >
-              <h4 className="mb-3 flex items-center gap-1.5 text-xs font-semibold text-muted-foreground dark:text-white/60">
-                <Palette size={14} />
-                {label('legend')}
-              </h4>
-              <div className="grid grid-cols-2 gap-x-4 gap-y-2 sm:grid-cols-4">
-                {LEGEND.map((item) => (
-                  <span key={item.id} className="flex items-center gap-2 text-xs text-muted-foreground dark:text-white/65">
-                    <span className={`h-2.5 w-2.5 shrink-0 rounded-full ${dotColors[item.id]}`} />
-                    {isRTL ? item.ar : item.en}
-                  </span>
-                ))}
-              </div>
-            </section>
           </section>
 
           {/* ---------------- History sidebar ---------------- */}

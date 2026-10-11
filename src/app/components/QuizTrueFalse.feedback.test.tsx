@@ -133,13 +133,15 @@ it("uses correct feedback for the exact reported vermilion-border item from the 
   expect(feedback.wrong).not.toHaveBeenCalled();
 });
 
-it('exposes a labelled 44px sound control outside keyboard shortcuts',()=>{
+it('keeps one accessible icon-only sound control when keyboard shortcuts are open',()=>{
  const q:Question={id:'sound-control',type:'mcq',text:'Question',options:['A','B'],correctIndex:0,lecture:1,explanation:'Test explanation.',subjectColor:'histology'};
  render(<QuizInterface chapter={chapter} subject={null} questions={[q]} onBack={vi.fn()} onFinish={vi.fn()}/>);
  const control=screen.getByRole('button',{name:'Mute sounds'});
  expect(control).toHaveAttribute('aria-pressed','true');
  expect(control.className).not.toContain('hidden');
- expect(control).toHaveTextContent('Sound on');
+ expect(control).toHaveTextContent(/^$/);
+ fireEvent.click(screen.getByRole('button',{name:'Keyboard shortcuts'}));
+ expect(screen.getAllByRole('button',{name:'Mute sounds'})).toHaveLength(1);
 });
 
 it('names the shortcuts panel, pauses answer shortcuts and returns focus on Escape',async()=>{

@@ -13,9 +13,8 @@ export function SoundToggle({muted,onToggle}:{muted:boolean;onToggle:()=>void}) 
   const Icon=muted?VolumeX:Volume2;
   return <>
     <button type="button" onClick={onToggle} aria-label={label} aria-pressed={!muted} aria-describedby={helpId} title={help}
-      className="inline-flex min-h-11 shrink-0 items-center justify-center gap-1.5 rounded-full border border-border bg-secondary px-3 text-xs font-semibold text-foreground transition-colors hover:bg-muted focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
+      className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-border bg-secondary text-foreground transition-colors hover:bg-muted focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary">
       <Icon size={16} aria-hidden="true"/>
-      <span>{muted?(ar?'الصوت مكتوم':'Sound off'):(ar?'الصوت يعمل':'Sound on')}</span>
     </button>
     <span id={helpId} className="sr-only">{help}</span>
   </>;
