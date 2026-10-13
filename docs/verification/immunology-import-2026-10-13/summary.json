@@ -1,0 +1,24 @@
+{
+  "occurrences": 924,
+  "accepted_occurrences": 735,
+  "unique_questions": 640,
+  "duplicate_occurrences": 95,
+  "withheld": 189,
+  "chapters": 14,
+  "topics": 46,
+  "types": {
+    "mcq": 603,
+    "essay": 33,
+    "case": 4
+  },
+  "case_children": 17,
+  "candidate_sha256": "ea138bdbff0c2b73cc727af62d30d2810ab70529d6357158a2654e042ac778c4",
+  "recorded_key_corrections": 11,
+  "source_occurrence_conservation": "924 = 640 released representatives + 95 duplicate copies + 189 withheld occurrences",
+  "publication_status": "prepared locally; not published",
+  "review_label": "Evidence-grounded AI medical review; predominantly nonblind, not independent clinical adjudication",
+  "question_source_pages": 421,
+  "in_scope_pages": 219,
+  "out_of_scope_pages": 202,
+  "book_contents_pdf_page": 2
+}

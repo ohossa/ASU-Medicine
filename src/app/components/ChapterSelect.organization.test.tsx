@@ -13,9 +13,16 @@ describe('IBM chapter provenance labels',()=>{
 });
 
 it('keeps past exams above the mixed card and syllabus in every module',()=>{
- const past={...chapter,id:9,title:'Past Exams'};
+ const past={...chapter,id:9,title:'Past Exams',subjects:[{id:'biochem',name:'Biochemistry',iconName:'',lectures:'',lectureCount:1,questions:[{id:'past-1',type:'mcq',text:'Exam?',options:['A','B'],correctIndex:0,explanation:'',subjectColor:'biochem'}]}]} as ChapterData;
  render(<MemoryRouter><ChapterSelect chapters={[chapter,past]} moduleCode="FUTURE-1" moduleName="Future module" studyModeName="MCQ" onSelectChapter={()=>{}} onBackToModeSelect={()=>{}}/></MemoryRouter>);
  const region=screen.getByRole('region',{name:'Past Exams'}), syllabus=screen.getByText('DNA Replication');
  expect(region.compareDocumentPosition(syllabus) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
  expect(screen.getAllByText('Past Exams')).toHaveLength(2);
+});
+
+it('hides empty past exams while preserving ordinary empty chapters',()=>{
+ render(<MemoryRouter><ChapterSelect chapters={[chapter,{...chapter,id:9,title:'Past Exams',bankSection:'past-exams'}]} moduleCode="FUTURE-1" moduleName="Future" studyModeName="Essay" onSelectChapter={()=>{}} onBackToModeSelect={()=>{}}/></MemoryRouter>);
+ expect(screen.queryByRole('region',{name:'Past Exams'})).toBeNull();
+ expect(screen.queryByText('Past Exams')).toBeNull();
+ expect(screen.getByText('DNA Replication')).toBeInTheDocument();
 });

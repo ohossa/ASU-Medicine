@@ -65,3 +65,12 @@ describe('GIT collection and subject navigation',()=>{
     fireEvent.click(screen.getByRole('button',{name:'Question bank'}));expect(change).toHaveBeenCalledWith('practice');
   });
  });
+
+it.each(['practice','past-exams'] as const)('hides unavailable exams and recovers stale %s selection',collection=>{
+ const empty={...chapters[1],subjects:[{...chapters[1].subjects[0],questions:[]}]};
+ render(<GitBankSelect chapters={[chapters[0],empty]} collection={collection} onCollectionChange={vi.fn()} studyModeName="Essay" onSelectChapter={vi.fn()} onBackToModeSelect={vi.fn()}/>);
+ expect(screen.queryByRole('region',{name:'Past exams & recalls'})).toBeNull();
+ expect(screen.queryByText('Past exams & recalls')).toBeNull();
+ expect(screen.getByRole('heading',{name:'Question bank'})).toBeInTheDocument();
+ expect(screen.getByRole('button',{name:/Anatomy.*1 question/i})).toBeEnabled();
+});

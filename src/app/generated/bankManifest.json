@@ -65,11 +65,11 @@
     "paths": [
       "../imports/year-1/semester-1/MIM-1.json"
     ],
-    "mcqCount": 0,
-    "essayCount": 0,
-    "totalCount": 0,
-    "revision": "fe474ad8880a60d7240fb2c6fd2d91b7a4c7550ee0b3a9b22c41ee831b5e15a1",
-    "bytes": 2421
+    "mcqCount": 603,
+    "essayCount": 37,
+    "totalCount": 640,
+    "revision": "ea138bdbff0c2b73cc727af62d30d2810ab70529d6357158a2654e042ac778c4",
+    "bytes": 563216
   },
   "P1-1": {
     "year": 1,

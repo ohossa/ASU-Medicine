@@ -247,46 +247,49 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
     }
   }, [answered, isCorrect, question, playSound, current]);
 
-  /* Case sub-question self-grading feedback */
-  const lastCaseSubGrades = useRef<Record<string, string>>(
+  /* Feedback belongs to the committed case part, never an incomplete parent. */
+  const lastCaseSubAnswers = useRef<Record<string, string>>(
     (() => {
-      const grades: Record<string, string> = {};
-      if (savedSession?.answers) {
-        Object.entries(savedSession.answers).forEach(([indexStr, val]) => {
-          const index = Number(indexStr);
-          if (val && typeof val === 'object') {
-            Object.entries(val).forEach(([subKey, subVal]) => {
-              if (subVal && typeof subVal === 'object' && 'selfGrade' in subVal) {
-                grades[`${index}-${subKey}`] = subVal.selfGrade as string;
-              }
-            });
-          }
-        });
+      const values: Record<string, string> = {};
+      for (const [index, saved] of Object.entries(savedSession?.answers ?? {})) {
+        const savedQuestion = questions[Number(index)];
+        const parts = asCaseAnswer(saved);
+        for (const child of savedQuestion?.subQuestions ?? []) {
+          const value = committedAnswerValue(child, parts?.[child.id]);
+          if (value !== undefined) values[`${index}-${child.id}`] = JSON.stringify(value);
+        }
       }
-      return grades;
+      return values;
     })()
   );
   useEffect(() => {
     if (!question || (question.type !== 'case' && question.type !== 'casestudy')) return;
-    const curr = answers[current] as Record<string, unknown> | undefined;
-    if (!curr) return;
-    for (const sq of (question.subQuestions ?? [])) {
-      const sub = curr[sq.id] as Record<string, unknown> | undefined;
-      const key = `${current}-${sq.id}`;
-      const prevGrade = lastCaseSubGrades.current[key];
-      const currGrade = sub?.selfGrade as string | undefined;
-      if (currGrade !== undefined && currGrade !== prevGrade) {
-        lastCaseSubGrades.current[key] = currGrade;
-        if (currGrade === 'correct') {
-          fx.correct(0.5, 0.5, 0.5);
-          playSound('correct');
-        } else {
-          fx.wrong(0.5, 0.5);
-          playSound('wrong');
-        }
+    const parts = asCaseAnswer(answers[current]);
+    for (const [childIndex, child] of (question.subQuestions ?? []).entries()) {
+      const value = committedAnswerValue(child, parts?.[child.id]);
+      if (value === undefined) continue;
+      const key = `${current}-${child.id}`;
+      const signature = JSON.stringify(value);
+      if (lastCaseSubAnswers.current[key] === signature) continue;
+      lastCaseSubAnswers.current[key] = signature;
+      const correct = checkAnswerCorrect(child, value);
+      if (correct) {
+        fx.correct(0.5, 0.5, 0.5);
+        playSound('correct');
+      } else {
+        fx.wrong(0.5, 0.5);
+        playSound('wrong');
       }
+      const reference = child.type === 'mcq'
+        ? child.options?.[child.correctIndex ?? -1]
+        : child.type === 'fillblank' ? child.blanks?.join(', ') : child.modelAnswer;
+      const lang = language === 'ar' ? 'ar' : 'en';
+      const partLabel = `${lang === 'ar' ? 'السؤال' : 'Question'} ${current + 1}, ${lang === 'ar' ? 'الجزء' : 'part'} ${childIndex + 1}. `;
+      setAnnouncement(partLabel + (correct
+        ? `${lang === 'ar' ? 'صحيح' : 'Correct'}. ${child.explanation?.slice(0, 80) || ''}`
+        : `${lang === 'ar' ? 'خاطئ' : 'Incorrect'}. ${lang === 'ar' ? 'الإجابة الصحيحة كانت' : 'The correct answer was'} ${reference || ''}`));
     }
-  }, [answers, current, question, playSound]);
+  }, [answers, current, question, playSound, language]);
 
   /* Auto-save quiz session (debounced 2s after last change) — essayDrafts stored separately via saveLocalDrafts */
   const quizDataRef = useRef({ current: 0, answers: {} as Record<number, QuizAnswer>, elapsedSeconds: 0, flagged: [] as number[], finished: false, timerMode: 'practice' as TimerMode, showEssayAnswer: false });
@@ -378,17 +381,17 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
 
   /* aria-live announcement on answer reveal */
   useLayoutEffect(() => {
-    if (!answered || !question) return;
+    if (!answered || !question || question.type === 'case' || question.type === 'casestudy') return;
     const lang = language === 'ar' ? 'ar' : 'en';
     const answerIsCorrect = question.type === 'essay'
       ? asEssayAnswer(answers[current])?.selfGrade === 'correct'
-      : question.type === 'case' || question.type === 'casestudy'
-        ? getQuestionStatus(question, answers[current]) === 'correct'
-        : checkAnswerCorrect(question, answers[current]);
+      : checkAnswerCorrect(question, answers[current]);
     const correctLabel = question.options?.[question.correctIndex ?? -1] ?? '';
     const msg = answerIsCorrect
       ? `${lang === 'ar' ? 'صحيح' : 'Correct'}. ${question.explanation?.slice(0, 80) || ''}`
-      : `${lang === 'ar' ? 'خاطئ' : 'Incorrect'}. ${lang === 'ar' ? 'الإجابة الصحيحة كانت' : 'The correct answer was'} ${correctLabel}`;
+      : question.type === 'essay'
+        ? `${lang === 'ar' ? 'خاطئ. راجع الإجابة النموذجية.' : 'Incorrect. Review the model answer.'}`
+        : `${lang === 'ar' ? 'خاطئ' : 'Incorrect'}. ${lang === 'ar' ? 'الإجابة الصحيحة كانت' : 'The correct answer was'} ${correctLabel}`;
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setAnnouncement(msg);
   }, [answered, current, question, answers, language]);

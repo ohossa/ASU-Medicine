@@ -1,3 +1,4 @@
+import { isPastExamSection } from '../lib/practiceOrder';
 import type { Question, ChapterData } from "../types";
 import { choiceAnswerIndex } from "../utils/quiz";
 export interface SearchSource {
@@ -117,7 +118,7 @@ export function buildSearchEntries(sources: SearchSource[]) {
               moduleCode: src.moduleCode,
               year: src.year,
               semester: src.semester,
-              collection: c.bankSection ?? "practice",
+              collection: isPastExamSection(c) ? "past-exams" : "practice",
               order: entries.length,
               fields: [
                 question.text,
@@ -231,3 +232,8 @@ export function highlightParts(text: string, query: string) {
 }
 export const studyUrl = (e: SearchEntry) =>
   `/year-${e.year}/${e.moduleCode.toLowerCase()}/mixed?${new URLSearchParams({ chapter: String(e.chapterId), subject: e.subjectId, ...(e.lectureNum ? { lecture: String(e.lectureNum) } : {}), question: String(e.parent.id), ...(e.childId ? { child: e.childId } : {}) })}`;
+
+/** Availability ignores the selected collection and text query to avoid a filter trap. */
+export function availableSearchCollections(entries: SearchEntry[], filters: SearchFilters): string[] {
+ return [...new Set(searchEntries(entries, '', {...filters, collection:'all', status:'all', flagged:false}).map(entry => entry.collection))];
+}

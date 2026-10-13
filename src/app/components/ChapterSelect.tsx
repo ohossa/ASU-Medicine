@@ -1,6 +1,6 @@
 import {questionCountLabel} from '../learning/practiceNavigation';
 import {FlowBreadcrumbs} from './FlowBreadcrumbs';
-import { isPastExamSection } from "../lib/practiceOrder";
+import { isPastExamSection, visiblePracticeChapters } from "../lib/practiceOrder";
 import {useSyncedHistory} from '../hooks/useSyncedHistory';
 import { ShuffleSwitch } from '../preferences/ShuffleSwitch';
 import React, { useMemo } from 'react';
@@ -184,7 +184,7 @@ const toHistoryView = (result: QuizResult, index: number): HistoryView => {
 /* ------------------------------------------------------------------ */
 
 export function ChapterSelect({
-  chapters,
+  chapters: allChapters,
   studyModeName,
   moduleName,
   moduleCode,
@@ -194,6 +194,7 @@ export function ChapterSelect({
   userButton,
   breadcrumbPath,
 }: Props) {
+  const chapters = useMemo(() => visiblePracticeChapters(allChapters), [allChapters]);
   const { t, language } = useLanguage();
   const isRTL = language === 'ar';
   const navigate = useNavigate();

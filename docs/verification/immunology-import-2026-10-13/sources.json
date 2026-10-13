@@ -1,0 +1,145 @@
+[
+  {
+    "source_id": "BOOK",
+    "filename": "study guide of immunology.pdf",
+    "sha256": "2bc48ea12096d9aa3922742ab08da606c5c66fa9026a2767cf4db5605a8aa547",
+    "bytes": 279000906,
+    "pages": 113,
+    "role": "contents_reference",
+    "occurrences": 0,
+    "accepted_occurrences": 0,
+    "held_occurrences": 0
+  },
+  {
+    "source_id": "S01",
+    "filename": "Bg All Formative Immune in Moodle..pdf",
+    "sha256": "c295c014f100b1f3603f0225e4d9585bdcbc4e8bc832f90040f977444d596ca5",
+    "bytes": 7171271,
+    "pages": 38,
+    "role": "questions",
+    "occurrences": 54,
+    "accepted_occurrences": 49,
+    "held_occurrences": 5
+  },
+  {
+    "source_id": "S02",
+    "filename": "Bg dr. Ashraf Essay 2024..pdf",
+    "sha256": "9a9eadda07cde4d0e07ff79b47e157239e2c9f5f94d306c147267369d238fa59",
+    "bytes": 1514283,
+    "pages": 6,
+    "role": "questions",
+    "occurrences": 27,
+    "accepted_occurrences": 27,
+    "held_occurrences": 0
+  },
+  {
+    "source_id": "S03",
+    "filename": "Immunology and Microbiology Department MCQs.pdf",
+    "sha256": "d303927266825d13a8ad9e5db71e08e189b92938d3e77c02d0b404ce72ef5582",
+    "bytes": 46068084,
+    "pages": 290,
+    "role": "questions",
+    "occurrences": 500,
+    "accepted_occurrences": 403,
+    "held_occurrences": 97
+  },
+  {
+    "source_id": "S04",
+    "filename": "Bg Dr.Ashraf MCQ3..pdf",
+    "sha256": "7b4065e8a3624a2bc582bd937f5efbcad85ee0c90d758de6bfe8c0ca76f73cb1",
+    "bytes": 13739950,
+    "pages": 26,
+    "role": "questions",
+    "occurrences": 92,
+    "accepted_occurrences": 75,
+    "held_occurrences": 17
+  },
+  {
+    "source_id": "S05",
+    "filename": "Bg Dr.KarimEmad mcq .pdf",
+    "sha256": "b2a9622d2cce12d5c152085aab313189bfce7c0bfac82fecb14a7ce2caf52f26",
+    "bytes": 3282394,
+    "pages": 15,
+    "role": "questions",
+    "occurrences": 73,
+    "accepted_occurrences": 50,
+    "held_occurrences": 23
+  },
+  {
+    "source_id": "S06",
+    "filename": "Bg Dr.kari Emad mcq.pdf",
+    "sha256": "c83e73e6daa0aa7ffe119858edbba3999b95f9cdc72e09a8164617bd2a901839",
+    "bytes": 36635,
+    "pages": 3,
+    "role": "questions",
+    "occurrences": 14,
+    "accepted_occurrences": 7,
+    "held_occurrences": 7
+  },
+  {
+    "source_id": "S07",
+    "filename": "Bg Dr.karim Emad mcq..pdf",
+    "sha256": "f9b2253122598eb14eab0e5b621da37697b9dd60b633f7544159ac16a61d713a",
+    "bytes": 49667,
+    "pages": 2,
+    "role": "questions",
+    "occurrences": 12,
+    "accepted_occurrences": 9,
+    "held_occurrences": 3
+  },
+  {
+    "source_id": "S08",
+    "filename": "Bg Dr.karim Emad mcq_(1).pdf",
+    "sha256": "422b364810c0f0f7fec6aab0ce4ca6ce2f1d1cdbf19333361908cb4725cd088e",
+    "bytes": 37228,
+    "pages": 2,
+    "role": "questions",
+    "occurrences": 14,
+    "accepted_occurrences": 7,
+    "held_occurrences": 7
+  },
+  {
+    "source_id": "S09",
+    "filename": "Bg Dr.karim Emad mcq_(2).pdf",
+    "sha256": "926a26b63a8d8b4235a4332c3b6affc8f56bd9061881147511ef842d9e104e6d",
+    "bytes": 38448,
+    "pages": 2,
+    "role": "questions",
+    "occurrences": 11,
+    "accepted_occurrences": 6,
+    "held_occurrences": 5
+  },
+  {
+    "source_id": "S10",
+    "filename": "Bg Dr.karim Emad mcq_.pdf",
+    "sha256": "6677900803cbf342e5fa17e2848aaf12b426468b05a5c9c6beafe0ef27a1d15e",
+    "bytes": 52443,
+    "pages": 5,
+    "role": "questions",
+    "occurrences": 22,
+    "accepted_occurrences": 14,
+    "held_occurrences": 8
+  },
+  {
+    "source_id": "S11",
+    "filename": "Bg Immune Dr.Ashraf mcq part 2..pdf",
+    "sha256": "00be032dd5f500a10b0ab56a2001c8700bff288071eb1c818eb50e521e675247",
+    "bytes": 15412354,
+    "pages": 18,
+    "role": "questions",
+    "occurrences": 62,
+    "accepted_occurrences": 50,
+    "held_occurrences": 12
+  },
+  {
+    "source_id": "S12",
+    "filename": "Bg Immune Dr.Ashraf mcq..pdf",
+    "sha256": "7eb3176c038aefacb93d2776a97bae2798d7610d5f5dd064d82dd33ad53ef760",
+    "bytes": 2920710,
+    "pages": 14,
+    "role": "questions",
+    "occurrences": 43,
+    "accepted_occurrences": 38,
+    "held_occurrences": 5
+  }
+]

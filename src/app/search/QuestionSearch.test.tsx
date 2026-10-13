@@ -59,3 +59,12 @@ it("starts in the saved year, conceals answers and makes all results reachable",
     expect(screen.getByText("Lipase question 104")).toBeInTheDocument(),
   );
 });
+
+it('omits unavailable exams and clears a saved exam collection in a module without exams',async()=>{
+ localStorage.setItem('asu_search_filters:search-test',JSON.stringify({year:'3',module:'MGL-3',collection:'past-exams'}));
+ render(<MemoryRouter><QuestionSearch onBack={()=>{}} /></MemoryRouter>);
+ await waitFor(()=>expect(screen.getByText(/105 questions/)).toBeInTheDocument());
+ fireEvent.click(screen.getByRole('button',{name:/Filters/i}));
+ expect(screen.queryByRole('option',{name:'Past exams & recalls'})).toBeNull();
+ expect(screen.getByLabelText('Collection')).toHaveValue('all');
+});

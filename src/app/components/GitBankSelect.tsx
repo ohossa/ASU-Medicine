@@ -1,3 +1,4 @@
+import { visiblePracticeChapters } from '../lib/practiceOrder';
 import { ShuffleSwitch } from '../preferences/ShuffleSwitch';
 import { ArrowLeft, ArrowRight, BookOpen, GraduationCap, Layers, Award, Bone, Activity, Microscope, FlaskConical, ShieldAlert, Pill, Biohazard, Bug } from 'lucide-react';
 import { motion } from 'motion/react';
@@ -27,9 +28,10 @@ const appear = { hidden: { opacity: 0, y: 16 }, show: { opacity: 1, y: 0 } };
 export function GitBankSelect({ chapters, collection, onCollectionChange, studyModeName, onSelectChapter, onBackToModeSelect, userButton, breadcrumbPath }: Props) {
   const { language } = useLanguage();
   const ar = language === 'ar';
-  const isPast = collection === 'past-exams';
-  const subjects = selectGitCollection(chapters, collection);
   const pastCount = selectGitCollection(chapters, 'past-exams').reduce((total, chapter) => total + countQuestions(chapter), 0);
+  const effectiveCollection = collection === 'past-exams' && pastCount === 0 ? 'practice' : collection;
+  const isPast = effectiveCollection === 'past-exams';
+  const subjects = selectGitCollection(visiblePracticeChapters(chapters), effectiveCollection);
   const total = subjects.reduce((sum, chapter) => sum + countQuestions(chapter), 0);
   const topicCount = subjects.reduce((sum, chapter) => sum + (chapter.subjects[0]?.lectureCount ?? 0), 0);
   const bankLabel = ar ? 'بنك الأسئلة' : 'Question bank';
@@ -67,7 +69,7 @@ export function GitBankSelect({ chapters, collection, onCollectionChange, studyM
           <span className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary px-3 py-1.5 tabular-nums"><Award size={14} className="text-physiology" />{questionLabel(total)}</span>
         </div>
       </motion.header>
-      {!isPast && <section className="mb-8" aria-label={pastLabel}>
+      {!isPast && pastCount > 0 && <section className="mb-8" aria-label={pastLabel}>
         <motion.button type="button" disabled={pastCount === 0} onClick={() => onCollectionChange('past-exams')}
           whileHover={pastCount ? { scale: 1.01, y: -3 } : undefined} whileTap={pastCount ? { scale: 0.98 } : undefined}
           className={`${panel} group flex w-full items-center gap-5 bg-gradient-to-r from-biochem/5 to-secondary/30 p-6 sm:p-8 text-start transition-colors hover:border-biochem/40 focus-visible:outline-2 focus-visible:outline-biochem disabled:opacity-50`}>
@@ -78,7 +80,7 @@ export function GitBankSelect({ chapters, collection, onCollectionChange, studyM
           <span aria-hidden className="grid h-11 w-11 shrink-0 place-items-center rounded-full bg-biochem text-white shadow-lg transition-transform group-hover:scale-110"><ArrowRight size={20} className={ar ? 'rotate-180' : ''} /></span>
         </motion.button>
       </section>}
-      <motion.section key={collection} aria-label={ar ? 'المواد' : 'Subjects'} initial="hidden" animate="show" transition={{ staggerChildren: 0.05 }}
+      <motion.section key={effectiveCollection} aria-label={ar ? 'المواد' : 'Subjects'} initial="hidden" animate="show" transition={{ staggerChildren: 0.05 }}
         className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {subjects.map(chapter => {
           const color = subjectStyles[chapter.accentColor];
