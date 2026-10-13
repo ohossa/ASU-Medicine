@@ -1,0 +1,25 @@
+{
+  "timestamp_utc": "2026-10-12T19:29:34.022929+00:00",
+  "status": "PASS",
+  "scope": "Only staging data.ts, new lazy canonical resolver and tests changed; no banks, API or root UI edits.",
+  "api": "getLearningQuestionVersions(moduleCode:string,chapterId:number):Promise<Map<string,string>> exported from data.ts",
+  "hash_contract": "SHA256(JSON.stringify(full original canonical question)) or exact accepted edit.question. Explicit canonical contentVersion retained; injected runtime contentVersion excluded. This matches server/learning-bank.ts. Case children inherit parent snapshot version.",
+  "overlay_contract": "Shallow immutable source arrays captured before public overlays. Private rebuild reuses applyPublishedEdits guards for source hash, question ID, lecture routing, created collisions and deletions.",
+  "cache_contract": "Lazy requested module/chapter; caches promise by correctionRevision; returns defensive Map copy; rejects remove cache; retries on revision race. No new eager whole-catalog hashes.",
+  "tests": {
+    "new_resolver_tests": 8,
+    "result": "PASS",
+    "command": "npm test -- --run src/app/loading/learningQuestionVersions.test.ts --maxWorkers=1",
+    "duration_ms": 551,
+    "app_typecheck": "npx tsc --noEmit -p tsconfig.app.json; PASS exit0"
+  },
+  "file_hashes": {
+    "src/app/data.ts": "940b187fde70a5f6b857a4de0bdaeef0ae5093be3722f5ea327c6d2c968e41d1",
+    "src/app/loading/learningQuestionVersions.ts": "7ad278eb4fbc162853a5bb8f006e638447e4ed18f5cf3c70039551e08d0b272e",
+    "src/app/loading/learningQuestionVersions.test.ts": "a84d4a5460548376c0bc6447428b6421e5c41cfa4b708551a9dfb2ef2293c9c4"
+  },
+  "limitations": [
+    "Root hook/UI integration and full independent final review pending; no full suite/build or browser review here.",
+    "Review now involves a requested resolver implementation, so final report must distinguish authored resolver from independent root UI inspection."
+  ]
+}

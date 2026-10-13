@@ -1,0 +1,70 @@
+{
+  "scope": "Read-only independent source review of shared chapter-topic navigation against baselinec85a178, focused tests and reproducible helper behavior. No source files changed.",
+  "reviewed_file_hashes": {
+    "src/app/components/SubjectSelect.tsx": "3feb5756b05f5796674e21c0dd23abfe877f2d848f1a0c9b801119736b3dd8da",
+    "src/app/components/ChapterTopicList.tsx": "a7369140427644327de3ddeba7d08b360c70d2c8720649de20ba8d94893b47c2",
+    "src/app/components/chapter-topics.css": "9f08e2fce74479f8798e8ad8c4b263cc78229d475941c646177bcd62585af7e9",
+    "src/app/learning/customPractice.ts": "35ef4f5cfa0e96a576b4c3032b66e66cd565892447f82eb35f22ea279d963a0b",
+    "src/app/components/SubjectSelect.topics.test.tsx": "23ac86f0cd3174bf92cfa42d2e8bb3d6998af1c811ce1b3280d124730936a8df",
+    "src/app/components/SoundToggle.tsx": "8d0d78eac59df475ac5bda0bfdc2f0511d8206b34084dea6487caae3ea70d1ac"
+  },
+  "findings": [
+    {
+      "priority": "P2",
+      "title": "Scope latest results by topic key or subject as well as title",
+      "file": "/Users/omarhossa/Documents/asu.codes questions/QUESTION_IMPORT_JOBS/2026-10-12-IHC-1-histology/STAGING/app/src/app/learning/customPractice.ts",
+      "line": 53,
+      "related_file": "/Users/omarhossa/Documents/asu.codes questions/QUESTION_IMPORT_JOBS/2026-10-12-IHC-1-histology/STAGING/app/src/app/components/ChapterTopicList.tsx",
+      "related_line": 24,
+      "body": "The new shared UI exposes topics from every subject, but latestTopicResult finds the first title match. MBL-2 chapter3 has Bleeding Disorders under Physiology and Pathology; a Physiology-only result is displayed on both cards. MCNS-2 chapter11 and MSS-2 chapter9 also have multiple Past Exams titles. Runtime reproduction with distinct saved topic keys returned the Physiology100% score for Pathology. Match full topic key, with subject-aware fallback for legacy history.",
+      "reproduction": "Two subjects with lectureNames=[Bleeding Disorders], questions p/x, history containing only topicResults Physiologys distinct key: both title calls returned Physiology result.",
+      "test_gap": "New tests use one subject and unique titles."
+    },
+    {
+      "priority": "P2",
+      "title": "Preserve lookup of legacy saved single-topic sessions",
+      "file": "/Users/omarhossa/Documents/asu.codes questions/QUESTION_IMPORT_JOBS/2026-10-12-IHC-1-histology/STAGING/app/src/app/components/ChapterTopicList.tsx",
+      "line": 30,
+      "related_file": "/Users/omarhossa/Documents/asu.codes questions/QUESTION_IMPORT_JOBS/2026-10-12-IHC-1-histology/STAGING/app/src/app/App.tsx",
+      "related_line": 618,
+      "body": "Every direct topic click now constructs a custom sessionKey. handleSelectSubject only loads that key, while baseline topic cards passed the original subject with no sessionKey and saved under subject.name. Existing GIT/MINF/MSS lecture attempts with the identical question set saved under e.g. Oral cavity are bypassed and users start anew instead of seeing Resume. Preserve an exact-question/version-checked legacy lookup or migrate the saved topic key/drafts. Do not resume a broad subject attempt into a smaller topic.",
+      "evidence": "Read baseline c85a178 SubjectSelect.tsx onClick passed subject directly; current QuizInterface persists sessionKey??name and useQuizSession getKey embeds that string.",
+      "test_gap": "Tests verify newly created custom subset resumption, not previously saved named-topic attempts."
+    },
+    {
+      "priority": "P3",
+      "title": "Keep original single-topic subject metadata on resume",
+      "file": "/Users/omarhossa/Documents/asu.codes questions/QUESTION_IMPORT_JOBS/2026-10-12-IHC-1-histology/STAGING/app/src/app/learning/customPractice.ts",
+      "line": 27,
+      "body": "ChapterTopicList replaces run.subject.id/iconName with the source subject when first starting, but resumeCustomPractice reconstructs selectedPractice without that replacement. A Pathology-only topic in a physiology-accent chapter resumes with subject.id physiology and ListChecks icon; ResultsDashboard uses subject.id for styling. Question practiceTopic subjectName remains Pathology, so question-level learning attribution is preserved, but session subject metadata differs across start/resume. Derive source metadata for single-topic selections in selectedPractice or restore it in resumeCustomPractice.",
+      "reproduction": "Two-subject synthetic chapter accent physiology; selected Pathology question x; reconstructed subject.id was physiology despite practiceTopic.subjectName Pathology."
+    }
+  ],
+  "test_run": {
+    "command": "npm test -- --run src/app/components/SubjectSelect.topics.test.tsx src/app/components/SubjectSelect.sync.test.tsx src/app/learning/customPractice.test.ts",
+    "result": "PASS",
+    "test_files": 3,
+    "tests": 11
+  },
+  "verified_behaviors": [
+    "Direct topic cards use only selected topic IDs and attach original practiceTopic metadata without mutating source bank.",
+    "Empty topics disabled and counts reflect topic questions rather than subject total.",
+    "Shuffle remains delegated to existing prepareQuestions; custom resume reconstructs saved ID order.",
+    "Learning progress remains scoped by module and selected question IDs, including case children rolled to parent.",
+    "Cloud/history storage and same-tab asu-history-updated subscription remain active.",
+    "SoundToggle has accessible action name, hidden SVG, described help, keyboard-native button, 44px size and visible focus.",
+    "No colour-guide strings remain in reviewed chapter/topic navigation.",
+    "CSS provides one-column mobile layout, native button focus states and reduced-motion treatment."
+  ],
+  "runtime_duplicate_title_banks": [
+    "MBL-2 chapter3 Bleeding Disorders Physiology/Pathology",
+    "MCNS-2 chapter11 Past Exams across6subjects",
+    "MSS-2 chapter9 Past Exams across8subjects"
+  ],
+  "limitations": [
+    "No browser visual rendering performed; CSS and component accessibility reviewed statically and in jsdom tests.",
+    "No full all-module user-flow simulation or live cloud/account interaction performed.",
+    "No code mutations or production changes."
+  ],
+  "outcome": "Changes need the two P2 resume/history fixes; source-level topic count/selection/shuffle and sound-control checks pass."
+}

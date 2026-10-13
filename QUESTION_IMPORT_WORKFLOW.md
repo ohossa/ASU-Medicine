@@ -3,7 +3,7 @@
 **Repository:** `/Users/omarhossa/Documents/Medcine ASU/ASU-Medical-Portal`
 **Production:** https://asu.codes
 **GitHub:** https://github.com/ohossa/ASU-Medicine
-**Workflow recorded:** 8 October 2026
+**Workflow updated:** 13 October 2026
 
 This is the operating procedure for taking user-designated PDFs or question files through extraction, source reconciliation, medical review, organization, website integration, testing, and an authorized production release. It records the safeguards learned from the GIT, iNerd, Year 1, and History Taking imports. Inspect the current implementation before each job: the paths and behavior below describe the repository at the recorded date, not a promise that future code is unchanged.
 
@@ -65,7 +65,7 @@ The directory name `data-format-v2` does **not** mean canonical JSON uses `schem
 
 Locate the catalog with a targeted repository search, then verify the exact module code, year, semester, credit points, maximum marks, and existing chapter/subject metadata. Never derive a destination solely from a similar module name.
 
-**Next planned intake:** Year 1 Semester 1 Introduction to Medical Biochemistry is `IBM-1`, currently 3 credit points / 60 marks. It is distinct from `MBMG-1` Medical Biology and Medical Genetics. Recheck the catalog before the job. Wait for the user to designate the Biochemistry input files.
+**Destination reminder:** Introduction to Medical Biochemistry is `IBM-1`, distinct from `MBMG-1` Medical Biology and Medical Genetics. Recheck the live catalog and wait for designated inputs before any new intake.
 
 ### Current tool limitations
 
@@ -299,11 +299,13 @@ Report parent counts and child counts separately. A case with four children is o
 
 ## 9. Organize by the actual subject and chapter/topic hierarchy
 
-The normal hierarchy is:
+Preserve the module's actual syllabus structure. There is no universal extra subject step:
 
-```text
-Year → Semester → Module → Mode → Subject → Chapter/Topic → Questions
-```
+- Integrated chapter-first modules: Year → Semester → Module → Mode → Chapter → Subject → Topic → Questions.
+- Subject-first modules: Year → Semester → Module → Mode → Subject → Topic → Questions.
+- Single-branch chapters, including Histology: Chapter → Topic → Questions directly.
+
+The runtime branch gate is audited in `src/app/learning/practiceNavigation.ts`. It requires distinct recognized active branches and an explicitly supported module/chapter. Do not infer an extra subject screen from virtual topic rows that share a branch ID. Audit the canonical catalog before extending this gate; preserve original subject indices and topic keys when filtering.
 
 For GIT, the established special separation is:
 
@@ -652,3 +654,14 @@ This example reviewed all 2,137 source question records, retained all 15 unlinke
 ## Past-exam navigation priority (11 October 2026)
 
 Keep past-exam chapters marked `bankSection: "past-exams"` where the collection schema supports it, and use an explicit Past Exams / Previous Exams label for chapter or topic sections. The shared `practiceOrder.ts` presentation policy puts these sections first in generic module navigation and topic selection; GIT also places its exam-collection entry above subjects. Do not renumber stable chapter/question/lecture IDs to move a section. This ordering does not change historical progress keys, answer keys or unshuffled session order.
+
+
+## Histology and topic-session safeguards (13 October 2026)
+
+The IHC-1 release contains 1,227 questions across 60 topics in the designated book's chapter order. The Cell has 525 questions across 21 topics; those chapters open directly to topic cards. Topic names are book-informed and question-derived, rather than a claim that every topic is a literal book heading. The linked Google Form and all image-dependent questions were excluded. See `docs/verification/histology-import-2026-10-12/` for release accounting, review coverage, held items and deduplication limits.
+
+Keep every source occurrence, including byte-identical file aliases, separate from unique release counts. Account for representatives, within-source duplicates, matches to existing banks, and withheld material. Exact fingerprints plus explicit semantic adjudication support deduplication; lexical search cannot establish the absence of every distant paraphrase. Never advertise an absolute guarantee beyond the saved checks.
+
+Use supported middle-granularity topics based on tested concepts. Inspect every question's placement; avoid arbitrary quotas, empty invented topics or splitting a single concept to meet a count. Freeze accepted IDs, answers, explanations and content versions while refining lecture metadata; assert payload conservation. Past exams remain a separate, source-grounded block.
+
+Test the actual loader and grading for every supported question format. Shared UI changes follow `WEBSITE_UI_WORKFLOW.md`, including scoped search, 20/40/whole-topic selection, current-version progress, resume, keyboard navigation and responsive layouts. Changing organization must not silently rewrite learning-history identities.

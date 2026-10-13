@@ -1,0 +1,85 @@
+{
+  "time_utc": "2026-10-13T01:27:52.287098+00:00",
+  "reviewer": "hegazy independent review",
+  "status": "PASS",
+  "scope": "Read-only staged implementation review, no app/bank edits; no full suite concurrent.",
+  "staging": "/Users/omarhossa/Documents/asu.codes questions/QUESTION_IMPORT_JOBS/2026-10-12-IHC-1-histology/STAGING/app",
+  "file_hashes": {
+    "src/app/components/SubjectSelect.tsx": "89b36f8109bb17e7095553603dfbcb4d1390852b32438b7a17548471cade8e2e",
+    "src/app/components/ChapterTopicList.tsx": "a4bdf30a4a255d6a9b05c399c425ff2f8c871a26b771281122c65496a1b71c03",
+    "src/app/components/TopicSessionPicker.tsx": "16c85a906a38c1150cc325c5727f38853e2b7fcf597268348fa9f918b647dd8e",
+    "src/app/learning/practiceNavigation.ts": "7e49293f098cd26887a60f33e3cd2fae634ea33c145f92353ed02f21c867c98c",
+    "src/app/components/TopicPracticePicker.tsx": "cbfa30919c832a9ef96283a14d9dbc91953af78fb1c4d606171f752a4a9809c5",
+    "src/app/App.tsx": "2ec706b7bde5a42770b2b182a06ed7f7689dd8c83e9285df949d5e77bf2f5870",
+    "src/app/data.ts": "940b187fde70a5f6b857a4de0bdaeef0ae5093be3722f5ea327c6d2c968e41d1",
+    "src/app/loading/learningQuestionVersions.ts": "7ad278eb4fbc162853a5bb8f006e638447e4ed18f5cf3c70039551e08d0b272e",
+    "src/app/loading/learningQuestionVersions.test.ts": "a84d4a5460548376c0bc6447428b6421e5c41cfa4b708551a9dfb2ef2293c9c4",
+    "src/app/learning/practiceNavigation.test.ts": "9ffc1972b1587f5e6313ca5dfb57686b51ccf25cae0687409cd5cff6a11476d5",
+    "src/app/components/SubjectSelect.navigation.test.tsx": "3d0d61e448df392683a1c71f17814178df7f38c85e3f2a0a58d61b41234c648e",
+    "src/app/components/TopicPracticePicker.test.tsx": "ea051a2f587f7f58dac2e1256572a30855e60e5027efb264ff7a7c27455e1c09"
+  },
+  "findings": [
+    {
+      "id": "NAV-QC-1",
+      "priority": "P2",
+      "file": "src/app/learning/practiceNavigation.ts",
+      "line": 26,
+      "problem": "Any nonempty case/casestudy child answer object counts as attempted, including an essay typing draft or submitted:false structured child answer. App handleFinishQuiz saves raw answers, so history can contain such drafts. These parents then disappear from remaining count and can cause next-batch selection to skip unpractised content.",
+      "evidence": "Bundled actual helper via esbuild and executed case1 / essay1 {text:unsubmitted draft} historical answer: attemptedPracticeIds returned [case1]. App.tsx:701 saves raw answers. committedAnswer.ts already distinguishes graded/submitted child answers and accepts numeric0/booleanfalse.",
+      "recommendation": "Use shared committedAnswer semantics for case parents (and structured essays); count a case as practised only when at least one actual child answer is committed.",
+      "status": "RESOLVED",
+      "resolution": "Case parent uses shared committedAnswer semantics; new regression rejects typing draft, preserves child MCQ0."
+    },
+    {
+      "id": "NAV-QC-2",
+      "priority": "P2",
+      "file": "src/app/components/ChapterTopicList.tsx",
+      "line": 25,
+      "problem": "Card attempted/completed display uses existing moduleProgress, which does not filter chapter or current content version. New batch remaining/advance uses version-aware attemptedPracticeIds. After edited content versions, cards can remain Completed /20of20 while dialog correctly says20 not yet practised.",
+      "evidence": "moduleProgress.ts filters module and parentID only; practiceNavigation.ts filters chapter and version. ChapterTopicList.tsx uses moduleProgress.attempted to calculate completed.",
+      "recommendation": "Use the same chapter-scoped current-version attempted IDs for card practice counts/completion; preserve existing objective accuracy/XP behavior.",
+      "status": "RESOLVED",
+      "resolution": "SubjectSelect provides current-version attemptedIds to ChapterTopicList; card counts/completion derive same IDs as remaining/batch selection. Changed-version regression rejects stale Completed state."
+    }
+  ],
+  "checks_passed_static": [
+    "Explicit multi-branch module allowlist plus MSS chapter9/past-exam guard; requires multiple active distinct recognized branch IDs. Single-branch and subject-first aliases do not introduce subject step.",
+    "Original chapter array and subjectIndex topic keys preserved while scoped topic lists are filtered; custom picker Select all stays within chosen branch.",
+    "20/40 stable slices preserve canonical order and original question IDs; whole-topic remains available; short-topic starts whole immediately.",
+    "Draft selection validates exact saved questionID set and version vector, prioritizes valid unfinished drafts by timestamp, then first chunk with unattempted member. Completed chunks remain available as review after exhaustion.",
+    "MCQ0 and TFfalse accepted as attempted; matching/fillblank only submitted answers counted in direct parent history.",
+    "Same-named topic result lookup uses topic.key; legacy title fallback allowed only when title unambiguous in entire chapter.",
+    "App branch state persists when quiz/results return to topic screen; reset on chapter/module and explicit back-to-chapters.",
+    "Native dialogs use showModal, labelled heading, Escape/cancel, explicit close, saved overflow restoration and focus cleanup. CSS constrains width/height and provides44/48px controls.",
+    "No modifications to grading, canonical question payload, XP submission or source bank data in reviewed navigation implementation.",
+    "Case typing/structured child drafts rejected; committed0/false retained.",
+    "Cards and batch picker share current-version attempted IDs, avoiding stale completion.",
+    "Cloud canonical server hashes separated from browser assessment hashes; no grading or XP changes.",
+    "Async progress lookup errors expose retry and whole-topic fallback rather than enabling a potentially incorrect next batch."
+  ],
+  "testing": {
+    "performed": "Independent focused run of corrected navigation helper, SubjectSelect navigation, custom topic picker and existing topic session resume tests.",
+    "command": "npm test -- --run src/app/learning/practiceNavigation.test.ts src/app/components/SubjectSelect.navigation.test.tsx src/app/components/TopicPracticePicker.test.tsx src/app/learning/topicPracticeSession.test.ts --maxWorkers=1",
+    "result": "PASS",
+    "files": 4,
+    "tests": 22,
+    "duration_seconds": 2.62,
+    "resolver_authored_tests": "Separate16tests/2files PASS; app TS PASS previously saved learning-version-resolver.json.",
+    "not_performed": "No full suite/build or browser/mobile/RTL visual checks by this reviewer; root final gates pending."
+  },
+  "limitations": [
+    "Static code review and focused regression tests; final integration, full suite/build and browser validation belong to root.",
+    "Pending async/version-error fallback inspected statically; focused navigation tests do not independently inject every delayed/failing request interleaving.",
+    "Resolver authored by this reviewer on explicit parent request, so qualification above applies."
+  ],
+  "open_findings": 0,
+  "review_qualification": "Root UI and pure navigation helper independently reviewed. This reviewer authored the separately requested canonical learning-version resolver; its validation is implementation verification, not independent authorship review.",
+  "learning_version_integration": {
+    "status": "PASS",
+    "server_entries": "attemptedPracticeIds uses canonical learning map for server LearningEntry hashes; browser attempt snapshots and saved sessions continue using runtime/browser contentVersion. Case child entries match longest parent ID and inherit parent server version.",
+    "async_hook": "Module/chapter/object-scoped version state, stale-request cancellation, conditional lookup when cloud entries exist, retry after failure. Short launches disabled until map ready; whole topic remains available.",
+    "pending_caveat": "Card/remaining displays may temporarily understate cloud attempts during lookup; Checking progress status explains pending state and short launch is disabled.",
+    "cache": "Resolver lazy chapter map cached per correctionRevision, defensive Map return and revision-race retry; existing overlay guards reused."
+  },
+  "final_report_frozen": true
+}

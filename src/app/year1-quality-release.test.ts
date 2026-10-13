@@ -18,7 +18,7 @@ describe('Semester 1 reviewed release accounting',()=>{
   for(const [module,counts] of Object.entries(summary.modules) as [string,any][]){
    const before=questions(read(report+`before/${module}.json`));
    const bank=read(`src/imports/year-1/semester-1/${module}.json`),live=questions(bank);
-   expect(validateModuleFile(bank),module).toEqual([]);expect(live).toHaveLength(module==='IBM-1'?biochemistry.after:counts.after);expect(before).toHaveLength(counts.before);
+   expect(validateModuleFile(bank),module).toEqual([]);expect(live).toHaveLength(module==='IBM-1'?biochemistry.after:module==='IHC-1'?read('docs/verification/histology-import-2026-10-12/summary.json').released_unique_questions:counts.after);expect(before).toHaveLength(counts.before);
    const liveIds=new Set(live.map(q=>q.id));
    for(const original of before){
     const statuses=[liveIds.has(original.id),duplicates.some(d=>d.module===module&&d.id===original.id),exclusions.some(e=>e.module===module&&e.id===original.id),module==='IBM-1'&&laterRemovals.some(r=>r.id===original.id)];

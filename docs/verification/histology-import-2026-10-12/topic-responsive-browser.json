@@ -1,0 +1,52 @@
+[
+  {
+    "columns": "337px",
+    "metaColor": "rgb(134, 140, 186)",
+    "minHeight": 84.1484375,
+    "scrollWidth": 369,
+    "surface": "rgb(20, 23, 36)",
+    "titleColor": "rgb(238, 240, 248)",
+    "topics": 21,
+    "width": 375
+  },
+  {
+    "columns": "392px",
+    "metaColor": "rgb(134, 140, 186)",
+    "minHeight": 84.1484375,
+    "scrollWidth": 424,
+    "surface": "rgb(20, 23, 36)",
+    "titleColor": "rgb(238, 240, 248)",
+    "topics": 21,
+    "width": 430
+  },
+  {
+    "columns": "351px 351px",
+    "metaColor": "rgb(134, 140, 186)",
+    "minHeight": 88.1484375,
+    "scrollWidth": 762,
+    "surface": "rgb(20, 23, 36)",
+    "titleColor": "rgb(238, 240, 248)",
+    "topics": 21,
+    "width": 768
+  },
+  {
+    "columns": "471px 471px",
+    "metaColor": "rgb(134, 140, 186)",
+    "minHeight": 88.1484375,
+    "scrollWidth": 1018,
+    "surface": "rgb(20, 23, 36)",
+    "titleColor": "rgb(238, 240, 248)",
+    "topics": 21,
+    "width": 1024
+  },
+  {
+    "columns": "474px 474px",
+    "metaColor": "rgb(134, 140, 186)",
+    "minHeight": 88.1484375,
+    "scrollWidth": 1434,
+    "surface": "rgb(20, 23, 36)",
+    "titleColor": "rgb(238, 240, 248)",
+    "topics": 21,
+    "width": 1440
+  }
+]

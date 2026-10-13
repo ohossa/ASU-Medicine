@@ -1,0 +1,449 @@
+{
+  "scope": "Independent read-only final bank QC; no repeated medical review of all1227. Prior semantic audit reused. All canonical payloads and provenance compared by independent inspection script, not invoking assembly/release_gate validators.",
+  "bank_sha256": "406d2477bbfbc243f332933d29fd7b16d1a93e01aeb5626d2e837334aea4f062",
+  "parent_count": 1227,
+  "format_counts": {
+    "mcq": 1118,
+    "truefalse": 100,
+    "matching": 7,
+    "essay": 2
+  },
+  "source_occurrences": 2101,
+  "source_dispositions": {
+    "released_representative": 1227,
+    "duplicate_released": 570,
+    "duplicate_existing": 6,
+    "held": 298
+  },
+  "released_source_occurrences": 1797,
+  "matching_children": 35,
+  "applied_duplicate_edges": 330,
+  "checks_completed": [
+    "Every canonical payload equals representative accepted final_content including explanation/index/special fields.",
+    "Every staged question hash equals final-placement hash.",
+    "Every representative review hash binds to exact reconciled source stem/options.",
+    "Every source occurrence/alias/hash/page/printed-number matches extraction and disposition.",
+    "All provenance-cluster candidates accepted and connected through applied duplicate graph.",
+    "Unique question IDs and single canonical allocation per source occurrence.",
+    "All matching premises/pairs/targets/full-table hashes and unused-target adaptation audit.",
+    "True/False ordering and indices; MCQ unique options; essay nonempty modelAnswer.",
+    "Chapter titles/book order and Past Exams bankSection marker."
+  ],
+  "failures": [],
+  "potential_source_text_leaks": [],
+  "content_pattern_spotcheck_candidates": [
+    {
+      "id": "IHC1-CH2-HIST-0008",
+      "content": [
+        "Endosomes",
+        "Golgi apparatus",
+        "Lysosomes",
+        "Peroxisomes",
+        "Endoplasmic reticulum"
+      ]
+    },
+    {
+      "id": "IHC1-CH4-HIST-0268",
+      "content": [
+        "Capsule of organs",
+        "Tendon",
+        "Skin",
+        "Basement membrane"
+      ]
+    }
+  ],
+  "student_explanation_notices": [
+    {
+      "id": "IHC1-CH4-HIST-0207",
+      "explanation": "Designated book lists few collagen, elastic and reticular fibers in mucous CT."
+    }
+  ],
+  "editorial_repaired_payloads": [
+    {
+      "id": "IHC1-CH2-HIST-0023",
+      "review_artifact": "root-editorial-adjudications.jsonl",
+      "patch_present": true,
+      "reassessed": true,
+      "final_content_hash": "cc4456450adaf5199a4ea42524ef4e7647c863a7c3f1d1ffdcd37a8c2ae1c1a1"
+    },
+    {
+      "id": "IHC1-CH2-HIST-0236",
+      "review_artifact": "root-qc-adjudications.jsonl",
+      "patch_present": true,
+      "reassessed": true,
+      "final_content_hash": "cd3bfb1ff8407e1bc66f7800d5438dcaf1441f5b5f6efe5975d43534959c5047"
+    },
+    {
+      "id": "IHC1-CH2-HIST-0237",
+      "review_artifact": "root-editorial-adjudications.jsonl",
+      "patch_present": true,
+      "reassessed": true,
+      "final_content_hash": "ab9d5ec364f9199b3048a1885f493add3e7571d2ca75f22c1daf63e6829aaeb1"
+    },
+    {
+      "id": "IHC1-CH2-HIST-0311",
+      "review_artifact": "root-qc-adjudications.jsonl",
+      "patch_present": true,
+      "reassessed": true,
+      "final_content_hash": "4dbca98d6c88dbc79cc8dbc6f1673b140f993f1530740be177e4884e3f0ccdae"
+    },
+    {
+      "id": "IHC1-CH2-HIST-0323",
+      "review_artifact": "root-qc-adjudications.jsonl",
+      "patch_present": true,
+      "reassessed": true,
+      "final_content_hash": "a0ee882daf7cda4c9e416fbc59020e5a56473207768e070160208b85fc4272ae"
+    },
+    {
+      "id": "IHC1-CH2-HIST-0440",
+      "review_artifact": "zahra-adjudications.jsonl",
+      "patch_present": true,
+      "reassessed": true,
+      "final_content_hash": "a3998d27db8ed3b8d74af0b156e73d032bc1915ae0e747d9921ff1546f4783d1"
+    },
+    {
+      "id": "IHC1-CH2-HIST-0467",
+      "review_artifact": "zahra-adjudications.jsonl",
+      "patch_present": true,
+      "reassessed": true,
+      "final_content_hash": "9f37b2dbacafc29e22693eda4aa7fa1dbb52e0466646adae9ed89b6949f89bde"
+    },
+    {
+      "id": "IHC1-CH2-HIST-0494",
+      "review_artifact": "zahra-adjudications.jsonl",
+      "patch_present": true,
+      "reassessed": true,
+      "final_content_hash": "f5c04eb5f9de159bbab2934b2437ce263e2124a5e3cd7a59b9e119cba13c02a4"
+    },
+    {
+      "id": "IHC1-CH2-HIST-0513",
+      "review_artifact": "zahra-adjudications.jsonl",
+      "patch_present": true,
+      "reassessed": true,
+      "final_content_hash": "4ee7f4bdd191a1e12806e58f2824bde026d11410b4782e316d4bade54ae61bf6"
+    },
+    {
+      "id": "IHC1-CH2-HIST-0517",
+      "review_artifact": "zahra-adjudications.jsonl",
+      "patch_present": true,
+      "reassessed": true,
+      "final_content_hash": "52d2a4459ab06c21caa4fb48cdfefd119cd2b33332593f3846bcbcf0c2fd298b"
+    },
+    {
+      "id": "IHC1-CH3-HIST-0012",
+      "review_artifact": "root-editorial-adjudications.jsonl",
+      "patch_present": true,
+      "reassessed": true,
+      "final_content_hash": "5c5417163a4fb0982a59c2b7185e1c5e80284d0638d700fc5ec2a880a4b4bceb"
+    },
+    {
+      "id": "IHC1-CH3-HIST-0124",
+      "review_artifact": "root-editorial-adjudications.jsonl",
+      "patch_present": true,
+      "reassessed": true,
+      "final_content_hash": "1615f5dc33ab0131fae78f0f20ec9b2b44b814554d1ac86dbbe6178a5eb6dd67"
+    },
+    {
+      "id": "IHC1-CH3-HIST-0130",
+      "review_artifact": "root-editorial-adjudications.jsonl",
+      "patch_present": true,
+      "reassessed": true,
+      "final_content_hash": "b392877a02e14504df1452a6ae65359b14234ee57ec2a6560969e03e03c9da62"
+    },
+    {
+      "id": "IHC1-CH3-HIST-0152",
+      "review_artifact": "root-editorial-adjudications.jsonl",
+      "patch_present": true,
+      "reassessed": true,
+      "final_content_hash": "7f31afc2dcb7e7b326ac9f0345b1b29ed0a91ba002fc8e1aba3b8c654b118ec3"
+    },
+    {
+      "id": "IHC1-CH3-HIST-0200",
+      "review_artifact": "zahra-adjudications.jsonl",
+      "patch_present": true,
+      "reassessed": true,
+      "final_content_hash": "93f4c37f605ca4cb9bd76192b31bab53b33295a85be1891693ead04ed92b8441"
+    },
+    {
+      "id": "IHC1-CH3-HIST-0202",
+      "review_artifact": "zahra-adjudications.jsonl",
+      "patch_present": true,
+      "reassessed": true,
+      "final_content_hash": "bbfaada344d7201fc6249148823ad408c460ccc59e9d6ce3b8fbb4eea2bce094"
+    },
+    {
+      "id": "IHC1-CH4-HIST-0118",
+      "review_artifact": "root-qc-adjudications.jsonl",
+      "patch_present": true,
+      "reassessed": true,
+      "final_content_hash": "5c6010331391bbed5b235d25a468cd2095fcdb0ff0e3a84ee9fbda3165ab9417"
+    },
+    {
+      "id": "IHC1-CH4-HIST-0125",
+      "review_artifact": "root-qc-adjudications.jsonl",
+      "patch_present": true,
+      "reassessed": true,
+      "final_content_hash": "a6e89157f932cb65ec6e37fd4452c1249d9c737a18a809360f0fbbc14776586f"
+    },
+    {
+      "id": "IHC1-CH4-HIST-0133",
+      "review_artifact": "root-qc-adjudications.jsonl",
+      "patch_present": true,
+      "reassessed": true,
+      "final_content_hash": "da7dbcfbf1737dce8de575c4177f323b0543b3b055448032dc2661bcce769a46"
+    },
+    {
+      "id": "IHC1-CH4-HIST-0183",
+      "review_artifact": "hegazy-mcqs-adjudications.jsonl",
+      "patch_present": true,
+      "reassessed": true,
+      "final_content_hash": "0d1759c62485ef5a5cba5b00bdfb62b532ea77fee882dad42c2dd9369080081d"
+    },
+    {
+      "id": "IHC1-CH4-HIST-0184",
+      "review_artifact": "hegazy-mcqs-adjudications.jsonl",
+      "patch_present": true,
+      "reassessed": true,
+      "final_content_hash": "65af8b042c2bc22bca8573fea4a7019263febbf4e4fd57c481d55ce95160f097"
+    },
+    {
+      "id": "IHC1-CH4-HIST-0185",
+      "review_artifact": "hegazy-mcqs-adjudications.jsonl",
+      "patch_present": true,
+      "reassessed": true,
+      "final_content_hash": "5884be8e62d2f7f22f130dd58d7b708a74ec14ecf3ce45f83980d5b4802725ba"
+    },
+    {
+      "id": "IHC1-CH4-HIST-0186",
+      "review_artifact": "hegazy-mcqs-adjudications.jsonl",
+      "patch_present": true,
+      "reassessed": true,
+      "final_content_hash": "a43812f91c982464fd635521d86971381e10ce4de95a4f101dae814a67a3e72d"
+    },
+    {
+      "id": "IHC1-CH4-HIST-0187",
+      "review_artifact": "hegazy-mcqs-adjudications.jsonl",
+      "patch_present": true,
+      "reassessed": true,
+      "final_content_hash": "1fc5525fdb74698f2524d8caea32c4871c949cc42357bae92b6a2e92ac3acce5"
+    },
+    {
+      "id": "IHC1-CH4-HIST-0188",
+      "review_artifact": "hegazy-mcqs-adjudications.jsonl",
+      "patch_present": true,
+      "reassessed": true,
+      "final_content_hash": "4d5a0c1e173e526916d2aa113574d81a17c0277e2caf700a0997da884960d5fe"
+    },
+    {
+      "id": "IHC1-CH4-HIST-0258",
+      "review_artifact": "root-editorial-adjudications.jsonl",
+      "patch_present": true,
+      "reassessed": true,
+      "final_content_hash": "63b71e68d3fba03c5126bc1fa74eb8ceac06cb2a80b5329a60deed5af01dfcb0"
+    },
+    {
+      "id": "IHC1-CH4-HIST-0265",
+      "review_artifact": "zahra-adjudications.jsonl",
+      "patch_present": true,
+      "reassessed": true,
+      "final_content_hash": "d1c431be96e851a21c4249c0e7abad23827e3c77d3a6dbfdbdb95ccbb8edeb98"
+    },
+    {
+      "id": "IHC1-CH6-HIST-0001",
+      "review_artifact": "root-adjudications.jsonl",
+      "patch_present": true,
+      "reassessed": true,
+      "final_content_hash": "044286ed38840cb14849a772c00f1d3c3cd4ff920e678a5df65e8b00e13aca3e"
+    },
+    {
+      "id": "IHC1-CH6-HIST-0031",
+      "review_artifact": "root-adjudications.jsonl",
+      "patch_present": true,
+      "reassessed": true,
+      "final_content_hash": "35a3dd32fa8cef75f7a4f843a99274d8e04f5784261f2cd78ecd338508db5516"
+    }
+  ],
+  "matching_audit": [
+    {
+      "id": "IHC1-CH2-HIST-0401",
+      "children": 5,
+      "source_targets": 7,
+      "unused_targets": [
+        "Concern with protein synthesis",
+        "Control exchange of materials"
+      ],
+      "adaptation_audit": {
+        "kind": "website_pairs_schema",
+        "unused_targets": [
+          {
+            "rightIndex": 5,
+            "exact_right": "Concern with protein synthesis",
+            "assessment": "rER/ribosome protein synthesis unmatched"
+          },
+          {
+            "rightIndex": 6,
+            "exact_right": "Control exchange of materials",
+            "assessment": "Plasma membrane exchange unmatched"
+          }
+        ],
+        "limitation": "Website pairs schema displays matched targets only; unused original distractors remain in source/review archive."
+      }
+    },
+    {
+      "id": "IHC1-CH2-HIST-0402",
+      "children": 5,
+      "source_targets": 7,
+      "unused_targets": [
+        "8-10 nm",
+        "Called tonofilaments"
+      ],
+      "adaptation_audit": {
+        "kind": "website_pairs_schema",
+        "unused_targets": [
+          {
+            "rightIndex": 5,
+            "exact_right": "8-10 nm",
+            "assessment": "IFdiameter unmatched"
+          },
+          {
+            "rightIndex": 6,
+            "exact_right": "Called tonofilaments",
+            "assessment": "Keratin tonofilaments unmatched"
+          }
+        ],
+        "limitation": "Website pairs schema displays matched targets only; unused original distractors remain in source/review archive."
+      }
+    },
+    {
+      "id": "IHC1-CH2-HIST-0403",
+      "children": 5,
+      "source_targets": 7,
+      "unused_targets": [
+        "Protects from ultraviolet rays",
+        "Dyes injected under skin"
+      ],
+      "adaptation_audit": {
+        "kind": "website_pairs_schema",
+        "unused_targets": [
+          {
+            "rightIndex": 5,
+            "exact_right": "Protects from ultraviolet rays",
+            "assessment": "MelaninUVunmatched"
+          },
+          {
+            "rightIndex": 6,
+            "exact_right": "Dyes injected under skin",
+            "assessment": "Vitaldyingunmatched"
+          }
+        ],
+        "limitation": "Website pairs schema displays matched targets only; unused original distractors remain in source/review archive."
+      }
+    },
+    {
+      "id": "IHC1-CH2-HIST-0404",
+      "children": 5,
+      "source_targets": 7,
+      "unused_targets": [
+        "Deletion of short arm chromosome 6",
+        "(47, XXX)"
+      ],
+      "adaptation_audit": {
+        "kind": "website_pairs_schema",
+        "unused_targets": [
+          {
+            "rightIndex": 3,
+            "exact_right": "Deletion of short arm chromosome 6",
+            "assessment": "6p deletion unmatched"
+          },
+          {
+            "rightIndex": 5,
+            "exact_right": "(47, XXX)",
+            "assessment": "XXXunmatched"
+          }
+        ],
+        "limitation": "Website pairs schema displays matched targets only; unused original distractors remain in source/review archive."
+      }
+    },
+    {
+      "id": "IHC1-CH3-HIST-0097",
+      "children": 5,
+      "source_targets": 7,
+      "unused_targets": [
+        "Simple columnar",
+        "Stratified squamous (keratinized)"
+      ],
+      "adaptation_audit": {
+        "kind": "website_pairs_schema",
+        "unused_targets": [
+          {
+            "rightIndex": 0,
+            "exact_right": "Simple columnar",
+            "assessment": "Simplecolumnar unmatched"
+          },
+          {
+            "rightIndex": 1,
+            "exact_right": "Stratified squamous (keratinized)",
+            "assessment": "Keratinizedskin unmatched"
+          }
+        ],
+        "limitation": "Website pairs schema displays matched targets only; unused original distractors remain in source/review archive."
+      }
+    },
+    {
+      "id": "IHC1-CH4-HIST-0208",
+      "children": 5,
+      "source_targets": 7,
+      "unused_targets": [
+        "Can differentiate into smooth muscle cells",
+        "Peripheral flattened nucleus"
+      ],
+      "adaptation_audit": {
+        "kind": "website_pairs_schema",
+        "unused_targets": [
+          {
+            "rightIndex": 1,
+            "exact_right": "Can differentiate into smooth muscle cells",
+            "assessment": "Pericyte/UMCsmoothpotential unmatched"
+          },
+          {
+            "rightIndex": 3,
+            "exact_right": "Peripheral flattened nucleus",
+            "assessment": "Whitefatnucleus unmatched"
+          }
+        ],
+        "limitation": "Website pairs schema displays matched targets only; unused original distractors remain in source/review archive."
+      }
+    },
+    {
+      "id": "IHC1-CH4-HIST-0209",
+      "children": 5,
+      "source_targets": 7,
+      "unused_targets": [
+        "Fat tissues",
+        "Basophilic"
+      ],
+      "adaptation_audit": {
+        "kind": "website_pairs_schema",
+        "unused_targets": [
+          {
+            "rightIndex": 1,
+            "exact_right": "Fat tissues",
+            "assessment": "Fatnotselectedfiberassociation"
+          },
+          {
+            "rightIndex": 4,
+            "exact_right": "Basophilic",
+            "assessment": "Basophilicnottheseindividualfibers"
+          }
+        ],
+        "limitation": "Website pairs schema displays matched targets only; unused original distractors remain in source/review archive."
+      }
+    }
+  ],
+  "limits": [
+    "This does not establish fresh independent medical correctness for each question; medical and semantic reviews are nonblind/source-key-exposed as prior artifacts state.",
+    "Every explanation was structurally compared and scanned; not every explanation was prose-edited manually.",
+    "Every topic placement index/order was verified; exact clinical suitability of each of1227 topic mappings was not reclassified.",
+    "Archived source answer disagreements remain separate from derived canonical answers."
+  ]
+}

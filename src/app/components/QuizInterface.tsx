@@ -1490,7 +1490,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
               <h3 className="text-lg font-semibold">Submit attempt?</h3>
               <p className="mt-2 text-sm text-gray-500 dark:text-white/50">
                 You answered <span className="font-medium text-gray-900 dark:text-white tabular-nums">{answeredCount}</span> of{' '}
-                <span className="tabular-nums">{total}</span> questions
+                <span className="tabular-nums">{total}</span> {total===1?'question':'questions'}
                 {flagged.size > 0 && (
                   <> · <span className="text-amber-500 dark:text-amber-400 tabular-nums">{flagged.size} flagged</span></>
                 )}

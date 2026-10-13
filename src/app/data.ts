@@ -1,4 +1,5 @@
 import {contentRevision} from './loading/contentRevision';
+import {captureLearningSourceBank,resolveLearningQuestionVersions,type LearningRawBank} from './loading/learningQuestionVersions';
 import manifestJson from './generated/bankManifest.json';
 import {createResourceLoader} from './loading/resources';
 import { cleanQuestionStem } from './utils/questionStem';
@@ -564,6 +565,8 @@ function detectDbTypeOfJson(rawData: unknown): 'mcq' | 'essay' {
 interface BankManifest {year:number;semester:number;paths:string[];mcqCount:number;essayCount:number;totalCount:number;revision:string;bytes:number}
 export const bankManifest=manifestJson as Record<string,BankManifest>;
 const sourceContentVersions=new Map<string,string>();
+const learningSourceBanks=new Map<string,LearningRawBank>();
+const learningVersionCache=new Map<string,{revision:number;promise:Promise<Map<string,string>>}>();
 let latestPublishedEdits:unknown[]=[];
 let overlayQueue:Promise<unknown>=Promise.resolve();
 function serializeOverlay<T>(operation:()=>Promise<T>):Promise<T>{const next=overlayQueue.then(operation);overlayQueue=next.catch(()=>undefined);return next;}
@@ -587,6 +590,7 @@ async function loadModuleFiles(paths:string[]): Promise<void> {
         staged[code] = { mcqRaw: null, essayRaw: null };
       }
       assertUniqueQuestionIds(v2Data, path);
+      learningSourceBanks.set(code,captureLearningSourceBank(v2Data as unknown as LearningRawBank));
       staged[code].v2Raw = v2Data;
     } else {
       console.warn(`Missing meta or moduleCode in v2 JSON: ${path}`);
@@ -690,6 +694,23 @@ export async function refreshQuestionCorrections() {
 const bankLoader=createResourceLoader(async code=>{const bank=bankManifest[code];if(!bank)return;await loadModuleFiles(bank.paths);});
 export const isModuleDataLoaded=(code:string)=>Boolean(moduleDatabases[code.toUpperCase()]);
 export async function ensureModuleDataLoaded(code:string):Promise<void>{await bankLoader.ensure(code.toUpperCase());}
+/** Lazy, chapter-scoped full-canonical hashes matching server/learning-bank. */
+export async function getLearningQuestionVersions(moduleCode:string,chapterId:number):Promise<Map<string,string>>{
+ const code=moduleCode.toUpperCase();
+ await ensureModuleDataLoaded(code);
+ await overlayQueue;
+ const revision=correctionRevision,key=code+':'+chapterId;
+ let cached=learningVersionCache.get(key);
+ if(!cached||cached.revision!==revision){
+  const source=learningSourceBanks.get(code);
+  const promise=source?resolveLearningQuestionVersions(source,code,chapterId,latestPublishedEdits):Promise.resolve(new Map<string,string>());
+  cached={revision,promise};learningVersionCache.set(key,cached);
+  promise.catch(()=>{if(learningVersionCache.get(key)===cached)learningVersionCache.delete(key);});
+ }
+ const versions=await cached.promise;
+ if(correctionRevision!==revision)return getLearningQuestionVersions(code,chapterId);
+ return new Map(versions);
+}
 export async function ensureYearDataLoaded(year:number):Promise<void>{await Promise.all(Object.entries(bankManifest).filter(([,b])=>b.year===year).map(([code])=>ensureModuleDataLoaded(code)));}
 /** Kept for validators and explicit all-year search; home never calls this. */
 export async function ensureDataLoaded():Promise<void>{await Promise.all(Object.keys(bankManifest).map(ensureModuleDataLoaded));}

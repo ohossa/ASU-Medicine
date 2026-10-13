@@ -584,7 +584,7 @@ export function ResultsDashboard({
             <button
               onClick={onBackToChapters}
               aria-label="Back to chapters"
-              className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.04] text-gray-700 dark:text-white/70 transition-colors hover:bg-gray-100 dark:hover:bg-white/[0.08] btn-press"
+              className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.04] text-gray-700 dark:text-white/70 transition-colors hover:bg-gray-100 dark:hover:bg-white/[0.08] btn-press"
             >
               <ArrowLeft size={16} className={`text-current ${isRTL ? 'rotate-180' : ''}`} />
             </button>

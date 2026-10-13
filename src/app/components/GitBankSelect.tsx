@@ -49,7 +49,7 @@ export function GitBankSelect({ chapters, collection, onCollectionChange, studyM
         className="sticky top-3 z-20 mb-8 flex items-center gap-3 rounded-2xl border border-border dark:border-white/[0.08] bg-card/85 px-3 py-2.5 glass-panel">
         <button type="button" aria-label={isPast ? (ar ? 'رجوع إلى بنك الأسئلة' : 'Back to question bank') : (ar ? 'رجوع إلى أنماط الدراسة' : 'Back to study modes')}
           onClick={isPast ? () => onCollectionChange('practice') : onBackToModeSelect}
-          className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-border bg-secondary/80 text-muted-foreground transition-all hover:text-foreground active:scale-95 focus-visible:outline-2 focus-visible:outline-primary">
+          className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-border bg-secondary/80 text-muted-foreground transition-all hover:text-foreground active:scale-95 focus-visible:outline-2 focus-visible:outline-primary">
           <ArrowLeft size={16} className={ar ? 'rotate-180' : ''} />
         </button>
         <FlowBreadcrumbs crumbs={crumbs} rtl={ar} />

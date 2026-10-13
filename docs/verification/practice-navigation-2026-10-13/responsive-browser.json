@@ -1,0 +1,56 @@
+[
+  {
+    "columns": "337px",
+    "compactPath": true,
+    "minTopicHeight": 84.1484375,
+    "scrollWidth": 369,
+    "searchHeight": 48,
+    "topics": 5,
+    "width": 375
+  },
+  {
+    "columns": "392px",
+    "compactPath": true,
+    "minTopicHeight": 84.1484375,
+    "scrollWidth": 424,
+    "searchHeight": 48,
+    "topics": 5,
+    "width": 430
+  },
+  {
+    "columns": "595px",
+    "compactPath": true,
+    "minTopicHeight": 84.1484375,
+    "scrollWidth": 627,
+    "searchHeight": 48,
+    "topics": 5,
+    "width": 633
+  },
+  {
+    "columns": "351px 351px",
+    "compactPath": false,
+    "minTopicHeight": 88.1484375,
+    "scrollWidth": 762,
+    "searchHeight": 48,
+    "topics": 5,
+    "width": 768
+  },
+  {
+    "columns": "471px 471px",
+    "compactPath": false,
+    "minTopicHeight": 88.1484375,
+    "scrollWidth": 1018,
+    "searchHeight": 48,
+    "topics": 5,
+    "width": 1024
+  },
+  {
+    "columns": "474px 474px",
+    "compactPath": false,
+    "minTopicHeight": 88.1484375,
+    "scrollWidth": 1434,
+    "searchHeight": 48,
+    "topics": 5,
+    "width": 1440
+  }
+]

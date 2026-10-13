@@ -1,11 +1,11 @@
 import type {ChapterData,Question,SubjectData,QuizAnswer} from '../types';
 import type {QuizResult} from '../utils/storage';
 import {checkAnswerCorrect} from '../utils/quiz';
-export interface PracticeTopic {key:string;title:string;subjectName:string;questions:Question[]}
+export interface PracticeTopic {key:string;title:string;subjectName:string;questions:Question[];subjectIndex?:number;lectureNum?:number}
 export interface TopicScore {key:string;title:string;subjectName:string;correct:number;total:number;pct:number}
 export function practiceTopics(chapter:ChapterData,moduleCode=''):PracticeTopic[]{
  return chapter.subjects.flatMap((subject,index)=>{
- const group=(title:string,questions:Question[],suffix:string)=>({key:JSON.stringify([moduleCode,chapter.id,index,suffix]),title,subjectName:subject.name,questions});
+ const group=(title:string,questions:Question[],suffix:string)=>({key:JSON.stringify([moduleCode,chapter.id,index,suffix]),title,subjectName:subject.name,questions,subjectIndex:index,lectureNum:suffix==='subject'?subject.lectureNum:suffix==='other'?undefined:Number(suffix)});
  if(subject.lectureNum!==undefined || !subject.lectureNames?.length)return [group(subject.name,subject.questions,'subject')];
  const topics=subject.lectureNames.map((title,i)=>group(title,subject.questions.filter(q=>q.lecture===i+1),String(i+1)));
  const extra=subject.questions.filter(q=>!Number.isInteger(q.lecture)||q.lecture<1||q.lecture>subject.lectureNames!.length);
@@ -24,7 +24,9 @@ export function selectedPractice(chapter:ChapterData,topics:PracticeTopic[],ids:
  const signature=JSON.stringify(questions.map(q=>String(q.id)).sort());
  let hash=0xcbf29ce484222325n;for(const char of signature){hash=BigInt.asUintN(64,(hash^BigInt(char.codePointAt(0)!))*0x100000001b3n);}
  const sessionKey='custom:'+questions.length+':'+hash.toString(16);
- const subject:SubjectData={id:chapter.accentColor,name:`Custom practice · ${count} ${count===1?'topic':'topics'}`,sessionKey,iconName:'ListChecks',lectures:'Selected topics',lectureCount:count,questions};
+ const onlyTopic=count===1?topics.find(t=>t.key===questions[0].practiceTopic!.key):undefined;
+ const source=onlyTopic?chapter.subjects[onlyTopic.subjectIndex??chapter.subjects.findIndex(s=>s.name===onlyTopic.subjectName)]:undefined;
+ const subject:SubjectData={id:source?.id??chapter.accentColor,name:count===1?questions[0].practiceTopic!.title:`Custom practice · ${count} topics`,sessionKey,iconName:source?.iconName??'ListChecks',lectures:'Selected topics',lectureCount:count,questions};
  return {subject,questions};
 }
 export function questionScore(q:Question,answer:unknown){
@@ -47,11 +49,14 @@ export function resumeCustomPractice(chapter:ChapterData,saved:{subjectName:stri
  if(byId.size!==saved.questionIds.length||run.subject.sessionKey!==saved.subjectName)return null;
  return {...run,questions:saved.questionIds.map(id=>byId.get(String(id))!)};
 }
-export function latestTopicResult(history:QuizResult[],chapterId:number,title:string,moduleCode?:string){
+export function latestTopicResult(history:QuizResult[],chapterId:number,title:string,moduleCode?:string,topicKey?:string,allowLegacy=true){
  for(const result of history){
  if(result.chapterId!==chapterId||(moduleCode&&result.moduleCode!==moduleCode))continue;
- const direct=result.topicResults?.find(t=>t.title===title);
+ const direct=result.topicResults?.find(t=>topicKey?t.key===topicKey:t.title===title);
  if(direct)return {...direct,elapsedSeconds:result.elapsedSeconds,isCustom:true};
+ // Keyed topic results belong to a specific subject, even when titles coincide.
+ if(topicKey&&result.topicResults?.length)continue;
+ if(!allowLegacy)continue;
  const parts=result.topicResults?.filter(t=>t.subjectName===title);
  if(parts?.length){const correct=parts.reduce((n,t)=>n+t.correct,0),total=parts.reduce((n,t)=>n+t.total,0);return {correct,total,pct:Math.round(correct/total*100),elapsedSeconds:result.elapsedSeconds,isCustom:true};}
  if(result.subjectName===title)return result;

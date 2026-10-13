@@ -1,0 +1,12 @@
+
+> replicated-quiz-app@0.0.1 test
+> vitest run --maxWorkers=2
+
+
+ RUN  v4.1.11 /Users/omarhossa/Documents/asu.codes questions/UI_JOBS/2026-10-12-practice-navigation/RELEASE
+
+
+ Test Files  120 passed (120)
+      Tests  690 passed (690)
+   Start at  09:06:28
+   Duration  39.95s (transform 19.64s, setup 5.55s, import 14.66s, tests 20.15s, environment 25.09s)

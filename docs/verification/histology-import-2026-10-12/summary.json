@@ -1,0 +1,68 @@
+{
+  "source_occurrences": 2101,
+  "exact_candidates": 1779,
+  "source_exact_repeats": 322,
+  "medically_reviewed_candidates": 1779,
+  "accepted_candidates_before_semantic_dedup": 1515,
+  "held_candidates": 264,
+  "released_unique_questions": 1227,
+  "released_formats": {
+    "mcq": 1118,
+    "essay": 2,
+    "truefalse": 100,
+    "matching": 7
+  },
+  "source_dispositions": {
+    "released_representative": 1227,
+    "duplicate_released": 570,
+    "duplicate_existing": 6,
+    "held": 298
+  },
+  "released_matching_children": 35,
+  "canonical_sha256": "406d2477bbfbc243f332933d29fd7b16d1a93e01aeb5626d2e837334aea4f062",
+  "chapter_counts": {
+    "Microtechniques and Microscopy": 57,
+    "The Cell": 525,
+    "Epithelial Tissue": 218,
+    "Connective Tissue": 273,
+    "Overview": 106,
+    "Past Exams": 48
+  },
+  "unresolved_medical_conflicts_archived": 2,
+  "publication": "Integrated locally; not published",
+  "topics_total": 60,
+  "topic_counts": {
+    "Microtechniques and Microscopy": 3,
+    "The Cell": 21,
+    "Epithelial Tissue": 11,
+    "Connective Tissue": 13,
+    "Overview": 9,
+    "Past Exams": 3
+  },
+  "largest_cell_topic_questions": 44,
+  "image_dependent_questions_released": 0,
+  "linked_google_form_excluded": true,
+  "medical_review_method": "Evidence-grounded AI review; historical-key exposure/nonblind where recorded. Separate source, bank and selected medical checks; not every answer independently reviewed by a clinician.",
+  "deduplication_limits": "Exact and manually adjudicated retrieved semantic duplicates removed. Cannot prove absence of every distant paraphrase.",
+  "verification": {
+    "main_test_files_passed": 115,
+    "main_tests_passed": 663,
+    "pipeline_tests_passed": 20,
+    "typescript_projects_passed": 3,
+    "production_build_passed": true,
+    "responsive_widths": [
+      375,
+      430,
+      768,
+      1024,
+      1440
+    ],
+    "sound_button_icon_only": true,
+    "sound_target_pixels": [
+      44,
+      44
+    ],
+    "source_payload_conservation": true,
+    "independent_organization_QC": "PASS"
+  }
+}

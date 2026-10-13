@@ -1,9 +1,11 @@
+import {questionCountLabel} from '../learning/practiceNavigation';
+import {FlowBreadcrumbs} from './FlowBreadcrumbs';
 import { isPastExamSection } from "../lib/practiceOrder";
 import {useSyncedHistory} from '../hooks/useSyncedHistory';
 import { ShuffleSwitch } from '../preferences/ShuffleSwitch';
 import React, { useMemo } from 'react';
 import { useNavigate, useParams } from 'react-router';
-import { GraduationCap, Layers, ArrowRight, Clock, Award, Trash2, ArrowLeft, Calendar, ChevronRight } from 'lucide-react';
+import { GraduationCap, Layers, ArrowRight, Clock, Award, Trash2, ArrowLeft, Calendar } from 'lucide-react';
 import type { ChapterData, SubjectColor, SubjectData, Question } from '../types';
 import { formatTime } from '../types';
 import type { QuizResult } from '../utils/storage';
@@ -316,10 +318,10 @@ export function ChapterSelect({
           <div className="flex items-center justify-between sm:justify-end shrink-0 gap-4 border-t border-border/50 sm:border-0 pt-4 sm:pt-0">
             <div className="text-start sm:text-right rtl:text-right">
               <span className="block text-[11px] text-muted-foreground dark:text-white/40 font-medium">
-                {mCh.subjects.length} {label('subjects')}
+                {mCh.subjects.length} {isRTL?label('subjects'):mCh.subjects.length===1?'Subject':'Subjects'}
               </span>
               <span className="block text-xs font-bold text-foreground/80 dark:text-white/75 mt-0.5">
-                {mCh.subjects.reduce((sum, s) => sum + s.questions.length, 0)} {label('questions')}
+                {questionCountLabel(mCh.subjects.reduce((sum,s)=>sum+s.questions.length,0),isRTL)}
               </span>
             </div>
 
@@ -389,13 +391,13 @@ export function ChapterSelect({
 
           <div className="mt-5 flex items-center justify-between">
             <span className="text-[11px] text-muted-foreground dark:text-white/40">
-              {chapter.subjects.reduce((a, s) => a + s.questions.length, 0)} {label('questions')}
+              {questionCountLabel(chapter.subjects.reduce((a,s)=>a+s.questions.length,0),isRTL)}
             </span>
             <button
               type="button"
               onClick={() => onSelectChapter(chapter)}
               aria-label={`${label('start')}: ${chapter.title}`}
-              className={`flex h-10 w-10 items-center justify-center rounded-full text-white dark:text-black shadow-lg transition-all hover:scale-110 active:scale-95 ${startButtonBg[accent]}`}
+              className={`flex h-11 w-11 items-center justify-center rounded-full text-white dark:text-black shadow-lg transition-all hover:scale-110 active:scale-95 ${startButtonBg[accent]}`}
             >
               <StartArrow size={17} strokeWidth={2.5} />
             </button>
@@ -442,34 +444,17 @@ export function ChapterSelect({
         {/* Unified Header Card Panel */}
         <div className="cs-enter mb-8 rounded-[28px] border border-border bg-card p-6 sm:p-8 shadow-sm" style={{ animationDelay: '0ms' }}>
           {/* ---------------- Top navigation bar ---------------- */}
-          <nav className="flex items-center gap-3 mb-6">
+          <nav aria-label={isRTL?'مسار التنقل':'Breadcrumb'} className="flex items-center gap-3 mb-6">
             <button
               type="button"
               onClick={onBackToModeSelect}
               aria-label={label('back')}
-              className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-border bg-secondary text-muted-foreground hover:text-foreground dark:text-white/70 dark:hover:text-white hover:bg-muted transition-all active:scale-95 cursor-pointer"
+              className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-border bg-secondary text-muted-foreground hover:text-foreground dark:text-white/70 dark:hover:text-white hover:bg-muted transition-all active:scale-95 cursor-pointer"
             >
               <BackArrow size={16} />
             </button>
 
-            <ol className="flex min-w-0 flex-1 items-center gap-1 overflow-x-auto text-xs font-medium text-gray-500 dark:text-white/60">
-              {crumbs.map((crumb, i) => (
-                <li key={`${crumb.label}_${i}`} className="flex shrink-0 items-center gap-1">
-                  {i > 0 && <ChevronRight size={13} className={`text-gray-400 dark:text-white/30 ${isRTL ? 'rotate-180' : ''}`} />}
-                  {crumb.onClick ? (
-                    <button
-                      type="button"
-                      onClick={crumb.onClick}
-                      className="rounded px-1 py-0.5 transition-colors text-gray-500 dark:text-white/60 hover:text-gray-950 dark:hover:text-white cursor-pointer"
-                    >
-                      {crumb.label}
-                    </button>
-                  ) : (
-                    <span className={i === crumbs.length - 1 ? 'font-semibold text-gray-950 dark:text-white' : ''}>{crumb.label}</span>
-                  )}
-                </li>
-              ))}
-            </ol>
+            <FlowBreadcrumbs crumbs={crumbs} rtl={isRTL}/>
 
             <ShuffleSwitch />
             {userButton && <div className="shrink-0">{userButton}</div>}
@@ -498,7 +483,7 @@ export function ChapterSelect({
             <div className="mt-6 flex flex-wrap gap-3 text-xs">
               <span className="inline-flex items-center gap-1.5 rounded-full border border-border bg-secondary px-3 py-1.5 text-gray-700 dark:text-white/80 font-medium">
                 <Layers size={13} className="text-clinical" />
-                {chapters.length} {label('chapters')}
+                {chapters.length} {isRTL?label('chapters'):chapters.length===1?'Chapter':'Chapters'}
               </span>
               <span className="inline-flex items-center gap-1.5 rounded-full border border-border bg-secondary px-3 py-1.5 text-gray-700 dark:text-white/80 font-medium">
                 <GraduationCap size={13} className="text-biochem" />
@@ -506,7 +491,7 @@ export function ChapterSelect({
               </span>
               <span className="inline-flex items-center gap-1.5 rounded-full border border-border bg-secondary px-3 py-1.5 text-gray-700 dark:text-white/80 font-medium">
                 <Award size={13} className="text-physiology" />
-                {totalQuestions} {label('questions')}
+                {questionCountLabel(totalQuestions,isRTL)}
               </span>
             </div>
           </header>

@@ -1,3 +1,4 @@
+import {findTopicPracticeSession} from './learning/topicPracticeSession';
 import {topicScores,questionScore,resumeCustomPractice,selectedPractice,practiceTopics,type TopicScore} from './learning/customPractice';
 import {RouteDataGate} from './loading/RouteDataGate';
 import {resolveStudyLink} from './utils/studyLinks';
@@ -184,6 +185,8 @@ function QuizFlowWrapper({
 }) {
   const navigate = useNavigate();
   const { code, mode } = useParams<{ code: string; mode: string }>();
+  const [selectedPracticeBranch,setSelectedPracticeBranch]=useState<string|null>(null);
+  useLayoutEffect(()=>setSelectedPracticeBranch(null),[selectedChapter?.id,code]);
   const [gitCollection, setGitCollection] = useState<QuestionCollection>('practice');
   useEffect(() => { setGitCollection('practice'); }, [code, mode]);
   useEffect(() => {
@@ -261,6 +264,8 @@ function QuizFlowWrapper({
         <Suspense fallback={<LoadingScreen compact label="Opening this view…"/>}>
           <SubjectSelect
             chapter={selectedChapter}
+            selectedBranch={selectedPracticeBranch}
+            onBranchChange={setSelectedPracticeBranch}
             moduleCode={selectedModule.code}
             breadcrumbPath={selectedModule.code === 'MGL-3' ? [...gitCollectionCrumbs, { label: selectedChapter.subjects[0]?.id ? selectedChapter.title.replace(/^Past exams — /, '') : selectedChapter.title }] : [
               { label: t('portal') || 'Portal', onClick: () => navigate('/') },
@@ -272,7 +277,7 @@ function QuizFlowWrapper({
               }} ,
               { label: selectedChapter.title }
             ]}
-            onBack={() => setScreen('chapters')}
+            onBack={() => {setSelectedPracticeBranch(null);setScreen('chapters');}}
             onSelectSubject={handleSelectSubject}
             onQuickStart={handleQuickStart}
             userButton={customUserButton}
@@ -615,7 +620,7 @@ function MainApp() {
   };
 
   const handleSelectSubject = (subject: SubjectData, questions: Question[]) => {
-    const saved = loadQuizSession(transformedChapter!.id, subject.sessionKey ?? subject.name);
+    const saved = findTopicPracticeSession(subject,questions,key=>loadQuizSession(transformedChapter!.id,key));
     if (saved && !saved.finished && (saved.questionIds ? sessionMatchesQuestions(questions, saved) : selectedModule?.code !== 'MGL-3')) {
       setResumePayload(saved);
       return;

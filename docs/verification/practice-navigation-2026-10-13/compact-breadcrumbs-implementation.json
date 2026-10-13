@@ -1,0 +1,66 @@
+{
+  "scope": "Compact mobile breadcrumb implementation in staging only; no main/data/quiz modifications.",
+  "files_changed": [
+    "src/app/components/FlowBreadcrumbs.tsx",
+    "src/app/components/flow-breadcrumbs.css",
+    "src/app/components/FlowBreadcrumbs.test.tsx",
+    "src/app/components/ChapterSelect.tsx",
+    "src/app/components/ChapterSelect.breadcrumbs.test.tsx"
+  ],
+  "file_sha256": {
+    "src/app/components/FlowBreadcrumbs.tsx": "3da7d0ddf3cbce2c2abc6729403b552d31f208e5ae956a3a75f2a3e81eadf39b",
+    "src/app/components/flow-breadcrumbs.css": "a4b07dbd55740f2cdd55fdd57457d4dee664b4e44c33a3c2f095510df1c724e1",
+    "src/app/components/FlowBreadcrumbs.test.tsx": "5d92d9f6317de066bce8ab7441c63658d50afa9fbf9d6c2b2b76838d13438dd1",
+    "src/app/components/ChapterSelect.tsx": "af4b31d8400209336422a89925b4e557a66cf1fa46e4e2264fa6bdf3d7b4e69b",
+    "src/app/components/ChapterSelect.breadcrumbs.test.tsx": "30c0bbb31088326ed3ca3c8a42cef69684edc3c10b609491e9eb6e118f758f02"
+  },
+  "design": "At<=640px show the immediately preceding ancestor and current location with single-line truncation, retaining complete labels in accessible names/title and full-path disclosure.44px monochrome icon control, constrained full-path panel and full unabridged menu labels. Desktop keeps complete familiar path.",
+  "functional_behavior": [
+    "Original ancestor callbacks invoked once, including onNavigate wrapper.",
+    "Native button activation supports Enter/Space; vertical ancestor navigation supports ArrowUp/Down/Home/End.",
+    "Escape closes and restores trigger focus; outside pointer closes without stealing focus.",
+    "Responsive viewport updates switch compact/desktop and dismiss open popup on resize.",
+    "RTL sets direction and reverses separator chevrons, with Arabic accessible labels.",
+    "ChapterSelect now uses shared FlowBreadcrumbs and labelled navigation; Back target raised from36 to44px.",
+    "No colour legend, module counts, bank content or quiz/session behavior changed."
+  ],
+  "tests": {
+    "red": "Before implementation4mobile tests failed, while desktop callback test passed.",
+    "final_command": "npm test -- --run src/app/components/FlowBreadcrumbs.test.tsx src/app/components/ChapterSelect.breadcrumbs.test.tsx src/app/components/ChapterSelect.organization.test.tsx src/app/components/GitBankSelect.test.tsx",
+    "final_result": "PASS",
+    "files": 4,
+    "tests": 16,
+    "covered": [
+      "compact parent/current versus expanded full path",
+      "ancestor callbacks and wrapped navigation",
+      "Enter/Space activation",
+      "Escape and focus restoration",
+      "Arrow/Home/End movement",
+      "outside-click dismissal",
+      "Arabic/RTL labels",
+      "responsive resize",
+      "non-GIT ChapterSelect integration",
+      "existing GIT collection/back/ancestor behavior and topic subset selection"
+    ],
+    "unrelated_combined_run_failure": "SubjectSelect.topics.test.tsx singular-count expectations still said1questions after parent changed ChapterTopicList to1question. Parent notified; test outside ownership left untouched."
+  },
+  "apple_design_references_read": [
+    "accessibility.md / Mobility",
+    "layout.md / Adaptability and Guides and safe areas",
+    "typography.md / Ensuring legibility",
+    "color.md / Inclusive color",
+    "designing-for-ios.md / Best practices",
+    "cross-platform.md / Conventions to check",
+    "buttons.md / Content",
+    "menus.md / Labels and Organization",
+    "popovers.md / Best practices"
+  ],
+  "limitations": [
+    "Browser pixel/contrast/overflow checks not performed by this subagent; parent will verify integrated mobile/desktop browser.",
+    "No full suite/build run concurrently; parent final checks required."
+  ],
+  "main_source_files_edited": false,
+  "root_owned_files_edited": false,
+  "next_step": "Root integrates shared FlowBreadcrumbs in SubjectSelect and runs final full suite/build/browser.",
+  "remaining_owned_work": 0
+}

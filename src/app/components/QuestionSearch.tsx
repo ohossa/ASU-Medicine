@@ -410,7 +410,7 @@ export function QuestionSearch({
         ) : (
           <>
             <p className="search-count" role="status" aria-live="polite">
-              {results.length.toLocaleString()} {ar ? "سؤال" : "questions"}
+              {results.length.toLocaleString()} {ar ? "سؤال" : results.length===1 ? "question" : "questions"}
               {deferred && ` · “${deferred}”`}
               {query !== deferred || searching ? " · Searching…" : ""}
             </p>
