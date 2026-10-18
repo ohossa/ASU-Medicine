@@ -23,33 +23,17 @@
       "subtitle": "",
       "emoji": "💻",
       "page": 1,
-      "lectureRange": "Topics 1–18",
+      "lectureRange": "Topics 1–2",
       "subjects": [
         {
           "id": "clinical",
           "name": "Clinical",
           "iconName": "Stethoscope",
-          "lectures": "Office 2016 New Features - Smart Lookup, Office 2016 New Features - Version History, Office 2016 New Features - Ink Equation, Office 2016 New Features - Screen Recording, Office 2016 New Features - Tell Me, Office 2016 New Features - Text Highlighter, Office 2016 New Features - Co-authoring and Sharing, Office 2016 New Features - Modern Charts, Saving Online - Microsoft Account, Ribbon and Tabs - Customisation, Ribbon and Tabs - Structure, File Menu (Backstage View), Quick Access Toolbar, Format Painter, Computer Fundamentals - Interrupt Handling, Tables - Merging Cells, Working with Objects - Layering, Bullets and Numbering",
-          "lectureCount": 18,
+          "lectures": "Office Interface, Ribbon & Backstage View, Formatting Tools, Objects & Cloud Sharing",
+          "lectureCount": 2,
           "lectureNames": [
-            "Office 2016 New Features - Smart Lookup",
-            "Office 2016 New Features - Version History",
-            "Office 2016 New Features - Ink Equation",
-            "Office 2016 New Features - Screen Recording",
-            "Office 2016 New Features - Tell Me",
-            "Office 2016 New Features - Text Highlighter",
-            "Office 2016 New Features - Co-authoring and Sharing",
-            "Office 2016 New Features - Modern Charts",
-            "Saving Online - Microsoft Account",
-            "Ribbon and Tabs - Customisation",
-            "Ribbon and Tabs - Structure",
-            "File Menu (Backstage View)",
-            "Quick Access Toolbar",
-            "Format Painter",
-            "Computer Fundamentals - Interrupt Handling",
-            "Tables - Merging Cells",
-            "Working with Objects - Layering",
-            "Bullets and Numbering"
+            "Office Interface, Ribbon & Backstage View",
+            "Formatting Tools, Objects & Cloud Sharing"
           ],
           "questions": [
             {
@@ -78,7 +62,7 @@
             {
               "id": "P1-1-CH1-CLIN-0002",
               "type": "truefalse",
-              "lecture": 2,
+              "lecture": 1,
               "text": "Improved version history is NOT a feature in office-2016.",
               "explanation": "False. Improved version history IS one of the headline additions in Office 2016: files stored on OneDrive or SharePoint keep earlier versions that can be viewed and restored from File > History. The statement is negated, so the correct response is False.",
               "keyConcept": "Version history only exists for cloud-saved files - a local copy keeps no earlier versions",
@@ -87,12 +71,12 @@
                 "False"
               ],
               "correctIndex": 1,
-              "contentVersion": "2abc7a9cc4dadd0edeeb3f1636e3ed423110711bf1ebc889add3aa80defe9ae0"
+              "contentVersion": "ff808becaa05b68f026c666cfba1614beac9877d0aaff3dcbb6823a483f1676a"
             },
             {
               "id": "P1-1-CH1-CLIN-0003",
               "type": "truefalse",
-              "lecture": 3,
+              "lecture": 2,
               "text": "In office-2016, your handwritten equation is converted into typed text which you can insert into your document.",
               "explanation": "True. The Ink Equation tool (Insert > Equation > Ink Equation) recognises handwriting drawn with a mouse, stylus or touch and converts it into a properly formatted, editable equation that is inserted into the document.",
               "keyConcept": "Ink Equation converts handwritten maths into typed, editable equations",
@@ -101,12 +85,12 @@
                 "False"
               ],
               "correctIndex": 0,
-              "contentVersion": "faf8889492e3595094524595428dfd1772081a52ee8f58536d1d764dc1a49cf3"
+              "contentVersion": "9a3573309552c1a2c1ffba0c31fa5b55e99947945a60d56477e4bfc194a6a690"
             },
             {
               "id": "P1-1-CH1-CLIN-0004",
               "type": "truefalse",
-              "lecture": 4,
+              "lecture": 2,
               "text": "Screen Recording by selecting an area of your computer screen and then recording pointer actions and audio in a video is NOT a feature in powerpoint-2016.",
               "explanation": "False. PowerPoint 2016 includes Screen Recording (Insert > Screen Recording), which lets you select a screen area and capture pointer movement and audio as a video embedded directly in the slide. Because the statement denies this, the answer is False.",
               "keyConcept": "PowerPoint 2016: Insert > Screen Recording captures a screen area with pointer and audio",
@@ -115,12 +99,12 @@
                 "False"
               ],
               "correctIndex": 1,
-              "contentVersion": "5061c9dc1039d17354fc4648f772ab5205796112803a015d099800aa219634af"
+              "contentVersion": "1109b246ec48122a7f0dd08f8314cd2ea91b3e2369a95b33ca69c7567c969436"
             },
             {
               "id": "P1-1-CH1-CLIN-0005",
               "type": "mcq",
-              "lecture": 5,
+              "lecture": 1,
               "text": "In Office 2016, what is the purpose of the “Tell me what you want to do” box?",
               "explanation": "The correct answer is C. The Tell Me box sits on the ribbon and lets the user type what they want to do; it then lists the matching commands and runs them directly, acting as a built-in search and guide. Page layout, picture insertion and spell check are individual commands that Tell Me can find, not what Tell Me itself is.",
               "keyConcept": "Tell Me = ribbon search box that finds and runs Office commands by description",
@@ -138,12 +122,12 @@
                   "id": "P1-1-CH1-CLIN-0017"
                 }
               ],
-              "contentVersion": "ff792159edb8d35b921581bd2f00f691dd67b20c8b86bdb7a3ffcea4c14be777"
+              "contentVersion": "f3b2972abca78fb12f2a2eb13d3a2fb81df1611401cd61a6074d46da573961ef"
             },
             {
               "id": "P1-1-CH1-CLIN-0006",
               "type": "mcq",
-              "lecture": 6,
+              "lecture": 2,
               "text": "In Office-2016, to pick different highlight colors to emphasize certain portions of the text in your presentations in PowerPoint is called",
               "explanation": "The correct answer is C. The Text Highlighter, brought to PowerPoint 2016 from Word, applies a coloured background behind selected characters to emphasise them. Font colour changes the letters themselves, while border and background colours apply to the whole shape or placeholder rather than selected text.",
               "keyConcept": "Text Highlighter (new in PowerPoint 2016) colours the background behind selected text",
@@ -154,12 +138,12 @@
                 "Object background"
               ],
               "correctIndex": 2,
-              "contentVersion": "b613f8a937adf71bf41b6d150fce565745313ba2f345c6d7094bffa6211d073d"
+              "contentVersion": "102b4194ac6ed3aec700a3b63384ac221242c65d34b37e536dda02b101f9693a"
             },
             {
               "id": "P1-1-CH1-CLIN-0007",
               "type": "truefalse",
-              "lecture": 7,
+              "lecture": 2,
               "text": "In word-2016, you can invite others to review or edit your documents.",
               "explanation": "True. The Share button saves the document to OneDrive or SharePoint and sends an invitation giving the recipient either view/review or edit permission, enabling real-time co-authoring.",
               "keyConcept": "Share button + cloud storage = invite others to review or co-edit in real time",
@@ -168,12 +152,12 @@
                 "False"
               ],
               "correctIndex": 0,
-              "contentVersion": "31fd37cb9116228876fbca530c8b2479262fb9ddb09c95b6b027dd834a0b7b39"
+              "contentVersion": "83576bbfeaf52d3bb4460143f3670c08417b84993d584a01965d24a7f61ce397"
             },
             {
               "id": "P1-1-CH1-CLIN-0008",
               "type": "truefalse",
-              "lecture": 8,
+              "lecture": 2,
               "text": "In office-2016, new modern charts and graphs are added to word and excel, but not to PowerPoint.",
               "explanation": "Office 2016 added chart types that were available across Word, Excel and PowerPoint. The statement incorrectly excludes PowerPoint; individual chart availability may depend on the exact application build.",
               "keyConcept": "Office 2016 modern charts are available in Word, Excel and PowerPoint alike",
@@ -182,12 +166,12 @@
                 "False"
               ],
               "correctIndex": 1,
-              "contentVersion": "c75459e8928296bc8a9e6e569b6c1a34d9d330757f4308bf8faafcd211e7d726"
+              "contentVersion": "fb86f10cbb808e1972932b89e8c6e7b35a3d206bd4f6094ce21ddc0c53a6dee1"
             },
             {
               "id": "P1-1-CH1-CLIN-0009",
               "type": "mcq",
-              "lecture": 9,
+              "lecture": 2,
               "text": "In word-2013, you can save your documents online, so you can open them everywhere through",
               "explanation": "The correct answer is C. Signing in with a Microsoft account connects Word 2013 to OneDrive, so documents saved there can be opened from any computer or device. The Office button belongs to the 2007 interface, while the status bar and scroll bar are only screen elements.",
               "keyConcept": "Microsoft account links Office to OneDrive, giving access to documents anywhere",
@@ -198,12 +182,12 @@
                 "Scroll bar"
               ],
               "correctIndex": 2,
-              "contentVersion": "1bc68b072f5971628af8f14f68f7b020406fc6271b6a3a1d8ab66ee9af66af1c"
+              "contentVersion": "dca926cdf2d06e33ce54309c863612cac9a029d74a2b485bd117b444a4ffec98"
             },
             {
               "id": "P1-1-CH1-CLIN-0010",
               "type": "truefalse",
-              "lecture": 10,
+              "lecture": 1,
               "text": "In Word-2013, you can customize the ribbon.",
               "explanation": "True. File > Options > Customize Ribbon (or right-clicking the ribbon) lets the user add, rename, reorder and hide tabs and groups, and create entirely new custom tabs.",
               "keyConcept": "The ribbon is customisable: File > Options > Customize Ribbon",
@@ -212,12 +196,12 @@
                 "False"
               ],
               "correctIndex": 0,
-              "contentVersion": "c2312f927f173db5d4466070ebc80ef3fc54dfdba3ccfdf2703af34e8ed69c0e"
+              "contentVersion": "2ba92265614e9bf86636f99757569248a294ff707a55515530c9c44d82f29782"
             },
             {
               "id": "P1-1-CH1-CLIN-0011",
               "type": "mcq",
-              "lecture": 11,
+              "lecture": 1,
               "text": "In the ribbon, each tab is divided into different ...................",
               "explanation": "The correct answer is D. The ribbon hierarchy is tab > group > command: each tab (Home, Insert, View) is divided into named groups such as Clipboard, Font and Paragraph, and each group holds the individual command buttons. Tabs are the level above, and buttons/commands are the level below.",
               "keyConcept": "Ribbon hierarchy: tabs are divided into groups, groups contain commands",
@@ -228,12 +212,12 @@
                 "Groups"
               ],
               "correctIndex": 3,
-              "contentVersion": "a4963edd6dfa95a83cd2e4af774540bcde8be2c5535488b46e3363485162b859"
+              "contentVersion": "7313e4df460c68593af9fabd0d92eeb0f959d7a5525a53ab2eab42446cbf0f03"
             },
             {
               "id": "P1-1-CH1-CLIN-0012",
               "type": "mcq",
-              "lecture": 12,
+              "lecture": 1,
               "text": "In office 2013, the functions used to open, save, and close a Word document are located in",
               "explanation": "The File tab opens Backstage view with file-level commands such as Open, Save and Close. The round Office button was replaced by the File tab beginning with Office 2010.",
               "keyConcept": "Office 2010 onwards: File menu (Backstage) replaced the Office Button for New/Open/Save/Print",
@@ -244,12 +228,12 @@
                 "Title bar"
               ],
               "correctIndex": 2,
-              "contentVersion": "d197d43f5943e471df76ece51bf031cd35c62dffe6247490fdbe3f689fea373a"
+              "contentVersion": "71298d4f11f0a8a68b70da90fe0de3cd0ccdb153dee3490f3352aab2a4bc0f11"
             },
             {
               "id": "P1-1-CH1-CLIN-0013",
               "type": "mcq",
-              "lecture": 13,
+              "lecture": 1,
               "text": "What toolbar feature is located along the top-left edge of an Office 2013?",
               "explanation": "The correct answer is A. The Quick Access Toolbar sits above the ribbon at the top-left of the window and holds always-available commands such as Save, Undo and Redo. The Mini toolbar appears floating next to selected text, while the status bar and zoom control sit at the bottom of the window.",
               "keyConcept": "Quick Access Toolbar = customisable top-left bar with Save, Undo, Redo",
@@ -260,12 +244,12 @@
                 "Zoom control menu"
               ],
               "correctIndex": 0,
-              "contentVersion": "c2a2e8105330632f9ea2d331edb9876d9985b54f32e7c6d8fa3038efc6bb401d"
+              "contentVersion": "4d7b97df532c1c77340373060680d5712fc7d31b2a2e00a9199edaaa9931ad61"
             },
             {
               "id": "P1-1-CH1-CLIN-0014",
               "type": "truefalse",
-              "lecture": 12,
+              "lecture": 1,
               "text": "The File tab provides commands such as New, Open, Save, Save As and Print.",
               "explanation": "True. Clicking the File tab opens Backstage view, whose left-hand pane lists exactly these file-level commands: New, Open, Save, Save As, Print, Share, Export and Close.",
               "keyConcept": "Backstage view holds all file-level commands: New, Open, Save, Save As, Print",
@@ -274,12 +258,12 @@
                 "False"
               ],
               "correctIndex": 0,
-              "contentVersion": "982e5c726d151398f8c5f1db3c4f358e4e840f1da5ef8c0f6e536ec67a4658f1"
+              "contentVersion": "5878ae17fabb084602c514d2fbc4307a01d78d135278dec9b192e77a6e922464"
             },
             {
               "id": "P1-1-CH1-CLIN-0016",
               "type": "mcq",
-              "lecture": 11,
+              "lecture": 1,
               "text": "The ribbon is divided into different ........ e.g Home, Insert and View",
               "explanation": "The correct answer is A. Home, Insert and View are tabs, the top level of the ribbon. Each of those tabs is then divided into groups, which in turn contain the individual buttons or commands.",
               "keyConcept": "Home / Insert / View are ribbon TABS; the sections inside them are GROUPS",
@@ -290,12 +274,12 @@
                 "Commands"
               ],
               "correctIndex": 0,
-              "contentVersion": "4b3a00c9a795885d60679dda84dfb1f8848057e871f6efe888efdc0ac02fe103"
+              "contentVersion": "0f5fda2afe2e68e82d4f1650cb46152a35fb8ec34f92cdd614cde2449284f8a2"
             },
             {
               "id": "P1-1-CH1-CLIN-0018",
               "type": "mcq",
-              "lecture": 14,
+              "lecture": 2,
               "text": "The .................. copy the formatting from one location to another",
               "explanation": "The correct answer is A. The Format Painter (paintbrush icon in the Clipboard group) picks up the formatting of selected text or an object and applies it elsewhere. Copy and Paste transfer the content itself, not the formatting alone.",
               "keyConcept": "Format Painter copies formatting only; Copy/Paste copies content",
@@ -306,12 +290,12 @@
                 "Paste command"
               ],
               "correctIndex": 0,
-              "contentVersion": "670ea659c0056b6f67a5cb1a6d09e01b27d199a12ef4e459920bc94cff3d4a8d"
+              "contentVersion": "4325004168234a97b890a22e424717cdd21a8f0f142d46540a87a4b4e66298ac"
             },
             {
               "id": "P1-1-CH1-CLIN-0019",
               "type": "mcq",
-              "lecture": 14,
+              "lecture": 2,
               "text": "The format painter copies and pastes",
               "explanation": "The correct answer is A. Format Painter transfers only appearance attributes such as font, size, colour, bold/italic, alignment and spacing. The underlying text, numbers and pictures are untouched; those are moved with ordinary Copy and Paste.",
               "keyConcept": "Format Painter transfers appearance (font, size, colour, spacing) - never content",
@@ -322,12 +306,12 @@
                 "Text"
               ],
               "correctIndex": 0,
-              "contentVersion": "68a7aa1ff24f80703d62b7b01a4c73d9c9a46b6c84a9485064bc9a59f66f01ab"
+              "contentVersion": "01d60a02b5df8a099ebcecf4ed20a67be533ccf84977a678ec02fbe4ea074e60"
             },
             {
               "id": "P1-1-CH1-CLIN-0021",
               "type": "mcq",
-              "lecture": 16,
+              "lecture": 2,
               "text": "To fuse many adjacent cells in a table to become one cell, select the cells then right click and choose",
               "explanation": "The correct answer is A. Merge Cells combines the selected adjacent cells into a single larger cell. Split Cells does the opposite by dividing one cell into several, Add cells inserts new cells, and Align Cells only controls how the contents sit inside the cells.",
               "keyConcept": "Merge Cells combines adjacent cells into one; Split Cells reverses it",
@@ -338,12 +322,12 @@
                 "Align Cells"
               ],
               "correctIndex": 0,
-              "contentVersion": "37dab2f1a19370b445d0f2865ac043b05dfaf290689e083fe62d5b4c6a770edd"
+              "contentVersion": "6370d5be9bd194d1f7f9d4ee71436686647a51486b64a6196d85d8eea6ed02ae"
             },
             {
               "id": "P1-1-CH1-CLIN-0022",
               "type": "mcq",
-              "lecture": 17,
+              "lecture": 2,
               "text": "To bring an object, ONE layer forward, click",
               "explanation": "The correct answer is B. Bring Forward moves the object up exactly one level in the stacking order, whereas Bring to Front jumps it above every other object at once. Send Backward and Send to Back move the object down one level or to the very bottom.",
               "keyConcept": "Bring Forward = one layer up; Bring to Front = above everything",
@@ -354,12 +338,12 @@
                 "Send to back"
               ],
               "correctIndex": 1,
-              "contentVersion": "1fb09ed9fc6ee63477c7cb48315a03786a1f57a2e2eb67de4c34cf27793f2436"
+              "contentVersion": "79c80b24bce9f5009b196df927298223524da0a956f55d98cb1e18a4281adcdc"
             },
             {
               "id": "P1-1-CH1-CLIN-0023",
               "type": "mcq",
-              "lecture": 18,
+              "lecture": 2,
               "text": "In Microsoft Word 2013, which command creates a custom bullet symbol?",
               "explanation": "The correct answer is C. Opening the drop-down arrow next to the Bullets button shows the Bullets Library, where Define New Bullet lets you choose a symbol, picture or font for a custom bullet. There is no new list command on the Insert tab, the Font group does not control list design, and custom designs are certainly possible.",
               "keyConcept": "Custom bullets: Bullets drop-down > Bullets Library > Define New Bullet",
@@ -370,7 +354,7 @@
                 "You can't. You can only use the built-in designs."
               ],
               "correctIndex": 2,
-              "contentVersion": "ff512d5d06ef10d33d174bc696a5aab58f500122f77748f24c491bf898f490ec"
+              "contentVersion": "0b5e1d48f6235afb9aa3195868511496700a5219060922dcc13269d30b5ddc2d"
             }
           ]
         }
@@ -382,33 +366,17 @@
       "subtitle": "",
       "emoji": "💻",
       "page": 2,
-      "lectureRange": "Topics 1–18",
+      "lectureRange": "Topics 1–2",
       "subjects": [
         {
           "id": "clinical",
           "name": "Clinical",
           "iconName": "Stethoscope",
-          "lectures": "Home Tab Groups, Font Effects, Drop Cap, Editing Workflow - Select then Format, Find and Replace, Status Bar, Introduction to Word, Saving Documents, Tables, Word Options - Numeral Type, Bullets and Lists, Font Styles vs Font Effects, Symbols and Special Characters, Spelling and Grammar Check, Styles, Watermark, Hyperlinks, Keyboard Shortcuts",
-          "lectureCount": 18,
+          "lectures": "Text Formatting, Styles & Editing Tools, Document Layout, Tables & Proofing",
+          "lectureCount": 2,
           "lectureNames": [
-            "Home Tab Groups",
-            "Font Effects",
-            "Drop Cap",
-            "Editing Workflow - Select then Format",
-            "Find and Replace",
-            "Status Bar",
-            "Introduction to Word",
-            "Saving Documents",
-            "Tables",
-            "Word Options - Numeral Type",
-            "Bullets and Lists",
-            "Font Styles vs Font Effects",
-            "Symbols and Special Characters",
-            "Spelling and Grammar Check",
-            "Styles",
-            "Watermark",
-            "Hyperlinks",
-            "Keyboard Shortcuts"
+            "Text Formatting, Styles & Editing Tools",
+            "Document Layout, Tables & Proofing"
           ],
           "questions": [
             {
@@ -430,7 +398,7 @@
             {
               "id": "P1-1-CH2-CLIN-0025",
               "type": "mcq",
-              "lecture": 2,
+              "lecture": 1,
               "text": "Superscript and, subscript are found in:",
               "explanation": "The correct answer is A. Superscript and subscript are font effects, listed in the Effects section of the Font dialog box (and as buttons in the Font group). Font styles are regular, bold and italic; WordArt and text effects apply decorative fills, shadows and outlines.",
               "keyConcept": "Superscript/subscript are font EFFECTS, not font styles",
@@ -441,12 +409,12 @@
                 "Text effects"
               ],
               "correctIndex": 0,
-              "contentVersion": "7dfe0a90c6afba9b3d725a27a92c70d5568bdefc27a62091da1e4edba30af3f8"
+              "contentVersion": "4390c83e44eef9698dccf2590f01b06a71025d3d0283e04d6109f00ad6ffa21c"
             },
             {
               "id": "P1-1-CH2-CLIN-0026",
               "type": "mcq",
-              "lecture": 3,
+              "lecture": 1,
               "text": "Beginning a paragraph with a large dropped initial capital letter is called:",
               "explanation": "The correct answer is D. A Drop Cap (Insert tab > Text group) enlarges the first letter of a paragraph so that it drops down over several lines. Subscript and superscript shift small characters below or above the baseline, and word wrapping controls how text flows around objects or onto the next line.",
               "keyConcept": "Drop Cap = enlarged first letter of a paragraph (Insert tab > Text group)",
@@ -464,12 +432,12 @@
                   "id": "P1-1-CH2-CLIN-0041"
                 }
               ],
-              "contentVersion": "439fb30fe1557bbb1f96f2ab84e301672a7ab8c84e3ae4e57a43e52c1381bc13"
+              "contentVersion": "a15a4e47af46401f3effceabf55bc2d4cb35886a0e105f27152d410703d82767"
             },
             {
               "id": "P1-1-CH2-CLIN-0027",
               "type": "mcq",
-              "lecture": 4,
+              "lecture": 1,
               "text": "You want to add emphasis to a few words of text that you have typed. The first step is to:",
               "explanation": "The correct answer is B. Word follows a select-then-do model: formatting is applied only to text that is already selected, so selecting the words is always the first step. The other options are valid ways of applying the emphasis, but only after the selection has been made.",
               "keyConcept": "Word is select-then-do: always select the text before applying formatting",
@@ -480,12 +448,12 @@
                 "Click Text highlight color on the Font group of the Home tab"
               ],
               "correctIndex": 1,
-              "contentVersion": "de90577aa258bc602d4693a5ac07008c1ccff9fae0faea35921a0a5d1ae05861"
+              "contentVersion": "76b7d9a7188993b33a7352c6ce2b6eb268316b2cc71df152e49f8a5141b732dc"
             },
             {
               "id": "P1-1-CH2-CLIN-0028",
               "type": "truefalse",
-              "lecture": 5,
+              "lecture": 1,
               "text": "Using find command in word, we can search for characters, style and formats.",
               "explanation": "True. Advanced Find (Find > More) allows searching not only for characters and words but also for formatting such as font, paragraph settings and styles, as well as special characters like paragraph marks and tabs.",
               "keyConcept": "Advanced Find can search text, special characters, formatting and styles",
@@ -494,12 +462,12 @@
                 "False"
               ],
               "correctIndex": 0,
-              "contentVersion": "57f454c65a4d3fd560f65f71d044df694ef4436b9c4c9dfb87d2ae09cd50647e"
+              "contentVersion": "728ddc69cdc1864b904d2d07a3a4629222d8f16d7c5afa7e6909ec2f3b580982"
             },
             {
               "id": "P1-1-CH2-CLIN-0029",
               "type": "mcq",
-              "lecture": 6,
+              "lecture": 1,
               "text": "Number of pages in the document is displayed in any of the following",
               "explanation": "The correct answer is D. The status bar at the bottom of the Word window shows the current page and total page count, word count, language and view controls. The title bar shows only the file name, and the Quick Access Toolbar holds command buttons.",
               "keyConcept": "Status bar (bottom) shows page number, page count, word count and zoom",
@@ -510,12 +478,12 @@
                 "Status bar"
               ],
               "correctIndex": 3,
-              "contentVersion": "781f32cd8a13a4dbafbf9702285cb139e297e014302c683812fe2c51ec61e7ca"
+              "contentVersion": "15c9ff8c63ac5902350b6849cbaa7109a3d3e09c0bf190759bbb628f93e5c22b"
             },
             {
               "id": "P1-1-CH2-CLIN-0030",
               "type": "mcq",
-              "lecture": 7,
+              "lecture": 1,
               "text": "What is Microsoft Word-2013?",
               "explanation": "The correct answer is C. Word is a word processor, i.e. a typing tool used to create, edit and format text documents. Spreadsheets and calculations are the domain of Excel, and databases are handled by Access.",
               "keyConcept": "Word = word processor (typing tool); Excel = calculations; Access = databases",
@@ -526,12 +494,12 @@
                 "It is a database tool"
               ],
               "correctIndex": 2,
-              "contentVersion": "748c30e902d9d500273d33d8084d50227c462792a17761cab5f17c1fcaa43389"
+              "contentVersion": "304a6750e65dd9a02884eceecdf84102a407f639e0dbac4742288b6585901912"
             },
             {
               "id": "P1-1-CH2-CLIN-0031",
               "type": "truefalse",
-              "lecture": 8,
+              "lecture": 2,
               "text": "The first time you save a document, you must name the file.",
               "explanation": "True. The first save opens the Save As dialog, which requires a file name and a location. Every subsequent Save simply overwrites that same file without prompting.",
               "keyConcept": "First save = Save As dialog (name + location); later saves overwrite silently",
@@ -540,12 +508,12 @@
                 "False"
               ],
               "correctIndex": 0,
-              "contentVersion": "082f03fb2deb852c82b47648d7ca4dd98cf7a982925f45a6700549e07b9d4218"
+              "contentVersion": "803c42651cf8f47a3f721e30ffb6912a139e966f85d8f4850bdb18225bac0942"
             },
             {
               "id": "P1-1-CH2-CLIN-0032",
               "type": "mcq",
-              "lecture": 9,
+              "lecture": 2,
               "text": "To add a table to your Word document, you should start from:",
               "explanation": "The correct answer is B. Tables are created from Insert tab > Tables group, as are all other inserted objects (pictures, shapes, charts, symbols). The Table Design and Layout tabs only appear afterwards, once the table exists and is selected.",
               "keyConcept": "Insert tab creates tables; Table Design/Layout tabs appear only after insertion",
@@ -556,12 +524,12 @@
                 "the design tab"
               ],
               "correctIndex": 1,
-              "contentVersion": "448d120d2c67aeed87d57210ca196a4b387fd3ad2907d4a1d4c1eb1c9420d820"
+              "contentVersion": "09ad4e27ee6479298d33e145c1f46558e6cdd512cfad36eb794096e2031bb7f2"
             },
             {
               "id": "P1-1-CH2-CLIN-0033",
               "type": "truefalse",
-              "lecture": 10,
+              "lecture": 2,
               "text": "In word-2013 options, you can choose the Numeral type to be Arabic, Hindi, System or Context.",
               "explanation": "True. In File > Options > Advanced, the Show document content section contains a Numeral setting with exactly these four choices: Arabic, Hindi, System and Context. It controls which digit forms are displayed in the document.",
               "keyConcept": "File > Options > Advanced > Numeral: Arabic, Hindi, System or Context",
@@ -570,12 +538,12 @@
                 "False"
               ],
               "correctIndex": 0,
-              "contentVersion": "c83cc8fd5a3f340747091babc8f9b55812e5464589b125579ba027b4d071e3b5"
+              "contentVersion": "50b9db947097b06b7bb514308ae03493c4fd71e2cf59dcd9630cd256fcb86c71"
             },
             {
               "id": "P1-1-CH2-CLIN-0034",
               "type": "mcq",
-              "lecture": 5,
+              "lecture": 1,
               "text": "Which tab on the Ribbon is used to find in the document?",
               "explanation": "The correct answer is C. Find, Replace and Select sit in the Editing group at the far right of the Home tab. The Review tab holds spelling, comments and tracked changes, while the View tab controls document views and zoom.",
               "keyConcept": "Find/Replace live in the Editing group of the HOME tab",
@@ -586,12 +554,12 @@
                 "Insert tab"
               ],
               "correctIndex": 2,
-              "contentVersion": "f5020be3a0c0f9fef2efeec0f8410b50689ef2ec2c5a503d2ed47322aa8a82fd"
+              "contentVersion": "d34f6d5abd9cf36291d54437ae95f9e311e9aa462225d66a3f9ecec77ae70e9e"
             },
             {
               "id": "P1-1-CH2-CLIN-0035",
               "type": "mcq",
-              "lecture": 11,
+              "lecture": 1,
               "text": "You can apply bulleted lists using the",
               "explanation": "The correct answer is A. Bullets, Numbering and Multilevel List are the first three buttons of the Paragraph group on the Home tab, because bulleting is paragraph-level formatting. The Insert tab's Symbols group inserts individual characters, not list formatting.",
               "keyConcept": "Bullets and numbering = Home tab > Paragraph group (paragraph-level formatting)",
@@ -601,12 +569,12 @@
                 "Insert tab: Symbols group"
               ],
               "correctIndex": 0,
-              "contentVersion": "2fd04d1e976b01607d31b98c3f5e8998397544a3019c23b51df6931eeceb27e1"
+              "contentVersion": "70a21bacab5f45fba00717d8bade50bb36234dfb86bf91805b7b6b90b36788af"
             },
             {
               "id": "P1-1-CH2-CLIN-0036",
               "type": "mcq",
-              "lecture": 12,
+              "lecture": 1,
               "text": "Which of the following is not a font style?",
               "explanation": "The correct answer is C. In the Font dialog box the Font style list contains Regular, Italic, Bold and Bold Italic. Superscript is listed separately under Effects, so it is a font effect rather than a font style.",
               "keyConcept": "Font styles = Regular, Italic, Bold, Bold Italic; superscript/subscript are effects",
@@ -617,12 +585,12 @@
                 "Regular"
               ],
               "correctIndex": 2,
-              "contentVersion": "5b7b48195cdd0a7136e79ad6a84839284c5f346b648290deb6aa0946594af45d"
+              "contentVersion": "737bc1ceaa519801439b358d04ce68e74177d2c77225074c58043447241e67e9"
             },
             {
               "id": "P1-1-CH2-CLIN-0037",
               "type": "mcq",
-              "lecture": 13,
+              "lecture": 2,
               "text": "Which Insert-tab command opens the gallery of individual special characters, such as Greek letters?",
               "explanation": "The correct answer is B. Insert tab > Symbols group > Symbol opens the character map containing Greek letters and other special characters. The Equation tool builds mathematical expressions rather than inserting single characters, and drawings and clipart are graphics.",
               "keyConcept": "Insert > Symbol inserts Greek letters and special characters",
@@ -633,12 +601,12 @@
                 "Clipart"
               ],
               "correctIndex": 1,
-              "contentVersion": "7cd2ccf4e89d8d3828326a967c501c9762362e965d2257575f24bd8c559bae4e"
+              "contentVersion": "d949ee6a8a0d84c21d3db234c75d000732ac67502a883af135ab0744c3df0951"
             },
             {
               "id": "P1-1-CH2-CLIN-0038",
               "type": "mcq",
-              "lecture": 14,
+              "lecture": 2,
               "text": "Spelling errors are indicated by:",
               "explanation": "The correct answer is D. Word underlines misspelled words with a red wavy line. A green (or blue in newer versions) wavy line marks grammar or style problems, so the green option describes grammar rather than spelling.",
               "keyConcept": "Red wavy underline = spelling error; green wavy underline = grammar error",
@@ -649,12 +617,12 @@
                 "A red wavy line below the text containing errors"
               ],
               "correctIndex": 3,
-              "contentVersion": "79084527f3fa5c28403641dab0430d1ad7e5bb7cb82621060a052d7866f11cd0"
+              "contentVersion": "1c13874cec3e9738102b97ef8f23f3595cce6e62db5fda9e6ad5cf93c62bacd2"
             },
             {
               "id": "P1-1-CH2-CLIN-0039",
               "type": "truefalse",
-              "lecture": 15,
+              "lecture": 1,
               "text": "When you modify a style, the changes apply to all text that has that style applied to it.",
               "explanation": "True. A style is a named set of formatting instructions linked to every paragraph that uses it, so redefining the style instantly reformats all of that text. This is the main advantage of styles over manual formatting.",
               "keyConcept": "Modifying a style updates every piece of text using that style at once",
@@ -663,12 +631,12 @@
                 "False"
               ],
               "correctIndex": 0,
-              "contentVersion": "b84b0e1d3de5e9d5a9d613aee1673a25c70dfc920a88f92ebc8222c95a27fdf4"
+              "contentVersion": "1d965ef2386ecfc16a8002ace30c11883a9ee8e1e259417bc240ebb892cb925e"
             },
             {
               "id": "P1-1-CH2-CLIN-0040",
               "type": "mcq",
-              "lecture": 16,
+              "lecture": 2,
               "text": "The text inserted behind the document text in a transparent mode is called",
               "explanation": "The correct answer is C. A watermark is faded text or an image placed behind the document content, typically reading CONFIDENTIAL or DRAFT (Design tab > Page Background). Text wrapping controls how text flows around objects, hyphenation splits words at line ends, and a hyperlink is a clickable jump to another location.",
               "keyConcept": "Watermark = ghosted text/image behind document content (Design > Page Background)",
@@ -679,12 +647,12 @@
                 "Hyperlink"
               ],
               "correctIndex": 2,
-              "contentVersion": "999a8c2e837a7d509f10f5c5f014a8859bf59b6c36d942f232fda22c46031961"
+              "contentVersion": "850f6ff9636706f26df862f1732ebc86302dc8dc7255864c70fcf5f02b9dabd7"
             },
             {
               "id": "P1-1-CH2-CLIN-0042",
               "type": "mcq",
-              "lecture": 17,
+              "lecture": 2,
               "text": "A hyperlink is",
               "explanation": "The correct answer is C. A hyperlink is clickable text or an object that jumps to another location: a different file, a web page, an e-mail address or a bookmark inside the same document. Pictures, comments and drawings are separate insertable objects with no navigation function.",
               "keyConcept": "Hyperlink = clickable jump to another file, web page or place in the document",
@@ -695,12 +663,12 @@
                 "A very quick way of creating a drawing"
               ],
               "correctIndex": 2,
-              "contentVersion": "af68034a93cbc0f13e921980c5d8e7503d37942267cca111ea38d50d5517a3f6"
+              "contentVersion": "171d4f5e176c38d1e05518844c2372d91bfb545704d93eeab148cc0e6f218021"
             },
             {
               "id": "P1-1-CH2-CLIN-0043",
               "type": "mcq",
-              "lecture": 18,
+              "lecture": 2,
               "text": "By pressing F7, Microsoft word will (in the Windows desktop application)?",
               "explanation": "The correct answer is C. F7 launches the Spelling & Grammar checker. Pasting is Ctrl+V, printing is Ctrl+P, and Help is F1.",
               "keyConcept": "F7 = Spelling & Grammar check (F1 = Help, Ctrl+P = Print, Ctrl+V = Paste)",
@@ -711,12 +679,12 @@
                 "Open help"
               ],
               "correctIndex": 2,
-              "contentVersion": "a9338f3e4644799ca23dcbf71cbab0cfd235479386d79cdf4a4cb62f8b2177e9"
+              "contentVersion": "4322e900e000c483364b4635582404b0e38276a80e771d447751da6244e88873"
             },
             {
               "id": "P1-1-CH2-CLIN-0044",
               "type": "mcq",
-              "lecture": 7,
+              "lecture": 1,
               "text": "Microsoft Word is mainly used as a",
               "explanation": "The correct answer is D. Word is a word processor whose primary purpose is typing, editing and formatting text. Calculation and spreadsheet work belong to Excel, and computerized tool is too vague to describe any specific program.",
               "keyConcept": "If the task is typing text the answer is Word; if it is calculating, the answer is Excel",
@@ -727,7 +695,7 @@
                 "typing tool"
               ],
               "correctIndex": 3,
-              "contentVersion": "14f4ad399c76d99431e95993855820353a3da7c0bacb169835caca24d083ca68"
+              "contentVersion": "8916b386fd5d99f874d8a33a943d74fdc5a3fd56e85c5cf826b7ab35c31573f6"
             }
           ]
         }
@@ -739,44 +707,18 @@
       "subtitle": "",
       "emoji": "💻",
       "page": 3,
-      "lectureRange": "Topics 1–29",
+      "lectureRange": "Topics 1–3",
       "subjects": [
         {
           "id": "clinical",
           "name": "Clinical",
           "iconName": "Stethoscope",
-          "lectures": "Introduction to PowerPoint, File Formats, Running a Slide Show - Shortcuts, Animation vs Transition, Views - Slide Sorter, Views - Normal View, Speaker Notes, Slide Layout, Slide Master, Themes, Inserting Objects, Charts, Shapes, Text Boxes, Pictures - Cropping, Grouping Objects, Adding Slides, Exporting - PDF, Printing - Handouts, Text Formatting - Bold, Placeholders, Duplicating and Deleting Slides, Reordering Slides, SmartArt, WordArt, Hyperlinks and Action Buttons, Header and Footer - Slide Numbers, Spelling Check, Presenter Tools",
-          "lectureCount": 29,
+          "lectures": "Slide Design, Masters & Layouts, Visual Content, Media & SmartArt, Slide Transitions, Animations & Presentation Delivery",
+          "lectureCount": 3,
           "lectureNames": [
-            "Introduction to PowerPoint",
-            "File Formats",
-            "Running a Slide Show - Shortcuts",
-            "Animation vs Transition",
-            "Views - Slide Sorter",
-            "Views - Normal View",
-            "Speaker Notes",
-            "Slide Layout",
-            "Slide Master",
-            "Themes",
-            "Inserting Objects",
-            "Charts",
-            "Shapes",
-            "Text Boxes",
-            "Pictures - Cropping",
-            "Grouping Objects",
-            "Adding Slides",
-            "Exporting - PDF",
-            "Printing - Handouts",
-            "Text Formatting - Bold",
-            "Placeholders",
-            "Duplicating and Deleting Slides",
-            "Reordering Slides",
-            "SmartArt",
-            "WordArt",
-            "Hyperlinks and Action Buttons",
-            "Header and Footer - Slide Numbers",
-            "Spelling Check",
-            "Presenter Tools"
+            "Slide Design, Masters & Layouts",
+            "Visual Content, Media & SmartArt",
+            "Slide Transitions, Animations & Presentation Delivery"
           ],
           "questions": [
             {
@@ -798,7 +740,7 @@
             {
               "id": "P1-1-CH3-CLIN-0046",
               "type": "mcq",
-              "lecture": 2,
+              "lecture": 1,
               "text": "What is the default file extension for a standard PowerPoint 2013 presentation?",
               "explanation": "The correct answer is A. From PowerPoint 2007 onward the default presentation format is the XML-based .pptx. The .ppt extension is the legacy 97-2003 format, .pps is a slide show that opens straight into presentation mode, and .pptm is a macro-enabled presentation.",
               "keyConcept": "PowerPoint 2007+ default extension is .pptx (.ppt = legacy, .pps = slide show)",
@@ -809,7 +751,7 @@
                 ".pptm"
               ],
               "correctIndex": 0,
-              "contentVersion": "b2ea2a28245fdd871a60fa88db7b1d2c49d4aa741bc8ea44a349011220b07539"
+              "contentVersion": "785193c7c09d5188c4c8b3ddfd3f289bba7888c7c993a787ee6f8bbce3950802"
             },
             {
               "id": "P1-1-CH3-CLIN-0047",
@@ -862,7 +804,7 @@
             {
               "id": "P1-1-CH3-CLIN-0050",
               "type": "mcq",
-              "lecture": 4,
+              "lecture": 3,
               "text": "The visual effect that occurs when you move from one slide to the next during a presentation is called",
               "explanation": "The correct answer is B. A transition is the effect applied between slides, such as Fade, Push or Wipe, and is set on the Transitions tab. An animation, by contrast, affects an individual object on a single slide; design refers to the theme, and action buttons are navigation controls.",
               "keyConcept": "Transition = effect BETWEEN slides; animation = effect ON an object within a slide",
@@ -873,12 +815,12 @@
                 "Design"
               ],
               "correctIndex": 1,
-              "contentVersion": "7adf268ec0ea7c05b03d83fee4c06c242122f713715ea76c49d29683f747d9b3"
+              "contentVersion": "693000548952c31f63a6ca8674755faea8a145cbf5ae0d698e3bd5261bbff4b3"
             },
             {
               "id": "P1-1-CH3-CLIN-0051",
               "type": "mcq",
-              "lecture": 4,
+              "lecture": 3,
               "text": "The effect applied to text or an object on a single slide is called",
               "explanation": "The correct answer is B. An animation makes an individual element appear, move, emphasise or exit within one slide, and is configured on the Animations tab. A transition acts between slides, a theme controls the overall look, and a layout defines placeholder arrangement.",
               "keyConcept": "Animations apply to objects; use the Animations tab (Entrance, Emphasis, Exit, Motion Path)",
@@ -889,12 +831,12 @@
                 "Layout"
               ],
               "correctIndex": 1,
-              "contentVersion": "eeff3f2610e7c882eb7e7b67a891f5cb698b9098c5df6e0bc9916c57e66356d1"
+              "contentVersion": "d8d0f80990bd683edcc8191b07d3e10ad762aa4d30cf18bc81e5594fc4ed916b"
             },
             {
               "id": "P1-1-CH3-CLIN-0052",
               "type": "truefalse",
-              "lecture": 4,
+              "lecture": 3,
               "text": "Transition effects are applied to objects inside a slide.",
               "explanation": "False. Transitions apply to the slide as a whole and play when moving from one slide to another; effects applied to objects inside a slide are animations. The statement swaps the two definitions.",
               "keyConcept": "Transitions belong to slides, never to individual objects",
@@ -903,12 +845,12 @@
                 "False"
               ],
               "correctIndex": 1,
-              "contentVersion": "d8bfb97ee548cb7ff0477567536ac7437df98b50193729547ff71fb43a688f93"
+              "contentVersion": "91b341f235bb12a1c6afb875c982de475a506ffdaa6838a2f13b335507f67f5c"
             },
             {
               "id": "P1-1-CH3-CLIN-0053",
               "type": "mcq",
-              "lecture": 4,
+              "lecture": 3,
               "text": "Which tab is used to apply a transition to a slide?",
               "explanation": "The correct answer is B. The Transitions tab holds the gallery of slide-change effects together with duration, sound and advance-slide timing. The Animations tab is for object effects, the Slide Show tab starts and configures the presentation, and the Design tab sets themes.",
               "keyConcept": "Transitions tab = slide-to-slide effects, timing and sound",
@@ -919,12 +861,12 @@
                 "Design tab"
               ],
               "correctIndex": 1,
-              "contentVersion": "bfffbb8e8101901343ba70478a92098f4e5cd6748d4085a2dd0a9630f9460260"
+              "contentVersion": "28a53f3d58e6dcc845022b308a4b2c3f367f3e50a00d5bf37832c2d4a563498d"
             },
             {
               "id": "P1-1-CH3-CLIN-0054",
               "type": "mcq",
-              "lecture": 5,
+              "lecture": 3,
               "text": "The view that displays all the slides of a presentation as miniatures is called",
               "explanation": "The correct answer is B. Slide Sorter view shows every slide as a thumbnail on one screen so slides can be reordered, duplicated or deleted quickly. Normal view edits one slide at a time, Reading view plays the show in a window, and Notes Page shows a slide with its speaker notes.",
               "keyConcept": "'Miniature' or 'thumbnail' in a question stem is the cue for Slide Sorter view",
@@ -935,12 +877,12 @@
                 "Notes Page view"
               ],
               "correctIndex": 1,
-              "contentVersion": "6bffb9614d7cb8e1e13e127a793ac9958bb1e74319f7a03197c30a684b16cf96"
+              "contentVersion": "7f9a6ca09a126c3e2153cc1c6c6bdd0ae90effa01a50ce6291d7a90e051e0044"
             },
             {
               "id": "P1-1-CH3-CLIN-0055",
               "type": "mcq",
-              "lecture": 6,
+              "lecture": 1,
               "text": "The default view used to create and edit slides in PowerPoint is",
               "explanation": "The correct answer is A. Normal view is the main editing view, showing the current slide large with the thumbnail pane beside it and the notes pane below. Slide Sorter is for rearranging, Slide Show is for presenting, and Outline view shows text only.",
               "keyConcept": "Normal view is the default working view for creating and editing slides",
@@ -951,12 +893,12 @@
                 "Outline view"
               ],
               "correctIndex": 0,
-              "contentVersion": "b990da17f6d6c3ad0d579582bb25a60a7e5d566654dc8dee09fe4467780f7b48"
+              "contentVersion": "232e8d1cb280980f89d0433b85c713e0261be222199f5f438197595749e6d68c"
             },
             {
               "id": "P1-1-CH3-CLIN-0056",
               "type": "mcq",
-              "lecture": 7,
+              "lecture": 3,
               "text": "Where can the presenter type reminders that the audience will not see?",
               "explanation": "The correct answer is B. Text typed in the notes pane beneath the slide is visible only to the presenter (in Presenter View) or when notes pages are printed. Anything placed in a placeholder or text box appears on the slide itself, and the status bar cannot hold content.",
               "keyConcept": "Speaker notes go in the notes pane and are hidden from the audience",
@@ -967,12 +909,12 @@
                 "In the status bar"
               ],
               "correctIndex": 1,
-              "contentVersion": "5429c70096dbfcfce5e17efca78bccd2171d723dd9876ebc772a1636daca2a97"
+              "contentVersion": "e217721c788bc8e447cc0524269e2098cf7a5b00878872331bb538820a7dfdef"
             },
             {
               "id": "P1-1-CH3-CLIN-0057",
               "type": "mcq",
-              "lecture": 8,
+              "lecture": 1,
               "text": "The arrangement of placeholders on a slide is called the",
               "explanation": "The correct answer is B. A layout defines which placeholders appear on the slide and where, for example Title Slide, Title and Content or Blank. A theme controls colours and fonts, a template is a whole reusable file, and a transition is a slide-change effect.",
               "keyConcept": "Layout = arrangement of placeholders; theme = colours/fonts applied over it",
@@ -983,12 +925,12 @@
                 "Transition"
               ],
               "correctIndex": 1,
-              "contentVersion": "136bab5deabeccf7d6dc9ac66630a5cae728bc0a3365f131a45c379a978cbc6f"
+              "contentVersion": "27511d7390d12ee4adeaa8ee4a24ee7aa5f53e18d7d43d31d229fb7e93ba3fd7"
             },
             {
               "id": "P1-1-CH3-CLIN-0058",
               "type": "truefalse",
-              "lecture": 9,
+              "lecture": 1,
               "text": "Changes made on the Slide Master affect all slides based on it.",
               "explanation": "True. The Slide Master stores the formatting inherited by every slide layout in the presentation, so editing it (for example changing the title font or adding a logo) updates all dependent slides at once.",
               "keyConcept": "Edit the Slide Master once to change formatting on every slide consistently",
@@ -997,12 +939,12 @@
                 "False"
               ],
               "correctIndex": 0,
-              "contentVersion": "0199ee9de9f7ac1b81771205383fdb3000fed6c08a1620e2bcc476a19150b0b6"
+              "contentVersion": "f3ed8afd4c4273dd59a58cd9f4e0d5a88e38f94595f51b83379ed16325d2928e"
             },
             {
               "id": "P1-1-CH3-CLIN-0059",
               "type": "mcq",
-              "lecture": 10,
+              "lecture": 1,
               "text": "A predefined set of colors, fonts and effects applied to a whole presentation is called a",
               "explanation": "The correct answer is B. A theme is a coordinated package of colours, fonts and effects chosen from the Design tab and applied to every slide for a consistent appearance. A layout only positions placeholders, an animation is a movement effect, and a placeholder is a single content box.",
               "keyConcept": "Theme (Design tab) = coordinated colours, fonts and effects for the whole deck",
@@ -1013,12 +955,12 @@
                 "Placeholder"
               ],
               "correctIndex": 1,
-              "contentVersion": "4ba63ca267afbeced0abc6c8b877e3433207af67e6531e161e73ee8658db1fdd"
+              "contentVersion": "1a3381881ccb32a201c5075b9bbb2d5898f82b9871393fcaf0c0f1086723d264"
             },
             {
               "id": "P1-1-CH3-CLIN-0060",
               "type": "mcq",
-              "lecture": 11,
+              "lecture": 2,
               "text": "Sound, movies, charts and clipart are inserted from which tab?",
               "explanation": "The correct answer is B. Every object added to a slide - pictures, clipart, shapes, charts, audio and video - is placed from the Insert tab. The Home tab handles text formatting and slide creation, the Design tab sets themes, and the Review tab is for proofing and comments.",
               "keyConcept": "Audio and video are inserted like any other object and gain their own Playback tab once on the slide",
@@ -1029,12 +971,12 @@
                 "Review tab"
               ],
               "correctIndex": 1,
-              "contentVersion": "a02def9820c2d7b8930c658e96d667def62dea0cb49f8bfa478e7a2ae1bdb21d"
+              "contentVersion": "3c3013982c85fdb82dffa70ed46f34e5c7a09858982d3c3cc0a42f0f6d064d8a"
             },
             {
               "id": "P1-1-CH3-CLIN-0061",
               "type": "truefalse",
-              "lecture": 12,
+              "lecture": 2,
               "text": "Bar, pie, line and area are types of charts that can be inserted in a presentation.",
               "explanation": "True. PowerPoint offers the same chart gallery as Excel, including column/bar, pie, line and area charts, inserted from Insert > Chart and edited through a linked datasheet.",
               "keyConcept": "Chart type follows the data: pie = parts of a whole, line/area = change over time, bar = comparison",
@@ -1043,12 +985,12 @@
                 "False"
               ],
               "correctIndex": 0,
-              "contentVersion": "1bce46d21fd3404b7294056bcd5799ef6f3189293c632cbc654f9668eb68fc74"
+              "contentVersion": "75040034f50f0af02d95a062e0a9dfe37254b99de0956996c064e02314564657"
             },
             {
               "id": "P1-1-CH3-CLIN-0062",
               "type": "mcq",
-              "lecture": 13,
+              "lecture": 2,
               "text": "Block arrows, stars and banners are categories found under",
               "explanation": "The correct answer is A. The Shapes gallery on the Insert tab is organised into categories including Lines, Rectangles, Basic Shapes, Block Arrows, Equation Shapes, Flowchart, Stars and Banners, and Callouts. SmartArt builds diagrams, WordArt styles text, and Charts plot data.",
               "keyConcept": "Insert > Shapes categories include Block Arrows and Stars and Banners",
@@ -1059,12 +1001,12 @@
                 "Charts"
               ],
               "correctIndex": 0,
-              "contentVersion": "b15a6216ea8c61d06744eceb808492dadc0d4bd698c06d95fc5f95b1733a3f77"
+              "contentVersion": "b680b277cef9a973a7af8ae7148829b6988b7eb1eb124da3d651b078ad355265"
             },
             {
               "id": "P1-1-CH3-CLIN-0063",
               "type": "mcq",
-              "lecture": 14,
+              "lecture": 2,
               "text": "To add text anywhere on a slide outside the existing placeholders, you insert a",
               "explanation": "The correct answer is A. Insert > Text Box creates a movable, resizable container for text at any position on the slide. Headers apply to notes and handouts, comments are review annotations not shown in the show, and hyperlinks only create clickable jumps.",
               "keyConcept": "Text boxes free you from placeholders - insert text anywhere on the slide",
@@ -1075,12 +1017,12 @@
                 "Hyperlink"
               ],
               "correctIndex": 0,
-              "contentVersion": "5036ce37cb32365fb003a5033a2d4e59df7262c7a7d5f0bd0e817d4eaf4b49f8"
+              "contentVersion": "5dd4a2bf3fa61dc067fa259cdb445db8862bddaa57923ad5671cc114dfa382f1"
             },
             {
               "id": "P1-1-CH3-CLIN-0064",
               "type": "mcq",
-              "lecture": 15,
+              "lecture": 2,
               "text": "Removing the unwanted outer parts of a picture is called",
               "explanation": "The correct answer is B. Cropping (Picture Tools > Format > Crop) trims away edges of an image so only the wanted area is displayed. Resizing scales the whole picture, rotating turns it, and compressing reduces file size without changing what is shown.",
               "keyConcept": "Crop removes unwanted edges; resize scales the entire image",
@@ -1091,12 +1033,12 @@
                 "Compressing"
               ],
               "correctIndex": 1,
-              "contentVersion": "1d92167ab22649a91131a5c9ccbd2e1398e86110cb2473c532a71190b82e035c"
+              "contentVersion": "3e8e73219dd07cd5380b077e77caeaa3af5082c7d74d62c375d303479ce0dea2"
             },
             {
               "id": "P1-1-CH3-CLIN-0065",
               "type": "mcq",
-              "lecture": 16,
+              "lecture": 2,
               "text": "To separate a grouped object back into its individual parts, you use",
               "explanation": "The correct answer is B. Ungroup splits a combined object back into its component shapes so each can be edited on its own. Group does the reverse, while Align and Rotate change position and orientation without altering grouping.",
               "keyConcept": "Group joins objects to move/format as one; Ungroup splits them apart again",
@@ -1107,12 +1049,12 @@
                 "Rotate"
               ],
               "correctIndex": 1,
-              "contentVersion": "767627a707463dfc2d96b7de9e1d76f7a3b1f8f3c1c81964e017e7d5a97bfea1"
+              "contentVersion": "d97be2fd820ea46801cc3be66283300ed849ffe63709ca579fec246c08a73b92"
             },
             {
               "id": "P1-1-CH3-CLIN-0066",
               "type": "mcq",
-              "lecture": 17,
+              "lecture": 1,
               "text": "Which command adds another slide to the presentation?",
               "explanation": "The correct answer is A. New Slide, found in the Slides group of the Home tab (and on Ctrl+M), inserts an additional slide and lets you pick its layout. New Document belongs to Word, Insert Object embeds external content, and there is no Add Layout command for adding slides.",
               "keyConcept": "Home tab > New Slide (Ctrl+M) adds a slide and lets you choose its layout",
@@ -1123,12 +1065,12 @@
                 "Add Layout"
               ],
               "correctIndex": 0,
-              "contentVersion": "476d4c4a9fa625f07a9d782e32830c2b3b8289626d90f33636ab3fd463df23c3"
+              "contentVersion": "db5af60388641c9fc7adba88800ed27934725e2b4073e3e1c786e1596993c388"
             },
             {
               "id": "P1-1-CH3-CLIN-0067",
               "type": "mcq",
-              "lecture": 18,
+              "lecture": 3,
               "text": "To save a presentation in a format that preserves layout and cannot easily be edited, save it as",
               "explanation": "The correct answer is A. Saving or exporting as PDF fixes the fonts, images and layout so the file looks identical on any device and is not readily edited. PPTX remains fully editable, while TXT and RTF are text formats that discard the slide design.",
               "keyConcept": "Exporting to PDF locks layout and fonts; the result is no longer editable in PowerPoint",
@@ -1139,12 +1081,12 @@
                 "RTF"
               ],
               "correctIndex": 0,
-              "contentVersion": "6036408228682b45766dea7c70d0901e7a475216ee011dc04c822f6a60649e1f"
+              "contentVersion": "d3469d1d04c85b30cd47d1d09591902f31d69ddcf9f54302679f7184dfad1d07"
             },
             {
               "id": "P1-1-CH3-CLIN-0068",
               "type": "mcq",
-              "lecture": 19,
+              "lecture": 3,
               "text": "Printing several slides on one page for the audience produces",
               "explanation": "The correct answer is B. The Handouts print option places up to nine slide thumbnails on a sheet for distribution. Notes pages print one slide with its speaker notes, an outline prints text only, and a slide show is the on-screen presentation itself.",
               "keyConcept": "Handouts print multiple slide thumbnails per page for the audience",
@@ -1155,12 +1097,12 @@
                 "A slide show"
               ],
               "correctIndex": 1,
-              "contentVersion": "94a8ee8a14d3e76dc7612576b69e8bac368ee3a0597c25ac3946cb83b55a0408"
+              "contentVersion": "7e99c0eff9e2f8625cac8b740cd6ca5714282030e4bc7c2fb6b434559e014b77"
             },
             {
               "id": "P1-1-CH3-CLIN-0069",
               "type": "mcq",
-              "lecture": 20,
+              "lecture": 1,
               "text": "Clicking the \"B\" button in the Font group will make the selected text",
               "explanation": "The correct answer is A. The B button (Ctrl+B) applies bold, thickening the strokes of the selected characters. Italic is the slanted I button, underline is the U button, and size is changed from the font-size box.",
               "keyConcept": "B = Bold (Ctrl+B), I = Italic (Ctrl+I), U = Underline (Ctrl+U)",
@@ -1171,12 +1113,12 @@
                 "Bigger"
               ],
               "correctIndex": 0,
-              "contentVersion": "12ec7a63e2b762f7278254d2af0006997f307aa118bdc791ad139e4dd8bf6d31"
+              "contentVersion": "abb13cc3bb714f3aeda40a3f564f4461fbdee14a3c3731ce21898c9f5aaa053b"
             },
             {
               "id": "P1-1-CH3-CLIN-0070",
               "type": "mcq",
-              "lecture": 21,
+              "lecture": 1,
               "text": "The boxes that appear on a new slide with the words \"Click to add title\" are called",
               "explanation": "The correct answer is B. Placeholders are the dotted-border boxes built into a slide layout that prompt you to add a title, text or content. A text box must be drawn manually, and shapes and frames are separate drawing objects.",
               "keyConcept": "Placeholders come from the layout; text boxes are drawn by the user",
@@ -1187,12 +1129,12 @@
                 "Frames"
               ],
               "correctIndex": 1,
-              "contentVersion": "6d463533ebdbf2ee1f2ef19dcbb5216b8c26ef3ca139a7de1f3be1ad31519607"
+              "contentVersion": "4b1b00870a2e091e043ad4f0442446ba965b3c1b22afa9e097686fec72a54050"
             },
             {
               "id": "P1-1-CH3-CLIN-0071",
               "type": "mcq",
-              "lecture": 22,
+              "lecture": 1,
               "text": "To remove a slide from a presentation, right-click its thumbnail and choose",
               "explanation": "The correct answer is A. Delete Slide removes the slide from the presentation entirely. Hide Slide keeps it in the file but skips it during the show, New Slide adds one, and Reset Slide only restores default placeholder formatting.",
               "keyConcept": "Delete Slide removes it; Hide Slide keeps it but skips it during the show",
@@ -1203,12 +1145,12 @@
                 "Reset Slide"
               ],
               "correctIndex": 0,
-              "contentVersion": "15258720a5c7cdd6949c1bbaa9ee83497b301e42f0fb159ee82d9db528cd25f0"
+              "contentVersion": "9ed199c5ef7e01bdb6ed68c9d516967b8a9d0b67c9ad01bbd70d5f29ab536885"
             },
             {
               "id": "P1-1-CH3-CLIN-0072",
               "type": "truefalse",
-              "lecture": 23,
+              "lecture": 1,
               "text": "Slides can be reordered by dragging their thumbnails in the slide pane or in Slide Sorter view.",
               "explanation": "True. Dragging a thumbnail up or down the slide pane in Normal view, or across the grid in Slide Sorter view, changes the slide order immediately, which is the fastest way to restructure a deck.",
               "keyConcept": "Drag thumbnails in the slide pane or Slide Sorter to reorder slides",
@@ -1217,12 +1159,12 @@
                 "False"
               ],
               "correctIndex": 0,
-              "contentVersion": "703029438fe1fbc87a2ec2ca4a7d6503502c0ae221b2fad5795f712d34276a04"
+              "contentVersion": "0bce15a52ac0195743f84a0bde0850a9d05eac113b6aa891a21f3cc6520beb36"
             },
             {
               "id": "P1-1-CH3-CLIN-0073",
               "type": "mcq",
-              "lecture": 24,
+              "lecture": 2,
               "text": "Which feature is used to present information as a diagram such as a cycle, hierarchy or process?",
               "explanation": "The correct answer is B. SmartArt converts a list of text into a professional diagram - list, process, cycle, hierarchy, relationship, matrix or pyramid. WordArt only styles text decoratively, clipart inserts ready-made images, and charts plot numerical data.",
               "keyConcept": "SmartArt turns text into process, cycle, hierarchy and relationship diagrams",
@@ -1233,12 +1175,12 @@
                 "Chart"
               ],
               "correctIndex": 1,
-              "contentVersion": "151a013206116af6d954f526dea726391de6d379b0aa72de60bd740067abd5dd"
+              "contentVersion": "8e81666b047b05deee27ca2d5a3731cfc441133e24de264dd0d8f523496d6e76"
             },
             {
               "id": "P1-1-CH3-CLIN-0074",
               "type": "mcq",
-              "lecture": 25,
+              "lecture": 2,
               "text": "Decorative text with effects such as shadow, reflection and outline is created with",
               "explanation": "The correct answer is B. WordArt applies fills, outlines, shadows, reflections and 3-D effects to text for headings and titles. SmartArt makes diagrams, clipart inserts pictures, and a plain text box holds ordinary unformatted text.",
               "keyConcept": "WordArt = decorative text effects (fill, outline, shadow, reflection)",
@@ -1249,12 +1191,12 @@
                 "Text box"
               ],
               "correctIndex": 1,
-              "contentVersion": "3ad966eef7cca81c10e1ab6f218eba845d3174bc5f14659a24d629c5eca6beb3"
+              "contentVersion": "6fd3511608be6c4c4f3dd25a0596d146d5953181229bbfeae0f2f215032e7005"
             },
             {
               "id": "P1-1-CH3-CLIN-0075",
               "type": "truefalse",
-              "lecture": 26,
+              "lecture": 2,
               "text": "A hyperlink can be added to text or an object on a slide so that clicking it during the show jumps to another slide or a web page.",
               "explanation": "True. Insert > Hyperlink attaches a destination to selected text, a picture or a shape; during the slide show clicking it navigates to another slide, a file, an e-mail address or a web page.",
               "keyConcept": "Hyperlinks and action buttons make a presentation non-linear and navigable",
@@ -1263,12 +1205,12 @@
                 "False"
               ],
               "correctIndex": 0,
-              "contentVersion": "797d910118f5d3a288ef069e9dd1f04604136b3cf777340be1cc162abe3659f0"
+              "contentVersion": "20ed7ee78346918417422c889e07b413bd78c328bce7cf007f66b46b0344598c"
             },
             {
               "id": "P1-1-CH3-CLIN-0076",
               "type": "mcq",
-              "lecture": 27,
+              "lecture": 1,
               "text": "Slide numbers and the date are added from",
               "explanation": "The correct answer is A. Insert > Header & Footer opens a dialog with checkboxes for date and time, slide number and footer text, applied to one slide or to all. The Paragraph, Themes and Comments groups deal with alignment, design and review respectively.",
               "keyConcept": "Insert > Header & Footer adds date, slide number and footer text",
@@ -1279,12 +1221,12 @@
                 "Review tab: Comments group"
               ],
               "correctIndex": 0,
-              "contentVersion": "19a4e3c5e06a101312e65fba464c2fbbbb15fb8b4bef4e0d4b178d7fdca4b860"
+              "contentVersion": "cc2cf4d07b5ee3f8eae78f54590ef863fc6f4f314048c591efabc1700b02e277"
             },
             {
               "id": "P1-1-CH3-CLIN-0077",
               "type": "mcq",
-              "lecture": 28,
+              "lecture": 3,
               "text": "Which tab contains the Spelling command in PowerPoint?",
               "explanation": "The correct answer is A. Spelling, Thesaurus, Comments and Compare are all on the Review tab (Spelling is also F7). The Home tab formats text, the Insert tab adds objects, and the View tab switches views.",
               "keyConcept": "Review tab = proofing and comments; Spelling is also F7",
@@ -1295,12 +1237,12 @@
                 "View tab"
               ],
               "correctIndex": 0,
-              "contentVersion": "1a676577ded3fbe13d960848b2d8f7a4a58c210a0ade7263cbc796a1fecd9b54"
+              "contentVersion": "be16feadbe909d42879f9cd38acfceb357d63b674ce3614ad62bea24c1658fa6"
             },
             {
               "id": "P1-1-CH3-CLIN-0078",
               "type": "truefalse",
-              "lecture": 29,
+              "lecture": 3,
               "text": "During a slide show the presenter can annotate slides using the pen or highlighter pointer options.",
               "explanation": "True. Right-clicking during a show (or using the pointer menu) gives Pen, Highlighter and Laser Pointer tools; ink annotations can then be kept or discarded when the show ends.",
               "keyConcept": "Pen, Highlighter and Laser Pointer let you annotate live during a slide show",
@@ -1309,7 +1251,7 @@
                 "False"
               ],
               "correctIndex": 0,
-              "contentVersion": "910d39a24c7fc4f2bebb53a5ab20a9716fe95fa2e26c9e72841d90fc1c115119"
+              "contentVersion": "c846a3ff1d9c4b7ad501254d9b502e0eeb7cd5cea2bace3fa46ab50a750d06df"
             }
           ]
         }
@@ -1321,21 +1263,16 @@
       "subtitle": "",
       "emoji": "💻",
       "page": 4,
-      "lectureRange": "Topics 1–6",
+      "lectureRange": "Topics 1–1",
       "subjects": [
         {
           "id": "clinical",
           "name": "Clinical",
           "iconName": "Stethoscope",
-          "lectures": "Introduction to Excel, Cell Formatting - Merge and Wrap, Formulas and Functions, File Formats, Cell Basics, Keyboard Shortcuts",
-          "lectureCount": 6,
+          "lectures": "Excel Worksheets, Formulas & Cell Operations",
+          "lectureCount": 1,
           "lectureNames": [
-            "Introduction to Excel",
-            "Cell Formatting - Merge and Wrap",
-            "Formulas and Functions",
-            "File Formats",
-            "Cell Basics",
-            "Keyboard Shortcuts"
+            "Excel Worksheets, Formulas & Cell Operations"
           ],
           "questions": [
             {
@@ -1357,7 +1294,7 @@
             {
               "id": "P1-1-CH4-CLIN-0080",
               "type": "mcq",
-              "lecture": 2,
+              "lecture": 1,
               "text": "Which term is used to join the selected Excel cells into one cell?",
               "explanation": "The correct answer is C. Merge (Merge & Center, in the Alignment group of the Home tab) combines the selected cells into a single cell. Wrap Text only makes long text display on several lines inside one cell, a Pivot table summarises data, and Filter hides rows that do not match a condition.",
               "keyConcept": "Merge joins several cells into one; Wrap keeps one cell but shows text on multiple lines",
@@ -1368,12 +1305,12 @@
                 "Filter"
               ],
               "correctIndex": 2,
-              "contentVersion": "1c2e658897a00da7622f8d01627d1c148a5220bc8ee26caa4b075e87922cd165"
+              "contentVersion": "1395b475da6d371b3b6c1fe236e85532e8b97dfc8a278343bf667b248f5e1dd2"
             },
             {
               "id": "P1-1-CH4-CLIN-0081",
               "type": "mcq",
-              "lecture": 3,
+              "lecture": 1,
               "text": "Another name for a pre-programmed formula in Excel is",
               "explanation": "The correct answer is A. A function is a formula that Excel has already written and named, such as SUM, AVERAGE or COUNT; the user only supplies the arguments. A range is a group of cells, a graph is a visual representation of data, and a cell is a single grid box.",
               "keyConcept": "Function = built-in, pre-programmed formula (SUM, AVERAGE, COUNT)",
@@ -1384,12 +1321,12 @@
                 "Cell"
               ],
               "correctIndex": 0,
-              "contentVersion": "86e34f155ea981c79f4dc76eca1282c5b02642f1c8fd356ee862fbb4f26dc1cb"
+              "contentVersion": "313e3e4075e3b19d8dc29a366bffd14b70af85dcf1d957bffd84760c67ee84e2"
             },
             {
               "id": "P1-1-CH4-CLIN-0082",
               "type": "mcq",
-              "lecture": 4,
+              "lecture": 1,
               "text": "What is the default file extension for a standard Excel workbook in Excel 2013?",
               "explanation": "The correct answer is C. Since Excel 2007 the default workbook format has been the XML-based .xlsx. The older binary format .xls belongs to Excel 97-2003 and is only used for backward compatibility; .xbs and .xos are not Excel extensions at all.",
               "keyConcept": "Excel 2007+ default extension is .xlsx (.xls = legacy 97-2003 format)",
@@ -1400,12 +1337,12 @@
                 ".xls"
               ],
               "correctIndex": 2,
-              "contentVersion": "7369c2f70d106e6c182dc887c0d406a321da6fe8648df15a8741f861a2e70312"
+              "contentVersion": "55bbe661a4b0de3110ef17ec9182afd6bba21adfbf13331dba51f3e80855bf9a"
             },
             {
               "id": "P1-1-CH4-CLIN-0083",
               "type": "mcq",
-              "lecture": 2,
+              "lecture": 1,
               "text": "Which option can be used to fully display longer text in a cell without it overflowing to other cells?",
               "explanation": "The correct answer is A. Wrap Text increases the row height and displays the entry on several lines inside the same cell, so nothing spills into neighbouring cells. Merge would combine cells rather than contain the text, while Pivot and Filter are data-analysis tools.",
               "keyConcept": "Wrap Text displays long entries on multiple lines within a single cell",
@@ -1416,12 +1353,12 @@
                 "Filter"
               ],
               "correctIndex": 0,
-              "contentVersion": "26f1b5215382f7864437a4188b5aadc7ad9ca49920e8738e3acce595e8d6a8ae"
+              "contentVersion": "8e49728a8deeb75f18eb5c19b02b11a2610b4d33fca1473ee73a05c03fa7a299"
             },
             {
               "id": "P1-1-CH4-CLIN-0084",
               "type": "mcq",
-              "lecture": 5,
+              "lecture": 1,
               "text": "What are the basic rectangular building blocks of an Excel spreadsheet called?",
               "explanation": "The correct answer is D. A cell is the rectangle formed where a row and a column intersect, and it is the basic unit that stores every value, label or formula in a worksheet. The zoom slider and help button are interface controls, not parts of the worksheet grid.",
               "keyConcept": "A cell is the intersection of a row and a column - the basic unit of a worksheet",
@@ -1432,12 +1369,12 @@
                 "Cells"
               ],
               "correctIndex": 3,
-              "contentVersion": "a156da79526df863cf2d62c57c1784a3efe1e0a809eeb645ec2a34181e725647"
+              "contentVersion": "61eaf9ca5aaa8aabc23cdffd636237bd71faa325096f860207d0e88a94200fa7"
             },
             {
               "id": "P1-1-CH4-CLIN-0085",
               "type": "mcq",
-              "lecture": 6,
+              "lecture": 1,
               "text": "Which shortcut closes the active Excel application window in Windows?",
               "explanation": "The correct answer is C. Alt+F4 is the Windows shortcut that closes the active application window, including Excel. Ctrl+R fills right, Ctrl+C copies, and Ctrl+W closes only the current workbook while leaving Excel itself running.",
               "keyConcept": "Alt+F4 closes the application window; Ctrl+W closes only the current workbook",
@@ -1448,12 +1385,12 @@
                 "Ctrl+ C"
               ],
               "correctIndex": 2,
-              "contentVersion": "f8db37f02d44c9cf5ebc984c8fa349850dc46b6b8e8e4d99f3e717b364648376"
+              "contentVersion": "b76ac01d575938b787f41862c4723c8d0b3a942cc7cd3d94e2dc7bd310e0f6a4"
             },
             {
               "id": "P1-1-CH4-CLIN-0086",
               "type": "mcq",
-              "lecture": 5,
+              "lecture": 1,
               "text": "Which of the following identifies a cell in Excel?",
               "explanation": "The correct answer is D. A cell is identified by its address (cell reference), the column letter followed by the row number, e.g. B7; this is what appears in the Name Box and what formulas refer to. A label is text typed into a cell and a formula is a calculation stored in it, neither of which identifies its position.",
               "keyConcept": "Cell address = column letter + row number (e.g. B7) - the cell's unique reference",
@@ -1464,7 +1401,7 @@
                 "Address"
               ],
               "correctIndex": 3,
-              "contentVersion": "dc2bd80cf3bae80a4120a5aa3174dc1873ea9a2efc1a73e2d6ffebb94721d4d5"
+              "contentVersion": "e741c35554d28ef6d8e0a49e34837b7e8798fb8843361c273eefa8cfe159aecb"
             }
           ]
         }

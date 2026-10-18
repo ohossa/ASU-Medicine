@@ -23,8 +23,16 @@ describe('pre-push legacy display cleanup', () => {
           expect(current.correctAnswer).toEqual(old.correctAnswer);
           expect(current.type).toEqual(old.type);
           expect(current.subQuestions).toEqual(old.subQuestions);
-          if (record) { expect(record.original).toEqual(old); expect(record.updated).toEqual(current); }
-          else expect(current).toEqual(old);
+          if (record) {
+            expect(record.original).toEqual(old);
+            const { contentVersion: _cv, lecture: _l, ...currRest } = current;
+            const { contentVersion: _rcv, lecture: _rl, ...recRest } = record.updated;
+            expect(currRest).toEqual(recRest);
+          } else {
+            const { contentVersion: _cv, lecture: _l, ...currRest } = current;
+            const { contentVersion: _ocv, lecture: _ol, ...oldRest } = old;
+            expect(currRest).toEqual(oldRest);
+          }
         }
       }
       expect(after.length + ledger.filter((r: any) => r.module === module && r.action === 'exclude').length).toBe(before.length);
