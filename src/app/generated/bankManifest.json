@@ -8,8 +8,8 @@
     "mcqCount": 972,
     "essayCount": 41,
     "totalCount": 1013,
-    "revision": "6f0285b76a2a7ab59aa2adcf96b400d8b9142f29962229b91afabc9556202f3f",
-    "bytes": 1088124
+    "revision": "a5e4247a66ed04b48cc85e6bf4cf9c4273870bcc16610fe41619be3a2916248a",
+    "bytes": 1066880
   },
   "IBM-1": {
     "year": 1,
@@ -29,11 +29,11 @@
     "paths": [
       "../imports/year-1/semester-1/IHC-1.json"
     ],
-    "mcqCount": 0,
-    "essayCount": 0,
-    "totalCount": 0,
-    "revision": "716d67151408b9cd08639f7455a1857c27758c9587a1162873c2fe4cf7c93deb",
-    "bytes": 3342
+    "mcqCount": 1225,
+    "essayCount": 2,
+    "totalCount": 1227,
+    "revision": "406d2477bbfbc243f332933d29fd7b16d1a93e01aeb5626d2e837334aea4f062",
+    "bytes": 1847560
   },
   "IPHY-1": {
     "year": 1,
@@ -65,11 +65,11 @@
     "paths": [
       "../imports/year-1/semester-1/MIM-1.json"
     ],
-    "mcqCount": 0,
-    "essayCount": 0,
-    "totalCount": 0,
-    "revision": "fe474ad8880a60d7240fb2c6fd2d91b7a4c7550ee0b3a9b22c41ee831b5e15a1",
-    "bytes": 2421
+    "mcqCount": 603,
+    "essayCount": 37,
+    "totalCount": 640,
+    "revision": "ea138bdbff0c2b73cc727af62d30d2810ab70529d6357158a2654e042ac778c4",
+    "bytes": 563216
   },
   "P1-1": {
     "year": 1,
@@ -281,11 +281,11 @@
     "paths": [
       "../imports/year-3/semester-1/P4-3.json"
     ],
-    "mcqCount": 0,
+    "mcqCount": 47,
     "essayCount": 0,
-    "totalCount": 0,
-    "revision": "7d9c7d20276a6b65710fc6bb797c039dd88f2e387d5dcf0ea53bab52d0606394",
-    "bytes": 1105
+    "totalCount": 47,
+    "revision": "cca56187e7701daaf2021d22e7529d300dda35255577a27da63d9d5c37a47105",
+    "bytes": 41517
   },
   "P5-3": {
     "year": 3,
