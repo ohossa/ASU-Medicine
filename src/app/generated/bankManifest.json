@@ -8,8 +8,8 @@
     "mcqCount": 972,
     "essayCount": 41,
     "totalCount": 1013,
-    "revision": "6f0285b76a2a7ab59aa2adcf96b400d8b9142f29962229b91afabc9556202f3f",
-    "bytes": 1088124
+    "revision": "a5e4247a66ed04b48cc85e6bf4cf9c4273870bcc16610fe41619be3a2916248a",
+    "bytes": 1066880
   },
   "IBM-1": {
     "year": 1,
@@ -44,8 +44,8 @@
     "mcqCount": 705,
     "essayCount": 0,
     "totalCount": 705,
-    "revision": "85912a652c432c991a4ab7640b2ddabbe156f7e913d1cf2251d51fb1aea37f7a",
-    "bytes": 715546
+    "revision": "f691aaf3178bb181b87f451c4ac69aa7897b41f0a2fdbb4451461f1d02791aef",
+    "bytes": 712257
   },
   "MBMG-1": {
     "year": 1,
@@ -80,8 +80,8 @@
     "mcqCount": 82,
     "essayCount": 0,
     "totalCount": 82,
-    "revision": "d1effbe47b55c2e2fbb1fec77fcc35116afdd39a3cd21914fa0904a1cae027e9",
-    "bytes": 81000
+    "revision": "cbc732053b502208b0f1fbe7ce6852446038646ca7ac2d2f8f3d26a742070d95",
+    "bytes": 77434
   },
   "BLS-HE-1": {
     "year": 1,
@@ -176,8 +176,8 @@
     "mcqCount": 1014,
     "essayCount": 619,
     "totalCount": 1633,
-    "revision": "5b21c9c622ee95211b407f6e6e61a26e77f74a514cd92de4bdfab6e648cb4e25",
-    "bytes": 1837958
+    "revision": "ed14ffcb5f5b5d477365c77dc5bbcb03d6f65c93ade3bf26d8c210a21d404426",
+    "bytes": 2006935
   },
   "MRS-2": {
     "year": 2,
@@ -188,8 +188,8 @@
     "mcqCount": 1551,
     "essayCount": 802,
     "totalCount": 2353,
-    "revision": "ca97c22336b57ef93a2cd566cef0a3b447260eb6141038223c6260eddc441084",
-    "bytes": 2410785
+    "revision": "6ae1ba35e7b09b173fe6f742a17c6c047bc75f01a57c3d748b1a3d60b2acbc98",
+    "bytes": 2649430
   },
   "MCNS-2": {
     "year": 2,
@@ -212,8 +212,8 @@
     "mcqCount": 637,
     "essayCount": 203,
     "totalCount": 840,
-    "revision": "886acba508e8440a806c24320ab21fd46d723413d1333c1702a5703e6184aa10",
-    "bytes": 668362
+    "revision": "9d61c04d36a09162bc83eb4b3f72005551198d05bc06e92f6eea0022947b4604",
+    "bytes": 757329
   },
   "MSS-2": {
     "year": 2,
@@ -365,11 +365,11 @@
     "paths": [
       "../imports/year-3/semester-2/R-3.json"
     ],
-    "mcqCount": 0,
-    "essayCount": 0,
-    "totalCount": 0,
-    "revision": "d1c7ba5f71775d72e265b5548d072d1883b6bd7fe2ea7c4c77ad2664fa340259",
-    "bytes": 838
+    "mcqCount": 45,
+    "essayCount": 8,
+    "totalCount": 53,
+    "revision": "aa10631930ddd227eb2f88bb96fff2a808d46e75ab9b5d5748ec61677270c633",
+    "bytes": 47939
   },
   "FAM-4": {
     "year": 4,

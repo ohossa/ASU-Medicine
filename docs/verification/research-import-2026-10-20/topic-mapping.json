@@ -1,0 +1,104 @@
+{
+  "moduleCode": "R-3",
+  "moduleName": "Scientific Research",
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Normal Distribution Curve",
+      "subtitle": "Skewness and Kurtosis",
+      "emoji": "\ud83d\udcca",
+      "page": 58,
+      "lectureRange": "Practical 1",
+      "subjectId": "clinical",
+      "subjectName": "Biostatistics & Research Methodology",
+      "lectureNames": [
+        "Normal Distribution Curve (Skewness & Kurtosis)"
+      ],
+      "questionCount": 14
+    },
+    {
+      "id": 2,
+      "title": "Inferential Statistics I: Estimation",
+      "subtitle": "Central Limit Theorem & Confidence Intervals",
+      "emoji": "\ud83c\udfaf",
+      "page": 63,
+      "lectureRange": "Practical 2",
+      "subjectId": "clinical",
+      "subjectName": "Biostatistics & Research Methodology",
+      "lectureNames": [
+        "Estimation & Central Limit Theorem"
+      ],
+      "questionCount": 15
+    },
+    {
+      "id": 3,
+      "title": "Inferential Statistics II: Hypothesis Testing",
+      "subtitle": "Null & Alternative Hypotheses, Errors, and Significance",
+      "emoji": "\ud83e\uddea",
+      "page": 66,
+      "lectureRange": "Practical 3",
+      "subjectId": "clinical",
+      "subjectName": "Biostatistics & Research Methodology",
+      "lectureNames": [
+        "Hypothesis Testing Concepts & Decision Rules"
+      ],
+      "questionCount": 24
+    },
+    {
+      "id": 4,
+      "title": "Hypothesis Testing: Quantitative & Qualitative Data",
+      "subtitle": "Parametric & Non-Parametric Tests",
+      "emoji": "\ud83d\udcc8",
+      "page": 70,
+      "lectureRange": "Practical 4",
+      "subjectId": "clinical",
+      "subjectName": "Biostatistics & Research Methodology",
+      "lectureNames": [
+        "Hypothesis Testing for Quantitative & Qualitative Data"
+      ],
+      "questionCount": 0
+    },
+    {
+      "id": 5,
+      "title": "Systematic Review and Meta-Analysis",
+      "subtitle": "Synthesis of Evidence & Forest Plots",
+      "emoji": "\ud83d\udcda",
+      "page": 74,
+      "lectureRange": "Practical 5",
+      "subjectId": "clinical",
+      "subjectName": "Biostatistics & Research Methodology",
+      "lectureNames": [
+        "Systematic Review and Meta-Analysis"
+      ],
+      "questionCount": 0
+    },
+    {
+      "id": 6,
+      "title": "Evidence-Based Medicine",
+      "subtitle": "Clinical Evidence Hierarchy & PICO Framework",
+      "emoji": "\ud83e\ude7a",
+      "page": 88,
+      "lectureRange": "Practical 6",
+      "subjectId": "clinical",
+      "subjectName": "Biostatistics & Research Methodology",
+      "lectureNames": [
+        "Principles of Evidence-Based Medicine"
+      ],
+      "questionCount": 0
+    },
+    {
+      "id": 7,
+      "title": "Critical Appraisal",
+      "subtitle": "Evaluation of Study Designs & Risk of Bias",
+      "emoji": "\ud83d\udd0d",
+      "page": 90,
+      "lectureRange": "Practical 7",
+      "subjectId": "clinical",
+      "subjectName": "Biostatistics & Research Methodology",
+      "lectureNames": [
+        "Critical Appraisal of Medical Research"
+      ],
+      "questionCount": 0
+    }
+  ]
+}

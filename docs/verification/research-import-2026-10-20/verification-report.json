@@ -1,0 +1,54 @@
+{
+  "moduleCode": "R-3",
+  "moduleName": "Scientific Research",
+  "year": 3,
+  "semester": 2,
+  "sourceDocument": {
+    "title": "Research Methodology Course, Third Year Medical Students, Practical Exercises 2025-2026",
+    "sha256": "615c77a4e8b9c789adba0b9c6d8b1702cded0584fa9962df6a26bb902a00411f",
+    "byteSize": 8967315,
+    "totalPages": 14
+  },
+  "accounting": {
+    "totalPages": 14,
+    "pagesWithQuestions": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "coverOrTOCPages": [
+      1,
+      2
+    ],
+    "duplicateScanPages": [
+      9
+    ],
+    "totalCapturedOccurrences": 57,
+    "totalAcceptedQuestions": 53,
+    "totalExcludedQuestions": 3,
+    "totalDuplicateScanExclusions": 1
+  },
+  "distributionByType": {
+    "mcq": 34,
+    "truefalse": 5,
+    "essay": 8,
+    "fillblank": 5,
+    "matching": 1
+  },
+  "distributionByChapter": {
+    "Chapter 1 (Normal Distribution Curve)": 14,
+    "Chapter 2 (Inferential Statistics I: Estimation & CLT)": 15,
+    "Chapter 3 (Inferential Statistics II: Hypothesis Testing)": 24
+  },
+  "schemaValidation": "PENDING_RUN",
+  "status": "READY_FOR_USER_REVIEW"
+}
