@@ -52,7 +52,7 @@ describe('Year 2 Systems Banks Topic Consolidation & Navigation Hierarchy', () =
       const ch4 = mcvsBank.chapters[3] as unknown as ChapterData;
       const branches = subjectBranches(ch4, 'MCVS-2');
       expect(branches.length).toBe(2);
-      expect(branches.map(b => b.title)).toEqual(['Physiology', 'Pharmacology']);
+      expect(branches.map((b: { title: string }) => b.title)).toEqual(['Physiology', 'Pharmacology']);
     });
   });
 
@@ -149,7 +149,7 @@ describe('Year 2 Systems Banks Topic Consolidation & Navigation Hierarchy', () =
       const ch1 = memBank.chapters[0] as unknown as ChapterData;
       const branches = subjectBranches(ch1, 'MEM-2');
       expect(branches.length).toBeGreaterThan(1);
-      const branchTitles = branches.map(b => b.title);
+      const branchTitles = branches.map((b: { title: string }) => b.title);
       expect(branchTitles).toContain('Histology');
       expect(branchTitles).toContain('Physiology');
       expect(branchTitles).toContain('Biochemistry');
