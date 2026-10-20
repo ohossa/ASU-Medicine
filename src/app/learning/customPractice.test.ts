@@ -37,3 +37,28 @@ it('retakes refresh keys but retain topic attribution; snapshots and history pre
  const before=getQuizHistory().length;const scores=topicScores(current,{0:1,1:0});saveQuizResult({chapterId:1,chapterTitle:'Anatomy',subjectName:'Custom practice · 2 topics',correct:2,total:2,pct:100,elapsedSeconds:5,moduleCode:'MGL-3',topicResults:scores,questionSnapshot:snapshot});
  expect(getQuizHistory()).toHaveLength(before+1);expect(getQuizHistory()[0].topicResults).toEqual(scores);
 });
+it('does not borrow a same-named topic result from another subject',()=>{
+ const history=[{moduleCode:'MBL-2',chapterId:3,subjectName:'Bleeding Disorders',correct:1,total:1,pct:100,topicResults:[{key:'physiology-topic',title:'Bleeding Disorders',subjectName:'Physiology',correct:1,total:1,pct:100}]}];
+ expect(latestTopicResult(history as never,3,'Bleeding Disorders','MBL-2','pathology-topic')).toBeNull();
+ expect(latestTopicResult(history as never,3,'Bleeding Disorders','MBL-2','physiology-topic')?.pct).toBe(100);
+});
+it('keeps a named legacy topic result when no custom topic scores exist',()=>{
+ const history=[{moduleCode:'MGL-3',chapterId:1,subjectName:'Oral cavity',correct:1,total:2,pct:50}];
+ expect(latestTopicResult(history as never,1,'Oral cavity','MGL-3','oral-topic')?.pct).toBe(50);
+});
+it('restores the original single-topic subject identity and icon',()=>{
+ const mixed:ChapterData={...chapter,subjects:[chapter.subjects[0],{id:'pathology',name:'Pathology',iconName:'Activity',lectures:'',lectureCount:1,lectureNames:['Bleeding disorders'],questions:[q('path',1)]}]};
+ const run=selectedPractice(mixed,practiceTopics(mixed,'MBL-2'),new Set(['path']));
+ expect(run.subject).toMatchObject({id:'pathology',iconName:'Activity',name:'Bleeding disorders'});
+ const restored=resumeCustomPractice(mixed,{subjectName:run.subject.sessionKey!,questionIds:['path']},'MBL-2');
+ expect(restored?.subject).toMatchObject({id:'pathology',iconName:'Activity',name:'Bleeding disorders'});
+ expect(restored?.questions[0].practiceTopic?.subjectName).toBe('Pathology');
+});
+it('does not attribute an unkeyed legacy result to an ambiguous topic title',()=>{
+ const history=[{moduleCode:'MBL-2',chapterId:3,subjectName:'Bleeding Disorders',correct:1,total:2,pct:50}];
+ expect(latestTopicResult(history as never,3,'Bleeding Disorders','MBL-2','pathology-topic',false)).toBeNull();
+});
+it('retains explicitly allowed unique legacy topic history',()=>{
+ const history=[{moduleCode:'MGL-3',chapterId:1,subjectName:'Oral cavity',correct:1,total:2,pct:50}];
+ expect(latestTopicResult(history as never,1,'Oral cavity','MGL-3','oral-topic',true)?.pct).toBe(50);
+});
