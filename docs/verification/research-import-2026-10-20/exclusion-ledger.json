@@ -1,0 +1,33 @@
+{
+  "totalExcluded": 3,
+  "policy": "exclude_image_dependent",
+  "exclusions": [
+    {
+      "occurrenceId": "OCC-R3-P05-IMG01",
+      "pdfPage": 5,
+      "bookPage": 60,
+      "stem": "State the type of each curve with explanation? [Graph 1: Systolic BP Histogram]",
+      "sourceAnnotation": "Type: normal distribution but Leptokurtic. Explanation: sharp peak and heavy tails",
+      "exclusionReason": "Requires inspection of an embedded image (Systolic blood pressure frequency distribution histogram). Excluded under established portal policy (exclude image-dependent questions until image assets and responsive viewer are authorized).",
+      "status": "EXCLUDED_IMAGE_POLICY"
+    },
+    {
+      "occurrenceId": "OCC-R3-P05-IMG02",
+      "pdfPage": 5,
+      "bookPage": 60,
+      "stem": "State the type of each curve with explanation? [Graph 2: Values -0.3 to +0.3 Histogram]",
+      "sourceAnnotation": "Type: -ve skewed, Left skewed curve. Explanation: Long left tail",
+      "exclusionReason": "Requires inspection of an embedded image (Histogram with long tail to the left). Excluded under established portal policy (exclude image-dependent questions until image assets and responsive viewer are authorized).",
+      "status": "EXCLUDED_IMAGE_POLICY"
+    },
+    {
+      "occurrenceId": "OCC-R3-P06-IMG03",
+      "pdfPage": 6,
+      "bookPage": 61,
+      "stem": "State the type of each curve with explanation? [Graph 3: Variable vs Count Histogram with Mean = 1.70]",
+      "sourceAnnotation": "Type: +ve, Right skewed. Explanation: Long right tail",
+      "exclusionReason": "Requires inspection of an embedded image (Histogram with mean = 1.70 and long tail to the right). Excluded under established portal policy (exclude image-dependent questions until image assets and responsive viewer are authorized).",
+      "status": "EXCLUDED_IMAGE_POLICY"
+    }
+  ]
+}

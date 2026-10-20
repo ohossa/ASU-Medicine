@@ -1,0 +1,720 @@
+{
+  "sourcePdfHash": "615c77a4e8b9c789adba0b9c6d8b1702cded0584fa9962df6a26bb902a00411f",
+  "totalPages": 14,
+  "pageLedger": [
+    {
+      "pdfPage": 1,
+      "bookPage": 56,
+      "disposition": "cover",
+      "description": "Cover page: Research Methodology Practical Exercises 2025-2026"
+    },
+    {
+      "pdfPage": 2,
+      "bookPage": 57,
+      "disposition": "contents",
+      "description": "Table of Contents (Practicals 1 to 7)"
+    },
+    {
+      "pdfPage": 3,
+      "bookPage": 58,
+      "disposition": "questions",
+      "description": "Practical 1 - Normal Distribution Curve: MCQs 1 to 7"
+    },
+    {
+      "pdfPage": 4,
+      "bookPage": 59,
+      "disposition": "questions",
+      "description": "Practical 1 - Normal Distribution Curve: MCQs 8 to 14"
+    },
+    {
+      "pdfPage": 5,
+      "bookPage": 60,
+      "disposition": "image_questions",
+      "description": "Practical 1 - Curve Identification: Graph 1 (leptokurtic) & Graph 2 (left-skewed)"
+    },
+    {
+      "pdfPage": 6,
+      "bookPage": 61,
+      "disposition": "image_questions",
+      "description": "Practical 1 - Curve Identification: Graph 3 (right-skewed)"
+    },
+    {
+      "pdfPage": 7,
+      "bookPage": 62,
+      "disposition": "questions",
+      "description": "Practical 2 - Inferential Statistics I: Exercise 1 (T/F 1-5) & Exercise 2 (MCQ 1-3)"
+    },
+    {
+      "pdfPage": 8,
+      "bookPage": 63,
+      "disposition": "questions",
+      "description": "Practical 2 - Inferential Statistics I: Exercise 2 (MCQ 4-7)"
+    },
+    {
+      "pdfPage": 9,
+      "bookPage": 63,
+      "disposition": "duplicate_scan",
+      "description": "Duplicate scan of book page 63 (MCQ 4-7 identical to page 8)"
+    },
+    {
+      "pdfPage": 10,
+      "bookPage": 64,
+      "disposition": "questions",
+      "description": "Practical 2 - Inferential Statistics I: Exercise 2 (MCQ 8) & Exercise 3 (CI interpretation 1-2)"
+    },
+    {
+      "pdfPage": 11,
+      "bookPage": 65,
+      "disposition": "questions",
+      "description": "Practical 3 - Inferential Statistics II: Exercise 1 (MCQ 1-5)"
+    },
+    {
+      "pdfPage": 12,
+      "bookPage": 66,
+      "disposition": "questions",
+      "description": "Practical 3 - Inferential Statistics II: Exercise 1 (MCQ 6-10)"
+    },
+    {
+      "pdfPage": 13,
+      "bookPage": 67,
+      "disposition": "questions",
+      "description": "Practical 3 - Inferential Statistics II: Exercise 1 (MCQ 11-12), Exercise 2 (Hypotheses a-d), Exercise 3 (Complete 1-5)"
+    },
+    {
+      "pdfPage": 14,
+      "bookPage": 68,
+      "disposition": "questions",
+      "description": "Practical 3 - Inferential Statistics II: Exercise 4 (Matching 1-4) & Exercise 5 (Problem Scenarios 1-2)"
+    }
+  ],
+  "totalOccurrencesCaptured": 57,
+  "occurrences": [
+    {
+      "occurrenceId": "OCC-R3-P03-Q01",
+      "pdfPage": 3,
+      "bookPage": 58,
+      "practical": 1,
+      "chapterId": 1,
+      "canonicalId": "R3-CH1-CLIN-0001",
+      "type": "mcq",
+      "text": "What is the shape of a normal distribution curve?",
+      "status": "ACCEPTED"
+    },
+    {
+      "occurrenceId": "OCC-R3-P03-Q02",
+      "pdfPage": 3,
+      "bookPage": 58,
+      "practical": 1,
+      "chapterId": 1,
+      "canonicalId": "R3-CH1-CLIN-0002",
+      "type": "mcq",
+      "text": "In a normal distribution, the mean, median, and mode are:",
+      "status": "ACCEPTED"
+    },
+    {
+      "occurrenceId": "OCC-R3-P03-Q03",
+      "pdfPage": 3,
+      "bookPage": 58,
+      "practical": 1,
+      "chapterId": 1,
+      "canonicalId": "R3-CH1-CLIN-0003",
+      "type": "mcq",
+      "text": "What is the total area under the normal distribution curve?",
+      "status": "ACCEPTED"
+    },
+    {
+      "occurrenceId": "OCC-R3-P03-Q04",
+      "pdfPage": 3,
+      "bookPage": 58,
+      "practical": 1,
+      "chapterId": 1,
+      "canonicalId": "R3-CH1-CLIN-0004",
+      "type": "mcq",
+      "text": "The mean of the standard normal distribution is:",
+      "status": "ACCEPTED"
+    },
+    {
+      "occurrenceId": "OCC-R3-P03-Q05",
+      "pdfPage": 3,
+      "bookPage": 58,
+      "practical": 1,
+      "chapterId": 1,
+      "canonicalId": "R3-CH1-CLIN-0005",
+      "type": "mcq",
+      "text": "In a normal distribution, about 68% of the data falls within:",
+      "status": "ACCEPTED"
+    },
+    {
+      "occurrenceId": "OCC-R3-P03-Q06",
+      "pdfPage": 3,
+      "bookPage": 58,
+      "practical": 1,
+      "chapterId": 1,
+      "canonicalId": "R3-CH1-CLIN-0006",
+      "type": "mcq",
+      "text": "In a normal distribution, about 95% of the data falls within:",
+      "status": "ACCEPTED"
+    },
+    {
+      "occurrenceId": "OCC-R3-P03-Q07",
+      "pdfPage": 3,
+      "bookPage": 58,
+      "practical": 1,
+      "chapterId": 1,
+      "canonicalId": "R3-CH1-CLIN-0007",
+      "type": "mcq",
+      "text": "What does a z-score of 0 indicate?",
+      "status": "ACCEPTED"
+    },
+    {
+      "occurrenceId": "OCC-R3-P04-Q08",
+      "pdfPage": 4,
+      "bookPage": 59,
+      "practical": 1,
+      "chapterId": 1,
+      "canonicalId": "R3-CH1-CLIN-0008",
+      "type": "mcq",
+      "text": "A positive z-score means the value is:",
+      "status": "ACCEPTED"
+    },
+    {
+      "occurrenceId": "OCC-R3-P04-Q09",
+      "pdfPage": 4,
+      "bookPage": 59,
+      "practical": 1,
+      "chapterId": 1,
+      "canonicalId": "R3-CH1-CLIN-0009",
+      "type": "mcq",
+      "text": "A leptokurtic distribution has:",
+      "status": "ACCEPTED"
+    },
+    {
+      "occurrenceId": "OCC-R3-P04-Q10",
+      "pdfPage": 4,
+      "bookPage": 59,
+      "practical": 1,
+      "chapterId": 1,
+      "canonicalId": "R3-CH1-CLIN-0010",
+      "type": "mcq",
+      "text": "In a right-skewed distribution:",
+      "status": "ACCEPTED"
+    },
+    {
+      "occurrenceId": "OCC-R3-P04-Q11",
+      "pdfPage": 4,
+      "bookPage": 59,
+      "practical": 1,
+      "chapterId": 1,
+      "canonicalId": "R3-CH1-CLIN-0011",
+      "type": "mcq",
+      "text": "In a normal distribution, most of the data lies:",
+      "status": "ACCEPTED"
+    },
+    {
+      "occurrenceId": "OCC-R3-P04-Q12",
+      "pdfPage": 4,
+      "bookPage": 59,
+      "practical": 1,
+      "chapterId": 1,
+      "canonicalId": "R3-CH1-CLIN-0012",
+      "type": "mcq",
+      "text": "The heights of a population of adult women are normally distributed with a mean of 64 inches and a standard deviation of 3 inches. What is the z-score for a woman who is 70 inches tall?",
+      "status": "ACCEPTED"
+    },
+    {
+      "occurrenceId": "OCC-R3-P04-Q13",
+      "pdfPage": 4,
+      "bookPage": 59,
+      "practical": 1,
+      "chapterId": 1,
+      "canonicalId": "R3-CH1-CLIN-0013",
+      "type": "mcq",
+      "text": "In a normal distribution with a mean of 100 and a standard deviation of 15, what percentage of values fall between 85 and 115?",
+      "status": "ACCEPTED"
+    },
+    {
+      "occurrenceId": "OCC-R3-P04-Q14",
+      "pdfPage": 4,
+      "bookPage": 59,
+      "practical": 1,
+      "chapterId": 1,
+      "canonicalId": "R3-CH1-CLIN-0014",
+      "type": "mcq",
+      "text": "The weights of bags of flour are normally distributed with a mean of 5 kg and a standard deviation of 0.5 kg. If a bag weighs 6 kg, what is its z-score?",
+      "status": "ACCEPTED"
+    },
+    {
+      "occurrenceId": "OCC-R3-P05-IMG01",
+      "pdfPage": 5,
+      "bookPage": 60,
+      "practical": 1,
+      "chapterId": 1,
+      "canonicalId": null,
+      "type": "image_essay",
+      "text": "State the type of each curve with explanation? [Graph 1: Systolic BP Histogram]",
+      "status": "EXCLUDED_IMAGE_POLICY"
+    },
+    {
+      "occurrenceId": "OCC-R3-P05-IMG02",
+      "pdfPage": 5,
+      "bookPage": 60,
+      "practical": 1,
+      "chapterId": 1,
+      "canonicalId": null,
+      "type": "image_essay",
+      "text": "State the type of each curve with explanation? [Graph 2: Values -0.3 to +0.3 Histogram]",
+      "status": "EXCLUDED_IMAGE_POLICY"
+    },
+    {
+      "occurrenceId": "OCC-R3-P06-IMG03",
+      "pdfPage": 6,
+      "bookPage": 61,
+      "practical": 1,
+      "chapterId": 1,
+      "canonicalId": null,
+      "type": "image_essay",
+      "text": "State the type of each curve with explanation? [Graph 3: Variable vs Count Histogram with Mean = 1.70]",
+      "status": "EXCLUDED_IMAGE_POLICY"
+    },
+    {
+      "occurrenceId": "OCC-R3-P07-TF01",
+      "pdfPage": 7,
+      "bookPage": 62,
+      "practical": 2,
+      "chapterId": 2,
+      "canonicalId": "R3-CH2-CLIN-0001",
+      "type": "truefalse",
+      "text": "Confidence intervals can be built for means - but not for percentages.",
+      "status": "ACCEPTED"
+    },
+    {
+      "occurrenceId": "OCC-R3-P07-TF02",
+      "pdfPage": 7,
+      "bookPage": 62,
+      "practical": 2,
+      "chapterId": 2,
+      "canonicalId": "R3-CH2-CLIN-0002",
+      "type": "truefalse",
+      "text": "Using the same data, a confidence interval will get wider if the confidence level is increased.",
+      "status": "ACCEPTED"
+    },
+    {
+      "occurrenceId": "OCC-R3-P07-TF03",
+      "pdfPage": 7,
+      "bookPage": 62,
+      "practical": 2,
+      "chapterId": 2,
+      "canonicalId": "R3-CH2-CLIN-0003",
+      "type": "truefalse",
+      "text": "A confidence interval indicates the probability that the population parameter lies somewhere between the numerical end points of the CI.",
+      "status": "ACCEPTED"
+    },
+    {
+      "occurrenceId": "OCC-R3-P07-TF04",
+      "pdfPage": 7,
+      "bookPage": 62,
+      "practical": 2,
+      "chapterId": 2,
+      "canonicalId": "R3-CH2-CLIN-0004",
+      "type": "truefalse",
+      "text": "To interpret a confidence interval correctly, you must imagine that lots of samples are drawn from the population.",
+      "status": "ACCEPTED"
+    },
+    {
+      "occurrenceId": "OCC-R3-P07-TF05",
+      "pdfPage": 7,
+      "bookPage": 62,
+      "practical": 2,
+      "chapterId": 2,
+      "canonicalId": "R3-CH2-CLIN-0005",
+      "type": "truefalse",
+      "text": "If someone says \"52 \u00b1 3,\" the 3 might be referring to the SD or it might be referring to the SEM.",
+      "status": "ACCEPTED"
+    },
+    {
+      "occurrenceId": "OCC-R3-P07-MCQ01",
+      "pdfPage": 7,
+      "bookPage": 62,
+      "practical": 2,
+      "chapterId": 2,
+      "canonicalId": "R3-CH2-CLIN-0006",
+      "type": "mcq",
+      "text": "Why do we use inferential statistics?",
+      "status": "ACCEPTED"
+    },
+    {
+      "occurrenceId": "OCC-R3-P07-MCQ02",
+      "pdfPage": 7,
+      "bookPage": 62,
+      "practical": 2,
+      "chapterId": 2,
+      "canonicalId": "R3-CH2-CLIN-0007",
+      "type": "mcq",
+      "text": "The sample mean x\u0304 is called a ________ of the population mean \u03bc.",
+      "status": "ACCEPTED"
+    },
+    {
+      "occurrenceId": "OCC-R3-P07-MCQ03",
+      "pdfPage": 7,
+      "bookPage": 62,
+      "practical": 2,
+      "chapterId": 2,
+      "canonicalId": "R3-CH2-CLIN-0008",
+      "type": "mcq",
+      "text": "A 95% confidence interval for the mean number of televisions per American household is (1.15, 4.20). Which statement is correct about this confidence interval?",
+      "status": "ACCEPTED"
+    },
+    {
+      "occurrenceId": "OCC-R3-P08-MCQ04",
+      "pdfPage": 8,
+      "bookPage": 63,
+      "practical": 2,
+      "chapterId": 2,
+      "canonicalId": "R3-CH2-CLIN-0009",
+      "type": "mcq",
+      "text": "Population A has a mean of 1,000 and a standard deviation of 70, while Population B has a mean of 1,200 and a standard deviation of 62. For samples of size 35, then the standard error of A will be:",
+      "status": "ACCEPTED"
+    },
+    {
+      "occurrenceId": "OCC-R3-P08-MCQ05",
+      "pdfPage": 8,
+      "bookPage": 63,
+      "practical": 2,
+      "chapterId": 2,
+      "canonicalId": "R3-CH2-CLIN-0010",
+      "type": "mcq",
+      "text": "Which of the following is most likely to result in a larger standard error if everything else is held constant?",
+      "status": "ACCEPTED"
+    },
+    {
+      "occurrenceId": "OCC-R3-P08-MCQ06",
+      "pdfPage": 8,
+      "bookPage": 63,
+      "practical": 2,
+      "chapterId": 2,
+      "canonicalId": "R3-CH2-CLIN-0011",
+      "type": "mcq",
+      "text": "A researcher is going to draw a sample of 150 values from a population. The researcher wants to find probabilities for the sample mean. Which of the following statements is true?",
+      "status": "ACCEPTED"
+    },
+    {
+      "occurrenceId": "OCC-R3-P08-MCQ07",
+      "pdfPage": 8,
+      "bookPage": 63,
+      "practical": 2,
+      "chapterId": 2,
+      "canonicalId": "R3-CH2-CLIN-0012",
+      "type": "mcq",
+      "text": "You draw a sample and calculate the sample mean. Which of the following is true?",
+      "status": "ACCEPTED"
+    },
+    {
+      "occurrenceId": "OCC-R3-P10-MCQ08",
+      "pdfPage": 10,
+      "bookPage": 64,
+      "practical": 2,
+      "chapterId": 2,
+      "canonicalId": "R3-CH2-CLIN-0013",
+      "type": "mcq",
+      "text": "Suppose 10,000 random samples of the same size are drawn from a population having M=50 & SD=4. Each sample's mean is computed and then displayed in a sampling distribution. About what fraction of the sample means would lie within one standard error of 50?",
+      "status": "ACCEPTED"
+    },
+    {
+      "occurrenceId": "OCC-R3-P10-ESS01",
+      "pdfPage": 10,
+      "bookPage": 64,
+      "practical": 2,
+      "chapterId": 2,
+      "canonicalId": "R3-CH2-CLIN-0014",
+      "type": "essay",
+      "text": "A random sample of 50 students at one school was obtained and each selected student was given an IQ test. These data were used to measure IQ score with a 95% confidence interval between [96.656, 106.422]. How do you interpret this confidence interval?",
+      "status": "ACCEPTED"
+    },
+    {
+      "occurrenceId": "OCC-R3-P10-ESS02",
+      "pdfPage": 10,
+      "bookPage": 64,
+      "practical": 2,
+      "chapterId": 2,
+      "canonicalId": "R3-CH2-CLIN-0015",
+      "type": "essay",
+      "text": "A sample of university students was surveyed about their seatbelt usage. A 95% confidence interval for the proportion of all university students who always wear their seatbelt was computed to be [0.612, 0.668]. How do you interpret this confidence interval?",
+      "status": "ACCEPTED"
+    },
+    {
+      "occurrenceId": "OCC-R3-P09-SCAN-DUP",
+      "pdfPage": 9,
+      "bookPage": 63,
+      "practical": 2,
+      "chapterId": 2,
+      "canonicalId": null,
+      "type": "duplicate_scan_page",
+      "text": "Duplicate scan of book page 63 (identical questions to PDF page 8, MCQs 4-7)",
+      "status": "EXCLUDED_DUPLICATE_SCAN"
+    },
+    {
+      "occurrenceId": "OCC-R3-P11-MCQ01",
+      "pdfPage": 11,
+      "bookPage": 65,
+      "practical": 3,
+      "chapterId": 3,
+      "canonicalId": "R3-CH3-CLIN-0001",
+      "type": "mcq",
+      "text": "The purpose of hypothesis testing is to:",
+      "status": "ACCEPTED"
+    },
+    {
+      "occurrenceId": "OCC-R3-P11-MCQ02",
+      "pdfPage": 11,
+      "bookPage": 65,
+      "practical": 3,
+      "chapterId": 3,
+      "canonicalId": "R3-CH3-CLIN-0002",
+      "type": "mcq",
+      "text": "If the null hypothesis is false then which of the following is accepted?",
+      "status": "ACCEPTED"
+    },
+    {
+      "occurrenceId": "OCC-R3-P11-MCQ03",
+      "pdfPage": 11,
+      "bookPage": 65,
+      "practical": 3,
+      "chapterId": 3,
+      "canonicalId": "R3-CH3-CLIN-0003",
+      "type": "mcq",
+      "text": "The probability of Type I error is referred as:",
+      "status": "ACCEPTED"
+    },
+    {
+      "occurrenceId": "OCC-R3-P11-MCQ04",
+      "pdfPage": 11,
+      "bookPage": 65,
+      "practical": 3,
+      "chapterId": 3,
+      "canonicalId": "R3-CH3-CLIN-0004",
+      "type": "mcq",
+      "text": "A Type I error occurs when we:",
+      "status": "ACCEPTED"
+    },
+    {
+      "occurrenceId": "OCC-R3-P11-MCQ05",
+      "pdfPage": 11,
+      "bookPage": 65,
+      "practical": 3,
+      "chapterId": 3,
+      "canonicalId": "R3-CH3-CLIN-0005",
+      "type": "mcq",
+      "text": "A Type II error occurs when we:",
+      "status": "ACCEPTED"
+    },
+    {
+      "occurrenceId": "OCC-R3-P12-MCQ06",
+      "pdfPage": 12,
+      "bookPage": 66,
+      "practical": 3,
+      "chapterId": 3,
+      "canonicalId": "R3-CH3-CLIN-0006",
+      "type": "mcq",
+      "text": "The rejection probability of Null Hypothesis when it is true is called as:",
+      "status": "ACCEPTED"
+    },
+    {
+      "occurrenceId": "OCC-R3-P12-MCQ07",
+      "pdfPage": 12,
+      "bookPage": 66,
+      "practical": 3,
+      "chapterId": 3,
+      "canonicalId": "R3-CH3-CLIN-0007",
+      "type": "mcq",
+      "text": "In a two-tail test for the population mean, if the null hypothesis is rejected when the alternative is true then:",
+      "status": "ACCEPTED"
+    },
+    {
+      "occurrenceId": "OCC-R3-P12-MCQ08",
+      "pdfPage": 12,
+      "bookPage": 66,
+      "practical": 3,
+      "chapterId": 3,
+      "canonicalId": "R3-CH3-CLIN-0008",
+      "type": "mcq",
+      "text": "If we reject the null hypothesis, we conclude that:",
+      "status": "ACCEPTED"
+    },
+    {
+      "occurrenceId": "OCC-R3-P12-MCQ09",
+      "pdfPage": 12,
+      "bookPage": 66,
+      "practical": 3,
+      "chapterId": 3,
+      "canonicalId": "R3-CH3-CLIN-0009",
+      "type": "mcq",
+      "text": "The p-value of a test is the:",
+      "status": "ACCEPTED"
+    },
+    {
+      "occurrenceId": "OCC-R3-P12-MCQ10",
+      "pdfPage": 12,
+      "bookPage": 66,
+      "practical": 3,
+      "chapterId": 3,
+      "canonicalId": "R3-CH3-CLIN-0010",
+      "type": "mcq",
+      "text": "Which of the following statements about hypothesis testing is true?",
+      "status": "ACCEPTED"
+    },
+    {
+      "occurrenceId": "OCC-R3-P13-MCQ11",
+      "pdfPage": 13,
+      "bookPage": 67,
+      "practical": 3,
+      "chapterId": 3,
+      "canonicalId": "R3-CH3-CLIN-0011",
+      "type": "mcq",
+      "text": "If the p-value is 0.04, and the significance level (\u03b1) is 0.05, what should be the conclusion?",
+      "status": "ACCEPTED"
+    },
+    {
+      "occurrenceId": "OCC-R3-P13-MCQ12",
+      "pdfPage": 13,
+      "bookPage": 67,
+      "practical": 3,
+      "chapterId": 3,
+      "canonicalId": "R3-CH3-CLIN-0012",
+      "type": "mcq",
+      "text": "The power of a statistical test is defined as:",
+      "status": "ACCEPTED"
+    },
+    {
+      "occurrenceId": "OCC-R3-P13-EX2A",
+      "pdfPage": 13,
+      "bookPage": 67,
+      "practical": 3,
+      "chapterId": 3,
+      "canonicalId": "R3-CH3-CLIN-0013",
+      "type": "essay",
+      "text": "State the null hypothesis (Ho) and alternative hypothesis (Ha) in terms of the appropriate parameter (\u03bc or \u03c0): \"Prevalence of Diabetes in Egypt is 20%\".",
+      "status": "ACCEPTED"
+    },
+    {
+      "occurrenceId": "OCC-R3-P13-EX2B",
+      "pdfPage": 13,
+      "bookPage": 67,
+      "practical": 3,
+      "chapterId": 3,
+      "canonicalId": "R3-CH3-CLIN-0014",
+      "type": "essay",
+      "text": "State the null hypothesis (Ho) and alternative hypothesis (Ha) in terms of the appropriate parameter (\u03bc or \u03c0): \"60% of Egyptian females, compared to 30% of males suffer from Anaemia\".",
+      "status": "ACCEPTED"
+    },
+    {
+      "occurrenceId": "OCC-R3-P13-EX2C",
+      "pdfPage": 13,
+      "bookPage": 67,
+      "practical": 3,
+      "chapterId": 3,
+      "canonicalId": "R3-CH3-CLIN-0015",
+      "type": "essay",
+      "text": "State the null hypothesis (Ho) and alternative hypothesis (Ha) in terms of the appropriate parameter (\u03bc or \u03c0): \"The safe dose of Drug X is 30 mg/Kg body weight\".",
+      "status": "ACCEPTED"
+    },
+    {
+      "occurrenceId": "OCC-R3-P13-EX2D",
+      "pdfPage": 13,
+      "bookPage": 67,
+      "practical": 3,
+      "chapterId": 3,
+      "canonicalId": "R3-CH3-CLIN-0016",
+      "type": "essay",
+      "text": "State the null hypothesis (Ho) and alternative hypothesis (Ha) in terms of the appropriate parameter (\u03bc or \u03c0): \"Systolic blood pressure increases with age in adults (>18 years)\".",
+      "status": "ACCEPTED"
+    },
+    {
+      "occurrenceId": "OCC-R3-P13-EX31",
+      "pdfPage": 13,
+      "bookPage": 67,
+      "practical": 3,
+      "chapterId": 3,
+      "canonicalId": "R3-CH3-CLIN-0017",
+      "type": "fillblank",
+      "text": "The hypothesis that assumes no effect or no difference is called the ___ hypothesis.",
+      "status": "ACCEPTED"
+    },
+    {
+      "occurrenceId": "OCC-R3-P13-EX32",
+      "pdfPage": 13,
+      "bookPage": 67,
+      "practical": 3,
+      "chapterId": 3,
+      "canonicalId": "R3-CH3-CLIN-0018",
+      "type": "fillblank",
+      "text": "The probability of rejecting a true null hypothesis is known as ___ error.",
+      "status": "ACCEPTED"
+    },
+    {
+      "occurrenceId": "OCC-R3-P13-EX33",
+      "pdfPage": 13,
+      "bookPage": 67,
+      "practical": 3,
+      "chapterId": 3,
+      "canonicalId": "R3-CH3-CLIN-0019",
+      "type": "fillblank",
+      "text": "If the p-value is less than or equal to 0.05, we ___ the null hypothesis.",
+      "status": "ACCEPTED"
+    },
+    {
+      "occurrenceId": "OCC-R3-P13-EX34",
+      "pdfPage": 13,
+      "bookPage": 67,
+      "practical": 3,
+      "chapterId": 3,
+      "canonicalId": "R3-CH3-CLIN-0020",
+      "type": "fillblank",
+      "text": "The ___ of a test is the probability of correctly rejecting a false null hypothesis.",
+      "status": "ACCEPTED"
+    },
+    {
+      "occurrenceId": "OCC-R3-P13-EX35",
+      "pdfPage": 13,
+      "bookPage": 67,
+      "practical": 3,
+      "chapterId": 3,
+      "canonicalId": "R3-CH3-CLIN-0021",
+      "type": "fillblank",
+      "text": "If the power of a test is 0.90, then the probability of making a Type II error (\u03b2) is ___.",
+      "status": "ACCEPTED"
+    },
+    {
+      "occurrenceId": "OCC-R3-P14-EX4",
+      "pdfPage": 14,
+      "bookPage": 68,
+      "practical": 3,
+      "chapterId": 3,
+      "canonicalId": "R3-CH3-CLIN-0022",
+      "type": "matching",
+      "text": "Match each hypothesis testing term with its correct definition:",
+      "status": "ACCEPTED"
+    },
+    {
+      "occurrenceId": "OCC-R3-P14-EX51",
+      "pdfPage": 14,
+      "bookPage": 68,
+      "practical": 3,
+      "chapterId": 3,
+      "canonicalId": "R3-CH3-CLIN-0023",
+      "type": "essay",
+      "text": "A study tests whether a new drug improves sleep quality compared to a placebo. The null hypothesis is that there is no difference. The analysis produces a p-value of 0.08. Interpret the p-value. Decide what conclusion the researchers should draw at \u03b1 = 0.05, and identify what type of error could occur.",
+      "status": "ACCEPTED"
+    },
+    {
+      "occurrenceId": "OCC-R3-P14-EX52",
+      "pdfPage": 14,
+      "bookPage": 68,
+      "practical": 3,
+      "chapterId": 3,
+      "canonicalId": "R3-CH3-CLIN-0024",
+      "type": "essay",
+      "text": "A medical researcher performs a hypothesis test comparing the mean recovery time for two surgical techniques. The null hypothesis claims both have the same recovery time. The data result in a test statistic with a p-value of 0.03. What is the appropriate decision at \u03b1 = 0.05, and what type of error could still occur?",
+      "status": "ACCEPTED"
+    }
+  ]
+}
