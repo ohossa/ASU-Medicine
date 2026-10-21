@@ -1,0 +1,152 @@
+[
+  {
+    "assignedId": "R3-FE1-CLIN-0001",
+    "stem": "A Type I error occurs when a researcher:",
+    "correctIndex": 3,
+    "correctAnswer": "Rejects a true null hypothesis",
+    "keyConcept": "Type I error (α) definition",
+    "explanation": "A Type I error (denoted by alpha, α) is a false-positive statistical decision that occurs when the researcher rejects the null hypothesis (H0) when it is in fact true in the population.",
+    "distractorAnalysis": {
+      "Accepts a true null hypothesis": "This is a correct statistical decision (true negative, probability = 1 - α).",
+      "Fails to reject a false null hypothesis": "This describes a Type II error (beta, β), which is a false-negative decision.",
+      "Finds a result that is not clinically important": "A statistically significant result may lack clinical importance, but this does not define a statistical error.",
+      "Uses the wrong sample size": "An inadequate sample size leads to low statistical power (high Type II error risk), but does not define Type I error."
+    },
+    "citation": "Daniel & Cross, Biostatistics: A Foundation for Analysis in the Health Sciences, 11th Ed., Hypothesis Testing"
+  },
+  {
+    "assignedId": "R3-FE1-CLIN-0002",
+    "stem": "A patient's laboratory result has a z-score of +2. What does this indicate?",
+    "correctIndex": 1,
+    "correctAnswer": "The result is two standard deviations above the mean",
+    "keyConcept": "Standard score (z-score) interpretation",
+    "explanation": "A standard score (z-score) measures the distance between an individual observation (x) and the population mean (μ) in units of standard deviation: z = (x - μ)/σ. A z-score of +2 indicates the measurement lies exactly two standard deviations above the population mean.",
+    "distractorAnalysis": {
+      "The result is two units above the mean": "The z-score is dimensionless and represents units of standard deviations (2σ), not raw units (e.g. not 2 mg/dL).",
+      "The result is two standard deviations below the mean": "A value two standard deviations below the mean would have a z-score of -2.",
+      "The result is at the 2nd percentile": "A z-score of +2 corresponds to approximately the 97.7th percentile in a normal distribution (z = -2 corresponds to the 2.3rd percentile).",
+      "The result is equal to the mean": "A value equal to the mean has a z-score of 0."
+    },
+    "citation": "Daniel & Cross, Biostatistics: Normal Distribution and Standard Scores"
+  },
+  {
+    "assignedId": "R3-FE1-CLIN-0003",
+    "stem": "A study reports (p = 0.03), with a pre-specified (alpha = 0.05). Which conclusion is most appropriate?",
+    "correctIndex": 1,
+    "correctAnswer": "Reject H0 at the 5% significance level",
+    "keyConcept": "Hypothesis testing decision rule: p-value vs alpha",
+    "explanation": "Under the Neyman-Pearson hypothesis testing framework, the decision rule is: reject H0 if p ≤ α; fail to reject H0 if p > α. Because the observed p-value (0.03) is less than the pre-specified significance level (α = 0.05), the researcher rejects the null hypothesis at the 5% level of significance.",
+    "distractorAnalysis": {
+      "Accept H0 as proven": "We never 'prove' the null hypothesis; when p > α we fail to reject it, but here p < α so we reject H0.",
+      "The result is necessarily clinically important": "Statistical significance (p < α) indicates that chance alone is an unlikely explanation, but does not guarantee the magnitude of effect is clinically meaningful.",
+      "The result will occur in 3% of patients": "The p-value is a probability of observing the test statistic under H0, not an incidence rate in patients.",
+      "There is a 3% probability that H0 is true": "This is the classic inverse probability fallacy: p is P(data | H0), not P(H0 | data)."
+    },
+    "citation": "Gordis, Epidemiology; Daniel & Cross, Biostatistics: Hypothesis Testing"
+  },
+  {
+    "assignedId": "R3-FE1-CLIN-0004",
+    "stem": "If the sample standard deviation stays the same and the sample size increases, what happens to the standard error?",
+    "correctIndex": 1,
+    "correctAnswer": "It decreases",
+    "keyConcept": "Standard error of the mean formula: SE = s / √n",
+    "explanation": "The standard error of the mean is calculated as SE = s / √n (or σ / √n). Because the sample size (n) is in the denominator, increasing n while keeping the standard deviation constant increases the denominator, thereby decreasing the standard error and increasing the precision of the sample mean.",
+    "distractorAnalysis": {
+      "It increases": "SE decreases with larger sample size; it only increases if sample size decreases or variability increases.",
+      "It stays the same": "Sample size directly alters SE via the 1/√n relationship.",
+      "It becomes equal to the population mean": "SE is a measure of dispersion of sample means, not a measure of central tendency.",
+      "It cannot be calculated": "SE is readily computable using s / √n."
+    },
+    "citation": "Daniel & Cross, Biostatistics: Sampling Distributions"
+  },
+  {
+    "assignedId": "R3-FE1-CLIN-0005",
+    "stem": "In a normal distribution, approximately what percentage of observations lies within one standard deviation of the mean?",
+    "correctIndex": 2,
+    "correctAnswer": "68%",
+    "keyConcept": "Empirical rule (68-95-99.7 rule) for normal distribution",
+    "explanation": "According to the empirical rule (68-95-99.7 rule) for a Gaussian/normal distribution: approximately 68.27% of observations fall within ±1 standard deviation of the mean (μ ± 1σ), approximately 95.45% lie within ±2σ, and 99.73% lie within ±3σ.",
+    "distractorAnalysis": {
+      "34%": "Approximately 34% of data lies between the mean and +1 standard deviation (one half of the ±1σ interval).",
+      "50%": "50% of observations lie above or below the mean in a symmetric distribution.",
+      "95%": "Approximately 95% lies within ±2 standard deviations (strictly ±1.96σ).",
+      "99.7%": "Approximately 99.7% lies within ±3 standard deviations."
+    },
+    "citation": "Daniel & Cross, Biostatistics: Properties of the Normal Distribution"
+  },
+  {
+    "assignedId": "R3-FE1-CLIN-0006",
+    "stem": "In a perfectly normal distribution, which relationship is correct?",
+    "correctIndex": 4,
+    "correctAnswer": "Mean = median = mode",
+    "keyConcept": "Symmetry of central tendency in normal distribution",
+    "explanation": "Because a normal distribution is perfectly symmetric, unimodal, and bell-shaped, the highest point of frequency (mode), the central dividing 50th percentile (median), and the arithmetic average (mean) all coincide at the exact center of the curve: Mean = Median = Mode.",
+    "distractorAnalysis": {
+      "Mean = mode, but not the median": "All three measures coincide; none differs in a normal curve.",
+      "Median = mode, but not the mean": "All three are identical.",
+      "Mean < median < mode": "This relationship characterizes a negatively (left-) skewed distribution.",
+      "Mode < mean < median": "In a positively (right-) skewed distribution, mode < median < mean."
+    },
+    "citation": "Daniel & Cross, Biostatistics: Measures of Central Tendency"
+  },
+  {
+    "assignedId": "R3-FE1-CLIN-0007",
+    "stem": "The null hypothesis (H0) usually states that:",
+    "correctIndex": 4,
+    "correctAnswer": "There is no effect, difference, or association",
+    "keyConcept": "Null hypothesis (H0) specification",
+    "explanation": "The null hypothesis (H0) is the default baseline premise established for the purpose of statistical testing, stating that there is no true effect, no difference between study populations, or no association between variables in the underlying population.",
+    "distractorAnalysis": {
+      "A treatment is definitely effective": "This represents a directional alternative hypothesis or investigator expectation.",
+      "The alternative hypothesis is true": "H0 is the logical opposite of the alternative hypothesis (H1).",
+      "The study results are clinically important": "Clinical importance is a qualitative judgment independent of the statistical null statement.",
+      "There is effect, difference, or association": "This is the definition of the alternative hypothesis (H1 or Ha)."
+    },
+    "citation": "Daniel & Cross, Biostatistics: Hypothesis Testing Principles"
+  },
+  {
+    "assignedId": "R3-FE1-CLIN-0008",
+    "stem": "What does a 95% confidence level indicate when estimating a population parameter?",
+    "correctIndex": 2,
+    "correctAnswer": "There is 95% confidence that the interval contains the population parameter.",
+    "keyConcept": "Confidence interval frequentist interpretation",
+    "explanation": "A 95% confidence level means that if independent random samples were repeatedly drawn from the population and a 95% confidence interval constructed from each sample, 95% of those calculated intervals would encompass the true, unknown population parameter.",
+    "distractorAnalysis": {
+      "The sample mean is correct 95% of the time.": "The sample mean is a point estimate that rarely equals the exact population mean.",
+      "The population parameter is guaranteed to be within the interval.": "There is a 5% probability that the constructed interval fails to capture the true parameter.",
+      "The standard error is 95% of the population mean.": "Standard error measures sampling variability and is unrelated to 95% of the mean.",
+      "The population mean differs from the sample mean by exactly 5%.": "The 5% represents alpha (the error rate), not a percentage discrepancy in means."
+    },
+    "citation": "Daniel & Cross, Biostatistics: Confidence Intervals and Estimation"
+  },
+  {
+    "assignedId": "R3-FE1-CLIN-0009",
+    "stem": "What is the usual first step in a formal hypothesis test?",
+    "correctIndex": 2,
+    "correctAnswer": "State the null and alternative hypotheses",
+    "keyConcept": "Sequence of steps in hypothesis testing",
+    "explanation": "The formal procedure of statistical hypothesis testing strictly begins with formulating and stating the null hypothesis (H0) and the alternative hypothesis (H1/Ha) in terms of population parameters, followed by setting alpha, choosing the test, computing the test statistic/p-value, and making the statistical decision.",
+    "distractorAnalysis": {
+      "Calculate the p-value": "The test statistic and p-value can only be computed after specifying the hypotheses and test model.",
+      "Decide whether to reject null hypothesis": "This is the final decision step based on comparing the p-value to alpha.",
+      "Interpret the clinical importance": "Clinical interpretation occurs after the statistical decision is made.",
+      "Calculate the confidence interval": "Estimation may accompany or follow hypothesis testing, but formulating hypotheses is the foundational first step."
+    },
+    "citation": "Daniel & Cross, Biostatistics: Steps in Hypothesis Testing"
+  },
+  {
+    "assignedId": "R3-FE1-CLIN-0010",
+    "stem": "When is the Central Limit Theorem especially useful in medical research?",
+    "correctIndex": 0,
+    "correctAnswer": "When estimating a population mean from sample data",
+    "keyConcept": "Central Limit Theorem clinical utility",
+    "explanation": "The Central Limit Theorem (CLT) is foundational for inferential estimation: it establishes that for sufficiently large random samples (typically n ≥ 30), the sampling distribution of the sample mean is approximately normally distributed regardless of the shape of the underlying population distribution, enabling researchers to estimate population parameters and construct confidence intervals.",
+    "distractorAnalysis": {
+      "When proving that all data are normally distributed": "CLT applies to the distribution of sample means, not raw individual data values, and does not prove populations are normal.",
+      "When removing outliers from a dataset": "CLT does not remove or filter data points.",
+      "When measuring an individual patient's risk with certainty": "CLT governs aggregate sample statistics, not individual diagnostic certainty.",
+      "When avoiding the need to select a representative sample": "CLT strictly requires random, representative sampling; it cannot overcome selection bias."
+    },
+    "citation": "Daniel & Cross, Biostatistics: The Central Limit Theorem"
+  }
+]

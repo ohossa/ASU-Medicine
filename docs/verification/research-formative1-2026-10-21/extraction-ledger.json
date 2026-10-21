@@ -1,0 +1,202 @@
+[
+  {
+    "occurrenceId": "src-r3-fe1-p02-q01",
+    "pdfPage": 2,
+    "sourceQuestionNumber": 1,
+    "examTitle": "Formative exam 1",
+    "course": "Scientific Research (R-3) - Third Year (2024 By-Law)",
+    "stem": "A Type I error occurs when a researcher:",
+    "options": [
+      "Accepts a true null hypothesis",
+      "Fails to reject a false null hypothesis",
+      "Finds a result that is not clinically important",
+      "Rejects a true null hypothesis",
+      "Uses the wrong sample size"
+    ],
+    "printedAnswer": "Rejects a true null hypothesis",
+    "printedAnswerIndex": 3,
+    "decision": "accept",
+    "assignedId": "R3-FE1-CLIN-0001",
+    "targetChapter": 8
+  },
+  {
+    "occurrenceId": "src-r3-fe1-p03-q02",
+    "pdfPage": 3,
+    "sourceQuestionNumber": 2,
+    "examTitle": "Formative exam 1",
+    "course": "Scientific Research (R-3) - Third Year (2024 By-Law)",
+    "stem": "A patient's laboratory result has a z-score of +2. What does this indicate?",
+    "options": [
+      "The result is two units above the mean",
+      "The result is two standard deviations above the mean",
+      "The result is two standard deviations below the mean",
+      "The result is at the 2nd percentile",
+      "The result is equal to the mean"
+    ],
+    "printedAnswer": "The result is two standard deviations above the mean",
+    "printedAnswerIndex": 1,
+    "decision": "accept",
+    "assignedId": "R3-FE1-CLIN-0002",
+    "targetChapter": 8
+  },
+  {
+    "occurrenceId": "src-r3-fe1-p03-q03",
+    "pdfPage": 3,
+    "sourceQuestionNumber": 3,
+    "examTitle": "Formative exam 1",
+    "course": "Scientific Research (R-3) - Third Year (2024 By-Law)",
+    "stem": "A study reports (p = 0.03), with a pre-specified (alpha = 0.05). Which conclusion is most appropriate?",
+    "options": [
+      "Accept H0 as proven",
+      "Reject H0 at the 5% significance level",
+      "The result is necessarily clinically important",
+      "The result will occur in 3% of patients",
+      "There is a 3% probability that H0 is true"
+    ],
+    "printedAnswer": "Reject H0 at the 5% significance level",
+    "printedAnswerIndex": 1,
+    "decision": "accept",
+    "assignedId": "R3-FE1-CLIN-0003",
+    "targetChapter": 8
+  },
+  {
+    "occurrenceId": "src-r3-fe1-p04-q04",
+    "pdfPage": 4,
+    "sourceQuestionNumber": 4,
+    "examTitle": "Formative exam 1",
+    "course": "Scientific Research (R-3) - Third Year (2024 By-Law)",
+    "stem": "If the sample standard deviation stays the same and the sample size increases, what happens to the standard error?",
+    "options": [
+      "It increases",
+      "It decreases",
+      "It stays the same",
+      "It becomes equal to the population mean",
+      "It cannot be calculated"
+    ],
+    "printedAnswer": "It decreases",
+    "printedAnswerIndex": 1,
+    "decision": "accept",
+    "assignedId": "R3-FE1-CLIN-0004",
+    "targetChapter": 8
+  },
+  {
+    "occurrenceId": "src-r3-fe1-p04-q05",
+    "pdfPage": 4,
+    "sourceQuestionNumber": 5,
+    "examTitle": "Formative exam 1",
+    "course": "Scientific Research (R-3) - Third Year (2024 By-Law)",
+    "stem": "In a normal distribution, approximately what percentage of observations lies within one standard deviation of the mean?",
+    "options": [
+      "34%",
+      "50%",
+      "68%",
+      "95%",
+      "99.7%"
+    ],
+    "printedAnswer": "68%",
+    "printedAnswerIndex": 2,
+    "decision": "accept",
+    "assignedId": "R3-FE1-CLIN-0005",
+    "targetChapter": 8
+  },
+  {
+    "occurrenceId": "src-r3-fe1-p05-q06",
+    "pdfPage": 5,
+    "sourceQuestionNumber": 6,
+    "examTitle": "Formative exam 1",
+    "course": "Scientific Research (R-3) - Third Year (2024 By-Law)",
+    "stem": "In a perfectly normal distribution, which relationship is correct?",
+    "options": [
+      "Mean = mode, but not the median",
+      "Median = mode, but not the mean",
+      "Mean < median < mode",
+      "Mode < mean < median",
+      "Mean = median = mode"
+    ],
+    "printedAnswer": "Mean = median = mode",
+    "printedAnswerIndex": 4,
+    "decision": "accept",
+    "assignedId": "R3-FE1-CLIN-0006",
+    "targetChapter": 8
+  },
+  {
+    "occurrenceId": "src-r3-fe1-p05-q07",
+    "pdfPage": 5,
+    "sourceQuestionNumber": 7,
+    "examTitle": "Formative exam 1",
+    "course": "Scientific Research (R-3) - Third Year (2024 By-Law)",
+    "stem": "The null hypothesis (H0) usually states that:",
+    "options": [
+      "A treatment is definitely effective",
+      "The alternative hypothesis is true",
+      "The study results are clinically important",
+      "There is effect, difference, or association",
+      "There is no effect, difference, or association"
+    ],
+    "printedAnswer": "There is no effect, difference, or association",
+    "printedAnswerIndex": 4,
+    "decision": "accept",
+    "assignedId": "R3-FE1-CLIN-0007",
+    "targetChapter": 8
+  },
+  {
+    "occurrenceId": "src-r3-fe1-p06-q08",
+    "pdfPage": 6,
+    "sourceQuestionNumber": 8,
+    "examTitle": "Formative exam 1",
+    "course": "Scientific Research (R-3) - Third Year (2024 By-Law)",
+    "stem": "What does a 95% confidence level indicate when estimating a population parameter?",
+    "options": [
+      "The sample mean is correct 95% of the time.",
+      "The population parameter is guaranteed to be within the interval.",
+      "There is 95% confidence that the interval contains the population parameter.",
+      "The standard error is 95% of the population mean.",
+      "The population mean differs from the sample mean by exactly 5%."
+    ],
+    "printedAnswer": "There is 95% confidence that the interval contains the population parameter.",
+    "printedAnswerIndex": 2,
+    "decision": "accept",
+    "assignedId": "R3-FE1-CLIN-0008",
+    "targetChapter": 8
+  },
+  {
+    "occurrenceId": "src-r3-fe1-p06-q09",
+    "pdfPage": 6,
+    "sourceQuestionNumber": 9,
+    "examTitle": "Formative exam 1",
+    "course": "Scientific Research (R-3) - Third Year (2024 By-Law)",
+    "stem": "What is the usual first step in a formal hypothesis test?",
+    "options": [
+      "Calculate the p-value",
+      "Decide whether to reject null hypothesis",
+      "State the null and alternative hypotheses",
+      "Interpret the clinical importance",
+      "Calculate the confidence interval"
+    ],
+    "printedAnswer": "State the null and alternative hypotheses",
+    "printedAnswerIndex": 2,
+    "decision": "accept",
+    "assignedId": "R3-FE1-CLIN-0009",
+    "targetChapter": 8
+  },
+  {
+    "occurrenceId": "src-r3-fe1-p07-q10",
+    "pdfPage": 7,
+    "sourceQuestionNumber": 10,
+    "examTitle": "Formative exam 1",
+    "course": "Scientific Research (R-3) - Third Year (2024 By-Law)",
+    "stem": "When is the Central Limit Theorem especially useful in medical research?",
+    "options": [
+      "When estimating a population mean from sample data",
+      "When proving that all data are normally distributed",
+      "When removing outliers from a dataset",
+      "When measuring an individual patient's risk with certainty",
+      "When avoiding the need to select a representative sample"
+    ],
+    "printedAnswer": "When estimating a population mean from sample data",
+    "printedAnswerIndex": 0,
+    "decision": "accept",
+    "assignedId": "R3-FE1-CLIN-0010",
+    "targetChapter": 8
+  }
+]

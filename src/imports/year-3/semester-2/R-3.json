@@ -957,6 +957,203 @@
         "confounding",
         "validity"
       ]
+    },
+    {
+      "id": 8,
+      "title": "Formative Exam 1",
+      "subtitle": "Scientific Research (R-3) — 2024 By-Law Formative Exam 1",
+      "emoji": "📝",
+      "page": 1,
+      "lectureRange": "Formative Exam 1",
+      "accentColor": "clinical",
+      "bankSection": "past-exams",
+      "subjects": [
+        {
+          "id": "clinical",
+          "name": "Biostatistics & Research Methodology",
+          "iconName": "FileText",
+          "lectures": "Formative Exam 1",
+          "lectureCount": 1,
+          "lectureNames": [
+            "Formative Exam 1 (2024 By-Law)"
+          ],
+          "questions": [
+            {
+              "id": "R3-FE1-CLIN-0001",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "A Type I error occurs when a researcher:",
+              "explanation": "A Type I error (denoted by alpha, α) is a false-positive statistical decision that occurs when the researcher rejects the null hypothesis (H0) when it is in fact true in the population.",
+              "keyConcept": "Type I error (α) definition",
+              "options": [
+                "Accepts a true null hypothesis",
+                "Fails to reject a false null hypothesis",
+                "Finds a result that is not clinically important",
+                "Rejects a true null hypothesis",
+                "Uses the wrong sample size"
+              ],
+              "correctIndex": 3
+            },
+            {
+              "id": "R3-FE1-CLIN-0002",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "A patient's laboratory result has a z-score of +2. What does this indicate?",
+              "explanation": "A standard score (z-score) measures the distance between an individual observation (x) and the population mean (μ) in units of standard deviation: z = (x - μ)/σ. A z-score of +2 indicates the measurement lies exactly two standard deviations above the population mean.",
+              "keyConcept": "Standard score (z-score) interpretation",
+              "options": [
+                "The result is two units above the mean",
+                "The result is two standard deviations above the mean",
+                "The result is two standard deviations below the mean",
+                "The result is at the 2nd percentile",
+                "The result is equal to the mean"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-FE1-CLIN-0003",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "A study reports (p = 0.03), with a pre-specified (alpha = 0.05). Which conclusion is most appropriate?",
+              "explanation": "Because the observed p-value (0.03) is less than the pre-specified significance level (α = 0.05), the decision rule dictates rejecting the null hypothesis at the 5% level of significance. Statistical significance does not inherently prove clinical importance or verify that H0 is true with 3% probability.",
+              "keyConcept": "Hypothesis testing decision rule: p-value vs alpha",
+              "options": [
+                "Accept H0 as proven",
+                "Reject H0 at the 5% significance level",
+                "The result is necessarily clinically important",
+                "The result will occur in 3% of patients",
+                "There is a 3% probability that H0 is true"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-FE1-CLIN-0004",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "If the sample standard deviation stays the same and the sample size increases, what happens to the standard error?",
+              "explanation": "The standard error of the mean is calculated as SE = s / √n. Because sample size (n) is in the denominator, increasing n while keeping the standard deviation constant increases the denominator, thereby decreasing the standard error.",
+              "keyConcept": "Standard error of the mean formula: SE = s / √n",
+              "options": [
+                "It increases",
+                "It decreases",
+                "It stays the same",
+                "It becomes equal to the population mean",
+                "It cannot be calculated"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-FE1-CLIN-0005",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "In a normal distribution, approximately what percentage of observations lies within one standard deviation of the mean?",
+              "explanation": "Under the empirical (68-95-99.7) rule for a normal distribution, approximately 68.27% of observations fall within ±1 standard deviation of the mean (μ ± 1σ).",
+              "keyConcept": "Empirical rule: 68% within 1 SD",
+              "options": [
+                "34%",
+                "50%",
+                "68%",
+                "95%",
+                "99.7%"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "R3-FE1-CLIN-0006",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "In a perfectly normal distribution, which relationship is correct?",
+              "explanation": "Because the normal distribution is perfectly symmetrical and unimodal about its central axis, the mean, median, and mode all coincide at the exact central peak: Mean = Median = Mode.",
+              "keyConcept": "Equality of mean, median, mode in normal distribution",
+              "options": [
+                "Mean = mode, but not the median",
+                "Median = mode, but not the mean",
+                "Mean < median < mode",
+                "Mode < mean < median",
+                "Mean = median = mode"
+              ],
+              "correctIndex": 4
+            },
+            {
+              "id": "R3-FE1-CLIN-0007",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The null hypothesis (H0) usually states that:",
+              "explanation": "The null hypothesis (H0) is the baseline assumption established for testing that asserts there is no true effect, no difference between groups, or no association between variables in the study population.",
+              "keyConcept": "Null hypothesis (H0) specification",
+              "options": [
+                "A treatment is definitely effective",
+                "The alternative hypothesis is true",
+                "The study results are clinically important",
+                "There is effect, difference, or association",
+                "There is no effect, difference, or association"
+              ],
+              "correctIndex": 4
+            },
+            {
+              "id": "R3-FE1-CLIN-0008",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "What does a 95% confidence level indicate when estimating a population parameter?",
+              "explanation": "A 95% confidence level means that if independent random samples were repeatedly drawn and 95% confidence intervals constructed, 95% of those intervals would contain the true population parameter; we have 95% confidence that the interval contains the parameter.",
+              "keyConcept": "Frequentist interpretation of confidence interval",
+              "options": [
+                "The sample mean is correct 95% of the time.",
+                "The population parameter is guaranteed to be within the interval.",
+                "There is 95% confidence that the interval contains the population parameter.",
+                "The standard error is 95% of the population mean.",
+                "The population mean differs from the sample mean by exactly 5%."
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "R3-FE1-CLIN-0009",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "What is the usual first step in a formal hypothesis test?",
+              "explanation": "The formal hypothesis testing procedure always begins with stating the null (H0) and alternative (H1/Ha) hypotheses before calculating test statistics or p-values and reaching a statistical decision.",
+              "keyConcept": "Initial step in formal hypothesis testing",
+              "options": [
+                "Calculate the p-value",
+                "Decide whether to reject null hypothesis",
+                "State the null and alternative hypotheses",
+                "Interpret the clinical importance",
+                "Calculate the confidence interval"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "R3-FE1-CLIN-0010",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "When is the Central Limit Theorem especially useful in medical research?",
+              "explanation": "The Central Limit Theorem (CLT) is particularly useful in medical research when estimating a population mean from sample data because it guarantees that for sufficiently large samples (n ≥ 30), the sampling distribution of the mean is approximately normal even if the underlying population distribution is not normal.",
+              "keyConcept": "Central Limit Theorem utility in parameter estimation",
+              "options": [
+                "When estimating a population mean from sample data",
+                "When proving that all data are normally distributed",
+                "When removing outliers from a dataset",
+                "When measuring an individual patient's risk with certainty",
+                "When avoiding the need to select a representative sample"
+              ],
+              "correctIndex": 0
+            }
+          ]
+        }
+      ],
+      "keywords": [
+        "formative exam",
+        "2024 by-law",
+        "past exams",
+        "type I error",
+        "z-score",
+        "p-value",
+        "standard error",
+        "central limit theorem",
+        "confidence level",
+        "normal distribution",
+        "null hypothesis"
+      ]
     }
   ]
 }
