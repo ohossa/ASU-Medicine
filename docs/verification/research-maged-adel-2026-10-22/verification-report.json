@@ -1,0 +1,46 @@
+{
+  "timestamp": "2026-10-22T08:59:00.000Z",
+  "moduleCode": "R-3",
+  "moduleName": "Scientific Research",
+  "year": 3,
+  "semester": 2,
+  "source": {
+    "title": "Research Methodology MCQs Part 1 - Dr. Maged Adel 2026",
+    "filename": "research-methodology-mcqs-part1-dr-maged-adel-2026.pdf",
+    "sha256": "24f214da60bb3515e591e9c7616d43d90b714f1ac2dc9bb63fc72e7eca621957",
+    "pagesCount": 46
+  },
+  "occurrencesTotal": 120,
+  "acceptedCount": 114,
+  "excludedCount": 6,
+  "duplicatesCount": 6,
+  "chaptersUpdated": [
+    {
+      "chapterId": 1,
+      "chapterTitle": "Normal Distribution Curve",
+      "priorCount": 14,
+      "addedCount": 38,
+      "newTotal": 52,
+      "assignedIdRange": ["R3-CH1-CLIN-0015", "R3-CH1-CLIN-0052"]
+    },
+    {
+      "chapterId": 2,
+      "chapterTitle": "Inferential Statistics I: Estimation",
+      "priorCount": 15,
+      "addedCount": 40,
+      "newTotal": 55,
+      "assignedIdRange": ["R3-CH2-CLIN-0016", "R3-CH2-CLIN-0055"]
+    },
+    {
+      "chapterId": 3,
+      "chapterTitle": "Inferential Statistics II: Hypothesis Testing",
+      "priorCount": 24,
+      "addedCount": 36,
+      "newTotal": 60,
+      "assignedIdRange": ["R3-CH3-CLIN-0025", "R3-CH3-CLIN-0060"]
+    }
+  ],
+  "bankRevision": "7eadbe902963affdb2f7793e29097301b1f15f040daa1340c6ef98827f6ec13c",
+  "totalBankQuestions": 177,
+  "status": "VERIFIED_AND_ACCEPTED"
+}

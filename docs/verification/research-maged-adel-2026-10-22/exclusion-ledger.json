@@ -1,0 +1,56 @@
+[
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q03",
+    "chapterId": 1,
+    "questionNumber": 3,
+    "sourcePage": 2,
+    "questionStem": "In a perfectly normal distribution, the mean, median, and mode are:",
+    "reason": "Exact semantic duplicate of existing question R3-CH1-CLIN-0002 (Mean, median, and mode equality in normal distribution).",
+    "duplicateOf": "R3-CH1-CLIN-0002"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q06",
+    "chapterId": 1,
+    "questionNumber": 6,
+    "sourcePage": 3,
+    "questionStem": "The total area under a normal distribution curve is always equal to:",
+    "reason": "Exact semantic duplicate of existing question R3-CH1-CLIN-0003 (Total area under normal distribution curve equals 1).",
+    "duplicateOf": "R3-CH1-CLIN-0003"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q18",
+    "chapterId": 3,
+    "questionNumber": 18,
+    "sourcePage": 37,
+    "questionStem": "A Type I error occurs when the researcher:",
+    "reason": "Exact semantic duplicate of existing question R3-CH3-CLIN-0004 (Type I error definition: rejecting true null hypothesis).",
+    "duplicateOf": "R3-CH3-CLIN-0004"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q19",
+    "chapterId": 3,
+    "questionNumber": 19,
+    "sourcePage": 37,
+    "questionStem": "The probability of making a Type I error is denoted by:",
+    "reason": "Exact semantic duplicate of existing question R3-CH3-CLIN-0003 (Probability of Type I error denoted by alpha).",
+    "duplicateOf": "R3-CH3-CLIN-0003"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q23",
+    "chapterId": 3,
+    "questionNumber": 23,
+    "sourcePage": 39,
+    "questionStem": "A Type II error occurs when the researcher:",
+    "reason": "Exact semantic duplicate of existing question R3-CH3-CLIN-0005 (Type II error definition: failing to reject false null hypothesis).",
+    "duplicateOf": "R3-CH3-CLIN-0005"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q28",
+    "chapterId": 3,
+    "questionNumber": 28,
+    "sourcePage": 40,
+    "questionStem": "The power of a statistical test is defined as:",
+    "reason": "Exact stem duplicate of existing question R3-CH3-CLIN-0012 (Power of statistical test definition), and tested verbally in Q40.",
+    "duplicateOf": "R3-CH3-CLIN-0012"
+  }
+]

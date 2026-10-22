@@ -1,0 +1,2282 @@
+[
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q01",
+    "chapterId": 1,
+    "chapterTitle": "Chapter 1: Normal Distribution Curve",
+    "questionNumber": 1,
+    "sourcePage": 2,
+    "answerKeyPage": 16,
+    "questionStem": "The normal distribution is a fundamental concept in statistics because:",
+    "options": [
+      "It is always perfectly symmetrical.",
+      "Many real-world biological and psychological phenomena approximate it.",
+      "It has a mean of 0 and a standard deviation of 1.",
+      "It can be used to describe any type of dataset."
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "Many real-world biological and psychological phenomena approximate it.",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q02",
+    "chapterId": 1,
+    "chapterTitle": "Chapter 1: Normal Distribution Curve",
+    "questionNumber": 2,
+    "sourcePage": 2,
+    "answerKeyPage": 16,
+    "questionStem": "The two key parameters that define a normal distribution are:",
+    "options": [
+      "Mean and Median",
+      "Variance and Standard Deviation",
+      "Mean and Standard Deviation",
+      "Mode and Range"
+    ],
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "correctOptionText": "Mean and Standard Deviation",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q03",
+    "chapterId": 1,
+    "chapterTitle": "Chapter 1: Normal Distribution Curve",
+    "questionNumber": 3,
+    "sourcePage": 2,
+    "answerKeyPage": 16,
+    "questionStem": "In a perfectly normal distribution, the mean, median, and mode are:",
+    "options": [
+      "Located at different points on the x-axis.",
+      "Equal and located at the center of the distribution.",
+      "Used to calculate the standard deviation.",
+      "Always equal to zero."
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "Equal and located at the center of the distribution.",
+    "status": "EXCLUDED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q04",
+    "chapterId": 1,
+    "chapterTitle": "Chapter 1: Normal Distribution Curve",
+    "questionNumber": 4,
+    "sourcePage": 2,
+    "answerKeyPage": 16,
+    "questionStem": "According to the Empirical Rule (68-95-99.7 rule), what percentage of data in a normal distribution fall within two standard deviations of the mean?",
+    "options": [
+      "68%",
+      "95%",
+      "99.7%",
+      "50%"
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "95%",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q05",
+    "chapterId": 1,
+    "chapterTitle": "Chapter 1: Normal Distribution Curve",
+    "questionNumber": 5,
+    "sourcePage": 3,
+    "answerKeyPage": 16,
+    "questionStem": "In a normal distribution, the points where the curve changes from curving upward to curving downward are called:",
+    "options": [
+      "Tails",
+      "Peaks",
+      "Inflection Points",
+      "Z-scores"
+    ],
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "correctOptionText": "Inflection Points",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q06",
+    "chapterId": 1,
+    "chapterTitle": "Chapter 1: Normal Distribution Curve",
+    "questionNumber": 6,
+    "sourcePage": 3,
+    "answerKeyPage": 16,
+    "questionStem": "The total area under a normal distribution curve is always equal to:",
+    "options": [
+      "The mean (\u03bc)",
+      "The standard deviation (\u03c3)",
+      "1",
+      "100"
+    ],
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "correctOptionText": "1",
+    "status": "EXCLUDED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q07",
+    "chapterId": 1,
+    "chapterTitle": "Chapter 1: Normal Distribution Curve",
+    "questionNumber": 7,
+    "sourcePage": 3,
+    "answerKeyPage": 16,
+    "questionStem": "If the systolic blood pressure in a healthy adult population is normally distributed with a mean of 120 mmHg and a standard deviation of 10 mmHg, approximately 95% of individuals would have a blood pressure between:",
+    "options": [
+      "110 and 130 mmHg",
+      "100 and 140 mmHg",
+      "115 and 125 mmHg",
+      "90 and 150 mmHg"
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "100 and 140 mmHg",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q08",
+    "chapterId": 1,
+    "chapterTitle": "Chapter 1: Normal Distribution Curve",
+    "questionNumber": 8,
+    "sourcePage": 4,
+    "answerKeyPage": 16,
+    "questionStem": "A Z-score of -1.5 in a distribution of lab values indicates that the value is:",
+    "options": [
+      "1.5 times the mean.",
+      "1.5 standard deviations above the mean.",
+      "1.5 standard deviations below the mean.",
+      "In the top 1.5% of all values."
+    ],
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "correctOptionText": "1.5 standard deviations below the mean.",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q09",
+    "chapterId": 1,
+    "chapterTitle": "Chapter 1: Normal Distribution Curve",
+    "questionNumber": 9,
+    "sourcePage": 4,
+    "answerKeyPage": 16,
+    "questionStem": "The Standard Normal Distribution is defined as having:",
+    "options": [
+      "A mean of 1 and a standard deviation of 0.",
+      "A mean of 0 and a standard deviation of 1.",
+      "Any mean and a standard deviation of 1.",
+      "A mean and median of 0."
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "A mean of 0 and a standard deviation of 1.",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q10",
+    "chapterId": 1,
+    "chapterTitle": "Chapter 1: Normal Distribution Curve",
+    "questionNumber": 10,
+    "sourcePage": 4,
+    "answerKeyPage": 16,
+    "questionStem": "To convert a raw score (X) to a Z-score, you must:",
+    "options": [
+      "Multiply the raw score by the standard deviation.",
+      "Subtract the mean from the raw score and divide by the standard deviation.",
+      "Add the mean to the raw score and multiply by the standard deviation.",
+      "Divide the raw score by the mean."
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "Subtract the mean from the raw score and divide by the standard deviation.",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q11",
+    "chapterId": 1,
+    "chapterTitle": "Chapter 1: Normal Distribution Curve",
+    "questionNumber": 11,
+    "sourcePage": 5,
+    "answerKeyPage": 16,
+    "questionStem": "A medical student scores 88 on a test. The class average is 80 with a standard deviation of 4. What is the student's Z-score?",
+    "options": [
+      "2",
+      "1",
+      "-2",
+      "0.5"
+    ],
+    "correctLetter": "A",
+    "correctIndex": 0,
+    "correctOptionText": "2",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q12",
+    "chapterId": 1,
+    "chapterTitle": "Chapter 1: Normal Distribution Curve",
+    "questionNumber": 12,
+    "sourcePage": 5,
+    "answerKeyPage": 16,
+    "questionStem": "The tails of a normal distribution curve:",
+    "options": [
+      "Always touch the horizontal axis.",
+      "Are heavier than the tails of other distributions.",
+      "Represent the most probable outcomes.",
+      "Approach but never touch the horizontal axis."
+    ],
+    "correctLetter": "D",
+    "correctIndex": 3,
+    "correctOptionText": "Approach but never touch the horizontal axis.",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q13",
+    "chapterId": 1,
+    "chapterTitle": "Chapter 1: Normal Distribution Curve",
+    "questionNumber": 13,
+    "sourcePage": 5,
+    "answerKeyPage": 16,
+    "questionStem": "The Central Limit Theorem is important in hypothesis testing because it:",
+    "options": [
+      "Proves that all data is normally distributed.",
+      "Allows the use of normal distribution-based tests with large sample sizes, even if the original data isn't normal.",
+      "States that the mean is always the best measure of central tendency.",
+      "Calculates the standard deviation for any dataset."
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "Allows the use of normal distribution-based tests with large sample sizes, even if the original data isn't normal.",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q14",
+    "chapterId": 1,
+    "chapterTitle": "Chapter 1: Normal Distribution Curve",
+    "questionNumber": 14,
+    "sourcePage": 6,
+    "answerKeyPage": 16,
+    "questionStem": "Which of the following is a common application of the normal distribution in medicine?",
+    "options": [
+      "Modeling the distribution of a rare disease's incidence across many cities.",
+      "Describing the distribution of human lifespans.",
+      "Representing the range of normal values for a lab test like fasting blood glucose in a healthy population.",
+      "Charting the number of patients arriving at the ER each hour, which can be highly variable."
+    ],
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "correctOptionText": "Representing the range of normal values for a lab test like fasting blood glucose in a healthy population.",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q15",
+    "chapterId": 1,
+    "chapterTitle": "Chapter 1: Normal Distribution Curve",
+    "questionNumber": 15,
+    "sourcePage": 6,
+    "answerKeyPage": 16,
+    "questionStem": "A limitation of the normal distribution is that:",
+    "options": [
+      "It cannot be used for statistical inference.",
+      "Not all real-world data follows its pattern, such as heavily skewed data.",
+      "It is only applicable to social sciences.",
+      "It overestimates the probability of outliers."
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "Not all real-world data follows its pattern, such as heavily skewed data.",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q16",
+    "chapterId": 1,
+    "chapterTitle": "Chapter 1: Normal Distribution Curve",
+    "questionNumber": 16,
+    "sourcePage": 7,
+    "answerKeyPage": 16,
+    "questionStem": "A distribution where the tail extends more to the right, and most values are clustered on the left (e.g., household income) is described as:",
+    "options": [
+      "Negatively Skewed",
+      "Positively Skewed",
+      "Mesokurtic",
+      "Platykurtic"
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "Positively Skewed",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q17",
+    "chapterId": 1,
+    "chapterTitle": "Chapter 1: Normal Distribution Curve",
+    "questionNumber": 17,
+    "sourcePage": 7,
+    "answerKeyPage": 16,
+    "questionStem": "In a positively skewed distribution, the typical order of measures of central tendency (from left to right on the plot) is:",
+    "options": [
+      "Mean, Median, Mode",
+      "Mode, Median, Mean",
+      "Median, Mode, Mean",
+      "Mean, Mode, Median"
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "Mode, Median, Mean",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q18",
+    "chapterId": 1,
+    "chapterTitle": "Chapter 1: Normal Distribution Curve",
+    "questionNumber": 18,
+    "sourcePage": 7,
+    "answerKeyPage": 16,
+    "questionStem": "Kurtosis is a measure of a distribution's:",
+    "options": [
+      "Symmetry",
+      "Central Tendency",
+      "\"Tailedness\" and peak sharpness",
+      "Spread"
+    ],
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "correctOptionText": "\"Tailedness\" and peak sharpness",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q19",
+    "chapterId": 1,
+    "chapterTitle": "Chapter 1: Normal Distribution Curve",
+    "questionNumber": 19,
+    "sourcePage": 8,
+    "answerKeyPage": 16,
+    "questionStem": "A distribution with heavier tails and a sharper peak than a normal distribution (e.g., stock market returns) is called:",
+    "options": [
+      "Platykurtic",
+      "Mesokurtic",
+      "Leptokurtic",
+      "Skewed"
+    ],
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "correctOptionText": "Leptokurtic",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q20",
+    "chapterId": 1,
+    "chapterTitle": "Chapter 1: Normal Distribution Curve",
+    "questionNumber": 20,
+    "sourcePage": 8,
+    "answerKeyPage": 16,
+    "questionStem": "If a dataset of patient wait times is Leptokurtic, a researcher should expect:",
+    "options": [
+      "Fewer outliers than a normal distribution.",
+      "A flatter peak than a normal distribution.",
+      "More outliers than a normal distribution.",
+      "Perfect symmetry."
+    ],
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "correctOptionText": "More outliers than a normal distribution.",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q21",
+    "chapterId": 1,
+    "chapterTitle": "Chapter 1: Normal Distribution Curve",
+    "questionNumber": 21,
+    "sourcePage": 8,
+    "answerKeyPage": 16,
+    "questionStem": "The Empirical Rule states that 99.7% of data in a normal distribution fall within how many standard deviations of the mean?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "correctOptionText": "3",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q22",
+    "chapterId": 1,
+    "chapterTitle": "Chapter 1: Normal Distribution Curve",
+    "questionNumber": 22,
+    "sourcePage": 9,
+    "answerKeyPage": 16,
+    "questionStem": "If a set of lab results for a hormone level is normally distributed, we can expect that about 68% of the results will lie between:",
+    "options": [
+      "The minimum and maximum values.",
+      "The mean and one standard deviation above the mean.",
+      "One standard deviation below and one standard deviation above the mean.",
+      "Two standard deviations below and two standard deviations above the mean."
+    ],
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "correctOptionText": "One standard deviation below and one standard deviation above the mean.",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q23",
+    "chapterId": 1,
+    "chapterTitle": "Chapter 1: Normal Distribution Curve",
+    "questionNumber": 23,
+    "sourcePage": 9,
+    "answerKeyPage": 16,
+    "questionStem": "The formula Z = \\frac{x - \\mu}{\\sigma} is used to:",
+    "options": [
+      "Calculate the variance of a population.",
+      "Find the probability of a specific value, x.",
+      "Standardize a value from any normal distribution to a standard normal scale.",
+      "Calculate the mean of a sample."
+    ],
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "correctOptionText": "Standardize a value from any normal distribution to a standard normal scale.",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q24",
+    "chapterId": 1,
+    "chapterTitle": "Chapter 1: Normal Distribution Curve",
+    "questionNumber": 24,
+    "sourcePage": 9,
+    "answerKeyPage": 16,
+    "questionStem": "In a normal distribution of heart rates, a Z-score of 0 corresponds to a heart rate that is:",
+    "options": [
+      "The lowest possible value.",
+      "The average heart rate (the mean).",
+      "One standard deviation above the mean.",
+      "An outlier."
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "The average heart rate (the mean).",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q25",
+    "chapterId": 1,
+    "chapterTitle": "Chapter 1: Normal Distribution Curve",
+    "questionNumber": 25,
+    "sourcePage": 10,
+    "answerKeyPage": 16,
+    "questionStem": "Which of the following phenomena would LEAST likely follow a normal distribution?",
+    "options": [
+      "Heights of 25-year-old women.",
+      "IQ scores of a large, random group of adults.",
+      "Survival time after diagnosis for a terminal cancer with a very poor prognosis.",
+      "Measurement errors in a calibrated lab instrument."
+    ],
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "correctOptionText": "Survival time after diagnosis for a terminal cancer with a very poor prognosis.",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q26",
+    "chapterId": 1,
+    "chapterTitle": "Chapter 1: Normal Distribution Curve",
+    "questionNumber": 26,
+    "sourcePage": 10,
+    "answerKeyPage": 16,
+    "questionStem": "Skewness measures the ______ of a distribution.",
+    "options": [
+      "Peak",
+      "Tailedness",
+      "Symmetry",
+      "Central Value"
+    ],
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "correctOptionText": "Symmetry",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q27",
+    "chapterId": 1,
+    "chapterTitle": "Chapter 1: Normal Distribution Curve",
+    "questionNumber": 27,
+    "sourcePage": 10,
+    "answerKeyPage": 16,
+    "questionStem": "A distribution where the mean is less than the median is most likely:",
+    "options": [
+      "Positively Skewed",
+      "Negatively Skewed",
+      "Mesokurtic",
+      "Normal"
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "Negatively Skewed",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q28",
+    "chapterId": 1,
+    "chapterTitle": "Chapter 1: Normal Distribution Curve",
+    "questionNumber": 28,
+    "sourcePage": 11,
+    "answerKeyPage": 16,
+    "questionStem": "In quality control for manufacturing medical devices, the normal distribution is often used to model:",
+    "options": [
+      "The number of devices that fail completely.",
+      "The variability in product measurements, like the diameter of a stent.",
+      "The yes/no outcome of a device passing inspection.",
+      "The time until a device fails."
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "The variability in product measurements, like the diameter of a stent.",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q29",
+    "chapterId": 1,
+    "chapterTitle": "Chapter 1: Normal Distribution Curve",
+    "questionNumber": 29,
+    "sourcePage": 11,
+    "answerKeyPage": 16,
+    "questionStem": "The concept that allows us to use the normal distribution for making inferences about population means from sample means is the:",
+    "options": [
+      "Empirical Rule",
+      "Law of Large Numbers",
+      "Central Limit Theorem",
+      "Z-Score Transformation"
+    ],
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "correctOptionText": "Central Limit Theorem",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q30",
+    "chapterId": 1,
+    "chapterTitle": "Chapter 1: Normal Distribution Curve",
+    "questionNumber": 30,
+    "sourcePage": 11,
+    "answerKeyPage": 16,
+    "questionStem": "If you know that a patient's biomarker level has a Z-score of 3, you can conclude that their level is:",
+    "options": [
+      "Within the normal range for the population.",
+      "Three times the normal value.",
+      "Significantly higher than the population average.",
+      "At the population mean."
+    ],
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "correctOptionText": "Significantly higher than the population average.",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q31",
+    "chapterId": 1,
+    "chapterTitle": "Chapter 1: Normal Distribution Curve",
+    "questionNumber": 31,
+    "sourcePage": 12,
+    "answerKeyPage": 16,
+    "questionStem": "In a research study, the 95% confidence interval for the mean diastolic blood pressure is calculated as (78, 82). This interval is based on the properties of the normal distribution and means:",
+    "options": [
+      "95% of the sample population has a diastolic blood pressure between 78 and 82.",
+      "We are 95% confident that the true population mean diastolic blood pressure lies between 78 and 82.",
+      "There is a 5% probability that the mean is below 78.",
+      "The standard deviation of the sample is 4."
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "We are 95% confident that the true population mean diastolic blood pressure lies between 78 and 82.",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q32",
+    "chapterId": 1,
+    "chapterTitle": "Chapter 1: Normal Distribution Curve",
+    "questionNumber": 32,
+    "sourcePage": 12,
+    "answerKeyPage": 16,
+    "questionStem": "When the distribution of a medical variable, such as the time to recovery after a specific surgery, is positively skewed, which measure of central tendency is most appropriate to report?",
+    "options": [
+      "Mean",
+      "Mode",
+      "Median",
+      "Standard Deviation"
+    ],
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "correctOptionText": "Median",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q33",
+    "chapterId": 1,
+    "chapterTitle": "Chapter 1: Normal Distribution Curve",
+    "questionNumber": 33,
+    "sourcePage": 12,
+    "answerKeyPage": 16,
+    "questionStem": "If a diagnostic test score is normally distributed and a patient scores at the 84th percentile, approximately how many standard deviations is their score above the mean?",
+    "options": [
+      "1",
+      "2",
+      "3",
+      "0"
+    ],
+    "correctLetter": "A",
+    "correctIndex": 0,
+    "correctOptionText": "1",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q34",
+    "chapterId": 1,
+    "chapterTitle": "Chapter 1: Normal Distribution Curve",
+    "questionNumber": 34,
+    "sourcePage": 13,
+    "answerKeyPage": 16,
+    "questionStem": "The Central Limit Theorem is crucial for medical research because it:",
+    "options": [
+      "Guarantees that all sample data will be normally distributed.",
+      "Allows us to assume the sample mean is normally distributed if the sample size is large enough, even if the original data is not.",
+      "Ensures that the sample standard deviation is an unbiased estimator.",
+      "Proves that the empirical rule is true for any dataset."
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "Allows us to assume the sample mean is normally distributed if the sample size is large enough, even if the original data is not.",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q35",
+    "chapterId": 1,
+    "chapterTitle": "Chapter 1: Normal Distribution Curve",
+    "questionNumber": 35,
+    "sourcePage": 13,
+    "answerKeyPage": 16,
+    "questionStem": "A leptokurtic distribution of a biomarker in a population would suggest a higher probability of:",
+    "options": [
+      "Values very close to the mean.",
+      "Values evenly distributed across the range.",
+      "Extreme values (outliers) compared to a normal distribution.",
+      "A symmetric distribution."
+    ],
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "correctOptionText": "Extreme values (outliers) compared to a normal distribution.",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q36",
+    "chapterId": 1,
+    "chapterTitle": "Chapter 1: Normal Distribution Curve",
+    "questionNumber": 36,
+    "sourcePage": 13,
+    "answerKeyPage": 16,
+    "questionStem": "In a normal distribution, what is the probability that a randomly selected value lies above the mean?",
+    "options": [
+      "0%",
+      "50%",
+      "68%",
+      "95%"
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "50%",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q37",
+    "chapterId": 1,
+    "chapterTitle": "Chapter 1: Normal Distribution Curve",
+    "questionNumber": 37,
+    "sourcePage": 14,
+    "answerKeyPage": 16,
+    "questionStem": "A study on a new drug reports a p-value of 0.03 when comparing the treatment group to the placebo group. This interpretation directly relies on the assumption of a normal distribution for:",
+    "options": [
+      "The raw data of patient outcomes.",
+      "The sampling distribution of the test statistic.",
+      "The demographic data of the participants.",
+      "The side effects reported."
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "The sampling distribution of the test statistic.",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q38",
+    "chapterId": 1,
+    "chapterTitle": "Chapter 1: Normal Distribution Curve",
+    "questionNumber": 38,
+    "sourcePage": 14,
+    "answerKeyPage": 16,
+    "questionStem": "Body Mass Index (BMI) in a large adult population is often approximately normally distributed. If you know your BMI is at the mean, your Z-score is:",
+    "options": [
+      "0",
+      "1",
+      "-1",
+      "Cannot be determined"
+    ],
+    "correctLetter": "A",
+    "correctIndex": 0,
+    "correctOptionText": "0",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q39",
+    "chapterId": 1,
+    "chapterTitle": "Chapter 1: Normal Distribution Curve",
+    "questionNumber": 39,
+    "sourcePage": 14,
+    "answerKeyPage": 16,
+    "questionStem": "When creating a reference range for a lab value in healthy adults, a common method is to take the mean \u00b1 2 standard deviations. This method is most valid if:",
+    "options": [
+      "The data is positively skewed.",
+      "The data is normally distributed.",
+      "The sample size is small.",
+      "The data is bimodal."
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "The data is normally distributed.",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q40",
+    "chapterId": 1,
+    "chapterTitle": "Chapter 1: Normal Distribution Curve",
+    "questionNumber": 40,
+    "sourcePage": 15,
+    "answerKeyPage": 16,
+    "questionStem": "If the distribution of \"number of cigarettes smoked per day\" in a population is highly skewed, which of the following would be the least informative measure to report on its own?",
+    "options": [
+      "Median",
+      "Mode",
+      "Mean",
+      "Range"
+    ],
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "correctOptionText": "Mean",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q01",
+    "chapterId": 2,
+    "chapterTitle": "Chapter 2: Inferential Statistics I: Estimation",
+    "questionNumber": 1,
+    "sourcePage": 17,
+    "answerKeyPage": 31,
+    "questionStem": "What is the main goal of inferential statistics?",
+    "options": [
+      "To organize and summarize sample data",
+      "To describe and present data in a simplified manner",
+      "To generalize from a sample to a population and test hypotheses",
+      "To collect data from a population"
+    ],
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "correctOptionText": "To generalize from a sample to a population and test hypotheses",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q02",
+    "chapterId": 2,
+    "chapterTitle": "Chapter 2: Inferential Statistics I: Estimation",
+    "questionNumber": 2,
+    "sourcePage": 17,
+    "answerKeyPage": 31,
+    "questionStem": "Which of the following is an example of a descriptive statistic?",
+    "options": [
+      "Testing a hypothesis about a population mean",
+      "Calculating the average age of a sample of patients",
+      "Generalizing findings from a sample to a population",
+      "Predicting future outcomes based on a model"
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "Calculating the average age of a sample of patients",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q03",
+    "chapterId": 2,
+    "chapterTitle": "Chapter 2: Inferential Statistics I: Estimation",
+    "questionNumber": 3,
+    "sourcePage": 17,
+    "answerKeyPage": 31,
+    "questionStem": "The process of drawing conclusions about a population from sample data is known as:",
+    "options": [
+      "Data description",
+      "Statistical inference",
+      "Hypothesis formulation",
+      "Parameter calculation"
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "Statistical inference",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q04",
+    "chapterId": 2,
+    "chapterTitle": "Chapter 2: Inferential Statistics I: Estimation",
+    "questionNumber": 4,
+    "sourcePage": 17,
+    "answerKeyPage": 31,
+    "questionStem": "A characteristic we are interested in measuring in a study is called a:",
+    "options": [
+      "Parameter",
+      "Statistic",
+      "Variable",
+      "Sample"
+    ],
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "correctOptionText": "Variable",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q05",
+    "chapterId": 2,
+    "chapterTitle": "Chapter 2: Inferential Statistics I: Estimation",
+    "questionNumber": 5,
+    "sourcePage": 18,
+    "answerKeyPage": 31,
+    "questionStem": "The value of a variable computed from a sample is called a:",
+    "options": [
+      "Population parameter",
+      "Sample statistic",
+      "Data point",
+      "Inference"
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "Sample statistic",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q06",
+    "chapterId": 2,
+    "chapterTitle": "Chapter 2: Inferential Statistics I: Estimation",
+    "questionNumber": 6,
+    "sourcePage": 18,
+    "answerKeyPage": 31,
+    "questionStem": "The corresponding value of a variable in the population from which samples are taken is called a:",
+    "options": [
+      "Population parameter",
+      "Sample statistic",
+      "Estimate",
+      "Summary measure"
+    ],
+    "correctLetter": "A",
+    "correctIndex": 0,
+    "correctOptionText": "Population parameter",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q07",
+    "chapterId": 2,
+    "chapterTitle": "Chapter 2: Inferential Statistics I: Estimation",
+    "questionNumber": 7,
+    "sourcePage": 18,
+    "answerKeyPage": 31,
+    "questionStem": "Which symbol represents the population mean?",
+    "options": [
+      "\u03c7 (x-bar)",
+      "\u03bc (mu)",
+      "\u03c3 (sigma)",
+      "s"
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "\u03bc (mu)",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q08",
+    "chapterId": 2,
+    "chapterTitle": "Chapter 2: Inferential Statistics I: Estimation",
+    "questionNumber": 8,
+    "sourcePage": 19,
+    "answerKeyPage": 31,
+    "questionStem": "Which symbol represents the sample standard deviation?",
+    "options": [
+      "\u03c3 (sigma)",
+      "\u03c3\u00b2 (sigma squared)",
+      "s",
+      "\u03bc (mu)"
+    ],
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "correctOptionText": "s",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q09",
+    "chapterId": 2,
+    "chapterTitle": "Chapter 2: Inferential Statistics I: Estimation",
+    "questionNumber": 9,
+    "sourcePage": 19,
+    "answerKeyPage": 31,
+    "questionStem": "The problem that inferential statistics aims to solve stems from:",
+    "options": [
+      "The high cost of data analysis",
+      "Sampling variation and the fact we usually only take one sample",
+      "The difficulty of calculating parameters",
+      "The inability to describe data accurately"
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "Sampling variation and the fact we usually only take one sample",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q10",
+    "chapterId": 2,
+    "chapterTitle": "Chapter 2: Inferential Statistics I: Estimation",
+    "questionNumber": 10,
+    "sourcePage": 19,
+    "answerKeyPage": 31,
+    "questionStem": "The Central Limit Theorem primarily describes the relationship between:",
+    "options": [
+      "Two different sample statistics",
+      "Sample statistics and their corresponding population parameters",
+      "Descriptive and inferential statistics",
+      "The mean and the mode of a sample"
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "Sample statistics and their corresponding population parameters",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q11",
+    "chapterId": 2,
+    "chapterTitle": "Chapter 2: Inferential Statistics I: Estimation",
+    "questionNumber": 11,
+    "sourcePage": 20,
+    "answerKeyPage": 31,
+    "questionStem": "According to the Central Limit Theorem, if we take many samples of size n from a population, the distribution of the sample means will be:",
+    "options": [
+      "Skewed",
+      "Uniform",
+      "Normally distributed",
+      "Bimodal"
+    ],
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "correctOptionText": "Normally distributed",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q12",
+    "chapterId": 2,
+    "chapterTitle": "Chapter 2: Inferential Statistics I: Estimation",
+    "questionNumber": 12,
+    "sourcePage": 20,
+    "answerKeyPage": 31,
+    "questionStem": "The mean of the sampling distribution of the sample means is equal to:",
+    "options": [
+      "The sample standard deviation",
+      "The population mean (\u03bc)",
+      "The sample mean (x\u0304 )",
+      "The standard error"
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "The population mean (\u03bc)",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q13",
+    "chapterId": 2,
+    "chapterTitle": "Chapter 2: Inferential Statistics I: Estimation",
+    "questionNumber": 13,
+    "sourcePage": 20,
+    "answerKeyPage": 31,
+    "questionStem": "The standard deviation of the sampling distribution of the sample means is also known as the:",
+    "options": [
+      "Sample standard deviation",
+      "Population variance",
+      "Standard error",
+      "Confidence interval"
+    ],
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "correctOptionText": "Standard error",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q14",
+    "chapterId": 2,
+    "chapterTitle": "Chapter 2: Inferential Statistics I: Estimation",
+    "questionNumber": 14,
+    "sourcePage": 21,
+    "answerKeyPage": 31,
+    "questionStem": "The formula for the Standard Error of the mean (SE) is:",
+    "options": [
+      "SE = s\u00b2 / n",
+      "SE = s / \u221an",
+      "SE = \u03bc / \u03c3",
+      "SE = \u221a(s/n)"
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "SE = s / \u221an",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q15",
+    "chapterId": 2,
+    "chapterTitle": "Chapter 2: Inferential Statistics I: Estimation",
+    "questionNumber": 15,
+    "sourcePage": 21,
+    "answerKeyPage": 31,
+    "questionStem": "The Standard Error (SE) measures:",
+    "options": [
+      "The variability within a single sample",
+      "The accuracy of the sample mean as an estimate of the population mean",
+      "The difference between the mean and median",
+      "The spread of the population data"
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "The accuracy of the sample mean as an estimate of the population mean",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q16",
+    "chapterId": 2,
+    "chapterTitle": "Chapter 2: Inferential Statistics I: Estimation",
+    "questionNumber": 16,
+    "sourcePage": 21,
+    "answerKeyPage": 31,
+    "questionStem": "A larger Standard Error (SE) implies that the sample means are:",
+    "options": [
+      "More tightly clustered around the population mean",
+      "More spread out from the population mean",
+      "Unaffected by the sample size",
+      "Exactly equal to the population mean"
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "More spread out from the population mean",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q17",
+    "chapterId": 2,
+    "chapterTitle": "Chapter 2: Inferential Statistics I: Estimation",
+    "questionNumber": 17,
+    "sourcePage": 22,
+    "answerKeyPage": 31,
+    "questionStem": "The \"bad news\" from the Central Limit Theorem, as presented, is that:",
+    "options": [
+      "We cannot provide an exact single value for the population parameter",
+      "Sampling is always biased",
+      "Statistics are useless for inference",
+      "We need to sample the entire population"
+    ],
+    "correctLetter": "A",
+    "correctIndex": 0,
+    "correctOptionText": "We cannot provide an exact single value for the population parameter",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q18",
+    "chapterId": 2,
+    "chapterTitle": "Chapter 2: Inferential Statistics I: Estimation",
+    "questionNumber": 18,
+    "sourcePage": 22,
+    "answerKeyPage": 31,
+    "questionStem": "The \"good news\" from the Central Limit Theorem is that it allows us to provide:",
+    "options": [
+      "A definitive proof for our research hypothesis",
+      "An exact value for the population parameter",
+      "A range of values (confidence interval) for the population parameter",
+      "A description of the sample data"
+    ],
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "correctOptionText": "A range of values (confidence interval) for the population parameter",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q19",
+    "chapterId": 2,
+    "chapterTitle": "Chapter 2: Inferential Statistics I: Estimation",
+    "questionNumber": 19,
+    "sourcePage": 22,
+    "answerKeyPage": 31,
+    "questionStem": "A Confidence Interval (CI) provides a range of values that:",
+    "options": [
+      "Definitely contains the population parameter",
+      "Contains the sample statistic",
+      "Is likely to contain the population parameter with a specified level of confidence",
+      "Describes the variability within the sample"
+    ],
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "correctOptionText": "Is likely to contain the population parameter with a specified level of confidence",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q20",
+    "chapterId": 2,
+    "chapterTitle": "Chapter 2: Inferential Statistics I: Estimation",
+    "questionNumber": 20,
+    "sourcePage": 23,
+    "answerKeyPage": 31,
+    "questionStem": "The width of a confidence interval is influenced by all of the following EXCEPT:",
+    "options": [
+      "The sample size (n)",
+      "The variability in the sample (standard deviation)",
+      "The chosen confidence level (e.g., 95%)",
+      "The true value of the population parameter"
+    ],
+    "correctLetter": "D",
+    "correctIndex": 3,
+    "correctOptionText": "The true value of the population parameter",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q21",
+    "chapterId": 2,
+    "chapterTitle": "Chapter 2: Inferential Statistics I: Estimation",
+    "questionNumber": 21,
+    "sourcePage": 23,
+    "answerKeyPage": 31,
+    "questionStem": "For a 95% confidence interval for a mean, the Z-score value used is approximately:",
+    "options": [
+      "1.00",
+      "1.64",
+      "1.96",
+      "2.58"
+    ],
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "correctOptionText": "1.96",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q22",
+    "chapterId": 2,
+    "chapterTitle": "Chapter 2: Inferential Statistics I: Estimation",
+    "questionNumber": 22,
+    "sourcePage": 23,
+    "answerKeyPage": 31,
+    "questionStem": "For a 99% confidence interval for a mean, the Z-score value used is approximately:",
+    "options": [
+      "1.00",
+      "1.64",
+      "1.96",
+      "2.58"
+    ],
+    "correctLetter": "D",
+    "correctIndex": 3,
+    "correctOptionText": "2.58",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q23",
+    "chapterId": 2,
+    "chapterTitle": "Chapter 2: Inferential Statistics I: Estimation",
+    "questionNumber": 23,
+    "sourcePage": 24,
+    "answerKeyPage": 31,
+    "questionStem": "The Z-score in a confidence interval calculation represents:",
+    "options": [
+      "The number of standard errors the sample mean is from the population mean",
+      "The number of standard deviations a data point is from the sample mean",
+      "The desired confidence level",
+      "The sample size"
+    ],
+    "correctLetter": "A",
+    "correctIndex": 0,
+    "correctOptionText": "The number of standard errors the sample mean is from the population mean",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q24",
+    "chapterId": 2,
+    "chapterTitle": "Chapter 2: Inferential Statistics I: Estimation",
+    "questionNumber": 24,
+    "sourcePage": 24,
+    "answerKeyPage": 31,
+    "questionStem": "If you calculate a 95% confidence interval for a mean, it means that if you repeated the sampling process many times, approximately 95% of the intervals would contain the:",
+    "options": [
+      "Sample mean",
+      "Sample standard deviation",
+      "Population mean",
+      "Z-score"
+    ],
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "correctOptionText": "Population mean",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q25",
+    "chapterId": 2,
+    "chapterTitle": "Chapter 2: Inferential Statistics I: Estimation",
+    "questionNumber": 25,
+    "sourcePage": 24,
+    "answerKeyPage": 31,
+    "questionStem": "In a study, a sample of 100 men has a mean cholesterol level of 197 mg/dl and a standard deviation of 30 mg/dl. What is the Standard Error of the mean?",
+    "options": [
+      "30",
+      "3",
+      "0.3",
+      "10"
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "3",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q26",
+    "chapterId": 2,
+    "chapterTitle": "Chapter 2: Inferential Statistics I: Estimation",
+    "questionNumber": 26,
+    "sourcePage": 25,
+    "answerKeyPage": 31,
+    "questionStem": "Using the data from the previous question (mean=197, SD=30, n=100), the 95% CI for the population mean is approximately:",
+    "options": [
+      "(187, 207)",
+      "(191, 203)",
+      "(167, 227)",
+      "(194, 200)"
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "(191, 203)",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q27",
+    "chapterId": 2,
+    "chapterTitle": "Chapter 2: Inferential Statistics I: Estimation",
+    "questionNumber": 27,
+    "sourcePage": 25,
+    "answerKeyPage": 31,
+    "questionStem": "The correct interpretation of the 95% CI (191.12, 202.88) for the population mean cholesterol level is:",
+    "options": [
+      "95% of the men in the sample have cholesterol between 191.12 and 202.88 mg/dl.",
+      "We are 95% confident that the population mean cholesterol level lies between 191.12 and 202.88 mg/dl.",
+      "There is a 95% probability that the sample mean is between 191.12 and 202.88 mg/dl.",
+      "The sample mean cholesterol is 197 mg/dl 95% of the time."
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "We are 95% confident that the population mean cholesterol level lies between 191.12 and 202.88 mg/dl.",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q28",
+    "chapterId": 2,
+    "chapterTitle": "Chapter 2: Inferential Statistics I: Estimation",
+    "questionNumber": 28,
+    "sourcePage": 26,
+    "answerKeyPage": 31,
+    "questionStem": "The Central Limit Theorem can also be applied to estimate:",
+    "options": [
+      "Only population means",
+      "Only population proportions",
+      "Both population means and proportions",
+      "Only population variances"
+    ],
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "correctOptionText": "Both population means and proportions",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q29",
+    "chapterId": 2,
+    "chapterTitle": "Chapter 2: Inferential Statistics I: Estimation",
+    "questionNumber": 29,
+    "sourcePage": 26,
+    "answerKeyPage": 31,
+    "questionStem": "The formula for the Standard Error of a sample proportion (p) is:",
+    "options": [
+      "\u221a(p(1-p)/n)",
+      "p / \u221an",
+      "\u221a(p/n)",
+      "(1-p) / n"
+    ],
+    "correctLetter": "A",
+    "correctIndex": 0,
+    "correctOptionText": "\u221a(p(1-p)/n)",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q30",
+    "chapterId": 2,
+    "chapterTitle": "Chapter 2: Inferential Statistics I: Estimation",
+    "questionNumber": 30,
+    "sourcePage": 26,
+    "answerKeyPage": 31,
+    "questionStem": "In a sample of 100 people screened for diabetes, 25 were found to be diabetic. The sample proportion (p) is:",
+    "options": [
+      "0.25",
+      "0.50",
+      "0.75",
+      "25"
+    ],
+    "correctLetter": "A",
+    "correctIndex": 0,
+    "correctOptionText": "0.25",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q31",
+    "chapterId": 2,
+    "chapterTitle": "Chapter 2: Inferential Statistics I: Estimation",
+    "questionNumber": 31,
+    "sourcePage": 27,
+    "answerKeyPage": 31,
+    "questionStem": "For the diabetes sample (p=0.25, n=100), the Standard Error of the proportion is approximately:",
+    "options": [
+      "0.05",
+      "0.0433",
+      "0.25",
+      "0.005"
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "0.0433",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q32",
+    "chapterId": 2,
+    "chapterTitle": "Chapter 2: Inferential Statistics I: Estimation",
+    "questionNumber": 32,
+    "sourcePage": 27,
+    "answerKeyPage": 31,
+    "questionStem": "Using the diabetes data (p=0.25, n=100), the 95% CI for the population proportion is approximately:",
+    "options": [
+      "(0.20, 0.30)",
+      "(0.15, 0.35)",
+      "(0.17, 0.33)",
+      "(0.21, 0.29)"
+    ],
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "correctOptionText": "(0.17, 0.33)",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q33",
+    "chapterId": 2,
+    "chapterTitle": "Chapter 2: Inferential Statistics I: Estimation",
+    "questionNumber": 33,
+    "sourcePage": 27,
+    "answerKeyPage": 31,
+    "questionStem": "The correct way to report the prevalence of diabetes from the sample in scientific writing is:",
+    "options": [
+      "The prevalence was 25%.",
+      "The prevalence was 25% (SD=0.43).",
+      "The prevalence was 25% (95% CI: 17.1% \u2013 32.8%).",
+      "The prevalence was between 17.1% and 32.8%."
+    ],
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "correctOptionText": "The prevalence was 25% (95% CI: 17.1% \u2013 32.8%).",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q34",
+    "chapterId": 2,
+    "chapterTitle": "Chapter 2: Inferential Statistics I: Estimation",
+    "questionNumber": 34,
+    "sourcePage": 28,
+    "answerKeyPage": 31,
+    "questionStem": "What happens to the Standard Error (SE) and the Confidence Interval (CI) as the sample size (n) increases?",
+    "options": [
+      "SE increases, and CI becomes wider.",
+      "SE decreases, and CI becomes narrower.",
+      "SE remains the same, and CI remains the same.",
+      "SE decreases, and CI becomes wider."
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "SE decreases, and CI becomes narrower.",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q35",
+    "chapterId": 2,
+    "chapterTitle": "Chapter 2: Inferential Statistics I: Estimation",
+    "questionNumber": 35,
+    "sourcePage": 28,
+    "answerKeyPage": 31,
+    "questionStem": "A narrower confidence interval indicates:",
+    "options": [
+      "A less accurate estimate of the population parameter",
+      "A more accurate estimate of the population parameter",
+      "A lower confidence level",
+      "A smaller sample mean"
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "A more accurate estimate of the population parameter",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q36",
+    "chapterId": 2,
+    "chapterTitle": "Chapter 2: Inferential Statistics I: Estimation",
+    "questionNumber": 36,
+    "sourcePage": 28,
+    "answerKeyPage": 31,
+    "questionStem": "The concept that allows us to use a sample to estimate a population parameter with a known degree of uncertainty is the foundation of:",
+    "options": [
+      "Descriptive statistics",
+      "Data collection",
+      "Statistical estimation",
+      "Hypothesis formulation"
+    ],
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "correctOptionText": "Statistical estimation",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q37",
+    "chapterId": 2,
+    "chapterTitle": "Chapter 2: Inferential Statistics I: Estimation",
+    "questionNumber": 37,
+    "sourcePage": 29,
+    "answerKeyPage": 31,
+    "questionStem": "The key reason we can use the properties of the normal distribution for confidence intervals, even when the original population isn't normal, is due to the:",
+    "options": [
+      "Law of Large Numbers",
+      "Empirical Rule",
+      "Central Limit Theorem",
+      "Definition of Standard Error"
+    ],
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "correctOptionText": "Central Limit Theorem",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q38",
+    "chapterId": 2,
+    "chapterTitle": "Chapter 2: Inferential Statistics I: Estimation",
+    "questionNumber": 38,
+    "sourcePage": 29,
+    "answerKeyPage": 31,
+    "questionStem": "The sampling distribution is the distribution of a:",
+    "options": [
+      "Population parameter",
+      "Sample",
+      "Sample statistic (like the mean) from many samples",
+      "Single data point"
+    ],
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "correctOptionText": "Sample statistic (like the mean) from many samples",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q39",
+    "chapterId": 2,
+    "chapterTitle": "Chapter 2: Inferential Statistics I: Estimation",
+    "questionNumber": 39,
+    "sourcePage": 29,
+    "answerKeyPage": 31,
+    "questionStem": "The amount of deviation (difference) of each sample mean from the true population mean due to random chance is quantified by the:",
+    "options": [
+      "Sample Standard Deviation",
+      "Standard Error",
+      "Population Variance",
+      "Confidence Level"
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "Standard Error",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q40",
+    "chapterId": 2,
+    "chapterTitle": "Chapter 2: Inferential Statistics I: Estimation",
+    "questionNumber": 40,
+    "sourcePage": 30,
+    "answerKeyPage": 31,
+    "questionStem": "The primary purpose of calculating a confidence interval is to:",
+    "options": [
+      "Describe the sample data",
+      "Test a specific hypothesis",
+      "Estimate a population parameter with a margin of error",
+      "Calculate the p-value for a test"
+    ],
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "correctOptionText": "Estimate a population parameter with a margin of error",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q01",
+    "chapterId": 3,
+    "chapterTitle": "Chapter 3: Inferential Statistics II: Hypothesis Testing",
+    "questionNumber": 1,
+    "sourcePage": 32,
+    "answerKeyPage": 46,
+    "questionStem": "What is the primary purpose of hypothesis testing?",
+    "options": [
+      "To describe the sample data",
+      "To assess the plausibility of a hypothesis using sample data",
+      "To calculate population parameters exactly",
+      "To ensure a study has no errors"
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "To assess the plausibility of a hypothesis using sample data",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q02",
+    "chapterId": 3,
+    "chapterTitle": "Chapter 3: Inferential Statistics II: Hypothesis Testing",
+    "questionNumber": 2,
+    "sourcePage": 32,
+    "answerKeyPage": 46,
+    "questionStem": "The vital first step that every subsequent step in research depends on is:",
+    "options": [
+      "Data collection",
+      "Defining the research question",
+      "Calculating the p-value",
+      "Stating the null hypothesis"
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "Defining the research question",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q03",
+    "chapterId": 3,
+    "chapterTitle": "Chapter 3: Inferential Statistics II: Hypothesis Testing",
+    "questionNumber": 3,
+    "sourcePage": 32,
+    "answerKeyPage": 46,
+    "questionStem": "A hypothesis is best defined as:",
+    "options": [
+      "The raw data collected from a sample",
+      "A measurable statement derived from the research question that can be tested",
+      "The final conclusion of a research study",
+      "A proven fact about the population"
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "A measurable statement derived from the research question that can be tested",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q04",
+    "chapterId": 3,
+    "chapterTitle": "Chapter 3: Inferential Statistics II: Hypothesis Testing",
+    "questionNumber": 4,
+    "sourcePage": 33,
+    "answerKeyPage": 46,
+    "questionStem": "Hypothesis testing is fundamentally a:",
+    "options": [
+      "Data collection process",
+      "Decision-making process for evaluating a suggestion about a population",
+      "Method for descriptive statistics",
+      "Way to avoid sampling error"
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "Decision-making process for evaluating a suggestion about a population",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q05",
+    "chapterId": 3,
+    "chapterTitle": "Chapter 3: Inferential Statistics II: Hypothesis Testing",
+    "questionNumber": 5,
+    "sourcePage": 33,
+    "answerKeyPage": 46,
+    "questionStem": "The hypothesis that proposes \"no difference\" or \"no effect\" is called the:",
+    "options": [
+      "Research hypothesis",
+      "Alternative hypothesis",
+      "Null hypothesis",
+      "Statistical hypothesis"
+    ],
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "correctOptionText": "Null hypothesis",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q06",
+    "chapterId": 3,
+    "chapterTitle": "Chapter 3: Inferential Statistics II: Hypothesis Testing",
+    "questionNumber": 6,
+    "sourcePage": 33,
+    "answerKeyPage": 46,
+    "questionStem": "The hypothesis that directly contradicts the null hypothesis is the:",
+    "options": [
+      "Research hypothesis",
+      "Alternative hypothesis",
+      "Neutral hypothesis",
+      "Primary hypothesis"
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "Alternative hypothesis",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q07",
+    "chapterId": 3,
+    "chapterTitle": "Chapter 3: Inferential Statistics II: Hypothesis Testing",
+    "questionNumber": 7,
+    "sourcePage": 33,
+    "answerKeyPage": 46,
+    "questionStem": "If a researcher is testing whether a new drug is more effective than an old one, the alternative hypothesis (H\u2081) would state that the new drug's effect is:",
+    "options": [
+      "Equal to the old drug",
+      "Different from (not equal to) the old drug",
+      "Less than the old drug",
+      "The same as a placebo"
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "Different from (not equal to) the old drug",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q08",
+    "chapterId": 3,
+    "chapterTitle": "Chapter 3: Inferential Statistics II: Hypothesis Testing",
+    "questionNumber": 8,
+    "sourcePage": 34,
+    "answerKeyPage": 46,
+    "questionStem": "In hypothesis testing, the conclusion is always made about the:",
+    "options": [
+      "Sample statistic",
+      "Null hypothesis",
+      "Alternative hypothesis",
+      "Research question"
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "Null hypothesis",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q09",
+    "chapterId": 3,
+    "chapterTitle": "Chapter 3: Inferential Statistics II: Hypothesis Testing",
+    "questionNumber": 9,
+    "sourcePage": 34,
+    "answerKeyPage": 46,
+    "questionStem": "The two possible conclusions in hypothesis testing are:",
+    "options": [
+      "Accept H\u2080 or Accept H\u2081",
+      "Reject H\u2080 or Fail to Reject H\u2080",
+      "Prove H\u2081 or Disprove H\u2081",
+      "Significant or Insignificant"
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "Reject H\u2080 or Fail to Reject H\u2080",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q10",
+    "chapterId": 3,
+    "chapterTitle": "Chapter 3: Inferential Statistics II: Hypothesis Testing",
+    "questionNumber": 10,
+    "sourcePage": 34,
+    "answerKeyPage": 46,
+    "questionStem": "The statement \"The mean reduction in blood glucose level is the same in the two treatment groups\" is an example of a:",
+    "options": [
+      "Research question",
+      "Alternative hypothesis (H\u2081)",
+      "Null hypothesis (H\u2080)",
+      "Test statistic"
+    ],
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "correctOptionText": "Null hypothesis (H\u2080)",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q11",
+    "chapterId": 3,
+    "chapterTitle": "Chapter 3: Inferential Statistics II: Hypothesis Testing",
+    "questionNumber": 11,
+    "sourcePage": 35,
+    "answerKeyPage": 46,
+    "questionStem": "Which step in hypothesis testing involves calculating summary statistics like sample means and standard deviations?",
+    "options": [
+      "Stating the hypothesis",
+      "Data collection and summarization",
+      "Assessing the evidence",
+      "Making a decision"
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "Data collection and summarization",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q12",
+    "chapterId": 3,
+    "chapterTitle": "Chapter 3: Inferential Statistics II: Hypothesis Testing",
+    "questionNumber": 12,
+    "sourcePage": 35,
+    "answerKeyPage": 46,
+    "questionStem": "The probability of obtaining data similar to your sample results, assuming the null hypothesis is true, is known as the:",
+    "options": [
+      "Significance level",
+      "Test statistic",
+      "Power",
+      "P-value"
+    ],
+    "correctLetter": "D",
+    "correctIndex": 3,
+    "correctOptionText": "P-value",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q13",
+    "chapterId": 3,
+    "chapterTitle": "Chapter 3: Inferential Statistics II: Hypothesis Testing",
+    "questionNumber": 13,
+    "sourcePage": 35,
+    "answerKeyPage": 46,
+    "questionStem": "A very small p-value indicates that the observed data is:",
+    "options": [
+      "Very likely to the null hypothesis if it's true",
+      "Very unlikely to the null hypothesis if it's true",
+      "Proof that the alternative hypothesis is false",
+      "relevant to the null hypothesis"
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "Very unlikely to the null hypothesis if it's true",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q14",
+    "chapterId": 3,
+    "chapterTitle": "Chapter 3: Inferential Statistics II: Hypothesis Testing",
+    "questionNumber": 14,
+    "sourcePage": 36,
+    "answerKeyPage": 46,
+    "questionStem": "If the p-value is not very small, the researcher should:",
+    "options": [
+      "Reject the null hypothesis",
+      "Fail to reject the null hypothesis",
+      "Accept the alternative hypothesis",
+      "Change the research question"
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "Fail to reject the null hypothesis",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q15",
+    "chapterId": 3,
+    "chapterTitle": "Chapter 3: Inferential Statistics II: Hypothesis Testing",
+    "questionNumber": 15,
+    "sourcePage": 36,
+    "answerKeyPage": 46,
+    "questionStem": "The standard critical cut-off level (significance level) for a p- value is typically set at:",
+    "options": [
+      "P \u2264 0.01",
+      "P \u2264 0.05",
+      "P \u2264 0.10",
+      "P \u2264 0.50"
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "P \u2264 0.05",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q16",
+    "chapterId": 3,
+    "chapterTitle": "Chapter 3: Inferential Statistics II: Hypothesis Testing",
+    "questionNumber": 16,
+    "sourcePage": 36,
+    "answerKeyPage": 46,
+    "questionStem": "If the p-value of a test is calculated to be 0.03, the researcher should:",
+    "options": [
+      "Reject the null hypothesis",
+      "Fail to reject the null hypothesis",
+      "Accept the null hypothesis",
+      "Conclude there is no difference"
+    ],
+    "correctLetter": "A",
+    "correctIndex": 0,
+    "correctOptionText": "Reject the null hypothesis",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q17",
+    "chapterId": 3,
+    "chapterTitle": "Chapter 3: Inferential Statistics II: Hypothesis Testing",
+    "questionNumber": 17,
+    "sourcePage": 37,
+    "answerKeyPage": 46,
+    "questionStem": "If the p-value of a test is calculated to be 0.20, the researcher should:",
+    "options": [
+      "Reject the null hypothesis",
+      "Fail to reject the null hypothesis",
+      "Accept the alternative hypothesis",
+      "Conclude a significant difference exists"
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "Fail to reject the null hypothesis",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q18",
+    "chapterId": 3,
+    "chapterTitle": "Chapter 3: Inferential Statistics II: Hypothesis Testing",
+    "questionNumber": 18,
+    "sourcePage": 37,
+    "answerKeyPage": 46,
+    "questionStem": "A Type I error occurs when the researcher:",
+    "options": [
+      "Rejects a true null hypothesis",
+      "Fails to reject a false null hypothesis",
+      "Rejects a false null hypothesis",
+      "Fails to reject a true null hypothesis"
+    ],
+    "correctLetter": "A",
+    "correctIndex": 0,
+    "correctOptionText": "Rejects a true null hypothesis",
+    "status": "EXCLUDED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q19",
+    "chapterId": 3,
+    "chapterTitle": "Chapter 3: Inferential Statistics II: Hypothesis Testing",
+    "questionNumber": 19,
+    "sourcePage": 37,
+    "answerKeyPage": 46,
+    "questionStem": "The probability of making a Type I error is denoted by:",
+    "options": [
+      "\u03b2 (Beta)",
+      "1 - \u03b2",
+      "\u03b1 (Alpha)",
+      "P"
+    ],
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "correctOptionText": "\u03b1 (Alpha)",
+    "status": "EXCLUDED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q20",
+    "chapterId": 3,
+    "chapterTitle": "Chapter 3: Inferential Statistics II: Hypothesis Testing",
+    "questionNumber": 20,
+    "sourcePage": 38,
+    "answerKeyPage": 46,
+    "questionStem": "Concluding that diabetic patients are more hypertensive when in fact they are not in the population is an example of a:",
+    "options": [
+      "Type I Error",
+      "Type II Error",
+      "Correct Decision",
+      "Powerful result"
+    ],
+    "correctLetter": "A",
+    "correctIndex": 0,
+    "correctOptionText": "Type I Error",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q21",
+    "chapterId": 3,
+    "chapterTitle": "Chapter 3: Inferential Statistics II: Hypothesis Testing",
+    "questionNumber": 21,
+    "sourcePage": 38,
+    "answerKeyPage": 46,
+    "questionStem": "A Type I error is analogous to a ____________ in a clinical test.",
+    "options": [
+      "True negative",
+      "True positive",
+      "False positive",
+      "False negative"
+    ],
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "correctOptionText": "False positive",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q22",
+    "chapterId": 3,
+    "chapterTitle": "Chapter 3: Inferential Statistics II: Hypothesis Testing",
+    "questionNumber": 22,
+    "sourcePage": 38,
+    "answerKeyPage": 46,
+    "questionStem": "The predetermined probability for a Type I error (\u03b1) is usually set at:",
+    "options": [
+      "0.01 or less",
+      "0.05 or less",
+      "0.10 or less",
+      "0.20 or less"
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "0.05 or less",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q23",
+    "chapterId": 3,
+    "chapterTitle": "Chapter 3: Inferential Statistics II: Hypothesis Testing",
+    "questionNumber": 23,
+    "sourcePage": 39,
+    "answerKeyPage": 46,
+    "questionStem": "A Type II error occurs when the researcher:",
+    "options": [
+      "Rejects a true null hypothesis",
+      "Fails to reject a false null hypothesis",
+      "Rejects a false null hypothesis",
+      "Fails to reject a true null hypothesis"
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "Fails to reject a false null hypothesis",
+    "status": "EXCLUDED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q24",
+    "chapterId": 3,
+    "chapterTitle": "Chapter 3: Inferential Statistics II: Hypothesis Testing",
+    "questionNumber": 24,
+    "sourcePage": 39,
+    "answerKeyPage": 46,
+    "questionStem": "The probability of making a Type II error is denoted by:",
+    "options": [
+      "\u03b1 (Alpha)",
+      "1 - \u03b1",
+      "\u03b2 (Beta)",
+      "P"
+    ],
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "correctOptionText": "\u03b2 (Beta)",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q25",
+    "chapterId": 3,
+    "chapterTitle": "Chapter 3: Inferential Statistics II: Hypothesis Testing",
+    "questionNumber": 25,
+    "sourcePage": 39,
+    "answerKeyPage": 46,
+    "questionStem": "Concluding that there is no difference in hypertension between diabetics and non-diabetics when a difference actually exists in the population is an example of a:",
+    "options": [
+      "Type I Error",
+      "Type II Error",
+      "Correct Decision",
+      "Significant result"
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "Type II Error",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q26",
+    "chapterId": 3,
+    "chapterTitle": "Chapter 3: Inferential Statistics II: Hypothesis Testing",
+    "questionNumber": 26,
+    "sourcePage": 40,
+    "answerKeyPage": 46,
+    "questionStem": "A Type II error is analogous to a ____________ in a clinical test.",
+    "options": [
+      "True negative",
+      "True positive",
+      "False positive",
+      "False negative"
+    ],
+    "correctLetter": "D",
+    "correctIndex": 3,
+    "correctOptionText": "False negative",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q27",
+    "chapterId": 3,
+    "chapterTitle": "Chapter 3: Inferential Statistics II: Hypothesis Testing",
+    "questionNumber": 27,
+    "sourcePage": 40,
+    "answerKeyPage": 46,
+    "questionStem": "The predetermined probability for a Type II error (\u03b2) is usually set at:",
+    "options": [
+      "0.01 or less",
+      "0.05 or less",
+      "0.10 or less",
+      "0.20 or less"
+    ],
+    "correctLetter": "D",
+    "correctIndex": 3,
+    "correctOptionText": "0.20 or less",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q28",
+    "chapterId": 3,
+    "chapterTitle": "Chapter 3: Inferential Statistics II: Hypothesis Testing",
+    "questionNumber": 28,
+    "sourcePage": 40,
+    "answerKeyPage": 46,
+    "questionStem": "The power of a statistical test is defined as:",
+    "options": [
+      "The probability of making a Type I error",
+      "The probability of making a Type II error",
+      "The probability of rejecting a true null hypothesis",
+      "The probability of rejecting a false null hypothesis"
+    ],
+    "correctLetter": "D",
+    "correctIndex": 3,
+    "correctOptionText": "The probability of rejecting a false null hypothesis",
+    "status": "EXCLUDED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q29",
+    "chapterId": 3,
+    "chapterTitle": "Chapter 3: Inferential Statistics II: Hypothesis Testing",
+    "questionNumber": 29,
+    "sourcePage": 41,
+    "answerKeyPage": 46,
+    "questionStem": "If the probability of a Type II error (\u03b2) is 0.15, what is the power of the test?",
+    "options": [
+      "0.15",
+      "0.85",
+      "0.95",
+      "1.15"
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "0.85",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q30",
+    "chapterId": 3,
+    "chapterTitle": "Chapter 3: Inferential Statistics II: Hypothesis Testing",
+    "questionNumber": 30,
+    "sourcePage": 41,
+    "answerKeyPage": 46,
+    "questionStem": "A high power in a study (e.g., 0.90) is desirable because it means:",
+    "options": [
+      "There is a low chance of a false positive.",
+      "There is a high chance of detecting a true effect if it exists.",
+      "The p-value will be significant.",
+      "The null hypothesis is true."
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "There is a high chance of detecting a true effect if it exists.",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q31",
+    "chapterId": 3,
+    "chapterTitle": "Chapter 3: Inferential Statistics II: Hypothesis Testing",
+    "questionNumber": 31,
+    "sourcePage": 41,
+    "answerKeyPage": 46,
+    "questionStem": "In the context of hypothesis testing, \"failing to reject the null hypothesis\" is most similar to a jury finding of:",
+    "options": [
+      "Guilty",
+      "Not guilty",
+      "Innocent",
+      "Corrupt"
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "Not guilty",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q32",
+    "chapterId": 3,
+    "chapterTitle": "Chapter 3: Inferential Statistics II: Hypothesis Testing",
+    "questionNumber": 32,
+    "sourcePage": 42,
+    "answerKeyPage": 46,
+    "questionStem": "The p-value is a number that helps determine the:",
+    "options": [
+      "Effect size",
+      "Strength of evidence against the null hypothesis",
+      "Population mean",
+      "Sample size adequacy"
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "Strength of evidence against the null hypothesis",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q33",
+    "chapterId": 3,
+    "chapterTitle": "Chapter 3: Inferential Statistics II: Hypothesis Testing",
+    "questionNumber": 33,
+    "sourcePage": 42,
+    "answerKeyPage": 46,
+    "questionStem": "According to the text, a p-value is considered \"small\" and leads to rejecting the null hypothesis when it is:",
+    "options": [
+      "> 0.05",
+      "\u2264 0.05",
+      "= 1",
+      "< 0.50"
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "\u2264 0.05",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q34",
+    "chapterId": 3,
+    "chapterTitle": "Chapter 3: Inferential Statistics II: Hypothesis Testing",
+    "questionNumber": 34,
+    "sourcePage": 42,
+    "answerKeyPage": 46,
+    "questionStem": "A large p-value (e.g., 0.45) indicates:",
+    "options": [
+      "Strong evidence against the null hypothesis",
+      "Weak evidence against the null hypothesis",
+      "That the alternative hypothesis is true",
+      "That a Type I error has been made"
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "Weak evidence against the null hypothesis",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q35",
+    "chapterId": 3,
+    "chapterTitle": "Chapter 3: Inferential Statistics II: Hypothesis Testing",
+    "questionNumber": 35,
+    "sourcePage": 43,
+    "answerKeyPage": 46,
+    "questionStem": "Hypotheses in statistical testing are statements about:",
+    "options": [
+      "Sample statistics",
+      "P-values",
+      "Population parameters",
+      "Data collection methods"
+    ],
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "correctOptionText": "Population parameters",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q36",
+    "chapterId": 3,
+    "chapterTitle": "Chapter 3: Inferential Statistics II: Hypothesis Testing",
+    "questionNumber": 36,
+    "sourcePage": 43,
+    "answerKeyPage": 46,
+    "questionStem": "Which symbol is typically associated with the Null Hypothesis?",
+    "options": [
+      "\u2260",
+      ">",
+      "<",
+      "="
+    ],
+    "correctLetter": "D",
+    "correctIndex": 3,
+    "correctOptionText": "=",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q37",
+    "chapterId": 3,
+    "chapterTitle": "Chapter 3: Inferential Statistics II: Hypothesis Testing",
+    "questionNumber": 37,
+    "sourcePage": 43,
+    "answerKeyPage": 46,
+    "questionStem": "The process of hypothesis testing primarily involves an attempt to:",
+    "options": [
+      "Prove the alternative hypothesis",
+      "Prove the null hypothesis",
+      "Disprove or \"reject\" the null hypothesis",
+      "Disprove the research question"
+    ],
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "correctOptionText": "Disprove or \"reject\" the null hypothesis",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q38",
+    "chapterId": 3,
+    "chapterTitle": "Chapter 3: Inferential Statistics II: Hypothesis Testing",
+    "questionNumber": 38,
+    "sourcePage": 44,
+    "answerKeyPage": 46,
+    "questionStem": "The table comparing hypothesis testing to a museum alarm illustrates that a \"False Negative\" is a:",
+    "options": [
+      "Type I Error",
+      "Type II Error",
+      "Correct rejection of H\u2080",
+      "Correct failure to reject H\u2080"
+    ],
+    "correctLetter": "B",
+    "correctIndex": 1,
+    "correctOptionText": "Type II Error",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q39",
+    "chapterId": 3,
+    "chapterTitle": "Chapter 3: Inferential Statistics II: Hypothesis Testing",
+    "questionNumber": 39,
+    "sourcePage": 44,
+    "answerKeyPage": 46,
+    "questionStem": "In the museum alarm analogy, the alarm going off when there is no thief corresponds to a:",
+    "options": [
+      "True Positive",
+      "True Negative",
+      "False Positive (Type I Error)",
+      "False Negative (Type II Error)"
+    ],
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "correctOptionText": "False Positive (Type I Error)",
+    "status": "ACCEPTED"
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q40",
+    "chapterId": 3,
+    "chapterTitle": "Chapter 3: Inferential Statistics II: Hypothesis Testing",
+    "questionNumber": 40,
+    "sourcePage": 44,
+    "answerKeyPage": 46,
+    "questionStem": "The power of a test (1 - \u03b2) is the probability of:",
+    "options": [
+      "Correctly failing to reject a true null hypothesis",
+      "Incorrectly rejecting a true null hypothesis",
+      "Correctly rejecting a false null hypothesis",
+      "Incorrectly failing to reject a false null hypothesis"
+    ],
+    "correctLetter": "C",
+    "correctIndex": 2,
+    "correctOptionText": "Correctly rejecting a false null hypothesis",
+    "status": "ACCEPTED"
+  }
+]
