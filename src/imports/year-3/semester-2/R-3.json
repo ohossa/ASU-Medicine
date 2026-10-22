@@ -22,7 +22,7 @@
       "id": 1,
       "title": "Normal Distribution Curve",
       "subtitle": "Skewness and Kurtosis",
-      "emoji": "📊",
+      "emoji": "\ud83d\udcca",
       "page": 58,
       "lectureRange": "Practical 1",
       "subjects": [
@@ -86,8 +86,8 @@
               "type": "mcq",
               "lecture": 1,
               "text": "The mean of the standard normal distribution is:",
-              "explanation": "By definition, the standard normal distribution (Z-distribution) has a mean (μ) of 0 and a standard deviation (σ) of 1.",
-              "keyConcept": "Standard normal distribution parameters: μ = 0, σ = 1",
+              "explanation": "By definition, the standard normal distribution (Z-distribution) has a mean (\u03bc) of 0 and a standard deviation (\u03c3) of 1.",
+              "keyConcept": "Standard normal distribution parameters: \u03bc = 0, \u03c3 = 1",
               "options": [
                 "1",
                 "0",
@@ -101,7 +101,7 @@
               "type": "mcq",
               "lecture": 1,
               "text": "In a normal distribution, about 68% of the data falls within:",
-              "explanation": "Under the empirical (68-95-99.7) rule for a normal distribution, approximately 68.27% of observations fall within ±1 standard deviation of the mean (μ ± 1σ).",
+              "explanation": "Under the empirical (68-95-99.7) rule for a normal distribution, approximately 68.27% of observations fall within \u00b11 standard deviation of the mean (\u03bc \u00b1 1\u03c3).",
               "keyConcept": "Empirical rule: 68% within 1 SD",
               "options": [
                 "1 standard deviation",
@@ -116,7 +116,7 @@
               "type": "mcq",
               "lecture": 1,
               "text": "In a normal distribution, about 95% of the data falls within:",
-              "explanation": "Under the empirical rule, approximately 95.45% of observations in a normal distribution lie within ±2 standard deviations of the mean (strictly 95% within ±1.96σ).",
+              "explanation": "Under the empirical rule, approximately 95.45% of observations in a normal distribution lie within \u00b12 standard deviations of the mean (strictly 95% within \u00b11.96\u03c3).",
               "keyConcept": "Empirical rule: 95% within 2 SD",
               "options": [
                 "1 standard deviation",
@@ -131,7 +131,7 @@
               "type": "mcq",
               "lecture": 1,
               "text": "What does a z-score of 0 indicate?",
-              "explanation": "A z-score measures how many standard deviations an observation is from the mean (z = (x - μ)/σ). A z-score of 0 indicates that the observed value equals the population mean.",
+              "explanation": "A z-score measures how many standard deviations an observation is from the mean (z = (x - \u03bc)/\u03c3). A z-score of 0 indicates that the observed value equals the population mean.",
               "keyConcept": "Z-score definition and zero value",
               "options": [
                 "Below the mean",
@@ -206,7 +206,7 @@
               "type": "mcq",
               "lecture": 1,
               "text": "The heights of a population of adult women are normally distributed with a mean of 64 inches and a standard deviation of 3 inches. What is the z-score for a woman who is 70 inches tall?",
-              "explanation": "Using the formula z = (x - μ)/σ = (70 - 64)/3 = 6/3 = +2.0, meaning her height is exactly 2 standard deviations above the population mean.",
+              "explanation": "Using the formula z = (x - \u03bc)/\u03c3 = (70 - 64)/3 = 6/3 = +2.0, meaning her height is exactly 2 standard deviations above the population mean.",
               "keyConcept": "Z-score formula calculation",
               "options": [
                 "1.33",
@@ -221,7 +221,7 @@
               "type": "mcq",
               "lecture": 1,
               "text": "In a normal distribution with a mean of 100 and a standard deviation of 15, what percentage of values fall between 85 and 115?",
-              "explanation": "The interval [85, 115] corresponds to μ ± 1σ (100 ± 15). Under the empirical rule, approximately 68% of the data in a normal distribution falls within 1 standard deviation of the mean.",
+              "explanation": "The interval [85, 115] corresponds to \u03bc \u00b1 1\u03c3 (100 \u00b1 15). Under the empirical rule, approximately 68% of the data in a normal distribution falls within 1 standard deviation of the mean.",
               "keyConcept": "Empirical rule 1 SD interval",
               "options": [
                 "68%",
@@ -236,13 +236,583 @@
               "type": "mcq",
               "lecture": 1,
               "text": "The weights of bags of flour are normally distributed with a mean of 5 kg and a standard deviation of 0.5 kg. If a bag weighs 6 kg, what is its z-score?",
-              "explanation": "Using z = (x - μ)/σ = (6 - 5)/0.5 = 1/0.5 = +2.0.",
+              "explanation": "Using z = (x - \u03bc)/\u03c3 = (6 - 5)/0.5 = 1/0.5 = +2.0.",
               "keyConcept": "Z-score calculation",
               "options": [
                 "0.5",
                 "1",
                 "2",
                 "1.5"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "R3-CH1-CLIN-0015",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The normal distribution is a fundamental concept in statistics because:",
+              "explanation": "The normal (Gaussian) distribution is fundamental because many continuous biological, anatomical, and physiological variables (e.g., blood pressure, height, serum enzyme levels) naturally approximate this bell-shaped distribution due to the combined action of multiple minor genetic and environmental factors (central limit tendency). Distractor rationales: (a) Real-world data only approximate normality, they are rarely perfectly symmetrical. (c) Mean 0 and SD 1 define only the standard normal distribution, not all normal distributions. (d) Highly skewed or discrete count data cannot be modeled by a normal distribution.",
+              "keyConcept": "Normal distribution in real-world phenomena",
+              "options": [
+                "It is always perfectly symmetrical.",
+                "Many real-world biological and psychological phenomena approximate it.",
+                "It has a mean of 0 and a standard deviation of 1.",
+                "It can be used to describe any type of dataset."
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH1-CLIN-0016",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The two key parameters that define a normal distribution are:",
+              "explanation": "A normal distribution is completely defined by two key parameters: the mean (\u03bc), which determines the central location, and the standard deviation (\u03c3) or variance (\u03c3\u00b2), which determines the dispersion or spread. Distractor rationales: (a, d) Median, mode, and range are descriptive measures but do not mathematically specify the normal probability density function. (b) While variance and SD measure spread, neither locates the center.",
+              "keyConcept": "Normal distribution defining parameters",
+              "options": [
+                "Mean and Median",
+                "Variance and Standard Deviation",
+                "Mean and Standard Deviation",
+                "Mode and Range"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "R3-CH1-CLIN-0017",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "According to the Empirical Rule (68-95-99.7 rule), what percentage of data in a normal distribution fall within two standard deviations of the mean?",
+              "explanation": "According to the Empirical (68-95-99.7) Rule for a normal distribution, approximately 68.2% of data lie within \u03bc \u00b1 1\u03c3, 95.4% (commonly rounded to 95%) lie within \u03bc \u00b1 2\u03c3, and 99.7% lie within \u03bc \u00b1 3\u03c3. Distractor rationales: 68% corresponds to 1 SD; 99.7% corresponds to 3 SD; 50% represents the area on either side of the mean.",
+              "keyConcept": "Empirical Rule 2 SD coverage",
+              "options": [
+                "68%",
+                "95%",
+                "99.7%",
+                "50%"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH1-CLIN-0018",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "In a normal distribution, the points where the curve changes from curving upward to curving downward are called:",
+              "explanation": "In a normal distribution curve, the inflection points are the exact points where the concavity changes from concave downward (curving down) to concave upward (curving up). These points occur precisely at one standard deviation from the mean (\u03bc \u00b1 1\u03c3). Distractor rationales: Tails are the asymptotic extremes; the peak is the maximum at the mean; Z-scores are standardized values, not the geometric points of concavity change.",
+              "keyConcept": "Normal curve inflection points",
+              "options": [
+                "Tails",
+                "Peaks",
+                "Inflection Points",
+                "Z-scores"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "R3-CH1-CLIN-0019",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "If the systolic blood pressure in a healthy adult population is normally distributed with a mean of 120 mmHg and a standard deviation of 10 mmHg, approximately 95% of individuals would have a blood pressure between:",
+              "explanation": "Given \u03bc = 120 mmHg and \u03c3 = 10 mmHg, approximately 95% of individuals in a normal distribution fall within \u03bc \u00b1 2\u03c3. Calculating the interval: 120 - 2(10) = 100 mmHg and 120 + 2(10) = 140 mmHg. Thus, 95% have blood pressure between 100 and 140 mmHg. Distractor rationales: 110-130 mmHg corresponds to \u03bc \u00b1 1\u03c3 (68%); 115-125 mmHg corresponds to \u03bc \u00b1 0.5\u03c3 (38%); 90-150 mmHg corresponds to \u03bc \u00b1 3\u03c3 (99.7%).",
+              "keyConcept": "Empirical Rule blood pressure calculation",
+              "options": [
+                "110 and 130 mmHg",
+                "100 and 140 mmHg",
+                "115 and 125 mmHg",
+                "90 and 150 mmHg"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH1-CLIN-0020",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "A Z-score of -1.5 in a distribution of lab values indicates that the value is:",
+              "explanation": "A Z-score quantifies how many standard deviations a raw value lies from the mean. A negative Z-score of -1.5 indicates that the value is exactly 1.5 standard deviations below the mean (X = \u03bc - 1.5\u03c3). Distractor rationales: (a) It is not a multiplier of the mean. (b) Positive Z-scores lie above the mean. (d) A Z-score of -1.5 places the observation in the lower tail (~6.7th percentile), not the top 1.5%.",
+              "keyConcept": "Negative Z-score interpretation",
+              "options": [
+                "1.5 times the mean.",
+                "1.5 standard deviations above the mean.",
+                "1.5 standard deviations below the mean.",
+                "In the top 1.5% of all values."
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "R3-CH1-CLIN-0021",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The Standard Normal Distribution is defined as having:",
+              "explanation": "The Standard Normal Distribution (Z-distribution) is a standardized form of the normal distribution specifically scaled to have a mean (\u03bc) of 0 and a standard deviation (\u03c3) of 1. Distractor rationales: (a) Mean 1 and SD 0 is impossible because SD must be positive for a distribution. (c) A general normal distribution can have any mean, but the standard normal is uniquely fixed at \u03bc=0, \u03c3=1.",
+              "keyConcept": "Standard normal distribution parameters",
+              "options": [
+                "A mean of 1 and a standard deviation of 0.",
+                "A mean of 0 and a standard deviation of 1.",
+                "Any mean and a standard deviation of 1.",
+                "A mean and median of 0."
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH1-CLIN-0022",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "To convert a raw score (X) to a Z-score, you must:",
+              "explanation": "To convert a raw score (X) to a standardized Z-score, you subtract the population mean (\u03bc) to center the value at zero, then divide by the standard deviation (\u03c3) to scale it into standard deviation units: Z = (X - \u03bc) / \u03c3. Distractor rationales: Multiplying by SD or dividing raw score directly fails to standardize location and scale.",
+              "keyConcept": "Z-score transformation formula",
+              "options": [
+                "Multiply the raw score by the standard deviation.",
+                "Subtract the mean from the raw score and divide by the standard deviation.",
+                "Add the mean to the raw score and multiply by the standard deviation.",
+                "Divide the raw score by the mean."
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH1-CLIN-0023",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "A medical student scores 88 on a test. The class average is 80 with a standard deviation of 4. What is the student's Z-score?",
+              "explanation": "Using the Z-score formula Z = (X - \u03bc) / \u03c3: with raw score X = 88, class mean \u03bc = 80, and standard deviation \u03c3 = 4, Z = (88 - 80) / 4 = 8 / 4 = +2. The student scored 2 standard deviations above the class average. Distractor rationales: 1 would equal score 84; -2 would equal score 72; 0.5 would equal score 82.",
+              "keyConcept": "Z-score calculation example",
+              "options": [
+                "2",
+                "1",
+                "-2",
+                "0.5"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "R3-CH1-CLIN-0024",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The tails of a normal distribution curve:",
+              "explanation": "The tails of a normal distribution curve are asymptotic: they extend infinitely in both directions, approaching closer and closer to the horizontal x-axis without ever actually touching or intersecting it. Distractor rationales: (a) They never touch the axis. (b) Leptokurtic curves have heavier tails than the normal curve. (c) The tails represent the least probable extreme outcomes.",
+              "keyConcept": "Asymptotic nature of normal curve tails",
+              "options": [
+                "Always touch the horizontal axis.",
+                "Are heavier than the tails of other distributions.",
+                "Represent the most probable outcomes.",
+                "Approach but never touch the horizontal axis."
+              ],
+              "correctIndex": 3
+            },
+            {
+              "id": "R3-CH1-CLIN-0025",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The Central Limit Theorem is important in hypothesis testing because it:",
+              "explanation": "The Central Limit Theorem (CLT) is foundational because it guarantees that the sampling distribution of the sample mean approaches a normal distribution as sample size increases (typically n \u2265 30), regardless of the shape of the underlying population distribution. This allows researchers to use parametric statistical tests (e.g., Z-tests, t-tests) on large samples without requiring normal population data. Distractor rationales: (a) The CLT does not make raw data normal. (c) The median is often better for skewed data. (d) The CLT does not calculate standard deviation.",
+              "keyConcept": "Central Limit Theorem in hypothesis testing",
+              "options": [
+                "Proves that all data is normally distributed.",
+                "Allows the use of normal distribution-based tests with large sample sizes, even if the original data isn't normal.",
+                "States that the mean is always the best measure of central tendency.",
+                "Calculates the standard deviation for any dataset."
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH1-CLIN-0026",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following is a common application of the normal distribution in medicine?",
+              "explanation": "The most common medical application of the normal distribution is establishing reference ranges (normal ranges) for clinical laboratory tests (e.g., fasting blood glucose, serum electrolytes, hemoglobin), typically defined as the central 95% of healthy individuals (mean \u00b1 2 SD). Distractor rationales: (a, d) Rare diseases and emergency room arrival counts follow Poisson distributions. (b) Human lifespan is negatively skewed with infant/elderly peaks.",
+              "keyConcept": "Clinical application of normal distribution",
+              "options": [
+                "Modeling the distribution of a rare disease's incidence across many cities.",
+                "Describing the distribution of human lifespans.",
+                "Representing the range of normal values for a lab test like fasting blood glucose in a healthy population.",
+                "Charting the number of patients arriving at the ER each hour, which can be highly variable."
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "R3-CH1-CLIN-0027",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "A limitation of the normal distribution is that:",
+              "explanation": "A major limitation of the normal distribution is that many real-world clinical and biological datasets do not follow a symmetric bell shape; for example, hospital stay lengths, healthcare costs, and viral loads are heavily skewed and contain natural boundaries (e.g., zero). Distractor rationales: (a) The normal distribution is the cornerstone of parametric inference. (c) It applies widely in medicine and physical sciences. (d) It assigns very small probabilities to extreme outliers.",
+              "keyConcept": "Limitations of normal distribution",
+              "options": [
+                "It cannot be used for statistical inference.",
+                "Not all real-world data follows its pattern, such as heavily skewed data.",
+                "It is only applicable to social sciences.",
+                "It overestimates the probability of outliers."
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH1-CLIN-0028",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "A distribution where the tail extends more to the right, and most values are clustered on the left (e.g., household income) is described as:",
+              "explanation": "A distribution where the long tail extends to the right (towards positive infinity) and the bulk of values are clustered on the left is termed positively skewed (or right-skewed). Examples include household income and serum creatinine. Distractor rationales: A left-tailed distribution is negatively skewed; mesokurtic and platykurtic describe peakedness/tailedness, not asymmetry.",
+              "keyConcept": "Positively skewed distribution",
+              "options": [
+                "Negatively Skewed",
+                "Positively Skewed",
+                "Mesokurtic",
+                "Platykurtic"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH1-CLIN-0029",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "In a positively skewed distribution, the typical order of measures of central tendency (from left to right on the plot) is:",
+              "explanation": "In a positively (right) skewed distribution, extreme high values in the right tail pull the mean furthest to the right, while the mode remains at the peak on the left. The median lies between them. Therefore, from left to right on the horizontal axis, the order is: Mode < Median < Mean. Distractor rationales: Mean < Median < Mode is the order for negatively skewed data; in symmetric data, Mean = Median = Mode.",
+              "keyConcept": "Central tendency order in positive skew",
+              "options": [
+                "Mean, Median, Mode",
+                "Mode, Median, Mean",
+                "Median, Mode, Mean",
+                "Mean, Mode, Median"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH1-CLIN-0030",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Kurtosis is a measure of a distribution's:",
+              "explanation": "Kurtosis is a statistical measure of the 'tailedness' and peak sharpness of a probability distribution relative to a normal distribution. It reflects the propensity of a distribution to produce extreme outliers in its tails. Distractor rationales: Skewness measures symmetry; measures of central tendency include mean/median/mode; variance/SD measure spread.",
+              "keyConcept": "Definition of kurtosis",
+              "options": [
+                "Symmetry",
+                "Central Tendency",
+                "\"Tailedness\" and peak sharpness",
+                "Spread"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "R3-CH1-CLIN-0031",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "A distribution with heavier tails and a sharper peak than a normal distribution (e.g., stock market returns) is called:",
+              "explanation": "A leptokurtic distribution has positive excess kurtosis (> 0), characterized by a sharper, more slender central peak and heavier, fatter tails compared to a normal (mesokurtic) distribution. Distractor rationales: Platykurtic distributions have flatter peaks and thinner tails; mesokurtic is the standard normal baseline; skewed describes asymmetry.",
+              "keyConcept": "Leptokurtic distribution characteristics",
+              "options": [
+                "Platykurtic",
+                "Mesokurtic",
+                "Leptokurtic",
+                "Skewed"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "R3-CH1-CLIN-0032",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "If a dataset of patient wait times is Leptokurtic, a researcher should expect:",
+              "explanation": "Because a leptokurtic distribution has heavier, fatter tails than a Gaussian curve, it assigns higher probability density to extreme values. A researcher should expect a higher frequency of outliers compared to a normal distribution. Distractor rationales: Fewer outliers occur in platykurtic data; a flatter peak is platykurtic; kurtosis does not imply symmetry.",
+              "keyConcept": "Leptokurtic outliers expectation",
+              "options": [
+                "Fewer outliers than a normal distribution.",
+                "A flatter peak than a normal distribution.",
+                "More outliers than a normal distribution.",
+                "Perfect symmetry."
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "R3-CH1-CLIN-0033",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The Empirical Rule states that 99.7% of data in a normal distribution fall within how many standard deviations of the mean?",
+              "explanation": "Under the Empirical Rule (68-95-99.7 rule) for a Gaussian distribution, approximately 99.73% (nearly all) of data points fall within 3 standard deviations of the mean (\u03bc \u00b1 3\u03c3). Distractor rationales: 1 SD contains ~68%; 2 SD contains ~95%; 4 SD contains >99.99% of data.",
+              "keyConcept": "Empirical Rule 3 SD percentage",
+              "options": [
+                "1",
+                "2",
+                "3",
+                "4"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "R3-CH1-CLIN-0034",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "If a set of lab results for a hormone level is normally distributed, we can expect that about 68% of the results will lie between:",
+              "explanation": "In any normally distributed dataset, approximately 68.2% of the observations fall within one standard deviation below and one standard deviation above the mean (\u03bc \u00b1 1\u03c3). Distractor rationales: The range between min and max contains 100% of the sample; mean to +1 SD contains only 34.1%; \u03bc \u00b1 2 SD contains ~95%.",
+              "keyConcept": "Empirical Rule 68% boundary",
+              "options": [
+                "The minimum and maximum values.",
+                "The mean and one standard deviation above the mean.",
+                "One standard deviation below and one standard deviation above the mean.",
+                "Two standard deviations below and two standard deviations above the mean."
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "R3-CH1-CLIN-0035",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The formula Z = \\frac{x - \\mu}{\\sigma} is used to:",
+              "explanation": "The formula Z = (X - \u03bc) / \u03c3 standardizes an individual observation from any arbitrary normal distribution (with mean \u03bc and standard deviation \u03c3) onto the standard normal distribution scale (with mean 0 and SD 1), allowing direct comparison across different scales. Distractor rationales: Population variance is calculated using \u03c3\u00b2 = \u03a3(X - \u03bc)\u00b2 / N; finding probability requires looking up the Z-score in a standard normal CDF table.",
+              "keyConcept": "Z-score standardization purpose",
+              "options": [
+                "Calculate the variance of a population.",
+                "Find the probability of a specific value, x.",
+                "Standardize a value from any normal distribution to a standard normal scale.",
+                "Calculate the mean of a sample."
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "R3-CH1-CLIN-0036",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "In a normal distribution of heart rates, a Z-score of 0 corresponds to a heart rate that is:",
+              "explanation": "A Z-score of 0 indicates that the raw value is exactly zero standard deviations away from the mean, meaning the heart rate is precisely equal to the population mean (average). Distractor rationales: (a) The lowest possible value would have a large negative Z-score. (c) One SD above the mean has Z = +1. (d) An outlier typically requires |Z| > 2 or 3.",
+              "keyConcept": "Z-score of zero meaning",
+              "options": [
+                "The lowest possible value.",
+                "The average heart rate (the mean).",
+                "One standard deviation above the mean.",
+                "An outlier."
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH1-CLIN-0037",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Which of the following phenomena would LEAST likely follow a normal distribution?",
+              "explanation": "Survival time after diagnosis of a terminal cancer with very poor prognosis is strongly positively (right) skewed: most patients survive a short time, while a small tail of individuals survive longer. Biological decay and time-to-event data are modeled by exponential or Weibull distributions, not normal distributions. Distractor rationales: Adult female heights, adult IQ scores, and calibrated measurement errors all closely follow symmetric normal distributions.",
+              "keyConcept": "Non-normal distribution examples in medicine",
+              "options": [
+                "Heights of 25-year-old women.",
+                "IQ scores of a large, random group of adults.",
+                "Survival time after diagnosis for a terminal cancer with a very poor prognosis.",
+                "Measurement errors in a calibrated lab instrument."
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "R3-CH1-CLIN-0038",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Skewness measures the ______ of a distribution.",
+              "explanation": "Skewness is a statistical measure of the asymmetry or lack of symmetry of a probability distribution around its mean. A symmetric distribution has a skewness of 0. Distractor rationales: Kurtosis measures peak sharpness and tailedness; central tendency is measured by mean/median/mode.",
+              "keyConcept": "Definition of skewness",
+              "options": [
+                "Peak",
+                "Tailedness",
+                "Symmetry",
+                "Central Value"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "R3-CH1-CLIN-0039",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "A distribution where the mean is less than the median is most likely:",
+              "explanation": "In a negatively (left) skewed distribution, extreme low values stretch the tail to the left, pulling the mean down below the median (Mean < Median). Distractor rationales: In positively skewed distributions, Mean > Median; in normal and mesokurtic symmetric distributions, Mean = Median.",
+              "keyConcept": "Negatively skewed distribution relationship",
+              "options": [
+                "Positively Skewed",
+                "Negatively Skewed",
+                "Mesokurtic",
+                "Normal"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH1-CLIN-0040",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "In quality control for manufacturing medical devices, the normal distribution is often used to model:",
+              "explanation": "In manufacturing and quality engineering (such as stent diameters or syringe needle gauges), precise continuous physical dimensions exhibit random microscopic machining variations that follow a normal distribution centered at the target specification. Distractor rationales: Complete failure counts follow Poisson or binomial distributions; yes/no inspection pass/fail is binomial; time to failure follows an exponential or Weibull distribution.",
+              "keyConcept": "Normal distribution in medical device quality control",
+              "options": [
+                "The number of devices that fail completely.",
+                "The variability in product measurements, like the diameter of a stent.",
+                "The yes/no outcome of a device passing inspection.",
+                "The time until a device fails."
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH1-CLIN-0041",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The concept that allows us to use the normal distribution for making inferences about population means from sample means is the:",
+              "explanation": "The Central Limit Theorem (CLT) allows researchers to use sample means to make statistical inferences about population means because it proves that the sampling distribution of the sample mean is normally distributed around the true population mean \u03bc with standard error \u03c3/\u221an when sample size is adequate. Distractor rationales: The empirical rule only describes data proportions; the Law of Large Numbers states that sample mean converges to population mean, but does not provide distribution shape.",
+              "keyConcept": "Inference via Central Limit Theorem",
+              "options": [
+                "Empirical Rule",
+                "Law of Large Numbers",
+                "Central Limit Theorem",
+                "Z-Score Transformation"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "R3-CH1-CLIN-0042",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "If you know that a patient's biomarker level has a Z-score of 3, you can conclude that their level is:",
+              "explanation": "A Z-score of +3 indicates that the patient's biomarker level is 3 standard deviations above the population mean. In a normal distribution, values beyond 3 SD occur in less than 0.15% of the population, indicating a markedly elevated, statistically significant abnormal result. Distractor rationales: (a) Standard normal reference ranges span \u00b12 SD (95%); Z = 3 is outside normal limits. (b) A Z-score measures SD units, not a fold-change multiplier of the mean. (d) At the mean, Z = 0.",
+              "keyConcept": "Z-score of 3 interpretation",
+              "options": [
+                "Within the normal range for the population.",
+                "Three times the normal value.",
+                "Significantly higher than the population average.",
+                "At the population mean."
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "R3-CH1-CLIN-0043",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "In a research study, the 95% confidence interval for the mean diastolic blood pressure is calculated as (78, 82). This interval is based on the properties of the normal distribution and means:",
+              "explanation": "A 95% confidence interval of (78, 82) mmHg means that we are 95% confident that the true, unknown population mean diastolic blood pressure falls within this interval. In frequentist terms, 95% of identically constructed intervals from repeated random samples will contain the true population parameter. Distractor rationales: (a) The CI applies to the population mean, not 95% of individual patient values. (c) Frequentist CIs do not assign a probability directly to the parameter. (d) The interval width reflects the margin of error, not the sample standard deviation.",
+              "keyConcept": "Correct interpretation of 95% Confidence Interval",
+              "options": [
+                "95% of the sample population has a diastolic blood pressure between 78 and 82.",
+                "We are 95% confident that the true population mean diastolic blood pressure lies between 78 and 82.",
+                "There is a 5% probability that the mean is below 78.",
+                "The standard deviation of the sample is 4."
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH1-CLIN-0044",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "When the distribution of a medical variable, such as the time to recovery after a specific surgery, is positively skewed, which measure of central tendency is most appropriate to report?",
+              "explanation": "When data are skewed (such as postoperative recovery time or hospital length of stay), the median is the preferred measure of central tendency because it is robust (resistant) to extreme values and outliers, whereas the mean is distorted by the tail. Distractor rationales: The mean is biased by extreme values; the mode only reflects the most frequent single value; standard deviation measures dispersion and is also non-robust.",
+              "keyConcept": "Measure of central tendency for skewed data",
+              "options": [
+                "Mean",
+                "Mode",
+                "Median",
+                "Standard Deviation"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "R3-CH1-CLIN-0045",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "If a diagnostic test score is normally distributed and a patient scores at the 84th percentile, approximately how many standard deviations is their score above the mean?",
+              "explanation": "In a standard normal distribution, 50% of the distribution lies below the mean, and approximately 34.1% lies between the mean and +1 standard deviation. Therefore, 50% + 34.1% \u2248 84.1% of values lie below \u03bc + 1\u03c3, placing the 84th percentile at approximately +1 standard deviation (Z = +1). Distractor rationales: +2 SD corresponds to ~97.7th percentile; +3 SD corresponds to ~99.87th percentile; 0 SD corresponds to 50th percentile.",
+              "keyConcept": "Percentile to Z-score conversion (84th percentile)",
+              "options": [
+                "1",
+                "2",
+                "3",
+                "0"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "R3-CH1-CLIN-0046",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "The Central Limit Theorem is crucial for medical research because it:",
+              "explanation": "The critical power of the Central Limit Theorem in clinical research is that it allows investigators to apply normal distribution theory and parametric inferential methods to sample means, provided the sample size is sufficiently large (typically n \u2265 30), regardless of whether the original underlying population data are skewed or non-normal. Distractor rationales: (a) Sample raw data remain non-normal. (c) Unbiased estimation is a property of the sample variance formula (dividing by n-1), not the CLT. (d) The empirical rule only applies to normal data.",
+              "keyConcept": "Significance of CLT for non-normal data",
+              "options": [
+                "Guarantees that all sample data will be normally distributed.",
+                "Allows us to assume the sample mean is normally distributed if the sample size is large enough, even if the original data is not.",
+                "Ensures that the sample standard deviation is an unbiased estimator.",
+                "Proves that the empirical rule is true for any dataset."
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH1-CLIN-0047",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "A leptokurtic distribution of a biomarker in a population would suggest a higher probability of:",
+              "explanation": "A leptokurtic distribution possesses heavy tails (kurtosis > 3), which mathematically corresponds to an increased area in the tails. Consequently, there is a significantly higher probability of observing extreme values and outliers compared to a Gaussian distribution. Distractor rationales: (a) Platykurtic distributions have broader shoulder clustering; (b) Uniform distributions are evenly distributed; (d) Kurtosis describes tail weight, not symmetry.",
+              "keyConcept": "Outlier risk in leptokurtic distributions",
+              "options": [
+                "Values very close to the mean.",
+                "Values evenly distributed across the range.",
+                "Extreme values (outliers) compared to a normal distribution.",
+                "A symmetric distribution."
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "R3-CH1-CLIN-0048",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "In a normal distribution, what is the probability that a randomly selected value lies above the mean?",
+              "explanation": "Because the normal distribution is perfectly symmetrical about its mean, exactly half (50%) of the total area under the probability density curve lies above the mean, and the other 50% lies below the mean. Distractor rationales: 0% is impossible since the curve has infinite support; 68% is the probability within \u00b11 SD; 95% is the probability within \u00b12 SD.",
+              "keyConcept": "Probability above the mean in normal distribution",
+              "options": [
+                "0%",
+                "50%",
+                "68%",
+                "95%"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH1-CLIN-0049",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "A study on a new drug reports a p-value of 0.03 when comparing the treatment group to the placebo group. This interpretation directly relies on the assumption of a normal distribution for:",
+              "explanation": "When calculating a p-value for a hypothesis test (e.g., two-sample t-test or Z-test), the p-value represents the probability of observing a test statistic as extreme as the one calculated, assuming H\u2080 is true. This probability relies entirely on the known theoretical sampling distribution of the test statistic (which follows a normal or Student's t distribution via the CLT). Distractor rationales: (a) Raw patient outcomes need not be normal if n is large; (c, d) Demographics and side effects are descriptive characteristics, not the mathematical foundation of test statistics.",
+              "keyConcept": "Sampling distribution in p-value calculation",
+              "options": [
+                "The raw data of patient outcomes.",
+                "The sampling distribution of the test statistic.",
+                "The demographic data of the participants.",
+                "The side effects reported."
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH1-CLIN-0050",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "Body Mass Index (BMI) in a large adult population is often approximately normally distributed. If you know your BMI is at the mean, your Z-score is:",
+              "explanation": "By definition, the Z-score measures the distance between an individual value X and the population mean \u03bc in standard deviation units: Z = (X - \u03bc) / \u03c3. If a person's BMI equals the population mean (X = \u03bc), then Z = (\u03bc - \u03bc) / \u03c3 = 0. Distractor rationales: Z = 1 means BMI is 1 SD above average; Z = -1 means 1 SD below average.",
+              "keyConcept": "Z-score at the distribution mean",
+              "options": [
+                "0",
+                "1",
+                "-1",
+                "Cannot be determined"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "R3-CH1-CLIN-0051",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "When creating a reference range for a lab value in healthy adults, a common method is to take the mean \u00b1 2 standard deviations. This method is most valid if:",
+              "explanation": "Using mean \u00b1 2 standard deviations to establish a 95% reference range assumes that the biological parameter is normally distributed in the healthy population, because exactly 95.45% of a Gaussian distribution lies within 2 SD of the mean. If the data are skewed, this formula produces invalid intervals (even negative lower limits for positive biomarkers). Distractor rationales: Skewed and bimodal data require non-parametric percentile ranges (e.g., 2.5th to 97.5th percentiles); small samples require t-distribution adjustments.",
+              "keyConcept": "Assumptions for mean \u00b1 2 SD reference range",
+              "options": [
+                "The data is positively skewed.",
+                "The data is normally distributed.",
+                "The sample size is small.",
+                "The data is bimodal."
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH1-CLIN-0052",
+              "type": "mcq",
+              "lecture": 1,
+              "text": "If the distribution of \"number of cigarettes smoked per day\" in a population is highly skewed, which of the following would be the least informative measure to report on its own?",
+              "explanation": "Cigarette consumption per day is heavily right-skewed (many non-smokers/light smokers with a long tail of heavy pack-a-day smokers). In highly skewed distributions, the arithmetic mean is pulled towards extreme values and does not represent the typical individual, making it the least informative measure on its own. Median and interquartile range (IQR) provide much more reliable summaries. Distractor rationales: The median gives the true central 50th percentile; mode indicates the most common pattern; range shows the absolute limits.",
+              "keyConcept": "Non-robustness of mean in skewed data",
+              "options": [
+                "Median",
+                "Mode",
+                "Mean",
+                "Range"
               ],
               "correctIndex": 2
             }
@@ -262,7 +832,7 @@
       "id": 2,
       "title": "Inferential Statistics I: Estimation",
       "subtitle": "Central Limit Theorem & Confidence Intervals",
-      "emoji": "🎯",
+      "emoji": "\ud83c\udfaf",
       "page": 63,
       "lectureRange": "Practical 2",
       "subjects": [
@@ -332,9 +902,9 @@
               "id": "R3-CH2-CLIN-0005",
               "type": "truefalse",
               "lecture": 1,
-              "text": "If someone says \"52 ± 3,\" the 3 might be referring to the SD or it might be referring to the SEM.",
-              "explanation": "In medical and scientific literature, the notation 'mean ± X' is frequently used for either standard deviation (SD) or standard error of the mean (SEM), requiring authors to specify which metric is reported.",
-              "keyConcept": "Mean ± margin reporting ambiguity",
+              "text": "If someone says \"52 \u00b1 3,\" the 3 might be referring to the SD or it might be referring to the SEM.",
+              "explanation": "In medical and scientific literature, the notation 'mean \u00b1 X' is frequently used for either standard deviation (SD) or standard error of the mean (SEM), requiring authors to specify which metric is reported.",
+              "keyConcept": "Mean \u00b1 margin reporting ambiguity",
               "options": [
                 "True",
                 "False"
@@ -361,8 +931,8 @@
               "id": "R3-CH2-CLIN-0007",
               "type": "mcq",
               "lecture": 1,
-              "text": "The sample mean x̄ is called a ________ of the population mean μ.",
-              "explanation": "A point estimate is a single sample statistic (such as x̄) that serves as the best point-value estimate of an unknown population parameter (μ).",
+              "text": "The sample mean x\u0304 is called a ________ of the population mean \u03bc.",
+              "explanation": "A point estimate is a single sample statistic (such as x\u0304) that serves as the best point-value estimate of an unknown population parameter (\u03bc).",
               "keyConcept": "Point estimate definition",
               "options": [
                 "Point estimate",
@@ -381,7 +951,7 @@
               "explanation": "Confidence applies to the estimation method across repeated samples; we state that we are 95% confident that the fixed, unknown population parameter lies within the calculated interval.",
               "keyConcept": "Correct confidence interval interpretation statement",
               "options": [
-                "The probability that μ is between 1.15 and 4.20 is .95",
+                "The probability that \u03bc is between 1.15 and 4.20 is .95",
                 "We are 95% confident that the true mean number of televisions per American household is between 1.15 and 4.20",
                 "95% of all samples should have x-bars between 1.15 and 4.20",
                 "95% of all American households have between 1.15 and 4.20 televisions",
@@ -394,7 +964,7 @@
               "type": "mcq",
               "lecture": 1,
               "text": "Population A has a mean of 1,000 and a standard deviation of 70, while Population B has a mean of 1,200 and a standard deviation of 62. For samples of size 35, then the standard error of A will be:",
-              "explanation": "Standard error is calculated as SE = σ / √n. With equal sample sizes (n = 35), Population A has a higher standard deviation (σA = 70 > σB = 62), so SEA = 70/√35 ≈ 11.83 is larger than SEB = 62/√35 ≈ 10.48.",
+              "explanation": "Standard error is calculated as SE = \u03c3 / \u221an. With equal sample sizes (n = 35), Population A has a higher standard deviation (\u03c3A = 70 > \u03c3B = 62), so SEA = 70/\u221a35 \u2248 11.83 is larger than SEB = 62/\u221a35 \u2248 10.48.",
               "keyConcept": "Standard error comparison with equal sample size",
               "options": [
                 "Equal to that of B",
@@ -410,7 +980,7 @@
               "type": "mcq",
               "lecture": 1,
               "text": "Which of the following is most likely to result in a larger standard error if everything else is held constant?",
-              "explanation": "Standard error is inversely proportional to the square root of the sample size (SE = σ/√n). Therefore, reducing the sample size increases the standard error.",
+              "explanation": "Standard error is inversely proportional to the square root of the sample size (SE = \u03c3/\u221an). Therefore, reducing the sample size increases the standard error.",
               "keyConcept": "Sample size inversely related to standard error",
               "options": [
                 "a larger population mean",
@@ -426,7 +996,7 @@
               "type": "mcq",
               "lecture": 1,
               "text": "A researcher is going to draw a sample of 150 values from a population. The researcher wants to find probabilities for the sample mean. Which of the following statements is true?",
-              "explanation": "By the Central Limit Theorem, if the sample size is sufficiently large (n ≥ 30, and here n = 150), the sampling distribution of the sample mean is approximately normal regardless of the underlying population shape.",
+              "explanation": "By the Central Limit Theorem, if the sample size is sufficiently large (n \u2265 30, and here n = 150), the sampling distribution of the sample mean is approximately normal regardless of the underlying population shape.",
               "keyConcept": "Central Limit Theorem sample size condition",
               "options": [
                 "The central limit theorem can't be used because you don't know the distribution of the population",
@@ -442,7 +1012,7 @@
               "type": "mcq",
               "lecture": 1,
               "text": "You draw a sample and calculate the sample mean. Which of the following is true?",
-              "explanation": "Larger samples reduce sampling variability (SE = σ/√n), clustering sample means tighter around the true population mean and producing greater precision.",
+              "explanation": "Larger samples reduce sampling variability (SE = \u03c3/\u221an), clustering sample means tighter around the true population mean and producing greater precision.",
               "keyConcept": "Precision increases with larger sample size",
               "options": [
                 "The sample mean will always be smaller than the population mean because the sample is only part of the population",
@@ -458,7 +1028,7 @@
               "type": "mcq",
               "lecture": 1,
               "text": "Suppose 10,000 random samples of the same size are drawn from a population having M=50 & SD=4. Each sample's mean is computed and then displayed in a sampling distribution. About what fraction of the sample means would lie within one standard error of 50?",
-              "explanation": "By the empirical rule of the normal distribution, approximately 68.27% of observations fall within ±1 standard error of the mean. The fraction 2/3 ≈ 66.7% is the closest standard fractional approximation to 68%.",
+              "explanation": "By the empirical rule of the normal distribution, approximately 68.27% of observations fall within \u00b11 standard error of the mean. The fraction 2/3 \u2248 66.7% is the closest standard fractional approximation to 68%.",
               "keyConcept": "Empirical rule 1 SE fraction",
               "options": [
                 "1/4",
@@ -486,6 +1056,606 @@
               "explanation": "For proportions, a confidence interval is interpreted as 95% confidence that the true population proportion lies within the specified bounds [61.2%, 66.8%].",
               "keyConcept": "Interpretation of confidence interval for a population proportion",
               "modelAnswer": "We are 95% confident that the true population proportion of all university students who always wear their seatbelt lies between 0.612 and 0.668 (or between 61.2% and 66.8%)."
+            },
+            {
+              "id": "R3-CH2-CLIN-0016",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "What is the main goal of inferential statistics?",
+              "explanation": "The fundamental objective of inferential statistics is to make valid generalizations, estimates, and predictions about an entire target population based on data collected from a representative sample, and to test hypotheses about population parameters. Distractor rationales: (a, b) Organizing and summarizing data is the domain of descriptive statistics; (d) Data collection is a logistical research step, not the statistical goal of inference.",
+              "keyConcept": "Primary goal of inferential statistics",
+              "options": [
+                "To organize and summarize sample data",
+                "To describe and present data in a simplified manner",
+                "To generalize from a sample to a population and test hypotheses",
+                "To collect data from a population"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "R3-CH2-CLIN-0017",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "Which of the following is an example of a descriptive statistic?",
+              "explanation": "Descriptive statistics summarize and describe the features of a specific dataset without drawing broader conclusions about a larger population. Calculating the sample mean age describes only the observed sample. Distractor rationales: Testing hypotheses, generalizing findings, and predicting future population outcomes all require inferential statistics.",
+              "keyConcept": "Descriptive vs inferential statistics",
+              "options": [
+                "Testing a hypothesis about a population mean",
+                "Calculating the average age of a sample of patients",
+                "Generalizing findings from a sample to a population",
+                "Predicting future outcomes based on a model"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH2-CLIN-0018",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "The process of drawing conclusions about a population from sample data is known as:",
+              "explanation": "Statistical inference is the formal mathematical process of deducing properties of an underlying population distribution by analyzing sample data, encompassing point estimation, confidence intervals, and hypothesis testing. Distractor rationales: Data description refers to descriptive statistics; hypothesis formulation is setting up claims; parameter calculation is only possible when studying the entire census.",
+              "keyConcept": "Definition of statistical inference",
+              "options": [
+                "Data description",
+                "Statistical inference",
+                "Hypothesis formulation",
+                "Parameter calculation"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH2-CLIN-0019",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "A characteristic we are interested in measuring in a study is called a:",
+              "explanation": "In clinical research, a variable is any characteristic, attribute, or biological quantity that can take on different values among different subjects in a study (e.g., systolic blood pressure, sex, treatment status). Distractor rationales: A parameter is a fixed population summary; a statistic is a sample summary; a sample is the group of participants.",
+              "keyConcept": "Definition of a variable",
+              "options": [
+                "Parameter",
+                "Statistic",
+                "Variable",
+                "Sample"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "R3-CH2-CLIN-0020",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "The value of a variable computed from a sample is called a:",
+              "explanation": "A sample statistic is any numerical summary value (such as sample mean x\u0304, sample variance s\u00b2, or sample proportion p) calculated directly from sample observations. Distractor rationales: Population parameter is the true value in the entire population; a data point is an individual observation; an inference is the conclusion drawn.",
+              "keyConcept": "Definition of sample statistic",
+              "options": [
+                "Population parameter",
+                "Sample statistic",
+                "Data point",
+                "Inference"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH2-CLIN-0021",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "The corresponding value of a variable in the population from which samples are taken is called a:",
+              "explanation": "A population parameter is a numerical characteristic or constant (such as population mean \u03bc or population standard deviation \u03c3) that describes the entire population of interest. Distractor rationales: A sample statistic describes only a subset (sample); an estimate is the calculated approximation of a parameter; a summary measure is an umbrella term.",
+              "keyConcept": "Definition of population parameter",
+              "options": [
+                "Population parameter",
+                "Sample statistic",
+                "Estimate",
+                "Summary measure"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "R3-CH2-CLIN-0022",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "Which symbol represents the population mean?",
+              "explanation": "The Greek letter \u03bc (mu) is the standard statistical notation representing the true population mean. Distractor rationales: x\u0304 (x-bar) represents the sample mean; \u03c3 (sigma) represents the population standard deviation; s represents the sample standard deviation.",
+              "keyConcept": "Symbol for population mean",
+              "options": [
+                "\u03c7 (x-bar)",
+                "\u03bc (mu)",
+                "\u03c3 (sigma)",
+                "s"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH2-CLIN-0023",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "Which symbol represents the sample standard deviation?",
+              "explanation": "The Latin letter s represents the sample standard deviation. Distractor rationales: \u03c3 (sigma) represents the population standard deviation; \u03c3\u00b2 represents the population variance; \u03bc represents the population mean.",
+              "keyConcept": "Symbol for sample standard deviation",
+              "options": [
+                "\u03c3 (sigma)",
+                "\u03c3\u00b2 (sigma squared)",
+                "s",
+                "\u03bc (mu)"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "R3-CH2-CLIN-0024",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "The problem that inferential statistics aims to solve stems from:",
+              "explanation": "Inferential statistics is necessary because of sampling variation: different random samples drawn from the same population yield different sample statistics, and researchers typically have the resources to collect only a single sample. Inferential statistics quantifies this uncertainty. Distractor rationales: High cost and computational challenges exist but are not the theoretical mathematical origin of inference; descriptive statistics already describe data accurately.",
+              "keyConcept": "Origin of inferential problem (sampling variation)",
+              "options": [
+                "The high cost of data analysis",
+                "Sampling variation and the fact we usually only take one sample",
+                "The difficulty of calculating parameters",
+                "The inability to describe data accurately"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH2-CLIN-0025",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "The Central Limit Theorem primarily describes the relationship between:",
+              "explanation": "The Central Limit Theorem bridges sample data and population truth by defining the mathematical relationship between sample statistics (specifically sample means x\u0304) and their corresponding population parameters (population mean \u03bc and standard error \u03c3/\u221an). Distractor rationales: CLT does not contrast sample statistics with each other, nor does it address descriptive statistics or sample modes.",
+              "keyConcept": "Central Limit Theorem core relationship",
+              "options": [
+                "Two different sample statistics",
+                "Sample statistics and their corresponding population parameters",
+                "Descriptive and inferential statistics",
+                "The mean and the mode of a sample"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH2-CLIN-0026",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "According to the Central Limit Theorem, if we take many samples of size n from a population, the distribution of the sample means will be:",
+              "explanation": "According to the Central Limit Theorem, if repeated random samples of size n are drawn from any population with mean \u03bc and finite variance \u03c3\u00b2, the sampling distribution of the sample mean (x\u0304) approaches a normal distribution as n becomes large (n \u2265 30). Distractor rationales: The sampling distribution becomes bell-shaped normal, not skewed, uniform, or bimodal.",
+              "keyConcept": "Sampling distribution shape under CLT",
+              "options": [
+                "Skewed",
+                "Uniform",
+                "Normally distributed",
+                "Bimodal"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "R3-CH2-CLIN-0027",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "The mean of the sampling distribution of the sample means is equal to:",
+              "explanation": "A fundamental property of the sampling distribution of sample means is that it is unbiased: the mean of all possible sample means (the expected value E[x\u0304]) is exactly equal to the true population mean (\u03bc). Distractor rationales: Sample standard deviation and standard error measure dispersion, not the central location of the sampling distribution.",
+              "keyConcept": "Expected value of sampling distribution of means",
+              "options": [
+                "The sample standard deviation",
+                "The population mean (\u03bc)",
+                "The sample mean (x\u0304 )",
+                "The standard error"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH2-CLIN-0028",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "The standard deviation of the sampling distribution of the sample means is also known as the:",
+              "explanation": "The standard deviation of the sampling distribution of sample means is termed the Standard Error of the Mean (SEM or SE). It quantifies the expected variability of sample means around the true population mean. Distractor rationales: Sample standard deviation measures spread within a single sample; population variance is \u03c3\u00b2; confidence interval is a range of estimates.",
+              "keyConcept": "Definition of standard error",
+              "options": [
+                "Sample standard deviation",
+                "Population variance",
+                "Standard error",
+                "Confidence interval"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "R3-CH2-CLIN-0029",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "The formula for the Standard Error of the mean (SE) is:",
+              "explanation": "The Standard Error of the mean (SE) is calculated by dividing the sample standard deviation (s) by the square root of the sample size (n): SE = s / \u221an. As sample size increases, SE decreases inversely with the square root of n. Distractor rationales: s\u00b2/n is the sample variance of the mean; \u03bc/\u03c3 is the inverse of the coefficient of variation; \u221a(s/n) is mathematically incorrect.",
+              "keyConcept": "Formula for Standard Error of the mean",
+              "options": [
+                "SE = s\u00b2 / n",
+                "SE = s / \u221an",
+                "SE = \u03bc / \u03c3",
+                "SE = \u221a(s/n)"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH2-CLIN-0030",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "The Standard Error (SE) measures:",
+              "explanation": "The Standard Error measures the precision and accuracy of the sample mean as an estimate of the true population mean, reflecting the degree of sampling error expected by chance. Distractor rationales: Variability within a single sample is measured by the sample standard deviation (s); spread of the population data is measured by \u03c3.",
+              "keyConcept": "What Standard Error measures",
+              "options": [
+                "The variability within a single sample",
+                "The accuracy of the sample mean as an estimate of the population mean",
+                "The difference between the mean and median",
+                "The spread of the population data"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH2-CLIN-0031",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "A larger Standard Error (SE) implies that the sample means are:",
+              "explanation": "A larger Standard Error implies greater variability among sample means, meaning that individual sample means will be more widely dispersed and spread out from the true population mean. Distractor rationales: Tightly clustered means indicate a small SE; SE is heavily dependent on sample size (inversely proportional to \u221an); sample means fluctuate randomly and are rarely exactly equal to \u03bc.",
+              "keyConcept": "Impact of larger Standard Error",
+              "options": [
+                "More tightly clustered around the population mean",
+                "More spread out from the population mean",
+                "Unaffected by the sample size",
+                "Exactly equal to the population mean"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH2-CLIN-0032",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "The \"bad news\" from the Central Limit Theorem, as presented, is that:",
+              "explanation": "The 'bad news' of sampling theory is that because of random sampling error, a single sample mean cannot guarantee the exact single value of the population parameter; there is inherent uncertainty in any point estimate. Distractor rationales: Sampling is not inherently biased if done randomly; statistics are highly useful for inference; whole-population sampling is rarely required.",
+              "keyConcept": "Implication of CLT: uncertainty in point estimates",
+              "options": [
+                "We cannot provide an exact single value for the population parameter",
+                "Sampling is always biased",
+                "Statistics are useless for inference",
+                "We need to sample the entire population"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "R3-CH2-CLIN-0033",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "The \"good news\" from the Central Limit Theorem is that it allows us to provide:",
+              "explanation": "The 'good news' of the Central Limit Theorem is that because the sampling distribution of the mean is predictable and normal, researchers can construct a confidence interval\u2014a quantified range of plausible values that captures the population parameter with a chosen level of confidence (e.g., 95%). Distractor rationales: Statistics deals with probabilistic evidence, not definitive proof; point estimates do not give exact parameter values.",
+              "keyConcept": "Implication of CLT: confidence intervals",
+              "options": [
+                "A definitive proof for our research hypothesis",
+                "An exact value for the population parameter",
+                "A range of values (confidence interval) for the population parameter",
+                "A description of the sample data"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "R3-CH2-CLIN-0034",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "A Confidence Interval (CI) provides a range of values that:",
+              "explanation": "A Confidence Interval (CI) provides an estimated range of values calculated from sample data that is likely to encompass the unknown population parameter with a pre-specified confidence level (such as 95% or 99%). Distractor rationales: A CI does not guarantee parameter containment with 100% certainty; it is built around the sample statistic, but its purpose is to bracket the population parameter.",
+              "keyConcept": "Definition of Confidence Interval",
+              "options": [
+                "Definitely contains the population parameter",
+                "Contains the sample statistic",
+                "Is likely to contain the population parameter with a specified level of confidence",
+                "Describes the variability within the sample"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "R3-CH2-CLIN-0035",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "The width of a confidence interval is influenced by all of the following EXCEPT:",
+              "explanation": "The width of a confidence interval (2 \u00b7 Z \u00b7 s / \u221an) is determined by sample size (n), sample variability (s), and the chosen confidence level (Z). The true unknown value of the population parameter itself has no effect on the interval's width. Distractor rationales: Increasing n narrows the CI; increasing variability widens the CI; increasing confidence level (e.g., 99% vs 95%) widens the CI.",
+              "keyConcept": "Factors influencing Confidence Interval width",
+              "options": [
+                "The sample size (n)",
+                "The variability in the sample (standard deviation)",
+                "The chosen confidence level (e.g., 95%)",
+                "The true value of the population parameter"
+              ],
+              "correctIndex": 3
+            },
+            {
+              "id": "R3-CH2-CLIN-0036",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "For a 95% confidence interval for a mean, the Z-score value used is approximately:",
+              "explanation": "For a two-sided 95% confidence interval under the standard normal distribution, the critical Z-score that leaves 2.5% in each tail (\u03b1 = 0.05) is Z = 1.96. Distractor rationales: 1.64 is used for 90% CIs; 2.58 is used for 99% CIs; 1.00 corresponds to 68% coverage.",
+              "keyConcept": "Z-score for 95% Confidence Interval",
+              "options": [
+                "1.00",
+                "1.64",
+                "1.96",
+                "2.58"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "R3-CH2-CLIN-0037",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "For a 99% confidence interval for a mean, the Z-score value used is approximately:",
+              "explanation": "For a two-sided 99% confidence interval under the standard normal distribution (leaving 0.5% in each tail, \u03b1 = 0.01), the critical Z-score is approximately Z = 2.58 (or 2.576). Distractor rationales: 1.96 corresponds to 95% CI; 1.64 corresponds to 90% CI.",
+              "keyConcept": "Z-score for 99% Confidence Interval",
+              "options": [
+                "1.00",
+                "1.64",
+                "1.96",
+                "2.58"
+              ],
+              "correctIndex": 3
+            },
+            {
+              "id": "R3-CH2-CLIN-0038",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "The Z-score in a confidence interval calculation represents:",
+              "explanation": "In confidence interval calculations, the critical Z-score represents the margin of error expressed as the number of standard errors the sample mean extends on either side of the population mean (Margin of Error = Z \u00b7 SE). Distractor rationales: It represents standard errors of the sampling distribution, not standard deviations of individual raw data points.",
+              "keyConcept": "Meaning of Z-score in Confidence Interval",
+              "options": [
+                "The number of standard errors the sample mean is from the population mean",
+                "The number of standard deviations a data point is from the sample mean",
+                "The desired confidence level",
+                "The sample size"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "R3-CH2-CLIN-0039",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "If you calculate a 95% confidence interval for a mean, it means that if you repeated the sampling process many times, approximately 95% of the intervals would contain the:",
+              "explanation": "Under repeated sampling under identical conditions, 95% of calculated 95% confidence intervals will successfully encompass the true fixed population parameter (such as the population mean \u03bc). Distractor rationales: Every confidence interval already contains its own sample mean by construction (it is centered on x\u0304); it is designed to estimate the population mean.",
+              "keyConcept": "Confidence interval parameter coverage",
+              "options": [
+                "Sample mean",
+                "Sample standard deviation",
+                "Population mean",
+                "Z-score"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "R3-CH2-CLIN-0040",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "In a study, a sample of 100 men has a mean cholesterol level of 197 mg/dl and a standard deviation of 30 mg/dl. What is the Standard Error of the mean?",
+              "explanation": "Given sample size n = 100, mean = 197 mg/dL, and standard deviation s = 30 mg/dL: Standard Error (SE) = s / \u221an = 30 / \u221a100 = 30 / 10 = 3 mg/dL. Distractor rationales: 30 is the sample standard deviation; 0.3 results from dividing by 100 rather than \u221a100; 10 is the square root of n.",
+              "keyConcept": "Standard Error calculation for cholesterol",
+              "options": [
+                "30",
+                "3",
+                "0.3",
+                "10"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH2-CLIN-0041",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "Using the data from the previous question (mean=197, SD=30, n=100), the 95% CI for the population mean is approximately:",
+              "explanation": "Using mean = 197 mg/dL, SE = 3 mg/dL, and Z \u2248 2 (or 1.96): 95% CI = mean \u00b1 (1.96 \u00b7 SE) \u2248 197 \u00b1 (1.96 \u00b7 3) = 197 \u00b1 5.88 \u2248 (191.12, 202.88) mg/dL, which rounds approximately to (191, 203) mg/dL. Distractor rationales: (187, 207) uses Z = 3.33; (167, 227) uses the raw standard deviation 30 instead of standard error.",
+              "keyConcept": "95% Confidence Interval calculation for cholesterol",
+              "options": [
+                "(187, 207)",
+                "(191, 203)",
+                "(167, 227)",
+                "(194, 200)"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH2-CLIN-0042",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "The correct interpretation of the 95% CI (191.12, 202.88) for the population mean cholesterol level is:",
+              "explanation": "The proper scientific interpretation of the 95% CI (191.12, 202.88) mg/dL is: 'We are 95% confident that the true population mean cholesterol level lies between 191.12 and 202.88 mg/dL.' Distractor rationales: (a) The CI describes the population mean, not the range of individual men's cholesterol values. (c) The sample mean is a known fixed value (197 mg/dL), not a random variable with 95% probability of falling in the interval. (d) The sample mean does not change over time.",
+              "keyConcept": "Correct interpretation of calculated cholesterol CI",
+              "options": [
+                "95% of the men in the sample have cholesterol between 191.12 and 202.88 mg/dl.",
+                "We are 95% confident that the population mean cholesterol level lies between 191.12 and 202.88 mg/dl.",
+                "There is a 95% probability that the sample mean is between 191.12 and 202.88 mg/dl.",
+                "The sample mean cholesterol is 197 mg/dl 95% of the time."
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH2-CLIN-0043",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "The Central Limit Theorem can also be applied to estimate:",
+              "explanation": "The Central Limit Theorem applies to binary categorical data as well as continuous data: when sample size is large (np \u2265 5 and n(1-p) \u2265 5), the sampling distribution of a sample proportion follows a normal distribution, allowing estimation of both population means and population proportions. Distractor rationales: Proportions and means can both be estimated via normal approximation; sample variances follow a chi-square distribution.",
+              "keyConcept": "CLT applicability to proportions",
+              "options": [
+                "Only population means",
+                "Only population proportions",
+                "Both population means and proportions",
+                "Only population variances"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "R3-CH2-CLIN-0044",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "The formula for the Standard Error of a sample proportion (p) is:",
+              "explanation": "The Standard Error of a sample proportion (p) is given by SE_p = \u221a[ p(1 - p) / n ], where p is the sample proportion and n is the total sample size. Distractor rationales: p/\u221an is dimensionally incorrect; \u221a(p/n) omits the (1-p) failure term; (1-p)/n is missing the proportion and square root.",
+              "keyConcept": "Standard Error of a proportion formula",
+              "options": [
+                "\u221a(p(1-p)/n)",
+                "p / \u221an",
+                "\u221a(p/n)",
+                "(1-p) / n"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "R3-CH2-CLIN-0045",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "In a sample of 100 people screened for diabetes, 25 were found to be diabetic. The sample proportion (p) is:",
+              "explanation": "The sample proportion (p) is the number of subjects with the condition (x = 25) divided by the total sample size (n = 100): p = x / n = 25 / 100 = 0.25 (or 25%). Distractor rationales: 0.50 and 0.75 represent different ratios; 25 is the raw count, not the proportion.",
+              "keyConcept": "Sample proportion calculation",
+              "options": [
+                "0.25",
+                "0.50",
+                "0.75",
+                "25"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "R3-CH2-CLIN-0046",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "For the diabetes sample (p=0.25, n=100), the Standard Error of the proportion is approximately:",
+              "explanation": "For p = 0.25 and n = 100: SE_p = \u221a[ p(1 - p) / n ] = \u221a[ 0.25 \u00b7 0.75 / 100 ] = \u221a[ 0.1875 / 100 ] = \u221a[ 0.001875 ] \u2248 0.0433 (or 4.33%). Distractor rationales: 0.05 is an approximation error; 0.25 is the proportion itself; 0.005 is off by a power of ten.",
+              "keyConcept": "Standard Error of proportion calculation",
+              "options": [
+                "0.05",
+                "0.0433",
+                "0.25",
+                "0.005"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH2-CLIN-0047",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "Using the diabetes data (p=0.25, n=100), the 95% CI for the population proportion is approximately:",
+              "explanation": "For p = 0.25 and SE_p \u2248 0.0433, the 95% margin of error is Z \u00b7 SE_p = 1.96 \u00b7 0.0433 \u2248 0.0849 (\u2248 0.08). The 95% CI is 0.25 \u00b1 0.08 = (0.17, 0.33) (or 17% to 33%). Distractor rationales: (0.20, 0.30) uses margin of error 0.05; (0.15, 0.35) uses margin of error 0.10.",
+              "keyConcept": "95% Confidence Interval for proportion calculation",
+              "options": [
+                "(0.20, 0.30)",
+                "(0.15, 0.35)",
+                "(0.17, 0.33)",
+                "(0.21, 0.29)"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "R3-CH2-CLIN-0048",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "The correct way to report the prevalence of diabetes from the sample in scientific writing is:",
+              "explanation": "In peer-reviewed medical writing, prevalence estimates should be reported as the point estimate followed by its 95% confidence interval: 'The prevalence was 25% (95% CI: 17.1% \u2013 32.8%).' This communicates both the best estimate and the precision/uncertainty. Distractor rationales: (a) Omits uncertainty; (b) Standard deviation is inappropriate for categorical binary prevalence; (d) Fails to report the point estimate.",
+              "keyConcept": "Reporting prevalence in scientific literature",
+              "options": [
+                "The prevalence was 25%.",
+                "The prevalence was 25% (SD=0.43).",
+                "The prevalence was 25% (95% CI: 17.1% \u2013 32.8%).",
+                "The prevalence was between 17.1% and 32.8%."
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "R3-CH2-CLIN-0049",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "What happens to the Standard Error (SE) and the Confidence Interval (CI) as the sample size (n) increases?",
+              "explanation": "Because sample size n appears in the denominator of standard error (SE = s / \u221an), increasing n causes the Standard Error to decrease. Because the confidence interval width is directly proportional to SE, a smaller SE causes the confidence interval to become narrower (more precise). Distractor rationales: Larger n never widens the CI or increases SE.",
+              "keyConcept": "Effect of sample size on SE and CI width",
+              "options": [
+                "SE increases, and CI becomes wider.",
+                "SE decreases, and CI becomes narrower.",
+                "SE remains the same, and CI remains the same.",
+                "SE decreases, and CI becomes wider."
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH2-CLIN-0050",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "A narrower confidence interval indicates:",
+              "explanation": "A narrower confidence interval reflects greater precision and a smaller margin of error, indicating a more accurate and reliable estimate of the population parameter. Distractor rationales: Narrowness means more precision, not less; CI width does not reflect the magnitude of the sample mean; if confidence level is held constant, width depends on sample size and variance.",
+              "keyConcept": "Interpretation of narrow Confidence Interval",
+              "options": [
+                "A less accurate estimate of the population parameter",
+                "A more accurate estimate of the population parameter",
+                "A lower confidence level",
+                "A smaller sample mean"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH2-CLIN-0051",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "The concept that allows us to use a sample to estimate a population parameter with a known degree of uncertainty is the foundation of:",
+              "explanation": "Statistical estimation is the branch of inferential statistics that uses sample statistics to estimate unknown population parameters while mathematically quantifying the margin of error and uncertainty (via standard error and confidence intervals). Distractor rationales: Descriptive statistics only summarizes observed data; data collection gathers values; hypothesis testing assesses directional decisions rather than estimating parameter values.",
+              "keyConcept": "Definition of statistical estimation",
+              "options": [
+                "Descriptive statistics",
+                "Data collection",
+                "Statistical estimation",
+                "Hypothesis formulation"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "R3-CH2-CLIN-0052",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "The key reason we can use the properties of the normal distribution for confidence intervals, even when the original population isn't normal, is due to the:",
+              "explanation": "The fundamental theoretical justification allowing researchers to use normal distribution quantiles (Z = 1.96) to construct confidence intervals, even when the source population is non-normal, is the Central Limit Theorem (CLT), which proves the sampling distribution of the mean is normal for large n. Distractor rationales: The Law of Large Numbers ensures convergence, but not normality; the empirical rule requires a normal parent population.",
+              "keyConcept": "Theoretical basis for confidence intervals",
+              "options": [
+                "Law of Large Numbers",
+                "Empirical Rule",
+                "Central Limit Theorem",
+                "Definition of Standard Error"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "R3-CH2-CLIN-0053",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "The sampling distribution is the distribution of a:",
+              "explanation": "A sampling distribution is the theoretical probability distribution of a sample statistic (such as sample mean x\u0304 or sample proportion p) obtained from all possible random samples of the same size n drawn from the same population. Distractor rationales: It is not a distribution of population parameters (which are fixed constants), nor a single sample's frequency distribution.",
+              "keyConcept": "Definition of sampling distribution",
+              "options": [
+                "Population parameter",
+                "Sample",
+                "Sample statistic (like the mean) from many samples",
+                "Single data point"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "R3-CH2-CLIN-0054",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "The amount of deviation (difference) of each sample mean from the true population mean due to random chance is quantified by the:",
+              "explanation": "The random chance deviation between each sample mean and the true underlying population mean is quantified by the Standard Error (SE = \u03c3 / \u221an). Distractor rationales: Sample standard deviation measures dispersion of individual values within one sample; population variance is a fixed parameter; confidence level is a selected probability.",
+              "keyConcept": "Quantifying random sampling variation",
+              "options": [
+                "Sample Standard Deviation",
+                "Standard Error",
+                "Population Variance",
+                "Confidence Level"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH2-CLIN-0055",
+              "type": "mcq",
+              "lecture": 2,
+              "text": "The primary purpose of calculating a confidence interval is to:",
+              "explanation": "The primary objective of calculating a confidence interval is parameter estimation: to provide a plausible range of values for an unknown population parameter accompanied by an explicit margin of error and confidence level. Distractor rationales: Descriptive statistics describe sample data; hypothesis tests evaluate specific null claims; p-values test significance, whereas CIs estimate magnitude.",
+              "keyConcept": "Primary objective of Confidence Interval",
+              "options": [
+                "Describe the sample data",
+                "Test a specific hypothesis",
+                "Estimate a population parameter with a margin of error",
+                "Calculate the p-value for a test"
+              ],
+              "correctIndex": 2
             }
           ]
         }
@@ -502,7 +1672,7 @@
       "id": 3,
       "title": "Inferential Statistics II: Hypothesis Testing",
       "subtitle": "Null & Alternative Hypotheses, Errors, and Significance",
-      "emoji": "🧪",
+      "emoji": "\ud83e\uddea",
       "page": 66,
       "lectureRange": "Practical 3",
       "subjects": [
@@ -553,14 +1723,14 @@
               "type": "mcq",
               "lecture": 1,
               "text": "The probability of Type I error is referred as:",
-              "explanation": "The probability of committing a Type I error (rejecting a true null hypothesis) is denoted by alpha (α), which also represents the significance level of the test.",
-              "keyConcept": "Type I error probability notation (α)",
+              "explanation": "The probability of committing a Type I error (rejecting a true null hypothesis) is denoted by alpha (\u03b1), which also represents the significance level of the test.",
+              "keyConcept": "Type I error probability notation (\u03b1)",
               "options": [
-                "1 - α",
-                "β",
-                "α",
-                "1 - β",
-                "β - α"
+                "1 - \u03b1",
+                "\u03b2",
+                "\u03b1",
+                "1 - \u03b2",
+                "\u03b2 - \u03b1"
               ],
               "correctIndex": 2
             },
@@ -585,7 +1755,7 @@
               "type": "mcq",
               "lecture": 1,
               "text": "A Type II error occurs when we:",
-              "explanation": "A Type II error (β) is a false negative error that occurs when a researcher fails to reject (retains) a null hypothesis that is actually false.",
+              "explanation": "A Type II error (\u03b2) is a false negative error that occurs when a researcher fails to reject (retains) a null hypothesis that is actually false.",
               "keyConcept": "Type II error definition",
               "options": [
                 "reject a false null hypothesis",
@@ -601,7 +1771,7 @@
               "type": "mcq",
               "lecture": 1,
               "text": "The rejection probability of Null Hypothesis when it is true is called as:",
-              "explanation": "The probability of rejecting a true null hypothesis is the level of significance (α), typically chosen as 0.05 or 0.01 prior to conducting the test.",
+              "explanation": "The probability of rejecting a true null hypothesis is the level of significance (\u03b1), typically chosen as 0.05 or 0.01 prior to conducting the test.",
               "keyConcept": "Level of significance definition",
               "options": [
                 "Level of Confidence",
@@ -617,7 +1787,7 @@
               "type": "mcq",
               "lecture": 1,
               "text": "In a two-tail test for the population mean, if the null hypothesis is rejected when the alternative is true then:",
-              "explanation": "When the alternative hypothesis is true and the null hypothesis is rejected, the test has correctly identified a true effect, representing a correct decision (probability = power = 1 - β).",
+              "explanation": "When the alternative hypothesis is true and the null hypothesis is rejected, the test has correctly identified a true effect, representing a correct decision (probability = power = 1 - \u03b2).",
               "keyConcept": "Correct decision in hypothesis testing",
               "options": [
                 "a Type I error is committed",
@@ -649,7 +1819,7 @@
               "type": "mcq",
               "lecture": 1,
               "text": "The p-value of a test is the:",
-              "explanation": "By definition, the p-value is the lowest significance level (α) at which the observed sample data would lead to rejection of the null hypothesis.",
+              "explanation": "By definition, the p-value is the lowest significance level (\u03b1) at which the observed sample data would lead to rejection of the null hypothesis.",
               "keyConcept": "P-value mathematical definition",
               "options": [
                 "smallest significance level at which the null hypothesis cannot be rejected",
@@ -665,7 +1835,7 @@
               "type": "mcq",
               "lecture": 1,
               "text": "Which of the following statements about hypothesis testing is true?",
-              "explanation": "The decision rule states that if p > α, we fail to reject H0; if p ≤ α, we reject H0. (Option B describes Type I error; confidence level is 1 - α; power is 1 - β).",
+              "explanation": "The decision rule states that if p > \u03b1, we fail to reject H0; if p \u2264 \u03b1, we reject H0. (Option B describes Type I error; confidence level is 1 - \u03b1; power is 1 - \u03b2).",
               "keyConcept": "Decision rule with p-value and significance level",
               "options": [
                 "If the p-value is greater than the significance level, we fail to reject Ho",
@@ -680,8 +1850,8 @@
               "id": "R3-CH3-CLIN-0011",
               "type": "mcq",
               "lecture": 1,
-              "text": "If the p-value is 0.04, and the significance level (α) is 0.05, what should be the conclusion?",
-              "explanation": "Because the p-value (0.04) is less than the significance level (α = 0.05), the result is statistically significant and the researcher rejects the null hypothesis.",
+              "text": "If the p-value is 0.04, and the significance level (\u03b1) is 0.05, what should be the conclusion?",
+              "explanation": "Because the p-value (0.04) is less than the significance level (\u03b1 = 0.05), the result is statistically significant and the researcher rejects the null hypothesis.",
               "keyConcept": "P-value comparison against alpha",
               "options": [
                 "Fail to reject the null hypothesis",
@@ -697,14 +1867,14 @@
               "type": "mcq",
               "lecture": 1,
               "text": "The power of a statistical test is defined as:",
-              "explanation": "Power is the probability of correctly rejecting a false null hypothesis, mathematically defined as 1 - β, where β is the probability of committing a Type II error.",
-              "keyConcept": "Statistical power formula (1 - β)",
+              "explanation": "Power is the probability of correctly rejecting a false null hypothesis, mathematically defined as 1 - \u03b2, where \u03b2 is the probability of committing a Type II error.",
+              "keyConcept": "Statistical power formula (1 - \u03b2)",
               "options": [
-                "1 - α",
-                "α + β",
-                "1 - β",
-                "α × β",
-                "α - 1"
+                "1 - \u03b1",
+                "\u03b1 + \u03b2",
+                "1 - \u03b2",
+                "\u03b1 \u00d7 \u03b2",
+                "\u03b1 - 1"
               ],
               "correctIndex": 2
             },
@@ -712,37 +1882,37 @@
               "id": "R3-CH3-CLIN-0013",
               "type": "essay",
               "lecture": 1,
-              "text": "State the null hypothesis (Ho) and alternative hypothesis (Ha) in terms of the appropriate parameter (μ or π): \"Prevalence of Diabetes in Egypt is 20%\".",
-              "explanation": "Prevalence is a proportion (categorical parameter denoted π or p). The null hypothesis states that the population proportion equals the specified value (0.20), while the two-tailed alternative states it differs from 0.20.",
+              "text": "State the null hypothesis (Ho) and alternative hypothesis (Ha) in terms of the appropriate parameter (\u03bc or \u03c0): \"Prevalence of Diabetes in Egypt is 20%\".",
+              "explanation": "Prevalence is a proportion (categorical parameter denoted \u03c0 or p). The null hypothesis states that the population proportion equals the specified value (0.20), while the two-tailed alternative states it differs from 0.20.",
               "keyConcept": "Single-proportion hypothesis formulation",
-              "modelAnswer": "Parameter: Population proportion (π or p)\n- Null Hypothesis (Ho): π = 0.20 (The prevalence of diabetes in Egypt is equal to 20%)\n- Alternative Hypothesis (Ha): π ≠ 0.20 (The prevalence of diabetes in Egypt is not equal to 20%)"
+              "modelAnswer": "Parameter: Population proportion (\u03c0 or p)\n- Null Hypothesis (Ho): \u03c0 = 0.20 (The prevalence of diabetes in Egypt is equal to 20%)\n- Alternative Hypothesis (Ha): \u03c0 \u2260 0.20 (The prevalence of diabetes in Egypt is not equal to 20%)"
             },
             {
               "id": "R3-CH3-CLIN-0014",
               "type": "essay",
               "lecture": 1,
-              "text": "State the null hypothesis (Ho) and alternative hypothesis (Ha) in terms of the appropriate parameter (μ or π): \"60% of Egyptian females, compared to 30% of males suffer from Anaemia\".",
-              "explanation": "Comparing anaemia prevalence between females and males tests two independent population proportions. The null asserts no sex difference (π1 = π2).",
+              "text": "State the null hypothesis (Ho) and alternative hypothesis (Ha) in terms of the appropriate parameter (\u03bc or \u03c0): \"60% of Egyptian females, compared to 30% of males suffer from Anaemia\".",
+              "explanation": "Comparing anaemia prevalence between females and males tests two independent population proportions. The null asserts no sex difference (\u03c01 = \u03c02).",
               "keyConcept": "Two-proportion hypothesis formulation",
-              "modelAnswer": "Parameters: Two independent population proportions (π₁ for females, π₂ for males)\n- Null Hypothesis (Ho): π₁ = π₂ (or π₁ - π₂ = 0; there is no difference in anaemia prevalence between Egyptian females and males)\n- Alternative Hypothesis (Ha): π₁ ≠ π₂ (or π₁ > π₂; there is a significant difference in anaemia prevalence between females and males)"
+              "modelAnswer": "Parameters: Two independent population proportions (\u03c0\u2081 for females, \u03c0\u2082 for males)\n- Null Hypothesis (Ho): \u03c0\u2081 = \u03c0\u2082 (or \u03c0\u2081 - \u03c0\u2082 = 0; there is no difference in anaemia prevalence between Egyptian females and males)\n- Alternative Hypothesis (Ha): \u03c0\u2081 \u2260 \u03c0\u2082 (or \u03c0\u2081 > \u03c0\u2082; there is a significant difference in anaemia prevalence between females and males)"
             },
             {
               "id": "R3-CH3-CLIN-0015",
               "type": "essay",
               "lecture": 1,
-              "text": "State the null hypothesis (Ho) and alternative hypothesis (Ha) in terms of the appropriate parameter (μ or π): \"The safe dose of Drug X is 30 mg/Kg body weight\".",
-              "explanation": "Dose is a continuous quantitative variable represented by the population mean (μ). The null hypothesis posits that the true mean is 30 mg/kg.",
+              "text": "State the null hypothesis (Ho) and alternative hypothesis (Ha) in terms of the appropriate parameter (\u03bc or \u03c0): \"The safe dose of Drug X is 30 mg/Kg body weight\".",
+              "explanation": "Dose is a continuous quantitative variable represented by the population mean (\u03bc). The null hypothesis posits that the true mean is 30 mg/kg.",
               "keyConcept": "Single-mean hypothesis formulation",
-              "modelAnswer": "Parameter: Population mean (μ)\n- Null Hypothesis (Ho): μ = 30 mg/kg (The mean safe dose of Drug X is 30 mg/kg)\n- Alternative Hypothesis (Ha): μ ≠ 30 mg/kg (The mean safe dose of Drug X differs from 30 mg/kg)"
+              "modelAnswer": "Parameter: Population mean (\u03bc)\n- Null Hypothesis (Ho): \u03bc = 30 mg/kg (The mean safe dose of Drug X is 30 mg/kg)\n- Alternative Hypothesis (Ha): \u03bc \u2260 30 mg/kg (The mean safe dose of Drug X differs from 30 mg/kg)"
             },
             {
               "id": "R3-CH3-CLIN-0016",
               "type": "essay",
               "lecture": 1,
-              "text": "State the null hypothesis (Ho) and alternative hypothesis (Ha) in terms of the appropriate parameter (μ or π): \"Systolic blood pressure increases with age in adults (>18 years)\".",
-              "explanation": "Testing an increasing trend evaluates the association between two continuous variables. The null hypothesis specifies no relationship (ρ = 0), while a directional alternative posits a positive correlation (ρ > 0).",
+              "text": "State the null hypothesis (Ho) and alternative hypothesis (Ha) in terms of the appropriate parameter (\u03bc or \u03c0): \"Systolic blood pressure increases with age in adults (>18 years)\".",
+              "explanation": "Testing an increasing trend evaluates the association between two continuous variables. The null hypothesis specifies no relationship (\u03c1 = 0), while a directional alternative posits a positive correlation (\u03c1 > 0).",
               "keyConcept": "Correlation hypothesis formulation",
-              "modelAnswer": "Parameter: Population correlation coefficient (ρ) or regression slope (β₁)\n- Null Hypothesis (Ho): ρ = 0 (There is no association between age and systolic blood pressure in adults)\n- Alternative Hypothesis (Ha): ρ > 0 (or ρ ≠ 0; systolic blood pressure increases positively with age in adults)"
+              "modelAnswer": "Parameter: Population correlation coefficient (\u03c1) or regression slope (\u03b2\u2081)\n- Null Hypothesis (Ho): \u03c1 = 0 (There is no association between age and systolic blood pressure in adults)\n- Alternative Hypothesis (Ha): \u03c1 > 0 (or \u03c1 \u2260 0; systolic blood pressure increases positively with age in adults)"
             },
             {
               "id": "R3-CH3-CLIN-0017",
@@ -768,7 +1938,7 @@
               "type": "fillblank",
               "lecture": 1,
               "text": "The probability of rejecting a true null hypothesis is known as ___ error.",
-              "explanation": "Rejecting a true null hypothesis is a Type I error (α), corresponding to a false positive finding.",
+              "explanation": "Rejecting a true null hypothesis is a Type I error (\u03b1), corresponding to a false positive finding.",
               "keyConcept": "Type I error definition",
               "blanks": [
                 "Type I"
@@ -780,7 +1950,7 @@
                   "type I",
                   "type 1",
                   "alpha",
-                  "α"
+                  "\u03b1"
                 ]
               ]
             },
@@ -789,7 +1959,7 @@
               "type": "fillblank",
               "lecture": 1,
               "text": "If the p-value is less than or equal to 0.05, we ___ the null hypothesis.",
-              "explanation": "When the p-value is at or below the significance threshold (α = 0.05), the observed effect is deemed statistically significant and the decision is to reject H0.",
+              "explanation": "When the p-value is at or below the significance threshold (\u03b1 = 0.05), the observed effect is deemed statistically significant and the decision is to reject H0.",
               "keyConcept": "Hypothesis rejection rule",
               "blanks": [
                 "reject"
@@ -806,7 +1976,7 @@
               "type": "fillblank",
               "lecture": 1,
               "text": "The ___ of a test is the probability of correctly rejecting a false null hypothesis.",
-              "explanation": "Statistical power (1 - β) measures the test's ability to detect a true difference and correctly reject H0.",
+              "explanation": "Statistical power (1 - \u03b2) measures the test's ability to detect a true difference and correctly reject H0.",
               "keyConcept": "Statistical power definition",
               "blanks": [
                 "power"
@@ -816,7 +1986,7 @@
                   "power",
                   "Power",
                   "statistical power",
-                  "Power (1-β)"
+                  "Power (1-\u03b2)"
                 ]
               ]
             },
@@ -824,8 +1994,8 @@
               "id": "R3-CH3-CLIN-0021",
               "type": "fillblank",
               "lecture": 1,
-              "text": "If the power of a test is 0.90, then the probability of making a Type II error (β) is ___.",
-              "explanation": "Because Power = 1 - β, the probability of a Type II error is β = 1 - Power = 1 - 0.90 = 0.10 (or 10%).",
+              "text": "If the power of a test is 0.90, then the probability of making a Type II error (\u03b2) is ___.",
+              "explanation": "Because Power = 1 - \u03b2, the probability of a Type II error is \u03b2 = 1 - Power = 1 - 0.90 = 0.10 (or 10%).",
               "keyConcept": "Relationship between power and beta",
               "blanks": [
                 "0.10"
@@ -844,7 +2014,7 @@
               "type": "matching",
               "lecture": 1,
               "text": "Match each hypothesis testing term with its correct definition:",
-              "explanation": "Null hypothesis (H0) states no difference; alternative (H1) posits an effect; Type I error (α) is a false positive (rejecting true null); Type II error (β) is a false negative (retaining false null).",
+              "explanation": "Null hypothesis (H0) states no difference; alternative (H1) posits an effect; Type I error (\u03b1) is a false positive (rejecting true null); Type II error (\u03b2) is a false negative (retaining false null).",
               "keyConcept": "Fundamental definitions in hypothesis testing",
               "pairs": [
                 {
@@ -856,11 +2026,11 @@
                   "target": "Suggests that there is a difference or effect"
                 },
                 {
-                  "premise": "Type I Error (α)",
+                  "premise": "Type I Error (\u03b1)",
                   "target": "Probability of making a false-positive error"
                 },
                 {
-                  "premise": "Type II Error (β)",
+                  "premise": "Type II Error (\u03b2)",
                   "target": "Probability of making a false-negative error"
                 }
               ]
@@ -869,19 +2039,559 @@
               "id": "R3-CH3-CLIN-0023",
               "type": "essay",
               "lecture": 1,
-              "text": "A study tests whether a new drug improves sleep quality compared to a placebo. The null hypothesis is that there is no difference. The analysis produces a p-value of 0.08. Interpret the p-value. Decide what conclusion the researchers should draw at α = 0.05, and identify what type of error could occur.",
-              "explanation": "When p > α, fail to reject H0. The only potential error when retaining H0 is a Type II error (false negative).",
+              "text": "A study tests whether a new drug improves sleep quality compared to a placebo. The null hypothesis is that there is no difference. The analysis produces a p-value of 0.08. Interpret the p-value. Decide what conclusion the researchers should draw at \u03b1 = 0.05, and identify what type of error could occur.",
+              "explanation": "When p > \u03b1, fail to reject H0. The only potential error when retaining H0 is a Type II error (false negative).",
               "keyConcept": "P-value interpretation and Type II error risk",
-              "modelAnswer": "1. Interpretation: A p-value of 0.08 indicates that if there is truly no difference between the drug and placebo, there is an 8% probability of obtaining the observed difference (or greater) by chance alone.\n2. Decision/Conclusion: Because p = 0.08 > α = 0.05, the researchers fail to reject the null hypothesis. There is insufficient statistical evidence to conclude that the new drug improves sleep quality compared to placebo.\n3. Potential Error: A Type II error (β) could occur—failing to reject a false null hypothesis (i.e., concluding the drug has no effect when it actually does)."
+              "modelAnswer": "1. Interpretation: A p-value of 0.08 indicates that if there is truly no difference between the drug and placebo, there is an 8% probability of obtaining the observed difference (or greater) by chance alone.\n2. Decision/Conclusion: Because p = 0.08 > \u03b1 = 0.05, the researchers fail to reject the null hypothesis. There is insufficient statistical evidence to conclude that the new drug improves sleep quality compared to placebo.\n3. Potential Error: A Type II error (\u03b2) could occur\u2014failing to reject a false null hypothesis (i.e., concluding the drug has no effect when it actually does)."
             },
             {
               "id": "R3-CH3-CLIN-0024",
               "type": "essay",
               "lecture": 1,
-              "text": "A medical researcher performs a hypothesis test comparing the mean recovery time for two surgical techniques. The null hypothesis claims both have the same recovery time. The data result in a test statistic with a p-value of 0.03. What is the appropriate decision at α = 0.05, and what type of error could still occur?",
-              "explanation": "When p ≤ α, reject H0. The only potential error when rejecting H0 is a Type I error (false positive).",
+              "text": "A medical researcher performs a hypothesis test comparing the mean recovery time for two surgical techniques. The null hypothesis claims both have the same recovery time. The data result in a test statistic with a p-value of 0.03. What is the appropriate decision at \u03b1 = 0.05, and what type of error could still occur?",
+              "explanation": "When p \u2264 \u03b1, reject H0. The only potential error when rejecting H0 is a Type I error (false positive).",
               "keyConcept": "P-value significance and Type I error risk",
-              "modelAnswer": "1. Decision: Because p = 0.03 < α = 0.05, the researcher rejects the null hypothesis. There is statistically significant evidence that the mean recovery times differ between the two surgical techniques.\n2. Potential Error: A Type I error (α) could occur—rejecting a true null hypothesis (i.e., concluding there is a difference when both techniques actually produce identical mean recovery times, a false positive)."
+              "modelAnswer": "1. Decision: Because p = 0.03 < \u03b1 = 0.05, the researcher rejects the null hypothesis. There is statistically significant evidence that the mean recovery times differ between the two surgical techniques.\n2. Potential Error: A Type I error (\u03b1) could occur\u2014rejecting a true null hypothesis (i.e., concluding there is a difference when both techniques actually produce identical mean recovery times, a false positive)."
+            },
+            {
+              "id": "R3-CH3-CLIN-0025",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "What is the primary purpose of hypothesis testing?",
+              "explanation": "The primary purpose of hypothesis testing is to assess the plausibility of a scientific claim or hypothesis regarding a population parameter by evaluating empirical evidence gathered from sample data. Distractor rationales: (a) Describing data is descriptive statistics; (c) Sample data cannot calculate population parameters with absolute exactness; (d) Hypothesis testing cannot prevent study design errors.",
+              "keyConcept": "Primary purpose of hypothesis testing",
+              "options": [
+                "To describe the sample data",
+                "To assess the plausibility of a hypothesis using sample data",
+                "To calculate population parameters exactly",
+                "To ensure a study has no errors"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH3-CLIN-0026",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "The vital first step that every subsequent step in research depends on is:",
+              "explanation": "Defining a clear, focused, and answerable research question (e.g., using the PICO framework) is the foundational first step upon which all subsequent methodological stages\u2014including hypothesis formulation, study design, data collection, and statistical analysis\u2014depend. Distractor rationales: Hypotheses, data collection, and p-value calculations can only occur after the research question is established.",
+              "keyConcept": "First vital step in research process",
+              "options": [
+                "Data collection",
+                "Defining the research question",
+                "Calculating the p-value",
+                "Stating the null hypothesis"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH3-CLIN-0027",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "A hypothesis is best defined as:",
+              "explanation": "In scientific methodology, a hypothesis is defined as a formal, testable, and measurable statement or prediction derived from the research question that proposes a relationship between variables. Distractor rationales: (a) Raw data are the observed measurements; (c) The conclusion is derived after testing; (d) A hypothesis is a proposed conjecture, not a proven fact.",
+              "keyConcept": "Definition of a scientific hypothesis",
+              "options": [
+                "The raw data collected from a sample",
+                "A measurable statement derived from the research question that can be tested",
+                "The final conclusion of a research study",
+                "A proven fact about the population"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH3-CLIN-0028",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "Hypothesis testing is fundamentally a:",
+              "explanation": "Hypothesis testing is fundamentally a structured, probabilistic decision-making process for evaluating whether empirical evidence supports or contradicts a specific claim about a population parameter. Distractor rationales: It is an analytical decision framework, not data collection or descriptive statistics, and cannot eliminate random sampling error.",
+              "keyConcept": "Nature of hypothesis testing",
+              "options": [
+                "Data collection process",
+                "Decision-making process for evaluating a suggestion about a population",
+                "Method for descriptive statistics",
+                "Way to avoid sampling error"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH3-CLIN-0029",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "The hypothesis that proposes \"no difference\" or \"no effect\" is called the:",
+              "explanation": "The null hypothesis (H\u2080) is the default claim that proposes 'no difference', 'no effect', or 'no association' between groups or variables in the target population (e.g., \u03bc\u2081 - \u03bc\u2082 = 0). Distractor rationales: The alternative (research) hypothesis proposes an effect or difference; statistical hypothesis is an umbrella category.",
+              "keyConcept": "Definition of Null Hypothesis",
+              "options": [
+                "Research hypothesis",
+                "Alternative hypothesis",
+                "Null hypothesis",
+                "Statistical hypothesis"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "R3-CH3-CLIN-0030",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "The hypothesis that directly contradicts the null hypothesis is the:",
+              "explanation": "The alternative hypothesis (H\u2081 or H_a) is the claim that directly contradicts the null hypothesis, positing that a true effect, difference, or relationship exists in the population. Distractor rationales: The null hypothesis proposes no effect; neutral hypothesis is not standard terminology.",
+              "keyConcept": "Definition of Alternative Hypothesis",
+              "options": [
+                "Research hypothesis",
+                "Alternative hypothesis",
+                "Neutral hypothesis",
+                "Primary hypothesis"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH3-CLIN-0031",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "If a researcher is testing whether a new drug is more effective than an old one, the alternative hypothesis (H\u2081) would state that the new drug's effect is:",
+              "explanation": "In a two-tailed hypothesis test evaluating whether a new drug differs from an existing drug, the alternative hypothesis (H\u2081) states that the new drug's therapeutic effect is different from (not equal to) the old drug: H\u2081: \u03bc_new \u2260 \u03bc_old. Distractor rationales: (a, d) 'Equal to' or 'same as placebo' represent null statements; (c) 'Less than' represents a one-tailed directional hypothesis testing inferiority.",
+              "keyConcept": "Alternative hypothesis formulation for new drug",
+              "options": [
+                "Equal to the old drug",
+                "Different from (not equal to) the old drug",
+                "Less than the old drug",
+                "The same as a placebo"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH3-CLIN-0032",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "In hypothesis testing, the conclusion is always made about the:",
+              "explanation": "In classical frequentist hypothesis testing, the formal statistical decision and conclusion is always made about the null hypothesis (H\u2080): we either reject H\u2080 or fail to reject H\u2080. Distractor rationales: Conclusions are never formally phrased as 'accepting' or 'proving' the alternative hypothesis or sample statistic.",
+              "keyConcept": "Target of hypothesis testing conclusion",
+              "options": [
+                "Sample statistic",
+                "Null hypothesis",
+                "Alternative hypothesis",
+                "Research question"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH3-CLIN-0033",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "The two possible conclusions in hypothesis testing are:",
+              "explanation": "The only two valid conclusions in hypothesis testing are: (1) 'Reject H\u2080' (evidence is sufficient to conclude a difference exists) or (2) 'Fail to reject H\u2080' (evidence is insufficient to rule out chance). Distractor rationales: In frequentist statistics, we never 'accept H\u2080' because lack of evidence of an effect does not prove the absence of an effect; science never 'proves' hypotheses definitively.",
+              "keyConcept": "Two formal conclusions in hypothesis testing",
+              "options": [
+                "Accept H\u2080 or Accept H\u2081",
+                "Reject H\u2080 or Fail to Reject H\u2080",
+                "Prove H\u2081 or Disprove H\u2081",
+                "Significant or Insignificant"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH3-CLIN-0034",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "The statement \"The mean reduction in blood glucose level is the same in the two treatment groups\" is an example of a:",
+              "explanation": "The statement 'The mean reduction in blood glucose level is the same in the two treatment groups' posits equality and zero difference between groups (\u03bc\u2081 = \u03bc\u2082), which is the definitive form of a null hypothesis (H\u2080). Distractor rationales: An alternative hypothesis would state that the reductions differ; a research question would be phrased as an inquiry; a test statistic is a calculated numerical value.",
+              "keyConcept": "Null hypothesis statement example",
+              "options": [
+                "Research question",
+                "Alternative hypothesis (H\u2081)",
+                "Null hypothesis (H\u2080)",
+                "Test statistic"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "R3-CH3-CLIN-0035",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "Which step in hypothesis testing involves calculating summary statistics like sample means and standard deviations?",
+              "explanation": "Calculating summary statistics (such as sample means, sample proportions, and standard deviations) is part of the data collection and summarization phase, which prepares the necessary numerical inputs to compute the formal test statistic. Distractor rationales: Stating hypotheses occurs before data collection; assessing evidence and making decisions occur after computing test statistics and p-values.",
+              "keyConcept": "Data collection and summarization stage",
+              "options": [
+                "Stating the hypothesis",
+                "Data collection and summarization",
+                "Assessing the evidence",
+                "Making a decision"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH3-CLIN-0036",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "The probability of obtaining data similar to your sample results, assuming the null hypothesis is true, is known as the:",
+              "explanation": "The p-value is defined as the probability of obtaining test results at least as extreme as the observed sample data, assuming that the null hypothesis (H\u2080) is true. Distractor rationales: Significance level (\u03b1) is the pre-set threshold; test statistic is the calculated score (Z, t, \u03c7\u00b2); statistical power (1 - \u03b2) is the probability of detecting a true effect.",
+              "keyConcept": "Definition of p-value",
+              "options": [
+                "Significance level",
+                "Test statistic",
+                "Power",
+                "P-value"
+              ],
+              "correctIndex": 3
+            },
+            {
+              "id": "R3-CH3-CLIN-0037",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "A very small p-value indicates that the observed data is:",
+              "explanation": "A very small p-value (e.g., p < 0.001) indicates that the observed sample data would be extremely unlikely to occur purely by random chance if the null hypothesis were true, providing strong evidence to reject H\u2080. Distractor rationales: Small p-values mean the data are incompatible with H\u2080; they do not prove H\u2081 is false, but rather support H\u2081.",
+              "keyConcept": "Interpretation of a very small p-value",
+              "options": [
+                "Very likely to the null hypothesis if it's true",
+                "Very unlikely to the null hypothesis if it's true",
+                "Proof that the alternative hypothesis is false",
+                "relevant to the null hypothesis"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH3-CLIN-0038",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "If the p-value is not very small, the researcher should:",
+              "explanation": "When the calculated p-value is not small (i.e., p > \u03b1, typically p > 0.05), the observed data are readily compatible with random chance, and the researcher must fail to reject the null hypothesis. Distractor rationales: A large p-value never justifies rejecting H\u2080 or accepting H\u2081; changing the research question post hoc introduces cherry-picking bias.",
+              "keyConcept": "Action when p-value is large",
+              "options": [
+                "Reject the null hypothesis",
+                "Fail to reject the null hypothesis",
+                "Accept the alternative hypothesis",
+                "Change the research question"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH3-CLIN-0039",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "The standard critical cut-off level (significance level) for a p- value is typically set at:",
+              "explanation": "In biomedical and clinical literature, the conventional critical cut-off significance level (alpha, \u03b1) is standardly set at P \u2264 0.05 (5%). Findings with p \u2264 0.05 are declared statistically significant. Distractor rationales: P \u2264 0.01 is a more stringent threshold; P \u2264 0.10 is used in exploratory pilot work; P \u2264 0.50 is far too loose for scientific inference.",
+              "keyConcept": "Standard significance level alpha",
+              "options": [
+                "P \u2264 0.01",
+                "P \u2264 0.05",
+                "P \u2264 0.10",
+                "P \u2264 0.50"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH3-CLIN-0040",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "If the p-value of a test is calculated to be 0.03, the researcher should:",
+              "explanation": "Because the calculated p-value (p = 0.03) is less than the standard significance threshold (\u03b1 = 0.05), the sample findings are statistically significant, and the researcher should reject the null hypothesis in favor of the alternative. Distractor rationales: Failing to reject or accepting H\u2080 is incorrect when p \u2264 \u03b1; concluding 'no difference' contradicts the rejection of H\u2080.",
+              "keyConcept": "Decision when p = 0.03 at alpha = 0.05",
+              "options": [
+                "Reject the null hypothesis",
+                "Fail to reject the null hypothesis",
+                "Accept the null hypothesis",
+                "Conclude there is no difference"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "R3-CH3-CLIN-0041",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "If the p-value of a test is calculated to be 0.20, the researcher should:",
+              "explanation": "Because the calculated p-value (p = 0.20) is greater than the standard significance threshold (\u03b1 = 0.05), the observed sample difference could easily have occurred by random sampling fluctuation. The researcher must fail to reject the null hypothesis. Distractor rationales: Rejecting H\u2080 or accepting H\u2081 requires p \u2264 0.05; concluding a significant difference exists is a Type I error.",
+              "keyConcept": "Decision when p = 0.20 at alpha = 0.05",
+              "options": [
+                "Reject the null hypothesis",
+                "Fail to reject the null hypothesis",
+                "Accept the alternative hypothesis",
+                "Conclude a significant difference exists"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH3-CLIN-0042",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "Concluding that diabetic patients are more hypertensive when in fact they are not in the population is an example of a:",
+              "explanation": "Concluding that diabetic patients are more hypertensive when in reality there is no true difference in the population is rejecting a true null hypothesis, which defines a Type I error (false positive). Distractor rationales: A Type II error would be failing to detect a true difference; a correct decision occurs when conclusion matches reality.",
+              "keyConcept": "Type I error clinical scenario",
+              "options": [
+                "Type I Error",
+                "Type II Error",
+                "Correct Decision",
+                "Powerful result"
+              ],
+              "correctIndex": 0
+            },
+            {
+              "id": "R3-CH3-CLIN-0043",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "A Type I error is analogous to a ____________ in a clinical test.",
+              "explanation": "In clinical diagnostics, a Type I error (rejecting a true null hypothesis of no disease) is directly analogous to a False Positive result: alarming that disease or an effect is present when the subject is actually healthy/no effect exists. Distractor rationales: A false negative corresponds to a Type II error; true positive and true negative represent correct decisions.",
+              "keyConcept": "Clinical diagnostic analogy for Type I error",
+              "options": [
+                "True negative",
+                "True positive",
+                "False positive",
+                "False negative"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "R3-CH3-CLIN-0044",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "The predetermined probability for a Type I error (\u03b1) is usually set at:",
+              "explanation": "The predetermined probability of committing a Type I error (the significance level, \u03b1) is customarily set a priori at \u03b1 = 0.05 (5%) or less (e.g., 0.01 in high-stakes clinical trials). Distractor rationales: \u03b1 = 0.10 or 0.20 permits an unacceptably high 10%\u201320% false positive rate.",
+              "keyConcept": "Standard predetermined alpha level",
+              "options": [
+                "0.01 or less",
+                "0.05 or less",
+                "0.10 or less",
+                "0.20 or less"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH3-CLIN-0045",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "The probability of making a Type II error is denoted by:",
+              "explanation": "The probability of committing a Type II error (failing to reject a false null hypothesis) is denoted by the Greek letter \u03b2 (Beta). Distractor rationales: \u03b1 (Alpha) denotes the probability of a Type I error; 1 - \u03b1 is the confidence level; 1 - \u03b2 is the statistical power.",
+              "keyConcept": "Symbol for Type II error probability",
+              "options": [
+                "\u03b1 (Alpha)",
+                "1 - \u03b1",
+                "\u03b2 (Beta)",
+                "P"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "R3-CH3-CLIN-0046",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "Concluding that there is no difference in hypertension between diabetics and non-diabetics when a difference actually exists in the population is an example of a:",
+              "explanation": "Concluding that there is no difference in hypertension between diabetics and non-diabetics when an actual difference does exist in the population is failing to reject a false null hypothesis, which defines a Type II error (false negative). Distractor rationales: A Type I error would be claiming a difference when none exists; a correct decision reflects reality.",
+              "keyConcept": "Type II error clinical scenario",
+              "options": [
+                "Type I Error",
+                "Type II Error",
+                "Correct Decision",
+                "Significant result"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH3-CLIN-0047",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "A Type II error is analogous to a ____________ in a clinical test.",
+              "explanation": "In clinical medicine, a Type II error (failing to reject a false null hypothesis) is analogous to a False Negative diagnostic test: missing a disease that is actually present, leading to missed intervention. Distractor rationales: False positive corresponds to Type I error; true positive and true negative are accurate diagnoses.",
+              "keyConcept": "Clinical diagnostic analogy for Type II error",
+              "options": [
+                "True negative",
+                "True positive",
+                "False positive",
+                "False negative"
+              ],
+              "correctIndex": 3
+            },
+            {
+              "id": "R3-CH3-CLIN-0048",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "The predetermined probability for a Type II error (\u03b2) is usually set at:",
+              "explanation": "In clinical research and sample size calculations, the maximum acceptable probability of a Type II error (\u03b2) is typically set at \u03b2 = 0.20 (20%) or less, which corresponds to a statistical power of 1 - \u03b2 = 0.80 (80%) or greater. Distractor rationales: \u03b2 = 0.05 corresponds to 95% power, which requires very large sample sizes; \u03b2 = 0.50 corresponds to 50% power (coin toss).",
+              "keyConcept": "Standard predetermined beta level",
+              "options": [
+                "0.01 or less",
+                "0.05 or less",
+                "0.10 or less",
+                "0.20 or less"
+              ],
+              "correctIndex": 3
+            },
+            {
+              "id": "R3-CH3-CLIN-0049",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "If the probability of a Type II error (\u03b2) is 0.15, what is the power of the test?",
+              "explanation": "Statistical power is mathematically defined as 1 - \u03b2. If the probability of a Type II error is \u03b2 = 0.15, then the power of the statistical test is 1 - 0.15 = 0.85 (or 85%). Distractor rationales: 0.15 is beta itself; 0.95 corresponds to \u03b2 = 0.05; probabilities cannot exceed 1.0.",
+              "keyConcept": "Power calculation from beta",
+              "options": [
+                "0.15",
+                "0.85",
+                "0.95",
+                "1.15"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH3-CLIN-0050",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "A high power in a study (e.g., 0.90) is desirable because it means:",
+              "explanation": "High statistical power (e.g., power = 0.90 or 90%) is highly desirable because it ensures that the study has a high (90%) probability of detecting a genuine therapeutic effect or clinical difference if one truly exists in the population, minimizing false negative findings. Distractor rationales: (a) False positive rate is controlled by alpha (\u03b1), not power; (c) Significance is observed only if an effect exists; (d) High power is defined assuming H\u2080 is false.",
+              "keyConcept": "Clinical value of high statistical power",
+              "options": [
+                "There is a low chance of a false positive.",
+                "There is a high chance of detecting a true effect if it exists.",
+                "The p-value will be significant.",
+                "The null hypothesis is true."
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH3-CLIN-0051",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "In the context of hypothesis testing, \"failing to reject the null hypothesis\" is most similar to a jury finding of:",
+              "explanation": "In the legal trial analogy, the defendant is presumed innocent until proven guilty (H\u2080 = innocent). A verdict of 'Not Guilty' does not prove that the defendant is innocent; it merely means there was insufficient evidence to prove guilt beyond reasonable doubt. This is identical to 'failing to reject H\u2080'. Distractor rationales: 'Guilty' corresponds to rejecting H\u2080; courts never declare a formal verdict of 'Innocent'.",
+              "keyConcept": "Legal jury analogy for failing to reject H0",
+              "options": [
+                "Guilty",
+                "Not guilty",
+                "Innocent",
+                "Corrupt"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH3-CLIN-0052",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "The p-value is a number that helps determine the:",
+              "explanation": "The p-value serves as a standardized index quantifying the strength of statistical evidence against the null hypothesis: the smaller the p-value, the stronger the evidence against H\u2080. Distractor rationales: Effect size (e.g., Cohen's d, relative risk) measures magnitude, not p-value; p-value does not provide population mean or sample size adequacy directly.",
+              "keyConcept": "Function of p-value as evidence metric",
+              "options": [
+                "Effect size",
+                "Strength of evidence against the null hypothesis",
+                "Population mean",
+                "Sample size adequacy"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH3-CLIN-0053",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "According to the text, a p-value is considered \"small\" and leads to rejecting the null hypothesis when it is:",
+              "explanation": "According to biomedical convention and the text, a p-value is considered sufficiently 'small' to reject the null hypothesis when it is less than or equal to the significance threshold: p \u2264 0.05. Distractor rationales: p > 0.05 leads to failing to reject H\u2080; p = 1 indicates complete agreement with H\u2080; p < 0.50 is far too broad.",
+              "keyConcept": "Threshold for rejecting H0",
+              "options": [
+                "> 0.05",
+                "\u2264 0.05",
+                "= 1",
+                "< 0.50"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH3-CLIN-0054",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "A large p-value (e.g., 0.45) indicates:",
+              "explanation": "A large p-value, such as p = 0.45, indicates that the observed sample data are highly consistent with random sampling variability under the null hypothesis (there is a 45% probability of seeing such results by chance alone), indicating very weak evidence against H\u2080. Distractor rationales: Weak evidence against H\u2080 does not prove H\u2081; Type I error occurs only when H\u2080 is rejected.",
+              "keyConcept": "Interpretation of large p-value (p = 0.45)",
+              "options": [
+                "Strong evidence against the null hypothesis",
+                "Weak evidence against the null hypothesis",
+                "That the alternative hypothesis is true",
+                "That a Type I error has been made"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH3-CLIN-0055",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "Hypotheses in statistical testing are statements about:",
+              "explanation": "Hypotheses in inferential statistics are always formulated as statements about unknown population parameters (e.g., population mean \u03bc, population proportion P, population hazard ratio), never about sample statistics (which are directly known and calculated). Distractor rationales: Sample statistics and p-values are calculated quantities, not the subject of hypothetical population claims.",
+              "keyConcept": "Scope of statistical hypotheses",
+              "options": [
+                "Sample statistics",
+                "P-values",
+                "Population parameters",
+                "Data collection methods"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "R3-CH3-CLIN-0056",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "Which symbol is typically associated with the Null Hypothesis?",
+              "explanation": "The null hypothesis (H\u2080) always incorporates an equality symbol (=, or \u2265, \u2264 in non-inferiority designs) representing the benchmark of no difference, no change, or equality between groups (e.g., H\u2080: \u03bc\u2081 = \u03bc\u2082 or \u03bc\u2081 - \u03bc\u2082 = 0). Distractor rationales: Strict inequalities (\u2260, >, <) are characteristic of the alternative hypothesis (H\u2081).",
+              "keyConcept": "Symbol associated with Null Hypothesis",
+              "options": [
+                "\u2260",
+                ">",
+                "<",
+                "="
+              ],
+              "correctIndex": 3
+            },
+            {
+              "id": "R3-CH3-CLIN-0057",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "The process of hypothesis testing primarily involves an attempt to:",
+              "explanation": "Grounded in scientific methodology and Popperian falsificationism, hypothesis testing primarily involves an attempt to disprove, challenge, or reject the null hypothesis (H\u2080) based on empirical evidence, because hypotheses can be disproven by counterevidence but cannot be inductively proven with absolute certainty. Distractor rationales: Science does not 'prove' hypotheses; research questions are answered, not 'disproven'.",
+              "keyConcept": "Popperian refutation in hypothesis testing",
+              "options": [
+                "Prove the alternative hypothesis",
+                "Prove the null hypothesis",
+                "Disprove or \"reject\" the null hypothesis",
+                "Disprove the research question"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "R3-CH3-CLIN-0058",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "The table comparing hypothesis testing to a museum alarm illustrates that a \"False Negative\" is a:",
+              "explanation": "In the museum alarm analogy, a burglar represents a true effect (H\u2080 is false). A 'False Negative' occurs when a burglar enters the museum (real effect present) but the alarm fails to go off (test fails to reject H\u2080), which is the exact definition of a Type II error (\u03b2). Distractor rationales: Alarm ringing with no thief is a False Positive (Type I error); correct rejection is the alarm ringing when a thief is present.",
+              "keyConcept": "Museum alarm analogy: False Negative",
+              "options": [
+                "Type I Error",
+                "Type II Error",
+                "Correct rejection of H\u2080",
+                "Correct failure to reject H\u2080"
+              ],
+              "correctIndex": 1
+            },
+            {
+              "id": "R3-CH3-CLIN-0059",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "In the museum alarm analogy, the alarm going off when there is no thief corresponds to a:",
+              "explanation": "In the museum alarm analogy, the alarm sounding when no thief is present (no real effect exists) is a False Positive alarm, which directly corresponds to a Type I error (rejecting a true null hypothesis, \u03b1). Distractor rationales: A false negative is a failure of the alarm during a robbery; true positive and true negative represent correct operational states.",
+              "keyConcept": "Museum alarm analogy: False Positive",
+              "options": [
+                "True Positive",
+                "True Negative",
+                "False Positive (Type I Error)",
+                "False Negative (Type II Error)"
+              ],
+              "correctIndex": 2
+            },
+            {
+              "id": "R3-CH3-CLIN-0060",
+              "type": "mcq",
+              "lecture": 3,
+              "text": "The power of a test (1 - \u03b2) is the probability of:",
+              "explanation": "The statistical power of a test (1 - \u03b2) is formally defined as the probability of correctly rejecting a false null hypothesis when a true effect or difference actually exists in the population. Distractor rationales: Correctly failing to reject a true H\u2080 is 1 - \u03b1 (confidence level); incorrectly rejecting true H\u2080 is \u03b1 (Type I error); incorrectly failing to reject false H\u2080 is \u03b2 (Type II error).",
+              "keyConcept": "Formal mathematical definition of power",
+              "options": [
+                "Correctly failing to reject a true null hypothesis",
+                "Incorrectly rejecting a true null hypothesis",
+                "Correctly rejecting a false null hypothesis",
+                "Incorrectly failing to reject a false null hypothesis"
+              ],
+              "correctIndex": 2
             }
           ]
         }
@@ -900,7 +2610,7 @@
       "id": 4,
       "title": "Hypothesis Testing: Quantitative & Qualitative Data",
       "subtitle": "Parametric & Non-Parametric Tests",
-      "emoji": "📈",
+      "emoji": "\ud83d\udcc8",
       "page": 70,
       "lectureRange": "Practical 4",
       "subjects": [],
@@ -916,7 +2626,7 @@
       "id": 5,
       "title": "Systematic Review and Meta-Analysis",
       "subtitle": "Synthesis of Evidence & Forest Plots",
-      "emoji": "📚",
+      "emoji": "\ud83d\udcda",
       "page": 74,
       "lectureRange": "Practical 5",
       "subjects": [],
@@ -932,7 +2642,7 @@
       "id": 6,
       "title": "Evidence-Based Medicine",
       "subtitle": "Clinical Evidence Hierarchy & PICO Framework",
-      "emoji": "🩺",
+      "emoji": "\ud83e\ude7a",
       "page": 88,
       "lectureRange": "Practical 6",
       "subjects": [],
@@ -947,7 +2657,7 @@
       "id": 7,
       "title": "Critical Appraisal",
       "subtitle": "Evaluation of Study Designs & Risk of Bias",
-      "emoji": "🔍",
+      "emoji": "\ud83d\udd0d",
       "page": 90,
       "lectureRange": "Practical 7",
       "subjects": [],
@@ -961,8 +2671,8 @@
     {
       "id": 8,
       "title": "Formative Exam 1",
-      "subtitle": "Scientific Research (R-3) — 2024 By-Law Formative Exam 1",
-      "emoji": "📝",
+      "subtitle": "Scientific Research (R-3) \u2014 2024 By-Law Formative Exam 1",
+      "emoji": "\ud83d\udcdd",
       "page": 1,
       "lectureRange": "Formative Exam 1",
       "accentColor": "clinical",
@@ -983,8 +2693,8 @@
               "type": "mcq",
               "lecture": 1,
               "text": "A Type I error occurs when a researcher:",
-              "explanation": "A Type I error (denoted by alpha, α) is a false-positive statistical decision that occurs when the researcher rejects the null hypothesis (H0) when it is in fact true in the population.",
-              "keyConcept": "Type I error (α) definition",
+              "explanation": "A Type I error (denoted by alpha, \u03b1) is a false-positive statistical decision that occurs when the researcher rejects the null hypothesis (H0) when it is in fact true in the population.",
+              "keyConcept": "Type I error (\u03b1) definition",
               "options": [
                 "Accepts a true null hypothesis",
                 "Fails to reject a false null hypothesis",
@@ -999,7 +2709,7 @@
               "type": "mcq",
               "lecture": 1,
               "text": "A patient's laboratory result has a z-score of +2. What does this indicate?",
-              "explanation": "A standard score (z-score) measures the distance between an individual observation (x) and the population mean (μ) in units of standard deviation: z = (x - μ)/σ. A z-score of +2 indicates the measurement lies exactly two standard deviations above the population mean.",
+              "explanation": "A standard score (z-score) measures the distance between an individual observation (x) and the population mean (\u03bc) in units of standard deviation: z = (x - \u03bc)/\u03c3. A z-score of +2 indicates the measurement lies exactly two standard deviations above the population mean.",
               "keyConcept": "Standard score (z-score) interpretation",
               "options": [
                 "The result is two units above the mean",
@@ -1015,7 +2725,7 @@
               "type": "mcq",
               "lecture": 1,
               "text": "A study reports (p = 0.03), with a pre-specified (alpha = 0.05). Which conclusion is most appropriate?",
-              "explanation": "Because the observed p-value (0.03) is less than the pre-specified significance level (α = 0.05), the decision rule dictates rejecting the null hypothesis at the 5% level of significance. Statistical significance does not inherently prove clinical importance or verify that H0 is true with 3% probability.",
+              "explanation": "Because the observed p-value (0.03) is less than the pre-specified significance level (\u03b1 = 0.05), the decision rule dictates rejecting the null hypothesis at the 5% level of significance. Statistical significance does not inherently prove clinical importance or verify that H0 is true with 3% probability.",
               "keyConcept": "Hypothesis testing decision rule: p-value vs alpha",
               "options": [
                 "Accept H0 as proven",
@@ -1031,8 +2741,8 @@
               "type": "mcq",
               "lecture": 1,
               "text": "If the sample standard deviation stays the same and the sample size increases, what happens to the standard error?",
-              "explanation": "The standard error of the mean is calculated as SE = s / √n. Because sample size (n) is in the denominator, increasing n while keeping the standard deviation constant increases the denominator, thereby decreasing the standard error.",
-              "keyConcept": "Standard error of the mean formula: SE = s / √n",
+              "explanation": "The standard error of the mean is calculated as SE = s / \u221an. Because sample size (n) is in the denominator, increasing n while keeping the standard deviation constant increases the denominator, thereby decreasing the standard error.",
+              "keyConcept": "Standard error of the mean formula: SE = s / \u221an",
               "options": [
                 "It increases",
                 "It decreases",
@@ -1047,7 +2757,7 @@
               "type": "mcq",
               "lecture": 1,
               "text": "In a normal distribution, approximately what percentage of observations lies within one standard deviation of the mean?",
-              "explanation": "Under the empirical (68-95-99.7) rule for a normal distribution, approximately 68.27% of observations fall within ±1 standard deviation of the mean (μ ± 1σ).",
+              "explanation": "Under the empirical (68-95-99.7) rule for a normal distribution, approximately 68.27% of observations fall within \u00b11 standard deviation of the mean (\u03bc \u00b1 1\u03c3).",
               "keyConcept": "Empirical rule: 68% within 1 SD",
               "options": [
                 "34%",
@@ -1127,7 +2837,7 @@
               "type": "mcq",
               "lecture": 1,
               "text": "When is the Central Limit Theorem especially useful in medical research?",
-              "explanation": "The Central Limit Theorem (CLT) is particularly useful in medical research when estimating a population mean from sample data because it guarantees that for sufficiently large samples (n ≥ 30), the sampling distribution of the mean is approximately normal even if the underlying population distribution is not normal.",
+              "explanation": "The Central Limit Theorem (CLT) is particularly useful in medical research when estimating a population mean from sample data because it guarantees that for sufficiently large samples (n \u2265 30), the sampling distribution of the mean is approximately normal even if the underlying population distribution is not normal.",
               "keyConcept": "Central Limit Theorem utility in parameter estimation",
               "options": [
                 "When estimating a population mean from sample data",

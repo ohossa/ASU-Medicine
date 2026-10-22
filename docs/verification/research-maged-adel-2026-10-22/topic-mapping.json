@@ -1,0 +1,686 @@
+[
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q01",
+    "assignedId": "R3-CH1-CLIN-0015",
+    "chapterId": 1,
+    "questionNumber": 1
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q02",
+    "assignedId": "R3-CH1-CLIN-0016",
+    "chapterId": 1,
+    "questionNumber": 2
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q04",
+    "assignedId": "R3-CH1-CLIN-0017",
+    "chapterId": 1,
+    "questionNumber": 4
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q05",
+    "assignedId": "R3-CH1-CLIN-0018",
+    "chapterId": 1,
+    "questionNumber": 5
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q07",
+    "assignedId": "R3-CH1-CLIN-0019",
+    "chapterId": 1,
+    "questionNumber": 7
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q08",
+    "assignedId": "R3-CH1-CLIN-0020",
+    "chapterId": 1,
+    "questionNumber": 8
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q09",
+    "assignedId": "R3-CH1-CLIN-0021",
+    "chapterId": 1,
+    "questionNumber": 9
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q10",
+    "assignedId": "R3-CH1-CLIN-0022",
+    "chapterId": 1,
+    "questionNumber": 10
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q11",
+    "assignedId": "R3-CH1-CLIN-0023",
+    "chapterId": 1,
+    "questionNumber": 11
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q12",
+    "assignedId": "R3-CH1-CLIN-0024",
+    "chapterId": 1,
+    "questionNumber": 12
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q13",
+    "assignedId": "R3-CH1-CLIN-0025",
+    "chapterId": 1,
+    "questionNumber": 13
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q14",
+    "assignedId": "R3-CH1-CLIN-0026",
+    "chapterId": 1,
+    "questionNumber": 14
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q15",
+    "assignedId": "R3-CH1-CLIN-0027",
+    "chapterId": 1,
+    "questionNumber": 15
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q16",
+    "assignedId": "R3-CH1-CLIN-0028",
+    "chapterId": 1,
+    "questionNumber": 16
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q17",
+    "assignedId": "R3-CH1-CLIN-0029",
+    "chapterId": 1,
+    "questionNumber": 17
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q18",
+    "assignedId": "R3-CH1-CLIN-0030",
+    "chapterId": 1,
+    "questionNumber": 18
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q19",
+    "assignedId": "R3-CH1-CLIN-0031",
+    "chapterId": 1,
+    "questionNumber": 19
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q20",
+    "assignedId": "R3-CH1-CLIN-0032",
+    "chapterId": 1,
+    "questionNumber": 20
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q21",
+    "assignedId": "R3-CH1-CLIN-0033",
+    "chapterId": 1,
+    "questionNumber": 21
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q22",
+    "assignedId": "R3-CH1-CLIN-0034",
+    "chapterId": 1,
+    "questionNumber": 22
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q23",
+    "assignedId": "R3-CH1-CLIN-0035",
+    "chapterId": 1,
+    "questionNumber": 23
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q24",
+    "assignedId": "R3-CH1-CLIN-0036",
+    "chapterId": 1,
+    "questionNumber": 24
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q25",
+    "assignedId": "R3-CH1-CLIN-0037",
+    "chapterId": 1,
+    "questionNumber": 25
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q26",
+    "assignedId": "R3-CH1-CLIN-0038",
+    "chapterId": 1,
+    "questionNumber": 26
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q27",
+    "assignedId": "R3-CH1-CLIN-0039",
+    "chapterId": 1,
+    "questionNumber": 27
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q28",
+    "assignedId": "R3-CH1-CLIN-0040",
+    "chapterId": 1,
+    "questionNumber": 28
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q29",
+    "assignedId": "R3-CH1-CLIN-0041",
+    "chapterId": 1,
+    "questionNumber": 29
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q30",
+    "assignedId": "R3-CH1-CLIN-0042",
+    "chapterId": 1,
+    "questionNumber": 30
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q31",
+    "assignedId": "R3-CH1-CLIN-0043",
+    "chapterId": 1,
+    "questionNumber": 31
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q32",
+    "assignedId": "R3-CH1-CLIN-0044",
+    "chapterId": 1,
+    "questionNumber": 32
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q33",
+    "assignedId": "R3-CH1-CLIN-0045",
+    "chapterId": 1,
+    "questionNumber": 33
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q34",
+    "assignedId": "R3-CH1-CLIN-0046",
+    "chapterId": 1,
+    "questionNumber": 34
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q35",
+    "assignedId": "R3-CH1-CLIN-0047",
+    "chapterId": 1,
+    "questionNumber": 35
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q36",
+    "assignedId": "R3-CH1-CLIN-0048",
+    "chapterId": 1,
+    "questionNumber": 36
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q37",
+    "assignedId": "R3-CH1-CLIN-0049",
+    "chapterId": 1,
+    "questionNumber": 37
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q38",
+    "assignedId": "R3-CH1-CLIN-0050",
+    "chapterId": 1,
+    "questionNumber": 38
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q39",
+    "assignedId": "R3-CH1-CLIN-0051",
+    "chapterId": 1,
+    "questionNumber": 39
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH1-Q40",
+    "assignedId": "R3-CH1-CLIN-0052",
+    "chapterId": 1,
+    "questionNumber": 40
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q01",
+    "assignedId": "R3-CH2-CLIN-0016",
+    "chapterId": 2,
+    "questionNumber": 1
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q02",
+    "assignedId": "R3-CH2-CLIN-0017",
+    "chapterId": 2,
+    "questionNumber": 2
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q03",
+    "assignedId": "R3-CH2-CLIN-0018",
+    "chapterId": 2,
+    "questionNumber": 3
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q04",
+    "assignedId": "R3-CH2-CLIN-0019",
+    "chapterId": 2,
+    "questionNumber": 4
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q05",
+    "assignedId": "R3-CH2-CLIN-0020",
+    "chapterId": 2,
+    "questionNumber": 5
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q06",
+    "assignedId": "R3-CH2-CLIN-0021",
+    "chapterId": 2,
+    "questionNumber": 6
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q07",
+    "assignedId": "R3-CH2-CLIN-0022",
+    "chapterId": 2,
+    "questionNumber": 7
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q08",
+    "assignedId": "R3-CH2-CLIN-0023",
+    "chapterId": 2,
+    "questionNumber": 8
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q09",
+    "assignedId": "R3-CH2-CLIN-0024",
+    "chapterId": 2,
+    "questionNumber": 9
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q10",
+    "assignedId": "R3-CH2-CLIN-0025",
+    "chapterId": 2,
+    "questionNumber": 10
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q11",
+    "assignedId": "R3-CH2-CLIN-0026",
+    "chapterId": 2,
+    "questionNumber": 11
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q12",
+    "assignedId": "R3-CH2-CLIN-0027",
+    "chapterId": 2,
+    "questionNumber": 12
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q13",
+    "assignedId": "R3-CH2-CLIN-0028",
+    "chapterId": 2,
+    "questionNumber": 13
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q14",
+    "assignedId": "R3-CH2-CLIN-0029",
+    "chapterId": 2,
+    "questionNumber": 14
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q15",
+    "assignedId": "R3-CH2-CLIN-0030",
+    "chapterId": 2,
+    "questionNumber": 15
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q16",
+    "assignedId": "R3-CH2-CLIN-0031",
+    "chapterId": 2,
+    "questionNumber": 16
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q17",
+    "assignedId": "R3-CH2-CLIN-0032",
+    "chapterId": 2,
+    "questionNumber": 17
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q18",
+    "assignedId": "R3-CH2-CLIN-0033",
+    "chapterId": 2,
+    "questionNumber": 18
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q19",
+    "assignedId": "R3-CH2-CLIN-0034",
+    "chapterId": 2,
+    "questionNumber": 19
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q20",
+    "assignedId": "R3-CH2-CLIN-0035",
+    "chapterId": 2,
+    "questionNumber": 20
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q21",
+    "assignedId": "R3-CH2-CLIN-0036",
+    "chapterId": 2,
+    "questionNumber": 21
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q22",
+    "assignedId": "R3-CH2-CLIN-0037",
+    "chapterId": 2,
+    "questionNumber": 22
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q23",
+    "assignedId": "R3-CH2-CLIN-0038",
+    "chapterId": 2,
+    "questionNumber": 23
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q24",
+    "assignedId": "R3-CH2-CLIN-0039",
+    "chapterId": 2,
+    "questionNumber": 24
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q25",
+    "assignedId": "R3-CH2-CLIN-0040",
+    "chapterId": 2,
+    "questionNumber": 25
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q26",
+    "assignedId": "R3-CH2-CLIN-0041",
+    "chapterId": 2,
+    "questionNumber": 26
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q27",
+    "assignedId": "R3-CH2-CLIN-0042",
+    "chapterId": 2,
+    "questionNumber": 27
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q28",
+    "assignedId": "R3-CH2-CLIN-0043",
+    "chapterId": 2,
+    "questionNumber": 28
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q29",
+    "assignedId": "R3-CH2-CLIN-0044",
+    "chapterId": 2,
+    "questionNumber": 29
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q30",
+    "assignedId": "R3-CH2-CLIN-0045",
+    "chapterId": 2,
+    "questionNumber": 30
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q31",
+    "assignedId": "R3-CH2-CLIN-0046",
+    "chapterId": 2,
+    "questionNumber": 31
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q32",
+    "assignedId": "R3-CH2-CLIN-0047",
+    "chapterId": 2,
+    "questionNumber": 32
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q33",
+    "assignedId": "R3-CH2-CLIN-0048",
+    "chapterId": 2,
+    "questionNumber": 33
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q34",
+    "assignedId": "R3-CH2-CLIN-0049",
+    "chapterId": 2,
+    "questionNumber": 34
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q35",
+    "assignedId": "R3-CH2-CLIN-0050",
+    "chapterId": 2,
+    "questionNumber": 35
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q36",
+    "assignedId": "R3-CH2-CLIN-0051",
+    "chapterId": 2,
+    "questionNumber": 36
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q37",
+    "assignedId": "R3-CH2-CLIN-0052",
+    "chapterId": 2,
+    "questionNumber": 37
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q38",
+    "assignedId": "R3-CH2-CLIN-0053",
+    "chapterId": 2,
+    "questionNumber": 38
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q39",
+    "assignedId": "R3-CH2-CLIN-0054",
+    "chapterId": 2,
+    "questionNumber": 39
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH2-Q40",
+    "assignedId": "R3-CH2-CLIN-0055",
+    "chapterId": 2,
+    "questionNumber": 40
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q01",
+    "assignedId": "R3-CH3-CLIN-0025",
+    "chapterId": 3,
+    "questionNumber": 1
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q02",
+    "assignedId": "R3-CH3-CLIN-0026",
+    "chapterId": 3,
+    "questionNumber": 2
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q03",
+    "assignedId": "R3-CH3-CLIN-0027",
+    "chapterId": 3,
+    "questionNumber": 3
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q04",
+    "assignedId": "R3-CH3-CLIN-0028",
+    "chapterId": 3,
+    "questionNumber": 4
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q05",
+    "assignedId": "R3-CH3-CLIN-0029",
+    "chapterId": 3,
+    "questionNumber": 5
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q06",
+    "assignedId": "R3-CH3-CLIN-0030",
+    "chapterId": 3,
+    "questionNumber": 6
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q07",
+    "assignedId": "R3-CH3-CLIN-0031",
+    "chapterId": 3,
+    "questionNumber": 7
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q08",
+    "assignedId": "R3-CH3-CLIN-0032",
+    "chapterId": 3,
+    "questionNumber": 8
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q09",
+    "assignedId": "R3-CH3-CLIN-0033",
+    "chapterId": 3,
+    "questionNumber": 9
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q10",
+    "assignedId": "R3-CH3-CLIN-0034",
+    "chapterId": 3,
+    "questionNumber": 10
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q11",
+    "assignedId": "R3-CH3-CLIN-0035",
+    "chapterId": 3,
+    "questionNumber": 11
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q12",
+    "assignedId": "R3-CH3-CLIN-0036",
+    "chapterId": 3,
+    "questionNumber": 12
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q13",
+    "assignedId": "R3-CH3-CLIN-0037",
+    "chapterId": 3,
+    "questionNumber": 13
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q14",
+    "assignedId": "R3-CH3-CLIN-0038",
+    "chapterId": 3,
+    "questionNumber": 14
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q15",
+    "assignedId": "R3-CH3-CLIN-0039",
+    "chapterId": 3,
+    "questionNumber": 15
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q16",
+    "assignedId": "R3-CH3-CLIN-0040",
+    "chapterId": 3,
+    "questionNumber": 16
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q17",
+    "assignedId": "R3-CH3-CLIN-0041",
+    "chapterId": 3,
+    "questionNumber": 17
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q20",
+    "assignedId": "R3-CH3-CLIN-0042",
+    "chapterId": 3,
+    "questionNumber": 20
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q21",
+    "assignedId": "R3-CH3-CLIN-0043",
+    "chapterId": 3,
+    "questionNumber": 21
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q22",
+    "assignedId": "R3-CH3-CLIN-0044",
+    "chapterId": 3,
+    "questionNumber": 22
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q24",
+    "assignedId": "R3-CH3-CLIN-0045",
+    "chapterId": 3,
+    "questionNumber": 24
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q25",
+    "assignedId": "R3-CH3-CLIN-0046",
+    "chapterId": 3,
+    "questionNumber": 25
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q26",
+    "assignedId": "R3-CH3-CLIN-0047",
+    "chapterId": 3,
+    "questionNumber": 26
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q27",
+    "assignedId": "R3-CH3-CLIN-0048",
+    "chapterId": 3,
+    "questionNumber": 27
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q29",
+    "assignedId": "R3-CH3-CLIN-0049",
+    "chapterId": 3,
+    "questionNumber": 29
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q30",
+    "assignedId": "R3-CH3-CLIN-0050",
+    "chapterId": 3,
+    "questionNumber": 30
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q31",
+    "assignedId": "R3-CH3-CLIN-0051",
+    "chapterId": 3,
+    "questionNumber": 31
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q32",
+    "assignedId": "R3-CH3-CLIN-0052",
+    "chapterId": 3,
+    "questionNumber": 32
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q33",
+    "assignedId": "R3-CH3-CLIN-0053",
+    "chapterId": 3,
+    "questionNumber": 33
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q34",
+    "assignedId": "R3-CH3-CLIN-0054",
+    "chapterId": 3,
+    "questionNumber": 34
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q35",
+    "assignedId": "R3-CH3-CLIN-0055",
+    "chapterId": 3,
+    "questionNumber": 35
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q36",
+    "assignedId": "R3-CH3-CLIN-0056",
+    "chapterId": 3,
+    "questionNumber": 36
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q37",
+    "assignedId": "R3-CH3-CLIN-0057",
+    "chapterId": 3,
+    "questionNumber": 37
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q38",
+    "assignedId": "R3-CH3-CLIN-0058",
+    "chapterId": 3,
+    "questionNumber": 38
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q39",
+    "assignedId": "R3-CH3-CLIN-0059",
+    "chapterId": 3,
+    "questionNumber": 39
+  },
+  {
+    "sourceOccurrenceId": "MA2026-CH3-Q40",
+    "assignedId": "R3-CH3-CLIN-0060",
+    "chapterId": 3,
+    "questionNumber": 40
+  }
+]

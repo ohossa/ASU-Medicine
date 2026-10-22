@@ -29,8 +29,8 @@ describe('R-3 Scientific Research Bank Integration', () => {
     expect(isModuleActive('R-3')).toBe(true);
   });
 
-  it('has exactly 63 questions distributed across 4 active chapters (3 practical + 1 formative exam)', () => {
-    expect(canonical).toHaveLength(63);
+  it('has exactly 177 questions distributed across 4 active chapters (3 practical + 1 formative exam)', () => {
+    expect(canonical).toHaveLength(177);
 
     // Active Practical Chapters:
     const ch1 = bank.chapters.find((c) => c.id === 1)!;
@@ -38,24 +38,24 @@ describe('R-3 Scientific Research Bank Integration', () => {
     const ch3 = bank.chapters.find((c) => c.id === 3)!;
     const ch8 = bank.chapters.find((c) => c.id === 8)!;
 
-    expect(ch1.subjects[0].questions).toHaveLength(14);
-    expect(ch2.subjects[0].questions).toHaveLength(15);
-    expect(ch3.subjects[0].questions).toHaveLength(24);
-    expect(ch8.subjects[0].questions).toHaveLength(10);
+    expect(ch1.subjects[0].questions).toHaveLength(52); // 14 practical + 38 Dr. Maged Adel MCQs
+    expect(ch2.subjects[0].questions).toHaveLength(55); // 15 practical + 40 Dr. Maged Adel MCQs
+    expect(ch3.subjects[0].questions).toHaveLength(60); // 24 practical + 36 Dr. Maged Adel MCQs
+    expect(ch8.subjects[0].questions).toHaveLength(10); // Formative Exam 1
     expect(ch8.bankSection).toBe('past-exams');
 
     // Outline Chapters:
     expect(bank.chapters.filter((c) => c.id >= 4 && c.id <= 7).every((c) => c.subjects.length === 0)).toBe(true);
   });
 
-  it('contains expected question types across all 63 items', () => {
+  it('contains expected question types across all 177 items', () => {
     const mcqs = canonical.filter((q) => q.type === 'mcq');
     const truefalses = canonical.filter((q) => q.type === 'truefalse');
     const essays = canonical.filter((q) => q.type === 'essay');
     const fillblanks = canonical.filter((q) => q.type === 'fillblank');
     const matchings = canonical.filter((q) => q.type === 'matching');
 
-    expect(mcqs).toHaveLength(44); // 34 practical + 10 formative exam
+    expect(mcqs).toHaveLength(158); // 44 prior + 114 new Dr. Maged Adel MCQs
     expect(truefalses).toHaveLength(5);
     expect(essays).toHaveLength(8);
     expect(fillblanks).toHaveLength(5);
