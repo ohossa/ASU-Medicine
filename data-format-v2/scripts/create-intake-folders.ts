@@ -40,7 +40,7 @@ const STRUCTURE = {
       'MGL-3 [GIT and Liver]',
       'MUG-3 [Urogenital System]',
       'P4-3 [Medical Ethics]',
-      'P5-3 [Doctor-Patient Communication]'
+      'R-3 [Scientific Research]'
     ],
     'semester-2': [
       'CEO-3 [Community Environmental and Occupational Medicine]',
@@ -48,7 +48,7 @@ const STRUCTURE = {
       'ORL-3 [Otorhinolaryngology]',
       'MED1-3 [Foundation of Internal Medicine]',
       'P6-3 [Leadership skills and Management skills]',
-      'R-3 [Scientific Research]'
+      'P5-3 [Doctor-Patient Communication]'
     ]
   },
   'year-4': {

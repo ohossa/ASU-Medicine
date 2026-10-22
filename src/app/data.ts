@@ -409,7 +409,7 @@ export const SYLLABUS_MODULES: Record<number, Record<number, ModuleInfo[]>> = {
       { code: 'MGL-3', name: 'GIT & Liver Module', cp: 13, marks: 260, keywords: ['git', 'liver', 'mgl', 'gastrointestinal', 'gastro', 'stomach', 'intestine', 'colon', 'esophagus', 'digestion', 'gallbladder', 'hepatic'] },
       { code: 'MUG-3', name: 'Urogenital System Module', cp: 10, marks: 200, keywords: ['urogenital', 'renal', 'mug', 'urinary', 'kidney', 'kidneys', 'nephron', 'bladder', 'genital', 'reproductive', 'testis', 'ovary', 'uterus'] },
       { code: 'P4-3', name: 'Medical Ethics', cp: 1.5, marks: 30, keywords: ['ethics', 'medical ethics', 'bioethics', 'ethical'] },
-      { code: 'P5-3', name: 'Doctor-Patient Communication', cp: 1.5, marks: 30, keywords: ['communication', 'doctor', 'patient', 'doctor-patient', 'interpersonal'] },
+      { code: 'R-3', name: 'Scientific Research', cp: 1.5, marks: 30, keywords: ['research', 'scientific', 'scientific research', 'methodology'] },
     ],
     2: [
       { code: 'CEO-3', name: 'Community, Environmental and Occupational Medicine', cp: 6, marks: 120, keywords: ['community', 'environmental', 'occupational', 'ceo', 'public health', 'preventive', 'epidemiology', 'hygiene', 'community medicine'] },
@@ -417,7 +417,7 @@ export const SYLLABUS_MODULES: Record<number, Record<number, ModuleInfo[]>> = {
       { code: 'ORL-3', name: 'Otorhinolaryngology', cp: 7, marks: 140, keywords: ['ent', 'orl', 'otorhinolaryngology', 'ear nose throat', 'larynx', 'pharynx', 'otology', 'rhinology'] },
       { code: 'MED1-3', name: 'Foundation of Internal Medicine', cp: 3, marks: 60, keywords: ['internal medicine', 'med1', 'medicine', 'foundation medicine', 'clinical skills', 'semiology'] },
       { code: 'P6-3', name: 'Leadership skills & Management skills', cp: 1.5, marks: 30, keywords: ['leadership', 'management', 'leadership skills', 'management skills'] },
-      { code: 'R-3', name: 'Scientific Research', cp: 1.5, marks: 30, keywords: ['research', 'scientific', 'scientific research', 'methodology'] },
+      { code: 'P5-3', name: 'Doctor-Patient Communication', cp: 1.5, marks: 30, keywords: ['communication', 'doctor', 'patient', 'doctor-patient', 'interpersonal'] },
     ],
   },
   4: {

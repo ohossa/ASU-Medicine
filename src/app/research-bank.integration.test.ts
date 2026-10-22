@@ -1,5 +1,5 @@
 import { beforeAll, describe, expect, it } from 'vitest';
-import bank from '../imports/year-3/semester-2/R-3.json';
+import bank from '../imports/year-3/semester-1/R-3.json';
 import { validateModuleFile } from '../../data-format-v2/scripts/validate-banks';
 import { ensureModuleDataLoaded, isModuleActive } from './data';
 import { checkAnswerCorrect } from './utils/quiz';
@@ -21,7 +21,7 @@ describe('R-3 Scientific Research Bank Integration', () => {
       moduleCode: 'R-3',
       moduleName: 'Scientific Research',
       year: 3,
-      semester: 2,
+      semester: 1,
       creditPoints: 1.5,
       totalMarks: 30
     });
