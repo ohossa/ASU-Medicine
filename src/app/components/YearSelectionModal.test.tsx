@@ -20,3 +20,37 @@ it('describes browser-only saving in local preview',()=>{
  expect(screen.getByText(/Local preview.*this browser/i)).toBeInTheDocument();
  expect(screen.queryByText(/across devices/)).toBeNull();
 });
+
+it('allows dismissing via close button with default Year 3', ()=>{
+ const dismiss = vi.fn();
+ render(<YearSelectionModal onSelect={vi.fn()} onDismiss={dismiss}/>);
+ const closeBtn = screen.getByRole('button', { name: /close and continue as year 3/i });
+ fireEvent.click(closeBtn);
+ expect(dismiss).toHaveBeenCalledWith(3);
+});
+
+it('allows dismissing via skip button with default Year 3', ()=>{
+ const dismiss = vi.fn();
+ render(<YearSelectionModal onSelect={vi.fn()} onDismiss={dismiss}/>);
+ const skipBtn = screen.getByRole('button', { name: /skip for now — continue as year 3/i });
+ fireEvent.click(skipBtn);
+ expect(dismiss).toHaveBeenCalledWith(3);
+});
+
+it('allows entering portal as Year 3 when saving fails', async ()=>{
+ const save = vi.fn().mockRejectedValue(new Error('Cloud sync error'));
+ const dismiss = vi.fn();
+ render(<YearSelectionModal onSelect={save} onDismiss={dismiss}/>);
+ fireEvent.click(screen.getByRole('button', { name: /year3 yearDesc3/ }));
+ await waitFor(() => expect(screen.getByRole('alert')).toBeInTheDocument());
+ const fallbackBtn = screen.getByRole('button', { name: /continue to portal as year 3/i });
+ fireEvent.click(fallbackBtn);
+ expect(dismiss).toHaveBeenCalledWith(3);
+});
+
+it('handles Escape key to dismiss as Year 3', ()=>{
+ const dismiss = vi.fn();
+ render(<YearSelectionModal onSelect={vi.fn()} onDismiss={dismiss}/>);
+ fireEvent.keyDown(window, { key: 'Escape' });
+ expect(dismiss).toHaveBeenCalledWith(3);
+});

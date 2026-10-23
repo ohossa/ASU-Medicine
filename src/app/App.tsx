@@ -13,7 +13,7 @@ import { CorrectionStatus } from './components/CorrectionStatus';
 import { useShufflePreference } from './preferences/useShufflePreference';
 import { shuffledCopy, restoreQuestionOrder, sessionMatchesQuestions } from './preferences/shuffle';
 import { ReportProvider } from './reports/ReportQuestion';
-import { useState, useEffect, useRef, useMemo, Suspense, lazy, useLayoutEffect } from 'react';
+import { useState, useEffect, useRef, useMemo, Suspense, lazy, useLayoutEffect, useCallback } from 'react';
 import { BrowserRouter, Routes, Route, Navigate, useParams, useNavigate, useLocation } from 'react-router';
 import safeStorage from './utils/safeStorage';
 import { ProgressProvider } from './store/progress';
@@ -406,6 +406,41 @@ function MainApp() {
   // Student Year tracking
   const {year: studentYear, saveYear: setStudentYear, loading: yearLoading, error: yearError, retry: retryYear, localPreview} = useAcademicYear();
 
+  const [yearModalDismissed, setYearModalDismissed] = useState<boolean>(() => {
+    try {
+      return sessionStorage.getItem('asu_year_modal_dismissed') === 'true' ||
+             localStorage.getItem('asu_year_modal_dismissed') === 'true';
+    } catch {
+      return false;
+    }
+  });
+
+  const [fallbackYear, setFallbackYear] = useState<number | null>(() => {
+    try {
+      const v = localStorage.getItem('asu_medical_student_year_fallback') ||
+                localStorage.getItem('asu_medical_student_year');
+      const n = v ? parseInt(v, 10) : null;
+      return n && n >= 1 && n <= 5 ? n : null;
+    } catch {
+      return null;
+    }
+  });
+
+  const activeStudentYear = studentYear ?? fallbackYear ?? (yearModalDismissed ? 3 : null);
+
+  const handleDismissYearModal = useCallback((chosenFallbackYear: number = 3) => {
+    setFallbackYear(chosenFallbackYear);
+    setYearModalDismissed(true);
+    try {
+      sessionStorage.setItem('asu_year_modal_dismissed', 'true');
+      localStorage.setItem('asu_year_modal_dismissed', 'true');
+      localStorage.setItem('asu_medical_student_year_fallback', String(chosenFallbackYear));
+      localStorage.setItem('asu_medical_student_year', String(chosenFallbackYear));
+    } catch {
+      // Storage unavailable or disabled
+    }
+  }, []);
+
   // Navigation states
   const [screen, setScreen] = useState<Screen>(() => {
     try {
@@ -681,7 +716,7 @@ function MainApp() {
     const correct=scoreParts.reduce((n,s)=>n+s.correct,0);
     const topicResults=topicScores(questions,answers);
 
-    if(selectedModule && selectedYear===studentYear) learning.submit({moduleCode:selectedModule.code,items:questions.flatMap((q,i)=>answers[i]===undefined?[]:[{questionId:String(q.id),answer:answers[i]}])});
+    if(selectedModule && selectedYear===activeStudentYear) learning.submit({moduleCode:selectedModule.code,items:questions.flatMap((q,i)=>answers[i]===undefined?[]:[{questionId:String(q.id),answer:answers[i]}])});
     setIsFromHistory(false);
     saveQuizResult({
       questionSnapshot:freezeAttempt(questions),
@@ -892,7 +927,7 @@ function MainApp() {
         url="academic-year"
       >
         <AcademicYearProfilePage
-          studentYear={studentYear}
+          studentYear={activeStudentYear}
           setStudentYear={setStudentYear}
           setScreen={setScreen}
           setSelectedYear={setSelectedYear}
@@ -953,7 +988,7 @@ function MainApp() {
         />
       </UserButton.MenuItems>
     </UserButton>
-  ), [user, hasOwnerAccess, language, transitionTo, navigate, setQuizPayload, setResultPayload, setShowPortalsModal, setShowSupportModal, studentYear, setStudentYear, setScreen, setSelectedYear, setSelectedSemester, setSelectedModule, setStudyMode, setSelectedChapter, learning.data?.profile]);
+  ), [user, hasOwnerAccess, language, transitionTo, navigate, setQuizPayload, setResultPayload, setShowPortalsModal, setShowSupportModal, activeStudentYear, setStudentYear, setScreen, setSelectedYear, setSelectedSemester, setSelectedModule, setStudyMode, setSelectedChapter, learning.data?.profile]);
 
   return (
     <div className="min-h-screen text-gray-900 dark:text-gray-100 font-manrope selection:bg-physiology/20 selection:text-physiology-dark overflow-x-hidden">
@@ -1022,11 +1057,11 @@ function MainApp() {
 
         <>
           <CorrectionStatus />{studyLinkError&&<p role="alert" className="p-4 text-center">{studyLinkError}</p>}
-          <RouteDataGate year={studentYear}><Routes location={location}>
+          <RouteDataGate year={activeStudentYear}><Routes location={location}>
             {/* Main Dashboard page */}
             <Route path="/" element={
               <Suspense fallback={<div className="fixed inset-0 bg-background pointer-events-none" />}>
-                {yearLoading ? <div role="status" className="p-8 text-center text-muted-foreground">Loading your saved year…</div> : <Dashboard studentYear={studentYear}
+                {yearLoading ? <div role="status" className="p-8 text-center text-muted-foreground">Loading your saved year…</div> : <Dashboard studentYear={activeStudentYear}
                   userButton={customUserButton} 
                   onOpenTrackerSelector={() => navigate('/learning')}
                 />}
@@ -1093,7 +1128,7 @@ function MainApp() {
                     handleSelectSubject={handleSelectSubject}
                     handleQuickStart={handleQuickStart}
                     quizPayload={quizPayload}
-                    handleAnswerXP={(q,answer)=>{if(selectedModule && selectedYear===studentYear)learning.submit({moduleCode:selectedModule.code,items:[{questionId:String(q.id),answer}]});}}
+                    handleAnswerXP={(q,answer)=>{if(selectedModule && selectedYear===activeStudentYear)learning.submit({moduleCode:selectedModule.code,items:[{questionId:String(q.id),answer}]});}}
                     handleFinishQuiz={handleFinishQuiz}
                     resultPayload={resultPayload}
                     handleRetake={handleRetake}
@@ -1119,7 +1154,7 @@ function MainApp() {
             <Route path="/marks-calculator" element={
               <FeatureErrorBoundary name="MarksCalculator">
                 <Suspense fallback={<LoadingScreen compact label="Opening this view…"/>}>
-                  <MarksCalculator studentYear={studentYear??selectedYear??1}
+                  <MarksCalculator studentYear={activeStudentYear??selectedYear??3}
                     onBack={() => navigate('/')}
                     userButton={customUserButton}
                   />
@@ -1173,7 +1208,7 @@ function MainApp() {
             {['1', '2', '3', '4', '5'].map(yr => (
               <Route key={`year-tracker-${yr}`} path={`/year-${yr}/:code/tracker`} element={
                 <Suspense fallback={<LoadingScreen compact label="Opening this view…"/>}>
-                  {yearLoading ? <div role="status">Loading your year…</div> : studentYear===Number(yr) ? <SyllabusTrackerPage key={user?.id} userButton={customUserButton} /> : <Navigate to="/learning" replace/>}
+                  {yearLoading ? <div role="status">Loading your year…</div> : activeStudentYear===Number(yr) ? <SyllabusTrackerPage key={user?.id} userButton={customUserButton} /> : <Navigate to="/learning" replace/>}
                 </Suspense>
               } />
             ))}
@@ -1278,8 +1313,14 @@ function MainApp() {
       )}
 
       {/* YEAR SELECTION ONBOARDING MODAL */}
-      {!yearLoading && !studentYear && (
-        <YearSelectionModal localPreview={localPreview} onSelect={setStudentYear} loadError={yearError} onRetry={retryYear} />
+      {!yearLoading && !studentYear && !yearModalDismissed && (
+        <YearSelectionModal
+          localPreview={localPreview}
+          onSelect={setStudentYear}
+          onDismiss={handleDismissYearModal}
+          loadError={yearError}
+          onRetry={retryYear}
+        />
       )}
 
       {/* SUPPORT & BUG REPORT MODAL */}
