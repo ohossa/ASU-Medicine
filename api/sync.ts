@@ -155,9 +155,21 @@ export default async function handler(req: any, res: any) {
 
     let verified;
     try {
+      const origin = typeof req.headers['origin'] === 'string' ? req.headers['origin'] : '';
+      const host = typeof req.headers['host'] === 'string' ? req.headers['host'] : '';
+      const allowedParties = Array.from(new Set([
+        'https://asu.codes',
+        'https://www.asu.codes',
+        'https://asu-medicine.vercel.app',
+        ...(process.env.REPORT_ALLOWED_ORIGINS ? process.env.REPORT_ALLOWED_ORIGINS.split(',').map((s: string)=>s.trim()).filter(Boolean) : []),
+        ...(origin ? [origin] : []),
+        ...(host ? [`https://${host}`, `http://${host}`] : []),
+        ...(process.env.VERCEL_URL ? [`https://${process.env.VERCEL_URL}`] : [])
+      ])).filter(Boolean);
+
       verified = await verifyToken(token, {
         secretKey: process.env.CLERK_SECRET_KEY,
-        authorizedParties: (process.env.REPORT_ALLOWED_ORIGINS || 'https://asu.codes,https://www.asu.codes').split(',').map(s=>s.trim()).filter(Boolean),
+        authorizedParties: allowedParties,
       });
     } catch (err: any) {
       return res.status(401).json({ error: 'Unauthorized: Clerk verification failed', details: err.message });
