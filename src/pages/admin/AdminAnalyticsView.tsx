@@ -34,6 +34,8 @@ export default function AdminAnalyticsView() {
   const [studentYearFilter, setStudentYearFilter] = useState<number | "all">("all");
   const [studentSortBy, setStudentSortBy] = useState<"xp" | "questions" | "accuracy" | "time">("xp");
   const [expandedStudentId, setExpandedStudentId] = useState<string | null>(null);
+  const [onlineOnlyFilter, setOnlineOnlyFilter] = useState(false);
+  const [autoRefresh, setAutoRefresh] = useState(false);
 
   const [moduleSearch, setModuleSearch] = useState("");
   const [moduleYearFilter, setModuleYearFilter] = useState<number | "all">("all");
@@ -69,9 +71,18 @@ export default function AdminAnalyticsView() {
     fetchAnalytics();
   }, []);
 
+  useEffect(() => {
+    if (!autoRefresh) return;
+    const interval = setInterval(() => {
+      fetchAnalytics();
+    }, 15000);
+    return () => clearInterval(interval);
+  }, [autoRefresh]);
+
   // Filter students
   const filteredStudents = (data?.students || [])
     .filter((s) => {
+      if (onlineOnlyFilter && !s.isOnline) return false;
       if (studentYearFilter !== "all" && s.year !== studentYearFilter) return false;
       if (!studentSearch.trim()) return true;
       const q = studentSearch.toLowerCase();
@@ -116,15 +127,30 @@ export default function AdminAnalyticsView() {
             </p>
           </div>
 
-          <button
-            type="button"
-            onClick={fetchAnalytics}
-            disabled={loading}
-            className="inline-flex items-center gap-2 self-start rounded-xl border border-stone-200 bg-stone-50 px-3.5 py-2 text-xs font-semibold text-stone-700 hover:bg-stone-100 dark:border-stone-700 dark:bg-stone-800 dark:text-stone-200 transition-colors"
-          >
-            <RefreshCw size={13} className={loading ? "animate-spin" : ""} />
-            Refresh Metrics
-          </button>
+          <div className="flex flex-wrap items-center gap-2 self-start">
+            <button
+              type="button"
+              onClick={() => setAutoRefresh(!autoRefresh)}
+              className={`inline-flex items-center gap-1.5 rounded-xl px-3.5 py-2 text-xs font-semibold transition-all ${
+                autoRefresh
+                  ? "bg-emerald-100 text-emerald-800 dark:bg-emerald-950/80 dark:text-emerald-300 border border-emerald-300 dark:border-emerald-700 shadow-sm"
+                  : "border border-stone-200 bg-stone-50 text-stone-600 hover:bg-stone-100 dark:border-stone-700 dark:bg-stone-800 dark:text-stone-400"
+              }`}
+            >
+              <span className={`h-2 w-2 rounded-full ${autoRefresh ? "bg-emerald-500 animate-pulse" : "bg-stone-400"}`} />
+              {autoRefresh ? "Live Presence (15s)" : "Auto-Refresh Off"}
+            </button>
+
+            <button
+              type="button"
+              onClick={fetchAnalytics}
+              disabled={loading}
+              className="inline-flex items-center gap-2 rounded-xl border border-stone-200 bg-stone-50 px-3.5 py-2 text-xs font-semibold text-stone-700 hover:bg-stone-100 dark:border-stone-700 dark:bg-stone-800 dark:text-stone-200 transition-colors"
+            >
+              <RefreshCw size={13} className={loading ? "animate-spin" : ""} />
+              Refresh
+            </button>
+          </div>
         </div>
 
         {/* Tab Navigation */}
@@ -177,7 +203,26 @@ export default function AdminAnalyticsView() {
       {activeTab === "overview" && data && (
         <div className="space-y-6 animate-in fade-in duration-200">
           {/* Key Metric KPI Cards */}
-          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
+            <div className="rounded-2xl border border-emerald-500/40 bg-emerald-50/70 p-4 shadow-sm backdrop-blur-md dark:border-emerald-500/30 dark:bg-emerald-950/40 ring-1 ring-emerald-500/20">
+              <div className="flex items-center justify-between text-emerald-800 dark:text-emerald-300 mb-2">
+                <span className="text-xs font-bold uppercase tracking-wider flex items-center gap-1.5">
+                  <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                  </span>
+                  Online Now
+                </span>
+                <Users size={16} className="text-emerald-600 dark:text-emerald-400" />
+              </div>
+              <p className="text-2xl font-black tracking-tight text-emerald-950 dark:text-emerald-50">
+                {data.summary.onlineNow ?? 1}
+              </p>
+              <p className="text-[11px] text-emerald-700 dark:text-emerald-400 mt-1 font-medium">
+                Active in last 5m
+              </p>
+            </div>
+
             <div className="rounded-2xl border border-stone-200/80 bg-white/70 p-4 shadow-sm backdrop-blur-md dark:border-stone-800 dark:bg-stone-900/60">
               <div className="flex items-center justify-between text-stone-500 dark:text-stone-400 mb-2">
                 <span className="text-xs font-medium uppercase tracking-wider">Total Enrolled</span>
@@ -224,7 +269,7 @@ export default function AdminAnalyticsView() {
               <p className="text-[11px] text-stone-500 dark:text-stone-400 mt-1">Logged practice hours</p>
             </div>
 
-            <div className="col-span-2 sm:col-span-1 rounded-2xl border border-stone-200/80 bg-white/70 p-4 shadow-sm backdrop-blur-md dark:border-stone-800 dark:bg-stone-900/60">
+            <div className="rounded-2xl border border-stone-200/80 bg-white/70 p-4 shadow-sm backdrop-blur-md dark:border-stone-800 dark:bg-stone-900/60">
               <div className="flex items-center justify-between text-stone-500 dark:text-stone-400 mb-2">
                 <span className="text-xs font-medium uppercase tracking-wider">Active Modules</span>
                 <Layers size={16} className="text-purple-600" />
@@ -337,6 +382,19 @@ export default function AdminAnalyticsView() {
             </div>
 
             <div className="flex flex-wrap items-center gap-2">
+              <button
+                type="button"
+                onClick={() => setOnlineOnlyFilter(!onlineOnlyFilter)}
+                className={`inline-flex items-center gap-1.5 rounded-xl px-3 py-2 text-xs font-semibold transition-all ${
+                  onlineOnlyFilter
+                    ? "bg-emerald-600 text-white shadow-sm"
+                    : "border border-stone-200 bg-stone-50/60 text-stone-700 hover:bg-stone-100 dark:border-stone-700 dark:bg-stone-800 dark:text-stone-300"
+                }`}
+              >
+                <span className={`h-2 w-2 rounded-full ${onlineOnlyFilter ? "bg-white" : "bg-emerald-500 animate-pulse"}`} />
+                Online Only ({data.students.filter(s => s.isOnline).length})
+              </button>
+
               <select
                 value={studentYearFilter}
                 onChange={(e) => setStudentYearFilter(e.target.value === "all" ? "all" : Number(e.target.value))}
@@ -382,10 +440,17 @@ export default function AdminAnalyticsView() {
                           {stu.name.slice(0, 2).toUpperCase()}
                         </div>
                         <div>
-                          <div className="flex items-center gap-2">
+                          <div className="flex flex-wrap items-center gap-2">
                             <h3 className="text-sm font-semibold text-stone-900 dark:text-stone-100">
                               {stu.name}
                             </h3>
+                            {stu.isOnline && (
+                              <span className="inline-flex items-center gap-1 rounded-full bg-emerald-100 px-2 py-0.5 text-[10px] font-bold text-emerald-800 dark:bg-emerald-950 dark:text-emerald-300 ring-1 ring-emerald-500/30">
+                                <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
+                                Online now
+                                {stu.activeModule ? ` · in ${stu.activeModule}` : ""}
+                              </span>
+                            )}
                             <span className="rounded-full bg-stone-100 px-2 py-0.5 text-[10px] font-semibold text-stone-600 dark:bg-stone-800 dark:text-stone-300">
                               Year {stu.year}
                             </span>

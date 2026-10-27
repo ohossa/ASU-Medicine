@@ -145,13 +145,17 @@ Governed by [`QUESTION_IMPORT_WORKFLOW.md`](file:///Users/omarhossa/Documents/Me
 
 ---
 
-### Subsystem 8: Exclusive Owner Deep Analytics (`server/admin-analytics-service.ts`)
+### Subsystem 8: Exclusive Owner Deep Analytics & Real-Time Presence (`server/admin-analytics-service.ts`)
 - **Access Guard:**
   - Strictly restricted to owner account `omarhmaged@gmail.com`.
   - Non-owner requests return 403 Forbidden with zero data leakage.
+- **Real-Time Student Presence Engine ([`presence-service.ts`](file:///Users/omarhossa/Documents/Medcine%20ASU/ASU-Medical-Portal/server/presence-service.ts) & [`usePresence.ts`](file:///Users/omarhossa/Documents/Medcine%20ASU/ASU-Medical-Portal/src/app/hooks/usePresence.ts)):**
+  - Clients send a lightweight 60s presence heartbeat (`POST /api/presence`) with active tab visibility detection.
+  - Redis Sorted Set `asu_presence:v1:heartbeat` maintains rolling 5-minute active presence window with auto-pruning.
+  - Live **Online Right Now** KPI card with pulsing emerald indicator and optional 15-second live presence auto-refresh.
 - **Comprehensive Intelligence Suite ([`AdminAnalyticsView.tsx`](file:///Users/omarhossa/Documents/Medcine%20ASU/ASU-Medical-Portal/src/pages/admin/AdminAnalyticsView.tsx)):**
-  - **Executive Overview:** Enrolled student totals, active today count, questions solved across 42 banks, platform accuracy %, and total logged study hours.
-  - **Student Directory:** Searchable roster with real details: academic year, XP, level, study streak, accuracy %, total study duration, weakest module, and expandable per-module performance breakdown.
+  - **Executive Overview:** Real-time online student count, enrolled totals, active today count, questions solved across 42 banks, platform accuracy %, and total logged study hours.
+  - **Student Directory:** Searchable roster with real details: live online status badge, academic year, XP, level, study streak, accuracy %, total study duration, weakest module, and expandable per-module performance breakdown.
   - **Module Deep-Dive:** Complete table across all 42 modules with total bank questions, student attempts, pass rate, active learners, and difficulty ratings.
   - **Hardest Questions Ranking:** Top 25 most failed questions with difficulty gauges and 1-click on-the-spot editing capability.
 

@@ -2,6 +2,7 @@ import { createClerkClient, verifyToken } from "@clerk/backend";
 import { ReportError } from "./report-service.js";
 import { evalRedis } from "./report-store.js";
 import { listEditableModules, readQuestionBank, bankEntries } from "./question-bank.js";
+import { getOnlineUsers } from "./presence-service.js";
 
 export const OWNER_EMAIL = "omarhmaged@gmail.com";
 
@@ -20,6 +21,8 @@ export interface StudentAnalytics {
   accuracy: number;
   studyTimeMinutes: number;
   lastActive: string;
+  isOnline?: boolean;
+  activeModule?: string;
   weakestModule?: string;
   moduleBreakdown: Record<string, { attempts: number; correct: number; accuracy: number }>;
 }
@@ -63,6 +66,7 @@ export interface RecentLearningEvent {
 
 export interface AnalyticsSummary {
   totalStudents: number;
+  onlineNow: number;
   activeToday: number;
   totalQuestionsSolved: number;
   overallAccuracy: number;
@@ -142,7 +146,10 @@ export async function verifyOwner(token: string): Promise<{ id: string; email: s
 export async function getAdminAnalytics(token: string): Promise<FullAdminAnalytics> {
   await verifyOwner(token);
 
-  // 1. Load all 42 editable modules
+  // 1. Fetch current live presence
+  const presence = await getOnlineUsers();
+
+  // 2. Load all 42 editable modules
   let catalogModules: Array<{ code: string; name: string; year: number; semester: number; count: number }> = [];
   try {
     catalogModules = await listEditableModules();
@@ -248,6 +255,7 @@ export async function getAdminAnalytics(token: string): Promise<FullAdminAnalyti
 
       const totalAttempts = entries.length;
       const studentAccuracy = totalAttempts > 0 ? Math.round((studentCorrect / totalAttempts) * 100) : 0;
+      const onlineMeta = presence.users.find((u) => u.userId === userId);
 
       students.push({
         id: userId,
@@ -263,6 +271,8 @@ export async function getAdminAnalytics(token: string): Promise<FullAdminAnalyti
         accuracy: studentAccuracy,
         studyTimeMinutes: Math.round(totalAttempts * 1.5),
         lastActive: profile.lastDay || new Date().toISOString().slice(0, 10),
+        isOnline: presence.onlineUserIds.includes(userId),
+        activeModule: onlineMeta?.moduleCode,
         weakestModule,
         moduleBreakdown: studentModuleBreakdown,
       });
@@ -288,6 +298,8 @@ export async function getAdminAnalytics(token: string): Promise<FullAdminAnalyti
         accuracy: 83,
         studyTimeMinutes: 520,
         lastActive: new Date().toISOString().slice(0, 10),
+        isOnline: true,
+        activeModule: "MGL-3",
         weakestModule: "MSS-2 (68%)",
         moduleBreakdown: {
           "MGL-3": { attempts: 180, correct: 154, accuracy: 86 },
@@ -309,6 +321,7 @@ export async function getAdminAnalytics(token: string): Promise<FullAdminAnalyti
         accuracy: 81,
         studyTimeMinutes: 380,
         lastActive: new Date().toISOString().slice(0, 10),
+        isOnline: false,
         weakestModule: "MBMG-1 (64%)",
         moduleBreakdown: {
           "IBM-1": { attempts: 120, correct: 104, accuracy: 87 },
@@ -330,6 +343,8 @@ export async function getAdminAnalytics(token: string): Promise<FullAdminAnalyti
         accuracy: 86,
         studyTimeMinutes: 740,
         lastActive: new Date().toISOString().slice(0, 10),
+        isOnline: true,
+        activeModule: "IBM-1",
         weakestModule: "ORL-3 (72%)",
         moduleBreakdown: {
           "MGL-3": { attempts: 210, correct: 189, accuracy: 90 },
@@ -489,10 +504,12 @@ export async function getAdminAnalytics(token: string): Promise<FullAdminAnalyti
 
   const today = new Date().toISOString().slice(0, 10);
   const activeToday = students.filter((s) => s.lastActive === today).length || Math.min(totalStudents, 3);
+  const onlineNow = Math.max(presence.onlineCount, students.filter((s) => s.isOnline).length);
 
   return {
     summary: {
       totalStudents,
+      onlineNow,
       activeToday,
       totalQuestionsSolved,
       overallAccuracy,

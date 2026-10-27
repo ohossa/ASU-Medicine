@@ -49,6 +49,7 @@ describe("Admin Analytics Security & Restriction (omarhmaged@gmail.com)", () => 
     // Summary validation
     expect(data.summary).toBeDefined();
     expect(data.summary.totalStudents).toBeGreaterThan(0);
+    expect(data.summary.onlineNow).toBeGreaterThanOrEqual(1);
     expect(data.summary.totalQuestionsSolved).toBeGreaterThan(0);
     expect(data.summary.overallAccuracy).toBeGreaterThan(0);
     expect(data.summary.moduleCount).toBeGreaterThan(0);

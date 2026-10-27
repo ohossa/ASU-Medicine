@@ -86,6 +86,7 @@ import { useQuizSession, clearLocalDrafts } from './hooks/useQuizSession';
 import type { QuizSessionSave } from './hooks/useQuizSession';
 import QuizResumeCard from './components/QuizResumeCard';
 import { useCloudSync } from './hooks/useCloudSync';
+import { usePresence } from './hooks/usePresence';
 import { useAcademicYear } from './preferences/useAcademicYear';
 import { YearSelectionModal } from './components/YearSelectionModal';
 import {
@@ -382,6 +383,7 @@ function MainApp() {
   
   // Initialize automatic cloud synchronization
   useCloudSync();
+  usePresence();
 
   // Startup cleanup: remove stale quiz sessions and local drafts (>7 days old or finished)
   useEffect(() => {
