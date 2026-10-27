@@ -48,7 +48,7 @@ if (redisUrl) {
       const keys: string[] = [];
       let cursor = '0';
       do {
-        const [nextCursor, batch] = await tcpClient!.scan(cursor, 'MATCH', pattern, 'COUNT', 100);
+        const [nextCursor, batch] = await tcpClient!.scan(cursor, 'MATCH', pattern, 'COUNT', 500);
         cursor = nextCursor;
         keys.push(...batch);
       } while (cursor !== '0');
@@ -76,7 +76,7 @@ if (redisUrl) {
       const keys: string[] = [];
       let cursor = 0;
       do {
-        const result = await restClient!.scan(cursor, { match: pattern, count: 100 });
+        const result = await restClient!.scan(cursor, { match: pattern, count: 500 });
         cursor = Number(result[0]);
         keys.push(...(result[1] as string[]));
       } while (cursor !== 0);

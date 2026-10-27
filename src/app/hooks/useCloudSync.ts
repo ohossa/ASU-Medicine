@@ -164,10 +164,10 @@ export function useCloudSync() {
 
     let isMounted = true;
     let pulling = false;
-    const IDLE_INTERVAL_MS = 300_000; // 5 minutes background interval
+    const IDLE_INTERVAL_MS = 600_000; // 10 minutes background interval (halves background Redis sync traffic)
 
     const pullData = async () => {
-      if (pulling || isSyncing.current || document.hidden) return;
+      if (pulling || isSyncing.current || (typeof document !== 'undefined' && document.hidden)) return;
       pulling = true;
       updateCloudSyncInfo({ status: 'syncing' });
       const before = new Map<string,string|null>();

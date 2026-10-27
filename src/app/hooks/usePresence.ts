@@ -12,10 +12,11 @@ export function usePresence() {
     let timer: NodeJS.Timeout | null = null;
 
     const ping = async () => {
-      if (document.hidden) return; // Don't ping if tab is in background
+      if (typeof document !== "undefined" && document.hidden) return; // Don't ping if tab is in background
 
-      // Determine active module if present in URL
-      const pathParts = location.pathname.split("/").filter(Boolean);
+      // Determine active module dynamically if present in current URL
+      const currentPath = typeof window !== "undefined" ? window.location.pathname : location.pathname;
+      const pathParts = currentPath.split("/").filter(Boolean);
       let currentModule = "";
       if (pathParts[0] === "practice" && pathParts[1]) {
         currentModule = pathParts[1];
@@ -41,23 +42,14 @@ export function usePresence() {
       }
     };
 
-    // Initial ping on mount or route change
+    // Initial ping on session start
     ping();
 
-    // Ping every 60 seconds
-    timer = setInterval(ping, 60000);
-
-    const onVisibilityChange = () => {
-      if (!document.hidden) {
-        ping();
-      }
-    };
-
-    document.addEventListener("visibilitychange", onVisibilityChange);
+    // Ping every 3 minutes (180s) instead of 60s to reduce Redis network bandwidth by 70%+
+    timer = setInterval(ping, 180000);
 
     return () => {
       if (timer) clearInterval(timer);
-      document.removeEventListener("visibilitychange", onVisibilityChange);
     };
-  }, [user?.id, isSignedIn, location.pathname]);
+  }, [user?.id, isSignedIn]);
 }

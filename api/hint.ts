@@ -533,7 +533,7 @@ const kvUrl = process.env.KV_REST_API_URL || process.env.UPSTASH_REDIS_REST_URL 
 const kvToken = process.env.KV_REST_API_TOKEN || process.env.UPSTASH_REDIS_REST_TOKEN || '';
 const redisUrl = process.env.REDIS_URL || '';
 
-let dbClient: { get: (key: string) => Promise<any>; set: (key: string, value: any) => Promise<any> };
+let dbClient: { get: (key: string) => Promise<any>; set: (key: string, value: any, opts?: { EX?: number }) => Promise<any> };
 
 if (redisUrl) {
   const tcpClient = new ioredis(redisUrl);
@@ -543,15 +543,26 @@ if (redisUrl) {
       if (!val) return null;
       try { return JSON.parse(val); } catch { return val; }
     },
-    set: async (key: string, value: any) => {
-      await tcpClient.set(key, typeof value === 'string' ? value : JSON.stringify(value));
+    set: async (key: string, value: any, opts?: { EX?: number }) => {
+      const valStr = typeof value === 'string' ? value : JSON.stringify(value);
+      if (opts?.EX) {
+        await tcpClient.set(key, valStr, 'EX', opts.EX);
+      } else {
+        await tcpClient.set(key, valStr);
+      }
     },
   };
 } else if (kvUrl && kvToken) {
   const restClient = new UpstashRedis({ url: kvUrl, token: kvToken });
   dbClient = {
     get: async (key: string) => restClient.get(key),
-    set: async (key: string, value: any) => restClient.set(key, value),
+    set: async (key: string, value: any, opts?: { EX?: number }) => {
+      if (opts?.EX) {
+        await restClient.set(key, value, { ex: opts.EX });
+      } else {
+        await restClient.set(key, value);
+      }
+    },
   };
 } else {
   dbClient = { get: async () => null, set: async () => {} };
@@ -571,7 +582,8 @@ async function checkRateLimit(userId: string): Promise<boolean> {
   recent.push(now);
   // Trim to max to prevent unbounded growth
   if (recent.length > RATE_LIMIT_MAX) recent.shift();
-  await dbClient.set(key, recent);
+  // Expire in 120 seconds to prevent lingering zombie keys in Redis
+  await dbClient.set(key, recent, { EX: 120 });
   return true;
 }
 
