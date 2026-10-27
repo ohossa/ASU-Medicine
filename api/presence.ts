@@ -27,9 +27,12 @@ export default async function handler(req: Request, res: Response) {
         body = {};
       }
     }
-    const userId = body?.userId || "anonymous";
-    const alias = body?.alias;
-    const moduleCode = body?.moduleCode;
+    const rawId = typeof body?.userId === "string" ? body.userId.trim() : "";
+    const userId = /^[a-zA-Z0-9_-]{1,64}$/.test(rawId) ? rawId : "anonymous";
+    const rawAlias = typeof body?.alias === "string" ? body.alias.trim() : "";
+    const alias = rawAlias ? rawAlias.slice(0, 40) : "Student";
+    const rawModule = typeof body?.moduleCode === "string" ? body.moduleCode.trim() : "";
+    const moduleCode = /^[A-Z0-9-]{1,20}$/.test(rawModule) ? rawModule : undefined;
 
     const onlineCount = await recordPresence({ userId, alias, moduleCode });
     return res.status(200).json({ ok: true, onlineCount });

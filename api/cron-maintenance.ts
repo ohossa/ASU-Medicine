@@ -20,9 +20,13 @@ export default async function handler(req: Req, res: Res) {
   res.setHeader('Cache-Control', 'no-store, max-age=0');
   res.setHeader('X-Content-Type-Options', 'nosniff');
 
-  // 1. Authenticate with CRON_SECRET if configured in production
+  // 1. Authenticate with CRON_SECRET
   const cronSecret = process.env.CRON_SECRET;
-  if (cronSecret) {
+  if (!cronSecret) {
+    if (process.env.NODE_ENV !== 'test') {
+      return res.status(500).json({ error: 'Server misconfigured: CRON_SECRET is not set' });
+    }
+  } else {
     const authHeader = req.headers['authorization'] || req.headers['Authorization'];
     const token = typeof authHeader === 'string' ? authHeader.replace(/^Bearer\s+/i, '').trim() : '';
     if (token !== cronSecret) {

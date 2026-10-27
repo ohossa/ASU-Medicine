@@ -286,6 +286,14 @@ The student reporting pipeline (`server/report-question.ts`, `server/report-stor
 - **Auth Resilience:** Student authentication resolves valid JWT token claims directly if external Clerk REST endpoints experience latency, preserving reporting availability.
 - **Direct Faculty Review Trust:** Student reporting interface reflects human-first faculty review, explicitly removing legacy AI review references.
 
+### 6.6 Edge & Serverless Security Architecture
+- **Origin Reflection Protection:** Token verification across serverless functions (`api/sync.ts`, `server/admin-analytics-service.ts`) enforces strict whitelists of verified production domains (`https://asu.codes`, `https://www.asu.codes`, `https://asu-medicine.vercel.app`) without reflecting unverified request `Origin` headers into authorized parties.
+- **Fail-Closed Cron & Service Authentication:** Maintenance routes (`api/cron-maintenance.ts`) fail closed with HTTP 500 if `CRON_SECRET` is unset, and HTTP 401 if unauthorized tokens are presented.
+- **Fail-Closed Admin Secrets:** Administrative verification rejects token validation when `CLERK_SECRET_KEY` is missing, prohibiting static or hardcoded fallback keys.
+- **Rate-Limited & Sanitized Telemetry:** Presence heartbeats (`api/presence.ts`, `server/presence-service.ts`) sanitize user IDs against strict alphanumeric expressions ($\le 64$ characters), preventing Redis memory flooding attacks.
+- **Content Security Policy & Modern Transport:** `vercel.json` enforces HSTS (`max-age=63072000; includeSubDomains; preload`), strict Content Security Policy (`default-src 'self'`, whitelisted Clerk/Upstash/AI endpoints, `frame-ancestors 'self'`), COOP (`same-origin-allow-popups`), and CORP (`same-origin`).
+- **Apple-Design Security UI:** The client integrates an Apple HIG-compliant glassmorphic security notification system (`SecurityNoticeToast.tsx`) with $\ge 44\text{px}$ touch targets, smooth spring motion, and WCAG AAA contrast for auth challenge handling and rate-limiting alerts.
+
 Whenever an agent makes modifications to this codebase, they **MUST** obey the following iron rules:
 
 1. **The Question Intake Law:**

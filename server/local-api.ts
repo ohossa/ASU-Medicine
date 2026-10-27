@@ -14,7 +14,9 @@ export function localApi():Plugin{return {name:'asu-local-api',apply:'serve',con
     '/api/sync':'/api/sync.ts',
     '/api/learning':'/api/learning.ts',
     '/api/admin-analytics':'/api/admin-analytics.ts',
-    '/api/presence':'/api/presence.ts'
+    '/api/presence':'/api/presence.ts',
+    '/api/hint':'/api/hint.ts',
+    '/api/cron-maintenance':'/api/cron-maintenance.ts'
   };
   const route=routes[url.pathname];if(!route)return next();
   try{let body='';for await(const chunk of req){body+=chunk;if(Buffer.byteLength(body)>2*1024*1024){res.statusCode=413;res.end(JSON.stringify({error:'Request too large.'}));return;}}

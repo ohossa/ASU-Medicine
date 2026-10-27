@@ -85,6 +85,12 @@
       "skillPath": "plugin/skills/remember/SKILL.md",
       "computedHash": "80b9016df4b9e8ff2632f8e1ddc5172af1696564cdcb3ed63b36e8d8bff6ef70"
     },
+    "security-audit": {
+      "source": "cloudflare/security-audit-skill",
+      "sourceType": "github",
+      "skillPath": "skills/security-audit/SKILL.md",
+      "computedHash": "98b97aad2873b3b9a8e064007c25e7827b493ba27fda8bfbdb41dab586767973"
+    },
     "session-history": {
       "source": "rohitg00/agentmemory",
       "sourceType": "github",

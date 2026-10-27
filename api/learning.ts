@@ -1,7 +1,7 @@
 import LZString from "lz-string";
 import { authenticateReportUser } from "../server/report-auth.js";
 import { evalRedis } from "../server/report-store.js";
-import { ReportError } from "../server/report-service.js";
+import { ReportError, isReportError } from "../server/report-service.js";
 import { learningBank } from "../server/learning-bank.js";
 import { createLearningService } from "../server/learning-service.js";
 import {
@@ -88,10 +88,10 @@ export default async function handler(req: Req, res: Res) {
       );
   } catch (e) {
     return res
-      .status(e instanceof ReportError ? e.status : 503)
+      .status(isReportError(e) ? e.status : 503)
       .json({
         error:
-          e instanceof ReportError
+          isReportError(e)
             ? e.message
             : "Learning sync is unavailable. Your pending attempts are saved on this device.",
       });

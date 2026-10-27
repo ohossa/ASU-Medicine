@@ -86,31 +86,27 @@ export async function verifyOwner(token: string): Promise<{ id: string; email: s
   if (!token) throw new ReportError(401, "Sign in to access admin analytics.");
   const secretKey = process.env.CLERK_SECRET_KEY;
 
-  // Local test bypass or simulated owner token
+  // Local test bypass or missing secret fail-closed
   if (!secretKey) {
-    if (token === "test_owner_token" || token.includes("omarhmaged@gmail.com")) {
-      return { id: "user_owner", email: OWNER_EMAIL };
-    }
-    // If running in development without secrets, allow inspection only if token explicitly indicates owner
     if (process.env.NODE_ENV === "test") {
-      throw new ReportError(403, "Access restricted to portal owner omarhmaged@gmail.com.");
+      if (token === "test_owner_token") {
+        return { id: "user_owner", email: OWNER_EMAIL };
+      }
+      throw new ReportError(403, `Access restricted to portal owner ${OWNER_EMAIL}.`);
     }
+    throw new ReportError(500, "Server misconfigured: CLERK_SECRET_KEY is required.");
   }
 
   let claims;
   try {
     claims = await verifyToken(token, {
-      secretKey: secretKey || "fallback_test_key",
+      secretKey,
       authorizedParties: (process.env.REPORT_ALLOWED_ORIGINS || "https://asu.codes,https://www.asu.codes,http://localhost:5173,http://127.0.0.1:5173")
         .split(",")
         .map((s) => s.trim())
         .filter(Boolean),
     });
   } catch {
-    // If token claims cannot be parsed or invalid
-    if (token === "test_owner_token") {
-      return { id: "user_owner", email: OWNER_EMAIL };
-    }
     throw new ReportError(401, "Your session has expired. Please sign in again.");
   }
 

@@ -1,5 +1,5 @@
 import { getAdminAnalytics } from "../server/admin-analytics-service.js";
-import { ReportError } from "../server/report-service.js";
+import { isReportError } from "../server/report-service.js";
 
 interface Request {
   method?: string;
@@ -34,7 +34,7 @@ export default async function handler(req: Request, res: Response) {
     const data = await getAdminAnalytics(token);
     return res.status(200).json(data);
   } catch (err) {
-    if (err instanceof ReportError) {
+    if (isReportError(err)) {
       return res.status(err.status).json({ error: err.message });
     }
     console.error("Admin analytics error:", err);

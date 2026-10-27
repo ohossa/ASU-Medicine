@@ -41,10 +41,12 @@ return count
 
 export async function recordPresence(payload: PresencePayload): Promise<number> {
   const now = Math.floor(Date.now() / 1000);
-  const userId = payload.userId || "anonymous";
+  const rawId = typeof payload.userId === 'string' ? payload.userId.trim() : '';
+  const userId = /^[a-zA-Z0-9_-]{1,64}$/.test(rawId) ? rawId : "anonymous";
+  const rawAlias = typeof payload.alias === 'string' ? payload.alias.trim() : '';
   const metaJson = JSON.stringify({
-    alias: payload.alias || "Student",
-    moduleCode: payload.moduleCode || "",
+    alias: rawAlias ? rawAlias.slice(0, 40) : "Student",
+    moduleCode: payload.moduleCode ? String(payload.moduleCode).slice(0, 20) : "",
     updatedAt: new Date().toISOString(),
   });
 
