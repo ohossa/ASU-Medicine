@@ -140,8 +140,13 @@ Governed by [`QUESTION_IMPORT_WORKFLOW.md`](file:///Users/omarhossa/Documents/Me
 - **On-The-Spot Question Editing ([`InlineQuestionEditor.tsx`](file:///Users/omarhossa/Documents/Medcine%20ASU/ASU-Medical-Portal/src/app/components/InlineQuestionEditor.tsx)):**
   - Enables instant inline patch editing of question stem, choices, designated correct answer, and faculty explanation without opening the full question bank or navigating away.
   - Writes live overrides via `PATCH /api/question-bank` into Redis overlay `asu_question_edits:v1:${moduleCode}`.
-- **Direct Student Email Communication ([`StudentEmailReplyModal.tsx`](file:///Users/omarhossa/Documents/Medcine%20ASU/ASU-Medical-Portal/src/app/components/StudentEmailReplyModal.tsx)):**
-  - Provides pre-filled faculty response templates and direct mailto actions to communicate verification decisions to students.
+- **Verified Student Email System & Structural Humanizer ([`ReportReplyComposer.tsx`](file:///Users/omarhossa/Documents/Medcine%20ASU/ASU-Medical-Portal/src/pages/ReportReplyComposer.tsx)):**
+  - Integrated in-portal email delivery system communicating directly with students via Resend and verified institutional relays.
+  - **Context-Rich Templates:** Automatically embeds the original question text, all options (with designated answer), explanation, and student report notes so students have complete context even months after reporting.
+  - **Full Founder Attribution:** Official signature and communication attributed to founder **Omar HossamEldin Maged** (`ASUCodes Medical Portal`).
+  - **AI Chat Importer & Structural Humanizer ([`review-context.ts`](file:///Users/omarhossa/Documents/Medcine%20ASU/ASU-Medical-Portal/src/app/reports/review-context.ts)):**
+    - "Copy Review Context" prompt contains embedded `/structural-humanizer` and anti-AI instructions for ChatGPT/Claude/Gemini to draft pure medical explanations without chatbot filler or slop.
+    - Dedicated "Paste AI Explanation / Chat" panel cleans em dashes, curly quotes, sycophancy, and AI buzzwords, then automatically replaces draft placeholders.
 
 ---
 
