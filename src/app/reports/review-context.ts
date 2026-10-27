@@ -62,49 +62,10 @@ export function replyTemplate(
   kind: "correct" | "fixed" | "clarify",
   report: QuestionReport,
 ): string {
-  const s = report.snapshot;
-  const q = s.question;
-  const key =
-    typeof q.correctIndex === "number" &&
-    q.options?.[q.correctIndex] !== undefined
-      ? `${String.fromCharCode(65 + q.correctIndex)}. ${q.options[q.correctIndex]}`
-      : q.modelAnswer || "See explanation below";
-
-  const optionsBlock =
-    Array.isArray(q.options) && q.options.length
-      ? "\n" +
-        q.options
-          .map(
-            (o, i) =>
-              `  ${String.fromCharCode(65 + i)}. ${o}${
-                i === q.correctIndex ? "  [Current Answer]" : ""
-              }`,
-          )
-          .join("\n")
-      : "";
-
-  const explanationBlock = q.explanation
-    ? `\nCurrent Explanation:\n${q.explanation}`
-    : q.modelAnswer
-      ? `\nModel Answer:\n${q.modelAnswer}`
-      : "";
-
-  const questionRef = [
-    `--- REPORTED QUESTION REFERENCE ---`,
-    `Module: ${s.moduleCode} · ${s.chapterTitle} · ${s.subjectName}${s.topicName ? ` · ${s.topicName}` : ""}`,
-    `Question ID: ${q.id}`,
-    `Question: ${q.text || q.question || ""}${optionsBlock}`,
-    `Answer on Portal: ${key}${explanationBlock}`,
-    `Your Report Note: "${report.explanation || "No message added"}"`,
-    `-----------------------------------`,
-  ].join("\n");
-
   const intro =
-    "Hi,\n\nThank you for taking the time to report this question on ASUCodes.\n\n" +
-    questionRef +
-    "\n\n";
+    "Hi,\n\nThank you for taking the time to report this question on ASUCodes.\n\n";
 
-  const context = `${s.moduleCode} · Question ${q.id}`;
+  const context = `${report.snapshot.moduleCode} · Question ${report.snapshot.question.id}`;
   const detail =
     kind === "correct"
       ? `I reviewed your report about ${context} with the faculty curriculum references. The current answer is correct.\n\n[Explain the correct answer and address the student’s concern here]`

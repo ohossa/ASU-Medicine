@@ -89,22 +89,16 @@ describe("reviewContext Prompt with Structural Humanizer Instructions", () => {
   });
 });
 
-describe("replyTemplate Enhanced with Question Reference and Full Name", () => {
-  it("includes the full reported question details, answer on portal, and signs as Omar HossamEldin Maged", () => {
+describe("replyTemplate Enhanced with Clean Context and Full Name", () => {
+  it("includes the module context, signs as Omar HossamEldin Maged, and contains placeholder", () => {
     const template = replyTemplate("correct", mockReport);
 
     // Full name signature
     expect(template).toContain("Omar HossamEldin Maged");
     expect(template).not.toMatch(/\bOmar\b\s*\nASUCodes/); // Not just "Omar"
 
-    // Question reference block
-    expect(template).toContain("--- REPORTED QUESTION REFERENCE ---");
-    expect(template).toContain("Module: MRS-2 · Renal Physiology & Acid-Base · Physiology · Glomerular Filtration");
-    expect(template).toContain("Question ID: q-renal-042");
-    expect(template).toContain("Which force promotes ultrafiltration");
-    expect(template).toContain("A. Glomerular capillary hydrostatic pressure  [Current Answer]");
-    expect(template).toContain("Answer on Portal: A. Glomerular capillary hydrostatic pressure");
-    expect(template).toContain("Option B is physiologically inaccurate");
+    // Clean module and question context
+    expect(template).toContain("MRS-2 · Question q-renal-042");
 
     // Placeholder present for filling
     expect(template).toContain("[Explain the correct answer and address the student’s concern here]");
