@@ -19,6 +19,13 @@ export default async function handler(req:any,res:any){
    }
    if(query.action==='modules'){await service.access(token);return res.status(200).json({modules:await listEditableModules()});}
    if(query.action==='history')return res.status(200).json({history:await service.history(token,moduleCode)});
+   if(query.action==='single'){
+    const qId=String(query.questionId??'');
+    const entries=await service.list(token,moduleCode);
+    const entry=entries.find((e:any)=>String(e.question.id)===qId);
+    if(!entry)return res.status(404).json({error:'Question not found.'});
+    return res.status(200).json({entry});
+   }
    const entries=await service.list(token,moduleCode),search=String(query.search??'').toLowerCase().slice(0,200);
    const offset=Number(query.offset??0);if(!Number.isSafeInteger(offset)||offset<0||offset>100000)throw new ReportError(400,'Invalid page.');
    const filtered=entries.filter((e:any)=>!search||[e.question.text,e.question.id,e.subjectName,e.chapterTitle].some(v=>String(v).toLowerCase().includes(search)));

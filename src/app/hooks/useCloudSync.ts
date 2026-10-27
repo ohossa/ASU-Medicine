@@ -1,7 +1,14 @@
-import { useEffect, useCallback, useRef } from 'react';
+import { useEffect, useCallback, useRef, useState } from 'react';
 import {setHistoryAccount,historyStorageKey,HISTORY_WIRE_KEY} from '../learning/historyScope';
 import {mergeHistory} from '../../../shared/cloud-merge';
 import { useAuth } from '@clerk/clerk-react';
+import {
+  updateCloudSyncInfo,
+  registerSyncTrigger,
+  subscribeCloudSync,
+  triggerManualSync,
+  type CloudSyncInfo,
+} from '../services/cloudSyncState';
 
 const STORAGE_KEYS = [
   'theme',
@@ -49,6 +56,7 @@ export function useCloudSync() {
       return;
     }
     isSyncing.current = true;
+    updateCloudSyncInfo({ status: 'syncing' });
     try {
       const payload: Record<string, unknown> = {};
       const currentKeys = new Set<string>();
@@ -138,8 +146,10 @@ export function useCloudSync() {
           lastSyncedRef.current[key] = typeof val === 'string' ? val : JSON.stringify(val);
         }
       });
+      updateCloudSyncInfo({ status: 'synced', lastSyncedAt: new Date(), error: null });
     } catch (err) {
       console.error("Cloud push failed:", err);
+      updateCloudSyncInfo({ status: 'error', error: err instanceof Error ? err.message : 'Push failed' });
     } finally {
       isSyncing.current = false;
       if (isDirtyRef.current) {
@@ -159,6 +169,7 @@ export function useCloudSync() {
     const pullData = async () => {
       if (pulling || isSyncing.current || document.hidden) return;
       pulling = true;
+      updateCloudSyncInfo({ status: 'syncing' });
       const before = new Map<string,string|null>();
       for(let i=0;i<localStorage.length;i++) { const key=localStorage.key(i);if(key)before.set(key,localStorage.getItem(key)); }
       try {
@@ -273,23 +284,35 @@ export function useCloudSync() {
           if (hasLocalDrafts) {
             await pushData(true);
           }
+          updateCloudSyncInfo({ status: 'synced', lastSyncedAt: new Date(), error: null });
         }
       } catch (err) {
         console.error("Cloud pull failed:", err);
+        updateCloudSyncInfo({ status: 'error', error: err instanceof Error ? err.message : 'Sync failed' });
       } finally { pulling = false; }
+    };
+
+    const handleOnline = () => {
+      updateCloudSyncInfo({ status: 'synced', error: null });
+      void pullData();
+    };
+    const handleOffline = () => {
+      updateCloudSyncInfo({ status: 'offline' });
     };
 
     void pullData();
     const resume = () => { void pullData(); };
     window.addEventListener('focus', resume);
-    window.addEventListener('online', resume);
+    window.addEventListener('online', handleOnline);
+    window.addEventListener('offline', handleOffline);
     document.addEventListener('visibilitychange', resume);
     const interval = setInterval(resume, IDLE_INTERVAL_MS);
     return () => {
       isMounted = false;
       clearInterval(interval);
       window.removeEventListener('focus', resume);
-      window.removeEventListener('online', resume);
+      window.removeEventListener('online', handleOnline);
+      window.removeEventListener('offline', handleOffline);
       document.removeEventListener('visibilitychange', resume);
     };
   }, [isSignedIn, userId, pushData]);
@@ -297,13 +320,42 @@ export function useCloudSync() {
   useEffect(() => {
     if (!isSignedIn) return;
 
+    const unregister = registerSyncTrigger(async () => {
+      try {
+        await pushData();
+        return true;
+      } catch {
+        return false;
+      }
+    });
+
     const handleSync = () => pushData();
     window.addEventListener('trigger-cloud-sync', handleSync);
 
     return () => {
+      unregister();
       window.removeEventListener('trigger-cloud-sync', handleSync);
     };
   }, [isSignedIn, pushData]);
+}
+
+export function useCloudSyncStatus(): CloudSyncInfo & { syncNow: () => Promise<boolean> } {
+  const [info, setInfo] = useState<CloudSyncInfo>(() => {
+    return {
+      status: typeof navigator !== 'undefined' && !navigator.onLine ? 'offline' : 'synced',
+      lastSyncedAt: null,
+      error: null,
+    };
+  });
+
+  useEffect(() => {
+    return subscribeCloudSync(setInfo);
+  }, []);
+
+  return {
+    ...info,
+    syncNow: triggerManualSync,
+  };
 }
 
 // Global helper to trigger push after local storage mutations

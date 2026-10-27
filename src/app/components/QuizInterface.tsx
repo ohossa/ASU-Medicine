@@ -11,6 +11,7 @@ import { fx } from '../lib/pulseEngine';
 import type { QuizSessionSave } from '../hooks/useQuizSession';
 import { useQuizSession, saveLocalDrafts, loadLocalDrafts } from '../hooks/useQuizSession';
 import { SoundToggle } from './SoundToggle';
+import { KnowledgeGraphDrawer } from './KnowledgeGraphDrawer';
 import { useSoundEngine } from '../hooks/useSoundEngine';
 import { checkAnswerCorrect, choiceAnswerIndex } from '../utils/quiz';
 import {
@@ -27,7 +28,8 @@ import {
   Bookmark,
   AlertCircle,
   Activity,
-  Star
+  Star,
+  Network
 } from 'lucide-react';
 import type { ChapterData, SubjectData, Question, SubjectColor, QuizAnswer } from '../types';
 import { asEssayAnswer, asFillBlankAnswer, asMatchingAnswer, asCaseAnswer, subjectStyles, formatTime } from '../types';
@@ -190,6 +192,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
   // Case Study sub-question drafts temporary state
   const [subEssayDrafts, setSubEssayDrafts] = useState<Record<string, string>>({});
   const [revealedSubEssays, setRevealedSubEssays] = useState<Record<string, boolean>>({});
+  const [showConceptMap, setShowConceptMap] = useState(false);
   const lastFocusedSubQ = useRef<string | null>(null);
   const question = questions[current];
   const total = questions.length;
@@ -1286,6 +1289,14 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
             >
               <Grid3X3 size={15} />
             </button>
+            <button
+              onClick={() => setShowConceptMap(true)}
+              aria-label="Topic Concept Map"
+              title="Explore Concept Knowledge Graph"
+              className="flex h-11 w-11 items-center justify-center rounded-full border border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.04] text-gray-550 dark:text-white/50 hover:bg-gray-100 dark:hover:bg-white/[0.08] transition-colors btn-press"
+            >
+              <Network size={16} />
+            </button>
             <SoundToggle muted={muted} onToggle={toggleMute} />
             <ShuffleSwitch />
             {userButton}
@@ -1565,6 +1576,14 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
           </motion.div>
         )}
       </AnimatePresence>
+
+      <KnowledgeGraphDrawer
+        isOpen={showConceptMap}
+        onClose={() => setShowConceptMap(false)}
+        topicTitle={(chapter as any)?.title || (question as any)?.topic || 'Medical Topic'}
+        subjectName={subject?.name || (question as any)?.subjectColor || 'Clinical Science'}
+        moduleCode={(chapter as any)?.moduleCode || 'MGL-3'}
+      />
     </div>
   );
 }

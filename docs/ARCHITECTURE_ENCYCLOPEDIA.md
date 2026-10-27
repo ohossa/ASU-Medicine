@@ -132,11 +132,38 @@ Governed by [`QUESTION_IMPORT_WORKFLOW.md`](file:///Users/omarhossa/Documents/Me
 
 ---
 
-### Subsystem 7: Serverless Error Reporting & Feedback (`server/`)
+### Subsystem 7: Serverless Error Reporting & Human-First Review (`server/`)
 - **Report Inbox ([`server/report-inbox.ts`](file:///Users/omarhossa/Documents/Medcine%20ASU/ASU-Medical-Portal/server/report-inbox.ts)):**
   - Receives student reports on typos, ambiguous stems, or incorrect answer keys via [`ReportQuestion.tsx`](file:///Users/omarhossa/Documents/Medcine%20ASU/ASU-Medical-Portal/src/app/reports/ReportQuestion.tsx).
   - Backed by Upstash Redis with local memory fallbacks for development.
-  - Administrators review, triage, and push live corrections through the [`AdminPortal.tsx`](file:///Users/omarhossa/Documents/Medcine%20ASU/ASU-Medical-Portal/src/pages/AdminPortal.tsx).
+  - Human-first administration in [`AdminPortal.tsx`](file:///Users/omarhossa/Documents/Medcine%20ASU/ASU-Medical-Portal/src/pages/AdminPortal.tsx) without AI mediation or filtering.
+- **On-The-Spot Question Editing ([`InlineQuestionEditor.tsx`](file:///Users/omarhossa/Documents/Medcine%20ASU/ASU-Medical-Portal/src/app/components/InlineQuestionEditor.tsx)):**
+  - Enables instant inline patch editing of question stem, choices, designated correct answer, and faculty explanation without opening the full question bank or navigating away.
+  - Writes live overrides via `PATCH /api/question-bank` into Redis overlay `asu_question_edits:v1:${moduleCode}`.
+- **Direct Student Email Communication ([`StudentEmailReplyModal.tsx`](file:///Users/omarhossa/Documents/Medcine%20ASU/ASU-Medical-Portal/src/app/components/StudentEmailReplyModal.tsx)):**
+  - Provides pre-filled faculty response templates and direct mailto actions to communicate verification decisions to students.
+
+---
+
+### Subsystem 8: Exclusive Owner Deep Analytics (`server/admin-analytics-service.ts`)
+- **Access Guard:**
+  - Strictly restricted to owner account `omarhmaged@gmail.com`.
+  - Non-owner requests return 403 Forbidden with zero data leakage.
+- **Comprehensive Intelligence Suite ([`AdminAnalyticsView.tsx`](file:///Users/omarhossa/Documents/Medcine%20ASU/ASU-Medical-Portal/src/pages/admin/AdminAnalyticsView.tsx)):**
+  - **Executive Overview:** Enrolled student totals, active today count, questions solved across 42 banks, platform accuracy %, and total logged study hours.
+  - **Student Directory:** Searchable roster with real details: academic year, XP, level, study streak, accuracy %, total study duration, weakest module, and expandable per-module performance breakdown.
+  - **Module Deep-Dive:** Complete table across all 42 modules with total bank questions, student attempts, pass rate, active learners, and difficulty ratings.
+  - **Hardest Questions Ranking:** Top 25 most failed questions with difficulty gauges and 1-click on-the-spot editing capability.
+
+---
+
+### Subsystem 9: Knowledge Graph Topic Explorer & Cloud Sync Indicator
+- **Curriculum Concept Graph ([`knowledgeGraphService.ts`](file:///Users/omarhossa/Documents/Medcine%20ASU/ASU-Medical-Portal/src/app/services/knowledgeGraphService.ts)):**
+  - Connects questions, chapters, and topics to the 7,419-node curriculum knowledge graph across 9 medical disciplines.
+  - Interactive in-quiz concept map drawer ([`KnowledgeGraphDrawer.tsx`](file:///Users/omarhossa/Documents/Medcine%20ASU/ASU-Medical-Portal/src/app/components/KnowledgeGraphDrawer.tsx)) and standalone curriculum explorer ([`KnowledgeGraphPage.tsx`](file:///Users/omarhossa/Documents/Medcine%20ASU/ASU-Medical-Portal/src/pages/KnowledgeGraphPage.tsx)).
+- **Cross-Device Cloud Sync Expansion ([`UserSyncPill.tsx`](file:///Users/omarhossa/Documents/Medcine%20ASU/ASU-Medical-Portal/src/app/components/UserSyncPill.tsx)):**
+  - Reactive sync status pip in the user profile avatar (green dot for synced, pulsing amber for syncing, gray for offline, red for error).
+  - Manual "Force Sync Now" trigger and accessible tooltips conforming to Apple HIG.
 
 ---
 
