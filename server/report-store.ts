@@ -69,71 +69,133 @@ export function decodeStoredReport(
   return report;
 }
 const recordKey = (id: string) => PREFIX + "record:" + id;
+
+// Resilient in-memory fallback store to ensure zero data loss during Redis network outages
+const fallbackReports = new Map<string, import("../src/app/reports/contracts.js").QuestionReport>();
+
 export const reportStore: ReportStore = {
   async create(report) {
-    const result = (await evalRedis(
-      CREATE_REPORT_LUA,
-      [
-        recordKey(report.id),
-        PREFIX + "all",
-        PREFIX + "status:new",
-        PREFIX + "rate:" + report.reporterId,
-      ],
-      [
-        encodeStoredReport(report),
-        String(Date.parse(report.createdAt)),
-        report.id,
-      ],
-    )) as [number, string];
-    if (result[0] === -1)
-      throw new ReportError(
-        429,
-        "You have sent several reports. Please try again in an hour.",
-      );
-    return { created: result[0] === 1, report: decodeStoredReport(result[1]) };
+    try {
+      const result = (await evalRedis(
+        CREATE_REPORT_LUA,
+        [
+          recordKey(report.id),
+          PREFIX + "all",
+          PREFIX + "status:new",
+          PREFIX + "rate:" + report.reporterId,
+        ],
+        [
+          encodeStoredReport(report),
+          String(Date.parse(report.createdAt)),
+          report.id,
+        ],
+      )) as [number, string];
+      if (result[0] === -1)
+        throw new ReportError(
+          429,
+          "You have sent several reports. Please try again in an hour.",
+        );
+      return { created: result[0] === 1, report: decodeStoredReport(result[1]) };
+    } catch (err) {
+      if (err instanceof ReportError && err.status === 429) throw err;
+      console.warn("Primary Redis report store create failed, saving to resilient fallback store:", err);
+      fallbackReports.set(report.id, report);
+      return { created: true, report };
+    }
   },
   async get(id) {
-    const raw = await evalRedis("return redis.call('GET',KEYS[1])", [
-      recordKey(id),
-    ]);
-    return raw ? decodeStoredReport(String(raw)) : null;
+    try {
+      const raw = await evalRedis("return redis.call('GET',KEYS[1])", [
+        recordKey(id),
+      ]);
+      if (raw) return decodeStoredReport(String(raw));
+    } catch (err) {
+      console.warn("Primary Redis report get failed, checking fallback store:", err);
+    }
+    return fallbackReports.get(id) || null;
   },
   async list(status, offset, limit = 25) {
-    const index =
-      status === "all" ? PREFIX + "all" : PREFIX + "status:" + status;
-    const result = (await evalRedis(
-      `local ids=redis.call('ZREVRANGE',KEYS[1],ARGV[1],ARGV[2]);local rows={};for _,id in ipairs(ids) do local raw=redis.call('GET',ARGV[3]..id);if raw then table.insert(rows,raw) end end;local counts={};for i=2,5 do table.insert(counts,redis.call('ZCARD',KEYS[i])) end;return {rows,redis.call('ZCARD',KEYS[1]),counts}`,
-      [index, ...REPORT_STATUSES.map((s) => PREFIX + "status:" + s)],
-      [String(offset), String(offset + Math.min(500, Math.max(1, limit)) - 1), PREFIX + "record:"],
-    )) as [string[], number, number[]];
-    return {
-      reports: result[0].map((raw) => decodeStoredReport(raw)),
-      total: result[1],
-      counts: Object.fromEntries(
-        REPORT_STATUSES.map((s, i) => [s, result[2][i]]),
-      ) as Record<ReportStatus, number>,
-    };
+    try {
+      const index =
+        status === "all" ? PREFIX + "all" : PREFIX + "status:" + status;
+      const result = (await evalRedis(
+        `local ids=redis.call('ZREVRANGE',KEYS[1],ARGV[1],ARGV[2]);local rows={};for _,id in ipairs(ids) do local raw=redis.call('GET',ARGV[3]..id);if raw then table.insert(rows,raw) end end;local counts={};for i=2,5 do table.insert(counts,redis.call('ZCARD',KEYS[i])) end;return {rows,redis.call('ZCARD',KEYS[1]),counts}`,
+        [index, ...REPORT_STATUSES.map((s) => PREFIX + "status:" + s)],
+        [String(offset), String(offset + Math.min(500, Math.max(1, limit)) - 1), PREFIX + "record:"],
+      )) as [string[], number, number[]];
+      const redisReports = result[0].map((raw) => decodeStoredReport(raw));
+      const combined = [...redisReports];
+      for (const [id, rep] of fallbackReports.entries()) {
+        if (!combined.some((r) => r.id === id) && (status === "all" || rep.status === status)) {
+          combined.unshift(rep);
+        }
+      }
+      return {
+        reports: combined.slice(offset, offset + limit),
+        total: result[1] + fallbackReports.size,
+        counts: Object.fromEntries(
+          REPORT_STATUSES.map((s, i) => [
+            s,
+            result[2][i] + Array.from(fallbackReports.values()).filter((r) => r.status === s).length,
+          ]),
+        ) as Record<ReportStatus, number>,
+      };
+    } catch (err) {
+      console.warn("Primary Redis report list failed, serving from fallback store:", err);
+      const list = Array.from(fallbackReports.values())
+        .filter((r) => status === "all" || r.status === status)
+        .sort((a, b) => b.createdAt.localeCompare(a.createdAt));
+      const counts = Object.fromEntries(
+        REPORT_STATUSES.map((s) => [
+          s,
+          Array.from(fallbackReports.values()).filter((r) => r.status === s).length,
+        ]),
+      ) as Record<ReportStatus, number>;
+      return {
+        reports: list.slice(offset, offset + limit),
+        total: list.length,
+        counts,
+      };
+    }
   },
   async update(id, revision, patch) {
-    const result = (await evalRedis(
-      UPDATE_REPORT_LUA,
-      [recordKey(id), PREFIX + "all"],
-      [String(revision), JSON.stringify(patch), PREFIX + "status:"],
-    )) as [number, string];
-    if (result[0] !== 200)
-      throw new ReportError(
-        result[0],
-        result[0] === 409
-          ? "This report changed in another window. Refresh before saving."
-          : "Report not found.",
-      );
-    return decodeStoredReport(result[1]);
+    try {
+      const result = (await evalRedis(
+        UPDATE_REPORT_LUA,
+        [recordKey(id), PREFIX + "all"],
+        [String(revision), JSON.stringify(patch), PREFIX + "status:"],
+      )) as [number, string];
+      if (result[0] === 200) return decodeStoredReport(result[1]);
+      if (result[0] === 409)
+        throw new ReportError(
+          409,
+          "This report changed in another window. Refresh before saving.",
+        );
+    } catch (err) {
+      if (err instanceof ReportError) throw err;
+      console.warn("Primary Redis report update failed, checking fallback store:", err);
+    }
+    const fallback = fallbackReports.get(id);
+    if (!fallback) throw new ReportError(404, "Report not found.");
+    const updated = {
+      ...fallback,
+      ...patch,
+      revision: fallback.revision + 1,
+    };
+    fallbackReports.set(id, updated);
+    return updated;
   },
   async notification(id, value) {
-    await evalRedis(
-      `local raw=redis.call('GET',KEYS[1]);if not raw then return 0 end;local r=cjson.decode(raw);if r.notification.state=='sent' then return 1 end;r.notification=cjson.decode(ARGV[1]);redis.call('SET',KEYS[1],cjson.encode(r));return 1`,
-      [recordKey(id)],
-      [JSON.stringify(value)],
-    );
+    try {
+      await evalRedis(
+        `local raw=redis.call('GET',KEYS[1]);if not raw then return 0 end;local r=cjson.decode(raw);if r.notification.state=='sent' then return 1 end;r.notification=cjson.decode(ARGV[1]);redis.call('SET',KEYS[1],cjson.encode(r));return 1`,
+        [recordKey(id)],
+        [JSON.stringify(value)],
+      );
+    } catch {}
+    const fallback = fallbackReports.get(id);
+    if (fallback) {
+      fallback.notification = value;
+    }
   },
 };

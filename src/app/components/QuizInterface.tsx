@@ -1258,7 +1258,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
           </div>
 
           <div className="quiz-header-actions flex w-full flex-wrap items-center justify-between gap-2 sm:w-auto sm:justify-end">
-            <ReportQuestionButton key={String(question.id)} question={question} chapterId={chapter.id}/>
+            <ReportQuestionButton key={String(question.id)} question={question} chapterId={chapter.id} moduleCode={(chapter as any).moduleCode || (question as any).moduleCode}/>
             {timerMode !== 'off' && (
               <span className={`quiz-timer flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-xs tabular-nums transition-colors ${
                 timerUrgency === 'critical'

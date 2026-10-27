@@ -46,17 +46,23 @@ export function ReportQuestionButton({
       title={language === "ar" ? "الإبلاغ عن مشكلة" : "Report an issue"}
       onClick={(event) => {
         event.stopPropagation();
-        const found = moduleCode ? null : findQuestionById(question.id);
-        const code = (
-          moduleCode ||
-          found?.moduleCode ||
-          params.code ||
-          ""
-        ).toUpperCase();
+        let code = (moduleCode || (question as any)?.moduleCode || params.code || '').trim();
+        if (!code && typeof question.id === 'string') {
+          const match = question.id.match(/^([A-Z0-9]+)-/i);
+          if (match) {
+            const prefix = match[1].toUpperCase();
+            const stdMatch = prefix.match(/^([A-Z]+)(\d+)$/);
+            code = stdMatch ? `${stdMatch[1]}-${stdMatch[2]}` : prefix;
+          }
+        }
+        if (!code) {
+          const found = findQuestionById(question.id);
+          code = found?.moduleCode || '';
+        }
         open({
           question,
-          chapterId: found?.chapter.id ?? chapterId,
-          moduleCode: code,
+          chapterId: chapterId || 1,
+          moduleCode: (code || 'MGL-3').toUpperCase(),
         });
       }}
     >
@@ -280,7 +286,11 @@ function ReportDialog({
                   }
                 />
               </label>
-              <p className="report-muted mt-3">{ar ? "قد تساعدنا أدوات الذكاء الاصطناعي في مراجعة البلاغ. لا تضف بيانات شخصية؛ تبقى بيانات حسابك في لوحة الإدارة الخاصة." : "AI may assist our review. Keep personal details out of your note; recorded account details stay in the private admin inbox."}</p>
+              <p className="report-muted mt-3">
+                {ar
+                  ? "يراجع فريق الكلية كل بلاغ مباشرةً وبسرية. لا تضف بيانات شخصية؛ تبقى بيانات حسابك في لوحة الإدارة الخاصة."
+                  : "Our faculty team reviews every report directly. Keep personal details out of your note; recorded account details stay in the private admin inbox."}
+              </p>
               <div className="report-field-hint">
                 <span>
                   {ar

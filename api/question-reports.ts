@@ -1,5 +1,5 @@
 import { readTutorUsage } from "../server/tutor-metrics.js";
-import { createReportService, ReportError } from "../server/report-service.js";
+import { createReportService, ReportError, isReportError } from "../server/report-service.js";
 import { authenticateReportUser, verifiedReporterEmail } from "../server/report-auth.js";
 import { resolveReportQuestion } from "../server/report-question.js";
 import { reportStore } from "../server/report-store.js";
@@ -121,9 +121,9 @@ export default async function handler(req: Request, res: Response) {
     if (action) throw new ReportError(400, "Unknown action.");
     return res.status(201).json(await service.submit(token, body));
   } catch (error) {
-    if (error instanceof ReportError)
+    if (isReportError(error))
       return res.status(error.status).json({ error: error.message });
-    console.error("Question reporting request failed");
+    console.error("Question reporting request failed with unexpected error:", error);
     return res
       .status(503)
       .json({

@@ -1011,7 +1011,7 @@ export function findQuestionById(id: string | number): { question: Question; cha
     if (!semesters) continue;
     for (const modules of Object.values(semesters)) {
       for (const mod of modules) {
-        if (isModuleActive(mod.code)) {
+        if (isModuleDataLoaded(mod.code)) {
           const chs = getChaptersForModuleAndMode(mod.code, 'mixed');
           for (const chapter of chs) {
             for (const subject of chapter.subjects) {
@@ -1029,6 +1029,6 @@ export function findQuestionById(id: string | number): { question: Question; cha
 }
 
 export function getChaptersForModuleAndMode(code:string,mode:'mcq'|'essay'|'mixed'):ChapterData[]{
- const key=code+':'+mode;const old=chapterCache.get(key);if(old?.revision===correctionRevision)return old.chapters;
- const chapters=visiblePracticeChapters(buildChaptersForModuleAndMode(code,mode));for(const c of chapters)for(const s of c.subjects)for(const q of s.questions)q.contentVersion??=sourceContentVersions.get(code+':'+q.id)??bankManifest[code]?.revision;chapterCache.set(key,{revision:correctionRevision,chapters});return chapters;
+ const key=code+':'+mode;const old=chapterCache.get(key);if(old?.revision===correctionRevision && old.chapters.length > 0)return old.chapters;
+ const chapters=visiblePracticeChapters(buildChaptersForModuleAndMode(code,mode));for(const c of chapters)for(const s of c.subjects)for(const q of s.questions)q.contentVersion??=sourceContentVersions.get(code+':'+q.id)??bankManifest[code]?.revision;if(chapters.length > 0){chapterCache.set(key,{revision:correctionRevision,chapters});}return chapters;
 }

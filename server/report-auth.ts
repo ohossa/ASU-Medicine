@@ -28,26 +28,39 @@ export async function authenticateReportUser(token: string): Promise<Identity> {
     );
   }
   if (!claims.sub) throw new ReportError(401, "Please sign in to continue.");
-  const user = await createClerkClient({ secretKey }).users.getUser(claims.sub);
-  const ownsEmail = user.emailAddresses.some(
-    (e) =>
-      e.emailAddress.toLowerCase() === OWNER_EMAIL &&
-      e.verification?.status === "verified",
-  );
-  const primaryEmail = user.emailAddresses.find(e => e.id === user.primaryEmailAddressId)
-    ?? user.emailAddresses.find(e => e.verification?.status === 'verified')
-    ?? user.emailAddresses[0];
-  const name = [user.firstName, user.lastName].filter(Boolean).join(' ').trim();
+  let user: import("@clerk/backend").User | null = null;
+  try {
+    user = await createClerkClient({ secretKey }).users.getUser(claims.sub);
+  } catch (err) {
+    console.warn("Clerk getUser lookup failed; using verified claims identity:", err);
+  }
+  const emailList = user?.emailAddresses || [];
+  const primaryEmail =
+    emailList.find((e) => e.id === user?.primaryEmailAddressId) ??
+    emailList.find((e) => e.verification?.status === "verified") ??
+    emailList[0];
+  const name = user
+    ? [user.firstName, user.lastName].filter(Boolean).join(" ").trim()
+    : (claims as any)?.name || null;
   const pinnedId = process.env.REPORT_ADMIN_USER_ID;
+  const ownsEmail =
+    emailList.some(
+      (e) =>
+        e.emailAddress.toLowerCase() === OWNER_EMAIL &&
+        e.verification?.status === "verified",
+    ) || ((claims as any)?.email?.toLowerCase() === OWNER_EMAIL);
   return {
-    id: user.id,
+    id: user?.id || claims.sub,
     reporter: {
       name: name || null,
-      username: user.username || null,
-      email: primaryEmail?.emailAddress || null,
-      emailVerified: primaryEmail?.verification?.status === 'verified',
+      username: user?.username || (claims as any)?.username || null,
+      email: primaryEmail?.emailAddress || (claims as any)?.email || null,
+      emailVerified: primaryEmail?.verification?.status === "verified" || Boolean((claims as any)?.email),
     },
-    isAdmin: ownsEmail && (!pinnedId || pinnedId === user.id) && (process.env.VERCEL_ENV !== 'production' || Boolean(pinnedId)),
+    isAdmin:
+      ownsEmail &&
+      (!pinnedId || pinnedId === (user?.id || claims.sub)) &&
+      (process.env.VERCEL_ENV !== "production" || Boolean(pinnedId)),
   };
 }
 

@@ -89048,8 +89048,8 @@
                 "Direct-reacting bilirubin",
                 "Urine urobilinogen-free hemoglobin"
               ],
-              "correctIndex": 0,
-              "explanation": "Biochemically, Conjugated bilirubin is the correct finding as assessed in GIT past examination guidelines."
+              "correctIndex": 1,
+              "explanation": "Biochemically, Unconjugated bilirubin (indirect bilirubin) is characteristically elevated when the rate of red blood cell destruction increases (hemolytic jaundice). Massive hemolysis produces excessive unconjugated bilirubin that exceeds hepatic conjugation capacity. In contrast, serum haptoglobin is decreased as it binds free hemoglobin, and conjugated bilirubin remains normal or only minimally affected."
             },
             {
               "id": "MGL3-CH4-BIOC-0528",
