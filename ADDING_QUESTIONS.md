@@ -25,6 +25,7 @@ Run from the repository after inspecting current code, runner availability and t
 ```sh
 npx tsx data-format-v2/scripts/import-ready.ts --dry-run --strict
 npx tsx data-format-v2/scripts/validate-banks.ts
+npx vitest run src/app/git-assessment2-intake.test.ts src/app/git-ca2-intake.test.ts src/app/git-bank.integration.test.ts
 npm test
 npm run build
 ```

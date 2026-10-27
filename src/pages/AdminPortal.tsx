@@ -1,5 +1,5 @@
 import type {SubQuestion} from '../app/types';
-import {Copy, MessageSquare, BookOpen} from 'lucide-react';
+import {Copy, MessageSquare, BookOpen, BarChart3, Sparkles} from 'lucide-react';
 import {ReplyComposer} from './ReportReplyComposer';
 import {reviewContext} from '../app/reports/review-context';
 import { lazy, Suspense, useEffect, useRef, useState, type ReactNode } from "react";
@@ -31,9 +31,10 @@ import {
   type ReportStatus,
 } from "../app/reports/contracts";
 import "../app/reports/reports.css";
-import {TriagePanel,TriageAssessmentCard} from './TriagePanel';
-import type {TriageView} from '../app/reports/triage-contracts';
 import AdminOverviewPanel from "./AdminOverviewPanel";
+import AdminAnalyticsView from "./admin/AdminAnalyticsView";
+import { InlineQuestionEditor } from "../app/components/InlineQuestionEditor";
+import { StudentEmailReplyModal } from "../app/components/StudentEmailReplyModal";
 const AdminQuestionEditor = lazy(() => import('./AdminQuestionEditor'));
 const statusLabels: Record<ReportStatus, string> = {
   new: "New",
@@ -122,6 +123,7 @@ function AdminWorkspace() {
   const [params, setParams] = useSearchParams();
   const isInbox = location.pathname.includes("/reports");
   const isEditor = location.pathname.includes("/questions");
+  const isAnalytics = location.pathname.includes("/analytics");
   const selectedId = params.get("report");
   const requestedStatus = params.get("status");
   const [status, setStatus] = useState("all");
@@ -139,9 +141,6 @@ function AdminWorkspace() {
   const [refresh, setRefresh] = useState(0);
   const [selected, setSelected] = useState<QuestionReport | null>(null);
   const [detailError, setDetailError] = useState("");
-  const [triageData,setTriageData]=useState<TriageView|null>(null);
-  const [triageBucket,setTriageBucket]=useState("all");
-  useEffect(()=>{setTriageBucket(triageData?.mode==='prioritized'?'priority':'all');setOffset(0);},[triageData?.mode]);
   useEffect(()=>{if(isInbox && requestedStatus && ["all","unresolved",...REPORT_STATUSES].includes(requestedStatus)){setStatus(requestedStatus);setOffset(0);}},[isInbox,requestedStatus]);
   useEffect(() => {
     if (!isInbox) {setLoading(false);setError("");return;}
@@ -151,7 +150,6 @@ function AdminWorkspace() {
     const query = new URLSearchParams({status, offset:String(offset)});
     if (isInbox) {
       query.set('groupBy',groupBy);
-      query.set('triage',triageBucket);
       if (search) query.set('search',search);
       if (moduleCode) query.set('moduleCode',moduleCode);
       if (subjectName) query.set('subjectName',subjectName);
@@ -173,7 +171,7 @@ function AdminWorkspace() {
         if (!controller.signal.aborted) setLoading(false);
       });
     return () => controller.abort();
-  }, [status, offset, refresh, isEditor, isInbox, search, moduleCode, subjectName, chapterId, topicName, groupBy, triageBucket]);
+  }, [status, offset, refresh, isEditor, isInbox, isAnalytics, search, moduleCode, subjectName, chapterId, topicName, groupBy]);
   useEffect(() => {
     setSelected(value=>value?.id===selectedId?value:null);
     setDetailError("");
@@ -217,6 +215,10 @@ function AdminWorkspace() {
             <Inbox size={16} />
             Question reports
           </NavLink>
+          <NavLink to="/admin/analytics">
+            <BarChart3 size={16} />
+            Portal analytics
+          </NavLink>
           <NavLink to="/admin/questions"><ShieldCheck size={16}/>Question studio</NavLink>
           <Link to="/">
             <ArrowLeft size={16} />
@@ -224,7 +226,12 @@ function AdminWorkspace() {
           </Link>
         </aside>
         <main>
-          {isEditor ? <Suspense fallback={<p role="status">Loading question studio…</p>}><AdminQuestionEditor/></Suspense> : <>
+          {isAnalytics ? (
+            <AdminAnalyticsView />
+          ) : isEditor ? (
+            <Suspense fallback={<p role="status">Loading question studio…</p>}><AdminQuestionEditor/></Suspense>
+          ) : (
+            <>
           <header className="admin-topline">
             <div>
               <h1 className="admin-title">
@@ -232,7 +239,7 @@ function AdminWorkspace() {
               </h1>
               <p className="report-muted">
                 {isInbox
-                  ? "Review student feedback and keep the question bank accurate."
+                  ? "Direct student feedback and live question corrections."
                   : "A quiet place to look after your website."}
               </p>
             </div>
@@ -254,8 +261,6 @@ function AdminWorkspace() {
           {!isInbox && <AdminOverviewPanel refresh={refresh}/>}
           {isInbox && (
             <>
-              <TriagePanel refresh={refresh} onRefresh={()=>setRefresh(v=>v+1)} onData={setTriageData}/>
-              <nav className="triage-buckets" aria-label="Inbox priority"><button className="report-secondary" aria-pressed={triageBucket==='priority'} onClick={()=>{setTriageBucket('priority');setOffset(0);}}>Needs attention</button><button className="report-secondary" aria-pressed={triageBucket==='low'} onClick={()=>{setTriageBucket('low');setOffset(0);}}>Low priority ({triageData?.counts.low??0})</button><button className="report-secondary" aria-pressed={triageBucket==='all'} onClick={()=>{setTriageBucket('all');setOffset(0);}}>All reports</button></nav>
               <form className="admin-surface admin-filters" onSubmit={e=>{e.preventDefault();setSearch(searchDraft.trim());setOffset(0);}}>
                 <div className="admin-search-row">
                   <label className="report-field">Search reports
@@ -365,7 +370,6 @@ function AdminWorkspace() {
                     <ReportDetail
                       key={selected.id}
                       report={selected}
-                      assessment={triageData?.assessments.find(a=>a.fingerprint===triageData.reportAssessments?.[selected.id])}
                       onUpdate={() => setRefresh((v) => v + 1)}
                     /></div>
                   ) : (
@@ -388,7 +392,8 @@ function AdminWorkspace() {
               )}
             </>
           )}
-          </>}
+          </>
+        )}
         </main>
       </div>
     </div>
@@ -396,10 +401,8 @@ function AdminWorkspace() {
 }
 export function ReportDetail({
   report,
-  assessment,
   onUpdate,
 }: {
-  assessment?:import("../app/reports/triage-contracts").TriageAssessment;
   report: QuestionReport;
   onUpdate: () => void;
 }) {
@@ -411,6 +414,8 @@ export function ReportDetail({
   const [busy, setBusy] = useState(false);
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
+  const [showInlineEditor, setShowInlineEditor] = useState(false);
+  const [showEmailModal, setShowEmailModal] = useState(false);
   useEffect(()=>{setStatus(report.status);setNotes(report.notes);setNotification(report.notification);},[report.revision]);
   async function save() {
     setBusy(true);
@@ -493,14 +498,50 @@ export function ReportDetail({
           <section className="admin-reporter" aria-labelledby="reporter-heading"><h3 id="reporter-heading">Reporter</h3><dl>
             <div><dt>Name</dt><dd>{report.reporter?.name||'Not recorded'}</dd></div>
             {report.reporter?.username&&<div><dt>Username</dt><dd>{report.reporter.username}</dd></div>}
-            <div><dt>Email</dt><dd>{report.reporter?.email?<><a href={`mailto:${report.reporter.email}`}>{report.reporter.email}</a><span className="admin-meta block mt-1">{report.reporter.emailVerified?'Verified email':'Email not verified'}</span></>:'Not recorded'}</dd></div>
+            <div><dt>Email</dt><dd>{report.reporter?.email?<><a href={`mailto:${report.reporter.email}`}>{report.reporter.email}</a><span className="admin-meta block mt-1">{report.reporter.emailVerified?'Verified email':'Email not verified'}</span><button type="button" className="report-secondary text-xs inline-flex items-center gap-1 mt-2" onClick={()=>setShowEmailModal(true)}><Mail size={12}/>Direct Email Modal</button></>:'Not recorded'}</dd></div>
             <div><dt>Account ID</dt><dd>{report.reporterId}</dd></div>
           </dl><p className="admin-meta mt-3">Profile recorded at submission. Replies use the account’s current verified email.</p></section>
         </section>
       </div>
-      <TriageAssessmentCard assessment={assessment} onRefresh={onUpdate}/>
-      <div className="admin-management-panel"><h3>Review decision</h3>
-      <Link className="report-primary mb-5 inline-flex" to={`/admin/questions?module=${encodeURIComponent(report.snapshot.moduleCode)}&question=${encodeURIComponent(String(report.snapshot.question.id))}`}>Edit this question</Link>
+
+      <div className="admin-management-panel">
+        <div className="flex flex-wrap items-center justify-between gap-3 mb-4 pb-2 border-b border-stone-100 dark:border-stone-800">
+          <div>
+            <h3 className="m-0">Review decision</h3>
+            <p className="admin-meta mt-0.5">Edit question on the spot or mark review status.</p>
+          </div>
+          <div className="flex flex-wrap items-center gap-2">
+            <button
+              type="button"
+              className="report-primary inline-flex items-center gap-1.5"
+              onClick={() => setShowInlineEditor(!showInlineEditor)}
+            >
+              <Sparkles size={14} />
+              {showInlineEditor ? "Close On-The-Spot Editor" : "Edit Question On The Spot"}
+            </button>
+            <Link
+              className="report-secondary text-xs inline-flex items-center gap-1"
+              to={`/admin/questions?module=${encodeURIComponent(report.snapshot.moduleCode)}&question=${encodeURIComponent(String(report.snapshot.question.id))}`}
+            >
+              Full Question Studio
+            </Link>
+          </div>
+        </div>
+
+        {showInlineEditor && (
+          <InlineQuestionEditor
+            moduleCode={snapshot.moduleCode}
+            chapterId={snapshot.chapterId}
+            question={snapshot.question}
+            reportId={report.id}
+            reportRevision={report.revision}
+            onSaved={() => {
+              onUpdate();
+              setShowInlineEditor(false);
+            }}
+            onCancel={() => setShowInlineEditor(false)}
+          />
+        )}
       <label className="report-field">
         Status
         <select
@@ -572,6 +613,17 @@ export function ReportDetail({
           </>
         )}
       </p>
+
+      <StudentEmailReplyModal
+        isOpen={showEmailModal}
+        onClose={() => setShowEmailModal(false)}
+        studentEmail={report.reporter?.email || ""}
+        studentName={report.reporter?.name || ""}
+        moduleCode={snapshot.moduleCode}
+        questionId={String(snapshot.question.id)}
+        reportedCategory={REPORT_CATEGORIES[report.category]?.en}
+        reportExplanation={report.explanation}
+      />
     </article>
   );
 }

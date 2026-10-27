@@ -9,12 +9,13 @@ import {subjectBranches,questionCountLabel,topicCountLabel,attemptedPracticeIds,
 import type {QuizSessionSave} from '../hooks/useQuizSession';
 import {useOptionalLearning} from '../learning/LearningProvider';
 import {getLearningQuestionVersions} from '../data';
-import {pastExamsFirst} from '../lib/practiceOrder';
+import {isPastExamSection, pastExamsFirst} from '../lib/practiceOrder';
 import {ShuffleSwitch} from '../preferences/ShuffleSwitch';
 import {FlowBreadcrumbs} from './FlowBreadcrumbs';
 import {TopicPracticePicker} from './TopicPracticePicker';
 import {TopicSessionPicker} from './TopicSessionPicker';
 import {ChapterTopicList} from './ChapterTopicList';
+import {PortalFooter} from './PortalFooter';
 
 export interface BreadcrumbItem{label:string;onClick?:()=>void}
 interface Props{
@@ -42,12 +43,20 @@ export function SubjectSelect({chapter,onBack,onSelectSubject,breadcrumbPath,use
   const update=()=>{try{setTrackerData(JSON.parse(localStorage.getItem(`asu_study_tracker:${account??'guest'}:${moduleCode}`)??'{}'));}catch{setTrackerData({});}};
   update();window.addEventListener('storage',update);return()=>window.removeEventListener('storage',update);
  },[account,moduleCode,chapter.id]);
- const allTopics=useMemo(()=>pastExamsFirst(practiceTopics(chapter,moduleCode)),[chapter,moduleCode]);
- const branches=useMemo(()=>subjectBranches(chapter,moduleCode),[chapter,moduleCode]);
+ const isPast=isPastExamSection(chapter);
+ const allTopics=useMemo(()=>{
+  const raw=pastExamsFirst(practiceTopics(chapter,moduleCode));
+  return isPast?raw.filter(t=>t.questions.length>0):raw;
+ },[chapter,moduleCode,isPast]);
+ const branches=useMemo(()=>{
+  const raw=subjectBranches(chapter,moduleCode);
+  return isPast?raw.map(b=>({...b,topics:b.topics.filter(t=>t.questions.length>0)})).filter(b=>b.topics.length>0):raw;
+ },[chapter,moduleCode,isPast]);
  const branch=branches.find(b=>b.id===(selectedBranch===undefined?localBranch:selectedBranch));
  const chooseBranch=(id:string|null)=>{setSearch('');setLocalBranch(id);onBranchChange?.(id);};
  const choosingSubject=branches.length>1&&!branch;
- const topics=branch?allTopics.filter(t=>chapter.subjects[t.subjectIndex!].id===branch.id):allTopics;
+ const rawTopics=branch?allTopics.filter(t=>chapter.subjects[t.subjectIndex!].id===branch.id):allTopics;
+ const topics=isPast?rawTopics.filter(t=>t.questions.length>0):rawTopics;
  const visible=topics.filter(t=>`${t.title} ${t.subjectName}`.toLocaleLowerCase().includes(search.trim().toLocaleLowerCase()));
  const questionCount=topics.reduce((n,t)=>n+t.questions.length,0);const activeTopics=topics.filter(t=>t.questions.length>0).length;
  const attempted=useMemo(()=>attemptedPracticeIds(moduleCode??'',chapter,history,learning?.data?.entries??[],cloudVersions),[moduleCode,chapter,history,learning?.data?.entries,cloudVersions]);
@@ -82,6 +91,7 @@ export function SubjectSelect({chapter,onBack,onSelectSubject,breadcrumbPath,use
    </>}
    {sessionTopic&&<TopicSessionPicker topic={sessionTopic} remaining={sessionTopic.questions.filter(q=>!attempted.has(String(q.id))).length} ar={rtl} progressReady={progressReady} progressError={versionError} onRetry={()=>{setVersionError('');setVersionRetry(n=>n+1);}} onClose={()=>setSessionTopic(null)} onStart={size=>begin(sessionTopic,size)}/>}
   </div>
+  <PortalFooter />
  </div>;
 }
 export default SubjectSelect;

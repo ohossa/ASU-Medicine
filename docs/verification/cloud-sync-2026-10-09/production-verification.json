@@ -1,0 +1,20 @@
+{
+  "commit": "e55a7fe47aef4f017d81eaf46b7453fab5720977",
+  "productionDeployment": 6970613653,
+  "productionState": "success",
+  "githubActions": {
+    "id": 37988702475,
+    "conclusion": "success"
+  },
+  "url": "https://asu.codes",
+  "publishedEntry": "/assets/index-CAN0syMI.js",
+  "supportAsset": "/assets/SupportPage-CAp9QLG1.js",
+  "subjectAsset": "/assets/SubjectSelect-CT6fJUVp.js",
+  "redisConfigured": true,
+  "clerkConfigured": true,
+  "tests": 591,
+  "testFiles": 104,
+  "luaTests": 7,
+  "browser": "Live payment note observed after service worker refresh; amount controls absent.",
+  "limits": "Authenticated physical phone/computer test not performed. Ledger race used isolated Redis emulator."
+}

@@ -2,6 +2,7 @@ import { ClerkProvider } from "@clerk/clerk-react";
 import { ThemeProvider } from "./app/context/ThemeContext";
 import { LanguageProvider } from "./app/context/LanguageContext";
 import { SiteUpdateNotice } from "./app/components/SiteUpdateNotice";
+import { SecurityNoticeToast } from "./app/components/SecurityNoticeToast";
 import App from "./app/App";
 export default function StudyEntry() {
   const key = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
@@ -11,6 +12,7 @@ export default function StudyEntry() {
         <LanguageProvider>
           <App />
           <SiteUpdateNotice />
+          <SecurityNoticeToast />
         </LanguageProvider>
       </ThemeProvider>
     </ClerkProvider>

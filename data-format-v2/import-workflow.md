@@ -37,6 +37,15 @@ npx tsx data-format-v2/scripts/import-ready.ts [flags]
 - `--strict`: Fails the run and rolls back if any imported files fail schema or data validation.
 - `--move-rejected`: Automatically moves files that failed parsing or routing validation from `_ready/` to a sibling `_rejected/` directory for manual troubleshooting.
 
+### Assessment 2 GIT Pipeline (`scripts/import_git_assessment2.py` & `scripts/import_git_ca2.py`)
+
+Specialized automated intake for Year 3 Semester 1 GIT (`MGL-3`):
+1. **Assessment 2 Practice Import** (`scripts/import_git_assessment2.py`): Ingested 114 unique questions into practice chapters 1–8 with 1,061 audited source pages.
+2. **Continuous Assessment 2 Past Exams** (`scripts/import_git_ca2.py`): Audited 539 pages from `Past Exams - Assessement 2.pdf`, extracted 254 question-answer pairs, filtered 6 internal duplicates and 1 CA-1 duplicate, and partitioned past exams into:
+   - **Continuous 1 (CA-1)**: Chapters 101–108 (`examPeriod: "ca-1"`, 670 questions).
+   - **Continuous 2 (CA-2)**: Chapters 201–209 (`examPeriod: "ca-2"`, 247 questions).
+   - Produced full ledgers and audit reports under `docs/verification/git-ca2-import-2026-10-27/`.
+
 ## Accepted incoming batch format
 
 The batch can contain mixed question types. It does not need canonical IDs.

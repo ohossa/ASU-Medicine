@@ -215,11 +215,15 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+    font-variant-ligatures: no-common-ligatures no-discretionary-ligatures;
+    font-feature-settings: "liga" 0;
   }
 
   body {
     @apply bg-background text-foreground;
     font-family: var(--font-manrope), system-ui, sans-serif;
+    font-variant-ligatures: no-common-ligatures no-discretionary-ligatures;
+    font-feature-settings: "liga" 0;
   }
 
   /* Type scale */

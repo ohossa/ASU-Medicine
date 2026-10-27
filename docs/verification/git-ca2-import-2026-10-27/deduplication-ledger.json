@@ -1,0 +1,50 @@
+{
+  "internalDuplicates": [
+    {
+      "page": 50,
+      "matchedPage": 6,
+      "stem": "During dissection of the pancreas, a student is asked to identify the part of the pancreas posterior to which the portal vein is formed.",
+      "reason": "Exact duplicate slide within Assessment 2 PDF"
+    },
+    {
+      "page": 60,
+      "matchedPage": 18,
+      "stem": "The portal vein is formed posterior to which of the following parts of the pancreas?",
+      "reason": "Exact duplicate slide within Assessment 2 PDF"
+    },
+    {
+      "page": 103,
+      "matchedPage": 81,
+      "stem": "The uncinate process of the pancreas develops from the",
+      "reason": "Exact duplicate slide within Assessment 2 PDF"
+    },
+    {
+      "page": 227,
+      "matchedPage": 223,
+      "stem": "The centroacinar cells are characteristic components of the:",
+      "reason": "Exact duplicate slide within Assessment 2 PDF"
+    },
+    {
+      "page": 278,
+      "matchedPage": 168,
+      "stem": "An increase in ferroportin expression is associated with a decrease in which of the following?",
+      "reason": "Exact duplicate slide within Assessment 2 PDF"
+    },
+    {
+      "page": 439,
+      "matchedPage": 383,
+      "stem": "Which of the following parasitic stages CAN NOT be detected in human stool?",
+      "reason": "Exact duplicate slide within Assessment 2 PDF"
+    }
+  ],
+  "ca1Duplicates": [
+    {
+      "page": 525,
+      "matchedQuestionId": "MGL3-CH7-MICR-0169",
+      "matchedChapter": 107,
+      "stem": "6. Which hepatitis B virus marker is associated with high infectivity?",
+      "reason": "Duplicate question already present in CA-1 Past Exams (Microbiology)"
+    }
+  ],
+  "totalFiltered": 7
+}

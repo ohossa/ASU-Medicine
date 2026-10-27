@@ -404,7 +404,7 @@ export function SyllabusTrackerPage({ userButton }: { userButton?: React.ReactNo
   );
 
   return (
-    <PortalShell crumbs={crumbs} userButton={customUserButton} hideFooter={true}>
+    <PortalShell crumbs={crumbs} userButton={customUserButton}>
       {readTrackerStorage(`asu_study_tracker_${moduleCode}`) && <div className="mx-auto max-w-5xl px-5 py-4 text-sm"><p>A previous checklist exists on this device. Import it only if it belongs to you.</p><button className="mt-2 rounded-full border px-4 py-2" onClick={()=>{if(window.confirm("Import the old checklist on this device into your account? It may have been saved by another user.")){persist(hydrate(readTrackerStorage(`asu_study_tracker_${moduleCode}`)));}}}>Import my previous checklist</button></div>}
       <motion.div 
         dir={isRTL ? 'rtl' : 'ltr'} 

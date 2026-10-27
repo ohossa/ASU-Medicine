@@ -1,0 +1,36 @@
+{
+  "commit": "f0c9d630792e5cf59eed03314a0f33885cdada96",
+  "deploymentId": 7000274581,
+  "production": "https://asu.codes/",
+  "entry": "https://asu.codes/assets/index--7bHx6_z.js",
+  "assets": {
+    "P4-3": {
+      "url": "https://asu.codes/assets/P4-3-D2_N9ncs.js",
+      "sha256": "93c68668dce7e8efc687a4cc50f03d0899e34b4d6dd84193c95be28c9bb4c9f7",
+      "matchesTestedBuild": true,
+      "questions": 47
+    },
+    "QuizInterface": {
+      "url": "https://asu.codes/assets/QuizInterface-BDmbHjgD.js",
+      "sha256": "296d77bcefb00df754f1d41baf38aa30dbb866798d12cda65eac68c38e1fee98",
+      "iconOnlySound": true
+    },
+    "ChapterSelect": {
+      "url": "https://asu.codes/assets/ChapterSelect-C8a1KYdC.js",
+      "sha256": "4b37b1769c37c4aae836ed18005bce2e70c799656b041f8b2021c658579c1e4a",
+      "colorGuideAbsent": true
+    }
+  },
+  "publishedOverlayResponse": {
+    "edits": []
+  },
+  "githubActionsRun": 38166200186,
+  "githubActionsConclusion": "success",
+  "browser": {
+    "updatedViaSaveAndRefresh": true,
+    "ethicsQuestionCount": 47,
+    "subjectColorGuideAbsent": true,
+    "headerSoundIconOnly": true,
+    "shortcutSoundControlAbsent": true
+  }
+}

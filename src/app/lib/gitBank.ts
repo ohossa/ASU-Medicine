@@ -6,6 +6,17 @@ export function selectGitCollection(chapters: ChapterData[], collection: Questio
   return chapters.filter(chapter => (chapter.bankSection ?? 'practice') === collection);
 }
 
+/** Filter past exam chapters by continuous assessment period (CA-1 or CA-2). */
+export function selectGitExamPeriod(chapters: ChapterData[], examPeriod: 'ca-1' | 'ca-2'): ChapterData[] {
+  return chapters.filter(chapter => {
+    if ((chapter.bankSection ?? 'practice') !== 'past-exams') return false;
+    if (examPeriod === 'ca-1') {
+      return chapter.examPeriod === 'ca-1' || (!chapter.examPeriod && chapter.id < 200);
+    }
+    return chapter.examPeriod === 'ca-2' || chapter.id >= 200;
+  });
+}
+
 /** Present each ordered iNerd topic as a selectable card, preserving its lecture number. */
 export function toGitTopicChapter(chapter: ChapterData): ChapterData {
   const topics: SubjectData[] = chapter.subjects.flatMap(subject =>

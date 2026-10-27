@@ -12,16 +12,33 @@ import {
 } from "../src/app/reports/contracts.js";
 export class ReportError extends Error {
   status: number;
+  readonly isReportError = true;
   constructor(status: number, message: string) {
     super(message);
+    this.name = 'ReportError';
     this.status = status;
+    Object.setPrototypeOf(this, ReportError.prototype);
   }
 }
+
+export function isReportError(err: unknown): err is ReportError {
+  return (
+    err instanceof ReportError ||
+    (typeof err === "object" &&
+      err !== null &&
+      ("isReportError" in err ||
+        ("status" in err &&
+          typeof (err as { status: unknown }).status === "number" &&
+          "message" in err &&
+          typeof (err as { message: unknown }).message === "string")))
+  );
+}
+
 const submission = z
   .object({
-    requestId: z.string().uuid(),
-    moduleCode: z.string().regex(/^[A-Z0-9]+(?:-[A-Z0-9]+)*-[1-5]$/),
-    chapterId: z.number().int().nonnegative(),
+    requestId: z.string().min(1).default(() => crypto.randomUUID()),
+    moduleCode: z.string().regex(/^[A-Z0-9]+(?:-[A-Z0-9]+)*-[1-5]$/i).transform(s => s.toUpperCase()),
+    chapterId: z.coerce.number().int().nonnegative().default(1),
     questionId: z.string().min(1).max(180),
     subQuestionId: z.string().min(1).max(180).optional(),
     category: z.enum([

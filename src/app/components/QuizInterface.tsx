@@ -11,6 +11,7 @@ import { fx } from '../lib/pulseEngine';
 import type { QuizSessionSave } from '../hooks/useQuizSession';
 import { useQuizSession, saveLocalDrafts, loadLocalDrafts } from '../hooks/useQuizSession';
 import { SoundToggle } from './SoundToggle';
+import { KnowledgeGraphDrawer } from './KnowledgeGraphDrawer';
 import { useSoundEngine } from '../hooks/useSoundEngine';
 import { checkAnswerCorrect, choiceAnswerIndex } from '../utils/quiz';
 import {
@@ -27,7 +28,8 @@ import {
   Bookmark,
   AlertCircle,
   Activity,
-  Star
+  Star,
+  Network
 } from 'lucide-react';
 import type { ChapterData, SubjectData, Question, SubjectColor, QuizAnswer } from '../types';
 import { asEssayAnswer, asFillBlankAnswer, asMatchingAnswer, asCaseAnswer, subjectStyles, formatTime } from '../types';
@@ -190,6 +192,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
   // Case Study sub-question drafts temporary state
   const [subEssayDrafts, setSubEssayDrafts] = useState<Record<string, string>>({});
   const [revealedSubEssays, setRevealedSubEssays] = useState<Record<string, boolean>>({});
+  const [showConceptMap, setShowConceptMap] = useState(false);
   const lastFocusedSubQ = useRef<string | null>(null);
   const question = questions[current];
   const total = questions.length;
@@ -471,10 +474,33 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
       if ((tag === 'BUTTON' || tag === 'A') && (e.key === 'Enter' || e.key === ' ')) return;
       if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return;
 
+      const isTF = question?.type === 'truefalse';
+      const keyLower = e.key.toLowerCase();
+      const isShift = e.shiftKey;
+
       if (e.key === 'ArrowRight') handleGoTo(isRTL ? current - 1 : current + 1);
       else if (e.key === 'ArrowLeft') handleGoTo(isRTL ? current + 1 : current - 1);
-      else if (e.key.toLowerCase() === 'f') toggleFlag();
-      else if (e.key.toLowerCase() === 'g') toggleGrid();
+      else if (isShift && keyLower === 'f') {
+        toggleFlag();
+      }
+      else if (keyLower === 'f') {
+        if (isTF && answers[current] === undefined) {
+          setAnswer(false);
+        } else {
+          toggleFlag();
+        }
+      }
+      else if (isTF && (keyLower === 't' || e.key === '1' || e.key === '\u0661')) {
+        if (answers[current] === undefined) {
+          setAnswer(true);
+        }
+      }
+      else if (isTF && (e.key === '2' || e.key === '\u0662')) {
+        if (answers[current] === undefined) {
+          setAnswer(false);
+        }
+      }
+      else if (keyLower === 'g') toggleGrid();
       else if (e.key === 'Enter' && question) {
         if (question.type === 'essay' && asEssayAnswer(answers[current])?.selfGrade === undefined && !showEssayAnswer) {
           setShowEssayAnswer(true);
@@ -657,13 +683,13 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
     return (
       <div className="grid grid-cols-2 gap-3">
         {[
-          { label: 'True', val: true, icon: <Check size={20} /> },
-          { label: 'False', val: false, icon: <X size={20} /> }
-        ].map(({ label, val, icon }) => {
+          { label: 'True', val: true, icon: <Check size={20} />, keyHint: 'T / 1' },
+          { label: 'False', val: false, icon: <X size={20} />, keyHint: 'F / 2' }
+        ].map(({ label, val, icon, keyHint }) => {
           const selected = selectedIndex === (val ? 0 : 1);
           const isCorrect = val === (question.correctIndex === 0);
 
-          let btnClass = 'flex flex-col items-center gap-2 rounded-2xl border py-6 transition-all duration-200 btn-press ';
+          let btnClass = 'flex flex-col items-center justify-center gap-2 rounded-2xl border py-6 min-h-[96px] transition-all duration-200 btn-press ';
 
           if (!hasAnswered) {
             btnClass += 'border-gray-200 dark:border-white/[0.07] bg-gray-50/50 dark:bg-white/[0.025] text-gray-700 dark:text-white/60 hover:bg-gray-100 dark:hover:bg-white/[0.06]';
@@ -678,13 +704,21 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
           return (
             <motion.button
               key={label}
+              aria-label={label}
               disabled={hasAnswered}
               whileTap={hasAnswered ? undefined : { scale: 0.97 }}
               onClick={() => onChange(val)}
               className={btnClass}
             >
               {icon}
-              <span className="text-sm font-medium">{label}</span>
+              <div className="flex items-center gap-1.5">
+                <span className="text-sm font-semibold">{label}</span>
+                {!hasAnswered && (
+                  <kbd aria-hidden="true" className="hidden sm:inline-flex items-center rounded border border-gray-200 dark:border-white/10 bg-gray-100/80 dark:bg-white/[0.06] px-1.5 py-0.5 font-mono text-[10px] text-gray-500 dark:text-white/40">
+                    {keyHint}
+                  </kbd>
+                )}
+              </div>
             </motion.button>
           );
         })}
@@ -1224,7 +1258,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
           </div>
 
           <div className="quiz-header-actions flex w-full flex-wrap items-center justify-between gap-2 sm:w-auto sm:justify-end">
-            <ReportQuestionButton key={String(question.id)} question={question} chapterId={chapter.id}/>
+            <ReportQuestionButton key={String(question.id)} question={question} chapterId={chapter.id} moduleCode={(chapter as any).moduleCode || (question as any).moduleCode}/>
             {timerMode !== 'off' && (
               <span className={`quiz-timer flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-xs tabular-nums transition-colors ${
                 timerUrgency === 'critical'
@@ -1254,6 +1288,14 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
               }`}
             >
               <Grid3X3 size={15} />
+            </button>
+            <button
+              onClick={() => setShowConceptMap(true)}
+              aria-label="Topic Concept Map"
+              title="Explore Concept Knowledge Graph"
+              className="flex h-11 w-11 items-center justify-center rounded-full border border-gray-200 dark:border-white/[0.08] bg-gray-50/50 dark:bg-white/[0.04] text-gray-550 dark:text-white/50 hover:bg-gray-100 dark:hover:bg-white/[0.08] transition-colors btn-press"
+            >
+              <Network size={16} />
             </button>
             <SoundToggle muted={muted} onToggle={toggleMute} />
             <ShuffleSwitch />
@@ -1285,7 +1327,15 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
               className="fixed end-4 top-16 z-40 w-64 rounded-xl border border-gray-200 dark:border-white/[0.08] bg-white/95 dark:bg-[#161618]/95 p-4 text-xs shadow-2xl backdrop-blur-xl text-gray-800 dark:text-white"
             >
               <div className="mb-2 flex items-center justify-between gap-2"><p id="quiz-shortcuts-title" className="font-semibold text-gray-900 dark:text-white/80">Keyboard shortcuts</p><button ref={shortcutsCloseRef} type="button" onClick={toggleShortcuts} aria-label="Close keyboard shortcuts" className="flex h-11 w-11 items-center justify-center rounded-full hover:bg-secondary"><X size={16} aria-hidden="true"/></button></div>
-              {[['← →', 'Navigate questions'], ['1–9', 'Select MCQ / True-False option'], ['Enter', 'Reveal essay answer'], ['1 / 2', 'Correct / Wrong (essay)'], ['F', 'Flag question'], ['G', 'Toggle grid']].map(([k, d]) => (
+              {[
+                ['← →', 'Navigate questions'],
+                ['1–9', 'Select MCQ option'],
+                ['T / F or 1 / 2', 'Select True / False'],
+                ['F / Shift+F', 'Flag question'],
+                ['Enter', 'Reveal essay answer'],
+                ['1 / 2', 'Correct / Wrong (essay)'],
+                ['G', 'Toggle grid']
+              ].map(([k, d]) => (
                 <div key={k} className="flex items-center justify-between py-1 text-gray-500 dark:text-white/50">
                   <span>{d}</span>
                   <kbd className="rounded border border-gray-200 dark:border-white/15 bg-gray-100 dark:bg-white/[0.06] px-1.5 py-0.5 font-mono text-[10px] text-gray-700 dark:text-white/70">{k}</kbd>
@@ -1387,8 +1437,11 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                 )}
               </div>
               <button
+                type="button"
                 onClick={toggleFlag}
-                className={`flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-xs transition-colors btn-press ${
+                aria-pressed={flagged.has(current)}
+                aria-label={flagged.has(current) ? 'Flagged question' : 'Flag question'}
+                className={`flex min-h-[44px] items-center gap-1.5 rounded-full border px-3 py-1.5 text-xs transition-colors btn-press ${
                   flagged.has(current)
                     ? 'border-amber-500/40 bg-amber-500/10 text-amber-300'
                     : 'border-gray-200 dark:border-white/[0.08] bg-gray-50 dark:bg-white/[0.03] text-gray-500 dark:text-white/45 hover:bg-gray-100 dark:hover:bg-white/[0.07]'
@@ -1523,6 +1576,14 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
           </motion.div>
         )}
       </AnimatePresence>
+
+      <KnowledgeGraphDrawer
+        isOpen={showConceptMap}
+        onClose={() => setShowConceptMap(false)}
+        topicTitle={(chapter as any)?.title || (question as any)?.topic || 'Medical Topic'}
+        subjectName={subject?.name || (question as any)?.subjectColor || 'Clinical Science'}
+        moduleCode={(chapter as any)?.moduleCode || 'MGL-3'}
+      />
     </div>
   );
 }

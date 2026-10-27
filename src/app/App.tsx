@@ -33,6 +33,8 @@ const YearModules = lazy(() => import('../pages/YearModules'));
 const StudyMode = lazy(() => import('../pages/StudyMode'));
 const SubjectSelect = lazy(() => import('./components/SubjectSelect').then(m => ({ default: m.SubjectSelect })));
 const StudyTrackerSelectorModal = lazy(() => import('./components/StudyTrackerSelectorModal').then(m => ({ default: m.StudyTrackerSelectorModal })));
+const KnowledgeGraphPage = lazy(() => import('../pages/KnowledgeGraphPage').then(m => ({ default: m.KnowledgeGraphPage })));
+import { UserSyncPill } from './components/UserSyncPill';
 
 // Lazy-loaded FX layer components
 const LazyLevelUpOverlay = lazy(() => import('./components/LevelUpOverlay').then(m => ({ default: m.LevelUpOverlay })));
@@ -56,7 +58,8 @@ import {
   Flag,
   Globe,
   Check,
-  HeartHandshake
+  HeartHandshake,
+  Network
 } from 'lucide-react';
 import { toGitTopicChapter } from './lib/gitBank';
 import type { ChapterData, SubjectData, Question, Screen, QuizAnswer, QuestionCollection } from './types';
@@ -83,6 +86,7 @@ import { useQuizSession, clearLocalDrafts } from './hooks/useQuizSession';
 import type { QuizSessionSave } from './hooks/useQuizSession';
 import QuizResumeCard from './components/QuizResumeCard';
 import { useCloudSync } from './hooks/useCloudSync';
+import { usePresence } from './hooks/usePresence';
 import { useAcademicYear } from './preferences/useAcademicYear';
 import { YearSelectionModal } from './components/YearSelectionModal';
 import {
@@ -188,9 +192,15 @@ function QuizFlowWrapper({
   const [selectedPracticeBranch,setSelectedPracticeBranch]=useState<string|null>(null);
   useLayoutEffect(()=>setSelectedPracticeBranch(null),[selectedChapter?.id,code]);
   const [gitCollection, setGitCollection] = useState<QuestionCollection>('practice');
+  const [gitExamPeriod, setGitExamPeriod] = useState<'ca-1' | 'ca-2' | null>(null);
   useEffect(() => { setGitCollection('practice'); }, [code, mode]);
   useEffect(() => {
-    if (selectedModule?.code === 'MGL-3' && screen !== 'chapters' && selectedChapter?.bankSection) setGitCollection(selectedChapter.bankSection);
+    if (selectedModule?.code === 'MGL-3' && screen !== 'chapters' && selectedChapter?.bankSection) {
+      setGitCollection(selectedChapter.bankSection);
+      if (selectedChapter.examPeriod) {
+        setGitExamPeriod(selectedChapter.examPeriod);
+      }
+    }
   }, [selectedModule?.code, selectedChapter, screen]);
 
   useEffect(() => {
@@ -217,12 +227,13 @@ function QuizFlowWrapper({
     { label: 'Year 3', onClick: () => navigate('/year-3') },
     { label: 'Semester 1', onClick: () => navigate('/year-3?semester=1') },
     { label: 'GIT & Liver', onClick: () => navigate('/year-3/mgl-3') },
-    { label: studyModeNameMap[studyMode], onClick: () => { setGitCollection('practice'); setScreen('chapters'); } },
+    { label: studyModeNameMap[studyMode], onClick: () => { setGitCollection('practice'); setGitExamPeriod(null); setScreen('chapters'); } },
   ];
   const gitCollectionCrumbs = [
     ...gitBaseCrumbs,
-    { label: 'Question bank', onClick: () => { setGitCollection('practice'); setScreen('chapters'); } },
-    ...(gitCollection === 'past-exams' ? [{ label: 'Past exams & recalls', onClick: () => { setGitCollection('past-exams'); setScreen('chapters'); } }] : []),
+    { label: 'Question bank', onClick: () => { setGitCollection('practice'); setGitExamPeriod(null); setScreen('chapters'); } },
+    ...(gitCollection === 'past-exams' ? [{ label: 'Past exams & recalls', onClick: () => { setGitCollection('past-exams'); setGitExamPeriod(null); setScreen('chapters'); } }] : []),
+    ...(gitCollection === 'past-exams' && gitExamPeriod ? [{ label: gitExamPeriod === 'ca-2' ? 'Continuous 2 (CA-2)' : 'Continuous 1 (CA-1)', onClick: () => { setGitCollection('past-exams'); setScreen('chapters'); } }] : []),
   ];
 
   return (
@@ -232,8 +243,13 @@ function QuizFlowWrapper({
           {selectedModule.code === 'MGL-3' ? <GitBankSelect
             chapters={activeChapters}
             collection={gitCollection}
+            examPeriod={gitExamPeriod}
+            onExamPeriodChange={setGitExamPeriod}
             breadcrumbPath={gitBaseCrumbs}
-            onCollectionChange={setGitCollection}
+            onCollectionChange={(col) => {
+              setGitCollection(col);
+              if (col === 'practice') setGitExamPeriod(null);
+            }}
             studyModeName={studyModeNameMap[studyMode]}
             onSelectChapter={handleSelectChapter}
             userButton={customUserButton}
@@ -267,7 +283,7 @@ function QuizFlowWrapper({
             selectedBranch={selectedPracticeBranch}
             onBranchChange={setSelectedPracticeBranch}
             moduleCode={selectedModule.code}
-            breadcrumbPath={selectedModule.code === 'MGL-3' ? [...gitCollectionCrumbs, { label: selectedChapter.subjects[0]?.id ? selectedChapter.title.replace(/^Past exams — /, '') : selectedChapter.title }] : [
+            breadcrumbPath={selectedModule.code === 'MGL-3' ? [...gitCollectionCrumbs, { label: selectedChapter.subjects[0]?.name || selectedChapter.title.replace(/^(?:Past exams|CA-[12])\s*[—–-]\s*/, '') }] : [
               { label: t('portal') || 'Portal', onClick: () => navigate('/') },
               { label: t(`year${selectedYear || 2}`) || `Year ${selectedYear || 2}`, onClick: () => navigate(`/year-${selectedYear || 2}`) },
               { label: selectedModule?.name || '', onClick: () => {
@@ -299,7 +315,7 @@ function QuizFlowWrapper({
             childAnchor={quizPayload.childAnchor}
             breadcrumbPath={selectedModule.code === 'MGL-3' ? [
               ...gitCollectionCrumbs,
-              { label: quizPayload.chapter.title.replace(/^Past exams — /, ''), onClick: () => setScreen('subjects') },
+              { label: quizPayload.chapter.subjects[0]?.name || quizPayload.chapter.title.replace(/^(?:Past exams|CA-[12])\s*[—–-]\s*/, ''), onClick: () => setScreen('subjects') },
               { label: quizPayload.subject?.name ?? 'All topics' },
             ] : undefined}
           />
@@ -342,7 +358,7 @@ function QuizFlowWrapper({
             userButton={customUserButton}
             breadcrumbPath={selectedModule.code === 'MGL-3' ? [
               ...gitCollectionCrumbs,
-              { label: resultPayload.chapter.title.replace(/^Past exams — /, ''), onClick: () => setScreen('subjects') },
+              { label: resultPayload.chapter.subjects[0]?.name || resultPayload.chapter.title.replace(/^(?:Past exams|CA-[12])\s*[—–-]\s*/, ''), onClick: () => setScreen('subjects') },
               { label: resultPayload.subject?.name ?? 'All topics', onClick: () => setScreen('subjects') },
               { label: 'Results' },
             ] : undefined}
@@ -367,6 +383,7 @@ function MainApp() {
   
   // Initialize automatic cloud synchronization
   useCloudSync();
+  usePresence();
 
   // Startup cleanup: remove stale quiz sessions and local drafts (>7 days old or finished)
   useEffect(() => {
@@ -910,58 +927,67 @@ function MainApp() {
   };
 
   const customUserButton = useMemo(() => (
-    <UserButton
-      appearance={{
-        baseTheme: undefined,
-        elements: {
-          userButtonBox: "w-9 h-9",
-          userButtonTrigger: "w-9 h-9",
-          userButtonAvatarBox: "w-9 h-9 border border-physiology shadow-md",
-          userButtonAvatarImage: "w-full h-full object-cover",
-        }
-      }}
-    >
-      <UserButton.UserProfilePage
-        label={language === 'en' ? "Change Academic Year" : "تغيير السنة الدراسية"}
-        labelIcon={<GraduationCap size={16} />}
-        url="academic-year"
+    <UserSyncPill>
+      <UserButton
+        appearance={{
+          baseTheme: undefined,
+          elements: {
+            userButtonBox: "w-9 h-9",
+            userButtonTrigger: "w-9 h-9",
+            userButtonAvatarBox: "w-9 h-9 border border-physiology shadow-md",
+            userButtonAvatarImage: "w-full h-full object-cover",
+          }
+        }}
       >
-        <AcademicYearProfilePage
-          studentYear={activeStudentYear}
-          setStudentYear={setStudentYear}
-          setScreen={setScreen}
-          setSelectedYear={setSelectedYear}
-          setSelectedSemester={setSelectedSemester}
-          setSelectedModule={setSelectedModule}
-          setStudyMode={setStudyMode}
-          setSelectedChapter={setSelectedChapter}
-        />
-      </UserButton.UserProfilePage>
+        <UserButton.UserProfilePage
+          label={language === 'en' ? "Change Academic Year" : "تغيير السنة الدراسية"}
+          labelIcon={<GraduationCap size={16} />}
+          url="academic-year"
+        >
+          <AcademicYearProfilePage
+            studentYear={activeStudentYear}
+            setStudentYear={setStudentYear}
+            setScreen={setScreen}
+            setSelectedYear={setSelectedYear}
+            setSelectedSemester={setSelectedSemester}
+            setSelectedModule={setSelectedModule}
+            setStudyMode={setStudyMode}
+            setSelectedChapter={setSelectedChapter}
+          />
+        </UserButton.UserProfilePage>
 
-      <UserButton.UserProfilePage
-        label={language === 'en' ? "Language" : "اللغة"}
-        labelIcon={<Globe size={16} />}
-        url="language"
-      >
-        <LanguageProfilePage />
-      </UserButton.UserProfilePage>
+        <UserButton.UserProfilePage
+          label={language === 'en' ? "Language" : "اللغة"}
+          labelIcon={<Globe size={16} />}
+          url="language"
+        >
+          <LanguageProfilePage />
+        </UserButton.UserProfilePage>
 
-      <UserButton.UserProfilePage label="Learning profile" labelIcon={<GraduationCap size={16}/>} url="learning-profile">
-        <div className={`learning-hero reward-banner-${learning.data?.profile.banner??'default'}`}><div><h2>{user?.firstName??'Your learning profile'}</h2><p>{learning.data?`Level ${learning.data.profile.level} · ${learning.data.profile.xp} personal XP`:'Your learning profile will appear after cloud sync.'}</p><p>{TITLES.find(t=>t.id===learning.data?.profile.title)?.name??'Medical Student'}</p><button className="learning-primary mt-4" onClick={()=>navigate('/learning')}>Open progress and rewards</button></div></div>
-      </UserButton.UserProfilePage>
-      <UserButton.MenuItems>
-        <UserButton.Action label={language === "en" ? "Support ASUCodes" : "دعم ASUCodes"} labelIcon={<HeartHandshake size={16}/>} onClick={() => window.location.assign("/support")}/>
-        {hasOwnerAccess && (
-          <UserButton.Action label="Admin portal" labelIcon={<Layers size={16}/>} onClick={() => navigate('/admin')}/>
-        )}
+        <UserButton.UserProfilePage label="Learning profile" labelIcon={<GraduationCap size={16}/>} url="learning-profile">
+          <div className={`learning-hero reward-banner-${learning.data?.profile.banner??'default'}`}><div><h2>{user?.firstName??'Your learning profile'}</h2><p>{learning.data?`Level ${learning.data.profile.level} · ${learning.data.profile.xp} personal XP`:'Your learning profile will appear after cloud sync.'}</p><p>{TITLES.find(t=>t.id===learning.data?.profile.title)?.name??'Medical Student'}</p><button className="learning-primary mt-4" onClick={()=>navigate('/learning')}>Open progress and rewards</button></div></div>
+        </UserButton.UserProfilePage>
+        <UserButton.MenuItems>
+          <UserButton.Action label={language === "en" ? "Support ASUCodes" : "دعم ASUCodes"} labelIcon={<HeartHandshake size={16}/>} onClick={() => window.location.assign("/support")}/>
+          {hasOwnerAccess && (
+            <UserButton.Action label="Admin portal" labelIcon={<Layers size={16}/>} onClick={() => navigate('/admin')}/>
+          )}
 
-        <UserButton.Action
-          label={language === 'en' ? "My Progress" : "تقدمي"}
-          labelIcon={<Activity size={16} className="text-[#2dd4bf]" />}
-          onClick={() => {
-            transitionTo(() => navigate('/learning'));
-          }}
-        />
+          <UserButton.Action
+            label={language === 'en' ? "Knowledge Graph" : "شبكة المفاهيم"}
+            labelIcon={<Network size={16} className="text-biochem" />}
+            onClick={() => {
+              transitionTo(() => navigate('/knowledge-graph'));
+            }}
+          />
+
+          <UserButton.Action
+            label={language === 'en' ? "My Progress" : "تقدمي"}
+            labelIcon={<Activity size={16} className="text-[#2dd4bf]" />}
+            onClick={() => {
+              transitionTo(() => navigate('/learning'));
+            }}
+          />
 
         <UserButton.Action
           label="Flagged Questions"
@@ -988,6 +1014,7 @@ function MainApp() {
         />
       </UserButton.MenuItems>
     </UserButton>
+    </UserSyncPill>
   ), [user, hasOwnerAccess, language, transitionTo, navigate, setQuizPayload, setResultPayload, setShowPortalsModal, setShowSupportModal, activeStudentYear, setStudentYear, setScreen, setSelectedYear, setSelectedSemester, setSelectedModule, setStudyMode, setSelectedChapter, learning.data?.profile]);
 
   return (
@@ -1148,6 +1175,14 @@ function MainApp() {
             <Route path="/learning" element={<Suspense fallback={<div role="status">Loading your learning…</div>}><LearningHub key={user?.id} userButton={customUserButton} onSelectHistory={res=>handleSelectHistory(res,'history')}/></Suspense>}/>
             <Route path="/study-tracker" element={<Navigate to="/learning?view=progress" replace/>}/>
             <Route path="/history" element={<Navigate to="/learning?view=activity" replace/>}/>
+
+            <Route path="/knowledge-graph" element={
+              <FeatureErrorBoundary name="KnowledgeGraphPage">
+                <Suspense fallback={<LoadingScreen compact label="Opening Knowledge Graph Explorer…"/>}>
+                  <KnowledgeGraphPage userButton={customUserButton} />
+                </Suspense>
+              </FeatureErrorBoundary>
+            } />
 
             <Route path="/case-solver" element={<Navigate to="/" replace/>}/>
 

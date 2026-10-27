@@ -127,17 +127,6 @@ export default async function handler(req: any, res: any) {
   res.setHeader('X-Frame-Options', 'DENY');
   res.setHeader('Cache-Control', 'no-store');
 
-  // Diagnostic Status Check
-  const url = req.url || '';
-  if (url.includes('status=true') || url.includes('debug=true')) {
-    return res.status(200).json({
-      status: "ok",
-      redisConfigured: !!redisUrl || (!!kvUrl && !!kvToken),
-      clerkConfigured: !!process.env.CLERK_SECRET_KEY,
-      detectedKeys: Object.keys(process.env).filter(k => k.includes('REDIS') || k.includes('KV') || k.includes('CLERK'))
-    });
-  }
-
   try {
     // 1. Limit Payload Size (2MB)
     const contentLength = req.headers['content-length'];
@@ -155,15 +144,11 @@ export default async function handler(req: any, res: any) {
 
     let verified;
     try {
-      const origin = typeof req.headers['origin'] === 'string' ? req.headers['origin'] : '';
-      const host = typeof req.headers['host'] === 'string' ? req.headers['host'] : '';
       const allowedParties = Array.from(new Set([
         'https://asu.codes',
         'https://www.asu.codes',
         'https://asu-medicine.vercel.app',
         ...(process.env.REPORT_ALLOWED_ORIGINS ? process.env.REPORT_ALLOWED_ORIGINS.split(',').map((s: string)=>s.trim()).filter(Boolean) : []),
-        ...(origin ? [origin] : []),
-        ...(host ? [`https://${host}`, `http://${host}`] : []),
         ...(process.env.VERCEL_URL ? [`https://${process.env.VERCEL_URL}`] : [])
       ])).filter(Boolean);
 

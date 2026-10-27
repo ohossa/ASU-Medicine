@@ -12,6 +12,8 @@ This folder contains the full plan and tooling for moving ASU Portal to a scalab
 | `scripts/migrate.ts` | Converts old split MCQ/essay files into one v2 module file. |
 | `scripts/import-batch.ts` | Adds new batches of questions into an existing v2 module file. |
 | `scripts/import-ready.ts` | Bulk import pipeline. Processes all `_ready` batches across all modules in one run. |
+| `scripts/import_git_assessment2.py` | Automated intake, deduplication, enrichment, and auto-sorting pipeline for Assessment 2 (GIT / MGL-3). |
+| `scripts/import_git_ca2.py` | Automated intake, visual page audit (539 pages), and partition pipeline for GIT Continuous Assessment 2 (CA-2) past exams. |
 | `import-workflow.md` | Short workflow notes for repeated batch imports. |
 
 ## Organized question intake folder structure
@@ -417,6 +419,12 @@ Do not invent chapter names. If unsure, preserve the source heading as chapterTi
 ```
 
 ## Final safety checks before merging
+
+### GIT Module Past Exam Partitions (Continuous Assessment 1 & 2)
+In `MGL-3.json`, the Past Exams collection (`bankSection: "past-exams"`) is organized into dedicated Continuous Assessment partitions:
+- **Continuous 1 (CA-1)**: Chapters 101–108 (`examPeriod: "ca-1"`, 670 questions across 8 subjects).
+- **Continuous 2 (CA-2)**: Chapters 201–209 (`examPeriod: "ca-2"`, 247 questions across 9 subjects including Clinical GIT).
+- The portal's `GitBankSelect` provides a dedicated Continuous Assessment selector allowing students to choose between CA-1 and CA-2 before choosing their practice subject.
 
 Run these after implementation:
 

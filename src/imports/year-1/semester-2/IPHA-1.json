@@ -40,7 +40,7 @@
               "type": "essay",
               "lecture": 1,
               "text": "At pH 9.0, in which form would lidocaine (a weak base with pKa 7.9) exist predominantly?",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: It would exist predominantly in the non-ionized form, because the pH of the medium (9.0) is higher (more basic) than the pKa of the drug.",
               "keyConcept": "A weak base is mostly non-ionized when pH is above its pKa.",
               "modelAnswer": "It would exist predominantly in the non-ionized form, because the pH of the medium (9.0) is higher (more basic) than the pKa of the drug."
             },
@@ -49,7 +49,7 @@
               "type": "essay",
               "lecture": 1,
               "text": "Define drug bioavailability.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Bioavailability is the percentage of a drug released from a formulation that reaches the systemic circulation and becomes available for biological effect. It is calculated by dividing the area under the curve (AUC) after a given route (e.g., oral) by the AUC after intravenous injection.",
               "keyConcept": "Bioavailability = fraction reaching systemic circulation, measured as AUC(route)/AUC(IV).",
               "modelAnswer": "Bioavailability is the percentage of a drug released from a formulation that reaches the systemic circulation and becomes available for biological effect. It is calculated by dividing the area under the curve (AUC) after a given route (e.g., oral) by the AUC after intravenous injection."
             },
@@ -58,7 +58,7 @@
               "type": "essay",
               "lecture": 1,
               "text": "Enumerate the factors affecting drug bioavailability.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Bioavailability is affected by the factors that govern drug absorption from the GIT and by the first-pass effect.",
               "keyConcept": "GIT absorption factors and first-pass metabolism determine bioavailability.",
               "modelAnswer": "Bioavailability is affected by the factors that govern drug absorption from the GIT and by the first-pass effect."
             },
@@ -621,7 +621,7 @@
               "type": "essay",
               "lecture": 2,
               "text": "Define volume of distribution.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: The volume of distribution is the volume that would accommodate the entire amount of drug in the body if its concentration throughout the body were the same as that in plasma.",
               "keyConcept": "Vd is the apparent volume relating total body drug to plasma concentration.",
               "modelAnswer": "The volume of distribution is the volume that would accommodate the entire amount of drug in the body if its concentration throughout the body were the same as that in plasma."
             },
@@ -630,7 +630,7 @@
               "type": "essay",
               "lecture": 2,
               "text": "Describe what the volume of distribution indicates about the extent of tissue uptake of drugs.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: A small Vd (e.g., frusemide) indicates that tissue uptake is limited, whereas a large Vd (e.g., digoxin) indicates extensive tissue distribution.",
               "keyConcept": "Small Vd = limited tissue uptake; large Vd = extensive distribution.",
               "modelAnswer": "A small Vd (e.g., frusemide) indicates that tissue uptake is limited, whereas a large Vd (e.g., digoxin) indicates extensive tissue distribution."
             },
@@ -639,7 +639,7 @@
               "type": "essay",
               "lecture": 2,
               "text": "Discuss the clinical significance of binding to plasma protein.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Plasma protein binding facilitates drug absorption by keeping the free plasma concentration low, limits tissue penetration and decreases the volume of distribution. The bound fraction cannot be eliminated and acts as a reservoir that continuously releases free drug, prolonging the half-life. Heavy binding can make the free level too low to be effective against dangerous infections, and drugs sharing the acidic (low-capacity) binding site of albumin can displace one another, causing clinically significant drug interactions.",
               "keyConcept": "Protein binding lowers free drug, prolongs half-life and underlies displacement interactions.",
               "modelAnswer": "Plasma protein binding facilitates drug absorption by keeping the free plasma concentration low, limits tissue penetration and decreases the volume of distribution. The bound fraction cannot be eliminated and acts as a reservoir that continuously releases free drug, prolonging the half-life. Heavy binding can make the free level too low to be effective against dangerous infections, and drugs sharing the acidic (low-capacity) binding site of albumin can displace one another, causing clinically significant drug interactions."
             },
@@ -648,7 +648,7 @@
               "type": "essay",
               "lecture": 2,
               "text": "Discuss the clinical significance of determining the volume of distribution of drugs.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Vd estimates the extent of tissue uptake of a drug. In toxicity, dialysis is not useful for high-Vd drugs (most drug is in the tissues) but is useful for low-Vd drugs (most drug is in blood and extracellular fluid). Vd is also used to calculate the loading dose.",
               "keyConcept": "Vd predicts tissue uptake, dialysis usefulness and the loading dose.",
               "modelAnswer": "Vd estimates the extent of tissue uptake of a drug. In toxicity, dialysis is not useful for high-Vd drugs (most drug is in the tissues) but is useful for low-Vd drugs (most drug is in blood and extracellular fluid). Vd is also used to calculate the loading dose."
             },
@@ -675,7 +675,7 @@
               "type": "essay",
               "lecture": 2,
               "text": "Explain why dialysis is not used with high volume-of-distribution drugs.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: High-Vd drugs are taken up extensively into the tissues, so only a small amount remains in the plasma available to be removed by dialysis.",
               "keyConcept": "High Vd leaves little drug in plasma for dialysis to remove.",
               "modelAnswer": "High-Vd drugs are taken up extensively into the tissues, so only a small amount remains in the plasma available to be removed by dialysis."
             },
@@ -693,7 +693,7 @@
               "type": "essay",
               "lecture": 2,
               "text": "List four factors affecting the volume of distribution.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Factors include perfusion, diffusion, plasma protein binding, binding to tissue constituents and capillary permeability.",
               "keyConcept": "Perfusion, diffusion, protein binding and tissue binding determine Vd.",
               "modelAnswer": "Factors include perfusion, diffusion, plasma protein binding, binding to tissue constituents and capillary permeability."
             },
@@ -702,7 +702,7 @@
               "type": "essay",
               "lecture": 2,
               "text": "List the pharmacokinetic characteristics of a drug with high lipid solubility.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: High lipophilicity facilitates absorption, increases the volume of distribution (the drug penetrates most tissues including CNS and placenta and enters cells), increases hepatic elimination (the drug enters hepatocytes) and decreases renal excretion (due to increased tubular reabsorption).",
               "keyConcept": "Lipophilic drugs are well absorbed, widely distributed, hepatically cleared and reabsorbed renally.",
               "modelAnswer": "High lipophilicity facilitates absorption, increases the volume of distribution (the drug penetrates most tissues including CNS and placenta and enters cells), increases hepatic elimination (the drug enters hepatocytes) and decreases renal excretion (due to increased tubular reabsorption)."
             },
@@ -711,7 +711,7 @@
               "type": "essay",
               "lecture": 2,
               "text": "List the pharmacokinetic properties of a drug of which more than 90% of the dose is bound to plasma protein.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Such a drug has facilitated absorption due to a low free plasma concentration, limited tissue penetration with a decreased volume of distribution, and a bound reservoir that continuously releases free drug and prolongs the half-life. The free level may be too low to be effective against dangerous infections.",
               "keyConcept": "Highly protein-bound drugs have small Vd, long half-life and limited free fraction.",
               "modelAnswer": "Such a drug has facilitated absorption due to a low free plasma concentration, limited tissue penetration with a decreased volume of distribution, and a bound reservoir that continuously releases free drug and prolongs the half-life. The free level may be too low to be effective against dangerous infections."
             },
@@ -720,7 +720,7 @@
               "type": "essay",
               "lecture": 2,
               "text": "Mention how the loading dose can be calculated.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: The loading dose equals the volume of distribution multiplied by the desired steady-state plasma concentration: LD = Vd x Css.",
               "keyConcept": "Loading dose = Vd x Css.",
               "modelAnswer": "The loading dose equals the volume of distribution multiplied by the desired steady-state plasma concentration: LD = Vd x Css."
             },
@@ -1325,7 +1325,7 @@
               "type": "essay",
               "lecture": 3,
               "text": "Administration of drugs may affect the metabolism of other drugs. Discuss this statement.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Certain drugs induce the microsomal enzyme systems, increasing their activity and the metabolism of other drugs, leading to drug interactions (e.g., rifampicin increases warfarin metabolism). Other drugs inhibit the microsomal enzyme systems, decreasing their activity and reducing the metabolism of other drugs, which can also cause significant interactions.",
               "keyConcept": "Enzyme inducers and inhibitors alter metabolism of co-administered drugs.",
               "modelAnswer": "Certain drugs induce the microsomal enzyme systems, increasing their activity and the metabolism of other drugs, leading to drug interactions (e.g., rifampicin increases warfarin metabolism). Other drugs inhibit the microsomal enzyme systems, decreasing their activity and reducing the metabolism of other drugs, which can also cause significant interactions."
             },
@@ -1334,7 +1334,7 @@
               "type": "essay",
               "lecture": 3,
               "text": "Define enzyme induction, give one example, and mention its clinical significance.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Enzyme induction is the stimulation of microsomal enzyme systems by certain drugs, increasing their activity. It increases metabolism of the inducing drug (causing tolerance, e.g., phenobarbitone), increases metabolism of other drugs (causing interactions, e.g., rifampicin and warfarin) and increases metabolism of endogenous substrates. Enzyme induction is reversible.",
               "keyConcept": "Enzyme induction raises enzyme activity, causing tolerance and drug interactions, and is reversible.",
               "modelAnswer": "Enzyme induction is the stimulation of microsomal enzyme systems by certain drugs, increasing their activity. It increases metabolism of the inducing drug (causing tolerance, e.g., phenobarbitone), increases metabolism of other drugs (causing interactions, e.g., rifampicin and warfarin) and increases metabolism of endogenous substrates. Enzyme induction is reversible."
             },
@@ -1343,7 +1343,7 @@
               "type": "essay",
               "lecture": 3,
               "text": "Define first-pass metabolism and enumerate two drugs that undergo or reduce hepatic first-pass metabolism.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: First-pass metabolism is the metabolism of some drugs during a single passage through the liver, gut wall or lungs before reaching the systemic circulation. Examples associated with first-pass handling include propranolol and erythromycin.",
               "keyConcept": "First-pass metabolism occurs in liver, gut wall or lungs before systemic circulation.",
               "modelAnswer": "First-pass metabolism is the metabolism of some drugs during a single passage through the liver, gut wall or lungs before reaching the systemic circulation. Examples associated with first-pass handling include propranolol and erythromycin."
             },
@@ -1370,7 +1370,7 @@
               "type": "essay",
               "lecture": 3,
               "text": "Discuss the factors affecting hepatic first-pass metabolism.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Hepatic first-pass metabolism is reduced by a fall in portal blood flow (e.g., portal hypertension, propranolol) and by inhibition of hepatic enzymes (e.g., liver failure or enzyme inhibitors such as erythromycin).",
               "keyConcept": "Reduced portal flow and hepatic enzyme inhibition lower first-pass metabolism.",
               "modelAnswer": "Hepatic first-pass metabolism is reduced by a fall in portal blood flow (e.g., portal hypertension, propranolol) and by inhibition of hepatic enzymes (e.g., liver failure or enzyme inhibitors such as erythromycin)."
             },
@@ -1406,7 +1406,7 @@
               "type": "essay",
               "lecture": 3,
               "text": "List four factors that may affect drug metabolism.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Factors include physiological changes (age, sex), pathological factors (liver cell failure affecting hepatic activity), pharmacogenetic variations (slow and fast acetylators) and enzyme induction or inhibition.",
               "keyConcept": "Age, disease, genetics and enzyme induction/inhibition affect metabolism.",
               "modelAnswer": "Factors include physiological changes (age, sex), pathological factors (liver cell failure affecting hepatic activity), pharmacogenetic variations (slow and fast acetylators) and enzyme induction or inhibition."
             },
@@ -2303,7 +2303,7 @@
               "type": "essay",
               "lecture": 4,
               "text": "Changes in doses cannot be tolerated with ethanol. Explain.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Ethanol is eliminated by zero-order kinetics, so even modest changes in dose can cause a disproportionate rise in concentration and toxicity.",
               "keyConcept": "Ethanol's zero-order elimination makes small dose changes dangerous.",
               "modelAnswer": "Ethanol is eliminated by zero-order kinetics, so even modest changes in dose can cause a disproportionate rise in concentration and toxicity."
             },
@@ -2312,7 +2312,7 @@
               "type": "essay",
               "lecture": 4,
               "text": "Compare between first-order and zero-order kinetic drugs in terms of elimination and amount of drug eliminated per unit time.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: In first-order kinetics, elimination is proportional to the plasma concentration and a constant fraction (percentage) of the drug is eliminated per unit time. In zero-order kinetics, elimination is constant and a constant amount of drug is eliminated per unit time.",
               "keyConcept": "First-order eliminates a constant fraction; zero-order eliminates a constant amount.",
               "modelAnswer": "In first-order kinetics, elimination is proportional to the plasma concentration and a constant fraction (percentage) of the drug is eliminated per unit time. In zero-order kinetics, elimination is constant and a constant amount of drug is eliminated per unit time."
             },
@@ -2321,7 +2321,7 @@
               "type": "essay",
               "lecture": 4,
               "text": "Compare between first-order and zero-order kinetic drugs in terms of metabolizing enzymes, steady-state concentration and half-life.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: First-order drugs have unlimited (unsaturated) metabolizing enzymes, a constant half-life and reach a steady-state concentration on repeated dosing (steady state in 4-5 half-lives). Zero-order drugs have limited (saturated) metabolizing enzymes, a variable half-life and do not reach a true steady state on repeated dosing, so the concentration overshoots and increasing the dose disproportionately raises the concentration.",
               "keyConcept": "First-order: constant t1/2 and true steady state; zero-order: saturable enzymes with overshooting levels.",
               "modelAnswer": "First-order drugs have unlimited (unsaturated) metabolizing enzymes, a constant half-life and reach a steady-state concentration on repeated dosing (steady state in 4-5 half-lives). Zero-order drugs have limited (saturated) metabolizing enzymes, a variable half-life and do not reach a true steady state on repeated dosing, so the concentration overshoots and increasing the dose disproportionately raises the concentration."
             },
@@ -2330,7 +2330,7 @@
               "type": "essay",
               "lecture": 4,
               "text": "Define saturation kinetics.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: A drug follows first-order kinetics at small doses but switches to zero-order kinetics at high doses when the elimination mechanism becomes saturated; this dose-dependent change is termed saturation kinetics.",
               "keyConcept": "Saturation kinetics is the shift from first-order to zero-order once elimination is saturated.",
               "modelAnswer": "A drug follows first-order kinetics at small doses but switches to zero-order kinetics at high doses when the elimination mechanism becomes saturated; this dose-dependent change is termed saturation kinetics."
             },
@@ -2339,7 +2339,7 @@
               "type": "essay",
               "lecture": 4,
               "text": "Define systemic drug clearance.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Systemic clearance is the volume of fluid cleared of the drug per unit time: CL = rate of elimination / drug concentration. It equals the sum of the individual organ clearances (liver, kidney, lung, etc.), so total clearance = renal clearance + non-renal clearance.",
               "keyConcept": "Systemic clearance = rate of elimination/concentration = sum of organ clearances.",
               "modelAnswer": "Systemic clearance is the volume of fluid cleared of the drug per unit time: CL = rate of elimination / drug concentration. It equals the sum of the individual organ clearances (liver, kidney, lung, etc.), so total clearance = renal clearance + non-renal clearance."
             },
@@ -2348,7 +2348,7 @@
               "type": "essay",
               "lecture": 4,
               "text": "Define the elimination half-life of a drug.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: The elimination half-life is the time required to reduce the plasma concentration of a drug to half of its initial concentration: t1/2 = 0.693 x Vd / CL.",
               "keyConcept": "t1/2 = 0.693 x Vd / CL.",
               "modelAnswer": "The elimination half-life is the time required to reduce the plasma concentration of a drug to half of its initial concentration: t1/2 = 0.693 x Vd / CL."
             },
@@ -2357,7 +2357,7 @@
               "type": "essay",
               "lecture": 4,
               "text": "Discuss the factors affecting drug clearance and their relation to clearance.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Clearance is directly proportional to blood flow to the clearing organ, inversely proportional to binding of the drug to plasma proteins, and directly proportional to the activity of the processes responsible for drug removal such as hepatic enzymes, glomerular filtration rate and secretory processes.",
               "keyConcept": "Clearance rises with organ blood flow and removal activity, and falls with protein binding.",
               "modelAnswer": "Clearance is directly proportional to blood flow to the clearing organ, inversely proportional to binding of the drug to plasma proteins, and directly proportional to the activity of the processes responsible for drug removal such as hepatic enzymes, glomerular filtration rate and secretory processes."
             },
@@ -2366,7 +2366,7 @@
               "type": "essay",
               "lecture": 4,
               "text": "Discuss the significance of determining drug clearance.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Clearance is used to calculate the maintenance dose (MD = CL x Css). For drugs eliminated by glomerular filtration, the dosing regimen can be guided by creatinine clearance, for example the dosing of gentamicin.",
               "keyConcept": "Clearance sets the maintenance dose (CL x Css) and guides renal dose adjustment.",
               "modelAnswer": "Clearance is used to calculate the maintenance dose (MD = CL x Css). For drugs eliminated by glomerular filtration, the dosing regimen can be guided by creatinine clearance, for example the dosing of gentamicin."
             },
@@ -2375,7 +2375,7 @@
               "type": "essay",
               "lecture": 4,
               "text": "Enumerate the effect of kidney function on the dose of gentamicin.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: With normal kidney function (creatinine clearance about 120 ml/min) give 80 mg three times daily; at a creatinine clearance of 60 ml/min give half the usual dose; and at a creatinine clearance of 30 ml/min give one quarter the usual dose.",
               "keyConcept": "Gentamicin dose is reduced in proportion to falling creatinine clearance.",
               "modelAnswer": "With normal kidney function (creatinine clearance about 120 ml/min) give 80 mg three times daily; at a creatinine clearance of 60 ml/min give half the usual dose; and at a creatinine clearance of 30 ml/min give one quarter the usual dose."
             },
@@ -2384,7 +2384,7 @@
               "type": "essay",
               "lecture": 4,
               "text": "Enumerate the factors affecting renal elimination and how they affect drug excretion.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Renal elimination is affected by the glomerular filtration rate, by plasma protein binding (which prevents filtration of bound drug), and by drug lipophilicity (influenced by urine pH and drug pKa), which enhances tubular reabsorption of the filtered drug.",
               "keyConcept": "GFR, protein binding and lipophilicity/urine pH govern renal excretion.",
               "modelAnswer": "Renal elimination is affected by the glomerular filtration rate, by plasma protein binding (which prevents filtration of bound drug), and by drug lipophilicity (influenced by urine pH and drug pKa), which enhances tubular reabsorption of the filtered drug."
             },
@@ -2393,7 +2393,7 @@
               "type": "essay",
               "lecture": 4,
               "text": "Mention one example of a drug category that may cause drug interactions of clinical significance.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Drugs with a steep (narrow) dose-response curve are prone to clinically significant drug interactions.",
               "keyConcept": "Drugs with steep dose-response curves cause significant interactions.",
               "modelAnswer": "Drugs with a steep (narrow) dose-response curve are prone to clinically significant drug interactions."
             },
@@ -2402,7 +2402,7 @@
               "type": "essay",
               "lecture": 4,
               "text": "Mention the factors affecting the elimination half-life.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: The half-life depends on the state of the eliminating organs (liver and kidney function) and on the delivery of the drug to those organs. Plasma protein binding limits renal filtration, and drugs with a very high volume of distribution may escape elimination by being held in the tissues.",
               "keyConcept": "Organ function, drug delivery, protein binding and Vd affect half-life.",
               "modelAnswer": "The half-life depends on the state of the eliminating organs (liver and kidney function) and on the delivery of the drug to those organs. Plasma protein binding limits renal filtration, and drugs with a very high volume of distribution may escape elimination by being held in the tissues."
             },
@@ -2411,7 +2411,7 @@
               "type": "essay",
               "lecture": 4,
               "text": "Mention the significance of saturation kinetics.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: With saturation kinetics, modest changes in dose or bioavailability can cause unexpected toxicity, and drug interactions are more common (e.g., phenytoin and theophylline).",
               "keyConcept": "Saturation kinetics causes unpredictable toxicity and frequent interactions.",
               "modelAnswer": "With saturation kinetics, modest changes in dose or bioavailability can cause unexpected toxicity, and drug interactions are more common (e.g., phenytoin and theophylline)."
             },
@@ -2420,7 +2420,7 @@
               "type": "essay",
               "lecture": 4,
               "text": "Mention two clinical values of the elimination half-life.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: The half-life determines the dosage interval (T): if T equals t1/2 the body stores about twice the dose (accepted for most drugs), if T is shorter than t1/2 more accumulation occurs, and if T is longer than t1/2 the concentration falls between doses. It also indicates the time to reach steady state (about 4-5 half-lives).",
               "keyConcept": "Half-life guides dosing interval and time to steady state (4-5 t1/2).",
               "modelAnswer": "The half-life determines the dosage interval (T): if T equals t1/2 the body stores about twice the dose (accepted for most drugs), if T is shorter than t1/2 more accumulation occurs, and if T is longer than t1/2 the concentration falls between doses. It also indicates the time to reach steady state (about 4-5 half-lives)."
             },
@@ -2429,7 +2429,7 @@
               "type": "essay",
               "lecture": 4,
               "text": "What factors might contribute to the elimination of a drug from the blood?",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Metabolism and excretion contribute to the elimination of a drug from the blood.",
               "keyConcept": "Drugs leave the blood by metabolism and excretion.",
               "modelAnswer": "Metabolism and excretion contribute to the elimination of a drug from the blood."
             },
@@ -3371,7 +3371,7 @@
               "type": "essay",
               "lecture": 1,
               "text": "Compare between agonist and antagonist with respect to affinity and efficacy.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: An agonist binds to the receptor and activates it, possessing both affinity and efficacy. An antagonist binds to the receptor without activating it, possessing affinity but no efficacy.",
               "keyConcept": "Agonists have affinity and efficacy; antagonists have affinity only.",
               "modelAnswer": "An agonist binds to the receptor and activates it, possessing both affinity and efficacy. An antagonist binds to the receptor without activating it, possessing affinity but no efficacy."
             },
@@ -3380,7 +3380,7 @@
               "type": "essay",
               "lecture": 1,
               "text": "Compare between chemical and physiological non-receptor antagonism in terms of characteristics, with examples.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Chemical antagonism is a direct interaction between an agonist and an antagonist away from the receptor (e.g., heparin, which carries a negative charge, is neutralized by the positively charged protamine sulfate, its antidote). Physiological antagonism is when one drug antagonizes the effect of another by acting on a different receptor to produce the opposite action (e.g., histamine causes bronchospasm and vasodilation, while epinephrine acts on adrenergic receptors to cause bronchodilation and vasoconstriction).",
               "keyConcept": "Chemical antagonism acts away from the receptor; physiological antagonism uses a different receptor.",
               "modelAnswer": "Chemical antagonism is a direct interaction between an agonist and an antagonist away from the receptor (e.g., heparin, which carries a negative charge, is neutralized by the positively charged protamine sulfate, its antidote). Physiological antagonism is when one drug antagonizes the effect of another by acting on a different receptor to produce the opposite action (e.g., histamine causes bronchospasm and vasodilation, while epinephrine acts on adrenergic receptors to cause bronchodilation and vasoconstriction)."
             },
@@ -3389,7 +3389,7 @@
               "type": "essay",
               "lecture": 1,
               "text": "Compare between competitive and non-competitive antagonists in terms of binding of antagonist and duration dependence.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: A competitive antagonist binds reversibly, competing with the agonist for the same recognition site, and the duration of antagonism depends on the relative plasma concentrations of agonist and antagonist. A non-competitive antagonist binds irreversibly to the recognition site or to an allosteric site, and the duration of antagonism depends on the rate of receptor turnover.",
               "keyConcept": "Competitive duration depends on relative drug concentrations; non-competitive depends on receptor turnover.",
               "modelAnswer": "A competitive antagonist binds reversibly, competing with the agonist for the same recognition site, and the duration of antagonism depends on the relative plasma concentrations of agonist and antagonist. A non-competitive antagonist binds irreversibly to the recognition site or to an allosteric site, and the duration of antagonism depends on the rate of receptor turnover."
             },
@@ -3398,7 +3398,7 @@
               "type": "essay",
               "lecture": 1,
               "text": "Compare between competitive and non-competitive receptor antagonism in terms of characteristics, with examples.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: A competitive antagonist competes with the agonist for the same recognition site of the receptor (e.g., curare antagonizing acetylcholine at the Nm receptor). A non-competitive antagonist binds irreversibly to the same recognition site or binds to an allosteric site (e.g., phenoxybenzamine antagonizing norepinephrine at the alpha receptor).",
               "keyConcept": "Competitive antagonists share the agonist site reversibly; non-competitive antagonists bind irreversibly or allosterically.",
               "modelAnswer": "A competitive antagonist competes with the agonist for the same recognition site of the receptor (e.g., curare antagonizing acetylcholine at the Nm receptor). A non-competitive antagonist binds irreversibly to the same recognition site or binds to an allosteric site (e.g., phenoxybenzamine antagonizing norepinephrine at the alpha receptor)."
             },
@@ -3416,7 +3416,7 @@
               "type": "essay",
               "lecture": 1,
               "text": "Compare between up-regulation and down-regulation of receptors.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Up-regulation is an increase in the number of receptors due to continuous use of an antagonist. Down-regulation is a decrease in the number of receptors due to continuous use of an agonist.",
               "keyConcept": "Antagonists up-regulate, agonists down-regulate receptors.",
               "modelAnswer": "Up-regulation is an increase in the number of receptors due to continuous use of an antagonist. Down-regulation is a decrease in the number of receptors due to continuous use of an agonist."
             },
@@ -3425,7 +3425,7 @@
               "type": "essay",
               "lecture": 1,
               "text": "Define drug tolerance.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Drug tolerance is a reduced responsiveness to a drug on repeated administration, so that higher doses are needed to produce the same effect.",
               "keyConcept": "Tolerance = needing higher doses for the same effect after repeated use.",
               "modelAnswer": "Drug tolerance is a reduced responsiveness to a drug on repeated administration, so that higher doses are needed to produce the same effect."
             },
@@ -3461,7 +3461,7 @@
               "type": "essay",
               "lecture": 1,
               "text": "Mention the difference between tolerance and tachyphylaxis.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Tachyphylaxis is an acute (rapid) tolerance in which the same effect cannot be restored even by a higher dose, for example the tolerance that develops after a few doses of ephedrine due to depletion of stored norepinephrine. Ordinary tolerance develops gradually and can usually be overcome by a higher dose.",
               "keyConcept": "Tachyphylaxis is acute tolerance not overcome by higher doses.",
               "modelAnswer": "Tachyphylaxis is an acute (rapid) tolerance in which the same effect cannot be restored even by a higher dose, for example the tolerance that develops after a few doses of ephedrine due to depletion of stored norepinephrine. Ordinary tolerance develops gradually and can usually be overcome by a higher dose."
             },
@@ -3470,7 +3470,7 @@
               "type": "essay",
               "lecture": 1,
               "text": "Mention two examples of a competitive antagonist.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Curare antagonizes acetylcholine at Nm receptors, and propranolol antagonizes isoprenaline at beta receptors.",
               "keyConcept": "Curare/ACh at Nm and propranolol/isoprenaline at beta are competitive pairs.",
               "modelAnswer": "Curare antagonizes acetylcholine at Nm receptors, and propranolol antagonizes isoprenaline at beta receptors."
             },
@@ -4303,7 +4303,7 @@
               "type": "essay",
               "lecture": 2,
               "text": "Compare between ion channel receptors and G-protein linked receptors with examples.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: In ion-channel receptors, binding of the agonist regulates the opening of the channel, changing membrane potential or intracellular ion concentration to produce the action (e.g., GABA receptors gating Cl- channels and nicotinic N receptors gating Na+/K+ channels). In G-protein linked receptors, the ligand binds and the G-protein regulates the activity of several effectors such as adenylyl cyclase and phospholipase C (e.g., Gs at beta receptors raising cAMP, Gi at alpha-2 and M2 lowering cAMP, and Gq at alpha-1, M1 and M3 producing DAG and IP3).",
               "keyConcept": "Ion-channel receptors gate ions directly; GPCRs act through second messengers.",
               "modelAnswer": "In ion-channel receptors, binding of the agonist regulates the opening of the channel, changing membrane potential or intracellular ion concentration to produce the action (e.g., GABA receptors gating Cl- channels and nicotinic N receptors gating Na+/K+ channels). In G-protein linked receptors, the ligand binds and the G-protein regulates the activity of several effectors such as adenylyl cyclase and phospholipase C (e.g., Gs at beta receptors raising cAMP, Gi at alpha-2 and M2 lowering cAMP, and Gq at alpha-1, M1 and M3 producing DAG and IP3)."
             },
@@ -4312,7 +4312,7 @@
               "type": "essay",
               "lecture": 2,
               "text": "Compare between receptors linked to tyrosine kinase and receptors regulating transcription, with examples.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Tyrosine kinase-linked receptors have an extracellular part that binds the drug and an intracellular enzymatic (tyrosine kinase) part that undergoes autophosphorylation to produce the action (e.g., insulin receptors). Receptors regulating transcription are intracellular/nuclear receptors that the drug enters the cell to bind, affecting transcription and changing protein production (e.g., steroid hormones such as cortisone and androgens, and vitamin D).",
               "keyConcept": "Tyrosine kinase receptors autophosphorylate; nuclear receptors alter gene transcription.",
               "modelAnswer": "Tyrosine kinase-linked receptors have an extracellular part that binds the drug and an intracellular enzymatic (tyrosine kinase) part that undergoes autophosphorylation to produce the action (e.g., insulin receptors). Receptors regulating transcription are intracellular/nuclear receptors that the drug enters the cell to bind, affecting transcription and changing protein production (e.g., steroid hormones such as cortisone and androgens, and vitamin D)."
             },
@@ -4591,7 +4591,7 @@
               "type": "essay",
               "lecture": 3,
               "text": "Compare between competitive and non-competitive antagonists in terms of Emax and EC50.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: A competitive antagonist causes no change in Emax (no change in efficacy) but increases the EC50 (decreased potency). A non-competitive antagonist decreases the Emax (decreased efficacy) with no change in EC50.",
               "keyConcept": "Competitive shifts EC50; non-competitive lowers Emax.",
               "modelAnswer": "A competitive antagonist causes no change in Emax (no change in efficacy) but increases the EC50 (decreased potency). A non-competitive antagonist decreases the Emax (decreased efficacy) with no change in EC50."
             },
@@ -4600,7 +4600,7 @@
               "type": "essay",
               "lecture": 3,
               "text": "Complete: define ED50 in the graded dose-response curve and give an example of an essential drug.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: The ED50 in a graded dose-response curve is the dose that produces 50% of the maximum therapeutic effect. An example of an essential drug is paracetamol.",
               "keyConcept": "ED50 is the dose giving 50% of maximal effect; paracetamol is an essential drug.",
               "modelAnswer": "The ED50 in a graded dose-response curve is the dose that produces 50% of the maximum therapeutic effect. An example of an essential drug is paracetamol."
             },
@@ -4618,7 +4618,7 @@
               "type": "essay",
               "lecture": 3,
               "text": "Define therapeutic index and mention its significance.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: The therapeutic index is the ratio between the LD50 and the ED50 (LD50/ED50). It indicates the safety of a drug: a large therapeutic index (LD50 much higher than ED50) means the drug is relatively safe.",
               "keyConcept": "Therapeutic index = LD50/ED50; larger means safer.",
               "modelAnswer": "The therapeutic index is the ratio between the LD50 and the ED50 (LD50/ED50). It indicates the safety of a drug: a large therapeutic index (LD50 much higher than ED50) means the drug is relatively safe."
             },
@@ -4645,7 +4645,7 @@
               "type": "essay",
               "lecture": 3,
               "text": "Enumerate the difference between competitive and non-competitive antagonists in terms of the shift of the dose-response curve.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: A competitive antagonist produces a parallel shift of the dose-response curve to the right. A non-competitive antagonist produces a non-parallel (downward) shift.",
               "keyConcept": "Competitive = parallel right shift; non-competitive = downward shift.",
               "modelAnswer": "A competitive antagonist produces a parallel shift of the dose-response curve to the right. A non-competitive antagonist produces a non-parallel (downward) shift."
             },
@@ -4654,7 +4654,7 @@
               "type": "essay",
               "lecture": 3,
               "text": "Enumerate two drugs with a low therapeutic index.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Examples include aminoglycosides, hypoglycemic agents, lithium and theophylline.",
               "keyConcept": "Lithium, theophylline, aminoglycosides and hypoglycemics have narrow therapeutic indices.",
               "modelAnswer": "Examples include aminoglycosides, hypoglycemic agents, lithium and theophylline."
             },
@@ -4663,7 +4663,7 @@
               "type": "essay",
               "lecture": 3,
               "text": "List four factors that could affect drug response.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Factors include dose, age, sex, pathological states, tolerance, psychological factors, drug interactions and patient compliance.",
               "keyConcept": "Dose, age, sex and disease state are key determinants of drug response.",
               "modelAnswer": "Factors include dose, age, sex, pathological states, tolerance, psychological factors, drug interactions and patient compliance."
             },
@@ -5265,7 +5265,7 @@
               "type": "essay",
               "lecture": 4,
               "text": "Compare between intolerance and side effect as augmented adverse effects.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Intolerance is an adverse effect appearing at doses below the therapeutic dose because of a lowered threshold to a normal pharmacologic action (e.g., tinnitus after a single small dose of aspirin). A side effect occurs at the therapeutic dose and may be a primary pharmacological action (dry mouth from antihistamines) or a secondary action (oral thrush from candida overgrowth while taking antibiotics).",
               "keyConcept": "Intolerance occurs below therapeutic dose; side effects occur at therapeutic dose.",
               "modelAnswer": "Intolerance is an adverse effect appearing at doses below the therapeutic dose because of a lowered threshold to a normal pharmacologic action (e.g., tinnitus after a single small dose of aspirin). A side effect occurs at the therapeutic dose and may be a primary pharmacological action (dry mouth from antihistamines) or a secondary action (oral thrush from candida overgrowth while taking antibiotics)."
             },
@@ -5274,7 +5274,7 @@
               "type": "essay",
               "lecture": 4,
               "text": "Compare between overdose and toxicity as augmented adverse effects.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Overdose effects occur at doses slightly above the therapeutic dose (e.g., seizures with lidocaine). Toxic effects occur at very high doses (e.g., hepatotoxicity with acetaminophen).",
               "keyConcept": "Overdose = slightly above therapeutic; toxicity = very high doses.",
               "modelAnswer": "Overdose effects occur at doses slightly above the therapeutic dose (e.g., seizures with lidocaine). Toxic effects occur at very high doses (e.g., hepatotoxicity with acetaminophen)."
             },
@@ -5301,7 +5301,7 @@
               "type": "essay",
               "lecture": 4,
               "text": "Define idiosyncratic drug adverse effects with two examples.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Idiosyncratic adverse effects are genetically mediated, abnormal responses to a drug, such as the reactions seen in porphyria and favism (G6PD deficiency).",
               "keyConcept": "Idiosyncrasy is a genetically determined abnormal drug response.",
               "modelAnswer": "Idiosyncratic adverse effects are genetically mediated, abnormal responses to a drug, such as the reactions seen in porphyria and favism (G6PD deficiency)."
             },
@@ -5328,7 +5328,7 @@
               "type": "essay",
               "lecture": 4,
               "text": "Enumerate two causes of a bizarre adverse reaction.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Causes include hypersensitivity (allergy), immune-based (acquired) reactions, genetically based reactions and idiosyncrasy.",
               "keyConcept": "Bizarre reactions stem from allergy, immune, genetic or idiosyncratic causes.",
               "modelAnswer": "Causes include hypersensitivity (allergy), immune-based (acquired) reactions, genetically based reactions and idiosyncrasy."
             },
@@ -5337,7 +5337,7 @@
               "type": "essay",
               "lecture": 4,
               "text": "Enumerate two diseases that can result from continuous use of some drugs.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Examples include hypertension, diabetes mellitus and analgesic nephropathy.",
               "keyConcept": "Chronic drug use can cause hypertension, diabetes or analgesic nephropathy.",
               "modelAnswer": "Examples include hypertension, diabetes mellitus and analgesic nephropathy."
             },
@@ -5346,7 +5346,7 @@
               "type": "essay",
               "lecture": 4,
               "text": "List two examples of pharmacogenetic disorders that could affect drug response.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Examples include acetylation polymorphism, hemolytic anemia due to G6PD deficiency, porphyria, succinylcholine (scoline) apnea, malignant hyperthermia, steroid-induced raised intraocular pressure and genetic resistance to anticoagulants.",
               "keyConcept": "Acetylation polymorphism and G6PD deficiency are classic pharmacogenetic disorders.",
               "modelAnswer": "Examples include acetylation polymorphism, hemolytic anemia due to G6PD deficiency, porphyria, succinylcholine (scoline) apnea, malignant hyperthermia, steroid-induced raised intraocular pressure and genetic resistance to anticoagulants."
             },
@@ -5355,7 +5355,7 @@
               "type": "essay",
               "lecture": 4,
               "text": "Mention two drugs used against drug allergy.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Epinephrine, corticosteroids and antihistaminics are used to treat drug allergy.",
               "keyConcept": "Epinephrine, corticosteroids and antihistamines treat drug allergy.",
               "modelAnswer": "Epinephrine, corticosteroids and antihistaminics are used to treat drug allergy."
             },
@@ -6190,7 +6190,7 @@
               "type": "essay",
               "lecture": 1,
               "text": "Beta blockers are used as prophylaxis in esophageal varices. Explain.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Non-selective beta blockers reduce portal blood flow by causing splanchnic vasoconstriction (through beta-2 blockade) and by reducing cardiac output (through beta-1 blockade).",
               "keyConcept": "Non-selective beta blockers lower portal pressure via splanchnic vasoconstriction and reduced cardiac output.",
               "modelAnswer": "Non-selective beta blockers reduce portal blood flow by causing splanchnic vasoconstriction (through beta-2 blockade) and by reducing cardiac output (through beta-1 blockade)."
             },
@@ -6199,7 +6199,7 @@
               "type": "essay",
               "lecture": 1,
               "text": "Carvedilol is used in chronic heart failure. Explain.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Carvedilol has oxygen free-radical antioxidant activity and reduces apoptosis, which is beneficial in chronic heart failure.",
               "keyConcept": "Carvedilol is antioxidant and anti-apoptotic, benefiting heart failure.",
               "modelAnswer": "Carvedilol has oxygen free-radical antioxidant activity and reduces apoptosis, which is beneficial in chronic heart failure."
             },
@@ -6208,7 +6208,7 @@
               "type": "essay",
               "lecture": 1,
               "text": "Clonidine: mention its mechanism of action.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Clonidine stimulates postsynaptic alpha-2 receptors in the nucleus tractus solitarius and imidazoline receptors in the rostral ventrolateral medulla, decreasing central sympathetic outflow and lowering blood pressure. It also acts on peripheral presynaptic alpha-2 receptors on adrenergic neurons to reduce norepinephrine release, and stimulates postsynaptic alpha-2 receptors to decrease renin and aldosterone.",
               "keyConcept": "Clonidine is a central alpha-2/imidazoline agonist that lowers sympathetic outflow and renin.",
               "modelAnswer": "Clonidine stimulates postsynaptic alpha-2 receptors in the nucleus tractus solitarius and imidazoline receptors in the rostral ventrolateral medulla, decreasing central sympathetic outflow and lowering blood pressure. It also acts on peripheral presynaptic alpha-2 receptors on adrenergic neurons to reduce norepinephrine release, and stimulates postsynaptic alpha-2 receptors to decrease renin and aldosterone."
             },
@@ -6226,7 +6226,7 @@
               "type": "essay",
               "lecture": 1,
               "text": "Compare between lipophilic and hydrophilic beta blockers in terms of absorption, first-pass effect and bioavailability.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Lipophilic beta blockers (propranolol, metoprolol, carvedilol) are well absorbed, undergo extensive first-pass metabolism and therefore have lower bioavailability. Hydrophilic beta blockers (atenolol, nadolol) are irregularly absorbed, undergo less first-pass metabolism and have higher bioavailability.",
               "keyConcept": "Lipophilic BBs: well absorbed, high first-pass, low bioavailability; hydrophilic BBs: the reverse.",
               "modelAnswer": "Lipophilic beta blockers (propranolol, metoprolol, carvedilol) are well absorbed, undergo extensive first-pass metabolism and therefore have lower bioavailability. Hydrophilic beta blockers (atenolol, nadolol) are irregularly absorbed, undergo less first-pass metabolism and have higher bioavailability."
             },
@@ -6235,7 +6235,7 @@
               "type": "essay",
               "lecture": 1,
               "text": "Compare between lipophilic and hydrophilic beta blockers in terms of distribution, elimination and half-life.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Lipophilic beta blockers penetrate the CNS more (more CNS side effects), are eliminated mainly by the liver (suitable in renal impairment) and have a short half-life requiring frequent administration (except esmolol). Hydrophilic beta blockers penetrate the CNS less (fewer CNS side effects), are eliminated mainly by the kidney (suitable in hepatic impairment) and have a long half-life allowing once-daily administration.",
               "keyConcept": "Lipophilic BBs are CNS-penetrant and hepatically cleared; hydrophilic BBs are renally cleared and longer acting.",
               "modelAnswer": "Lipophilic beta blockers penetrate the CNS more (more CNS side effects), are eliminated mainly by the liver (suitable in renal impairment) and have a short half-life requiring frequent administration (except esmolol). Hydrophilic beta blockers penetrate the CNS less (fewer CNS side effects), are eliminated mainly by the kidney (suitable in hepatic impairment) and have a long half-life allowing once-daily administration."
             },
@@ -6244,7 +6244,7 @@
               "type": "essay",
               "lecture": 1,
               "text": "Complete: the main use of alpha blockers, and the uses of prazosin and tamsulosin.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: The main use of alpha blockers is benign prostatic hyperplasia. Prazosin is used in benign prostatic hyperplasia with essential hypertension, while tamsulosin is used in benign prostatic hyperplasia without essential hypertension.",
               "keyConcept": "Alpha blockers treat BPH; prazosin suits coexisting hypertension, tamsulosin does not.",
               "modelAnswer": "The main use of alpha blockers is benign prostatic hyperplasia. Prazosin is used in benign prostatic hyperplasia with essential hypertension, while tamsulosin is used in benign prostatic hyperplasia without essential hypertension."
             },
@@ -6262,7 +6262,7 @@
               "type": "essay",
               "lecture": 1,
               "text": "Enumerate four therapeutic uses of beta blockers secondary to beta-2 blockade or local action.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: These uses include open-angle glaucoma (timolol and betaxolol), prophylaxis in esophageal varices, prophylaxis of migraine (propranolol and timolol) and essential tremor.",
               "keyConcept": "Non-cardiac beta-blocker uses: glaucoma, varices, migraine prophylaxis and essential tremor.",
               "modelAnswer": "These uses include open-angle glaucoma (timolol and betaxolol), prophylaxis in esophageal varices, prophylaxis of migraine (propranolol and timolol) and essential tremor."
             },
@@ -6289,7 +6289,7 @@
               "type": "essay",
               "lecture": 1,
               "text": "Enumerate three therapeutic uses of clonidine.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Clonidine is used for diarrhea in diabetics with autonomic neuropathy, as pre-anesthetic medication, for morphine withdrawal, for menopausal hot flushes, for migraine prophylaxis, for hypertensive urgencies and for glaucoma.",
               "keyConcept": "Clonidine treats hypertension, opioid withdrawal, hot flushes and migraine prophylaxis.",
               "modelAnswer": "Clonidine is used for diarrhea in diabetics with autonomic neuropathy, as pre-anesthetic medication, for morphine withdrawal, for menopausal hot flushes, for migraine prophylaxis, for hypertensive urgencies and for glaucoma."
             },
@@ -6298,7 +6298,7 @@
               "type": "essay",
               "lecture": 1,
               "text": "Enumerate two hypertensive emergencies treated by labetalol.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Labetalol is used for hypertension during pregnancy and labor (pre-eclampsia), pheochromocytoma, clonidine rebound hypertension and the cheese (tyramine) reaction.",
               "keyConcept": "Labetalol treats pre-eclampsia, pheochromocytoma and clonidine-rebound/cheese-reaction crises.",
               "modelAnswer": "Labetalol is used for hypertension during pregnancy and labor (pre-eclampsia), pheochromocytoma, clonidine rebound hypertension and the cheese (tyramine) reaction."
             },
@@ -6307,7 +6307,7 @@
               "type": "essay",
               "lecture": 1,
               "text": "First-dose postural hypotension with alpha-adrenoceptor blockers can be avoided. Explain how.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: It can be minimized by giving a small dose (about 1 mg) at bedtime.",
               "keyConcept": "Give a small first dose at bedtime to avoid first-dose hypotension.",
               "modelAnswer": "It can be minimized by giving a small dose (about 1 mg) at bedtime."
             },
@@ -6343,7 +6343,7 @@
               "type": "essay",
               "lecture": 1,
               "text": "List four therapeutic uses of beta blockers due to beta-1 blockade.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Through beta-1 blockade, beta blockers are used in hypertension, ischemic heart disease, cardiac arrhythmias, systolic heart failure, hypertrophic obstructive cardiomyopathy (relaxing the septum to reduce outflow resistance) and hyperthyroidism or thyrotoxic crisis (propranolol).",
               "keyConcept": "Beta-1 blockade treats hypertension, ischemia, arrhythmias, heart failure and HOCM.",
               "modelAnswer": "Through beta-1 blockade, beta blockers are used in hypertension, ischemic heart disease, cardiac arrhythmias, systolic heart failure, hypertrophic obstructive cardiomyopathy (relaxing the septum to reduce outflow resistance) and hyperthyroidism or thyrotoxic crisis (propranolol)."
             },
@@ -6379,7 +6379,7 @@
               "type": "essay",
               "lecture": 1,
               "text": "List two advantages of nebivolol.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Nebivolol does not induce significant bradycardia, does not cause sexual dysfunction and is useful in the treatment of hypertension.",
               "keyConcept": "Nebivolol avoids bradycardia and sexual dysfunction while treating hypertension.",
               "modelAnswer": "Nebivolol does not induce significant bradycardia, does not cause sexual dysfunction and is useful in the treatment of hypertension."
             },
@@ -6397,7 +6397,7 @@
               "type": "essay",
               "lecture": 1,
               "text": "List two adverse effects of beta blockers due to beta-2 blockade.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Beta-2 blockade can cause cold extremities, bronchospasm, prolongation of insulin-induced hypoglycemia, glucose intolerance and hyperkalemia in susceptible patients.",
               "keyConcept": "Beta-2 blockade causes bronchospasm, cold extremities and prolonged hypoglycemia.",
               "modelAnswer": "Beta-2 blockade can cause cold extremities, bronchospasm, prolongation of insulin-induced hypoglycemia, glucose intolerance and hyperkalemia in susceptible patients."
             },
@@ -6433,7 +6433,7 @@
               "type": "essay",
               "lecture": 1,
               "text": "List two vasodilator beta blockers.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Carvedilol, nebivolol and labetalol are vasodilator beta blockers.",
               "keyConcept": "Carvedilol, nebivolol and labetalol are vasodilating beta blockers.",
               "modelAnswer": "Carvedilol, nebivolol and labetalol are vasodilator beta blockers."
             },
@@ -6451,7 +6451,7 @@
               "type": "essay",
               "lecture": 1,
               "text": "Mention one therapeutic use of alpha methyldopa.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: It is used as an antihypertensive, especially in pregnancy.",
               "keyConcept": "Methyldopa is an antihypertensive of choice in pregnancy.",
               "modelAnswer": "It is used as an antihypertensive, especially in pregnancy."
             },
@@ -6469,7 +6469,7 @@
               "type": "essay",
               "lecture": 1,
               "text": "Mention the advantages of selective beta-1 blockers over non-selective ones.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Selective beta-1 blockers cause less bronchospasm, less delayed recovery from hypoglycemia and less risk of Raynaud's phenomenon.",
               "keyConcept": "Selective beta-1 blockers spare bronchi, hypoglycemia recovery and peripheral circulation.",
               "modelAnswer": "Selective beta-1 blockers cause less bronchospasm, less delayed recovery from hypoglycemia and less risk of Raynaud's phenomenon."
             },
@@ -6487,7 +6487,7 @@
               "type": "essay",
               "lecture": 1,
               "text": "Mention the mechanism of action of alpha methyldopa.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Alpha methyldopa is a prodrug metabolized in the brain to alpha-methyl-norepinephrine, which stimulates central alpha-2 receptors in the brainstem (nucleus tractus solitarius), reducing central sympathetic outflow and lowering blood pressure.",
               "keyConcept": "Methyldopa becomes alpha-methyl-NE, a central alpha-2 agonist that lowers sympathetic outflow.",
               "modelAnswer": "Alpha methyldopa is a prodrug metabolized in the brain to alpha-methyl-norepinephrine, which stimulates central alpha-2 receptors in the brainstem (nucleus tractus solitarius), reducing central sympathetic outflow and lowering blood pressure."
             },
@@ -6496,7 +6496,7 @@
               "type": "essay",
               "lecture": 1,
               "text": "Mention two types of ischemic heart disease treated by beta blockers.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Beta blockers are used in angina pectoris (except vasospastic angina, which they may worsen) and in myocardial infarction (prophylactically and in the acute phase to reduce infarct size and mortality).",
               "keyConcept": "Beta blockers treat classic angina and myocardial infarction but not vasospastic angina.",
               "modelAnswer": "Beta blockers are used in angina pectoris (except vasospastic angina, which they may worsen) and in myocardial infarction (prophylactically and in the acute phase to reduce infarct size and mortality)."
             },
@@ -6505,7 +6505,7 @@
               "type": "essay",
               "lecture": 1,
               "text": "Nebivolol: mention its mechanism of action.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Nebivolol is a selective beta-1 blocker that also releases nitric oxide from vascular endothelial cells, producing vasodilation.",
               "keyConcept": "Nebivolol is a beta-1 blocker that releases endothelial nitric oxide.",
               "modelAnswer": "Nebivolol is a selective beta-1 blocker that also releases nitric oxide from vascular endothelial cells, producing vasodilation."
             },
@@ -8278,7 +8278,7 @@
               "type": "essay",
               "lecture": 2,
               "text": "Compare between dopamine and dobutamine regarding the adverse effects.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Dopamine causes D1-mediated headache, nausea and vomiting, beta-1-mediated anginal pain and arrhythmia, and alpha-1-mediated hypertension and gangrene. Dobutamine has no D1 effect, is less arrhythmogenic through its beta-1 action, and has no alpha-1 effect.",
               "keyConcept": "Dopamine has more diverse adverse effects; dobutamine is less arrhythmogenic and lacks alpha/D1 effects.",
               "modelAnswer": "Dopamine causes D1-mediated headache, nausea and vomiting, beta-1-mediated anginal pain and arrhythmia, and alpha-1-mediated hypertension and gangrene. Dobutamine has no D1 effect, is less arrhythmogenic through its beta-1 action, and has no alpha-1 effect."
             },
@@ -8287,7 +8287,7 @@
               "type": "essay",
               "lecture": 2,
               "text": "Compare between dopamine and dobutamine regarding the mechanism of action.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Dopamine is a D1 agonist at low dose, a beta-1 agonist at moderate dose and an alpha-1 agonist at high dose. Dobutamine has no D1 effect, acts as a beta-1 agonist and has no alpha-1 agonist effect.",
               "keyConcept": "Dopamine has dose-dependent D1/beta-1/alpha-1 actions; dobutamine is essentially beta-1.",
               "modelAnswer": "Dopamine is a D1 agonist at low dose, a beta-1 agonist at moderate dose and an alpha-1 agonist at high dose. Dobutamine has no D1 effect, acts as a beta-1 agonist and has no alpha-1 agonist effect."
             },
@@ -8296,7 +8296,7 @@
               "type": "essay",
               "lecture": 2,
               "text": "Compare between dopamine and dobutamine regarding the therapeutic uses.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Dopamine is used in acute heart failure and cardiogenic shock especially with renal impairment or hypotension, and short-term in chronic refractory heart failure. Dobutamine is used in acute heart failure and cardiogenic shock especially in normotensive patients with normal renal function, and short-term in chronic refractory heart failure.",
               "keyConcept": "Dopamine suits shock with renal impairment/hypotension; dobutamine suits normotensive patients.",
               "modelAnswer": "Dopamine is used in acute heart failure and cardiogenic shock especially with renal impairment or hypotension, and short-term in chronic refractory heart failure. Dobutamine is used in acute heart failure and cardiogenic shock especially in normotensive patients with normal renal function, and short-term in chronic refractory heart failure."
             },
@@ -8305,7 +8305,7 @@
               "type": "essay",
               "lecture": 2,
               "text": "Dipivefrine (pro-epinephrine) is used instead of epinephrine in the treatment of open-angle glaucoma. Explain.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Epinephrine itself is unstable and destroyed in an alkaline medium; dipivefrine is a more stable lipophilic prodrug that penetrates the cornea better and is then converted to active epinephrine.",
               "keyConcept": "Dipivefrine is a stable, better-penetrating prodrug of epinephrine.",
               "modelAnswer": "Epinephrine itself is unstable and destroyed in an alkaline medium; dipivefrine is a more stable lipophilic prodrug that penetrates the cornea better and is then converted to active epinephrine."
             },
@@ -8314,7 +8314,7 @@
               "type": "essay",
               "lecture": 2,
               "text": "Enumerate the advantages of selective beta-2 agonists over non-selective ones.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Selective beta-2 agonists cause no cardiac adverse effects at therapeutic doses, are longer acting and are available by all routes including the oral route.",
               "keyConcept": "Selective beta-2 agonists are cardiac-sparing, longer acting and orally available.",
               "modelAnswer": "Selective beta-2 agonists cause no cardiac adverse effects at therapeutic doses, are longer acting and are available by all routes including the oral route."
             },
@@ -8323,7 +8323,7 @@
               "type": "essay",
               "lecture": 2,
               "text": "Enumerate the drugs affecting the enzymatic degradation of norepinephrine, mentioning their uses.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Monoamine oxidase inhibitors (MAOIs) are used in depression and parkinsonism, and catechol-O-methyltransferase inhibitors (COMT inhibitors) are used in parkinsonism.",
               "keyConcept": "MAOIs (depression, parkinsonism) and COMT inhibitors (parkinsonism) block norepinephrine degradation.",
               "modelAnswer": "Monoamine oxidase inhibitors (MAOIs) are used in depression and parkinsonism, and catechol-O-methyltransferase inhibitors (COMT inhibitors) are used in parkinsonism."
             },
@@ -8332,7 +8332,7 @@
               "type": "essay",
               "lecture": 2,
               "text": "Enumerate the drugs that interfere with the uptake of catecholamines, mentioning their proposed mechanism.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Uptake I actively transports norepinephrine from the synaptic cleft into the neuronal cytoplasm (to be stored in granules or metabolized by MAO) and is blocked by tricyclic antidepressants and cocaine. Vesicular uptake moves norepinephrine from the cytoplasm into storage vesicles and is blocked by reserpine (which depletes stores). Uptake II carries catecholamines into target organs for metabolism and is blocked by glucocorticoids.",
               "keyConcept": "Uptake I is blocked by TCAs/cocaine, vesicular uptake by reserpine, uptake II by glucocorticoids.",
               "modelAnswer": "Uptake I actively transports norepinephrine from the synaptic cleft into the neuronal cytoplasm (to be stored in granules or metabolized by MAO) and is blocked by tricyclic antidepressants and cocaine. Vesicular uptake moves norepinephrine from the cytoplasm into storage vesicles and is blocked by reserpine (which depletes stores). Uptake II carries catecholamines into target organs for metabolism and is blocked by glucocorticoids."
             },
@@ -8341,7 +8341,7 @@
               "type": "essay",
               "lecture": 2,
               "text": "Enumerate the therapeutic uses of ephedrine.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Ephedrine is used for epistaxis, as a nasal decongestant, in spinal shock, for nocturnal enuresis in children and for urinary incontinence in adults.",
               "keyConcept": "Ephedrine treats epistaxis, congestion, spinal shock, enuresis and incontinence.",
               "modelAnswer": "Ephedrine is used for epistaxis, as a nasal decongestant, in spinal shock, for nocturnal enuresis in children and for urinary incontinence in adults."
             },
@@ -8350,7 +8350,7 @@
               "type": "essay",
               "lecture": 2,
               "text": "Epinephrine is used in anaphylactic shock. Explain.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Epinephrine reverses the bronchospasm and hypotension of anaphylaxis, making it lifesaving.",
               "keyConcept": "Epinephrine reverses anaphylactic bronchospasm and hypotension.",
               "modelAnswer": "Epinephrine reverses the bronchospasm and hypotension of anaphylaxis, making it lifesaving."
             },
@@ -8359,7 +8359,7 @@
               "type": "essay",
               "lecture": 2,
               "text": "Explain the mechanism of the cheese reaction.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Because MAO is inhibited, dietary tyramine escapes intestinal first-pass metabolism, enters the circulation and triggers release of norepinephrine from neurons that are loaded with norepinephrine, producing a hypertensive crisis.",
               "keyConcept": "Tyramine escapes metabolism and releases stored norepinephrine when MAO is inhibited.",
               "modelAnswer": "Because MAO is inhibited, dietary tyramine escapes intestinal first-pass metabolism, enters the circulation and triggers release of norepinephrine from neurons that are loaded with norepinephrine, producing a hypertensive crisis."
             },
@@ -8386,7 +8386,7 @@
               "type": "essay",
               "lecture": 2,
               "text": "List the adverse effects of selective beta-2 agonists.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: They can cause anxiety and restlessness, headache and tremors, hypokalemia, tachycardia, hypoxemia and tolerance.",
               "keyConcept": "Beta-2 agonists cause tremor, hypokalemia, tachycardia and tolerance.",
               "modelAnswer": "They can cause anxiety and restlessness, headache and tremors, hypokalemia, tachycardia, hypoxemia and tolerance."
             },
@@ -8395,7 +8395,7 @@
               "type": "essay",
               "lecture": 2,
               "text": "List the indications of beta-2 agonists, mentioning two preparations.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: They are used in bronchial asthma (salbutamol, short-acting; salmeterol, long-acting), to prevent premature labor and threatened abortion (terbutaline and ritodrine) and in peripheral vascular disease (salbutamol).",
               "keyConcept": "Beta-2 agonists treat asthma, premature labor and peripheral vascular disease.",
               "modelAnswer": "They are used in bronchial asthma (salbutamol, short-acting; salmeterol, long-acting), to prevent premature labor and threatened abortion (terbutaline and ritodrine) and in peripheral vascular disease (salbutamol)."
             },
@@ -8413,7 +8413,7 @@
               "type": "essay",
               "lecture": 2,
               "text": "List the main metabolic effects of an epinephrine injection.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Epinephrine causes hepatic glycogenolysis (mainly beta-2 with alpha-1), inhibits insulin release (alpha-2 dominant) while stimulating it through beta-2, promotes lipolysis (beta-2/beta-3, inhibited by alpha-2) and stimulates renin release (beta-1).",
               "keyConcept": "Epinephrine raises blood glucose via glycogenolysis, modulates insulin, and promotes lipolysis and renin release.",
               "modelAnswer": "Epinephrine causes hepatic glycogenolysis (mainly beta-2 with alpha-1), inhibits insulin release (alpha-2 dominant) while stimulating it through beta-2, promotes lipolysis (beta-2/beta-3, inhibited by alpha-2) and stimulates renin release (beta-1)."
             },
@@ -8422,7 +8422,7 @@
               "type": "essay",
               "lecture": 2,
               "text": "List the possible adverse effects of phenylephrine.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Phenylephrine can cause hypertension and reflex bradycardia, and with local application rebound nasal congestion and atrophic rhinitis.",
               "keyConcept": "Phenylephrine causes hypertension, reflex bradycardia and rebound congestion.",
               "modelAnswer": "Phenylephrine can cause hypertension and reflex bradycardia, and with local application rebound nasal congestion and atrophic rhinitis."
             },
@@ -8449,7 +8449,7 @@
               "type": "essay",
               "lecture": 2,
               "text": "List the therapeutic uses of epinephrine.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Epinephrine is used for anaphylactic shock, asthma associated with locked lung, cardiac arrest, to arrest bleeding, added to local anesthetics to prolong their action, and in open-angle glaucoma to lower intraocular pressure.",
               "keyConcept": "Epinephrine treats anaphylaxis, cardiac arrest, bleeding and prolongs local anesthesia.",
               "modelAnswer": "Epinephrine is used for anaphylactic shock, asthma associated with locked lung, cardiac arrest, to arrest bleeding, added to local anesthetics to prolong their action, and in open-angle glaucoma to lower intraocular pressure."
             },
@@ -8458,7 +8458,7 @@
               "type": "essay",
               "lecture": 2,
               "text": "List the therapeutic uses of phenylephrine.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Phenylephrine is used as a mydriatic for fundus examination, as an eye and nasal decongestant, to raise blood pressure in hypotensive states, in paroxysmal supraventricular tachycardia associated with marked hypotension (raising BP triggers reflex vagal stimulation) and as a local treatment for hemorrhoids.",
               "keyConcept": "Phenylephrine is a mydriatic, decongestant and pressor agent.",
               "modelAnswer": "Phenylephrine is used as a mydriatic for fundus examination, as an eye and nasal decongestant, to raise blood pressure in hypotensive states, in paroxysmal supraventricular tachycardia associated with marked hypotension (raising BP triggers reflex vagal stimulation) and as a local treatment for hemorrhoids."
             },
@@ -8494,7 +8494,7 @@
               "type": "essay",
               "lecture": 2,
               "text": "Mention the contraindications of sympathomimetics.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Sympathomimetics are contraindicated in patients taking beta blockers, in hypertension and in thyrotoxicosis, and epinephrine should be avoided with local anesthetics in cardiac patients.",
               "keyConcept": "Avoid sympathomimetics in beta-blockade, hypertension, thyrotoxicosis and (with LA) cardiac patients.",
               "modelAnswer": "Sympathomimetics are contraindicated in patients taking beta blockers, in hypertension and in thyrotoxicosis, and epinephrine should be avoided with local anesthetics in cardiac patients."
             },
@@ -8503,7 +8503,7 @@
               "type": "essay",
               "lecture": 2,
               "text": "Mention the therapeutic use of dopexamine.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Dopexamine is used in shock with low cardiac output and peripheral vasoconstriction, for example after myocardial infarction or cardiac surgery.",
               "keyConcept": "Dopexamine treats low-output shock with peripheral vasoconstriction.",
               "modelAnswer": "Dopexamine is used in shock with low cardiac output and peripheral vasoconstriction, for example after myocardial infarction or cardiac surgery."
             },
@@ -8521,7 +8521,7 @@
               "type": "essay",
               "lecture": 2,
               "text": "Mention the therapeutic uses of norepinephrine.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Norepinephrine is used in the treatment of shock (septic and cardiogenic), shock with pulmonary embolism and hypotension after removal of a pheochromocytoma.",
               "keyConcept": "Norepinephrine is a pressor used for septic/cardiogenic shock and post-pheochromocytoma hypotension.",
               "modelAnswer": "Norepinephrine is used in the treatment of shock (septic and cardiogenic), shock with pulmonary embolism and hypotension after removal of a pheochromocytoma."
             },
@@ -8530,7 +8530,7 @@
               "type": "essay",
               "lecture": 2,
               "text": "Mention three cardiovascular uses of sympathomimetics with examples.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: They are used in chronic refractory heart failure and in acute heart failure or cardiogenic shock after acute myocardial infarction or open-heart surgery (dopamine acting on beta-1 and D1 with renal vasodilation, and dobutamine); in anaphylactic shock (epinephrine: alpha-1 vasoconstriction, beta-1 raising cardiac output, beta-2 bronchodilation); and in heart block (isoprenaline).",
               "keyConcept": "Sympathomimetics treat heart failure/shock, anaphylaxis and heart block.",
               "modelAnswer": "They are used in chronic refractory heart failure and in acute heart failure or cardiogenic shock after acute myocardial infarction or open-heart surgery (dopamine acting on beta-1 and D1 with renal vasodilation, and dobutamine); in anaphylactic shock (epinephrine: alpha-1 vasoconstriction, beta-1 raising cardiac output, beta-2 bronchodilation); and in heart block (isoprenaline)."
             },
@@ -8539,7 +8539,7 @@
               "type": "essay",
               "lecture": 2,
               "text": "Patients taking MAOIs may have some drug interactions. Explain.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: They may develop the cheese reaction, a hypertensive crisis caused by eating a diet rich in tyramine such as fermented foods (e.g., blue cheese).",
               "keyConcept": "MAOIs cause the tyramine (cheese) reaction, a hypertensive crisis.",
               "modelAnswer": "They may develop the cheese reaction, a hypertensive crisis caused by eating a diet rich in tyramine such as fermented foods (e.g., blue cheese)."
             },
@@ -8548,7 +8548,7 @@
               "type": "essay",
               "lecture": 2,
               "text": "Phenylephrine is preferred to atropine substitutes as a mydriatic for fundus examination. Explain.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Phenylephrine produces mydriasis without cycloplegia, which is especially advantageous in patients with glaucoma.",
               "keyConcept": "Phenylephrine dilates the pupil without cycloplegia.",
               "modelAnswer": "Phenylephrine produces mydriasis without cycloplegia, which is especially advantageous in patients with glaucoma."
             },
@@ -8557,7 +8557,7 @@
               "type": "essay",
               "lecture": 2,
               "text": "What are the adverse effects of indirect sympathomimetics?",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: They cause marked CNS stimulation (hallucinations, psychosis, convulsions and dependence on prolonged use), marked cardiovascular stimulation (palpitation, arrhythmia, hypertension) and marked anorexia; the newer anorexigens can cause pulmonary hypertension and valvular heart disease.",
               "keyConcept": "Indirect sympathomimetics cause CNS and cardiovascular stimulation, anorexia and (anorexigens) cardiopulmonary damage.",
               "modelAnswer": "They cause marked CNS stimulation (hallucinations, psychosis, convulsions and dependence on prolonged use), marked cardiovascular stimulation (palpitation, arrhythmia, hypertension) and marked anorexia; the newer anorexigens can cause pulmonary hypertension and valvular heart disease."
             },
@@ -9752,7 +9752,7 @@
               "type": "essay",
               "lecture": 1,
               "text": "Atropine is used in the treatment of organophosphate poisoning. Explain, mentioning its dose.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Atropine is used to dry bronchial secretions and stop wheezing; it is given as 2-5 mg every 5 minutes until full atropinization is achieved.",
               "keyConcept": "Atropine 2-5 mg every 5 min controls muscarinic effects until atropinization.",
               "modelAnswer": "Atropine is used to dry bronchial secretions and stop wheezing; it is given as 2-5 mg every 5 minutes until full atropinization is achieved."
             },
@@ -9779,7 +9779,7 @@
               "type": "essay",
               "lecture": 1,
               "text": "Complete the following statements about cholinergic and anticholinergic drugs.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Edrophonium is used in the diagnosis of myasthenia gravis. Donepezil is the neostigmine analogue used in Alzheimer dementia. The effect of atropine on the eye persists for more than 72 hours. Atropine is contraindicated in acute glaucoma and benign prostatic hyperplasia. Pilocarpine is the drug of choice in the treatment of glaucoma, while bethanechol is the drug of choice in megacolon.",
               "keyConcept": "Edrophonium diagnoses myasthenia, donepezil treats Alzheimer's, and atropine is contraindicated in glaucoma/BPH.",
               "modelAnswer": "Edrophonium is used in the diagnosis of myasthenia gravis. Donepezil is the neostigmine analogue used in Alzheimer dementia. The effect of atropine on the eye persists for more than 72 hours. Atropine is contraindicated in acute glaucoma and benign prostatic hyperplasia. Pilocarpine is the drug of choice in the treatment of glaucoma, while bethanechol is the drug of choice in megacolon."
             },
@@ -9806,7 +9806,7 @@
               "type": "essay",
               "lecture": 1,
               "text": "Enumerate the drugs which block cholinergic actions.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Cholinergic actions are blocked by antimuscarinic drugs, neuromuscular blockers, ganglion blockers and botulinum toxins.",
               "keyConcept": "Antimuscarinics, neuromuscular and ganglion blockers, and botulinum toxin block cholinergic actions.",
               "modelAnswer": "Cholinergic actions are blocked by antimuscarinic drugs, neuromuscular blockers, ganglion blockers and botulinum toxins."
             },
@@ -9824,7 +9824,7 @@
               "type": "essay",
               "lecture": 1,
               "text": "Enumerate the therapeutic uses of neostigmine.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Neostigmine is used in myasthenia gravis and as an antidote to non-depolarizing neuromuscular blockers such as curare.",
               "keyConcept": "Neostigmine treats myasthenia gravis and reverses curare-type blockade.",
               "modelAnswer": "Neostigmine is used in myasthenia gravis and as an antidote to non-depolarizing neuromuscular blockers such as curare."
             },
@@ -9833,7 +9833,7 @@
               "type": "essay",
               "lecture": 1,
               "text": "Enumerate the uses of hyoscine.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Hyoscine is used as a mydriatic, for the vomiting of motion sickness and Meniere's disease, and as a preanesthetic in thyrotoxic and cardiac patients.",
               "keyConcept": "Hyoscine treats motion sickness and is a preanesthetic in cardiac/thyrotoxic patients.",
               "modelAnswer": "Hyoscine is used as a mydriatic, for the vomiting of motion sickness and Meniere's disease, and as a preanesthetic in thyrotoxic and cardiac patients."
             },
@@ -9842,7 +9842,7 @@
               "type": "essay",
               "lecture": 1,
               "text": "Enumerate two drugs that decrease acetylcholine release.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Acetylcholine release is decreased by aminoglycosides, botulinum toxins, and presynaptic M2 or alpha-2 agonists.",
               "keyConcept": "Aminoglycosides and botulinum toxin decrease acetylcholine release.",
               "modelAnswer": "Acetylcholine release is decreased by aminoglycosides, botulinum toxins, and presynaptic M2 or alpha-2 agonists."
             },
@@ -9851,7 +9851,7 @@
               "type": "essay",
               "lecture": 1,
               "text": "Enumerate two drugs with atropine-like action.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Drugs with atropine-like (antimuscarinic) action include first-generation antihistamines, tricyclic antidepressants, antipsychotics, antiarrhythmics, atropine substitutes and pethidine.",
               "keyConcept": "First-generation antihistamines and tricyclic antidepressants have atropine-like effects.",
               "modelAnswer": "Drugs with atropine-like (antimuscarinic) action include first-generation antihistamines, tricyclic antidepressants, antipsychotics, antiarrhythmics, atropine substitutes and pethidine."
             },
@@ -9869,7 +9869,7 @@
               "type": "essay",
               "lecture": 1,
               "text": "Explain the mechanism of action of cholinesterase reactivators in the treatment of organophosphate poisoning.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Cholinesterase reactivators (oximes) reactivate the cholinesterase enzyme by binding to its anionic site and detaching the active organophosphate group from the enzyme via the free oxime.",
               "keyConcept": "Oximes detach the organophosphate from cholinesterase, reactivating it.",
               "modelAnswer": "Cholinesterase reactivators (oximes) reactivate the cholinesterase enzyme by binding to its anionic site and detaching the active organophosphate group from the enzyme via the free oxime."
             },
@@ -9923,7 +9923,7 @@
               "type": "essay",
               "lecture": 1,
               "text": "Hyoscine is used as a preanesthetic in thyrotoxic and cardiac patients. Explain.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Hyoscine is a pure antagonist that does not cause the initial bradycardia seen with atropine, making it safer in thyrotoxic and cardiac patients.",
               "keyConcept": "Hyoscine is a pure antimuscarinic without initial bradycardia.",
               "modelAnswer": "Hyoscine is a pure antagonist that does not cause the initial bradycardia seen with atropine, making it safer in thyrotoxic and cardiac patients."
             },
@@ -9950,7 +9950,7 @@
               "type": "essay",
               "lecture": 1,
               "text": "List the therapeutic uses of physostigmine.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Physostigmine is used in glaucoma, as an antidote in atropine toxicity, and to counteract mydriatics after fundus examination.",
               "keyConcept": "Physostigmine treats glaucoma and reverses antimuscarinic (atropine) toxicity.",
               "modelAnswer": "Physostigmine is used in glaucoma, as an antidote in atropine toxicity, and to counteract mydriatics after fundus examination."
             },
@@ -9959,7 +9959,7 @@
               "type": "essay",
               "lecture": 1,
               "text": "List three indications of pilocarpine.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: In the eye it is a miotic used to counteract mydriatics after fundus examination, to alternate with mydriatics in iridocyclitis to prevent synechiae, and in glaucoma. On exocrine glands it increases secretion and is used for dryness of the eye and mouth. On scalp blood vessels it causes vasodilation and is used as a hair tonic.",
               "keyConcept": "Pilocarpine is a miotic for glaucoma and a secretagogue for dry eye/mouth.",
               "modelAnswer": "In the eye it is a miotic used to counteract mydriatics after fundus examination, to alternate with mydriatics in iridocyclitis to prevent synechiae, and in glaucoma. On exocrine glands it increases secretion and is used for dryness of the eye and mouth. On scalp blood vessels it causes vasodilation and is used as a hair tonic."
             },
@@ -9968,7 +9968,7 @@
               "type": "essay",
               "lecture": 1,
               "text": "List two adverse effects of hyoscine.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Hyoscine is more CNS depressant than atropine, causing drowsiness and amnesia, and when used as a preanesthetic (especially in females) it may induce CNS excitement, hallucinations and vivid dreams.",
               "keyConcept": "Hyoscine causes sedation and amnesia but may cause excitement and hallucinations.",
               "modelAnswer": "Hyoscine is more CNS depressant than atropine, causing drowsiness and amnesia, and when used as a preanesthetic (especially in females) it may induce CNS excitement, hallucinations and vivid dreams."
             },
@@ -9977,7 +9977,7 @@
               "type": "essay",
               "lecture": 1,
               "text": "List two causes of death in organophosphorus toxicity, mentioning the stimulated receptors.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Death may result from respiratory center depression (M1 receptors), paralysis of the respiratory muscles due to persistent depolarization (Nm receptors), and excessive bronchial secretions with bronchospasm causing acute pulmonary edema (M3 receptors).",
               "keyConcept": "Organophosphate death is from respiratory depression, muscle paralysis and pulmonary edema.",
               "modelAnswer": "Death may result from respiratory center depression (M1 receptors), paralysis of the respiratory muscles due to persistent depolarization (Nm receptors), and excessive bronchial secretions with bronchospasm causing acute pulmonary edema (M3 receptors)."
             },
@@ -9986,7 +9986,7 @@
               "type": "essay",
               "lecture": 1,
               "text": "Mention the mechanism of action of cevimeline and its use.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Cevimeline is a selective M3 agonist used for dryness of the eye and mouth, for example in Sjogren syndrome.",
               "keyConcept": "Cevimeline is a selective M3 agonist for dry eye/mouth in Sjogren syndrome.",
               "modelAnswer": "Cevimeline is a selective M3 agonist used for dryness of the eye and mouth, for example in Sjogren syndrome."
             },
@@ -10004,7 +10004,7 @@
               "type": "essay",
               "lecture": 1,
               "text": "Mention the pharmacological effects of atropine on body secretions.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Atropine decreases lacrimation and reduces all body secretions except milk.",
               "keyConcept": "Atropine reduces all secretions except milk.",
               "modelAnswer": "Atropine decreases lacrimation and reduces all body secretions except milk."
             },
@@ -10022,7 +10022,7 @@
               "type": "essay",
               "lecture": 1,
               "text": "Mention two adverse effects of atropine.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Atropine can cause CNS effects (confusion, hallucination, delirium), eye effects (blurred vision, photophobia, sandy eye), dry mouth and skin, tachycardia, hyperthermia, flushing, urine retention in older men and constipation.",
               "keyConcept": "Atropine causes dry mouth, blurred vision, tachycardia, hyperthermia and urine retention.",
               "modelAnswer": "Atropine can cause CNS effects (confusion, hallucination, delirium), eye effects (blurred vision, photophobia, sandy eye), dry mouth and skin, tachycardia, hyperthermia, flushing, urine retention in older men and constipation."
             },
@@ -10031,7 +10031,7 @@
               "type": "essay",
               "lecture": 1,
               "text": "Mention two causes of toxicity of organophosphorus compounds.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Causes include suicide, accidental exposure while spraying insecticides (parathion, malathion) and exposure to nerve gases (such as sarin) during war.",
               "keyConcept": "Organophosphate toxicity arises from suicide, insecticide exposure and nerve gases.",
               "modelAnswer": "Causes include suicide, accidental exposure while spraying insecticides (parathion, malathion) and exposure to nerve gases (such as sarin) during war."
             },
@@ -10040,7 +10040,7 @@
               "type": "essay",
               "lecture": 1,
               "text": "Outline the lines of treatment of atropine toxicity.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Treatment includes gastric lavage, physostigmine (which antagonizes the central and peripheral effects), diazepam to control CNS excitement and cooling blankets to treat hyperthermia in children.",
               "keyConcept": "Atropine toxicity is treated with physostigmine, diazepam and cooling.",
               "modelAnswer": "Treatment includes gastric lavage, physostigmine (which antagonizes the central and peripheral effects), diazepam to control CNS excitement and cooling blankets to treat hyperthermia in children."
             },
@@ -10067,7 +10067,7 @@
               "type": "essay",
               "lecture": 1,
               "text": "Pyridostigmine is preferred to neostigmine in myasthenia gravis. Explain.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical & Pharmacological Rationale: Pyridostigmine has a longer duration of action (better compliance), fewer visceral (GIT) side effects and is more selective on skeletal muscle.",
               "keyConcept": "Pyridostigmine is longer acting with fewer GIT effects than neostigmine.",
               "modelAnswer": "Pyridostigmine has a longer duration of action (better compliance), fewer visceral (GIT) side effects and is more selective on skeletal muscle."
             },

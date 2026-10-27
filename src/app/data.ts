@@ -485,7 +485,7 @@ function transformV2Question(q: V2RawQuestion, subjectColor: SubjectColor): Ques
     text: cleanQuestionStem(cleanCircledC(q.text || q.question || '')),
     lecture: q.lecture ?? 1,
     subjectColor,
-    options: q.options,
+    options: q.options ? q.options.map(cleanCircledC) : undefined,
     correctIndex: q.correctIndex,
     pairs: q.pairs,
     modelAnswer: q.modelAnswer ? cleanCircledC(q.modelAnswer) : undefined,
@@ -495,7 +495,7 @@ function transformV2Question(q: V2RawQuestion, subjectColor: SubjectColor): Ques
       id: sq.id,
       type: sq.type,
       text: cleanQuestionStem(cleanCircledC(sq.text || sq.question || '')),
-      options: sq.options,
+      options: sq.options ? sq.options.map(cleanCircledC) : undefined,
       correctIndex: sq.correctIndex,
       modelAnswer: sq.modelAnswer ? cleanCircledC(sq.modelAnswer) : undefined,
       explanation: cleanCircledC(sq.explanation || ''),
@@ -684,7 +684,7 @@ export let correctionStatus: 'loading'|'ready'|'unavailable' = 'loading';
 export async function refreshQuestionCorrections() {
   if(import.meta.env.MODE === 'test') { correctionStatus='ready'; return; }
   try {
-    const response=await fetch('/api/question-bank?action=published',{signal:AbortSignal.timeout(8000),cache:'no-store'});
+    const response=await fetch('/api/question-bank?action=published',{signal:AbortSignal.timeout(8000)});
     if(!response.ok)throw new Error('Corrections unavailable');
     const data=await response.json();if(!Array.isArray(data.edits))throw new Error('Invalid corrections');
     await serializeOverlay(async()=>{latestPublishedEdits=data.edits;await applyPublishedEdits(moduleDatabases,data.edits,correctionSourceVersions);});correctionRevision++;correctionStatus='ready';
@@ -1011,7 +1011,7 @@ export function findQuestionById(id: string | number): { question: Question; cha
     if (!semesters) continue;
     for (const modules of Object.values(semesters)) {
       for (const mod of modules) {
-        if (isModuleActive(mod.code)) {
+        if (isModuleDataLoaded(mod.code)) {
           const chs = getChaptersForModuleAndMode(mod.code, 'mixed');
           for (const chapter of chs) {
             for (const subject of chapter.subjects) {
@@ -1029,6 +1029,6 @@ export function findQuestionById(id: string | number): { question: Question; cha
 }
 
 export function getChaptersForModuleAndMode(code:string,mode:'mcq'|'essay'|'mixed'):ChapterData[]{
- const key=code+':'+mode;const old=chapterCache.get(key);if(old?.revision===correctionRevision)return old.chapters;
- const chapters=visiblePracticeChapters(buildChaptersForModuleAndMode(code,mode));for(const c of chapters)for(const s of c.subjects)for(const q of s.questions)q.contentVersion??=sourceContentVersions.get(code+':'+q.id)??bankManifest[code]?.revision;chapterCache.set(key,{revision:correctionRevision,chapters});return chapters;
+ const key=code+':'+mode;const old=chapterCache.get(key);if(old?.revision===correctionRevision && old.chapters.length > 0)return old.chapters;
+ const chapters=visiblePracticeChapters(buildChaptersForModuleAndMode(code,mode));for(const c of chapters)for(const s of c.subjects)for(const q of s.questions)q.contentVersion??=sourceContentVersions.get(code+':'+q.id)??bankManifest[code]?.revision;if(chapters.length > 0){chapterCache.set(key,{revision:correctionRevision,chapters});}return chapters;
 }

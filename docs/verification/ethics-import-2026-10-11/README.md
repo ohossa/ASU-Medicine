@@ -94,7 +94,7 @@ These 27 unique groups are archived and excluded from the student-facing bank. T
 - `medical-decisions.json`, `exclusions.json`: per-question review, evidence locators, exact version hashes, answer comparisons and declared edits.
 - `placements.json`, `source-accounting.json`, `summary.json`: taxonomy, duplicate links and conservation.
 - `import-report.json`, `semantic-reconciliation.json`, `verification.json` and command logs: conversion and verification evidence.
-- Full immutable PDFs, page images, OCR and reproducible extraction/review/reconciliation scripts are under `question-intake-workspace/QUESTION_IMPORT_JOBS/2026-10-11-P4-3-ethics`. Source PDFs and scratch staging files are not part of the student-facing bank.
+- Full immutable PDFs, page images, OCR and reproducible extraction/review/reconciliation scripts are under `/Users/omarhossa/Documents/asu.codes questions/QUESTION_IMPORT_JOBS/2026-10-11-P4-3-ethics`. Source PDFs and scratch staging files are not part of the student-facing bank.
 
 Only the reviewed bank, generated bank catalog, new import-manifest entry, designated intake archive and verification/test artifacts were applied to the actual repository. Unrelated local files were preserved. The work is uncommitted and **not published**; publication requires the user’s explicit release instruction under `QUESTION_IMPORT_WORKFLOW.md`.
 

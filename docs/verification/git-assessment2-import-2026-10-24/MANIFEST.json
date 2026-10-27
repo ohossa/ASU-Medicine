@@ -1,0 +1,378 @@
+{
+  "moduleCode": "MGL-3",
+  "moduleName": "GIT & Liver",
+  "intakeSourceDirectory": "/Users/omarhossa/Downloads/Assessment 2 \ud83d\udfe0",
+  "timestamp": "2026-10-24T18:47:00Z",
+  "files": [
+    {
+      "subjectFolder": "Histo",
+      "filename": "Bg Histo 1 .pdf",
+      "relativePath": "Histo/Mcq /Bg Histo 1 .pdf",
+      "fullPath": "/Users/omarhossa/Downloads/Assessment 2 \ud83d\udfe0/Histo/Mcq /Bg Histo 1 .pdf",
+      "pages": 40,
+      "textLength": 0,
+      "isScanned": true,
+      "sha256": "126a7536423d5e9ea1db06fb2a0d29475202afefa7a974b370057bddb814cffb"
+    },
+    {
+      "subjectFolder": "Histo",
+      "filename": "Bg Histo GIT MCQ-1.pdf",
+      "relativePath": "Histo/Mcq /Bg Histo GIT MCQ-1.pdf",
+      "fullPath": "/Users/omarhossa/Downloads/Assessment 2 \ud83d\udfe0/Histo/Mcq /Bg Histo GIT MCQ-1.pdf",
+      "pages": 39,
+      "textLength": 0,
+      "isScanned": true,
+      "sha256": "5c355e52b33a58f419139fde1461077e51dd9a905573b93e0ef44a588bab0c78"
+    },
+    {
+      "subjectFolder": "Histo",
+      "filename": "Bg Histo GIT MCQ-3.pdf",
+      "relativePath": "Histo/Mcq /Bg Histo GIT MCQ-3.pdf",
+      "fullPath": "/Users/omarhossa/Downloads/Assessment 2 \ud83d\udfe0/Histo/Mcq /Bg Histo GIT MCQ-3.pdf",
+      "pages": 6,
+      "textLength": 6784,
+      "isScanned": false,
+      "sha256": "b7c13dc8dd76dfb037fca571880be4dda45277c536db64a7e26e8ebfe217fba8"
+    },
+    {
+      "subjectFolder": "Micro",
+      "filename": "M.asheaf important mcq questions.pdf",
+      "relativePath": "Micro/Mcq/M.asheaf important mcq questions.pdf",
+      "fullPath": "/Users/omarhossa/Downloads/Assessment 2 \ud83d\udfe0/Micro/Mcq/M.asheaf important mcq questions.pdf",
+      "pages": 4,
+      "textLength": 0,
+      "isScanned": true,
+      "sha256": "85a88f30f496c73d2a782148f34e91d7664fe7e235f8b099541d52e4d1fcaeb6"
+    },
+    {
+      "subjectFolder": "Micro",
+      "filename": "Micro mcq answers.pdf",
+      "relativePath": "Micro/Mcq/Micro mcq answers.pdf",
+      "fullPath": "/Users/omarhossa/Downloads/Assessment 2 \ud83d\udfe0/Micro/Mcq/Micro mcq answers.pdf",
+      "pages": 1,
+      "textLength": 0,
+      "isScanned": true,
+      "sha256": "ae9d5f6404d3187b4dd3f6c1155503dc1ccd3b32d7c5c1b1a380d50268228348"
+    },
+    {
+      "subjectFolder": "Micro",
+      "filename": "NOHA micro mcq [old] .pdf",
+      "relativePath": "Micro/Mcq/NOHA micro mcq [old] .pdf",
+      "fullPath": "/Users/omarhossa/Downloads/Assessment 2 \ud83d\udfe0/Micro/Mcq/NOHA micro mcq [old] .pdf",
+      "pages": 12,
+      "textLength": 264,
+      "isScanned": true,
+      "sha256": "6e765396d45b150a2f62aa05132680c2b64467678865a4d23cdf0359c52b445c"
+    },
+    {
+      "subjectFolder": "Micro",
+      "filename": "\ud83d\udca5M.ashraf mcq-2.pdf",
+      "relativePath": "Micro/Mcq/\ud83d\udca5M.ashraf mcq-2.pdf",
+      "fullPath": "/Users/omarhossa/Downloads/Assessment 2 \ud83d\udfe0/Micro/Mcq/\ud83d\udca5M.ashraf mcq-2.pdf",
+      "pages": 11,
+      "textLength": 0,
+      "isScanned": true,
+      "sha256": "23f7b77c4383a53092c61032b8f5a651e900963540604c57b83f85797f7be8f9"
+    },
+    {
+      "subjectFolder": "Bio",
+      "filename": "Biochemistry - iNerd GIT Answers.pdf",
+      "relativePath": "Bio/Mcq /Biochemistry - iNerd GIT Answers.pdf",
+      "fullPath": "/Users/omarhossa/Downloads/Assessment 2 \ud83d\udfe0/Bio/Mcq /Biochemistry - iNerd GIT Answers.pdf",
+      "pages": 26,
+      "textLength": 69440,
+      "isScanned": false,
+      "sha256": "fe83ce1a1a23f31d47e4bb7f482b62e94eace49adf0ecd18ab48cd4c5f316441"
+    },
+    {
+      "subjectFolder": "Bio",
+      "filename": "Biochemistry - iNerd GIT MCQ.pdf",
+      "relativePath": "Bio/Mcq /Biochemistry - iNerd GIT MCQ.pdf",
+      "fullPath": "/Users/omarhossa/Downloads/Assessment 2 \ud83d\udfe0/Bio/Mcq /Biochemistry - iNerd GIT MCQ.pdf",
+      "pages": 18,
+      "textLength": 0,
+      "isScanned": true,
+      "sha256": "0234d8c9a86252330ecc85e2cf132c2e14b8365311c47835b01816c5d35ea1f5"
+    },
+    {
+      "subjectFolder": "Bio",
+      "filename": "OMAR assesment-2 [old] .pdf",
+      "relativePath": "Bio/Mcq /OMAR assesment-2 [old] .pdf",
+      "fullPath": "/Users/omarhossa/Downloads/Assessment 2 \ud83d\udfe0/Bio/Mcq /OMAR assesment-2 [old] .pdf",
+      "pages": 14,
+      "textLength": 16219,
+      "isScanned": false,
+      "sha256": "556be58198fe7400609164cae457fdcde6a84f3c3d78dd010eed175282a16b8d"
+    },
+    {
+      "subjectFolder": "Bio",
+      "filename": "bio Git mcq.pdf",
+      "relativePath": "Bio/Mcq /bio Git mcq.pdf",
+      "fullPath": "/Users/omarhossa/Downloads/Assessment 2 \ud83d\udfe0/Bio/Mcq /bio Git mcq.pdf",
+      "pages": 102,
+      "textLength": 18473,
+      "isScanned": false,
+      "sha256": "24a6ad9e8add9ffdb6cdc246c1442d0018b3fc63643a5536c06ca413515980ca"
+    },
+    {
+      "subjectFolder": "Bio",
+      "filename": "bio quiz-2.pdf",
+      "relativePath": "Bio/Mcq /bio quiz-2.pdf",
+      "fullPath": "/Users/omarhossa/Downloads/Assessment 2 \ud83d\udfe0/Bio/Mcq /bio quiz-2.pdf",
+      "pages": 16,
+      "textLength": 16895,
+      "isScanned": false,
+      "sha256": "d4495c9ea55c827fbd5e91d08aca021f07d6c3794aa76f2ece9bd98822563966"
+    },
+    {
+      "subjectFolder": "Pharma",
+      "filename": "ALAA pharma mcq GIT-2  [old] .pdf",
+      "relativePath": "Pharma /Mcq/ALAA pharma mcq GIT-2  [old] .pdf",
+      "fullPath": "/Users/omarhossa/Downloads/Assessment 2 \ud83d\udfe0/Pharma /Mcq/ALAA pharma mcq GIT-2  [old] .pdf",
+      "pages": 5,
+      "textLength": 9629,
+      "isScanned": false,
+      "sha256": "e2ff42dc0af1d375d084ad0e920d9528e57bbe56a267dc0457e2230c442b1e05"
+    },
+    {
+      "subjectFolder": "Pharma",
+      "filename": "Bg MCQ pharma .pdf",
+      "relativePath": "Pharma /Mcq/Bg MCQ pharma .pdf",
+      "fullPath": "/Users/omarhossa/Downloads/Assessment 2 \ud83d\udfe0/Pharma /Mcq/Bg MCQ pharma .pdf",
+      "pages": 144,
+      "textLength": 164253,
+      "isScanned": false,
+      "sha256": "d5065f6f52600da6abbebd9b219d495f6bc0d28c2cff96453413f5f7fdda262a"
+    },
+    {
+      "subjectFolder": "Pharma",
+      "filename": "Liver  Lower GIT - Question Bank.pdf",
+      "relativePath": "Pharma /Mcq/Liver  Lower GIT - Question Bank.pdf",
+      "fullPath": "/Users/omarhossa/Downloads/Assessment 2 \ud83d\udfe0/Pharma /Mcq/Liver  Lower GIT - Question Bank.pdf",
+      "pages": 20,
+      "textLength": 36458,
+      "isScanned": false,
+      "sha256": "539d6b7e21afd1f7a2e9d31b8dbcbf8044aed9596d7b0207b2008037ed175ecc"
+    },
+    {
+      "subjectFolder": "Pharma",
+      "filename": "pharma mcq .pdf",
+      "relativePath": "Pharma /Mcq/pharma mcq .pdf",
+      "fullPath": "/Users/omarhossa/Downloads/Assessment 2 \ud83d\udfe0/Pharma /Mcq/pharma mcq .pdf",
+      "pages": 10,
+      "textLength": 110,
+      "isScanned": true,
+      "sha256": "0d87f3e4b9063970c1b6fa3eea3e3cf0553b4d03b426b4fadb79bd7d1ad1e2af"
+    },
+    {
+      "subjectFolder": "Patho",
+      "filename": "HEGAZY liver & pancreas [2022].pdf",
+      "relativePath": "Patho/Mcq/HEGAZY liver & pancreas [2022].pdf",
+      "fullPath": "/Users/omarhossa/Downloads/Assessment 2 \ud83d\udfe0/Patho/Mcq/HEGAZY liver & pancreas [2022].pdf",
+      "pages": 8,
+      "textLength": 8489,
+      "isScanned": false,
+      "sha256": "1dd5a4b74a04768770326821087c70eed776d4b38fd58d89f4fc975862671134"
+    },
+    {
+      "subjectFolder": "Patho",
+      "filename": "Patho bro Git 2 Mcq_251031_221320.pdf",
+      "relativePath": "Patho/Mcq/Patho bro Git 2 Mcq_251031_221320.pdf",
+      "fullPath": "/Users/omarhossa/Downloads/Assessment 2 \ud83d\udfe0/Patho/Mcq/Patho bro Git 2 Mcq_251031_221320.pdf",
+      "pages": 5,
+      "textLength": 3155,
+      "isScanned": false,
+      "sha256": "07e19b1b2ea828feca3ba6328b4f7cc63c28e32c5ed5d20389a33f17c338b67a"
+    },
+    {
+      "subjectFolder": "Patho",
+      "filename": "Pathology Department Qs - Liver, GB, Pancreas.pdf",
+      "relativePath": "Patho/Mcq/Pathology Department Qs - Liver, GB, Pancreas.pdf",
+      "fullPath": "/Users/omarhossa/Downloads/Assessment 2 \ud83d\udfe0/Patho/Mcq/Pathology Department Qs - Liver, GB, Pancreas.pdf",
+      "pages": 24,
+      "textLength": 264,
+      "isScanned": true,
+      "sha256": "983cb3b1666157151ae6fcbb411dcd02e3a3175179d8a5a20880ed6e9690dcc9"
+    },
+    {
+      "subjectFolder": "Patho",
+      "filename": "TAREK liver mcq [old].pdf",
+      "relativePath": "Patho/Mcq/TAREK liver mcq [old].pdf",
+      "fullPath": "/Users/omarhossa/Downloads/Assessment 2 \ud83d\udfe0/Patho/Mcq/TAREK liver mcq [old].pdf",
+      "pages": 18,
+      "textLength": 22565,
+      "isScanned": false,
+      "sha256": "d57e6770195b4eca4bf564aa1001fc0def1b8b15ab11a332d1d3dd8b39e946f8"
+    },
+    {
+      "subjectFolder": "Patho",
+      "filename": "patho department .pdf",
+      "relativePath": "Patho/Mcq/patho department .pdf",
+      "fullPath": "/Users/omarhossa/Downloads/Assessment 2 \ud83d\udfe0/Patho/Mcq/patho department .pdf",
+      "pages": 11,
+      "textLength": 121,
+      "isScanned": true,
+      "sha256": "24682642a1996bb066f7118c7a015b6ef91fbcbcf9221cb5041de27ba793bf6c"
+    },
+    {
+      "subjectFolder": "Anatomy",
+      "filename": "ASHRAF RAMZY GIT McQs .pdf",
+      "relativePath": "Anatomy /Mcq/ASHRAF RAMZY GIT McQs .pdf",
+      "fullPath": "/Users/omarhossa/Downloads/Assessment 2 \ud83d\udfe0/Anatomy /Mcq/ASHRAF RAMZY GIT McQs .pdf",
+      "pages": 148,
+      "textLength": 16435,
+      "isScanned": false,
+      "sha256": "de0a5823355ca42835d633ff1689c486880a67535928bfc06b8b699f83a9ac86"
+    },
+    {
+      "subjectFolder": "Anatomy",
+      "filename": "Anatomy - iNerd GIT Answers.pdf",
+      "relativePath": "Anatomy /Mcq/Anatomy - iNerd GIT Answers.pdf",
+      "fullPath": "/Users/omarhossa/Downloads/Assessment 2 \ud83d\udfe0/Anatomy /Mcq/Anatomy - iNerd GIT Answers.pdf",
+      "pages": 105,
+      "textLength": 0,
+      "isScanned": true,
+      "sha256": "889cc1152c3429535493ef07c9fe92e3fd0b22e017f80b298ae1a555e16d8ce2"
+    },
+    {
+      "subjectFolder": "Anatomy",
+      "filename": "Anatomy - iNerd GIT MCQ.pdf",
+      "relativePath": "Anatomy /Mcq/Anatomy - iNerd GIT MCQ.pdf",
+      "fullPath": "/Users/omarhossa/Downloads/Assessment 2 \ud83d\udfe0/Anatomy /Mcq/Anatomy - iNerd GIT MCQ.pdf",
+      "pages": 53,
+      "textLength": 583,
+      "isScanned": true,
+      "sha256": "4bef6280bdbc7902929911a422ae343cc3f46a92593ac4fe2f1cb37a9036745f"
+    },
+    {
+      "subjectFolder": "Para",
+      "filename": "DEPARTMENT Para MCQ .pdf",
+      "relativePath": "Para/Mcq /DEPARTMENT Para MCQ .pdf",
+      "fullPath": "/Users/omarhossa/Downloads/Assessment 2 \ud83d\udfe0/Para/Mcq /DEPARTMENT Para MCQ .pdf",
+      "pages": 11,
+      "textLength": 0,
+      "isScanned": true,
+      "sha256": "25e57d4c8dce5dfb5804a9045e8b64b3b5c0c2a7018e5e47638e554c31cf41f6"
+    },
+    {
+      "subjectFolder": "Para",
+      "filename": "KHALID para GIT mcq-2 [old] .pdf",
+      "relativePath": "Para/Mcq /KHALID para GIT mcq-2 [old] .pdf",
+      "fullPath": "/Users/omarhossa/Downloads/Assessment 2 \ud83d\udfe0/Para/Mcq /KHALID para GIT mcq-2 [old] .pdf",
+      "pages": 23,
+      "textLength": 23406,
+      "isScanned": false,
+      "sha256": "f293fa66f721a94fbd27dd3f8dc19915bb208ee639cd6d097318630094136a53"
+    },
+    {
+      "subjectFolder": "Para",
+      "filename": "KHALID para GIT mcq-3 [old] .pdf",
+      "relativePath": "Para/Mcq /KHALID para GIT mcq-3 [old] .pdf",
+      "fullPath": "/Users/omarhossa/Downloads/Assessment 2 \ud83d\udfe0/Para/Mcq /KHALID para GIT mcq-3 [old] .pdf",
+      "pages": 15,
+      "textLength": 22614,
+      "isScanned": false,
+      "sha256": "c22ece14a2175348b06e6aceacf998b0c7d24fd35082d7eb448d7ea0387692ef"
+    },
+    {
+      "subjectFolder": "Para",
+      "filename": "KHALID para GIT mcq-4 [old] .pdf",
+      "relativePath": "Para/Mcq /KHALID para GIT mcq-4 [old] .pdf",
+      "fullPath": "/Users/omarhossa/Downloads/Assessment 2 \ud83d\udfe0/Para/Mcq /KHALID para GIT mcq-4 [old] .pdf",
+      "pages": 26,
+      "textLength": 37717,
+      "isScanned": false,
+      "sha256": "c13e19bc9551ea261622bde434b6eb7b5397f58d63dd01789b46d5b75b7c5c2b"
+    },
+    {
+      "subjectFolder": "Para",
+      "filename": "para asu  .pdf",
+      "relativePath": "Para/Mcq /para asu  .pdf",
+      "fullPath": "/Users/omarhossa/Downloads/Assessment 2 \ud83d\udfe0/Para/Mcq /para asu  .pdf",
+      "pages": 8,
+      "textLength": 88,
+      "isScanned": true,
+      "sha256": "9293a91ae40b9c5681be4a45d46569b3eae2e0f0d950e5cfefc54f6fbd17eb29"
+    },
+    {
+      "subjectFolder": "Para",
+      "filename": "\ud83d\udca5ALAA para MCQ GIT-2 [2023].pdf",
+      "relativePath": "Para/Mcq /\ud83d\udca5ALAA para MCQ GIT-2 [2023].pdf",
+      "fullPath": "/Users/omarhossa/Downloads/Assessment 2 \ud83d\udfe0/Para/Mcq /\ud83d\udca5ALAA para MCQ GIT-2 [2023].pdf",
+      "pages": 28,
+      "textLength": 308,
+      "isScanned": true,
+      "sha256": "deab4c05964db2df3d46c271d5dd922ffb656113c398959d8e457f5d4d0e95f8"
+    },
+    {
+      "subjectFolder": "Para",
+      "filename": "\ud83d\udca5AYMAN MCQ GIT [2023].pdf",
+      "relativePath": "Para/Mcq /\ud83d\udca5AYMAN MCQ GIT [2023].pdf",
+      "fullPath": "/Users/omarhossa/Downloads/Assessment 2 \ud83d\udfe0/Para/Mcq /\ud83d\udca5AYMAN MCQ GIT [2023].pdf",
+      "pages": 24,
+      "textLength": 0,
+      "isScanned": true,
+      "sha256": "db3b3cd219dacb46d9c03d030bee96295782d3796a07174a8ce6a93be4608ccd"
+    },
+    {
+      "subjectFolder": "Physio",
+      "filename": "ABDEL-HAMID digestive system-2 [2022] .pdf",
+      "relativePath": "Physio /Mcq/ABDEL-HAMID digestive system-2 [2022] .pdf",
+      "fullPath": "/Users/omarhossa/Downloads/Assessment 2 \ud83d\udfe0/Physio /Mcq/ABDEL-HAMID digestive system-2 [2022] .pdf",
+      "pages": 27,
+      "textLength": 33513,
+      "isScanned": false,
+      "sha256": "b3dcb8a7a668ac3150eb8ce201d13482dae6e74fd9beb39b3a169d7268d13fbd"
+    },
+    {
+      "subjectFolder": "Physio",
+      "filename": "DEPARTMENT physiology mcq-1 .pdf",
+      "relativePath": "Physio /Mcq/DEPARTMENT physiology mcq-1 .pdf",
+      "fullPath": "/Users/omarhossa/Downloads/Assessment 2 \ud83d\udfe0/Physio /Mcq/DEPARTMENT physiology mcq-1 .pdf",
+      "pages": 14,
+      "textLength": 0,
+      "isScanned": true,
+      "sha256": "93a6bd3eacd6ca0ec5ea6b735c794b2889eec5e82c31184ea7394d71c97ee6b0"
+    },
+    {
+      "subjectFolder": "Physio",
+      "filename": "LECTURES physiology [old] .pdf",
+      "relativePath": "Physio /Mcq/LECTURES physiology [old] .pdf",
+      "fullPath": "/Users/omarhossa/Downloads/Assessment 2 \ud83d\udfe0/Physio /Mcq/LECTURES physiology [old] .pdf",
+      "pages": 7,
+      "textLength": 0,
+      "isScanned": true,
+      "sha256": "89e4c95aab04ded30f5b115d5eff13dac7a293d5fd3013352d2721b53ac90163"
+    },
+    {
+      "subjectFolder": "Physio",
+      "filename": "M.HASSAN physiology [old] .pdf",
+      "relativePath": "Physio /Mcq/M.HASSAN physiology [old] .pdf",
+      "fullPath": "/Users/omarhossa/Downloads/Assessment 2 \ud83d\udfe0/Physio /Mcq/M.HASSAN physiology [old] .pdf",
+      "pages": 10,
+      "textLength": 15681,
+      "isScanned": false,
+      "sha256": "1bc9c590e4aad8b272b06de77c13acbba9877a211f3c89cec18a7abd144483b1"
+    },
+    {
+      "subjectFolder": "Physio",
+      "filename": "NOHA physiology [old] .pdf",
+      "relativePath": "Physio /Mcq/NOHA physiology [old] .pdf",
+      "fullPath": "/Users/omarhossa/Downloads/Assessment 2 \ud83d\udfe0/Physio /Mcq/NOHA physiology [old] .pdf",
+      "pages": 9,
+      "textLength": 15581,
+      "isScanned": false,
+      "sha256": "4504353ca0db10fad1b18149be899c2391baf06a873379fcda8f2b2201eab45c"
+    },
+    {
+      "subjectFolder": "Physio",
+      "filename": "\ud83d\udca5Digestive Syatem MCQs-3 [2023].pdf",
+      "relativePath": "Physio /Mcq/\ud83d\udca5Digestive Syatem MCQs-3 [2023].pdf",
+      "fullPath": "/Users/omarhossa/Downloads/Assessment 2 \ud83d\udfe0/Physio /Mcq/\ud83d\udca5Digestive Syatem MCQs-3 [2023].pdf",
+      "pages": 19,
+      "textLength": 17574,
+      "isScanned": false,
+      "sha256": "ddb299d043a6a743b9d858ef3bd1b84c315e84449234f4795e5dfbbac7bf7297"
+    }
+  ]
+}

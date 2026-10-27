@@ -3,9 +3,9 @@ import { createHash } from 'node:crypto';
 import manifest from '../test/fixtures/git-release-manifest.json';
 import importedBank from '../imports/year-3/semester-1/MGL-3.json';
 interface PreparedQuestion { id: string; type: string; lecture: number; [key: string]: any }
-const bank = importedBank as unknown as { chapters: Array<{ id: number; bankSection?: 'practice' | 'past-exams'; subjects: Array<{ id: string; lectureNames: string[]; questions: PreparedQuestion[] }> }> };
+const bank = importedBank as unknown as { chapters: Array<{ id: number; bankSection?: 'practice' | 'past-exams'; examPeriod?: 'ca-1' | 'ca-2'; subjects: Array<{ id: string; lectureNames: string[]; questions: PreparedQuestion[] }> }> };
 import { ensureDataLoaded, getChaptersForModuleAndMode, getModuleQuestionCounts, findQuestionById } from './data';
-import { toGitTopicChapter, selectGitCollection } from './lib/gitBank';
+import { toGitTopicChapter, selectGitCollection, selectGitExamPeriod } from './lib/gitBank';
 import { checkAnswerCorrect } from './utils/quiz';
 
 const pastIds=new Set<string>(manifest.pastExamIds);
@@ -16,7 +16,7 @@ describe('Integrated GIT question bank',()=>{
   it('grades every GIT true/false item correctly for boolean and indexed selections',async()=>{
     await ensureDataLoaded();
     const questions=getChaptersForModuleAndMode('MGL-3','mixed').flatMap(c=>c.subjects.flatMap(s=>s.questions)).filter(q=>q.type==='truefalse');
-    expect(questions).toHaveLength(325);
+    expect(questions).toHaveLength(332);
     for(const q of questions){
       expect([0,1]).toContain(q.correctIndex);
       expect(checkAnswerCorrect(q,q.correctIndex===0),q.id+' boolean key').toBe(true);
@@ -34,9 +34,9 @@ describe('Integrated GIT question bank',()=>{
     }
   });
   it('imports every canonical parent once without changing prompt/options/answers/IDs',()=>{
-    expect(rawQuestions).toHaveLength(6178);
-    expect(new Set(rawQuestions.map(q=>q.id)).size).toBe(6178);
-    expect(Object.keys(manifest.questionHashes)).toHaveLength(6178);
+    expect(rawQuestions).toHaveLength(6539);
+    expect(new Set(rawQuestions.map(q=>q.id)).size).toBe(6539);
+    expect(Object.keys(manifest.questionHashes)).toHaveLength(6539);
     for(const q of rawQuestions)expect(createHash('sha256').update(stableJSON(q)).digest('hex'),q.id).toBe((manifest.questionHashes as Record<string,string>)[q.id]);
   });
   it('uses correct GIT assessment metadata and never exposes excluded IDs',()=>{
@@ -47,8 +47,8 @@ describe('Integrated GIT question bank',()=>{
     expect(rawQuestions.some(q=>JSON.stringify(q).includes('Source underlined option label:'))).toBe(false);
   });
   it('physically separates past exams from practice with unique navigation/session chapter IDs',()=>{
-    expect(bank.chapters).toHaveLength(16);
-    expect(new Set(bank.chapters.map(c=>c.id)).size).toBe(16);
+    expect(bank.chapters).toHaveLength(25);
+    expect(new Set(bank.chapters.map(c=>c.id)).size).toBe(25);
     const actualPast:string[]=[];const practice:string[]=[];
     for(const c of bank.chapters){
       expect(['practice','past-exams']).toContain(c.bankSection);
@@ -58,12 +58,14 @@ describe('Integrated GIT question bank',()=>{
       }
     }
     expect(new Set(actualPast)).toEqual(pastIds);
-    expect(actualPast).toHaveLength(670);expect(practice).toHaveLength(5508);
+    expect(actualPast).toHaveLength(917);expect(practice).toHaveLength(5622);
   });
   it('loads both collections and preserves all supported scored fields',async()=>{
     await ensureDataLoaded();const cs=getChaptersForModuleAndMode('MGL-3','mixed');
     expect(selectGitCollection(cs,'practice')).toHaveLength(8);
-    expect(selectGitCollection(cs,'past-exams')).toHaveLength(8);
+    expect(selectGitCollection(cs,'past-exams')).toHaveLength(17);
+    expect(selectGitExamPeriod(cs,'ca-1')).toHaveLength(8);
+    expect(selectGitExamPeriod(cs,'ca-2')).toHaveLength(9);
     const loaded=new Map(cs.flatMap(c=>c.subjects.flatMap(s=>s.questions)).map(q=>[String(q.id),q]));
     for(const q of rawQuestions){
       const actual=loaded.get(q.id)!;expect(actual,q.id).toBeDefined();
@@ -80,18 +82,34 @@ describe('Integrated GIT question bank',()=>{
       }
     }
   });
-  it('retains exact 104 topics in each collection, partitions questions by topic and keeps empty topics',async()=>{
+  it('retains exact topic coverage in each collection, partitions questions by topic and keeps empty topics',async()=>{
     await ensureDataLoaded();const cs=getChaptersForModuleAndMode('MGL-3','mixed');
-    for(const section of ['practice','past-exams'] as const){
-      let topics=0;
-      for(const c of selectGitCollection(cs,section)){
-        const transformed=toGitTopicChapter(c);topics+=transformed.subjects.length;
-        expect(transformed.subjects.map(s=>s.name)).toEqual((manifest.topics as Record<string,string[]>)[c.subjects[0].id]);
-        expect(transformed.subjects.flatMap(s=>s.questions).map(q=>q.id).sort()).toEqual(c.subjects.flatMap(s=>s.questions).map(q=>q.id).sort());
-        for(const s of transformed.subjects)expect(s.questions.every(q=>q.lecture===s.lectureNum)).toBe(true);
-      }
-      expect(topics).toBe(104);
+    let practiceTopics=0;
+    for(const c of selectGitCollection(cs,'practice')){
+      const transformed=toGitTopicChapter(c);practiceTopics+=transformed.subjects.length;
+      expect(transformed.subjects.map(s=>s.name)).toEqual((manifest.topics as Record<string,string[]>)[c.subjects[0].id]);
+      expect(transformed.subjects.flatMap(s=>s.questions).map(q=>q.id).sort()).toEqual(c.subjects.flatMap(s=>s.questions).map(q=>q.id).sort());
+      for(const s of transformed.subjects)expect(s.questions.every(q=>q.lecture===s.lectureNum)).toBe(true);
     }
+    expect(practiceTopics).toBe(104);
+
+    let ca1Topics=0;
+    for(const c of selectGitExamPeriod(cs,'ca-1')){
+      const transformed=toGitTopicChapter(c);ca1Topics+=transformed.subjects.length;
+      expect(transformed.subjects.map(s=>s.name)).toEqual((manifest.topics as Record<string,string[]>)[c.subjects[0].id]);
+      expect(transformed.subjects.flatMap(s=>s.questions).map(q=>q.id).sort()).toEqual(c.subjects.flatMap(s=>s.questions).map(q=>q.id).sort());
+      for(const s of transformed.subjects)expect(s.questions.every(q=>q.lecture===s.lectureNum)).toBe(true);
+    }
+    expect(ca1Topics).toBe(104);
+
+    let ca2Topics=0;
+    for(const c of selectGitExamPeriod(cs,'ca-2')){
+      const transformed=toGitTopicChapter(c);ca2Topics+=transformed.subjects.length;
+      expect(transformed.subjects.map(s=>s.name)).toEqual((manifest.topics as Record<string,string[]>)[c.subjects[0].id]);
+      expect(transformed.subjects.flatMap(s=>s.questions).map(q=>q.id).sort()).toEqual(c.subjects.flatMap(s=>s.questions).map(q=>q.id).sort());
+      for(const s of transformed.subjects)expect(s.questions.every(q=>q.lecture===s.lectureNum)).toBe(true);
+    }
+    expect(ca2Topics).toBe(105);
   });
   it('filters modes without collection leakage and grades all choice keys',async()=>{
     await ensureDataLoaded();const sets:Record<string,Set<string>>={};
@@ -112,7 +130,7 @@ describe('Integrated GIT question bank',()=>{
     }
     expect([...sets.mcq].filter(id=>sets.essay.has(id))).toEqual([]);
     expect(new Set([...sets.mcq,...sets.essay])).toEqual(sets.mixed);
-    expect(getModuleQuestionCounts('MGL-3')).toEqual({mcqCount:5187,essayCount:991,totalCount:6178});
+    expect(getModuleQuestionCounts('MGL-3')).toEqual({mcqCount:5520,essayCount:1019,totalCount:6539});
   });
   it('resolves past question IDs to their separate history/search chapter',async()=>{
     await ensureDataLoaded();

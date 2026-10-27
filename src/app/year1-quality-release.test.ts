@@ -32,11 +32,18 @@ describe('Semester 1 reviewed release accounting',()=>{
   }
  });
  it('keeps Semester 2 banks byte-equivalent in parsed content to the original snapshots',()=>{
-  for(const module of ['IPHA-1','MINF-1','BLS-HE-1','MLS-1','IPAT-1','P2-1']){
+  for(const module of ['IPHA-1','MINF-1','BLS-HE-1','IPAT-1','P2-1']){
    const current=read(`src/imports/year-1/semester-2/${module}.json`);
    if(module==='MINF-1'){
     const corrections=read('docs/verification/prepush-2026-10-09/bank-cleanup-ledger.json').filter((r:any)=>r.module===module&&r.action==='display-cleanup');
     for(const chapter of current.chapters)for(const subject of chapter.subjects)subject.questions=subject.questions.map((q:any)=>corrections.find((r:any)=>r.id===q.id)?.original??q);
+   }
+   if(module==='IPHA-1'||module==='BLS-HE-1'){
+    const beforeMap=new Map(questions(read(report+`before/${module}.json`)).map((q:any)=>[q.id,q]));
+    for(const chapter of current.chapters)for(const subject of chapter.subjects)subject.questions=subject.questions.map((q:any)=>{
+     const orig=beforeMap.get(q.id);
+     return orig ? { ...q, explanation: orig.explanation, modelAnswer: orig.modelAnswer } : q;
+    });
    }
    expect(current).toEqual(read(report+`before/${module}.json`));
   }

@@ -587,12 +587,11 @@ export default async function handler(req: any, res: any) {
 
   try {
     /* 1. Auth */
-    const isProduction = process.env.VERCEL_ENV === 'production' || process.env.NODE_ENV === 'production';
     let userId: string;
 
     if (!process.env.CLERK_SECRET_KEY) {
-      if (!isProduction) {
-        // Non-production environments (local dev, preview, vercel dev): bypass Clerk verification
+      if (process.env.NODE_ENV === 'test') {
+        // Automated test execution only
         userId = 'dev-user';
       } else {
         return res.status(500).json({ error: 'Server misconfigured: CLERK_SECRET_KEY is not set. Add it in your Vercel project settings.', hint: 'Get it from your Clerk Dashboard → API Keys' });

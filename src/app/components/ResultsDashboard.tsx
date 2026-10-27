@@ -29,6 +29,7 @@ import { useTheme } from '../hooks/useTheme';
 import { FormattedAnswer } from './FormattedAnswer';
 import { useProgress } from '../hooks/useProgress';
 import { MatchingQuestion } from './MatchingQuestion';
+import { PortalFooter } from './PortalFooter';
 
 function legacyText(question: Question, key: string): string | undefined {
   return isAnswerRecord(question) && typeof question[key] === 'string' ? question[key] : undefined;
@@ -760,7 +761,7 @@ export function ResultsDashboard({
                 {/* Card header */}
                 <div className="mb-4 flex flex-wrap items-center gap-2.5">
                   <span className="text-sm font-semibold text-gray-900 dark:text-white/85">Question {i + 1}</span>
-                  <ReportQuestionButton question={q} chapterId={chapter.id}/>
+                  <ReportQuestionButton question={q} chapterId={chapter.id} moduleCode={(chapter as any).moduleCode || (q as any).moduleCode}/>
                   <span className={`rounded-full border px-2.5 py-0.5 text-[11px] font-medium ${style.borderOp15} ${style.bgOp10} ${style.text}`}>
                     {q.practiceTopic?.title ?? subject?.name ?? 'General'}
                   </span>
@@ -836,6 +837,7 @@ export function ResultsDashboard({
           })
         )}
       </main>
+      <PortalFooter />
     </div>
   );
 }

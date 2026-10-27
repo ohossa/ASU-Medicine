@@ -14491,8 +14491,8 @@
                   "type": "essay",
                   "lecture": 1,
                   "text": "How old is the baby (from the day of fertilization)?",
-                  "explanation": "",
-                  "modelAnswer": "Approximately four weeks after fertilization, assuming a regular28-day cycle: fertilization occurs about two weeks before the expected period, which is now two weeks overdue.",
+                  "explanation": "Embryological Rationale: In a typical 28-day cycle, ovulation and fertilization take place around day 14. A menstrual delay of two weeks indicates that 4 weeks have elapsed since fertilization (equivalent to 6 weeks gestational age from the last menstrual period).",
+                  "modelAnswer": "Approximately 4 weeks (28 days) post-fertilization.",
                   "contentVersion": "33f7a481399ef1e4ba2f59977c183176d452697f6cba55cfea9cb8f6b83973e5"
                 },
                 {
@@ -14500,8 +14500,8 @@
                   "type": "essay",
                   "lecture": 1,
                   "text": "Which term is proper for that baby (embryo or fetus)?",
-                  "explanation": "",
-                  "modelAnswer": "Embryo, because the embryonic period lasts from fertilization until the end of the 8th week; only after that is the term fetus used.",
+                  "explanation": "Embryological Rationale: The human conceptus is designated an embryo from the time of fertilization through the end of the 8th embryonic week (day 56), during which primary organogenesis takes place. From the 9th week until birth, it is termed a fetus.",
+                  "modelAnswer": "Embryo.",
                   "contentVersion": "53c4d4a25d03c2ba392bf3eab9e6978f2043c48f0a014b56c3eabc12b7266e16"
                 },
                 {
@@ -14509,8 +14509,8 @@
                   "type": "essay",
                   "lecture": 1,
                   "text": "What is the hormone measured in the pregnancy test?",
-                  "explanation": "",
-                  "modelAnswer": "Human chorionic gonadotrophin (hCG).",
+                  "explanation": "Embryological Rationale: Human chorionic gonadotropin (hCG) is the diagnostic marker of pregnancy. Qualitative and quantitative assays measure the unique beta subunit (beta-hCG) to avoid cross-reactivity with alpha subunits of LH, FSH, and TSH.",
+                  "modelAnswer": "Human Chorionic Gonadotropin (hCG), specifically beta-hCG.",
                   "contentVersion": "0d51690aeea531c20b678e7a6debb82356ded159e65602978889a687645613c4"
                 },
                 {
@@ -14518,8 +14518,8 @@
                   "type": "essay",
                   "lecture": 1,
                   "text": "What produces this hormone?",
-                  "explanation": "",
-                  "modelAnswer": "The syncytiotrophoblast of the chorion.",
+                  "explanation": "Embryological Rationale: As the blastocyst implants into the endometrium, the trophoblast differentiates into an inner cytotrophoblast and an outer multinucleated syncytiotrophoblast. The syncytiotrophoblast actively synthesizes and secretes hCG into the maternal circulation.",
+                  "modelAnswer": "Syncytiotrophoblast of the implanted blastocyst.",
                   "contentVersion": "f97b861a088e2941aa0f81e39a8fd5de599067791e7f62ec79ccd7065329ccb7"
                 },
                 {
@@ -14527,8 +14527,8 @@
                   "type": "essay",
                   "lecture": 1,
                   "text": "How long does the corpus luteum persist under the effect of that hormone?",
-                  "explanation": "",
-                  "modelAnswer": "hCG supports the corpus luteum in early pregnancy. Progesterone production shifts toward the placenta around gestational weeks 7–9, with placenta the major definitive source beyond 1 0 weeks.",
+                  "explanation": "Embryological Rationale: hCG acts as an LH analog, maintaining the corpus luteum of pregnancy (corpus luteum graviditatis) to ensure continuous secretion of progesterone and estrogen. Around weeks 10 to 12, the placenta assumes steroidogenesis (luteal-placental shift), allowing the corpus luteum to regress.",
+                  "modelAnswer": "For the first 3 to 4 months of pregnancy (first trimester).",
                   "contentVersion": "6d761738ea22830b0dbce0241ff13118fc8aaa002af7ebee2013df0c8af127c1"
                 }
               ],
@@ -14928,8 +14928,8 @@
                   "type": "essay",
                   "lecture": 1,
                   "text": "Explain the pain & bleeding.",
-                  "explanation": "",
-                  "modelAnswer": "The tube cannot expand as the conceptus grows, so its distension and the erosion of its wall by the trophoblast cause pain and bleeding, and may end in tubal rupture with intraperitoneal haemorrhage. The vaginal bleeding comes from breakdown of the decidua in the uterus as hormonal support falls.",
+                  "explanation": "Embryological Rationale: Distension and impending rupture of the unyielding tubal wall produce acute pelvic and peritoneal pain. Vaginal bleeding results from decidual shedding (decidual cast or spotting) because an ectopic trophoblast cannot generate sufficient hCG to sustain full luteal progesterone production.",
+                  "modelAnswer": "Pain is due to stretching and peritoneal irritation of the fallopian tube; bleeding is due to decidual sloughing from falling hormone support.",
                   "contentVersion": "233edfc44a8ad6194f74f899dcf8f1f90f6cb5075451ef53efabf187fef5dd48"
                 },
                 {
@@ -14937,8 +14937,8 @@
                   "type": "essay",
                   "lecture": 1,
                   "text": "What are the common sites of ectopic pregnancy?",
-                  "explanation": "",
-                  "modelAnswer": "The uterine tube is by far the commonest, especially the ampulla, then the isthmus and interstitial part; less often the ovary, the peritoneal or abdominal cavity, and the cervix.",
+                  "explanation": "Embryological Rationale: Over 95% of ectopic implantations occur in the fallopian tube, most frequently in the ampulla (~70-80%), followed by the isthmus (~12%), fimbrial infundibulum (~5%), and interstitial segment (~2%). Non-tubal locations include the peritoneal cavity, ovary, and lower uterine/cervical canal.",
+                  "modelAnswer": "Fallopian tube (ampulla > isthmus > fimbriae > interstitial/cornual); rarely ovary, abdominal cavity, or cervix.",
                   "contentVersion": "6b38b3a3580dce888c71928698d11ed05070c2c367c20d3b96bc90978d89937c"
                 },
                 {
@@ -14946,8 +14946,8 @@
                   "type": "essay",
                   "lecture": 1,
                   "text": "What is the normal site of implantation?",
-                  "explanation": "",
-                  "modelAnswer": "The upper part of the body of the uterus, usually on the posterior wall.",
+                  "explanation": "Embryological Rationale: Normal physiological implantation occurs in the functional layer of the endometrium lining the upper posterior or anterior wall of the uterine corpus, close to the midsagittal plane.",
+                  "modelAnswer": "Upper posterior or anterior wall of the uterine body (corpus/fundus), near the midsagittal line.",
                   "contentVersion": "ea2706d78d8deb3a3c2f58ac0b268587c3abac74eb55463beafebca5043dad0d"
                 }
               ],
@@ -14966,8 +14966,8 @@
                   "type": "essay",
                   "lecture": 1,
                   "text": "Why can a tubal pregnancy not normally reach full term?",
-                  "explanation": "",
-                  "modelAnswer": "Because the uterine tube has a narrow lumen, a thin wall and no proper decidua, so it cannot enlarge with the conceptus and its eroded wall ruptures early, usually within the first two months.",
+                  "explanation": "Embryological Rationale: Unlike the uterine endometrium and myometrium, the fallopian tube possesses minimal subepithelial stroma, cannot mount a protective decidual reaction to limit trophoblastic invasion, and lacks the muscular volume to accommodate a growing fetus, leading to early tubal rupture or tubal abortion.",
+                  "modelAnswer": "The tubal wall lacks a thick decidual reaction and muscular capacity to expand, resulting in early rupture or abortion.",
                   "contentVersion": "3cd9c63b2ef6c5328d67732a5954fdce6190f4fed674cbe41d76b0b37c21dbf1"
                 },
                 {
@@ -14975,8 +14975,8 @@
                   "type": "essay",
                   "lecture": 1,
                   "text": "Which structure should disappear for implantation to occur?",
-                  "explanation": "",
-                  "modelAnswer": "The zona pellucida, which must be shed (hatching) before the trophoblast can contact and invade the endometrium.",
+                  "explanation": "Embryological Rationale: For blastocyst adhesion and invasion into the uterine epithelium to occur, the blastocyst must undergo hatching by enzymatically shedding the thick glycoprotein coat of the zona pellucida on day 5 to 6 post-fertilization.",
+                  "modelAnswer": "The zona pellucida.",
                   "contentVersion": "e6ce6a8b7b24d2282bbac37cc43c1c55450ef5505a71ec2ad9e4564d854f1e27"
                 },
                 {
@@ -14984,8 +14984,8 @@
                   "type": "essay",
                   "lecture": 1,
                   "text": "What is the normal site of implantation?",
-                  "explanation": "",
-                  "modelAnswer": "The upper part of the body of the uterus, usually the posterior wall.",
+                  "explanation": "Embryological Rationale: The standard anatomical site for implantation is the upper posterior or anterior wall of the uterine corpus within the functionalis layer of the secretory endometrium.",
+                  "modelAnswer": "Upper posterior wall of the body of the uterus.",
                   "contentVersion": "cdd08b7227b9c275ccd23ee8e41cbadffc6336eb271590d4b6620db2b527c86c"
                 },
                 {
@@ -14993,8 +14993,8 @@
                   "type": "essay",
                   "lecture": 1,
                   "text": "What is the embryonic stage that is implanted?",
-                  "explanation": "",
-                  "modelAnswer": "The blastocyst.",
+                  "explanation": "Embryological Rationale: Implantation begins on day 6 post-fertilization when the late blastocyst (composed of the embryoblast, blastocele cavity, and outer trophoblast) attaches by its embryonic pole to the endometrial surface.",
+                  "modelAnswer": "Blastocyst (specifically late blastocyst).",
                   "contentVersion": "f2d9a205082c6c05229375163589d7d782f66eea484354c3e3a4e2e3a123393d"
                 },
                 {
@@ -15002,8 +15002,8 @@
                   "type": "essay",
                   "lecture": 1,
                   "text": "When is implantation completed?",
-                  "explanation": "",
-                  "modelAnswer": "Implantation is completed by the middle of the second week after fertilization.",
+                  "explanation": "Embryological Rationale: By day 11 to 12, the blastocyst is completely embedded within the endometrial stroma. The penetration defect in the surface epithelium is initially sealed by a fibrin closing plug (coagulum) and subsequently covered by regenerated uterine epithelium.",
+                  "modelAnswer": "By day 11 to 12 post-fertilization (end of the second week).",
                   "contentVersion": "bed4b21ba3e6155b1a3da04bf4c77b9813a3008e68cca1b757d4bb169da60249"
                 },
                 {
@@ -15011,8 +15011,8 @@
                   "type": "essay",
                   "lecture": 1,
                   "text": "Can you consider implantation in the lower uterus ectopic?",
-                  "explanation": "",
-                  "modelAnswer": "No. It is within the uterine cavity. It may produce a low-lying placenta or placenta praevia if the placenta covers the internal cervical os.",
+                  "explanation": "Embryological Rationale: Implantation in the lower uterine segment near or covering the internal os of the cervix is clinically abnormal (intrauterine ectopic/heterotopic variant) termed placenta previa, which presents with painless, recurrent third-trimester vaginal bleeding.",
+                  "modelAnswer": "Yes; implantation in the lower uterine segment near the internal os is an abnormal site leading to placenta previa.",
                   "contentVersion": "51d25a9b2bd209263158a3ca486d858756867b8c3ccc094a4c8801411611ed36"
                 }
               ],

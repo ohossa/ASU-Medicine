@@ -11,6 +11,7 @@ import { formatTime } from '../types';
 import type { QuizResult } from '../utils/storage';
 import { clearQuizHistory } from '../utils/storage';
 import { useLanguage } from '../hooks/useLanguage';
+import { PortalFooter } from './PortalFooter';
 
 /* ------------------------------------------------------------------ */
 /* Types                                                               */
@@ -216,7 +217,9 @@ export function ChapterSelect({
     return f ? (isRTL ? f.ar : f.en) : key;
   };
 
-  const pastChapters = chapters.filter(isPastExamSection);
+  const pastChapters = chapters
+    .filter(isPastExamSection)
+    .filter(c => c.subjects.reduce((sum, s) => sum + s.questions.length, 0) > 0);
   const regularChapters = chapters.filter(c => !isPastExamSection(c));
 
   const history = useSyncedHistory().slice(0,6);
@@ -596,7 +599,7 @@ export function ChapterSelect({
           </aside>
         </div>
       </div>
-
+      <PortalFooter />
     </div>
   );
 }
