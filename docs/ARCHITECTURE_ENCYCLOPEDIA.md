@@ -171,6 +171,36 @@ Governed by [`QUESTION_IMPORT_WORKFLOW.md`](file:///Users/omarhossa/Documents/Me
 
 ---
 
+### Subsystem 10: Timed Mock Exam Simulator & Apple Liquid Glass Module Hub
+- **Unified Module Command Hub ([`StudyMode.tsx`](file:///Users/omarhossa/Documents/Medcine%20ASU/ASU-Medical-Portal/src/pages/StudyMode.tsx)):**
+  - Apple Liquid Glass design replacing outdated static mode cards and neon waveforms.
+  - Interactive SVG circular mastery ring with live accuracy and question counts computed from `LearningContext`.
+  - 1-Click instant "Resume Chapter Practice" / "Start Practice" eliminating intermediate navigation friction.
+  - **2x2 Bento Action Grid:**
+    1. *Curriculum Chapters & Topics* (`mcq` mode)
+    2. *Timed Mock Exam Simulator* (in-place Ain Shams testing engine)
+    3. *Official Past Papers & Continuous Assessments* (`mixed` past paper mode)
+    4. *Syllabus & Lecture Tracker* (`tracker` route)
+    5. *Adaptive Case-Based Essays* (automatically hidden when module has 0 essays to prevent empty dead ends).
+- **Proportional Curricular Question Sampling ([`mockExamGenerator.ts`](file:///Users/omarhossa/Documents/Medcine%20ASU/ASU-Medical-Portal/src/app/utils/mockExamGenerator.ts)):**
+  - Balanced question allocation proportionally sampled across all faculty disciplines (Anatomy, Physiology, Pathology, Pharmacology, etc.) with Fisher-Yates randomization.
+- **Ain Shams Grading Engine ([`mockExamGrading.ts`](file:///Users/omarhossa/Documents/Medcine%20ASU/ASU-Medical-Portal/src/app/utils/mockExamGrading.ts)):**
+  - Maps score percentages to the official Ain Shams Faculty of Medicine grading curve:
+    - $A^+ \ge 90\%$ (GPA 4.0, Excellent)
+    - $A \ge 85\%$ (GPA 3.7, Excellent)
+    - $B^+ \ge 80\%$ (GPA 3.3, Very Good)
+    - $B \ge 75\%$ (GPA 3.0, Very Good)
+    - $C^+ \ge 70\%$ (GPA 2.7, Good)
+    - $C \ge 65\%$ (GPA 2.4, Good)
+    - $D \ge 60\%$ (GPA 2.0, Passing)
+    - $F < 60\%$ (GPA 0.0, Fail)
+- **Active Simulation Runner ([`MockExamRunner.tsx`](file:///Users/omarhossa/Documents/Medcine%20ASU/ASU-Medical-Portal/src/app/components/mock/MockExamRunner.tsx)):**
+  - Realistic testing center interface with floating countdown timer pill, dynamic warning colors, quick question palette drawer with flagged status, Apple HIG keyboard navigation (`1-4`, `A-D`, `F` to flag, arrow keys), and auto-submission on timer expiry.
+- **Faculty Analytics & Remediation Report ([`MockExamResultsView.tsx`](file:///Users/omarhossa/Documents/Medcine%20ASU/ASU-Medical-Portal/src/app/components/mock/MockExamResultsView.tsx)):**
+  - Ain Shams grade badge, pace analytics (average sec/Q, fastest vs slowest question), discipline mastery radar breakdown, question review drawer (All / Incorrect / Flagged), and 1-click **"Retry Missed Questions"** generator.
+
+---
+
 ## 4. Canonical Module Catalog (42 Banks)
 
 | Year | Semester | Module Code | Full Module Name | Type |

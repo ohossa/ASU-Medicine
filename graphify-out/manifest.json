@@ -3486,10 +3486,10 @@
     "semantic_hash": "bc509ab31c383a96e850828a9737ffcf"
   },
   "server/local-api.ts": {
-    "mtime": 1793084901.9141593,
-    "seen": 1793085010.501378,
-    "ast_hash": "d7461cebd13b7f4acfc3fcb7a0247598",
-    "semantic_hash": "d7461cebd13b7f4acfc3fcb7a0247598"
+    "mtime": 1793092183.5324156,
+    "seen": 1793113805.027256,
+    "ast_hash": "708a8ffa7b7b17a4b6f6d5f1a49e9d3b",
+    "semantic_hash": ""
   },
   "server/question-bank.ts": {
     "mtime": 1791470989.6028624,
@@ -4152,8 +4152,8 @@
     "semantic_hash": "2ffa3b85e60c5e009954037ddbb13a79"
   },
   "src/app/generated/bankManifest.json": {
-    "mtime": 1793091710.2382224,
-    "seen": 1793092056.584845,
+    "mtime": 1793113739.425609,
+    "seen": 1793113805.029488,
     "ast_hash": "11254ba84c82436eba03950b5d3454f9",
     "semantic_hash": ""
   },
@@ -5238,10 +5238,10 @@
     "semantic_hash": "f969fea803720d132d05a4287289e388"
   },
   "src/pages/Dashboard.tsx": {
-    "mtime": 1793084902.010598,
-    "seen": 1793085010.503983,
-    "ast_hash": "887786c5ec0cbf5de27ed76e0418efbb",
-    "semantic_hash": "887786c5ec0cbf5de27ed76e0418efbb"
+    "mtime": 1793113347.617751,
+    "seen": 1793113805.033004,
+    "ast_hash": "fbdba53aa8fbab4ef20a1ba5fa3a5818",
+    "semantic_hash": ""
   },
   "src/pages/LearningActivity.tsx": {
     "mtime": 1793084902.011079,
@@ -5262,10 +5262,10 @@
     "semantic_hash": "6901404ec0e77c46e8ec1cee66b0cd22"
   },
   "src/pages/StudyMode.tsx": {
-    "mtime": 1791470266.3228474,
-    "seen": 1792747204.534733,
-    "ast_hash": "242c070eb006b200af75b1b1c3224be8",
-    "semantic_hash": "242c070eb006b200af75b1b1c3224be8"
+    "mtime": 1793113516.9330833,
+    "seen": 1793113805.0330749,
+    "ast_hash": "b61c98621bfae3ee278552f0af03ad18",
+    "semantic_hash": ""
   },
   "src/pages/SyllabusTrackerPage.tsx": {
     "mtime": 1793084908.6169772,
@@ -12414,9 +12414,9 @@
     "semantic_hash": ""
   },
   "docs/ARCHITECTURE_ENCYCLOPEDIA.md": {
-    "mtime": 1793091969.415775,
-    "seen": 1793092056.604652,
-    "ast_hash": "e1f13d37488a22f09a3401f234f24773",
+    "mtime": 1793113791.8694985,
+    "seen": 1793113805.0497322,
+    "ast_hash": "a7136cefb666fe193c11b7f4a191a3fe",
     "semantic_hash": ""
   },
   "docs/MASTER_FORENSIC_AUDIT_REPORT.md": {
@@ -12591,6 +12591,78 @@
     "mtime": 1793089285.1619937,
     "seen": 1793092056.588775,
     "ast_hash": "de9d99ad493aba5be7aefdabdd81bb08",
+    "semantic_hash": ""
+  },
+  "src/app/components/mock/MockExamConfigModal.tsx": {
+    "mtime": 1793113444.2294788,
+    "seen": 1793113805.029153,
+    "ast_hash": "f9cd30e1e71f7d5994a7d42a26ec678d",
+    "semantic_hash": ""
+  },
+  "src/app/components/mock/MockExamResultsView.tsx": {
+    "mtime": 1793113457.8000183,
+    "seen": 1793113805.029155,
+    "ast_hash": "531ec8ac578a3acc5292cd3469b03b9e",
+    "semantic_hash": ""
+  },
+  "src/app/components/mock/MockExamRunner.tsx": {
+    "mtime": 1793113493.9289963,
+    "seen": 1793113805.0291562,
+    "ast_hash": "1267895cb137210d92e7e108ec9c2293",
+    "semantic_hash": ""
+  },
+  "src/app/types/mockExam.ts": {
+    "mtime": 1793093052.9583323,
+    "seen": 1793113805.0318348,
+    "ast_hash": "f67ddd8cc0ed9c5933a110406470b81a",
+    "semantic_hash": ""
+  },
+  "src/app/utils/mockExamGenerator.ts": {
+    "mtime": 1793093122.4589262,
+    "seen": 1793113805.0319319,
+    "ast_hash": "98bcee68a503a3b8a79acfb9a83209da",
+    "semantic_hash": ""
+  },
+  "src/app/utils/mockExamGrading.ts": {
+    "mtime": 1793093070.5819726,
+    "seen": 1793113805.0319328,
+    "ast_hash": "6871310d46dd9bd358575aa8b2c703a3",
+    "semantic_hash": ""
+  },
+  "src/test/mock/mock-exam-config.test.tsx": {
+    "mtime": 1793093184.3858323,
+    "seen": 1793113805.033358,
+    "ast_hash": "86b127ddefcfff4a46ebac5ae181963c",
+    "semantic_hash": ""
+  },
+  "src/test/mock/mock-exam-generator.test.ts": {
+    "mtime": 1793093132.9025521,
+    "seen": 1793113805.033359,
+    "ast_hash": "3ed63a5d64459294b56127f60092fc2d",
+    "semantic_hash": ""
+  },
+  "src/test/mock/mock-exam-grading.test.ts": {
+    "mtime": 1793093082.9740572,
+    "seen": 1793113805.033359,
+    "ast_hash": "4d584eeffd4f4afcf6c0ea8be2f68dc6",
+    "semantic_hash": ""
+  },
+  "src/test/mock/mock-exam-results.test.tsx": {
+    "mtime": 1793113576.3767967,
+    "seen": 1793113805.0333598,
+    "ast_hash": "325b6e8477bf0ac5ca9dfbdb379ddf75",
+    "semantic_hash": ""
+  },
+  "src/test/mock/mock-exam-runner.test.tsx": {
+    "mtime": 1793113586.7314959,
+    "seen": 1793113805.033362,
+    "ast_hash": "01734b66966842c084d48399ad922c61",
+    "semantic_hash": ""
+  },
+  "src/test/pages/study-mode-hub.test.tsx": {
+    "mtime": 1793113711.4347105,
+    "seen": 1793113805.033362,
+    "ast_hash": "2c625dc432eb3a9abd23e1267f6f079b",
     "semantic_hash": ""
   }
 }

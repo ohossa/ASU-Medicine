@@ -648,9 +648,9 @@
     "semantic_hash": "9277f27558fc0bbee043e05598a49459"
   },
   "api/question-bank.ts": {
-    "mtime": 1793084908.2154598,
-    "seen": 1793085010.4967349,
-    "ast_hash": "a219efb2d462ff2225df3d95ba44cd0a",
+    "mtime": 1793088727.6770263,
+    "seen": 1793092056.5738711,
+    "ast_hash": "bdcd4113325ca14aac5b916cb8954140",
     "semantic_hash": ""
   },
   "api/question-reports.ts": {
@@ -3636,9 +3636,9 @@
     "semantic_hash": "67e23040f1faa80802255a9f5f6cbb3c"
   },
   "src/app/App.tsx": {
-    "mtime": 1793084908.5200298,
-    "seen": 1793085010.501536,
-    "ast_hash": "02f89e8395b8b87ebbe45d58bebe13dd",
+    "mtime": 1793090749.4892309,
+    "seen": 1793092056.5831769,
+    "ast_hash": "baad5eedf07af7e96a60539e7861526b",
     "semantic_hash": ""
   },
   "src/app/biochemistry-bank.integration.test.ts": {
@@ -3888,9 +3888,9 @@
     "semantic_hash": "85ea48729b3a34a1e9077b36a555ee14"
   },
   "src/app/components/QuizInterface.tsx": {
-    "mtime": 1793084908.5221705,
-    "seen": 1793085010.501982,
-    "ast_hash": "02a4807d6b0d5dd84d14ad571e0da036",
+    "mtime": 1793089079.069767,
+    "seen": 1793092056.5839949,
+    "ast_hash": "83bce842cbc8c54af75d25b931cd1cc9",
     "semantic_hash": ""
   },
   "src/app/components/QuizQuestionFormatting.test.tsx": {
@@ -4152,8 +4152,8 @@
     "semantic_hash": "2ffa3b85e60c5e009954037ddbb13a79"
   },
   "src/app/generated/bankManifest.json": {
-    "mtime": 1793084908.5248978,
-    "seen": 1793085010.502326,
+    "mtime": 1793091710.2382224,
+    "seen": 1793092056.584845,
     "ast_hash": "11254ba84c82436eba03950b5d3454f9",
     "semantic_hash": ""
   },
@@ -4188,9 +4188,9 @@
     "semantic_hash": ""
   },
   "src/app/hooks/useCloudSync.ts": {
-    "mtime": 1793084908.5268657,
-    "seen": 1793085010.502366,
-    "ast_hash": "ce54feedee19b78ab9d2a7cee83174d7",
+    "mtime": 1793089062.4359038,
+    "seen": 1793092056.584971,
+    "ast_hash": "dfcd73749ced476004a5fa5c7b45ac36",
     "semantic_hash": ""
   },
   "src/app/hooks/useDeferredMount.ts": {
@@ -5220,10 +5220,10 @@
     "semantic_hash": "80da5a2d70f7276e17076a1136a345d7"
   },
   "src/pages/AdminPortal.tsx": {
-    "mtime": 1793084902.0096045,
-    "seen": 1793085010.503964,
-    "ast_hash": "045da32b19320a79e38717ac4c5e5331",
-    "semantic_hash": "045da32b19320a79e38717ac4c5e5331"
+    "mtime": 1793089022.5089004,
+    "seen": 1793092056.5881448,
+    "ast_hash": "226c7b3e4f65c1265e0c71883e85facc",
+    "semantic_hash": ""
   },
   "src/pages/AdminQuestionEditor.tsx": {
     "mtime": 1791450620.8013442,
@@ -5604,10 +5604,10 @@
     "semantic_hash": ""
   },
   "vite.config.ts": {
-    "mtime": 1793084902.0210621,
-    "seen": 1793085010.504425,
-    "ast_hash": "30f84810a5a1242682ebb937ba3df79e",
-    "semantic_hash": "30f84810a5a1242682ebb937ba3df79e"
+    "mtime": 1793089331.5361469,
+    "seen": 1793092056.589492,
+    "ast_hash": "9f66f32bec9b209d8156dfb951275393",
+    "semantic_hash": ""
   },
   ".agent/skills/openspec-apply-change/SKILL.md": {
     "mtime": 1781386892.892725,
@@ -8412,9 +8412,9 @@
     "semantic_hash": ""
   },
   "AGENTS.md": {
-    "mtime": 1793084908.2147305,
-    "seen": 1793085010.51051,
-    "ast_hash": "e5fe20337ea0e5027a6918443be9046b",
+    "mtime": 1793085033.5967526,
+    "seen": 1793092056.599273,
+    "ast_hash": "6ab63313b3ad57f1e7cb3afef43c505d",
     "semantic_hash": ""
   },
   "AI_HINT_SETUP.md": {
@@ -12414,9 +12414,9 @@
     "semantic_hash": ""
   },
   "docs/ARCHITECTURE_ENCYCLOPEDIA.md": {
-    "mtime": 1793084908.220317,
-    "seen": 1793085010.515636,
-    "ast_hash": "c438be1daeb35a32d1e6c8dfc187d4d5",
+    "mtime": 1793091969.415775,
+    "seen": 1793092056.604652,
+    "ast_hash": "e1f13d37488a22f09a3401f234f24773",
     "semantic_hash": ""
   },
   "docs/MASTER_FORENSIC_AUDIT_REPORT.md": {
@@ -12495,6 +12495,102 @@
     "mtime": 1782141407.0518546,
     "seen": 1793085010.516733,
     "ast_hash": "24774557f73c4ea427ee89ea11a451b9",
+    "semantic_hash": ""
+  },
+  "api/admin-analytics.ts": {
+    "mtime": 1793088709.8824084,
+    "seen": 1793092056.573816,
+    "ast_hash": "cdbd1a5f7ad1fd158c1932a0f6c30e3e",
+    "semantic_hash": ""
+  },
+  "api/presence.ts": {
+    "mtime": 1793090579.8596973,
+    "seen": 1793092056.5738702,
+    "ast_hash": "771fd5eb2a5cb9615377a2ca194ac455",
+    "semantic_hash": ""
+  },
+  "server/admin-analytics-service.ts": {
+    "mtime": 1793091367.57935,
+    "seen": 1793092056.58271,
+    "ast_hash": "0a9856826fea79ec5c328d5e9c0bb3d6",
+    "semantic_hash": ""
+  },
+  "server/presence-service.ts": {
+    "mtime": 1793090570.9621034,
+    "seen": 1793092056.58279,
+    "ast_hash": "a718618d697fe5ccbfd86c1175ac803a",
+    "semantic_hash": ""
+  },
+  "src/app/components/InlineQuestionEditor.tsx": {
+    "mtime": 1793088759.9258893,
+    "seen": 1793092056.5836742,
+    "ast_hash": "a5fe98d2a032a7d72e200cd9c77c540a",
+    "semantic_hash": ""
+  },
+  "src/app/components/KnowledgeGraphDrawer.tsx": {
+    "mtime": 1793089069.9900913,
+    "seen": 1793092056.583675,
+    "ast_hash": "3a8681cbe3f46a4c7bf5cd4bc6ae1211",
+    "semantic_hash": ""
+  },
+  "src/app/components/StudentEmailReplyModal.tsx": {
+    "mtime": 1793091235.2545424,
+    "seen": 1793092056.584202,
+    "ast_hash": "a79634a361b0fc760355acfa350252eb",
+    "semantic_hash": ""
+  },
+  "src/app/components/UserSyncPill.tsx": {
+    "mtime": 1793089055.4178088,
+    "seen": 1793092056.5844102,
+    "ast_hash": "960195a3ffc303c81bb7b9978e2f4db5",
+    "semantic_hash": ""
+  },
+  "src/app/hooks/usePresence.ts": {
+    "mtime": 1793090708.2029338,
+    "seen": 1793092056.5850492,
+    "ast_hash": "37f932582bc1dcb1acdf0ac50733f4df",
+    "semantic_hash": ""
+  },
+  "src/app/services/cloudSyncState.ts": {
+    "mtime": 1793088065.4790905,
+    "seen": 1793092056.58687,
+    "ast_hash": "ac49d9de2c63ff4ac3b568d5c396eed4",
+    "semantic_hash": ""
+  },
+  "src/app/services/knowledgeGraphService.ts": {
+    "mtime": 1793088231.2397134,
+    "seen": 1793092056.5868711,
+    "ast_hash": "2ba6068c72147d26260584804c586a1e",
+    "semantic_hash": ""
+  },
+  "src/pages/KnowledgeGraphPage.tsx": {
+    "mtime": 1793089115.4484417,
+    "seen": 1793092056.588199,
+    "ast_hash": "9bbdba4df9424cf086b8a56fc568b7fa",
+    "semantic_hash": ""
+  },
+  "src/pages/admin/AdminAnalyticsView.tsx": {
+    "mtime": 1793091658.9345715,
+    "seen": 1793092056.588342,
+    "ast_hash": "7df6ca7bd41f7a75d5de60b4b3fb8fda",
+    "semantic_hash": ""
+  },
+  "src/test/reports/admin-analytics.test.ts": {
+    "mtime": 1793091692.923674,
+    "seen": 1793092056.5885599,
+    "ast_hash": "4cc8c6341eaa5c6c34ba63306edba5a8",
+    "semantic_hash": ""
+  },
+  "src/test/reports/admin-leaderboard-view.test.tsx": {
+    "mtime": 1793091910.8331919,
+    "seen": 1793092056.5885608,
+    "ast_hash": "57a773a7806e4b6092390f7805ccb59a",
+    "semantic_hash": ""
+  },
+  "src/test/reports/inline-editor.test.tsx": {
+    "mtime": 1793089285.1619937,
+    "seen": 1793092056.588775,
+    "ast_hash": "de9d99ad493aba5be7aefdabdd81bb08",
     "semantic_hash": ""
   }
 }
