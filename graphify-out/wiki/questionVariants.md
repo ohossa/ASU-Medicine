@@ -1,33 +1,33 @@
 # questionVariants
 
-> God node · 171 connections · `src/app/components/QuizInterface.tsx`
+> God node · 170 connections · `src/app/components/QuizInterface.tsx`
 
-**Community:** [Apple HIG Sheets & Sharing](Apple_HIG_Sheets_&_Sharing.md)
+**Community:** [Community 1](Community_1.md)
 
 ## Connections by Relation
 
 ### conceptually_related_to
-- Collections `INFERRED`
-- Comprehensive Audit Report `INFERRED`
-- ASUCodes voluntary support page plan `INFERRED`
-- ASUCodes voluntary support page plan `INFERRED`
-- HIG reference lookup `INFERRED`
-- Machine learning `INFERRED`
-- The menu bar `INFERRED`
-- 🏥 ASU Medical Portal — Implementation Spec & Step-by-Step Execution Plan `INFERRED`
-- Augmented reality `INFERRED`
-- ASU Medical Portal — Master Implementer Prompt `INFERRED`
-- Code Review: Quiz Resume + Cloud Sync Feature `INFERRED`
-- 🏥 ASU Medical Portal — Improvement Roadmap `INFERRED`
-- Apple Pay `INFERRED`
-- Apple Pencil and Scribble `INFERRED`
-- Charts `INFERRED`
-- Generative AI `INFERRED`
-- Inclusion `INFERRED`
+- [HIG reference lookup](HIG_reference_lookup.md) `INFERRED`
 - SF Symbols `INFERRED`
-- Quiz Resume + Cloud Sync — Implementation Spec `INFERRED`
-- App icons `INFERRED`
-- *…and 150 more `conceptually_related_to` connection(s) not listed (lowest-degree first to go)*
+- The menu bar `INFERRED`
+- Collections `INFERRED`
+- Layout `INFERRED`
+- Designing for games `INFERRED`
+- Toolbars `INFERRED`
+- Comprehensive Audit Report `INFERRED`
+- Buttons `INFERRED`
+- Color `INFERRED`
+- Inclusion `INFERRED`
+- Accessibility `INFERRED`
+- Menus `INFERRED`
+- ASUCodes voluntary support page plan `INFERRED`
+- ASUCodes voluntary support page plan `INFERRED`
+- Icons `INFERRED`
+- Gestures `INFERRED`
+- Tab bars `INFERRED`
+- Typography `INFERRED`
+- Alerts `INFERRED`
+- *…and 149 more `conceptually_related_to` connection(s) not listed (lowest-degree first to go)*
 
 ### contains
 - QuizInterface.tsx `EXTRACTED`

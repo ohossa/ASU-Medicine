@@ -1,8 +1,8 @@
 # useLanguage()
 
-> God node · 53 connections · `src/app/hooks/useLanguage.ts`
+> God node · 60 connections · `src/app/hooks/useLanguage.ts`
 
-**Community:** [Curriculum Dashboard & Study Mode](Curriculum_Dashboard_&_Study_Mode.md)
+**Community:** [Learning Correctionstatus Facts](Learning_Correctionstatus_Facts.md)
 
 ## Connections by Relation
 
@@ -15,19 +15,19 @@
 - QuestionSearch() `EXTRACTED`
 - PortalShell() `EXTRACTED`
 - LearningHub() `EXTRACTED`
+- PortalFooter() `EXTRACTED`
 - ChapterSelect() `EXTRACTED`
-- ReportQuestionButton() `EXTRACTED`
 - GitBankSelect() `EXTRACTED`
+- ReportQuestionButton() `EXTRACTED`
 - TopicPracticePicker() `EXTRACTED`
 - SyllabusTrackerPage() `EXTRACTED`
 - MatchingQuestion() `EXTRACTED`
+- LanguageToggle() `EXTRACTED`
 - FlaggedQuestionsScreen() `EXTRACTED`
 - SyllabusTracker() `EXTRACTED`
 - LearningActivity() `EXTRACTED`
 - HistoryScreen() `EXTRACTED`
-- LanguageToggle() `EXTRACTED`
-- Dashboard() `EXTRACTED`
-- *…and 7 more `calls` connection(s) not listed (lowest-degree first to go)*
+- *…and 10 more `calls` connection(s) not listed (lowest-degree first to go)*
 
 ### contains
 - useLanguage.ts `EXTRACTED`
@@ -37,12 +37,12 @@
 - QuizInterface.tsx `EXTRACTED`
 - ResultsDashboard.tsx `EXTRACTED`
 - SubjectSelect.tsx `EXTRACTED`
-- LearningHub.tsx `EXTRACTED`
 - ChapterSelect.tsx `EXTRACTED`
+- LearningHub.tsx `EXTRACTED`
 - QuestionSearch.tsx `EXTRACTED`
 - SyllabusTrackerPage.tsx `EXTRACTED`
-- ReportQuestion.tsx `EXTRACTED`
 - GitBankSelect.tsx `EXTRACTED`
+- ReportQuestion.tsx `EXTRACTED`
 - SyllabusTracker.tsx `EXTRACTED`
 - Dashboard.tsx `EXTRACTED`
 - TopicPracticePicker.tsx `EXTRACTED`
@@ -50,10 +50,13 @@
 - PortalShell.tsx `EXTRACTED`
 - StudyTrackerSelectorModal.tsx `EXTRACTED`
 - MatchingQuestion.tsx `EXTRACTED`
+- PortalFooter.tsx `EXTRACTED`
 - AcademicYearProfilePage.tsx `EXTRACTED`
 - LearningActivity.tsx `EXTRACTED`
-- HistoryScreen.tsx `EXTRACTED`
-- *…and 5 more `imports` connection(s) not listed (lowest-degree first to go)*
+- *…and 8 more `imports` connection(s) not listed (lowest-degree first to go)*
+
+### references
+- 4.2 Bilingual Integration & Route Isolation `INFERRED`
 
 ---
 

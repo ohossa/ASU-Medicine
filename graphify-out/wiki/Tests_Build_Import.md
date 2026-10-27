@@ -41,9 +41,9 @@
 - [Immunology Intake October](Immunology_Intake_October.md) (4 shared connections)
 - [Verification Scientific Research](Verification_Scientific_Research.md) (4 shared connections)
 - [Release Inspect October](Release_Inspect_October.md) (4 shared connections)
-- [Subject Import Ready](Subject_Import_Ready.md) (3 shared connections)
-- [Web Vitals & Performance Optimization](Web_Vitals_&_Performance_Optimization.md) (2 shared connections)
-- [Validate Banks Allowed](Validate_Banks_Allowed.md) (1 shared connections)
+- [Community 1](Community_1.md) (4 shared connections)
+- [Community 67](Community_67.md) (3 shared connections)
+- [Intake Verification Reports & Audits](Intake_Verification_Reports_&_Audits.md) (1 shared connections)
 - [Files Dedupe Blocks](Files_Dedupe_Blocks.md) (1 shared connections)
 
 ## Source Files

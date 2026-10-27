@@ -16,8 +16,7 @@
 
 ## Relationships
 
-- [Usesoundengine Soundkey Audiopolicy](Usesoundengine_Soundkey_Audiopolicy.md) (3 shared connections)
-- [Confettimanager Levelupoverlay Celebrate](Confettimanager_Levelupoverlay_Celebrate.md) (1 shared connections)
+- [Usesoundengine Soundkey Audiopolicy](Usesoundengine_Soundkey_Audiopolicy.md) (4 shared connections)
 
 ## Source Files
 

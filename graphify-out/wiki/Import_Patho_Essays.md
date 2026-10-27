@@ -16,7 +16,7 @@
 ## Relationships
 
 - [Bank Audit Validate](Bank_Audit_Validate.md) (1 shared connections)
-- [Final Bank Assemble](Final_Bank_Assemble.md) (1 shared connections)
+- [Community 360](Community_360.md) (1 shared connections)
 
 ## Source Files
 

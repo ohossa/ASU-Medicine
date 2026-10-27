@@ -1,10 +1,11 @@
 # Implementation Startup Loading
 
-> 9 nodes
+> 15 nodes
 
 ## Key Concepts
 
-- **Startup and loading: implementation master plan** (12 connections) — `docs/LOADING_EXPERIENCE_MASTER_PLAN.md`
+- **Startup and loading: implementation master plan** (16 connections) — `docs/LOADING_EXPERIENCE_MASTER_PLAN.md`
+- **Design review: ASUCodes** (13 connections) — `docs/verification/apple-design-2026-10-09/README.md`
 - **Current source findings** (1 connections) — `docs/LOADING_EXPERIENCE_MASTER_PLAN.md`
 - **Data, cache and update strategy** (1 connections) — `docs/LOADING_EXPERIENCE_MASTER_PLAN.md`
 - **Implementation sequence** (1 connections) — `docs/LOADING_EXPERIENCE_MASTER_PLAN.md`
@@ -13,21 +14,30 @@
 - **Readiness model** (1 connections) — `docs/LOADING_EXPERIENCE_MASTER_PLAN.md`
 - **Tests** (1 connections) — `docs/LOADING_EXPERIENCE_MASTER_PLAN.md`
 - **Visual behaviour** (1 connections) — `docs/LOADING_EXPERIENCE_MASTER_PLAN.md`
+- **Craft notes** (1 connections) — `docs/verification/apple-design-2026-10-09/README.md`
+- **Critical findings addressed locally** (1 connections) — `docs/verification/apple-design-2026-10-09/README.md`
+- **Evidence and scope** (1 connections) — `docs/verification/apple-design-2026-10-09/README.md`
+- **Improvements** (1 connections) — `docs/verification/apple-design-2026-10-09/README.md`
+- **What works** (1 connections) — `docs/verification/apple-design-2026-10-09/README.md`
 
 ## Relationships
 
-- [Web Vitals & Performance Optimization](Web_Vitals_&_Performance_Optimization.md) (2 shared connections)
-- [HIG Design Conventions & Vocabulary](HIG_Design_Conventions_&_Vocabulary.md) (1 shared connections)
-- [Apple HIG Sheets & Sharing](Apple_HIG_Sheets_&_Sharing.md) (1 shared connections)
+- [Community 1](Community_1.md) (8 shared connections)
+- [Design Asucodes Website](Design_Asucodes_Website.md) (2 shared connections)
+- [Community 429](Community_429.md) (1 shared connections)
+- [Student Experience Implementation](Student_Experience_Implementation.md) (1 shared connections)
+- [Unified Learning Progress](Unified_Learning_Progress.md) (1 shared connections)
+- [Question Search Implementation](Question_Search_Implementation.md) (1 shared connections)
 
 ## Source Files
 
 - `docs/LOADING_EXPERIENCE_MASTER_PLAN.md`
+- `docs/verification/apple-design-2026-10-09/README.md`
 
 ## Audit Trail
 
-- EXTRACTED: 8 (67%)
-- INFERRED: 4 (33%)
+- EXTRACTED: 20 (71%)
+- INFERRED: 8 (29%)
 - AMBIGUOUS: 0 (0%)
 
 ---

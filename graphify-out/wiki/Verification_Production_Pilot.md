@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **Pilot, sound and accessibility verification** (7 connections) — `docs/verification/pilot-audio-accessibility-2026-10-11/README.md`
+- **Pilot, sound and accessibility verification** (8 connections) — `docs/verification/pilot-audio-accessibility-2026-10-11/README.md`
 - **Audio limitations** (1 connections) — `docs/verification/pilot-audio-accessibility-2026-10-11/README.md`
 - **Automated verification** (1 connections) — `docs/verification/pilot-audio-accessibility-2026-10-11/README.md`
 - **Design references** (1 connections) — `docs/verification/pilot-audio-accessibility-2026-10-11/README.md`
@@ -15,7 +15,7 @@
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [Community 429](Community_429.md) (1 shared connections)
 
 ## Source Files
 
@@ -23,7 +23,7 @@
 
 ## Audit Trail
 
-- EXTRACTED: 7 (100%)
+- EXTRACTED: 8 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

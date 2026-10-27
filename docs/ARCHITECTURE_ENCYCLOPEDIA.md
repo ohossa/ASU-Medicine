@@ -1,7 +1,7 @@
 # ASU Medical Portal — Master Architectural Encyclopedia & System Specification
 
 > **Target Audience:** All current and future AI coding agents, engineering leads, and medical content reviewers working on the ASU Medical Portal.  
-> **Source of Truth:** Generated from deterministic AST analysis, semantic graph modeling, and empirical verification of the codebase (7,149 nodes, 10,875 edges, 1,164 communities).
+> **Source of Truth:** Generated from deterministic AST analysis, semantic graph modeling, and empirical verification of the codebase (7,419 nodes, 12,139 edges, 1,073 communities).
 
 ---
 
@@ -165,7 +165,7 @@ Governed by [`QUESTION_IMPORT_WORKFLOW.md`](file:///Users/omarhossa/Documents/Me
 | **Year 2** | Sem 2 | `MSS-2` | Special Senses (ENT & Ophthalmology) | System-Based |
 | **Year 2** | Sem 2 | `P3-2`  | Professionalism 3 | Longitudinal |
 | **Year 2** | Sem 2 | `R-2`   | Research Methodology 2 | Longitudinal |
-| **Year 3** | Sem 1 | `MGL-3` | Gastrointestinal & Liver System | System-Based |
+| **Year 3** | Sem 1 | `MGL-3` | Gastrointestinal & Liver System (6,539 Qs: 5,622 Practice, 670 CA-1, 247 CA-2) | System-Based |
 | **Year 3** | Sem 1 | `MUG-3` | Urogenital System | System-Based |
 | **Year 3** | Sem 1 | `P4-3`  | Medical Ethics | Longitudinal |
 | **Year 3** | Sem 1 | `R-3`   | Scientific Research | Longitudinal |

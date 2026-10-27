@@ -4,53 +4,52 @@
 
 ## Key Concepts
 
-- **PortalEntry.tsx** (14 connections) — `src/PortalEntry.tsx`
+- **PortalEntry.tsx** (25 connections) — `src/PortalEntry.tsx`
+- **PortalEntry()** (15 connections) — `src/PortalEntry.tsx`
 - **ThemeContext.tsx** (13 connections) — `src/app/context/ThemeContext.tsx`
-- **useTheme.ts** (12 connections) — `src/app/hooks/useTheme.ts`
-- **ThemeProvider()** (10 connections) — `src/app/context/ThemeContext.tsx`
-- **PortalEntry()** (8 connections) — `src/PortalEntry.tsx`
-- **ThemeContextValue.ts** (5 connections) — `src/app/context/ThemeContextValue.ts`
-- **PortalEntry.test.tsx** (5 connections) — `src/PortalEntry.test.tsx`
-- **ThemeContext** (4 connections) — `src/app/context/ThemeContextValue.ts`
-- **Theme** (4 connections) — `.superdesign/init/theme.md`
+- **ThemeProvider()** (11 connections) — `src/app/context/ThemeContext.tsx`
+- **PortalEntry.test.tsx** (8 connections) — `src/PortalEntry.test.tsx`
+- **LanguageProvider()** (7 connections) — `src/app/context/LanguageContext.tsx`
+- **4.2 Bilingual Integration & Route Isolation** (5 connections) — `docs/MASTER_FORENSIC_AUDIT_REPORT.md`
+- **isDisclaimerPath()** (4 connections) — `src/PortalEntry.tsx`
+- **isPrivacyPath()** (4 connections) — `src/PortalEntry.tsx`
+- **isTermsPath()** (4 connections) — `src/PortalEntry.tsx`
 - **isSupportPath()** (3 connections) — `src/PortalEntry.tsx`
+- **MedicalDisclaimerPage** (3 connections) — `src/PortalEntry.tsx`
+- **PrivacyPage** (3 connections) — `src/PortalEntry.tsx`
 - **StudyEntry** (3 connections) — `src/PortalEntry.tsx`
 - **SupportPage** (3 connections) — `src/PortalEntry.tsx`
+- **TermsPage** (3 connections) — `src/PortalEntry.tsx`
 - **applyTheme()** (2 connections) — `src/app/context/ThemeContext.tsx`
 - **readTheme()** (2 connections) — `src/app/context/ThemeContext.tsx`
-- **ThemeContextType** (1 connections) — `src/app/context/ThemeContextValue.ts`
-- **src/styles/fonts.css** (1 connections) — `.superdesign/init/theme.md`
-- **src/styles/index.css** (1 connections) — `.superdesign/init/theme.md`
-- **src/styles/theme.css** (1 connections) — `.superdesign/init/theme.md`
 
 ## Relationships
 
-- [Root App Shell & Authentication](Root_App_Shell_&_Authentication.md) (7 shared connections)
-- [Chapter Selection & Flow Breadcrumbs](Chapter_Selection_&_Flow_Breadcrumbs.md) (6 shared connections)
-- [Curriculum Dashboard & Study Mode](Curriculum_Dashboard_&_Study_Mode.md) (5 shared connections)
-- [Web Vitals & Performance Optimization](Web_Vitals_&_Performance_Optimization.md) (4 shared connections)
-- [Radix React Imagewithfallback](Radix_React_Imagewithfallback.md) (4 shared connections)
+- [Community 81](Community_81.md) (8 shared connections)
+- [Chapter Selection & Flow Breadcrumbs](Chapter_Selection_&_Flow_Breadcrumbs.md) (7 shared connections)
+- [Root App Shell & Authentication](Root_App_Shell_&_Authentication.md) (6 shared connections)
+- [Community 1](Community_1.md) (5 shared connections)
+- [Flowbreadcrumbs Gitbankselect Integration](Flowbreadcrumbs_Gitbankselect_Integration.md) (3 shared connections)
+- [Community 155](Community_155.md) (2 shared connections)
 - [Vercel Errorboundary Analytics](Vercel_Errorboundary_Analytics.md) (2 shared connections)
-- [Clinicalcasesolver Casedata Cases](Clinicalcasesolver_Casedata_Cases.md) (2 shared connections)
+- [Radix React Imagewithfallback](Radix_React_Imagewithfallback.md) (2 shared connections)
 - [Supportpage Costs Config](Supportpage_Costs_Config.md) (2 shared connections)
-- [Analyticsdashboard Analyticsdashboardprops Card](Analyticsdashboard_Analyticsdashboardprops_Card.md) (1 shared connections)
 - [Loginscreen Clerk Themes](Loginscreen_Clerk_Themes.md) (1 shared connections)
-- [Markscalculator Gradekey Modulepreset](Markscalculator_Gradekey_Modulepreset.md) (1 shared connections)
-- [Flagged Questions & Results UI](Flagged_Questions_&_Results_UI.md) (1 shared connections)
+- [Community 107](Community_107.md) (1 shared connections)
+- [Intake Verification Reports & Audits](Intake_Verification_Reports_&_Audits.md) (1 shared connections)
 
 ## Source Files
 
-- `.superdesign/init/theme.md`
+- `docs/MASTER_FORENSIC_AUDIT_REPORT.md`
 - `src/PortalEntry.test.tsx`
 - `src/PortalEntry.tsx`
+- `src/app/context/LanguageContext.tsx`
 - `src/app/context/ThemeContext.tsx`
-- `src/app/context/ThemeContextValue.ts`
-- `src/app/hooks/useTheme.ts`
 
 ## Audit Trail
 
-- EXTRACTED: 64 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 76 (95%)
+- INFERRED: 4 (5%)
 - AMBIGUOUS: 0 (0%)
 
 ---

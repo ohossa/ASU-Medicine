@@ -27,7 +27,7 @@
 - [Apple HIG Extraction Automation](Apple_HIG_Extraction_Automation.md) (1 shared connections)
 - [Path Cleaner Batch](Path_Cleaner_Batch.md) (1 shared connections)
 - [Intake Valid Google](Intake_Valid_Google.md) (1 shared connections)
-- [Validate Banks Allowed](Validate_Banks_Allowed.md) (1 shared connections)
+- [Intake Verification Reports & Audits](Intake_Verification_Reports_&_Audits.md) (1 shared connections)
 
 ## Source Files
 

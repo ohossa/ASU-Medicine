@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **Design principles** (13 connections) — `.agents/skills/apple-design/references/hig/design-principles.md`
+- **Design principles** (14 connections) — `.agents/skills/apple-design/references/hig/design-principles.md`
 - **Agency** (1 connections) — `.agents/skills/apple-design/references/hig/design-principles.md`
 - **Change log** (1 connections) — `.agents/skills/apple-design/references/hig/design-principles.md`
 - **Craft** (1 connections) — `.agents/skills/apple-design/references/hig/design-principles.md`
@@ -17,9 +17,8 @@
 
 ## Relationships
 
-- [Web Vitals & Performance Optimization](Web_Vitals_&_Performance_Optimization.md) (2 shared connections)
-- [HIG Design Conventions & Vocabulary](HIG_Design_Conventions_&_Vocabulary.md) (1 shared connections)
-- [Apple HIG Sheets & Sharing](Apple_HIG_Sheets_&_Sharing.md) (1 shared connections)
+- [Community 1](Community_1.md) (4 shared connections)
+- [Community 78](Community_78.md) (1 shared connections)
 
 ## Source Files
 
@@ -27,8 +26,8 @@
 
 ## Audit Trail
 
-- EXTRACTED: 9 (69%)
-- INFERRED: 4 (31%)
+- EXTRACTED: 10 (71%)
+- INFERRED: 4 (29%)
 - AMBIGUOUS: 0 (0%)
 
 ---

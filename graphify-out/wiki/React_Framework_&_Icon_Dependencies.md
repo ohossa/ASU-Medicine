@@ -1,6 +1,6 @@
 # React Framework & Icon Dependencies
 
-> 95 nodes
+> 96 nodes
 
 ## Key Concepts
 
@@ -13,6 +13,7 @@
 - **aspect-ratio.tsx** (2 connections) — `Light_Dark Mode Toggle/src/app/components/ui/aspect-ratio.tsx`
 - **next-themes@0.4.6** (2 connections) — `Light_Dark Mode Toggle/package.json`
 - **@radix-ui/react-aspect-ratio@1.1.2** (2 connections) — `Light_Dark Mode Toggle/package.json`
+- **@radix-ui/react-menubar@1.1.6** (2 connections) — `Light_Dark Mode Toggle/package.json`
 - **sonner@2.0.3** (2 connections) — `Light_Dark Mode Toggle/package.json`
 - **AspectRatio()** (1 connections) — `Light_Dark Mode Toggle/src/app/components/ui/aspect-ratio.tsx`
 - **Toaster()** (1 connections) — `Light_Dark Mode Toggle/src/app/components/ui/sonner.tsx`
@@ -28,23 +29,22 @@
 - **lucide-react** (1 connections) — `Light_Dark Mode Toggle/package.json`
 - **motion** (1 connections) — `Light_Dark Mode Toggle/package.json`
 - **react** (1 connections) — `Light_Dark Mode Toggle/package.json`
-- **react-dom** (1 connections) — `Light_Dark Mode Toggle/package.json`
-- *... and 70 more nodes in this community*
+- *... and 71 more nodes in this community*
 
 ## Relationships
 
-- [React Accordion Checkbox](React_Accordion_Checkbox.md) (8 shared connections)
-- [Radix React Imagewithfallback](Radix_React_Imagewithfallback.md) (6 shared connections)
-- [Atomic UI Components & Avatars](Atomic_UI_Components_&_Avatars.md) (5 shared connections)
+- [Radix React Imagewithfallback](Radix_React_Imagewithfallback.md) (10 shared connections)
+- [React Accordion Checkbox](React_Accordion_Checkbox.md) (5 shared connections)
+- [Atomic UI Components & Avatars](Atomic_UI_Components_&_Avatars.md) (4 shared connections)
+- [Toggle Alert Group](Toggle_Alert_Group.md) (4 shared connections)
 - [Carousel React Alert](Carousel_React_Alert.md) (3 shared connections)
-- [Label React Badge](Label_React_Badge.md) (3 shared connections)
-- [Toggle Alert Group](Toggle_Alert_Group.md) (3 shared connections)
-- [Dialog Command Commanddialog](Dialog_Command_Commanddialog.md) (2 shared connections)
-- [Form Input Controls & Modals](Form_Input_Controls_&_Modals.md) (2 shared connections)
+- [Form Input Controls & Modals](Form_Input_Controls_&_Modals.md) (3 shared connections)
+- [Label React Badge](Label_React_Badge.md) (2 shared connections)
 - [Chart Chartconfig Chartcontainer](Chart_Chartconfig_Chartcontainer.md) (1 shared connections)
 - [Drawer Drawerclose Drawercontent](Drawer_Drawerclose_Drawercontent.md) (1 shared connections)
 - [Collapsible Collapsiblecontent Collapsibletrigger](Collapsible_Collapsiblecontent_Collapsibletrigger.md) (1 shared connections)
-- [Menubar Menubarcheckboxitem Menubarcontent](Menubar_Menubarcheckboxitem_Menubarcontent.md) (1 shared connections)
+- [Community 120](Community_120.md) (1 shared connections)
+- [Select Selectcontent Selectgroup](Select_Selectcontent_Selectgroup.md) (1 shared connections)
 
 ## Source Files
 
@@ -54,7 +54,7 @@
 
 ## Audit Trail
 
-- EXTRACTED: 135 (100%)
+- EXTRACTED: 136 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

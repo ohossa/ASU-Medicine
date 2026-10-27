@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **ref_node_fs** (49 connections)
+- **ref_node_fs** (51 connections)
 - **recover-024.ts** (6 connections) — `data-format-v2/scripts/recover-024.ts`
 - **analyze-cleaned.ts** (5 connections) — `data-format-v2/scripts/analyze-cleaned.ts`
 - **recover-032.ts** (4 connections) — `data-format-v2/scripts/recover-032.ts`
@@ -34,17 +34,17 @@
 ## Relationships
 
 - [Files Valid Validate](Files_Valid_Validate.md) (10 shared connections)
+- [Intake Verification Reports & Audits](Intake_Verification_Reports_&_Audits.md) (4 shared connections)
 - [Bank Question Edit](Bank_Question_Edit.md) (3 shared connections)
 - [Extract Chunks Buildchunks](Extract_Chunks_Buildchunks.md) (2 shared connections)
-- [Validate Banks Allowed](Validate_Banks_Allowed.md) (2 shared connections)
-- [Chapter Selection & Flow Breadcrumbs](Chapter_Selection_&_Flow_Breadcrumbs.md) (1 shared connections)
+- [Community 67](Community_67.md) (2 shared connections)
 - [Apple HIG Extraction Automation](Apple_HIG_Extraction_Automation.md) (1 shared connections)
+- [Community 46](Community_46.md) (1 shared connections)
 - [Path Cleaner Batch](Path_Cleaner_Batch.md) (1 shared connections)
 - [Valid Diag Fails](Valid_Diag_Fails.md) (1 shared connections)
 - [Enrich Deepseek Callllm](Enrich_Deepseek_Callllm.md) (1 shared connections)
 - [Enrich Fast Callllm](Enrich_Fast_Callllm.md) (1 shared connections)
 - [Enrich Buildsystemprompt Builduserprompt](Enrich_Buildsystemprompt_Builduserprompt.md) (1 shared connections)
-- [Enrich Openrouter Buildsystemprompt](Enrich_Openrouter_Buildsystemprompt.md) (1 shared connections)
 
 ## Source Files
 
@@ -63,7 +63,7 @@
 
 ## Audit Trail
 
-- EXTRACTED: 74 (100%)
+- EXTRACTED: 76 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

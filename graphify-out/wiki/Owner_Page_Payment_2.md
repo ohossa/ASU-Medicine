@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **ASUCodes voluntary support page plan** (26 connections) — `docs/DONATION_PAGE_PLAN.md`
+- **ASUCodes voluntary support page plan** (27 connections) — `docs/DONATION_PAGE_PLAN.md`
 - **Confirmed owner setup** (1 connections) — `docs/DONATION_PAGE_PLAN.md`
 - **Current status** (1 connections) — `docs/DONATION_PAGE_PLAN.md`
 - **Delivery sequence and acceptance criteria** (1 connections) — `docs/DONATION_PAGE_PLAN.md`
@@ -30,9 +30,8 @@
 
 ## Relationships
 
-- [Web Vitals & Performance Optimization](Web_Vitals_&_Performance_Optimization.md) (2 shared connections)
-- [HIG Design Conventions & Vocabulary](HIG_Design_Conventions_&_Vocabulary.md) (1 shared connections)
-- [Apple HIG Sheets & Sharing](Apple_HIG_Sheets_&_Sharing.md) (1 shared connections)
+- [Community 1](Community_1.md) (4 shared connections)
+- [Community 429](Community_429.md) (1 shared connections)
 
 ## Source Files
 
@@ -40,7 +39,7 @@
 
 ## Audit Trail
 
-- EXTRACTED: 22 (85%)
+- EXTRACTED: 23 (85%)
 - INFERRED: 4 (15%)
 - AMBIGUOUS: 0 (0%)
 

@@ -15,9 +15,7 @@
 
 ## Relationships
 
-- [Web Vitals & Performance Optimization](Web_Vitals_&_Performance_Optimization.md) (2 shared connections)
-- [HIG Design Conventions & Vocabulary](HIG_Design_Conventions_&_Vocabulary.md) (1 shared connections)
-- [Apple HIG Sheets & Sharing](Apple_HIG_Sheets_&_Sharing.md) (1 shared connections)
+- [Community 1](Community_1.md) (4 shared connections)
 
 ## Source Files
 

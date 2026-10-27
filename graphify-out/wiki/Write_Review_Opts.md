@@ -12,8 +12,9 @@
 ## Relationships
 
 - [Quality Replay Content](Quality_Replay_Content.md) (2 shared connections)
-- [Reorganize Essays Bank](Reorganize_Essays_Bank.md) (2 shared connections)
-- [Parse Extract Keywords](Parse_Extract_Keywords.md) (1 shared connections)
+- [Biochemistry Build Intake](Biochemistry_Build_Intake.md) (1 shared connections)
+- [Reorganize Essays Bank](Reorganize_Essays_Bank.md) (1 shared connections)
+- [Community 38](Community_38.md) (1 shared connections)
 - [Keyword Unique Keywords](Keyword_Unique_Keywords.md) (1 shared connections)
 
 ## Source Files

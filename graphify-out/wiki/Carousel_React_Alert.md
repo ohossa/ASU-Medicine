@@ -34,12 +34,11 @@
 ## Relationships
 
 - [Atomic UI Components & Avatars](Atomic_UI_Components_&_Avatars.md) (26 shared connections)
-- [React Accordion Checkbox](React_Accordion_Checkbox.md) (8 shared connections)
-- [Radix React Imagewithfallback](Radix_React_Imagewithfallback.md) (5 shared connections)
+- [Radix React Imagewithfallback](Radix_React_Imagewithfallback.md) (10 shared connections)
 - [Form Input Controls & Modals](Form_Input_Controls_&_Modals.md) (3 shared connections)
+- [React Accordion Checkbox](React_Accordion_Checkbox.md) (3 shared connections)
 - [React Framework & Icon Dependencies](React_Framework_&_Icon_Dependencies.md) (3 shared connections)
-- [Label React Badge](Label_React_Badge.md) (1 shared connections)
-- [Toggle Alert Group](Toggle_Alert_Group.md) (1 shared connections)
+- [Toggle Alert Group](Toggle_Alert_Group.md) (2 shared connections)
 
 ## Source Files
 

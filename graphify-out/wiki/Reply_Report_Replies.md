@@ -17,7 +17,6 @@
 - **replies.test.ts** (8 connections) — `src/test/reports/replies.test.ts`
 - **Dependencies** (7 connections) — `server/report-replies.ts`
 - **renderReplyEmail()** (7 connections) — `src/app/reports/reply-context.ts`
-- **reply-composer.test.tsx** (7 connections) — `src/test/reports/reply-composer.test.tsx`
 - **reply-context.test.ts** (7 connections) — `src/test/reports/reply-context.test.ts`
 - **ReplyDraft** (5 connections) — `src/app/reports/reply-contracts.ts`
 - **ReplyConversation** (4 connections) — `src/app/reports/reply-contracts.ts`
@@ -27,23 +26,25 @@
 - **escape()** (3 connections) — `src/app/reports/reply-context.ts`
 - **paragraph()** (3 connections) — `src/app/reports/reply-context.ts`
 - **string()** (3 connections) — `src/app/reports/reply-context.ts`
+- **owner()** (2 connections) — `server/report-replies.ts`
+- **report()** (2 connections) — `server/report-replies.ts`
 - **.getReport()** (2 connections) — `server/report-replies.ts`
-- **.send()** (2 connections) — `server/report-replies.ts`
 - *... and 24 more nodes in this community*
 
 ## Relationships
 
-- [Serverless Error Inbox & Redis](Serverless_Error_Inbox_&_Redis.md) (14 shared connections)
-- [Report Question Email](Report_Question_Email.md) (6 shared connections)
+- [Serverless Error Inbox & Redis](Serverless_Error_Inbox_&_Redis.md) (12 shared connections)
 - [Bank Question Edit](Bank_Question_Edit.md) (6 shared connections)
-- [Client Adminoverviewpanel Adminportal](Client_Adminoverviewpanel_Adminportal.md) (5 shared connections)
-- [Chapter Selection & Flow Breadcrumbs](Chapter_Selection_&_Flow_Breadcrumbs.md) (4 shared connections)
-- [Root App Shell & Authentication](Root_App_Shell_&_Authentication.md) (3 shared connections)
+- [Client Adminoverviewpanel Adminportal](Client_Adminoverviewpanel_Adminportal.md) (6 shared connections)
+- [Report Question Email](Report_Question_Email.md) (5 shared connections)
+- [Chapter Selection & Flow Breadcrumbs](Chapter_Selection_&_Flow_Breadcrumbs.md) (2 shared connections)
+- [Community 46](Community_46.md) (2 shared connections)
+- [Root App Shell & Authentication](Root_App_Shell_&_Authentication.md) (2 shared connections)
+- [Intake Verification Reports & Audits](Intake_Verification_Reports_&_Audits.md) (2 shared connections)
 - [Questionschema Triage Provider](Questionschema_Triage_Provider.md) (1 shared connections)
-- [Learning Service Policy](Learning_Service_Policy.md) (1 shared connections)
 - [Files Valid Validate](Files_Valid_Validate.md) (1 shared connections)
 - [Radix React Imagewithfallback](Radix_React_Imagewithfallback.md) (1 shared connections)
-- [Curriculum Dashboard & Study Mode](Curriculum_Dashboard_&_Study_Mode.md) (1 shared connections)
+- [Subjectselect Topics Chapter](Subjectselect_Topics_Chapter.md) (1 shared connections)
 
 ## Source Files
 
@@ -53,12 +54,11 @@
 - `src/app/reports/reply-contracts.ts`
 - `src/pages/ReportReplyComposer.tsx`
 - `src/test/reports/replies.test.ts`
-- `src/test/reports/reply-composer.test.tsx`
 - `src/test/reports/reply-context.test.ts`
 
 ## Audit Trail
 
-- EXTRACTED: 135 (100%)
+- EXTRACTED: 132 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

@@ -20,9 +20,10 @@
 
 ## Relationships
 
-- [Reorganize Essays Bank](Reorganize_Essays_Bank.md) (4 shared connections)
 - [Quality Replay Content](Quality_Replay_Content.md) (3 shared connections)
 - [Polish Rejected Biochemistry](Polish_Rejected_Biochemistry.md) (2 shared connections)
+- [Biochemistry Build Intake](Biochemistry_Build_Intake.md) (2 shared connections)
+- [Reorganize Essays Bank](Reorganize_Essays_Bank.md) (2 shared connections)
 - [Keyword Unique Keywords](Keyword_Unique_Keywords.md) (2 shared connections)
 
 ## Source Files

@@ -20,10 +20,10 @@
 
 ## Relationships
 
-- [Final Bank Assemble](Final_Bank_Assemble.md) (2 shared connections)
+- [Community 360](Community_360.md) (2 shared connections)
 - [React Eslint Plugin](React_Eslint_Plugin.md) (2 shared connections)
-- [Chapter Selection & Flow Breadcrumbs](Chapter_Selection_&_Flow_Breadcrumbs.md) (1 shared connections)
-- [Data Bankmanifest Buildchapter](Data_Bankmanifest_Buildchapter.md) (1 shared connections)
+- [Intake Verification Reports & Audits](Intake_Verification_Reports_&_Audits.md) (1 shared connections)
+- [Community 36](Community_36.md) (1 shared connections)
 
 ## Source Files
 

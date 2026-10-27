@@ -1,10 +1,11 @@
 # Release Inspect October
 
-> 23 nodes
+> 27 nodes
 
 ## Key Concepts
 
-- **ASU Medical Portal: complete question intake and release workflow** (26 connections) — `QUESTION_IMPORT_WORKFLOW.md`
+- **ASU Medical Portal: complete question intake and release workflow** (28 connections) — `QUESTION_IMPORT_WORKFLOW.md`
+- **React + TypeScript + Vite** (5 connections) — `README.md`
 - **10. Canonical conversion and format-specific gates** (1 connections) — `QUESTION_IMPORT_WORKFLOW.md`
 - **11. Stage the integration and inspect every mutation** (1 connections) — `QUESTION_IMPORT_WORKFLOW.md`
 - **12. Reconciliation and release accounting** (1 connections) — `QUESTION_IMPORT_WORKFLOW.md`
@@ -27,19 +28,24 @@
 - **Executed reference intake: IBM-1 biochemistry TXT (9 October 2026)** (1 connections) — `QUESTION_IMPORT_WORKFLOW.md`
 - **Histology and topic-session safeguards (13 October 2026)** (1 connections) — `QUESTION_IMPORT_WORKFLOW.md`
 - **Past-exam navigation priority (11 October 2026)** (1 connections) — `QUESTION_IMPORT_WORKFLOW.md`
+- **Expanding the ESLint configuration** (1 connections) — `README.md`
+- *... and 2 more nodes in this community*
 
 ## Relationships
 
 - [Tests Build Import](Tests_Build_Import.md) (4 shared connections)
+- [Community 69](Community_69.md) (1 shared connections)
+- [Community 1](Community_1.md) (1 shared connections)
 
 ## Source Files
 
 - `QUESTION_IMPORT_WORKFLOW.md`
+- `README.md`
 
 ## Audit Trail
 
-- EXTRACTED: 22 (85%)
-- INFERRED: 4 (15%)
+- EXTRACTED: 28 (88%)
+- INFERRED: 4 (12%)
 - AMBIGUOUS: 0 (0%)
 
 ---

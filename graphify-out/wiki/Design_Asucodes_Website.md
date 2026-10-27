@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **ASUCodes: website design and experience master plan** (11 connections) — `docs/APPLE_DESIGN_MASTER_PLAN.md`
+- **ASUCodes: website design and experience master plan** (18 connections) — `docs/APPLE_DESIGN_MASTER_PLAN.md`
 - **Completed locally** (1 connections) — `docs/APPLE_DESIGN_MASTER_PLAN.md`
 - **Direction** (1 connections) — `docs/APPLE_DESIGN_MASTER_PLAN.md`
 - **Final local pass — 9 October 2026** (1 connections) — `docs/APPLE_DESIGN_MASTER_PLAN.md`
@@ -15,9 +15,13 @@
 
 ## Relationships
 
-- [Web Vitals & Performance Optimization](Web_Vitals_&_Performance_Optimization.md) (2 shared connections)
-- [HIG Design Conventions & Vocabulary](HIG_Design_Conventions_&_Vocabulary.md) (1 shared connections)
-- [Apple HIG Sheets & Sharing](Apple_HIG_Sheets_&_Sharing.md) (1 shared connections)
+- [Community 1](Community_1.md) (4 shared connections)
+- [Implementation Startup Loading](Implementation_Startup_Loading.md) (2 shared connections)
+- [Community 429](Community_429.md) (1 shared connections)
+- [Owner Page Payment](Owner_Page_Payment.md) (1 shared connections)
+- [Question Search Implementation](Question_Search_Implementation.md) (1 shared connections)
+- [Unified Learning Progress](Unified_Learning_Progress.md) (1 shared connections)
+- [Design Owner Report](Design_Owner_Report.md) (1 shared connections)
 
 ## Source Files
 
@@ -25,8 +29,8 @@
 
 ## Audit Trail
 
-- EXTRACTED: 7 (64%)
-- INFERRED: 4 (36%)
+- EXTRACTED: 14 (78%)
+- INFERRED: 4 (22%)
 - AMBIGUOUS: 0 (0%)
 
 ---

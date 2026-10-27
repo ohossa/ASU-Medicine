@@ -1,8 +1,8 @@
 # vitest
 
-> God node · 129 connections · `package.json`
+> God node · 135 connections · `package.json`
 
-**Community:** [Chapter Selection & Flow Breadcrumbs](Chapter_Selection_&_Flow_Breadcrumbs.md)
+**Community:** [Intake Verification Reports & Audits](Intake_Verification_Reports_&_Audits.md)
 
 ## Connections by Relation
 
@@ -12,11 +12,12 @@
 ### imports_from
 - ethics-bank.integration.test.ts `EXTRACTED`
 - immunology-bank.integration.test.ts `EXTRACTED`
+- locomotor-bank.integration.test.ts `EXTRACTED`
 - histology-bank.integration.test.ts `EXTRACTED`
 - SubjectSelect.navigation.test.tsx `EXTRACTED`
+- git-bank.integration.test.ts `EXTRACTED`
 - customPractice.test.ts `EXTRACTED`
 - practiceNavigation.test.ts `EXTRACTED`
-- git-bank.integration.test.ts `EXTRACTED`
 - biochemistry-quality.test.ts `EXTRACTED`
 - year1-release.test.ts `EXTRACTED`
 - biochemistry-bank.integration.test.ts `EXTRACTED`
@@ -29,8 +30,7 @@
 - PortalControls.test.tsx `EXTRACTED`
 - SubjectSelect.sync.test.tsx `EXTRACTED`
 - history-bank.integration.test.ts `EXTRACTED`
-- learningQuestionVersions.test.ts `EXTRACTED`
-- *…and 108 more `imports_from` connection(s) not listed (lowest-degree first to go)*
+- *…and 114 more `imports_from` connection(s) not listed (lowest-degree first to go)*
 
 ---
 

@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **Question Search: implementation master plan** (9 connections) — `docs/QUESTION_SEARCH_MASTER_PLAN.md`
+- **Question Search: implementation master plan** (13 connections) — `docs/QUESTION_SEARCH_MASTER_PLAN.md`
 - **Current limitations confirmed in source** (1 connections) — `docs/QUESTION_SEARCH_MASTER_PLAN.md`
 - **Data contract and integrity** (1 connections) — `docs/QUESTION_SEARCH_MASTER_PLAN.md`
 - **Delivery sequence** (1 connections) — `docs/QUESTION_SEARCH_MASTER_PLAN.md`
@@ -17,7 +17,10 @@
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [Design Asucodes Website](Design_Asucodes_Website.md) (1 shared connections)
+- [Community 429](Community_429.md) (1 shared connections)
+- [Student Experience Implementation](Student_Experience_Implementation.md) (1 shared connections)
+- [Implementation Startup Loading](Implementation_Startup_Loading.md) (1 shared connections)
 
 ## Source Files
 
@@ -25,7 +28,7 @@
 
 ## Audit Trail
 
-- EXTRACTED: 9 (100%)
+- EXTRACTED: 13 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

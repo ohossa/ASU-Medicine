@@ -13,8 +13,8 @@
 - practiceTopics() `EXTRACTED`
 - App() `EXTRACTED`
 - selectedPractice() `EXTRACTED`
-- useAcademicYear() `EXTRACTED`
 - sessionMatchesQuestions() `EXTRACTED`
+- useAcademicYear() `EXTRACTED`
 - ensureModuleDataLoaded() `EXTRACTED`
 - useLearning() `EXTRACTED`
 - LoadingScreen() `EXTRACTED`

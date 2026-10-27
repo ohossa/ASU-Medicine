@@ -1,10 +1,10 @@
 # Clerk React Vercel
 
-> 17 nodes
+> 16 nodes
 
 ## Key Concepts
 
-- **dependencies** (17 connections) — `package.json`
+- **dependencies** (16 connections) — `package.json`
 - **canvas-confetti** (1 connections) — `package.json`
 - **@clerk/backend** (1 connections) — `package.json`
 - **@clerk/clerk-react** (1 connections) — `package.json`
@@ -18,7 +18,6 @@
 - **tw-animate-css** (1 connections) — `package.json`
 - **@upstash/redis** (1 connections) — `package.json`
 - **@vercel/analytics** (1 connections) — `package.json`
-- **@vercel/speed-insights** (1 connections) — `package.json`
 - **zod** (1 connections) — `package.json`
 - **zustand** (1 connections) — `package.json`
 
@@ -32,7 +31,7 @@
 
 ## Audit Trail
 
-- EXTRACTED: 17 (100%)
+- EXTRACTED: 16 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

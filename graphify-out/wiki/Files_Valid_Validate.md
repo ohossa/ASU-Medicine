@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **ref_node_path** (25 connections)
+- **ref_node_path** (27 connections)
 - **generate-placeholders.ts** (7 connections) — `data-format-v2/scripts/generate-placeholders.ts`
 - **detailed-errors.ts** (6 connections) — `data-format-v2/scripts/detailed-errors.ts`
 - **validate-all.ts** (6 connections) — `data-format-v2/scripts/validate-all.ts`
@@ -38,13 +38,13 @@
 - [Extract Chunks Buildchunks](Extract_Chunks_Buildchunks.md) (2 shared connections)
 - [Reply Report Replies](Reply_Report_Replies.md) (1 shared connections)
 - [Apple HIG Extraction Automation](Apple_HIG_Extraction_Automation.md) (1 shared connections)
+- [Community 46](Community_46.md) (1 shared connections)
 - [Path Cleaner Batch](Path_Cleaner_Batch.md) (1 shared connections)
 - [Enrich Buildsystemprompt Builduserprompt](Enrich_Buildsystemprompt_Builduserprompt.md) (1 shared connections)
 - [Subject Import Batch](Subject_Import_Batch.md) (1 shared connections)
-- [Subject Import Ready](Subject_Import_Ready.md) (1 shared connections)
+- [Community 67](Community_67.md) (1 shared connections)
 - [Intake Valid Google](Intake_Valid_Google.md) (1 shared connections)
 - [Subject Migrate Chapter](Subject_Migrate_Chapter.md) (1 shared connections)
-- [Parse Interim Canonicalchapters](Parse_Interim_Canonicalchapters.md) (1 shared connections)
 
 ## Source Files
 
@@ -62,7 +62,7 @@
 
 ## Audit Trail
 
-- EXTRACTED: 63 (98%)
+- EXTRACTED: 65 (98%)
 - INFERRED: 1 (2%)
 - AMBIGUOUS: 0 (0%)
 

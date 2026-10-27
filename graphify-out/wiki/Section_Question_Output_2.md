@@ -1,10 +1,19 @@
 # Section Question Output
 
-> 14 nodes
+> 23 nodes
 
 ## Key Concepts
 
-- **Conversion Prompts Master** (13 connections) — `question-workflow/backups/2026-09-12/CONVERSION_PROMPTS_MASTER.md`
+- **Conversion Prompts Master** (14 connections) — `question-workflow/backups/2026-09-12/CONVERSION_PROMPTS_MASTER.md`
+- **Adding New Question Databases to ASU Medical Portal** (9 connections) — `question-workflow/backups/2026-09-12/ADDING_QUESTIONS.md`
+- **File Organization** (1 connections) — `question-workflow/backups/2026-09-12/ADDING_QUESTIONS.md`
+- **How It Works** (1 connections) — `question-workflow/backups/2026-09-12/ADDING_QUESTIONS.md`
+- **How the Importer Routes Questions Automatically** (1 connections) — `question-workflow/backups/2026-09-12/ADDING_QUESTIONS.md`
+- **Import Commands** (1 connections) — `question-workflow/backups/2026-09-12/ADDING_QUESTIONS.md`
+- **Incoming Batch JSON Format (v2)** (1 connections) — `question-workflow/backups/2026-09-12/ADDING_QUESTIONS.md`
+- **Quick Start (3 Steps)** (1 connections) — `question-workflow/backups/2026-09-12/ADDING_QUESTIONS.md`
+- **Tips** (1 connections) — `question-workflow/backups/2026-09-12/ADDING_QUESTIONS.md`
+- **Valid Module Codes** (1 connections) — `question-workflow/backups/2026-09-12/ADDING_QUESTIONS.md`
 - **SECTION 0 — UNCERTAINTY HANDLING & FLAGGING (READ FIRST · HIGHEST PRIORITY)** (1 connections) — `question-workflow/backups/2026-09-12/CONVERSION_PROMPTS_MASTER.md`
 - **SECTION 10 — CURRICULUM CHAPTER REFERENCE GUIDE** (1 connections) — `question-workflow/backups/2026-09-12/CONVERSION_PROMPTS_MASTER.md`
 - **SECTION 11 — COMPLETE EXAMPLE OUTPUT** (1 connections) — `question-workflow/backups/2026-09-12/CONVERSION_PROMPTS_MASTER.md`
@@ -25,11 +34,12 @@
 
 ## Source Files
 
+- `question-workflow/backups/2026-09-12/ADDING_QUESTIONS.md`
 - `question-workflow/backups/2026-09-12/CONVERSION_PROMPTS_MASTER.md`
 
 ## Audit Trail
 
-- EXTRACTED: 13 (100%)
+- EXTRACTED: 22 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

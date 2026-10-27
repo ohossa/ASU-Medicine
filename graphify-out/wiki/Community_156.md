@@ -1,0 +1,61 @@
+# Community 156
+
+> 43 nodes
+
+## Key Concepts
+
+- **Widgets** (21 connections) — `.agents/skills/apple-design/references/hig/widgets.md`
+- **Siri** (19 connections) — `.agents/skills/apple-design/references/hig/siri.md`
+- **Live Activities** (17 connections) — `.agents/skills/apple-design/references/hig/live-activities.md`
+- **App Shortcuts** (15 connections) — `.agents/skills/apple-design/references/hig/app-shortcuts.md`
+- **Controls** (15 connections) — `.agents/skills/apple-design/references/hig/controls.md`
+- **Snippets** (13 connections) — `.agents/skills/apple-design/references/hig/snippets.md`
+- **Best practices** (1 connections) — `.agents/skills/apple-design/references/hig/app-shortcuts.md`
+- **Change log** (1 connections) — `.agents/skills/apple-design/references/hig/app-shortcuts.md`
+- **Editorial guidelines** (1 connections) — `.agents/skills/apple-design/references/hig/app-shortcuts.md`
+- **Platform considerations** (1 connections) — `.agents/skills/apple-design/references/hig/app-shortcuts.md`
+- **Related guidelines** (1 connections) — `.agents/skills/apple-design/references/hig/app-shortcuts.md`
+- **Anatomy** (1 connections) — `.agents/skills/apple-design/references/hig/controls.md`
+- **Best practices** (1 connections) — `.agents/skills/apple-design/references/hig/controls.md`
+- **Camera experiences on a locked device** (1 connections) — `.agents/skills/apple-design/references/hig/controls.md`
+- **Change log** (1 connections) — `.agents/skills/apple-design/references/hig/controls.md`
+- **Platform considerations** (1 connections) — `.agents/skills/apple-design/references/hig/controls.md`
+- **Related guidelines** (1 connections) — `.agents/skills/apple-design/references/hig/controls.md`
+- **Anatomy** (1 connections) — `.agents/skills/apple-design/references/hig/live-activities.md`
+- **Best practices** (1 connections) — `.agents/skills/apple-design/references/hig/live-activities.md`
+- **CarPlay** (1 connections) — `.agents/skills/apple-design/references/hig/live-activities.md`
+- **Change log** (1 connections) — `.agents/skills/apple-design/references/hig/live-activities.md`
+- **Platform considerations** (1 connections) — `.agents/skills/apple-design/references/hig/live-activities.md`
+- **Presentation** (1 connections) — `.agents/skills/apple-design/references/hig/live-activities.md`
+- **Specifications** (1 connections) — `.agents/skills/apple-design/references/hig/live-activities.md`
+- **Best practices** (1 connections) — `.agents/skills/apple-design/references/hig/siri.md`
+- *... and 18 more nodes in this community*
+
+## Relationships
+
+- [Community 1](Community_1.md) (24 shared connections)
+- [Community 121](Community_121.md) (6 shared connections)
+- [Community 78](Community_78.md) (6 shared connections)
+- [Community 131](Community_131.md) (5 shared connections)
+- [Community 118](Community_118.md) (3 shared connections)
+- [Community 85](Community_85.md) (2 shared connections)
+- [Community 154](Community_154.md) (1 shared connections)
+
+## Source Files
+
+- `.agents/skills/apple-design/references/hig/app-shortcuts.md`
+- `.agents/skills/apple-design/references/hig/controls.md`
+- `.agents/skills/apple-design/references/hig/live-activities.md`
+- `.agents/skills/apple-design/references/hig/siri.md`
+- `.agents/skills/apple-design/references/hig/snippets.md`
+- `.agents/skills/apple-design/references/hig/widgets.md`
+
+## Audit Trail
+
+- EXTRACTED: 68 (74%)
+- INFERRED: 24 (26%)
+- AMBIGUOUS: 0 (0%)
+
+---
+
+*Part of the graphify knowledge wiki. See [index](index.md) to navigate.*

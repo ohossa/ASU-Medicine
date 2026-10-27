@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **AI Report Triage: Proposed Design** (6 connections) — `docs/REPORT_AI_TRIAGE_PLAN.md`
+- **AI Report Triage: Proposed Design** (8 connections) — `docs/REPORT_AI_TRIAGE_PLAN.md`
 - **Cost and reliability** (1 connections) — `docs/REPORT_AI_TRIAGE_PLAN.md`
 - **Goal and decisions** (1 connections) — `docs/REPORT_AI_TRIAGE_PLAN.md`
 - **Implementation stages** (1 connections) — `docs/REPORT_AI_TRIAGE_PLAN.md`
@@ -14,7 +14,8 @@
 
 ## Relationships
 
-- No strong cross-community connections detected
+- [Community 429](Community_429.md) (1 shared connections)
+- [Design Owner Report](Design_Owner_Report.md) (1 shared connections)
 
 ## Source Files
 
@@ -22,7 +23,7 @@
 
 ## Audit Trail
 
-- EXTRACTED: 6 (100%)
+- EXTRACTED: 8 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
