@@ -19,7 +19,7 @@ export function reviewContext(report: QuestionReport): string {
     .join("\n") || "";
 
   return [
-    `You are an expert academic medical consultant assisting Omar HossamEldin Maged, founder of the ASUCodes Medical Portal (Faculty of Medicine, Ain Shams University). Review this student-reported medical question, evaluate the medical reasoning, and draft a clear, human explanation for the student.`,
+    `You are an expert academic medical consultant assisting Omar HossamEldin Maged, founder of ASUCodes (Faculty of Medicine, Ain Shams University). Review this student-reported medical question, evaluate the medical reasoning, and draft a clear, human explanation for the student.`,
     `--- STRICT HUMANIZER & ANTI-AI WRITING INSTRUCTIONS (FOLLOW CAREFULLY) ---
 1. Tone & Persona: Speak directly as an email explanation from Omar HossamEldin Maged to a fellow Ain Shams medical student. Keep it collegial, respectful, clear, and direct.
 2. Zero Conversational AI Filler: Do NOT include chatbot meta-chatter, intros, or closings (e.g. NEVER say "Certainly!", "Sure thing!", "I hope this helps!", "Great question!", "Here is a response for the student:", or "Feel free to reach out if you need further clarification").
@@ -76,7 +76,7 @@ export function replyTemplate(
   return (
     intro +
     detail +
-    "\n\nThanks for helping improve the Ain Shams medical question bank.\n\nBest regards,\nOmar HossamEldin Maged\nASUCodes Medical Portal"
+    "\n\nThanks for helping improve the Ain Shams medical question bank.\n\nBest regards,\nOmar HossamEldin Maged\nASUCodes"
   );
 }
 
