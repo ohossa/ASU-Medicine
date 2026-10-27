@@ -1,13 +1,13 @@
 import { useState } from "react";
-import { Mail, Copy, Check, ExternalLink, X, Send } from "lucide-react";
+import { Mail, Copy, Check, ExternalLink, X, Send, Award, HeartHandshake } from "lucide-react";
 
 export interface StudentEmailReplyModalProps {
   isOpen: boolean;
   onClose: () => void;
   studentEmail: string;
   studentName?: string;
-  moduleCode: string;
-  questionId: string;
+  moduleCode?: string;
+  questionId?: string;
   reportedCategory?: string;
   reportExplanation?: string;
 }
@@ -19,27 +19,46 @@ export function StudentEmailReplyModal({
   studentName = "Student",
   moduleCode,
   questionId,
-  reportedCategory = "Question error",
+  reportedCategory = "Question feedback",
   reportExplanation = "",
 }: StudentEmailReplyModalProps) {
   if (!isOpen) return null;
 
-  const defaultSubject = `[ASUCodes] Follow-up on your report for ${moduleCode} (Q#${questionId})`;
+  const isQuestionReport = Boolean(questionId);
 
-  const templates = [
-    {
-      title: "Question Corrected & Verified",
-      body: `Dear ${studentName},\n\nThank you for taking the time to report an issue with Question #${questionId} in ${moduleCode}.\n\nOur faculty review has verified your feedback, and the question text / answer key has now been updated on the live website.\n\nThank you for helping us maintain the highest standard of academic accuracy.\n\nBest regards,\nOmar H. Maged\nASUCodes Medical Portal`,
-    },
-    {
-      title: "Explanation Clarification",
-      body: `Dear ${studentName},\n\nThank you for reaching out regarding Question #${questionId} in ${moduleCode}.\n\nWe carefully reviewed the curriculum textbooks and lecture references for this topic. We have enriched the detailed explanation on the platform to clarify this clinical concept.\n\nKeep up the great work with your studies!\n\nBest regards,\nOmar H. Maged\nASUCodes Medical Portal`,
-    },
-    {
-      title: "Curriculum Source Grounding",
-      body: `Dear ${studentName},\n\nRegarding your note on Question #${questionId} in ${moduleCode}:\n\nThis question aligns directly with the official Ain Shams University department lecture notes and past exam key. We have added extra reference notes to help clarify the distinction.\n\nWarm regards,\nOmar H. Maged\nASUCodes Medical Portal`,
-    },
-  ];
+  const defaultSubject = isQuestionReport
+    ? `[ASUCodes] Follow-up on your report for ${moduleCode || "Question Bank"} (Q#${questionId})`
+    : `[ASUCodes] Academic Guidance & Performance · Ain Shams Medicine`;
+
+  const templates = isQuestionReport
+    ? [
+        {
+          title: "Question Corrected & Verified",
+          body: `Dear ${studentName},\n\nThank you for taking the time to report an issue with Question #${questionId} in ${moduleCode || "your module"}.\n\nOur faculty review has verified your feedback, and the question text / answer key has now been updated on the live website.\n\nThank you for helping us maintain the highest standard of academic accuracy.\n\nBest regards,\nOmar H. Maged\nASUCodes Medical Portal`,
+        },
+        {
+          title: "Explanation Clarification",
+          body: `Dear ${studentName},\n\nThank you for reaching out regarding Question #${questionId} in ${moduleCode || "your module"}.\n\nWe carefully reviewed the curriculum textbooks and lecture references for this topic. We have enriched the detailed explanation on the platform to clarify this clinical concept.\n\nKeep up the great work with your studies!\n\nBest regards,\nOmar H. Maged\nASUCodes Medical Portal`,
+        },
+        {
+          title: "Curriculum Source Grounding",
+          body: `Dear ${studentName},\n\nRegarding your note on Question #${questionId} in ${moduleCode || "your module"}:\n\nThis question aligns directly with the official Ain Shams University department lecture notes and past exam key. We have added extra reference notes to help clarify the distinction.\n\nWarm regards,\nOmar H. Maged\nASUCodes Medical Portal`,
+        },
+      ]
+    : [
+        {
+          title: "Academic Recognition (Top Performer)",
+          body: `Dear ${studentName},\n\nCongratulations on your outstanding performance on the ASUCodes medical platform! Your high consistency, accuracy, and study streak place you among the top performers on the portal.\n\nWe are proud of your dedication and wish you continued excellence in your Ain Shams medical studies.\n\nWarm regards,\nOmar H. Maged\nASUCodes Medical Portal`,
+        },
+        {
+          title: "Study Guidance & Module Support",
+          body: `Dear ${studentName},\n\nWe noticed your active practice and dedication across your medical question banks on ASUCodes.\n\nIf you ever need additional high-yield explanations, faculty references, or past exam question walk-throughs for any specific topics, feel free to reply directly to this email.\n\nBest of luck with your continuous assessments!\n\nBest regards,\nOmar H. Maged\nASUCodes Medical Portal`,
+        },
+        {
+          title: "Faculty Feedback & Inquiries",
+          body: `Dear ${studentName},\n\nThank you for being an active learner on the ASUCodes Medical Portal.\n\nWe are constantly improving the platform to best support your studies at Ain Shams University Faculty of Medicine. Please let us know if there is anything we can do to further enhance your preparation.\n\nWarm regards,\nOmar H. Maged\nASUCodes Medical Portal`,
+        },
+      ];
 
   const [selectedTemplate, setSelectedTemplate] = useState(0);
   const [subject, setSubject] = useState(defaultSubject);
@@ -76,15 +95,15 @@ export function StudentEmailReplyModal({
         <div className="flex items-center justify-between pb-3 border-b border-stone-100 dark:border-stone-800">
           <div className="flex items-center gap-2.5">
             <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-teal-500/10 text-teal-600 dark:text-teal-400">
-              <Mail size={16} />
+              {isQuestionReport ? <Mail size={16} /> : <Award size={16} />}
             </span>
             <div>
               <h2 id="reply-modal-title" className="text-base font-semibold text-stone-900 dark:text-stone-100">
-                Direct Email Reply
+                {isQuestionReport ? "Direct Student Reply" : "Personal Student Outreach"}
               </h2>
               <p className="text-xs text-stone-500 dark:text-stone-400">
                 To: <span className="font-medium text-stone-700 dark:text-stone-300">{studentEmail}</span>
-                {reportedCategory ? ` · ${reportedCategory}` : ""}
+                {reportedCategory && isQuestionReport ? ` · ${reportedCategory}` : ""}
               </p>
             </div>
           </div>
@@ -98,7 +117,7 @@ export function StudentEmailReplyModal({
           </button>
         </div>
 
-        {reportExplanation && (
+        {reportExplanation && isQuestionReport && (
           <div className="mt-3 rounded-xl bg-stone-50 p-2.5 text-xs text-stone-600 dark:bg-stone-800/40 dark:text-stone-300 border border-stone-100 dark:border-stone-800">
             <span className="font-semibold text-stone-700 dark:text-stone-200">Student's report note:</span> {reportExplanation}
           </div>
@@ -106,7 +125,8 @@ export function StudentEmailReplyModal({
 
         {/* Template Pills */}
         <div className="mt-4">
-          <span className="block text-xs font-semibold uppercase tracking-wider text-stone-500 dark:text-stone-400 mb-2">
+          <span className="block text-xs font-semibold uppercase tracking-wider text-stone-500 dark:text-stone-400 mb-2 flex items-center gap-1.5">
+            <HeartHandshake size={13} className="text-teal-600" />
             Quick Response Templates
           </span>
           <div className="flex flex-wrap gap-1.5">

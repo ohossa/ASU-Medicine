@@ -220,7 +220,33 @@ Governed by [`QUESTION_IMPORT_WORKFLOW.md`](file:///Users/omarhossa/Documents/Me
 
 ---
 
-## 5. Verification, Release & Development Rules for AI Agents
+## 6. Admin Command Center, Analytics & Master Leaderboard Subsystems
+
+The ASU Medical Portal features a private command center located at `/admin` and `/admin/analytics`, built strictly for portal administrator `omarhmaged@gmail.com`.
+
+### 6.1 Security & Authentication Architecture
+- **Cryptographic Owner Verification:** Enforced at both the edge API handler (`api/admin-analytics.ts`) and backend service layer (`server/admin-analytics-service.ts`). Calls verify Clerk JWT tokens and ensure verified ownership matches `omarhmaged@gmail.com`. Unauthorized requests fail immediately with HTTP 401/403.
+- **Private Cache Policies:** All analytics endpoints emit `Cache-Control: private, no-store` and `X-Content-Type-Options: nosniff`.
+
+### 6.2 Real-Time Online Presence Engine
+- **Heartbeat Tracking:** Powered by Redis sorted set `asu_presence:v1:heartbeat` scoring user active timestamps.
+- **5-Minute Rolling Window:** Clients emit periodic 60-second heartbeats (`usePresence.ts`) with current active module metadata. Users inactive for $> 5$ minutes automatically age out of the active set.
+
+### 6.3 Admin Master Leaderboard & Student Search
+- **Universal Cohort Visibility:** Unlike student-facing leaderboards that display opted-in aliases, the Admin Master Leaderboard displays **all registered accounts** with real student names, emails, academic cohort years, and Clerk user IDs.
+- **Dynamic Multi-Metric Ranking:** Dynamically re-ranks the entire cohort in real time by:
+  1. `Total XP` (Default)
+  2. `Questions Solved`
+  3. `Accuracy %`
+  4. `Study Hours`
+  5. `Study Streak`
+- **Top-3 Podium Showcase:** Prominently highlights the #1 Gold Champion (`🥇`), #2 Silver Contender (`🥈`), and #3 Bronze Achiever (`🥉`) in an Olympic-style podium layout with custom glassmorphism borders and dynamic metric badges.
+- **In-Place Deep Inspection:** Each student card expands in-place to reveal individual performance metrics across all attempted modules, highlighting weakest subject areas.
+- **1-Click Student Outreach:** Integrated with `StudentEmailReplyModal` providing tailored email templates for *Academic Recognition (Top Performer)*, *Study Guidance & Module Support*, and *Faculty Inquiries*.
+
+### 6.4 Human-First Question Studio & On-The-Spot Editor
+- **Direct Human Review:** Replaced automated AI pre-triage with clean, unhindered faculty review workflows.
+- **Inline Editing:** Administrators can edit question stems, choices, designated correct answer indices, and detailed clinical explanations directly within the analytics reports without reloading question banks.
 
 Whenever an agent makes modifications to this codebase, they **MUST** obey the following iron rules:
 
