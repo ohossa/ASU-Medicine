@@ -166,13 +166,14 @@ function ReportDialog({
           escapeDeactivates: false,
           clickOutsideDeactivates: false,
           fallbackFocus: () => dialogRef.current!,
+          initialFocus: sent ? ".report-success-btn" : undefined,
           tabbableOptions: { displayCheck: "none" },
         }}
       >
         <section
           ref={dialogRef}
           tabIndex={-1}
-          className="report-dialog"
+          className={`report-dialog ${sent ? "report-dialog--success" : ""}`}
           role="dialog"
           aria-modal="true"
           aria-labelledby={titleId}
@@ -198,7 +199,7 @@ function ReportDialog({
           {sent ? (
             <div className="report-success" role="status">
               <span className="report-success-icon">
-                <Check size={24} />
+                <Check size={28} strokeWidth={2.5} />
               </span>
               <h2 id={titleId}>
                 {ar ? "تم استلام البلاغ" : "Report received"}
@@ -208,7 +209,7 @@ function ReportDialog({
                   ? "شكراً لمساعدتنا في تحسين الأسئلة. تم حفظ بلاغك للمراجعة."
                   : "Thank you for helping improve the question bank. Your report has been saved for review."}
               </p>
-              <StudyButton onClick={onClose}>
+              <StudyButton onClick={onClose} className="report-success-btn">
                 {ar ? "العودة للسؤال" : "Back to question"}
               </StudyButton>
             </div>

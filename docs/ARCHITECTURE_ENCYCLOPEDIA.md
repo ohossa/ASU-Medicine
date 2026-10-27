@@ -143,7 +143,7 @@ Governed by [`QUESTION_IMPORT_WORKFLOW.md`](file:///Users/omarhossa/Documents/Me
 - **Verified Student Email System & Structural Humanizer ([`ReportReplyComposer.tsx`](file:///Users/omarhossa/Documents/Medcine%20ASU/ASU-Medical-Portal/src/pages/ReportReplyComposer.tsx)):**
   - Integrated in-portal email delivery system communicating directly with students via Resend and verified institutional relays.
   - **Context-Rich Templates:** Automatically embeds the original question text, all options (with designated answer), explanation, and student report notes so students have complete context even months after reporting.
-  - **Full Founder Attribution:** Official signature and communication attributed to founder **Omar HossamEldin Maged** (`ASUCodes Medical Portal`).
+  - **Full Founder Attribution:** Official signature and communication attributed to founder **Omar HossamEldin Maged** (`ASUCodes`).
   - **AI Chat Importer & Structural Humanizer ([`review-context.ts`](file:///Users/omarhossa/Documents/Medcine%20ASU/ASU-Medical-Portal/src/app/reports/review-context.ts)):**
     - "Copy Review Context" prompt contains embedded `/structural-humanizer` and anti-AI instructions for ChatGPT/Claude/Gemini to draft pure medical explanations without chatbot filler or slop.
     - Dedicated "Paste AI Explanation / Chat" panel cleans em dashes, curly quotes, sycophancy, and AI buzzwords, then automatically replaces draft placeholders.

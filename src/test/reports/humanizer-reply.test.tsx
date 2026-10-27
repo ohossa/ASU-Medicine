@@ -61,7 +61,7 @@ describe("reviewContext Prompt with Structural Humanizer Instructions", () => {
 
     // Identifies Omar HossamEldin Maged & Ain Shams Medicine
     expect(prompt).toContain("Omar HossamEldin Maged");
-    expect(prompt).toContain("ASUCodes Medical Portal");
+    expect(prompt).toContain("ASUCodes");
     expect(prompt).toContain("Faculty of Medicine, Ain Shams University");
 
     // Structural-humanizer and anti-AI instructions
