@@ -1,0 +1,18 @@
+Starting ASU Portal v2 Bulk Import Pipeline... 
+Found 1 batch(es) to import.
+
+Processing: P4-3-ethics-20261011.json
+  Backed up target to data-format-v2/backups/year-3/semester-1/P4-3/P4-3_20261011183307.json
+  Successfully merged questions to target: src/imports/year-3/semester-1/P4-3.json
+  Report written to data-format-v2/question-intake/year-3/semester-1/P4-3/_reports/P4-3_report_20261011183307.import-report.json
+  Moved batch file to _imported/
+
+Updated data-format-v2/import-manifest.json
+
+======================================= IMPORT SUMMARY =======================================
+┌─────────┬────────┬───────┬────────────┬────────────────────┬──────────────┬───────────┐
+│ (index) │ module │ added │ skippedDup │ removedExistingDup │ reviewNeeded │ status    │
+├─────────┼────────┼───────┼────────────┼────────────────────┼──────────────┼───────────┤
+│ 0       │ 'P4-3' │ 47    │ 0          │ 0                  │ 0            │ 'SUCCESS' │
+└─────────┴────────┴───────┴────────────┴────────────────────┴──────────────┴───────────┘
+==============================================================================================

@@ -1,0 +1,11 @@
+Apple design application: shared website topic navigation and quiz controls
+
+Audience: Ain Shams medical students on phones, tablets and desktop browsers. React web translation of the requested local apple-design skill. Thesis: a student sees the actual study topic and its quiz size before beginning.
+
+Implemented: direct chapter → topic navigation; semantic light/dark colors; restrained text hierarchy; visible keyboard focus; 44 px sound/back controls; icon-only sound with accessible action/state; responsive topic rows; reduced motion/transparency supported by shared stylesheet. No subject colour-guide box. Repository policy applies these rules to future website edits.
+
+Guidelines consulted: buttons.md › Content, “Ensure that each button clearly communicates its purpose.”; dark-mode.md › Dark Mode colors, “Aim for sufficient color contrast in all appearances.”; motion.md › Best practices, “Add motion purposefully, supporting the experience without overshadowing it.” Also layout, accessibility, typography, color, collections, icons, cross-platform and phone/desktop design references.
+
+Measured CSS tokens: light topic title #0 d 0 f 1 a on #ffffff 19.08:1; metadata #6 b 7280 on white 4.83:1. Hover/pressed metadata uses primary text color because muted text on secondary/pressed backgrounds fell below 4.5:1. Dark title #eef 0 f 8 on #14172415.67:1; metadata #868 cba 5.50:1 (secondary 4.97, pressed 4.60). Focus uses existing shared high-contrast outline. Topic title 17 px, metadata 13 px; counts are supplementary, topic names carry hierarchy. No decorative topic animation.
+
+Limits: not an exhaustive accessibility certification or redesign of every existing website page. Browser verification records actual responsive layout and quiz sound state separately. Existing brand fonts, authentication, data and unrelated local UI work are preserved.

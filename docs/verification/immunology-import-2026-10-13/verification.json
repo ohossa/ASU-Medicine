@@ -1,0 +1,31 @@
+{
+  "bank_sha256": "ea138bdbff0c2b73cc727af62d30d2810ab70529d6357158a2654e042ac778c4",
+  "publication": "Local integration only; not committed, pushed or deployed",
+  "tests": {
+    "files": 123,
+    "passed": 708,
+    "log": "final-tests.log"
+  },
+  "build": {
+    "passed": true,
+    "strict_app_node_api_typescript": true,
+    "pwa": true,
+    "warning": "Existing chunk-size warning"
+  },
+  "conservation": "924 occurrences; 735 accepted = 640 unique + 95 duplicate copies; 189 held; 421 physical pages; source hashes unchanged",
+  "ui": {
+    "empty_exam_rule": "All modules and modes use actual question presence. GIT and Question Search covered; stale selections recover; populated exams stay first.",
+    "browser": "Immunology essay: 13 chapters, 37 questions, zero Past Exams regions. MCQ: 603 questions, populated Past Exams first with 15 questions. Responsive flows inspected at 360/390/768/1024/1440 widths.",
+    "feedback": "Committed case parts announce and provide feedback individually; typing drafts and restored answers do not replay feedback. Standalone incorrect essay directs review of model answer.",
+    "limits": "Local bundled bank tested. Live correction API unavailable. No live cloud persistence or device-audio claim."
+  },
+  "review": "Nonblind Codex medical reviews; no independent clinician adjudication. Final code review zero open findings.",
+  "shared_integration": {
+    "targeted_test_files": 8,
+    "tests_passed": 34,
+    "git_diff_check": "passed",
+    "unrelated_existing_files_preserved": 2260,
+    "other_manifest_entries_unchanged": true,
+    "strict_app_node_api_typecheck": "passed"
+  }
+}

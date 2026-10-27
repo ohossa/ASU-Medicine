@@ -186,11 +186,11 @@ export default function SupportPage() {
             <footer>
               <span className="support-owner-avatar">O</span>
               <div>
-                <strong>{t("Omar", "عمر")}</strong>
+                <strong>{t("Omar HossamEldin Maged", "عمر حسام الدين ماجد")}</strong>
                 <span>
                   {t(
-                    "Medical student. Creator of ASUCodes.",
-                    "طالب طب، ومطور ASUCodes.",
+                    "3rd Year medical student. Creator of ASUCodes.",
+                    "طالب طب بالفرقة الثالثة، ومطور ASUCodes.",
                   )}
                 </span>
               </div>
@@ -490,7 +490,14 @@ export default function SupportPage() {
               "ASUCodes مشروع طلابي مستقل. الاستخدام مجاني دائماً.",
             )}
           </p>
-          <a href="/">
+          <nav className="support-footer-legal" aria-label={t("Legal documents", "المستندات القانونية")}>
+            <a href="/terms">{t("Terms of Service", "شروط الاستخدام")}</a>
+            <span aria-hidden="true">•</span>
+            <a href="/privacy">{t("Privacy Policy", "سياسة الخصوصية")}</a>
+            <span aria-hidden="true">•</span>
+            <a href="/disclaimer">{t("Medical Disclaimer", "إخلاء المسؤولية الطبية")}</a>
+          </nav>
+          <a href="/" className="support-footer-back">
             {t("Back to studying", "العودة للمذاكرة")}
             <ArrowLeft size={16} />
           </a>

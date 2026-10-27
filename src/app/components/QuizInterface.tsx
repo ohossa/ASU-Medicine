@@ -247,46 +247,49 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
     }
   }, [answered, isCorrect, question, playSound, current]);
 
-  /* Case sub-question self-grading feedback */
-  const lastCaseSubGrades = useRef<Record<string, string>>(
+  /* Feedback belongs to the committed case part, never an incomplete parent. */
+  const lastCaseSubAnswers = useRef<Record<string, string>>(
     (() => {
-      const grades: Record<string, string> = {};
-      if (savedSession?.answers) {
-        Object.entries(savedSession.answers).forEach(([indexStr, val]) => {
-          const index = Number(indexStr);
-          if (val && typeof val === 'object') {
-            Object.entries(val).forEach(([subKey, subVal]) => {
-              if (subVal && typeof subVal === 'object' && 'selfGrade' in subVal) {
-                grades[`${index}-${subKey}`] = subVal.selfGrade as string;
-              }
-            });
-          }
-        });
+      const values: Record<string, string> = {};
+      for (const [index, saved] of Object.entries(savedSession?.answers ?? {})) {
+        const savedQuestion = questions[Number(index)];
+        const parts = asCaseAnswer(saved);
+        for (const child of savedQuestion?.subQuestions ?? []) {
+          const value = committedAnswerValue(child, parts?.[child.id]);
+          if (value !== undefined) values[`${index}-${child.id}`] = JSON.stringify(value);
+        }
       }
-      return grades;
+      return values;
     })()
   );
   useEffect(() => {
     if (!question || (question.type !== 'case' && question.type !== 'casestudy')) return;
-    const curr = answers[current] as Record<string, unknown> | undefined;
-    if (!curr) return;
-    for (const sq of (question.subQuestions ?? [])) {
-      const sub = curr[sq.id] as Record<string, unknown> | undefined;
-      const key = `${current}-${sq.id}`;
-      const prevGrade = lastCaseSubGrades.current[key];
-      const currGrade = sub?.selfGrade as string | undefined;
-      if (currGrade !== undefined && currGrade !== prevGrade) {
-        lastCaseSubGrades.current[key] = currGrade;
-        if (currGrade === 'correct') {
-          fx.correct(0.5, 0.5, 0.5);
-          playSound('correct');
-        } else {
-          fx.wrong(0.5, 0.5);
-          playSound('wrong');
-        }
+    const parts = asCaseAnswer(answers[current]);
+    for (const [childIndex, child] of (question.subQuestions ?? []).entries()) {
+      const value = committedAnswerValue(child, parts?.[child.id]);
+      if (value === undefined) continue;
+      const key = `${current}-${child.id}`;
+      const signature = JSON.stringify(value);
+      if (lastCaseSubAnswers.current[key] === signature) continue;
+      lastCaseSubAnswers.current[key] = signature;
+      const correct = checkAnswerCorrect(child, value);
+      if (correct) {
+        fx.correct(0.5, 0.5, 0.5);
+        playSound('correct');
+      } else {
+        fx.wrong(0.5, 0.5);
+        playSound('wrong');
       }
+      const reference = child.type === 'mcq'
+        ? child.options?.[child.correctIndex ?? -1]
+        : child.type === 'fillblank' ? child.blanks?.join(', ') : child.modelAnswer;
+      const lang = language === 'ar' ? 'ar' : 'en';
+      const partLabel = `${lang === 'ar' ? 'السؤال' : 'Question'} ${current + 1}, ${lang === 'ar' ? 'الجزء' : 'part'} ${childIndex + 1}. `;
+      setAnnouncement(partLabel + (correct
+        ? `${lang === 'ar' ? 'صحيح' : 'Correct'}. ${child.explanation?.slice(0, 80) || ''}`
+        : `${lang === 'ar' ? 'خاطئ' : 'Incorrect'}. ${lang === 'ar' ? 'الإجابة الصحيحة كانت' : 'The correct answer was'} ${reference || ''}`));
     }
-  }, [answers, current, question, playSound]);
+  }, [answers, current, question, playSound, language]);
 
   /* Auto-save quiz session (debounced 2s after last change) — essayDrafts stored separately via saveLocalDrafts */
   const quizDataRef = useRef({ current: 0, answers: {} as Record<number, QuizAnswer>, elapsedSeconds: 0, flagged: [] as number[], finished: false, timerMode: 'practice' as TimerMode, showEssayAnswer: false });
@@ -378,17 +381,17 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
 
   /* aria-live announcement on answer reveal */
   useLayoutEffect(() => {
-    if (!answered || !question) return;
+    if (!answered || !question || question.type === 'case' || question.type === 'casestudy') return;
     const lang = language === 'ar' ? 'ar' : 'en';
     const answerIsCorrect = question.type === 'essay'
       ? asEssayAnswer(answers[current])?.selfGrade === 'correct'
-      : question.type === 'case' || question.type === 'casestudy'
-        ? getQuestionStatus(question, answers[current]) === 'correct'
-        : checkAnswerCorrect(question, answers[current]);
+      : checkAnswerCorrect(question, answers[current]);
     const correctLabel = question.options?.[question.correctIndex ?? -1] ?? '';
     const msg = answerIsCorrect
       ? `${lang === 'ar' ? 'صحيح' : 'Correct'}. ${question.explanation?.slice(0, 80) || ''}`
-      : `${lang === 'ar' ? 'خاطئ' : 'Incorrect'}. ${lang === 'ar' ? 'الإجابة الصحيحة كانت' : 'The correct answer was'} ${correctLabel}`;
+      : question.type === 'essay'
+        ? `${lang === 'ar' ? 'خاطئ. راجع الإجابة النموذجية.' : 'Incorrect. Review the model answer.'}`
+        : `${lang === 'ar' ? 'خاطئ' : 'Incorrect'}. ${lang === 'ar' ? 'الإجابة الصحيحة كانت' : 'The correct answer was'} ${correctLabel}`;
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setAnnouncement(msg);
   }, [answered, current, question, answers, language]);
@@ -468,10 +471,33 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
       if ((tag === 'BUTTON' || tag === 'A') && (e.key === 'Enter' || e.key === ' ')) return;
       if (tag === 'INPUT' || tag === 'TEXTAREA' || tag === 'SELECT') return;
 
+      const isTF = question?.type === 'truefalse';
+      const keyLower = e.key.toLowerCase();
+      const isShift = e.shiftKey;
+
       if (e.key === 'ArrowRight') handleGoTo(isRTL ? current - 1 : current + 1);
       else if (e.key === 'ArrowLeft') handleGoTo(isRTL ? current + 1 : current - 1);
-      else if (e.key.toLowerCase() === 'f') toggleFlag();
-      else if (e.key.toLowerCase() === 'g') toggleGrid();
+      else if (isShift && keyLower === 'f') {
+        toggleFlag();
+      }
+      else if (keyLower === 'f') {
+        if (isTF && answers[current] === undefined) {
+          setAnswer(false);
+        } else {
+          toggleFlag();
+        }
+      }
+      else if (isTF && (keyLower === 't' || e.key === '1' || e.key === '\u0661')) {
+        if (answers[current] === undefined) {
+          setAnswer(true);
+        }
+      }
+      else if (isTF && (e.key === '2' || e.key === '\u0662')) {
+        if (answers[current] === undefined) {
+          setAnswer(false);
+        }
+      }
+      else if (keyLower === 'g') toggleGrid();
       else if (e.key === 'Enter' && question) {
         if (question.type === 'essay' && asEssayAnswer(answers[current])?.selfGrade === undefined && !showEssayAnswer) {
           setShowEssayAnswer(true);
@@ -654,13 +680,13 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
     return (
       <div className="grid grid-cols-2 gap-3">
         {[
-          { label: 'True', val: true, icon: <Check size={20} /> },
-          { label: 'False', val: false, icon: <X size={20} /> }
-        ].map(({ label, val, icon }) => {
+          { label: 'True', val: true, icon: <Check size={20} />, keyHint: 'T / 1' },
+          { label: 'False', val: false, icon: <X size={20} />, keyHint: 'F / 2' }
+        ].map(({ label, val, icon, keyHint }) => {
           const selected = selectedIndex === (val ? 0 : 1);
           const isCorrect = val === (question.correctIndex === 0);
 
-          let btnClass = 'flex flex-col items-center gap-2 rounded-2xl border py-6 transition-all duration-200 btn-press ';
+          let btnClass = 'flex flex-col items-center justify-center gap-2 rounded-2xl border py-6 min-h-[96px] transition-all duration-200 btn-press ';
 
           if (!hasAnswered) {
             btnClass += 'border-gray-200 dark:border-white/[0.07] bg-gray-50/50 dark:bg-white/[0.025] text-gray-700 dark:text-white/60 hover:bg-gray-100 dark:hover:bg-white/[0.06]';
@@ -675,13 +701,21 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
           return (
             <motion.button
               key={label}
+              aria-label={label}
               disabled={hasAnswered}
               whileTap={hasAnswered ? undefined : { scale: 0.97 }}
               onClick={() => onChange(val)}
               className={btnClass}
             >
               {icon}
-              <span className="text-sm font-medium">{label}</span>
+              <div className="flex items-center gap-1.5">
+                <span className="text-sm font-semibold">{label}</span>
+                {!hasAnswered && (
+                  <kbd aria-hidden="true" className="hidden sm:inline-flex items-center rounded border border-gray-200 dark:border-white/10 bg-gray-100/80 dark:bg-white/[0.06] px-1.5 py-0.5 font-mono text-[10px] text-gray-500 dark:text-white/40">
+                    {keyHint}
+                  </kbd>
+                )}
+              </div>
             </motion.button>
           );
         })}
@@ -1282,7 +1316,15 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
               className="fixed end-4 top-16 z-40 w-64 rounded-xl border border-gray-200 dark:border-white/[0.08] bg-white/95 dark:bg-[#161618]/95 p-4 text-xs shadow-2xl backdrop-blur-xl text-gray-800 dark:text-white"
             >
               <div className="mb-2 flex items-center justify-between gap-2"><p id="quiz-shortcuts-title" className="font-semibold text-gray-900 dark:text-white/80">Keyboard shortcuts</p><button ref={shortcutsCloseRef} type="button" onClick={toggleShortcuts} aria-label="Close keyboard shortcuts" className="flex h-11 w-11 items-center justify-center rounded-full hover:bg-secondary"><X size={16} aria-hidden="true"/></button></div>
-              {[['← →', 'Navigate questions'], ['1–9', 'Select MCQ / True-False option'], ['Enter', 'Reveal essay answer'], ['1 / 2', 'Correct / Wrong (essay)'], ['F', 'Flag question'], ['G', 'Toggle grid']].map(([k, d]) => (
+              {[
+                ['← →', 'Navigate questions'],
+                ['1–9', 'Select MCQ option'],
+                ['T / F or 1 / 2', 'Select True / False'],
+                ['F / Shift+F', 'Flag question'],
+                ['Enter', 'Reveal essay answer'],
+                ['1 / 2', 'Correct / Wrong (essay)'],
+                ['G', 'Toggle grid']
+              ].map(([k, d]) => (
                 <div key={k} className="flex items-center justify-between py-1 text-gray-500 dark:text-white/50">
                   <span>{d}</span>
                   <kbd className="rounded border border-gray-200 dark:border-white/15 bg-gray-100 dark:bg-white/[0.06] px-1.5 py-0.5 font-mono text-[10px] text-gray-700 dark:text-white/70">{k}</kbd>
@@ -1291,9 +1333,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
               <TimerSettingsPanel
                 mode={timerMode}
                 urgency={timerUrgency}
-                muted={muted}
                 onChangeMode={setTimerMode}
-                onToggleMute={toggleMute}
               />
             </motion.div>
         )}
@@ -1386,8 +1426,11 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
                 )}
               </div>
               <button
+                type="button"
                 onClick={toggleFlag}
-                className={`flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-xs transition-colors btn-press ${
+                aria-pressed={flagged.has(current)}
+                aria-label={flagged.has(current) ? 'Flagged question' : 'Flag question'}
+                className={`flex min-h-[44px] items-center gap-1.5 rounded-full border px-3 py-1.5 text-xs transition-colors btn-press ${
                   flagged.has(current)
                     ? 'border-amber-500/40 bg-amber-500/10 text-amber-300'
                     : 'border-gray-200 dark:border-white/[0.08] bg-gray-50 dark:bg-white/[0.03] text-gray-500 dark:text-white/45 hover:bg-gray-100 dark:hover:bg-white/[0.07]'
@@ -1492,7 +1535,7 @@ export function QuizInterface({ chapter, subject, questions, onBack, onFinish, u
               <h3 className="text-lg font-semibold">Submit attempt?</h3>
               <p className="mt-2 text-sm text-gray-500 dark:text-white/50">
                 You answered <span className="font-medium text-gray-900 dark:text-white tabular-nums">{answeredCount}</span> of{' '}
-                <span className="tabular-nums">{total}</span> questions
+                <span className="tabular-nums">{total}</span> {total===1?'question':'questions'}
                 {flagged.size > 0 && (
                   <> · <span className="text-amber-500 dark:text-amber-400 tabular-nums">{flagged.size} flagged</span></>
                 )}

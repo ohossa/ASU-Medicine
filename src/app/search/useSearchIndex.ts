@@ -20,6 +20,7 @@ export function useSearchIndex(
     [indexing, setIndexing] = useState(false),
     [searching, setSearching] = useState(false),
     [error, setError] = useState("");
+  const [indexedSources, setIndexedSources] = useState<SearchSource[] | null>(null);
   const worker = useRef<Worker | null>(null),
     sequence = useRef(0),
     currentEntries = useRef(entries);
@@ -28,12 +29,14 @@ export function useSearchIndex(
     let live = true;
     sequence.current++;
     setError("");
+    setIndexedSources(null);
     setEntries([]);
     setResults([]);
     setIndexing(enabled);
     if (!enabled) return;
     if (typeof Worker === "undefined") {
       setEntries(buildSearchEntries(sources));
+      setIndexedSources(sources);
       setIndexing(false);
       return;
     }
@@ -53,6 +56,7 @@ export function useSearchIndex(
       const m = e.data;
       if (m.kind === "index") {
         setEntries(m.entries);
+        setIndexedSources(sources);
         setIndexing(false);
       } else if (m.kind === "query" && m.sequence === sequence.current) {
         setResults(
@@ -102,5 +106,5 @@ export function useSearchIndex(
       setSearching(false);
     }
   }, [entries, indexing, enabled, query, filters, flagged, missed, attempted]);
-  return { entries, results, indexing, searching, error };
+  return { entries, results, indexing, searching, error, indexedSources };
 }

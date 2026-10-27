@@ -25,6 +25,7 @@ Run from the repository after inspecting current code, runner availability and t
 ```sh
 npx tsx data-format-v2/scripts/import-ready.ts --dry-run --strict
 npx tsx data-format-v2/scripts/validate-banks.ts
+npx vitest run src/app/git-assessment2-intake.test.ts src/app/git-ca2-intake.test.ts src/app/git-bank.integration.test.ts
 npm test
 npm run build
 ```
@@ -36,3 +37,5 @@ Verify actual routes, preserved fields, duplicate handling and every `needsRevie
 Successful local import/build is not deployment. The final stage confirms that the intended release is live and affected question routes, types, answers, explanations and visuals work. If access or checks are blocked, report the exact pending stage.
 
 See [question-workflow/README.md](./question-workflow/README.md) for preserved original Pulse prompts and instruction backups.
+
+For complete repository intake safeguards, use [QUESTION_IMPORT_WORKFLOW.md](./QUESTION_IMPORT_WORKFLOW.md). For chapter/subject/topic navigation, Apple design, topic sessions and production checks, use [WEBSITE_UI_WORKFLOW.md](./WEBSITE_UI_WORKFLOW.md). Organization changes preserve accepted question payloads and learning identities; image-dependent questions remain excluded under the current policy.

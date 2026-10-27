@@ -1,0 +1,47 @@
+{
+  "reviewed_at": "2026-10-13T00:30:34.427651+00:00",
+  "initial_report": "final-study-flow-independent-review.json",
+  "scope": "Read-only confirmation of four reported target-size corrections. No code edits, tests, browser, full suite or build performed.",
+  "resolved": [
+    {
+      "id": "UI-FINAL-01",
+      "status": "resolved",
+      "file": "src/app/components/GitBankSelect.tsx",
+      "line": 52,
+      "evidence": "Back control now h-11 w-11 (44px at baseline16px rem)."
+    },
+    {
+      "id": "UI-FINAL-02",
+      "status": "resolved",
+      "file": "src/app/components/ResultsDashboard.tsx",
+      "line": 587,
+      "evidence": "Back to chapters now h-11 w-11."
+    },
+    {
+      "id": "UI-FINAL-03",
+      "status": "resolved",
+      "file": "src/app/components/chapter-topics.css",
+      "line": 36,
+      "evidence": "All topic-session-dialog buttons have min-height44px and min-width44px, covering Retry progress."
+    },
+    {
+      "id": "UI-FINAL-04",
+      "status": "resolved",
+      "file": "src/app/components/ChapterSelect.tsx",
+      "line": 400,
+      "evidence": "Start control now h-11 w-11."
+    }
+  ],
+  "pending_findings": 0,
+  "file_sha256": {
+    "src/app/components/GitBankSelect.tsx": "105000e62ef385e7361e2904befa5183bb4372df734a7ad5cbbc904268f5f4bf",
+    "src/app/components/ResultsDashboard.tsx": "21ba56524901a11228c97b3a151242d63e3f89a1f7d93230edc653303e3046cc",
+    "src/app/components/chapter-topics.css": "f499fe1a13e3eb4f9d46e6710cccfa50f8e8a7f2874222ecdabbb00c6d45ed56",
+    "src/app/components/ChapterSelect.tsx": "d1e2fe631d6b8db79dbd4c1b5977c031ef17009b58c7f0071db180c6b48847f3",
+    "src/app/components/TopicSessionPicker.tsx": "16c85a906a38c1150cc325c5727f38853e2b7fcf597268348fa9f918b647dd8e"
+  },
+  "limitations": [
+    "Source and CSS sizing confirmation only; root owns final browser/full-suite/build/main integration gates.",
+    "GitBankSelect line97 h-10 w-10 is a decorative aria-hidden span inside a large card button, not a separate interactive target."
+  ]
+}

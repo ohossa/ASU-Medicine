@@ -1,0 +1,22 @@
+.flow-breadcrumbs{display:flex;align-items:center;gap:.375rem;flex:1;min-width:0;position:relative;color:var(--muted-foreground);font-size:.8125rem;font-weight:500}
+.flow-breadcrumbs ol{margin:0;padding:0;list-style:none}
+.flow-desktop-path{display:flex;align-items:center;gap:.25rem;min-width:0;flex:1;overflow-x:auto}
+.flow-desktop-path li{display:flex;align-items:center;gap:.25rem;flex-shrink:0}
+.flow-crumb-action,.flow-crumb-label{display:block;padding:.375rem .5rem;line-height:1.4}
+.flow-crumb-action{border:0;border-radius:.5rem;background:transparent;color:inherit;cursor:pointer;min-height:2.75rem;text-align:start}
+.flow-crumb-action:hover{background:var(--secondary);color:var(--foreground)}
+.flow-crumb-action:focus-visible,.flow-path-trigger:focus-visible{outline:2px solid var(--primary);outline-offset:2px}
+.flow-breadcrumbs [aria-current=page]{font-weight:600;color:var(--foreground)}
+.flow-crumb-chevron{flex-shrink:0;opacity:.55}.flow-crumb-chevron.rtl{transform:rotate(180deg)}
+.flow-compact-path{display:flex;align-items:center;min-width:0;flex:1}
+.flow-compact-path li{display:flex;align-items:center;min-width:0;flex:1}
+.flow-compact-path .flow-crumb-action,.flow-compact-path .flow-crumb-label{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0;max-width:100%}
+.flow-path-disclosure{flex-shrink:0;position:relative}
+.flow-path-trigger{display:flex;align-items:center;justify-content:center;width:2.75rem;height:2.75rem;padding:0;border:1px solid var(--border);border-radius:.75rem;background:var(--secondary);color:var(--foreground);cursor:pointer}
+.flow-path-trigger:hover{background:var(--muted)}
+.flow-path-panel{position:absolute;inset-inline-end:0;top:calc(100% + .5rem);z-index:50;width:min(22rem,calc(100vw - 2rem));max-height:min(26rem,65vh);overflow:auto;padding:.625rem;border:1px solid var(--border);border-radius:.875rem;background:var(--card);box-shadow:0 .75rem 2rem rgb(0 0 0 / .16)}
+.flow-path-heading{margin:.25rem .5rem .5rem;font-size:.75rem;font-weight:600;color:var(--muted-foreground)}
+.flow-menu-path li{display:flex;align-items:center;gap:.25rem}
+.flow-menu-path .flow-crumb-chevron{display:none}
+.flow-menu-path .flow-crumb-action,.flow-menu-path .flow-crumb-label{width:100%;min-height:2.75rem;padding:.625rem .75rem;overflow-wrap:anywhere;white-space:normal}
+@media(prefers-reduced-motion:reduce){.flow-breadcrumbs *{scroll-behavior:auto}}

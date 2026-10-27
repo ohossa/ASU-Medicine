@@ -3671,7 +3671,7 @@
               "type": "case",
               "lecture": 1,
               "text": "A 29-year-old primigravida has marked vaginal bleeding after the onset of labor. She remains hypotensive for 6 hours and requires transfusion of 12 packed RBC units. Postpartum, she becomes unable to breast-feed the infant. She does not have a resumption of normal menstrual cycles.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical Case Assessment & Management: Postpartum hemorrhage leading to hypotension can cause ischemic necrosis of the enlarged pituitary gland. Named after Harold Sheehan who described postpartum pituitary necrosis. Loss of anterior pituitary hormones leads to secondary hypothyroidism, hypogonadism, and adrenal insufficiency.",
               "subQuestions": [
                 {
                   "id": "MEM2-CH1-PATH-0003-sq1",
@@ -6315,7 +6315,7 @@
               "type": "case",
               "lecture": 2,
               "text": "A lady suffers from severe dyspnea. Clinical examination shows enlargement of the thyroid gland which is very firm. Ultrasound examination of the neck reveals evidence of thyroiditis with fixation to surrounding structures.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical Case Assessment & Management: Riedel's thyroiditis is characterized by a rock-hard goiter fixed to surrounding structures. Dense fibrosis extending into surrounding tissues is diagnostic. Clinical presentation mimics anaplastic carcinoma.",
               "subQuestions": [
                 {
                   "id": "MEM2-CH2-PATH-0002-sq1",
@@ -6365,7 +6365,7 @@
               "type": "case",
               "lecture": 2,
               "text": "A woman 45 years old presented with painless diffusely enlarged thyroid gland. Thyroidectomy was done and histologic examination gave the diagnosis of Hashimoto's thyroiditis.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical Case Assessment & Management: Hashimoto's thyroiditis is characterized by lymphocytic infiltration, germinal centers, Hurthle cell change, and follicular destruction. Autoimmune destruction of thyroid tissue by cellular and humoral immunity. Chronic lymphocytic infiltration increases risk of lymphoma.",
               "subQuestions": [
                 {
                   "id": "MEM2-CH2-PATH-0003-sq1",
@@ -6407,7 +6407,7 @@
               "type": "case",
               "lecture": 2,
               "text": "A middle-aged female complained of fever and markedly tender and enlarged thyroid gland. The condition was self-limited with complete resolution. This case was clinically diagnosed as thyroiditis.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical Case Assessment & Management: Viral prodrome, tender thyroid, self-limited course. Granulomatous inflammation with giant cells engulfing colloid. Other variants include autoimmune and fibrosing.",
               "subQuestions": [
                 {
                   "id": "MEM2-CH2-PATH-0004-sq1",
@@ -6441,7 +6441,7 @@
               "type": "case",
               "lecture": 2,
               "text": "A child presents with signs of physical and mental retardation. Ultrasound examination shows fibrosed thyroid gland. Thyroid function tests reveal hypothyroidism and increased serum level of TSH.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical Case Assessment & Management: Hypothyroidism from birth leading to developmental delay. Causes include iodine deficiency, dyshormonogenesis, agenesis, maternal factors. Low T3/T4 removes feedback inhibition on pituitary.",
               "subQuestions": [
                 {
                   "id": "MEM2-CH2-PATH-0005-sq1",
@@ -6491,7 +6491,7 @@
               "type": "case",
               "lecture": 1,
               "text": "A patient presented with markedly enlarged thyroid which is multinodular. Clinical and radiologic examinations gave the diagnosis of endemic goiter.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical Case Assessment & Management: Iodine deficiency → low T4 → high TSH → goiter. Early diffuse hyperplasia, later nodular involution. Euthyroid or mildly hypothyroid with elevated TSH.",
               "subQuestions": [
                 {
                   "id": "MEM2-CH2-PATH-0006-sq1",
@@ -6533,7 +6533,7 @@
               "type": "case",
               "lecture": 1,
               "text": "A female patient 50 years old complained of dry rough skin. Clinical examination showed enlarged heart and atrophic thyroid.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical Case Assessment & Management: Dry skin, cardiomegaly, atrophic thyroid suggest hypothyroidism. Primary (Hashimoto's most common) or secondary causes. End-stage Hashimoto's shows fibrosis and atrophy.",
               "subQuestions": [
                 {
                   "id": "MEM2-CH2-PATH-0007-sq1",
@@ -6575,7 +6575,7 @@
               "type": "case",
               "lecture": 1,
               "text": "An old female presented with a small thyroid nodule. Biopsy showed that the tumor consisted of follicles of variable size. It is completely surrounded by a capsule which is infiltrated by the tumor.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical Case Assessment & Management: Both are follicular neoplasms; distinction requires capsular/vascular invasion. Capsular or vascular invasion indicates malignancy. FNA cannot differentiate benign from malignant follicular neoplasms.",
               "subQuestions": [
                 {
                   "id": "MEM2-CH2-PATH-0008-sq1",
@@ -6641,7 +6641,7 @@
               "type": "case",
               "lecture": 3,
               "text": "A woman presented with an enlarged thyroid gland. Fine needle aspiration cytology showed malignant epithelial cells with papillary formation.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical Case Assessment & Management: Papillary formations on cytology are characteristic. Papillae, ground glass nuclei, grooves, pseudo-inclusions, psammoma bodies. Same as follicular carcinoma; derived from follicular cells.",
               "subQuestions": [
                 {
                   "id": "MEM2-CH2-PATH-0009-sq1",
@@ -6707,7 +6707,7 @@
               "type": "case",
               "lecture": 1,
               "text": "An old man suffered from watery diarrhea and flushing of the face. Clinical examination showed a thyroid tumor which consists of malignant polygonal cells which are arranged in trabecular or follicular pattern with amyloid stroma.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical Case Assessment & Management: Amyloid stroma and neuroendocrine features are characteristic. C cells are neural crest-derived. Calcitonin is specific and used for diagnosis and monitoring.",
               "subQuestions": [
                 {
                   "id": "MEM2-CH2-PATH-0010-sq1",
@@ -6765,7 +6765,7 @@
               "type": "case",
               "lecture": 1,
               "text": "A 53-year-old woman has an infiltrative mass involving the left lobe of the thyroid and extending into adjacent soft tissues. Microscopically, the mass shows malignant spindle shaped cells. She dies within a year with metastatic lesions.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical Case Assessment & Management: Rapidly invasive, spindle cells, poor prognosis. Highly aggressive with local and distant spread. Undifferentiated morphology often with prior differentiated component.",
               "subQuestions": [
                 {
                   "id": "MEM2-CH2-PATH-0011-sq1",
@@ -6799,7 +6799,7 @@
               "type": "case",
               "lecture": 1,
               "text": "A middle-aged female complained of excessive sweating and insomnia. Clinical examination revealed increased blood pressure, exophthalmos and diffusely enlarged thyroid gland.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical Case Assessment & Management: Hyperthyroidism, goiter, exophthalmos triad. Hyperplastic follicles with scalloped colloid, lymphocytic infiltrate. Autoimmune orbital inflammation and fat expansion.",
               "subQuestions": [
                 {
                   "id": "MEM2-CH2-PATH-0012-sq1",
@@ -6982,7 +6982,7 @@
               "type": "case",
               "lecture": 1,
               "text": "A 56-year-old woman presents with recurrent flank pain, hypercalcemia, decreased bone density on DEXA scan, and bilateral renal stones.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical Case Assessment & Management: Hypercalcemia with bone loss and renal stones is classic. PTH mobilizes calcium from bone and increases renal calcium excretion. High calcium stabilizes neuronal membranes, reducing excitability.",
               "subQuestions": [
                 {
                   "id": "MEM2-CH2-PATH-0022-sq1",
@@ -7040,7 +7040,7 @@
               "type": "case",
               "lecture": 1,
               "text": "An old female presented with osteoporosis and frequent renal stones. Blood examination showed very high serum calcium and low serum phosphorus.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical Case Assessment & Management: Hypercalcemia, hypophosphatemia, bone loss, stones. Elevated PTH with hypercalcemia confirms primary hyperparathyroidism. Adenoma is the most common cause.",
               "subQuestions": [
                 {
                   "id": "MEM2-CH2-PATH-0023-sq1",
@@ -8397,7 +8397,7 @@
               "type": "case",
               "lecture": 1,
               "text": "A patient with osteoporosis requires pharmacologic management. Several drugs are considered, including bisphosphonates, SERMs, and RANKL inhibitors. The following questions pertain to the pharmacology, adverse effects, and monitoring of these agents.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical Case Assessment & Management: Thiazides reduce urinary calcium excretion, beneficial for bone. Active forms (alfacalcidol, calcitriol) are used when renal activation is impaired. Alendronate requires upright posture and full water to avoid esophageal irritation.",
               "subQuestions": [
                 {
                   "id": "MEM2-CH2-PHAR-0001-sq1",
@@ -8517,7 +8517,7 @@
               "type": "case",
               "lecture": 1,
               "text": "A 23-year-old female patient presented with excess anxiety, tachycardia and weight loss in spite of good appetite and was diagnosed as hyperthyroidism. She started oral antithyroid drug (drug A) for long term use acting by inhibiting thyroid hormone synthesis without affecting peripheral T4 conversion, plus a beta blocker. Two years after improvement she became pregnant in the early trimester. The physician changed antithyroid drug to another one (drug B) and said that drug A will be reused 3 months later.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical Case Assessment & Management: Methimazole does not inhibit peripheral conversion, unlike PTU. Methimazole can cause agranulocytosis and hepatotoxicity. Propranolol reduces symptoms and inhibits T4→T3 conversion.",
               "subQuestions": [
                 {
                   "id": "MEM2-CH2-PHAR-0002-sq1",
@@ -10475,7 +10475,7 @@
               "type": "case",
               "lecture": 1,
               "text": "A young lady complained of headache. Blood pressure was 150/100. Blood examination showed high level of catecholamines. Abdominal sonography revealed an encapsulated tumor of the adrenal gland.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical Case Assessment & Management: Hypertension, high catecholamines, adrenal mass. Derived from neural crest chromaffin cells. Zellballen pattern, granular cytoplasm, vascular stroma.",
               "subQuestions": [
                 {
                   "id": "MEM2-CH3-PATH-0002-sq1",
@@ -10549,7 +10549,7 @@
               "type": "case",
               "lecture": 2,
               "text": "A child 4 years old presented with flank pain. Abdominal sonography showed a tumor mass arising from adrenal medulla. Biopsy examination revealed malignant small round cells with rosette formation.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical Case Assessment & Management: Pediatric adrenal tumor with small round blue cells and rosettes. Catecholamine metabolites are elevated. Primitive neural crest cells.",
               "subQuestions": [
                 {
                   "id": "MEM2-CH3-PATH-0003-sq1",
@@ -10623,7 +10623,7 @@
               "type": "case",
               "lecture": 1,
               "text": "Surgical excision of an adrenal gland is performed because of a 2 cm well demarcated tumor. Grossly the tumor is encapsulated, with homogenous yellowish brown cut surface. Sections prepared reveal cells with vacuolated cytoplasm in trabecular arrangement simulating normal gland tissue. No evidence of mitosis and no areas of necrosis.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical Case Assessment & Management: Small, encapsulated, yellow, benign histology. Malignancy suspected by size, weight, invasion, high mitoses. Only metastasis unequivocally proves malignancy.",
               "subQuestions": [
                 {
                   "id": "MEM2-CH3-PATH-0004-sq1",
@@ -10665,7 +10665,7 @@
               "type": "case",
               "lecture": 1,
               "text": "A 27-year-old female presents in the emergency room in acute crisis of shock with low B.P., high fever, pain in the abdomen with nausea, vomiting and diarrhea. Serological findings include marked hyponatraemia (decreased serum sodium). Her mother states that her daughter has recently a severe psychic trauma.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical Case Assessment & Management: Shock, hyponatremia, stress precipitant. Causes include adrenal hemorrhage, steroid withdrawal, pituitary apoplexy. Chronic insufficiency = Addison's disease; autoimmune or infectious.",
               "subQuestions": [
                 {
                   "id": "MEM2-CH3-PATH-0005-sq1",
@@ -11510,7 +11510,7 @@
               "type": "case",
               "lecture": 1,
               "text": "A 25-year-old female presented with severe confusion, delirium and muscle weakness. Blood pressure 80/50, and blood glucose 60 mg/dL. The history revealed that the patient was diagnosed as SLE on steroid therapy (prednisolone 10 mg daily) for 1 year but 2 days ago she stopped medication suddenly. The case was diagnosed as acute adrenal insufficiency.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical Case Assessment & Management: SLE requires immunosuppression. Low sodium due to fluid retention. Taper steroids and increase dose during stress.",
               "subQuestions": [
                 {
                   "id": "MEM2-CH3-PHAR-0001-sq1",
@@ -14163,7 +14163,7 @@
               "type": "case",
               "lecture": 1,
               "text": "A patient with type 2 diabetes requires comprehensive glucose-lowering therapy. The following questions address first-line agents (metformin), add-on therapies (GLP-1 agonists, SGLT2 inhibitors), and management of diabetic ketoacidosis.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical Case Assessment & Management: Metformin is first-line. Metformin contraindicated if GFR <30. Metformin causes B12 deficiency.",
               "subQuestions": [
                 {
                   "id": "MEM2-CH5-PHAR-0016-sq1",
@@ -14297,7 +14297,7 @@
               "type": "case",
               "lecture": 1,
               "text": "A 45-year-old obese patient with newly diagnosed type 2 diabetes presented with HbA1c 90 mmol/mol (10.4%). Past history of coronary artery disease. The physician started with oral drug A and an injectable drug. One month later the HbA1c was 8% and he stopped the injectable drug and added another oral drug B to oral drug A.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical Case Assessment & Management: High HbA1c and CAD: insulin + metformin. Metformin needs renal adjustment. Canagliflozin added for CV benefit.",
               "subQuestions": [
                 {
                   "id": "MEM2-CH5-PHAR-0017-sq1",
@@ -14372,7 +14372,7 @@
               "type": "case",
               "lecture": 1,
               "text": "A patient with type 2 diabetes presented for routine checkup and was on the following drugs in full dose: metformin, canagliflozin and dulaglutide. HbA1c was 65 mmol/mol (8.1%) and the decision was to start insulin therapy.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical Case Assessment & Management: Basal insulin start dose 10U. Rapid-acting or regular insulin for prandial coverage.",
               "subQuestions": [
                 {
                   "id": "MEM2-CH5-PHAR-0018-sq1",
@@ -14523,7 +14523,7 @@
               "type": "case",
               "lecture": 1,
               "text": "A 10-year-old boy with type 1 diabetes presents with nausea, vomiting, dehydration, acetone breath, and disturbed consciousness. Lab: glucose 700 mg/dL, ketoacids 25 mmol/L, pH low.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical Case Assessment & Management: Severe hyperglycemia, ketosis, and acidosis in a type 1 diabetic define DKA. Osmotic diuresis from glucosuria is the primary driver. Insulin deficiency leads to unchecked hepatic glucose production and reduced peripheral utilization.",
               "subQuestions": [
                 {
                   "id": "MEM2-CH5-CLIN-0001-sq1",
@@ -14573,7 +14573,7 @@
               "type": "case",
               "lecture": 1,
               "text": "A 16-year-old girl presents with rapid deep breathing, abdominal pain, and acetone breath. Blood glucose 450 mg/dL, positive ketones, pH 7.1.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical Case Assessment & Management: Each symptom has a distinct metabolic cause in DKA. Type 1 diabetes results from cell-mediated autoimmunity against β-cells. Unrestrained lipolysis and reduced lipid clearance cause elevated triglycerides and ketones.",
               "subQuestions": [
                 {
                   "id": "MEM2-CH5-CLIN-0002-sq1",
@@ -14623,7 +14623,7 @@
               "type": "case",
               "lecture": 1,
               "text": "A 52-year-old obese man presents with excessive thirst, frequent urination, and blurred vision. Laboratory tests show a fasting blood glucose of 190 mg/dL and an HbA1c of 8.1%, confirming a diagnosis of Type 2 Diabetes Mellitus. His physician discusses starting him on Liraglutide.",
-              "explanation": "Review the related lecture material for the rationale.",
+              "explanation": "Clinical Case Assessment & Management: This glucose-stimulated insulin secretion is the core of β-cell function. Microvascular complications are common in both type 1 and type 2 diabetes. Liraglutide (GLP-1 agonist) commonly causes GI side effects; rare pancreatitis risk.",
               "subQuestions": [
                 {
                   "id": "MEM2-CH5-CLIN-0003-sq1",

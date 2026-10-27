@@ -154,6 +154,8 @@ export function useCloudSync() {
 
     let isMounted = true;
     let pulling = false;
+    const IDLE_INTERVAL_MS = 300_000; // 5 minutes background interval
+
     const pullData = async () => {
       if (pulling || isSyncing.current || document.hidden) return;
       pulling = true;
@@ -175,6 +177,7 @@ export function useCloudSync() {
 
         if (data && isMounted && activeUser.current===userId) {
           let hasChanges = false;
+          let hasLocalDrafts = Boolean(isDirtyRef.current);
           Object.entries(data).forEach(([key, cloudValAny]) => {
             if (key.startsWith('asu_study_tracker:') && !key.startsWith(`asu_study_tracker:${userId}:`)) return;
             if (key === 'asu_medical_student_year') return; // Academic year now has its own account-scoped cloud preference.
@@ -186,12 +189,32 @@ export function useCloudSync() {
               const localVal = localStorage.getItem(localKey);
 
               let shouldOverwrite = false;
+              let hasOfflineHistoryForKey = false;
               if (key===HISTORY_WIRE_KEY && localVal===null && lastSyncedRef.current[key]!==undefined) {
                 // Keep an explicit pending history clear until its deletion is sent.
                 shouldOverwrite=false;
+                hasLocalDrafts = true;
               } else if (key===HISTORY_WIRE_KEY) {
-                cloudVal = JSON.stringify(mergeHistory(cloudValAny, localVal??[]));
+                const merged = mergeHistory(cloudValAny, localVal??[]);
+                cloudVal = JSON.stringify(merged);
                 shouldOverwrite = true;
+                if (localVal) {
+                  try {
+                    const localRows = JSON.parse(localVal);
+                    if (Array.isArray(localRows) && localRows.length > 0) {
+                      const cloudRows = Array.isArray(cloudValAny)
+                        ? cloudValAny
+                        : (typeof cloudValAny === 'string' ? JSON.parse(cloudValAny) : []);
+                      if (Array.isArray(cloudRows)) {
+                        const cloudIds = new Set(cloudRows.map((r: any) => r?.id));
+                        if (localRows.some((r: any) => r?.id && !cloudIds.has(r.id))) {
+                          hasOfflineHistoryForKey = true;
+                          hasLocalDrafts = true;
+                        }
+                      }
+                    }
+                  } catch { /* ignore parse error */ }
+                }
               } else
               if (key.startsWith('asu_quiz_session:') || key === `asu_preferences:${userId}:shuffle`) {
                 try {
@@ -201,6 +224,8 @@ export function useCloudSync() {
                   const localTime = localObj?.timestamp ?? 0;
                   if (cloudTime > localTime) {
                     shouldOverwrite = true;
+                  } else if (localTime > cloudTime) {
+                    hasLocalDrafts = true;
                   }
                 } catch {
                   shouldOverwrite = true;
@@ -218,16 +243,36 @@ export function useCloudSync() {
               }
 
               // Populate lastSyncedRef so future pushes know what's in the cloud
-              lastSyncedRef.current[key] = typeof cloudValAny==='string'?cloudValAny:JSON.stringify(cloudValAny);
+              if (key === HISTORY_WIRE_KEY && !hasOfflineHistoryForKey) {
+                lastSyncedRef.current[key] = cloudVal;
+              } else {
+                lastSyncedRef.current[key] = typeof cloudValAny==='string'?cloudValAny:JSON.stringify(cloudValAny);
+              }
             }
           });
+
+          // Check if there are local account keys in localStorage that are absent from cloud
+          const cloudKeySet = new Set(Object.keys(data));
+          if (typeof window !== 'undefined' && !hasLocalDrafts) {
+            for (let i = 0; i < localStorage.length; i++) {
+              const k = localStorage.key(i);
+              if (k && ((userId && k.startsWith(`asu_study_tracker:${userId}:`)) || (userId && k.startsWith(`asu_quiz_session:${userId}:`)) || (userId && k === `asu_preferences:${userId}:shuffle`))) {
+                if (!cloudKeySet.has(k)) {
+                  hasLocalDrafts = true;
+                  break;
+                }
+              }
+            }
+          }
 
           if (hasChanges) {
             window.dispatchEvent(new Event('storage'));
             window.dispatchEvent(new Event('asu-history-updated'));
           }
-          // Reconcile only this account's history/drafts, including failed offline saves.
-          await pushData(true);
+          // Reconcile only this account's history/drafts if un-synced offline drafts exist.
+          if (hasLocalDrafts) {
+            await pushData(true);
+          }
         }
       } catch (err) {
         console.error("Cloud pull failed:", err);
@@ -239,13 +284,13 @@ export function useCloudSync() {
     window.addEventListener('focus', resume);
     window.addEventListener('online', resume);
     document.addEventListener('visibilitychange', resume);
-    const interval = setInterval(resume,60000);
+    const interval = setInterval(resume, IDLE_INTERVAL_MS);
     return () => {
       isMounted = false;
       clearInterval(interval);
-      window.removeEventListener('focus',resume);
-      window.removeEventListener('online',resume);
-      document.removeEventListener('visibilitychange',resume);
+      window.removeEventListener('focus', resume);
+      window.removeEventListener('online', resume);
+      document.removeEventListener('visibilitychange', resume);
     };
   }, [isSignedIn, userId, pushData]);
 

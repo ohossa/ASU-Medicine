@@ -2,7 +2,6 @@ import { PortalEntry } from "./PortalEntry";
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/react";
 import "./styles/index.css";
 import { ErrorBoundary } from "./app/components/ErrorBoundary";
 
@@ -11,7 +10,6 @@ createRoot(document.getElementById("root")!).render(
     <ErrorBoundary>
       <PortalEntry />
       <Analytics />
-      <SpeedInsights />
     </ErrorBoundary>
   </StrictMode>,
 );

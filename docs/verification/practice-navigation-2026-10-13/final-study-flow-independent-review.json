@@ -1,0 +1,80 @@
+{
+  "reviewed_at": "2026-10-12T20:01:40.799404+00:00",
+  "scope": "Read-only source review of final study flow; no code/main edits and no browser actions. Root owns browser/full suite/build.",
+  "files": {
+    "src/app/components/FlowBreadcrumbs.tsx": "3da7d0ddf3cbce2c2abc6729403b552d31f208e5ae956a3a75f2a3e81eadf39b",
+    "src/app/components/flow-breadcrumbs.css": "a4b07dbd55740f2cdd55fdd57457d4dee664b4e44c33a3c2f095510df1c724e1",
+    "src/app/components/ChapterSelect.tsx": "2b22b381993fb1b36c7ff1f61987a4f8481f091369bbd4202d3a267113376710",
+    "src/app/components/GitBankSelect.tsx": "ce8e2ca0686dda92af098830d4f36311db6582eb77ab5eaa74b45e50138854c1",
+    "src/app/components/SubjectSelect.tsx": "89b36f8109bb17e7095553603dfbcb4d1390852b32438b7a17548471cade8e2e",
+    "src/app/components/ChapterTopicList.tsx": "a4bdf30a4a255d6a9b05c399c425ff2f8c871a26b771281122c65496a1b71c03",
+    "src/app/components/chapter-topics.css": "280f7c884064c969dbc2614b2bff54e57024516b5699939c5c76792b35c5e1b2",
+    "src/app/components/TopicSessionPicker.tsx": "16c85a906a38c1150cc325c5727f38853e2b7fcf597268348fa9f918b647dd8e",
+    "src/app/components/TopicPracticePicker.tsx": "cbfa30919c832a9ef96283a14d9dbc91953af78fb1c4d606171f752a4a9809c5",
+    "src/app/components/topic-practice.css": "4382959c5cde2800105a48b16e2c6c3090928542dd347f08097d92dbff6cea44",
+    "src/app/components/QuizInterface.tsx": "edc27a1375a470c925e22b2a55dc23221f2321a306caa89ce7b9e2001b7e979a",
+    "src/app/components/ResultsDashboard.tsx": "b2b20f9f03528d532afd0db24ed912404c08d8116d35ffc027f019c02f76083d",
+    "src/app/components/SoundToggle.tsx": "8d0d78eac59df475ac5bda0bfdc2f0511d8206b34084dea6487caae3ea70d1ac",
+    "src/app/learning/practiceNavigation.ts": "7e49293f098cd26887a60f33e3cd2fae634ea33c145f92353ed02f21c867c98c",
+    "src/app/App.tsx": "2ec706b7bde5a42770b2b182a06ed7f7689dd8c83e9285df949d5e77bf2f5870",
+    "src/styles/theme.css": "aa1b20a235b53e0b165c85c15a6c30ecb7ac1f2d20926e528c6d7f85f29f4557"
+  },
+  "result": "four target-size gaps; no functional blocker found in reviewed navigation/session code",
+  "findings": [
+    {
+      "id": "UI-FINAL-01",
+      "severity": "P2",
+      "file": "src/app/components/GitBankSelect.tsx",
+      "line": 52,
+      "finding": "Back control uses h-9 w-9 =36px, below requested44px target.",
+      "suggestion": "Use h-11 w-11."
+    },
+    {
+      "id": "UI-FINAL-02",
+      "severity": "P2",
+      "file": "src/app/components/ResultsDashboard.tsx",
+      "line": 587,
+      "finding": "Back to chapters control uses h-9 w-9 =36px.",
+      "suggestion": "Use h-11 w-11."
+    },
+    {
+      "id": "UI-FINAL-03",
+      "severity": "P2",
+      "file": "src/app/components/TopicSessionPicker.tsx",
+      "line": 12,
+      "finding": "Retry progress is an inline unstyled button; sizing selectors only cover header close/session-options. Error-path Retry has no44px minimum.",
+      "suggestion": "Add44px minimum target and focus-visible style."
+    },
+    {
+      "id": "UI-FINAL-04",
+      "severity": "P2",
+      "file": "src/app/components/ChapterSelect.tsx",
+      "line": 400,
+      "finding": "Chapter card keyboard-accessible Start icon control remains40x40px. Outer article has pointer callback but is not a keyboard control.",
+      "suggestion": "Use h-11 w-11."
+    }
+  ],
+  "verified_from_source": [
+    "Compact shared breadcrumbs cover ChapterSelect, GitBankSelect, SubjectSelect, and GIT results full paths; non-GIT results and quiz use short two-line chapter/topic headers. Quiz intentionally hides full breadcrumb strip per existing tested contract.",
+    "Compact path includes parent/current with ellipsis/title; all ancestors preserved in disclosure, native keyboard buttons, Escape focus return, arrow/Home/End navigation, outside-pointer dismissal and RTL logical CSS.",
+    "TopicSessionPicker uses native showModal, labelled title, Escape/onCancel, backdrop hit check, original focus restoration, body scroll restoration; dialog entire content scrolls within viewport maximum height. Close44px, batch options48px. Browser behavior not independently exercised here.",
+    "Topic search is labelled, case-insensitive, clear control44px, status/no-results accessible. Subject branch scope reaches custom picker; branch key resets custom selection.",
+    "Branch gate explicitly lists supported known modules, MSS conditional chapter/past exams rule, recognized subject IDs, minimum two subjects; no broad chapter-shape heuristic.",
+    "Short batches preserve source questions/IDs and stable selection fingerprints, honor unfinished exact-version drafts, move to next unattempted stable chunk; source-version cloud entries compare fetched canonical versions.",
+    "New chapter/topic/session/breadcrumb surfaces use foreground/card/muted-foreground/secondary/primary semantic tokens; hover metadata promoted to foreground; no colour guide. Source palette inspection only, no rendered contrast audit claimed.",
+    "SoundToggle is labelled icon-only44px, aria-pressed, hidden icon, described help and focus-visible outline."
+  ],
+  "targeted_tests": {
+    "command": "npx vitest run src/app/components/FlowBreadcrumbs.test.tsx src/app/components/ChapterSelect.breadcrumbs.test.tsx src/app/components/SubjectSelect.navigation.test.tsx src/app/learning/practiceNavigation.test.ts src/app/components/QuizBreadcrumbs.test.tsx",
+    "passed_files": 5,
+    "passed_tests": 20,
+    "failed_tests": 0,
+    "duration_seconds": 4.74
+  },
+  "limitations": [
+    "Root was concurrently finishing source changes; SHA values bind reviewed snapshots only.",
+    "No browser, screen-reader, mobile Safari dialog, viewport layout or rendered contrast verification in this independent source pass.",
+    "Focused existing regression tests, not full suite/build; root owns final gates.",
+    "No broad redesign, medical/data review, or production modifications."
+  ]
+}

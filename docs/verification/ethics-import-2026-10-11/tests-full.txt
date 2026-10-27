@@ -1,0 +1,13 @@
+
+> replicated-quiz-app@0.0.1 test
+> vitest run
+
+
+ RUN  v4.1.11 /Users/omarhossa/Documents/asu.codes questions/QUESTION_IMPORT_JOBS/2026-10-11-P4-3-ethics/STAGING/app
+
+
+ Test Files  112 passed (112)
+      Tests  642 passed (642)
+   Start at  21:35:23
+   Duration  20.20s (transform 25.75s, setup 4.93s, import 15.34s, tests 26.11s, environment 21.37s)
+

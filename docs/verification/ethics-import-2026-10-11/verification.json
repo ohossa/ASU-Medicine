@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "scope": "local only",
+  "checked_at": "2026-10-11T18:45:41.527826+00:00",
+  "all_source_pages_visually_read": 24,
+  "source_occurrences": 104,
+  "accepted_unique": 47,
+  "all_duplicate_occurrences": 30,
+  "released_duplicate_occurrences": 16,
+  "excluded_unique": 27,
+  "excluded_occurrences": 41,
+  "review_hash_matches": 47,
+  "answer_key_corrections": 1,
+  "strict_import_flags": 0,
+  "all_bank_validator_errors_before": 0,
+  "all_bank_validator_errors_after": 0,
+  "test_files": 112,
+  "tests": 642,
+  "targeted_tests": 5,
+  "typecheck": "browser/node/API passed",
+  "production_build": "passed in staging and applied checkout",
+  "ui": {
+    "desktop": "1280 × 900; quiz stem/options/correct feedback/explanation inspected",
+    "mobile": "390 × 844 requested; document client and scroll widths both 384; corrected key displayed correctly",
+    "results_history_missed_questions": "Automated tests; no finished browser test attempt",
+    "local_overlay_refresh": "Unavailable in preview; bundled bank displayed",
+    "published_overlay_readback": "0 edits"
+  },
+  "published": false,
+  "independent_review": false,
+  "final_bank_sha256": "cca56187e7701daaf2021d22e7529d300dda35255577a27da63d9d5c37a47105"
+}

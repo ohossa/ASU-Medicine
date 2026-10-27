@@ -16,7 +16,7 @@ afterEach(() => {
 describe("Support ASUCodes", () => {
   it("shows real recipient details and exact owner links without inventing totals", () => {
     render(<SupportPage />);
-    expect(screen.getByText(SUPPORT.recipient)).toBeInTheDocument();
+    expect(screen.getAllByText(SUPPORT.recipient)[0]).toBeInTheDocument();
     expect(screen.getByText(SUPPORT.ipa)).toBeInTheDocument();
     expect(screen.getByRole("link", { name: /Open InstaPay/ })).toHaveAttribute(
       "href",

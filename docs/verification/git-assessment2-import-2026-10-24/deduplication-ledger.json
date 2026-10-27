@@ -1,0 +1,2122 @@
+[
+  {
+    "source": "Elshorbagy",
+    "sourceQNum": 3,
+    "candidateStem": "Which of the following is NOT a mechanism of action of lactulose?",
+    "matchedId": "MGL3-CH6-PHAR-0420",
+    "matchedText": "20. Which of the following is not a mechanism of action of lactulose",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": true
+  },
+  {
+    "source": "Elshorbagy",
+    "sourceQNum": 8,
+    "candidateStem": "Atropine is combined with diphenoxylate in the treatment of diarrhea to:",
+    "matchedId": "MGL3-CH6-PHAR-0506",
+    "matchedText": "3. Atropine is combined with diphenoxylate in treatment of diarrhea to:",
+    "matchType": "fuzzy_high",
+    "similarity": 0.909,
+    "enriched": false
+  },
+  {
+    "source": "Elshorbagy",
+    "sourceQNum": 9,
+    "candidateStem": "The following is NOT true concerning management of diarrhea:",
+    "matchedId": "MGL3-CH6-PHAR-0508",
+    "matchedText": "24) The following is not true concerning management of diarrhea:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "Elshorbagy",
+    "sourceQNum": 28,
+    "candidateStem": "Which of the following statements is true?",
+    "matchedId": "MGL3-CH2-PHYS-0311",
+    "matchedText": "Which of the following statements is true?",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "Elshorbagy",
+    "sourceQNum": 40,
+    "candidateStem": "Mark the incorrect statement regarding laxatives:",
+    "matchedId": "MGL3-CH6-PHAR-0618",
+    "matchedText": "Mark the incorrect statement regarding stimulant laxatives:",
+    "matchType": "fuzzy_high",
+    "similarity": 0.857,
+    "enriched": false
+  },
+  {
+    "source": "Elshorbagy",
+    "sourceQNum": 41,
+    "candidateStem": "Which of the following is WRONGLY matched to its drug?",
+    "matchedId": "MGL3-CH6-PHAR-0481",
+    "matchedText": "19. Which of the following is Wrongly matched to its drug?",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "Elshorbagy",
+    "sourceQNum": 49,
+    "candidateStem": "The following is NOT true concerning adverse effects of anti-constipation drugs:",
+    "matchedId": "MGL3-CH6-PHAR-0485",
+    "matchedText": "33. The following is not true concerning adverse effects of anti-constipation drugs:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "Hegazy",
+    "sourceQNum": 2,
+    "candidateStem": "The most dangerous complication of portal hypertension is:",
+    "matchedId": "MGL3-CH5-PATH-0923",
+    "matchedText": "2. The most dangerous complication of portal hypertension is:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "Hegazy",
+    "sourceQNum": 3,
+    "candidateStem": "A  42-year-old female having a history of liver disease presented with jaundice  Abdominal US revealed enlarged liver wi",
+    "matchedId": "MGL3-CH5-PATH-0896",
+    "matchedText": "3. A 42-year-old female having a history of liver disease presented with\njaundice\nAbdominal US revealed enlarged liver w",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "Hegazy",
+    "sourceQNum": 4,
+    "candidateStem": "A  63 years old male presented with recent darkening of the skin. On examination, skin  had a dark bronze color. Work up",
+    "matchedId": "MGL3-CH5-PATH-0999",
+    "matchedText": "4. A 63 years old male presented with recent darkening of the skin. On\nexamination, skin had a dark bronze color. Work u",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "Hegazy",
+    "sourceQNum": 5,
+    "candidateStem": "An 18 years old male presented with elevated liver enzymes He has negative viral  markers, negative ANA and ASMA with de",
+    "matchedId": "MGL3-CH5-PATH-0975",
+    "matchedText": "5. An 18 years old male presented with elevated liver enzymes He has negative viral\n   markers, negative ANA and ASMA wi",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "Hegazy",
+    "sourceQNum": 6,
+    "candidateStem": "A 49 year old woman presents with increasing fatigue and is found to have elevated  liver enzymes .Viral markers are not",
+    "matchedId": "MGL3-CH5-PATH-0866",
+    "matchedText": "6. A 49 year old woman presents with increasing fatigue and is found to have elevated\n    liver enzymes .Viral markers a",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "Hegazy",
+    "sourceQNum": 7,
+    "candidateStem": "A  57 -year old man presents with  fatigue weight  loss for several months without any  GIT symptoms. Careful history re",
+    "matchedId": "MGL3-CH5-PATH-0898",
+    "matchedText": "7. A 57 -year old man presents with fatigue weight loss for several months without any\n   GIT symptoms. Careful history ",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "Hegazy",
+    "sourceQNum": 8,
+    "candidateStem": "A 30 years old female presented with jaundice. Blood examination showed elevated   serum bilirubin. Abdominal US reveale",
+    "matchedId": "MGL3-CH5-PATH-0978",
+    "matchedText": "7. A 30 years old female presented with jaundice. Blood examination showed\nelevated serum bilirubin. Abdominal US reveal",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "Hegazy",
+    "sourceQNum": 9,
+    "candidateStem": "Regarding secondary biliary cirrhosis, the following is not true:",
+    "matchedId": "MGL3-CH5-PATH-0879",
+    "matchedText": "9. Regarding secondary biliary cirrhosis, the following is not true:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "Hegazy",
+    "sourceQNum": 10,
+    "candidateStem": "A  53 year old male came to emergency department, because of marked hematemesis  that had continued for  3 hours. He had",
+    "matchedId": "MGL3-CH5-PATH-0905",
+    "matchedText": "A 53 year old male came to emergency department because of marked hematemesis that had continued for 3 hours. He had a d",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "Hegazy",
+    "sourceQNum": 11,
+    "candidateStem": "A  40 year old female taking oral contraceptive pills for 14 years. During routine US  revealed small rounded well circu",
+    "matchedId": "MGL3-CH5-PATH-1021",
+    "matchedText": "11.A 40 year old female taking oral contraceptive pills for 14 years. During routine US\nrevealed small rounded well circ",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "Hegazy",
+    "sourceQNum": 12,
+    "candidateStem": "The most common tumor of the liver is",
+    "matchedId": "MGL3-CH5-PATH-1034",
+    "matchedText": "15- The most common tumor of the liver is:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "Hegazy",
+    "sourceQNum": 13,
+    "candidateStem": "The following factors predispose to hepatocellular carcinoma except:",
+    "matchedId": "MGL3-CH5-PATH-1040",
+    "matchedText": "The following factors predispose to hepatocellular carcinoma except:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "Hegazy",
+    "sourceQNum": 14,
+    "candidateStem": "A 57 year old male complains of severe upper abdominal pain extending to the midback.  He also had fatigue and loss of a",
+    "matchedId": "MGL3-CH5-PATH-1150",
+    "matchedText": "14. A 57 year old male complains of severe upper abdominal pain extending to the midback.\n  He also had fatigue and loss",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "Hegazy",
+    "sourceQNum": 15,
+    "candidateStem": "Beta cell tumor produces:",
+    "matchedId": "MGL3-CH5-PATH-1134",
+    "matchedText": "14.Beta cell tumor produces:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "Hegazy",
+    "sourceQNum": 16,
+    "candidateStem": "A 45 year old obese non  alcoholic female presents with severe  abdominal  pain  radiating to the back Lab results yield",
+    "matchedId": "MGL3-CH5-PATH-1146",
+    "matchedText": "16. A 45 year old obese non alcoholic female presents with severe abdominal pain\n   radiating to the back Lab results yi",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "Hegazy",
+    "sourceQNum": 17,
+    "candidateStem": "Hepatitis D virus infection is always associated with HCV infection",
+    "matchedId": "MGL3-CH5-PATH-0774",
+    "matchedText": "1 - Hepatitis D virus infection is always associated with HCV infection.",
+    "matchType": "fuzzy_high",
+    "similarity": 0.9,
+    "enriched": false
+  },
+  {
+    "source": "Hegazy",
+    "sourceQNum": 18,
+    "candidateStem": "Bilharziasis leads to liver cirrhosis",
+    "matchedId": "MGL3-CH5-PATH-0891",
+    "matchedText": "2 - Bilharziasis leads to liver cirrhosis.",
+    "matchType": "fuzzy_options",
+    "similarity": 0.833,
+    "enriched": false
+  },
+  {
+    "source": "Hegazy",
+    "sourceQNum": 19,
+    "candidateStem": "Ground glass appearance is a characteristic feature of HBV infection",
+    "matchedId": "MGL3-CH5-PATH-0782",
+    "matchedText": "19.Ground glass appearance is a characteristic feature of HBV infection",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "Hegazy",
+    "sourceQNum": 20,
+    "candidateStem": "The most common primary hepatic tumor in children is hepatoblastoma",
+    "matchedId": "MGL3-CH5-PATH-1038",
+    "matchedText": "20.The most common primary hepatic tumor in children is hepatoblastoma",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "Hegazy",
+    "sourceQNum": 21,
+    "candidateStem": "In chronic persistant hepatitis the inflammation is mainly in the lobules",
+    "matchedId": "MGL3-CH5-PATH-0811",
+    "matchedText": "21.In chronic persistant hepatitis the inflammation is mainly in the lobules",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "Hegazy",
+    "sourceQNum": 22,
+    "candidateStem": "In chronic active hepatitis the limiting plate is intact",
+    "matchedId": "MGL3-CH5-PATH-0813",
+    "matchedText": "5) In chronic active hepatitis the limiting plate is intact",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "Hegazy",
+    "sourceQNum": 23,
+    "candidateStem": "Solitary gall stones are usually cholesterol stones",
+    "matchedId": "MGL3-CH5-PATH-1069",
+    "matchedText": "TRUE & FALSE:\n23.Solitary gall stones are usually cholesterol stones",
+    "matchType": "substring_options",
+    "similarity": 0.8,
+    "enriched": false
+  },
+  {
+    "source": "Hegazy",
+    "sourceQNum": 25,
+    "candidateStem": "Brown  stones have laminated cut section",
+    "matchedId": "MGL3-CH5-PATH-1095",
+    "matchedText": "8 - Brown stones have laminated cut section.",
+    "matchType": "fuzzy_high",
+    "similarity": 0.857,
+    "enriched": false
+  },
+  {
+    "source": "Hegazy",
+    "sourceQNum": 26,
+    "candidateStem": "Pigment stones of GB are usually multiple",
+    "matchedId": "MGL3-CH5-PATH-1083",
+    "matchedText": "9) Pigment stones of GB are usually multiple",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "Hegazy",
+    "sourceQNum": 27,
+    "candidateStem": "Carcinoma of gall bladder spreads mainly by lymphatics",
+    "matchedId": "MGL3-CH5-PATH-1081",
+    "matchedText": "TRUE & FALSE:\n27.Carcinoma of gall bladder spreads mainly by lymphatics",
+    "matchType": "fuzzy_options",
+    "similarity": 0.727,
+    "enriched": false
+  },
+  {
+    "source": "Hegazy",
+    "sourceQNum": 28,
+    "candidateStem": "Pure cholesterol stones are the commonest type of gall stones",
+    "matchedId": "MGL3-CH5-PATH-1068",
+    "matchedText": "11 - Pure cholesterol stones are the commonest type of gall stones.",
+    "matchType": "fuzzy_high",
+    "similarity": 0.9,
+    "enriched": false
+  },
+  {
+    "source": "Hegazy",
+    "sourceQNum": 29,
+    "candidateStem": "Excess alcohol consumption is an important  cause of pancreatitis",
+    "matchedId": "MGL3-CH5-PATH-1129",
+    "matchedText": "12) Excess alcohol consumption is an important cause of pancreatitis.",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "Hegazy",
+    "sourceQNum": 30,
+    "candidateStem": "Destruction of the endocrine tissue of the pancreas leads to steatarrhoea",
+    "matchedId": "MGL3-CH5-PATH-1131",
+    "matchedText": "30.Destruction of the endocrine tissue of the pancreas leads to steatarrhoea",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "Hegazy",
+    "sourceQNum": 31,
+    "candidateStem": "Adenocarcinoma of the pancreas usually arises from the exocrine portion",
+    "matchedId": "MGL3-CH5-PATH-1153",
+    "matchedText": "15) Adenocarcinoma of the pancreas usually arises from the exocrine portion",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "Hegazy",
+    "sourceQNum": 34,
+    "candidateStem": "The commonest peritoneal tumor is metastatic tumors",
+    "matchedId": "MGL3-CH5-PATH-0664",
+    "matchedText": "34.The commonest peritoneal tumor is metastatic tumors",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "Hegazy",
+    "sourceQNum": 35,
+    "candidateStem": "Pseudomyxoma peritonii occurs only in mucinous tumors",
+    "matchedId": "MGL3-CH5-PATH-0747",
+    "matchedText": "35.Pseudomyxoma peritonii occurs only in mucinous tumors",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "Hegazy",
+    "sourceQNum": 36,
+    "candidateStem": "A 55-year-old woman presents to the emergency department with profuse bright red  hematemesis, diagnosed as bleeding oes",
+    "matchedId": "MGL3-CH5-PATH-0892",
+    "matchedText": "36. A 55-year-old woman presents to the emergency department with profuse bright red\n   hematemesis, diagnosed as bleedi",
+    "matchType": "fuzzy_high",
+    "similarity": 0.956,
+    "enriched": false
+  },
+  {
+    "source": "Hegazy",
+    "sourceQNum": 37,
+    "candidateStem": "Pigmentary cirrhosis occur due to:",
+    "matchedId": "MGL3-CH5-PATH-0930",
+    "matchedText": "37. Pigmentary cirrhosis occur due to:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "Hegazy",
+    "sourceQNum": 38,
+    "candidateStem": "Aspiration of a cystic lesion in the right lobe of the liver reveals grayish-brown, pasty  material, with streaks of blo",
+    "matchedId": "MGL3-CH5-PATH-0959",
+    "matchedText": "11. Aspiration of a cystic lesion in the right lobe of the liver reveals\ngrayish-brown, pasty material, with streaks of ",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AlaaPharma",
+    "sourceQNum": 2,
+    "candidateStem": "Compared to famotidine, ranitidine has the following characteristics:",
+    "matchedId": "MGL3-CH6-PHAR-0159",
+    "matchedText": "2) Compared to famotidine, ranitidine has the following characteristics:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AlaaPharma",
+    "sourceQNum": 3,
+    "candidateStem": "True statement concerning sucralfate:",
+    "matchedId": "MGL3-CH6-PHAR-0564",
+    "matchedText": "True statement concerning sucralfate:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AlaaPharma",
+    "sourceQNum": 4,
+    "candidateStem": "True statement(s) concerning misoprostol include all the following except:",
+    "matchedId": "MGL3-CH6-PHAR-0248",
+    "matchedText": "7. True statement (s) concerning misoprostol include all the following except:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AlaaPharma",
+    "sourceQNum": 5,
+    "candidateStem": "The following is wrong statement concerning colloidal bismuth:",
+    "matchedId": "MGL3-CH6-PHAR-0221",
+    "matchedText": "5) The following is wrong statement concerning colloidal bismuth:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AlaaPharma",
+    "sourceQNum": 6,
+    "candidateStem": "A cytoprotective agent given with antisecretory agents to chelate proteins  in ulcer base:",
+    "matchedId": "MGL3-CH6-PHAR-0229",
+    "matchedText": "6) A cytoprotective agent given with antisecretory agents to chelate proteins\n       in ulcer base:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AlaaPharma",
+    "sourceQNum": 7,
+    "candidateStem": "Triple anti-H pylori therapy may include all the following drugs except:",
+    "matchedId": "MGL3-CH6-PHAR-0566",
+    "matchedText": "Triple anti-H pylori therapy may include all the following drugs EXCEPT:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AlaaPharma",
+    "sourceQNum": 8,
+    "candidateStem": "GERD may benefit from the following except:",
+    "matchedId": "MGL3-CH6-PHAR-0295",
+    "matchedText": "19) GERD may benefit from the following except:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AlaaPharma",
+    "sourceQNum": 9,
+    "candidateStem": "Sodium bicarbonate has the following disadvantages except:",
+    "matchedId": "MGL3-CH6-PHAR-0266",
+    "matchedText": "20. Sodium bicarbonate has the following disadvantages except:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AlaaPharma",
+    "sourceQNum": 10,
+    "candidateStem": "The following is wrong regarding Anti- H pylori therapy",
+    "matchedId": "MGL3-CH6-PHAR-0284",
+    "matchedText": "10) The following is wrong regarding Anti- H pylori therapy",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AlaaPharma",
+    "sourceQNum": 11,
+    "candidateStem": "The following is incorrect regarding the antacids",
+    "matchedId": "MGL3-CH6-PHAR-0264",
+    "matchedText": "64) The following is incorrect regarding the antacids",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AlaaPharma",
+    "sourceQNum": 13,
+    "candidateStem": "The following is incorrect statement",
+    "matchedId": "MGL3-CH6-PHAR-0567",
+    "matchedText": "The following is INCORRECT statement:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AlaaPharma",
+    "sourceQNum": 14,
+    "candidateStem": "The following drug is not used in treatment of GERD",
+    "matchedId": "MGL3-CH6-PHAR-0307",
+    "matchedText": "67) The following drug is not used in treatment of GERD",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AlaaPharma",
+    "sourceQNum": 15,
+    "candidateStem": "The following is incorrect statement:",
+    "matchedId": "MGL3-CH6-PHAR-0567",
+    "matchedText": "The following is INCORRECT statement:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AlaaPharma",
+    "sourceQNum": 16,
+    "candidateStem": "The following is Wrong regarding management of Cirrhotic ascites",
+    "matchedId": "MGL3-CH6-PHAR-0320",
+    "matchedText": "69) The following is Wrong regarding management of Cirrhotic ascites",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AlaaPharma",
+    "sourceQNum": 18,
+    "candidateStem": "The following drug do not decrease portal pressure",
+    "matchedId": "MGL3-CH6-PHAR-0407",
+    "matchedText": "71) The following drug do not decrease portal pressure",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AlaaPharma",
+    "sourceQNum": 19,
+    "candidateStem": "Regarding therapy of esophageal varices, the following is incorrect",
+    "matchedId": "MGL3-CH6-PHAR-0385",
+    "matchedText": "72) Regarding therapy of esophageal varices, the following is incorrect",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AlaaPharma",
+    "sourceQNum": 20,
+    "candidateStem": "Which of the following is not a mechanism of action of Lactulose",
+    "matchedId": "MGL3-CH6-PHAR-0420",
+    "matchedText": "20. Which of the following is not a mechanism of action of lactulose",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AlaaPharma",
+    "sourceQNum": 21,
+    "candidateStem": "The following drug is not correctly matched with its mechanism",
+    "matchedId": "MGL3-CH6-PHAR-0397",
+    "matchedText": "21) The following drug is not correctly matched with its mechanism",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AlaaPharma",
+    "sourceQNum": 22,
+    "candidateStem": "The following is not an adverse effects of cyclosporine",
+    "matchedId": "MGL3-CH6-PHAR-0363",
+    "matchedText": "62)  The following is not an adverse effect of cyclosporine",
+    "matchType": "fuzzy_options",
+    "similarity": 0.8,
+    "enriched": false
+  },
+  {
+    "source": "AlaaPharma",
+    "sourceQNum": 24,
+    "candidateStem": "The following drug IN NOT used in cirrhotic ascites",
+    "matchedId": "MGL3-CH6-PHAR-0392",
+    "matchedText": "24) The following drug IN NOT used in cirrhotic ascites",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AlaaPharma",
+    "sourceQNum": 25,
+    "candidateStem": "Which of the following statement is Wrong?",
+    "matchedId": "MGL3-CH2-PHYS-0719",
+    "matchedText": "53) Which of the following statement is wrong ;-",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AlaaPharma",
+    "sourceQNum": 26,
+    "candidateStem": "The following should be corrected to minimize development of  encephalopathy in patient suffering from hepatic cirrhosis",
+    "matchedId": "MGL3-CH6-PHAR-0336",
+    "matchedText": "26) The following should be corrected to minimize development of\n     encephalopathy in patient suffering from hepatic c",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AlaaPharma",
+    "sourceQNum": 27,
+    "candidateStem": "The following decrease ammonia in the intestine except",
+    "matchedId": "MGL3-CH6-PHAR-0357",
+    "matchedText": "27) The following decrease ammonia in the intestine except",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AlaaPharma",
+    "sourceQNum": 28,
+    "candidateStem": "The following drug is not recommended in esophageal bleeding at  hospital",
+    "matchedId": "MGL3-CH6-PHAR-0310",
+    "matchedText": "28) The following drug is not recommended in esophageal bleeding at\n     hospital",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AlaaPharma",
+    "sourceQNum": 29,
+    "candidateStem": "Addition of nitroglycerine to vasopressin has all the following effect  except",
+    "matchedId": "MGL3-CH6-PHAR-0570",
+    "matchedText": "Addition of nitroglycerine to vasopressin has all the following effect EXCEPT:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AlaaPharma",
+    "sourceQNum": 30,
+    "candidateStem": "The following is incorrect regarding lactulose",
+    "matchedId": "MGL3-CH6-PHAR-0365",
+    "matchedText": "30) The following is incorrect regarding lactulose",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AlaaPharma",
+    "sourceQNum": 31,
+    "candidateStem": "The following drugs are used in hepatic cirrhosis to increase  ammonia metabolism except",
+    "matchedId": "MGL3-CH6-PHAR-0332",
+    "matchedText": "31) The following drugs are used in hepatic cirrhosis to increase\n    ammonia metabolism except",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AlaaPharma",
+    "sourceQNum": 32,
+    "candidateStem": "The following drug do not induce splanchnic vasoconstriction",
+    "matchedId": "MGL3-CH6-PHAR-0381",
+    "matchedText": "32) The following drug do not induce splanchnic vasoconstriction",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AlaaPharma",
+    "sourceQNum": 33,
+    "candidateStem": "Immunosuppressive effects of corticosteroids do not include",
+    "matchedId": "MGL3-CH6-PHAR-0355",
+    "matchedText": "33) Immunosuppressive effects of corticosteroids do not include",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AlaaPharma",
+    "sourceQNum": 34,
+    "candidateStem": "Which of the following statement is wrong regarding corticosteroids",
+    "matchedId": "MGL3-CH6-PHAR-0364",
+    "matchedText": "34) Which of the following statement is wrong regarding corticosteroids",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AlaaPharma",
+    "sourceQNum": 35,
+    "candidateStem": "Choose the wrong statement regarding cyclosporine",
+    "matchedId": "MGL3-CH6-PHAR-0351",
+    "matchedText": "35) Choose the wrong statement regarding cyclosporine",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AlaaPharma",
+    "sourceQNum": 37,
+    "candidateStem": "The following is incorrect statement",
+    "matchedId": "MGL3-CH6-PHAR-0567",
+    "matchedText": "The following is INCORRECT statement:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 1,
+    "candidateStem": "Trypsinogen in pancreatic juice is activated by:",
+    "matchedId": "MGL3-CH2-PHYS-0454",
+    "matchedText": "Trypsinogen in pancreatic juice is activated by:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 2,
+    "candidateStem": "Chemotrypsinogen in pancreatic juice is activated  by:",
+    "matchedId": "MGL3-CH2-PHYS-0419",
+    "matchedText": "Chemotrypsinogen in pancreatic juice is activated by:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 3,
+    "candidateStem": "Pancreatic lipase activity is increased by:",
+    "matchedId": "MGL3-CH2-PHYS-0450",
+    "matchedText": "Pancreatic lipase activity is increased by:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 4,
+    "candidateStem": "All of the following statements concerning  pancreatic secretion are true except:",
+    "matchedId": "MGL3-CH2-PHYS-0440",
+    "matchedText": "All of the following statements concerning pancreatic secretion are true except:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 5,
+    "candidateStem": "The following hormone stimulates pancreatic acinar  secretion rich in enzymes and poor in HCO₃:",
+    "matchedId": "MGL3-CH2-PHYS-0438",
+    "matchedText": "The following hormone stimulates pancreatic acinar secretion rich in enzymes and poor in HCO₃:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 6,
+    "candidateStem": "Loss of pancreatic secretion produces all of the  following except:",
+    "matchedId": "MGL3-CH2-PHYS-0430",
+    "matchedText": "Loss of pancreatic secretion produces all of the following except:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 7,
+    "candidateStem": "Which is NOT true about pancreatic secretion:",
+    "matchedId": "MGL3-CH2-PHYS-0425",
+    "matchedText": "Which is NOT true about pancreatic secretion:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 8,
+    "candidateStem": "Pancreatic secretion contains all the following  except:",
+    "matchedId": "MGL3-CH2-PHYS-0414",
+    "matchedText": "Pancreatic secretion contains all the following except:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 9,
+    "candidateStem": "All the following statements concerning pancreatic  secretion are true except:",
+    "matchedId": "MGL3-CH2-PHYS-0442",
+    "matchedText": "All the following statements concerning pancreatic secretion are true except:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 10,
+    "candidateStem": "The following statements about pancreatic failure  are true except:",
+    "matchedId": "MGL3-CH2-PHYS-0462",
+    "matchedText": "The following statements about pancreatic failure are true except:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 11,
+    "candidateStem": "All the following are true about liver functions  except:",
+    "matchedId": "MGL3-CH2-PHYS-0441",
+    "matchedText": "All the following are true about liver functions except:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 12,
+    "candidateStem": "The following statements about bile are correct  except:",
+    "matchedId": "MGL3-CH2-PHYS-0489",
+    "matchedText": "The following statements about bile are correct except:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 13,
+    "candidateStem": "Gall bladder bile is characterized by all the  followings except:",
+    "matchedId": "MGL3-CH2-PHYS-0525",
+    "matchedText": "Gall bladder bile is characterized by all the followings except:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 14,
+    "candidateStem": "The following statement about bile salts are correct  except:",
+    "matchedId": "MGL3-CH2-PHYS-0518",
+    "matchedText": "The following statement about bile salts are correct except:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 15,
+    "candidateStem": "The following are choleretic agents:",
+    "matchedId": "MGL3-CH2-PHYS-0498",
+    "matchedText": "The following are choleretic agents:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 16,
+    "candidateStem": "The following are cholagouge agents:",
+    "matchedId": "MGL3-CH2-PHYS-0491",
+    "matchedText": "The following are cholagouge agents:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 17,
+    "candidateStem": "Hepatic bile secretion is stimulated by the following  except:",
+    "matchedId": "MGL3-CH2-PHYS-0483",
+    "matchedText": "Hepatic bile secretion is stimulated by the following except:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 19,
+    "candidateStem": "Emptying of gall bladder is stimulated by:",
+    "matchedId": "MGL3-CH2-PHYS-0521",
+    "matchedText": "Emptying of gall bladder is stimulated by:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 20,
+    "candidateStem": "The following statements are correct about  functions of gall bladder except:",
+    "matchedId": "MGL3-CH2-PHYS-0513",
+    "matchedText": "The following statements are correct about functions of gall bladder except:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 21,
+    "candidateStem": "A substance that produces contraction of  gallbladder wall and relaxation of sphincter of Odd is  described by being:",
+    "matchedId": "MGL3-CH2-PHYS-0524",
+    "matchedText": "A substance that produces contraction of gallbladder wall and relaxation of sphincter of Odd is described by being:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 22,
+    "candidateStem": "The following statements about bile salts are true  except:",
+    "matchedId": "MGL3-CH2-PHYS-0485",
+    "matchedText": "The following statements about bile salts are true except:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 23,
+    "candidateStem": "Peristaltic migrating complexes of small intestine  are characterized by all of the followings except:",
+    "matchedId": "MGL3-CH2-PHYS-0550",
+    "matchedText": "1) Peristaltic migrating complexes of small intestine are\ncharacterized by all of the followings except:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 24,
+    "candidateStem": "Rhythmic segmentation of small intestine is  characterized by the following except:",
+    "matchedId": "MGL3-CH2-PHYS-0580",
+    "matchedText": "2) Rhythmic segmentation of small intestine is\ncharacterized by the following except:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 25,
+    "candidateStem": "Migration motor complex is characterized by the  following except:",
+    "matchedId": "MGL3-CH2-PHYS-0582",
+    "matchedText": "Migration motor complex is characterized by the following except:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 26,
+    "candidateStem": "Small intestine segmenting motility is stimulated by  the following except:",
+    "matchedId": "MGL3-CH2-PHYS-0572",
+    "matchedText": "Small intestine segmenting motility is stimulated by the following except:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 27,
+    "candidateStem": "Small intestine motility is inhibited by the following  except:",
+    "matchedId": "MGL3-CH2-PHYS-0547",
+    "matchedText": "Small intestine motility is inhibited by the following except:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 28,
+    "candidateStem": "The primary small intestinal motility following  meals is:",
+    "matchedId": "MGL3-CH2-PHYS-0562",
+    "matchedText": "The primary small intestinal motility following meals is:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 29,
+    "candidateStem": "The primary small intestinal motility between meals  is:",
+    "matchedId": "MGL3-CH2-PHYS-0545",
+    "matchedText": "The primary small intestinal motility between meals is:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 30,
+    "candidateStem": "Segmentation movements in the small intestine :-",
+    "matchedId": "MGL3-CH2-PHYS-0592",
+    "matchedText": "8)\nSegmentation movements in the small intestine :-",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 31,
+    "candidateStem": "The Ileo-cecal valve is characterized by all of the  following EXCEPT:",
+    "matchedId": "MGL3-CH2-PHYS-0568",
+    "matchedText": "The Ileo-cecal valve is characterized by all of the following EXCEPT:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 32,
+    "candidateStem": "The Ileo-cecal sphincter is characterized by all of the  following EXCEPT:",
+    "matchedId": "MGL3-CH2-PHYS-0565",
+    "matchedText": "10) The Ileo-cecal sphincter is characterized by all of the\nfollowing EXCEPT:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 33,
+    "candidateStem": "The gastro-ileal reflex is characterized by:",
+    "matchedId": "MGL3-CH2-PHYS-0170",
+    "matchedText": "The gastro-ileal reflex is characterized by:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 34,
+    "candidateStem": "Emptying at ileocecal region is promoted by:",
+    "matchedId": "MGL3-CH2-PHYS-0560",
+    "matchedText": "Emptying at ileocecal region is promoted by:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 35,
+    "candidateStem": "Emptying at ileocecal region is inhibited by:",
+    "matchedId": "MGL3-CH2-PHYS-0546",
+    "matchedText": "13) Emptying at ileocecal region is inhibited by:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 36,
+    "candidateStem": "The following statements about succus entericus are  true except:",
+    "matchedId": "MGL3-CH2-PHYS-0552",
+    "matchedText": "14) The following statements about succus entericus\nare true except:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 37,
+    "candidateStem": "Succus entericus is inhibited by:",
+    "matchedId": "MGL3-CH2-PHYS-0586",
+    "matchedText": "Succus entericus is inhibited by:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 38,
+    "candidateStem": "The volume of succus entericus per day is about:",
+    "matchedId": "MGL3-CH2-PHYS-0576",
+    "matchedText": "16) The volume of succus entericus per day is about:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 39,
+    "candidateStem": "The main mechanism of succus entericus secretion  is:",
+    "matchedId": "MGL3-CH2-PHYS-0587",
+    "matchedText": "The main mechanism of succus entericus secretion is:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 40,
+    "candidateStem": "The intestinal brush border helps digestion and  absorption by the followings except:",
+    "matchedId": "MGL3-CH2-PHYS-0705",
+    "matchedText": "18) The intestinal brush border helps digestion and\nabsorption by the followings except:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 41,
+    "candidateStem": "The brush border of the small intestine contains all  of the following EXCEPT:",
+    "matchedId": "MGL3-CH2-PHYS-0656",
+    "matchedText": "19) The brush border of the small intestine contains all\nof the following EXCEPT:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 42,
+    "candidateStem": "Proteolysis in the small intestine is caused by all of  the followings except:",
+    "matchedId": "MGL3-CH2-PHYS-0695",
+    "matchedText": "20) Proteolysis in the small intestine is caused by all\nof the followings except:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 43,
+    "candidateStem": "Lactase enzyme splits lactose into:",
+    "matchedId": "MGL3-CH2-PHYS-0619",
+    "matchedText": "Lactase enzyme splits lactose into:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 44,
+    "candidateStem": "Complete digestion of …………. Occurs in the lumen of  small intestine:",
+    "matchedId": "MGL3-CH2-PHYS-0628",
+    "matchedText": "Complete digestion of …………. Occurs in the lumen of small intestine:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 45,
+    "candidateStem": "Compete protein digestion in the small intestine  occurs:",
+    "matchedId": "MGL3-CH2-PHYS-0610",
+    "matchedText": "Compete protein digestion in the small intestine occurs:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 46,
+    "candidateStem": "All of the following are true regarding lactose  intolerance EXCEPT:",
+    "matchedId": "MGL3-CH2-PHYS-0624",
+    "matchedText": "24) All of the following are true regarding lactose\nintolerance EXCEPT:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 47,
+    "candidateStem": "Which sentence is NOT true about absorption in the  small intestine:",
+    "matchedId": "MGL3-CH2-PHYS-0617",
+    "matchedText": "Which sentence is NOT true about absorption in the small intestine:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 48,
+    "candidateStem": "Which sentence is true about absorption in the small  intestine:",
+    "matchedId": "MGL3-CH2-PHYS-0623",
+    "matchedText": "Which sentence is true about absorption in the small intestine:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 52,
+    "candidateStem": "Absorption of Na ions from small intestine across the  luminal border occurs by the following except:",
+    "matchedId": "MGL3-CH2-PHYS-0661",
+    "matchedText": "30) Absorption of Na ions from small intestine across\nthe luminal border occurs by the following except:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 53,
+    "candidateStem": "Absorption of Cl- ions from small intestine occur by  the following mechanisms except:",
+    "matchedId": "MGL3-CH2-PHYS-0699",
+    "matchedText": "31) Absorption of Cl- ions from small intestine occur by\nthe following mechanisms except:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 54,
+    "candidateStem": "All of the followings are absorbed by Na dependent  2ry active transport except:",
+    "matchedId": "MGL3-CH2-PHYS-0649",
+    "matchedText": "All of the followings are absorbed by Na dependent 2ry active transport except:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 55,
+    "candidateStem": "The major site of absorption of vitamin B12 is:",
+    "matchedId": "MGL3-CH2-PHYS-0707",
+    "matchedText": "The major site of absorption of vitamin B12 is:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 56,
+    "candidateStem": "The following are true statements about absorption  of carbohydrates from small intestine except:",
+    "matchedId": "MGL3-CH2-PHYS-0663",
+    "matchedText": "34) The following are true statements about absorption\nof carbohydrates from small intestine except:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 57,
+    "candidateStem": "Absorption of glucose in the small intestine :-",
+    "matchedId": "MGL3-CH2-PHYS-0877",
+    "matchedText": "Absorption of glucose in the small intestine:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 58,
+    "candidateStem": "Fructose is absorbed from small intestine by:",
+    "matchedId": "MGL3-CH2-PHYS-0702",
+    "matchedText": "Fructose is absorbed from small intestine by:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 59,
+    "candidateStem": "Galactose is absorbed from small intestine by:",
+    "matchedId": "MGL3-CH2-PHYS-0616",
+    "matchedText": "Galactose is absorbed from small intestine by:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 60,
+    "candidateStem": "Protein absorption from small intestine occurs by all  these mechanisms EXCEPT:",
+    "matchedId": "MGL3-CH2-PHYS-0605",
+    "matchedText": "38) Protein absorption from small intestine occurs by all\nthese mechanisms EXCEPT:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 61,
+    "candidateStem": "Regarding the absorption of amino acids, all the  following statement are correct except :-",
+    "matchedId": "MGL3-CH2-PHYS-0652",
+    "matchedText": "Regarding the absorption of amino acids, all the following statement are correct except-:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 62,
+    "candidateStem": "Absorbed proteins from small intestine do NOT  include:",
+    "matchedId": "MGL3-CH2-PHYS-0680",
+    "matchedText": "Absorbed proteins from small intestine do NOT include:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 63,
+    "candidateStem": "About fat absorption from small intestine:",
+    "matchedId": "MGL3-CH2-PHYS-0876",
+    "matchedText": "About fat absorption from small intestine:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 64,
+    "candidateStem": "About absorption from small intestine:",
+    "matchedId": "MGL3-CH2-PHYS-0638",
+    "matchedText": "42) About absorption from small intestine:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 65,
+    "candidateStem": "Absorption of fat-soluble vitamins require the  following:",
+    "matchedId": "MGL3-CH2-PHYS-0606",
+    "matchedText": "43) Absorption of fat-soluble vitamins require the\nfollowing:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 66,
+    "candidateStem": "Vitamin D is absorbed from small intestine as the  absorption of:",
+    "matchedId": "MGL3-CH2-PHYS-0630",
+    "matchedText": "44) Vitamin D is absorbed from small intestine as the\nabsorption of:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 67,
+    "candidateStem": "Vitamin C is absorbed from small intestine by a  mechanism similar to the absorption of:",
+    "matchedId": "MGL3-CH2-PHYS-0715",
+    "matchedText": "Vitamin C is absorbed from small intestine by a mechanism similar to the absorption of:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 70,
+    "candidateStem": "Which of the following decrease iron absorption  from small intestine:",
+    "matchedId": "MGL3-CH2-PHYS-0666",
+    "matchedText": "Which of the following decrease iron absorption from small intestine:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 71,
+    "candidateStem": "Which of the following increase iron absorption  from small intestine:",
+    "matchedId": "MGL3-CH2-PHYS-0651",
+    "matchedText": "49) Which of the following increase iron absorption\nfrom small intestine:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 72,
+    "candidateStem": "The following are true statement about hepcidin  hormone except:",
+    "matchedId": "MGL3-CH2-PHYS-0671",
+    "matchedText": "The following are true statement about hepcidin hormone except:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 74,
+    "candidateStem": "Which of the following is NOT involved in calcium  absorption from small intestine:",
+    "matchedId": "MGL3-CH2-PHYS-0600",
+    "matchedText": "Which of the following is NOT involved in calcium absorption from small intestine:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 75,
+    "candidateStem": "Which of the following statement is wrong ;-",
+    "matchedId": "MGL3-CH2-PHYS-0719",
+    "matchedText": "53) Which of the following statement is wrong ;-",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 76,
+    "candidateStem": "The volume that is absorbed by small intestine per  day is about:",
+    "matchedId": "MGL3-CH2-PHYS-0664",
+    "matchedText": "54) The volume that is absorbed by small intestine per\nday is about:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 77,
+    "candidateStem": "The volume that enters the large intestine per day is  about:",
+    "matchedId": "MGL3-CH2-PHYS-0754",
+    "matchedText": "55) The volume that enters the large intestine per day is\nabout:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 78,
+    "candidateStem": "Cholera toxins cause diarrhea by:",
+    "matchedId": "MGL3-CH2-PHYS-0763",
+    "matchedText": "Cholera toxins cause diarrhea by:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 79,
+    "candidateStem": "Diarrhea may be caused by:",
+    "matchedId": "MGL3-CH2-PHYS-0740",
+    "matchedText": "57) Diarrhea may be caused by:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 80,
+    "candidateStem": "Harmful effects of severe diarrhea do NOT include:",
+    "matchedId": "MGL3-CH2-PHYS-0741",
+    "matchedText": "58) Harmful effects of severe diarrhea do NOT include:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 82,
+    "candidateStem": "Haustration movements of large intestine are:",
+    "matchedId": "MGL3-CH2-PHYS-0760",
+    "matchedText": "Haustration movements of large intestine are:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 83,
+    "candidateStem": "Functions of haustration movements of large  intestine do NOT include:",
+    "matchedId": "MGL3-CH2-PHYS-0742",
+    "matchedText": "Functions of haustration movements of large intestine do NOT include:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 84,
+    "candidateStem": "Which sentence is NOT true about haustration  movements of large intestine:",
+    "matchedId": "MGL3-CH2-PHYS-0755",
+    "matchedText": "Which sentence is NOT true about haustration movements of large intestine:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 85,
+    "candidateStem": "Colonic mass movement is:",
+    "matchedId": "MGL3-CH2-PHYS-0736",
+    "matchedText": "Colonic mass movement is:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": true
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 86,
+    "candidateStem": "Which sentence about colonic mass movement is  NOT true:",
+    "matchedId": "MGL3-CH2-PHYS-0750",
+    "matchedText": "Which sentence about colonic mass movement is NOT true:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 87,
+    "candidateStem": "Mass movement in the colon is decreased by:",
+    "matchedId": "MGL3-CH2-PHYS-0757",
+    "matchedText": "Mass movement in the colon is decreased by:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 88,
+    "candidateStem": "Gastric distension initiates all of the following  EXCEPT:",
+    "matchedId": "MGL3-CH2-PHYS-0204",
+    "matchedText": "Gastric distension initiates all of the following EXCEPT:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 89,
+    "candidateStem": "Large intestinal secretion is stimulated by:",
+    "matchedId": "MGL3-CH2-PHYS-0761",
+    "matchedText": "Large intestinal secretion is stimulated by:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 90,
+    "candidateStem": "About defecation:",
+    "matchedId": "MGL3-CH2-PHYS-0776",
+    "matchedText": "About defecation:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 91,
+    "candidateStem": "A preparatory reflex for defecation is:",
+    "matchedId": "MGL3-CH2-PHYS-0739",
+    "matchedText": "A preparatory reflex for defecation is:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 92,
+    "candidateStem": "Defecation spinal center is present in:",
+    "matchedId": "MGL3-CH2-PHYS-0747",
+    "matchedText": "Defecation spinal center is present in:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 94,
+    "candidateStem": "Cutting the pudendal nerve that controls the  external anal sphincter result in:",
+    "matchedId": "MGL3-CH2-PHYS-0758",
+    "matchedText": "Cutting the pudendal nerve that controls the external anal sphincter result in:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 95,
+    "candidateStem": "The most important colonic secretion is:",
+    "matchedId": "MGL3-CH2-PHYS-0744",
+    "matchedText": "The most important colonic secretion is:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 96,
+    "candidateStem": "The gastro colic reflex :-",
+    "matchedId": "MGL3-CH2-PHYS-0189",
+    "matchedText": "The gastro colic reflex-:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 97,
+    "candidateStem": "Colonic bacteria perform all of the following  EXCEPT:",
+    "matchedId": "MGL3-CH2-PHYS-0767",
+    "matchedText": "Colonic bacteria perform all of the following EXCEPT:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 98,
+    "candidateStem": "All of the following are causes of constipation  EXCEPT:",
+    "matchedId": "MGL3-CH2-PHYS-0734",
+    "matchedText": "All of the following are causes of constipation EXCEPT:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 100,
+    "candidateStem": "The gastrin hormone has all of the following  properties except ;-",
+    "matchedId": "MGL3-CH2-PHYS-0825",
+    "matchedText": "The gastrin hormone has all of the following properties except-;",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 101,
+    "candidateStem": "Gastrin hormone :-",
+    "matchedId": "MGL3-CH3-HIST-0406",
+    "matchedText": "61. Gastrin hormone",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 102,
+    "candidateStem": "The CCK hormone;",
+    "matchedId": "MGL3-CH2-PHYS-0848",
+    "matchedText": "The CCK hormone:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 103,
+    "candidateStem": "Regarding CCK hormone, choose the false  statement :-",
+    "matchedId": "MGL3-CH2-PHYS-0813",
+    "matchedText": "Regarding CCK hormone, choose the false statement-:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 104,
+    "candidateStem": "Regarding CCK hormone, all the following  statements are correct except :-",
+    "matchedId": "MGL3-CH2-PHYS-0810",
+    "matchedText": "Regarding CCK hormone, all the following statements are correct except-:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 105,
+    "candidateStem": "CCK hormone :-",
+    "matchedId": "MGL3-CH2-PHYS-0841",
+    "matchedText": "CCK hormone-:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 106,
+    "candidateStem": "Secretin hormone:",
+    "matchedId": "MGL3-CH2-PHYS-0834",
+    "matchedText": "Secretin hormone:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 108,
+    "candidateStem": "Regarding secretin hormone, all of the following are  true EXCEPT:",
+    "matchedId": "MGL3-CH2-PHYS-0838",
+    "matchedText": "Regarding secretin hormone, all of the following are true EXCEPT:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 109,
+    "candidateStem": "The VIP hormone has all of the following actions  except:",
+    "matchedId": "MGL3-CH2-PHYS-0808",
+    "matchedText": "The VIP hormone has all of the following actions except:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 111,
+    "candidateStem": "The GIP hormone has all of the following effects  except ;-",
+    "matchedId": "MGL3-CH2-PHYS-0806",
+    "matchedText": "The GIP hormone has all of the following effects except-;",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 112,
+    "candidateStem": "Regarding the GIP hormone all the following  statements are true except :-",
+    "matchedId": "MGL3-CH2-PHYS-0787",
+    "matchedText": "Regarding the GIP hormone all the following statements are true except-:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 113,
+    "candidateStem": "Regarding the motilin hormone:",
+    "matchedId": "MGL3-CH2-PHYS-0855",
+    "matchedText": "Regarding the motilin hormone:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 114,
+    "candidateStem": "Regarding the motilin hormone all the following  statements are true except :-",
+    "matchedId": "MGL3-CH2-PHYS-0853",
+    "matchedText": "Regarding the motilin hormone all the following statements are true except-:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 115,
+    "candidateStem": "Regarding the somatostatin hormone all the  following statements are true except :-",
+    "matchedId": "MGL3-CH2-PHYS-0824",
+    "matchedText": "Regarding the somatostatin hormone all the following statements are true except-:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 116,
+    "candidateStem": "Regarding the somatostatin hormone all the  following statements are true except :-",
+    "matchedId": "MGL3-CH2-PHYS-0824",
+    "matchedText": "Regarding the somatostatin hormone all the following statements are true except-:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 117,
+    "candidateStem": "Regarding the ghrelin hormone all the following  statements are true except :-",
+    "matchedId": "MGL3-CH2-PHYS-0817",
+    "matchedText": "Regarding the ghrelin hormone all the following statements are true except-:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 118,
+    "candidateStem": "The only GIT hormone that stimulates insulin  secretion in response to glucose in duodenum is:",
+    "matchedId": "MGL3-CH2-PHYS-0832",
+    "matchedText": "The only GIT hormone that stimulates insulin secretion in response to glucose in duodenum is:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 119,
+    "candidateStem": "Which of the following GIT hormones does not  stimulates insulin secretion:",
+    "matchedId": "MGL3-CH2-PHYS-0820",
+    "matchedText": "Which of the following GIT hormones does not stimulates insulin secretion:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 120,
+    "candidateStem": "The only GIT hormone that stimulates appetite and  food intake is:",
+    "matchedId": "MGL3-CH2-PHYS-0789",
+    "matchedText": "The only GIT hormone that stimulates appetite and food intake is:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 121,
+    "candidateStem": "The only GIT hormone that stimulates motility  between meals is:",
+    "matchedId": "MGL3-CH2-PHYS-0859",
+    "matchedText": "The only GIT hormone that stimulates motility between meals is:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 122,
+    "candidateStem": "The only GIT hormone that inhibits all secretory and  motor GIT activities is:",
+    "matchedId": "MGL3-CH2-PHYS-0846",
+    "matchedText": "The only GIT hormone that inhibits all secretory and motor GIT activities is:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 123,
+    "candidateStem": "The vasodilator substance of GIT blood vessels is:",
+    "matchedId": "MGL3-CH2-PHYS-0849",
+    "matchedText": "The vasodilator substance of GIT blood vessels is:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "AbdelHamid",
+    "sourceQNum": 124,
+    "candidateStem": "The diarrhea due to lactose intolerance is:",
+    "matchedId": "MGL3-CH2-PHYS-0751",
+    "matchedText": "The diarrhea due to lactose intolerance is:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "HistoMCQ3",
+    "sourceQNum": 1,
+    "candidateStem": "Carcinoid tumor , Is tumor of:",
+    "matchedId": "MGL3-CH3-HIST-0567",
+    "matchedText": "94. Carcinoid tumor, Is tumor of:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "HistoMCQ3",
+    "sourceQNum": 2,
+    "candidateStem": "CAVEOLATED CELLS, all true xcept:",
+    "matchedId": "MGL3-CH3-HIST-0470",
+    "matchedText": "CAVEOLATED CELLS, all true xcept:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "HistoMCQ3",
+    "sourceQNum": 3,
+    "candidateStem": "All about hepatocyte is true EXCEPT:",
+    "matchedId": "MGL3-CH3-HIST-0871",
+    "matchedText": "47. All about hepatocyte is true EXCEPT:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "HistoMCQ3",
+    "sourceQNum": 4,
+    "candidateStem": "Space of Disse contain the following EXCEPT:",
+    "matchedId": "MGL3-CH3-HIST-0842",
+    "matchedText": "48. Space of Disse contain the following EXCEPT:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "HistoMCQ3",
+    "sourceQNum": 5,
+    "candidateStem": "Ito cells , all true except:",
+    "matchedId": "MGL3-CH3-HIST-0896",
+    "matchedText": "103. Ito cells, all true except:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "HistoMCQ3",
+    "sourceQNum": 6,
+    "candidateStem": "All about Bile is true EXCEPT:",
+    "matchedId": "MGL3-CH3-HIST-1010",
+    "matchedText": "All about Bile is true EXCEPT:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "HistoMCQ3",
+    "sourceQNum": 7,
+    "candidateStem": "Exocrine portion of pancreas show the following EXCEPT:",
+    "matchedId": "MGL3-CH3-HIST-1066",
+    "matchedText": "105. Exocrine portion of pancreas show the following EXCEPT:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "HistoMCQ3",
+    "sourceQNum": 8,
+    "candidateStem": "The following cells are involved in lipid digestion & absorption EXCEPT:",
+    "matchedId": "MGL3-CH3-HIST-0718",
+    "matchedText": "The following cells are involved in carbohydrates digestion & absorption EXCEPT:",
+    "matchType": "fuzzy_options",
+    "similarity": 0.818,
+    "enriched": false
+  },
+  {
+    "source": "HistoMCQ3",
+    "sourceQNum": 9,
+    "candidateStem": "Sieve plate is the found in the endothelium of:",
+    "matchedId": "MGL3-CH3-HIST-0903",
+    "matchedText": "107. Sieve plate is the found in the endothelium of:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "HistoMCQ3",
+    "sourceQNum": 10,
+    "candidateStem": "All the following are contents of space of Disse except:",
+    "matchedId": "MGL3-CH3-HIST-0982",
+    "matchedText": "All the following are contents of space of Disse except:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "HistoMCQ3",
+    "sourceQNum": 11,
+    "candidateStem": "Kupffer cells, one of the following is not true:",
+    "matchedId": "MGL3-CH3-HIST-0879",
+    "matchedText": "Kupffer cells, one of the following is not true:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "HistoMCQ3",
+    "sourceQNum": 12,
+    "candidateStem": "Pancreatic acinar cells , the following is true except:",
+    "matchedId": "MGL3-CH3-HIST-1063",
+    "matchedText": "56. Pancreatic acinar cells, the following is true except:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "HistoMCQ3",
+    "sourceQNum": 13,
+    "candidateStem": "Centro acinar cells , all true except:",
+    "matchedId": "MGL3-CH3-HIST-1061",
+    "matchedText": "57. Centro acinar cells, all true except:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "HistoMCQ3",
+    "sourceQNum": 14,
+    "candidateStem": "Endothelial  cells of liver sinusoids ,the following is true except:",
+    "matchedId": "MGL3-CH3-HIST-0946",
+    "matchedText": "Endothelial cells of liver sinusoids ,the following is true except:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "HistoMCQ3",
+    "sourceQNum": 15,
+    "candidateStem": "All about duodenum is true EXCEPT:",
+    "matchedId": "MGL3-CH3-HIST-0616",
+    "matchedText": "42. All about duodenum is true EXCEPT:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "HistoMCQ3",
+    "sourceQNum": 16,
+    "candidateStem": "plicae circularis (Kerckring’s valves) all true except:",
+    "matchedId": "MGL3-CH3-HIST-0602",
+    "matchedText": "43. plicae circularis (Kerckring's valves) all true except:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "HistoMCQ3",
+    "sourceQNum": 17,
+    "candidateStem": "Brunner’s glands show the following EXCEPT:",
+    "matchedId": "MGL3-CH3-HIST-0650",
+    "matchedText": "Brunner’s glands show the following EXCEPT:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "HistoMCQ3",
+    "sourceQNum": 18,
+    "candidateStem": "Plicea circularis  (valves of kerkring) are:",
+    "matchedId": "MGL3-CH3-HIST-0703",
+    "matchedText": "Plicea circularis (valves of kerkring) are:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "HistoMCQ3",
+    "sourceQNum": 19,
+    "candidateStem": "Intestinal villi  contain the following except:",
+    "matchedId": "MGL3-CH3-HIST-0710",
+    "matchedText": "44. Intestinal villi contain the following except:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "HistoMCQ3",
+    "sourceQNum": 21,
+    "candidateStem": "Glycocalyx (cell coat) on microvilli of enterocytes show the following EXCEPT:",
+    "matchedId": "MGL3-CH3-HIST-0611",
+    "matchedText": "Glycocalyx (cell coat) on microvilli of enterocytes show the following EXCEPT:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "HistoMCQ3",
+    "sourceQNum": 22,
+    "candidateStem": "COLUMNAR ABSORPATIVE CELLS (ENTEROCYTES) all true except:",
+    "matchedId": "MGL3-CH3-HIST-0609",
+    "matchedText": "47. COLUMNAR ABSORPATIVE CELLS (ENTEROCYTES) all true except:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "HistoMCQ3",
+    "sourceQNum": 23,
+    "candidateStem": "(M  CELLS) show the following EXCEPT:",
+    "matchedId": "MGL3-CH3-HIST-0661",
+    "matchedText": "48. (M CELLS) show the following EXCEPT:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "HistoMCQ3",
+    "sourceQNum": 24,
+    "candidateStem": "In malabsorption syndrome the affected cells are:",
+    "matchedId": "MGL3-CH3-HIST-0599",
+    "matchedText": "49. In malabsorption syndrome the affected cells are:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "HistoMCQ3",
+    "sourceQNum": 26,
+    "candidateStem": "Crypts of large intestine are lined by the following EXCEPT:",
+    "matchedId": "MGL3-CH3-HIST-0799",
+    "matchedText": "51. Crypts of large intestine are lined by the following EXCEPT:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "HistoMCQ3",
+    "sourceQNum": 27,
+    "candidateStem": "All about Paneth cell is true EXCEPT:",
+    "matchedId": "MGL3-CH3-HIST-0656",
+    "matchedText": "52. All about Paneth cell is true EXCEPT:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "HistoMCQ3",
+    "sourceQNum": 28,
+    "candidateStem": "Human appendix show the following EXCEPT:",
+    "matchedId": "MGL3-CH3-HIST-0767",
+    "matchedText": "53. Human appendix show the following EXCEPT:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  },
+  {
+    "source": "HistoMCQ3",
+    "sourceQNum": 29,
+    "candidateStem": "The Rectoanal junction all true except:",
+    "matchedId": "MGL3-CH3-HIST-0820",
+    "matchedText": "The Rectoanal junction all true except:",
+    "matchType": "exact",
+    "similarity": 1.0,
+    "enriched": false
+  }
+]

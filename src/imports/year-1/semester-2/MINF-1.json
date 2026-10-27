@@ -549,13 +549,13 @@
               "id": "MINF1-CH1-MICR-0031",
               "type": "mcq",
               "lecture": 2,
-              "text": "Attachment of bacteria to arti cial heart valves can be mediated by which of the following structures?",
-              "explanation": "The correct answer is Glycocalyx. The question is anchored in bacterial cell architecture, including the cell wall, cytoplasmic membrane, capsule, pili, flagella, spores, and ribosomes. The distractors usually confuse optional appendages, eukaryotic organelles, or structures that belong to a different bacterial group.",
-              "keyConcept": "Bacterial structure high-yield: Attachment of bacteria to arti cial heart valves can be mediated by which of the following structures? → Glycocalyx.",
+              "text": "Attachment of bacteria to artificial heart valves can be mediated by which of the following structures?",
+              "explanation": "The correct answer is Glycocalyx. Bacterial glycocalyx (slime layer/biofilm) enables strong adherence to prosthetic and abiotic surfaces like artificial heart valves, notably seen with Staphylococcus epidermidis.",
+              "keyConcept": "Bacterial glycocalyx facilitates adherence and biofilm formation on prosthetic heart valves.",
               "options": [
-                "Cell membrans",
+                "Cell membranes",
                 "Glycocalyx",
-                "Flflagella",
+                "Flagella",
                 "Lipopolysaccharide",
                 "Sex pili"
               ],
@@ -2803,12 +2803,12 @@
               "id": "MINF1-CH1-MICR-0169",
               "type": "mcq",
               "lecture": 5,
-              "text": "Heat shock & Cat*Cl are important in which of the following?",
-              "explanation": "The correct answer is Arti cial competence. This is a bacterial genetics item, so the key is distinguishing mutation from transformation, transduction, conjugation, lysogeny, plasmids, and transposons. The wrong answers generally use the wrong route of DNA transfer or the wrong genetic vehicle.",
-              "keyConcept": "Bacterial genetics high-yield: Heat shock & Cat*Cl are important in which of the following? → Arti cial competence.",
+              "text": "Heat shock & CaCl2 are important in which of the following?",
+              "explanation": "The correct answer is Artificial competence. Chemical transformation commonly uses divalent cations like CaCl2 on ice followed by a brief heat shock (42°C) to alter membrane permeability and induce competence for plasmid DNA uptake.",
+              "keyConcept": "Bacterial genetics high-yield: Heat shock & CaCl2 are important in which of the following? → Artificial competence.",
               "options": [
                 "Specialized transduction",
-                "Arti cial competence",
+                "Artificial competence",
                 "Conjugation",
                 "Natural competence"
               ],
@@ -2836,10 +2836,10 @@
               "type": "mcq",
               "lecture": 5,
               "text": "Which of the following is untrue regarding transformation?",
-              "explanation": "The correct answer is Involves a bacteriophage. This is a bacterial genetics item, so the key is distinguishing mutation from transformation, transduction, conjugation, lysogeny, plasmids, and transposons. The wrong answers generally use the wrong route of DNA transfer or the wrong genetic vehicle.",
-              "keyConcept": "Bacterial genetics high-yield: Which of the following is untrue regarding transformation? → Involves a bacteriophage.",
+              "explanation": "The correct answer is Involves a bacteriophage. Bacteriophages mediate transduction, whereas transformation involves uptake of naked soluble DNA from the environment without any viral vehicle.",
+              "keyConcept": "Transformation involves naked DNA uptake without a bacteriophage vehicle.",
               "options": [
-                "The donor DNA is extracted arti cially or released by cell lysis",
+                "The donor DNA is extracted artificially or released by cell lysis",
                 "Naked DNA enters the host cell directly",
                 "The recipient cell becomes competent by heat shock",
                 "Propagate genes of virulence",
@@ -5993,16 +5993,16 @@
               "id": "MINF1-CH1-MICR-0366",
               "type": "mcq",
               "lecture": 7,
-              "text": "Toxic shock syndrome toxin (TSST-D is primarily produced by:",
-              "explanation": "The correct answer is Strept. viridans. The item depends on identifying medically important bacteria by Gram reaction, shape, culture requirement, biochemical test, virulence factor, disease syndrome, or specimen. The distractors overlap clinically but fail the specific laboratory or pathogenic clue.",
-              "keyConcept": "Medically important bacteria high-yield: Toxic shock syndrome toxin (TSST-D is primarily produced by: → Strept. viridans.",
+              "text": "Toxic shock syndrome toxin-1 (TSST-1) is primarily produced by:",
+              "explanation": "The correct answer is Staphylococcus aureus. Toxic shock syndrome toxin-1 (TSST-1) is a pyrogenic superantigen produced by Staphylococcus aureus strains that cross-links MHC class II molecules on antigen-presenting cells to the variable beta domain (Vbeta) of T-cell receptors without antigen processing, precipitating massive cytokine release (IL-1, IL-2, TNF-alpha, IFN-gamma). While Streptococcus pyogenes produces streptococcal pyrogenic exotoxins (SpeA, SpeC) causing streptococcal toxic shock syndrome, TSST-1 specifically designates the staphylococcal superantigen.",
+              "keyConcept": "Toxic shock syndrome toxin-1 (TSST-1) is a superantigen produced by Staphylococcus aureus.",
               "options": [
                 "Staphylococcus aureus",
                 "Streptococcus pyogenes",
-                "Streptococcus pneumonice",
-                "Strept. viridans"
+                "Streptococcus pneumoniae",
+                "Streptococcus viridans"
               ],
-              "correctIndex": 3,
+              "correctIndex": 0,
               "modelAnswer": null
             },
             {

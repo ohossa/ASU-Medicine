@@ -1,6 +1,7 @@
 import { expect, it } from "vitest";
 import {
   buildSearchEntries,
+  availableSearchCollections,
   searchEntries,
   answerText,
   highlightParts,
@@ -102,4 +103,15 @@ it("returns every match instead of dropping results after 100", () => {
     ),
   ]);
   expect(searchEntries(entries, "lipase", {})).toHaveLength(151);
+});
+
+it('recognizes title-only exams and scopes collection availability without trapping the current selection',()=>{
+ const regular=source('NO-1',1,[q('a','Practice')]);
+ const past=source('YES-1',1,[q('b','Exam')]);past.chapters[0].title='Past Exams';
+ const entries=buildSearchEntries([regular,past]);
+ expect(entries.find(e=>e.moduleCode==='YES-1')?.collection).toBe('past-exams');
+ expect(availableSearchCollections(entries,{module:'NO-1',collection:'past-exams'})).toEqual(['practice']);
+ expect(availableSearchCollections(entries,{module:'YES-1',collection:'practice'})).toEqual(['past-exams']);
+ expect(availableSearchCollections(entries,{module:'all',collection:'past-exams'})).toEqual(['practice','past-exams']);
+ expect(availableSearchCollections(entries,{module:'YES-1',type:'essay'})).toEqual([]);
 });

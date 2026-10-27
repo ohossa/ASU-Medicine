@@ -1,0 +1,556 @@
+[
+  {
+    "group": "rape",
+    "representative_occurrence": "ETH-D01-Q01",
+    "occurrence_ids": [
+      "ETH-D01-Q01"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.118948+00:00",
+    "source_question_hash": "b2c232d91fc7372da05cf3c6a46a568f8fa9cc067877fb597c4c6443bbf59c55",
+    "decision": "exclude_ambiguous",
+    "reason": "Other groups may also require consent unless a specific compulsory-examination law applies; that exception is not stated or verified for all options.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Current course clarification or authoritative context followed by renewed exact-content review"
+  },
+  {
+    "group": "head",
+    "representative_occurrence": "ETH-D01-Q02",
+    "occurrence_ids": [
+      "ETH-D01-Q02",
+      "ETH-D02-Q03",
+      "ETH-D02-Q17",
+      "ETH-D04-Q03",
+      "ETH-D05-Q11"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.122446+00:00",
+    "source_question_hash": "d999193a14468940842327ff93d8b7af71e2adcc64ebbf3a2cf07f9b69b9811b",
+    "decision": "exclude_ambiguous",
+    "reason": "Urgency and absent relatives do not establish that the patient cannot consent; the emergency exception needs capacity/known-refusal conditions absent from the stem.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Current course clarification or authoritative context followed by renewed exact-content review"
+  },
+  {
+    "group": "malfalse",
+    "representative_occurrence": "ETH-D01-Q06",
+    "occurrence_ids": [
+      "ETH-D01-Q06"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.123026+00:00",
+    "source_question_hash": "b5a610505130f36853e048d3400000758961cbb90b95b0dd03e5db2c56cd01a7",
+    "decision": "exclude_ambiguous",
+    "reason": "An injury can be nonpreventable in one respect while a negligent breach causes compensable harm in another; the purported false option is not unambiguously false.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Current course clarification or authoritative context followed by renewed exact-content review"
+  },
+  {
+    "group": "death-a",
+    "representative_occurrence": "ETH-D01-Q08",
+    "occurrence_ids": [
+      "ETH-D01-Q08"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.123076+00:00",
+    "source_question_hash": "d54083ab1a51b780aba3fb10fb11f114222280713db3223f82d28b9fdab6157a",
+    "decision": "exclude_ambiguous",
+    "reason": "Egypt-specific legal death criteria require a verified controlling statute and irreversibility/context; the historical all-vital-functions key cannot be safely accepted as a general rule.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Current course clarification or authoritative context followed by renewed exact-content review"
+  },
+  {
+    "group": "bio",
+    "representative_occurrence": "ETH-D02-Q01",
+    "occurrence_ids": [
+      "ETH-D02-Q01",
+      "ETH-D04-Q01",
+      "ETH-D05-Q09"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.123293+00:00",
+    "source_question_hash": "25fde839620fb033d456bfe190063465af891f68370d0f24e949b5e093014aaa",
+    "decision": "exclude_ambiguous",
+    "reason": "Bioethics is broader than professional interactions; variation by religion/society and the narrow professional-interaction definition make the offered single best answer unsafe.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Current course clarification or authoritative context followed by renewed exact-content review"
+  },
+  {
+    "group": "students-exam",
+    "representative_occurrence": "ETH-D02-Q05",
+    "occurrence_ids": [
+      "ETH-D02-Q05",
+      "ETH-D04-Q05",
+      "ETH-D05-Q13"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.132037+00:00",
+    "source_question_hash": "ec9d3db82ad2a9807313f96062e5ff345da4ea6c2d0c9ff63099cf6ecb61b536",
+    "decision": "exclude_ambiguous",
+    "reason": "Student examination requires agreement, but the other groups are not automatically exempt from consent; missing jurisdiction-specific compulsory-examination conditions.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Current course clarification or authoritative context followed by renewed exact-content review"
+  },
+  {
+    "group": "redacted-7",
+    "representative_occurrence": "ETH-D02-Q07",
+    "occurrence_ids": [
+      "ETH-D02-Q07"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.132107+00:00",
+    "source_question_hash": "9cd0683d144f9e8997b55401636a613ac7ff788e9783540813dd1b7dc3825607",
+    "decision": "exclude_incomplete",
+    "reason": "Essential question and options are obscured by an opaque rectangle. No reconstruction or guessed key.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Unredacted source"
+  },
+  {
+    "group": "polio",
+    "representative_occurrence": "ETH-D02-Q09",
+    "occurrence_ids": [
+      "ETH-D02-Q09",
+      "ETH-D04-Q12",
+      "ETH-D05-Q20"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.132155+00:00",
+    "source_question_hash": "d75042468f6067ee1f5a69ee12f5fb726a33deb8923ba03ff4365698ffdcaeee",
+    "decision": "exclude_ambiguous",
+    "reason": "The historical key overrides parental refusal. Counseling and public-health enforcement depend on applicable Egyptian vaccination duties; the stem does not specify a lawful override process.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Current course clarification or authoritative context followed by renewed exact-content review"
+  },
+  {
+    "group": "redacted-10",
+    "representative_occurrence": "ETH-D02-Q10",
+    "occurrence_ids": [
+      "ETH-D02-Q10"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.132166+00:00",
+    "source_question_hash": "9cd0683d144f9e8997b55401636a613ac7ff788e9783540813dd1b7dc3825607",
+    "decision": "exclude_incomplete",
+    "reason": "Essential question and options are obscured by an opaque rectangle. No reconstruction or guessed key.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Unredacted source"
+  },
+  {
+    "group": "pharmbad",
+    "representative_occurrence": "ETH-D02-Q11",
+    "occurrence_ids": [
+      "ETH-D02-Q11",
+      "ETH-D04-Q15",
+      "ETH-D05-Q23"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.132172+00:00",
+    "source_question_hash": "d09869b8fd365da711fc48ec4c48b7bc46b0774d4c4ad5dd7baac700f7546fda",
+    "decision": "exclude_ambiguous",
+    "reason": "Recruitment-only payments differ from reasonable payment for actual research work; the unqualified payment option is not necessarily unethical.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Current course clarification or authoritative context followed by renewed exact-content review"
+  },
+  {
+    "group": "redacted-12",
+    "representative_occurrence": "ETH-D02-Q12",
+    "occurrence_ids": [
+      "ETH-D02-Q12"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.132200+00:00",
+    "source_question_hash": "9cd0683d144f9e8997b55401636a613ac7ff788e9783540813dd1b7dc3825607",
+    "decision": "exclude_incomplete",
+    "reason": "Essential question and options are obscured by an opaque rectangle. No reconstruction or guessed key.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Unredacted source"
+  },
+  {
+    "group": "bedrock",
+    "representative_occurrence": "ETH-D02-Q15",
+    "occurrence_ids": [
+      "ETH-D02-Q15",
+      "ETH-D03-Q04"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.132585+00:00",
+    "source_question_hash": "19722fadbed5c52a5c76fa6ecf4456a9dbba5eca5116c111209f5f6ecb02e220",
+    "decision": "exclude_ambiguous",
+    "reason": "Bedrock is an undefined course slogan. The four principles have no universal ranking; supplied course material is insufficient to validate a unique answer.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Current course clarification or authoritative context followed by renewed exact-content review"
+  },
+  {
+    "group": "capacity",
+    "representative_occurrence": "ETH-D02-Q16",
+    "occurrence_ids": [
+      "ETH-D02-Q16"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.132637+00:00",
+    "source_question_hash": "766e0d54daaeb098e63782f5b214af9ce676dc8f9c618288519a35da8d106e0c",
+    "decision": "exclude_ambiguous",
+    "reason": "Voluntariness and decision-making capacity are different. Free choice is a consent requirement, not a determinant of cognitive capacity, creating more than one defensible exception.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Current course clarification or authoritative context followed by renewed exact-content review"
+  },
+  {
+    "group": "death-b",
+    "representative_occurrence": "ETH-D04-Q08",
+    "occurrence_ids": [
+      "ETH-D04-Q08",
+      "ETH-D05-Q16"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.133068+00:00",
+    "source_question_hash": "2245e51be7b6466b4b467b7d5b659c0c46f45bf2987f4340abde3255c553fde6",
+    "decision": "exclude_ambiguous",
+    "reason": "The stem omits irreversibility and the applicable Egyptian death determination context; no controlling statute verified for its historical key.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Current course clarification or authoritative context followed by renewed exact-content review"
+  },
+  {
+    "group": "breachallowed",
+    "representative_occurrence": "ETH-D05-Q04",
+    "occurrence_ids": [
+      "ETH-D05-Q04"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.133482+00:00",
+    "source_question_hash": "9d94fc9ceb7f61b97ee5e73328a93f8f67d766fee9c42f916b76e08efd0c9d88",
+    "decision": "exclude_ambiguous",
+    "reason": "HIV disclosure to a fiancée requires serious-risk, consent and proportionality conditions; neither a positive test nor relationship status alone justifies an unconditional answer.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Current course clarification or authoritative context followed by renewed exact-content review"
+  },
+  {
+    "group": "breachnot",
+    "representative_occurrence": "ETH-D05-Q06",
+    "occurrence_ids": [
+      "ETH-D05-Q06"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.133703+00:00",
+    "source_question_hash": "6133b84e680772e29ff35a79c0d674d1654d12388bfffc9ac951f7d4b0e75c73",
+    "decision": "exclude_ambiguous",
+    "reason": "Several disclosures depend on consent and threat conditions. A positive HIV test alone and a blanket employer disclosure can both be impermissible.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Current course clarification or authoritative context followed by renewed exact-content review"
+  },
+  {
+    "group": "labour",
+    "representative_occurrence": "ETH-D05-Q07",
+    "occurrence_ids": [
+      "ETH-D05-Q07"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.133749+00:00",
+    "source_question_hash": "f53b3b1def3f674810675c7ae5ac8ed95284653d4f299e0383790290e722f604",
+    "decision": "exclude_ambiguous",
+    "reason": "Consent is needed for the patient at labor, but employers and other listed groups may also need consent absent stated lawful compulsory-examination exceptions.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Current course clarification or authoritative context followed by renewed exact-content review"
+  },
+  {
+    "group": "sex",
+    "representative_occurrence": "ETH-D05-Q27",
+    "occurrence_ids": [
+      "ETH-D05-Q27"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.133898+00:00",
+    "source_question_hash": "9a17efbbd195ce4e2290e85a6cfa85735a93d04a05293c74991d76ed05cb9969",
+    "decision": "exclude_ambiguous",
+    "reason": "Family balancing, population policy and legal permissibility vary across jurisdictions. Egyptian religious permission does not by itself establish a general ethical/legal single answer.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Current course clarification or authoritative context followed by renewed exact-content review"
+  },
+  {
+    "group": "somatic-b",
+    "representative_occurrence": "ETH-D05-Q33",
+    "occurrence_ids": [
+      "ETH-D05-Q33"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.134577+00:00",
+    "source_question_hash": "5028e4f39b7d8afacb67e64550fac025c30483aec4a4b8052427c7f065b97a0a",
+    "decision": "exclude_ambiguous",
+    "reason": "Unqualified stem cells include different lineages; no option expressly identifies nonreproductive somatic cells. The intended B needs a specification not present in the source.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Current course clarification or authoritative context followed by renewed exact-content review"
+  },
+  {
+    "group": "passive",
+    "representative_occurrence": "ETH-D05-Q34",
+    "occurrence_ids": [
+      "ETH-D05-Q34"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.134587+00:00",
+    "source_question_hash": "e3f1e5638537034af0badf1f366e486a1e809aeef6ba21ad6c960612c66a4619",
+    "decision": "exclude_ambiguous",
+    "reason": "The source uses older passive-euthanasia terminology without intention, consent or benefit context. Withholding treatment alone does not establish euthanasia under modern guidance.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Current course clarification or authoritative context followed by renewed exact-content review"
+  },
+  {
+    "group": "studentconsent",
+    "representative_occurrence": "ETH-D05-Q36",
+    "occurrence_ids": [
+      "ETH-D05-Q36"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.134633+00:00",
+    "source_question_hash": "1da827a118c569a8bdd14cd05a3517f0cc9cb130c711f31276a59ed76b3daad3",
+    "decision": "exclude_ambiguous",
+    "reason": "Both oral and written explicit consent can permit student examination. The stem does not ask for a minimum or distinguish a particular setting.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Current course clarification or authoritative context followed by renewed exact-content review"
+  },
+  {
+    "group": "hiv",
+    "representative_occurrence": "ETH-D05-Q38",
+    "occurrence_ids": [
+      "ETH-D05-Q38"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.134678+00:00",
+    "source_question_hash": "a3b5bc4a99e21e43fc9524b365ba3093ad7d5e64837a5c8a3694f521104ef4d6",
+    "decision": "exclude_ambiguous",
+    "reason": "The legally obligated recipient depends on jurisdiction, notifiable-disease rules and occupational exposure risks; these are not specified.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Current course clarification or authoritative context followed by renewed exact-content review"
+  },
+  {
+    "group": "pharmgood",
+    "representative_occurrence": "ETH-D05-Q39",
+    "occurrence_ids": [
+      "ETH-D05-Q39"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.134690+00:00",
+    "source_question_hash": "5626f77a5cb717f7a591f7642d28c93fdd22390dc9ab927bb692ddd29e4d838b",
+    "decision": "exclude_ambiguous",
+    "reason": "Meeting representatives may be acceptable, but reasonable compensation for real research work may also be acceptable; payment purpose is unspecified.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Current course clarification or authoritative context followed by renewed exact-content review"
+  },
+  {
+    "group": "exceptdisclose",
+    "representative_occurrence": "ETH-D05-Q41",
+    "occurrence_ids": [
+      "ETH-D05-Q41"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.134734+00:00",
+    "source_question_hash": "b334fbfe4f3d96b425340e7ca5adb1d736818f399b30738da7453484f98ecb8b",
+    "decision": "exclude_ambiguous",
+    "reason": "Public-safety risk and acting as an expert do not automatically oblige every disclosure; statutory and court-order conditions are missing.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Current course clarification or authoritative context followed by renewed exact-content review"
+  },
+  {
+    "group": "morals",
+    "representative_occurrence": "ETH-D05-Q48",
+    "occurrence_ids": [
+      "ETH-D05-Q48"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.135109+00:00",
+    "source_question_hash": "c8fb25116632741a06ea5c8fdd98261572c0aeba770886cda327fcf2eae9ff01",
+    "decision": "exclude_ambiguous",
+    "reason": "The private-personal versus professional-ethics distinction is a course convention; ethics and morals overlap and the source supplies no authoritative unique definition.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Current course clarification or authoritative context followed by renewed exact-content review"
+  },
+  {
+    "group": "ivf-b",
+    "representative_occurrence": "ETH-D05-Q49",
+    "occurrence_ids": [
+      "ETH-D05-Q49"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.135117+00:00",
+    "source_question_hash": "9d58193eb0dc617eb688a79c313549959f0107b991591ef5ab0b4ab91dc89b24",
+    "decision": "exclude_ambiguous",
+    "reason": "Sex testing may be religiously permitted under safeguards, but that does not establish the unqualified Egyptian statutory permission in the stem.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Current course clarification or authoritative context followed by renewed exact-content review"
+  },
+  {
+    "group": "obligatory",
+    "representative_occurrence": "ETH-D05-Q50",
+    "occurrence_ids": [
+      "ETH-D05-Q50"
+    ],
+    "reviewer": "Codex GPT-6; source comparison and opened authoritative evidence",
+    "review_method": "nonblind",
+    "independent_check": "not performed",
+    "review_event_timestamp": null,
+    "serialization_timestamp": "2026-10-11T18:32:26.135125+00:00",
+    "source_question_hash": "187ee0a493b7c8181794b8a4d07f0c4548a75ca040b0c72b7c05df1bdfa72acf",
+    "decision": "exclude_ambiguous",
+    "reason": "The other examination categories are not universally lawful compulsory examinations; specific statutory criteria and consent safeguards are absent.",
+    "final_answer": null,
+    "reviewed_content_hash": null,
+    "evidence": [],
+    "historical_comparison": "UNRESOLVED",
+    "required_follow_up": "Current course clarification or authoritative context followed by renewed exact-content review"
+  }
+]

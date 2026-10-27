@@ -8,8 +8,8 @@
     "mcqCount": 972,
     "essayCount": 41,
     "totalCount": 1013,
-    "revision": "a5e4247a66ed04b48cc85e6bf4cf9c4273870bcc16610fe41619be3a2916248a",
-    "bytes": 1066880
+    "revision": "2ca12f367c1305a436185e753428acc8ca843295afcb3d68340db8e6acd03c27",
+    "bytes": 1069841
   },
   "IBM-1": {
     "year": 1,
@@ -56,8 +56,8 @@
     "mcqCount": 859,
     "essayCount": 3,
     "totalCount": 862,
-    "revision": "04fe22a56c9e36e6c40326c55052c87452f21d41bfa1c44a8d1bef6ac04ec15e",
-    "bytes": 1812434
+    "revision": "654b37f45339183de6579dd31cd7af9a61bfd627ff91dacde0151272c2a9d7ca",
+    "bytes": 1812445
   },
   "MIM-1": {
     "year": 1,
@@ -68,8 +68,8 @@
     "mcqCount": 603,
     "essayCount": 37,
     "totalCount": 640,
-    "revision": "ea138bdbff0c2b73cc727af62d30d2810ab70529d6357158a2654e042ac778c4",
-    "bytes": 563216
+    "revision": "5a403b58e357870a13bffede0b9d37c988cb4b1683084f23855c5d861364cee4",
+    "bytes": 563218
   },
   "P1-1": {
     "year": 1,
@@ -92,8 +92,8 @@
     "mcqCount": 24,
     "essayCount": 0,
     "totalCount": 24,
-    "revision": "02c9020d982942dfa87ace350683c367105a45686eb5045153858c9c32ae209b",
-    "bytes": 29460
+    "revision": "e04900e3fe523f98e9c17814a3fb362bf054f464b745fd19339493c6ad854848",
+    "bytes": 33635
   },
   "IPAT-1": {
     "year": 1,
@@ -116,8 +116,8 @@
     "mcqCount": 604,
     "essayCount": 246,
     "totalCount": 850,
-    "revision": "a7a9817ba43e9307e4fe61d23db4f805be3a1194b8531a5624710ac6893f408c",
-    "bytes": 710194
+    "revision": "3d6f6aaab8b9a278d4f0801dd56957161c71057ac1172942a2c3d6dd97827845",
+    "bytes": 733063
   },
   "MINF-1": {
     "year": 1,
@@ -128,8 +128,8 @@
     "mcqCount": 1146,
     "essayCount": 318,
     "totalCount": 1464,
-    "revision": "c3e03db93a61d156889adb8e38bcb155ac3b103900f3c4d66b3d60c473b5af7a",
-    "bytes": 1555918
+    "revision": "dae515a2281afec2276e63d68d86f70cd83a41cf29569c276fdc36292dfceba8",
+    "bytes": 1555786
   },
   "MLS-1": {
     "year": 1,
@@ -137,11 +137,11 @@
     "paths": [
       "../imports/year-1/semester-2/MLS-1.json"
     ],
-    "mcqCount": 0,
-    "essayCount": 0,
-    "totalCount": 0,
-    "revision": "fc856593e389e62073d2a375fd43769b3a61a2b94abd2863edd7ba56f77880e5",
-    "bytes": 10685
+    "mcqCount": 2019,
+    "essayCount": 115,
+    "totalCount": 2134,
+    "revision": "f39a7f507fe94ad177b573bb5e40d36b86e5f871d7500ca3c77f4db5a85cd428",
+    "bytes": 1913415
   },
   "P2-1": {
     "year": 1,
@@ -164,8 +164,8 @@
     "mcqCount": 1219,
     "essayCount": 0,
     "totalCount": 1219,
-    "revision": "dcae49138e50197202521d44b1bc7790e52f1165deaf8419bc177c117263b7c4",
-    "bytes": 1275878
+    "revision": "c72918582ac9c291f9287895eaba8a74766c4adaf9a4567e09674bb08cdceee1",
+    "bytes": 1271067
   },
   "MCVS-2": {
     "year": 2,
@@ -176,7 +176,7 @@
     "mcqCount": 1014,
     "essayCount": 619,
     "totalCount": 1633,
-    "revision": "ed14ffcb5f5b5d477365c77dc5bbcb03d6f65c93ade3bf26d8c210a21d404426",
+    "revision": "186079a63e9f86835332f1bb694328f8e36392a1b9da326770d420add11c231a",
     "bytes": 2006935
   },
   "MRS-2": {
@@ -188,8 +188,8 @@
     "mcqCount": 1551,
     "essayCount": 802,
     "totalCount": 2353,
-    "revision": "6ae1ba35e7b09b173fe6f742a17c6c047bc75f01a57c3d748b1a3d60b2acbc98",
-    "bytes": 2649430
+    "revision": "7d7d0f33f182d2bb91a3a4f153842d586eff663286ff778dd3ab5bedf8d72090",
+    "bytes": 2646239
   },
   "MCNS-2": {
     "year": 2,
@@ -212,8 +212,8 @@
     "mcqCount": 637,
     "essayCount": 203,
     "totalCount": 840,
-    "revision": "9d61c04d36a09162bc83eb4b3f72005551198d05bc06e92f6eea0022947b4604",
-    "bytes": 757329
+    "revision": "12b52cb4e44807a7dac8be778c7330607997a85ca123c3784f1036e2c4f14526",
+    "bytes": 761732
   },
   "MSS-2": {
     "year": 2,
@@ -224,8 +224,8 @@
     "mcqCount": 1177,
     "essayCount": 427,
     "totalCount": 1604,
-    "revision": "9c257d3986b5320539fb830be30cdff571a1f81f7c9743523db7b9f0aaa61fe8",
-    "bytes": 1839277
+    "revision": "aeb1f0c05f187f291cd535cc29970cdfbae8657da0158056eb779a6cfa7fb687",
+    "bytes": 1969317
   },
   "P3-2": {
     "year": 2,
@@ -257,11 +257,11 @@
     "paths": [
       "../imports/year-3/semester-1/MGL-3.json"
     ],
-    "mcqCount": 5187,
-    "essayCount": 991,
-    "totalCount": 6178,
-    "revision": "e0e773df78ba3c191b5d1a9cf65aa5c75e00ba5ab6210669ec55beb29ce9ca1c",
-    "bytes": 4443476
+    "mcqCount": 5520,
+    "essayCount": 1019,
+    "totalCount": 6539,
+    "revision": "80e41e7a11b10e16983cd219b508a33432f62e3f034a6529389bb7234d0f5503",
+    "bytes": 4718591
   },
   "MUG-3": {
     "year": 3,

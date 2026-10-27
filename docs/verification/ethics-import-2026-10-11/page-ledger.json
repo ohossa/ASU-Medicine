@@ -1,0 +1,370 @@
+[
+  {
+    "document_id": "ETH-D01",
+    "page": 1,
+    "status": "visually_read",
+    "disposition": "questions",
+    "occurrence_ids": [
+      "ETH-D01-Q01",
+      "ETH-D01-Q02",
+      "ETH-D01-Q03",
+      "ETH-D01-Q04",
+      "ETH-D01-Q05",
+      "ETH-D01-Q06"
+    ],
+    "image": "PAGES/ETH-D01-p001.png",
+    "transcript": "OCR/ETH-D01-p001.txt",
+    "notes": "Q6 continues from page 1 to page 2."
+  },
+  {
+    "document_id": "ETH-D01",
+    "page": 2,
+    "status": "visually_read",
+    "disposition": "questions",
+    "occurrence_ids": [
+      "ETH-D01-Q06",
+      "ETH-D01-Q07",
+      "ETH-D01-Q08",
+      "ETH-D01-Q09"
+    ],
+    "image": "PAGES/ETH-D01-p002.png",
+    "transcript": "OCR/ETH-D01-p002.txt",
+    "notes": "Q6 continues from page 1 to page 2."
+  },
+  {
+    "document_id": "ETH-D02",
+    "page": 1,
+    "status": "visually_read",
+    "disposition": "cover",
+    "occurrence_ids": [],
+    "image": "PAGES/ETH-D02-p001.png",
+    "transcript": "OCR/ETH-D02-p001.txt",
+    "notes": ""
+  },
+  {
+    "document_id": "ETH-D02",
+    "page": 2,
+    "status": "visually_read",
+    "disposition": "questions",
+    "occurrence_ids": [
+      "ETH-D02-Q01",
+      "ETH-D02-Q02",
+      "ETH-D02-Q03",
+      "ETH-D02-Q04",
+      "ETH-D02-Q05"
+    ],
+    "image": "PAGES/ETH-D02-p002.png",
+    "transcript": "OCR/ETH-D02-p002.txt",
+    "notes": ""
+  },
+  {
+    "document_id": "ETH-D02",
+    "page": 3,
+    "status": "visually_read",
+    "disposition": "questions",
+    "occurrence_ids": [
+      "ETH-D02-Q06",
+      "ETH-D02-Q07",
+      "ETH-D02-Q08",
+      "ETH-D02-Q09",
+      "ETH-D02-Q10"
+    ],
+    "image": "PAGES/ETH-D02-p003.png",
+    "transcript": "OCR/ETH-D02-p003.txt",
+    "notes": "Three opaque rectangles hide Q7, Q10, Q12; not recoverable."
+  },
+  {
+    "document_id": "ETH-D02",
+    "page": 4,
+    "status": "visually_read",
+    "disposition": "questions",
+    "occurrence_ids": [
+      "ETH-D02-Q11",
+      "ETH-D02-Q12",
+      "ETH-D02-Q13",
+      "ETH-D02-Q14",
+      "ETH-D02-Q15",
+      "ETH-D02-Q16"
+    ],
+    "image": "PAGES/ETH-D02-p004.png",
+    "transcript": "OCR/ETH-D02-p004.txt",
+    "notes": "Three opaque rectangles hide Q7, Q10, Q12; not recoverable."
+  },
+  {
+    "document_id": "ETH-D02",
+    "page": 5,
+    "status": "visually_read",
+    "disposition": "questions_and_key",
+    "occurrence_ids": [
+      "ETH-D02-Q17",
+      "ETH-D02-Q18",
+      "ETH-D02-Q19",
+      "ETH-D02-Q20",
+      "ETH-D02-Q21"
+    ],
+    "image": "PAGES/ETH-D02-p005.png",
+    "transcript": "OCR/ETH-D02-p005.txt",
+    "notes": ""
+  },
+  {
+    "document_id": "ETH-D03",
+    "page": 1,
+    "status": "visually_read",
+    "disposition": "questions",
+    "occurrence_ids": [
+      "ETH-D03-Q01",
+      "ETH-D03-Q02",
+      "ETH-D03-Q03",
+      "ETH-D03-Q04"
+    ],
+    "image": "PAGES/ETH-D03-p001.png",
+    "transcript": "OCR/ETH-D03-p001.txt",
+    "notes": ""
+  },
+  {
+    "document_id": "ETH-D04",
+    "page": 1,
+    "status": "visually_read",
+    "disposition": "questions",
+    "occurrence_ids": [
+      "ETH-D04-Q01",
+      "ETH-D04-Q02",
+      "ETH-D04-Q03",
+      "ETH-D04-Q04",
+      "ETH-D04-Q05",
+      "ETH-D04-Q06",
+      "ETH-D04-Q07",
+      "ETH-D04-Q08"
+    ],
+    "image": "PAGES/ETH-D04-p001.png",
+    "transcript": "OCR/ETH-D04-p001.txt",
+    "notes": ""
+  },
+  {
+    "document_id": "ETH-D04",
+    "page": 2,
+    "status": "visually_read",
+    "disposition": "questions",
+    "occurrence_ids": [
+      "ETH-D04-Q09",
+      "ETH-D04-Q10",
+      "ETH-D04-Q11",
+      "ETH-D04-Q12",
+      "ETH-D04-Q13",
+      "ETH-D04-Q14",
+      "ETH-D04-Q15"
+    ],
+    "image": "PAGES/ETH-D04-p002.png",
+    "transcript": "OCR/ETH-D04-p002.txt",
+    "notes": ""
+  },
+  {
+    "document_id": "ETH-D05",
+    "page": 1,
+    "status": "visually_read",
+    "disposition": "questions",
+    "occurrence_ids": [
+      "ETH-D05-Q01",
+      "ETH-D05-Q02",
+      "ETH-D05-Q03"
+    ],
+    "image": "PAGES/ETH-D05-p001.png",
+    "transcript": "OCR/ETH-D05-p001.txt",
+    "notes": ""
+  },
+  {
+    "document_id": "ETH-D05",
+    "page": 2,
+    "status": "visually_read",
+    "disposition": "questions",
+    "occurrence_ids": [
+      "ETH-D05-Q04"
+    ],
+    "image": "PAGES/ETH-D05-p002.png",
+    "transcript": "OCR/ETH-D05-p002.txt",
+    "notes": ""
+  },
+  {
+    "document_id": "ETH-D05",
+    "page": 3,
+    "status": "visually_read",
+    "disposition": "questions",
+    "occurrence_ids": [
+      "ETH-D05-Q05",
+      "ETH-D05-Q06",
+      "ETH-D05-Q07"
+    ],
+    "image": "PAGES/ETH-D05-p003.png",
+    "transcript": "OCR/ETH-D05-p003.txt",
+    "notes": ""
+  },
+  {
+    "document_id": "ETH-D05",
+    "page": 4,
+    "status": "visually_read",
+    "disposition": "questions",
+    "occurrence_ids": [
+      "ETH-D05-Q08"
+    ],
+    "image": "PAGES/ETH-D05-p004.png",
+    "transcript": "OCR/ETH-D05-p004.txt",
+    "notes": ""
+  },
+  {
+    "document_id": "ETH-D05",
+    "page": 5,
+    "status": "visually_read",
+    "disposition": "questions",
+    "occurrence_ids": [
+      "ETH-D05-Q09",
+      "ETH-D05-Q10",
+      "ETH-D05-Q11",
+      "ETH-D05-Q12",
+      "ETH-D05-Q13",
+      "ETH-D05-Q14",
+      "ETH-D05-Q15",
+      "ETH-D05-Q16"
+    ],
+    "image": "PAGES/ETH-D05-p005.png",
+    "transcript": "OCR/ETH-D05-p005.txt",
+    "notes": ""
+  },
+  {
+    "document_id": "ETH-D05",
+    "page": 6,
+    "status": "visually_read",
+    "disposition": "questions",
+    "occurrence_ids": [
+      "ETH-D05-Q17",
+      "ETH-D05-Q18",
+      "ETH-D05-Q19",
+      "ETH-D05-Q20",
+      "ETH-D05-Q21",
+      "ETH-D05-Q22",
+      "ETH-D05-Q23"
+    ],
+    "image": "PAGES/ETH-D05-p006.png",
+    "transcript": "OCR/ETH-D05-p006.txt",
+    "notes": ""
+  },
+  {
+    "document_id": "ETH-D05",
+    "page": 7,
+    "status": "visually_read",
+    "disposition": "questions",
+    "occurrence_ids": [
+      "ETH-D05-Q24",
+      "ETH-D05-Q25",
+      "ETH-D05-Q26",
+      "ETH-D05-Q27"
+    ],
+    "image": "PAGES/ETH-D05-p007.png",
+    "transcript": "OCR/ETH-D05-p007.txt",
+    "notes": ""
+  },
+  {
+    "document_id": "ETH-D05",
+    "page": 8,
+    "status": "visually_read",
+    "disposition": "questions",
+    "occurrence_ids": [
+      "ETH-D05-Q28",
+      "ETH-D05-Q29",
+      "ETH-D05-Q30",
+      "ETH-D05-Q31",
+      "ETH-D05-Q32"
+    ],
+    "image": "PAGES/ETH-D05-p008.png",
+    "transcript": "OCR/ETH-D05-p008.txt",
+    "notes": ""
+  },
+  {
+    "document_id": "ETH-D05",
+    "page": 9,
+    "status": "visually_read",
+    "disposition": "questions",
+    "occurrence_ids": [
+      "ETH-D05-Q33",
+      "ETH-D05-Q34",
+      "ETH-D05-Q35",
+      "ETH-D05-Q36",
+      "ETH-D05-Q37"
+    ],
+    "image": "PAGES/ETH-D05-p009.png",
+    "transcript": "OCR/ETH-D05-p009.txt",
+    "notes": ""
+  },
+  {
+    "document_id": "ETH-D05",
+    "page": 10,
+    "status": "visually_read",
+    "disposition": "questions",
+    "occurrence_ids": [
+      "ETH-D05-Q38",
+      "ETH-D05-Q39"
+    ],
+    "image": "PAGES/ETH-D05-p010.png",
+    "transcript": "OCR/ETH-D05-p010.txt",
+    "notes": ""
+  },
+  {
+    "document_id": "ETH-D05",
+    "page": 11,
+    "status": "visually_read",
+    "disposition": "questions",
+    "occurrence_ids": [
+      "ETH-D05-Q40",
+      "ETH-D05-Q41",
+      "ETH-D05-Q42"
+    ],
+    "image": "PAGES/ETH-D05-p011.png",
+    "transcript": "OCR/ETH-D05-p011.txt",
+    "notes": ""
+  },
+  {
+    "document_id": "ETH-D05",
+    "page": 12,
+    "status": "visually_read",
+    "disposition": "questions",
+    "occurrence_ids": [
+      "ETH-D05-Q43",
+      "ETH-D05-Q44",
+      "ETH-D05-Q45",
+      "ETH-D05-Q46",
+      "ETH-D05-Q47",
+      "ETH-D05-Q48"
+    ],
+    "image": "PAGES/ETH-D05-p012.png",
+    "transcript": "OCR/ETH-D05-p012.txt",
+    "notes": ""
+  },
+  {
+    "document_id": "ETH-D05",
+    "page": 13,
+    "status": "visually_read",
+    "disposition": "questions",
+    "occurrence_ids": [
+      "ETH-D05-Q49",
+      "ETH-D05-Q50",
+      "ETH-D05-Q51",
+      "ETH-D05-Q52",
+      "ETH-D05-Q53",
+      "ETH-D05-Q54"
+    ],
+    "image": "PAGES/ETH-D05-p013.png",
+    "transcript": "OCR/ETH-D05-p013.txt",
+    "notes": ""
+  },
+  {
+    "document_id": "ETH-D05",
+    "page": 14,
+    "status": "visually_read",
+    "disposition": "questions",
+    "occurrence_ids": [
+      "ETH-D05-Q55"
+    ],
+    "image": "PAGES/ETH-D05-p014.png",
+    "transcript": "OCR/ETH-D05-p014.txt",
+    "notes": ""
+  }
+]

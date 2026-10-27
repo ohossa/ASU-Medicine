@@ -23,11 +23,13 @@ describe('GIT collection and subject navigation',()=>{
   fireEvent.click(screen.getByRole('button',{name:/Anatomy.*1 question/i}));
   expect(select).toHaveBeenCalledWith(chapters[0]);
  });
- it('past-exams block opens subjects before a topic can be selected',()=>{
+ it('past-exams block opens continuous exams before a subject can be selected',()=>{
   const select=vi.fn();render(<Flow select={select}/>);
   fireEvent.click(screen.getByRole('button',{name:/Past exams & recalls.*1 question/i}));
   expect(screen.getByRole('heading',{name:'Past exams & recalls'})).toBeInTheDocument();
   expect(select).not.toHaveBeenCalled();
+  fireEvent.click(screen.getByRole('button',{name:/Continuous 1 \(CA-1\)/i}));
+  expect(screen.getByRole('heading',{name:'Continuous 1 (CA-1)'})).toBeInTheDocument();
   fireEvent.click(screen.getByRole('button',{name:/Anatomy.*1 question/i}));
   expect(select).toHaveBeenCalledWith(chapters[1]);
  });
@@ -38,14 +40,14 @@ describe('GIT collection and subject navigation',()=>{
   expect(screen.getByRole('heading',{name:'Question bank'})).toBeInTheDocument();expect(back).not.toHaveBeenCalled();
   fireEvent.click(screen.getByRole('button',{name:'Back to study modes'}));expect(back).toHaveBeenCalledOnce();
  });
- it('topics preserve empty chapters as disabled, and a topic starts only its collection questions',()=>{
+ it('past exams only show chapters/topics that have questions and exclude empty ones',()=>{
   const selected=vi.fn();render(<SubjectSelect chapter={toGitTopicChapter(chapters[1])} moduleCode="MGL-3" onBack={vi.fn()} onSelectSubject={selected} onQuickStart={vi.fn()}/>);
   expect(screen.getByText('Chapters / topics')).toBeInTheDocument();
   const topic=screen.getByRole('button',{name:/Oral cavity/i});fireEvent.click(topic);
   expect(selected.mock.calls[0][1].map((q:any)=>q.id)).toEqual(['past-exams-q']);
-  expect(screen.getByRole('button',{name:/Palate/i})).toBeDisabled();
+  expect(screen.queryByRole('button',{name:/Palate/i})).not.toBeInTheDocument();
   expect(screen.queryByText('Coming Soon...')).not.toBeInTheDocument();
-  expect(screen.getByText('No questions in this mode')).toBeInTheDocument();
+  expect(screen.queryByText('No questions in this mode')).not.toBeInTheDocument();
  });
  it('empty subjects cannot start a quiz',()=>{
   const empty={...chapters[0],subjects:[{...chapters[0].subjects[0],questions:[]}]};
@@ -65,3 +67,12 @@ describe('GIT collection and subject navigation',()=>{
     fireEvent.click(screen.getByRole('button',{name:'Question bank'}));expect(change).toHaveBeenCalledWith('practice');
   });
  });
+
+it.each(['practice','past-exams'] as const)('hides unavailable exams and recovers stale %s selection',collection=>{
+ const empty={...chapters[1],subjects:[{...chapters[1].subjects[0],questions:[]}]};
+ render(<GitBankSelect chapters={[chapters[0],empty]} collection={collection} onCollectionChange={vi.fn()} studyModeName="Essay" onSelectChapter={vi.fn()} onBackToModeSelect={vi.fn()}/>);
+ expect(screen.queryByRole('region',{name:'Past exams & recalls'})).toBeNull();
+ expect(screen.queryByText('Past exams & recalls')).toBeNull();
+ expect(screen.getByRole('heading',{name:'Question bank'})).toBeInTheDocument();
+ expect(screen.getByRole('button',{name:/Anatomy.*1 question/i})).toBeEnabled();
+});

@@ -1,0 +1,227 @@
+{
+  "audit_date": "2026-10-12",
+  "status": "PASS",
+  "scope": "Independent organization-only QC; no medical answer re-review and no bank/registry/placement edits by auditor.",
+  "final_file_sha256": {
+    "ORGANIZATION/refined-topic-registry.json": "69b6245e6157dabe780df984ea891312146d5384ea4449b640a89321310af4b0",
+    "ORGANIZATION/refined-topic-placements.jsonl": "555ad330387844be78c2da97375e3c2fb2b90fc98aa03ff6359ea60b7e29aeea",
+    "STAGING/IHC-1.before-topic-ui.json": "1a9a96ac05d8fcc18e975618a03074ce83aede0c043778544f599516f78e0e69",
+    "STAGING/IHC-1.json": "406d2477bbfbc243f332933d29fd7b16d1a93e01aeb5626d2e837334aea4f062"
+  },
+  "checks": {
+    "all1227unique_ids_exactly_covered": true,
+    "original_chapter_and_subject_retained": true,
+    "exact_question_payload_preservation_excluding_only_lecture": true,
+    "all_final_lecture_assignments_match_final_placements": true,
+    "all_placement_labels_agree_registry": true,
+    "all_declared_counts_recomputed_correctly": true,
+    "all_topic_groups_nonempty": true,
+    "all_tested_stems_match_final_questions": true,
+    "topic_order_and_names_match_bank_subject_metadata": true,
+    "all13accepted_corrections_integrated": true,
+    "book_page_metadata_corrections_integrated": true,
+    "before_bank_hash_matches_registry_source_bank_hash": true,
+    "first_five_chapters_follow_designated_book": true,
+    "cell21topics_max_question_count_at_most50": true
+  },
+  "chapter_summary": [
+    {
+      "chapter": 1,
+      "title": "Microtechniques and Microscopy",
+      "topics": 3,
+      "questions": 57,
+      "max_topic_questions": 24
+    },
+    {
+      "chapter": 2,
+      "title": "The Cell",
+      "topics": 21,
+      "questions": 525,
+      "max_topic_questions": 44
+    },
+    {
+      "chapter": 3,
+      "title": "Epithelial Tissue",
+      "topics": 11,
+      "questions": 218,
+      "max_topic_questions": 46
+    },
+    {
+      "chapter": 4,
+      "title": "Connective Tissue",
+      "topics": 13,
+      "questions": 273,
+      "max_topic_questions": 36
+    },
+    {
+      "chapter": 5,
+      "title": "Overview",
+      "topics": 9,
+      "questions": 106,
+      "max_topic_questions": 21
+    },
+    {
+      "chapter": 6,
+      "title": "Past Exams",
+      "topics": 3,
+      "questions": 48,
+      "max_topic_questions": 37
+    }
+  ],
+  "total_questions": 1227,
+  "total_topics": 60,
+  "semantic_review": {
+    "all1227tested_stems_read": true,
+    "method": "Read topic-grouped tested stems and existing selected-answer concepts across all1227questions; inspected full options for ambiguous generic stems and mixed matching-parent pairs. Compared21Cell/11Epithelial/13CT groups with book headings/paragraphs already opened during prior source-grounded reviews; reopened specific book page text for metadata corrections. No automatic rule substituted for semantic inspection.",
+    "outcome": "Final topics consistently follow the actual tested organelle, cell, fiber, epithelial subtype or comparative classification. Cross-concept matching parents use broad organization/classification groups."
+  },
+  "accepted_routing_corrections": [
+    {
+      "id": "IHC1-CH1-HIST-0011",
+      "expected_topic_order": 2,
+      "actual_topic_order": 2,
+      "reason": "Microscopy: examines cultured living cells by phase contrast",
+      "confirmed": true
+    },
+    {
+      "id": "IHC1-CH1-HIST-0037",
+      "expected_topic_order": 1,
+      "actual_topic_order": 1,
+      "reason": "Preparation: alcohol dehydration",
+      "confirmed": true
+    },
+    {
+      "id": "IHC1-CH1-HIST-0038",
+      "expected_topic_order": 1,
+      "actual_topic_order": 1,
+      "reason": "Preparation: dehydration removes water",
+      "confirmed": true
+    },
+    {
+      "id": "IHC1-CH1-HIST-0039",
+      "expected_topic_order": 1,
+      "actual_topic_order": 1,
+      "reason": "Preparation: xylol clearing",
+      "confirmed": true
+    },
+    {
+      "id": "IHC1-CH1-HIST-0044",
+      "expected_topic_order": 1,
+      "actual_topic_order": 1,
+      "reason": "Preparation: celloidin processing advantages",
+      "confirmed": true
+    },
+    {
+      "id": "IHC1-CH1-HIST-0048",
+      "expected_topic_order": 1,
+      "actual_topic_order": 1,
+      "reason": "Preparation: dehydration alcohol gradient",
+      "confirmed": true
+    },
+    {
+      "id": "IHC1-CH1-HIST-0049",
+      "expected_topic_order": 1,
+      "actual_topic_order": 1,
+      "reason": "Preparation: paraffin processing limitations",
+      "confirmed": true
+    },
+    {
+      "id": "IHC1-CH2-HIST-0384",
+      "expected_topic_order": 2,
+      "actual_topic_order": 2,
+      "reason": "Membrane receptor signaling rather than glycocalyx carbohydrate coat",
+      "confirmed": true
+    },
+    {
+      "id": "IHC1-CH2-HIST-0293",
+      "expected_topic_order": 6,
+      "actual_topic_order": 6,
+      "reason": "Mitochondrial DNA/RNA content",
+      "confirmed": true
+    },
+    {
+      "id": "IHC1-CH2-HIST-0107",
+      "expected_topic_order": 1,
+      "actual_topic_order": 1,
+      "reason": "Mixed microvilli/cilia/flagella question fits broad cell organization without chapter move",
+      "confirmed": true
+    },
+    {
+      "id": "IHC1-CH2-HIST-0343",
+      "expected_topic_order": 5,
+      "actual_topic_order": 5,
+      "reason": "Multivesicular/endosomal compartment definition",
+      "confirmed": true
+    },
+    {
+      "id": "IHC1-CH4-HIST-0044",
+      "expected_topic_order": 1,
+      "actual_topic_order": 1,
+      "reason": "Compares several CT secretory cell types rather than plasma-cell-specific feature",
+      "confirmed": true
+    },
+    {
+      "id": "IHC1-CH3-HIST-0097",
+      "expected_topic_order": 1,
+      "actual_topic_order": 1,
+      "reason": "Matching children span simple, pseudostratified, stratified and transitional epithelial types",
+      "confirmed": true
+    }
+  ],
+  "book_page_locator_corrections": [
+    {
+      "chapter": 2,
+      "topic_order": 5,
+      "required_page": 22,
+      "reason": "Endosome heading and early/late endosome description",
+      "confirmed": true,
+      "ocr_sha256": "a73de9e267df1455229f5c6281adc357636a67f7b8621bda0e204c0108745972"
+    },
+    {
+      "chapter": 2,
+      "topic_order": 10,
+      "required_page": 36,
+      "reason": "Peroxisomal clinical application and continuation",
+      "confirmed": true,
+      "ocr_sha256": "ecd83b0001ede04ae796bb807dc0fabf9932c5d9b005557c1f08e0e1987bbb64"
+    },
+    {
+      "chapter": 2,
+      "topic_order": 11,
+      "required_page": 38,
+      "reason": "Free/attached ribosomal protein-destination functions",
+      "confirmed": true,
+      "ocr_sha256": "5d758e263eb2267678e72d7ab47307ac0e50eea13309b441e7568d9b7b866ab1"
+    },
+    {
+      "chapter": 3,
+      "topic_order": 3,
+      "required_page": 63,
+      "reason": "Stratified cuboidal/columnar heading",
+      "confirmed": true,
+      "ocr_sha256": "5652e84ba18ea4bc10dbf79193d4cd38b4e52b6145941f607d47cf9cca9677a6"
+    },
+    {
+      "chapter": 3,
+      "topic_order": 5,
+      "required_page": 67,
+      "reason": "Structural gland-classification diagram",
+      "confirmed": true,
+      "ocr_sha256": "fa576d93d6094e6a1f55a1e98dde54a0f2e01d6a152dc07c5b7ad4d320efdd5c"
+    }
+  ],
+  "payload_differences_excluding_lecture": [],
+  "chapter_subject_changes": [],
+  "lecture_placement_mismatches": [],
+  "topic_label_errors": [],
+  "declared_count_errors": [],
+  "tested_stem_mismatches": [],
+  "subject_metadata_errors": [],
+  "policy": "Book-heading and tested-question-derived middle granularity; supplemental source-question topics retained; book_pdf_pages are conceptual anchors, not a claim that every subdivision is a literal book heading; no forced quotas",
+  "limitations": [
+    "This QC validates organization and exact payload preservation, not medical correctness; no answers or explanations were changed during this audit.",
+    "Book locators for detailed cell-cycle and chromosomal-disorder subdivisions are conceptual chapter anchors. Those useful topics are question-derived and rely on supplemental source/reference evidence from the medical review, rather than literal detailed subheadings in this short designated book. The final policy now states this distinction.",
+    "Overview and Past Exams groupings retain original book/system and source-exam organization; empty book_pdf_pages for those registry rows do not themselves supply detailed question evidence.",
+    "Several comparative questions reasonably span multiple adjacent topics. Their final broad-topic placement is a defensible organizational choice, not a claim that the other related concept is absent."
+  ]
+}

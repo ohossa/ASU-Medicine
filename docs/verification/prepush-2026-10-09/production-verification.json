@@ -1,0 +1,43 @@
+{
+  "commit": "a5f1022449490b8996a8757729c9109942d41927",
+  "deployment": 6969243392,
+  "entry": "/assets/index-BDb9Vzp8.js",
+  "checks": [
+    {
+      "asset": "/assets/SupportPage-PMGG_L1O.js",
+      "jsResponse": true,
+      "xpBubble": false,
+      "topicPicker": false,
+      "topicResults": false
+    },
+    {
+      "asset": "/assets/StudyEntry-DcpGzOxv.js",
+      "jsResponse": true,
+      "xpBubble": true,
+      "topicPicker": false,
+      "topicResults": false
+    },
+    {
+      "asset": "/assets/SubjectSelect-CFWJnC_6.js",
+      "jsResponse": true,
+      "xpBubble": false,
+      "topicPicker": true,
+      "topicResults": false
+    },
+    {
+      "asset": "/assets/QuizInterface-Cv8sq2R-.js",
+      "jsResponse": true,
+      "xpBubble": false,
+      "topicPicker": false,
+      "topicResults": false
+    },
+    {
+      "asset": "/assets/ResultsDashboard-BeZBAM2w.js",
+      "jsResponse": true,
+      "xpBubble": false,
+      "topicPicker": false,
+      "topicResults": true
+    }
+  ],
+  "note": "Production Clerk configuration produces different chunk hashes from local preview; actual deployed imports were followed."
+}

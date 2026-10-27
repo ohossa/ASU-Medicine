@@ -112,9 +112,12 @@ export function LearningProvider({ children }: { children: ReactNode }) {
   const retry = useCallback(async () => {
     const id = userId;
     if (!id || busy.current.has(id)) return;
+    const initialQueue = readQueue(id);
+    if (initialQueue.length === 0) return;
     busy.current.add(id);
     try {
-      let queue = readQueue(id);
+      let queue = initialQueue;
+      let flushed = false;
       while (queue.length && activeId.current === id) {
         const sent = queue[0];
         const result = await request<{personal?:number}>("POST", sent.submission);
@@ -123,9 +126,10 @@ export function LearningProvider({ children }: { children: ReactNode }) {
         const latest = readQueue(id).filter((item) => item.id !== sent.id);
         localStorage.setItem(queueKey(id), JSON.stringify(latest));
         queue = latest;
+        flushed = true;
         if (activeId.current === id) setPending(queue.length);
       }
-      if (activeId.current === id) await refresh();
+      if (flushed && activeId.current === id) await refresh();
     } catch (e) {
       if (activeId.current === id)
         setError(
@@ -148,18 +152,45 @@ export function LearningProvider({ children }: { children: ReactNode }) {
   }, [userId, isLoaded, refresh, retry]);
   useEffect(() => {
     if (!isLoaded || !userId) return;
-    const sync = () => { if (!document.hidden) void retry(); };
-    window.addEventListener("online", sync);
-    window.addEventListener("focus", sync);
-    document.addEventListener("visibilitychange", sync);
-    const interval = setInterval(sync, 60000);
+    let lastFocusRefresh = 0;
+    const onFocus = () => {
+      if (document.hidden) return;
+      if (readQueue(userId).length) {
+        void retry();
+      } else {
+        const now = Date.now();
+        if (now - lastFocusRefresh > 15000) {
+          lastFocusRefresh = now;
+          void refresh();
+        }
+      }
+    };
+    const onOnline = () => {
+      if (!document.hidden) {
+        if (readQueue(userId).length) void retry();
+        else void refresh();
+      }
+    };
+    const onVisibility = () => {
+      if (!document.hidden && readQueue(userId).length) {
+        void retry();
+      }
+    };
+    window.addEventListener("online", onOnline);
+    window.addEventListener("focus", onFocus);
+    document.addEventListener("visibilitychange", onVisibility);
+    const interval = setInterval(() => {
+      if (!document.hidden && readQueue(userId).length) {
+        void retry();
+      }
+    }, 60000);
     return () => {
-      window.removeEventListener("online", sync);
-      window.removeEventListener("focus", sync);
-      document.removeEventListener("visibilitychange", sync);
+      window.removeEventListener("online", onOnline);
+      window.removeEventListener("focus", onFocus);
+      document.removeEventListener("visibilitychange", onVisibility);
       clearInterval(interval);
     };
-  }, [retry, isLoaded, userId]);
+  }, [retry, refresh, isLoaded, userId]);
   const submit = useCallback(
     (submission: LearningSubmission) => {
       if (!userId) return;

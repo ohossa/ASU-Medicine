@@ -103,4 +103,17 @@ describe('data module exports', () => {
       }
     }
   });
+
+  it('preserves clean (c) distractor rationales in Research Methodology (R-3)', async () => {
+    const { getChaptersForModuleAndMode, ensureDataLoaded } = await import('./data');
+    await ensureDataLoaded();
+
+    const chapters = getChaptersForModuleAndMode('R-3', 'mcq');
+    const allQuestions = chapters.flatMap(c => c.subjects.flatMap(s => s.questions));
+    const powerQuestion = allQuestions.find(q => q.id === 'R3-CH3-CLIN-0050');
+
+    expect(powerQuestion).toBeDefined();
+    expect(powerQuestion?.explanation).toContain('(c) Significance is observed only if an effect exists');
+    expect(powerQuestion?.explanation).not.toContain('©');
+  });
 });

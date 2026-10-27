@@ -12821,7 +12821,7 @@
               "id": "MRS2-CH2-PHYS-0022",
               "type": "mcq",
               "lecture": 1,
-              "text": "The pleural pressure of a normal 56-year- old woman is approximately -5 mmHg during resting conditions immediately before inspiration (i.",
+              "text": "The pleural pressure of a normal 56-year-old woman is approximately -5 mmHg during resting conditions immediately before inspiration.",
               "explanation": "-7 is correct because it is the physiologic consequence or definition specified in the stem. Inspiration makes intrapleural pressure more negative and raises transpulmonary pressure, while alveolar pressure briefly falls below atmospheric pressure to draw air inward. The alternative “, at the end of expiration); What is the pleural pressure (in mmHg) during normal inspiration” is less appropriate because it does not satisfy that relationship in this context.",
               "keyConcept": "Inspiration makes intrapleural pressure more negative and raises transpulmonary pressure, while alveolar pressure briefly falls below atmospheric pressure to draw air inward. Exam focus: The pleural pressure of a normal 56-year- old woman is approximately -5 mmHg during resting conditions immediately before….",
               "options": [
@@ -13771,7 +13771,7 @@
               "keyConcept": "Compliance is ΔV/ΔP; fibrosis, edema, congestion, atelectasis, and surfactant deficiency stiffen lungs, whereas emphysema raises compliance by destroying elastic tissue. Exam focus: Increased compliance is associated with.",
               "options": [
                 "Stiff lungs",
-                "Dif cult in ation of lungs",
+                "Difficult inflation of lungs",
                 "High transpulmonary pressure gradient is needed during inspiration",
                 "Increase lung elastic recoil",
                 "High increase in volume of lungs by change in transpulmonary pressure gradient"
@@ -13789,7 +13789,7 @@
               "keyConcept": "Compliance is ΔV/ΔP; fibrosis, edema, congestion, atelectasis, and surfactant deficiency stiffen lungs, whereas emphysema raises compliance by destroying elastic tissue. Exam focus: Disadvantages of increased lung compliance that occurs when lung elastic fibers are damaged include.",
               "options": [
                 "Increased airway resistance due to loss of elastic lateral traction.",
-                "Easily in ation of lungs.",
+                "Easy inflation of lungs.",
                 "Increase elastic work of breathing",
                 "Pulmonary oedema",
                 "All of the above"
@@ -14042,7 +14042,7 @@
               "options": [
                 "lining the alveoli",
                 "Maintains aeration of alveoli between breaths",
-                "Facilitates lung in ation",
+                "Facilitates lung inflation",
                 "Helps in diagnosis of COPD",
                 "Helps in diagnosis if a fetus is born dead or alive."
               ],
@@ -14303,7 +14303,7 @@
               "id": "MRS2-CH2-PHYS-0105",
               "type": "mcq",
               "lecture": 2,
-              "text": "With regard to pulmonary volumes ( and capacities: (",
+              "text": "With regard to pulmonary volumes and capacities:",
               "explanation": "The other options (In restrictive lung disease: FEV1 increase ( more than FVC; In obstructive lung disease: FEV1 and FVC are normal; In normal lung, FEV1 / FVC is about 60%) describe related but incorrect statements, which is why isolating the one accurate choice tests precise understanding rather than general familiarity.",
               "keyConcept": "The correct answer is “In obstructive lung disease: FEV1 / FVC is about 90%”.",
               "options": [
@@ -15897,7 +15897,7 @@
               "keyConcept": "Vagal stretch-receptor input terminates inspiration and limits overinflation, especially at large tidal volumes. Exam focus: The Hering Bruer reflex.",
               "options": [
                 "Helps maintain basic rhythm",
-                "Prevents over-in ation of the lungs",
+                "Prevents over-inflation of the lungs",
                 "Controls breathing rate",
                 "Is mediated by phrenic nerve"
               ],
@@ -16122,7 +16122,7 @@
               "explanation": "The other options (Re exes from airways produce voluntary apnea; Orders from the cerebral cortex produce sneezing; Impulses from limb muscle proprioceptors are important to determine rate and depth of normal breathing) describe related but incorrect statements, which is why isolating the one accurate choice tests precise understanding rather than general familiarity.",
               "keyConcept": "The correct answer is “Oedema and congestion stimulate J-receptors, that produce a response of shallow rapid breathing”.",
               "options": [
-                "Re exes from airways produce voluntary apnea",
+                "Reflexes from airways produce voluntary apnea",
                 "Orders from the cerebral cortex produce sneezing",
                 "Oedema and congestion stimulate J-receptors, that produce a response of shallow rapid breathing",
                 "Impulses from limb muscle proprioceptors are important to determine rate and depth of normal breathing",
@@ -19871,13 +19871,13 @@
               "type": "truefalse",
               "lecture": 4,
               "text": "The respiratory airways filter, warm, and humidify incoming air.",
-              "explanation": "Judging this statement true or false requires checking the specific mechanism it describes against what actually happens physiologically, not just a general impression of the topic. For “The respiratory airways filter, warm, and humidify incoming air,” the resulting truth value is True.",
+              "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. True: The respiratory airways filter, warm, and humidify incoming air.",
               "keyConcept": "True: The respiratory airways filter, warm, and humidify incoming air.",
               "options": [
                 "True",
                 "False"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "modelAnswer": null,
               "contentVersion": "0b3667251e53d5df6b9487e770f179065eb803633ae92124673064113f554341"
             },
@@ -19916,13 +19916,13 @@
               "type": "truefalse",
               "lecture": 4,
               "text": "The alveoli are encircled by capillaries.",
-              "explanation": "Judging this statement true or false requires checking the specific mechanism it describes against what actually happens physiologically, not just a general impression of the topic. For “The alveoli are encircled by capillaries,” the resulting truth value is True.",
+              "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. True: The alveoli are encircled by capillaries.",
               "keyConcept": "True: The alveoli are encircled by capillaries.",
               "options": [
                 "True",
                 "False"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "modelAnswer": null,
               "contentVersion": "7842dd153035f57d95a1ffa7c1d5005eef2a81e44551711d91f5c6989faf5ae2"
             },
@@ -19931,13 +19931,13 @@
               "type": "truefalse",
               "lecture": 1,
               "text": "The intrapleural pressure is negative to maintain lung inflation.",
-              "explanation": "This statement is TRUE. Breathing is driven by pressure gradients created by respiratory muscle action on thoracic volume (Boyle's law): the diaphragm and external intercostals are the principal inspiratory muscles, quiet expiration is passive (elastic recoil), and forced expiration recruits the internal intercostals and abdominal muscles; intrapleural pressure stays sub-atmospheric throughout normal breathing. For “The intrapleural pressure is negative to maintain lung inflation,” the resulting truth value is True.",
+              "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. True: The intrapleural pressure is negative to maintain lung inflation.",
               "keyConcept": "True: The intrapleural pressure is negative to maintain lung inflation.",
               "options": [
                 "True",
                 "False"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "modelAnswer": null,
               "contentVersion": "19e2cdce5ed29df2121d7334cf93d91c1c5ead86e5dba4443c423042855d5dde"
             },
@@ -19976,13 +19976,13 @@
               "type": "truefalse",
               "lecture": 1,
               "text": "Intrapleural pressure is usually less than atmospheric pressure.",
-              "explanation": "This statement is TRUE. Breathing is driven by pressure gradients created by respiratory muscle action on thoracic volume (Boyle's law): the diaphragm and external intercostals are the principal inspiratory muscles, quiet expiration is passive (elastic recoil), and forced expiration recruits the internal intercostals and abdominal muscles; intrapleural pressure stays sub-atmospheric throughout normal breathing. For “Intrapleural pressure is usually less than atmospheric pressure,” the resulting truth value is True.",
+              "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. True: Intrapleural pressure is usually less than atmospheric pressure.",
               "keyConcept": "True: Intrapleural pressure is usually less than atmospheric pressure.",
               "options": [
                 "True",
                 "False"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "modelAnswer": null,
               "contentVersion": "83f66ffc39da040a23fd2fc0c4bdb6d3579d199cdaa4c333e29ea985413491e7"
             },
@@ -19991,13 +19991,13 @@
               "type": "truefalse",
               "lecture": 4,
               "text": "The abdominal muscles are expiratory muscles.",
-              "explanation": "Judging this statement true or false requires checking the specific mechanism it describes against what actually happens physiologically, not just a general impression of the topic. For “The abdominal muscles are expiratory muscles,” the resulting truth value is True.",
+              "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. True: The abdominal muscles are expiratory muscles.",
               "keyConcept": "True: The abdominal muscles are expiratory muscles.",
               "options": [
                 "True",
                 "False"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "modelAnswer": null,
               "contentVersion": "11df1ee0f000780345048ea16db1920952a08a6438b9f839969d7d13dee220bf"
             },
@@ -20066,13 +20066,13 @@
               "type": "truefalse",
               "lecture": 1,
               "text": "Inspiration is always an active process.",
-              "explanation": "This statement is TRUE. Breathing is driven by pressure gradients created by respiratory muscle action on thoracic volume (Boyle's law): the diaphragm and external intercostals are the principal inspiratory muscles, quiet expiration is passive (elastic recoil), and forced expiration recruits the internal intercostals and abdominal muscles; intrapleural pressure stays sub-atmospheric throughout normal breathing. For “Inspiration is always an active process,” the resulting truth value is True.",
+              "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. True: Inspiration is always an active process.",
               "keyConcept": "True: Inspiration is always an active process.",
               "options": [
                 "True",
                 "False"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "modelAnswer": null,
               "contentVersion": "cb3ee7f7ea29e011d450cc603544c907ea70794f6aa3716779f04b9a91c58aec"
             },
@@ -20141,13 +20141,13 @@
               "type": "truefalse",
               "lecture": 1,
               "text": "Pulmonary surfactant is secreted by Type II alveolar cells.",
-              "explanation": "This statement is TRUE. Lung compliance is the change in lung volume per unit change in transpulmonary pressure and reflects the distensibility of lung tissue; pulmonary surfactant (secreted by type II alveolar cells) lowers alveolar surface tension, increases compliance, reduces the work of breathing, and stabilizes alveoli of different sizes, per Laplace's law (P = 2T/r). For “Pulmonary surfactant is secreted by Type II alveolar cells,” the resulting truth value is True.",
+              "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. True: Pulmonary surfactant is secreted by Type II alveolar cells.",
               "keyConcept": "True: Pulmonary surfactant is secreted by Type II alveolar cells.",
               "options": [
                 "True",
                 "False"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "modelAnswer": null,
               "contentVersion": "28fdbdbae357e363075c6c1ec71c23b7eb67c5694c18ac19d1e7d03e1aae5761"
             },
@@ -20156,13 +20156,13 @@
               "type": "truefalse",
               "lecture": 1,
               "text": "Pulmonary surfactant reduces the work of breathing and increases lung stability by increasing alveolar surface tension.",
-              "explanation": "This statement is FALSE. Lung compliance is the change in lung volume per unit change in transpulmonary pressure and reflects the distensibility of lung tissue; pulmonary surfactant (secreted by type II alveolar cells) lowers alveolar surface tension, increases compliance, reduces the work of breathing, and stabilizes alveoli of different sizes, per Laplace's law (P = 2T/r). For “Pulmonary surfactant reduces the work of breathing and increases lung stability by increasing alveolar surface tension,” the resulting truth value is False.",
+              "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. False: Pulmonary surfactant reduces the work of breathing and increases lung stability by increasing alveolar surface tension.",
               "keyConcept": "False: Pulmonary surfactant reduces the work of breathing and increases lung stability by increasing alveolar surface tension.",
               "options": [
                 "True",
                 "False"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "modelAnswer": null,
               "contentVersion": "79af98c50a144be9ca633a29997cbe6a0e462e7f22d950d592ede1caba53cdab"
             },
@@ -20201,13 +20201,13 @@
               "type": "truefalse",
               "lecture": 4,
               "text": "A highly compliant lung is easier to stretch than a less compliant one.",
-              "explanation": "Judging this statement true or false requires checking the specific mechanism it describes against what actually happens physiologically, not just a general impression of the topic. For “A highly compliant lung is easier to stretch than a less compliant one,” the resulting truth value is True.",
+              "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. True: A highly compliant lung is easier to stretch than a less compliant one.",
               "keyConcept": "True: A highly compliant lung is easier to stretch than a less compliant one.",
               "options": [
                 "True",
                 "False"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "modelAnswer": null,
               "contentVersion": "2561cf50fc9a3e88620c81501db900d6bc009757372f091feb8bffc751a8bc3b"
             },
@@ -20261,13 +20261,13 @@
               "type": "truefalse",
               "lecture": 1,
               "text": "Boyle's law states that the pressure exerted by a gas varies directly with the volume of the gas.",
-              "explanation": "This statement is FALSE. Breathing is driven by pressure gradients created by respiratory muscle action on thoracic volume (Boyle's law): the diaphragm and external intercostals are the principal inspiratory muscles, quiet expiration is passive (elastic recoil), and forced expiration recruits the internal intercostals and abdominal muscles; intrapleural pressure stays sub-atmospheric throughout normal breathing. For “Boyle's law states that the pressure exerted by a gas varies directly with the volume of the gas,” the resulting truth value is False.",
+              "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. False: Boyle's law states that the pressure exerted by a gas varies directly with the volume of the gas.",
               "keyConcept": "False: Boyle's law states that the pressure exerted by a gas varies directly with the volume of the gas.",
               "options": [
                 "True",
                 "False"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "modelAnswer": null,
               "contentVersion": "67d2f01a9dc5bebc6ab0caf7a72c0269e918c94049384b4df566864d13262a95"
             },
@@ -20366,13 +20366,13 @@
               "type": "truefalse",
               "lecture": 4,
               "text": "During external respiration, the PO2 is greater in the alveoli than in the blood of the pulmonary capillaries.",
-              "explanation": "Distinguishing the type and cause of hypoxia/hypoxemia is what determines whether oxygen therapy, ventilatory support, or treating the underlying cause will actually correct it. For “During external respiration, the PO2 is greater in the alveoli than in the blood of the pulmonary capillaries,” the resulting truth value is True.",
+              "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. True: During external respiration, the PO2 is greater in the alveoli than in the blood of the pulmonary capillaries.",
               "keyConcept": "True: During external respiration, the PO2 is greater in the alveoli than in the blood of the pulmonary capillaries.",
               "options": [
                 "True",
                 "False"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "modelAnswer": null,
               "contentVersion": "411cd0d63304d081536aff024dc945ee644967564e654de68f069a4851a13292"
             },
@@ -20411,13 +20411,13 @@
               "type": "truefalse",
               "lecture": 4,
               "text": "Systemic arterial PO2 is greater than tissue PO2.",
-              "explanation": "Distinguishing the type and cause of hypoxia/hypoxemia is what determines whether oxygen therapy, ventilatory support, or treating the underlying cause will actually correct it. For “Systemic arterial PO2 is greater than tissue PO2,” the resulting truth value is True.",
+              "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. True: Systemic arterial PO2 is greater than tissue PO2.",
               "keyConcept": "True: Systemic arterial PO2 is greater than tissue PO2.",
               "options": [
                 "True",
                 "False"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "modelAnswer": null,
               "contentVersion": "152cbabf3dd6cee19743dd366052727b8e6302512aa3aec28a4efd825b7ed9d6"
             },
@@ -22311,13 +22311,13 @@
               "type": "truefalse",
               "lecture": 1,
               "text": "Coenzyme Q and cytochrome c are mobile electron carriers in the respiratory chain.",
-              "explanation": "Coenzyme Q diffuses within the lipid core of the inner membrane and carries electrons to Complex III. Cytochrome c is a soluble peripheral protein that moves along the outer membrane surface from Complex III to Complex IV, so the statement is true.",
+              "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. True: Coenzyme Q and cytochrome c are mobile electron carriers in the respiratory chain.",
               "keyConcept": "True: Coenzyme Q and cytochrome c are mobile electron carriers in the respiratory chain.",
               "options": [
                 "True",
                 "False"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "modelAnswer": null,
               "contentVersion": "a1026cad23a9eb1b603d4577dc0bd7cd35bc1588773ece01ada7dd0b322fb4be"
             },
@@ -22411,13 +22411,13 @@
               "type": "truefalse",
               "lecture": 1,
               "text": "Ubiquinone is the only nonprotein member of the electron transport chain.",
-              "explanation": "Ubiquinone is a small lipid-soluble quinone rather than a polypeptide complex. Its isoprenoid tail permits lateral diffusion between multiple electron donors and Complex III, so the statement is true.",
+              "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. True: Ubiquinone is the only nonprotein member of the electron transport chain.",
               "keyConcept": "True: Ubiquinone is the only nonprotein member of the electron transport chain.",
               "options": [
                 "True",
                 "False"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "modelAnswer": null,
               "contentVersion": "788c31255cbd8643603fe33987a85726d51d656d298d8b67d132fe34155c4225"
             },
@@ -27126,13 +27126,13 @@
               "type": "truefalse",
               "lecture": 4,
               "text": "Rhinoscleroma is a granulomatous tumor-like lesion.",
-              "explanation": "Rhinoscleroma is a chronic granulomatous infection that clinically forms a firm, tumor-like nasal mass, though it is inflammatory rather than neoplastic in nature.",
+              "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. True: Rhinoscleroma is a granulomatous tumor-like lesion.",
               "keyConcept": "True: Rhinoscleroma is a granulomatous tumor-like lesion.",
               "options": [
                 "True",
                 "False"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "modelAnswer": null,
               "contentVersion": "69f789531dd86fca82d18d19237117e6743f0d67f116c998f968836fa24bac17"
             },
@@ -27156,13 +27156,13 @@
               "type": "truefalse",
               "lecture": 1,
               "text": "Epistaxis means severe haemorrhage from the nose.",
-              "explanation": "Epistaxis simply means bleeding/haemorrhage from the nose of any severity, not specifically severe haemorrhage.",
+              "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. False: Epistaxis means severe haemorrhage from the nose.",
               "keyConcept": "False: Epistaxis means severe haemorrhage from the nose.",
               "options": [
                 "True",
                 "False"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "modelAnswer": null,
               "contentVersion": "8743c7205eab636c5360d526c594ad28d54e4f2107026c5ce5ba1cbaea8a86f9"
             },
@@ -27201,13 +27201,13 @@
               "type": "truefalse",
               "lecture": 1,
               "text": "The systemic complications of diphtheria are due to circulation of the organism in the blood.",
-              "explanation": "Diphtheria's systemic complications (myocarditis, neuropathy) are due to absorbed exotoxin circulating in the blood, not bacteraemia, since C. diphtheriae remains localized to the pseudomembrane.",
+              "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. False: The systemic complications of diphtheria are due to circulation of the organism in the blood.",
               "keyConcept": "False: The systemic complications of diphtheria are due to circulation of the organism in the blood.",
               "options": [
                 "True",
                 "False"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "modelAnswer": null,
               "contentVersion": "ca1dc2954266073f3ea938509da19aecafd71421bebabceb3480709a4ca11f65"
             },
@@ -27216,13 +27216,13 @@
               "type": "truefalse",
               "lecture": 1,
               "text": "Laryngoscleroma and rhinoscleroma have the same aetiology and histology.",
-              "explanation": "Both are caused by Klebsiella rhinoscleromatis and show identical granulomatous histology (Mikulicz cells, Russell bodies), differing only in anatomic site.",
+              "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. True: Laryngoscleroma and rhinoscleroma have the same aetiology and histology.",
               "keyConcept": "True: Laryngoscleroma and rhinoscleroma have the same aetiology and histology.",
               "options": [
                 "True",
                 "False"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "modelAnswer": null,
               "contentVersion": "b3967e16ac84e6df784f0491d613501a8dcfcdcddbb1e75e0b167af1ad899ef8"
             },
@@ -27246,13 +27246,13 @@
               "type": "truefalse",
               "lecture": 4,
               "text": "Vocal cord carcinoma shows late metastases due to minimal blood supply.",
-              "explanation": "Vocal cord (glottic) carcinoma spreads late because of the sparse LYMPHATIC supply of the true vocal cords, not because of minimal blood supply.",
+              "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. False: Vocal cord carcinoma shows late metastases due to minimal blood supply.",
               "keyConcept": "False: Vocal cord carcinoma shows late metastases due to minimal blood supply.",
               "options": [
                 "True",
                 "False"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "modelAnswer": null,
               "contentVersion": "6391f07eb82e4ce71e7bcfdce71a7a5945cc9217df854a6c058f2abd900da698"
             },
@@ -27291,13 +27291,13 @@
               "type": "truefalse",
               "lecture": 2,
               "text": "Chronic bronchitis is NOT a suppurative disease.",
-              "explanation": "Chronic bronchitis is defined by mucus hypersecretion and goblet cell/gland hyperplasia with chronic inflammation, not pus formation; it is non-suppurative (unlike bronchiectasis or lung abscess).",
+              "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. True: Chronic bronchitis is NOT a suppurative disease.",
               "keyConcept": "True: Chronic bronchitis is NOT a suppurative disease.",
               "options": [
                 "True",
                 "False"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "modelAnswer": null,
               "contentVersion": "b8f7912eb6d55423e15366f110c4f7fd64933fbe0eea5328d58411acace9846e"
             },
@@ -27306,13 +27306,13 @@
               "type": "truefalse",
               "lecture": 1,
               "text": "Infection and partial bronchial obstruction are the two main factors in the pathogenesis of bronchiectasis.",
-              "explanation": "The classic 'vicious cycle' of bronchiectasis pathogenesis requires both recurrent/persistent infection and impaired drainage from bronchial obstruction, acting together to destroy and dilate the bronchial wall.",
+              "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. True: Infection and partial bronchial obstruction are the two main factors in the pathogenesis of bronchiectasis.",
               "keyConcept": "True: Infection and partial bronchial obstruction are the two main factors in the pathogenesis of bronchiectasis.",
               "options": [
                 "True",
                 "False"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "modelAnswer": null,
               "contentVersion": "7a88c06430a406a48b0791eecc2b29e696d3aacd349140a3eb26a5fd2b7dc66c"
             },
@@ -27351,13 +27351,13 @@
               "type": "truefalse",
               "lecture": 2,
               "text": "The inflammatory infiltrate in viral pneumonia is mainly interstitial.",
-              "explanation": "Viral pneumonia characteristically produces interstitial (septal wall) inflammation rather than alveolar space (luminal) exudate seen in bacterial pneumonia.",
+              "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. True: The inflammatory infiltrate in viral pneumonia is mainly interstitial.",
               "keyConcept": "True: The inflammatory infiltrate in viral pneumonia is mainly interstitial.",
               "options": [
                 "True",
                 "False"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "modelAnswer": null,
               "contentVersion": "26f1078e91d512c42d44d12e22911870fe6abdbd8fe7e57f3d4480431011c665"
             },
@@ -27366,13 +27366,13 @@
               "type": "truefalse",
               "lecture": 2,
               "text": "Aspiration lung abscess is more common in the right lung due to its wider bronchus.",
-              "explanation": "The right main bronchus is wider, shorter, and more vertically oriented than the left, making aspirated material (and resultant abscesses) more likely to lodge in the right lung.",
+              "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. True: Aspiration lung abscess is more common in the right lung due to its wider bronchus.",
               "keyConcept": "True: Aspiration lung abscess is more common in the right lung due to its wider bronchus.",
               "options": [
                 "True",
                 "False"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "modelAnswer": null,
               "contentVersion": "5e878606fd782b8bb86e32183e00a7d29395c92f2f0d5a11c948a0444dc6b606"
             },
@@ -27381,13 +27381,13 @@
               "type": "truefalse",
               "lecture": 2,
               "text": "Pyaemic lung abscesses arise from disseminated infected thrombi.",
-              "explanation": "Pyaemic (embolic) abscesses result from septic emboli originating from infected thrombi elsewhere in the body, seeding the lung haematogenously and forming multiple abscesses.",
+              "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. True: Pyaemic lung abscesses arise from disseminated infected thrombi.",
               "keyConcept": "True: Pyaemic lung abscesses arise from disseminated infected thrombi.",
               "options": [
                 "True",
                 "False"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "modelAnswer": null,
               "contentVersion": "ea2089ba97abaa663243803f254eb8e887fe514a047dc455fef639f86d20d4f3"
             },
@@ -27426,13 +27426,13 @@
               "type": "truefalse",
               "lecture": 1,
               "text": "Lung gangrene is always of the moist type.",
-              "explanation": "Pulmonary gangrene, occurring in a moist, oxygen-poor, richly vascular organ with ongoing suppurative infection, is always of the moist (wet) type, unlike the dry gangrene seen in ischaemic limbs.",
+              "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. True: Lung gangrene is always of the moist type.",
               "keyConcept": "True: Lung gangrene is always of the moist type.",
               "options": [
                 "True",
                 "False"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "modelAnswer": null,
               "contentVersion": "16d084250a7f264b87df11d76f8105c780f902e3ae778e426febdabbfe53c6a0"
             },
@@ -27456,13 +27456,13 @@
               "type": "truefalse",
               "lecture": 1,
               "text": "Emphysema shows permanent dilation of the terminal air passages.",
-              "explanation": "Emphysema is defined by permanent, abnormal enlargement of airspaces distal to the terminal bronchiole, accompanied by destruction of their walls.",
+              "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. True: Emphysema shows permanent dilation of the terminal air passages.",
               "keyConcept": "True: Emphysema shows permanent dilation of the terminal air passages.",
               "options": [
                 "True",
                 "False"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "modelAnswer": null,
               "contentVersion": "499f586ec8d54e8e42bfb962b4e9bab2257f7ddbaf385b35ca008e58011caec1"
             },
@@ -27471,13 +27471,13 @@
               "type": "truefalse",
               "lecture": 1,
               "text": "Alpha-1 antitrypsin deficiency plays a role in the pathogenesis of pulmonary collapse.",
-              "explanation": "Alpha-1 antitrypsin deficiency causes panacinar EMPHYSEMA via unopposed neutrophil elastase activity; it is not implicated in the pathogenesis of pulmonary collapse (atelectasis), which results from airway obstruction, compression, or loss of surfactant.",
+              "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. False: Alpha-1 antitrypsin deficiency plays a role in the pathogenesis of pulmonary collapse.",
               "keyConcept": "False: Alpha-1 antitrypsin deficiency plays a role in the pathogenesis of pulmonary collapse.",
               "options": [
                 "True",
                 "False"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "modelAnswer": null,
               "contentVersion": "f01636abf62d204d3dc7d329a04ca7f3ba7591fa56c8f0011f43bcdc25c85261"
             },
@@ -27501,13 +27501,13 @@
               "type": "truefalse",
               "lecture": 1,
               "text": "In hyaline membrane disease, the alveoli are mostly collapsed.",
-              "explanation": "Deficient surfactant in hyaline membrane disease leads to widespread alveolar collapse (atelectasis), with the remaining dilated ducts lined by hyaline membranes.",
+              "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. True: In hyaline membrane disease, the alveoli are mostly collapsed.",
               "keyConcept": "True: In hyaline membrane disease, the alveoli are mostly collapsed.",
               "options": [
                 "True",
                 "False"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "modelAnswer": null,
               "contentVersion": "b46adcfc99588145c491a1dfce36b4833bd8e6a36f189d15e7e0ae021cc2d9a5"
             },
@@ -27531,13 +27531,13 @@
               "type": "truefalse",
               "lecture": 4,
               "text": "Pancoast's tumor is an apical cancer infiltrating the cervical sympathetic plexus.",
-              "explanation": "Pancoast tumor arises at the lung apex (superior sulcus) and characteristically invades the cervical sympathetic chain and brachial plexus, producing Horner syndrome and arm/shoulder pain.",
+              "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. True: Pancoast's tumor is an apical cancer infiltrating the cervical sympathetic plexus.",
               "keyConcept": "True: Pancoast's tumor is an apical cancer infiltrating the cervical sympathetic plexus.",
               "options": [
                 "True",
                 "False"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "modelAnswer": null,
               "contentVersion": "ba35797ca3358d8729cba7b8ecd826870e87fbf810977b6fd71d5589bdae17af"
             },
@@ -27546,13 +27546,13 @@
               "type": "truefalse",
               "lecture": 4,
               "text": "Chromogranin is a marker of all neuroendocrine tumors.",
-              "explanation": "Chromogranin A is a general marker for neuroendocrine differentiation, positive across the spectrum of neuroendocrine tumors including carcinoid and small cell carcinoma.",
+              "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. True: Chromogranin is a marker of all neuroendocrine tumors.",
               "keyConcept": "True: Chromogranin is a marker of all neuroendocrine tumors.",
               "options": [
                 "True",
                 "False"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "modelAnswer": null,
               "contentVersion": "ad95ee845216df587a0af7663abc703099a6c793d236653abe2e2ade4ebb5678"
             },
@@ -27591,13 +27591,13 @@
               "type": "truefalse",
               "lecture": 4,
               "text": "The liver is a metastatic site of carcinoid tumors.",
-              "explanation": "The liver is the characteristic site of haematogenous metastasis from carcinoid tumors when spread occurs.",
+              "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. True: The liver is a metastatic site of carcinoid tumors.",
               "keyConcept": "True: The liver is a metastatic site of carcinoid tumors.",
               "options": [
                 "True",
                 "False"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "modelAnswer": null,
               "contentVersion": "fee2598365f6e07bcf8475f722f9c9ceb62aa4435a2111dbf975706c89599f79"
             },
@@ -27636,13 +27636,13 @@
               "type": "truefalse",
               "lecture": 3,
               "text": "Empyema means pus in the pleural cavity.",
-              "explanation": "Empyema is defined as the accumulation of pus within the pleural cavity, typically as a complication of pneumonia, lung abscess, or bronchiectasis.",
+              "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. True: Empyema means pus in the pleural cavity.",
               "keyConcept": "True: Empyema means pus in the pleural cavity.",
               "options": [
                 "True",
                 "False"
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "modelAnswer": null,
               "contentVersion": "9107114a5d3aa6a6b13836c99e81b6d2a94a6dbdd916c8e1dfa969fb5ee0e015"
             },

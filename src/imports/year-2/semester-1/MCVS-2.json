@@ -7913,13 +7913,13 @@
               "type": "mcq",
               "lecture": 1,
               "text": "The following is WRONG regarding adenosine:",
-              "explanation": "Adenosine must be given as a rapid IV bolus because its half-life is about 15 seconds; slow injection abolishes its effect, though transient chest pain can occur. a) Binds with A1 receptors leads to opens K channels leading to hyperpolarization - TRUE. b) Terminate PSVT without effect on mechanical function of the heart - TRUE, it mainly affects conduction. c) Taken slowly intravenous to avoid chest pain - FALSE, it is given rapidly despite transient discomfort. d) Dyspnea, ushing & sinus bradycardia are expected adverse effects - TRUE.",
+              "explanation": "Adenosine must be given as a rapid IV bolus because its half-life is about 15 seconds; slow injection abolishes its effect, though transient chest pain can occur. a) Binds with A1 receptors leads to opens K channels leading to hyperpolarization - TRUE. b) Terminate PSVT without effect on mechanical function of the heart - TRUE, it mainly affects conduction. c) Taken slowly intravenous to avoid chest pain - FALSE, it is given rapidly despite transient discomfort. d) Dyspnea, flushing & sinus bradycardia are expected adverse effects - TRUE.",
               "keyConcept": "Antiarrhythmic drugs are selected by their effects on sodium, potassium, calcium channels or autonomic signaling and by the rhythm being treated.",
               "options": [
                 "Binds with A1 receptors leads to opens K+ channels leading to hyperpolarization",
                 "Terminate PSVT without effect on mechanical function of the heart",
                 "Taken slowly intravenous to avoid chest pain",
-                "Dyspnea, ushing & sinus bradycardia are expected adverse effects"
+                "Dyspnea, flushing & sinus bradycardia are expected adverse effects"
               ],
               "correctIndex": 2,
               "modelAnswer": null,
@@ -20371,7 +20371,7 @@
               "id": "MCVS2-CH9-BIOC-0149",
               "type": "mcq",
               "lecture": 2,
-              "text": "Which out of the following statements best describes about ACAT (Acyl co A cholesterol acyl transferase?",
+              "text": "Which out of the following statements best describes ACAT (Acyl-CoA:cholesterol acyltransferase)?",
               "explanation": "ACAT preferentially uses Monounsaturated Fatty Acids (like Oleic acid) to esterify cholesterol. 16 (a) HDL/LCAT does reverse transport. (b) 7$\\alpha$-hydroxylase makes bile. (d) LPL degrades TAGs.",
               "keyConcept": "Apolipoproteins, lipases, and receptors determine the transport and clearance of triglyceride- and cholesterol-rich particles.",
               "options": [
@@ -21488,7 +21488,7 @@
               "id": "MCVS2-CH10-PHYS-0009",
               "type": "essay",
               "lecture": 2,
-              "text": "What are the effects of loss of elasticity of big vessels (atherosclerosis?",
+              "text": "What are the effects of loss of elasticity of large vessels (atherosclerosis)?",
               "explanation": "Mean arterial pressure is principally determined by cardiac output and total peripheral resistance and is regulated neurally, hormonally, and renally. For full credit, organize the response around the relevant pressure, flow, electrical, or mechanical mechanism, then connect each listed finding or step to the question asked.",
               "keyConcept": "Mean arterial pressure is principally determined by cardiac output and total peripheral resistance and is regulated neurally, hormonally, and renally.",
               "modelAnswer": "Marked increase in SBP (leading to increased cardiac work) A marked decrease in DBP (leading to decreased coronary flow and ischemia) Excessive rise in pulse pressure (with high pulse volume & water-hammer pulse) g",

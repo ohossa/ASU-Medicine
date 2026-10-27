@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "final_bank_sha256": "cca56187e7701daaf2021d22e7529d300dda35255577a27da63d9d5c37a47105",
+  "exact_review_hashes_matched": 47,
+  "source_occurrences_accounted": 104,
+  "pages_accounted": 24,
+  "decision_counts": {
+    "exclude_ambiguous": 24,
+    "accept_recorded": 19,
+    "exclude_incomplete": 3,
+    "correct_answer": 1,
+    "accept_derived": 27
+  },
+  "independent_review": "not performed",
+  "existing_question_removals": 0
+}

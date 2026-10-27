@@ -1,0 +1,76 @@
+{
+  "Overview of Immune System: Cells and Organs": {
+    "Immune-cell lineages and functions": 13,
+    "Lymphoid organs and development": 12
+  },
+  "Innate Immunity": {
+    "Inflammation and leukocyte recruitment": 18,
+    "Innate barriers and recognition": 21,
+    "NK cells and antiviral interferons": 17,
+    "Phagocytosis and killing": 6
+  },
+  "Antigens and Self-Molecules": {
+    "Antigens, immunogens and epitopes": 8,
+    "Haptens and superantigens": 5,
+    "MHC structure, genetics and presentation": 25
+  },
+  "Cell Mediated Immune Response": {
+    "Cytotoxic mechanisms": 8,
+    "Helper T cells and cytokines": 28,
+    "Superantigen activation": 8,
+    "T-cell activation and regulation": 25,
+    "T-cell development and selection": 6,
+    "TCR recognition and signaling": 15
+  },
+  "Humoral Immune Response": {
+    "Antibody effector functions": 15,
+    "Antibody structure and specificity": 15,
+    "B-cell activation and T-cell help": 15,
+    "B-cell receptors and differentiation": 13,
+    "Class switching and affinity maturation": 16,
+    "Immunoglobulin classes and functions": 19,
+    "Primary and secondary responses": 9
+  },
+  "The Complement": {
+    "Complement activation pathways": 10,
+    "Complement effector functions": 11,
+    "Complement regulation and deficiencies": 11
+  },
+  "Immunization": {
+    "Active and passive immunization": 10,
+    "Vaccine types and adjuvants": 24
+  },
+  "Immunity to Microbes": {
+    "Antiviral immunity and microbial evasion": 11,
+    "Bacterial and fungal immunity": 16,
+    "Helminth and protozoal immunity": 10
+  },
+  "Hypersensitivity": {
+    "Hypersensitivity classification": 3,
+    "Type I allergy and immunotherapy": 30,
+    "Type II antibody-mediated injury": 14,
+    "Type III immune-complex injury": 7,
+    "Type IV delayed hypersensitivity": 14
+  },
+  "Tolerance and Autoimmunity": {
+    "Autoimmune mechanisms and diseases": 29,
+    "Central and peripheral tolerance": 21
+  },
+  "Transplantation": {
+    "Graft types and rejection": 12,
+    "Graft-versus-host disease and immunosuppression": 14
+  },
+  "Tumor Immunology": {
+    "Antitumor immunity and immune escape": 10,
+    "Tumor immunotherapy": 7
+  },
+  "Immunodeficiency Diseases": {
+    "Antibody and combined immunodeficiencies": 25,
+    "Complement deficiency and angioedema": 6,
+    "Phagocyte defects": 7,
+    "Secondary immunodeficiency and HIV": 6
+  },
+  "Past Exams": {
+    "Final Exam Questions": 15
+  }
+}

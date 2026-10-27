@@ -59,7 +59,7 @@
                 "Presenting complaint"
               ],
               "correctIndex": 2,
-              "explanation": "",
+              "explanation": "Clinical Examination Rationale: Pulse examination is an objective clinical sign evaluated during physical (general) examination, whereas family history, past history, and presenting complaint are components of subjective medical history taking.",
               "sourceOccurrences": [
                 {
                   "sourceFile": "History MCQ.pdf",
@@ -91,7 +91,7 @@
                 "Lymph nodes examination"
               ],
               "correctIndex": 3,
-              "explanation": "",
+              "explanation": "Clinical Examination Rationale: Lymph node examination is a physical examination technique (inspection and palpation), whereas family, past, and personal histories are core components of the patient interview.",
               "sourceOccurrences": [
                 {
                   "sourceFile": "History MCQ.pdf",
@@ -123,7 +123,7 @@
                 "Body weight"
               ],
               "correctIndex": 3,
-              "explanation": "",
+              "explanation": "Clinical Examination Rationale: Body weight is an objective anthropometric vital parameter measured during physical examination, not a section of history taking.",
               "sourceOccurrences": [
                 {
                   "sourceFile": "History MCQ.pdf",
@@ -155,7 +155,7 @@
                 "Presenting complaint"
               ],
               "correctIndex": 0,
-              "explanation": "",
+              "explanation": "Clinical Examination Rationale: Facial expression (facies) is assessed by visual inspection during the general physical examination, whereas HPI, past history, and complaint are gathered by interview.",
               "sourceOccurrences": [
                 {
                   "sourceFile": "History MCQ.pdf",
@@ -187,7 +187,7 @@
                 "occupation"
               ],
               "correctIndex": 0,
-              "explanation": "",
+              "explanation": "Clinical Examination Rationale: The presenting complaint is the primary reason the patient is seeking care (recorded in the patient's own words with duration), whereas name, sex, and occupation form personal/demographic history.",
               "sourceOccurrences": [
                 {
                   "sourceFile": "History MCQ.pdf",
@@ -219,7 +219,7 @@
                 "age"
               ],
               "correctIndex": 2,
-              "explanation": "",
+              "explanation": "Clinical Examination Rationale: Facies refers to facial appearance and expressions noted on general inspection, not personal demographic data.",
               "sourceOccurrences": [
                 {
                   "sourceFile": "History MCQ.pdf",
@@ -251,7 +251,7 @@
                 "occupation"
               ],
               "correctIndex": 0,
-              "explanation": "",
+              "explanation": "Clinical Examination Rationale: Inquiry about similar conditions in the past forms part of past medical history or history of present illness, distinct from personal demographics.",
               "sourceOccurrences": [
                 {
                   "sourceFile": "History MCQ.pdf",
@@ -284,7 +284,7 @@
                 "HPI"
               ],
               "correctIndex": 1,
-              "explanation": "",
+              "explanation": "Clinical Examination Rationale: Age is a fundamental demographic identifier documented under personal history.",
               "sourceOccurrences": [
                 {
                   "sourceFile": "History MCQ.pdf",
@@ -316,7 +316,7 @@
                 "HPI"
               ],
               "correctIndex": 1,
-              "explanation": "",
+              "explanation": "Clinical Examination Rationale: Residence (including birthplace and current living environment) is recorded under personal history to evaluate endemic exposures.",
               "sourceOccurrences": [
                 {
                   "sourceFile": "History MCQ.pdf",
@@ -348,7 +348,7 @@
                 "HPI"
               ],
               "correctIndex": 1,
-              "explanation": "",
+              "explanation": "Clinical Examination Rationale: Special habits (such as smoking, alcohol consumption, and recreational drug use) are recorded in personal/social history.",
               "sourceOccurrences": [
                 {
                   "sourceFile": "History MCQ.pdf",
@@ -380,7 +380,7 @@
                 "HPI"
               ],
               "correctIndex": 2,
-              "explanation": "",
+              "explanation": "Clinical Examination Rationale: Previous surgical procedures are documented under past surgical history.",
               "sourceOccurrences": [
                 {
                   "sourceFile": "History MCQ.pdf",
@@ -412,7 +412,7 @@
                 "HPI"
               ],
               "correctIndex": 2,
-              "explanation": "",
+              "explanation": "Clinical Examination Rationale: Prior blood transfusions and drug/food allergies are key components of past medical history.",
               "sourceOccurrences": [
                 {
                   "sourceFile": "History MCQ.pdf",
@@ -444,7 +444,7 @@
                 "Family history"
               ],
               "correctIndex": 3,
-              "explanation": "",
+              "explanation": "Clinical Examination Rationale: Inquiries regarding hereditary disorders, consanguinity, and familial illnesses are recorded in family history.",
               "sourceOccurrences": [
                 {
                   "sourceFile": "History MCQ.pdf",
@@ -476,7 +476,7 @@
                 "HPI"
               ],
               "correctIndex": 1,
-              "explanation": "",
+              "explanation": "Clinical Examination Rationale: Marital status (single, married, widowed, divorced) is an essential demographic variable in personal history.",
               "sourceOccurrences": [
                 {
                   "sourceFile": "History MCQ.pdf",
@@ -534,7 +534,7 @@
                 "complexions"
               ],
               "correctIndex": 0,
-              "explanation": "",
+              "explanation": "Clinical Examination Rationale: Family history is obtained through patient questioning during the interview, not physical inspection or palpation in general examination.",
               "sourceOccurrences": [
                 {
                   "sourceFile": "History MCQ.pdf",
@@ -582,7 +582,7 @@
                 "complexions"
               ],
               "correctIndex": 0,
-              "explanation": "",
+              "explanation": "Clinical Examination Rationale: The chief complaint is elicited during patient interviewing, whereas pulse, blood pressure, and complexion are assessed on general examination.",
               "sourceOccurrences": [
                 {
                   "sourceFile": "History MCQ.pdf",
@@ -614,7 +614,7 @@
                 "Complexions"
               ],
               "correctIndex": 1,
-              "explanation": "",
+              "explanation": "Clinical Examination Rationale: Blood transfusion history is a component of past medical history; lymph node status, BP, and complexion are physical examination findings.",
               "sourceOccurrences": [
                 {
                   "sourceFile": "History MCQ.pdf",
@@ -646,7 +646,7 @@
                 "inguinal"
               ],
               "correctIndex": 0,
-              "explanation": "",
+              "explanation": "Clinical Examination Rationale: Mediastinal lymph nodes are located deep within the thoracic cavity (non-palpable superficially), whereas cervical, epitrochlear, and inguinal nodes are accessible superficial groups.",
               "sourceOccurrences": [
                 {
                   "sourceFile": "History MCQ.pdf",
@@ -677,7 +677,7 @@
                 "3 fingers"
               ],
               "correctIndex": 2,
-              "explanation": "",
+              "explanation": "Clinical Examination Rationale: Radial pulse assessment traditionally utilizes three finger pulps: the proximal finger to compress and obliterate the wave, the middle to assess rate and rhythm, and the distal to prevent retrograde pulsation from the palmar arch.",
               "sourceOccurrences": [
                 {
                   "sourceFile": "History MCQ.pdf",
@@ -708,7 +708,7 @@
                 "50-200"
               ],
               "correctIndex": 1,
-              "explanation": "",
+              "explanation": "Clinical Examination Rationale: The physiological resting pulse (heart rate) range in a healthy adult is 60 to 100 beats per minute.",
               "sourceOccurrences": [
                 {
                   "sourceFile": "History MCQ.pdf",
@@ -740,7 +740,7 @@
                 "General examination"
               ],
               "correctIndex": 3,
-              "explanation": "",
+              "explanation": "Clinical Examination Rationale: Height and weight measurements (used to determine Body Mass Index) are objective anthropometric findings evaluated during general examination.",
               "sourceOccurrences": [
                 {
                   "sourceFile": "History MCQ.pdf",
@@ -772,7 +772,7 @@
                 "General examination"
               ],
               "correctIndex": 3,
-              "explanation": "",
+              "explanation": "Clinical Examination Rationale: Facial expression and emotional affect are assessed during the initial visual inspection of the general physical examination.",
               "sourceOccurrences": [
                 {
                   "sourceFile": "History MCQ.pdf",
@@ -804,7 +804,7 @@
                 "inguinal"
               ],
               "correctIndex": 2,
-              "explanation": "",
+              "explanation": "Clinical Examination Rationale: Mediastinal lymph nodes are deep thoracic nodes requiring radiographic or invasive visualization; cervical, axillary, and inguinal nodes are superficial and readily palpable.",
               "sourceOccurrences": [
                 {
                   "sourceFile": "History MCQ.pdf",
@@ -836,7 +836,7 @@
                 "submental"
               ],
               "correctIndex": 1,
-              "explanation": "",
+              "explanation": "Clinical Examination Rationale: Axillary lymph nodes are located in the axilla draining the upper limb, breast, and chest wall; tonsillar, supraclavicular, and submental nodes belong to the cervical lymphatic chains.",
               "sourceOccurrences": [
                 {
                   "sourceFile": "History MCQ.pdf",

@@ -1,0 +1,36 @@
+{
+  "status": "complete locally",
+  "completed_date": "2026-10-13",
+  "features": [
+    "Chapter -> Subject -> Topic only for audited chapter-first multi-branch modules",
+    "Existing subject-first and single-branch flows preserved",
+    "Inline topic search scoped to the chosen subject",
+    "20/40/whole-topic sessions with stable batch fingerprints and existing resume protocol",
+    "Compact phone breadcrumbs with accessible full-path menu",
+    "Singular/plural count wording",
+    "Current-version progress shared by cards and short-session selection",
+    "44px targets and Apple design policy persisted"
+  ],
+  "main_test_files_passed": 120,
+  "main_tests_passed": 690,
+  "stage_test_files_passed": 119,
+  "stage_tests_passed": 685,
+  "strict_typescript_projects_passed": 3,
+  "production_build_passed": true,
+  "source_banks_unchanged": true,
+  "source_bank_count": 42,
+  "publication": "No commit, push or deployment",
+  "browser_widths": [
+    375,
+    430,
+    633,
+    768,
+    1024,
+    1440
+  ],
+  "verification_limits": [
+    "Local preview could not load the published corrections endpoint; bundled banks used for visual checks.",
+    "Canonical learning-version alignment, overlay guards and next-batch logic verified by tests; no live production learning account was modified.",
+    "RTL and keyboard contracts tested; actual browser screenshots use the current dark English appearance."
+  ]
+}

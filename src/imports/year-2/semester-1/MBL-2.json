@@ -889,15 +889,15 @@
               "type": "mcq",
               "lecture": 2,
               "text": "Concerning RBCs:",
-              "explanation": "and attack the antigens on the large volume of transfused donor cells, leading to widespread hemolysis, a, The recipient's antigens attacking the donor red blood cells - FALSE, Antigens don't \"attack\", c, The antigens on the recipient's red blood cells reacting with the antibodies in the transfused blood - FALSE, This is a minor reaction, as the donor antibodies are diluted in the recipient's large blood volume, It is still avoided but is less dangerous than option 'b', Applied to “Concerning RBCs”: the discriminating answer is “Its normal number is 5x10%mm'.”.",
-              "keyConcept": "Identify the normal mechanism first, then reject options that describe a different cell type, pathway, or regulatory response; for “Concerning RBCs”, the defining choice is “Its normal number is 5x10%mm'.”.",
+              "explanation": "The correct answer is All of the above. Human erythrocytes are mature non-nucleated biconcave discs (~7.5 µm diameter), with an average physiological count of approximately 5 million/mm³ (4.5-5.5 x 10⁶/µL) and a circulatory lifespan of 120 days before splenic macrophage clearance.",
+              "keyConcept": "Normal RBC characteristics: biconcave non-nucleated disc, ~5 million/mm³ count, and 120-day lifespan.",
               "options": [
                 "It has biconcave shape.",
-                "Its normal number is 5x10%mm'.",
+                "Its normal number is 5x10⁶/mm³.",
                 "Its life span 120 days.",
                 "All of the above."
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
               "modelAnswer": null
             },
             {
@@ -1556,15 +1556,15 @@
               "type": "mcq",
               "lecture": 4,
               "text": "About erythrocytes, which sentence is NOT true?",
-              "explanation": "This statement is false, Hemorrhage (blood loss) leads to anemia and reduced oxygen-carrying capacity, causing tissue hypoxia, This hypoxia stimulates the kidneys to increase the secretion of erythropoietin, a, Is secreted by kidney - TRUE, The kidney is the primary source, c, Is secreted during exposure to high altitude - TRUE, High altitude means lower atmospheric O,, causing hypoxia and thus stimulating EPO secretion, d, Is glycoprotein in nature - TRUE, EPO is a protein hormone with carbohydrate side chains.",
-              "keyConcept": "Transferrin carries iron in plasma; ferritin stores intracellular iron; ferroportin exports iron from cells; for “About erythrocytes, which sentence is NOT true”, the defining choice is “Their membrane does not allow Nations to pass through it freely.”.",
+              "explanation": "The correct answer is They secrete erythropoietin. Erythrocytes do NOT synthesize or secrete erythropoietin (EPO); erythropoietin is produced by interstitial fibroblasts in the renal cortex (~85-90%) and the liver (~10-15%) in response to tissue hypoxia. The remaining statements are true.",
+              "keyConcept": "Erythropoietin is synthesized by renal cortical interstitial peritubular cells, not by erythrocytes.",
               "options": [
                 "Blood group antigens are present on membranes.",
-                "Their membrane does not allow Nations to pass through it freely.",
-                "Their breakdown releases iron, which is reused by the body. &",
+                "Their membrane does not allow Na+ ions to pass through it freely.",
+                "Their breakdown releases iron, which is reused by the body.",
                 "They secrete erythropoietin."
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
               "modelAnswer": null
             },
             {
@@ -1572,8 +1572,8 @@
               "type": "mcq",
               "lecture": 4,
               "text": "About erythrocytes:",
-              "explanation": "This statement is incorrect, Thyroid hormones bind to plasma proteins to increase their solubility in blood and prolong their half-life, not for buffering capacity, The buffering capacity of blood is primarily due to hemoglobin, bicarbonate, and plasma proteins themselves, b, Hb is present inside RBCs to prevent its escape to the plasma - TRUE, This prevents loss via the kidney and avoids increasing plasma viscosity and oncotic pressure, c, Erythropoiesis is increased - TRUE, Plasma from a hypoxic animal contains high levels of erythropoietin, which will stimulate RBC production in a normal animal, d, The membrane of RBCs contains substances that determine blood groups - TRUE, These are the A, B, and Rh antigens, e, RBCs membrane allow anions only to pass freely - TRUE, Via the chloride-bicarbonate",
-              "keyConcept": "Identify the normal mechanism first, then reject options that describe a different cell type, pathway, or regulatory response; for “About erythrocytes”, the defining choice is “They contain no enzymes.”.",
+              "explanation": "The correct answer is Their Hb content carries O2. The primary specialized function of erythrocytes is oxygen transport via hemoglobin (each Hb tetramer binds up to 4 O2 molecules). They contain vital enzymes (carbonic anhydrase, glycolytic enzymes, G6PD), constitute the major determinant of whole blood viscosity (~hematocrit), live 120 days (4 months), and are the most abundant cells in peripheral blood (~5 million/µL).",
+              "keyConcept": "Erythrocyte hemoglobin carries oxygen from lungs to systemic tissues.",
               "options": [
                 "They contain no enzymes.",
                 "They are responsible for a minor part of blood viscosity.",
@@ -1581,23 +1581,23 @@
                 "Their Hb content carries O2",
                 "They are the least number blood cells."
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
               "modelAnswer": null
             },
             {
               "id": "MBL2-CH1-PHYS-0095",
               "type": "mcq",
               "lecture": 4,
-              "text": "All are true about breakdown of discs. erythrocyte EXCEPT:",
-              "explanation": "This statement is false, Phagocytosis is a function of white blood cells (like neutrophils and macrophages), not hemoglobin, b, Regulation of pH of blood - TRUE, It acts as a major buffer, c, Carrying of 02- TRUE, Its primary function, d, Helps in carrying CO, - TRUE, A portion of CO, is carried bound to the globin chains (as carbaminohemoglobin).",
-              "keyConcept": "Transferrin carries iron in plasma; ferritin stores intracellular iron; ferroportin exports iron from cells; for “All are true about breakdown of discs. erythrocyte EXCEPT”, the defining choice is “Occurs when they are about 18 weeks.”.",
+              "text": "All are true about breakdown of erythrocyte EXCEPT:",
+              "explanation": "The correct answer is Produced iron is excreted in urine. In physiological extravascular hemolysis, liberated iron is rigorously conserved: it binds to transferrin in plasma and is either transported directly back to the bone marrow for new erythropoiesis or stored intracellularly as ferritin and hemosiderin in macrophages; it is NOT excreted in urine. Renal excretion of iron is negligible under normal conditions.",
+              "keyConcept": "Iron from senescent RBC breakdown is recycled via transferrin and ferritin, not excreted in urine.",
               "options": [
                 "Occurs when they are about 18 weeks.",
                 "Takes place in the reticuloendothelial system.",
                 "Produced iron is excreted in urine.",
                 "Produced bilirubin is carried to liver."
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "modelAnswer": null
             },
             {
@@ -1621,15 +1621,15 @@
               "type": "mcq",
               "lecture": 4,
               "text": "All are true about hemoglobin EXCEPT:",
-              "explanation": "This statement correctly describes the fate of the globin portion, When hemoglobin is broken down, the protein (globin) chains are catabolized into their constituent amino acids, which are then recycled by the body to synthesize new proteins, a, Heme-completely reused to form a new hemoglobin molecule - FALSE, The heme ring is broken down; its iron is recycled, but the porphyrin ring is converted to bilirubin, c, Iron-mostly secreted in bile - FALSE, Iron is very efficiently recycled and bound to transferrin for transport back to the bone marrow; it is not secreted in bile, d, All of these are correct - FALSE. Applied to “All are true about hemoglobin EXCEPT”: the discriminating answer is “Has a buffer function.”.",
-              "keyConcept": "2,3-BPG stabilizes deoxyhemoglobin and lowers oxygen affinity, shifting the dissociation curve to the right; for “All are true about hemoglobin EXCEPT”, the defining choice is “Has a buffer function.”.",
+              "explanation": "The correct answer is Is found both in plasma & RBCs. Under normal physiological conditions, hemoglobin is exclusively packaged inside erythrocytes to maintain blood osmolarity, prevent renal filtration and tubular damage, and avert nitric oxide scavenging. Free plasma hemoglobin is pathological, seen only during intravascular hemolysis.",
+              "keyConcept": "Hemoglobin is strictly compartmentalized within RBCs; free hemoglobin in plasma is pathological.",
               "options": [
-                "Is the major O, carrying system in the body.",
+                "Is the major O2 carrying system in the body.",
                 "Has a buffer function.",
                 "Percentage is 16 gm% in males.",
                 "Is found both in plasma & RBCs."
               ],
-              "correctIndex": 1,
+              "correctIndex": 3,
               "modelAnswer": null
             },
             {
@@ -1652,15 +1652,15 @@
               "type": "mcq",
               "lecture": 4,
               "text": "Blood cell destruction occurs mainly in:",
-              "explanation": "Nephrotic syndrome is characterized by damage to the kidney's glomeruli, leading to massive leakage of protein (proteinuria), especially albumin, into the urine, This loss from the blood results in low total protein in the plasma (hypoproteinemia), a, Increased A/G ratio due to loss of globulins - FALSE, The A/G ratio decreases because albumin is lost more readily than globulins, c, Increased plasma colloid osmotic pressure - FALSE, The loss of albumin causes a severe decrease in colloid osmotic pressure, d, A normal A/G ratio but decreased total plasma proteins - FALSE, The ratio becomes abnormal (decreased) due to the disproportionate loss of albumin.",
-              "keyConcept": "Identify the normal mechanism first, then reject options that describe a different cell type, pathway, or regulatory response; for “Blood cell destruction occurs mainly in”, the defining choice is “Kidney.”.",
+              "explanation": "The correct answer is Spleen. Senescent, rigid red blood cells are filtered and phagocytosed by macrophages lining the splenic cords of Billroth as they attempt to squeeze through the narrow fenestrations of the splenic sinusoids.",
+              "keyConcept": "The spleen is the primary reticuloendothelial organ for clearance and destruction of aged erythrocytes.",
               "options": [
                 "Spleen.",
                 "Kidney.",
                 "Bone marrow.",
                 "Heart."
               ],
-              "correctIndex": 1,
+              "correctIndex": 0,
               "modelAnswer": null
             },
             {
@@ -1668,8 +1668,8 @@
               "type": "mcq",
               "lecture": 4,
               "text": "Each hemoglobin molecule can become associated with ____ oxygen molecule(s).",
-              "explanation": "Calcium is not a direct requirement for the synthesis of red blood cells (erythropoiesis), While essential for many bodily functions (like bone health and blood clotting), it is not a specific maturation factor for RBCs, a, Folic acid - FALSE, Essential for DNA synthesis and normal cell division of erythroblasts, b, Vitamin B12 - FALSE, Also essential for DNA synthesis and RBC maturation, c, Iron - FALSE, A crucial component of the heme group in hemoglobin, d, Cobalt - FALSE, It is a core component of the vitamin B12 molecule.",
-              "keyConcept": "2,3-BPG stabilizes deoxyhemoglobin and lowers oxygen affinity, shifting the dissociation curve to the right; for “Each hemoglobin molecule can become associated with ____ oxygen molecule(s).”, the defining choice is “An unlimited number”.",
+              "explanation": "The correct answer is Four. Hemoglobin is a tetramer consisting of four globin polypeptide chains, each harboring one iron-containing heme prosthetic group capable of reversibly binding one molecule of O2, yielding a maximum stoichiometric capacity of four O2 molecules per hemoglobin molecule.",
+              "keyConcept": "Each hemoglobin tetramer binds exactly 4 molecules of oxygen.",
               "options": [
                 "One",
                 "Two",
@@ -1677,7 +1677,7 @@
                 "Four",
                 "An unlimited number"
               ],
-              "correctIndex": 4,
+              "correctIndex": 3,
               "modelAnswer": null
             },
             {
@@ -1717,9 +1717,9 @@
               "id": "MBL2-CH1-PHYS-0103",
               "type": "mcq",
               "lecture": 4,
-              "text": "Erythropoietin is essential for.",
-              "explanation": "The spleen is the primary site for the destruction of old and damaged red blood cells, b, Kidney - FALSE, The kidney's role is to produce erythropoietin and filter waste, not destroy RBCS, c, Bone marrow - FALSE, Bone marrow is the site of RBC production, d, Heart - FALSE, The heart's function is to pump blood.",
-              "keyConcept": "Mature erythrocytes lack mitochondria and depend on anaerobic glycolysis for ATP; for “Erythropoietin is essential for.”, the defining choice is “Leukopoiesis.”.",
+              "text": "Erythropoietin is essential for:",
+              "explanation": "The correct answer is Formation of red blood corpuscles. Erythropoietin (EPO) is the principal glycoprotein hormone driving erythropoiesis by binding to its receptor (EPO-R) on CFU-E (colony-forming unit-erythroid) and proerythroblasts in the bone marrow, promoting survival, proliferation, and terminal differentiation into mature RBCs.",
+              "keyConcept": "Erythropoietin stimulates CFU-E differentiation and red blood cell production.",
               "options": [
                 "Leukopoiesis.",
                 "Formation of prothrombin.",
@@ -1727,7 +1727,7 @@
                 "Formation of plasma proteins.",
                 "Immunity."
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "modelAnswer": null
             },
             {
@@ -1735,8 +1735,8 @@
               "type": "mcq",
               "lecture": 4,
               "text": "Erythropoietin:",
-              "explanation": "This is the primary and most critical function of erythrocytes, Hemoglobin (Hb) within the RBCs binds to oxygen in the lungs and transports it to the tissues, a, They contain no enzymes - FALSE, They lack a nucleus and organelles but contain crucial cytoplasmic enzymes, such as carbonic anhydrase and those for glycolysis, b, They are responsible for a minor part of blood viscosity - FALSE, They are the major determinant of whole blood viscosity due to their high numbers, c, Their life span is about 2 months - FALSE, Their life span is about 120 days (4 months), e, They are the least number blood cells - FALSE, They are by far the most numerous blood cells.",
-              "keyConcept": "Mature erythrocytes lack mitochondria and depend on anaerobic glycolysis for ATP; for “Erythropoietin”, the defining choice is “Is produced mainly by the heart.”.",
+              "explanation": "The correct answer is Production increases when blood oxygen decreases. Renal peritubular interstitial cells sense oxygen tension via hypoxia-inducible factor 1-alpha (HIF-1alpha). Hypoxia stabilizes HIF-1alpha, driving rapid transcription and secretion of erythropoietin to boost erythropoiesis and restore oxygen delivery.",
+              "keyConcept": "Renal hypoxia stabilizes HIF-1alpha, stimulating erythropoietin synthesis.",
               "options": [
                 "Is produced mainly by the heart.",
                 "Inhibits the production of red blood cells.",
@@ -1744,7 +1744,7 @@
                 "Production is inhibited by testosterone.",
                 "All of these are correct."
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "modelAnswer": null
             },
             {
@@ -1752,15 +1752,15 @@
               "type": "mcq",
               "lecture": 4,
               "text": "In normal blood:",
-              "explanation": "The first part of the statement is correct, Fibrinogen, because of its large, asymmetric shape, is the most important protein for determining plasma viscosity, While the second part about diastolic blood pressure is an indirect effect (viscosity affects peripheral resistance, which affects DPB), the identification of fibrinogen as the main contributor is the key physiological point being tested, a, Albumin, due to its high concentration - FALSE, Although it contributes significantly due to its high concentration, fibrinogen has a greater effect per molecule, b, Red Blood Cells, due to their large number - FALSE, RBCs are the main contributor to whole blood viscosity, not plasma viscosity, d, Gamma globulins, especially during infections - FALSE, While their contribution increases during infection, they are not the main contributor under normal conditions.",
-              "keyConcept": "Neutrophils kill phagocytosed microbes using granule enzymes and an NADPH-oxidase respiratory burst that generates reactive oxygen species; for “In normal blood”, the defining choice is “Platelets number is less than neutrophil.”.",
+              "explanation": "The correct answer is Hb contents is about 14-16 gm%. Physiological hemoglobin concentration in adult humans ranges between 13.5–17.5 g/dL (gm%) in men and 12.0–15.5 g/dL in women. Plasma protein level is normally 6–8 g/dL (not 20 mg%), platelets (150,000–400,000/µL) far outnumber neutrophils (2,500–7,500/µL), and RBCs are biconcave (not biconvex) discs.",
+              "keyConcept": "Normal blood hemoglobin concentration is 14-16 g/dL; platelets outnumber leukocytes.",
               "options": [
                 "The plasma protein level is 20mg %.",
                 "Hb contents is about 14-16 gm%.",
                 "Platelets number is less than neutrophil.",
                 "The RBCs are biconvex discs under normal physiological conditions."
               ],
-              "correctIndex": 2,
+              "correctIndex": 1,
               "modelAnswer": null
             },
             {
@@ -1785,8 +1785,8 @@
               "type": "mcq",
               "lecture": 4,
               "text": "In the following, mark the wrong statement:",
-              "explanation": "Erythropoietin (EPO) is the principal hormone that stimulates the bone marrow to produce and differentiate red blood cells (erythrocytes), This process is called erythropoiesis, a, Leukopoiesis - FALSE, This is the formation of white blood cells, b, Formation of prothrombin - FALSE, Prothrombin is a plasma protein made by the liver, d, Formation of plasma proteins - FALSE, This is mainly a function of the liver, e, Immunity - FALSE, This is the function of the immune system (WBCs, antibodies).",
-              "keyConcept": "Identify the normal mechanism first, then reject options that describe a different cell type, pathway, or regulatory response; for “In the following, mark the wrong statement”, the defining choice is “Erythropoiesis is increased in normal animals when injected with plasma obtained from hypoxic animals.”.",
+              "explanation": "The incorrect statement (and therefore correct answer) is: 'Thyroid hormones circulate bound to plasma proteins to increase their buffering capacity.' Thyroid hormones circulate bound to thyroxine-binding globulin (TBG) and albumin to act as a circulating reservoir and prevent rapid renal filtration, NOT to increase buffering capacity of blood.",
+              "keyConcept": "Plasma protein binding of thyroid hormone provides a circulating reservoir, not blood buffering.",
               "options": [
                 "Thyroid hormones circulate bound to plasma proteins to increase their buffering capacity.",
                 "Hb is present inside RBCs to prevent its escape to the plasma.",
@@ -1794,7 +1794,7 @@
                 "The membrane of RBCs contains substances that determine blood groups.",
                 "RBCs membrane allow anions only to pass freely."
               ],
-              "correctIndex": 2,
+              "correctIndex": 0,
               "modelAnswer": null
             },
             {
@@ -1834,16 +1834,16 @@
               "type": "mcq",
               "lecture": 4,
               "text": "The main site of production of erythropoietin is:",
-              "explanation": "Normal adult hemoglobin (HbA) is a tetramer composed of two alpha (a) globin chains and two beta (B) globin chains, b, 2 alpha and 2 gamma chains - FALSE, This is the composition of fetal hemoglobin (HbF), c, 2 alpha and 2 delta chains - FALSE, This is the composition of HbA2, a minor form of adult hemoglobin, d, e - FALSE, These combinations are not standard forms of hemoglobin.",
-              "keyConcept": "Renal erythropoietin rises with tissue hypoxia and stimulates erythroid progenitors in bone marrow; for “The main site of production of erythropoietin is”, the defining choice is “Liver.”.",
+              "explanation": "The correct answer is Kidneys. In adults, approximately 85% to 90% of erythropoietin is synthesized and secreted by peritubular interstitial capillary endothelial cells and fibroblasts in the renal cortex and outer medulla, with the remaining 10% to 15% synthesized by the liver.",
+              "keyConcept": "The kidneys produce ~90% of adult erythropoietin in response to hypoxia.",
               "options": [
                 "Liver.",
                 "Bone marrow.",
                 "Spleen.",
                 "Kidneys.",
-                "Plasma. - M30 Erythrocytes & Erythropoiesis"
+                "Plasma."
               ],
-              "correctIndex": 0,
+              "correctIndex": 3,
               "modelAnswer": null
             },
             {
@@ -1950,15 +1950,15 @@
               "type": "mcq",
               "lecture": 5,
               "text": "Albumin / globulin ratio:",
-              "explanation": "This statement is incorrect, This is the same reason as in question 2; gamma globulins are produced by plasma cells, not the liver, b, Gamma globulins are antibodies - TRUE, These are also known as immunoglobulins, c, Fibrinogen is responsible for blood viscosity - TRUE, Fibrinogen, due to its large, asymmetric shape, is a major contributor to plasma viscosity, d, The amount of albumin is greater than globulin - TRUE, The normal albumin level is higher than the total globulin level, resulting in an A/G ratio > 1.",
-              "keyConcept": "Albumin is the main determinant of plasma oncotic pressure and also transports many endogenous and exogenous compounds; for “Albumin / globulin ratio”, the defining choice is “Higher in liver diseases.”.",
+              "explanation": "The correct answer is Normally equals 1.2 - 1.6. In healthy individuals, serum albumin (3.5–5.0 g/dL) exceeds total globulins (2.0–3.5 g/dL), yielding a physiological A/G ratio of 1.2 to 1.6. In liver cirrhosis, nephrotic syndrome, and chronic infections, the ratio decreases (reverses) due to reduced albumin synthesis, urinary albumin loss, or polyclonal hypergammaglobulinemia.",
+              "keyConcept": "Normal A/G ratio is 1.2-1.6; it decreases in hepatic failure, albuminuria, and chronic infections.",
               "options": [
                 "Higher in liver diseases.",
                 "Increase in conditions of albuminuria.",
                 "Normally equals 1.2 - 1.6.",
                 "Increases in infections."
               ],
-              "correctIndex": 0,
+              "correctIndex": 2,
               "modelAnswer": null
             },
             {
@@ -1966,15 +1966,15 @@
               "type": "mcq",
               "lecture": 5,
               "text": "All about plasma protein are true EXCEPT:",
-              "explanation": "This statement is incorrect, The transport of oxygen (O,) is the primary function of hemoglobin, a, Facilitate retention of fluid in the blood vessels - TRUE, This is a key function via colloid osmotic pressure, b, Play an important role in blood clotting - TRUE, Fibrinogen and prothrombin are plasma proteins essential for clotting, c, Bind & transport certain hormones - TRUE, Albumin and specific globulins act as carrier proteins.",
-              "keyConcept": "Identify the normal mechanism first, then reject options that describe a different cell type, pathway, or regulatory response; for “All about plasma protein are true EXCEPT”, the defining choice is “Can be used by the tissues for their protein metabolism.”.",
+              "explanation": "The correct answer is Are formed only in liver. While albumin, fibrinogen, and most alpha- and beta-globulins are synthesized exclusively in hepatocytes, gamma-globulins (immunoglobulins/antibodies) are synthesized by plasma cells in lymphoid tissue throughout the body, not by the liver.",
+              "keyConcept": "Immunoglobulins (gamma globulins) are synthesized by plasma cells, not by the liver.",
               "options": [
                 "Amount is 7g/100 ml plasma.",
                 "Share in production of blood viscosity.",
                 "Are formed only in liver.",
                 "Can be used by the tissues for their protein metabolism."
               ],
-              "correctIndex": 3,
+              "correctIndex": 2,
               "modelAnswer": null
             },
             {
@@ -1982,15 +1982,15 @@
               "type": "mcq",
               "lecture": 5,
               "text": "Antibodies are:",
-              "explanation": "This is the correct physiological range for the albumin/globulin ratio in a healthy individual, a, Higher in liver diseases - FALSE, In liver disease, albumin synthesis decreases, which lowers the A/G ratio, b, Increase in conditions of albuminuria - FALSE, Albuminuria means loss of albumin in the urine, which decreases the A/G ratio, d, Increases in infections - FALSE, Infections lead to increased production of globulins (antibodies), which decreases the A/G ratio.",
-              "keyConcept": "B lymphocytes differentiate into plasma cells that secrete antibodies and mediate humoral immunity; for “Antibodies are”, the defining choice is “Produced by T-lymphocytes.”.",
+              "explanation": "The correct answer is Gamma globulins. Antibodies (immunoglobulins) migrate electrophoretically in the gamma-globulin fraction. They are secreted by differentiated B-lymphocytes (plasma cells), NOT by T-lymphocytes.",
+              "keyConcept": "Antibodies are gamma globulins secreted by B-cell-derived plasma cells.",
               "options": [
                 "Gamma globulins.",
                 "A type of plasma electrolyte.",
                 "Produced by T-lymphocytes.",
                 "Both a and c."
               ],
-              "correctIndex": 2,
+              "correctIndex": 0,
               "modelAnswer": null
             },
             {
@@ -5395,12 +5395,14 @@
               "id": "MBL2-CH1-BIOC-0188",
               "type": "mcq",
               "lecture": 9,
-              "text": "In myoglobin, PO, needed to achieve half saturation of binding sites (Pso) is:",
-              "explanation": "Answer is A, as myoglobin's P50 is approximately 2-5 mmHg, indicating high oxygen affinity for storage. C, 26 mm Hg - FALSE because this is hemoglobin's P50.",
-              "keyConcept": "Link the molecule or pathway in the stem to its specific enzyme, cofactor, compartment, or regulatory step; for “In myoglobin, PO, needed to achieve half saturation of binding sites (Pso) is”, the defining choice is “5 mm Hg c. 26 mm Hg”.",
+              "text": "In myoglobin, PO2 needed to achieve half saturation of binding sites (P50) is:",
+              "explanation": "The correct answer is 5 mm Hg. Myoglobin has a hyperbolic oxygen dissociation curve with a very high oxygen affinity, resulting in a P50 of approximately 2–5 mmHg (contrasted with adult hemoglobin HbA, which exhibits a sigmoidal cooperative curve with a P50 of approximately 26–27 mmHg). This ensures myoglobin binds oxygen avidly at physiological tissue PO2 and releases it only under extreme hypoxic conditions during strenuous muscle contraction.",
+              "keyConcept": "Myoglobin P50 is approximately 2–5 mmHg with a hyperbolic curve, reflecting higher oxygen affinity than hemoglobin (P50 ≈ 26 mmHg).",
               "options": [
-                "5 mm Hg c. 26 mm Hg",
-                "20 mm Hg d. 100 mm Hg"
+                "5 mm Hg",
+                "20 mm Hg",
+                "26 mm Hg",
+                "100 mm Hg"
               ],
               "correctIndex": 0,
               "modelAnswer": null
@@ -7848,12 +7850,13 @@
               "type": "mcq",
               "lecture": 2,
               "text": "Choose the incorrect sentence from the following:",
-              "explanation": "bicarbonate or other specific measures are preferred while Chronic iron toxicity (e.g., from repeated transfusions) can be treated with deferoxamine given IM or SC, Diphyllobothriasis can cause vitamin B12 deficiency; treatment involves praziquantel plus B12 supplementation and Anemia of chronic disease generally does not benefit from iron unless there is a coexisting true iron deficiency.",
-              "keyConcept": "Lead inhibits ALA dehydratase and ferrochelatase in heme synthesis; for “Choose the incorrect sentence from the following”, the defining choice is “In acute iron toxicity, gastric lavage is performed with saline solutions”.",
+              "explanation": "The incorrect sentence (and therefore correct answer) is: 'In acute iron toxicity, gastric lavage is performed with saline solutions.' In acute iron toxicity, simple saline lavage is ineffective; gastric lavage using 1% sodium bicarbonate is traditionally employed because it precipitates free iron into insoluble, non-absorbable ferrous carbonate complexes, alongside whole-bowel irrigation with polyethylene glycol (PEG) and systemic chelation with deferoxamine. The other statements are accurate.",
+              "keyConcept": "Acute iron poisoning requires sodium bicarbonate gastric lavage, whole-bowel irrigation, and deferoxamine chelation; saline lavage is ineffective.",
               "options": [
                 "In acute iron toxicity, gastric lavage is performed with saline solutions",
                 "In chronic iron toxicity, Deferoxamine is given IM or SC",
-                "In Diphylobothriasis; Praziquantel is used with B12 erythropoietin d. In anemia of chronic disease, iron failure. therapy is not required lead to"
+                "In Diphylobothriasis, Praziquantel is used with Vitamin B12",
+                "In anemia of chronic disease, iron therapy is not required"
               ],
               "correctIndex": 0,
               "modelAnswer": null
@@ -9733,11 +9736,13 @@
               "type": "mcq",
               "lecture": 2,
               "text": "Schizonts of malaria parasite are NOT seen in peripheral blood in:",
-              "explanation": "is characteristic of P. malariae. P. falciparum has a 48-hour cycle (tertian), but it is often irregular or continuous. In P. falciparum infections, the later developmental stages (late trophozoites and schizonts) are sequestered in the microvasculature of deep organs and are therefore not typically found circulating in peripheral blood smears. Only early rings and gametocytes are usually seen. a, c, d - FALSE. In infections with P. vivax, P. ovale, and P. malariae, all erythrocytic stages, including schizonts, can be found in the peripheral blood",
-              "keyConcept": "Separate parasites by host, vector, infective stage, diagnostic stage, and characteristic clinical manifestation; for “Schizonts of malaria parasite are NOT seen in peripheral blood in”, the defining choice is “P. falciparum. d. P. malariae.”.",
+              "explanation": "The correct answer is P. falciparum. Erythrocytic schizogony of Plasmodium falciparum occurs inside deep capillary beds and visceral organs (brain, kidneys, spleen) due to cytoadherence and sequestration mediated by PfEMP1 (Plasmodium falciparum erythrocyte membrane protein 1). Consequently, schizonts and mature trophozoites are sequestered and not typically seen on a peripheral blood smear, where only young ring-form trophozoites and banana-shaped gametocytes circulate.",
+              "keyConcept": "Plasmodium falciparum schizonts undergo cytoadherence and sequestration in deep vascular beds, so only ring forms and gametocytes appear in peripheral blood.",
               "options": [
-                "P. vivax. c. P. ovale.",
-                "P. falciparum. d. P. malariae."
+                "P. vivax",
+                "P. falciparum",
+                "P. ovale",
+                "P. malariae"
               ],
               "correctIndex": 1,
               "modelAnswer": null
@@ -10662,11 +10667,13 @@
               "type": "mcq",
               "lecture": 3,
               "text": "Which of the following insecticide is non-residual one:",
-              "explanation": "Plasmin is the active proteolytic enzyme responsible for fibrinolysis -- it degrades fibrin strands within a clot, breaking it down into fibrin degradation products, thereby dissolving the clot once it is no longer needed and restoring vessel patency.",
-              "keyConcept": "Plasmin is the enzyme that directly proteolyzes fibrin, mediating clot breakdown (fibrinolysis).",
+              "explanation": "The correct answer is Pyrethrum. Pyrethrum is a natural contact botanical insecticide derived from Chrysanthemum flowers. It produces rapid knock-down of flying insects via axonal sodium channel disruption but is rapidly degraded by ultraviolet light and air, making it non-residual. In contrast, organochlorines like DDT and organophosphates/carbamates like Malathion and Baygon persist on surfaces for weeks to months as residual insecticides.",
+              "keyConcept": "Pyrethrum is a non-residual, rapid knock-down natural botanical insecticide degraded quickly by sunlight.",
               "options": [
-                "Malathion c. DDT",
-                "Pyrethrum d. Baygon"
+                "Malathion",
+                "Pyrethrum",
+                "DDT",
+                "Baygon"
               ],
               "correctIndex": 1,
               "modelAnswer": null
@@ -10960,11 +10967,13 @@
               "type": "mcq",
               "lecture": 4,
               "text": "Early stages of sleeping sickness is best treated by:",
-              "explanation": "B-lymphocytes mediate humoral immunity by differentiating into antibody-secreting plasma cells upon antigen recognition, distinguishing their function from T-lymphocytes (cell-mediated immunity) and the granulocytic/phagocytic white cell lines.",
-              "keyConcept": "B-lymphocytes are the WBC class responsible for humoral (antibody-based) immunity.",
+              "explanation": "The correct answer is Pentamidine. For the hemolymphatic (first/early) stage of West African sleeping sickness (Trypanosoma brucei gambiense), Pentamidine is the drug of choice because it effectively clears bloodstream and lymphatic parasites without requiring CNS penetration. For East African (T. b. rhodesiense) early stage, Suramin is preferred. Late/meningoencephalitic stages with CNS invasion require Melarsoprol or NECT (Nifurtimox-Eflornithine combination therapy).",
+              "keyConcept": "Early hemolymphatic stage of T. b. gambiense sleeping sickness is treated with Pentamidine; late CNS stages require Melarsoprol or NECT.",
               "options": [
-                "Pentamidine. c. Primaquine.",
-                "Metronidazole. d. Chloroquine."
+                "Pentamidine",
+                "Metronidazole",
+                "Primaquine",
+                "Chloroquine"
               ],
               "correctIndex": 0,
               "modelAnswer": null
@@ -14111,11 +14120,13 @@
               "type": "mcq",
               "lecture": 3,
               "text": "The following marker is diagnostic for T cell lymphoma:",
-              "explanation": "As CD3 is a-T-cell marker. While other markers are not correct. This identifies the correct mechanism or drug relationship and distinguishes it from the listed alternatives.",
-              "keyConcept": "Match the morphology, immunophenotype, and clinical pattern before selecting the diagnosis or mechanism; for “The following marker is diagnostic for T cell lymphoma”, the defining choice is “CD3 d. CD200”.",
+              "explanation": "The correct answer is CD3. CD3 is the invariant pan-T-cell lineage marker complex that couples with the T-cell receptor (TCR) for intracellular signal transduction. Detection of CD3 by immunohistochemistry or flow cytometry definitively establishes T-cell lineage in lymphoid neoplasms. In contrast, CD10 is a germinal-center B-cell marker (CALLA), and CD200 is used in B-cell chronic lymphocytic leukemia.",
+              "keyConcept": "CD3 is the definitive pan-T-cell lineage marker found on all normal and most neoplastic T lymphocytes.",
               "options": [
-                "CD10 c. CD30",
-                "CD3 d. CD200"
+                "CD10",
+                "CD3",
+                "CD30",
+                "CD200"
               ],
               "correctIndex": 1,
               "modelAnswer": null

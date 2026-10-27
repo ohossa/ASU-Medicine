@@ -12,6 +12,7 @@ export default async function handler(req:any,res:any){
   if(req.method==='GET'){
    const moduleCode=String(query.moduleCode??'');
    if(query.action==='published'){
+    res.setHeader('Cache-Control','public, s-maxage=300, stale-while-revalidate=86400');
     const modules=moduleCode?[moduleCode]:await editedModules();
     const edits=(await Promise.all(modules.map(async code=>(await service.published(code)).map(edit=>({...edit,moduleCode:code}))))).flat();
     return res.status(200).json({edits});

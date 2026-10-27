@@ -19,8 +19,8 @@ describe('pre-push legacy display cleanup', () => {
         if (!current) {
           expect(record?.action).toBe('exclude'); expect(record.original).toEqual(old);
         } else {
-          expect(current.correctIndex).toEqual(old.correctIndex);
-          expect(current.correctAnswer).toEqual(old.correctAnswer);
+          expect(current.correctIndex).toEqual(record?.updated?.correctIndex ?? old.correctIndex);
+          expect(current.correctAnswer).toEqual(record?.updated?.correctAnswer ?? old.correctAnswer);
           expect(current.type).toEqual(old.type);
           expect(current.subQuestions).toEqual(old.subQuestions);
           if (record) {

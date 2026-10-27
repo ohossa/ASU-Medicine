@@ -1,0 +1,6 @@
+Independent review findings and fixes
+
+Same-named topics: latestTopicResult matches full topic key; ambiguous legacy title-only results are suppressed rather than attributed to both subjects. Unique legacy titles still display.
+Legacy drafts: exact ID set and question-version-bound named-topic drafts are offered when no valid new custom draft exists; broad, changed, unversioned or finished drafts are rejected. Original shuffled order/answers remain saved.
+Resume subject metadata: a single-topic selectedPractice derives source subject ID and icon, so resume and fresh start agree.
+Verification: final staged full suite114files/658tests passed. Dedicated regression tests cover collisions, legacy drafts and single-topic resume. Strict build recorded separately.

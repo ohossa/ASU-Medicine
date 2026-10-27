@@ -194,4 +194,73 @@ describe('useCloudSync hook', () => {
     unmount();
   });
 
+  it('does not execute POST /api/sync during idle pull when cloud and local are already in sync', async () => {
+    const existingHistory = [{ id: 'attempt-1', date: '2026-10-23T10:00:00Z', pct: 95 }];
+    localStorage.setItem('asu_history:test-user', JSON.stringify(existingHistory));
+    localStorage.setItem('theme', 'dark');
+
+    fetchMock.mockImplementation(() =>
+      Promise.resolve({
+        ok: true,
+        json: () => Promise.resolve({
+          data: {
+            'theme': 'dark',
+            'endocrine_essay_quiz_history': existingHistory
+          }
+        })
+      })
+    );
+
+    const { unmount } = renderHook(() => useCloudSync());
+
+    await act(async () => {
+      await new Promise(resolve => setTimeout(resolve, 50));
+    });
+
+    // Should only have performed 1 GET pull, and ZERO POST calls
+    const postCalls = fetchMock.mock.calls.filter(([, init]: any[]) => init?.method === 'POST');
+    expect(postCalls).toHaveLength(0);
+    expect(fetchMock).toHaveBeenCalledTimes(1);
+    unmount();
+  });
+
+  it('triggers POST /api/sync during pull if local has offline attempts missing in cloud', async () => {
+    const cloudHistory = [{ id: 'cloud-1', date: '2026-10-20T10:00:00Z', pct: 85 }];
+    const offlineHistory = [
+      { id: 'cloud-1', date: '2026-10-20T10:00:00Z', pct: 85 },
+      { id: 'offline-2', date: '2026-10-23T10:00:00Z', pct: 100 }
+    ];
+    localStorage.setItem('asu_history:test-user', JSON.stringify(offlineHistory));
+
+    fetchMock.mockImplementation((_url: string, init?: RequestInit) => {
+      if (init?.method === 'POST') {
+        return Promise.resolve({
+          ok: true,
+          json: () => Promise.resolve({ success: true })
+        });
+      }
+      return Promise.resolve({
+        ok: true,
+        json: () => Promise.resolve({
+          data: {
+            'endocrine_essay_quiz_history': cloudHistory
+          }
+        })
+      });
+    });
+
+    const { unmount } = renderHook(() => useCloudSync());
+
+    await act(async () => {
+      await new Promise(resolve => setTimeout(resolve, 50));
+    });
+
+    const postCalls = fetchMock.mock.calls.filter(([, init]: any[]) => init?.method === 'POST');
+    expect(postCalls).toHaveLength(1);
+    const body = JSON.parse(postCalls[0][1].body);
+    expect(body.endocrine_essay_quiz_history).toHaveLength(2);
+    expect(body.endocrine_essay_quiz_history.map((x: any) => x.id)).toContain('offline-2');
+    unmount();
+  });
+
 });

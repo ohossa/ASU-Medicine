@@ -25,6 +25,7 @@ import {
 import { getFlaggedQuestions, toggleFlaggedQuestion } from "../utils/storage";
 import {
   searchEntries,
+  availableSearchCollections,
   answerText,
   highlightParts,
   studyUrl,
@@ -86,6 +87,7 @@ export function QuestionSearch({
     () => new Set(getFlaggedQuestions().map(String)),
   );
   const [ready, setReady] = useState(false);
+  const [loadedYear, setLoadedYear] = useState<string | undefined>(undefined);
   const [error, setError] = useState("");
   const [loadAttempt, setLoadAttempt] = useState(0);
   useEffect(() => {
@@ -97,7 +99,7 @@ export function QuestionSearch({
       : ensureDataLoaded()
     )
       .then(() => {
-        if (live) setReady(true);
+        if (live) { setLoadedYear(filters.year); setReady(true); }
       })
       .catch(() => {
         if (live)
@@ -158,6 +160,7 @@ export function QuestionSearch({
   );
   const {
     entries,
+    indexedSources,
     results,
     indexing,
     searching,
@@ -171,6 +174,12 @@ export function QuestionSearch({
     missed,
     attempted,
   );
+  const availableCollections = useMemo(() => availableSearchCollections(entries, filters), [entries, filters]);
+  useEffect(() => {
+    if (ready && loadedYear === filters.year && indexedSources === sources && !indexing && entries.length > 0 && filters.collection !== 'all' && !availableCollections.includes(filters.collection ?? 'all')) {
+      setFilters(current => ({...current, collection:'all'}));
+    }
+  }, [ready, loadedYear, filters.year, indexedSources, sources, indexing, entries, filters.collection, availableCollections]);
   const patch = (name: keyof SearchFilters, value: string | boolean) => {
     scopeChosen.current = true;
     setFilters((f) => ({
@@ -349,10 +358,10 @@ export function QuestionSearch({
             <Filter
               name="collection"
               label={ar ? "المجموعة" : "Collection"}
-              options={[
+              options={([
                 ["practice", "Question bank"],
                 ["past-exams", "Past exams & recalls"],
-              ]}
+              ] as Array<[string, string]>).filter(([value]) => availableCollections.includes(value))}
             />
             <Filter
               name="type"
@@ -410,7 +419,7 @@ export function QuestionSearch({
         ) : (
           <>
             <p className="search-count" role="status" aria-live="polite">
-              {results.length.toLocaleString()} {ar ? "سؤال" : "questions"}
+              {results.length.toLocaleString()} {ar ? "سؤال" : results.length===1 ? "question" : "questions"}
               {deferred && ` · “${deferred}”`}
               {query !== deferred || searching ? " · Searching…" : ""}
             </p>

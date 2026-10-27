@@ -1,0 +1,582 @@
+{
+  "authority": {
+    "path": "/Users/omarhossa/Documents/Medcine ASU/Year 1/كتب طب عين شمس سنة أولى/كتب طب عين شمس الترم الاول/study guid of Histology.pdf",
+    "sha256": "9fd2e39044c3055c51395a10d01106a553e351c32c18c45f15f88b48f28ab3fd",
+    "pages": 111,
+    "role": "chapter_authority_and_review_evidence"
+  },
+  "chapter_ids_preserved": true,
+  "source_bank_sha256": "1a9a96ac05d8fcc18e975618a03074ce83aede0c043778544f599516f78e0e69",
+  "chapters": [
+    {
+      "chapter": 1,
+      "title": "Microtechniques and Microscopy",
+      "topics": [
+        {
+          "order": 1,
+          "label": "Tissue preparation",
+          "book_pdf_pages": [
+            8,
+            9
+          ],
+          "count": 15
+        },
+        {
+          "order": 2,
+          "label": "Microscopy",
+          "book_pdf_pages": [
+            11,
+            12,
+            13
+          ],
+          "count": 18
+        },
+        {
+          "order": 3,
+          "label": "Staining and histochemistry",
+          "book_pdf_pages": [
+            10
+          ],
+          "count": 24
+        }
+      ]
+    },
+    {
+      "chapter": 2,
+      "title": "The Cell",
+      "topics": [
+        {
+          "order": 1,
+          "label": "Cell organization and cytoskeleton overview",
+          "book_pdf_pages": [
+            15,
+            16,
+            40,
+            46,
+            47
+          ],
+          "count": 23
+        },
+        {
+          "order": 2,
+          "label": "Plasma membrane structure and proteins",
+          "book_pdf_pages": [
+            16,
+            17,
+            18,
+            19
+          ],
+          "count": 44
+        },
+        {
+          "order": 3,
+          "label": "Glycocalyx and cell recognition",
+          "book_pdf_pages": [
+            18,
+            19
+          ],
+          "count": 11
+        },
+        {
+          "order": 4,
+          "label": "Membrane transport and endocytosis",
+          "book_pdf_pages": [
+            20,
+            21
+          ],
+          "count": 25
+        },
+        {
+          "order": 5,
+          "label": "Endosomes",
+          "book_pdf_pages": [
+            21,
+            22
+          ],
+          "count": 6
+        },
+        {
+          "order": 6,
+          "label": "Mitochondria",
+          "book_pdf_pages": [
+            22,
+            23,
+            24,
+            25
+          ],
+          "count": 38
+        },
+        {
+          "order": 7,
+          "label": "Rough and smooth endoplasmic reticulum",
+          "book_pdf_pages": [
+            26,
+            27
+          ],
+          "count": 39
+        },
+        {
+          "order": 8,
+          "label": "Golgi apparatus and secretion",
+          "book_pdf_pages": [
+            27,
+            28,
+            29,
+            31
+          ],
+          "count": 39
+        },
+        {
+          "order": 9,
+          "label": "Lysosomes and intracellular digestion",
+          "book_pdf_pages": [
+            31,
+            32,
+            33
+          ],
+          "count": 22
+        },
+        {
+          "order": 10,
+          "label": "Peroxisomes and proteasomes",
+          "book_pdf_pages": [
+            34,
+            35,
+            36
+          ],
+          "count": 15
+        },
+        {
+          "order": 11,
+          "label": "Ribosomes and protein synthesis",
+          "book_pdf_pages": [
+            36,
+            37,
+            38,
+            39
+          ],
+          "count": 29
+        },
+        {
+          "order": 12,
+          "label": "Microtubules and intracellular transport",
+          "book_pdf_pages": [
+            40,
+            41
+          ],
+          "count": 21
+        },
+        {
+          "order": 13,
+          "label": "Centrioles, cilia and flagella",
+          "book_pdf_pages": [
+            41,
+            44,
+            45
+          ],
+          "count": 41
+        },
+        {
+          "order": 14,
+          "label": "Actin and intermediate filaments",
+          "book_pdf_pages": [
+            46,
+            47
+          ],
+          "count": 29
+        },
+        {
+          "order": 15,
+          "label": "Cytoplasmic inclusions and pigments",
+          "book_pdf_pages": [
+            48,
+            49
+          ],
+          "count": 40
+        },
+        {
+          "order": 16,
+          "label": "Nuclear envelope and pores",
+          "book_pdf_pages": [
+            50,
+            51,
+            52,
+            54
+          ],
+          "count": 21
+        },
+        {
+          "order": 17,
+          "label": "Chromatin and nuclear organization",
+          "book_pdf_pages": [
+            50,
+            52,
+            53,
+            54,
+            55,
+            56
+          ],
+          "count": 21
+        },
+        {
+          "order": 18,
+          "label": "Nucleolus and ribosome biogenesis",
+          "book_pdf_pages": [
+            57,
+            58
+          ],
+          "count": 23
+        },
+        {
+          "order": 19,
+          "label": "Cell cycle, renewal and division",
+          "book_pdf_pages": [
+            41,
+            58
+          ],
+          "count": 9,
+          "basis": "Question-derived subdivision supported by saved supplemental medical review references; listed book pages are nearest conceptual anchors"
+        },
+        {
+          "order": 20,
+          "label": "Cell death and apoptosis",
+          "book_pdf_pages": [
+            58
+          ],
+          "count": 8
+        },
+        {
+          "order": 21,
+          "label": "Chromosomes and chromosomal disorders",
+          "book_pdf_pages": [
+            54,
+            55,
+            56
+          ],
+          "count": 21,
+          "basis": "Question-derived subdivision supported by saved supplemental medical review references; listed book pages are nearest conceptual anchors"
+        }
+      ]
+    },
+    {
+      "chapter": 3,
+      "title": "Epithelial Tissue",
+      "topics": [
+        {
+          "order": 1,
+          "label": "General epithelial features and renewal",
+          "book_pdf_pages": [
+            59,
+            60,
+            73
+          ],
+          "count": 17
+        },
+        {
+          "order": 2,
+          "label": "Simple and pseudostratified epithelium",
+          "book_pdf_pages": [
+            61,
+            62
+          ],
+          "count": 46
+        },
+        {
+          "order": 3,
+          "label": "Stratified squamous and columnar epithelium",
+          "book_pdf_pages": [
+            62,
+            63
+          ],
+          "count": 18
+        },
+        {
+          "order": 4,
+          "label": "Transitional epithelium",
+          "book_pdf_pages": [
+            63
+          ],
+          "count": 19
+        },
+        {
+          "order": 5,
+          "label": "Gland classification and architecture",
+          "book_pdf_pages": [
+            64,
+            66,
+            67
+          ],
+          "count": 10
+        },
+        {
+          "order": 6,
+          "label": "Serous, mucous and goblet cells",
+          "book_pdf_pages": [
+            65,
+            66
+          ],
+          "count": 13
+        },
+        {
+          "order": 7,
+          "label": "Modes of glandular secretion",
+          "book_pdf_pages": [
+            67
+          ],
+          "count": 13
+        },
+        {
+          "order": 8,
+          "label": "Neuroepithelium and myoepithelium",
+          "book_pdf_pages": [
+            66,
+            68
+          ],
+          "count": 11
+        },
+        {
+          "order": 9,
+          "label": "Apical specializations",
+          "book_pdf_pages": [
+            68,
+            69
+          ],
+          "count": 20
+        },
+        {
+          "order": 10,
+          "label": "Cell junctions",
+          "book_pdf_pages": [
+            70,
+            71,
+            72
+          ],
+          "count": 38
+        },
+        {
+          "order": 11,
+          "label": "Basement membrane and basal specializations",
+          "book_pdf_pages": [
+            73,
+            89,
+            90
+          ],
+          "count": 13
+        }
+      ]
+    },
+    {
+      "chapter": 4,
+      "title": "Connective Tissue",
+      "topics": [
+        {
+          "order": 1,
+          "label": "Connective tissue organization and cell populations",
+          "book_pdf_pages": [
+            74,
+            75
+          ],
+          "count": 23
+        },
+        {
+          "order": 2,
+          "label": "Mesenchymal cells, pericytes and fibroblasts",
+          "book_pdf_pages": [
+            76,
+            77
+          ],
+          "count": 27
+        },
+        {
+          "order": 3,
+          "label": "Macrophages and the phagocyte system",
+          "book_pdf_pages": [
+            78,
+            79
+          ],
+          "count": 25
+        },
+        {
+          "order": 4,
+          "label": "Mast cells and allergic reactions",
+          "book_pdf_pages": [
+            80,
+            81
+          ],
+          "count": 24
+        },
+        {
+          "order": 5,
+          "label": "Plasma cells and antibodies",
+          "book_pdf_pages": [
+            81
+          ],
+          "count": 20
+        },
+        {
+          "order": 6,
+          "label": "Adipose tissue",
+          "book_pdf_pages": [
+            82,
+            83,
+            93,
+            94
+          ],
+          "count": 25
+        },
+        {
+          "order": 7,
+          "label": "Collagen fibers and synthesis",
+          "book_pdf_pages": [
+            83,
+            84,
+            85,
+            87
+          ],
+          "count": 36
+        },
+        {
+          "order": 8,
+          "label": "Reticular fibers and stroma",
+          "book_pdf_pages": [
+            77,
+            88,
+            93
+          ],
+          "count": 21
+        },
+        {
+          "order": 9,
+          "label": "Elastic fibers",
+          "book_pdf_pages": [
+            88,
+            89
+          ],
+          "count": 15
+        },
+        {
+          "order": 10,
+          "label": "Ground substance and extracellular matrix",
+          "book_pdf_pages": [
+            89
+          ],
+          "count": 9
+        },
+        {
+          "order": 11,
+          "label": "Basement membrane",
+          "book_pdf_pages": [
+            89,
+            90
+          ],
+          "count": 10
+        },
+        {
+          "order": 12,
+          "label": "Loose and dense connective tissue",
+          "book_pdf_pages": [
+            92,
+            93
+          ],
+          "count": 32
+        },
+        {
+          "order": 13,
+          "label": "Embryonic connective tissue",
+          "book_pdf_pages": [
+            94
+          ],
+          "count": 6
+        }
+      ]
+    },
+    {
+      "chapter": 5,
+      "title": "Overview",
+      "topics": [
+        {
+          "order": 1,
+          "label": "Blood",
+          "book_pdf_pages": [],
+          "count": 17
+        },
+        {
+          "order": 2,
+          "label": "Smooth Muscle Fibers",
+          "book_pdf_pages": [],
+          "count": 8
+        },
+        {
+          "order": 3,
+          "label": "Blood Vascular System",
+          "book_pdf_pages": [],
+          "count": 17
+        },
+        {
+          "order": 4,
+          "label": "The Respiratory System",
+          "book_pdf_pages": [],
+          "count": 15
+        },
+        {
+          "order": 5,
+          "label": "The Endocrine System",
+          "book_pdf_pages": [],
+          "count": 9
+        },
+        {
+          "order": 6,
+          "label": "The Kidney",
+          "book_pdf_pages": [],
+          "count": 16
+        },
+        {
+          "order": 7,
+          "label": "The Digestive System",
+          "book_pdf_pages": [],
+          "count": 21
+        },
+        {
+          "order": 8,
+          "label": "The Prostate",
+          "book_pdf_pages": [],
+          "count": 1
+        },
+        {
+          "order": 9,
+          "label": "Other overview sites",
+          "book_pdf_pages": [],
+          "count": 2
+        }
+      ]
+    },
+    {
+      "chapter": 6,
+      "title": "Past Exams",
+      "topics": [
+        {
+          "order": 1,
+          "label": "Exam 1: Cell and Microtechniques",
+          "book_pdf_pages": [],
+          "count": 37
+        },
+        {
+          "order": 2,
+          "label": "Formative Exam 1",
+          "book_pdf_pages": [],
+          "count": 5
+        },
+        {
+          "order": 3,
+          "label": "Formative Exam 2",
+          "book_pdf_pages": [],
+          "count": 6
+        }
+      ]
+    }
+  ],
+  "topic_policy": "Book-heading and tested-question-derived middle granularity; supplemental source-question topics retained; book_pdf_pages are conceptual anchors, not a claim that every subdivision is a literal book heading; no forced quotas",
+  "total_questions": 1227,
+  "total_topics": 60,
+  "uncertainty": 0
+}

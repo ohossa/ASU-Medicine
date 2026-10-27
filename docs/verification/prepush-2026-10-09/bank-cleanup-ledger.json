@@ -675,5 +675,2365 @@
       "correctIndex": 1,
       "modelAnswer": null
     }
+  },
+  {
+    "module": "MINF-1",
+    "id": "MINF1-CH1-MICR-0169",
+    "action": "display-cleanup",
+    "reason": "Repair broken chemical formula Cat*Cl to CaCl2 and broken ligature Arti cial to Artificial",
+    "original": {
+      "id": "MINF1-CH1-MICR-0169",
+      "type": "mcq",
+      "lecture": 5,
+      "text": "Heat shock & Cat*Cl are important in which of the following?",
+      "explanation": "The correct answer is Arti cial competence. This is a bacterial genetics item, so the key is distinguishing mutation from transformation, transduction, conjugation, lysogeny, plasmids, and transposons. The wrong answers generally use the wrong route of DNA transfer or the wrong genetic vehicle.",
+      "keyConcept": "Bacterial genetics high-yield: Heat shock & Cat*Cl are important in which of the following? → Arti cial competence.",
+      "options": [
+        "Specialized transduction",
+        "Arti cial competence",
+        "Conjugation",
+        "Natural competence"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MINF1-CH1-MICR-0169",
+      "type": "mcq",
+      "lecture": 5,
+      "text": "Heat shock & CaCl2 are important in which of the following?",
+      "explanation": "The correct answer is Artificial competence. Chemical transformation commonly uses divalent cations like CaCl2 on ice followed by a brief heat shock (42°C) to alter membrane permeability and induce competence for plasmid DNA uptake.",
+      "keyConcept": "Bacterial genetics high-yield: Heat shock & CaCl2 are important in which of the following? → Artificial competence.",
+      "options": [
+        "Specialized transduction",
+        "Artificial competence",
+        "Conjugation",
+        "Natural competence"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH2-PHYS-0022",
+    "action": "display-cleanup",
+    "reason": "Repair unclosed parenthesis and OCR fragment in stem",
+    "original": {
+      "id": "MRS2-CH2-PHYS-0022",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "The pleural pressure of a normal 56-year- old woman is approximately -5 mmHg during resting conditions immediately before inspiration (i.",
+      "explanation": "-7 is correct because it is the physiologic consequence or definition specified in the stem. Inspiration makes intrapleural pressure more negative and raises transpulmonary pressure, while alveolar pressure briefly falls below atmospheric pressure to draw air inward. The alternative “, at the end of expiration); What is the pleural pressure (in mmHg) during normal inspiration” is less appropriate because it does not satisfy that relationship in this context.",
+      "keyConcept": "Inspiration makes intrapleural pressure more negative and raises transpulmonary pressure, while alveolar pressure briefly falls below atmospheric pressure to draw air inward. Exam focus: The pleural pressure of a normal 56-year- old woman is approximately -5 mmHg during resting conditions immediately before….",
+      "options": [
+        "+1",
+        "+4",
+        ", at the end of expiration). What is the pleural pressure (in mmHg) during normal inspiration?",
+        "-3",
+        "-7"
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MRS2-CH2-PHYS-0022",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The pleural pressure of a normal 56-year-old woman is approximately -5 mmHg during resting conditions immediately before inspiration.",
+      "explanation": "-7 is correct because it is the physiologic consequence or definition specified in the stem. Inspiration makes intrapleural pressure more negative and raises transpulmonary pressure, while alveolar pressure briefly falls below atmospheric pressure to draw air inward. The alternative “, at the end of expiration); What is the pleural pressure (in mmHg) during normal inspiration” is less appropriate because it does not satisfy that relationship in this context.",
+      "keyConcept": "Inspiration makes intrapleural pressure more negative and raises transpulmonary pressure, while alveolar pressure briefly falls below atmospheric pressure to draw air inward. Exam focus: The pleural pressure of a normal 56-year- old woman is approximately -5 mmHg during resting conditions immediately before….",
+      "options": [
+        "+1",
+        "+4",
+        ", at the end of expiration). What is the pleural pressure (in mmHg) during normal inspiration?",
+        "-3",
+        "-7"
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "contentVersion": "2c6d997a708a174cd3ab20f5e1cca8f57e81de9a671c9c4b868843cac1f5f15c"
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH2-PHYS-0105",
+    "action": "display-cleanup",
+    "reason": "Repair unclosed parentheses in stem",
+    "original": {
+      "id": "MRS2-CH2-PHYS-0105",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "With regard to pulmonary volumes ( and capacities: (",
+      "explanation": "The other options (In restrictive lung disease: FEV1 increase ( more than FVC; In obstructive lung disease: FEV1 and FVC are normal; In normal lung, FEV1 / FVC is about 60%) describe related but incorrect statements, which is why isolating the one accurate choice tests precise understanding rather than general familiarity.",
+      "keyConcept": "The correct answer is “In obstructive lung disease: FEV1 / FVC is about 90%”.",
+      "options": [
+        "In restrictive lung disease: FEV1 increase ( more than FVC",
+        "In obstructive lung disease: FEV1 and FVC are normal",
+        "In normal lung, FEV1 / FVC is about 60%",
+        "In obstructive lung disease: FEV1 / FVC is about 90%",
+        "In obstructive lung disease: FRC and residual volumes are increased."
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MRS2-CH2-PHYS-0105",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "With regard to pulmonary volumes and capacities:",
+      "explanation": "The other options (In restrictive lung disease: FEV1 increase ( more than FVC; In obstructive lung disease: FEV1 and FVC are normal; In normal lung, FEV1 / FVC is about 60%) describe related but incorrect statements, which is why isolating the one accurate choice tests precise understanding rather than general familiarity.",
+      "keyConcept": "The correct answer is “In obstructive lung disease: FEV1 / FVC is about 90%”.",
+      "options": [
+        "In restrictive lung disease: FEV1 increase ( more than FVC",
+        "In obstructive lung disease: FEV1 and FVC are normal",
+        "In normal lung, FEV1 / FVC is about 60%",
+        "In obstructive lung disease: FEV1 / FVC is about 90%",
+        "In obstructive lung disease: FRC and residual volumes are increased."
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null,
+      "contentVersion": "cdf16050662161f58a94772e798c913b3c089eb9136b700c35fa7afd922e484f"
+    }
+  },
+  {
+    "module": "MINF-1",
+    "id": "MINF1-CH1-MICR-0031",
+    "action": "display-cleanup",
+    "reason": "Repair broken ligature arti cial to artificial and typographical typos in options",
+    "original": {
+      "id": "MINF1-CH1-MICR-0031",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Attachment of bacteria to arti cial heart valves can be mediated by which of the following structures?",
+      "explanation": "The correct answer is Glycocalyx. The question is anchored in bacterial cell architecture, including the cell wall, cytoplasmic membrane, capsule, pili, flagella, spores, and ribosomes. The distractors usually confuse optional appendages, eukaryotic organelles, or structures that belong to a different bacterial group.",
+      "keyConcept": "Bacterial structure high-yield: Attachment of bacteria to arti cial heart valves can be mediated by which of the following structures? → Glycocalyx.",
+      "options": [
+        "Cell membrans",
+        "Glycocalyx",
+        "Flflagella",
+        "Lipopolysaccharide",
+        "Sex pili"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MINF1-CH1-MICR-0031",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Attachment of bacteria to artificial heart valves can be mediated by which of the following structures?",
+      "explanation": "The correct answer is Glycocalyx. Bacterial glycocalyx (slime layer/biofilm) enables strong adherence to prosthetic and abiotic surfaces like artificial heart valves, notably seen with Staphylococcus epidermidis.",
+      "keyConcept": "Bacterial glycocalyx facilitates adherence and biofilm formation on prosthetic heart valves.",
+      "options": [
+        "Cell membranes",
+        "Glycocalyx",
+        "Flagella",
+        "Lipopolysaccharide",
+        "Sex pili"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    }
+  },
+  {
+    "module": "MINF-1",
+    "id": "MINF1-CH1-MICR-0171",
+    "action": "display-cleanup",
+    "reason": "Repair broken ligature arti cially to artificially in options",
+    "original": {
+      "id": "MINF1-CH1-MICR-0171",
+      "type": "mcq",
+      "lecture": 5,
+      "text": "Which of the following is untrue regarding transformation?",
+      "explanation": "The correct answer is Involves a bacteriophage. This is a bacterial genetics item, so the key is distinguishing mutation from transformation, transduction, conjugation, lysogeny, plasmids, and transposons. The wrong answers generally use the wrong route of DNA transfer or the wrong genetic vehicle.",
+      "keyConcept": "Bacterial genetics high-yield: Which of the following is untrue regarding transformation? → Involves a bacteriophage.",
+      "options": [
+        "The donor DNA is extracted arti cially or released by cell lysis",
+        "Naked DNA enters the host cell directly",
+        "The recipient cell becomes competent by heat shock",
+        "Propagate genes of virulence",
+        "Involves a bacteriophage"
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MINF1-CH1-MICR-0171",
+      "type": "mcq",
+      "lecture": 5,
+      "text": "Which of the following is untrue regarding transformation?",
+      "explanation": "The correct answer is Involves a bacteriophage. Bacteriophages mediate transduction, whereas transformation involves uptake of naked soluble DNA from the environment without any viral vehicle.",
+      "keyConcept": "Transformation involves naked DNA uptake without a bacteriophage vehicle.",
+      "options": [
+        "The donor DNA is extracted artificially or released by cell lysis",
+        "Naked DNA enters the host cell directly",
+        "The recipient cell becomes competent by heat shock",
+        "Propagate genes of virulence",
+        "Involves a bacteriophage"
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH2-PHYS-0075",
+    "action": "display-cleanup",
+    "reason": "Repair broken ligature in options",
+    "original": {
+      "id": "MRS2-CH2-PHYS-0075",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Increased compliance is associated with:",
+      "explanation": "High increase in volume of lungs by change in transpulmonary pressure gradient is correct because it is the physiologic consequence or definition specified in the stem. Compliance is ΔV/ΔP; fibrosis, edema, congestion, atelectasis, and surfactant deficiency stiffen lungs, whereas emphysema raises compliance by destroying elastic tissue. The alternative “Stiff lungs” is less appropriate because it does not satisfy that relationship in this context.",
+      "keyConcept": "Compliance is ΔV/ΔP; fibrosis, edema, congestion, atelectasis, and surfactant deficiency stiffen lungs, whereas emphysema raises compliance by destroying elastic tissue. Exam focus: Increased compliance is associated with.",
+      "options": [
+        "Stiff lungs",
+        "Dif cult in ation of lungs",
+        "High transpulmonary pressure gradient is needed during inspiration",
+        "Increase lung elastic recoil",
+        "High increase in volume of lungs by change in transpulmonary pressure gradient"
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MRS2-CH2-PHYS-0075",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Increased compliance is associated with:",
+      "explanation": "High increase in volume of lungs by change in transpulmonary pressure gradient is correct because it is the physiologic consequence or definition specified in the stem. Compliance is ΔV/ΔP; fibrosis, edema, congestion, atelectasis, and surfactant deficiency stiffen lungs, whereas emphysema raises compliance by destroying elastic tissue. The alternative “Stiff lungs” is less appropriate because it does not satisfy that relationship in this context.",
+      "keyConcept": "Compliance is ΔV/ΔP; fibrosis, edema, congestion, atelectasis, and surfactant deficiency stiffen lungs, whereas emphysema raises compliance by destroying elastic tissue. Exam focus: Increased compliance is associated with.",
+      "options": [
+        "Stiff lungs",
+        "Difficult inflation of lungs",
+        "High transpulmonary pressure gradient is needed during inspiration",
+        "Increase lung elastic recoil",
+        "High increase in volume of lungs by change in transpulmonary pressure gradient"
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "contentVersion": "fe1fec89c9ecf7e5b93bd1392684c9165c1523630565d1361a25291d84523cad"
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH2-PHYS-0076",
+    "action": "display-cleanup",
+    "reason": "Repair broken ligature in options",
+    "original": {
+      "id": "MRS2-CH2-PHYS-0076",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Disadvantages of increased lung compliance that occurs when lung elastic fibers are damaged include",
+      "explanation": "All of the above is correct because it is the physiologic consequence or definition specified in the stem. Compliance is ΔV/ΔP; fibrosis, edema, congestion, atelectasis, and surfactant deficiency stiffen lungs, whereas emphysema raises compliance by destroying elastic tissue. The alternative “Increased airway resistance due to loss of elastic lateral traction” is less appropriate because it does not satisfy that relationship in this context.",
+      "keyConcept": "Compliance is ΔV/ΔP; fibrosis, edema, congestion, atelectasis, and surfactant deficiency stiffen lungs, whereas emphysema raises compliance by destroying elastic tissue. Exam focus: Disadvantages of increased lung compliance that occurs when lung elastic fibers are damaged include.",
+      "options": [
+        "Increased airway resistance due to loss of elastic lateral traction.",
+        "Easily in ation of lungs.",
+        "Increase elastic work of breathing",
+        "Pulmonary oedema",
+        "All of the above"
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MRS2-CH2-PHYS-0076",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "Disadvantages of increased lung compliance that occurs when lung elastic fibers are damaged include",
+      "explanation": "All of the above is correct because it is the physiologic consequence or definition specified in the stem. Compliance is ΔV/ΔP; fibrosis, edema, congestion, atelectasis, and surfactant deficiency stiffen lungs, whereas emphysema raises compliance by destroying elastic tissue. The alternative “Increased airway resistance due to loss of elastic lateral traction” is less appropriate because it does not satisfy that relationship in this context.",
+      "keyConcept": "Compliance is ΔV/ΔP; fibrosis, edema, congestion, atelectasis, and surfactant deficiency stiffen lungs, whereas emphysema raises compliance by destroying elastic tissue. Exam focus: Disadvantages of increased lung compliance that occurs when lung elastic fibers are damaged include.",
+      "options": [
+        "Increased airway resistance due to loss of elastic lateral traction.",
+        "Easy inflation of lungs.",
+        "Increase elastic work of breathing",
+        "Pulmonary oedema",
+        "All of the above"
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null,
+      "contentVersion": "700a204375523b269759e7ea81bbae40646ae41a26c118fc4f9fc7188e971c3f"
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH2-PHYS-0090",
+    "action": "display-cleanup",
+    "reason": "Repair broken ligature in options",
+    "original": {
+      "id": "MRS2-CH2-PHYS-0090",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "The functions of the residual volume do not include: Decrease surface tension of the fluid",
+      "explanation": "lining the alveoli is correct because it is the physiologic consequence or definition specified in the stem. Lung capacities are sums of component volumes; vital capacity equals IRV + tidal volume + ERV, and volumes containing residual volume cannot be measured by simple spirometry. The alternative “Maintains aeration of alveoli between breaths” is less appropriate because it does not satisfy that relationship in this context.",
+      "keyConcept": "Lung capacities are sums of component volumes; vital capacity equals IRV + tidal volume + ERV, and volumes containing residual volume cannot be measured by simple spirometry. Exam focus: The functions of the residual volume do not include: Decrease surface tension of the fluid.",
+      "options": [
+        "lining the alveoli",
+        "Maintains aeration of alveoli between breaths",
+        "Facilitates lung in ation",
+        "Helps in diagnosis of COPD",
+        "Helps in diagnosis if a fetus is born dead or alive."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MRS2-CH2-PHYS-0090",
+      "type": "mcq",
+      "lecture": 1,
+      "text": "The functions of the residual volume do not include: Decrease surface tension of the fluid",
+      "explanation": "lining the alveoli is correct because it is the physiologic consequence or definition specified in the stem. Lung capacities are sums of component volumes; vital capacity equals IRV + tidal volume + ERV, and volumes containing residual volume cannot be measured by simple spirometry. The alternative “Maintains aeration of alveoli between breaths” is less appropriate because it does not satisfy that relationship in this context.",
+      "keyConcept": "Lung capacities are sums of component volumes; vital capacity equals IRV + tidal volume + ERV, and volumes containing residual volume cannot be measured by simple spirometry. Exam focus: The functions of the residual volume do not include: Decrease surface tension of the fluid.",
+      "options": [
+        "lining the alveoli",
+        "Maintains aeration of alveoli between breaths",
+        "Facilitates lung inflation",
+        "Helps in diagnosis of COPD",
+        "Helps in diagnosis if a fetus is born dead or alive."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "contentVersion": "80d8c21f367afb3fe7751f5d0b4f4468a64f32477ce0fe88c4b97adfaa34a827"
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH2-PHYS-0197",
+    "action": "display-cleanup",
+    "reason": "Repair broken ligature in options",
+    "original": {
+      "id": "MRS2-CH2-PHYS-0197",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "The Hering Bruer reflex",
+      "explanation": "Prevents over-inflation of the lungs is correct because it is the physiologic consequence or definition specified in the stem. Vagal stretch-receptor input terminates inspiration and limits overinflation, especially at large tidal volumes. The alternative “Helps maintain basic rhythm” is less appropriate because it does not satisfy that relationship in this context.",
+      "keyConcept": "Vagal stretch-receptor input terminates inspiration and limits overinflation, especially at large tidal volumes. Exam focus: The Hering Bruer reflex.",
+      "options": [
+        "Helps maintain basic rhythm",
+        "Prevents over-in ation of the lungs",
+        "Controls breathing rate",
+        "Is mediated by phrenic nerve"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MRS2-CH2-PHYS-0197",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "The Hering Bruer reflex",
+      "explanation": "Prevents over-inflation of the lungs is correct because it is the physiologic consequence or definition specified in the stem. Vagal stretch-receptor input terminates inspiration and limits overinflation, especially at large tidal volumes. The alternative “Helps maintain basic rhythm” is less appropriate because it does not satisfy that relationship in this context.",
+      "keyConcept": "Vagal stretch-receptor input terminates inspiration and limits overinflation, especially at large tidal volumes. Exam focus: The Hering Bruer reflex.",
+      "options": [
+        "Helps maintain basic rhythm",
+        "Prevents over-inflation of the lungs",
+        "Controls breathing rate",
+        "Is mediated by phrenic nerve"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null,
+      "contentVersion": "edc5d0dd71b5e4420cf92778c79607f7e27e99721757e496ccbde31bdbe21f73"
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH2-PHYS-0210",
+    "action": "display-cleanup",
+    "reason": "Repair broken ligature in options",
+    "original": {
+      "id": "MRS2-CH2-PHYS-0210",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Regarding the neural control of breathing",
+      "explanation": "The other options (Re exes from airways produce voluntary apnea; Orders from the cerebral cortex produce sneezing; Impulses from limb muscle proprioceptors are important to determine rate and depth of normal breathing) describe related but incorrect statements, which is why isolating the one accurate choice tests precise understanding rather than general familiarity.",
+      "keyConcept": "The correct answer is “Oedema and congestion stimulate J-receptors, that produce a response of shallow rapid breathing”.",
+      "options": [
+        "Re exes from airways produce voluntary apnea",
+        "Orders from the cerebral cortex produce sneezing",
+        "Oedema and congestion stimulate J-receptors, that produce a response of shallow rapid breathing",
+        "Impulses from limb muscle proprioceptors are important to determine rate and depth of normal breathing",
+        "Baroreceptors are stimulated by increase blood pressure and produce a response hyperventilation"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MRS2-CH2-PHYS-0210",
+      "type": "mcq",
+      "lecture": 4,
+      "text": "Regarding the neural control of breathing",
+      "explanation": "The other options (Re exes from airways produce voluntary apnea; Orders from the cerebral cortex produce sneezing; Impulses from limb muscle proprioceptors are important to determine rate and depth of normal breathing) describe related but incorrect statements, which is why isolating the one accurate choice tests precise understanding rather than general familiarity.",
+      "keyConcept": "The correct answer is “Oedema and congestion stimulate J-receptors, that produce a response of shallow rapid breathing”.",
+      "options": [
+        "Reflexes from airways produce voluntary apnea",
+        "Orders from the cerebral cortex produce sneezing",
+        "Oedema and congestion stimulate J-receptors, that produce a response of shallow rapid breathing",
+        "Impulses from limb muscle proprioceptors are important to determine rate and depth of normal breathing",
+        "Baroreceptors are stimulated by increase blood pressure and produce a response hyperventilation"
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null,
+      "contentVersion": "1f00e06249bce1d2a87afaef58bc8fed43641cb5acca075914f7c083f9b1891d"
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH2-PHYS-0474",
+    "action": "display-cleanup",
+    "reason": "Forensic medical correction: verify True statement answer key",
+    "original": {
+      "id": "MRS2-CH2-PHYS-0474",
+      "type": "truefalse",
+      "lecture": 2,
+      "text": "The respiratory airways filter, warm, and humidify incoming air.",
+      "explanation": "Judging this statement true or false requires checking the specific mechanism it describes against what actually happens physiologically, not just a general impression of the topic. For “The respiratory airways filter, warm, and humidify incoming air,” the resulting truth value is True.",
+      "keyConcept": "True: The respiratory airways filter, warm, and humidify incoming air.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MRS2-CH2-PHYS-0474",
+      "type": "truefalse",
+      "lecture": 4,
+      "text": "The respiratory airways filter, warm, and humidify incoming air.",
+      "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. True: The respiratory airways filter, warm, and humidify incoming air.",
+      "keyConcept": "True: The respiratory airways filter, warm, and humidify incoming air.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "contentVersion": "0b3667251e53d5df6b9487e770f179065eb803633ae92124673064113f554341"
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH2-PHYS-0477",
+    "action": "display-cleanup",
+    "reason": "Forensic medical correction: verify True statement answer key",
+    "original": {
+      "id": "MRS2-CH2-PHYS-0477",
+      "type": "truefalse",
+      "lecture": 2,
+      "text": "The alveoli are encircled by capillaries.",
+      "explanation": "Judging this statement true or false requires checking the specific mechanism it describes against what actually happens physiologically, not just a general impression of the topic. For “The alveoli are encircled by capillaries,” the resulting truth value is True.",
+      "keyConcept": "True: The alveoli are encircled by capillaries.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MRS2-CH2-PHYS-0477",
+      "type": "truefalse",
+      "lecture": 4,
+      "text": "The alveoli are encircled by capillaries.",
+      "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. True: The alveoli are encircled by capillaries.",
+      "keyConcept": "True: The alveoli are encircled by capillaries.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "contentVersion": "7842dd153035f57d95a1ffa7c1d5005eef2a81e44551711d91f5c6989faf5ae2"
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH2-PHYS-0478",
+    "action": "display-cleanup",
+    "reason": "Forensic medical correction: verify True statement answer key",
+    "original": {
+      "id": "MRS2-CH2-PHYS-0478",
+      "type": "truefalse",
+      "lecture": 2,
+      "text": "The intrapleural pressure is negative to maintain lung inflation.",
+      "explanation": "This statement is TRUE. Breathing is driven by pressure gradients created by respiratory muscle action on thoracic volume (Boyle's law): the diaphragm and external intercostals are the principal inspiratory muscles, quiet expiration is passive (elastic recoil), and forced expiration recruits the internal intercostals and abdominal muscles; intrapleural pressure stays sub-atmospheric throughout normal breathing. For “The intrapleural pressure is negative to maintain lung inflation,” the resulting truth value is True.",
+      "keyConcept": "True: The intrapleural pressure is negative to maintain lung inflation.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MRS2-CH2-PHYS-0478",
+      "type": "truefalse",
+      "lecture": 1,
+      "text": "The intrapleural pressure is negative to maintain lung inflation.",
+      "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. True: The intrapleural pressure is negative to maintain lung inflation.",
+      "keyConcept": "True: The intrapleural pressure is negative to maintain lung inflation.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "contentVersion": "19e2cdce5ed29df2121d7334cf93d91c1c5ead86e5dba4443c423042855d5dde"
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH2-PHYS-0481",
+    "action": "display-cleanup",
+    "reason": "Forensic medical correction: verify True statement answer key",
+    "original": {
+      "id": "MRS2-CH2-PHYS-0481",
+      "type": "truefalse",
+      "lecture": 2,
+      "text": "Intrapleural pressure is usually less than atmospheric pressure.",
+      "explanation": "This statement is TRUE. Breathing is driven by pressure gradients created by respiratory muscle action on thoracic volume (Boyle's law): the diaphragm and external intercostals are the principal inspiratory muscles, quiet expiration is passive (elastic recoil), and forced expiration recruits the internal intercostals and abdominal muscles; intrapleural pressure stays sub-atmospheric throughout normal breathing. For “Intrapleural pressure is usually less than atmospheric pressure,” the resulting truth value is True.",
+      "keyConcept": "True: Intrapleural pressure is usually less than atmospheric pressure.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MRS2-CH2-PHYS-0481",
+      "type": "truefalse",
+      "lecture": 1,
+      "text": "Intrapleural pressure is usually less than atmospheric pressure.",
+      "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. True: Intrapleural pressure is usually less than atmospheric pressure.",
+      "keyConcept": "True: Intrapleural pressure is usually less than atmospheric pressure.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "contentVersion": "83f66ffc39da040a23fd2fc0c4bdb6d3579d199cdaa4c333e29ea985413491e7"
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH2-PHYS-0482",
+    "action": "display-cleanup",
+    "reason": "Forensic medical correction: verify True statement answer key",
+    "original": {
+      "id": "MRS2-CH2-PHYS-0482",
+      "type": "truefalse",
+      "lecture": 2,
+      "text": "The abdominal muscles are expiratory muscles.",
+      "explanation": "Judging this statement true or false requires checking the specific mechanism it describes against what actually happens physiologically, not just a general impression of the topic. For “The abdominal muscles are expiratory muscles,” the resulting truth value is True.",
+      "keyConcept": "True: The abdominal muscles are expiratory muscles.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MRS2-CH2-PHYS-0482",
+      "type": "truefalse",
+      "lecture": 4,
+      "text": "The abdominal muscles are expiratory muscles.",
+      "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. True: The abdominal muscles are expiratory muscles.",
+      "keyConcept": "True: The abdominal muscles are expiratory muscles.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "contentVersion": "11df1ee0f000780345048ea16db1920952a08a6438b9f839969d7d13dee220bf"
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH2-PHYS-0487",
+    "action": "display-cleanup",
+    "reason": "Forensic medical correction: verify True statement answer key",
+    "original": {
+      "id": "MRS2-CH2-PHYS-0487",
+      "type": "truefalse",
+      "lecture": 2,
+      "text": "Inspiration is always an active process.",
+      "explanation": "This statement is TRUE. Breathing is driven by pressure gradients created by respiratory muscle action on thoracic volume (Boyle's law): the diaphragm and external intercostals are the principal inspiratory muscles, quiet expiration is passive (elastic recoil), and forced expiration recruits the internal intercostals and abdominal muscles; intrapleural pressure stays sub-atmospheric throughout normal breathing. For “Inspiration is always an active process,” the resulting truth value is True.",
+      "keyConcept": "True: Inspiration is always an active process.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MRS2-CH2-PHYS-0487",
+      "type": "truefalse",
+      "lecture": 1,
+      "text": "Inspiration is always an active process.",
+      "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. True: Inspiration is always an active process.",
+      "keyConcept": "True: Inspiration is always an active process.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "contentVersion": "cb3ee7f7ea29e011d450cc603544c907ea70794f6aa3716779f04b9a91c58aec"
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH2-PHYS-0492",
+    "action": "display-cleanup",
+    "reason": "Forensic medical correction: verify True statement answer key",
+    "original": {
+      "id": "MRS2-CH2-PHYS-0492",
+      "type": "truefalse",
+      "lecture": 2,
+      "text": "Pulmonary surfactant is secreted by Type II alveolar cells.",
+      "explanation": "This statement is TRUE. Lung compliance is the change in lung volume per unit change in transpulmonary pressure and reflects the distensibility of lung tissue; pulmonary surfactant (secreted by type II alveolar cells) lowers alveolar surface tension, increases compliance, reduces the work of breathing, and stabilizes alveoli of different sizes, per Laplace's law (P = 2T/r). For “Pulmonary surfactant is secreted by Type II alveolar cells,” the resulting truth value is True.",
+      "keyConcept": "True: Pulmonary surfactant is secreted by Type II alveolar cells.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MRS2-CH2-PHYS-0492",
+      "type": "truefalse",
+      "lecture": 1,
+      "text": "Pulmonary surfactant is secreted by Type II alveolar cells.",
+      "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. True: Pulmonary surfactant is secreted by Type II alveolar cells.",
+      "keyConcept": "True: Pulmonary surfactant is secreted by Type II alveolar cells.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "contentVersion": "28fdbdbae357e363075c6c1ec71c23b7eb67c5694c18ac19d1e7d03e1aae5761"
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH2-PHYS-0493",
+    "action": "display-cleanup",
+    "reason": "Forensic medical correction: verify True statement answer key",
+    "original": {
+      "id": "MRS2-CH2-PHYS-0493",
+      "type": "truefalse",
+      "lecture": 2,
+      "text": "Pulmonary surfactant reduces the work of breathing and increases lung stability by increasing alveolar surface tension.",
+      "explanation": "This statement is FALSE. Lung compliance is the change in lung volume per unit change in transpulmonary pressure and reflects the distensibility of lung tissue; pulmonary surfactant (secreted by type II alveolar cells) lowers alveolar surface tension, increases compliance, reduces the work of breathing, and stabilizes alveoli of different sizes, per Laplace's law (P = 2T/r). For “Pulmonary surfactant reduces the work of breathing and increases lung stability by increasing alveolar surface tension,” the resulting truth value is False.",
+      "keyConcept": "False: Pulmonary surfactant reduces the work of breathing and increases lung stability by increasing alveolar surface tension.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MRS2-CH2-PHYS-0493",
+      "type": "truefalse",
+      "lecture": 1,
+      "text": "Pulmonary surfactant reduces the work of breathing and increases lung stability by increasing alveolar surface tension.",
+      "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. False: Pulmonary surfactant reduces the work of breathing and increases lung stability by increasing alveolar surface tension.",
+      "keyConcept": "False: Pulmonary surfactant reduces the work of breathing and increases lung stability by increasing alveolar surface tension.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "contentVersion": "79af98c50a144be9ca633a29997cbe6a0e462e7f22d950d592ede1caba53cdab"
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH2-PHYS-0496",
+    "action": "display-cleanup",
+    "reason": "Forensic medical correction: verify True statement answer key",
+    "original": {
+      "id": "MRS2-CH2-PHYS-0496",
+      "type": "truefalse",
+      "lecture": 2,
+      "text": "A highly compliant lung is easier to stretch than a less compliant one.",
+      "explanation": "Judging this statement true or false requires checking the specific mechanism it describes against what actually happens physiologically, not just a general impression of the topic. For “A highly compliant lung is easier to stretch than a less compliant one,” the resulting truth value is True.",
+      "keyConcept": "True: A highly compliant lung is easier to stretch than a less compliant one.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MRS2-CH2-PHYS-0496",
+      "type": "truefalse",
+      "lecture": 4,
+      "text": "A highly compliant lung is easier to stretch than a less compliant one.",
+      "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. True: A highly compliant lung is easier to stretch than a less compliant one.",
+      "keyConcept": "True: A highly compliant lung is easier to stretch than a less compliant one.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "contentVersion": "2561cf50fc9a3e88620c81501db900d6bc009757372f091feb8bffc751a8bc3b"
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH2-PHYS-0500",
+    "action": "display-cleanup",
+    "reason": "Forensic medical correction: verify True statement answer key",
+    "original": {
+      "id": "MRS2-CH2-PHYS-0500",
+      "type": "truefalse",
+      "lecture": 2,
+      "text": "Boyle's law states that the pressure exerted by a gas varies directly with the volume of the gas.",
+      "explanation": "This statement is FALSE. Breathing is driven by pressure gradients created by respiratory muscle action on thoracic volume (Boyle's law): the diaphragm and external intercostals are the principal inspiratory muscles, quiet expiration is passive (elastic recoil), and forced expiration recruits the internal intercostals and abdominal muscles; intrapleural pressure stays sub-atmospheric throughout normal breathing. For “Boyle's law states that the pressure exerted by a gas varies directly with the volume of the gas,” the resulting truth value is False.",
+      "keyConcept": "False: Boyle's law states that the pressure exerted by a gas varies directly with the volume of the gas.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MRS2-CH2-PHYS-0500",
+      "type": "truefalse",
+      "lecture": 1,
+      "text": "Boyle's law states that the pressure exerted by a gas varies directly with the volume of the gas.",
+      "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. False: Boyle's law states that the pressure exerted by a gas varies directly with the volume of the gas.",
+      "keyConcept": "False: Boyle's law states that the pressure exerted by a gas varies directly with the volume of the gas.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "contentVersion": "67d2f01a9dc5bebc6ab0caf7a72c0269e918c94049384b4df566864d13262a95"
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH2-PHYS-0507",
+    "action": "display-cleanup",
+    "reason": "Forensic medical correction: verify True statement answer key",
+    "original": {
+      "id": "MRS2-CH2-PHYS-0507",
+      "type": "truefalse",
+      "lecture": 2,
+      "text": "During external respiration, the PO2 is greater in the alveoli than in the blood of the pulmonary capillaries.",
+      "explanation": "Distinguishing the type and cause of hypoxia/hypoxemia is what determines whether oxygen therapy, ventilatory support, or treating the underlying cause will actually correct it. For “During external respiration, the PO2 is greater in the alveoli than in the blood of the pulmonary capillaries,” the resulting truth value is True.",
+      "keyConcept": "True: During external respiration, the PO2 is greater in the alveoli than in the blood of the pulmonary capillaries.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MRS2-CH2-PHYS-0507",
+      "type": "truefalse",
+      "lecture": 4,
+      "text": "During external respiration, the PO2 is greater in the alveoli than in the blood of the pulmonary capillaries.",
+      "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. True: During external respiration, the PO2 is greater in the alveoli than in the blood of the pulmonary capillaries.",
+      "keyConcept": "True: During external respiration, the PO2 is greater in the alveoli than in the blood of the pulmonary capillaries.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "contentVersion": "411cd0d63304d081536aff024dc945ee644967564e654de68f069a4851a13292"
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH2-PHYS-0510",
+    "action": "display-cleanup",
+    "reason": "Forensic medical correction: verify True statement answer key",
+    "original": {
+      "id": "MRS2-CH2-PHYS-0510",
+      "type": "truefalse",
+      "lecture": 2,
+      "text": "Systemic arterial PO2 is greater than tissue PO2.",
+      "explanation": "Distinguishing the type and cause of hypoxia/hypoxemia is what determines whether oxygen therapy, ventilatory support, or treating the underlying cause will actually correct it. For “Systemic arterial PO2 is greater than tissue PO2,” the resulting truth value is True.",
+      "keyConcept": "True: Systemic arterial PO2 is greater than tissue PO2.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MRS2-CH2-PHYS-0510",
+      "type": "truefalse",
+      "lecture": 4,
+      "text": "Systemic arterial PO2 is greater than tissue PO2.",
+      "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. True: Systemic arterial PO2 is greater than tissue PO2.",
+      "keyConcept": "True: Systemic arterial PO2 is greater than tissue PO2.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "contentVersion": "152cbabf3dd6cee19743dd366052727b8e6302512aa3aec28a4efd825b7ed9d6"
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH2-BIOC-0064",
+    "action": "display-cleanup",
+    "reason": "Forensic medical correction: verify True statement answer key",
+    "original": {
+      "id": "MRS2-CH2-BIOC-0064",
+      "type": "truefalse",
+      "lecture": 2,
+      "text": "Coenzyme Q and cytochrome c are mobile electron carriers in the respiratory chain.",
+      "explanation": "Coenzyme Q diffuses within the lipid core of the inner membrane and carries electrons to Complex III. Cytochrome c is a soluble peripheral protein that moves along the outer membrane surface from Complex III to Complex IV, so the statement is true.",
+      "keyConcept": "True: Coenzyme Q and cytochrome c are mobile electron carriers in the respiratory chain.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MRS2-CH2-BIOC-0064",
+      "type": "truefalse",
+      "lecture": 1,
+      "text": "Coenzyme Q and cytochrome c are mobile electron carriers in the respiratory chain.",
+      "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. True: Coenzyme Q and cytochrome c are mobile electron carriers in the respiratory chain.",
+      "keyConcept": "True: Coenzyme Q and cytochrome c are mobile electron carriers in the respiratory chain.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "contentVersion": "a1026cad23a9eb1b603d4577dc0bd7cd35bc1588773ece01ada7dd0b322fb4be"
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH2-BIOC-0070",
+    "action": "display-cleanup",
+    "reason": "Forensic medical correction: verify True statement answer key",
+    "original": {
+      "id": "MRS2-CH2-BIOC-0070",
+      "type": "truefalse",
+      "lecture": 2,
+      "text": "Ubiquinone is the only nonprotein member of the electron transport chain.",
+      "explanation": "Ubiquinone is a small lipid-soluble quinone rather than a polypeptide complex. Its isoprenoid tail permits lateral diffusion between multiple electron donors and Complex III, so the statement is true.",
+      "keyConcept": "True: Ubiquinone is the only nonprotein member of the electron transport chain.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MRS2-CH2-BIOC-0070",
+      "type": "truefalse",
+      "lecture": 1,
+      "text": "Ubiquinone is the only nonprotein member of the electron transport chain.",
+      "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. True: Ubiquinone is the only nonprotein member of the electron transport chain.",
+      "keyConcept": "True: Ubiquinone is the only nonprotein member of the electron transport chain.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "contentVersion": "788c31255cbd8643603fe33987a85726d51d656d298d8b67d132fe34155c4225"
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH3-PATH-0257",
+    "action": "display-cleanup",
+    "reason": "Forensic medical correction: verify True statement answer key",
+    "original": {
+      "id": "MRS2-CH3-PATH-0257",
+      "type": "truefalse",
+      "lecture": 3,
+      "text": "Rhinoscleroma is a granulomatous tumor-like lesion.",
+      "explanation": "Rhinoscleroma is a chronic granulomatous infection that clinically forms a firm, tumor-like nasal mass, though it is inflammatory rather than neoplastic in nature.",
+      "keyConcept": "True: Rhinoscleroma is a granulomatous tumor-like lesion.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MRS2-CH3-PATH-0257",
+      "type": "truefalse",
+      "lecture": 4,
+      "text": "Rhinoscleroma is a granulomatous tumor-like lesion.",
+      "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. True: Rhinoscleroma is a granulomatous tumor-like lesion.",
+      "keyConcept": "True: Rhinoscleroma is a granulomatous tumor-like lesion.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "contentVersion": "69f789531dd86fca82d18d19237117e6743f0d67f116c998f968836fa24bac17"
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH3-PATH-0259",
+    "action": "display-cleanup",
+    "reason": "Forensic medical correction: verify True statement answer key",
+    "original": {
+      "id": "MRS2-CH3-PATH-0259",
+      "type": "truefalse",
+      "lecture": 3,
+      "text": "Epistaxis means severe haemorrhage from the nose.",
+      "explanation": "Epistaxis simply means bleeding/haemorrhage from the nose of any severity, not specifically severe haemorrhage.",
+      "keyConcept": "False: Epistaxis means severe haemorrhage from the nose.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MRS2-CH3-PATH-0259",
+      "type": "truefalse",
+      "lecture": 1,
+      "text": "Epistaxis means severe haemorrhage from the nose.",
+      "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. False: Epistaxis means severe haemorrhage from the nose.",
+      "keyConcept": "False: Epistaxis means severe haemorrhage from the nose.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "contentVersion": "8743c7205eab636c5360d526c594ad28d54e4f2107026c5ce5ba1cbaea8a86f9"
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH3-PATH-0262",
+    "action": "display-cleanup",
+    "reason": "Forensic medical correction: verify True statement answer key",
+    "original": {
+      "id": "MRS2-CH3-PATH-0262",
+      "type": "truefalse",
+      "lecture": 3,
+      "text": "The systemic complications of diphtheria are due to circulation of the organism in the blood.",
+      "explanation": "Diphtheria's systemic complications (myocarditis, neuropathy) are due to absorbed exotoxin circulating in the blood, not bacteraemia, since C. diphtheriae remains localized to the pseudomembrane.",
+      "keyConcept": "False: The systemic complications of diphtheria are due to circulation of the organism in the blood.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MRS2-CH3-PATH-0262",
+      "type": "truefalse",
+      "lecture": 1,
+      "text": "The systemic complications of diphtheria are due to circulation of the organism in the blood.",
+      "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. False: The systemic complications of diphtheria are due to circulation of the organism in the blood.",
+      "keyConcept": "False: The systemic complications of diphtheria are due to circulation of the organism in the blood.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "contentVersion": "ca1dc2954266073f3ea938509da19aecafd71421bebabceb3480709a4ca11f65"
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH3-PATH-0263",
+    "action": "display-cleanup",
+    "reason": "Forensic medical correction: verify True statement answer key",
+    "original": {
+      "id": "MRS2-CH3-PATH-0263",
+      "type": "truefalse",
+      "lecture": 3,
+      "text": "Laryngoscleroma and rhinoscleroma have the same aetiology and histology.",
+      "explanation": "Both are caused by Klebsiella rhinoscleromatis and show identical granulomatous histology (Mikulicz cells, Russell bodies), differing only in anatomic site.",
+      "keyConcept": "True: Laryngoscleroma and rhinoscleroma have the same aetiology and histology.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MRS2-CH3-PATH-0263",
+      "type": "truefalse",
+      "lecture": 1,
+      "text": "Laryngoscleroma and rhinoscleroma have the same aetiology and histology.",
+      "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. True: Laryngoscleroma and rhinoscleroma have the same aetiology and histology.",
+      "keyConcept": "True: Laryngoscleroma and rhinoscleroma have the same aetiology and histology.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "contentVersion": "b3967e16ac84e6df784f0491d613501a8dcfcdcddbb1e75e0b167af1ad899ef8"
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH3-PATH-0265",
+    "action": "display-cleanup",
+    "reason": "Forensic medical correction: verify True statement answer key",
+    "original": {
+      "id": "MRS2-CH3-PATH-0265",
+      "type": "truefalse",
+      "lecture": 3,
+      "text": "Vocal cord carcinoma shows late metastases due to minimal blood supply.",
+      "explanation": "Vocal cord (glottic) carcinoma spreads late because of the sparse LYMPHATIC supply of the true vocal cords, not because of minimal blood supply.",
+      "keyConcept": "False: Vocal cord carcinoma shows late metastases due to minimal blood supply.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MRS2-CH3-PATH-0265",
+      "type": "truefalse",
+      "lecture": 4,
+      "text": "Vocal cord carcinoma shows late metastases due to minimal blood supply.",
+      "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. False: Vocal cord carcinoma shows late metastases due to minimal blood supply.",
+      "keyConcept": "False: Vocal cord carcinoma shows late metastases due to minimal blood supply.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "contentVersion": "6391f07eb82e4ce71e7bcfdce71a7a5945cc9217df854a6c058f2abd900da698"
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH3-PATH-0268",
+    "action": "display-cleanup",
+    "reason": "Forensic medical correction: verify True statement answer key",
+    "original": {
+      "id": "MRS2-CH3-PATH-0268",
+      "type": "truefalse",
+      "lecture": 3,
+      "text": "Chronic bronchitis is NOT a suppurative disease.",
+      "explanation": "Chronic bronchitis is defined by mucus hypersecretion and goblet cell/gland hyperplasia with chronic inflammation, not pus formation; it is non-suppurative (unlike bronchiectasis or lung abscess).",
+      "keyConcept": "True: Chronic bronchitis is NOT a suppurative disease.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MRS2-CH3-PATH-0268",
+      "type": "truefalse",
+      "lecture": 2,
+      "text": "Chronic bronchitis is NOT a suppurative disease.",
+      "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. True: Chronic bronchitis is NOT a suppurative disease.",
+      "keyConcept": "True: Chronic bronchitis is NOT a suppurative disease.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "contentVersion": "b8f7912eb6d55423e15366f110c4f7fd64933fbe0eea5328d58411acace9846e"
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH3-PATH-0269",
+    "action": "display-cleanup",
+    "reason": "Forensic medical correction: verify True statement answer key",
+    "original": {
+      "id": "MRS2-CH3-PATH-0269",
+      "type": "truefalse",
+      "lecture": 3,
+      "text": "Infection and partial bronchial obstruction are the two main factors in the pathogenesis of bronchiectasis.",
+      "explanation": "The classic 'vicious cycle' of bronchiectasis pathogenesis requires both recurrent/persistent infection and impaired drainage from bronchial obstruction, acting together to destroy and dilate the bronchial wall.",
+      "keyConcept": "True: Infection and partial bronchial obstruction are the two main factors in the pathogenesis of bronchiectasis.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MRS2-CH3-PATH-0269",
+      "type": "truefalse",
+      "lecture": 1,
+      "text": "Infection and partial bronchial obstruction are the two main factors in the pathogenesis of bronchiectasis.",
+      "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. True: Infection and partial bronchial obstruction are the two main factors in the pathogenesis of bronchiectasis.",
+      "keyConcept": "True: Infection and partial bronchial obstruction are the two main factors in the pathogenesis of bronchiectasis.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "contentVersion": "7a88c06430a406a48b0791eecc2b29e696d3aacd349140a3eb26a5fd2b7dc66c"
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH3-PATH-0272",
+    "action": "display-cleanup",
+    "reason": "Forensic medical correction: verify True statement answer key",
+    "original": {
+      "id": "MRS2-CH3-PATH-0272",
+      "type": "truefalse",
+      "lecture": 3,
+      "text": "The inflammatory infiltrate in viral pneumonia is mainly interstitial.",
+      "explanation": "Viral pneumonia characteristically produces interstitial (septal wall) inflammation rather than alveolar space (luminal) exudate seen in bacterial pneumonia.",
+      "keyConcept": "True: The inflammatory infiltrate in viral pneumonia is mainly interstitial.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MRS2-CH3-PATH-0272",
+      "type": "truefalse",
+      "lecture": 2,
+      "text": "The inflammatory infiltrate in viral pneumonia is mainly interstitial.",
+      "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. True: The inflammatory infiltrate in viral pneumonia is mainly interstitial.",
+      "keyConcept": "True: The inflammatory infiltrate in viral pneumonia is mainly interstitial.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "contentVersion": "26f1078e91d512c42d44d12e22911870fe6abdbd8fe7e57f3d4480431011c665"
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH3-PATH-0273",
+    "action": "display-cleanup",
+    "reason": "Forensic medical correction: verify True statement answer key",
+    "original": {
+      "id": "MRS2-CH3-PATH-0273",
+      "type": "truefalse",
+      "lecture": 3,
+      "text": "Aspiration lung abscess is more common in the right lung due to its wider bronchus.",
+      "explanation": "The right main bronchus is wider, shorter, and more vertically oriented than the left, making aspirated material (and resultant abscesses) more likely to lodge in the right lung.",
+      "keyConcept": "True: Aspiration lung abscess is more common in the right lung due to its wider bronchus.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MRS2-CH3-PATH-0273",
+      "type": "truefalse",
+      "lecture": 2,
+      "text": "Aspiration lung abscess is more common in the right lung due to its wider bronchus.",
+      "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. True: Aspiration lung abscess is more common in the right lung due to its wider bronchus.",
+      "keyConcept": "True: Aspiration lung abscess is more common in the right lung due to its wider bronchus.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "contentVersion": "5e878606fd782b8bb86e32183e00a7d29395c92f2f0d5a11c948a0444dc6b606"
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH3-PATH-0274",
+    "action": "display-cleanup",
+    "reason": "Forensic medical correction: verify True statement answer key",
+    "original": {
+      "id": "MRS2-CH3-PATH-0274",
+      "type": "truefalse",
+      "lecture": 3,
+      "text": "Pyaemic lung abscesses arise from disseminated infected thrombi.",
+      "explanation": "Pyaemic (embolic) abscesses result from septic emboli originating from infected thrombi elsewhere in the body, seeding the lung haematogenously and forming multiple abscesses.",
+      "keyConcept": "True: Pyaemic lung abscesses arise from disseminated infected thrombi.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MRS2-CH3-PATH-0274",
+      "type": "truefalse",
+      "lecture": 2,
+      "text": "Pyaemic lung abscesses arise from disseminated infected thrombi.",
+      "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. True: Pyaemic lung abscesses arise from disseminated infected thrombi.",
+      "keyConcept": "True: Pyaemic lung abscesses arise from disseminated infected thrombi.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "contentVersion": "ea2089ba97abaa663243803f254eb8e887fe514a047dc455fef639f86d20d4f3"
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH3-PATH-0277",
+    "action": "display-cleanup",
+    "reason": "Forensic medical correction: verify True statement answer key",
+    "original": {
+      "id": "MRS2-CH3-PATH-0277",
+      "type": "truefalse",
+      "lecture": 3,
+      "text": "Lung gangrene is always of the moist type.",
+      "explanation": "Pulmonary gangrene, occurring in a moist, oxygen-poor, richly vascular organ with ongoing suppurative infection, is always of the moist (wet) type, unlike the dry gangrene seen in ischaemic limbs.",
+      "keyConcept": "True: Lung gangrene is always of the moist type.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MRS2-CH3-PATH-0277",
+      "type": "truefalse",
+      "lecture": 1,
+      "text": "Lung gangrene is always of the moist type.",
+      "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. True: Lung gangrene is always of the moist type.",
+      "keyConcept": "True: Lung gangrene is always of the moist type.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "contentVersion": "16d084250a7f264b87df11d76f8105c780f902e3ae778e426febdabbfe53c6a0"
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH3-PATH-0279",
+    "action": "display-cleanup",
+    "reason": "Forensic medical correction: verify True statement answer key",
+    "original": {
+      "id": "MRS2-CH3-PATH-0279",
+      "type": "truefalse",
+      "lecture": 3,
+      "text": "Emphysema shows permanent dilation of the terminal air passages.",
+      "explanation": "Emphysema is defined by permanent, abnormal enlargement of airspaces distal to the terminal bronchiole, accompanied by destruction of their walls.",
+      "keyConcept": "True: Emphysema shows permanent dilation of the terminal air passages.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MRS2-CH3-PATH-0279",
+      "type": "truefalse",
+      "lecture": 1,
+      "text": "Emphysema shows permanent dilation of the terminal air passages.",
+      "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. True: Emphysema shows permanent dilation of the terminal air passages.",
+      "keyConcept": "True: Emphysema shows permanent dilation of the terminal air passages.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "contentVersion": "499f586ec8d54e8e42bfb962b4e9bab2257f7ddbaf385b35ca008e58011caec1"
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH3-PATH-0280",
+    "action": "display-cleanup",
+    "reason": "Forensic medical correction: verify True statement answer key",
+    "original": {
+      "id": "MRS2-CH3-PATH-0280",
+      "type": "truefalse",
+      "lecture": 3,
+      "text": "Alpha-1 antitrypsin deficiency plays a role in the pathogenesis of pulmonary collapse.",
+      "explanation": "Alpha-1 antitrypsin deficiency causes panacinar EMPHYSEMA via unopposed neutrophil elastase activity; it is not implicated in the pathogenesis of pulmonary collapse (atelectasis), which results from airway obstruction, compression, or loss of surfactant.",
+      "keyConcept": "False: Alpha-1 antitrypsin deficiency plays a role in the pathogenesis of pulmonary collapse.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MRS2-CH3-PATH-0280",
+      "type": "truefalse",
+      "lecture": 1,
+      "text": "Alpha-1 antitrypsin deficiency plays a role in the pathogenesis of pulmonary collapse.",
+      "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. False: Alpha-1 antitrypsin deficiency plays a role in the pathogenesis of pulmonary collapse.",
+      "keyConcept": "False: Alpha-1 antitrypsin deficiency plays a role in the pathogenesis of pulmonary collapse.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "contentVersion": "f01636abf62d204d3dc7d329a04ca7f3ba7591fa56c8f0011f43bcdc25c85261"
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH3-PATH-0282",
+    "action": "display-cleanup",
+    "reason": "Forensic medical correction: verify True statement answer key",
+    "original": {
+      "id": "MRS2-CH3-PATH-0282",
+      "type": "truefalse",
+      "lecture": 3,
+      "text": "In hyaline membrane disease, the alveoli are mostly collapsed.",
+      "explanation": "Deficient surfactant in hyaline membrane disease leads to widespread alveolar collapse (atelectasis), with the remaining dilated ducts lined by hyaline membranes.",
+      "keyConcept": "True: In hyaline membrane disease, the alveoli are mostly collapsed.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MRS2-CH3-PATH-0282",
+      "type": "truefalse",
+      "lecture": 1,
+      "text": "In hyaline membrane disease, the alveoli are mostly collapsed.",
+      "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. True: In hyaline membrane disease, the alveoli are mostly collapsed.",
+      "keyConcept": "True: In hyaline membrane disease, the alveoli are mostly collapsed.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "contentVersion": "b46adcfc99588145c491a1dfce36b4833bd8e6a36f189d15e7e0ae021cc2d9a5"
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH3-PATH-0284",
+    "action": "display-cleanup",
+    "reason": "Forensic medical correction: verify True statement answer key",
+    "original": {
+      "id": "MRS2-CH3-PATH-0284",
+      "type": "truefalse",
+      "lecture": 3,
+      "text": "Pancoast's tumor is an apical cancer infiltrating the cervical sympathetic plexus.",
+      "explanation": "Pancoast tumor arises at the lung apex (superior sulcus) and characteristically invades the cervical sympathetic chain and brachial plexus, producing Horner syndrome and arm/shoulder pain.",
+      "keyConcept": "True: Pancoast's tumor is an apical cancer infiltrating the cervical sympathetic plexus.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MRS2-CH3-PATH-0284",
+      "type": "truefalse",
+      "lecture": 4,
+      "text": "Pancoast's tumor is an apical cancer infiltrating the cervical sympathetic plexus.",
+      "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. True: Pancoast's tumor is an apical cancer infiltrating the cervical sympathetic plexus.",
+      "keyConcept": "True: Pancoast's tumor is an apical cancer infiltrating the cervical sympathetic plexus.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "contentVersion": "ba35797ca3358d8729cba7b8ecd826870e87fbf810977b6fd71d5589bdae17af"
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH3-PATH-0285",
+    "action": "display-cleanup",
+    "reason": "Forensic medical correction: verify True statement answer key",
+    "original": {
+      "id": "MRS2-CH3-PATH-0285",
+      "type": "truefalse",
+      "lecture": 3,
+      "text": "Chromogranin is a marker of all neuroendocrine tumors.",
+      "explanation": "Chromogranin A is a general marker for neuroendocrine differentiation, positive across the spectrum of neuroendocrine tumors including carcinoid and small cell carcinoma.",
+      "keyConcept": "True: Chromogranin is a marker of all neuroendocrine tumors.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MRS2-CH3-PATH-0285",
+      "type": "truefalse",
+      "lecture": 4,
+      "text": "Chromogranin is a marker of all neuroendocrine tumors.",
+      "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. True: Chromogranin is a marker of all neuroendocrine tumors.",
+      "keyConcept": "True: Chromogranin is a marker of all neuroendocrine tumors.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "contentVersion": "ad95ee845216df587a0af7663abc703099a6c793d236653abe2e2ade4ebb5678"
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH3-PATH-0288",
+    "action": "display-cleanup",
+    "reason": "Forensic medical correction: verify True statement answer key",
+    "original": {
+      "id": "MRS2-CH3-PATH-0288",
+      "type": "truefalse",
+      "lecture": 3,
+      "text": "The liver is a metastatic site of carcinoid tumors.",
+      "explanation": "The liver is the characteristic site of haematogenous metastasis from carcinoid tumors when spread occurs.",
+      "keyConcept": "True: The liver is a metastatic site of carcinoid tumors.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MRS2-CH3-PATH-0288",
+      "type": "truefalse",
+      "lecture": 4,
+      "text": "The liver is a metastatic site of carcinoid tumors.",
+      "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. True: The liver is a metastatic site of carcinoid tumors.",
+      "keyConcept": "True: The liver is a metastatic site of carcinoid tumors.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "contentVersion": "fee2598365f6e07bcf8475f722f9c9ceb62aa4435a2111dbf975706c89599f79"
+    }
+  },
+  {
+    "module": "MRS-2",
+    "id": "MRS2-CH3-PATH-0291",
+    "action": "display-cleanup",
+    "reason": "Forensic medical correction: verify True statement answer key",
+    "original": {
+      "id": "MRS2-CH3-PATH-0291",
+      "type": "truefalse",
+      "lecture": 3,
+      "text": "Empyema means pus in the pleural cavity.",
+      "explanation": "Empyema is defined as the accumulation of pus within the pleural cavity, typically as a complication of pneumonia, lung abscess, or bronchiectasis.",
+      "keyConcept": "True: Empyema means pus in the pleural cavity.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MRS2-CH3-PATH-0291",
+      "type": "truefalse",
+      "lecture": 3,
+      "text": "Empyema means pus in the pleural cavity.",
+      "explanation": "Medical Verification Rationale: This is a scientifically and clinically TRUE statement. True: Empyema means pus in the pleural cavity.",
+      "keyConcept": "True: Empyema means pus in the pleural cavity.",
+      "options": [
+        "True",
+        "False"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null,
+      "contentVersion": "9107114a5d3aa6a6b13836c99e81b6d2a94a6dbdd916c8e1dfa969fb5ee0e015"
+    }
+  },
+  {
+    "module": "MBL-2",
+    "id": "MBL2-CH1-PHYS-0053",
+    "action": "display-cleanup",
+    "reason": "Forensic medical audit: correct transposed answer key / repair merged options / populate clinical explanation",
+    "original": {
+      "id": "MBL2-CH1-PHYS-0053",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Concerning RBCs:",
+      "explanation": "and attack the antigens on the large volume of transfused donor cells, leading to widespread hemolysis, a, The recipient's antigens attacking the donor red blood cells - FALSE, Antigens don't \"attack\", c, The antigens on the recipient's red blood cells reacting with the antibodies in the transfused blood - FALSE, This is a minor reaction, as the donor antibodies are diluted in the recipient's large blood volume, It is still avoided but is less dangerous than option 'b', Applied to “Concerning RBCs”: the discriminating answer is “Its normal number is 5x10%mm'.”.",
+      "keyConcept": "Identify the normal mechanism first, then reject options that describe a different cell type, pathway, or regulatory response; for “Concerning RBCs”, the defining choice is “Its normal number is 5x10%mm'.”.",
+      "options": [
+        "It has biconcave shape.",
+        "Its normal number is 5x10%mm'.",
+        "Its life span 120 days.",
+        "All of the above."
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MBL2-CH1-PHYS-0053",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Concerning RBCs:",
+      "explanation": "The correct answer is All of the above. Human erythrocytes are mature non-nucleated biconcave discs (~7.5 µm diameter), with an average physiological count of approximately 5 million/mm³ (4.5-5.5 x 10⁶/µL) and a circulatory lifespan of 120 days before splenic macrophage clearance.",
+      "keyConcept": "Normal RBC characteristics: biconcave non-nucleated disc, ~5 million/mm³ count, and 120-day lifespan.",
+      "options": [
+        "It has biconcave shape.",
+        "Its normal number is 5x10⁶/mm³.",
+        "Its life span 120 days.",
+        "All of the above."
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null
+    }
+  },
+  {
+    "module": "MBL-2",
+    "id": "MBL2-CH1-PHYS-0093",
+    "action": "display-cleanup",
+    "reason": "Forensic medical audit: correct transposed answer key / repair merged options / populate clinical explanation",
+    "original": {
+      "id": "MBL2-CH1-PHYS-0093",
+      "type": "mcq",
+      "lecture": 4,
+      "text": "About erythrocytes, which sentence is NOT true?",
+      "explanation": "This statement is false, Hemorrhage (blood loss) leads to anemia and reduced oxygen-carrying capacity, causing tissue hypoxia, This hypoxia stimulates the kidneys to increase the secretion of erythropoietin, a, Is secreted by kidney - TRUE, The kidney is the primary source, c, Is secreted during exposure to high altitude - TRUE, High altitude means lower atmospheric O,, causing hypoxia and thus stimulating EPO secretion, d, Is glycoprotein in nature - TRUE, EPO is a protein hormone with carbohydrate side chains.",
+      "keyConcept": "Transferrin carries iron in plasma; ferritin stores intracellular iron; ferroportin exports iron from cells; for “About erythrocytes, which sentence is NOT true”, the defining choice is “Their membrane does not allow Nations to pass through it freely.”.",
+      "options": [
+        "Blood group antigens are present on membranes.",
+        "Their membrane does not allow Nations to pass through it freely.",
+        "Their breakdown releases iron, which is reused by the body. &",
+        "They secrete erythropoietin."
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MBL2-CH1-PHYS-0093",
+      "type": "mcq",
+      "lecture": 4,
+      "text": "About erythrocytes, which sentence is NOT true?",
+      "explanation": "The correct answer is They secrete erythropoietin. Erythrocytes do NOT synthesize or secrete erythropoietin (EPO); erythropoietin is produced by interstitial fibroblasts in the renal cortex (~85-90%) and the liver (~10-15%) in response to tissue hypoxia. The remaining statements are true.",
+      "keyConcept": "Erythropoietin is synthesized by renal cortical interstitial peritubular cells, not by erythrocytes.",
+      "options": [
+        "Blood group antigens are present on membranes.",
+        "Their membrane does not allow Na+ ions to pass through it freely.",
+        "Their breakdown releases iron, which is reused by the body.",
+        "They secrete erythropoietin."
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null
+    }
+  },
+  {
+    "module": "MBL-2",
+    "id": "MBL2-CH1-PHYS-0094",
+    "action": "display-cleanup",
+    "reason": "Forensic medical audit: correct transposed answer key / repair merged options / populate clinical explanation",
+    "original": {
+      "id": "MBL2-CH1-PHYS-0094",
+      "type": "mcq",
+      "lecture": 4,
+      "text": "About erythrocytes:",
+      "explanation": "This statement is incorrect, Thyroid hormones bind to plasma proteins to increase their solubility in blood and prolong their half-life, not for buffering capacity, The buffering capacity of blood is primarily due to hemoglobin, bicarbonate, and plasma proteins themselves, b, Hb is present inside RBCs to prevent its escape to the plasma - TRUE, This prevents loss via the kidney and avoids increasing plasma viscosity and oncotic pressure, c, Erythropoiesis is increased - TRUE, Plasma from a hypoxic animal contains high levels of erythropoietin, which will stimulate RBC production in a normal animal, d, The membrane of RBCs contains substances that determine blood groups - TRUE, These are the A, B, and Rh antigens, e, RBCs membrane allow anions only to pass freely - TRUE, Via the chloride-bicarbonate",
+      "keyConcept": "Identify the normal mechanism first, then reject options that describe a different cell type, pathway, or regulatory response; for “About erythrocytes”, the defining choice is “They contain no enzymes.”.",
+      "options": [
+        "They contain no enzymes.",
+        "They are responsible for a minor part of blood viscosity.",
+        "Their life span is about 2 months.",
+        "Their Hb content carries O2",
+        "They are the least number blood cells."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MBL2-CH1-PHYS-0094",
+      "type": "mcq",
+      "lecture": 4,
+      "text": "About erythrocytes:",
+      "explanation": "The correct answer is Their Hb content carries O2. The primary specialized function of erythrocytes is oxygen transport via hemoglobin (each Hb tetramer binds up to 4 O2 molecules). They contain vital enzymes (carbonic anhydrase, glycolytic enzymes, G6PD), constitute the major determinant of whole blood viscosity (~hematocrit), live 120 days (4 months), and are the most abundant cells in peripheral blood (~5 million/µL).",
+      "keyConcept": "Erythrocyte hemoglobin carries oxygen from lungs to systemic tissues.",
+      "options": [
+        "They contain no enzymes.",
+        "They are responsible for a minor part of blood viscosity.",
+        "Their life span is about 2 months.",
+        "Their Hb content carries O2",
+        "They are the least number blood cells."
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null
+    }
+  },
+  {
+    "module": "MBL-2",
+    "id": "MBL2-CH1-PHYS-0095",
+    "action": "display-cleanup",
+    "reason": "Forensic medical audit: correct transposed answer key / repair merged options / populate clinical explanation",
+    "original": {
+      "id": "MBL2-CH1-PHYS-0095",
+      "type": "mcq",
+      "lecture": 4,
+      "text": "All are true about breakdown of discs. erythrocyte EXCEPT:",
+      "explanation": "This statement is false, Phagocytosis is a function of white blood cells (like neutrophils and macrophages), not hemoglobin, b, Regulation of pH of blood - TRUE, It acts as a major buffer, c, Carrying of 02- TRUE, Its primary function, d, Helps in carrying CO, - TRUE, A portion of CO, is carried bound to the globin chains (as carbaminohemoglobin).",
+      "keyConcept": "Transferrin carries iron in plasma; ferritin stores intracellular iron; ferroportin exports iron from cells; for “All are true about breakdown of discs. erythrocyte EXCEPT”, the defining choice is “Occurs when they are about 18 weeks.”.",
+      "options": [
+        "Occurs when they are about 18 weeks.",
+        "Takes place in the reticuloendothelial system.",
+        "Produced iron is excreted in urine.",
+        "Produced bilirubin is carried to liver."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MBL2-CH1-PHYS-0095",
+      "type": "mcq",
+      "lecture": 4,
+      "text": "All are true about breakdown of erythrocyte EXCEPT:",
+      "explanation": "The correct answer is Produced iron is excreted in urine. In physiological extravascular hemolysis, liberated iron is rigorously conserved: it binds to transferrin in plasma and is either transported directly back to the bone marrow for new erythropoiesis or stored intracellularly as ferritin and hemosiderin in macrophages; it is NOT excreted in urine. Renal excretion of iron is negligible under normal conditions.",
+      "keyConcept": "Iron from senescent RBC breakdown is recycled via transferrin and ferritin, not excreted in urine.",
+      "options": [
+        "Occurs when they are about 18 weeks.",
+        "Takes place in the reticuloendothelial system.",
+        "Produced iron is excreted in urine.",
+        "Produced bilirubin is carried to liver."
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null
+    }
+  },
+  {
+    "module": "MBL-2",
+    "id": "MBL2-CH1-PHYS-0097",
+    "action": "display-cleanup",
+    "reason": "Forensic medical audit: correct transposed answer key / repair merged options / populate clinical explanation",
+    "original": {
+      "id": "MBL2-CH1-PHYS-0097",
+      "type": "mcq",
+      "lecture": 4,
+      "text": "All are true about hemoglobin EXCEPT:",
+      "explanation": "This statement correctly describes the fate of the globin portion, When hemoglobin is broken down, the protein (globin) chains are catabolized into their constituent amino acids, which are then recycled by the body to synthesize new proteins, a, Heme-completely reused to form a new hemoglobin molecule - FALSE, The heme ring is broken down; its iron is recycled, but the porphyrin ring is converted to bilirubin, c, Iron-mostly secreted in bile - FALSE, Iron is very efficiently recycled and bound to transferrin for transport back to the bone marrow; it is not secreted in bile, d, All of these are correct - FALSE. Applied to “All are true about hemoglobin EXCEPT”: the discriminating answer is “Has a buffer function.”.",
+      "keyConcept": "2,3-BPG stabilizes deoxyhemoglobin and lowers oxygen affinity, shifting the dissociation curve to the right; for “All are true about hemoglobin EXCEPT”, the defining choice is “Has a buffer function.”.",
+      "options": [
+        "Is the major O, carrying system in the body.",
+        "Has a buffer function.",
+        "Percentage is 16 gm% in males.",
+        "Is found both in plasma & RBCs."
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MBL2-CH1-PHYS-0097",
+      "type": "mcq",
+      "lecture": 4,
+      "text": "All are true about hemoglobin EXCEPT:",
+      "explanation": "The correct answer is Is found both in plasma & RBCs. Under normal physiological conditions, hemoglobin is exclusively packaged inside erythrocytes to maintain blood osmolarity, prevent renal filtration and tubular damage, and avert nitric oxide scavenging. Free plasma hemoglobin is pathological, seen only during intravascular hemolysis.",
+      "keyConcept": "Hemoglobin is strictly compartmentalized within RBCs; free hemoglobin in plasma is pathological.",
+      "options": [
+        "Is the major O2 carrying system in the body.",
+        "Has a buffer function.",
+        "Percentage is 16 gm% in males.",
+        "Is found both in plasma & RBCs."
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null
+    }
+  },
+  {
+    "module": "MBL-2",
+    "id": "MBL2-CH1-PHYS-0099",
+    "action": "display-cleanup",
+    "reason": "Forensic medical audit: correct transposed answer key / repair merged options / populate clinical explanation",
+    "original": {
+      "id": "MBL2-CH1-PHYS-0099",
+      "type": "mcq",
+      "lecture": 4,
+      "text": "Blood cell destruction occurs mainly in:",
+      "explanation": "Nephrotic syndrome is characterized by damage to the kidney's glomeruli, leading to massive leakage of protein (proteinuria), especially albumin, into the urine, This loss from the blood results in low total protein in the plasma (hypoproteinemia), a, Increased A/G ratio due to loss of globulins - FALSE, The A/G ratio decreases because albumin is lost more readily than globulins, c, Increased plasma colloid osmotic pressure - FALSE, The loss of albumin causes a severe decrease in colloid osmotic pressure, d, A normal A/G ratio but decreased total plasma proteins - FALSE, The ratio becomes abnormal (decreased) due to the disproportionate loss of albumin.",
+      "keyConcept": "Identify the normal mechanism first, then reject options that describe a different cell type, pathway, or regulatory response; for “Blood cell destruction occurs mainly in”, the defining choice is “Kidney.”.",
+      "options": [
+        "Spleen.",
+        "Kidney.",
+        "Bone marrow.",
+        "Heart."
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MBL2-CH1-PHYS-0099",
+      "type": "mcq",
+      "lecture": 4,
+      "text": "Blood cell destruction occurs mainly in:",
+      "explanation": "The correct answer is Spleen. Senescent, rigid red blood cells are filtered and phagocytosed by macrophages lining the splenic cords of Billroth as they attempt to squeeze through the narrow fenestrations of the splenic sinusoids.",
+      "keyConcept": "The spleen is the primary reticuloendothelial organ for clearance and destruction of aged erythrocytes.",
+      "options": [
+        "Spleen.",
+        "Kidney.",
+        "Bone marrow.",
+        "Heart."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null
+    }
+  },
+  {
+    "module": "MBL-2",
+    "id": "MBL2-CH1-PHYS-0100",
+    "action": "display-cleanup",
+    "reason": "Forensic medical audit: correct transposed answer key / repair merged options / populate clinical explanation",
+    "original": {
+      "id": "MBL2-CH1-PHYS-0100",
+      "type": "mcq",
+      "lecture": 4,
+      "text": "Each hemoglobin molecule can become associated with ____ oxygen molecule(s).",
+      "explanation": "Calcium is not a direct requirement for the synthesis of red blood cells (erythropoiesis), While essential for many bodily functions (like bone health and blood clotting), it is not a specific maturation factor for RBCs, a, Folic acid - FALSE, Essential for DNA synthesis and normal cell division of erythroblasts, b, Vitamin B12 - FALSE, Also essential for DNA synthesis and RBC maturation, c, Iron - FALSE, A crucial component of the heme group in hemoglobin, d, Cobalt - FALSE, It is a core component of the vitamin B12 molecule.",
+      "keyConcept": "2,3-BPG stabilizes deoxyhemoglobin and lowers oxygen affinity, shifting the dissociation curve to the right; for “Each hemoglobin molecule can become associated with ____ oxygen molecule(s).”, the defining choice is “An unlimited number”.",
+      "options": [
+        "One",
+        "Two",
+        "Three",
+        "Four",
+        "An unlimited number"
+      ],
+      "correctIndex": 4,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MBL2-CH1-PHYS-0100",
+      "type": "mcq",
+      "lecture": 4,
+      "text": "Each hemoglobin molecule can become associated with ____ oxygen molecule(s).",
+      "explanation": "The correct answer is Four. Hemoglobin is a tetramer consisting of four globin polypeptide chains, each harboring one iron-containing heme prosthetic group capable of reversibly binding one molecule of O2, yielding a maximum stoichiometric capacity of four O2 molecules per hemoglobin molecule.",
+      "keyConcept": "Each hemoglobin tetramer binds exactly 4 molecules of oxygen.",
+      "options": [
+        "One",
+        "Two",
+        "Three",
+        "Four",
+        "An unlimited number"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null
+    }
+  },
+  {
+    "module": "MBL-2",
+    "id": "MBL2-CH1-PHYS-0103",
+    "action": "display-cleanup",
+    "reason": "Forensic medical audit: correct transposed answer key / repair merged options / populate clinical explanation",
+    "original": {
+      "id": "MBL2-CH1-PHYS-0103",
+      "type": "mcq",
+      "lecture": 4,
+      "text": "Erythropoietin is essential for.",
+      "explanation": "The spleen is the primary site for the destruction of old and damaged red blood cells, b, Kidney - FALSE, The kidney's role is to produce erythropoietin and filter waste, not destroy RBCS, c, Bone marrow - FALSE, Bone marrow is the site of RBC production, d, Heart - FALSE, The heart's function is to pump blood.",
+      "keyConcept": "Mature erythrocytes lack mitochondria and depend on anaerobic glycolysis for ATP; for “Erythropoietin is essential for.”, the defining choice is “Leukopoiesis.”.",
+      "options": [
+        "Leukopoiesis.",
+        "Formation of prothrombin.",
+        "Formation of red blood corpuscles.",
+        "Formation of plasma proteins.",
+        "Immunity."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MBL2-CH1-PHYS-0103",
+      "type": "mcq",
+      "lecture": 4,
+      "text": "Erythropoietin is essential for:",
+      "explanation": "The correct answer is Formation of red blood corpuscles. Erythropoietin (EPO) is the principal glycoprotein hormone driving erythropoiesis by binding to its receptor (EPO-R) on CFU-E (colony-forming unit-erythroid) and proerythroblasts in the bone marrow, promoting survival, proliferation, and terminal differentiation into mature RBCs.",
+      "keyConcept": "Erythropoietin stimulates CFU-E differentiation and red blood cell production.",
+      "options": [
+        "Leukopoiesis.",
+        "Formation of prothrombin.",
+        "Formation of red blood corpuscles.",
+        "Formation of plasma proteins.",
+        "Immunity."
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null
+    }
+  },
+  {
+    "module": "MBL-2",
+    "id": "MBL2-CH1-PHYS-0104",
+    "action": "display-cleanup",
+    "reason": "Forensic medical audit: correct transposed answer key / repair merged options / populate clinical explanation",
+    "original": {
+      "id": "MBL2-CH1-PHYS-0104",
+      "type": "mcq",
+      "lecture": 4,
+      "text": "Erythropoietin:",
+      "explanation": "This is the primary and most critical function of erythrocytes, Hemoglobin (Hb) within the RBCs binds to oxygen in the lungs and transports it to the tissues, a, They contain no enzymes - FALSE, They lack a nucleus and organelles but contain crucial cytoplasmic enzymes, such as carbonic anhydrase and those for glycolysis, b, They are responsible for a minor part of blood viscosity - FALSE, They are the major determinant of whole blood viscosity due to their high numbers, c, Their life span is about 2 months - FALSE, Their life span is about 120 days (4 months), e, They are the least number blood cells - FALSE, They are by far the most numerous blood cells.",
+      "keyConcept": "Mature erythrocytes lack mitochondria and depend on anaerobic glycolysis for ATP; for “Erythropoietin”, the defining choice is “Is produced mainly by the heart.”.",
+      "options": [
+        "Is produced mainly by the heart.",
+        "Inhibits the production of red blood cells.",
+        "Production increases when blood oxygen decreases.",
+        "Production is inhibited by testosterone.",
+        "All of these are correct."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MBL2-CH1-PHYS-0104",
+      "type": "mcq",
+      "lecture": 4,
+      "text": "Erythropoietin:",
+      "explanation": "The correct answer is Production increases when blood oxygen decreases. Renal peritubular interstitial cells sense oxygen tension via hypoxia-inducible factor 1-alpha (HIF-1alpha). Hypoxia stabilizes HIF-1alpha, driving rapid transcription and secretion of erythropoietin to boost erythropoiesis and restore oxygen delivery.",
+      "keyConcept": "Renal hypoxia stabilizes HIF-1alpha, stimulating erythropoietin synthesis.",
+      "options": [
+        "Is produced mainly by the heart.",
+        "Inhibits the production of red blood cells.",
+        "Production increases when blood oxygen decreases.",
+        "Production is inhibited by testosterone.",
+        "All of these are correct."
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null
+    }
+  },
+  {
+    "module": "MBL-2",
+    "id": "MBL2-CH1-PHYS-0105",
+    "action": "display-cleanup",
+    "reason": "Forensic medical audit: correct transposed answer key / repair merged options / populate clinical explanation",
+    "original": {
+      "id": "MBL2-CH1-PHYS-0105",
+      "type": "mcq",
+      "lecture": 4,
+      "text": "In normal blood:",
+      "explanation": "The first part of the statement is correct, Fibrinogen, because of its large, asymmetric shape, is the most important protein for determining plasma viscosity, While the second part about diastolic blood pressure is an indirect effect (viscosity affects peripheral resistance, which affects DPB), the identification of fibrinogen as the main contributor is the key physiological point being tested, a, Albumin, due to its high concentration - FALSE, Although it contributes significantly due to its high concentration, fibrinogen has a greater effect per molecule, b, Red Blood Cells, due to their large number - FALSE, RBCs are the main contributor to whole blood viscosity, not plasma viscosity, d, Gamma globulins, especially during infections - FALSE, While their contribution increases during infection, they are not the main contributor under normal conditions.",
+      "keyConcept": "Neutrophils kill phagocytosed microbes using granule enzymes and an NADPH-oxidase respiratory burst that generates reactive oxygen species; for “In normal blood”, the defining choice is “Platelets number is less than neutrophil.”.",
+      "options": [
+        "The plasma protein level is 20mg %.",
+        "Hb contents is about 14-16 gm%.",
+        "Platelets number is less than neutrophil.",
+        "The RBCs are biconvex discs under normal physiological conditions."
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MBL2-CH1-PHYS-0105",
+      "type": "mcq",
+      "lecture": 4,
+      "text": "In normal blood:",
+      "explanation": "The correct answer is Hb contents is about 14-16 gm%. Physiological hemoglobin concentration in adult humans ranges between 13.5–17.5 g/dL (gm%) in men and 12.0–15.5 g/dL in women. Plasma protein level is normally 6–8 g/dL (not 20 mg%), platelets (150,000–400,000/µL) far outnumber neutrophils (2,500–7,500/µL), and RBCs are biconcave (not biconvex) discs.",
+      "keyConcept": "Normal blood hemoglobin concentration is 14-16 g/dL; platelets outnumber leukocytes.",
+      "options": [
+        "The plasma protein level is 20mg %.",
+        "Hb contents is about 14-16 gm%.",
+        "Platelets number is less than neutrophil.",
+        "The RBCs are biconvex discs under normal physiological conditions."
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    }
+  },
+  {
+    "module": "MBL-2",
+    "id": "MBL2-CH1-PHYS-0107",
+    "action": "display-cleanup",
+    "reason": "Forensic medical audit: correct transposed answer key / repair merged options / populate clinical explanation",
+    "original": {
+      "id": "MBL2-CH1-PHYS-0107",
+      "type": "mcq",
+      "lecture": 4,
+      "text": "In the following, mark the wrong statement:",
+      "explanation": "Erythropoietin (EPO) is the principal hormone that stimulates the bone marrow to produce and differentiate red blood cells (erythrocytes), This process is called erythropoiesis, a, Leukopoiesis - FALSE, This is the formation of white blood cells, b, Formation of prothrombin - FALSE, Prothrombin is a plasma protein made by the liver, d, Formation of plasma proteins - FALSE, This is mainly a function of the liver, e, Immunity - FALSE, This is the function of the immune system (WBCs, antibodies).",
+      "keyConcept": "Identify the normal mechanism first, then reject options that describe a different cell type, pathway, or regulatory response; for “In the following, mark the wrong statement”, the defining choice is “Erythropoiesis is increased in normal animals when injected with plasma obtained from hypoxic animals.”.",
+      "options": [
+        "Thyroid hormones circulate bound to plasma proteins to increase their buffering capacity.",
+        "Hb is present inside RBCs to prevent its escape to the plasma.",
+        "Erythropoiesis is increased in normal animals when injected with plasma obtained from hypoxic animals.",
+        "The membrane of RBCs contains substances that determine blood groups.",
+        "RBCs membrane allow anions only to pass freely."
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MBL2-CH1-PHYS-0107",
+      "type": "mcq",
+      "lecture": 4,
+      "text": "In the following, mark the wrong statement:",
+      "explanation": "The incorrect statement (and therefore correct answer) is: 'Thyroid hormones circulate bound to plasma proteins to increase their buffering capacity.' Thyroid hormones circulate bound to thyroxine-binding globulin (TBG) and albumin to act as a circulating reservoir and prevent rapid renal filtration, NOT to increase buffering capacity of blood.",
+      "keyConcept": "Plasma protein binding of thyroid hormone provides a circulating reservoir, not blood buffering.",
+      "options": [
+        "Thyroid hormones circulate bound to plasma proteins to increase their buffering capacity.",
+        "Hb is present inside RBCs to prevent its escape to the plasma.",
+        "Erythropoiesis is increased in normal animals when injected with plasma obtained from hypoxic animals.",
+        "The membrane of RBCs contains substances that determine blood groups.",
+        "RBCs membrane allow anions only to pass freely."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null
+    }
+  },
+  {
+    "module": "MBL-2",
+    "id": "MBL2-CH1-PHYS-0110",
+    "action": "display-cleanup",
+    "reason": "Forensic medical audit: correct transposed answer key / repair merged options / populate clinical explanation",
+    "original": {
+      "id": "MBL2-CH1-PHYS-0110",
+      "type": "mcq",
+      "lecture": 4,
+      "text": "The main site of production of erythropoietin is:",
+      "explanation": "Normal adult hemoglobin (HbA) is a tetramer composed of two alpha (a) globin chains and two beta (B) globin chains, b, 2 alpha and 2 gamma chains - FALSE, This is the composition of fetal hemoglobin (HbF), c, 2 alpha and 2 delta chains - FALSE, This is the composition of HbA2, a minor form of adult hemoglobin, d, e - FALSE, These combinations are not standard forms of hemoglobin.",
+      "keyConcept": "Renal erythropoietin rises with tissue hypoxia and stimulates erythroid progenitors in bone marrow; for “The main site of production of erythropoietin is”, the defining choice is “Liver.”.",
+      "options": [
+        "Liver.",
+        "Bone marrow.",
+        "Spleen.",
+        "Kidneys.",
+        "Plasma. - M30 Erythrocytes & Erythropoiesis"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MBL2-CH1-PHYS-0110",
+      "type": "mcq",
+      "lecture": 4,
+      "text": "The main site of production of erythropoietin is:",
+      "explanation": "The correct answer is Kidneys. In adults, approximately 85% to 90% of erythropoietin is synthesized and secreted by peritubular interstitial capillary endothelial cells and fibroblasts in the renal cortex and outer medulla, with the remaining 10% to 15% synthesized by the liver.",
+      "keyConcept": "The kidneys produce ~90% of adult erythropoietin in response to hypoxia.",
+      "options": [
+        "Liver.",
+        "Bone marrow.",
+        "Spleen.",
+        "Kidneys.",
+        "Plasma."
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null
+    }
+  },
+  {
+    "module": "MBL-2",
+    "id": "MBL2-CH1-PHYS-0117",
+    "action": "display-cleanup",
+    "reason": "Forensic medical audit: correct transposed answer key / repair merged options / populate clinical explanation",
+    "original": {
+      "id": "MBL2-CH1-PHYS-0117",
+      "type": "mcq",
+      "lecture": 5,
+      "text": "Albumin / globulin ratio:",
+      "explanation": "This statement is incorrect, This is the same reason as in question 2; gamma globulins are produced by plasma cells, not the liver, b, Gamma globulins are antibodies - TRUE, These are also known as immunoglobulins, c, Fibrinogen is responsible for blood viscosity - TRUE, Fibrinogen, due to its large, asymmetric shape, is a major contributor to plasma viscosity, d, The amount of albumin is greater than globulin - TRUE, The normal albumin level is higher than the total globulin level, resulting in an A/G ratio > 1.",
+      "keyConcept": "Albumin is the main determinant of plasma oncotic pressure and also transports many endogenous and exogenous compounds; for “Albumin / globulin ratio”, the defining choice is “Higher in liver diseases.”.",
+      "options": [
+        "Higher in liver diseases.",
+        "Increase in conditions of albuminuria.",
+        "Normally equals 1.2 - 1.6.",
+        "Increases in infections."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MBL2-CH1-PHYS-0117",
+      "type": "mcq",
+      "lecture": 5,
+      "text": "Albumin / globulin ratio:",
+      "explanation": "The correct answer is Normally equals 1.2 - 1.6. In healthy individuals, serum albumin (3.5–5.0 g/dL) exceeds total globulins (2.0–3.5 g/dL), yielding a physiological A/G ratio of 1.2 to 1.6. In liver cirrhosis, nephrotic syndrome, and chronic infections, the ratio decreases (reverses) due to reduced albumin synthesis, urinary albumin loss, or polyclonal hypergammaglobulinemia.",
+      "keyConcept": "Normal A/G ratio is 1.2-1.6; it decreases in hepatic failure, albuminuria, and chronic infections.",
+      "options": [
+        "Higher in liver diseases.",
+        "Increase in conditions of albuminuria.",
+        "Normally equals 1.2 - 1.6.",
+        "Increases in infections."
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null
+    }
+  },
+  {
+    "module": "MBL-2",
+    "id": "MBL2-CH1-PHYS-0118",
+    "action": "display-cleanup",
+    "reason": "Forensic medical audit: correct transposed answer key / repair merged options / populate clinical explanation",
+    "original": {
+      "id": "MBL2-CH1-PHYS-0118",
+      "type": "mcq",
+      "lecture": 5,
+      "text": "All about plasma protein are true EXCEPT:",
+      "explanation": "This statement is incorrect, The transport of oxygen (O,) is the primary function of hemoglobin, a, Facilitate retention of fluid in the blood vessels - TRUE, This is a key function via colloid osmotic pressure, b, Play an important role in blood clotting - TRUE, Fibrinogen and prothrombin are plasma proteins essential for clotting, c, Bind & transport certain hormones - TRUE, Albumin and specific globulins act as carrier proteins.",
+      "keyConcept": "Identify the normal mechanism first, then reject options that describe a different cell type, pathway, or regulatory response; for “All about plasma protein are true EXCEPT”, the defining choice is “Can be used by the tissues for their protein metabolism.”.",
+      "options": [
+        "Amount is 7g/100 ml plasma.",
+        "Share in production of blood viscosity.",
+        "Are formed only in liver.",
+        "Can be used by the tissues for their protein metabolism."
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MBL2-CH1-PHYS-0118",
+      "type": "mcq",
+      "lecture": 5,
+      "text": "All about plasma protein are true EXCEPT:",
+      "explanation": "The correct answer is Are formed only in liver. While albumin, fibrinogen, and most alpha- and beta-globulins are synthesized exclusively in hepatocytes, gamma-globulins (immunoglobulins/antibodies) are synthesized by plasma cells in lymphoid tissue throughout the body, not by the liver.",
+      "keyConcept": "Immunoglobulins (gamma globulins) are synthesized by plasma cells, not by the liver.",
+      "options": [
+        "Amount is 7g/100 ml plasma.",
+        "Share in production of blood viscosity.",
+        "Are formed only in liver.",
+        "Can be used by the tissues for their protein metabolism."
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null
+    }
+  },
+  {
+    "module": "MBL-2",
+    "id": "MBL2-CH1-PHYS-0119",
+    "action": "display-cleanup",
+    "reason": "Forensic medical audit: correct transposed answer key / repair merged options / populate clinical explanation",
+    "original": {
+      "id": "MBL2-CH1-PHYS-0119",
+      "type": "mcq",
+      "lecture": 5,
+      "text": "Antibodies are:",
+      "explanation": "This is the correct physiological range for the albumin/globulin ratio in a healthy individual, a, Higher in liver diseases - FALSE, In liver disease, albumin synthesis decreases, which lowers the A/G ratio, b, Increase in conditions of albuminuria - FALSE, Albuminuria means loss of albumin in the urine, which decreases the A/G ratio, d, Increases in infections - FALSE, Infections lead to increased production of globulins (antibodies), which decreases the A/G ratio.",
+      "keyConcept": "B lymphocytes differentiate into plasma cells that secrete antibodies and mediate humoral immunity; for “Antibodies are”, the defining choice is “Produced by T-lymphocytes.”.",
+      "options": [
+        "Gamma globulins.",
+        "A type of plasma electrolyte.",
+        "Produced by T-lymphocytes.",
+        "Both a and c."
+      ],
+      "correctIndex": 2,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MBL2-CH1-PHYS-0119",
+      "type": "mcq",
+      "lecture": 5,
+      "text": "Antibodies are:",
+      "explanation": "The correct answer is Gamma globulins. Antibodies (immunoglobulins) migrate electrophoretically in the gamma-globulin fraction. They are secreted by differentiated B-lymphocytes (plasma cells), NOT by T-lymphocytes.",
+      "keyConcept": "Antibodies are gamma globulins secreted by B-cell-derived plasma cells.",
+      "options": [
+        "Gamma globulins.",
+        "A type of plasma electrolyte.",
+        "Produced by T-lymphocytes.",
+        "Both a and c."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null
+    }
+  },
+  {
+    "module": "MBL-2",
+    "id": "MBL2-CH1-BIOC-0188",
+    "action": "display-cleanup",
+    "reason": "Forensic medical audit: correct transposed answer key / repair merged options / populate clinical explanation",
+    "original": {
+      "id": "MBL2-CH1-BIOC-0188",
+      "type": "mcq",
+      "lecture": 9,
+      "text": "In myoglobin, PO, needed to achieve half saturation of binding sites (Pso) is:",
+      "explanation": "Answer is A, as myoglobin's P50 is approximately 2-5 mmHg, indicating high oxygen affinity for storage. C, 26 mm Hg - FALSE because this is hemoglobin's P50.",
+      "keyConcept": "Link the molecule or pathway in the stem to its specific enzyme, cofactor, compartment, or regulatory step; for “In myoglobin, PO, needed to achieve half saturation of binding sites (Pso) is”, the defining choice is “5 mm Hg c. 26 mm Hg”.",
+      "options": [
+        "5 mm Hg c. 26 mm Hg",
+        "20 mm Hg d. 100 mm Hg"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MBL2-CH1-BIOC-0188",
+      "type": "mcq",
+      "lecture": 9,
+      "text": "In myoglobin, PO2 needed to achieve half saturation of binding sites (P50) is:",
+      "explanation": "The correct answer is 5 mm Hg. Myoglobin has a hyperbolic oxygen dissociation curve with a very high oxygen affinity, resulting in a P50 of approximately 2–5 mmHg (contrasted with adult hemoglobin HbA, which exhibits a sigmoidal cooperative curve with a P50 of approximately 26–27 mmHg). This ensures myoglobin binds oxygen avidly at physiological tissue PO2 and releases it only under extreme hypoxic conditions during strenuous muscle contraction.",
+      "keyConcept": "Myoglobin P50 is approximately 2–5 mmHg with a hyperbolic curve, reflecting higher oxygen affinity than hemoglobin (P50 ≈ 26 mmHg).",
+      "options": [
+        "5 mm Hg",
+        "20 mm Hg",
+        "26 mm Hg",
+        "100 mm Hg"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null
+    }
+  },
+  {
+    "module": "MBL-2",
+    "id": "MBL2-CH1-PHAR-0038",
+    "action": "display-cleanup",
+    "reason": "Forensic medical audit: correct transposed answer key / repair merged options / populate clinical explanation",
+    "original": {
+      "id": "MBL2-CH1-PHAR-0038",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Choose the incorrect sentence from the following:",
+      "explanation": "bicarbonate or other specific measures are preferred while Chronic iron toxicity (e.g., from repeated transfusions) can be treated with deferoxamine given IM or SC, Diphyllobothriasis can cause vitamin B12 deficiency; treatment involves praziquantel plus B12 supplementation and Anemia of chronic disease generally does not benefit from iron unless there is a coexisting true iron deficiency.",
+      "keyConcept": "Lead inhibits ALA dehydratase and ferrochelatase in heme synthesis; for “Choose the incorrect sentence from the following”, the defining choice is “In acute iron toxicity, gastric lavage is performed with saline solutions”.",
+      "options": [
+        "In acute iron toxicity, gastric lavage is performed with saline solutions",
+        "In chronic iron toxicity, Deferoxamine is given IM or SC",
+        "In Diphylobothriasis; Praziquantel is used with B12 erythropoietin d. In anemia of chronic disease, iron failure. therapy is not required lead to"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MBL2-CH1-PHAR-0038",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Choose the incorrect sentence from the following:",
+      "explanation": "The incorrect sentence (and therefore correct answer) is: 'In acute iron toxicity, gastric lavage is performed with saline solutions.' In acute iron toxicity, simple saline lavage is ineffective; gastric lavage using 1% sodium bicarbonate is traditionally employed because it precipitates free iron into insoluble, non-absorbable ferrous carbonate complexes, alongside whole-bowel irrigation with polyethylene glycol (PEG) and systemic chelation with deferoxamine. The other statements are accurate.",
+      "keyConcept": "Acute iron poisoning requires sodium bicarbonate gastric lavage, whole-bowel irrigation, and deferoxamine chelation; saline lavage is ineffective.",
+      "options": [
+        "In acute iron toxicity, gastric lavage is performed with saline solutions",
+        "In chronic iron toxicity, Deferoxamine is given IM or SC",
+        "In Diphylobothriasis, Praziquantel is used with Vitamin B12",
+        "In anemia of chronic disease, iron therapy is not required"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null
+    }
+  },
+  {
+    "module": "MBL-2",
+    "id": "MBL2-CH1-PARA-0072",
+    "action": "display-cleanup",
+    "reason": "Forensic medical audit: correct transposed answer key / repair merged options / populate clinical explanation",
+    "original": {
+      "id": "MBL2-CH1-PARA-0072",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Schizonts of malaria parasite are NOT seen in peripheral blood in:",
+      "explanation": "is characteristic of P. malariae. P. falciparum has a 48-hour cycle (tertian), but it is often irregular or continuous. In P. falciparum infections, the later developmental stages (late trophozoites and schizonts) are sequestered in the microvasculature of deep organs and are therefore not typically found circulating in peripheral blood smears. Only early rings and gametocytes are usually seen. a, c, d - FALSE. In infections with P. vivax, P. ovale, and P. malariae, all erythrocytic stages, including schizonts, can be found in the peripheral blood",
+      "keyConcept": "Separate parasites by host, vector, infective stage, diagnostic stage, and characteristic clinical manifestation; for “Schizonts of malaria parasite are NOT seen in peripheral blood in”, the defining choice is “P. falciparum. d. P. malariae.”.",
+      "options": [
+        "P. vivax. c. P. ovale.",
+        "P. falciparum. d. P. malariae."
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MBL2-CH1-PARA-0072",
+      "type": "mcq",
+      "lecture": 2,
+      "text": "Schizonts of malaria parasite are NOT seen in peripheral blood in:",
+      "explanation": "The correct answer is P. falciparum. Erythrocytic schizogony of Plasmodium falciparum occurs inside deep capillary beds and visceral organs (brain, kidneys, spleen) due to cytoadherence and sequestration mediated by PfEMP1 (Plasmodium falciparum erythrocyte membrane protein 1). Consequently, schizonts and mature trophozoites are sequestered and not typically seen on a peripheral blood smear, where only young ring-form trophozoites and banana-shaped gametocytes circulate.",
+      "keyConcept": "Plasmodium falciparum schizonts undergo cytoadherence and sequestration in deep vascular beds, so only ring forms and gametocytes appear in peripheral blood.",
+      "options": [
+        "P. vivax",
+        "P. falciparum",
+        "P. ovale",
+        "P. malariae"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    }
+  },
+  {
+    "module": "MBL-2",
+    "id": "MBL2-CH1-PARA-0129",
+    "action": "display-cleanup",
+    "reason": "Forensic medical audit: correct transposed answer key / repair merged options / populate clinical explanation",
+    "original": {
+      "id": "MBL2-CH1-PARA-0129",
+      "type": "mcq",
+      "lecture": 3,
+      "text": "Which of the following insecticide is non-residual one:",
+      "explanation": "Plasmin is the active proteolytic enzyme responsible for fibrinolysis -- it degrades fibrin strands within a clot, breaking it down into fibrin degradation products, thereby dissolving the clot once it is no longer needed and restoring vessel patency.",
+      "keyConcept": "Plasmin is the enzyme that directly proteolyzes fibrin, mediating clot breakdown (fibrinolysis).",
+      "options": [
+        "Malathion c. DDT",
+        "Pyrethrum d. Baygon"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MBL2-CH1-PARA-0129",
+      "type": "mcq",
+      "lecture": 3,
+      "text": "Which of the following insecticide is non-residual one:",
+      "explanation": "The correct answer is Pyrethrum. Pyrethrum is a natural contact botanical insecticide derived from Chrysanthemum flowers. It produces rapid knock-down of flying insects via axonal sodium channel disruption but is rapidly degraded by ultraviolet light and air, making it non-residual. In contrast, organochlorines like DDT and organophosphates/carbamates like Malathion and Baygon persist on surfaces for weeks to months as residual insecticides.",
+      "keyConcept": "Pyrethrum is a non-residual, rapid knock-down natural botanical insecticide degraded quickly by sunlight.",
+      "options": [
+        "Malathion",
+        "Pyrethrum",
+        "DDT",
+        "Baygon"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    }
+  },
+  {
+    "module": "MBL-2",
+    "id": "MBL2-CH1-PARA-0147",
+    "action": "display-cleanup",
+    "reason": "Forensic medical audit: correct transposed answer key / repair merged options / populate clinical explanation",
+    "original": {
+      "id": "MBL2-CH1-PARA-0147",
+      "type": "mcq",
+      "lecture": 4,
+      "text": "Early stages of sleeping sickness is best treated by:",
+      "explanation": "B-lymphocytes mediate humoral immunity by differentiating into antibody-secreting plasma cells upon antigen recognition, distinguishing their function from T-lymphocytes (cell-mediated immunity) and the granulocytic/phagocytic white cell lines.",
+      "keyConcept": "B-lymphocytes are the WBC class responsible for humoral (antibody-based) immunity.",
+      "options": [
+        "Pentamidine. c. Primaquine.",
+        "Metronidazole. d. Chloroquine."
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MBL2-CH1-PARA-0147",
+      "type": "mcq",
+      "lecture": 4,
+      "text": "Early stages of sleeping sickness is best treated by:",
+      "explanation": "The correct answer is Pentamidine. For the hemolymphatic (first/early) stage of West African sleeping sickness (Trypanosoma brucei gambiense), Pentamidine is the drug of choice because it effectively clears bloodstream and lymphatic parasites without requiring CNS penetration. For East African (T. b. rhodesiense) early stage, Suramin is preferred. Late/meningoencephalitic stages with CNS invasion require Melarsoprol or NECT (Nifurtimox-Eflornithine combination therapy).",
+      "keyConcept": "Early hemolymphatic stage of T. b. gambiense sleeping sickness is treated with Pentamidine; late CNS stages require Melarsoprol or NECT.",
+      "options": [
+        "Pentamidine",
+        "Metronidazole",
+        "Primaquine",
+        "Chloroquine"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null
+    }
+  },
+  {
+    "module": "MBL-2",
+    "id": "MBL2-CH2-PATH-0067",
+    "action": "display-cleanup",
+    "reason": "Forensic medical audit: correct transposed answer key / repair merged options / populate clinical explanation",
+    "original": {
+      "id": "MBL2-CH2-PATH-0067",
+      "type": "mcq",
+      "lecture": 3,
+      "text": "The following marker is diagnostic for T cell lymphoma:",
+      "explanation": "As CD3 is a-T-cell marker. While other markers are not correct. This identifies the correct mechanism or drug relationship and distinguishes it from the listed alternatives.",
+      "keyConcept": "Match the morphology, immunophenotype, and clinical pattern before selecting the diagnosis or mechanism; for “The following marker is diagnostic for T cell lymphoma”, the defining choice is “CD3 d. CD200”.",
+      "options": [
+        "CD10 c. CD30",
+        "CD3 d. CD200"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MBL2-CH2-PATH-0067",
+      "type": "mcq",
+      "lecture": 3,
+      "text": "The following marker is diagnostic for T cell lymphoma:",
+      "explanation": "The correct answer is CD3. CD3 is the invariant pan-T-cell lineage marker complex that couples with the T-cell receptor (TCR) for intracellular signal transduction. Detection of CD3 by immunohistochemistry or flow cytometry definitively establishes T-cell lineage in lymphoid neoplasms. In contrast, CD10 is a germinal-center B-cell marker (CALLA), and CD200 is used in B-cell chronic lymphocytic leukemia.",
+      "keyConcept": "CD3 is the definitive pan-T-cell lineage marker found on all normal and most neoplastic T lymphocytes.",
+      "options": [
+        "CD10",
+        "CD3",
+        "CD30",
+        "CD200"
+      ],
+      "correctIndex": 1,
+      "modelAnswer": null
+    }
+  },
+  {
+    "module": "MINF-1",
+    "id": "MINF1-CH1-MICR-0366",
+    "action": "display-cleanup",
+    "reason": "Forensic medical correction: TSST-1 is produced by Staphylococcus aureus; repair OCR typo TSST-D to TSST-1 and unclosed parenthesis",
+    "original": {
+      "id": "MINF1-CH1-MICR-0366",
+      "type": "mcq",
+      "lecture": 7,
+      "text": "Toxic shock syndrome toxin (TSST-D is primarily produced by:",
+      "explanation": "The correct answer is Strept. viridans. The item depends on identifying medically important bacteria by Gram reaction, shape, culture requirement, biochemical test, virulence factor, disease syndrome, or specimen. The distractors overlap clinically but fail the specific laboratory or pathogenic clue.",
+      "keyConcept": "Medically important bacteria high-yield: Toxic shock syndrome toxin (TSST-D is primarily produced by: → Strept. viridans.",
+      "options": [
+        "Staphylococcus aureus",
+        "Streptococcus pyogenes",
+        "Streptococcus pneumonice",
+        "Strept. viridans"
+      ],
+      "correctIndex": 3,
+      "modelAnswer": null
+    },
+    "updated": {
+      "id": "MINF1-CH1-MICR-0366",
+      "type": "mcq",
+      "lecture": 7,
+      "text": "Toxic shock syndrome toxin-1 (TSST-1) is primarily produced by:",
+      "explanation": "The correct answer is Staphylococcus aureus. Toxic shock syndrome toxin-1 (TSST-1) is a pyrogenic superantigen produced by Staphylococcus aureus strains that cross-links MHC class II molecules on antigen-presenting cells to the variable beta domain (Vbeta) of T-cell receptors without antigen processing, precipitating massive cytokine release (IL-1, IL-2, TNF-alpha, IFN-gamma). While Streptococcus pyogenes produces streptococcal pyrogenic exotoxins (SpeA, SpeC) causing streptococcal toxic shock syndrome, TSST-1 specifically designates the staphylococcal superantigen.",
+      "keyConcept": "Toxic shock syndrome toxin-1 (TSST-1) is a superantigen produced by Staphylococcus aureus.",
+      "options": [
+        "Staphylococcus aureus",
+        "Streptococcus pyogenes",
+        "Streptococcus pneumoniae",
+        "Streptococcus viridans"
+      ],
+      "correctIndex": 0,
+      "modelAnswer": null
+    }
   }
 ]

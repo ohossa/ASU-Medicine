@@ -188,9 +188,15 @@ function QuizFlowWrapper({
   const [selectedPracticeBranch,setSelectedPracticeBranch]=useState<string|null>(null);
   useLayoutEffect(()=>setSelectedPracticeBranch(null),[selectedChapter?.id,code]);
   const [gitCollection, setGitCollection] = useState<QuestionCollection>('practice');
+  const [gitExamPeriod, setGitExamPeriod] = useState<'ca-1' | 'ca-2' | null>(null);
   useEffect(() => { setGitCollection('practice'); }, [code, mode]);
   useEffect(() => {
-    if (selectedModule?.code === 'MGL-3' && screen !== 'chapters' && selectedChapter?.bankSection) setGitCollection(selectedChapter.bankSection);
+    if (selectedModule?.code === 'MGL-3' && screen !== 'chapters' && selectedChapter?.bankSection) {
+      setGitCollection(selectedChapter.bankSection);
+      if (selectedChapter.examPeriod) {
+        setGitExamPeriod(selectedChapter.examPeriod);
+      }
+    }
   }, [selectedModule?.code, selectedChapter, screen]);
 
   useEffect(() => {
@@ -217,12 +223,13 @@ function QuizFlowWrapper({
     { label: 'Year 3', onClick: () => navigate('/year-3') },
     { label: 'Semester 1', onClick: () => navigate('/year-3?semester=1') },
     { label: 'GIT & Liver', onClick: () => navigate('/year-3/mgl-3') },
-    { label: studyModeNameMap[studyMode], onClick: () => { setGitCollection('practice'); setScreen('chapters'); } },
+    { label: studyModeNameMap[studyMode], onClick: () => { setGitCollection('practice'); setGitExamPeriod(null); setScreen('chapters'); } },
   ];
   const gitCollectionCrumbs = [
     ...gitBaseCrumbs,
-    { label: 'Question bank', onClick: () => { setGitCollection('practice'); setScreen('chapters'); } },
-    ...(gitCollection === 'past-exams' ? [{ label: 'Past exams & recalls', onClick: () => { setGitCollection('past-exams'); setScreen('chapters'); } }] : []),
+    { label: 'Question bank', onClick: () => { setGitCollection('practice'); setGitExamPeriod(null); setScreen('chapters'); } },
+    ...(gitCollection === 'past-exams' ? [{ label: 'Past exams & recalls', onClick: () => { setGitCollection('past-exams'); setGitExamPeriod(null); setScreen('chapters'); } }] : []),
+    ...(gitCollection === 'past-exams' && gitExamPeriod ? [{ label: gitExamPeriod === 'ca-2' ? 'Continuous 2 (CA-2)' : 'Continuous 1 (CA-1)', onClick: () => { setGitCollection('past-exams'); setScreen('chapters'); } }] : []),
   ];
 
   return (
@@ -232,8 +239,13 @@ function QuizFlowWrapper({
           {selectedModule.code === 'MGL-3' ? <GitBankSelect
             chapters={activeChapters}
             collection={gitCollection}
+            examPeriod={gitExamPeriod}
+            onExamPeriodChange={setGitExamPeriod}
             breadcrumbPath={gitBaseCrumbs}
-            onCollectionChange={setGitCollection}
+            onCollectionChange={(col) => {
+              setGitCollection(col);
+              if (col === 'practice') setGitExamPeriod(null);
+            }}
             studyModeName={studyModeNameMap[studyMode]}
             onSelectChapter={handleSelectChapter}
             userButton={customUserButton}
@@ -267,7 +279,7 @@ function QuizFlowWrapper({
             selectedBranch={selectedPracticeBranch}
             onBranchChange={setSelectedPracticeBranch}
             moduleCode={selectedModule.code}
-            breadcrumbPath={selectedModule.code === 'MGL-3' ? [...gitCollectionCrumbs, { label: selectedChapter.subjects[0]?.id ? selectedChapter.title.replace(/^Past exams — /, '') : selectedChapter.title }] : [
+            breadcrumbPath={selectedModule.code === 'MGL-3' ? [...gitCollectionCrumbs, { label: selectedChapter.subjects[0]?.name || selectedChapter.title.replace(/^(?:Past exams|CA-[12])\s*[—–-]\s*/, '') }] : [
               { label: t('portal') || 'Portal', onClick: () => navigate('/') },
               { label: t(`year${selectedYear || 2}`) || `Year ${selectedYear || 2}`, onClick: () => navigate(`/year-${selectedYear || 2}`) },
               { label: selectedModule?.name || '', onClick: () => {
@@ -299,7 +311,7 @@ function QuizFlowWrapper({
             childAnchor={quizPayload.childAnchor}
             breadcrumbPath={selectedModule.code === 'MGL-3' ? [
               ...gitCollectionCrumbs,
-              { label: quizPayload.chapter.title.replace(/^Past exams — /, ''), onClick: () => setScreen('subjects') },
+              { label: quizPayload.chapter.subjects[0]?.name || quizPayload.chapter.title.replace(/^(?:Past exams|CA-[12])\s*[—–-]\s*/, ''), onClick: () => setScreen('subjects') },
               { label: quizPayload.subject?.name ?? 'All topics' },
             ] : undefined}
           />
@@ -342,7 +354,7 @@ function QuizFlowWrapper({
             userButton={customUserButton}
             breadcrumbPath={selectedModule.code === 'MGL-3' ? [
               ...gitCollectionCrumbs,
-              { label: resultPayload.chapter.title.replace(/^Past exams — /, ''), onClick: () => setScreen('subjects') },
+              { label: resultPayload.chapter.subjects[0]?.name || resultPayload.chapter.title.replace(/^(?:Past exams|CA-[12])\s*[—–-]\s*/, ''), onClick: () => setScreen('subjects') },
               { label: resultPayload.subject?.name ?? 'All topics', onClick: () => setScreen('subjects') },
               { label: 'Results' },
             ] : undefined}

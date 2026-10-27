@@ -1,0 +1,28 @@
+{
+  "source_pages": 24,
+  "source_occurrences": 104,
+  "unique_review_groups": 74,
+  "accepted_unique": 47,
+  "excluded_unique": 27,
+  "occurrence_dispositions": {
+    "excluded": 41,
+    "released": 47,
+    "duplicate_merged": 16
+  },
+  "existing_questions": 0,
+  "duplicate_groups_with_multiple_occurrences": 19,
+  "all_duplicate_occurrences": 30,
+  "answer_key_corrections": [
+    {
+      "occurrence_id": "ETH-D03-Q03",
+      "historical_index": 3,
+      "reviewed_source_index": 1,
+      "historical_comparison": "MISMATCH"
+    }
+  ],
+  "chapter_counts": {
+    "2": 25,
+    "1": 8,
+    "3": 14
+  }
+}

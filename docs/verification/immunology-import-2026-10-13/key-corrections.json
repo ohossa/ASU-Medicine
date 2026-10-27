@@ -1,0 +1,311 @@
+[
+  {
+    "occurrence_id": "S11-p0008-q11",
+    "source_id": "S11",
+    "pages": [
+      8
+    ],
+    "source_label": "II Assessment Exam 1 / 11",
+    "source_content_hash": "5d95f9e6dbc83f3fbce980573c3e1278b80ae2e34eb55bb17c32015412f30130",
+    "decision": "accept_derived",
+    "reason": "One best answer established after checking every source option.",
+    "historical_answer": "c",
+    "reviewed_answer": "D",
+    "release_id": "MIM1-CH5-MICR-0074",
+    "evidence": [
+      {
+        "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK27142/",
+        "title": "B-cell activation by armed helper T cells",
+        "locator": "9-1–9-11",
+        "claim": "CD40-CD40L supports APC licensing, B-cell memory development and class switching, so the combined option is best.",
+        "opened": true
+      },
+      {
+        "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK27118/",
+        "title": "The production of armed effector T cells",
+        "locator": "8-1–8-14",
+        "claim": "CD40-CD40L supports APC licensing, B-cell memory development and class switching, so the combined option is best.",
+        "opened": true
+      }
+    ],
+    "review_method": "nonblind single-agent review; source key visible during source reconciliation; independently derived against opened references",
+    "chapter_id": 5,
+    "reviewed_topic": "Humoral Immune Response"
+  },
+  {
+    "occurrence_id": "S11-p0014-q4",
+    "source_id": "S11",
+    "pages": [
+      14
+    ],
+    "source_label": "IV Extra questions / 4",
+    "source_content_hash": "8354f661afd626a015af96c5d5f6e969887228ee9ea472b2f819e74611f7e207",
+    "decision": "accept_recorded",
+    "reason": "One best answer established after checking every source option.",
+    "historical_answer": "e",
+    "reviewed_answer": "D",
+    "release_id": "MIM1-CH14-MICR-0001",
+    "evidence": [
+      {
+        "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK27118/",
+        "title": "The production of armed effector T cells",
+        "locator": "8-1–8-14",
+        "claim": "IFN-γ is the principal macrophage activating cytokine for intracellular killing; IL-1/6 drive inflammation and IL-4 favors type 2 responses.",
+        "opened": true
+      }
+    ],
+    "review_method": "nonblind single-agent review; source key visible during source reconciliation; independently derived against opened references",
+    "chapter_id": 4,
+    "reviewed_topic": "Cell Mediated Immune Response"
+  },
+  {
+    "occurrence_id": "S03-p0140-q159",
+    "source_id": "S03",
+    "pages": [
+      140
+    ],
+    "source_label": "159",
+    "source_content_hash": "25df1083645f89885da5efd47c0c1dfe2f85395e229165763a1bba5900dd3ab6",
+    "decision": "accept_repaired",
+    "reason": "Printed key corrected after evidence review: b -> a",
+    "historical_answer": "b",
+    "reviewed_answer": "A",
+    "release_id": "MIM1-CH5-MICR-0097",
+    "evidence": [
+      {
+        "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK7795/",
+        "title": "Immunology Overview",
+        "locator": "Leukocytes; Immunoglobulins; T-Cell Activation",
+        "claim": "Secondary humoral responses typically produce more high-affinity class-switched antibody, often IgG, with a shorter lag than primary responses.",
+        "opened": true,
+        "accessed": "2026-10-13"
+      },
+      {
+        "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK27142/",
+        "title": "B-cell activation by armed helper T cells",
+        "locator": "§9-1–9-11",
+        "claim": "Secondary humoral responses typically produce more high-affinity class-switched antibody, often IgG, with a shorter lag than primary responses.",
+        "opened": true,
+        "accessed": "2026-10-13"
+      }
+    ],
+    "review_method": "nonblind, evidence-grounded single-reviewer option-by-option assessment; historical source visible during extraction",
+    "chapter_id": 5,
+    "reviewed_topic": "Secondary antibody response"
+  },
+  {
+    "occurrence_id": "S03-p0146-q195",
+    "source_id": "S03",
+    "pages": [
+      146
+    ],
+    "source_label": "195",
+    "source_content_hash": "e9f98b6f14516a55df82dd21f496d3a2d409b9624756e80498e5dd10e07f405e",
+    "decision": "accept_derived",
+    "reason": "Unique best answer established after evaluating all offered alternatives.",
+    "historical_answer": "b",
+    "reviewed_answer": "A",
+    "release_id": "MIM1-CH5-MICR-0010",
+    "evidence": [
+      {
+        "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK27171/",
+        "title": "The destruction of antibody-coated pathogens via Fc receptors",
+        "locator": "9-20–9-22",
+        "claim": "Tagging a target for effector uptake/removal is opsonization; ADCC specifically kills antibody-coated cells and is a narrower outcome.",
+        "opened": true
+      },
+      {
+        "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK27100/",
+        "title": "The complement system and innate immunity",
+        "locator": "2-5–2-14",
+        "claim": "Tagging a target for effector uptake/removal is opsonization; ADCC specifically kills antibody-coated cells and is a narrower outcome.",
+        "opened": true
+      }
+    ],
+    "review_method": "nonblind single-agent question-by-question derivation; source key visible; every page and continuation checked",
+    "chapter_id": 5,
+    "reviewed_topic": "Humoral Immune Response"
+  },
+  {
+    "occurrence_id": "S03-p0149-q216",
+    "source_id": "S03",
+    "pages": [
+      149
+    ],
+    "source_label": "216",
+    "source_content_hash": "8640d0e87dab6da13f7c42a00e446869b37e29f589a8e90bcffbc0f2e7c0e334",
+    "decision": "accept_derived",
+    "reason": "Unique best answer established after evaluating all offered alternatives.",
+    "historical_answer": "a",
+    "reviewed_answer": "C",
+    "release_id": "MIM1-CH6-MICR-0016",
+    "evidence": [
+      {
+        "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK27100/",
+        "title": "The complement system and innate immunity",
+        "locator": "2-5–2-14",
+        "claim": "C5a is the most potent listed neutrophil chemoattractant; C3a/C4a are weaker and C3b/C5b have other principal functions.",
+        "opened": true
+      }
+    ],
+    "review_method": "nonblind single-agent question-by-question derivation; source key visible; every page and continuation checked",
+    "chapter_id": 6,
+    "reviewed_topic": "The Complement"
+  },
+  {
+    "occurrence_id": "S03-p0166-q314",
+    "source_id": "S03",
+    "pages": [
+      166
+    ],
+    "source_label": "314",
+    "source_content_hash": "0fcdc8628b5705faa318ce69e66e38a375d619130f6a5b1ad109a447a6a2b68b",
+    "decision": "accept_derived",
+    "reason": "One best answer after assessment of all listed alternatives.",
+    "historical_answer": "b",
+    "reviewed_answer": "C",
+    "release_id": "MIM1-CH9-MICR-0009",
+    "evidence": [
+      {
+        "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK27112/",
+        "title": "Janeway: Effector mechanisms in allergic reactions",
+        "locator": "§§12-5–12-14",
+        "claim": "Initial sensitization produces IgE; reexposure activates mediator release.",
+        "opened": true
+      }
+    ],
+    "review_method": "nonblind source-key-visible review; no independent adjudicator",
+    "chapter_id": 9,
+    "reviewed_topic": "Immediate hypersensitivity sequence"
+  },
+  {
+    "occurrence_id": "S03-p0171-q347",
+    "source_id": "S03",
+    "pages": [
+      171
+    ],
+    "source_label": "347",
+    "source_content_hash": "db14bd5ec729e0be2edee9a8bc48dca767f553192d34a4d4bd0ae8229ff78771",
+    "decision": "accept_derived",
+    "reason": "One best answer after assessment of all listed alternatives.",
+    "historical_answer": "c",
+    "reviewed_answer": "B",
+    "release_id": "MIM1-CH9-MICR-0020",
+    "evidence": [
+      {
+        "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK27112/",
+        "title": "Janeway: Effector mechanisms in allergic reactions",
+        "locator": "§§12-5–12-14",
+        "claim": "Late allergic inflammation recruits Th2 cells, eosinophils and basophils.",
+        "opened": true
+      }
+    ],
+    "review_method": "nonblind source-key-visible review; no independent adjudicator",
+    "chapter_id": 9,
+    "reviewed_topic": "Allergic late phase cells"
+  },
+  {
+    "occurrence_id": "S03-p0175-q368",
+    "source_id": "S03",
+    "pages": [
+      175
+    ],
+    "source_label": "368",
+    "source_content_hash": "f1362bd0988dae110c0c136abd9a149af3f806244303e07fa805092c46d3637b",
+    "decision": "accept_derived",
+    "reason": "One best answer after assessment of all listed alternatives.",
+    "historical_answer": "b",
+    "reviewed_answer": "C",
+    "release_id": "MIM1-CH10-MICR-0011",
+    "evidence": [
+      {
+        "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK27155/",
+        "title": "Janeway: Autoimmune responses are directed against self antigens",
+        "locator": "§§13-1–13-15",
+        "claim": "Goodpasture autoantibodies recognize basement-membrane antigens shared by kidney and lung.",
+        "opened": true
+      }
+    ],
+    "review_method": "nonblind source-key-visible review; no independent adjudicator",
+    "chapter_id": 10,
+    "reviewed_topic": "Goodpasture shared basement membrane antigen"
+  },
+  {
+    "occurrence_id": "S03-p0178-q390",
+    "source_id": "S03",
+    "pages": [
+      178
+    ],
+    "source_label": "390",
+    "source_content_hash": "a8045f35c6c24c921fa416e13257bcad98569034e2b22e1aaf6eb915acf24dbd",
+    "decision": "accept_derived",
+    "reason": "One best answer after assessment of all listed alternatives.",
+    "historical_answer": "c",
+    "reviewed_answer": "A",
+    "release_id": "MIM1-CH11-MICR-0015",
+    "evidence": [
+      {
+        "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK27163/",
+        "title": "Janeway: Responses to alloantigens and transplant rejection",
+        "locator": "§§13-16–13-23",
+        "claim": "HLA-identical brothers remain allogeneic unless genetically identical twins; matching HLA alone does not make an isograft.",
+        "opened": true
+      }
+    ],
+    "review_method": "nonblind source-key-visible review; no independent adjudicator",
+    "chapter_id": 11,
+    "reviewed_topic": "HLA identity versus genetic identity"
+  },
+  {
+    "occurrence_id": "S03-p0183-q418",
+    "source_id": "S03",
+    "pages": [
+      183
+    ],
+    "source_label": "418",
+    "source_content_hash": "b7e3ea50c4ed56ad9dc7f1a36bf67b77351231efb3b055db75a8f64e7bb7cbbc",
+    "decision": "accept_derived",
+    "reason": "One best answer after assessment of all listed alternatives.",
+    "historical_answer": "d",
+    "reviewed_answer": "B",
+    "release_id": "MIM1-CH12-MICR-0015",
+    "evidence": [
+      {
+        "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK27104/",
+        "title": "Janeway: Using the immune response to attack tumors",
+        "locator": "§§14-11–14-15; opened via curl, HTML cache saved",
+        "claim": "Antigen-pulsed marrow-derived dendritic cells prime tumor-specific CTLs.",
+        "opened": true
+      }
+    ],
+    "review_method": "nonblind source-key-visible review; no independent adjudicator",
+    "chapter_id": 12,
+    "reviewed_topic": "Dendritic tumor vaccination and CTLs"
+  },
+  {
+    "occurrence_id": "S03-p0195-q481",
+    "source_id": "S03",
+    "pages": [
+      195
+    ],
+    "source_label": "481",
+    "source_content_hash": "6bcf66a135b7878aba93d6aa28cfb2a48b27afaded47b5ac7ff6876d9669b83c",
+    "decision": "accept_derived",
+    "reason": "One best answer after assessment of all listed alternatives.",
+    "historical_answer": "c",
+    "reviewed_answer": "D",
+    "release_id": "MIM1-CH2-MICR-0030",
+    "evidence": [
+      {
+        "url": "https://www.ncbi.nlm.nih.gov/sites/books/NBK27122/",
+        "title": "Janeway: Induced innate responses to infection",
+        "locator": "§§2-19–2-27",
+        "claim": "Innate immune cells sense bacterial patterns through pattern-recognition receptors.",
+        "opened": true
+      }
+    ],
+    "review_method": "nonblind source-key-visible review; no independent adjudicator",
+    "chapter_id": 2,
+    "reviewed_topic": "Innate pattern recognition receptors"
+  }
+]

@@ -1,0 +1,3198 @@
+[
+  {
+    "occurrence_id": "ETH-D01-Q01",
+    "document_id": "ETH-D01",
+    "original_number": 1,
+    "pages": [
+      1
+    ],
+    "duplicate_group": "rape",
+    "raw_text": "Consent is required for medical examination of",
+    "raw_options": [
+      "Food-handlers.",
+      "Victim of rape.",
+      "Immigrants at ports.",
+      "Person in contest of military service."
+    ],
+    "historical_index": 1,
+    "answer_source": "yellow highlight",
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D01-p001.txt"
+    ],
+    "original_section": "BG questions",
+    "printed_number": 1,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "5d98caa940baa7015da91f5bf7c9876752eb9ddeff409a2b733b9b3a47492ca0"
+  },
+  {
+    "occurrence_id": "ETH-D01-Q02",
+    "document_id": "ETH-D01",
+    "original_number": 2,
+    "pages": [
+      1
+    ],
+    "duplicate_group": "head",
+    "raw_text": "A patient with head injury has no relatives and require urgent cranial decompression. Doctor should:",
+    "raw_options": [
+      "Take police consent",
+      "Operate without formal consent",
+      "Wait for relatives to take consent",
+      "Ask for consent from the court"
+    ],
+    "historical_index": 1,
+    "answer_source": "yellow highlight",
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D01-p001.txt"
+    ],
+    "original_section": "BG questions",
+    "printed_number": 2,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "5d98caa940baa7015da91f5bf7c9876752eb9ddeff409a2b733b9b3a47492ca0"
+  },
+  {
+    "occurrence_id": "ETH-D01-Q03",
+    "document_id": "ETH-D01",
+    "original_number": 3,
+    "pages": [
+      1
+    ],
+    "duplicate_group": "conf-except",
+    "raw_text": "All of these are true about Confidentiality EXCEPT:",
+    "raw_options": [
+      "Based on mutual trust between doctor and patient.",
+      "It is maintained to medical information only",
+      "Applied to conversations between doctors and patients",
+      "Sometimes keeping of it would cause harm"
+    ],
+    "historical_index": 1,
+    "answer_source": "yellow highlight",
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D01-p001.txt"
+    ],
+    "original_section": "BG questions",
+    "printed_number": 3,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "5d98caa940baa7015da91f5bf7c9876752eb9ddeff409a2b733b9b3a47492ca0"
+  },
+  {
+    "occurrence_id": "ETH-D01-Q04",
+    "document_id": "ETH-D01",
+    "original_number": 4,
+    "pages": [
+      1
+    ],
+    "duplicate_group": "impaired",
+    "raw_text": "Dr. X is a senior physician in an academic hospital, he suffers drug addiction which starts to affect his performance at work, his treating physician advised him to stop working until his treatment is completed but he refused. The treating physician should:",
+    "raw_options": [
+      "Respect the confidentiality of his colleague",
+      "Report to heath care institution or regulatory authorities",
+      "Terminate this doctor patient relation to avoid impressing situations",
+      "Warn the patients who is dealing with this physician"
+    ],
+    "historical_index": 1,
+    "answer_source": "yellow highlight",
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D01-p001.txt"
+    ],
+    "original_section": "BG questions",
+    "printed_number": 4,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "5d98caa940baa7015da91f5bf7c9876752eb9ddeff409a2b733b9b3a47492ca0"
+  },
+  {
+    "occurrence_id": "ETH-D01-Q05",
+    "document_id": "ETH-D01",
+    "original_number": 5,
+    "pages": [
+      1
+    ],
+    "duplicate_group": "acp",
+    "raw_text": "Advance care planning include:",
+    "raw_options": [
+      "Oral statement",
+      "Surrogate proxy decision maker",
+      "Instructive directive",
+      "All of the above"
+    ],
+    "historical_index": 3,
+    "answer_source": "yellow highlight",
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D01-p001.txt"
+    ],
+    "original_section": "BG questions",
+    "printed_number": 5,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "5d98caa940baa7015da91f5bf7c9876752eb9ddeff409a2b733b9b3a47492ca0"
+  },
+  {
+    "occurrence_id": "ETH-D01-Q06",
+    "document_id": "ETH-D01",
+    "original_number": 6,
+    "pages": [
+      1,
+      2
+    ],
+    "duplicate_group": "malfalse",
+    "raw_text": "Which of the following statements is FALSE about a case of medical malpractice?",
+    "raw_options": [
+      "There must be an evidence of the fault",
+      "There must be a direct causative relationship between the injury and breach of duty",
+      "Compensation must be payable for injury",
+      "The injury caused may not be preventable."
+    ],
+    "historical_index": 3,
+    "answer_source": "yellow highlight",
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D01-p001.txt",
+      "OCR/ETH-D01-p002.txt"
+    ],
+    "original_section": "BG questions",
+    "printed_number": 6,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "5d98caa940baa7015da91f5bf7c9876752eb9ddeff409a2b733b9b3a47492ca0"
+  },
+  {
+    "occurrence_id": "ETH-D01-Q07",
+    "document_id": "ETH-D01",
+    "original_number": 7,
+    "pages": [
+      2
+    ],
+    "duplicate_group": "research-consent",
+    "raw_text": "As regard consent of the medical research participants all are true expect:",
+    "raw_options": [
+      "It must be voluntary given.",
+      "It must be a written consent.",
+      "It cannot be withdrawn once the research began.",
+      "It must be at a level understood by all the participants"
+    ],
+    "historical_index": 2,
+    "answer_source": "yellow highlight",
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D01-p002.txt"
+    ],
+    "original_section": "BG questions",
+    "printed_number": 7,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "5d98caa940baa7015da91f5bf7c9876752eb9ddeff409a2b733b9b3a47492ca0"
+  },
+  {
+    "occurrence_id": "ETH-D01-Q08",
+    "document_id": "ETH-D01",
+    "original_number": 8,
+    "pages": [
+      2
+    ],
+    "duplicate_group": "death-a",
+    "raw_text": "According to Egyptian legislations death is:",
+    "raw_options": [
+      "Cessation of the brain stem activity.",
+      "Cessation of all brain activity.",
+      "Cessation of cardiac activity.",
+      "Cessation of vital functions (Cardiac, respiration and CNS activity)."
+    ],
+    "historical_index": 3,
+    "answer_source": "yellow highlight",
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D01-p002.txt"
+    ],
+    "original_section": "BG questions",
+    "printed_number": 8,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "5d98caa940baa7015da91f5bf7c9876752eb9ddeff409a2b733b9b3a47492ca0"
+  },
+  {
+    "occurrence_id": "ETH-D01-Q09",
+    "document_id": "ETH-D01",
+    "original_number": 9,
+    "pages": [
+      2
+    ],
+    "duplicate_group": "screen",
+    "raw_text": "Which of the following is true of genetic screening?",
+    "raw_options": [
+      "It involves testing entire groups at risk for a specific genetic disease.",
+      "It refers to the act of acquiring the genetic material of another human being without his or her permission.",
+      "It is an expensive process that is considered to be medically unnecessary.",
+      "It strives to improve the genetic constitution of an individual by removing bad genes."
+    ],
+    "historical_index": 0,
+    "answer_source": "yellow highlight",
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D01-p002.txt"
+    ],
+    "original_section": "BG questions",
+    "printed_number": 9,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "5d98caa940baa7015da91f5bf7c9876752eb9ddeff409a2b733b9b3a47492ca0"
+  },
+  {
+    "occurrence_id": "ETH-D02-Q01",
+    "document_id": "ETH-D02",
+    "original_number": 1,
+    "pages": [
+      2
+    ],
+    "duplicate_group": "bio",
+    "raw_text": "Regarding bioethics:",
+    "raw_options": [
+      "It differs significantly from one country to another.",
+      "It varies according to person, religion and society.",
+      "It refers to moral principles that govern professional interactions.",
+      "It is enforced by penalties for anyone who violates it."
+    ],
+    "historical_index": 2,
+    "answer_source": "answer grid on physical page 5",
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D02-p002.txt"
+    ],
+    "original_section": "BG questions",
+    "printed_number": 1,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "92ffd5b5432dd7f86cb1f933fc446e14e6f0f9c98b02b1dd89883914c3a11120"
+  },
+  {
+    "occurrence_id": "ETH-D02-Q02",
+    "document_id": "ETH-D02",
+    "original_number": 2,
+    "pages": [
+      2
+    ],
+    "duplicate_group": "side-a",
+    "raw_text": "Withdrawal of a medication after occurrence of intolerable side effects. Is a mandatory action in respect for the principle of:",
+    "raw_options": [
+      "Autonomy",
+      "Beneficence",
+      "Nonmaleficence",
+      "Justice"
+    ],
+    "historical_index": 2,
+    "answer_source": "answer grid on physical page 5",
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D02-p002.txt"
+    ],
+    "original_section": "BG questions",
+    "printed_number": 2,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "92ffd5b5432dd7f86cb1f933fc446e14e6f0f9c98b02b1dd89883914c3a11120"
+  },
+  {
+    "occurrence_id": "ETH-D02-Q03",
+    "document_id": "ETH-D02",
+    "original_number": 3,
+    "pages": [
+      2
+    ],
+    "duplicate_group": "head",
+    "raw_text": "A patient with head injury was brought to the ER and indicated urgent cranial decompression. There was no relative with him. The doctor should:",
+    "raw_options": [
+      "Wait for relatives to take consent",
+      "Take police consent",
+      "Ask for consent from the court",
+      "Operate without formal consent"
+    ],
+    "historical_index": 3,
+    "answer_source": "answer grid on physical page 5",
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D02-p002.txt"
+    ],
+    "original_section": "BG questions",
+    "printed_number": 3,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "92ffd5b5432dd7f86cb1f933fc446e14e6f0f9c98b02b1dd89883914c3a11120"
+  },
+  {
+    "occurrence_id": "ETH-D02-Q04",
+    "document_id": "ETH-D02",
+    "original_number": 4,
+    "pages": [
+      2
+    ],
+    "duplicate_group": "meningitis",
+    "raw_text": "Breach of confidentiality is justified in the following condition:",
+    "raw_options": [
+      "The doctor wants to disclose information about a patient after his death.",
+      "The doctor wants to disclose personal medical information of a famous actor to the media.",
+      "The doctor wants to report a case of meningitis to health authority.",
+      "The doctor wants to inform the patient's family that he has cancer despite of his wish to keep confidential."
+    ],
+    "historical_index": 2,
+    "answer_source": "answer grid on physical page 5",
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D02-p002.txt"
+    ],
+    "original_section": "BG questions",
+    "printed_number": 4,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "92ffd5b5432dd7f86cb1f933fc446e14e6f0f9c98b02b1dd89883914c3a11120"
+  },
+  {
+    "occurrence_id": "ETH-D02-Q05",
+    "document_id": "ETH-D02",
+    "original_number": 5,
+    "pages": [
+      2
+    ],
+    "duplicate_group": "students-exam",
+    "raw_text": "Consent is required before medical examination of:",
+    "raw_options": [
+      "Food-handlers.",
+      "Patient by students.",
+      "Immigrants at ports.",
+      "Person in contest of military service."
+    ],
+    "historical_index": 1,
+    "answer_source": "answer grid on physical page 5",
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D02-p002.txt"
+    ],
+    "original_section": "BG questions",
+    "printed_number": 5,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "92ffd5b5432dd7f86cb1f933fc446e14e6f0f9c98b02b1dd89883914c3a11120"
+  },
+  {
+    "occurrence_id": "ETH-D02-Q06",
+    "document_id": "ETH-D02",
+    "original_number": 6,
+    "pages": [
+      3
+    ],
+    "duplicate_group": "photo",
+    "raw_text": "During a clinical session, you see a patient with painful skin lesion. You took a picture of the lesion with your smart phone after obtaining patient's consent. Your colleague later asks you forward the image. What should you do?",
+    "raw_options": [
+      "Send the image to your colleague and asking him not to forward it to anyone.",
+      "Send the image to him with all relevant details about the case.",
+      "Explain that you cannot do this without the patient's consent.",
+      "Send the image to the student's page on the Facebook to be available for everyone."
+    ],
+    "historical_index": 2,
+    "answer_source": "answer grid on physical page 5",
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D02-p003.txt"
+    ],
+    "original_section": "BG questions",
+    "printed_number": 6,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "92ffd5b5432dd7f86cb1f933fc446e14e6f0f9c98b02b1dd89883914c3a11120"
+  },
+  {
+    "occurrence_id": "ETH-D02-Q07",
+    "document_id": "ETH-D02",
+    "original_number": 7,
+    "pages": [
+      3
+    ],
+    "duplicate_group": "redacted-7",
+    "raw_text": "[Question covered by a black rectangle in the source PDF]",
+    "raw_options": [],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D02-p003.txt"
+    ],
+    "original_section": "BG questions",
+    "printed_number": 7,
+    "raw_labels": [],
+    "source_hash": "92ffd5b5432dd7f86cb1f933fc446e14e6f0f9c98b02b1dd89883914c3a11120"
+  },
+  {
+    "occurrence_id": "ETH-D02-Q08",
+    "document_id": "ETH-D02",
+    "original_number": 8,
+    "pages": [
+      3
+    ],
+    "duplicate_group": "impaired-hospital",
+    "raw_text": "Dr. X is a surgeon in an academic hospital, he suffers drug addiction which starts to affect his performance at work. His treating physician advised him to stop working until his treatment is completed but he refused. The treating physician should:",
+    "raw_options": [
+      "Respect the confidentiality of his colleague.",
+      "Report to the hospital's director.",
+      "Terminate this doctor patient relationship to avoid impressing situations.",
+      "Warn the patients who are dealing with this physician."
+    ],
+    "historical_index": 1,
+    "answer_source": "answer grid on physical page 5",
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D02-p003.txt"
+    ],
+    "original_section": "BG questions",
+    "printed_number": 8,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "92ffd5b5432dd7f86cb1f933fc446e14e6f0f9c98b02b1dd89883914c3a11120"
+  },
+  {
+    "occurrence_id": "ETH-D02-Q09",
+    "document_id": "ETH-D02",
+    "original_number": 9,
+    "pages": [
+      3
+    ],
+    "duplicate_group": "polio",
+    "raw_text": "A mother refused polio vaccinations for her 2-month old son, what should the physician do?",
+    "raw_options": [
+      "He should respect her autonomy.",
+      "He should do all efforts to convince mother to consent for vaccination.",
+      "He shouldn't consider her decision as safety of the community should outweigh personal autonomy.",
+      "He should search for a consent from her husband to give vaccination to the child."
+    ],
+    "historical_index": 2,
+    "answer_source": "answer grid on physical page 5",
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D02-p003.txt"
+    ],
+    "original_section": "BG questions",
+    "printed_number": 9,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "92ffd5b5432dd7f86cb1f933fc446e14e6f0f9c98b02b1dd89883914c3a11120"
+  },
+  {
+    "occurrence_id": "ETH-D02-Q10",
+    "document_id": "ETH-D02",
+    "original_number": 10,
+    "pages": [
+      3
+    ],
+    "duplicate_group": "redacted-10",
+    "raw_text": "[Question covered by a black rectangle in the source PDF]",
+    "raw_options": [],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D02-p003.txt"
+    ],
+    "original_section": "BG questions",
+    "printed_number": 10,
+    "raw_labels": [],
+    "source_hash": "92ffd5b5432dd7f86cb1f933fc446e14e6f0f9c98b02b1dd89883914c3a11120"
+  },
+  {
+    "occurrence_id": "ETH-D02-Q11",
+    "document_id": "ETH-D02",
+    "original_number": 11,
+    "pages": [
+      4
+    ],
+    "duplicate_group": "pharmbad",
+    "raw_text": "Which of the following conducts is ethically not acceptable?",
+    "raw_options": [
+      "To meet with representatives from pharmaceutical companies who are promoting their latest drugs.",
+      "To attend medical meetings where drug companies sponsor the speaker.",
+      "To receive free samples of new drug from medical representatives.",
+      "To receives payments from pharmaceutical company to enroll patients in a study sponsored by the company."
+    ],
+    "historical_index": 3,
+    "answer_source": "answer grid on physical page 5",
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D02-p004.txt"
+    ],
+    "original_section": "BG questions",
+    "printed_number": 11,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "92ffd5b5432dd7f86cb1f933fc446e14e6f0f9c98b02b1dd89883914c3a11120"
+  },
+  {
+    "occurrence_id": "ETH-D02-Q12",
+    "document_id": "ETH-D02",
+    "original_number": 12,
+    "pages": [
+      4
+    ],
+    "duplicate_group": "redacted-12",
+    "raw_text": "[Question covered by a black rectangle in the source PDF]",
+    "raw_options": [],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D02-p004.txt"
+    ],
+    "original_section": "BG questions",
+    "printed_number": 12,
+    "raw_labels": [],
+    "source_hash": "92ffd5b5432dd7f86cb1f933fc446e14e6f0f9c98b02b1dd89883914c3a11120"
+  },
+  {
+    "occurrence_id": "ETH-D02-Q13",
+    "document_id": "ETH-D02",
+    "original_number": 13,
+    "pages": [
+      4
+    ],
+    "duplicate_group": "stock",
+    "raw_text": "One day in the teaching hospital, you see one of your fellow colleagues putting medical equipment from the stock room into his bag. When you ask him about it, he said he only wants to practice his skills and not to tell anyone. What would you do?",
+    "raw_options": [
+      "You should not report him to keep your colleague relationship.",
+      "You should not report him to keep the reputation of the hospital.",
+      "Support him keeping with the professional standards of a doctor.",
+      "You should explain for him the risks of this situation."
+    ],
+    "historical_index": 3,
+    "answer_source": "answer grid on physical page 5",
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D02-p004.txt"
+    ],
+    "original_section": "BG questions",
+    "printed_number": 13,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "92ffd5b5432dd7f86cb1f933fc446e14e6f0f9c98b02b1dd89883914c3a11120"
+  },
+  {
+    "occurrence_id": "ETH-D02-Q14",
+    "document_id": "ETH-D02",
+    "original_number": 14,
+    "pages": [
+      4
+    ],
+    "duplicate_group": "conf-except",
+    "raw_text": "All of these are true about confidentiality except:",
+    "raw_options": [
+      "Applied to conversations between doctors and patients",
+      "Sometimes keeping of it would cause harm",
+      "It is maintained to medical information only",
+      "Based on mutual trust between doctor and patient."
+    ],
+    "historical_index": 2,
+    "answer_source": "answer grid on physical page 5",
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D02-p004.txt"
+    ],
+    "original_section": "BG questions",
+    "printed_number": 14,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "92ffd5b5432dd7f86cb1f933fc446e14e6f0f9c98b02b1dd89883914c3a11120"
+  },
+  {
+    "occurrence_id": "ETH-D02-Q15",
+    "document_id": "ETH-D02",
+    "original_number": 15,
+    "pages": [
+      4
+    ],
+    "duplicate_group": "bedrock",
+    "raw_text": "Which of the following considered the bedrock of medical ethics?",
+    "raw_options": [
+      "Beneficence",
+      "Autonomy",
+      "Justice",
+      "Non-Maleficence"
+    ],
+    "historical_index": 3,
+    "answer_source": "answer grid on physical page 5",
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D02-p004.txt"
+    ],
+    "original_section": "BG questions",
+    "printed_number": 15,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "92ffd5b5432dd7f86cb1f933fc446e14e6f0f9c98b02b1dd89883914c3a11120"
+  },
+  {
+    "occurrence_id": "ETH-D02-Q16",
+    "document_id": "ETH-D02",
+    "original_number": 16,
+    "pages": [
+      4
+    ],
+    "duplicate_group": "capacity",
+    "raw_text": "Patient's capacity to give valid consent depends upon all the following except:",
+    "raw_options": [
+      "Free choice of the patient (no coercion).",
+      "Social class of the patient.",
+      "Age of the patient.",
+      "Mental conditions of the patient."
+    ],
+    "historical_index": 1,
+    "answer_source": "answer grid on physical page 5",
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D02-p004.txt"
+    ],
+    "original_section": "BG questions",
+    "printed_number": 16,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "92ffd5b5432dd7f86cb1f933fc446e14e6f0f9c98b02b1dd89883914c3a11120"
+  },
+  {
+    "occurrence_id": "ETH-D02-Q17",
+    "document_id": "ETH-D02",
+    "original_number": 17,
+    "pages": [
+      5
+    ],
+    "duplicate_group": "head",
+    "raw_text": "A patient with head injury has no relatives and require urgent cranial decompression. Doctor should:",
+    "raw_options": [
+      "Operate without formal consent",
+      "Ask for consent from the court",
+      "Take police consent",
+      "Wait for relatives to take consent"
+    ],
+    "historical_index": 0,
+    "answer_source": "answer grid on physical page 5",
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D02-p005.txt"
+    ],
+    "original_section": "BG questions",
+    "printed_number": 17,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "92ffd5b5432dd7f86cb1f933fc446e14e6f0f9c98b02b1dd89883914c3a11120"
+  },
+  {
+    "occurrence_id": "ETH-D02-Q18",
+    "document_id": "ETH-D02",
+    "original_number": 18,
+    "pages": [
+      5
+    ],
+    "duplicate_group": "care",
+    "raw_text": "Which one of the following is to be avoided in the treatment of a patient by the physician?",
+    "raw_options": [
+      "Care for the patient in accordance with an objective standard of excellence.",
+      "Care for the patient to the best of his ability.",
+      "Act with the same degree of care as other physician of his status within scientific knowledge.",
+      "Act with a degree of care proportionate with the ability of the patient to pay."
+    ],
+    "historical_index": 3,
+    "answer_source": "answer grid on physical page 5",
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D02-p005.txt"
+    ],
+    "original_section": "BG questions",
+    "printed_number": 18,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "92ffd5b5432dd7f86cb1f933fc446e14e6f0f9c98b02b1dd89883914c3a11120"
+  },
+  {
+    "occurrence_id": "ETH-D02-Q19",
+    "document_id": "ETH-D02",
+    "original_number": 19,
+    "pages": [
+      5
+    ],
+    "duplicate_group": "conflict",
+    "raw_text": "If the doctor acts as promotor for a pharmaceutical company, this is considered as:",
+    "raw_options": [
+      "Conflict of interest.",
+      "Autonomy.",
+      "Beneficence.",
+      "Non-Maleficence."
+    ],
+    "historical_index": 0,
+    "answer_source": "answer grid on physical page 5",
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D02-p005.txt"
+    ],
+    "original_section": "BG questions",
+    "printed_number": 19,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "92ffd5b5432dd7f86cb1f933fc446e14e6f0f9c98b02b1dd89883914c3a11120"
+  },
+  {
+    "occurrence_id": "ETH-D02-Q20",
+    "document_id": "ETH-D02",
+    "original_number": 20,
+    "pages": [
+      5
+    ],
+    "duplicate_group": "keeping",
+    "raw_text": "Keeping the patient's information is called",
+    "raw_options": [
+      "Beneficence",
+      "Confidentiality",
+      "Maleficence",
+      "autonomy"
+    ],
+    "historical_index": 1,
+    "answer_source": "answer grid on physical page 5",
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D02-p005.txt"
+    ],
+    "original_section": "BG questions",
+    "printed_number": 20,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "92ffd5b5432dd7f86cb1f933fc446e14e6f0f9c98b02b1dd89883914c3a11120"
+  },
+  {
+    "occurrence_id": "ETH-D02-Q21",
+    "document_id": "ETH-D02",
+    "original_number": 21,
+    "pages": [
+      5
+    ],
+    "duplicate_group": "adult",
+    "raw_text": "According to valid consent, the person should be",
+    "raw_options": [
+      "Adult",
+      "Forced",
+      "Competent",
+      "A&C"
+    ],
+    "historical_index": 3,
+    "answer_source": "answer grid on physical page 5",
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D02-p005.txt"
+    ],
+    "original_section": "BG questions",
+    "printed_number": 21,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "92ffd5b5432dd7f86cb1f933fc446e14e6f0f9c98b02b1dd89883914c3a11120"
+  },
+  {
+    "occurrence_id": "ETH-D03-Q01",
+    "document_id": "ETH-D03",
+    "original_number": 1,
+    "pages": [
+      1
+    ],
+    "duplicate_group": "adult",
+    "raw_text": "According to valid consent, the person should be",
+    "raw_options": [
+      "Adult",
+      "Forced",
+      "Competent",
+      "A&C"
+    ],
+    "historical_index": 3,
+    "answer_source": "purple answer marking",
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D03-p001.txt"
+    ],
+    "original_section": "BG questions",
+    "printed_number": 1,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "af3d8fce26e2a29c826d7c9029abdbf018c0fb32db43309aae56f333850b9fa2"
+  },
+  {
+    "occurrence_id": "ETH-D03-Q02",
+    "document_id": "ETH-D03",
+    "original_number": 2,
+    "pages": [
+      1
+    ],
+    "duplicate_group": "keeping",
+    "raw_text": "Keeping the patient's information is called",
+    "raw_options": [
+      "Beneficence",
+      "Confidentiality",
+      "Maleficence",
+      "autonomy"
+    ],
+    "historical_index": 1,
+    "answer_source": "purple answer marking",
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D03-p001.txt"
+    ],
+    "raw_labels": [
+      "A",
+      "E",
+      "B",
+      "C"
+    ],
+    "original_section": "BG questions",
+    "printed_number": 2,
+    "source_hash": "af3d8fce26e2a29c826d7c9029abdbf018c0fb32db43309aae56f333850b9fa2"
+  },
+  {
+    "occurrence_id": "ETH-D03-Q03",
+    "document_id": "ETH-D03",
+    "original_number": 3,
+    "pages": [
+      1
+    ],
+    "duplicate_group": "invalid",
+    "raw_text": "Which of the following consents are invalid, if people:",
+    "raw_options": [
+      "Can't write or read",
+      "Are under threat",
+      "Competent",
+      "A&B"
+    ],
+    "historical_index": 3,
+    "answer_source": "purple answer marking",
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D03-p001.txt"
+    ],
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "F"
+    ],
+    "original_section": "BG questions",
+    "printed_number": 3,
+    "source_hash": "af3d8fce26e2a29c826d7c9029abdbf018c0fb32db43309aae56f333850b9fa2"
+  },
+  {
+    "occurrence_id": "ETH-D03-Q04",
+    "document_id": "ETH-D03",
+    "original_number": 4,
+    "pages": [
+      1
+    ],
+    "duplicate_group": "bedrock",
+    "raw_text": "Which of the following is considered the bedrock of medical ethics:",
+    "raw_options": [
+      "Autonomy",
+      "Beneficence",
+      "Non-Maleficence",
+      "Justice"
+    ],
+    "historical_index": 2,
+    "answer_source": "purple answer marking",
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D03-p001.txt"
+    ],
+    "raw_labels": [
+      "A",
+      "B",
+      "G",
+      "C"
+    ],
+    "original_section": "BG questions",
+    "printed_number": 4,
+    "source_hash": "af3d8fce26e2a29c826d7c9029abdbf018c0fb32db43309aae56f333850b9fa2"
+  },
+  {
+    "occurrence_id": "ETH-D04-Q01",
+    "document_id": "ETH-D04",
+    "original_number": 1,
+    "pages": [
+      1
+    ],
+    "duplicate_group": "bio",
+    "raw_text": "Regarding bioethics:",
+    "raw_options": [
+      "It differs significantly from one country to another.",
+      "It varies according to person, religion and society.",
+      "It refers to moral principles that govern professional interactions.",
+      "It is enforced by penalties for anyone who violates it."
+    ],
+    "historical_index": 2,
+    "answer_source": "red dot annotation",
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D04-p001.txt"
+    ],
+    "original_section": "13 January 2020 end examination",
+    "printed_number": 1,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "a0b537398c1be83e232ba272b3108972cff633ca5f23b5f225c7397fa9317d82"
+  },
+  {
+    "occurrence_id": "ETH-D04-Q02",
+    "document_id": "ETH-D04",
+    "original_number": 2,
+    "pages": [
+      1
+    ],
+    "duplicate_group": "side-a",
+    "raw_text": "Withdrawal of a medication after occurrence of intolerable side effects. Is a mandatory action in respect for the principle of:",
+    "raw_options": [
+      "Autonomy",
+      "Beneficence",
+      "Nonmaleficence",
+      "Justice"
+    ],
+    "historical_index": 2,
+    "answer_source": "red dot annotation",
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D04-p001.txt"
+    ],
+    "original_section": "13 January 2020 end examination",
+    "printed_number": 2,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "a0b537398c1be83e232ba272b3108972cff633ca5f23b5f225c7397fa9317d82"
+  },
+  {
+    "occurrence_id": "ETH-D04-Q03",
+    "document_id": "ETH-D04",
+    "original_number": 3,
+    "pages": [
+      1
+    ],
+    "duplicate_group": "head",
+    "raw_text": "A patient with head injury was brought to the ER and indicated urgent cranial decompression. There was no relative with him. The doctor should:",
+    "raw_options": [
+      "Wait until taking consent from his relatives.",
+      "Take consent from the police",
+      "Ask for consent from the court.",
+      "Operate without formal consent."
+    ],
+    "historical_index": 3,
+    "answer_source": "red dot annotation",
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D04-p001.txt"
+    ],
+    "original_section": "13 January 2020 end examination",
+    "printed_number": 3,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "a0b537398c1be83e232ba272b3108972cff633ca5f23b5f225c7397fa9317d82"
+  },
+  {
+    "occurrence_id": "ETH-D04-Q04",
+    "document_id": "ETH-D04",
+    "original_number": 4,
+    "pages": [
+      1
+    ],
+    "duplicate_group": "meningitis",
+    "raw_text": "Breach of confidentiality is justified in the following condition:",
+    "raw_options": [
+      "The doctor wants to disclose information about a patient after his death.",
+      "The doctor wants to disclose personal medical information of a famous actor to the media.",
+      "The doctor wants to report a case of meningitis to health authority.",
+      "The doctor wants to inform the patient's family that he has cancer despite of his wish to keep confidential."
+    ],
+    "historical_index": 2,
+    "answer_source": "red dot annotation",
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D04-p001.txt"
+    ],
+    "original_section": "13 January 2020 end examination",
+    "printed_number": 4,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "a0b537398c1be83e232ba272b3108972cff633ca5f23b5f225c7397fa9317d82"
+  },
+  {
+    "occurrence_id": "ETH-D04-Q05",
+    "document_id": "ETH-D04",
+    "original_number": 5,
+    "pages": [
+      1
+    ],
+    "duplicate_group": "students-exam",
+    "raw_text": "Consent is required before medical examination of:",
+    "raw_options": [
+      "Food-handlers.",
+      "Patient by students.",
+      "Immigrants at ports.",
+      "Person in contest of military service."
+    ],
+    "historical_index": 1,
+    "answer_source": "red dot annotation",
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D04-p001.txt"
+    ],
+    "original_section": "13 January 2020 end examination",
+    "printed_number": 5,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "a0b537398c1be83e232ba272b3108972cff633ca5f23b5f225c7397fa9317d82"
+  },
+  {
+    "occurrence_id": "ETH-D04-Q06",
+    "document_id": "ETH-D04",
+    "original_number": 6,
+    "pages": [
+      1
+    ],
+    "duplicate_group": "photo",
+    "raw_text": "During a clinical session, you see a patient with painful skin lesion. You took a picture of the lesion with your smart phone after obtaining patient's consent. Your colleague later asks you forward the image. What should you do?",
+    "raw_options": [
+      "Send the image to your colleague and asking him not to forward it to anyone.",
+      "Send the image to him with all relevant details about the case.",
+      "Explain that you cannot do this without the patient's consent.",
+      "Send the image to the student's page on the Facebook to be available for everyone."
+    ],
+    "historical_index": 2,
+    "answer_source": "red dot annotation",
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D04-p001.txt"
+    ],
+    "original_section": "13 January 2020 end examination",
+    "printed_number": 6,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "a0b537398c1be83e232ba272b3108972cff633ca5f23b5f225c7397fa9317d82"
+  },
+  {
+    "occurrence_id": "ETH-D04-Q07",
+    "document_id": "ETH-D04",
+    "original_number": 7,
+    "pages": [
+      1
+    ],
+    "duplicate_group": "terminate",
+    "raw_text": "Physician cannot terminate the relationship with his patients if:",
+    "raw_options": [
+      "The patient refused to pay for the physician's service",
+      "The patient refused to comply to physician's instructions",
+      "The patient needs emergency treatment.",
+      "The physician is moving or stopping practice"
+    ],
+    "historical_index": 2,
+    "answer_source": "red dot annotation",
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D04-p001.txt"
+    ],
+    "original_section": "13 January 2020 end examination",
+    "printed_number": 7,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "a0b537398c1be83e232ba272b3108972cff633ca5f23b5f225c7397fa9317d82"
+  },
+  {
+    "occurrence_id": "ETH-D04-Q08",
+    "document_id": "ETH-D04",
+    "original_number": 8,
+    "pages": [
+      1
+    ],
+    "duplicate_group": "death-b",
+    "raw_text": "According to Egyptian legislations, death is defined as cessation of:",
+    "raw_options": [
+      "Brain stem activity.",
+      "Respiratory activity.",
+      "Cardiac activity.",
+      "All vital functions (cardiac, respiration and CNS activities)."
+    ],
+    "historical_index": 3,
+    "answer_source": "red dot annotation",
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D04-p001.txt"
+    ],
+    "original_section": "13 January 2020 end examination",
+    "printed_number": 8,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "a0b537398c1be83e232ba272b3108972cff633ca5f23b5f225c7397fa9317d82"
+  },
+  {
+    "occurrence_id": "ETH-D04-Q09",
+    "document_id": "ETH-D04",
+    "original_number": 9,
+    "pages": [
+      2
+    ],
+    "duplicate_group": "impaired-hospital",
+    "raw_text": "Dr. X is a surgeon in an academic hospital, he suffers drug addiction which starts to affect his performance at work. His treating physician advised him to stop working until his treatment is completed but he refused. The treating physician should:",
+    "raw_options": [
+      "Respect the confidentiality of his colleague.",
+      "Report to the hospital's director.",
+      "Terminate this doctor patient relationship to avoid impressing situations.",
+      "Warn the patients who are dealing with this physician."
+    ],
+    "historical_index": 1,
+    "answer_source": "red dot annotation",
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D04-p002.txt"
+    ],
+    "original_section": "13 January 2020 end examination",
+    "printed_number": 9,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "a0b537398c1be83e232ba272b3108972cff633ca5f23b5f225c7397fa9317d82"
+  },
+  {
+    "occurrence_id": "ETH-D04-Q10",
+    "document_id": "ETH-D04",
+    "original_number": 10,
+    "pages": [
+      2
+    ],
+    "duplicate_group": "abortion",
+    "raw_text": "According to the Egyptian law, abortion is legal and ethical in the following condition:",
+    "raw_options": [
+      "If there is a high risk that the child will be born with cleft lip and palate",
+      "If there is a high risk that the child will be born with mental retardation.",
+      "If there is high risk for the mother to have severe complications with late pregnancy.",
+      "If the mother wish to do an abortion procedure for financial and social reasons."
+    ],
+    "historical_index": 2,
+    "answer_source": "red dot annotation",
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D04-p002.txt"
+    ],
+    "original_section": "13 January 2020 end examination",
+    "printed_number": 10,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "a0b537398c1be83e232ba272b3108972cff633ca5f23b5f225c7397fa9317d82"
+  },
+  {
+    "occurrence_id": "ETH-D04-Q11",
+    "document_id": "ETH-D04",
+    "original_number": 11,
+    "pages": [
+      2
+    ],
+    "duplicate_group": "somatic",
+    "raw_text": "Somatic cell gene therapy:",
+    "raw_options": [
+      "Aims at eventually making asexual reproduction of an organism.",
+      "Faces greater moral and legal limitations compared to germ-line gene therapy.",
+      "Is potentially less risky than germ-line gene therapy.",
+      "Affects future generations."
+    ],
+    "historical_index": 2,
+    "answer_source": "red dot annotation",
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D04-p002.txt"
+    ],
+    "original_section": "13 January 2020 end examination",
+    "printed_number": 11,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "a0b537398c1be83e232ba272b3108972cff633ca5f23b5f225c7397fa9317d82"
+  },
+  {
+    "occurrence_id": "ETH-D04-Q12",
+    "document_id": "ETH-D04",
+    "original_number": 12,
+    "pages": [
+      2
+    ],
+    "duplicate_group": "polio",
+    "raw_text": "A mother refused polio vaccinations for her 2-month old son, what should the physician do?",
+    "raw_options": [
+      "He should respect her autonomy.",
+      "He should do all efforts to convince mother to consent for vaccination.",
+      "He shouldn't consider her decision as safety of the community should outweigh personal autonomy.",
+      "He should search for a consent from her husband to give vaccination to the child."
+    ],
+    "historical_index": 2,
+    "answer_source": "red dot annotation",
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D04-p002.txt"
+    ],
+    "original_section": "13 January 2020 end examination",
+    "printed_number": 12,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "a0b537398c1be83e232ba272b3108972cff633ca5f23b5f225c7397fa9317d82"
+  },
+  {
+    "occurrence_id": "ETH-D04-Q13",
+    "document_id": "ETH-D04",
+    "original_number": 13,
+    "pages": [
+      2
+    ],
+    "duplicate_group": "falsify",
+    "raw_text": "A doctor changed lab results of his research work to make it more impressive and significant, this is can be termed as:",
+    "raw_options": [
+      "Plagiarism",
+      "Fabrication",
+      "Falsification",
+      "Sabotage"
+    ],
+    "historical_index": 2,
+    "answer_source": "red dot annotation",
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D04-p002.txt"
+    ],
+    "original_section": "13 January 2020 end examination",
+    "printed_number": 13,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "a0b537398c1be83e232ba272b3108972cff633ca5f23b5f225c7397fa9317d82"
+  },
+  {
+    "occurrence_id": "ETH-D04-Q14",
+    "document_id": "ETH-D04",
+    "original_number": 14,
+    "pages": [
+      2
+    ],
+    "duplicate_group": "opioid",
+    "raw_text": "A terminally ill cancer patient begged you to end his life by using a large dose of opioids, what should you do?",
+    "raw_options": [
+      "I should help him to die in peace.",
+      "I can advise him to the lethal dose that will end his life shortly.",
+      "I should respect patient's autonomy.",
+      "It's not ethical or legal to help him to die."
+    ],
+    "historical_index": 3,
+    "answer_source": "red dot annotation",
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D04-p002.txt"
+    ],
+    "original_section": "13 January 2020 end examination",
+    "printed_number": 14,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "a0b537398c1be83e232ba272b3108972cff633ca5f23b5f225c7397fa9317d82"
+  },
+  {
+    "occurrence_id": "ETH-D04-Q15",
+    "document_id": "ETH-D04",
+    "original_number": 15,
+    "pages": [
+      2
+    ],
+    "duplicate_group": "pharmbad",
+    "raw_text": "Which of the following conducts is ethically not acceptable?",
+    "raw_options": [
+      "To meet with representatives from pharmaceutical companies who are promoting their latest drugs.",
+      "To attend medical meetings where drug companies sponsor the speaker.",
+      "To receive free samples of new drug from medical representatives.",
+      "To receives payments from pharmaceutical company to enroll patients in a study sponsored by the company."
+    ],
+    "historical_index": 3,
+    "answer_source": "red dot annotation",
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D04-p002.txt"
+    ],
+    "original_section": "13 January 2020 end examination",
+    "printed_number": 15,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "a0b537398c1be83e232ba272b3108972cff633ca5f23b5f225c7397fa9317d82"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q01",
+    "document_id": "ETH-D05",
+    "original_number": 1,
+    "pages": [
+      1
+    ],
+    "duplicate_group": "valid",
+    "raw_text": "A valid consent is obtained from a person who is:",
+    "raw_options": [
+      "Under threat",
+      "14-year-old",
+      "Competent",
+      "Coerced"
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p001.txt"
+    ],
+    "original_section": "10 December 2022 continuous assessment, Form A",
+    "printed_number": 1,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q02",
+    "document_id": "ETH-D05",
+    "original_number": 2,
+    "pages": [
+      1
+    ],
+    "duplicate_group": "privacy",
+    "raw_text": "When the doctor hides facial features in a patient's photo when he presented it in a medical conference, he respects the ethical principle of:",
+    "raw_options": [
+      "Beneficence",
+      "Privacy",
+      "Nonmaleficence.",
+      "Autonomy"
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p001.txt"
+    ],
+    "original_section": "10 December 2022 continuous assessment, Form A",
+    "printed_number": 2,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q03",
+    "document_id": "ETH-D05",
+    "original_number": 3,
+    "pages": [
+      1
+    ],
+    "duplicate_group": "studentconf",
+    "raw_text": "A medical student during clinical training sessions:",
+    "raw_options": [
+      "Can present himself to the patients as a doctor",
+      "Can do any procedure without supervision from the senior staff.",
+      "Has no obligations toward the patients as he is still a learner.",
+      "Has no right to reveal the patient's information without his consent"
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p001.txt"
+    ],
+    "original_section": "10 December 2022 continuous assessment, Form A",
+    "printed_number": 3,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q04",
+    "document_id": "ETH-D05",
+    "original_number": 4,
+    "pages": [
+      2
+    ],
+    "duplicate_group": "breachallowed",
+    "raw_text": "Breach of confidentiality is allowed when the doctor:",
+    "raw_options": [
+      "Informs the employer with the health states of his employees.",
+      "Informs the patient's fiancée with his positive HIV testing.",
+      "Informs the patient's wife with his health state against patient's desire.",
+      "Reveals some of the patient's information after his death."
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p002.txt"
+    ],
+    "original_section": "10 December 2022 continuous assessment, Form A",
+    "printed_number": 4,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q05",
+    "document_id": "ETH-D05",
+    "original_number": 5,
+    "pages": [
+      3
+    ],
+    "duplicate_group": "studentexam",
+    "raw_text": "As a medical student, you can:",
+    "raw_options": [
+      "Reveal the patient's information without his consent.",
+      "Present yourself to the patients as a doctor",
+      "Prescribe medications to the patients in the hospital's clinic independently.",
+      "Do medical examination under supervision from a senior staff."
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p003.txt"
+    ],
+    "original_section": "10 December 2022 continuous assessment, Form C",
+    "printed_number": 1,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q06",
+    "document_id": "ETH-D05",
+    "original_number": 6,
+    "pages": [
+      3
+    ],
+    "duplicate_group": "breachnot",
+    "raw_text": "Breach of confidentiality IS NOT allowed when the doctor informs:",
+    "raw_options": [
+      "The patient's fiancée with his positive HIV testing.",
+      "The employer with the health states of his employees.",
+      "The patient's wife with his mental disease that may result in suicidal attempt.",
+      "The health authority with a diagnosed case of cholera"
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p003.txt"
+    ],
+    "original_section": "10 December 2022 continuous assessment, Form C",
+    "printed_number": 2,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q07",
+    "document_id": "ETH-D05",
+    "original_number": 7,
+    "pages": [
+      3
+    ],
+    "duplicate_group": "labour",
+    "raw_text": "Doctor should obtain an informed consent before examination of:",
+    "raw_options": [
+      "Pregnant female at labor",
+      "Food handlers",
+      "Immigrants at ports and airports.",
+      "Employers."
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p003.txt"
+    ],
+    "original_section": "10 December 2022 continuous assessment, Form C",
+    "printed_number": 3,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q08",
+    "document_id": "ETH-D05",
+    "original_number": 8,
+    "pages": [
+      4
+    ],
+    "duplicate_group": "side-b",
+    "raw_text": "When the doctor stops medication due to occurrence of severe side effects, he respects the ethical principle of:",
+    "raw_options": [
+      "Privacy",
+      "Nonmaleficence.",
+      "Autonomy",
+      "Beneficence"
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p004.txt"
+    ],
+    "original_section": "10 December 2022 continuous assessment, Form C",
+    "printed_number": 4,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q09",
+    "document_id": "ETH-D05",
+    "original_number": 9,
+    "pages": [
+      5
+    ],
+    "duplicate_group": "bio",
+    "raw_text": "Regarding bioethics:",
+    "raw_options": [
+      "It differs significantly from one country to another.",
+      "It varies according to person, religion and society.",
+      "It refers to moral principles that govern professional interactions.",
+      "It is enforced by penalties for anyone who violates it."
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p005.txt"
+    ],
+    "original_section": "13 January 2020 end examination",
+    "printed_number": 1,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q10",
+    "document_id": "ETH-D05",
+    "original_number": 10,
+    "pages": [
+      5
+    ],
+    "duplicate_group": "side-a",
+    "raw_text": "Withdrawal of a medication after occurrence of intolerable side effects. Is a mandatory action in respect for the principle of:",
+    "raw_options": [
+      "Autonomy",
+      "Beneficence",
+      "Nonmaleficence",
+      "Justice"
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p005.txt"
+    ],
+    "original_section": "13 January 2020 end examination",
+    "printed_number": 2,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q11",
+    "document_id": "ETH-D05",
+    "original_number": 11,
+    "pages": [
+      5
+    ],
+    "duplicate_group": "head",
+    "raw_text": "A patient with head injury was brought to the ER and indicated urgent cranial decompression. There was no relative with him. The doctor should:",
+    "raw_options": [
+      "Wait until taking consent from his relatives.",
+      "Take consent from the police",
+      "Ask for consent from the court.",
+      "Operate without formal consent."
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p005.txt"
+    ],
+    "original_section": "13 January 2020 end examination",
+    "printed_number": 3,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q12",
+    "document_id": "ETH-D05",
+    "original_number": 12,
+    "pages": [
+      5
+    ],
+    "duplicate_group": "meningitis",
+    "raw_text": "Breach of confidentiality is justified in the following condition:",
+    "raw_options": [
+      "The doctor wants to disclose information about a patient after his death.",
+      "The doctor wants to disclose personal medical information of a famous actor to the media.",
+      "The doctor wants to report a case of meningitis to health authority.",
+      "The doctor wants to inform the patient's family that he has cancer despite of his wish to keep confidential."
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p005.txt"
+    ],
+    "original_section": "13 January 2020 end examination",
+    "printed_number": 4,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q13",
+    "document_id": "ETH-D05",
+    "original_number": 13,
+    "pages": [
+      5
+    ],
+    "duplicate_group": "students-exam",
+    "raw_text": "Consent is required before medical examination of:",
+    "raw_options": [
+      "Food-handlers.",
+      "Patient by students.",
+      "Immigrants at ports.",
+      "Person in contest of military service."
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p005.txt"
+    ],
+    "original_section": "13 January 2020 end examination",
+    "printed_number": 5,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q14",
+    "document_id": "ETH-D05",
+    "original_number": 14,
+    "pages": [
+      5
+    ],
+    "duplicate_group": "photo",
+    "raw_text": "During a clinical session, you see a patient with painful skin lesion. You took a picture of the lesion with your smart phone after obtaining patient's consent. Your colleague later asks you forward the image. What should you do?",
+    "raw_options": [
+      "Send the image to your colleague and asking him not to forward it to anyone.",
+      "Send the image to him with all relevant details about the case.",
+      "Explain that you cannot do this without the patient's consent.",
+      "Send the image to the student's page on the Facebook to be available for everyone."
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p005.txt"
+    ],
+    "original_section": "13 January 2020 end examination",
+    "printed_number": 6,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q15",
+    "document_id": "ETH-D05",
+    "original_number": 15,
+    "pages": [
+      5
+    ],
+    "duplicate_group": "terminate",
+    "raw_text": "Physician cannot terminate the relationship with his patients if:",
+    "raw_options": [
+      "The patient refused to pay for the physician's service",
+      "The patient refused to comply to physician's instructions",
+      "The patient needs emergency treatment.",
+      "The physician is moving or stopping practice"
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p005.txt"
+    ],
+    "original_section": "13 January 2020 end examination",
+    "printed_number": 7,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q16",
+    "document_id": "ETH-D05",
+    "original_number": 16,
+    "pages": [
+      5
+    ],
+    "duplicate_group": "death-b",
+    "raw_text": "According to Egyptian legislations, death is defined as cessation of:",
+    "raw_options": [
+      "Brain stem activity.",
+      "Respiratory activity.",
+      "Cardiac activity.",
+      "All vital functions (cardiac, respiration and CNS activities)."
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p005.txt"
+    ],
+    "original_section": "13 January 2020 end examination",
+    "printed_number": 8,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q17",
+    "document_id": "ETH-D05",
+    "original_number": 17,
+    "pages": [
+      6
+    ],
+    "duplicate_group": "impaired-hospital",
+    "raw_text": "Dr. X is a surgeon in an academic hospital, he suffers drug addiction which starts to affect his performance at work. His treating physician advised him to stop working until his treatment is completed but he refused. The treating physician should:",
+    "raw_options": [
+      "Respect the confidentiality of his colleague.",
+      "Report to the hospital's director.",
+      "Terminate this doctor patient relationship to avoid impressing situations.",
+      "Warn the patients who are dealing with this physician."
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p006.txt"
+    ],
+    "original_section": "13 January 2020 end examination",
+    "printed_number": 9,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q18",
+    "document_id": "ETH-D05",
+    "original_number": 18,
+    "pages": [
+      6
+    ],
+    "duplicate_group": "abortion",
+    "raw_text": "According to the Egyptian law, abortion is legal and ethical in the following condition:",
+    "raw_options": [
+      "If there is a high risk that the child will be born with cleft lip and palate",
+      "If there is a high risk that the child will be born with mental retardation.",
+      "If there is high risk for the mother to have severe complications with late pregnancy.",
+      "If the mother wish to do an abortion procedure for financial and social reasons."
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p006.txt"
+    ],
+    "original_section": "13 January 2020 end examination",
+    "printed_number": 10,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q19",
+    "document_id": "ETH-D05",
+    "original_number": 19,
+    "pages": [
+      6
+    ],
+    "duplicate_group": "somatic",
+    "raw_text": "Somatic cell gene therapy:",
+    "raw_options": [
+      "Aims at eventually making asexual reproduction of an organism.",
+      "Faces greater moral and legal limitations compared to germ-line gene therapy.",
+      "Is potentially less risky than germ-line gene therapy.",
+      "Affects future generations."
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p006.txt"
+    ],
+    "original_section": "13 January 2020 end examination",
+    "printed_number": 11,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q20",
+    "document_id": "ETH-D05",
+    "original_number": 20,
+    "pages": [
+      6
+    ],
+    "duplicate_group": "polio",
+    "raw_text": "A mother refused polio vaccinations for her 2-month old son, what should the physician do?",
+    "raw_options": [
+      "He should respect her autonomy.",
+      "He should do all efforts to convince mother to consent for vaccination.",
+      "He shouldn't consider her decision as safety of the community should outweigh personal autonomy.",
+      "He should search for a consent from her husband to give vaccination to the child."
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p006.txt"
+    ],
+    "original_section": "13 January 2020 end examination",
+    "printed_number": 12,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q21",
+    "document_id": "ETH-D05",
+    "original_number": 21,
+    "pages": [
+      6
+    ],
+    "duplicate_group": "falsify",
+    "raw_text": "A doctor changed lab results of his research work to make it more impressive and significant, this is can be termed as:",
+    "raw_options": [
+      "Plagiarism",
+      "Fabrication",
+      "Falsification",
+      "Sabotage"
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p006.txt"
+    ],
+    "original_section": "13 January 2020 end examination",
+    "printed_number": 13,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q22",
+    "document_id": "ETH-D05",
+    "original_number": 22,
+    "pages": [
+      6
+    ],
+    "duplicate_group": "opioid",
+    "raw_text": "A terminally ill cancer patient begged you to end his life by using a large dose of opioids, what should you do?",
+    "raw_options": [
+      "I should help him to die in peace.",
+      "I can advise him to the lethal dose that will end his life shortly.",
+      "I should respect patient's autonomy.",
+      "It's not ethical or legal to help him to die."
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p006.txt"
+    ],
+    "original_section": "13 January 2020 end examination",
+    "printed_number": 14,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q23",
+    "document_id": "ETH-D05",
+    "original_number": 23,
+    "pages": [
+      6
+    ],
+    "duplicate_group": "pharmbad",
+    "raw_text": "Which of the following conducts is ethically not acceptable?",
+    "raw_options": [
+      "To meet with representatives from pharmaceutical companies who are promoting their latest drugs.",
+      "To attend medical meetings where drug companies sponsor the speaker.",
+      "To receive free samples of new drug from medical representatives.",
+      "To receives payments from pharmaceutical company to enroll patients in a study sponsored by the company."
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p006.txt"
+    ],
+    "original_section": "13 January 2020 end examination",
+    "printed_number": 15,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q24",
+    "document_id": "ETH-D05",
+    "original_number": 24,
+    "pages": [
+      7
+    ],
+    "duplicate_group": "report",
+    "raw_text": "When a doctor saw one of his colleagues making a medical mistake with his patient, what is the appropriate response to take?",
+    "raw_options": [
+      "He has a duty to report him to the senior doctor",
+      "His relationship with this colleague should be priority",
+      "He should confront him in front of the working team",
+      "He is obligated to report him to the court"
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p007.txt"
+    ],
+    "original_section": "18 January 2023 end examination, Form B",
+    "printed_number": 1,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q25",
+    "document_id": "ETH-D05",
+    "original_number": 25,
+    "pages": [
+      7
+    ],
+    "duplicate_group": "refusal",
+    "raw_text": "When the doctor accepts patient's refusal of treatment, he respects the ethical principle of:",
+    "raw_options": [
+      "Non maleficence",
+      "Beneficence",
+      "Justice",
+      "Autonomy"
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p007.txt"
+    ],
+    "original_section": "18 January 2023 end examination, Form B",
+    "printed_number": 2,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q26",
+    "document_id": "ETH-D05",
+    "original_number": 26,
+    "pages": [
+      7
+    ],
+    "duplicate_group": "laws",
+    "raw_text": "......... refers to the rules that govern society and enforced by punishments to persons who violate it.",
+    "raw_options": [
+      "Beliefs",
+      "Ethics",
+      "Laws",
+      "Morals"
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p007.txt"
+    ],
+    "original_section": "18 January 2023 end examination, Form B",
+    "printed_number": 3,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q27",
+    "document_id": "ETH-D05",
+    "original_number": 27,
+    "pages": [
+      7
+    ],
+    "duplicate_group": "sex",
+    "raw_text": "Sex-selection prior to implantation of the embryos after IVF is:",
+    "raw_options": [
+      "Allowed to increase male population",
+      "Not allowed as it is unethical.",
+      "Not allowed by laws.",
+      "Allowed for family balancing"
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p007.txt"
+    ],
+    "original_section": "18 January 2023 end examination, Form B",
+    "printed_number": 4,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q28",
+    "document_id": "ETH-D05",
+    "original_number": 28,
+    "pages": [
+      8
+    ],
+    "duplicate_group": "ivf-a",
+    "raw_text": "According to Egyptian laws, which of followings is ethically permissible during the IVF procedure?",
+    "raw_options": [
+      "Storage of embryos till usage for the same valid couple.",
+      "Implantation of the preserved embryos in a woman after death of her husband",
+      "Surrogate motherhood.",
+      "IVF may involve a third-party donation."
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p008.txt"
+    ],
+    "original_section": "18 January 2023 end examination, Form B",
+    "printed_number": 5,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q29",
+    "document_id": "ETH-D05",
+    "original_number": 29,
+    "pages": [
+      8
+    ],
+    "duplicate_group": "living",
+    "raw_text": "Living wills are documents which are meant to guide decision making when:",
+    "raw_options": [
+      "Multiple attempts at resuscitation have failed",
+      "The patient's family cannot be contacted",
+      "The patient's family disagrees with the course of treatment",
+      "The patient is rendered incompetent or unresponsive by an illness judged to be terminal"
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p008.txt"
+    ],
+    "original_section": "18 January 2023 end examination, Form B",
+    "printed_number": 6,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q30",
+    "document_id": "ETH-D05",
+    "original_number": 30,
+    "pages": [
+      8
+    ],
+    "duplicate_group": "desk",
+    "raw_text": "You are working at the desk in your hospital when another employee of the hospital asks for information about a patient who was admitted last night with cancer colon. You know the details of the case. The person requesting the information states that he is a close friend and co-worker of your patient. He shows you proper identification proving he really is a co-worker of your patient who also works in the hospital. Which of the following is the most appropriate response to this request?",
+    "raw_options": [
+      "Let him sign a release form before revealing the information",
+      "Give him the information on the patient.",
+      "Inform him that you are not at liberty to give details regarding the patient without the patient's permission.",
+      "Give him the information only if he is a relative of the patient."
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p008.txt"
+    ],
+    "original_section": "18 January 2023 end examination, Form B",
+    "printed_number": 7,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q31",
+    "document_id": "ETH-D05",
+    "original_number": 31,
+    "pages": [
+      8
+    ],
+    "duplicate_group": "malnoharm",
+    "raw_text": "Which of the following situations DID NOT deserve to file a case of malpractice against the doctor:",
+    "raw_options": [
+      "The act of commission passed without harm.",
+      "The act of omission resulted into financial costs.",
+      "The act of commission resulted into patient's infirmity.",
+      "The act of omission resulted into physical damage"
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p008.txt"
+    ],
+    "original_section": "18 January 2023 end examination, Form B",
+    "printed_number": 8,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q32",
+    "document_id": "ETH-D05",
+    "original_number": 32,
+    "pages": [
+      8
+    ],
+    "duplicate_group": "fetal",
+    "raw_text": "Transplantation of fetal stem cells to a diseased person is termed as:",
+    "raw_options": [
+      "Xenotransplantation",
+      "Isograft",
+      "Allotransplantation",
+      "Auto transplantation"
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p008.txt"
+    ],
+    "original_section": "18 January 2023 end examination, Form B",
+    "printed_number": 9,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q33",
+    "document_id": "ETH-D05",
+    "original_number": 33,
+    "pages": [
+      9
+    ],
+    "duplicate_group": "somatic-b",
+    "raw_text": "Somatic gene therapy involves:",
+    "raw_options": [
+      "DNA transfer to reproductive cells (ova or sperms)",
+      "DNA transfer to stem cells",
+      "Genetic alteration to bring people beyond normalcy",
+      "Great risk for future generations"
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p009.txt"
+    ],
+    "original_section": "18 January 2023 end examination, Form B",
+    "printed_number": 10,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q34",
+    "document_id": "ETH-D05",
+    "original_number": 34,
+    "pages": [
+      9
+    ],
+    "duplicate_group": "passive",
+    "raw_text": "Allowing a patient to die by not doing anything to prolong his life is termed as",
+    "raw_options": [
+      "Futile treatment",
+      "Assisted suicide",
+      "Active euthanasia",
+      "Passive euthanasia"
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p009.txt"
+    ],
+    "original_section": "18 January 2023 end examination, Form B",
+    "printed_number": 11,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q35",
+    "document_id": "ETH-D05",
+    "original_number": 35,
+    "pages": [
+      9
+    ],
+    "duplicate_group": "livingdonor",
+    "raw_text": "Which of the following is considered as an advantage of living donor transplantation?",
+    "raw_options": [
+      "Increase the emotional pressure on the donor",
+      "Increase the immune response of the recipient",
+      "Increase the chance of preparedness for the procedure",
+      "Increase the waiting list for transplantation"
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p009.txt"
+    ],
+    "original_section": "18 January 2023 end examination, Form B",
+    "printed_number": 12,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q36",
+    "document_id": "ETH-D05",
+    "original_number": 36,
+    "pages": [
+      9
+    ],
+    "duplicate_group": "studentconsent",
+    "raw_text": "Which type of consent can permit medical student to examine the patient?",
+    "raw_options": [
+      "Written.",
+      "Implied.",
+      "Blanket.",
+      "Oral."
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p009.txt"
+    ],
+    "original_section": "18 January 2023 end examination, Form B",
+    "printed_number": 13,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q37",
+    "document_id": "ETH-D05",
+    "original_number": 37,
+    "pages": [
+      9
+    ],
+    "duplicate_group": "withdraw",
+    "raw_text": "If a participant of medical research wants to withdraw from the study, he can withdraw:",
+    "raw_options": [
+      "If the researcher gives permission to withdraw.",
+      "At any time without any explanation.",
+      "After explaining reason of withdrawal to the researcher.",
+      "Not before data collection"
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p009.txt"
+    ],
+    "original_section": "18 January 2023 end examination, Form B",
+    "printed_number": 14,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q38",
+    "document_id": "ETH-D05",
+    "original_number": 38,
+    "pages": [
+      10
+    ],
+    "duplicate_group": "hiv",
+    "raw_text": "You have a patient who is an HIV-positive physician. He is very concerned about confidentiality, and you are the only one who knows he is HIV-positive. He asks you who you are legally obligated to inform. What should you tell him?",
+    "raw_options": [
+      "His insurance company",
+      "No one without his direct written consent.",
+      "Infection control agency",
+      "His partner."
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p010.txt"
+    ],
+    "original_section": "18 January 2023 end examination, Form B",
+    "printed_number": 15,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q39",
+    "document_id": "ETH-D05",
+    "original_number": 39,
+    "pages": [
+      10
+    ],
+    "duplicate_group": "pharmgood",
+    "raw_text": "Which of the following conducts is ethically acceptable when the physician cooperates with pharmaceutical companies?",
+    "raw_options": [
+      "To receive payments to enroll patients in a study sponsored by the company",
+      "To sell a new medication in his clinic",
+      "To meet representatives who are promoting their latest drugs.",
+      "To receive payments (commission) to prescribe their medications"
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p010.txt"
+    ],
+    "original_section": "18 January 2023 end examination, Form B",
+    "printed_number": 16,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q40",
+    "document_id": "ETH-D05",
+    "original_number": 40,
+    "pages": [
+      11
+    ],
+    "duplicate_group": "expert",
+    "raw_text": "Yardstick of a medical mistake is established by.........",
+    "raw_options": [
+      "The patient' attorney.",
+      "An expert testimony.",
+      "The prosecutor.",
+      "The judge."
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p011.txt"
+    ],
+    "original_section": "18 January 2023 end examination, Form C",
+    "printed_number": 1,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q41",
+    "document_id": "ETH-D05",
+    "original_number": 41,
+    "pages": [
+      11
+    ],
+    "duplicate_group": "exceptdisclose",
+    "raw_text": "Doctor is obliged to disclose the patient's information to a third person in all the followings EXCEPT:",
+    "raw_options": [
+      "An admitted patient for treatment of drug addiction",
+      "There is a risk to public safety",
+      "The doctor is in the role of expert in the court",
+      "An injury resulting from a suspected child abuse"
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p011.txt"
+    ],
+    "original_section": "18 January 2023 end examination, Form C",
+    "printed_number": 2,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q42",
+    "document_id": "ETH-D05",
+    "original_number": 42,
+    "pages": [
+      11
+    ],
+    "duplicate_group": "threat",
+    "raw_text": "You are a psychiatrist, in a session with a schizophrenic patient who asks you if you can keep a secret and then tells you that he is planning to kill his boss. You say, “Of course, everything you tell me during the session will always be confidential”. What should you do?",
+    "raw_options": [
+      "Keep the patient's session confidential but make attempts to discourage the patient from his plan.",
+      "Inform your medical director and let him handle it.",
+      "Inform the patient's family and let them manage the situation.",
+      "Inform both the patient's boss as well as law enforcement of the threat."
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p011.txt"
+    ],
+    "original_section": "18 January 2023 end examination, Form C",
+    "printed_number": 3,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q43",
+    "document_id": "ETH-D05",
+    "original_number": 43,
+    "pages": [
+      12
+    ],
+    "duplicate_group": "tremor",
+    "raw_text": "When a doctor noticed tremors in his colleague's hand while performing surgical procedure, what should he do?",
+    "raw_options": [
+      "He should inform his colleague's patients for their protection.",
+      "He should ask his colleague to seek medical advice, or he will report him",
+      "There is no action to do as this is colleague's personal issue",
+      "He should not interfere to keep good relationship with his colleague."
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p012.txt"
+    ],
+    "original_section": "18 January 2023 end examination, Form C",
+    "printed_number": 4,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q44",
+    "document_id": "ETH-D05",
+    "original_number": 44,
+    "pages": [
+      12
+    ],
+    "duplicate_group": "researchrisk",
+    "raw_text": "Which of the followings is considered as violation of ethical principles in medical research?",
+    "raw_options": [
+      "Use of placebo control in clinical trials.",
+      "Use of codes to refers to the participants in the recorded data",
+      "Not informing the proposed participant with the predicted risks of the research.",
+      "Use randomization to select control group"
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p012.txt"
+    ],
+    "original_section": "18 January 2023 end examination, Form C",
+    "printed_number": 5,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q45",
+    "document_id": "ETH-D05",
+    "original_number": 45,
+    "pages": [
+      12
+    ],
+    "duplicate_group": "labcommission",
+    "raw_text": "Which of the following conducts IS NOT acceptable from the physician?",
+    "raw_options": [
+      "To receive free samples of new drug from medical representatives",
+      "To share in campaign to present medical care to people in distant and remote areas.",
+      "To meet representatives who are promoting their latest drugs.",
+      "To receive payments (commission) to refer patients to certain labs"
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p012.txt"
+    ],
+    "original_section": "18 January 2023 end examination, Form C",
+    "printed_number": 6,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q46",
+    "document_id": "ETH-D05",
+    "original_number": 46,
+    "pages": [
+      12
+    ],
+    "duplicate_group": "germline",
+    "raw_text": "Germ line gene therapy involves:",
+    "raw_options": [
+      "Selection of characteristics to change the genetics of a population",
+      "DNA transfer to reproductive cells (ova or sperms)",
+      "DNA transfer to stem cells",
+      "Genetic alteration to bring people beyond normalcy"
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p012.txt"
+    ],
+    "original_section": "18 January 2023 end examination, Form C",
+    "printed_number": 7,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q47",
+    "document_id": "ETH-D05",
+    "original_number": 47,
+    "pages": [
+      12
+    ],
+    "duplicate_group": "pig",
+    "raw_text": "Transplantation of pig's heart to a man is termed as:",
+    "raw_options": [
+      "Allotransplantation",
+      "Auto transplantation",
+      "Isograft",
+      "Xenotransplantation"
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p012.txt"
+    ],
+    "original_section": "18 January 2023 end examination, Form C",
+    "printed_number": 8,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q48",
+    "document_id": "ETH-D05",
+    "original_number": 48,
+    "pages": [
+      12
+    ],
+    "duplicate_group": "morals",
+    "raw_text": "......... refers to principles that govern private, personal interactions",
+    "raw_options": [
+      "Beliefs",
+      "Laws",
+      "Ethics",
+      "Morals"
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p012.txt"
+    ],
+    "original_section": "18 January 2023 end examination, Form C",
+    "printed_number": 9,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q49",
+    "document_id": "ETH-D05",
+    "original_number": 49,
+    "pages": [
+      13
+    ],
+    "duplicate_group": "ivf-b",
+    "raw_text": "According to Egyptian laws, which of followings is ethically permissible during the IVF procedure?",
+    "raw_options": [
+      "Surrogate motherhood.",
+      "Storage of embryos till usage for another couple.",
+      "Genetic testing for embryo sex selection",
+      "IVF may involve a third-party donation."
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p013.txt"
+    ],
+    "original_section": "18 January 2023 end examination, Form C",
+    "printed_number": 10,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q50",
+    "document_id": "ETH-D05",
+    "original_number": 50,
+    "pages": [
+      13
+    ],
+    "duplicate_group": "obligatory",
+    "raw_text": "Obligatory examination IS NOT allowed in which of the followings?",
+    "raw_options": [
+      "Medical examination of food-handlers",
+      "Medical examination in contest of military service",
+      "Medical examination on admission to a prison",
+      "Medical examination of patient by students"
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p013.txt"
+    ],
+    "original_section": "18 January 2023 end examination, Form C",
+    "printed_number": 11,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q51",
+    "document_id": "ETH-D05",
+    "original_number": 51,
+    "pages": [
+      13
+    ],
+    "duplicate_group": "surgery",
+    "raw_text": "Which type of consent can permit physician to perform a major surgical operation to the patient?",
+    "raw_options": [
+      "Blanket.",
+      "Implied.",
+      "Written.",
+      "Oral."
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p013.txt"
+    ],
+    "original_section": "18 January 2023 end examination, Form C",
+    "printed_number": 12,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q52",
+    "document_id": "ETH-D05",
+    "original_number": 52,
+    "pages": [
+      13
+    ],
+    "duplicate_group": "acpeffect",
+    "raw_text": "The main effect of advance care planning on end-of-life care is:",
+    "raw_options": [
+      "Increased net costs of care",
+      "Decreased quality of care",
+      "Increased hope for family",
+      "Strengthened patient autonomy"
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p013.txt"
+    ],
+    "original_section": "18 January 2023 end examination, Form C",
+    "printed_number": 13,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q53",
+    "document_id": "ETH-D05",
+    "original_number": 53,
+    "pages": [
+      13
+    ],
+    "duplicate_group": "futile",
+    "raw_text": "To determine which treatment can be considered as futile treatment, this depends on:",
+    "raw_options": [
+      "Whether the treatment can keep the patient alive a bit longer.",
+      "What the family recommends",
+      "What the patient wants.",
+      "Whether the treatment can be of overall benefit to the patient's medical condition."
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p013.txt"
+    ],
+    "original_section": "18 January 2023 end examination, Form C",
+    "printed_number": 14,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q54",
+    "document_id": "ETH-D05",
+    "original_number": 54,
+    "pages": [
+      13
+    ],
+    "duplicate_group": "embryotest",
+    "raw_text": "Genetic testing of the embryos prior to their implantation in the IVF procedure is:",
+    "raw_options": [
+      "Not allowed as it is unethical.",
+      "Allowed for screening of inherited disease",
+      "Allowed to increase male population",
+      "Not allowed by laws."
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p013.txt"
+    ],
+    "original_section": "18 January 2023 end examination, Form C",
+    "printed_number": 15,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  },
+  {
+    "occurrence_id": "ETH-D05-Q55",
+    "document_id": "ETH-D05",
+    "original_number": 55,
+    "pages": [
+      14
+    ],
+    "duplicate_group": "cadaverdonor",
+    "raw_text": "Which of the following is considered as a disadvantage of cadaver donor transplantation?",
+    "raw_options": [
+      "Increase the emotional pressure on the donor",
+      "Increase the waiting time for transplantation",
+      "No respect for principle of justice as the donors are mainly poor people",
+      "Increase the chance of preparedness for the procedure"
+    ],
+    "historical_index": null,
+    "answer_source": null,
+    "visual_verification": "read",
+    "raw_page_transcripts": [
+      "OCR/ETH-D05-p014.txt"
+    ],
+    "original_section": "18 January 2023 end examination, Form C",
+    "printed_number": 16,
+    "raw_labels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "source_hash": "7852111b698dbb675b05b6efb649244b8954f9fceb4fd7c1d01c7533bcdb2842"
+  }
+]

@@ -37,6 +37,8 @@ Each file contains one complete module question bank across all supported questi
 | `page` | `number` | Yes | 1-based page reference. |
 | `lectureRange` | `string` | Yes | Human-readable lecture range. |
 | `subjects` | `Subject[]` | Yes | Present for every chapter. Use `[]` for locked or inactive chapters. |
+| `bankSection` | `'practice' \| 'past-exams'` | Optional | Section partition distinguishing regular practice chapters from dedicated past exam collections. Defaults to `'practice'`. |
+| `examPeriod` | `'ca-1' \| 'ca-2'` | Optional | Exam period partition for past exams (e.g. Continuous Assessment 1 `ca-1` vs Continuous Assessment 2 `ca-2`). |
 | `keywords` | `string[]` | Optional | Keyword list for keyword-based chapter fallback routing. When smart routing and content routing both fail, the importer matches question text against these keywords to resolve the target chapter. |
 
 ## Subject

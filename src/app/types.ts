@@ -160,6 +160,7 @@ export type QuestionCollection = 'practice' | 'past-exams';
 
 export interface ChapterData {
   bankSection?: QuestionCollection;
+  examPeriod?: 'ca-1' | 'ca-2';
   id: number;
   title: string;
   subtitle: string;

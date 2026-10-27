@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "comingSoon": true,
+  "meta": {
+    "moduleCode": "P4-3",
+    "moduleName": "Medical Ethics",
+    "year": 3,
+    "semester": 1,
+    "creditPoints": 1,
+    "totalMarks": 20,
+    "keywords": [
+      "ethics",
+      "bioethics",
+      "p4"
+    ]
+  },
+  "chapters": [
+    {
+      "id": 1,
+      "title": "Principles of Bioethics & Autonomy",
+      "subtitle": "Principles of Bioethics & Autonomy",
+      "emoji": "⚖️",
+      "page": 1,
+      "lectureRange": "Lectures 1",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 2,
+      "title": "Informed Consent, Confidentiality & Professionalism",
+      "subtitle": "Informed Consent, Confidentiality & Professionalism",
+      "emoji": "📄",
+      "page": 2,
+      "lectureRange": "Lectures 2",
+      "subjects": [],
+      "keywords": []
+    },
+    {
+      "id": 3,
+      "title": "Ethical Dilemmas in Clinical Practice",
+      "subtitle": "Ethical Dilemmas in Clinical Practice",
+      "emoji": "🏥",
+      "page": 3,
+      "lectureRange": "Lectures 3",
+      "subjects": [],
+      "keywords": []
+    }
+  ]
+}

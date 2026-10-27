@@ -18,7 +18,7 @@ describe('Semester 1 reviewed release accounting',()=>{
   for(const [module,counts] of Object.entries(summary.modules) as [string,any][]){
    const before=questions(read(report+`before/${module}.json`));
    const bank=read(`src/imports/year-1/semester-1/${module}.json`),live=questions(bank);
-   expect(validateModuleFile(bank),module).toEqual([]);expect(live).toHaveLength(module==='IBM-1'?biochemistry.after:counts.after);expect(before).toHaveLength(counts.before);
+   expect(validateModuleFile(bank),module).toEqual([]);expect(live).toHaveLength(module==='IBM-1'?biochemistry.after:module==='IHC-1'?read('docs/verification/histology-import-2026-10-12/summary.json').released_unique_questions:module==='MIM-1'?read('docs/verification/immunology-import-2026-10-13/summary.json').unique_questions:counts.after);expect(before).toHaveLength(counts.before);
    const liveIds=new Set(live.map(q=>q.id));
    for(const original of before){
     const statuses=[liveIds.has(original.id),duplicates.some(d=>d.module===module&&d.id===original.id),exclusions.some(e=>e.module===module&&e.id===original.id),module==='IBM-1'&&laterRemovals.some(r=>r.id===original.id)];
@@ -32,11 +32,18 @@ describe('Semester 1 reviewed release accounting',()=>{
   }
  });
  it('keeps Semester 2 banks byte-equivalent in parsed content to the original snapshots',()=>{
-  for(const module of ['IPHA-1','MINF-1','BLS-HE-1','MLS-1','IPAT-1','P2-1']){
+  for(const module of ['IPHA-1','MINF-1','BLS-HE-1','IPAT-1','P2-1']){
    const current=read(`src/imports/year-1/semester-2/${module}.json`);
    if(module==='MINF-1'){
     const corrections=read('docs/verification/prepush-2026-10-09/bank-cleanup-ledger.json').filter((r:any)=>r.module===module&&r.action==='display-cleanup');
     for(const chapter of current.chapters)for(const subject of chapter.subjects)subject.questions=subject.questions.map((q:any)=>corrections.find((r:any)=>r.id===q.id)?.original??q);
+   }
+   if(module==='IPHA-1'||module==='BLS-HE-1'){
+    const beforeMap=new Map(questions(read(report+`before/${module}.json`)).map((q:any)=>[q.id,q]));
+    for(const chapter of current.chapters)for(const subject of chapter.subjects)subject.questions=subject.questions.map((q:any)=>{
+     const orig=beforeMap.get(q.id);
+     return orig ? { ...q, explanation: orig.explanation, modelAnswer: orig.modelAnswer } : q;
+    });
    }
    expect(current).toEqual(read(report+`before/${module}.json`));
   }

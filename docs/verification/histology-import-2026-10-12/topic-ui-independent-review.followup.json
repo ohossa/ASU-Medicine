@@ -1,0 +1,80 @@
+{
+  "scope": "Followup implementation for the three independently reported topic UI issues, staging only.",
+  "initial_report": "topic-ui-independent-review.json",
+  "owned_changed_files": [
+    "src/app/learning/customPractice.ts",
+    "src/app/learning/customPractice.test.ts",
+    "src/app/App.tsx",
+    "src/app/learning/topicPracticeSession.ts",
+    "src/app/learning/topicPracticeSession.test.ts"
+  ],
+  "file_hashes": {
+    "src/app/learning/customPractice.ts": "497baec1242721cfea35e786b9f7cc30c0577a18805990ea4f3d12b3abb645a2",
+    "src/app/learning/customPractice.test.ts": "8d7c4cdbc3844999809523188d0d0abe3e5d2627042a4f625b69a552a10d037c",
+    "src/app/App.tsx": "4831fc244bbecbb6400c6380aa52f9dcb39a86dbb04c649c8d788f55b8cb19e2",
+    "src/app/learning/topicPracticeSession.ts": "a6e1f73d0518bce6c8cd69469da808f686665b9ca36d5190c810759581a79e18",
+    "src/app/learning/topicPracticeSession.test.ts": "d3bcdfc27f5fe17ef284c90c5ec05f2c4f79945ed015115720f1cb0b38723e76",
+    "src/app/components/ChapterTopicList.tsx": "d329c94c7613c5d78ffd143b21142a2083e0e84480cce727148a979aa64783d2"
+  },
+  "resolutions": [
+    {
+      "finding": "P2 latest result subject/title collision",
+      "status": "resolved",
+      "implementation": "latestTopicResult optional fifth topicKey matches saved TopicScore.key exactly; a mismatched keyed result cannot fall back to result.subjectName. Sixth allowLegacy controls unkeyed legacy title fallback, disabled by root UI for duplicate topic titles.",
+      "regressions": [
+        "Same-named subjects do not borrow keyed topic results.",
+        "Ambiguous unkeyed title history omitted with allowLegacy=false.",
+        "Unique named legacy history retained with allowLegacy=true."
+      ]
+    },
+    {
+      "finding": "P2 legacy named-topic session bypass",
+      "status": "resolved",
+      "implementation": "App handleSelectSubject uses findTopicPracticeSession; valid current custom attempt preferred. Single-topic fallback loads legacy subject.name only with exact unique ID set, full aligned contentVersion array, sessionMatchesQuestions validation, and unfinished state. Saved order/answers/timer/flags/drafts identity is returned unchanged. Broad, changed, unversioned and duplicate-ID attempts are rejected.",
+      "regressions": [
+        "Exact shuffled legacy attempt retains answers and order.",
+        "Current valid custom attempt preferred.",
+        "Changed content, unversioned, broad, duplicate-ID and finished attempts rejected.",
+        "Multi-topic custom selection cannot use legacy named-topic fallback."
+      ]
+    },
+    {
+      "finding": "P3 original subject metadata after resume",
+      "status": "resolved",
+      "implementation": "selectedPractice derives original source id/iconName when exactly one topic is selected; resumeCustomPractice shares that constructor, preserving Pathology source metadata even in anatomy-accent chapter.",
+      "regressions": [
+        "Initial and resumed single-topic subject retain pathology/Activity identity and original practiceTopic.subjectName."
+      ]
+    }
+  ],
+  "test_evidence": {
+    "red_runs": [
+      "customPractice existing code failed keyed-history collision and source-metadata regression assertions.",
+      "Initial legacy helper old lookup failed exact named-topic continuation assertion.",
+      "Sixth allowLegacy false regression failed before implementation."
+    ],
+    "final_targeted_command": "npm test -- --run src/app/learning/customPractice.test.ts src/app/learning/topicPracticeSession.test.ts src/app/components/SubjectSelect.topics.test.tsx src/app/components/SubjectSelect.sync.test.tsx",
+    "final_targeted_result": "PASS",
+    "test_files": 4,
+    "tests": 24,
+    "earlier_full_suite": {
+      "result": "654passed/1failed of655",
+      "failure": "src/app/search/catalog-benchmark.test.ts > indexes the real published catalog and records broad-query costs:5s timeout",
+      "note": "Started before parent requested targeted-only; no subsequent full suite/build run. Root rerun required."
+    },
+    "earlier_typecheck": {
+      "result": "New test fixture errors only:missing subjectColor and invalid stopwatch TimerMode",
+      "resolution": "Corrected fixtures to subjectColor anatomy and supported practice TimerMode. Root final typecheck pending."
+    }
+  },
+  "main_app_copy_boundary": {
+    "main_App_git_diff_at_review": "empty",
+    "main_App_changed_by_agent": false,
+    "stage_App_changes": "One import and handleSelectSubject saved-session lookup only; preserve dirty main files through explicit file staging/copy after root validation."
+  },
+  "remaining_findings": [],
+  "pending_verification": [
+    "Root final full suite/typecheck/build and browser checks."
+  ],
+  "no_further_source_writes_planned": true
+}

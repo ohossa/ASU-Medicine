@@ -1,0 +1,715 @@
+{
+  "audit_date": "2026-10-12",
+  "reviewer": "hegazy_extraction agent; independent cross-source structural audit, original Hegazy extractor",
+  "scope": "Read-only source conservation, ledger completeness, aliases, parent/child counts, source hashes and targeted image-dependency checks; no re-extraction or production edits",
+  "manifest_sha256": "60c45964166c5d3a54cfbe0c2f538d178f9e5e47537d1b3170c53432db74ab01",
+  "checks": {
+    "manifest_totals": {
+      "physical_pdf_count": 38,
+      "physical_pdf_pages": 537,
+      "unique_pdf_count": 33,
+      "unique_pdf_pages": 513,
+      "byte_identical_pairs": [
+        {
+          "source_id": "src-ac0b9113e92e",
+          "sha256": "ac0b9113e92ed32d51e33c78e792ac60408d6a2afd69a4c56591282c5909fb4a",
+          "pages_per_copy": 3,
+          "physical_copies": 2,
+          "aliases": [
+            "McQs/Formative_exam_for_Introduction_to_Histology_and_cell_biology_October (2).pdf",
+            "McQs/Formative_exam_for_Introduction_to_Histology_and_cell_biology_October.pdf"
+          ]
+        },
+        {
+          "source_id": "src-80174359008a",
+          "sha256": "80174359008a728fc094232e9da6334de7a8f9c8ce2a6f29045ce088fcd12030",
+          "pages_per_copy": 10,
+          "physical_copies": 2,
+          "aliases": [
+            "McQs/MCQs in cytology 2012-2016.pdf",
+            "McQs/MCQs_in_cytology_2012-2016.pdf"
+          ]
+        },
+        {
+          "source_id": "src-5b1260b97a77",
+          "sha256": "5b1260b97a779cddca8f49650d1c89fcdf72a64ef0b15cc5196cc5b102950a5e",
+          "pages_per_copy": 2,
+          "physical_copies": 2,
+          "aliases": [
+            "McQs/formative Exam 2 for intro to hist.pdf",
+            "McQs/formative_Exam_2_for_intro_to_hist_a3ed369bd77b1dd474e623760996b0c7.pdf"
+          ]
+        },
+        {
+          "source_id": "src-0c7b7ab76392",
+          "sha256": "0c7b7ab763926ad36696d9bb8470034b9d2b8e343cea05bf3058be8b99af0596",
+          "pages_per_copy": 7,
+          "physical_copies": 2,
+          "aliases": [
+            "hegazy& MCQs/exam 1, cell & microtechnique(1).pdf",
+            "hegazy& MCQs/exam 1, cell & microtechnique.pdf"
+          ]
+        },
+        {
+          "source_id": "src-871ca5046ee0",
+          "sha256": "871ca5046ee04990d95ead25942884a31d840009afe4e76d77779e13d294e294",
+          "pages_per_copy": 2,
+          "physical_copies": 2,
+          "aliases": [
+            "zahra& MCQs/Cytology MCQ (Nucleus)(1).pdf",
+            "zahra& MCQs/Cytology MCQ.pdf"
+          ]
+        }
+      ],
+      "expected_totals_match": true
+    },
+    "designated_source_hashes_unchanged": true,
+    "all_manifest_files_unchanged_including_system_file": true,
+    "all513unique_pages_exactly_once": true,
+    "all_page_visual_and_reconciliation_flags_complete": true,
+    "all_occurrences_exact_conservation": true,
+    "group_occurrence_records_match_consolidated": true,
+    "formats_match_expected": true,
+    "source_aliases_include_every_identical_physical_copy": true,
+    "every_occurrence_source_hash_and_page_anchor_valid": true,
+    "every_parent_occurrence_reconciled_flag": true,
+    "excluded_linked_form_not_in_parent_occurrences": true,
+    "all149mcqs_page_renders_exist_by_resolved_path": true,
+    "no_missing_render_evidence": true
+  },
+  "findings": [
+    {
+      "severity": "resolved_in_adjudication",
+      "finding": "Seven source questions use shared clinical vignettes stored separately as case_context; the uncued review projection omitted this field. Six were repaired by verbatim context restoration and one remains medically held because no valid option. This is a projection-boundary omission, not a missing parent occurrence.",
+      "source_id": "src-448345893d69",
+      "pdf_page": 31,
+      "affected_occurrence_ids": [
+        "src-448345893d69-p031-connective-q31",
+        "src-448345893d69-p031-connective-q32",
+        "src-448345893d69-p031-connective-q33",
+        "src-448345893d69-p031-connective-q34",
+        "src-448345893d69-p031-connective-q35",
+        "src-448345893d69-p031-connective-q36",
+        "src-448345893d69-p031-connective-q37"
+      ],
+      "repair_ledger": "REVIEW/hegazy-mcqs-adjudications.jsonl"
+    }
+  ],
+  "limitations": [
+    "Structural conservation is independently verified against files, manifest and source ledgers. This does not substitute for a second complete transcription or medical review.",
+    "For non-Hegazy sources, full-page visual coverage is attested by the original extraction agents. This audit actually viewed five targeted ambiguous question pages and previous authorized repair pages, not all356other-source pages.",
+    "Zero image-dependent flags alone cannot prove no image question was omitted entirely. No suspicious supplied image was found by text/ledger search and targeted viewing.",
+    "Linked remote form remains excluded and was not reopened; its24item count is inherited from the exclusion ledger rather than independently recounted.",
+    "Arabic supplementary annotations in scanned HegazyCELL remain in rendered originals/raw OCR with extraction uncertainty, not fully transcribed."
+  ],
+  "source_hash_checks": [
+    {
+      "relative_path": ".DS_Store",
+      "source_id": "src-7e5ae1bdf1d0",
+      "expected_sha256": "7e5ae1bdf1d0bc81b2512be35145c3b011e891032a23d64883916d8f593ad6d8",
+      "actual_sha256": "7e5ae1bdf1d0bc81b2512be35145c3b011e891032a23d64883916d8f593ad6d8",
+      "unchanged": true,
+      "bytes_match": true
+    },
+    {
+      "relative_path": "McQs/CELL MCQ.pdf",
+      "source_id": "src-58289900ae50",
+      "expected_sha256": "58289900ae506015f832a547f8dee8202b63cec5ff0cba3df3eb18e45f1f375b",
+      "actual_sha256": "58289900ae506015f832a547f8dee8202b63cec5ff0cba3df3eb18e45f1f375b",
+      "unchanged": true,
+      "bytes_match": true,
+      "actual_pages": 18,
+      "manifest_pages_match": true
+    },
+    {
+      "relative_path": "McQs/Formative_exam_for_Introduction_to_Histology_and_cell_biology_October (2).pdf",
+      "source_id": "src-ac0b9113e92e",
+      "expected_sha256": "ac0b9113e92ed32d51e33c78e792ac60408d6a2afd69a4c56591282c5909fb4a",
+      "actual_sha256": "ac0b9113e92ed32d51e33c78e792ac60408d6a2afd69a4c56591282c5909fb4a",
+      "unchanged": true,
+      "bytes_match": true,
+      "actual_pages": 3,
+      "manifest_pages_match": true
+    },
+    {
+      "relative_path": "McQs/Formative_exam_for_Introduction_to_Histology_and_cell_biology_October.pdf",
+      "source_id": "src-ac0b9113e92e",
+      "expected_sha256": "ac0b9113e92ed32d51e33c78e792ac60408d6a2afd69a4c56591282c5909fb4a",
+      "actual_sha256": "ac0b9113e92ed32d51e33c78e792ac60408d6a2afd69a4c56591282c5909fb4a",
+      "unchanged": true,
+      "bytes_match": true,
+      "actual_pages": 3,
+      "manifest_pages_match": true
+    },
+    {
+      "relative_path": "McQs/Important questions(1).pdf",
+      "source_id": "src-d21fd7fa37bf",
+      "expected_sha256": "d21fd7fa37bf6784bb87e13c9fc1fc0f6f69671b2030fb86e2508a8307a1aaff",
+      "actual_sha256": "d21fd7fa37bf6784bb87e13c9fc1fc0f6f69671b2030fb86e2508a8307a1aaff",
+      "unchanged": true,
+      "bytes_match": true,
+      "actual_pages": 7,
+      "manifest_pages_match": true
+    },
+    {
+      "relative_path": "McQs/MCQ microtechnique&microscope .pdf",
+      "source_id": "src-196f150e0dbe",
+      "expected_sha256": "196f150e0dbea0cc0b94c359e0c954c7cda75909502c952d2a428970ab083b6a",
+      "actual_sha256": "196f150e0dbea0cc0b94c359e0c954c7cda75909502c952d2a428970ab083b6a",
+      "unchanged": true,
+      "bytes_match": true,
+      "actual_pages": 5,
+      "manifest_pages_match": true
+    },
+    {
+      "relative_path": "McQs/MCQs in cytology 2012-2016.pdf",
+      "source_id": "src-80174359008a",
+      "expected_sha256": "80174359008a728fc094232e9da6334de7a8f9c8ce2a6f29045ce088fcd12030",
+      "actual_sha256": "80174359008a728fc094232e9da6334de7a8f9c8ce2a6f29045ce088fcd12030",
+      "unchanged": true,
+      "bytes_match": true,
+      "actual_pages": 10,
+      "manifest_pages_match": true
+    },
+    {
+      "relative_path": "McQs/MCQs_in_Connective_Tissue_(Mohammed_Elarbi).pdf",
+      "source_id": "src-2fc6c804413d",
+      "expected_sha256": "2fc6c804413d14b7d546646ec2dff4f1050e6628ff02d742b2506e964c6cbda3",
+      "actual_sha256": "2fc6c804413d14b7d546646ec2dff4f1050e6628ff02d742b2506e964c6cbda3",
+      "unchanged": true,
+      "bytes_match": true,
+      "actual_pages": 8,
+      "manifest_pages_match": true
+    },
+    {
+      "relative_path": "McQs/MCQs_in_cytology_2012-2016.pdf",
+      "source_id": "src-80174359008a",
+      "expected_sha256": "80174359008a728fc094232e9da6334de7a8f9c8ce2a6f29045ce088fcd12030",
+      "actual_sha256": "80174359008a728fc094232e9da6334de7a8f9c8ce2a6f29045ce088fcd12030",
+      "unchanged": true,
+      "bytes_match": true,
+      "actual_pages": 10,
+      "manifest_pages_match": true
+    },
+    {
+      "relative_path": "McQs/MCQs_in_the_Nucleus.pdf",
+      "source_id": "src-198212a47f22",
+      "expected_sha256": "198212a47f22a2cdbb21787eb4fca95bdfbca3c525b5fc902e64d01e0569aab3",
+      "actual_sha256": "198212a47f22a2cdbb21787eb4fca95bdfbca3c525b5fc902e64d01e0569aab3",
+      "unchanged": true,
+      "bytes_match": true,
+      "actual_pages": 6,
+      "manifest_pages_match": true
+    },
+    {
+      "relative_path": "McQs/cell MCQ iman nabil.docx",
+      "source_id": "src-45034ea68c2a",
+      "expected_sha256": "45034ea68c2ae9ccbda076734943227f7e0660bc5c216a482a378b4828e7b571",
+      "actual_sha256": "45034ea68c2ae9ccbda076734943227f7e0660bc5c216a482a378b4828e7b571",
+      "unchanged": true,
+      "bytes_match": true
+    },
+    {
+      "relative_path": "McQs/connective tissue mcq(1).pdf",
+      "source_id": "src-87bf66fdd742",
+      "expected_sha256": "87bf66fdd742d57e8c4f2f4fb61e5243671b762daf94f1bb9ca1b56e2aef7681",
+      "actual_sha256": "87bf66fdd742d57e8c4f2f4fb61e5243671b762daf94f1bb9ca1b56e2aef7681",
+      "unchanged": true,
+      "bytes_match": true,
+      "actual_pages": 27,
+      "manifest_pages_match": true
+    },
+    {
+      "relative_path": "McQs/formative Exam 2 for intro to hist.pdf",
+      "source_id": "src-5b1260b97a77",
+      "expected_sha256": "5b1260b97a779cddca8f49650d1c89fcdf72a64ef0b15cc5196cc5b102950a5e",
+      "actual_sha256": "5b1260b97a779cddca8f49650d1c89fcdf72a64ef0b15cc5196cc5b102950a5e",
+      "unchanged": true,
+      "bytes_match": true,
+      "actual_pages": 2,
+      "manifest_pages_match": true
+    },
+    {
+      "relative_path": "McQs/formative_Exam_2_for_intro_to_hist_a3ed369bd77b1dd474e623760996b0c7.pdf",
+      "source_id": "src-5b1260b97a77",
+      "expected_sha256": "5b1260b97a779cddca8f49650d1c89fcdf72a64ef0b15cc5196cc5b102950a5e",
+      "actual_sha256": "5b1260b97a779cddca8f49650d1c89fcdf72a64ef0b15cc5196cc5b102950a5e",
+      "unchanged": true,
+      "bytes_match": true,
+      "actual_pages": 2,
+      "manifest_pages_match": true
+    },
+    {
+      "relative_path": "McQs/histo mcq2.pdf",
+      "source_id": "src-448345893d69",
+      "expected_sha256": "448345893d693ac8a08fd21a6ca326bc19cd1e4e36a1b26a03fb1d43c3f4b5e1",
+      "actual_sha256": "448345893d693ac8a08fd21a6ca326bc19cd1e4e36a1b26a03fb1d43c3f4b5e1",
+      "unchanged": true,
+      "bytes_match": true,
+      "actual_pages": 34,
+      "manifest_pages_match": true
+    },
+    {
+      "relative_path": "McQs/nucleus MCQ.pdf",
+      "source_id": "src-adb6bdef5573",
+      "expected_sha256": "adb6bdef5573d04b0ce39a057b2a55aaf97c0bdaec6b8412c29c09d106e03f89",
+      "actual_sha256": "adb6bdef5573d04b0ce39a057b2a55aaf97c0bdaec6b8412c29c09d106e03f89",
+      "unchanged": true,
+      "bytes_match": true,
+      "actual_pages": 3,
+      "manifest_pages_match": true
+    },
+    {
+      "relative_path": "McQs/اسئلة كتاب القسم.pdf",
+      "source_id": "src-f7bd85b1109c",
+      "expected_sha256": "f7bd85b1109cd9a56ac3d145af59029bfea8c4677a634088b6a4c68ae2e99631",
+      "actual_sha256": "f7bd85b1109cd9a56ac3d145af59029bfea8c4677a634088b6a4c68ae2e99631",
+      "unchanged": true,
+      "bytes_match": true,
+      "actual_pages": 26,
+      "manifest_pages_match": true
+    },
+    {
+      "relative_path": "hegazy& MCQs/Connective tissue (2020).pdf",
+      "source_id": "src-1cb99d18505b",
+      "expected_sha256": "1cb99d18505b302be85f62727667f0236476c3eadabeb89ab828ebaeb3b8db34",
+      "actual_sha256": "1cb99d18505b302be85f62727667f0236476c3eadabeb89ab828ebaeb3b8db34",
+      "unchanged": true,
+      "bytes_match": true,
+      "actual_pages": 19,
+      "manifest_pages_match": true
+    },
+    {
+      "relative_path": "hegazy& MCQs/Epithelium 2020= hegazy.pdf",
+      "source_id": "src-5a7c0a4262ac",
+      "expected_sha256": "5a7c0a4262ac05ee7dfa9cf927dbdcc3b50b966f393e569e896b8d767524db8f",
+      "actual_sha256": "5a7c0a4262ac05ee7dfa9cf927dbdcc3b50b966f393e569e896b8d767524db8f",
+      "unchanged": true,
+      "bytes_match": true,
+      "actual_pages": 12,
+      "manifest_pages_match": true
+    },
+    {
+      "relative_path": "hegazy& MCQs/OVERVIEW 2 2021(1).pdf",
+      "source_id": "src-8a5c12cf6b2c",
+      "expected_sha256": "8a5c12cf6b2c1fa93f91c7cb7067301f7f3d55b9f488fcaddb7d9a761587ebbb",
+      "actual_sha256": "8a5c12cf6b2c1fa93f91c7cb7067301f7f3d55b9f488fcaddb7d9a761587ebbb",
+      "unchanged": true,
+      "bytes_match": true,
+      "actual_pages": 7,
+      "manifest_pages_match": true
+    },
+    {
+      "relative_path": "hegazy& MCQs/cell MCQ 2021 part2 .pdf",
+      "source_id": "src-f7b24af6ce1e",
+      "expected_sha256": "f7b24af6ce1ef4ddf92f22261413e19f07e6869ced6d596348c2fb2156e37e60",
+      "actual_sha256": "f7b24af6ce1ef4ddf92f22261413e19f07e6869ced6d596348c2fb2156e37e60",
+      "unchanged": true,
+      "bytes_match": true,
+      "actual_pages": 8,
+      "manifest_pages_match": true
+    },
+    {
+      "relative_path": "hegazy& MCQs/cell MCQ hegazy.pdf",
+      "source_id": "src-d2cac67a939c",
+      "expected_sha256": "d2cac67a939cf291cf4bdeeccea068e61663171c15de6243d164dd437258c710",
+      "actual_sha256": "d2cac67a939cf291cf4bdeeccea068e61663171c15de6243d164dd437258c710",
+      "unchanged": true,
+      "bytes_match": true,
+      "actual_pages": 17,
+      "manifest_pages_match": true
+    },
+    {
+      "relative_path": "hegazy& MCQs/cell.pdf",
+      "source_id": "src-75229cd071b7",
+      "expected_sha256": "75229cd071b7514e5e4bda27f879db3b1152a0bd3edfef4bdeef417de870ab82",
+      "actual_sha256": "75229cd071b7514e5e4bda27f879db3b1152a0bd3edfef4bdeef417de870ab82",
+      "unchanged": true,
+      "bytes_match": true,
+      "actual_pages": 35,
+      "manifest_pages_match": true
+    },
+    {
+      "relative_path": "hegazy& MCQs/connective MCQ 2021 set1(3).pdf",
+      "source_id": "src-84698ebee8fe",
+      "expected_sha256": "84698ebee8fe7197f321fb422c7a74a0e85bb61d9eebf0c60e52a86d4cb30a2a",
+      "actual_sha256": "84698ebee8fe7197f321fb422c7a74a0e85bb61d9eebf0c60e52a86d4cb30a2a",
+      "unchanged": true,
+      "bytes_match": true,
+      "actual_pages": 6,
+      "manifest_pages_match": true
+    },
+    {
+      "relative_path": "hegazy& MCQs/epith MCQ 2021.pdf",
+      "source_id": "src-b86ae41ff2e7",
+      "expected_sha256": "b86ae41ff2e74917921535d824c696b36cb18816e2ba5c88c491e498872a9311",
+      "actual_sha256": "b86ae41ff2e74917921535d824c696b36cb18816e2ba5c88c491e498872a9311",
+      "unchanged": true,
+      "bytes_match": true,
+      "actual_pages": 6,
+      "manifest_pages_match": true
+    },
+    {
+      "relative_path": "hegazy& MCQs/exam 1, cell & microtechnique(1).pdf",
+      "source_id": "src-0c7b7ab76392",
+      "expected_sha256": "0c7b7ab763926ad36696d9bb8470034b9d2b8e343cea05bf3058be8b99af0596",
+      "actual_sha256": "0c7b7ab763926ad36696d9bb8470034b9d2b8e343cea05bf3058be8b99af0596",
+      "unchanged": true,
+      "bytes_match": true,
+      "actual_pages": 7,
+      "manifest_pages_match": true
+    },
+    {
+      "relative_path": "hegazy& MCQs/exam 1, cell & microtechnique.pdf",
+      "source_id": "src-0c7b7ab76392",
+      "expected_sha256": "0c7b7ab763926ad36696d9bb8470034b9d2b8e343cea05bf3058be8b99af0596",
+      "actual_sha256": "0c7b7ab763926ad36696d9bb8470034b9d2b8e343cea05bf3058be8b99af0596",
+      "unchanged": true,
+      "bytes_match": true,
+      "actual_pages": 7,
+      "manifest_pages_match": true
+    },
+    {
+      "relative_path": "hegazy& MCQs/mcq part1 2022 .pdf",
+      "source_id": "src-6a408d1955a7",
+      "expected_sha256": "6a408d1955a76a4ddfbe41771b337499a9d8847cd99da048f11e8896bb71d905",
+      "actual_sha256": "6a408d1955a76a4ddfbe41771b337499a9d8847cd99da048f11e8896bb71d905",
+      "unchanged": true,
+      "bytes_match": true,
+      "actual_pages": 21,
+      "manifest_pages_match": true
+    },
+    {
+      "relative_path": "hegazy& MCQs/microtechnique 2020 .pdf",
+      "source_id": "src-706d48ff6cca",
+      "expected_sha256": "706d48ff6cca7e72366526b64245ac3753df42c51e6777f5c9aa093eb02ddebc",
+      "actual_sha256": "706d48ff6cca7e72366526b64245ac3753df42c51e6777f5c9aa093eb02ddebc",
+      "unchanged": true,
+      "bytes_match": true,
+      "actual_pages": 6,
+      "manifest_pages_match": true
+    },
+    {
+      "relative_path": "hegazy& MCQs/microtechnique MCQ 2021.pdf",
+      "source_id": "src-a87359f51b15",
+      "expected_sha256": "a87359f51b15eb12dc3e23f45a13613b4a75294e8fd7613cc7281231550e91b4",
+      "actual_sha256": "a87359f51b15eb12dc3e23f45a13613b4a75294e8fd7613cc7281231550e91b4",
+      "unchanged": true,
+      "bytes_match": true,
+      "actual_pages": 2,
+      "manifest_pages_match": true
+    },
+    {
+      "relative_path": "hegazy& MCQs/overview 2020(1).pdf",
+      "source_id": "src-1c09e16e11e1",
+      "expected_sha256": "1c09e16e11e1c2a22ee3d5697bdea792e45a3202ee67d2b2472ef6c047de7b5a",
+      "actual_sha256": "1c09e16e11e1c2a22ee3d5697bdea792e45a3202ee67d2b2472ef6c047de7b5a",
+      "unchanged": true,
+      "bytes_match": true,
+      "actual_pages": 3,
+      "manifest_pages_match": true
+    },
+    {
+      "relative_path": "hegazy& MCQs/overview MCQ.pdf",
+      "source_id": "src-278b0b60d1f3",
+      "expected_sha256": "278b0b60d1f37290feb3eae6668504983e6dd5d9c115a49195978789f343fcd4",
+      "actual_sha256": "278b0b60d1f37290feb3eae6668504983e6dd5d9c115a49195978789f343fcd4",
+      "unchanged": true,
+      "bytes_match": true,
+      "actual_pages": 8,
+      "manifest_pages_match": true
+    },
+    {
+      "relative_path": "zahra& MCQs/ Overview- MCQ.pdf",
+      "source_id": "src-a5fcedad15a8",
+      "expected_sha256": "a5fcedad15a8c442b34141a5d2fe4829c73e589ba3406fb77f70cbabafb8284d",
+      "actual_sha256": "a5fcedad15a8c442b34141a5d2fe4829c73e589ba3406fb77f70cbabafb8284d",
+      "unchanged": true,
+      "bytes_match": true,
+      "actual_pages": 8,
+      "manifest_pages_match": true
+    },
+    {
+      "relative_path": "zahra& MCQs/Connective Tissue MCQ.pdf",
+      "source_id": "src-01348b07663d",
+      "expected_sha256": "01348b07663d2b7a5b1f69238ef9e61687d4f6d8998afe677e8376b9bfc19cd8",
+      "actual_sha256": "01348b07663d2b7a5b1f69238ef9e61687d4f6d8998afe677e8376b9bfc19cd8",
+      "unchanged": true,
+      "bytes_match": true,
+      "actual_pages": 5,
+      "manifest_pages_match": true
+    },
+    {
+      "relative_path": "zahra& MCQs/Cytology MCQ (Nucleus)(1).pdf",
+      "source_id": "src-871ca5046ee0",
+      "expected_sha256": "871ca5046ee04990d95ead25942884a31d840009afe4e76d77779e13d294e294",
+      "actual_sha256": "871ca5046ee04990d95ead25942884a31d840009afe4e76d77779e13d294e294",
+      "unchanged": true,
+      "bytes_match": true,
+      "actual_pages": 2,
+      "manifest_pages_match": true
+    },
+    {
+      "relative_path": "zahra& MCQs/Cytology MCQ.pdf",
+      "source_id": "src-871ca5046ee0",
+      "expected_sha256": "871ca5046ee04990d95ead25942884a31d840009afe4e76d77779e13d294e294",
+      "actual_sha256": "871ca5046ee04990d95ead25942884a31d840009afe4e76d77779e13d294e294",
+      "unchanged": true,
+      "bytes_match": true,
+      "actual_pages": 2,
+      "manifest_pages_match": true
+    },
+    {
+      "relative_path": "zahra& MCQs/EPITHELIUM MCQ.pdf",
+      "source_id": "src-1e38afc5401d",
+      "expected_sha256": "1e38afc5401d1e0ba96d3ab3f5a8b572dad95f7ce5e2b9e0d0d39782021ebc57",
+      "actual_sha256": "1e38afc5401d1e0ba96d3ab3f5a8b572dad95f7ce5e2b9e0d0d39782021ebc57",
+      "unchanged": true,
+      "bytes_match": true,
+      "actual_pages": 9,
+      "manifest_pages_match": true
+    },
+    {
+      "relative_path": "zahra& MCQs/Epithelium MCQ(1).pdf",
+      "source_id": "src-001c485cb1a8",
+      "expected_sha256": "001c485cb1a8f9928c04a4390dbc920477f96285484f2dc4c7aeedd93dffa65b",
+      "actual_sha256": "001c485cb1a8f9928c04a4390dbc920477f96285484f2dc4c7aeedd93dffa65b",
+      "unchanged": true,
+      "bytes_match": true,
+      "actual_pages": 4,
+      "manifest_pages_match": true
+    },
+    {
+      "relative_path": "zahra& MCQs/ahmed zahra 2022.pdf",
+      "source_id": "src-62852e2ee2be",
+      "expected_sha256": "62852e2ee2bea5a83a5de569d6e53c761b59e5638326257271e3cc37d1d6eb3f",
+      "actual_sha256": "62852e2ee2bea5a83a5de569d6e53c761b59e5638326257271e3cc37d1d6eb3f",
+      "unchanged": true,
+      "bytes_match": true,
+      "actual_pages": 108,
+      "manifest_pages_match": true
+    },
+    {
+      "relative_path": "zahra& MCQs/zahra mcq 2022.pdf",
+      "source_id": "src-ec0ef21a7261",
+      "expected_sha256": "ec0ef21a72612b47257ec84850a03ea28de67632b76a416a59a6e3bd6aaf6f56",
+      "actual_sha256": "ec0ef21a72612b47257ec84850a03ea28de67632b76a416a59a6e3bd6aaf6f56",
+      "unchanged": true,
+      "bytes_match": true,
+      "actual_pages": 71,
+      "manifest_pages_match": true
+    }
+  ],
+  "designated_book_hash_check": {
+    "expected_sha256": "9fd2e39044c3055c51395a10d01106a553e351c32c18c45f15f88b48f28ab3fd",
+    "actual_sha256": "9fd2e39044c3055c51395a10d01106a553e351c32c18c45f15f88b48f28ab3fd",
+    "pages": 111,
+    "manifest_pages": 111,
+    "unchanged": true
+  },
+  "page_and_occurrence_ledger_checks": [
+    {
+      "group": "hegazy",
+      "unique_pdf_sources": 14,
+      "pages": 157,
+      "parent_occurrences": 401,
+      "format_counts": {
+        "mcq": 401
+      },
+      "matching_children": 0,
+      "dispositions": {
+        "teaching_material": 80,
+        "cover": 3,
+        "questions_and_answers": 73,
+        "answer_key": 1
+      },
+      "duplicate_page_rows": 0,
+      "missing_pages": [],
+      "unexpected_pages": [],
+      "page_occurrence_links_missing": [],
+      "page_links_to_unknown_occurrences": [],
+      "hegazy_extracted_count_sum": 401
+    },
+    {
+      "group": "mcqs",
+      "unique_pdf_sources": 12,
+      "pages": 149,
+      "parent_occurrences": 871,
+      "format_counts": {
+        "mcq": 731,
+        "essay": 2,
+        "true_false_correction": 125,
+        "matching": 13
+      },
+      "matching_children": 65,
+      "dispositions": {
+        "['questions', 'answer_key']": 61,
+        "['questions']": 71,
+        "['answer_key']": 10,
+        "['essay_and_answer']": 1,
+        "['continuation', 'essay', 'answer_key']": 1,
+        "['cover']": 2,
+        "['title']": 1,
+        "['credits']": 1,
+        "['contents']": 1
+      },
+      "duplicate_page_rows": 0,
+      "missing_pages": [],
+      "unexpected_pages": [],
+      "page_occurrence_links_missing": [],
+      "page_links_to_unknown_occurrences": [],
+      "hegazy_extracted_count_sum": null
+    },
+    {
+      "group": "zahra",
+      "unique_pdf_sources": 7,
+      "pages": 207,
+      "parent_occurrences": 829,
+      "format_counts": {
+        "mcq": 829
+      },
+      "matching_children": 0,
+      "dispositions": {
+        "question_or_continuation": 71,
+        "question_and_key": 20,
+        "answer_key": 7,
+        "teaching_prose_or_cover": 108,
+        "blank_no_question": 1
+      },
+      "duplicate_page_rows": 0,
+      "missing_pages": [],
+      "unexpected_pages": [],
+      "page_occurrence_links_missing": [],
+      "page_links_to_unknown_occurrences": [],
+      "hegazy_extracted_count_sum": null
+    }
+  ],
+  "page_flag_defects": [],
+  "missing_render_evidence_files": [],
+  "consolidated_sha256": "994853193599130e324035b2402d6bb33ce22ca1c8011ed52638ba560bdaba2b",
+  "parent_format_counts": {
+    "mcq": 1961,
+    "essay": 2,
+    "true_false_correction": 125,
+    "matching": 13
+  },
+  "matching_parent_count": 13,
+  "matching_children_count": 65,
+  "expanded_leaf_count_replacing_matching_parents": 2153,
+  "alias_count_checks": {
+    "physical_parent_occurrences_including_identical_copies": 2202,
+    "unique_parent_occurrences": 2101,
+    "additional_alias_copy_occurrences": 101,
+    "occurrences_per_alias_count": {
+      "2": 101,
+      "1": 2000
+    },
+    "alias_defects": []
+  },
+  "occurrence_hash_defects": [],
+  "occurrence_page_defects": [],
+  "unreconciled_occurrences": [],
+  "zahra_reconciliation_record_check": {
+    "records": 829,
+    "unique_ids": 829,
+    "all_source_reconciled": true,
+    "exact_zahra_id_coverage": true
+  },
+  "linked_form_exclusion": [
+    {
+      "source_id": "src-45034ea68c2a",
+      "source_file": "McQs/cell MCQ iman nabil.docx",
+      "disposition": "excluded_by_user_linked_form",
+      "local_contents": "Google Forms URL only, no locally embedded questions",
+      "linked_form_item_count": 24,
+      "item_count_method": "parent inspected external link",
+      "reason": "User explicitly excludes linked Google Form"
+    }
+  ],
+  "linked_form_local_docx_text": "https://docs.google.com/forms/d/e/1FAIpQLSciqVdHe8FfVtcGxh17p0713yomXjP1KCZ8clpN2ASkmzxoog/viewform?vc=0&c=0&w=1&flr=0",
+  "linked_form_remote_count_independently_verified": false,
+  "image_policy_audit": {
+    "image_dependent_true_count": 0,
+    "all_current_flags_false": true,
+    "specific_image_dependent_question_found": false,
+    "direct_firsthand_previous_visual_scope": "All157uniqueHegazy pages were actually inspected by this auditor during extraction, including teaching figures; no question required interpreting a supplied image. Teaching figures are not question occurrences.",
+    "targeted_independent_render_checks": [
+      {
+        "source_id": "src-58289900ae50",
+        "pdf_page": 12,
+        "result": "Text-only question page; microscopic-image terminology describes expected structure/method and supplies no figure to interpret."
+      },
+      {
+        "source_id": "src-87bf66fdd742",
+        "pdf_page": 10,
+        "result": "Text-only question page; microscopic-image terminology describes expected structure/method and supplies no figure to interpret."
+      },
+      {
+        "source_id": "src-ac0b9113e92e",
+        "pdf_page": 1,
+        "result": "Text-only question page; microscopic-image terminology describes expected structure/method and supplies no figure to interpret."
+      },
+      {
+        "source_id": "src-ec0ef21a7261",
+        "pdf_page": 33,
+        "result": "Text-only question page; microscopic-image terminology describes expected structure/method and supplies no figure to interpret."
+      },
+      {
+        "source_id": "src-ec0ef21a7261",
+        "pdf_page": 56,
+        "result": "Text-only question page; microscopic-image terminology describes expected structure/method and supplies no figure to interpret."
+      }
+    ],
+    "method": "Scanned all2101stems and page-ledger notes for figure/image/picture/diagram/arrow/micrograph/identify/shown references, then visually checked representative ambiguous originals; consult full-page visual ledgers for remaining sources.",
+    "conclusion": "No missed image-dependent exclusion identified. Universal text-only classification is supported by primary extractor ledgers and negative targeted checks, not a fresh independent viewing of all513pages."
+  },
+  "shared_context_boundary_check": [
+    {
+      "occurrence_id": "src-448345893d69-p031-connective-q31",
+      "case_context_present": true,
+      "main_text_includes_context": false
+    },
+    {
+      "occurrence_id": "src-448345893d69-p031-connective-q32",
+      "case_context_present": true,
+      "main_text_includes_context": false
+    },
+    {
+      "occurrence_id": "src-448345893d69-p031-connective-q33",
+      "case_context_present": true,
+      "main_text_includes_context": false
+    },
+    {
+      "occurrence_id": "src-448345893d69-p031-connective-q34",
+      "case_context_present": true,
+      "main_text_includes_context": false
+    },
+    {
+      "occurrence_id": "src-448345893d69-p031-connective-q35",
+      "case_context_present": true,
+      "main_text_includes_context": false
+    },
+    {
+      "occurrence_id": "src-448345893d69-p031-connective-q36",
+      "case_context_present": true,
+      "main_text_includes_context": false
+    },
+    {
+      "occurrence_id": "src-448345893d69-p031-connective-q37",
+      "case_context_present": true,
+      "main_text_includes_context": false
+    }
+  ],
+  "status": "PASS_STRUCTURAL_CONSERVATION_WITH_DOCUMENTED_LIMITATIONS",
+  "expanded_leaf_count_including_physical_alias_copies": 2254,
+  "source_ledger_file_hashes": {
+    "EXTRACTION/hegazy/page_ledger.jsonl": "a63f9d67b53ebfe351d43ee4de1f2582456aadb87f66e5f149e5456b69224b86",
+    "EXTRACTION/hegazy/occurrences.jsonl": "a41d8f6bbcd6a1e6eb4a4d345acdadf660f21b2e7bce6a20369713ea1fdf4273",
+    "EXTRACTION/mcqs/page_coverage.jsonl": "8a788b66964e5ee9dfe9c1763fc3a140f2f0fc6a61c9687db45f59eef9a66291",
+    "EXTRACTION/mcqs/occurrences.jsonl": "ea45035da164068e5d3815790dd68be65271605c210ea131ea24aee24ecebba4",
+    "EXTRACTION/zahra/page_ledger.jsonl": "17b4ce4702b5958cd5d2953e7fd873a45031bb13f2a1289db162ba2ee4da370b",
+    "EXTRACTION/zahra/occurrences.jsonl": "62c9a8a9e6a5c58ca7a9c45b6bee9bf941c7b9d6a9e628244515056e74d3d687",
+    "EXTRACTION/zahra/source_reconciliation_ledger.jsonl": "362547e138828b5790eabb990a7f104f189d7e1f7af4e2eb87b3db6a3d6dd1db",
+    "EXTRACTION/all-occurrences.jsonl": "994853193599130e324035b2402d6bb33ce22ca1c8011ed52638ba560bdaba2b"
+  }
+}
