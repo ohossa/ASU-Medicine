@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router';
 import { useLanguage } from '../app/hooks/useLanguage';
 import {
   Activity, HeartHandshake, Calculator, Search, GraduationCap,
-  Lock, ArrowRight, Clock, Sparkles,
+  Lock, ArrowRight,
 } from 'lucide-react';
 import { PortalShell } from '../app/components/PortalShell';
 import { applySubjectTheme } from '../app/theme/subjectThemes';
@@ -243,40 +243,6 @@ export default function Dashboard({ userButton, onOpenTrackerSelector, studentYe
             </button>
           ))}
         </div>
-
-        {/* ── TIMED MOCK EXAM SIMULATOR HERO BANNER ─────────── */}
-        <section className="mt-10">
-          <div className="relative overflow-hidden rounded-3xl border border-blue-500/25 bg-gradient-to-r from-blue-500/[0.08] via-indigo-500/[0.05] to-emerald-500/[0.06] dark:from-blue-500/[0.12] dark:via-indigo-500/[0.08] dark:to-emerald-500/[0.08] p-6 sm:p-7 backdrop-blur-xl shadow-sm">
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-5">
-              <div className="flex items-start gap-4">
-                <div className="grid h-12 w-12 shrink-0 place-items-center rounded-2xl bg-blue-500/15 text-blue-600 dark:text-blue-400">
-                  <Clock size={24} />
-                </div>
-                <div>
-                  <div className="flex flex-wrap items-center gap-2">
-                    <span className="font-heading font-black text-lg text-zinc-900 dark:text-zinc-50">
-                      Timed Mock Exam Simulator
-                    </span>
-                    <span className="inline-flex items-center gap-1 rounded-full px-2.5 py-0.5 text-[10px] font-bold bg-blue-500/15 text-blue-600 dark:text-blue-300 border border-blue-500/20">
-                      <Sparkles size={11} />
-                      Ain Shams Official Curve
-                    </span>
-                  </div>
-                  <p className="mt-1 text-xs sm:text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed max-w-xl">
-                    Simulate realistic faculty examination pressure with 20, 40, or 80-question papers, live pacing breakdown, and Ain Shams official grade scale (A+ to F).
-                  </p>
-                </div>
-              </div>
-              <button
-                onClick={() => navigate(`/year-${YEARS[activeIdx].id}`)}
-                className="inline-flex items-center justify-center gap-2 rounded-2xl bg-blue-600 hover:bg-blue-500 text-white font-heading font-bold text-xs sm:text-sm px-5 py-3.5 shadow-sm hover:shadow-[0_8px_20px_rgba(59,130,246,0.3)] transition-all min-h-[44px] cursor-pointer whitespace-nowrap self-start sm:self-auto"
-              >
-                <span>Launch in {YEARS[activeIdx].label}</span>
-                <ArrowRight size={15} />
-              </button>
-            </div>
-          </div>
-        </section>
 
         {/* ── TOOLS ───────────────────────────────────────────── */}
         <hr className="my-14 border-zinc-200/70 dark:border-white/[0.06]" />
