@@ -34,7 +34,6 @@ import "../app/reports/reports.css";
 import AdminOverviewPanel from "./AdminOverviewPanel";
 import AdminAnalyticsView from "./admin/AdminAnalyticsView";
 import { InlineQuestionEditor } from "../app/components/InlineQuestionEditor";
-import { StudentEmailReplyModal } from "../app/components/StudentEmailReplyModal";
 const AdminQuestionEditor = lazy(() => import('./AdminQuestionEditor'));
 const statusLabels: Record<ReportStatus, string> = {
   new: "New",
@@ -415,7 +414,6 @@ export function ReportDetail({
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
   const [showInlineEditor, setShowInlineEditor] = useState(false);
-  const [showEmailModal, setShowEmailModal] = useState(false);
   useEffect(()=>{setStatus(report.status);setNotes(report.notes);setNotification(report.notification);},[report.revision]);
   async function save() {
     setBusy(true);
@@ -498,7 +496,7 @@ export function ReportDetail({
           <section className="admin-reporter" aria-labelledby="reporter-heading"><h3 id="reporter-heading">Reporter</h3><dl>
             <div><dt>Name</dt><dd>{report.reporter?.name||'Not recorded'}</dd></div>
             {report.reporter?.username&&<div><dt>Username</dt><dd>{report.reporter.username}</dd></div>}
-            <div><dt>Email</dt><dd>{report.reporter?.email?<><a href={`mailto:${report.reporter.email}`}>{report.reporter.email}</a><span className="admin-meta block mt-1">{report.reporter.emailVerified?'Verified email':'Email not verified'}</span><button type="button" className="report-secondary text-xs inline-flex items-center gap-1 mt-2" onClick={()=>setShowEmailModal(true)}><Mail size={12}/>Direct Email Modal</button></>:'Not recorded'}</dd></div>
+            <div><dt>Email</dt><dd>{report.reporter?.email?<><a href={`mailto:${report.reporter.email}`}>{report.reporter.email}</a><span className="admin-meta block mt-1">{report.reporter.emailVerified?'Verified email':'Email not verified'}</span></>:'Not recorded'}</dd></div>
             <div><dt>Account ID</dt><dd>{report.reporterId}</dd></div>
           </dl><p className="admin-meta mt-3">Profile recorded at submission. Replies use the account’s current verified email.</p></section>
         </section>
@@ -613,17 +611,6 @@ export function ReportDetail({
           </>
         )}
       </p>
-
-      <StudentEmailReplyModal
-        isOpen={showEmailModal}
-        onClose={() => setShowEmailModal(false)}
-        studentEmail={report.reporter?.email || ""}
-        studentName={report.reporter?.name || ""}
-        moduleCode={snapshot.moduleCode}
-        questionId={String(snapshot.question.id)}
-        reportedCategory={REPORT_CATEGORIES[report.category]?.en}
-        reportExplanation={report.explanation}
-      />
     </article>
   );
 }
