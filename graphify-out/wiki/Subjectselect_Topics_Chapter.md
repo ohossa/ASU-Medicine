@@ -1,13 +1,11 @@
 # Subjectselect Topics Chapter
 
-> 91 nodes
+> 76 nodes
 
 ## Key Concepts
 
-- **Question** (62 connections) — `src/app/types.ts`
 - **ChapterData** (53 connections) — `src/app/types.ts`
 - **SubjectSelect.tsx** (53 connections) — `src/app/components/SubjectSelect.tsx`
-- **ref_lucide_react** (51 connections)
 - **ChapterSelect.tsx** (43 connections) — `src/app/components/ChapterSelect.tsx`
 - **practiceNavigation.ts** (36 connections) — `src/app/learning/practiceNavigation.ts`
 - **customPractice.ts** (35 connections) — `src/app/learning/customPractice.ts`
@@ -18,43 +16,42 @@
 - **SubjectSelect.navigation.test.tsx** (20 connections) — `src/app/components/SubjectSelect.navigation.test.tsx`
 - **customPractice.test.ts** (20 connections) — `src/app/learning/customPractice.test.ts`
 - **practiceNavigation.test.ts** (20 connections) — `src/app/learning/practiceNavigation.test.ts`
-- **QuizResult** (18 connections) — `src/app/utils/storage.ts`
 - **ChapterSelect()** (16 connections) — `src/app/components/ChapterSelect.tsx`
 - **selectedPractice()** (16 connections) — `src/app/learning/customPractice.ts`
-- **learning-completeness.test.ts** (16 connections) — `src/test/reports/learning-completeness.test.ts`
 - **SubjectSelect.topics.test.tsx** (14 connections) — `src/app/components/SubjectSelect.topics.test.tsx`
 - **ShuffleSwitch()** (13 connections) — `src/app/preferences/ShuffleSwitch.tsx`
-- **FlowBreadcrumbs.tsx** (13 connections) — `src/app/components/FlowBreadcrumbs.tsx`
-- **FlowBreadcrumbs()** (12 connections) — `src/app/components/FlowBreadcrumbs.tsx`
 - **TopicPracticePicker()** (12 connections) — `src/app/components/TopicPracticePicker.tsx`
 - **questionCountLabel()** (11 connections) — `src/app/learning/practiceNavigation.ts`
 - **attemptSnapshot.ts** (11 connections) — `src/app/learning/attemptSnapshot.ts`
-- *... and 66 more nodes in this community*
+- **ChapterTopicList()** (10 connections) — `src/app/components/ChapterTopicList.tsx`
+- **isPastExamSection()** (10 connections) — `src/app/lib/practiceOrder.ts`
+- **practiceOrder.ts** (10 connections) — `src/app/lib/practiceOrder.ts`
+- **ShuffleSwitch.tsx** (10 connections) — `src/app/preferences/ShuffleSwitch.tsx`
+- **year2-topics-consolidation.test.ts** (10 connections) — `src/app/year2-topics-consolidation.test.ts`
+- **visiblePracticeChapters()** (9 connections) — `src/app/lib/practiceOrder.ts`
+- *... and 51 more nodes in this community*
 
 ## Relationships
 
-- [Flagged Questions & Results UI](Flagged_Questions_&_Results_UI.md) (84 shared connections)
-- [Root App Shell & Authentication](Root_App_Shell_&_Authentication.md) (42 shared connections)
-- [Chapter Selection & Flow Breadcrumbs](Chapter_Selection_&_Flow_Breadcrumbs.md) (41 shared connections)
-- [Intake Verification Reports & Audits](Intake_Verification_Reports_&_Audits.md) (35 shared connections)
-- [Flowbreadcrumbs Gitbankselect Integration](Flowbreadcrumbs_Gitbankselect_Integration.md) (34 shared connections)
-- [Learning Correctionstatus Facts](Learning_Correctionstatus_Facts.md) (34 shared connections)
-- [Useacademicyear Usesearchindex Questionsearch](Useacademicyear_Usesearchindex_Questionsearch.md) (21 shared connections)
-- [Community 36](Community_36.md) (10 shared connections)
-- [Community 81](Community_81.md) (6 shared connections)
-- [Community 3](Community_3.md) (5 shared connections)
-- [Radix React Imagewithfallback](Radix_React_Imagewithfallback.md) (5 shared connections)
-- [Analyticsdashboard Analyticsdashboardprops Card](Analyticsdashboard_Analyticsdashboardprops_Card.md) (3 shared connections)
+- [Flagged Questions & Results UI](Flagged_Questions_&_Results_UI.md) (70 shared connections)
+- [Community 36](Community_36.md) (39 shared connections)
+- [Chapter Selection & Flow Breadcrumbs](Chapter_Selection_&_Flow_Breadcrumbs.md) (31 shared connections)
+- [Community 34](Community_34.md) (30 shared connections)
+- [Community 95](Community_95.md) (27 shared connections)
+- [Community 6](Community_6.md) (23 shared connections)
+- [Community 24](Community_24.md) (12 shared connections)
+- [Community 15](Community_15.md) (11 shared connections)
+- [Community 46](Community_46.md) (9 shared connections)
+- [Community 1](Community_1.md) (2 shared connections)
+- [Community 42](Community_42.md) (2 shared connections)
+- [Community 152](Community_152.md) (2 shared connections)
 
 ## Source Files
 
 - `docs/ARCHITECTURE_ENCYCLOPEDIA.md`
-- `src/app/components/AnalyticsDashboard.tsx`
 - `src/app/components/ChapterSelect.organization.test.tsx`
 - `src/app/components/ChapterSelect.tsx`
 - `src/app/components/ChapterTopicList.tsx`
-- `src/app/components/FlaggedQuestionsScreen.tsx`
-- `src/app/components/FlowBreadcrumbs.tsx`
 - `src/app/components/SubjectSelect.navigation.test.tsx`
 - `src/app/components/SubjectSelect.topics.test.tsx`
 - `src/app/components/SubjectSelect.tsx`
@@ -64,15 +61,18 @@
 - `src/app/iae1-topics.test.ts`
 - `src/app/learning/LearningProvider.tsx`
 - `src/app/learning/attemptSnapshot.ts`
-- `src/app/learning/currentPractice.ts`
 - `src/app/learning/customPractice.test.ts`
 - `src/app/learning/customPractice.ts`
 - `src/app/learning/historyScope.ts`
+- `src/app/learning/practiceNavigation.test.ts`
+- `src/app/learning/practiceNavigation.ts`
+- `src/app/lib/practiceOrder.test.ts`
+- `src/app/lib/practiceOrder.ts`
 
 ## Audit Trail
 
-- EXTRACTED: 608 (99%)
-- INFERRED: 7 (1%)
+- EXTRACTED: 467 (99%)
+- INFERRED: 6 (1%)
 - AMBIGUOUS: 0 (0%)
 
 ---

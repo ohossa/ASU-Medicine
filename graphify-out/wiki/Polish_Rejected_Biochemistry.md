@@ -32,14 +32,14 @@
 
 ## Relationships
 
-- [Biochemistry Build Intake](Biochemistry_Build_Intake.md) (7 shared connections)
-- [Reorganize Essays Bank](Reorganize_Essays_Bank.md) (7 shared connections)
+- [Community 20](Community_20.md) (10 shared connections)
 - [Keyword Unique Keywords](Keyword_Unique_Keywords.md) (7 shared connections)
 - [Quality Replay Content](Quality_Replay_Content.md) (6 shared connections)
-- [Community 79](Community_79.md) (2 shared connections)
+- [Biochemistry Build Intake](Biochemistry_Build_Intake.md) (5 shared connections)
 - [Community 38](Community_38.md) (2 shared connections)
 - [Rejected Biochemistry Organization](Rejected_Biochemistry_Organization.md) (2 shared connections)
 - [Community 93](Community_93.md) (1 shared connections)
+- [Community 252](Community_252.md) (1 shared connections)
 
 ## Source Files
 

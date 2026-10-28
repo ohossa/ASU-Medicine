@@ -21,7 +21,7 @@
 
 ## Relationships
 
-- [Portalentry Styles Themecontext](Portalentry_Styles_Themecontext.md) (1 shared connections)
+- [Community 95](Community_95.md) (1 shared connections)
 
 ## Source Files
 

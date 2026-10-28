@@ -1,8 +1,8 @@
 # vitest
 
-> God node · 135 connections · `package.json`
+> God node · 144 connections · `package.json`
 
-**Community:** [Intake Verification Reports & Audits](Intake_Verification_Reports_&_Audits.md)
+**Community:** [Community 36](Community_36.md)
 
 ## Connections by Relation
 
@@ -24,13 +24,13 @@
 - learning-completeness.test.ts `EXTRACTED`
 - GitBankSelect.test.tsx `EXTRACTED`
 - year1-quality-release.test.ts `EXTRACTED`
+- api-security-fixes.test.ts `EXTRACTED`
 - QuizTrueFalse.feedback.test.tsx `EXTRACTED`
 - SubjectSelect.topics.test.tsx `EXTRACTED`
 - triage-worker.test.ts `EXTRACTED`
 - PortalControls.test.tsx `EXTRACTED`
 - SubjectSelect.sync.test.tsx `EXTRACTED`
-- history-bank.integration.test.ts `EXTRACTED`
-- *…and 114 more `imports_from` connection(s) not listed (lowest-degree first to go)*
+- *…and 123 more `imports_from` connection(s) not listed (lowest-degree first to go)*
 
 ---
 

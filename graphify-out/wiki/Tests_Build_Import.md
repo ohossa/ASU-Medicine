@@ -43,8 +43,8 @@
 - [Release Inspect October](Release_Inspect_October.md) (4 shared connections)
 - [Community 1](Community_1.md) (4 shared connections)
 - [Community 67](Community_67.md) (3 shared connections)
-- [Intake Verification Reports & Audits](Intake_Verification_Reports_&_Audits.md) (1 shared connections)
-- [Files Dedupe Blocks](Files_Dedupe_Blocks.md) (1 shared connections)
+- [Community 13](Community_13.md) (1 shared connections)
+- [Community 33](Community_33.md) (1 shared connections)
 
 ## Source Files
 

@@ -2,7 +2,7 @@
 
 > God node · 143 connections · `.agents/skills/apple-design/references/hig-lookup.md`
 
-**Community:** [Community 78](Community_78.md)
+**Community:** [Community 251](Community_251.md)
 
 ## Connections by Relation
 

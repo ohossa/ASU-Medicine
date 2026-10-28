@@ -1,49 +1,61 @@
 # Community 107
 
-> 13 nodes
+> 31 nodes
 
 ## Key Concepts
 
-- **ref_motion** (22 connections)
-- **Light_Dark Mode Toggle/src/app/App.tsx** (6 connections) — `Light_Dark Mode Toggle/src/app/App.tsx`
-- **Light_Dark Mode Toggle/src/app/components/ThemeToggle.tsx** (6 connections) — `Light_Dark Mode Toggle/src/app/components/ThemeToggle.tsx`
-- **StackedCarousel.tsx** (6 connections) — `src/app/components/ui/StackedCarousel.tsx`
-- **ref_react_dom** (5 connections)
-- **Light_Dark Mode Toggle/src/main.tsx** (4 connections) — `Light_Dark Mode Toggle/src/main.tsx`
-- **App()** (3 connections) — `Light_Dark Mode Toggle/src/app/App.tsx`
-- **ThemeToggle()** (3 connections) — `Light_Dark Mode Toggle/src/app/components/ThemeToggle.tsx`
-- **ThemeToggleProps** (1 connections) — `Light_Dark Mode Toggle/src/app/components/ThemeToggle.tsx`
-- **CarouselItem** (1 connections) — `src/app/components/ui/StackedCarousel.tsx`
-- **StackedCarouselProps** (1 connections) — `src/app/components/ui/StackedCarousel.tsx`
-- **StackedCarousel()** (1 connections) — `src/app/components/ui/StackedCarousel.tsx`
-- **light_dark_mode_toggle_src_styles_index** (1 connections)
+- **File management** (18 connections) — `.agents/skills/apple-design/references/hig/file-management.md`
+- **Search fields** (15 connections) — `.agents/skills/apple-design/references/hig/search-fields.md`
+- **Searching** (15 connections) — `.agents/skills/apple-design/references/hig/searching.md`
+- **Token fields** (11 connections) — `.agents/skills/apple-design/references/hig/token-fields.md`
+- **Path controls** (10 connections) — `.agents/skills/apple-design/references/hig/path-controls.md`
+- **Printing** (10 connections) — `.agents/skills/apple-design/references/hig/printing.md`
+- **Change log** (1 connections) — `.agents/skills/apple-design/references/hig/file-management.md`
+- **Creating and opening files** (1 connections) — `.agents/skills/apple-design/references/hig/file-management.md`
+- **Platform considerations** (1 connections) — `.agents/skills/apple-design/references/hig/file-management.md`
+- **Quick Look previews** (1 connections) — `.agents/skills/apple-design/references/hig/file-management.md`
+- **Related guidelines** (1 connections) — `.agents/skills/apple-design/references/hig/file-management.md`
+- **Saving work** (1 connections) — `.agents/skills/apple-design/references/hig/file-management.md`
+- **Best practices** (1 connections) — `.agents/skills/apple-design/references/hig/path-controls.md`
+- **Platform considerations** (1 connections) — `.agents/skills/apple-design/references/hig/path-controls.md`
+- **Related guidelines** (1 connections) — `.agents/skills/apple-design/references/hig/path-controls.md`
+- **Best practices** (1 connections) — `.agents/skills/apple-design/references/hig/printing.md`
+- **Platform considerations** (1 connections) — `.agents/skills/apple-design/references/hig/printing.md`
+- **Related guidelines** (1 connections) — `.agents/skills/apple-design/references/hig/printing.md`
+- **Best practices** (1 connections) — `.agents/skills/apple-design/references/hig/search-fields.md`
+- **Change log** (1 connections) — `.agents/skills/apple-design/references/hig/search-fields.md`
+- **Platform considerations** (1 connections) — `.agents/skills/apple-design/references/hig/search-fields.md`
+- **Related guidelines** (1 connections) — `.agents/skills/apple-design/references/hig/search-fields.md`
+- **Scope bars and tokens** (1 connections) — `.agents/skills/apple-design/references/hig/search-fields.md`
+- **Best practices** (1 connections) — `.agents/skills/apple-design/references/hig/searching.md`
+- **Change log** (1 connections) — `.agents/skills/apple-design/references/hig/searching.md`
+- *... and 6 more nodes in this community*
 
 ## Relationships
 
-- [Radix React Imagewithfallback](Radix_React_Imagewithfallback.md) (3 shared connections)
-- [Subjectselect Topics Chapter](Subjectselect_Topics_Chapter.md) (2 shared connections)
-- [Flowbreadcrumbs Gitbankselect Integration](Flowbreadcrumbs_Gitbankselect_Integration.md) (2 shared connections)
-- [Flagged Questions & Results UI](Flagged_Questions_&_Results_UI.md) (2 shared connections)
-- [Community 81](Community_81.md) (2 shared connections)
-- [Community 95](Community_95.md) (2 shared connections)
-- [Community 3](Community_3.md) (2 shared connections)
-- [Root App Shell & Authentication](Root_App_Shell_&_Authentication.md) (1 shared connections)
-- [Analyticsdashboard Analyticsdashboardprops Card](Analyticsdashboard_Analyticsdashboardprops_Card.md) (1 shared connections)
-- [Clinicalcasesolver Casedata Cases](Clinicalcasesolver_Casedata_Cases.md) (1 shared connections)
-- [Confettimanager Levelupoverlay Celebrate](Confettimanager_Levelupoverlay_Celebrate.md) (1 shared connections)
-- [Loginscreen Clerk Themes](Loginscreen_Clerk_Themes.md) (1 shared connections)
+- [Community 1](Community_1.md) (24 shared connections)
+- [Community 251](Community_251.md) (7 shared connections)
+- [Community 131](Community_131.md) (5 shared connections)
+- [Community 118](Community_118.md) (2 shared connections)
+- [Community 134](Community_134.md) (2 shared connections)
+- [Community 85](Community_85.md) (1 shared connections)
+- [Community 11](Community_11.md) (1 shared connections)
+- [Community 83](Community_83.md) (1 shared connections)
+- [Community 97](Community_97.md) (1 shared connections)
 
 ## Source Files
 
-- `Light_Dark Mode Toggle/src/app/App.tsx`
-- `Light_Dark Mode Toggle/src/app/components/ThemeToggle.tsx`
-- `Light_Dark Mode Toggle/src/main.tsx`
-- `src/app/components/ui/StackedCarousel.tsx`
+- `.agents/skills/apple-design/references/hig/file-management.md`
+- `.agents/skills/apple-design/references/hig/path-controls.md`
+- `.agents/skills/apple-design/references/hig/printing.md`
+- `.agents/skills/apple-design/references/hig/search-fields.md`
+- `.agents/skills/apple-design/references/hig/searching.md`
+- `.agents/skills/apple-design/references/hig/token-fields.md`
 
 ## Audit Trail
 
-- EXTRACTED: 44 (100%)
-- INFERRED: 0 (0%)
+- EXTRACTED: 50 (68%)
+- INFERRED: 24 (32%)
 - AMBIGUOUS: 0 (0%)
 
 ---

@@ -4,7 +4,7 @@
 
 ## Key Concepts
 
-- **ref_path** (11 connections)
+- **ref_path** (12 connections)
 - **fix-section8-078.ts** (7 connections) — `data-format-v2/scripts/fix-section8-078.ts`
 - **final-assembly.ts** (4 connections) — `data-format-v2/scripts/final-assembly.ts`
 - **targeted-fix.ts** (4 connections) — `data-format-v2/scripts/targeted-fix.ts`
@@ -23,7 +23,8 @@
 
 - [Bank Audit Validate](Bank_Audit_Validate.md) (4 shared connections)
 - [Vite Config Figmaassetresolver](Vite_Config_Figmaassetresolver.md) (2 shared connections)
-- [Intake Verification Reports & Audits](Intake_Verification_Reports_&_Audits.md) (1 shared connections)
+- [Community 36](Community_36.md) (1 shared connections)
+- [Community 72](Community_72.md) (1 shared connections)
 - [Fixes Merge Chunk](Fixes_Merge_Chunk.md) (1 shared connections)
 - [Final Bank Assemble](Final_Bank_Assemble.md) (1 shared connections)
 - [Import Patho Essays](Import_Patho_Essays.md) (1 shared connections)
@@ -39,7 +40,7 @@
 
 ## Audit Trail
 
-- EXTRACTED: 25 (100%)
+- EXTRACTED: 26 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 

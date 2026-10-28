@@ -34,9 +34,8 @@
 ## Relationships
 
 - [Intake Valid Google](Intake_Valid_Google.md) (5 shared connections)
+- [Community 33](Community_33.md) (2 shared connections)
 - [React Eslint Plugin](React_Eslint_Plugin.md) (2 shared connections)
-- [Files Dedupe Blocks](Files_Dedupe_Blocks.md) (1 shared connections)
-- [Files Valid Validate](Files_Valid_Validate.md) (1 shared connections)
 - [Extract Chunks Buildchunks](Extract_Chunks_Buildchunks.md) (1 shared connections)
 
 ## Source Files

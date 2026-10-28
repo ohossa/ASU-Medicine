@@ -33,9 +33,8 @@
 
 ## Relationships
 
-- [Files Dedupe Blocks](Files_Dedupe_Blocks.md) (1 shared connections)
-- [Files Valid Validate](Files_Valid_Validate.md) (1 shared connections)
-- [Intake Verification Reports & Audits](Intake_Verification_Reports_&_Audits.md) (1 shared connections)
+- [Community 33](Community_33.md) (2 shared connections)
+- [Community 36](Community_36.md) (1 shared connections)
 
 ## Source Files
 

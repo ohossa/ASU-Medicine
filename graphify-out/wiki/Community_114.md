@@ -1,47 +1,38 @@
 # Community 114
 
-> 13 nodes
+> 11 nodes
 
 ## Key Concepts
 
-- **learning-policy.ts** (13 connections) — `server/learning-policy.ts`
-- **learning-service.ts** (13 connections) — `server/learning-service.ts`
-- **QuestionSnapshot** (12 connections) — `src/app/reports/contracts.ts`
-- **prepareReward()** (6 connections) — `server/learning-policy.ts`
-- **createLearningService()** (6 connections) — `server/learning-service.ts`
-- **learning-policy.test.ts** (5 connections) — `src/test/reports/learning-policy.test.ts`
-- **TITLES** (4 connections) — `src/app/learning/contracts.ts`
-- **learning-service.test.ts** (4 connections) — `src/test/reports/learning-service.test.ts`
-- **Dependencies** (3 connections) — `server/learning-service.ts`
-- **REWARDS** (3 connections) — `src/app/learning/contracts.ts`
-- **account()** (2 connections) — `server/learning-service.ts`
-- **setup()** (2 connections) — `src/test/reports/learning-service.test.ts`
-- **snapshot()** (1 connections) — `src/test/reports/learning-policy.test.ts`
+- **navigation-menu.tsx** (15 connections) — `Light_Dark Mode Toggle/src/app/components/ui/navigation-menu.tsx`
+- **NavigationMenu()** (3 connections) — `Light_Dark Mode Toggle/src/app/components/ui/navigation-menu.tsx`
+- **NavigationMenuTrigger()** (3 connections) — `Light_Dark Mode Toggle/src/app/components/ui/navigation-menu.tsx`
+- **NavigationMenuViewport()** (3 connections) — `Light_Dark Mode Toggle/src/app/components/ui/navigation-menu.tsx`
+- **NavigationMenuContent()** (2 connections) — `Light_Dark Mode Toggle/src/app/components/ui/navigation-menu.tsx`
+- **NavigationMenuIndicator()** (2 connections) — `Light_Dark Mode Toggle/src/app/components/ui/navigation-menu.tsx`
+- **NavigationMenuItem()** (2 connections) — `Light_Dark Mode Toggle/src/app/components/ui/navigation-menu.tsx`
+- **NavigationMenuLink()** (2 connections) — `Light_Dark Mode Toggle/src/app/components/ui/navigation-menu.tsx`
+- **NavigationMenuList()** (2 connections) — `Light_Dark Mode Toggle/src/app/components/ui/navigation-menu.tsx`
+- **navigationMenuTriggerStyle** (2 connections) — `Light_Dark Mode Toggle/src/app/components/ui/navigation-menu.tsx`
+- **@radix-ui/react-navigation-menu@1.2.5** (2 connections) — `Light_Dark Mode Toggle/package.json`
 
 ## Relationships
 
-- [Serverless Error Inbox & Redis](Serverless_Error_Inbox_&_Redis.md) (7 shared connections)
-- [Bank Question Edit](Bank_Question_Edit.md) (6 shared connections)
-- [Learning Correctionstatus Facts](Learning_Correctionstatus_Facts.md) (5 shared connections)
-- [Triage Report Lease](Triage_Report_Lease.md) (4 shared connections)
-- [Flagged Questions & Results UI](Flagged_Questions_&_Results_UI.md) (4 shared connections)
-- [Community 46](Community_46.md) (4 shared connections)
-- [Intake Verification Reports & Audits](Intake_Verification_Reports_&_Audits.md) (2 shared connections)
-- [Subjectselect Topics Chapter](Subjectselect_Topics_Chapter.md) (1 shared connections)
-- [Root App Shell & Authentication](Root_App_Shell_&_Authentication.md) (1 shared connections)
+- [Atomic UI Components & Avatars](Atomic_UI_Components_&_Avatars.md) (9 shared connections)
+- [Community 95](Community_95.md) (1 shared connections)
+- [Toggle Alert Group](Toggle_Alert_Group.md) (1 shared connections)
+- [React Accordion Checkbox](React_Accordion_Checkbox.md) (1 shared connections)
+- [Radix React Imagewithfallback](Radix_React_Imagewithfallback.md) (1 shared connections)
+- [React Framework & Icon Dependencies](React_Framework_&_Icon_Dependencies.md) (1 shared connections)
 
 ## Source Files
 
-- `server/learning-policy.ts`
-- `server/learning-service.ts`
-- `src/app/learning/contracts.ts`
-- `src/app/reports/contracts.ts`
-- `src/test/reports/learning-policy.test.ts`
-- `src/test/reports/learning-service.test.ts`
+- `Light_Dark Mode Toggle/package.json`
+- `Light_Dark Mode Toggle/src/app/components/ui/navigation-menu.tsx`
 
 ## Audit Trail
 
-- EXTRACTED: 54 (100%)
+- EXTRACTED: 26 (100%)
 - INFERRED: 0 (0%)
 - AMBIGUOUS: 0 (0%)
 
