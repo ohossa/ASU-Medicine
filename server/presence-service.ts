@@ -1,4 +1,5 @@
 import { evalRedis } from "./report-store.js";
+import { getSupabase } from "./supabase-client.js";
 
 const HEARTBEAT_ZSET = "asu_presence:v1:heartbeat";
 const USER_META_PREFIX = "asu_presence:v1:user:";
@@ -44,6 +45,25 @@ export async function recordPresence(payload: PresencePayload): Promise<number> 
   const rawId = typeof payload.userId === 'string' ? payload.userId.trim() : '';
   const userId = /^[a-zA-Z0-9_-]{1,64}$/.test(rawId) ? rawId : "anonymous";
   const rawAlias = typeof payload.alias === 'string' ? payload.alias.trim() : '';
+
+  const supabase = getSupabase();
+  if (supabase) {
+    try {
+      await supabase.from('presence').upsert({
+        user_id: userId,
+        alias: rawAlias ? rawAlias.slice(0, 40) : "Student",
+        module_code: payload.moduleCode ? String(payload.moduleCode).slice(0, 20) : "",
+        last_seen: new Date().toISOString(),
+      }, { onConflict: 'user_id' });
+
+      const cutoffIso = new Date(Date.now() - ONLINE_WINDOW_SECONDS * 1000).toISOString();
+      const { count } = await supabase.from('presence').select('*', { count: 'exact', head: true }).gt('last_seen', cutoffIso);
+      return count ?? 1;
+    } catch {
+      // fallback to Redis
+    }
+  }
+
   const metaJson = JSON.stringify({
     alias: rawAlias ? rawAlias.slice(0, 40) : "Student",
     moduleCode: payload.moduleCode ? String(payload.moduleCode).slice(0, 20) : "",
@@ -70,6 +90,34 @@ export async function getOnlineUsers(): Promise<{
 }> {
   const now = Math.floor(Date.now() / 1000);
   const cutoff = now - ONLINE_WINDOW_SECONDS;
+
+  const supabase = getSupabase();
+  if (supabase) {
+    try {
+      const cutoffIso = new Date(Date.now() - ONLINE_WINDOW_SECONDS * 1000).toISOString();
+      const { data, error } = await supabase
+        .from('presence')
+        .select('user_id, alias, module_code, last_seen')
+        .gt('last_seen', cutoffIso)
+        .order('last_seen', { ascending: false });
+
+      if (data && !error) {
+        const users: OnlineUserSummary[] = data.map((row: any) => ({
+          userId: row.user_id,
+          alias: row.alias,
+          moduleCode: row.module_code,
+          lastSeenSecondsAgo: Math.max(0, Math.floor((Date.now() - new Date(row.last_seen).getTime()) / 1000)),
+        }));
+        return {
+          onlineCount: users.length,
+          onlineUserIds: users.map(u => u.userId),
+          users,
+        };
+      }
+    } catch {
+      // fallback to Redis
+    }
+  }
 
   try {
     const rawIds = await evalRedis(

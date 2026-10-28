@@ -137,4 +137,28 @@ describe('Question Reporting Resilience & Resolution Suite', () => {
     expect(typeof result.id).toBe('string');
     expect(result.id.startsWith('r_')).toBe(true);
   });
+
+  it('retrieves recovered report r_dc185985f0cd0a26eb08483e566d837219cb0e4c for MGL3-CH5-PATH-0847 without 404', async () => {
+    const reportId = 'r_dc185985f0cd0a26eb08483e566d837219cb0e4c';
+    const report = await reportStore.get(reportId);
+
+    expect(report).not.toBeNull();
+    expect(report?.id).toBe(reportId);
+    expect(report?.snapshot.question.id).toBe('MGL3-CH5-PATH-0847');
+    expect(report?.snapshot.moduleCode).toBe('MGL-3');
+    expect(report?.explanation).toBe('Bro this is micro');
+    expect(report?.category).toBe('formatting');
+    expect(report?.snapshot.question.correctIndex).toBe(3);
+    expect(report?.snapshot.question.options?.[3]).toBe('HEV');
+  });
+
+  it('lists recovered report r_dc185985f0cd0a26eb08483e566d837219cb0e4c in admin portal inbox', async () => {
+    const list = await reportStore.list('all', 0, 50);
+    const found = list.reports.find((r) => r.id === 'r_dc185985f0cd0a26eb08483e566d837219cb0e4c');
+
+    expect(found).toBeDefined();
+    expect(found?.snapshot.question.id).toBe('MGL3-CH5-PATH-0847');
+    expect(found?.status).toBe('new');
+    expect(list.counts.new).toBeGreaterThanOrEqual(1);
+  });
 });

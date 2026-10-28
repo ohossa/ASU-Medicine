@@ -41,17 +41,23 @@ export default async function handler(req: Req, res: Res) {
   try {
     const pingResult = await evalRedis("return redis.call('PING')", []);
     const prunedCount = await evalRedis(`
-      local expired = 0
+      local deleted = 0
       local rateKeys = redis.call('KEYS', 'hint_rate:*')
       for _, k in ipairs(rateKeys) do
         local ttl = redis.call('TTL', k)
-        if ttl == -1 then
-          redis.call('EXPIRE', k, 3600)
-          expired = expired + 1
+        if ttl == -1 or ttl == 0 then
+          redis.call('DEL', k)
+          deleted = deleted + 1
         end
       end
-      return expired
-    `, []);
+      -- Prune stale presence records older than 2 hours to reclaim memory
+      local now = tonumber(ARGV[1] or '0')
+      if now > 0 then
+        redis.call('ZREMRANGEBYSCORE', 'asu_presence:v1:heartbeat', '-inf', now - 7200)
+        redis.call('ZREMRANGEBYSCORE', '{asu_presence}:heartbeat', '-inf', now - 7200)
+      end
+      return deleted
+    `, [], [String(Math.floor(Date.now() / 1000))]);
 
     checks.redis = {
       status: 'healthy',
