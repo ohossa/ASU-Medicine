@@ -2,6 +2,7 @@ import { verifyToken } from '@clerk/backend';
 import { Redis as UpstashRedis } from '@upstash/redis';
 import { Redis as ioredis } from 'ioredis';
 import {mergeHistory,newerValue,SYNC_CAS_LUA} from '../shared/cloud-merge.js';
+import { getSupabase } from '../server/supabase-client.js';
 import LZString from 'lz-string';
 const { compress, decompress } = LZString;
 
@@ -165,13 +166,29 @@ export default async function handler(req: any, res: any) {
       return res.status(401).json({ error: 'Unauthorized: Invalid token claims' });
     }
 
-    if (!redisUrl && !(kvUrl && kvToken)) return res.status(503).json({error:'Cloud sync storage is not configured.'});
+    const supabase = getSupabase();
+    if (!redisUrl && !(kvUrl && kvToken) && !supabase) return res.status(503).json({error:'Cloud sync storage is not configured.'});
     const keyPrefix = `asu_data:${userId}:`;
 
     // 3. Handle GET Request
     if (req.method === 'GET') {
+      if (supabase) {
+        try {
+          const { data: row, error } = await supabase
+            .from('user_progress')
+            .select('data')
+            .eq('user_id', userId)
+            .maybeSingle();
+          if (!error && row?.data && typeof row.data === 'object' && Object.keys(row.data).length > 0) {
+            return res.status(200).json({ data: row.data });
+          }
+        } catch (err) {
+          console.warn('Supabase sync GET error, checking Redis fallback:', err);
+        }
+      }
+
       if (!redisUrl && (!kvUrl || !kvToken)) {
-        return res.status(200).json({ data: null, message: "Redis/KV not configured yet" });
+        return res.status(200).json({ data: null, message: "Storage not configured yet" });
       }
       try {
         const keys = await dbClient.scanKeys(`${keyPrefix}*`);
@@ -190,6 +207,14 @@ export default async function handler(req: any, res: any) {
             }
           }
         }
+        // Auto-seed Supabase in background if Supabase is active
+        if (supabase && Object.keys(result).length > 0) {
+          supabase.from('user_progress').upsert({
+            user_id: userId,
+            data: result,
+            updated_at: new Date().toISOString(),
+          }, { onConflict: 'user_id' }).then(() => {}, () => {});
+        }
         return res.status(200).json({ data: result });
       } catch (err: unknown) {
         const msg = err instanceof Error ? err.message : String(err);
@@ -200,8 +225,8 @@ export default async function handler(req: any, res: any) {
 
     // 4. Handle POST Request
     if (req.method === 'POST') {
-      if (!redisUrl && (!kvUrl || !kvToken)) {
-        return res.status(200).json({ success: true, message: "Redis/KV not configured yet, skipped save" });
+      if (!redisUrl && (!kvUrl || !kvToken) && !supabase) {
+        return res.status(200).json({ success: true, message: "Storage not configured yet, skipped save" });
       }
 
       let body = req.body;
@@ -231,32 +256,76 @@ export default async function handler(req: any, res: any) {
           !Number.isInteger(yearValue.year) || yearValue.year < 1 || yearValue.year > 5 ||
           !Number.isFinite(yearValue.timestamp)
         )) return res.status(400).json({ error: 'Invalid academic year preference.' });
-        // The browser sends a delta, not a complete account snapshot.
-        // Only explicit null values delete data; omitted keys stay untouched.
-        for (const [strippedKey, value] of Object.entries(body)) {
-          if (strippedKey.startsWith('asu_preferences:') && strippedKey !== `asu_preferences:${userId}:shuffle` && strippedKey !== yearKey) continue;
-          if (strippedKey.startsWith('asu_study_tracker:') && !strippedKey.startsWith(`asu_study_tracker:${userId}:`)) continue;
-          if (strippedKey.startsWith('asu_quiz_session:') && !strippedKey.startsWith(`asu_quiz_session:${userId}:`)) continue;
-          const fullKey = `${keyPrefix}${strippedKey}`;
-          if (value === null) {
-            await dbClient.del(fullKey);
-            continue;
+
+        // 1. Save to Supabase (Single row, O(1), no SCAN, 500 MB capacity)
+        if (supabase) {
+          try {
+            const { data: existingRow } = await supabase
+              .from('user_progress')
+              .select('data, academic_year')
+              .eq('user_id', userId)
+              .maybeSingle();
+            const current = (existingRow?.data as Record<string, unknown>) || {};
+            const next = { ...current };
+
+            for (const [key, val] of Object.entries(body)) {
+              if (val === null) {
+                delete next[key];
+              } else if (key === 'endocrine_essay_quiz_history' || key.startsWith(`asu_quiz_session:${userId}:`)) {
+                next[key] = mergeHistory(current[key], val, key === 'endocrine_essay_quiz_history');
+              } else {
+                next[key] = val;
+              }
+            }
+
+            let year = existingRow?.academic_year || 1;
+            if (body[yearKey]?.year) {
+              year = body[yearKey].year;
+            }
+
+            await supabase.from('user_progress').upsert({
+              user_id: userId,
+              data: next,
+              academic_year: year,
+              updated_at: new Date().toISOString(),
+            }, { onConflict: 'user_id' });
+          } catch (err) {
+            console.warn('Supabase sync POST error:', err);
           }
-          if (strippedKey==='endocrine_essay_quiz_history' || strippedKey.startsWith(`asu_quiz_session:${userId}:`)) {
-            await mergeAccountValue(fullKey,value,strippedKey==='endocrine_essay_quiz_history');
-            continue;
-          }
-          const compressed = compress(JSON.stringify(value));
-          if (compressed) {
-            if (strippedKey === `asu_preferences:${userId}:shuffle` || strippedKey === yearKey || strippedKey.startsWith(`asu_study_tracker:${userId}:`)) await dbClient.set(fullKey, compressed);
-            else await setWithTTL(fullKey, compressed);
+        }
+
+        // 2. Also write to Redis mirror if Redis is configured
+        if (redisUrl || (kvUrl && kvToken)) {
+          try {
+            for (const [strippedKey, value] of Object.entries(body)) {
+              if (strippedKey.startsWith('asu_preferences:') && strippedKey !== `asu_preferences:${userId}:shuffle` && strippedKey !== yearKey) continue;
+              if (strippedKey.startsWith('asu_study_tracker:') && !strippedKey.startsWith(`asu_study_tracker:${userId}:`)) continue;
+              if (strippedKey.startsWith('asu_quiz_session:') && !strippedKey.startsWith(`asu_quiz_session:${userId}:`)) continue;
+              const fullKey = `${keyPrefix}${strippedKey}`;
+              if (value === null) {
+                await dbClient.del(fullKey);
+                continue;
+              }
+              if (strippedKey==='endocrine_essay_quiz_history' || strippedKey.startsWith(`asu_quiz_session:${userId}:`)) {
+                await mergeAccountValue(fullKey,value,strippedKey==='endocrine_essay_quiz_history');
+                continue;
+              }
+              const compressed = compress(JSON.stringify(value));
+              if (compressed) {
+                if (strippedKey === `asu_preferences:${userId}:shuffle` || strippedKey === yearKey || strippedKey.startsWith(`asu_study_tracker:${userId}:`)) await dbClient.set(fullKey, compressed);
+                else await setWithTTL(fullKey, compressed);
+              }
+            }
+          } catch (err) {
+            // Ignore Redis mirror failure if Supabase succeeded
+            if (!supabase) throw err;
           }
         }
 
         return res.status(200).json({ success: true });
       } catch (err: unknown) {
         const msg = err instanceof Error ? err.message : String(err);
-        console.error('Redis POST error:', err);
+        console.error('Sync POST error:', err);
         return res.status(500).json({ error: 'Failed to store data', details: msg });
       }
     }

@@ -120,6 +120,52 @@ const RECOVERED_REPORTS: Record<string, import("../src/app/reports/contracts.js"
 // Resilient in-memory fallback store to ensure zero data loss during Redis network outages
 const fallbackReports = new Map<string, import("../src/app/reports/contracts.js").QuestionReport>();
 
+let hasAttemptedLegacyRedisSync = false;
+async function syncLegacyRedisReportsToSupabase(supabase: NonNullable<ReturnType<typeof getSupabase>>) {
+  if (hasAttemptedLegacyRedisSync) return;
+  hasAttemptedLegacyRedisSync = true;
+  try {
+    const rawIds = await evalRedis("return redis.call('ZRANGE', KEYS[1], 0, -1)", [LEGACY_PREFIX + "all"]);
+    const clusterIds = await evalRedis("return redis.call('ZRANGE', KEYS[1], 0, -1)", [PREFIX + "all"]);
+    const allIds = Array.from(new Set([
+      ...(Array.isArray(rawIds) ? (rawIds as string[]) : []),
+      ...(Array.isArray(clusterIds) ? (clusterIds as string[]) : [])
+    ]));
+    if (!allIds.length) return;
+
+    for (const id of allIds) {
+      let raw = await evalRedis("return redis.call('GET', KEYS[1])", [PREFIX + "record:" + id]);
+      if (!raw) {
+        raw = await evalRedis("return redis.call('GET', KEYS[1])", [LEGACY_PREFIX + "record:" + id]);
+      }
+      if (raw) {
+        const decoded = decodeStoredReport(String(raw));
+        await supabase.from('reports').upsert({
+          id: decoded.id,
+          request_hash: decoded.requestHash,
+          reporter_id: decoded.reporterId,
+          reporter: decoded.reporter || {},
+          category: decoded.category,
+          explanation: decoded.explanation,
+          module_code: decoded.snapshot?.moduleCode || 'UNKNOWN',
+          chapter_id: decoded.snapshot?.chapterId || 1,
+          question_id: String(decoded.snapshot?.question?.id || decoded.id),
+          sub_question_id: decoded.subQuestionId || null,
+          snapshot: decoded.snapshot,
+          status: decoded.status,
+          notes: decoded.notes || '',
+          revision: decoded.revision || 1,
+          notification: decoded.notification || {},
+          created_at: decoded.createdAt,
+          updated_at: decoded.updatedAt,
+        }, { onConflict: 'id' });
+      }
+    }
+  } catch {
+    // If Redis is not configured or fails, gracefully continue
+  }
+}
+
 export const reportStore: ReportStore = {
   async create(report) {
     const supabase = getSupabase();
@@ -217,7 +263,31 @@ export const reportStore: ReportStore = {
           LEGACY_PREFIX + "record:" + id,
         ]);
       }
-      if (raw) return decodeStoredReport(String(raw));
+      if (raw) {
+        const report = decodeStoredReport(String(raw));
+        if (supabase) {
+          supabase.from('reports').upsert({
+            id: report.id,
+            request_hash: report.requestHash,
+            reporter_id: report.reporterId,
+            reporter: report.reporter || {},
+            category: report.category,
+            explanation: report.explanation,
+            module_code: report.snapshot?.moduleCode || 'UNKNOWN',
+            chapter_id: report.snapshot?.chapterId || 1,
+            question_id: String(report.snapshot?.question?.id || report.id),
+            sub_question_id: report.subQuestionId || null,
+            snapshot: report.snapshot,
+            status: report.status,
+            notes: report.notes || '',
+            revision: report.revision || 1,
+            notification: report.notification || {},
+            created_at: report.createdAt,
+            updated_at: report.updatedAt,
+          }, { onConflict: 'id' }).then(() => {}, () => {});
+        }
+        return report;
+      }
     } catch (err) {
       console.warn("Primary Redis report get failed, checking fallback store:", err);
     }
@@ -227,6 +297,9 @@ export const reportStore: ReportStore = {
     const supabase = getSupabase();
     if (supabase) {
       try {
+        // Attempt lazy sync of any Redis reports into Supabase in background
+        syncLegacyRedisReportsToSupabase(supabase).catch(() => {});
+
         let query = supabase.from('reports').select('*', { count: 'exact' });
         if (status !== 'all') {
           query = query.eq('status', status);
@@ -234,7 +307,16 @@ export const reportStore: ReportStore = {
         const { data, count, error } = await query
           .order('created_at', { ascending: false })
           .range(offset, offset + limit - 1);
-        if (data && !error && (count ?? 0) > 0) {
+        if (data && !error) {
+          const { data: statusRows } = await supabase.from('reports').select('status');
+          const counts: Record<ReportStatus, number> = { new: 0, reviewing: 0, fixed: 0, dismissed: 0 };
+          if (statusRows) {
+            for (const row of statusRows) {
+              if (row.status && row.status in counts) {
+                counts[row.status as ReportStatus]++;
+              }
+            }
+          }
           const mapped = data.map((d: any) => ({
             id: d.id,
             requestHash: d.request_hash,
@@ -254,12 +336,7 @@ export const reportStore: ReportStore = {
           return {
             reports: mapped,
             total: count ?? mapped.length,
-            counts: {
-              new: mapped.filter((r: any) => r.status === 'new').length,
-              reviewing: mapped.filter((r: any) => r.status === 'reviewing').length,
-              resolved: mapped.filter((r: any) => r.status === 'resolved').length,
-              dismissed: mapped.filter((r: any) => r.status === 'dismissed').length,
-            },
+            counts,
           };
         }
       } catch (err) {
@@ -414,6 +491,14 @@ export const reportStore: ReportStore = {
     return updated;
   },
   async notification(id, value) {
+    const supabase = getSupabase();
+    if (supabase) {
+      try {
+        await supabase.from('reports').update({ notification: value }).eq('id', id);
+      } catch (err) {
+        console.warn('Supabase report notification error:', err);
+      }
+    }
     try {
       await evalRedis(
         `local raw=redis.call('GET',KEYS[1]);if not raw then return 0 end;local r=cjson.decode(raw);if r.notification.state=='sent' then return 1 end;r.notification=cjson.decode(ARGV[1]);redis.call('SET',KEYS[1],cjson.encode(r));return 1`,

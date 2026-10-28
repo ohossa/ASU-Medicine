@@ -18,6 +18,9 @@ const supabaseKey =
 let client: SupabaseClient | null = null;
 
 export function getSupabase(): SupabaseClient | null {
+  if (process.env.NODE_ENV === 'test' && process.env.TEST_USE_SUPABASE !== 'true') {
+    return null;
+  }
   if (!client && supabaseUrl && supabaseKey) {
     client = createClient(supabaseUrl, supabaseKey, {
       auth: {
